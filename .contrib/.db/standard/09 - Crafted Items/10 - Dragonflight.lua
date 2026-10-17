@@ -2800,6 +2800,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ ["timeline"] = { A
 			}),
 		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(284240, { ["timeline"] = { ADDED_12_1_5 } }),	-- Beloved Ottuk Plushie (DECOR!)
+			i(284242, { ["timeline"] = { ADDED_12_1_5 } }),	-- Beloved Ottuuuuuuk Plushie (DECOR!)
 			i(248114),	-- Draconic Nesting Bed (DECOR!)
 			i(248657),	-- Valdrakken Market Tent (DECOR!)
 		})),

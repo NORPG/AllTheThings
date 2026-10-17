@@ -1438,6 +1438,7 @@ COMMON_DRAENOR_JEWELCRAFTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedDa
 LEGION_JEWELCRAFTING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	applyclassicphase(DF_PHASE_ONE, r(382975, {["timeline"] = {ADDED_10_0_2}})),	-- Legion Prospecting
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1313526, { ["timeline"] = { ADDED_12_1_5 } }),	-- Hanging Argunite Lamp
 		r(1260757),	-- Shaded Suramar Window
 		r(1263351),	-- Suramar Jeweler's Assortment
 	})),

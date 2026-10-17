@@ -1069,6 +1069,8 @@ BFA_BLACKSMITHING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] =
 	}),
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1260691),	-- Brennadam Grinder
+		r(1313521, { ["timeline"] = { ADDED_12_1_5 } }),	-- Gleaming Lightforge
+		r(1315468, { ["timeline"] = { ADDED_12_1_5 } }),	-- Nomad's Steel Forge
 		r(1260692),	-- Stormsong Stove
 	})),
 	filter(MISC, {
@@ -1182,6 +1184,7 @@ SL_BLACKSMITHING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(322594),	-- Shadowsteel Waistguard
 	}),
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1315292, { ["timeline"] = { ADDED_12_1_5 } }),	-- Anima-Powered Anvil
 		r(1261982),	-- Aspirant's Meditation Pool
 		r(1261980),	-- Bejeweled Venthyr Chalice
 	})),

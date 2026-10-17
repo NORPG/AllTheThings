@@ -2628,3 +2628,12 @@ i(273061, 1291683);	-- Hunter's Ritual Stone
 i(0, 1291682);	-- Odious Alloy
 i(0, 1288608);	--
 i(0, 1288712);	--
+
+------------------
+-- PATCH 12.1.5 --
+------------------
+--- TRAINER ---
+i(0, 1315292);	-- Anima-Powered Anvil
+i(0, 1313521);	-- Gleaming Lightforge
+i(0, 1315468);	-- Nomad's Steel Forge
+--- ITEM ---

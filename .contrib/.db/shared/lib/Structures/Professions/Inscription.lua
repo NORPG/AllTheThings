@@ -279,6 +279,7 @@ LEGION_INSCRIPTION = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1260711),	-- Covered Square Suramar Table
 		r(1263344),	-- Dalaran Display Shelves
+		r(1313522, { ["timeline"] = { ADDED_12_1_5 } });	-- Eredath Artisan's Workbench
 		r(1260719),	-- Nightborne Jeweler's Table
 		r(1260737),	-- Suramar Dresser
 		r(1260730),	-- Suramar Storage Crate
@@ -312,6 +313,7 @@ BFA_INSCRIPTION = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = {
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1260583),	-- Boralus Barrel
 		r(1260596),	-- Boralus Bookshelf
+		r(1315465, { ["timeline"] = { ADDED_12_1_5 } }),	-- Closed Vulpera Scroll
 		r(1260577),	-- Gilded Zandalari Table
 		r(1260593),	-- Proudmoore Shipping Crate
 		r(1260564),	-- Zuldazar Fence
@@ -364,8 +366,10 @@ SL_INSCRIPTION = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { A
 		r(1263272),	-- Aspiring Soul's Chair
 		r(1263241),	-- Broker's Hex Table
 		r(1263243),	-- Cartel Ta Bookcase
+		r(1315335, { ["timeline"] = { ADDED_12_1_5 } }),	-- Fae Moonbough Scroll
 		r(1263293),	-- Hollow Night Fae Shrine
 		r(1263278),	-- Large Revendreth Storage Crate
+		r(1316306, { ["timeline"] = { ADDED_12_1_5 } }),	-- Levitating Lich Library
 		r(1263285),	-- Tome of Maldraxxian Rituals
 	})),
 	filter(GLYPHS, sharedDataSelf({ ["timeline"] = { ADDED_9_1_5 }},{

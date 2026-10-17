@@ -137,22 +137,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						}),
 						i(184721),	-- Flourished Cummerbund
 						i(217598, {	-- Glyph of Flagellation
-							["timeline"] = { ADDED_10_2_6 },
 							["classes"] = { ROGUE },
+							["timeline"] = { ADDED_10_2_6 },
 						}),
 						i(217589, {	-- Glyph of Mindgames
-							["timeline"] = { ADDED_10_2_6 },
 							["classes"] = { PRIEST },
+							["timeline"] = { ADDED_10_2_6 },
+						}),
+						i(284562, {	-- Nathrian Window (DECOR!)
+							["cost"] = { { "c", ANIMA, 300 } },
+							["timeline"] = { ADDED_12_1_5 },
 						}),
 						i(184722),	-- Ostentatious Buckle
 						i(184720),	-- Reflective Waistguard
 						i(183900, {	-- Sinvyr Tea Set (TOY!)
 							["cost"] = 13500000,	-- 1,350g
 						}),
-					}, {	-- Revered
-						i(180593, {	-- Court Messenger Scroll (PET!)
-							["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
+						i(284570, {	-- Small Darkhaven Window (DECOR!)
+							["cost"] = { { "c", ANIMA, 300 } },
+							["timeline"] = { ADDED_12_1_5 },
 						}),
+					}, {	-- Revered
+						i(180593, { ["cost"] = { { "i", POLISHED_PET_CHARM, 250 } } }),	-- Court Messenger Scroll (PET!)
 						i(184726),	-- Courtier's Mantle
 						i(184724),	-- Courtier's Pauldron
 						i(184727),	-- Courtier's Shoulderguard
@@ -169,6 +175,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						}),
 						i(182668, {	-- Recipe: Feast of Gluttonous Hedonism (RECIPE!)
 							["cost"] = 17650000,	-- 1,765g
+						}),
+						i(284560, {	-- Revendreth Sinner's Prison (DECOR!)
+							["cost"] = { { "c", ANIMA, 500 } },
+							["timeline"] = { ADDED_12_1_5 },
+						}),
+						i(284558, {	-- Sinner's Gibbet (DECOR!)
+							["cost"] = { { "c", ANIMA, 500 } },
+							["timeline"] = { ADDED_12_1_5 },
 						}),
 						i(183102, {	-- Technique: Contract: Court of Harvesters (RECIPE!)
 							["cost"] = 17650000,	-- 1,765g

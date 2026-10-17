@@ -843,6 +843,7 @@ LEGION_TAILORING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"]
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1263858),	-- Beloved Raptor Plushie
 		r(1260774),	-- Circular Shal'dorei Rug
+		r(1313524, { ["timeline"] = { ADDED_12_1_5 } }),	-- Decorative Lightweave Bolt
 		r(1260769),	-- Shal'dorei Open-Air Tent
 	})),
 }));
@@ -899,8 +900,8 @@ BFA_TAILORING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(257126),	-- Deep Sea Bag [Rank 2]
 	}),
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
-		r(1315465, { ["timeline"] = { ADDED_12_1_5 } }),	-- Closed Vulpera Scroll
 		r(1260458),	-- Red Dazar'alor Rug
+		r(1315445, { ["timeline"] = { ADDED_12_1_5 } }),	-- Round Nomad's Cushion
 		r(1260475),	-- Zanchuli Tapestry
 	})),
 	filter(MISC, {

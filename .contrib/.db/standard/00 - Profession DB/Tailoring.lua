@@ -2038,7 +2038,8 @@ i(0, 1296513);	-- Traveled Murloc Plushie
 ------------------
 --- TRAINER ---
 i(0, 1315757);	-- Beloved Plush Doll
-i(0, 1315465);	-- Closed Vulpera Scroll
+i(0, 1313524);	-- Decorative Lightweave Bolt
+i(0, 1315445);	-- Round Nomad's Cushion
 --- ITEM ---
 i(284263, 1315766);	-- Beloved Murloc Plushie
 i(284250, 1315691);	-- Lillistrasza's Lucky Duck Plushie

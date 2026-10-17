@@ -68,6 +68,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(257051),	-- Sintallow Candles (DECOR!)
 			i(257050),	-- Veil-Secured Animacone (DECOR!)
+			i(284552, { ["timeline"] = { ADDED_12_1_5 } }),	-- Venthyr Alchemy Rack (DECOR!)
 		})),
 		filter(MISC, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 			i(186697),	-- Blossom Burst
@@ -195,6 +196,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(171448),	-- Shadowsteel Waistguard
 		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(283260, { ["timeline"] = { ADDED_12_1_5 } }),	-- Anima-Powered Anvil (DECOR!)
 			i(257048),	-- Aspirant's Meditation Pool (DECOR!)
 			i(257049),	-- Bejeweled Venthyr Chalice (DECOR!)
 		})),
@@ -404,8 +406,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(258235),	-- Aspiring Soul's Chair (DECOR!)
 			i(258244),	-- Broker's Hex Table (DECOR!)
 			i(258250),	-- Cartel Ta Bookcase (DECOR!)
+			i(283301, { ["timeline"] = { ADDED_12_1_5 } }),	-- Fae Moonbough Scroll (DECOR!)
 			i(258242),	-- Hollow Night Fae Shrine (DECOR!)
 			i(258247),	-- Large Revendreth Storage Crate (DECOR!)
+			i(284504, { ["timeline"] = { ADDED_12_1_5 } }),	-- Levitating Lich Library (DECOR!)
 			i(258239),	-- Tome of Maldraxxian Rituals (DECOR!)
 		})),
 		filter(GLYPHS, sharedDataSelf({ ["timeline"] = { ADDED_9_1_5 } }, {
@@ -524,6 +528,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(180760),	-- Crown of the Righteous
 		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(282126, { ["timeline"] = { ADDED_12_1_5 } }),	-- Hanging Argunite Lamp (DECOR!)
 			i(262663),	-- Kyrian Floating Lamp (DECOR!)
 			i(260699),	-- Maldraxxian Runic Tablet (DECOR!)
 		})),

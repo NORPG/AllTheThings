@@ -100,6 +100,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					199897,	-- Blue-Covered Beanbag (TOY!)
 					199872,	-- Tuskarr Trader's Cloak
 				}},
+				["groups"] = {
+					i(284255, {	-- Pattern: Beloved Ottuk Plushie (RECIPE!)
+						["minReputation"] = { FACTION_ISKAARA_TUSKARR, 11 },
+						["timeline"] = { ADDED_12_1_5 }
+					}),
+					i(284256, {	-- Pattern: Beloved Ottuuuuuuk Plushie (RECIPE!)
+						["minReputation"] = { FACTION_ISKAARA_TUSKARR, 11 },
+						["timeline"] = { ADDED_12_1_5 }
+					}),
+				},
 			}),
 			n(193006, {	-- Murik
 				["coord"] = { 13.16, 49.2, THE_AZURE_SPAN },

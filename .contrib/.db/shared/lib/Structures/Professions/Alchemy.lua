@@ -548,6 +548,7 @@ SL_ALCHEMY = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1261972),	-- Sintallow Candles
 		r(1261958),	-- Veil-Secured Animacone
+		r(1316323, { ["timeline"] = { ADDED_12_1_5 } }),	-- Venthyr Alchemy Rack
 	})),
 	filter(MISC, {
 		r(343679),	-- Crafter's Mark I

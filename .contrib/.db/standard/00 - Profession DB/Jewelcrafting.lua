@@ -2645,5 +2645,7 @@ i(275697, 1297681);	-- Roaring Amani Garnet
 ------------------
 -- PATCH 12.1.5 --
 ------------------
+--- TRAINER ---
+i(0, 1313526);	-- Hanging Argunite Lamp
 --- ITEM ---
 i(273067, 1291690);	-- Polished Ammolite

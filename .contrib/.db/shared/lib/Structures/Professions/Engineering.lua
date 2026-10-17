@@ -848,6 +848,7 @@ LEGION_ENGINEERING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1263319),	-- Dalaran Auto-Hammer
 		r(1263338),	-- Failed Failure Detection Pylon
+		r(1313527, { ["timeline"] = { ADDED_12_1_5 } });	-- Lightforged Recall Beacon
 	})),
 }));
 BFA_ENGINEERING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {

@@ -147,7 +147,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(257046),	-- Boralus Bottle Lamp (DECOR!)
-			i(283321, { ["timeline"] = { ADDED_12_1_5 } }),	-- Closed Vulpera Scroll (DECOR!)
 			i(257047),	-- Zandalari Bottle Shipment (DECOR!)
 		})),
 		filter(MISC, {
@@ -394,6 +393,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(252397),	-- Brennadam Grinder (DECOR!)
+			i(283299, { ["timeline"] = { ADDED_12_1_5 } }),	-- Nomad's Round Cushion (DECOR!)
+			i(283303, { ["timeline"] = { ADDED_12_1_5 } }),	-- Nomad's Steel Forge (DECOR!)
 			i(252399),	-- Stormsong Stove (DECOR!)
 		})),
 		filter(MISC, {
@@ -906,6 +907,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(252035),	-- Boralus Barrel (DECOR!)
 			i(252401),	-- Boralus Bookshelf (DECOR!)
+			i(283321, { ["timeline"] = { ADDED_12_1_5 } }),	-- Closed Vulpera Scroll (DECOR!)
 			i(245499),	-- Gilded Zandalari Table (DECOR!)
 			i(252389),	-- Proudmoore Shipping Crate (DECOR!)
 			i(245415),	-- Zuldazar Fence (DECOR!)

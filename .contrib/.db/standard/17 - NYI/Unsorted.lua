@@ -75,12 +75,7 @@ root(ROOTS.Unsorted, {
 			i(282095),	-- Ominous Heartsbane Banner
 			i(282098),	-- Elaborate Heartsbane Doom Catcher
 			i(282100),	-- Heartsbane Doom Catcher
-			i(282124),	-- Gleaming Lightforge
-			i(282126),	-- Hanging Argunite Lamp
-			i(282132),	-- Eredath Artisan's Workbench
 			i(282140),	-- Shimmering Lightforged Canister
-			i(282144),	-- Lightforged Recall Beacon
-			i(282158),	-- Decorative Lightweave Bolt
 			i(282184),	-- Spidery Witch Hat
 			i(282190),	-- Apple Bobbing Bucket
 			i(282192),	-- Candlelit Shrieking Jack-o'-Lantern
@@ -137,11 +132,7 @@ root(ROOTS.Unsorted, {
 			i(282695),	-- Large Nathrian Bladebush
 			i(282697),	-- Nathrian Rubyroot Growth
 			i(282718),	-- Halazzi's Shroud
-			i(283260),	-- Anima-Powered Anvil
 			i(283291),	-- Nomad's Campfire Grill
-			i(283299),	-- Nomad's Round Cushion
-			i(283301),	-- Fae Moonbough Scroll
-			i(283303),	-- Nomad's Steel Forge
 			i(283388),	-- Blessed Loa Armament
 			i(283472),	-- Steel-Plated Cushion Boots
 			i(283481),	-- Baker's Frosty Cookbook
@@ -203,11 +194,7 @@ root(ROOTS.Unsorted, {
 			i(284235),	-- Baker's Morganite Tray
 			i(284236),	-- Baker's Amethyst Tray
 			i(284237),	-- Baker's Citrine Tray
-			i(284240),	-- Beloved Ottuk Plushie
-			i(284242),	-- Beloved Ottuuuuuuk Plushie
 			i(284249),	-- Duck-Eye Glass Bead
-			i(284255),	-- Pattern: Beloved Ottuk Plushie
-			i(284256),	-- Pattern: Beloved Ottuuuuuuk Plushie
 			i(284258),	-- Tailwind Conduit
 			i(284259),	-- Motionless Nulltide
 			i(284260),	-- Overflowing Voidspire
@@ -233,18 +220,12 @@ root(ROOTS.Unsorted, {
 			i(284498),	-- Maldraxxi Anima Crystal
 			i(284500),	-- Maldraxxi Shielding Lattice
 			i(284502),	-- Maldraxxi Horned Beast Skull
-			i(284504),	-- Levitating Lich Library
 			i(284506),	-- Suspended Lich Scroll
-			i(284552),	-- Venthyr Alchemy Rack
 			i(284554),	-- Confessor's Anima Jar
 			i(284556),	-- Sinfall Arched Bookcase
-			i(284558),	-- Sinner's Gibbet
-			i(284560),	-- Revendreth Sinner's Prison
-			i(284562),	-- Nathrian Window
 			i(284564),	-- Venthyr Fence
 			i(284566),	-- Venthyr Fencepost
 			i(284568),	-- Sinfall Dining Table
-			i(284570),	-- Small Darkhaven Window
 			i(284579),	-- Obsidian Lava Pool
 			i(284591),	-- Neighborhood Candy
 			i(285044),	-- Venerated Loa Armament

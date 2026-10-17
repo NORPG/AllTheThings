@@ -1397,3 +1397,10 @@ i(271888, 1289745);	-- Liquid Luster
 --- NYI ---
 i(0, 1296431);	-- Amani Alchemist's Incense
 i(0, 1296430);	-- Bubbling Acid Cauldron
+
+------------------
+-- PATCH 12.1.5 --
+------------------
+--- TRAINER ---
+i(0, 1316323);	-- Venthyr Alchemy Rack
+--- ITEM ---

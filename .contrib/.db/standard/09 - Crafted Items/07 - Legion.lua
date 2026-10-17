@@ -425,6 +425,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(258226),	-- Dalaran Auto-Hammer (DECOR!)
 			i(258225),	-- Failed Failure Detection Pylon (DECOR!)
+			i(282124, { ["timeline"] = { ADDED_12_1_5 } }),	-- Gleaming Lightforge (DECOR!)
+			i(282144, { ["timeline"] = { ADDED_12_1_5 } }),	-- Lightforged Recall Beacon (DECOR!)
 		})),
 		filter(RELICS_F, {
 			i(136687),	-- "The Felic"
@@ -597,11 +599,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(247916),	-- Covered Square Suramar Table (DECOR!)
 			i(258224),	-- Dalaran Display Shelves (DECOR!)
+			i(282132, { ["timeline"] = { ADDED_12_1_5 } }),	-- Eredath Artisan's Workbench (DECOR!)
 			i(247918),	-- Nightborne Jeweler's Table (DECOR!)
 			i(245396),	-- Suramar Dresser (DECOR!)
 			i(247925),	-- Suramar Storage Crate (DECOR!)
 			i(245459),	-- Tauren Storage Chest (DECOR!)
-
 		})),
 		category(106, {	-- Tarot Cards
 			sp(191659, {	-- Darkmoon Card of the Legion
@@ -916,6 +918,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(258557),	-- Beloved Raptor Plushie (DECOR!)
 			i(247920),	-- Circular Shal'dorei Rug (DECOR!)
+			i(282158, { ["timeline"] = { ADDED_12_1_5 } }),	-- Decorative Lightweave Bolt (DECOR!)
 			i(248010),	-- Shal'dorei Open-Air Tent (DECOR!)
 		})),
 		filter(MISC, {

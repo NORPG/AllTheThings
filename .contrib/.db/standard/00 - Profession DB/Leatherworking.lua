@@ -2765,3 +2765,11 @@ i(275336, 1296511);	-- Mounted Moby
 i(275334, 1296510);	-- Stretched Snakeskin Rack
 --- UNSORTED ---
 i(273070, 1291691);	-- Adorned Fang
+
+------------------
+-- PATCH 12.1.5 --
+------------------
+--- TRAINER ---
+--- ITEM ---
+i(284255, 1315719);	-- Beloved Ottuk Plushie
+i(284256, 1315728);	-- Beloved Ottuuuuuuk Plushie

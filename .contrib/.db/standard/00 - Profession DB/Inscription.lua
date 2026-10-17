@@ -1915,3 +1915,13 @@ i(0, 1290560);		--
 i(0, 1296508);		-- Empty Tortollan Rack
 i(275322, 1296504);	-- Technique: Ferocious Feline Trinket
 i(275328, 1296507);	-- Technique: Turquoise Amani Tapestry
+
+------------------
+-- PATCH 12.1.5 --
+------------------
+--- TRAINER ---
+i(0, 1315465);	-- Closed Vulpera Scroll
+i(0, 1313522);	-- Eredath Artisan's Workbench
+i(0, 1315335);	-- Fae Moonbough Scroll
+i(0, 1316306);	-- Levitating Lich Library
+--- ITEM ---
