@@ -1,5 +1,8 @@
 @echo off
 SET BUILD=12.1.5.70448
+@REM Pass "force_overwrite" to refresh files already downloaded for this build.
+set "FORCE_OVERWRITE="
+if /i "%~1"=="force_overwrite" set "FORCE_OVERWRITE=1"
 
 @REM Download new file versions
 call :download Achievement
@@ -30,29 +33,33 @@ call :download WorldMapOverlay
 
 @REM Run the locale update script from its own folder
 pushd "%~dp0localized"
-call ".update.bat" %BUILD%
+call ".update.bat" %BUILD% %FORCE_OVERWRITE%
 popd
 
 exit /b
 
 :download
 echo Downloading %1...
-if not exist "%1.%BUILD%.csv" (
+if exist "%1.%BUILD%.csv" (
+	if not defined FORCE_OVERWRITE exit /b
+) else (
 	if exist "%1*.csv" (
 		del /Q "%1*.csv"
 	)
-	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%"
 )
+curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%&useHotfixes"
 exit /b
 
 :downloadrenamed
 echo Downloading %2 as %1...
-if not exist "%1.%BUILD%.csv" (
+if exist "%1.%BUILD%.csv" (
+	if not defined FORCE_OVERWRITE exit /b
+) else (
 	if exist "%1*.csv" (
 		del /Q "%1*.csv"
 	)
-	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%2/csv?build=%BUILD%"
 )
+curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%2/csv?build=%BUILD%&useHotfixes"
 exit /b
 
 :downloadcleaned

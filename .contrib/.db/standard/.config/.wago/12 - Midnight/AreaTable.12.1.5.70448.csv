@@ -9885,7 +9885,6 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16875,DreamriftDenOfTheUndreamt,"Den of the Undreamt",2939,16531,0,0,0,0,0,3264,0,0,0,0,0,15,-1,0,0,0,0,1342177280,140,0,0,0,0
 16897,DiversArch,"Diver's Arch",0,16365,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,128,0,0,0,0
 16900,Val,Val,3047,0,0,67,0,3519,0,3538,0,0,0,0,0,13,-1,0,0,0,3321,67108928,128,0,0,0,0
-16913,121UlaTekLabyrinth,"The Labyrinth of Kindo'jan",3043,0,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,4096,128,0,0,0,0
 16915,UlatekTempleRaid,"The Venomous Abyss",3004,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,7359,268435456,136,0,0,0,0
 16920,ValVoidCastleInterior,"Void Acropolis",3047,16900,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,3321,1073741888,8320,0,0,0,0
 16921,UmbralBaseVal,"Umbral Base Camp",3047,16900,0,0,0,0,0,0,0,0,0,0,0,13,-1,0,0,0,3321,1073743936,8320,0,0,0,0
@@ -10045,3 +10044,4 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16413,DONOTDISTURB,"[DO NOT DISTURB]",2910,0,0,0,0,0,675,0,0,0,0,0,0,0,-1,0,0,0,0,268439552,128,0,0,0,0
 16414,DONOTDISTURB,"[DO NOT DISTURB]",2910,0,0,0,0,0,675,0,0,0,0,0,0,0,-1,0,0,0,0,268439552,128,0,0,0,0
 16621,DONOTDISTURB,"[DO NOT DISTURB]",2863,0,0,96,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,128,0,0,0,0
+16913,121UlaTekLabyrinth,"The Labyrinth of Kindo'jan",3043,0,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,4898,4096,128,0,0,0,0

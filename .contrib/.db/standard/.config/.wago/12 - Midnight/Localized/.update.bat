@@ -2,6 +2,8 @@
 
 @REM Download Midnight Classic database
 SET BUILD=%~1
+set "FORCE_OVERWRITE="
+if /i "%~2"=="force_overwrite" set "FORCE_OVERWRITE=1"
 call :downloadlocalized HolidayNames
 exit /b
 
@@ -21,38 +23,44 @@ exit /b
 
 :downloadbaselocale
 echo Downloading %1...
-if not exist "%1.%BUILD%.csv" (
+if exist "%1.%BUILD%.csv" (
+	if not defined FORCE_OVERWRITE exit /b
+) else (
 	if exist "%1*.csv" (
 		del /Q "%1*.csv"
 	)
-	if "%1" == "AchievementCategory" (
-		curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/Achievement_Category/csv?build=%BUILD%"
-	) else (
-		curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%"
-	)
+)
+if "%1" == "AchievementCategory" (
+	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/Achievement_Category/csv?build=%BUILD%&useHotfixes"
+) else (
+	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%&useHotfixes"
 )
 exit /b
 
 :downloadlocale
 echo Downloading %1 for locale %2...
-if not exist "%1.%2.%BUILD%.csv" (
+if exist "%1.%2.%BUILD%.csv" (
+	if not defined FORCE_OVERWRITE exit /b
+) else (
 	if exist "%1.%2*.csv" (
 		del /Q "%1.%2*.csv"
 	)
-	if "%1" == "AchievementCategory" (
-		curl -o "%1.%2.%BUILD%.csv" "https://wago.tools/db2/Achievement_Category/csv?build=%BUILD%&locale=%2"
-	) else (
-		curl -o "%1.%2.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%&locale=%2"
-	)
+)
+if "%1" == "AchievementCategory" (
+	curl -o "%1.%2.%BUILD%.csv" "https://wago.tools/db2/Achievement_Category/csv?build=%BUILD%&locale=%2&useHotfixes"
+) else (
+	curl -o "%1.%2.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%&locale=%2&useHotfixes"
 )
 exit /b
 
 :downloadrenamed
 echo Downloading %2 as %1...
-if not exist "%1.%BUILD%.csv" (
+if exist "%1.%BUILD%.csv" (
+	if not defined FORCE_OVERWRITE exit /b
+) else (
 	if exist "%1*.csv" (
 		del /Q "%1*.csv"
 	)
-	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%2/csv?build=%BUILD%"
 )
+curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%2/csv?build=%BUILD%&useHotfixes"
 exit /b
