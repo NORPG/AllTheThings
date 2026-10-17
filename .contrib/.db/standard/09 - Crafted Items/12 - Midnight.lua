@@ -1033,6 +1033,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { 
 			i(257741),	-- B0P, Curator of Booms++
 			i(248135),	-- B1P, Scorcher of Souls+
 			i(248592),	-- B1P, Scorcher of Souls++
+			i(273062, { ["timeline"] = { ADDED_12_1_5 } }),	-- Coiled Snake-Eye+
+			i(273063, { ["timeline"] = { ADDED_12_1_5 } }),	-- Coiled Snake-Eye++
 			i(244703),	-- Consistent Cogwheel+
 			i(244704),	-- Consistent Cogwheel++
 			i(244697),	-- Flux Cogwheel+
@@ -2492,6 +2494,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(97517, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97518, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97519, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
+			q(97520, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 		}),
 		prof(MINING, {
 			q(87670),	-- 40/40 Over-LODED

@@ -437,8 +437,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					questID = 98758,
 					isWeekly = true,	-- assumed
 					groups = {
-						i(280820),	-- Loa-Blessed Victory (TOY!)
 						i(273067),	-- Design: Polished Ammolite (RECIPE!)
+						i(280820),	-- Loa-Blessed Victory (TOY!)
+						i(273064),	-- Schematic: Coiled Snake-Eye (RECIPE!)
 					},
 				}),
 				o(676583, {	-- Ancient Keyper's Bag
@@ -449,11 +450,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				o(673143, {	-- Bountiful Heavy Trunk
 					["sym"] = {{"select","itemID",
 						273067,	-- Design: Polished Ammolite (RECIPE!)
+						273064,	-- Schematic: Coiled Snake-Eye (RECIPE!)
 					}},
 				}),
 				o(673144, {	-- Bountiful Heavy Trunk
 					["sym"] = {{"select","itemID",
 						273067,	-- Design: Polished Ammolite (RECIPE!)
+						273064,	-- Schematic: Coiled Snake-Eye (RECIPE!)
 					}},
 				}),
 				o(673138, {	-- Gilded Stash

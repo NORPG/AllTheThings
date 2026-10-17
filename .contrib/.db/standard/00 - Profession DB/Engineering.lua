@@ -1568,12 +1568,12 @@ i(275684, 1297647);	-- G-00
 i(275318, 1296502);	-- Proudmoore Ship-in-a-Bottle
 i(278330, 1297585);	-- R0CKY
 i(278333, 1305148);	-- R0CKY-To-Go
---- UNSORTED ---
-i(273064, 1291687);	-- Coiled Snake-Eye
 
 ------------------
 -- PATCH 12.1.5 --
 ------------------
 --- TRAINER ---
 i(0, 1313527);	-- Lightforged Recall Beacon
+i(0, 1315426);	-- Nomad's Campfire Grill
 --- ITEM ---
+i(273064, 1291687);	-- Coiled Snake-Eye

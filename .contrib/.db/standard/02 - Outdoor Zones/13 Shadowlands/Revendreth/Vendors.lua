@@ -113,9 +113,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(167815, {	-- Mims <Innkeeper>
 				["coord"] = { 32.6, 49.3, REVENDRETH },
-				["groups"] = {
-					i(179271),	-- Dredhollow Apple
-				},
+				["groups"] = { i(179271) },	-- Dredhollow Apple
 			}),
 			n(156822, {	-- Mistress Mihaela <Court of Harvesters Quartermaster>
 				["coord"] = { 61.4, 63.8, REVENDRETH },
@@ -199,43 +197,50 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 				}),
 			}),
+			n(274062, {	-- Mumples <Botanist & Decor Specialist>
+				["coord"] = { 73.0, 52.6, REVENDRETH },
+				["timeline"] = { ADDED_12_1_5 },
+				["groups"] = {
+					i(282681, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Brightburned Nathrian Clawbush (DECOR!)
+					i(282683, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Brightburned Nathrian Root (DECOR!)
+					i(282689, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Endmire Anima Blossom (DECOR!)
+					i(282687, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Endmire Sinsticker Bush (DECOR!)
+					i(282695, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Large Nathrian Bladebush (DECOR!)
+					i(282665, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Large Nathrian Briar Root (DECOR!)
+					i(282673, { ["cost"] = { { "c", ANIMA, 500 } } }),	-- Lonely Banewood Pine (DECOR!)
+					i(282663, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Nathrian Forked Briar (DECOR!)
+					i(282691, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Nathrian Fungal Rotcap (DECOR!)
+					i(282669, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Nathrian Leafy Briar (DECOR!)
+					i(282661, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Nathrian Reaching Briar (DECOR!)
+					i(282697, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Nathrian Rubyroot Growth (DECOR!)
+					i(282679, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Nathrian Sinstain Bush (DECOR!)
+					i(282685, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Nathrian Sinstain Ivy Cluster (DECOR!)
+					i(282677, { ["cost"] = { { "c", ANIMA, 500 } } }),	-- Nathrian Sinstain Oak (DECOR!)
+					i(282671, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Nathrian Thicket Hedgew (DECOR!)
+					i(282693, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Pale Nathrian Rose (DECOR!)
+					i(282667, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Small Nathrian Briar Root (DECOR!)
+					i(282675, { ["cost"] = { { "c", ANIMA, 500 } } }),	-- Spherical Nathrian Topiary (DECOR!)
+				},
+			}),
 			n(173570, {	-- Snickersnee <Stable Dredger>
 				["coord"] = { 40.8, 46.6, REVENDRETH },	-- Mims <Innkeeper>
-				["groups"] = {
-					i(182585),	-- Grooming Brush
-				},
+				["groups"] = { i(182585) },	-- Grooming Brush
 			}),
 			n(160084, {	-- Ta'rmoro <Purveyor of Arms>
 				["coord"] = { 50.4, 81.4, REVENDRETH },
 				["groups"] = {
-					i(183977, {	-- House Renathal Ceremonial Dagger
+					i(183982, { ["cost"] = { { "c", ANIMA, 3000 } } }),	-- Devourer Mite Sticker
+					i(183977, { 	-- House Renathal Ceremonial Dagger
 						["cost"] = { { "c", ANIMA, 1750 } },
-						["customCollect"] = "SL_COV_VEN",
+						["customCollect"] = "SL_COV_VEN"
 					}),
-					i(183982, {	-- Devourer Mite Sticker
-						["cost"] = { { "c", ANIMA, 3000 } },
-					}),
-					i(183980, {	-- Kyrian Gladius
-						["cost"] = { { "c", ANIMA, 3000 } },
-					}),
-					i(183981, {	-- Kyrian Greatblade
-						["cost"] = { { "c", ANIMA, 3000 } },
-					}),
-					i(183985, {	-- Maldraxxian Bonesaw
-						["cost"] = { { "c", ANIMA, 3000 } },
-					}),
-					i(183984, {	-- Maldraxxian Shortblade
-						["cost"] = { { "c", ANIMA, 3000 } },
-					}),
-					i(183983, {	-- Rogue Ritualist's Spellblade
-						["cost"] = { { "c", ANIMA, 3000 } },
-					}),
-					i(183979, {	-- Standard Fenser's Rapier
-						["cost"] = { { "c", ANIMA, 3000 } },
-					}),
-					i(183968, {	-- Venthyr Ritualist's Kris
-						["cost"] = { { "c", ANIMA, 3500 } },
-					}),
+					i(183980, { ["cost"] = { { "c", ANIMA, 3000 } } }),	-- Kyrian Gladius
+					i(183981, { ["cost"] = { { "c", ANIMA, 3000 } } }),	-- Kyrian Greatblade
+					i(183985, { ["cost"] = { { "c", ANIMA, 3000 } } }),	-- Maldraxxian Bonesaw
+					i(183984, { ["cost"] = { { "c", ANIMA, 3000 } } }),	-- Maldraxxian Shortblade
+					i(183983, { ["cost"] = { { "c", ANIMA, 3000 } } }),	-- Rogue Ritualist's Spellblade
+					i(183979, { ["cost"] = { { "c", ANIMA, 3000 } } }),	-- Standard Fenser's Rapier
+					i(183968, { ["cost"] = { { "c", ANIMA, 3500 } } }),	-- Venthyr Ritualist's Kris
 				},
 			}),
 			n(160091, {	-- Ta'ruca
@@ -262,6 +267,32 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(187886, {	-- Technique: Mark of the Gloomstalker Dredbat (RECIPE!)
 						["description"] = "Sold for 20-30 of a trade good which changes every day. And sometimes it's not even on the vendor!",
 						["timeline"] = { ADDED_9_1_5 },
+					}),
+				},
+			}),
+			n(274686, {	-- Verayn <Decor Specialist>
+				["coord"] = { 61.8, 63.6, REVENDRETH },
+				["timeline"] = { ADDED_12_1_5 },
+				["groups"] = {
+					i(284554, {	-- Confessor's Anima Jar (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(284556, {	-- Sinfall Arched Bookcase (DECOR!)
+						["cost"] = { { "c", ANIMA, 500 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(284568, {	-- Sinfall Dining Table (DECOR!)
+						["cost"] = { { "c", ANIMA, 300 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(284564, {	-- Venthyr Fence (DECOR!)
+						["cost"] = { { "c", ANIMA, 300 } },
+						["timeline"] = { ADDED_12_1_5 },
+					}),
+					i(284566, {	-- Venthyr Fencepost (DECOR!)
+						["cost"] = { { "c", ANIMA, 300 } },
+						["timeline"] = { ADDED_12_1_5 },
 					}),
 				},
 			}),

@@ -232,7 +232,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(15742),	-- [DNT] [AUTOGEN] 12PH_Leg_7NE_Nightelf_Chair03.M2 \\ [DNT] 12PH_Leg_7NE_Nightelf_Chair03.M2 (DECOR!)
 			rawdecor(16091),	-- [DNT] 12PH_Leg_PA_innBench_01.M2 (DECOR!)
 			rawdecor(16221),	-- [DNT] 12PH_Leg_7NE_Druid_StoneRune01.M2 (DECOR!)
-			rawdecor(16754),	-- Draenei Holo-Junction \\ [DNT] [AUTOGEN] DR_DRAENEI_HOLORUNES01.M2 (DECOR!)
 		})),
 	}),
 	expansion(EXPANSION.MID, {

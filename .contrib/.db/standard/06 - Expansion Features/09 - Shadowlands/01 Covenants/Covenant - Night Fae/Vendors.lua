@@ -942,64 +942,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175419, {	-- Lunelle <Decor Specialist>
 				["coord"] = { 46.6, 56.6, THE_TRUNK },
-				["groups"] = {
-					i(281670, {	-- Anima-Infused Dreamcatcher (DECOR!)
-						["cost"] = { { "c", ANIMA, 200 } },
-						["timeline"] = { ADDED_12_1_5 },
-					}),
-					i(283267, {	-- Celestial Grovebush (DECOR!)
-						["cost"] = { { "c", ANIMA, 200 } },
-						["timeline"] = { ADDED_12_1_5 },
-					}),
-					i(283341, {	-- Dormant Wildseed (DECOR!)
-						["cost"] = { { "c", ANIMA, 500 } },
-						["timeline"] = { ADDED_12_1_5 },
-					}),
-					i(282714, {	-- Fae Anima Wall Lantern (DECOR!)
-						["cost"] = { { "c", ANIMA, 300 } },
-						["timeline"] = { ADDED_12_1_5 },
-					}),
-					i(282327, {	-- Fae Animashroom (DECOR!)
-						["cost"] = { { "c", ANIMA, 500 } },
-						["timeline"] = { ADDED_12_1_5 },
-					}),
-					i(283385, {	-- Fae Animashroom Circle (DECOR!)
-						["cost"] = { { "c", ANIMA, 500 } },
-						["timeline"] = { ADDED_12_1_5 },
-					}),
-					i(283273, {	-- Fae Moonbough Table (DECOR!)
-						["cost"] = { { "c", ANIMA, 300 } },
-						["timeline"] = { ADDED_12_1_5 },
-					}),
-					i(283379, {	-- Hanging Wildgrove Ivy (DECOR!)
-						["cost"] = { { "c", ANIMA, 200 } },
-						["timeline"] = { ADDED_12_1_5 },
-					}),
-					i(283383, {	-- Leaning Celestial Orchid (DECOR!)
-						["cost"] = { { "c", ANIMA, 200 } },
-						["timeline"] = { ADDED_12_1_5 },
-					}),
-					i(283381, {	-- Lush Celestial Moonbough (DECOR!)
-						["cost"] = { { "c", ANIMA, 500 } },
-						["timeline"] = { ADDED_12_1_5 },
-					}),
-					i(283285, {	-- Lush Wildgrove Fern (DECOR!)
-						["cost"] = { { "c", ANIMA, 200 } },
-						["timeline"] = { ADDED_12_1_5 },
-					}),
-					i(283262, {	-- Restored Night Fae Sigil (DECOR!)
-						["cost"] = { { "c", ANIMA, 500 } },
-						["timeline"] = { ADDED_12_1_5 },
-					}),
-					i(283339, {	-- Starseed Sapling (DECOR!)
-						["cost"] = { { "c", ANIMA, 200 } },
-						["timeline"] = { ADDED_12_1_5 },
-					}),
-					i(283281, {	-- Wildgrove Leaf Pile (DECOR!)
-						["cost"] = { { "c", ANIMA, 200 } },
-						["timeline"] = { ADDED_12_1_5 },
-					}),
-				},
+				["groups"] = sharedData({ ["timeline"] = { ADDED_12_1_5 } }, {
+					i(281670, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Anima-Infused Dreamcatcher (DECOR!)
+					i(283267, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Celestial Grovebush (DECOR!)
+					i(283341, { ["cost"] = { { "c", ANIMA, 500 } } }),	-- Dormant Wildseed (DECOR!)
+					i(282714, { ["cost"] = { { "c", ANIMA, 300 } } }),	-- Fae Anima Wall Lantern (DECOR!)
+					i(282327, { ["cost"] = { { "c", ANIMA, 500 } } }),	-- Fae Animashroom (DECOR!)
+					i(283385, { ["cost"] = { { "c", ANIMA, 500 } } }),	-- Fae Animashroom Circle (DECOR!)
+					i(283273, { ["cost"] = { { "c", ANIMA, 300 } } }),	-- Fae Moonbough Table (DECOR!)
+					i(283379, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Hanging Wildgrove Ivy (DECOR!)
+					i(283383, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Leaning Celestial Orchid (DECOR!)
+					i(283381, { ["cost"] = { { "c", ANIMA, 500 } } }),	-- Lush Celestial Moonbough (DECOR!)
+					i(283285, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Lush Wildgrove Fern (DECOR!)
+					i(283262, { ["cost"] = { { "c", ANIMA, 500 } } }),	-- Restored Night Fae Sigil (DECOR!)
+					i(283339, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Starseed Sapling (DECOR!)
+					i(283281, { ["cost"] = { { "c", ANIMA, 200 } } }),	-- Wildgrove Leaf Pile (DECOR!)
+				}),
 			}),
 			n(175418, {	-- Mar'lan <Night Fae Armor Trader>
 				["coord"] = { 45.9, 56.4, THE_TRUNK },

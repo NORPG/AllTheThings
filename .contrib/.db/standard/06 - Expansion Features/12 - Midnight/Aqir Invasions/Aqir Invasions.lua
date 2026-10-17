@@ -67,10 +67,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 					}),
 					n(WEAPONS, {
+						i(277883),	-- Duskmantle Spiteglass
 						i(277893),	-- Emberveil Ritual Knife
+						i(277889),	-- Fanged Riftrazor
 						i(277899),	-- Fangwarden's Shardspine Bow
+						i(277882),	-- Feral Gloombranch
 						i(277880),	-- Runic Moonbrand
 						i(277876),	-- Sacrosanct Thirstspire
+						i(277879),	-- Whisperthorn Ritual Knife
 					}),
 				}),
 				i(286563),	-- Aqir Research Token

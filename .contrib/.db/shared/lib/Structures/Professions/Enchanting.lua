@@ -216,6 +216,7 @@ TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { 
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1262828),	-- Aldor Stellar Console
 		r(1261331),	-- Draenei Holo-Dais
+		r(1313520, { ["timeline"] = { ADDED_12_1_5 } }),	-- Draenei Holo-Junction
 		r(1261340),	-- Draenei Holo-Path
 	})),
 	filter(MISC, {
@@ -611,6 +612,7 @@ COMMON_DRAENOR_ENCHANTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData(
 }));
 LEGION_ENCHANTING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		r(1313525, { ["timeline"] = { ADDED_12_1_5 } }),	-- Shimmering Lightforged Canister
 		r(1262238),	-- Nightspire Fountain
 		r(1260700),	-- Suramar Containment Cell
 	})),

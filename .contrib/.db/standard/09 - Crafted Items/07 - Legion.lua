@@ -393,6 +393,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(128534),	-- Enchanted Torch (PET!)
 		}),
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+			i(282140, { ["timeline"] = { ADDED_12_1_5 } }),	-- Shimmering Lightforged Canister (DECOR!)
 			i(256681),	-- Nightspire Fountain (DECOR!)
 			i(247923),	-- Suramar Containment Cell (DECOR!)
 		})),

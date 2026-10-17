@@ -532,6 +532,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 			i(257093),	-- Aldor Stellar Console (DECOR!)
 			i(257037),	-- Draenei Holo-Dais (DECOR!)
+			i(265331, { ["timeline"] = { ADDED_12_1_5 } }),	-- Draenei Holo-Junction (DECOR!)
 			i(257038),	-- Draenei Holo-Path (DECOR!)
 		})),
 		filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {

@@ -1608,3 +1608,11 @@ i(273073, 1291694);	-- Enchant Weapon - Rite of the Hash'ey
 i(275314, 1296500);	-- Enchanted Voidwell Fish
 i(275312, 1296499);	-- Furious Tiki Mask
 i(275310, 1296498);	-- Keen Hex Mask
+
+------------------
+-- PATCH 12.1.5 --
+------------------
+--- TRAINER ---
+i(0, 1313520);	-- Draenei Holo-Junction
+i(0, 1313525);	-- Shimmering Lightforged Canister
+--- ITEM ---

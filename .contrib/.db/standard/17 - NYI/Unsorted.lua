@@ -5,7 +5,6 @@
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.MID, {
 		expansion(EXPANSION.MID, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_1_5 } }, {
-			i(265331),	-- Draenei Holo-Junction
 			i(269766),	-- Harvested Ivy
 			i(270277),	-- Muzok's Rune-Key
 			i(270282),	-- Kazok's Rune-Key
@@ -16,10 +15,6 @@ root(ROOTS.Unsorted, {
 			i(275733),	-- A Rat-Sized Portion of Mushroom
 			i(275734),	-- A Rat-Sized Portion of Honey
 			i(275756),	-- Living Heartsbane Cauldron
-			i(277879),	-- Whisperthorn Ritual Knife
-			i(277882),	-- Feral Gloombranch
-			i(277883),	-- Duskmantle Spiteglass
-			i(277889),	-- Fanged Riftrazor
 			i(279396),	-- Timelost Saddle
 			i(281169),	-- Executive Chef's Jacket
 			i(281170),	-- Executive Chef's Hat
@@ -63,19 +58,6 @@ root(ROOTS.Unsorted, {
 			i(281218),	-- Ensemble: Pastry Chef's Uniform
 			i(281219),	-- Ensemble: Sauce Chef's Uniform
 			i(281220),	-- Ensemble: Head Chef's Uniform
-			i(282051),	-- Simple Hallow's End Candle
-			i(282072),	-- Enchanted Hallow's End Candle
-			i(282075),	-- Heartsbane Candle
-			i(282077),	-- Spooky Scarecrow
-			i(282081),	-- Candlelit Smiling Jack-o'-Lantern
-			i(282083),	-- Unlit Smiling Jack-o'-Lantern
-			i(282086),	-- Buckled Witch Hat
-			i(282090),	-- Eternally Powered Glowskull
-			i(282092),	-- Heartsbane Ritual Markings
-			i(282095),	-- Ominous Heartsbane Banner
-			i(282098),	-- Elaborate Heartsbane Doom Catcher
-			i(282100),	-- Heartsbane Doom Catcher
-			i(282140),	-- Shimmering Lightforged Canister
 			i(282184),	-- Spidery Witch Hat
 			i(282190),	-- Apple Bobbing Bucket
 			i(282192),	-- Candlelit Shrieking Jack-o'-Lantern
@@ -112,27 +94,7 @@ root(ROOTS.Unsorted, {
 			i(282649),	-- Hot Motocross Bunmover 4600
 			i(282659),	-- Ghost Goggles
 			i(282660),	-- Vacpack 84-X
-			i(282661),	-- Nathrian Reaching Briar
-			i(282663),	-- Nathrian Forked Briar
-			i(282665),	-- Large Nathrian Briar Root
-			i(282667),	-- Small Nathrian Briar Root
-			i(282669),	-- Nathrian Leafy Briar
-			i(282671),	-- Nathrian Thicket Hedge
-			i(282673),	-- Lonely Banewood Pine
-			i(282675),	-- Spherical Nathrian Topiary
-			i(282677),	-- Nathrian Sinstain Oak
-			i(282679),	-- Nathrian Sinstain Bush
-			i(282681),	-- Brightburned Nathrian Clawbush
-			i(282683),	-- Brightburned Nathrian Root
-			i(282685),	-- Nathrian Sinstain Ivy Cluster
-			i(282687),	-- Endmire Sinsticker Bush
-			i(282689),	-- Endmire Anima Blossom
-			i(282691),	-- Nathrian Fungal Rotcap
-			i(282693),	-- Pale Nathrian Rose
-			i(282695),	-- Large Nathrian Bladebush
-			i(282697),	-- Nathrian Rubyroot Growth
 			i(282718),	-- Halazzi's Shroud
-			i(283291),	-- Nomad's Campfire Grill
 			i(283388),	-- Blessed Loa Armament
 			i(283472),	-- Steel-Plated Cushion Boots
 			i(283481),	-- Baker's Frosty Cookbook
@@ -214,18 +176,6 @@ root(ROOTS.Unsorted, {
 			i(284486),	-- Short Drustvar Oak Stump
 			i(284488),	-- Drustvar Leaf Patch
 			i(284490),	-- Drustvar Leaf Clump
-			i(284492),	-- Open Bonewood Barrel
-			i(284494),	-- Ossified Maldraxxi Spike
-			i(284496),	-- Highback Bonewood Chair
-			i(284498),	-- Maldraxxi Anima Crystal
-			i(284500),	-- Maldraxxi Shielding Lattice
-			i(284502),	-- Maldraxxi Horned Beast Skull
-			i(284506),	-- Suspended Lich Scroll
-			i(284554),	-- Confessor's Anima Jar
-			i(284556),	-- Sinfall Arched Bookcase
-			i(284564),	-- Venthyr Fence
-			i(284566),	-- Venthyr Fencepost
-			i(284568),	-- Sinfall Dining Table
 			i(284579),	-- Obsidian Lava Pool
 			i(284591),	-- Neighborhood Candy
 			i(285044),	-- Venerated Loa Armament
@@ -512,11 +462,6 @@ root(ROOTS.Unsorted, {
 			i(274677),	-- Sky Blue Riverside Room Plans
 			i(274678),	-- Verdant Riverside Room Plans
 			n(PROFESSIONS, {
-				prof(ENGINEERING, {
-					i(273064),	-- Schematic: Coiled Snake-Eye (RECIPE!)
-					i(273062),	-- Coiled Snake-Eye+
-					i(273063),	-- Coiled Snake-Eye++
-				}),
 				prof(LEATHERWORKING, {
 					i(273068),	-- Adorned Fang+
 					i(273069),	-- Adorned Fang++

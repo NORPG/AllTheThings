@@ -874,6 +874,7 @@ BFA_ENGINEERING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = {
 	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
 		r(1260349),	-- Deactivated Atomic Recalibrator
 		r(1260352),	-- Gnomish Tesla Mega-Coil
+		r(1315426, { ["timeline"] = { ADDED_12_1_5 } }),	-- Nomad's Campfire Grill
 		r(1260425),	-- Mechagon Miniature Artificial Sun
 	})),
 	filter(MISC, {
