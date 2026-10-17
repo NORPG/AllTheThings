@@ -294,11 +294,12 @@ local function UpdateGroup(group, parent)
 end
 UpdateGroups = function(parent, g)
 	if g then
-		local group
+		local group, onUpdate
 		for i=1,#g do
 			group = g[i]
-			if group.OnUpdate then
-				if not group:OnUpdate(parent, UpdateGroup) then
+			onUpdate = group.OnUpdate
+			if onUpdate then
+				if not onUpdate(group, parent, UpdateGroup) then
 					UpdateGroup(group, parent)
 				elseif group.visible then
 					UpdateGroups(group, group.g)

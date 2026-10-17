@@ -312,9 +312,9 @@ local DefaultFields = {
 
 local CloneDictionary = app.CloneDictionary
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
-local classDefinitions, _cache = {}, nil;
+local classDefinitions = {}
 local function call(class, key, t)
-	_cache = rawget(class, key);
+	local _cache = rawget(class, key);
 	if _cache then return _cache(t) end
 end
 local function ClassError(...)
@@ -342,7 +342,7 @@ local CreateClassMeta = not app.__perf and function(fields, className)
 	return {
 		__class = class,
 		__index = function(t, key)
-			_cache = class[key];
+			local _cache = class[key];
 			---@diagnostic disable-next-line: redundant-parameter
 			if _cache then return _cache(t); end
 		end
@@ -372,7 +372,7 @@ or function(fields, className)
 	return {
 		__class = class,
 		__index = function(t, key)
-			_cache = class[key] or class.__missing[key]
+			local _cache = class[key] or class.__missing[key]
 			---@diagnostic disable-next-line: redundant-parameter
 			if _cache then return _cache(t); end
 			-- capture a new empty function return for missing keys so we can track how much missing keys are called on various classes
