@@ -33,11 +33,11 @@ call :download WorldMapOverlay
 exit /b
 
 :download
-curl -o "%1.csv" "https://wago.tools/db2/%1/csv"
+curl -o "%1.csv" "https://wago.tools/db2/%1/csv?useHotfixes"
 exit /b
 
 :downloadrenamed
-curl -o "%1.csv" "https://wago.tools/db2/%2/csv"
+curl -o "%1.csv" "https://wago.tools/db2/%2/csv?useHotfixes"
 exit /b
 
 :downloadcleaned

@@ -1,21 +1,49 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,h=_.CreateAchievement,_.CreateCustomHeader;
+local ach,crit,h=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateCustomHeader;
 categories.Talebound=
 h(-801,{SortPriority=100,g={
 h(-12,{awp=120107,g={
 ach(63814),
-ach(64136),
-ach(64135),
-ach(64138),
-ach(64137),
+ach(64136,{
+crit(117923,{achID=64139,id=2})}),
+ach(64135,{
+crit(117922,{achID=64139,id=1})}),
+ach(64138,{
+crit(117925,{achID=64139,id=4})}),
+ach(64137,{
+crit(117924,{achID=64139,id=3})}),
 ach(64139),
-ach(63819),
-ach(64227),
-ach(64228),
-ach(64229),
-ach(64230),
+ach(63819,{providers={{"n",274977}}}),
+ach(64227,{
+crit(118728,{achID=64227,id=1,providers={{"n",277570}}}),
+crit(118729,{achID=64227,id=2,providers={{"n",277571}}}),
+crit(118730,{achID=64227,id=3,providers={{"n",277567}}}),
+crit(118731,{achID=64227,id=4,providers={{"n",277568}}}),
+crit(118732,{achID=64227,id=5,providers={{"n",277569}}}),
+crit(118753,{achID=63820,id=1})}),
+ach(64228,{
+crit(118733,{achID=64228,id=1,providers={{"n",277572}}}),
+crit(118734,{achID=64228,id=2,providers={{"n",277573}}}),
+crit(118735,{achID=64228,id=3,providers={{"n",277574}}}),
+crit(118736,{achID=64228,id=4,providers={{"n",277575}}}),
+crit(118737,{achID=64228,id=5,providers={{"n",277576}}}),
+crit(118738,{achID=64228,id=6,providers={{"n",277577}}}),
+crit(118754,{achID=63820,id=2})}),
+ach(64229,{
+crit(118739,{achID=64229,id=6,providers={{"n",277554}}}),
+crit(118743,{achID=64229,id=4,providers={{"n",277558}}}),
+crit(118742,{achID=64229,id=7,providers={{"n",277557}}}),
+crit(118755,{achID=63820,id=3})}),
+ach(64230,{
+crit(118746,{achID=64230,id=1,providers={{"n",277561}}}),
+crit(118747,{achID=64230,id=2,providers={{"n",277562}}}),
+crit(118748,{achID=64230,id=3,providers={{"n",277563}}}),
+crit(118749,{achID=64230,id=4,providers={{"n",277564}}}),
+crit(118750,{achID=64230,id=5,providers={{"n",277565}}}),
+crit(118751,{achID=64230,id=6,providers={{"n",277566}}}),
+crit(118756,{achID=63820,id=4})}),
 ach(63820),
 ach(63824),
 ach(63825),

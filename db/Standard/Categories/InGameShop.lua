@@ -272,7 +272,16 @@ en(255839,{awp=110205,spellID=1259484,tmogSetID=2291,u=3,g={
 s(165527,188135,{f=3}),
 s(115884,184828,{f=3}),
 s(165528,188136,{f=3})}}),
-en(283360,{awp=120105,u=3}),
+en(283360,{awp=120105,questID=98723,spellID=1314712,tmogSetID=5947,u=3,g={
+s(314731,283355,{f=2,loc=40}),
+s(314733,283357,{f=2,loc=41}),
+s(314734,283358,{f=2,loc=41}),
+s(314727,283351,{f=2,loc=42}),
+s(314735,283359,{f=2,loc=45}),
+s(314732,283356,{f=2,loc=46}),
+s(314729,283353,{f=2,loc=47}),
+s(314730,283354,{f=2,loc=44}),
+s(314728,283352,{f=3})}}),
 en(258802,{awp=120000,questID=93477,rwp=120001,spellID=1264011,tmogSetID=5379,u=2,g={
 s(301655,258798,{f=2,loc=47}),
 s(302163,260403,{f=2,loc=46}),
@@ -695,7 +704,7 @@ de(15140,{itemID=263290,spellID=1270358,u=3}),
 de(15141,{awp=120005,itemID=263291,spellID=1270359,u=3}),
 de(12172,{itemID=258568,spellID=1263500,u=3}),
 de(9444,{itemID=253547,spellID=1256615,u=3}),
-i(281372,{awp=120105,u=3}),
+de(26890,{awp=120105,itemID=281372,spellID=1310965,u=3}),
 i(272146,{awp=120005,spellID=1290352,u=3}),
 i(272992,{awp=120005,spellID=1291534,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 de(16098,{awp=120005,itemID=264721,spellID=1272517,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(

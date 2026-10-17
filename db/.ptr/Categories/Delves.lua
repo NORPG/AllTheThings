@@ -2677,6 +2677,7 @@ i(271132),
 i(249219,{b=1}),
 i(271133,{awp=120105}),
 i(249227,{b=1}),
+i(271135,{awp=120105}),
 i(249228,{b=1}),
 i(271130)}),
 h(-24,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635,2647},g={
@@ -3710,14 +3711,11 @@ ach(63720,{coords={
 [2647]={{18.8,18.2},{50.3,82.6},{56.8,17.8},{58.5,21.7},{88.5,51.5}}},description="Each run randomly selects three out of five special rooms as spawn points for Hexmasks and one for the special 'Locked Room'. The final room will be empty.",providers={{"o",672624},{"o",672785},{"o",672788}}}),
 ach(63717,{
 title(797),
-crit(117169,{achID=63717,id=7,questID=98609,u=1}),
 crit(117170,{achID=63717,id=8,questID=98610,u=1}),
 crit(117175,{achID=63717,id=13,questID=98616,u=1}),
 crit(117176,{achID=63717,id=14,questID=98617,u=1}),
 crit(117177,{achID=63717,id=15,questID=98618,u=1}),
 crit(117182,{achID=63717,id=20,questID=98624,u=1}),
-crit(117188,{achID=63717,id=26,questID=98630,u=1}),
-crit(117189,{achID=63717,id=27,questID=98632,u=1}),
 crit(117196,{achID=63717,id=34,questID=98639,u=1}),
 crit(117197,{achID=63717,id=35,questID=98641,u=1})}),
 ach(63724,{providers={{"s",1315026}}}),
@@ -3812,7 +3810,6 @@ i(285065,{spellID=1317439})}}),
 q(97241,{coords={
 [2647]={{77.9,62.7},{78,51.4},{79.7,55.2},{82.9,65.6},{84.3,54.1}}},providers={{"o",649924},{"o",649937},{"o",649938},{"o",649939},{"o",649940}}}),
 flt(50,{
-i(271135),
 i(271156,{spellID=1288723})})}),
 h(-47,{
 i(285801,{spellID=1318437})}),
@@ -3844,6 +3841,9 @@ crit(117167,{achID=63717,id=5})}}),
 o(676625,{coords={
 [2647]={{29.9,74.7}}},questID=98608,g={
 crit(117168,{achID=63717,id=6})}}),
+o(676626,{coords={
+[2647]={{27.3,80.9}}},questID=98609,g={
+crit(117169,{achID=63717,id=7})}}),
 o(676627,{coords={
 [2647]={{26.9,80.9}}},g={
 toy(280822)}}),
@@ -3902,9 +3902,17 @@ crit(117186,{achID=63717,id=24})}}),
 o(676649,{coords={
 [2647]={{67.9,27.7}}},questID=98629,g={
 crit(117187,{achID=63717,id=25})}}),
+o(676650,{coords={
+[2647]={{65.4,42.5}}},questID=98630,g={
+i(282427,{f=55,spellID=1313875}),
+crit(117188,{achID=63717,id=26})}}),
 o(676651,{coords={
 [2647]={{56.7,44.1},{61.2,44.8}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98631,g={
 crit(117439,{achID=63717,id=42})}}),
+o(676652,{coords={
+[2647]={{64.7,42.9}}},questID=98632,g={
+i(283997,{f=55,spellID=1315082}),
+crit(117189,{achID=63717,id=27})}}),
 o(676653,{coords={
 [2647]={{81.3,55}}},questID=98633,g={
 crit(117190,{achID=63717,id=28})}}),
@@ -3940,12 +3948,13 @@ o(676761,{coords={
 [2647]={{46,48.3}}},questID=98650,g={
 crit(117200,{achID=63717,id=38})}})}}),
 o(689304,{isWeekly=1,questID=98758,g={
+r(1291690,{itemID=273067,requireSkill=755,skillID=2914}),
 toy(280820),
-r(1291690,{itemID=273067,requireSkill=755,skillID=2914})}}),
+r(1291687,{itemID=273064,requireSkill=202,skillID=2910})}}),
 o(676583,{crs={273788},description="Spawns next to the corpse of 'Keeper of the Key' after you defeat him.\n He has a chance to spawn anywhere in the Labyrinth.",g={
 i(282402,{spellID=1313734})}}),
-o(673143,{sym={{"select","itemID",273067}}}),
-o(673144,{sym={{"select","itemID",273067}}}),
+o(673143,{sym={{"select","itemID",273067,273064}}}),
+o(673144,{sym={{"select","itemID",273067,273064}}}),
 o(673138),
 o(696116,{coords={
 [2647]={{44.3,73.3}}},description="Spawns after finishing 'Dundun' event."}),

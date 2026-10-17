@@ -46606,6 +46606,7 @@ r(27905,{learnedAt=25,requireSkill=333,skillID=2493})}}),
 h(-679,{awp=110207,g={
 r(1262828,{learnedAt=65,requireSkill=333,skillID=2493}),
 r(1261331,{learnedAt=65,requireSkill=333,skillID=2493}),
+r(1313520,{awp=120105,learnedAt=65,requireSkill=333,skillID=2493}),
 r(1261340,{learnedAt=65,requireSkill=333,skillID=2493})}}),
 flt(50,{awp=20005,g={
 r(42615,{awp=20200,learnedAt=15,requireSkill=333,skillID=2493}),
@@ -46638,6 +46639,7 @@ r(27905,{learnedAt=25,requireSkill=333,skillID=2493})}}),
 h(-679,{awp=110207,g={
 r(1262828,{learnedAt=65,requireSkill=333,skillID=2493}),
 r(1261331,{learnedAt=65,requireSkill=333,skillID=2493}),
+r(1313520,{awp=120105,learnedAt=65,requireSkill=333,skillID=2493}),
 r(1261340,{learnedAt=65,requireSkill=333,skillID=2493})}}),
 flt(50,{awp=20005,g={
 r(42615,{awp=20200,learnedAt=15,requireSkill=333,skillID=2493}),
@@ -87447,6 +87449,7 @@ prof(333,{
 n(93531,{coords={
 [627]={{38.3,40.3}}},g={
 h(-679,{awp=110207,g={
+r(1313525,{awp=120105,learnedAt=90,requireSkill=333,skillID=2487}),
 r(1262238,{learnedAt=85,requireSkill=333,skillID=2487}),
 r(1260700,{learnedAt=85,requireSkill=333,skillID=2487})}})}})}),
 prof(202,{
@@ -87454,7 +87457,8 @@ n(92194,{coords={
 [627]={{37.9,26.2}}},g={
 h(-679,{awp=110207,g={
 r(1263319,{learnedAt=85,requireSkill=202,skillID=2500}),
-r(1263338,{learnedAt=85,requireSkill=202,skillID=2500})}})}})}),
+r(1263338,{learnedAt=85,requireSkill=202,skillID=2500}),
+r(1313527,{awp=120105,learnedAt=90,requireSkill=202,skillID=2500})}})}})}),
 prof(129,{
 n(93529,{coords={
 [627]={{36.2,37.6}}},g={
@@ -87553,6 +87557,7 @@ n(92195,{coords={
 h(-679,{awp=110207,g={
 r(1260711,{learnedAt=85,requireSkill=773,skillID=2508}),
 r(1263344,{learnedAt=85,requireSkill=773,skillID=2508}),
+r(1313522,{awp=120105,learnedAt=90,requireSkill=773,skillID=2508}),
 r(1260719,{learnedAt=85,requireSkill=773,skillID=2508}),
 r(1260737,{learnedAt=85,requireSkill=773,skillID=2508}),
 r(1260730,{learnedAt=85,requireSkill=773,skillID=2508}),
@@ -87567,6 +87572,7 @@ n(93527,{coords={
 [627]={{40.1,35.3}}},g={
 r(382975,{awp=100002,requireSkill=755,skillID=2518}),
 h(-679,{awp=110207,g={
+r(1313526,{awp=120105,learnedAt=90,requireSkill=755,skillID=2518}),
 r(1260757,{learnedAt=85,requireSkill=755,skillID=2518}),
 r(1263351,{learnedAt=85,requireSkill=755,skillID=2518})}})}})}),
 prof(165,{
@@ -87593,6 +87599,7 @@ r(186091,{learnedAt=20,requireSkill=197,skillID=2534}),
 h(-679,{awp=110207,g={
 r(1263858,{learnedAt=85,requireSkill=197,skillID=2534}),
 r(1260774,{learnedAt=85,requireSkill=197,skillID=2534}),
+r(1313524,{awp=120105,learnedAt=90,requireSkill=197,skillID=2534}),
 r(1260769,{learnedAt=80,requireSkill=197,skillID=2534})}})}})})}),
 h(-45,{
 q(44720,{coords={
@@ -101147,6 +101154,8 @@ r(304312,{awp=80300,learnedAt=165,requireSkill=164,skillID=2437}),
 r(304315,{awp=80300,learnedAt=165,requireSkill=164,skillID=2437})}),
 h(-679,{awp=110207,g={
 r(1260691,{learnedAt=160,requireSkill=164,skillID=2437}),
+r(1313521,{awp=120105,learnedAt=90,requireSkill=164,skillID=2454}),
+r(1315468,{awp=120105,learnedAt=160,requireSkill=164,skillID=2437}),
 r(1260692,{learnedAt=160,requireSkill=164,skillID=2437})}}),
 flt(50,{
 r(287235,{awp=80100,requireSkill=164,skillID=2437}),
@@ -101318,6 +101327,7 @@ r(255940,{learnedAt=100,requireSkill=202,skillID=2499})}),
 h(-679,{awp=110207,g={
 r(1260349,{learnedAt=160,requireSkill=202,skillID=2499}),
 r(1260352,{learnedAt=160,requireSkill=202,skillID=2499}),
+r(1315426,{awp=120105,learnedAt=160,requireSkill=202,skillID=2499}),
 r(1260425,{learnedAt=160,requireSkill=202,skillID=2499})}}),
 flt(50,{
 r(287279,{awp=80100,requireSkill=202,skillID=2499}),
@@ -101412,6 +101422,7 @@ r(286649,{awp=80100,requireSkill=773,skillID=2507}),
 h(-679,{awp=110207,g={
 r(1260583,{learnedAt=160,requireSkill=773,skillID=2507}),
 r(1260596,{learnedAt=160,requireSkill=773,skillID=2507}),
+r(1315465,{awp=120105,learnedAt=160,requireSkill=773,skillID=2507}),
 r(1260577,{learnedAt=160,requireSkill=773,skillID=2507}),
 r(1260593,{learnedAt=160,requireSkill=773,skillID=2507}),
 r(1260564,{learnedAt=160,requireSkill=773,skillID=2507}),
@@ -101646,8 +101657,8 @@ flt(113,{
 r(257125,{learnedAt=85,requireSkill=197,skillID=2533}),
 r(257126,{learnedAt=110,requireSkill=197,skillID=2533})}),
 h(-679,{awp=110207,g={
-r(1315465,{awp=120105,learnedAt=160,requireSkill=197,skillID=2507}),
 r(1260458,{learnedAt=160,requireSkill=197,skillID=2533}),
+r(1315445,{awp=120105,learnedAt=160,requireSkill=197,skillID=2533}),
 r(1260475,{learnedAt=160,requireSkill=197,skillID=2533})}}),
 flt(50,{
 r(287274,{awp=80100,requireSkill=197,skillID=2533}),
@@ -103810,6 +103821,23 @@ i(155812,{f=55,lvl=35,spellID=274911}),
 i(155811,{f=55,lvl=35,spellID=274910}),
 i(155813,{f=55,lvl=25,spellID=274910}),
 i(155814,{f=55,lvl=25,spellID=274911})}}),
+n(274690,{awp=120105,coords={
+[896]={{37.8,49}}},g={
+de(28499,{awp=80001,cost={{"c",1560,100}},itemID=284462,spellID=1316163}),
+de(28489,{awp=80001,cost={{"c",1560,100}},itemID=284466,spellID=1316167}),
+de(28458,{awp=80001,cost={{"c",1560,10}},itemID=284490,spellID=1316191}),
+de(28497,{awp=80001,cost={{"c",1560,10}},itemID=284488,spellID=1316189}),
+de(28493,{awp=80001,cost={{"c",1560,10}},itemID=284472,spellID=1316173}),
+de(28487,{awp=80001,cost={{"c",1560,150}},itemID=284476,spellID=1316177}),
+de(28488,{awp=80001,cost={{"c",1560,150}},itemID=284482,spellID=1316183}),
+de(28486,{awp=80001,cost={{"c",1560,150}},itemID=284484,spellID=1316185}),
+de(28491,{awp=80001,cost={{"c",1560,100}},itemID=284468,spellID=1316169}),
+de(28492,{awp=80001,cost={{"c",1560,100}},itemID=284486,spellID=1316187}),
+de(28494,{awp=80001,cost={{"c",1560,150}},itemID=284474,spellID=1316175}),
+de(28694,{awp=80001,cost={{"c",1560,150}},itemID=284480,spellID=1316181}),
+de(28490,{awp=80001,cost={{"c",1560,100}},itemID=284464,spellID=1316165}),
+de(28485,{awp=80001,cost={{"c",1560,75}},itemID=284470,spellID=1316171}),
+de(28456,{awp=80001,cost={{"c",1560,150}},itemID=284478,spellID=1316179})}}),
 n(142197,{coords={
 [896]={{52.2,31.6}}},description="In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at his coords and click on the chest twice.",g={
 p(2407,{b=1,cost={{"i",163036,300}},description="Defeat Cottontail Matron (located at 52.2, 46.8) for this item to appear on the vendor.",itemID=163493,npcID=143179,spellID=279209}),
@@ -109275,6 +109303,8 @@ r(304312,{awp=80300,learnedAt=165,requireSkill=164,skillID=2437}),
 r(304315,{awp=80300,learnedAt=165,requireSkill=164,skillID=2437})}),
 h(-679,{awp=110207,g={
 r(1260691,{learnedAt=160,requireSkill=164,skillID=2437}),
+r(1313521,{awp=120105,learnedAt=90,requireSkill=164,skillID=2454}),
+r(1315468,{awp=120105,learnedAt=160,requireSkill=164,skillID=2437}),
 r(1260692,{learnedAt=160,requireSkill=164,skillID=2437})}}),
 flt(50,{
 r(287235,{awp=80100,requireSkill=164,skillID=2437}),
@@ -109446,6 +109476,7 @@ r(255940,{learnedAt=100,requireSkill=202,skillID=2499})}),
 h(-679,{awp=110207,g={
 r(1260349,{learnedAt=160,requireSkill=202,skillID=2499}),
 r(1260352,{learnedAt=160,requireSkill=202,skillID=2499}),
+r(1315426,{awp=120105,learnedAt=160,requireSkill=202,skillID=2499}),
 r(1260425,{learnedAt=160,requireSkill=202,skillID=2499})}}),
 flt(50,{
 r(287279,{awp=80100,requireSkill=202,skillID=2499}),
@@ -109540,6 +109571,7 @@ r(286649,{awp=80100,requireSkill=773,skillID=2507}),
 h(-679,{awp=110207,g={
 r(1260583,{learnedAt=160,requireSkill=773,skillID=2507}),
 r(1260596,{learnedAt=160,requireSkill=773,skillID=2507}),
+r(1315465,{awp=120105,learnedAt=160,requireSkill=773,skillID=2507}),
 r(1260577,{learnedAt=160,requireSkill=773,skillID=2507}),
 r(1260593,{learnedAt=160,requireSkill=773,skillID=2507}),
 r(1260564,{learnedAt=160,requireSkill=773,skillID=2507}),
@@ -109774,8 +109806,8 @@ flt(113,{
 r(257125,{learnedAt=85,requireSkill=197,skillID=2533}),
 r(257126,{learnedAt=110,requireSkill=197,skillID=2533})}),
 h(-679,{awp=110207,g={
-r(1315465,{awp=120105,learnedAt=160,requireSkill=197,skillID=2507}),
 r(1260458,{learnedAt=160,requireSkill=197,skillID=2533}),
+r(1315445,{awp=120105,learnedAt=160,requireSkill=197,skillID=2533}),
 r(1260475,{learnedAt=160,requireSkill=197,skillID=2533})}}),
 flt(50,{
 r(287274,{awp=80100,requireSkill=197,skillID=2533}),
@@ -118603,7 +118635,8 @@ r(301683,{learnedAt=10,requireSkill=171,skillID=2750}),
 r(261423,{learnedAt=15,requireSkill=171,skillID=2750})}),
 h(-679,{awp=110207,g={
 r(1261972,{learnedAt=160,requireSkill=171,skillID=2750}),
-r(1261958,{learnedAt=160,requireSkill=171,skillID=2750})}}),
+r(1261958,{learnedAt=160,requireSkill=171,skillID=2750}),
+r(1316323,{awp=120105,learnedAt=160,requireSkill=171,skillID=2750})}}),
 flt(50,{
 r(343679,{learnedAt=155,requireSkill=171,skillID=2750}),
 r(343675,{learnedAt=130,requireSkill=171,skillID=2750}),
@@ -118645,6 +118678,7 @@ r(322591,{learnedAt=100,requireSkill=164,skillID=2751}),
 r(322588,{learnedAt=65,requireSkill=164,skillID=2751}),
 r(322594,{learnedAt=70,requireSkill=164,skillID=2751})}),
 h(-679,{awp=110207,g={
+r(1315292,{awp=120105,learnedAt=85,requireSkill=164,skillID=2751}),
 r(1261982,{learnedAt=85,requireSkill=164,skillID=2751}),
 r(1261980,{learnedAt=85,requireSkill=164,skillID=2751})}}),
 flt(50,{
@@ -118804,8 +118838,10 @@ r(1263247,{learnedAt=85,requireSkill=773,skillID=2756}),
 r(1263272,{learnedAt=85,requireSkill=773,skillID=2756}),
 r(1263241,{learnedAt=85,requireSkill=773,skillID=2756}),
 r(1263243,{learnedAt=85,requireSkill=773,skillID=2756}),
+r(1315335,{awp=120105,learnedAt=85,requireSkill=773,skillID=2756}),
 r(1263293,{learnedAt=85,requireSkill=773,skillID=2756}),
 r(1263278,{learnedAt=85,requireSkill=773,skillID=2756}),
+r(1316306,{awp=120105,learnedAt=85,requireSkill=773,skillID=2756}),
 r(1263285,{learnedAt=85,requireSkill=773,skillID=2756})}}),
 flt(111,{awp=90105,g={
 r(362412,{learnedAt=100,requireSkill=773,skillID=2756})}}),
@@ -119612,7 +119648,7 @@ crit(49969,{achID=14774,id=16,providers={{"i",178227}}})}}),
 ach(14353,{coords={
 [1565]={{41.5,44.8}}},crs={171743},description="You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else. Only one mob is summonable per day."}),
 ach(14164,{
-de(28572,{awp=120105,customCollect={"SL_COV_NFA"},itemID=283262,spellID=1314607}),
+de(28572,{awp=120105,itemID=283262,spellID=1314607}),
 crit(48210,{achID=14280,id=5})}),
 ach(14304,{
 crit(48588,{achID=14825,id=3}),
@@ -120598,6 +120634,23 @@ r(334537,{b=1,itemID=180782,requireSkill=773,skillID=2756})}}),
 n(165341,{coords={
 [1565]={{38,36.8}}},g={
 r(360545,{awp=90105,cost={{"i",187943,1}},description="Talk to Droman Dawnblossom. Then pick up the Fae Net item that is leaning against a table to the right of Droman.\nThen either travel to Val'sharah or summon a Vale Flitter Pet and use the Fae Net on the battle pet until you get a buff called Glowing Moth.",learnedAt=100,requireSkill=773,skillID=2756})}}),
+n(175419,{coords={
+[1565]={{48.9,53.1}},
+[1701]={{46.6,56.6}}},g={
+de(28542,{awp=120105,cost={{"c",1813,200}},itemID=281670,spellID=1312186}),
+de(28555,{awp=120105,cost={{"c",1813,200}},itemID=283267,spellID=1314612}),
+de(28537,{awp=120105,cost={{"c",1813,500}},itemID=283341,spellID=1314686}),
+de(28540,{awp=120105,cost={{"c",1813,300}},itemID=282714,spellID=1314361}),
+de(28577,{awp=120105,cost={{"c",1813,500}},itemID=282327,spellID=1313595}),
+de(28562,{awp=120105,cost={{"c",1813,500}},itemID=283385,spellID=1314738}),
+de(28541,{awp=120105,cost={{"c",1813,300}},itemID=283273,spellID=1314618}),
+de(28551,{awp=120105,cost={{"c",1813,200}},itemID=283379,spellID=1314732}),
+de(28557,{awp=120105,cost={{"c",1813,200}},itemID=283383,spellID=1314736}),
+de(28556,{awp=120105,cost={{"c",1813,500}},itemID=283381,spellID=1314734}),
+de(28550,{awp=120105,cost={{"c",1813,200}},itemID=283285,spellID=1314630}),
+de(28572,{awp=120105,cost={{"c",1813,500}},itemID=283262,spellID=1314607}),
+de(27614,{awp=120105,cost={{"c",1813,200}},itemID=283339,spellID=1314684}),
+de(28567,{awp=120105,cost={{"c",1813,200}},itemID=283281,spellID=1314626})}}),
 n(163714,{coords={
 [1565]={{43,47}}},g={
 mnt(318051,{b=1,cost={{"c",1813,5000}},itemID=180748,lvl=10}),
@@ -124765,6 +124818,13 @@ i(180969,{b=1,rwp=90005,u=2}),
 i(180694,{b=1,f=55,spellID=334768}),
 i(180658,{b=1,f=55,spellID=334292}),
 i(179939,{b=1,spellID=329177})}}),
+n(274682,{awp=120105,coords={
+[1536]={{50.8,53.4}}},g={
+de(28545,{awp=90002,cost={{"c",1813,200}},itemID=284496,spellID=1316197}),
+de(28548,{awp=90002,cost={{"c",1813,200}},itemID=284502,spellID=1316203}),
+de(28344,{awp=90002,cost={{"c",1813,500}},itemID=284500,spellID=1316201}),
+de(28544,{awp=90002,cost={{"c",1813,200}},itemID=284492,spellID=1316193}),
+de(28367,{awp=90002,cost={{"c",1813,200}},itemID=284494,spellID=1316195})}}),
 n(168429,{coords={
 [1536]={{40.2,41.2}}},g={
 i(184203,{b=1})}}),
@@ -124772,17 +124832,19 @@ n(173003,{coords={
 [1536]={{50.6,53.4}}},g={
 i(183112,{b=1,cost={{"i",163036,250}},minReputation={2410,0},spellID=340714}),
 i(190644,{awp=90200,b=1,cost={{"c",2009,10000}},lvl=60,minReputation={2410,0},questID=70704,sourceAchievements={14834},spellID=367898,sym={{"select","symselector",1},{"pop"}},type="ihqt"}),
+de(28559,{cost={{"c",1813,300}},itemID=284498,minReputation={2410,3000},spellID=1316199}),
+de(28546,{cost={{"c",1813,300}},itemID=284506,minReputation={2410,3000},spellID=1316207}),
 s(115827,184741,{b=1,f=4,loc=44,lvl=60,minReputation={2410,9000}}),
 s(115826,184740,{b=1,f=7,loc=44,lvl=60,minReputation={2410,9000}}),
+i(217596,{awp=100206,b=1,c={6},f=111,lvl=50,minReputation={2410,9000},spellID=440346}),
+i(217592,{awp=100206,b=1,c={11},f=111,lvl=50,minReputation={2410,9000},spellID=440342}),
+i(217593,{awp=100206,b=1,c={3},f=111,lvl=50,minReputation={2410,9000},spellID=440343}),
+i(217599,{awp=100206,b=1,c={7},f=111,lvl=50,minReputation={2410,9000},spellID=440347}),
 s(115825,184739,{b=1,f=5,loc=44,lvl=60,minReputation={2410,9000}}),
 r(310898,{b=1,itemID=183101,minReputation={2410,9000},requireSkill=197,skillID=2759}),
 r(322593,{b=1,itemID=183095,minReputation={2410,9000},requireSkill=164,skillID=2751}),
 s(115828,184742,{b=1,f=6,loc=44,lvl=60,minReputation={2410,9000}}),
 r(310535,{b=1,itemID=183858,minReputation={2410,9000},requireSkill=202,skillID=2755}),
-i(217596,{awp=100206,b=1,c={6},f=111,lvl=50,minReputation={2410,9000},spellID=440346}),
-i(217592,{awp=100206,b=1,c={11},f=111,lvl=50,minReputation={2410,9000},spellID=440342}),
-i(217593,{awp=100206,b=1,c={3},f=111,lvl=50,minReputation={2410,9000},spellID=440343}),
-i(217599,{awp=100206,b=1,c={7},f=111,lvl=50,minReputation={2410,9000},spellID=440347}),
 i(184744,{b=1,f=52,lvl=60,minReputation={2410,21000}}),
 rfl(206,{b=1,itemID=183244,minReputation={2410,21000},spellID=342040}),
 r(311411,{b=1,itemID=183104,minReputation={2410,21000},requireSkill=773,skillID=2756}),
@@ -126431,9 +126493,11 @@ r(311870,{b=1,cost=13500000,itemID=183099,minReputation={2413,9000},requireSkill
 s(115807,184721,{b=1,f=4,loc=45,lvl=60,minReputation={2413,9000}}),
 i(217598,{awp=100206,b=1,c={4},f=111,lvl=50,minReputation={2413,9000},spellID=440334}),
 i(217589,{awp=100206,b=1,c={5},f=111,lvl=50,minReputation={2413,9000},spellID=440339}),
+de(28343,{awp=120105,cost={{"c",1813,300}},itemID=284562,minReputation={2413,9000},spellID=1316263}),
 s(115808,184722,{b=1,f=6,loc=45,lvl=60,minReputation={2413,9000}}),
 s(115806,184720,{b=1,f=7,loc=45,lvl=60,minReputation={2413,9000}}),
 toy(183900,{cost=13500000,lvl=48,minReputation={2413,9000}}),
+de(28341,{awp=120105,cost={{"c",1813,300}},itemID=284570,minReputation={2413,9000},spellID=1316271}),
 p(2899,{b=1,cost={{"i",163036,250}},itemID=180593,minReputation={2413,21000},npcID=171127,spellID=333804}),
 s(115812,184726,{b=1,f=4,loc=41,lvl=60,minReputation={2413,21000}}),
 s(115810,184724,{b=1,f=5,loc=41,lvl=60,minReputation={2413,21000}}),
@@ -126443,18 +126507,41 @@ s(114930,183708,{cost={{"c",1813,3500}},customCollect={"SL_COV_VEN"},f=3,lvl=50,
 rfl(201,{b=1,cost=11000000,itemID=183245,minReputation={2413,21000},spellID=342040}),
 i(183839,{b=1,cost=17650000,f=200,minReputation={2413,21000},requireSkill=165}),
 r(308403,{b=1,cost=17650000,itemID=182668,minReputation={2413,21000},requireSkill=185,skillID=2752}),
+de(28532,{awp=120105,cost={{"c",1813,500}},itemID=284560,minReputation={2413,21000},spellID=1316261}),
+de(28531,{awp=120105,cost={{"c",1813,500}},itemID=284558,minReputation={2413,21000},spellID=1316259}),
 r(311412,{b=1,cost=17650000,itemID=183102,minReputation={2413,21000},requireSkill=773,skillID=2756}),
 s(111640,179282,{b=1,cost=2500000,f=9,minReputation={2413,42000}}),
 mnt(341639,{b=1,cost=300000000,itemID=183518,minReputation={2413,42000}}),
 ill(6259,{b=1,itemID=182207,minReputation={2413,42000},questID=61727}),
 i(184755,{b=1,f=51,lvl=60,minReputation={2413,42000}})}}),
+n(274062,{awp=120105,coords={
+[1525]={{73,52.6}}},g={
+de(28525,{awp=90002,cost={{"c",1813,200}},itemID=282681,spellID=1314237}),
+de(28530,{awp=90002,cost={{"c",1813,200}},itemID=282683,spellID=1314239}),
+de(28353,{awp=90002,cost={{"c",1813,200}},itemID=282689,spellID=1314245}),
+de(28558,{awp=90002,cost={{"c",1813,200}},itemID=282687,spellID=1314243}),
+de(27613,{awp=90002,cost={{"c",1813,200}},itemID=282695,spellID=1314251}),
+de(28511,{awp=90002,cost={{"c",1813,200}},itemID=282665,spellID=1314221}),
+de(28518,{awp=90002,cost={{"c",1813,500}},itemID=282673,spellID=1314229}),
+de(28510,{awp=90002,cost={{"c",1813,200}},itemID=282663,spellID=1314219}),
+de(28517,{awp=90002,cost={{"c",1813,200}},itemID=282691,spellID=1314247}),
+de(28513,{awp=90002,cost={{"c",1813,200}},itemID=282669,spellID=1314225}),
+de(27612,{awp=90002,cost={{"c",1813,200}},itemID=282661,spellID=1314217}),
+de(28524,{awp=90002,cost={{"c",1813,200}},itemID=282697,spellID=1314253}),
+de(28514,{awp=90002,cost={{"c",1813,200}},itemID=282679,spellID=1314235}),
+de(28515,{awp=90002,cost={{"c",1813,200}},itemID=282685,spellID=1314241}),
+de(28509,{awp=90002,cost={{"c",1813,500}},itemID=282677,spellID=1314233}),
+de(28533,{awp=90002,cost={{"c",1813,200}},itemID=282671,spellID=1314227}),
+de(28552,{awp=90002,cost={{"c",1813,200}},itemID=282693,spellID=1314249}),
+de(28512,{awp=90002,cost={{"c",1813,200}},itemID=282667,spellID=1314223}),
+de(28563,{awp=90002,cost={{"c",1813,500}},itemID=282675,spellID=1314231})}}),
 n(173570,{coords={
 [1525]={{40.8,46.6}}},g={
 i(182585,{b=1})}}),
 n(160084,{coords={
 [1525]={{50.4,81.4}}},g={
-s(115069,183977,{b=1,cost={{"c",1813,1750}},customCollect={"SL_COV_VEN"},f=20,lvl=50}),
 s(115074,183982,{b=1,cost={{"c",1813,3000}},f=20,lvl=50}),
+s(115069,183977,{b=1,cost={{"c",1813,1750}},customCollect={"SL_COV_VEN"},f=20,lvl=50}),
 s(115072,183980,{b=1,cost={{"c",1813,3000}},f=20,lvl=50}),
 s(115073,183981,{b=1,cost={{"c",1813,3000}},f=26,lvl=50}),
 s(115077,183985,{b=1,cost={{"c",1813,3000}},f=20,lvl=50}),
@@ -126473,7 +126560,14 @@ i(181799,{b=1}),
 i(182298,{b=1,f=55,lvl=50,spellID=338715}),
 i(182702,{b=1}),
 i(182163,{b=1,f=55,lvl=40,spellID=338385}),
-r(360542,{awp=90105,b=1,description="Sold for 20-30 of a trade good which changes every day. And sometimes it's not even on the vendor!",itemID=187886,lvl=10,requireSkill=773,skillID=2756})}})}),
+r(360542,{awp=90105,b=1,description="Sold for 20-30 of a trade good which changes every day. And sometimes it's not even on the vendor!",itemID=187886,lvl=10,requireSkill=773,skillID=2756})}}),
+n(274686,{awp=120105,coords={
+[1525]={{61.8,63.6}}},g={
+de(28568,{cost={{"c",1813,200}},itemID=284554,spellID=1316255}),
+de(28576,{cost={{"c",1813,500}},itemID=284556,spellID=1316257}),
+de(27684,{cost={{"c",1813,300}},itemID=284568,spellID=1316269}),
+de(28534,{cost={{"c",1813,300}},itemID=284564,spellID=1316265}),
+de(28535,{cost={{"c",1813,300}},itemID=284566,spellID=1316267})}})}),
 h(-62,{
 h(-47,{
 i(187858,{awp=90105,b=1,description="Has a chance to be listed as a reward for players of the 'Night Fae' Covenant from Pet Battle World Quests.\n\nSwitch to Night Fae Covenant, and use '/attwq' to see if it's up!",lvl=50})}),

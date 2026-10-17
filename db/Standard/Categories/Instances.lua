@@ -35750,7 +35750,8 @@ e(1207,{crs={83892,83893,83894}}),
 e(1209,{crs={84550,84666}}),
 e(1208,{npcID=82682}),
 e(1210,{npcID=83846,g={
-ach(9044)}})}}),
+ach(9044),
+de(25326,{awp=120105,itemID=284194,spellID=1315337})}})}}),
 d(103,{difficulties={1,23},g={
 e(1214,{npcID=81522,sym={{"sub","common_wod_dungeon_drop",103,-89,-93},{"sub","common_wod_dungeon_drop",103,-93}},g={
 s(66849,119175,{b=1,f=33}),

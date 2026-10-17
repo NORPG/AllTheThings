@@ -204,7 +204,7 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Grievous Gladiator's Ironskin Armor",213,512,45619,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Leather Armor",214,8,45620,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Plate Armor",215,1,45621,276,15,13301,0,1,4,50200,5220,0
-Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
+G'Hanir,4955,1024,0,450,0,0,0,1,10,110205,350,0
 "Grievous Gladiator's Ringmail Armor",216,64,45622,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Satin Armor",217,16,45623,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Scaled Armor",218,2,45624,276,15,13301,0,1,4,50200,5220,0
@@ -3591,11 +3591,13 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Prowler's Deep Headgear",3916,0,85123,67,0,0,0,1,10,0,1640,0
 "Prowler's Camo Headgear",3917,0,85124,67,0,0,0,1,10,0,1640,0
 "Prowler's Brick Headgear",3918,0,85125,67,0,0,0,1,10,0,1640,0
+"Prowler's Lively Headgear",3919,0,85126,67,0,0,0,1,10,0,1640,0
 "Prowler's Faded Headgear",3920,0,85127,67,0,0,0,1,10,0,1640,0
 "Prowler's Icy Headgear",3921,0,85128,67,0,0,0,1,10,0,1640,0
 "Prowler's Pink Headgear",3922,0,85129,67,0,0,0,1,10,0,1640,0
 "Prowler's Carrot Headgear",3923,0,85130,67,0,0,0,1,10,0,1640,0
 "Prowler's Rosy Headgear",3924,0,85136,67,0,0,0,1,10,0,1640,0
+"Prowler's Plum Headgear",3925,0,85137,67,0,0,0,1,10,0,1640,0
 "Prowler's Crimson Headgear",3926,0,85131,67,0,0,0,1,10,0,1640,0
 "Prowler's Violet Headgear",3927,0,85132,67,0,0,0,1,10,0,1640,0
 "Prowler's Aquatic Headgear",3928,0,85133,67,0,0,0,1,10,0,1640,0
@@ -3929,13 +3931,14 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Ornaments of the Pearlescent Butterfly",4261,0,86714,2,300,14226,0,1,10,110100,10,0
 "Ornaments of the Spring Butterfly",4262,0,86726,2,300,14151,4261,1,10,110100,10,0
 "Ornaments of the Ruby Butterfly",4263,0,86727,2,300,13965,4261,1,10,110100,10,0
+"Ornaments of the Midnight Butterfly",4264,0,86729,2,300,14015,4261,1,10,110100,10,0
 "Goblin Bruiser's Attire",4265,0,0,0,301,13966,0,1,10,110100,10,0
 "Undermine Enforcer's Attire",4266,0,0,0,302,14015,4265,1,10,110100,10,0
 "Noxious Injector Apparatus",4267,400,89188,256,303,14174,4337,1,10,110100,10,0
 "Nitroclad Kit",4268,3592,89189,256,303,14174,4338,1,10,110100,10,0
 "Blastborne Loadout",4269,4164,89190,256,303,14174,4339,1,10,110100,10,0
 "Junkreaver's Plates",4270,35,89191,256,303,14174,4340,1,10,110100,10,0
-"Forest Dweller's Garden Attire",4271,0,86871,258,304,13968,0,1,10,110100,10,0
+"Forest Dweller's Muddied Attire",4271,0,86871,258,304,13968,0,1,10,110100,10,0
 "Forest Dweller's Butterfly Attire",4272,0,86875,258,304,14151,4271,1,10,110100,10,0
 "Forest Dweller's Blooming Attire",4273,0,86876,258,304,14015,4271,1,10,110100,10,0
 "Forest Dweller's Rooted Attire",4274,0,86879,258,304,13967,4271,1,10,110100,10,0
@@ -4259,7 +4262,6 @@ Moonspirit,4946,1024,0,450,0,0,0,1,10,110205,350,0
 "Avatar of Ursol",4952,1024,0,450,0,0,0,1,10,110205,350,0
 "Fallen to Nightmare",4953,1024,0,450,0,0,0,1,10,110205,350,0
 Stonepaw,4954,1024,0,450,0,0,0,1,10,110205,350,0
-G'Hanir,4955,1024,0,450,0,0,0,1,10,110205,350,0
 "Warden's Crown",4956,1024,0,450,0,0,0,1,10,110205,350,0
 "Crystalline Awakening",4957,1024,0,450,0,0,0,1,10,110205,350,0
 "Deadwood Keeper",4958,1024,0,450,0,0,0,1,10,110205,350,0
@@ -4498,6 +4500,7 @@ Earth-Warder,5090,1,0,450,0,0,0,1,10,110205,350,0
 "Scout of the Wastes",5194,3592,0,0,339,14350,5175,1,10,110200,10,0
 "Skirmisher of the Wastes",5195,4164,0,0,339,14350,5174,1,10,110200,10,0
 "Brute of the Wastes",5196,35,0,0,339,14350,5176,1,10,110200,10,0
+"Saltshroud Privateer's Finery",5197,0,91935,258,247,13967,3443,1,10,110207,4,0
 "Hollow Sentinel's Wingdrapes",5198,0,91939,323,0,0,0,1,10,110200,10,0
 "Vicious Charhound's Felcovers",5199,0,91941,323,0,0,0,1,10,110200,10,0
 "Plumes of the Mother Eagle",5200,0,91940,323,0,0,0,1,10,110200,10,0
@@ -4512,6 +4515,32 @@ Earth-Warder,5090,1,0,450,0,0,0,1,10,110205,350,0
 "Living Weapon's Capes",5209,0,91951,323,0,0,0,1,10,110200,10,0
 "Shawls of Channeled Fury",5210,0,91951,323,0,0,0,1,10,110200,10,0
 "Well-Worn Twilight Cultist's Attire",5211,0,92019,259,0,13989,0,1,11,120000,600,0
+"Prowler's Plum Shoulder Cape",5212,0,92035,67,0,0,0,1,10,0,1640,0
+"Prowler's Lively Shoulder Cape",5213,0,92036,67,0,0,0,1,10,0,1640,0
+"Deathwarder's Grove Blade",5214,0,92037,67,0,0,0,1,10,0,1640,0
+"Deathwarder's Grove Fetish",5215,0,92038,67,0,0,0,1,10,0,1640,0
+"Deathwarder's Grove Fist",5216,0,92039,67,0,0,0,1,10,0,1640,0
+"Deathwarder's Grove Stave",5217,0,92040,67,0,0,0,1,10,0,1640,0
+"Topsy Turvy Fool's Mask",5218,0,92041,67,0,0,0,1,10,0,1640,0
+"Wings of the Icy Rose Monarch",5219,0,92042,67,0,0,0,1,10,0,1640,0
+"Forest Garden Trowel",5220,0,92043,67,0,0,0,1,10,0,1640,0
+"Lavender Bow-quet",5221,0,92044,67,0,0,0,1,10,0,1640,0
+"Midnight Butterfly Longbow",5222,0,92045,67,0,0,0,1,10,0,1640,0
+"Midnight Butterfly Mace",5223,0,92046,67,0,0,0,1,10,0,1640,0
+"Midnight Butterfly Polearm",5224,0,92047,67,0,0,0,1,10,0,1640,0
+"Midnight Butterfly Sword",5225,0,92048,67,0,0,0,1,10,0,1640,0
+"Midnight Butterfly Wand",5226,0,92049,67,0,0,0,1,10,0,1640,0
+"Paradise's Ruby Axe",5227,0,92050,67,0,0,0,1,10,0,1640,0
+"Rosy Floral Edge",5228,0,92051,67,0,0,0,1,10,0,1640,0
+"Rosy Floral Stalk",5229,0,92052,67,0,0,0,1,10,0,1640,0
+"Ruby Floral Staff",5230,0,92053,67,0,0,0,1,10,0,1640,0
+"Saltshroud Privateer's Blunderbuss",5231,0,92054,67,0,0,0,1,10,0,1640,0
+"Saltshroud Privateer's Cleaver",5232,0,92055,67,0,0,0,1,10,0,1640,0
+"Saltshroud Privateer's Cutlass",5233,0,92056,67,0,0,0,1,10,0,1640,0
+"Saltshroud Privateer's Greatsword",5234,0,92057,67,0,0,0,1,10,0,1640,0
+"Saltshroud Privateer's Stave",5235,0,92058,67,0,0,0,1,10,0,1640,0
+"Topsy Turvy Fool's Blade",5236,0,92059,67,0,0,0,1,10,0,1640,0
+"Topsy Turvy Fool's Die",5237,0,92060,67,0,0,0,1,10,0,1640,0
 "The Noble's Winter Collection",5238,0,92095,258,342,13967,0,1,10,110205,4000,0
 "The Seafarer's Winter Collection",5239,0,92096,258,342,14145,5238,1,10,110205,4000,0
 "The Drustvar Winter Collection",5240,0,92097,258,342,13965,5238,1,10,110205,4000,0
@@ -4522,6 +4551,7 @@ Earth-Warder,5090,1,0,450,0,0,0,1,10,110205,350,0
 "Villager's City Attire",5245,0,92117,258,343,13965,5242,1,10,110205,4000,0
 "Shoulderguards of the Wastelander Seer",5246,0,92173,257,337,14349,0,1,10,110200,10,0
 "Ancient Capes of the Reshii",5247,0,92175,257,337,14349,0,1,10,110200,10,0
+"Deathwarder's Great Grove Blade",5250,0,92318,67,0,0,0,1,10,0,1640,0
 "Villager's Forest Collection",5251,0,92367,258,343,13968,0,1,10,110205,4000,0
 "Villager's Seaside Collection",5252,0,92368,258,343,13967,5251,1,10,110205,4000,0
 "Villager's Country Collection",5253,0,92369,258,343,14125,5251,1,10,110205,4000,0
@@ -4638,6 +4668,7 @@ Taeshalach,5305,0,92886,323,0,0,0,1,6,70300,7000,0
 "Vengeful Regalia of the Crusader",5364,0,93403,258,357,13965,5362,1,10,110207,10,0
 "Pious Regalia of the Crusader",5365,0,93405,258,357,14120,5362,1,10,110207,10,0
 Tushui,5366,0,0,4,0,13967,5368,1,10,110207,10,147474
+Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
 "Wandering Isle",5368,0,0,0,0,13193,0,1,10,110207,10,147474
 "Elaborate Charcoal Mageweave",5369,0,93445,258,359,13966,0,1,11,120000,10,0
 "Elaborate Lavender Mageweave",5370,0,93446,258,359,14015,5369,1,11,120000,10,0
@@ -4920,6 +4951,8 @@ Tushui,5366,0,0,4,0,13967,5368,1,10,110207,10,147474
 "White Sunwalker Totem",5664,0,95348,259,0,14120,0,1,11,120005,10,0
 "Arsenal: Drakebreaker's Weapons",5665,0,0,273,0,0,0,1,9,100000,4150,0
 "Arsenal: Hellbloom Weapons",5666,0,0,273,0,0,0,1,9,100200,4150,0
+"Azshara's Darkscale Raiment",5667,0,95545,258,388,13965,0,1,11,120005,10,0
+"Azshara's Deepscale Raiment",5668,0,95546,258,388,14120,5667,1,11,120005,10,0
 "Sire's Ornate Attire",5688,0,95681,258,0,13965,0,1,11,120005,10,0
 "Sunlit Petalweave",5691,0,95831,258,391,14120,0,1,11,120007,10,0
 "Scarlet Petalweave",5692,0,95832,258,391,13965,5691,1,11,120007,10,0
@@ -5138,6 +5171,10 @@ Tushui,5366,0,0,4,0,13967,5368,1,10,110207,10,147474
 "Blushing Witchwick",5913,0,97976,258,410,14151,5908,1,11,120100,10,0
 "Venom-Cursed Arms",5915,0,98066,257,0,13988,0,1,11,120100,4000,0
 "[DNT] 12.1 Mythic VFX Unlock - All Items",5916,0,98217,259,0,0,0,1,11,120100,5710,0
+"Witch Hunter's Shadow Attire",5917,0,98429,258,411,13966,0,1,11,120107,10,0
+"Witch Hunter's Forest Attire",5918,0,98429,258,411,13968,5917,1,11,120107,10,0
+"Witch Hunter's Bloodied Attire",5919,0,98433,258,411,13965,5917,1,11,120107,10,0
+"Witch Hunter's Ivory Attire",5920,0,98434,258,411,14120,5917,1,11,120107,10,0
 "Executive Chef's Uniform",5921,0,98449,258,412,14120,0,1,11,120105,10,0
 "Sous Chef's Uniform",5922,0,98450,258,412,14131,5921,1,11,120105,10,0
 "Grill Chef's Uniform",5923,0,98451,258,412,13965,5921,1,11,120105,10,0
@@ -5146,12 +5183,36 @@ Tushui,5366,0,0,4,0,13967,5368,1,10,110207,10,147474
 "Head Chef's Uniform",5926,0,98454,258,412,13966,5921,1,11,120105,10,0
 "Scout Team Seven Weapons",5927,0,98460,1,0,0,0,1,11,120100,2000,0
 "Scout Team Seven Quiver",5928,0,0,1,0,0,0,1,11,120100,2000,0
+"Traveler's Shadow Headgear",5930,0,98487,67,0,0,0,1,10,0,1640,0
+"Traveler's Shadow Headgear",5931,0,98488,67,0,0,0,1,10,0,1640,0
+"Traveler's Forest Headgear",5932,0,98489,67,0,0,0,1,10,0,1640,0
+"Traveler's Sanguine Headgear",5933,0,98490,67,0,0,0,1,10,0,1640,0
+"Traveler's Dusk Headgear",5934,0,98491,67,0,0,0,1,10,0,1640,0
+"Traveler's Oaken Headgear",5935,0,98492,67,0,0,0,1,10,0,1640,0
+"Traveler's Ivory Headgear",5936,0,98493,67,0,0,0,1,10,0,1640,0
+"Seabound Smuggler's Attire",5937,0,98560,256,325,13967,4552,1,7,80001,10,0
+"Drustvar Smuggler's Attire",5938,0,98561,256,325,14125,4552,1,7,80001,10,0
+"Dockside Smuggler's Attire",5939,0,98559,256,325,13968,4552,1,7,80001,10,0
+"Village Patrolman's Regalia",5940,0,98562,2,351,13965,2669,1,10,110205,10,0
+"Outfitter's Autumn Garments",5941,0,98568,67,0,0,0,1,10,0,1640,0
+"Outfitter's Formal Garments",5942,0,98569,67,0,0,0,1,10,0,1640,0
+"Outfitter's Navy Garments",5943,0,98570,67,0,0,0,1,10,0,1640,0
+"Outfitter's Oaken Garments",5944,0,98571,67,0,0,0,1,10,0,1640,0
+"Outfitter's Blush Garments",5945,0,98572,67,0,0,0,1,10,0,1640,0
+"Outfitter's Maroon Garments",5946,0,98573,67,0,0,0,1,10,0,1640,0
 "Wood Haunter's Guise of the Wight",5948,0,98727,258,413,14145,0,1,11,120105,4000,0
 "Ice-Walker's Guise of the Wight",5949,0,98728,258,413,13967,5948,1,11,120105,4000,0
 "Embered Guise of the Wight",5950,0,98729,258,413,14097,5948,1,11,120105,4000,0
 "Frost Revenant's Guise of the Wight",5951,0,98730,258,413,14015,5948,1,11,120105,4000,0
-"Azshara's Darkscale Raiment",5667,0,95545,258,388,13965,0,1,11,120005,10,0
-"Azshara's Deepscale Raiment",5668,0,95546,258,388,14120,5667,1,11,120005,10,0
+"Traveler's Velvet Commonwear",6159,0,99110,67,0,0,0,1,10,0,1640,0
+"Traveler's Charcoal Commonwear",6160,0,99109,67,0,0,0,1,10,0,1640,0
+"Villager's Linen Commonwear",6161,0,99112,67,0,0,0,1,10,0,1640,0
+"Villager's Linen Commonwear",6162,0,99111,67,0,0,0,1,10,0,1640,0
+"Traveler's Colorful Mantle Collection",6163,0,99138,67,0,0,0,1,10,0,1640,0
+"Cursed Wood-Witch's Mask Gallery",6164,0,99139,67,0,0,0,1,11,0,1640,0
+"Noble's Literary Caps",6165,0,99140,67,0,0,0,1,11,0,1640,0
+"Wastewander Hunter's Kit",6269,0,99574,258,232,14015,3306,1,11,120107,10,0
+"Rexxar's Fabled Attire",5947,0,98723,258,0,13965,0,1,11,120105,10,0
 "Varian's Azure Dragon Attire",5705,0,96144,258,0,14130,0,1,11,120007,10,0
 "Veteran Adventurer's Outdoor Wear",5914,0,97984,258,0,13968,0,1,11,120100,10,0
 "Shen'dorei Magister's Garb",5700,0,95977,258,393,13967,0,1,11,120100,1000,0

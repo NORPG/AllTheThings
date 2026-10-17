@@ -33,7 +33,7 @@ call :download WorldMapOverlay
 
 @REM Run the locale update script from its own folder
 pushd "%~dp0localized"
-call ".update.bat" %BUILD% %FORCE_OVERWRITE%
+call ".update.bat" %BUILD% %~1
 popd
 
 exit /b
