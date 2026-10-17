@@ -1510,7 +1510,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(786, {	-- Thwarting Kolkar Aggression
-				--["sourceQuest"] = 785,	-- A Strategic Alliance [didn't make it into Classic]
+				["sourceQuests"] = { 785 },	-- A Strategic Alliance
 				qg = 3140,	-- Lar Prowltusk
 				coord = { 54.52, 75.20, MAP.DUROTAR },
 				races = HORDE_ONLY,
@@ -1531,6 +1531,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					i(4933),	-- Seasoned Fighter's Cloak
 					i(6062),	-- Heavy Cord Bracers
 				},
+			}),
+			q(785, {	-- A Strategic Alliance
+				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(6081, {	-- Training the Beast
 				sourceQuest = 6082,	-- Taming the Beast (3/3)

@@ -212,6 +212,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				},
 			}),
 			q(94497, {	-- Call of Water
+				["sourceQuests"] = { 94495 },	-- Call of Water
 				qg = 258203,	-- Hervdana Saegrund
 				coord = { 65.73, 76.43, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
@@ -226,6 +227,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				},
 			}),
 			q(94499, {	-- Call of Water
+				["sourceQuests"] = { 94497 },	-- Call of Water
 				qg = 258203,	-- Hervdana Saegrund
 				coord = { 65.73, 76.43, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
@@ -240,6 +242,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				},
 			}),
 			q(94500, {	-- Call of Water
+				["sourceQuests"] = { 94499 },	-- Call of Water
 				qg = 258203,	-- Hervdana Saegrund
 				coord = { 65.73, 76.43, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
@@ -254,6 +257,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				},
 			}),
 			q(94501, {	-- Call of Water
+				["sourceQuests"] = { 94500 },	-- Call of Water
 				qg = 258203,	-- Hervdana Saegrund
 				coord = { 65.73, 76.43, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
@@ -289,6 +293,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				groups = {
 					i(2943),	-- Eye of Paleth
 				},
+			}),
+			q(98240, {	-- Crimson Crate Delivery
+				sourceQuests = { 98072 },	-- Crocs of the Sky
+				qg = 2094,	-- James Halloran
+				coord = { 8.6, 55.6, MAP.WETLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 19,
+				qi = 280099,	-- Crimson Crate (QI!)
 			}),
 			q(98072, {	-- Crocs of the Sky
 				sourceQuest = 471,	-- Apprentice's Duties
@@ -619,6 +632,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 28,
 			}),
 			q(98245, {	-- Razormaw Needling
+				["sourceQuests"] = { 98240 },	-- Crimson Crate Delivery
 				qg = 270637,	-- Howin Kindfeather
 				coord = { 49.3, 42.1, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
