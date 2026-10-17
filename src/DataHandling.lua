@@ -788,7 +788,7 @@ local MergeSkipFields = {
 -- Fields on a Thing which are specific to where the Thing is Sourced or displayed in a ATT window
 local SourceSpecificFields = {
 -- Returns the 'most obtainable' event value from the provided set of event values
-	["e"] = function(...)
+	e = function(...)
 		-- print("GetMostObtainableValue:")
 		-- app.PrintTable(vals)
 		local e
@@ -801,7 +801,7 @@ local SourceSpecificFields = {
 		return e
 	end,
 -- Returns the 'most obtainable' unobtainable value from the provided set of unobtainable values
-	["u"] = function(...)
+	u = function(...)
 		-- app.PrintDebug("GetMostObtainableValue:",...)
 		local max, check, new = -1, nil, nil
 		local phases = L.PHASES
@@ -831,7 +831,7 @@ local SourceSpecificFields = {
 		return new
 	end,
 -- Returns the 'earliest' Added with Patch value from the provided set of `awp` values
-	["awp"] = function(...)
+	awp = function(...)
 		local min, awp
 		local vals = select("#", ...)
 		for i=1,vals do
@@ -845,7 +845,7 @@ local SourceSpecificFields = {
 		return min
 	end,
 -- Returns the 'highest' Removed with Patch value from the provided set of `rwp` values
-	["rwp"] = function(...)
+	rwp = function(...)
 		local max, rwp = -1,nil
 		local vals = select("#", ...)
 		for i=1,vals do
@@ -860,12 +860,12 @@ local SourceSpecificFields = {
 		return max
 	end,
 -- Simple boolean
-	["pvp"] = true,
-	["pb"] = true,
-	["requireSkill"] = true,
+	pvp = true,
+	pb = true,
+	requireSkill = true,
 	-- could be more complex, but for now just prevent showing when not true for all sources
-	["minReputation"] = true,
-	["maxReputation"] = true,
+	minReputation = true,
+	maxReputation = true,
 }
 -- Group Merge Handling
 local function Assign_Direct(g, k, v)
@@ -940,10 +940,10 @@ local function MergeProperties(g, t, noReplace, clone)
 		local gk, tk
 		for k,f in pairs(SourceSpecificFields) do
 			-- existing is set
-			gk = rawget(g, k)
+			gk = g[k]
 			-- app.PrintDebug("SSF",k,g,t,gk,rawget(t, k))
 			if gk then
-				tk = rawget(t, k)
+				tk = t[k]
 				-- no value on merger
 				if tk == nil then
 					-- app.PrintDebug(g.hash,"remove",k,gk,tk)
