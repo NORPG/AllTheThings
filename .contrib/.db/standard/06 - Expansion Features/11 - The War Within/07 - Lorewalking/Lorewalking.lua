@@ -49,6 +49,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				ach(61442, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {	-- Lorewalking: The Loa
 					["groups"] = { i(271971) },	-- Tome of Kings (DECOR!)
 				})),
+				ach(63691, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_7 } }, {	-- Lorewalking: Thrall
+					["groups"] = { i(281626) },	-- Tale of the First Warchief (DECOR!)
+				})),
 			}),
 			n(REWARDS, {
 				i(242386,{	-- Lorewalker's Crate of Memorabilia
@@ -189,6 +192,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						["isRepeatable"] = true,
 					}),
 					q(95422, {	-- Lorewalking: Tides of War
+						["sourceQuest"] = 95421,	-- Lorewalking: A Bright Young Mage
 						["provider"] = { "n", 261067 },	-- Li Li Stormstout
 						["maps"] = {
 							2716,	-- Hyjal Summit
@@ -198,6 +202,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						["isRepeatable"] = true,
 					}),
 					q(95423, {	-- Lorewalking: Daughter of the Sea
+						["sourceQuest"] = 95422,	-- Lorewalking: Tides of War
 						["provider"] = { "n", 261067 },	-- Li Li Stormstout
 						["coord"] = { 30.2, 49.3, 501 },	-- Dalaran
 						["isRepeatable"] = true,
@@ -293,6 +298,52 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						["maps"] = { 1679 },	-- Zul'Gurub, De Other Side
 						["isRepeatable"] = true,
 						["groups"] = { i(275346) },	-- Lorewalker's Notes: The Loa
+					}),
+				})),
+				header(HEADERS.Achievement, 63691, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_7 } }, {	-- Lorewalking: Thrall
+					q(92652, {	-- Lorewalking: Warchief, Shaman, Hero
+						["provider"] = { "n", 230246 },	-- Li Li Stormstout
+						["coords"] = {
+							{ 49.5, 31.6, DORNOGAL },
+							{ 54.5, 57.2, ORGRIMMAR },
+							{ 64.2, 16.1, STORMWIND_CITY },
+							{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+						},
+						["isRepeatable"] = true,
+					}),
+					q(92673, {	-- Lorewalking: In Pride's Wake
+						["sourceQuest"] = 92652,	-- Lorewalking: Warchief, Shaman, Hero
+						["provider"] = { "n", 252907 },	-- Li Li Stormstout
+						["coords"] = {
+							{ 49.5, 31.6, DORNOGAL },
+							{ 54.5, 57.2, ORGRIMMAR },
+							{ 64.2, 16.1, STORMWIND_CITY },
+							{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+						},
+						["isRepeatable"] = true,
+					}),
+					q(92675, {	-- Lorewalking: The Weight of Doubt
+						["sourceQuest"] = 92673,	-- Lorewalking: In Pride's Wake
+						["provider"] = { "n", 252907 },	-- Li Li Stormstout
+						["coords"] = {
+							{ 49.5, 31.6, DORNOGAL },
+							{ 54.5, 57.2, ORGRIMMAR },
+							{ 64.2, 16.1, STORMWIND_CITY },
+							{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+						},
+						["isRepeatable"] = true,
+					}),
+					q(92676, {	-- Lorewalking: In Another's Footsteps
+						["sourceQuest"] = 92675,	-- Lorewalking: The Weight of Doubt
+						["provider"] = { "n", 252907 },	-- Li Li Stormstout
+						["coord"] = { 33.3, 36.0, MULGORE },
+						["isRepeatable"] = true,
+					}),
+					q(92677, {	-- Lorewalking: Paths Ever Onward
+						["sourceQuest"] = 92676,	-- Lorewalking: In Another's Footsteps
+						["provider"] = { "n", 252907 },	-- Li Li Stormstout
+						["coord"] = { 60.2, 27.4, KORTHIA },
+						["isRepeatable"] = true,
 					}),
 				})),
 				header(HEADERS.Quest, 93929, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- The War Within Recap
