@@ -589,6 +589,54 @@ end)
 checkboxKnownBy:SetATTTooltip(L.KNOWN_BY_CHECKBOX_TOOLTIP)
 checkboxKnownBy:AlignBelow(checkboxCompletedBy)
 
+local checkboxGroupByRealm = child:CreateCheckBox(L.GROUP_BY_REALM_CHECKBOX,
+---Refreshes the realm grouping checkbox value and enabled state.
+---@param self ATTSettingsCheckButton
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("GroupByRealm"))
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+---Saves whether character tooltip entries are grouped by realm.
+---@param self ATTSettingsCheckButton
+function(self)
+	settings:SetTooltipSetting("GroupByRealm", self:GetChecked())
+end)
+checkboxGroupByRealm:SetATTTooltip(L.GROUP_BY_REALM_CHECKBOX_TOOLTIP)
+checkboxGroupByRealm:AlignBelow(checkboxKnownBy)
+checkboxGroupByRealm.Text:SetWidth(170)
+checkboxGroupByRealm.Text:SetWordWrap(true)
+checkboxGroupByRealm:SetHitRectInsets(0, -checkboxGroupByRealm.Text:GetWidth() * checkboxGroupByRealm.Text:GetScale(), 0, 0)
+
+local checkboxGroupByFaction = child:CreateCheckBox(L.GROUP_BY_FACTION_CHECKBOX,
+---Refreshes the faction grouping checkbox value and enabled state.
+---@param self ATTSettingsCheckButton
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("GroupByFaction"))
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+---Saves whether character tooltip entries are grouped by faction.
+---@param self ATTSettingsCheckButton
+function(self)
+	settings:SetTooltipSetting("GroupByFaction", self:GetChecked())
+end)
+checkboxGroupByFaction:SetATTTooltip(L.GROUP_BY_FACTION_CHECKBOX_TOOLTIP)
+checkboxGroupByFaction:AlignBelow(checkboxGroupByRealm)
+checkboxGroupByFaction.Text:SetWidth(170)
+checkboxGroupByFaction.Text:SetWordWrap(true)
+checkboxGroupByFaction:SetHitRectInsets(0, -checkboxGroupByFaction.Text:GetWidth() * checkboxGroupByFaction.Text:GetScale(), 0, 0)
+
 if app.IsRetail then	-- Not sure when the APIs needed for these features is added
 local checkboxSpecializations = child:CreateCheckBox(L.SPEC_CHECKBOX,
 function(self)
@@ -605,7 +653,7 @@ function(self)
 	settings:SetTooltipSetting("SpecializationRequirements", self:GetChecked())
 end)
 checkboxSpecializations:SetATTTooltip(L.SPEC_CHECKBOX_TOOLTIP)
-checkboxSpecializations:AlignBelow(checkboxKnownBy)
+checkboxSpecializations:AlignBelow(checkboxGroupByFaction, nil, -2)
 
 local checkboxDropChances = child:CreateCheckBox(L.DROP_CHANCES_CHECKBOX,
 function(self)
@@ -657,7 +705,7 @@ function(self)
 	settings:SetTooltipSetting("Show:CraftedItems", self:GetChecked());
 end)
 checkboxShowCraftedItems:SetATTTooltip(L.SHOW_CRAFTED_ITEMS_CHECKBOX_TOOLTIP)
-checkboxShowCraftedItems:AlignBelow(checkboxKnownBy)
+checkboxShowCraftedItems:AlignBelow(checkboxGroupByFaction, nil, -2)
 
 local checkboxShowRecipes = child:CreateCheckBox(L.SHOW_RECIPES_CHECKBOX,
 function(self)

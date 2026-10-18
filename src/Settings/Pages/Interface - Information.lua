@@ -223,24 +223,7 @@ local KnownByIgnoredTypes = {
 	MountWithItem = true,
 }
 
--- Known By / Completed By / Useful For
-local KnownByIgnoredTypes = {
-	Achievement = app.IsRetail,
-	BattlePet = true,
-	BattlePetWithItem = true,
-	Illusion = true,
-	IllusionWithItem = true,
-	Mount = true,
-	MountWithItem = true,
-}
-
 local knownBy = {};
-
--- Helper: Map Faction IDs to Name (1 = Horde, 2 = Alliance)
-local FACTION_ID_TO_NAME = {
-	[1] = "Horde",
-	[2] = "Alliance",
-}
 
 -- Helper: Map Item SubClass IDs (for Recipes) directly to Profession Spell IDs (SavedVariables)
 local RECIPE_SUBCLASS_TO_SPELLID = {
@@ -264,64 +247,146 @@ local SKILL_TO_SPELLID = {
 	[165] = 2108, [186] = 2575, [393] = 8613, [197] = 3908,
 }
 
-local function GetCharacterFaction(char)
-	if char.faction then return char.faction end
-	if char.factionID and FACTION_ID_TO_NAME[char.factionID] then
-		return FACTION_ID_TO_NAME[char.factionID]
+--- Saved character identity used by tooltip grouping; text may include class color and item quantity.
+---@class ATTTooltipCharacter
+---@field name string? Uncolored character name used for sorting.
+---@field text string? Display name, optionally colored and suffixed with realm or item quantity.
+---@field realm string? Saved realm name used for grouping and suffix removal.
+---@field guid string? Character GUID distinguishing characters from account-wide notices.
+---@field factionID integer? Horde or Alliance faction ID used for the localized group label.
+---@field ignored boolean? Excludes the character from tooltip lists.
+
+--- A rendered tooltip row containing text and optional display formatting.
+---@class ATTCharacterTooltipRow
+---@field left string Text in the left column.
+---@field right string? Text in the right column, such as a profession rank.
+---@field wrap boolean? Allows the left text to wrap.
+---@field color string? ATT color escape sequence applied to the row.
+---@field r number? Red component for rows with an explicit RGB color.
+---@field g number? Green component for rows with an explicit RGB color.
+---@field b number? Blue component for rows with an explicit RGB color.
+
+--- Format character text for flat or realm-grouped lists, preserving colors and quantities.
+---@param character ATTTooltipCharacter Character record to display.
+---@param stripRealm boolean? Remove the saved realm when grouping; otherwise remove the current realm.
+---@return string text Colored name with the selected realm suffix removed, retaining item quantities.
+local function GetCharacterDisplayName(character, stripRealm)
+	local text = character.text or character.name or "???";
+	local realm;
+	if stripRealm then
+		realm = character.realm;
+	else
+		realm = GetRealmName();
 	end
-	return "Unknown"
+	if realm and realm ~= "" then
+		-- Remove only the exact realm suffix, preserving class colors and Owned By quantities.
+		local quantity = text:match(" %(x%d+%)$") or "";
+		local suffixEnd = #text - #quantity;
+		if text:sub(suffixEnd - 1, suffixEnd) == "|r" then suffixEnd = suffixEnd - 2; end
+		local suffix = "-" .. realm;
+		local suffixStart = suffixEnd - #suffix + 1;
+		if suffixStart > 0 and text:sub(suffixStart, suffixEnd) == suffix then
+			text = text:sub(1, suffixStart - 1) .. text:sub(suffixEnd + 1);
+		end
+	end
+	return text;
 end
-
+--- Return the localized faction label for a character.
+---@param character ATTTooltipCharacter Character record whose faction is displayed.
+---@return string factionName Localized Horde or Alliance label, or Unknown when no faction is saved.
+local function GetCharacterFactionName(character)
+	if character.factionID == Enum.FlightPathFaction.Horde then return FACTION_HORDE; end
+	if character.factionID == Enum.FlightPathFaction.Alliance then return FACTION_ALLIANCE; end
+	return UNKNOWN;
+end
+--- Return the saved realm label or Unknown.
+---@param character ATTTooltipCharacter Character record whose realm is displayed.
+---@return string realmName Saved realm, or Unknown when it is missing.
+local function GetCharacterRealmName(character)
+	local realm = character.realm;
+	return realm and realm ~= "" and realm or UNKNOWN;
+end
+--- Compare characters by enabled realm and faction groups, then by plain name.
+---@param a ATTTooltipCharacter First character record.
+---@param b ATTTooltipCharacter Second character record.
+---@param groupByRealm boolean Whether to group characters by realm.
+---@param groupByFaction boolean Whether to group characters by faction.
+---@return boolean precedes Whether the first character sorts before the second.
+local function SortCharactersForGrouping(a, b, groupByRealm, groupByFaction)
+	if groupByRealm then
+		local realmA, realmB = GetCharacterRealmName(a), GetCharacterRealmName(b);
+		if realmA ~= realmB then return realmA < realmB; end
+	end
+	if groupByFaction then
+		local factionA, factionB = GetCharacterFactionName(a), GetCharacterFactionName(b);
+		if factionA ~= factionB then return factionA < factionB; end
+	end
+	local nameA = a.name or (a.text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "");
+	local nameB = b.name or (b.text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "");
+	return nameA < nameB;
+end
+--- Append the collected characters using the selected grouping settings, then clear the collection.
+---@param tooltipInfo ATTCharacterTooltipRow[] Tooltip rows receiving group headings and character names.
+---@param kind string? Localized heading with a single character-list format placeholder.
+---@return nil
 local function BuildKnownByInfoForKind(tooltipInfo, kind)
+	for i = #knownBy, 1, -1 do
+		if knownBy[i].ignored then tremove(knownBy, i); end
+	end
 	if #knownBy > 0 and kind then
-		app.Sort(knownBy, function(a, b)
-			local rA, rB = a.realm or "", b.realm or ""
-			if rA ~= rB then return rA < rB end
-			local fA, fB = GetCharacterFaction(a), GetCharacterFaction(b)
-			if fA ~= fB then return fA < fB end
-			local nA = (a.text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "")
-			local nB = (b.text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "")
-			return nA < nB
-		end);
-
-		tinsert(tooltipInfo, { left = kind:format(""), r = 1, g = 0.82, b = 0 });
-		
-		local currentHeader = nil
-		local namesInGroup = {}
-		
-		local function FlushGroup()
-			if #namesInGroup > 0 then
-				if currentHeader and currentHeader ~= "" then
-					local headerText = "  " .. currentHeader .. " (" .. #namesInGroup .. ")"
-					tinsert(tooltipInfo, { left = headerText, r = 0.8, g = 0.8, b = 0.8 })
+		-- Each setting controls its own grouping and sorting dimension.
+		local groupByRealm = settings:GetTooltipSetting("GroupByRealm");
+		local groupByFaction = settings:GetTooltipSetting("GroupByFaction");
+		if groupByRealm or groupByFaction then
+			app.Sort(knownBy,
+				--- Apply the current grouping settings when sorting character records.
+				---@param a ATTTooltipCharacter First character record.
+				---@param b ATTTooltipCharacter Second character record.
+				---@return boolean precedes Whether the first character sorts before the second.
+				function(a, b)
+					return SortCharactersForGrouping(a, b, groupByRealm, groupByFaction);
+				end);
+			local names, realm, faction, titleAdded = {}, nil, nil, nil;
+			--- Append the current group header and names, then clear its name buffer.
+			---@return nil
+			local function FlushGroup()
+				if #names > 0 then
+					local label = realm and faction and (realm .. ", " .. faction) or realm or faction;
+					tinsert(tooltipInfo, { left = "  " .. label .. " (" .. #names .. ")", r = 0.8, g = 0.8, b = 0.8 });
+					tinsert(tooltipInfo, { left = "    " .. table.concat(names, ", "), wrap = true, color = app.Colors.TooltipDescription });
+					wipearray(names);
 				end
-				tinsert(tooltipInfo, { left = "    " .. table.concat(namesInGroup, ", "), wrap = true, color = app.Colors.TooltipDescription })
-				wipearray(namesInGroup)
 			end
+			for _,character in ipairs(knownBy) do
+				-- Account-wide completion notices are messages, rather than character records.
+				if not (character.name or character.realm or character.guid or character.factionID) then
+					tinsert(tooltipInfo, { left = kind:format(character.text or "???"), wrap = true, color = app.Colors.TooltipDescription });
+				else
+					if not titleAdded then
+						tinsert(tooltipInfo, { left = kind:format(""), r = 1, g = 0.82, b = 0 });
+						titleAdded = true;
+					end
+					local characterRealm = groupByRealm and GetCharacterRealmName(character) or nil;
+					local characterFaction = groupByFaction and GetCharacterFactionName(character) or nil;
+					if characterRealm ~= realm or characterFaction ~= faction then
+						FlushGroup();
+						realm, faction = characterRealm, characterFaction;
+					end
+					tinsert(names, GetCharacterDisplayName(character, groupByRealm));
+				end
+			end
+			FlushGroup();
+		else
+			app.Sort(knownBy, app.SortDefaults.name);
+			local names = {};
+			for _,character in ipairs(knownBy) do
+				tinsert(names, GetCharacterDisplayName(character));
+			end
+			tinsert(tooltipInfo, { left = kind:format(table.concat(names, ", ")), wrap = true, color = app.Colors.TooltipDescription });
 		end
-
-		for i, character in ipairs(knownBy) do
-			local header = character.realm or "Unknown Realm"
-			local faction = GetCharacterFaction(character)
-			if faction and faction ~= "" and faction ~= "Unknown" then header = header .. ", " .. faction end
-			
-			if header ~= currentHeader then
-				FlushGroup()
-				currentHeader = header
-			end
-			
-			local name = character.text or "???"
-			if character.realm and character.realm ~= "" then
-				local safeRealm = character.realm:gsub("([%(%)%.%%%+%-%*%?%[%^%$])", "%%%1")
-				name = name:gsub("%-" .. safeRealm, "")
-			end
-			table.insert(namesInGroup, name)
-		end
-		FlushGroup()
 		wipearray(knownBy);
 	end
 end
-
 local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	if reference.objectiveID then return end
 	local id = reference.questID;
@@ -412,11 +477,7 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 				
 				for i,data in ipairs(knownBy) do
 					local character = data[1];
-					local name = character.text or "???"
-					if character.realm and character.realm ~= "" then
-						local safeRealm = character.realm:gsub("([%(%)%.%%%+%-%*%?%[%^%$])", "%%%1")
-						name = name:gsub("%-" .. safeRealm, "")
-					end
+					local name = GetCharacterDisplayName(character)
 					tinsert(tooltipInfo, { left = "  " .. name, right = data[2] .. " / " .. data[3], });
 				end
 				wipearray(knownBy);
@@ -502,8 +563,6 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 	end
 end
 
-CreateInformationType("CompletedBy", { text = L.COMPLETED_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForCompletedBy });
-CreateInformationType("KnownBy", { text = L.KNOWN_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForKnownBy });
 
 -- Specialization Requirements
 local GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
