@@ -297,11 +297,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["qg"] = 264992,	-- Lor'themar Theron
 							["coord"] = { 63.8, 32.2, MAP.MIDNIGHT.VAULTS_UNDERBELLY },	-- Can be accepted here if not accepted inside the raid
 							["maps"] = { 2669, 2670 },	-- The Unbinding of Kith'ix
-							["groups"] = {
-								i(274937, {	-- Shield of the Blood Knight Matriarch (COSMETIC!)
-									["sourceID"] = 309078,	-- TEMP: Until Wago gets updated!
-								}),
-							},
+							["groups"] = { i(274937) },	-- Shield of the Blood Knight Matriarch (COSMETIC!)
 						}),
 						q(95808, {	-- To the Faithful
 							["sourceQuest"] = 95811,	-- In Victory, Grief
@@ -317,11 +313,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["sourceQuest"] = 95812,	-- Last Wishes
 							["qg"] = 262877,	-- Orweyna
 							["coord"] = { 27.6, 10.9, MAP.MIDNIGHT.SILVERMOON_CITY },
-							["groups"] = {
-								i(274934, {	-- Blade of the Blood Knight Matriarch (COSMETIC!)
-									["sourceID"] = 309077,	-- TEMP: Until Wago gets updated!
-								}),
-							},
+							["groups"] = { i(274934) },	-- Blade of the Blood Knight Matriarch (COSMETIC!)
 						}),
 					}),
 				}),

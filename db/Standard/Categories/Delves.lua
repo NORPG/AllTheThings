@@ -3719,8 +3719,8 @@ crit(117182,{achID=63717,id=20,questID=98624,u=1}),
 crit(117196,{achID=63717,id=34,questID=98639,u=1}),
 crit(117197,{achID=63717,id=35,questID=98641,u=1})}),
 ach(63724,{providers={{"s",1315026}}}),
-ach(63715,{
-mnt(1314715,{itemID=283363})}),
+ach(63715,{rwp=120105,g={
+mnt(1314715,{itemID=283363})}}),
 ach(63718,{coords={
 [2647]={{18.8,18.2},{50.3,82.6},{56.8,17.8},{58.5,21.7},{88.5,51.5}}},cost={{"i",282402,1}},description="Each run randomly selects one out of five special rooms to be a 'Locked Room' and three of them as spawn points for Hexmasks. The final room will be empty."}),
 ach(63719,{coords={
@@ -3730,17 +3730,6 @@ ach(63723),
 ach(63716,{
 title(796)}),
 ach(63721,{providers={{"s",1314979}}}),
-ach(63863),
-ach(63864),
-ach(63865),
-ach(63846),
-ach(63847),
-ach(63848),
-ach(63849),
-ach(63850),
-ach(63851),
-ach(63852),
-ach(63853),
 ach(64118,{rwp=120107,g={
 title(802)}}),
 ach(63727,{providers={{"s",1314984}}}),
