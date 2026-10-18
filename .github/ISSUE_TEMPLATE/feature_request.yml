@@ -23,6 +23,7 @@ body:
         - "Classic Anniversary (TBC)"
         - "Season of Discovery"
         - "Forever"
+        - "Titan"
         - "All Flavors / Cross-Flavor"
         - "Other / Unsure"
     validations:

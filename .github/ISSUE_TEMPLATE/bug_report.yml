@@ -22,6 +22,7 @@ body:
         - "Classic Anniversary (TBC)"
         - "Season of Discovery"
         - "Forever"
+        - "Titan"
         - "Other / Unsure"
     validations:
       required: true
