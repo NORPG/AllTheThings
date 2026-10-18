@@ -2022,10 +2022,6 @@ localize(L.HEADER_NAMES, {
 	[-797] = "World of Warcraft: Forever",
 	[-798] = select(2,GetAchievementInfo(63714)),
 	[-800] = "Alliance Outrunners",
-	[-804] = "Dracythr",
-	[-805] = "Earthen",
-	[-806] = "Harandir",
-	[-807] = "Pandaren",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2809,10 +2805,6 @@ localize(L.HEADER_ICONS, {
 	[-797] = 1120721,
 	[-798] = 133783,
 	[-800] = 236449,
-	[-804] = 136101,
-	[-805] = 136101,
-	[-806] = 136101,
-	[-807] = 136101,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
