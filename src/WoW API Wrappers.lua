@@ -142,6 +142,16 @@ local C_TradeSkillUI = C_TradeSkillUI;
 ---@diagnostic disable-next-line: deprecated, undefined-global
 AssignAPIWrapper("GetTradeSkillTexture", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillTexture, GetTradeSkillTexture);
 AssignAPIWrapper("GetTradeSkillDisplayName", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillDisplayName, app.EmptyFunction);
+local GetTradeSkillLineForRecipe = C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillLineForRecipe;
+AssignAPIWrapper("GetProfessionInfoByRecipeID", C_TradeSkillUI and C_TradeSkillUI.GetProfessionInfoByRecipeID,
+	GetTradeSkillLineForRecipe and
+	--- Adapts the legacy recipe skill-line result to the modern profession-info table shape.
+	---@param recipeID number Recipe spell ID.
+	---@return {professionID: number}|nil professionInfo Nil when the recipe has no skill line.
+	function(recipeID)
+		local professionID = GetTradeSkillLineForRecipe(recipeID);
+		if professionID then return { professionID = professionID }; end
+	end);
 AssignAPIWrapper("IsTradeSkillLinked", C_TradeSkillUI and C_TradeSkillUI.IsTradeSkillLinked, IsTradeSkillLinked);
 
 -- Specialization APIs
