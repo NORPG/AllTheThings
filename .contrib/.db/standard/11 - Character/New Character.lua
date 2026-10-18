@@ -31,7 +31,7 @@ local PANDARENBOTH = createHeader({
 });
 
 root(ROOTS.Character, n(NEW_CHARACTER, {
-	n(BLOODELF, {
+	race(BLOODELF, {
 		cl(HUNTER, {
 			i(20900, {	-- Warder's Boots
 				-- ["races"] = { BLOODELF },
@@ -143,7 +143,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 		}),
 	}),
-	n(DARKIRON, {
+	race(DARKIRON, {
 		cl(PALADIN, {
 			filter(MOUNTS, {
 				mount(270562, {	-- Darkforge Ram (MOUNT!)
@@ -356,7 +356,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 		}),
 	}),
-	n(DRAENEI, {
+	race(DRAENEI, {
 		cl(HUNTER, {
 			i(23348, {	-- Scout's Boots
 				-- ["races"] = { DRAENEI },
@@ -444,7 +444,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 		}),
 	}),
-	n(DWARF, {
+	race(DWARF, {
 		cl(PALADIN, {
 			filter(MOUNTS, {
 				mount(270564, {	-- Dawnforge Ram (MOUNT!)
@@ -482,7 +482,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 		}),
 	}),
-	n(GOBLIN, {
+	race(GOBLIN, {
 		-- #if AFTER 4.0.3
 		filter(BACK_F, {
 			i(52940, {	-- Candy's Cloak
@@ -927,7 +927,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 		}),
 	}),
-	n(LIGHTFORGED, {
+	race(LIGHTFORGED, {
 		cl(PALADIN, {
 			filter(MOUNTS, {
 				mount(363613, {	-- Lightforged Ruinstrider (MOUNT!)
@@ -938,7 +938,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 		}),
 	}),
-	n(NIGHTELF, {
+	race(NIGHTELF, {
 		cl(DRUID, {
 			i(6123, {	-- Novice's Robe
 				-- ["races"] = { NIGHTELF },
@@ -977,7 +977,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 	}),
 	n(PANDARENBOTH, {
-		n(CLOTH, {
+		filter(CLOTH, {
 			i(77509, {	-- Trainee's Cord
 				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 				["timeline"] = { ADDED_5_0_4 }
@@ -996,7 +996,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 		}),
 	}),
-	n(TAUREN, {
+	race(TAUREN, {
 		cl(PALADIN, {
 			filter(MOUNTS, {
 				mount(69826, {	-- Great Sunwalker Kodo (MOUNT!)
@@ -1022,7 +1022,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 		}),
 	}),
-	n(UNDEAD, {
+	race(UNDEAD, {
 		cl(MAGE, {
 			i(6140, {	-- Apprentice's Robe
 				--["races"] = { UNDEAD },
@@ -1042,7 +1042,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 		}),
 	}),
-	n(WORGEN, {
+	race(WORGEN, {
 		cl(DRUID, {
 			i(49565, {	-- Gilnean Novice's Gloves
 				-- ["races"] = { WORGEN },
@@ -1178,7 +1178,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 		}),
 	}),
-	n(ZANDALARI, {
+	race(ZANDALARI, {
 		cl(PALADIN, {
 			filter(MOUNTS, {
 				mount(290608, {	-- Crusader's Direhorn (MOUNT!)
