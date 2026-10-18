@@ -67,19 +67,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					title(796),	-- Loa-Blessed <Name>
 				}),
 				ach(63721),	-- The Labyrinth of Kindo'jan
-				-- Runaway TODO: do these actually not exist or just no credit from higher tiers?
-				-- Exo Note: These seem to be Hidden Achievement Triggers. Will add an annotation as I play along and confirm them
-				ach(63863),	-- The Labyrinth of Kindo'jan: Tier 1 (HAT!)
-				ach(63864),	-- The Labyrinth of Kindo'jan: Tier 2 (HAT!)
-				ach(63865),	-- The Labyrinth of Kindo'jan: Tier 3 (HAT!)
-				ach(63846),	-- The Labyrinth of Kindo'jan: Tier 4
-				ach(63847),	-- The Labyrinth of Kindo'jan: Tier 5
-				ach(63848),	-- The Labyrinth of Kindo'jan: Tier 6 (HAT!)
-				ach(63849),	-- The Labyrinth of Kindo'jan: Tier 7
-				ach(63850),	-- The Labyrinth of Kindo'jan: Tier 8
-				ach(63851),	-- The Labyrinth of Kindo'jan: Tier 9
-				ach(63852),	-- The Labyrinth of Kindo'jan: Tier 10
-				ach(63853),	-- The Labyrinth of Kindo'jan: Tier 11 (confirmed)
 				ach(64118, bubbleDownSelf({ ["timeline"] = { REMOVED_12_1_7 } }, {	-- The Labyrinth of Kindo'jan: One-Champion Army
 					title(802),	-- Lone Raider <Name>
 				})),

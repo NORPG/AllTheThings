@@ -4277,6 +4277,17 @@ root(ROOTS.HiddenAchievementTriggers, {
 			-- Delves
 			ach(63730),	-- Total Kindo'jan's Labyrinth Chambers completed
 			ach(63731),	-- Total Kindo'jan Kills
+			ach(63863),	-- The Labyrinth of Kindo'jan: Tier 1
+			ach(63864),	-- The Labyrinth of Kindo'jan: Tier 2
+			ach(63865),	-- The Labyrinth of Kindo'jan: Tier 3
+			ach(63846),	-- The Labyrinth of Kindo'jan: Tier 4
+			ach(63847),	-- The Labyrinth of Kindo'jan: Tier 5
+			ach(63848),	-- The Labyrinth of Kindo'jan: Tier 6
+			ach(63849),	-- The Labyrinth of Kindo'jan: Tier 7
+			ach(63850),	-- The Labyrinth of Kindo'jan: Tier 8
+			ach(63851),	-- The Labyrinth of Kindo'jan: Tier 9
+			ach(63852),	-- The Labyrinth of Kindo'jan: Tier 10
+			ach(63853),	-- The Labyrinth of Kindo'jan: Tier 11
 			-- Misc
 			ach(63689),	-- [DNT]Midnight Keystone Myth: Season 2 Personal Achievement
 			ach(63700),	-- [DNT] Hallow's End Pepe Decor
