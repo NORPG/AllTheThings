@@ -2,6 +2,320 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(NEW_CHARACTER, {
+	n(GOBLIN, {
+		-- #if AFTER 4.0.3
+		filter(BACK_F, {
+			i(52940, {	-- Candy's Cloak
+				["races"] = { GOBLIN },
+				["description"] = "Former Starter Cloak for Male Goblins",
+				["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+			}),
+			i(52937, {	-- Chip's Cloak
+				["races"] = { GOBLIN },
+				["description"] = "Former Starter Cloak for Female Goblins",
+				["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+			}),
+		}),
+		-- #endif
+		cl(HUNTER, {
+			i(49504, {	-- Goblin Trapper's Boots
+				-- ["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49503, {	-- Goblin Trapper's Pants
+				-- ["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49502, {	-- Goblin Trapper's Shirt
+				-- ["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+		}),
+		cl(MONK, {
+			-- #if AFTER 11.0.0
+			i(204259, {	-- Goblin Trainee's Cord
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			i(204260, {	-- Goblin Trainee's Leggings
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			i(204261, {	-- Goblin Trainee's Vest
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			i(204258, {	-- Goblin Trainee's Wristwraps
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			-- #endif
+		}),
+		cl(MAGE, {
+			i(49508, {	-- Goblin Apprentice's Boots
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+			i(49506, {	-- Goblin Apprentice's Pants
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+			i(49505, {	-- Goblin Apprentice's Robe
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+		}),
+		cl(PRIEST, {
+			i(49512, {	-- Goblin Neophyte's Pants
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+			i(49510, {	-- Goblin Neophyte's Robe
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+			i(49531, {	-- Goblin Neophyte's Shoes
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+		}),
+		cl(ROGUE, {
+			i(49516, {	-- Goblin Thug's Boots
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+			i(49515, {	-- Goblin Thug's Pants
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+			i(49514, {	-- Goblin Thug's Tunic
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+		}),
+		cl(SHAMAN, {
+			i(52552, {	-- Primal Boots
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+			i(52551, {	-- Primal Pants
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+			i(52550, {	-- Primal Shirt
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+		}),
+		cl(WARLOCK, {
+			i(49521, {	-- Goblin Acolyte's Pants
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49520, {	-- Goblin Acolyte's Robe
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49522, {	-- Goblin Acolyte's Shoes
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+		}),
+		cl(WARRIOR, {
+			i(49527, {	-- Goblin Brawler's Boots
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49529, {	-- Goblin Brawler's Gauntlets
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49528, {	-- Goblin Brawler's Greaves
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49524, {	-- Goblin Brawler's Harness
+				--["races"] = { GOBLIN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+		}),
+	}),
+	n(PANDAREN_ALLIANCE, {
+		n(CLOTH, {
+			i(77509, {	-- Trainee's Cord
+				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				["timeline"] = { ADDED_5_0_4 }
+			}),
+			i(72020, {	-- Trainee's Leggings
+				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				["timeline"] = { ADDED_5_0_4 }
+			}),
+			i(72019, {	-- Trainee's Vest
+				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				["timeline"] = { ADDED_5_0_4 }
+			}),
+			i(77526, {	-- Trainee's Wristwraps
+				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				["timeline"] = { ADDED_5_0_4 }
+			}),
+		}),
+	}),
+	n(PANDAREN_HORDE, {
+		n(CLOTH, {
+			i(77509, {	-- Trainee's Cord
+				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				["timeline"] = { ADDED_5_0_4 }
+			}),
+			i(72020, {	-- Trainee's Leggings
+				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				["timeline"] = { ADDED_5_0_4 }
+			}),
+			i(72019, {	-- Trainee's Vest
+				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				["timeline"] = { ADDED_5_0_4 }
+			}),
+			i(77526, {	-- Trainee's Wristwraps
+				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
+				["timeline"] = { ADDED_5_0_4 }
+			}),
+		}),
+	}),
+	n(WORGEN, {
+		cl(DRUID, {
+			i(49565, {	-- Gilnean Novice's Gloves
+				-- ["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49564, {	-- Gilnean Novice's Boots
+				-- ["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49563, {	-- Gilnean Novice's Tunic
+				-- ["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49566, {	-- Gilnean Novice's Pants
+				-- ["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+		}),
+		cl(HUNTER, {
+			i(49569, {	-- Gilnean Trapper's Boots
+				-- ["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49571, {	-- Gilnean Trapper's Gloves
+				-- ["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49568, {	-- Gilnean Trapper's Pants
+				-- ["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49570, {	-- Gilnean Trapper's Tunic
+				-- ["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+		}),
+		cl(MONK, {
+			-- #if AFTER 11.0.0
+			i(204268, {	-- Gilnean Trainee's Cord
+				-- ["races"] = { WORGEN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			i(204267, {	-- Gilnean Trainee's Leggings
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			i(204266, {	-- Gilnean Trainee's Vest
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			i(204269, {	-- Gilnean Trainee's Wristwraps
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_10_0_7 },
+			}),
+			-- #endif
+		}),
+		cl(MAGE, {
+			i(49401, {	-- Gilnean Apprentice's Boots
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+			i(49400, {	-- Gilnean Apprentice's Pants
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+			i(49399, {	-- Gilnean Apprentice's Robe
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+		}),
+		cl(PRIEST, {
+			i(49406, {	-- Gilnean Neophyte's Boots
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+			i(49404, {	-- Gilnean Neophyte's Pants
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+			i(49403, {	-- Gilnean Neophyte's Robe
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+		}),
+		cl(ROGUE, {
+			i(49575, {	-- Gilnean Footpad's Boots
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+			i(49573, {	-- Gilnean Footpad's Gloves
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+			i(49572, {	-- Gilnean Footpad's Pants
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+			i(49574, {	-- Gilnean Footpad's Tunic
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 }
+			}),
+		}),
+		cl(WARLOCK, {
+			i(49407, {	-- Gilnean Acolyte's Boots
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49409, {	-- Gilnean Acolyte's Pants
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49408, {	-- Gilnean Acolyte's Robe
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+		}),
+		cl(WARRIOR, {
+			i(49577, {	-- Gilnean Recruit's Belt
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49579, {	-- Gilnean Recruit's Boots
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49576, {	-- Gilnean Recruit's Pants
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+			i(49578, {	-- Gilnean Recruit's Tunic
+				--["races"] = { WORGEN },
+				["timeline"] = { ADDED_4_0_3 },
+			}),
+		}),
+	}),
 	cl(DEATHKNIGHT, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {
 		i(34652),	-- Archerus Knight's Hood
 		i(34655),	-- Archerus Knight's Pauldrons
@@ -82,22 +396,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(257524, {	-- Entwined Haranir Wrappings
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
-			}),
-			i(49565, {	-- Gilnean Novice's Gloves
-				-- ["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49564, {	-- Gilnean Novice's Boots
-				-- ["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49563, {	-- Gilnean Novice's Tunic
-				-- ["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49566, {	-- Gilnean Novice's Pants
-				-- ["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(6124, {	-- Novice's Pants
 				-- ["races"] = { NIGHTELF, TAUREN, TROLL },
@@ -197,34 +495,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(232287, {	-- Creche-Scout's Vest
 				-- ["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
-			}),
-			i(49569, {	-- Gilnean Trapper's Boots
-				-- ["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49571, {	-- Gilnean Trapper's Gloves
-				-- ["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49568, {	-- Gilnean Trapper's Pants
-				-- ["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49570, {	-- Gilnean Trapper's Tunic
-				-- ["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49504, {	-- Goblin Trapper's Boots
-				-- ["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49503, {	-- Goblin Trapper's Pants
-				-- ["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49502, {	-- Goblin Trapper's Shirt
-				-- ["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(187693, {	-- Hunter's Belt
 				-- ["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TAUREN, TROLL, BLOODELF },
@@ -393,40 +663,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
 				["timeline"] = { ADDED_12_0_1_LAUNCH },
 			}),
-			-- #if AFTER 11.0.0
-			i(204268, {	-- Gilnean Trainee's Cord
-				-- ["races"] = { WORGEN },
-				["timeline"] = { ADDED_10_0_7 },
-			}),
-			i(204267, {	-- Gilnean Trainee's Leggings
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_10_0_7 },
-			}),
-			i(204266, {	-- Gilnean Trainee's Vest
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_10_0_7 },
-			}),
-			i(204269, {	-- Gilnean Trainee's Wristwraps
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_10_0_7 },
-			}),
-			i(204259, {	-- Goblin Trainee's Cord
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_10_0_7 },
-			}),
-			i(204260, {	-- Goblin Trainee's Leggings
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_10_0_7 },
-			}),
-			i(204261, {	-- Goblin Trainee's Vest
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_10_0_7 },
-			}),
-			i(204258, {	-- Goblin Trainee's Wristwraps
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_10_0_7 },
-			}),
-			-- #endif
 		}),
 		n(WEAPONS, {
 			i(3661, {	-- Handcrafted Staff
@@ -512,30 +748,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
-			i(49401, {	-- Gilnean Apprentice's Boots
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49400, {	-- Gilnean Apprentice's Pants
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49399, {	-- Gilnean Apprentice's Robe
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49508, {	-- Goblin Apprentice's Boots
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49506, {	-- Goblin Apprentice's Pants
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49505, {	-- Goblin Apprentice's Robe
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
 			i(187762, {	-- Mage's Mitts
 			--[[
 				["races"] = { HUMAN, DWARF, NIGHTELF, GNOME, DRAENEI, ORC, UNDEAD, TROLL, BLOODELF,
@@ -603,22 +815,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(23479, {	-- Recruit's Robe
 				--["races"] = { DRAENEI },
 				["timeline"] = { ADDED_2_0_3, REMOVED_9_1_5 }
-			}),
-			i(77509, {	-- Trainee's Cord
-				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { ADDED_5_0_4 }
-			}),
-			i(72020, {	-- Trainee's Leggings
-				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { ADDED_5_0_4 }
-			}),
-			i(72019, {	-- Trainee's Vest
-				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { ADDED_5_0_4 }
-			}),
-			i(77526, {	-- Trainee's Wristwraps
-				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { ADDED_5_0_4 }
 			}),
 			i(257562, {	-- Woven Haranir Loincloth
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
@@ -893,30 +1089,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
-			i(49406, {	-- Gilnean Neophyte's Boots
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49404, {	-- Gilnean Neophyte's Pants
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49403, {	-- Gilnean Neophyte's Robe
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49512, {	-- Goblin Neophyte's Pants
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49510, {	-- Goblin Neophyte's Robe
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49531, {	-- Goblin Neophyte's Shoes
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
 			i(51, {	-- Neophyte's Boots
 				--["races"] = { HUMAN, DWARF, GNOME, NIGHTELF, UNDEAD, BLOODELF },
 				["timeline"] = { REMOVED_9_1_5 }
@@ -1008,22 +1180,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				},
 			]]--
 				["timeline"] = { ADDED_9_1_5 },
-			}),
-			i(77509, {	-- Trainee's Cord
-				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { ADDED_5_0_4 }
-			}),
-			i(72020, {	-- Trainee's Leggings
-				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { ADDED_5_0_4 }
-			}),
-			i(72019, {	-- Trainee's Vest
-				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { ADDED_5_0_4 }
-			}),
-			i(77526, {	-- Trainee's Wristwraps
-				--["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
-				["timeline"] = { ADDED_5_0_4 }
 			}),
 			i(257562, {	-- Woven Haranir Loincloth
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
@@ -1141,34 +1297,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(58234, {	-- Footpad's Vest
 				--["races"] = { HUMAN, DWARF, GNOME, NIGHTELF, UNDEAD },
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 }
-			}),
-			i(49575, {	-- Gilnean Footpad's Boots
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49573, {	-- Gilnean Footpad's Gloves
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49572, {	-- Gilnean Footpad's Pants
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49574, {	-- Gilnean Footpad's Tunic
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49516, {	-- Goblin Thug's Boots
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49515, {	-- Goblin Thug's Pants
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
-			i(49514, {	-- Goblin Thug's Tunic
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 }
 			}),
 			i(20896, {	-- Lookout's Pants
 				--["races"] = { BLOODELF },
@@ -1323,10 +1451,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { DWARF},
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 }
 			}),
-			i(52552, {	-- Primal Boots
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
 			i(153, {	-- Primitive Kilt
 				["timeline"] = { REMOVED_4_0_3 }
 			}),
@@ -1345,10 +1469,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { ORC, TROLL, TAUREN },
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 }
 			}),
-			i(52551, {	-- Primal Pants
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 }
-			}),
 			i(52538, {	-- Primal Robe
 				--["races"] = { DWARF },
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 }
@@ -1360,10 +1480,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(52544, {	-- Primal Robe
 				--["races"] = { ORC, TROLL, TAUREN },
 				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 }
-			}),
-			i(52550, {	-- Primal Shirt
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 }
 			}),
 			i(187721, {	-- Shaman's Belt
 				--["races"] = { DWARF, DRAENEI, ORC, TAUREN, TROLL },
@@ -1629,30 +1745,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
 			}),
-			i(49407, {	-- Gilnean Acolyte's Boots
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49409, {	-- Gilnean Acolyte's Pants
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49408, {	-- Gilnean Acolyte's Robe
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49521, {	-- Goblin Acolyte's Pants
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49520, {	-- Goblin Acolyte's Robe
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49522, {	-- Goblin Acolyte's Shoes
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
 			i(187753, {	-- Warlock's Mitts
 				--["races"] = { HUMAN, DWARF, GNOME, ORC, UNDEAD, TROLL, BLOODELF },
 				["timeline"] = { ADDED_9_1_5 },
@@ -1763,38 +1855,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(232268, {	-- Creche-Guard's Vambraces
 				--["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["timeline"] = { ADDED_11_0_5 },
-			}),
-			i(49577, {	-- Gilnean Recruit's Belt
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49579, {	-- Gilnean Recruit's Boots
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49576, {	-- Gilnean Recruit's Pants
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49578, {	-- Gilnean Recruit's Tunic
-				--["races"] = { WORGEN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49527, {	-- Goblin Brawler's Boots
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49529, {	-- Goblin Brawler's Gauntlets
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49528, {	-- Goblin Brawler's Greaves
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 },
-			}),
-			i(49524, {	-- Goblin Brawler's Harness
-				--["races"] = { GOBLIN },
-				["timeline"] = { ADDED_4_0_3 },
 			}),
 			i(257591, {	-- Hardened Haranir Loincloth
 				--["races"] = { HARANIR_ALLIANCE, HARANIR_HORDE },
@@ -1931,16 +1991,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	}),
 	-- #if AFTER 4.0.3
 	filter(BACK_F, {
-		i(52940, {	-- Candy's Cloak
-			["races"] = { GOBLIN },
-			["description"] = "Former Starter Cloak for Male Goblins",
-			["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-		}),
-		i(52937, {	-- Chip's Cloak
-			["races"] = { GOBLIN },
-			["description"] = "Former Starter Cloak for Female Goblins",
-			["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-		}),
 		i(232351, {	-- Creche-Waker's Cloak
 			["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 			["timeline"] = { ADDED_11_0_5 },
