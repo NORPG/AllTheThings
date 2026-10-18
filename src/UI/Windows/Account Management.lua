@@ -564,7 +564,26 @@ local defaultSerializer = function(field, value, timeStamp, lastUpdated)
 		end
 	end
 end
+--- Numeric rank payload received for one character's ProfessionRanks field.
+---@class ATTSerializedProfessionRanks
+---@field [1] string? Payload such as "2:171=300/2485=155"; "2:" or a missing value clears saved ranks.
 local deserializers = {
+	--- Replaces synced profession ranks, including empty updates that clear stale skill lines.
+	---@param field string Character cache field name.
+	---@param currentValue ATTProfessionRanks? Previously saved ranks.
+	---@param data ATTSerializedProfessionRanks First segment contains the type prefix and skillLineID=rank entries.
+	---@return ATTProfessionRanks ranks Replaced base/expansion skill-line ranks; empty payload returns an empty map.
+	ProfessionRanks = function(field, currentValue, data)
+		local ranks = currentValue or {};
+		wipe(ranks);
+		local payload = data[1] and data[1]:match("^%d+:(.*)$") or "";
+		for entry in payload:gmatch("[^/]+") do
+			local skillLineID, rank = entry:match("^([^=]+)=([^=]+)$");
+			skillLineID, rank = tonumber(skillLineID), tonumber(rank);
+			if skillLineID and rank then ranks[skillLineID] = rank; end
+		end
+		return ranks;
+	end,
 	ActiveSkills = function(field, currentValue, data)
 		if currentValue then
 			wipe(currentValue);
@@ -665,6 +684,21 @@ local deserializers = {
 	end
 };
 local serializers = {
+	--- Sends personal profession ranks with numeric values and incremental-sync timestamps.
+	---@param field string Character cache field name.
+	---@param value ATTProfessionRanks Skill-line IDs mapped to learned ranks.
+	---@param timeStamp number? Time when the rank cache last changed.
+	---@param lastUpdated number Receiver's last saved character timestamp.
+	---@return string? payload Nil when no newer rank data needs to be sent.
+	ProfessionRanks = function(field, value, timeStamp, lastUpdated)
+		if timeStamp and lastUpdated >= timeStamp then return; end
+		local entries = {};
+		for skillLineID,rank in pairs(value) do
+			entries[#entries + 1] = tostring(skillLineID) .. "=" .. tostring(rank);
+		end
+		tsort(entries);
+		return field .. ";" .. typeListIDForType.table .. ":" .. table.concat(entries, "/");
+	end,
 	ActiveSkills = function(field, value, timeStamp, lastUpdated)
 		local any, str = false, field;
 		for skillID,skill in pairs(value) do

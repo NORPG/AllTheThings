@@ -142,6 +142,7 @@ local C_TradeSkillUI = C_TradeSkillUI;
 ---@diagnostic disable-next-line: deprecated, undefined-global
 AssignAPIWrapper("GetTradeSkillTexture", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillTexture, GetTradeSkillTexture);
 AssignAPIWrapper("GetTradeSkillDisplayName", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillDisplayName, app.EmptyFunction);
+AssignAPIWrapper("IsTradeSkillLinked", C_TradeSkillUI and C_TradeSkillUI.IsTradeSkillLinked, IsTradeSkillLinked);
 
 -- Specialization APIs
 local C_SpecializationInfo = C_SpecializationInfo
