@@ -12776,10 +12776,10 @@ artifact(572,{b=1,c={12},isOffHand=1,itemID=128831,sourceID=77232}),
 artifact(573,{b=1,c={12},isOffHand=1,itemID=128831,sourceID=77233})}})}})}),
 prof(356,{
 ah(133755,{type="i",g={
-s(76909,133755,{b=1,f=57,spellID=221477}),
-artifact(841,{b=1,itemID=133755,sourceID=76909,sourceQuests={41010},spellID=221477}),
-artifact(988,{b=1,itemID=133755,providers={{"i",152583}},sourceID=82962,spellID=221477}),
-artifact(989,{b=1,itemID=133755,providers={{"i",152583}},sourceID=82963,spellID=221477})}})})}}),
+s(76909,133755,{b=1,f=57,requireSkill=356,spellID=221477}),
+artifact(841,{b=1,itemID=133755,requireSkill=356,sourceID=76909,sourceQuests={41010},spellID=221477}),
+artifact(988,{b=1,itemID=133755,providers={{"i",152583}},requireSkill=356,sourceID=82962,spellID=221477}),
+artifact(989,{b=1,itemID=133755,providers={{"i",152583}},requireSkill=356,sourceID=82963,spellID=221477})}})})}}),
 h(-221,{
 cl(12,{
 s(78746,137061,{b=1,c={12},f=5,loc=40,lvl=40,spellID=215149}),
@@ -28861,8 +28861,6 @@ s(112313,179528,{b=1,cost={{"c",1885,50},{"c",1813,3500}},customCollect={"SL_COV
 i(182171,{b=1,cost={{"c",1813,250}},customCollect={"SL_COV_NFA"},lvl=50,sourceQuests={63682}})}}),
 n(175415,{coords={
 [1702]={{49.4,54.4}}},customCollect={"SL_COV_NFA"}}),
-n(175419,{coords={
-[1701]={{46.6,56.6}}},customCollect={"SL_COV_NFA"}}),
 n(175418,{coords={
 [1701]={{45.9,56.4}}},customCollect={"SL_COV_NFA"},sym={{"select","itemID",175597,175588,175603,179623,175586,175592,175576,175581,175600,179657,179766,179767,179771,179772,179769,179773,179768,179770,179765,179774,179888,179620,179890,179893,179887,179891,179892,179889,179894,181916,181910,181915,181911,181877,181912,181909,181913,181914,181979}},g={
 s(112386,179602,{cost={{"c",1885,10},{"c",1813,3500}},customCollect={"SL_COV_NFA"},f=8,lvl=60}),

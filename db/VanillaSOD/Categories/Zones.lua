@@ -5450,7 +5450,7 @@ i(206995,{b=1,c={1},coords={
 [1412]={{33.6,42}}},crs={2962,2963,2965},q=1,rwp=20001,u=1605}),
 i(206994,{b=1,c={1},coords={
 [1412]={{61.6,22.4}}},crs={3232},q=1,rwp=20001,u=1605})})}}),
-m(1451,{icon=236829,lore="Silithus is a rough desert in the southwest end of Kalimdor. While Silithus today acts as the main working place of the Cenarion Circle, it was once the seat of the Aqiri Empire, known to the world as Ahn'Qiraj. Its gates were sealed off millennia ago by the Night Elves, but the silithid managed to regain some footage over Kalimdor. Today, the Cenarion Circle enlists both the Horde and the Alliance to help with their vigil.",maps={82},g={
+m(1451,{icon=236829,lore="Silithus is a rough desert in the southwest end of Kalimdor. While Silithus today acts as the main working place of the Cenarion Circle, it was once the seat of the Aqiri Empire, known to the world as Ahn'Qiraj. Its gates were sealed off millennia ago by the Night Elves, but the silithid managed to regain some footage over Kalimdor. Today, the Cenarion Circle enlists both the Horde and the Alliance to help with their vigil.",maps={82},zoneTextAreaIDs={1377,3478},g={
 h(-12,{
 ach(856,{
 crit(1502,{achID=43,id=1})})}),

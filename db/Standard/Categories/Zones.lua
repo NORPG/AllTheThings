@@ -119485,8 +119485,9 @@ i(199202,{awp=90205,b=1,lvl=60,rwp=100000,u=2})}}),
 h(-58,{
 n(169524,{coords={
 [1670]={{61.7,72.3}}},g={
-i(180970,{b=1,description="Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.5)|r."}),
-i(186684,{awp=90100,collectible=false,f=200,spellID=354583})}}),
+i(186684,{awp=90100,collectible=false,f=200,spellID=354583}),
+de(28110,{awp=120105,cost={{"c",1813,200}},itemID=284216,spellID=1315492}),
+i(180970,{b=1,description="Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.5)|r."})}}),
 n(176064,{coords={
 [1670]={{47.6,77.2}}},sym={{"select","npcID",160470},{"isnt","repeatable"},{"pop"}}}),
 n(176368,{coords={
@@ -143441,6 +143442,7 @@ crit(56449,{achID=16724,awp=100005,id=4,providers={{"i",196964}}})}}),
 mm(197090,{b=1,cost={{"i",188658,20},{"i",201399,6},{"c",2003,750}},minReputation={2518,5},questID=69290,g={
 crit(56362,{achID=16708,awp=100005,id=1,providers={{"i",197090}}})}}),
 i(200970,{b=1,cost={{"c",2003,150}},f=51,lvl=70,minReputation={2518,5}}),
+de(28111,{awp=120105,cost={{"c",2003,500}},itemID=284579,minReputation={2518,5},spellID=1316298}),
 mm(197346,{b=1,cost={{"i",188658,20},{"i",201399,6},{"c",2003,750}},minReputation={2518,5},questID=69547,g={
 crit(56248,{achID=16696,awp=100005,id=1,providers={{"i",197346}}})}}),
 mm(197013,{b=1,cost={{"i",190316,1},{"c",2003,400}},minReputation={2518,6},questID=69213,g={
