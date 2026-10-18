@@ -93,7 +93,6 @@ root(ROOTS.Unsorted, {
 			i(282649),	-- Hot Motocross Bunmover 4600
 			i(282659),	-- Ghost Goggles
 			i(282660),	-- Vacpack 84-X
-			i(282718),	-- Halazzi's Shroud
 			i(283388),	-- Blessed Loa Armament
 			i(283472),	-- Steel-Plated Cushion Boots
 			i(283481),	-- Baker's Frosty Cookbook
@@ -108,7 +107,6 @@ root(ROOTS.Unsorted, {
 			i(283993),	-- Cherry Lollibop
 			i(283994),	-- Spearmint Lollibop
 			i(283995),	-- Lemon Lollibop
-			i(283998),	-- Ancient Hash'ey Battle Art: Eye of the Lynx
 			i(283999),	-- Wood Haunter's Belt
 			i(284000),	-- Wood Haunter's Helm
 			i(284001),	-- Wood Haunter's Pauldrons
@@ -147,7 +145,6 @@ root(ROOTS.Unsorted, {
 			i(284034),	-- Ensemble: Frost Revenant's Guise of the Wight
 			i(284212),	-- Technique: Apple Bobbing Bucket
 			i(284213),	-- Pattern: Spidery Witch Hat
-			i(284216),	-- Mysterious Imported Piranha
 			i(284233),	-- Baker's Sapphire Tray
 			i(284234),	-- Baker's Emerald Tray
 			i(284235),	-- Baker's Morganite Tray
@@ -158,7 +155,6 @@ root(ROOTS.Unsorted, {
 			i(284259),	-- Motionless Nulltide
 			i(284260),	-- Overflowing Voidspire
 			i(284402),	-- Valdrakken Resupply Coin
-			i(284579),	-- Obsidian Lava Pool
 			i(284591),	-- Neighborhood Candy
 			i(285044),	-- Venerated Loa Armament
 			i(285221),	-- Baker's Sapphire Bulwark

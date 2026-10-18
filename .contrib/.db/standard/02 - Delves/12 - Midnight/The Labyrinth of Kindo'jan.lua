@@ -277,6 +277,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					o(676627, {	-- Sturdy Chest
 						["coord"] = { 26.9, 80.9, LABYRINTH_KINDOJAN },
+						["questID"] = 98610,
 						["groups"] = { i(280822) },	-- Nalorakk's Strength Charm (TOY!)
 					}),
 					o(676628, {	-- Sturdy Chest
@@ -305,8 +306,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["questID"] = 98615,
 						["groups"] = { i(283996) },	-- Ancient Hash'ey Battle Art: Heat Wave
 					}),
+					o(676633, {	-- Sturdy Chest
+						["coord"] = { 11.4, 54.3, LABYRINTH_KINDOJAN },
+						["questID"] = 98616,
+						["groups"] = { i(282718) },	-- Halazzi's Shroud
+					}),
+					o(676635, {	-- Sturdy Chest
+						["coord"] = { 9.6, 54.8, LABYRINTH_KINDOJAN },
+						["questID"] = 98618,
+					}),
 					o(676636, {	-- Sturdy Chest
 						["coord"] = { 10.5, 55.0, LABYRINTH_KINDOJAN },
+						["questID"] = 98617,
 						["groups"] = { i(284182) },	-- Loa-Touched Visage (COSMETIC!)
 					}),
 					o(676637, {	-- Sturdy Chest
@@ -338,6 +349,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["coord"] = { 22.9, 12.0, LABYRINTH_KINDOJAN },
 						["questID"] = 98623,
 						["groups"] = { i(284180) },	-- Loa-Touched Deltoid (COSMETIC!)
+					}),
+					o(676643, {	-- Sturdy Chest
+						["coord"] = { 46.3, 11.8, LABYRINTH_KINDOJAN },
+						["questID"] = 98624,
 					}),
 					o(676645, {	-- Sturdy Chest
 						["coord"] = { 40.6, 20.3, LABYRINTH_KINDOJAN },
@@ -409,6 +424,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					}),
 					o(676664, {	-- Sturdy Chest
 						["coord"] = { 66.6, 51.5, LABYRINTH_KINDOJAN },
+						["questID"] = 98639,
 						["groups"] = { i(280821) },	-- Trail of Halazzi (TOY!)
 					}),
 					o(676666, {	-- Sturdy Chest
@@ -418,6 +434,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							{ 61.5, 43.6, LABYRINTH_KINDOJAN },	-- Sturdy Chest
 						},
 						["questID"] = 98640,
+					}),
+					o(676668, {	-- Sturdy Chest
+						["coord"] = { 67.2, 51.5, LABYRINTH_KINDOJAN },
+						["questID"] = 98641,
+						["groups"] = { i(283998) },	-- Ancient Hash'ey Battle Art: Eye of the Lynx
 					}),
 					o(676759, {	-- Sturdy Chest
 						["description"] = "Below the pathway.",
@@ -489,6 +510,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				o(705957, {	-- Mislaid Treasure
 					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
+				}),
+				o(705958, {	-- Mislaid Treasure
 				}),
 				o(705959, {	-- Mislaid Treasure
 					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",

@@ -820,6 +820,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(200970, {	-- Obsidian Collar
 								["cost"] = { { "c", DRAGON_SUPPLIES, 150 } },
 							}),
+							i(284579, {	-- Obsidian Lava Pool (DECOR!)
+								["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
+								["timeline"] = { ADDED_12_1_5 },
+							}),
 							i(197346, {	-- Renewed Proto-Drake: Gold and Black Armor (MM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 750 },

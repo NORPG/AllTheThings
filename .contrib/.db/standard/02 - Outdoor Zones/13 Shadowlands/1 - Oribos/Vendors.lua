@@ -14,12 +14,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(169524, {	-- Acquirer Ta'gosh <Curiosity Vendor>
 				["coord"] = { 61.7, 72.3, ORIBOS },
 				["groups"] = {
-					i(180970, {	-- Teregeer Crystal
-						["description"] = "Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.5)|r.",
-					}),
 					i(186684, {	-- Memories of Brigther Times
 						["collectible"] = false,
 						["timeline"] = { ADDED_9_1_0 },
+					}),
+					i(284216, {	-- Mysterious Imported Piranha (DECOR!)
+						["cost"] = { { "c", ANIMA, 200 } },
+						["timeline"] = { ADDED_12_1_5 }
+					}),
+					i(180970, {	-- Teregeer Crystal
+						["description"] = "Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.5)|r.",
 					}),
 				},
 			}),
@@ -47,9 +51,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["sym"] = { SymSelector.select("SL_PVP_SEASON_UNCHAINED_GLADIATOR"),{"pop"}},	-- SEASON_UNCHAINED/Gladiator Header
 						-- #ENDIF
 						-- #IF AFTER 9.2.0
-						["groups"] = {
-							i(188759),	-- Sealed Vintage Darkmoon Deck
-						},
+						["groups"] = { i(188759) },	-- Sealed Vintage Darkmoon Deck
 						-- #ENDIF
 					}),
 					i(194118, {	-- Cosmic Equipment Chest [PvP S3]
