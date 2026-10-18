@@ -15,6 +15,7 @@ local GetRealmName = GetRealmName
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemCount = app.WOWAPI.GetItemCount;
+local GetProfessionInfoByRecipeID = app.WOWAPI.GetProfessionInfoByRecipeID;
 local GetItemSpecInfo = app.WOWAPI.GetItemSpecInfo;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
@@ -224,28 +225,6 @@ local KnownByIgnoredTypes = {
 }
 
 local knownBy = {};
-
--- Helper: Map Item SubClass IDs (for Recipes) directly to Profession Spell IDs (SavedVariables)
-local RECIPE_SUBCLASS_TO_SPELLID = {
-	[1]  = 2108,  -- Leatherworking
-	[2]  = 3908,  -- Tailoring
-	[3]  = 4036,  -- Engineering
-	[4]  = 2018,  -- Blacksmithing
-	[5]  = 2550,  -- Cooking
-	[6]  = 2259,  -- Alchemy
-	[7]  = 3273,  -- First Aid
-	[8]  = 7411,  -- Enchanting
-	[9]  = 7620,  -- Fishing
-	[10] = 25229, -- Jewelcrafting
-	[11] = 45357, -- Inscription
-}
-
--- Helper: Fallback Map for generic Skill IDs to Spell IDs
-local SKILL_TO_SPELLID = {
-	[171] = 2259, [164] = 2018, [185] = 2550, [333] = 7411, [202] = 4036,
-	[129] = 3273, [356] = 7620, [182] = 2366, [773] = 45357, [755] = 25229,
-	[165] = 2108, [186] = 2575, [393] = 8613, [197] = 3908,
-}
 
 --- Saved character identity used by tooltip grouping; text may include class color and item quantity.
 ---@class ATTTooltipCharacter
@@ -457,12 +436,22 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	end
 end
 
+--- A Classic profession entry retaining its character, current rank and maximum rank.
+---@class ATTTooltipProfessionRank
+---@field [1] ATTTooltipCharacter Character that owns this profession.
+---@field [2] number Current saved profession rank, used for descending sort order.
+---@field [3] number Maximum saved profession rank, displayed beside the current rank.
+
+--- Append known spell/recipe owners, retaining ranked Classic profession rows.
+---@param t any Unused information-type instance supplied by the tooltip dispatcher.
+---@param reference { knownByID: integer?, spellID: integer?, key: string?, CACHE: string?, __type: string?, perCharacter: boolean? } Object and saved-cache key whose owners are listed.
+---@param tooltipInfo ATTCharacterTooltipRow[] Tooltip rows receiving known characters or Classic ranks.
+---@return nil
 local function ProcessForKnownBy(t, reference, tooltipInfo)
+	-- This is to show which characters have this profession.
 	local id = reference.knownByID or reference.spellID
-	local hasShownAny = false
-	
 	if id then
-		if reference.key == "professionID" and app.IsClassic then
+		if reference.key == "professionID" and app.IsClassic then	-- Apparently Retail doesn't use ActiveSkills
 			for _,character in pairs(ATTCharacterData) do
 				if character.ActiveSkills and not character.ignored then
 					local skills = character.ActiveSkills[id];
@@ -470,99 +459,119 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 				end
 			end
 			if #knownBy > 0 then
-				app.Sort(knownBy, function(a, b) return a[2] > b[2]; end);
-				
-				tinsert(tooltipInfo, { left = " " });
-				tinsert(tooltipInfo, { left = L.KNOWN_BY:format(""), r = 1, g = 0.82, b = 0 });
-				
+				app.Sort(knownBy,
+					--- Order Classic profession entries by their saved current rank.
+					---@param a ATTTooltipProfessionRank First character, current rank and maximum rank.
+					---@param b ATTTooltipProfessionRank Second character, current rank and maximum rank.
+					---@return boolean precedes Whether the first rank is higher.
+					function(a, b)
+					return a[2] > b[2];
+				end);
+				tinsert(tooltipInfo, {
+					left = L.KNOWN_BY:format(""),
+					r = 1, g = 0.82, b = 0,
+				});
 				for i,data in ipairs(knownBy) do
 					local character = data[1];
-					local name = GetCharacterDisplayName(character)
-					tinsert(tooltipInfo, { left = "  " .. name, right = data[2] .. " / " .. data[3], });
+					tinsert(tooltipInfo, {
+						left = "  " .. GetCharacterDisplayName(character),
+						right = data[2] .. " / " .. data[3],
+					});
 				end
 				wipearray(knownBy);
-				hasShownAny = true
 				return;
 			end
 		end
-		
+
+		-- If the Thing is not ignored, then show which characters know this Thing/Spell
 		if not KnownByIgnoredTypes[reference.__type] or reference.perCharacter then
 			local cacheName = reference.CACHE
 			local knownByCache
 			for guid,character in pairs(ATTCharacterData) do
-				if not character.ignored then
-					knownByCache = character[cacheName] or character.Spells
-					if knownByCache and knownByCache[id] then tinsert(knownBy, character); end
+				knownByCache = character[cacheName] or character.Spells
+				if not character.ignored and knownByCache and knownByCache[id] then
+					tinsert(knownBy, character);
 				end
 			end
-			if #knownBy > 0 then
-				tinsert(tooltipInfo, { left = " " });
-				hasShownAny = true
-				BuildKnownByInfoForKind(tooltipInfo, L.KNOWN_BY);
-			end
-		end
-	end
-
-	local spellID = reference.spellID
-	local itemID = reference.itemID
-	
-	if itemID and not spellID then
-		local _, _, _, _, _, _, spellIdFromItem = GetItemSpell(itemID)
-		if spellIdFromItem then spellID = spellIdFromItem end
-	end
-
-	if spellID then
-		local profSpellID = nil
-		if itemID then
-			local _, _, _, _, _, _, _, _, _, _, _, classID, subclassID = GetItemInfo(itemID)
-			if classID == 9 and subclassID then
-				profSpellID = RECIPE_SUBCLASS_TO_SPELLID[subclassID]
-			end
-		end
-		
-		if not profSpellID then
-			local skillID = reference.skillID or reference.requireSkill
-			if skillID and SKILL_TO_SPELLID[skillID] then profSpellID = SKILL_TO_SPELLID[skillID] end
-		end
-
-		if profSpellID then
-			local reqRank = reference.learnedAt or 1
-			for guid, character in pairs(ATTCharacterData) do
-				if not character.ignored then
-					local isKnown = false
-					if character.Spells and character.Spells[spellID] then isKnown = true end
-					
-					if not isKnown then
-						local rank = 0
-						if character.ActiveSkills then
-							local skillData = character.ActiveSkills[profSpellID] or character.ActiveSkills[tostring(profSpellID)]
-							if skillData then rank = skillData[1] end
-						elseif character.Skills then
-							rank = character.Skills[profSpellID] or character.Skills[tostring(profSpellID)] or 0
-						end
-						
-						if rank >= reqRank then
-							tinsert(knownBy, character)
-						end
-					end
-				end
-			end
-			
-			if #knownBy > 0 then
-				if not hasShownAny then
-					tinsert(tooltipInfo, { left = " " });
-				else
-					tinsert(tooltipInfo, { left = " " });
-				end
-				
-				local header = L.USEFUL_FOR
-				if not header or header == "Unknown" then header = "Useful For" end
-				BuildKnownByInfoForKind(tooltipInfo, header);
-			end
+			BuildKnownByInfoForKind(tooltipInfo, L.KNOWN_BY);
 		end
 	end
 end
 
+--- Recipe metadata and inherited character restrictions used to check learning eligibility.
+---@class ATTRecipeEligibilityReference
+---@field recipeID integer? Recipe spell ID identifying an actual recipe.
+---@field knownByID integer? Alternate recipe ID on a linked object.
+---@field spellID integer? Spell ID used to find the linked recipe.
+---@field skillID integer? Required profession, expansion skill line or specialization ID.
+---@field requireSkill integer? Required skill ID inherited from a parent when absent on the recipe.
+---@field learnedAt number? Minimum skill rank; defaults to one.
+---@field r integer? Required faction ID; zero means unrestricted.
+---@field c integer[]? Permitted class IDs inherited from recipe parents.
+---@field races integer[]? Permitted race IDs inherited from recipe parents.
+---@field parent ATTRecipeEligibilityReference? Parent providing inherited requirements.
+
+--- Append characters eligible to learn a recipe using saved ranks and character restrictions.
+---@param t any Unused information-type instance supplied by the tooltip dispatcher.
+---@param reference ATTRecipeEligibilityReference Recipe or linked object whose requirements are checked.
+---@param tooltipInfo ATTCharacterTooltipRow[] Tooltip rows receiving eligible character names.
+---@return nil
+local function ProcessForUsefulFor(t, reference, tooltipInfo)
+	-- Only actual recipes can be useful to a character; arbitrary item/spell IDs are not recipes.
+	local recipe, recipeID = reference, reference.recipeID;
+	if not recipeID then
+		local id = reference.knownByID or reference.spellID;
+		if not id then return; end
+		recipe = app.SearchForObject("recipeID", id, "key");
+		if not recipe then return; end
+		recipeID = recipe.recipeID;
+	end
+	if not recipeID then return; end
+	local skillID = reference.skillID or reference.requireSkill or recipe.skillID or GetRelativeValue(recipe, "requireSkill");
+	if not skillID then return; end
+	local learnedAt = reference.learnedAt or GetRelativeValue(recipe, "learnedAt") or 1;
+	local skillDB = app.SkillDB;
+	local specializationSpell = skillDB.SpecializationSpells[skillID];
+	local baseSkillID = skillDB.SpellToSkill[specializationSpell or 0] or skillDB.Conversion[skillID] or skillID;
+	local rankSkillID = skillID;
+	if app.IsRetail then
+		-- Retail skill levels belong to a particular expansion, not the base profession.
+		local professionInfo = GetProfessionInfoByRecipeID(recipeID);
+		if professionInfo and professionInfo.professionID and professionInfo.professionID > 0 then
+			rankSkillID = professionInfo.professionID;
+		elseif not app.IsForever and (not skillDB.Conversion[skillID] or skillDB.Conversion[skillID] == skillID) then
+			-- A base profession rank cannot identify which Retail expansion a recipe belongs to.
+			return;
+		end
+	end
+	local professionSpellID = skillDB.SkillToSpell[skillID] or skillDB.SkillToSpell[baseSkillID];
+	local faction = GetRelativeValue(recipe, "r");
+	local classes = GetRelativeValue(recipe, "c");
+	local races = GetRelativeValue(recipe, "races");
+	for _,character in pairs(ATTCharacterData) do
+		if not character.ignored
+			and not (character.Spells and character.Spells[recipeID])
+			and (not faction or faction == 0 or character.factionID == faction)
+			and (not classes or app.contains(classes, character.classID))
+			and (not races or app.contains(races, character.raceID)) then
+			local rank;
+			if app.IsRetail then
+				local professions = character.Professions;
+				if professions and professions[baseSkillID] and (not specializationSpell or professions[skillID]) then
+					rank = character.ProfessionRanks and character.ProfessionRanks[rankSkillID];
+				end
+			else
+				local skills = professionSpellID and character.ActiveSkills and character.ActiveSkills[professionSpellID];
+				rank = skills and skills[1];
+			end
+			-- Missing cached rank data must not imply that a character can learn the recipe.
+			if type(rank) == "number" and rank > 0 and rank >= learnedAt then
+				tinsert(knownBy, character);
+			end
+		end
+	end
+	BuildKnownByInfoForKind(tooltipInfo, L.USEFUL_FOR);
+end
 
 -- Specialization Requirements
 local GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
@@ -1409,6 +1418,7 @@ local InformationTypes = {
 	}),
 	CreateInformationType("CompletedBy", { text = L.COMPLETED_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForCompletedBy });
 	CreateInformationType("KnownBy", { text = L.KNOWN_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForKnownBy });
+CreateInformationType("UsefulFor", { text = L.USEFUL_FOR:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForUsefulFor });
 	CreateInformationType("extraInfo", { text = "extraInfo", priority = 2.51, HideCheckBox = true, ForceActive = true,
 		Process = function(t, reference, tooltipInfo)
 			local itemID = reference.itemID

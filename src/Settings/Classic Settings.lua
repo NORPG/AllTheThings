@@ -127,6 +127,7 @@ local TooltipSettingsBase = {
 		["KnownBy"] = true,
 		["GroupByRealm"] = false,
 		["GroupByFaction"] = false,
+		["UsefulFor"] = true,
 		["Locations"] = 5,
 		["MainListScale"] = 1,
 		["MiniListScale"] = 1,

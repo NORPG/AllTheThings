@@ -589,6 +589,27 @@ end)
 checkboxKnownBy:SetATTTooltip(L.KNOWN_BY_CHECKBOX_TOOLTIP)
 checkboxKnownBy:AlignBelow(checkboxCompletedBy)
 
+local checkboxUsefulFor = child:CreateCheckBox(L.USEFUL_FOR_CHECKBOX,
+---Refreshes the Useful For checkbox value and enabled state.
+---@param self ATTSettingsCheckButton
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("UsefulFor"))
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+---Saves the Useful For tooltip setting.
+---@param self ATTSettingsCheckButton
+function(self)
+	settings:SetTooltipSetting("UsefulFor", self:GetChecked())
+end)
+checkboxUsefulFor:SetATTTooltip(L.USEFUL_FOR_CHECKBOX_TOOLTIP)
+checkboxUsefulFor:AlignBelow(checkboxKnownBy)
+
 local checkboxGroupByRealm = child:CreateCheckBox(L.GROUP_BY_REALM_CHECKBOX,
 ---Refreshes the realm grouping checkbox value and enabled state.
 ---@param self ATTSettingsCheckButton
@@ -608,7 +629,7 @@ function(self)
 	settings:SetTooltipSetting("GroupByRealm", self:GetChecked())
 end)
 checkboxGroupByRealm:SetATTTooltip(L.GROUP_BY_REALM_CHECKBOX_TOOLTIP)
-checkboxGroupByRealm:AlignBelow(checkboxKnownBy)
+checkboxGroupByRealm:AlignBelow(checkboxUsefulFor)
 checkboxGroupByRealm.Text:SetWidth(170)
 checkboxGroupByRealm.Text:SetWordWrap(true)
 checkboxGroupByRealm:SetHitRectInsets(0, -checkboxGroupByRealm.Text:GetWidth() * checkboxGroupByRealm.Text:GetScale(), 0, 0)

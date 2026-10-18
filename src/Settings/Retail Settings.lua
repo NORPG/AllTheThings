@@ -150,6 +150,7 @@ local TooltipSettingsBase = {
 		["KnownBy"] = true,
 		["GroupByRealm"] = false,
 		["GroupByFaction"] = false,
+		["UsefulFor"] = true,
 		["LiveScan"] = false,
 		["Locations"] = 5,
 		["MainListScale"] = 1,
