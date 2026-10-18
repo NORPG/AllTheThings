@@ -35,6 +35,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						["timeline"] = { ADDED_11_2_7 },
 					}),
 				}),
+				ach(63712, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_7 } }, {	-- Lorewalking: Jaina
+					["groups"] = { i(283453) },	-- Tome of the Sea (DECOR!)
+				})),
 				ach(61467, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Lorewalking: The Elves of Quel'thalas
 					["groups"] = { i(245332) },	-- Tome of Silvermoon Intrigue (DECOR!)
 				})),
@@ -173,6 +176,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						},
 					}),
 				}),
+				header(HEADERS.Achievement, 63712, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_7 } }, {	-- Lorewalking: Jaina
+					q(95421, {	-- Lorewalking: A Bright Young Mage
+						["provider"] = { "n", 230246 },	-- Li Li Stormstout
+						["coords"] = {
+							{ 49.5, 31.6, DORNOGAL },
+							{ 54.5, 57.2, ORGRIMMAR },
+							{ 64.2, 16.1, STORMWIND_CITY },
+							{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+						},
+						["maps"] = { 2716 },	-- Hyjal Summit
+						["isRepeatable"] = true,
+					}),
+					q(95422, {	-- Lorewalking: Tides of War
+						["provider"] = { "n", 261067 },	-- Li Li Stormstout
+						["maps"] = {
+							2716,	-- Hyjal Summit
+							2717,	-- Theramore Isle
+							2718,	-- Ruins of Theramore
+						},
+						["isRepeatable"] = true,
+					}),
+					q(95423, {	-- Lorewalking: Daughter of the Sea
+						["provider"] = { "n", 261067 },	-- Li Li Stormstout
+						["coord"] = { 30.2, 49.3, 501 },	-- Dalaran
+						["isRepeatable"] = true,
+					}),
+				})),
 				header(HEADERS.Achievement, 61467, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Lorewalking: The Elves of Quel'thalas
 					q(85252, {	-- Lorewalking: Children of the Blood
 						["provider"] = { "n", 230246 },	-- Lorewalker Cho

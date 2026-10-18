@@ -1937,7 +1937,6 @@ root(ROOTS.Unsorted, {
 				i(158807),	-- PH Flavor - Unused \\ PH Flavor - Doe / Gazelle
 				i(158809),	-- PH Flavor - Unused \\ PH Flavor - Flesh Beast
 				i(158812),	-- Glowfly Abdomen \\ PH Flavor - Ettin
-				i(158813),	-- Sausage Casing \\ PH Flavor - Lightning Elemental
 				i(158814),	-- Bulging Coin Purse \\ PH Flavor - Unused \\ PH Flavor - Swamp Plant
 				i(158815),	-- Stonebreaker Scale \\ PH Flavor - Raptor - Dinosaur
 				i(158816),	-- PH Flavor - Unused \\ PH Flavor - Dog
@@ -2657,7 +2656,6 @@ root(ROOTS.Unsorted, {
 			i(168630),	-- Chitterspine Meat
 			i(168655),	-- Greater Mystical Flask
 			i(168662),	-- Maroon Pigment
-			i(168755),	-- Unpublished Research
 			i(168797),	-- Stack of Undeliverable Mail
 			i(168812),	-- Air Freshner
 			i(168815),	-- Kelpberry Cask

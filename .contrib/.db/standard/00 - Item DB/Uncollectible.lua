@@ -386,6 +386,7 @@ i(159919);	-- Salted Tideway Cod
 i(161053);	-- Salty Dog Crackers
 i(162630);	-- Sandy Ornate Relic
 i(163087);	-- Satchel of Blood Oranges
+i(158813);	-- Sausage Casing
 i(158849);	-- Sawtooth Jawbone
 i(163695);	-- Scroll of Inner Truth
 i(163707);	-- Scroll of Torga's Swiftness
@@ -536,6 +537,7 @@ i(170096);	-- Sodden Highborne Painting
 i(169126);	-- Supercharged Graphics Cog
 i(168007);	-- Torn Direbloom Petal
 i(168788);	-- Toy Soldier Weapons
+i(168755);	-- Unpublished Research
 i(169135);	-- Warped Shock Absorber
 i(169998);	-- Weathered Bulwark
 i(168006);	-- Wilted Direbloom Petal

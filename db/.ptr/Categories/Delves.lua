@@ -3847,10 +3847,12 @@ o(676632,{coords={
 [2647]={{27.8,34.6}}},questID=98615,g={
 i(283996,{f=55,spellID=1315083}),
 crit(117174,{achID=63717,id=12})}}),
-o(676633,{coords={[2647]={{11.4,54.3}}},questID=98616,g={
+o(676633,{coords={
+[2647]={{11.4,54.3}}},questID=98616,g={
 i(282718,{f=55,spellID=1314367}),
 crit(117175,{achID=63717,id=13})}}),
-o(676635,{coords={[2647]={{9.6,54.8}}},questID=98618,g={
+o(676635,{coords={
+[2647]={{9.6,54.8}}},questID=98618,g={
 crit(117177,{achID=63717,id=15})}}),
 o(676636,{coords={
 [2647]={{10.5,55}}},questID=98617,g={
@@ -3875,7 +3877,8 @@ o(676642,{coords={
 [2647]={{22.9,12}}},questID=98623,g={
 s(316077,284180,{f=2,loc=41}),
 crit(117181,{achID=63717,id=19})}}),
-o(676643,{coords={[2647]={{46.3,11.8}}},questID=98624,g={
+o(676643,{coords={
+[2647]={{46.3,11.8}}},questID=98624,g={
 crit(117182,{achID=63717,id=20})}}),
 o(676645,{coords={
 [2647]={{40.6,20.3}}},questID=98625,g={
@@ -3930,7 +3933,8 @@ crit(117196,{achID=63717,id=34})}}),
 o(676666,{coords={
 [2647]={{56.7,44.1},{61.5,43.6}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98640,g={
 crit(117440,{achID=63717,id=43})}}),
-o(676668,{coords={[2647]={{67.2,51.5}}},questID=98641,g={
+o(676668,{coords={
+[2647]={{67.2,51.5}}},questID=98641,g={
 i(283998,{f=55,spellID=1315084}),
 crit(117197,{achID=63717,id=35})}}),
 o(676759,{coords={

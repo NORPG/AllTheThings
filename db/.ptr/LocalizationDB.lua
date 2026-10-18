@@ -2024,11 +2024,7 @@ localize(L.HEADER_NAMES, {
 	[-798] = select(2,GetAchievementInfo(63714)),
 	[-800] = "Alliance Outrunners",
 	[-801] = "Talebound",
-[-804] = "Dracythr",
-	[-805] = "Earthen",
-	[-806] = "Harandir",
-	[-807] = "Pandaren",
-	})
+})
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
 	[-28] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -2813,10 +2809,6 @@ localize(L.HEADER_ICONS, {
 	[-798] = 133783,
 	[-800] = 236449,
 	[-801] = 7815705,
-[-804] = 136101,
-	[-805] = 136101,
-	[-806] = 136101,
-	[-807] = 136101,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
