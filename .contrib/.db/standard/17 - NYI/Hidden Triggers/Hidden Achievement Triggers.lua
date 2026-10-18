@@ -4,7 +4,7 @@
 
 root(ROOTS.HiddenAchievementTriggers, {
 	-- Note!! Here is where we can put all the hidden Achievement triggers in the game that don't exactly fit anywhere.
-	-- When adding a Achievement trigger be sure to put a description of how it triggered
+	-- When adding an Achievement trigger be sure to put a description of how it triggered
 	-- #if ANYCLASSIC
 	expansion(EXPANSION.CLASSIC, {
 		-- 1.14.1.40666
@@ -1802,7 +1802,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(14104),	-- Dark Inquisitor Xanesh kills (Heroic Ny'alotha, the Waking City)
 			ach(14105),	-- Dark Inquisitor Xanesh kills (Mythic Ny'alotha, the Waking City)
 			ach(14107),	-- The Hivemind kills (Raid Finder Ny'alotha, the Waking City)
-			ach(14108),	-- The Hivemind kills (Nomral Ny'alotha, the Waking City)
+			ach(14108),	-- The Hivemind kills (Normal Ny'alotha, the Waking City)
 			ach(14109),	-- The Hivemind kills (Heroic Ny'alotha, the Waking City)
 			ach(14110),	-- The Hivemind kills (Mythic Ny'alotha, the Waking City)
 			ach(14111),	-- Shad'har the Insatiable kills (Raid Finder Ny'alotha, the Waking City)
@@ -3209,7 +3209,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 			-- 11.0.0.54311
 			ach(19467),	-- 1st level 80 on account (DNT)
 			ach(19469),	-- 2nd level 80 on account (DNT)
-			ach(19472),	-- 3nd level 80 on account (DNT)
+			ach(19472),	-- 3rd level 80 on account (DNT)
 			ach(19473),	-- 4th level 80 on account (DNT)
 			ach(19474),	-- 5th level 80 on account (DNT)
 			ach(19510),	-- Test - For PH - Multiple Characters Hitting Max Level (DNT)
@@ -3963,7 +3963,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		expansion(EXPANSION.MID, patch(0,0,0), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
 			ach(42322),	-- 1st level 90 on account (DNT)
 			ach(42323),	-- 2nd level 90 on account (DNT)
-			ach(42324),	-- 3nd level 90 on account (DNT)
+			ach(42324),	-- 3rd level 90 on account (DNT)
 			ach(42326),	-- 4th level 90 on account (DNT)
 			ach(42327),	-- 5th level 90 on account (DNT)
 			ach(41673),	-- Midnight Tailoring 25 (DNT)

@@ -453,7 +453,7 @@ local function RelicCofferKeyPurchase(itemID)
 	return item
 end
 
--- Template for Anniversay groups to help separate one-time and recurring content
+-- Template for Anniversary groups to help separate one-time and recurring content
 --[[
 	n(WOW_ANNIVERSARY_N, {
 		["timeline"] = { ADDED },
@@ -3945,7 +3945,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								["groups"] = { i(225996) },	-- Clam Digger
 							}),
 							o(455761, {	-- Gerald
-								["description"] = "Go to Zuldazar in Zandalar. At 54.3, 54.5 you will find Nikto. Buy Clam Digger and head upwards to 54.2, 54.2. Interract with Gerald and give him the drink.",
+								["description"] = "Go to Zuldazar in Zandalar. At 54.3, 54.5 you will find Nikto. Buy Clam Digger and head upwards to 54.2, 54.2. Interact with Gerald and give him the drink.",
 								["provider"] = { "i", 225996 },	-- Clam Digger
 								["coord"] = { 54.2, 54.2, ZULDAZAR },
 								["groups"] = {

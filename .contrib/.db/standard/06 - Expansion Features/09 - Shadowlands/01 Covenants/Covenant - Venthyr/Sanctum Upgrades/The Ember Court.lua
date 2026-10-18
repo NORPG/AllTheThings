@@ -579,7 +579,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						}),
 						n(QUESTS, {
 							n(SPECIAL, sharedData({
-								["sharedDescription"] = "Requires joining another Venthyr player in their Ember Court scenario and interacting with the respective Exalted Guest. You must have your own Ember Court built and the rehersal court scenario completed before you can pick these quests up.",
+								["sharedDescription"] = "Requires joining another Venthyr player in their Ember Court scenario and interacting with the respective Exalted Guest. You must have your own Ember Court built and the rehearsal court scenario completed before you can pick these quests up.",
 								["sourceQuest"] = 59661,	-- Ember Court Rehersal
 							}, {
 								-- Tier 1
@@ -2552,7 +2552,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 					q(61936),	-- Triggered after Restock: Surveillance
 					q(61940),	-- Triggered after Restock: Fine Cutlery (Unflagged)
 					q(61932),	-- Triggered after Restock: Unconventional Weapons
-					-- q(61825),	-- During Ember Court after finishin Glimpse of the Wilds Niya's minigame
+					-- q(61825),	-- During Ember Court after finishing Glimpse of the Wilds Niya's minigame
 					q(61941),	-- Flagged at start and unflagged at end of Ember Court
 					q(61926),	-- Maybe Revendreth Etiquette?
 					-- q(63353),	-- Triggered after turning in Red Noggin Candle as criteria for Rendle's Big Day

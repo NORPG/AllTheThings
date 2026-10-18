@@ -38,7 +38,7 @@ local BAINE_BLOODHOOF_CRITERIA_UID = 12662;
 -- #if ANYCLASSIC
 -- #if AFTER 4.0.3
 -- #if BEFORE 6.0.2
--- Crieve NOTE: The dumb shits at Blizzard shifted these achievement criterias for Cataclysm Classic
+-- Crieve NOTE: The dumb shits at Blizzard shifted these achievement criteria for Cataclysm Classic
 TYRANDE_WHISPERWIND_CRITERIA_UID = 12665;
 PROPHET_VELEN_CRITERIA_UID = 12666;
 LORTHEMAR_THERON_CRITERIA_UID = 12659;
@@ -788,7 +788,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #if AFTER 11.0.7
 				"If you have obtained both items but you didn't earn the achievement, try throwing both balls to a friend.",
 				-- #else
-				"If you have obtained both items but you didn't earn the achievement, try throwing both balls to a friend.\n\nIf you learned the toys on 2 different characters, the achievement cant be completed",
+				"If you have obtained both items but you didn't earn the achievement, try throwing both balls to a friend.\n\nIf you learned the toys on 2 different characters, the achievement can't be completed",
 				-- #endif
 			-- #endif
 			["_doautomation"] = true,
@@ -1394,7 +1394,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 172225 },	-- Gently Shaken Gift
 			},
-			["timeline"] = { ADDED_8_2_5, REMOVED_9_0_1 },	-- Should been removed earlier?
+			["timeline"] = { ADDED_8_2_5, REMOVED_9_0_1 },	-- Should have been removed earlier?
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["_drop"] = { "g" },
 			["groups"] = {
@@ -1786,7 +1786,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 172224 },	-- Winter Veil Gift
 			},
-			["timeline"] = { ADDED_8_2_5, REMOVED_9_0_1 },	-- Should been removed earlier?
+			["timeline"] = { ADDED_8_2_5, REMOVED_9_0_1 },	-- Should have been removed earlier?
 			["maps"] = { IRONFORGE, ORGRIMMAR },
 			["lvl"] = 10,
 			["_drop"] = { "g" },

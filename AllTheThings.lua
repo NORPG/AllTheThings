@@ -160,7 +160,7 @@ local function AddContainsData(group, tooltipInfo)
 	if not thingCheck or (app.ActiveRowReference and thingCheck ~= true) then return end
 
 	local working = group.working
-	-- Sort by the heirarchy of the group if not the raw group of an ATT list
+	-- Sort by the hierarchy of the group if not the raw group of an ATT list
 	if not working and not app.ActiveRowReference then
 		app.Sort(group.g, app.SortDefaults.Hierarchy, true);
 	end
@@ -300,7 +300,7 @@ local function AddContainsData(group, tooltipInfo)
 				end
 			end
 
-			-- If this entry is an Achievement Criteria (whose raw parent is not the Achievement) then show the Achievement
+			-- If this entry is an Achievement Criterion (whose raw parent is not the Achievement) then show the Achievement
 			if entry.criteriaID and entry.achievementID then
 				local rawParent = rawget(entry, "parent");
 				if not rawParent or rawParent.achievementID ~= entry.achievementID then
@@ -1167,7 +1167,7 @@ local function BuildSourceParent(group)
 						end
 					end
 				end
-				-- Things which are a Item output of one or more Crafting Recipes should show those Recipes as a Source
+				-- Things which are an Item output of one or more Crafting Recipes should show those Recipes as a Source
 				if thing.itemID then
 					local recipes = GetCraftingOutputRecipes(thing)
 					if recipes then

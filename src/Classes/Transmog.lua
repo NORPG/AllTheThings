@@ -352,7 +352,7 @@ local function FilterItemSourceUnique(sourceInfo, allSources)
 						or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]]
 						or SlotByInventoryType[knownSource.invType] == SlotByInventoryType[sourceInfo.invType])
 				then
-					-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
+					-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESN'T HAVE!!!!");
 					return true;
 				-- else print(knownSource.sourceID, checkSourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
 				end
@@ -758,7 +758,7 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 					or knownSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
 					or SlotByInventoryType[checkSource.invType] == SlotByInventoryType[knownSource.invType])
 			then
-				-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
+				-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESN'T HAVE!!!!");
 				AccountUniqueSources_ADD(sourceID)
 			-- else print(knownSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", knownSource.invType, sourceInfo.categoryID);
 			end
@@ -1258,7 +1258,7 @@ local function BuildSourceInformationForPopout(group)
 	-- source without an item, try to generate the valid item link for it
 	if not group.itemID and not group.artifactID then
 		app.ImportRawLink(group, app.DetermineItemLink(group.sourceID));
-		-- if we found a Item link, save it into ATTHarvestItems for ease of use (don't need to add Item, parse, Harvest, add harvest, parse)
+		-- if we found an Item link, save it into ATTHarvestItems for ease of use (don't need to add Item, parse, Harvest, add harvest, parse)
 		app.SaveHarvestSource(group);
 	end
 	-- Attempt to get information about the source ID.
@@ -1274,8 +1274,8 @@ local function BuildSourceInformationForPopout(group)
 		if otherSourceID ~= group.sourceID then
 			local shared = app.SearchForObject("sourceID", otherSourceID, "key");
 			if shared then
-				-- TODO: this causes the object to lose it's source and lead to other relative data issues in some situations
-				-- make sure that consoldiated 'clone' object tech accounts for this properly like in Retail app.__CreateObject
+				-- TODO: this causes the object to lose its source and lead to other relative data issues in some situations
+				-- make sure that consolidated 'clone' object tech accounts for this properly like in Retail app.__CreateObject
 				-- ref: 8ef82aae48d055b266786c5c6111c832af788b90
 				shared = app.CloneObject(shared, true);
 				g[#g + 1] = shared

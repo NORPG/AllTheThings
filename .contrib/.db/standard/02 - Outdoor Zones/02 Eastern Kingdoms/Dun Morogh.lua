@@ -3967,7 +3967,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["lvl"] = 6,
-					-- Danny Donkey: Molkree says this quest propably got added by mistake to a list of quests to be marked as incomplete on a yearly basis. All yearly quests resets 15/01.
+					-- Danny Donkey: Molkree says this quest probably got added by mistake to a list of quests to be marked as incomplete on a yearly basis. All yearly quests reset 15/01.
 					-- Classic have description in the quest because it will not play ball and appear directly on the npc itself due to conflict with the state of being a QG. This is not an issue on retail.
 					["groups"] = {
 						-- #if AFTER CATA
@@ -3998,7 +3998,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						n(1977, {	-- Senator Mehr Stonehallow
 						-- #if AFTER 9.1.5
-						-- Danny Donkey: This have probably applied for all iterations of WoW, but oldest reports are from 9.1.5 and first iterations of Classic.
+						-- Danny Donkey: This has probably applied for all iterations of WoW, but oldest reports are from 9.1.5 and first iterations of Classic.
 						["description"] = "The quest 'The Public Servant' gets flagged as not completed on a yearly basis, thus is unintentionally repeatable. This does not affect the collected state of the quest rewards.",
 						-- #endif
 						}),

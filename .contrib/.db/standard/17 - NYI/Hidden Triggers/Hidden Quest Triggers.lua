@@ -39,8 +39,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(12845),	-- Dalaran teleport crystal flag
 		q(12452),	-- Dragonblight - triggers when turning in "The Fate of the Ruby Dragonshrine". duplicate version of a quest during early development
 		-- #if BEFORE CATA
-		q(14438),	-- Sharing the Land (triggeres with 'Sharing the Land' questID 745)
-		q(14439),	-- Journey into Thunder Bluff (triggeres with 'Journey into Thunder Bluff' questID 775)
+		q(14438),	-- Sharing the Land (triggers with 'Sharing the Land' questID 745)
+		q(14439),	-- Journey into Thunder Bluff (triggers with 'Journey into Thunder Bluff' questID 775)
 		-- #endif
 
 		-- Riding
@@ -315,7 +315,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(47699),	-- [DNT] - tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
 		q(44483),	-- Vendor Beckon Trigger - triggers all classes
 		q(44484),	-- Vendor Beckon Trigger - triggers all classes
-		q(45773, { ["timeline"] = { ADDED_7_2_0 } }),	-- 7.2 Class Hall - Maximillian of Northshire - Aqcuisition - Track Mail Sent
+		q(45773, { ["timeline"] = { ADDED_7_2_0 } }),	-- 7.2 Class Hall - Maximillian of Northshire - Acquisition - Track Mail Sent
 
 		-- Random	-- TODO -Darkal
 
@@ -757,7 +757,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	------------------
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(PVP, {
-			q(79332, {["timeline"] = {ADDED_10_2_0}, ["repeatable"] = true}),	-- Triggers after winning a Brawl: Battleground Blitz (possibly only when theres an elistment bonus?)
+			q(79332, {["timeline"] = {ADDED_10_2_0}, ["repeatable"] = true}),	-- Triggers after winning a Brawl: Battleground Blitz (possibly only when there's an enlistment bonus?)
 		}),
 	})),
 
@@ -766,7 +766,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	------------------
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		q(94711, { ["timeline"] = { ADDED_12_0_0 } }),						-- Flags and unflags randomly when interacting with vendors?
-		q(95270, { ["isDaily"] = true, ["timeline"] = { ADDED_11_2_7 } }),	-- Triggeres literally anywhere for anything? (bountiful chest, killing boss, using items, finishing quests etc.)
+		q(95270, { ["isDaily"] = true, ["timeline"] = { ADDED_11_2_7 } }),	-- Triggers literally anywhere for anything? (bountiful chest, killing boss, using items, finishing quests etc.)
 	})),
 
 	--------------------
@@ -988,9 +988,9 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(37812),	-- UNUSED: Test Race: 1 Marker
 		q(38845),	-- Unused
 		-- q(59038),	-- Got suddenly appeared. Same time as I was chatting. We finished Temple of Jade Serpent, lvl 16, 22, 46 (I'm the 46). Goblin in group with Vulpera Party Sync enabled
-		-- q(63389),	-- Person in Errors doesnt really remember
-		-- q(63390),	-- Person in Errors doesnt really remember
-		-- q(63391),	-- Person in Errors doesnt really remember
+		-- q(63389),	-- Person in Errors doesn't really remember
+		-- q(63390),	-- Person in Errors doesn't really remember
+		-- q(63391),	-- Person in Errors doesn't really remember
 		-- q(54324),	-- Triggered in BfA
 		-- q(54317),	-- BfA Alliance Stormsong "Invasion"
 		-- q(62521),	-- unknown tracking

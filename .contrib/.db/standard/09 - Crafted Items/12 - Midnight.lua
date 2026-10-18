@@ -2407,7 +2407,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { 
 			FirstCraft(90072, 1228995);	-- Thalassian Competitor's Cloth Shoulderpads
 			FirstCraft(90073, 1228996);	-- Thalassian Competitor's Cloth Treads
 			FirstCraft(90074, 1228997);	-- Thalassian Competitor's Cloth Tunic
-			-- Wardrobe Enchancements
+			-- Wardrobe Enhancements
 			fc(1280545),	-- Blood-Tempered Cape
 			fc(1280544),	-- Farstrider's Embroidered Cover
 			fc(1280543),	-- Scout's Cape
