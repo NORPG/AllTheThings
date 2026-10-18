@@ -1523,7 +1523,7 @@ fp(23,{coords={
 [85]={{49.4,59.2}}},crs={3310},r=1})}),
 h(-43,{awp=50004,pb=1,g={
 n(63626,{coords={
-[85]={{52.6,59.3}}},description="Provides the Horde Battle Pet questline, the quests are given in the following order:\n\n1. The inital quests touring middle Kalimdor\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until daily reset.",pb=1,r=1,g={
+[85]={{52.6,59.3}}},description="Provides the Horde Battle Pet questline, the quests are given in the following order:\n\n1. The initial quests touring middle Kalimdor\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until daily reset.",pb=1,r=1,g={
 cs(119467,{pb=1})}}),
 q(31967,{coords={
 [85]={{52.6,59.3}}},crs={66815,66819,66822},maps={198,207,241},pb=1,qgs={63626},r=1,sourceQuests={31983},g={
@@ -8518,11 +8518,11 @@ s(25786,52598,{b=1,f=5,loc=42}),
 s(26853,55134,{b=1,f=7,loc=43}),
 s(75572,131291,{awp=70003,b=1,f=6,loc=42})}}),
 q(13568,{altQuests={13567,13597},awp=40003,coords={
-[62]={{42.8,40.2}}},description="Great Moonstalker Spirit grants a buff increasing your haste by 10%.\nChoose carefuly, you can get only 1 buff.",DisablePartySync=1,lvl=5,qgs={33131},r=2,sourceQuests={13565,13566,13598}}),
+[62]={{42.8,40.2}}},description="Great Moonstalker Spirit grants a buff increasing your haste by 10%.\nChoose carefully, you can get only 1 buff.",DisablePartySync=1,lvl=5,qgs={33131},r=2,sourceQuests={13565,13566,13598}}),
 q(13567,{altQuests={13568,13597},awp=40003,coords={
-[62]={{43.7,40.2}}},description="Great Stag Spirit grants a buff increasing your movement speed by 10%.\nChoose carefuly, you can get only 1 buff.",DisablePartySync=1,lvl=5,qgs={33133},r=2,sourceQuests={13565,13566,13598}}),
+[62]={{43.7,40.2}}},description="Great Stag Spirit grants a buff increasing your movement speed by 10%.\nChoose carefully, you can get only 1 buff.",DisablePartySync=1,lvl=5,qgs={33133},r=2,sourceQuests={13565,13566,13598}}),
 q(13597,{altQuests={13567,13568},awp=40003,coords={
-[62]={{42.5,38.6}}},description="Great Thistle Bear Spirit grants a buff reducing the damage you take by 10%.\nChoose carefuly, you can get only 1 buff.",DisablePartySync=1,lvl=5,qgs={33132},r=2,sourceQuests={13565,13566,13598}}),
+[62]={{42.5,38.6}}},description="Great Thistle Bear Spirit grants a buff reducing the damage you take by 10%.\nChoose carefully, you can get only 1 buff.",DisablePartySync=1,lvl=5,qgs={33132},r=2,sourceQuests={13565,13566,13598}}),
 q(13948,{awp=40003,coords={
 [62]={{45.3,75.1}}},crs={34326},lvl=5,qgs={34402},qis={46696},r=2,sourceQuests={13892}}),
 q(13512,{awp=40003,coords={
@@ -11865,7 +11865,7 @@ n(51017,{awp=50200,coords={
 n(107595,{awp=70003,coords={
 [77]={{38.2,45.4}}},description="This is the daytime light grey bear model."}),
 n(107596,{awp=70003,coords={
-[77]={{38.2,45.4}}},description="This is the nightime black diseased bear model."}),
+[77]={{38.2,45.4}}},description="This is the nighttime black diseased bear model."}),
 n(50925,{awp=50200,coords={
 [77]={{38.2,72.8}}}}),
 n(7137,{coords={
@@ -11910,7 +11910,7 @@ n(48258,{awp=40003,coords={
 de(11301,{awp=110207,itemID=256903,spellID=1260897})}})}),
 h(-63,{
 i(13140,{crs={7114,7118,7120,9862},rwp=40003,u=2}),
-i(21377,{b=1,crs={7153,7154,7155,7156,7157,7158,9462,9464,14342},description="Drops commmonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold."}),
+i(21377,{b=1,crs={7153,7154,7155,7156,7157,7158,9462,9464,14342},description="Drops commonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold."}),
 i(11668,{b=1,coords={
 [77]={{39.6,22.2}}},crs={10648},lvl=21,r=2,rwp=40003,u=2}),
 i(20768,{crs={7092,7093,14345},sym={{"select","itemID",20769}}}),
@@ -12588,7 +12588,7 @@ n(11447,{coords={
 n(5352,{coords={
 [69]={{55.4,61.2},{56.4,58.2},{56.6,62.6},{58.6,58.4},{59,62.6},{60,59.4},{61,62.6}}}}),
 n(54533,{awp=40300,coords={
-[69]={{47.6,74.6},{48.2,78.8},{48.6,79}}},description="Prince Lakma drops Chimaerok Tenderloin, which is a cooking reagent for Dirge's Kickin' Chimaerok Chops. Eating this consumable is a criteria for the Leatherworking achievement named Always Be Camping. However, do not bother with Prince Lekma if you have not learned the required cooking recipe as it only was available for a short time during vanilla and now sells for gold cap. Dirge's Kickin' Chimaerok Chops can be found on the auction house, or you can ask around for a crafter.",g={
+[69]={{47.6,74.6},{48.2,78.8},{48.6,79}}},description="Prince Lakma drops Chimaerok Tenderloin, which is a cooking reagent for Dirge's Kickin' Chimaerok Chops. Eating this consumable is a criterion for the Leatherworking achievement named Always Be Camping. However, do not bother with Prince Lekma if you have not learned the required cooking recipe as it only was available for a short time during vanilla and now sells for gold cap. Dirge's Kickin' Chimaerok Chops can be found on the auction house, or you can ask around for a crafter.",g={
 i(21024)}}),
 n(5350,{coords={
 [69]={{73.6,64},{76.6,61.4}}}}),
@@ -12847,7 +12847,7 @@ ach(4870,{
 crit(13986,{achID=4875,id=2})}),
 ach(4863,{
 crit(13595,{achID=4868,id=2})}),
-ach(5860,{description="The daily quest 'Vigilance on Wings' is offered in Firelands Hatchery after completing the intial quests as part of the questline in Shrine of Aviana.",sourceQuests={29177},g={
+ach(5860,{description="The daily quest 'Vigilance on Wings' is offered in Firelands Hatchery after completing the initial quests as part of the questline in Shrine of Aviana.",sourceQuests={29177},g={
 i(69838,{b=1,description="Contains either the Blue or Gold Mini Jouster, whichever was not picked during the quest Vigilance on Wings.",spellID=98681,g={
 p(259,{b=1,itemID=65661,npcID=42177,spellID=78683}),
 p(260,{b=1,itemID=65662,npcID=42183,spellID=78685})}})}}),
@@ -21442,7 +21442,7 @@ i(18665,{c={5},crs={7461,7463},f=53,lvl=25,rwp=40003,u=2}),
 i(12433,{crs={7450,7451,7452,7453,7454},providers={{"i",12384}},rwp=40003,u=2}),
 i(12431,{crs={7438,7439,7440,7441,7442,10738,10916},providers={{"i",12384}},rwp=40003,u=2}),
 i(12820,{crs={7438,7439,7440,7441,7442,10199,10738,10916},f=55,lvl=20,spellID=17038}),
-i(21383,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},description="Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. The inital turn in requires 10 Winterfall Spirit Beads, and all following requires 5. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold."}),
+i(21383,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},description="Drops commonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. The initial turn in requires 10 Winterfall Spirit Beads, and all following require 5. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold."}),
 i(21928,{crs={7430,7431,7432,7433,7434,7443,7444,7445,7446}})})}})}}),
 m(13,{icon=236759,isContinent=1,lore="The Eastern Kingdoms are the eastern continents on the world of Azeroth. The Eastern Kingdoms is made up from a group of smaller continents (Azeroth, Khaz Modan and Lordaeron) formed from the original continent of Kalimdor following the Great Sundering. The Eastern Kingdoms lie to the east of the Great Sea and to the west of the Forbidding Sea. The central part of the Eastern Kingdoms is dominated by the Khaz Mountains and the Redridge Mountains. Both cover several zones.",g={
 h(-12,{
@@ -28562,35 +28562,35 @@ q(28254,{awp=40001,coords={
 q(28427,{awp=40003,coords={
 [36]={{44.5,44.4}}},lvl=15,qgs={48568},r=1,sourceQuests={28426}}),
 q(28202,{awp=40003,coords={
-[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Humans, Dwarfs, Void Elves, Kul Tirans, and Dark Iron Dwarfs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution for Human, Dwarf and Dark Iron Dwarf:\n2 Hides, 4 Handfulls of Mud, and 2 Spools of Thread.\n\nSolution for Void Elf:\n3 Hides, 2 Handfulls of Mud, and 1 Spool of Thread.\n\nSolution for Kul Tiran:\n4 Hides, 1 Handfull of Mud, and 3 Spools of Thread.\n\n",lvl=15,qgs={48001},qis={63357},races={1,3,29,32,34,85},sourceQuests={28254},g={
+[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Humans, Dwarfs, Void Elves, Kul Tirans, and Dark Iron Dwarfs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution for Human, Dwarf and Dark Iron Dwarf:\n2 Hides, 4 Handfuls of Mud, and 2 Spools of Thread.\n\nSolution for Void Elf:\n3 Hides, 2 Handfuls of Mud, and 1 Spool of Thread.\n\nSolution for Kul Tiran:\n4 Hides, 1 Handful of Mud, and 3 Spools of Thread.\n\n",lvl=15,qgs={48001},qis={63357},races={1,3,29,32,34,85},sourceQuests={28254},g={
 o(206947,{coords={
 [36]={{45.4,46.2}}}})}}),
 q(28203,{awp=40001,coords={
-[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Draenei, Worgen, Tushui Pandaren, Lightforged Draenei, and Alliance Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handfull of Mud\n3 Spools of Thread",lvl=15,qgs={48001},qis={63357},races={11,22,25,30,52},sourceQuests={28254},g={
+[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Draenei, Worgen, Tushui Pandaren, Lightforged Draenei, and Alliance Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handful of Mud\n3 Spools of Thread",lvl=15,qgs={48001},qis={63357},races={11,22,25,30,52},sourceQuests={28254},g={
 o(206947,{coords={
 [36]={{45.4,46.2}}}})}}),
 q(28204,{awp=40003,coords={
-[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Gnomes and Mechagnomes. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfulls of Mud\n4 Spools of Thread",lvl=15,qgs={48001},qis={63357},races={7,37},sourceQuests={28254},g={
+[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Gnomes and Mechagnomes. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfuls of Mud\n4 Spools of Thread",lvl=15,qgs={48001},qis={63357},races={7,37},sourceQuests={28254},g={
 o(206947,{coords={
 [36]={{45.4,46.2}}}})}}),
 q(28205,{awp=40003,coords={
-[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Night Elves. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfulls of Mud\n1 Spool of Thread",lvl=15,qgs={48001},qis={63357},races={4,86},sourceQuests={28254},g={
+[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Night Elves. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfuls of Mud\n1 Spool of Thread",lvl=15,qgs={48001},qis={63357},races={4,86},sourceQuests={28254},g={
 o(206947,{coords={
 [36]={{45.4,46.2}}}})}}),
 q(28428,{awp=40003,coords={
-[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Orcs, Undead, and Mag'har Orcs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n2 Hides\n4 Handfulls of Mud\n2 Spools of Thread",lvl=15,qgs={48001},qis={63357},races={2,5,36,84},sourceQuests={28427},g={
+[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Orcs, Undead, and Mag'har Orcs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n2 Hides\n4 Handfuls of Mud\n2 Spools of Thread",lvl=15,qgs={48001},qis={63357},races={2,5,36,84},sourceQuests={28427},g={
 o(206947,{coords={
 [36]={{45.4,46.2}}}})}}),
 q(28429,{awp=40003,coords={
-[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Tauren, Huojin Pandaren, Highmountain Tauren, and Horde Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handfull of Mud\n3 Spools of Thread",lvl=15,qgs={48001},qis={63357},races={6,26,28,70},sourceQuests={28427},g={
+[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Tauren, Huojin Pandaren, Highmountain Tauren, and Horde Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handful of Mud\n3 Spools of Thread",lvl=15,qgs={48001},qis={63357},races={6,26,28,70},sourceQuests={28427},g={
 o(206947,{coords={
 [36]={{45.4,46.2}}}})}}),
 q(28430,{awp=40003,coords={
-[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Goblins and Vulperas. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfulls of Mud\n4 Spools of Thread",lvl=15,qgs={48001},qis={63357},races={9,35},sourceQuests={28427},g={
+[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Goblins and Vulperas. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfuls of Mud\n4 Spools of Thread",lvl=15,qgs={48001},qis={63357},races={9,35},sourceQuests={28427},g={
 o(206947,{coords={
 [36]={{45.4,46.2}}}})}}),
 q(28431,{awp=40003,coords={
-[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Trolls, Blood Elves, Nightborne Elves, and Zandalari Trolls. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfulls of Mud\n1 Spool of Thread",lvl=15,qgs={48001},qis={63357},races={8,10,27,31,91},sourceQuests={28427},g={
+[36]={{45.4,46.3}}},description="This is a race-specific quest where different races get different versions of this quest. This particular version is only available for Trolls, Blood Elves, Nightborne Elves, and Zandalari Trolls. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfuls of Mud\n1 Spool of Thread",lvl=15,qgs={48001},qis={63357},races={8,10,27,31,91},sourceQuests={28427},g={
 o(206947,{coords={
 [36]={{45.4,46.2}}}})}}),
 q(28279,{awp=40003,coords={
@@ -40345,7 +40345,7 @@ n(1911,{awp=100107,coords={
 [18]={{72.6,25.8}}},g={
 s(1677,4303,{f=23,lvl=3})}}),
 o(240624,{awp=60100,coords={
-[18]={{17.6,67.6}}},description="Rougly every 15 minutes, 7 Fey-Drunk Darters will group around the Giant Mushroom circle, one by one. They will channel the golden beams of light and begin singing their song.\nOnce event starts, loot the nest quickly, as the event does not run for long.",sourceQuests={37961,38356},g={
+[18]={{17.6,67.6}}},description="Roughly every 15 minutes, 7 Fey-Drunk Darters will group around the Giant Mushroom circle, one by one. They will channel the golden beams of light and begin singing their song.\nOnce event starts, loot the nest quickly, as the event does not run for long.",sourceQuests={37961,38356},g={
 cq(38096,{b=1,itemID=122234,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181655,g={
 crit(27761,{achID=10015,id=25,r=2}),
 crit(27761,{achID=10016,id=25,r=1})}})}}),
@@ -40506,7 +40506,7 @@ crit(21684,{achID=6586,id=83,pb=1})}}),
 p(2677,{awp=80200,coords={
 [241]={{19.5,58.6}}},description="Found outside Grim Batol, phasing might require questing through Twilight Highlands. Only spawns as Uncommon pets, if you want a Rare quality pet you have to upgrade with a battlestone.",npcID=154803,pb=1}),
 p(548,{coords={
-[241]={{48.4,28.6},{56.4,15.8}}},description="Found in the Alliance villages Kirthaven and Thundermar. Horde players CANNOT interact with the hatchlings to intitiate pet battle due to faction alignment, any attempts will only attack them. If you absolutely want to get this pet with a Horde character, they can appear as secondary pets near the villages.",npcID=62900,pb=1,g={
+[241]={{48.4,28.6},{56.4,15.8}}},description="Found in the Alliance villages Kirthaven and Thundermar. Horde players CANNOT interact with the hatchlings to initiate pet battle due to faction alignment, any attempts will only attack them. If you absolutely want to get this pet with a Horde character, they can appear as secondary pets near the villages.",npcID=62900,pb=1,g={
 crit(21685,{achID=6586,id=88,pb=1})}}),
 p(549,{coords={
 [241]={{45.6,41.3},{46.5,25.1},{50.6,32.2},{56.6,71},{65.5,58},{71.6,66.65}}},description="Very common pet in the forests of Twilight Highlands.",npcID=62904,pb=1,g={
@@ -41083,7 +41083,7 @@ s(32124,63850,{b=1,f=7,loc=45})}}),
 q(27576,{coords={
 [241]={{29.3,25.9}}},lvl=30,qgs={45528},r=1,sourceQuests={27507,27508,27509}}),
 q(28107,{coords={
-[241]={{26,38.9}}},crs={47394,47401,47406,47407,47408,47409,47410},description="Must be on |cFFFFD700If the Key Fits|r to receieve this quest.",lvl=30,qgs={47611},r=2,sourceQuests={28108}}),
+[241]={{26,38.9}}},crs={47394,47401,47406,47407,47408,47409,47410},description="Must be on |cFFFFD700If the Key Fits|r to receive this quest.",lvl=30,qgs={47611},r=2,sourceQuests={28108}}),
 q(28094,{coords={
 [241]={{29.6,40.9}}},crs={47394,47401,47406,47407,47408,47409,47410},lvl=30,qgs={47374},r=1,sourceQuests={28097}}),
 q(27816,{coords={
@@ -52486,7 +52486,7 @@ crit(7486,{achID=2096,id=2})}}),
 ach(3217,{requireSkill=356}),
 ach(3296,{providers={{"i",134020}},requireSkill=185}),
 ach(1956,{description="The Schools of Arcane Magic books share a spawn location with generic books. Read the books in each location to start the respawn timer, which seems to be 3-4 hours.\n\nThe best time to hunt books is right after a server restart.",g={
-p(199,{awp=30003,b=1,description="This pet is obtained by doing the following:\n1. Complete the achievement 'Higher Learning'\n2. Use the newly aqcuired toy 'The Schools of Arcane Magic - Mastery' and teleport yourself to the spires atop Violet Citadel.\n3. Interact with Archmage Vargoth.",itemID=44738,npcID=32643,spellID=61472}),
+p(199,{awp=30003,b=1,description="This pet is obtained by doing the following:\n1. Complete the achievement 'Higher Learning'\n2. Use the newly acquired toy 'The Schools of Arcane Magic - Mastery' and teleport yourself to the spires atop Violet Citadel.\n3. Interact with Archmage Vargoth.",itemID=44738,npcID=32643,spellID=61472}),
 toy(43824,{b=1,crs={16128},description="If you lost the book, Rhonin will provide it to you at no charge as long as you have the achievement. This only works on the character who completed the achievement."})}}),
 ach(1010,{maps={115,118}}),
 ach(1782,{r=2,requireSkill=185,g={
@@ -56861,7 +56861,7 @@ crit(39046,{achID=1358,id=8,r=1})}}),
 q(11585,{altQuests={11586},coords={
 [114]={{41.6,53.9},{43,55.6}}},lvl=10,qgs={25273},r=1,sourceQuests={10172,28711}}),
 q(11586,{altQuests={11585},coords={
-[114]={{41.6,53.9},{43,55.6}}},description="This version of the quest is only available if you have NOT completed the quest 'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently.",lc={1,"questID",10172},lvl=10,qgs={25273},r=1,sourceQuests={28711}}),
+[114]={{41.6,53.9},{43,55.6}}},description="This version of the quest is only available if you have NOT completed the quest 'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version currently.",lc={1,"questID",10172},lvl=10,qgs={25273},r=1,sourceQuests={28711}}),
 q(11876,{coords={
 [114]={{57.1,44.3}}},lvl=10,qgs={25809},sourceQuests={11864}}),
 q(28709,{awp=40003,coords={
@@ -57659,7 +57659,7 @@ crit(21478,{achID=6615,id=2,pb=1})}}),
 h(-55,{
 i(45000,{coords={
 [118]={{71,73.8}},
-[127]={{18.5,15.7}}},description="Can be found beneath the Ironwall Dam seperating Icecrown from Crystalsong Forest.",providers={{"o",194213}},spellID=62629})}),
+[127]={{18.5,15.7}}},description="Can be found beneath the Ironwall Dam separating Icecrown from Crystalsong Forest.",providers={{"o",194213}},spellID=62629})}),
 h(-63,{
 i(45005,{coords={
 [127]={{55.6,75}}},crs={33289},spellID=62767}),
@@ -74782,7 +74782,7 @@ p(751,{coords={
 [390]={{30.2,77.6},{71.2,40.2},{76.2,60}}},description="also common as a secondary pet.",npcID=63847,pb=1,g={
 crit(20827,{achID=6350,id=5})}}),
 p(747,{coords={
-[379]={{53.7,89.2},{56,89}}},description="Commonly found as a secondary pet in Vale of Eternal Blossoms. Can also be found as primary pets outside the Gate of the August Celestials as well as occational spawns through the Vale of Eternal Blossoms.",npcID=63850,pb=1}),
+[379]={{53.7,89.2},{56,89}}},description="Commonly found as a secondary pet in Vale of Eternal Blossoms. Can also be found as primary pets outside the Gate of the August Celestials as well as occasional spawns through the Vale of Eternal Blossoms.",npcID=63850,pb=1}),
 p(383,{coords={
 [390]={{34,78.6},{72.6,27.6},{87,46.2}}},description="In commonly found by the riverbed.",npcID=61088,pb=1}),
 p(748,{description="Can be found in groups of three across the zone. However, only 1-2 groups are spawned at any time, and the Gilded Moths can only be found as primary pets. Use a target macro and consider using a Battle-Stone to get a rare quality pet.",npcID=63838,pb=1,g={
@@ -89095,7 +89095,7 @@ q(40310,{awp=70003,coords={
 h(-44,{
 prof(356,{
 faction(2097,{coords={
-[630]={{43.2,40.6}}},description="This Fisherfriend NPC is located at: |cFFFFFFFF43.2, 40.6|r north of Illidari Stand.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time. You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",npcID=120266,requireSkill=356,g={
+[630]={{43.2,40.6}}},description="This Fisherfriend NPC is located at: |cFFFFFFFF43.2, 40.6|r north of Illidari Stand.\n\nThe Fisherfriend NPCs will not always be up and only one is up at any given time. You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",npcID=120266,requireSkill=356,g={
 i(146848,{b=1,requireSkill=356}),
 toy(147308,{b=1,cost={{"i",146848,100}},requireSkill=356}),
 p(2077,{awp=70300,b=1,cost={{"i",146848,50}},itemID=152555,npcID=126579,requireSkill=356,spellID=251191}),
@@ -91717,7 +91717,7 @@ fp(1719,{coords={
 h(-44,{
 prof(356,{
 faction(2099,{coords={
-[750]={{32.4,40.9}}},description="This Fisherfriend NPC is located at: |cFFFFFFFF32.4, 40.9|r at the bottom of Thunder Totem in the boat on the water.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time. You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",npcID=120457,requireSkill=356,g={
+[750]={{32.4,40.9}}},description="This Fisherfriend NPC is located at: |cFFFFFFFF32.4, 40.9|r at the bottom of Thunder Totem in the boat on the water.\n\nThe Fisherfriend NPCs will not always be up and only one is up at any given time. You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",npcID=120457,requireSkill=356,g={
 i(146960,{b=1,requireSkill=356}),
 toy(147310,{b=1,cost={{"i",146960,100}},requireSkill=356}),
 toy(152556,{b=1,cost={{"i",146960,50}},requireSkill=356}),
@@ -92648,7 +92648,7 @@ de(1287,{awp=110207,cost={{"c",1220,750},{"g",5000000}},itemID=245456,spellID=12
 de(1235,{awp=110207,cost={{"c",1220,500},{"g",3000000}},itemID=245453,spellID=1238590})}}),
 ah(2018,{awp=70100,type="fa",g={
 hqt(45029,{coords={
-[650]={{32.2,66.8}}},description="Talk to Aviana while mounted on any Falcosaur Mount to unlock the Talon's Vengence faction.",qgs={97925}}),
+[650]={{32.2,66.8}}},description="Talk to Aviana while mounted on any Falcosaur Mount to unlock the Talon's Vengeance faction.",qgs={97925}}),
 n(115887,{coords={
 [650]={{32.4,66.8}}},pvp=1,sourceQuests={45029},g={
 i(142366,{b=1,lvl=45,minReputation={2018,0},pvp=1,spellID=230396}),
@@ -93739,7 +93739,7 @@ fp(1742,{coords={
 h(-44,{
 prof(356,{
 faction(2100,{coords={
-[634]={{90.6,10.6}}},description="This Fisherfriend NPC is located at: |cFFFFFFFF90.6, 10.6|r on Shield's Rest.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time. You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",npcID=120458,requireSkill=356,g={
+[634]={{90.6,10.6}}},description="This Fisherfriend NPC is located at: |cFFFFFFFF90.6, 10.6|r on Shield's Rest.\n\nThe Fisherfriend NPCs will not always be up and only one is up at any given time. You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",npcID=120458,requireSkill=356,g={
 i(146961,{b=1,requireSkill=356}),
 toy(147307,{b=1,cost={{"i",146961,100}},requireSkill=356}),
 toy(152574,{b=1,cost={{"i",146961,50}},requireSkill=356}),
@@ -95239,7 +95239,7 @@ fp(1841,{c={3},coords={
 h(-44,{
 prof(356,{
 faction(2101,{coords={
-[680]={{50.6,49.3}}},description="This Fisherfriend NPC is located at: |cFFFFFFFF50.6, 49.3|r in The Grand Promenade near the edge of Suramar City.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time. You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",npcID=120459,requireSkill=356,g={
+[680]={{50.6,49.3}}},description="This Fisherfriend NPC is located at: |cFFFFFFFF50.6, 49.3|r in The Grand Promenade near the edge of Suramar City.\n\nThe Fisherfriend NPCs will not always be up and only one is up at any given time. You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",npcID=120459,requireSkill=356,g={
 i(146962,{b=1,requireSkill=356}),
 toy(147311,{b=1,cost={{"i",146962,100}},requireSkill=356}),
 i(133717,{cost={{"i",146962,25}},f=55,lvl=39,requireSkill=356,spellID=201820,sym={{"fill"}}}),
@@ -97509,7 +97509,7 @@ fp(1847,{c={3},coords={
 h(-44,{
 prof(356,{
 faction(2098,{coords={
-[641]={{53.4,72.8}}},description="This Fisherfriend NPC is located at: |cFFFFFFFF53.4, 72.8|r in Lorlathil.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time. You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",npcID=120456,requireSkill=356,g={
+[641]={{53.4,72.8}}},description="This Fisherfriend NPC is located at: |cFFFFFFFF53.4, 72.8|r in Lorlathil.\n\nThe Fisherfriend NPCs will not always be up and only one is up at any given time. You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",npcID=120456,requireSkill=356,g={
 i(146959,{b=1,requireSkill=356}),
 toy(147309,{b=1,cost={{"i",146959,100}},requireSkill=356}),
 r(251258,{awp=70300,b=1,cost={{"i",146959,50}},itemID=152565,lvl=10,requireSkill=356,skillID=2542}),
@@ -99777,7 +99777,7 @@ mnt(253660,{b=1,itemID=152903,lvl=10}),
 crit(37647,{achID=12078,id=20})}}),
 n(126196,{coords={
 [885]={{72.5,67.5}}},g={
-cq(79373,{awp=100205,b=1,c={9},description="The grimoire only drops when Radix is in stasis and you have to rightclick to activate him.\nIf Radix is already active and has no loot, not even greys, then you cant loot the grimoire for this day.",itemID=212778,lvl=11,spellID=433076})}}),
+cq(79373,{awp=100205,b=1,c={9},description="The grimoire only drops when Radix is in stasis and you have to rightclick to activate him.\nIf Radix is already active and has no loot, not even greys, then you can't loot the grimoire for this day.",itemID=212778,lvl=11,spellID=433076})}}),
 n(127706,{coords={
 [885]={{65.4,81.4}}},cost={{"i",153226,1}},description="In order to reach this rare you must use the Observer's Locus Resonator, purchaseable from Orix the All-Seer, use someone else's portal, or use an item like Falling Flame with a Goblin Glider to help you land in the correct place.",isDaily=1,questID=48971,g={
 toy(153293,{b=1}),
@@ -117626,7 +117626,7 @@ o(326417,{coords={
 [1355]={{50.6,50}}},questID=55955,type="AsSubGenericObject",g={
 crit(45207,{achID=13549,id=1,providers={{"o",326417}}})}}),
 o(326401,{coords={
-[1355]={{38.7,74.4}}},description="Use a |cFFFFD700Goblin Glider|r, |cFFFFD700Deepcoral Pod|r, or fly ontop of the rocks.",questID=55950,type="AsSubGenericObject",g={
+[1355]={{38.7,74.4}}},description="Use a |cFFFFD700Goblin Glider|r, |cFFFFD700Deepcoral Pod|r, or fly on top of the rocks.",questID=55950,type="AsSubGenericObject",g={
 crit(45198,{achID=13549,id=1,providers={{"o",326401}}})}}),
 o(326418,{coords={
 [1355]={{64.3,33.3}}},questID=55943,type="AsSubGenericObject",g={
@@ -119485,8 +119485,9 @@ i(199202,{awp=90205,b=1,lvl=60,rwp=100000,u=2})}}),
 h(-58,{
 n(169524,{coords={
 [1670]={{61.7,72.3}}},g={
-i(180970,{b=1,description="Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.5)|r."}),
-i(186684,{awp=90100,collectible=false,f=200,spellID=354583})}}),
+i(186684,{awp=90100,collectible=false,f=200,spellID=354583}),
+de(28110,{awp=120105,cost={{"c",1813,200}},itemID=284216,spellID=1315492}),
+i(180970,{b=1,description="Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.5)|r."})}}),
 n(176064,{coords={
 [1670]={{47.6,77.2}}},sym={{"select","npcID",160470},{"isnt","repeatable"},{"pop"}}}),
 n(176368,{coords={
@@ -126168,7 +126169,7 @@ p(2891,{b=1,itemID=180584,npcID=171117,spellID=333794}),
 crit(48802,{achID=14310,id=4})}}),
 n(160821,{coords={
 [1525]={{38.6,72}}},cost={{"i",173939,1}},description="To summon Worldedge Gorger, you need to use |cff1eff00Enticing Anima|r to light Worldedge Braziers. |cff1eff00Enticing Anima|r drops from the aberrations that spawn along the river.",isDaily=1,questID=58259,g={
-i(180583,{b=1,description="To have a chance for this item to drop, you may need to complete the The Endmire Quest (/ATT quest:60480). Better safe than sorry, the Quest only takes 1 minute to do.",spellID=335102}),
+i(180583,{b=1,description="To have a chance for this item to drop, you may need to complete The Endmire Quest (/ATT quest:60480). Better safe than sorry, the Quest only takes 1 minute to do.",spellID=335102}),
 crit(48805,{achID=14310,id=6})}})}),
 h(-55,{
 n(181660,{awp=90105,coords={
@@ -129944,7 +129945,7 @@ crit(53071,{achID=15513,id=27})}}),
 o(375188,{coords={
 [1970]={{47.68,34.48}}},description="Requires Sopranian Understanding and Chapter 6.",questID=65343,sym={{"select","objectID",375746}}}),
 o(375382,{coords={
-[1970]={{56.8,64.2}}},description="To open it you need to pick up a Jiro Hammer(189768). Ontop of the rock there is a repair tool that you can use to trade with the nearby Jiros(Hiu Fi 185151) for a Jiro Hammer.",questID=65489,g={
+[1970]={{56.8,64.2}}},description="To open it you need to pick up a Jiro Hammer(189768). On top of the rock there is a repair tool that you can use to trade with the nearby Jiros(Hiu Fi 185151) for a Jiro Hammer.",questID=65489,g={
 crit(53054,{achID=15331,id=14}),
 crit(53054,{achID=15513,id=14})}}),
 o(370140,{coords={
@@ -129994,7 +129995,7 @@ i(189863,{b=1}),
 crit(53016,{achID=15331,id=9}),
 crit(53016,{achID=15513,id=9})}}),
 o(375405,{coords={
-[1970]={{49.8,87.3}}},description="Jumping Puzzle, ontop of the tree ring.",questID=65503,g={
+[1970]={{49.8,87.3}}},description="Jumping Puzzle, on top of the tree ring.",questID=65503,g={
 i(189863,{b=1}),
 crit(53052,{achID=15331,id=12}),
 crit(53052,{achID=15513,id=12})}}),
@@ -130042,13 +130043,13 @@ i(190339,{b=1,f=55,spellID=367293}),
 crit(53062,{achID=15331,id=18}),
 crit(53062,{achID=15513,id=18})}}),
 o(375481,{coords={
-[1970]={{60.8,42.9}}},description="You need flying/teleport to get here, ontop of the pillar.",questID=65542,g={
+[1970]={{60.8,42.9}}},description="You need flying/teleport to get here, on top of the pillar.",questID=65542,g={
 cq(65538,{b=1,itemID=190098,spellID=366735,g={
 crit(53294,{achID=15508,id=9})}}),
 crit(53064,{achID=15331,id=20}),
 crit(53064,{achID=15513,id=20})}}),
 o(375485,{coords={
-[1970]={{52.8,71.4}}},description="Jumping Puzzle. Go around to get ontop of the rock behind the treasure and jump down.",questID=65546,g={
+[1970]={{52.8,71.4}}},description="Jumping Puzzle. Go around to get on top of the rock behind the treasure and jump down.",questID=65546,g={
 s(169558,190952,{f=1,lvl=60}),
 crit(53067,{achID=15331,id=23}),
 crit(53067,{achID=15513,id=23})}}),
@@ -130063,7 +130064,7 @@ n(185261,{coords={
 [2029]={{31.3,65}}},crs={184329,184485},description="Gather 60 Cosmic energy and go to Interior Locus then use Repertory Locus.",isWeekly=1,questID=65532,sourceQuests={65344},g={
 i(189179,{description="Select 4th option, 'Restore Genesis Potencies'."})}})}}),
 o(375493,{coords={
-[2027]={{65.4,47.1}}},description="Available inside the Blooming Foundary (63.2, 73.1) during Glimmercanes Questline (Need Sopranian Understanding). You need to collect 5 Pollen Cloud buffs (Green Clouds).",questID=65566,g={
+[2027]={{65.4,47.1}}},description="Available inside the Blooming Foundry (63.2, 73.1) during Glimmercanes Questline (Need Sopranian Understanding). You need to collect 5 Pollen Cloud buffs (Green Clouds).",questID=65566,g={
 cq(65525,{b=1,itemID=190058,spellID=366695,g={
 crit(53287,{achID=15508,id=1})}}),
 crit(53069,{achID=15331,id=25}),
@@ -130077,7 +130078,7 @@ o(375281,{coords={
 crit(52970,{achID=15331,id=8}),
 crit(52970,{achID=15513,id=8})}}),
 o(375483,{coords={
-[1970]={{34,67.6}}},description="Jumping Puzzle, climb ontop of the slumbering vault in Haven.",questID=65543,g={
+[1970]={{34,67.6}}},description="Jumping Puzzle, climb on top of the slumbering vault in Haven.",questID=65543,g={
 i(189863,{b=1}),
 i(190941,{b=1,f=55,spellID=368389}),
 crit(53065,{achID=15331,id=21}),
@@ -130090,7 +130091,7 @@ i(189863,{b=1}),
 crit(52964,{achID=15331,id=2}),
 crit(52964,{achID=15513,id=2})}}),
 o(374976,{coords={
-[1970]={{52.7,63}}},description="The Broken Automa next to chest will give you sound queues, press the remaning 4 Broken Consonoles in the correct order. With your back against the entrance:\nTOP RIGHT\nDOWN LEFT\nDOWN RIGHT\nTOP LEFT.",questID=65270,g={
+[1970]={{52.7,63}}},description="The Broken Automa next to chest will give you sound cues, press the remaining 4 Broken Consoles in the correct order. With your back against the entrance:\nTOP RIGHT\nDOWN LEFT\nDOWN RIGHT\nTOP LEFT.",questID=65270,g={
 i(189863,{b=1}),
 crit(52968,{achID=15331,id=6}),
 crit(52968,{achID=15513,id=6})}}),
@@ -130126,7 +130127,7 @@ o(375950,{coords={
 [1970]={{34.5,49.7}}},repeatable=1,g={
 i(189171)}}),
 o(375974,{coords={
-[1970]={{58.7,89.8},{77.4,45.4},{77.5,59},{77.6,60.4}}},description="Spawns in multple places.",repeatable=1,g={
+[1970]={{58.7,89.8},{77.4,45.4},{77.5,59},{77.6,60.4}}},description="Spawns in multiple places.",repeatable=1,g={
 i(189172),
 i(189441,{b=1,spellID=364521})}}),
 o(375290,{coords={
@@ -130158,7 +130159,7 @@ o(375403,{coords={
 [1970]={{42,34.2},{50.4,41.2},{52.8,45.8},{53.4,25.8},{64.4,63.4}}},crs={185265,185502},description="Talk to this chest multiple times and kill add waves.",questID=65501,repeatable=1,g={
 i(189474,{b=1,spellID=364521})}}),
 o(375404,{coords={
-[1970]={{60,25.8},{60.9,37.9},{61.4,17.6},{63.2,26},{64.8,33.7},{66,26.9}}},cost={{"i",190197,1}},description="Key fragements drops in the area from mobs Sandworn Chest Key Fragment(190198)",questID=65611,repeatable=1,g={
+[1970]={{60,25.8},{60.9,37.9},{61.4,17.6},{63.2,26},{64.8,33.7},{66,26.9}}},cost={{"i",190197,1}},description="Key fragments drop in the area from mobs Sandworn Chest Key Fragment(190198)",questID=65611,repeatable=1,g={
 i(190189,{b=2,lvl=60}),
 toy(190734,{b=1,lvl=11}),
 cq(65478,{b=1,itemID=189713,spellID=366292}),
@@ -135511,7 +135512,7 @@ crit(55400,{achID=16446,coords={
 [2023]={{59,75.2}}},id=14})}}),
 n(187219,{description="Spawns during the Aylaag Caravan escort from River Camp to Eaglewatch Outpost.",isDaily=1,g={
 crit(56081,{achID=16677,id=20})}}),
-n(196350,{description="Spawns during the Aylaag Caravan escort from Eaglewatch Outlook to Aylaag Outpout.",isDaily=1,g={
+n(196350,{description="Spawns during the Aylaag Caravan escort from Eaglewatch Outpost to Aylaag Outpost.",isDaily=1,g={
 crit(56096,{achID=16677,id=35})}}),
 n(191950,{coords={
 [2023]={{49.7,68.7},{50.5,70.2},{52.1,70.5},{52.7,65.8},{53.1,72},{53.77,67.45},{54.1,66.9},{54.6,69.4},{59.6,68}}},description="Only available if the Aylaag Camp is stationed at the south east.\nRequires 5 Enriched Soil used on the mushroom in the cave at 59.71, 68.10 to spawn this rare. The Enriched Soil can be looted from piles of dirt scattered around the bottom of the lake in Mirror of the Sky and underwater in the surrounding area. The coordinates indicate possible spots for the Dirt Piles.",isDaily=1,questID=73971,g={
@@ -140953,7 +140954,7 @@ q(74903,{lvl=70,qss={204253},r=1,g={
 crit(58301,{achID=17315,id=8})}})}),
 h(-55,{
 r(403018,{b=1,cost={{"i",204340,30}},itemID=204073,requireSkill=185,skillID=2824}),
-i(202252,{b=1,cost={{"i",3927,200}},crs={202982},description="Interact with Recipe Rat. It will only continue negotiations with enough Fine Aged Cheddar. Beware the rat will keep eating even when not negotatiating.\nIt is also possible to continue picking up and using the rat every 5 minutes while within the Vault to obtain scraps without using cheese.",spellID=404583,g={
+i(202252,{b=1,cost={{"i",3927,200}},crs={202982},description="Interact with Recipe Rat. It will only continue negotiations with enough Fine Aged Cheddar. Beware the rat will keep eating even when not negotiating.\nIt is also possible to continue picking up and using the rat every 5 minutes while within the Vault to obtain scraps without using cheese.",spellID=404583,g={
 i(204340,{b=1,f=55,spellID=404592})}}),
 mnt(374194,{b=1,cost={{"i",204374,1},{"i",204367,1}},itemID=192790,lvl=10}),
 i(204367,{b=1,cost={{"i",204372,1},{"i",204366,1}},f=55,lvl=60,spellID=405795}),
@@ -143441,6 +143442,7 @@ crit(56449,{achID=16724,awp=100005,id=4,providers={{"i",196964}}})}}),
 mm(197090,{b=1,cost={{"i",188658,20},{"i",201399,6},{"c",2003,750}},minReputation={2518,5},questID=69290,g={
 crit(56362,{achID=16708,awp=100005,id=1,providers={{"i",197090}}})}}),
 i(200970,{b=1,cost={{"c",2003,150}},f=51,lvl=70,minReputation={2518,5}}),
+de(28111,{awp=120105,cost={{"c",2003,500}},itemID=284579,minReputation={2518,5},spellID=1316298}),
 mm(197346,{b=1,cost={{"i",188658,20},{"i",201399,6},{"c",2003,750}},minReputation={2518,5},questID=69547,g={
 crit(56248,{achID=16696,awp=100005,id=1,providers={{"i",197346}}})}}),
 mm(197013,{b=1,cost={{"i",190316,1},{"c",2003,400}},minReputation={2518,6},questID=69213,g={
@@ -150043,7 +150045,7 @@ o(421070,{minReputation={2570,3},g={
 i(212755,{minReputation={2570,3}})}}),
 crit(67698,{achID=40311,id=7})}}),
 q(79469,{coords={
-[2215]={{61.9,32}}},description="Duskrise Acerage Keyflame.",isWeekly=1,minReputation={2570,3},g={
+[2215]={{61.9,32}}},description="Duskrise Acreage Keyflame.",isWeekly=1,minReputation={2570,3},g={
 i(215467,{minReputation={2570,3},spellID=436133}),
 crit(67694,{achID=40311,id=3})}}),
 q(78657,{coords={
@@ -151834,7 +151836,7 @@ crit(69692,{achID=40848,id=1})}})}}),
 o(444804,{description="Spawns all over the zone only when Beledar shifts into its Void state.",maps={2215}}),
 o(444799,{description="Spawns all over the zone only when Beledar shifts into its Void state.",maps={2215}}),
 o(453374,{coords={
-[2215]={{59.5,59.7}}},description="Inside the cave. Interract with the book and start the ritual. Survive the attack and kill the shadows.",providers={{"o",453359}},questID=83284,g={
+[2215]={{59.5,59.7}}},description="Inside the cave. Interact with the book and start the ritual. Survive the attack and kill the shadows.",providers={{"o",453359}},questID=83284,g={
 i(225693,{b=1,f=53,lvl=70,spellID=455640}),
 crit(69694,{achID=40848,id=3})}}),
 o(437211,{coords={
@@ -155030,7 +155032,7 @@ s(288215,239469,{b=1,f=6,loc=41,lvl=80}),
 hqtbr(90699,{isWeekly=1,maxReputation={2658,20}}),
 crit(106333,{achID=42761,id=3})}}),
 n(245998,{coords={
-[2371]={{75.2,31}}},crs={246163},description="You need to interract with Spectral Lantern, Dewminder, Earthy Succulent, and Windcatcher inside The Oasis. Their positions are marked on the minimap.\nOnce you have obtained the buffs, you can summon Heka'tamos at the Brazier of Elemental Union near his spawn point.",isDaily=1,questID=91276,g={
+[2371]={{75.2,31}}},crs={246163},description="You need to interact with Spectral Lantern, Dewminder, Earthy Succulent, and Windcatcher inside The Oasis. Their positions are marked on the minimap.\nOnce you have obtained the buffs, you can summon Heka'tamos at the Brazier of Elemental Union near his spawn point.",isDaily=1,questID=91276,g={
 p(4846,{b=1,itemID=245272,npcID=245504,spellID=1238338}),
 i(246065,{b=1,f=52,lvl=80}),
 i(246064,{b=1,f=51,lvl=80}),
@@ -159779,7 +159781,7 @@ s(284411,235826,{f=4,loc=43,lvl=80}),
 s(284413,235828,{b=1,f=28,lvl=80}),
 s(284412,235827,{f=5,loc=42,lvl=80}),
 crit(71611,{achID=41216,id=20})}})}),
-h(-411,{description="Frequently around the zone a pile of scrap will be marked on the map, ready for excavation. Once started, there is a two minute timer to dig up as much as possible, clearing obstables and dodging projectiles. Renown unlocks new drops and efficiency upgrades, and a rare mob can sometimes spawn at max excavation progress.",g={
+h(-411,{description="Frequently around the zone a pile of scrap will be marked on the map, ready for excavation. Once started, there is a two minute timer to dig up as much as possible, clearing obstacles and dodging projectiles. Renown unlocks new drops and efficiency upgrades, and a rare mob can sometimes spawn at max excavation progress.",g={
 h(-12,{crs={234344,234345,234346,234347,234348,234349,234350},g={
 ach(41590,{providers={{"n",233877}}}),
 ach(41591,{providers={{"n",233877}}}),

@@ -2603,7 +2603,7 @@ i(268694,{e=1793,f=55,spellID=1283386}),
 s(222939,226127,{b=1,e=1793,f=10})}})}})}}),
 h(-565,{awp=110105,e=451,maps={2447},rwp=110107,u=2,g={
 h(-12,{e=451,u=2,g={
-ach(41995,{description="Die 30 times within one match solo or collectively as a group THEN complete the fight and loot the prize chest. The arena will will with 15 gravestones to the left and right of the entrance to count your progress.",e=451,providers={{"s",1231766}},u=2}),
+ach(41995,{description="Die 30 times within one match solo or collectively as a group THEN complete the fight and loot the prize chest. The arena will fill with 15 gravestones to the left and right of the entrance to count your progress.",e=451,providers={{"s",1231766}},u=2}),
 ach(42002,{cost={{"i",237774,5}},e=451,providers={{"s",1231828}},u=2}),
 ach(42003,{cost={{"i",237774,10}},e=451,providers={{"s",1231829}},u=2}),
 ach(42004,{cost={{"i",237774,15}},e=451,providers={{"s",1231831}},u=2}),
@@ -8886,7 +8886,7 @@ i(21746,{b=1,f=55}),
 crit(1993,{achID=914,awp=30002,e=18,id=4})}})),
 q(8677,_.ResolveQuestData({aqd=
 {maxReputation={469,42000}},coords={
-[85]={{52.1,59.8}}},description="The Elder is on the southern end of the central upper platform in Orgrimmar near the flight master. A visual clue for flying Alliance players is to look for the towering gate seperating Valley of Strength and the Drag.",e=18,hqd=
+[85]={{52.1,59.8}}},description="The Elder is on the southern end of the central upper platform in Orgrimmar near the flight master. A visual clue for flying Alliance players is to look for the towering gate separating Valley of Strength and the Drag.",e=18,hqd=
 {maxReputation={67,42000}},isYearly=1,qgs={15579},g={
 i(21100,{b=1}),
 i(21746,{b=1,f=55}),
@@ -17663,7 +17663,7 @@ n(143029,{coords={
 [862]={{54.3,54.5}}},e=242,g={
 i(225996,{e=242,f=55,spellID=11629})}}),
 o(455761,{coords={
-[862]={{54.2,54.2}}},description="Go to Zuldazar in Zandalar. At 54.3, 54.5 you will find Nikto. Buy Clam Digger and head upwards to 54.2, 54.2. Interract with Gerald and give him the drink.",e=242,providers={{"i",225996}},g={
+[862]={{54.2,54.2}}},description="Go to Zuldazar in Zandalar. At 54.3, 54.5 you will find Nikto. Buy Clam Digger and head upwards to 54.2, 54.2. Interact with Gerald and give him the drink.",e=242,providers={{"i",225996}},g={
 o(455768,{coords={
 [862]={{54.2,54.2}}},e=242,questID=83790,g={
 i(226200,{b=1,e=242,spellID=420213})}})}}),

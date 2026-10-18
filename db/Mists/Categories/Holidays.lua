@@ -4168,7 +4168,7 @@ q(8648,_.ResolveQuestData({aqd=
 crit(1993,{achID=914,awp=30002,e=18,id=4})}})),
 q(8677,_.ResolveQuestData({aqd=
 {maxReputation={469,42000}},coords={
-[85]={{52.1,59.8}}},description="The Elder is on the southern end of the central upper platform in Orgrimmar near the flight master. A visual clue for flying Alliance players is to look for the towering gate seperating Valley of Strength and the Drag.",e=18,hqd=
+[85]={{52.1,59.8}}},description="The Elder is on the southern end of the central upper platform in Orgrimmar near the flight master. A visual clue for flying Alliance players is to look for the towering gate separating Valley of Strength and the Drag.",e=18,hqd=
 {maxReputation={67,42000}},isYearly=1,qgs={15579},g={
 crit(1991,{achID=914,awp=30002,e=18,id=2})}})),
 q(8678,_.ResolveQuestData({aqd=

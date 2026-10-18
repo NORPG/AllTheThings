@@ -2381,7 +2381,7 @@ q(85666,{coords={
 [2347]={{53,76.1}}},lvl=70,providers={{"o",487851}}})}),
 h(-56,{
 o(455487,{coords={
-[2347]={{46,46.1}}},description="Located ontop of pillar, accessible after killing last boss.",questID=83681,g={
+[2347]={{46,46.1}}},description="Located on top of pillar, accessible after killing last boss.",questID=83681,g={
 crit(69552,{achID=40814,id=1})}}),
 o(455531,{coords={
 [2347]={{50.5,46.2}}},questID=83649,g={
@@ -3710,14 +3710,7 @@ title(801,{u=2})}}),
 ach(63720,{coords={
 [2647]={{18.8,18.2},{50.3,82.6},{56.8,17.8},{58.5,21.7},{88.5,51.5}}},description="Each run randomly selects three out of five special rooms as spawn points for Hexmasks and one for the special 'Locked Room'. The final room will be empty.",providers={{"o",672624},{"o",672785},{"o",672788}}}),
 ach(63717,{
-title(797),
-crit(117170,{achID=63717,id=8,questID=98610,u=1}),
-crit(117175,{achID=63717,id=13,questID=98616,u=1}),
-crit(117176,{achID=63717,id=14,questID=98617,u=1}),
-crit(117177,{achID=63717,id=15,questID=98618,u=1}),
-crit(117182,{achID=63717,id=20,questID=98624,u=1}),
-crit(117196,{achID=63717,id=34,questID=98639,u=1}),
-crit(117197,{achID=63717,id=35,questID=98641,u=1})}),
+title(797)}),
 ach(63724,{providers={{"s",1315026}}}),
 ach(63715,{rwp=120105,u=2,g={
 mnt(1314715,{itemID=283363,u=2})}}),
@@ -3834,8 +3827,9 @@ o(676626,{coords={
 [2647]={{27.3,80.9}}},questID=98609,g={
 crit(117169,{achID=63717,id=7})}}),
 o(676627,{coords={
-[2647]={{26.9,80.9}}},g={
-toy(280822)}}),
+[2647]={{26.9,80.9}}},questID=98610,g={
+toy(280822),
+crit(117170,{achID=63717,id=8})}}),
 o(676628,{coords={
 [2647]={{13.9,37.8}}},questID=98611,g={
 crit(117171,{achID=63717,id=9})}}),
@@ -3853,9 +3847,15 @@ o(676632,{coords={
 [2647]={{27.8,34.6}}},questID=98615,g={
 i(283996,{f=55,spellID=1315083}),
 crit(117174,{achID=63717,id=12})}}),
+o(676633,{coords={[2647]={{11.4,54.3}}},questID=98616,g={
+i(282718,{f=55,spellID=1314367}),
+crit(117175,{achID=63717,id=13})}}),
+o(676635,{coords={[2647]={{9.6,54.8}}},questID=98618,g={
+crit(117177,{achID=63717,id=15})}}),
 o(676636,{coords={
-[2647]={{10.5,55}}},g={
-s(316079,284182,{f=2,loc=40})}}),
+[2647]={{10.5,55}}},questID=98617,g={
+s(316079,284182,{f=2,loc=40}),
+crit(117176,{achID=63717,id=14})}}),
 o(676637,{coords={
 [2647]={{56.7,44.1},{61.5,44.7}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98619,g={
 de(27458,{itemID=284357,spellID=1315979}),
@@ -3875,6 +3875,8 @@ o(676642,{coords={
 [2647]={{22.9,12}}},questID=98623,g={
 s(316077,284180,{f=2,loc=41}),
 crit(117181,{achID=63717,id=19})}}),
+o(676643,{coords={[2647]={{46.3,11.8}}},questID=98624,g={
+crit(117182,{achID=63717,id=20})}}),
 o(676645,{coords={
 [2647]={{40.6,20.3}}},questID=98625,g={
 crit(117183,{achID=63717,id=21})}}),
@@ -3922,11 +3924,15 @@ o(676663,{coords={
 [2647]={{69.2,71}}},questID=98638,g={
 crit(117195,{achID=63717,id=33})}}),
 o(676664,{coords={
-[2647]={{66.6,51.5}}},g={
-toy(280821)}}),
+[2647]={{66.6,51.5}}},questID=98639,g={
+toy(280821),
+crit(117196,{achID=63717,id=34})}}),
 o(676666,{coords={
 [2647]={{56.7,44.1},{61.5,43.6}}},description="This Chest is hidden behind an Ice Wall, accessible through a secret underwater passage.",questID=98640,g={
 crit(117440,{achID=63717,id=43})}}),
+o(676668,{coords={[2647]={{67.2,51.5}}},questID=98641,g={
+i(283998,{f=55,spellID=1315084}),
+crit(117197,{achID=63717,id=35})}}),
 o(676759,{coords={
 [2647]={{40.6,45.4}}},description="Below the pathway.",questID=98648,g={
 crit(117198,{achID=63717,id=36})}}),
@@ -3956,6 +3962,7 @@ o(677411,{description="Can be found behind the 'Locked Doors' inside the Labyrin
 o(705929),
 o(705955,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
 o(705957,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
+o(705958),
 o(705959,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."})}),
 h(-64,{
 s(316034,284052,{f=3}),

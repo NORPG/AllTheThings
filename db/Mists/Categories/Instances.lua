@@ -8503,7 +8503,7 @@ inst(750,{coords={
 h(-12,{u=19,g={
 ach(959,{maps={75},minReputation={990,42000},u=19})}}),
 h(-31,{u=19,g={
-faction(990,{description="Reputation is obtained from killing mobs in Mount Hyjal raid.\n\nProtip: Remain in the Alliance base when it becomes abandoned as an addtional wave of mobs will spawn. Addtional waves of mobs can be triggered by moving past the boundry of the base. This also applies for the Horde base.",maps={75},u=19})}}),
+faction(990,{description="Reputation is obtained from killing mobs in the Mount Hyjal raid.\n\nProtip: Remain in the Alliance base when it becomes abandoned as an additional wave of mobs will spawn. Additional waves of mobs can be triggered by moving past the boundary of the base. This also applies for the Horde base.",maps={75},u=19})}}),
 ah(2575,{type="s",u=19,g={
 o(185557,{awp=20100,learnedAt=375,maps={329},requireSkill=186,u=19,g={
 i(23440,{awp=20003,q=3,requireSkill=186,u=19}),
@@ -20634,7 +20634,7 @@ e(324,{npcID=55308,u=42,g={
 ach(6128,{u=42,g={
 crit(18577,{achID=6169,id=1,u=42})}})}}),
 e(325,{npcID=55312,u=42,g={
-ach(6129,{description="The oozes you need for the achievement spawns through the boss fight. Four colours will spawn each time, and the remaining oozes becomes immune when the first is killed. This is fine, just make sure two of the remaining oozes matches a criteria.",u=42,g={
+ach(6129,{description="The oozes you need for the achievement spawn through the boss fight. Four colours will spawn each time, and the remaining oozes become immune when the first is killed. This is fine, just make sure two of the remaining oozes match a criterion.",u=42,g={
 crit(18495,{achID=6129,crs={55864,55867},u=42}),
 crit(18496,{achID=6129,crs={55862,55865},u=42}),
 crit(18497,{achID=6129,crs={55866,55867},u=42}),

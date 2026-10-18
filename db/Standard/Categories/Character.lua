@@ -8133,7 +8133,7 @@ q(65564,{coords={
 i(190606,{races={34},spellID=367764}),
 mnt(369666,{b=1,itemID=191123,races={34}})}})}})}}),
 h(-11,{
-n(10,{
+ra(10,{
 cl(3,{
 s(8249,20900,{awp=20003,f=6,loc=47,rwp=90105,u=2}),
 s(8248,20899,{awp=20003,f=6,loc=46,rwp=90105,u=2}),
@@ -8161,7 +8161,7 @@ cl(1,{awp=40001,g={
 s(8252,20903,{f=7,loc=47,rwp=90105,u=2}),
 s(8251,20902,{f=7,loc=46,rwp=90105,u=2}),
 s(8253,20904,{f=7,loc=42,rwp=90105,u=2})}})}),
-n(34,{awp=80001,g={
+ra(34,{awp=80001,g={
 cl(2,{
 flt(100,{
 mnt(270562,{description="Received on reaching Level 10 as a Dark Iron Dwarf Paladin.",races={34}})})})}}),
@@ -8219,7 +8219,7 @@ s(230175,232272,{b=1,c={1},f=7,loc=46,lvl=10}),
 s(230178,232275,{b=1,c={1},f=7,loc=47,lvl=10}),
 s(230171,232268,{b=1,c={1},f=7,loc=43,lvl=10}),
 s(230167,232264,{b=1,f=22,lvl=10})})}}),
-n(11,{
+ra(11,{
 cl(3,{
 s(9214,23348,{awp=20003,f=6,loc=47,rwp=90105,u=2}),
 s(9210,23344,{awp=20003,f=6,loc=46,rwp=90105,u=2}),
@@ -8244,7 +8244,7 @@ cl(1,{
 s(9295,23475,{awp=20003,f=7,loc=47,rwp=90105,u=2}),
 s(9294,23474,{awp=20003,f=7,loc=46,rwp=90105,u=2}),
 s(28831,58243,{awp=40003,f=7,loc=42,rwp=90105,u=2})})}),
-n(3,{
+ra(3,{
 cl(2,{awp=80001,g={
 flt(100,{
 mnt(270564,{c={2},description="Received on reaching Level 10 as a Dwarf Paladin.",races={3}})})}}),
@@ -8256,7 +8256,7 @@ h(-805,{awp=110002,g={
 cl(2,{
 flt(100,{
 mnt(453785,{c={2},description="Received on reaching Level 10 as an Earthen Paladin.",races={84,85}})})})}}),
-n(9,{
+ra(9,{
 flt(3,{awp=40003,g={
 s(25926,52940,{b=1,description="Former Starter Cloak for Male Goblins",f=3,races={9},rwp=70003,u=2}),
 s(25923,52937,{b=1,description="Former Starter Cloak for Female Goblins",f=3,races={9},rwp=70003,u=2})}}),
@@ -8387,11 +8387,11 @@ h(-101,{
 i(270431,{f=55,g={
 s(305118,270443,{c={1},f=8}),
 s(305119,270444,{c={1},f=21})}})})})}}),
-n(30,{awp=90105,g={
+ra(30,{awp=90105,g={
 cl(2,{
 flt(100,{
 mnt(363613,{description="Received on reaching Level 10 as a Lightforged Draenei Paladin.",races={30}})})})}}),
-n(4,{
+ra(4,{
 cl(11,{
 s(2258,6123,{f=5,loc=42,rwp=90105,u=2})}),
 cl(8,{awp=40003,g={
@@ -8404,26 +8404,26 @@ s(2257,6122,{f=7,loc=47,rwp=90105,u=2}),
 s(2256,6121,{f=7,loc=46,rwp=90105,u=2}),
 s(28832,58244,{awp=40003,f=7,loc=42,rwp=90105,u=2})})}),
 h(-807,{awp=50004,g={
-n(4,{
+flt(4,{
 s(39104,77509,{b=1,f=4,loc=45}),
 s(36895,72020,{b=1,f=4,loc=46}),
 s(36894,72019,{b=1,f=4,loc=42}),
 s(39119,77526,{b=1,f=4,loc=43})})}}),
-n(6,{awp=40003,g={
+ra(6,{awp=40003,g={
 cl(2,{
 flt(100,{
 mnt(69826,{c={2},description="Received on reaching Level 17 as a Tauren Paladin.",races={6}}),
 mnt(69820,{c={2},description="Received on reaching Level 10 as a Tauren Paladin.",races={6}})}),
 s(25764,52549,{f=7,loc=46,rwp=90105,u=2}),
 s(28836,58248,{f=7,loc=42,rwp=90105,u=2})})}}),
-n(5,{
+ra(5,{
 cl(8,{
 s(2270,6140,{f=4,loc=42,rwp=90105,u=2})}),
 cl(5,{
 s(2271,6144,{f=4,loc=42,rwp=90105,u=2})}),
 cl(9,{
 s(2263,6129,{f=4,loc=42,rwp=90105,u=2})})}),
-n(22,{
+ra(22,{
 cl(11,{awp=40003,g={
 s(24261,49565,{f=5,loc=44}),
 s(24260,49564,{f=5,loc=47}),
@@ -8461,7 +8461,7 @@ s(24273,49577,{f=7,loc=45}),
 s(24275,49579,{f=7,loc=47}),
 s(24272,49576,{f=7,loc=46}),
 s(24274,49578,{f=7,loc=42})}})}),
-n(31,{awp=80105,g={
+ra(31,{awp=80105,g={
 cl(2,{
 flt(100,{
 mnt(290608,{description="Received on reaching Level 10 as a Zandalari Paladin.",races={31}})})})}}),

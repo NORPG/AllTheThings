@@ -5518,7 +5518,7 @@ i(18687,{cost=1500000,q=1})}})}),
 h(-63,{
 i(13140,{b=1,crs={7114,7118,7120,9862},lvl=49,q=1,rwp=40003}),
 i(11515,{b=1,description="In order for this to drop by killing mobs, you must have the Cenarion Beacon in your bags.",providers={{"i",11511}},q=1,rwp=40003}),
-i(21377,{b=1,crs={7153,7154,7155,7156,7157,7158,9462,9464,14342},description="Drops commmonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
+i(21377,{b=1,crs={7153,7154,7155,7156,7157,7158,9462,9464,14342},description="Drops commonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
 i(11668,{b=1,coords={
 [1448]={{39.6,22.2}}},crs={10648},lvl=49,q=1,r=2,rwp=40003}),
 i(20768,{crs={7092,7093,14345},q=1,sym={{"select","itemID",20769}}}),
@@ -9872,7 +9872,7 @@ i(18665,{c={5},crs={7461,7463},f=53,lvl=60,q=4,rwp=40003}),
 i(12433,{crs={7450,7451,7452,7453,7454},providers={{"i",12384}},q=1,rwp=40003}),
 i(12431,{crs={7438,7439,7440,7441,7442,10738,10916},providers={{"i",12384}},q=1,rwp=40003}),
 i(12820,{crs={7438,7439,7440,7441,7442,10199,10738,10916},f=55,lvl=45,q=1}),
-i(21383,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},description="Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
+i(21383,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},description="Drops commonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
 i(21928,{crs={7430,7431,7432,7433,7434,7443,7444,7445,7446},q=1})})}})}}),
 m(1415,{isContinent=1,lore="The Eastern Kingdoms are the eastern continents on the world of Azeroth. The Eastern Kingdoms is made up from a group of smaller continents (Azeroth, Khaz Modan and Lordaeron) formed from the original continent of Kalimdor following the Great Sundering. The Eastern Kingdoms lie to the east of the Great Sea and to the west of the Forbidding Sea. The central part of the Eastern Kingdoms is dominated by the Khaz Mountains and the Redridge Mountains. Both cover several zones.",maps={1463},g={
 h(-12,{

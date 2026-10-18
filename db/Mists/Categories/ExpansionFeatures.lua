@@ -3058,7 +3058,7 @@ i(62468,{b=1,cost={{"c",391,125}},f=53,lvl=85,minReputation={1177,42000},q=4})}}
 h(-63,{
 p(278,{b=1,crs={47676},itemID=64403,npcID=48641,q=3,spellID=90637})})}})}}),
 x(5,{awp=50004,u=50,g={
-h(-416,{awp=50300,description="During 5.3 a big battle occured in Barrens.",maps={1,10,390},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,rwp=50400,u=2,g={
+h(-416,{awp=50300,description="During 5.3 a big battle occurred in Barrens.",maps={1,10,390},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,rwp=50400,u=2,g={
 h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2,g={
 ach(8307,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,r=1,u=2,g={
 title(228,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,r=1,u=2})}}),

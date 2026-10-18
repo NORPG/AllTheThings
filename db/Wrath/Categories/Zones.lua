@@ -6257,7 +6257,7 @@ i(18687,{cost=1500000,q=1})}})}),
 h(-63,{
 i(13140,{b=1,crs={7114,7118,7120,9862},lvl=49,q=1,rwp=40003}),
 i(11515,{b=1,description="In order for this to drop by killing mobs, you must have the Cenarion Beacon in your bags.",providers={{"i",11511}},q=1,rwp=40003}),
-i(21377,{b=1,crs={7153,7154,7155,7156,7157,7158,9462,9464,14342},description="Drops commmonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
+i(21377,{b=1,crs={7153,7154,7155,7156,7157,7158,9462,9464,14342},description="Drops commonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
 i(11668,{b=1,coords={
 [1448]={{39.6,22.2}}},crs={10648},lvl=49,q=1,r=2,rwp=40003}),
 i(20768,{crs={7092,7093,14345},q=1,sym={{"select","itemID",20769}}}),
@@ -10658,7 +10658,7 @@ i(18665,{c={5},crs={7461,7463},f=53,lvl=60,q=4,rwp=40003}),
 i(12433,{crs={7450,7451,7452,7453,7454},providers={{"i",12384}},q=1,rwp=40003}),
 i(12431,{crs={7438,7439,7440,7441,7442,10738,10916},providers={{"i",12384}},q=1,rwp=40003}),
 i(12820,{crs={7438,7439,7440,7441,7442,10199,10738,10916},f=55,lvl=45,q=1}),
-i(21383,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},description="Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
+i(21383,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},description="Drops commonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
 i(21928,{crs={7430,7431,7432,7433,7434,7443,7444,7445,7446},q=1})})}})}}),
 m(1415,{icon=236759,isContinent=1,lore="The Eastern Kingdoms are the eastern continents on the world of Azeroth. The Eastern Kingdoms is made up from a group of smaller continents (Azeroth, Khaz Modan and Lordaeron) formed from the original continent of Kalimdor following the Great Sundering. The Eastern Kingdoms lie to the east of the Great Sea and to the west of the Forbidding Sea. The central part of the Eastern Kingdoms is dominated by the Khaz Mountains and the Redridge Mountains. Both cover several zones.",maps={1463},g={
 h(-12,{
@@ -30337,7 +30337,7 @@ crit(7449,{achID=2094,id=1,providers={{"i",43710}},u=30})}}),
 ach(3217,{requireSkill=356,u=30}),
 ach(3296,{providers={{"i",46349}},requireSkill=185,u=30}),
 ach(1956,{description="The Schools of Arcane Magic books share a spawn location with generic books. Read the books in each location to start the respawn timer, which seems to be 3-4 hours.\n\nThe best time to hunt books is right after a server restart.",u=30,g={
-p(199,{awp=30003,b=1,description="This pet is obtained by doing the following:\n1. Complete the achievement 'Higher Learning'\n2. Use the newly aqcuired toy 'The Schools of Arcane Magic - Mastery' and teleport yourself to the spires atop Violet Citadel.\n3. Interact with Archmage Vargoth.",itemID=44738,petTypeID=7,q=3,spellID=61472,u=30}),
+p(199,{awp=30003,b=1,description="This pet is obtained by doing the following:\n1. Complete the achievement 'Higher Learning'\n2. Use the newly acquired toy 'The Schools of Arcane Magic - Mastery' and teleport yourself to the spires atop Violet Citadel.\n3. Interact with Archmage Vargoth.",itemID=44738,petTypeID=7,q=3,spellID=61472,u=30}),
 toy(43824,{b=1,crs={16128},description="If you lost the book, Rhonin will provide it to you at no charge as long as you have the achievement. This only works on the character who completed the achievement.",q=3,u=30})}}),
 ach(1010,{maps={115,118},u=30}),
 ach(1782,{r=2,requireSkill=185,u=30}),
@@ -34686,7 +34686,7 @@ s(171966,38239,{b=1,f=28,q=3,u=30})}}),
 q(11585,{altQuests={11586},coords={
 [114]={{41.6,53.9},{43,55.6}}},qgs={25273},r=1,sourceQuests={10172},u=30}),
 q(11586,{altQuests={11585},coords={
-[114]={{41.6,53.9},{43,55.6}}},description="This version of the quest is only available if you have NOT completed the quest 'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently.",lc={1,"questID",10172},qgs={25273},r=1,u=30}),
+[114]={{41.6,53.9},{43,55.6}}},description="This version of the quest is only available if you have NOT completed the quest 'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version currently.",lc={1,"questID",10172},qgs={25273},r=1,u=30}),
 q(11876,{coords={
 [114]={{57.1,44.3}}},qgs={25809},sourceQuests={11864},u=30}),
 q(11660,{coords={
@@ -35452,7 +35452,7 @@ fp(336,{coords={
 h(-55,{u=30,g={
 i(45000,{coords={
 [118]={{71,73.8}},
-[127]={{18.5,15.7}}},description="Can be found beneath the Ironwall Dam seperating Icecrown from Crystalsong Forest.",providers={{"o",194213}},q=1,u=31})}}),
+[127]={{18.5,15.7}}},description="Can be found beneath the Ironwall Dam separating Icecrown from Crystalsong Forest.",providers={{"o",194213}},q=1,u=31})}}),
 h(-63,{u=30,g={
 i(45005,{coords={
 [127]={{55.6,75}}},crs={33289},q=1,u=31}),

@@ -2679,7 +2679,7 @@ n(2172,{coords={
 [1439]={{34.4,89},{35,86},{36.6,90.2},{37,91.4},{38.2,89.4},{38.8,93.8},{40.6,93},{41.2,90.6}}}})}),
 h(-56,{
 i(209836,{b=1,c={2},coords={
-[1439]={{56.2,26.5}}},description="Climb the tower in Darkshore, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",providers={{"o",409289}},q=1,rwp=20001,u=1605}),
+[1439]={{56.2,26.5}}},description="Climb the tower in Darkshore, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterrupted looting time.",providers={{"o",409289}},q=1,rwp=20001,u=1605}),
 o(13359,{coords={
 [1439]={{58.9,21.2}}},description="Can be found scattered around the Ruins of Mathystra. Rarely spawns a Ghost Saber which can be tamed by a Hunter and can also drop a Glowing Cat Figurine.",g={
 i(5332,{b=1,crs={3619},q=1})}}),
@@ -4400,7 +4400,7 @@ i(18687,{cost=1500000,q=1})}})}),
 h(-63,{
 i(13140,{b=1,crs={7114,7118,7120,9862},lvl=49,q=1,rwp=40003}),
 i(11515,{b=1,description="In order for this to drop by killing mobs, you must have the Cenarion Beacon in your bags.",providers={{"i",11511}},q=1,rwp=40003}),
-i(21377,{b=1,crs={7153,7154,7155,7156,7157,7158,9462,9464,14342},description="Drops commmonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
+i(21377,{b=1,crs={7153,7154,7155,7156,7157,7158,9462,9464,14342},description="Drops commonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
 i(11668,{b=1,coords={
 [1448]={{39.6,22.2}}},crs={10648},lvl=49,q=1,r=2,rwp=40003}),
 i(20768,{crs={7092,7093,14345},q=1,sym={{"select","itemID",20769}}}),
@@ -7817,7 +7817,7 @@ q(866,{coords={
 qo(1,{providers={{"i",5056}},requireSkill=182}),
 s(158141,5341,{b=1,f=5,loc=42,q=2,requireSkill=182})}}),
 q(78680,{c={9},coords={
-[1413]={{49.2,57.2}}},description="Climb each of the towers, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",lvl=20,maps={1433,1439},qgs={6247},rwp=20001,sourceQuests={1740},u=1605,g={
+[1413]={{49.2,57.2}}},description="Climb each of the towers, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterrupted looting time.",lvl=20,maps={1433,1439},qgs={6247},rwp=20001,sourceQuests={1740},u=1605,g={
 qo(1,{coords={
 [1433]={{80.2,49.5}}},providers={{"i",210765},{"o",411710}},u=1605}),
 qo(2,{coords={
@@ -8354,7 +8354,7 @@ i(5051,{coords={
 i(5020,{coords={
 [1413]={{44.4,23.6},{47.4,41.8},{53.6,40}}},crs={3272,3273,3394},q=1}),
 i(208765,{b=1,c={5},coords={
-[1413]={{55.6,27.2}}},crs={3265,3266,3267,3268},description="The hand will open when you ressurect another player.",providers={{"i",208766}},q=2,u=1605,g={
+[1413]={{55.6,27.2}}},crs={3265,3266,3267,3268},description="The hand will open when you resurrect another player.",providers={{"i",208766}},q=2,u=1605,g={
 i(205905,{b=1,c={5},f=55,q=2,u=1605,g={
 r(425215,{u=1605})}})}}),
 s(158033,5093,{awp=100107,b=1,coords={
@@ -9268,7 +9268,7 @@ i(18665,{c={5},crs={7461,7463},f=53,lvl=60,q=4,rwp=40003}),
 i(12433,{crs={7450,7451,7452,7453,7454},providers={{"i",12384}},q=1,rwp=40003}),
 i(12431,{crs={7438,7439,7440,7441,7442,10738,10916},providers={{"i",12384}},q=1,rwp=40003}),
 i(12820,{crs={7438,7439,7440,7441,7442,10199,10738,10916},f=55,lvl=45,q=1}),
-i(21383,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},description="Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
+i(21383,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},description="Drops commonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. Each turn in requires 5 Winterfall Spirit Beads. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
 i(21928,{crs={7430,7431,7432,7433,7434,7443,7444,7445,7446},q=1})})}})}}),
 m(1415,{icon=236759,isContinent=1,lore="The Eastern Kingdoms are the eastern continents on the world of Azeroth. The Eastern Kingdoms is made up from a group of smaller continents (Azeroth, Khaz Modan and Lordaeron) formed from the original continent of Kalimdor following the Great Sundering. The Eastern Kingdoms lie to the east of the Great Sea and to the west of the Forbidding Sea. The central part of the Eastern Kingdoms is dominated by the Khaz Mountains and the Redridge Mountains. Both cover several zones.",maps={1463},g={
 h(-12,{

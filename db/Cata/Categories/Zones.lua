@@ -7845,11 +7845,11 @@ qo(1,{coords={
 s(202700,52598,{b=1,f=5,loc=42,q=2}),
 s(203692,55134,{b=1,f=6,loc=43,q=2})}}),
 q(13568,{altQuests={13567,13597},awp=40003,coords={
-[1439]={{42.8,40.2}}},description="Great Moonstalker Spirit grants a buff increasing your haste by 10%.\nChoose carefuly, you can get only 1 buff.",DisablePartySync=1,qgs={33131},r=2,sourceQuests={13565,13566,13598}}),
+[1439]={{42.8,40.2}}},description="Great Moonstalker Spirit grants a buff increasing your haste by 10%.\nChoose carefully, you can get only 1 buff.",DisablePartySync=1,qgs={33131},r=2,sourceQuests={13565,13566,13598}}),
 q(13567,{altQuests={13568,13597},awp=40003,coords={
-[1439]={{43.7,40.2}}},description="Great Stag Spirit grants a buff increasing your movement speed by 10%.\nChoose carefuly, you can get only 1 buff.",DisablePartySync=1,qgs={33133},r=2,sourceQuests={13565,13566,13598}}),
+[1439]={{43.7,40.2}}},description="Great Stag Spirit grants a buff increasing your movement speed by 10%.\nChoose carefully, you can get only 1 buff.",DisablePartySync=1,qgs={33133},r=2,sourceQuests={13565,13566,13598}}),
 q(13597,{altQuests={13567,13568},awp=40003,coords={
-[1439]={{42.5,38.6}}},description="Great Thistle Bear Spirit grants a buff reducing the damage you take by 10%.\nChoose carefuly, you can get only 1 buff.",DisablePartySync=1,qgs={33132},r=2,sourceQuests={13565,13566,13598}}),
+[1439]={{42.5,38.6}}},description="Great Thistle Bear Spirit grants a buff reducing the damage you take by 10%.\nChoose carefully, you can get only 1 buff.",DisablePartySync=1,qgs={33132},r=2,sourceQuests={13565,13566,13598}}),
 q(13948,{awp=40003,coords={
 [1439]={{45.3,75.1}}},qgs={34402},r=2,sourceQuests={13892},g={
 qo(1,{coords={
@@ -11150,7 +11150,7 @@ n(48258,{awp=40003,coords={
 [1448]={{61.6,25.8}}},r=2})}),
 h(-63,{
 i(13140,{b=1,crs={7114,7118,7120,9862},lvl=49,q=1,rwp=40003,u=2}),
-i(21377,{b=1,crs={7153,7154,7155,7156,7157,7158,9462,9464,14342},description="Drops commmonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
+i(21377,{b=1,crs={7153,7154,7155,7156,7157,7158,9462,9464,14342},description="Drops commonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
 i(11668,{b=1,coords={
 [1448]={{39.6,22.2}}},crs={10648},lvl=49,q=1,r=2,rwp=40003,u=2}),
 i(20768,{crs={7092,7093,14345},q=1,sym={{"select","itemID",20769}}}),
@@ -12107,7 +12107,7 @@ ach(4870,{sourceQuests={25298,25312,25332,25382,25520,25531,25551,25584,25612,25
 crit(13986,{achID=4875,id=1,r=2,u=40})}}),
 ach(4863,{
 crit(13595,{achID=4868,id=1,u=40})}),
-ach(5860,{description="The daily quest 'Vigilance on Wings' is offered in Firelands Hatchery after completing the intial quests as part of the questline in Shrine of Aviana.",sourceQuests={29177},g={
+ach(5860,{description="The daily quest 'Vigilance on Wings' is offered in Firelands Hatchery after completing the initial quests as part of the questline in Shrine of Aviana.",sourceQuests={29177},g={
 i(69838,{b=1,description="Contains either the Blue or Gold Mini Jouster, whichever was not picked during the quest Vigilance on Wings.",q=1,g={
 p(259,{b=1,itemID=65661,npcID=42177,petTypeID=3,q=1,spellID=78683}),
 p(260,{b=1,itemID=65662,npcID=42183,petTypeID=3,q=1,spellID=78685})}})}}),
@@ -19813,7 +19813,7 @@ i(18665,{c={5},crs={7461,7463},f=53,lvl=60,q=4,rwp=40003,u=2}),
 i(12433,{crs={7450,7451,7452,7453,7454},providers={{"i",12384}},q=1,rwp=40003,u=2}),
 i(12431,{crs={7438,7439,7440,7441,7442,10738,10916},providers={{"i",12384}},q=1,rwp=40003,u=2}),
 i(12820,{crs={7438,7439,7440,7441,7442,10199,10738,10916},f=55,lvl=45,q=1}),
-i(21383,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},description="Drops commmonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. The inital turn in requires 10 Winterfall Spirit Beads, and all following requires 5. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
+i(21383,{b=1,crs={7438,7439,7440,7441,7442,10738,10916},description="Drops commonly from all Winterfall furbolgs, and can be turned in to the NPC named Salfa for Timbermaw Hold reputation. The initial turn in requires 10 Winterfall Spirit Beads, and all following require 5. Salfa can be found in the westernmost part of the zone, by the entrance to Timbermaw Hold.",q=1}),
 i(21928,{crs={7430,7431,7432,7433,7434,7443,7444,7445,7446},q=1})})}})}}),
 m(1415,{icon=236759,isContinent=1,lore="The Eastern Kingdoms are the eastern continents on the world of Azeroth. The Eastern Kingdoms is made up from a group of smaller continents (Azeroth, Khaz Modan and Lordaeron) formed from the original continent of Kalimdor following the Great Sundering. The Eastern Kingdoms lie to the east of the Great Sea and to the west of the Forbidding Sea. The central part of the Eastern Kingdoms is dominated by the Khaz Mountains and the Redridge Mountains. Both cover several zones.",maps={1463},g={
 h(-12,{awp=30002,g={
@@ -36537,11 +36537,11 @@ q(28702,{awp=40003,coords={
 q(26812,{awp=40003,coords={
 [1434]={{78.5,35.6}}},providers={{"n",44084}},qss={60374},r=2,sourceQuests={26811},g={
 qo(1,{coords={
-[1434]={{78,43.8}}},description="Attack Zanzil first to interupt the cast.",providers={{"n",43255},{"n",43257}}})}}),
+[1434]={{78,43.8}}},description="Attack Zanzil first to interrupt the cast.",providers={{"n",43255},{"n",43257}}})}}),
 q(26553,{awp=40003,coords={
 [1434]={{78.5,35.6}}},providers={{"n",43098}},qss={58964},r=1,sourceQuests={26552},g={
 qo(1,{coords={
-[1434]={{78,43.8}}},description="Attack Zanzil first to interupt the cast.",providers={{"n",43255},{"n",43257}}})}}),
+[1434]={{78,43.8}}},description="Attack Zanzil first to interrupt the cast.",providers={{"n",43255},{"n",43257}}})}}),
 q(26814,{awp=40003,coords={
 [1434]={{82.1,35.3}}},providers={{"n",44084}},qss={60374},r=2,sourceQuests={26813},g={
 qo(1,{coords={
@@ -38814,7 +38814,7 @@ s(208964,63850,{b=1,f=7,loc=45,q=2})}}),
 q(27576,{coords={
 [241]={{29.3,25.9}}},qgs={45528},r=1,sourceQuests={27507,27508,27509}}),
 q(28107,{coords={
-[241]={{26,38.9}}},description="Must be on |cFFFFD700If the Key Fits|r to receieve this quest.",qgs={47611},r=2,sourceQuests={28108},g={
+[241]={{26,38.9}}},description="Must be on |cFFFFD700If the Key Fits|r to receive this quest.",qgs={47611},r=2,sourceQuests={28108},g={
 qo(1,{providers={{"n",47394},{"n",47401},{"n",47406},{"n",47407},{"n",47408},{"n",47409},{"n",47410}}})}}),
 q(28094,{coords={
 [241]={{29.6,40.9}}},qgs={47374},r=1,sourceQuests={28097},g={
@@ -50153,7 +50153,7 @@ crit(7486,{achID=2096,id=1,u=30})}}),
 ach(3217,{requireSkill=356,u=30}),
 ach(3296,{providers={{"i",46349}},requireSkill=185,u=30}),
 ach(1956,{description="The Schools of Arcane Magic books share a spawn location with generic books. Read the books in each location to start the respawn timer, which seems to be 3-4 hours.\n\nThe best time to hunt books is right after a server restart.",u=30,g={
-p(199,{awp=30003,b=1,description="This pet is obtained by doing the following:\n1. Complete the achievement 'Higher Learning'\n2. Use the newly aqcuired toy 'The Schools of Arcane Magic - Mastery' and teleport yourself to the spires atop Violet Citadel.\n3. Interact with Archmage Vargoth.",itemID=44738,npcID=32643,petTypeID=7,q=3,spellID=61472,u=30}),
+p(199,{awp=30003,b=1,description="This pet is obtained by doing the following:\n1. Complete the achievement 'Higher Learning'\n2. Use the newly acquired toy 'The Schools of Arcane Magic - Mastery' and teleport yourself to the spires atop Violet Citadel.\n3. Interact with Archmage Vargoth.",itemID=44738,npcID=32643,petTypeID=7,q=3,spellID=61472,u=30}),
 toy(43824,{b=1,crs={16128},description="If you lost the book, Rhonin will provide it to you at no charge as long as you have the achievement. This only works on the character who completed the achievement.",q=3,u=30})}}),
 ach(1010,{maps={115,118},u=30}),
 ach(1782,{r=2,requireSkill=185,u=30,g={
@@ -54585,7 +54585,7 @@ s(171966,38239,{b=1,f=28,q=3,u=30})}}),
 q(11585,{altQuests={11586},coords={
 [114]={{41.6,53.9},{43,55.6}}},qgs={25273},r=1,sourceQuests={10172,28711},u=30}),
 q(11586,{altQuests={11585},coords={
-[114]={{41.6,53.9},{43,55.6}}},description="This version of the quest is only available if you have NOT completed the quest 'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently.",lc={1,"questID",10172},qgs={25273},r=1,sourceQuests={28711},u=30}),
+[114]={{41.6,53.9},{43,55.6}}},description="This version of the quest is only available if you have NOT completed the quest 'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version currently.",lc={1,"questID",10172},qgs={25273},r=1,sourceQuests={28711},u=30}),
 q(11876,{coords={
 [114]={{57.1,44.3}}},qgs={25809},sourceQuests={11864},u=30}),
 q(28709,{awp=40003,coords={
@@ -55366,7 +55366,7 @@ fp(336,{coords={
 h(-55,{u=30,g={
 i(45000,{coords={
 [118]={{71,73.8}},
-[127]={{18.5,15.7}}},description="Can be found beneath the Ironwall Dam seperating Icecrown from Crystalsong Forest.",providers={{"o",194213}},q=1,u=31})}}),
+[127]={{18.5,15.7}}},description="Can be found beneath the Ironwall Dam separating Icecrown from Crystalsong Forest.",providers={{"o",194213}},q=1,u=31})}}),
 h(-63,{u=30,g={
 i(45005,{coords={
 [127]={{55.6,75}}},crs={33289},q=1,u=31}),
