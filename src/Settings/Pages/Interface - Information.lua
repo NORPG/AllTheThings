@@ -16,6 +16,7 @@ local GetNormalizedRealmName = GetNormalizedRealmName;
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemCount = app.WOWAPI.GetItemCount;
+local GetProfessionInfoByRecipeID = app.WOWAPI.GetProfessionInfoByRecipeID;
 local GetItemSpecInfo = app.WOWAPI.GetItemSpecInfo;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
@@ -264,15 +265,24 @@ local knownBy = {};
 ---@field text? string Localized label for the information type.
 ---@field priority? number Display sort order.
 
---- Shortens local realm suffixes in saved UI text while preserving colors and quantities.
+--- Saved character identity with faction grouping and account-ignore state.
+---@class ATTTooltipCharacter: ATTCharacterIdentity
+---@field factionID integer? Horde or Alliance faction ID used for the localized group label.
+---@field ignored boolean? Excludes the character from tooltip lists.
+
+--- Shortens local or realm-grouped character names while preserving colors and quantities.
 ---@param character ATTCharacterIdentity? Saved UI text and actual realm to format; nil yields "???".
 ---@param realmName string Exact local realm name returned by GetRealmName.
 ---@param normalizedRealmName string Normalized local realm name returned by GetNormalizedRealmName.
----@return string displayName Saved UI text with a matching local realm suffix omitted.
-local function GetCharacterDisplayName(character, realmName, normalizedRealmName)
+---@param stripRealm boolean? Also remove a remote saved realm when it is already shown by a group heading.
+---@return string displayName Saved UI text with the matching realm suffix omitted, retaining colors and quantities.
+local function GetCharacterDisplayName(character, realmName, normalizedRealmName, stripRealm)
 	if not character then return "???"; end
 	local text = character.text or "???";
 	local realm = character.realm;
+	if stripRealm and realm ~= realmName and realm ~= normalizedRealmName then
+		realmName, normalizedRealmName = realm, realm;
+	end
 	if not realm or realm == "" or (realm ~= realmName and realm ~= normalizedRealmName) then return text; end
 	local ending = text:match(" %(x%d+%)$") or "";
 	local display = text:sub(1, #text - #ending);
@@ -288,19 +298,100 @@ local function GetCharacterDisplayName(character, realmName, normalizedRealmName
 	end
 	return text;
 end
---- Appends cached character names to the tooltip using the supplied format.
----@param tooltipInfo ATTTooltipLine[] Mutable array receiving appended tooltip lines.
----@param kind string? Localized format with %s for the character list; nil skips output.
+--- Return the localized faction label for a character.
+---@param character ATTTooltipCharacter Character record whose faction is displayed.
+---@return string factionName Localized Horde or Alliance label, or Unknown when no faction is saved.
+local function GetCharacterFactionName(character)
+	if character.factionID == Enum.FlightPathFaction.Horde then return FACTION_HORDE; end
+	if character.factionID == Enum.FlightPathFaction.Alliance then return FACTION_ALLIANCE; end
+	return UNKNOWN;
+end
+--- Return the saved realm label or Unknown.
+---@param character ATTTooltipCharacter Character record whose realm is displayed.
+---@return string realmName Saved realm, or Unknown when it is missing.
+local function GetCharacterRealmName(character)
+	local realm = character.realm;
+	return realm and realm ~= "" and realm or UNKNOWN;
+end
+--- Compare characters by enabled realm and faction groups, then by plain name.
+---@param a ATTTooltipCharacter First character record.
+---@param b ATTTooltipCharacter Second character record.
+---@param groupByRealm boolean Whether to group characters by realm.
+---@param groupByFaction boolean Whether to group characters by faction.
+---@return boolean precedes Whether the first character sorts before the second.
+local function SortCharactersForGrouping(a, b, groupByRealm, groupByFaction)
+	if groupByRealm then
+		local realmA, realmB = GetCharacterRealmName(a), GetCharacterRealmName(b);
+		if realmA ~= realmB then return realmA < realmB; end
+	end
+	if groupByFaction then
+		local factionA, factionB = GetCharacterFactionName(a), GetCharacterFactionName(b);
+		if factionA ~= factionB then return factionA < factionB; end
+	end
+	local nameA = a.name or (a.text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "");
+	local nameB = b.name or (b.text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "");
+	return nameA < nameB;
+end
+--- Append the collected characters using the selected grouping settings, then clear the collection.
+---@param tooltipInfo ATTTooltipLine[] Tooltip rows receiving group headings and character names.
+---@param kind string? Localized heading with a single character-list format placeholder.
+---@return nil
 local function BuildKnownByInfoForKind(tooltipInfo, kind)
+	local realmName, normalizedRealmName = GetRealmName(), GetNormalizedRealmName();
+	for i = #knownBy, 1, -1 do
+		if knownBy[i].ignored then tremove(knownBy, i); end
+	end
 	if #knownBy > 0 and kind then
-		app.Sort(knownBy, app.SortDefaults.name);
-		local desc = "";
-		local realmName, normalizedRealmName = GetRealmName(), GetNormalizedRealmName();
-		for i,character in ipairs(knownBy) do
-			if i > 1 then desc = desc .. ", "; end
-			desc = desc .. GetCharacterDisplayName(character, realmName, normalizedRealmName);
+		-- Each setting controls its own grouping and sorting dimension.
+		local groupByRealm = settings:GetTooltipSetting("GroupByRealm");
+		local groupByFaction = settings:GetTooltipSetting("GroupByFaction");
+		if groupByRealm or groupByFaction then
+			app.Sort(knownBy,
+				--- Apply the current grouping settings when sorting character records.
+				---@param a ATTTooltipCharacter First character record.
+				---@param b ATTTooltipCharacter Second character record.
+				---@return boolean precedes Whether the first character sorts before the second.
+				function(a, b)
+					return SortCharactersForGrouping(a, b, groupByRealm, groupByFaction);
+				end);
+			local names, realm, faction, titleAdded = {}, nil, nil, nil;
+			--- Append the current group header and names, then clear its name buffer.
+			---@return nil
+			local function FlushGroup()
+				if #names > 0 then
+					local label = realm and faction and (realm .. ", " .. faction) or realm or faction;
+					tinsert(tooltipInfo, { left = "  " .. label .. " (" .. #names .. ")", r = 0.8, g = 0.8, b = 0.8 });
+					tinsert(tooltipInfo, { left = "    " .. table.concat(names, ", "), wrap = true, color = app.Colors.TooltipDescription });
+					wipearray(names);
+				end
+			end
+			for _,character in ipairs(knownBy) do
+				-- Account-wide completion notices are messages, rather than character records.
+				if not (character.name or character.realm or character.guid or character.factionID) then
+					tinsert(tooltipInfo, { left = kind:format(character.text or "???"), wrap = true, color = app.Colors.TooltipDescription });
+				else
+					if not titleAdded then
+						tinsert(tooltipInfo, { left = kind:format(""), r = 1, g = 0.82, b = 0 });
+						titleAdded = true;
+					end
+					local characterRealm = groupByRealm and GetCharacterRealmName(character) or nil;
+					local characterFaction = groupByFaction and GetCharacterFactionName(character) or nil;
+					if characterRealm ~= realm or characterFaction ~= faction then
+						FlushGroup();
+						realm, faction = characterRealm, characterFaction;
+					end
+					tinsert(names, GetCharacterDisplayName(character, realmName, normalizedRealmName, groupByRealm));
+				end
+			end
+			FlushGroup();
+		else
+			app.Sort(knownBy, app.SortDefaults.name);
+			local names = {};
+			for _,character in ipairs(knownBy) do
+				tinsert(names, GetCharacterDisplayName(character, realmName, normalizedRealmName));
+			end
+			tinsert(tooltipInfo, { left = kind:format(table.concat(names, ", ")), wrap = true, color = app.Colors.TooltipDescription });
 		end
-		tinsert(tooltipInfo, { left = kind:format(desc), wrap = true, color = app.Colors.TooltipDescription });
 		wipearray(knownBy);
 	end
 end
@@ -322,9 +413,9 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 			end
 		else
 			for _,character in pairs(ATTCharacterData) do
-				if (character.Quests and character.Quests[id])
+				if not character.ignored and ((character.Quests and character.Quests[id])
 					-- perhaps expand into a separate information type instead for previously-completed quests
-					or (character.PriorQuests and character.PriorQuests[id]) then
+					or (character.PriorQuests and character.PriorQuests[id])) then
 					tinsert(knownBy, character);
 				end
 			end
@@ -437,6 +528,12 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 		end
 	end
 end
+--- A Classic profession entry retaining its character, current rank and maximum rank.
+---@class ATTTooltipProfessionRank
+---@field [1] ATTTooltipCharacter Character that owns this profession.
+---@field [2] number Current saved profession rank, used for descending sort order.
+---@field [3] number Maximum saved profession rank, displayed beside the current rank.
+
 --- Adds known-character entries and Classic profession ranks to the tooltip.
 ---@param t ATTInformationType? Information type descriptor (unused).
 ---@param reference ATTKnownByReference Collection, spell, and cache fields used to find known characters.
@@ -453,7 +550,12 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 				end
 			end
 			if #knownBy > 0 then
-				app.Sort(knownBy, function(a, b)
+				app.Sort(knownBy,
+					--- Order Classic profession entries by their saved current rank.
+					---@param a ATTTooltipProfessionRank First character, current rank and maximum rank.
+					---@param b ATTTooltipProfessionRank Second character, current rank and maximum rank.
+					---@return boolean precedes Whether the first rank is higher.
+					function(a, b)
 					return a[2] > b[2];
 				end);
 				tinsert(tooltipInfo, {
@@ -480,13 +582,89 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 			local knownByCache
 			for guid,character in pairs(ATTCharacterData) do
 				knownByCache = character[cacheName] or character.Spells
-				if knownByCache and knownByCache[id] then
+				if not character.ignored and knownByCache and knownByCache[id] then
 					tinsert(knownBy, character);
 				end
 			end
 			BuildKnownByInfoForKind(tooltipInfo, L.KNOWN_BY);
 		end
 	end
+end
+
+--- Recipe metadata and inherited character restrictions used to check learning eligibility.
+---@class ATTRecipeEligibilityReference
+---@field recipeID integer? Recipe spell ID identifying an actual recipe.
+---@field knownByID integer? Alternate recipe ID on a linked object.
+---@field spellID integer? Spell ID used to find the linked recipe.
+---@field skillID integer? Required profession, expansion skill line or specialization ID.
+---@field requireSkill integer? Required skill ID inherited from a parent when absent on the recipe.
+---@field learnedAt number? Minimum skill rank; defaults to one.
+---@field r integer? Required faction ID; zero means unrestricted.
+---@field c integer[]? Permitted class IDs inherited from recipe parents.
+---@field races integer[]? Permitted race IDs inherited from recipe parents.
+---@field parent ATTRecipeEligibilityReference? Display parent providing inherited requirements.
+---@field sourceParent ATTRecipeEligibilityReference? Original source parent taking precedence over display parents.
+
+--- Append characters eligible to learn a recipe using saved ranks and character restrictions.
+---@param t ATTInformationType? Information type descriptor (unused).
+---@param reference ATTRecipeEligibilityReference Recipe or linked object whose requirements are checked.
+---@param tooltipInfo ATTTooltipLine[] Tooltip rows receiving eligible character names.
+---@return nil
+local function ProcessForUsefulFor(t, reference, tooltipInfo)
+	-- Only actual recipes can be useful to a character; arbitrary item/spell IDs are not recipes.
+	local recipe, recipeID = reference, reference.recipeID;
+	if not recipeID then
+		local id = reference.knownByID or reference.spellID;
+		if not id then return; end
+		recipe = app.SearchForObject("recipeID", id, "key");
+		if not recipe then return; end
+		recipeID = recipe.recipeID;
+	end
+	if not recipeID then return; end
+	local skillID = reference.skillID or reference.requireSkill or recipe.skillID or GetRelativeValue(recipe, "requireSkill");
+	if not skillID then return; end
+	local learnedAt = reference.learnedAt or GetRelativeValue(recipe, "learnedAt") or 1;
+	local skillDB = app.SkillDB;
+	local specializationSpell = skillDB.SpecializationSpells[skillID];
+	local baseSkillID = skillDB.SpellToSkill[specializationSpell or 0] or skillDB.Conversion[skillID] or skillID;
+	local rankSkillID = skillID;
+	if app.IsRetail then
+		-- Retail skill levels belong to a particular expansion, not the base profession.
+		local professionInfo = GetProfessionInfoByRecipeID(recipeID);
+		if professionInfo and professionInfo.professionID and professionInfo.professionID > 0 then
+			rankSkillID = professionInfo.professionID;
+		elseif not app.IsForever and (not skillDB.Conversion[skillID] or skillDB.Conversion[skillID] == skillID) then
+			-- A base profession rank cannot identify which Retail expansion a recipe belongs to.
+			return;
+		end
+	end
+	local professionSpellID = skillDB.SkillToSpell[skillID] or skillDB.SkillToSpell[baseSkillID];
+	local faction = GetRelativeValue(recipe, "r");
+	local classes = GetRelativeValue(recipe, "c");
+	local races = GetRelativeValue(recipe, "races");
+	for _,character in pairs(ATTCharacterData) do
+		if not character.ignored
+			and not (character.Spells and character.Spells[recipeID])
+			and (not faction or faction == 0 or character.factionID == faction)
+			and (not classes or app.contains(classes, character.classID))
+			and (not races or app.contains(races, character.raceID)) then
+			local rank;
+			if app.IsRetail then
+				local professions = character.Professions;
+				if professions and professions[baseSkillID] and (not specializationSpell or professions[skillID]) then
+					rank = character.ProfessionRanks and character.ProfessionRanks[rankSkillID];
+				end
+			else
+				local skills = professionSpellID and character.ActiveSkills and character.ActiveSkills[professionSpellID];
+				rank = skills and skills[1];
+			end
+			-- Missing cached rank data must not imply that a character can learn the recipe.
+			if type(rank) == "number" and rank > 0 and rank >= learnedAt then
+				tinsert(knownBy, character);
+			end
+		end
+	end
+	BuildKnownByInfoForKind(tooltipInfo, L.USEFUL_FOR);
 end
 
 -- Specialization Requirements
@@ -1386,6 +1564,7 @@ local InformationTypes = {
 	}),
 	CreateInformationType("CompletedBy", { text = L.COMPLETED_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForCompletedBy });
 	CreateInformationType("KnownBy", { text = L.KNOWN_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForKnownBy });
+	CreateInformationType("UsefulFor", { text = L.USEFUL_FOR:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForUsefulFor });
 	CreateInformationType("extraInfo", { text = "extraInfo", priority = 2.51, HideCheckBox = true, ForceActive = true,
 		Process = function(t, reference, tooltipInfo)
 			local itemID = reference.itemID

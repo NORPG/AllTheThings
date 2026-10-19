@@ -1385,6 +1385,10 @@ local wrappers = {
 		end,
 	}
 }
+--- Numeric rank payload received for one character's ProfessionRanks field.
+---@class ATTSerializedProfessionRanks
+---@field [1] string? Payload such as "2:171=300/2485=155"; "2:" or a missing value clears saved ranks.
+
 --- Fixed twelve-string array used to encode and decode account-sync Summary messages.
 --- Positions retain the wire order below; numeric values stay strings until deserialized.
 ---@class ATTCharacterSummaryFields
@@ -1515,6 +1519,7 @@ local deserializers = setmetatable({
 		return currentValue;
 	end,
 	AzeriteEssenceRanks = wrappers.dser.numnumtbl,
+	ProfessionRanks = wrappers.dser.numnumtbl,
 }, {
 	__index = function(t)
 		return defaultDeserializer;
@@ -1582,6 +1587,7 @@ local serializers = setmetatable({
 		if any then return str; end
 	end,
 	AzeriteEssenceRanks = wrappers.ser.numnumtbl,
+	ProfessionRanks = wrappers.ser.numnumtbl,
 
 	-- The main data package containing the simple stuff.
 	Summary = function(character, value)
@@ -1812,6 +1818,7 @@ end
 
 -- Merging
 local BlacklistedTooltipFields = {
+	ProfessionRanks = true,
 	ActiveSkills = true,
 	Lockouts = true,
 	PrimeData = true,

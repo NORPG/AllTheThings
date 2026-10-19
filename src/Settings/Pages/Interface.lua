@@ -512,7 +512,15 @@ checkboxAllowWrapping:AlignBelow(checkboxUnsorted)
 
 
 
+local headerCharacterInformation = child:CreateTextLabel("|cffFFFFFF"..L.CHARACTER_INFORMATION_LABEL)
+headerCharacterInformation:SetWidth(170)
+headerCharacterInformation:SetWordWrap(false)
+headerCharacterInformation:SetPoint("TOP", textTooltipShownInfo, "TOP", 0, 0)
+
 local checkboxCompletedBy = child:CreateCheckBox(L.COMPLETED_BY_CHECKBOX,
+---Refreshes the Completed By checkbox value and enabled state.
+---@param self ATTSettingsCheckButton Checkbox displaying the Completed By setting.
+---@return nil
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("CompletedBy"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -523,13 +531,26 @@ function(self)
 		self:SetAlpha(1)
 	end
 end,
+---Saves whether Completed By character information is displayed.
+---@param self ATTSettingsCheckButton Checkbox containing the selected Completed By value.
+---@return nil
 function(self)
 	settings:SetTooltipSetting("CompletedBy", self:GetChecked())
 end)
 checkboxCompletedBy:SetATTTooltip(L.COMPLETED_BY_CHECKBOX_TOOLTIP)
+-- Reserve the wider label or slider width in the label's coordinate scale.
+local collectionProgressText = checkboxCollectionProgress.Text
+collectionProgressText:SetJustifyH("LEFT")
+collectionProgressText:SetWidth(math.max(
+	collectionProgressText:GetUnboundedStringWidth(),
+	sliderSourceLocations:GetWidth() * sliderSourceLocations:GetEffectiveScale() / collectionProgressText:GetEffectiveScale()))
 checkboxCompletedBy:AlignAfter(checkboxCollectionProgress, 20)
+headerCharacterInformation:SetPoint("LEFT", checkboxCompletedBy, "LEFT", -8, 0)
 
 local checkboxKnownBy = child:CreateCheckBox(L.KNOWN_BY_CHECKBOX,
+---Refreshes the Known By checkbox value and enabled state.
+---@param self ATTSettingsCheckButton Checkbox displaying the Known By setting.
+---@return nil
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("KnownBy"))
 	if not settings:GetTooltipSetting("Enabled") then
@@ -540,11 +561,102 @@ function(self)
 		self:SetAlpha(1)
 	end
 end,
+---Saves whether Known By character information is displayed.
+---@param self ATTSettingsCheckButton Checkbox containing the selected Known By value.
+---@return nil
 function(self)
 	settings:SetTooltipSetting("KnownBy", self:GetChecked())
 end)
 checkboxKnownBy:SetATTTooltip(L.KNOWN_BY_CHECKBOX_TOOLTIP)
 checkboxKnownBy:AlignBelow(checkboxCompletedBy)
+
+local checkboxUsefulFor = child:CreateCheckBox(L.USEFUL_FOR_CHECKBOX,
+---Refreshes the Useful For checkbox value and enabled state.
+---@param self ATTSettingsCheckButton Checkbox displaying the Useful For setting.
+---@return nil
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("UsefulFor"))
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+---Saves the Useful For tooltip setting.
+---@param self ATTSettingsCheckButton Checkbox containing the selected Useful For value.
+---@return nil
+function(self)
+	settings:SetTooltipSetting("UsefulFor", self:GetChecked())
+end)
+checkboxUsefulFor:SetATTTooltip(L.USEFUL_FOR_CHECKBOX_TOOLTIP)
+checkboxUsefulFor:AlignBelow(checkboxKnownBy)
+
+local headerCharacterGrouping = child:CreateTextLabel("|cffFFFFFF"..L.CHARACTER_LIST_GROUPING_LABEL)
+headerCharacterGrouping:SetWidth(170)
+headerCharacterGrouping:SetWordWrap(false)
+headerCharacterGrouping:AlignBelow(checkboxUsefulFor, headerCharacterInformation, -12)
+
+local checkboxGroupByRealm = child:CreateCheckBox(L.GROUP_BY_REALM_CHECKBOX,
+---Refreshes the realm grouping checkbox value and enabled state.
+---@param self ATTSettingsCheckButton Checkbox displaying the realm grouping setting.
+---@return nil
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("GroupByRealm"))
+	if not settings:GetTooltipSetting("Enabled")
+		or not (settings:GetTooltipSetting("CompletedBy")
+			or settings:GetTooltipSetting("KnownBy")
+			or settings:GetTooltipSetting("UsefulFor")) then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+---Saves whether character tooltip entries are grouped by realm.
+---@param self ATTSettingsCheckButton Checkbox containing the selected realm grouping value.
+---@return nil
+function(self)
+	settings:SetTooltipSetting("GroupByRealm", self:GetChecked())
+end)
+checkboxGroupByRealm:SetATTTooltip(L.GROUP_BY_REALM_CHECKBOX_TOOLTIP.."\n\n"..L.CHARACTER_LIST_GROUPING_DESC)
+checkboxGroupByRealm:AlignBelow(headerCharacterGrouping, checkboxCompletedBy, 0)
+checkboxGroupByRealm.Text:SetJustifyH("LEFT")
+checkboxGroupByRealm.Text:SetWidth(170)
+checkboxGroupByRealm.Text:SetWordWrap(false)
+checkboxGroupByRealm:SetHitRectInsets(0, -checkboxGroupByRealm.Text:GetWidth() * checkboxGroupByRealm.Text:GetScale(), 0, 0)
+
+local checkboxGroupByFaction = child:CreateCheckBox(L.GROUP_BY_FACTION_CHECKBOX,
+---Refreshes the faction grouping checkbox value and enabled state.
+---@param self ATTSettingsCheckButton Checkbox displaying the faction grouping setting.
+---@return nil
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("GroupByFaction"))
+	if not settings:GetTooltipSetting("Enabled")
+		or not (settings:GetTooltipSetting("CompletedBy")
+			or settings:GetTooltipSetting("KnownBy")
+			or settings:GetTooltipSetting("UsefulFor")) then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+---Saves whether character tooltip entries are grouped by faction.
+---@param self ATTSettingsCheckButton Checkbox containing the selected faction grouping value.
+---@return nil
+function(self)
+	settings:SetTooltipSetting("GroupByFaction", self:GetChecked())
+end)
+checkboxGroupByFaction:SetATTTooltip(L.GROUP_BY_FACTION_CHECKBOX_TOOLTIP.."\n\n"..L.CHARACTER_LIST_GROUPING_DESC)
+checkboxGroupByFaction:AlignBelow(checkboxGroupByRealm)
+checkboxGroupByFaction.Text:SetJustifyH("LEFT")
+checkboxGroupByFaction.Text:SetWidth(170)
+checkboxGroupByFaction.Text:SetWordWrap(false)
+checkboxGroupByFaction:SetHitRectInsets(0, -checkboxGroupByFaction.Text:GetWidth() * checkboxGroupByFaction.Text:GetScale(), 0, 0)
 
 local checkboxSpecializations = child:CreateCheckBox(L.SPEC_CHECKBOX,
 function(self)
@@ -561,7 +673,7 @@ function(self)
 	settings:SetTooltipSetting("SpecializationRequirements", self:GetChecked())
 end)
 checkboxSpecializations:SetATTTooltip(L.SPEC_CHECKBOX_TOOLTIP)
-checkboxSpecializations:AlignBelow(checkboxKnownBy)
+checkboxSpecializations:AlignBelow(checkboxGroupByFaction, checkboxCompletedBy, -12)
 
 local checkboxCurrencyCalculation = child:CreateCheckBox(L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX,
 function(self)

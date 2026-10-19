@@ -1,5 +1,5 @@
 -- Flat tooltip and account Summary tests.
--- Run from the repository root: lua tests/character-names.lua [repository-root]
+-- Run from the repository root: lua5.1 tests/character-names.lua [repository-root]
 --
 -- Test architecture:
 -- 1. Source: read() loads addon files. The patterns below select the actual
@@ -78,6 +78,10 @@
 ---@class ATTTooltipTestSortDefaults
 ---@field name fun(a: ATTNameTestCharacter, b: ATTNameTestCharacter): boolean Complete-name ordering, with display-text fallback.
 
+--- Grouping settings disabled so this suite continues to exercise flat character names.
+---@class ATTNameTestSettings
+---@field GetTooltipSetting fun(self: ATTNameTestSettings, key: string): false Returns false for the realm and faction grouping switches.
+
 --- Minimal addon services referenced by the extracted tooltip processors.
 ---@class ATTTooltipTestApp
 ---@field IsForever boolean Whether native names contain Forever surnames.
@@ -85,7 +89,7 @@
 ---@field GameBuildVersion integer Simulated client build.
 ---@field GUID string GUID of the simulated current character.
 ---@field CurrentCharacter? ATTAccountCharacter Optional saved current-character metadata.
----@field Settings {} Empty settings placeholder for the extracted module.
+---@field Settings ATTNameTestSettings Disabled grouping switches for flat-name regression cases.
 ---@field L ATTTooltipTestLocale KnownBy, CompletedBy and OwnedBy formats.
 ---@field Colors { TooltipDescription: string } Color assigned to appended description rows.
 ---@field AccountWideQuestsDB table<integer, boolean> Quest IDs tracked account-wide.
@@ -218,7 +222,13 @@ local function fixture(opts)
 	local data,inventory,accountQuests={},{},{}
 	local app={
 		IsForever=opts.forever~=false,IsClassic=opts.classic or false,GameBuildVersion=opts.build or 16001,GUID="current",
-		Settings={},L={KNOWN_BY="Known by %s",COMPLETED_BY="Completed by %s",OWNED_BY="Owned by %s"},
+		Settings={
+			--- Keeps both grouping switches disabled for the existing flat-name cases.
+			---@param _self ATTNameTestSettings Fixture settings instance.
+			---@param _key string Tooltip grouping setting being queried.
+			---@return false enabled Grouping remains disabled in this suite.
+			GetTooltipSetting=function(_self,_key) return false end,
+		},L={KNOWN_BY="Known by %s",COMPLETED_BY="Completed by %s",OWNED_BY="Owned by %s"},
 		Colors={TooltipDescription="description"},AccountWideQuestsDB={},WOWAPI={},
 		SortDefaults={
 			--- Compares complete names, using display text for text-only account notices.

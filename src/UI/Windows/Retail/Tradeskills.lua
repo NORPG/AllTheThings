@@ -14,6 +14,11 @@ local C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForReci
 
 -- Implementation
 do -- TradeSkill Functionality
+	local GetProfessions, time = GetProfessions, time;
+	local GetAllProfessionTradeSkillLines = C_TradeSkillUI.GetAllProfessionTradeSkillLines;
+	local GetProfessionInfoBySkillLineID = C_TradeSkillUI.GetProfessionInfoBySkillLineID;
+	local IsTradeSkillLinked = app.WOWAPI.IsTradeSkillLinked;
+	local IsTradeSkillGuild = C_TradeSkillUI.IsTradeSkillGuild;
 	local GetProfessionInfo, C_TradeSkillUI_GetBaseProfessionInfo
 		= GetProfessionInfo, C_TradeSkillUI.GetBaseProfessionInfo
 	local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
@@ -34,37 +39,110 @@ do -- TradeSkill Functionality
 	app.GetSpecializationBaseTradeSkill = function(specializationID)
 		return specializationTradeSkillMap[specializationID];
 	end
-	-- Refreshes the known Trade Skills/Professions of the current character (app.CurrentCharacter.Professions)
+	--- Saved profession membership keyed by base profession skill-line IDs or specialization spell IDs.
+	--- Learned professions and specializations use true; AlwaysAvailable and Beast Training (5149) use 1.
+	--- An absent key means no saved membership.
+	--- Examples: [171] = true for a base profession and [20219] = true for a specialization.
+	---@alias ATTProfessionOwnership { [integer]: true|1 }
+
+	--- Saved current skill ranks, keyed by base or expansion profession skill-line ID.
+	--- Examples: [171] = 300 and [2485] = 155 are separate ranks; absent keys have no saved rank.
+	---@alias ATTProfessionRanks { [integer]: integer }
+
+	--- Detects added, removed, or changed values in the profession and rank caches.
+	---@param previous ATTProfessionOwnership|ATTProfessionRanks Saved membership flags or ranks before refresh.
+	---@param current ATTProfessionOwnership|ATTProfessionRanks Refreshed values for the same kind of cache as previous.
+	---@return true|nil changed True when a key is added, removed, or changes value; nil otherwise.
+	local function HasCacheChanged(previous, current)
+		for id,value in pairs(previous) do
+			if current[id] ~= value then return true; end
+		end
+		for id,value in pairs(current) do
+			if previous[id] ~= value then return true; end
+		end
+	end
+	--- Refreshes owned professions and personal ranks, excluding linked and guild views from rank updates.
+	--- Marks changed cache fields for account sync and invalidates cached tooltip searches.
+	---@return nil
 	local function RefreshTradeSkillCache()
+		---@type ATTProfessionOwnership
 		local cache = app.CurrentCharacter.Professions;
+		---@type ATTProfessionOwnership
+		local previousCache = {};
+		for id,value in pairs(cache) do previousCache[id] = value; end
 		wipe(cache);
+		-- Keep expansion skill lines separate; their ranks are not interchangeable.
+		-- Linked and guild profession views must not overwrite this character's ranks.
+		---@type ATTProfessionRanks?, ATTProfessionRanks
+		local ranks, previousRanks = nil, {};
+		if not IsTradeSkillLinked() and not (IsTradeSkillGuild and IsTradeSkillGuild()) then
+			ranks = app.CurrentCharacter.ProfessionRanks;
+			if ranks then
+				for id,value in pairs(ranks) do previousRanks[id] = value; end
+				wipe(ranks);
+			else
+				ranks = {};
+				app.CurrentCharacter.ProfessionRanks = ranks;
+			end
+		end
 		-- "Professions" that anyone can "know"
 		for _,skillID in ipairs(app.SkillDB.AlwaysAvailable) do
 			cache[skillID] = 1
 		end
 		-- Hunter Only (Beast Training)
-		if app.ClassIndex == 3 then
-			cache[5149] = 1;
-		end
+		if app.ClassIndex == 3 then cache[5149] = 1; end
 		-- app.PrintDebug("RefreshTradeSkillCache");
 		local prof1, prof2, archaeology, fishing, cooking, firstAid = GetProfessions();
 		for i,j in ipairs({prof1 or 0, prof2 or 0, archaeology or 0, fishing or 0, cooking or 0, firstAid or 0}) do
 			if j ~= 0 then
-				local prof = select(7, GetProfessionInfo(j));
-				cache[GetBaseTradeSkillID(prof)] = true;
-				-- app.PrintDebug("KnownProfession",j,GetProfessionInfo(j));
-				local specializations = GetTradeSkillSpecialization(prof);
-				if specializations ~= nil then
-					for _,spellID in pairs(specializations) do
-						if spellID and app.IsSpellKnownHelper(spellID) then
-							cache[spellID] = true;
+				local _, _, skillRank, _, _, _, prof = GetProfessionInfo(j);
+				if prof then
+					cache[GetBaseTradeSkillID(prof)] = true;
+					if ranks and skillRank and skillRank > 0 then ranks[prof] = skillRank; end
+					-- app.PrintDebug("KnownProfession",j,GetProfessionInfo(j));
+					local specializations = GetTradeSkillSpecialization(prof);
+					if specializations ~= nil then
+						for _,spellID in pairs(specializations) do
+							if spellID and app.IsSpellKnownHelper(spellID) then
+								cache[spellID] = true;
+							end
 						end
 					end
 				end
 			end
 		end
+		if ranks and GetAllProfessionTradeSkillLines and GetProfessionInfoBySkillLineID then
+			for _,skillLineID in ipairs(GetAllProfessionTradeSkillLines()) do
+				local info = GetProfessionInfoBySkillLineID(skillLineID);
+				if info and info.skillLevel and info.skillLevel > 0 then
+					ranks[skillLineID] = info.skillLevel;
+				end
+			end
+		end
+		local professionsChanged = HasCacheChanged(previousCache, cache);
+		local ranksChanged = ranks and HasCacheChanged(previousRanks, ranks);
+		if professionsChanged or ranksChanged then
+			local character = app.CurrentCharacter;
+			local timestamps = character.TimeStamps;
+			if not timestamps then
+				timestamps = {};
+				character.TimeStamps = timestamps;
+			end
+			local now = time();
+			if professionsChanged then timestamps.Professions = now; end
+			if ranksChanged then timestamps.ProfessionRanks = now; end
+			character.lastPlayed = now;
+			app.WipeSearchCache();
+		end
 	end
 	app.AddEventHandler("OnStartup", RefreshTradeSkillCache)
+	--- Schedules a profession-cache refresh after the trade-skill data settles.
+	---@return nil
+	local function QueueTradeSkillCacheRefresh()
+		app.CallbackHandlers.DelayedCallback(RefreshTradeSkillCache, 2);
+	end
+	app.AddEventRegistration("TRADE_SKILL_SHOW", QueueTradeSkillCacheRefresh)
+	app.AddEventRegistration("TRADE_SKILL_LIST_UPDATE", QueueTradeSkillCacheRefresh)
 	app.AddEventHandler("OnStartup", function()
 		local conversions = app.Settings.InformationTypeConversionMethods;
 		conversions.professionName = function(skillID)
