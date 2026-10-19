@@ -538,8 +538,13 @@ function(self)
 	settings:SetTooltipSetting("CompletedBy", self:GetChecked())
 end)
 checkboxCompletedBy:SetATTTooltip(L.COMPLETED_BY_CHECKBOX_TOOLTIP)
+-- Reserve the wider label or slider width in the label's coordinate scale.
+local collectionProgressText = checkboxCollectionProgress.Text
+collectionProgressText:SetJustifyH("LEFT")
+collectionProgressText:SetWidth(math.max(
+	collectionProgressText:GetUnboundedStringWidth(),
+	sliderSourceLocations:GetWidth() * sliderSourceLocations:GetEffectiveScale() / collectionProgressText:GetEffectiveScale()))
 checkboxCompletedBy:AlignAfter(checkboxCollectionProgress, 20)
-checkboxCompletedBy:SetPoint("LEFT", sliderSourceLocations, "RIGHT", 16, 0)
 headerCharacterInformation:SetPoint("LEFT", checkboxCompletedBy, "LEFT", -8, 0)
 
 local checkboxKnownBy = child:CreateCheckBox(L.KNOWN_BY_CHECKBOX,
