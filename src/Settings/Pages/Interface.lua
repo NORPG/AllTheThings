@@ -539,6 +539,7 @@ function(self)
 end)
 checkboxCompletedBy:SetATTTooltip(L.COMPLETED_BY_CHECKBOX_TOOLTIP)
 checkboxCompletedBy:AlignAfter(checkboxCollectionProgress, 20)
+checkboxCompletedBy:SetPoint("LEFT", sliderSourceLocations, "RIGHT", 16, 0)
 headerCharacterInformation:SetPoint("LEFT", checkboxCompletedBy, "LEFT", -8, 0)
 
 local checkboxKnownBy = child:CreateCheckBox(L.KNOWN_BY_CHECKBOX,
