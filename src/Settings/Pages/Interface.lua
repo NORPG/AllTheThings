@@ -512,10 +512,10 @@ checkboxAllowWrapping:AlignBelow(checkboxUnsorted)
 
 
 
-local headerCharacterInformation = child:CreateHeaderLabel(L.CHARACTER_INFORMATION_LABEL)
+local headerCharacterInformation = child:CreateTextLabel("|cffFFFFFF"..L.CHARACTER_INFORMATION_LABEL)
 headerCharacterInformation:SetWidth(170)
-headerCharacterInformation:SetWordWrap(true)
-headerCharacterInformation:AlignAfter(checkboxCollectionProgress, 20)
+headerCharacterInformation:SetWordWrap(false)
+headerCharacterInformation:SetPoint("TOP", textTooltipShownInfo, "TOP", 0, 0)
 
 local checkboxCompletedBy = child:CreateCheckBox(L.COMPLETED_BY_CHECKBOX,
 ---Refreshes the Completed By checkbox value and enabled state.
@@ -538,7 +538,8 @@ function(self)
 	settings:SetTooltipSetting("CompletedBy", self:GetChecked())
 end)
 checkboxCompletedBy:SetATTTooltip(L.COMPLETED_BY_CHECKBOX_TOOLTIP)
-checkboxCompletedBy:AlignBelow(headerCharacterInformation, 1, 0)
+checkboxCompletedBy:AlignAfter(checkboxCollectionProgress, 20)
+headerCharacterInformation:SetPoint("LEFT", checkboxCompletedBy, "LEFT", -8, 0)
 
 local checkboxKnownBy = child:CreateCheckBox(L.KNOWN_BY_CHECKBOX,
 ---Refreshes the Known By checkbox value and enabled state.
@@ -586,16 +587,10 @@ end)
 checkboxUsefulFor:SetATTTooltip(L.USEFUL_FOR_CHECKBOX_TOOLTIP)
 checkboxUsefulFor:AlignBelow(checkboxKnownBy)
 
-local headerCharacterGrouping = child:CreateHeaderLabel(L.CHARACTER_LIST_GROUPING_LABEL)
+local headerCharacterGrouping = child:CreateTextLabel("|cffFFFFFF"..L.CHARACTER_LIST_GROUPING_LABEL)
 headerCharacterGrouping:SetWidth(170)
-headerCharacterGrouping:SetWordWrap(true)
+headerCharacterGrouping:SetWordWrap(false)
 headerCharacterGrouping:AlignBelow(checkboxUsefulFor, headerCharacterInformation, -12)
-
-local textCharacterGrouping = child:CreateTextLabel(L.CHARACTER_LIST_GROUPING_DESC)
-textCharacterGrouping:SetWidth(170)
-textCharacterGrouping:SetWordWrap(true)
-textCharacterGrouping:SetTextColor(0.7, 0.7, 0.7)
-textCharacterGrouping:AlignBelow(headerCharacterGrouping, nil, -4)
 
 local checkboxGroupByRealm = child:CreateCheckBox(L.GROUP_BY_REALM_CHECKBOX,
 ---Refreshes the realm grouping checkbox value and enabled state.
@@ -620,10 +615,11 @@ end,
 function(self)
 	settings:SetTooltipSetting("GroupByRealm", self:GetChecked())
 end)
-checkboxGroupByRealm:SetATTTooltip(L.GROUP_BY_REALM_CHECKBOX_TOOLTIP)
-checkboxGroupByRealm:AlignBelow(textCharacterGrouping, 1, 0)
+checkboxGroupByRealm:SetATTTooltip(L.GROUP_BY_REALM_CHECKBOX_TOOLTIP.."\n\n"..L.CHARACTER_LIST_GROUPING_DESC)
+checkboxGroupByRealm:AlignBelow(headerCharacterGrouping, checkboxCompletedBy, 0)
+checkboxGroupByRealm.Text:SetJustifyH("LEFT")
 checkboxGroupByRealm.Text:SetWidth(170)
-checkboxGroupByRealm.Text:SetWordWrap(true)
+checkboxGroupByRealm.Text:SetWordWrap(false)
 checkboxGroupByRealm:SetHitRectInsets(0, -checkboxGroupByRealm.Text:GetWidth() * checkboxGroupByRealm.Text:GetScale(), 0, 0)
 
 local checkboxGroupByFaction = child:CreateCheckBox(L.GROUP_BY_FACTION_CHECKBOX,
@@ -649,10 +645,11 @@ end,
 function(self)
 	settings:SetTooltipSetting("GroupByFaction", self:GetChecked())
 end)
-checkboxGroupByFaction:SetATTTooltip(L.GROUP_BY_FACTION_CHECKBOX_TOOLTIP)
+checkboxGroupByFaction:SetATTTooltip(L.GROUP_BY_FACTION_CHECKBOX_TOOLTIP.."\n\n"..L.CHARACTER_LIST_GROUPING_DESC)
 checkboxGroupByFaction:AlignBelow(checkboxGroupByRealm)
+checkboxGroupByFaction.Text:SetJustifyH("LEFT")
 checkboxGroupByFaction.Text:SetWidth(170)
-checkboxGroupByFaction.Text:SetWordWrap(true)
+checkboxGroupByFaction.Text:SetWordWrap(false)
 checkboxGroupByFaction:SetHitRectInsets(0, -checkboxGroupByFaction.Text:GetWidth() * checkboxGroupByFaction.Text:GetScale(), 0, 0)
 
 local checkboxSpecializations = child:CreateCheckBox(L.SPEC_CHECKBOX,
@@ -670,7 +667,7 @@ function(self)
 	settings:SetTooltipSetting("SpecializationRequirements", self:GetChecked())
 end)
 checkboxSpecializations:SetATTTooltip(L.SPEC_CHECKBOX_TOOLTIP)
-checkboxSpecializations:AlignBelow(checkboxGroupByFaction, -1, -12)
+checkboxSpecializations:AlignBelow(checkboxGroupByFaction, checkboxCompletedBy, -12)
 
 local checkboxCurrencyCalculation = child:CreateCheckBox(L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX,
 function(self)
