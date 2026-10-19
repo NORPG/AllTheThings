@@ -4232,19 +4232,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				273472,	-- Cordula Wolfgang <Hallow's End Decor Specialist>
 			},
 			["groups"] = {
-				i(282194, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Candlelit Ogre Jack-o'-Lantern (DECOR!)
-				i(282192, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Candlelit Shrieking Jack-o'-Lantern (DECOR!)
-				i(282202, { ["cost"] = { { "c", TRICKY_TREAT, 15 } } }),	-- Elaborate Heartsbane Ritual Markings (DECOR!)
-				i(282196, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Filled Candy Bucket (DECOR!)
-				i(282208, { ["cost"] = { { "c", TRICKY_TREAT, 25 } } }),	-- Heartsbane Banner (DECOR!)
-				i(282206, { ["cost"] = { { "c", TRICKY_TREAT, 15 } } }),	-- Heartsbane Stone Circle (DECOR!)
-				i(282289, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Horrific Head of the Horseman (DECOR!)
-				i(282213, { ["cost"] = { { "c", TRICKY_TREAT, 25 } } }),	-- Looming Heartsbane Effigy (DECOR!)
-				i(282204, { ["cost"] = { { "c", TRICKY_TREAT, 25 } } }),	-- Ominous Heartsbane Shrine (DECOR!)
-				i(284213, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Pattern: Spidery Witch Hat (RECIPE!)
-				i(284212, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Technique: Apple Bobbing Bucket (RECIPE!)
-				i(282200, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Unlit Ogre Jack-o'-Lantern (DECOR!)
-				i(282198, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Unlit Shrieking Jack-o'-Lantern (DECOR!)
+				i(282194, { ["cost"] = { { "i", TRICKY_TREAT, 20 } } }),	-- Candlelit Ogre Jack-o'-Lantern (DECOR!)
+				i(282192, { ["cost"] = { { "i", TRICKY_TREAT, 20 } } }),	-- Candlelit Shrieking Jack-o'-Lantern (DECOR!)
+				i(282202, { ["cost"] = { { "i", TRICKY_TREAT, 15 } } }),	-- Elaborate Heartsbane Ritual Markings (DECOR!)
+				i(282196, { ["cost"] = { { "i", TRICKY_TREAT, 20 } } }),	-- Filled Candy Bucket (DECOR!)
+				i(282208, { ["cost"] = { { "i", TRICKY_TREAT, 25 } } }),	-- Heartsbane Banner (DECOR!)
+				i(282206, { ["cost"] = { { "i", TRICKY_TREAT, 15 } } }),	-- Heartsbane Stone Circle (DECOR!)
+				i(282289, { ["cost"] = { { "i", TRICKY_TREAT, 20 } } }),	-- Horrific Head of the Horseman (DECOR!)
+				i(282213, { ["cost"] = { { "i", TRICKY_TREAT, 25 } } }),	-- Looming Heartsbane Effigy (DECOR!)
+				i(282204, { ["cost"] = { { "i", TRICKY_TREAT, 25 } } }),	-- Ominous Heartsbane Shrine (DECOR!)
+				i(284213, { ["cost"] = { { "i", TRICKY_TREAT, 20 } } }),	-- Pattern: Spidery Witch Hat (RECIPE!)
+				i(284212, { ["cost"] = { { "i", TRICKY_TREAT, 20 } } }),	-- Technique: Apple Bobbing Bucket (RECIPE!)
+				i(282200, { ["cost"] = { { "i", TRICKY_TREAT, 20 } } }),	-- Unlit Ogre Jack-o'-Lantern (DECOR!)
+				i(282198, { ["cost"] = { { "i", TRICKY_TREAT, 20 } } }),	-- Unlit Shrieking Jack-o'-Lantern (DECOR!)
 			},
 		}),
 		n(53757, {	-- Chub <Candy & Toy Vendor>

@@ -9850,7 +9850,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
 			q(84934),	-- A Dark Descent
 			q(86962),	-- Blood in the Wound
-			q(92104),	-- Broomstick Express
 			q(91865),	-- Catch Up: Khaz Algar
 			q(91866),	-- Catch Up: The Ringing Deeps
 			q(91867),	-- Catch Up: Hallowfall
@@ -9912,7 +9911,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(92476),	--
 			q(92477),	--
 			q(92478),	--
-			q(92498),	--
 			q(92584),	--
 			q(92585),	--
 			q(92876),	--
