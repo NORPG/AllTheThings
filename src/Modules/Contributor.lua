@@ -3213,6 +3213,7 @@ MobileDB.GameObject = {
 	[523295] = true,	-- Brilliant Silver
 	[523297] = true,	-- Rich Brilliant Silver
 	[523299] = true,	-- Primal Brilliant Silver
+	[523300] = true,	-- Wild Brilliant Silver
 	[523378] = true,	-- Portal to Nagrand
 	[523409] = true,	-- Shiny Trash Can
 	[523414] = true,	-- Snake Nest (q:88658)

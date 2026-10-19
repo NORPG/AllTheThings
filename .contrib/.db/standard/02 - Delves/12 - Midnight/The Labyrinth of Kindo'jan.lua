@@ -10,6 +10,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 		["maps"] = {
 			2648,	-- De Empire's Rest
 		},
+		["cr"] = 275658,	-- Enter Labyrinth of Kindo'jan
 		["timeline"] = { ADDED_12_1_5 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -493,6 +494,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				o(677414, {	-- Mislaid Curiosity
 					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
+				}),
+				o(677417, {	-- Mislaid Curiosity
 				}),
 				o(677418, {	-- Mislaid Curiosity
 					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",

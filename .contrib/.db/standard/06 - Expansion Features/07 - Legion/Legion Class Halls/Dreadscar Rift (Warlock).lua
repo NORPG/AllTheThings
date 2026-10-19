@@ -819,6 +819,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(46238, {	-- If You Build It
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
+						["altQuests"] = { 94850 },	-- If You Build It (Remix)
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_2_0 },
@@ -830,6 +831,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(94850, {	-- If You Build It (Remix)
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
+						["altQuests"] = { 46238 },	-- If You Build It
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },

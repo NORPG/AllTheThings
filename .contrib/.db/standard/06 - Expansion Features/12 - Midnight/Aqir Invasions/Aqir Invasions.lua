@@ -109,45 +109,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							["groups"] = bubbleDownRep(FACTION_AQIR_RESEARCH_ENCLAVE, {
 								{		-- Neutral --
 								}, {	-- Friendly --
-									i(274927, {	-- Aqir Wingreaver (PET!)
-										["cost"] = { { "c", VOIDLIGHT_MARL, 1000 } },
-									}),
-									i(275873, {	-- Dormant Brood Egg (DECOR!)
-										["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
-									}),
-									i(275869, {	-- Nourished Brood Eggs (DECOR!)
-										["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
-									}),
+									i(274927, { ["cost"] = { { "c", VOIDLIGHT_MARL, 1000 } } }),	-- Aqir Wingreaver (PET!)
+									i(275873, { ["cost"] = { { "c", VOIDLIGHT_MARL, 250 } } }),	-- Dormant Brood Egg (DECOR!)
+									i(275869, { ["cost"] = { { "c", VOIDLIGHT_MARL, 250 } } }),	-- Nourished Brood Eggs (DECOR!)
 								}, {	-- Honored --
-									i(274923, {	-- Aqir Scuttler (PET!)
-										["cost"] = { { "c", VOIDLIGHT_MARL, 1000 } },
-									}),
-									i(275879, {	-- Dormant Brood Egg Cluster (DECOR!)
-										["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
-									}),
-									i(275867, {	-- Nourished Brood Egg Cluster (DECOR!)
-										["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
-									}),
+									i(274923, { ["cost"] = { { "c", VOIDLIGHT_MARL, 1000 } } }),	-- Aqir Scuttler (PET!)
+									i(275879, { ["cost"] = { { "c", VOIDLIGHT_MARL, 250 } } }),	-- Dormant Brood Egg Cluster (DECOR!)
+									i(275867, { ["cost"] = { { "c", VOIDLIGHT_MARL, 250 } } }),	-- Nourished Brood Egg Cluster (DECOR!)
 								}, {	-- Revered --
-									i(276927, {	-- Aqir Razorwing (PET!)
-										["cost"] = { { "c", VOIDLIGHT_MARL, 2000 } },
-									}),
-									i(275871, {	-- Dormant Clutch of Brood Eggs (DECOR!)
-										["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
-									}),
-									i(275865, {	-- Nourished Clutch of Brood Eggs (DECOR!)
-										["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
-									}),
+									i(276927, { ["cost"] = { { "c", VOIDLIGHT_MARL, 2000 } } }),	-- Aqir Razorwing (PET!)
+									i(275871, { ["cost"] = { { "c", VOIDLIGHT_MARL, 500 } } }),	-- Dormant Clutch of Brood Eggs (DECOR!)
+									i(275865, { ["cost"] = { { "c", VOIDLIGHT_MARL, 500 } } }),	-- Nourished Clutch of Brood Eggs (DECOR!)
 								}, {	-- Exalted --
-									i(280050, {	-- Aqir Hunter's Trophy (DECOR!)
-										["cost"] = { { "c", VOIDLIGHT_MARL, 1000 } },
-									}),
-									i(276926, {	-- Corrupted Swarmer (MOUNT!)
-										["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
-									}),
-									i(275039, {	-- Curse of the Aqir (TOY!)
-										["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } },
-									}),
+									i(280050, { ["cost"] = { { "c", VOIDLIGHT_MARL, 1000 } } }),	-- Aqir Hunter's Trophy (DECOR!)
+									i(276926, { ["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } } }),	-- Corrupted Swarmer (MOUNT!)
+									i(275039, { ["cost"] = { { "c", VOIDLIGHT_MARL, 2500 } } }),	-- Curse of the Aqir (TOY!)
 								},
 							}),
 						}),

@@ -143,19 +143,30 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 			q(63501, {	-- It's Called Borrowing
 				["sourceQuests"] = { 63498 },	-- Brawl or Brew
 				["provider"] = { "i", 184894 },	-- Thurgaden's Designs
+				["qis"] = {
+					184916,	-- Boiling Flamecore (QI!)
+					184917,	-- Flamepoint Engraver (QI!)
+				},
 				["groups"] = {
-					i(184916),	-- Boiling Flamecore (QI!)
-					i(184915),	-- Darkforged Ingot (QI!)
-					i(184917),	-- Flamepoint Engraver (QI!)
+					o(367037, {	-- Darkforged Ingot
+						["coords"] = {
+							{ 54.4, 27.0, 1186 },
+							{ 59.6, 28.8, 1186 },
+							{ 60.8, 22.4, 1186 },
+							{ 62.2, 19.4, 1186 },
+							{ 64.0, 20.4, 1186 },
+							{ 66.2, 30.7, 1186 },
+							{ 67.4, 28.2, 1186 },
+						},
+						["groups"] = { i(184915) },	-- Darkforged Ingot (QI!)
+					}),
 				},
 			}),
 			q(63502, {	-- Weapons o' the Dark Iron
 				["sourceQuests"] = { 63501 },	-- It's Called Borrowing
 				["provider"] = { "n", 144154 },	-- Anvil-Thane Thurgaden
 				["coord"] = { 57.2, 31.9, 1186 },
-				["groups"] = {
-					iensemble(184922),	-- Arsenal: Lavaforge Armaments
-				},
+				["groups"] = { iensemble(184922) },	-- Arsenal: Lavaforge Armaments (COSMETIC!)
 			}),
 			q(65563, {	-- Delivery for Kasea
 				["sourceQuests"] = { 63502 },	-- Weapons o' the Dark Iron
@@ -167,7 +178,16 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				["provider"] = { "n", 144119 },	-- Kasea Angerforge
 				["coord"] = { 47.7, 47.0, 1186 },
 				["groups"] = {
-					i(190606),	-- Charred Steak (QI!)
+					o(375827, {	-- Crate of Provisions
+						["coords"] = {
+							{ 46.3, 49.8, 1186 },
+							{ 47.4, 42.7, 1186 },
+							{ 47.5, 42.4, 1186 },
+							{ 50.1, 43.0, 1186 },
+						},
+						["groups"] = { i(190606) },	-- Charred Steak (QI!)
+					}),
+					--
 					i(191123),	-- Grimhowl (MOUNT!)
 				},
 			}),
