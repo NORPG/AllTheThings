@@ -930,8 +930,8 @@ do
 	local AppearanceVariantClasses = { CLASSNAME }
 
 	local AndAppearanceCollectible = (app.IsRetail or app.IsForever) and app.ReturnTrue or function(t)
-		-- White/Grey items are not collectible in Classic builds unless they're BOP.
-		if (t.q or 0) < 2 and (t.b or 0) ~= 1 then
+		-- White/Grey shirts are not collectible in Classic builds unless they're BOP.
+		if (t.q or 0) < 2 and ((t.b or 0) ~= 1 or t.f ~= 10) and not collected_Completionist(t) then
 			return false;
 		end
 		return true;
