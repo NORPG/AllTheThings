@@ -925,13 +925,17 @@ do
 		local sourceID = t[KEY]
 		return (AccountSources[sourceID] and 1) or (AccountUniqueSources[sourceID] and 2)
 	end
+	local ClassicItemIDWhiteList = {
+		[11840] = true,	-- Master Builder's Shirt
+		[14617] = true,	-- Sawbones Shirt
+	};
 
 	-- Appearance-based Classes
 	local AppearanceVariantClasses = { CLASSNAME }
 
 	local AndAppearanceCollectible = (app.IsRetail or app.IsForever) and app.ReturnTrue or function(t)
 		-- White/Grey shirts are not collectible in Classic builds unless they're BOP.
-		if (t.q or 0) < 2 and ((t.b or 0) ~= 1 or t.f ~= 10) and not collected_Completionist(t) then
+		if (t.q or 0) < 2 and ((t.b or 0) ~= 1 or not ClassicItemIDWhiteList[t.itemID]) and not collected_Completionist(t) then
 			return false;
 		end
 		return true;
