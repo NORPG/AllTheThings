@@ -1369,7 +1369,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { 
 			}),
 		}),
 		n(DECOR, {
-			i(280757, {["timeline"] = { ADDED_12_1_0 }}),	-- Chiseled Amani Tablet (DECOR!)
+			i(280752, { ["timeline"] = { ADDED_12_1_0 } }),	-- "Cursed Gaze of Ula'tek" Mural (DECOR!)
+			i(282190, { ["timeline"] = { ADDED_12_1_5 } }),	-- Apple Bobbing Bucket (DECOR!)
+			i(280757, { ["timeline"] = { ADDED_12_1_0 } }),	-- Chiseled Amani Tablet (DECOR!)
 			i(262464),	-- Floating Void-Touched Tome (DECOR!)
 			i(262597),	-- Gilded Eversong Book (DECOR!)
 			i(253508),	-- Harandar Signpost (DECOR!)
@@ -1382,7 +1384,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { 
 			i(262615),	-- Sin'dorei Phoenix Quill (DECOR!)
 			i(262612),	-- Sturdy Ren'dorei Cask (DECOR!)
 			i(262601),	-- Wild Hanging Scroll (DECOR!)
-			i(280752, {["timeline"] = { ADDED_12_1_0 }}),	-- "Cursed Gaze of Ula'tek" Mural (DECOR!)
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = INSCRIPTION,
@@ -2325,6 +2326,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { 
 			i(262591),	-- Luxurious Silvermoon Lounge Cushion (DECOR!)
 			i(262592),	-- Plush Silvermoon Bed (DECOR!)
 			i(262599),	-- Silvermoon Curtains (DECOR!)
+			i(282184, { ["timeline"] = { ADDED_12_1_5 } }),	-- Spidery Witch Hat (DECOR!)
 			i(279353, { ["timeline"] = { ADDED_12_1_0 } }),	-- Tortollan Slingsack (DECOR!)
 			i(279350, { ["timeline"] = { ADDED_12_1_0 } }),	-- Twilight's Blade Bedroll (DECOR!)
 			i(262611),	-- Voidstrider Saddlebag (DECOR!)

@@ -2108,7 +2108,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(229197),	-- [DNT]Sack of Coffee Beans
 			i(228960),	-- [DNT]Small Bag of Coffee Beans
 			i(254693),	-- Distilled Knowledge of Timeways
-			i(252990),	-- Drustvar Candies
 			i(268368),	-- Fragmented Memento of Epoch Challenges
 			i(243213),	-- Gnawed Rabbit's Foot
 			i(243208),	-- Mangled Leg Meat

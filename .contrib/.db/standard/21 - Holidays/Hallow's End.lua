@@ -3007,6 +3007,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(98, 98, 40),	-- TODO: Check Level Requirement
 		}),
+		q(92536, {	-- Bewitched Berry Bites
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
+			["qis"] = {
+				252952,	-- Bewitched Berries (QI!)
+				252990,	-- Drustvar Choc-O-Drops (QI!)
+				253043,	-- Duskwood Caramel (QI!)
+				253042,	-- Felwood Fudge Bite (QI!)
+			},
+		}),
+		q(92104, {	-- Broomstick Express
+			["coords"] = {
+				{ 54.1, 33.8, FOUNDERS_POINT },
+			},
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
+		}),
 		q(11392, {	-- Call the Headless Horseman
 			["sourceQuests"] = {
 				11135,	-- The Headless Horseman
@@ -3024,13 +3041,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- #else
 				65,
 				-- #endif
-		}),
-		q(92104, {	-- Broomstick Express
-			["coords"] = {
-				{ 54.1, 33.8, FOUNDERS_POINT },
-			},
-			["isDaily"] = true,
-			["timeline"] = { ADDED_12_1_5 },
 		}),
 		q(29144, {	-- Clean Up in Stormwind
 			["qg"] = 51934,	-- Gretchen Fenlow
@@ -3069,9 +3079,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(98801, {	-- Community Candy Crawl
-			["coords"] = {
-				{ 48.0, 44.5, FOUNDERS_POINT },
-			},
 			["timeline"] = { ADDED_12_1_5 },
 			["qi"] = 284591,	-- Neighboorhood Candy (QI!)
 		}),
@@ -3358,6 +3365,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 							["provider"] = { "i", 20492 },	-- Stormwind Nougat
 						}),
 					},
+				}),
+				q(92537, {	-- Hexed Honeycombs
+					["timeline"] = { ADDED_12_1_5 },
+					["qi"] = 252947,	-- Honeycomb (QI!)
 				}),
 				q(8355, {	-- Incoming Gumdrop (Alliance)
 					["qg"] = 6826,	-- Talvash del Kissel
@@ -4221,19 +4232,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				273472,	-- Cordula Wolfgang <Hallow's End Decor Specialist>
 			},
 			["groups"] = {
-				i(282192, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Candlelit Shrieking Jack-o'-Lantern (DECOR!)
 				i(282194, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Candlelit Ogre Jack-o'-Lantern (DECOR!)
-				i(282196, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Filled Candy Bucket (DECOR!)
-				i(282198, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Unlit Shrieking Jack-o'-Lantern (DECOR!)
-				i(282200, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Unlit Ogre Jack-o'-Lantern (DECOR!)
+				i(282192, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Candlelit Shrieking Jack-o'-Lantern (DECOR!)
 				i(282202, { ["cost"] = { { "c", TRICKY_TREAT, 15 } } }),	-- Elaborate Heartsbane Ritual Markings (DECOR!)
-				i(282204, { ["cost"] = { { "c", TRICKY_TREAT, 25 } } }),	-- Ominous Heartsbane Shrine (DECOR!)
-				i(282206, { ["cost"] = { { "c", TRICKY_TREAT, 15 } } }),	-- Heartsbane Stone Circle (DECOR!)
+				i(282196, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Filled Candy Bucket (DECOR!)
 				i(282208, { ["cost"] = { { "c", TRICKY_TREAT, 25 } } }),	-- Heartsbane Banner (DECOR!)
-				i(282213, { ["cost"] = { { "c", TRICKY_TREAT, 25 } } }),	-- Looming Heartsbane Effigy (DECOR!)
+				i(282206, { ["cost"] = { { "c", TRICKY_TREAT, 15 } } }),	-- Heartsbane Stone Circle (DECOR!)
 				i(282289, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Horrific Head of the Horseman (DECOR!)
-				i(284212, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Technique: Apple Bobbing Bucket (RECIPE!)
+				i(282213, { ["cost"] = { { "c", TRICKY_TREAT, 25 } } }),	-- Looming Heartsbane Effigy (DECOR!)
+				i(282204, { ["cost"] = { { "c", TRICKY_TREAT, 25 } } }),	-- Ominous Heartsbane Shrine (DECOR!)
 				i(284213, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Pattern: Spidery Witch Hat (RECIPE!)
+				i(284212, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Technique: Apple Bobbing Bucket (RECIPE!)
+				i(282200, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Unlit Ogre Jack-o'-Lantern (DECOR!)
+				i(282198, { ["cost"] = { { "c", TRICKY_TREAT, 20 } } }),	-- Unlit Shrieking Jack-o'-Lantern (DECOR!)
 			},
 		}),
 		n(53757, {	-- Chub <Candy & Toy Vendor>

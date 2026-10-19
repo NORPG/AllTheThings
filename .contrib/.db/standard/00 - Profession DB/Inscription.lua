@@ -1925,3 +1925,4 @@ i(0, 1313522);	-- Eredath Artisan's Workbench
 i(0, 1315335);	-- Fae Moonbough Scroll
 i(0, 1316306);	-- Levitating Lich Library
 --- ITEM ---
+i(284212, 1315433);	-- Apple Bobbing Bucket

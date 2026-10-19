@@ -2043,3 +2043,4 @@ i(0, 1315445);	-- Round Nomad's Cushion
 --- ITEM ---
 i(284263, 1315766);	-- Beloved Murloc Plushie
 i(284250, 1315691);	-- Lillistrasza's Lucky Duck Plushie
+i(284213, 1315440);	-- Spidery Witch Hat

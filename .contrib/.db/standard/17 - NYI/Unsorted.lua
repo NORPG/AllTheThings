@@ -58,8 +58,6 @@ root(ROOTS.Unsorted, {
 			i(281218),	-- Ensemble: Pastry Chef's Uniform
 			i(281219),	-- Ensemble: Sauce Chef's Uniform
 			i(281220),	-- Ensemble: Head Chef's Uniform
-			i(282184),	-- Spidery Witch Hat
-			i(282190),	-- Apple Bobbing Bucket
 			i(282273),	-- Ice Walker's Frost Fetish
 			i(282275),	-- Embered Frost Fetish
 			i(282276),	-- Frost Revenant's Frost Fetish
