@@ -60,21 +60,10 @@ root(ROOTS.Unsorted, {
 			i(281220),	-- Ensemble: Head Chef's Uniform
 			i(282184),	-- Spidery Witch Hat
 			i(282190),	-- Apple Bobbing Bucket
-			i(282192),	-- Candlelit Shrieking Jack-o'-Lantern
-			i(282194),	-- Candlelit Ogre Jack-o'-Lantern
-			i(282196),	-- Filled Candy Bucket
-			i(282198),	-- Unlit Shrieking Jack-o'-Lantern
-			i(282200),	-- Unlit Ogre Jack-o'-Lantern
-			i(282202),	-- Elaborate Heartsbane Ritual Markings
-			i(282204),	-- Ominous Heartsbane Shrine
-			i(282206),	-- Heartsbane Stone Circle
-			i(282208),	-- Heartsbane Banner
-			i(282213),	-- Looming Heartsbane Effigy
 			i(282273),	-- Ice Walker's Frost Fetish
 			i(282275),	-- Embered Frost Fetish
 			i(282276),	-- Frost Revenant's Frost Fetish
 			i(282277),	-- Wood Haunter's Frost Fetish
-			i(282289),	-- Horrific Head of the Horseman
 			i(282563),	-- Ice Walker's Bell-Scythe
 			i(282564),	-- Embered Bell-Scythe
 			i(282565),	-- Frost Revenant's Bell-Scythe
@@ -143,8 +132,6 @@ root(ROOTS.Unsorted, {
 			i(284032),	-- Frost Revenant's Gloves
 			i(284033),	-- Frost Revenant's Cloak
 			i(284034),	-- Ensemble: Frost Revenant's Guise of the Wight
-			i(284212),	-- Technique: Apple Bobbing Bucket
-			i(284213),	-- Pattern: Spidery Witch Hat
 			i(284233),	-- Baker's Sapphire Tray
 			i(284234),	-- Baker's Emerald Tray
 			i(284235),	-- Baker's Morganite Tray
