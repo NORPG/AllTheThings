@@ -29,7 +29,6 @@ app:CreateWindow("White Collectible Transmog", {
 						for i,result in ipairs(results) do
 							tinsert(g, result);
 						end
-						tinsert(g, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(results));
 						t.OnUpdate = nil;
 						self:AssignChildren();
 					end
