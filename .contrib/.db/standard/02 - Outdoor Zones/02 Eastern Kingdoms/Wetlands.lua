@@ -665,6 +665,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 26.9, 26.0, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["qi"] = 56081,	-- Trapper's Key (QI!)
 					["groups"] = {
 						objective(1, {	-- 0/6 Gnolls Freed
 							["providers"] = {

@@ -155,7 +155,6 @@ root(ROOTS.Unsorted, {
 			i(284259),	-- Motionless Nulltide
 			i(284260),	-- Overflowing Voidspire
 			i(284402),	-- Valdrakken Resupply Coin
-			i(284591),	-- Neighborhood Candy
 			i(285044),	-- Venerated Loa Armament
 			i(285221),	-- Baker's Sapphire Bulwark
 			i(285222),	-- Baker's Emerald Bulwark
@@ -2633,7 +2632,6 @@ root(ROOTS.Unsorted, {
 			i(167746),	-- Mist Blossom
 			i(168021),	-- Nullifier Transport Relay
 			i(168187),	-- Highborne Relic
-			i(168188),	-- Sage Agate
 			i(168232),	-- Murloco's "Fish" Tacos
 			i(168237),	-- Coral Root Chunk
 			i(168242),	-- Angel Scale Starfish

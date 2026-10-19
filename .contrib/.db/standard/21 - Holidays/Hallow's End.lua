@@ -3255,6 +3255,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				65,
 				-- #endif
 		}),
+		q(92104, {	-- Broomstick Express
+			["coords"] = {
+				{ 54.1, 33.8, FOUNDERS_POINT },
+			},
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
+		}),
 		q(29144, {	-- Clean Up in Stormwind
 			["qg"] = 51934,	-- Gretchen Fenlow
 			["coord"] = { 32.2, 50.8, ELWYNN_FOREST },
@@ -3290,6 +3297,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				i(33226),	-- Tricky Treat
 			},
+		}),
+		q(98801, {	-- Community Candy Crawl
+			["coords"] = {
+				{ 48.0, 44.5, FOUNDERS_POINT },
+			},
+			["timeline"] = { ADDED_12_1_5 },
+			["qi"] = 284591,	-- Neighboorhood Candy (QI!)
 		}),
 		q(11356, {	-- Costumed Orphan Matron
 			["qgs"] = {
@@ -3915,6 +3929,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				i(34077),	-- Crudely Wrapped Gift
 			},
 		}),
+		q(92455, {	-- Specter Inspector
+			["coords"] = {
+				{ 54.1, 33.8, FOUNDERS_POINT },
+			},
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
+			["qi"] = 249386,	-- Ghost Gear
+		}),
 		q(29054, {	-- Stink Bombs Away! (Alliance)
 			["sourceQuest"] = 29074,	-- A Season for Celebration (Alliance)
 			["qg"] = 51934,	-- Gretchen Fenlow
@@ -4001,6 +4023,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				i(20557),	-- Hallow's End Pumpkin Treat
 				i(34068),	-- Weighted Jack-o'-Lantern
 			},
+		}),
+		q(92498, {	-- Sugar Run (Drustvar)
+			["coords"] = {
+				{ 54.0, 33.8, FOUNDERS_POINT },
+			},
+			["maps"] = { DRUSTVAR },
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
+		}),
+		q(95826, {	-- Sugar Run (Felwood)
+			["coords"] = {
+				{ 54.0, 33.8, FOUNDERS_POINT },
+			},
+			["maps"] = { FELWOOD },
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
+		}),
+		q(93400, {	-- Sugar Run (Duskwood)
+			["coords"] = {
+				{ 54.0, 33.8, FOUNDERS_POINT },
+			},
+			["maps"] = { DUSKWOOD },
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
 		}),
 		q(29402, {	-- Taking Precautions (Alliance)
 			["sourceQuest"] = 29399,	-- Shopping Around (Alliance)
@@ -4225,6 +4271,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
+		}),
+		q(92535, {	-- Witchbane Truffles
+			["timeline"] = { ADDED_12_1_5 },
+			["qi"] = 257891,	-- Dog Whistle (QI!)
 		}),
 		q(64546,	-- Visions of Sire Denathrius
 		bubbleDownSelf({

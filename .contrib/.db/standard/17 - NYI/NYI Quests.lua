@@ -9862,7 +9862,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(86905),	-- No More Sick Days
 			q(87000),	-- No Wood Left Behind
 			q(93452),	-- Retrieved Crumpled Present
-			q(92455),	-- Specter Inspector
 			q(86960),	-- The Key to Good Health
 			q(85017),	-- Tracking Quest to Send Mailer [DNT]
 			q(86936),	-- Warped Wood
@@ -9914,7 +9913,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(92477),	--
 			q(92478),	--
 			q(92498),	--
-			q(92535),	--
 			q(92536),	--
 			q(92537),	--
 			q(92584),	--
@@ -9928,7 +9926,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(93331),	--
 			q(93334),	--
 			q(93398),	--
-			q(93400),	--
 			q(93401),	--
 			q(93402),	--
 			q(93405),	--

@@ -1060,6 +1060,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(154120),	-- Owlseye
 			i(154125),	-- Royal Quartz
 			i(153701),	-- Rubellite
+			i(168188, { ["timeline"] = { ADDED_8_2_0 } }),	-- Sage Agate
 			i(168192, { ["timeline"] = { ADDED_8_2_0 } }),	-- Sand Spinel
 			i(154121),	-- Scarlet Diamond
 			i(168191, { ["timeline"] = { ADDED_8_2_0 } }),	-- Sea Currant

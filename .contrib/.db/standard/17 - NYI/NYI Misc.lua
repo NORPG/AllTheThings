@@ -2110,7 +2110,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(254693),	-- Distilled Knowledge of Timeways
 			i(252990),	-- Drustvar Candies
 			i(268368),	-- Fragmented Memento of Epoch Challenges
-			i(249386),	-- Ghost Gear
 			i(243213),	-- Gnawed Rabbit's Foot
 			i(243208),	-- Mangled Leg Meat
 			i(243197),	-- Matured Hoof Piece
