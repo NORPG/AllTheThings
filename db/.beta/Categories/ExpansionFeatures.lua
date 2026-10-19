@@ -2323,7 +2323,7 @@ i(62468,{b=1,cost={{"c",391,125}},f=53,lvl=32,minReputation={1177,42000},spellID
 h(-63,{
 p(278,{b=1,crs={47676},itemID=64403,npcID=48641,spellID=90637})})}})}}),
 x(5,{awp=50004,g={
-h(-416,{awp=50300,description="During 5.3 a big battle occured in Barrens.",maps={1,10,390},rwp=50400,u=2,g={
+h(-416,{awp=50300,description="During 5.3 a big battle occurred in Barrens.",maps={1,10,390},rwp=50400,u=2,g={
 h(-12,{u=2,g={
 ach(8307,{r=1,u=2,g={
 title(228,{r=1,u=2})}}),
@@ -9839,9 +9839,9 @@ q(34587,{coords={
 q(34461,{coords={
 [590]={{52.4,53.3}}},lvl=10,qgs={78466},r=1,sourceQuests={34822,34823,34824}}),
 q(36100,{coords={
-[582]={{29.2,33.1},{41.3,49.4}}},description="Becomes available after completing any seconday profession intro quest.",DisablePartySync=1,lvl=10,qgs={77209},r=2,sourceQuests={34586}}),
+[582]={{29.2,33.1},{41.3,49.4}}},description="Becomes available after completing any secondary profession intro quest.",DisablePartySync=1,lvl=10,qgs={77209},r=2,sourceQuests={34586}}),
 q(37669,{coords={
-[590]={{37.6,50.3},{42.2,55.6},{52.4,53.3}}},description="Becomes available after completing any seconday profession intro quest.",DisablePartySync=1,lvl=10,qgs={78466},r=1,sourceQuests={34378}}),
+[590]={{37.6,50.3},{42.2,55.6},{52.4,53.3}}},description="Becomes available after completing any secondary profession intro quest.",DisablePartySync=1,lvl=10,qgs={78466},r=1,sourceQuests={34378}}),
 q(36687,{coords={
 [582]={{30.7,31.8},{31.4,31}}},isDaily=1,lvl=40,providers={{"o",236165}},r=2,u=2}),
 q(36700,{coords={
@@ -14290,9 +14290,9 @@ i(144443,{awp=70003,c={9}})}}),
 q(46240,{awp=70200,c={9},coords={
 [717]={{35.3,38.5}}},lvl=45,qgs={119166},sourceQuests={46237},g={
 i(144444,{awp=70003,c={9}})}}),
-q(46238,{awp=70200,c={9},coords={
+q(46238,{altQuests={94850},awp=70200,c={9},coords={
 [717]={{35.3,38.5}}},cost={{"i",127845,1},{"i",130175,3},{"i",123919,5}},lvl=45,qgs={119166},sourceQuests={46237}}),
-q(94850,{awp=110205,c={9},coords={
+q(94850,{altQuests={46238},awp=110205,c={9},coords={
 [717]={{35.3,38.5}}},lvl=45,qgs={119166},rwp=110207,sourceQuests={46237},u=2}),
 q(46241,{awp=70200,c={9},coords={
 [717]={{35.3,38.5}}},lvl=45,qgs={119166},sourceQuests={46238,46239,46240,94850},sqreq=3}),
@@ -14582,7 +14582,7 @@ follower(642,{c={11}})}}),
 q(42037,{c={11},coords={
 [747]={{52.6,51.4}}},lvl=10,qgs={98002},sourceQuests={42036,42038,42039}}),
 q(43991,{c={11},coords={
-[747]={{44.6,50}}},description="Feral stone: Shapeshift into cat form and use Prowl.\nRestoration stone: Heal the sampling infront of the stone.\nBalance stone: Target the candles and use Moonfire.\nGuardian stone: Just be a Bear.",lvl=10,qgs={103832},sourceQuests={42036}}),
+[747]={{44.6,50}}},description="Feral stone: Shapeshift into cat form and use Prowl.\nRestoration stone: Heal the sampling in front of the stone.\nBalance stone: Target the candles and use Moonfire.\nGuardian stone: Just be a Bear.",lvl=10,qgs={103832},sourceQuests={42036}}),
 q(44075,{c={11},coords={
 [715]={{31.1,36.5}}},lvl=10,qgs={112544},sourceQuests={43991},g={
 i(139469,{c={11}})}}),
@@ -15520,7 +15520,7 @@ cl(12.577,{
 i(141409,{b=1,c={12},description="Has a chance to drop from any creature in Suramar.",maps={680},questID=44455,spellID=226812,type="ihqt"}),
 n(113935,{c={12},coords={
 [680]={{28.2,70.2}}},cost={{"i",141409,1}},description="You must have |cFF4A54E8Candrael's Charm|r in your bags before talking to Candrael. After asking her about the initials on the Charm, she will kick you off the cliff towards Downfall.\n|cFFE50D12NOTE:|rIf, by any chance, Charm is not consumed in the process, or you are not getting any loot, you will need to destroy it before re-trying to kill Downfall. DO NOT try to keep the Charm as a memento in your bank.",g={
-n(111110,{c={12},description="While near Downfall his winds will keep you aloft while you fight him.\nHe will occassionaly knock you back. Make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",g={
+n(111110,{c={12},description="While near Downfall his winds will keep you aloft while you fight him.\nHe will occasionally knock you back. Make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",g={
 i(139549,{b=1,c={12},f=55,spellID=220658,g={
 artifact(982,{c={12}})}})}})}})}),
 gt(419,{c={12},crs={112374,112375,112376,112377,112378,112379,112380,112381,112384,112385,112387,112388,112389,112391,112394,112395,112396,112397,112398,112399},questID=44707,g={
@@ -29586,7 +29586,7 @@ i(181340,{customCollect={"SL_COV_VEN"}}),
 i(181391,{customCollect={"SL_COV_VEN"}}),
 i(181392,{customCollect={"SL_COV_VEN"}})}}),
 h(-45,{customCollect={"SL_COV_VEN"},g={
-h(-55,{customCollect={"SL_COV_VEN"},sharedDescription="Requires joining another Venthyr player in their Ember Court scenario and interacting with the respective Exalted Guest. You must have your own Ember Court built and the rehersal court scenario completed before you can pick these quests up.",g={
+h(-55,{customCollect={"SL_COV_VEN"},sharedDescription="Requires joining another Venthyr player in their Ember Court scenario and interacting with the respective Exalted Guest. You must have your own Ember Court built and the rehearsal court scenario completed before you can pick these quests up.",g={
 q(65132,{customCollect={"SL_COV_VEN"},lc={1,"factionID",2454.6},lvl=60,qgs={168449},sourceQuests={59661}}),
 q(65134,{customCollect={"SL_COV_VEN"},lc={1,"factionID",2455.6},lvl=60,qgs={168450},sourceQuests={59661}}),
 q(65138,{customCollect={"SL_COV_VEN"},lc={1,"factionID",2461.6},lvl=60,qgs={171852},sourceQuests={59661}}),

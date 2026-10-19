@@ -6745,6 +6745,9 @@ i(33226,{b=1,e=16,f=55,spellID=44436}),
 crit(17606,{achID=1040,e=16,id=5,r=2})}}),
 q(43259,{awp=70003,coords={
 [627]={{47.4,40.6}}},e=16,isYearly=1,lvl=40,maps={641},qgs={109854}}),
+q(92536,{awp=120105,e=16,isDaily=1,qis={252952,252990,253042,253043}}),
+q(92104,{awp=120105,coords={
+[2352]={{54.1,33.8}}},e=16,isDaily=1}),
 q(11392,{awp=20202,e=16,lvl=10,maps={435,436},providers={{"o",186267}},rwp=30300,sourceQuests={11135,11220},u=2}),
 q(29144,{awp=40202,coords={
 [37]={{32.2,50.8}}},e=16,isDaily=1,lvl=10,maps={84},qgs={51934},qis={69191},r=2,g={
@@ -6754,6 +6757,7 @@ q(29375,{awp=40202,coords={
 [18]={{62.4,66.7}}},e=16,isDaily=1,lvl=10,maps={90},qgs={53763},qis={70727},r=1,sourceQuests={29400,53122},g={
 i(33226,{b=1,e=16,f=55,spellID=44436}),
 crit(3219,{achID=1041,e=16,id=3,r=1})}}),
+q(98801,{awp=120105,e=16,qis={284591}}),
 q(11356,{awp=20202,e=16,isBreadcrumb=1,lvl=10,maps={10,71,83,84,87,89,103,109,111,120,125,210},nextQuests={11360,11439,11440},qgs={18927,19148,19171,19172,19173,20102},r=2}),
 q(1658,{coords={
 [25]={{50,57.2}}},e=16,isYearly=1,maps={18,21},qgs={15199},r=2,rwp=40003,u=2,g={
@@ -6797,6 +6801,7 @@ q(8311,{awp=10800,coords={
 q(8356,{coords={
 [84]={{60.4,75.3}}},e=16,qgs={6740},qis={20492},r=2,repeatable=1,g={
 i(20492)}}),
+q(92537,{awp=120105,e=16,isDaily=1,qis={252947}}),
 q(8355,{coords={
 [87]={{36,4}}},e=16,qgs={6826},qis={20494},r=2,repeatable=1,g={
 i(20494)}}),
@@ -6858,6 +6863,8 @@ q(12155,{awp=20202,coords={
 [18]={{60.8,53.6}},
 [94]={{47.2,46.4}}},e=16,isDaily=1,lvl=10,providers={{"o",186887}},qis={36876},r=1,g={
 i(34077,{b=1,e=16,f=55,spellID=44245})}}),
+q(92455,{awp=120105,coords={
+[2352]={{54.1,33.8}}},e=16,isDaily=1,qis={249386}}),
 q(29054,{awp=40202,coords={
 [37]={{32.2,50.8}}},e=16,isDaily=1,lvl=10,qgs={51934},r=2,sourceQuests={29074},g={
 i(33226,{b=1,e=16,f=55,spellID=44436}),
@@ -6885,6 +6892,12 @@ q(11219,{awp=20202,coords={
 i(20557,{b=1,e=16,f=55,spellID=24930}),
 i(34068,{e=16,f=55,spellID=44212}),
 crit(2284,{achID=289,awp=30002,e=16,id=5})}}),
+q(92498,{awp=120105,coords={
+[2352]={{54,33.8}}},e=16,isDaily=1,maps={896}}),
+q(95826,{awp=120105,coords={
+[2352]={{54,33.8}}},e=16,isDaily=1,maps={77}}),
+q(93400,{awp=120105,coords={
+[2352]={{54,33.8}}},e=16,isDaily=1,maps={47}}),
 q(29402,{awp=40202,coords={
 [84]={{64,46.4}}},e=16,qgs={54021},qis={3371,10940,71035},r=2,sourceQuests={29399},g={
 o(209059,{coords={
@@ -6929,13 +6942,13 @@ q(29411,{awp=40202,coords={
 [84]={{55.3,43.5}}},description="Does not matter who you give it to, you still get the pet!",e=16,providers={{"o",209072}},qis={71057},r=2,sourceQuests={29403}}),
 q(29428,{awp=40202,coords={
 [18]={{65.8,74.8}}},description="Does not matter who you give it to, you still get the pet!",e=16,maps={85},providers={{"o",209094}},qis={71057},r=1,sourceQuests={29427}}),
+q(92535,{awp=120105,e=16,isDaily=1,qis={257891}}),
 q(64546,{awp=90100,coords={
 [1525]={{28,43}}},crs={164966,165196},customCollect={"SL_COV_VEN"},description="Speak with Theotar within The Ember Court scenario to spawn the 'Vision of Sire Denathrius'. During the final Tribute stage, accept the quest to receive the permanent unlock for your Ember Court.",e=16,lvl=60,maps={1644},qgs={180458},repeatable=1,g={
 cq(61458,{b=1,customCollect={"SL_COV_VEN"},e=16,itemID=181442,spellID=336533})}}),
 q(76075,{awp=100107,coords={
 [18]={{62.4,66.6}},
-[37]={{31.9,50}}},e=16,lvl=10,qgs={53865,53869},g={
-i(206596,{e=16,f=55})}}),
+[37]={{31.9,50}}},e=16,lvl=10,qgs={53865,53869},qis={206596}}),
 q(76072,{awp=100107,coords={
 [18]={{81.2,44.6}}},e=16,lvl=10,qgs={206158},sourceQuests={76075},g={
 i(33226,{b=1,e=16,f=55,spellID=44436})}}),
@@ -7025,6 +7038,20 @@ o(244568,{coords={
 cq(39865,{b=1,e=16,itemID=128874,spellID=192472}),
 ach(10365,{e=16})}})}}),
 h(-58,{e=16,g={
+h(-22,{awp=120105,e=16,g={
+de(26012,{cost={{"c",33226,20}},crs={273472},e=16,itemID=282194,spellID=1313177}),
+de(26011,{cost={{"c",33226,20}},crs={273472},e=16,itemID=282192,spellID=1313175}),
+de(26881,{cost={{"c",33226,15}},crs={273472},e=16,itemID=282202,spellID=1313186}),
+de(26016,{cost={{"c",33226,20}},crs={273472},e=16,itemID=282196,spellID=1313179}),
+de(26884,{cost={{"c",33226,25}},crs={273472},e=16,itemID=282208,spellID=1313192}),
+de(26883,{cost={{"c",33226,15}},crs={273472},e=16,itemID=282206,spellID=1313190}),
+de(26054,{cost={{"c",33226,20}},crs={273472},e=16,itemID=282289,spellID=1313385}),
+de(26880,{cost={{"c",33226,25}},crs={273472},e=16,itemID=282213,spellID=1313216}),
+de(26885,{cost={{"c",33226,25}},crs={273472},e=16,itemID=282204,spellID=1313188}),
+r(1315440,{cost={{"c",33226,20}},crs={273472},e=16,itemID=284213,requireSkill=197,skillID=2918}),
+r(1315433,{cost={{"c",33226,20}},crs={273472},e=16,itemID=284212,requireSkill=773,skillID=2913}),
+de(26053,{cost={{"c",33226,20}},crs={273472},e=16,itemID=282200,spellID=1313184}),
+de(26052,{cost={{"c",33226,20}},crs={273472},e=16,itemID=282198,spellID=1313181})}}),
 n(53757,{awp=40202,coords={
 [18]={{62.1,66.4}}},e=16,r=1,g={
 i(122338,{awp=60100,b=2,cost={{"i",33226,250}},e=16,f=55,spellID=180733}),

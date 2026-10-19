@@ -28,7 +28,7 @@ o(252563,{coords={
 o(252564,{coords={
 [630]={{54,26.1}}},description="|cFFFFFFFFStep 10:|r This step will send you to |cFFFFD700Azsuna|r. Head to |cFFFFFFFF54.02, 26.18|r, walk down into the cave and click the |cFFFFD700Hungering Orb|r that is under the plant next to the second pillar.",model=249664,modelScale=2,questID=43737,sourceQuests={43736}}),
 o(252565,{coords={
-[790]={{79.5,89.3}}},description="|cFFFFFFFFStep 11:|r This step will send you to |cFFFFD700Eye of Azshara|r, the zone. Head to |cFFFFFFFF79.52, 89.31|r. Swim down to find a wrecked ship, you can swim into the ship between the anchor and the rock throught the seaweed. Swim up and to the platform above and through the hole on right side. Now swim through the seaweed hole on left and down. Turn around and swim under the beam then through the seaweed to the left. Click the  |cFFFFD700Hungering Orb|r that is on the right side in the water.",model=249664,modelScale=2,questID=43760,sourceQuests={43737}}),
+[790]={{79.5,89.3}}},description="|cFFFFFFFFStep 11:|r This step will send you to |cFFFFD700Eye of Azshara|r, the zone. Head to |cFFFFFFFF79.52, 89.31|r. Swim down to find a wrecked ship, you can swim into the ship between the anchor and the rock through the seaweed. Swim up and to the platform above and through the hole on right side. Now swim through the seaweed hole on left and down. Turn around and swim under the beam then through the seaweed to the left. Click the  |cFFFFD700Hungering Orb|r that is on the right side in the water.",model=249664,modelScale=2,questID=43760,sourceQuests={43737}}),
 o(252434,{coords={
 [646]={{37.1,71.8}}},description="|cFFFFFFFFStep 12:|r This step will send you to |cFFFFD700Broken Shore|r. Head to |cFFFFFFFF37.17, 71.82|r. Click the |cFFFFD700Hungering Orb|r that is on the stone table near |cFFFFD700Drak'Thul|r",model=249664,modelScale=2,questID=43761,sourceQuests={43760}})}),
 h(-46,{
@@ -372,7 +372,7 @@ n(185083,{coords={
 h(-39,{description="You should receive a letter from Ve'nari with the toy attached 5 days after interacting with her decoy corpse in Zereth Mortis.",sourceQuests={65488},g={
 toy(192485,{b=1})}})}})}}),
 x(10,{awp=100002,g={
-ah(201933,{description="***Debugg Mode enabled is required to see all the steps.***\n\nFollow the steps as ordered in the descriptions.",displayID=110513,modelScale=1.6,type="i",g={
+ah(201933,{description="***Debug Mode must be enabled to see all the steps.***\n\nFollow the steps as ordered in the descriptions.",displayID=110513,modelScale=1.6,type="i",g={
 o(377485,{coords={
 [2022]={{43.7,71.7}}},description="Step 1: Get a Sour Apple.",modelScale=0.1,g={
 i(194122,{spellID=376662})}}),
@@ -420,7 +420,7 @@ n(205876,{coords={
 [2022]={{58.5,67.7}}},nomerge=1,questID=76186}),
 n(205876,{coords={
 [2022]={{63.9,44.8}}},nomerge=1,questID=76187})})}}),
-ah(376873,{cost={{"i",202042,1}},description="***Debugg Mode enabled is required to see all the steps. Fishing is required for this Secret!***\n\nYou need to buy an Immaculate Bag of Swog Treasures to get the Aquatic Shades, which costs 1 Gold Coin of the Isles. If you're unlucky, this means fishing up a total of 75 Copper Coins of the Isles to trade up!",displayID=102074,modelScale=0.8,type="s",g={
+ah(376873,{cost={{"i",202042,1}},description="***Debug Mode must be enabled to see all the steps. Fishing is required for this Secret!***\n\nYou need to buy an Immaculate Bag of Swog Treasures to get the Aquatic Shades, which costs 1 Gold Coin of the Isles. If you're unlucky, this means fishing up a total of 75 Copper Coins of the Isles to trade up!",displayID=102074,modelScale=0.8,type="s",g={
 hqt(72676,{coords={
 [2022]={{19.6,36.5}}},description="Head to The Bubble Bath Dive Bar, off the coast of The Waking Shores. While wearing the Aquatic Shades, find an empty dance floor and walk onto it; you'll receive the debuff Dance Dance 'Til You're Dead. Stay on the dance floor until this debuff wears off."}),
 o(385001,{coords={
@@ -819,7 +819,7 @@ o(408081,{maps={337},providers={{"i",208092}}}),
 o(408082,{maps={337},providers={{"i",208092}}}),
 o(408083,{maps={337},providers={{"i",208092}}}),
 n(210398,{coords={
-[210]={{58.9,78.1}}},description="Requries 3 people with Torch of Pyrreth to summon.",providers={{"i",208092}},questID=78098,g={
+[210]={{58.9,78.1}}},description="Requires 3 people with Torch of Pyrreth to summon.",providers={{"i",208092}},questID=78098,g={
 i(208984,{b=1,spellID=424084})}}),
 o(409914,{coords={
 [77]={{50.2,25.7}}},description="Takes 4 people. Someone to control the Water Elemental, 3 people to Envelope",questID=78099,g={
@@ -1012,7 +1012,7 @@ s(293227,246970,{f=2,loc=41}),
 s(293229,246972,{f=2,loc=47})}})}}),
 i(262559,{b=1,spellID=1268983})}}),
 o(616681,{awp=120001,coords={
-[46]={{68.5,20.9}}},cost={{"i",262559,1}},description="In the center of the Karazhan Catacombs clock room, can only be seen with buffs from the Oddsight Focus, Starry-Eyed Goggles, and having posession of the Spare Key.",providers={{"i",228966},{"i",260533}},g={
+[46]={{68.5,20.9}}},cost={{"i",262559,1}},description="In the center of the Karazhan Catacombs clock room, can only be seen with buffs from the Oddsight Focus, Starry-Eyed Goggles, and having possession of the Spare Key.",providers={{"i",228966},{"i",260533}},g={
 i(262561)}}),
 o(475116,{coords={
 [46]={{47,78.1},{56.3,73.3},{70.1,90.3},{70.3,81},{70.5,61.7},{70.9,53.9}}},description="These pebbles can be found throughout the catacombs.\n1. Halfway down the entrance stairwell, behind a candelabra sitting on the bannister.\n2. Behind the frame of the archway halfway down the entrance stairwell, opposite the skeleton sitting on the other side of the arch.\n3. To the left of the tilted Replica Owl of the Watchers in the first room after the entrance stairs.\n4. On the inside corner of the doorway to the cat room, interactable through the gate.\n5. In the hand of a skeleton in the corner of the hallway leading to the Felcycle.\n6. On a shelf in the back in the Nature statue room."}),

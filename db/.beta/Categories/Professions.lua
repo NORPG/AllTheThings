@@ -1620,7 +1620,7 @@ q(39339,{coords={
 q(39340,{coords={
 [627]={{41.6,32.8}}},cost={{"i",128304,100},{"i",124106,2},{"i",124116,1},{"i",124124,1}},lvl=45,qgs={92458},requireSkill=171,sourceQuests={39338}}),
 q(39341,{coords={
-[627]={{41.6,32.8}}},cost={{"i",127840,1}},description="Need to bring a Skaggldrynk and drink infront of the boss door, located west section after Inquisitor Tormentorum.",lvl=45,maps={710,711,712},qgs={92458},requireSkill=171,sourceQuests={39339,39340}}),
+[627]={{41.6,32.8}}},cost={{"i",127840,1}},description="Need to bring a Skaggldrynk and drink in front of the boss door, located west section after Inquisitor Tormentorum.",lvl=45,maps={710,711,712},qgs={92458},requireSkill=171,sourceQuests={39339,39340}}),
 q(39343,{coords={
 [678]={{40,50}}},lvl=45,maps={710,711,712},qss={127877},requireSkill=171,sourceQuests={39339,39340}}),
 q(39344,{coords={
@@ -8898,7 +8898,7 @@ o(402868,{awp=100100,coords={
 [2133]={{47.2,48.6}}},questID=76102,requireSkill=197,g={
 i(206019,{b=1,requireSkill=197,spellID=393144})}}),
 o(380763,{coords={
-[2025]={{58.6,45.8}}},description="Interact with the loom and complete the minigame to be awared this treasure.",questID=70372,requireSkill=197,g={
+[2025]={{58.6,45.8}}},description="Interact with the loom and complete the minigame to be awarded this treasure.",questID=70372,requireSkill=197,g={
 i(201019,{b=1,requireSkill=197,spellID=392923})}}),
 o(380597,{coords={
 [2023]={{35.3,40.1}}},questID=70295,requireSkill=197,g={
