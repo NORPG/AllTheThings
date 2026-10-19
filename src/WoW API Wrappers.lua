@@ -180,7 +180,7 @@ AssignAPIWrapper("GetProfessionInfoByRecipeID", C_TradeSkillUI and C_TradeSkillU
 	function(recipeID)
 		local professionID = GetTradeSkillLineForRecipe(recipeID);
 		if professionID then return { professionID = professionID }; end
-	end);
+	end or function() end);
 AssignAPIWrapper("IsTradeSkillLinked", C_TradeSkillUI and C_TradeSkillUI.IsTradeSkillLinked, IsTradeSkillLinked);
 
 -- Specialization APIs
