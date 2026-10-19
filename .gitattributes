@@ -2,6 +2,11 @@
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 * text=auto
+# executable developer tooling
+.githooks/* text eol=lf
+.contrib/db-sync/*.py text eol=lf
+.contrib/db-sync/*.sh text eol=lf
+.contrib/db-sync/*.cmd text eol=crlf
 # lua script
 *.lua       text eol=crlf
 # project config / tool config
@@ -86,6 +91,7 @@ setup.cfg export-ignore
 contrib export-ignore
 .contrib export-ignore
 .github export-ignore
+tests export-ignore
 ###############################################################################
 # using for Git LFS (Large File Storage)
 ###############################################################################

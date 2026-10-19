@@ -1,0 +1,172 @@
+---------------------------------------------------
+--          Z O N E S        M O D U L E         --
+---------------------------------------------------
+root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
+	m(MAP.MIDNIGHT.EVERSONG_WOODS, {
+		n(RARES, sharedData({ ["isDaily"] = true }, {
+			n(COMMON_BOSS_DROPS, {
+				["isDaily"] = IGNORED_VALUE,
+				["crs"] = {
+					250841,	-- Bad Zed
+					250826,	-- Banuran
+					250582,	-- Bloated Snapdragon
+					250683,	-- Coralfang
+					250719,	-- Cre'van
+					255348,	-- Dame Bloodshed
+					255302,	-- Duskburn
+					246633,	-- Harried Hawkstrider
+					250754,	-- Lady Liminus
+					250806,	-- Lost Guardian
+					255329,	-- Malfunctioning Construct
+					240129,	-- Overfester Hydra
+					250876,	-- Terrinor
+					246332,	-- Warden of Weeds
+					250780,	-- Waverly
+				},
+				["groups"] = {
+					i(257156),	-- Cerulean Hawkstrider (MOUNT!)
+					i(257147),	-- Cobalt Dragonhawk (MOUNT!)
+				},
+			}),
+			n(250841, {	-- Bad Zed
+				["coord"] = { 49.0, 87.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 92404,
+				["groups"] = {
+					i(264621),	-- Bad Zed's Worst Channeler
+					i(264536),	-- Zedling Summoning Collar
+					hqt_bonusRenown(94690, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Bad Zed
+				},
+			}),
+			n(250826, {	-- Banuran
+				["coord"] = { 56.4, 77.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 92403,
+				["groups"] = {
+					i(264552),	-- Frogskin Grips
+					i(264526),	-- Supremely Slimy Sash
+					hqt_bonusRenown(94692, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Banuran
+				},
+			}),
+			n(250582, {	-- Bloated Snapdragon
+				["coord"] = { 36.6, 64.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 92366,
+				["groups"] = {
+					i(264560),	-- Sharpclaw Gauntlets
+					i(264543),	-- Snapdragon Pantaloons
+					hqt_bonusRenown(94685, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Bloated Snapdragon
+				},
+			}),
+			n(250683, {	-- Coralfang
+				["coord"] = { 36.4, 36.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 92389,
+				["groups"] = {
+					i(264602),	-- Abyss Coral Band
+					i(264629),	-- Coralfang's Hefty Fin
+					hqt_bonusRenown(94687, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Coralfang
+				},
+			}),
+			n(250719, {	-- Cre'van
+				["coord"] = { 63.2, 50.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 92391,
+				["groups"] = {
+					i(264647),	-- Cre'van's Punisher
+					i(264573),	-- Taskmaster's Sadistic Shoulderguards
+					hqt_bonusRenown(94686, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Cre'van
+				},
+			}),
+			n(255348, {	-- Dame Bloodshed
+				["coord"] = { 44.8, 38.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 93561,
+				["groups"] = {
+					i(265609),	-- Princess Bloodshed (PET!)
+					i(264624),	-- Fang of the Dame
+					i(264595),	-- Lynxhide Shawl
+					hqt_bonusRenown(94696, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Dame Bloodshed
+				},
+			}),
+			n(255302, {	-- Duskburn
+				["coord"] = { 42.3, 69.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 93550,
+				["groups"] = {
+					--i(251791),	-- Holy Retributor's Order
+					i(264594),	-- Netherscale Cloak
+					i(264569),	-- Void-Gorged Kickers
+					hqt_bonusRenown(94694, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Duskburn
+				},
+			}),
+			n(246633, {	-- Harried Hawkstrider
+				["coord"] = { 45.0, 78.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 91315,
+				["groups"] = {
+					i(264522),	-- Striderplume Armbands
+					i(264521),	-- Striderplume Focus
+					hqt_bonusRenown(94682, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Harried Hawkstrider
+				},
+			}),
+			n(250754, {	-- Lady Liminus
+				["coord"] = { 36.6, 77.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 92393,
+				["groups"] = {
+					i(264645),	-- Aged Farstrider Bow
+					i(264612),	-- Tarnished Gold Locket
+					hqt_bonusRenown(94688, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Lady Liminus
+				},
+			}),
+			n(250806, {	-- Lost Guardian
+				--could be locked/phased behind quests in area?
+				["coord"] = { 59.1, 79.2, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 92399,
+				["groups"] = {
+					i(264575),	-- Hexwood Helm
+					i(264555),	-- Splintered Hexwood Clasps
+					hqt_bonusRenown(94693, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Lost Guardian
+				},
+			}),
+			n(255329, {	-- Malfunctioning Construct
+				["coord"] = { 51.7, 46.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 93555,
+				["groups"] = {
+					i(264603),	-- Guardian's Gemstone Loop
+					i(264584),	-- Stonecarved Smashers
+					hqt_bonusRenown(94695, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Malfunctioning Construct
+				},
+			}),
+			n(240129, {	-- Overfester Hydra (vignette - Dormant Lightbloom Hydra)
+				["coord"] = { 54.7, 60.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 92392,
+				["groups"] = {
+					i(264523),	-- Hydrafang Blade
+					i(264524),	-- Lightblighted Verdant Vest
+					hqt_bonusRenown(94684, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Overfester Hydra
+				},
+			}),
+			n(250876, {	-- Terrinor
+				["coord"] = { 40.3, 85.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 92409,
+				["groups"] = {
+					i(264546),	-- Bat Fur Boots
+					i(264537),	-- Winged Terror Gloves
+					hqt_bonusRenown(94689, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Terrinor
+				},
+			}),
+			n(246332, {	-- Warden of Weeds
+				["coord"] = { 52.7, 75.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 91280,
+				["groups"] = {
+					i(264613),	-- Steelbark Bulwark
+					i(264520),	-- Warden's Leycrook
+					hqt_bonusRenown(94681, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Warden of Weeds
+				},
+			}),
+			n(250780, {	-- Waverly
+				["cr"] = 250788,	-- Lovely Sunflower
+				["coord"] = { 34.8, 21.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+				["questID"] = 92395,
+				["groups"] = {
+					i(264910),	-- Shell-Cleaving Poleaxe
+					i(264608),	-- String of Lovely Blossoms
+					hqt_bonusRenown(94691, FACTION_SILVERMOON_COURT),	-- Bonus Rep: Waverly
+				},
+			}),
+		})),
+	}),
+}))

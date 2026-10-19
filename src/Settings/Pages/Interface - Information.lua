@@ -2,15 +2,16 @@ local _, app = ...;
 local L, settings = app.L, app.Settings;
 
 -- Global locals
-local pairs, ipairs, tonumber, math_floor, select, type, tostring, tinsert, tremove, RETRIEVING_DATA
-	= pairs, ipairs, tonumber, math.floor, select, type, tostring, tinsert, tremove, RETRIEVING_DATA;
+local pairs, ipairs, tonumber, math_floor, math_min, select, type, tostring, tinsert, tremove, RETRIEVING_DATA
+	= pairs, ipairs, tonumber, math.floor, math.min, select, type, tostring, tinsert, tremove, RETRIEVING_DATA;
 local Colorize = app.Modules.Color.Colorize;
 local GetCoordString = app.Modules.Color.GetCoordString;
 local GetPatchString = app.Modules.Color.GetPatchString;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetRelativeValue = app.GetRelativeValue;
 local wipearray = app.wipearray
-local GetRealmName = GetRealmName
+local GetRealmName = GetRealmName;
+local GetNormalizedRealmName = GetNormalizedRealmName;
 
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
@@ -19,6 +20,7 @@ local GetProfessionInfoByRecipeID = app.WOWAPI.GetProfessionInfoByRecipeID;
 local GetItemSpecInfo = app.WOWAPI.GetItemSpecInfo;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
+local GetTradeSkillDisplayName = app.WOWAPI.GetTradeSkillDisplayName;
 local IsQuestFlaggedCompletedOnAccount = app.WOWAPI.IsQuestFlaggedCompletedOnAccount;
 
 -- Settings: Interface Page
@@ -30,7 +32,7 @@ local DefaultConversionMethod = function(value)
 end
 -- Handles checking the 'text' and assigning 'reference.working' if the text is in a 'retrieving' state
 local function IsRetrievingConversionMethod(text, reference)
-	if IsRetrieving(text) then
+	if IsRetrieving(text, true) then
 		reference.working = true
 		text = RETRIEVING_DATA
 	end
@@ -62,18 +64,22 @@ local ConversionMethods = setmetatable({
 	spellID = function(spellID, reference)
 		local name = tostring(spellID);
 		if app.Settings:GetTooltipSetting("spellName") then
-			name = name .. " (" .. (app.GetSpellName(spellID, reference.rank) or "??") .. ")";
+			name = name .. " (" .. (GetSpellName(spellID) or "??");
+			if reference.rank then name = name .. " (" .. RANK .. " " .. reference.rank .. ")"; end
+			name = name .. ")";
 		end
 		return name;
 	end,
 	spellIDAndIcon = function(spellID, reference)
 		local name = tostring(spellID);
 		if app.Settings:GetTooltipSetting("spellName") then
-			name = name .. " (" .. (app.GetSpellName(spellID, reference.rank) or "??") .. ")";
+			name = name .. " (" .. (GetSpellName(spellID) or "??");
+			if reference.rank then name = name .. " (" .. RANK .. " " .. reference.rank .. ")"; end
+			name = name .. ")";
 		end
 		local icon = GetSpellIcon(spellID);
 		if icon then
-			name = "|T" .. icon .. ":0|t" .. name;
+			name = "|T" .. icon .. ":0|t " .. name;
 		end
 		return name;
 	end,
@@ -106,7 +112,7 @@ local ConversionMethods = setmetatable({
 		end
 		local icon = item and item.icon
 		if icon then
-			link = "|T" .. icon .. ":0|t" .. link
+			link = "|T" .. icon .. ":0|t " .. link
 		end
 		if app.Settings:GetTooltipSetting("itemID") then
 			return link .. " (" .. itemID .. ")"
@@ -122,11 +128,16 @@ local ConversionMethods = setmetatable({
 		end
 	end,
 	professionName = function(skillID, reference)
-		local skillName = app.WOWAPI.GetTradeSkillDisplayName(skillID)
+		local skillName = GetTradeSkillDisplayName(skillID)
 		if skillName then
 			return skillName
 		end
 		return IsRetrievingConversionMethod(GetSpellName(app.SkillDB.SkillToSpell[skillID] or 0), reference)
+	end,
+	difficultyID = function(difficultyID, reference)
+		if difficultyID and difficultyID > 0 then
+			return difficultyID
+		end
 	end,
 }, {
 	__index = function(t, key)
@@ -147,6 +158,7 @@ ConversionMethods.provider = function(provider, reference)
 	end
 	return UNKNOWN;
 end;
+ConversionMethods.qs = ConversionMethods.itemNameAndIcon
 settings.InformationTypeConversionMethods = ConversionMethods;
 
 -- Class Template for creating an Information Type instance.
@@ -215,7 +227,7 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 -- Known By / Completed By
 -- Types which have an ID which can be 'known' or 'completed' but is typically spammy to show when account-wide
 local KnownByIgnoredTypes = {
-	Achievement = app.IsRetail,
+	Achievement = true,
 	BattlePet = true,
 	BattlePetWithItem = true,
 	Illusion = true,
@@ -223,50 +235,66 @@ local KnownByIgnoredTypes = {
 	Mount = true,
 	MountWithItem = true,
 }
-
 local knownBy = {};
+--- Left and right text, color, and wrapping options for one appended tooltip row.
+--- Used by collection information processors and synchronization queue tooltips.
+---@class ATTTooltipLine
+---@field left? string Left-column text.
+---@field right? string Right-column text.
+---@field color? string Eight-digit ARGB hexadecimal color.
+---@field wrap? boolean Whether the left text wraps.
+---@field r? number Red color component.
+---@field g? number Green color component.
+---@field b? number Blue color component.
+---@field a? number Alpha color component.
 
---- Saved character identity used by tooltip grouping; text may include class color and item quantity.
----@class ATTTooltipCharacter
----@field name string? Uncolored character name used for sorting.
----@field text string? Display name, optionally colored and suffixed with realm or item quantity.
----@field realm string? Saved realm name used for grouping and suffix removal.
----@field guid string? Character GUID distinguishing characters from account-wide notices.
+--- Collection type, ID, character cache, and tracking flags supplied to KnownBy.
+--- Selects which saved collection records the character-list processor consults.
+---@class ATTKnownByReference
+---@field knownByID? number Collection ID overriding the spell ID.
+---@field spellID? SpellID Spell to find in character collection caches.
+---@field key? string Primary field identifying the collection type.
+---@field __type? string ATT object type used for account-wide filtering.
+---@field perCharacter? boolean Whether this thing is tracked per character.
+---@field CACHE? string Saved character cache containing this collection.
+
+--- Identifier, localized label, and display priority for a registered information type.
+--- Used by the Interface Information page to configure and order tooltip information.
+---@class ATTInformationType
+---@field informationTypeID string Registered information type identifier.
+---@field text? string Localized label for the information type.
+---@field priority? number Display sort order.
+
+--- Saved character identity with faction grouping and account-ignore state.
+---@class ATTTooltipCharacter: ATTCharacterIdentity
 ---@field factionID integer? Horde or Alliance faction ID used for the localized group label.
 ---@field ignored boolean? Excludes the character from tooltip lists.
 
---- A rendered tooltip row containing text and optional display formatting.
----@class ATTCharacterTooltipRow
----@field left string Text in the left column.
----@field right string? Text in the right column, such as a profession rank.
----@field wrap boolean? Allows the left text to wrap.
----@field color string? ATT color escape sequence applied to the row.
----@field r number? Red component for rows with an explicit RGB color.
----@field g number? Green component for rows with an explicit RGB color.
----@field b number? Blue component for rows with an explicit RGB color.
-
---- Format character text for flat or realm-grouped lists, preserving colors and quantities.
----@param character ATTTooltipCharacter Character record to display.
----@param stripRealm boolean? Remove the saved realm when grouping; otherwise remove the current realm.
----@return string text Colored name with the selected realm suffix removed, retaining item quantities.
-local function GetCharacterDisplayName(character, stripRealm)
-	local text = character.text or character.name or "???";
-	local realm;
-	if stripRealm then
-		realm = character.realm;
-	else
-		realm = GetRealmName();
+--- Shortens local or realm-grouped character names while preserving colors and quantities.
+---@param character ATTCharacterIdentity? Saved UI text and actual realm to format; nil yields "???".
+---@param realmName string Exact local realm name returned by GetRealmName.
+---@param normalizedRealmName string Normalized local realm name returned by GetNormalizedRealmName.
+---@param stripRealm boolean? Also remove a remote saved realm when it is already shown by a group heading.
+---@return string displayName Saved UI text with the matching realm suffix omitted, retaining colors and quantities.
+local function GetCharacterDisplayName(character, realmName, normalizedRealmName, stripRealm)
+	if not character then return "???"; end
+	local text = character.text or "???";
+	local realm = character.realm;
+	if stripRealm and realm ~= realmName and realm ~= normalizedRealmName then
+		realmName, normalizedRealmName = realm, realm;
 	end
-	if realm and realm ~= "" then
-		-- Remove only the exact realm suffix, preserving class colors and Owned By quantities.
-		local quantity = text:match(" %(x%d+%)$") or "";
-		local suffixEnd = #text - #quantity;
-		if text:sub(suffixEnd - 1, suffixEnd) == "|r" then suffixEnd = suffixEnd - 2; end
-		local suffix = "-" .. realm;
-		local suffixStart = suffixEnd - #suffix + 1;
-		if suffixStart > 0 and text:sub(suffixStart, suffixEnd) == suffix then
-			text = text:sub(1, suffixStart - 1) .. text:sub(suffixEnd + 1);
-		end
+	if not realm or realm == "" or (realm ~= realmName and realm ~= normalizedRealmName) then return text; end
+	local ending = text:match(" %(x%d+%)$") or "";
+	local display = text:sub(1, #text - #ending);
+	if display:sub(-2) == "|r" then
+		display = display:sub(1, -3);
+		ending = "|r" .. ending;
+	end
+	-- Compare suffixes literally so spaces and realm punctuation retain their meaning.
+	local suffix = "-" .. realmName;
+	if display:sub(-#suffix) ~= suffix then suffix = "-" .. normalizedRealmName; end
+	if suffix ~= "-" and display:sub(-#suffix) == suffix then
+		return display:sub(1, -#suffix - 1) .. ending;
 	end
 	return text;
 end
@@ -305,10 +333,11 @@ local function SortCharactersForGrouping(a, b, groupByRealm, groupByFaction)
 	return nameA < nameB;
 end
 --- Append the collected characters using the selected grouping settings, then clear the collection.
----@param tooltipInfo ATTCharacterTooltipRow[] Tooltip rows receiving group headings and character names.
+---@param tooltipInfo ATTTooltipLine[] Tooltip rows receiving group headings and character names.
 ---@param kind string? Localized heading with a single character-list format placeholder.
 ---@return nil
 local function BuildKnownByInfoForKind(tooltipInfo, kind)
+	local realmName, normalizedRealmName = GetRealmName(), GetNormalizedRealmName();
 	for i = #knownBy, 1, -1 do
 		if knownBy[i].ignored then tremove(knownBy, i); end
 	end
@@ -351,7 +380,7 @@ local function BuildKnownByInfoForKind(tooltipInfo, kind)
 						FlushGroup();
 						realm, faction = characterRealm, characterFaction;
 					end
-					tinsert(names, GetCharacterDisplayName(character, groupByRealm));
+					tinsert(names, GetCharacterDisplayName(character, realmName, normalizedRealmName, groupByRealm));
 				end
 			end
 			FlushGroup();
@@ -359,7 +388,7 @@ local function BuildKnownByInfoForKind(tooltipInfo, kind)
 			app.Sort(knownBy, app.SortDefaults.name);
 			local names = {};
 			for _,character in ipairs(knownBy) do
-				tinsert(names, GetCharacterDisplayName(character));
+				tinsert(names, GetCharacterDisplayName(character, realmName, normalizedRealmName));
 			end
 			tinsert(tooltipInfo, { left = kind:format(table.concat(names, ", ")), wrap = true, color = app.Colors.TooltipDescription });
 		end
@@ -367,86 +396,148 @@ local function BuildKnownByInfoForKind(tooltipInfo, kind)
 	end
 end
 local function ProcessForCompletedBy(t, reference, tooltipInfo)
+	-- If the item is a recipe, then show which characters know this recipe.
 	if reference.objectiveID then return end
-	local id = reference.questID;
+
+	-- Completed By for Quests
+	local id =
+		-- we now have Recipes which are linked to QuestID, so let's ignore showing questID completion for those since
+		-- the Recipe is shown in 'Known by'
+		not reference.recipeID
+		and reference.questID
 	if id and (not KnownByIgnoredTypes[reference.__type] or reference.perCharacter) then
+		-- Account-Wide Quests
 		if app.AccountWideQuestsDB[id] then
-			if IsQuestFlaggedCompletedOnAccount(id) then tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE or "Account-Wide"}); end
+			if IsQuestFlaggedCompletedOnAccount(id) then
+				tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE or "Account-Wide"});
+			end
 		else
 			for _,character in pairs(ATTCharacterData) do
-				if character.Quests and character.Quests[id] and not character.ignored then tinsert(knownBy, character); end
+				if not character.ignored and ((character.Quests and character.Quests[id])
+					-- perhaps expand into a separate information type instead for previously-completed quests
+					or (character.PriorQuests and character.PriorQuests[id])) then
+					tinsert(knownBy, character);
+				end
 			end
-			if #knownBy == 0 and IsQuestFlaggedCompletedOnAccount(id) then tinsert(knownBy, {text=ACCOUNT_COMPLETED_QUEST_NOTICE or "Previously completed on your Account"}); end
+			if #knownBy == 0 and IsQuestFlaggedCompletedOnAccount(id) then
+				tinsert(knownBy, {text=ACCOUNT_COMPLETED_QUEST_NOTICE or "Previously completed on your Account"});
+			end
 		end
 		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
+		return
 	end
+
+	-- Completed By for Exploration
 	local id = reference.explorationID;
 	if id then
 		for _,character in pairs(ATTCharacterData) do
-			if character.Exploration and character.Exploration[id] and not character.ignored then tinsert(knownBy, character); end
+			if character.Exploration and character.Exploration[id] then
+				tinsert(knownBy, character);
+			end
 		end
 		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
+		return
 	end
-	if app.GameBuildVersion < 60000 then
-		id = reference.achievementID;
-		if id then
-			for guid,character in pairs(ATTCharacterData) do
-				if character.Achievements and character.Achievements[id] and not character.ignored then tinsert(knownBy, character); end
+
+	-- Completed By for FirstCrafts
+	local id = reference.firstcraftID;
+	if id then
+		for _,character in pairs(ATTCharacterData) do
+			if character.FirstCrafts and character.FirstCrafts[id] then
+				tinsert(knownBy, character);
 			end
-			BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
 		end
+		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
+		return
+	end
+
+	-- Completed By for ProfessionNodes
+	local id = reference.professionnodeID;
+	if id then
+		for _,character in pairs(ATTCharacterData) do
+			if character.ProfessionNodes and character.ProfessionNodes[id] then
+				tinsert(knownBy, character);
+			end
+		end
+		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
+		return
+	end
+
+	-- Pre-WOD Known By types
+	if app.GameBuildVersion >= 60000 then
+		return;
+	end
+	local key = reference.key;
+	if not key then return; end
+	id = reference[key];
+	if not id then return; end
+
+	if key == "achievementID" then
+		-- Prior to Cata, Achievements were not tracked account wide
+		for guid,character in pairs(ATTCharacterData) do
+			if character.Achievements and character.Achievements[id] then
+				tinsert(knownBy, character);
+			end
+		end
+		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
+	else
 		local itemID = reference.itemID;
 		if itemID then
 			local knownByGUID = {};
-			id = reference.sourceID;
-			for guid,character in pairs(ATTCharacterData) do
-				if character.Transmog and character.Transmog[id] and not character.ignored then
-					if ATTAccountWideData.Sources and ATTAccountWideData.Sources[id] then character.Transmog[id] = nil; else knownByGUID[guid] = character; end
-				end
-			end
-			if app.GameBuildVersion < 30000 then
-				id = reference.spellID;
-				if id and reference.filterID == 100 then
+			if app.GameBuildVersion < 30000 and not app.IsForever then
+				-- Prior to Wrath, mounts, pets, and toys were not tracked account wide
+				if key == "mountID" then
 					for guid,character in pairs(ATTCharacterData) do
-						if character.Spells and character.Spells[id] and not character.ignored then knownByGUID[guid] = character; end
+						if character.Mounts and character.Mounts[id] then
+							knownByGUID[guid] = character;
+						end
 					end
-				end
-				id = reference.speciesID;
-				if id then
+				elseif key == "speciesID" then
 					for guid,character in pairs(ATTCharacterData) do
-						if character.BattlePets and character.BattlePets[id] and not character.ignored then knownByGUID[guid] = character; end
+						if character.BattlePets and character.BattlePets[id] then
+							knownByGUID[guid] = character;
+						end
 					end
-				end
-				if reference.toyID then
+				elseif key == "toyID" then
 					for guid,character in pairs(ATTCharacterData) do
-						if character.Toys and character.Toys[itemID] and not character.ignored then knownByGUID[guid] = character; end
+						if character.Toys and character.Toys[itemID] then
+							knownByGUID[guid] = character;
+						end
 					end
 				end
 			end
+
+			-- For the current character, count how many of the thing they own.
 			local currentCharacter = knownByGUID[app.GUID];
 			if currentCharacter then
 				local text = currentCharacter.text or "???";
 				local count = GetItemCount(itemID, true);
-				if count and count > 1 then text = text .. " (x" .. count .. ")"; end
+				if count and count > 1 then
+					text = text .. " (x" .. count .. ")";
+				end
 				knownByGUID[app.GUID] = setmetatable({ text = text }, { __index = currentCharacter });
 			end
-			for guid,character in pairs(knownByGUID) do tinsert(knownBy, character); end
+
+			-- Convert the GUID dictionary to the knownBy list.
+			for guid,character in pairs(knownByGUID) do
+				tinsert(knownBy, character);
+			end
+
+			-- All of this can be stored together.
 			BuildKnownByInfoForKind(tooltipInfo, L.OWNED_BY);
 		end
 	end
 end
-
 --- A Classic profession entry retaining its character, current rank and maximum rank.
 ---@class ATTTooltipProfessionRank
 ---@field [1] ATTTooltipCharacter Character that owns this profession.
 ---@field [2] number Current saved profession rank, used for descending sort order.
 ---@field [3] number Maximum saved profession rank, displayed beside the current rank.
 
---- Append known spell/recipe owners, retaining ranked Classic profession rows.
----@param t any Unused information-type instance supplied by the tooltip dispatcher.
----@param reference { knownByID: integer?, spellID: integer?, key: string?, CACHE: string?, __type: string?, perCharacter: boolean? } Object and saved-cache key whose owners are listed.
----@param tooltipInfo ATTCharacterTooltipRow[] Tooltip rows receiving known characters or Classic ranks.
----@return nil
+--- Adds known-character entries and Classic profession ranks to the tooltip.
+---@param t ATTInformationType? Information type descriptor (unused).
+---@param reference ATTKnownByReference Collection, spell, and cache fields used to find known characters.
+---@param tooltipInfo ATTTooltipLine[] Mutable array receiving appended tooltip lines.
 local function ProcessForKnownBy(t, reference, tooltipInfo)
 	-- This is to show which characters have this profession.
 	local id = reference.knownByID or reference.spellID
@@ -469,12 +560,14 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 				end);
 				tinsert(tooltipInfo, {
 					left = L.KNOWN_BY:format(""),
-					r = 1, g = 0.82, b = 0,
+					color = app.Colors.TooltipDescription,
 				});
+				local realmName, normalizedRealmName = GetRealmName(), GetNormalizedRealmName();
 				for i,data in ipairs(knownBy) do
 					local character = data[1];
 					tinsert(tooltipInfo, {
-						left = "  " .. GetCharacterDisplayName(character),
+						---@diagnostic disable-next-line: undefined-field
+						left = "  " .. GetCharacterDisplayName(character, realmName, normalizedRealmName),
 						right = data[2] .. " / " .. data[3],
 					});
 				end
@@ -509,12 +602,13 @@ end
 ---@field r integer? Required faction ID; zero means unrestricted.
 ---@field c integer[]? Permitted class IDs inherited from recipe parents.
 ---@field races integer[]? Permitted race IDs inherited from recipe parents.
----@field parent ATTRecipeEligibilityReference? Parent providing inherited requirements.
+---@field parent ATTRecipeEligibilityReference? Display parent providing inherited requirements.
+---@field sourceParent ATTRecipeEligibilityReference? Original source parent taking precedence over display parents.
 
 --- Append characters eligible to learn a recipe using saved ranks and character restrictions.
----@param t any Unused information-type instance supplied by the tooltip dispatcher.
+---@param t ATTInformationType? Information type descriptor (unused).
 ---@param reference ATTRecipeEligibilityReference Recipe or linked object whose requirements are checked.
----@param tooltipInfo ATTCharacterTooltipRow[] Tooltip rows receiving eligible character names.
+---@param tooltipInfo ATTTooltipLine[] Tooltip rows receiving eligible character names.
 ---@return nil
 local function ProcessForUsefulFor(t, reference, tooltipInfo)
 	-- Only actual recipes can be useful to a character; arbitrary item/spell IDs are not recipes.
@@ -732,9 +826,9 @@ local InformationTypes = {
 	-- Progress Fields (top most)
 	CreateInformationType("Progress", { text = L.SOCIAL_PROGRESS, priority = 1, HideCheckBox = true,
 		Process = function(t, reference, tooltipInfo)
-			local progressText = app.GetProgressTextForTooltip(reference);
-			if progressText then
-				tinsert(tooltipInfo, { progress = progressText });
+			local summaryText = app.GetProgressTextForTooltip(reference);
+			if summaryText then
+				tinsert(tooltipInfo, { summaryText = summaryText });
 				--[[
 				-- I don't remember what the original conditions for showing this were.
 				-- For now just disable it.
@@ -758,6 +852,31 @@ local InformationTypes = {
 		end,
 	}),
 	CreateInformationType("SocialProgress", { text = L.SOCIAL_PROGRESS, priority = 1, IsStandaloneProperty = false }),
+
+	CreateInformationType("title", {
+		text = "Title",
+		priority = 1.01,
+		HideCheckBox = true,
+		ForceActive = true,
+		Process = function(t, reference, tooltipInfo)
+			local title = reference.title;
+			if title then
+				local left, right = app.DESCRIPTION_SEPARATOR:split(title);
+				if right then
+					tooltipInfo[#tooltipInfo + 1] = {
+						left = left,
+						right = right,
+						r = 1, g = 1, b = 1
+					};
+				else
+					tooltipInfo[#tooltipInfo + 1] = {
+						left = title,
+						r = 1, g = 1, b = 1
+					};
+				end
+			end
+		end,
+	}),
 
 	-- Contextual fields
 	CreateInformationType("parent", { text = "Parent", priority = 1.1, ShouldDisplayInExternalTooltips = false,
@@ -847,73 +966,47 @@ local InformationTypes = {
 			end
 		end,
 	}),
-	CreateInformationType("coords", { text = L.COORDINATES, priority = 2.1, ShouldDisplayInExternalTooltips = false,
+	CreateInformationType("coords", { text = L.COORDINATES, priority = 2.1, maxcoords = 10, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
 			local coords = reference.coords;
-			if not coords then
-				coords = reference.coord;
-				if not coords then return; end
-				coords = { coords };
-			end
-
-			local coordCount = #coords;
-			if coordCount < 1 then return; end
-
-			local maxCoords = 10;
-			local currentMapID, j = app.CurrentMapID, 0
-			local othercoords
-			for i,coord in ipairs(coords) do
-				local mapID = coord[3] or currentMapID;
-				if mapID ~= currentMapID then
-					if not othercoords then othercoords = { coord }
-					else othercoords[#othercoords + 1] = coord end
-				else
-					local x, y = coord[1], coord[2];
-					tinsert(tooltipInfo, {
-						left = j == 0 and t.text,
-						right = GetCoordString(x, y),
-						r = 1, g = 1, b = 1
-					});
-					j = j + 1;
-					if j >= maxCoords then
-						local remainingCoords = coordCount - maxCoords
-						if remainingCoords > 0 then
-							tinsert(tooltipInfo, {
-								right = (L.AND_MORE):format(remainingCoords),
-								r = 1, g = 1, b = 1
-							});
-						end
-						break;
+			if coords then
+				local coordList = {};
+				local currentMapID = app.CurrentMapID;
+				if coords[currentMapID] then
+					for i,coord in ipairs(coords[currentMapID]) do
+						tinsert(coordList, { right = GetCoordString(coord[1], coord[2]) });
 					end
 				end
-			end
-			-- include coords from other maps if any and not at the limit
-			if othercoords and j < maxCoords then
-				local str
 				local showMapID = app.Settings:GetTooltipSetting("mapID");
-				for i,coord in ipairs(othercoords) do
-					local x, y = coord[1], coord[2];
-					local mapID = coord[3] or currentMapID;
-					str = app.GetMapName(mapID);
-					if showMapID then
-						str = str .. " (" .. mapID .. ")";
-					end
-					str = str .. ": ";
-					tinsert(tooltipInfo, {
-						left = j == 0 and t.text,
-						right = str .. GetCoordString(x, y),
-						r = 1, g = 1, b = 1
-					});
-					j = j + 1;
-					if j >= maxCoords then
-						local remainingCoords = coordCount - maxCoords
-						if remainingCoords > 0 then
-							tinsert(tooltipInfo, {
-								right = (L.AND_MORE):format(remainingCoords),
-								r = 1, g = 1, b = 1
-							});
+				for mapID,coordsForMap in pairs(coords) do
+					if mapID ~= currentMapID then
+						for i,coord in ipairs(coordsForMap) do
+							local str = app.GetMapName(mapID);
+							if showMapID then str = str .. " (" .. mapID .. ")"; end
+							tinsert(coordList, { right = str .. ": " .. GetCoordString(coord[1], coord[2]) });
 						end
-						break;
+					end
+				end
+
+				local count = #coordList;
+				if count > 0 then
+					coordList[1].left = t.text;
+
+					-- Force white string entries.
+					for i=1,math_min(t.maxcoords, count) do
+						local coord = coordList[i];
+						coord.r = 1;
+						coord.g = 1;
+						coord.b = 1;
+						tinsert(tooltipInfo, coord);
+					end
+
+					local remainingCoords = count - t.maxcoords;
+					if remainingCoords > 0 then
+						tinsert(tooltipInfo, {
+							right = (L.AND_MORE):format(remainingCoords),
+							r = 1, g = 1, b = 1
+						});
 					end
 				end
 			end
@@ -921,11 +1014,11 @@ local InformationTypes = {
 	}),
 	CreateInformationType("playerCoord", { text = L.PLAYER_COORDINATES, priority = 2.1, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
-			local coord = reference.playerCoord;
-			if coord then
+			local playerCoord = reference.playerCoord;
+			if playerCoord then
 				tinsert(tooltipInfo, {
 					left = t.text,
-					right = GetCoordString(coord[1], coord[2]),
+					right = GetCoordString(playerCoord[1], playerCoord[2]),
 					r = 1, g = 1, b = 1
 				});
 			end
@@ -949,7 +1042,7 @@ local InformationTypes = {
 		Process = function(t, reference, tooltipInfo)
 			local description = (app.ActiveRowReference or reference).description
 			local sharedDescription = GetRelativeValue(reference, "sharedDescription")
-				-- duplicated search results loose their parent references in order to prevent issues in filtering/tooltips
+				-- duplicated search results lose their parent references in order to prevent issues in filtering/tooltips
 				-- so also check the active row reference for accuracy if the tooltip is in context of a row
 				or GetRelativeValue(app.ActiveRowReference, "sharedDescription")
 			if description then
@@ -975,15 +1068,17 @@ local InformationTypes = {
 			end
 		end,
 	}),
-	CreateInformationType("maps", { text = L.MAPS, priority = 2.6,
+	CreateInformationType("maps", {
+		text = L.MAPS,
+		priority = 2.6,
+		ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
 			local maps = reference.maps or reference.maps_disp
 			if not maps or #maps == 0 then
-				local coords = reference.coords
-				if coords and #coords > 0 then
+				if reference.coords then
 					maps = {}
-					for _,coord in ipairs(coords) do
-						maps[#maps + 1] = coord[3]
+					for mapID,_ in pairs(reference.coords) do
+						maps[#maps + 1] = mapID;
 					end
 				end
 			end
@@ -1059,6 +1154,37 @@ local InformationTypes = {
 			end
 		end,
 	});
+	CreateInformationType("customCollect", {
+		text = "Custom Collect Requirements",
+		HideCheckBox = true,
+		ForceActive = true,
+		priority = 2.7,
+		Process = function(t, reference, tooltipInfo)
+			-- Show info about if this Thing cannot be collected due to a custom collectibility
+			-- restriction on the Thing which this character does not meet
+			local customCollect = reference.customCollect
+			if customCollect then
+				local customCollectEx, c
+				local requires = L.REQUIRES;
+				for i=1,#customCollect do
+					c = customCollect[i]
+					customCollectEx = L.CUSTOM_COLLECTS_REASONS[c];
+					local icon_color_str = customCollectEx.icon.." |c"..customCollectEx.color..(customCollectEx.text or "[MISSING_LOCALE_KEY]");
+					if not app.CurrentCharacter.CustomCollects[c] then
+						tooltipInfo[#tooltipInfo + 1] = {
+							left = Colorize(requires, app.Colors.LockedWarning) .. "  " .. icon_color_str,
+							right = customCollectEx.desc or "",
+						}
+					else
+						tooltipInfo[#tooltipInfo + 1] = {
+							left = Colorize(requires, app.Colors.Time) .. "  " .. icon_color_str,
+							right = customCollectEx.desc or "",
+						}
+					end
+				end
+			end
+		end,
+	}),
 	CreateInformationType("u", {
 		priority = 2.7,
 		isRecursive = true,
@@ -1118,7 +1244,7 @@ local InformationTypes = {
 	CreateInformationType("rwp", { text = L.REMOVED_WITH_PATCH, isRecursive = true, priority = 3,
 		-- CRIEVE NOTE: Recursive is actually not true, some items get new sources later. The distinction for pre-Cata being non-recursive might be necessary, but since we're overriding the process function it should be fine this way.
 		Process = app.IsRetail and ProcessInformationType or function(t, reference, tooltipInfo)
-			local rwp = reference.rwp;	-- NOTE: For Retail, namely pre-Cata, this can't be recursive!
+			local rwp = t.GetValue(t, reference);
 			if rwp then
 				if app.GameBuildVersion < rwp then
 					tinsert(tooltipInfo, { left = Colorize(L.REMOVED_WITH_PATCH_CLASSIC_FORMAT:format(GetPatchString(rwp)), app.Colors.RemovedWithPatch)});
@@ -1130,13 +1256,13 @@ local InformationTypes = {
 	}),
 	CreateInformationType("filterID", { text = L.FILTER_ID, priority = 4,
 		Process = function(t, reference, tooltipInfo)
-			local f = reference.filterID or reference.f;
+			local f = reference.f
 			if f then
-				local filterForRWP = reference.filterForRWP;
-				if filterForRWP then
+				local locName = ConversionMethods.filterID(reference.loc, reference)
+				if locName then
 					tinsert(tooltipInfo, {
 						left = t.text,
-						right = ConversionMethods.filterID(f, reference) .. " -> " .. ConversionMethods.filterID(filterForRWP, reference),
+						right = ConversionMethods.filterID(f, reference) .. " / " .. locName,
 					});
 				else
 					tinsert(tooltipInfo, {
@@ -1155,6 +1281,7 @@ local InformationTypes = {
 	CreateInformationType("artID", { text = L.ART_ID, priority = 7 }),
 	CreateInformationType("campsiteID", { text = L.CAMPSITE_ID, priority = 7 }),
 	CreateInformationType("decorID", { text = L.DECOR_ID, priority = 7 }),
+	CreateInformationType("professionnodeID", { text = L.PROFESSION_NODE_ID, priority = 7 }),
 	CreateInformationType("iconPath", { text = L.ICON_PATH, ShouldDisplayInExternalTooltips = false, priority = 7 }),
 	CreateInformationType("visualID", { text = L.VISUAL_ID, priority = 7 }),
 
@@ -1231,7 +1358,25 @@ local InformationTypes = {
 					limit = limit - 1
 					if limit <= 0 then
 						tinsert(tooltipInfo, {
-							right =  LFG_LIST_AND_MORE:format(#reference.providers - t.limit),
+							right =  LFG_LIST_AND_MORE:format(#providers - limit),
+						});
+						break
+					end
+				end
+				return
+			end
+			local qss = reference.qss
+			if qss then
+				local limit = t.limit
+				for i,qs in ipairs(qss) do
+					tinsert(tooltipInfo, {
+						left = (i == 1 and L.PROVIDERS),
+						right = ConversionMethods.qs(qs, reference),
+					});
+					limit = limit - 1
+					if limit <= 0 then
+						tinsert(tooltipInfo, {
+							right =  LFG_LIST_AND_MORE:format(#qss - limit),
 						});
 						break
 					end
@@ -1254,6 +1399,7 @@ local InformationTypes = {
 	CreateInformationType("instanceID", { text = L.INSTANCE_ID }),
 	CreateInformationType("mapID", { text = L.MAP_ID }),
 	CreateInformationType("objectID", { text = L.OBJECT_ID }),
+	CreateInformationType("raceID", { text = L.RACE_ID }),
 	CreateInformationType("runeforgepowerID", { text = L.RUNEFORGE_POWER_ID }),
 	CreateInformationType("savedInstanceID", { text = L.SAVED_INSTANCE_ID }),
 	CreateInformationType("setID", { text = L.SET_ID }),
@@ -1386,7 +1532,7 @@ local InformationTypes = {
 							end
 							name = (icon and ("|T" .. icon .. ":0|t") or "") .. name;
 							_ = (v[3] or 1);
-							if _ > 1 then
+							if _ > 0 then
 								name = _ .. "x  " .. name;
 							end
 							tooltipInfo[#tooltipInfo + 1] = {
@@ -1418,15 +1564,16 @@ local InformationTypes = {
 	}),
 	CreateInformationType("CompletedBy", { text = L.COMPLETED_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForCompletedBy });
 	CreateInformationType("KnownBy", { text = L.KNOWN_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForKnownBy });
-CreateInformationType("UsefulFor", { text = L.USEFUL_FOR:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForUsefulFor });
+	CreateInformationType("UsefulFor", { text = L.USEFUL_FOR:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForUsefulFor });
 	CreateInformationType("extraInfo", { text = "extraInfo", priority = 2.51, HideCheckBox = true, ForceActive = true,
 		Process = function(t, reference, tooltipInfo)
 			local itemID = reference.itemID
 			if itemID then
 				-- an item used for a faction which is repeatable
 				if reference.factionID and reference.repeatable then
+					local faction = app.LookupFactionData(reference.factionID)
 					tinsert(tooltipInfo, {
-						left = L.ITEM_GIVES_REP .. (app.WOWAPI.GetFactionName(reference.factionID) or ("Faction #" .. tostring(reference.factionID))) .. "'",
+						left = L.ITEM_GIVES_REP .. faction.name.."'",
 						wrap = true,
 						color = app.Colors.TooltipDescription });
 				end
@@ -1530,6 +1677,20 @@ CreateInformationType("UsefulFor", { text = L.USEFUL_FOR:format(""), priority = 
 };
 settings.InformationTypes = InformationTypes;
 
+--[[
+-- CreateInformationType stub for use in external calls
+app.Settings.CreateInformationType("UniqueInformationTypeName", {
+	text = "VisibleInformationTypeText", -- only used if HideCheck = false / using default Process
+	priority = 9999,	-- default 100
+	HideCheckBox = true,	-- false default
+	ForceActive = true,	-- false default
+	ShouldDisplayInExternalTooltips = false, -- true default
+	IsStandaloneProperty = false, -- true default
+	Process = function(t, reference, tooltipInfo)
+	end,
+})
+]]
+
 local ActiveInformationTypes, ActiveInformationTypesForExternalTooltips = {}, {};
 local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {}, nil, nil;
 local function SortInformationTypesByLocalizedName(a,b)
@@ -1585,8 +1746,13 @@ app.ProcessInformationTypes = function(tooltipInfo, reference)
 end
 app.ProcessInformationTypesForExternalTooltips = function(tooltipInfo, reference)
 	-- app.PrintDebug("PITFET",#tooltipInfo,app.ActiveRowReference and true)
+	-- local workingChanged
 	for _,informationType in ipairs(app.ActiveRowReference and ActiveInformationTypes or ActiveInformationTypesForExternalTooltips) do
 		informationType:Process(reference, tooltipInfo);
+		-- if not workingChanged and reference.working then
+		-- 	app.PrintDebug("PITFET.working.set",informationType.textLower)
+		-- 	workingChanged = true
+		-- end
 	end
 	-- app.PrintDebug("PITFET.Done",#tooltipInfo)
 end
@@ -1599,6 +1765,45 @@ end
 local function OnRefreshForInformationCheckBox(self)
 	self:SetChecked(settings:GetTooltipSetting(self.informationTypeID))
 end
+--- Applies an All, Default, or None preset to the visible Information options.
+--- Refreshes the active tooltip information and settings controls.
+---@param value boolean|nil true enables all; false disables all; nil clears overrides to restore ATT defaults.
+local function SetInformationTypes(value)
+	for _,informationType in ipairs(SortedInformationTypesByName) do
+		-- nil removes the override so the profile uses ATT's default value.
+		settings:SetTooltipSetting(informationType.informationTypeID, value)
+	end
+	RefreshActiveInformationTypes()
+	settings:Refresh()
+end
+
+local buttonAll = child:CreateButton(
+{ text = ALL, },
+{
+	OnClick = function(self)
+		SetInformationTypes(true)
+	end,
+})
+
+local buttonDefault = child:CreateButton(
+{ text = DEFAULT, },
+{
+	OnClick = function(self)
+		SetInformationTypes(nil)
+	end,
+})
+
+local buttonNone = child:CreateButton(
+{ text = NONE, },
+{
+	OnClick = function(self)
+		SetInformationTypes(false)
+	end,
+})
+buttonNone:SetPoint("BOTTOMRIGHT", child, "BOTTOMRIGHT", -8, 10)
+buttonDefault:SetPoint("RIGHT", buttonNone, "LEFT", -8, 0)
+buttonAll:SetPoint("RIGHT", buttonDefault, "LEFT", -8, 0)
+
 settings.RefreshActiveInformationTypes = function()
 	SortInformationTypes()
 	RefreshActiveInformationTypes();
@@ -1709,9 +1914,9 @@ settings.CreateInformationType("LinkSourceID", {
 	text = "DEBUG: Link SourceID",
 	HideCheckBox = not app.Debugging,
 	Process = function(t, data, tooltipInfo)
-		local link, source = data.link or data.silentLink, data.sourceID
+		local link, source = data.link or data.silentLink or data.rawlink, data.sourceID
 		local rowSource = app.ActiveRowReference and app.ActiveRowReference.sourceID
-		if not link then return; end
+		if not link or not data.itemID then return; end
 		local itemName = GetItemInfo(link)
 		-- If it doesn't, the source ID will need to be harvested.
 		local sourceID, success = app.GetSourceID(link);
@@ -1766,28 +1971,42 @@ settings.CreateInformationType("rawfields", {
 	text = "DEBUG: Raw Fields",
 	HideCheckBox = not app.Debugging,
 	Process = function(t, data, tooltipInfo)
+			tinsert(tooltipInfo, {
+				left = "---------- Tooltip Data ----------",
+			});
 		tinsert(tooltipInfo, {
 			left = "Self:",
 			right = tostring(data)
 		});
+		local link
 		for k, v in pairs(data) do
+			link = app:SearchLink(v)
 			tinsert(tooltipInfo, {
 				left = tostring(k),
-				right = tostring(v)
+				right = link and (link.." "..tostring(v)) or tostring(v)
 			});
 		end
+	end
+})
+settings.CreateInformationType("rawfields-row", {
+	priority = 99999,
+	text = "DEBUG: Raw Row Fields",
+	HideCheckBox = not app.Debugging,
+	Process = function(t, data, tooltipInfo)
 		if app.ActiveRowReference then
 			tinsert(tooltipInfo, {
-				left = "----"
+				left = "---------- Row Data ----------",
 			});
 			tinsert(tooltipInfo, {
 				left = "Row:",
 				right = tostring(app.ActiveRowReference)
 			});
+			local link
 			for k, v in pairs(app.ActiveRowReference) do
+				link = app:SearchLink(v)
 				tinsert(tooltipInfo, {
 					left = tostring(k),
-					right = tostring(v)
+					right = link and (link.." "..tostring(v)) or tostring(v)
 				});
 			end
 		end

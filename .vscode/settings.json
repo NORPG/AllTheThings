@@ -1,29 +1,5 @@
 {
-    "Lua.diagnostics.disable": [
-        "duplicate-index",
-        "undefined-global"
-    ],
-    "Lua.runtime.version": "Lua 5.1",
-    "Lua.runtime.builtin": {
-        "basic": "disable",
-        "debug": "disable",
-        "io": "disable",
-        "math": "disable",
-        "os": "disable",
-        "package": "disable",
-        "string": "disable",
-        "table": "disable",
-        "utf8": "disable"
-    },
-    "Lua.workspace.library": [
-        "~\\.vscode\\extensions\\ketho.wow-api-0.22.1\\Annotations\\Core"
-    ],
-    "wowAPI.luals.defineKnownGlobals": false,
-    "Lua.workspace.ignoreDir": [
-        ".vscode",
-        "db"
-    ],
-    "Lua.diagnostics.enable": false,
-    "Lua.diagnostics.ignoredFiles": "Disable",
-    "Lua.diagnostics.libraryFiles": "Disable"
+    "Lua.diagnostics.globals": [],
+    "wowAPI.luals.configurationScope": "User",
+    "wowAPI.luals.defineKnownGlobals": false
 }

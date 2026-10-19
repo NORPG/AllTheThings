@@ -5,5 +5,10 @@ version: 2
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
+    labels:
+      - "type:maintenance"
+      - "area:ci"
     schedule:
       interval: "daily"
+    cooldown:
+      default-days: 7

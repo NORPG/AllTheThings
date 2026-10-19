@@ -7,8 +7,24 @@ local Colorize = app.Modules.Color.Colorize;
 local C_CreatureInfo = C_CreatureInfo;
 local RAID_CLASS_COLORS, GetPlayerInfoByGUID, UnitClass, UnitGUID, UnitIsGroupLeader, UnitRace
 	= RAID_CLASS_COLORS, GetPlayerInfoByGUID, UnitClass, UnitGUID, UnitIsGroupLeader, UnitRace;
+local RegionalUniqueNamesEnabled = RegionalUniqueNamesEnabled;
+-- Select native name semantics once for this module.
+local HasRegionalUniqueNames = RegionalUniqueNamesEnabled and RegionalUniqueNamesEnabled() or false;
+local NativeUnitName = HasRegionalUniqueNames and GetUnitName or UnitName;
+--- Returns the native character name using the API selected at module initialization.
+--- Regional names retain surnames through GetUnitName; traditional names use UnitName's first result.
+---@param unit string Unit token such as "player", "party1", or "raid3"; GUIDs are handled separately.
+---@return string? name Character name without a realm suffix, or nil when the unit cannot be resolved. Realm is obtained separately.
+local function GetNativeUnitName(unit)
+	return (NativeUnitName(unit));
+end
 local math_floor, rawget, rawset, setmetatable, ipairs
 	= math.floor, rawget, rawset, setmetatable, ipairs
+
+local CharacterData
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
+	CharacterData = characterData
+end);
 
 -- Class Info Helpers
 local ClassIcons = {
@@ -29,7 +45,12 @@ local ClassIcons = {
 local ClassInfoByID, ClassInfoByClassFile, ClassInfoByClassName = {}, {}, {};
 local GetSpecializationInfoByID, SpecInfoMetatable = GetSpecializationInfoByID, nil;
 if GetSpecializationInfoByID then
+	local tonumber = tonumber
 	SpecInfoMetatable = { __index = function(t, key)
+		key = tonumber(key)
+		-- Blizzard tries accessing ToDebugString on every table randomly because no one knows why
+		if not key then return end
+
 		local classID = math_floor(key);
 		local specID = math_floor((1000 * (key - classID)) + 0.00001);
 		local specID, name, description, icon, role, classFile = GetSpecializationInfoByID(specID);
@@ -177,75 +198,102 @@ app.CreateCharacterClass = app.CreateClassWithInfo("CharacterClass", "classID", 
 	end,
 	["ignoreSourceLookup"] = app.ReturnTrue,
 });
-app.CreateUnit = app.CreateClass("Unit", "unit", {
-	["text"] = function(t)
-		return t.classText;
-	end,
-	["info"] = function(t)
-		local unit = t.unit;
-		for guid,character in pairs(ATTCharacterData) do
-			if guid == unit or character.name == unit then
-				rawset(t, "guid", character.guid);
-				rawset(t, "name", ("%s - %s"):format(character.name or UNKNOWN, character.realm or UNKNOWN));
-				rawset(t, "lvl", character.lvl);
-				if character.classID then
-					rawset(t, "classID", character.classID);
-					local classInfo = ClassInfoByID[character.classID];
-					if classInfo then
-						rawset(t, "className", classInfo.name);
-						rawset(t, "classFile", classInfo.file);
-					end
+local function CacheCharacterDataFromATTCache(_t, unit)
+	for guid,character in pairs(CharacterData) do
+		if guid == unit or character.name == unit then
+			_t.guid = character.guid;
+			_t.name = character.name
+			_t.realm = character.realm
+			if character.classID then
+				_t.classID = character.classID;
+				_t.icon = ClassInfoByID[character.classID].icon
+				local classInfo = ClassInfoByID[character.classID];
+				if classInfo then
+					_t.className = classInfo.name;
+					_t.classFile = classInfo.file;
 				end
-				if character.raceID then
-					rawset(t, "raceID", character.raceID);
-					local raceInfo = C_CreatureInfo.GetRaceInfo(character.raceID);
-					if raceInfo then rawset(t, "race", raceInfo.raceName); end
-				end
-				return t;
 			end
+			if character.raceID then
+				_t.raceID = character.raceID;
+				local raceInfo = C_CreatureInfo.GetRaceInfo(character.raceID);
+				if raceInfo then _t.race = raceInfo.raceName; end
+			end
+			return true
 		end
-		local name, guid, className, classFile, classID, raceName, raceFile, raceID;
-		if #{("-"):split(unit)} > 1 then
-			-- It's a GUID.
-			guid = unit;
-			className, classFile, raceName, raceFile, raceID, name = GetPlayerInfoByGUID(guid);
-			if classFile then classID = ClassInfoByClassFile[classFile].classID; end
-		else
-			name = UnitName(unit);
-			if name then
-				guid = UnitGUID(unit);
-				className, classFile, classID = UnitClass(unit);
-				raceName, raceFile, raceID = UnitRace(unit);
-			else
-				rawset(t, "name", unit);
-				return t;
-			end
+	end
+end
+--- Complete native name, separate realm, GUID, display text, and client build for a character.
+--- Shared by saved character records, unit caches, and tooltip name formatting.
+---@class ATTCharacterIdentity
+---@field name? string Complete native character name, including Forever surnames, without a realm suffix.
+---@field realm? string Actual realm reported by the client, stored separately from the name.
+---@field guid? string Character GUID when available.
+---@field text? string Saved UI display text, normally the complete name and realm with optional class colors.
+---@field build? integer Client build that last populated the saved identity.
+
+--- Character identity plus optional class, race, and icon fields populated by unit or GUID lookups.
+--- Supplies cached metadata for unit display names and tooltips.
+---@class ATTUnitIdentityCache: ATTCharacterIdentity
+---@field className? string Localized class name.
+---@field classFile? string Class token used by class metadata and colors.
+---@field classID? ClassID Base character class ID.
+---@field race? string Localized race name.
+---@field raceID? RaceID Character race ID.
+---@field icon? string|FileID Class icon path or file ID.
+
+--- Populate cached identity, class, and race data from a GUID or unit token.
+--- Resolve native names and realms according to regional naming semantics.
+---@param _t ATTUnitIdentityCache Character cache record to populate.
+---@param unit string GUID or unit token to query.
+local function CacheCharacterDataFromAPIs(_t, unit)
+	local name, realm, guid, className, classFile, classID, raceName, raceFile, raceID;
+	local _,_,s3 = ("-"):split(unit)
+	if s3 then
+		-- It's a GUID.
+		guid = unit;
+		className, classFile, raceName, raceFile, raceID, name = GetPlayerInfoByGUID(guid);
+		if classFile then classID = ClassInfoByClassFile[classFile].classID; end
+	else
+		name = GetNativeUnitName(unit);
+		realm = GetRealmName();
+		if unit ~= "player" and not HasRegionalUniqueNames then
+			realm = select(2, UnitFullName(unit)) or realm;
 		end
 		if name then
-			rawset(t, "name", name);
-			rawset(t, "guid", guid);
-			if classID then
-				rawset(t, "className", className);
-				rawset(t, "classFile", classFile);
-				rawset(t, "classID", classID);
-			end
-			if raceID then
-				rawset(t, "raceID", raceID);
-				rawset(t, "race", C_CreatureInfo.GetRaceInfo(raceID).raceName);
-			end
+			guid = UnitGUID(unit);
+			if guid and app.WOWAPI.issecretvalue(guid) then guid = nil; end
+			className, classFile, classID = UnitClass(unit);
+			raceName, raceFile, raceID = UnitRace(unit);
+		else
+			_t.name = unit;
 		end
-		return t;
-	end,
-	["name"] = function(t)
-		return rawget(t.info, "name");
-	end,
-	["icon"] = function(t)
-		local classID = rawget(t.info, "classID");
-		if classID then return ClassInfoByID[classID].icon; end
-	end,
-	["guid"] = function(t)
-		local guid = rawget(t.info, "guid");
-		if guid then return guid; end
+	end
+	if name then
+		_t.name = name;
+		_t.realm = realm
+		_t.guid = guid;
+		if raceID then
+			_t.raceID = raceID;
+			_t.race = C_CreatureInfo.GetRaceInfo(raceID).raceName;
+		end
+	end
+	if classID then
+		_t.className = className;
+		_t.classFile = classFile;
+		_t.classID = classID;
+		_t.icon = ClassInfoByID[classID].icon
+	end
+end
+local cache = app.CreateCache("unit");
+local function CacheInfo(t, field)
+	local _t, unit = cache.GetCached(t)
+	-- no difference in outcome, we just want to prioritize the ATT Cache lookup
+	if CacheCharacterDataFromATTCache(_t, unit) or CacheCharacterDataFromAPIs(_t, unit) then end
+	if field then return _t[field] end
+end
+local UnitFields = {
+	["text"] = function(t)
+		return t.classText;
 	end,
 	["title"] = function(t)
 		if IsInGroup() then
@@ -256,19 +304,11 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 	["lvl"] = function(t)
 		return UnitLevel(t.unit);
 	end,
-	["race"] = function(t)
-		return rawget(t.info, "race");
-	end,
-	["className"] = function(t)
-		return rawget(t.info, "className");
-	end,
-	["classFile"] = function(t)
-		return rawget(t.info, "classFile");
-	end,
 	["classText"] = function(t)
 		local classFile = t.classFile;
-		if classFile then return "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. t.name .. "|r"; end
-		return t.name or RETRIEVING_DATA;
+		local fullName = (t.name or UNKNOWN) .. " - " .. (t.realm or UNKNOWN)
+		if classFile then return "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. fullName .. "|r"; end
+		return fullName
 	end,
 	["tooltipText"] = function(t)
 		local text = t.text;
@@ -279,7 +319,35 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 	["ignoreSourceLookup"] = app.ReturnTrue,
 	isHeader = app.ReturnTrue,
 	isMinilistHeader = app.ReturnTrue,
-});
+}
+-- Assign Cache-Info Fields
+for _,field in ipairs({ "name", "realm", "icon", "guid", "race", "raceID", "className", "classFile", "classID" }) do
+	UnitFields[field] =	function(t)
+		return cache.GetCachedField(t, field, CacheInfo)
+	end
+end
+app.CreateUnit = app.CreateClass("Unit", "unit", UnitFields)
+
+-- Track Yourself in the Main List, but only in Debug Mode!
+app.AddEventHandler("OnBuildDataCache", function(categories)
+	categories.Yourself = app.CreateUnit("player", {
+		description = app.L.DEBUG_LOGIN,
+		races = { app.RaceIndex },
+		c = { app.ClassIndex },
+		r = app.FactionID,
+		collected = 1,
+		nmr = false,
+		SortPriority = 200,
+		OnUpdate = function(self)
+			self.lvl = app.Level;
+			if app.MODE_DEBUG then
+				self.collectible = true;
+			else
+				self.collectible = false;
+			end
+		end
+	});
+end);
 
 -- External API
 app.ClassInfoByClassFile = ClassInfoByClassFile;
