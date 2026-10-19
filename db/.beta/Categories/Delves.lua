@@ -2383,7 +2383,7 @@ q(85666,{coords={
 [2347]={{53,76.1}}},lvl=70,providers={{"o",487851}}})}),
 h(-56,{
 o(455487,{coords={
-[2347]={{46,46.1}}},description="Located on top of pillar, accessible after killing last boss.",questID=83681,g={
+[2347]={{46,46.1}}},description="Located ontop of pillar, accessible after killing last boss.",questID=83681,g={
 crit(69552,{achID=40814,id=1})}}),
 o(455531,{coords={
 [2347]={{50.5,46.2}}},questID=83649,g={

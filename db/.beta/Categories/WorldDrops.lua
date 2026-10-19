@@ -8341,7 +8341,7 @@ r(225524,{b=1,itemID=141032,lvl=10,requireSkill=773,skillID=2508}),
 r(225531,{b=1,coords={
 [641]={{55,59.9}}},description="Drops from doe's and stags in any Broken Isles zone. Recommended to farm around the Grove of Cenarius in Val'Sharah.",itemID=141039,lvl=10,requireSkill=773,skillID=2508}),
 r(225541,{b=1,itemID=141049,lvl=10,requireSkill=773,skillID=2508}),
-r(225543,{b=1,description="Drops from Nagas in any Broken Isles zone. Recommended to farm the Nagas before the first Boss in the Eye of Azshara Dungeon.",itemID=141051,lvl=10,requireSkill=773,skillID=2508}),
+r(225543,{b=1,description="Drops Naga's in any Broken Isles zone. Recommened to farm the Naga's before the first Boss in the Eye of Azshara Dungeon.",itemID=141051,lvl=10,requireSkill=773,skillID=2508}),
 r(225556,{b=1,itemID=141064,lvl=10,requireSkill=773,skillID=2508})}),
 prof(197,{
 r(229043,{awp=70100,b=1,description="Drops from ghosts in any Broken Isles zone.",itemID=142077,lvl=10,requireSkill=197,skillID=2534}),

@@ -3703,7 +3703,7 @@ crit(111275,{achID=61896,id=2})}})}),
 h(-47,{
 i(266438,{b=1})})}}),
 m(2647,{awp=120105,coords={
-[2395]={{63,72.2}}},crs={275658},icon=3601564,lore="An ancient Amani funeral complex previously sealed for centuries. Once again opened, the complex is combed by looters and Vilebranch for relics while the interred spirits defend it with deadly force.",maps={2648},g={
+[2395]={{63,72.2}}},icon=3601564,lore="An ancient Amani funeral complex previously sealed for centuries. Once again opened, the complex is combed by looters and Vilebranch for relics while the interred spirits defend it with deadly force.",maps={2648},g={
 h(-12,{
 ach(64039,{rwp=120105,g={
 title(801)}}),
@@ -3960,7 +3960,6 @@ o(696116,{coords={
 o(654950,{coords={
 [2647]={{24.8,22.5}}},description="Spawns after finishing 'Jan'alai's' event."}),
 o(677414,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
-o(677417),
 o(677418,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
 o(676747,{description="Spawns randomly throughout the Labyrinth."}),
 o(677411,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
