@@ -316,8 +316,6 @@ local GeneralSettingsBase = {
 		["Skip:AutoRefresh"] = false,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
-		---@type boolean
-		["Show:QuestRewardConsumables"] = false,
 		["Show:OnlyActiveEvents"] = true,
 		["Show:PetBattles"] = true,
 		["Show:Skyriding"] = true,
@@ -1328,8 +1326,7 @@ ATTSettingsPanelMixin = {
 			text = "INVALID CHECKBOX"
 		end
 		--- Settings checkbox with an ATT text label and refresh/click handlers.
-		---@class ATTSettingsCheckButton: ATTCheckButtonClass
-		---@field AlignBelow fun(self: ATTSettingsCheckButton, other: Frame, indent?: number|Frame, add?: number): ATTSettingsCheckButton Positions the checkbox below another settings control.
+		---@class ATTSettingsCheckButton: CheckButton
 		---@field Text FontString Text label displayed beside the settings checkbox.
 		---@field OnRefreshCheckedDisabled any Default refresh handler that checks, disables, and fades the checkbox.
 		local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. text, self, settings.UITemplates.Checkbox)
