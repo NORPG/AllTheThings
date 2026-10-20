@@ -40,7 +40,7 @@ do -- TradeSkill Functionality
 		return specializationTradeSkillMap[specializationID];
 	end
 	--- Saved profession membership keyed by base profession skill-line IDs or specialization spell IDs.
-	--- Learned professions and specializations use true; AlwaysAvailable and Beast Training (5149) use 1.
+	--- Learned professions and specializations use true; AlwaysAvailable and Beast Training (261) use 1.
 	--- An absent key means no saved membership.
 	--- Examples: [171] = true for a base profession and [20219] = true for a specialization.
 	---@alias ATTProfessionOwnership { [integer]: true|1 }
