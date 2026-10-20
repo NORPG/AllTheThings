@@ -233,11 +233,9 @@ local EncounterToLoot = {
 		i(271878),	-- Chausses of Unbound Rancor
 		i(270168),	-- Font of Venomous Rage
 		i(271875),	-- Gaze of the Coiled Watcher
-		i(271092),	-- Jan'thrazet, the Soul Fang
 		i(268202),	-- Jaw of the Shackled Goddess
 		i(271874),	-- Venomkeeper's Horrific Cowl
 		i(270175),	-- Voracious Heart of Ula'tek
-		i(271093),	-- Zatha'tek, Breath of Corruption
 	};
 };
 
@@ -441,6 +439,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					i(278290, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: The Coiled Alter
 				}),
 				BossOnly(ULATEK, {
+					i(271092),	-- Jan'thrazet, the Soul Fang
+					i(271093),	-- Zatha'tek, Breath of Corruption
 					i(279500),	-- "Rage of the Shackled" Mural (DECOR!)
 					i(278340),	-- Blighted Pearl (CI!)
 					i(278284, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Ula'tek
