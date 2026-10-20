@@ -139,7 +139,6 @@ root(ROOTS.Unsorted, {
 			i(284258),	-- Tailwind Conduit
 			i(284259),	-- Motionless Nulltide
 			i(284260),	-- Overflowing Voidspire
-			i(284402),	-- Valdrakken Resupply Coin
 			i(285044),	-- Venerated Loa Armament
 			i(285221),	-- Baker's Sapphire Bulwark
 			i(285222),	-- Baker's Emerald Bulwark
@@ -410,14 +409,6 @@ root(ROOTS.Unsorted, {
 			i(279615),	-- Celebratory Pack of Hero Dawncrests
 			i(279616),	-- Glorious Cluster of Myth Dawncrests
 			i(279617),	-- Venerable Satchel of Veteran Dawncrests
-			i(279618),	-- Nebulous Voidcache: Altar of Fangs
-			i(279619),	-- Nebulous Voidcache: The Blinding Vale
-			i(279620),	-- Nebulous Voidcache: Den of Nalorakk
-			i(279621),	-- Nebulous Voidcache: Kings' Rest
-			i(279622),	-- Nebulous Voidcache: Ruby Life Pools
-			i(279623),	-- Nebulous Voidcache: Murder Row
-			i(279624),	-- Nebulous Voidcache:Temple of Sethraliss
-			i(279625),	-- Nebulous Voidcache: Voidscar Arena
 			i(280102),	-- Handful of Corrosive Coins
 			i(281021),	-- Eerie Lure
 			i(274765),	-- Fleeting Alluring Nostrum

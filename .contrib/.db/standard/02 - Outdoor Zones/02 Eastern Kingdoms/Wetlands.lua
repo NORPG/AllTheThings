@@ -743,19 +743,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 203188 },	-- Incendicite Mineral Vein
 								{ "i",  55240 },	-- Spark-Proof Pick
 							},
+							["coords"] = {
+								{ 45.8, 64.3, WETLANDS },
+								{ 46.8, 62.4, WETLANDS },
+								{ 47.0, 59.1, WETLANDS },
+								{ 47.3, 61.4, WETLANDS },
+								{ 48.2, 60.4, WETLANDS },
+								{ 48.3, 60.6, WETLANDS },
+								{ 49.9, 59.3, WETLANDS },
+								{ 50.3, 63.0, WETLANDS },
+								{ 51.6, 61.7, WETLANDS },
+							},
 						}),
-						i(59066, {	-- Stabilized Incendicite Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59065, {	-- Sparkproof Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59064, {	-- Marblebeard's Shrug
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(131439, {	-- Sparkproof Gauntlets
-							["timeline"] = { ADDED_7_0_3 },
-						}),
+						--
+						i(59064, { ["timeline"] = { ADDED_4_0_3 } }),	-- Marblebeard's Shrug
+						i(131439, { ["timeline"] = { ADDED_7_0_3 } }),	-- Sparkproof Gauntlets
+						i(59065, { ["timeline"] = { ADDED_4_0_3 } }),	-- Sparkproof Gloves
+						i(59066, { ["timeline"] = { ADDED_4_0_3 } }),	-- Stabilized Incendicite Legguards
 					},
 				}),
 				q(26139, {	-- Into Arathi

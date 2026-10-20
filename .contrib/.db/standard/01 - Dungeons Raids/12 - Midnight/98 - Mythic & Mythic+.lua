@@ -338,6 +338,18 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			i(268470),	-- Nebulous Voidcache: Skyreach
 			i(268471),	-- Nebulous Voidcache: Windrunner Spire
 		})),
+		n(REWARDS, bubbleDownSelf({
+			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }
+		}, {
+			i(279618),	-- Nebulous Voidcache: Altar of Fangs
+			i(279620),	-- Nebulous Voidcache: Den of Nalorakk
+			i(279621),	-- Nebulous Voidcache: Kings' Rest
+			i(279623),	-- Nebulous Voidcache: Murder Row
+			i(279622),	-- Nebulous Voidcache: Ruby Life Pools
+			i(279624),	-- Nebulous Voidcache: Temple of Sethraliss
+			i(279619),	-- Nebulous Voidcache: The Blinding Vale
+			i(279625),	-- Nebulous Voidcache: Voidscar Arena
+		})),
 	}),
 }));
 

@@ -34,6 +34,9 @@ HALLOWS_END_HEADER = createHeader({
 });
 
 local TRICKY_TREAT = 33226;
+local DRUSTVAR_CHOC = 252990;
+local DUSKWOOD_CARAMEL = 253043;
+local FELWOOD_FUDGE = 253042;
 
 local CANDY_AND_TOY_VENDOR_GROUPS = {
 	i(122338, {	-- Ancient Heirloom Armor Casing
@@ -659,8 +662,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 			}),
 		})),
-		ach(18959, {	-- Don't Lose Your Head, Man
-			["timeline"] = { ADDED_10_1_7 },
+		ach(18959, { ["timeline"] = { ADDED_10_1_7 } }),	-- Don't Lose Your Head, Man
+		ach(64162, {	-- Drustvar Choc-O-Drop Designer
+			["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			["timeline"] = { ADDED_12_1_5 },
+		}),
+		ach(64160, {	-- Duskwood Caranek Crafter
+			["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			["timeline"] = { ADDED_12_1_5 },
+		}),
+		ach(64161, {	-- Felwood Fudge Bite Former
+			["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			["timeline"] = { ADDED_12_1_5 },
 		}),
 		ach(1261, {	-- G.N.E.R.D. Rage
 			["provider"] = { "i", 37583 },	-- G.N.E.R.D.S.
@@ -1908,6 +1921,83 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["coord"] = { 61.9, 46.3, THE_RINGING_DEEPS },
 					["timeline"] = { ADDED_11_0_2 },
 				}),
+
+				-- Midnight
+				candybucket(97213, {	-- Candy Bucket - The Arcantina
+					["provider"] = { "n", 660449 },	-- Candy Bucket
+					["coord"] = { 63.0, 71.3, ARCANTINA },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
+				candybucket(97213, {	-- Candy Bucket - The Arcantina
+					["provider"] = { "n", 660449 },	-- Candy Bucket
+					["coord"] = { 63.0, 71.3, ARCANTINA },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
+				candybucket(97142, {	-- Candy Bucket - Silvermoon City, Wayfarer's Rest
+					["provider"] = { "n", 659876 },	-- Candy Bucket
+					["coord"] = { 55.8, 69.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
+				candybucket(97143, {	-- Candy Bucket - Eversong Woods, Fairbreeze Village
+					["provider"] = { "n", 659880 },	-- Candy Bucket
+					["coord"] = { 46.4, 46.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
+				candybucket(97148, {	-- Candy Bucket - Eversong Woods, Tranquillien
+					["provider"] = { "n", 659903 },	-- Candy Bucket
+					["coord"] = { 49.0, 68.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
+				candybucket(97206, {	-- Candy Bucket - Harandar, The Den
+					["provider"] = { "n", 660352 },	-- Candy Bucket
+					["coord"] = { 65.0, 63.8, MAP.MIDNIGHT.HARANDAR },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
+				candybucket(97155, {	-- Candy Bucket - Harandar, Har'athir
+					["provider"] = { "n", 659952 },	-- Candy Bucket
+					["coord"] = { 69.1, 51.7, MAP.MIDNIGHT.HARANDAR },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
+				candybucket(97154, {	-- Candy Bucket - Harandar, Har'kuai
+					["provider"] = { "n", 659949 },	-- Candy Bucket
+					["coord"] = { 66.1, 24.5, MAP.MIDNIGHT.HARANDAR },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
+				candybucket(97208, {	-- Candy Bucket - Harandar, Har'mara
+					["provider"] = { "n", 660392 },	-- Candy Bucket
+					["coord"] = { 35.1, 22.8, MAP.MIDNIGHT.HARANDAR },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
+				candybucket(97207, {	-- Candy Bucket - Harandar, Har'alnor
+					["provider"] = { "n", 660368 },	-- Candy Bucket
+					["coord"] = { 30.9, 65.0, MAP.MIDNIGHT.HARANDAR },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
+				candybucket(97209, {	-- Candy Bucket - Voidstorm, Locus Point
+					["provider"] = { "n", 660442 },	-- Candy Bucket
+					["coord"] = { 41.7, 74.6, MAP.MIDNIGHT.VOIDSTORM },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
+				candybucket(97210, {	-- Candy Bucket - Voidstorm, The Ingress
+					["provider"] = { "n", 660445 },	-- Candy Bucket
+					["coord"] = { 35.7, 58.6, MAP.MIDNIGHT.VOIDSTORM },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
+				candybucket(97150, {	-- Candy Bucket - Zul'Aman, Amani'Zar
+					["provider"] = { "n", 659923 },	-- Candy Bucket
+					["coord"] = { 45.3, 65.1, MAP.MIDNIGHT.ZULAMAN },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
+				candybucket(97151, {	-- Candy Bucket - Zul'Aman, Camp Stonewash
+					["provider"] = { "n", 659936 },	-- Candy Bucket
+					["coord"] = { 46.6, 25.9, MAP.MIDNIGHT.ZULAMAN },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
+				candybucket(97152, {	-- Candy Bucket - Zul'Aman, Witherbark Bluffs
+					["provider"] = { "n", 659940 },	-- Candy Bucket
+					["coord"] = { 36.9, 23.4, MAP.MIDNIGHT.ZULAMAN },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
 			}),
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY }, {
 				candybucket(28954, {	-- Candy Bucket — Arathi Highlands, Refuge Point, Alliance
@@ -2310,6 +2400,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["provider"] = { "o", 208133 },	-- Candy Bucket, Shimmering Expanse
 					["coord"] = { 49.7, 57.4, VASHJIR_SHIMMERING_EXPANSE },
 					["timeline"] = { ADDED_4_1_0 },
+				}),
+				candybucket(97211, {	-- Candy Bucket - Voidstorm, Slayer's Rise [A]
+					["provider"] = { "n", 660447 },	-- Candy Bucket
+					["coord"] = { 76.0, 77.6, MAP.MIDNIGHT.VOIDSTORM },
+					["timeline"] = { ADDED_12_1_5 },
 				}),
 				candybucket(28988, {	-- Candy Bucket — Western Plaguelands, Chillwind Camp, Alliance
 					["provider"] = { "o", 208134 },	-- Candy Bucket, Western Plaguelands
@@ -2763,6 +2858,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["coord"] = { 51.3, 60.6, VASHJIR_ABYSSAL_DEPTHS },
 					["timeline"] = { ADDED_4_1_0 },
 				}),
+				candybucket(97212, {	-- Candy Bucket - Voidstorm, Slayer's Rise [H]
+					--["provider"] = { "n", 660447 },	-- Candy Bucket
+					--["coord"] = { 76.0, 77.6, MAP.MIDNIGHT.VOIDSTORM },
+					["timeline"] = { ADDED_12_1_5 },
+				}),
 				candybucket(28987, {	-- Candy Bucket — Western Plaguelands, Andorhal, Horde
 					["provider"] = { "o", 208156 },	-- Candy Bucket, Western Plaguelands
 					["coord"] = { 48.2, 63.7, WESTERN_PLAGUELANDS },
@@ -2847,6 +2947,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["lvl"] = lvlsquish(10, 10, 1),
+		}),
+		q(93898, {	-- A Haunted Home
+			["qg"] = 220307,	-- Holiday Enthusiast
+			["coord"] = { 51.1, 76.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+			["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			["timeline"] = { ADDED_12_1_5 },
 		}),
 		q(29074, {	-- A Season for Celebration (Alliance)
 			["qgs"] = {
@@ -3007,22 +3113,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(98, 98, 40),	-- TODO: Check Level Requirement
 		}),
-		q(92536, {	-- Bewitched Berry Bites
-			["isDaily"] = true,
-			["timeline"] = { ADDED_12_1_5 },
-			["qis"] = {
-				252952,	-- Bewitched Berries (QI!)
-				252990,	-- Drustvar Choc-O-Drops (QI!)
-				253043,	-- Duskwood Caramel (QI!)
-				253042,	-- Felwood Fudge Bite (QI!)
-			},
-		}),
 		q(92104, {	-- Broomstick Express
+			["qgs"] = {
+				263976,	-- Alaric Duskwick
+				249275,	-- Nargok Ghostcleaver
+			},
 			["coords"] = {
 				{ 54.1, 33.8, FOUNDERS_POINT },
+				{ 51.7, 54.3, RAZORWIND_SHORES },
 			},
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
+			["groups"] = {
+				i(TRICKY_TREAT),
+				i(DRUSTVAR_CHOC),
+				i(DUSKWOOD_CARAMEL),
+				i(FELWOOD_FUDGE),
+			},
 		}),
 		q(11392, {	-- Call the Headless Horseman
 			["sourceQuests"] = {
@@ -3079,6 +3186,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(98801, {	-- Community Candy Crawl
+			["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			["isWorldQuest"] = true,
 			["timeline"] = { ADDED_12_1_5 },
 			["qi"] = 284591,	-- Neighboorhood Candy (QI!)
 		}),
@@ -3365,10 +3474,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 							["provider"] = { "i", 20492 },	-- Stormwind Nougat
 						}),
 					},
-				}),
-				q(92537, {	-- Hexed Honeycombs
-					["timeline"] = { ADDED_12_1_5 },
-					["qi"] = 252947,	-- Honeycomb (QI!)
 				}),
 				q(8355, {	-- Incoming Gumdrop (Alliance)
 					["qg"] = 6826,	-- Talvash del Kissel
@@ -3705,12 +3810,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["groups"] = { i(34077) },	-- Crudely Wrapped Gift
 		}),
 		q(92455, {	-- Specter Inspector
+			["qgs"] = {
+				263976,	-- Alaric Duskwick
+				249275,	-- Nargok Ghostcleaver
+			},
 			["coords"] = {
 				{ 54.1, 33.8, FOUNDERS_POINT },
+				{ 51.7, 54.3, RAZORWIND_SHORES },
 			},
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
-			["qi"] = 249386,	-- Ghost Gear
+			["groups"] = {
+				i(TRICKY_TREAT),
+				i(DRUSTVAR_CHOC),
+				i(DUSKWOOD_CARAMEL),
+				i(FELWOOD_FUDGE),
+			},
 		}),
 		q(29054, {	-- Stink Bombs Away! (Alliance)
 			["sourceQuest"] = 29074,	-- A Season for Celebration (Alliance)
@@ -3800,29 +3915,86 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(92498, {	-- Sugar Run (Drustvar)
+			["altQuests"] = {
+				93400,	-- Sugar Run (Duskwood)
+				95826,	-- Sugar Run (Felwood)
+			},
+			["qg"] = 251678,	-- Yin Shuilan
 			["coords"] = {
-				{ 54.0, 33.8, FOUNDERS_POINT },
+				{ 53.9, 34.0, FOUNDERS_POINT },
+				{ 51.8, 54.0, RAZORWIND_SHORES },
 			},
 			["maps"] = { DRUSTVAR },
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
 		}),
+		--TODO: CANDY CRAFTING
+		q(92536, {	-- Bewitched Berry Bites
+			["sourceQuest"] = 92498,	-- Sugar Run (Drustvar)
+			["qg"] = 251989,	-- Nomi
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
+			["qi"] = 252952 ,	-- Bewitched Berries (QI!)
+			["groups"] = {
+				i(TRICKY_TREAT),
+				i(DRUSTVAR_CHOC),
+			},
+		}),
+		q(92537, {	-- Hexed Honeycombs
+			["sourceQuest"] = 92498,	-- Sugar Run (Drustvar)
+			["qg"] = 251989,	-- Nomi
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
+			["groups"] = {
+				o(576212, {	-- Bee Hive
+					i(252947),	-- Honeycomb (QI!)
+				}),
+				--
+				i(TRICKY_TREAT),
+				i(DRUSTVAR_CHOC),
+			},
+		}),
+		q(92535, {	-- Witchbane Truffles
+			["sourceQuest"] = 92498,	-- Sugar Run (Drustvar)
+			["qg"] = 251989,	-- Nomi
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
+			["qi"] = 257891,	-- Dog Whistle (QI!)
+			["groups"] = {
+				i(TRICKY_TREAT),
+				i(DRUSTVAR_CHOC),
+			},
+		}),
 		q(95826, {	-- Sugar Run (Felwood)
+			["altQuests"] = {
+				92498,	-- Sugar Run (Drustvar)
+				93400,	-- Sugar Run (Duskwood)
+			},
+			["qg"] = 251678,	-- Yin Shuilan
 			["coords"] = {
-				{ 54.0, 33.8, FOUNDERS_POINT },
+				{ 53.9, 34.0, FOUNDERS_POINT },
+				{ 51.8, 54.0, RAZORWIND_SHORES },
 			},
 			["maps"] = { FELWOOD },
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
 		}),
+		-- TODO: CANDY CRAFTING, 3 dailies
 		q(93400, {	-- Sugar Run (Duskwood)
+			["altQuests"] = {
+				92498,	-- Sugar Run (Drustvar)
+				95826,	-- Sugar Run (Felwood)
+			},
+			["qg"] = 251678,	-- Yin Shuilan
 			["coords"] = {
-				{ 54.0, 33.8, FOUNDERS_POINT },
+				{ 53.9, 34.0, FOUNDERS_POINT },
+				{ 51.8, 54.0, RAZORWIND_SHORES },
 			},
 			["maps"] = { DUSKWOOD },
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
 		}),
+		-- TODO: CANDY CRAFTING, 3 dailies
 		q(29402, {	-- Taking Precautions (Alliance)
 			["sourceQuest"] = 29399,	-- Shopping Around (Alliance)
 			["qg"] = 54021,	-- Hudson Barnes
@@ -4047,10 +4219,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
-		q(92535, {	-- Witchbane Truffles
-			["timeline"] = { ADDED_12_1_5 },
-			["qi"] = 257891,	-- Dog Whistle (QI!)
-		}),
 		q(64546,	-- Visions of Sire Denathrius
 		bubbleDownSelf({
 			["timeline"] = { ADDED_9_1_0 },
@@ -4211,6 +4379,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		i(TRICKY_TREAT, { ["timeline"] = { ADDED_2_4_3 } }),
 	}))),
 	n(TREASURES, {
+		o(691654, {	-- Ghost Gear
+			["coords"] = {
+				{ 54.1, 33.8, FOUNDERS_POINT },
+			},
+			["timeline"] = { ADDED_12_1_5 },
+			["groups"] = { i(249386) },	-- Ghost Gear
+		}),
+		o(576409, {	-- Haunted Candy
+			["coords"] = {
+				{ 53.8, 33.6, FOUNDERS_POINT },
+				{ 51.7, 54.5, RAZORWIND_SHORES },
+			},
+			["timeline"] = { ADDED_12_1_5 },
+		}),
 		o(244568, {	-- Spooky Pepe
 			["description"] = "You need a Tier 3 garrison for this.",
 			["coords"] = {
@@ -4223,6 +4405,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				ach(10365),	-- A Frightening Friend
 			},
 		}),
+		o(644611, {	-- Tricky Treasure
+			["coords"] = {
+				{ 41.0, 61.4, FOUNDERS_POINT },
+			},
+			["timeline"] = { ADDED_12_1_5 },
+		}),
 	}),
 	-- #if AFTER 4.2.2
 	n(VENDORS, {
@@ -4230,6 +4418,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["timeline"] = { ADDED_12_1_5 },
 			["crs"] = {
 				273472,	-- Cordula Wolfgang <Hallow's End Decor Specialist>
+				273470,	-- Spew Gutsout <Hallow's End Decor Specialist>
+				273403,	-- Jack <Decor Vendor>
+				273402,	-- Echo <Decor Vendor>
 			},
 			["groups"] = {
 				i(282194, { ["cost"] = { { "i", TRICKY_TREAT, 20 } } }),	-- Candlelit Ogre Jack-o'-Lantern (DECOR!)
@@ -4246,6 +4437,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				i(282200, { ["cost"] = { { "i", TRICKY_TREAT, 20 } } }),	-- Unlit Ogre Jack-o'-Lantern (DECOR!)
 				i(282198, { ["cost"] = { { "i", TRICKY_TREAT, 20 } } }),	-- Unlit Shrieking Jack-o'-Lantern (DECOR!)
 			},
+		}),
+		n(273472, {	-- Cordula Wolfgang <Hallow's End Decor Specialist>
+			["coord"] = { 54.3, 32.7, FOUNDERS_POINT },
+			["timeline"] = { ADDED_12_1_5 },
+		}),
+		n(273470, {	-- Spew Gutsout <Hallow's End Decor Specialist>
+			["coord"] = { 52.4, 54.4, RAZORWIND_SHORES },
+			["timeline"] = { ADDED_12_1_5 },
+		}),
+		n(273403, {	-- Jack <Decor Vendor>
+			["coord"] = { 31.9, 50.3, ELWYNN_FOREST },
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_12_1_5 },
+		}),
+		n(273402, {	-- Echo <Decor Vendor>
+			["coord"] = { 62.3, 66.7, TIRISFAL_GLADES },
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_12_1_5 },
 		}),
 		n(53757, {	-- Chub <Candy & Toy Vendor>
 			["coord"] = { 62.1, 66.4, TIRISFAL_GLADES },

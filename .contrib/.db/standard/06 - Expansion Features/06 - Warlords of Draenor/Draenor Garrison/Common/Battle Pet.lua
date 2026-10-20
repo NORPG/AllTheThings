@@ -87,18 +87,17 @@ root(ROOTS.ExpansionFeatures,
 							},
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
+							["qi"] = 116378,	-- Mark of Pet Mastery (QI!)
 							["groups"] = {
 								i(118697, {	-- Big Bag of Pet Supplies
 									i(119434),	-- Albino Chimaeraling (PET!)
 									i(118578),	-- Firewing (PET!)
-									i(119467),	-- Puddle Terror (PET!)
 									i(113623),	-- Ghastly Kid (PET!)
-									i(119468),	-- Sunfire Kaliri (PET!)
+									i(119467),	-- Puddle Terror (PET!)
 									i(118598),	-- Sun Sproutling (PET!)
+									i(119468),	-- Sunfire Kaliri (PET!)
 									i(113558),	-- Weebomination (PET!)
 								}),
-								--
-								i(116378),	-- Mark of Pet MAstery (QI!)
 							},
 						}),
 						q(37645, {	-- Mastering the Menagerie (H)
@@ -106,18 +105,17 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 32.6, 39.8, FROSTWALL },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
+							["qi"] = 116378,	-- Mark of Pet Mastery (QI!)
 							["groups"] = {
 								i(118697, {	-- Big Bag of Pet Supplies
+									i(119434),	-- Albino Chimaeraling (PET!)
 									i(118578),	-- Firewing (PET!)
 									i(113623),	-- Ghastly Kid (PET!)
+									i(119467),	-- Puddle Terror (PET!)
 									i(118598),	-- Sun Sproutling (PET!)
 									i(119468),	-- Sunfire Kaliri (PET!)
-									i(119467),	-- Puddle Terror (PET!)
 									i(113558),	-- Weebomination (PET!)
-									i(119434),	-- Albino Chimaeraling (PET!)
 								}),
-								--
-								i(116378),	-- Mark of Pet MAstery (QI!)
 							},
 						}),
 						q(36423, {	-- Pets Versus Pests

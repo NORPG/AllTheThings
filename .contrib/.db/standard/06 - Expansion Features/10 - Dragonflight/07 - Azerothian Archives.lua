@@ -25,9 +25,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						19793,	-- Finally At Rest
 						19792,	-- Just One More Thing
 					}},
-					["groups"] = {
-						title(536),	-- Isles Archivist
-					},
+					["groups"] = { title(536) },	-- Isles Archivist
 				}),
 				ach(19787, {	-- Clued In
 					["description"] = "Look for glowing objects on the floor during Research World Quests, or find them at The Big Dig when someone has the relevant task.",
@@ -99,33 +97,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			}),
 			n(DROPS, {
-				i(213185, {	-- Dusty Centaur Tome
-					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
-				}),
-				i(213175, {	-- Dusty Djaradin Tome
-					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
-				}),
-				i(213188, {	-- Dusty Dracthyr Tome
-					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
-				}),
-				i(213187, {	-- Dusty Drakonid Tome
-					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
-				}),
-				i(213186, {	-- Dusty Niffen Tome
-					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
-				}),
-				i(213190, {	-- Preserved Djaradin Tome
-					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
-				}),
-				i(213189, {	-- Preserved Dragonkin Tome
-					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
-				}),
-				i(213176, {	-- Preserved Isles Tome
-					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
-				}),
-				i(213177, {	-- Immaculate Tome
-					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
-				}),
+				i(213185, { ["sym"] = {{ "select", "npcID", 208029 },{"pop"}} }),	-- Dusty Centaur Tome
+				i(213175, { ["sym"] = {{ "select", "npcID", 208029 },{"pop"}} }),	-- Dusty Djaradin Tome
+				i(213188, { ["sym"] = {{ "select", "npcID", 208029 },{"pop"}} }),	-- Dusty Dracthyr Tome
+				i(213187, { ["sym"] = {{ "select", "npcID", 208029 },{"pop"}} }),	-- Dusty Drakonid Tome
+				i(213186, { ["sym"] = {{ "select", "npcID", 208029 },{"pop"}} }),	-- Dusty Niffen Tome
+				i(213190, { ["sym"] = {{ "select", "npcID", 208029 },{"pop"}} }),	-- Preserved Djaradin Tome
+				i(213189, { ["sym"] = {{ "select", "npcID", 208029 },{"pop"}} }),	-- Preserved Dragonkin Tome
+				i(213176, { ["sym"] = {{ "select", "npcID", 208029 },{"pop"}} }),	-- Preserved Isles Tome
+				i(213177, { ["sym"] = {{ "select", "npcID", 208029 },{"pop"}} }),	-- Immaculate Tome
 				---
 				i(213389),	-- Ancient Centaur Diary
 				i(213025),	-- Ancient Djaradin Bolt
@@ -166,25 +146,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77325 },	-- To the Archives!
 					["provider"] = { "n", 208355 },	-- Zenata
 					["coord"] = { 61.6, 31.1, THALDRASZUS },
-					["groups"] = {
-						i(208084),	-- Technoscryers (QI!)
-					},
+					["qi"] = 208084,	-- Technoscryers (QI!)
 				}),
 				q(77166, {	-- A Practical Test
 					["sourceQuests"] = { 77231 },	-- Technoscrying 101
 					["provider"] = { "n", 208355 },	-- Zenata
 					["coord"] = { 61.2, 30.7, THALDRASZUS },
-					["groups"] = {
-						i(202247),	-- Technoscryers (QI!)
-					},
+					["qi"] = 202247,	-- Technoscryers (QI!)
 				}),
 				q(77176, {	-- I Can See Through Time!
 					["sourceQuests"] = { 77166 },	-- A Practical Test
 					["provider"] = { "n", 208355 },	-- Zenata
 					["coord"] = { 61.7, 29.8, THALDRASZUS },
-					["groups"] = {
-						i(202247),	-- Technoscryers (QI!)
-					},
+					["qi"] = 202247,	-- Technoscryers (QI!)
 				}),
 				q(77434, {	-- Technoscrying: Observatory
 					["sourceQuests"] = { 77176 },	-- I Can See Through Time!
@@ -195,9 +169,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77434 },	-- Technoscrying: Observatory
 					["provider"] = { "n", 204835 },	-- Zenata
 					["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },
-					["groups"] = {
-						i(202247),	-- Technoscryers (QI!)
-					},
+					["qi"] = 202247,	-- Technoscryers (QI!)
 				}),
 				q(75867, {	-- A Link to the Past
 					["sourceQuests"] = { 75729 },	-- Attune to the Observer
@@ -221,10 +193,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77325 },	-- To the Archives!
 					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["coord"] = { 61.5, 31.1, THALDRASZUS },
-					["groups"] = {
-						i(210956),	-- Archivist's Fire Totem (QI!)
-						i(205224),	-- Just a Rock
-					},
+					["qi"] = 210956,	-- Archivist's Fire Totem (QI!)
+					["groups"] = { i(205224) },	-- Just a Rock
 				}),
 				q(78762, {	-- Your First Find
 					["sourceQuests"] = { 77267 },	-- Excavation 101
@@ -297,12 +267,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77328 },	-- Back to Headquarters!
 					["provider"] = { "n", 206107 },	-- Eadweard Dalyngrigge
 					["coord"] = { 61.5, 31.2, THALDRASZUS },
+					["qi"] = 212371,	-- Azerothian Archivist Initiation Token (QI!)
 					["groups"] = {
 						-- spell(431591),	-- Azerothian Archives: Riverbed, Concord Observatory, and Lost Anethenum Sites (WQ unlock)
 						i(208451, {	-- Archivist's Buckled Cap
 							["provider"] = { "i", 212371 },	-- Azerothian Archivist Initiation Token
 						}),
-						i(212371),	-- Azerothian Archivist Initiation Token (QI!)
 					},
 				}),
 				q(77483, {	-- Technoscrying: Dragonskull Island
@@ -354,9 +324,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- spell(431594),	-- Azerothian Archives: Igira's Watch, Zaralek Cavern Site (WQ unlock)
 						o(405996, {	-- Ancient Zaqali Trade-bond Tablet
 							["coord"] = { 42.0, 35.0, ZARALEK_CAVERN },
-							["groups"] = {
-								i(208228),	-- Ancient Trade-bonded Tablet (QI!)
-							},
+							["groups"] = { i(208228) },	-- Ancient Trade-bonded Tablet (QI!)
 						}),
 					},
 				}),
@@ -369,9 +337,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77486 },	-- Excavation: Gaze of Neltharion
 					["provider"] = { "n", 205413 },	-- Roska Rocktooth
 					["coord"] = { 48.6, 48.3, ZARALEK_CAVERN },
-					["groups"] = {
-						i(210834),	-- Archivist's Earth Totem (QI!)
-					},
+					["qi"] = 210834,	-- Archivist's Earth Totem (QI!)
 				}),
 				q(76032, {	-- Hidden in the Midden
 					["sourceQuests"] = { 76026 },	-- Surveying the Tower
@@ -395,9 +361,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77487 },	-- Excavation: Winglord's Perch
 					["provider"] = { "n", 208362 },	-- Roska Rocktooth
 					["coord"] = { 17.2, 16.3, THE_FORBIDDEN_REACH },
-					["groups"] = {
-						i(210778),	-- Archivist's Wind Totem (QI!)
-					},
+					["qi"] = 210778,	-- Archivist's Wind Totem (QI!)
 				}),
 				q(77151, {	-- The Cache in the Crag
 					["sourceQuests"] = { 77100 },	-- Surveying the Cliffside
@@ -434,9 +398,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						{ 55.3, 51.4, 2262 },	-- Traitor's Rest
 					},
 					["isWeekly"] = true,
-					["groups"] = {
-						currency(2819),	-- Archivist Knowledge
-					},
+					["groups"] = { currency(2819) },	-- Archivist Knowledge
 				}),
 				q(77760, {	-- Curious Find: Dragonhorn Flute
 					["provider"] = { "i", 208733 },	-- Dragonhorn Flute (QI!)
@@ -451,6 +413,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(RARES, {
 				n(208029, {	-- Doomshadow
 					["coord"] = { 27.75, 46.20, THE_AZURE_SPAN },
+					["qis"] = {
+						208733,	-- Dragonhorn Flute (QI!)
+						208737,	-- Hole-Punched Bakar Tooth (QI!)
+						208734,	-- Waterlogged Ledger (QI!)
+					},	-- Name
 					["groups"] = {
 						i(212645),	-- Clayscale Hornstrider (MOUNT!)
 						i(212642),	-- Excavator's Boots
@@ -461,9 +428,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(212640),	-- Excavator's Trusty Satchel
 						i(212640),	-- Excavator's Utility Belt
 						i(212638),	-- Excavator's Work Shirt
-						i(208737),	-- Hole-Punched Bakar Tooth (QI!)
-						i(208733),	-- Dragonhorn Flute (QI!)
-						i(208734),	-- Waterlogged Ledger (QI!)
 					},
 				}),
 			}),
@@ -474,81 +438,38 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				n(209192, {	-- Provisioner Aristta
 					["coord"] = { 61.4, 31.4, THALDRASZUS },
 					["groups"] = {
-						i(213536, {	-- Priceless Artifact
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 1000 } },
-						}),
-						i(212941, {	-- Archivist's "Light Touch" (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
-						}),
-						i(208456, {	-- Archivist's Elegant Bag (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } },
-						}),
-						i(208458, {	-- Archivist's Extravagant Lantern (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
-						}),
-						i(208459, {	-- Archivist's Improvised Cudgetl (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
-						}),
-						i(213276, {	-- Archivist's Magnifying Mace (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
-						}),
-						i(208454, {	-- Archivist's Mining Pick (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
-						}),
-						i(213274, {	-- Archivist's Pathfinder (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
-						}),
-						i(208547, {	-- Archivist's Reading Spectacles (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 12000 } },
-						}),
-						i(213275, {	-- Archivist's Rockpuller (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
-						}),
-						i(208546, {	-- Archivist's Rose-Tinted Glasses (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 12000 } },
-						}),
-						i(208457, {	-- Archivist's Spelunking Torch (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
-						}),
-						i(212870, {	-- Archivist's Stone Chisel (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
-						}),
-						i(208455, {	-- Archivist's Sturdy Hook (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
-						}),
-						i(208453, {	-- Archivist's Super Scooper (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
-						}),
-						i(208450, {	-- Coiled Archivist's Rope (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
-						}),
-						i(192796, {	-- Explorer's Stonehide Packbeast (MOUNT!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 20000 } },
-						}),
-						i(208452, {	-- Historian's Dapper Cap (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } },
-						}),
-						i(212634, {	-- Historian's Fingerless Gloves (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } },
-						}),
-						i(212633, {	-- Historian's Fitted Vest (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 7000 } },
-						}),
-						i(212794, {	-- Historian's Hefty Habersack (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } },
-						}),
-						i(212637, {	-- Historian's Striders (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } },
-						}),
-						i(212636, {	-- Historian's Trousers (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 7000 } },
-						}),
-						i(212635, {	-- Historian's Utility Belt (COSMETIC!)
-							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } },
-						}),
+						i(212941, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } } }),	-- Archivist's "Light Touch" (COSMETIC!)
+						i(208456, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } } }),	-- Archivist's Elegant Bag (COSMETIC!)
+						i(208458, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } } }),	-- Archivist's Extravagant Lantern (COSMETIC!)
+						i(208459, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } } }),	-- Archivist's Improvised Cudgetl (COSMETIC!)
+						i(213276, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } } }),	-- Archivist's Magnifying Mace (COSMETIC!)
+						i(208454, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } } }),	-- Archivist's Mining Pick (COSMETIC!)
+						i(213274, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } } }),	-- Archivist's Pathfinder (COSMETIC!)
+						i(208547, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 12000 } } }),	-- Archivist's Reading Spectacles (COSMETIC!)
+						i(213275, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } } }),	-- Archivist's Rockpuller (COSMETIC!)
+						i(208546, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 12000 } } }),	-- Archivist's Rose-Tinted Glasses (COSMETIC!)
+						i(208457, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } } }),	-- Archivist's Spelunking Torch (COSMETIC!)
+						i(212870, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } } }),	-- Archivist's Stone Chisel (COSMETIC!)
+						i(208455, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } } }),	-- Archivist's Sturdy Hook (COSMETIC!)
+						i(208453, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } } }),	-- Archivist's Super Scooper (COSMETIC!)
+						i(208450, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } } }),	-- Coiled Archivist's Rope (COSMETIC!)
+						i(192796, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 20000 } } }),	-- Explorer's Stonehide Packbeast (MOUNT!)
+						i(208452, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } } }),	-- Historian's Dapper Cap (COSMETIC!)
+						i(212634, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } } }),	-- Historian's Fingerless Gloves (COSMETIC!)
+						i(212633, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 7000 } } }),	-- Historian's Fitted Vest (COSMETIC!)
+						i(212794, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } } }),	-- Historian's Hefty Habersack (COSMETIC!)
+						i(212637, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } } }),	-- Historian's Striders (COSMETIC!)
+						i(212636, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 7000 } } }),	-- Historian's Trousers (COSMETIC!)
+						i(212635, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } } }),	-- Historian's Utility Belt (COSMETIC!)
+						i(213536, { ["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 1000 } } }),	-- Priceless Artifact
 						i(248117, {	-- Studious Dracthyr's Tomes (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 4000 } },
+							["timeline"] = { ADDED_11_2_7 }
+						}),
+						i(284402, {	-- Valdrakken Resupply Coin
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 2000 } },
+							["timeline"] = { ADDED_12_1_5 },
+							["groups"] = { currency(DRAGON_SUPPLIES) }
 						}),
 					},
 				}),
@@ -566,39 +487,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
 					q(78662, {	-- Excavation: A Cliffside Full of Caches
 						["coord"] = { 14.9, 18.2, THE_FORBIDDEN_REACH },
-						["groups"] = {
-							i(205224),	-- Just a Rock
-						},
+						["groups"] = { i(205224) },	-- Just a Rock
 					}),
 					q(78645, {	-- Excavation: Buried in the Riverbed
 						["coord"] = { 65.9, 45.7, OHNAHRAN_PLAINS },
-						["groups"] = {
-							i(205224),	-- Just a Rock
-						},
+						["groups"] = { i(205224) },	-- Just a Rock
 					}),
 					q(78663, {	-- Excavation: Scattered Around the Tower
 						["coord"] = { 47.9, 48.7, ZARALEK_CAVERN },
-						["groups"] = {
-							i(205224),	-- Just a Rock
-						},
+						["groups"] = { i(205224) },	-- Just a Rock
 					}),
 					q(78649, {	-- Excavation: Something Big Beneath the Riverbed
 						["coord"] = { 66.4, 46.1, OHNAHRAN_PLAINS },
-						["groups"] = {
-							i(205224),	-- Just a Rock
-						},
+						["groups"] = { i(205224) },	-- Just a Rock
 					}),
 					q(78739, {	-- Excavation: The Trove in the Tower
 						["coord"] = { 46.9, 48.8, ZARALEK_CAVERN },
-						["groups"] = {
-							i(205224),	-- Just a Rock
-						},
+						["groups"] = { i(205224) },	-- Just a Rock
 					}),
 					q(78661, {	-- Excavation: Treasures in the Cliffside
 						["coord"] = { 17.1, 16.4, THE_FORBIDDEN_REACH },
-						["groups"] = {
-							i(205224),	-- Just a Rock
-						},
+						["groups"] = { i(205224) },	-- Just a Rock
 					}),
 					q(76587, {	-- Research: Centaur of Ohn'ahran Plains
 						["coord"] = { 69.0, 34.3, OHNAHRAN_PLAINS },
