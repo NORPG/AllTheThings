@@ -57,24 +57,27 @@ namespace ATT.FieldTypes
 
         public static void Merge(IDictionary<string, object> data, object value)
         {
-            Cost cost;
-            if (!data.TryGetValue(Field, out object costobj))
+            lock (data)
             {
-                cost = new Cost(data);
-                data[Field] = cost;
-            }
-            else
-            {
-                cost = costobj as Cost;
-            }
+                Cost cost;
+                if (!data.TryGetValue(Field, out object costobj))
+                {
+                    cost = new Cost(data);
+                    data[Field] = cost;
+                }
+                else
+                {
+                    cost = costobj as Cost;
+                }
 
-            if (value is Cost mergeCost)
-            {
-                cost.Merge(mergeCost);
-            }
-            else
-            {
-                cost.Merge(value);
+                if (value is Cost mergeCost)
+                {
+                    cost.Merge(mergeCost);
+                }
+                else
+                {
+                    cost.Merge(value);
+                }
             }
         }
 
@@ -361,12 +364,6 @@ namespace ATT.FieldTypes
                 return;
             }
 
-            if (_costTypes == null)
-            {
-                _costTypes = new Dictionary<string, IDictionary<decimal, long>>(merge._costTypes);
-                return;
-            }
-
             foreach (var mergeCostType in merge._costTypes)
             {
                 var costType = GetCostType(mergeCostType.Key);
@@ -379,6 +376,10 @@ namespace ATT.FieldTypes
                             LogWarn($"'{Field}' '{mergeCostType.Key}' {amount} replaced with '{mergeCostRecord.Value}'", _data);
                             costType[mergeCostRecord.Key] = mergeCostRecord.Value;
                         }
+                    }
+                    else
+                    {
+                        costType.Add(mergeCostRecord.Key, mergeCostRecord.Value);
                     }
                 }
             }
