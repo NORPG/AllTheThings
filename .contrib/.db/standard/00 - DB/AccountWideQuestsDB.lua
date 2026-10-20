@@ -2934,6 +2934,7 @@ local AccountWideQuestsDB = {
 	98022,	-- Ensemble: Venom-Cursed Bear's Guard
 	98044,	-- Nebulous Voidcache: Delver's Trove
 	98097,	-- The Coiled Altar
+	98204,	-- Cursed Keepsake
 	98217,	-- Insidious Venomstone
 	98337,	-- Quest #98337*
 	98344,	-- Farthik the Plunderer weekly reputation obtained.

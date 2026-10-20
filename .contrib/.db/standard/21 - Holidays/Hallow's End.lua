@@ -3716,7 +3716,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
 		}),
-		--TODO: CANDY CRAFTING
 		q(92536, {	-- Bewitched Berry Bites
 			["sourceQuest"] = 92498,	-- Sugar Run (Drustvar)
 			["qg"] = 251989,	-- Nomi
@@ -3767,7 +3766,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
 		}),
-		-- TODO: CANDY CRAFTING
 		q(95827, {	-- Blighted Bloom Bites
 			["sourceQuest"] = 95826,	-- Sugar Run (Felwood)
 			["qg"] = 251989,	-- Nomi
@@ -3817,11 +3815,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
 		}),
-		-- TODO: CANDY CRAFTING
 		q(95825, {	-- Blighted Core Caramels
 			["sourceQuest"] = 93400,	-- Sugar Run (Duskwood)
 			["qg"] = 251989,	-- Nomi
-			--["coord"] = { x, y, MAP },
+			["coord"] = { 67.2, 76.7, DUSKWOOD },
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
 			["qi"] = 271051,	-- Sugar Beet (QI!)
@@ -3833,7 +3830,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(93401, {	-- Howling Honey Drops
 			["sourceQuest"] = 93400,	-- Sugar Run (Duskwood)
 			["qg"] = 251989,	-- Nomi
-			--["coord"] = { x, y, MAP },
+			["coord"] = { 67.2, 76.7, DUSKWOOD },
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
 			["qi"] = 258217,	-- Honey Drops (QI!)
@@ -3845,7 +3842,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(95822, {	-- Twisted Vine Licorice
 			["sourceQuest"] = 93400,	-- Sugar Run (Duskwood)
 			["qg"] = 251989,	-- Nomi
-			--["coord"] = { x, y, MAP },
+			["coord"] = { 67.2, 76.7, DUSKWOOD },
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
 			["groups"] = {
@@ -4249,7 +4246,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 53.8, 33.6, FOUNDERS_POINT },
 				{ 51.7, 54.5, RAZORWIND_SHORES },
 			},
+			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
+			["groups"] = {
+				i(DRUSTVAR_CHOC),
+				i(DUSKWOOD_CARAMEL),
+				i(FELWOOD_FUDGE),
+			},
 		}),
 		o(244568, {	-- Spooky Pepe
 			["description"] = "You need a Tier 3 garrison for this.",
@@ -4633,8 +4636,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["timeline"] = { ADDED_7_1_0 },
 			["races"] = ALLIANCE_ONLY,
 		}),
-		n(164966,	-- Temel <The Party Herald> (with a hat)
-		bubbleDownSelf({["timeline"] = { ADDED_9_1_0 }},{
+		n(52497, {	-- Spanky <Mask Vendor>
+			["coord"] = { 31.8, 50.0, ELWYNN_FOREST },
+			["timeline"] = { ADDED_4_2_2 },
+			["races"] = ALLIANCE_ONLY,
+		}),
+		n(53702, {	-- Stymie <Wand Vendor>
+			["coord"] = { 31.9, 50.1, ELWYNN_FOREST },
+			["timeline"] = { ADDED_4_2_2 },
+			["races"] = ALLIANCE_ONLY,
+		}),
+		n(164966, bubbleDownSelf({["timeline"] = { ADDED_9_1_0 }},{	-- Temel <The Party Herald> (with a hat)
 			["coords"] = {
 				{ 28.0, 43.0, REVENDRETH },	-- with hat, outside Sinfall
 				{ 58.8, 80.0, SINFALL_REACHES },	-- without hat
@@ -4646,15 +4658,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 			},
 		})),
-		n(52497, {	-- Spanky <Mask Vendor>
-			["coord"] = { 31.8, 50.0, ELWYNN_FOREST },
-			["timeline"] = { ADDED_4_2_2 },
-			["races"] = ALLIANCE_ONLY,
-		}),
-		n(53702, {	-- Stymie <Wand Vendor>
-			["coord"] = { 31.9, 50.1, ELWYNN_FOREST },
-			["timeline"] = { ADDED_4_2_2 },
-			["races"] = ALLIANCE_ONLY,
+		n(252232, {	-- Tricky Treat Trader <Candy Crew>
+			["description"] = "The exhange rate of candy to Tricky Treats changes daily and varies between neighborhoods.",
+			["coords"] = {
+				{ 53.8, 33.6, FOUNDERS_POINT },
+				{ 51.6, 54.6, RAZORWIND_SHORES },
+			},
+			["timeline"] = { ADDED_12_1_5 },
+			["groups"] = {
+				i(TRICKY_TREAT, {
+					["cost"] = { { "i", DRUSTVAR_CHOC, 1 } },
+				}),
+				i(TRICKY_TREAT, {
+					["cost"] = { { "i", DUSKWOOD_CARAMEL, 1 } },
+				}),
+				i(TRICKY_TREAT, {
+					["cost"] = { { "i", FELWOOD_FUDGE, 1 } },
+				}),
+			},
 		}),
 		n(109688, {	-- Woim <Pet Vendor>
 			["coord"] = { 62.3, 66.4, TIRISFAL_GLADES },
@@ -4694,5 +4715,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 		q(78474),	-- Killing Headless Horseman (needs more details)
 		q(78478),	-- Killing Headless Horseman (needs more details)
 		q(78826),	-- Killing Headless Horseman (needs more details)
+		q(99132, { ["timeline"] = { ADDED_12_1_5 }, ["isDaily"] = true }),	-- Triggers on depositing candy to your neighborhood Piniata
+		q(97219, { ["timeline"] = { ADDED_12_1_5 }, ["isDaily"] = true }),	-- Candy Crafting
+		q(98421, { ["timeline"] = { ADDED_12_1_5 }, ["isDaily"] = true }),	-- Candy Crafting
+		q(98422, { ["timeline"] = { ADDED_12_1_5 }, ["isDaily"] = true }),	-- Candy Crafting
 	})),
 })));

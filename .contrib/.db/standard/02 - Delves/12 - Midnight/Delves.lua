@@ -623,16 +623,22 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				{ "o", 584515 },	-- Bountiful Heavy Trunk
 				{ "o", 584517 },	-- Heavy Trunk
 				{ "o", 584519 },	-- Heavy Trunk
+				-- #if AFTER 12.1.5
+				{ "o", 673143 },	-- Bountiful Heavy Trunk
+				{ "o", 673144 },	-- Bountiful Heavy Trunk
+				{ "o", 689304 },	-- Ancestral Bounty
+				-- #endif
 			},
 			["groups"] = {
+				i(273067, { ["timeline"] = { ADDED_12_1_5 } }),	-- Design: Polished Ammolite (RECIPE!)
 				i(259366),	-- Design: Replica Haranir Mural (RECIPE!)
 				i(256718),	-- Design: Stabilizing Gemstone Bandolier (RECIPE!)
 				i(256747),	-- Formula: Enchant Boots - Shaladrassil's Roots (RECIPE!)
 				i(256738),	-- Formula: Enchant Helm - Empowered Hex of Leeching (RECIPE!)
 				i(256753),	-- Formula: Enchant Helm - Empowered Rune of Avoidance (RECIPE!)
 				i(256752),	-- Formula: Enchant Ring - Nature's Fury (RECIPE!)
-				i(256748),	-- Formula: Enchant Shoulders - Amirdrassil's Grace (RECIPE!)
 				i(256740),	-- Formula: Enchant Shoulders - Akil'zon's Swiftness (RECIPE!)
+				i(256748),	-- Formula: Enchant Shoulders - Amirdrassil's Grace (RECIPE!)
 				i(259370),	-- Formula: Rootflame Campfire (RECIPE!)
 				i(258126),	-- Pattern: Arcanoweave Cord (RECIPE!)
 				i(256637),	-- Pattern: Axe-Flingin' Bands (RECIPE!)
@@ -642,6 +648,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				i(256650),	-- Pattern: World Tender's Rootslippers (RECIPE!)
 				i(247425),	-- Recipe: Riftstone (RECIPE!)
 				i(247423),	-- Recipe: Silvermoon Spire Fountain (RECIPE!)
+				i(273064, { ["timeline"] = { ADDED_12_1_5 } }),	-- Schematic: Coiled Snake-Eye (RECIPE!)
 			},
 		}),
 		filter(COSMETIC, {

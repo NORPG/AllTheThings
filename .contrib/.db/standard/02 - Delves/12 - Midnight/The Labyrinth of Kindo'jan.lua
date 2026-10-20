@@ -458,11 +458,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				o(689304, {	-- Ancestral Bounty
 					questID = 98758,
 					isWeekly = true,	-- assumed
-					groups = {
-						i(273067),	-- Design: Polished Ammolite (RECIPE!)
-						i(280820),	-- Loa-Blessed Victory (TOY!)
-						i(273064),	-- Schematic: Coiled Snake-Eye (RECIPE!)
-					},
+					groups = { i(280820) },	-- Loa-Blessed Victory (TOY!)
 				}),
 				o(676583, {	-- Ancient Keyper's Bag
 					["description"] = "Spawns next to the corpse of 'Keeper of the Key' after you defeat him.\n He has a chance to spawn anywhere in the Labyrinth.",
@@ -470,16 +466,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["groups"] = { i(282402) },	-- Archaic Amani Key
 				}),
 				o(673143, {	-- Bountiful Heavy Trunk
-					["sym"] = {{"select","itemID",
-						273067,	-- Design: Polished Ammolite (RECIPE!)
-						273064,	-- Schematic: Coiled Snake-Eye (RECIPE!)
-					}},
 				}),
 				o(673144, {	-- Bountiful Heavy Trunk
-					["sym"] = {{"select","itemID",
-						273067,	-- Design: Polished Ammolite (RECIPE!)
-						273064,	-- Schematic: Coiled Snake-Eye (RECIPE!)
-					}},
 				}),
 				o(673138, {	-- Gilded Stash
 				}),
