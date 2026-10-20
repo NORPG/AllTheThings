@@ -179,6 +179,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["timeline"] = { ADDED_12_1_5 },
 				["qi"] = 280678,	-- Primordial Venom Mote (QI!)
 			}),
+			q(98390, {	-- Ascending with Venomstones
+				["sourceQuest"] = 98379,	-- Ancient Depths, Ancient Venom
+				["qg"] = 269987,	-- Orin Straylight
+				["coord"] = { 40.0, 64.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				["timeline"] = { ADDED_12_1_5 },
+			}),
 		}),
 		-- PVP 4 Part Quest
 		n(QUESTS, sharedData({

@@ -1215,9 +1215,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					["classes"] = { WARLOCK },
 					["isBreadcrumb"] = true,	-- need to confirm
 				}),
-				q(76430, {	-- Beingning Impositions (H)
+				q(76430, {	-- Beginning Impositions (H)
 					["provider"] = { "n", 207051 },	-- Assistant Phineas
-					["coord"] = { 42.5, 51.8, ORGRIMMAR },
+					["coord"] = { 42.5, 51.8, 86 },	-- The Cleft of Shadows
 					["timeline"] = { ADDED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
@@ -1240,7 +1240,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				q(75539, {	-- Some Wicked Things This Way Come
 					["sourceQuests"] = {
 						75538,	-- Beginning Impositions (A)
-						76430,	-- Beingning Impositions (H)
+						76430,	-- Beginning Impositions (H)
 					},
 					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 203968 },	-- Madam Shadow
@@ -1268,10 +1268,8 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
 					["timeline"] = { ADDED_10_1_5 },
 					["classes"] = { WARLOCK },
-					["groups"] = {
-						i(206160),	-- Madam Shadow's Grimoire (QI!)
-						spell(412234),	-- Madam Shadow's Soulstone
-					},
+					["qi"] = 206160,	-- Madam Shadow's Grimoire (QI!)
+					["groups"] = { spell(412234) },	-- Madam Shadow's Soulstone
 				}),
 				q(75542, {	-- Curses & Cultists
 					["sourceQuests"] = { 76155 },	-- A Wolf Among Sheep
@@ -1315,46 +1313,22 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					["coord"] = { 39.7, 53.9, 86 },	-- The Cleft of Shadows
 					["timeline"] = { ADDED_10_1_5 },
 					["classes"] = { WARLOCK },
-					["groups"] = {
-						i(207101),	-- Glyph of Banehollow's Soulstone
-					},
+					["groups"] = { i(207101) },	-- Glyph of Banehollow's Soulstone
 				}),
 			},
 		}),
 		n(ARMOR, {
-			i(1396, {	-- Acolyte's Pants
-				["timeline"] = { REMOVED_9_1_5 },
-			}),
-			i(52679, {	-- Acolyte's Pants
-				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 },
-			}),
-			i(57, {	-- Acolyte's Robe
-				["timeline"] = { REMOVED_9_1_5 },
-			}),
-			i(52543, {	-- Acolyte's Robe
-				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 },
-			}),
-			i(59, {	-- Acolyte's Shoes
-				["timeline"] = { REMOVED_9_1_5 },
-			}),
-			i(187753, {	-- Warlock's Mitts
-				["timeline"] = { ADDED_9_1_5 },
-			}),
-			i(187751, {	-- Warlock's Robes
-				["timeline"] = { ADDED_9_1_5 },
-			}),
-			i(187756, {	-- Warlock's Sash
-				["timeline"] = { ADDED_9_1_5 },
-			}),
-			i(187755, {	-- Warlock's Slippers
-				["timeline"] = { ADDED_9_1_5 },
-			}),
-			i(187752, {	-- Warlock's Trousers
-				["timeline"] = { ADDED_9_1_5 },
-			}),
-			i(187754, {	-- Warlock's Wristwraps
-				["timeline"] = { ADDED_9_1_5 },
-			}),
+			i(1396, { ["timeline"] = { REMOVED_9_1_5 } }),	-- Acolyte's Pants
+			i(52679, { ["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 } }),	-- Acolyte's Pants
+			i(57, { ["timeline"] = { REMOVED_9_1_5 } }),	-- Acolyte's Robe
+			i(52543, { ["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 } }),	-- Acolyte's Robe
+			i(59, { ["timeline"] = { REMOVED_9_1_5 } }),	-- Acolyte's Shoes
+			i(187753, { ["timeline"] = { ADDED_9_1_5 } }),	-- Warlock's Mitts
+			i(187751, { ["timeline"] = { ADDED_9_1_5 } }),	-- Warlock's Robes
+			i(187756, { ["timeline"] = { ADDED_9_1_5 } }),	-- Warlock's Sash
+			i(187755, { ["timeline"] = { ADDED_9_1_5 } }),	-- Warlock's Slippers
+			i(187752, { ["timeline"] = { ADDED_9_1_5 } }),	-- Warlock's Trousers
+			i(187754, { ["timeline"] = { ADDED_9_1_5 } }),	-- Warlock's Wristwraps
 		}),
 		n(WEAPONS, {
 			i(20978, {	-- Apprentice's Staff
@@ -1378,42 +1352,18 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	}),
 	cl(WARRIOR, {
 		n(ARMOR, {
-			i(140, {	-- Brawler's Boots
-				["timeline"] = { REMOVED_9_1_5 },
-			}),
-			i(139, {	-- Brawler's Pants
-				["timeline"] = { REMOVED_9_1_5 },
-			}),
-			i(58245, {	-- Brawler's Vest
-				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 },
-			}),
-			i(40, {	-- Recruit's Boots
-				["timeline"] = { REMOVED_9_1_5 },
-			}),
-			i(39, {	-- Recruit's Pants
-				["timeline"] = { REMOVED_9_1_5 },
-			}),
-			i(58231, {	-- Recruit's Vest
-				["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 },
-			}),
-			i(187748, {	-- Warrior's Chestplate
-				["timeline"] = { ADDED_9_1_5 },
-			}),
-			i(187747, {	-- Warrior's Cuffs
-				["timeline"] = { ADDED_9_1_5 },
-			}),
-			i(187746, {	-- Warrior's Gauntlets
-				["timeline"] = { ADDED_9_1_5 },
-			}),
-			i(187745, {	-- Warrior's Girdle
-				["timeline"] = { ADDED_9_1_5 },
-			}),
-			i(187744, {	-- Warrior's Greaves
-				["timeline"] = { ADDED_9_1_5 },
-			}),
-			i(187743, {	-- Warrior's Sabatons
-				["timeline"] = { ADDED_9_1_5 },
-			}),
+			i(140, { ["timeline"] = { REMOVED_9_1_5 } }),	-- Brawler's Boots
+			i(139, { ["timeline"] = { REMOVED_9_1_5 } }),	-- Brawler's Pants
+			i(58245, { ["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 } }),	-- Brawler's Vest
+			i(40, { ["timeline"] = { REMOVED_9_1_5 } }),	-- Recruit's Boots
+			i(39, { ["timeline"] = { REMOVED_9_1_5 } }),	-- Recruit's Pants
+			i(58231, { ["timeline"] = { ADDED_4_0_3, REMOVED_9_1_5 } }),	-- Recruit's Vest
+			i(187748, { ["timeline"] = { ADDED_9_1_5 } }),	-- Warrior's Chestplate
+			i(187747, { ["timeline"] = { ADDED_9_1_5 } }),	-- Warrior's Cuffs
+			i(187746, { ["timeline"] = { ADDED_9_1_5 } }),	-- Warrior's Gauntlets
+			i(187745, { ["timeline"] = { ADDED_9_1_5 } }),	-- Warrior's Girdle
+			i(187744, { ["timeline"] = { ADDED_9_1_5 } }),	-- Warrior's Greaves
+			i(187743, { ["timeline"] = { ADDED_9_1_5 } }),	-- Warrior's Sabatons
 		}),
 		n(WEAPONS, {
 			i(270431, sharedDataSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- Haranir Footlocker
@@ -1434,13 +1384,13 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
             }),
 		}),
 		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
+			i(157643),	-- Helm-Hewer Greataxe
 			i(157738),	-- Warsinger's Breastplate
-			i(157745),	-- Warsinger's Vambraces
 			i(157740),	-- Warsinger's Gauntlets
 			i(157744),	-- Warsinger's Girdle
 			i(157742),	-- Warsinger's Legplates
 			i(157739),	-- Warsinger's Sabatons
-			i(157643),	-- Helm-Hewer Greataxe
+			i(157745),	-- Warsinger's Vambraces
 		})),
 	}),
 	-- #if AFTER 7.0.3
