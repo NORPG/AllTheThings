@@ -38,215 +38,6 @@ local DRUSTVAR_CHOC = 252990;
 local DUSKWOOD_CARAMEL = 253043;
 local FELWOOD_FUDGE = 253042;
 
-local CANDY_AND_TOY_VENDOR_GROUPS = {
-	i(122338, {	-- Ancient Heirloom Armor Casing
-		["cost"] = { { "i", TRICKY_TREAT, 250 } },
-		["timeline"] = { ADDED_6_1_0 },
-	}),
-	i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-		["cost"] = { { "i", TRICKY_TREAT, 450 } },
-		["timeline"] = { ADDED_8_1_5 },
-	}),
-	i(187997, {	-- Eternal Heirloom Armor Casing
-		["cost"] = { { "i", TRICKY_TREAT, 450 } },
-		["timeline"] = { ADDED_9_1_5 },
-	}),
-	i(122340, {	-- Timeworn Heirloom Armor Casing
-		["cost"] = { { "i", TRICKY_TREAT, 450 } },
-		["timeline"] = { ADDED_6_1_0 },
-	}),
-	i(151614, {	-- Weathered Heirloom Armor Casing
-		["cost"] = { { "i", TRICKY_TREAT, 450 } },
-		["timeline"] = { ADDED_7_2_5 },
-	}),
-	-- #if BEFORE 7.0.1
-	i(116811, {	-- "Lil' Starlet" Costume
-		["cost"] = { { "i", TRICKY_TREAT, 5 } },
-		["timeline"] = { ADDED_6_0_2 },
-	}),
-	i(116810, {	-- "Mad Alchemist" Costume
-		["cost"] = { { "i", TRICKY_TREAT, 5 } },
-		["timeline"] = { ADDED_6_0_2 },
-	}),
-	i(37585, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- Chewy Fel Taffy
-	i(116801, {	-- Cursed Birman (PET!)
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["timeline"] = { ADDED_6_0_2 },
-	}),
-	i(70908, {	-- Feline Familiar (PET!)
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["timeline"] = { ADDED_4_2_2 },
-	}),
-	i(37583, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- G.N.E.R.D.S.
-	i(33292, { ["cost"] = { { "i", TRICKY_TREAT, 150 } } }),	-- Hallowed Helm
-	i(70722, {	-- Little Wickerman (TOY!)
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["timeline"] = { ADDED_4_2_2 },
-	}),
-	i(37011, {	-- Magic Broom (MOUNT!)
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["collectible"] = false,
-	}),
-	i(37582, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- Pyroblast Cinnamon Ball
-	i(37584, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- Soothing Spearmint Candy
-	i(37604, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- Tooth Pick
-	i(116804, {	-- Widget the Departed (PET!)
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["timeline"] = { ADDED_6_0_2 },
-	}),
-	-- #else
-	i(208735, {	-- Bucket of Morbid Treats
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["timeline"] = { ADDED_10_1_7 },
-	}),
-	i(37585, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- Chewy Fel Taffy
-	iensemble(230173, {	-- Ensemble: Prowler's Faded Headgear
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["timeline"] = { ADDED_11_0_5 },
-	}),
-	i(128643, {	-- Exquisite Costume Set: "Deathwing"
-		["cost"] = { { "i", TRICKY_TREAT, 200 } },
-		["timeline"] = { ADDED_6_2_2 },
-	}),
-	i(138990, {	-- Exquisite Costume Set: "Grommash"
-		["cost"] = { { "i", TRICKY_TREAT, 200 } },
-		["timeline"] = { ADDED_7_0_3 },
-	}),
-	i(116828, {	-- Exquisite Costume Set: "The Lich King"
-		["cost"] = { { "i", TRICKY_TREAT, 200 } },
-		["timeline"] = { ADDED_6_0_2 },
-	}),
-	i(151268, {	-- Exquisite Costume Set: "Xavius"
-		["cost"] = { { "i", TRICKY_TREAT, 200 } },
-		["timeline"] = { ADDED_7_3_0 },
-	}),
-	i(37583, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- G.N.E.R.D.S.
-	i(33292, { ["cost"] = { { "i", TRICKY_TREAT, 150 } } }),	-- Hallowed Helm
-	i(163045, {	-- Headless Horseman's Hearthstone (TOY!)
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["timeline"] = { ADDED_8_0_1 },
-	}),
-	i(151271, {	-- Horse Head Costume (TOY!)
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["timeline"] = { ADDED_7_3_0 },
-	}),
-	i(151270, {	-- Horse Tail Costume (TOY!)
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["timeline"] = { ADDED_7_3_0 },
-	}),
-	i(70722, {	-- Little Wickerman (TOY!)
-		["cost"] = {
-			-- #if AFTER 11.0.5
-			{ "i", TRICKY_TREAT, 100 },
-			-- #else
-			{ "i", TRICKY_TREAT, 150 },
-			-- #endif
-		},
-		["timeline"] = { ADDED_4_2_2 },
-	}),
-	i(37011, {	-- Magic Broom (MOUNT!)
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["collectible"] = false,
-	}),
-	i(226427, {	-- Patched Harvester's Claw
-		["cost"] = { { "i", TRICKY_TREAT, 100 } },
-		["timeline"] = { ADDED_11_0_5 },
-	}),
-	i(226461, {	-- Patched Harvest Golem's Belt
-		["cost"] = { { "i", TRICKY_TREAT, 100 } },
-		["timeline"] = { ADDED_11_2_5 },
-	}),
-	i(226458, {	-- Patched Harvest Golem's Boots
-		["cost"] = { { "i", TRICKY_TREAT, 100 } },
-		["timeline"] = { ADDED_11_2_5 },
-	}),
-	i(226457, {	-- Patched Harvest Golem's Chest
-		["cost"] = { { "i", TRICKY_TREAT, 100 } },
-		["timeline"] = { ADDED_11_2_5 },
-	}),
-	i(226456, {	-- Patched Harvest Golem's Gloves
-		["cost"] = { { "i", TRICKY_TREAT, 100 } },
-		["timeline"] = { ADDED_11_2_5 },
-	}),
-	i(226690, {	-- Patched Harvest Golem's Head
-		["cost"] = { { "i", TRICKY_TREAT, 100 } },
-		["timeline"] = { ADDED_11_2_5 },
-	}),
-	i(226455, {	-- Patched Harvest Golem's Pants
-		["cost"] = { { "i", TRICKY_TREAT, 100 } },
-		["timeline"] = { ADDED_11_2_5 },
-	}),
-	i(226454, {	-- Patched Harvest Golem's Pauldrons
-		["cost"] = { { "i", TRICKY_TREAT, 100 } },
-		["timeline"] = { ADDED_11_2_5 },
-	}),
-	i(226453, {	-- Patched Harvest Golem's Post
-		["cost"] = { { "i", TRICKY_TREAT, 100 } },
-		["timeline"] = { ADDED_11_0_5 },
-	}),
-	i(230042, {	-- Prowler's Faded Shoulder Cape
-		["cost"] = { { "i", TRICKY_TREAT, 50 } },
-		["timeline"] = { ADDED_11_0_5 },
-	}),
-	i(37582, {	-- Pyroblast Cinnamon Ball
-		["cost"] = { { "i", TRICKY_TREAT, 2 } },
-	}),
-	i(37584, {	-- Soothing Spearmint Candy
-		["cost"] = { { "i", TRICKY_TREAT, 2 } },
-	}),
-	i(247706, {	-- The Horseman's Ghoulish Blade
-		["cost"] = { { "i", TRICKY_TREAT, 100 } },
-		["timeline"] = { ADDED_11_2_5 },
-	}),
-	i(247715, {	-- The Horseman's Ghoulish Bulwark
-		["cost"] = { { "i", TRICKY_TREAT, 100 } },
-		["timeline"] = { ADDED_11_2_5 },
-	}),
-	i(247710, {	-- The Horseman's Ghoulish Great Blade
-		["cost"] = { { "i", TRICKY_TREAT, 100 } },
-		["timeline"] = { ADDED_11_2_5 },
-	}),
-	i(37604, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- Tooth Pick
-	-- #endif
-};
-local PET_VENDOR_GROUPS = {
-	i(116811, {	-- "Lil' Starlet" Costume
-		["cost"] = { { "i", TRICKY_TREAT, 5 } },
-		["timeline"] = { ADDED_6_0_2 },
-	}),
-	i(116810, {	-- "Mad Alchemist" Costume
-		["cost"] = { { "i", TRICKY_TREAT, 5 } },
-		["timeline"] = { ADDED_6_0_2 },
-	}),
-	i(116812, {	-- "Yipp-Saron" Costume
-		["cost"] = { { "i", TRICKY_TREAT, 5 } },
-		["timeline"] = { ADDED_6_0_2 },
-	}),
-	i(116801, {	-- Cursed Birman (PET!)
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["timeline"] = { ADDED_6_0_2 },
-	}),
-	i(70908, {	-- Feline Familiar (PET!)
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["timeline"] = { ADDED_4_2_2 },
-	}),
-	i(151269, {	-- Naxxy (PET!)
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["timeline"] = { ADDED_7_3_0 },
-	}),
-	i(139036, {	-- Ominous Pet Treat
-		["cost"] = { { "i", TRICKY_TREAT, 5 } },
-		["timeline"] = { ADDED_7_0_3 },
-	}),
-	i(33154, {	-- Sinister Squashling (PET!)
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["timeline"] = { ADDED_2_2_2 },
-	}),
-	i(116804, {	-- Widget the Departed (PET!)
-		["cost"] = { { "i", TRICKY_TREAT, 150 } },
-		["timeline"] = { ADDED_6_0_2 },
-	}),
-};
 local MASKS_WITH_COST = {
 	i(34000, {	-- Blood Elf Female Mask
 		["cost"] = { { "i", TRICKY_TREAT, 2 } },
@@ -1923,11 +1714,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 
 				-- Midnight
-				candybucket(97213, {	-- Candy Bucket - The Arcantina
-					["provider"] = { "n", 660449 },	-- Candy Bucket
-					["coord"] = { 63.0, 71.3, ARCANTINA },
-					["timeline"] = { ADDED_12_1_5 },
-				}),
 				candybucket(97213, {	-- Candy Bucket - The Arcantina
 					["provider"] = { "n", 660449 },	-- Candy Bucket
 					["coord"] = { 63.0, 71.3, ARCANTINA },
@@ -4438,6 +4224,245 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				i(282198, { ["cost"] = { { "i", TRICKY_TREAT, 20 } } }),	-- Unlit Shrieking Jack-o'-Lantern (DECOR!)
 			},
 		}),
+		n_CommonVendorItems({
+			["timeline"] = { ADDED_4_2_2 },
+			["crs"] = {
+				53728,	-- Dorothy <Candy & Toy Vendor>
+				53757,	-- Chub <Candy & Toy Vendor>
+			},
+			["groups"] = {
+				i(122338, {	-- Ancient Heirloom Armor Casing
+					["cost"] = { { "i", TRICKY_TREAT, 250 } },
+					["timeline"] = { ADDED_6_1_0 },
+				}),
+				i(167731, {	-- Battle-Hardened Heirloom Armor Casing
+					["cost"] = { { "i", TRICKY_TREAT, 450 } },
+					["timeline"] = { ADDED_8_1_5 },
+				}),
+				i(187997, {	-- Eternal Heirloom Armor Casing
+					["cost"] = { { "i", TRICKY_TREAT, 450 } },
+					["timeline"] = { ADDED_9_1_5 },
+				}),
+				i(122340, {	-- Timeworn Heirloom Armor Casing
+					["cost"] = { { "i", TRICKY_TREAT, 450 } },
+					["timeline"] = { ADDED_6_1_0 },
+				}),
+				i(151614, {	-- Weathered Heirloom Armor Casing
+					["cost"] = { { "i", TRICKY_TREAT, 450 } },
+					["timeline"] = { ADDED_7_2_5 },
+				}),
+				-- #if BEFORE 7.0.1
+				i(116811, {	-- "Lil' Starlet" Costume
+					["cost"] = { { "i", TRICKY_TREAT, 5 } },
+					["timeline"] = { ADDED_6_0_2 },
+				}),
+				i(116810, {	-- "Mad Alchemist" Costume
+					["cost"] = { { "i", TRICKY_TREAT, 5 } },
+					["timeline"] = { ADDED_6_0_2 },
+				}),
+				i(37585, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- Chewy Fel Taffy
+				i(116801, {	-- Cursed Birman (PET!)
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["timeline"] = { ADDED_6_0_2 },
+				}),
+				i(70908, {	-- Feline Familiar (PET!)
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["timeline"] = { ADDED_4_2_2 },
+				}),
+				i(37583, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- G.N.E.R.D.S.
+				i(33292, { ["cost"] = { { "i", TRICKY_TREAT, 150 } } }),	-- Hallowed Helm
+				i(70722, {	-- Little Wickerman (TOY!)
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["timeline"] = { ADDED_4_2_2 },
+				}),
+				i(37011, {	-- Magic Broom (MOUNT!)
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["collectible"] = false,
+				}),
+				i(37582, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- Pyroblast Cinnamon Ball
+				i(37584, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- Soothing Spearmint Candy
+				i(37604, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- Tooth Pick
+				i(116804, {	-- Widget the Departed (PET!)
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["timeline"] = { ADDED_6_0_2 },
+				}),
+				-- #else
+				i(208735, {	-- Bucket of Morbid Treats
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["timeline"] = { ADDED_10_1_7 },
+				}),
+				i(37585, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- Chewy Fel Taffy
+				iensemble(230173, {	-- Ensemble: Prowler's Faded Headgear
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["timeline"] = { ADDED_11_0_5 },
+				}),
+				i(128643, {	-- Exquisite Costume Set: "Deathwing"
+					["cost"] = { { "i", TRICKY_TREAT, 200 } },
+					["timeline"] = { ADDED_6_2_2 },
+				}),
+				i(138990, {	-- Exquisite Costume Set: "Grommash"
+					["cost"] = { { "i", TRICKY_TREAT, 200 } },
+					["timeline"] = { ADDED_7_0_3 },
+				}),
+				i(116828, {	-- Exquisite Costume Set: "The Lich King"
+					["cost"] = { { "i", TRICKY_TREAT, 200 } },
+					["timeline"] = { ADDED_6_0_2 },
+				}),
+				i(151268, {	-- Exquisite Costume Set: "Xavius"
+					["cost"] = { { "i", TRICKY_TREAT, 200 } },
+					["timeline"] = { ADDED_7_3_0 },
+				}),
+				i(37583, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- G.N.E.R.D.S.
+				i(33292, { ["cost"] = { { "i", TRICKY_TREAT, 150 } } }),	-- Hallowed Helm
+				i(163045, {	-- Headless Horseman's Hearthstone (TOY!)
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["timeline"] = { ADDED_8_0_1 },
+				}),
+				i(151271, {	-- Horse Head Costume (TOY!)
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["timeline"] = { ADDED_7_3_0 },
+				}),
+				i(151270, {	-- Horse Tail Costume (TOY!)
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["timeline"] = { ADDED_7_3_0 },
+				}),
+				i(70722, {	-- Little Wickerman (TOY!)
+					["cost"] = {
+						-- #if AFTER 11.0.5
+						{ "i", TRICKY_TREAT, 100 },
+						-- #else
+						{ "i", TRICKY_TREAT, 150 },
+						-- #endif
+					},
+					["timeline"] = { ADDED_4_2_2 },
+				}),
+				i(37011, {	-- Magic Broom (MOUNT!)
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["collectible"] = false,
+				}),
+				i(226427, {	-- Patched Harvester's Claw
+					["cost"] = { { "i", TRICKY_TREAT, 100 } },
+					["timeline"] = { ADDED_11_0_5 },
+				}),
+				i(226461, {	-- Patched Harvest Golem's Belt
+					["cost"] = { { "i", TRICKY_TREAT, 100 } },
+					["timeline"] = { ADDED_11_2_5 },
+				}),
+				i(226458, {	-- Patched Harvest Golem's Boots
+					["cost"] = { { "i", TRICKY_TREAT, 100 } },
+					["timeline"] = { ADDED_11_2_5 },
+				}),
+				i(226457, {	-- Patched Harvest Golem's Chest
+					["cost"] = { { "i", TRICKY_TREAT, 100 } },
+					["timeline"] = { ADDED_11_2_5 },
+				}),
+				i(226456, {	-- Patched Harvest Golem's Gloves
+					["cost"] = { { "i", TRICKY_TREAT, 100 } },
+					["timeline"] = { ADDED_11_2_5 },
+				}),
+				i(226690, {	-- Patched Harvest Golem's Head
+					["cost"] = { { "i", TRICKY_TREAT, 100 } },
+					["timeline"] = { ADDED_11_2_5 },
+				}),
+				i(226455, {	-- Patched Harvest Golem's Pants
+					["cost"] = { { "i", TRICKY_TREAT, 100 } },
+					["timeline"] = { ADDED_11_2_5 },
+				}),
+				i(226454, {	-- Patched Harvest Golem's Pauldrons
+					["cost"] = { { "i", TRICKY_TREAT, 100 } },
+					["timeline"] = { ADDED_11_2_5 },
+				}),
+				i(226453, {	-- Patched Harvest Golem's Post
+					["cost"] = { { "i", TRICKY_TREAT, 100 } },
+					["timeline"] = { ADDED_11_0_5 },
+				}),
+				i(230042, {	-- Prowler's Faded Shoulder Cape
+					["cost"] = { { "i", TRICKY_TREAT, 50 } },
+					["timeline"] = { ADDED_11_0_5 },
+				}),
+				i(37582, {	-- Pyroblast Cinnamon Ball
+					["cost"] = { { "i", TRICKY_TREAT, 2 } },
+				}),
+				i(37584, {	-- Soothing Spearmint Candy
+					["cost"] = { { "i", TRICKY_TREAT, 2 } },
+				}),
+				i(247706, {	-- The Horseman's Ghoulish Blade
+					["cost"] = { { "i", TRICKY_TREAT, 100 } },
+					["timeline"] = { ADDED_11_2_5 },
+				}),
+				i(247715, {	-- The Horseman's Ghoulish Bulwark
+					["cost"] = { { "i", TRICKY_TREAT, 100 } },
+					["timeline"] = { ADDED_11_2_5 },
+				}),
+				i(247710, {	-- The Horseman's Ghoulish Great Blade
+					["cost"] = { { "i", TRICKY_TREAT, 100 } },
+					["timeline"] = { ADDED_11_2_5 },
+				}),
+				i(37604, { ["cost"] = { { "i", TRICKY_TREAT, 2 } } }),	-- Tooth Pick
+				-- #endif
+			},
+		}),
+		n_CommonVendorItems({
+			["timeline"] = { ADDED_4_2_2 },
+			["crs"] = {
+				52497,	-- Spanky <Mask Vendor>
+				53760,	-- Farina <Mask Vendor>
+			},
+			["groups"] = MASKS_WITH_COST,
+		}),
+		n_CommonVendorItems({
+			["timeline"] = { ADDED_4_2_2 },
+			["crs"] = {
+				53702,	-- Stymie <Wand Vendor>
+				53756,	-- Darla <Wand Vendor>
+			},
+			["groups"] = WANDS_WITH_COST,
+		}),
+		n_CommonVendorItems({
+			["timeline"] = { ADDED_7_1_0 },
+			["crs"] = {
+				109685,	-- Pippi <Pet Vendor>
+				109688,	-- Woim <Pet Vendor>
+			},
+			["groups"] = {
+				i(116811, {	-- "Lil' Starlet" Costume
+					["cost"] = { { "i", TRICKY_TREAT, 5 } },
+					["timeline"] = { ADDED_6_0_2 },
+				}),
+				i(116810, {	-- "Mad Alchemist" Costume
+					["cost"] = { { "i", TRICKY_TREAT, 5 } },
+					["timeline"] = { ADDED_6_0_2 },
+				}),
+				i(116812, {	-- "Yipp-Saron" Costume
+					["cost"] = { { "i", TRICKY_TREAT, 5 } },
+					["timeline"] = { ADDED_6_0_2 },
+				}),
+				i(116801, {	-- Cursed Birman (PET!)
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["timeline"] = { ADDED_6_0_2 },
+				}),
+				i(70908, {	-- Feline Familiar (PET!)
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["timeline"] = { ADDED_4_2_2 },
+				}),
+				i(151269, {	-- Naxxy (PET!)
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["timeline"] = { ADDED_7_3_0 },
+				}),
+				i(139036, {	-- Ominous Pet Treat
+					["cost"] = { { "i", TRICKY_TREAT, 5 } },
+					["timeline"] = { ADDED_7_0_3 },
+				}),
+				i(33154, {	-- Sinister Squashling (PET!)
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["timeline"] = { ADDED_2_2_2 },
+				}),
+				i(116804, {	-- Widget the Departed (PET!)
+					["cost"] = { { "i", TRICKY_TREAT, 150 } },
+					["timeline"] = { ADDED_6_0_2 },
+				}),
+			},
+		}),
 		n(273472, {	-- Cordula Wolfgang <Hallow's End Decor Specialist>
 			["coord"] = { 54.3, 32.7, FOUNDERS_POINT },
 			["timeline"] = { ADDED_12_1_5 },
@@ -4450,35 +4475,59 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["coord"] = { 31.9, 50.3, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { ADDED_12_1_5 },
+			["sym"] = {{"select","itemID",
+				282086,	-- Buckled Witch Hat (DECOR!)
+				282081,	-- Candlelit Smiling Jack-o'-Lantern (DECOR!)
+				282098,	-- Elaborate Heartsbane Doom Catcher (DECOR!)
+				282072,	-- Enchanted Hallow's End Candle (DECOR!)
+				282090,	-- Eternally Powered Glowskull (DECOR!)
+				282075,	-- Heartsbane Candle (DECOR!)
+				282100,	-- Heartsbane Doom Catcher (DECOR!)
+				282092,	-- Heartsbane Ritual Markings (DECOR!)
+				282095,	-- Ominous Heartsbane Banner (DECOR!)
+				282051,	-- Simple Hallow's End Candle (DECOR!)
+				282077,	-- Spooky Scarecrow (DECOR!)
+				282083,	-- Unlit Smiling Jack-o'-Lantern (DECOR!)
+			}},
 		}),
 		n(273402, {	-- Echo <Decor Vendor>
 			["coord"] = { 62.3, 66.7, TIRISFAL_GLADES },
 			["races"] = HORDE_ONLY,
 			["timeline"] = { ADDED_12_1_5 },
+			["sym"] = {{"select","itemID",
+				282086,	-- Buckled Witch Hat (DECOR!)
+				282081,	-- Candlelit Smiling Jack-o'-Lantern (DECOR!)
+				282098,	-- Elaborate Heartsbane Doom Catcher (DECOR!)
+				282072,	-- Enchanted Hallow's End Candle (DECOR!)
+				282090,	-- Eternally Powered Glowskull (DECOR!)
+				282075,	-- Heartsbane Candle (DECOR!)
+				282100,	-- Heartsbane Doom Catcher (DECOR!)
+				282092,	-- Heartsbane Ritual Markings (DECOR!)
+				282095,	-- Ominous Heartsbane Banner (DECOR!)
+				282051,	-- Simple Hallow's End Candle (DECOR!)
+				282077,	-- Spooky Scarecrow (DECOR!)
+				282083,	-- Unlit Smiling Jack-o'-Lantern (DECOR!)
+			}},
 		}),
 		n(53757, {	-- Chub <Candy & Toy Vendor>
 			["coord"] = { 62.1, 66.4, TIRISFAL_GLADES },
 			["timeline"] = { ADDED_4_2_2 },
 			["races"] = HORDE_ONLY,
-			["groups"] = CANDY_AND_TOY_VENDOR_GROUPS,
 		}),
 		n(53756, {	-- Darla <Wand Vendor>
 			["coord"] = { 62.2, 66.4, TIRISFAL_GLADES },
 			["timeline"] = { ADDED_4_2_2 },
 			["races"] = HORDE_ONLY,
-			["groups"] = WANDS_WITH_COST,
 		}),
 		n(53728, {	-- Dorothy <Candy & Toy Vendor>
 			["coord"] = { 31.8, 50.0, ELWYNN_FOREST },
 			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
-			["groups"] = CANDY_AND_TOY_VENDOR_GROUPS,
 		}),
 		n(53760, {	-- Farina <Mask Vendor>
 			["coord"] = { 62.3, 66.4, TIRISFAL_GLADES },
 			["timeline"] = { ADDED_4_2_2 },
 			["races"] = HORDE_ONLY,
-			["groups"] = MASKS_WITH_COST,
 		}),
 		n(96362, {	-- Izzy Hollyfizzle <Events Coordinator>
 			["timeline"] = { ADDED_6_2_2 },
@@ -4511,7 +4560,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["coord"] = { 31.9, 50.2, ELWYNN_FOREST },
 			["timeline"] = { ADDED_7_1_0 },
 			["races"] = ALLIANCE_ONLY,
-			["groups"] = PET_VENDOR_GROUPS,
 		}),
 		n(164966,	-- Temel <The Party Herald> (with a hat)
 		bubbleDownSelf({["timeline"] = { ADDED_9_1_0 }},{
@@ -4530,19 +4578,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["coord"] = { 31.8, 50.0, ELWYNN_FOREST },
 			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
-			["groups"] = MASKS_WITH_COST,
 		}),
 		n(53702, {	-- Stymie <Wand Vendor>
 			["coord"] = { 31.9, 50.1, ELWYNN_FOREST },
 			["timeline"] = { ADDED_4_2_2 },
 			["races"] = ALLIANCE_ONLY,
-			["groups"] = WANDS_WITH_COST,
 		}),
 		n(109688, {	-- Woim <Pet Vendor>
 			["coord"] = { 62.3, 66.4, TIRISFAL_GLADES },
 			["timeline"] = { ADDED_7_1_0 },
 			["races"] = HORDE_ONLY,
-			["groups"] = PET_VENDOR_GROUPS,
 		}),
 	}),
 	-- #endif
