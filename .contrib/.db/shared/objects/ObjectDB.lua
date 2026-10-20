@@ -262506,8 +262506,15 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 3036730,
 		text = {
 			en = "Darkforged Ingot",
+			es = "Lingote Forjasombría",
+			mx = "Lingote forjanegra",
+			de = "Barren der Dunkelschmiede",
 			fr = "Lingot sombreforgé",
+			it = "Lingotto Forgiabuio",
+			pt = "Lingote de Forja Sombria",
 			ru = "Слиток Черной наковальни",
+			ko = "어둠벼림 주괴",
+			cn = "暗铸锭",
 		},
 	},
 	[367072] = {
@@ -273471,10 +273478,16 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 197150,
 		text = {
 			en = "Crate of Provisions",
+			es = "Cajón de provisiones",
+			mx = "Cajón de provisiones",
 			de = "Kiste mit Vorräten",
 			fr = "Caisse de provisions",
+			it = "Cassa di Provviste",
 			pt = "Caixote de Provisões",
 			ru = "Ящик с провизией",
+			ko = "보급품 상자",
+			cn = "供给箱",
+			tw = "補給箱",
 		},
 	},
 	[375839] = {
