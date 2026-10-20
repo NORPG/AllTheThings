@@ -1,7 +1,8 @@
 -- Standalone regression tests for the Retail profession rank cache.
 -- Loads the actual API wrappers, callback scheduler, and Retail Tradeskills initialization without the UI.
 -- Mock profession data and a controllable timer exercise startup, foreign views, coalesced events,
--- rank timestamps, and tooltip invalidation; separate fixtures cover modern, legacy, and absent APIs.
+-- rank timestamps, and tooltip invalidation; separate fixtures cover modern and legacy APIs.
+-- Classic Era fixtures omit recipe APIs and verify the no-op fallback and Retail window guard.
 -- Run from the repository root: lua5.1 tests/retail-profession-ranks.lua [repository-root]
 local root = arg[1] or ".";
 local unpack = table.unpack or unpack;
@@ -26,7 +27,8 @@ local callbacks = ReadFile("lib/Callback.lua");
 local tradeskills = ReadFile("src/UI/Windows/Retail/Tradeskills.lua");
 -- Rank initialization precedes the real profession window, which requires the game UI.
 tradeskills = assert(tradeskills:match("^(.-)\napp:CreateWindow"), "Cannot locate Retail profession initialization");
-GetBuildInfo = function() return "12.0.0", "1", "date", 120000; end
+local clientBuild = 120000;
+GetBuildInfo = function() return "test", "1", "date", clientBuild; end
 GetTradeSkillTexture = function() return 1; end
 GetSpellInfo = function() return "Skill"; end
 InCombatLockdown = function() return false; end
@@ -140,7 +142,7 @@ assert(ranks[2485] == 155 and ranks[2823] == 67 and ranks[2836] == 42);
 assert(ranks[9999] == nil);
 assert(app.CurrentCharacter.Professions[171] and app.CurrentCharacter.Professions[202]);
 assert(app.CurrentCharacter.Professions[20219] and app.CurrentCharacter.Professions[2819] == 1);
-assert(app.CurrentCharacter.Professions[5149] == 1, "Retail refresh preserves the Hunter Beast Training flag");
+assert(app.CurrentCharacter.Professions[261] == 1, "Retail refresh preserves the Hunter Beast Training flag");
 assert(app.CurrentCharacter.ActiveSkills[4036][1] == 25);
 assert(app.WOWAPI.GetProfessionInfoByRecipeID(100).professionID == 2823);
 assert(app.invalidations == 1);
@@ -231,13 +233,25 @@ assert(app.invalidations == 1 and app.searchCache.recipe == nil);
 assert(app.CurrentCharacter.TimeStamps.ProfessionRanks == now);
 assert(app.CurrentCharacter.lastPlayed == now);
 
--- Missing every variant is a programming error, reported by the existing wrapper lookup.
-C_TradeSkillUI = nil;
+-- Classic Era can lack both recipe APIs, with or without the trade-skill namespace.
+clientBuild = 11508;
 IsTradeSkillLinked = nil;
-app = MakeApp();
-for _,name in ipairs({ "GetProfessionInfoByRecipeID", "IsTradeSkillLinked" }) do
-	local available, message = pcall(function() return app.WOWAPI[name]; end);
-	assert(not available and type(message) == "string" and message:find("API " .. name .. " not available!", 1, true),
-		name .. " must report unavailable API variants");
+for _,hasNamespace in ipairs({ false, true }) do
+	C_TradeSkillUI = hasNamespace and {} or nil;
+	app = MakeApp();
+	assert(app.IsClassic and not app.IsRetail, "The absent-API fixture must use Classic Era");
+	assert(type(app.WOWAPI.GetProfessionInfoByRecipeID) == "function",
+		"Missing recipe APIs must provide a callable fallback for shared settings");
+	assert(app.WOWAPI.GetProfessionInfoByRecipeID(100) == nil,
+		"Missing recipe APIs must leave profession information unavailable");
+	Compile(tradeskills, "classic_tradeskills")("AllTheThings", app);
+	assert(app.handlers.OnStartup == nil, "Classic Era must skip Retail profession initialization");
 end
-print("PASS: Retail ranks, exact expansion keys, dropped professions, foreign views, delayed refreshes, tooltip invalidation, API variants, and unavailable API errors");
+
+-- Retail still requires a linked-view API; unrelated missing wrappers retain their error.
+clientBuild = 120000;
+app = MakeApp();
+local available, message = pcall(function() return app.WOWAPI.IsTradeSkillLinked; end);
+assert(not available and type(message) == "string" and message:find("API IsTradeSkillLinked not available!", 1, true),
+	"Retail must report unavailable linked-view API variants");
+print("PASS: Retail ranks, exact expansion keys, dropped professions, foreign views, delayed refreshes, tooltip invalidation, API variants, and Classic Era fallback");
