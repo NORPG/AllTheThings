@@ -3034,15 +3034,16 @@ i(268297,{b=1,providers={{"o",584508},{"o",584509},{"o",584511},{"o",584512},{"o
 i(265714,{lvl=90}),
 i(262586,{b=1,providers={{"o",584515},{"o",584517},{"o",623258}}}),
 cu(2803,{rwp=130000})}),
-flt(200,{providers={{"o",584515},{"o",584517},{"o",584518},{"o",584519}},g={
+flt(200,{providers={{"o",584515},{"o",584517},{"o",584518},{"o",584519},{"o",673143},{"o",673144},{"o",689304}},g={
+r(1291690,{awp=120105,itemID=273067,requireSkill=755,skillID=2914}),
 r(1246893,{itemID=259366,requireSkill=755,skillID=2914}),
 r(1230478,{itemID=256718,requireSkill=755,skillID=2914}),
 r(1236072,{itemID=256747,requireSkill=333,skillID=2909}),
 r(1236056,{itemID=256738,requireSkill=333,skillID=2909}),
 r(1236084,{itemID=256753,requireSkill=333,skillID=2909}),
 r(1236074,{itemID=256752,requireSkill=333,skillID=2909}),
-r(1236076,{itemID=256748,requireSkill=333,skillID=2909}),
 r(1236062,{itemID=256740,requireSkill=333,skillID=2909}),
+r(1236076,{itemID=256748,requireSkill=333,skillID=2909}),
 r(1246908,{itemID=259370,requireSkill=333,skillID=2909}),
 r(1228988,{itemID=258126,requireSkill=197,skillID=2918}),
 r(1237516,{itemID=256637,requireSkill=165,skillID=2915}),
@@ -3051,7 +3052,8 @@ r(1237488,{itemID=256638,requireSkill=165,skillID=2915}),
 r(1228960,{itemID=258025,requireSkill=197,skillID=2918}),
 r(1237518,{itemID=256650,requireSkill=165,skillID=2915}),
 r(1233136,{b=1,itemID=247425,requireSkill=171,skillID=2906}),
-r(1233138,{b=1,itemID=247423,requireSkill=171,skillID=2906})}}),
+r(1233138,{b=1,itemID=247423,requireSkill=171,skillID=2906}),
+r(1291687,{awp=120105,itemID=273064,requireSkill=202,skillID=2910})}}),
 flt(2,{providers={{"o",584508},{"o",584509},{"o",584511},{"o",584512},{"o",584515},{"o",584517},{"o",584518},{"o",584519},{"o",623258},{"o",623259}},g={
 s(302611,262983,{f=23}),
 s(303518,264852,{f=2,loc=41}),
@@ -3947,13 +3949,11 @@ o(676761,{coords={
 [2647]={{46,48.3}}},questID=98650,g={
 crit(117200,{achID=63717,id=38})}})}}),
 o(689304,{isWeekly=1,questID=98758,g={
-r(1291690,{itemID=273067,requireSkill=755,skillID=2914}),
-toy(280820),
-r(1291687,{itemID=273064,requireSkill=202,skillID=2910})}}),
+toy(280820)}}),
 o(676583,{crs={273788},description="Spawns next to the corpse of 'Keeper of the Key' after you defeat him.\n He has a chance to spawn anywhere in the Labyrinth.",g={
 i(282402,{spellID=1313734})}}),
-o(673143,{sym={{"select","itemID",273067,273064}}}),
-o(673144,{sym={{"select","itemID",273067,273064}}}),
+o(673143),
+o(673144),
 o(673138),
 o(696116,{coords={
 [2647]={{44.3,73.3}}},description="Spawns after finishing 'Dundun' event."}),
