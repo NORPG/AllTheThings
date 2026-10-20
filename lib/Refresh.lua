@@ -3,9 +3,8 @@ local _, app = ...;
 
 local OneTimeFixFunctions = {}
 if app.IsRetail and app.GameBuildVersion > 70000 then
--- CRIEVE NOTE: At some point I want parser exporting this data,
--- I don't want to be requesting these questIDs on environments
--- where I know they don't exist. For now I'll just block them
+
+--- @type function,function,function
 local select, ipairs, pairs =
 	  select, ipairs, pairs;
 local ATTAccountWideData
@@ -27,8 +26,8 @@ local function CacheAccountWideMiscQuests()
 		end
 	end
 end
-local function FixNonOneTimeQuests()
-	local oneTimeQuests = ATTAccountWideData.OneTimeQuests;
+local function FixNonOneTimeQuests(currentCharacter, accountWideData, characterData)
+	local oneTimeQuests = accountWideData.OneTimeQuests;
 
 	-- if we ever erroneously add an account-wide quest and find out it isn't put it here so it reverts back to being handled as a normal quest
 	for _,questID in ipairs(app.NonOPAQDB or app.EmptyTable) do
@@ -40,10 +39,9 @@ local function FixNonOneTimeQuests()
 	end
 end
 -- ref. https://github.com/ATTWoWAddon/AllTheThings/commit/d1b02b8021a7f2aa80c03d212a2ea54a443e9117
-OneTimeFixFunctions.Spell148972 = function()
-	local ATTCharacterData = app.LocalizeGlobalIfAllowed("ATTCharacterData", true);
+OneTimeFixFunctions.Spell148972 = function(currentCharacter, accountWideData, characterData)
 	local found
-	for charGuid,charData in pairs(ATTCharacterData) do
+	for charGuid,charData in pairs(characterData) do
 		if charData.Spells and charData.Spells[148972] then
 			charData.Spells[148972] = nil
 			found = true
@@ -57,10 +55,9 @@ OneTimeFixFunctions.Spell148972 = function()
 	end
 end
 -- ref. https://github.com/ATTWoWAddon/AllTheThings/commit/d1b02b8021a7f2aa80c03d212a2ea54a443e9117
-OneTimeFixFunctions.Spell241857 = function()
-	local ATTCharacterData = app.LocalizeGlobalIfAllowed("ATTCharacterData", true);
+OneTimeFixFunctions.Spell241857 = function(currentCharacter, accountWideData, characterData)
 	local found
-	for charGuid,charData in pairs(ATTCharacterData) do
+	for charGuid,charData in pairs(characterData) do
 		if charData.Spells and charData.Spells[241857] then
 			charData.Spells[241857] = nil
 			found = true
@@ -96,22 +93,18 @@ app.AddEventHandler("OnRefreshCollections", CheckOncePerAccountQuestsForCharacte
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	ATTAccountWideData = accountWideData
 end)
-app.AddEventHandler("OnAfterSavedVariablesAvailable", function()
-	FixNonOneTimeQuests()
-end)
+app.AddEventHandler("OnAfterSavedVariablesAvailable", FixNonOneTimeQuests)
 end
 
 --- Clears saved identifiers derived before complete character names were preserved.
 -- TODO: Remove after Forever's official launch once legacy identifiers are rebuilt.
 ---@type fun()
-OneTimeFixFunctions.ResetSavedCharacterIdentifiers = function()
-	---@type table<string, ATTAccountCharacter>
-	local characterData = app.LocalizeGlobalIfAllowed("ATTCharacterData", true)
+OneTimeFixFunctions.ResetSavedCharacterIdentifiers = function(currentCharacter, accountWideData, characterData)
 	for _,character in pairs(characterData) do character.Identifier = nil; end
 end
 
 -- ref. 1 represents account-wide completion, so all old data needs to be wiped initially to allow proper re-caching
-OneTimeFixFunctions.PreATT5_0_14AWQuests = function(currentCharacter, accountWideData)
+OneTimeFixFunctions.PreATT5_0_14AWQuests = function(currentCharacter, accountWideData, characterData)
 	local quests = accountWideData.Quests
 	if not quests then return end
 
@@ -164,14 +157,14 @@ OneTimeFixFunctions.ConvertAccountModeFiltersForProfiles = function(currentChara
 		app.print("One-Time conversion of Profile Filter sets performed!")
 	end)
 end
-local function OneTimeFixes(currentCharacter, accountWideData)
+local function OneTimeFixes(currentCharacter, accountWideData, characterData)
 	if not accountWideData.OneTimeFixes then accountWideData.OneTimeFixes = {} end
 	local appliedFixes = accountWideData.OneTimeFixes
 
 	for fix,func in pairs(OneTimeFixFunctions) do
 		if not appliedFixes[fix] then
 			appliedFixes[fix] = 1
-			func(currentCharacter, accountWideData)
+			func(currentCharacter, accountWideData, characterData)
 		end
 	end
 
@@ -180,7 +173,9 @@ end
 app.AddEventHandler("OnSavedVariablesAvailable", OneTimeFixes)
 
 -- for the first auto-refresh, don't actually print to chat since some users don't like that auto-chat on login
+---@type function
 local InCombatLockdown = InCombatLockdown;
+---@type function
 local print = app.EmptyFunction;
 app.__FirstRefresh = true;
 local IsRefreshing
