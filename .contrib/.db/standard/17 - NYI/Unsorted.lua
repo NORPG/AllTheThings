@@ -8,8 +8,6 @@ root(ROOTS.Unsorted, {
 			i(269766),	-- Harvested Ivy
 			i(270277),	-- Muzok's Rune-Key
 			i(270282),	-- Kazok's Rune-Key
-			i(271051),	-- Sugar Beet
-			i(271052),	-- Blighted Bloom
 			i(275731),	-- A Rat-Sized Portion of Cheese
 			i(275732),	-- A Rat-Sized Portion of Onion
 			i(275733),	-- A Rat-Sized Portion of Mushroom

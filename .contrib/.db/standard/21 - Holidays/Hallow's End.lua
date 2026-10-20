@@ -471,6 +471,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(62501, {	-- I Ain't Afraid of no Ghost
+			["provider"] = { "i", 249386 },	-- Ghost Gear
 			["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
 			["timeline"] = { ADDED_12_1_5 },
 		}),
@@ -3600,6 +3601,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				263976,	-- Alaric Duskwick
 				249275,	-- Nargok Ghostcleaver
 			},
+			["provider"] = { "i", 249386 },	-- Ghost Gear
 			["coords"] = {
 				{ 54.1, 33.8, FOUNDERS_POINT },
 				{ 51.7, 54.3, RAZORWIND_SHORES },
@@ -3765,7 +3767,42 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
 		}),
-		-- TODO: CANDY CRAFTING, 3 dailies
+		-- TODO: CANDY CRAFTING
+		q(95827, {	-- Blighted Bloom Bites
+			["sourceQuest"] = 95826,	-- Sugar Run (Felwood)
+			["qg"] = 251989,	-- Nomi
+			--["coord"] = { x, y, MAP },
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
+			["qi"] = 271052,	-- Blighted Bloom (QI!)
+			["groups"] = {
+				i(TRICKY_TREAT),
+				i(FELWOOD_FUDGE),
+			},
+		}),
+		q(95828, {	-- Felroot Crunch
+			["sourceQuest"] = 95826,	-- Sugar Run (Felwood)
+			["qg"] = 251989,	-- Nomi
+			--["coord"] = { x, y, MAP },
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
+			["qi"] = 258217,	-- Honey Drops (QI!)
+			["groups"] = {
+				i(TRICKY_TREAT),
+				i(FELWOOD_FUDGE),
+			},
+		}),
+		q(95829, {	-- Rotleaf Wafers
+			["sourceQuest"] = 95826,	-- Sugar Run (Felwood)
+			["qg"] = 251989,	-- Nomi
+			--["coord"] = { x, y, MAP },
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
+			["groups"] = {
+				i(TRICKY_TREAT),
+				i(FELWOOD_FUDGE),
+			},
+		}),
 		q(93400, {	-- Sugar Run (Duskwood)
 			["altQuests"] = {
 				92498,	-- Sugar Run (Drustvar)
@@ -3780,7 +3817,42 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
 		}),
-		-- TODO: CANDY CRAFTING, 3 dailies
+		-- TODO: CANDY CRAFTING
+		q(95825, {	-- Blighted Core Caramels
+			["sourceQuest"] = 93400,	-- Sugar Run (Duskwood)
+			["qg"] = 251989,	-- Nomi
+			--["coord"] = { x, y, MAP },
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
+			["qi"] = 271051,	-- Sugar Beet (QI!)
+			["groups"] = {
+				i(TRICKY_TREAT),
+				i(DUSKWOOD_CARAMEL),
+			},
+		}),
+		q(93401, {	-- Howling Honey Drops
+			["sourceQuest"] = 93400,	-- Sugar Run (Duskwood)
+			["qg"] = 251989,	-- Nomi
+			--["coord"] = { x, y, MAP },
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
+			["qi"] = 258217,	-- Honey Drops (QI!)
+			["groups"] = {
+				i(TRICKY_TREAT),
+				i(DUSKWOOD_CARAMEL),
+			},
+		}),
+		q(95822, {	-- Twisted Vine Licorice
+			["sourceQuest"] = 93400,	-- Sugar Run (Duskwood)
+			["qg"] = 251989,	-- Nomi
+			--["coord"] = { x, y, MAP },
+			["isDaily"] = true,
+			["timeline"] = { ADDED_12_1_5 },
+			["groups"] = {
+				i(TRICKY_TREAT),
+				i(DUSKWOOD_CARAMEL),
+			},
+		}),
 		q(29402, {	-- Taking Precautions (Alliance)
 			["sourceQuest"] = 29399,	-- Shopping Around (Alliance)
 			["qg"] = 54021,	-- Hudson Barnes

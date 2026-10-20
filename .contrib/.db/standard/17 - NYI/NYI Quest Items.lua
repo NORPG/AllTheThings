@@ -787,7 +787,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		-- 11.2.7
 		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
 			i(229995),	-- Gorgoa Reed
-			i(258217),	-- Honey Drops
 			i(229913),	-- Letter from Aysa
 			i(252423),	-- Truffles
 		})),
