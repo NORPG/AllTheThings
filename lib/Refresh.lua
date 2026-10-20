@@ -37,6 +37,15 @@ local function FixNonOneTimeQuests(currentCharacter, accountWideData, characterD
 	for questID,_ in pairs(app.AccountWideQuestsDB) do
 		oneTimeQuests[questID] = nil;
 	end
+	-- if someone gets a one-time quest flagged as completed, then later removes that character, we need to make sure we don't continue tracking that quest as completed by the unknown character since the Quests logic expects this situation to remain as a 'collected' quest, but the lack of character cached data will turn it into a non-collected situation, lingering forever for that player
+	for questID,charGuid in pairs(oneTimeQuests) do
+		if charGuid and not characterData[charGuid] then
+			app.print("Cleaned up One-Time Quest marked as completed by an Unknown character UID:",charGuid,app:RawSearchLink("questID",questID,"field"))
+			oneTimeQuests[questID] = nil
+		-- elseif characterData[charGuid] then
+		-- 	app.PrintDebug("Character with completed One-Time Quest still valid",charGuid,app:RawSearchLink("questID",questID,"field"))
+		end
+	end
 end
 -- ref. https://github.com/ATTWoWAddon/AllTheThings/commit/d1b02b8021a7f2aa80c03d212a2ea54a443e9117
 OneTimeFixFunctions.Spell148972 = function(currentCharacter, accountWideData, characterData)
