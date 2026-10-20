@@ -2543,19 +2543,10 @@ local ObjectNames = {
 	[181598] = "Silithyst Geyser",
 	[181627] = "Weapon Rack",
 	[181628] = "Empty Barrel",
-	[181629] = "Holy Coffer",
-	[181643] = "Featherbeard's Remains",
-	[181645] = "Gryphon Egg",
-	[181649] = "Featherbeard's Journal",
 	[181672] = "Wickerman Effigy",
-	[181681] = "Chalice of Elune",
-	[181687] = "Lumber Pile",
-	[181690] = "Fertile Dirt Mound",
-	[181916] = "Tainted Wood",
 	[190483] = "Document Chest #2",
 	[190484] = "Document Chest #3",
 	[201579] = "Keystone Shard",
-	[207724] = "Shipwreck Debris",
 	[253069] = "Blacker Lotus",
 	[375544] = "Wooden Figurine",
 	[386691] = "Library Book",
@@ -2915,15 +2906,7 @@ local ObjectIcons = {
 	[181337] = 135265,
 	[181597] = 135867,
 	[181598] = 135867,
-	[181629] = 135160,
-	[181643] = 133728,
-	[181645] = 132834,
-	[181649] = 133743,
 	[181672] = 134450,
-	[181681] = 132819,
-	[181687] = 135437,
-	[181690] = 134059,
-	[181916] = 135437,
 	[190483] = 134943,
 	[190484] = 134943,
 	[100000000] = 607513,
@@ -3701,19 +3684,10 @@ local ObjectModels = {
 	[181598] = 200154,
 	[181627] = 198636,
 	[181628] = 197238,
-	[181629] = 196979,
-	[181643] = 197330,
-	[181645] = 202737,
-	[181649] = 198044,
 	[181672] = 199787,
-	[181681] = 201093,
-	[181687] = 198340,
-	[181690] = 202605,
-	[181916] = 198389,
 	[190483] = 196976,
 	[190484] = 196976,
 	[201579] = 125452,
-	[207724] = 219411,
 	[253069] = 219437,
 	[375544] = 201094,
 	[386691] = 198017,
@@ -3795,30 +3769,6 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded Blackwing Lair and the completion for Thunderfury.|r",
 		minimumBuildVersion = 11301,
 		buildVersion = 11303,
-		state = 2,
-	},
-	[14] = {
-		name = "Phase 4",
-		description = "|cFFAAFFAAThis was not available until Phase 4 of WoW Classic.|r",
-		lore = "|cFFFFAAAAIncluded Zul'Gurub and the World Dragons.|r",
-		minimumBuildVersion = 11301,
-		buildVersion = 11304,
-		state = 2,
-	},
-	[15] = {
-		name = "Phase 5",
-		description = "|cFFAAFFAAThis was not available until Phase 5 of WoW Classic.|r",
-		lore = "|cFFFFAAAAIncluded Ahn'Qiraj, which was pre-faced by a unique opening event.|r",
-		minimumBuildVersion = 11301,
-		buildVersion = 11305,
-		state = 2,
-	},
-	[16] = {
-		name = "Phase 6",
-		description = "|cFFAAFFAAThis was not available until Phase 6 of WoW Classic.|r",
-		lore = "|cFFFFAAAAIncluded Naxxramas, which was heralded by the Scourge Invasion.|r",
-		minimumBuildVersion = 11301,
-		buildVersion = 11306,
 		state = 2,
 	},
 } L.PHASES = phases
@@ -4990,19 +4940,10 @@ localize(ObjectNames, {
 	[181598] = "Silithystgeysir",
 	[181627] = "Waffenregal",
 	[181628] = "Leeres Fass",
-	[181629] = "Heiliger Kasten",
-	[181643] = "Federbarts Überreste",
-	[181645] = "Greifenei",
-	[181649] = "Federbarts Tagebuch",
 	[181672] = "Weidenmann",
-	[181681] = "Elunes Kelch",
-	[181687] = "Holzstapel",
-	[181690] = "Fruchtbarer Erdhaufen",
-	[181916] = "Verdorbenes Satyrnaarholz",
 	[190483] = "Dokumententruhe #2",
 	[190484] = "Dokumententruhe #3",
 	[201579] = "Schlüsselsteinscherbe",
-	[207724] = "Schiffswracktrümmer",
 	[253069] = "Schwärzerer Lotus",
 	[375544] = "Holzstatuette",
 	[386691] = "Bibliotheksbuch",
@@ -5039,9 +4980,6 @@ for key,value in pairs({
 do phases[key].name = value; end
 for key,value in pairs({
 	[13] = "|cFFAAFFAADies war erst Phase 3 von WoW Classic verfügbar.|r",
-	[14] = "|cFFAAFFAADies war erst Phase 4 von WoW Classic verfügbar.|r",
-	[15] = "|cFFAAFFAADies war erst Phase 5 von WoW Classic verfügbar.|r",
-	[16] = "|cFFAAFFAADies war erst Phase 6 von WoW Classic verfügbar.|r",
 })
 do phases[key].description = value; end
 end
@@ -6176,19 +6114,10 @@ localize(ObjectNames, {
 	[181598] = "Geyser de silithyste",
 	[181627] = "Râtelier d'armes",
 	[181628] = "Tonneau vide",
-	[181629] = "Petit coffre",
-	[181643] = "Cadavre de Barbe-de-plumes",
-	[181645] = "Œuf de griffon",
-	[181649] = "Journal de Barbe-de-plumes",
 	[181672] = "Effigie de l'homme d'osier",
-	[181681] = "Calice d'Élune",
-	[181687] = "Tas de bois",
-	[181690] = "Monticule de terre fertile",
-	[181916] = "Bois gangrené de Satyrnaar",
 	[190483] = "Coffre de documents n°2",
 	[190484] = "Coffre de documents n°3",
 	[201579] = "Éclat de la pierre de voûte",
-	[207724] = "Débris d’épave",
 	[253069] = "Lotus encore plus noir",
 	[375544] = "Figurine en bois",
 	[386691] = "Livre de la bibliothèque",
@@ -6226,9 +6155,6 @@ for key,value in pairs({
 do phases[key].name = value; end
 for key,value in pairs({
 	[13] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 3 du WoW Classic.|r",
-	[14] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 4 du WoW Classic.|r",
-	[15] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 5 du WoW Classic.|r",
-	[16] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 6 du WoW Classic.|r",
 })
 do phases[key].description = value; end
 end
@@ -6694,14 +6620,8 @@ localize(ObjectNames, {
 	[181337] = "Falò di Picco del Tuono",
 	[181597] = "Mucchio di Silitisti",
 	[181598] = "Geyser Silitista",
-	[181645] = "Uovo di Grifone",
-	[181649] = "Diario di Barbapiuma",
 	[181672] = "Effige dell'Uomo di Paglia",
-	[181681] = "Calice di Elune",
-	[181690] = "Mucchio di Terra Fertile",
-	[181916] = "Catasta di Legno Profanato di Satirnaar",
 	[201579] = "Frammento a Incastro",
-	[207724] = "Pezzi del Relitto",
 	[253069] = "Loto Nerissimo",
 })
 for key,value in pairs({
@@ -6711,9 +6631,6 @@ for key,value in pairs({
 do phases[key].name = value; end
 for key,value in pairs({
 	[13] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 3 di WoW Classic.|r",
-	[14] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 4 di WoW Classic.|r",
-	[15] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 5 di WoW Classic.|r",
-	[16] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 6 di WoW Classic.|r",
 })
 do phases[key].description = value; end
 end
@@ -7554,18 +7471,10 @@ localize(ObjectNames, {
 	[181337] = "Chama do Penhasco do Trovão",
 	[181597] = "Monte de Terra Silitista",
 	[181598] = "Gêiser Silitista",
-	[181643] = "Restos Mortais de Barbapena",
-	[181645] = "Ovo de Grifo",
-	[181649] = "Diário de Barbapena",
 	[181672] = "Efígie do Homem de Palha",
-	[181681] = "Cálice de Eluna",
-	[181687] = "Pilha de Madeira",
-	[181690] = "Monturo de Terra Fértil",
-	[181916] = "Madeira Vil de Satyrnaar",
 	[190483] = "Baú de Documentos nº 2",
 	[190484] = "Baú de Documentos nº 3",
 	[201579] = "Fragmento do Monolito",
-	[207724] = "Destroços do Naufrágio",
 	[253069] = "Lótus Mais Preto",
 	[375544] = "Estatueta de Madeira",
 	[406918] = "Bolsa de Mensageiro",
@@ -7595,9 +7504,6 @@ for key,value in pairs({
 do phases[key].name = value; end
 for key,value in pairs({
 	[13] = "|cFFAAFFAAIsto não estava disponível até Phase 3 de WoW Classic.|r",
-	[14] = "|cFFAAFFAAIsto não estava disponível até Phase 4 de WoW Classic.|r",
-	[15] = "|cFFAAFFAAIsto não estava disponível até Phase 5 de WoW Classic.|r",
-	[16] = "|cFFAAFFAAIsto não estava disponível até Phase 6 de WoW Classic.|r",
 })
 do phases[key].description = value; end
 end
@@ -9098,19 +9004,10 @@ localize(ObjectNames, {
 	[181598] = "Гейзер силитиста",
 	[181627] = "Оружейная стойка",
 	[181628] = "Пустая бочка",
-	[181629] = "Священный ларец",
-	[181643] = "Останки Пероборода",
-	[181645] = "Яйцо грифона",
-	[181649] = "Дневник Пероборода",
 	[181672] = "Фигурка Плетеного человека",
-	[181681] = "Чаша Элуны",
-	[181687] = "Штабель пиломатериалов",
-	[181690] = "Куча плодородной земли",
-	[181916] = "Связка оскверненной древесины Сатирнаара",
 	[190483] = "Ящик с документами #2",
 	[190484] = "Ящик с документами #3",
 	[201579] = "Осколок краеугольного камня",
-	[207724] = "Обломки кораблекрушения",
 	[253069] = "Чернейший лотос",
 	[375544] = "Деревянная статуэтка",
 	[386691] = "Книга из библиотеки",
@@ -9158,9 +9055,6 @@ for key,value in pairs({
 	[5] = "|cFFFFAAAAЭто нельзя собрать, выучить навсегда или использовать для трансмогрификации.|r",
 	[7] = "|cFFAAFFAAЭта Штучка доступна в Торговой лавке.|r",
 	[13] = "|cFFAAFFAAЭто было недоступно до Phase 3 из WoW Classic.|r",
-	[14] = "|cFFAAFFAAЭто было недоступно до Phase 4 из WoW Classic.|r",
-	[15] = "|cFFAAFFAAЭто было недоступно до Phase 5 из WoW Classic.|r",
-	[16] = "|cFFAAFFAAЭто было недоступно до Phase 6 из WoW Classic.|r",
 })
 do phases[key].description = value; end
 end
@@ -9956,18 +9850,10 @@ localize(ObjectNames, {
 	[181337] = "썬더 블러프의 불꽃",
 	[181597] = "실리시스트 흙더미",
 	[181598] = "실리시스트 모래기둥",
-	[181643] = "페더비어드의 유골",
-	[181645] = "그리핀 알",
-	[181649] = "페더비어드의 일지",
 	[181672] = "밀짚인형",
-	[181681] = "엘룬의 성배",
-	[181687] = "목재 더미",
-	[181690] = "기름진 흙더미",
-	[181916] = "사티르나르의 오염된 목재",
 	[190483] = "문서함 #2",
 	[190484] = "문서함 #3",
 	[201579] = "쐐기돌 조각",
-	[207724] = "난파선 파편",
 	[253069] = "더 검은 연꽃",
 	[386759] = "도서관 책",
 	[406918] = "배낭",
@@ -10001,9 +9887,6 @@ for key,value in pairs({
 do phases[key].name = value; end
 for key,value in pairs({
 	[13] = "|cFFAAFFAAPhase 3(WoW Classic)까지 사용할 수 없습니다.|r",
-	[14] = "|cFFAAFFAAPhase 4(WoW Classic)까지 사용할 수 없습니다.|r",
-	[15] = "|cFFAAFFAAPhase 5(WoW Classic)까지 사용할 수 없습니다.|r",
-	[16] = "|cFFAAFFAAPhase 6(WoW Classic)까지 사용할 수 없습니다.|r",
 })
 do phases[key].description = value; end
 end
@@ -11637,19 +11520,10 @@ localize(ObjectNames, {
 	[181598] = "Géiser de silitista",
 	[181627] = "Expositor de armas",
 	[181628] = "Barrica vacía",
-	[181629] = "Arca sagrada",
-	[181643] = "Restos de Barbapluma",
-	[181645] = "Huevo de grifo",
-	[181649] = "Diario de Barbapluma",
 	[181672] = "Efigie del Hombre de Mimbre",
-	[181681] = "Cáliz de Elune",
-	[181687] = "Montón de madera",
-	[181690] = "Montículo de tierra fértil",
-	[181916] = "Madera vil de Satyrnaar",
 	[190483] = "Cofre de documentos n.º 2",
 	[190484] = "Cofre de documentos n.º 3",
 	[201579] = "Fragmento de piedra angular",
-	[207724] = "Restos de naufragio",
 	[253069] = "Loto renegrido",
 	[375544] = "Figurilla de madera",
 	[386759] = "Libro de la biblioteca",
@@ -11686,9 +11560,6 @@ for key,value in pairs({
 	[5] = "No aprendible",
 	[7] = "Puesto comercial",
 	[13] = "Fase 3",
-	[14] = "Fase 4",
-	[15] = "Fase 5",
-	[16] = "Fase 6",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -11699,17 +11570,11 @@ for key,value in pairs({
 	[5] = "|cFFFFAAAAEsto no se puede recolectar, aprender ni usar para transfiguración de forma permanente.|r",
 	[7] = "|cFFAAFFAAEste artículo está disponible en el puesto comercial.|r",
 	[13] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 3 de WoW Classic.|r",
-	[14] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 4 de WoW Classic.|r",
-	[15] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 5 de WoW Classic.|r",
-	[16] = "|cFFAAFFAAEsto no estuvo disponible hasta Fase 6 de WoW Classic.|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
 	[3] = "|cFFFFAAAAFomentar el uso de dinero real en cualquier versión del juego está ampliamente mal visto. Participa en este contenido bajo tu propia responsabilidad.|r",
 	[13] = "|cFFFFAAAAIncluidos Guarida de Alanegra y la finalización de Trueno furioso|r",
-	[14] = "|cFFFFAAAAIncluidos Zul'Gurub y los dragones del mundo.|r",
-	[15] = "|cFFFFAAAASe incluyó Ahn'Qiraj, que fue precedido por un evento de apertura único.|r",
-	[16] = "|cFFFFAAAASe Incluyó Naxxramas, que fue anunciado por la Invasión de la Plaga.|r",
 })
 do phases[key].lore = value; end
 if GetLocale():sub(3,4):lower() == "mx" then
@@ -13914,19 +13779,10 @@ localize(ObjectNames, {
 	[181598] = "水晶尘喷孔",
 	[181627] = "武器架",
 	[181628] = "空桶",
-	[181629] = "圣箱",
-	[181643] = "羽须的遗骸",
-	[181645] = "狮鹫卵",
-	[181649] = "羽须的日记",
 	[181672] = "稻草人",
-	[181681] = "艾露恩的圣杯",
-	[181687] = "木材堆",
-	[181690] = "肥沃的土壤",
-	[181916] = "被腐蚀的木材",
 	[190483] = "文件箱 #2",
 	[190484] = "文件箱 #3",
 	[201579] = "钥石碎片",
-	[207724] = "船只残骸",
 	[253069] = "深黑莲花",
 	[386691] = "图书馆书籍",
 	[386759] = "图书馆书籍",
@@ -13956,9 +13812,6 @@ for key,value in pairs({
 	[5] = "不可学",
 	[7] = "商栈",
 	[13] = "阶段3",
-	[14] = "阶段4",
-	[15] = "阶段5",
-	[16] = "阶段6",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -13969,17 +13822,11 @@ for key,value in pairs({
 	[5] = "|cFFFFAAAA这不能永久收集、学习或用于幻化。|r",
 	[7] = "|cFFAAFFAA该物品可在商栈购买。|r",
 	[13] = "|cFFAAFFAA该功能直到 阶段3 的 经典旧世 才可用。|r",
-	[14] = "|cFFAAFFAA该功能直到 阶段4 的 经典旧世 才可用。|r",
-	[15] = "|cFFAAFFAA该功能直到 阶段5 的 经典旧世 才可用。|r",
-	[16] = "|cFFAAFFAA该功能直到 阶段6 的 经典旧世 才可用。|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
 	[3] = "|cFFFFAAAA在游戏的任何版本中，鼓励使用真实货币的行为均不受认可。参与此类内容需自行承担风险。|r",
 	[13] = "|cFFFFAAAA包含黑翼之巢和完成的雷霆之怒。|r",
-	[14] = "|cFFFFAAAA包含祖尔格拉布和世界巨龙。|r",
-	[15] = "|cFFFFAAAA包含安其拉，其前身举办了一场独特的开幕活动。|r",
-	[16] = "|cFFFFAAAA包含纳克萨玛斯，它以天灾入侵为标志。|r",
 })
 do phases[key].lore = value; end
 if GetLocale():sub(3,4):lower() == "tw" then
@@ -15209,13 +15056,7 @@ localize(ObjectNames, {
 	[181337] = "雷霆崖之焰",
 	[181597] = "希利塞斯小丘",
 	[181598] = "希利塞斯噴泉",
-	[181645] = "獅鷲獸的蛋",
-	[181649] = "羽鬚的日誌",
-	[181681] = "伊露恩酒杯",
-	[181690] = "肥沃的土堆",
-	[181916] = "薩提納爾魔化木材",
 	[201579] = "拱心石裂片",
-	[207724] = "沉船殘骸",
 	[253069] = "深黑蓮花",
 	[562105] = "浸水的斧頭",
 	[562106] = "浸水的工具箱",
@@ -15244,9 +15085,6 @@ for key,value in pairs({
 	[5] = "|cFFFFAAAA這不能永久收集、學習或用於塑形。|r",
 	[7] = "|cFFAAFFAA該物品可以在貿易站購買|r",
 	[13] = "|cFFAAFFAA該功能直到 Phase 3 的 WoW Classic 才可用。|r",
-	[14] = "|cFFAAFFAA該功能直到 Phase 4 的 WoW Classic 才可用。|r",
-	[15] = "|cFFAAFFAA該功能直到 Phase 5 的 WoW Classic 才可用。|r",
-	[16] = "|cFFAAFFAA該功能直到 Phase 6 的 WoW Classic 才可用。|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
