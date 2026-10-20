@@ -1478,7 +1478,7 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	app.Settings:Initialize();
 
 	-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
-	app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
+	app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData, characterData);
 
 	-- Determine the load style for ATT data
 	if AllTheThingsSavedVariables.LoadStyle == 1 then
