@@ -81,6 +81,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			}),
 		}),
 		n(QUESTS, {
+			q(96785, {	-- Ain't No Telling
+				qg = 266847,	-- Anastasia Miller
+				coord = { 26.8, 64.4, MAP.ARATHI_HIGHLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { ROGUE },
+				lvl = 24,
+				groups = {
+					objective(1, {	-- 0/1 Stolen Funds
+						provider = { "i", 275709 },	-- Stolen Funds
+					}),
+					objective(2, {	-- Syndicate Uniform
+						provider = { "i", 275706 },	-- Syndicate Uniform
+					}),
+				},
+			}),
 			q(695, {	-- An Apprentice's Enchantment
 				sourceQuest = 694,	-- Trelane's Defenses
 				qg = 2788,	-- Apprentice Kryten
@@ -253,6 +268,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					i(4509),	-- Seawolf Gloves
 				},
 			}),
+			q(96264, {	-- Elemental Aid
+				sourceQuest = 94789,	-- Call of Air
+				qg = 259023,	-- Veyric Thunderhame
+				coord = { 59.8, 27.4, MAP.ARATHI_HIGHLANDS },
+				maps = { MAP.RAZORFEN_KRAUL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_SHAMANS,
+				classes = { SHAMAN },
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/1 Tattered Note
+						provider = { "i", 274463 },	-- Tattered Note
+						cr = 4421,	-- Charlga Razorflank <The Crone>
+					}),
+				},
+			}),
 			q(671, {	-- Foul Magics (1/2)
 				qg = 2706,	-- Tor'gan
 				coord = { 74.6, 36.4, MAP.ARATHI_HIGHLANDS },
@@ -321,6 +352,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				coord = { 72.6, 34.0, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
 				lvl = 29,
+			}),
+			q(96135, {	-- Heed My Call
+				qg = 259023,	-- Veyric Thunderhame
+				coord = { 59.8, 27.4, MAP.ARATHI_HIGHLANDS },
+				maps = { MAP.THOUSAND_NEEDLES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_SHAMANS,
+				classes = { SHAMAN },
+				lvl = 30,
+				-- TODO: Wowhead lists Storm, Earth, and Fire (79358) as the previous quest, but it isn't in the Forever DB.
+				groups = {
+					objective(1, {	-- 0/1 Eye of the Tempest
+						provider = { "i", 212792 },	-- Eye of the Tempest
+						cr = 216474,	-- Ravaging Tempest
+						coord = { 34.6, 42.6, MAP.THOUSAND_NEEDLES },
+					}),
+					objective(2, {	-- Corrupted Totems
+						provider = { "i", 268582 },	-- Corrupted Totems
+					}),
+				},
 			}),
 			q(659, {	-- Hints of a New Plague? (1/5)
 				qg = 2711,	-- Phin Odelic
@@ -409,6 +460,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				groups = {
 					i(4975),	-- Vigilant Buckler
 					i(15104),	-- Wingborne Boots
+				},
+			}),
+			q(96784, {	-- Master of Disguise
+				sourceQuest = 96783,	-- A Way In
+				provider = { "o", 656157 },	-- Syndicate Footlocker
+				coord = { 32.2, 26.4, MAP.ARATHI_HIGHLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { ROGUE },
+				lvl = 24,
+				groups = {
+					objective(1, {	-- Syndicate Uniform
+						provider = { "i", 275706 },	-- Syndicate Uniform
+					}),
 				},
 			}),
 			q(653, {	-- Myzrael's Allies [A]
@@ -710,6 +774,41 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					}),
 					i(4976),	-- Mistspray Kilt
 					i(4977),	-- Sword of Hammerfall
+				},
+			}),
+			q(96786, {	-- The Syndicate Sting
+				qg = 266847,	-- Anastasia Miller
+				coord = { 26.8, 64.4, MAP.ARATHI_HIGHLANDS },
+				maps = { MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { ROGUE },
+				lvl = 24,
+				groups = {
+					objective(1, {	-- 0/1 Intercepted Shipment
+						provider = { "i", 275882 },	-- Intercepted Shipment
+					}),
+					objective(2, {	-- 0/1 Syndicate Uniform
+						provider = { "i", 275706 },	-- Syndicate Uniform
+					}),
+				},
+			}),
+			q(96016, {	-- The Tempest's Weapons
+				sourceQuest = 96135,	-- Heed My Call
+				qg = 259023,	-- Veyric Thunderhame
+				coord = { 59.8, 27.4, MAP.ARATHI_HIGHLANDS },
+				maps = { MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_SHAMANS,
+				classes = { SHAMAN },
+				lvl = 30,
+				groups = {
+					objective(1, {	-- Eye of the Tempest
+						provider = { "i", 212792 },	-- Eye of the Tempest
+					}),
+					i(280696),	-- Elementalist's Guard
+					i(280607),	-- Lightning's Grasp
+					i(280604),	-- Rage of the Storm
+					i(280605),	-- Tidebringer's Claw
 				},
 			}),
 			q(687, {	-- Theldurin the Lost

@@ -325,6 +325,140 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					i(18042),	-- Thorium Headed Arrow
 				},
 			}),
+			q(94789, {	-- Call of Air
+				qg = 258098,	-- Eldrun Stormbreaker <Shaman Trainer>
+				coord = { 47.2, 12.2, MAP.IRONFORGE },
+				maps = { MAP.ARATHI_HIGHLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_SHAMANS,
+				classes = { SHAMAN },
+				lvl = 30,
+				groups = {
+					i(5178),	-- Air Totem
+				},
+			}),
+			q(96243, {	-- Call of Earth
+				qgs = {
+					258098,	-- Eldrun Stormbreaker <Shaman Trainer>
+					258113,	-- Ingrid Dunwald <Shaman Trainer>
+				},
+				coords = {
+					{ 47.2, 12.2, MAP.IRONFORGE },
+					{ 47.4, 52.0, MAP.DUN_MOROGH },
+				},
+				maps = { MAP.DUN_MOROGH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_SHAMANS,
+				classes = { SHAMAN },
+				lvl = 10,
+			}),
+			q(94494, {	-- Call of Water
+				qg = 258098,	-- Eldrun Stormbreaker <Shaman Trainer>
+				coord = { 47.2, 12.2, MAP.IRONFORGE },
+				maps = { MAP.LOCH_MODAN },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_SHAMANS,
+				classes = { SHAMAN },
+				lvl = 20,
+			}),
+			q(94817, {	-- Confounding Flash
+				altQuests = {
+					94821,	-- Confounding Flash
+					94822,	-- Confounding Flash
+					94823,	-- Confounding Flash
+					94825,	-- Confounding Flash
+					94826,	-- Confounding Flash
+				},
+				qg = 258785,	-- High Priestess Mims <Priest Trainer>
+				coord = { 24.8, 9.4, MAP.IRONFORGE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { GNOME },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
+					recipe(1277455),	-- Confounding Flash
+				},
+			}),
+			q(94823, {	-- Confounding Flash
+				altQuests = {
+					94817,	-- Confounding Flash
+					94821,	-- Confounding Flash
+					94822,	-- Confounding Flash
+					94825,	-- Confounding Flash
+					94826,	-- Confounding Flash
+				},
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Mims in Ironforge.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { GNOME },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
+					recipe(1277455),	-- Confounding Flash
+				},
+			}),
+			q(94825, {	-- Confounding Flash
+				altQuests = {
+					94817,	-- Confounding Flash
+					94821,	-- Confounding Flash
+					94822,	-- Confounding Flash
+					94823,	-- Confounding Flash
+					94826,	-- Confounding Flash
+				},
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Mims in Ironforge.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { GNOME },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
+					recipe(1277455),	-- Confounding Flash
+				},
+			}),
+			q(94826, {	-- Confounding Flash
+				altQuests = {
+					94817,	-- Confounding Flash
+					94821,	-- Confounding Flash
+					94822,	-- Confounding Flash
+					94823,	-- Confounding Flash
+					94825,	-- Confounding Flash
+				},
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Mims in Ironforge.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { GNOME },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
+					recipe(1277455),	-- Confounding Flash
+				},
+			}),
+			q(94818, {	-- Contingency Plan
+				altQuests = {
+					94819,	-- Contingency Plan
+					94820,	-- Contingency Plan
+				},
+				qg = 258785,	-- High Priestess Mims <Priest Trainer>
+				coord = { 24.8, 9.4, MAP.IRONFORGE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { GNOME },
+				classes = { PRIEST },
+				lvl = 20,
+				groups = {
+					recipe(1277462),	-- Contingency Plan
+				},
+			}),
+			q(94820, {	-- Contingency Plan
+				altQuests = {
+					94818,	-- Contingency Plan
+					94819,	-- Contingency Plan
+				},
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Mims in Ironforge.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { GNOME },
+				classes = { PRIEST },
+				lvl = 20,
+				groups = {
+					recipe(1277462),	-- Contingency Plan
+				},
+			}),
 			q(5675, {	-- Elune's Grace [Ironforge]
 				altQuests = {
 					5672,	-- Elune's Grace [Darnassus]

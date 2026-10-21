@@ -1044,7 +1044,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			q(95042, {	-- Seeking the Kor Gem
 				qg = 259649,	-- Ulric Frostveil
 				coord = { 11.8, 34.4, MAP.ASHENVALE },
-				races = HORDE_ONLY,
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 20,
 				timeline = { TIMELINE.ADDED_1_60_1 },

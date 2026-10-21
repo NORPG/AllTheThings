@@ -17,6 +17,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			},
 			groups = {
 				n(QUESTS, {
+					q(92479, {	-- A Scribbled Letter
+						qg = 197,	-- Marshal McBride
+						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						races = { NIGHTELF },
+						classes = { WARRIOR },
+						lvl = 1,
+						groups = {
+							objective(1, {	-- Scribbled Letter
+								provider = { "i", 251941 },	-- Scribbled Letter
+							}),
+						},
+					}),
 					q(783, {	-- A Threat Within
 						qg = 823,	-- Deputy Willem
 						coord = { 48.1, 42.9, MAP.ELWYNN_FOREST },
@@ -922,6 +935,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 							735,	-- Murloc Streamrunner
 						},
 					}),
+				},
+			}),
+			q(94822, {	-- Confounding Flash
+				altQuests = {
+					94817,	-- Confounding Flash
+					94821,	-- Confounding Flash
+					94823,	-- Confounding Flash
+					94825,	-- Confounding Flash
+					94826,	-- Confounding Flash
+				},
+				qg = 377,	-- Priestess Josetta <Priest Trainer>
+				coord = { 43.4, 65.6, MAP.ELWYNN_FOREST },
+				maps = { MAP.IRONFORGE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { GNOME },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
+					recipe(1277455),	-- Confounding Flash
 				},
 			}),
 			q(91740, {	-- Croaky's Head

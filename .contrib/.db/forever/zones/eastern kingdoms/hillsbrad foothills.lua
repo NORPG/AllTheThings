@@ -597,6 +597,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				races = HORDE_ONLY,
 				lvl = 13,
 			}),
+			q(95125, {	-- Ott's Masterwork
+				sourceQuest = 95111,	-- An Underrated Talent
+				qg = 3539,	-- Ott <Weaponsmith>
+				coord = { 60.4, 26.0, MAP.HILLSBRAD_FOOTHILLS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_PALADINS,
+				classes = { PALADIN },
+				lvl = 20,
+			}),
 			q(540, {	-- Preserving Knowledge
 				sourceQuest = 538,	-- Southshore
 				qg = 2277,	-- Loremaster Dibbs
@@ -781,6 +790,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 						provider = { "n", 2371 },	-- Daggerspine Siren
 					}),
 					i(3755),	-- Fish Gutter
+				},
+			}),
+			q(95126, {	-- The Moonsilver Blade
+				sourceQuest = 95125,	-- Ott's Masterwork
+				qg = 3539,	-- Ott <Weaponsmith>
+				coord = { 60.4, 26.0, MAP.HILLSBRAD_FOOTHILLS },
+				maps = { MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_PALADINS,
+				classes = { PALADIN },
+				lvl = 20,
+				groups = {
+					objective(1, {	-- Ott's Masterwork
+						provider = { "i", 268359 },	-- Ott's Masterwork
+					}),
+					i(268484),	-- Moonsilver Blade
 				},
 			}),
 			q(498, {	-- The Rescue

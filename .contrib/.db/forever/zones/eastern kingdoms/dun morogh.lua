@@ -76,7 +76,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						qi = 282400,	-- Archaic Rune (PQI!)
 						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
 						timeline = { TIMELINE.ADDED_1_60_1 },
-						races = { DWARF },
+						races = ALLIANCE_SHAMANS,
 						classes = { SHAMAN },
 						lvl = 1,
 					}),
@@ -107,7 +107,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						qg = 257446,	-- Teo Hammerstorm <Shaman Trainer>
 						coord = { 28.8, 66.2, MAP.DUN_MOROGH },
 						timeline = { TIMELINE.ADDED_1_60_1 },
-						races = { DWARF },
+						races = ALLIANCE_SHAMANS,
 						classes = { SHAMAN },
 						lvl = 4,
 						groups = {
@@ -123,7 +123,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						qi = 6635,	-- Earth Sapta
 						coord = { 28.8, 66.2, MAP.DUN_MOROGH },
 						timeline = { TIMELINE.ADDED_1_60_1 },
-						races = { DWARF },
+						races = ALLIANCE_SHAMANS,
 						classes = { SHAMAN },
 						lvl = 4,
 					}),
@@ -133,7 +133,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						qi = 6656,	-- Rough Quartz
 						coord = { 24.9, 61.9, MAP.DUN_MOROGH },
 						timeline = { TIMELINE.ADDED_1_60_1 },
-						races = { DWARF },
+						races = ALLIANCE_SHAMANS,
 						classes = { SHAMAN },
 						lvl = 4,
 						groups = {
@@ -190,7 +190,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						sourceQuest = 94373,	-- Call of Earth (1/3)
 						qg = 257446,	-- Teo Hammerstorm <Shaman Trainer>
 						coord = { 28.79, 66.18, MAP.DUN_MOROGH },
-						races = ALLIANCE_ONLY,
+						races = ALLIANCE_SHAMANS,
 						classes = { SHAMAN },
 						lvl = 4,
 						repeatable = true,
@@ -1561,7 +1561,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					{ 47.14, 13.52, MAP.IRONFORGE },
 					{ 47.58, 51.95, MAP.DUN_MOROGH },
 				},
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 10,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1570,7 +1570,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuests = { 94449 },	-- Call of Fire
 				qg = 257597,	-- Bruegs Kindleborn
 				coord = { 87.94, 44.8, MAP.DUN_MOROGH },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 10,
 				timeline = { TIMELINE.ADDED_1_60_1 },

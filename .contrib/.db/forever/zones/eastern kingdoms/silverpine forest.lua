@@ -581,15 +581,33 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			q(91859, {	-- A Curious Pair
 				qg = 248840,	-- Trevan Rol
 				coord = { 43.4, 41.0, MAP.SILVERPINE_FOREST },
-				races = { UNDEAD },
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 18,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			q(91860, {	-- A Grim Fate
+				sourceQuest = 91859,	-- A Curious Pair
+				qg = 259611,	-- Deathguard Baldren
+				coord = { 45.6, 41.8, MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_PALADINS,
+				classes = { PALADIN },
+				lvl = 18,
+			}),
+			q(91861, {	-- Into Fenris Keep
+				sourceQuest = 91860,	-- A Grim Fate
+				provider = { "o", 566037 },	-- Charred Remains
+				coord = { 65.0, 34.2, MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_PALADINS,
+				classes = { PALADIN },
+				lvl = 18,
+			}),
 			q(91862, {	-- Lumina Windsinger
 				qg = 248755,	-- Lumina Windsinger
 				coord = { 64.0, 34.0, MAP.SILVERPINE_FOREST },
-				races = { UNDEAD },
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 18,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -625,21 +643,76 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			q(94505, {	-- Call of Water
 				qg = 5895,	-- Minor Manifestation of Water
 				coord = { 38.65, 44.58, MAP.SILVERPINE_FOREST },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 20,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				qi = 7813,	-- Shard of Water (QI!)
 				groups = { i(5177) },	-- Water Totem
 			}),
+			q(95034, {	-- The Debt
+				qg = 259620,	-- Lumina Windsinger
+				coord = { 43.2, 41.0, MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_PALADINS,
+				classes = { PALADIN },
+				lvl = 18,
+				groups = {
+					objective(1, {	-- Speak with Lumina Windsinger
+						cr = 259620,	-- Lumina Windsinger
+						coord = { 43.2, 41.0, MAP.SILVERPINE_FOREST },
+					}),
+				},
+			}),
+			q(95036, {	-- A Moon-Kissed Blade
+				sourceQuest = 95034,	-- The Debt
+				qg = 259620,	-- Lumina Windsinger
+				coord = { 43.2, 41.0, MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_PALADINS,
+				classes = { PALADIN },
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/1 Trevan's Weapon Notes
+						provider = { "i", 267454 },	-- Trevan's Weapon Notes
+					}),
+					objective(2, {	-- 0/1 Whitestone Oak Lumber
+						provider = { "i", 6994 },	-- Whitestone Oak Lumber
+					}),
+					objective(3, {	-- 0/1 Enchanted Silver Ingot
+						provider = { "i", 267361 },	-- Enchanted Silver Ingot
+					}),
+					objective(4, {	-- 0/1 Purified Kor Gem
+						provider = { "i", 272448 },	-- Purified Kor Gem
+					}),
+				},
+			}),
 			q(95111, {	-- An Underrated Talent
 				qg = 248840,	-- Trevan Rol
 				coord = { 43.4, 41.0, MAP.SILVERPINE_FOREST },
-				races = { UNDEAD },
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 20,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				qi = 268192,	-- Bundle of Blacksmithing Materials (QI!)
+			}),
+			q(95140, {	-- Old Fire-Eye
+				qg = 259620,	-- Lumina Windsinger
+				coord = { 43.2, 41.0, MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_PALADINS,
+				classes = { PALADIN },
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/1 Old Fire-Eye slain
+						provider = { "n", 259897 },	-- Old Fire-Eye
+						coord = { 47.6, 84.8, MAP.SILVERPINE_FOREST },
+					}),
+					objective(2, {	-- 0/1 Moonsilver Blade
+						provider = { "i", 268484 },	-- Moonsilver Blade
+					}),
+					i(267369),	-- Wolfsbane
+				},
 			}),
 			q(95884, {	-- The Offering Stone
 				provider = { "i", 271343 },	-- Note Scrap (QS!)
@@ -668,6 +741,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					}),
 					i(281265),	-- Roadwatcher's Confidence
 				},
+			}),
+			q(96204, {	-- The Windshaper's Wrath
+				sourceQuest = 91862,	-- Lumina Windsinger
+				qg = 248755,	-- Lumina Windsinger
+				coord = { 65.4, 32.8, MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_PALADINS,
+				classes = { PALADIN },
+				lvl = 18,
+				-- TODO: Escort Lumina Windsinger out of Fenris Keep; Wowhead has no IDs for the escort yet.
 			}),
 			q(98298, {	-- Arugal's Folly
 				sourceQuests = { 99 },	-- Arugal's Folly

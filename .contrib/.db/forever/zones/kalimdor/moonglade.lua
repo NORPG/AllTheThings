@@ -379,6 +379,14 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 					i(18402),	-- Glowing Crystal Ring
 				},
 			}),
+			q(98340, {	-- The Great Cat Spirit
+				qg = 3033,	-- Turak Runetotem <Druid Trainer>
+				coord = { 76.4, 27.6, MAP.THUNDER_BLUFF },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { TAUREN },
+				classes = { DRUID },
+				lvl = 20,
+			}),
 			q(98342, {	-- The Great Cat Spirit
 				qg = 11957,	-- Great Cat Spirit
 				coord = { 58.39, 73.52, MAP.MOONGLADE },

@@ -478,6 +478,41 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				lvl = 60,
 			}),
+			q(94821, {	-- Confounding Flash
+				altQuests = {
+					94817,	-- Confounding Flash
+					94822,	-- Confounding Flash
+					94823,	-- Confounding Flash
+					94825,	-- Confounding Flash
+					94826,	-- Confounding Flash
+				},
+				qg = 376,	-- High Priestess Laurena <Priest Trainer>
+				coord = { 38.8, 26.4, MAP.STORMWIND_CITY },
+				maps = { MAP.IRONFORGE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { GNOME },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
+					recipe(1277455),	-- Confounding Flash
+				},
+			}),
+			q(94819, {	-- Contingency Plan
+				altQuests = {
+					94818,	-- Contingency Plan
+					94820,	-- Contingency Plan
+				},
+				qg = 376,	-- High Priestess Laurena <Priest Trainer>
+				coord = { 38.8, 26.4, MAP.STORMWIND_CITY },
+				maps = { MAP.IRONFORGE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { GNOME },
+				classes = { PRIEST },
+				lvl = 20,
+				groups = {
+					recipe(1277462),	-- Contingency Plan
+				},
+			}),
 			q(5634, {	-- Desperate Prayer
 				altQuests = {
 					5635,	-- Desperate Prayer [Elwynn Forest]
@@ -534,6 +569,109 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+			}),
+			q(94773, {	-- Divine Grace
+				altQuests = {
+					94775,	-- Divine Grace
+					94776,	-- Divine Grace
+					94777,	-- Divine Grace
+					94778,	-- Divine Grace
+					94779,	-- Divine Grace
+				},
+				qg = 376,	-- High Priestess Laurena <Priest Trainer>
+				coord = { 38.8, 26.4, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { HUMAN },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
+					recipe(1277370),	-- Divine Grace
+				},
+			}),
+			q(94775, {	-- Divine Grace
+				altQuests = {
+					94773,	-- Divine Grace
+					94776,	-- Divine Grace
+					94777,	-- Divine Grace
+					94778,	-- Divine Grace
+					94779,	-- Divine Grace
+				},
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Laurena in Stormwind.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { HUMAN },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
+					recipe(1277370),	-- Divine Grace
+				},
+			}),
+			q(94776, {	-- Divine Grace
+				altQuests = {
+					94773,	-- Divine Grace
+					94775,	-- Divine Grace
+					94777,	-- Divine Grace
+					94778,	-- Divine Grace
+					94779,	-- Divine Grace
+				},
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Laurena in Stormwind.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { HUMAN },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
+					recipe(1277370),	-- Divine Grace
+				},
+			}),
+			q(94777, {	-- Divine Grace
+				altQuests = {
+					94773,	-- Divine Grace
+					94775,	-- Divine Grace
+					94776,	-- Divine Grace
+					94778,	-- Divine Grace
+					94779,	-- Divine Grace
+				},
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Laurena in Stormwind.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { HUMAN },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
+					recipe(1277370),	-- Divine Grace
+				},
+			}),
+			q(94778, {	-- Divine Grace
+				altQuests = {
+					94773,	-- Divine Grace
+					94775,	-- Divine Grace
+					94776,	-- Divine Grace
+					94777,	-- Divine Grace
+					94779,	-- Divine Grace
+				},
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Laurena in Stormwind.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { HUMAN },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
+					recipe(1277370),	-- Divine Grace
+				},
+			}),
+			q(94779, {	-- Divine Grace
+				altQuests = {
+					94773,	-- Divine Grace
+					94775,	-- Divine Grace
+					94776,	-- Divine Grace
+					94777,	-- Divine Grace
+					94778,	-- Divine Grace
+				},
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Laurena in Stormwind.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { HUMAN },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
+					recipe(1277370),	-- Divine Grace
+				},
 			}),
 			q(6261, {	-- Dungar Longdrink
 				sourceQuest = 6281,	-- Continue to Stormwind
@@ -1110,6 +1248,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				classes = { MAGE },
 				isBreadcrumb = true,
 				lvl = 15,
+			}),
+			q(97286, {	-- Research Access
+				qg = 211033,	-- Garion Wendell <Librarian>
+				coord = { 37.6, 80.8, MAP.STORMWIND_CITY },
+				maps = { MAP.UNDERCITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { MAGE },
+				lvl = 1,
+				-- TODO: Wowhead lists turn-ins with both Garion Wendell and Owen Thadd <Librarian> in the Undercity, but no objectives yet.
 			}),
 			q(6285, {	-- Return to Lewis
 				sourceQuest = 6261,	-- Dungar Longdrink

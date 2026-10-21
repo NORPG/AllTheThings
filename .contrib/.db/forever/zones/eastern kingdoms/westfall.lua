@@ -82,7 +82,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				sourceQuests = { 94502 },	-- Call of Water
 				provider = { "o", 619896 },	-- Forgotten Shrine
 				coord = { 45.6, 59.9, MAP.WESTFALL },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 20,
 				timeline = { TIMELINE.ADDED_1_60_1 },

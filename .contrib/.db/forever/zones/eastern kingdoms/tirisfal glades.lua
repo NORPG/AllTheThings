@@ -261,7 +261,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						sourceQuests = { 91282 },	-- A Second Home
 						qg = 244808,	-- Aramis Hammerhand <Paladin Trainer>
 						coord = { 31.0, 66.2, MAP.TIRISFAL_GLADES },
-						races = { UNDEAD },
+						races = HORDE_PALADINS,
 						classes = { PALADIN },
 						lvl = 2,
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -269,7 +269,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					q(91208, {	-- Coming to Terms
 						qg = 244808,	-- Aramis Hammerhand <Paladin Trainer>
 						coord = { 31.0, 66.2, MAP.TIRISFAL_GLADES },
-						races = { UNDEAD },
+						races = HORDE_PALADINS,
 						classes = { PALADIN },
 						lvl = 4,
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -278,7 +278,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						sourceQuests = { 91208 },	-- Coming to Terms
 						qg = 244808,	-- Aramis Hammerhand <Paladin Trainer>
 						coord = { 31.0, 66.2, MAP.TIRISFAL_GLADES },
-						races = { UNDEAD },
+						races = HORDE_PALADINS,
 						classes = { PALADIN },
 						lvl = 4,
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -321,7 +321,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					q(98601, {	-- A Difficult Path
 						qg = 1569,	-- Shadow Priest Sarvis
 						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
-						races = { UNDEAD },
+						races = HORDE_PALADINS,
 						classes = { PALADIN },
 						lvl = 1,
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1013,7 +1013,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			q(91282, {	-- A Second Home
 				qg = 246152,	-- Shari Stilwell <Paladin Trainer>
 				coord = { 60.25, 52.63, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 8,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1021,7 +1021,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			q(91285, {	-- Murlocs at the Gates
 				qg = 246349,	-- Breton Samuels
 				coord = { 21.85, 45.31, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 7,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1036,10 +1036,37 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					i(246165),	-- Driftwood Smasher
 				},
 			}),
+			q(91294, {	-- Touring the Grounds
+				sourceQuest = 91285,	-- Murlocs at the Gates
+				qg = 246349,	-- Breton Samuels
+				coord = { 21.8, 45.2, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_PALADINS,
+				classes = { PALADIN },
+				lvl = 8,
+				groups = {
+					objective(1, {	-- Speak with Hilda the Breaker
+						cr = 246389,	-- Hilda the Breaker <Paladin Trainer>
+						coord = { 22.0, 47.2, MAP.TIRISFAL_GLADES },
+					}),
+					objective(2, {	-- Speak with Jorin Croge
+						cr = 246393,	-- Jorin Croge
+						coord = { 22.6, 44.8, MAP.TIRISFAL_GLADES },
+					}),
+					objective(3, {	-- Speak with Ander Solliden
+						cr = 246394,	-- Ander Solliden <Lookout>
+						coord = { 22.2, 49.4, MAP.TIRISFAL_GLADES },
+					}),
+					objective(4, {	-- Speak with Danitha Morr
+						cr = 246378,	-- Danitha Morr
+						coord = { 22.0, 44.6, MAP.TIRISFAL_GLADES },
+					}),
+				},
+			}),
 			q(91316, {	-- Making Repairs
 				qg = 246393,	-- Jorin Croge
 				coord = { 22.65, 44.77, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 8,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1053,7 +1080,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			q(91317, {	-- The Tarnished
 				qg = 246378,	-- Danitha Morr
 				coord = { 22.05, 44.7, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 9,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1072,7 +1099,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			q(91858, {	-- Diplomatic Incident
 				qg = 246378,	-- Danitha Morr
 				coord = { 22.05, 44.7, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 18,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1080,15 +1107,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			q(94427, {	-- A Lesson in Divinity
 				qg = 246378,	-- Danitha Morr
 				coord = { 22.05, 44.7, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 12,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			q(94434, {	-- A Lesson in Divinity
+				qg = 257648,	-- Tanis Alderwood
+				coord = { 65.6, 37.8, MAP.UNDERCITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_PALADINS,
+				classes = { PALADIN },
+				lvl = 12,
+				cost = { { "i", 2589, 10 } },	-- 10x Linen Cloth
+			}),
 			q(94435, {	-- A Lesson in Divinity
 				qg = 257648,	-- Tanis Alderwood
 				coord = { 65.6, 37.8, MAP.UNDERCITY },
-				races = { UNDEAD },
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 12,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1097,7 +1133,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				sourceQuests = { 94435 },	-- A Lesson in Divinity
 				qg = 246378,	-- Danitha Morr
 				coord = { 22.05, 44.7, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 12,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1106,7 +1142,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				sourceQuests = { 94436 },	-- A Lesson in Divinity
 				qg = 257655,	-- Deathguard Billmuth
 				coord = { 22.0, 44.6, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 12,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1115,7 +1151,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				sourceQuests = { 94438 },	-- A Lesson in Divinity
 				qg = 257663,	-- Deathguard Falgan
 				coord = { 86.64, 47.63, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 12,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1129,7 +1165,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				sourceQuests = { 94440 },	-- A Lesson in Divinity
 				qg = 257655,	-- Deathguard Billmuth
 				coord = { 21.95, 44.5, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 12,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1161,7 +1197,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			q(95803, {	-- A Token of Good Faith
 				qg = 246378,	-- Danitha Morr
 				coord = { 22.05, 44.7, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 9,
 				timeline = { TIMELINE.ADDED_1_60_1 },

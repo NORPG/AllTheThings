@@ -215,7 +215,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				sourceQuests = { 94495 },	-- Call of Water
 				qg = 258203,	-- Hervdana Saegrund
 				coord = { 65.73, 76.43, MAP.WETLANDS },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 20,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -230,7 +230,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				sourceQuests = { 94497 },	-- Call of Water
 				qg = 258203,	-- Hervdana Saegrund
 				coord = { 65.73, 76.43, MAP.WETLANDS },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 20,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -245,7 +245,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				sourceQuests = { 94499 },	-- Call of Water
 				qg = 258203,	-- Hervdana Saegrund
 				coord = { 65.73, 76.43, MAP.WETLANDS },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 20,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -260,7 +260,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				sourceQuests = { 94500 },	-- Call of Water
 				qg = 258203,	-- Hervdana Saegrund
 				coord = { 65.73, 76.43, MAP.WETLANDS },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 20,
 				timeline = { TIMELINE.ADDED_1_60_1 },

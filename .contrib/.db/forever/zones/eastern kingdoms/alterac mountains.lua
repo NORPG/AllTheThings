@@ -101,6 +101,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				isBreadcrumb = true,
 				lvl = 50,
 			}),
+			q(96783, {	-- A Way In
+				qg = 13085,	-- Myrokos Silentform
+				coord = { 85.0, 80.4, MAP.ALTERAC_MOUNTAINS },
+				maps = { MAP.ARATHI_HIGHLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { ROGUE },
+				lvl = 24,
+			}),
 			q(522, {	-- Assassin's Contract
 				provider = { "i", 3668 },	-- Assassin's Contract
 				races = ALLIANCE_ONLY,
@@ -126,6 +134,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				coord = { 59.96, 43.74, MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
 				lvl = 29,
+			}),
+			q(96782, {	-- Covert Extraction
+				sourceQuest = 96781,	-- What's the Big Idea?
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Myrokos Silentform.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { ROGUE },
+				lvl = 24,
+				groups = {
+					objective(1, {	-- 0/1 Blade of House Perenolde
+						provider = { "i", 275635 },	-- Blade of House Perenolde
+					}),
+					objective(2, {	-- 0/1 Royal Aegis of Perenolde
+						provider = { "i", 275636 },	-- Royal Aegis of Perenolde
+					}),
+				},
 			}),
 			q(500, {	-- Crushridge Bounty
 				qg = 2263,	-- Marshal Redpath
@@ -452,6 +475,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				repeatable = true,
 				lvl = 24,
 			}),
+			q(96779, {	-- Syndicate Sabotage
+				qg = 13085,	-- Myrokos Silentform
+				coord = { 85.0, 80.4, MAP.ALTERAC_MOUNTAINS },
+				maps = { MAP.HILLSBRAD_FOOTHILLS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { ROGUE },
+				lvl = 24,
+				groups = {
+					objective(1, {	-- 0/1 Lord Tomas slain
+						provider = { "n", 266216 },	-- Lord Tomas
+						coord = { 77.2, 43.9, MAP.HILLSBRAD_FOOTHILLS },
+					}),
+				},
+			}),
 			q(508, {	-- Taretha's Gift
 				sourceQuest = 507,	-- Lord Aliden Perenolde
 				qg = 2317,	-- Elysa
@@ -595,6 +632,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 						cr = 2306,	-- Baron Vardus
 					}),
 					i(2231),	-- Inferno Robe
+				},
+			}),
+			q(96781, {	-- What's the Big Idea?
+				qg = 13085,	-- Myrokos Silentform
+				coord = { 85.0, 80.4, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { ROGUE },
+				lvl = 24,
+				groups = {
+					objective(1, {	-- 0/1 Barton's Scouting Report
+						provider = { "i", 275482 },	-- Barton's Scouting Report
+					}),
 				},
 			}),
 			q(1792, {	-- Whirlwind Weapon

@@ -286,7 +286,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				sourceQuest = 94465,	-- Call of Fire
 				qg = 257808,	-- Braldir Ashmantle
 				coord = { 32.17, 65.97, MAP.LOCH_MODAN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 10,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -304,7 +304,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				sourceQuest = 94466,	-- Call of Fire
 				qg = 257808,	-- Braldir Ashmantle
 				coord = { 32.17, 65.97, MAP.LOCH_MODAN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 10,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -320,7 +320,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				sourceQuest = 94467,	-- Call of Fire
 				provider = { "o", 61934 },	-- Brazier of the Dormant Flame
 				coord = { 31.79, 64.52, MAP.LOCH_MODAN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 10,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -330,7 +330,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(94495, {	-- Call of Water
 				qg = 258043,	-- Norric Lochthane
 				coord = { 41.78, 18.9, MAP.LOCH_MODAN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 20,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -339,7 +339,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				sourceQuests = { 94501 },	-- Call of Water
 				qg = 258043,	-- Norric Lochthane
 				coord = { 41.78, 18.9, MAP.LOCH_MODAN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 20,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -423,7 +423,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				sourceQuest = 94466,	-- Call of Fire
 				qg = 257808,	-- Braldir Ashmantle
 				coord = { 32.17, 65.97, MAP.LOCH_MODAN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 10,
 				repeatable = true,
@@ -806,6 +806,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					i(270019, {	-- Loch Walkers
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
+				},
+			}),
+			q(94616, {	-- Water Sapta
+				qg = 258043,	-- Norric Lochthane
+				coord = { 41.8, 19.0, MAP.LOCH_MODAN },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_SHAMANS,
+				classes = { SHAMAN },
+				lvl = 20,
+				groups = {
+					i(6637),	-- Water Sapta
 				},
 			}),
 		}),
