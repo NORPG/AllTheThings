@@ -499,7 +499,13 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				coord = { 62.2, 58.6, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				groups = {
+					i(280794, {	-- Brown Ground Squirrel Whistle (PET!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(10394),	-- Brown Prairie Dog (PET!)
+					i(280795, {	-- Red Ground Squirrel Whistle (PET!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(8358, {	-- Hewa <Cloth Armor Merchant>

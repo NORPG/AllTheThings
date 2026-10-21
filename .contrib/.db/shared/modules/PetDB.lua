@@ -1148,11 +1148,22 @@ i(13343, 0);		-- Pet Stone
 -----------------
 --   FOREVER   --
 -----------------
+i(268503, 57);		-- Azure Whelpling
 i(282047, 5162);	-- Baby Crocolisk
+i(276275, 5094);	-- Bitter Baitling
+i(268502, 1563);	-- Bronze Whelpling
+i(280794, 5154);	-- Brown Ground Squirrel
 i(280803, 5158);	-- Eagle Owl
 i(275682, 5075);	-- Excitable Slime
+i(280703, 5153);	-- Jungle Boa
+i(280697, 5151);	-- Plagued Cockroach
+i(277508, 5121);	-- Prairie Wolf Pup
+i(280795, 5155);	-- Red Ground Squirrel
 i(277714, 5122);	-- Spectral Bear Cub
+i(280699, 5152);	-- Undercity Cockroach
 i(249897, 0);	-- Flowery Lashling Bud [TODO: Find the speciesID]
+i(249895, 0);	-- Frosty Lashling Bud [TODO: Find the speciesID]
+i(249896, 0);	-- Viridian Lashling Bud [TODO: Find the speciesID]
 i(249898, 0);	-- Wilted Lashling Bud [TODO: Find the speciesID]
 -- #if FOREVER
 i(13342, 0);		-- Pet Fish [TODO: Find the speciesID]

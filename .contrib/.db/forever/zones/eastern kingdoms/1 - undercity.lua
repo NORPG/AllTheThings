@@ -1076,6 +1076,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				coord = { 67.6, 44.1, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				groups = {
+					i(280697, {	-- Plagued Cockroach (PET!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(280699, {	-- Undercity Cockroach (PET!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(10393),	-- Undercity Cockroach (PET!)
 				},
 			}),

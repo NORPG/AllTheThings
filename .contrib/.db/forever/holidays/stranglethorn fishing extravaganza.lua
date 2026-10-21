@@ -137,6 +137,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 				coord = { 27.4, 76.8, MAP.STRANGLETHORN_VALE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
+					i(276275, {	-- Bitter Baitling (PET!)
+						cost = { { "i", 274026, 1 } },	-- 1x Extravagant Extravaganza Coin
+					}),
 					i(276273, {	-- Empty Fish Bucket
 						cost = { { "i", 274026, 1 } },	-- 1x Extravagant Extravaganza Coin
 					}),

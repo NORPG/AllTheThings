@@ -1638,6 +1638,15 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
+			n(268745, {	-- Mayhoa Skyhoof <Girl with Puppies>
+				coord = { 37.0, 29.0, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(277508, {	-- Prairie Wolf Pup Carrier (PET!)
+						isLimited = true,
+					}),
+				},
+			}),
 			n(3321, {	-- Morgum <Leather Armor Merchant>
 				coord = { 56.0, 73.2, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
@@ -2042,6 +2051,9 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(10360),	-- Black Kingsnake (PET!)
 					i(10361),	-- Brown Snake (PET!)
 					i(10392),	-- Crimson Snake (PET!)
+					i(280703, {	-- Jungle Boa (PET!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(3400, {	-- Xen'to <Cooking Supplies>

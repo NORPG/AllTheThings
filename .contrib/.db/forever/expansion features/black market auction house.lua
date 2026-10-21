@@ -46,9 +46,13 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			filter(BATTLE_PETS, {
 				i(249897),	-- Flowery Lashling Bud
+				i(249895),	-- Frosty Lashling Bud (PET!)
 				i(23713),	-- Hippogryph Hatchling
 				i(13342),	-- Pet Fish
 				i(11474),	-- Sprite Darter Egg
+				i(268503),	-- Tiny Azure Whelpling (PET!)
+				i(268502),	-- Tiny Bronze Whelpling (PET!)
+				i(249896),	-- Viridian Lashling Bud (PET!)
 				i(249898),	-- Wilted Lashling Bud
 			}),
 			--[[
