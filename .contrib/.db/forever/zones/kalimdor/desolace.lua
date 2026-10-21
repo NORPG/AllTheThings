@@ -70,9 +70,6 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				races = HORDE_ONLY,
 				lvl = 35,
 				groups = {
-					objective(1, {	-- 0/1 Speak with Mulara
-						provider = { "n", 254930 },	-- Mulara
-					}),
 					objective(2, {	-- 0/3 Tear of Theradras
 						provider = { "i", 255878 },	-- Tear of Theradras
 					}),
@@ -754,7 +751,6 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/1 Khan Jehn resurrected
 						provider = { "i", 257517 },	-- Ultimate Necromancy Staff
-						cr = 254362,	-- Khan Jehn resurrected
 					}),
 					i(271803),	-- Greatstaff of the Necrokhans
 					i(271804),	-- Soulsplatter Mace
@@ -1108,7 +1104,6 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/1 Dispel the Accursed Skull
 						provider = { "i", 256057 },	-- Draenethyst Crystal
-						cr = 253754,	-- Dispel the Accursed Skull
 					}),
 					i(271794),	-- Centaur Spear
 					i(271795),	-- Wanderer's Broadsword

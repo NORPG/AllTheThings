@@ -435,6 +435,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					}),
 				},
 			}),
+			q(93464, {	-- The Visiting Mage
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Azore Aldamort in Desolace.
+				maps = { MAP.DESOLACE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 30,
+			}),
 			q(1422, {	-- Threat From the Sea (1/3)
 				sourceQuest = 699,	-- Lack of Surplus (2/2)
 				qg = 5592,	-- Tok'Kar
