@@ -207,6 +207,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["coord"] = { 44.4, 79.4, LABYRINTH_KINDOJAN },
 					["groups"] = { i(285065) },	-- Mythical Soul Fragment
 				}),
+				q(98963, {	-- Halazzi's Lair
+					["sourceQuest"] = 98951,	-- Akil'zon's Roost
+					["qg"] = 264886,	-- Wah'du <Servant of de Loa>
+					["coord"] = { 44.4, 79.4, LABYRINTH_KINDOJAN },
+					["groups"] = { i(285065) },	-- Mythical Soul Fragment
+				}),
 				q(97241, {	-- Voices of Stone
 					["providers"] = {
 						{ "o", 649924 },	-- Small Loa Figurine
@@ -468,6 +474,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				o(673143, {	-- Bountiful Heavy Trunk
 				}),
 				o(673144, {	-- Bountiful Heavy Trunk
+				}),
+				o(673137, {	-- Gilded Stash
 				}),
 				o(673138, {	-- Gilded Stash
 				}),

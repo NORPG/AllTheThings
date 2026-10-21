@@ -30,7 +30,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
 							{"extract", "itemID"},
 							SYM.SUB.INVTYPE_ALL_SLOTS,
-							{"finalize"},
 
 							-- MID Season 1 dungeons (Heroic difficulty)
 							{"select", "instanceID"
@@ -40,7 +39,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							{"where","difficultyID",DIFFICULTY.DUNGEON.HEROIC},
 							{"extract", "itemID"},
 							SYM.SUB.INVTYPE_ALL_SLOTS,
-							{"finalize"},
 
 							-- MID Season 1 dungeons (Heroic+ difficulty)
 							{"select", "instanceID"
@@ -51,7 +49,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS},
 							{"extract", "itemID"},
 							SYM.SUB.INVTYPE_ALL_SLOTS,
-							{"finalize"},
 
 							-- MID Season 1 dungeons (Mythic difficulty)
 							{"select", "instanceID"
@@ -79,7 +76,6 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
 							{"extract", "itemID"},
 							SYM.SUB.INVTYPE_ALL_SLOTS,
-							{"finalize"},
 						},
 					}),
 				},
