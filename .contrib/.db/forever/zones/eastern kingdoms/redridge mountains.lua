@@ -87,72 +87,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
-			q(91899, {	-- A Sealed Crate
-				qgs = {
-					256390,	-- Marcy Baker <Inventory Intake>
-					256386,	-- Dokimi <Inventory Intake>
-				},
-				coords = {
-					{ 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
-					{ 50.15, 29.35, MAP.THE_BARRENS },
-				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- Sealed Apprentice Crate
-						provider = { "i", 248765 },	-- Sealed Apprentice Crate (QI!)
-					}),
-				},
-			}),
-			q(91900, {	-- A Sealed Crate
-				qg = 256390,	-- Marcy Baker <Inventory Intake>
-				coord = { 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- Sealed Journeyman Crate
-						provider = { "i", 248766 },	-- Sealed Journeyman Crate (QI!)
-					}),
-				},
-			}),
-			q(91901, {	-- A Sealed Crate
-				qg = 256390,	-- Marcy Baker <Inventory Intake>
-				coord = { 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- Sealed Expert Crate
-						provider = { "i", 248767 },	-- Sealed Expert Crate (QI!)
-					}),
-				},
-			}),
-			q(91904, {	-- A Sealed Crate
-				qg = 256390,	-- Marcy Baker <Inventory Intake>
-				coord = { 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- Sealed Apprentice Crate
-						provider = { "i", 248770 },	-- Sealed Apprentice Crate (QI!)
-					}),
-				},
-			}),
-			q(91905, {	-- A Sealed Crate
-				qg = 256390,	-- Marcy Baker <Inventory Intake>
-				coord = { 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- Sealed Journeyman Crate
-						provider = { "i", 248771 },	-- Sealed Journeyman Crate (QI!)
-					}),
-				},
-			}),
-			q(91906, {	-- A Sealed Crate
-				qg = 256390,	-- Marcy Baker <Inventory Intake>
-				coord = { 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- Sealed Expert Crate
-						provider = { "i", 248772 },	-- Sealed Expert Crate (QI!)
-					}),
-				},
-			}),
 			q(94, {	-- A Watchful Eye
 				qg = 313,	-- Theocritus
 				qi = 1083,	-- Glyph of Azora (PQI!)
@@ -568,18 +502,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 						},
 						cr = 712,	-- Redridge Thrasher
 					}),
-				},
-			}),
-			q(98247, {	-- Shipping Label (A)
-				description = "The shipping label appears in your inventory once you seal a waylaid crate for the first time.",
-				qs = 280179,	-- Shipping Label (QS!)
-				qg = 256390,	-- Marcy Baker <Inventory Intake>
-				coord = { 9.6, 71.0, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				lvl = 10,
-				groups = {
-					currency(3402),	-- Merchant's Favor x50
 				},
 			}),
 			q(95816, {	-- Sign Me Up!
