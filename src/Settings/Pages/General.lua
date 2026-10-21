@@ -520,7 +520,7 @@ modeButton:SetScript("OnClick", function()
 			-- General Things
 			settings:Set("Thing:Achievements", true)
 			settings:Set("Thing:CharacterUnlocks", true)
-			settings:Set("Thing:Exploration", app.GameBuildVersion < 100000)	-- CRIEVE NOTE: For now, until Blizzard adds an exploration API that doesn't suck
+			settings:Set("Thing:Exploration", app.GameBuildVersion < 100000 and not app.IsForever)	-- CRIEVE NOTE: For now, until Blizzard adds an exploration API that doesn't suck
 			settings:Set("Thing:FirstCrafts", true)
 			settings:Set("Thing:FlightPaths", true)
 			settings:Set("Thing:Quests", true)
@@ -946,7 +946,7 @@ child:CreateAccountWideCheckbox("EXPLORATION", "Exploration")
 	:AlignBelow(accwideCheckboxCharacterUnlocks)
 local explorationCheckbox = child:CreateTrackingCheckbox("EXPLORATION", "Exploration", true)
 	:AlignAfter(accwideCheckboxExploration)
-if app.IsRetail then
+if app.IsRetail or app.IsForever then
 	explorationCheckbox:MarkAsWIP();
 end
 
