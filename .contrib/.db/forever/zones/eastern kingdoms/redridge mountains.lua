@@ -736,6 +736,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					i(3229),	-- Tarantula Silk Sash
 				},
 			}),
+			n(214456, {	-- Dro'zem the Blasphemous
+				coords = {
+					{ 29.6, 7.6, MAP.REDRIDGE_MOUNTAINS },
+					{ 32.4, 7.0, MAP.REDRIDGE_MOUNTAINS },
+					{ 34.2, 8.6, MAP.REDRIDGE_MOUNTAINS },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(277213),	-- Dro'zem's Tunic
+				},
+			}),
 			n(584, {	-- Kazon
 				coords = {
 					{ 33.0,  6.6, MAP.REDRIDGE_MOUNTAINS },
@@ -797,6 +808,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					{ 43.4, 30.0, MAP.REDRIDGE_MOUNTAINS },
 					{ 49.2, 33.0, MAP.REDRIDGE_MOUNTAINS },
 					{ 54.6, 37.2, MAP.REDRIDGE_MOUNTAINS },
+				},
+				groups = {
+					i(281925, {	-- Whelpfire Wand
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(14270, {	-- Squiddic

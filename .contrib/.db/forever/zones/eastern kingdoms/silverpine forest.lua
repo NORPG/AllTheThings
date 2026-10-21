@@ -905,6 +905,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					{ 51.8, 19.6, MAP.SILVERPINE_FOREST },
 					{ 48.0, 25.8, MAP.SILVERPINE_FOREST },
 				},
+				groups = {
+					i(283361, {	-- Gorefang's Runners
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(12433, {	-- Krethis the Shadowspinner
 				coords = {
@@ -917,6 +922,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					{ 54.6, 52.0, MAP.SILVERPINE_FOREST },
 					{ 51.6, 63.8, MAP.SILVERPINE_FOREST },
 					{ 56.2, 62.4, MAP.SILVERPINE_FOREST },
+				},
+				groups = {
+					i(283259, {	-- Bearhide Vicegrips
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(2283, {	-- Ravenclaw Regent

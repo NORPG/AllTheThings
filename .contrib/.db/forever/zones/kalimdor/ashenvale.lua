@@ -1232,12 +1232,22 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					{ 29.2, 16.8, MAP.ASHENVALE },
 					{ 26.6, 15.0, MAP.ASHENVALE },
 				},
+				groups = {
+					i(284666, {	-- Wolf Whistle
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(10643, {	-- Mugglefin
 				coords = {
 					{ 21.6, 41.8, MAP.ASHENVALE },
 					{ 20.6, 45.0, MAP.ASHENVALE },
 					{ 19.2, 44.2, MAP.ASHENVALE },
+				},
+				groups = {
+					i(284702, {	-- Slimy Sword
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(10640, {	-- Oakpaw

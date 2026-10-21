@@ -1586,6 +1586,11 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					{ 44.8, 50.6, MAP.DUROTAR },
 					{ 42.4, 38.6, MAP.DUROTAR },
 				},
+				groups = {
+					i(284286, {	-- Battleguard Captain's Sticker
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(5823, {	-- Death Flayer
 				coords = {
@@ -1596,11 +1601,31 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					{ 37.8, 53.4, MAP.DUROTAR },
 					{ 39.2, 51.0, MAP.DUROTAR },
 				},
+				groups = {
+					i(284320, {	-- Flayed Scorpid Bands
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
+			}),
+			n(276194, {	-- Dustwind Eggtender
+				coords = {
+					{ 51.2, 19.8, MAP.DUROTAR },
+					{ 51.2, 23.4, MAP.DUROTAR },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(286745),	-- Furlfeather Ring
+				},
 			}),
 			n(5822, {	-- Felweaver Scornn
 				coords = {
 					{ 51.6, 9.6, MAP.DUROTAR },
 					{ 53.0, 7.2, MAP.DUROTAR },
+				},
+				groups = {
+					i(284287, {	-- Felweaver's Staff
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(5826, {	-- Geolord Mottle
@@ -1610,6 +1635,11 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					{ 47.6, 50.0, MAP.DUROTAR },
 					{ 44.6, 48.4, MAP.DUROTAR },
 					{ 43.8, 50.0, MAP.DUROTAR },
+				},
+				groups = {
+					i(284323, {	-- Geolord's Mitts
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(276198, {	-- Shal'ma
@@ -1629,9 +1659,19 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					{ 48.2, 78.2, MAP.DUROTAR },
 					{ 49.6, 80.6, MAP.DUROTAR },
 				},
+				groups = {
+					i(284321, {	-- Centaur Raider's Axe
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(5809, {	-- Watch Commander Zalaphil
 				coord = { 59.6, 59.0, MAP.DUROTAR },
+				groups = {
+					i(284322, {	-- Invading Marine's Shield
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 		}),
 		n(RIDING_TRAINER, {

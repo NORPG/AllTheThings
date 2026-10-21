@@ -2956,6 +2956,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ 44.8, 79.4, MAP.THE_BARRENS },
 					{ 44.4, 75.6, MAP.THE_BARRENS },
 				},
+				groups = {
+					i(285338, {	-- Kodohide Legguards
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(5851, {	-- Captain Gerogg Hammertoe <Bael'dun Captain of the Guard>
 				coord = { 49.6, 83.8, MAP.THE_BARRENS },
@@ -2977,6 +2982,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ 49.8, 27.6, MAP.THE_BARRENS },
 					{ 51.6, 26.8, MAP.THE_BARRENS },
 				},
+				groups = {
+					i(286533, {	-- Cheetah Hide Grips
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(3270, {	-- Elder Mystic Razorsnout
 				coords = {
@@ -2990,9 +3000,22 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			n(5836, {	-- Engineer Whirleygig
 				coord = { 56.2, 8.6, MAP.THE_BARRENS },
+				groups = {
+					i(285366, {	-- Whirleygig's Supply Stash
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(285282, {	-- Jagged Knives
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(5835, {	-- Foreman Grills
 				coord = { 56.6, 8.6, MAP.THE_BARRENS },
+				groups = {
+					i(285351, {	-- Foreman's Enforcers
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(5863, {	-- Geopriest Gukk'rok
 				coords = {
@@ -3021,6 +3044,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ 45.0, 84.6, MAP.THE_BARRENS },
 					{ 44.8, 79.6, MAP.THE_BARRENS },
 				},
+				groups = {
+					i(285328, {	-- Taurenbane's Family Cleaver
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(5847, {	-- Heggin Stonewhisker <Bael'dun Chief Engineer>
 				coord = { 47.0, 83.8, MAP.THE_BARRENS },
@@ -3033,6 +3061,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			n(5828, {	-- Humar the Pridelord
 				coord = { 62.0, 33.6, MAP.THE_BARRENS },
+				groups = {
+					i(285331, {	-- Mark of the Pack Leader
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(5848, {	-- Malgin Barleybrew <Bael'dun Morale Officer>
 				coord = { 49.4, 84.4, MAP.THE_BARRENS },
@@ -3055,6 +3088,14 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ 56.8, 41.8, MAP.THE_BARRENS },
 					{ 55.6, 39.0, MAP.THE_BARRENS },
 				},
+				groups = {
+					i(285339, {	-- Centaur War Chain
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(285282, {	-- Jagged Knives
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(3253, {	-- Silithid Harvester
 				coords = {
@@ -3067,6 +3108,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					i(5138, {	-- Harvester's Head
 						races = HORDE_ONLY,
 					}),
+					i(286534, {	-- Silithid Piercer
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(5830, {	-- Sister Rathtalon
@@ -3075,11 +3119,21 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ 39.0, 16.2, MAP.THE_BARRENS },
 					{ 40.6, 17.8, MAP.THE_BARRENS },
 				},
+				groups = {
+					i(285345, {	-- Feather Padded Treads
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(3295, {	-- Sludge Beast
 				coords = {
 					{ 56.6, 7.4, MAP.THE_BARRENS },
 					{ 56.2, 9.6, MAP.THE_BARRENS },
+				},
+				groups = {
+					i(286535, {	-- Sludge-Stained Band
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(5829, {	-- Snort the Heckler
@@ -3087,6 +3141,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ 41.8, 20.4, MAP.THE_BARRENS },
 					{ 40.8, 23.4, MAP.THE_BARRENS },
 					{ 41.4, 27.2, MAP.THE_BARRENS },
+				},
+				groups = {
+					i(286536, {	-- Heckler's Hide
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(5837, {	-- Stonearm
@@ -3104,12 +3163,22 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ 59.2, 32.6, MAP.THE_BARRENS },
 					{ 61.8, 33.8, MAP.THE_BARRENS },
 				},
+				groups = {
+					i(285330, {	-- Signet of the Zhevra
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(5864, {	-- Swinegart Spearhide
 				coords = {
 					{ 41.4, 45.6, MAP.THE_BARRENS },
 					{ 42.2, 48.0, MAP.THE_BARRENS },
 					{ 45.2, 49.0, MAP.THE_BARRENS },
+				},
+				groups = {
+					i(285332, {	-- Puncturing Spear
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(5842, {	-- Takk the Leaper
@@ -3118,12 +3187,22 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ 60.6, 10.0, MAP.THE_BARRENS },
 					{ 61.0, 13.6, MAP.THE_BARRENS },
 				},
+				groups = {
+					i(285329, {	-- Raptor Hide Cloak
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(5832, {	-- Thunderstomp
 				coords = {
 					{ 47.0, 77.2, MAP.THE_BARRENS },
 					{ 46.4, 78.6, MAP.THE_BARRENS },
 					{ 48.0, 80.8, MAP.THE_BARRENS },
+				},
+				groups = {
+					i(286537, {	-- Thunderstomp's Horn
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(3652, {	-- Trigore the Lasher

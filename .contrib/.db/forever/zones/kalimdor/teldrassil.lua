@@ -1661,6 +1661,16 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					}),
 				},
 			}),
+			n(276101, {	-- Nightscreech
+				coords = {
+					{ 37.6, 28.2, MAP.TELDRASSIL },
+					{ 39.9, 55.0, MAP.TELDRASSIL },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(286750),	-- Wisesight Wand
+				},
+			}),
 			n(14432, {	-- Threggil
 				coords = {
 					{ 51.2, 50.8, MAP.TELDRASSIL },
@@ -1682,6 +1692,16 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 				groups = {
 					i(18611),	-- Gnarlpine Leggings
+				},
+			}),
+			n(276099, {	-- Wrathvine
+				coords = {
+					{ 53.4, 70.4, MAP.TELDRASSIL },
+					{ 55.0, 67.8, MAP.TELDRASSIL },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(286749),	-- Wrathroot
 				},
 			}),
 		}),

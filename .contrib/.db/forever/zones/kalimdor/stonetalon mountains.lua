@@ -793,10 +793,20 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					{ 68.0, 54.0, MAP.STONETALON_MOUNTAINS },
 					{ 63.8, 51.8, MAP.STONETALON_MOUNTAINS },
 				},
+				groups = {
+					i(284400, {	-- Foreman's Helm
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(4066, {	-- Nal'taszar
 				coords = {
 					{ 25.6, 12.6, MAP.STONETALON_MOUNTAINS },
+				},
+				groups = {
+					i(284383, {	-- Faerie Dragon's Skin
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(4015, {	-- Pridewing Patriarch
@@ -844,6 +854,11 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					{ 63.0, 54.4, MAP.STONETALON_MOUNTAINS },
 					{ 64.2, 57.0, MAP.STONETALON_MOUNTAINS },
 				},
+				groups = {
+					i(284386, {	-- Whipfang's Skinsearer
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(4030, {	-- Vengeful Ancient
 				coords = {
@@ -852,6 +867,11 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					{ 29.4, 72.6, MAP.STONETALON_MOUNTAINS },
 					{ 33.0, 73.6, MAP.STONETALON_MOUNTAINS },
 					{ 37.4, 72.4, MAP.STONETALON_MOUNTAINS },
+				},
+				groups = {
+					i(284382, {	-- Budding Leaf Belt
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 		}),

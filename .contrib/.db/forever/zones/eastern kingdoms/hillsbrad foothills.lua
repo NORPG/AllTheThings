@@ -940,6 +940,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					{ 65.8, 80.2, MAP.HILLSBRAD_FOOTHILLS },
 					{ 67.8, 87.6, MAP.HILLSBRAD_FOOTHILLS },
 				},
+				groups = {
+					i(282711, {	-- Naga Maiden's Gown
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(14278, {	-- Ro'Bark
 				coords = {
@@ -948,6 +953,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					{ 66.2, 64.8, MAP.HILLSBRAD_FOOTHILLS },
 					{ 63.2, 63.4, MAP.HILLSBRAD_FOOTHILLS },
 				},
+				groups = {
+					i(282721, {	-- Gnoll Shaman's Staff
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(14276, {	-- Scargil
 				coords = {
@@ -955,6 +965,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					{ 26.0, 65.4, MAP.HILLSBRAD_FOOTHILLS },
 					{ 26.2, 73.0, MAP.HILLSBRAD_FOOTHILLS },
 					{ 31.4, 72.2, MAP.HILLSBRAD_FOOTHILLS },
+				},
+				groups = {
+					i(282716, {	-- Imbued Scaled Cuffs
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(14275, {	-- Tamra Stormpike
@@ -965,6 +980,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					{ 73.6, 81.0, MAP.HILLSBRAD_FOOTHILLS },
 				},
 				races = HORDE_ONLY,
+				groups = {
+					i(282710, {	-- Dun Garok Rifle
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 		}),
 		n(VENDORS, {

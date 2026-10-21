@@ -1381,6 +1381,11 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					{ 81.6, 39.4, MAP.FERALAS },
 					{ 84.0, 39.2, MAP.FERALAS },
 				},
+				groups = {
+					i(285043, {	-- Snarling Fang
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(11497, {	-- The Razza
 				description = "Spawns in the Dire Maul Arena.",

@@ -1095,9 +1095,19 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					{ 37.6, 61.6, MAP.DARKSHORE },
 					{ 36.8, 72.0, MAP.DARKSHORE },
 				},
+				groups = {
+					i(284185, {	-- Greymist Gauntlets
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(2184, {	-- Lady Moongazer
 				coord = { 43.0, 61.2, MAP.DARKSHORE },
+				groups = {
+					i(284193, {	-- Moongazer's Wand
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(7016, {	-- Lady Vespira
 				coords = {
@@ -1115,9 +1125,19 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 			n(2191, {	-- Licillin
 				coord = { 47.0, 38.6, MAP.DARKSHORE },
+				groups = {
+					i(284173, {	-- Impcaster's Staff
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(7017, {	-- Lord Sinslayer
 				coord = { 55.0, 35.4, MAP.DARKSHORE },
+				groups = {
+					i(284177, {	-- Sinslayer's Smasher
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(2175, {	-- Shadowclaw
 				coords = {
@@ -1125,6 +1145,11 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					{ 42.2, 38.2, MAP.DARKSHORE },
 					{ 40.2, 41.6, MAP.DARKSHORE },
 					{ 39.4, 39.6, MAP.DARKSHORE },
+				},
+				groups = {
+					i(284174, {	-- Serrated Shadowclaw
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(2172, {	-- Strider Clutchmother

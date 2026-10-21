@@ -732,6 +732,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					{ 31.6, 86.8, MAP.ALTERAC_MOUNTAINS },
 					{ 39.2, 92.0, MAP.ALTERAC_MOUNTAINS },
 				},
+				groups = {
+					i(283253, {	-- Denmother's Hide
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(14223, {	-- Cranky Benj
 				coords = {
@@ -783,6 +788,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					{ 73.0, 46.2, MAP.ALTERAC_MOUNTAINS },
 					{ 78.8, 47.4, MAP.ALTERAC_MOUNTAINS },
 					{ 80.8, 34.2, MAP.ALTERAC_MOUNTAINS },
+				},
+				groups = {
+					i(283254, {	-- Heart of Alterac
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 		}),

@@ -1175,6 +1175,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					{ 35.4, 37.2, MAP.WETLANDS },
 					{ 38.4, 36.4, MAP.WETLANDS },
 				},
+				groups = {
+					i(282654, {	-- Gnawed Bone
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(1112, {	-- Leech Widow
 				coord = { 46.8, 61.4, MAP.WETLANDS },

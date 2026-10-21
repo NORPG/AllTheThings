@@ -975,12 +975,22 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 					{ 34.8, 31.6, MAP.THOUSAND_NEEDLES },
 					{ 36.6, 31.6, MAP.THOUSAND_NEEDLES },
 				},
+				groups = {
+					i(285212, {	-- Foulmountain Family Hammer
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(5934, {	-- Heartrazor
 				coords = {
 					{ 17.8, 40.6, MAP.THOUSAND_NEEDLES },
 					{ 18.0, 42.6, MAP.THOUSAND_NEEDLES },
 					{ 15.8, 41.2, MAP.THOUSAND_NEEDLES },
+				},
+				groups = {
+					i(285190, {	-- Wyvern Heart Band
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(5935, {	-- Ironeye the Invincible

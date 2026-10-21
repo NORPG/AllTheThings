@@ -1761,11 +1761,79 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 		}),
 		n(RARES, {
+			n(250936, {	-- Den'dralass
+				coords = {
+					{ 56.4, 31.4, MAP.ZEPHRAS_ISLE },
+					{ 60.1, 33.5, MAP.ZEPHRAS_ISLE },
+					{ 62.8, 35.8, MAP.ZEPHRAS_ISLE },
+				},
+				groups = {
+					i(263935),	-- Elunar Longstaff
+					i(263936),	-- Windforged Shortblade
+					i(263937),	-- Skyseeker's Greatstaff
+				},
+			}),
+			n(256492, {	-- Fernfeather
+				coords = {
+					{ 48.4, 85.4, MAP.ZEPHRAS_ISLE },
+					{ 51.4, 82.4, MAP.ZEPHRAS_ISLE },
+				},
+				groups = {
+					i(285272),	-- Skyseer's Belt
+					i(285273),	-- Scout Ranger's Belt
+					i(285274),	-- Thendal Watcher's Belt
+				},
+			}),
 			n(259398, {	-- Galemender Delanea
 				coord = { 63.2, 61.9, MAP.ZEPHRAS_ISLE },	-- Walks around the area
 				groups = {
 					i(285254),	-- Scout Ranger's Gloves
 					i(285255),	-- Thendal Watcher's Gloves
+				},
+			}),
+			n(259388, {	-- Mystmane
+				coords = {
+					{ 59.9, 34.3, MAP.ZEPHRAS_ISLE },
+					{ 60.6, 34.7, MAP.ZEPHRAS_ISLE },
+					{ 60.7, 36.1, MAP.ZEPHRAS_ISLE },
+				},
+				groups = {
+					i(285228),	-- Mystmane's Pelt
+				},
+			}),
+			n(255887, {	-- Slydris
+				coords = {
+					{ 50.4, 50.4, MAP.ZEPHRAS_ISLE },
+					{ 51.0, 51.8, MAP.ZEPHRAS_ISLE },
+				},
+				groups = {
+					i(285238),	-- Chipped Spellstaff
+					i(285239),	-- Explorer's Shortsword
+				},
+			}),
+			n(259394, {	-- Snapbeak the Quick
+				coords = {
+					{ 34.2, 60.0, MAP.ZEPHRAS_ISLE },
+					{ 35.0, 57.8, MAP.ZEPHRAS_ISLE },
+					{ 35.8, 56.2, MAP.ZEPHRAS_ISLE },
+				},
+				groups = {
+					i(285264),	-- Skyseer's Slippers
+					i(285269),	-- Thendal Watcher's Boots
+				},
+			}),
+			n(259385, {	-- Tel'daeor the Stormspeaker
+				coord = { 66.0, 53.8, MAP.ZEPHRAS_ISLE },
+				groups = {
+					i(263015),	-- Skyseer's Pants
+					i(263016),	-- Scout Ranger's Leggings
+					i(263017),	-- Thendal Watcher's Leggings
+				},
+			}),
+			n(256028, {	-- The Lost One
+				coord = { 53.2, 48.0, MAP.ZEPHRAS_ISLE },
+				groups = {
+					i(263006),	-- Scout Ranger's Tunic
 				},
 			}),
 		}),

@@ -647,6 +647,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					{ 63.2, 25.2, MAP.SWAMP_OF_SORROWS },
 					{ 60.0, 20.2, MAP.SWAMP_OF_SORROWS },
 				},
+				groups = {
+					i(282003, {	-- Lost Chieftain's Greatsword
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(1106, {	-- Lost One Cook
 				coords = {

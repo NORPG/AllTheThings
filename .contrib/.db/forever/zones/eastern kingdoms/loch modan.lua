@@ -875,6 +875,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				},
 				groups = {
 					i(2821),	-- Mo'grosh Masher
+					i(282639, {	-- Emogg's "Crusher"
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(1425, {	-- Grizlak
@@ -912,6 +915,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			n(14266, {	-- Shanda the Spinner
 				coord = { 77.8, 53.6, MAP.LOCH_MODAN },
+				groups = {
+					i(282636, {	-- Silkspun Gloves
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 		}),
 		n(TREASURES, {

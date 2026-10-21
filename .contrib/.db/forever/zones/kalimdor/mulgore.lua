@@ -1465,6 +1465,11 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 		n(RARES, {
 			n(5787, {	-- Enforcer Emilgund
 				coord = { 40.6, 15.8, MAP.MULGORE },
+				groups = {
+					i(284361, {	-- Venture Company Legguards
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(3056, {	-- Ghost Howl
 				coords = {
@@ -1512,6 +1517,27 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					{ 55.2, 72.2, MAP.MULGORE },
 				},
 			}),
+			n(276109, {	-- Snarlsnout
+				coords = {
+					{ 32.2, 63.4, MAP.MULGORE },
+					{ 32.6, 65.6, MAP.MULGORE },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(286753),	-- Snarlsnout Shooter
+				},
+			}),
+			n(276105, {	-- Stormherald Ukta
+				coords = {
+					{ 59.0, 59.0, MAP.MULGORE },
+					{ 59.4, 55.8, MAP.MULGORE },
+					{ 60.2, 58.4, MAP.MULGORE },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(286754),	-- Ukta's Conduit
+				},
+			}),
 			n(5807, {	-- The Rake
 				coords = {
 					{ 50.6, 26.6, MAP.MULGORE },
@@ -1521,6 +1547,16 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 				groups = {
 					i(17922),	-- Lionfur Armor
+				},
+			}),
+			n(276108, {	-- Thornstarter Igleg
+				coords = {
+					{ 58.8, 30.0, MAP.MULGORE },
+					{ 59.6, 30.8, MAP.MULGORE },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(286752),	-- Igleggings
 				},
 			}),
 		}),

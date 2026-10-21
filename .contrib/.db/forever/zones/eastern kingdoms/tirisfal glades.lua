@@ -1735,6 +1735,33 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					{ 50.0, 50.8, MAP.TIRISFAL_GLADES },
 					{ 51.4, 52.2, MAP.TIRISFAL_GLADES },
 				},
+				groups = {
+					i(283462, {	-- Bayne's Bite
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
+			}),
+			n(271080, {	-- Blightsculler
+				coords = {
+					{ 15.4, 55.8, MAP.TIRISFAL_GLADES },
+					{ 16.4, 56.6, MAP.TIRISFAL_GLADES },
+					{ 17.0, 56.4, MAP.TIRISFAL_GLADES },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(283460),	-- Decaying Flesh Belt
+				},
+			}),
+			n(276061, {	-- Decrepit Harvester
+				coords = {
+					{ 52.0, 55.0, MAP.TIRISFAL_GLADES },
+					{ 52.8, 56.4, MAP.TIRISFAL_GLADES },
+					{ 53.0, 58.6, MAP.TIRISFAL_GLADES },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(255154),	-- Ruined Gyrostabilizer
+				},
 			}),
 			n(1911, {	-- Deeb
 				coords = {
@@ -1764,6 +1791,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					{ 74.6, 59.6, MAP.TIRISFAL_GLADES },
 					{ 74.8, 60.6, MAP.TIRISFAL_GLADES },
 				},
+				groups = {
+					i(283471, {	-- Fellicent's Bindings
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(1531, {	-- Lost Soul
 				coords = {
@@ -1789,6 +1821,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					{ 55.6, 60.0, MAP.TIRISFAL_GLADES },
 					{ 56.2, 63.6, MAP.TIRISFAL_GLADES },
 				},
+				groups = {
+					i(283473, {	-- Batwing Bindings
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(10359, {	-- Sri'skulk
 				coords = {
@@ -1797,6 +1834,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					{ 89.4, 40.2, MAP.TIRISFAL_GLADES },
 					{ 90.2, 47.6, MAP.TIRISFAL_GLADES },
 					{ 88.8, 53.6, MAP.TIRISFAL_GLADES },
+				},
+				groups = {
+					i(283480, {	-- Cracked Carapace Hauberk
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
+			}),
+			n(276089, {	-- The Condemned One
+				coords = {
+					{ 66.0, 43.0, MAP.TIRISFAL_GLADES },
+					{ 67.0, 41.7, MAP.TIRISFAL_GLADES },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(286755),	-- Helm Splitter
 				},
 			}),
 			n(1533, {	-- Tormented Spirit

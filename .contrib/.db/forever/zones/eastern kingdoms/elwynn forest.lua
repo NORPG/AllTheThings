@@ -1655,6 +1655,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			n(100, {	-- Gruff Swiftbite
 				coord = { 27.6, 88.4, MAP.ELWYNN_FOREST },
+				groups = {
+					i(281993, {	-- Gnoll Hide Boots
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(276189, {	-- Matriarch Bristlefur
 				coords = {
