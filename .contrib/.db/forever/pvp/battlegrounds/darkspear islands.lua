@@ -24,19 +24,160 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 			}),
 		}),
 		n(QUESTS, {
+			q(98887, {	-- Conflict at Darkspear Islands [Level 30]
+				qg = 15350,	-- Horde Warbringer
+				coords = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 274895, 3 } },	-- Darkspear Islands Mark of Honor
+				races = HORDE_ONLY,
+				-- TODO: Wowhead lists two level 30 versions of this quest (98887 and 98888).
+				lvl = { 30, 39 },
+			}),
 			q(98888, {	-- Conflict at Darkspear Islands [Level 30]
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
 				cost = { { "i", 274895, 3 } },	-- Darkspear Islands Mark of Honor
 				races = HORDE_ONLY,
-				lvl = 30,
+				lvl = { 30, 39 },
+			}),
+			q(98889, {	-- Conflict at Darkspear Islands [Level 40]
+				qg = 15350,	-- Horde Warbringer
+				coords = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 274895, 3 } },	-- Darkspear Islands Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 40, 49 },
+			}),
+			q(98891, {	-- Conflict at Darkspear Islands [Level 50]
+				qg = 15350,	-- Horde Warbringer
+				coords = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 274895, 3 } },	-- Darkspear Islands Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 50, 59 },
+			}),
+			q(98893, {	-- Conflict at Darkspear Islands [Level 60]
+				qg = 15350,	-- Horde Warbringer
+				coords = HORDE_WARBRINGER_COORDS,
+				cost = { { "i", 274895, 3 } },	-- Darkspear Islands Mark of Honor
+				races = HORDE_ONLY,
+				lvl = { 60, 69 },
 			}),
 			q(98895, {	-- Darkspear Islands Clash [Level 30]
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
 				cost = { { "i", 274895, 3 } },	-- Darkspear Islands Mark of Honor
 				races = ALLIANCE_ONLY,
-				lvl = 30,
+				lvl = { 30, 39 },
+			}),
+			q(98896, {	-- Darkspear Islands Clash [Level 30]
+				qg = 15351,	-- Alliance Brigadier General
+				coords = ALLIANCE_BRIGADIER_COORDS,
+				races = ALLIANCE_ONLY,
+				-- TODO: Wowhead lists two level 30 versions of this quest (98895 and 98896) and doesn't show this one's objectives yet.
+				lvl = { 30, 39 },
+			}),
+			q(98897, {	-- Darkspear Islands Clash [Level 40]
+				qg = 15351,	-- Alliance Brigadier General
+				coords = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 274895, 3 } },	-- Darkspear Islands Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 40, 49 },
+			}),
+			q(98899, {	-- Darkspear Islands Clash [Level 50]
+				qg = 15351,	-- Alliance Brigadier General
+				coords = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 274895, 3 } },	-- Darkspear Islands Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 50, 59 },
+			}),
+			q(98901, {	-- Darkspear Islands Clash [Level 60]
+				qg = 15351,	-- Alliance Brigadier General
+				coords = ALLIANCE_BRIGADIER_COORDS,
+				cost = { { "i", 274895, 3 } },	-- Darkspear Islands Mark of Honor
+				races = ALLIANCE_ONLY,
+				lvl = { 60, 69 },
+			}),
+			q(98912, {	-- Darkspear's Advanced Care Package [Level 50]
+				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				races = HORDE_ONLY,
+				lvl = { 50, 60 },
+				groups = {
+					i(285173),	-- Darkspear Advanced Care Package
+				},
+			}),
+			q(98910, {	-- Darkspear's Basic Care Package [Level 30]
+				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				races = HORDE_ONLY,
+				lvl = { 30, 39 },
+				groups = {
+					i(285171),	-- Darkspear Basic Care Package
+				},
+			}),
+			q(98911, {	-- Darkspear's Standard Care Package [Level 40]
+				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				races = HORDE_ONLY,
+				lvl = { 40, 49 },
+				groups = {
+					i(285172),	-- Darkspear Standard Care Package
+				},
+			}),
+			q(98903, {	-- The Battle for Darkspear Islands! (Alliance) [Level 30]
+				qg = 275273,	-- Brelinda McFarry
+				coord = { 63.4, 58.8, MAP.THE_BARRENS },
+				races = ALLIANCE_ONLY,
+				lvl = { 30, 39 },
+			}),
+			q(98904, {	-- The Battle for Darkspear Islands! (Alliance) [Level 40]
+				qg = 275273,	-- Brelinda McFarry
+				coord = { 63.4, 58.8, MAP.THE_BARRENS },
+				races = ALLIANCE_ONLY,
+				lvl = { 40, 49 },
+			}),
+			q(98905, {	-- The Battle for Darkspear Islands! (Alliance) [Level 50]
+				qg = 275273,	-- Brelinda McFarry
+				coord = { 63.4, 58.8, MAP.THE_BARRENS },
+				races = ALLIANCE_ONLY,
+				lvl = { 50, 60 },
+			}),
+			q(98906, {	-- The Battle for Darkspear Islands! (Horde) [Level 30]
+				qg = 275276,	-- Nizook Boof
+				coord = { 65.0, 34.8, MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				lvl = { 30, 39 },
+			}),
+			q(98907, {	-- The Battle for Darkspear Islands! (Horde) [Level 40]
+				qg = 275276,	-- Nizook Boof
+				coord = { 65.0, 34.8, MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				lvl = { 40, 49 },
+			}),
+			q(98908, {	-- The Battle for Darkspear Islands! (Horde) [Level 50]
+				qg = 275276,	-- Nizook Boof
+				coord = { 65.0, 34.8, MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				lvl = { 50, 60 },
+			}),
+			q(98915, {	-- Theramore Advanced Care Package [Level 50]
+				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				races = ALLIANCE_ONLY,
+				lvl = { 50, 60 },
+				groups = {
+					i(285170),	-- Theramore Advanced Care Package
+				},
+			}),
+			q(98913, {	-- Theramore Basic Care Package [Level 30]
+				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				races = ALLIANCE_ONLY,
+				lvl = { 30, 39 },
+				groups = {
+					i(285168),	-- Theramore Basic Care Package
+				},
+			}),
+			q(98914, {	-- Theramore Standard Care Package [Level 40]
+				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				races = ALLIANCE_ONLY,
+				lvl = { 40, 49 },
+				groups = {
+					i(285169),	-- Theramore Standard Care Package
+				},
 			}),
 		}),
 		n(REWARDS, {
