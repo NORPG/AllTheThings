@@ -741,6 +741,24 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					i(281251),	-- Courier's Wristguards
 				},
 			}),
+			q(86576, {	-- Bloodfury Trinkets
+				qg = 11860,	-- Maggran Earthbinder
+				coord = { 47.2, 61.0, MAP.STONETALON_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 18,
+				groups = {
+					objective(1, {	-- 0/15 Glittering Sunstone
+						provider = { "i", 277936 },	-- Glittering Sunstone
+						crs = {
+							4022,	-- Bloodfury Harpy
+							4023,	-- Bloodfury Roguefeather
+							4024,	-- Bloodfury Slayer
+						},
+					}),
+					i(281252),	-- Harpy Claw Ring
+				},
+			}),
 			q(97538, {	-- Pigments for Paints
 				qg = 3024,	-- Tah Winterhoof
 				coord = { 54.14, 47.05, MAP.THUNDER_BLUFF },

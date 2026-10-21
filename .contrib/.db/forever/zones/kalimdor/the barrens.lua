@@ -977,6 +977,25 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 				},
 			}),
+			q(98093, {	-- Field to Clear
+				qg = 14242,	-- Sulhasa
+				coord = { 47.9, 77.6, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 18,
+				groups = {
+					objective(1, {	-- 0/7 Hecklefang Stalker slain
+						provider = { "n", 4128 },	-- Hecklefang Stalker
+						coord = { 43.2, 78.2, MAP.THE_BARRENS },
+					}),
+					objective(2, {	-- 0/7 Stormhide slain
+						provider = { "n", 3238 },	-- Stormhide
+						coord = { 43.2, 78.4, MAP.THE_BARRENS },
+					}),
+					i(287064),	-- Beastculler's Knife
+					i(279391),	-- Taurajo Headband
+				},
+			}),
 			q(1503, {	-- Forged Steel
 				sourceQuest = 1502,	-- Thun'grim Firegaze
 				qg = 5878,	-- Thun'grim Firegaze
@@ -2027,6 +2046,17 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					currency(3402),	-- Merchant's Favor x50
 				},
 			}),
+			q(95819, {	-- Sign Me Up!
+				qs = 270887,	-- Advertising License Application (QS!)
+				-- Turned in to Jornah <Contract Coordinator> (256388).
+				qi = 270896,	-- Massive Pile of Forms (PQI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(2, {	-- 0/1 Massive Pile of Completed Forms
+						provider = { "i", 270897 },	-- Massive Pile of Completed Forms
+					}),
+				},
+			}),
 			q(887, {	-- Southsea Freebooters
 				qg = 3391,	-- Gazlowe
 				coord = { 62.68, 36.24, MAP.THE_BARRENS },
@@ -2685,6 +2715,19 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				classes = { WARRIOR },
 				lvl = 20,
 			}),
+			q(95508, {	-- Unwelcome Guests
+				qg = 261366,	-- Walton <Tanner>
+				coord = { 42.0, 11.4, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 14,
+				-- Objective: help Walton survive the encounter with Terry Longdrink and the Kul Tiras marines.
+				groups = {
+					i(269716),	-- Keen Skinning Knife
+					i(269742),	-- Walton's Second-Favorite Gun
+					i(269717),	-- Wildgore Greatsword
+				},
+			}),
 			q(851, {	-- Verog the Dervish
 				sourceQuest = 850,	-- Kolkar Leaders
 				qg = 3389,	-- Regthar Deathgate
@@ -3155,7 +3198,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				groups = {
-					i(270887, {	-- Advertising License Application
+					i(270887, {	-- Advertising License Application (QS!)
 						minReputation = { 2587, HONORED },	-- Durotar Supply and Logistics, Honored.
 						cost = { { "c", 3402, 1200 } },	-- x1200 Merchant's Favor
 					}),

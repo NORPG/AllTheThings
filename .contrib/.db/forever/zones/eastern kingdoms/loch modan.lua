@@ -390,6 +390,29 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				races = ALLIANCE_ONLY,
 				lvl = 10,
 			}),
+			q(86613, {	-- Excavation Tools
+				provider = { "o", 665282 },	-- Excavation Tools
+				coords = {
+					{ 66.1, 66.6, MAP.LOCH_MODAN },
+					{ 67.7, 58.4, MAP.LOCH_MODAN },
+					{ 68.7, 59.6, MAP.LOCH_MODAN },
+					{ 70.1, 63.0, MAP.LOCH_MODAN },
+					{ 71.1, 68.3, MAP.LOCH_MODAN },
+					{ 72.4, 61.7, MAP.LOCH_MODAN },
+				},
+				-- Turned in to Prospector Ironband (1344).
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 13,
+				groups = {
+					objective(1, {	-- 0/6 Excavation Tools
+						providers = {
+							{ "i", 278398 },	-- Excavation Tools
+							{ "o", 665282 },	-- Excavation Tools
+						},
+					}),
+				},
+			}),
 			q(307, {	-- Filthy Paws
 				qg = 1343,	-- Mountaineer Stormpike
 				coord = { 24.7, 18.3, MAP.LOCH_MODAN },

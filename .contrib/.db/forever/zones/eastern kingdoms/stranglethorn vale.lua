@@ -215,7 +215,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(95786, {	-- An Acquaintance in Southshore
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Loremaster Dibbs in Southshore.
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 				groups = {
@@ -584,7 +584,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(95773, {	-- Enemies in the Water
 				-- TODO: Wowhead doesn't list the quest giver yet.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
 				groups = {
@@ -851,7 +851,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(95770, {	-- Locating the Lost City
 				-- TODO: Wowhead doesn't list the quest giver yet. Explore the Vile Reef and find the cavern entrance; Wowhead has no objective IDs yet.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
 			}),
@@ -1030,11 +1030,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(95384, {	-- Partial Mystical Notes
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Dudd Fizzlescroll in Booty Bay.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 32,
 				groups = {
 					objective(1, {	-- 0/1 Partial Mystical Notes
 						provider = { "i", 213127 },	-- Partial Mystical Notes
+						cr = 780,	-- Skullsplitter Mystic
 					}),
 					i(277256),	-- Dudd's Second-Favorite Wand
 				},
@@ -1095,7 +1096,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(97420, {	-- Reduce, Reuse, Reconcile
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Knaz Blunderflame.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 31,
 				groups = {
@@ -1144,7 +1145,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(97048, {	-- Returning to Port
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Captain Aransas in Booty Bay.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 30,
 				groups = {
 					i(277224),	-- Kurzen Headshrinker's Cinch
@@ -1549,7 +1550,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						},
 					}),
 					objective(2, {	-- 0/1 Kurzen Fighter's Uniform
-						provider = { "i", 216617 },	-- Kurzen Fighter's Uniform
+						providers = {
+							{ "i", 216617 },	-- Kurzen Fighter's Uniform
+							{ "o", 424002 },	-- Kurzen Supply Crate
+						},
+						coord = { 49.6, 7.7, MAP.STRANGLETHORN_VALE },
 					}),
 				},
 			}),
@@ -1652,7 +1657,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 The Third Troll Legend
-						provider = { "i", 2007 },	-- The Third Troll Legend
+						providers = {
+							{ "i", 2007 },	-- The Third Troll Legend
+							{ "o", 52 },	-- Fall of Gurubashi
+						},
+						coord = { 23.0, 12.0, MAP.STRANGLETHORN_VALE },
 					}),
 				},
 			}),
@@ -1952,11 +1961,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(97329, {	-- Where's the Key?
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Zimmix Sputterspark.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Primitive Key
 						provider = { "i", 277957 },	-- Primitive Key
+						crs = {
+							588,	-- Bloodscalp Scout
+							595,	-- Bloodscalp Hunter
+							597,	-- Bloodscalp Berserker
+							660,	-- Bloodscalp Witch Doctor
+							671,	-- Bloodscalp Headhunter
+							699,	-- Bloodscalp Beastmaster
+						},
 					}),
 				},
 			}),
@@ -2007,7 +2024,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(97331, {	-- Zimmix's Great Escape
 				sourceQuest = 97329,	-- Where's the Key?
 				-- TODO: Wowhead doesn't list the quest giver yet. Escort Zimmix Sputterspark, then report to Wharfmaster Lozgil in Booty Bay; Wowhead has no escort IDs yet.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 30,
 			}),
 		}),

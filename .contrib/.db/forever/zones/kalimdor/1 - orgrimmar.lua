@@ -813,6 +813,78 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(277716),	-- Pattern: Light Leather Reagent Bag (RECIPE!)
 				},
 			}),
+			q(97242, {	-- Yelmak's Medley
+				sourceQuest = 97246,	-- Meal Appeal
+				qg = 3348,	-- Kor'geld <Alchemy Supplies>
+				coord = { 56.2, 34.2, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 9,
+				groups = {
+					objective(1, {	-- 0/2 Handful of Cattails
+						providers = {
+							{ "i", 277278 },	-- Handful of Cattails
+							{ "o", 661093 },	-- Cattail
+						},
+					}),
+					objective(2, {	-- 0/4 Speargrass Cuttings
+						providers = {
+							{ "i", 277279 },	-- Speargrass Cuttings
+							{ "o", 661092 },	-- Speargrass
+						},
+					}),
+				},
+			}),
+			q(97246, {	-- Meal Appeal
+				qg = 268701,	-- Thatog
+				coord = { 55.6, 72.0, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 5,
+			}),
+			q(97249, {	-- Favorite Food
+				sourceQuest = 97246,	-- Meal Appeal
+				qg = 3368,	-- Borstan <Meat Vendor>
+				qi = 277284,	-- Migi's Lunch (PQI!)
+				coord = { 57.4, 53.4, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 5,
+			}),
+			q(97275, {	-- Whuut's the Rush
+				qg = 3347,	-- Yelmak <Expert Alchemist>
+				qi = 277566,	-- Yelmak's Potion (PQI!)
+				coord = { 56.4, 33.2, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 9,
+				groups = {
+					i(929),	-- Healing Potion
+					i(3385),	-- Lesser Mana Potion
+				},
+			}),
+			q(97326, {	-- Rocks to Rests
+				qg = 268684,	-- Thra
+				coord = { 36.0, 28.2, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 5,
+				groups = {
+					objective(1, {	-- 0/8 Smooth Boulder
+						providers = {
+							{ "i", 277952 },	-- Smooth Boulder
+							{ "o", 661446 },	-- Smooth Boulder
+							{ "o", 661448 },	-- Smooth Boulder
+							{ "o", 661449 },	-- Smooth Boulder
+						},
+					}),
+					i(281272),	-- Brog's Friendship Bracelet
+					i(281273),	-- Migi's Friendship Bracelet
+					i(281269),	-- Mogra's Friendship Bracelet
+					i(281271),	-- Puk's Friendship Bracelet
+					i(281270),	-- Thra's Friendship Bracelet
+				},
+			}),
 		}),
 		n(RIDING_TRAINER, {
 			n(4752, {	-- Kildar <Wolf Riding Instructor>

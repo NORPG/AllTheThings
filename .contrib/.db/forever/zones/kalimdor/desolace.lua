@@ -66,12 +66,16 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 93041,	-- Facing the Truth
 				-- TODO: Wowhead doesn't list the quest giver yet.
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 35,
 				groups = {
 					objective(2, {	-- 0/3 Tear of Theradras
-						provider = { "i", 255878 },	-- Tear of Theradras
+						providers = {
+							{ "i", 255878 },	-- Tear of Theradras
+							{ "o", 587299 },	-- Tear of Theradras
+						},
+						coord = { 38.7, 95.4, MAP.DESOLACE },
 					}),
 				},
 			}),
@@ -84,7 +88,11 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Conqueror's Helm
-						provider = { "i", 254392 },	-- Conqueror's Helm
+						providers = {
+							{ "i", 254392 },	-- Conqueror's Helm
+							{ "o", 580100 },	-- Conqueror's Helm
+						},
+						coord = { 57.1, 40.1, MAP.BADLANDS },
 						maps = { MAP.BADLANDS },
 					}),
 				},
@@ -92,7 +100,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(92754, {	-- A New Need for Shadow Protection
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Mirda in Magram Village.
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 30,
 				cost = { { "i", 13459, 3 } },	-- Greater Shadow Protection Potion
 				groups = {
@@ -102,7 +110,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(93678, {	-- Abridged Notes on Draenethyst
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Magtoor at the Harborage in Swamp of Sorrows.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Azore's Transcription
@@ -310,7 +318,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(93226, {	-- Buying Friendship: Magram [A]
 				-- TODO: Wowhead doesn't list the quest giver yet.
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, NEUTRAL },	-- Magram Clan Centaur, Neutral.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 				groups = {
@@ -627,7 +635,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(92814, {	-- I Need a Tailor
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Molkar in Gelkis Village.
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 30,
 				cost = { { "i", 10008, 1 } },	-- White Bandit Mask
 				groups = {
@@ -744,7 +752,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 93188,	-- Return to Orgrul
 				-- TODO: Wowhead doesn't list the quest giver yet.
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Khan Jehn resurrected
@@ -791,7 +799,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(92817, {	-- Leather Technique
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Talra in Gelkis Village.
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 30,
 				cost = { { "i", 5739, 1 } },	-- Barbaric Harness
 				groups = {
@@ -808,7 +816,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(92755, {	-- Mysterious Mysticism
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Halea in Gelkis Village.
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 				cost = { { "i", 11135, 3 } },	-- Greater Mystic Essence
@@ -1096,7 +1104,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 93044,	-- A Cleansing Cry
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 35,
 				groups = {

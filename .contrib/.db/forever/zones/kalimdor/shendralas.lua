@@ -21,6 +21,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 		n(QUESTS, {
 			q(93062, {	-- Bone Burying
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
 				races = HORDE_ONLY,
 				lvl = 35,
@@ -34,7 +35,8 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			}),
 			q(92894, {	-- Bone Raising
 				sourceQuest = 92873,	-- Proof of Concept
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Orgrul.
+				qg = 253136,	-- Orgrul
+				coord = { 35.6, 12.0, MAP.SHENDRALAS },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
 				races = ALLIANCE_ONLY,
 				lvl = 35,
@@ -75,7 +77,11 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					93058,	-- Saving Our Own
 					93062,	-- Bone Burying
 				},
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
+				qg = 253177,	-- Nerlokh
+				coords = {
+					{ 58.4, 88.6, MAP.DESOLACE },
+					{ 20.8, 22.6, MAP.SHENDRALAS },
+				},
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
 				races = HORDE_ONLY,
 				lvl = 35,
@@ -93,7 +99,16 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/3 Petrified Bark
-						provider = { "i", 254841 },	-- Petrified Bark
+						providers = {
+							{ "i", 254841 },	-- Petrified Bark
+							{ "o", 582187 },	-- Petrified Tree
+						},
+						coords = {
+							{ 45.2, 37.8, MAP.SHENDRALAS },
+							{ 46.7, 28.1, MAP.SHENDRALAS },
+							{ 48.3, 39.5, MAP.SHENDRALAS },
+							{ 50.5, 27.4, MAP.SHENDRALAS },
+						},
 					}),
 					objective(2, {	-- 0/3 Imbued Tears
 						provider = { "i", 254840 },	-- Imbued Tears
@@ -123,6 +138,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			}),
 			q(93125, {	-- Going Home
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
 				lvl = 35,
 				-- TODO: Escort Rokren out of the Outcast Hideaway; Wowhead has no IDs for the escort yet.
@@ -130,6 +146,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			q(93072, {	-- Long-Term Solutions
 				sourceQuest = 93066,	-- Bristleback Retreat
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Hagiak at the Magram Front.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
 				lvl = 35,
 				groups = {
@@ -210,7 +227,8 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			}),
 			q(92873, {	-- Proof of Concept
 				sourceQuest = 92847,	-- Corrupting Tears
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Orgrul.
+				qg = 253136,	-- Orgrul
+				coord = { 35.6, 12.0, MAP.SHENDRALAS },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
 				races = ALLIANCE_ONLY,
 				lvl = 35,
@@ -220,6 +238,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 							{ "i", 254842 },	-- Well Cursed Bone
 							{ "i", 254870 },	-- Rudimentary Necromancy Staff
 						},
+						cr = 253360,	-- Nascent Undead Ravager
 					}),
 					i(271796),	-- Blade of the Magram Clan
 					i(271797),	-- Staff of Revelations
@@ -248,11 +267,13 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					93129,	-- Threat of Starvation
 				},
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Orgrul.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
 				lvl = 35,
 			}),
 			q(93058, {	-- Saving Our Own
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
 				races = HORDE_ONLY,
 				lvl = 35,
@@ -265,6 +286,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			q(93129, {	-- Threat of Starvation
 				sourceQuest = 93066,	-- Bristleback Retreat
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Hagiak at the Magram Front.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
 				lvl = 35,
 				groups = {

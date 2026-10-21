@@ -252,9 +252,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 								},
 								cr = 1919,	-- Samuel Fipps
 							}),
-							i(247840),	-- Mining for Dummies
-							i(247841),	-- Wild Harvest
-							i(247846),	-- Pelt Collecting for Beginners
+							i(247840, {	-- Mining for Dummies
+								timeline = { TIMELINE.ADDED_1_60_1 },
+							}),
+							i(247841, {	-- Wild Harvest
+								timeline = { TIMELINE.ADDED_1_60_1 },
+							}),
+							i(247846, {	-- Pelt Collecting for Beginners
+								timeline = { TIMELINE.ADDED_1_60_1 },
+							}),
 						},
 					}),
 					q(90902, {	-- Rediscovering the Light

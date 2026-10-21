@@ -738,6 +738,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					i(267369),	-- Wolfsbane
 				},
 			}),
+			q(95883, {	-- The Tortured Soul
+				sourceQuest = 95884,	-- The Offering Stone
+				provider = { "o", 645153 },	-- Offering Stone
+				coord = { 58.1, 69.8, MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/1 Tortured Soul
+						provider = { "i", 271350 },	-- Tortured Soul
+						crs = {
+							1974,	-- Ravenclaw Drudger
+							1973,	-- Ravenclaw Guardian
+						},
+					}),
+				},
+			}),
 			q(95884, {	-- The Offering Stone
 				provider = { "i", 271343 },	-- Note Scrap (QS!)
 				coord = { 57.12, 71.02, MAP.SILVERPINE_FOREST },
@@ -748,6 +765,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					objective(1, {	-- Note Scrap
 						provider = { "i", 271343 },	-- Note Scrap (QS!)
 					}),
+				},
+			}),
+			q(95885, {	-- The Offering of Blood
+				sourceQuest = 95883,	-- The Tortured Soul
+				provider = { "o", 645153 },	-- Offering Stone
+				qi = 210713,	-- Tortured Soul (PQI!)
+				coord = { 58.1, 69.8, MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 20,
+				groups = {
+					i(281673),	-- Loop of Sacrifice
 				},
 			}),
 			q(95981, {	-- Watching the Roads

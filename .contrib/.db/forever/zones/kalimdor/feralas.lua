@@ -606,6 +606,19 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					}),
 				},
 			}),
+			q(98156, {	-- Packaged Pristine Pelts
+				sourceQuest = 98155,	-- Pristine Pesterhide Pelts
+				qg = 11826,	-- Kristy Grant
+				qi = 279481,	-- Package of Pristine Pelts (PQI!)
+				coord = { 89.4, 46.2, MAP.FERALAS },
+				maps = { MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 27,
+				groups = {
+					i(281295),	-- Pelt Pants
+				},
+			}),
 			q(7738, {	-- Perfect Yeti Hide
 				qi = 18972,	-- Perfect Yeti Hide
 				coord = { 55.6, 56.2, MAP.FERALAS },
@@ -617,6 +630,20 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					5296,	-- Rage Scar Yeti
 				},
 				lvl = 40,
+			}),
+			q(98155, {	-- Pristine Pesterhide Pelts
+				qg = 11826,	-- Kristy Grant
+				coord = { 89.4, 46.2, MAP.FERALAS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 24,
+				groups = {
+					objective(1, {	-- 0/5 Pristine Pesterhide Pelt
+						provider = { "i", 279472 },	-- Pristine Pesterhide Pelt
+						cr = 4249,	-- Pesterhide Snarler
+						coord = { 89.2, 45.0, MAP.FERALAS },
+					}),
+				},
 			}),
 			q(7735, {	-- Pristine Yeti Hide
 				qi = 18969,	-- Pristine Yeti Hide

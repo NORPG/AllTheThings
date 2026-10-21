@@ -783,6 +783,18 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 					}),
 				},
 			}),
+			q(96136, {	-- Call of Air
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Prate Cloudseer (5905) in Thousand Needles.
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				races = { SKYBORNE_HORDE },
+				classes = { SHAMAN },
+				lvl = 30,
+				groups = {
+					i(5178, {	-- Air Totem
+						description = "You must keep this in your bags forever.",
+					}),
+				},
+			}),
 			q(98069, {	-- Stolen Freewind Supplies
 				qg = 4877,	-- Jandia
 				coord = { 46.0, 51.4, MAP.THOUSAND_NEEDLES },

@@ -373,6 +373,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					}),
 					i(15401),	-- Welldrip Gloves
 					i(15402),	-- Noosegrip Gauntlets
+					i(270004, {	-- Murloc-hide Gloves
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(2178, {	-- Easy Strider Living

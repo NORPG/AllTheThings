@@ -344,6 +344,20 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					i(6740),	-- Azure Sash
 				},
 			}),
+			q(97485, {	-- Traditions of the Bluff
+				qg = 269068,	-- Eylah Sunhorn <Sun Priest of An'she>
+				coord = { 38.2, 56.2, MAP.THUNDER_BLUFF },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 3,
+				-- Objective: combine the herbs, cedar twigs, sinew thread and flint bought from the Thunder Bluff suppliers, then spread the incense off Hunter's Rise.
+				groups = {
+					objective(1, {	-- 0/1 Prepared Incense
+						provider = { "i", 278078 },	-- Prepared Incense
+					}),
+					i(281040),	-- Prepared Incense (x5)
+				},
+			}),
 			q(3761, {	-- Un'Goro Soil
 				sourceQuests = {
 					936,	-- Assisting Arch Druid Runetotem [Orgrimmar]

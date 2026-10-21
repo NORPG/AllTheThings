@@ -83,16 +83,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 		n(QUESTS, {
 			q(96785, {	-- Ain't No Telling
 				qg = 266847,	-- Anastasia Miller
+				qi = 275706,	-- Syndicate Uniform (PQI!)
 				coord = { 26.8, 64.4, MAP.ARATHI_HIGHLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { ROGUE },
 				lvl = 24,
 				groups = {
 					objective(1, {	-- 0/1 Stolen Funds
-						provider = { "i", 275709 },	-- Stolen Funds
-					}),
-					objective(2, {	-- Syndicate Uniform
-						provider = { "i", 275706 },	-- Syndicate Uniform
+						providers = {
+							{ "i", 275709 },	-- Stolen Funds
+							{ "o", 656405 },	-- Anastasia's Stash
+						},
+						coord = { 29.4, 64.9, MAP.ARATHI_HIGHLANDS },
 					}),
 				},
 			}),
@@ -268,6 +270,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					i(4509),	-- Seawolf Gloves
 				},
 			}),
+			q(92872, {	-- Dutiful Steps
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Caretaker Alaric (2782) in the Stromgarde Keep crypt.
+				qi = 278543,	-- Pouch of Tomb Dust (PQI!)
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 32,
+			}),
 			q(96264, {	-- Elemental Aid
 				sourceQuest = 94789,	-- Call of Air
 				qg = 259023,	-- Veyric Thunderhame
@@ -316,6 +325,31 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					i(4545),	-- Radiant Silver Bracers
 				},
 			}),
+			q(92867, {	-- Ground to Keep
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Groundskeeper Lomar (219) in Stromgarde Keep.
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				lvl = 32,
+				groups = {
+					objective(1, {	-- 0/5 Boulderfist Mauler slain
+						provider = { "n", 2569 },	-- Boulderfist Mauler
+						coord = { 17.8, 68.2, MAP.ARATHI_HIGHLANDS },
+					}),
+					objective(2, {	-- 0/3 Syndicate Conjuror slain
+						provider = { "n", 2590 },	-- Syndicate Conjuror
+						coord = { 25.4, 62.2, MAP.ARATHI_HIGHLANDS },
+					}),
+					objective(3, {	-- 0/6 Syndicate Prowler slain
+						provider = { "n", 2588 },	-- Syndicate Prowler
+						coord = { 25.4, 62.2, MAP.ARATHI_HIGHLANDS },
+					}),
+					objective(4, {	-- 0/3 Witherbark Berserker slain
+						provider = { "n", 2558 },	-- Witherbark Berserker
+						coord = { 23.4, 66.2, MAP.ARATHI_HIGHLANDS },
+					}),
+					i(280505),	-- Old Leather Jacket
+					i(278567),	-- Stromgarde Hood
+				},
+			}),
 			q(701, {	-- Guile of the Raptor (1/3)
 				sourceQuest = 675,	-- Raising Spirits (3/3)
 				qg = 2706,	-- Tor'gan
@@ -355,6 +389,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			}),
 			q(96135, {	-- Heed My Call
 				qg = 259023,	-- Veyric Thunderhame
+				qi = 268582,	-- Corrupted Totems (PQI!)
 				coord = { 59.8, 27.4, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.THOUSAND_NEEDLES },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -367,9 +402,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 						provider = { "i", 212792 },	-- Eye of the Tempest
 						cr = 216474,	-- Ravaging Tempest
 						coord = { 34.6, 42.6, MAP.THOUSAND_NEEDLES },
-					}),
-					objective(2, {	-- Corrupted Totems
-						provider = { "i", 268582 },	-- Corrupted Totems
 					}),
 				},
 			}),
@@ -465,15 +497,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			q(96784, {	-- Master of Disguise
 				sourceQuest = 96783,	-- A Way In
 				provider = { "o", 656157 },	-- Syndicate Footlocker
+				qi = 275706,	-- Syndicate Uniform (PQI!)
 				coord = { 32.2, 26.4, MAP.ARATHI_HIGHLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { ROGUE },
 				lvl = 24,
-				groups = {
-					objective(1, {	-- Syndicate Uniform
-						provider = { "i", 275706 },	-- Syndicate Uniform
-					}),
-				},
 			}),
 			q(653, {	-- Myzrael's Allies [A]
 				sourceQuest = 652,	-- Breaking the Keystone
@@ -583,6 +611,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					objective(1, {	-- 0/1 Sigil of Trollbane
 						provider = { "i", 4466 },	-- Sigil of Trollbane
 						cr = 2607,	-- Prince Galen Trollbane
+					}),
+				},
+			}),
+			q(97539, {	-- Silky Sutures
+				qg = 12920,	-- Doctor Gregory Victor <Trauma Surgeon>
+				coord = { 73.4, 36.4, MAP.ARATHI_HIGHLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/12 Surgical Spidersilk
+						provider = { "i", 278225 },	-- Surgical Spidersilk
+						crs = {
+							2565,	-- Giant Plains Creeper
+							2563,	-- Plains Creeper
+						},
 					}),
 				},
 			}),
@@ -728,6 +772,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					}),
 				},
 			}),
+			q(92707, {	-- The Giant in the Den
+				qs = 253711,	-- Goliath's Wristguards (QS!)
+				-- Turned in to Drum Fel (2771) in Hammerfall.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 30,
+			}),
 			q(676, {	-- The Hammer May Fall
 				altQuests = { 677 },	-- Call to Arms (1/3)
 				qg = 2770,	-- Tallow
@@ -795,6 +846,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			q(96016, {	-- The Tempest's Weapons
 				sourceQuest = 96135,	-- Heed My Call
 				qg = 259023,	-- Veyric Thunderhame
+				qi = 212792,	-- Eye of the Tempest (PQI!)
 				coord = { 59.8, 27.4, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.ALTERAC_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -802,9 +854,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				classes = { SHAMAN },
 				lvl = 30,
 				groups = {
-					objective(1, {	-- Eye of the Tempest
-						provider = { "i", 212792 },	-- Eye of the Tempest
-					}),
 					i(280696),	-- Elementalist's Guard
 					i(280607),	-- Lightning's Grasp
 					i(280604),	-- Rage of the Storm
@@ -954,6 +1003,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					}),
 					i(5247),	-- Rod of Sorrow
 					i(4745),	-- War Rider Bracers
+				},
+			}),
+			q(92519, {	-- Ward Restocking
+				sourceQuest = 97539,	-- Silky Sutures
+				qg = 12920,	-- Doctor Gregory Victor <Trauma Surgeon>
+				coord = { 73.4, 36.4, MAP.ARATHI_HIGHLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/1 Packaged Tonics
+						provider = { "i", 278462 },	-- Packaged Tonics
+						-- TODO: picked up at Jorell's lab in Go'shek Farm; Wowhead doesn't list the object yet.
+					}),
 				},
 			}),
 			q(691, {	-- Worth Its Weight in Gold
@@ -1213,6 +1276,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					{ 27.4, 46.8, MAP.ARATHI_HIGHLANDS },
 					{ 26.2, 46.2, MAP.ARATHI_HIGHLANDS },
 				},
+			}),
+			i(253711, {	-- Goliath's Wristguards (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 218032,	-- Witherbark Goliath
+				coord = { 67.8, 79.4, MAP.ARATHI_HIGHLANDS },
 			}),
 			i(2623, {	-- Holy Diadem
 				crs = {

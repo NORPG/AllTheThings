@@ -379,11 +379,46 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 					i(18402),	-- Glowing Crystal Ring
 				},
 			}),
+			q(94913, {	-- Moonglade
+				sourceQuests = {
+					5926,	-- Heeding the Call [Thunder Bluff]
+					5927,	-- Heeding the Call [Orgrimmar]
+					5928,	-- Heeding the Call [Mulgore]
+				},
+				qg = 3033,	-- Turak Runetotem <Druid Trainer>
+				coord = { 76.4, 27.4, MAP.THUNDER_BLUFF },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				classes = { DRUID },
+				lvl = 10,
+			}),
+			q(94914, {	-- Moonglade
+				sourceQuests = {
+					5923,	-- Heeding the Call [Darnassus]
+					5924,	-- Heeding the Call [Stormwind City]
+					5925,	-- Heeding the Call [Teldrassil]
+				},
+				qg = 5504,	-- Sheldras Moontree <Druid Trainer>
+				coord = { 21.0, 55.4, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { SKYBORNE_ALLIANCE },
+				classes = { DRUID },
+				lvl = 10,
+			}),
 			q(98340, {	-- The Great Cat Spirit
 				qg = 3033,	-- Turak Runetotem <Druid Trainer>
 				coord = { 76.4, 27.6, MAP.THUNDER_BLUFF },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { TAUREN },
+				classes = { DRUID },
+				lvl = 20,
+			}),
+			q(98341, {	-- The Great Windborne Cat Spirit
+				sourceQuest = 98340,	-- The Great Cat Spirit
+				qg = 11802,	-- Dendrite Starblaze
+				coord = { 56.2, 30.4, MAP.MOONGLADE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { SKYBORNE_ALLIANCE },
 				classes = { DRUID },
 				lvl = 20,
 			}),
@@ -491,6 +526,15 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				classes = { DRUID },
 				lvl = 20,
 				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(98738, {	-- Blessings of the Great Windborne Cat Spirit
+				sourceQuest = 98404,	-- The Great Windborne Cat Spirit
+				qg = 272054,	-- Avatar of Saeyleenan <Great Windborne Cat Spirit>
+				coord = { 44.0, 73.4, MAP.MOONGLADE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { SKYBORNE_ALLIANCE },
+				classes = { DRUID },
+				lvl = 20,
 			}),
 			q(98739, {	-- Blessings of the Great Cat Spirit
 				qg = 11957,	-- Great Cat Spirit

@@ -842,6 +842,29 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					i(275682),	-- Excitable Slime
 				},
 			}),
+			q(97891, {	-- Prompt Potion Runner
+				qg = 7683,	-- Alessandro Luca <Blue Moon Odds and Ends>
+				qi = 279020,	-- Unstable Potion (PQI!)
+				coord = { 58.2, 55.2, MAP.UNDERCITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 9,
+			}),
+			q(97985, {	-- Thundering Hearts
+				qg = 270038,	-- Calder Gray <Understudy of the Royal Apothecary Society>
+				coord = { 48.4, 70.8, MAP.UNDERCITY },
+				maps = { MAP.THOUSAND_NEEDLES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 25,
+				groups = {
+					objective(1, {	-- 0/1 Stormheart's Still-beating Heart
+						provider = { "i", 279186 },	-- Stormheart's Still-beating Heart
+						cr = 270094,	-- Stormheart
+						coord = { 51.4, 48.3, MAP.THOUSAND_NEEDLES },
+					}),
+				},
+			}),
 		}),
 		n(TREASURES, {
 			o(180666, {	-- Draconic for Dummies

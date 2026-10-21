@@ -69,6 +69,11 @@ root(ROOTS.Instances, {
 					races = ALLIANCE_ONLY,
 					lvl = 24,
 				}),
+				q(93689, {	-- Friend of the Kirin Tor
+					-- TODO: Wowhead doesn't list the quest giver yet. Speak with Archmage Celindra in the City of Dalaran.
+					timeline = { TIMELINE.CREATED_1_60_1 },
+					lvl = 24,
+				}),
 				q(92458, {	-- Heart of Disruption [Alliance]
 					sourceQuest = 92432,	-- An Alarming Request
 					qg = 269127,	-- Image of Archmage Modera

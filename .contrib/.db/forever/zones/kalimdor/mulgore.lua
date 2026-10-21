@@ -19,9 +19,15 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						coord = { 44.2, 76.0, MAP.MULGORE },
 						races = HORDE_ONLY,
 						groups = {
-							i(247840),	-- Mining for Dummies
-							i(247841),	-- Wild Harvest
-							i(247846),	-- Pelt Collecting for Beginners
+							i(247840, {	-- Mining for Dummies
+								timeline = { TIMELINE.ADDED_1_60_1 },
+							}),
+							i(247841, {	-- Wild Harvest
+								timeline = { TIMELINE.ADDED_1_60_1 },
+							}),
+							i(247846, {	-- Pelt Collecting for Beginners
+								timeline = { TIMELINE.ADDED_1_60_1 },
+							}),
 						},
 					}),
 					q(753, {	-- A Humble Task (2/2)
@@ -332,6 +338,12 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						provider = { "i", 273659 },	-- Bloody Parchment (delivery item)
 					}),
 				},
+			}),
+			q(99197, {	-- A Donation of Silk
+				-- Not yet available in game.
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 26,
 			}),
 			q(99196, {	-- A Donation of Wool
 				qg = 276171,	-- Oura Stormspinner

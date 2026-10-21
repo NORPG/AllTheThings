@@ -248,6 +248,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					}),
 				},
 			}),
+			q(98071, {	-- Brewer's Trade
+				qg = 2705,	-- Brewmeister Bilger
+				qi = 279390,	-- Case of Fallrook Varietal (PQI!)
+				coord = { 52.0, 58.4, MAP.HILLSBRAD_FOOTHILLS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 23,
+				groups = {
+					objective(2, {	-- 0/1 Sack of Homebrew Hops
+						providers = {
+							{ "i", 279389 },	-- Sack of Homebrew Hops
+							{ "o", 670348 },	-- Homebrew Hops
+						},
+						coord = { 72.0, 80.4, MAP.HILLSBRAD_FOOTHILLS },
+					}),
+					i(279388),	-- Brewer's Bracers
+				},
+			}),
 			q(564, {	-- Costly Menace
 				qg = 2382,	-- Darren Malvew
 				coord = { 52.4, 56.0, MAP.HILLSBRAD_FOOTHILLS },
@@ -557,6 +575,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					}),
 				},
 			}),
+			q(98059, {	-- Hillsbrad's Hoard
+				qg = 251493,	-- Captain McManus
+				qi = 279386,	-- Sealed Company Request (PQI!)
+				coord = { 46.4, 50.2, MAP.HILLSBRAD_FOOTHILLS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 23,
+			}),
 			q(2480, {	-- Hinott's Assistance (2/2)
 				sourceQuest = 2479,	-- Hinott's Assistance (1/2)
 				qg = 2391,	-- Serge Hinott
@@ -795,6 +821,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			q(95126, {	-- The Moonsilver Blade
 				sourceQuest = 95125,	-- Ott's Masterwork
 				qg = 3539,	-- Ott <Weaponsmith>
+				qi = 268359,	-- Ott's Masterwork (PQI!)
 				coord = { 60.4, 26.0, MAP.HILLSBRAD_FOOTHILLS },
 				maps = { MAP.SILVERPINE_FOREST },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -802,9 +829,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				classes = { PALADIN },
 				lvl = 20,
 				groups = {
-					objective(1, {	-- Ott's Masterwork
-						provider = { "i", 268359 },	-- Ott's Masterwork
-					}),
 					i(268484),	-- Moonsilver Blade
 				},
 			}),
@@ -850,6 +874,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				coord = { 20.79, 47.41, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				lvl = 19,
+			}),
+			q(98095, {	-- Valuable Vantages
+				-- TODO: Wowhead lists Scout Support (98094) as the previous quest, but it isn't in the Forever DB yet.
+				qg = 270438,	-- Deathstalker Masoj
+				qi = 279395,	-- Apothecary Vials (PQI!)
+				coord = { 64.0, 53.8, MAP.HILLSBRAD_FOOTHILLS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 19,
+				groups = {
+					i(281294),	-- Expended Apothecary Vial
+					i(281293),	-- Weathered Deathstalker's Blade
+				},
 			}),
 			q(549, {	-- WANTED: Syndicate Personnel
 				provider = { "o", 1763 },	-- WANTED

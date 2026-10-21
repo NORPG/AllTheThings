@@ -21,6 +21,12 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 			exploration(16849),	-- Summit of Eternity
 			exploration(16853),	-- Tainted Foothills
 		}),
+		n(QUESTS, {
+			q(92521, {	-- The Demon Tower
+				-- Not yet available in game. Spy on Hnaz's imp at the tower with the captive satyr.
+				timeline = { TIMELINE.CREATED_1_60_1 },
+			}),
+		}),
 		n(VENDORS, {
 			n(264797, {	-- Aisarra Nightmeadow <Keeper of Knowledge>
 				coord = { 71.0, 51.2, MAP.MOUNT_HYJAL },

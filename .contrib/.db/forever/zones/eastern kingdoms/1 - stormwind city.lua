@@ -597,7 +597,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					94779,	-- Divine Grace
 				},
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Laurena in Stormwind.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = { HUMAN },
 				classes = { PRIEST },
 				lvl = 10,
@@ -614,7 +614,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					94779,	-- Divine Grace
 				},
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Laurena in Stormwind.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = { HUMAN },
 				classes = { PRIEST },
 				lvl = 10,
@@ -631,7 +631,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					94779,	-- Divine Grace
 				},
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Laurena in Stormwind.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = { HUMAN },
 				classes = { PRIEST },
 				lvl = 10,
@@ -648,7 +648,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					94779,	-- Divine Grace
 				},
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Laurena in Stormwind.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = { HUMAN },
 				classes = { PRIEST },
 				lvl = 10,
@@ -665,7 +665,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					94778,	-- Divine Grace
 				},
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Laurena in Stormwind.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = { HUMAN },
 				classes = { PRIEST },
 				lvl = 10,

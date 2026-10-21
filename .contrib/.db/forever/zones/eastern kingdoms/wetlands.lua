@@ -120,6 +120,37 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				qi = 281240,	-- Tom's Gift (QI!)
 			}),
+			q(88757, {	-- Accessories of the Lost
+				sourceQuest = 87318,	-- Hearts of the Lost
+				qg = 271322,	-- Essene Villard
+				coord = { 51.4, 9.0, MAP.WETLANDS },
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
+				groups = {
+					objective(1, {	-- 0/1 Essene's Necklace
+						providers = {
+							{ "i", 284705 },	-- Essene's Necklace
+							{ "o", 687845 },	-- Essene's Necklace
+						},
+						coord = { 51.4, 8.2, MAP.WETLANDS },
+					}),
+					objective(2, {	-- 0/1 Essene's Spellbook
+						providers = {
+							{ "i", 284150 },	-- Essene's Spellbook
+							{ "o", 678590 },	-- Essene's Spellbook
+						},
+						coord = { 50.8, 8.1, MAP.WETLANDS },
+					}),
+					objective(3, {	-- 0/1 Essene's Waterskin
+						providers = {
+							{ "i", 284146 },	-- Essene's Waterskin
+							{ "o", 678585 },	-- Essene's Waterskin
+						},
+						coord = { 51.1, 8.1, MAP.WETLANDS },
+					}),
+				},
+			}),
 			q(98282, {	-- Alchemical Hazards
 				qg = 1480,	-- Caitlin Grassman
 				coord = { 11.9, 58.8, MAP.WETLANDS },
@@ -266,6 +297,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				qi = 7810,	-- Vial of Purest Water (QI!)
 				groups = { i(6637) },	-- Water Sapta (QI!)
+			}),
+			q(98283, {	-- Carnage
+				sourceQuest = 275,	-- Blisters on The Land
+				qg = 1244,	-- Rethiel the Greenwarden
+				coord = { 56.2, 40.4, MAP.WETLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 22,
+				groups = {
+					objective(1, {	-- 0/1 Malignant Rotclaw Flesh
+						provider = { "i", 280331 },	-- Malignant Rotclaw Flesh
+						cr = 271334,	-- Maddened Rotclaw
+						coord = { 56.6, 43.8, MAP.WETLANDS },
+					}),
+					objective(2, {	-- 0/1 Carnage's Head
+						provider = { "i", 280330 },	-- Carnage's Head
+						cr = 271336,	-- Carnage
+						coord = { 69.0, 28.8, MAP.WETLANDS },
+					}),
+					i(281310),	-- Carnage Trousers
+					i(281309),	-- Razormaw Shorts
+				},
 			}),
 			q(279, {	-- Claws from the Deep
 				qg = 1242,	-- Karl Boran
@@ -502,6 +555,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					i(281321),	-- Giantstone Medallion
 				},
 			}),
+			q(87318, {	-- Hearts of the Lost
+				qg = 5683,	-- Corma Villard
+				coord = { 49.4, 11.4, MAP.WETLANDS },
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
+			}),
 			q(305, {	-- In Search of The Excavation Team (1/2)
 				qg = 2096,	-- Tarrel Rockweaver
 				coord = { 11.5, 52.2, MAP.WETLANDS },
@@ -691,6 +751,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				coord = { 13.6, 38.2, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+			}),
+			q(88758, {	-- Sentiments of the Lost
+				sourceQuest = 88757,	-- Accessories of the Lost
+				qg = 271322,	-- Essene Villard
+				qi = 284151,	-- Essene's Note (PQI!)
+				coord = { 51.4, 9.0, MAP.WETLANDS },
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
+				groups = {
+					i(281258),	-- Essene's Hope
+				},
 			}),
 			q(87491, {	-- Spark of Freedom
 				qg = 271481,	-- Captive Fire Elemental

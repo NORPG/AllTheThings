@@ -19,15 +19,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				n(QUESTS, {
 					q(92479, {	-- A Scribbled Letter
 						qg = 197,	-- Marshal McBride
+						qi = 251941,	-- Scribbled Letter (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = { NIGHTELF },
 						classes = { WARRIOR },
-						groups = {
-							objective(1, {	-- Scribbled Letter
-								provider = { "i", 251941 },	-- Scribbled Letter
-							}),
-						},
 					}),
 					q(783, {	-- A Threat Within
 						qg = 823,	-- Deputy Willem
@@ -506,6 +502,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						},
 						coord = { 49.9, 66.7, MAP.ELWYNN_FOREST },
 					}),
+				},
+			}),
+			q(95771, {	-- A Taste of Darkness
+				-- Not yet available in game.
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				lvl = 6,
+				groups = {
+					i(270298),	-- Unholy Icon
 				},
 			}),
 			q(91738, {	-- An Apple Treat

@@ -113,6 +113,46 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					}),
 				},
 			}),
+			q(91901, {	-- A Sealed Crate
+				qg = 256390,	-- Marcy Baker <Inventory Intake>
+				coord = { 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Sealed Expert Crate
+						provider = { "i", 248767 },	-- Sealed Expert Crate (QI!)
+					}),
+				},
+			}),
+			q(91904, {	-- A Sealed Crate
+				qg = 256390,	-- Marcy Baker <Inventory Intake>
+				coord = { 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Sealed Apprentice Crate
+						provider = { "i", 248770 },	-- Sealed Apprentice Crate (QI!)
+					}),
+				},
+			}),
+			q(91905, {	-- A Sealed Crate
+				qg = 256390,	-- Marcy Baker <Inventory Intake>
+				coord = { 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Sealed Journeyman Crate
+						provider = { "i", 248771 },	-- Sealed Journeyman Crate (QI!)
+					}),
+				},
+			}),
+			q(91906, {	-- A Sealed Crate
+				qg = 256390,	-- Marcy Baker <Inventory Intake>
+				coord = { 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Sealed Expert Crate
+						provider = { "i", 248772 },	-- Sealed Expert Crate (QI!)
+					}),
+				},
+			}),
 			q(94, {	-- A Watchful Eye
 				qg = 313,	-- Theocritus
 				qi = 1083,	-- Glyph of Azora (PQI!)
@@ -540,6 +580,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				lvl = 10,
 				groups = {
 					currency(3402),	-- Merchant's Favor x50
+				},
+			}),
+			q(95816, {	-- Sign Me Up!
+				qs = 270888,	-- Advertising License Application (QS!)
+				-- Turned in to Elaine Compton <Contract Coordinator> (256391).
+				qi = 270896,	-- Massive Pile of Forms (PQI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(2, {	-- 0/1 Massive Pile of Completed Forms
+						provider = { "i", 270897 },	-- Massive Pile of Completed Forms
+					}),
 				},
 			}),
 			q(91, {	-- Solomon's Law
@@ -1036,7 +1087,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(270888, {	-- Advertising License Application
+					i(270888, {	-- Advertising License Application (QS!)
 						minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
 						cost = { { "c", 3402, 1200 } },	-- x1200 Merchant's Favor
 					}),

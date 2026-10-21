@@ -105,6 +105,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				isBreadcrumb = true,
 				lvl = 50,
 			}),
+			q(93429, {	-- Blood of My Blood
+				qg = 254775,	-- Karana
+				coord = { 25.6, 31.4, MAP.SWAMP_OF_SORROWS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/10 Lost One slain
+						crs = {
+							759,	-- Lost One Hunter
+							760,	-- Lost One Muckdweller
+							761,	-- Lost One Seer
+							762,	-- Lost One Riftseeker
+						},
+					}),
+				},
+			}),
 			q(1428, {	-- Continued Threat
 				sourceQuest = 1427,	-- Threat From the Sea
 				qg = 5593,	-- Katar
@@ -271,6 +288,37 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					}),
 				},
 			}),
+			q(93663, {	-- Lost in Transit
+				qg = 5591,	-- Dar
+				coord = { 44.8, 57.2, MAP.SWAMP_OF_SORROWS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/1 Courier's Shipment
+						provider = { "i", 260452 },	-- Courier's Shipment
+					}),
+				},
+			}),
+			q(93176, {	-- My Little Friends
+				qg = 217412,	-- Amaryllis Webb
+				qi = 213565,	-- Entomology Starter Kit (PQI!)
+				coord = { 25.0, 53.4, MAP.SWAMP_OF_SORROWS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 25,
+				groups = {
+					objective(1, {	-- 0/1 Arbor Tarantula Specimen
+						provider = { "i", 213566 },	-- Arbor Tarantula Specimen
+					}),
+					objective(2, {	-- 0/1 Hay Weevil Specimen
+						provider = { "i", 213568 },	-- Hay Weevil Specimen
+					}),
+					objective(3, {	-- 0/1 Flesh Picker Specimen
+						provider = { "i", 213567 },	-- Flesh Picker Specimen
+					}),
+					i(280456),	-- Weevil K. Neevil
+				},
+			}),
 			q(1418, {	-- Neeka Bloodscar
 				qg = 1442,	-- Helgrum the Swift
 				coord = { 47.7, 55.2, MAP.DUSTWALLOW_MARSH },
@@ -306,6 +354,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				coord = { 33.6, 75.2, MAP.THE_HINTERLANDS },
 				races = HORDE_ONLY,
 				lvl = 38,
+			}),
+			q(93430, {	-- Taking the Bait Back
+				-- TODO: Wowhead doesn't list the quest giver yet. Pelluk is the one whose lure was stolen.
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/1 Lucky Lure
+						provider = { "i", 258530 },	-- Lucky Lure
+						cr = 757,	-- Lost One Fisherman
+						coord = { 43.0, 39.0, MAP.SWAMP_OF_SORROWS },
+					}),
+				},
 			}),
 			q(1429, {	-- The Atal'ai Exile
 				sourceQuest = 1424,	-- Pool of Tears [Horde]
@@ -438,9 +498,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 			q(93464, {	-- The Visiting Mage
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Azore Aldamort in Desolace.
 				maps = { MAP.DESOLACE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
+			}),
+			q(93585, {	-- This Light of Mine
+				qg = 255597,	-- Father Tuttle
+				coord = { 22.0, 50.6, MAP.SWAMP_OF_SORROWS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 30,
+				-- TODO: Escort Father Tuttle to The Harborage (turned in to Magtoor); Wowhead has no IDs for the escort yet.
 			}),
 			q(1422, {	-- Threat From the Sea (1/3)
 				sourceQuest = 699,	-- Lack of Surplus (2/2)

@@ -203,6 +203,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					i(12051),	-- Brazen Gauntlets
 				},
 			}),
+			q(95818, {	-- A Quick Craft
+				sourceQuest = 95817,	-- Rotgath Stonebeard
+				qg = 10276,	-- Rotgath Stonebeard <Expert Blacksmith>
+				coord = { 51.2, 42.4, MAP.IRONFORGE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {
+					{ "i", 3860, 25 },	-- Mithril Bar
+					{ "i", 4234, 15 },	-- Heavy Leather
+					{ "i", 3821, 5 },	-- Goldthorn
+				},
+				groups = {
+					i(270877),	-- Alchemy Sign
+					i(270878),	-- Blacksmithing Sign
+					i(270880),	-- Enchanting Sign
+					i(270881),	-- Engineering Sign
+					i(270882),	-- Leatherworking Sign
+					i(270883),	-- Tailoring Sign
+					i(270868),	-- Dwarven Tradeskill Signpost
+				},
+			}),
 			q(7806, {	-- Additional Runecloth [Ironforge]
 				sourceQuest = 7805,	-- A Donation of Runecloth
 				qg = 14723,	-- Mistina Steelshield
@@ -388,7 +408,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					94826,	-- Confounding Flash
 				},
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Mims in Ironforge.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = { GNOME },
 				classes = { PRIEST },
 				lvl = 10,
@@ -405,7 +425,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					94826,	-- Confounding Flash
 				},
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Mims in Ironforge.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = { GNOME },
 				classes = { PRIEST },
 				lvl = 10,
@@ -422,7 +442,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					94825,	-- Confounding Flash
 				},
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Mims in Ironforge.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = { GNOME },
 				classes = { PRIEST },
 				lvl = 10,
@@ -451,7 +471,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					94819,	-- Contingency Plan
 				},
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Mims in Ironforge.
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = { GNOME },
 				classes = { PRIEST },
 				lvl = 20,
@@ -780,6 +800,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 						rank = 1,
 					}),
 				},
+			}),
+			q(95817, {	-- Rotgath Stonebeard
+				sourceQuest = 95816,	-- Sign Me Up!
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Rotgath Stonebeard (10276) near the Great Forge.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 			}),
 			q(683, {	-- Sara Balloo's Plea
 				sourceQuest = 637,	-- Sully Balloo's Letter

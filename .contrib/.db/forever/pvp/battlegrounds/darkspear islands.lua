@@ -97,6 +97,7 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 			}),
 			q(98912, {	-- Darkspear's Advanced Care Package [Level 50]
 				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = { 50, 60 },
 				groups = {
@@ -105,6 +106,7 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 			}),
 			q(98910, {	-- Darkspear's Basic Care Package [Level 30]
 				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = { 30, 39 },
 				groups = {
@@ -113,6 +115,7 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 			}),
 			q(98911, {	-- Darkspear's Standard Care Package [Level 40]
 				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = { 40, 49 },
 				groups = {
@@ -157,6 +160,7 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 			}),
 			q(98915, {	-- Theramore Advanced Care Package [Level 50]
 				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = { 50, 60 },
 				groups = {
@@ -165,6 +169,7 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 			}),
 			q(98913, {	-- Theramore Basic Care Package [Level 30]
 				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = { 30, 39 },
 				groups = {
@@ -173,6 +178,7 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 			}),
 			q(98914, {	-- Theramore Standard Care Package [Level 40]
 				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = { 40, 49 },
 				groups = {

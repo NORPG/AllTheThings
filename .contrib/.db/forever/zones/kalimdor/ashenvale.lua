@@ -1041,6 +1041,112 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					i(17692),	-- Horn Ring
 				},
 			}),
+			q(86757, {	-- Slowing the Orc Advance
+				qg = 3955,	-- Shandrina <Trade Goods>
+				coord = { 49.4, 67.0, MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 27,
+				groups = {
+					objective(1, {	-- 0/6 Jagged Orcish Sword
+						provider = { "i", 279505 },	-- Jagged Orcish Sword
+						cr = 11682,	-- Horde Grunt
+						coord = { 71.4, 81.2, MAP.ASHENVALE },
+					}),
+					objective(2, {	-- 0/4 Curved Orcish Dagger
+						provider = { "i", 279507 },	-- Curved Orcish Dagger
+						cr = 11680,	-- Horde Scout
+						coord = { 69.4, 82.4, MAP.ASHENVALE },
+					}),
+				},
+			}),
+			q(95737, {	-- Seeking Caitlin
+				qg = 3970,	-- Llana <Reagent Supplies>
+				coord = { 35.0, 48.4, MAP.ASHENVALE },
+				maps = { MAP.WETLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 24,
+			}),
+			q(98027, {	-- Gleaming Crescent Necklace
+				provider = { "o", 669176 },	-- Gleaming Crescent Pendant
+				qi = 279274,	-- Gleaming Crescent Necklace (PQI!)
+				coord = { 63.0, 71.6, MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 22,
+				groups = {
+					i(281290),	-- Replica Crescent Necklace
+				},
+			}),
+			q(98251, {	-- Never Coming Back
+				qg = 267214,	-- Va'xug Firefure
+				coord = { 40.4, 61.4, MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 18,
+				groups = {
+					objective(1, {	-- 0/6 Shadowhorn Stag slain
+						provider = { "n", 3817 },	-- Shadowhorn Stag
+						coord = { 36.2, 61.4, MAP.ASHENVALE },
+					}),
+					objective(2, {	-- 0/6 Ashenvale Bear slain
+						provider = { "n", 3809 },	-- Ashenvale Bear
+						coord = { 32.2, 39.4, MAP.ASHENVALE },
+					}),
+				},
+			}),
+			q(98252, {	-- A Void Path
+				sourceQuest = 98251,	-- Never Coming Back
+				qg = 267214,	-- Va'xug Firefure
+				coord = { 40.4, 61.4, MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 18,
+				-- Objective: guide Va'xug's Eye of Kilrogg (271181) back to the main Ashenvale road; it's tracked by a hidden credit NPC.
+			}),
+			q(98417, {	-- Vengeful Trail
+				qg = 221269,	-- Maseara Autumnmoon
+				coord = { 86.2, 45.8, MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 23,
+				groups = {
+					objective(1, {	-- 0/1 Vine-Wrapped Scroll
+						providers = {
+							{ "i", 281014 },	-- Vine-Wrapped Scroll
+							{ "o", 673431 },	-- Vine-Wrapped Scroll
+						},
+						coord = { 81.1, 50.3, MAP.ASHENVALE },
+					}),
+				},
+			}),
+			q(98418, {	-- Shared Fury
+				sourceQuest = 98417,	-- Vengeful Trail
+				qg = 221269,	-- Maseara Autumnmoon
+				coord = { 86.2, 45.8, MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 23,
+				groups = {
+					objective(1, {	-- 0/5 Xavian Betrayer slain
+						provider = { "n", 3754 },	-- Xavian Betrayer
+						coord = { 78.2, 45.4, MAP.ASHENVALE },
+					}),
+					objective(2, {	-- 0/5 Xavian Felsworn slain
+						provider = { "n", 3755 },	-- Xavian Felsworn
+						coord = { 77.4, 44.8, MAP.ASHENVALE },
+					}),
+					objective(3, {	-- 0/5 Xavian Hellcaller slain
+						provider = { "n", 3757 },	-- Xavian Hellcaller
+						coord = { 77.4, 44.8, MAP.ASHENVALE },
+					}),
+					objective(4, {	-- 0/5 Xavian Rogue slain
+						provider = { "n", 3752 },	-- Xavian Rogue
+						coord = { 77.2, 46.6, MAP.ASHENVALE },
+					}),
+				},
+			}),
 		}),
 		n(RARES, {
 			n(3773, {	-- Akkrilus

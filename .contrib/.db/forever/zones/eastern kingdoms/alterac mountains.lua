@@ -74,6 +74,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 		}),
 		n(QUESTS, {
+			q(99192, {	-- A Donation of Silk
+				-- Not yet available in game.
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 26,
+			}),
 			q(8233, {	-- A Simple Request
 				allianceQuestData = {
 					qgs = {
@@ -137,7 +143,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 			q(96782, {	-- Covert Extraction
 				sourceQuest = 96781,	-- What's the Big Idea?
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Myrokos Silentform.
+				qg = 13085,	-- Myrokos Silentform
+				coord = { 85.0, 80.4, MAP.ALTERAC_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { ROGUE },
 				lvl = 24,
@@ -398,6 +405,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					}),
 				},
 			}),
+			q(96800, {	-- Past Due
+				qg = 264265,	-- Magus Olvek
+				coord = { 9.4, 62.6, MAP.ALTERAC_MOUNTAINS },
+				maps = { MAP.SCARLET_MONASTERY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/1 The Lost Magic of the Runemasters
+						providers = {
+							{ "i", 273169 },	-- The Lost Magic of the Runemasters
+							{ "o", 650929 },	-- The Lost Magic of the Runemasters
+						},
+					}),
+					i(276899),	-- Knucklebound Thimble
+					i(276898),	-- Salve and Salvation
+				},
+			}),
 			q(8234, {	-- Sealed Azure Bag
 				sourceQuest = 8233,	-- A Simple Request
 				qg = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
@@ -448,6 +473,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				coord = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
+			}),
+			q(95534, {	-- Strahnbrad Mystery
+				qs = 213421,	-- Singed Note (QS!)
+				-- Turned in to Kundric Zanden (Alliance) or Shara Blazen (Horde) in Hillsbrad.
+				coord = { 59.4, 46.4, MAP.ALTERAC_MOUNTAINS },	-- Strahnbrad
+				maps = { MAP.HILLSBRAD_FOOTHILLS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 25,
+				groups = {
+					i(277206),	-- Brilliant Cloak
+				},
 			}),
 			q(505, {	-- Syndicate Assassins
 				qg = 2276,	-- Magistrate Henry Maleb
@@ -833,6 +869,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					{ 42.8, 31.0, MAP.ALTERAC_MOUNTAINS },
 					{ 44.2, 33.8, MAP.ALTERAC_MOUNTAINS },
 					{ 44.4, 30.4, MAP.ALTERAC_MOUNTAINS },
+				},
+			}),
+			i(213421, {	-- Singed Note (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				crs = {
+					2318,	-- Argus Shadow Mage
+					2319,	-- Syndicate Wizard
 				},
 			}),
 			i(3703, {	-- Southshore Stout
