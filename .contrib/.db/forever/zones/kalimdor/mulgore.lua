@@ -295,16 +295,10 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			exploration(404),	-- Bael'dun Digsite
 			exploration(222),	-- Bloodhoof Village
 			exploration(221),	-- Camp Narache
-			-- #if AFTER CATA
-			exploration(4835),	-- Camp Sungraze
-			-- #endif
 			exploration(818),	-- Palemane Rock
 			exploration(224),	-- Ravaged Caravan
 			exploration(220),	-- Red Cloud Mesa
 			exploration(225),	-- Red Rocks
-			-- #if AFTER CATA
-			exploration(4836),	-- Stonetalon Pass
-			-- #endif
 			exploration(820),	-- The Golden Plains
 			visit_exploration(821, {coord={61.9, 64.1, MAP.MULGORE}}),	-- The Rolling Plains
 			exploration(360),	-- The Venture Co. Mine

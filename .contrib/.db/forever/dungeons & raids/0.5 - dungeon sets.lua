@@ -39,19 +39,16 @@ root(ROOTS.Instances, {
 						qg = 16013,	-- Deliana
 						coord = { 43.5, 52.6, MAP.IRONFORGE },
 						maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
 								provider = { "i", 21928 },	-- Winterspring Blood Sample
 							}),
 						},
-						-- #endif
 					}),
 					hordeQuestData = q(8913, {	-- An Earnest Proposition [H]
 						qg = 16012,	-- Mokvar
 						coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 						maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								provider = { "i", 22381 },	-- Silithus Venom Sample
@@ -64,7 +61,6 @@ root(ROOTS.Instances, {
 								},
 							}),
 						},
-						-- #endif
 					}),
 					classes = { DRUID },
 					cost = {
@@ -157,19 +153,16 @@ root(ROOTS.Instances, {
 						qg = 16013,	-- Deliana
 						coord = { 43.5, 52.6, MAP.IRONFORGE },
 						maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
 								provider = { "i", 21928 },	-- Winterspring Blood Sample
 							}),
 						},
-						-- #endif
 					}),
 					hordeQuestData = q(8914, {	-- An Earnest Proposition [H]
 						qg = 16012,	-- Mokvar
 						coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 						maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								provider = { "i", 22381 },	-- Silithus Venom Sample
@@ -182,7 +175,6 @@ root(ROOTS.Instances, {
 								},
 							}),
 						},
-						-- #endif
 					}),
 					classes = { HUNTER },
 					cost = {
@@ -273,19 +265,16 @@ root(ROOTS.Instances, {
 						qg = 16013,	-- Deliana
 						coord = { 43.5, 52.6, MAP.IRONFORGE },
 						maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
 								provider = { "i", 21928 },	-- Winterspring Blood Sample
 							}),
 						},
-						-- #endif
 					}),
 					hordeQuestData = q(8915, {	-- An Earnest Proposition [H]
 						qg = 16012,	-- Mokvar
 						coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 						maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								provider = { "i", 22381 },	-- Silithus Venom Sample
@@ -298,7 +287,6 @@ root(ROOTS.Instances, {
 								},
 							}),
 						},
-						-- #endif
 					}),
 					classes = { MAGE },
 					cost = {
@@ -388,19 +376,16 @@ root(ROOTS.Instances, {
 						qg = 16013,	-- Deliana
 						coord = { 43.5, 52.6, MAP.IRONFORGE },
 						maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
 								provider = { "i", 21928 },	-- Winterspring Blood Sample
 							}),
 						},
-						-- #endif
 					}),
 					hordeQuestData = q(10493, {	-- An Earnest Proposition [H]
 						qg = 16012,	-- Mokvar
 						coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 						maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								provider = { "i", 22381 },	-- Silithus Venom Sample
@@ -413,7 +398,6 @@ root(ROOTS.Instances, {
 								},
 							}),
 						},
-						-- #endif
 					}),
 					classes = { PALADIN },
 					cost = {
@@ -502,19 +486,16 @@ root(ROOTS.Instances, {
 						qg = 16013,	-- Deliana
 						coord = { 43.5, 52.6, MAP.IRONFORGE },
 						maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
 								provider = { "i", 21928 },	-- Winterspring Blood Sample
 							}),
 						},
-						-- #endif
 					}),
 					hordeQuestData = q(8916, {	-- An Earnest Proposition [H]
 						qg = 16012,	-- Mokvar
 						coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 						maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								provider = { "i", 22381 },	-- Silithus Venom Sample
@@ -527,7 +508,6 @@ root(ROOTS.Instances, {
 								},
 							}),
 						},
-						-- #endif
 					}),
 					classes = { PRIEST },
 					cost = {
@@ -620,19 +600,16 @@ root(ROOTS.Instances, {
 						qg = 16013,	-- Deliana
 						coord = { 43.5, 52.6, MAP.IRONFORGE },
 						maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
 								provider = { "i", 21928 },	-- Winterspring Blood Sample
 							}),
 						},
-						-- #endif
 					}),
 					hordeQuestData = q(8917, {	-- An Earnest Proposition [H]
 						qg = 16012,	-- Mokvar
 						coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 						maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								provider = { "i", 22381 },	-- Silithus Venom Sample
@@ -645,7 +622,6 @@ root(ROOTS.Instances, {
 								},
 							}),
 						},
-						-- #endif
 					}),
 					classes = { ROGUE },
 					cost = {
@@ -733,19 +709,16 @@ root(ROOTS.Instances, {
 						qg = 16013,	-- Deliana
 						coord = { 43.5, 52.6, MAP.IRONFORGE },
 						maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
 								provider = { "i", 21928 },	-- Winterspring Blood Sample
 							}),
 						},
-						-- #endif
 					}),
 					hordeQuestData = q(8918, {	-- An Earnest Proposition [H]
 						qg = 16012,	-- Mokvar
 						coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 						maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								provider = { "i", 22381 },	-- Silithus Venom Sample
@@ -758,7 +731,6 @@ root(ROOTS.Instances, {
 								},
 							}),
 						},
-						-- #endif
 					}),
 					classes = { SHAMAN },
 					cost = {
@@ -849,19 +821,16 @@ root(ROOTS.Instances, {
 						qg = 16013,	-- Deliana
 						coord = { 43.5, 52.6, MAP.IRONFORGE },
 						maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
 								provider = { "i", 21928 },	-- Winterspring Blood Sample
 							}),
 						},
-						-- #endif
 					}),
 					hordeQuestData = q(8919, {	-- An Earnest Proposition [H]
 						qg = 16012,	-- Mokvar
 						coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 						maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								provider = { "i", 22381 },	-- Silithus Venom Sample
@@ -874,7 +843,6 @@ root(ROOTS.Instances, {
 								},
 							}),
 						},
-						-- #endif
 					}),
 					classes = { WARLOCK },
 					cost = {
@@ -960,19 +928,16 @@ root(ROOTS.Instances, {
 						qg = 16013,	-- Deliana
 						coord = { 43.5, 52.6, MAP.IRONFORGE },
 						maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Winterspring Blood Sample
 								provider = { "i", 21928 },	-- Winterspring Blood Sample
 							}),
 						},
-						-- #endif
 					}),
 					hordeQuestData = q(8920, {	-- An Earnest Proposition [H]
 						qg = 16012,	-- Mokvar
 						coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 						maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-						-- #if BEFORE 4.0.3
 						groups = {
 							objective(1, {	-- 0/15 Silithus Venom Sample
 								provider = { "i", 22381 },	-- Silithus Venom Sample
@@ -985,7 +950,6 @@ root(ROOTS.Instances, {
 								},
 							}),
 						},
-						-- #endif
 					}),
 					classes = { WARRIOR },
 					cost = {
@@ -1552,11 +1516,7 @@ root(ROOTS.Instances, {
 					cost = { { "i", 22056, 1 } },	-- Brazier of Beckoning [Lord Valthalak]
 					lvl = 58,
 					groups = {
-						i(22057, {	-- Brazier of Invocation
-							-- #if AFTER CATA
-							description = "If you did complete the quest before the Cataclysm, you can request a new Brazier from Bodley.\nYou must have the Extra-Dimensional Ghost Revealer In order to see him outside UBRS Entrance in Black Rock Mountain.\nMux Manascrambler in Gadgetzan in Tanaris can assist you in getting the Ghost Revealer.",
-							-- #endif
-						}),
+						i(22057),	-- Brazier of Invocation
 						i(22344),	-- Brazier of Invocation: User's Manual
 					},
 				}),

@@ -122,10 +122,6 @@ root(ROOTS.Instances, {
 						6233,	-- Mechanized Sentry
 						6230,	-- Peacekeeper Security Suit
 					},
-					-- TODO: new itemdb file required to remove this requirement
-					-- #if AFTER 10.1.7
-					_drop = { "requireSkill" },
-					-- #endif
 				}),
 				i(9488, {	-- Oscillating Power Hammer
 					crs = {
@@ -186,11 +182,6 @@ root(ROOTS.Instances, {
 						6230,	-- Peacekeeper Security Suit
 					},
 				}),
-				-- #if AFTER 10.1.7
-				i(9444, {	-- Techbot CPU Shell
-					timeline = { ADDED_10_1_7 },
-				}),
-				-- #endif
 				i(9485, {	-- Vibroblade
 					crs = {
 						6232,	-- Arcane Nullifier X-21
