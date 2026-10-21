@@ -1153,6 +1153,7 @@ i(282047, 5162);	-- Baby Crocolisk
 i(276275, 5094);	-- Bitter Baitling
 i(268502, 1563);	-- Bronze Whelpling
 i(280794, 5154);	-- Brown Ground Squirrel
+i(282637, 5167);	-- Condor Hatchling
 i(280803, 5158);	-- Eagle Owl
 i(275682, 5075);	-- Excitable Slime
 i(280703, 5153);	-- Jungle Boa
@@ -1160,6 +1161,7 @@ i(280697, 5151);	-- Plagued Cockroach
 i(277508, 5121);	-- Prairie Wolf Pup
 i(280795, 5155);	-- Red Ground Squirrel
 i(277714, 5122);	-- Spectral Bear Cub
+i(284176, 5172);	-- Tallstrider Hatchling
 i(280699, 5152);	-- Undercity Cockroach
 i(249897, 0);	-- Flowery Lashling Bud [TODO: Find the speciesID]
 i(249895, 0);	-- Frosty Lashling Bud [TODO: Find the speciesID]

@@ -1163,6 +1163,11 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					{ 38.8, 93.8, MAP.DARKSHORE },
 					{ 37.0, 91.4, MAP.DARKSHORE },
 				},
+				groups = {
+					i(284176, {	-- Tallstrider Hatchling (PET!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 		}),
 		n(TREASURES, {

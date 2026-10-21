@@ -905,6 +905,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					{ 74.8, 67.8, MAP.LOCH_MODAN },
 					{ 78.0, 74.2, MAP.LOCH_MODAN },
 				},
+				groups = {
+					i(282637, {	-- Shaking Egg (PET!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(1399, {	-- Magosh <Stonesplinter Tribal Shaman>
 				coord = { 70.0, 66.2, MAP.LOCH_MODAN },
