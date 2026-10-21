@@ -783,12 +783,24 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 					}),
 				},
 			}),
+			q(98069, {	-- Stolen Freewind Supplies
+				qg = 4877,	-- Jandia
+				coord = { 46.0, 51.4, MAP.THOUSAND_NEEDLES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 25,
+				groups = {
+					objective(1, {	-- 0/8 Stolen Freewind Supplies
+						provider = { "i", 279383 },	-- Stolen Freewind Supplies
+					}),
+				},
+			}),
 			q(98070, {	-- Stop the Screeching
 				qg = 4877,	-- Jandia
 				coord = { 46.0, 51.4, MAP.THOUSAND_NEEDLES },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
-				lvl = 31,
+				lvl = 25,
 				groups = {
 					objective(1, {	-- 0/5 Screeching Harpy slain
 						provider = { "n", 4100 },	-- Screeching Harpy
