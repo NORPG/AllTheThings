@@ -894,6 +894,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					i(15205),	-- Owlsight Rifle
 					i(15206),	-- Jadefinger Baton
 					i(15207),	-- Steelcap Shield
+					i(270014, {	-- Deerhide Pants
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(965, {	-- The Tower of Althalaxx (1/9)

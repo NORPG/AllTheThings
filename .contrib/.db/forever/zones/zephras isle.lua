@@ -222,6 +222,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92483, {	-- At Home in the Shadows
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
+				qi = 282422,	-- Simple Note (PQI!)
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { ROGUE },
 				lvl = 2,
@@ -369,6 +370,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(97257, {	-- Call of Fire
 				sourceQuest = 97245,	-- Call of Fire
 				qg = 268592,	-- Olariaan Swiftburn
+				qi = 277329,	-- Torch of Eternal Flame (PQI!)
 				coord = { 51.2, 86.0, MAP.ZEPHRAS_ISLE },
 				classes = { SHAMAN },
 				races = { SKYBORNE_HORDE },
@@ -765,6 +767,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92484, {	-- Embracing the Elements
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
+				qi = 282418,	-- Humming Recall Crystal (PQI!)
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { SHAMAN },
 				races = HORDE_ONLY,
@@ -1189,6 +1192,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(94013, {	-- Taming the Beast
 				sourceQuest = 94979,	-- Taming the Beast
 				qg = 252389,	-- Quel'ana Quickgale <Hunter Trainer>
+				qi = 264163,	-- Taming Rod (PQI!)
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				classes = { HUNTER },
@@ -1196,6 +1200,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(94978, {	-- Taming the Beast
 				qg = 252389,	-- Quel'ana Quickgale
+				qi = 267272,	-- Taming Rod (PQI!)
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				classes = { HUNTER },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
@@ -1204,6 +1209,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(94979, {	-- Taming the Beast
 				sourceQuest = 94978,	-- Taming the Beast
 				qg = 252389,	-- Quel'ana Quickgale <Hunter Trainer>
+				qi = 267298,	-- Taming Rod (PQI!)
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				classes = { HUNTER },
@@ -1539,6 +1545,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92532, {	-- The Warrior's Path
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
+				qi = 282419,	-- Crumpled Note (PQI!)
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { WARRIOR },
 				lvl = 2,
@@ -1546,6 +1553,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92482, {	-- The Way of the Hunter
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
+				qi = 282421,	-- Scribbled Note (PQI!)
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { HUNTER },
 				lvl = 2,

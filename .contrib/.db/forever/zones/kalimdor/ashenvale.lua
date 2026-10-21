@@ -320,6 +320,12 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 						coord = { 74.8, 74.2, MAP.ASHENVALE },
 					}),
 					i(5813),	-- Emil's Brand
+					i(270048, {	-- Uthil's Cudgel
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270049, {	-- Mavoris's Warstaff
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(1016, {	-- Elemental Bracers [Vanilla] / Retaking Mystral Lake [CATA+]
@@ -639,6 +645,9 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					i(5815),	-- Glacial Stone
 					i(17046),	-- Gutterblade
 					i(1116),	-- Ring of Pure Silver
+					i(276242, {	-- Replica Dartol's Rod of Transformation
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(1054, {	-- Culling the Threat

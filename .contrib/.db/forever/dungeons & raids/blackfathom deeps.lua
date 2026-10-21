@@ -78,6 +78,9 @@ root(ROOTS.Instances, {
 					groups = {
 						i(16886),	-- Outlaw Sabre
 						i(16887),	-- Witch's Finger
+						i(270043, {	-- Dreamer's Chestguard
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(1200, {	-- Blackfathom Villainy (A)
@@ -96,6 +99,9 @@ root(ROOTS.Instances, {
 						i(270031, {	-- Dark Ritual Leggings
 							timeline = { TIMELINE.ADDED_1_60_1 },
 						}),
+						i(270032, {	-- Cultist's Armguards
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(6561, {	-- Blackfathom Villainy (H)
@@ -111,6 +117,9 @@ root(ROOTS.Instances, {
 						i(7002),	-- Arctic Buckler
 						i(7001),	-- Gravestone Scepter
 						i(270031, {	-- Dark Ritual Leggings
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+						i(270032, {	-- Cultist's Armguards
 							timeline = { TIMELINE.ADDED_1_60_1 },
 						}),
 					},

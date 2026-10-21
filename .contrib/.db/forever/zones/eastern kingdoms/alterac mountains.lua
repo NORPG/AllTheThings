@@ -190,6 +190,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					}),
 					i(5249),	-- Burning Sliver
 					i(3763),	-- Lunar Buckler
+					i(270072, {	-- Alterac Assassin's Gloves
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(1712, {	-- Cyclonian

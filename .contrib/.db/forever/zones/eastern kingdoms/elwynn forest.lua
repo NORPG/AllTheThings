@@ -638,6 +638,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						},
 						coord = { 54.4, 66.9, MAP.ELWYNN_FOREST },
 					}),
+					i(286732),	-- Shiny Silver Coin
 				},
 			}),
 			q(46, {	-- Bounty on Murlocs
@@ -1398,6 +1399,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 					i(2249),	-- Militia Buckler
 					i(2238),	-- Urchin's Pants
+					i(287059, {	-- Footman's Pocketknife
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(91751, {	-- Rough Wolf Pelts

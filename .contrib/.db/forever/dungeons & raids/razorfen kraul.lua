@@ -24,6 +24,9 @@ root(ROOTS.Instances, {
 						i(6725),	-- Marbled Buckler
 						i(4197),	-- Berylline Pads
 						i(6742),	-- Stonefist Girdle
+						i(274084, {	-- Quilboar Blaster
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(6522, {	-- An Unholy Alliance (1/2)
@@ -103,6 +106,9 @@ root(ROOTS.Instances, {
 						}),
 						i(6751),	-- Mourning Shawl
 						i(6752),	-- Lancer Boots
+						i(270047, {	-- Sentinel's Boots
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(1101, {	-- The Crone of the Kraul
@@ -119,6 +125,9 @@ root(ROOTS.Instances, {
 						i(4197),	-- Berylline Pads
 						i(6742),	-- Stonefist Girdle
 						i(3041),	-- "Mage-Eye" Blunderbuss
+						i(274084, {	-- Quilboar Blaster
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(1144, {	-- Willix the Importer
@@ -128,6 +137,9 @@ root(ROOTS.Instances, {
 						i(6748),	-- Monkey Ring
 						i(6750),	-- Snake Hoop
 						i(6749),	-- Tiger Band
+						i(274078, {	-- Boar Signet
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 			}),

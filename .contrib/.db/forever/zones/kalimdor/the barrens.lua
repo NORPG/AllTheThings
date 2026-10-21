@@ -1045,6 +1045,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					i(5311),	-- Buckled Boots
 					i(5312),	-- Riveted Gauntlets
+					i(270011, {	-- Embroidered Leggings
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(848, {	-- Fungal Spores
@@ -1240,6 +1243,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 					i(10653),	-- Trailblazer Boots
 					i(10654),	-- Jutebraid Gloves
+					i(270038, {	-- Runed Gauntlets
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(4736, {	-- In Search of Menara Voidrender (Ironforge)

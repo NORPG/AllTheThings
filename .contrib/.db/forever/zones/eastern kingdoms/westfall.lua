@@ -98,6 +98,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				groups = {
+					i(249905),	-- Scribbled I.O.U.
+				},
 			}),
 			q(92110, {	-- My First Real Potion
 				qg = 249713,	-- Odd Child

@@ -713,6 +713,9 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 					i(15464),	-- Brute Hammer
 					i(15465),	-- Stingshot Wand
 					i(15466),	-- Clink Shield
+					i(270037, {	-- Smouldering Leggings
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(5147, {	-- Wanted - Arnak Grimtotem
@@ -742,6 +745,9 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 						cr = 10992,	-- Enraged Panther
 					}),
 					i(15467),	-- Inventor's League Ring
+					i(287066, {	-- Wizlo's Tuning Wrench
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(5361, {	-- Family Tree

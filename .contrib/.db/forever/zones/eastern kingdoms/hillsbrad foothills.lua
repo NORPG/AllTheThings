@@ -399,6 +399,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					}),
 					i(3749),	-- High Apothecary Cloak
 					i(3747),	-- Meditative Sash
+					i(276727, {	-- Glistening Stompers
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(517, {	-- Elixir of Agony (4/5)
@@ -448,6 +451,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					i(3741),	-- Stomping Boots
 					i(6482),	-- Firewalker Boots
 					i(3735),	-- Recipe: Hot Lion Chops (RECIPE!)
+					i(276724, {	-- Trophy Belt
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(502, {	-- Elixir of Pain (2/2)
@@ -613,6 +619,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					}),
 					i(3750),	-- Ribbed Breastplate
 					i(3751),	-- Mercenary Leggings
+					i(270046, {	-- Ethereal Mantle
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(1065, {	-- Journey to Tarren Mill
@@ -899,6 +908,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					}),
 					objective(2, {	-- 0/10 Syndicate Watchman slain
 						provider = { "n", 2261 },	-- Syndicate Watchman
+					}),
+					i(276720, {	-- Criminal's Pauldrons
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 				},
 			}),

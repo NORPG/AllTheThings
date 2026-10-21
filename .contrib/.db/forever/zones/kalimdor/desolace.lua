@@ -563,6 +563,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					i(15691),	-- Sidegunner Shottie
 					i(15692),	-- Kodo Brander
 					i(15695),	-- Studded Ring Shield
+					i(270065, {	-- Farseer's Forgotten Shield
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(1371, {	-- Gizmo for Warug

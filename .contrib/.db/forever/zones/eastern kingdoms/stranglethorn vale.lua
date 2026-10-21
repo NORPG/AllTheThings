@@ -324,6 +324,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 					i(17686),	-- Master Hunter's Bow
 					i(17687),	-- Master Hunter's Rifle
+					i(270084, {	-- Master Hunter's Wand
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270085, {	-- Master Hunter's Spellsword
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(584, {	-- Bloodscalp Clan Heads
@@ -475,6 +481,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						cr = 813,	-- Colonel Kurzen
 					}),
 					i(4127),	-- Shrapnel Blaster
+					i(270070, {	-- Madman's Blade
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270071, {	-- Dark Hearted Hammer
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(624, {	-- Cortello's Riddle (1/3)
@@ -531,6 +543,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						},
 					}),
 					i(4129),	-- Collection Plate
+					i(270090, {	-- Beggar's Leggings
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270091, {	-- Seadog's Battered Cuffs
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(1116, {	-- Dream Dust in the Swamp

@@ -57,6 +57,9 @@ root(ROOTS.Instances, {
 					groups = {
 						i(15452),	-- Featherbead Bracers
 						i(15453),	-- Savannah Bracers
+						i(270003, {	-- Garrison Cuffs
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(5722, {	-- Searching for the Lost Satchel

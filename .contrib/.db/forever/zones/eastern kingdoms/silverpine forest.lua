@@ -253,6 +253,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					}),
 					i(3461),	-- High Robe of the Adjudicator
 					i(3462),	-- Talonstrike
+					i(270020, {	-- Gnollhide Pants
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(276722, {	-- Gnoll Shackles
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(443, {	-- Rot Hide Ichor
@@ -390,6 +396,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					i(3582),	-- Acidproof Cloak
 					i(2458),	-- Elixir of Minor Fortitude
 					i(2459),	-- Swiftness Potion
+					i(276723, {	-- Wise Gauntlets
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(452, {	-- Pyrewood Ambush

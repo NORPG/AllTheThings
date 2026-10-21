@@ -31,6 +31,12 @@ root(ROOTS.Instances, {
 					lvl = 18,
 					groups = {
 						i(3324),	-- Ghostly Mantle
+						i(270023, {	-- Tanned Shoulderpads
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+						i(270024, {	-- Bronzed Shoulderguards
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(1013, {	-- The Book of Ur
@@ -48,6 +54,9 @@ root(ROOTS.Instances, {
 						}),
 						i(4534),	-- Steel-Clasped Bracers
 						i(6335),	-- Grizzled Boots
+						i(270030, {	-- Tattered Mittens
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(1740, {	-- The Orb of Soran'ruk

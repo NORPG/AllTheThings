@@ -1365,6 +1365,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						cr = 268558,	-- Chakuyak
 						coord = { 38.5, 63.1, MAP.MULGORE },
 					}),
+					i(281266),	-- Furred Belt
 				},
 			}),
 			q(99079, {	-- Longwalker Malah

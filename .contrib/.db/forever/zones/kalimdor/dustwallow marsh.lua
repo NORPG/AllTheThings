@@ -324,6 +324,9 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				groups = {
 					i(5016),	-- Artisan's Trousers
 					i(9622),	-- Reedknot Ring
+					i(270052, {	-- Swamp Ring
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(1206, {	-- Jarl Needs Eyes

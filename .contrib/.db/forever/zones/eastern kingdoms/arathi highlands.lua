@@ -196,6 +196,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					}),
 					i(9520),	-- Silent Hunter
 					i(9521),	-- Skullsplitter
+					i(270069, {	-- Mindslicer
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(635, {	-- Crystal in the Mountains
@@ -675,6 +678,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 						},
 					}),
 					i(4741),	-- Stromgarde Cavalry Leggings
+					i(270056, {	-- Stromgarde Librarian Leggings
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270057, {	-- Stromgarde Operative Pants
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(637, {	-- Sully Balloo's Letter
@@ -825,6 +834,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					}),
 					i(4976),	-- Mistspray Kilt
 					i(4977),	-- Sword of Hammerfall
+					i(270079, {	-- Witchdoctor's Dress
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(96786, {	-- The Syndicate Sting
@@ -983,6 +995,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 						cr = 2783,	-- Marez Cowl
 					}),
 					i(4744),	-- Arcane Runed Bracers
+					i(270067, {	-- Wild Headdress
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270068, {	-- Stromgarde Bracers
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(685, {	-- Wanted! Otto and Falconcrest
@@ -1003,6 +1021,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					}),
 					i(5247),	-- Rod of Sorrow
 					i(4745),	-- War Rider Bracers
+					i(270080, {	-- Arathi Armbands
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(92519, {	-- Ward Restocking

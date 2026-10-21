@@ -169,6 +169,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 						description = "Can be found in the outdoor section of Uldaman.",
 					}),
 					i(4980),	-- Prospector Gloves
+					i(270059, {	-- Restorer's Fine Gloves
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270060, {	-- Excavator Gauntlets
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(2500, {	-- Badlands Reagent Run
@@ -492,6 +498,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					}),
 					objective(2, {	-- 0/10 Stonesplinter Scout slain
 						provider = { "n", 1162 },	-- Stonesplinter Scout
+					}),
+					i(287061, {	-- Cheese Knife
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 				},
 			}),

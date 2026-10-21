@@ -43,7 +43,7 @@ root(ROOTS.Instances, {
 				q(98823, {	-- Earthen Echo
 					sourceQuest = 95664,	-- Elder Knowledge
 					qg = 9087,	-- Bashana Runetotem
-					qi = 270866,	-- Titan Relic (H) (QS!)
+					qi = 287958,	-- Titan Relic (PQI!)
 					coord = { 70.8, 33.8, MAP.THUNDER_BLUFF },
 					maps = { MAP.MULGORE },
 					races = HORDE_ONLY,
@@ -152,7 +152,7 @@ root(ROOTS.Instances, {
 				q(98824, {	-- Prehistoric Prism
 					sourceQuest = 95810,	-- Lost Relic Carry
 					qg = 1077,	-- Prospector Whelgar <Explorers' League>
-					qi = 270865,	-- Titan Relic (A) (PQI!)
+					qi = 287959,	-- Titan Relic (PQI!)
 					coord = { 38.8, 52.2, MAP.WETLANDS },
 					maps = { MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,

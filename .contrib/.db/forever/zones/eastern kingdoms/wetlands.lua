@@ -80,7 +80,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98191, {	-- A Friend of the Family (2/2)
 				sourceQuest = 98190,	-- A Friend of the Family (1/2)
 				qg = 1748,	-- Highlord Bolvar Fordragon
-				qi = 269598,	-- Menethil Statuette
+				qi = 279598,	-- Menethil Statuette (PQI!)
 				coord = { 80.0, 38.6, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
@@ -422,6 +422,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 					i(3209),	-- Ancient War Sword
 					i(6194),	-- Barreling Reaper
+					i(287067, {	-- Dragonmaw Skinflayer
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(470, {	-- Digging Through the Ooze
@@ -836,6 +839,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 					i(5627),	-- Relic Blade
 					i(5626),	-- Skullchipper
+					i(270022, {	-- Archaeologist's Gown
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(289, {	-- The Cursed Crew

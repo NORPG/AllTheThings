@@ -436,6 +436,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					i(9522),	-- Energized Stone Circle
 					i(10358),	-- Duracin Bracers
 					i(10359),	-- Everlast Boots
+					i(270055, {	-- Charged Leather Bracers
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(723, {	-- Prospect of Faith (1/2)
@@ -575,6 +578,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 						coord = { 39.3, 18.8, MAP.BADLANDS },
 					}),
 					i(4746),	-- Doomsayer's Robe
+					i(270074, {	-- Doomcaller's Pants
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270075, {	-- Fists of Impending Doom
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(716, {	-- Stone Is Better than Cloth

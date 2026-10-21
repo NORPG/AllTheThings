@@ -44,6 +44,9 @@ root(ROOTS.Instances, {
 						i(17039),	-- Skullbreaker
 						i(17042),	-- Nail Spitter
 						i(17043),	-- Zealot's Robe
+						i(270054, {	-- Cultist's Chestguard
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				q(3341, {	-- Bring the End

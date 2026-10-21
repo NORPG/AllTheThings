@@ -128,6 +128,9 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				groups = {
 					i(6675),	-- Tempered Bracers
 					i(6676),	-- Constable Buckler
+					i(270035, {	-- Reclaimer's Robes
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(1061, {	-- The Spirits of Stonetalon
@@ -541,6 +544,9 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					}),
 					i(16990),	-- Spritekin Cloak
 					i(16987),	-- Screecher Belt
+					i(270028, {	-- Harpy Bangles
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(6284, {	-- Arachnophobia
@@ -660,6 +666,9 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					}),
 					i(16981),	-- Owlbeard Bracers
 					i(1306),	-- Wolfmane Wristguards
+					i(270010, {	-- Raptorcrest Bracers
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(6523, {	-- Protect Kaya
