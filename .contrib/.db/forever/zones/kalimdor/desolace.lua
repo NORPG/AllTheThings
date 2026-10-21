@@ -316,7 +316,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- Deliver the Totem Tote to Gorhak
 						provider = { "i", 257685 },	-- Totem Tote
-						cr = 253139,	-- Gorhak
+						cr = 253139,	-- Gorhak <Magram Clan Quartermaster>
 						coord = { 66.2, 79.4, MAP.DESOLACE },
 					}),
 				},
@@ -331,7 +331,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- Deliver the Totem Tote to Gorhak
 						provider = { "i", 257685 },	-- Totem Tote
-						cr = 253139,	-- Gorhak
+						cr = 253139,	-- Gorhak <Magram Clan Quartermaster>
 						coord = { 66.2, 79.4, MAP.DESOLACE },
 					}),
 				},
@@ -497,7 +497,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				-- TODO: Wowhead doesn't list this quest's objectives yet.
 			}),
 			q(92811, {	-- Economic Warfare (Magram)
-				qg = 253139,	-- Gorhak
+				qg = 253139,	-- Gorhak <Magram Clan Quartermaster>
 				coord = { 66.2, 79.4, MAP.DESOLACE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
@@ -688,7 +688,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				},
 			}),
 			q(96222, {	-- Khan Hratha (Umarak)
-				qg = 253066,	-- Umarak
+				qg = 253066,	-- Umarak <Kolkar Clan>
 				coord = { 43.4, 78.6, MAP.DESOLACE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 35,
@@ -821,7 +821,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(93465, {	-- Notes on Draenethyst
 				sourceQuest = 93464,	-- The Visiting Mage
-				qg = 11863,	-- Azore Aldamort
+				qg = 11863,	-- Azore Aldamort <The Argent Dawn>
 				coord = { 38.8, 27.2, MAP.DESOLACE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
@@ -1366,33 +1366,85 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			n(253139, {	-- Gorhak <Magram Clan Quartermaster>
 				coord = { 66.2, 79.4, MAP.DESOLACE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {	-- Need to add Cost here //Braghe
-					i(250979),	-- Recipe: Greater Spellblasting Potion (RECIPE!)
-					i(250985),	-- Recipe: Greater Frenzy Potion (RECIPE!)
-					i(251458),	-- Plans: Iron Morningstar (RECIPE!)
-					i(251390),	-- Plans: Hard Gold Gauntlet (RECIPE!)
-					i(249486),	-- Formula: Enchant Bracer - Lesser Agility (RECIPE!)
-					i(273615),	-- Enchant Bracer - Lesser Healing Power (RECIPE!)
-					i(269903),	-- Schematic: Hoof-Shaped Foot Pedal (RECIPE!)
-					i(269901),	-- Schematic: Centaur Banner Deployment Device (RECIPE!)
-					i(252833),	-- Pattern: Mystic Thick Armor Kit (RECIPE!)
-					i(253974),	-- Pattern: Silk Reagent Bag (RECIPE!)
+				groups = {
+					i(249486, {	-- Formula: Enchant Bracer - Lesser Agility (RECIPE!)
+						cost = { { "i", 254432, 60 } },	-- 60x Carved Centaur Totem
+					}),
+					i(249489, {	-- Formula: Enchant Bracer - Lesser Healing Power (RECIPE!)
+						cost = { { "i", 254432, 60 } },	-- 60x Carved Centaur Totem
+					}),
+					i(274491, {	-- Pattern: Centaur Hoofwarmers (RECIPE!)
+						cost = { { "i", 254432, 60 } },	-- 60x Carved Centaur Totem
+					}),
+					i(252833, {	-- Pattern: Mystic Thick Armor Kit (RECIPE!)
+						cost = { { "i", 254432, 60 } },	-- 60x Carved Centaur Totem
+					}),
+					i(253974, {	-- Pattern: Silk Reagent Bag (RECIPE!)
+						cost = { { "i", 254432, 60 } },	-- 60x Carved Centaur Totem
+					}),
+					i(254682, {	-- Pattern: Stormcloth Gloves (RECIPE!)
+						cost = { { "i", 254432, 60 } },	-- 60x Carved Centaur Totem
+					}),
+					i(251390, {	-- Plans: Hard Gold Gauntlet (RECIPE!)
+						cost = { { "i", 254432, 15 } },	-- 15x Carved Centaur Totem
+					}),
+					i(251458, {	-- Plans: Iron Morningstar (RECIPE!)
+						cost = { { "i", 254432, 15 } },	-- 15x Carved Centaur Totem
+					}),
+					i(250985, {	-- Recipe: Greater Frenzy Potion (RECIPE!)
+						cost = { { "i", 254432, 15 } },	-- 15x Carved Centaur Totem
+					}),
+					i(250979, {	-- Recipe: Greater Spellblasting Potion (RECIPE!)
+						cost = { { "i", 254432, 15 } },	-- 15x Carved Centaur Totem
+					}),
+					i(269901, {	-- Schematic: Centaur Banner Deployment Device (RECIPE!)
+						cost = { { "i", 254432, 15 } },	-- 15x Carved Centaur Totem
+					}),
+					i(269903, {	-- Schematic: Hoof-Shaped Foot Pedal (RECIPE!)
+						cost = { { "i", 254432, 15 } },	-- 15x Carved Centaur Totem
+					}),
 				},
 			}),
 			n(253140, {	-- Molkar <Gelkis Clan Quartermaster>
 				coord = { 35.6, 92.0, MAP.DESOLACE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {	-- Need to add Cost here //Braghe
-					i(250979),	-- Recipe: Greater Spellblasting Potion (RECIPE!)
-					i(250985),	-- Recipe: Greater Frenzy Potion (RECIPE!)
-					i(251458),	-- Plans: Iron Morningstar (RECIPE!)
-					i(251390),	-- Plans: Hard Gold Gauntlet (RECIPE!)
-					i(249486),	-- Formula: Enchant Bracer - Lesser Agility (RECIPE!)
-					i(273615),	-- Enchant Bracer - Lesser Healing Power (RECIPE!)
-					i(269903),	-- Schematic: Hoof-Shaped Foot Pedal (RECIPE!)
-					i(269901),	-- Schematic: Centaur Banner Deployment Device (RECIPE!)
-					i(252833),	-- Pattern: Mystic Thick Armor Kit (RECIPE!)
-					i(253974),	-- Pattern: Silk Reagent Bag (RECIPE!)
+				groups = {
+					i(249486, {	-- Formula: Enchant Bracer - Lesser Agility (RECIPE!)
+						cost = { { "i", 254432, 15 } },	-- 15x Carved Centaur Totem
+					}),
+					i(249489, {	-- Formula: Enchant Bracer - Lesser Healing Power (RECIPE!)
+						cost = { { "i", 254432, 15 } },	-- 15x Carved Centaur Totem
+					}),
+					i(274491, {	-- Pattern: Centaur Hoofwarmers (RECIPE!)
+						cost = { { "i", 254432, 15 } },	-- 15x Carved Centaur Totem
+					}),
+					i(252833, {	-- Pattern: Mystic Thick Armor Kit (RECIPE!)
+						cost = { { "i", 254432, 15 } },	-- 15x Carved Centaur Totem
+					}),
+					i(253974, {	-- Pattern: Silk Reagent Bag (RECIPE!)
+						cost = { { "i", 254432, 15 } },	-- 15x Carved Centaur Totem
+					}),
+					i(254682, {	-- Pattern: Stormcloth Gloves (RECIPE!)
+						cost = { { "i", 254432, 15 } },	-- 15x Carved Centaur Totem
+					}),
+					i(251390, {	-- Plans: Hard Gold Gauntlet (RECIPE!)
+						cost = { { "i", 254432, 60 } },	-- 60x Carved Centaur Totem
+					}),
+					i(251458, {	-- Plans: Iron Morningstar (RECIPE!)
+						cost = { { "i", 254432, 60 } },	-- 60x Carved Centaur Totem
+					}),
+					i(250985, {	-- Recipe: Greater Frenzy Potion (RECIPE!)
+						cost = { { "i", 254432, 60 } },	-- 60x Carved Centaur Totem
+					}),
+					i(250979, {	-- Recipe: Greater Spellblasting Potion (RECIPE!)
+						cost = { { "i", 254432, 60 } },	-- 60x Carved Centaur Totem
+					}),
+					i(269901, {	-- Schematic: Centaur Banner Deployment Device (RECIPE!)
+						cost = { { "i", 254432, 60 } },	-- 60x Carved Centaur Totem
+					}),
+					i(269903, {	-- Schematic: Hoof-Shaped Foot Pedal (RECIPE!)
+						cost = { { "i", 254432, 60 } },	-- 60x Carved Centaur Totem
+					}),
 				},
 			}),
 			n(12045, {	-- Hae'Wilani <Axecrafter>

@@ -212,6 +212,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 			}),
+			q(95786, {	-- An Acquaintance in Southshore
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Loremaster Dibbs in Southshore.
+				maps = { MAP.HILLSBRAD_FOOTHILLS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/1 Savage Coast Report Bundle
+						provider = { "i", 270340 },	-- Savage Coast Report Bundle
+					}),
+				},
+			}),
 			q(3721, {	-- An OOX of Your Own
 				sourceQuests = {
 					648,	-- Rescue OOX-17/TN! (Tanaris)
@@ -246,6 +258,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				provider = { "i", 18706 },	-- Arena Master (trinket)
 				coord = { 30.5, 47.8, MAP.STRANGLETHORN_VALE },
 			})),
+			q(97328, {	-- Anything of Value
+				provider = { "o", 661516 },	-- Thoroughly Scavenged Supplies
+				coord = { 31.4, 12.8, MAP.STRANGLETHORN_VALE },
+				-- TODO: Wowhead doesn't list the turn-in NPC yet (someone in Booty Bay).
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/8 Stolen Shipment
+						provider = { "i", 277953 },	-- Stolen Shipment
+					}),
+				},
+			}),
 			q(4621, {	-- Avast Ye, Admiral!
 				description = "This quest also requires you to be hated or lower with Booty Bay.",
 				sourceQuest = 1036,	-- Avast Ye, Scallywag
@@ -558,6 +582,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					i(10696),	-- Enchanted Azsharite Felbane Sword
 				},
 			}),
+			q(95773, {	-- Enemies in the Water
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/10 Brinescale Trident
+						provider = { "i", 270305 },	-- Brinescale Trident
+						cr = 262397,	-- Brinescale Skirmisher
+						coord = { 19.8, 26.0, MAP.STRANGLETHORN_VALE },
+					}),
+				},
+			}),
 			q(628, {	-- Excelsior
 				sourceQuest = 577,	-- Some Assembly Required
 				qg = 2495,	-- Drizzlik
@@ -812,6 +849,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 				},
 			}),
+			q(95770, {	-- Locating the Lost City
+				-- TODO: Wowhead doesn't list the quest giver yet. Explore the Vile Reef and find the cavern entrance; Wowhead has no objective IDs yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 30,
+			}),
 			q(602, {	-- Magical Analysis
 				sourceQuest = 601,	-- Water Elementals
 				qg = 2496,	-- Baron Revilgaz
@@ -985,6 +1028,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 				},
 			}),
+			q(95384, {	-- Partial Mystical Notes
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Dudd Fizzlescroll in Booty Bay.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 32,
+				groups = {
+					objective(1, {	-- 0/1 Partial Mystical Notes
+						provider = { "i", 213127 },	-- Partial Mystical Notes
+					}),
+					i(277256),	-- Dudd's Second-Favorite Wand
+				},
+			}),
 			q(330, {	-- Patrol Schedules
 				sourceQuest = 329,	-- The Spy Revealed!
 				qg = 469,	-- Lieutenant Doren
@@ -1039,6 +1093,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 				},
 			}),
+			q(97420, {	-- Reduce, Reuse, Reconcile
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Knaz Blunderflame.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 31,
+				groups = {
+					objective(1, {	-- 0/5 Drum of Crude Oil
+						provider = { "i", 277986 },	-- Drum of Crude Oil
+						cr = 1097,	-- Venture Co. Mechanic
+						coord = { 28.6, 8.2, MAP.STRANGLETHORN_VALE },
+					}),
+				},
+			}),
 			q(331, {	-- Report to Doren
 				sourceQuest = 330,	-- Patrol Schedules
 				qg = 1422,	-- Corporal Sethman
@@ -1074,6 +1141,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				coord = { 50.6, 20.4, MAP.STRANGLETHORN_VALE },
 				maps = { MAP.SWAMP_OF_SORROWS },
 				lvl = 45,
+			}),
+			q(97048, {	-- Returning to Port
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Captain Aransas in Booty Bay.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 30,
+				groups = {
+					i(277224),	-- Kurzen Headshrinker's Cinch
+					i(277232),	-- Jailer's Discarded Chain
+					i(277214),	-- Crusty Cuffs
+				},
 			}),
 			q(592, {	-- Saving Yenniku
 				sourceQuest = 591,	-- The Mind's Eye
@@ -1336,6 +1413,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 				},
 			}),
+			q(98463, {	-- Talk of the Town
+				qg = 2366,	-- Barkeep Kelly <Bartender>
+				coord = { 51.4, 58.4, MAP.HILLSBRAD_FOOTHILLS },
+				maps = { MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
+			}),
 			q(2763, {	-- The Art of the Imbue
 				sourceQuest = 2760,	-- The Mithril Order
 				qg = 7802,	-- Galvan the Ancient
@@ -1448,6 +1533,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				races = ALLIANCE_ONLY,
 				lvl = 25,
 			}),
+			q(97047, {	-- The Cook in the Cage
+				qg = 218230,	-- Wendel Mathers
+				coord = { 44.2, 8.0, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/1 Compound Cage Key
+						provider = { "i", 216616 },	-- Compound Cage Key
+						crs = {
+							813,	-- Colonel Kurzen
+							939,	-- Kurzen Elite
+							978,	-- Kurzen Subchief
+						},
+					}),
+					objective(2, {	-- 0/1 Kurzen Fighter's Uniform
+						provider = { "i", 216617 },	-- Kurzen Fighter's Uniform
+					}),
+				},
+			}),
 			q(611, {	-- The Curse of the Tides
 				sourceQuest = 610,	-- "Pretty Boy" Duncan
 				qg = 2542,	-- Catelyn the Blade
@@ -1537,6 +1642,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					i(17688),	-- Jungle Boots
 					i(3928),	-- Superior Healing Potion
 					i(8173),	-- Thick Armor Kit
+				},
+			}),
+			q(95748, {	-- The Gurubashi Legends of Old
+				qg = 2519,	-- Kin'weelay
+				coord = { 32.2, 27.8, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/1 The Third Troll Legend
+						provider = { "i", 2007 },	-- The Third Troll Legend
+					}),
 				},
 			}),
 			q(616, {	-- The Haunted Isle
@@ -1833,6 +1950,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				coord = { 35.7, 10.5, MAP.STRANGLETHORN_VALE },
 				lvl = 28,
 			}),
+			q(97329, {	-- Where's the Key?
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Zimmix Sputterspark.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/1 Primitive Key
+						provider = { "i", 277957 },	-- Primitive Key
+					}),
+				},
+			}),
 			q(580, {	-- Whiskey Slim's Lost Grog
 				qg = 2491,	-- Whiskey Slim
 				coord = { 27.1, 77.5, MAP.STRANGLETHORN_VALE },
@@ -1876,6 +2003,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 					i(4131),	-- Belt of Corruption
 				},
+			}),
+			q(97331, {	-- Zimmix's Great Escape
+				sourceQuest = 97329,	-- Where's the Key?
+				-- TODO: Wowhead doesn't list the quest giver yet. Escort Zimmix Sputterspark, then report to Wharfmaster Lozgil in Booty Bay; Wowhead has no escort IDs yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 30,
 			}),
 		}),
 		n(RARES, {
