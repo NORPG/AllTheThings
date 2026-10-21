@@ -1,0 +1,44 @@
+ExplorationPositions report  (build 1.60.1.70374)
+
+Overlay areas: 649
+Area/map pairs already harvested (used for validation): 85
+New estimates written: 560 positions for 559 areas
+Skipped areas: 5
+
+Accuracy vs harvested points (distance in map % units, 0-100 scale):
+  median 1.0   75th 1.6   90th 4.8   max 17.3
+  harvested point inside the chosen overlay rect: 85/85
+
+Largest disagreements with harvested points:
+   17.3  [80] Stormwind Mountains on 1429: estimate (24.2, 35.6) vs harvested (20.5, 52.5) [hit]
+   17.3  [1617] Valley of Heroes on 1429: estimate (24.2, 35.6) vs harvested (20.5, 52.5) [hit]
+   17.3  [1519] Stormwind City on 1429: estimate (24.2, 35.6) vs harvested (20.5, 52.5) [hit]
+    6.9  [799] The Darkened Bank on 1431: estimate (54.6, 21.3) vs harvested (61.0, 24.0) [hit]
+    5.7  [16623] Shen'dar Highlands on 2521: estimate (36.8, 50.3) vs harvested (40.0, 55.0) [hit]
+    5.6  [60] Forest's Edge on 1429: estimate (25.0, 81.6) vs harvested (25.0, 76.0) [hit]
+    5.3  [924] Valley of Kings on 1432: estimate (20.5, 73.7) vs harvested (20.0, 79.0) [hit]
+    4.8  [838] North Gate Pass on 1432: estimate (22.5, 15.3) vs harvested (21.5, 20.0) [hit]
+    4.8  [146] Stonewrought Dam on 1432: estimate (47.9, 12.7) vs harvested (48.0, 17.5) [hit]
+    4.0  [77] Anvilmar on 1426: estimate (26.4, 75.2) vs harvested (27.5, 79.0) [hit]
+    4.0  [132] Coldridge Valley on 1426: estimate (26.4, 75.2) vs harvested (27.5, 79.0) [hit]
+    3.7  [17780] Krol'dok Stronghold on 2548: estimate (44.4, 26.5) vs harvested (45.5, 30.0) [hit]
+    2.6  [16635] Thendal Village on 2521: estimate (42.8, 22.0) vs harvested (44.5, 20.0) [hit]
+    2.5  [802] Shimmer Ridge on 1426: estimate (40.9, 40.0) vs harvested (38.5, 39.5) [hit]
+    2.4  [136] The Grizzled Den on 1426: estimate (40.9, 58.0) vs harvested (39.5, 60.0) [hit]
+
+Area/map pairs whose map arts disagree by more than 1 unit (8):
+   11.1  [2739] Twilight Base Camp on 1451: used art 2177 (50.2, 48.5) (newest art); art 1264 (50.6, 37.4)
+    8.8  [809] Gates of Ironforge on 1426: used art 2151 (55.6, 43.6) (best match to harvested points); art 1216 (49.4, 37.4)
+    5.5  [161] Terrace of Repose on 1420: used art 2126 (87.2, 37.9) (newest art); art 1210 (84.8, 32.9)
+    5.5  [160] Whispering Gardens on 1420: used art 2126 (87.2, 37.9) (newest art); art 1210 (84.8, 32.9)
+    5.0  [131] Kharanos on 1426: used art 2151 (51.3, 63.2) (best match to harvested points); art 1216 (48.5, 59.0)
+    3.9  [656] Lake Elune'ara on 1450: used art 2175 (53.1, 51.6) (best match to harvested points); art 1263 (50.6, 54.6)
+    3.9  [2361] Nighthaven on 1450: used art 2175 (53.1, 51.6) (best match to harvested points); art 1263 (50.6, 54.6)
+    1.7  [1037] Grim Batol on 1437: used art 2166 (80.1, 63.2) (newest art); art 1243 (81.8, 63.6)
+
+Skipped areas:
+  [2959] Dun Baldar: no zone UiMap for zone 2597 in UiMapAssignment
+  [2977] Iceblood Garrison: no zone UiMap for zone 2597 in UiMapAssignment
+  [2978] Frostwolf Keep: no zone UiMap for zone 2597 in UiMapAssignment
+  [3299] Dun Baldar Pass: no zone UiMap for zone 2597 in UiMapAssignment
+  [3318] Rock of Durotan: no zone UiMap for zone 2597 in UiMapAssignment
