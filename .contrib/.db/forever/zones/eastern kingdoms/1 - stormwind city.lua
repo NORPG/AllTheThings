@@ -1249,15 +1249,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				isBreadcrumb = true,
 				lvl = 15,
 			}),
-			q(97286, {	-- Research Access
-				qg = 211033,	-- Garion Wendell <Librarian>
-				coord = { 37.6, 80.8, MAP.STORMWIND_CITY },
-				maps = { MAP.UNDERCITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				classes = { MAGE },
-				lvl = 1,
-				-- TODO: Wowhead lists turn-ins with both Garion Wendell and Owen Thadd <Librarian> in the Undercity, but no objectives yet.
-			}),
 			q(6285, {	-- Return to Lewis
 				sourceQuest = 6261,	-- Dungar Longdrink
 				qg = 352,	-- Dungar Longdrink <Gryphon Master>

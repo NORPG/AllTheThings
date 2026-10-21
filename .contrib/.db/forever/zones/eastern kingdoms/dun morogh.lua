@@ -78,7 +78,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_SHAMANS,
 						classes = { SHAMAN },
-						lvl = 1,
 					}),
 					q(1599, {	-- Beginnings
 						altQuests = { 1598 },	-- The Stolen Tome
@@ -257,7 +256,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord = { 29.93, 71.2, MAP.DUN_MOROGH },
 						races = { GNOME },
 						classes = { PRIEST },
-						lvl = 1,
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						qi = 282338,	-- Hallowed Memorandum (QI!)
 					}),

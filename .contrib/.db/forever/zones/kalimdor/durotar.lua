@@ -155,7 +155,6 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.06, 68.33, MAP.DUROTAR },
 						races = { ORC },
 						classes = { MAGE },
-						lvl = 1,
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						qi = 282380,	-- Glyphic Parchment (QI!)
 					}),
@@ -284,7 +283,6 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						coord = { 42.06, 68.33, MAP.DUROTAR },
 						races = { TROLL },
 						classes = { WARLOCK },
-						lvl = 1,
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						qi = 282346,	-- Tainted Tablet (QI!)
 					}),

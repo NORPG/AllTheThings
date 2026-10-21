@@ -323,7 +323,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 						races = HORDE_PALADINS,
 						classes = { PALADIN },
-						lvl = 1,
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						qi = 282423,	-- Consecrated Scroll (QI!)
 						groups = {

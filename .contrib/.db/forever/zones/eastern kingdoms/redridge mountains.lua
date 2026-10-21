@@ -96,7 +96,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					{ 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
 					{ 50.15, 29.35, MAP.THE_BARRENS },
 				},
-				lvl = 1,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Sealed Apprentice Crate
@@ -107,7 +106,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			q(91900, {	-- A Sealed Crate
 				qg = 256390,	-- Marcy Baker <Inventory Intake>
 				coord = { 9.75, 71.02, MAP.REDRIDGE_MOUNTAINS },
-				lvl = 1,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Sealed Journeyman Crate

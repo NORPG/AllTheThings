@@ -146,6 +146,10 @@ root(ROOTS.ExpansionFeatures, {
 					i(211779),	-- Comprehension Charm
 				},
 			}),
+			q(97286, {	-- Research Access
+				classes = { MAGE },
+				-- TODO: Wowhead doesn't list this quest's objectives yet.
+			}),
 			q(79093, {	-- Rumi of Gnomeregan: The Collected Works
 				provider = { "i", 208860 },	-- Rumi of Gnomeregan: The Collected Works
 				maps = { WESTFALL, LOCH_MODAN },

@@ -668,6 +668,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				sourceQuest = 95034,	-- The Debt
 				qg = 259620,	-- Lumina Windsinger
 				coord = { 43.2, 41.0, MAP.SILVERPINE_FOREST },
+				maps = { MAP.ASHENVALE, MAP.BLACKFATHOM_DEEPS, MAP.DEADMINES, MAP.SHADOWFANG_KEEP },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_PALADINS,
 				classes = { PALADIN },
@@ -677,13 +678,36 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 						provider = { "i", 267454 },	-- Trevan's Weapon Notes
 					}),
 					objective(2, {	-- 0/1 Whitestone Oak Lumber
-						provider = { "i", 6994 },	-- Whitestone Oak Lumber
+						provider = { "i", 6994 },	-- Whitestone Oak Lumber (QI!)
+						cr = 641,	-- Goblin Woodcarver
 					}),
 					objective(3, {	-- 0/1 Enchanted Silver Ingot
-						provider = { "i", 267361 },	-- Enchanted Silver Ingot
+						providers = {
+							{ "i", 267361 },	-- Enchanted Silver Ingot
+							{ "o", 629065 },	-- Enchanted Silver Ingot
+						},
+						description = "Found on the table next to Archmage Arugal in Shadowfang Keep.",
 					}),
-					objective(4, {	-- 0/1 Purified Kor Gem
-						provider = { "i", 272448 },	-- Purified Kor Gem
+					q(95042, {	-- Seeking the Kor Gem
+						qg = 259649,	-- Ulric Frostveil
+						coord = { 11.8, 34.4, MAP.ASHENVALE },
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						races = HORDE_PALADINS,
+						classes = { PALADIN },
+						lvl = 20,
+						groups = {
+							objective(1, {	-- 0/1 Corrupted Kor Gem
+								provider = { "i", 6995 },	-- Corrupted Kor Gem
+								crs = {
+									4803,	-- Blackfathom Oracle
+									4802,	-- Blackfathom Tide Priestess
+								},
+							}),
+							objective(4, {	-- 0/1 Purified Kor Gem
+								provider = { "i", 272448 },	-- Purified Kor Gem
+								questID = 95036,	-- A Moon-Kissed Blade
+							}),
+						},
 					}),
 				},
 			}),

@@ -127,7 +127,6 @@ root(ROOTS.WorldEvents, {
 					maps = { MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
 					isYearly = true,
-					lvl = 1,
 					groups = {
 						i(23123),	-- Blessed Wizard Oil
 						i(23122),	-- Consecrated Sharpening Stone
@@ -156,7 +155,6 @@ root(ROOTS.WorldEvents, {
 					maps = { MAP.TIRISFAL_GLADES, MAP.UNDERCITY },
 					races = HORDE_ONLY,
 					isYearly = true,
-					lvl = 1,
 					groups = {
 						i(23123),	-- Blessed Wizard Oil
 						i(23122),	-- Consecrated Sharpening Stone
@@ -168,7 +166,6 @@ root(ROOTS.WorldEvents, {
 					maps = { MAP.TELDRASSIL },
 					races = ALLIANCE_ONLY,
 					isYearly = true,
-					lvl = 1,
 					groups = {
 						objective(1, {	-- 0/3 Dim Necrotic Stone
 							provider = { "i", 22892 },	-- Dim Necrotic Stone
@@ -187,7 +184,6 @@ root(ROOTS.WorldEvents, {
 					maps = { MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,
 					isYearly = true,
-					lvl = 1,
 					groups = {
 						objective(1, {	-- 0/3 Dim Necrotic Stone
 							provider = { "i", 22892 },	-- Dim Necrotic Stone
@@ -206,7 +202,6 @@ root(ROOTS.WorldEvents, {
 					maps = { MAP.DUROTAR },
 					races = HORDE_ONLY,
 					isYearly = true,
-					lvl = 1,
 					groups = {
 						objective(1, {	-- 0/3 Dim Necrotic Stone
 							provider = { "i", 22892 },	-- Dim Necrotic Stone
@@ -225,7 +220,6 @@ root(ROOTS.WorldEvents, {
 					maps = { MAP.ELWYNN_FOREST },
 					races = ALLIANCE_ONLY,
 					isYearly = true,
-					lvl = 1,
 					groups = {
 						objective(1, {	-- 0/3 Dim Necrotic Stone
 							provider = { "i", 22892 },	-- Dim Necrotic Stone
@@ -244,7 +238,6 @@ root(ROOTS.WorldEvents, {
 					maps = { MAP.TIRISFAL_GLADES },
 					races = HORDE_ONLY,
 					isYearly = true,
-					lvl = 1,
 					groups = {
 						objective(1, {	-- 0/3 Dim Necrotic Stone
 							provider = { "i", 22892 },	-- Dim Necrotic Stone
@@ -263,7 +256,6 @@ root(ROOTS.WorldEvents, {
 					maps = { MAP.MULGORE },
 					races = HORDE_ONLY,
 					isYearly = true,
-					lvl = 1,
 					groups = {
 						objective(1, {	-- 0/3 Dim Necrotic Stone
 							provider = { "i", 22892 },	-- Dim Necrotic Stone

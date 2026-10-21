@@ -493,7 +493,6 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 253140,	-- Molkar <Gelkis Clan Quartermaster>
 				coord = { 35.6, 92.0, MAP.DESOLACE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				lvl = 1,
 				-- TODO: Wowhead doesn't list this quest's objectives yet.
 			}),
 			q(92811, {	-- Economic Warfare (Magram)
@@ -501,7 +500,6 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				coord = { 66.2, 79.4, MAP.DESOLACE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				lvl = 1,
 				-- TODO: Wowhead doesn't list this quest's objectives yet.
 			}),
 			q(5421, {	-- Fish in a Bucket

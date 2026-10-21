@@ -23,7 +23,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = { NIGHTELF },
 						classes = { WARRIOR },
-						lvl = 1,
 						groups = {
 							objective(1, {	-- Scribbled Letter
 								provider = { "i", 251941 },	-- Scribbled Letter
