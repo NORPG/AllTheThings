@@ -26,34 +26,34 @@ root(ROOTS.WorldEvents, {
 			cn = "在卡利姆多的不同地区，元素入侵的报告正在增加。每隔几天，一股新的元素浪潮就会强行涌入希利苏斯、安戈洛环形山、艾萨拉和冬泉谷的区域——显然，只是为了看看它们能在这些领土上深入到什么程度，直到被部落或联盟的军队击退。调查这些地区并帮助你的盟友对抗这些神秘的入侵。",
 		},
 	}), {
-		["lvl"] = 60,
-		["groups"] = {
+		lvl = 60,
+		groups = {
 			n(COMMON_BOSS_DROPS, {
-				["crs"] = {
+				crs = {
 					14464,	-- Avalanchion
 					14461,	-- Baron Charr
 					14457,	-- Princess Tempestria
 					14454,	-- The Windreaver
 				},
-				["groups"] = { i(19268) },	-- Ace of Elementals
+				groups = { i(19268) },	-- Ace of Elementals
 			}),
 			n(14464, {	-- Avalanchion
-				["description"] = "This is only available during an Elemental Invasion.",
-				["coords"] = {
+				description = "This is only available during an Elemental Invasion.",
+				coords = {
 					{ 72.6, 20.0, MAP.AZSHARA },
 					{ 77.2, 16.6, MAP.AZSHARA },
 					{ 82.6, 21.0, MAP.AZSHARA },
 					{ 77.0, 24.2, MAP.AZSHARA },
 					{ 80.0, 24.2, MAP.AZSHARA },
 				},
-				["groups"] = {
+				groups = {
 					i(18673),	-- Avalanchion's Stony Hide
 					i(18674),	-- Hardened Stone Band
 				},
 			}),
 			n(14461, {	-- Baron Charr
-				["description"] = "This is only available during an Elemental Invasion.",
-				["coords"] = {
+				description = "This is only available during an Elemental Invasion.",
+				coords = {
 					{ 44.6, 46.0, MAP.UNGORO_CRATER },
 					{ 48.2, 41.2, MAP.UNGORO_CRATER },
 					{ 53.2, 41.8, MAP.UNGORO_CRATER },
@@ -63,15 +63,15 @@ root(ROOTS.WorldEvents, {
 					{ 51.6, 57.6, MAP.UNGORO_CRATER },
 					{ 45.4, 54.8, MAP.UNGORO_CRATER },
 				},
-				["groups"] = {
+				groups = {
 					i(18671),	-- Baron Charr's Sceptre
 					i(18672),	-- Elemental Ember
 				},
 			}),
 			n(14457, {	-- Princess Tempestria
-				["description"] = "This is only available during an Elemental Invasion.",
-				["coord"] = { 54.6, 42.6, MAP.WINTERSPRING },
-				["groups"] = {
+				description = "This is only available during an Elemental Invasion.",
+				coord = { 54.6, 42.6, MAP.WINTERSPRING },
+				groups = {
 					i(21548),	-- Pattern: Stormshroud Gloves (RECIPE!)
 					i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
 					i(18678),	-- Tempestria's Frozen Necklace
@@ -79,14 +79,14 @@ root(ROOTS.WorldEvents, {
 				},
 			}),
 			n(14454, {	-- The Windreaver
-				["description"] = "This is only available during an Elemental Invasion.",
-				["coords"] = {
+				description = "This is only available during an Elemental Invasion.",
+				coords = {
 					{ 17.6, 27.0, MAP.SILITHUS },
 					{ 26.6, 29.6, MAP.SILITHUS },
 					{ 31.0, 23.6, MAP.SILITHUS },
 					{ 32.2, 17.2, MAP.SILITHUS },
 				},
-				["groups"] = {
+				groups = {
 					i(21548),	-- Pattern: Stormshroud Gloves (RECIPE!)
 					i(18676),	-- Sash of the Windreaver
 					i(18677),	-- Zephyr Cloak

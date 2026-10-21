@@ -1843,7 +1843,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 			}),
 			q(332, {	-- Wine Shop Advert
-				--["sourceQuest"] = 61,	-- Shipment to Stormwind
+				--sourceQuest = 61,	-- Shipment to Stormwind
 				qg = 1432,	-- Renato Gallina
 				coord = { 63.8, 73.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,

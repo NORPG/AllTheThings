@@ -5,53 +5,53 @@
 --[=[
 root(ROOTS.Instances, {
 	inst(742, {	-- Blackwing Lair
-		["lore"] = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
+		lore = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
 		zoneTextAreaID = 2677,	-- Blackwing Lair
-		["sourceQuest"] = 7761,	-- Blackhand's Command
-		["provider"] = { "o", 179879 },	-- Orb of Command
-		["mapID"] = MAP.BLACKWING_LAIR,
-		["coord"] = { 64.2, 71.0, MAP.BLACKROCK_MOUNTAIN },
-		["sharedLockout"] = 1,
-		["isRaid"] = true,
-		["lvl"] = 50,
-		["groups"] = {
+		sourceQuest = 7761,	-- Blackhand's Command
+		provider = { "o", 179879 },	-- Orb of Command
+		mapID = MAP.BLACKWING_LAIR,
+		coord = { 64.2, 71.0, MAP.BLACKROCK_MOUNTAIN },
+		sharedLockout = 1,
+		isRaid = true,
+		lvl = 50,
+		groups = {
 			n(QUESTS,
 			{
 				q(7781, {	-- The Lord of Blackrock [A] (1/2)
-					["provider"] = { "i", 19003 },	-- Head of Nefarian
-					["maps"] = { MAP.STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
+					provider = { "i", 19003 },	-- Head of Nefarian
+					maps = { MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
 				}),
 				q(7782, {	-- The Lord of Blackrock [A] (2/2)
-					["sourceQuest"] = 7781,	-- The Lord of Blackrock [A]
-					["qgs"] = {
+					sourceQuest = 7781,	-- The Lord of Blackrock [A]
+					qgs = {
 						1748,	-- Highlord Bolvar Fordragon
 					},
-					["coords"] = {
+					coords = {
 						{ 78.0, 18.0, MAP.STORMWIND_CITY },	-- Highlord Bolvar Fordragon
 					},
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(19366),	-- Master Dragonslayer's Orb
 						i(19383),	-- Master Dragonslayer's Medallion
 						i(19384),	-- Master Dragonslayer's Ring
 					},
 				}),
 				q(7783, {	-- The Lord of Blackrock [H] (1/2)
-					["provider"] = { "i", 19002 },	-- Head of Nefarian
-					["maps"] = { MAP.ORGRIMMAR },
-					["races"] = HORDE_ONLY,
+					provider = { "i", 19002 },	-- Head of Nefarian
+					maps = { MAP.ORGRIMMAR },
+					races = HORDE_ONLY,
 				}),
 				q(7784, {	-- The Lord of Blackrock [H] (2/2)
-					["sourceQuest"] = 7783,	-- The Lord of Blackrock [H]
-					["qgs"] = {
+					sourceQuest = 7783,	-- The Lord of Blackrock [H]
+					qgs = {
 						4949,	-- Thrall <Warchief>
 					},
-					["coords"] = {
+					coords = {
 						{ 32.0, 37.8, MAP.ORGRIMMAR },	-- Thrall <Warchief>
 					},
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						i(19383),	-- Master Dragonslayer's Medallion
 						i(19366),	-- Master Dragonslayer's Orb
 						i(19384),	-- Master Dragonslayer's Ring
@@ -61,29 +61,29 @@ root(ROOTS.Instances, {
 			),
 			n(TREASURES, {
 				o(180667, {	-- Draconic for Dummies
-					["description"] = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
-					["coord"] = { 32.0, 42.9, MAP.BLACKWING_LAIR },
-					["groups"] = {
+					description = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
+					coord = { 32.0, 42.9, MAP.BLACKWING_LAIR },
+					groups = {
 						i(21109),	-- Draconic for Dummies [Chapter VII]
 					},
 				}),
 			}),
 			n(ZONE_DROPS, {
 				i(18562, {	-- Elementium Ingot
-					["crs"] = {
+					crs = {
 						13996,	-- Blackwing Technician
 						14401,	-- Master Elemental Shaper Krixix
 					},
 				}),
 				i(19434, {	-- Band of Dark Dominion
-					["crs"] = {
+					crs = {
 						12457,	-- Blackwing Spellbinder
 						12459,	-- Blackwing Warlock
 						12461,	-- Death Talon Overseer
 					},
 				}),
 				i(19437, {	-- Boots of Pure Thought
-					["crs"] = {
+					crs = {
 						12467,	-- Death Talon Captain
 						12463,	-- Death Talon Flamescale
 						12464,	-- Death Talon Seether
@@ -91,7 +91,7 @@ root(ROOTS.Instances, {
 					},
 				}),
 				i(19436, {	-- Cloak of Draconic Might
-					["crs"] = {
+					crs = {
 						12467,	-- Death Talon Captain
 						12463,	-- Death Talon Flamescale
 						12464,	-- Death Talon Seether
@@ -99,17 +99,17 @@ root(ROOTS.Instances, {
 					},
 				}),
 				i(19362, {	-- Doom's Edge
-					["crs"] = {
+					crs = {
 						12457,	-- Blackwing Spellbinder
 						12459,	-- Blackwing Warlock
 						12461,	-- Death Talon Overseer
 					},
 				}),
 				i(19354, {	-- Draconic Avenger
-					["cr"] = 12460,	-- Death Talon Wyrmguard
+					cr = 12460,	-- Death Talon Wyrmguard
 				}),
 				i(19358, {	-- Draconic Maul
-					["crs"] = {
+					crs = {
 						12467,	-- Death Talon Captain
 						12463,	-- Death Talon Flamescale
 						12464,	-- Death Talon Seether
@@ -117,23 +117,23 @@ root(ROOTS.Instances, {
 					},
 				}),
 				i(19435, {	-- Essence Gatherer
-					["crs"] = {
+					crs = {
 						12457,	-- Blackwing Spellbinder
 						12459,	-- Blackwing Warlock
 						12461,	-- Death Talon Overseer
 					},
 				}),
 				i(19439, {	-- Interlaced Shadow Jerkin
-					["cr"] = 12460,	-- Death Talon Wyrmguard
+					cr = 12460,	-- Death Talon Wyrmguard
 				}),
 				i(19438, {	-- Ringo's Blizzard Boots
-					["cr"] = 12460,	-- Death Talon Wyrmguard
+					cr = 12460,	-- Death Talon Wyrmguard
 				}),
 				i(19183),	-- Hourglass Sand
 			}),
 			e(1529, {	-- Razorgore the Untamed
-				["creatureID"] = 12435,
-				["groups"] = {
+				creatureID = 12435,
+				groups = {
 					i(19334),	-- The Untamed Blade
 					i(19335),	-- Spineshatter
 					i(19370),	-- Mantle of the Blackwing Cabal
@@ -152,8 +152,8 @@ root(ROOTS.Instances, {
 				},
 			}),
 			e(1530, {	-- Vaelastrasz the Corrupt
-				["creatureID"] = 13020,
-				["groups"] = {
+				creatureID = 13020,
+				groups = {
 					i(19346),	-- Dragonfang Blade
 					i(19348),	-- Red Dragonscale Protector
 					i(19372),	-- Helm of Endless Rage
@@ -172,8 +172,8 @@ root(ROOTS.Instances, {
 				},
 			}),
 			e(1531, {	-- Broodlord Lashlayer
-				["creatureID"] = 12017,
-				["groups"] = {
+				creatureID = 12017,
+				groups = {
 					i(19351),	-- Maladath, Runed Blade of the Black Flight
 					i(19350),	-- Heartstriker
 					i(19373),	-- Black Brood Pauldrons
@@ -192,8 +192,8 @@ root(ROOTS.Instances, {
 				},
 			}),
 			e(1532, {	-- Firemaw
-				["creatureID"] = 11983,
-				["groups"] = {
+				creatureID = 11983,
+				groups = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19355),	-- Shadow Wing Focus Staff
 					i(19365),	-- Claw of the Black Drake
@@ -220,12 +220,12 @@ root(ROOTS.Instances, {
 				},
 			}),
 			n(14401, {	-- Master Elemental Shaper Krixix
-				["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
-				["groups"] = { r(22967) },	-- Smelt Elementium
+				description = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
+				groups = { r(22967) },	-- Smelt Elementium
 			}),
 			e(1533, {	-- Ebonroc
-				["creatureID"] = 14601,
-				["groups"] = {
+				creatureID = 14601,
+				groups = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19355),	-- Shadow Wing Focus Staff
 					i(19368),	-- Dragonbreath Hand Cannon
@@ -250,8 +250,8 @@ root(ROOTS.Instances, {
 				},
 			}),
 			e(1534, {	-- Flamegor
-				["creatureID"] = 11981,
-				["groups"] = {
+				creatureID = 11981,
+				groups = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19357),	-- Herald of Woe
 					i(19355),	-- Shadow Wing Focus Staff
@@ -276,8 +276,8 @@ root(ROOTS.Instances, {
 				},
 			}),
 			e(1535, {	-- Chromaggus
-				["creatureID"] = 14020,
-				["groups"] = {
+				creatureID = 14020,
+				groups = {
 					i(19352),	-- Chromatically Tempered Sword
 					i(19347),	-- Claw of Chromaggus
 					i(19361),	-- Ashjre'thul, Crossbow of Smiting
@@ -303,16 +303,16 @@ root(ROOTS.Instances, {
 				},
 			}),
 			e(1536, {	-- Nefarian
-				["crs"] = {
+				crs = {
 					11583,	-- Nefarian
 					10162,	-- Lord Victor Nefarius
 				},
-				["groups"] = {
+				groups = {
 					i(19003, {	-- Head of Nefarian (A)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(19002, {	-- Head of Nefarian (H)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(19364),	-- Ashkandi, Greatsword of the Brotherhood
 					i(19356),	-- Staff of the Shadow Flame

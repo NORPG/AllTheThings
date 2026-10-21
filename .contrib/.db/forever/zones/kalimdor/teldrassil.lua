@@ -126,7 +126,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						},
 					}),
 					q(3522, {	-- Iverron's Antidote (2/2)
-						["sourceQuests"] = { 3521 },	-- Iverron's Antidote (1/2)
+						sourceQuests = { 3521 },	-- Iverron's Antidote (1/2)
 						qg = 8583,	-- Dirania Silvershine
 						qi = 10642,	-- Iverron's Antidote
 						coord = { 60.8, 42.0, MAP.TELDRASSIL },
@@ -1724,7 +1724,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 
 root(ROOTS.HiddenQuestTriggers, {
 	q(934, {	-- Crown of the Earth (5/6)
-		["description"] = "This quest gets marked as completed when you complete the quest ' Crown of the Earth (5/6)' (7383).",
-		["races"] = ALLIANCE_ONLY,
+		description = "This quest gets marked as completed when you complete the quest ' Crown of the Earth (5/6)' (7383).",
+		races = ALLIANCE_ONLY,
 	}),
 });

@@ -50,10 +50,10 @@ battleground(MAP.ALTERAC_VALLEY, {
 		n(ACHIEVEMENTS, {
 			-- CRIEVE NOTE: Not sure which one is which.
 			ach(62046, {	-- Master of Alterac Valley
-				--["races"] = HORDE_ONLY,
+				--races = HORDE_ONLY,
 			}),
 			ach(64026, {	-- Master of Alterac Valley
-				--["races"] = ALLIANCE_ONLY,
+				--races = ALLIANCE_ONLY,
 			}),
 		}),
 		explorationHeader({

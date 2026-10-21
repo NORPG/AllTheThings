@@ -20,7 +20,7 @@ root(ROOTS.Craftables, {
 	prof(ENCHANTING, {
 		header(HEADERS.Spell, 13262, {	-- Disenchant
 			i(20725, {	-- Nexus Crystal
-				["description"] = "Obtained from disenchanting all epic (purple) quality gear within the ilvl bracket 60-83.",
+				description = "Obtained from disenchanting all epic (purple) quality gear within the ilvl bracket 60-83.",
 			}),
 		}),
 		--[[

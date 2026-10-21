@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 battleground(MAP.DARKSPEAR_ISLANDS, {
-	--["lore"] = "",
+	--lore = "",
 	timeline = { TIMELINE.ADDED_1_60_1 },
 	icon = 441150,
 	groups = {

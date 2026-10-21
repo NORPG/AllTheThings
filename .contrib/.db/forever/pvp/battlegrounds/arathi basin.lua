@@ -21,10 +21,10 @@ battleground(MAP.ARATHI_BASIN, {
 		n(ACHIEVEMENTS, {
 			-- CRIEVE NOTE: Not sure which one is which.
 			ach(62047, {	-- Master of Arathi Basin
-				--["races"] = HORDE_ONLY,
+				--races = HORDE_ONLY,
 			}),
 			ach(64027, {	-- Master of Arathi Basin
-				--["races"] = ALLIANCE_ONLY,
+				--races = ALLIANCE_ONLY,
 			}),
 		}),
 		n(FACTIONS, {

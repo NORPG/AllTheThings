@@ -54,10 +54,10 @@ battleground(MAP.WARSONG_GULCH, {
 		n(ACHIEVEMENTS, {
 			-- CRIEVE NOTE: Not sure which one is which.
 			ach(62048, {	-- Master of Warsong Gulch
-				--["races"] = HORDE_ONLY,
+				--races = HORDE_ONLY,
 			}),
 			ach(64028, {	-- Master of Warsong Gulch
-				--["races"] = ALLIANCE_ONLY,
+				--races = ALLIANCE_ONLY,
 			}),
 		}),
 		n(FACTIONS, {

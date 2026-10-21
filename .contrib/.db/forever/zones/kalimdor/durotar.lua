@@ -1201,7 +1201,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 834,	-- Winds in the Desert
 				qg = 3293,	-- Rezlak
 				coord = { 46.4, 23.0, MAP.DUROTAR },
-				--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
+				--races = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/12 Dustwind Savage
@@ -1510,7 +1510,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(786, {	-- Thwarting Kolkar Aggression
-				["sourceQuests"] = { 785 },	-- A Strategic Alliance
+				sourceQuests = { 785 },	-- A Strategic Alliance
 				qg = 3140,	-- Lar Prowltusk
 				coord = { 54.52, 75.20, MAP.DUROTAR },
 				races = HORDE_ONLY,
@@ -1594,7 +1594,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(834, {	-- Winds in the Desert
 				qg = 3293,	-- Rezlak
 				coord = { 46.4, 23.0, MAP.DUROTAR },
-				--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
+				--races = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/5 Sack of Supplies

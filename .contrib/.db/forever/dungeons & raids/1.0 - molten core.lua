@@ -5,85 +5,85 @@
 --[[
 root(ROOTS.Instances, {
 	inst(741, {	-- Molten Core
-		["lore"] = "The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",
+		lore = "The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",
 		zoneTextAreaID = 2717,	-- Molten Core
-		["sourceQuest"] = 7848,	-- Attunement to the Core
-		["mapID"] = MAP.MOLTEN_CORE,
-		["coord"] = { 54.18, 83.25, MAP.BLACKROCK_MOUNTAIN },
-		["sharedLockout"] = 1,
-		["isRaid"] = true,
-		["cr"] = 14387,	-- Lothos Riftwalker
-		["lvl"] = 50,
-		["groups"] = {
+		sourceQuest = 7848,	-- Attunement to the Core
+		mapID = MAP.MOLTEN_CORE,
+		coord = { 54.18, 83.25, MAP.BLACKROCK_MOUNTAIN },
+		sharedLockout = 1,
+		isRaid = true,
+		cr = 14387,	-- Lothos Riftwalker
+		lvl = 50,
+		groups = {
 			header(HEADERS.Item, 17182, {	-- Sulfuras, Hand of Ragnaros
-				["isRaid"] = true,
-				["groups"] = {
+				isRaid = true,
+				groups = {
 					i(17182, {	-- Sulfuras, Hand of Ragnaros
-						["cost"] = {
+						cost = {
 							{ "i", 17204, 1 },	-- Eye of Sulfuras
 							{ "i", 17193, 1 },	-- Sulfuron Hammer
 						},
-						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
+						classes = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
 					}),
 				},
 			}),
 			header(HEADERS.Item, 19019, {	-- Thunderfury, Blessed Blade of the Windseeker
-				["isRaid"] = true,
-				["groups"] = {
+				isRaid = true,
+				groups = {
 					q(7785, {	-- Examine the Vessel
-						["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
-						["qg"] = 14347,	-- Highlord Demitrian
-						["provider"] = { "i", 19016 },	-- Vessel of Rebirth
-						["coord"] = { 21.7, 8.6, MAP.SILITHUS },
-						["cost"] = {
+						description = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
+						qg = 14347,	-- Highlord Demitrian
+						provider = { "i", 19016 },	-- Vessel of Rebirth
+						coord = { 21.7, 8.6, MAP.SILITHUS },
+						cost = {
 							{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 							{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 						},
-						["classes"] = SWORD_CLASSES,
-						["lvl"] = 60,
+						classes = SWORD_CLASSES,
+						lvl = 60,
 					}),
 					q(7786, {	-- Thunderaan the Windseeker
-						["sourceQuest"] = 7785,	-- Examine the Vessel
-						["altQuests"] = { 7521 },	-- Thunderaan the Windseeker [Original?]
-						["qg"] = 14347,	-- Highlord Demitrian
-						["coords"] = { 21.7, 8.6, MAP.SILITHUS },
+						sourceQuest = 7785,	-- Examine the Vessel
+						altQuests = { 7521 },	-- Thunderaan the Windseeker [Original?]
+						qg = 14347,	-- Highlord Demitrian
+						coords = { 21.7, 8.6, MAP.SILITHUS },
 						-- #if NOT OBJECTIVES
-						["cost"] = {
+						cost = {
 							{ "i", 17771, 10 },	-- Elementium Bar x10
 							{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 							{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 						},
 						-- #endif
-						["classes"] = SWORD_CLASSES,
-						["lvl"] = 60,
-						["groups"] = {
+						classes = SWORD_CLASSES,
+						lvl = 60,
+						groups = {
 							objective(1, {	-- 0/10 Elementium Bar
-								["provider"] = { "i", 17771 },	-- Elementium Bar
+								provider = { "i", 17771 },	-- Elementium Bar
 							}),
 							objective(2, {	-- 0/1 Essence of the Firelord
-								["provider"] = { "i", 19017 },	-- Essence of the Firelord
+								provider = { "i", 19017 },	-- Essence of the Firelord
 							}),
 							objective(3, {	-- 0/1 Bindings of the Windseeker [Left]
-								["provider"] = { "i", 18563 },	-- Bindings of the Windseeker [Left]
+								provider = { "i", 18563 },	-- Bindings of the Windseeker [Left]
 							}),
 							objective(4, {	-- 0/1 Bindings of the Windseeker [Right]
-								["provider"] = { "i", 18564 },	-- Bindings of the Windseeker [Right]
+								provider = { "i", 18564 },	-- Bindings of the Windseeker [Right]
 							}),
 							n(14435, {	-- Prince Thunderaan <The Wind Seeker>
-								["description"] = "This is a 40-man raid boss.",
-								["modelScale"] = 20,
-								["groups"] = { i(19018) },	-- Dormant Wind Kissed Blade
+								description = "This is a 40-man raid boss.",
+								modelScale = 20,
+								groups = { i(19018) },	-- Dormant Wind Kissed Blade
 							}),
 						},
 					}),
 					q(7787, {	-- Rise, Thunderfury!
-						["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
-						["qg"] = 14347,	-- Highlord Demitrian
-						["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
-						["coord"] = { 21.7, 8.6, MAP.SILITHUS },
-						["classes"] = SWORD_CLASSES,
-						["lvl"] = 60,
-						["groups"] = {
+						sourceQuest = 7786,	-- Thunderaan the Windseeker
+						qg = 14347,	-- Highlord Demitrian
+						provider = { "i", 19018 },	-- Dormant Wind Kissed Blade
+						coord = { 21.7, 8.6, MAP.SILITHUS },
+						classes = SWORD_CLASSES,
+						lvl = 60,
+						groups = {
 							i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 						},
 					}),
@@ -91,48 +91,48 @@ root(ROOTS.Instances, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_HYDRAXIAN_WATERLORDS, {	-- Hydraxian Waterlords
-					["icon"] = 135861,
-					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
+					icon = 135861,
+					qg = 13278,	-- Duke Hydraxis
+					coord = { 79.2, 73.6, MAP.AZSHARA },
 				}),
 			}),
 			n(QUESTS, {
 				q(7486, {	-- A Hero's Reward
-					["providers"] = {
+					providers = {
 						{ "n",  13278 },	-- Duke Hydraxis
 						{ "o", 179551 },	-- Hydraxis' Coffer
 					},
-					["sourceQuest"] = 6824,	-- Hands of the Enemy
-					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
-					["lvl"] = 55,
-					["groups"] = {
+					sourceQuest = 6824,	-- Hands of the Enemy
+					coord = { 79.2, 73.6, MAP.AZSHARA },
+					lvl = 55,
+					groups = {
 						i(18399),	-- Ocean's Breeze
 						i(18398),	-- Tidal Loop
 					},
 				}),
 				q(6823, {	-- Agent of Hydraxis
-					["sourceQuest"] = 6822,	-- The Molten Core
-					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
-					["minReputation"] = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
-					["lvl"] = 55,
+					sourceQuest = 6822,	-- The Molten Core
+					qg = 13278,	-- Duke Hydraxis
+					coord = { 79.2, 73.6, MAP.AZSHARA },
+					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
+					lvl = 55,
 				}),
 				q(7633, {	-- An Introduction
-					["sourceQuest"] = 7632,	-- The Ancient Leaf
-					["qg"] = 14524,	-- Vartrus the Ancient
-					["coord"] = { 47.0, 24.48, MAP.FELWOOD },
-					["classes"] = { HUNTER },
-					["lvl"] = 60,
+					sourceQuest = 7632,	-- The Ancient Leaf
+					qg = 14524,	-- Vartrus the Ancient
+					coord = { 47.0, 24.48, MAP.FELWOOD },
+					classes = { HUNTER },
+					lvl = 60,
 				}),
 				q(7848, {	-- Attunement to the Core
-					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
-					["qg"] = 14387,	-- Lothos Riftwaker
-					["coord"] = { 54.2, 83.3, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
-					["maps"] = { MAP.BLACKROCK_DEPTHS },
-					["lvl"] = 55,
-					["groups"] = {
+					description = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
+					qg = 14387,	-- Lothos Riftwaker
+					coord = { 54.2, 83.3, MAP.BLACKROCK_MOUNTAIN_LEVEL3 },
+					maps = { MAP.BLACKROCK_DEPTHS },
+					lvl = 55,
+					groups = {
 						objective(1, {	-- 0/1 Core Fragment
-							["providers"] = {
+							providers = {
 								{ "o", 179553 },	-- Core Fragment
 								{ "i",  18412 },	-- Core Fragment
 							},
@@ -140,50 +140,50 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(6821, {	-- Eye of the Emberseer
-					["sourceQuests"] = {
+					sourceQuests = {
 						6804,	-- Poisoned Water
 						6805,	-- Stormers and Rumblers
 					},
-					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
-					["maps"] = { MAP.BLACKROCK_SPIRE },
-					["lvl"] = 55,
-					["groups"] = {
+					qg = 13278,	-- Duke Hydraxis
+					coord = { 79.2, 73.6, MAP.AZSHARA },
+					maps = { MAP.BLACKROCK_SPIRE },
+					lvl = 55,
+					groups = {
 						objective(1, {	-- 0/1 Eye of the Emberseer
-							["provider"] = { "i", 17322 },	-- Eye of the Emberseer
+							provider = { "i", 17322 },	-- Eye of the Emberseer
 						}),
 					},
 				}),
 				q(6824, {	-- Hands of the Enemy
-					["sourceQuest"] = 6823,	-- Agent of Hydraxis
-					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
-					["lvl"] = 55,
-					["groups"] = {
+					sourceQuest = 6823,	-- Agent of Hydraxis
+					qg = 13278,	-- Duke Hydraxis
+					coord = { 79.2, 73.6, MAP.AZSHARA },
+					lvl = 55,
+					groups = {
 						objective(1, {	-- 0/1 Hand of Shazzrah
-							["provider"] = { "i", 17332 },	-- Hand of Shazzrah
+							provider = { "i", 17332 },	-- Hand of Shazzrah
 						}),
 						objective(2, {	-- 0/1 Hand of Lucifron
-							["provider"] = { "i", 17329 },	-- Hand of Lucifron
+							provider = { "i", 17329 },	-- Hand of Lucifron
 						}),
 						objective(3, {	-- 0/1 Hand of Gehennas
-							["provider"] = { "i", 17331 },	-- Hand of Gehennas
+							provider = { "i", 17331 },	-- Hand of Gehennas
 						}),
 						objective(4, {	-- 0/1 Hand of Sulfuron
-							["provider"] = { "i", 17330 },	-- Hand of Sulfuron
+							provider = { "i", 17330 },	-- Hand of Sulfuron
 						}),
 					},
 				}),
 				q(6804, {	-- Poisoned Water
-					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
-					["maps"] = { MAP.EASTERN_PLAGUELANDS },
-					["lvl"] = 55,
-					["groups"] = {
+					qg = 13278,	-- Duke Hydraxis
+					coord = { 79.2, 73.6, MAP.AZSHARA },
+					maps = { MAP.EASTERN_PLAGUELANDS },
+					lvl = 55,
+					groups = {
 						objective(1, {	-- 0/12 Discordant Bracers
-							["provider"] = { "i", 17309 },	-- Discordant Bracers
-							["cost"] = { { "i", 17310, 1 } },	-- Aspect of Neptulon
-							["crs"] = {
+							provider = { "i", 17309 },	-- Discordant Bracers
+							cost = { { "i", 17310, 1 } },	-- Aspect of Neptulon
+							crs = {
 								8521,	-- Blighted Horror
 								8519,	-- Blighted Surge
 								8522,	-- Plague Monstrosity
@@ -193,69 +193,69 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(6805, {	-- Stormers and Rumblers
-					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
-					["maps"] = { MAP.SILITHUS },
-					["lvl"] = 55,
-					["groups"] = {
+					qg = 13278,	-- Duke Hydraxis
+					coord = { 79.2, 73.6, MAP.AZSHARA },
+					maps = { MAP.SILITHUS },
+					lvl = 55,
+					groups = {
 						objective(1, {	-- 0/15 Dust Stormer slain
-							["provider"] = { "n", 11744 },	-- Dust Stormer
+							provider = { "n", 11744 },	-- Dust Stormer
 						}),
 						objective(2, {	-- 0/15 Desert Rumbler slain
-							["provider"] = { "n", 11746 },	-- Desert Rumbler
+							provider = { "n", 11746 },	-- Desert Rumbler
 						}),
 					},
 				}),
 				q(7632, {	-- The Ancient Leaf
-					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
-					["qg"] = 14524,	-- Vartrus the Ancient
-					["coord"] = { 47.0, 24.48, MAP.FELWOOD },
-					["cost"] = { { "i", 18703, 1 } },	-- Ancient Petrified Leaf
-					["classes"] = { HUNTER },
-					["lvl"] = 60,
+					description = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
+					qg = 14524,	-- Vartrus the Ancient
+					coord = { 47.0, 24.48, MAP.FELWOOD },
+					cost = { { "i", 18703, 1 } },	-- Ancient Petrified Leaf
+					classes = { HUNTER },
+					lvl = 60,
 				}),
 				q(6822, {	-- The Molten Core
-					["sourceQuest"] = 6821,	-- Eye of the Emberseer
-					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, MAP.AZSHARA },
-					["lvl"] = 55,
-					["groups"] = {
+					sourceQuest = 6821,	-- Eye of the Emberseer
+					qg = 13278,	-- Duke Hydraxis
+					coord = { 79.2, 73.6, MAP.AZSHARA },
+					lvl = 55,
+					groups = {
 						objective(1, {	-- 0/1 Molten Giant slain
-							["provider"] = { "n", 11658 },	-- Molten Giant
+							provider = { "n", 11658 },	-- Molten Giant
 						}),
 						objective(2, {	-- 0/1 Firelord slain
-							["provider"] = { "n", 11668 },	-- Firelord
+							provider = { "n", 11668 },	-- Firelord
 						}),
 						objective(3, {	-- 0/1 Ancient Core Hound slain
-							["provider"] = { "n", 11673 },	-- Ancient Core Hound
+							provider = { "n", 11673 },	-- Ancient Core Hound
 						}),
 						objective(4, {	-- 0/1 Lava Surger slain
-							["provider"] = { "n", 12101 },	-- Lava Surger
+							provider = { "n", 12101 },	-- Lava Surger
 						}),
 					},
 				}),
 			}),
 			n(REWARDS, {
 				i(17333, {	-- Aqual Quintessence
-					["description"] = "Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",
-					["sourceQuest"] = 6824,	-- Hands of the Enemy
-					["minReputation"] = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
+					description = "Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",
+					sourceQuest = 6824,	-- Hands of the Enemy
+					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
 				}),
 				i(22754, {	-- Eternal Quintessence
-					["description"] = "Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",
-					["sourceQuest"] = 6824,	-- Hands of the Enemy
-					["minReputation"] = { FACTION_HYDRAXIAN_WATERLORDS, REVERED },	-- Hydraxian Waterlords, Revered.
+					description = "Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",
+					sourceQuest = 6824,	-- Hands of the Enemy
+					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, REVERED },	-- Hydraxian Waterlords, Revered.
 				}),
 			}),
 			n(ZONE_DROPS, {
 				i(20951, {	-- Narain's Scrying Goggles
-					["description"] = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
+					description = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
 				}),
 				i(17010),	-- Fiery Core
 				i(17011),	-- Lava Core
 			}),
 			n(COMMON_BOSS_DROPS, {
-				["crs"] = {
+				crs = {
 					12118,	-- Lucifron
 					11982,	-- Magmadar
 					12259,	-- Gehennas
@@ -264,7 +264,7 @@ root(ROOTS.Instances, {
 					12056,	-- Baron Geddon
 					11988,	-- Golemagg the Incinerator
 				},
-				["groups"] = {
+				groups = {
 					i(18260),	-- Formula: Enchant Weapon - Healing Power (RECIPE!)
 					i(18259),	-- Formula: Enchant Weapon - Spellpower (RECIPE!)
 					i(18252),	-- Pattern: Core Armor Kit (RECIPE!)
@@ -301,8 +301,8 @@ root(ROOTS.Instances, {
 				i(16819),	-- Vambraces of Prophecy (Priest)
 			}),
 			e(1519, {	-- Lucifron
-				["creatureID"] = 12118,
-				["groups"] = {
+				creatureID = 12118,
+				groups = {
 					i(17329),	-- Hand of Lucifron
 					i(18878),	-- Sorcerous Dagger
 					i(17077),	-- Crimson Shocker
@@ -322,14 +322,14 @@ root(ROOTS.Instances, {
 					i(18879),	-- Heavy Dark Iron Ring
 					i(19147),	-- Ring of Spell Power
 					i(16665, {	-- Tome of Tranquilizing Shot
-						["recipeID"] = 19801,	-- Tranquilizing Shot
-						["classes"] = { HUNTER },
+						recipeID = 19801,	-- Tranquilizing Shot
+						classes = { HUNTER },
 					}),
 				},
 			}),
 			e(1520, {	-- Magmadar
-				["creatureID"] = 11982,
-				["groups"] = {
+				creatureID = 11982,
+				groups = {
 					i(17073),	-- Earthshaker
 					i(18822),	-- Obsidian Edged Blade
 					i(18203),	-- Eskhandar's Right Claw
@@ -357,8 +357,8 @@ root(ROOTS.Instances, {
 				},
 			}),
 			e(1521, {	-- Gehennas
-				["creatureID"] = 12259,
-				["groups"] = {
+				creatureID = 12259,
+				groups = {
 					i(17331),	-- Hand of Gehennas
 					i(18878),	-- Sorcerous Dagger
 					i(17077),	-- Crimson Shocker
@@ -379,10 +379,10 @@ root(ROOTS.Instances, {
 				},
 			}),
 			e(1522, {	-- Garr
-				["creatureID"] = 12057,
-				["groups"] = {
+				creatureID = 12057,
+				groups = {
 					i(18564, {	-- Bindings of the Windseeker (Right)
-						["classes"] = ALL_CLASSES,
+						classes = ALL_CLASSES,
 					}),
 					i(18822),	-- Obsidian Edged Blade
 					i(17105),	-- Aurastone Hammer
@@ -411,10 +411,10 @@ root(ROOTS.Instances, {
 				},
 			}),
 			e(1524, {	-- Baron Geddon
-				["creatureID"] = 12056,
-				["groups"] = {
+				creatureID = 12056,
+				groups = {
 					i(18563, {	-- Bindings of the Windseeker (Left)
-						["classes"] = ALL_CLASSES,
+						classes = ALL_CLASSES,
 					}),
 					i(18822),	-- Obsidian Edged Blade
 					i(19142),	-- Fire Runed Grimoire
@@ -436,8 +436,8 @@ root(ROOTS.Instances, {
 				},
 			}),
 			e(1523, {	-- Shazzrah
-				["creatureID"] = 12264,
-				["groups"] = {
+				creatureID = 12264,
+				groups = {
 					i(17332),	-- Hand of Shazzrah
 					i(18878),	-- Sorcerous Dagger
 					i(17077),	-- Crimson Shocker
@@ -458,13 +458,13 @@ root(ROOTS.Instances, {
 				},
 			}),
 			e(1525, {	-- Sulfuron Harbinger
-				["creatureID"] = 12098,
-				["groups"] = {
+				creatureID = 12098,
+				groups = {
 					i(17330),	-- Hand of Sulfuron
 					i(17074),	-- Shadowstrike
 					i(17223, {	-- Thunderstrike
-						["description"] = "Use Shadowstrike to create this item.",
-						["provider"] = { "i", 17074 },	-- Shadowstrike
+						description = "Use Shadowstrike to create this item.",
+						provider = { "i", 17074 },	-- Shadowstrike
 					}),
 					i(18878),	-- Sorcerous Dagger
 					i(17077),	-- Crimson Shocker
@@ -483,8 +483,8 @@ root(ROOTS.Instances, {
 				},
 			}),
 			e(1526, {	-- Golemagg the Incinerator
-				["creatureID"] = 11988,
-				["groups"] = {
+				creatureID = 11988,
+				groups = {
 					i(17203),	-- Sulfuron Ingot
 					i(18822),	-- Obsidian Edged Blade
 					i(18842),	-- Staff of Dominance
@@ -512,16 +512,16 @@ root(ROOTS.Instances, {
 				},
 			}),
 			e(1527, {	-- Majordomo Executus
-				["creatureID"] = 12018,
-				["provider"] = { "o", 179703 },	-- Cache of the Firelord
-				["groups"] = {
+				creatureID = 12018,
+				provider = { "o", 179703 },	-- Cache of the Firelord
+				groups = {
 					i(18703, {	-- Ancient Petrified Leaf
-						["classes"] = { HUNTER },
-						["lvl"] = 60,
+						classes = { HUNTER },
+						lvl = 60,
 					}),
 					i(18646, {	-- The Eye of Divinity
-						["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
-						["classes"] = { PRIEST },
+						description = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
+						classes = { PRIEST },
 					}),
 					i(18803),	-- Hyperthermically Insulated Lava Dredger / Finkle's Lava Dredger
 					i(18805),	-- Core Hound Tooth
@@ -536,13 +536,13 @@ root(ROOTS.Instances, {
 				},
 			}),
 			e(1528, {	-- Ragnaros
-				["creatureID"] = 11502,
-				["groups"] = {
+				creatureID = 11502,
+				groups = {
 					i(17204),	-- Eye of Sulfuras
 					i(19017, {	-- Essence of the Firelord
-						["description"] = "For this to drop, you must be on the 'Thunderaan the Windseeker' quest.",
-						["classes"] = SWORD_CLASSES,
-						["b"] = 1,
+						description = "For this to drop, you must be on the 'Thunderaan the Windseeker' quest.",
+						classes = SWORD_CLASSES,
+						b = 1,
 					}),
 					i(17076),	-- Bonereaver's Edge
 					i(17104),	-- Spinal Reaper

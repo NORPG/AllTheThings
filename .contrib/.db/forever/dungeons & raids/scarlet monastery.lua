@@ -73,44 +73,44 @@ local SCARLET_MONASTERY_CATHEDRAL_HEADER = createHeader({
 
 root(ROOTS.Instances, {
 	inst(316, {	-- Scarlet Monastery
-		["lore"] = "The Monastery was once a proud bastion of Lordaeron's priesthood - a center for learning and enlightenment. With the rise of the undead Scourge during the Third War, the peaceful Monastery was converted into a stronghold of the fanatical Scarlet Crusade. The Crusaders are intolerant of all non-human races, regardless of alliance or affiliation. They believe that any and all outsiders are potential carriers of the undead plague - and must be destroyed. Reports indicate that adventurers who enter the monastery are forced to contend with Scarlet Commander Mograine - who commands a large garrison of fanatically devoted warriors. However, the monastery's true master is High Inquisitor Whitemane - a fearsome priestess who possesses the ability to resurrect fallen warriors to do battle in her name.",
-		["icon"] = 	136354,
+		lore = "The Monastery was once a proud bastion of Lordaeron's priesthood - a center for learning and enlightenment. With the rise of the undead Scourge during the Third War, the peaceful Monastery was converted into a stronghold of the fanatical Scarlet Crusade. The Crusaders are intolerant of all non-human races, regardless of alliance or affiliation. They believe that any and all outsiders are potential carriers of the undead plague - and must be destroyed. Reports indicate that adventurers who enter the monastery are forced to contend with Scarlet Commander Mograine - who commands a large garrison of fanatically devoted warriors. However, the monastery's true master is High Inquisitor Whitemane - a fearsome priestess who possesses the ability to resurrect fallen warriors to do battle in her name.",
+		icon = 	136354,
 		zoneTextAreaID = 796,
-		["coord"] = { 82.6, 32.4, MAP.TIRISFAL_GLADES },
-		["mapID"] = MAP.SCARLET_MONASTERY,
-		["lvl"] = 25,
-		["groups"] = {
+		coord = { 82.6, 32.4, MAP.TIRISFAL_GLADES },
+		mapID = MAP.SCARLET_MONASTERY,
+		lvl = 25,
+		groups = {
 			n(QUESTS, {
 				q(1113, {	-- Hearts of Zeal
-					["sourceQuest"] = 1109,	-- Going, Going, Guano!
-					["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
-					["coord"] = { 48.82, 69.28, MAP.UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 30,
-					["groups"] = {
+					sourceQuest = 1109,	-- Going, Going, Guano!
+					qg = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
+					coord = { 48.82, 69.28, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					lvl = 30,
+					groups = {
 						objective(1, {	-- 0/20 Heart of Zeal
-							["provider"] = { "i", 5805 },	-- Heart of Zeal
+							provider = { "i", 5805 },	-- Heart of Zeal
 						}),
 					},
 				}),
 				q(1053, {	-- In the Name of the Light
-					["sourceQuest"] = 1052,	-- Down the Scarlet Path (2/2)
-					["qg"] = 3980,	-- Raleigh the Devout
-					["coord"] = { 51.5, 58.4, MAP.HILLSBRAD_FOOTHILLS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 34,
-					["groups"] = {
+					sourceQuest = 1052,	-- Down the Scarlet Path (2/2)
+					qg = 3980,	-- Raleigh the Devout
+					coord = { 51.5, 58.4, MAP.HILLSBRAD_FOOTHILLS },
+					races = ALLIANCE_ONLY,
+					lvl = 34,
+					groups = {
 						objective(1, {	-- 0/1 High Inquisitor Whitemane slain
-							["provider"] = { "n", 3977 },	-- High Inquisitor Whitemane
+							provider = { "n", 3977 },	-- High Inquisitor Whitemane
 						}),
 						objective(2, {	-- 0/1 Scarlet Commander Mograine slain
-							["provider"] = { "n", 3976 },	-- Scarlet Commander Mograine
+							provider = { "n", 3976 },	-- Scarlet Commander Mograine
 						}),
 						objective(3, {	-- 0/1 Herod slain
-							["provider"] = { "n", 3975 },	-- Herod <The Scarlet Champion>
+							provider = { "n", 3975 },	-- Herod <The Scarlet Champion>
 						}),
 						objective(4, {	-- 0/1 Houndmaster Loksey slain
-							["provider"] = { "n", 3974 },	-- Houndmaster Loksey
+							provider = { "n", 3974 },	-- Houndmaster Loksey
 						}),
 						i(6830),	-- Bonebiter
 						i(6831),	-- Black Menace
@@ -119,22 +119,22 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(1048, {	-- Into The Scarlet Monastery
-					["qg"] = 2425,	-- Varimathras
-					["coord"] = { 56.3, 92.2, MAP.UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 33,
-					["groups"] = {
+					qg = 2425,	-- Varimathras
+					coord = { 56.3, 92.2, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					lvl = 33,
+					groups = {
 						objective(1, {	-- 0/1 High Inquisitor Whitemane slain
-							["provider"] = { "n", 3977 },	-- High Inquisitor Whitemane
+							provider = { "n", 3977 },	-- High Inquisitor Whitemane
 						}),
 						objective(2, {	-- 0/1 Scarlet Commander Mograine slain
-							["provider"] = { "n", 3976 },	-- Scarlet Commander Mograine
+							provider = { "n", 3976 },	-- Scarlet Commander Mograine
 						}),
 						objective(3, {	-- 0/1 Herod slain
-							["provider"] = { "n", 3975 },	-- Herod <The Scarlet Champion>
+							provider = { "n", 3975 },	-- Herod <The Scarlet Champion>
 						}),
 						objective(4, {	-- 0/1 Houndmaster Loksey slain
-							["provider"] = { "n", 3974 },	-- Houndmaster Loksey
+							provider = { "n", 3974 },	-- Houndmaster Loksey
 						}),
 						i(6802),	-- Sword of Omen
 						i(6803),	-- Prophetic Cane
@@ -173,19 +173,19 @@ root(ROOTS.Instances, {
 				i(7757),	-- Windweaver Staff
 			}),
 			n(SCARLET_MONASTERY_GRAVEYARD_HEADER, {
-				["lvl"] = 25,
-				["groups"] = {
+				lvl = 25,
+				groups = {
 					n(QUESTS, {
 						q(1051, {	-- Vorrel's Revenge
-							["qg"] = 3981,	-- Vorrel Sengutz
-							["maps"] = { MAP.ALTERAC_MOUNTAINS, MAP.HILLSBRAD_FOOTHILLS },
-							["races"] = HORDE_ONLY,
-							["lvl"] = 25,
-							["groups"] = {
+							qg = 3981,	-- Vorrel Sengutz
+							maps = { MAP.ALTERAC_MOUNTAINS, MAP.HILLSBRAD_FOOTHILLS },
+							races = HORDE_ONLY,
+							lvl = 25,
+							groups = {
 								objective(1, {	-- 0/1 Vorrel's Wedding Ring
-									["provider"] = { "i", 5538 },	-- Vorrel's Wedding Ring
-									["coord"] = { 32.3, 32.8, MAP.ALTERAC_MOUNTAINS },
-									["cr"] = 3984,	-- Nancy Vishas
+									provider = { "i", 5538 },	-- Vorrel's Wedding Ring
+									coord = { 32.3, 32.8, MAP.ALTERAC_MOUNTAINS },
+									cr = 3984,	-- Nancy Vishas
 								}),
 								i(4643),	-- Grimsteel Cape
 								i(7750),	-- Mantle of Woe
@@ -221,21 +221,21 @@ root(ROOTS.Instances, {
 				},
 			}),
 			n(SCARLET_MONASTERY_LIBRARY_HEADER, {
-				["lvl"] = 28,
-				["groups"] = {
+				lvl = 28,
+				groups = {
 					n(QUESTS, {
 						q(1049, {	-- Compendium of the Fallen
-							["qg"] = 3978,	-- Sage Truthseeker
-							["coord"] = { 34.6, 47.2, MAP.THUNDER_BLUFF },
-							["races"] = exclude(UNDEAD, HORDE_ONLY),
-							["lvl"] = 28,
-							["groups"] = {
+							qg = 3978,	-- Sage Truthseeker
+							coord = { 34.6, 47.2, MAP.THUNDER_BLUFF },
+							races = exclude(UNDEAD, HORDE_ONLY),
+							lvl = 28,
+							groups = {
 								objective(1, {	-- 0/1 Compendium of the Fallen
-									["providers"] = {
+									providers = {
 										{ "i", 5535 },	-- Compendium of the Fallen
 										{ "o", 19283 },	-- Compendium of the Fallen
 									},
-									["description"] = "On one of the shelves on the left as you enter the final hallway leading to Doan.",
+									description = "On one of the shelves on the left as you enter the final hallway leading to Doan.",
 								}),
 								i(17508),	-- Forcestone Buckler
 								i(7749),	-- Omega Orb
@@ -243,55 +243,55 @@ root(ROOTS.Instances, {
 							},
 						}),
 						q(1050, {	-- Mythology of the Titans
-							["qg"] = 3979,	-- Librarian Mae Paledust <Explorers' League>
-							["coord"] = { 75.0, 12.5, MAP.IRONFORGE },
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 28,
-							["groups"] = {
+							qg = 3979,	-- Librarian Mae Paledust <Explorers' League>
+							coord = { 75.0, 12.5, MAP.IRONFORGE },
+							races = ALLIANCE_ONLY,
+							lvl = 28,
+							groups = {
 								objective(1, {	-- 0/1 Mythology of the Titans
-									["providers"] = {
+									providers = {
 										{ "i", 5536 },	-- Mythology of the Titans
 										{ "o", 19284 },	-- Mythology of the Titans
 									},
-									["description"] = "In the hallway with the benches immediately to your left upon entering it.",
+									description = "In the hallway with the benches immediately to your left upon entering it.",
 								}),
 								i(7746),	-- Explorers' League Commendation
 							},
 						}),
 						q(1951, {	-- Rituals of Power
-							["sourceQuest"] = 1950,	-- Get the Scoop
-							["qg"] = 6548,	-- Magus Tirth
-							["coord"] = { 47.82, 75.8, MAP.THOUSAND_NEEDLES },
-							["maps"] = { MAP.DUSTWALLOW_MARSH },
-							["classes"] = { MAGE },
-							["lvl"] = 30,
-							["groups"] = {
+							sourceQuest = 1950,	-- Get the Scoop
+							qg = 6548,	-- Magus Tirth
+							coord = { 47.82, 75.8, MAP.THOUSAND_NEEDLES },
+							maps = { MAP.DUSTWALLOW_MARSH },
+							classes = { MAGE },
+							lvl = 30,
+							groups = {
 								objective(1, {	-- 0/1 Rituals of Power
-									["provider"] = { "i", 7274 },	-- Rituals of Power
+									provider = { "i", 7274 },	-- Rituals of Power
 								}),
 							},
 						}),
 						q(1160, {	-- Test of Lore (5/6)
-							["sourceQuest"] = 1159,	-- Test of Lore (4/6)
-							["qg"] = 4488,	-- Parqual Fintallas
-							["coord"] = { 57.8, 65.4, MAP.UNDERCITY },
-							["races"] = HORDE_ONLY,
-							["lvl"] = 28,
-							["groups"] = {
+							sourceQuest = 1159,	-- Test of Lore (4/6)
+							qg = 4488,	-- Parqual Fintallas
+							coord = { 57.8, 65.4, MAP.UNDERCITY },
+							races = HORDE_ONLY,
+							lvl = 28,
+							groups = {
 								objective(1, {	-- 0/1 Beginnings of the Undead Threat
-									["providers"] = {
+									providers = {
 										{ "i", 5861 },	-- Beginnings of the Undead Threat
 										{ "o", 20726 },	-- Beginnings of the Undead Threat
 									},
-									["description"] = "In the first cooridor with books, there are 2 pocket rooms, the first pocket room has a table with 2 clickable books on it.\n\nOne of them is a container.",
+									description = "In the first cooridor with books, there are 2 pocket rooms, the first pocket room has a table with 2 clickable books on it.\n\nOne of them is a container.",
 								}),
 							},
 						}),
 					}),
 					n(TREASURES, {
 						o(103821, {	-- Doan's Strongbox
-							["description"] = "Found in the chest after killing Arcanist Doan.",
-							["groups"] = {
+							description = "Found in the chest after killing Arcanist Doan.",
+							groups = {
 								i(7146),	-- The Scarlet Key
 							},
 						}),
@@ -310,9 +310,9 @@ root(ROOTS.Instances, {
 				},
 			}),
 			n(SCARLET_MONASTERY_ARMORY_HEADER, {
-				["cost"] = {{"i", 7146, 1}},	-- The Scarlet Key
-				["lvl"] = 35,
-				["groups"] = {
+				cost = {{"i", 7146, 1}},	-- The Scarlet Key
+				lvl = 35,
+				groups = {
 					n(3975, {	-- Herod
 						i(7717),	-- Ravager
 						i(7719),	-- Raging Berserker's Helm
@@ -325,9 +325,9 @@ root(ROOTS.Instances, {
 				},
 			}),
 			n(SCARLET_MONASTERY_CATHEDRAL_HEADER, {
-				["cost"] = { { "i", 7146, 1 } },	-- The Scarlet Key
-				["lvl"] = 37,
-				["groups"] = {
+				cost = { { "i", 7146, 1 } },	-- The Scarlet Key
+				lvl = 37,
+				groups = {
 					n(4542, {	-- High Inquisitor Fairbanks
 						i(19507),	-- Inquisitor's Shawl
 						i(19508),	-- Branded Leather Bracers

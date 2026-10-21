@@ -265,57 +265,57 @@ root(ROOTS.Instances, {
 				},
 				--[[ Commented Out until Confirmed
 				q(7649, {	-- Enchanted Thorium Platemail: Volume I
-					["providers"] = {
+					providers = {
 						{ "i", 18769 },	-- Enchanted Thorium Platemail (Volume I)
 						{ "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
 					},
-					["maps"] = merge(CAPITAL_GARDENS_MAPS, {
+					maps = merge(CAPITAL_GARDENS_MAPS, {
 						MAP.BLACKROCK_SPIRE,
 					}),
-					["cost"] = {
+					cost = {
 						{ "i", 18779, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume I
 						{ "i", 18780, 1 },	-- Top Half of Advanced Armorsmithing: Volume I
 					},
-					["requireSkill"] = ARMORSMITH,
-					["groups"] = {
+					requireSkill = ARMORSMITH,
+					groups = {
 						i(12727),	-- Plans: Enchanted Thorium Breastplate (RECIPE!)
 					},
 				}),
 				q(7650, {	-- Enchanted Thorium Platemail: Volume II
-					["providers"] = {
+					providers = {
 						{ "i", 18770 },	-- Enchanted Thorium Platemail (Volume II)
 						{ "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
 					},
-					["maps"] = merge(CAPITAL_GARDENS_MAPS, {
+					maps = merge(CAPITAL_GARDENS_MAPS, {
 						MAP.STRATHOLME,
 						MAP.SCHOLOMANCE,
 					}),
-					["cost"] = {
+					cost = {
 						{ "i", 18781, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume II
 						{ "i", 18782, 1 },	-- Top Half of Advanced Armorsmithing: Volume II
 					},
-					["requireSkill"] = ARMORSMITH,
-					["lvl"] = 50,
-					["groups"] = {
+					requireSkill = ARMORSMITH,
+					lvl = 50,
+					groups = {
 						i(12726),	-- Plans: Enchanted Thorium Leggings (RECIPE!)
 					},
 				}),
 				q(7651, {	-- Enchanted Thorium Platemail: Volume III
-					["providers"] = {
+					providers = {
 						{ "i", 18771 },	-- Enchanted Thorium Platemail (Volume III)
 						{ "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
 					},
-					["maps"] = merge(CAPITAL_GARDENS_MAPS, {
+					maps = merge(CAPITAL_GARDENS_MAPS, {
 						MAP.BLACKROCK_SPIRE,
 						MAP.STRATHOLME,
 					}),
-					["cost"] = {
+					cost = {
 						{ "i", 18783, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume III
 						{ "i", 18784, 1 },	-- Top Half of Advanced Armorsmithing: Volume III
 					},
-					["requireSkill"] = ARMORSMITH,
-					["lvl"] = 50,
-					["groups"] = {
+					requireSkill = ARMORSMITH,
+					lvl = 50,
+					groups = {
 						i(12725),	-- Plans: Enchanted Thorium Helm (RECIPE!)
 					},
 				}),

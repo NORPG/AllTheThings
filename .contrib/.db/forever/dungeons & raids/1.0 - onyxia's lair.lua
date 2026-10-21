@@ -28,7 +28,7 @@ root(ROOTS.Instances, {
 		groups = {
 			n(QUESTS, {
 				q(7635, {	-- A Proper String
-					--["sourceQuest"] = 7633,	-- An Introduction (requires Molten Core)
+					--sourceQuest = 7633,	-- An Introduction (requires Molten Core)
 					qg = 14525,	-- Stoma the Ancient
 					coord = { 47.0, 24.48, MAP.FELWOOD },
 					cost = {{ "i", 18705, 1 }},	-- Mature Black Dragon Sinew
@@ -39,7 +39,7 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(7634, {	-- Ancient Sinew Wrapped Lamina
-					--["sourceQuest"] = 7633,	-- An Introduction (requires Molten Core)
+					--sourceQuest = 7633,	-- An Introduction (requires Molten Core)
 					qg = 14526,	-- Hastat the Ancient
 					coord = { 47.0, 24.48, MAP.FELWOOD },
 					maps = { MAP.WINTERSPRING },
@@ -86,7 +86,7 @@ root(ROOTS.Instances, {
 				}),
 				q(7636, {	-- Stave of the Ancients
 					description = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
-					--["sourceQuest"] = 7633,	-- An Introduction (requires Molten Core)
+					--sourceQuest = 7633,	-- An Introduction (requires Molten Core)
 					providers = {
 						{ "n", 14524 },	-- Vartrus the Ancient
 						{ "i", 18708 },	-- Petrified Bark

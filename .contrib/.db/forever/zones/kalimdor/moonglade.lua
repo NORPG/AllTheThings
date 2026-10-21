@@ -423,7 +423,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(98396, {	-- The Great Cat Spirit
-				["sourceQuests"] = { 98394 },	-- The Great Cat Spirit
+				sourceQuests = { 98394 },	-- The Great Cat Spirit
 				qg = 11957,	-- Great Cat Spirit
 				coord = { 58.39, 73.52, MAP.MOONGLADE },
 				races = { NIGHTELF },

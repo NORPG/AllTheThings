@@ -813,7 +813,7 @@ root(ROOTS.Craftables, {
 		n(COMMON_VENDOR_ITEMS, sharedData({
 			description = "Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",
 			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
-			--[[["coords"] = {
+			--[[coords = {
 				{ 47.8, 6.6, MAP.IRONFORGE },
 				{ 55.8, 47.0, MAP.THUNDER_BLUFF },
 				{ 81.0, 30.8, MAP.UNDERCITY },
@@ -821,7 +821,7 @@ root(ROOTS.Craftables, {
 				{ 46.9, 56.9, MAP.DARNASSUS },
 				{ 66.6, 41.6, MAP.ORGRIMMAR },
 			},
-			["providers"] = {
+			providers = {
 				{ "n", 5494 },	-- Catherine Leland <Fishing Supplier>
 				{ "n", 4574 },	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
 				{ "n", 3029 },	-- Sewa Mistrunner <Fishing Supplies>
@@ -949,7 +949,7 @@ root(ROOTS.Craftables, {
 					{ "o", 180682 },	-- Oily Blackmouth School
 					{ "o", 180685 },	-- Waterlogged Wreckage
 				},
-				--[[["groups"] = {
+				--[[groups = {
 					i(4339),	-- Bolt of Mageweave
 					i(4305),	-- Bolt of Silk Cloth
 					i(1710),	-- Greater Healing Potion
@@ -970,7 +970,7 @@ root(ROOTS.Craftables, {
 					{ "o", 180751 },	-- Floating Wreckage
 					{ "o", 180712 },	-- Stonescale Eel Swarm
 				},
-				--[[["groups"] = {
+				--[[groups = {
 					i(4339),	-- Bolt of Mageweave
 					i(14048),	-- Bolt of Runecloth
 					i(6149),	-- Greater Mana Potion
@@ -994,7 +994,7 @@ root(ROOTS.Craftables, {
 					{ "o", 180655 },	-- Floating Debris
 					{ "o", 180658 },	-- School of Deviate Fish
 				},
-				--[[["groups"] = {
+				--[[groups = {
 					i(2996),	-- Bolt of Linen Cloth
 					i(2997),	-- Bolt of Woolen Cloth
 					i(858),	-- Lesser Healing Potion
@@ -1014,7 +1014,7 @@ root(ROOTS.Craftables, {
 				providers = {
 					{ "o", 180662 },	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
 				},
-				--[[["groups"] = {
+				--[[groups = {
 					i(4305),	-- Bolt of Silk Cloth
 					i(2997),	-- Bolt of Woolen Cloth
 					i(929),	-- Healing Potion

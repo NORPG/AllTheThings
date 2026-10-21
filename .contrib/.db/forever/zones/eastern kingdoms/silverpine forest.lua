@@ -600,7 +600,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				},
 			}),
 			q(91920, {	-- Wild Eyes
-				["sourceQuests"] = { 430 },	-- Return to Quinn
+				sourceQuests = { 430 },	-- Return to Quinn
 				qg = 1951,	-- Quinn Yorick <Deathstalker>
 				coord = { 53.43, 12.59, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
@@ -614,7 +614,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				},
 			}),
 			q(91921, {	-- Return to Quinn (Again)
-				["sourceQuests"] = { 91920 },	-- Wild Eyes
+				sourceQuests = { 91920 },	-- Wild Eyes
 				qg = 1937,	-- Apothecary Renferrel <Royal Apothecary Society>
 				coord = { 42.8, 40.86, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
@@ -670,7 +670,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				},
 			}),
 			q(98298, {	-- Arugal's Folly
-				["sourceQuests"] = { 99 },	-- Arugal's Folly
+				sourceQuests = { 99 },	-- Arugal's Folly
 				qg = 1938,	-- Dalar Dawnweaver
 				coord = { 44.2, 39.81, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
