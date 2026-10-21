@@ -200,6 +200,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 					}),
 				},
 			},
+			q(99145, {	-- A Winter Veil Gift
+				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				groups = {
+					i(286210),	-- A Winter Veil Gift
+				},
+			}),
 			q(7022, {	-- Greatfather Winter is Here! (Alliance)
 				qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				coord = { 33.4, 67.0, MAP.IRONFORGE },

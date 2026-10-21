@@ -371,6 +371,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				isBreadcrumb = true,
 				isYearly = true,
 			}),
+			q(98983, {	-- Frostleaf the Elder
+				qg = 275613,	-- Elder Frostleaf
+				-- TODO: Wowhead doesn't list where Elder Frostleaf is yet; move into the matching Elders header once confirmed.
+				timeline = { TIMELINE.CREATED_1_60_1 },
+			}),
+			q(98977, {	-- Mossheart the Elder
+				qg = 275609,	-- Elder Mossheart
+				-- TODO: Wowhead doesn't list where Elder Mossheart is yet; move into the matching Elders header once confirmed.
+				timeline = { TIMELINE.CREATED_1_60_1 },
+			}),
 			preWrathEldersHeader(ELDERS_OF_THE_ALLIANCE, {	-- Elders of the Alliance
 				q(8718, {	-- Bladeswift the Elder
 					qg = 15598,	-- Elder Bladeswift

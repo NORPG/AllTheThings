@@ -466,7 +466,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					97941,	-- Camping 101: Engineering [Teldrassil]
 					97954,	-- Camping 101: Engineering [Tirisfal Glades]
 					98285,	-- Camping 101: Engineering
-					98287,
+					98287,	-- Camping 101: Engineering
 				},
 				qg = 265810,	-- Kaga Wildhoof <Adventurer>
 				coord = { 46.2, 67.2, MAP.MULGORE },

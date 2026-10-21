@@ -707,7 +707,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					97941,	-- Camping 101: Engineering [Teldrassil]
 					97954,	-- Camping 101: Engineering [Tirisfal Glades]
 					98285,	-- Camping 101: Engineering
-					98287,
+					98287,	-- Camping 101: Engineering
 				},
 				qg = 265813,	-- Eric Brighthammer <Adventurer>
 				coord = { 46.7, 53.9, MAP.DUN_MOROGH },

@@ -1412,7 +1412,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					97930,	-- Camping 101: Engineering [Mulgore]
 					97941,	-- Camping 101: Engineering [Teldrassil]
 					98285,	-- Camping 101: Engineering
-					98287,
+					98287,	-- Camping 101: Engineering
 				},
 				qg = 265812,	-- Eleanor Shackleton <Adventurer>
 				coord = { 57.2, 55.6, MAP.TIRISFAL_GLADES },

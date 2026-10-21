@@ -533,7 +533,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					97930,	-- Camping 101: Engineering [Mulgore]
 					97954,	-- Camping 101: Engineering [Tirisfal Glades]
 					98285,	-- Camping 101: Engineering
-					98287,
+					98287,	-- Camping 101: Engineering
 				},
 				qg = 265811,	-- Lyreena Duskblade <Adventurer>
 				coord = { 57.6, 56.6, MAP.TELDRASSIL },

@@ -384,6 +384,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					}),
 				},
 			}),
+			q(98471, {	-- Message from the Supreme Magister
+				-- TODO: Wowhead doesn't list the quest giver yet. Meet Elaadrin Evengale at the cliffs overlooking The Uplands.
+				qi = 281330,	-- Message from the Supreme Magister (PQI!)
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				races = { SKYBORNE_ALLIANCE },
+				lvl = 30,
+			}),
 			q(512, {	-- Noble Deaths
 				sourceQuest = 510,	-- Foreboding Plans
 				qg = 2276,	-- Magistrate Henry Maleb

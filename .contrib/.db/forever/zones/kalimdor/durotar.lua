@@ -620,7 +620,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					97941,	-- Camping 101: Engineering [Teldrassil]
 					97954,	-- Camping 101: Engineering [Tirisfal Glades]
 					98285,	-- Camping 101: Engineering
-					98287,
+					98287,	-- Camping 101: Engineering
 				},
 				qg = 265809,	-- Brakk <Adventurer>
 				coord = { 52.0, 47.4, MAP.DUROTAR },

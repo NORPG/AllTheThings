@@ -742,6 +742,27 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					recipe(1230643),	-- Enchanting: Enchanted Lute
 				},
 			}),
+			q(98287, {	-- Camping 101: Engineering
+				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
+				altQuests = {
+					96058,	-- Camping 101: Engineering [Dun Morogh]
+					97902,	-- Camping 101: Engineering [Durotar]
+					97918,	-- Camping 101: Engineering [Elwynn Forest]
+					97930,	-- Camping 101: Engineering [Mulgore]
+					97941,	-- Camping 101: Engineering [Teldrassil]
+					97954,	-- Camping 101: Engineering [Tirisfal Glades]
+					98285,	-- Camping 101: Engineering
+				},
+				-- TODO: Wowhead doesn't list the quest giver yet. Speak with Sprite Jumpsprocket in Stormwind once your engineering skill reaches 20.
+				requireSkill = ENGINEERING,
+				races = ALLIANCE_ONLY,
+				lvl = 4,
+				lockCriteria = { 1, "spellID", 1230656 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				groups = {
+					recipe(1230656),	-- Engineering: Reagent Bot
+				},
+			}),
 			q(97918, {	-- Camping 101: Engineering [Elwynn Forest]
 				sourceQuest = 95998,	-- The Great Outdoors [Elwynn Forest]
 				altQuests = {
@@ -751,7 +772,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					97941,	-- Camping 101: Engineering [Teldrassil]
 					97954,	-- Camping 101: Engineering [Tirisfal Glades]
 					98285,	-- Camping 101: Engineering
-					98287,
+					98287,	-- Camping 101: Engineering
 				},
 				qg = 263399,	-- Sam Sarsaparilla <Adventurer>
 				coord = { 44.91, 63.34, MAP.ELWYNN_FOREST },

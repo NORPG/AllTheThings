@@ -484,7 +484,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					97930,	-- Camping 101: Engineering [Mulgore]
 					97941,	-- Camping 101: Engineering [Teldrassil]
 					97954,	-- Camping 101: Engineering [Tirisfal Glades]
-					98287,
+					98287,	-- Camping 101: Engineering
 				},
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
@@ -944,6 +944,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 251906,	-- Teeri Wellwind
 				coord = { 44.4, 45.0, MAP.ZEPHRAS_ISLE },
 				lvl = 4,
+			}),
+			q(94901, {	-- Hopping Helpers
+				-- TODO: Wowhead doesn't list the quest giver or objectives yet (collect Gustjumper frogs).
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				lvl = 8,
 			}),
 			q(92860, {	-- In Service of Zephras
 				sourceQuest = 92834,	-- Avenged Tenfold
@@ -1428,6 +1433,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				races = ALLIANCE_ONLY,
 				lvl = 7,
 			}),
+			q(93174, {	-- The Malfunctioning Construct
+				-- TODO: Wowhead doesn't list the quest giver yet. Speak with Riaani Nightwind in Valanaar, then the Strange Hermit in Shadowgale Forest.
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				lvl = 8,
+			}),
 			q(92727, {	-- The Missing Scholar
 				sourceQuest = 92699,	-- The Supreme Magister
 				races = ALLIANCE_ONLY,
@@ -1665,6 +1675,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					}),
 				},
 			}),
+			q(94902, {	-- Valanaar Vintages
+				-- TODO: Wowhead doesn't list the quest giver or objectives yet (collect grapes).
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				lvl = 8,
+			}),
 			q(93318, {	-- WANTED: Vulgara the Insatiable
 				sourceQuests = {
 					92514,	-- Welcome to Shen'dar Village (H)
@@ -1705,6 +1720,16 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 4,
+			}),
+			q(92454, {	-- Welcome!
+				-- TODO: Wowhead doesn't list the quest giver yet. Bring the voucher to Dalia Windbreeze.
+				qi = 251900,	-- Thendal Grove Gift Voucher (PQI!)
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				groups = {
+					i(13584),	-- Diablo Stone
+					i(13583),	-- Panda Collar
+					i(13582),	-- Zergling Leash
+				},
 			}),
 			q(93089, {	-- What Comes Next
 				sourceQuest = 94369,	-- The Fate of Zephras

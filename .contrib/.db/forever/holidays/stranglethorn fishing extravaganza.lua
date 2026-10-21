@@ -95,6 +95,33 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 					i(19972),	-- Lucky Fishing Hat
 				},
 			}),
+			q(97066, {	-- Tip the Scales - Brownell's Blue Striped Racer
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				cost = { { "i", 19803, 1 } },	-- Brownell's Blue Striped Racer
+				requireSkill = FISHING,
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				groups = {
+					i(19807),	-- Speckled Tastyfish (x3)
+				},
+			}),
+			q(97067, {	-- Tip the Scales - Dezian Queenfish
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				cost = { { "i", 19806, 1 } },	-- Dezian Queenfish
+				requireSkill = FISHING,
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				groups = {
+					i(19807),	-- Speckled Tastyfish (x3)
+				},
+			}),
+			q(97065, {	-- Tip the Scales - Keefer's Angelfish
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				cost = { { "i", 19805, 1 } },	-- Keefer's Angelfish
+				requireSkill = FISHING,
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				groups = {
+					i(19807),	-- Speckled Tastyfish (x3)
+				},
+			}),
 		}),
 		prof(FISHING, {
 			o(180248, {	-- School of Tastyfish
