@@ -210,6 +210,7 @@ i(6275, 7643);		-- Greater Adept's Robe
 i(17724, 21945);	-- Green Holiday Shirt
 i(7090, 8784);		-- Green Silk Armor
 i(5774, 6693);		-- Green Silk Pack
+i(34261, 44950);	-- Green Winter Clothes
 i(4292, 3758);		-- Green Woolen Bag
 i(273993, 1292962);	-- Handguards of Conviction
 i(7092, 8780);		-- Hands of Darkness
@@ -271,6 +272,7 @@ i(10320, 12084);	-- Red Mageweave Headband
 i(10302, 12060);	-- Red Mageweave Pants
 i(10315, 12078);	-- Red Mageweave Shoulders
 i(10300, 12056);	-- Red Mageweave Vest
+i(34319, 44958);	-- Red Winter Clothes
 i(5772, 6688);		-- Red Woolen Bag
 i(4345, 3847);		-- Red Woolen Boots
 i(4347, 3849);		-- Reinforced Woolen Shoulders

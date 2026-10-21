@@ -331,6 +331,7 @@ i(273969, 1292938);	-- Wildstalker's Gauntlets
 i(273971, 1292940);	-- Wildstalker's Greaves
 i(273968, 1292937);	-- Wildstalker's Legguards
 i(273970, 1292939);	-- Wildstalker's Spaulders
+i(34262, 44953);	-- Winter Boots
 i(252770, 1255137);	-- Wisdom's Leather Belt
 i(252791, 1255116);	-- Wisdom's Leather Boots
 i(252782, 1255125);	-- Wisdom's Leather Gloves

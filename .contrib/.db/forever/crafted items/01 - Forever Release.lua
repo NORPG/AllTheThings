@@ -124,6 +124,8 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(277020),	-- Azure Skyforged Legguards
 			i(277049),	-- Azure Skyforged Pauldrons
 			i(277017),	-- Azure Skyforged Wristguards
+			i(250588),	-- Blessed Plate Gauntlet
+			i(250601),	-- Breastplate of Salvation
 			i(276995),	-- Cloudy Skyforged Chain
 			i(276992),	-- Cloudy Skyforged Chainmail
 			i(276994),	-- Cloudy Skyforged Gauntlets
@@ -144,8 +146,10 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(250532),	-- Crusader's Silvered Chain Helm
 			i(250527),	-- Crusader's Silvered Chain Leggings
 			i(250522),	-- Crusader's Silvered Chain Shirt
+			i(279263),	-- Depleted Thorium Sabatons
 			i(250595),	-- Enriched Thorium Breastplate
 			i(250597),	-- Enriched Thorium Helm
+			i(250596),	-- Enriched Thorium Leggings
 			i(250620),	-- Gemmed Copper Boots
 			i(250482),	-- Glowing Copper Boots
 			i(275622),	-- Goregasher Grips
@@ -187,6 +191,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(250530),	-- Protector's Silvered Chain Helm
 			i(250525),	-- Protector's Silvered Chain Leggings
 			i(250520),	-- Protector's Silvered Chain Shirt
+			i(277672),	-- Rough Copper Chain Boots
 			i(250547),	-- Sentinel's Boots
 			i(250567),	-- Sentinel's Gauntlet
 			i(250577),	-- Sentinel's Pauldrons
@@ -263,6 +268,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(250602),	-- Brass Knuckles
 			i(250606),	-- Iron Morningstar
 			i(250619),	-- Legionite Glaive
+			i(250610),	-- Mithril Claymore
 			i(250608),	-- Mithril Warhammer
 			i(250617),	-- Stormcarver
 			i(250614),	-- Thorium Cestus
@@ -283,6 +289,50 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(250611),	-- Mithril Stiletto
 			i(250605),	-- Steel Spear
 			i(250615),	-- Thorium Poleaxe
+		}),
+	}),
+	prof(COOKING, {
+		filter(CONSUMABLES, {
+			i(250067),	-- Bat Hachee
+			i(250074),	-- Bear Brisket
+			i(250070),	-- Bear Bruscitti
+			i(250080),	-- Breakfast Omelette
+			i(274971),	-- Briny Seafood Stew
+			i(249874),	-- Calcified Smoothie
+			i(250081),	-- Clam Linguine
+			i(250069),	-- Flank au Poivre
+			i(250078),	-- Giant Scrambled Eggs
+			i(249873),	-- Mrrggl Smrrthle
+			i(249865),	-- Peace Tea
+			i(274976),	-- Plain Ol' Paletusk
+			i(286152),	-- Plated Armorfish
+			i(250075),	-- Prehistoric Pulled Raptor
+			i(250073),	-- Raging Raptor Ribs
+			i(250076),	-- Raptor Rouladen
+			i(249867),	-- Root Tea
+			i(249866),	-- Royal Tea
+			i(249870),	-- Sage's Tea
+			i(250065),	-- Savory Stag Sliders
+			i(250068),	-- Savory Turtle Stew
+			i(251525),	-- Savory Whimsyfin Delight
+			i(249872),	-- Slimy Smoothie
+			i(250066),	-- Soaring Pamplona
+			i(249875),	-- Spicy Smoothie
+			i(250071),	-- Steaming Stag Steak
+			i(249869),	-- Sunny Tea
+			i(267341),	-- Sweetpaw Jam
+			i(250072),	-- Swiftstrike Steak
+			i(250079),	-- Tasty Raptor Bites
+			i(249868),	-- Triage Tea
+			i(249871),	-- Venomous Smoothie
+			i(249876),	-- Wicked Smoothie
+		}),
+		filter(MISC, {
+			i(279981),	-- Basic Campfire Kit
+			i(279957),	-- Cookie's Feast
+			i(279974),	-- Expert Campfire Kit
+			i(279982),	-- Iron Oven
+			i(279961),	-- Journeyman Campfire Kit
 		}),
 	}),
 	prof(ENCHANTING, {
@@ -362,6 +412,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(260793),	-- SAF-T Copper Bomb
 			i(260792),	-- SAF-T Dynamite
 			-- Misc
+			i(274048),	-- 9-60 Battery Pack
 			i(279989),	-- Anarchist's Workbench
 			i(260807),	-- Compact Critter Carrier
 			i(260823),	-- Dimensional Transporter - Mt.
@@ -456,6 +507,20 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 		i(255718),	-- Superior Poultice
 		i(255722),	-- Surgical Tourniquet
 	}),
+	prof(FISHING, {
+		filter(MISC, {
+			i(279967),	-- Fish Bowl
+			i(279966),	-- Fishing Hut
+			i(279965),	-- Fishing Rack
+		}),
+	}),
+	prof(HERBALISM, {
+		filter(MISC, {
+			i(279964),	-- Greenhouse
+			i(279962),	-- Incense Candle
+			i(279947),	-- Seed Hybridizer
+		}),
+	}),
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
 			cl(DRUID, {
@@ -503,149 +568,174 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 				i(273935),	-- Spiritcaller Treads
 			}),
 			filter(LEATHER, {
-					i(277025),	-- Azure Gustwoven Belt
-					i(277027),	-- Azure Gustwoven Boots
-					i(277023),	-- Azure Gustwoven Bracers
-					i(277024),	-- Azure Gustwoven Gloves
-					i(277022),	-- Azure Gustwoven Harness
-					i(277050),	-- Azure Gustwoven Hood
-					i(277051),	-- Azure Gustwoven Spaulders
-					i(277026),	-- Azure Gustwoven Trousers
-					i(277029),	-- Azure Windraveled Armguards
-					i(277052),	-- Azure Windraveled Cover
-					i(277053),	-- Azure Windraveled Drapes
-					i(277033),	-- Azure Windraveled Footwraps
-					i(277028),	-- Azure Windraveled Jerkin
-					i(277030),	-- Azure Windraveled Mitts
-					i(277032),	-- Azure Windraveled Pants
-					i(277031),	-- Azure Windraveled Strap
-					i(252424),	-- Black Whelp Slippers
-					i(252428),	-- Brawler's Leather Belt
-					i(252439),	-- Brawler's Leather Boots
-					i(252504),	-- Brawler's Leather Hood
-					i(252516),	-- Brawler's Leather Legguards
-					i(252508),	-- Brawler's Leather Tunic
-					i(277001),	-- Cloudy Gustwoven Belt
-					i(277003),	-- Cloudy Gustwoven Boots
-					i(276999),	-- Cloudy Gustwoven Bracers
-					i(277000),	-- Cloudy Gustwoven Gloves
-					i(276998),	-- Cloudy Gustwoven Harness
-					i(277042),	-- Cloudy Gustwoven Hood
-					i(277043),	-- Cloudy Gustwoven Spaulders
-					i(277002),	-- Cloudy Gustwoven Trousers
-					i(277005),	-- Cloudy Windraveled Armguards
-					i(277044),	-- Cloudy Windraveled Cover
-					i(277045),	-- Cloudy Windraveled Drapes
-					i(277009),	-- Cloudy Windraveled Footwraps
-					i(277004),	-- Cloudy Windraveled Jerkin
-					i(277006),	-- Cloudy Windraveled Mitts
-					i(277008),	-- Cloudy Windraveled Pants
-					i(277007),	-- Cloudy Windraveled Strap
-					i(252425),	-- Dark Leather Boots
-					i(252430),	-- Defender's Leather Belt
-					i(252441),	-- Defender's Leather Boots
-					i(252447),	-- Defender's Leather Hood
-					i(252457),	-- Defender's Leather Kilt
-					i(252450),	-- Defender's Leather Tunic
-					i(252449),	-- Hillman's Leather Boots
-					i(252472),	-- Mender's Leather Boots
-					i(252543),	-- Mender's Leather Bracers
-					i(252530),	-- Mender's Leather Gloves
-					i(252538),	-- Mender's Leather Shoulder
-					i(252477),	-- Mender's Leather Waistguard
-					i(252427),	-- Moonglow Boots
-					i(252426),	-- Murloc Scale Shoes
-					i(252468),	-- Prowler's Leather Boots
-					i(252539),	-- Prowler's Leather Bracers
-					i(252524),	-- Prowler's Leather Gloves
-					i(252534),	-- Prowler's Leather Shoulder
-					i(252473),	-- Prowler's Leather Waistguard
-					i(252528),	-- Skirmisher's Leather Gloves
-					i(252469),	-- Skulker's Leather Boots
-					i(252540),	-- Skulker's Leather Bracers
-					i(252525),	-- Skulker's Leather Gloves
-					i(252535),	-- Skulker's Leather Shoulder
-					i(252474),	-- Skulker's Leather Waistguard
-					i(252471),	-- Skycaller's Leather Boots
-					i(252542),	-- Skycaller's Leather Bracers
-					i(252529),	-- Skycaller's Leather Gloves
-					i(252537),	-- Skycaller's Leather Shoulder
-					i(252476),	-- Skycaller's Leather Waistguard
-					i(252526),	-- Stalker's Leather Gloves
-					i(252432),	-- Stormrider's Leather Belt
-					i(252443),	-- Stormrider's Leather Boots
-					i(252506),	-- Stormrider's Leather Hood
-					i(252518),	-- Stormrider's Leather Kilt
-					i(252510),	-- Stormrider's Leather Tunic
-					i(252552),	-- Tooled Leather Armor
-					i(252431),	-- Totemic Leather Belt
-					i(252442),	-- Totemic Leather Boots
-					i(252448),	-- Totemic Leather Hood
-					i(252458),	-- Totemic Leather Leggings
-					i(252451),	-- Totemic Leather Tunic
-					i(252429),	-- Trapper's Leather Belt
-					i(252440),	-- Trapper's Leather Boots
-					i(252505),	-- Trapper's Leather Hood
-					i(252517),	-- Trapper's Leather Legguards
-					i(252509),	-- Trapper's Leather Tunic
-					i(252470),	-- Warden's Leather Boots
-					i(252541),	-- Warden's Leather Bracers
-					i(252527),	-- Warden's Leather Gloves
-					i(252536),	-- Warden's Leather Shoulder
-					i(252475),	-- Warden's Leather Waistguard
-					i(252433),	-- Wisdom's Leather Belt
-					i(252444),	-- Wisdom's Leather Boots
-					i(252507),	-- Wisdom's Leather Hood
-					i(252519),	-- Wisdom's Leather Leggings
-					i(252511),	-- Wisdom's Leather Tunic
-					-- Unknown
-					i(275612),	-- Bileblister Boots
-					i(275610),	-- Bileblister Claws
-					i(275611),	-- Bileblister Girdle
-					i(252480),	-- Blue Suede Armor
-					i(252481),	-- Blue Suede Belt
-					i(252559),	-- Blue Suede Bracers
-					i(252546),	-- Blue Suede Gloves
-					i(252482),	-- Blue Suede Hat
-					i(252478),	-- Blue Suede Pants
-					i(252467),	-- Blue Suede Shoes
-					i(252554),	-- Blue Suede Shoulder
-					i(252494),	-- Brawler's Leather Gloves
-					i(252483),	-- Dawn Armor
-					i(252496),	-- Defender's Leather Gloves
-					i(279254),	-- Elderwild Pants
-					i(279252),	-- Elderwild Waistcord
-					i(275615),	-- Hivethrasher's Boots
-					i(275613),	-- Hivethrasher's Claws
-					i(275614),	-- Hivethrasher's Girdle
-					i(252486),	-- Ironfeather Leggings
-					i(252561),	-- Living Crown
-					i(252551),	-- Mender's Leather Gauntlets
-					i(252533),	-- Mender's Leather Shoes
-					i(279253),	-- Outlaw's Collar
-					i(252547),	-- Prowler's Leather Gauntlets
-					i(252465),	-- Prowler's Leather Shoes
-					i(252548),	-- Skulker's Leather Gauntlets
-					i(252531),	-- Skulker's Leather Shoes
-					i(252550),	-- Skycaller's Leather Gauntlets
-					i(252532),	-- Skycaller's Leather Shoes
-					i(252498),	-- Stormrider's Leather Gloves
-					i(252484),	-- Timbermaw Tunic
-					i(252544),	-- Tooled Leather Belt
-					i(252545),	-- Tooled Leather Boots
-					i(252557),	-- Tooled Leather Bracers
-					i(252555),	-- Tooled Leather Crown
-					i(252558),	-- Tooled Leather Epaulets
-					i(252553),	-- Tooled Leather Gauntlets
-					i(252560),	-- Tooled Leather Pants
-					i(252497),	-- Totemic Leather Gloves
-					i(252495),	-- Trapper's Leather Gloves
-					i(252485),	-- Warbear Helm
-					i(252549),	-- Warden's Leather Gauntlets
-					i(252466),	-- Warden's Leather Shoes
-					i(252479),	-- Wicked Leather Boots
-					i(252556),	-- Wicked Leather Shoulder
-					i(252499),	-- Wisdom's Leather Gloves
+				i(277025),	-- Azure Gustwoven Belt
+				i(277027),	-- Azure Gustwoven Boots
+				i(277023),	-- Azure Gustwoven Bracers
+				i(277024),	-- Azure Gustwoven Gloves
+				i(277022),	-- Azure Gustwoven Harness
+				i(277050),	-- Azure Gustwoven Hood
+				i(277051),	-- Azure Gustwoven Spaulders
+				i(277026),	-- Azure Gustwoven Trousers
+				i(277029),	-- Azure Windraveled Armguards
+				i(277052),	-- Azure Windraveled Cover
+				i(277053),	-- Azure Windraveled Drapes
+				i(277033),	-- Azure Windraveled Footwraps
+				i(277028),	-- Azure Windraveled Jerkin
+				i(277030),	-- Azure Windraveled Mitts
+				i(277032),	-- Azure Windraveled Pants
+				i(277031),	-- Azure Windraveled Strap
+				i(252424),	-- Black Whelp Slippers
+				i(252490),	-- Brawler's Leather Armor
+				i(252428),	-- Brawler's Leather Belt
+				i(252439),	-- Brawler's Leather Boots
+				i(252512),	-- Brawler's Leather Helm
+				i(252504),	-- Brawler's Leather Hood
+				i(252516),	-- Brawler's Leather Legguards
+				i(252500),	-- Brawler's Leather Pants
+				i(252508),	-- Brawler's Leather Tunic
+				i(277001),	-- Cloudy Gustwoven Belt
+				i(277003),	-- Cloudy Gustwoven Boots
+				i(276999),	-- Cloudy Gustwoven Bracers
+				i(277000),	-- Cloudy Gustwoven Gloves
+				i(276998),	-- Cloudy Gustwoven Harness
+				i(277042),	-- Cloudy Gustwoven Hood
+				i(277043),	-- Cloudy Gustwoven Spaulders
+				i(277002),	-- Cloudy Gustwoven Trousers
+				i(277005),	-- Cloudy Windraveled Armguards
+				i(277044),	-- Cloudy Windraveled Cover
+				i(277045),	-- Cloudy Windraveled Drapes
+				i(277009),	-- Cloudy Windraveled Footwraps
+				i(277004),	-- Cloudy Windraveled Jerkin
+				i(277006),	-- Cloudy Windraveled Mitts
+				i(277008),	-- Cloudy Windraveled Pants
+				i(277007),	-- Cloudy Windraveled Strap
+				i(252425),	-- Dark Leather Boots
+				i(252434),	-- Defender's Leather Armor
+				i(252430),	-- Defender's Leather Belt
+				i(252441),	-- Defender's Leather Boots
+				i(252455),	-- Defender's Leather Helm
+				i(252447),	-- Defender's Leather Hood
+				i(252457),	-- Defender's Leather Kilt
+				i(252445),	-- Defender's Leather Pants
+				i(252450),	-- Defender's Leather Tunic
+				i(252449),	-- Hillman's Leather Boots
+				i(252523),	-- Mender's Leather Belt
+				i(252472),	-- Mender's Leather Boots
+				i(252543),	-- Mender's Leather Bracers
+				i(252530),	-- Mender's Leather Gloves
+				i(252538),	-- Mender's Leather Shoulder
+				i(252477),	-- Mender's Leather Waistguard
+				i(252427),	-- Moonglow Boots
+				i(252426),	-- Murloc Scale Shoes
+				i(252459),	-- Prowler's Leather Belt
+				i(252468),	-- Prowler's Leather Boots
+				i(252539),	-- Prowler's Leather Bracers
+				i(252524),	-- Prowler's Leather Gloves
+				i(252534),	-- Prowler's Leather Shoulder
+				i(252473),	-- Prowler's Leather Waistguard
+				i(252461),	-- Skirmisher's Leather Belt
+				i(252528),	-- Skirmisher's Leather Gloves
+				i(252520),	-- Skulker's Leather Belt
+				i(252469),	-- Skulker's Leather Boots
+				i(252540),	-- Skulker's Leather Bracers
+				i(252525),	-- Skulker's Leather Gloves
+				i(252535),	-- Skulker's Leather Shoulder
+				i(252474),	-- Skulker's Leather Waistguard
+				i(252522),	-- Skycaller's Leather Belt
+				i(252471),	-- Skycaller's Leather Boots
+				i(252542),	-- Skycaller's Leather Bracers
+				i(252529),	-- Skycaller's Leather Gloves
+				i(252537),	-- Skycaller's Leather Shoulder
+				i(252476),	-- Skycaller's Leather Waistguard
+				i(252521),	-- Stalker's Leather Belt
+				i(252526),	-- Stalker's Leather Gloves
+				i(252492),	-- Stormrider's Leather Armor
+				i(252432),	-- Stormrider's Leather Belt
+				i(252443),	-- Stormrider's Leather Boots
+				i(252514),	-- Stormrider's Leather Helm
+				i(252506),	-- Stormrider's Leather Hood
+				i(252518),	-- Stormrider's Leather Kilt
+				i(252502),	-- Stormrider's Leather Pants
+				i(252510),	-- Stormrider's Leather Tunic
+				i(252552),	-- Tooled Leather Armor
+				i(252435),	-- Totemic Leather Armor
+				i(252431),	-- Totemic Leather Belt
+				i(252442),	-- Totemic Leather Boots
+				i(252456),	-- Totemic Leather Helm
+				i(252448),	-- Totemic Leather Hood
+				i(252458),	-- Totemic Leather Leggings
+				i(252446),	-- Totemic Leather Pants
+				i(252451),	-- Totemic Leather Tunic
+				i(252491),	-- Trapper's Leather Armor
+				i(252429),	-- Trapper's Leather Belt
+				i(252440),	-- Trapper's Leather Boots
+				i(252513),	-- Trapper's Leather Helm
+				i(252505),	-- Trapper's Leather Hood
+				i(252517),	-- Trapper's Leather Legguards
+				i(252501),	-- Trapper's Leather Pants
+				i(252509),	-- Trapper's Leather Tunic
+				i(252460),	-- Warden's Leather Belt
+				i(252470),	-- Warden's Leather Boots
+				i(252541),	-- Warden's Leather Bracers
+				i(252527),	-- Warden's Leather Gloves
+				i(252536),	-- Warden's Leather Shoulder
+				i(252475),	-- Warden's Leather Waistguard
+				i(252493),	-- Wisdom's Leather Armor
+				i(252433),	-- Wisdom's Leather Belt
+				i(252444),	-- Wisdom's Leather Boots
+				i(252515),	-- Wisdom's Leather Helm
+				i(252507),	-- Wisdom's Leather Hood
+				i(252519),	-- Wisdom's Leather Leggings
+				i(252503),	-- Wisdom's Leather Pants
+				i(252511),	-- Wisdom's Leather Tunic
+				-- Unknown
+				i(275612),	-- Bileblister Boots
+				i(275610),	-- Bileblister Claws
+				i(275611),	-- Bileblister Girdle
+				i(252480),	-- Blue Suede Armor
+				i(252481),	-- Blue Suede Belt
+				i(252559),	-- Blue Suede Bracers
+				i(252546),	-- Blue Suede Gloves
+				i(252482),	-- Blue Suede Hat
+				i(252478),	-- Blue Suede Pants
+				i(252467),	-- Blue Suede Shoes
+				i(252554),	-- Blue Suede Shoulder
+				i(252494),	-- Brawler's Leather Gloves
+				i(252483),	-- Dawn Armor
+				i(252496),	-- Defender's Leather Gloves
+				i(279254),	-- Elderwild Pants
+				i(279252),	-- Elderwild Waistcord
+				i(275615),	-- Hivethrasher's Boots
+				i(275613),	-- Hivethrasher's Claws
+				i(275614),	-- Hivethrasher's Girdle
+				i(252486),	-- Ironfeather Leggings
+				i(252561),	-- Living Crown
+				i(252551),	-- Mender's Leather Gauntlets
+				i(252533),	-- Mender's Leather Shoes
+				i(279253),	-- Outlaw's Collar
+				i(252547),	-- Prowler's Leather Gauntlets
+				i(252465),	-- Prowler's Leather Shoes
+				i(252548),	-- Skulker's Leather Gauntlets
+				i(252531),	-- Skulker's Leather Shoes
+				i(252550),	-- Skycaller's Leather Gauntlets
+				i(252532),	-- Skycaller's Leather Shoes
+				i(252498),	-- Stormrider's Leather Gloves
+				i(252484),	-- Timbermaw Tunic
+				i(252544),	-- Tooled Leather Belt
+				i(252545),	-- Tooled Leather Boots
+				i(252557),	-- Tooled Leather Bracers
+				i(252555),	-- Tooled Leather Crown
+				i(252558),	-- Tooled Leather Epaulets
+				i(252553),	-- Tooled Leather Gauntlets
+				i(252560),	-- Tooled Leather Pants
+				i(252497),	-- Totemic Leather Gloves
+				i(252495),	-- Trapper's Leather Gloves
+				i(252485),	-- Warbear Helm
+				i(252549),	-- Warden's Leather Gauntlets
+				i(252466),	-- Warden's Leather Shoes
+				i(252479),	-- Wicked Leather Boots
+				i(252556),	-- Wicked Leather Shoulder
+				i(252499),	-- Wisdom's Leather Gloves
 			}),
 			filter(MAIL, {
 				i(252591),	-- Mender's Mail Belt
@@ -722,7 +812,24 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 		}),
 		filter(MISC, {
 			i(279978),	-- Camp Tent
+			i(279945),	-- Sewing Machine
 			i(279941),	-- Tanning Rack
+			i(34086),	-- Winter Boots
+		}),
+	}),
+	prof(MINING, {
+		header(HEADERS.Spell, 2656, {
+			i(249726, {	-- Azerothium Bar
+				cost = { { "i", 249426, 2 }, { "i", 3857, 1 } },	-- 2x Pitchblende, 1x Coal
+			}),
+			i(251291, {	-- Heavy Thorium Bar
+				cost = { { "i", 248815, 1 } },	-- Heavy Thorium Ore
+			}),
+		}),
+		filter(MISC, {
+			i(279960),	-- Lodestone
+			i(279952),	-- Molten Foundry
+			i(279948),	-- Rock Garden
 		}),
 	}),
 	prof(TAILORING, {
@@ -931,7 +1038,9 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(279972, {	-- Faction Banner [H]
 				races = HORDE_ONLY,
 			}),
+			i(34087),	-- Green Winter Clothes
 			i(279959),	-- Loom
+			i(34085),	-- Red Winter Clothes
 			i(279943),	-- Spinning Wheel
 		}),
 	}),

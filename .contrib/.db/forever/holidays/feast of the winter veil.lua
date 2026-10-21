@@ -64,6 +64,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 			description = "These recipes are mailed to characters with the corresponding profession(s) at the start of the event.",
 			groups = {
 				i(17724),	-- Pattern: Green Holiday Shirt (RECIPE!)
+				-- TODO: Wowhead doesn't list a source for these in Forever yet; this follows how they were mailed in TBC. Confirm during the first Winter Veil.
+				i(34261, {	-- Pattern: Green Winter Clothes (RECIPE!)
+					description = "Horde Tailors receive this pattern in the mail.",
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(34319, {	-- Pattern: Red Winter Clothes (RECIPE!)
+					description = "Alliance Tailors receive this pattern in the mail.",
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(34262, {	-- Pattern: Winter Boots (RECIPE!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 				i(17712, {	-- Winter Veil Disguise Kit (TOY!)
 					description = "Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",
 					sourceQuests = {
