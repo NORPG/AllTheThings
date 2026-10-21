@@ -390,8 +390,10 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 	local showUnsorted = settings:GetTooltipSetting("SourceLocations:Unsorted");
 	local showCompleted = settings:GetTooltipSetting("SourceLocations:Completed");
 	local issecretvalue = app.WOWAPI.issecretvalue
+	local filters = app.Modules.Filter.Filters
+	---@type function,function,function,function
 	local FilterSettings, FilterInGame, FilterCharacter, FirstParent
-		= app.RecursiveGroupRequirementsFilter, app.Modules.Filter.Filters.InGame, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
+		= filters.RecursiveGroupRequirementsFilter, filters.InGame, filters.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
 	local sourcesToShow
 	-- paramB is the modItemID for itemID searches, so we may have to fallback to the base itemID if nothing sourced for the modItemID
 	-- TODO: Rings from raid showing all difficulties, need fallback matching for items... modItemID, modID, itemID
@@ -535,8 +537,10 @@ local function GetSearchResults(method, paramA, paramB, options)
 	if paramB then paramB = tonumber(paramB);
 	else rawlink = paramA; end
 
-	local RecursiveCharacterRequirementsFilter, RecursiveGroupRequirementsFilter
-		= app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter
+	local filters = app.Modules.Filter.Filters
+	---@type function,function,function
+	local RecursiveCharacterRequirementsFilter, RecursiveGroupRequirementsFilter, RecursiveUnobtainableFilter
+		= filters.RecursiveCharacterRequirementsFilter, filters.RecursiveGroupRequirementsFilter, filters.RecursiveUnobtainableFilter
 
 	-- Call to the method to search the database.
 	local group, a, b
@@ -568,7 +572,7 @@ local function GetSearchResults(method, paramA, paramB, options)
 				local rank = options and options.Rank
 				if app.MODE_ACCOUNT then
 					for i,j in ipairs(group) do
-						if j.rank == rank and app.RecursiveUnobtainableFilter(j) then
+						if j.rank == rank and RecursiveUnobtainableFilter(j) then
 							if j.mapID or j.parent == nil or j.parent.parent == nil then
 								tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
 							else
@@ -578,7 +582,7 @@ local function GetSearchResults(method, paramA, paramB, options)
 					end
 				else
 					for i,j in ipairs(group) do
-						if j.rank == rank and RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) and RecursiveGroupRequirementsFilter(j) then
+						if j.rank == rank and RecursiveCharacterRequirementsFilter(j) and RecursiveUnobtainableFilter(j) and RecursiveGroupRequirementsFilter(j) then
 							if j.mapID or j.parent == nil or j.parent.parent == nil then
 								tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
 							else
@@ -594,13 +598,13 @@ local function GetSearchResults(method, paramA, paramB, options)
 				local regroup = {};
 				if app.MODE_ACCOUNT then
 					for i,j in ipairs(group) do
-						if app.RecursiveUnobtainableFilter(j) then
+						if RecursiveUnobtainableFilter(j) then
 							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
 						end
 					end
 				else
 					for i,j in ipairs(group) do
-						if RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) and RecursiveGroupRequirementsFilter(j) then
+						if RecursiveCharacterRequirementsFilter(j) and RecursiveUnobtainableFilter(j) and RecursiveGroupRequirementsFilter(j) then
 							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
 						end
 					end
@@ -1222,7 +1226,7 @@ local function BuildSourceParent(group)
 			-- otherwise the visibility can be driven by the nested thing
 			parent.OnSetVisibility = not parent.g and app.AlwaysShowUpdate or nil	-- TODO: filter actual unobtainable sources...
 		end
-		PriorityNestObjects(sourceGroup, parents, nil, app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter);
+		PriorityNestObjects(sourceGroup, parents, nil, app.Modules.Filter.Filters.RecursiveCharacterRequirementsFilter, app.Modules.Filter.Filters.RecursiveGroupRequirementsFilter);
 		NestObject(group, sourceGroup, nil, 1);
 	end
 end

@@ -1184,10 +1184,14 @@ local function CheckFollowupQuests(questID)
 	if questID then
 		local nextQuests = SearchForField("nextQuests", questID);
 		if #nextQuests > 0 then
+			local filters = app.Modules.Filter.Filters
+			---@type function,function,function
+			local RecursiveCharacterRequirementsFilter, RecursiveUnobtainableFilter
+				= filters.RecursiveCharacterRequirementsFilter, filters.RecursiveUnobtainableFilter
 			-- should never use CreateQuest since it would mean we have sourceQuests linked to a QuestID which isn't cached
 			local accepted = Search("questID", questID) or app.CreateQuest(questID)
 			for _,bc in pairs(nextQuests) do
-				if bc.collectible and not bc.collected and not bc.locked and app.RecursiveCharacterRequirementsFilter(bc) and app.RecursiveUnobtainableFilter(bc) then
+				if bc.collectible and not bc.collected and not bc.locked and RecursiveCharacterRequirementsFilter(bc) and RecursiveUnobtainableFilter(bc) then
 					Runner.Run(PrintBreadcrumbWarning, accepted, bc)
 				end
 			end

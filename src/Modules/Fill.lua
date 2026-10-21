@@ -434,6 +434,13 @@ local FillStopTypes = {
 	EnsembleItem = 1,
 	EnsembleSpell = 1,
 }
+---@type function,function
+local RecursiveCharacterRequirementsFilter,RecursiveGroupRequirementsFilter
+app.AddEventHandler("OnLoad", function()
+	local filters = app.Modules.Filter.Filters
+	RecursiveCharacterRequirementsFilter,RecursiveGroupRequirementsFilter =
+	filters.RecursiveCharacterRequirementsFilter,filters.RecursiveGroupRequirementsFilter
+end)
 local function FillGroupDirect(group, FillData, doDGU)
 	local groups, temp = {}, {}
 	-- only use Fillers from within the respective FillData.Fillers
@@ -455,7 +462,7 @@ local function FillGroupDirect(group, FillData, doDGU)
 	end
 
 	-- Adding the groups normally based on available-source priority
-	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter);
+	PriorityNestObjects(group, groups, nil, RecursiveCharacterRequirementsFilter, RecursiveGroupRequirementsFilter);
 
 	-- if FillData.Debug then
 	-- 	app.PrintDebug("FG-MergeResults",app:SearchLink(group),#groups,"=>",#group.g)

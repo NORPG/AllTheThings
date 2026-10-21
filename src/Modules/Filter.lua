@@ -623,7 +623,6 @@ local function RecursiveUnobtainableFilter(group)
 	end
 	return true;
 end
-app.RecursiveUnobtainableFilter = RecursiveUnobtainableFilter;
 api.Filters.RecursiveUnobtainableFilter = RecursiveUnobtainableFilter
 -- Recursively check outwards to find if any parent group restricts the filter for the current character (regardless of settings)
 local function RecursiveCharacterRequirementsFilter(group)
@@ -633,7 +632,6 @@ local function RecursiveCharacterRequirementsFilter(group)
 	end
 	return true;
 end
-app.RecursiveCharacterRequirementsFilter = RecursiveCharacterRequirementsFilter;
 api.Filters.RecursiveCharacterRequirementsFilter = RecursiveCharacterRequirementsFilter
 local function RecursiveDefaultCharacterRequirementsFilter(group)
 	local defaultClassFilter, defaultRaceFilter = api.Filters.Class, api.Filters.Race;
@@ -643,7 +641,8 @@ local function RecursiveDefaultCharacterRequirementsFilter(group)
 	end
 	return true;
 end
-app.RecursiveDefaultCharacterRequirementsFilter = RecursiveDefaultCharacterRequirementsFilter;
+-- no references in ATT, but maybe someone started using this function somewhere
+app.RecursiveDefaultCharacterRequirementsFilter = function() app.print("RecursiveDefaultCharacterRequirementsFilter is accessible via AllTheThings.Modules.Filter.Filters.RecursiveDefaultCharacterRequirementsFilter and not supported here") end;
 api.Filters.RecursiveDefaultCharacterRequirementsFilter = RecursiveDefaultCharacterRequirementsFilter
 local function RecursiveFilter(group, filterName)
 	local filter = api.Filters[filterName]
