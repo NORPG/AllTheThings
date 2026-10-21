@@ -1495,6 +1495,7 @@ q(92434,{coords={
 [1424]={{61.6,20.85}}},lvl=30,maps={1416,1421},qgs={2410},qis={279469},r=1,sourceQuests={545,93680}}),
 q(92459,{coords={
 [1421]={{68.6,45.2}}},lvl=24,qgs={269127},qis={251961},r=2,sourceQuests={92458}}),
+q(93689,{lvl=24,u=1}),
 q(92458,{coords={
 [1421]={{68.6,45.2}}},lvl=24,qgs={269127},qis={277507},r=2,sourceQuests={92432},g={
 qo(1,{crs={246020},providers={{"i",251961}}}),
@@ -2735,13 +2736,13 @@ inst(246,{coords={
 [1422]={{69.07,72.96}}},cost={{"i",13704,1}},icon=136355,lore="The Scholomance is housed within a series of crypts that lie beneath the ruined keep of Caer Darrow. Once owned by the noble Barov family, Caer Darrow fell to ruin following the Second War. As the wizard Kel'thuzad enlisted followers for his Cult of the Damned he would often promise immortality in exchange for serving his Lich King. The Barov family fell to Kel'thuzad's charismatic influence and donated the keep and its crypts to the Scourge. The cultists then killed the Barovs and turned the ancient crypts into a school for necromancy known as the Scholomance. Though Kel'thuzad no longer resides in the crypts, devoted cultists and instructors still remain. The powerful lich, Ras Frostwhisper, rules over the site and guards it in the Scourge's name - while the mortal necromancer, Darkmaster Gandling, serves as the school's insidious headmaster.",lvl=55,mapID=476,sourceQuests={5505,5511},zoneTextAreaID=2057,g={
 h(-45,{
 q(8259,{altQuests={8258},c={7},coords={
-[1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,sourceQuests={7668},g={
+[1454]={{38.7,35.9}}},lvl=55,qgs={13417},races={2,6,8,96},sourceQuests={7668},g={
 s(164185,20134,{f=6,loc=40})}}),
 q(7666,{c={2},coords={
-[1453]={{48.6,50}}},lvl=60,qgs={928},r=2,repeatable=1,sourceQuests={7647},g={
+[1453]={{48.6,50}}},lvl=60,qgs={928},races={1,3},repeatable=1,sourceQuests={7647},g={
 i(18746,{spellID=23204})}}),
 q(7669,{c={7},coords={
-[1454]={{38.7,35.9}}},lvl=60,qgs={13417},r=1,repeatable=1,sourceQuests={8258},g={
+[1454]={{38.7,35.9}}},lvl=60,qgs={13417},races={2,6,8,96},repeatable=1,sourceQuests={8258},g={
 i(18746,{spellID=23204})}}),
 q(5803,{coords={
 [1422]={{42.7,83.8}}},lvl=55,qgs={11056},r=2,sourceQuests={5801},g={
@@ -2795,14 +2796,14 @@ q(5515,{coords={
 [1422]={{70.2,73.7}}},lvl=55,qgs={11216},sourceQuests={5382},g={
 qo(1,{providers={{"i",13725}}})}}),
 q(7647,{c={2},coords={
-[1453]={{48.6,50}}},lvl=60,qgs={928},qis={18804},r=2,sourceQuests={7646},g={
+[1453]={{48.6,50}}},lvl=60,qgs={928},qis={18804},races={1,3},sourceQuests={7646},g={
 qo(1,{cost={{"i",18749,1}},crs={14516,14568},providers={{"i",18799}}}),
 qo(2,{providers={{"i",18792}}}),
 mnt(23214,{c={2},lvl=60,r=2})}}),
 q(5522,{coords={
 [1428]={{65.2,23.8}}},lvl=57,qgs={10267},qis={13761},sourceQuests={4735}}),
 q(7667,{c={7},coords={
-[1454]={{39.2,48.4}}},cost={{"i",18335,1},{"i",12800,1}},lvl=58,qgs={13417},r=1}),
+[1454]={{39.2,48.4}}},cost={{"i",18335,1},{"i",12800,1}},lvl=58,qgs={13417},races={2,6,8,96}}),
 q(5463,{coords={
 [1423]={{81.7,57.8}}},description="Take the Keepsake to the symbol on the floor in Baron Rivendare's room in Stratholme.",lvl=57,maps={317},qgs={11036},qis={13585},sourceQuests={5462}}),
 q(5464,{lvl=57,maps={317},providers={{"o",176631}},qis={13624},sourceQuests={5463}}),
@@ -2826,11 +2827,11 @@ qo(1,{crs={1783,1784,1785,1787,1788,1789},providers={{"i",14619}}})}}),
 q(5465,{coords={
 [1423]={{81.7,57.8}}},lvl=57,qgs={11036},qis={13624},sourceQuests={5464}}),
 q(7668,{c={7},coords={
-[1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,sourceQuests={7667},g={
+[1454]={{38.7,35.9}}},lvl=55,qgs={13417},races={2,6,8,96},sourceQuests={7667},g={
 qo(1,{crs={14516},providers={{"i",18880}}}),
 s(163692,18807,{b=1,f=6,loc=40})}}),
 q(8258,{altQuests={7668},c={7},coords={
-[1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,sourceQuests={7667},g={
+[1454]={{38.7,35.9}}},lvl=55,qgs={13417},races={2,6,8,96},sourceQuests={7667},g={
 qo(1,{crs={14516},providers={{"i",18880}}}),
 s(164185,20134,{f=6,loc=40})}}),
 q(5462,{coords={
@@ -3599,7 +3600,7 @@ i(19990,{f=53,spellID=24354}),
 i(20006,{f=52}),
 s(164137,20082,{f=27})}}),
 q(8413,{c={7},coords={
-[1416]={{80.4,66.8}}},lvl=50,qgs={6176},r=1,sourceQuests={8412},g={
+[1416]={{80.4,66.8}}},lvl=50,qgs={6176},races={2,6,8,96},sourceQuests={8412},g={
 qo(1,{providers={{"i",20606}}}),
 qo(2,{providers={{"i",20607}}}),
 qo(3,{providers={{"i",20608}}}),
@@ -3613,7 +3614,7 @@ s(164109,20035,{f=20,spellID=24392}),
 i(20036,{f=53,spellID=24389}),
 i(20037,{f=51})}}),
 q(8418,{c={2},coords={
-[1422]={{42.8,84}}},lvl=50,qgs={10838},r=2,sourceQuests={8416},g={
+[1422]={{42.8,84}}},lvl=50,qgs={10838},races={1,3},sourceQuests={8416},g={
 qo(1,{providers={{"i",20606}}}),
 qo(2,{providers={{"i",20607}}}),
 qo(3,{providers={{"i",20608}}}),
