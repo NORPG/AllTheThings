@@ -3821,8 +3821,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["coord"] = { 67.2, 76.7, DUSKWOOD },
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
-			["qi"] = 271051,	-- Sugar Beet (QI!)
 			["groups"] = {
+				o(644613, {	-- Sugar Beet
+					i(271051),	-- Sugar Beet (QI!)
+				}),
+				--
 				i(TRICKY_TREAT),
 				i(DUSKWOOD_CARAMEL),
 			},
@@ -3833,8 +3836,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["coord"] = { 67.2, 76.7, DUSKWOOD },
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
-			["qi"] = 258217,	-- Honey Drops (QI!)
 			["groups"] = {
+				o(612154, {	-- Bee Hive
+					i(258217),	-- Honey Drops (QI!)
+				}),
+				--
 				i(TRICKY_TREAT),
 				i(DUSKWOOD_CARAMEL),
 			},

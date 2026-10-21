@@ -8,7 +8,7 @@ local THALASSIAN_TOKEN_OF_MERIT_S2 = 269862;
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.SILVERMOON_CITY, {
 		n(VENDORS, {
-			n(261303, {	-- Agmera
+			n(261303, {	-- Agmera <Dungeon Exploration Equipment>
 				["coord"] = { 42.1, 58.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 				["groups"] = {
 					i(259996, {	-- Quel'Thalas Equipment Chest
@@ -17,11 +17,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						["sym"] = {
 							-- MID Season 1 dungeons (Normal+ difficulty)
 							{"select", "instanceID"
-								,1201	-- Algeth'ar Academy
-								,1300	-- Magister's Terrace
-								,1315	-- Maisara Caverns
-								,1316	-- Nexus-Point Xenas
-								,1299	-- Windrunner Spire
+								,1030	-- Temple of Sethraliss
+								,1041	-- Kings' Rest
+								,1202	-- Ruby Life Pools
+								,1322	-- Altar of Fangs
+								,1304	-- Murder Row
+								,1311	-- Den of Nalorakk
+								,1313	-- Voidscar Arena
+								,1309	-- The Blinding Vale
 							},
 							{"pop"},
 							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
@@ -58,6 +61,25 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							{"where","difficultyID",DIFFICULTY.DUNGEON.MYTHIC},
 							{"extract", "itemID"},
 							SYM.SUB.INVTYPE_ALL_SLOTS,
+						},
+					}),
+					i(274272, {	-- Amani Equipment Chest
+						["timeline"] = { ADDED_12_1_5, REMOVED_12_2_0 },
+						["cost"] = { { "c", VOIDLIGHT_MARL, 750 } },
+						["sym"] = {
+							-- MID Season 2 dungeons (Normal+ difficulty)
+							{"select", "instanceID"
+								,1201	-- Algeth'ar Academy
+								,1300	-- Magister's Terrace
+								,1315	-- Maisara Caverns
+								,1316	-- Nexus-Point Xenas
+								,1299	-- Windrunner Spire
+							},
+							{"pop"},
+							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
+							{"extract", "itemID"},
+							SYM.SUB.INVTYPE_ALL_SLOTS,
+							{"finalize"},
 						},
 					}),
 				},

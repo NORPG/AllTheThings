@@ -639,6 +639,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 							["classes"] = { HUNTER },
 						})),
 					}),
+					i(271991, { ["timeline"] = { ADDED_12_1_5, REMOVED_12_2_0 } }),	-- Venomous Equipment Chest
 				},
 			}),
 			--[[o(532226, {	-- The Catalyst

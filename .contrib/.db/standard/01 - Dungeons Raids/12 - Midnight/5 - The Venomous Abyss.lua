@@ -404,47 +404,47 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					q(96794),	-- Fury of the Dead
 				}),
 				BossOnly(NEKZALI, {
-					i(278285, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Soulcoiler Nek'zali
+					i(278285, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Soulcoiler Nek'zali
 					i(280305),	-- Soulcoil Remnant (PET!)
 					i(279115),	-- Soulcoiler's Ritual Candle (DECOR!)
 					i(281227),	-- Soulcoiler's Rush'kah (COSMETIC!)
 				}),
 				BossOnly(ENTOMBED, {
-					i(278283, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Entombed Sentinels
 					i(264716),	-- Hexed Tomb Brazier (DECOR!) [NYI??]
+					i(278283, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Entombed Sentinels
 				}),
 				BossOnly(VASHNIK, {
-					i(278287, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Vashnik
+					i(278287, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Vashnik
 					i(272361),	-- Venomous Pyre (DECOR!)
 				}),
 				BossOnly(EXPLORERS, {
 					i(279118),	-- Lost Explorers Mailbox (DECOR!)
-					i(278286, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Tortollan Explorers
+					i(278286, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Tortollan Explorers
 				}),
 				BossOnly(SSZORAK, {
-					i(278288, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Sszorak
+					i(278288, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Sszorak
 					i(244343),	-- Vessel of the Howling Ossuary (DECOR!) [Check]
 				}),
 				BossOnly(TWIN_FANGS, {
-					i(278289, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: The Twin Fangs
+					i(278289, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: The Twin Fangs
 					i(273070),	-- Pattern: Adorned Fang (RECIPE!)
 					i(279122),	-- Venom-Fanged Font (DECOR)
 				}),
 				BossOnly(COILED_ALTAR, {
-					i(279131),	-- Pillar of the Coiled Isle (DECOR!)
 					i(275938),	-- Hex Lord's Gaze (COSMETIC!)
 					i(279449, {	-- Hex Troll Mask Fragment
 						i(275937),	-- Hex Lord's Visage (COSMETIC!)
 					}),
-					i(278290, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: The Coiled Alter
+					i(278290, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: The Coiled Alter
+					i(279131),	-- Pillar of the Coiled Isle (DECOR!)
 				}),
 				BossOnly(ULATEK, {
-					i(271092),	-- Jan'thrazet, the Soul Fang
-					i(271093),	-- Zatha'tek, Breath of Corruption
 					i(279500),	-- "Rage of the Shackled" Mural (DECOR!)
 					i(278340),	-- Blighted Pearl (CI!)
-					i(278284, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Ula'tek
+					i(271092),	-- Jan'thrazet, the Soul Fang
+					i(278284, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Ula'tek
 					i(279127, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- The Venomous Abyss Argent Trophy (DECOR!)
+					i(271093),	-- Zatha'tek, Breath of Corruption
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({

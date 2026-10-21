@@ -183,7 +183,6 @@ root(ROOTS.Unsorted, {
 			i(271053),	-- Cleansing Water
 			i(271131),	-- Test Weapon
 			i(271155),	-- Test Weapon 2
-			i(271991),	-- Venomous Equipment Chest
 			i(272358),	-- Seaside Firefly Jar
 			i(273004),	-- Corrosive Reroll
 			i(273311),	-- Kobold Candle Collection
@@ -192,7 +191,6 @@ root(ROOTS.Unsorted, {
 			i(273818),	-- [DNT] Knowledge Tome: Midnight Herbalism
 			i(273848),	-- Snake Scales
 			i(273881),	-- Anti-Venom Shell
-			i(274272),	-- Amani Equipment Chest
 			i(274372),	-- Big ol' Bag of Polished Pet Charms
 			i(274421),	-- Crate of Community Coupons
 			i(274423),	-- Unborn Val'kyr

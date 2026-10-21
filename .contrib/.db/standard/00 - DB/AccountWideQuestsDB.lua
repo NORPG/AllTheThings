@@ -2918,6 +2918,8 @@ local AccountWideQuestsDB = {
 	97115,	-- First Preference Killing of the week
 	97116,	-- Has rolled for Ahune Special Loot (Daily Accountwide)
 	97131,	-- Sturdy Chest [The Labyrinth of Kindo'jan]
+	97379,	-- Contract: Zul'jarra's Forces+
+	97380,	-- Contract: Zul'jarra's Forces++
 	97383,	-- Spirit Corrosion
 	97616,	-- Corrosive Gifts: Corrosive Power
 	97640,	-- Vaults of Atal'Utek: One Coin Too Many
@@ -2950,6 +2952,7 @@ local AccountWideQuestsDB = {
 	98354,	-- Sss'alik weekly reputation obtained.
 	98355,	-- Destra weekly reputation obtained.
 	98388,	-- Into the Vaults of Atal'Utek
+	98379,	-- Ancient Depths, Ancient Venom
 	98406,	-- A Curated Gift
 	98428,	-- Vaults of Atal'Utek: The Altar of Corrosion
 	98515,	-- Vaults of Atal'Utek: A Toxic Tour
