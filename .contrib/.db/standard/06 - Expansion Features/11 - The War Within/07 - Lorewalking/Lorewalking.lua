@@ -426,5 +426,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 	n(LOREWALKING, {
 		q(96552),	-- Triggered during Lorewalking: The Loa, after the cinematic where Rezan was turned into an undead
 		q(96556),	-- Triggered during Lorewalking: The Loa, after accepting 'My Prophet, My Enemy' (12646)
+		q(96657),	-- After completing Lorewalking: The Loa
 	}),
 })));

@@ -3031,15 +3031,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
-						i(15855, { 	-- Ring of Protection
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15856, { 	-- Archlight Talisman
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15857, { 	-- Magebane Scion
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15855, { ["timeline"] = { REMOVED_4_0_3 } }),	-- Ring of Protection
+						i(15856, { ["timeline"] = { REMOVED_4_0_3 } }),	-- Archlight Talisman
+						i(15857, { ["timeline"] = { REMOVED_4_0_3 } }),	-- Magebane Scion
 					},
 				}),
 				q(27391, {	-- Hidden Treasures
@@ -5178,7 +5172,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { ADDED_5_1_0 },
 				}),
-				n(10826, { 	-- Lord Darkscythe
+				n(10826, {	-- Lord Darkscythe
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 33.4, 49.6, EASTERN_PLAGUELANDS },
@@ -5256,7 +5250,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				-- #if BEFORE CATA
-				n(10822, { 	-- Warlord Thresh'jin
+				n(10822, {	-- Warlord Thresh'jin
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 60.4, 17.4, EASTERN_PLAGUELANDS },

@@ -2879,7 +2879,7 @@ CATA_PHASE_HOUR_OF_TWILIGHT = createClassicPhase({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		cn =  "暮光审判",
+		cn = "暮光审判",
 		-- TODO: tw = "",
 	},
 	description = {

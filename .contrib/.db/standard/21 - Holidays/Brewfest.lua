@@ -298,7 +298,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 	["maps"] = { DUN_MOROGH, DUROTAR },
 	["groups"] = {
 		n(ACHIEVEMENTS, {
-			ach(18579, { ["timeline"] = { ADDED_10_1_7 } }), 	-- A Round on the House (automated)
+			ach(18579, { ["timeline"] = { ADDED_10_1_7 } }),	-- A Round on the House (automated)
 			ach(41212, { ["timeline"] = { ADDED_11_2_0 } }),	-- A Round on the House in Khaz Algar (automated)
 			ach(63253, { ["timeline"] = { ADDED_12_1_0 } }),	-- A Round on the House in Midnight (automated)
 			ach(1684, {	-- Brewmaster (A)
@@ -2108,7 +2108,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						objective(1, {	-- 0/1 Maintain a Trot for 8 seconds
 							["provider"] = { "i", 33306 },	-- Ram Racing Reins
 						}),
-						objective(2, {	-- 0/1 	Maintain a Canter for 8 seconds
+						objective(2, {	-- 0/1 Maintain a Canter for 8 seconds
 							["provider"] = { "i", 33306 },	-- Ram Racing Reins
 						}),
 						objective(3, {	-- 0/1 Maintain a Gallop for 8 seconds
@@ -2137,7 +2137,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						objective(1, {	-- 0/1 Maintain a Trot for 8 seconds
 							["provider"] = { "i", 33306 },	-- Ram Racing Reins
 						}),
-						objective(2, {	-- 0/1 	Maintain a Canter for 8 seconds
+						objective(2, {	-- 0/1 Maintain a Canter for 8 seconds
 							["provider"] = { "i", 33306 },	-- Ram Racing Reins
 						}),
 						objective(3, {	-- 0/1 Maintain a Gallop for 8 seconds

@@ -3001,6 +3001,7 @@ local AccountWideQuestsDB = {
 	98848,	-- Delver's Cosmetic Surprise Bag
 	99222,	-- Bonus Reputation: Zul'jarra's Forces [Delve Completion]
 	99306,	-- The Labyrinth of Kindo'jan
+	99312,	-- On the Trail of Kindo'jan
 
 	-- Weird partial cases... ??
 	-- 45237,	-- Ensemble: Funerary Plate of the Chosen Dead (Only flags complete for Plate characters)

@@ -154,3 +154,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		}),
 	}),
 }));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.HARANDAR, {
+			n(VENDORS, {
+				q(98644, { ["timeline"] = { ADDED_12_1_5 } }),	-- Swapping Fungal Strider Vendors
+				q(98646, { ["timeline"] = { ADDED_12_1_5 } }),	-- Swapping Fungal Strider Vendors
+				q(98647, { ["timeline"] = { ADDED_12_1_5 } }),	-- Swapping Fungal Strider Vendors
+				q(98657, { ["timeline"] = { ADDED_12_1_5 } }),	-- Swapping Fungal Strider Vendors
+				q(98659, { ["timeline"] = { ADDED_12_1_5 } }),	-- Swapping Fungal Strider Vendors
+			}),
+		}),
+	}),
+}));

@@ -144,10 +144,10 @@ root(ROOTS.Promotions, {
 				n(TOP_TIER_CNONLY, {
 					["groups"] = {
 						mount(423869),	-- Avatar of Flame (MOUNT!)
-						mount(457485), 	-- Grizzly Hills Packmaster (MOUNT!)
+						mount(457485),	-- Grizzly Hills Packmaster (MOUNT!)
 						i(83086),	-- Heart of the Nightwing (MOUNT!)
-						i(262344), 		-- Scarlet Lady (MOUNT!)
-						i(269659), 		-- The Sire's Palanquin (MOUNT!)
+						i(262344),	-- Scarlet Lady (MOUNT!)
+						i(269659),	-- The Sire's Palanquin (MOUNT!)
 					},
 				}),
 				n(FIRST_TIER_CNONLY, {

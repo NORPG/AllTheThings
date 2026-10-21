@@ -554,7 +554,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		}),
 		q(55986, {	-- Break a Few Eggs (H)
 			["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
-			["sourceQuest"] = 55500,	-- Save A Friend	-- confirm sourceQuest. Possibly  "The Needs of the People" instead?
+			["sourceQuest"] = 55500,	-- Save A Friend	-- confirm sourceQuest. Possibly "The Needs of the People" instead?
 			["provider"] = { "n", 153684 },	-- Caitfin Gills
 			["coord"] = { 70.2, 23.2, NAZJATAR },
 			["races"] = HORDE_ONLY,

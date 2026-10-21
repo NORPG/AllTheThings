@@ -890,7 +890,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 		}),
 		n(TREASURES, {
 			o(540505, {	-- Patient Treasure
-				["description"] =  "Has a chance to spawn nearby while fishing.",
+				["description"] = "Has a chance to spawn nearby while fishing.",
 				["maps"] = { MAP.MIDNIGHT.QUELTHALAS },
 			}),
 		}),

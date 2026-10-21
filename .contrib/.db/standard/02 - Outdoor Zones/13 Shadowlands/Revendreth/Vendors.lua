@@ -230,7 +230,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 50.4, 81.4, REVENDRETH },
 				["groups"] = {
 					i(183982, { ["cost"] = { { "c", ANIMA, 3000 } } }),	-- Devourer Mite Sticker
-					i(183977, { 	-- House Renathal Ceremonial Dagger
+					i(183977, {	-- House Renathal Ceremonial Dagger
 						["cost"] = { { "c", ANIMA, 1750 } },
 						["customCollect"] = "SL_COV_VEN"
 					}),

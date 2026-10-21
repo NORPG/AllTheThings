@@ -74,6 +74,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #if AFTER 8.3.0
 					["description"] = "Post-rework, this is only obtainable in the Deepwind Dunk brawl.",
 					-- #endif
+					["maps"] = { 935 },	-- Deepwind Dunk
 					["timeline"] = { ADDED_5_3_0 },
 				}),
 				ach(8355, {		-- Weighed Down

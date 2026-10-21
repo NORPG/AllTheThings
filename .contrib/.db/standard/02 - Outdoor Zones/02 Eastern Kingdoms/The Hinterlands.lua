@@ -1111,7 +1111,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(131553, {	-- Gryphon Master's Chain
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-                        i(59235, {	-- Razorbeak Amulet
+						i(59235, {	-- Razorbeak Amulet
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -2279,7 +2279,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 34.4, 38.6, THE_HINTERLANDS },
 					["groups"] = {
 						i(15735, {	-- Pattern: Ironfeather Shoulders (RECIPE!)
-                            ["timeline"] = { ADDED_1_1_0 },
+							["timeline"] = { ADDED_1_1_0 },
 							["isLimited"] = true,
 						}),
 					},
@@ -2304,7 +2304,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(8409, {	-- Pattern: Nightscape Shoulders (RECIPE!)
-                            ["timeline"] = { ADDED_1_1_0 },
+							["timeline"] = { ADDED_1_1_0 },
 							["isLimited"] = true,
 						}),
 					},

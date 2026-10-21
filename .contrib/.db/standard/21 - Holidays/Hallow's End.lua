@@ -1737,7 +1737,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				candybucket(97206, {	-- Candy Bucket - Harandar, The Den
 					["provider"] = { "n", 660352 },	-- Candy Bucket
-					["coord"] = { 65.0, 63.8, MAP.MIDNIGHT.HARANDAR },
+					["coord"] = { 65.0, 63.8, 2576 },	-- The Den
 					["timeline"] = { ADDED_12_1_5 },
 				}),
 				candybucket(97155, {	-- Candy Bucket - Harandar, Har'athir
@@ -2190,7 +2190,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				candybucket(97211, {	-- Candy Bucket - Voidstorm, Slayer's Rise [A]
 					["provider"] = { "n", 660447 },	-- Candy Bucket
-					["coord"] = { 76.0, 77.6, MAP.MIDNIGHT.VOIDSTORM },
+					["coord"] = { 76.0, 77.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 					["timeline"] = { ADDED_12_1_5 },
 				}),
 				candybucket(28988, {	-- Candy Bucket — Western Plaguelands, Chillwind Camp, Alliance
@@ -2647,7 +2647,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				candybucket(97212, {	-- Candy Bucket - Voidstorm, Slayer's Rise [H]
 					--["provider"] = { "n", 660447 },	-- Candy Bucket
-					--["coord"] = { 76.0, 77.6, MAP.MIDNIGHT.VOIDSTORM },
+					["coord"] = { 21.3, 55.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 					["timeline"] = { ADDED_12_1_5 },
 				}),
 				candybucket(28987, {	-- Candy Bucket — Western Plaguelands, Andorhal, Horde
