@@ -601,7 +601,6 @@ local function RecursiveGroupRequirementsExtraFilter(group, extraFilters)
 	end
 	return true;
 end
-app.RecursiveGroupRequirementsExtraFilter = RecursiveGroupRequirementsExtraFilter;
 api.Filters.RecursiveGroupRequirementsExtraFilter = RecursiveGroupRequirementsExtraFilter
 -- Recursively check outwards within the direct parent chain only to find if any parent group restricts the filter for this character
 local function RecursiveDirectGroupRequirementsFilter(group)
@@ -641,8 +640,6 @@ local function RecursiveDefaultCharacterRequirementsFilter(group)
 	end
 	return true;
 end
--- no references in ATT, but maybe someone started using this function somewhere
-app.RecursiveDefaultCharacterRequirementsFilter = function() app.print("RecursiveDefaultCharacterRequirementsFilter is accessible via AllTheThings.Modules.Filter.Filters.RecursiveDefaultCharacterRequirementsFilter and not supported here") end;
 api.Filters.RecursiveDefaultCharacterRequirementsFilter = RecursiveDefaultCharacterRequirementsFilter
 local function RecursiveFilter(group, filterName)
 	local filter = api.Filters[filterName]
@@ -653,6 +650,27 @@ local function RecursiveFilter(group, filterName)
 	return true;
 end
 app.RecursiveFilter = RecursiveFilter;
+-- Returns a numeric value representing the filtering requirements for the group to be visible.
+-- 1: This group is visible based on Full filtering
+-- 2: This group is visible based on Acct filtering
+-- 3: This group is visible based on no filtering
+local function GetRecursiveFilterRequirement(group, extraFilters)
+	local Full, Acct = app.GroupExtraFilter, SettingsFilters_Account
+	-- Phase 1: full walk. A node that passes Full has already passed Acct.
+	while group do
+		if not Full(group, extraFilters) then break end
+		group = rawget(group, "sourceParent") or group.parent
+	end
+	if not group then return 1 end
+	-- Phase 2: resume the account walk at the node that failed Full.
+	-- Nodes below it passed Full, so they need no Acct re-check.
+	while group do
+		if not Acct(group) then return 3 end
+		group = rawget(group, "sourceParent") or group.parent
+	end
+	return 2
+end
+api.Filters.GetRecursiveFilterRequirement = GetRecursiveFilterRequirement
 
 -- Caching Helpers
 local function CacheSettingsData()

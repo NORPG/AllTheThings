@@ -27,7 +27,7 @@ local IsSpellKnownHelper, CreateObject, FillGroups
 
 -- Module locals
 ---@type function,function,function,function,table
-local RecursiveGroupRequirementsFilter, RecursiveAccountFilter, DGU, UpdateRunner, ExtraFilters
+local RecursiveGroupRequirementsFilter,GetRecursiveFilterRequirement, DGU, UpdateRunner, ExtraFilters
 -- If a Thing which has a cost is not a quest or is available as a quest
 -- Also exclude anything marked with _nosearch in its parent chain.
 local function IsAvailable(ref)
@@ -72,9 +72,6 @@ local function PrintDebug(id, ...)
 	end
 end
 
-local function FilterRequirement(ref)
-	return RecursiveGroupRequirementsFilter(ref, ExtraFilters) and 1 or RecursiveAccountFilter(ref) and 2 or 3
-end
 -- Function which returns if a Thing has a cost based on a given 'ref' Thing, which has been previously determined as a
 -- possible collectible. The return value indicates the collectibility
 -- nil - Already collected or not available to obtain
@@ -93,7 +90,7 @@ local function CheckCollectible(ref, costid)
 	-- Used as a cost for something which is collectible itself and not collected
 	if ref.collectible and not ref.collected then
 		-- PrintDebug(costid, "Purchase via Collectible",RefSearch,FilterRequirement(ref) == 1 and "VISIBLE" or FilterRequirement(ref) == 2 and "ACCOUNT" or "FILTERED")
-		return FilterRequirement(ref)
+		return GetRecursiveFilterRequirement(ref, ExtraFilters)
 	end
 	-- If this group has sub-groups, are any of them collectible?
 	local g = ref.g;
@@ -118,7 +115,7 @@ local function CheckCollectible(ref, costid)
 	-- Used as a cost for something which is collectible as a cost itself
 	if ref.collectibleAsCost then
 		-- PrintDebug(costid, "Purchase via collectibleAsCost",RefSearch,FilterRequirement(ref) == 1 and "VISIBLE" or FilterRequirement(ref) == 2 and "ACCOUNT" or "FILTERED")
-		return FilterRequirement(ref)
+		return GetRecursiveFilterRequirement(ref, ExtraFilters)
 	end
 	-- NPC/Sym are Filler checks
 	if not ref.__FillGroups then
@@ -143,7 +140,7 @@ local function CacheFilters()
 	-- Cache repeat-used functions/values
 	local filterModule = app.Modules.Filter
 	RecursiveGroupRequirementsFilter = filterModule.Filters.RecursiveGroupRequirementsExtraFilter
-	RecursiveAccountFilter = filterModule.Filters.RecursiveGroupRequirementsFilter_Account
+	GetRecursiveFilterRequirement = filterModule.Filters.GetRecursiveFilterRequirement
 	Filters_ItemUnbound = filterModule.Filters.ItemUnbound
 	ItemUnboundSetting = filterModule.Get.ItemUnbound()
 	if ItemUnboundSetting then
