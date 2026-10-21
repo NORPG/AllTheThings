@@ -80,11 +80,23 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 					i(273952),	-- Pattern: Grovekeeper Trousers
 
 					-- Shaman
+					i(276545, {	-- Pattern: Spiritcaller Boots
+						cost = { { "i", 274030, 6 } },	-- 6x Malleable Essence of Nature
+					}),
 					i(274006),	-- Pattern: Spiritcaller Epaulets
 					i(274005),	-- Pattern: Spiritcaller Gauntlets
+					i(276543, {	-- Pattern: Spiritcaller Gloves
+						cost = { { "i", 274030, 6 } },	-- 6x Malleable Essence of Nature
+					}),
 					i(274007),	-- Pattern: Spiritcaller Greaves
 					i(274001),	-- Pattern: Spiritcaller Grips
+					i(276542, {	-- Pattern: Spiritcaller Kilt
+						cost = { { "i", 274030, 8 } },	-- 8x Malleable Essence of Nature
+					}),
 					i(274000),	-- Pattern: Spiritcaller Leggings
+					i(276544, {	-- Pattern: Spiritcaller Mantle
+						cost = { { "i", 274030, 6 } },	-- 6x Malleable Essence of Nature
+					}),
 					i(274004),	-- Pattern: Spiritcaller Pants
 					i(274002),	-- Pattern: Spiritcaller Spaulders
 					i(274003),	-- Pattern: Spiritcaller Treads
@@ -118,6 +130,40 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 					i(274011),	-- Pattern: Demonheart Boots
 				},
 			}),
+			n(256629, {	-- Dala Fairmaw <Quartermaster>
+				coord = { 21.0, 78.6, MAP.MOUNT_HYJAL },
+				groups = {
+					i(274417, {	-- Barkskin Baubles
+						minReputation = { 2747, REVERED },	-- Barkskin Burrow, Revered.
+						cost = { { "i", 263439, 10 } },	-- 10x Deadwood Tribal Beads
+					}),
+					i(262801, {	-- Barkskin Satchel
+						minReputation = { 2747, HONORED },	-- Barkskin Burrow, Honored.
+						cost = { { "i", 263439, 15 } },	-- 15x Deadwood Tribal Beads
+					}),
+					i(274419, {	-- Bear Poking Stick
+						minReputation = { 2747, REVERED },	-- Barkskin Burrow, Revered.
+						cost = { { "i", 263439, 20 } },	-- 20x Deadwood Tribal Beads
+					}),
+					i(274418, {	-- Burrow Barricade
+						minReputation = { 2747, REVERED },	-- Barkskin Burrow, Revered.
+						cost = { { "i", 263439, 10 } },	-- 10x Deadwood Tribal Beads
+					}),
+					i(268873, {	-- Defender of the Barkskin
+						minReputation = { 2747, EXALTED },	-- Barkskin Burrow, Exalted.
+						cost = { { "i", 263439, 25 } },	-- 25x Deadwood Tribal Beads
+					}),
+					i(256036),	-- Handful of Dirt
+					i(274415, {	-- Recipe: Sweetpaw Jam (RECIPE!)
+						minReputation = { 2747, FRIENDLY },	-- Barkskin Burrow, Friendly.
+						cost = { { "i", 263439, 5 } },	-- 5x Deadwood Tribal Beads
+					}),
+					i(274420, {	-- Wisepaw Totem
+						minReputation = { 2747, REVERED },	-- Barkskin Burrow, Revered.
+						cost = { { "i", 263439, 20 } },	-- 20x Deadwood Tribal Beads
+					}),
+				},
+			}),
 			n(266901, {	-- Pexmit <Someone's Minion>
 				coord = { 58.8, 41.8, MAP.MOUNT_HYJAL },
 				groups = {
@@ -127,6 +173,15 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 					i(252877),	-- Pattern: Tooled Leather Armor (RECIPE!)
 					i(251468),	-- Plans: Bold Dirk (RECIPE!)
 					i(264233),	-- Schematic: Dimensional Transporter: Mt. Hyjal (RECIPE!)
+				},
+			}),
+			n(255151, {	-- Rhylin Stonethorn
+				coord = { 70.6, 51.2, MAP.MOUNT_HYJAL },
+				groups = {
+					i(274025),	-- Guardians of Hyjal Tabard
+					i(274379, {	-- Rousing Seed Pod
+						minReputation = { 2765, REVERED },	-- Guardians of Hyjal, Revered.
+					}),
 				},
 			}),
 		}),

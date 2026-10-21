@@ -132,5 +132,34 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 				i(19807),	-- Speckled Tastyfish
 			}),
 		}),
+		n(VENDORS, {
+			n(15078, {	-- Jang <Fishing Extravaganza Prizes>
+				coord = { 27.4, 76.8, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(276273, {	-- Empty Fish Bucket
+						cost = { { "i", 274026, 1 } },	-- 1x Extravagant Extravaganza Coin
+					}),
+					i(276278, {	-- Handful of Coins
+						cost = { { "i", 19807, 1 } },	-- 1x Speckled Tastyfish
+					}),
+					i(276280, {	-- Hefty Sack of Coins
+						cost = { { "i", 19807, 10 } },	-- 10x Speckled Tastyfish
+					}),
+					i(276272, {	-- Master Angler's Fishing Hat
+						cost = { { "i", 274026, 1 } },	-- 1x Extravagant Extravaganza Coin
+					}),
+					i(274974, {	-- Message in a Bottle
+						cost = { { "i", 19807, 20 } },	-- 20x Speckled Tastyfish
+					}),
+					i(276279, {	-- Small Bag of Coins
+						cost = { { "i", 19807, 5 } },	-- 5x Speckled Tastyfish
+					}),
+					i(276274, {	-- Surfer Shoes
+						cost = { { "i", 274026, 1 } },	-- 1x Extravagant Extravaganza Coin
+					}),
+				},
+			}),
+		}),
 	},
 })));

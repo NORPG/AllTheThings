@@ -1863,6 +1863,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					}),
 				},
 			}),
+			n(254089, {	-- Coriella Calmbreeze <Innkeeper>
+				coord = { 43.0, 43.2, MAP.ZEPHRAS_ISLE },
+				groups = {
+					i(252027),	-- Gustberry Juice
+					i(252026),	-- Gustberry Pie
+					i(252029),	-- Hippogryph Flank
+				},
+			}),
 			n(251364, {	-- Destin Thriceforged
 				coord = { 43.5, 23.6, MAP.ZEPHRAS_ISLE },
 				sym = {{ "select", "itemID",
@@ -1875,6 +1883,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					2132,	-- Short Staff
 					2131,	-- Shortsword
 				}},
+			}),
+			n(255940, {	-- Donaal Downbreeze <Innkeeper>
+				coord = { 62.2, 72.6, MAP.ZEPHRAS_ISLE },
+				groups = {
+					i(252027),	-- Gustberry Juice
+					i(252026),	-- Gustberry Pie
+					i(252029),	-- Hippogryph Flank
+				},
 			}),
 			n(271478, {	-- Elaria Anvilwind
 				coord = { 59.5, 76.1, MAP.ZEPHRAS_ISLE },
@@ -1983,6 +1999,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					2495,	-- Walking Stick
 					11303,	-- Fine Shortbow
 				}},
+				groups = {
+					i(287063, {	-- Serrated Knife
+						isLimited = true,
+					}),
+				},
 			}),
 			n(251991, {	-- Taleen Shimmerthread <Tailor>
 				coord = { 77.3, 51.3, MAP.ZEPHRAS_ISLE },

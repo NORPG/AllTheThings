@@ -1223,6 +1223,29 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 		}),
 		n(VENDORS, {
+			n(265346, {	-- Aurian Highgrove <Bartender>
+				coord = { 52.8, 80.2, MAP.WETLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				groups = {
+					i(275892, {	-- Short Stout
+						isLimited = true,
+					}),
+				},
+			}),
+			n(265347, {	-- Bhalir Firebrew <Chef>
+				coord = { 52.8, 80.0, MAP.WETLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				groups = {
+					i(278119),	-- Bread with Butter
+					i(278122),	-- Carrot Salad
+					i(278120),	-- Fruit Platter
+					i(278117),	-- Hard Boiled Eggs
+					i(278118),	-- Rich Broth
+					i(278121),	-- Smoked Sausage
+				},
+			}),
 			n(1450, {	-- Brahnmar <Armorer>
 				coord = { 11.6, 59.9, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,

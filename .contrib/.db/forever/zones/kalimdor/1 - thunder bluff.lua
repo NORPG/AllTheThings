@@ -621,6 +621,10 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					i(11307, {	-- Massive Longbow
 						isLimited = true,
 					}),
+					i(287063, {	-- Serrated Knife
+						isLimited = true,
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(11306, {	-- Sturdy Recurve
 						isLimited = true,
 					}),
@@ -669,12 +673,24 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
 						isLimited = true,
 					}),
+					i(278081, {	-- Sinew Thread
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(281043, {	-- Sinew Thread
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(3027, {	-- Naal Mistrunner <Cooking Supplies>
 				coord = { 51.0, 52.5, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				groups = {
+					i(278083, {	-- Ceremonial Flint and Tinder
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(281044, {	-- Ceremonial Flint and Tinder
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 					i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
@@ -704,11 +720,28 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 				}},
 				groups = {
+					i(278080, {	-- Bundle of Dried Cedar Twigs
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(281042, {	-- Bundle of Dried Cedar Twigs
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 						isLimited = true,
 					}),
 					i(6377, {	-- Formula: Enchant Boots - Minor Agility (RECIPE!)
 						isLimited = true,
+					}),
+				},
+			}),
+			n(3014, {	-- Nida Winterhoof <Herbalism Supplier>
+				coord = { 49.2, 39.6, MAP.THUNDER_BLUFF },
+				groups = {
+					i(278079, {	-- Bundle of Herbs
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(281041, {	-- Bundle of Herbs
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 				},
 			}),

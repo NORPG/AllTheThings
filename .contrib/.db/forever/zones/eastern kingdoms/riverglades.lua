@@ -46,6 +46,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			}),
 		}),
 		n(VENDORS, {
+			n(263230, {	-- Dorb <Rare Goods>
+				coord = { 63.8, 17.0, MAP.RIVERGLADES },
+				groups = {
+					i(271646, {	-- How to Make Friend
+						isLimited = true,
+					}),
+					i(271648, {	-- Ogre Tooth Cleaner
+						isLimited = true,
+					}),
+					i(271647, {	-- Once Used Shoe
+						isLimited = true,
+					}),
+				},
+			}),
 			n(259962, {	-- Fimbo Greasemitz
 				coord = { 79.0, 54.2, MAP.RIVERGLADES },
 				groups = {
@@ -142,6 +156,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			n(260565, {	-- Kor'gar <Engineering Supplies>
 				coord = { 77.6, 50.8, MAP.RIVERGLADES },
 				groups = {
+					i(271653),	-- Goblin Degreaser
 					i(16046),	-- Schematic: Masterwork Target Dummy (RECIPE!)
 					i(16047),	-- Schematic: Thorium Tube (RECIPE!)
 				},

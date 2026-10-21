@@ -920,6 +920,20 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 					r(23486),	-- Dimensional Ripper - Everlook
 				},
 			}),
+			n(265577, {	-- Zippie Fizzbolt <Everlook Quartermaster>
+				coord = { 61.4, 38.4, MAP.WINTERSPRING },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(274758),	-- Coldmetal Guard
+					i(274760),	-- Everlook Delivery Bot
+					i(274759),	-- Everlook Pathcarver
+					i(274024),	-- Fizzbolt's Fashionable Fedora
+					i(274756),	-- Impractical Headwarmer
+					i(274761),	-- Parachute-Priest Pager
+					i(274755),	-- Steamwheedle Grips
+					i(274757),	-- Substandard Belt Chain
+				},
+			}),
 		}),
 		n(ZONE_DROPS, {
 			i(12434, {	-- Chillwind E'ko

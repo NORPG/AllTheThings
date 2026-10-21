@@ -1894,6 +1894,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					i(11303, {	-- Fine Shortbow
 						isLimited = true,
 					}),
+					i(287063, {	-- Serrated Knife
+						isLimited = true,
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(66, {	-- Tharynn Bouden <Trade Supplies>

@@ -937,6 +937,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					3023,	-- Large Bore Blunderbuss
 				}},
 			}),
+			n(256736, {	-- Huey Sunnydale <Mule Handler>
+				coord = { 8.4, 72.0, MAP.REDRIDGE_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				groups = {
+					i(262766, {	-- Reins of the Pack Kodo (MOUNT!)
+						minReputation = { 2586, EXALTED },	-- Azeroth Commerce Authority, Exalted.
+						cost = { { "c", 3402, 6000 } },	-- x6000 Merchant's Favor
+					}),
+				},
+			}),
 			n(793, {	-- Kara Adams <Shield Crafter>
 				coord = { 25.5, 46.5, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,

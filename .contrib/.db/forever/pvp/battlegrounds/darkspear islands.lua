@@ -194,6 +194,24 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 				coord = { 65.0, 34.4, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				groups = {
+					i(272055, {	-- Darkspear Islands Enriched Ration
+						minReputation = { 2798, FRIENDLY },	-- Darkspear Raiders, Friendly.
+					}),
+					i(272053, {	-- Darkspear Islands Field Ration
+						minReputation = { 2798, FRIENDLY },	-- Darkspear Raiders, Friendly.
+					}),
+					i(272054, {	-- Darkspear Islands Iron Ration
+						minReputation = { 2798, FRIENDLY },	-- Darkspear Raiders, Friendly.
+					}),
+					i(272057, {	-- Darkspear Islands Mageweave Bandage
+						minReputation = { 2798, FRIENDLY },	-- Darkspear Raiders, Friendly.
+					}),
+					i(272058, {	-- Darkspear Islands Runecloth Bandage
+						minReputation = { 2798, FRIENDLY },	-- Darkspear Raiders, Friendly.
+					}),
+					i(272056, {	-- Darkspear Islands Silk Bandage
+						minReputation = { 2798, FRIENDLY },	-- Darkspear Raiders, Friendly.
+					}),
 					i(272059),	-- Darkspear Voodoo Seal
 					i(272060),	-- Relentless Raider's Seal
 					i(272061),	-- Darkspear Voodoo Seal
@@ -251,6 +269,24 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 				coord = { 63.4, 58.6, MAP.THE_BARRENS },
 				races = ALLIANCE_ONLY,
 				groups = {
+					i(272055, {	-- Darkspear Islands Enriched Ration
+						minReputation = { 2799, FRIENDLY },	-- Theramore Expeditionary Force, Friendly.
+					}),
+					i(272053, {	-- Darkspear Islands Field Ration
+						minReputation = { 2799, FRIENDLY },	-- Theramore Expeditionary Force, Friendly.
+					}),
+					i(272054, {	-- Darkspear Islands Iron Ration
+						minReputation = { 2799, FRIENDLY },	-- Theramore Expeditionary Force, Friendly.
+					}),
+					i(272057, {	-- Darkspear Islands Mageweave Bandage
+						minReputation = { 2799, FRIENDLY },	-- Theramore Expeditionary Force, Friendly.
+					}),
+					i(272058, {	-- Darkspear Islands Runecloth Bandage
+						minReputation = { 2799, FRIENDLY },	-- Theramore Expeditionary Force, Friendly.
+					}),
+					i(272056, {	-- Darkspear Islands Silk Bandage
+						minReputation = { 2799, FRIENDLY },	-- Theramore Expeditionary Force, Friendly.
+					}),
 					i(271903),	-- Enriched Seal
 					i(271904),	-- Volunteer's Lucky Seal
 					i(271905),	-- Enriched Seal

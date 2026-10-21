@@ -2612,6 +2612,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					i(11307, {	-- Massive Longbow
 						isLimited = true,
 					}),
+					i(287063, {	-- Serrated Knife
+						isLimited = true,
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(11306, {	-- Sturdy Recurve
 						isLimited = true,
 					}),

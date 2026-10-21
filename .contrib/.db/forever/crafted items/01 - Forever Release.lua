@@ -292,6 +292,14 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 		}),
 	}),
 	prof(COOKING, {
+		n(COMMON_VENDOR_ITEMS, {
+			i(10284, {	-- Simple Flour
+				description = "Can be bought from Cooking Suppliers and Chefs around the world.",
+			}),
+			i(272941, {	-- Thick Logs
+				description = "Can be bought from Cooking Suppliers and Chefs around the world.",
+			}),
+		}),
 		filter(CONSUMABLES, {
 			i(250067),	-- Bat Hachee
 			i(250074),	-- Bear Brisket
@@ -515,6 +523,11 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 		}),
 	}),
 	prof(HERBALISM, {
+		n(COMMON_VENDOR_ITEMS, {
+			i(277113, {	-- Apprentice's Herb Pouch
+				description = "Can be bought from General Goods and Trade Supplies vendors around the world.",
+			}),
+		}),
 		filter(MISC, {
 			i(279964),	-- Greenhouse
 			i(279962),	-- Incense Candle
@@ -818,6 +831,11 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 		}),
 	}),
 	prof(MINING, {
+		n(COMMON_VENDOR_ITEMS, {
+			i(277115, {	-- Apprentice's Mining Pack
+				description = "Can be bought from General Goods and Trade Supplies vendors and Junior Mining Trainers around the world.",
+			}),
+		}),
 		header(HEADERS.Spell, 2656, {
 			i(249726, {	-- Azerothium Bar
 				cost = { { "i", 249426, 2 }, { "i", 3857, 1 } },	-- 2x Pitchblende, 1x Coal

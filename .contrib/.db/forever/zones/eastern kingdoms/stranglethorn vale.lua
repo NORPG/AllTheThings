@@ -2280,6 +2280,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 				},
 			}),
+			n(248809, {	-- Jenna <Mustard Queen>
+				coord = { 27.8, 77.2, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(248613),	-- Lightning in a Bottle
+				},
+			}),
 			n(2843, {	-- Jutak <Blade Trader>
 				coord = { 27.5, 77.5, MAP.STRANGLETHORN_VALE },
 				groups = {
@@ -2372,7 +2379,62 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 							{ "c", 3469, 5 },	-- x5 Tarnished Undermine Real
 						},
 					}),
+					i(272393, {	-- Magician's Cord
+						cost = {
+							{ "c", 3469, 100 },	-- x100 Tarnished Undermine Real
+						},
+					}),
+					i(272394, {	-- Penitent's Cinch
+						cost = {
+							{ "c", 3469, 100 },	-- x100 Tarnished Undermine Real
+						},
+					}),
+					i(272395, {	-- Assassin's Waistguard
+						cost = {
+							{ "c", 3469, 100 },	-- x100 Tarnished Undermine Real
+						},
+					}),
+					i(272396, {	-- Shifter's Belt
+						cost = {
+							{ "c", 3469, 100 },	-- x100 Tarnished Undermine Real
+						},
+					}),
+					i(272397, {	-- Ranger's Belt
+						cost = {
+							{ "c", 3469, 100 },	-- x100 Tarnished Undermine Real
+						},
+					}),
+					i(272398, {	-- Caretaker's Cord
+						cost = {
+							{ "c", 3469, 100 },	-- x100 Tarnished Undermine Real
+						},
+					}),
+					i(272399, {	-- Stormseeker's Girdle
+						cost = {
+							{ "c", 3469, 100 },	-- x100 Tarnished Undermine Real
+						},
+					}),
+					i(272401, {	-- Elunite Cord
+						cost = {
+							{ "c", 3469, 100 },	-- x100 Tarnished Undermine Real
+						},
+					}),
+					i(272402, {	-- Prophet's Waistcord
+						cost = {
+							{ "c", 3469, 100 },	-- x100 Tarnished Undermine Real
+						},
+					}),
 					i(272403, { -- Valiant's Waistguard
+						cost = {
+							{ "c", 3469, 100 },	-- x100 Tarnished Undermine Real
+						},
+					}),
+					i(272404, {	-- Vindicator's Belt
+						cost = {
+							{ "c", 3469, 100 },	-- x100 Tarnished Undermine Real
+						},
+					}),
+					i(272405, {	-- Redeemer's Waistcord
 						cost = {
 							{ "c", 3469, 100 },	-- x100 Tarnished Undermine Real
 						},
@@ -2395,6 +2457,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					i(272409, { -- Ring of Awareness
 						cost = {
 							{ "c", 3469, 75 },	-- x75 Tarnished Undermine Real
+						},
+					}),
+					i(272410, {	-- Windseeker's Belt
+						cost = {
+							{ "c", 3469, 100 },	-- x100 Tarnished Undermine Real
 						},
 					}),
 					i(272411, { -- Arcanoweave Cloak

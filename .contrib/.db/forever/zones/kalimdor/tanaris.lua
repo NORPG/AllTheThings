@@ -1254,6 +1254,18 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					}),
 				},
 			}),
+			n(265576, {	-- Rettrick <Gadgetzan Quartermaster>
+				coord = { 51.6, 28.6, MAP.TANARIS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(274753),	-- Jhordy's Misplaced Screwdriver
+					i(274750),	-- Reflective Wristguards
+					i(274752),	-- Sandstorm Cover
+					i(274023),	-- Stolen Wastewander Cowl
+					i(274751),	-- Sunburn Spaulders
+					i(274754),	-- Suspicious Spare Part
+				},
+			}),
 			n(6568, {	-- Vizzklick <Tailoring Supplies>
 				coord = { 51.0, 27.3, MAP.TANARIS },
 				groups = {

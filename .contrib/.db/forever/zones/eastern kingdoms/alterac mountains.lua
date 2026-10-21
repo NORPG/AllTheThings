@@ -796,6 +796,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 		}),
 		n(VENDORS, {
+			n(29547, {	-- Applebough <Fruit Vendor>
+				coord = { 14.4, 65.8, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(285359),	-- Warm Apple Juice
+				},
+			}),
 			n(32287, {	-- Archmage Alvareaux <Quartermaster>
 				coord = { 14.0, 63.2, MAP.ALTERAC_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -825,6 +832,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					}),
 				},
 			}),
+			n(32337, {	-- Christi Stockton <Wine Vendor>
+				coord = { 20.0, 67.2, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				groups = {
+					i(260631),	-- Arcane Wine
+					i(285362),	-- Red Wine Glass
+				},
+			}),
 			n(2684, {	-- Rizz Loosebolt <Engineering Supplies>
 				coord = { 47.3, 35.2, MAP.ALTERAC_MOUNTAINS },
 				groups = {
@@ -839,6 +855,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
 						classes = { ROGUE },
 					}),
+				},
+			}),
+			n(256372, {	-- Windle Sparkshine
+				coord = { 14.4, 66.4, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				groups = {
+					i(285104),	-- Windle's Lighter
 				},
 			}),
 			n(6777, {	-- Zan Shivsproket <Speciality Engineer>

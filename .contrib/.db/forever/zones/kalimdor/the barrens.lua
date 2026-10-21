@@ -3362,6 +3362,17 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 				},
 			}),
+			n(256400, {	-- Okamache <Kodo Handler>
+				coord = { 49.6, 28.8, MAP.THE_BARRENS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				groups = {
+					i(262766, {	-- Reins of the Pack Kodo (MOUNT!)
+						minReputation = { 2587, EXALTED },	-- Durotar Supply and Logistics, Exalted.
+						cost = { { "c", 3402, 6000 } },	-- x6000 Merchant's Favor
+					}),
+				},
+			}),
 			n(248201, {	-- Pawani <Leatherworker>
 				coord = { 49.6, 29.6, MAP.THE_BARRENS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
