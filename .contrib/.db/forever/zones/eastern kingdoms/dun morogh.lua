@@ -74,7 +74,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						sourceQuest = 179,	-- Dwarven Outfitters
 						qg = 658,	-- Sten Stoutarm
 						qi = 282400,	-- Archaic Rune (PQI!)
-						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
+						coord = { 29.9, 71.2, MAP.DUN_MOROGH },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_SHAMANS,
 						classes = { SHAMAN },
@@ -145,7 +145,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						sourceQuest = 179,	-- Dwarven Outfitters
 						qg = 658,	-- Sten Stoutarm
 						qi = 2187,	-- A Stack of Letters (PQI!)
-						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
+						coord = { 29.9, 71.2, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
 					}),
 					q(234, {	-- Coldridge Valley Mail Delivery (2/2)
@@ -170,13 +170,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						sourceQuest = 179,	-- Dwarven Outfitters
 						qg = 658,	-- Sten Stoutarm
 						qi = 9563,	-- Consecrated Rune (PQI!)
-						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
+						coord = { 29.9, 71.2, MAP.DUN_MOROGH },
 						races = { DWARF },
 						classes = { PALADIN },
 					}),
 					q(179, {	-- Dwarven Outfitters
 						qg = 658,	-- Sten Stoutarm
-						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
+						coord = { 29.9, 71.2, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
 						groups = {
 							objective(1, {	-- 0/8 Tough Wolf Meat
@@ -207,7 +207,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						sourceQuest = 179,	-- Dwarven Outfitters
 						qg = 658,	-- Sten Stoutarm
 						qi = 9558,	-- Encrypted Memorandum (PQI!)
-						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
+						coord = { 29.9, 71.2, MAP.DUN_MOROGH },
 						races = { GNOME },
 						classes = { ROGUE },
 					}),
@@ -215,7 +215,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						sourceQuest = 179,	-- Dwarven Outfitters
 						qg = 658,	-- Sten Stoutarm
 						qi = 9550,	-- Encrypted Rune (PQI!)
-						coord ={ 29.8, 71.2, MAP.DUN_MOROGH },
+						coord = { 29.9, 71.2, MAP.DUN_MOROGH },
 						races = { DWARF },
 						classes = { ROGUE },
 					}),
@@ -223,7 +223,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						sourceQuest = 179,	-- Dwarven Outfitters
 						qg = 658,	-- Sten Stoutarm
 						qi = 9566,	-- Etched Rune (PQI!)
-						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
+						coord = { 29.9, 71.2, MAP.DUN_MOROGH },
 						races = { DWARF },
 						classes = { HUNTER },
 					}),
@@ -231,7 +231,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						sourceQuest = 179,	-- Dwarven Outfitters
 						qg = 658,	-- Sten Stoutarm
 						qi = 9573,	-- Glyphic Memorandum (PQI!)
-						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
+						coord = { 29.9, 71.2, MAP.DUN_MOROGH },
 						races = { GNOME },
 						classes = { MAGE },
 					}),
@@ -259,7 +259,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					q(98574, {	-- Hallowed Memorandum
 						sourceQuest = 179,	-- Dwarven Outfitters
 						qg = 658,	-- Sten Stoutarm
-						coord = { 29.93, 71.2, MAP.DUN_MOROGH },
+						coord = { 29.9, 71.2, MAP.DUN_MOROGH },
 						races = { GNOME },
 						classes = { PRIEST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -269,7 +269,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						sourceQuest = 179,	-- Dwarven Outfitters
 						qg = 658,	-- Sten Stoutarm
 						qi = 9556,	-- Hallowed Rune (PQI!)
-						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
+						coord = { 29.9, 71.2, MAP.DUN_MOROGH },
 						races = { DWARF },
 						classes = { PRIEST },
 					}),
@@ -300,7 +300,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						sourceQuest = 179,	-- Dwarven Outfitters
 						qg = 658,	-- Sten Stoutarm
 						qi = 9544,	-- Simple Memorandum (PQI!)
-						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
+						coord = { 29.9, 71.2, MAP.DUN_MOROGH },
 						races = { GNOME },
 						classes = { WARRIOR },
 					}),
@@ -308,7 +308,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						sourceQuest = 179,	-- Dwarven Outfitters
 						qg = 658,	-- Sten Stoutarm
 						qi = 9543,	-- Simple Rune (PQI!)
-						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
+						coord = { 29.9, 71.2, MAP.DUN_MOROGH },
 						races = { DWARF },
 						classes = { WARRIOR },
 					}),
@@ -324,7 +324,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						},
 						qg = 658,	-- Sten Stoutarm
 						qi = 9577,	-- Tainted Memorandum (PQI!)
-						coord = { 29.8, 71.2, MAP.DUN_MOROGH },
+						coord = { 29.9, 71.2, MAP.DUN_MOROGH },
 						races = { GNOME },
 						classes = { WARLOCK },
 					}),
