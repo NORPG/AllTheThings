@@ -540,7 +540,7 @@ root(ROOTS.Zones, {
 								}),
 								i(282162, {	-- Ceremonial Lightforged Standard (DECOR!)
 									["cost"] = {
-										{ "g", 1000 },	-- 1000g
+										{ "g", 10000000 },	-- 1000g
 										{ "c", ORDER_RESOURCES, 500 },
 									},
 								}),
@@ -570,7 +570,7 @@ root(ROOTS.Zones, {
 								}),
 								i(281682, {	-- Shielded Lightforged Pylon (DECOR!)
 									["cost"] = {
-										{ "g", 700 },	-- 700g
+										{ "g", 7000000 },	-- 700g
 										{ "c", ORDER_RESOURCES, 900 },
 									},
 								}),
@@ -613,56 +613,56 @@ root(ROOTS.Zones, {
 									i(282134, {	-- Argunite Crystal Storage (DECOR!)
 										["timeline"] = { ADDED_12_1_5 },
 										["cost"] = {
-											{ "g", 700 },	-- 700g
+											{ "g", 7000000 },	-- 700g
 											{ "c", ORDER_RESOURCES, 300 },
 										},
 									}),
 									i(282128, {	-- Argunite Sconce (DECOR!)
 										["timeline"] = { ADDED_12_1_5 },
 										["cost"] = {
-											{ "g", 500 },	-- 500g
+											{ "g", 5000000 },	-- 500g
 											{ "c", ORDER_RESOURCES, 250 },
 										},
 									}),
 									i(282122, {	-- Gilded Stonework Altar (DECOR!)
 										["timeline"] = { ADDED_12_1_5 },
 										["cost"] = {
-											{ "g", 1000 },	-- 1000g
+											{ "g", 10000000 },	-- 1000g
 											{ "c", ORDER_RESOURCES, 500 },
 										},
 									}),
 									i(282142, {	-- Gleaming Lightforged Grindstone (DECOR!)
 										["timeline"] = { ADDED_12_1_5 },
 										["cost"] = {
-											{ "g", 500 },	-- 500g
+											{ "g", 5000000 },	-- 500g
 											{ "c", ORDER_RESOURCES, 250 },
 										},
 									}),
 									i(282111, {	-- Hanging Lightforged Standard (DECOR!)
 										["timeline"] = { ADDED_12_1_5 },
 										["cost"] = {
-											{ "g", 1000 },	-- 1000g
+											{ "g", 10000000 },	-- 1000g
 											{ "c", ORDER_RESOURCES, 500 },
 										},
 									}),
 									i(282146, {	-- Lightforged Control Console (DECOR!)
 										["timeline"] = { ADDED_12_1_5 },
 										["cost"] = {
-											{ "g", 700 },	-- 700g
+											{ "g", 7000000 },	-- 700g
 											{ "c", ORDER_RESOURCES, 300 },
 										},
 									}),
 									i(282156, {	-- Reinforced Empyrium Tile (DECOR!)
 										["timeline"] = { ADDED_12_1_5 },
 										["cost"] = {
-											{ "g", 300 },	-- 300g
+											{ "g", 3000000 },	-- 300g
 											{ "c", ORDER_RESOURCES, 200 },
 										},
 									}),
 									i(282130, {	-- Standing Argunite Lamp (DECOR!)
 										["timeline"] = { ADDED_12_1_5 },
 										["cost"] = {
-											{ "g", 300 },	-- 300g
+											{ "g", 3000000 },	-- 300g
 											{ "c", ORDER_RESOURCES, 200 },
 										},
 									}),
