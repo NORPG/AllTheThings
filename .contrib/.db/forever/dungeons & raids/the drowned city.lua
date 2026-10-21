@@ -5,12 +5,13 @@
 root(ROOTS.Instances, {
 	inst(78791, {	-- The Drowned City
 		-- TODO: Placeholder instance ID. The Drowned City isn't in the client's Map/AreaTable/DungeonEncounter data yet (checked through build 1.60.1.70450).
+		-- Blizzard lists it for levels 35-40.
 		--lore = "",
 		icon = 409547,
 		--zoneTextAreaID = ,	-- The Drowned City
 		--coord = { , MAP.STRANGLETHORN_VALE },	-- Entrance in a cavern in the Vile Reef (see Locating the Lost City).
 		timeline = { TIMELINE.ADDED_1_60_1 },
-		lvl = 30,
+		lvl = 35,
 		groups = {
 			n(QUESTS, {
 				q(96774, {	-- Ancient Gurubashi Idol
