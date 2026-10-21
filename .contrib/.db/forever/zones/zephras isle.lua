@@ -8,12 +8,27 @@ maproot(MAP.ZEPHRAS_ISLE, {
 	timeline = { TIMELINE.ADDED_1_60_1 },
 	maps = { 2665 },	-- Zephras Isle (Flight Path Map)
 	groups = {
-		n(EXPLORATION, {
+		explorationHeader({
+			exploration(17675),	-- East Pylon Watchtower
+			exploration(17684),	-- Fairweather Stables
+			exploration(16636),	-- Falaath Village
+			exploration(16626),	-- Gustberry Lowlands
+			exploration(17677),	-- Overlook Standing Stones
+			exploration(16630),	-- Rohashi Spires
+			exploration(16833),	-- Ruins of Ban'aethal
+			exploration(16631),	-- Shadowgale Forest
 			exploration(16623),	-- Shen'dar Highlands
 			exploration(16624),	-- Shen'dar Village
+			exploration(16629),	-- Shrine of Akir
 			exploration(16622),	-- Thendal Grove
 			exploration(17678),	-- Thendal Standing Stones
 			exploration(16635),	-- Thendal Village
+			exploration(16638),	-- Valanaar
+			exploration(16628),	-- Valanaar Skydocks
+			exploration(17674),	-- West Pylon Watchtower
+			exploration(16663),	-- Windfield Orchard
+			exploration(16625),	-- Windsong Lake
+			exploration(17676),	-- Windsong Standing Stones
 		}),
 		n(FACTIONS, {
 			faction(FACTION_NIGHTCLAW_DRUIDS),

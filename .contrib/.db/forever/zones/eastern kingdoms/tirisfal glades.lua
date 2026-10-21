@@ -384,14 +384,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				exploration(154),	-- Deathknell
 				exploration(164),	-- Garren's Haunt
 				exploration(811),	-- Nightmare Vale
+				exploration(153),	-- Ruins of Lordaeron
 				exploration(459),	-- Scarlet Watch Post
 				exploration(156),	-- Solliden Farmstead
 				exploration(810),	-- Stillwater Pond
 				exploration(161),	-- Terrace of Repose
 				exploration(152),	-- The Bulwark
-				exploration(812),	-- Venomweb Vale
-				exploration(160),	-- Whispering Gardens
 				exploration(1497),	-- Undercity
+				exploration(812),	-- Venomweb Vale
+				exploration(16616, {	-- Whispering Forest
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				exploration(160),	-- Whispering Gardens
 				--[[
 				exploration(158),	-- Agamand Family Crypt
 				exploration(2118),	-- Brill Town Hall

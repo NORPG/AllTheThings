@@ -25,6 +25,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			exploration(320),	-- Refuge Pointe
 			exploration(324),	-- Stromgarde Keep
 			exploration(880),	-- Thandol Span
+			exploration(1857),	-- Thoradin's Wall
 			exploration(317),	-- Witherbark Village
 		}),
 		n(FLIGHT_PATHS, {

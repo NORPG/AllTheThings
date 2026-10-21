@@ -24,8 +24,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			exploration(1879),	-- Mirage Flats
 			exploration(1878),	-- The Dustbowl
 			exploration(1897),	-- The Maker's Terrace
-			exploration(1877),	-- Valley of Fangs
 			exploration(1517),	-- Uldaman
+			exploration(1877),	-- Valley of Fangs
 		}),
 		n(FLIGHT_PATHS, {
 			fp(21, {	-- Kargath, Badlands

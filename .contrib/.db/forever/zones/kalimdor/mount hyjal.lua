@@ -10,6 +10,17 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 		n(ACHIEVEMENTS, {
 			ach(62356),	-- Explore Mount Hyjal
 		}),
+		explorationHeader({
+			exploration(17145),	-- Cradle of Tranquility
+			exploration(16866),	-- Dae'gun
+			exploration(16848),	-- Elderwild
+			exploration(17050),	-- Felblood Scar
+			exploration(17144),	-- Malorne's Retreat
+			exploration(16868),	-- Mourning's Rest
+			exploration(16867),	-- Shrine of Aviana
+			exploration(16849),	-- Summit of Eternity
+			exploration(16853),	-- Tainted Foothills
+		}),
 		n(VENDORS, {
 			n(264797, {	-- Aisarra Nightmeadow <Keeper of Knowledge>
 				coord = { 71.0, 51.2, MAP.MOUNT_HYJAL },

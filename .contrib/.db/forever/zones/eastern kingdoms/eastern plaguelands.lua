@@ -30,6 +30,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 			exploration(2271),	-- Eastwall Tower
 			exploration(2621),	-- Lake Mereldar
 			exploration(2268),	-- Light's Hope Chapel
+			exploration(16335, {	-- New Avalon
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			exploration(2272),	-- Northdale
 			exploration(2275),	-- Northpass Tower
 			exploration(2622),	-- Pestilent Scar

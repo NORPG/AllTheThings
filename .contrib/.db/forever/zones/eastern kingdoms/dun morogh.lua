@@ -488,6 +488,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			exploration(808),	-- North Gate Outpost
 			exploration(802),	-- Shimmer Ridge
 			exploration(806),	-- South Gate Outpost
+			exploration(189),	-- Steelgrill's Depot
 			exploration(136),	-- The Grizzled Den
 			exploration(804),	-- The Tundrid Hills
 		}),

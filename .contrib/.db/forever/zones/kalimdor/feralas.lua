@@ -13,6 +13,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			exploration(1099),	-- Camp Mojache
 			exploration(2577),	-- Dire Maul
 			exploration(1111),	-- Dream Bough
+			exploration(1116),	-- Feathermoon Stronghold
 			exploration(1105),	-- Feral Scar Vale
 			exploration(1106),	-- Frayfeather Highlands
 			exploration(1103),	-- Gordunni Outpost
@@ -20,7 +21,6 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			exploration(1121),	-- Isle of Dread
 			exploration(1137),	-- Lower Wilds
 			exploration(1113),	-- Oneiros
-			exploration(1116),	-- Feathermoon Stronghold
 			exploration(2522),	-- Ruins of Isildien
 			exploration(1114),	-- Ruins of Ravenwind
 			exploration(1120),	-- Sardor Isle

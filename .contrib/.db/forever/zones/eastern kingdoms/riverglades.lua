@@ -10,7 +10,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 		n(ACHIEVEMENTS, {
 			ach(62354),	-- Explore Riverglades
 		}),
-		n(EXPLORATION, {
+		explorationHeader({
 			exploration(16726),	-- Bolder'ok
 			exploration(16737),	-- Bristle Hills
 			exploration(16734),	-- Elbrim's Farm

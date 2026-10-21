@@ -42,8 +42,14 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				-- to even find a subzone with matching name to force collect with new logic
 				collectible = false,
 			}),
+			exploration(510, {	-- The Dragonmurk
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			exploration(2302),	-- The Quagmire
 			exploration(513),	-- Theramore Isle
+			exploration(517, {	-- Tidefury Cove
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			exploration(502),	-- Witch Hill
 			exploration(511),	-- Wyrmbog
 		}),

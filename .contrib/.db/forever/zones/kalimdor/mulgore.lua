@@ -294,11 +294,17 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 		explorationHeader({
 			exploration(404),	-- Bael'dun Digsite
 			exploration(222),	-- Bloodhoof Village
+			exploration(358, {	-- Brambleblade Ravine
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			exploration(221),	-- Camp Narache
 			exploration(818),	-- Palemane Rock
 			exploration(224),	-- Ravaged Caravan
 			exploration(220),	-- Red Cloud Mesa
 			exploration(225),	-- Red Rocks
+			exploration(17045, {	-- Skywatcher Plateau
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			exploration(820),	-- The Golden Plains
 			visit_exploration(821, {coord={61.9, 64.1, MAP.MULGORE}}),	-- The Rolling Plains
 			exploration(360),	-- The Venture Co. Mine

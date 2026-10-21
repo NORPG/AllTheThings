@@ -38,6 +38,9 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 		}),
 		explorationHeader({
 			exploration(2256),	-- Darkwhisper Gorge
+			exploration(16005, {	-- Darkwhisper Gorge
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			exploration(2255),	-- Everlook
 			exploration(2246),	-- Frostfire Hot Springs
 			exploration(2241),	-- Frostsaber Rock
