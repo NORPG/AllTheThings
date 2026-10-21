@@ -491,7 +491,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				qg = 5892,	-- Searn Firewarder
 				coord = { 37.8, 37.4, MAP.ORGRIMMAR },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				lvl = 30,
 				groups = {
 					i(5178, {	-- Air Totem
@@ -503,7 +503,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				qg = 5906,	-- Xanis Flameweaver
 				coord = { 25.2, 21.0, MAP.THUNDER_BLUFF },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				lvl = 30,
 				groups = {
 					i(5178, {	-- Air Totem

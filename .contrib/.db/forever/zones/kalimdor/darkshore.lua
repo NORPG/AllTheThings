@@ -1024,6 +1024,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 						coord = { 45.2, 58.4, MAP.DARKSHORE },
 						cr = 270196,	-- Jai'vhanel
 					}),
+					i(287062),	-- Darnassian Knife
 					i(281289),	-- Swordfeather Cloak
 				},
 			}),

@@ -1480,7 +1480,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 1652,	-- The Tome of Valor (4/4)
 				qg = 6171,	-- Duthorian Rall
 				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
 				lvl = 20,
 			}),
@@ -1490,7 +1490,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qi = 6996,	-- Jordan's Weapon Notes (PQI!)
 				coord = { 52.6, 36.8, MAP.DUN_MOROGH },
 				maps = { MAP.BLACKFATHOM_DEEPS, MAP.DARKSHORE, MAP.DEADMINES, MAP.LOCH_MODAN, MAP.SHADOWFANG_KEEP },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
 				lvl = 20,
 				groups = {
@@ -1507,7 +1507,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					q(1655, {	-- Bailor's Ore Shipment
 						qg = 6241,	-- Bailor Stonehand
 						coord = { 36.0, 45.0, MAP.LOCH_MODAN },
-						races = ALLIANCE_ONLY,
+						races = ALLIANCE_PALADINS,
 						classes = { PALADIN },
 						repeatable = true,
 						lvl = 20,
@@ -1529,7 +1529,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						sourceQuest = 1653,	-- The Test of Righteousness (1/3)
 						qg = 3649,	-- Thundris Windweaver
 						coord = { 37.4, 40.2, MAP.DARKSHORE },
-						races = ALLIANCE_ONLY,
+						races = ALLIANCE_PALADINS,
 						classes = { PALADIN },
 						repeatable = true,
 						lvl = 20,
@@ -1586,7 +1586,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				sourceQuest = 1654,	-- The Test of Righteousness (2/3)
 				qg = 6181,	-- Jordan Stilwell
 				coord = { 52.6, 36.8, MAP.DUN_MOROGH },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
 				lvl = 20,
 				groups = {

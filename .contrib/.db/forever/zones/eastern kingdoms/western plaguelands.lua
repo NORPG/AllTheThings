@@ -273,7 +273,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 					{ 23.6, 6.6, MAP.IRONFORGE },
 					{ 48.6, 50.0, MAP.STORMWIND_CITY },
 				},
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
 				isBreadcrumb = true,
 				lvl = 50,
@@ -390,7 +390,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				coord = { 42.8, 84.0, MAP.WESTERN_PLAGUELANDS },
 				cost = { { "i", 12840, 20 } },	-- Minion's Scourgestone
 				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				lvl = 50,
 			}),
 			q(5218, {	-- Felstone Field Cauldron
@@ -474,7 +474,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				qi = 20612,	-- Inert Scourgestone
 				coord = { 52.2, 83.6, MAP.WESTERN_PLAGUELANDS },
 				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				lvl = 50,
 			}),
 			{	-- Invader's Scourgestones

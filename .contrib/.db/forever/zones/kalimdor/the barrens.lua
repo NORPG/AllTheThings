@@ -289,7 +289,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 5892,	-- Searn Firewarder
 				coord = { 37.8, 37.4, MAP.ORGRIMMAR },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				isBreadcrumb = true,
 				lvl = 10,
 			}),
@@ -297,7 +297,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 5906,	-- Xanis Flameweaver
 				coord = { 25.2, 21.0, MAP.THUNDER_BLUFF },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				isBreadcrumb = true,
 				lvl = 10,
 			}),
@@ -305,14 +305,14 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3173,	-- Swart <Shaman Trainer>
 				coord = { 54.4, 42.6, MAP.DUROTAR },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				isBreadcrumb = true,
 				lvl = 10,
 			}),
 			q(2984, {	-- Call of Fire (1/5) [Mulgore]
 				qg = 3066,	-- Narm Skychaser <Shaman Trainer>
 				coord = { 48.4, 59.2, MAP.MULGORE },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				isBreadcrumb = true,
 				lvl = 10,
@@ -326,7 +326,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 				qg = 5907,	-- Kranal Fiss
 				coord = { 55.8, 20.0, MAP.THE_BARRENS },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 10,
 				groups = {
@@ -337,7 +337,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 1524,	-- Call of Fire (2/5)
 				qg = 5900,	-- Telf Joolam
 				coord = { 38.6, 58.8, MAP.DUROTAR },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 10,
 				groups = {
@@ -362,7 +362,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 5900,	-- Telf Joolam
 				qi = 6653,	-- Torch of the Dormant Flame
 				coord = { 38.6, 58.8, MAP.DUROTAR },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 10,
 				groups = {
@@ -380,7 +380,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 1526,	-- Call of Fire (4/5)
 				provider = { "o", 61934 },	-- Brazier of the Dormant Flame
 				coord = { 38.9, 58.2, MAP.DUROTAR },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 10,
 				groups = {
@@ -395,7 +395,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3173,	-- Swart <Shaman Trainer>
 				coord = { 54.4, 42.6, MAP.DUROTAR },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				isBreadcrumb = true,
 				lvl = 20,
 			}),
@@ -403,7 +403,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3066,	-- Narm Skychaser <Shaman Trainer>
 				coord = { 48.4, 59.2, MAP.MULGORE },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				isBreadcrumb = true,
 				lvl = 20,
 			}),
@@ -411,7 +411,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 5892,	-- Searn Firewarder
 				coord = { 38.0, 37.7, MAP.ORGRIMMAR },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				isBreadcrumb = true,
 				lvl = 20,
 			}),
@@ -419,7 +419,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 5906,	-- Xanis Flameweaver
 				coord = { 25.2, 20.5, MAP.THUNDER_BLUFF },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				isBreadcrumb = true,
 				lvl = 20,
 			}),
@@ -433,7 +433,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 5901,	-- Islen Waterseer
 				coord = { 65.8, 43.8, MAP.THE_BARRENS },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				lvl = 20,
 			}),
 			q(1535, {	-- Call of Water (3/9)
@@ -441,7 +441,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 5899,	-- Brine
 				coord = { 43.4, 77.4, MAP.THE_BARRENS },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Filled Brown Waterskin
@@ -459,7 +459,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 43.4, 77.4, MAP.THE_BARRENS },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Filled Red Waterskin
@@ -477,7 +477,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 43.4, 77.4, MAP.THE_BARRENS },
 				maps = { MAP.ASHENVALE },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Filled Blue Waterskin
@@ -495,7 +495,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qi = 7810,	-- Vial of Purest Water
 				coord = { 43.4, 77.4, MAP.THE_BARRENS },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				lvl = 20,
 				groups = {
 					i(6637),	-- Water Sapta
@@ -507,7 +507,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 65.8, 43.8, MAP.THE_BARRENS },
 				maps = { MAP.SILVERPINE_FOREST },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Corrupt Manifestation's Bracers
@@ -525,7 +525,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				provider = { "o", 113791 },	-- Brazier of Everfount
 				coord = { 38.3, 44.6, MAP.SILVERPINE_FOREST },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				lvl = 20,
 			}),
 			q(96, {	-- Call of Water (9/9)
@@ -534,7 +534,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qi = 7813,	-- Shard of Water
 				coord = { 38.6, 44.6, MAP.SILVERPINE_FOREST },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				lvl = 20,
 				groups = {
 					recipe(5394),	-- Healing Stream Totem
@@ -548,7 +548,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 7007,	-- Tiev Mordune
 				coord = { 37.3, 44.1, MAP.SILVERPINE_FOREST },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				repeatable = true,
 				lvl = 20,
 				groups = {
@@ -2764,7 +2764,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 5901,	-- Islen Waterseer
 				coord = { 65.8, 43.8, MAP.THE_BARRENS },
 				classes = { SHAMAN },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				repeatable = true,
 				lvl = 20,
 				groups = {

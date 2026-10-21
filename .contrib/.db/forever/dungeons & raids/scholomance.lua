@@ -23,7 +23,7 @@ root(ROOTS.Instances, {
 					qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 					coord = { 38.7, 35.9, MAP.ORGRIMMAR },
 					classes = { SHAMAN },
-					races = HORDE_ONLY,
+					races = HORDE_SHAMANS,
 					lvl = 55,
 					groups = {
 						i(20134),	-- Skyfury Helm
@@ -34,7 +34,7 @@ root(ROOTS.Instances, {
 					sourceQuest = 7647,	-- Judgment and Redemption
 					coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
 					classes = { PALADIN },
-					races = ALLIANCE_ONLY,
+					races = ALLIANCE_PALADINS,
 					repeatable = true,
 					lvl = 60,
 					groups = {
@@ -46,7 +46,7 @@ root(ROOTS.Instances, {
 					sourceQuest = 8258,	-- The Darkreaver Menace
 					coord = { 38.7, 35.9, MAP.ORGRIMMAR },
 					classes = { SHAMAN },
-					races = HORDE_ONLY,
+					races = HORDE_SHAMANS,
 					repeatable = true,
 					lvl = 60,
 					groups = {
@@ -223,7 +223,7 @@ root(ROOTS.Instances, {
 					sourceQuest = 7646,	-- The Divination Scryer
 					coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
 					classes = { PALADIN },
-					races = ALLIANCE_ONLY,
+					races = ALLIANCE_PALADINS,
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Charger's Redeemed Soul
@@ -261,7 +261,7 @@ root(ROOTS.Instances, {
 						{ "i", 18335, 1 },	-- Pristine Black Diamond
 					},
 					classes = { SHAMAN },
-					races = HORDE_ONLY,
+					races = HORDE_SHAMANS,
 					lvl = 58,
 				}),
 				q(5463, {	-- Menethil's Gift (1/2)
@@ -367,7 +367,7 @@ root(ROOTS.Instances, {
 					qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 					coord = { 38.7, 35.9, MAP.ORGRIMMAR },
 					classes = { SHAMAN },
-					races = HORDE_ONLY,
+					races = HORDE_SHAMANS,
 					lvl = 55,
 					groups = {
 						objective(1, {	-- 0/1 Darkreaver's Head
@@ -385,7 +385,7 @@ root(ROOTS.Instances, {
 					qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 					coord = { 38.7, 35.9, MAP.ORGRIMMAR },
 					classes = { SHAMAN },
-					races = HORDE_ONLY,
+					races = HORDE_SHAMANS,
 					lvl = 55,
 					groups = {
 						objective(1, {	-- 0/1 Darkreaver's Head

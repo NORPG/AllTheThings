@@ -123,7 +123,7 @@ root(ROOTS.Instances, {
 					sourceQuest = 8412,	-- Spirit Totem
 					qg = 6176,	-- Bath'rah the Windwatcher
 					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
-					races = HORDE_ONLY,
+					races = HORDE_SHAMANS,
 					classes = { SHAMAN },
 					lvl = 50,
 					groups = {
@@ -162,7 +162,7 @@ root(ROOTS.Instances, {
 					qg = 10838,	-- Commander Ashlam Valorfist
 					coord = { 42.8, 84.0, MAP.WESTERN_PLAGUELANDS },
 					classes = { PALADIN },
-					races = ALLIANCE_ONLY,
+					races = ALLIANCE_PALADINS,
 					lvl = 50,
 					groups = {
 						objective(1, {	-- 0/2 Amber Voodoo Feather

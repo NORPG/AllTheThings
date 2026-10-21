@@ -258,7 +258,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					{ 38.0, 37.8, MAP.ORGRIMMAR },	-- Searn Firewarder
 					{ 22.8, 19.4, MAP.THUNDER_BLUFF },	-- Beram Skychaser
 				},
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				cost = {
 					{ "i", 7067, 1 },	-- Elemental Earth
 					{ "i", 7068, 1 },	-- Elemental Fire
@@ -418,7 +418,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				qg = 6176,	-- Bath'rah the Windwatcher
 				coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 				maps = { MAP.WESTERN_PLAGUELANDS },
-				races = HORDE_ONLY,
+				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 50,
 				groups = {

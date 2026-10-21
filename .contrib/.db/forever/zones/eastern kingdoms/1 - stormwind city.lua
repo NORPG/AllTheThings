@@ -304,7 +304,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
 				maps = { MAP.DIRE_MAUL, MAP.HILLSBRAD_FOOTHILLS },
 				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				lvl = 60,
 				groups = {
 					q(7645, {	-- Ancient Equine Spirit
@@ -409,7 +409,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
 				maps = { MAP.DIRE_MAUL },
 				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				lvl = 60,
 			}),
 			q(344, {	-- Brother Paxton
@@ -475,7 +475,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					{ "g", 1500000 },	-- 150g
 				},
 				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				lvl = 60,
 			}),
 			q(94821, {	-- Confounding Flash
@@ -707,7 +707,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				maps = { MAP.IRONFORGE },
 				cost = 1500000,	-- 150g
 				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				lvl = 60,
 			}),
 			q(92752, {	-- Explosive Consultation (2/2)
@@ -730,7 +730,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
 				maps = { MAP.EASTERN_PLAGUELANDS },
 				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				lvl = 60,
 				groups = {
 					objective(1, {	-- 0/25 Terrordale Spirit slain
@@ -933,7 +933,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qi = 18753,	-- Arcanite Barding
 				coord = { 59.7, 33.8, MAP.STORMWIND_CITY },
 				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				lvl = 60,
 			}),
 			q(333, {	-- Harlan Needs a Resupply
@@ -1068,14 +1068,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
 				coord = { 23.4, 6.2, MAP.IRONFORGE },
 				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				isBreadcrumb = true,
 				lvl = 60,
 			}),
 			q(7638, {	-- Lord Grayson Shadowbreaker [Stormwind City]
 				qg = 6171,	-- Duthorian Rall
 				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				isBreadcrumb = true,
 				lvl = 60,
 			}),
@@ -1485,7 +1485,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					{ "i", 18335, 1 },	-- Pristine Black Diamond
 				},
 				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				lvl = 60,
 			}),
 			q(6182, {	-- The First and the Last
@@ -1739,7 +1739,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(4485, {	-- The Tome of Nobility (Stormwind City)
 				qg = 5491,	-- Arthur the Faithful <Paladin Trainer>
 				coord = { 49.6, 49.9, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
 				isBreadcrumb = true,
 				lvl = 40,
@@ -1747,7 +1747,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(4486, {	-- The Tome of Nobility (Ironforge)
 				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
 				coord = { 23.6, 6.6, MAP.IRONFORGE },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
 				isBreadcrumb = true,
 				lvl = 40,
@@ -1759,7 +1759,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 				qg = 6171,	-- Duthorian Rall
 				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
 				lvl = 40,
 				groups = {
@@ -1790,7 +1790,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 6171,	-- Duthorian Rall
 				qi = 6776,	-- Tome of Valor
 				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
 				lvl = 20,
 			}),
@@ -1798,7 +1798,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				sourceQuest = 1649,	-- The Tome of Valor (1/4)
 				qg = 6171,	-- Duthorian Rall
 				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
 				lvl = 20,
 			}),
@@ -1806,7 +1806,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				sourceQuest = 1650,	-- The Tome of Valor (2/4)
 				qg = 6182,	-- Daphne Stilwell
 				coord = { 42.4, 88.4, MAP.WESTFALL },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
 				lvl = 20,
 			}),
@@ -1814,7 +1814,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				sourceQuest = 1651,	-- The Tome of Valor (3/4)
 				qg = 6171,	-- Duthorian Rall
 				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
 				lvl = 20,
 				groups = {
@@ -1878,7 +1878,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
 				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				lvl = 60,
 			}),
 			q(7639, {	-- To Show Due Judgment
@@ -1887,7 +1887,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qi = 18819,	-- Rohan's Exorcism Censer
 				coord = { 25.0, 8.2, MAP.IRONFORGE },
 				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
+				races = ALLIANCE_PALADINS,
 				lvl = 60,
 			}),
 			q(1449, {	-- To The Hinterlands
