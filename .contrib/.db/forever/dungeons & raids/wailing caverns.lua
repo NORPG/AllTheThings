@@ -222,6 +222,9 @@ root(ROOTS.Instances, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(6446),	-- Snakeskin Bag
+					i(273098, {	-- Blueprint: Field Guide (RECIPE!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			e(477, {	-- Kresh
@@ -279,6 +282,9 @@ root(ROOTS.Instances, {
 					i(5970),	-- Serpent Gloves
 					i(10411),	-- Footpads of the Fang
 					i(6459),	-- Savage Trodders
+					i(273087, {	-- Blueprint: Journeyman Campfire (RECIPE!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			e(480, {	-- Verdan the Everliving

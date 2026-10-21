@@ -213,10 +213,16 @@ root(ROOTS.Instances, {
 					n(3983, {	-- Interrogator Vishas
 						i(7683),	-- Bloody Brass Knuckles
 						i(7682),	-- Torturing Poker
+						i(274290, {	-- Painwalker Buckler
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					}),
 					n(4543, {	-- Bloodmage Thalnos
 						i(7685),	-- Orb of the Forgotten Seer
 						i(7684),	-- Bloodmage Mantle
+						i(274291, {	-- Polished Skullcap
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					}),
 				},
 			}),
@@ -300,12 +306,24 @@ root(ROOTS.Instances, {
 						i(7710),	-- Loksey's Training Stick
 						i(7756),	-- Dog Training Gloves
 						i(3456),	-- Dog Whistle
+						i(273109, {	-- Blueprint: Trapper's Workbench (RECIPE!)
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+						i(274292, {	-- Houndmaster Boomerang
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					}),
 					n(6487, {	-- Arcanist Doan
 						i(7714),	-- Hypnotic Blade
 						i(7713),	-- Illusionary Rod
 						i(7712),	-- Mantle of Doan
 						i(7711),	-- Robe of Doan
+						i(274293, {	-- Spellsever Crossbow
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+						i(274294, {	-- Library Walkers
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					}),
 				},
 			}),

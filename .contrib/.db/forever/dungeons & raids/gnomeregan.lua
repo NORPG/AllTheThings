@@ -551,6 +551,12 @@ root(ROOTS.Instances, {
 				creatureID = 7361,
 				groups = {
 					i(9445),	-- Grubbis Paws
+					i(274042, {	-- Skullduggery Belt
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(274043, {	-- Irradiated Shield
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			MATRIX_PUNCHOGRAPH_B,
@@ -580,6 +586,9 @@ root(ROOTS.Instances, {
 				groups = {
 					i(9449),	-- Manual Crowd Pummeler
 					i(9450),	-- Gnomebot Operating Boots
+					i(274068, {	-- Thermaplugg Medal of Honor
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(6228, {	-- Dark Iron Ambassador

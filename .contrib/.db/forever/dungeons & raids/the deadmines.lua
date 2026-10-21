@@ -316,6 +316,9 @@ root(ROOTS.Instances, {
 				i(273298, {	-- Lookie's Spyglass
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
+				i(273102, {	-- Blueprint: Cookie's Feast (RECIPE!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			}),
 		},
 	}),

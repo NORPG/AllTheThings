@@ -277,6 +277,9 @@ root(ROOTS.Instances, {
 				i(273840, {	-- Cursed Murloc Eye
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
+				i(273141, {	-- Blueprint: Fishing Rack (RECIPE!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			}),
 			n(12902, {	-- Lorgus Jett
 				i(273843, {	-- Fallenroot Longbow

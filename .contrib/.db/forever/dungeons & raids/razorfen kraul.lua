@@ -181,6 +181,9 @@ root(ROOTS.Instances, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(6841),	-- Vial of Phlogiston
+					i(274149, {	-- Thornweaver Drape
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(4424, {	-- Aggem Thorncurse <Death's Head Prophet>
@@ -188,6 +191,9 @@ root(ROOTS.Instances, {
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 				i(6681),	-- Thornspike
+				i(274159, {	-- Thorncursed Grips
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			}),
 			n(4428, {	-- Death Speaker Jargba <Death's Head Captain>
 				i(2816),	-- Death Speaker Scepter

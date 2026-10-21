@@ -120,6 +120,11 @@ root(ROOTS.Instances, {
 					{ 48.6, 95.6, MAP.THE_BARRENS },
 				},
 				description = "This is a rare that is not always present.",
+				groups = {
+					i(286639, {	-- Ambassador's Bloodrobes
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(7355, {	-- Tuten'kash
 				i(10776),	-- Silky Spider Cape
