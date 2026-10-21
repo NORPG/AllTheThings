@@ -1099,6 +1099,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				},
 			}),
 		}),
+		n(TREASURES, {
+			o(409735, {	-- Spellbook
+				coord = { 16.4, 28.4, MAP.DUSKWOOD },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(209849),	-- Crimes Against Anatomy
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(228, {	-- Avette Fellwood <Bowyer>
 				coord = { 73.2, 44.8, MAP.DUSKWOOD },

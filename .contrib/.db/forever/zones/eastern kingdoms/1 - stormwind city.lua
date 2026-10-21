@@ -255,6 +255,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				lvl = 25,
 			}),
+			q(78090, {	-- A Second Opinion
+				sourceQuest = 78089,	-- Advice From Stormwind
+				qg = 5492,	-- Katherine the Pure
+				qi = 209748,	-- Althalaxx Orb (PQI!)
+				coord = { 37.4, 32.0, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
+				lvl = 22,
+			}),
 			q(1638, {	-- A Warrior's Training
 				altQuests = {
 					1684,	-- Elanaria
@@ -681,6 +691,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				races = { HUMAN },
 				lvl = 10,
 			}),
+			q(78091, {	-- Earning Your Salt
+				sourceQuest = 78090,	-- A Second Opinion
+				qg = 5495,	-- Ursula Deline <Warlock Trainer>
+				coord = { 26.2, 77.4, MAP.STORMWIND_CITY },
+				maps = { MAP.REDRIDGE_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
+				lvl = 22,
+				groups = {
+					objective(1, {	-- 0/14 Summoner's Salt
+						provider = { "i", 209778 },	-- Summoner's Salt
+						crs = {
+							4463,	-- Blackrock Summoner
+							 435,	-- Blackrock Champion
+							 615,	-- Blackrock Tracker
+						},
+					}),
+				},
+			}),
 			q(5673, {	-- Elune's Grace [Stormwind City]
 				altQuests = {
 					5672,	-- Elune's Grace [Darnassus]
@@ -786,6 +816,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					i(6290),	-- Brilliant Smallfish
 					i(5095),	-- Rainbow Fin Albacore
+				},
+			}),
+			q(78092, {	-- It Must Be Destroyed
+				sourceQuest = 78091,	-- Earning Your Salt
+				qg = 5495,	-- Ursula Deline <Warlock Trainer>
+				qi = 209748,	-- Althalaxx Orb (PQI!)
+				coord = { 26.2, 77.4, MAP.STORMWIND_CITY },
+				maps = { MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
+				lvl = 22,
+				groups = {
+					objective(1, {	-- 0/12 Mote of Mannoroth
+						provider = { "i", 209779 },	-- Mote of Mannoroth
+						crs = {
+							 6073,	-- Searing Infernal
+							 6115,	-- Felguard
+							11697,	-- Mannoroc Lasher
+							 6071,	-- Legion Hound
+						},
+					}),
 				},
 			}),
 			q(98021, {	-- Journey to Sentinel Hill

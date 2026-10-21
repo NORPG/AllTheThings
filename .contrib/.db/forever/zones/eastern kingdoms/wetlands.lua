@@ -1213,6 +1213,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				},
 			}),
 		}),
+		n(TREASURES, {
+			o(409717, {	-- Scrolls
+				coord = { 33.6, 47.9, MAP.WETLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(209848),	-- Goaz Scrolls
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(1450, {	-- Brahnmar <Armorer>
 				coord = { 11.6, 59.9, MAP.WETLANDS },

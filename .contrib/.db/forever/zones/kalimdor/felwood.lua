@@ -1200,6 +1200,15 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				},
 			}),
 		}),
+		n(TREASURES, {
+			o(463209, {	-- Book
+				coord = { 65.2, 3.3, MAP.FELWOOD },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(228134),	-- Northern Kalimdor - A Comprehensive Guide
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(2806, {	-- Bale <General Goods>
 				coord = { 34.8, 53.2, MAP.FELWOOD },

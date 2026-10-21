@@ -1827,6 +1827,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 		}),
+		n(TREASURES, {
+			o(405879, {	-- Apothecary Society Primer
+				coord = { 59.4, 52.3, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				groups = {
+					i(208185),	-- The Apothecary's Metaphysical Primer
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(2118, {	-- Abigail Shiel <Trade Supplies>
 				coord = { 61.0, 52.4, MAP.TIRISFAL_GLADES },

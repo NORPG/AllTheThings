@@ -914,6 +914,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				coord = { 77.8, 53.6, MAP.LOCH_MODAN },
 			}),
 		}),
+		n(TREASURES, {
+			o(408014, {	-- Gnomish Tome
+				coord = { 35.5, 48.3, MAP.LOCH_MODAN },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				groups = {
+					i(208860),	-- Rumi of Gnomeregan: The Collected Works
+				},
+			}),
+			o(409731, {	-- Scrolls
+				coord = { 77.4, 14.0, MAP.LOCH_MODAN },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				groups = {
+					i(209850),	-- Runes of the Sorcerer-Kings
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(1214, {	-- Aldren Cordon <Clothier>
 				coord = { 64.8, 66.0, MAP.LOCH_MODAN },

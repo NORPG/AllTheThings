@@ -738,6 +738,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				},
 			}),
 		}),
+		n(TREASURES, {
+			o(441252, {	-- Book
+				coord = { 36.0, 72.8, MAP.THE_HINTERLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(220350),	-- Venomous Journeys
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(12958, {	-- Gigget Zipcoil <Trade Supplies>
 				coord = { 34.4, 38.6, MAP.THE_HINTERLANDS },

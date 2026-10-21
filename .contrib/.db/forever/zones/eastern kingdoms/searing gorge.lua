@@ -638,6 +638,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				},
 			}),
 		}),
+		n(TREASURES, {
+			o(441253, {	-- Book
+				coord = { 37.8, 49.3, MAP.SEARING_GORGE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(220352),	-- A Mind of Metal
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(14624, {	-- Master Smith Burninate <The Thorium Brotherhood>
 				coord = { 38.8, 28.5, MAP.SEARING_GORGE },

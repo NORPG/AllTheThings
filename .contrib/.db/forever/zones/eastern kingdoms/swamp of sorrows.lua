@@ -667,6 +667,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				},
 			}),
 		}),
+		n(TREASURES, {
+			o(441247, {	-- Book
+				coord = { 70.3, 51.7, MAP.SWAMP_OF_SORROWS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(220345),	-- Sanguine Sorcery
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(989, {	-- Banalash <Trade Supplies>
 				coord = { 44.6, 56.8, MAP.SWAMP_OF_SORROWS },

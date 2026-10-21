@@ -789,6 +789,118 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 					}),
 				},
 			}),
+			q(79360, {	-- Elemental Aid
+				sourceQuests = {
+					1531,	-- Call of Air [Orgrimmar]
+					1532,	-- Call of Air [Thunder Bluff]
+					96136,	-- Call of Air
+				},
+				qg = 4722,	-- Rau Cliffrunner
+				coord = { 46.0, 51.6, MAP.THOUSAND_NEEDLES },
+				maps = { MAP.RAZORFEN_KRAUL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/1 Tattered Note
+						provider = { "i", 274463 },	-- Tattered Note
+						cr = 4421,	-- Charlga Razorflank <The Crone>
+					}),
+				},
+			}),
+			q(79361, {	-- Storm, Earth, and Fire
+				sourceQuest = 79364,	-- Eyes on the Sky
+				qg = 5905,	-- Prate Cloudseer
+				qi = 274483,	-- The Walks of Shaman (PQI!)
+				coord = { 53.6, 42.8, MAP.THOUSAND_NEEDLES },
+				maps = { MAP.BADLANDS, MAP.SWAMP_OF_SORROWS, MAP.DESOLACE, MAP.DUSTWALLOW_MARSH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/5 Twisted Fire Totem
+						provider = { "i", 274044 },	-- Twisted Fire Totem
+						crs = {
+							2893,	-- Stonevault Bonesnapper
+							2906,	-- Dustbelcher Warrior
+							2701,	-- Dustbelcher Ogre
+							2715,	-- Dustbelcher Brute
+						},
+					}),
+					objective(2, {	-- 0/5 Twisted Earth Totem
+						provider = { "i", 274045 },	-- Twisted Earth Totem
+						crs = {
+							757,	-- Lost One Fisherman
+							760,	-- Lost One Muckdweller
+							759,	-- Lost One Hunter
+							755,	-- Lost One Mudlurker
+						},
+					}),
+					objective(3, {	-- 0/5 Twisted Air Totem
+						provider = { "i", 274047 },	-- Twisted Air Totem
+						crs = {
+							4656,	-- Maraudine Mauler
+							4655,	-- Maraudine Wrangler
+							4654,	-- Maraudine Scout
+							4657,	-- Maraudine Windchaser
+						},
+					}),
+					objective(4, {	-- 0/5 Twisted Water Totem
+						provider = { "i", 274046 },	-- Twisted Water Totem
+						crs = {
+							4362,	-- Mirefin Coastrunner
+							4359,	-- Mirefin Murloc
+							4361,	-- Mirefin Muckdweller
+							4360,	-- Mirefin Warrior
+							4358,	-- Mirefin Puddlejumper
+						},
+					}),
+				},
+			}),
+			q(79364, {	-- Eyes on the Sky
+				sourceQuest = 79360,	-- Elemental Aid
+				qg = 4722,	-- Rau Cliffrunner
+				coord = { 46.0, 51.6, MAP.THOUSAND_NEEDLES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
+				lvl = 30,
+			}),
+			q(79366, {	-- Heed My Call
+				sourceQuest = 79361,	-- Storm, Earth, and Fire
+				qg = 4722,	-- Rau Cliffrunner
+				qi = 268582,	-- Corrupted Totems (PQI!)
+				coord = { 46.0, 51.6, MAP.THOUSAND_NEEDLES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/1 Eye of the Tempest
+						provider = { "i", 212792 },	-- Eye of the Tempest
+						cr = 216474,	-- Ravaging Tempest
+						coord = { 54.0, 41.2, MAP.THOUSAND_NEEDLES },
+					}),
+				},
+			}),
+			q(79442, {	-- The Tempest's Weapons
+				sourceQuest = 79366,	-- Heed My Call
+				qg = 4722,	-- Rau Cliffrunner
+				qi = 212792,	-- Eye of the Tempest (PQI!)
+				coord = { 46.0, 51.6, MAP.THOUSAND_NEEDLES },
+				maps = { MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
+				lvl = 30,
+				groups = {
+					i(280607),	-- Lightning's Grasp
+					i(280604),	-- Rage of the Storm
+					i(280605),	-- Tidebringer's Claw
+				},
+			}),
 			q(96136, {	-- Call of Air
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Prate Cloudseer (5905) in Thousand Needles.
 				timeline = { TIMELINE.CREATED_1_60_1 },
@@ -913,6 +1025,13 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				coord = { 30.0, 24.0, MAP.THOUSAND_NEEDLES },
 				groups = {
 					i(5791),	-- Henrig Lonebrow's Journal (QS!)
+				},
+			}),
+			o(423895, {	-- Scrolls
+				coord = { 34.4, 40.1, MAP.THOUSAND_NEEDLES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(215683),	-- Geomancy: The Stone-Cold Truth
 				},
 			}),
 		}),

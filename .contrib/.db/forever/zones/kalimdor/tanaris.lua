@@ -1144,6 +1144,13 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 		}),
 		n(TREASURES, {
+			o(441248, {	-- Book
+				coord = { 72.6, 47.8, MAP.TANARIS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(220346),	-- Legends of the Tidesages
+				},
+			}),
 			o(142184, {	-- Captain's Chest
 				description = "The Captain's Chest is found in the captains quarters in one of the two ships harboured at Lost Rigger's Cove, and is one of three sources for Southsea Lamp. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers, which are commonly found on Southsea mobs around Lost Rigger's Cove.",
 				coord = { 76.5, 45.8, MAP.TANARIS },

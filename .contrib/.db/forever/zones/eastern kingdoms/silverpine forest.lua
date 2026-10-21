@@ -587,6 +587,44 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				races = { UNDEAD },
 				lvl = 10,
 			}),
+			q(78261, {	-- The Horn of Xelthos (1/2)
+				provider = { "o", 410369 },	-- Dead Drop
+				coord = { 47.1, 71.1, MAP.SILVERPINE_FOREST },
+				maps = { MAP.SHADOWFANG_KEEP, MAP.STONETALON_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { ROGUE },
+				groups = {
+					objective(1, {	-- 0/1 Horn of Xelthos
+						providers = {
+							{ "i", 210183 },	-- Horn of Xelthos
+							{ "o", 410528 },	-- Ornamented Chest
+						},
+					}),
+					objective(2, {	-- Find Veenix
+						cr = 4086,	-- Veenix <Venture Co. Merchant>
+						coord = { 58.2, 51.6, MAP.STONETALON_MOUNTAINS },
+					}),
+				},
+			}),
+			q(78307, {	-- The Horn of Xelthos (2/2)
+				sourceQuest = 78261,	-- The Horn of Xelthos (1/2)
+				provider = { "o", 410369 },	-- Dead Drop
+				coord = { 47.1, 71.1, MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { ROGUE },
+				groups = {
+					i(277210),	-- Pyrewood Signet Ring
+				},
+			}),
+			q(78699, {	-- The Eye of Bhossca
+				-- TODO: Wowhead doesn't list how this quest starts. Turned in at the Dead Drop (410369) in Silverpine Forest.
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				classes = { ROGUE },
+				lvl = 25,
+				groups = {
+					i(277246),	-- Ruby-Adorned Blade
+				},
+			}),
 			q(91859, {	-- A Curious Pair
 				qg = 248840,	-- Trevan Rol
 				coord = { 43.4, 41.0, MAP.SILVERPINE_FOREST },
@@ -900,6 +938,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				coord = { 66.2, 25.0, MAP.SILVERPINE_FOREST },
 				groups = {
 					i(4445),	-- Flesh Carver
+				},
+			}),
+		}),
+		n(TREASURES, {
+			o(410299, {	-- Arcane Secrets
+				coord = { 43.4, 41.2, MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				groups = {
+					i(210177),	-- Ataeric: On Arcane Curiosities
+				},
+			}),
+			o(409501, {	-- Dalaran Digest
+				coord = { 63.4, 63.1, MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(209844),	-- The Dalaran Digest, Vol. 23
 				},
 			}),
 		}),

@@ -1091,6 +1091,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 					i(12938),	-- Blood of Heroes
 				},
 			}),
+			o(463211, {	-- Book
+				coord = { 69.2, 72.4, MAP.WESTERN_PLAGUELANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(228141),	-- Necromancy 101
+				},
+			}),
+			o(463213, {	-- Book
+				coord = { 38.2, 54.6, MAP.WESTERN_PLAGUELANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(228132),	-- Undead Potatoes
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(11056, {	-- Alchemist Arbington

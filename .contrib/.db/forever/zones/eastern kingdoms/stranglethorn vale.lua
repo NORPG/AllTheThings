@@ -995,6 +995,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					i(4112),	-- Choker of the High Shaman
 				},
 			}),
+			q(79242, {	-- No Honor Among Thieves
+				qg = 215643,	-- Tokal
+				coord = { 27.0, 77.2, MAP.STRANGLETHORN_VALE },
+				maps = { MAP.ARATHI_HIGHLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 30,
+				groups = {
+					objective(1, {	-- Found Illari Duskfeather
+						cr = 215655,	-- Illari Duskfeather
+						coord = { 93.8, 71.4, MAP.ARATHI_HIGHLANDS },
+					}),
+					objective(2, {	-- 0/1 Illari's Key
+						providers = {
+							{ "i", 212347 },	-- Illari's Key
+							{ "o", 423569 },	-- Dropped Pouch
+						},
+					}),
+					i(277208),	-- Determined Band
+					i(277235),	-- Soldier's Visor
+					i(277223),	-- Traveled Gloves
+				},
+			}),
 			q(190, {	-- Panther Hunting [CATA+] / Panther Mastery (1/4)
 				sourceQuest = 583,	-- Welcome to the Jungle
 				qg = 718,	-- Sir S. J. Erlgadin
@@ -1439,6 +1461,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
+			}),
+			q(78830, {	-- Terror of the Desert Skies
+				qg = 715,	-- Hemet Nesingwary
+				qi = 211272,	-- Empty Bait Cage (PQI!)
+				coord = { 35.6, 10.8, MAP.STRANGLETHORN_VALE },
+				maps = { MAP.BADLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { HUNTER },
+				lvl = 26,
+				groups = {
+					objective(1, {	-- 0/1 Crimson Trophy Quill
+						provider = { "i", 211293 },	-- Crimson Trophy Quill
+						cr = 213795,	-- Gharrik
+						coord = { 22.4, 67.6, MAP.BADLANDS },
+					}),
+					i(277209),	-- Ponderous Loop
+					i(277207),	-- Well-Weathered Cloak
+				},
 			}),
 			q(2763, {	-- The Art of the Imbue
 				sourceQuest = 2760,	-- The Mithril Order
@@ -2133,6 +2173,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 45,
 				groups = {
 					i(4098),	-- Carefully Folded Note
+				},
+			}),
+			o(421526, {	-- Research Notes
+				coord = { 41.4, 50.9, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(213165),	-- Basilisks: Should Petrification be Feared?
 				},
 			}),
 		}),

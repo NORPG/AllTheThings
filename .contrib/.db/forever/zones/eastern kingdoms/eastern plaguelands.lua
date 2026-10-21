@@ -1291,6 +1291,33 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					i(12938),	-- Blood of Heroes
 				},
 			}),
+			o(463207, {	-- Book
+				coords = {
+					{ 71.8, 48.3, MAP.EASTERN_PLAGUELANDS },
+					{ 81.7, 57.8, MAP.EASTERN_PLAGUELANDS },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(228135),	-- A Study of the Light
+				},
+			}),
+			o(463212, {	-- Book
+				coord = { 31.2, 21.0, MAP.EASTERN_PLAGUELANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(228140),	-- Scourge: Undead Menace or Misunderstood?
+				},
+			}),
+			o(463208, {	-- Book
+				coords = {
+					{ 47.2, 42.3, MAP.EASTERN_PLAGUELANDS },
+					{ 54.4, 51.1, MAP.EASTERN_PLAGUELANDS },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(228138),	-- The Knight and the Lady
+				},
+			}),
 			o(176116, {	-- Pamela's Doll's Head
 				sourceQuests = {
 					5149,	-- Pamela's Doll

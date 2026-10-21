@@ -381,6 +381,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				description = "Reward for turning in an Imperfect Draenethyst Fragment to Kum'isha the Collector.\n\nContains a random green world drop item.",
 			}),
 		}),
+		n(TREASURES, {
+			o(441254, {	-- Book
+				coord = { 55.4, 32.2, MAP.BLASTED_LANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(220353),	-- Conjurer's Codex
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(8178, {	-- Nina Lightbrew <Alchemy Supplies>
 				coord = { 66.8, 18.6, MAP.BLASTED_LANDS },

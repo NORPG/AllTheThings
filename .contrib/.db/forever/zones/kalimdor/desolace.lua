@@ -1357,6 +1357,13 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 		}),
 		n(TREASURES, {
+			o(423898, {	-- Mysterious Book
+				coord = { 55.1, 26.2, MAP.DESOLACE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(215817),	-- Demons and You
+				},
+			}),
 			o(176582, {	-- Shellfish Trap
 				description = "You can interact with Shellfish Traps only during the quest |cFFE50D12Fish in a Bucket|r (5421).\n\nIf you want to obtain the |cFFFFFFFFBig Iron Fishing Pole|r, |cFFFFFFFFDO NOT|r turn in the quest until you do.",
 				coords = {

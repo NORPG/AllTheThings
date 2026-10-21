@@ -966,6 +966,15 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				},
 			}),
 		}),
+		n(TREASURES, {
+			o(423900, {	-- Waterlogged Book
+				coord = { 57.2, 20.8, MAP.DUSTWALLOW_MARSH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(215822),	-- RwlRwlRwlRwl!
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(13476, {	-- Balai Lok'Wein <Potions, Scrolls and Reagents>
 				coord = { 36.4, 30.4, MAP.DUSTWALLOW_MARSH, },

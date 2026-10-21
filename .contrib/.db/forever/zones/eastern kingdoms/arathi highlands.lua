@@ -391,6 +391,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 29,
 			}),
 			q(96135, {	-- Heed My Call
+				sourceQuest = 79358,	-- Storm, Earth, and Fire
 				qg = 259023,	-- Veyric Thunderhame
 				qi = 268582,	-- Corrupted Totems (PQI!)
 				coord = { 59.8, 27.4, MAP.ARATHI_HIGHLANDS },
@@ -399,7 +400,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 30,
-				-- TODO: Wowhead lists Storm, Earth, and Fire (79358) as the previous quest, but it isn't in the Forever DB.
 				groups = {
 					objective(1, {	-- 0/1 Eye of the Tempest
 						provider = { "i", 212792 },	-- Eye of the Tempest
@@ -659,6 +659,56 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 							{ "o", 2690 },	-- Stone of Outer Binding
 						},
 						coord = { 52.1, 50.7, MAP.ARATHI_HIGHLANDS },
+					}),
+				},
+			}),
+			q(79358, {	-- Storm, Earth, and Fire
+				sourceQuest = 96264,	-- Elemental Aid
+				qg = 259023,	-- Veyric Thunderhame
+				qi = 274483,	-- The Walks of Shaman (PQI!)
+				coord = { 59.8, 27.4, MAP.ARATHI_HIGHLANDS },
+				maps = { MAP.BADLANDS, MAP.SWAMP_OF_SORROWS, MAP.DESOLACE, MAP.DUSTWALLOW_MARSH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_SHAMANS,
+				classes = { SHAMAN },
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/5 Twisted Fire Totem
+						provider = { "i", 274044 },	-- Twisted Fire Totem
+						crs = {
+							2893,	-- Stonevault Bonesnapper
+							2906,	-- Dustbelcher Warrior
+							2701,	-- Dustbelcher Ogre
+							2715,	-- Dustbelcher Brute
+						},
+					}),
+					objective(2, {	-- 0/5 Twisted Earth Totem
+						provider = { "i", 274045 },	-- Twisted Earth Totem
+						crs = {
+							757,	-- Lost One Fisherman
+							760,	-- Lost One Muckdweller
+							759,	-- Lost One Hunter
+							755,	-- Lost One Mudlurker
+						},
+					}),
+					objective(3, {	-- 0/5 Twisted Air Totem
+						provider = { "i", 274047 },	-- Twisted Air Totem
+						crs = {
+							4656,	-- Maraudine Mauler
+							4655,	-- Maraudine Wrangler
+							4654,	-- Maraudine Scout
+							4657,	-- Maraudine Windchaser
+						},
+					}),
+					objective(4, {	-- 0/5 Twisted Water Totem
+						provider = { "i", 274046 },	-- Twisted Water Totem
+						crs = {
+							4362,	-- Mirefin Coastrunner
+							4359,	-- Mirefin Murloc
+							4361,	-- Mirefin Muckdweller
+							4360,	-- Mirefin Warrior
+							4358,	-- Mirefin Puddlejumper
+						},
 					}),
 				},
 			}),
@@ -1145,6 +1195,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			}),
 			n(2605, {	-- Zalas Witherbark <Warband Leader>
 				coord = { 69.2, 79.6, MAP.ARATHI_HIGHLANDS },
+			}),
+		}),
+		n(TREASURES, {
+			o(423897, {	-- Scrolls
+				coord = { 73.6, 65.2, MAP.ARATHI_HIGHLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(215816),	-- A Web of Lies: Debunking Myths and Legends
+				},
 			}),
 		}),
 		n(VENDORS, {

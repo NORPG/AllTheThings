@@ -448,6 +448,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				},
 			}),
 		}),
+		n(TREASURES, {
+			o(463206, {	-- Book
+				coord = { 26.2, 22.4, MAP.BURNING_STEPPES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(228133),	-- Magma or Lava?
+				},
+			}),
+			o(441251, {	-- Book
+				coord = { 29.1, 28.9, MAP.BURNING_STEPPES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(220349),	-- Stonewrought Design
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(1296, {	-- Felder Stover <Weaponsmith>
 				coord = { 72.9, 65.8, MAP.BURNING_STEPPES },

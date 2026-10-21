@@ -694,6 +694,13 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					i(10714),	-- Crystallized Azsharite
 				},
 			}),
+			o(441250, {	-- Book
+				coord = { 20.8, 62.0, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(220348),	-- Everyday Etiquette
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(12957, {	-- Blimo Gadgetspring <Trade Supplies>

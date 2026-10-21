@@ -835,6 +835,15 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				},
 			}),
 		}),
+		n(TREASURES, {
+			o(463214, {	-- Book
+				coord = { 60.7, 37.7, MAP.WINTERSPRING },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(228136),	-- Ka-Boom!
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(11187, {	-- Himmik <Food & Drink>
 				coord = { 61.2, 39.0, MAP.WINTERSPRING },

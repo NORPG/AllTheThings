@@ -1050,6 +1050,30 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					i(17692),	-- Horn Ring
 				},
 			}),
+			q(78089, {	-- Advice From Stormwind
+				sourceQuest = 78088,	-- A Strange Artifact
+				qg = 3663,	-- Delgren the Purifier
+				qi = 209748,	-- Althalaxx Orb (PQI!)
+				coord = { 26.2, 38.6, MAP.ASHENVALE },
+				maps = { MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
+				lvl = 22,
+			}),
+			q(78093, {	-- Return to Delgren
+				sourceQuest = 78092,	-- It Must Be Destroyed
+				provider = { "o", 409315 },	-- Shattered Orb
+				qi = 209800,	-- Orb Fragments (PQI!)
+				coord = { 89.4, 77.0, MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
+				lvl = 22,
+				groups = {
+					i(277205),	-- Cloak of the Divine Storm
+				},
+			}),
 			q(86757, {	-- Slowing the Orc Advance
 				qg = 3955,	-- Shandrina <Trade Goods>
 				coord = { 49.4, 67.0, MAP.ASHENVALE },

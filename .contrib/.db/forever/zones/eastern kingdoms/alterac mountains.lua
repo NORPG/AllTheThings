@@ -786,6 +786,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				},
 			}),
 		}),
+		n(TREASURES, {
+			o(423896, {	-- Manual
+				coord = { 48.4, 57.7, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(215815),	-- Defensive Magics 101
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(32287, {	-- Archmage Alvareaux <Quartermaster>
 				coord = { 14.0, 63.2, MAP.ALTERAC_MOUNTAINS },

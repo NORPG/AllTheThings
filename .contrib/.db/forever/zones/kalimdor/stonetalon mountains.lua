@@ -855,6 +855,15 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				},
 			}),
 		}),
+		n(TREASURES, {
+			o(409711, {	-- Scrolls
+				coord = { 74.4, 85.7, MAP.STONETALON_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(209851),	-- Fury of the Land
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(9549, {	-- Borand <Bowyer>
 				coords = {

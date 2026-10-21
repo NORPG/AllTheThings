@@ -921,6 +921,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					i(4843),	-- Amethyst Runestone
 				},
 			}),
+			o(423899, {	-- Scrolls
+				coord = { 56.7, 39.9, MAP.BADLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(215820),	-- Mummies: A Guide to the Unsavory Undead
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(9179, {	-- Jazzrik <Blacksmithing Supplies>

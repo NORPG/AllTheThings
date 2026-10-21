@@ -908,6 +908,16 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				},
 			}),
 		}),
+		n(TREASURES, {
+			o(405149, {	-- Mural of Ta'zo
+				coord = { 38.7, 78.4, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				groups = {
+					i(207972),	-- The Lessons of Ta'zo
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(5611, {	-- Barkeep Morag
 				coord = { 54.0, 67.0, MAP.ORGRIMMAR },	-- The Broken Tusk

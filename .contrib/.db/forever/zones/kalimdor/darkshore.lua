@@ -59,6 +59,16 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				races = ALLIANCE_ONLY,
 				lvl = 10,
 			}),
+			q(78088, {	-- A Strange Artifact
+				provider = { "o", 409289 },	-- Strange Orb
+				qi = 209748,	-- Althalaxx Orb (PQI!)
+				coord = { 56.2, 26.4, MAP.DARKSHORE },
+				maps = { MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
+				lvl = 22,
+			}),
 			q(4812, {	-- As Water Cascades
 				sourceQuest = 4811,	-- The Red Crystal
 				qg = 2930,	-- Sentinel Glynda Nal'Shea
@@ -1138,6 +1148,13 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					i(5332, {	-- Glowing Cat Figurine
 						cr = 3619,	-- Ghost Saber
 					}),
+				},
+			}),
+			o(409496, {	-- Scrolls
+				coord = { 59.6, 22.2, MAP.DARKSHORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(209843),	-- Nar'thalas Almanac, Vol. 74
 				},
 			}),
 		}),
