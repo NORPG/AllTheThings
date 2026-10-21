@@ -481,27 +481,6 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				races = HORDE_ONLY,
 				lvl = 4,
 			}),
-			q(96875, {	-- Beasts of Thunder Ridge
-				qg = 5811,	-- Kamari
-				coord = { 63.0, 45.0, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				requireSkill = LEATHERWORKING,
-				races = HORDE_ONLY,
-				lvl = 6,
-				groups = {
-					objective(1, {	-- 0/5 Rough Lizard Hide
-						provider = { "i", 275720 },	-- Rough Lizard Hide
-						crs = {
-							3130,	-- Thunder Lizard
-							3131,	-- Lightning Hide
-						},
-					}),
-					objective(2, {	-- 0/2 Cured Light Hide
-						provider = { "i", 4231 },	-- Cured Light Hide
-					}),
-					i(277716),	-- Pattern: Light Leather Reagent Bag
-				},
-			}),
 			q(97223, {	-- Bloodtalon Matriarch
 				qg = 7953,	-- Xar'Ti
 				coord = { 55.2, 75.4, MAP.DUROTAR },

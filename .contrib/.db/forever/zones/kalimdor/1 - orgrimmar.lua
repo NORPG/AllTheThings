@@ -801,6 +801,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				requireSkill = LEATHERWORKING,
+				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/5 Rough Lizard Hide
 						provider = { "i", 275720 },	-- Rough Lizard Hide
