@@ -4240,6 +4240,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		i(TRICKY_TREAT, { ["timeline"] = { ADDED_2_4_3 } }),
 	}))),
 	n(TREASURES, {
+		o(180523, {	-- Apple Bob
+			["timeline"] = { ADDED_1_8_0 },
+			["groups"] = { i(20516) },	-- Bobbing Apple
+		}),
 		o(691654, {	-- Ghost Gear
 			["coords"] = {
 				{ 54.1, 33.8, FOUNDERS_POINT },

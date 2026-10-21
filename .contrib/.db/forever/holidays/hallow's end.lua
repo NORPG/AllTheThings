@@ -250,6 +250,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 			i(20574),	-- Undead Female Mask
 			i(20573),	-- Undead Male Mask
 		}),
+		n(TREASURES, {
+			o(180523, {	-- Apple Bob
+				i(20516),	-- Bobbing Apple
+			}),
+		}),
 		n(ZONE_DROPS, {
 			i(20400),	-- Pumpkin Bag
 		}),
