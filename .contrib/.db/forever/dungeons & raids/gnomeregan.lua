@@ -60,9 +60,6 @@ root(ROOTS.Instances, {
 				i(5108, {	-- Dark Iron Leather
 					cr = 6212,	-- Dark Iron Agent
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_TWO, i(216634, { timeline = { ADDED_1_15_1, REMOVED_2_0_1 } })),	-- GG12-082 Cartridge Fuse
-				-- #endif
 				i(9490, {	-- Gizmotron Megachopper
 					crs = {
 						6232,	-- Arcane Nullifier X-21
@@ -84,22 +81,8 @@ root(ROOTS.Instances, {
 				}),
 				i(9308),	-- Grime-Encrusted Object
 				i(9326, {	-- Grime-Encrusted Ring
-					-- #if SEASON_OF_DISCOVERY
-					timeline = { REMOVED_1_15_1 },
-					-- #endif
 					cr = 6212,	-- Dark Iron Agent
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_TWO, i(216661, {	-- Grime-Encrusted Ring
-					timeline = { ADDED_1_15_1, REMOVED_2_0_1 },
-					crs = {
-						6212,	-- Dark Iron Agent
-						6228,	-- Dark Iron Ambassador
-					},
-				})),
-				applyclassicphase(SOD_PHASE_TWO, i(216661, { timeline = { ADDED_1_15_1, REMOVED_2_0_1 } })),	-- Grime-Encrusted Salvage
-				applyclassicphase(SOD_PHASE_TWO, i(215430, { timeline = { ADDED_1_15_1, REMOVED_2_0_1 } })),	-- Gnomeregan Fallout
-				-- #endif
 				i(9489, {	-- Gyromatic Icemaker
 					crs = {
 						6232,	-- Arcane Nullifier X-21

@@ -1098,16 +1098,6 @@ root(ROOTS.Instances, {
 				{	-- A Supernatural Device
 					allianceQuestData = q(8922, {	-- A Supernatural Device [A]
 						sourceQuests = {
-							-- #if SEASON_OF_DISCOVERY
-							84147,	-- An Earnest Proposition
-							84148,	-- An Earnest Proposition
-							84149,	-- An Earnest Proposition
-							84150,	-- An Earnest Proposition
-							84151,	-- An Earnest Proposition
-							84152,	-- An Earnest Proposition
-							84153,	-- An Earnest Proposition
-							84154,	-- An Earnest Proposition
-							-- #else
 							8905,	-- An Earnest Proposition [DRUID]
 							8906,	-- An Earnest Proposition [HUNTER]
 							8907,	-- An Earnest Proposition [MAGE]
@@ -1119,7 +1109,6 @@ root(ROOTS.Instances, {
 							-- #endif
 							8911,	-- An Earnest Proposition [WARLOCK]
 							8912,	-- An Earnest Proposition [WARRIOR]
-							-- #endif
 						},
 						qg = 16013,	-- Deliana
 						qi = 21985,	-- Sealed Blood Container
@@ -1127,16 +1116,6 @@ root(ROOTS.Instances, {
 					}),
 					hordeQuestData = q(8923, {	-- A Supernatural Device [H]
 						sourceQuests = {
-							-- #if SEASON_OF_DISCOVERY
-							84155,	-- An Earnest Proposition
-							84156,	-- An Earnest Proposition
-							84157,	-- An Earnest Proposition
-							84158,	-- An Earnest Proposition
-							84159,	-- An Earnest Proposition
-							84160,	-- An Earnest Proposition
-							84161,	-- An Earnest Proposition
-							84162,	-- An Earnest Proposition
-							-- #else
 							8913,	-- An Earnest Proposition [DRUID]
 							8914,	-- An Earnest Proposition [HUNTER]
 							8915,	-- An Earnest Proposition [MAGE]
@@ -1148,7 +1127,6 @@ root(ROOTS.Instances, {
 							8918,	-- An Earnest Proposition [SHAMAN]
 							8919,	-- An Earnest Proposition [WARLOCK]
 							8920,	-- An Earnest Proposition [WARRIOR]
-							-- #endif
 						},
 						qg = 16012,	-- Mokvar
 						qi = 22382,	-- Sealed Venom Container
@@ -1197,16 +1175,6 @@ root(ROOTS.Instances, {
 				{	-- Bodley's Unfortunate Fate
 					allianceQuestData = q(8960, {	-- Bodley's Unfortunate Fate [A]
 						sourceQuests = {
-							-- #if SEASON_OF_DISCOVERY
-							84179,	-- Anthion's Parting Words
-							84180,	-- Anthion's Parting Words
-							84181,	-- Anthion's Parting Words
-							84182,	-- Anthion's Parting Words
-							84183,	-- Anthion's Parting Words
-							84184,	-- Anthion's Parting Words
-							84185,	-- Anthion's Parting Words
-							84186,	-- Anthion's Parting Words
-							-- #else
 							8951,	-- Anthion's Parting Words [ALLIANCE]
 							8952,	-- Anthion's Parting Words [ALLIANCE]
 							8953,	-- Anthion's Parting Words [ALLIANCE]
@@ -1218,23 +1186,12 @@ root(ROOTS.Instances, {
 							-- #if AFTER TBC
 							10496,	-- Anthion's Parting Words [ALLIANCE]
 							-- #endif
-							-- #endif
 						},
 						qg = 16013,	-- Deliana
 						coord = { 43.53, 52.64, MAP.IRONFORGE },
 					}),
 					hordeQuestData = q(9032, {	-- Bodley's Unfortunate Fate [H]
 						sourceQuests = {
-							-- #if SEASON_OF_DISCOVERY
-							84187,	-- Anthion's Parting Words
-							84188,	-- Anthion's Parting Words
-							84189,	-- Anthion's Parting Words
-							84190,	-- Anthion's Parting Words
-							84191,	-- Anthion's Parting Words
-							84192,	-- Anthion's Parting Words
-							84193,	-- Anthion's Parting Words
-							84194,	-- Anthion's Parting Words
-							-- #else
 							9016,	-- Anthion's Parting Words [HORDE]
 							9017,	-- Anthion's Parting Words [HORDE]
 							9018,	-- Anthion's Parting Words [HORDE]
@@ -1245,7 +1202,6 @@ root(ROOTS.Instances, {
 							9022,	-- Anthion's Parting Words [HORDE]
 							-- #if AFTER TBC
 							10497,	-- Anthion's Parting Words [HORDE]
-							-- #endif
 							-- #endif
 						},
 						qg = 16012,	-- Mokvar
@@ -1452,16 +1408,6 @@ root(ROOTS.Instances, {
 				{	-- In Search of Anthion
 					allianceQuestData = q(8929, {	-- In Search of Anthion [A]
 						sourceQuests = {
-							-- #if SEASON_OF_DISCOVERY
-							84163,	-- Just Compensation
-							84164,	-- Just Compensation
-							84165,	-- Just Compensation
-							84166,	-- Just Compensation
-							84167,	-- Just Compensation
-							84168,	-- Just Compensation
-							84169,	-- Just Compensation
-							84170,	-- Just Compensation
-							-- #else
 							8926,	-- Just Compensation [ALLIANCE]
 							8931,	-- Just Compensation [ALLIANCE]
 							8932,	-- Just Compensation [ALLIANCE]
@@ -1473,23 +1419,12 @@ root(ROOTS.Instances, {
 							-- #if AFTER TBC
 							10494,	-- Just Compensation [ALLIANCE]
 							-- #endif
-							-- #endif
 						},
 						qg = 16013,	-- Deliana
 						coord = { 43.53, 52.64, MAP.IRONFORGE },
 					}),
 					hordeQuestData = q(8930, {	-- In Search of Anthion [H]
 						sourceQuests = {
-							-- #if SEASON_OF_DISCOVERY
-							84171,	-- Just Compensation
-							84172,	-- Just Compensation
-							84173,	-- Just Compensation
-							84174,	-- Just Compensation
-							84175,	-- Just Compensation
-							84176,	-- Just Compensation
-							84177,	-- Just Compensation
-							84178,	-- Just Compensation
-							-- #else
 							8927,	-- Just Compensation [HORDE]
 							8938,	-- Just Compensation [HORDE]
 							8939,	-- Just Compensation [HORDE]
@@ -1500,7 +1435,6 @@ root(ROOTS.Instances, {
 							8944,	-- Just Compensation [HORDE]
 							-- #if AFTER TBC
 							10495,	-- Just Compensation [HORDE]
-							-- #endif
 							-- #endif
 						},
 						qg = 16012,	-- Mokvar

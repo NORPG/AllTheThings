@@ -3436,37 +3436,6 @@ root(ROOTS.WorldDrops, {
 		i(19263),	-- Six of Warlords
 		i(19264),	-- Seven of Warlords
 		i(19265),	-- Eight of Warlords
-
-		--[[ Might exist??
-		applyclassicphase(SOD_PHASE_THREE, i(221291)),	-- Two of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221292)),	-- Three of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221293)),	-- Four of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221294)),	-- Five of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221295)),	-- Six of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221296)),	-- Seven of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221297)),	-- Eight of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221300)),	-- Two of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221301)),	-- Three of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221302)),	-- Four of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221303)),	-- Five of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221304)),	-- Six of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221305)),	-- Seven of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221306)),	-- Eight of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221282)),	-- Two of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221283)),	-- Three of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221284)),	-- Four of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221285)),	-- Five of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221286)),	-- Six of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221287)),	-- Seven of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221288)),	-- Eight of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221273)),	-- Two of Wilds
-		applyclassicphase(SOD_PHASE_THREE, i(221274)),	-- Three of Wilds
-		applyclassicphase(SOD_PHASE_THREE, i(221275)),	-- Four of Wilds
-		applyclassicphase(SOD_PHASE_THREE, i(221276)),	-- Five of Wilds
-		applyclassicphase(SOD_PHASE_THREE, i(221277)),	-- Six of Wilds
-		applyclassicphase(SOD_PHASE_THREE, i(221278)),	-- Seven of Wilds
-		applyclassicphase(SOD_PHASE_THREE, i(221279)),	-- Eight of Wilds
-		--]]
 	}),
 	filter(TOYS, {
 		i(1973),	-- Orb of Deception (TOY!)
