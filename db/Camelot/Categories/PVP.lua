@@ -771,6 +771,12 @@ i(274895,{b=1,f=55})}),
 h(-58,{
 n(263570,{coords={
 [1413]={{65,34.4}}},r=1,g={
+i(272055,{b=1,f=55,lvl=45,minReputation={2798,3000},spellID=1290861}),
+i(272053,{b=1,f=55,lvl=25,minReputation={2798,3000},spellID=1290860}),
+i(272054,{b=1,f=55,lvl=35,minReputation={2798,3000},spellID=1290859}),
+i(272057,{b=1,f=55,lvl=35,minReputation={2798,3000},requireSkill=129,spellID=1290863}),
+i(272058,{b=1,f=55,lvl=45,minReputation={2798,3000},requireSkill=129,spellID=1290865}),
+i(272056,{b=1,f=55,lvl=25,minReputation={2798,3000},requireSkill=129,spellID=1290867}),
 i(272059,{b=1,f=53,lvl=28,minReputation={2798,3000},spellID=1316055}),
 i(272060,{b=1,f=53,lvl=48,minReputation={2798,3000},spellID=1318129}),
 i(272061,{b=1,f=53,lvl=48,minReputation={2798,3000},spellID=1318124}),
@@ -824,6 +830,12 @@ s(307831,272108,{b=1,f=7,loc=41,lvl=60,minReputation={2798,42000}}),
 s(308375,272958,{b=1,f=6,loc=41,lvl=60,minReputation={2798,42000}})}}),
 n(263569,{coords={
 [1413]={{63.4,58.6}}},r=2,g={
+i(272055,{b=1,f=55,lvl=45,minReputation={2799,3000},spellID=1290861}),
+i(272053,{b=1,f=55,lvl=25,minReputation={2799,3000},spellID=1290860}),
+i(272054,{b=1,f=55,lvl=35,minReputation={2799,3000},spellID=1290859}),
+i(272057,{b=1,f=55,lvl=35,minReputation={2799,3000},requireSkill=129,spellID=1290863}),
+i(272058,{b=1,f=55,lvl=45,minReputation={2799,3000},requireSkill=129,spellID=1290865}),
+i(272056,{b=1,f=55,lvl=25,minReputation={2799,3000},requireSkill=129,spellID=1290867}),
 i(271903,{b=1,f=53,lvl=48,minReputation={2799,3000},spellID=1318131}),
 i(271904,{b=1,f=53,lvl=28,minReputation={2799,3000},spellID=1316057}),
 i(271905,{b=1,f=53,lvl=28,minReputation={2799,3000},spellID=1316053}),

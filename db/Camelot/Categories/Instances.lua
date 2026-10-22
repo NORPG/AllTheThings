@@ -522,6 +522,7 @@ i(18423,{b=1,lvl=60,r=2}),
 i(18422,{b=1,lvl=60,r=1}),
 i(18705,{b=1,c={3},lvl=60}),
 i(17966,{b=1,f=113})})}}),
+inst(78793,{awp=16001,icon=409547,lvl=48}),
 inst(227,{coords={
 [1440]={{14,11.1}}},icon=136325,lore="Situated along the Zoram Strand of Ashenvale, Blackfathom Deeps was once a glorious temple dedicated to the night elves' moon-goddess, Elune. However, the great Sundering shattered the temple - sinking it beneath the waves of the Veiled Sea. There it remained untouched - until, drawn by its ancient power - the naga and satyr emerged to plumb its secrets. Legends hold that the ancient beast, Aku'mai, has taken up residence within the temple's ruins. Aku'mai, a favored pet of the primordial Old Gods, has preyed upon the area ever since. Drawn to Aku'mai's presence, the cult known as the Twilight's Hammer has also come to bask in the Old Gods' evil presence.",lvl=19,mapID=221,zoneTextAreaID=719,g={
 h(-63,{
@@ -552,17 +553,20 @@ q(6921,{coords={
 qo(1,{providers={{"i",16762}}})}}),
 q(6922,{lvl=21,maps={1440},qss={16782},r=1,g={
 s(163139,16886,{f=25}),
-s(163140,16887,{f=1})}}),
+s(163140,16887,{f=1}),
+s(304895,270043,{awp=16001,f=5,loc=42})}}),
 q(1200,{lvl=18,maps={1457},qgs={4787},r=2,sourceQuests={1198},g={
 qo(1,{crs={4832},providers={{"i",5881}}}),
 s(158748,7002,{f=8}),
 s(158747,7001,{f=27}),
-s(304885,270031,{awp=16001,b=1,f=5,loc=46})}}),
+s(304885,270031,{awp=16001,b=1,f=5,loc=46}),
+s(304886,270032,{awp=16001,b=1,f=5,loc=43})}}),
 q(6561,{lvl=18,maps={1456},qgs={4787},r=1,g={
 qo(1,{crs={4832},providers={{"i",5881}}}),
 s(158748,7002,{f=8}),
 s(158747,7001,{f=27}),
-s(304885,270031,{awp=16001,b=1,f=5,loc=46})}}),
+s(304885,270031,{awp=16001,b=1,f=5,loc=46}),
+s(304886,270032,{awp=16001,b=1,f=5,loc=43})}}),
 q(1198,{coords={
 [1457]={{55.4,25}}},description="This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",isBreadcrumb=1,lvl=18,nextQuests={1200},qgs={4786}}),
 q(971,{coords={
@@ -610,7 +614,8 @@ n(6243,{
 s(158717,6906,{f=6,loc=44}),
 i(1470,{f=113}),
 s(158716,6905,{f=22}),
-i(273840,{awp=16001,f=53,spellID=1292674})}),
+i(273840,{awp=16001,f=53,spellID=1292674}),
+r(1262990,{awp=16001,itemID=273141})}),
 n(12902,{awp=16001,g={
 s(308622,273843,{f=32}),
 s(308620,273841,{f=24}),
@@ -628,6 +633,7 @@ s(158721,6910,{f=4,loc=46}),
 s(158722,6911,{f=5,loc=45}),
 s(158720,6909,{f=26}),
 crit(18526,{achID=62032,awp=16001,id=2})})}}),
+inst(78794,{awp=16001,icon=409547,lvl=55}),
 inst(228,{coords={
 [35]={{39.06,18.12}}},description="The best route for a full clear is to enter Shadowforge City first time through the Dark Iron Highway. The Detention Block can be cleared whenever.",icon=136326,lore="Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",lvl=42,mapID=242,zoneTextAreaID=1584,g={
 h(-31,{
@@ -1539,6 +1545,13 @@ q(96986,{coords={
 qo(1,{providers={{"n",247126}}}),
 s(298450,251963,{f=5,loc=47}),
 s(298452,251965,{f=6,loc=43})}})}),
+h(-63,{
+s(317812,286992,{crs={246664},f=6,loc=44}),
+s(317810,286991,{crs={247003},f=5,loc=47}),
+s(317811,286994,{crs={247003},f=3}),
+s(317796,286988,{crs={255066,255072},f=4,loc=46}),
+s(317794,286987,{crs={255072,269134},f=4,loc=47}),
+s(317795,286989,{crs={255066,269134},f=4,loc=44})}),
 e(3311,{npcID=247126,g={
 s(308394,273033,{f=33}),
 s(308397,273036,{f=4,loc=43}),
@@ -1907,7 +1920,7 @@ i(250077,{f=55,lvl=5,spellID=1248383})}}),
 q(95663,{coords={
 [1417]={{74.4,35.6}}},lvl=24,maps={1437},qgs={2787},r=1}),
 q(98823,{coords={
-[1456]={{70.8,33.8}}},lvl=24,maps={1412},qgs={9087},qis={270866},r=1,sourceQuests={95664},g={
+[1456]={{70.8,33.8}}},lvl=24,maps={1412},qgs={9087},qis={287958},r=1,sourceQuests={95664},g={
 s(307693,271766,{b=1,f=24}),
 s(307694,271767,{b=1,f=28}),
 s(307653,271719,{b=1,f=3})}}),
@@ -1941,7 +1954,7 @@ s(307672,271740,{b=1,f=4,loc=43}),
 s(307664,271732,{b=1,f=5,loc=43}),
 i(271745,{b=1})}}),
 q(98824,{coords={
-[1437]={{38.8,52.2}}},lvl=24,maps={1455},qgs={1077},qis={270865},r=2,sourceQuests={95810},g={
+[1437]={{38.8,52.2}}},lvl=24,maps={1455},qgs={1077},qis={287959},r=2,sourceQuests={95810},g={
 s(307693,271766,{b=1,f=24}),
 s(307694,271767,{b=1,f=28}),
 s(307651,271716,{b=1,f=3})}}),
@@ -2077,7 +2090,9 @@ n(6231,{description="Located outside the instance near the teleporter.",g={
 i(9277),
 s(159364,9444,{f=8,lvl=21})}}),
 e(419,{npcID=7361,g={
-s(159365,9445,{f=6,loc=44})}}),
+s(159365,9445,{f=6,loc=44}),
+s(308648,274042,{awp=16001,f=5,loc=45,spellID=1293068}),
+s(308649,274043,{awp=16001,f=8})}}),
 o(142475,{cost={{"i",9280,1}},description="This is located in the bottom of the Dormitories.",g={
 i(9282),
 r(3952,{description="If you are an Engineer, you will also get these plans by turning in the Yellow Punch Card.",itemID=14639,learnedAt=165,requireSkill=202,skillID=2941})}}),
@@ -2097,7 +2112,8 @@ i(9316),
 r(3959,{description="If you are an Engineer and have a 'Security DELTA Access Card', you will also get these plans when you turn in your Red Punch Card.",itemID=4413,learnedAt=180,providers={{"i",9327}},requireSkill=202,skillID=2941})}}),
 e(418,{npcID=6229,g={
 s(159368,9449,{b=1,f=24,lvl=29,spellID=13494}),
-s(159369,9450,{f=5,loc=47})}}),
+s(159369,9450,{f=5,loc=47}),
+i(274068,{awp=16001,f=51})}}),
 n(6228,{description="This is a Rare Creature and, as such, is not always present.",g={
 i(5108,{f=5,loc=42,lvl=27}),
 s(159374,9456,{f=31}),
@@ -2152,6 +2168,9 @@ s(311434,279896,{b=1,f=27})}}),
 q(98423,{lvl=9,qss={281030},r=2,g={
 qo(1,{coords={
 [1455]={{39.3,56}}},providers={{"n",2784}}})}})}),
+h(-63,{
+i(275893,{crs={263396,263397,263438},spellID=434}),
+i(275892,{crs={263396,263397,263438},spellID=11009})}),
 e(3493,{npcID=261306,g={
 s(306395,271096,{b=1,f=4,loc=43,lvl=13}),
 i(270227,{b=1,f=51,lvl=13}),
@@ -2168,6 +2187,8 @@ e(3496,{npcID=261319,g={
 s(305019,270260,{b=1,f=5,loc=46,lvl=13}),
 s(305018,270256,{b=1,f=21,lvl=13}),
 s(305020,270261,{b=1,f=4,loc=42,lvl=13})}})}}),
+inst(78792,{awp=16001,icon=409547,lvl=40}),
+inst(3109,{icon=409547,u=1,zoneTextAreaID=17191}),
 inst(232,{coords={
 [1443]={{35.7,55.5}}},icon=136345,lore="Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",lvl=41,mapID=280,zoneTextAreaID=2100,g={
 h(-45,{
@@ -2306,7 +2327,8 @@ s(162335,15443,{b=1,f=20}),
 s(162336,15444,{b=1,f=28})}}),
 q(5724,{lvl=9,maps={1456},qgs={11834},qis={14381},r=1,sourceQuests={5722},g={
 s(162341,15452,{b=1,f=4,loc=43}),
-s(162342,15453,{b=1,f=5,loc=43})}}),
+s(162342,15453,{b=1,f=5,loc=43}),
+s(304859,270003,{awp=16001,b=1,f=6,loc=43})}}),
 q(5722,{coords={
 [1456]={{70.6,31.4}}},lvl=9,qgs={11833},r=1}),
 q(5761,{coords={
@@ -2357,7 +2379,8 @@ qo(1,{coords={
 [1413]={{48.6,95.6}}},crs={12865},providers={{"i",17009}}}),
 s(163248,17039,{f=23}),
 s(163251,17042,{f=31}),
-s(163252,17043,{f=4,loc=42})}}),
+s(163252,17043,{f=4,loc=42}),
+s(304902,270054,{awp=16001,f=5,loc=42})}}),
 q(3341,{coords={
 [1458]={{74,32.8}}},lvl=37,qgs={2308},r=1,g={
 qo(1,{providers={{"i",10420}}}),
@@ -2384,8 +2407,9 @@ s(160074,10567,{f=32}),
 s(160085,10583,{f=5,loc=42}),
 s(160086,10584,{f=6,loc=44}),
 s(160081,10578,{f=4,loc=47})}),
-n(7895,{coords={
-[1413]={{46.2,87.4},{48,90.4},{48.6,95.6}}},description="This is a rare that is not always present."}),
+n(7895,{awp=16001,coords={
+[1413]={{46.2,87.4},{48,90.4},{48.6,95.6}}},description="This is a rare that is not always present.",g={
+s(317383,286639,{f=4,loc=42})}}),
 n(7355,{
 s(160166,10776,{f=3,spellID=1293819}),
 s(160165,10775,{f=7,loc=42}),
@@ -2422,7 +2446,8 @@ q(1102,{coords={
 qo(1,{providers={{"i",5793}}}),
 s(158658,6725,{f=8}),
 s(157700,4197,{f=4,loc=41}),
-s(158671,6742,{f=6,loc=45})}}),
+s(158671,6742,{f=6,loc=45}),
+s(308676,274084,{awp=16001,f=31})}}),
 q(6522,{lvl=28,maps={1458},qss={17008},r=1}),
 q(1221,{coords={
 [1413]={{62.4,37.6}}},lvl=20,qgs={3446},g={
@@ -2444,18 +2469,21 @@ q(1142,{coords={
 [1457]={{69.4,67.6}}},lvl=25,qgs={4510},r=2,g={
 qo(1,{description="Drops from any creature in the Dungeon.",providers={{"i",5825}}}),
 s(158676,6751,{f=3}),
-s(158677,6752,{f=5,loc=47})}}),
+s(158677,6752,{f=5,loc=47}),
+s(304899,270047,{awp=16001,f=6,loc=47})}}),
 q(1101,{coords={
 [1444]={{89.6,46.6}}},lvl=29,qgs={4048},r=2,sourceQuests={1100},g={
 qo(1,{providers={{"i",5792}}}),
 s(158658,6725,{f=8}),
 s(157700,4197,{f=4,loc=41}),
 s(158671,6742,{f=6,loc=45}),
-s(157107,3041,{f=31,lvl=26})}}),
+s(157107,3041,{f=31,lvl=26}),
+s(308676,274084,{awp=16001,f=31})}}),
 q(1144,{lvl=22,qgs={4508},g={
 i(6748,{f=52}),
 i(6750,{f=52}),
-i(6749,{f=52})}})}),
+i(6749,{f=52}),
+i(274078,{awp=16001,f=52})}})}),
 h(-63,{
 i(3172,{crs={4511,4512,4514}}),
 i(5801,{crs={4538,4539}}),
@@ -2473,10 +2501,12 @@ s(156543,1978,{f=5,loc=44})}),
 n(6168,{description="Warriors will need to kill this boss for their racial armor quest. If you are the leader of the group, don't be surprised if they ask to kill this boss first.",g={
 s(308683,274155,{awp=16001,f=5,loc=40}),
 i(274152,{awp=16001,f=53,spellID=1293306}),
-i(6841,{f=55})}}),
+i(6841,{f=55}),
+s(308682,274149,{awp=16001,f=3})}}),
 n(4424,{
 s(308684,274158,{awp=16001,f=28}),
-s(158639,6681,{f=20})}),
+s(158639,6681,{f=20}),
+s(308685,274159,{awp=16001,f=5,loc=44,spellID=1293331})}),
 n(4428,{
 s(156989,2816,{f=23}),
 s(158641,6685,{f=4,loc=41}),
@@ -2568,7 +2598,12 @@ e(3408,{description="This is a Rare Creature and, as such, is not always present
 s(158620,6641,{b=1,f=26,lvl=22}),
 s(158621,6642,{b=1,f=6,loc=42,lvl=22})}})}),
 h(-63,{
-i(268535,{b=1})}),
+i(268535,{b=1}),
+s(317505,286981,{crs={250618,250624,250626,255964},f=6,loc=43}),
+s(317507,286978,{crs={250484,250626,250689,255109},f=4,loc=42}),
+s(317508,286979,{crs={250629},f=4,loc=44}),
+s(317509,286980,{crs={250620,250622,250626,250650,250651},f=4,loc=45}),
+s(317506,286977,{crs={250622,250627,250630},f=26})}),
 e(3353,{npcID=250483,g={
 s(306401,271201,{b=1,f=6,loc=45,lvl=15}),
 s(306403,271203,{b=1,f=28,lvl=15}),
@@ -2672,10 +2707,12 @@ s(158989,7688,{f=6,loc=42}),
 i(7686,{f=52})})}),
 n(3983,{
 s(158985,7683,{f=34}),
-s(158984,7682,{f=20,spellID=1293433})}),
+s(158984,7682,{f=20,spellID=1293433}),
+s(308782,274290,{awp=16001,f=8,spellID=1293701})}),
 n(4543,{
 s(158987,7685,{f=1}),
 s(158986,7684,{f=4,loc=41}),
+s(308783,274291,{awp=16001,f=6,loc=40}),
 crit(116058,{achID=62032,awp=16001,id=5})})}}),
 h(-362,{lvl=28,g={
 h(-45,{
@@ -2701,12 +2738,16 @@ i(7146,{b=1,spellID=3366})}})}),
 n(3974,{
 s(158997,7710,{f=28}),
 s(159025,7756,{f=5,loc=44}),
-i(3456,{f=53,spellID=9515})}),
+i(3456,{f=53,spellID=9515}),
+r(1262982,{awp=16001,itemID=273109}),
+i(274292,{awp=16001,f=36})}),
 n(6487,{
 s(159001,7714,{f=20}),
 s(159000,7713,{f=28}),
 s(158999,7712,{f=4,loc=41}),
 s(158998,7711,{f=4,loc=42}),
+s(308785,274293,{awp=16001,f=33}),
+s(308786,274294,{awp=16001,f=4,loc=47}),
 crit(116059,{achID=62032,awp=16001,id=6})})}}),
 h(-363,{cost={{"i",7146,1}},lvl=35,g={
 n(3975,{
@@ -3035,12 +3076,15 @@ qo(1,{providers={{"i",5442}}}),
 i(6414,{b=1,f=52})}}),
 q(1098,{coords={
 [1421]={{43.4,40.8}}},lvl=18,qgs={1952},r=1,g={
-s(157245,3324,{b=1,f=4,loc=41})}}),
+s(157245,3324,{b=1,f=4,loc=41}),
+s(304878,270023,{awp=16001,b=1,f=5,loc=41}),
+s(304879,270024,{awp=16001,b=1,f=6,loc=41})}}),
 q(1013,{coords={
 [1458]={{54,54.6}}},lvl=16,qgs={2934},r=1,g={
 qo(1,{description="Can be found on a bookshelf in the circular room with Fenrus.",providers={{"i",6283},{"o",36738}}}),
 s(157799,4534,{b=1,f=6,loc=43}),
-s(158422,6335,{b=1,f=5,loc=47})}}),
+s(158422,6335,{b=1,f=5,loc=47}),
+s(304884,270030,{awp=16001,b=1,f=4,loc=44})}}),
 q(1740,{c={9},coords={
 [1413]={{49.2,57.2}}},lvl=20,maps={221},qgs={6247},g={
 qo(1,{crs={4809},providers={{"i",6914}}}),
@@ -3520,7 +3564,30 @@ n(645,{
 p(44,{itemID=8490,npcID=7380,spellID=10677}),
 s(158051,5198,{b=1,f=27,lvl=17,spellID=1322312}),
 s(158050,5197,{b=1,f=23,lvl=16}),
-i(273298,{awp=16001,b=1,f=53,lvl=18,spellID=12883})})}}),
+i(273298,{awp=16001,b=1,f=53,lvl=18,spellID=12883}),
+r(1262978,{awp=16001,itemID=273102})})}}),
+inst(78791,{awp=16001,icon=409547,lvl=35,g={
+h(-45,{
+q(96774,{coords={
+[1412]={{32.4,20.6}}},qgs={264074},r=1,g={
+qo(1,{providers={{"i",276894}}})}}),
+q(95788,{r=2,u=1,g={
+qo(1,{providers={{"i",270343}},u=1})}}),
+q(95787,{r=2,u=1,g={
+qo(1,{providers={{"i",270308}},u=1}),
+qo(2,{providers={{"i",270309}},u=1}),
+qo(3,{providers={{"i",270310}},u=1}),
+qo(4,{providers={{"i",270311}},u=1})}}),
+q(95775,{r=1,u=1,g={
+qo(1,{providers={{"i",270308}},u=1}),
+qo(2,{providers={{"i",270309}},u=1}),
+qo(3,{providers={{"i",270310}},u=1}),
+qo(4,{providers={{"i",270311}},u=1})}}),
+q(95776,{r=1,u=1,g={
+qo(1,{providers={{"n",258924}},u=1}),
+s(311501,279889,{f=4,loc=41,u=1}),
+s(311502,279888,{f=5,loc=46,u=1})}})})}}),
+inst(78795,{awp=16001,icon=409547,lvl=58}),
 inst(238,{coords={
 [1453]={{51.6,69.4}}},icon=136358,lore="The Stockade is a high-security prison complex, hidden beneath the canal district of Stormwind city. Presided over by Warden Thelwater, the Stockade is home to petty crooks, political insurgents, murderers and a score of the most dangerous criminals in the land. Recently, a prisoner-led revolt has resulted in a state of pandemonium within the stockade - where the guards have been driven out and the convicts roam free. Warden Thelwater has managed to escape the holding area and is currently enlisting brave thrill-seekers to venture into the prison and kill the uprising's mastermind - the cunning felon, Bazil Thredd.",lvl=15,mapID=225,zoneTextAreaID=717,zoneTextNames={"Stormwind Stockade"},g={
 h(-45,{
@@ -4023,7 +4090,8 @@ i(9739),
 s(158158,5404,{b=1,f=5,loc=41,lvl=18}),
 s(160045,10412,{b=1,f=5,loc=45,lvl=16}),
 i(273088,{awp=16001,b=1,f=51,lvl=17}),
-i(6446,{b=1,f=113})}}),
+i(6446,{b=1,f=113}),
+r(1262985,{awp=16001,itemID=273098})}}),
 e(477,{npcID=3653,g={
 s(160906,13245,{b=1,f=8,lvl=18}),
 s(158487,6447,{b=1,f=8,lvl=16}),
@@ -4050,7 +4118,8 @@ i(9741),
 s(158497,6469,{b=1,f=32,lvl=19}),
 s(158290,5970,{b=1,f=4,loc=44,lvl=18}),
 s(160044,10411,{b=1,f=5,loc=47,lvl=17}),
-s(158490,6459,{b=1,f=6,loc=47,lvl=18})}}),
+s(158490,6459,{b=1,f=6,loc=47,lvl=18}),
+r(1283400,{awp=16001,itemID=273087})}}),
 e(480,{npcID=5775,g={
 s(158617,6631,{b=1,f=28,lvl=18}),
 s(158616,6630,{b=1,f=8,lvl=19}),

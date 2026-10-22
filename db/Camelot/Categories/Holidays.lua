@@ -300,6 +300,9 @@ s(164648,21525,{b=1,crs={1853,10899,11486},e=14,f=4,loc=40,maps={234,250,476}}),
 s(164647,21524,{b=1,crs={9019,9237,10997},e=14,f=4,loc=40,maps={242,250,317}})}}),
 h(-39,{description="These recipes are mailed to characters with the corresponding profession(s) at the start of the event.",e=14,g={
 r(21945,{e=14,itemID=17724,learnedAt=165,requireSkill=197,skillID=2948}),
+r(44950,{b=1,description="Horde Tailors receive this pattern in the mail.",e=14,itemID=34261,learnedAt=250,requireSkill=197,skillID=2948}),
+r(44958,{b=1,description="Alliance Tailors receive this pattern in the mail.",e=14,itemID=34319,learnedAt=250,requireSkill=197,skillID=2948}),
+r(44953,{b=1,e=14,itemID=34262,requireSkill=165,skillID=2945}),
 toy(17712,{description="Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",e=14,sourceQuests={6984,7045}})}}),
 h(-45,{e=14,g={
 q(8744,{coords={
@@ -350,6 +353,8 @@ r(21945,{e=14,itemID=17724,learnedAt=165,requireSkill=197,skillID=2948}),
 r(21913,{e=14,itemID=17706,learnedAt=190,requireSkill=164,skillID=2938}),
 r(21923,{e=14,itemID=17709,learnedAt=210,requireSkill=171,skillID=2937}),
 r(21940,{e=14,itemID=17720,learnedAt=190,requireSkill=202,skillID=2941})}})}}),
+q(99145,{e=14,u=1,g={
+i(286210,{b=1,e=14,u=1})}}),
 q(7022,{coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=10,qgs={13433},r=2}),
 q(7023,{coords={
@@ -812,6 +817,8 @@ q(8883,{coords={
 [1456]={{71.1,28.2}},
 [1457]={{38.6,30.3}},
 [1458]={{65.6,36}}},description="Picking up this Quest from a Quest Giver makes it unavailable at another one.\nIt does not matter which one.\nThere is no need (or point) to visit all of them. You need only one.",e=18,isBreadcrumb=1,isYearly=1,nextQuests={8868},qgs={15895},sourceQuests={8867}}),
+q(98983,{e=18,qgs={275613},u=1}),
+q(98977,{e=18,qgs={275609},u=1}),
 h(-726,{e=18,g={
 q(8718,_.ResolveQuestData({aqd=
 {maxReputation={469,42000}},coords={
@@ -1212,7 +1219,7 @@ i(13755,{description="Can be caught in open sea water in Azshara, Tanaris, The H
 h(-588,{description="The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",e=6,maps={1434},g={
 h(-45,{e=6,g={
 q(8194,{coords={
-[1434]={{27.4,76.9}}},cost={{"i",19807,5}},e=6,qgs={15078},repeatable=1,requireSkill=356}),
+[1434]={{27.4,76.9}}},e=6,qgs={15078},repeatable=1,requireSkill=356}),
 q(8229,{coords={
 [1455]={{28.2,74.4}}},e=6,lvl=35,qgs={15119},r=2,repeatable=1,requireSkill=356,g={
 i(19978,{b=1,e=6,requireSkill=356})}}),
@@ -1220,7 +1227,7 @@ q(8228,{coords={
 [1454]={{52.4,73}}},e=6,lvl=35,qgs={15116},r=1,repeatable=1,requireSkill=356,g={
 i(19978,{b=1,e=6,requireSkill=356})}}),
 q(8193,{coords={
-[1434]={{27.4,76.9}}},cost={{"i",19807,40}},e=6,qgs={15077},repeatable=1,requireSkill=356,g={
+[1434]={{27.4,76.9}}},e=6,qgs={15077},repeatable=1,requireSkill=356,g={
 s(164089,19970,{b=1,e=6,f=57,learnedAt=300,requireSkill=356}),
 i(19979,{b=1,e=6,f=53,requireSkill=356,spellID=24347})}}),
 q(8225,{coords={
@@ -1231,12 +1238,29 @@ q(8224,{coords={
 i(19971,{b=1,e=6,requireSkill=356,spellID=24302})}}),
 q(8221,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19805,1}},e=6,qgs={15079},repeatable=1,requireSkill=356,g={
-s(164090,19972,{b=1,e=6,f=4,loc=40,requireSkill=356})}})}}),
+s(164090,19972,{b=1,e=6,f=4,loc=40,requireSkill=356})}}),
+q(97066,{cost={{"i",19803,1}},e=6,requireSkill=356,u=1,g={
+i(19807,{b=1,e=6,requireSkill=356,u=1})}}),
+q(97067,{cost={{"i",19806,1}},e=6,requireSkill=356,u=1,g={
+i(19807,{b=1,e=6,requireSkill=356,u=1})}}),
+q(97065,{cost={{"i",19805,1}},e=6,requireSkill=356,u=1,g={
+i(19807,{b=1,e=6,requireSkill=356,u=1})}})}}),
 prof(356,{e=6,g={
 o(180248,{e=6,g={
 i(19803,{b=1,e=6}),
 i(19806,{b=1,e=6}),
 i(19805,{b=1,e=6}),
 s(163999,19808,{e=6,f=23}),
-i(19807,{b=1,e=6})}})}})}})}})
+i(19807,{b=1,e=6})}})}}),
+h(-58,{awp=16001,e=6,g={
+n(15078,{coords={
+[1434]={{27.4,76.8}}},e=6,g={
+p(5094,{b=1,cost={{"i",274026,1}},e=6,itemID=276275,npcID=267842,spellID=1299341}),
+s(309637,276273,{b=1,cost={{"i",274026,1}},e=6,f=1}),
+i(276278,{b=1,e=6}),
+i(276280,{b=1,e=6}),
+s(309636,276272,{b=1,cost={{"i",274026,1}},e=6,f=2,loc=40}),
+i(274974,{b=1,e=6}),
+i(276279,{b=1,e=6}),
+s(309638,276274,{b=1,cost={{"i",274026,1}},e=6,f=4,loc=47,spellID=1299351})}})}})}})}})
 end)
