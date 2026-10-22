@@ -1706,72 +1706,82 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 
 				-- Midnight
 				candybucket(97213, {	-- Candy Bucket - The Arcantina
-					provider = { "n", 660449 },	-- Candy Bucket
+					provider = { "o", 660449 },	-- Candy Bucket
 					coord = { 63.0, 71.3, ARCANTINA },
 					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(97142, {	-- Candy Bucket - Silvermoon City, Wayfarer's Rest
-					provider = { "n", 659876 },	-- Candy Bucket
+					provider = { "o", 659876 },	-- Candy Bucket
 					coord = { 55.8, 69.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(97143, {	-- Candy Bucket - Eversong Woods, Fairbreeze Village
-					provider = { "n", 659880 },	-- Candy Bucket
+					provider = { "o", 659880 },	-- Candy Bucket
 					coord = { 46.4, 46.1, MAP.MIDNIGHT.EVERSONG_WOODS },
 					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(97148, {	-- Candy Bucket - Eversong Woods, Tranquillien
-					provider = { "n", 659903 },	-- Candy Bucket
+					provider = { "o", 659903 },	-- Candy Bucket
 					coord = { 49.0, 68.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(97206, {	-- Candy Bucket - Harandar, The Den
-					provider = { "n", 660352 },	-- Candy Bucket
+					provider = { "o", 660352 },	-- Candy Bucket
 					coord = { 65.0, 63.8, 2576 },	-- The Den
 					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(97155, {	-- Candy Bucket - Harandar, Har'athir
-					provider = { "n", 659952 },	-- Candy Bucket
+					provider = { "o", 659952 },	-- Candy Bucket
 					coord = { 69.1, 51.7, MAP.MIDNIGHT.HARANDAR },
 					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(97154, {	-- Candy Bucket - Harandar, Har'kuai
-					provider = { "n", 659949 },	-- Candy Bucket
+					provider = { "o", 659949 },	-- Candy Bucket
 					coord = { 66.1, 24.5, MAP.MIDNIGHT.HARANDAR },
 					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(97208, {	-- Candy Bucket - Harandar, Har'mara
-					provider = { "n", 660392 },	-- Candy Bucket
+					provider = { "o", 660392 },	-- Candy Bucket
 					coord = { 35.1, 22.8, MAP.MIDNIGHT.HARANDAR },
 					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(97207, {	-- Candy Bucket - Harandar, Har'alnor
-					provider = { "n", 660368 },	-- Candy Bucket
+					provider = { "o", 660368 },	-- Candy Bucket
 					coord = { 30.9, 65.0, MAP.MIDNIGHT.HARANDAR },
 					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(97209, {	-- Candy Bucket - Voidstorm, Locus Point
-					provider = { "n", 660442 },	-- Candy Bucket
+					provider = { "o", 660442 },	-- Candy Bucket
 					coord = { 41.7, 74.6, MAP.MIDNIGHT.VOIDSTORM },
 					timeline = { ADDED_12_1_5 },
 				}),
+				candybucket(97211, {	-- Candy Bucket - Voidstorm, Slayer's Rise [A]
+					provider = { "o", 660447 },	-- Candy Bucket
+					coord = { 76.0, 77.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+					timeline = { ADDED_12_1_5 },
+				}),
+				candybucket(97212, {	-- Candy Bucket - Voidstorm, Slayer's Rise [H]
+					--provider = { "o", 660447 },	-- Candy Bucket
+					coord = { 21.3, 55.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+					timeline = { ADDED_12_1_5 },
+				}),
 				candybucket(97210, {	-- Candy Bucket - Voidstorm, The Ingress
-					provider = { "n", 660445 },	-- Candy Bucket
+					provider = { "o", 660445 },	-- Candy Bucket
 					coord = { 35.7, 58.6, MAP.MIDNIGHT.VOIDSTORM },
 					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(97150, {	-- Candy Bucket - Zul'Aman, Amani'Zar
-					provider = { "n", 659923 },	-- Candy Bucket
+					provider = { "o", 659923 },	-- Candy Bucket
 					coord = { 45.3, 65.1, MAP.MIDNIGHT.ZULAMAN },
 					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(97151, {	-- Candy Bucket - Zul'Aman, Camp Stonewash
-					provider = { "n", 659936 },	-- Candy Bucket
+					provider = { "o", 659936 },	-- Candy Bucket
 					coord = { 46.6, 25.9, MAP.MIDNIGHT.ZULAMAN },
 					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(97152, {	-- Candy Bucket - Zul'Aman, Witherbark Bluffs
-					provider = { "n", 659940 },	-- Candy Bucket
+					provider = { "o", 659940 },	-- Candy Bucket
 					coord = { 36.9, 23.4, MAP.MIDNIGHT.ZULAMAN },
 					timeline = { ADDED_12_1_5 },
 				}),
@@ -2177,11 +2187,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					provider = { "o", 208133 },	-- Candy Bucket, Shimmering Expanse
 					coord = { 49.7, 57.4, VASHJIR_SHIMMERING_EXPANSE },
 					timeline = { ADDED_4_1_0 },
-				}),
-				candybucket(97211, {	-- Candy Bucket - Voidstorm, Slayer's Rise [A]
-					provider = { "n", 660447 },	-- Candy Bucket
-					coord = { 76.0, 77.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(28988, {	-- Candy Bucket — Western Plaguelands, Chillwind Camp, Alliance
 					provider = { "o", 208134 },	-- Candy Bucket, Western Plaguelands
@@ -2634,11 +2639,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					provider = { "o", 208155 },	-- Candy Bucket, Abyssal Depths
 					coord = { 51.3, 60.6, VASHJIR_ABYSSAL_DEPTHS },
 					timeline = { ADDED_4_1_0 },
-				}),
-				candybucket(97212, {	-- Candy Bucket - Voidstorm, Slayer's Rise [H]
-					--provider = { "n", 660447 },	-- Candy Bucket
-					coord = { 21.3, 55.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(28987, {	-- Candy Bucket — Western Plaguelands, Andorhal, Horde
 					provider = { "o", 208156 },	-- Candy Bucket, Western Plaguelands
