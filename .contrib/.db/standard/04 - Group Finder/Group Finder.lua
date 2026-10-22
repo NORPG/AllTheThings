@@ -865,7 +865,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(33233),	-- Short-Supply Reward
 		}),
 	}),
-	expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
+	expansion(EXPANSION.WOD, {
 		n(GROUP_FINDER, {
 			q(36145),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
 			q(36151),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
@@ -890,7 +890,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(36277),	-- Warlords Max Level Dungeon Bonus Reward
 			q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
 		}),
-	})),
+	}),
 	expansion(EXPANSION.LEGION, {
 		n(GROUP_FINDER, {
 			q(41710),	-- Legion 110 A
