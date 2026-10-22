@@ -18,9 +18,7 @@ x(7,{awp=70003,g={
 x(7.0003,{
 s(75484,131203,{b=1,f=6,loc=43}),
 s(76059,131848,{b=1,f=6,loc=43}),
-s(76065,131854,{b=1,f=6,loc=44})}),
-x(7.0205,{awp=70205,g={
-s(88948,150472,{b=1,f=7,loc=44,lvl=27})}})}}),
+s(76065,131854,{b=1,f=6,loc=44})})}}),
 x(8,{awp=80001,g={
 x(8.0001,{
 flt(4,{
@@ -197,11 +195,6 @@ x(9,{
 x(9.0001,{awp=90001,g={
 follower(1208)}})})}}),
 h(-101,{sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
-x(5,{awp=50004,g={
-x(5.01,{awp=50100,g={
-s(47748,91498,{b=1,f=33,lvl=35}),
-s(47747,91496,{b=1,f=27,lvl=35}),
-s(47877,91755,{b=1,f=27,lvl=35})}})}}),
 x(6,{awp=60003,g={
 x(6.0002,{awp=60002,g={
 s(66481,118186,{b=1,f=27,r=1}),
