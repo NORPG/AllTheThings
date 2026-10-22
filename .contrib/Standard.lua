@@ -50,7 +50,7 @@ Braghe:
 q(questID, {	-- Quest Name
 	sourceQuests = { questID },	-- Quest Name
 	provider = { "n", npcID },	-- Npc Name
-	coord = { X, Y, mapID },
+	coord = { XX.X, YY.Y, MAPID_CONSTANT },
 	groups = {
 		i(itemID),	-- Item Name
 	},
@@ -91,7 +91,7 @@ q(questID, {	-- Quest Name
 	altQuests = { questID },	-- Quest Name
 	qs = itemID,	-- Quest Item (QS!)
 	provider = { "n", npcID },	-- Npc Name
-	coord = { X, Y, MAPID_CONSTANT },
+	coord = { XX.X, YY.Y, MAPID_CONSTANT },
 	timeline = { timeline },
 	maps = { MAPID_CONSTANT },
 	cost = { { "i", itemID, number } },	-- numberxItem Name
@@ -141,7 +141,7 @@ Basic/Standard Rare
 n(npcID, {	-- Name
 	description = "Text",
 	crs = { npcID },	-- Npc Name
-	coord = { X, Y, mapID },	-- Map Name
+	coord = { XX.X, YY.Y, MAPID_CONSTANT },
 	questID = questID,
 	isDaily = true,
 	groups = {
@@ -172,8 +172,8 @@ Extended Rare
 n(npcID, {	-- Name
 	description = "Text",
 	crs = { npcID },	-- Npc Name
-	coord = { X, Y, mapID },	-- Map Name
-	maps = { mapID },	-- Map Name
+	coord = { XX.X, YY.Y, MAPID_CONSTANT },
+	maps = { MAPID_CONSTANT },
 	questID = questID,
 	isDaily = true,
 	isWeekly = true,
@@ -204,7 +204,7 @@ Basic/Standard Treasure
 
 o(objectID, {	-- Object Name
 	description = "Text",
-	coord = { X, Y, mapID },	-- Map Name
+	coord = { XX.X, YY.Y, MAPID_CONSTANT },
 	questID = questID,
 	groups = {
 		i(itemID),	-- Item Name
@@ -228,8 +228,8 @@ o(objectID, {	-- Object Name
 	description = "Text",
 	crs = { npcID },	-- Npc Name
 	sourceQuests = { questID },	-- Quest Name
-	coord = { X, Y, mapID },	-- Map Name
-	maps = { mapID },	-- Map Name
+	coord = { XX.X, YY.Y, MAPID_CONSTANT },
+	maps = { MAPID_CONSTANT },
 	questID = questID,
 	isDaily = true,
 	isWeekly = true,
