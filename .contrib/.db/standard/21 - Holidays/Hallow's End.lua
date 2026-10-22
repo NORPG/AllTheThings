@@ -1755,16 +1755,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					coord = { 41.7, 74.6, MAP.MIDNIGHT.VOIDSTORM },
 					timeline = { ADDED_12_1_5 },
 				}),
-				candybucket(97211, {	-- Candy Bucket - Voidstorm, Slayer's Rise [A]
-					provider = { "o", 660447 },	-- Candy Bucket
-					coord = { 76.0, 77.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-					timeline = { ADDED_12_1_5 },
-				}),
-				candybucket(97212, {	-- Candy Bucket - Voidstorm, Slayer's Rise [H]
-					--provider = { "o", 660447 },	-- Candy Bucket
-					coord = { 21.3, 55.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-					timeline = { ADDED_12_1_5 },
-				}),
 				candybucket(97210, {	-- Candy Bucket - Voidstorm, The Ingress
 					provider = { "o", 660445 },	-- Candy Bucket
 					coord = { 35.7, 58.6, MAP.MIDNIGHT.VOIDSTORM },
@@ -2187,6 +2177,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					provider = { "o", 208133 },	-- Candy Bucket, Shimmering Expanse
 					coord = { 49.7, 57.4, VASHJIR_SHIMMERING_EXPANSE },
 					timeline = { ADDED_4_1_0 },
+				}),
+				candybucket(97211, {	-- Candy Bucket - Voidstorm, Slayer's Rise [A]
+					provider = { "o", 660447 },	-- Candy Bucket
+					coord = { 76.0, 77.6, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(28988, {	-- Candy Bucket — Western Plaguelands, Chillwind Camp, Alliance
 					provider = { "o", 208134 },	-- Candy Bucket, Western Plaguelands
@@ -2639,6 +2634,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					provider = { "o", 208155 },	-- Candy Bucket, Abyssal Depths
 					coord = { 51.3, 60.6, VASHJIR_ABYSSAL_DEPTHS },
 					timeline = { ADDED_4_1_0 },
+				}),
+				candybucket(97212, {	-- Candy Bucket - Voidstorm, Slayer's Rise [H]
+					provider = { "o", 660448 },	-- Candy Bucket
+					coord = { 21.3, 55.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+					timeline = { ADDED_12_1_5 },
 				}),
 				candybucket(28987, {	-- Candy Bucket — Western Plaguelands, Andorhal, Horde
 					provider = { "o", 208156 },	-- Candy Bucket, Western Plaguelands
