@@ -14,8 +14,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 		timeline = { ADDED_12_1_5 },
 		groups = {
 			n(ACHIEVEMENTS, {
-				ach(64039, bubbleDownSelf({ timeline = { "removed 12.1.5.99999" } }, {	-- Fabled Let Me Solo Him: Kindo'jan
-				-- TODO: Timeline out correctly, 1 Week after 12.1.5 Launch
+				ach(64039, bubbleDownSelf({ timeline = { "removed 12.1.5.70529" } }, {	-- Fabled Let Me Solo Him: Kindo'jan
 					title(801),	-- <Name>, Fabled Vanquisher of Kindo'jan
 				})),
 				ach(63720, {	-- Happy Hexmask Collector
