@@ -1592,6 +1592,7 @@ end");
                         case "crs":
                         case "sym":
                         case "u":
+                        case "phase":
                         case "maps":
                         case "questID":
                         case "aqd":
@@ -2020,6 +2021,7 @@ end");
                     case "f":
                     case "loc":
                     case "u":
+                    case "phase":
                     case "b":
                     case "rank":
                     case "gender":

@@ -419,7 +419,7 @@ do
 
 	-- Criteria field values which will use the value of the respective Achievement instead
 	local UseParentAchievementValueKeys = {
-		"c", "classID", "races", "r", "u", "e", "sr", "pb", "pvp", "requireSkill"
+		"c", "classID", "races", "r", "u", "phase", "e", "sr", "pb", "pvp", "requireSkill"
 	}
 	local function GetParentAchievementInfo(t, key, _t)
 		-- if the Achievement data was already cached, but the criteria is still getting here

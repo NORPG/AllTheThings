@@ -924,22 +924,28 @@ namespace ATT
             Validate_Encounter(data);
             Validate_Criteria(data, parentData);
 
-            // If this item has an "unobtainable" flag on it, meaning for a different phase of content.
-            if (data.TryGetValue("u", out long phase))
+            // Release phases belong in the 'phase' field rather than the 'u' field.
+            if (data.TryGetValue("u", out long misplacedPhase) && IsReleasePhase(misplacedPhase))
             {
-                if (phase > MAX_PHASE_ID && !(phase >= 1000 && (phase < (MAX_PHASE_ID + 1) * 100)))
-                {
-                    data.Remove("g");
-                    //Trace.Write("Excluding ");
-                    //Log(ToJSON(data));
-                    return false;
-                }
+                LogWarn($"Release Phase '{misplacedPhase}' was assigned to the 'u' field. Use the 'phase' field instead.", data);
+                if (!data.ContainsKey("phase")) data["phase"] = misplacedPhase;
+                data.Remove("u");
+            }
 
-                if (Phases != null && !Phases.ContainsKey(phase))
+            // If this item has an "unobtainable" flag on it.
+            if (data.TryGetValue("u", out long unobtainable))
+            {
+                if (!ValidatePhaseReference(data, unobtainable)) return false;
+            }
+
+            // If this item is only available within a specific phase of content.
+            if (data.TryGetValue("phase", out long phase))
+            {
+                if (Phases != null && Phases.ContainsKey(phase) && !IsReleasePhase(phase))
                 {
-                    LogError($"Undefined Phase '{phase}', please make sure a phase definition exists in the .contrib/lib/Constants/Phases.lua file.");
+                    LogError($"Phase '{phase}' is an Unobtainable Filter, not a Release Phase. Use the 'u' field instead.", data);
                 }
-                else MarkPhaseAsRequired(phase);
+                if (!ValidatePhaseReference(data, phase)) return false;
             }
 
             // If this has an Icon, make sure it's valid
@@ -952,6 +958,28 @@ namespace ATT
                 }
             }
 
+            return true;
+        }
+
+        /// <summary>
+        /// Validates a phase ID referenced by the 'u' or 'phase' field and marks it as required for export.
+        /// </summary>
+        /// <param name="data">The data containing the reference.</param>
+        /// <param name="phaseID">The referenced phase ID.</param>
+        /// <returns>False if the data belongs to a phase beyond the current build and should be excluded.</returns>
+        private static bool ValidatePhaseReference(IDictionary<string, object> data, long phaseID)
+        {
+            if (phaseID > MAX_PHASE_ID && !(phaseID >= 1000 && (phaseID < (MAX_PHASE_ID + 1) * 100)))
+            {
+                data.Remove("g");
+                return false;
+            }
+
+            if (Phases != null && !Phases.ContainsKey(phaseID))
+            {
+                LogError($"Undefined Phase '{phaseID}', please make sure a phase definition exists in the .contrib/lib/Constants/Phases.lua file.");
+            }
+            else MarkPhaseAsRequired(phaseID);
             return true;
         }
 
@@ -3091,9 +3119,10 @@ namespace ATT
                         Objects.Merge(criteriaData, extraData);
                         extraData = null;
                     }
-                    // Copy e, u, pb, pvp, and timeline flags from the parent achievement
+                    // Copy e, u, phase, pb, pvp, and timeline flags from the parent achievement
                     if (data.ContainsKey("e")) criteriaData["e"] = data["e"];
                     if (data.ContainsKey("u")) criteriaData["u"] = data["u"];
+                    if (data.ContainsKey("phase")) criteriaData["phase"] = data["phase"];
                     if (data.ContainsKey("pb")) criteriaData["pb"] = data["pb"];
                     if (data.ContainsKey("pvp")) criteriaData["pvp"] = data["pvp"];
                     if (data.ContainsKey("timeline")) criteriaData["timeline"] = data["timeline"];

@@ -16,7 +16,7 @@ local BATTLEFIELD_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_SIEGE_OF_ORGRIMMAR .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. MOP_PHASE_ESCALATION .. [[;
+		t.u = nil;
 		t.description = "This will be removed when the Siege of Orgrimmar phase begins."
 	end
 end]];

@@ -2872,6 +2872,7 @@ local function TryPopulateQuestRewards(questObject)
 				-- ref: quest 49675/58703
 				if data.e then questObject.e = data.e; end
 				if data.u then questObject.u = data.u; end
+				if data.phase then questObject.phase = data.phase; end
 				datag = data.g
 				if datag and #datag > 0 then
 					-- append sourced things under this quest object

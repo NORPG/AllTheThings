@@ -306,9 +306,9 @@ namespace ATT
                                     builder.Append(spellIDRef);
                                 }
                                 else builder.Append("UNKNOWN_SPELLID");
-                                if (item.TryGetValue("u", out object uRef))
+                                if (item.TryGetValue("phase", out object phaseRef))
                                 {
-                                    builder.Append(", PHASE_").Append(uRef).Append("_IDENTIFIER");
+                                    builder.Append(", PHASE_").Append(phaseRef).Append("_IDENTIFIER");
                                 }
                                 if (item.TryGetValue("timeline", out object timelineRef) && timelineRef is List<object> timeline)
                                 {
@@ -516,6 +516,7 @@ namespace ATT
                     // long
                     case "e":
                     case "u":
+                    case "phase":
                         {
                             if (!ProcessingMergeData) break;
 
@@ -829,6 +830,7 @@ namespace ATT
                     // Conditional merges
                     case "b":
                     case "u":
+                    case "phase":
                     case "timeline":
                         if (!data.ContainsKey(field))
                         {

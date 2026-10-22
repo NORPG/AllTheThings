@@ -11,7 +11,7 @@ if
 -- #endif
 	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then
 -- #if BEFORE WOD
-	t.u = ]] .. MOP_PHASE_ONE .. [[;
+	t.u = nil;
 	t.description = "This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!";
 -- #else
 	t.u = nil;

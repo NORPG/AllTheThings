@@ -38,6 +38,21 @@ app.UI = {
 }
 
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
+local function GetPhaseTexture(group, id)
+	if not id then return; end
+	local phase = L.PHASES[id];
+	if phase then
+		if not phase.buildVersion and group.itemID then
+			local b = group.b or 0;
+			if id ~= 1 and (b == 2 or b == 0) then	-- BoE or Unbound on non-NYI
+				return L.UNOBTAINABLE_ITEM_TEXTURES[2];
+			end
+		end
+		if not phase.buildVersion or app.GameBuildVersion < phase.buildVersion then
+			return L.UNOBTAINABLE_ITEM_TEXTURES[phase.state];
+		end
+	end
+end
 local function GetUnobtainableTexture(group)
 	if not group then return; end
 	if type(group) ~= "table" then
@@ -47,21 +62,8 @@ local function GetUnobtainableTexture(group)
 	end
 
 	-- Determine the texture color, default is green for events.
-	local u = group.u;
-	if u then
-		local phase = L.PHASES[u];
-		if phase then
-			if not phase.buildVersion and group.itemID then
-				local b = group.b or 0;
-				if u ~= 1 and (b == 2 or b == 0) then	-- BoE or Unbound on non-NYI
-					return L.UNOBTAINABLE_ITEM_TEXTURES[2];
-				end
-			end
-			if not phase.buildVersion or app.GameBuildVersion < phase.buildVersion then
-				return L.UNOBTAINABLE_ITEM_TEXTURES[phase.state];
-			end
-		end
-	end
+	local texture = GetPhaseTexture(group, group.u) or GetPhaseTexture(group, group.phase);
+	if texture then return texture; end
 	if group.e then
 		return L.UNOBTAINABLE_ITEM_TEXTURES[app.Modules.Events.FilterIsEventActive(group) and 5 or 4];
 	end
@@ -3219,7 +3221,7 @@ api.BuildSearchFilterForClassTypes = BuildSearchFilterForClassTypes;
 -- by a unique key on the instances of those results to build an OnUpdate function.
 -- This specific function builds a categorized hierarchy lookup for a dynamic category.
 local CategorizedSearchFunctionsByClassTypes = {};
-local CategorizedRelativeFields = { "u", "e", "awp", "rwp", "r", "c", "coords", "maps" };
+local CategorizedRelativeFields = { "u", "phase", "e", "awp", "rwp", "r", "c", "coords", "maps" };
 local CategoryByRelativeFields = {
 	-- Look for specific tags first, a PvP item will display as "vendor" or "achievement" instead, which isn't correct.
 	{ "pvp", function(o) return app.HeaderConstants.PVP; end },

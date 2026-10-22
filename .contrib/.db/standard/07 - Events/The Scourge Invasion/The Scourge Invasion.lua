@@ -38,7 +38,7 @@ local BUBBLE_DOWN_FILTER = function(t)
 			return false;
 		end
 	end
-	return not t.u or t.u ~= PHASE_SIX_SCOURGE_INVASION;
+	return not t.phase or t.phase ~= PHASE_SIX_SCOURGE_INVASION;
 end;
 -- So the idea here is that for Classic Wrath it would dynamically set the RWP down to 3.0.1 and mark everything removed from game if you have Wrath Phase 2 activated.
 local SCOURGE_INVASION_ONUPDATE = [[function(t)
@@ -46,7 +46,7 @@ local SCOURGE_INVASION_ONUPDATE = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. TBC_PHASE_FIVE_SCOURGE_INVASION .. [[;
+		t.u = nil;
 		t.rwp = 30001;
 	end
 end]];

@@ -117,6 +117,13 @@ function(item)
 	return not u or SettingsUnobtainable[u];
 end);
 
+-- Phase (shares the Unobtainable settings container, keyed by phase ID)
+DefineToggleFilter("Phase", AccountFilters,
+function(item)
+	local phase = item.phase
+	return not phase or SettingsUnobtainable[phase];
+end);
+
 -- PvP
 DefineToggleFilter("PvP", AccountFilters,
 function(item)
@@ -614,10 +621,10 @@ end
 app.RecursiveDirectGroupRequirementsFilter = RecursiveDirectGroupRequirementsFilter;
 api.Filters.RecursiveDirectGroupRequirementsFilter = RecursiveDirectGroupRequirementsFilter
 local function RecursiveUnobtainableFilter(group)
-	local Unobtainable, Event = AccountFilters.Unobtainable or NoFilter, AccountFilters.Event or NoFilter
+	local Unobtainable, Phase, Event = AccountFilters.Unobtainable or NoFilter, AccountFilters.Phase or NoFilter, AccountFilters.Event or NoFilter
 	while group do
 		---@diagnostic disable-next-line: redundant-parameter
-		if not (Unobtainable(group) and Event(group)) then return; end
+		if not (Unobtainable(group) and Phase(group) and Event(group)) then return; end
 		group = group.parent;
 	end
 	return true;

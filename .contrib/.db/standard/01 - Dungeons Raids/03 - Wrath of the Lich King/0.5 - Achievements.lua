@@ -137,7 +137,7 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 							t.u = ]] .. REMOVED_FROM_GAME .. [[;
 							t.rwp = nil;
 						else
-							t.u = ]] .. WRATH_PHASE_ONE .. [[;
+							t.u = nil;
 							t.rwp = 30100;
 						end
 					end]],
@@ -185,7 +185,7 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 							t.u = ]] .. REMOVED_FROM_GAME .. [[;
 							t.rwp = nil;
 						else
-							t.u = ]] .. WRATH_PHASE_ONE .. [[;
+							t.u = nil;
 							t.rwp = 30100;
 						end
 					end]],

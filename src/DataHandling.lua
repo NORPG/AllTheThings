@@ -771,6 +771,7 @@ local MergeSkipFields = {
 	-- 1 -> only when cloning
 	e = 1,
 	u = 1,
+	phase = 1,
 	c = 1,
 	up = 1,
 	pb = 1,
@@ -828,6 +829,24 @@ local SourceSpecificFields = {
 			end
 		end
 		-- app.PrintDebug("new:",new)
+		return new
+	end,
+-- Returns the 'most obtainable' phase value from the provided set of phase values (the earliest released phase)
+	phase = function(...)
+		local phases = L.PHASES
+		local new, newBuild, phase, build
+		local vals = select("#", ...)
+		for i=1,vals do
+			phase = select(i, ...)
+			-- missing phase value means available in all phases
+			if not phase then return end
+			build = phases[phase]
+			build = build and (build.buildVersion or build.minimumBuildVersion) or 0
+			if not new or build < newBuild or (build == newBuild and phase < new) then
+				new = phase
+				newBuild = build
+			end
+		end
 		return new
 	end,
 -- Returns the 'earliest' Added with Patch value from the provided set of `awp` values

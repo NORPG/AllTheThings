@@ -24,7 +24,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 				t.u = ]] .. REMOVED_FROM_GAME .. [[;
 				t.rwp = nil;
 			else
-				t.u = ]] .. WRATH_PHASE_FOUR_OPERATION_ZALAZANE .. [[;
+				t.u = nil;
 				t.rwp = 40003;
 			end
 		end]],

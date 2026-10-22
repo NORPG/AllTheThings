@@ -1205,6 +1205,26 @@ local InformationTypes = {
 			end
 		end,
 	});
+	CreateInformationType("phase", {
+		priority = 2.75,
+		isRecursive = true,
+		text = L.PHASES_PAGE or "Phases",
+		Process = function(t, reference, tooltipInfo)
+			local phaseID = t.GetValue(t, reference);
+			if phaseID then
+				local phase = L.PHASES[phaseID];
+				if phase then
+					local buildVersion = phase.buildVersion;
+					if not buildVersion or app.GameBuildVersion < buildVersion or app.MODE_DEBUG then
+						tinsert(tooltipInfo, {
+							left = phase.description,
+							wrap = true,
+						});
+					end
+				end
+			end
+		end,
+	});
 	CreateInformationType("sym", {
 		priority = 2.8,
 		text = "SymLink",

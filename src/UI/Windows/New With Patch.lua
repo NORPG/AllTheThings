@@ -60,7 +60,7 @@ app:CreateWindow("New With Patch", {
 					if any then
 						-- Find all the content that matches the current conditions.
 						results = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, function(group)
-							if group.u and currentConditions[group.u] then
+							if group.phase and currentConditions[group.phase] then
 								return true;
 							end
 						end);

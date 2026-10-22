@@ -843,7 +843,7 @@ root(ROOTS.Zones, {
 						isDaily = true,
 						lvl = lvlsquish(70, 70, 25),
 						-- #if BEFORE WRATH
-						OnUpdate = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[; end]],
+						OnUpdate = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or nil; end]],
 						-- #endif
 						groups = {
 							objective(1, {	-- 0/10 Smuggled Mana Cell

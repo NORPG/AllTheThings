@@ -791,7 +791,7 @@ local OnUpdateForTimearDailies = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. WRATH_PHASE_ONE .. [[;
+		t.u = nil;
 		t.rwp = 30300;
 	end
 end]];
@@ -2249,7 +2249,7 @@ root(ROOTS.Zones, {
 								t.u = ]] .. REMOVED_FROM_GAME .. [[;
 								t.rwp = nil;
 							else
-								t.u = ]] .. WRATH_PHASE_THREE .. [[;
+								t.u = nil;
 								t.rwp = 30300;
 							end
 						end]],

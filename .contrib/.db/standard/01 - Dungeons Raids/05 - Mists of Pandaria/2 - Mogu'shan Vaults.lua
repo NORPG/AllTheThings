@@ -8,7 +8,7 @@ local CUTTING_EDGE_ONUPDATE = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. MOP_PHASE_ONE_MOGUSHAN_VAULTS .. [[;
+		t.u = nil;
 		t.rwp = 50200;
 	end
 end]];

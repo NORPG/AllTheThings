@@ -27,28 +27,28 @@ local SEASONONE_GLADIATOR_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_TWO .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. TBC_PHASE_ONE .. [[;
+		t.u = nil;
 	end
 end]];
 local MERCILESS_GLADIATOR_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. TBC_PHASE_TWO .. [[;
+		t.u = nil;
 	end
 end]];
 local VENGEFUL_GLADIATOR_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. TBC_PHASE_THREE .. [[;
+		t.u = nil;
 	end
 end]];
 local BRUTAL_GLADIATOR_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_ONE .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. TBC_PHASE_FIVE .. [[;
+		t.u = nil;
 	end
 end]];
 -- #endif

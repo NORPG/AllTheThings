@@ -18,7 +18,7 @@ local REMOVED_WITH_LANDFALL_ONUPDATE = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. MOP_PHASE_ONE .. [[;
+		t.u = nil;
 		t.rwp = 50100;
 	end
 end]];
@@ -27,7 +27,7 @@ local REMOVED_WITH_ESCALATION_ONUPDATE = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. MOP_PHASE_LANDFALL .. [[;
+		t.u = nil;
 		t.rwp = 50300;
 	end
 end]];

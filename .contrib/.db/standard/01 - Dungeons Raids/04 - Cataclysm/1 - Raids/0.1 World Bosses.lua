@@ -9,7 +9,7 @@ local CATA_CLASSIC_WORLD_BOSS_ONUPDATE = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. CATA_PHASE_ONE .. [[;
+		t.u = nil;
 		t.rwp = 40100;
 	end
 end]];

@@ -828,7 +828,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					maps = { THE_STORM_PEAKS },
 					isDaily = true,
 					-- #if BEFORE CATA
-					OnUpdate = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
+					OnUpdate = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or nil; end]],
 					-- #endif
 					groups = {
 						objective(1, {	-- 0/15 Small Stone Block
@@ -1976,7 +1976,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					maps = { CRYSTALSONG_FOREST },
 					isDaily = true,
 					-- #if BEFORE CATA
-					OnUpdate = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
+					OnUpdate = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or nil; end]],
 					-- #endif
 					groups = {
 						objective(1, {	-- 0/12 Rough Hewn Plank
@@ -2447,7 +2447,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					timeline = { ADDED_3_1_0, REMOVED_4_0_1 },
 					isBreadcrumb = true,
 					-- #if BEFORE CATA
-					OnUpdate = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
+					OnUpdate = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or nil; end]],
 					-- #endif
 				}),
 				q(13670, {	-- The Edge Of Winter (A) (The Silver Covenant, Aspirant)

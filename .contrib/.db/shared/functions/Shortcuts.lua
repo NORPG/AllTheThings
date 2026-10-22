@@ -54,7 +54,8 @@
 ---@alias ExplorationID integer Exploration area ID.
 ---@alias DifficultyID integer Instance difficulty ID, including parser multi-difficulty IDs.
 ---@alias EventID integer Event or holiday identifier used by ATT schedules and filters.
----@alias ATTUnobtainableStatus integer|string|string[] Unobtainable/Classic phase code or helper-supplied timeline event(s).
+---@alias ATTUnobtainableStatus integer|string|string[] Unobtainable code or helper-supplied timeline event(s).
+---@alias ATTPhaseID integer Release phase ID (see Phases.lua), e.g. `PHASE_ONE` or `TBC_PHASE_TWO`.
 ---@alias ATTIgnoredValue string Parser sentinel value assigned via `IGNORED_VALUE`.
 ---@alias Region "US"|"EU"|"KR"|"TW"|"CN" WoW portal region code.
 ---@alias ATTTimelineEvent string Patch change string using created, added, removed, or deleted plus a patch version.
@@ -173,7 +174,8 @@
 ---@field e? EventID Event association applied by `applyevent`.
 ---@field symselector? integer Symbolic-selector ID.
 ---@field sym? ATTSym Symbolic commands used to resolve referenced objects.
----@field u? ATTUnobtainableStatus Unobtainable status or Classic phase.
+---@field u? ATTUnobtainableStatus Unobtainable status (why the object can't be obtained).
+---@field phase? ATTPhaseID Release phase in which the object becomes available (Classic builds).
 ---@field up? number|string Encoded upgrade target or parser sentinel such as `IGNORED_VALUE`.
 ---@field r? RaceID Race restriction.
 ---@field races? RaceID[]|ATTIgnoredValue Race restrictions.
@@ -530,6 +532,14 @@ end
 ---@return boolean|nil
 isarray = function(t)
 	return t and type(t) == 'table' and (#t > 0 or next(t) == nil);
+end
+--- Checks whether a phase ID is a Release Phase (belongs in `phase`) rather than an Unobtainable Filter (belongs in `u`).
+---@param phaseID? integer Phase ID to check.
+---@return boolean
+isreleasephase = function(phaseID)
+	---@diagnostic disable-next-line: undefined-global
+	local phase = phaseID and Phases and Phases[phaseID];
+	return phase and (phase.minimumBuildVersion or phase.buildVersion) and true or false;
 end
 --- Counts the number of keys in a table.
 ---@param t? table Table whose keys are counted; nil or non-table input returns nil.
@@ -1230,13 +1240,13 @@ applyevent = function(eventID, data)
 	return bubbleDown({ e = eventID }, data);
 end
 -- #if ANYCLASSIC
---- Applies a Classic phase/unobtainable value to nested data for Classic builds.
----@param phase integer Classic phase/unobtainable code to assign; ignored in non-Classic builds.
----@param data ATTObject|ATTObjectArray Object tree receiving the Classic phase flag, or returned unchanged in other builds.
+--- Applies a Classic release phase to the provided data for Classic builds.
+---@param phase ATTPhaseID Classic release phase to assign to the `phase` field; ignored in non-Classic builds.
+---@param data ATTObject|ATTObjectArray Object tree receiving the Classic phase, or returned unchanged in other builds.
 ---@return ATTObject|ATTObjectArray
 applyclassicphase = function(phase, t)
 	if t then
-		local data = { u = phase };
+		local data = { phase = phase };
 		if t --[[@as ATTObject]].g or t --[[@as ATTObject]].groups then
 			applyData(data, t);
 		elseif isarray(t) then
@@ -1258,9 +1268,9 @@ ifclassic = function(classicValue, value)
 	return classicValue;
 end
 -- #else
---- Applies a Classic phase/unobtainable value to nested data for Classic builds.
----@param phase integer Classic phase/unobtainable code to assign; ignored in non-Classic builds.
----@param data ATTObject|ATTObjectArray Object tree receiving the Classic phase flag, or returned unchanged in other builds.
+--- Applies a Classic release phase to the provided data for Classic builds.
+---@param phase ATTPhaseID Classic release phase to assign to the `phase` field; ignored in non-Classic builds.
+---@param data ATTObject|ATTObjectArray Object tree receiving the Classic phase, or returned unchanged in other builds.
 ---@return ATTObject|ATTObjectArray
 applyclassicphase = function(phase, data)
 	return data;
@@ -4056,7 +4066,7 @@ local CurrentProfessionID = ALCHEMY;
 --- unobtainable state so generated database files can resolve the relationship.
 ---@param itemID ItemID Item ID to associate with the recipe, or 0 to update the recipe directly in `RecipeDB`.
 ---@param recipeID RecipeID Recipe spell ID to associate with the item or recipe metadata.
----@param unobtainStatus? ATTUnobtainableStatus Optional Classic unobtainable code, single timeline event, or list of timeline events.
+---@param unobtainStatus? ATTUnobtainableStatus|ATTPhaseID Optional Classic unobtainable code or release phase, single timeline event, or list of timeline events.
 ---@param requireSkill? SkillID Profession skill requirement override; defaults to the active profession.
 ---@return ATTObject
 local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill)
@@ -4123,7 +4133,11 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 			---@cast unobtainStatus integer
 			-- #if ANYCLASSIC
 			-- CRIEVE NOTE: At this time, this is exclusive to Classic builds.
-			RecipeDB[recipeID].u = unobtainStatus
+			if isreleasephase(unobtainStatus) then
+				RecipeDB[recipeID].phase = unobtainStatus
+			else
+				RecipeDB[recipeID].u = unobtainStatus
+			end
 			-- #endif
 		elseif unobtainType == "string" then
 			---@cast unobtainStatus ATTTimelineEvent

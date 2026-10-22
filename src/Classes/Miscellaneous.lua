@@ -382,6 +382,7 @@ for _,field in ipairs({
 	"TLUG",
 	"e",
 	"u",
+	"phase",
 	"pb",
 	"pvp",
 	"sr",

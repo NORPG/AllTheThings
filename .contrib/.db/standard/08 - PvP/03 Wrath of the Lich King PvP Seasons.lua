@@ -27,35 +27,35 @@ local HATEFUL_GLADIATOR_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. WRATH_PHASE_ONE .. [[;
+		t.u = nil;
 	end
 end]];
 local DEADLY_GLADIATOR_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. WRATH_PHASE_ONE .. [[;
+		t.u = nil;
 	end
 end]];
 local FURIOUS_GLADIATOR_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. WRATH_PHASE_TWO .. [[;
+		t.u = nil;
 	end
 end]];
 local RELENTLESS_GLADIATOR_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_FOUR .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. WRATH_PHASE_THREE .. [[;
+		t.u = nil;
 	end
 end]];
 local WRATHFUL_GLADIATOR_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_ONE .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. WRATH_PHASE_FOUR .. [[;
+		t.u = nil;
 	end
 end]];
 -- #endif

@@ -32,6 +32,8 @@ local function CloneObject(o)
 	local clone = CloneClassInstance(o);
 	local u = GetRelativeValue(o, "u");
 	if u then clone.u = u; end
+	local phase = GetRelativeValue(o, "phase");
+	if phase then clone.phase = phase; end
 	local e = GetRelativeValue(o, "e");
 	if e then clone.e = e; end
 	local lvl = GetRelativeValue(o, "lvl");

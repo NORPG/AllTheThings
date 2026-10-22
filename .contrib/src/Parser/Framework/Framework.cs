@@ -480,6 +480,19 @@ namespace ATT
         }
 
         /// <summary>
+        /// Whether the phase ID is a Release Phase (has build version information) rather than an Unobtainable Filter.
+        /// Release Phases belong in the 'phase' field, Unobtainable Filters belong in the 'u' field.
+        /// </summary>
+        /// <param name="phaseID">The phase ID.</param>
+        public static bool IsReleasePhase(long phaseID)
+        {
+            return Phases != null
+                && Phases.TryGetValue(phaseID, out object o)
+                && o is IDictionary<string, object> phase
+                && (phase.ContainsKey("minimumBuildVersion") || phase.ContainsKey("buildVersion"));
+        }
+
+        /// <summary>
         /// Try to colorize the values in the localization table should the color key exist.
         /// </summary>
         /// <param name="dict">The dictionary to check for color.</param>
@@ -1390,6 +1403,11 @@ namespace ATT
                 case "unobtainable":
                     {
                         return "u";
+                    }
+
+                case "phase":
+                    {
+                        return "phase";
                     }
 
                 case "v":

@@ -221,6 +221,10 @@ local DefaultFields = {
 				score = score + 1 + u;
 			end
 		end
+		local phase = GetRelativeValue(t, "phase");
+		if phase then
+			score = score + 1 + phase;
+		end
 		t.AccessibilityScore = score;
 		return score;
 	end,

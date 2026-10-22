@@ -8,7 +8,8 @@ local tinsert = tinsert;
 
 -- Implementation
 local function IsExclusiveToSod(group)
-	if group.u and group.u >= 1605 and group.u <= 1610 then
+	local phase = group.phase;
+	if phase and phase >= 1605 and phase <= 1610 then
 		return true;
 	end
 end

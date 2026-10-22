@@ -5959,7 +5959,7 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION)));
 local itemDB = ItemDBConditional;
 
 -- Recipe Cache (for Validation)
-local recipeCache, recipeCacheU = {}, {};
+local recipeCache, recipeCacheU, recipeCachePhase = {}, {}, {};
 local function cacheRecipes(g)
 	if g and type(g) == "table" then
 		if g.groups then cacheRecipes(g.groups); end
@@ -5968,6 +5968,7 @@ local function cacheRecipes(g)
 		if spellID then
 			recipeCache[spellID] = true;
 			if g.u then recipeCacheU[spellID] = g.u; end
+			if g.phase then recipeCachePhase[spellID] = g.phase; end
 		end
 		for i,o in ipairs(g) do
 			cacheRecipes(o);
@@ -6004,12 +6005,19 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 	-- Ensure that this recipe's spellID exists in the profession database.
 	if recipeCache and type(timeline) ~= "boolean" then
 		if recipeCache[o.spellID] then
-			-- Grab the phase from the cache.
+			-- Grab the unobtainable status and phase from the cache.
 			local u = recipeCacheU[o.spellID];
 			if u then
 				if o.u ~= u then
 					print("ITEM RECIPE MISSING U: ", name, o.spellID, u, o.u);
 					o.u = u;
+				end
+			end
+			local cachedPhase = recipeCachePhase[o.spellID];
+			if cachedPhase then
+				if o.phase ~= cachedPhase then
+					print("ITEM RECIPE MISSING PHASE: ", name, o.spellID, cachedPhase, o.phase);
+					o.phase = cachedPhase;
 				end
 			end
 		else

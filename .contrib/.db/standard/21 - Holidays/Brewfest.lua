@@ -190,7 +190,7 @@ local BREWFEST_2024_OnUpdate = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. CATA_PHASE_ONE .. [[;
+		t.u = nil;
 		t.rwp = 40300;
 	end
 end]];

@@ -647,7 +647,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 										t.u = ]] .. REMOVED_FROM_GAME .. [[;
 										t.rwp = nil;
 									else
-										t.u = ]] .. WRATH_PHASE_TWO .. [[;
+										t.u = nil;
 										t.rwp = 30200;
 									end
 								end]],
@@ -948,7 +948,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 										t.u = ]] .. REMOVED_FROM_GAME .. [[;
 										t.rwp = nil;
 									else
-										t.u = ]] .. WRATH_PHASE_TWO .. [[;
+										t.u = nil;
 										t.rwp = 30200;
 									end
 								end]],
@@ -1589,7 +1589,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 										t.u = ]] .. REMOVED_FROM_GAME .. [[;
 										t.rwp = nil;
 									else
-										t.u = ]] .. WRATH_PHASE_TWO .. [[;
+										t.u = nil;
 										t.rwp = 30200;
 									end
 								end]],
@@ -1912,7 +1912,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 										t.u = ]] .. REMOVED_FROM_GAME .. [[;
 										t.rwp = nil;
 									else
-										t.u = ]] .. WRATH_PHASE_TWO .. [[;
+										t.u = nil;
 										t.rwp = 30200;
 									end
 								end]],
@@ -2410,7 +2410,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 									t.u = ]] .. REMOVED_FROM_GAME .. [[;
 									t.rwp = nil;
 								else
-									t.u = ]] .. WRATH_PHASE_TWO .. [[;
+									t.u = nil;
 									t.rwp = 30200;
 								end
 							end]],
@@ -2865,7 +2865,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 									t.u = ]] .. REMOVED_FROM_GAME .. [[;
 									t.rwp = nil;
 								else
-									t.u = ]] .. WRATH_PHASE_TWO .. [[;
+									t.u = nil;
 									t.rwp = 30200;
 								end
 							end]],

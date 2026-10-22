@@ -131,7 +131,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ requireSkill = COOKING },
 			-- #if SEASON_OF_DISCOVERY
 			OnUpdate = [[function(t)
 				if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
-					t.u = ]] .. SOD_PHASE_THREE .. [[;
+					t.u = nil; t.phase = ]] .. SOD_PHASE_THREE .. [[;
 				end
 			end]],
 			-- #endif
@@ -143,7 +143,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ requireSkill = COOKING },
 			-- #if SEASON_OF_DISCOVERY
 			OnUpdate = [[function(t)
 				if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
-					t.u = ]] .. SOD_PHASE_TWO .. [[;
+					t.u = nil; t.phase = ]] .. SOD_PHASE_TWO .. [[;
 				end
 			end]],
 			-- #endif

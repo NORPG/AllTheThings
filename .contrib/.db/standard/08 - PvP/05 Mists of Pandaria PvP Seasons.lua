@@ -27,14 +27,14 @@ local SEASON_MALEVOLENT_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_RISE_OF_THE_THUNDER_KING .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. MOP_PHASE_ONE .. [[;
+		t.u = nil;
 	end
 end]];
 local SEASON_TYRANNICAL_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_SIEGE_OF_ORGRIMMAR .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. MOP_PHASE_RISE_OF_THE_THUNDER_KING .. [[;
+		t.u = nil;
 	end
 end]];
 -- #endif

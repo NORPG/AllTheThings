@@ -80,7 +80,7 @@ local CUTTING_EDGE_ONUPDATE = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. MOP_PHASE_RISE_OF_THE_THUNDER_KING .. [[;
+		t.u = nil;
 		t.rwp = 50400;
 	end
 end]];

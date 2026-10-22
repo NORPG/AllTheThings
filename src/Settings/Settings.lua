@@ -460,6 +460,7 @@ local TooltipSettingsBase = {
 		["c"] = true,
 		["r"] = true,
 		["u"] = true,
+		["phase"] = true,
 
 		-- TEMPORARY
 		["achID"] = true,
@@ -1819,6 +1820,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.MODE_DEBUG = true;
 		filterSet.Group()
 		filterSet.Unobtainable()
+		filterSet.Phase()
 		filterSet.Visible(true)
 		filterSet.FilterID()
 		filterSet.Class()
@@ -1840,18 +1842,28 @@ settings.UpdateMode = function(self, doRefresh)
 		filterSet.DefaultGroup(true)
 		filterSet.DefaultThing(true)
 
-		-- Check for any inactive unobtainable filters.
-		local anyFiltered = false
-		for u,phase in pairs(L.PHASES) do
-			if not settings:GetUnobtainableFilter(u) then
-				anyFiltered = true;
-				break;
+		-- Check for any inactive unobtainable or phase filters.
+		-- Release Phases have build version information, Unobtainable Filters do not.
+		local anyUnobtainableFiltered, anyPhaseFiltered = false, false
+		for id,phase in pairs(L.PHASES) do
+			if not settings:GetUnobtainableFilter(id) then
+				if phase.minimumBuildVersion or phase.buildVersion then
+					anyPhaseFiltered = true;
+				else
+					anyUnobtainableFiltered = true;
+				end
+				if anyUnobtainableFiltered and anyPhaseFiltered then break; end
 			end
 		end
-		if anyFiltered then
+		if anyUnobtainableFiltered then
 			filterSet.Unobtainable(true)
 		else
 			filterSet.Unobtainable()
+		end
+		if anyPhaseFiltered then
+			filterSet.Phase(true)
+		else
+			filterSet.Phase()
 		end
 		if self:Get("Show:TrackableThings") then
 			filterSet.Trackable(true)

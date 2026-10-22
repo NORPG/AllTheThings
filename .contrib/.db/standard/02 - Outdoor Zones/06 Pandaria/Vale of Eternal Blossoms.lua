@@ -7,7 +7,7 @@ local VALE_TOT_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_RISE_OF_THE_THUNDER_KING .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. MOP_PHASE_ONE .. [[;
+		t.u = nil;
 		t.description = "This will be removed when the Rise of the Thunder King phase begins."
 	end
 end]];
@@ -15,7 +15,7 @@ local VALE_SOO_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_SIEGE_OF_ORGRIMMAR .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. MOP_PHASE_ONE .. [[;
+		t.u = nil;
 		t.description = "This will be removed when the Siege of Orgrimmar phase begins."
 	end
 end]];

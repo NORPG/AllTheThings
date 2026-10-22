@@ -1447,7 +1447,7 @@ local BLOODIED_ONUPDATE = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. CATA_PHASE_ONE .. [[;
+		t.u = nil;
 		t.rwp = 40200;
 	end
 end]];
@@ -5353,7 +5353,7 @@ local recipeCache = {
 	[25614]=1,	-- Design: Silver Rose Pendant
 	[32810]=1,	-- Design: Primal Stone Statue
 };
-local recipeCacheU = {};
+local recipeCacheU, recipeCachePhase = {}, {};
 local function cacheRecipes(g)
 	if g and type(g) == "table" then
 		if g.groups then cacheRecipes(g.groups); end
@@ -5361,10 +5361,12 @@ local function cacheRecipes(g)
 		if g.recipeID then
 			recipeCache[g.recipeID] = true;
 			if g.u then recipeCacheU[g.recipeID] = g.u; end
+			if g.phase then recipeCachePhase[g.recipeID] = g.phase; end
 		end
 		if g.spellID then
 			recipeCache[g.spellID] = true;
 			if g.u then recipeCacheU[g.spellID] = g.u; end
+			if g.phase then recipeCachePhase[g.spellID] = g.phase; end
 		end
 		for i,o in ipairs(g) do
 			cacheRecipes(o);
@@ -5426,6 +5428,8 @@ local itemrecipe = function(name, itemID, spellID, spellIDAfterCata, timeline)
 				-- The above code doesn't really matter, in this file, the phases are managed in the recipe section, not here.
 				o.u = u;
 			end
+			local phase = recipeCachePhase[o.spellID];
+			if phase then o.phase = phase; end
 		else
 			print("MISSING RECIPE", name, o.spellID);
 		end

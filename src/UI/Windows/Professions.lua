@@ -104,6 +104,8 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 											recipe.sourceParent = mostAccessibleSource;
 											local u = GetRelativeValue(mostAccessibleSource, "u");
 											if u then recipe.u = u; end
+											local phase = GetRelativeValue(mostAccessibleSource, "phase");
+											if phase then recipe.phase = phase; end
 											local e = GetRelativeValue(mostAccessibleSource, "e");
 											if e then recipe.e = e; end
 											local awp = GetRelativeValue(mostAccessibleSource, "awp");

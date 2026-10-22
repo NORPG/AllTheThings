@@ -8,7 +8,7 @@ local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. WRATH_PHASE_ONE .. [[;
+		t.u = nil;
 		t.rwp = 30100;
 	end
 end]];

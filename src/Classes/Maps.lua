@@ -912,7 +912,6 @@ local function HarvestExploration()
 							explorationHeader = app.CreateCustomHeader(app.HeaderConstants.EXPLORATION);
 							explorationHeader.ByExplorationID = byExplorationID;
 							explorationHeader.g = {};
-							explorationHeader.u = object.u;
 							explorationHeader.parent = object;
 							tinsert(object.g, 1, explorationHeader);
 						end

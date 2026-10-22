@@ -28,7 +28,7 @@ local VICIOUS_ELITE_ONUPDATE = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. CATA_PHASE_ONE .. [[;
+		t.u = nil;
 		t.rwp = 40200;
 	end
 end]];
@@ -37,7 +37,7 @@ local RUTHLESS_ELITE_ONUPDATE = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. CATA_PHASE_RAGE_OF_THE_FIRELANDS .. [[;
+		t.u = nil;
 		t.rwp = 40300;
 	end
 end]];
@@ -46,7 +46,7 @@ local CATACLYSMIC_ELITE_ONUPDATE = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. CATA_PHASE_HOUR_OF_TWILIGHT .. [[;
+		t.u = nil;
 		t.rwp = 50004;
 	end
 end]];
