@@ -926,32 +926,6 @@ bubbleDownFiltered = function(data, filter, t)
 		return t;
 	end
 end
---- Recursively applies data to nested groups, replacing existing values.
---- Recursively propagates metadata while replacing existing child values.
---- Use only when the bubbled value is authoritative for every descendant.
----@param data ATTObject Fields to assign recursively, replacing existing values.
----@param t? ATTObject|ATTObjectArray Object tree or child array receiving the replacement fields.
----@return ATTObject|ATTObjectArray|nil
-bubbleDownAndReplace = function(data, t)
-	if t then
-		if t --[[@as ATTObject]].g or t --[[@as ATTObject]].groups then
-			for key, value in pairs(data) do
-				t[key] = value;
-			end
-			bubbleDownAndReplace(data, t.groups);
-			bubbleDownAndReplace(data, t.g);
-		elseif isarray(t) then
-			for i,group in ipairs(t --[[@as ATTObjectArray]]) do
-				bubbleDownAndReplace(data, group);
-			end
-		else
-			for key, value in pairs(data) do
-				t[key] = value;
-			end
-		end
-		return t;
-	end
-end
 -- Performs bubbleDown logic but also applies the data to the top-level table
 --- Applies bubbled data to the top-level object and all nested groups.
 ---@param data ATTObject Fields to propagate to the normalized root and descendants without replacing existing values.
@@ -1259,10 +1233,9 @@ end
 --- Applies a Classic phase/unobtainable value to nested data for Classic builds.
 ---@param phase integer Classic phase/unobtainable code to assign; ignored in non-Classic builds.
 ---@param data ATTObject|ATTObjectArray Object tree receiving the Classic phase flag, or returned unchanged in other builds.
----@param force? boolean Whether existing `u` values are replaced in Classic builds.
 ---@return ATTObject|ATTObjectArray
-applyclassicphase = function(phase, data, force)
-	return (force and bubbleDownAndReplace or bubbleDown)({ ["u"] = phase }, data);
+applyclassicphase = function(phase, data)
+	return bubbleDown({ ["u"] = phase }, data);
 end
 --- Selects the Classic or non-Classic value for the active build.
 ---@param classicValue any Value returned for Classic builds.
@@ -1275,9 +1248,8 @@ end
 --- Applies a Classic phase/unobtainable value to nested data for Classic builds.
 ---@param phase integer Classic phase/unobtainable code to assign; ignored in non-Classic builds.
 ---@param data ATTObject|ATTObjectArray Object tree receiving the Classic phase flag, or returned unchanged in other builds.
----@param force? boolean Whether existing `u` values are replaced in Classic builds.
 ---@return ATTObject|ATTObjectArray
-applyclassicphase = function(phase, data, force)
+applyclassicphase = function(phase, data)
 	return data;
 end
 --- Selects the Classic or non-Classic value for the active build.
