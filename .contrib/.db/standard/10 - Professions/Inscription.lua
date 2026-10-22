@@ -6011,8 +6011,6 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 					print("ITEM RECIPE MISSING U: ", name, o.spellID, u, o.u);
 					o.u = u;
 				end
-			elseif o.u ~= u then
-				print("RECIPE MISSING U: ", name, o.spellID, o.u);
 			end
 		else
 			print("MISSING RECIPE", name, o.spellID);

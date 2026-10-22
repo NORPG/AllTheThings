@@ -2727,7 +2727,7 @@ crit(14132,{achID=4825,id=9})}}),
 exp(5134,{awp=40003,g={
 crit(14131,{achID=4825,id=8})}}),
 exp(3856,{awp=20003,g={
-crit(1546,{achID=858,id=16,u=17})}}),
+crit(1546,{achID=858,id=16})}}),
 exp(2420,{awp=30002,g={
 crit(1138,{achID=775,id=4})}}),
 exp(4882,{awp=30002,g={

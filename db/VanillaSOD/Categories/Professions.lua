@@ -13,10 +13,10 @@ ach(116)})}}),
 prof(171,{awp=10100,g={
 x(1,{requireSkill=171,g={
 h(-45,{requireSkill=171,u=1612,g={
-q(90560,{awp=11507,r=1,requireSkill=171,u=1612,g={
-r(1231583,{b=1,itemID=241651,learnedAt=270,q=2,requireSkill=171,u=1612})}}),
-q(90567,{awp=11507,r=2,requireSkill=171,u=1612,g={
-r(1231583,{b=1,itemID=241651,learnedAt=270,q=2,requireSkill=171,u=1612})}})}})}})}}),
+q(90560,{awp=11507,r=1,requireSkill=171,g={
+r(1231583,{b=1,itemID=241651,learnedAt=270,q=2,requireSkill=171})}}),
+q(90567,{awp=11507,r=2,requireSkill=171,g={
+r(1231583,{b=1,itemID=241651,learnedAt=270,q=2,requireSkill=171})}})}})}})}}),
 prof(261,{c={3},description="Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",lvl=10,rwp=30002,g={
 r(24493,{lvl=20,rank=1}),
 r(24497,{lvl=30,rank=2}),
@@ -382,9 +382,9 @@ prof(393),
 prof(197,{awp=10100,g={
 x(1,{requireSkill=197,u=1612,g={
 q(90116,{awp=11507,coords={
-[1423]={{94.6,83.6}}},qgs={240631},requireSkill=197,u=1612,g={
-r(1227723,{b=1,itemID=239149,learnedAt=260,q=3,requireSkill=197,u=1612})}}),
+[1423]={{94.6,83.6}}},qgs={240631},requireSkill=197,g={
+r(1227723,{b=1,itemID=239149,learnedAt=260,q=3,requireSkill=197})}}),
 q(90120,{awp=11507,coords={
-[1423]={{94.6,83.6}}},qgs={240631},requireSkill=197,u=1612,g={
-r(1227724,{b=1,itemID=239150,learnedAt=300,q=4,requireSkill=197,u=1612})}})}})}})}})
+[1423]={{94.6,83.6}}},qgs={240631},requireSkill=197,g={
+r(1227724,{b=1,itemID=239150,learnedAt=300,q=4,requireSkill=197})}})}})}})}})
 end)

@@ -817,13 +817,13 @@ q(9318,{coords={
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
 [1457]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23123,{b=1,f=55,lvl=50,q=2,u=2})}}),
+i(23123,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(9334,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23123,{b=1,f=55,lvl=50,q=2,u=2})}}),
+i(23123,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(12616,{awp=30002,lvl=70,maps={350},qgs={16285},u=2,g={
 i(40354,{b=1,f=53,lvl=70,q=3,u=2})}}),
 q(9317,{coords={
@@ -831,13 +831,13 @@ q(9317,{coords={
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
 [1457]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
+i(23122,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(9335,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
+i(23122,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(9292,{description="If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1453},qgs={16431},qis={22949},r=2,u=2,g={
 i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
 i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
@@ -922,13 +922,13 @@ q(9341,{coords={
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
 [1457]={{64.3,44.5}}},cost={{"i",22484,10}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-s(133398,22999,{b=1,f=9,q=1,u=2})}}),
+s(133398,22999,{b=1,f=9,q=1,rwp=30003,u=2})}}),
 q(9343,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,10}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-s(133398,22999,{b=1,f=9,q=1,u=2})}}),
+s(133398,22999,{b=1,f=9,q=1,rwp=30003,u=2})}}),
 q(12776,{awp=30002,lvl=65,maps={1947},qgs={29087},qis={39698},races={11},sourceQuests={12777},u=2}),
 q(9247,{coords={
 [1423]={{81.1,60.5}}},crs={16281},description="You should receive this in the mail at level 60.",isYearly=1,lvl=60,qss={22723},u=2,g={

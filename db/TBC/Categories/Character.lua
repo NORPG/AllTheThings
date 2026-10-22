@@ -354,7 +354,7 @@ i(6948,{b=1,q=1})}),
 h(-43,{pb=1,g={
 h(-12,{pb=1,g={
 ach(1250,{pb=1,u=17,g={
-p(160,{itemID=40653,pb=1,petTypeID=5,spellID=40990,u=17})}}),
+p(160,{itemID=40653,pb=1,petTypeID=5,spellID=40990})}}),
 ach(1248,{pb=1}),
 ach(15,{pb=1}),
 ach(1017,{pb=1})}})}}),

@@ -5425,8 +5425,6 @@ local itemrecipe = function(name, itemID, spellID, spellIDAfterCata, timeline)
 				]]--
 				-- The above code doesn't really matter, in this file, the phases are managed in the recipe section, not here.
 				o.u = u;
-			elseif o.u then
-				print("RECIPE MISSING U: ", name, o.spellID, o.u);
 			end
 		else
 			print("MISSING RECIPE", name, o.spellID);

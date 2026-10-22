@@ -1234,8 +1234,21 @@ end
 ---@param phase integer Classic phase/unobtainable code to assign; ignored in non-Classic builds.
 ---@param data ATTObject|ATTObjectArray Object tree receiving the Classic phase flag, or returned unchanged in other builds.
 ---@return ATTObject|ATTObjectArray
-applyclassicphase = function(phase, data)
-	return bubbleDown({ ["u"] = phase }, data);
+applyclassicphase = function(phase, t)
+	if t then
+		local data = { ["u"] = phase };
+		if t --[[@as ATTObject]].g or t --[[@as ATTObject]].groups then
+			applyData(data, t);
+		elseif isarray(t) then
+			for _,group in ipairs(t --[[@as ATTObjectArray]]) do
+				applyData(data, group);
+			end
+		else
+			applyData(data, t);
+		end
+		return t;
+	end
+	return data;
 end
 --- Selects the Classic or non-Classic value for the active build.
 ---@param classicValue any Value returned for Classic builds.

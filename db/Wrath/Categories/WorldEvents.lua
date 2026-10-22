@@ -14,29 +14,29 @@ s(139134,28788,{b=1,f=9,q=1,u=2})}})}})}}),
 x(3,{awp=30003})}),
 h(-723,{awp=10400,lvl=60,rwp=40003,u=12,g={
 h(-19,{awp=10600,crs={14454,14457,14461,14464},u=13,g={
-i(19268,{q=3,u=13})}}),
+i(19268,{q=3})}}),
 n(14464,{coords={
-[1447]={{72.6,20},{77,24.2},{77.2,16.6},{80,24.2},{82.6,21}}},description="This is only available during an Elemental Invasion.",u=12,g={
-s(129577,18673,{f=8,lvl=54,q=3,u=12}),
-i(18674,{f=52,lvl=54,q=2,u=12})}}),
+[1447]={{72.6,20},{77,24.2},{77.2,16.6},{80,24.2},{82.6,21}}},description="This is only available during an Elemental Invasion.",g={
+s(129577,18673,{f=8,lvl=54,q=3}),
+i(18674,{f=52,lvl=54,q=2})}}),
 n(14461,{coords={
-[1449]={{44.6,46},{45.4,54.8},{48.2,41.2},{51.6,57.6},{53.2,41.8},{55.6,57.4},{56.6,42.8},{56.6,48.2}}},description="This is only available during an Elemental Invasion.",u=12,g={
-s(129575,18671,{f=23,lvl=54,q=3,u=12}),
-s(129576,18672,{f=1,lvl=54,q=2,u=12})}}),
+[1449]={{44.6,46},{45.4,54.8},{48.2,41.2},{51.6,57.6},{53.2,41.8},{55.6,57.4},{56.6,42.8},{56.6,48.2}}},description="This is only available during an Elemental Invasion.",g={
+s(129575,18671,{f=23,lvl=54,q=3}),
+s(129576,18672,{f=1,lvl=54,q=2})}}),
 n(14457,{coords={
-[1452]={{54.6,42.6}}},description="This is only available during an Elemental Invasion.",u=12,g={
-r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=165,u=12}),
-r(8782,{itemID=7091,learnedAt=150,q=2,requireSkill=197,u=12}),
-i(18678,{f=51,lvl=56,q=3,u=12}),
-i(18679,{f=52,lvl=56,q=2,u=12})}}),
+[1452]={{54.6,42.6}}},description="This is only available during an Elemental Invasion.",g={
+r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=165}),
+r(8782,{itemID=7091,learnedAt=150,q=2,requireSkill=197}),
+i(18678,{f=51,lvl=56,q=3}),
+i(18679,{f=52,lvl=56,q=2})}}),
 n(14454,{coords={
-[1451]={{17.6,27},{26.6,29.6},{31,23.6},{32.2,17.2}}},description="This is only available during an Elemental Invasion.",u=12,g={
-r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=165,u=12}),
-s(129580,18676,{f=6,loc=45,lvl=56,q=3,u=12}),
-s(129581,18677,{f=3,lvl=56,q=2,u=12})}})}}),
+[1451]={{17.6,27},{26.6,29.6},{31,23.6},{32.2,17.2}}},description="This is only available during an Elemental Invasion.",g={
+r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=165}),
+s(129580,18676,{f=6,loc=45,lvl=56,q=3}),
+s(129581,18677,{f=3,lvl=56,q=2})}})}}),
 h(-476,{awp=30403,e=444,rwp=40001,u=3302,g={
-p(4532,{e=444,petTypeID=9,spellID=446916,u=3302}),
-mnt(446902,{e=444,u=3302})}}),
+p(4532,{e=444,petTypeID=9,spellID=446916}),
+mnt(446902,{e=444})}}),
 h(-481,{maps={1454,1455},rwp=20001,u=2,g={
 h(-210,{r=2,u=2,g={
 q(8811,{coords={
@@ -420,116 +420,116 @@ i(21511,{b=1,description="Contains a random assortment of common, uncommon, and 
 i(21512,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 40-42.",q=1,u=2}),
 i(21513,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 50-52.",q=1,u=2})}})}}),
 h(-483,{awp=10900,lvl=60,maps={75,1446},rwp=40003,u=15,g={
-h(-45,{u=15,g={
+h(-45,{
 q(8519,{coords={
-[1451]={{28.7,89.1}}},lvl=60,minReputation={910,0},providers={{"o",180633}},sourceQuests={8305},u=15}),
+[1451]={{28.7,89.1}}},lvl=60,minReputation={910,0},providers={{"o",180633}},sourceQuests={8305}}),
 q(8303,{coords={
-[1451]={{49.5,36.4}}},lvl=60,minReputation={910,0},qgs={15180},qis={20415},sourceQuests={8301},u=15}),
+[1451]={{49.5,36.4}}},lvl=60,minReputation={910,0},qgs={15180},qis={20415},sourceQuests={8301}}),
 q(8575,{coords={
-[1447]={{57,85.6}}},lvl=60,providers={{"i",20949}},qgs={15481},sourceQuests={8555},u=15}),
+[1447]={{57,85.6}}},lvl=60,providers={{"i",20949}},qgs={15481},sourceQuests={8555}}),
 q(8743,{coords={
 [1451]={{25.7,90.9}}},lvl=60,providers={{"o",180717}},qis={21175},sourceQuests={8742},u=1502,g={
-ach(416,{sourceQuests={8743},u=1502}),
-title(33,{awp=20003,u=1502}),
-mnt(26656,{b=1,itemID=21176,lvl=40,q=5,u=1502})}}),
+ach(416,{sourceQuests={8743}}),
+title(33,{awp=20003}),
+mnt(26656,{b=1,itemID=21176,lvl=40,q=5})}}),
 q(8606,{coords={
-[1446]={{65.2,18.6}}},lvl=60,maps={1452},qgs={11811},sourceQuests={8598},u=15,g={
+[1446]={{65.2,18.6}}},lvl=60,maps={1452},qgs={11811},sourceQuests={8598},g={
 qo(1,{coords={
-[1452]={{65,72}}},providers={{"i",21039},{"i",21040},{"i",21041},{"n",15554}},u=15}),
-i(21042,{b=1,q=1,u=15,g={
-i(21037,{b=1,q=1,u=15}),
-i(21041,{b=1,q=1,u=15}),
-i(21039,{b=1,q=1,u=15}),
-s(131528,21040,{b=1,f=2,loc=42,q=1,u=15})}})}}),
+[1452]={{65,72}}},providers={{"i",21039},{"i",21040},{"i",21041},{"n",15554}}}),
+i(21042,{b=1,q=1,g={
+i(21037,{b=1,q=1}),
+i(21041,{b=1,q=1}),
+i(21039,{b=1,q=1}),
+s(131528,21040,{b=1,f=2,loc=42,q=1})}})}}),
 q(8597,{coords={
-[1446]={{65.2,18.6}}},lvl=60,qgs={11811},sourceQuests={8576},u=15}),
+[1446]={{65.2,18.6}}},lvl=60,qgs={11811},sourceQuests={8576}}),
 q(8586,{coords={
-[1446]={{52.6,28.1}}},cost={{"i",8150,20},{"i",9061,20}},lvl=60,qgs={8125},sourceQuests={8585},u=15,g={
-r(25659,{itemID=21025,learnedAt=300,q=4,requireSkill=185,u=15})}}),
-q(8733,{lvl=60,maps={220},qgs={15362},sourceQuests={8555},u=15}),
+[1446]={{52.6,28.1}}},cost={{"i",8150,20},{"i",9061,20}},lvl=60,qgs={8125},sourceQuests={8585},g={
+r(25659,{itemID=21025,learnedAt=300,q=4,requireSkill=185})}}),
+q(8733,{lvl=60,maps={220},qgs={15362},sourceQuests={8555}}),
 q(8305,{coords={
-[1446]={{65,50}}},lvl=60,minReputation={910,0},qgs={15192},sourceQuests={8303},u=15}),
+[1446]={{65,50}}},lvl=60,minReputation={910,0},qgs={15192},sourceQuests={8303}}),
 q(8599,{coords={
-[1446]={{59.4,96}}},description="You must be on the quest 'Draconic for Dummies' for this quest to be available.",lvl=60,qgs={15526},qis={21032},sourceQuests={8576},u=15}),
-q(8730,{lvl=60,maps={287},qgs={13020},sourceQuests={8555},u=15,g={
-qo(1,{crs={11583},providers={{"i",21138}},u=15}),
-i(21142,{crs={11583},description="You get this if you don't manage to kill Nefarian in time after starting the quest from Vaelastrasz.",q=1,u=15}),
-i(21529,{b=1,f=51,lvl=60,q=4,u=15}),
-s(131967,21530,{b=1,f=6,loc=46,lvl=60,q=4,u=15})}}),
+[1446]={{59.4,96}}},description="You must be on the quest 'Draconic for Dummies' for this quest to be available.",lvl=60,qgs={15526},qis={21032},sourceQuests={8576}}),
+q(8730,{lvl=60,maps={287},qgs={13020},sourceQuests={8555},g={
+qo(1,{crs={11583},providers={{"i",21138}}}),
+i(21142,{crs={11583},description="You get this if you don't manage to kill Nefarian in time after starting the quest from Vaelastrasz.",q=1}),
+i(21529,{b=1,f=51,lvl=60,q=4}),
+s(131967,21530,{b=1,f=6,loc=46,lvl=60,q=4})}}),
 q(8584,{coords={
-[1446]={{65.2,18.6}}},lvl=60,qgs={11811},sourceQuests={8576},u=15}),
+[1446]={{65.2,18.6}}},lvl=60,qgs={11811},sourceQuests={8576}}),
 q(8288,{coords={
-[1451]={{49.5,36.4}}},lvl=60,maps={287},qgs={15180},sourceQuests={8286},u=15,g={
-qo(1,{crs={12017},providers={{"i",20383}},u=15})}}),
+[1451]={{49.5,36.4}}},lvl=60,maps={287},qgs={15180},sourceQuests={8286},g={
+qo(1,{crs={12017},providers={{"i",20383}}})}}),
 q(8598,{coords={
-[1446]={{59.4,96}}},description="The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",lvl=60,providers={{"o",180652}},qis={21029},sourceQuests={8599},u=15}),
+[1446]={{59.4,96}}},description="The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",lvl=60,providers={{"o",180652}},qis={21029},sourceQuests={8599}}),
 q(8587,{coords={
-[1446]={{52.6,28.1}}},lvl=60,qgs={8125},qis={21028},sourceQuests={8586},u=15}),
+[1446]={{52.6,28.1}}},lvl=60,qgs={8125},qis={21028},sourceQuests={8586}}),
 q(8578,{coords={
-[1421]={{46.2,86.7}}},lvl=60,maps={232},minReputation={910,0},providers={{"o",180642}},sourceQuests={8577},u=15,g={
-qo(1,{providers={{"i",20951}},u=15})}}),
+[1421]={{46.2,86.7}}},lvl=60,maps={232},minReputation={910,0},providers={{"o",180642}},sourceQuests={8577},g={
+qo(1,{providers={{"i",20951}}})}}),
 q(8577,{coords={
-[1446]={{65.2,18.6}}},lvl=60,maps={1421},qgs={11811},sourceQuests={8576},u=15}),
+[1446]={{65.2,18.6}}},lvl=60,maps={1421},qgs={11811},sourceQuests={8576}}),
 q(8741,{coords={
-[1450]={{36.18,41.79}}},lvl=60,minReputation={910,0},qgs={11832},qis={21139},sourceQuests={8736},u=15}),
+[1450]={{36.18,41.79}}},lvl=60,minReputation={910,0},qgs={11832},qis={21139},sourceQuests={8736}}),
 q(8555,{coords={
-[1446]={{65,50}}},lvl=60,minReputation={910,0},qgs={15192},sourceQuests={8519},u=15}),
+[1446]={{65,50}}},lvl=60,minReputation={910,0},qgs={15192},sourceQuests={8519}}),
 q(8728,{coords={
-[1446]={{65.2,18.6}}},cost={{"i",12361,10},{"i",12800,10},{"i",18562,10},{"i",12360,20}},lvl=60,qgs={11811},sourceQuests={8578,8587,8620},u=15}),
+[1446]={{65.2,18.6}}},cost={{"i",12361,10},{"i",12800,10},{"i",18562,10},{"i",12360,20}},lvl=60,qgs={11811},sourceQuests={8578,8587,8620}}),
 q(8302,{coords={
-[1451]={{49.5,36.4}}},cost={{"i",20384,200}},lvl=60,maxReputation={910,0},qgs={15180},repeatable=1,sourceQuests={8301},u=15,g={
-i(20403,{b=1,q=2,u=15})}}),
+[1451]={{49.5,36.4}}},cost={{"i",20384,200}},lvl=60,maxReputation={910,0},qgs={15180},repeatable=1,sourceQuests={8301},g={
+i(20403,{b=1,q=2})}}),
 q(8585,{coords={
-[1446]={{52.6,28.1}}},cost={{"i",21024,20}},lvl=60,maps={1444},qgs={8125},sourceQuests={8584},u=15,g={
+[1446]={{52.6,28.1}}},cost={{"i",21024,20}},lvl=60,maps={1444},qgs={8125},sourceQuests={8584},g={
 qo(1,{coords={
-[1444]={{29.8,72.6}}},crs={12803},providers={{"i",21027}},u=15})}}),
+[1444]={{29.8,72.6}}},crs={12803},providers={{"i",21027}}})}}),
 q(8742,{coords={
-[1446]={{65,50}}},lvl=60,qgs={15192},sourceQuests={8729,8730,8741},u=15,g={
-i(21175,{b=1,q=1,u=15})}}),
+[1446]={{65,50}}},lvl=60,qgs={15192},sourceQuests={8729,8730,8741},g={
+i(21175,{b=1,q=1})}}),
 q(8736,{coords={
-[1450]={{36.18,41.79}}},description="You do NOT want to kill Eranikus or allow Remulos to die.",lvl=60,minReputation={910,0},qgs={11832},sourceQuests={8735},u=15,g={
-i(21531,{b=1,f=51,lvl=60,q=4,u=15}),
-s(131969,21532,{b=1,f=5,loc=47,lvl=60,q=4,u=15})}}),
+[1450]={{36.18,41.79}}},description="You do NOT want to kill Eranikus or allow Remulos to die.",lvl=60,minReputation={910,0},qgs={11832},sourceQuests={8735},g={
+i(21531,{b=1,f=51,lvl=60,q=4}),
+s(131969,21532,{b=1,f=5,loc=47,lvl=60,q=4})}}),
 q(8735,{coords={
-[1450]={{36.18,41.79}}},lvl=60,maps={1425,1431,1440,1444},minReputation={910,0},qgs={11832},sourceQuests={8734},u=15,g={
+[1450]={{36.18,41.79}}},lvl=60,maps={1425,1431,1440,1444},minReputation={910,0},qgs={11832},sourceQuests={8734},g={
 qo(1,{coords={
-[1440]={{91.6,39}}},crs={12474,12475,12476},providers={{"i",21147}},u=15}),
+[1440]={{91.6,39}}},crs={12474,12475,12476},providers={{"i",21147}}}),
 qo(2,{coords={
-[1431]={{48,33}}},crs={15625},description="It is recommended that you bring at least 30 players and they should be experienced raiders.",providers={{"i",21149}},u=15}),
+[1431]={{48,33}}},crs={15625},description="It is recommended that you bring at least 30 players and they should be experienced raiders.",providers={{"i",21149}}}),
 qo(3,{coords={
-[1444]={{50.4,15.9}}},crs={5317,5319,5320},providers={{"i",21148}},u=15}),
+[1444]={{50.4,15.9}}},crs={5317,5319,5320},providers={{"i",21148}}}),
 qo(4,{coords={
-[1425]={{61.6,27.7}}},crs={12477,12478,12479},providers={{"i",21146}},u=15})}}),
+[1425]={{61.6,27.7}}},crs={12477,12478,12479},providers={{"i",21146}}})}}),
 q(8620,{coords={
-[1446]={{65.2,18.6}}},lvl=60,maps={232,248,287,1419,1445,1452,1453,1458},qgs={11811},sourceQuests={8606},u=15,g={
-qo(1,{providers={{"i",21111}},u=15}),
-i(21112,{b=1,cost={{"i",21110,1},{"i",21109,1},{"i",21108,1},{"i",21107,1},{"i",21106,1},{"i",21105,1},{"i",21104,1},{"i",21103,1}},q=1,u=15,g={
-i(21111,{b=1,q=1,u=15})}}),
-s(131955,21517,{b=1,f=4,loc=40,lvl=60,q=4,u=15})}}),
+[1446]={{65.2,18.6}}},lvl=60,maps={232,248,287,1419,1445,1452,1453,1458},qgs={11811},sourceQuests={8606},g={
+qo(1,{providers={{"i",21111}}}),
+i(21112,{b=1,cost={{"i",21110,1},{"i",21109,1},{"i",21108,1},{"i",21107,1},{"i",21106,1},{"i",21105,1},{"i",21104,1},{"i",21103,1}},q=1,g={
+i(21111,{b=1,q=1})}}),
+s(131955,21517,{b=1,f=4,loc=40,lvl=60,q=4})}}),
 q(8301,{coords={
-[1451]={{49.5,36.4}}},cost={{"i",20384,200}},lvl=60,qgs={15180},sourceQuests={8288},u=15,g={
-i(20402,{b=1,q=2,u=15}),
-i(20403,{b=1,q=2,u=15})}}),
+[1451]={{49.5,36.4}}},cost={{"i",20384,200}},lvl=60,qgs={15180},sourceQuests={8288},g={
+i(20402,{b=1,q=2}),
+i(20403,{b=1,q=2})}}),
 q(8729,{coords={
-[1446]={{65.2,18.6}}},lvl=60,maps={1447},qgs={11811},sourceQuests={8728},u=15,g={
+[1446]={{65.2,18.6}}},lvl=60,maps={1447},qgs={11811},sourceQuests={8728},g={
 qo(1,{coords={
-[1447]={{65,55}}},cost={{"i",21136,1}},crs={15571},description="This summons a 40 man raid boss.",providers={{"i",21137},{"o",180669}},u=15}),
-i(21526,{b=1,f=52,lvl=60,q=4,u=15}),
-s(131964,21527,{b=1,f=4,loc=42,lvl=60,q=4,u=15})}}),
+[1447]={{65,55}}},cost={{"i",21136,1}},crs={15571},description="This summons a 40 man raid boss.",providers={{"i",21137},{"o",180669}}}),
+i(21526,{b=1,f=52,lvl=60,q=4}),
+s(131964,21527,{b=1,f=4,loc=42,lvl=60,q=4})}}),
 q(8576,{coords={
-[1446]={{65.2,18.6}}},lvl=60,qgs={11811},sourceQuests={8575},u=15}),
+[1446]={{65.2,18.6}}},lvl=60,qgs={11811},sourceQuests={8575}}),
 q(8745,{coords={
-[1451]={{25.9,91}}},lvl=60,qgs={15693},qis={21175},sourceQuests={8742},u=15,g={
-s(131960,21523,{b=1,f=20,lvl=60,q=4,u=15}),
-s(131959,21522,{b=1,f=20,lvl=60,q=4,u=15}),
-s(131958,21521,{b=1,f=25,lvl=60,q=4,u=15}),
-s(131957,21520,{b=1,f=25,lvl=60,q=4,u=15})}}),
+[1451]={{25.9,91}}},lvl=60,qgs={15693},qis={21175},sourceQuests={8742},g={
+s(131960,21523,{b=1,f=20,lvl=60,q=4}),
+s(131959,21522,{b=1,f=20,lvl=60,q=4}),
+s(131958,21521,{b=1,f=25,lvl=60,q=4}),
+s(131957,21520,{b=1,f=25,lvl=60,q=4})}}),
 q(8734,{coords={
-[1438]={{37.5,47.9}}},lvl=60,minReputation={910,0},qgs={15624},sourceQuests={8733},u=15}),
+[1438]={{37.5,47.9}}},lvl=60,minReputation={910,0},qgs={15624},sourceQuests={8733}}),
 q(8286,{coords={
-[1451]={{49.5,36.4}}},description="This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",lvl=60,qgs={15180},u=15})}}),
-h(-47,{u=15,g={
-i(20402,{b=1,cost={{"i",20403,1}},description="A friendly player can use their Proxy of Nozdormu to grant an undeputized player Agency to collect fragments. Oh joy. Enjoy the suffering.",q=2,u=15})}})}}),
+[1451]={{49.5,36.4}}},description="This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",lvl=60,qgs={15180}})}),
+h(-47,{
+i(20402,{b=1,cost={{"i",20403,1}},description="A friendly player can use their Proxy of Nozdormu to grant an undeputized player Agency to collect fragments. Oh joy. Enjoy the suffering.",q=2})})}}),
 h(-484,{maps={1419,1423,1428,1446,1447,1452,1955},rwp=30003,u=2,g={
 h(-12,{u=2,g={
 ach(2116,{providers={{"i",22999}},u=2})}}),
@@ -562,13 +562,13 @@ q(9318,{coords={
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
 [1457]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23123,{b=1,f=55,lvl=50,q=2,u=2})}}),
+i(23123,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(9334,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23123,{b=1,f=55,lvl=50,q=2,u=2})}}),
+i(23123,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(12616,{awp=30002,lvl=70,maps={350},qgs={16285},u=2,g={
 i(40354,{b=1,f=53,lvl=70,q=3,u=2})}}),
 q(9317,{coords={
@@ -576,13 +576,13 @@ q(9317,{coords={
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
 [1457]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
+i(23122,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(9335,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
+i(23122,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(9292,{description="If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1453},qgs={16431},qis={22949},r=2,u=2,g={
 i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
 i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
@@ -667,13 +667,13 @@ q(9341,{coords={
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
 [1457]={{64.3,44.5}}},cost={{"i",22484,10}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-s(133398,22999,{b=1,f=9,q=1,u=2})}}),
+s(133398,22999,{b=1,f=9,q=1,rwp=30003,u=2})}}),
 q(9343,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,10}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-s(133398,22999,{b=1,f=9,q=1,u=2})}}),
+s(133398,22999,{b=1,f=9,q=1,rwp=30003,u=2})}}),
 q(12776,{awp=30002,lvl=65,maps={1947},qgs={29087},qis={39698},races={11},sourceQuests={12777},u=2}),
 q(9247,{coords={
 [1423]={{81.1,60.5}}},crs={16281},description="You should receive this in the mail at level 60.",isYearly=1,lvl=60,qss={22723},u=2,g={
