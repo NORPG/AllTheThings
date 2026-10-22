@@ -612,25 +612,25 @@ q(9321,{coords={
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
 [1457]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(13446,{f=55,lvl=45,q=1,u=2})}}),
+i(13446,{f=55,lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=2108 t.rwp=30001 end	end,q=1})}}),
 q(9336,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(13446,{f=55,lvl=45,q=1,u=2})}}),
+i(13446,{f=55,lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=2108 t.rwp=30001 end	end,q=1})}}),
 q(9337,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
 [1457]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(13444,{f=55,lvl=49,q=1,u=2})}}),
+i(13444,{f=55,lvl=49,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=2108 t.rwp=30001 end	end,q=1})}}),
 q(9320,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(13444,{f=55,lvl=49,q=1,u=2})}}),
+i(13444,{f=55,lvl=49,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=2108 t.rwp=30001 end	end,q=1})}}),
 q(9302,{lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=2108 t.rwp=30001 end	end,qis={22944},qss={22973}}),
 q(9299,{lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=2108 t.rwp=30001 end	end,qis={22945},qss={22972}}),
 q(9300,{lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=2108 t.rwp=30001 end	end,qis={22946},qss={22974}}),

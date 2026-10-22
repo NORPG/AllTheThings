@@ -6722,7 +6722,7 @@ h(-45,{
 q(10944,{awp=20100,coords={
 [332]={{48,18.2}}},description="After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",maps={1948},qgs={22820},sourceQuests={10708}})}),
 h(-63,{
-i(24368,{q=1,u=17}),
+i(24368,{q=1}),
 r(36315,{b=1,itemID=30280,learnedAt=375,q=4,requireSkill=197}),
 r(36351,{b=1,itemID=30302,learnedAt=375,q=4,requireSkill=165}),
 r(36349,{b=1,itemID=30301,learnedAt=375,q=4,requireSkill=165}),
