@@ -873,6 +873,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					i(21106),	-- Draconic for Dummies [Chapter IV]
 				},
 			}),
+			o(701788, {	-- Knife
+				description = "In the debris at the sewer entrance, open the book inside the shattered barrel; the knife is tucked between its pages.",
+				coords = {
+					{ 23.0, 36.4, MAP.UNDERCITY },
+					{ 23.6, 35.4, MAP.UNDERCITY },
+					{ 23.7, 35.9, MAP.UNDERCITY },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(281350),	-- Keystone Fragment
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(4604, {	-- Abigail Sawyer <Bow Merchant>

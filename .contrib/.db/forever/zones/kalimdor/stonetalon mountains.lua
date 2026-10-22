@@ -876,6 +876,14 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 			}),
 		}),
 		n(TREASURES, {
+			o(674126, {	-- Hidden Stash
+				coord = { 40.7, 52.7, MAP.STONETALON_MOUNTAINS },
+				description = "Inside the tent, in a box at the back.",
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(221324),	-- Brittle Key
+				},
+			}),
 			o(409711, {	-- Scrolls
 				coord = { 74.4, 85.7, MAP.STONETALON_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -958,6 +966,10 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 			}),
 			i(6840, {	-- Galvanized Horn
 				cr = 6167,	-- Chimaera Matriarch
+			}),
+			i(249880, {	-- Recipe: Royal Tea (RECIPE!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 4003,	-- Windshear Geomancer
 			}),
 		}),
 	},

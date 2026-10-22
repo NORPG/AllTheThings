@@ -523,6 +523,12 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 		}),
 	}),
 	prof(HERBALISM, {
+		i(268415, {	-- Commonplace Herb Seeds
+			description = "Gathered from Peacebloom and Silverleaf.",
+		}),
+		i(268416, {	-- Uncommon Herb Seeds
+			description = "Gathered from Briarthorn.",
+		}),
 		n(COMMON_VENDOR_ITEMS, {
 			i(277113, {	-- Apprentice's Herb Pouch
 				description = "Can be bought from General Goods and Trade Supplies vendors around the world.",

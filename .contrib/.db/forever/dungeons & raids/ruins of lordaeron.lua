@@ -208,6 +208,41 @@ root(ROOTS.Instances, {
 			}),
 			n(ZONE_DROPS, {
 				i(268535),	-- Bloodied Insignia (QS!)
+				i(286981, {	-- Death Bindings
+					crs = {
+						250618,	-- Skeleton
+						250624,	-- Skeletal Mage
+						250626,	-- Skeletal Soldier
+						255964,	-- Fallen Necromancer
+					},
+				}),
+				i(286978, {	-- Rotmender's Garb
+					crs = {
+						250484,	-- Spider
+						250626,	-- Skeletal Soldier
+						250689,	-- Living Monstrosity
+						255109,	-- Flesh Golem
+					},
+				}),
+				i(286979, {	-- Rotmender's Gloves
+					cr = 250629,	-- Stone Watcher
+				}),
+				i(286980, {	-- Rotmender's Sash
+					crs = {
+						250620,	-- Shrieking Banshee
+						250622,	-- Ragged Ghoul
+						250626,	-- Skeletal Soldier
+						250650,	-- Wailing Banshee
+						250651,	-- Vengeful Citizen
+					},
+				}),
+				i(286977, {	-- Sword of the Fallen
+					crs = {
+						250622,	-- Ragged Ghoul
+						250627,	-- Ghoul
+						250630,	-- Plague Ghoul
+					},
+				}),
 			}),
 			e(3353, {	-- Witherfang
 				creatureID = 250483,	-- Witherfang

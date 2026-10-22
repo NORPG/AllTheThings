@@ -2760,7 +2760,25 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Trapped Game
-						provider = { "i", 269719 },	-- Trapped Game (QI!)
+						providers = {
+							{ "i", 269719 },	-- Trapped Game (QI!)
+							{ "o", 640104 },	-- Sprung Trap
+						},
+						coords = {
+							{ 42.9, 15.0, MAP.THE_BARRENS },
+							{ 43.0, 16.5, MAP.THE_BARRENS },
+							{ 43.4, 14.3, MAP.THE_BARRENS },
+							{ 43.9, 14.4, MAP.THE_BARRENS },
+							{ 44.2, 13.0, MAP.THE_BARRENS },
+							{ 44.8, 16.9, MAP.THE_BARRENS },
+							{ 45.3, 14.0, MAP.THE_BARRENS },
+							{ 45.4, 15.3, MAP.THE_BARRENS },
+							{ 46.4, 13.1, MAP.THE_BARRENS },
+							{ 46.9, 12.4, MAP.THE_BARRENS },
+							{ 47.6, 12.6, MAP.THE_BARRENS },
+							{ 47.9, 11.1, MAP.THE_BARRENS },
+							{ 50.2, 12.7, MAP.THE_BARRENS },
+						},
 					}),
 				},
 			}),

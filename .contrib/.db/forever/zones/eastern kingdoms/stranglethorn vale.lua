@@ -2152,6 +2152,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					i(18710),	-- Arena Bracers
 					i(18712),	-- Arena Vambraces
 					i(18709),	-- Arena Wristguards
+					i(277534, {	-- Arena Spoils
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			})),
 			o(2744, {	-- Giant Clam
@@ -2180,6 +2183,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(213165),	-- Basilisks: Should Petrification be Feared?
+				},
+			}),
+			o(674124, {	-- Traveler's Cache
+				coord = { 14.4, 27.2, MAP.STRANGLETHORN_VALE },
+				description = "Opened with the Brittle Key from the Hidden Stash in Stonetalon Mountains. The key expires after an hour, so travel here quickly.",
+				cost = { { "i", 221324, 1 } },	-- Brittle Key
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(281347),	-- Torn Page
 				},
 			}),
 		}),

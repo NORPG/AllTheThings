@@ -1838,6 +1838,17 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 		}),
 		n(TREASURES, {
+			o(626718, {	-- Dented Chest
+				coords = {
+					{ 35.5, 22.5, MAP.ZEPHRAS_ISLE },
+					{ 35.9, 24.7, MAP.ZEPHRAS_ISLE },
+					{ 36.2, 25.5, MAP.ZEPHRAS_ISLE },
+					{ 35.8, 33.8, MAP.ZEPHRAS_ISLE },
+				},
+				groups = {
+					i(252023),	-- Zaalanarr Sharp
+				},
+			}),
 			o(616907, {	-- Windstone
 				description = "Spawns randomly throughout Zephras Isle.",
 				sourceQuest = 93552,	-- Harvesting Windstones

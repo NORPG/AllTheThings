@@ -209,6 +209,35 @@ root(ROOTS.Instances, {
 					},
 				}),
 			}),
+			n(ZONE_DROPS, {
+				i(286992, {	-- Construct's Grips
+					cr = 246664,	-- Fragmented Sentry
+				}),
+				i(286991, {	-- Roused Nature Footwraps
+					cr = 247003,	-- Seeking Remnant
+				}),
+				i(286994, {	-- Tattered Kirin Tor Cloak
+					cr = 247003,	-- Seeking Remnant
+				}),
+				i(286988, {	-- Violet Sorcerer's Leggings
+					crs = {
+						255066,	-- Fallen Mage
+						255072,	-- Dark Caster
+					},
+				}),
+				i(286987, {	-- Violet Sorcerer's Sandals
+					crs = {
+						255072,	-- Dark Caster
+						269134,	-- Kirin Tor Necromancer
+					},
+				}),
+				i(286989, {	-- Violet Sorcerer's Wraps
+					crs = {
+						255066,	-- Fallen Mage
+						269134,	-- Kirin Tor Necromancer
+					},
+				}),
+			}),
 			e(3311, {	-- Atrexis the Grave Knight
 				creatureID = 247126,	-- Atrexis the Grave Knight
 				groups = {

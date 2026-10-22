@@ -397,6 +397,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 10,
 			}),
 			q(86613, {	-- Excavation Tools
+				qs = 278049,	-- Excavation Tools (QS!)
 				provider = { "o", 665282 },	-- Excavation Tools
 				coords = {
 					{ 66.1, 66.6, MAP.LOCH_MODAN },

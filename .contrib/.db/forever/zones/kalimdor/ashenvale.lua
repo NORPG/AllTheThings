@@ -1388,6 +1388,10 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					3919,	-- Withered Ancient
 				},
 			}),
+			i(250182, {	-- Recipe: Bear Brisket (RECIPE!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 3809,	-- Ashenvale Bear
+			}),
 		}),
 	},
 });

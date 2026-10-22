@@ -84,12 +84,11 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(98028, {	-- Baron Marinous
-				provider = { "i", 279275 },	-- Clouded Water Globe (QS!)
+				qs = 279275,	-- Clouded Water Globe (QS!)
 				coord = { 59.01, 22.91, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 17,
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 279275,	-- Clouded Water Globe (QS!)
 				groups = {
 					i(281291),	-- Mathystra Channeling Orb
 					i(281292),	-- Onu's Patience
@@ -1080,6 +1079,15 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 		}),
 		n(RARES, {
+			n(270294, {	-- Baron Marinous
+				coord = { 59.0, 22.9, MAP.DARKSHORE },
+				description = "Combine 20 Mathystral Amulet Fragments into a Mathystral Amulet, then use it at the Fathom Stone at the bottom of the spiral staircase in the Ruins of Mathystra to summon him.",
+				cost = { { "i", 279277, 1 } },	-- Mathystral Amulet
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(279275),	-- Clouded Water Globe (QS!)
+				},
+			}),
 			n(2186, {	-- Carnivous the Breaker
 				coords = {
 					{ 39.6, 54.0, MAP.DARKSHORE },
@@ -1250,6 +1258,20 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 			i(5839, {	-- Journal Page
 				cr = 3660,	-- Athrikus Narassin <Cult of the Dark Strand>
+			}),
+			i(279276, {	-- Mathystral Amulet Fragment
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				crs = {
+					271903,	-- Stormscale Beastmistress
+					2183,	-- Stormscale Warrior
+					2182,	-- Stormscale Sorceress
+					2181,	-- Stormscale Myrmidon
+				},
+				groups = {
+					i(279277, {	-- Mathystral Amulet
+						cost = { { "i", 279276, 20 } },	-- 20x Mathystral Amulet Fragment
+					}),
+				},
 			}),
 			i(5773, {	-- Pattern: Robes of Arcana (RECIPE!)
 				cr = 2337,	-- Dark Strand Voidcaller

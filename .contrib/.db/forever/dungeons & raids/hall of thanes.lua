@@ -84,6 +84,22 @@ root(ROOTS.Instances, {
 					},
 				}),
 			}),
+			n(ZONE_DROPS, {
+				i(275893, {	-- Searing Gourd
+					crs = {
+						263396,	-- Dark Iron Looter
+						263397,	-- Dark Iron Engineer
+						263438,	-- Dark Iron Summoner
+					},
+				}),
+				i(275892, {	-- Short Stout
+					crs = {
+						263396,	-- Dark Iron Looter
+						263397,	-- Dark Iron Engineer
+						263438,	-- Dark Iron Summoner
+					},
+				}),
+			}),
 			e(3493, {	-- Faldrim Anvilmar
 				creatureID = 261306,	-- Faldrim Anvilmar
 				groups = {

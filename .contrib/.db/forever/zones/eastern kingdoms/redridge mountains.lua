@@ -1220,6 +1220,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 428,	-- Dire Condor
 			}),
+			i(251526, {	-- Recipe: Savory Whimsyfin Delight (RECIPE!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				crs = {
+					426,	-- Redridge Brute
+					428,	-- Dire Condor
+					442,	-- Tarantula
+					446,	-- Redridge Basher
+					485,	-- Blackrock Outrunner
+					578,	-- Murloc Scout
+					580,	-- Redridge Drudger
+					1083,	-- Murloc Shorestriker
+					334,	-- Gath'Ilzogg
+					422,	-- Murloc Flesheater
+					440,	-- Blackrock Grunt
+					441,	-- Black Dragon Whelp
+				},
+			}),
 			i(1219, {	-- Redridge Machete
 				cr = 424,	-- Redridge Poacher
 				coords = {

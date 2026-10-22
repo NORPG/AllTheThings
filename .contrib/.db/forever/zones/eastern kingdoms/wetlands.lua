@@ -1534,6 +1534,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 1020,	-- Mottled Raptor
 			}),
+			i(279537, {	-- Rotheap Innards
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 270589,	-- Nightveiled Rotheap
+				groups = {
+					i(282283, {	-- Malignant Root
+						description = "Bring the Rotheap Innards to Rethiel the Greenwarden and choose the extra dialogue option to trade them for this ring. No quest or reputation is required.",
+						provider = { "n", 1244 },	-- Rethiel the Greenwarden
+						coord = { 56.4, 41.3, MAP.WETLANDS },
+						cost = { { "i", 279537, 1 } },	-- 1x Rotheap Innards
+					}),
+				},
+			}),
 			i(3076, {	-- Smoldering Boots
 				coords = {
 					{ 66.8, 53.2, MAP.WETLANDS },

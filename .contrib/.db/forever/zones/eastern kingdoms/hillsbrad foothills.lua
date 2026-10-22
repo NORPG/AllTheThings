@@ -1292,6 +1292,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			i(6211, {	-- Recipe: Elixir of Ogre Strength (RECIPE!)
 				cr = 2373,	-- Mudsnout Shaman
 			}),
+			i(249881, {	-- Recipe: Root Tea (RECIPE!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 2376,	-- Torn Fin Oracle
+			}),
 		}),
 	},
 });
