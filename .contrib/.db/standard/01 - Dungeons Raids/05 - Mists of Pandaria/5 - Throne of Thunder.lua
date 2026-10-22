@@ -75,15 +75,7 @@ local TOKENS = {
 };
 
 -- #if MOP
-local CUTTING_EDGE_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_SIEGE_OF_ORGRIMMAR .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		t.rwp = 50400;
-	end
-end]];
+local CUTTING_EDGE_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, 50400);
 -- #endif
 
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ timeline = { ADDED_5_2_0 } }, {

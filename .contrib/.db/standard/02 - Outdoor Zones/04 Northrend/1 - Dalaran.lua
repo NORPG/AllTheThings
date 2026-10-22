@@ -786,15 +786,7 @@ local EMBLEM_OF_VALOR_QUARTERMASTER_GROUPS = {
 
 -- Wrath Classic only: These quests were ripped out with Wrath Phase 4.
 -- #if ANYCLASSIC
-local OnUpdateForTimearDailies = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_FOUR .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		t.rwp = 30300;
-	end
-end]];
+local OnUpdateForTimearDailies = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_FOUR, 30300);
 -- #endif
 
 root(ROOTS.Zones, {
@@ -2244,15 +2236,7 @@ root(ROOTS.Zones, {
 						maps = { TRIAL_OF_THE_CHAMPION },
 						isDaily = true,
 						-- #if ANYCLASSIC
-						OnUpdate = [[function(t)
-							if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_FOUR .. [[) then
-								t.u = ]] .. REMOVED_FROM_GAME .. [[;
-								t.rwp = nil;
-							else
-								t.u = nil;
-								t.rwp = 30300;
-							end
-						end]],
+						OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_FOUR, 30300),
 						-- #endif
 						groups = {
 							objective(1, {	-- 0/1 Fragment of the Black Knight's Soul

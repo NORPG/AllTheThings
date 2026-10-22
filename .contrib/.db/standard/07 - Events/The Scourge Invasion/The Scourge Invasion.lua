@@ -41,15 +41,7 @@ local BUBBLE_DOWN_FILTER = function(t)
 	return not t.phase or t.phase ~= PHASE_SIX_SCOURGE_INVASION;
 end;
 -- So the idea here is that for Classic Wrath it would dynamically set the RWP down to 3.0.1 and mark everything removed from game if you have Wrath Phase 2 activated.
-local SCOURGE_INVASION_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_ONE .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		t.rwp = 30001;
-	end
-end]];
+local SCOURGE_INVASION_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_ONE, 30001);
 -- #else
 local REMOVED_AFTER_WRATH_PREPATCH = REMOVED_3_0_2;
 local BUBBLE_DOWN_FILTER = function(t) return true; end;

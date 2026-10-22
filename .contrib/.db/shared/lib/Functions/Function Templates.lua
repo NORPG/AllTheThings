@@ -67,6 +67,21 @@ FUNCTION_TEMPLATES = {
 		ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t) if not C_QuestLog.IsOnQuest(]]..questID..[[) then t.visible = false; return true; end end]]
 		return [[_.OnUpdateDB.]]..OnUpdateName..[[]]
 	end,
+	-- Generates an OnUpdate function into ExportDB.OnUpdateDB which marks the group as Removed From Game while the
+	-- Unobtainable Filter for the provided phaseID is active, otherwise clears 'u' and assigns the provided 'rwp'
+	GenerateOnUpdateRemovedWithPhase = function(phaseID, rwp)
+		local OnUpdateName = "RemovedWithPhase"..phaseID.."_"..rwp
+		ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t)
+			if _.Settings:GetUnobtainableFilter(]] .. phaseID .. [[) then
+				t.u = ]] .. REMOVED_FROM_GAME .. [[;
+				t.rwp = nil;
+			else
+				t.u = nil;
+				t.rwp = ]] .. rwp .. [[;
+			end
+		end]];
+		return [[_.OnUpdateDB.]]..OnUpdateName..[[]];
+	end,
 	GenerateOnUpdateForRepeatableQuestClassicReputationWithCost = function(repPerTurnIn, count)
 		local OnUpdateName = "OnUpdateRRQCR"..repPerTurnIn
 		if count then

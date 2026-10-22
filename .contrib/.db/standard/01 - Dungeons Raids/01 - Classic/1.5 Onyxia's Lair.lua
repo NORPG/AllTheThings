@@ -26,20 +26,11 @@ local NETHERWIND_CROWN = i(16914);	-- Netherwind Crown
 local STORMRAGE_COVER = i(16900);	-- Stormrage Cover
 
 -- #if WRATH
-local ONYXIAS_LAIR_FORTYMAN_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_LANDFALL .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		-- #if ANYCLASSIC
-		t.description = "Blizzard decided not to remove this yet, but we'll see if it lasts!";
-		t.rwp = 100001;
-		-- #else
-		t.rwp = 30202;
-		-- #endif
-	end
-end]];
+-- #if ANYCLASSIC
+local ONYXIAS_LAIR_FORTYMAN_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(MOP_PHASE_LANDFALL, 100001);
+-- #else
+local ONYXIAS_LAIR_FORTYMAN_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(MOP_PHASE_LANDFALL, 30202);
+-- #endif
 -- #endif
 local ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS = {
 	-- #if WRATH

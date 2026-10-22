@@ -3,15 +3,7 @@
 -----------------------------------------------------
 
 -- #if ANYCLASSIC
-local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		t.rwp = 30100;
-	end
-end]];
+local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_TWO, 30100);
 -- #endif
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {

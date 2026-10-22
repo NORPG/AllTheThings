@@ -4,15 +4,7 @@
 
 -- Blizzard added the original drops for ONLY the first phase of Cataclysm Classic.
 -- #if ANYCLASSIC
-local CATA_CLASSIC_WORLD_BOSS_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		t.rwp = 40100;
-	end
-end]];
+local CATA_CLASSIC_WORLD_BOSS_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT, 40100);
 -- #endif
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {

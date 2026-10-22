@@ -30,15 +30,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 	bubbleDown({
 		timeline = { ADDED_3_3_0, REMOVED_4_0_3 },
 		-- #if ANYCLASSIC
-		OnUpdate = [[function(t)
-			if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_ONE .. [[) then
-				t.u = ]] .. REMOVED_FROM_GAME .. [[;
-				t.rwp = nil;
-			else
-				t.u = nil;
-				t.rwp = 40003;
-			end
-		end]],
+		OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(CATA_PHASE_ONE, 40003),
 		-- #endif
 	}, {
 		maps = {

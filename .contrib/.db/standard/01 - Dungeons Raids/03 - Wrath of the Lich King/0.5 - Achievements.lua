@@ -132,15 +132,7 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
 					-- #if BEFORE CATA
 					-- They didn't actually remove this with Phase 2... Blizzard?!
-					OnUpdate = [[function(t)
-						if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_ONE .. [[) then
-							t.u = ]] .. REMOVED_FROM_GAME .. [[;
-							t.rwp = nil;
-						else
-							t.u = nil;
-							t.rwp = 30100;
-						end
-					end]],
+					OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(CATA_PHASE_ONE, 30100),
 					-- #endif
 				}),
 			},
@@ -180,15 +172,7 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
 					-- #if BEFORE CATA
 					-- They didn't actually remove this with Phase 2... Blizzard?!
-					OnUpdate = [[function(t)
-						if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_ONE .. [[) then
-							t.u = ]] .. REMOVED_FROM_GAME .. [[;
-							t.rwp = nil;
-						else
-							t.u = nil;
-							t.rwp = 30100;
-						end
-					end]],
+					OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(CATA_PHASE_ONE, 30100),
 					-- #endif
 				}),
 			},

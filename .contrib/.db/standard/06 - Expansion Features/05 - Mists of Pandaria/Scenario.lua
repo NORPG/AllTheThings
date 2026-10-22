@@ -13,24 +13,8 @@ SCENARIOS = createHeader({
 });
 
 -- #if ANYCLASSIC
-local REMOVED_WITH_LANDFALL_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_LANDFALL .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		t.rwp = 50100;
-	end
-end]];
-local REMOVED_WITH_ESCALATION_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_ESCALATION .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		t.rwp = 50300;
-	end
-end]];
+local REMOVED_WITH_LANDFALL_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(MOP_PHASE_LANDFALL, 50100);
+local REMOVED_WITH_ESCALATION_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(MOP_PHASE_ESCALATION, 50300);
 -- #endif
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = { ADDED_5_0_4 } }, {

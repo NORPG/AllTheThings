@@ -642,15 +642,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						groups = {
 							-- #if ANYCLASSIC
 							ach(17341, {	-- Cutting Edge: Ulduar
-								OnUpdate = [[function(t)
-									if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
-										t.u = ]] .. REMOVED_FROM_GAME .. [[;
-										t.rwp = nil;
-									else
-										t.u = nil;
-										t.rwp = 30200;
-									end
-								end]],
+								OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_THREE, 30200),
 							}),
 							-- #endif
 							ach(3004, {	-- He Feeds On Your Tears (10 player)
@@ -943,15 +935,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						groups = {
 							-- #if ANYCLASSIC
 							ach(17340, {	-- Ahead of the Curve: Yogg-Saron
-								OnUpdate = [[function(t)
-									if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
-										t.u = ]] .. REMOVED_FROM_GAME .. [[;
-										t.rwp = nil;
-									else
-										t.u = nil;
-										t.rwp = 30200;
-									end
-								end]],
+								OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_THREE, 30200),
 							}),
 							-- #endif
 							revampAch(3159, {	-- Alone in the Darkness (10 player)
@@ -1584,15 +1568,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						groups = {
 							-- #if ANYCLASSIC
 							ach(17341, {	-- Cutting Edge: Ulduar
-								OnUpdate = [[function(t)
-									if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
-										t.u = ]] .. REMOVED_FROM_GAME .. [[;
-										t.rwp = nil;
-									else
-										t.u = nil;
-										t.rwp = 30200;
-									end
-								end]],
+								OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_THREE, 30200),
 							}),
 							-- #endif
 							ach(3005, {	-- He Feeds On Your Tears (25 player)
@@ -1907,15 +1883,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						groups = {
 							-- #if ANYCLASSIC
 							ach(17340, {	-- Ahead of the Curve: Yogg-Saron
-								OnUpdate = [[function(t)
-									if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
-										t.u = ]] .. REMOVED_FROM_GAME .. [[;
-										t.rwp = nil;
-									else
-										t.u = nil;
-										t.rwp = 30200;
-									end
-								end]],
+								OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_THREE, 30200),
 							}),
 							-- #endif
 							revampAch(3164, {	-- Alone in the Darkness (25 player)
@@ -2405,15 +2373,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					groups = {
 						-- #if ANYCLASSIC
 						ach(17341, {	-- Cutting Edge: Ulduar
-							OnUpdate = [[function(t)
-								if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
-									t.u = ]] .. REMOVED_FROM_GAME .. [[;
-									t.rwp = nil;
-								else
-									t.u = nil;
-									t.rwp = 30200;
-								end
-							end]],
+							OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_THREE, 30200),
 						}),
 						-- #endif
 						ach(5020, {	-- Observed - Guild Edition
@@ -2860,15 +2820,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					groups = {
 						-- #if ANYCLASSIC
 						ach(17340, {	-- Ahead of the Curve: Yogg-Saron
-							OnUpdate = [[function(t)
-								if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
-									t.u = ]] .. REMOVED_FROM_GAME .. [[;
-									t.rwp = nil;
-								else
-									t.u = nil;
-									t.rwp = 30200;
-								end
-							end]],
+							OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_THREE, 30200),
 						}),
 						-- #endif
 						ach(12388, {	-- Alone in the Darkness

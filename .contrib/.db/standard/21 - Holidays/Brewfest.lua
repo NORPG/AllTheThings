@@ -185,15 +185,7 @@ end]];
 
 -- #if ANYCLASSIC
 -- The 353 ilvl gear was added for Brewfest 2024 in Cataclysm Classic
-local BREWFEST_2024_OnUpdate = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_HOUR_OF_TWILIGHT .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		t.rwp = 40300;
-	end
-end]];
+local BREWFEST_2024_OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(CATA_PHASE_HOUR_OF_TWILIGHT, 40300);
 -- #endif
 
 -- Helper functions for the filled steins

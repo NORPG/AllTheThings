@@ -1442,15 +1442,7 @@ root(ROOTS.HiddenQuestTriggers, {
 
 -- Bloodied Crafted Gear was added with Cataclysm and then removed from the game after Firelands was released.
 -- #if ANYCLASSIC
-local BLOODIED_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_RAGE_OF_THE_FIRELANDS .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		t.rwp = 40200;
-	end
-end]];
+local BLOODIED_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, 40200);
 -- #endif
 local function bloodied(t)
 	-- #if CATA

@@ -215,15 +215,7 @@ local COALESCED_TURMOIL = i(105714, {	-- Coalesced Turmoil
 });
 
 -- #if MOP
-local CUTTING_EDGE_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. WOD_PHASE_ONE .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		t.rwp = 60002;
-	end
-end]];
+local CUTTING_EDGE_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WOD_PHASE_ONE, 60002);
 -- #endif
 
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {

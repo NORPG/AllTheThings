@@ -5,15 +5,7 @@
 -- Blizzard removed the 10 man Quest / Quest Item, but not the necks themselves in Wrath Classic.
 -- They were instead moved to Heroic+ dungeon bosses.
 -- #if ANYCLASSIC
-local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		t.rwp = 30100;
-	end
-end]];
+local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_TWO, 30100);
 ExportDB.OnUpdateDB.DEDICATED_10M = [[~function(t)
 	rawset(t, "collectible", nil);
 	if _.MODE_DEBUG_OR_ACCOUNT then

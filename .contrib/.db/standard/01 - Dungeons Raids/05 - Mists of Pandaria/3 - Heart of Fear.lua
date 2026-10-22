@@ -57,15 +57,7 @@ local TOKENS = {
 };
 
 -- #if MOP
-local CUTTING_EDGE_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_RISE_OF_THE_THUNDER_KING .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		t.rwp = 50200;
-	end
-end]];
+local CUTTING_EDGE_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, 50200);
 -- #endif
 
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {

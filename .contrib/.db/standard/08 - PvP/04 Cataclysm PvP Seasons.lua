@@ -23,33 +23,9 @@ local function MarkOfWHOOOWHATNow(t)
 end
 
 -- #if ANYCLASSIC
-local VICIOUS_ELITE_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_RAGE_OF_THE_FIRELANDS .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		t.rwp = 40200;
-	end
-end]];
-local RUTHLESS_ELITE_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_HOUR_OF_TWILIGHT .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		t.rwp = 40300;
-	end
-end]];
-local CATACLYSMIC_ELITE_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_ONE .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = nil;
-		t.rwp = 50004;
-	end
-end]];
+local VICIOUS_ELITE_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, 40200);
+local RUTHLESS_ELITE_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(CATA_PHASE_HOUR_OF_TWILIGHT, 40300);
+local CATACLYSMIC_ELITE_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(MOP_PHASE_ONE, 50004);
 -- #endif
 
 root(ROOTS.PVP, {
