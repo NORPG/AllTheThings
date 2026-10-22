@@ -3,8 +3,6 @@
 -----------------------------------------------------
 
 --[=[
-local TOME_OF_POLYMORPH_TURTLE = i(22739);
-
 root(ROOTS.Instances, {
 	inst(76, {	-- Zul'Gurub
 		lore = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
@@ -1223,7 +1221,7 @@ root(ROOTS.Instances, {
 					i(19946),	-- Tigule's Harpoon
 					i(19945),	-- Foror's Eyepatch
 					i(19947),	-- Nat Pagle's Broken Reel
-					TOME_OF_POLYMORPH_TURTLE,
+					i(22739),	-- Tome of Polymorph: Turtle
 				},
 			}),
 			n(14515, {	-- High Priestess Arlokk
@@ -1272,7 +1270,4 @@ root(ROOTS.Instances, {
 		},
 	}),
 });
-
--- The tome was added to Cataclysm Fishing Pools after being removed from ZG.
-TOME_OF_POLYMORPH_TURTLE.timeline = nil;
 --]=]

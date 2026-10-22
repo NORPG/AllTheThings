@@ -2570,6 +2570,3 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 		},
 	})),
 })));
-
--- The tome was added to Cataclysm Fishing Pools after being removed from ZG.
-TOME_OF_POLYMORPH_TURTLE.timeline = nil;
