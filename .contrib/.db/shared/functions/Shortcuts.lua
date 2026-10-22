@@ -2043,7 +2043,7 @@ expansion = function(id, patch, t)						-- Create an EXPANSION Object
 			t.timeline = { "added " .. math.floor(id) ..".".. patchstring }
 		else
 			local deftimeline = EXPANSION_DEFAULT_TIMELINES[id]
-			t._defaulttimeline = { deftimeline } or { "added " .. math.floor(id) .. ".0" }
+			t.timeline = { deftimeline } or { "added " .. math.floor(id) .. ".0" }
 		end
 	end
 	return t;
@@ -2417,7 +2417,7 @@ molemachine = function(questID, explorationID, t)		-- Create a MOLE MACHINE Ques
 			t.icon = 1786409;
 		end
 		if not t.timeline then
-			t._defaulttimeline = { ADDED_8_0_1 };
+			t.timeline = { ADDED_8_0_1 };
 		end
 		if not t.races then
 			t.races = { DARKIRON };
