@@ -2,11 +2,11 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
-		ach(19458, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {	-- A World Awoken
+		ach(19458, bubbleDownSelf({ timeline = { ADDED_10_2_6 } }, {	-- A World Awoken
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				18160,	-- Aberrus, the Shadowed Crucible
 				19486,	-- Across the Isles
 				19331,	-- Amirdrassil, the Dream's Hope
@@ -22,16 +22,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				16343,	-- Vault of the Incarnates
 				17543,	-- You Know How to Reach Me
 			}},
-			["groups"] = {
+			groups = {
 				i(210142),	-- Good Boy's Leash (MOUNT!)
 				i(248124, {	-- The Great Hoard (DECOR!)
-					["timeline"] = { ADDED_11_2_7 },
+					timeline = { ADDED_11_2_7 },
 				}),
 			},
 		})),
-		ach(19486, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {	-- Across the Isles
+		ach(19486, bubbleDownSelf({ timeline = { ADDED_10_2_6 } }, {	-- Across the Isles
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				19482,	-- Army of the Fed
 				19481,	-- Centaur of Attention
 				19485,	-- Closing Time
@@ -42,20 +42,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				18867,	-- Through the Ashes and Flames
 				19479,	-- Wake Me Up
 			}},
-			["groups"] = {
+			groups = {
 				i(192751),	-- Stormtouched Bruffalon (MOUNT!)
 			},
 		})),
 		ach(17119, {	-- Deep Cuts From the Vault
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				16353,	-- Mythic: Raszageth the Storm-Eater
 				16650,	-- Dragonflight Keystone Hero: Season One
 				15984,	-- Elite: Dragonflight Season 1
 			}},
-			["groups"] = {
+			groups = {
 				iensemble(202047, {	-- Gleaming Incarnate Thunderstone (CI!)
-					--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894 }, {
+					--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894 }, {
 						cl(DEATHKNIGHT, {
 							i(200408),	-- Maw of the Haunted Frostbrood
 							i(200410),	-- Jaws of the Haunted Frostbrood
@@ -108,7 +108,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(200428),	-- Peaks of the Walking Mountain
 						}),
 					})),
-					d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895 }, {
+					d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895 }, {
 						cl(DEATHKNIGHT, {
 							i(200408),	-- Maw of the Haunted Frostbrood
 							i(200410),	-- Jaws of the Haunted Frostbrood
@@ -161,7 +161,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(200428),	-- Peaks of the Walking Mountain
 						}),
 					})),
-					d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896 }, {
+					d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896 }, {
 						cl(DEATHKNIGHT, {
 							i(200408),	-- Maw of the Haunted Frostbrood
 							i(200410),	-- Jaws of the Haunted Frostbrood
@@ -214,7 +214,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(200428),	-- Peaks of the Walking Mountain
 						}),
 					})),
-					d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897 }, {
+					d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897 }, {
 						cl(DEATHKNIGHT, {
 							i(200408),	-- Maw of the Haunted Frostbrood
 							i(200410),	-- Jaws of the Haunted Frostbrood
@@ -267,7 +267,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(200428),	-- Peaks of the Walking Mountain
 						}),
 					})),
-					n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+					n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 						cl(DEATHKNIGHT, {
 							i(200408),	-- Maw of the Haunted Frostbrood
 							i(200410),	-- Jaws of the Haunted Frostbrood
@@ -320,7 +320,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(200428),	-- Peaks of the Walking Mountain
 						}),
 					})),
-					n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+					n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 						cl(DEATHKNIGHT, {
 							i(200408),	-- Maw of the Haunted Frostbrood
 							i(200410),	-- Jaws of the Haunted Frostbrood
@@ -376,27 +376,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			},
 		}),
-		ach(18027, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_11_0_0 } }, {	-- Dragonflight Season 2 Master
+		ach(18027, bubbleDownSelf({ timeline = { ADDED_10_1_0, REMOVED_11_0_0 } }, {	-- Dragonflight Season 2 Master
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				18161,	-- Heroic: Aberrus, the Shadowed Crucible
 				17844,	-- Dragonflight Keystone Master: Season Two
 				17798,	-- Challenger II: Dragonflight Season 2
 			}},
-			["groups"] = {
+			groups = {
 				i(204843),	-- Draconic Mark of Mastery
 			},
 		})),
-		ach(18380, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Dragonflight Season 2 Hero
+		ach(18380, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Dragonflight Season 2 Hero
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				18159,	-- Mythic: Scalecommander Sarkareth
 				17845,	-- Dragonflight Keystone Hero: Season Two
 				17831,	-- Elite: Dragonflight Season 2
 			}},
-			["groups"] = {
+			groups = {
 				iensemble(205878, {	-- Obsidian Aspectral Earthstone (CI!)
-					--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+					--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 						cl(DEATHKNIGHT, {
 							i(202461),	-- Lingering Phantom's Dreadhorns
 							i(202459),	-- Lingering Phantom's Shoulderplates
@@ -449,7 +449,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(202443),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
-					d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+					d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 						cl(DEATHKNIGHT, {
 							i(202461),	-- Lingering Phantom's Dreadhorns
 							i(202459),	-- Lingering Phantom's Shoulderplates
@@ -502,7 +502,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(202443),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
-					d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+					d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 						cl(DEATHKNIGHT, {
 							i(202461),	-- Lingering Phantom's Dreadhorns
 							i(202459),	-- Lingering Phantom's Shoulderplates
@@ -555,7 +555,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(202443),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
-					d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+					d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 						cl(DEATHKNIGHT, {
 							i(202461),	-- Lingering Phantom's Dreadhorns
 							i(202459),	-- Lingering Phantom's Shoulderplates
@@ -608,7 +608,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(202443),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
-					n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+					n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 						cl(DEATHKNIGHT, {
 							i(202461),	-- Lingering Phantom's Dreadhorns
 							i(202459),	-- Lingering Phantom's Shoulderplates
@@ -661,7 +661,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(202443),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
-					n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+					n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 						cl(DEATHKNIGHT, {
 							i(202461),	-- Lingering Phantom's Dreadhorns
 							i(202459),	-- Lingering Phantom's Shoulderplates
@@ -717,27 +717,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			},
 		})),
-		ach(19396, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_11_0_0 } }, {	-- Dragonflight Season 3 Master
+		ach(19396, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_11_0_0 } }, {	-- Dragonflight Season 3 Master
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				19333,	-- Heroic: Amirdrassil, the Dream's Hope
 				19011,	-- Dragonflight Keystone Master: Season Three
 				19160,	-- Challenger II: Dragonflight Season 3
 			}},
-			["groups"] = {
+			groups = {
 				i(210944),	-- Emerald Mark of Mastery
 			},
 		})),
-		ach(19420, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Dragonflight Season 3 Hero
+		ach(19420, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Dragonflight Season 3 Hero
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				19343,	-- Mythic: Fyrakk the Blazing
 				19012,	-- Dragonflight Keystone Hero: Season Three
 				19090,	-- Elite: Dragonflight Season 3
 			}},
-			["groups"] = {
+			groups = {
 				iensemble(210468, {	-- Emerald Blossom Dreamstone (CI!)
-					--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+					--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6896, modID = 0, }, {
 						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
 							i(207200),	-- Piercing Gaze of the Risen Nightmare
 							i(207198),	-- Skewers of the Risen Nightmare
@@ -788,7 +788,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(207180),	-- Molten Vanguard's Shouldervents
 						}),
 					})),
-					d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+					d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6894, modID = 0, }, {
 						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
 							i(207200),	-- Piercing Gaze of the Risen Nightmare
 							i(207198),	-- Skewers of the Risen Nightmare
@@ -839,7 +839,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(207180),	-- Molten Vanguard's Shouldervents
 						}),
 					})),
-					d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+					d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
 							i(207200),	-- Piercing Gaze of the Risen Nightmare
 							i(207198),	-- Skewers of the Risen Nightmare
@@ -890,7 +890,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(207180),	-- Molten Vanguard's Shouldervents
 						}),
 					})),
-					d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+					d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6895, modID = 0, }, {
 						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
 							i(207200),	-- Piercing Gaze of the Risen Nightmare
 							i(207198),	-- Skewers of the Risen Nightmare
@@ -941,7 +941,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(207180),	-- Molten Vanguard's Shouldervents
 						}),
 					})),
-					n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+					n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
 							i(207200),	-- Piercing Gaze of the Risen Nightmare
 							i(207198),	-- Skewers of the Risen Nightmare
@@ -992,7 +992,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(207180),	-- Molten Vanguard's Shouldervents
 						}),
 					})),
-					n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+					n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
 							i(207200),	-- Piercing Gaze of the Risen Nightmare
 							i(207198),	-- Skewers of the Risen Nightmare
@@ -1046,51 +1046,51 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			},
 		})),
-		ach(20481, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Dragonflight Season 4 Master
+		ach(20481, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Dragonflight Season 4 Master
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				19499,	-- Challenger II: Dragonflight Season 4
 				19782,	-- Dragonflight Keystone Master: Season Four
 				19571,	-- Heroic: Awakened Flames
 				19568,	-- Heroic: Awakened Shadows
 				19565,	-- Heroic: Awakened Storms
 			}},
-			["groups"] = {
+			groups = {
 				i(217410),	-- Awakened Mark of Mastery
 			},
 		})),
 		ach(19326, {	-- Dreaming of Drakes
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+			timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 		}),
 		ach(19397, {	-- Dreaming of Wyrms
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+			timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 		}),
 		ach(19398, {	-- Dreaming of the Aspects
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+			timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 		}),
 		ach(16808, {	-- Friend of the Dragon Isles
 			crit(57032, {	-- A Mystery, Sealed
-				["_quests"] = { 66128 },	-- Next Steps
+				_quests = { 66128 },	-- Next Steps
 			}),
 			crit(57033, {	-- In the Halls of Titans
-				["_quests"] = { 66547 },	-- It Belongs in a Museum... Eventually
+				_quests = { 66547 },	-- It Belongs in a Museum... Eventually
 			}),
 			crit(57035, {	-- Garden of Secrets
-				["_quests"] = { 66191 },	-- And Yet So Far
+				_quests = { 66191 },	-- And Yet So Far
 			}),
 			crit(57036, {	-- The Dreamer
-				["_quests"] = { 66402 },	-- Like Mother, Like Daughter
+				_quests = { 66402 },	-- Like Mother, Like Daughter
 			}),
 			crit(57034, {	-- The Chieftain's Duty
-				["_quests"] = { 66444 },	-- While the Iron Is Hot
+				_quests = { 66444 },	-- While the Iron Is Hot
 			}),
 			crit(57037, {	-- The Silver Purpose
-				["_quests"] = { 67084 },	-- The Silver Purpose
+				_quests = { 67084 },	-- The Silver Purpose
 			}),
 		}),
-		ach(18804, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Neltharion's Legacy
+		ach(18804, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Neltharion's Legacy
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				17773,	-- A Blue Dawn
 				18160,	-- Aberrus, the Shadowed Crucible
 				18703,	-- Dawn of the Infinite: Galakrond's Fall
@@ -1101,66 +1101,66 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				17785,	-- Que Zara(lek), Zara(lek)
 				18867,	-- Through the Ashes and Flames
 			}},
-			["groups"] = {
+			groups = {
 				iensemble(208551, {	-- Ambrosial Sporestone (CI!)
 					--[[filter(CLOTH, {
-						i(207927,{["bonusID"] = 6894,}),	-- Crown of the Infinite Lord
-						i(204786,{["bonusID"] = 6895,}),	-- Suffused Cowl
-						i(205061,{["bonusID"] = 6896,}),	-- Zaralek Surveyor's Cowl
-						i(207598,{["bonusID"] = 6897,}),	-- Anachronistic Hood
-						i(204923,{["bonusID"] = 6898,}),	-- Moonless Hood
-						i(204584,{["bonusID"] = 8107,}),	-- Endowed Hood
-						i(208503,{["bonusID"] = 6894,}),	-- Infinite Zealot's Mantle
-						i(204758,{["bonusID"] = 6895,}),	-- Suffused Shoulderpads
-						i(205089,{["bonusID"] = 6896,}),	-- Zaralek Surveyor's Shoulderpads
-						i(207600,{["bonusID"] = 6897,}),	-- Anachronistic Mantle
-						i(204925,{["bonusID"] = 6898,}),	-- Moonless Shoulderpads
-						i(204586,{["bonusID"] = 8107,}),	-- Endowed Mantle
+						i(207927,{bonusID = 6894,}),	-- Crown of the Infinite Lord
+						i(204786,{bonusID = 6895,}),	-- Suffused Cowl
+						i(205061,{bonusID = 6896,}),	-- Zaralek Surveyor's Cowl
+						i(207598,{bonusID = 6897,}),	-- Anachronistic Hood
+						i(204923,{bonusID = 6898,}),	-- Moonless Hood
+						i(204584,{bonusID = 8107,}),	-- Endowed Hood
+						i(208503,{bonusID = 6894,}),	-- Infinite Zealot's Mantle
+						i(204758,{bonusID = 6895,}),	-- Suffused Shoulderpads
+						i(205089,{bonusID = 6896,}),	-- Zaralek Surveyor's Shoulderpads
+						i(207600,{bonusID = 6897,}),	-- Anachronistic Mantle
+						i(204925,{bonusID = 6898,}),	-- Moonless Shoulderpads
+						i(204586,{bonusID = 8107,}),	-- Endowed Mantle
 					}),
 					filter(LEATHER, {
-						i(207936,{["bonusID"] = 6894,}),	-- Hood of Perpetual Conflict
-						i(204780,{["bonusID"] = 6895,}),	-- Suffused Helm
-						i(205067,{["bonusID"] = 6896,}),	-- Zaralek Surveyor's Helm
-						i(207606,{["bonusID"] = 6897,}),	-- Mask of Discontinuity
-						i(204931,{["bonusID"] = 6898,}),	-- Sunless Cowl
-						i(204592,{["bonusID"] = 8107,}),	-- Inherited Mask
+						i(207936,{bonusID = 6894,}),	-- Hood of Perpetual Conflict
+						i(204780,{bonusID = 6895,}),	-- Suffused Helm
+						i(205067,{bonusID = 6896,}),	-- Zaralek Surveyor's Helm
+						i(207606,{bonusID = 6897,}),	-- Mask of Discontinuity
+						i(204931,{bonusID = 6898,}),	-- Sunless Cowl
+						i(204592,{bonusID = 8107,}),	-- Inherited Mask
 						-- no shoulders for leather
 					}),
 					filter(MAIL, {
-						i(208521,{["bonusID"] = 6894,}),	-- Infinite Soldier's Cowl
-						i(204773,{["bonusID"] = 6895,}),	-- Suffused Coif
-						i(205074,{["bonusID"] = 6896,}),	-- Zaralek Surveyor's Coif
-						i(207614,{["bonusID"] = 6897,}),	-- Paradoxical Cowl
-						i(204940,{["bonusID"] = 6898,}),	-- Skyless Coif
-						i(204600,{["bonusID"] = 8107,}),	-- Bequeathed Cowl
-						i(207945,{["bonusID"] = 6894,}),	-- Chrono-Lord's Wingspan
-						i(204771,{["bonusID"] = 6895,}),	-- Suffused Shoulderguards
-						i(205076,{["bonusID"] = 6896,}),	-- Zaralek Surveyor's Shoulderguards
-						i(207616,{["bonusID"] = 6897,}),	-- Paradoxical Spaulders
-						i(204942,{["bonusID"] = 6898,}),	-- Skyless Epaulets
-						i(204602,{["bonusID"] = 8107,}),	-- Bequeathed Spaulders
+						i(208521,{bonusID = 6894,}),	-- Infinite Soldier's Cowl
+						i(204773,{bonusID = 6895,}),	-- Suffused Coif
+						i(205074,{bonusID = 6896,}),	-- Zaralek Surveyor's Coif
+						i(207614,{bonusID = 6897,}),	-- Paradoxical Cowl
+						i(204940,{bonusID = 6898,}),	-- Skyless Coif
+						i(204600,{bonusID = 8107,}),	-- Bequeathed Cowl
+						i(207945,{bonusID = 6894,}),	-- Chrono-Lord's Wingspan
+						i(204771,{bonusID = 6895,}),	-- Suffused Shoulderguards
+						i(205076,{bonusID = 6896,}),	-- Zaralek Surveyor's Shoulderguards
+						i(207616,{bonusID = 6897,}),	-- Paradoxical Spaulders
+						i(204942,{bonusID = 6898,}),	-- Skyless Epaulets
+						i(204602,{bonusID = 8107,}),	-- Bequeathed Spaulders
 					}),
 					filter(PLATE, {
-						i(208529,{["bonusID"] = 6894,}),	-- Infinite Vanguard's Greathelm
-						i(204768,{["bonusID"] = 6895,}),	-- Suffused Helm
-						i(205079,{["bonusID"] = 6896,}),	-- Zaralek Surveyor's Helm
-						i(207622,{["bonusID"] = 6897,}),	-- Anomalous Greathelm
-						i(204948,{["bonusID"] = 6898,}),	-- Starless Fullhelm
-						i(204608,{["bonusID"] = 8107,}),	-- Bestowed Greathelm
-						i(208531,{["bonusID"] = 6894,}),	-- Infinite Vanguard's Pauldrons
-						i(204763,{["bonusID"] = 6895,}),	-- Suffused Mantle
-						i(205084,{["bonusID"] = 6896,}),	-- Zaralek Surveyor's Mantle
-						i(207624,{["bonusID"] = 6897,}),	-- Anomalous Pauldrons
-						i(204950,{["bonusID"] = 6898,}),	-- Starless Mantle
-						i(204610,{["bonusID"] = 8107,}),	-- Bestowed Pauldrons
+						i(208529,{bonusID = 6894,}),	-- Infinite Vanguard's Greathelm
+						i(204768,{bonusID = 6895,}),	-- Suffused Helm
+						i(205079,{bonusID = 6896,}),	-- Zaralek Surveyor's Helm
+						i(207622,{bonusID = 6897,}),	-- Anomalous Greathelm
+						i(204948,{bonusID = 6898,}),	-- Starless Fullhelm
+						i(204608,{bonusID = 8107,}),	-- Bestowed Greathelm
+						i(208531,{bonusID = 6894,}),	-- Infinite Vanguard's Pauldrons
+						i(204763,{bonusID = 6895,}),	-- Suffused Mantle
+						i(205084,{bonusID = 6896,}),	-- Zaralek Surveyor's Mantle
+						i(207624,{bonusID = 6897,}),	-- Anomalous Pauldrons
+						i(204950,{bonusID = 6898,}),	-- Starless Mantle
+						i(204610,{bonusID = 8107,}),	-- Bestowed Pauldrons
 					}),--]]
 				}),
 			},
 		})),
 		ach(19466, {	-- Oh My God, They Were Clutchmates
-			["timeline"] = { ADDED_10_2_6 },
+			timeline = { ADDED_10_2_6 },
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				18615,	-- Legend of the Multiverse
 				16539,	-- In High Esteem
 				16494,	-- Loyalty to the Prince
@@ -1186,37 +1186,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		}),
 		ach(16549, {	-- Popular Around the Isles
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				16522,	-- A True Explorer
 				16530,	-- Ally of the Flights
 				16529,	-- Joining the Community
 				16528,	-- Joining the Khansguard
 			}},
-			["timeline"] = { REMOVED_11_0_7 }
+			timeline = { REMOVED_11_0_7 }
 		}),
 		ach(41179, {	-- Popular Around the Isles
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				41174,	-- A True Explorer
 				41182,	-- Ally of the Flights
 				41181,	-- Joining the Community
 				41180,	-- Joining the Khansguard
 			}},
-			["timeline"] = { ADDED_11_0_7 }
+			timeline = { ADDED_11_0_7 }
 		}),
-		ach(17978, { ["timeline"] = { REMOVED_TWW_LAUNCH } }),	-- Stones Can Fly!
-		ach(17977, { ["timeline"] = { REMOVED_TWW_LAUNCH } }),	-- Stones Can Try To Fly!
+		ach(17978, { timeline = { REMOVED_TWW_LAUNCH } }),	-- Stones Can Fly!
+		ach(17977, { timeline = { REMOVED_TWW_LAUNCH } }),	-- Stones Can Try To Fly!
 		ach(17830, {	-- Stones Can't Fly!
-			["timeline"] = { REMOVED_TWW_LAUNCH },
-			["groups"] = {
+			timeline = { REMOVED_TWW_LAUNCH },
+			groups = {
 				i(204195, {	-- Drake's Shadowflame Crest
-					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+					timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
 				}),
 				i(210770, {	-- Satchel of Drake's Dreaming Crests
-					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+					timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 				}),
 				i(211952, {	-- Satchel of Drake's Awakened Crests
-					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				}),
 			},
 		}),

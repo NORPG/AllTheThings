@@ -7,11 +7,11 @@ root(ROOTS.Zones, {
 	m(NORTHREND, {
 		m(1602, {	-- Icecrown (DK starting zone)
 			n(QUESTS, {
-				q(58877, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {	-- Death's Power Grows
-					["qg"] = 163016,	-- The Lich King
-					["coord"] = { 49.5, 90.7, 1602 },
-					["classes"] = { DEATHKNIGHT },
-					["groups"] = {
+				q(58877, bubbleDown({ timeline = { ADDED_8_3_0 } }, {	-- Death's Power Grows
+					qg = 163016,	-- The Lich King
+					coord = { 49.5, 90.7, 1602 },
+					classes = { DEATHKNIGHT },
+					groups = {
 						i(174485),	-- Burning Greatsword of the Ebon Blade
 						i(174662),	-- Burning Saber of the Ebon Blade
 						i(174486),	-- Crimson Greatsword of the Ebon Blade
@@ -23,33 +23,33 @@ root(ROOTS.Zones, {
 					},
 				})),
 				q(58902, {	-- Defender of Azeroth (A)
-					["sourceQuest"] = 58877,	-- Death's Power Grows
-					["qg"] = 163016,	-- The Lich King
-					["coord"] = { 49.5, 90.7, 1602 },
-					["timeline"] = { ADDED_8_3_0 },
-					["classes"] = { DEATHKNIGHT },
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 58877,	-- Death's Power Grows
+					qg = 163016,	-- The Lich King
+					coord = { 49.5, 90.7, 1602 },
+					timeline = { ADDED_8_3_0 },
+					classes = { DEATHKNIGHT },
+					races = ALLIANCE_ONLY,
 				}),
 				q(58903, {	-- Defender of Azeroth (H)
-					["sourceQuest"] = 58877,	-- Death's Power Grows
-					["qg"] = 163016,	-- The Lich King
-					["coord"] = { 49.5, 90.7, 1602 },
-					["timeline"] = { ADDED_8_3_0 },
-					["classes"] = { DEATHKNIGHT },
-					["races"] = HORDE_ONLY,
+					sourceQuest = 58877,	-- Death's Power Grows
+					qg = 163016,	-- The Lich King
+					coord = { 49.5, 90.7, 1602 },
+					timeline = { ADDED_8_3_0 },
+					classes = { DEATHKNIGHT },
+					races = HORDE_ONLY,
 				}),
 				q(58989, {	-- Runeforging 101
-					["description"] = "Use your Death Gate after finishing previous quest, Darion will be in Acherus.",
-					["qgs"] = {
+					description = "Use your Death Gate after finishing previous quest, Darion will be in Acherus.",
+					qgs = {
 						29246,	-- Highlord Darion Morgraine
 						93437,	-- Highlord Darion Morgraine
 					},
-					["coords"] = {
+					coords = {
 						{ 82.0, 46.3, EASTERN_PLAGUELANDS },
 						{ 50.7, 50.4, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 					},
-					["timeline"] = { ADDED_8_3_0 },
-					["classes"] = { DEATHKNIGHT },
+					timeline = { ADDED_8_3_0 },
+					classes = { DEATHKNIGHT },
 				}),
 			}),
 		}),

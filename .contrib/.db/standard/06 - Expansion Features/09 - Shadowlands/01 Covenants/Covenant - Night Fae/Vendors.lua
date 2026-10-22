@@ -3,27 +3,27 @@
 -------------------------------------------------------------------
 
 local MEMORY_OF_A_VITAL_SACRIFICE = i(183249, {	-- Memory of a Vital Sacrifice
-	["cost"] = { { "c", ANIMA, 250 } },
+	cost = { { "c", ANIMA, 250 } },
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(REWARDS, {
 			i(183702, {	-- Nature's Splendor
-				["description"] = "Only Obtainable from Niya Soulbind.",
+				description = "Only Obtainable from Niya Soulbind.",
 			}),
 		}),
 		n(VENDORS, {
 			n(COMMON_VENDOR_ITEMS, {	-- LFR/Normal/Heroic Weapons
-				["crs"] = {
+				crs = {
 					175413,	-- Sparklebreeze <Raid Finder Nathrian Weaponsmith>
 					175414,	-- Adera <Normal Nathrian Weaponsmith>
 					175415,	-- Harkoth <Heroic Nathrian Weaponsmith>
 				},
-				["groups"] = {
+				groups = {
 					-- Lazily copied since parser handles merging anyway
 					i(179544, {	-- Ashcarved Sledgehammer
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -31,7 +31,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179557, {	-- Baron's Oaken Scepter
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -39,13 +39,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179611, {	-- Bulwark of the Unbowed
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,83), 1 },	-- LFR Apogee Anima Bead - 194
 							{ "i", modItemId(183894,83), 1 },	-- LFR Thaumaturgic Anima Bead - 194
 						},
 					}),
 					i(179541, {	-- Colossal Sludgepounder
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -53,7 +53,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180260, {	-- Deathdancer's Warglaive
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -61,13 +61,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179610, {	-- Dredge-Giant's Warshield
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,04), 1 },	-- LFR Apogee Anima Bead - 187
 							{ "i", modItemId(183889,04), 1 },	-- LFR Thaumaturgic Anima Bead - 187
 						},
 					}),
 					i(180258, {	-- Faeweald Fleshrender
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -75,7 +75,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179497, {	-- Fang of the Winged Sentry
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -83,7 +83,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179527, {	-- Gargon-Tamer's Spear
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -91,13 +91,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179570, {	-- Harp of the Sanguine Courts
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,04), 1 },	-- LFR Apogee Anima Bead - 187
 							{ "i", modItemId(183889,04), 1 },	-- LFR Thaumaturgic Anima Bead - 187
 						},
 					}),
 					i(180073, {	-- Heartstalker's Longbow
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -105,7 +105,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179579, {	-- Jaws of the Hungerer
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -113,7 +113,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179492, {	-- Keepcrawler's Gutripper
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -121,13 +121,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179566, {	-- Lyre of Decadent Frivolity
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,83), 1 },	-- LFR Apogee Anima Bead - 194
 							{ "i", modItemId(183894,83), 1 },	-- LFR Thaumaturgic Anima Bead - 194
 						},
 					}),
 					i(182351, {	-- Mace of the Unburdened
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -135,7 +135,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179530, {	-- Nightwatch Eviscerator
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -143,7 +143,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180022, {	-- Rootbulb of the Sinless
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -151,7 +151,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179561, {	-- Rootspinner's Bloodbough
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -159,7 +159,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180071, {	-- Shrieking Sinseeker
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -167,7 +167,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180002, {	-- Spire of the Long Dark
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -175,7 +175,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180000, {	-- Staff of the Penitent
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -183,7 +183,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184241, {	-- Stone-Sentinel Breaker
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -191,7 +191,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179577, {	-- Stonesnap Mandibles
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -199,7 +199,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180023, {	-- Wand of Arboreal Artifice
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -207,7 +207,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179544, {	-- Ashcarved Sledgehammer
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -215,7 +215,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179557, {	-- Baron's Oaken Scepter
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -223,13 +223,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179611, {	-- Bulwark of the Unbowed
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,82), 1 },	-- Normal Apogee Anima Bead - 207
 							{ "i", modItemId(183894,82), 1 },	-- Normal Thaumaturgic Anima Bead - 207
 						},
 					}),
 					i(179541, {	-- Colossal Sludgepounder
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -237,7 +237,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180260, {	-- Deathdancer's Warglaive
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -245,13 +245,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179610, {	-- Dredge-Giant's Warshield
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,03), 1 },	-- Normal Apogee Anima Bead - 200
 							{ "i", modItemId(183889,03), 1 },	-- Normal Thaumaturgic Anima Bead - 200
 						},
 					}),
 					i(180258, {	-- Faeweald Fleshrender
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -259,7 +259,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179497, {	-- Fang of the Winged Sentry
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -267,7 +267,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179527, {	-- Gargon-Tamer's Spear
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -275,13 +275,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179570, {	-- Harp of the Sanguine Courts
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,03), 1 },	-- Normal Apogee Anima Bead - 200
 							{ "i", modItemId(183889,03), 1 },	-- Normal Thaumaturgic Anima Bead - 200
 						},
 					}),
 					i(180073, {	-- Heartstalker's Longbow
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -289,7 +289,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179579, {	-- Jaws of the Hungerer
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -297,7 +297,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179492, {	-- Keepcrawler's Gutripper
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -305,13 +305,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179566, {	-- Lyre of Decadent Frivolity
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,82), 1 },	-- Normal Apogee Anima Bead - 207
 							{ "i", modItemId(183894,82), 1 },	-- Normal Thaumaturgic Anima Bead - 207
 						},
 					}),
 					i(182351, {	-- Mace of the Unburdened
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -319,7 +319,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179530, {	-- Nightwatch Eviscerator
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -327,7 +327,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180022, {	-- Rootbulb of the Sinless
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -335,7 +335,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179561, {	-- Rootspinner's Bloodbough
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -343,7 +343,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180071, {	-- Shrieking Sinseeker
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -351,7 +351,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180002, {	-- Spire of the Long Dark
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -359,7 +359,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180000, {	-- Staff of the Penitent
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -367,7 +367,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184241, {	-- Stone-Sentinel Breaker
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -375,7 +375,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179577, {	-- Stonesnap Mandibles
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -383,7 +383,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180023, {	-- Wand of Arboreal Artifice
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -391,7 +391,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179544, {	-- Ashcarved Sledgehammer
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -399,7 +399,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179557, {	-- Baron's Oaken Scepter
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -407,13 +407,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179611, {	-- Bulwark of the Unbowed
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,84), 1 },	-- Heroic Apogee Anima Bead - 220
 							{ "i", modItemId(183894,84), 1 },	-- Heroic Thaumaturgic Anima Bead - 220
 						},
 					}),
 					i(179541, {	-- Colossal Sludgepounder
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -421,7 +421,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180260, {	-- Deathdancer's Warglaive
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -429,13 +429,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179610, {	-- Dredge-Giant's Warshield
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,05), 1 },	-- Heroic Apogee Anima Bead - 213
 							{ "i", modItemId(183889,05), 1 },	-- Heroic Thaumaturgic Anima Bead - 213
 						},
 					}),
 					i(180258, {	-- Faeweald Fleshrender
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -443,7 +443,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179497, {	-- Fang of the Winged Sentry
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -451,7 +451,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179527, {	-- Gargon-Tamer's Spear
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -459,13 +459,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179570, {	-- Harp of the Sanguine Courts
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,05), 1 },	-- Heroic Apogee Anima Bead - 213
 							{ "i", modItemId(183889,05), 1 },	-- Heroic Thaumaturgic Anima Bead - 213
 						},
 					}),
 					i(180073, {	-- Heartstalker's Longbow
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -473,7 +473,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179579, {	-- Jaws of the Hungerer
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -481,7 +481,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179492, {	-- Keepcrawler's Gutripper
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -489,13 +489,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179566, {	-- Lyre of Decadent Frivolity
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,84), 1 },	-- Heroic Apogee Anima Bead - 220
 							{ "i", modItemId(183894,84), 1 },	-- Heroic Thaumaturgic Anima Bead - 220
 						},
 					}),
 					i(182351, {	-- Mace of the Unburdened
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -503,7 +503,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179530, {	-- Nightwatch Eviscerator
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -511,7 +511,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180022, {	-- Rootbulb of the Sinless
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -519,7 +519,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179561, {	-- Rootspinner's Bloodbough
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -527,7 +527,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180071, {	-- Shrieking Sinseeker
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -535,7 +535,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180002, {	-- Spire of the Long Dark
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -543,7 +543,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180000, {	-- Staff of the Penitent
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -551,7 +551,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184241, {	-- Stone-Sentinel Breaker
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -559,7 +559,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179577, {	-- Stonesnap Mandibles
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -567,7 +567,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180023, {	-- Wand of Arboreal Artifice
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -577,372 +577,372 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			n(175414, {	-- Adera <Normal Nathrian Weaponsmith>
-				["coord"] = { 48.1, 53.5, THE_ROOTS },
+				coord = { 48.1, 53.5, THE_ROOTS },
 			}),
 			n(174914, {	-- Elwyn <Renown Quartermaster>
-				["coord"] = { 60.2, 33.2, THE_TRUNK },
-				["groups"] = {
+				coord = { 60.2, 33.2, THE_TRUNK },
+				groups = {
 					i(186494, {	-- Autumnal Wilderling (MOUNT!)
-						["cost"] = { { "c", ANIMA, 7500 } },
+						cost = { { "c", ANIMA, 7500 } },
 					}),
 					i(180722, {	-- Enchanted Shadeleaf Runestag (MOUNT!)
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 100 },
 							{ "c", GRATEFUL, 40 },
 						},
 					}),
 					i(180413, {	-- Shadeleaf Runestag (MOUNT!)
-						["cost"] = { { "c", ANIMA, 5000 } },
+						cost = { { "c", ANIMA, 5000 } },
 					}),
 					i(180730, {	-- Wild Glimmerfur Prowler (MOUNT!)
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 5000 },
 							{ "c", GRATEFUL, 75 },
 						},
 					}),
 					i(180290, {	-- Night Fae Hearthstone (TOY!)
-						["cost"] = { { "c", ANIMA, 750 } },
+						cost = { { "c", ANIMA, 750 } },
 					}),
 					i(182663, {	-- Trootie (PET!)
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 20 },
 						},
 					}),
 					i(184164, {	-- Illusion: Wild Soul (ILLUSION!)
-						["cost"] = { { "c", ANIMA, 2500 } },
+						cost = { { "c", ANIMA, 2500 } },
 					}),
 					MEMORY_OF_A_VITAL_SACRIFICE,
 					iensemble(186498, {	-- Ensemble: Garb of the Azure Dusk
-						["cost"] = { { "c", ANIMA, 10000 } },
+						cost = { { "c", ANIMA, 10000 } },
 					}),
 					i(179674, {	-- Night Courtier's Amice
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(179782, {	-- Night Courtier's Anklewraps
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(181925, {	-- Night Courtier's Armbands
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(179785, {	-- Night Courtier's Armguards
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(179608, {	-- Night Courtier's Barrier
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(179800, {	-- Night Courtier's Belt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(179803, {	-- Night Courtier's Bracers
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(179791, {	-- Night Courtier's Britches
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(181926, {	-- Night Courtier's Buckle
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(181307, {	-- Night Courtier's Bulb
-						["cost"] = { { "c", ANIMA, 3500 } },
+						cost = { { "c", ANIMA, 3500 } },
 					}),
 					i(179628, {	-- Night Courtier's Cape
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(179776, {	-- Night Courtier's Chestguard
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(179910, {	-- Night Courtier's Chestplate
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(179634, {	-- Night Courtier's Cloak
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(179668, {	-- Night Courtier's Cowl
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(179788, {	-- Night Courtier's Crest
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(179680, {	-- Night Courtier's Cuffs
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(179624, {	-- Night Courtier's Drape
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(179494, {	-- Night Courtier's Fang
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(181931, {	-- Night Courtier's Footguards
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(179908, {	-- Night Courtier's Gauntlets
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(179904, {	-- Night Courtier's Girdle
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(181930, {	-- Night Courtier's Gloves
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(181879, {	-- Night Courtier's Greatcloak
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(179907, {	-- Night Courtier's Greathelm
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(179906, {	-- Night Courtier's Greaves
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(181929, {	-- Night Courtier's Guise
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(179665, {	-- Night Courtier's Handwraps
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(181932, {	-- Night Courtier's Hauberk
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(179581, {	-- Night Courtier's Jaws
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(179671, {	-- Night Courtier's Leggings
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(181928, {	-- Night Courtier's Legguards
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(179568, {	-- Night Courtier's Lyre
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(182352, {	-- Night Courtier's Mace
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(179797, {	-- Night Courtier's Mantle
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(179540, {	-- Night Courtier's Maul
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(181311, {	-- Night Courtier's Pack
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 40 },
 						},
 					}),
 					i(179905, {	-- Night Courtier's Pauldrons
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(181941, {	-- Night Courtier's Raiment
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(179654, {	-- Night Courtier's Robes
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(179909, {	-- Night Courtier's Sabatons
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(179661, {	-- Night Courtier's Sandals
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(179677, {	-- Night Courtier's Sash
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(179558, {	-- Night Courtier's Scepter
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(181927, {	-- Night Courtier's Spaulders
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(180003, {	-- Night Courtier's Spire
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(179658, {	-- Night Courtier's Tunic
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(179903, {	-- Night Courtier's Vambraces
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(179794, {	-- Night Courtier's Vestment
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(180020, {	-- Night Courtier's Wand
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(180077, {	-- Night Courtier's Warbow
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(180257, {	-- Night Courtier's Warglaive
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(179528, {	-- Night Courtier's Warspear
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(182171, {	-- Hippogryph Soul
-						["sourceQuest"] = 63682,	-- The Power of Elune
-						["cost"] = { { "c", ANIMA, 250 } },
+						sourceQuest = 63682,	-- The Power of Elune
+						cost = { { "c", ANIMA, 250 } },
 					}),
 				},
 			}),
 			n(175415, {	-- Harkoth <Heroic Nathrian Weaponsmith>
-				["coord"] = { 49.4, 54.4, THE_ROOTS },
+				coord = { 49.4, 54.4, THE_ROOTS },
 			}),
 			n(175418, {	-- Mar'lan <Night Fae Armor Trader>
-				["coord"] = { 45.9, 56.4, THE_TRUNK },
-				["sym"] = { { "select", "itemID",
+				coord = { 45.9, 56.4, THE_TRUNK },
+				sym = { { "select", "itemID",
 					-- These items are only purchasable after you complete the covenant campaign.
 					-- Doing the Campaign also rewards all those items, so no need to list 2 sources per item.
 					175597,	-- Faewoven Amice
@@ -985,75 +985,75 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					181914,	-- Runewarden's Spaulders
 					181979,	-- Runewarden's Vestment
 				}},
-				["groups"] = {
+				groups = {
 					i(179602, {	-- Bulwark of the Wild Hunt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(179493, {	-- Fang of the Wild Hunt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(179567, {	-- Harp of the Wild Hunt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(179580, {	-- Jaws of the Wild Hunt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(182319, {	-- Mace of the Wild Hunt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(179560, {	-- Scepter of the Wild Hunt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(180005, {	-- Staff of the Wild Hunt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(180021, {	-- Wand of the Wild Hunt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(180079, {	-- Warbow of the Wild Hunt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(180259, {	-- Warglaive of the Wild Hunt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(179529, {	-- Warspear of the Wild Hunt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(179542, {	-- Warmaul of the Wild Hunt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
@@ -1061,13 +1061,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			n(175413, {	-- Sparklebreeze <Raid Finder Nathrian Weaponsmith>
-				["coord"] = { 46.9, 54.3, THE_ROOTS },
+				coord = { 46.9, 54.3, THE_ROOTS },
 			}),
 			n(175417, {	-- Sulanoom <Mythic Nathrian Weaponsmith>
-				["coord"] = { 49.4, 54.4, THE_ROOTS },
-				["groups"] = bubbleDown({ ["modID"] = 6, }, {	-- Mythic
+				coord = { 49.4, 54.4, THE_ROOTS },
+				groups = bubbleDown({ modID = 6, }, {	-- Mythic
 					i(179544, {	-- Ashcarved Sledgehammer
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1075,7 +1075,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179557, {	-- Baron's Oaken Scepter
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1083,15 +1083,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179611, {	-- Bulwark of the Unbowed
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183895,85), 1 },	-- Mythic Apogee Anima Bead - 233
 							{ "i", modItemId(183894,85), 1 },	-- Mythic Thaumaturgic Anima Bead - 233
 						},
 					}),
 					i(179541, {	-- Colossal Sludgepounder
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1099,7 +1099,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180260, {	-- Deathdancer's Warglaive
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1107,14 +1107,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179610, {	-- Dredge-Giant's Warshield
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,06), 1 },	-- Mythic Apogee Anima Bead - 226
 							{ "i", modItemId(183889,06), 1 },	-- Mythic Thaumaturgic Anima Bead - 226
 						},
 					}),
 					i(180258, {	-- Faeweald Fleshrender
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1122,7 +1122,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179497, {	-- Fang of the Winged Sentry
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1130,7 +1130,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179527, {	-- Gargon-Tamer's Spear
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1138,13 +1138,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179570, {	-- Harp of the Sanguine Courts
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,06), 1 },	-- Mythic Apogee Anima Bead - 226
 							{ "i", modItemId(183889,06), 1 },	-- Mythic Thaumaturgic Anima Bead - 226
 						},
 					}),
 					i(180073, {	-- Heartstalker's Longbow
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1152,8 +1152,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179579, {	-- Jaws of the Hungerer
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1161,8 +1161,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179492, {	-- Keepcrawler's Gutripper
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1170,14 +1170,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179566, {	-- Lyre of Decadent Frivolity
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183895,85), 1 },	-- Mythic Apogee Anima Bead - 233
 							{ "i", modItemId(183894,85), 1 },	-- Mythic Thaumaturgic Anima Bead - 233
 						},
 					}),
 					i(182351, {	-- Mace of the Unburdened
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1185,8 +1185,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179530, {	-- Nightwatch Eviscerator
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1194,8 +1194,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180022, {	-- Rootbulb of the Sinless
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1203,8 +1203,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179561, {	-- Rootspinner's Bloodbough
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1212,8 +1212,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180071, {	-- Shrieking Sinseeker
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1221,8 +1221,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180002, {	-- Spire of the Long Dark
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1230,7 +1230,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180000, {	-- Staff of the Penitent
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1238,8 +1238,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184241, {	-- Stone-Sentinel Breaker
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1247,7 +1247,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(179577, {	-- Stonesnap Mandibles
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1255,7 +1255,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180023, {	-- Wand of Arboreal Artifice
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1268,8 +1268,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-	n(NIGHT_FAE,  bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH } }, {
+	n(NIGHT_FAE,  bubbleDown({ customCollect = "SL_COV_NFA" }, {
 		q(61901),	-- unlocking Faewoven Regalia/Oakheart Raiment sets (TransmogSetID 2047/2051, Faewoven/Oakheart items)
 		q(61907),	-- unlocking Night Courtier's Regalia set (TransmogSetID 2048, Night Courtier's cloth items)
 		q(61906),	-- unlocking Night Courtier's Raiment set (TransmogSetID 2054, Night Courtier's leather items)

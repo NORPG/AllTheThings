@@ -2,11 +2,11 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		petbattle(filter(BATTLE_PETS, {
 			pet(3216, {	-- Ambystan Snapper (PET!)
-				["coords"] = {
+				coords = {
 					{ 35.0, 56.0, ZERETH_MORTIS },
 					{ 35.4, 44.2, ZERETH_MORTIS },
 					{ 39.2, 33.8, ZERETH_MORTIS },
@@ -16,8 +16,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			pet(3217, {	-- Aurelid Floater (PET!)
-				["description"] = "Only spawns at these coords, & can be non-combat. Kill and wait for respawns if needed.",
-				["coords"] = {
+				description = "Only spawns at these coords, & can be non-combat. Kill and wait for respawns if needed.",
+				coords = {
 					{ 57.4, 82.3, ZERETH_MORTIS },
 					{ 52.4, 75.1, ZERETH_MORTIS },
 					{ 64.5, 68.8, ZERETH_MORTIS },
@@ -27,28 +27,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			pet(3212),	-- Bloodsucker Vespoid (PET!)
 			pet(3173),	-- Bufonid Croaker (PET!)
 			pet(3206, {	-- Emerald Scarabid (PET!)
-				["description"] = "Found in the sand-covered parts of the zone.",
+				description = "Found in the sand-covered parts of the zone.",
 			}),
 			n(183349, {	-- Agitated Poultrid
-				["description"] = "This npc can spawn around Zereth Mortis where Wild Poultrids are. Do /chicken to start a pet battle.",
-				["crs"] = { 183286 },	-- Enraged Poultrid
-				["coords"] = {
+				description = "This npc can spawn around Zereth Mortis where Wild Poultrids are. Do /chicken to start a pet battle.",
+				crs = { 183286 },	-- Enraged Poultrid
+				coords = {
 					{ 44.0, 92.0, ZERETH_MORTIS },
 					{ 48.0, 81.0, ZERETH_MORTIS },
 					{ 31.3, 55.3, ZERETH_MORTIS },
 					{ 39.6, 55.5, ZERETH_MORTIS },
 					{ 48.7, 95.6, ZERETH_MORTIS },
 				},
-				["groups"] = {
+				groups = {
 					pet(3218),	-- Enraged Poultrid (PET!)
 				},
 			}),
 			pet(3210),	-- Green Viperid (PET!)
 			pet(3209),	-- King Viperid (PET!)
 			pet(3215, {	-- Mawtouched Geomental (PET!)
-				["description"] = "Requires eating a Questionable Mawshroom from Korthia to see.",
-				["provider"] = { "i", 187244 },	-- Questionable Mawshroom
-				["coords"] = {
+				description = "Requires eating a Questionable Mawshroom from Korthia to see.",
+				provider = { "i", 187244 },	-- Questionable Mawshroom
+				coords = {
 					{ 61.4, 73.6, ZERETH_MORTIS },
 					{ 61.8, 67.6, ZERETH_MORTIS },
 					{ 64.2, 71.0, ZERETH_MORTIS },
@@ -60,14 +60,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			pet(3196),	-- Proto Avian Fledgling (PET!)
 			pet(3208),	-- Red Viperid (PET!)
 			pet(3200,{	-- Scarlet Proto Avian (PET!)
-				["description"] = "Rare spawn of Proto-Avian Fledgling. Best chances are killing critters around the Genesis Vestibule. Good luck!",
-				["coord"] = { 30.0, 54.0, ZERETH_MORTIS },
+				description = "Rare spawn of Proto-Avian Fledgling. Best chances are killing critters around the Genesis Vestibule. Good luck!",
+				coord = { 30.0, 54.0, ZERETH_MORTIS },
 			}),
 			pet(3203),	-- Tarachnid Ambusher (PET!)
 			pet(3202),	-- Tarachnid Stalker (PET!)
 			pet(3191),	-- Timid Leporid (PET!)
 			pet(3180, {	-- Venomous Bufonid (PET!)
-				["coords"] = {
+				coords = {
 					{ 36.6, 70.6, ZERETH_MORTIS },
 					{ 44.8, 58.6, ZERETH_MORTIS },
 					{ 47.6, 85.8, ZERETH_MORTIS },

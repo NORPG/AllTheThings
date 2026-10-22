@@ -6,177 +6,177 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		-- 1.x.x
 		n(P1xx, {
 			filter(CLOTH, {
-				i(13727, {["sourceID"] = 4946 }),	-- [PH] Brilliant Dawn Gloves
-				i(13798, {["sourceID"] = 4994 }),	-- [PH] Cloth Boots of the Brilliant Dawn
-				i(13738, {["sourceID"] = 4952 }),	-- [PH] Cloth Bracers of the Brilliant Dawn
-				i(13739, {["sourceID"] = 4953 }),	-- [PH] Cloth Bracers of the Rising Dawn
-				i(13740, {["sourceID"] = 4954 }),	-- [PH] Cloth Bracers of the Shining Dawn
-				i(13775, {["sourceID"] = 4979 }),	-- [PH] Cloth Leggings of the Rising Dawn
-				i(13776, {["sourceID"] = 4980 }),	-- [PH] Cloth Leggings of the Shining Dawn
-				i(13762, {["sourceID"] = 4967 }),	-- [PH] Robe of the Brilliant Dawn
-				i(13763, {["sourceID"] = 4968 }),	-- [PH] Robe of the Rising Dawn
-				i(13764, {["sourceID"] = 4969 }),	-- [PH] Robe of the Shining Dawn
-				i(13728, {["sourceID"] = 4947 }),	-- [PH] Shining Dawn Gloves
-				i(13788, {["sourceID"] = 4990 }),	-- [PH] Shining Dawn Hat
+				i(13727, {sourceID = 4946 }),	-- [PH] Brilliant Dawn Gloves
+				i(13798, {sourceID = 4994 }),	-- [PH] Cloth Boots of the Brilliant Dawn
+				i(13738, {sourceID = 4952 }),	-- [PH] Cloth Bracers of the Brilliant Dawn
+				i(13739, {sourceID = 4953 }),	-- [PH] Cloth Bracers of the Rising Dawn
+				i(13740, {sourceID = 4954 }),	-- [PH] Cloth Bracers of the Shining Dawn
+				i(13775, {sourceID = 4979 }),	-- [PH] Cloth Leggings of the Rising Dawn
+				i(13776, {sourceID = 4980 }),	-- [PH] Cloth Leggings of the Shining Dawn
+				i(13762, {sourceID = 4967 }),	-- [PH] Robe of the Brilliant Dawn
+				i(13763, {sourceID = 4968 }),	-- [PH] Robe of the Rising Dawn
+				i(13764, {sourceID = 4969 }),	-- [PH] Robe of the Shining Dawn
+				i(13728, {sourceID = 4947 }),	-- [PH] Shining Dawn Gloves
+				i(13788, {sourceID = 4990 }),	-- [PH] Shining Dawn Hat
 				--
-				i(21429, {["sourceID"] = 8437 }),	-- AHNQIRAJ TEST ITEM A CLOTH BELT
-				i(21433, {["sourceID"] = 8441 }),	-- AHNQIRAJ TEST ITEM A CLOTH BRACER
-				i(21431, {["sourceID"] = 8439 }),	-- AHNQIRAJ TEST ITEM A CLOTH FEET
-				i(21437, {["sourceID"] = 8444 }),	-- AHNQIRAJ TEST ITEM A CLOTH GLOVES
-				i(21434, {["sourceID"] = 8442 }),	-- AHNQIRAJ TEST ITEM A CLOTH HELM
-				i(21419, {["sourceID"] = 8427 }),	-- AHNQIRAJ TEST ITEM A CLOTH LEGS
-				i(21430, {["sourceID"] = 8438 }),	-- AHNQIRAJ TEST ITEM A CLOTH ROBE
-				i(21435, {["sourceID"] = 8443 }),	-- AHNQIRAJ TEST ITEM A CLOTH SHOULDERS
+				i(21429, {sourceID = 8437 }),	-- AHNQIRAJ TEST ITEM A CLOTH BELT
+				i(21433, {sourceID = 8441 }),	-- AHNQIRAJ TEST ITEM A CLOTH BRACER
+				i(21431, {sourceID = 8439 }),	-- AHNQIRAJ TEST ITEM A CLOTH FEET
+				i(21437, {sourceID = 8444 }),	-- AHNQIRAJ TEST ITEM A CLOTH GLOVES
+				i(21434, {sourceID = 8442 }),	-- AHNQIRAJ TEST ITEM A CLOTH HELM
+				i(21419, {sourceID = 8427 }),	-- AHNQIRAJ TEST ITEM A CLOTH LEGS
+				i(21430, {sourceID = 8438 }),	-- AHNQIRAJ TEST ITEM A CLOTH ROBE
+				i(21435, {sourceID = 8443 }),	-- AHNQIRAJ TEST ITEM A CLOTH SHOULDERS
 				--
-				i(16035, {["sourceID"] = 6575 }),	-- PVP Cloth Helm Horde
-				i(16037, {["sourceID"] = 6577 }),	-- PVP Cloth Legs Horde
-				i(16036, {["sourceID"] = 6576 }),	-- PVP Cloth Robe Horde
-				i(16038, {["sourceID"] = 6578 }),	-- PVP Cloth Shoulder Horde
+				i(16035, {sourceID = 6575 }),	-- PVP Cloth Helm Horde
+				i(16037, {sourceID = 6577 }),	-- PVP Cloth Legs Horde
+				i(16036, {sourceID = 6576 }),	-- PVP Cloth Robe Horde
+				i(16038, {sourceID = 6578 }),	-- PVP Cloth Shoulder Horde
 				--
-				i(16151, {["sourceID"] = 6617 }),	-- Test Arcane Res Feet Cloth
-				i(16154, {["sourceID"] = 6620 }),	-- Test Arcane Res Shoulders Cloth
-				i(16152, {["sourceID"] = 6618 }),	-- Test Arcane Res Waist Cloth
-				i(16153, {["sourceID"] = 6619 }),	-- Test Arcane Res Wrist Cloth
-				i(16063, {["sourceID"] = 6584 }),	-- Test Fire Res Hands Cloth
-				i(16061, {["sourceID"] = 6582 }),	-- Test Fire Res Shoulders Cloth
-				i(16062, {["sourceID"] = 6583 }),	-- Test Fire Res Waist Cloth
-				i(16135, {["sourceID"] = 6601 }),	-- Test Frost Res Feet Cloth
-				i(16138, {["sourceID"] = 6604 }),	-- Test Frost Res Head Cloth
-				i(16136, {["sourceID"] = 6602 }),	-- Test Frost Res Waist Cloth
-				i(16137, {["sourceID"] = 6603 }),	-- Test Frost Res Wrist Cloth
-				i(16116, {["sourceID"] = 6588 }),	-- Test Nature Res Cloak Cloth
-				i(16117, {["sourceID"] = 6589 }),	-- Test Nature Res Hands Cloth
-				i(16121, {["sourceID"] = 6593 }),	-- Test Nature Res Head Cloth
-				i(16146, {["sourceID"] = 6612 }),	-- Test Shadow Res Head Cloth
-				i(16118, {["sourceID"] = 6590 }),	-- Test Nature Res Legs Cloth
-				i(16122, {["sourceID"] = 6594 }),	-- Test Nature Res Shoulders Cloth
-				i(16147, {["sourceID"] = 6613 }),	-- Test Shadow Res Shoulders Cloth
-				i(16120, {["sourceID"] = 6592 }),	-- Test Nature Res Waist Cloth
-				i(16145, {["sourceID"] = 6611 }),	-- Test Shadow Res Waist Cloth
-				i(16119, {["sourceID"] = 6591 }),	-- Test Nature Res Wrist Cloth
+				i(16151, {sourceID = 6617 }),	-- Test Arcane Res Feet Cloth
+				i(16154, {sourceID = 6620 }),	-- Test Arcane Res Shoulders Cloth
+				i(16152, {sourceID = 6618 }),	-- Test Arcane Res Waist Cloth
+				i(16153, {sourceID = 6619 }),	-- Test Arcane Res Wrist Cloth
+				i(16063, {sourceID = 6584 }),	-- Test Fire Res Hands Cloth
+				i(16061, {sourceID = 6582 }),	-- Test Fire Res Shoulders Cloth
+				i(16062, {sourceID = 6583 }),	-- Test Fire Res Waist Cloth
+				i(16135, {sourceID = 6601 }),	-- Test Frost Res Feet Cloth
+				i(16138, {sourceID = 6604 }),	-- Test Frost Res Head Cloth
+				i(16136, {sourceID = 6602 }),	-- Test Frost Res Waist Cloth
+				i(16137, {sourceID = 6603 }),	-- Test Frost Res Wrist Cloth
+				i(16116, {sourceID = 6588 }),	-- Test Nature Res Cloak Cloth
+				i(16117, {sourceID = 6589 }),	-- Test Nature Res Hands Cloth
+				i(16121, {sourceID = 6593 }),	-- Test Nature Res Head Cloth
+				i(16146, {sourceID = 6612 }),	-- Test Shadow Res Head Cloth
+				i(16118, {sourceID = 6590 }),	-- Test Nature Res Legs Cloth
+				i(16122, {sourceID = 6594 }),	-- Test Nature Res Shoulders Cloth
+				i(16147, {sourceID = 6613 }),	-- Test Shadow Res Shoulders Cloth
+				i(16120, {sourceID = 6592 }),	-- Test Nature Res Waist Cloth
+				i(16145, {sourceID = 6611 }),	-- Test Shadow Res Waist Cloth
+				i(16119, {sourceID = 6591 }),	-- Test Nature Res Wrist Cloth
 			}),
 			filter(LEATHER, {
-				i(13801, {["sourceID"] = 4995 }),	-- [PH] Leather Boots of the Brilliant Dawn
-				i(13802, {["sourceID"] = 4996 }),	-- [PH] Leather Boots of the Rising Dawn
-				i(13803, {["sourceID"] = 4997 }),	-- [PH] Leather Boots of the Shining Dawn
-				i(13741, {["sourceID"] = 4955 }),	-- [PH] Leather Bracers of the Brilliant Dawn
-				i(13749, {["sourceID"] = 4963 }),	-- [PH] Leather Bracers of the Rising Dawn
-				i(13748, {["sourceID"] = 4962 }),	-- [PH] Leather Bracers of the Shining Dawn
-				i(13765, {["sourceID"] = 4970 }),	-- [PH] Leather Chestguard of the Brilliant Dawn
-				i(13767, {["sourceID"] = 4972 }),	-- [PH] Leather Chestguard of the Rising Dawn
-				i(13766, {["sourceID"] = 4971 }),	-- [PH] Leather Chestguard of the Shining Dawn
-				i(13777, {["sourceID"] = 4981 }),	-- [PH] Leather Leggings of the Brilliant Dawn
-				i(13778, {["sourceID"] = 4982 }),	-- [PH] Leather Leggings of the Rising Dawn
-				i(13779, {["sourceID"] = 4983 }),	-- [PH] Leather Leggings of the Shining Dawn
-				i(13791, {["sourceID"] = 4991 }),	-- [PH] Shining Dawn Cap
+				i(13801, {sourceID = 4995 }),	-- [PH] Leather Boots of the Brilliant Dawn
+				i(13802, {sourceID = 4996 }),	-- [PH] Leather Boots of the Rising Dawn
+				i(13803, {sourceID = 4997 }),	-- [PH] Leather Boots of the Shining Dawn
+				i(13741, {sourceID = 4955 }),	-- [PH] Leather Bracers of the Brilliant Dawn
+				i(13749, {sourceID = 4963 }),	-- [PH] Leather Bracers of the Rising Dawn
+				i(13748, {sourceID = 4962 }),	-- [PH] Leather Bracers of the Shining Dawn
+				i(13765, {sourceID = 4970 }),	-- [PH] Leather Chestguard of the Brilliant Dawn
+				i(13767, {sourceID = 4972 }),	-- [PH] Leather Chestguard of the Rising Dawn
+				i(13766, {sourceID = 4971 }),	-- [PH] Leather Chestguard of the Shining Dawn
+				i(13777, {sourceID = 4981 }),	-- [PH] Leather Leggings of the Brilliant Dawn
+				i(13778, {sourceID = 4982 }),	-- [PH] Leather Leggings of the Rising Dawn
+				i(13779, {sourceID = 4983 }),	-- [PH] Leather Leggings of the Shining Dawn
+				i(13791, {sourceID = 4991 }),	-- [PH] Shining Dawn Cap
 				--
-				i(21425, {["sourceID"] = 8433 }),	-- AHNQIRAJ TEST ITEM B LEATHER BELT
-				i(21427, {["sourceID"] = 8435 }),	-- AHNQIRAJ TEST ITEM B LEATHER BOOTS
-				i(21432, {["sourceID"] = 8440 }),	-- AHNQIRAJ TEST ITEM B LEATHER BRACER
-				i(21420, {["sourceID"] = 8428 }),	-- AHNQIRAJ TEST ITEM B LEATHER CHEST
-				i(21428, {["sourceID"] = 8436 }),	-- AHNQIRAJ TEST ITEM B LEATHER GAUNTLETS
-				i(21426, {["sourceID"] = 8434 }),	-- AHNQIRAJ TEST ITEM B LEATHER HELM
-				i(21423, {["sourceID"] = 8431 }),	-- AHNQIRAJ TEST ITEM B LEATHER PANTS
-				i(21424, {["sourceID"] = 8432 }),	-- AHNQIRAJ TEST ITEM B LEATHER SHOULDER
+				i(21425, {sourceID = 8433 }),	-- AHNQIRAJ TEST ITEM B LEATHER BELT
+				i(21427, {sourceID = 8435 }),	-- AHNQIRAJ TEST ITEM B LEATHER BOOTS
+				i(21432, {sourceID = 8440 }),	-- AHNQIRAJ TEST ITEM B LEATHER BRACER
+				i(21420, {sourceID = 8428 }),	-- AHNQIRAJ TEST ITEM B LEATHER CHEST
+				i(21428, {sourceID = 8436 }),	-- AHNQIRAJ TEST ITEM B LEATHER GAUNTLETS
+				i(21426, {sourceID = 8434 }),	-- AHNQIRAJ TEST ITEM B LEATHER HELM
+				i(21423, {sourceID = 8431 }),	-- AHNQIRAJ TEST ITEM B LEATHER PANTS
+				i(21424, {sourceID = 8432 }),	-- AHNQIRAJ TEST ITEM B LEATHER SHOULDER
 				--
-				i(16156, {["sourceID"] = 6622 }),	-- Test Arcane Res Head Leather
-				i(16155, {["sourceID"] = 6621 }),	-- Test Arcane Res Waist Leather
-				i(16065, {["sourceID"] = 6586 }),	-- Test Fire Res Feet Leather
-				i(16139, {["sourceID"] = 6605 }),	-- Test Frost Res Head Leather
-				i(16144, {["sourceID"] = 6610 }),	-- Test Frost Res Shoulders Leather
-				i(16140, {["sourceID"] = 6606 }),	-- Test Nature Res Head Leather
-				i(16126, {["sourceID"] = 6595 }),	-- Test Nature Res Waist Leather
-				i(16127, {["sourceID"] = 6596 }),	-- Test Nature Res Wrist Leather
-				i(16148, {["sourceID"] = 6614 }),	-- Test Shadow Res Shoulders Leather
-				i(16150, {["sourceID"] = 6616 }),	-- Test Shadow Res Waist Leather
+				i(16156, {sourceID = 6622 }),	-- Test Arcane Res Head Leather
+				i(16155, {sourceID = 6621 }),	-- Test Arcane Res Waist Leather
+				i(16065, {sourceID = 6586 }),	-- Test Fire Res Feet Leather
+				i(16139, {sourceID = 6605 }),	-- Test Frost Res Head Leather
+				i(16144, {sourceID = 6610 }),	-- Test Frost Res Shoulders Leather
+				i(16140, {sourceID = 6606 }),	-- Test Nature Res Head Leather
+				i(16126, {sourceID = 6595 }),	-- Test Nature Res Waist Leather
+				i(16127, {sourceID = 6596 }),	-- Test Nature Res Wrist Leather
+				i(16148, {sourceID = 6614 }),	-- Test Shadow Res Shoulders Leather
+				i(16150, {sourceID = 6616 }),	-- Test Shadow Res Waist Leather
 			}),
 			filter(MAIL, {
-				i(13730, {["sourceID"] = 4948 }),	-- [PH] Brilliant Dawn Fists
-				i(13804, {["sourceID"] = 4998 }),	-- [PH] Mail Boots of the Brilliant Dawn
-				i(13805, {["sourceID"] = 4999 }),	-- [PH] Mail Boots of the Rising Dawn
-				i(13806, {["sourceID"] = 5000 }),	-- [PH] Mail Boots of the Shining Dawn
-				i(13742, {["sourceID"] = 4956 }),	-- [PH] Mail Bracers of the Brilliant Dawn
-				i(13746, {["sourceID"] = 4960 }),	-- [PH] Mail Bracers of the Rising Dawn
-				i(13747, {["sourceID"] = 4961 }),	-- [PH] Mail Bracers of the Shining Dawn
-				i(13768, {["sourceID"] = 4973 }),	-- [PH] Mail Chestguard of the Brilliant Dawn
-				i(13770, {["sourceID"] = 4975 }),	-- [PH] Mail Chestguard of the Rising Dawn
-				i(13769, {["sourceID"] = 4974 }),	-- [PH] Mail Chestguard of the Shining Dawn
-				i(13780, {["sourceID"] = 4984 }),	-- [PH] Mail Leggings of the Brilliant Dawn
-				i(13781, {["sourceID"] = 4985 }),	-- [PH] Mail Leggings of the Rising Dawn
-				i(13782, {["sourceID"] = 4986 }),	-- [PH] Mail Leggings of the Shining Dawn
-				i(13794, {["sourceID"] = 4992 }),	-- [PH] Shining Dawn Coif
-				i(13736, {["sourceID"] = 4950 }),	-- [PH] Shining Dawn Fists
+				i(13730, {sourceID = 4948 }),	-- [PH] Brilliant Dawn Fists
+				i(13804, {sourceID = 4998 }),	-- [PH] Mail Boots of the Brilliant Dawn
+				i(13805, {sourceID = 4999 }),	-- [PH] Mail Boots of the Rising Dawn
+				i(13806, {sourceID = 5000 }),	-- [PH] Mail Boots of the Shining Dawn
+				i(13742, {sourceID = 4956 }),	-- [PH] Mail Bracers of the Brilliant Dawn
+				i(13746, {sourceID = 4960 }),	-- [PH] Mail Bracers of the Rising Dawn
+				i(13747, {sourceID = 4961 }),	-- [PH] Mail Bracers of the Shining Dawn
+				i(13768, {sourceID = 4973 }),	-- [PH] Mail Chestguard of the Brilliant Dawn
+				i(13770, {sourceID = 4975 }),	-- [PH] Mail Chestguard of the Rising Dawn
+				i(13769, {sourceID = 4974 }),	-- [PH] Mail Chestguard of the Shining Dawn
+				i(13780, {sourceID = 4984 }),	-- [PH] Mail Leggings of the Brilliant Dawn
+				i(13781, {sourceID = 4985 }),	-- [PH] Mail Leggings of the Rising Dawn
+				i(13782, {sourceID = 4986 }),	-- [PH] Mail Leggings of the Shining Dawn
+				i(13794, {sourceID = 4992 }),	-- [PH] Shining Dawn Coif
+				i(13736, {sourceID = 4950 }),	-- [PH] Shining Dawn Fists
 				--
-				i(21451, {["sourceID"] = 8455 }),	-- AHNQIRAJ TEST ITEM C MAIL BELT
-				i(21450, {["sourceID"] = 8454 }),	-- AHNQIRAJ TEST ITEM C MAIL GLOVES
-				i(21449, {["sourceID"] = 8453 }),	-- AHNQIRAJ TEST ITEM C MAIL BOOTS
-				i(21421, {["sourceID"] = 8429 }),	-- AHNQIRAJ TEST ITEM C MAIL CHEST
-				i(21446, {["sourceID"] = 8450 }),	-- AHNQIRAJ TEST ITEM C MAIL HELM
-				i(21448, {["sourceID"] = 8452 }),	-- AHNQIRAJ TEST ITEM C MAIL LEGS
-				i(21447, {["sourceID"] = 8451 }),	-- AHNQIRAJ TEST ITEM C MAIL SHOULDERS
+				i(21451, {sourceID = 8455 }),	-- AHNQIRAJ TEST ITEM C MAIL BELT
+				i(21450, {sourceID = 8454 }),	-- AHNQIRAJ TEST ITEM C MAIL GLOVES
+				i(21449, {sourceID = 8453 }),	-- AHNQIRAJ TEST ITEM C MAIL BOOTS
+				i(21421, {sourceID = 8429 }),	-- AHNQIRAJ TEST ITEM C MAIL CHEST
+				i(21446, {sourceID = 8450 }),	-- AHNQIRAJ TEST ITEM C MAIL HELM
+				i(21448, {sourceID = 8452 }),	-- AHNQIRAJ TEST ITEM C MAIL LEGS
+				i(21447, {sourceID = 8451 }),	-- AHNQIRAJ TEST ITEM C MAIL SHOULDERS
 				--
-				i(16157, {["sourceID"] = 6623 }),	-- Test Arcane Res Feet Mail
-				i(16164, {["sourceID"] = 6630 }),	-- Test Arcane Res Hands Mail
-				i(16159, {["sourceID"] = 6625 }),	-- Test Arcane Res Head Mail
-				i(16165, {["sourceID"] = 6631 }),	-- Test Arcane Res Legs Mail
-				i(16163, {["sourceID"] = 6629 }),	-- Test Arcane Res Waist Mail
-				i(16158, {["sourceID"] = 6624 }),	-- Test Arcane Res Wrist Mail
-				i(16066, {["sourceID"] = 6587 }),	-- Test Fire Res Feet Mail
-				i(16064, {["sourceID"] = 6585 }),	-- Test Fire Res Waist Mail
-				i(16143, {["sourceID"] = 6609 }),	-- Test Frost Res Shoulder Mail
-				i(16142, {["sourceID"] = 6608 }),	-- Test Frost Res Wrist Mail
-				i(16141, {["sourceID"] = 6607 }),	-- Test Nature Res Head Mail
-				i(16129, {["sourceID"] = 6597 }),	-- Test Nature Res Feet Mail
-				i(16134, {["sourceID"] = 6600 }),	-- Test Nature Res Shoulders Mail
-				i(16131, {["sourceID"] = 6598 }),	-- Test Nature Res Waist Mail
-				i(16132, {["sourceID"] = 6599 }),	-- Test Nature Res Wrist Mail
-				i(16149, {["sourceID"] = 6615 }),	-- Test Shadow Res Shoulder Mail
+				i(16157, {sourceID = 6623 }),	-- Test Arcane Res Feet Mail
+				i(16164, {sourceID = 6630 }),	-- Test Arcane Res Hands Mail
+				i(16159, {sourceID = 6625 }),	-- Test Arcane Res Head Mail
+				i(16165, {sourceID = 6631 }),	-- Test Arcane Res Legs Mail
+				i(16163, {sourceID = 6629 }),	-- Test Arcane Res Waist Mail
+				i(16158, {sourceID = 6624 }),	-- Test Arcane Res Wrist Mail
+				i(16066, {sourceID = 6587 }),	-- Test Fire Res Feet Mail
+				i(16064, {sourceID = 6585 }),	-- Test Fire Res Waist Mail
+				i(16143, {sourceID = 6609 }),	-- Test Frost Res Shoulder Mail
+				i(16142, {sourceID = 6608 }),	-- Test Frost Res Wrist Mail
+				i(16141, {sourceID = 6607 }),	-- Test Nature Res Head Mail
+				i(16129, {sourceID = 6597 }),	-- Test Nature Res Feet Mail
+				i(16134, {sourceID = 6600 }),	-- Test Nature Res Shoulders Mail
+				i(16131, {sourceID = 6598 }),	-- Test Nature Res Waist Mail
+				i(16132, {sourceID = 6599 }),	-- Test Nature Res Wrist Mail
+				i(16149, {sourceID = 6615 }),	-- Test Shadow Res Shoulder Mail
 			}),
 			filter(PLATE, {
-				i(13731, {["sourceID"] = 4949 }),	-- [PH] Brilliant Dawn Gauntlets
-				i(13807, {["sourceID"] = 5001 }),	-- [PH] Plate Boots of the Brilliant Dawn
-				i(13808, {["sourceID"] = 5002 }),	-- [PH] Plate Boots of the Rising Dawn
-				i(13809, {["sourceID"] = 5003 }),	-- [PH] Plate Boots of the Shining Dawn
-				i(13743, {["sourceID"] = 4957 }),	-- [PH] Plate Bracers of the Brilliant Dawn
-				i(13744, {["sourceID"] = 4958 }),	-- [PH] Plate Bracers of the Rising Dawn
-				i(13745, {["sourceID"] = 4959 }),	-- [PH] Plate Bracers of the Shining Dawn
-				i(13771, {["sourceID"] = 4976 }),	-- [PH] Plate Chestguard of the Brilliant Dawn
-				i(13772, {["sourceID"] = 4977 }),	-- [PH] Plate Chestguard of the Rising Dawn
-				i(13773, {["sourceID"] = 4978 }),	-- [PH] Plate Chestguard of the Shining Dawn
-				i(13783, {["sourceID"] = 4987 }),	-- [PH] Plate Leggings of the Brilliant Dawn
-				i(13784, {["sourceID"] = 4988 }),	-- [PH] Plate Leggings of the Rising Dawn
-				i(13785, {["sourceID"] = 4989 }),	-- [PH] Plate Leggings of the Shining Dawn
-				i(13737, {["sourceID"] = 4951 }),	-- [PH] Shining Dawn Gauntlets
-				i(13797, {["sourceID"] = 4993 }),	-- [PH] Shining Dawn Helm
+				i(13731, {sourceID = 4949 }),	-- [PH] Brilliant Dawn Gauntlets
+				i(13807, {sourceID = 5001 }),	-- [PH] Plate Boots of the Brilliant Dawn
+				i(13808, {sourceID = 5002 }),	-- [PH] Plate Boots of the Rising Dawn
+				i(13809, {sourceID = 5003 }),	-- [PH] Plate Boots of the Shining Dawn
+				i(13743, {sourceID = 4957 }),	-- [PH] Plate Bracers of the Brilliant Dawn
+				i(13744, {sourceID = 4958 }),	-- [PH] Plate Bracers of the Rising Dawn
+				i(13745, {sourceID = 4959 }),	-- [PH] Plate Bracers of the Shining Dawn
+				i(13771, {sourceID = 4976 }),	-- [PH] Plate Chestguard of the Brilliant Dawn
+				i(13772, {sourceID = 4977 }),	-- [PH] Plate Chestguard of the Rising Dawn
+				i(13773, {sourceID = 4978 }),	-- [PH] Plate Chestguard of the Shining Dawn
+				i(13783, {sourceID = 4987 }),	-- [PH] Plate Leggings of the Brilliant Dawn
+				i(13784, {sourceID = 4988 }),	-- [PH] Plate Leggings of the Rising Dawn
+				i(13785, {sourceID = 4989 }),	-- [PH] Plate Leggings of the Shining Dawn
+				i(13737, {sourceID = 4951 }),	-- [PH] Shining Dawn Gauntlets
+				i(13797, {sourceID = 4993 }),	-- [PH] Shining Dawn Helm
 				--
-				i(21441, {["sourceID"] = 8446 }),	-- AHNQIRAJ TEST ITEM D PLATE BELT
-				i(21444, {["sourceID"] = 8449 }),	-- AHNQIRAJ TEST ITEM D PLATE GLOVES
-				i(21442, {["sourceID"] = 8447 }),	-- AHNQIRAJ TEST ITEM D PLATE BOOTS
-				i(21422, {["sourceID"] = 8430 }),	-- AHNQIRAJ TEST ITEM D PLATE CHEST
-				i(21440, {["sourceID"] = 8445 }),	-- AHNQIRAJ TEST ITEM D PLATE LEGS
-				i(21443, {["sourceID"] = 8448 }),	-- AHNQIRAJ TEST ITEM D PLATE SHOULDERS
+				i(21441, {sourceID = 8446 }),	-- AHNQIRAJ TEST ITEM D PLATE BELT
+				i(21444, {sourceID = 8449 }),	-- AHNQIRAJ TEST ITEM D PLATE GLOVES
+				i(21442, {sourceID = 8447 }),	-- AHNQIRAJ TEST ITEM D PLATE BOOTS
+				i(21422, {sourceID = 8430 }),	-- AHNQIRAJ TEST ITEM D PLATE CHEST
+				i(21440, {sourceID = 8445 }),	-- AHNQIRAJ TEST ITEM D PLATE LEGS
+				i(21443, {sourceID = 8448 }),	-- AHNQIRAJ TEST ITEM D PLATE SHOULDERS
 				--
-				i(16030, {["sourceID"] = 6571 }),	-- PVP Plate Boots Alliance
-				i(16027, {["sourceID"] = 6568 }),	-- PVP Plate Breastplate Alliance
-				i(16034, {["sourceID"] = 6574 }),	-- PVP Plate Cloak Alliance
-				i(16029, {["sourceID"] = 6570 }),	-- PVP Plate Gauntlets Alliance
-				i(16026, {["sourceID"] = 6567 }),	-- PVP Plate Helm Alliance
-				i(16028, {["sourceID"] = 6569 }),	-- PVP Plate Legplates Alliance
-				i(16031, {["sourceID"] = 6572 }),	-- PVP Plate Shoulder Alliance
-				i(16033, {["sourceID"] = 6573 }),	-- PVP Plate Wrist Alliance
+				i(16030, {sourceID = 6571 }),	-- PVP Plate Boots Alliance
+				i(16027, {sourceID = 6568 }),	-- PVP Plate Breastplate Alliance
+				i(16034, {sourceID = 6574 }),	-- PVP Plate Cloak Alliance
+				i(16029, {sourceID = 6570 }),	-- PVP Plate Gauntlets Alliance
+				i(16026, {sourceID = 6567 }),	-- PVP Plate Helm Alliance
+				i(16028, {sourceID = 6569 }),	-- PVP Plate Legplates Alliance
+				i(16031, {sourceID = 6572 }),	-- PVP Plate Shoulder Alliance
+				i(16033, {sourceID = 6573 }),	-- PVP Plate Wrist Alliance
 				--
-				i(16160, {["sourceID"] = 6626 }),	-- Test Arcane Res Shoulders Plate
-				i(16162, {["sourceID"] = 6628 }),	-- Test Frost Res Shoulders Plate
-				i(16172, {["sourceID"] = 6632 }),	-- Test Nature Res Hands Plate
-				i(16161, {["sourceID"] = 6627 }),	-- Test Shadow Res Hands Plate
+				i(16160, {sourceID = 6626 }),	-- Test Arcane Res Shoulders Plate
+				i(16162, {sourceID = 6628 }),	-- Test Frost Res Shoulders Plate
+				i(16172, {sourceID = 6632 }),	-- Test Nature Res Hands Plate
+				i(16161, {sourceID = 6627 }),	-- Test Shadow Res Hands Plate
 				--
-				i(13711, {["sourceID"] = 4934 }),	-- Test Attack Power Chest
-				i(13586, {["sourceID"] = 4908 }),	-- Test Crit Chest
-				i(13713, {["sourceID"] = 4936 }),	-- Test Dodge Chest
-				i(13716, {["sourceID"] = 4938 }),	-- Test Haste Chest
-				i(13717, {["sourceID"] = 4939 }),	-- Test Hit Chance Chest
-				i(13714, {["sourceID"] = 4937 }),	-- Test Parry Chest
-				i(13710, {["sourceID"] = 4933 }),	-- Test Stamina Chest
+				i(13711, {sourceID = 4934 }),	-- Test Attack Power Chest
+				i(13586, {sourceID = 4908 }),	-- Test Crit Chest
+				i(13713, {sourceID = 4936 }),	-- Test Dodge Chest
+				i(13716, {sourceID = 4938 }),	-- Test Haste Chest
+				i(13717, {sourceID = 4939 }),	-- Test Hit Chance Chest
+				i(13714, {sourceID = 4937 }),	-- Test Parry Chest
+				i(13710, {sourceID = 4933 }),	-- Test Stamina Chest
 			}),
 			n(CLASSES, {
 				cl(DRUID, {
@@ -253,25 +253,25 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(7949),	-- Leggings of Thero-Shan
 				}),
 				cl(SHAMAN, {
-					i(20782, {["sourceID"] = 8215 }),	-- 63 green shaman back
-					i(20776, {["sourceID"] = 8210 }),	-- 63 green shaman bindings
-					i(20780, {["sourceID"] = 8214 }),	-- 63 green shaman boots
-					i(20773, {["sourceID"] = 8207 }),	-- 63 green shaman coif
-					i(20778, {["sourceID"] = 8212 }),	-- 63 green shaman cord
-					i(20777, {["sourceID"] = 8211 }),	-- 63 green shaman gauntlets
-					i(20779, {["sourceID"] = 8213 }),	-- 63 green shaman kilt
-					i(20774, {["sourceID"] = 8208 }),	-- 63 green shaman pauldrons
-					i(20775, {["sourceID"] = 8209 }),	-- 63 green shaman vest
+					i(20782, {sourceID = 8215 }),	-- 63 green shaman back
+					i(20776, {sourceID = 8210 }),	-- 63 green shaman bindings
+					i(20780, {sourceID = 8214 }),	-- 63 green shaman boots
+					i(20773, {sourceID = 8207 }),	-- 63 green shaman coif
+					i(20778, {sourceID = 8212 }),	-- 63 green shaman cord
+					i(20777, {sourceID = 8211 }),	-- 63 green shaman gauntlets
+					i(20779, {sourceID = 8213 }),	-- 63 green shaman kilt
+					i(20774, {sourceID = 8208 }),	-- 63 green shaman pauldrons
+					i(20775, {sourceID = 8209 }),	-- 63 green shaman vest
 					--
-					i(20785, {["sourceID"] = 8217 }),	-- 90 green shaman back
-					i(20786, {["sourceID"] = 8218 }),	-- 90 green shaman bindings
-					i(20787, {["sourceID"] = 8219 }),	-- 90 green shaman boots
-					i(20788, {["sourceID"] = 8220 }),	-- 90 green shaman coif
-					i(20789, {["sourceID"] = 8221 }),	-- 90 green shaman cord
-					i(20790, {["sourceID"] = 8222 }),	-- 90 green shaman gauntlets
-					i(20791, {["sourceID"] = 8223 }),	-- 90 green shaman kilt
-					i(20793, {["sourceID"] = 8224 }),	-- 90 green shaman pauldrons
-					i(20795, {["sourceID"] = 8225 }),	-- 90 green shaman vest
+					i(20785, {sourceID = 8217 }),	-- 90 green shaman back
+					i(20786, {sourceID = 8218 }),	-- 90 green shaman bindings
+					i(20787, {sourceID = 8219 }),	-- 90 green shaman boots
+					i(20788, {sourceID = 8220 }),	-- 90 green shaman coif
+					i(20789, {sourceID = 8221 }),	-- 90 green shaman cord
+					i(20790, {sourceID = 8222 }),	-- 90 green shaman gauntlets
+					i(20791, {sourceID = 8223 }),	-- 90 green shaman kilt
+					i(20793, {sourceID = 8224 }),	-- 90 green shaman pauldrons
+					i(20795, {sourceID = 8225 }),	-- 90 green shaman vest
 					--
 					i(32138),	-- Chancellor's Linked Armor
 					i(32139),	-- Chancellor's Linked Gauntlets
@@ -310,938 +310,938 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		-- 2.x.x
 		n(P2xx, {
 			filter(CLOTH, {
-				i(26056, {["sourceID"] = 10747 }),	-- 59 TEST Green Cloth Belt
-				i(26057, {["sourceID"] = 10748 }),	-- 59 TEST Green Cloth Boot
-				i(26058, {["sourceID"] = 10749 }),	-- 59 TEST Green Cloth Chest
-				i(26059, {["sourceID"] = 10750 }),	-- 59 TEST Green Cloth Hand
-				i(26060, {["sourceID"] = 10751 }),	-- 59 TEST Green Cloth Head
-				i(26061, {["sourceID"] = 10752 }),	-- 59 TEST Green Cloth Legs
-				i(26062, {["sourceID"] = 10753 }),	-- 59 TEST Green Cloth Shoulder
-				i(26063, {["sourceID"] = 10754 }),	-- 59 TEST Green Cloth Wrist
+				i(26056, {sourceID = 10747 }),	-- 59 TEST Green Cloth Belt
+				i(26057, {sourceID = 10748 }),	-- 59 TEST Green Cloth Boot
+				i(26058, {sourceID = 10749 }),	-- 59 TEST Green Cloth Chest
+				i(26059, {sourceID = 10750 }),	-- 59 TEST Green Cloth Hand
+				i(26060, {sourceID = 10751 }),	-- 59 TEST Green Cloth Head
+				i(26061, {sourceID = 10752 }),	-- 59 TEST Green Cloth Legs
+				i(26062, {sourceID = 10753 }),	-- 59 TEST Green Cloth Shoulder
+				i(26063, {sourceID = 10754 }),	-- 59 TEST Green Cloth Wrist
 				--
-				i(26064, {["sourceID"] = 10755 }),	-- 60 TEST Green Cloth Belt
-				i(26065, {["sourceID"] = 10756 }),	-- 60 TEST Green Cloth Boot
-				i(26066, {["sourceID"] = 10757 }),	-- 60 TEST Green Cloth Chest
-				i(26067, {["sourceID"] = 10758 }),	-- 60 TEST Green Cloth Hand
-				i(26068, {["sourceID"] = 10759 }),	-- 60 TEST Green Cloth Head
-				i(26069, {["sourceID"] = 10760 }),	-- 60 TEST Green Cloth Legs
-				i(26070, {["sourceID"] = 10761 }),	-- 60 TEST Green Cloth Shoulder
-				i(26071, {["sourceID"] = 10762 }),	-- 60 TEST Green Cloth Wrist
+				i(26064, {sourceID = 10755 }),	-- 60 TEST Green Cloth Belt
+				i(26065, {sourceID = 10756 }),	-- 60 TEST Green Cloth Boot
+				i(26066, {sourceID = 10757 }),	-- 60 TEST Green Cloth Chest
+				i(26067, {sourceID = 10758 }),	-- 60 TEST Green Cloth Hand
+				i(26068, {sourceID = 10759 }),	-- 60 TEST Green Cloth Head
+				i(26069, {sourceID = 10760 }),	-- 60 TEST Green Cloth Legs
+				i(26070, {sourceID = 10761 }),	-- 60 TEST Green Cloth Shoulder
+				i(26071, {sourceID = 10762 }),	-- 60 TEST Green Cloth Wrist
 				--
-				i(26080, {["sourceID"] = 10771 }),	-- 62 TEST Green Cloth Belt
-				i(26081, {["sourceID"] = 10772 }),	-- 62 TEST Green Cloth Boot
-				i(26082, {["sourceID"] = 10773 }),	-- 62 TEST Green Cloth Chest
-				i(26083, {["sourceID"] = 10774 }),	-- 62 TEST Green Cloth Hand
-				i(26084, {["sourceID"] = 10775 }),	-- 62 TEST Green Cloth Head
-				i(26085, {["sourceID"] = 10776 }),	-- 62 TEST Green Cloth Legs
-				i(26086, {["sourceID"] = 10777 }),	-- 62 TEST Green Cloth Shoulder
-				i(26087, {["sourceID"] = 10778 }),	-- 62 TEST Green Cloth Wrist
+				i(26080, {sourceID = 10771 }),	-- 62 TEST Green Cloth Belt
+				i(26081, {sourceID = 10772 }),	-- 62 TEST Green Cloth Boot
+				i(26082, {sourceID = 10773 }),	-- 62 TEST Green Cloth Chest
+				i(26083, {sourceID = 10774 }),	-- 62 TEST Green Cloth Hand
+				i(26084, {sourceID = 10775 }),	-- 62 TEST Green Cloth Head
+				i(26085, {sourceID = 10776 }),	-- 62 TEST Green Cloth Legs
+				i(26086, {sourceID = 10777 }),	-- 62 TEST Green Cloth Shoulder
+				i(26087, {sourceID = 10778 }),	-- 62 TEST Green Cloth Wrist
 				--
-				i(26088, {["sourceID"] = 10779 }),	-- 63 TEST Green Cloth Belt
-				i(26089, {["sourceID"] = 10780 }),	-- 63 TEST Green Cloth Boot
-				i(26090, {["sourceID"] = 10781 }),	-- 63 TEST Green Cloth Chest
-				i(26091, {["sourceID"] = 10782 }),	-- 63 TEST Green Cloth Hand
-				i(26092, {["sourceID"] = 10783 }),	-- 63 TEST Green Cloth Head
-				i(26093, {["sourceID"] = 10784 }),	-- 63 TEST Green Cloth Legs
-				i(26094, {["sourceID"] = 10785 }),	-- 63 TEST Green Cloth Shoulder
-				i(26095, {["sourceID"] = 10786 }),	-- 63 TEST Green Cloth Wrist
+				i(26088, {sourceID = 10779 }),	-- 63 TEST Green Cloth Belt
+				i(26089, {sourceID = 10780 }),	-- 63 TEST Green Cloth Boot
+				i(26090, {sourceID = 10781 }),	-- 63 TEST Green Cloth Chest
+				i(26091, {sourceID = 10782 }),	-- 63 TEST Green Cloth Hand
+				i(26092, {sourceID = 10783 }),	-- 63 TEST Green Cloth Head
+				i(26093, {sourceID = 10784 }),	-- 63 TEST Green Cloth Legs
+				i(26094, {sourceID = 10785 }),	-- 63 TEST Green Cloth Shoulder
+				i(26095, {sourceID = 10786 }),	-- 63 TEST Green Cloth Wrist
 				--
-				i(26096, {["sourceID"] = 10787 }),	-- 64 TEST Green Cloth Belt
-				i(26097, {["sourceID"] = 10788 }),	-- 64 TEST Green Cloth Boot
-				i(26098, {["sourceID"] = 10789 }),	-- 64 TEST Green Cloth Chest
-				i(26099, {["sourceID"] = 10790 }),	-- 64 TEST Green Cloth Hand
-				i(26100, {["sourceID"] = 10791 }),	-- 64 TEST Green Cloth Head
-				i(26101, {["sourceID"] = 10792 }),	-- 64 TEST Green Cloth Legs
-				i(26102, {["sourceID"] = 10793 }),	-- 64 TEST Green Cloth Shoulder
-				i(26103, {["sourceID"] = 10794 }),	-- 64 TEST Green Cloth Wrist
+				i(26096, {sourceID = 10787 }),	-- 64 TEST Green Cloth Belt
+				i(26097, {sourceID = 10788 }),	-- 64 TEST Green Cloth Boot
+				i(26098, {sourceID = 10789 }),	-- 64 TEST Green Cloth Chest
+				i(26099, {sourceID = 10790 }),	-- 64 TEST Green Cloth Hand
+				i(26100, {sourceID = 10791 }),	-- 64 TEST Green Cloth Head
+				i(26101, {sourceID = 10792 }),	-- 64 TEST Green Cloth Legs
+				i(26102, {sourceID = 10793 }),	-- 64 TEST Green Cloth Shoulder
+				i(26103, {sourceID = 10794 }),	-- 64 TEST Green Cloth Wrist
 				--
-				i(26104, {["sourceID"] = 10795 }),	-- 65 TEST Green Cloth Belt
-				i(26105, {["sourceID"] = 10796 }),	-- 65 TEST Green Cloth Boot
-				i(26106, {["sourceID"] = 10797 }),	-- 65 TEST Green Cloth Chest
-				i(26107, {["sourceID"] = 10798 }),	-- 65 TEST Green Cloth Hand
-				i(26108, {["sourceID"] = 10799 }),	-- 65 TEST Green Cloth Head
-				i(26109, {["sourceID"] = 10800 }),	-- 65 TEST Green Cloth Legs
-				i(26110, {["sourceID"] = 10801 }),	-- 65 TEST Green Cloth Shoulder
-				i(26111, {["sourceID"] = 10802 }),	-- 65 TEST Green Cloth Wrist
+				i(26104, {sourceID = 10795 }),	-- 65 TEST Green Cloth Belt
+				i(26105, {sourceID = 10796 }),	-- 65 TEST Green Cloth Boot
+				i(26106, {sourceID = 10797 }),	-- 65 TEST Green Cloth Chest
+				i(26107, {sourceID = 10798 }),	-- 65 TEST Green Cloth Hand
+				i(26108, {sourceID = 10799 }),	-- 65 TEST Green Cloth Head
+				i(26109, {sourceID = 10800 }),	-- 65 TEST Green Cloth Legs
+				i(26110, {sourceID = 10801 }),	-- 65 TEST Green Cloth Shoulder
+				i(26111, {sourceID = 10802 }),	-- 65 TEST Green Cloth Wrist
 				--
-				i(26112, {["sourceID"] = 10803 }),	-- 66 TEST Green Cloth Belt
-				i(26113, {["sourceID"] = 10804 }),	-- 66 TEST Green Cloth Boot
-				i(26114, {["sourceID"] = 10805 }),	-- 66 TEST Green Cloth Chest
-				i(26115, {["sourceID"] = 10806 }),	-- 66 TEST Green Cloth Hand
-				i(26116, {["sourceID"] = 10807 }),	-- 66 TEST Green Cloth Head
-				i(26117, {["sourceID"] = 10808 }),	-- 66 TEST Green Cloth Legs
-				i(26118, {["sourceID"] = 10809 }),	-- 66 TEST Green Cloth Shoulder
+				i(26112, {sourceID = 10803 }),	-- 66 TEST Green Cloth Belt
+				i(26113, {sourceID = 10804 }),	-- 66 TEST Green Cloth Boot
+				i(26114, {sourceID = 10805 }),	-- 66 TEST Green Cloth Chest
+				i(26115, {sourceID = 10806 }),	-- 66 TEST Green Cloth Hand
+				i(26116, {sourceID = 10807 }),	-- 66 TEST Green Cloth Head
+				i(26117, {sourceID = 10808 }),	-- 66 TEST Green Cloth Legs
+				i(26118, {sourceID = 10809 }),	-- 66 TEST Green Cloth Shoulder
 				--
-				i(26119, {["sourceID"] = 10810 }),	-- 66 TEST Green Cloth Wrist
-				i(26120, {["sourceID"] = 10811 }),	-- 67 TEST Green Cloth Belt
-				i(26121, {["sourceID"] = 10812 }),	-- 67 TEST Green Cloth Boot
-				i(26122, {["sourceID"] = 10813 }),	-- 67 TEST Green Cloth Chest
-				i(26123, {["sourceID"] = 10814 }),	-- 67 TEST Green Cloth Hand
-				i(26124, {["sourceID"] = 10815 }),	-- 67 TEST Green Cloth Head
-				i(26125, {["sourceID"] = 10816 }),	-- 67 TEST Green Cloth Legs
-				i(26126, {["sourceID"] = 10817 }),	-- 67 TEST Green Cloth Shoulder
-				i(26127, {["sourceID"] = 10818 }),	-- 67 TEST Green Cloth Wrist
+				i(26119, {sourceID = 10810 }),	-- 66 TEST Green Cloth Wrist
+				i(26120, {sourceID = 10811 }),	-- 67 TEST Green Cloth Belt
+				i(26121, {sourceID = 10812 }),	-- 67 TEST Green Cloth Boot
+				i(26122, {sourceID = 10813 }),	-- 67 TEST Green Cloth Chest
+				i(26123, {sourceID = 10814 }),	-- 67 TEST Green Cloth Hand
+				i(26124, {sourceID = 10815 }),	-- 67 TEST Green Cloth Head
+				i(26125, {sourceID = 10816 }),	-- 67 TEST Green Cloth Legs
+				i(26126, {sourceID = 10817 }),	-- 67 TEST Green Cloth Shoulder
+				i(26127, {sourceID = 10818 }),	-- 67 TEST Green Cloth Wrist
 				--
-				i(26128, {["sourceID"] = 10819 }),	-- 68 TEST Green Cloth Belt
-				i(26129, {["sourceID"] = 10820 }),	-- 68 TEST Green Cloth Boot
-				i(26130, {["sourceID"] = 10821 }),	-- 68 TEST Green Cloth Chest
-				i(26131, {["sourceID"] = 10822 }),	-- 68 TEST Green Cloth Hand
-				i(26132, {["sourceID"] = 10823 }),	-- 68 TEST Green Cloth Head
-				i(26133, {["sourceID"] = 10824 }),	-- 68 TEST Green Cloth Legs
-				i(26134, {["sourceID"] = 10825 }),	-- 68 TEST Green Cloth Shoulder
-				i(26135, {["sourceID"] = 10826 }),	-- 68 TEST Green Cloth Wrist
+				i(26128, {sourceID = 10819 }),	-- 68 TEST Green Cloth Belt
+				i(26129, {sourceID = 10820 }),	-- 68 TEST Green Cloth Boot
+				i(26130, {sourceID = 10821 }),	-- 68 TEST Green Cloth Chest
+				i(26131, {sourceID = 10822 }),	-- 68 TEST Green Cloth Hand
+				i(26132, {sourceID = 10823 }),	-- 68 TEST Green Cloth Head
+				i(26133, {sourceID = 10824 }),	-- 68 TEST Green Cloth Legs
+				i(26134, {sourceID = 10825 }),	-- 68 TEST Green Cloth Shoulder
+				i(26135, {sourceID = 10826 }),	-- 68 TEST Green Cloth Wrist
 				--
-				i(26136, {["sourceID"] = 10827 }),	-- 69 TEST Green Cloth Belt
-				i(26137, {["sourceID"] = 10828 }),	-- 69 TEST Green Cloth Boot
-				i(26138, {["sourceID"] = 10829 }),	-- 69 TEST Green Cloth Chest
-				i(26139, {["sourceID"] = 10830 }),	-- 69 TEST Green Cloth Hand
-				i(26140, {["sourceID"] = 10831 }),	-- 69 TEST Green Cloth Head
-				i(26141, {["sourceID"] = 10832 }),	-- 69 TEST Green Cloth Legs
-				i(26142, {["sourceID"] = 10833 }),	-- 69 TEST Green Cloth Shoulder
-				i(26143, {["sourceID"] = 10834 }),	-- 69 TEST Green Cloth Wrist
+				i(26136, {sourceID = 10827 }),	-- 69 TEST Green Cloth Belt
+				i(26137, {sourceID = 10828 }),	-- 69 TEST Green Cloth Boot
+				i(26138, {sourceID = 10829 }),	-- 69 TEST Green Cloth Chest
+				i(26139, {sourceID = 10830 }),	-- 69 TEST Green Cloth Hand
+				i(26140, {sourceID = 10831 }),	-- 69 TEST Green Cloth Head
+				i(26141, {sourceID = 10832 }),	-- 69 TEST Green Cloth Legs
+				i(26142, {sourceID = 10833 }),	-- 69 TEST Green Cloth Shoulder
+				i(26143, {sourceID = 10834 }),	-- 69 TEST Green Cloth Wrist
 				--
-				i(26144, {["sourceID"] = 10835 }),	-- 70 TEST Green Cloth Belt
-				i(26145, {["sourceID"] = 10836 }),	-- 70 TEST Green Cloth Boot
-				i(26146, {["sourceID"] = 10837 }),	-- 70 TEST Green Cloth Chest
-				i(26147, {["sourceID"] = 10838 }),	-- 70 TEST Green Cloth Hand
-				i(26148, {["sourceID"] = 10839 }),	-- 70 TEST Green Cloth Head
-				i(26149, {["sourceID"] = 10840 }),	-- 70 TEST Green Cloth Legs
-				i(26150, {["sourceID"] = 10841 }),	-- 70 TEST Green Cloth Shoulder
-				i(26151, {["sourceID"] = 10842 }),	-- 70 TEST Green Cloth Wrist
+				i(26144, {sourceID = 10835 }),	-- 70 TEST Green Cloth Belt
+				i(26145, {sourceID = 10836 }),	-- 70 TEST Green Cloth Boot
+				i(26146, {sourceID = 10837 }),	-- 70 TEST Green Cloth Chest
+				i(26147, {sourceID = 10838 }),	-- 70 TEST Green Cloth Hand
+				i(26148, {sourceID = 10839 }),	-- 70 TEST Green Cloth Head
+				i(26149, {sourceID = 10840 }),	-- 70 TEST Green Cloth Legs
+				i(26150, {sourceID = 10841 }),	-- 70 TEST Green Cloth Shoulder
+				i(26151, {sourceID = 10842 }),	-- 70 TEST Green Cloth Wrist
 				--
-				i(26152, {["sourceID"] = 10843 }),	-- 71 TEST Green Cloth Belt
-				i(26153, {["sourceID"] = 10844 }),	-- 71 TEST Green Cloth Boot
-				i(26154, {["sourceID"] = 10845 }),	-- 71 TEST Green Cloth Chest
-				i(26155, {["sourceID"] = 10846 }),	-- 71 TEST Green Cloth Hand
-				i(26156, {["sourceID"] = 10847 }),	-- 71 TEST Green Cloth Head
-				i(26157, {["sourceID"] = 10848 }),	-- 71 TEST Green Cloth Legs
-				i(26158, {["sourceID"] = 10849 }),	-- 71 TEST Green Cloth Shoulder
-				i(26159, {["sourceID"] = 10850 }),	-- 71 TEST Green Cloth Wrist
+				i(26152, {sourceID = 10843 }),	-- 71 TEST Green Cloth Belt
+				i(26153, {sourceID = 10844 }),	-- 71 TEST Green Cloth Boot
+				i(26154, {sourceID = 10845 }),	-- 71 TEST Green Cloth Chest
+				i(26155, {sourceID = 10846 }),	-- 71 TEST Green Cloth Hand
+				i(26156, {sourceID = 10847 }),	-- 71 TEST Green Cloth Head
+				i(26157, {sourceID = 10848 }),	-- 71 TEST Green Cloth Legs
+				i(26158, {sourceID = 10849 }),	-- 71 TEST Green Cloth Shoulder
+				i(26159, {sourceID = 10850 }),	-- 71 TEST Green Cloth Wrist
 				--
-				i(26160, {["sourceID"] = 10851 }),	-- 72 TEST Green Cloth Belt
-				i(26161, {["sourceID"] = 10852 }),	-- 72 TEST Green Cloth Boot
-				i(26162, {["sourceID"] = 10853 }),	-- 72 TEST Green Cloth Chest
-				i(26163, {["sourceID"] = 10854 }),	-- 72 TEST Green Cloth Hand
-				i(26164, {["sourceID"] = 10855 }),	-- 72 TEST Green Cloth Head
-				i(26165, {["sourceID"] = 10856 }),	-- 72 TEST Green Cloth Legs
-				i(26166, {["sourceID"] = 10857 }),	-- 72 TEST Green Cloth Shoulder
-				i(26167, {["sourceID"] = 10858 }),	-- 72 TEST Green Cloth Wrist
+				i(26160, {sourceID = 10851 }),	-- 72 TEST Green Cloth Belt
+				i(26161, {sourceID = 10852 }),	-- 72 TEST Green Cloth Boot
+				i(26162, {sourceID = 10853 }),	-- 72 TEST Green Cloth Chest
+				i(26163, {sourceID = 10854 }),	-- 72 TEST Green Cloth Hand
+				i(26164, {sourceID = 10855 }),	-- 72 TEST Green Cloth Head
+				i(26165, {sourceID = 10856 }),	-- 72 TEST Green Cloth Legs
+				i(26166, {sourceID = 10857 }),	-- 72 TEST Green Cloth Shoulder
+				i(26167, {sourceID = 10858 }),	-- 72 TEST Green Cloth Wrist
 				--
-				i(24561, {["sourceID"] = 9595 }),	-- 130 Test Caster Belt
-				i(24565, {["sourceID"] = 9599 }),	-- 130 Test Caster Boots
-				i(24572, {["sourceID"] = 9601 }),	-- 130 Test Caster Bracer
-				i(24566, {["sourceID"] = 9600 }),	-- 130 Test Caster Gloves
-				i(24563, {["sourceID"] = 9597 }),	-- 130 Test Caster Helm
-				i(24564, {["sourceID"] = 9598 }),	-- 130 Test Caster Robe
-				i(24562, {["sourceID"] = 9596 }),	-- 130 Test Caster Shoulder
+				i(24561, {sourceID = 9595 }),	-- 130 Test Caster Belt
+				i(24565, {sourceID = 9599 }),	-- 130 Test Caster Boots
+				i(24572, {sourceID = 9601 }),	-- 130 Test Caster Bracer
+				i(24566, {sourceID = 9600 }),	-- 130 Test Caster Gloves
+				i(24563, {sourceID = 9597 }),	-- 130 Test Caster Helm
+				i(24564, {sourceID = 9598 }),	-- 130 Test Caster Robe
+				i(24562, {sourceID = 9596 }),	-- 130 Test Caster Shoulder
 			}),
 			n(CLASSES, {
 				cl(DRUID, {
-					i(26812, {["sourceID"] = 11475 }),	-- 59 TEST Green Druid Belt
-					i(26813, {["sourceID"] = 11476 }),	-- 59 TEST Green Druid Boot
-					i(26814, {["sourceID"] = 11477 }),	-- 59 TEST Green Druid Chest
-					i(26815, {["sourceID"] = 11478 }),	-- 59 TEST Green Druid Hand
-					i(26816, {["sourceID"] = 11479 }),	-- 59 TEST Green Druid Head
-					i(26817, {["sourceID"] = 11480 }),	-- 59 TEST Green Druid Legs
-					i(26818, {["sourceID"] = 11481 }),	-- 59 TEST Green Druid Shoulder
-					i(26819, {["sourceID"] = 11482 }),	-- 59 TEST Green Druid Wrist
+					i(26812, {sourceID = 11475 }),	-- 59 TEST Green Druid Belt
+					i(26813, {sourceID = 11476 }),	-- 59 TEST Green Druid Boot
+					i(26814, {sourceID = 11477 }),	-- 59 TEST Green Druid Chest
+					i(26815, {sourceID = 11478 }),	-- 59 TEST Green Druid Hand
+					i(26816, {sourceID = 11479 }),	-- 59 TEST Green Druid Head
+					i(26817, {sourceID = 11480 }),	-- 59 TEST Green Druid Legs
+					i(26818, {sourceID = 11481 }),	-- 59 TEST Green Druid Shoulder
+					i(26819, {sourceID = 11482 }),	-- 59 TEST Green Druid Wrist
 					--
-					i(26820, {["sourceID"] = 11483 }),	-- 60 TEST Green Druid Belt
-					i(26821, {["sourceID"] = 11484 }),	-- 60 TEST Green Druid Boot
-					i(26822, {["sourceID"] = 11485 }),	-- 60 TEST Green Druid Chest
-					i(26823, {["sourceID"] = 11486 }),	-- 60 TEST Green Druid Hand
-					i(26824, {["sourceID"] = 11487 }),	-- 60 TEST Green Druid Head
-					i(26825, {["sourceID"] = 11488 }),	-- 60 TEST Green Druid Legs
-					i(26826, {["sourceID"] = 11489 }),	-- 60 TEST Green Druid Shoulder
-					i(26827, {["sourceID"] = 11490 }),	-- 60 TEST Green Druid Wrist
+					i(26820, {sourceID = 11483 }),	-- 60 TEST Green Druid Belt
+					i(26821, {sourceID = 11484 }),	-- 60 TEST Green Druid Boot
+					i(26822, {sourceID = 11485 }),	-- 60 TEST Green Druid Chest
+					i(26823, {sourceID = 11486 }),	-- 60 TEST Green Druid Hand
+					i(26824, {sourceID = 11487 }),	-- 60 TEST Green Druid Head
+					i(26825, {sourceID = 11488 }),	-- 60 TEST Green Druid Legs
+					i(26826, {sourceID = 11489 }),	-- 60 TEST Green Druid Shoulder
+					i(26827, {sourceID = 11490 }),	-- 60 TEST Green Druid Wrist
 					--
-					i(26828, {["sourceID"] = 11491 }),	-- 61 TEST Green Druid Belt
-					i(26829, {["sourceID"] = 11492 }),	-- 61 TEST Green Druid Boot
-					i(26830, {["sourceID"] = 11493 }),	-- 61 TEST Green Druid Chest
-					i(26831, {["sourceID"] = 11494 }),	-- 61 TEST Green Druid Hand
-					i(26832, {["sourceID"] = 11495 }),	-- 61 TEST Green Druid Head
-					i(26833, {["sourceID"] = 11496 }),	-- 61 TEST Green Druid Legs
-					i(26834, {["sourceID"] = 11497 }),	-- 61 TEST Green Druid Shoulder
-					i(26835, {["sourceID"] = 11498 }),	-- 61 TEST Green Druid Wrist
+					i(26828, {sourceID = 11491 }),	-- 61 TEST Green Druid Belt
+					i(26829, {sourceID = 11492 }),	-- 61 TEST Green Druid Boot
+					i(26830, {sourceID = 11493 }),	-- 61 TEST Green Druid Chest
+					i(26831, {sourceID = 11494 }),	-- 61 TEST Green Druid Hand
+					i(26832, {sourceID = 11495 }),	-- 61 TEST Green Druid Head
+					i(26833, {sourceID = 11496 }),	-- 61 TEST Green Druid Legs
+					i(26834, {sourceID = 11497 }),	-- 61 TEST Green Druid Shoulder
+					i(26835, {sourceID = 11498 }),	-- 61 TEST Green Druid Wrist
 					--
-					i(26836, {["sourceID"] = 11499 }),	-- 62 TEST Green Druid Belt
-					i(26837, {["sourceID"] = 11500 }),	-- 62 TEST Green Druid Boot
-					i(26838, {["sourceID"] = 11501 }),	-- 62 TEST Green Druid Chest
-					i(26839, {["sourceID"] = 11502 }),	-- 62 TEST Green Druid Hand
-					i(26840, {["sourceID"] = 11503 }),	-- 62 TEST Green Druid Head
-					i(26841, {["sourceID"] = 11504 }),	-- 62 TEST Green Druid Legs
-					i(26842, {["sourceID"] = 11505 }),	-- 62 TEST Green Druid Shoulder
-					i(26843, {["sourceID"] = 11506 }),	-- 62 TEST Green Druid Wrist
+					i(26836, {sourceID = 11499 }),	-- 62 TEST Green Druid Belt
+					i(26837, {sourceID = 11500 }),	-- 62 TEST Green Druid Boot
+					i(26838, {sourceID = 11501 }),	-- 62 TEST Green Druid Chest
+					i(26839, {sourceID = 11502 }),	-- 62 TEST Green Druid Hand
+					i(26840, {sourceID = 11503 }),	-- 62 TEST Green Druid Head
+					i(26841, {sourceID = 11504 }),	-- 62 TEST Green Druid Legs
+					i(26842, {sourceID = 11505 }),	-- 62 TEST Green Druid Shoulder
+					i(26843, {sourceID = 11506 }),	-- 62 TEST Green Druid Wrist
 					--
-					i(26844, {["sourceID"] = 11507 }),	-- 63 TEST Green Druid Belt
-					i(26845, {["sourceID"] = 11508 }),	-- 63 TEST Green Druid Boot
-					i(26846, {["sourceID"] = 11509 }),	-- 63 TEST Green Druid Chest
-					i(26847, {["sourceID"] = 11510 }),	-- 63 TEST Green Druid Hand
-					i(26848, {["sourceID"] = 11511 }),	-- 63 TEST Green Druid Head
-					i(26849, {["sourceID"] = 11512 }),	-- 63 TEST Green Druid Legs
-					i(26850, {["sourceID"] = 11513 }),	-- 63 TEST Green Druid Shoulder
-					i(26851, {["sourceID"] = 11514 }),	-- 63 TEST Green Druid Wrist
+					i(26844, {sourceID = 11507 }),	-- 63 TEST Green Druid Belt
+					i(26845, {sourceID = 11508 }),	-- 63 TEST Green Druid Boot
+					i(26846, {sourceID = 11509 }),	-- 63 TEST Green Druid Chest
+					i(26847, {sourceID = 11510 }),	-- 63 TEST Green Druid Hand
+					i(26848, {sourceID = 11511 }),	-- 63 TEST Green Druid Head
+					i(26849, {sourceID = 11512 }),	-- 63 TEST Green Druid Legs
+					i(26850, {sourceID = 11513 }),	-- 63 TEST Green Druid Shoulder
+					i(26851, {sourceID = 11514 }),	-- 63 TEST Green Druid Wrist
 					--
-					i(26852, {["sourceID"] = 11515 }),	-- 64 TEST Green Druid Belt
-					i(26853, {["sourceID"] = 11516 }),	-- 64 TEST Green Druid Boot
-					i(26854, {["sourceID"] = 11517 }),	-- 64 TEST Green Druid Chest
-					i(26855, {["sourceID"] = 11518 }),	-- 64 TEST Green Druid Hand
-					i(26856, {["sourceID"] = 11519 }),	-- 64 TEST Green Druid Head
-					i(26857, {["sourceID"] = 11520 }),	-- 64 TEST Green Druid Legs
-					i(26858, {["sourceID"] = 11521 }),	-- 64 TEST Green Druid Shoulder
-					i(26859, {["sourceID"] = 11522 }),	-- 64 TEST Green Druid Wrist
+					i(26852, {sourceID = 11515 }),	-- 64 TEST Green Druid Belt
+					i(26853, {sourceID = 11516 }),	-- 64 TEST Green Druid Boot
+					i(26854, {sourceID = 11517 }),	-- 64 TEST Green Druid Chest
+					i(26855, {sourceID = 11518 }),	-- 64 TEST Green Druid Hand
+					i(26856, {sourceID = 11519 }),	-- 64 TEST Green Druid Head
+					i(26857, {sourceID = 11520 }),	-- 64 TEST Green Druid Legs
+					i(26858, {sourceID = 11521 }),	-- 64 TEST Green Druid Shoulder
+					i(26859, {sourceID = 11522 }),	-- 64 TEST Green Druid Wrist
 					--
-					i(26860, {["sourceID"] = 11523 }),	-- 65 TEST Green Druid Belt
-					i(26861, {["sourceID"] = 11524 }),	-- 65 TEST Green Druid Boot
-					i(26862, {["sourceID"] = 11525 }),	-- 65 TEST Green Druid Chest
-					i(26863, {["sourceID"] = 11526 }),	-- 65 TEST Green Druid Hand
-					i(26864, {["sourceID"] = 11527 }),	-- 65 TEST Green Druid Head
-					i(26865, {["sourceID"] = 11528 }),	-- 65 TEST Green Druid Legs
-					i(26866, {["sourceID"] = 11529 }),	-- 65 TEST Green Druid Shoulder
-					i(26867, {["sourceID"] = 11530 }),	-- 65 TEST Green Druid Wrist
+					i(26860, {sourceID = 11523 }),	-- 65 TEST Green Druid Belt
+					i(26861, {sourceID = 11524 }),	-- 65 TEST Green Druid Boot
+					i(26862, {sourceID = 11525 }),	-- 65 TEST Green Druid Chest
+					i(26863, {sourceID = 11526 }),	-- 65 TEST Green Druid Hand
+					i(26864, {sourceID = 11527 }),	-- 65 TEST Green Druid Head
+					i(26865, {sourceID = 11528 }),	-- 65 TEST Green Druid Legs
+					i(26866, {sourceID = 11529 }),	-- 65 TEST Green Druid Shoulder
+					i(26867, {sourceID = 11530 }),	-- 65 TEST Green Druid Wrist
 					--
-					i(26868, {["sourceID"] = 11531 }),	-- 66 TEST Green Druid Belt
-					i(26869, {["sourceID"] = 11532 }),	-- 66 TEST Green Druid Boot
-					i(26870, {["sourceID"] = 11533 }),	-- 66 TEST Green Druid Chest
-					i(26871, {["sourceID"] = 11534 }),	-- 66 TEST Green Druid Hand
-					i(26872, {["sourceID"] = 11535 }),	-- 66 TEST Green Druid Head
-					i(26873, {["sourceID"] = 11536 }),	-- 66 TEST Green Druid Legs
-					i(26874, {["sourceID"] = 11537 }),	-- 66 TEST Green Druid Shoulder
-					i(26875, {["sourceID"] = 11538 }),	-- 66 TEST Green Druid Wrist
+					i(26868, {sourceID = 11531 }),	-- 66 TEST Green Druid Belt
+					i(26869, {sourceID = 11532 }),	-- 66 TEST Green Druid Boot
+					i(26870, {sourceID = 11533 }),	-- 66 TEST Green Druid Chest
+					i(26871, {sourceID = 11534 }),	-- 66 TEST Green Druid Hand
+					i(26872, {sourceID = 11535 }),	-- 66 TEST Green Druid Head
+					i(26873, {sourceID = 11536 }),	-- 66 TEST Green Druid Legs
+					i(26874, {sourceID = 11537 }),	-- 66 TEST Green Druid Shoulder
+					i(26875, {sourceID = 11538 }),	-- 66 TEST Green Druid Wrist
 					--
-					i(26876, {["sourceID"] = 11539 }),	-- 67 TEST Green Druid Belt
-					i(26877, {["sourceID"] = 11540 }),	-- 67 TEST Green Druid Boot
-					i(26878, {["sourceID"] = 11541 }),	-- 67 TEST Green Druid Chest
-					i(26879, {["sourceID"] = 11542 }),	-- 67 TEST Green Druid Hand
-					i(26880, {["sourceID"] = 11543 }),	-- 67 TEST Green Druid Head
-					i(26881, {["sourceID"] = 11544 }),	-- 67 TEST Green Druid Legs
-					i(26882, {["sourceID"] = 11545 }),	-- 67 TEST Green Druid Shoulder
-					i(26883, {["sourceID"] = 11546 }),	-- 67 TEST Green Druid Wrist
+					i(26876, {sourceID = 11539 }),	-- 67 TEST Green Druid Belt
+					i(26877, {sourceID = 11540 }),	-- 67 TEST Green Druid Boot
+					i(26878, {sourceID = 11541 }),	-- 67 TEST Green Druid Chest
+					i(26879, {sourceID = 11542 }),	-- 67 TEST Green Druid Hand
+					i(26880, {sourceID = 11543 }),	-- 67 TEST Green Druid Head
+					i(26881, {sourceID = 11544 }),	-- 67 TEST Green Druid Legs
+					i(26882, {sourceID = 11545 }),	-- 67 TEST Green Druid Shoulder
+					i(26883, {sourceID = 11546 }),	-- 67 TEST Green Druid Wrist
 					--
-					i(26884, {["sourceID"] = 11547 }),	-- 68 TEST Green Druid Belt
-					i(26885, {["sourceID"] = 11548 }),	-- 68 TEST Green Druid Boot
-					i(26886, {["sourceID"] = 11549 }),	-- 68 TEST Green Druid Chest
-					i(26887, {["sourceID"] = 11550 }),	-- 68 TEST Green Druid Hand
-					i(26888, {["sourceID"] = 11551 }),	-- 68 TEST Green Druid Head
-					i(26889, {["sourceID"] = 11552 }),	-- 68 TEST Green Druid Legs
-					i(26890, {["sourceID"] = 11553 }),	-- 68 TEST Green Druid Shoulder
-					i(26891, {["sourceID"] = 11554 }),	-- 68 TEST Green Druid Wrist
+					i(26884, {sourceID = 11547 }),	-- 68 TEST Green Druid Belt
+					i(26885, {sourceID = 11548 }),	-- 68 TEST Green Druid Boot
+					i(26886, {sourceID = 11549 }),	-- 68 TEST Green Druid Chest
+					i(26887, {sourceID = 11550 }),	-- 68 TEST Green Druid Hand
+					i(26888, {sourceID = 11551 }),	-- 68 TEST Green Druid Head
+					i(26889, {sourceID = 11552 }),	-- 68 TEST Green Druid Legs
+					i(26890, {sourceID = 11553 }),	-- 68 TEST Green Druid Shoulder
+					i(26891, {sourceID = 11554 }),	-- 68 TEST Green Druid Wrist
 					--
-					i(26892, {["sourceID"] = 11555 }),	-- 69 TEST Green Druid Belt
-					i(26893, {["sourceID"] = 11556 }),	-- 69 TEST Green Druid Boot
-					i(26894, {["sourceID"] = 11557 }),	-- 69 TEST Green Druid Chest
-					i(26895, {["sourceID"] = 11558 }),	-- 69 TEST Green Druid Hand
-					i(26896, {["sourceID"] = 11559 }),	-- 69 TEST Green Druid Head
-					i(26897, {["sourceID"] = 11560 }),	-- 69 TEST Green Druid Legs
-					i(26898, {["sourceID"] = 11561 }),	-- 69 TEST Green Druid Shoulder
-					i(26899, {["sourceID"] = 11562 }),	-- 69 TEST Green Druid Wrist
+					i(26892, {sourceID = 11555 }),	-- 69 TEST Green Druid Belt
+					i(26893, {sourceID = 11556 }),	-- 69 TEST Green Druid Boot
+					i(26894, {sourceID = 11557 }),	-- 69 TEST Green Druid Chest
+					i(26895, {sourceID = 11558 }),	-- 69 TEST Green Druid Hand
+					i(26896, {sourceID = 11559 }),	-- 69 TEST Green Druid Head
+					i(26897, {sourceID = 11560 }),	-- 69 TEST Green Druid Legs
+					i(26898, {sourceID = 11561 }),	-- 69 TEST Green Druid Shoulder
+					i(26899, {sourceID = 11562 }),	-- 69 TEST Green Druid Wrist
 					--
-					i(26900, {["sourceID"] = 11563 }),	-- 70 TEST Green Druid Belt
-					i(26901, {["sourceID"] = 11564 }),	-- 70 TEST Green Druid Boot
-					i(26902, {["sourceID"] = 11565 }),	-- 70 TEST Green Druid Chest
-					i(26903, {["sourceID"] = 11566 }),	-- 70 TEST Green Druid Hand
-					i(26904, {["sourceID"] = 11567 }),	-- 70 TEST Green Druid Head
-					i(26905, {["sourceID"] = 11568 }),	-- 70 TEST Green Druid Legs
-					i(26906, {["sourceID"] = 11569 }),	-- 70 TEST Green Druid Shoulder
-					i(26907, {["sourceID"] = 11570 }),	-- 70 TEST Green Druid Wrist
+					i(26900, {sourceID = 11563 }),	-- 70 TEST Green Druid Belt
+					i(26901, {sourceID = 11564 }),	-- 70 TEST Green Druid Boot
+					i(26902, {sourceID = 11565 }),	-- 70 TEST Green Druid Chest
+					i(26903, {sourceID = 11566 }),	-- 70 TEST Green Druid Hand
+					i(26904, {sourceID = 11567 }),	-- 70 TEST Green Druid Head
+					i(26905, {sourceID = 11568 }),	-- 70 TEST Green Druid Legs
+					i(26906, {sourceID = 11569 }),	-- 70 TEST Green Druid Shoulder
+					i(26907, {sourceID = 11570 }),	-- 70 TEST Green Druid Wrist
 					--
-					i(26908, {["sourceID"] = 11571 }),	-- 71 TEST Green Druid Belt
-					i(26909, {["sourceID"] = 11572 }),	-- 71 TEST Green Druid Boot
-					i(26910, {["sourceID"] = 11573 }),	-- 71 TEST Green Druid Chest
-					i(26911, {["sourceID"] = 11574 }),	-- 71 TEST Green Druid Hand
-					i(26912, {["sourceID"] = 11575 }),	-- 71 TEST Green Druid Head
-					i(26913, {["sourceID"] = 11576 }),	-- 71 TEST Green Druid Legs
-					i(26914, {["sourceID"] = 11577 }),	-- 71 TEST Green Druid Shoulder
-					i(26915, {["sourceID"] = 11578 }),	-- 71 TEST Green Druid Wrist
+					i(26908, {sourceID = 11571 }),	-- 71 TEST Green Druid Belt
+					i(26909, {sourceID = 11572 }),	-- 71 TEST Green Druid Boot
+					i(26910, {sourceID = 11573 }),	-- 71 TEST Green Druid Chest
+					i(26911, {sourceID = 11574 }),	-- 71 TEST Green Druid Hand
+					i(26912, {sourceID = 11575 }),	-- 71 TEST Green Druid Head
+					i(26913, {sourceID = 11576 }),	-- 71 TEST Green Druid Legs
+					i(26914, {sourceID = 11577 }),	-- 71 TEST Green Druid Shoulder
+					i(26915, {sourceID = 11578 }),	-- 71 TEST Green Druid Wrist
 					--
-					i(26916, {["sourceID"] = 11579 }),	-- 72 TEST Green Druid Belt
-					i(26917, {["sourceID"] = 11580 }),	-- 72 TEST Green Druid Boot
-					i(26918, {["sourceID"] = 11581 }),	-- 72 TEST Green Druid Chest
-					i(26919, {["sourceID"] = 11582 }),	-- 72 TEST Green Druid Hand
-					i(26920, {["sourceID"] = 11583 }),	-- 72 TEST Green Druid Head
-					i(26921, {["sourceID"] = 11584 }),	-- 72 TEST Green Druid Legs
-					i(26922, {["sourceID"] = 11585 }),	-- 72 TEST Green Druid Shoulder
-					i(26923, {["sourceID"] = 11586 }),	-- 72 TEST Green Druid Wrist
+					i(26916, {sourceID = 11579 }),	-- 72 TEST Green Druid Belt
+					i(26917, {sourceID = 11580 }),	-- 72 TEST Green Druid Boot
+					i(26918, {sourceID = 11581 }),	-- 72 TEST Green Druid Chest
+					i(26919, {sourceID = 11582 }),	-- 72 TEST Green Druid Hand
+					i(26920, {sourceID = 11583 }),	-- 72 TEST Green Druid Head
+					i(26921, {sourceID = 11584 }),	-- 72 TEST Green Druid Legs
+					i(26922, {sourceID = 11585 }),	-- 72 TEST Green Druid Shoulder
+					i(26923, {sourceID = 11586 }),	-- 72 TEST Green Druid Wrist
 				}),
 				cl(HUNTER, {
-					i(26280, {["sourceID"] = 10971 }),	-- 59 TEST Green Hunter Belt
-					i(26281, {["sourceID"] = 10972 }),	-- 59 TEST Green Hunter Boot
-					i(26282, {["sourceID"] = 10973 }),	-- 59 TEST Green Hunter Chest
-					i(26283, {["sourceID"] = 10974 }),	-- 59 TEST Green Hunter Hand
-					i(26284, {["sourceID"] = 10975 }),	-- 59 TEST Green Hunter Head
-					i(26285, {["sourceID"] = 10976 }),	-- 59 TEST Green Hunter Legs
-					i(26286, {["sourceID"] = 10977 }),	-- 59 TEST Green Hunter Shoulder
-					i(26287, {["sourceID"] = 10978 }),	-- 59 TEST Green Hunter Wrist
+					i(26280, {sourceID = 10971 }),	-- 59 TEST Green Hunter Belt
+					i(26281, {sourceID = 10972 }),	-- 59 TEST Green Hunter Boot
+					i(26282, {sourceID = 10973 }),	-- 59 TEST Green Hunter Chest
+					i(26283, {sourceID = 10974 }),	-- 59 TEST Green Hunter Hand
+					i(26284, {sourceID = 10975 }),	-- 59 TEST Green Hunter Head
+					i(26285, {sourceID = 10976 }),	-- 59 TEST Green Hunter Legs
+					i(26286, {sourceID = 10977 }),	-- 59 TEST Green Hunter Shoulder
+					i(26287, {sourceID = 10978 }),	-- 59 TEST Green Hunter Wrist
 					--
-					i(26288, {["sourceID"] = 10979 }),	-- 60 TEST Green Hunter Belt
-					i(26289, {["sourceID"] = 10980 }),	-- 60 TEST Green Hunter Boot
-					i(26290, {["sourceID"] = 10981 }),	-- 60 TEST Green Hunter Chest
-					i(26291, {["sourceID"] = 10982 }),	-- 60 TEST Green Hunter Hand
-					i(26292, {["sourceID"] = 10983 }),	-- 60 TEST Green Hunter Head
-					i(26293, {["sourceID"] = 10984 }),	-- 60 TEST Green Hunter Legs
-					i(26294, {["sourceID"] = 10985 }),	-- 60 TEST Green Hunter Shoulder
-					i(26295, {["sourceID"] = 10986 }),	-- 60 TEST Green Hunter Wrist
+					i(26288, {sourceID = 10979 }),	-- 60 TEST Green Hunter Belt
+					i(26289, {sourceID = 10980 }),	-- 60 TEST Green Hunter Boot
+					i(26290, {sourceID = 10981 }),	-- 60 TEST Green Hunter Chest
+					i(26291, {sourceID = 10982 }),	-- 60 TEST Green Hunter Hand
+					i(26292, {sourceID = 10983 }),	-- 60 TEST Green Hunter Head
+					i(26293, {sourceID = 10984 }),	-- 60 TEST Green Hunter Legs
+					i(26294, {sourceID = 10985 }),	-- 60 TEST Green Hunter Shoulder
+					i(26295, {sourceID = 10986 }),	-- 60 TEST Green Hunter Wrist
 					--
-					i(26296, {["sourceID"] = 10987 }),	-- 61 TEST Green Hunter Belt
-					i(26297, {["sourceID"] = 10988 }),	-- 61 TEST Green Hunter Boot
-					i(26298, {["sourceID"] = 10989 }),	-- 61 TEST Green Hunter Chest
-					i(26299, {["sourceID"] = 10990 }),	-- 61 TEST Green Hunter Hand
-					i(26300, {["sourceID"] = 10991 }),	-- 61 TEST Green Hunter Head
-					i(26301, {["sourceID"] = 10992 }),	-- 61 TEST Green Hunter Legs
-					i(26302, {["sourceID"] = 10993 }),	-- 61 TEST Green Hunter Shoulder
-					i(26303, {["sourceID"] = 10994 }),	-- 61 TEST Green Hunter Wrist
+					i(26296, {sourceID = 10987 }),	-- 61 TEST Green Hunter Belt
+					i(26297, {sourceID = 10988 }),	-- 61 TEST Green Hunter Boot
+					i(26298, {sourceID = 10989 }),	-- 61 TEST Green Hunter Chest
+					i(26299, {sourceID = 10990 }),	-- 61 TEST Green Hunter Hand
+					i(26300, {sourceID = 10991 }),	-- 61 TEST Green Hunter Head
+					i(26301, {sourceID = 10992 }),	-- 61 TEST Green Hunter Legs
+					i(26302, {sourceID = 10993 }),	-- 61 TEST Green Hunter Shoulder
+					i(26303, {sourceID = 10994 }),	-- 61 TEST Green Hunter Wrist
 					--
-					i(26304, {["sourceID"] = 10995 }),	-- 62 TEST Green Hunter Belt
-					i(26305, {["sourceID"] = 10996 }),	-- 62 TEST Green Hunter Boot
-					i(26306, {["sourceID"] = 10997 }),	-- 62 TEST Green Hunter Chest
-					i(26307, {["sourceID"] = 10998 }),	-- 62 TEST Green Hunter Hand
-					i(26308, {["sourceID"] = 10999 }),	-- 62 TEST Green Hunter Head
-					i(26309, {["sourceID"] = 11000 }),	-- 62 TEST Green Hunter Legs
-					i(26310, {["sourceID"] = 11001 }),	-- 62 TEST Green Hunter Shoulder
-					i(26311, {["sourceID"] = 11002 }),	-- 62 TEST Green Hunter Wrist
+					i(26304, {sourceID = 10995 }),	-- 62 TEST Green Hunter Belt
+					i(26305, {sourceID = 10996 }),	-- 62 TEST Green Hunter Boot
+					i(26306, {sourceID = 10997 }),	-- 62 TEST Green Hunter Chest
+					i(26307, {sourceID = 10998 }),	-- 62 TEST Green Hunter Hand
+					i(26308, {sourceID = 10999 }),	-- 62 TEST Green Hunter Head
+					i(26309, {sourceID = 11000 }),	-- 62 TEST Green Hunter Legs
+					i(26310, {sourceID = 11001 }),	-- 62 TEST Green Hunter Shoulder
+					i(26311, {sourceID = 11002 }),	-- 62 TEST Green Hunter Wrist
 					--
-					i(26312, {["sourceID"] = 11003 }),	-- 63 TEST Green Hunter Belt
-					i(26313, {["sourceID"] = 11004 }),	-- 63 TEST Green Hunter Boot
-					i(26314, {["sourceID"] = 11005 }),	-- 63 TEST Green Hunter Chest
-					i(26315, {["sourceID"] = 11006 }),	-- 63 TEST Green Hunter Hand
-					i(26316, {["sourceID"] = 11007 }),	-- 63 TEST Green Hunter Head
-					i(26317, {["sourceID"] = 11008 }),	-- 63 TEST Green Hunter Legs
-					i(26318, {["sourceID"] = 11009 }),	-- 63 TEST Green Hunter Shoulder
-					i(26319, {["sourceID"] = 11010 }),	-- 63 TEST Green Hunter Wrist
+					i(26312, {sourceID = 11003 }),	-- 63 TEST Green Hunter Belt
+					i(26313, {sourceID = 11004 }),	-- 63 TEST Green Hunter Boot
+					i(26314, {sourceID = 11005 }),	-- 63 TEST Green Hunter Chest
+					i(26315, {sourceID = 11006 }),	-- 63 TEST Green Hunter Hand
+					i(26316, {sourceID = 11007 }),	-- 63 TEST Green Hunter Head
+					i(26317, {sourceID = 11008 }),	-- 63 TEST Green Hunter Legs
+					i(26318, {sourceID = 11009 }),	-- 63 TEST Green Hunter Shoulder
+					i(26319, {sourceID = 11010 }),	-- 63 TEST Green Hunter Wrist
 					--
-					i(26320, {["sourceID"] = 11011 }),	-- 64 TEST Green Hunter Belt
-					i(26321, {["sourceID"] = 11012 }),	-- 64 TEST Green Hunter Boot
-					i(26322, {["sourceID"] = 11013 }),	-- 64 TEST Green Hunter Chest
-					i(26323, {["sourceID"] = 11014 }),	-- 64 TEST Green Hunter Hand
-					i(26324, {["sourceID"] = 11015 }),	-- 64 TEST Green Hunter Head
-					i(26325, {["sourceID"] = 11016 }),	-- 64 TEST Green Hunter Legs
-					i(26326, {["sourceID"] = 11017 }),	-- 64 TEST Green Hunter Shoulder
-					i(26327, {["sourceID"] = 11018 }),	-- 64 TEST Green Hunter Wrist
+					i(26320, {sourceID = 11011 }),	-- 64 TEST Green Hunter Belt
+					i(26321, {sourceID = 11012 }),	-- 64 TEST Green Hunter Boot
+					i(26322, {sourceID = 11013 }),	-- 64 TEST Green Hunter Chest
+					i(26323, {sourceID = 11014 }),	-- 64 TEST Green Hunter Hand
+					i(26324, {sourceID = 11015 }),	-- 64 TEST Green Hunter Head
+					i(26325, {sourceID = 11016 }),	-- 64 TEST Green Hunter Legs
+					i(26326, {sourceID = 11017 }),	-- 64 TEST Green Hunter Shoulder
+					i(26327, {sourceID = 11018 }),	-- 64 TEST Green Hunter Wrist
 					--
-					i(26328, {["sourceID"] = 11019 }),	-- 65 TEST Green Hunter Belt
-					i(26329, {["sourceID"] = 11020 }),	-- 65 TEST Green Hunter Boot
-					i(26330, {["sourceID"] = 11021 }),	-- 65 TEST Green Hunter Chest
-					i(26331, {["sourceID"] = 11022 }),	-- 65 TEST Green Hunter Hand
-					i(26332, {["sourceID"] = 11023 }),	-- 65 TEST Green Hunter Head
-					i(26333, {["sourceID"] = 11024 }),	-- 65 TEST Green Hunter Legs
-					i(26334, {["sourceID"] = 11025 }),	-- 65 TEST Green Hunter Shoulder
-					i(26335, {["sourceID"] = 11026 }),	-- 65 TEST Green Hunter Wrist
+					i(26328, {sourceID = 11019 }),	-- 65 TEST Green Hunter Belt
+					i(26329, {sourceID = 11020 }),	-- 65 TEST Green Hunter Boot
+					i(26330, {sourceID = 11021 }),	-- 65 TEST Green Hunter Chest
+					i(26331, {sourceID = 11022 }),	-- 65 TEST Green Hunter Hand
+					i(26332, {sourceID = 11023 }),	-- 65 TEST Green Hunter Head
+					i(26333, {sourceID = 11024 }),	-- 65 TEST Green Hunter Legs
+					i(26334, {sourceID = 11025 }),	-- 65 TEST Green Hunter Shoulder
+					i(26335, {sourceID = 11026 }),	-- 65 TEST Green Hunter Wrist
 					--
-					i(26336, {["sourceID"] = 11027 }),	-- 66 TEST Green Hunter Belt
-					i(26337, {["sourceID"] = 11028 }),	-- 66 TEST Green Hunter Boot
-					i(26338, {["sourceID"] = 11029 }),	-- 66 TEST Green Hunter Chest
-					i(26339, {["sourceID"] = 11030 }),	-- 66 TEST Green Hunter Hand
-					i(26340, {["sourceID"] = 11031 }),	-- 66 TEST Green Hunter Head
-					i(26341, {["sourceID"] = 11032 }),	-- 66 TEST Green Hunter Legs
-					i(26342, {["sourceID"] = 11033 }),	-- 66 TEST Green Hunter Shoulder
-					i(26343, {["sourceID"] = 11034 }),	-- 66 TEST Green Hunter Wrist
+					i(26336, {sourceID = 11027 }),	-- 66 TEST Green Hunter Belt
+					i(26337, {sourceID = 11028 }),	-- 66 TEST Green Hunter Boot
+					i(26338, {sourceID = 11029 }),	-- 66 TEST Green Hunter Chest
+					i(26339, {sourceID = 11030 }),	-- 66 TEST Green Hunter Hand
+					i(26340, {sourceID = 11031 }),	-- 66 TEST Green Hunter Head
+					i(26341, {sourceID = 11032 }),	-- 66 TEST Green Hunter Legs
+					i(26342, {sourceID = 11033 }),	-- 66 TEST Green Hunter Shoulder
+					i(26343, {sourceID = 11034 }),	-- 66 TEST Green Hunter Wrist
 					--
-					i(26344, {["sourceID"] = 11035 }),	-- 67 TEST Green Hunter Belt
-					i(26345, {["sourceID"] = 11036 }),	-- 67 TEST Green Hunter Boot
-					i(26346, {["sourceID"] = 11037 }),	-- 67 TEST Green Hunter Chest
-					i(26347, {["sourceID"] = 11038 }),	-- 67 TEST Green Hunter Hand
-					i(26348, {["sourceID"] = 11039 }),	-- 67 TEST Green Hunter Head
-					i(26349, {["sourceID"] = 11040 }),	-- 67 TEST Green Hunter Legs
-					i(26350, {["sourceID"] = 11041 }),	-- 67 TEST Green Hunter Shoulder
-					i(26351, {["sourceID"] = 11042 }),	-- 67 TEST Green Hunter Wrist
+					i(26344, {sourceID = 11035 }),	-- 67 TEST Green Hunter Belt
+					i(26345, {sourceID = 11036 }),	-- 67 TEST Green Hunter Boot
+					i(26346, {sourceID = 11037 }),	-- 67 TEST Green Hunter Chest
+					i(26347, {sourceID = 11038 }),	-- 67 TEST Green Hunter Hand
+					i(26348, {sourceID = 11039 }),	-- 67 TEST Green Hunter Head
+					i(26349, {sourceID = 11040 }),	-- 67 TEST Green Hunter Legs
+					i(26350, {sourceID = 11041 }),	-- 67 TEST Green Hunter Shoulder
+					i(26351, {sourceID = 11042 }),	-- 67 TEST Green Hunter Wrist
 					--
-					i(26352, {["sourceID"] = 11043 }),	-- 68 TEST Green Hunter Belt
-					i(26353, {["sourceID"] = 11044 }),	-- 68 TEST Green Hunter Boot
-					i(26354, {["sourceID"] = 11045 }),	-- 68 TEST Green Hunter Chest
-					i(26355, {["sourceID"] = 11046 }),	-- 68 TEST Green Hunter Hand
-					i(26356, {["sourceID"] = 11047 }),	-- 68 TEST Green Hunter Head
-					i(26357, {["sourceID"] = 11048 }),	-- 68 TEST Green Hunter Legs
-					i(26358, {["sourceID"] = 11049 }),	-- 68 TEST Green Hunter Shoulder
-					i(26359, {["sourceID"] = 11050 }),	-- 68 TEST Green Hunter Wrist
+					i(26352, {sourceID = 11043 }),	-- 68 TEST Green Hunter Belt
+					i(26353, {sourceID = 11044 }),	-- 68 TEST Green Hunter Boot
+					i(26354, {sourceID = 11045 }),	-- 68 TEST Green Hunter Chest
+					i(26355, {sourceID = 11046 }),	-- 68 TEST Green Hunter Hand
+					i(26356, {sourceID = 11047 }),	-- 68 TEST Green Hunter Head
+					i(26357, {sourceID = 11048 }),	-- 68 TEST Green Hunter Legs
+					i(26358, {sourceID = 11049 }),	-- 68 TEST Green Hunter Shoulder
+					i(26359, {sourceID = 11050 }),	-- 68 TEST Green Hunter Wrist
 					--
-					i(26360, {["sourceID"] = 11051 }),	-- 69 TEST Green Hunter Belt
-					i(26361, {["sourceID"] = 11052 }),	-- 69 TEST Green Hunter Boot
-					i(26362, {["sourceID"] = 11053 }),	-- 69 TEST Green Hunter Chest
-					i(26363, {["sourceID"] = 11054 }),	-- 69 TEST Green Hunter Hand
-					i(26364, {["sourceID"] = 11055 }),	-- 69 TEST Green Hunter Head
-					i(26365, {["sourceID"] = 11056 }),	-- 69 TEST Green Hunter Legs
-					i(26366, {["sourceID"] = 11057 }),	-- 69 TEST Green Hunter Shoulder
-					i(26367, {["sourceID"] = 11058 }),	-- 69 TEST Green Hunter Wrist
+					i(26360, {sourceID = 11051 }),	-- 69 TEST Green Hunter Belt
+					i(26361, {sourceID = 11052 }),	-- 69 TEST Green Hunter Boot
+					i(26362, {sourceID = 11053 }),	-- 69 TEST Green Hunter Chest
+					i(26363, {sourceID = 11054 }),	-- 69 TEST Green Hunter Hand
+					i(26364, {sourceID = 11055 }),	-- 69 TEST Green Hunter Head
+					i(26365, {sourceID = 11056 }),	-- 69 TEST Green Hunter Legs
+					i(26366, {sourceID = 11057 }),	-- 69 TEST Green Hunter Shoulder
+					i(26367, {sourceID = 11058 }),	-- 69 TEST Green Hunter Wrist
 					--
-					i(26368, {["sourceID"] = 11059 }),	-- 70 TEST Green Hunter Belt
-					i(26369, {["sourceID"] = 11060 }),	-- 70 TEST Green Hunter Boot
-					i(26370, {["sourceID"] = 11061 }),	-- 70 TEST Green Hunter Chest
-					i(26371, {["sourceID"] = 11062 }),	-- 70 TEST Green Hunter Hand
-					i(26372, {["sourceID"] = 11063 }),	-- 70 TEST Green Hunter Head
-					i(26373, {["sourceID"] = 11064 }),	-- 70 TEST Green Hunter Legs
-					i(26374, {["sourceID"] = 11065 }),	-- 70 TEST Green Hunter Shoulder
-					i(26375, {["sourceID"] = 11066 }),	-- 70 TEST Green Hunter Wrist
+					i(26368, {sourceID = 11059 }),	-- 70 TEST Green Hunter Belt
+					i(26369, {sourceID = 11060 }),	-- 70 TEST Green Hunter Boot
+					i(26370, {sourceID = 11061 }),	-- 70 TEST Green Hunter Chest
+					i(26371, {sourceID = 11062 }),	-- 70 TEST Green Hunter Hand
+					i(26372, {sourceID = 11063 }),	-- 70 TEST Green Hunter Head
+					i(26373, {sourceID = 11064 }),	-- 70 TEST Green Hunter Legs
+					i(26374, {sourceID = 11065 }),	-- 70 TEST Green Hunter Shoulder
+					i(26375, {sourceID = 11066 }),	-- 70 TEST Green Hunter Wrist
 					--
-					i(26376, {["sourceID"] = 11067 }),	-- 71 TEST Green Hunter Belt
-					i(26377, {["sourceID"] = 11068 }),	-- 71 TEST Green Hunter Boot
-					i(26378, {["sourceID"] = 11069 }),	-- 71 TEST Green Hunter Chest
-					i(26379, {["sourceID"] = 11070 }),	-- 71 TEST Green Hunter Hand
-					i(26380, {["sourceID"] = 11071 }),	-- 71 TEST Green Hunter Head
-					i(26381, {["sourceID"] = 11072 }),	-- 71 TEST Green Hunter Legs
-					i(26382, {["sourceID"] = 11073 }),	-- 71 TEST Green Hunter Shoulder
-					i(26383, {["sourceID"] = 11074 }),	-- 71 TEST Green Hunter Wrist
+					i(26376, {sourceID = 11067 }),	-- 71 TEST Green Hunter Belt
+					i(26377, {sourceID = 11068 }),	-- 71 TEST Green Hunter Boot
+					i(26378, {sourceID = 11069 }),	-- 71 TEST Green Hunter Chest
+					i(26379, {sourceID = 11070 }),	-- 71 TEST Green Hunter Hand
+					i(26380, {sourceID = 11071 }),	-- 71 TEST Green Hunter Head
+					i(26381, {sourceID = 11072 }),	-- 71 TEST Green Hunter Legs
+					i(26382, {sourceID = 11073 }),	-- 71 TEST Green Hunter Shoulder
+					i(26383, {sourceID = 11074 }),	-- 71 TEST Green Hunter Wrist
 					--
-					i(26384, {["sourceID"] = 11075 }),	-- 72 TEST Green Hunter Belt
-					i(26385, {["sourceID"] = 11076 }),	-- 72 TEST Green Hunter Boot
-					i(26386, {["sourceID"] = 11077 }),	-- 72 TEST Green Hunter Chest
-					i(26387, {["sourceID"] = 11078 }),	-- 72 TEST Green Hunter Hand
-					i(26388, {["sourceID"] = 11079 }),	-- 72 TEST Green Hunter Head
-					i(26389, {["sourceID"] = 11080 }),	-- 72 TEST Green Hunter Legs
-					i(26390, {["sourceID"] = 11081 }),	-- 72 TEST Green Hunter Shoulder
-					i(26391, {["sourceID"] = 11082 }),	-- 72 TEST Green Hunter Wrist
+					i(26384, {sourceID = 11075 }),	-- 72 TEST Green Hunter Belt
+					i(26385, {sourceID = 11076 }),	-- 72 TEST Green Hunter Boot
+					i(26386, {sourceID = 11077 }),	-- 72 TEST Green Hunter Chest
+					i(26387, {sourceID = 11078 }),	-- 72 TEST Green Hunter Hand
+					i(26388, {sourceID = 11079 }),	-- 72 TEST Green Hunter Head
+					i(26389, {sourceID = 11080 }),	-- 72 TEST Green Hunter Legs
+					i(26390, {sourceID = 11081 }),	-- 72 TEST Green Hunter Shoulder
+					i(26391, {sourceID = 11082 }),	-- 72 TEST Green Hunter Wrist
 				}),
 				cl(PALADIN, {
-					i(27036, {["sourceID"] = 11699 }),	-- 59 TEST Green Paladin Belt
-					i(27037, {["sourceID"] = 11700 }),	-- 59 TEST Green Paladin Boot
-					i(27038, {["sourceID"] = 11701 }),	-- 59 TEST Green Paladin Chest
-					i(27039, {["sourceID"] = 11702 }),	-- 59 TEST Green Paladin Hand
-					i(27040, {["sourceID"] = 11703 }),	-- 59 TEST Green Paladin Head
-					i(27041, {["sourceID"] = 11704 }),	-- 59 TEST Green Paladin Legs
-					i(27042, {["sourceID"] = 11705 }),	-- 59 TEST Green Paladin Shoulder
-					i(27043, {["sourceID"] = 11706 }),	-- 59 TEST Green Paladin Wrist
+					i(27036, {sourceID = 11699 }),	-- 59 TEST Green Paladin Belt
+					i(27037, {sourceID = 11700 }),	-- 59 TEST Green Paladin Boot
+					i(27038, {sourceID = 11701 }),	-- 59 TEST Green Paladin Chest
+					i(27039, {sourceID = 11702 }),	-- 59 TEST Green Paladin Hand
+					i(27040, {sourceID = 11703 }),	-- 59 TEST Green Paladin Head
+					i(27041, {sourceID = 11704 }),	-- 59 TEST Green Paladin Legs
+					i(27042, {sourceID = 11705 }),	-- 59 TEST Green Paladin Shoulder
+					i(27043, {sourceID = 11706 }),	-- 59 TEST Green Paladin Wrist
 					--
-					i(27044, {["sourceID"] = 11707 }),	-- 60 TEST Green Paladin Belt
-					i(27045, {["sourceID"] = 11708 }),	-- 60 TEST Green Paladin Boot
-					i(27046, {["sourceID"] = 11709 }),	-- 60 TEST Green Paladin Chest
-					i(27047, {["sourceID"] = 11710 }),	-- 60 TEST Green Paladin Hand
-					i(27048, {["sourceID"] = 11711 }),	-- 60 TEST Green Paladin Head
-					i(27049, {["sourceID"] = 11712 }),	-- 60 TEST Green Paladin Legs
-					i(27050, {["sourceID"] = 11713 }),	-- 60 TEST Green Paladin Shoulder
-					i(27051, {["sourceID"] = 11714 }),	-- 60 TEST Green Paladin Wrist
+					i(27044, {sourceID = 11707 }),	-- 60 TEST Green Paladin Belt
+					i(27045, {sourceID = 11708 }),	-- 60 TEST Green Paladin Boot
+					i(27046, {sourceID = 11709 }),	-- 60 TEST Green Paladin Chest
+					i(27047, {sourceID = 11710 }),	-- 60 TEST Green Paladin Hand
+					i(27048, {sourceID = 11711 }),	-- 60 TEST Green Paladin Head
+					i(27049, {sourceID = 11712 }),	-- 60 TEST Green Paladin Legs
+					i(27050, {sourceID = 11713 }),	-- 60 TEST Green Paladin Shoulder
+					i(27051, {sourceID = 11714 }),	-- 60 TEST Green Paladin Wrist
 					--
-					i(27052, {["sourceID"] = 11715 }),	-- 61 TEST Green Paladin Belt
-					i(27053, {["sourceID"] = 11716 }),	-- 61 TEST Green Paladin Boot
-					i(27054, {["sourceID"] = 11717 }),	-- 61 TEST Green Paladin Chest
-					i(27055, {["sourceID"] = 11718 }),	-- 61 TEST Green Paladin Hand
-					i(27056, {["sourceID"] = 11719 }),	-- 61 TEST Green Paladin Head
-					i(27057, {["sourceID"] = 11720 }),	-- 61 TEST Green Paladin Legs
-					i(27058, {["sourceID"] = 11721 }),	-- 61 TEST Green Paladin Shoulder
-					i(27059, {["sourceID"] = 11722 }),	-- 61 TEST Green Paladin Wrist
+					i(27052, {sourceID = 11715 }),	-- 61 TEST Green Paladin Belt
+					i(27053, {sourceID = 11716 }),	-- 61 TEST Green Paladin Boot
+					i(27054, {sourceID = 11717 }),	-- 61 TEST Green Paladin Chest
+					i(27055, {sourceID = 11718 }),	-- 61 TEST Green Paladin Hand
+					i(27056, {sourceID = 11719 }),	-- 61 TEST Green Paladin Head
+					i(27057, {sourceID = 11720 }),	-- 61 TEST Green Paladin Legs
+					i(27058, {sourceID = 11721 }),	-- 61 TEST Green Paladin Shoulder
+					i(27059, {sourceID = 11722 }),	-- 61 TEST Green Paladin Wrist
 					--
-					i(27060, {["sourceID"] = 11723 }),	-- 62 TEST Green Paladin Belt
-					i(27061, {["sourceID"] = 11724 }),	-- 62 TEST Green Paladin Boot
-					i(27062, {["sourceID"] = 11725 }),	-- 62 TEST Green Paladin Chest
-					i(27063, {["sourceID"] = 11726 }),	-- 62 TEST Green Paladin Hand
-					i(27064, {["sourceID"] = 11727 }),	-- 62 TEST Green Paladin Head
-					i(27065, {["sourceID"] = 11728 }),	-- 62 TEST Green Paladin Legs
-					i(27066, {["sourceID"] = 11729 }),	-- 62 TEST Green Paladin Shoulder
-					i(27067, {["sourceID"] = 11730 }),	-- 62 TEST Green Paladin Wrist
+					i(27060, {sourceID = 11723 }),	-- 62 TEST Green Paladin Belt
+					i(27061, {sourceID = 11724 }),	-- 62 TEST Green Paladin Boot
+					i(27062, {sourceID = 11725 }),	-- 62 TEST Green Paladin Chest
+					i(27063, {sourceID = 11726 }),	-- 62 TEST Green Paladin Hand
+					i(27064, {sourceID = 11727 }),	-- 62 TEST Green Paladin Head
+					i(27065, {sourceID = 11728 }),	-- 62 TEST Green Paladin Legs
+					i(27066, {sourceID = 11729 }),	-- 62 TEST Green Paladin Shoulder
+					i(27067, {sourceID = 11730 }),	-- 62 TEST Green Paladin Wrist
 					--
-					i(27068, {["sourceID"] = 11731 }),	-- 63 TEST Green Paladin Belt
-					i(27069, {["sourceID"] = 11732 }),	-- 63 TEST Green Paladin Boot
-					i(27070, {["sourceID"] = 11733 }),	-- 63 TEST Green Paladin Chest
-					i(27071, {["sourceID"] = 11734 }),	-- 63 TEST Green Paladin Hand
-					i(27072, {["sourceID"] = 11735 }),	-- 63 TEST Green Paladin Head
-					i(27073, {["sourceID"] = 11736 }),	-- 63 TEST Green Paladin Legs
-					i(27074, {["sourceID"] = 11737 }),	-- 63 TEST Green Paladin Shoulder
-					i(27075, {["sourceID"] = 11738 }),	-- 63 TEST Green Paladin Wrist
+					i(27068, {sourceID = 11731 }),	-- 63 TEST Green Paladin Belt
+					i(27069, {sourceID = 11732 }),	-- 63 TEST Green Paladin Boot
+					i(27070, {sourceID = 11733 }),	-- 63 TEST Green Paladin Chest
+					i(27071, {sourceID = 11734 }),	-- 63 TEST Green Paladin Hand
+					i(27072, {sourceID = 11735 }),	-- 63 TEST Green Paladin Head
+					i(27073, {sourceID = 11736 }),	-- 63 TEST Green Paladin Legs
+					i(27074, {sourceID = 11737 }),	-- 63 TEST Green Paladin Shoulder
+					i(27075, {sourceID = 11738 }),	-- 63 TEST Green Paladin Wrist
 					--
-					i(27076, {["sourceID"] = 11739 }),	-- 64 TEST Green Paladin Belt
-					i(27077, {["sourceID"] = 11740 }),	-- 64 TEST Green Paladin Boot
-					i(27078, {["sourceID"] = 11741 }),	-- 64 TEST Green Paladin Chest
-					i(27079, {["sourceID"] = 11742 }),	-- 64 TEST Green Paladin Hand
-					i(27080, {["sourceID"] = 11743 }),	-- 64 TEST Green Paladin Head
-					i(27081, {["sourceID"] = 11744 }),	-- 64 TEST Green Paladin Legs
-					i(27082, {["sourceID"] = 11745 }),	-- 64 TEST Green Paladin Shoulder
-					i(27083, {["sourceID"] = 11746 }),	-- 64 TEST Green Paladin Wrist
+					i(27076, {sourceID = 11739 }),	-- 64 TEST Green Paladin Belt
+					i(27077, {sourceID = 11740 }),	-- 64 TEST Green Paladin Boot
+					i(27078, {sourceID = 11741 }),	-- 64 TEST Green Paladin Chest
+					i(27079, {sourceID = 11742 }),	-- 64 TEST Green Paladin Hand
+					i(27080, {sourceID = 11743 }),	-- 64 TEST Green Paladin Head
+					i(27081, {sourceID = 11744 }),	-- 64 TEST Green Paladin Legs
+					i(27082, {sourceID = 11745 }),	-- 64 TEST Green Paladin Shoulder
+					i(27083, {sourceID = 11746 }),	-- 64 TEST Green Paladin Wrist
 					--
-					i(27084, {["sourceID"] = 11747 }),	-- 65 TEST Green Paladin Belt
-					i(27085, {["sourceID"] = 11748 }),	-- 65 TEST Green Paladin Boot
-					i(27086, {["sourceID"] = 11749 }),	-- 65 TEST Green Paladin Chest
-					i(27087, {["sourceID"] = 11750 }),	-- 65 TEST Green Paladin Hand
-					i(27088, {["sourceID"] = 11751 }),	-- 65 TEST Green Paladin Head
-					i(27089, {["sourceID"] = 11752 }),	-- 65 TEST Green Paladin Legs
-					i(27090, {["sourceID"] = 11753 }),	-- 65 TEST Green Paladin Shoulder
-					i(27091, {["sourceID"] = 11754 }),	-- 65 TEST Green Paladin Wrist
+					i(27084, {sourceID = 11747 }),	-- 65 TEST Green Paladin Belt
+					i(27085, {sourceID = 11748 }),	-- 65 TEST Green Paladin Boot
+					i(27086, {sourceID = 11749 }),	-- 65 TEST Green Paladin Chest
+					i(27087, {sourceID = 11750 }),	-- 65 TEST Green Paladin Hand
+					i(27088, {sourceID = 11751 }),	-- 65 TEST Green Paladin Head
+					i(27089, {sourceID = 11752 }),	-- 65 TEST Green Paladin Legs
+					i(27090, {sourceID = 11753 }),	-- 65 TEST Green Paladin Shoulder
+					i(27091, {sourceID = 11754 }),	-- 65 TEST Green Paladin Wrist
 					--
-					i(27092, {["sourceID"] = 11755 }),	-- 66 TEST Green Paladin Belt
-					i(27093, {["sourceID"] = 11756 }),	-- 66 TEST Green Paladin Boot
-					i(27094, {["sourceID"] = 11757 }),	-- 66 TEST Green Paladin Chest
-					i(27095, {["sourceID"] = 11758 }),	-- 66 TEST Green Paladin Hand
-					i(27096, {["sourceID"] = 11759 }),	-- 66 TEST Green Paladin Head
-					i(27097, {["sourceID"] = 11760 }),	-- 66 TEST Green Paladin Legs
-					i(27098, {["sourceID"] = 11761 }),	-- 66 TEST Green Paladin Shoulder
-					i(27099, {["sourceID"] = 11762 }),	-- 66 TEST Green Paladin Wrist
+					i(27092, {sourceID = 11755 }),	-- 66 TEST Green Paladin Belt
+					i(27093, {sourceID = 11756 }),	-- 66 TEST Green Paladin Boot
+					i(27094, {sourceID = 11757 }),	-- 66 TEST Green Paladin Chest
+					i(27095, {sourceID = 11758 }),	-- 66 TEST Green Paladin Hand
+					i(27096, {sourceID = 11759 }),	-- 66 TEST Green Paladin Head
+					i(27097, {sourceID = 11760 }),	-- 66 TEST Green Paladin Legs
+					i(27098, {sourceID = 11761 }),	-- 66 TEST Green Paladin Shoulder
+					i(27099, {sourceID = 11762 }),	-- 66 TEST Green Paladin Wrist
 					--
-					i(27100, {["sourceID"] = 11763 }),	-- 67 TEST Green Paladin Belt
-					i(27101, {["sourceID"] = 11764 }),	-- 67 TEST Green Paladin Boot
-					i(27102, {["sourceID"] = 11765 }),	-- 67 TEST Green Paladin Chest
-					i(27103, {["sourceID"] = 11766 }),	-- 67 TEST Green Paladin Hand
-					i(27104, {["sourceID"] = 11767 }),	-- 67 TEST Green Paladin Head
-					i(27105, {["sourceID"] = 11768 }),	-- 67 TEST Green Paladin Legs
-					i(27106, {["sourceID"] = 11769 }),	-- 67 TEST Green Paladin Shoulder
-					i(27107, {["sourceID"] = 11770 }),	-- 67 TEST Green Paladin Wrist
+					i(27100, {sourceID = 11763 }),	-- 67 TEST Green Paladin Belt
+					i(27101, {sourceID = 11764 }),	-- 67 TEST Green Paladin Boot
+					i(27102, {sourceID = 11765 }),	-- 67 TEST Green Paladin Chest
+					i(27103, {sourceID = 11766 }),	-- 67 TEST Green Paladin Hand
+					i(27104, {sourceID = 11767 }),	-- 67 TEST Green Paladin Head
+					i(27105, {sourceID = 11768 }),	-- 67 TEST Green Paladin Legs
+					i(27106, {sourceID = 11769 }),	-- 67 TEST Green Paladin Shoulder
+					i(27107, {sourceID = 11770 }),	-- 67 TEST Green Paladin Wrist
 					--
-					i(27108, {["sourceID"] = 11771 }),	-- 68 TEST Green Paladin Belt
-					i(27109, {["sourceID"] = 11772 }),	-- 68 TEST Green Paladin Boot
-					i(27110, {["sourceID"] = 11773 }),	-- 68 TEST Green Paladin Chest
-					i(27111, {["sourceID"] = 11774 }),	-- 68 TEST Green Paladin Hand
-					i(27112, {["sourceID"] = 11775 }),	-- 68 TEST Green Paladin Head
-					i(27113, {["sourceID"] = 11776 }),	-- 68 TEST Green Paladin Legs
-					i(27114, {["sourceID"] = 11777 }),	-- 68 TEST Green Paladin Shoulder
-					i(27115, {["sourceID"] = 11778 }),	-- 68 TEST Green Paladin Wrist
+					i(27108, {sourceID = 11771 }),	-- 68 TEST Green Paladin Belt
+					i(27109, {sourceID = 11772 }),	-- 68 TEST Green Paladin Boot
+					i(27110, {sourceID = 11773 }),	-- 68 TEST Green Paladin Chest
+					i(27111, {sourceID = 11774 }),	-- 68 TEST Green Paladin Hand
+					i(27112, {sourceID = 11775 }),	-- 68 TEST Green Paladin Head
+					i(27113, {sourceID = 11776 }),	-- 68 TEST Green Paladin Legs
+					i(27114, {sourceID = 11777 }),	-- 68 TEST Green Paladin Shoulder
+					i(27115, {sourceID = 11778 }),	-- 68 TEST Green Paladin Wrist
 					--
-					i(27116, {["sourceID"] = 11779 }),	-- 69 TEST Green Paladin Belt
-					i(27117, {["sourceID"] = 11780 }),	-- 69 TEST Green Paladin Boot
-					i(27118, {["sourceID"] = 11781 }),	-- 69 TEST Green Paladin Chest
-					i(27119, {["sourceID"] = 11782 }),	-- 69 TEST Green Paladin Hand
-					i(27120, {["sourceID"] = 11783 }),	-- 69 TEST Green Paladin Head
-					i(27121, {["sourceID"] = 11784 }),	-- 69 TEST Green Paladin Legs
-					i(27122, {["sourceID"] = 11785 }),	-- 69 TEST Green Paladin Shoulder
-					i(27123, {["sourceID"] = 11786 }),	-- 69 TEST Green Paladin Wrist
+					i(27116, {sourceID = 11779 }),	-- 69 TEST Green Paladin Belt
+					i(27117, {sourceID = 11780 }),	-- 69 TEST Green Paladin Boot
+					i(27118, {sourceID = 11781 }),	-- 69 TEST Green Paladin Chest
+					i(27119, {sourceID = 11782 }),	-- 69 TEST Green Paladin Hand
+					i(27120, {sourceID = 11783 }),	-- 69 TEST Green Paladin Head
+					i(27121, {sourceID = 11784 }),	-- 69 TEST Green Paladin Legs
+					i(27122, {sourceID = 11785 }),	-- 69 TEST Green Paladin Shoulder
+					i(27123, {sourceID = 11786 }),	-- 69 TEST Green Paladin Wrist
 					--
-					i(27124, {["sourceID"] = 11787 }),	-- 70 TEST Green Paladin Belt
-					i(27125, {["sourceID"] = 11788 }),	-- 70 TEST Green Paladin Boot
-					i(27126, {["sourceID"] = 11789 }),	-- 70 TEST Green Paladin Chest
-					i(27127, {["sourceID"] = 11790 }),	-- 70 TEST Green Paladin Hand
-					i(27128, {["sourceID"] = 11791 }),	-- 70 TEST Green Paladin Head
-					i(27129, {["sourceID"] = 11792 }),	-- 70 TEST Green Paladin Legs
-					i(27130, {["sourceID"] = 11793 }),	-- 70 TEST Green Paladin Shoulder
-					i(27131, {["sourceID"] = 11794 }),	-- 70 TEST Green Paladin Wrist
+					i(27124, {sourceID = 11787 }),	-- 70 TEST Green Paladin Belt
+					i(27125, {sourceID = 11788 }),	-- 70 TEST Green Paladin Boot
+					i(27126, {sourceID = 11789 }),	-- 70 TEST Green Paladin Chest
+					i(27127, {sourceID = 11790 }),	-- 70 TEST Green Paladin Hand
+					i(27128, {sourceID = 11791 }),	-- 70 TEST Green Paladin Head
+					i(27129, {sourceID = 11792 }),	-- 70 TEST Green Paladin Legs
+					i(27130, {sourceID = 11793 }),	-- 70 TEST Green Paladin Shoulder
+					i(27131, {sourceID = 11794 }),	-- 70 TEST Green Paladin Wrist
 					--
-					i(27132, {["sourceID"] = 11795 }),	-- 71 TEST Green Paladin Belt
-					i(27133, {["sourceID"] = 11796 }),	-- 71 TEST Green Paladin Boot
-					i(27134, {["sourceID"] = 11797 }),	-- 71 TEST Green Paladin Chest
-					i(27135, {["sourceID"] = 11798 }),	-- 71 TEST Green Paladin Hand
-					i(27136, {["sourceID"] = 11799 }),	-- 71 TEST Green Paladin Head
-					i(27137, {["sourceID"] = 11800 }),	-- 71 TEST Green Paladin Legs
-					i(27138, {["sourceID"] = 11801 }),	-- 71 TEST Green Paladin Shoulder
-					i(27139, {["sourceID"] = 11802 }),	-- 71 TEST Green Paladin Wrist
+					i(27132, {sourceID = 11795 }),	-- 71 TEST Green Paladin Belt
+					i(27133, {sourceID = 11796 }),	-- 71 TEST Green Paladin Boot
+					i(27134, {sourceID = 11797 }),	-- 71 TEST Green Paladin Chest
+					i(27135, {sourceID = 11798 }),	-- 71 TEST Green Paladin Hand
+					i(27136, {sourceID = 11799 }),	-- 71 TEST Green Paladin Head
+					i(27137, {sourceID = 11800 }),	-- 71 TEST Green Paladin Legs
+					i(27138, {sourceID = 11801 }),	-- 71 TEST Green Paladin Shoulder
+					i(27139, {sourceID = 11802 }),	-- 71 TEST Green Paladin Wrist
 					--
-					i(27140, {["sourceID"] = 11803 }),	-- 72 TEST Green Paladin Belt
-					i(27141, {["sourceID"] = 11804 }),	-- 72 TEST Green Paladin Boot
-					i(27142, {["sourceID"] = 11805 }),	-- 72 TEST Green Paladin Chest
-					i(27143, {["sourceID"] = 11806 }),	-- 72 TEST Green Paladin Hand
-					i(27144, {["sourceID"] = 11807 }),	-- 72 TEST Green Paladin Head
-					i(27145, {["sourceID"] = 11808 }),	-- 72 TEST Green Paladin Legs
-					i(27146, {["sourceID"] = 11809 }),	-- 72 TEST Green Paladin Shoulder
-					i(27147, {["sourceID"] = 11810 }),	-- 72 TEST Green Paladin Wrist
+					i(27140, {sourceID = 11803 }),	-- 72 TEST Green Paladin Belt
+					i(27141, {sourceID = 11804 }),	-- 72 TEST Green Paladin Boot
+					i(27142, {sourceID = 11805 }),	-- 72 TEST Green Paladin Chest
+					i(27143, {sourceID = 11806 }),	-- 72 TEST Green Paladin Hand
+					i(27144, {sourceID = 11807 }),	-- 72 TEST Green Paladin Head
+					i(27145, {sourceID = 11808 }),	-- 72 TEST Green Paladin Legs
+					i(27146, {sourceID = 11809 }),	-- 72 TEST Green Paladin Shoulder
+					i(27147, {sourceID = 11810 }),	-- 72 TEST Green Paladin Wrist
 					--
-					i(27950, {["sourceID"] = 12169 }),	-- TEST 60 Blue Paladin DPS Belt
-					i(27951, {["sourceID"] = 12170 }),	-- TEST 60 Blue Paladin DPS Boot
-					i(27952, {["sourceID"] = 12171 }),	-- TEST 60 Blue Paladin DPS Chest
-					i(27960, {["sourceID"] = 12177 }),	-- TEST 60 Blue Paladin DPS Cloak
-					i(27953, {["sourceID"] = 12172 }),	-- TEST 60 Blue Paladin DPS Hand
-					i(27954, {["sourceID"] = 12173 }),	-- TEST 60 Blue Paladin DPS Head
-					i(27955, {["sourceID"] = 12174 }),	-- TEST 60 Blue Paladin DPS Legs
-					i(27956, {["sourceID"] = 12175 }),	-- TEST 60 Blue Paladin DPS Shoulder
-					i(27957, {["sourceID"] = 12176 }),	-- TEST 60 Blue Paladin DPS Wrist
+					i(27950, {sourceID = 12169 }),	-- TEST 60 Blue Paladin DPS Belt
+					i(27951, {sourceID = 12170 }),	-- TEST 60 Blue Paladin DPS Boot
+					i(27952, {sourceID = 12171 }),	-- TEST 60 Blue Paladin DPS Chest
+					i(27960, {sourceID = 12177 }),	-- TEST 60 Blue Paladin DPS Cloak
+					i(27953, {sourceID = 12172 }),	-- TEST 60 Blue Paladin DPS Hand
+					i(27954, {sourceID = 12173 }),	-- TEST 60 Blue Paladin DPS Head
+					i(27955, {sourceID = 12174 }),	-- TEST 60 Blue Paladin DPS Legs
+					i(27956, {sourceID = 12175 }),	-- TEST 60 Blue Paladin DPS Shoulder
+					i(27957, {sourceID = 12176 }),	-- TEST 60 Blue Paladin DPS Wrist
 					--
-					i(27997, {["sourceID"] = 12201 }),	-- TEST 60 Blue Ret Paladin DPS Belt
-					i(27998, {["sourceID"] = 12202 }),	-- TEST 60 Blue Ret Paladin DPS Boot
-					i(28007, {["sourceID"] = 12209 }),	-- TEST 60 Blue Ret Paladin DPS Cloak
-					i(27999, {["sourceID"] = 12203 }),	-- TEST 60 Blue Ret Paladin DPS Chest
-					i(28000, {["sourceID"] = 12204 }),	-- TEST 60 Blue Ret Paladin DPS Hand
-					i(28001, {["sourceID"] = 12205 }),	-- TEST 60 Blue Ret Paladin DPS Head
-					i(28002, {["sourceID"] = 12206 }),	-- TEST 60 Blue Ret Paladin DPS Legs
-					i(28003, {["sourceID"] = 12207 }),	-- TEST 60 Blue Ret Paladin DPS Shoulder
-					i(28004, {["sourceID"] = 12208 }),	-- TEST 60 Blue Ret Paladin DPS Wrist
+					i(27997, {sourceID = 12201 }),	-- TEST 60 Blue Ret Paladin DPS Belt
+					i(27998, {sourceID = 12202 }),	-- TEST 60 Blue Ret Paladin DPS Boot
+					i(28007, {sourceID = 12209 }),	-- TEST 60 Blue Ret Paladin DPS Cloak
+					i(27999, {sourceID = 12203 }),	-- TEST 60 Blue Ret Paladin DPS Chest
+					i(28000, {sourceID = 12204 }),	-- TEST 60 Blue Ret Paladin DPS Hand
+					i(28001, {sourceID = 12205 }),	-- TEST 60 Blue Ret Paladin DPS Head
+					i(28002, {sourceID = 12206 }),	-- TEST 60 Blue Ret Paladin DPS Legs
+					i(28003, {sourceID = 12207 }),	-- TEST 60 Blue Ret Paladin DPS Shoulder
+					i(28004, {sourceID = 12208 }),	-- TEST 60 Blue Ret Paladin DPS Wrist
 					--
-					i(27963, {["sourceID"] = 12180 }),	-- TEST 130 Epic Paladin DPS Belt
-					i(27964, {["sourceID"] = 12181 }),	-- TEST 130 Epic Paladin DPS Boot
-					i(27973, {["sourceID"] = 12188 }),	-- TEST 130 Epic Paladin DPS Cloak
-					i(27966, {["sourceID"] = 12183 }),	-- TEST 130 Epic Paladin DPS Hand
-					i(27967, {["sourceID"] = 12184 }),	-- TEST 130 Epic Paladin DPS Head
-					i(27968, {["sourceID"] = 12185 }),	-- TEST 130 Epic Paladin DPS Legs
-					i(27969, {["sourceID"] = 12186 }),	-- TEST 130 Epic Paladin DPS Shoulder
-					i(27970, {["sourceID"] = 12187 }),	-- TEST 130 Epic Paladin DPS Wrist
+					i(27963, {sourceID = 12180 }),	-- TEST 130 Epic Paladin DPS Belt
+					i(27964, {sourceID = 12181 }),	-- TEST 130 Epic Paladin DPS Boot
+					i(27973, {sourceID = 12188 }),	-- TEST 130 Epic Paladin DPS Cloak
+					i(27966, {sourceID = 12183 }),	-- TEST 130 Epic Paladin DPS Hand
+					i(27967, {sourceID = 12184 }),	-- TEST 130 Epic Paladin DPS Head
+					i(27968, {sourceID = 12185 }),	-- TEST 130 Epic Paladin DPS Legs
+					i(27969, {sourceID = 12186 }),	-- TEST 130 Epic Paladin DPS Shoulder
+					i(27970, {sourceID = 12187 }),	-- TEST 130 Epic Paladin DPS Wrist
 					--
-					i(28010, {["sourceID"] = 12212 }),	-- TEST 130 Epic Ret Paladin DPS Belt
-					i(28011, {["sourceID"] = 12213 }),	-- TEST 130 Epic Ret Paladin DPS Boot
-					i(28012, {["sourceID"] = 12214 }),	-- TEST 130 Epic Ret Paladin DPS Chest
-					i(28020, {["sourceID"] = 12220 }),	-- TEST 130 Epic Ret Paladin DPS Cloak
-					i(28013, {["sourceID"] = 12215 }),	-- TEST 130 Epic Ret Paladin DPS Hand
-					i(28014, {["sourceID"] = 12216 }),	-- TEST 130 Epic Ret Paladin DPS Head
-					i(28015, {["sourceID"] = 12217 }),	-- TEST 130 Epic Ret Paladin DPS Legs
-					i(28016, {["sourceID"] = 12218 }),	-- TEST 130 Epic Ret Paladin DPS Shoulder
-					i(28017, {["sourceID"] = 12219 }),	-- TEST 130 Epic Ret Paladin DPS Wrist
+					i(28010, {sourceID = 12212 }),	-- TEST 130 Epic Ret Paladin DPS Belt
+					i(28011, {sourceID = 12213 }),	-- TEST 130 Epic Ret Paladin DPS Boot
+					i(28012, {sourceID = 12214 }),	-- TEST 130 Epic Ret Paladin DPS Chest
+					i(28020, {sourceID = 12220 }),	-- TEST 130 Epic Ret Paladin DPS Cloak
+					i(28013, {sourceID = 12215 }),	-- TEST 130 Epic Ret Paladin DPS Hand
+					i(28014, {sourceID = 12216 }),	-- TEST 130 Epic Ret Paladin DPS Head
+					i(28015, {sourceID = 12217 }),	-- TEST 130 Epic Ret Paladin DPS Legs
+					i(28016, {sourceID = 12218 }),	-- TEST 130 Epic Ret Paladin DPS Shoulder
+					i(28017, {sourceID = 12219 }),	-- TEST 130 Epic Ret Paladin DPS Wrist
 				}),
 				cl(ROGUE, {
-					i(26168, {["sourceID"] = 10859 }),	-- 59 TEST Green Rogue Belt
-					i(26169, {["sourceID"] = 10860 }),	-- 59 TEST Green Rogue Boot
-					i(26170, {["sourceID"] = 10861 }),	-- 59 TEST Green Rogue Chest
-					i(26171, {["sourceID"] = 10862 }),	-- 59 TEST Green Rogue Hand
-					i(26172, {["sourceID"] = 10863 }),	-- 59 TEST Green Rogue Head
-					i(26173, {["sourceID"] = 10864 }),	-- 59 TEST Green Rogue Legs
-					i(26174, {["sourceID"] = 10865 }),	-- 59 TEST Green Rogue Shoulder
-					i(26175, {["sourceID"] = 10866 }),	-- 59 TEST Green Rogue Wrist
+					i(26168, {sourceID = 10859 }),	-- 59 TEST Green Rogue Belt
+					i(26169, {sourceID = 10860 }),	-- 59 TEST Green Rogue Boot
+					i(26170, {sourceID = 10861 }),	-- 59 TEST Green Rogue Chest
+					i(26171, {sourceID = 10862 }),	-- 59 TEST Green Rogue Hand
+					i(26172, {sourceID = 10863 }),	-- 59 TEST Green Rogue Head
+					i(26173, {sourceID = 10864 }),	-- 59 TEST Green Rogue Legs
+					i(26174, {sourceID = 10865 }),	-- 59 TEST Green Rogue Shoulder
+					i(26175, {sourceID = 10866 }),	-- 59 TEST Green Rogue Wrist
 					--
-					i(26176, {["sourceID"] = 10867 }),	-- 60 TEST Green Rogue Belt
-					i(26177, {["sourceID"] = 10868 }),	-- 60 TEST Green Rogue Boot
-					i(26178, {["sourceID"] = 10869 }),	-- 60 TEST Green Rogue Chest
-					i(26179, {["sourceID"] = 10870 }),	-- 60 TEST Green Rogue Hand
-					i(26180, {["sourceID"] = 10871 }),	-- 60 TEST Green Rogue Head
-					i(26181, {["sourceID"] = 10872 }),	-- 60 TEST Green Rogue Legs
-					i(26182, {["sourceID"] = 10873 }),	-- 60 TEST Green Rogue Shoulder
-					i(26183, {["sourceID"] = 10874 }),	-- 60 TEST Green Rogue Wrist
+					i(26176, {sourceID = 10867 }),	-- 60 TEST Green Rogue Belt
+					i(26177, {sourceID = 10868 }),	-- 60 TEST Green Rogue Boot
+					i(26178, {sourceID = 10869 }),	-- 60 TEST Green Rogue Chest
+					i(26179, {sourceID = 10870 }),	-- 60 TEST Green Rogue Hand
+					i(26180, {sourceID = 10871 }),	-- 60 TEST Green Rogue Head
+					i(26181, {sourceID = 10872 }),	-- 60 TEST Green Rogue Legs
+					i(26182, {sourceID = 10873 }),	-- 60 TEST Green Rogue Shoulder
+					i(26183, {sourceID = 10874 }),	-- 60 TEST Green Rogue Wrist
 					--
-					i(26184, {["sourceID"] = 10875 }),	-- 61 TEST Green Rogue Belt
-					i(26185, {["sourceID"] = 10876 }),	-- 61 TEST Green Rogue Boot
-					i(26186, {["sourceID"] = 10877 }),	-- 61 TEST Green Rogue Chest
-					i(26187, {["sourceID"] = 10878 }),	-- 61 TEST Green Rogue Hand
-					i(26188, {["sourceID"] = 10879 }),	-- 61 TEST Green Rogue Head
-					i(26189, {["sourceID"] = 10880 }),	-- 61 TEST Green Rogue Legs
-					i(26190, {["sourceID"] = 10881 }),	-- 61 TEST Green Rogue Shoulder
-					i(26191, {["sourceID"] = 10882 }),	-- 61 TEST Green Rogue Wrist
+					i(26184, {sourceID = 10875 }),	-- 61 TEST Green Rogue Belt
+					i(26185, {sourceID = 10876 }),	-- 61 TEST Green Rogue Boot
+					i(26186, {sourceID = 10877 }),	-- 61 TEST Green Rogue Chest
+					i(26187, {sourceID = 10878 }),	-- 61 TEST Green Rogue Hand
+					i(26188, {sourceID = 10879 }),	-- 61 TEST Green Rogue Head
+					i(26189, {sourceID = 10880 }),	-- 61 TEST Green Rogue Legs
+					i(26190, {sourceID = 10881 }),	-- 61 TEST Green Rogue Shoulder
+					i(26191, {sourceID = 10882 }),	-- 61 TEST Green Rogue Wrist
 					--
-					i(26192, {["sourceID"] = 10883 }),	-- 62 TEST Green Rogue Belt
-					i(26193, {["sourceID"] = 10884 }),	-- 62 TEST Green Rogue Boot
-					i(26194, {["sourceID"] = 10885 }),	-- 62 TEST Green Rogue Chest
-					i(26195, {["sourceID"] = 10886 }),	-- 62 TEST Green Rogue Hand
-					i(26196, {["sourceID"] = 10887 }),	-- 62 TEST Green Rogue Head
-					i(26197, {["sourceID"] = 10888 }),	-- 62 TEST Green Rogue Legs
-					i(26198, {["sourceID"] = 10889 }),	-- 62 TEST Green Rogue Shoulder
-					i(26199, {["sourceID"] = 10890 }),	-- 62 TEST Green Rogue Wrist
+					i(26192, {sourceID = 10883 }),	-- 62 TEST Green Rogue Belt
+					i(26193, {sourceID = 10884 }),	-- 62 TEST Green Rogue Boot
+					i(26194, {sourceID = 10885 }),	-- 62 TEST Green Rogue Chest
+					i(26195, {sourceID = 10886 }),	-- 62 TEST Green Rogue Hand
+					i(26196, {sourceID = 10887 }),	-- 62 TEST Green Rogue Head
+					i(26197, {sourceID = 10888 }),	-- 62 TEST Green Rogue Legs
+					i(26198, {sourceID = 10889 }),	-- 62 TEST Green Rogue Shoulder
+					i(26199, {sourceID = 10890 }),	-- 62 TEST Green Rogue Wrist
 					--
-					i(26200, {["sourceID"] = 10891 }),	-- 63 TEST Green Rogue Belt
-					i(26201, {["sourceID"] = 10892 }),	-- 63 TEST Green Rogue Boot
-					i(26202, {["sourceID"] = 10893 }),	-- 63 TEST Green Rogue Chest
-					i(26203, {["sourceID"] = 10894 }),	-- 63 TEST Green Rogue Hand
-					i(26204, {["sourceID"] = 10895 }),	-- 63 TEST Green Rogue Head
-					i(26205, {["sourceID"] = 10896 }),	-- 63 TEST Green Rogue Legs
-					i(26206, {["sourceID"] = 10897 }),	-- 63 TEST Green Rogue Shoulder
-					i(26207, {["sourceID"] = 10898 }),	-- 63 TEST Green Rogue Wrist
+					i(26200, {sourceID = 10891 }),	-- 63 TEST Green Rogue Belt
+					i(26201, {sourceID = 10892 }),	-- 63 TEST Green Rogue Boot
+					i(26202, {sourceID = 10893 }),	-- 63 TEST Green Rogue Chest
+					i(26203, {sourceID = 10894 }),	-- 63 TEST Green Rogue Hand
+					i(26204, {sourceID = 10895 }),	-- 63 TEST Green Rogue Head
+					i(26205, {sourceID = 10896 }),	-- 63 TEST Green Rogue Legs
+					i(26206, {sourceID = 10897 }),	-- 63 TEST Green Rogue Shoulder
+					i(26207, {sourceID = 10898 }),	-- 63 TEST Green Rogue Wrist
 					--
-					i(26208, {["sourceID"] = 10899 }),	-- 64 TEST Green Rogue Belt
-					i(26209, {["sourceID"] = 10900 }),	-- 64 TEST Green Rogue Boot
-					i(26210, {["sourceID"] = 10901 }),	-- 64 TEST Green Rogue Chest
-					i(26211, {["sourceID"] = 10902 }),	-- 64 TEST Green Rogue Hand
-					i(26212, {["sourceID"] = 10903 }),	-- 64 TEST Green Rogue Head
-					i(26213, {["sourceID"] = 10904 }),	-- 64 TEST Green Rogue Legs
-					i(26214, {["sourceID"] = 10905 }),	-- 64 TEST Green Rogue Shoulder
-					i(26215, {["sourceID"] = 10906 }),	-- 64 TEST Green Rogue Wrist
+					i(26208, {sourceID = 10899 }),	-- 64 TEST Green Rogue Belt
+					i(26209, {sourceID = 10900 }),	-- 64 TEST Green Rogue Boot
+					i(26210, {sourceID = 10901 }),	-- 64 TEST Green Rogue Chest
+					i(26211, {sourceID = 10902 }),	-- 64 TEST Green Rogue Hand
+					i(26212, {sourceID = 10903 }),	-- 64 TEST Green Rogue Head
+					i(26213, {sourceID = 10904 }),	-- 64 TEST Green Rogue Legs
+					i(26214, {sourceID = 10905 }),	-- 64 TEST Green Rogue Shoulder
+					i(26215, {sourceID = 10906 }),	-- 64 TEST Green Rogue Wrist
 					--
-					i(26216, {["sourceID"] = 10907 }),	-- 65 TEST Green Rogue Belt
-					i(26217, {["sourceID"] = 10908 }),	-- 65 TEST Green Rogue Boot
-					i(26218, {["sourceID"] = 10909 }),	-- 65 TEST Green Rogue Chest
-					i(26219, {["sourceID"] = 10910 }),	-- 65 TEST Green Rogue Hand
-					i(26220, {["sourceID"] = 10911 }),	-- 65 TEST Green Rogue Head
-					i(26221, {["sourceID"] = 10912 }),	-- 65 TEST Green Rogue Legs
-					i(26222, {["sourceID"] = 10913 }),	-- 65 TEST Green Rogue Shoulder
-					i(26223, {["sourceID"] = 10914 }),	-- 65 TEST Green Rogue Wrist
-					i(26224, {["sourceID"] = 10915 }),	-- 66 TEST Green Rogue Belt
-					i(26225, {["sourceID"] = 10916 }),	-- 66 TEST Green Rogue Boot
-					i(26226, {["sourceID"] = 10917 }),	-- 66 TEST Green Rogue Chest
-					i(26227, {["sourceID"] = 10918 }),	-- 66 TEST Green Rogue Hand
-					i(26228, {["sourceID"] = 10919 }),	-- 66 TEST Green Rogue Head
-					i(26229, {["sourceID"] = 10920 }),	-- 66 TEST Green Rogue Legs
-					i(26230, {["sourceID"] = 10921 }),	-- 66 TEST Green Rogue Shoulder
-					i(26231, {["sourceID"] = 10922 }),	-- 66 TEST Green Rogue Wrist
+					i(26216, {sourceID = 10907 }),	-- 65 TEST Green Rogue Belt
+					i(26217, {sourceID = 10908 }),	-- 65 TEST Green Rogue Boot
+					i(26218, {sourceID = 10909 }),	-- 65 TEST Green Rogue Chest
+					i(26219, {sourceID = 10910 }),	-- 65 TEST Green Rogue Hand
+					i(26220, {sourceID = 10911 }),	-- 65 TEST Green Rogue Head
+					i(26221, {sourceID = 10912 }),	-- 65 TEST Green Rogue Legs
+					i(26222, {sourceID = 10913 }),	-- 65 TEST Green Rogue Shoulder
+					i(26223, {sourceID = 10914 }),	-- 65 TEST Green Rogue Wrist
+					i(26224, {sourceID = 10915 }),	-- 66 TEST Green Rogue Belt
+					i(26225, {sourceID = 10916 }),	-- 66 TEST Green Rogue Boot
+					i(26226, {sourceID = 10917 }),	-- 66 TEST Green Rogue Chest
+					i(26227, {sourceID = 10918 }),	-- 66 TEST Green Rogue Hand
+					i(26228, {sourceID = 10919 }),	-- 66 TEST Green Rogue Head
+					i(26229, {sourceID = 10920 }),	-- 66 TEST Green Rogue Legs
+					i(26230, {sourceID = 10921 }),	-- 66 TEST Green Rogue Shoulder
+					i(26231, {sourceID = 10922 }),	-- 66 TEST Green Rogue Wrist
 					--
-					i(26232, {["sourceID"] = 10923 }),	-- 67 TEST Green Rogue Belt
-					i(26233, {["sourceID"] = 10924 }),	-- 67 TEST Green Rogue Boot
-					i(26234, {["sourceID"] = 10925 }),	-- 67 TEST Green Rogue Chest
-					i(26235, {["sourceID"] = 10926 }),	-- 67 TEST Green Rogue Hand
-					i(26236, {["sourceID"] = 10927 }),	-- 67 TEST Green Rogue Head
-					i(26237, {["sourceID"] = 10928 }),	-- 67 TEST Green Rogue Legs
-					i(26238, {["sourceID"] = 10929 }),	-- 67 TEST Green Rogue Shoulder
-					i(26239, {["sourceID"] = 10930 }),	-- 67 TEST Green Rogue Wrist
+					i(26232, {sourceID = 10923 }),	-- 67 TEST Green Rogue Belt
+					i(26233, {sourceID = 10924 }),	-- 67 TEST Green Rogue Boot
+					i(26234, {sourceID = 10925 }),	-- 67 TEST Green Rogue Chest
+					i(26235, {sourceID = 10926 }),	-- 67 TEST Green Rogue Hand
+					i(26236, {sourceID = 10927 }),	-- 67 TEST Green Rogue Head
+					i(26237, {sourceID = 10928 }),	-- 67 TEST Green Rogue Legs
+					i(26238, {sourceID = 10929 }),	-- 67 TEST Green Rogue Shoulder
+					i(26239, {sourceID = 10930 }),	-- 67 TEST Green Rogue Wrist
 					--
-					i(26240, {["sourceID"] = 10931 }),	-- 68 TEST Green Rogue Belt
-					i(26241, {["sourceID"] = 10932 }),	-- 68 TEST Green Rogue Boot
-					i(26242, {["sourceID"] = 10933 }),	-- 68 TEST Green Rogue Chest
-					i(26243, {["sourceID"] = 10934 }),	-- 68 TEST Green Rogue Hand
-					i(26244, {["sourceID"] = 10935 }),	-- 68 TEST Green Rogue Head
-					i(26245, {["sourceID"] = 10936 }),	-- 68 TEST Green Rogue Legs
-					i(26246, {["sourceID"] = 10937 }),	-- 68 TEST Green Rogue Shoulder
-					i(26247, {["sourceID"] = 10938 }),	-- 68 TEST Green Rogue Wrist
+					i(26240, {sourceID = 10931 }),	-- 68 TEST Green Rogue Belt
+					i(26241, {sourceID = 10932 }),	-- 68 TEST Green Rogue Boot
+					i(26242, {sourceID = 10933 }),	-- 68 TEST Green Rogue Chest
+					i(26243, {sourceID = 10934 }),	-- 68 TEST Green Rogue Hand
+					i(26244, {sourceID = 10935 }),	-- 68 TEST Green Rogue Head
+					i(26245, {sourceID = 10936 }),	-- 68 TEST Green Rogue Legs
+					i(26246, {sourceID = 10937 }),	-- 68 TEST Green Rogue Shoulder
+					i(26247, {sourceID = 10938 }),	-- 68 TEST Green Rogue Wrist
 					--
-					i(26248, {["sourceID"] = 10939 }),	-- 69 TEST Green Rogue Belt
-					i(26249, {["sourceID"] = 10940 }),	-- 69 TEST Green Rogue Boot
-					i(26250, {["sourceID"] = 10941 }),	-- 69 TEST Green Rogue Chest
-					i(26251, {["sourceID"] = 10942 }),	-- 69 TEST Green Rogue Hand
-					i(26252, {["sourceID"] = 10943 }),	-- 69 TEST Green Rogue Head
-					i(26253, {["sourceID"] = 10944 }),	-- 69 TEST Green Rogue Legs
-					i(26254, {["sourceID"] = 10945 }),	-- 69 TEST Green Rogue Shoulder
-					i(26255, {["sourceID"] = 10946 }),	-- 69 TEST Green Rogue Wrist
+					i(26248, {sourceID = 10939 }),	-- 69 TEST Green Rogue Belt
+					i(26249, {sourceID = 10940 }),	-- 69 TEST Green Rogue Boot
+					i(26250, {sourceID = 10941 }),	-- 69 TEST Green Rogue Chest
+					i(26251, {sourceID = 10942 }),	-- 69 TEST Green Rogue Hand
+					i(26252, {sourceID = 10943 }),	-- 69 TEST Green Rogue Head
+					i(26253, {sourceID = 10944 }),	-- 69 TEST Green Rogue Legs
+					i(26254, {sourceID = 10945 }),	-- 69 TEST Green Rogue Shoulder
+					i(26255, {sourceID = 10946 }),	-- 69 TEST Green Rogue Wrist
 					--
-					i(26256, {["sourceID"] = 10947 }),	-- 70 TEST Green Rogue Belt
-					i(26257, {["sourceID"] = 10948 }),	-- 70 TEST Green Rogue Boot
-					i(26258, {["sourceID"] = 10949 }),	-- 70 TEST Green Rogue Chest
-					i(26259, {["sourceID"] = 10950 }),	-- 70 TEST Green Rogue Hand
-					i(26260, {["sourceID"] = 10951 }),	-- 70 TEST Green Rogue Head
-					i(26261, {["sourceID"] = 10952 }),	-- 70 TEST Green Rogue Legs
-					i(26262, {["sourceID"] = 10953 }),	-- 70 TEST Green Rogue Shoulder
-					i(26263, {["sourceID"] = 10954 }),	-- 70 TEST Green Rogue Wrist
+					i(26256, {sourceID = 10947 }),	-- 70 TEST Green Rogue Belt
+					i(26257, {sourceID = 10948 }),	-- 70 TEST Green Rogue Boot
+					i(26258, {sourceID = 10949 }),	-- 70 TEST Green Rogue Chest
+					i(26259, {sourceID = 10950 }),	-- 70 TEST Green Rogue Hand
+					i(26260, {sourceID = 10951 }),	-- 70 TEST Green Rogue Head
+					i(26261, {sourceID = 10952 }),	-- 70 TEST Green Rogue Legs
+					i(26262, {sourceID = 10953 }),	-- 70 TEST Green Rogue Shoulder
+					i(26263, {sourceID = 10954 }),	-- 70 TEST Green Rogue Wrist
 					--
-					i(26264, {["sourceID"] = 10955 }),	-- 71 TEST Green Rogue Belt
-					i(26265, {["sourceID"] = 10956 }),	-- 71 TEST Green Rogue Boot
-					i(26266, {["sourceID"] = 10957 }),	-- 71 TEST Green Rogue Chest
-					i(26267, {["sourceID"] = 10958 }),	-- 71 TEST Green Rogue Hand
-					i(26268, {["sourceID"] = 10959 }),	-- 71 TEST Green Rogue Head
-					i(26269, {["sourceID"] = 10960 }),	-- 71 TEST Green Rogue Legs
-					i(26270, {["sourceID"] = 10961 }),	-- 71 TEST Green Rogue Shoulder
-					i(26271, {["sourceID"] = 10962 }),	-- 71 TEST Green Rogue Wrist
+					i(26264, {sourceID = 10955 }),	-- 71 TEST Green Rogue Belt
+					i(26265, {sourceID = 10956 }),	-- 71 TEST Green Rogue Boot
+					i(26266, {sourceID = 10957 }),	-- 71 TEST Green Rogue Chest
+					i(26267, {sourceID = 10958 }),	-- 71 TEST Green Rogue Hand
+					i(26268, {sourceID = 10959 }),	-- 71 TEST Green Rogue Head
+					i(26269, {sourceID = 10960 }),	-- 71 TEST Green Rogue Legs
+					i(26270, {sourceID = 10961 }),	-- 71 TEST Green Rogue Shoulder
+					i(26271, {sourceID = 10962 }),	-- 71 TEST Green Rogue Wrist
 					--
-					i(26272, {["sourceID"] = 10963 }),	-- 72 TEST Green Rogue Belt
-					i(26273, {["sourceID"] = 10964 }),	-- 72 TEST Green Rogue Boot
-					i(26274, {["sourceID"] = 10965 }),	-- 72 TEST Green Rogue Chest
-					i(26275, {["sourceID"] = 10966 }),	-- 72 TEST Green Rogue Hand
-					i(26276, {["sourceID"] = 10967 }),	-- 72 TEST Green Rogue Head
-					i(26277, {["sourceID"] = 10968 }),	-- 72 TEST Green Rogue Legs
-					i(26278, {["sourceID"] = 10969 }),	-- 72 TEST Green Rogue Shoulder
-					i(26279, {["sourceID"] = 10970 }),	-- 72 TEST Green Rogue Wrist
+					i(26272, {sourceID = 10963 }),	-- 72 TEST Green Rogue Belt
+					i(26273, {sourceID = 10964 }),	-- 72 TEST Green Rogue Boot
+					i(26274, {sourceID = 10965 }),	-- 72 TEST Green Rogue Chest
+					i(26275, {sourceID = 10966 }),	-- 72 TEST Green Rogue Hand
+					i(26276, {sourceID = 10967 }),	-- 72 TEST Green Rogue Head
+					i(26277, {sourceID = 10968 }),	-- 72 TEST Green Rogue Legs
+					i(26278, {sourceID = 10969 }),	-- 72 TEST Green Rogue Shoulder
+					i(26279, {sourceID = 10970 }),	-- 72 TEST Green Rogue Wrist
 				}),
 				cl(SHAMAN, {
-					i(26924, {["sourceID"] = 11587 }),	-- 59 TEST Green Shaman Belt
-					i(26925, {["sourceID"] = 11588 }),	-- 59 TEST Green Shaman Boot
-					i(26926, {["sourceID"] = 11589 }),	-- 59 TEST Green Shaman Chest
-					i(26927, {["sourceID"] = 11590 }),	-- 59 TEST Green Shaman Hand
-					i(26928, {["sourceID"] = 11591 }),	-- 59 TEST Green Shaman Head
-					i(26929, {["sourceID"] = 11592 }),	-- 59 TEST Green Shaman Legs
-					i(26930, {["sourceID"] = 11593 }),	-- 59 TEST Green Shaman Shoulder
-					i(26931, {["sourceID"] = 11594 }),	-- 59 TEST Green Shaman Wrist
+					i(26924, {sourceID = 11587 }),	-- 59 TEST Green Shaman Belt
+					i(26925, {sourceID = 11588 }),	-- 59 TEST Green Shaman Boot
+					i(26926, {sourceID = 11589 }),	-- 59 TEST Green Shaman Chest
+					i(26927, {sourceID = 11590 }),	-- 59 TEST Green Shaman Hand
+					i(26928, {sourceID = 11591 }),	-- 59 TEST Green Shaman Head
+					i(26929, {sourceID = 11592 }),	-- 59 TEST Green Shaman Legs
+					i(26930, {sourceID = 11593 }),	-- 59 TEST Green Shaman Shoulder
+					i(26931, {sourceID = 11594 }),	-- 59 TEST Green Shaman Wrist
 					--
-					i(26932, {["sourceID"] = 11595 }),	-- 60 TEST Green Shaman Belt
-					i(26933, {["sourceID"] = 11596 }),	-- 60 TEST Green Shaman Boot
-					i(26934, {["sourceID"] = 11597 }),	-- 60 TEST Green Shaman Chest
-					i(26935, {["sourceID"] = 11598 }),	-- 60 TEST Green Shaman Hand
-					i(26936, {["sourceID"] = 11599 }),	-- 60 TEST Green Shaman Head
-					i(26937, {["sourceID"] = 11600 }),	-- 60 TEST Green Shaman Legs
-					i(26938, {["sourceID"] = 11601 }),	-- 60 TEST Green Shaman Shoulder
-					i(26939, {["sourceID"] = 11602 }),	-- 60 TEST Green Shaman Wrist
+					i(26932, {sourceID = 11595 }),	-- 60 TEST Green Shaman Belt
+					i(26933, {sourceID = 11596 }),	-- 60 TEST Green Shaman Boot
+					i(26934, {sourceID = 11597 }),	-- 60 TEST Green Shaman Chest
+					i(26935, {sourceID = 11598 }),	-- 60 TEST Green Shaman Hand
+					i(26936, {sourceID = 11599 }),	-- 60 TEST Green Shaman Head
+					i(26937, {sourceID = 11600 }),	-- 60 TEST Green Shaman Legs
+					i(26938, {sourceID = 11601 }),	-- 60 TEST Green Shaman Shoulder
+					i(26939, {sourceID = 11602 }),	-- 60 TEST Green Shaman Wrist
 					--
-					i(26940, {["sourceID"] = 11603 }),	-- 61 TEST Green Shaman Belt
-					i(26941, {["sourceID"] = 11604 }),	-- 61 TEST Green Shaman Boot
-					i(26942, {["sourceID"] = 11605 }),	-- 61 TEST Green Shaman Chest
-					i(26943, {["sourceID"] = 11606 }),	-- 61 TEST Green Shaman Hand
-					i(26944, {["sourceID"] = 11607 }),	-- 61 TEST Green Shaman Head
-					i(26945, {["sourceID"] = 11608 }),	-- 61 TEST Green Shaman Legs
-					i(26946, {["sourceID"] = 11609 }),	-- 61 TEST Green Shaman Shoulder
-					i(26947, {["sourceID"] = 11610 }),	-- 61 TEST Green Shaman Wrist
+					i(26940, {sourceID = 11603 }),	-- 61 TEST Green Shaman Belt
+					i(26941, {sourceID = 11604 }),	-- 61 TEST Green Shaman Boot
+					i(26942, {sourceID = 11605 }),	-- 61 TEST Green Shaman Chest
+					i(26943, {sourceID = 11606 }),	-- 61 TEST Green Shaman Hand
+					i(26944, {sourceID = 11607 }),	-- 61 TEST Green Shaman Head
+					i(26945, {sourceID = 11608 }),	-- 61 TEST Green Shaman Legs
+					i(26946, {sourceID = 11609 }),	-- 61 TEST Green Shaman Shoulder
+					i(26947, {sourceID = 11610 }),	-- 61 TEST Green Shaman Wrist
 					--
-					i(26948, {["sourceID"] = 11611 }),	-- 62 TEST Green Shaman Belt
-					i(26949, {["sourceID"] = 11612 }),	-- 62 TEST Green Shaman Boot
-					i(26950, {["sourceID"] = 11613 }),	-- 62 TEST Green Shaman Chest
-					i(26951, {["sourceID"] = 11614 }),	-- 62 TEST Green Shaman Hand
-					i(26952, {["sourceID"] = 11615 }),	-- 62 TEST Green Shaman Head
-					i(26953, {["sourceID"] = 11616 }),	-- 62 TEST Green Shaman Legs
-					i(26954, {["sourceID"] = 11617 }),	-- 62 TEST Green Shaman Shoulder
-					i(26955, {["sourceID"] = 11618 }),	-- 62 TEST Green Shaman Wrist
+					i(26948, {sourceID = 11611 }),	-- 62 TEST Green Shaman Belt
+					i(26949, {sourceID = 11612 }),	-- 62 TEST Green Shaman Boot
+					i(26950, {sourceID = 11613 }),	-- 62 TEST Green Shaman Chest
+					i(26951, {sourceID = 11614 }),	-- 62 TEST Green Shaman Hand
+					i(26952, {sourceID = 11615 }),	-- 62 TEST Green Shaman Head
+					i(26953, {sourceID = 11616 }),	-- 62 TEST Green Shaman Legs
+					i(26954, {sourceID = 11617 }),	-- 62 TEST Green Shaman Shoulder
+					i(26955, {sourceID = 11618 }),	-- 62 TEST Green Shaman Wrist
 					--
-					i(26956, {["sourceID"] = 11619 }),	-- 63 TEST Green Shaman Belt
-					i(26957, {["sourceID"] = 11620 }),	-- 63 TEST Green Shaman Boot
-					i(26958, {["sourceID"] = 11621 }),	-- 63 TEST Green Shaman Chest
-					i(26959, {["sourceID"] = 11622 }),	-- 63 TEST Green Shaman Hand
-					i(26960, {["sourceID"] = 11623 }),	-- 63 TEST Green Shaman Head
-					i(26961, {["sourceID"] = 11624 }),	-- 63 TEST Green Shaman Legs
-					i(26962, {["sourceID"] = 11625 }),	-- 63 TEST Green Shaman Shoulder
-					i(26963, {["sourceID"] = 11626 }),	-- 63 TEST Green Shaman Wrist
+					i(26956, {sourceID = 11619 }),	-- 63 TEST Green Shaman Belt
+					i(26957, {sourceID = 11620 }),	-- 63 TEST Green Shaman Boot
+					i(26958, {sourceID = 11621 }),	-- 63 TEST Green Shaman Chest
+					i(26959, {sourceID = 11622 }),	-- 63 TEST Green Shaman Hand
+					i(26960, {sourceID = 11623 }),	-- 63 TEST Green Shaman Head
+					i(26961, {sourceID = 11624 }),	-- 63 TEST Green Shaman Legs
+					i(26962, {sourceID = 11625 }),	-- 63 TEST Green Shaman Shoulder
+					i(26963, {sourceID = 11626 }),	-- 63 TEST Green Shaman Wrist
 					--
-					i(26964, {["sourceID"] = 11627 }),	-- 64 TEST Green Shaman Belt
-					i(26965, {["sourceID"] = 11628 }),	-- 64 TEST Green Shaman Boot
-					i(26966, {["sourceID"] = 11629 }),	-- 64 TEST Green Shaman Chest
-					i(26967, {["sourceID"] = 11630 }),	-- 64 TEST Green Shaman Hand
-					i(26968, {["sourceID"] = 11631 }),	-- 64 TEST Green Shaman Head
-					i(26969, {["sourceID"] = 11632 }),	-- 64 TEST Green Shaman Legs
-					i(26970, {["sourceID"] = 11633 }),	-- 64 TEST Green Shaman Shoulder
-					i(26971, {["sourceID"] = 11634 }),	-- 64 TEST Green Shaman Wrist
+					i(26964, {sourceID = 11627 }),	-- 64 TEST Green Shaman Belt
+					i(26965, {sourceID = 11628 }),	-- 64 TEST Green Shaman Boot
+					i(26966, {sourceID = 11629 }),	-- 64 TEST Green Shaman Chest
+					i(26967, {sourceID = 11630 }),	-- 64 TEST Green Shaman Hand
+					i(26968, {sourceID = 11631 }),	-- 64 TEST Green Shaman Head
+					i(26969, {sourceID = 11632 }),	-- 64 TEST Green Shaman Legs
+					i(26970, {sourceID = 11633 }),	-- 64 TEST Green Shaman Shoulder
+					i(26971, {sourceID = 11634 }),	-- 64 TEST Green Shaman Wrist
 					--
-					i(26972, {["sourceID"] = 11635 }),	-- 65 TEST Green Shaman Belt
-					i(26973, {["sourceID"] = 11636 }),	-- 65 TEST Green Shaman Boot
-					i(26974, {["sourceID"] = 11637 }),	-- 65 TEST Green Shaman Chest
-					i(26975, {["sourceID"] = 11638 }),	-- 65 TEST Green Shaman Hand
-					i(26976, {["sourceID"] = 11639 }),	-- 65 TEST Green Shaman Head
-					i(26977, {["sourceID"] = 11640 }),	-- 65 TEST Green Shaman Legs
-					i(26978, {["sourceID"] = 11641 }),	-- 65 TEST Green Shaman Shoulder
-					i(26979, {["sourceID"] = 11642 }),	-- 65 TEST Green Shaman Wrist
+					i(26972, {sourceID = 11635 }),	-- 65 TEST Green Shaman Belt
+					i(26973, {sourceID = 11636 }),	-- 65 TEST Green Shaman Boot
+					i(26974, {sourceID = 11637 }),	-- 65 TEST Green Shaman Chest
+					i(26975, {sourceID = 11638 }),	-- 65 TEST Green Shaman Hand
+					i(26976, {sourceID = 11639 }),	-- 65 TEST Green Shaman Head
+					i(26977, {sourceID = 11640 }),	-- 65 TEST Green Shaman Legs
+					i(26978, {sourceID = 11641 }),	-- 65 TEST Green Shaman Shoulder
+					i(26979, {sourceID = 11642 }),	-- 65 TEST Green Shaman Wrist
 					--
-					i(26980, {["sourceID"] = 11643 }),	-- 66 TEST Green Shaman Belt
-					i(26981, {["sourceID"] = 11644 }),	-- 66 TEST Green Shaman Boot
-					i(26982, {["sourceID"] = 11645 }),	-- 66 TEST Green Shaman Chest
-					i(26983, {["sourceID"] = 11646 }),	-- 66 TEST Green Shaman Hand
-					i(26984, {["sourceID"] = 11647 }),	-- 66 TEST Green Shaman Head
-					i(26985, {["sourceID"] = 11648 }),	-- 66 TEST Green Shaman Legs
-					i(26986, {["sourceID"] = 11649 }),	-- 66 TEST Green Shaman Shoulder
-					i(26987, {["sourceID"] = 11650 }),	-- 66 TEST Green Shaman Wrist
+					i(26980, {sourceID = 11643 }),	-- 66 TEST Green Shaman Belt
+					i(26981, {sourceID = 11644 }),	-- 66 TEST Green Shaman Boot
+					i(26982, {sourceID = 11645 }),	-- 66 TEST Green Shaman Chest
+					i(26983, {sourceID = 11646 }),	-- 66 TEST Green Shaman Hand
+					i(26984, {sourceID = 11647 }),	-- 66 TEST Green Shaman Head
+					i(26985, {sourceID = 11648 }),	-- 66 TEST Green Shaman Legs
+					i(26986, {sourceID = 11649 }),	-- 66 TEST Green Shaman Shoulder
+					i(26987, {sourceID = 11650 }),	-- 66 TEST Green Shaman Wrist
 					--
-					i(26988, {["sourceID"] = 11651 }),	-- 67 TEST Green Shaman Belt
-					i(26989, {["sourceID"] = 11652 }),	-- 67 TEST Green Shaman Boot
-					i(26990, {["sourceID"] = 11653 }),	-- 67 TEST Green Shaman Chest
-					i(26991, {["sourceID"] = 11654 }),	-- 67 TEST Green Shaman Hand
-					i(26992, {["sourceID"] = 11655 }),	-- 67 TEST Green Shaman Head
-					i(26993, {["sourceID"] = 11656 }),	-- 67 TEST Green Shaman Legs
-					i(26994, {["sourceID"] = 11657 }),	-- 67 TEST Green Shaman Shoulder
-					i(26995, {["sourceID"] = 11658 }),	-- 67 TEST Green Shaman Wrist
+					i(26988, {sourceID = 11651 }),	-- 67 TEST Green Shaman Belt
+					i(26989, {sourceID = 11652 }),	-- 67 TEST Green Shaman Boot
+					i(26990, {sourceID = 11653 }),	-- 67 TEST Green Shaman Chest
+					i(26991, {sourceID = 11654 }),	-- 67 TEST Green Shaman Hand
+					i(26992, {sourceID = 11655 }),	-- 67 TEST Green Shaman Head
+					i(26993, {sourceID = 11656 }),	-- 67 TEST Green Shaman Legs
+					i(26994, {sourceID = 11657 }),	-- 67 TEST Green Shaman Shoulder
+					i(26995, {sourceID = 11658 }),	-- 67 TEST Green Shaman Wrist
 					--
-					i(26996, {["sourceID"] = 11659 }),	-- 68 TEST Green Shaman Belt
-					i(26997, {["sourceID"] = 11660 }),	-- 68 TEST Green Shaman Boot
-					i(26998, {["sourceID"] = 11661 }),	-- 68 TEST Green Shaman Chest
-					i(26999, {["sourceID"] = 11662 }),	-- 68 TEST Green Shaman Hand
-					i(27000, {["sourceID"] = 11663 }),	-- 68 TEST Green Shaman Head
-					i(27001, {["sourceID"] = 11664 }),	-- 68 TEST Green Shaman Legs
-					i(27002, {["sourceID"] = 11665 }),	-- 68 TEST Green Shaman Shoulder
-					i(27003, {["sourceID"] = 11666 }),	-- 68 TEST Green Shaman Wrist
+					i(26996, {sourceID = 11659 }),	-- 68 TEST Green Shaman Belt
+					i(26997, {sourceID = 11660 }),	-- 68 TEST Green Shaman Boot
+					i(26998, {sourceID = 11661 }),	-- 68 TEST Green Shaman Chest
+					i(26999, {sourceID = 11662 }),	-- 68 TEST Green Shaman Hand
+					i(27000, {sourceID = 11663 }),	-- 68 TEST Green Shaman Head
+					i(27001, {sourceID = 11664 }),	-- 68 TEST Green Shaman Legs
+					i(27002, {sourceID = 11665 }),	-- 68 TEST Green Shaman Shoulder
+					i(27003, {sourceID = 11666 }),	-- 68 TEST Green Shaman Wrist
 					--
-					i(27004, {["sourceID"] = 11667 }),	-- 69 TEST Green Shaman Belt
-					i(27005, {["sourceID"] = 11668 }),	-- 69 TEST Green Shaman Boot
-					i(27006, {["sourceID"] = 11669 }),	-- 69 TEST Green Shaman Chest
-					i(27007, {["sourceID"] = 11670 }),	-- 69 TEST Green Shaman Hand
-					i(27008, {["sourceID"] = 11671 }),	-- 69 TEST Green Shaman Head
-					i(27009, {["sourceID"] = 11672 }),	-- 69 TEST Green Shaman Legs
-					i(27010, {["sourceID"] = 11673 }),	-- 69 TEST Green Shaman Shoulder
-					i(27011, {["sourceID"] = 11674 }),	-- 69 TEST Green Shaman Wrist
+					i(27004, {sourceID = 11667 }),	-- 69 TEST Green Shaman Belt
+					i(27005, {sourceID = 11668 }),	-- 69 TEST Green Shaman Boot
+					i(27006, {sourceID = 11669 }),	-- 69 TEST Green Shaman Chest
+					i(27007, {sourceID = 11670 }),	-- 69 TEST Green Shaman Hand
+					i(27008, {sourceID = 11671 }),	-- 69 TEST Green Shaman Head
+					i(27009, {sourceID = 11672 }),	-- 69 TEST Green Shaman Legs
+					i(27010, {sourceID = 11673 }),	-- 69 TEST Green Shaman Shoulder
+					i(27011, {sourceID = 11674 }),	-- 69 TEST Green Shaman Wrist
 					--
-					i(27012, {["sourceID"] = 11675 }),	-- 70 TEST Green Shaman Belt
-					i(27013, {["sourceID"] = 11676 }),	-- 70 TEST Green Shaman Boot
-					i(27014, {["sourceID"] = 11677 }),	-- 70 TEST Green Shaman Chest
-					i(27015, {["sourceID"] = 11678 }),	-- 70 TEST Green Shaman Hand
-					i(27016, {["sourceID"] = 11679 }),	-- 70 TEST Green Shaman Head
-					i(27017, {["sourceID"] = 11680 }),	-- 70 TEST Green Shaman Legs
-					i(27018, {["sourceID"] = 11681 }),	-- 70 TEST Green Shaman Shoulder
-					i(27019, {["sourceID"] = 11682 }),	-- 70 TEST Green Shaman Wrist
+					i(27012, {sourceID = 11675 }),	-- 70 TEST Green Shaman Belt
+					i(27013, {sourceID = 11676 }),	-- 70 TEST Green Shaman Boot
+					i(27014, {sourceID = 11677 }),	-- 70 TEST Green Shaman Chest
+					i(27015, {sourceID = 11678 }),	-- 70 TEST Green Shaman Hand
+					i(27016, {sourceID = 11679 }),	-- 70 TEST Green Shaman Head
+					i(27017, {sourceID = 11680 }),	-- 70 TEST Green Shaman Legs
+					i(27018, {sourceID = 11681 }),	-- 70 TEST Green Shaman Shoulder
+					i(27019, {sourceID = 11682 }),	-- 70 TEST Green Shaman Wrist
 					--
-					i(27020, {["sourceID"] = 11683 }),	-- 71 TEST Green Shaman Belt
-					i(27021, {["sourceID"] = 11684 }),	-- 71 TEST Green Shaman Boot
-					i(27022, {["sourceID"] = 11685 }),	-- 71 TEST Green Shaman Chest
-					i(27023, {["sourceID"] = 11686 }),	-- 71 TEST Green Shaman Hand
-					i(27024, {["sourceID"] = 11687 }),	-- 71 TEST Green Shaman Head
-					i(27025, {["sourceID"] = 11688 }),	-- 71 TEST Green Shaman Legs
-					i(27026, {["sourceID"] = 11689 }),	-- 71 TEST Green Shaman Shoulder
-					i(27027, {["sourceID"] = 11690 }),	-- 71 TEST Green Shaman Wrist
+					i(27020, {sourceID = 11683 }),	-- 71 TEST Green Shaman Belt
+					i(27021, {sourceID = 11684 }),	-- 71 TEST Green Shaman Boot
+					i(27022, {sourceID = 11685 }),	-- 71 TEST Green Shaman Chest
+					i(27023, {sourceID = 11686 }),	-- 71 TEST Green Shaman Hand
+					i(27024, {sourceID = 11687 }),	-- 71 TEST Green Shaman Head
+					i(27025, {sourceID = 11688 }),	-- 71 TEST Green Shaman Legs
+					i(27026, {sourceID = 11689 }),	-- 71 TEST Green Shaman Shoulder
+					i(27027, {sourceID = 11690 }),	-- 71 TEST Green Shaman Wrist
 					--
-					i(27028, {["sourceID"] = 11691 }),	-- 72 TEST Green Shaman Belt
-					i(27029, {["sourceID"] = 11692 }),	-- 72 TEST Green Shaman Boot
-					i(27030, {["sourceID"] = 11693 }),	-- 72 TEST Green Shaman Chest
-					i(27031, {["sourceID"] = 11694 }),	-- 72 TEST Green Shaman Hand
-					i(27032, {["sourceID"] = 11695 }),	-- 72 TEST Green Shaman Head
-					i(27033, {["sourceID"] = 11696 }),	-- 72 TEST Green Shaman Legs
-					i(27034, {["sourceID"] = 11697 }),	-- 72 TEST Green Shaman Shoulder
-					i(27035, {["sourceID"] = 11698 }),	-- 72 TEST Green Shaman Wrist
+					i(27028, {sourceID = 11691 }),	-- 72 TEST Green Shaman Belt
+					i(27029, {sourceID = 11692 }),	-- 72 TEST Green Shaman Boot
+					i(27030, {sourceID = 11693 }),	-- 72 TEST Green Shaman Chest
+					i(27031, {sourceID = 11694 }),	-- 72 TEST Green Shaman Hand
+					i(27032, {sourceID = 11695 }),	-- 72 TEST Green Shaman Head
+					i(27033, {sourceID = 11696 }),	-- 72 TEST Green Shaman Legs
+					i(27034, {sourceID = 11697 }),	-- 72 TEST Green Shaman Shoulder
+					i(27035, {sourceID = 11698 }),	-- 72 TEST Green Shaman Wrist
 				}),
 				cl(WARRIOR, {
-					i(26392, {["sourceID"] = 11083 }),	-- 59 TEST Green Warrior Belt
-					i(26393, {["sourceID"] = 11084 }),	-- 59 TEST Green Warrior Boot
-					i(26394, {["sourceID"] = 11085 }),	-- 59 TEST Green Warrior Chest
-					i(26395, {["sourceID"] = 11086 }),	-- 59 TEST Green Warrior Hand
-					i(26396, {["sourceID"] = 11087 }),	-- 59 TEST Green Warrior Head
-					i(26397, {["sourceID"] = 11088 }),	-- 59 TEST Green Warrior Legs
-					i(26398, {["sourceID"] = 11089 }),	-- 59 TEST Green Warrior Shoulder
-					i(26399, {["sourceID"] = 11090 }),	-- 59 TEST Green Warrior Wrist
+					i(26392, {sourceID = 11083 }),	-- 59 TEST Green Warrior Belt
+					i(26393, {sourceID = 11084 }),	-- 59 TEST Green Warrior Boot
+					i(26394, {sourceID = 11085 }),	-- 59 TEST Green Warrior Chest
+					i(26395, {sourceID = 11086 }),	-- 59 TEST Green Warrior Hand
+					i(26396, {sourceID = 11087 }),	-- 59 TEST Green Warrior Head
+					i(26397, {sourceID = 11088 }),	-- 59 TEST Green Warrior Legs
+					i(26398, {sourceID = 11089 }),	-- 59 TEST Green Warrior Shoulder
+					i(26399, {sourceID = 11090 }),	-- 59 TEST Green Warrior Wrist
 					--
-					i(26400, {["sourceID"] = 11091 }),	-- 60 TEST Green Warrior Belt
-					i(26401, {["sourceID"] = 11092 }),	-- 60 TEST Green Warrior Boot
-					i(26402, {["sourceID"] = 11093 }),	-- 60 TEST Green Warrior Chest
-					i(26403, {["sourceID"] = 11094 }),	-- 60 TEST Green Warrior Hand
-					i(26404, {["sourceID"] = 11095 }),	-- 60 TEST Green Warrior Head
-					i(26405, {["sourceID"] = 11096 }),	-- 60 TEST Green Warrior Legs
-					i(26406, {["sourceID"] = 11097 }),	-- 60 TEST Green Warrior Shoulder
-					i(26407, {["sourceID"] = 11098 }),	-- 60 TEST Green Warrior Wrist
+					i(26400, {sourceID = 11091 }),	-- 60 TEST Green Warrior Belt
+					i(26401, {sourceID = 11092 }),	-- 60 TEST Green Warrior Boot
+					i(26402, {sourceID = 11093 }),	-- 60 TEST Green Warrior Chest
+					i(26403, {sourceID = 11094 }),	-- 60 TEST Green Warrior Hand
+					i(26404, {sourceID = 11095 }),	-- 60 TEST Green Warrior Head
+					i(26405, {sourceID = 11096 }),	-- 60 TEST Green Warrior Legs
+					i(26406, {sourceID = 11097 }),	-- 60 TEST Green Warrior Shoulder
+					i(26407, {sourceID = 11098 }),	-- 60 TEST Green Warrior Wrist
 					--
-					i(26408, {["sourceID"] = 11099 }),	-- 61 TEST Green Warrior Belt
-					i(26409, {["sourceID"] = 11100 }),	-- 61 TEST Green Warrior Boot
-					i(26410, {["sourceID"] = 11101 }),	-- 61 TEST Green Warrior Chest
-					i(26411, {["sourceID"] = 11102 }),	-- 61 TEST Green Warrior Hand
-					i(26412, {["sourceID"] = 11103 }),	-- 61 TEST Green Warrior Head
-					i(26413, {["sourceID"] = 11104 }),	-- 61 TEST Green Warrior Legs
-					i(26414, {["sourceID"] = 11105 }),	-- 61 TEST Green Warrior Shoulder
-					i(26415, {["sourceID"] = 11106 }),	-- 61 TEST Green Warrior Wrist
+					i(26408, {sourceID = 11099 }),	-- 61 TEST Green Warrior Belt
+					i(26409, {sourceID = 11100 }),	-- 61 TEST Green Warrior Boot
+					i(26410, {sourceID = 11101 }),	-- 61 TEST Green Warrior Chest
+					i(26411, {sourceID = 11102 }),	-- 61 TEST Green Warrior Hand
+					i(26412, {sourceID = 11103 }),	-- 61 TEST Green Warrior Head
+					i(26413, {sourceID = 11104 }),	-- 61 TEST Green Warrior Legs
+					i(26414, {sourceID = 11105 }),	-- 61 TEST Green Warrior Shoulder
+					i(26415, {sourceID = 11106 }),	-- 61 TEST Green Warrior Wrist
 					--
-					i(26416, {["sourceID"] = 11107 }),	-- 62 TEST Green Warrior Belt
-					i(26417, {["sourceID"] = 11108 }),	-- 62 TEST Green Warrior Boot
-					i(26418, {["sourceID"] = 11109 }),	-- 62 TEST Green Warrior Chest
-					i(26419, {["sourceID"] = 11110 }),	-- 62 TEST Green Warrior Hand
-					i(26420, {["sourceID"] = 11111 }),	-- 62 TEST Green Warrior Head
-					i(26421, {["sourceID"] = 11112 }),	-- 62 TEST Green Warrior Legs
-					i(26422, {["sourceID"] = 11113 }),	-- 62 TEST Green Warrior Shoulder
-					i(26423, {["sourceID"] = 11114 }),	-- 62 TEST Green Warrior Wrist
+					i(26416, {sourceID = 11107 }),	-- 62 TEST Green Warrior Belt
+					i(26417, {sourceID = 11108 }),	-- 62 TEST Green Warrior Boot
+					i(26418, {sourceID = 11109 }),	-- 62 TEST Green Warrior Chest
+					i(26419, {sourceID = 11110 }),	-- 62 TEST Green Warrior Hand
+					i(26420, {sourceID = 11111 }),	-- 62 TEST Green Warrior Head
+					i(26421, {sourceID = 11112 }),	-- 62 TEST Green Warrior Legs
+					i(26422, {sourceID = 11113 }),	-- 62 TEST Green Warrior Shoulder
+					i(26423, {sourceID = 11114 }),	-- 62 TEST Green Warrior Wrist
 					--
-					i(26424, {["sourceID"] = 11115 }),	-- 63 TEST Green Warrior Belt
-					i(26425, {["sourceID"] = 11116 }),	-- 63 TEST Green Warrior Boot
-					i(26426, {["sourceID"] = 11117 }),	-- 63 TEST Green Warrior Chest
-					i(26427, {["sourceID"] = 11118 }),	-- 63 TEST Green Warrior Hand
-					i(26428, {["sourceID"] = 11119 }),	-- 63 TEST Green Warrior Head
-					i(26429, {["sourceID"] = 11120 }),	-- 63 TEST Green Warrior Legs
-					i(26430, {["sourceID"] = 11121 }),	-- 63 TEST Green Warrior Shoulder
-					i(26431, {["sourceID"] = 11122 }),	-- 63 TEST Green Warrior Wrist
+					i(26424, {sourceID = 11115 }),	-- 63 TEST Green Warrior Belt
+					i(26425, {sourceID = 11116 }),	-- 63 TEST Green Warrior Boot
+					i(26426, {sourceID = 11117 }),	-- 63 TEST Green Warrior Chest
+					i(26427, {sourceID = 11118 }),	-- 63 TEST Green Warrior Hand
+					i(26428, {sourceID = 11119 }),	-- 63 TEST Green Warrior Head
+					i(26429, {sourceID = 11120 }),	-- 63 TEST Green Warrior Legs
+					i(26430, {sourceID = 11121 }),	-- 63 TEST Green Warrior Shoulder
+					i(26431, {sourceID = 11122 }),	-- 63 TEST Green Warrior Wrist
 					--
-					i(26432, {["sourceID"] = 11123 }),	-- 64 TEST Green Warrior Belt
-					i(26433, {["sourceID"] = 11124 }),	-- 64 TEST Green Warrior Boot
-					i(26434, {["sourceID"] = 11125 }),	-- 64 TEST Green Warrior Chest
-					i(26435, {["sourceID"] = 11126 }),	-- 64 TEST Green Warrior Hand
-					i(26436, {["sourceID"] = 11127 }),	-- 64 TEST Green Warrior Head
-					i(26437, {["sourceID"] = 11128 }),	-- 64 TEST Green Warrior Legs
-					i(26438, {["sourceID"] = 11129 }),	-- 64 TEST Green Warrior Shoulder
-					i(26439, {["sourceID"] = 11130 }),	-- 64 TEST Green Warrior Wrist
+					i(26432, {sourceID = 11123 }),	-- 64 TEST Green Warrior Belt
+					i(26433, {sourceID = 11124 }),	-- 64 TEST Green Warrior Boot
+					i(26434, {sourceID = 11125 }),	-- 64 TEST Green Warrior Chest
+					i(26435, {sourceID = 11126 }),	-- 64 TEST Green Warrior Hand
+					i(26436, {sourceID = 11127 }),	-- 64 TEST Green Warrior Head
+					i(26437, {sourceID = 11128 }),	-- 64 TEST Green Warrior Legs
+					i(26438, {sourceID = 11129 }),	-- 64 TEST Green Warrior Shoulder
+					i(26439, {sourceID = 11130 }),	-- 64 TEST Green Warrior Wrist
 					--
-					i(26440, {["sourceID"] = 11131 }),	-- 65 TEST Green Warrior Belt
-					i(26441, {["sourceID"] = 11132 }),	-- 65 TEST Green Warrior Boot
-					i(26442, {["sourceID"] = 11133 }),	-- 65 TEST Green Warrior Chest
-					i(26443, {["sourceID"] = 11134 }),	-- 65 TEST Green Warrior Hand
-					i(26444, {["sourceID"] = 11135 }),	-- 65 TEST Green Warrior Head
-					i(26445, {["sourceID"] = 11136 }),	-- 65 TEST Green Warrior Legs
-					i(26446, {["sourceID"] = 11137 }),	-- 65 TEST Green Warrior Shoulder
-					i(26447, {["sourceID"] = 11138 }),	-- 65 TEST Green Warrior Wrist
+					i(26440, {sourceID = 11131 }),	-- 65 TEST Green Warrior Belt
+					i(26441, {sourceID = 11132 }),	-- 65 TEST Green Warrior Boot
+					i(26442, {sourceID = 11133 }),	-- 65 TEST Green Warrior Chest
+					i(26443, {sourceID = 11134 }),	-- 65 TEST Green Warrior Hand
+					i(26444, {sourceID = 11135 }),	-- 65 TEST Green Warrior Head
+					i(26445, {sourceID = 11136 }),	-- 65 TEST Green Warrior Legs
+					i(26446, {sourceID = 11137 }),	-- 65 TEST Green Warrior Shoulder
+					i(26447, {sourceID = 11138 }),	-- 65 TEST Green Warrior Wrist
 					--
-					i(26448, {["sourceID"] = 11139 }),	-- 66 TEST Green Warrior Belt
-					i(26449, {["sourceID"] = 11140 }),	-- 66 TEST Green Warrior Boot
-					i(26450, {["sourceID"] = 11141 }),	-- 66 TEST Green Warrior Chest
-					i(26451, {["sourceID"] = 11142 }),	-- 66 TEST Green Warrior Hand
-					i(26452, {["sourceID"] = 11143 }),	-- 66 TEST Green Warrior Head
-					i(26453, {["sourceID"] = 11144 }),	-- 66 TEST Green Warrior Legs
-					i(26454, {["sourceID"] = 11145 }),	-- 66 TEST Green Warrior Shoulder
-					i(26455, {["sourceID"] = 11146 }),	-- 66 TEST Green Warrior Wrist
+					i(26448, {sourceID = 11139 }),	-- 66 TEST Green Warrior Belt
+					i(26449, {sourceID = 11140 }),	-- 66 TEST Green Warrior Boot
+					i(26450, {sourceID = 11141 }),	-- 66 TEST Green Warrior Chest
+					i(26451, {sourceID = 11142 }),	-- 66 TEST Green Warrior Hand
+					i(26452, {sourceID = 11143 }),	-- 66 TEST Green Warrior Head
+					i(26453, {sourceID = 11144 }),	-- 66 TEST Green Warrior Legs
+					i(26454, {sourceID = 11145 }),	-- 66 TEST Green Warrior Shoulder
+					i(26455, {sourceID = 11146 }),	-- 66 TEST Green Warrior Wrist
 					--
-					i(26456, {["sourceID"] = 11147 }),	-- 67 TEST Green Warrior Belt
-					i(26457, {["sourceID"] = 11148 }),	-- 67 TEST Green Warrior Boot
-					i(26458, {["sourceID"] = 11149 }),	-- 67 TEST Green Warrior Chest
-					i(26459, {["sourceID"] = 11150 }),	-- 67 TEST Green Warrior Hand
-					i(26460, {["sourceID"] = 11151 }),	-- 67 TEST Green Warrior Head
-					i(26461, {["sourceID"] = 11152 }),	-- 67 TEST Green Warrior Legs
-					i(26462, {["sourceID"] = 11153 }),	-- 67 TEST Green Warrior Shoulder
-					i(26463, {["sourceID"] = 11154 }),	-- 67 TEST Green Warrior Wrist
+					i(26456, {sourceID = 11147 }),	-- 67 TEST Green Warrior Belt
+					i(26457, {sourceID = 11148 }),	-- 67 TEST Green Warrior Boot
+					i(26458, {sourceID = 11149 }),	-- 67 TEST Green Warrior Chest
+					i(26459, {sourceID = 11150 }),	-- 67 TEST Green Warrior Hand
+					i(26460, {sourceID = 11151 }),	-- 67 TEST Green Warrior Head
+					i(26461, {sourceID = 11152 }),	-- 67 TEST Green Warrior Legs
+					i(26462, {sourceID = 11153 }),	-- 67 TEST Green Warrior Shoulder
+					i(26463, {sourceID = 11154 }),	-- 67 TEST Green Warrior Wrist
 					--
-					i(26464, {["sourceID"] = 11155 }),	-- 68 TEST Green Warrior Belt
-					i(26465, {["sourceID"] = 11156 }),	-- 68 TEST Green Warrior Boot
-					i(26466, {["sourceID"] = 11157 }),	-- 68 TEST Green Warrior Chest
-					i(26467, {["sourceID"] = 11158 }),	-- 68 TEST Green Warrior Hand
-					i(26468, {["sourceID"] = 11159 }),	-- 68 TEST Green Warrior Head
-					i(26469, {["sourceID"] = 11160 }),	-- 68 TEST Green Warrior Legs
-					i(26470, {["sourceID"] = 11161 }),	-- 68 TEST Green Warrior Shoulder
-					i(26471, {["sourceID"] = 11162 }),	-- 68 TEST Green Warrior Wrist
+					i(26464, {sourceID = 11155 }),	-- 68 TEST Green Warrior Belt
+					i(26465, {sourceID = 11156 }),	-- 68 TEST Green Warrior Boot
+					i(26466, {sourceID = 11157 }),	-- 68 TEST Green Warrior Chest
+					i(26467, {sourceID = 11158 }),	-- 68 TEST Green Warrior Hand
+					i(26468, {sourceID = 11159 }),	-- 68 TEST Green Warrior Head
+					i(26469, {sourceID = 11160 }),	-- 68 TEST Green Warrior Legs
+					i(26470, {sourceID = 11161 }),	-- 68 TEST Green Warrior Shoulder
+					i(26471, {sourceID = 11162 }),	-- 68 TEST Green Warrior Wrist
 					--
-					i(26472, {["sourceID"] = 11163 }),	-- 69 TEST Green Warrior Belt
-					i(26473, {["sourceID"] = 11164 }),	-- 69 TEST Green Warrior Boot
-					i(26474, {["sourceID"] = 11165 }),	-- 69 TEST Green Warrior Chest
-					i(26475, {["sourceID"] = 11166 }),	-- 69 TEST Green Warrior Hand
-					i(26476, {["sourceID"] = 11167 }),	-- 69 TEST Green Warrior Head
-					i(26477, {["sourceID"] = 11168 }),	-- 69 TEST Green Warrior Legs
-					i(26478, {["sourceID"] = 11169 }),	-- 69 TEST Green Warrior Shoulder
-					i(26479, {["sourceID"] = 11170 }),	-- 69 TEST Green Warrior Wrist
+					i(26472, {sourceID = 11163 }),	-- 69 TEST Green Warrior Belt
+					i(26473, {sourceID = 11164 }),	-- 69 TEST Green Warrior Boot
+					i(26474, {sourceID = 11165 }),	-- 69 TEST Green Warrior Chest
+					i(26475, {sourceID = 11166 }),	-- 69 TEST Green Warrior Hand
+					i(26476, {sourceID = 11167 }),	-- 69 TEST Green Warrior Head
+					i(26477, {sourceID = 11168 }),	-- 69 TEST Green Warrior Legs
+					i(26478, {sourceID = 11169 }),	-- 69 TEST Green Warrior Shoulder
+					i(26479, {sourceID = 11170 }),	-- 69 TEST Green Warrior Wrist
 					--
-					i(26480, {["sourceID"] = 11171 }),	-- 70 TEST Green Warrior Belt
-					i(26481, {["sourceID"] = 11172 }),	-- 70 TEST Green Warrior Boot
-					i(26482, {["sourceID"] = 11173 }),	-- 70 TEST Green Warrior Chest
-					i(26483, {["sourceID"] = 11174 }),	-- 70 TEST Green Warrior Hand
-					i(26484, {["sourceID"] = 11175 }),	-- 70 TEST Green Warrior Head
-					i(26485, {["sourceID"] = 11176 }),	-- 70 TEST Green Warrior Legs
-					i(26486, {["sourceID"] = 11177 }),	-- 70 TEST Green Warrior Shoulder
-					i(26487, {["sourceID"] = 11178 }),	-- 70 TEST Green Warrior Wrist
+					i(26480, {sourceID = 11171 }),	-- 70 TEST Green Warrior Belt
+					i(26481, {sourceID = 11172 }),	-- 70 TEST Green Warrior Boot
+					i(26482, {sourceID = 11173 }),	-- 70 TEST Green Warrior Chest
+					i(26483, {sourceID = 11174 }),	-- 70 TEST Green Warrior Hand
+					i(26484, {sourceID = 11175 }),	-- 70 TEST Green Warrior Head
+					i(26485, {sourceID = 11176 }),	-- 70 TEST Green Warrior Legs
+					i(26486, {sourceID = 11177 }),	-- 70 TEST Green Warrior Shoulder
+					i(26487, {sourceID = 11178 }),	-- 70 TEST Green Warrior Wrist
 					--
-					i(26488, {["sourceID"] = 11179 }),	-- 71 TEST Green Warrior Belt
-					i(26489, {["sourceID"] = 11180 }),	-- 71 TEST Green Warrior Boot
-					i(26490, {["sourceID"] = 11181 }),	-- 71 TEST Green Warrior Chest
-					i(26491, {["sourceID"] = 11182 }),	-- 71 TEST Green Warrior Hand
-					i(26492, {["sourceID"] = 11183 }),	-- 71 TEST Green Warrior Head
-					i(26493, {["sourceID"] = 11184 }),	-- 71 TEST Green Warrior Legs
-					i(26494, {["sourceID"] = 11185 }),	-- 71 TEST Green Warrior Shoulder
-					i(26495, {["sourceID"] = 11186 }),	-- 71 TEST Green Warrior Wrist
+					i(26488, {sourceID = 11179 }),	-- 71 TEST Green Warrior Belt
+					i(26489, {sourceID = 11180 }),	-- 71 TEST Green Warrior Boot
+					i(26490, {sourceID = 11181 }),	-- 71 TEST Green Warrior Chest
+					i(26491, {sourceID = 11182 }),	-- 71 TEST Green Warrior Hand
+					i(26492, {sourceID = 11183 }),	-- 71 TEST Green Warrior Head
+					i(26493, {sourceID = 11184 }),	-- 71 TEST Green Warrior Legs
+					i(26494, {sourceID = 11185 }),	-- 71 TEST Green Warrior Shoulder
+					i(26495, {sourceID = 11186 }),	-- 71 TEST Green Warrior Wrist
 					--
-					i(26496, {["sourceID"] = 11187 }),	-- 72 TEST Green Warrior Belt
-					i(26497, {["sourceID"] = 11188 }),	-- 72 TEST Green Warrior Boot
-					i(26498, {["sourceID"] = 11189 }),	-- 72 TEST Green Warrior Chest
-					i(26499, {["sourceID"] = 11190 }),	-- 72 TEST Green Warrior Hand
-					i(26500, {["sourceID"] = 11191 }),	-- 72 TEST Green Warrior Head
-					i(26501, {["sourceID"] = 11192 }),	-- 72 TEST Green Warrior Legs
-					i(26502, {["sourceID"] = 11193 }),	-- 72 TEST Green Warrior Shoulder
-					i(26503, {["sourceID"] = 11194 }),	-- 72 TEST Green Warrior Wrist
+					i(26496, {sourceID = 11187 }),	-- 72 TEST Green Warrior Belt
+					i(26497, {sourceID = 11188 }),	-- 72 TEST Green Warrior Boot
+					i(26498, {sourceID = 11189 }),	-- 72 TEST Green Warrior Chest
+					i(26499, {sourceID = 11190 }),	-- 72 TEST Green Warrior Hand
+					i(26500, {sourceID = 11191 }),	-- 72 TEST Green Warrior Head
+					i(26501, {sourceID = 11192 }),	-- 72 TEST Green Warrior Legs
+					i(26502, {sourceID = 11193 }),	-- 72 TEST Green Warrior Shoulder
+					i(26503, {sourceID = 11194 }),	-- 72 TEST Green Warrior Wrist
 				}),
 			}),
 		}),
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.1.0
-		expansion(EXPANSION.WRATH, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_3_1_0 } }, {
+		expansion(EXPANSION.WRATH, patch(1,0), bubbleDownSelf({ timeline = { CREATED_3_1_0 } }, {
 			cl(DEATHKNIGHT, {
 				i(46232),	-- Darkruned Battleplate
 				i(46233),	-- Darkruned Chestguard
@@ -1361,7 +1361,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 3.2.0
-		expansion(EXPANSION.WRATH, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_3_2_0 } }, {
+		expansion(EXPANSION.WRATH, patch(2,0), bubbleDownSelf({ timeline = { CREATED_3_2_0 } }, {
 			cl(DEATHKNIGHT, {
 				i(48880),	-- Koltira's Battleplate of Conquest
 				i(48881),	-- Koltira's Gauntlets of Conquest
@@ -1590,7 +1590,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 3.3.0
-		expansion(EXPANSION.WRATH, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_3_3_0 } }, {
+		expansion(EXPANSION.WRATH, patch(3,0), bubbleDownSelf({ timeline = { CREATED_3_3_0 } }, {
 			-- Icecrown Citadel
 			cl(DEATHKNIGHT, {
 				i(51682),	-- Scourgelord Shoulderplates
@@ -1711,7 +1711,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 	}),
 	expansion(EXPANSION.CATA, {
 		-- 4.0.3
-		expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+		expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ timeline = { CREATED_4_0_3 } }, {
 			n(SEASON_VICIOUS, {
 				cl(DEATHKNIGHT, {
 					i(64978),	-- Gladiator's Dreadplate Shoulders
@@ -1865,7 +1865,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 4.3.0
-		expansion(EXPANSION.CATA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
+		expansion(EXPANSION.CATA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_4_3_0 } }, {
 			cl(MAGE, {
 				i(77780),	-- Replica Lieutenant Commander's Silk Mantle
 			}),
@@ -1873,7 +1873,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.0.1
-		expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+		expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
 			n(DARKMOON_FAIRE_HEADER, {	-- Darkmoon Faire
 				-- Unused T0 Replica
 				cl(DRUID, {
@@ -2116,7 +2116,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 5.1.0
-		expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_1_0 } }, {
+		expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ timeline = { CREATED_5_1_0 } }, {
 			n(SEASON_TYRANNICAL, {
 				cl(SHAMAN, {
 					i(91799),	-- Tyrannical Gladiator's Mail Leggings
@@ -2125,7 +2125,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 5.2.0
-		expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
+		expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ timeline = { CREATED_5_2_0 } }, {
 			-- Throne of Thunder (Thunderforged & Heroic Thunderforged)
 			cl(DEATHKNIGHT, {
 				i(96941),	-- Breastplate of the All-Consuming Maw
@@ -2382,7 +2382,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 5.3.0
-		expansion(EXPANSION.MOP, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_3_0 } }, {
+		expansion(EXPANSION.MOP, patch(3,0), bubbleDownSelf({ timeline = { CREATED_5_3_0 } }, {
 			n(SEASON_MALEVOLENT, {
 				cl(MAGE, {
 					i(97925),	-- Malevolent Gladiator's Silk Amice
@@ -2408,7 +2408,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.0.1
-		expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+		expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
 			-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
 			n(CLASS_TRIAL, {
 				cl(DRUID, {
@@ -2439,7 +2439,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 6.0.2
-		expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+		expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
 			garrisonBuilding(141, {
 				cl(DEATHKNIGHT, {
 					i(119485),	-- Heart-Lesion Chestguard
@@ -2684,7 +2684,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 6.2.0
-		expansion(EXPANSION.WOD, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_6_2_0 } }, {
+		expansion(EXPANSION.WOD, patch(2,0), bubbleDownSelf({ timeline = { CREATED_6_2_0 } }, {
 			n(SEASON_PRIMAL, {
 				cl(DEATHKNIGHT, {
 					i(127049),	-- Gladiator's Dreadplate Chestpiece
@@ -2767,7 +2767,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 6.2.2
-		expansion(EXPANSION.WOD, patch(2,2), bubbleDownSelf({ ["timeline"] = { CREATED_6_2_2 } }, {
+		expansion(EXPANSION.WOD, patch(2,2), bubbleDownSelf({ timeline = { CREATED_6_2_2 } }, {
 			-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
 			n(CLASS_TRIAL, {
 				cl(DEATHKNIGHT, {
@@ -2834,7 +2834,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
 			n(PARTY_SYNC, {
 				cl(DEATHKNIGHT, {
 					i(140714),	-- Bloodcaked Runeblade
@@ -3327,7 +3327,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 7.2.5
-		expansion(EXPANSION.LEGION, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_7_2_5 } }, {
+		expansion(EXPANSION.LEGION, patch(2,5), bubbleDownSelf({ timeline = { CREATED_7_2_5 } }, {
 			-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
 			n(CLASS_TRIAL, {
 				cl(DEATHKNIGHT, {
@@ -3759,7 +3759,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 7.3.5
-		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_5 } }, {
+		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ timeline = { CREATED_7_3_5 } }, {
 			n(NEW_CHARACTER, {
 				cl(DRUID, {
 					i(157669),	-- Wildshifter Headpiece
@@ -3806,7 +3806,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
 			-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
 			n(CLASS_TRIAL, {
 				cl(DEMONHUNTER, HAVOC, {
@@ -3966,7 +3966,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(163262),	-- 7th Legionnaire's Guise
 						i(163267),	-- 7th Legionnaire's Shoulderguards
 						i(163274),	-- 7th Legionnaire's Strap
-						i(163255, {["modID"] = 5, ["ItemAppearanceModifierID"] = 0 }),	-- 7th Legionnaire's Treads
+						i(163255, {modID = 5, ItemAppearanceModifierID = 0 }),	-- 7th Legionnaire's Treads
 						i(163287),	-- Honorbound Outrider's Treads
 						i(163288),	-- Honorbound Outrider's Grasps
 						i(163294),	-- Honorbound Outrider's Headcover
@@ -4060,7 +4060,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = { CREATED_8_1_0 } }, {
 			inst(1031, {	-- Uldir
 				filter(CLOTH, {
 					i(166406),	-- Flaskzertauren's Cloth Robes
@@ -4086,7 +4086,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
 			n(WAR_EFFORT, {
 				n(WARFRONT_BATTLE_FOR_DARKSHORE, {
 					filter(CLOTH, {
@@ -4126,7 +4126,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 8.2.5
-		expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_5 } }, {
+		expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ timeline = { CREATED_8_2_5 } }, {
 			-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
 			n(CLASS_TRIAL, {
 				cl(DEATHKNIGHT, {
@@ -4291,17 +4291,17 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 8.3.0
-		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
+		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_8_3_0 } }, {
 			n(SEASON_CORRUPTED, {
 				filter(BACK_F, {
-					i(172655, {["sourceID"] = 107001 }),	-- Corrupted Gladiator's Shawl
-					i(172656, {["sourceID"] = 107003 }),	-- Corrupted Gladiator's Greatcloak
-					i(172657, {["sourceID"] = 107005 }),	-- Corrupted Gladiator's Drape
-					i(172658, {["sourceID"] = 107007 }),	-- Corrupted Gladiator's Cape
-					i(172659, {["sourceID"] = 107009 }),	-- Corrupted Gladiator's Shawl
-					i(172660, {["sourceID"] = 107011 }),	-- Corrupted Gladiator's Greatcloak
-					i(172661, {["sourceID"] = 107013 }),	-- Corrupted Gladiator's Drape
-					i(172662, {["sourceID"] = 107015 }),	-- Corrupted Gladiator's Cape
+					i(172655, {sourceID = 107001 }),	-- Corrupted Gladiator's Shawl
+					i(172656, {sourceID = 107003 }),	-- Corrupted Gladiator's Greatcloak
+					i(172657, {sourceID = 107005 }),	-- Corrupted Gladiator's Drape
+					i(172658, {sourceID = 107007 }),	-- Corrupted Gladiator's Cape
+					i(172659, {sourceID = 107009 }),	-- Corrupted Gladiator's Shawl
+					i(172660, {sourceID = 107011 }),	-- Corrupted Gladiator's Greatcloak
+					i(172661, {sourceID = 107013 }),	-- Corrupted Gladiator's Drape
+					i(172662, {sourceID = 107015 }),	-- Corrupted Gladiator's Cape
 					i(172851),	-- Corrupted Aspirant's Greatcloak
 					i(172855),	-- Corrupted Aspirant's Greatcloak
 				}),
@@ -4342,7 +4342,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
 			-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
 			n(CLASS_TRIAL, {
 				cl(DEATHKNIGHT, {
@@ -4968,14 +4968,14 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(180428),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 05
 				}),
 				filter(CLOTH, {
-					i(178302, {["sourceID"] = 111219 }),	-- Sinful Aspirant's Silk Vestiment
-					i(178307, {["sourceID"] = 111224 }),	-- Sinful Aspirant's Silk Slippers
-					i(178312, {["sourceID"] = 111229 }),	-- Sinful Aspirant's Silk Grasps
-					i(178314, {["sourceID"] = 111231 }),	-- Sinful Aspirant's Silk Visage
-					i(178318, {["sourceID"] = 111235 }),	-- Sinful Aspirant's Silk Britches
-					i(178323, {["sourceID"] = 111240 }),	-- Sinful Aspirant's Silk Shoulderpads
-					i(178326, {["sourceID"] = 111243 }),	-- Sinful Aspirant's Silk Cincture
-					i(178330, {["sourceID"] = 111246 }),	-- Sinful Aspirant's Silk Armbands
+					i(178302, {sourceID = 111219 }),	-- Sinful Aspirant's Silk Vestiment
+					i(178307, {sourceID = 111224 }),	-- Sinful Aspirant's Silk Slippers
+					i(178312, {sourceID = 111229 }),	-- Sinful Aspirant's Silk Grasps
+					i(178314, {sourceID = 111231 }),	-- Sinful Aspirant's Silk Visage
+					i(178318, {sourceID = 111235 }),	-- Sinful Aspirant's Silk Britches
+					i(178323, {sourceID = 111240 }),	-- Sinful Aspirant's Silk Shoulderpads
+					i(178326, {sourceID = 111243 }),	-- Sinful Aspirant's Silk Cincture
+					i(178330, {sourceID = 111246 }),	-- Sinful Aspirant's Silk Armbands
 
 					-- These were added into Ensemble: Sinful Aspirant's Cloth Armor
 					-- #if BEFORE DF
@@ -4990,14 +4990,14 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					-- #endif
 				}),
 				filter(LEATHER, {
-					i(178305, {["sourceID"] = 111222 }),	-- Sinful Aspirant's Leather Jerkin
-					i(178309, {["sourceID"] = 111226 }),	-- Sinful Aspirant's Leather Treads
-					i(178310, {["sourceID"] = 111227 }),	-- Sinful Aspirant's Leather Handguards
-					i(178316, {["sourceID"] = 111233 }),	-- Sinful Aspirant's Leather Headguard
-					i(178320, {["sourceID"] = 111237 }),	-- Sinful Aspirant's Leather Britches
-					i(178321, {["sourceID"] = 111238 }),	-- Sinful Aspirant's Leather Shoulderpads
-					i(178328, {["sourceID"] = 111245 }),	-- Sinful Aspirant's Leather Loop
-					i(178333, {["sourceID"] = 111249 }),	-- Sinful Aspirant's Leather Cuffs
+					i(178305, {sourceID = 111222 }),	-- Sinful Aspirant's Leather Jerkin
+					i(178309, {sourceID = 111226 }),	-- Sinful Aspirant's Leather Treads
+					i(178310, {sourceID = 111227 }),	-- Sinful Aspirant's Leather Handguards
+					i(178316, {sourceID = 111233 }),	-- Sinful Aspirant's Leather Headguard
+					i(178320, {sourceID = 111237 }),	-- Sinful Aspirant's Leather Britches
+					i(178321, {sourceID = 111238 }),	-- Sinful Aspirant's Leather Shoulderpads
+					i(178328, {sourceID = 111245 }),	-- Sinful Aspirant's Leather Loop
+					i(178333, {sourceID = 111249 }),	-- Sinful Aspirant's Leather Cuffs
 
 					-- These were added into Ensemble: Sinful Aspirant's Leather Armor
 					-- #if BEFORE DF
@@ -5012,14 +5012,14 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					-- #endif
 				}),
 				filter(MAIL, {
-					i(178304, {["sourceID"] = 111221 }),	-- Sinful Aspirant's Chain Hauberk
-					i(178308, {["sourceID"] = 111225 }),	-- Sinful Aspirant's Chain Footguards
-					i(178313, {["sourceID"] = 111230 }),	-- Sinful Aspirant's Chain Grips
-					i(178315, {["sourceID"] = 111232 }),	-- Sinful Aspirant's Chain Helmet
-					i(178319, {["sourceID"] = 111236 }),	-- Sinful Aspirant's Chain Breeches
-					i(178324, {["sourceID"] = 111241 }),	-- Sinful Aspirant's Chain Monnion
-					i(178327, {["sourceID"] = 111244 }),	-- Sinful Aspirant's Chain Buckle
-					i(178332, {["sourceID"] = 111248 }),	-- Sinful Aspirant's Chain Coils
+					i(178304, {sourceID = 111221 }),	-- Sinful Aspirant's Chain Hauberk
+					i(178308, {sourceID = 111225 }),	-- Sinful Aspirant's Chain Footguards
+					i(178313, {sourceID = 111230 }),	-- Sinful Aspirant's Chain Grips
+					i(178315, {sourceID = 111232 }),	-- Sinful Aspirant's Chain Helmet
+					i(178319, {sourceID = 111236 }),	-- Sinful Aspirant's Chain Breeches
+					i(178324, {sourceID = 111241 }),	-- Sinful Aspirant's Chain Monnion
+					i(178327, {sourceID = 111244 }),	-- Sinful Aspirant's Chain Buckle
+					i(178332, {sourceID = 111248 }),	-- Sinful Aspirant's Chain Coils
 
 					-- These were added into Ensemble: Sinful Aspirant's Mail Armor
 					-- #if BEFORE DF
@@ -5034,14 +5034,14 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					-- #endif
 				}),
 				filter(PLATE, {
-					i(178300, {["sourceID"] = 111217 }),	-- Sinful Aspirant's Plate Greathelm
-					i(178303, {["sourceID"] = 111220 }),	-- Sinful Aspirant's Plate Chestguard
-					i(178306, {["sourceID"] = 111223 }),	-- Sinful Aspirant's Plate Sabatons
-					i(178311, {["sourceID"] = 111228 }),	-- Sinful Aspirant's Plate Gloves
-					i(178317, {["sourceID"] = 111234 }),	-- Sinful Aspirant's Plate Legplates
-					i(178322, {["sourceID"] = 111239 }),	-- Sinful Aspirant's Plate Shoulderplates
-					i(178325, {["sourceID"] = 111242 }),	-- Sinful Aspirant's Plate Vambraces
-					i(178331, {["sourceID"] = 111247 }),	-- Sinful Aspirant's Plate Chain
+					i(178300, {sourceID = 111217 }),	-- Sinful Aspirant's Plate Greathelm
+					i(178303, {sourceID = 111220 }),	-- Sinful Aspirant's Plate Chestguard
+					i(178306, {sourceID = 111223 }),	-- Sinful Aspirant's Plate Sabatons
+					i(178311, {sourceID = 111228 }),	-- Sinful Aspirant's Plate Gloves
+					i(178317, {sourceID = 111234 }),	-- Sinful Aspirant's Plate Legplates
+					i(178322, {sourceID = 111239 }),	-- Sinful Aspirant's Plate Shoulderplates
+					i(178325, {sourceID = 111242 }),	-- Sinful Aspirant's Plate Vambraces
+					i(178331, {sourceID = 111247 }),	-- Sinful Aspirant's Plate Chain
 
 					-- These were added into Ensemble: Sinful Aspirant's Plate Armor
 					-- #if BEFORE DF
@@ -5189,14 +5189,14 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(175501),	-- Shoulders of Pained Absolution
 				i(178074),	-- Cover of Pained Absolution
 				-- PvP?
-				i(178439, {["sourceID"] = 115291}),	-- zzzRated - Cloth Cord
-				i(178425, {["sourceID"] = 115287}),	-- zzzRated - Cloth Gloves
-				i(178427, {["sourceID"] = 115288}),	-- zzzRated - Cloth Hood
-				i(178431, {["sourceID"] = 115289}),	-- zzzRated - Cloth Leggings
-				i(178436, {["sourceID"] = 115290}),	-- zzzRated - Cloth Mantle
-				i(178415, {["sourceID"] = 115285}),	-- zzzRated - Cloth Robe
-				i(178420, {["sourceID"] = 115286}),	-- zzzRated - Cloth Treads
-				i(178443, {["sourceID"] = 115292}),	-- zzzRated - Cloth Wristwraps
+				i(178439, {sourceID = 115291}),	-- zzzRated - Cloth Cord
+				i(178425, {sourceID = 115287}),	-- zzzRated - Cloth Gloves
+				i(178427, {sourceID = 115288}),	-- zzzRated - Cloth Hood
+				i(178431, {sourceID = 115289}),	-- zzzRated - Cloth Leggings
+				i(178436, {sourceID = 115290}),	-- zzzRated - Cloth Mantle
+				i(178415, {sourceID = 115285}),	-- zzzRated - Cloth Robe
+				i(178420, {sourceID = 115286}),	-- zzzRated - Cloth Treads
+				i(178443, {sourceID = 115292}),	-- zzzRated - Cloth Wristwraps
 				-- Unknown
 				i(181111),	-- Soulbreaker Drape
 				i(181105),	-- Soulbreaker Handwraps
@@ -5235,14 +5235,14 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(175499),	-- Nightcloaked Shoulderpads
 				i(178076),	-- Nightcloaked Cover
 				-- PvP?
-				i(178441, {["sourceID"] = 115315}),	-- zzzRated - Leather Belt
-				i(178422, {["sourceID"] = 115310}),	-- zzzRated - Leather Boots
-				i(178433, {["sourceID"] = 115313}),	-- zzzRated - Leather Breeches
-				i(178423, {["sourceID"] = 115311}),	-- zzzRated - Leather Gloves
-				i(178429, {["sourceID"] = 115312}),	-- zzzRated - Leather Helm
-				i(178434, {["sourceID"] = 115314}),	-- zzzRated - Leather Spaulders
-				i(178418, {["sourceID"] = 115309}),	-- zzzRated - Leather Vest
-				i(178446, {["sourceID"] = 115316}),	-- zzzRated - Leather Wristwraps
+				i(178441, {sourceID = 115315}),	-- zzzRated - Leather Belt
+				i(178422, {sourceID = 115310}),	-- zzzRated - Leather Boots
+				i(178433, {sourceID = 115313}),	-- zzzRated - Leather Breeches
+				i(178423, {sourceID = 115311}),	-- zzzRated - Leather Gloves
+				i(178429, {sourceID = 115312}),	-- zzzRated - Leather Helm
+				i(178434, {sourceID = 115314}),	-- zzzRated - Leather Spaulders
+				i(178418, {sourceID = 115309}),	-- zzzRated - Leather Vest
+				i(178446, {sourceID = 115316}),	-- zzzRated - Leather Wristwraps
 				-- Unknown
 				i(181037),	-- Death Shroud Belt
 				i(181038),	-- Death Shroud Bindings
@@ -5314,14 +5314,14 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(175502),	-- Soul Hunter's Mantle
 				i(178075),	-- Soul Hunter's Cover
 				-- PvP?
-				i(178440, {["sourceID"] = 115339}),	-- zzzRated - Mail Belt
-				i(178426, {["sourceID"] = 115335}),	-- zzzRated - Mail Gauntlets
-				i(178428, {["sourceID"] = 115336}),	-- zzzRated - Mail Helm
-				i(178432, {["sourceID"] = 115337}),	-- zzzRated - Mail Leggings
-				i(178437, {["sourceID"] = 115338}),	-- zzzRated - Mail Monnion
-				i(178421, {["sourceID"] = 115334}),	-- zzzRated - Mail Sabatons
-				i(178417, {["sourceID"] = 115333}),	-- zzzRated - Mail Vest
-				i(178445, {["sourceID"] = 115340}),	-- zzzRated - Mail Wristwraps
+				i(178440, {sourceID = 115339}),	-- zzzRated - Mail Belt
+				i(178426, {sourceID = 115335}),	-- zzzRated - Mail Gauntlets
+				i(178428, {sourceID = 115336}),	-- zzzRated - Mail Helm
+				i(178432, {sourceID = 115337}),	-- zzzRated - Mail Leggings
+				i(178437, {sourceID = 115338}),	-- zzzRated - Mail Monnion
+				i(178421, {sourceID = 115334}),	-- zzzRated - Mail Sabatons
+				i(178417, {sourceID = 115333}),	-- zzzRated - Mail Vest
+				i(178445, {sourceID = 115340}),	-- zzzRated - Mail Wristwraps
 				-- Unknown
 				i(181136),	-- Fearstalker's Belt
 				i(181137),	-- Fearstalker's Bracers
@@ -5382,7 +5382,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 9.1.5
-		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
+		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ timeline = { CREATED_9_1_5 } }, {
 			n(MAGE_TOWER, {
 				cl(MAGE, {	-- Regalia of the Arcane Tempest set
 					i(188643),	-- Raiment of the Arcane Tempest
@@ -5391,9 +5391,9 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
+		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ timeline = { CREATED_9_2_0 } }, {
 			header(HEADERS.LFGDungeon, 2288, {	-- Sepulcher of the First Ones
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6896 }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6896 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
 						i(188866),	-- Chausses of the First Eidolon
@@ -5493,7 +5493,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188905),	-- Soulblade Nightwings
 						i(188904),	-- Soulblade Wristguard
 					}),
-					cl(SHAMAN, bubbleDown({ ["bonusID"] = 6898 }, {
+					cl(SHAMAN, bubbleDown({ bonusID = 6898 }, {
 						-- Shaman has a different bonusID
 						i(188920),	-- Theurgic Starspeaker's Adornment
 						i(188921),	-- Theurgic Starspeaker's Belt
@@ -5528,7 +5528,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188943),	-- Vambraces of the Infinite Infantry
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 8107 }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
 						i(188866),	-- Chausses of the First Eidolon
@@ -5628,7 +5628,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188905),	-- Soulblade Nightwings
 						i(188904),	-- Soulblade Wristguard
 					}),
-					cl(SHAMAN, bubbleDown({ ["bonusID"] = 6895 }, {
+					cl(SHAMAN, bubbleDown({ bonusID = 6895 }, {
 						-- Shaman has a different bonusID
 						i(188920),	-- Theurgic Starspeaker's Adornment
 						i(188921),	-- Theurgic Starspeaker's Belt
@@ -5663,7 +5663,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188943),	-- Vambraces of the Infinite Infantry
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6898 }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
 						i(188866),	-- Chausses of the First Eidolon
@@ -5763,7 +5763,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188905),	-- Soulblade Nightwings
 						i(188904),	-- Soulblade Wristguard
 					}),
-					cl(SHAMAN, bubbleDown({ ["bonusID"] = 8107 }, {
+					cl(SHAMAN, bubbleDown({ bonusID = 8107 }, {
 						-- Shaman has a different bonusID
 						i(188920),	-- Theurgic Starspeaker's Adornment
 						i(188921),	-- Theurgic Starspeaker's Belt
@@ -5798,7 +5798,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188943),	-- Vambraces of the Infinite Infantry
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897 }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
 						i(188866),	-- Chausses of the First Eidolon
@@ -5932,7 +5932,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188943),	-- Vambraces of the Infinite Infantry
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6894 }, {
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6894 }, {
 					-- TODO: add all sets with #IF BEFORE DF (they are now in PvP Ensembles)
 					cl(DEATHKNIGHT, {
 						i(188873),	-- Cloak of the First Eidolon
@@ -5961,7 +5961,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					cl(ROGUE, {
 						i(188909),	-- Soulblade Cloak
 					}),
-					cl(SHAMAN, bubbleDown({ ["bonusID"] = 6896 }, {
+					cl(SHAMAN, bubbleDown({ bonusID = 6896 }, {
 						-- Shaman has a different bonusID
 						i(188927),	-- Theurgic Starspeaker's Shawl
 					})),
@@ -5972,7 +5972,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188945),	-- Favor of the Infinite Infantry
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 6895 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 6895 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
 						i(188866),	-- Chausses of the First Eidolon
@@ -6072,7 +6072,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188905),	-- Soulblade Nightwings
 						i(188904),	-- Soulblade Wristguard
 					}),
-					cl(SHAMAN, bubbleDown({ ["bonusID"] = 6894 }, {
+					cl(SHAMAN, bubbleDown({ bonusID = 6894 }, {
 						-- Shaman has a different bonusID
 						i(188920),	-- Theurgic Starspeaker's Adornment
 						i(188921),	-- Theurgic Starspeaker's Belt
@@ -6260,44 +6260,44 @@ root(ROOTS.NeverImplemented, n(SETS, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
 			cl(DRUID, {
-				i(198145, {["sourceID"] = 181499 }),	-- Copy Bracers of the druid name PH
-				i(198145, {["sourceID"] = 181500 }),	-- Copy Bracers of the druid name PH
-				i(198145, {["sourceID"] = 181501 }),	-- Copy Bracers of the druid name PH
-				i(198145, {["sourceID"] = 181502 }),	-- Copy Bracers of the druid name PH
-				i(198144, {["sourceID"] = 181487 }),	-- Copy Chestguard of the druid name PH
-				i(198144, {["sourceID"] = 181488 }),	-- Copy Chestguard of the druid name PH
-				i(198144, {["sourceID"] = 181489 }),	-- Copy Chestguard of the druid name PH
-				i(198144, {["sourceID"] = 181490 }),	-- Copy Chestguard of the druid name PH
-				i(198147, {["sourceID"] = 181523 }),	-- Copy Cincture of the druid name PH
-				i(198147, {["sourceID"] = 181530 }),	-- Copy Cincture of the druid name PH
-				i(198147, {["sourceID"] = 181531 }),	-- Copy Cincture of the druid name PH
-				i(198147, {["sourceID"] = 181532 }),	-- Copy Cincture of the druid name PH
-				i(198149, {["sourceID"] = 181547 }),	-- Copy Footwraps of the druid name PH
-				i(198149, {["sourceID"] = 181548 }),	-- Copy Footwraps of the druid name PH
-				i(198149, {["sourceID"] = 181549 }),	-- Copy Footwraps of the druid name PH
-				i(198149, {["sourceID"] = 181550 }),	-- Copy Footwraps of the druid name PH
-				i(198148, {["sourceID"] = 181535 }),	-- Copy Handwraps of the druid name PH
-				i(198148, {["sourceID"] = 181542 }),	-- Copy Handwraps of the druid name PH
-				i(198148, {["sourceID"] = 181543 }),	-- Copy Handwraps of the druid name PH
-				i(198148, {["sourceID"] = 181544 }),	-- Copy Handwraps of the druid name PH
-				i(198142, {["sourceID"] = 181463 }),	-- Copy Headpiece of the druid name PH
-				i(198142, {["sourceID"] = 181464 }),	-- Copy Headpiece of the druid name PH
-				i(198142, {["sourceID"] = 181465 }),	-- Copy Headpiece of the druid name PH
-				i(198142, {["sourceID"] = 181466 }),	-- Copy Headpiece of the druid name PH
-				i(198143, {["sourceID"] = 181475 }),	-- Copy Leggings of the druid name PH
-				i(198143, {["sourceID"] = 181476 }),	-- Copy Leggings of the druid name PH
-				i(198143, {["sourceID"] = 181477 }),	-- Copy Leggings of the druid name PH
-				i(198143, {["sourceID"] = 181478 }),	-- Copy Leggings of the druid name PH
-				i(198146, {["sourceID"] = 181511 }),	-- Copy Shoulderpads of the druid name PH
-				i(198146, {["sourceID"] = 181512 }),	-- Copy Shoulderpads of the druid name PH
-				i(198146, {["sourceID"] = 181513 }),	-- Copy Shoulderpads of the druid name PH
-				i(198146, {["sourceID"] = 181514 }),	-- Copy Shoulderpads of the druid name PH
-				i(198150, {["sourceID"] = 181559 }),	-- Copy Wrap of the druid name PH
-				i(198150, {["sourceID"] = 181560 }),	-- Copy Wrap of the druid name PH
-				i(198150, {["sourceID"] = 181561 }),	-- Copy Wrap of the druid name PH
-				i(198150, {["sourceID"] = 181562 }),	-- Copy Wrap of the druid name PH
+				i(198145, {sourceID = 181499 }),	-- Copy Bracers of the druid name PH
+				i(198145, {sourceID = 181500 }),	-- Copy Bracers of the druid name PH
+				i(198145, {sourceID = 181501 }),	-- Copy Bracers of the druid name PH
+				i(198145, {sourceID = 181502 }),	-- Copy Bracers of the druid name PH
+				i(198144, {sourceID = 181487 }),	-- Copy Chestguard of the druid name PH
+				i(198144, {sourceID = 181488 }),	-- Copy Chestguard of the druid name PH
+				i(198144, {sourceID = 181489 }),	-- Copy Chestguard of the druid name PH
+				i(198144, {sourceID = 181490 }),	-- Copy Chestguard of the druid name PH
+				i(198147, {sourceID = 181523 }),	-- Copy Cincture of the druid name PH
+				i(198147, {sourceID = 181530 }),	-- Copy Cincture of the druid name PH
+				i(198147, {sourceID = 181531 }),	-- Copy Cincture of the druid name PH
+				i(198147, {sourceID = 181532 }),	-- Copy Cincture of the druid name PH
+				i(198149, {sourceID = 181547 }),	-- Copy Footwraps of the druid name PH
+				i(198149, {sourceID = 181548 }),	-- Copy Footwraps of the druid name PH
+				i(198149, {sourceID = 181549 }),	-- Copy Footwraps of the druid name PH
+				i(198149, {sourceID = 181550 }),	-- Copy Footwraps of the druid name PH
+				i(198148, {sourceID = 181535 }),	-- Copy Handwraps of the druid name PH
+				i(198148, {sourceID = 181542 }),	-- Copy Handwraps of the druid name PH
+				i(198148, {sourceID = 181543 }),	-- Copy Handwraps of the druid name PH
+				i(198148, {sourceID = 181544 }),	-- Copy Handwraps of the druid name PH
+				i(198142, {sourceID = 181463 }),	-- Copy Headpiece of the druid name PH
+				i(198142, {sourceID = 181464 }),	-- Copy Headpiece of the druid name PH
+				i(198142, {sourceID = 181465 }),	-- Copy Headpiece of the druid name PH
+				i(198142, {sourceID = 181466 }),	-- Copy Headpiece of the druid name PH
+				i(198143, {sourceID = 181475 }),	-- Copy Leggings of the druid name PH
+				i(198143, {sourceID = 181476 }),	-- Copy Leggings of the druid name PH
+				i(198143, {sourceID = 181477 }),	-- Copy Leggings of the druid name PH
+				i(198143, {sourceID = 181478 }),	-- Copy Leggings of the druid name PH
+				i(198146, {sourceID = 181511 }),	-- Copy Shoulderpads of the druid name PH
+				i(198146, {sourceID = 181512 }),	-- Copy Shoulderpads of the druid name PH
+				i(198146, {sourceID = 181513 }),	-- Copy Shoulderpads of the druid name PH
+				i(198146, {sourceID = 181514 }),	-- Copy Shoulderpads of the druid name PH
+				i(198150, {sourceID = 181559 }),	-- Copy Wrap of the druid name PH
+				i(198150, {sourceID = 181560 }),	-- Copy Wrap of the druid name PH
+				i(198150, {sourceID = 181561 }),	-- Copy Wrap of the druid name PH
+				i(198150, {sourceID = 181562 }),	-- Copy Wrap of the druid name PH
 			}),
 			cl(EVOKER, {
 				i(187651),	-- Evoker Tunic
@@ -6370,9 +6370,9 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 10.0.2
-		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
+		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ timeline = { CREATED_10_0_2 } }, {
 			header(HEADERS.LFGDungeon, 2390, {	-- Vault of the Incarnates
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 451 }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 451 }, {
 					cl(DEATHKNIGHT, {
 						i(203507),	-- Breastplate of the Haunted Frostbrood
 						i(203509),	-- Grasps of the Haunted Frostbrood
@@ -6558,7 +6558,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203502),	-- Poleyns of the Walking Mountain
 					}),
 				}),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 1 }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 1 }, {
 					cl(DEATHKNIGHT, {
 						i(203507),	-- Breastplate of the Haunted Frostbrood
 						i(203509),	-- Grasps of the Haunted Frostbrood
@@ -6651,7 +6651,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203502),	-- Poleyns of the Walking Mountain
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 450 }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 450 }, {
 					cl(DEATHKNIGHT, {
 						i(203507),	-- Breastplate of the Haunted Frostbrood
 						i(203509),	-- Grasps of the Haunted Frostbrood
@@ -6818,8 +6818,8 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203587),	-- Scalesworn Cultist's Runedrape
 						i(203580),	-- Scalesworn Cultist's Sandals
 						i(203586, {	-- Scalesworn Cultist's Wristwraps
-							["modID"] = 0,
-							["bonusID"] = 451,
+							modID = 0,
+							bonusID = 451,
 						}),
 					}),
 					cl(WARRIOR, {
@@ -6981,8 +6981,8 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203587),	-- Scalesworn Cultist's Runedrape
 						i(203580),	-- Scalesworn Cultist's Sandals
 						i(203586, {	-- Scalesworn Cultist's Wristwraps
-							["modID"] = 0,
-							["bonusID"] = 1,
+							modID = 0,
+							bonusID = 1,
 						}),
 					}),
 					cl(WARRIOR, {
@@ -7064,8 +7064,8 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203587),	-- Scalesworn Cultist's Runedrape
 						i(203580),	-- Scalesworn Cultist's Sandals
 						i(203586, {	-- Scalesworn Cultist's Wristwraps
-							["modID"] = 0,
-							["bonusID"] = 450,
+							modID = 0,
+							bonusID = 450,
 						}),
 					}),
 					cl(WARRIOR, {
@@ -7077,7 +7077,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				}),
 			}),
 			header(HEADERS.Item, 202047, {	-- Gleaming Incarnate Thunderstone
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894 }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894 }, {
 					cl(DEATHKNIGHT, {
 						i(203512),	-- Jaws of the Haunted Frostbrood
 						i(203510),	-- Maw of the Haunted Frostbrood
@@ -7131,7 +7131,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203503),	-- Peaks of the Walking Mountain
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895 }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895 }, {
 					cl(DEATHKNIGHT, {
 						i(203512),	-- Jaws of the Haunted Frostbrood
 						i(203510),	-- Maw of the Haunted Frostbrood
@@ -7185,7 +7185,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203503),	-- Peaks of the Walking Mountain
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896 }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896 }, {
 					cl(DEATHKNIGHT, {
 						i(203512),	-- Jaws of the Haunted Frostbrood
 						i(203510),	-- Maw of the Haunted Frostbrood
@@ -7238,7 +7238,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203503),	-- Peaks of the Walking Mountain
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897 }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897 }, {
 					cl(DEATHKNIGHT, {
 						i(203512),	-- Jaws of the Haunted Frostbrood
 						i(203510),	-- Maw of the Haunted Frostbrood
@@ -7291,7 +7291,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203503),	-- Peaks of the Walking Mountain
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(203512),	-- Jaws of the Haunted Frostbrood
 						i(203510),	-- Maw of the Haunted Frostbrood
@@ -7345,7 +7345,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(203503),	-- Peaks of the Walking Mountain
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(203512),	-- Jaws of the Haunted Frostbrood
 						i(203510),	-- Maw of the Haunted Frostbrood
@@ -7403,9 +7403,9 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ timeline = { CREATED_10_1_0 } }, {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 451 }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 451 }, {
 					cl(DEATHKNIGHT, {
 						i(205810),	-- Lingering Phantom's Dreadhorns
 						i(205811),	-- Lingering Phantom's Gauntlets
@@ -7591,7 +7591,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
 				}),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 1 }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 1 }, {
 					cl(DEATHKNIGHT, {
 						i(205810),	-- Lingering Phantom's Dreadhorns
 						i(205811),	-- Lingering Phantom's Gauntlets
@@ -7684,7 +7684,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 450 }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 450 }, {
 					cl(DEATHKNIGHT, {
 						i(205810),	-- Lingering Phantom's Dreadhorns
 						i(205811),	-- Lingering Phantom's Gauntlets
@@ -7780,7 +7780,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			}),
 			n(SEASON_OBSIDIAN, {
 				-- [High Item]
-				n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {
+				n(PVP_GLADIATOR, bubbleDown({ modID = 8 }, {
 					cl(DEATHKNIGHT, {
 						i(205810),	-- Lingering Phantom's Dreadhorns
 						i(205811),	-- Lingering Phantom's Gauntlets
@@ -7875,7 +7875,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				})),
 			}),
 			header(HEADERS.Item, 205878, {	-- Obsidian Aspectral Earthstone
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DEMONHUNTER, {
 						i(205845),	-- Kinslayer's Hood
 						i(205843),	-- Kinslayer's Tainted Spaulders
@@ -7923,7 +7923,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					cl(DEMONHUNTER, {
 						i(205845),	-- Kinslayer's Hood
 						i(205843),	-- Kinslayer's Tainted Spaulders
@@ -7971,7 +7971,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					cl(DEMONHUNTER, {
 						i(205845),	-- Kinslayer's Hood
 						i(205843),	-- Kinslayer's Tainted Spaulders
@@ -8018,7 +8018,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					cl(DEMONHUNTER, {
 						i(205845),	-- Kinslayer's Hood
 						i(205843),	-- Kinslayer's Tainted Spaulders
@@ -8065,7 +8065,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 					cl(DEMONHUNTER, {
 						i(205845),	-- Kinslayer's Hood
 						i(205843),	-- Kinslayer's Tainted Spaulders
@@ -8112,7 +8112,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 					cl(DEMONHUNTER, {
 						i(205845),	-- Kinslayer's Hood
 						i(205843),	-- Kinslayer's Tainted Spaulders
@@ -8163,68 +8163,68 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ timeline = { CREATED_10_1_5 } }, {
 			filter(CLOTH, {
 				i(207967),	-- 10.1.5 Time Rifts - Cloth Bronze Sets - Capture Media
 				i(207971),	-- 10.1.5 Time Rifts - Cloth Infinite Sets - Capture Media
-				i(207899, {["sourceID"] = 188983 }),	-- Mega Dungeon Bronze Cloth Bindings
-				i(207832, {["sourceID"] = 188916 }),	-- Mega Dungeon Bronze Cloth Breeches
-				i(207831, {["sourceID"] = 188915 }),	-- Mega Dungeon Bronze Cloth Hood
-				i(207894, {["sourceID"] = 188978 }),	-- Mega Dungeon Bronze Cloth Mitts
-				i(207829, {["sourceID"] = 188913 }),	-- Mega Dungeon Bronze Cloth Wrap
-				i(207929, {["sourceID"] = 189013 }),	-- Mega Dungeon Infinite Cloth Mantle
-				i(207860, {["sourceID"] = 188944 }),	-- Mega Dungeon Infinite Cloth Robes
-				i(207930, {["sourceID"] = 189014 }),	-- Mega Dungeon Infinite Cloth Sash
-				i(207825, {["sourceID"] = 188911 }),	-- Mega Dungeon Infinite Cloth Slippers
-				i(207861, {["sourceID"] = 188945 }),	-- Mega Dungeon Infinite Cloth Wrap
+				i(207899, {sourceID = 188983 }),	-- Mega Dungeon Bronze Cloth Bindings
+				i(207832, {sourceID = 188916 }),	-- Mega Dungeon Bronze Cloth Breeches
+				i(207831, {sourceID = 188915 }),	-- Mega Dungeon Bronze Cloth Hood
+				i(207894, {sourceID = 188978 }),	-- Mega Dungeon Bronze Cloth Mitts
+				i(207829, {sourceID = 188913 }),	-- Mega Dungeon Bronze Cloth Wrap
+				i(207929, {sourceID = 189013 }),	-- Mega Dungeon Infinite Cloth Mantle
+				i(207860, {sourceID = 188944 }),	-- Mega Dungeon Infinite Cloth Robes
+				i(207930, {sourceID = 189014 }),	-- Mega Dungeon Infinite Cloth Sash
+				i(207825, {sourceID = 188911 }),	-- Mega Dungeon Infinite Cloth Slippers
+				i(207861, {sourceID = 188945 }),	-- Mega Dungeon Infinite Cloth Wrap
 			}),
 			filter(LEATHER, {
 				i(207966),	-- 10.1.5 Time Rifts - Leather Bronze Sets - Capture Media
 				i(207970),	-- 10.1.5 Time Rifts - Leather Infinite Sets - Capture Media
-				i(207843, {["sourceID"] = 188927 }),	-- Mega Dungeon Bronze Leather Bracers
-				i(207842, {["sourceID"] = 188926 }),	-- Mega Dungeon Bronze Leather Cinch
-				i(207840, {["sourceID"] = 188924 }),	-- Mega Dungeon Bronze Leather Cowl
-				i(207837, {["sourceID"] = 188921 }),	-- Mega Dungeon Bronze Leather Drape
-				i(207905, {["sourceID"] = 188989 }),	-- Mega Dungeon Bronze Leather Spaulders
-				i(207869, {["sourceID"] = 188953 }),	-- Mega Dungeon Infinite Leather Cloak
-				i(207935, {["sourceID"] = 189019 }),	-- Mega Dungeon Infinite Leather Gloves
-				i(207868, {["sourceID"] = 188952 }),	-- Mega Dungeon Infinite Leather Raiment
-				i(207960, {["sourceID"] = 189043 }),	-- Mega Dungeon Infinite Leather Tassets
-				i(207870, {["sourceID"] = 188954 }),	-- Mega Dungeon Infinite Leather Treads
+				i(207843, {sourceID = 188927 }),	-- Mega Dungeon Bronze Leather Bracers
+				i(207842, {sourceID = 188926 }),	-- Mega Dungeon Bronze Leather Cinch
+				i(207840, {sourceID = 188924 }),	-- Mega Dungeon Bronze Leather Cowl
+				i(207837, {sourceID = 188921 }),	-- Mega Dungeon Bronze Leather Drape
+				i(207905, {sourceID = 188989 }),	-- Mega Dungeon Bronze Leather Spaulders
+				i(207869, {sourceID = 188953 }),	-- Mega Dungeon Infinite Leather Cloak
+				i(207935, {sourceID = 189019 }),	-- Mega Dungeon Infinite Leather Gloves
+				i(207868, {sourceID = 188952 }),	-- Mega Dungeon Infinite Leather Raiment
+				i(207960, {sourceID = 189043 }),	-- Mega Dungeon Infinite Leather Tassets
+				i(207870, {sourceID = 188954 }),	-- Mega Dungeon Infinite Leather Treads
 			}),
 			filter(MAIL, {
 				i(207965),	-- 10.1.5 Time Rifts - Mail Bronze Sets - Capture Media
 				i(207969),	-- 10.1.5 Time Rifts - Mail Infinite Sets - Capture Media
-				i(207844, {["sourceID"] = 188928 }),	-- Mega Dungeon Bronze Mail Chainmail
-				i(207914, {["sourceID"] = 188998 }),	-- Mega Dungeon Bronze Mail Cinch
-				i(207845, {["sourceID"] = 188929 }),	-- Mega Dungeon Bronze Mail Drape
-				i(207913, {["sourceID"] = 188997 }),	-- Mega Dungeon Bronze Mail Spaulders
-				i(207846, {["sourceID"] = 188930 }),	-- Mega Dungeon Bronze Mail Striders
-				i(207947, {["sourceID"] = 189031 }),	-- Mega Dungeon Infinite Mail Bracers
-				i(207880, {["sourceID"] = 188964 }),	-- Mega Dungeon Infinite Mail Cowl
-				i(207941, {["sourceID"] = 189025 }),	-- Mega Dungeon Infinite Mail Drape
-				i(207879, {["sourceID"] = 188963 }),	-- Mega Dungeon Infinite Mail Gauntlets
-				i(207958, {["sourceID"] = 189041 }),	-- Mega Dungeon Infinite Mail Tassets
+				i(207844, {sourceID = 188928 }),	-- Mega Dungeon Bronze Mail Chainmail
+				i(207914, {sourceID = 188998 }),	-- Mega Dungeon Bronze Mail Cinch
+				i(207845, {sourceID = 188929 }),	-- Mega Dungeon Bronze Mail Drape
+				i(207913, {sourceID = 188997 }),	-- Mega Dungeon Bronze Mail Spaulders
+				i(207846, {sourceID = 188930 }),	-- Mega Dungeon Bronze Mail Striders
+				i(207947, {sourceID = 189031 }),	-- Mega Dungeon Infinite Mail Bracers
+				i(207880, {sourceID = 188964 }),	-- Mega Dungeon Infinite Mail Cowl
+				i(207941, {sourceID = 189025 }),	-- Mega Dungeon Infinite Mail Drape
+				i(207879, {sourceID = 188963 }),	-- Mega Dungeon Infinite Mail Gauntlets
+				i(207958, {sourceID = 189041 }),	-- Mega Dungeon Infinite Mail Tassets
 			}),
 			filter(PLATE, {
 				i(207961),	-- 10.1.5 Time Rifts - Plate Bronze Sets - Capture Media
 				i(207968),	-- 10.1.5 Time Rifts - Plate Infinite Sets - Capture Media
-				i(207917, {["sourceID"] = 189001 }),	-- Mega Dungeon Bronze Plate Cape
-				i(207916, {["sourceID"] = 189000 }),	-- Mega Dungeon Bronze Plate Chestplate
-				i(207855, {["sourceID"] = 188939 }),	-- Mega Dungeon Bronze Plate Crushers
-				i(207818, {["sourceID"] = 188905 }),	-- Mega Dungeon Bronze Plate Greaves
-				i(207854, {["sourceID"] = 188938 }),	-- Mega Dungeon Bronze Plate Stompers
-				i(207949, {["sourceID"] = 189033 }),	-- Mega Dungeon Infinite Plate Cape
-				i(207954, {["sourceID"] = 189038 }),	-- Mega Dungeon Infinite Plate Girdle
-				i(207952, {["sourceID"] = 189036 }),	-- Mega Dungeon Infinite Plate Greathelm
-				i(207953, {["sourceID"] = 189037 }),	-- Mega Dungeon Infinite Plate Pauldrons
-				i(207891, {["sourceID"] = 188975 }),	-- Mega Dungeon Infinite Plate Vambraces
+				i(207917, {sourceID = 189001 }),	-- Mega Dungeon Bronze Plate Cape
+				i(207916, {sourceID = 189000 }),	-- Mega Dungeon Bronze Plate Chestplate
+				i(207855, {sourceID = 188939 }),	-- Mega Dungeon Bronze Plate Crushers
+				i(207818, {sourceID = 188905 }),	-- Mega Dungeon Bronze Plate Greaves
+				i(207854, {sourceID = 188938 }),	-- Mega Dungeon Bronze Plate Stompers
+				i(207949, {sourceID = 189033 }),	-- Mega Dungeon Infinite Plate Cape
+				i(207954, {sourceID = 189038 }),	-- Mega Dungeon Infinite Plate Girdle
+				i(207952, {sourceID = 189036 }),	-- Mega Dungeon Infinite Plate Greathelm
+				i(207953, {sourceID = 189037 }),	-- Mega Dungeon Infinite Plate Pauldrons
+				i(207891, {sourceID = 188975 }),	-- Mega Dungeon Infinite Plate Vambraces
 			}),
 		})),
 
 		-- 10.1.7
-		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
-			n(DREAMSURGE, bubbleDown({ ["bonusID"] = 6895 }, {
+		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ timeline = { CREATED_10_1_7 } }, {
+			n(DREAMSURGE, bubbleDown({ bonusID = 6895 }, {
 				filter(CLOTH, {
 					i(209408),	-- Dreambound Crown
 					i(209380),	-- Dreambound Shoulderpads
@@ -8244,7 +8244,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { CREATED_10_2_0 } }, {
 			n(CLASS_TRIAL, {
 				cl(DEATHKNIGHT, {
 					i(213580),	-- Heart-Lesion Helm
@@ -8252,7 +8252,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				}),
 			}),
 			header(HEADERS.Item, 210468, {	-- Emerald Blossom Dreamstone
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(207203),	-- Casket of the Risen Nightmare
 						i(207202),	-- Graveboots of the Risen Nightmare
@@ -8374,7 +8374,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(207176),	-- Molten Vanguard's Thermal Cape
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(207203),	-- Casket of the Risen Nightmare
 						i(207202),	-- Graveboots of the Risen Nightmare
@@ -8496,7 +8496,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(207176),	-- Molten Vanguard's Thermal Cape
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(207203),	-- Casket of the Risen Nightmare
 						i(207202),	-- Graveboots of the Risen Nightmare
@@ -8618,7 +8618,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(207176),	-- Molten Vanguard's Thermal Cape
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(207203),	-- Casket of the Risen Nightmare
 						i(207202),	-- Graveboots of the Risen Nightmare
@@ -8740,7 +8740,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(207176),	-- Molten Vanguard's Thermal Cape
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(207203),	-- Casket of the Risen Nightmare
 						i(207202),	-- Graveboots of the Risen Nightmare
@@ -8862,7 +8862,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(207176),	-- Molten Vanguard's Thermal Cape
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(207203),	-- Casket of the Risen Nightmare
 						i(207202),	-- Graveboots of the Risen Nightmare
@@ -8986,7 +8986,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				})),
 			}),
 			n(SEASON_VERDANT, {
-				n(PVP_GLADIATOR, bubbleDownSelf({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDownSelf({ bonusID = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(209275),	-- Verdant Gladiator's Cloak
 						i(209276),	-- Verdant Gladiator's Drape
@@ -9261,7 +9261,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(209315),	-- Verdant Gladiator's Shawl
 					}),
 				})),
-				n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDownSelf({ bonusID = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(209275),	-- Verdant Gladiator's Cloak
 						i(209276),	-- Verdant Gladiator's Drape
@@ -9540,10 +9540,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 10.2.6
-		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6_SEASON_FOUR } }, {
+		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ timeline = { CREATED_10_2_6_SEASON_FOUR } }, {
 			-- Same bonus IDs and item names as from Obsidian Aspectral Earthstone in season 2.
 			header(HEADERS.Item, 205878, {	-- Obsidian Aspectral Earthstone
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DRUID, {
 						i(202510),	-- Foliage of the Autumn Blaze
 						i(202511),	-- Bands of the Autumn Blaze
@@ -9589,7 +9589,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(202446),	-- Battlechest of the Onyx Crucible
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					cl(DRUID, {
 						i(202510),	-- Foliage of the Autumn Blaze
 						i(202511),	-- Bands of the Autumn Blaze
@@ -9635,7 +9635,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(202446),	-- Battlechest of the Onyx Crucible
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					cl(DRUID, {
 						i(202510),	-- Foliage of the Autumn Blaze
 						i(202511),	-- Bands of the Autumn Blaze
@@ -9681,7 +9681,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(202446),	-- Battlechest of the Onyx Crucible
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					cl(DRUID, {
 						i(202510),	-- Foliage of the Autumn Blaze
 						i(202511),	-- Bands of the Autumn Blaze
@@ -9727,7 +9727,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(202446),	-- Battlechest of the Onyx Crucible
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 					cl(DRUID, {
 						i(202510),	-- Foliage of the Autumn Blaze
 						i(202511),	-- Bands of the Autumn Blaze
@@ -9773,7 +9773,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(202446),	-- Battlechest of the Onyx Crucible
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 					cl(DRUID, {
 						i(202510),	-- Foliage of the Autumn Blaze
 						i(202511),	-- Bands of the Autumn Blaze
@@ -9822,7 +9822,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			}),
 			-- Same bonus IDs as from previous seasonal "Hero" achievements.
 			header(HEADERS.Achievement, 19783, {	-- Dragonflight Keystone Hero: Season Four
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(217221),	-- Casket of the Risen Nightmare
 						i(217224),	-- Greaves of the Risen Nightmare
@@ -9915,7 +9915,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217218),	-- Thraexhelm of the Onyx Crucible
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(217221),	-- Casket of the Risen Nightmare
 						i(217224),	-- Greaves of the Risen Nightmare
@@ -10008,7 +10008,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217218),	-- Thraexhelm of the Onyx Crucible
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(217221),	-- Casket of the Risen Nightmare
 						i(217224),	-- Greaves of the Risen Nightmare
@@ -10101,7 +10101,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217218),	-- Thraexhelm of the Onyx Crucible
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(217221),	-- Casket of the Risen Nightmare
 						i(217224),	-- Greaves of the Risen Nightmare
@@ -10197,7 +10197,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			}),
 			-- Same bonus IDs as from previous seasonal "Hero" achievements.
 			header(HEADERS.Achievement, 19509, {	-- Elite: Dragonflight Season 4
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(217221),	-- Casket of the Risen Nightmare
 						i(217224),	-- Greaves of the Risen Nightmare
@@ -10290,7 +10290,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(217218),	-- Thraexhelm of the Onyx Crucible
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(217221),	-- Casket of the Risen Nightmare
 						i(217224),	-- Greaves of the Risen Nightmare
@@ -10388,7 +10388,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			n(SEASON_CRIMSON, {
 				-- Death Knight got only one item and Mage got nothing.
 				-- Season 1 appearances voted for season 4 (Evoker, Hunter, Monk) are implemented in Catalyst
-				n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {	-- "Tier Slots"
+				n(PVP_GLADIATOR, bubbleDown({ modID = 8 }, {	-- "Tier Slots"
 					cl(DEATHKNIGHT, {
 						-- NO ITEMS
 					}),
@@ -10473,7 +10473,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(200428),	-- Peaks of the Walking Mountain
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 7479 }, {	-- "Off Slots"
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 7479 }, {	-- "Off Slots"
 					cl(DEATHKNIGHT, {
 						-- ONLY ONE ITEM
 						i(200410),	-- Jaws of the Haunted Frostbrood
@@ -10539,7 +10539,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(200431),	-- Drape of the Walking Mountain
 					}),
 				})),
-				n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 7532 }, {
+				n(PVP_ELITE, bubbleDownSelf({ bonusID = 7532 }, {
 					cl(DEATHKNIGHT, {
 						-- ONLY ONE ITEM
 						i(200410),	-- Jaws of the Haunted Frostbrood
@@ -10682,7 +10682,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			-- Newly added items for Dragonflight season 2
 			n(SEASON_OBSIDIAN, {
 				-- Only Druid and Paladin versions added in 10.2.6
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 					cl(DRUID, {
 						i(205537),	-- Obsidian Gladiator's Leather Vest
 						i(205538),	-- Obsidian Gladiator's Leather Jerkin
@@ -10727,7 +10727,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 				-- Only Druid and Paladin versions added in 10.2.6
-				n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDownSelf({ bonusID = 8107 }, {
 					cl(DRUID, {
 						i(205537),	-- Obsidian Gladiator's Leather Vest
 						i(205538),	-- Obsidian Gladiator's Leather Jerkin
@@ -10773,7 +10773,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				})),
 			}),
 			n(SEASON_DRACONIC_PVP, {
-				n(PVP_GLADIATOR, bubbleDownSelf({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDownSelf({ bonusID = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(216232),	-- Draconic Gladiator's Cloak
 						i(216233),	-- Draconic Gladiator's Drape
@@ -11048,7 +11048,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(216268),	-- Draconic Gladiator's Plate Wristguards
 					}),
 				})),
-				n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDownSelf({ bonusID = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(216232),	-- Draconic Gladiator's Cloak
 						i(216233),	-- Draconic Gladiator's Drape
@@ -11328,162 +11328,162 @@ root(ROOTS.NeverImplemented, n(SETS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
 				-- Extra Head Tierpieces
 				cl(DEATHKNIGHT, {
-					i(228150, {["sourceID"] = 224337 }),	-- Exhumed Centurion's Galea
-					i(228150, {["sourceID"] = 224338 }),	-- Exhumed Centurion's Galea
-					i(228150, {["sourceID"] = 224339 }),	-- Exhumed Centurion's Galea
-					i(228150, {["sourceID"] = 224340 }),	-- Exhumed Centurion's Galea
-					i(228150, {["sourceID"] = 224341 }),	-- Exhumed Centurion's Galea
-					i(228150, {["sourceID"] = 224342 }),	-- Exhumed Centurion's Galea
-					i(228150, {["sourceID"] = 224343 }),	-- Exhumed Centurion's Galea
-					i(228150, {["sourceID"] = 224344 }),	-- Exhumed Centurion's Galea
-					i(228150, {["sourceID"] = 224345 }),	-- Exhumed Centurion's Galea
-					i(228150, {["sourceID"] = 224346 }),	-- Exhumed Centurion's Galea
-					i(228150, {["sourceID"] = 224347 }),	-- Exhumed Centurion's Galea
-					i(228150, {["sourceID"] = 224348 }),	-- Exhumed Centurion's Galea
+					i(228150, {sourceID = 224337 }),	-- Exhumed Centurion's Galea
+					i(228150, {sourceID = 224338 }),	-- Exhumed Centurion's Galea
+					i(228150, {sourceID = 224339 }),	-- Exhumed Centurion's Galea
+					i(228150, {sourceID = 224340 }),	-- Exhumed Centurion's Galea
+					i(228150, {sourceID = 224341 }),	-- Exhumed Centurion's Galea
+					i(228150, {sourceID = 224342 }),	-- Exhumed Centurion's Galea
+					i(228150, {sourceID = 224343 }),	-- Exhumed Centurion's Galea
+					i(228150, {sourceID = 224344 }),	-- Exhumed Centurion's Galea
+					i(228150, {sourceID = 224345 }),	-- Exhumed Centurion's Galea
+					i(228150, {sourceID = 224346 }),	-- Exhumed Centurion's Galea
+					i(228150, {sourceID = 224347 }),	-- Exhumed Centurion's Galea
+					i(228150, {sourceID = 224348 }),	-- Exhumed Centurion's Galea
 				}),
 				cl(DEMONHUNTER, {
-					i(228157, {["sourceID"] = 224421 }),	-- Impalers of the Hypogeal Nemesis
-					i(228157, {["sourceID"] = 224422 }),	-- Impalers of the Hypogeal Nemesis
-					i(228157, {["sourceID"] = 224423 }),	-- Impalers of the Hypogeal Nemesis
-					i(228157, {["sourceID"] = 224424 }),	-- Impalers of the Hypogeal Nemesis
-					i(228157, {["sourceID"] = 224425 }),	-- Impalers of the Hypogeal Nemesis
-					i(228157, {["sourceID"] = 224426 }),	-- Impalers of the Hypogeal Nemesis
-					i(228157, {["sourceID"] = 224427 }),	-- Impalers of the Hypogeal Nemesis
-					i(228157, {["sourceID"] = 224428 }),	-- Impalers of the Hypogeal Nemesis
-					i(228157, {["sourceID"] = 224429 }),	-- Impalers of the Hypogeal Nemesis
-					i(228157, {["sourceID"] = 224430 }),	-- Impalers of the Hypogeal Nemesis
-					i(228157, {["sourceID"] = 224431 }),	-- Impalers of the Hypogeal Nemesis
-					i(228157, {["sourceID"] = 224432 }),	-- Impalers of the Hypogeal Nemesis
+					i(228157, {sourceID = 224421 }),	-- Impalers of the Hypogeal Nemesis
+					i(228157, {sourceID = 224422 }),	-- Impalers of the Hypogeal Nemesis
+					i(228157, {sourceID = 224423 }),	-- Impalers of the Hypogeal Nemesis
+					i(228157, {sourceID = 224424 }),	-- Impalers of the Hypogeal Nemesis
+					i(228157, {sourceID = 224425 }),	-- Impalers of the Hypogeal Nemesis
+					i(228157, {sourceID = 224426 }),	-- Impalers of the Hypogeal Nemesis
+					i(228157, {sourceID = 224427 }),	-- Impalers of the Hypogeal Nemesis
+					i(228157, {sourceID = 224428 }),	-- Impalers of the Hypogeal Nemesis
+					i(228157, {sourceID = 224429 }),	-- Impalers of the Hypogeal Nemesis
+					i(228157, {sourceID = 224430 }),	-- Impalers of the Hypogeal Nemesis
+					i(228157, {sourceID = 224431 }),	-- Impalers of the Hypogeal Nemesis
+					i(228157, {sourceID = 224432 }),	-- Impalers of the Hypogeal Nemesis
 				}),
 				cl(DRUID, {
-					i(228156, {["sourceID"] = 224409 }),	-- Mask of the Greatlynx
-					i(228156, {["sourceID"] = 224410 }),	-- Mask of the Greatlynx
-					i(228156, {["sourceID"] = 224411 }),	-- Mask of the Greatlynx
-					i(228156, {["sourceID"] = 224412 }),	-- Mask of the Greatlynx
-					i(228156, {["sourceID"] = 224413 }),	-- Mask of the Greatlynx
-					i(228156, {["sourceID"] = 224414 }),	-- Mask of the Greatlynx
-					i(228156, {["sourceID"] = 224415 }),	-- Mask of the Greatlynx
-					i(228156, {["sourceID"] = 224416 }),	-- Mask of the Greatlynx
-					i(228156, {["sourceID"] = 224417 }),	-- Mask of the Greatlynx
-					i(228156, {["sourceID"] = 224418 }),	-- Mask of the Greatlynx
-					i(228156, {["sourceID"] = 224419 }),	-- Mask of the Greatlynx
-					i(228156, {["sourceID"] = 224420 }),	-- Mask of the Greatlynx
+					i(228156, {sourceID = 224409 }),	-- Mask of the Greatlynx
+					i(228156, {sourceID = 224410 }),	-- Mask of the Greatlynx
+					i(228156, {sourceID = 224411 }),	-- Mask of the Greatlynx
+					i(228156, {sourceID = 224412 }),	-- Mask of the Greatlynx
+					i(228156, {sourceID = 224413 }),	-- Mask of the Greatlynx
+					i(228156, {sourceID = 224414 }),	-- Mask of the Greatlynx
+					i(228156, {sourceID = 224415 }),	-- Mask of the Greatlynx
+					i(228156, {sourceID = 224416 }),	-- Mask of the Greatlynx
+					i(228156, {sourceID = 224417 }),	-- Mask of the Greatlynx
+					i(228156, {sourceID = 224418 }),	-- Mask of the Greatlynx
+					i(228156, {sourceID = 224419 }),	-- Mask of the Greatlynx
+					i(228156, {sourceID = 224420 }),	-- Mask of the Greatlynx
 				}),
 				cl(EVOKER, {
-					i(228153, {["sourceID"] = 224373 }),	-- Horns of the Destroyer
-					i(228153, {["sourceID"] = 224374 }),	-- Horns of the Destroyer
-					i(228153, {["sourceID"] = 224375 }),	-- Horns of the Destroyer
-					i(228153, {["sourceID"] = 224376 }),	-- Horns of the Destroyer
-					i(228153, {["sourceID"] = 224377 }),	-- Horns of the Destroyer
-					i(228153, {["sourceID"] = 224378 }),	-- Horns of the Destroyer
-					i(228153, {["sourceID"] = 224379 }),	-- Horns of the Destroyer
-					i(228153, {["sourceID"] = 224380 }),	-- Horns of the Destroyer
-					i(228153, {["sourceID"] = 224381 }),	-- Horns of the Destroyer
-					i(228153, {["sourceID"] = 224382 }),	-- Horns of the Destroyer
-					i(228153, {["sourceID"] = 224383 }),	-- Horns of the Destroyer
-					i(228153, {["sourceID"] = 224384 }),	-- Horns of the Destroyer
+					i(228153, {sourceID = 224373 }),	-- Horns of the Destroyer
+					i(228153, {sourceID = 224374 }),	-- Horns of the Destroyer
+					i(228153, {sourceID = 224375 }),	-- Horns of the Destroyer
+					i(228153, {sourceID = 224376 }),	-- Horns of the Destroyer
+					i(228153, {sourceID = 224377 }),	-- Horns of the Destroyer
+					i(228153, {sourceID = 224378 }),	-- Horns of the Destroyer
+					i(228153, {sourceID = 224379 }),	-- Horns of the Destroyer
+					i(228153, {sourceID = 224380 }),	-- Horns of the Destroyer
+					i(228153, {sourceID = 224381 }),	-- Horns of the Destroyer
+					i(228153, {sourceID = 224382 }),	-- Horns of the Destroyer
+					i(228153, {sourceID = 224383 }),	-- Horns of the Destroyer
+					i(228153, {sourceID = 224384 }),	-- Horns of the Destroyer
 				}),
 				cl(HUNTER, {
-					i(228152, {["sourceID"] = 224361 }),	-- Lightless Scavenger's Skull
-					i(228152, {["sourceID"] = 224362 }),	-- Lightless Scavenger's Skull
-					i(228152, {["sourceID"] = 224363 }),	-- Lightless Scavenger's Skull
-					i(228152, {["sourceID"] = 224364 }),	-- Lightless Scavenger's Skull
-					i(228152, {["sourceID"] = 224365 }),	-- Lightless Scavenger's Skull
-					i(228152, {["sourceID"] = 224366 }),	-- Lightless Scavenger's Skull
-					i(228152, {["sourceID"] = 224367 }),	-- Lightless Scavenger's Skull
-					i(228152, {["sourceID"] = 224368 }),	-- Lightless Scavenger's Skull
-					i(228152, {["sourceID"] = 224369 }),	-- Lightless Scavenger's Skull
-					i(228152, {["sourceID"] = 224370 }),	-- Lightless Scavenger's Skull
-					i(228152, {["sourceID"] = 224371 }),	-- Lightless Scavenger's Skull
-					i(228152, {["sourceID"] = 224372 }),	-- Lightless Scavenger's Skull
+					i(228152, {sourceID = 224361 }),	-- Lightless Scavenger's Skull
+					i(228152, {sourceID = 224362 }),	-- Lightless Scavenger's Skull
+					i(228152, {sourceID = 224363 }),	-- Lightless Scavenger's Skull
+					i(228152, {sourceID = 224364 }),	-- Lightless Scavenger's Skull
+					i(228152, {sourceID = 224365 }),	-- Lightless Scavenger's Skull
+					i(228152, {sourceID = 224366 }),	-- Lightless Scavenger's Skull
+					i(228152, {sourceID = 224367 }),	-- Lightless Scavenger's Skull
+					i(228152, {sourceID = 224368 }),	-- Lightless Scavenger's Skull
+					i(228152, {sourceID = 224369 }),	-- Lightless Scavenger's Skull
+					i(228152, {sourceID = 224370 }),	-- Lightless Scavenger's Skull
+					i(228152, {sourceID = 224371 }),	-- Lightless Scavenger's Skull
+					i(228152, {sourceID = 224372 }),	-- Lightless Scavenger's Skull
 				}),
 				cl(MAGE, {
-					i(228161, {["sourceID"] = 224458 }),	-- Hood of Violet Rebirth
-					i(228161, {["sourceID"] = 224459 }),	-- Hood of Violet Rebirth
-					i(228161, {["sourceID"] = 224460 }),	-- Hood of Violet Rebirth
-					i(228161, {["sourceID"] = 224461 }),	-- Hood of Violet Rebirth
-					i(228161, {["sourceID"] = 224462 }),	-- Hood of Violet Rebirth
-					i(228161, {["sourceID"] = 224463 }),	-- Hood of Violet Rebirth
-					i(228161, {["sourceID"] = 224464 }),	-- Hood of Violet Rebirth
-					i(228161, {["sourceID"] = 224465 }),	-- Hood of Violet Rebirth
-					i(228161, {["sourceID"] = 224466 }),	-- Hood of Violet Rebirth
-					i(228161, {["sourceID"] = 224467 }),	-- Hood of Violet Rebirth
-					i(228161, {["sourceID"] = 224468 }),	-- Hood of Violet Rebirth
-					i(228161, {["sourceID"] = 224469 }),	-- Hood of Violet Rebirth
+					i(228161, {sourceID = 224458 }),	-- Hood of Violet Rebirth
+					i(228161, {sourceID = 224459 }),	-- Hood of Violet Rebirth
+					i(228161, {sourceID = 224460 }),	-- Hood of Violet Rebirth
+					i(228161, {sourceID = 224461 }),	-- Hood of Violet Rebirth
+					i(228161, {sourceID = 224462 }),	-- Hood of Violet Rebirth
+					i(228161, {sourceID = 224463 }),	-- Hood of Violet Rebirth
+					i(228161, {sourceID = 224464 }),	-- Hood of Violet Rebirth
+					i(228161, {sourceID = 224465 }),	-- Hood of Violet Rebirth
+					i(228161, {sourceID = 224466 }),	-- Hood of Violet Rebirth
+					i(228161, {sourceID = 224467 }),	-- Hood of Violet Rebirth
+					i(228161, {sourceID = 224468 }),	-- Hood of Violet Rebirth
+					i(228161, {sourceID = 224469 }),	-- Hood of Violet Rebirth
 				}),
 				cl(MONK, {
-					i(228155, {["sourceID"] = 224397 }),	-- Gatecrasher's Horns
-					i(228155, {["sourceID"] = 224398 }),	-- Gatecrasher's Horns
-					i(228155, {["sourceID"] = 224399 }),	-- Gatecrasher's Horns
-					i(228155, {["sourceID"] = 224400 }),	-- Gatecrasher's Horns
-					i(228155, {["sourceID"] = 224401 }),	-- Gatecrasher's Horns
-					i(228155, {["sourceID"] = 224402 }),	-- Gatecrasher's Horns
-					i(228155, {["sourceID"] = 224403 }),	-- Gatecrasher's Horns
-					i(228155, {["sourceID"] = 224404 }),	-- Gatecrasher's Horns
-					i(228155, {["sourceID"] = 224405 }),	-- Gatecrasher's Horns
-					i(228155, {["sourceID"] = 224406 }),	-- Gatecrasher's Horns
-					i(228155, {["sourceID"] = 224407 }),	-- Gatecrasher's Horns
-					i(228155, {["sourceID"] = 224408 }),	-- Gatecrasher's Horns
+					i(228155, {sourceID = 224397 }),	-- Gatecrasher's Horns
+					i(228155, {sourceID = 224398 }),	-- Gatecrasher's Horns
+					i(228155, {sourceID = 224399 }),	-- Gatecrasher's Horns
+					i(228155, {sourceID = 224400 }),	-- Gatecrasher's Horns
+					i(228155, {sourceID = 224401 }),	-- Gatecrasher's Horns
+					i(228155, {sourceID = 224402 }),	-- Gatecrasher's Horns
+					i(228155, {sourceID = 224403 }),	-- Gatecrasher's Horns
+					i(228155, {sourceID = 224404 }),	-- Gatecrasher's Horns
+					i(228155, {sourceID = 224405 }),	-- Gatecrasher's Horns
+					i(228155, {sourceID = 224406 }),	-- Gatecrasher's Horns
+					i(228155, {sourceID = 224407 }),	-- Gatecrasher's Horns
+					i(228155, {sourceID = 224408 }),	-- Gatecrasher's Horns
 				}),
 				cl(PALADIN, {
-					i(228149, {["sourceID"] = 224325 }),	-- Entombed Seraph's Casque
-					i(228149, {["sourceID"] = 224326 }),	-- Entombed Seraph's Casque
-					i(228149, {["sourceID"] = 224327 }),	-- Entombed Seraph's Casque
-					i(228149, {["sourceID"] = 224328 }),	-- Entombed Seraph's Casque
-					i(228149, {["sourceID"] = 224329 }),	-- Entombed Seraph's Casque
-					i(228149, {["sourceID"] = 224330 }),	-- Entombed Seraph's Casque
-					i(228149, {["sourceID"] = 224331 }),	-- Entombed Seraph's Casque
-					i(228149, {["sourceID"] = 224332 }),	-- Entombed Seraph's Casque
-					i(228149, {["sourceID"] = 224333 }),	-- Entombed Seraph's Casque
-					i(228149, {["sourceID"] = 224334 }),	-- Entombed Seraph's Casque
-					i(228149, {["sourceID"] = 224335 }),	-- Entombed Seraph's Casque
-					i(228149, {["sourceID"] = 224336 }),	-- Entombed Seraph's Casque
+					i(228149, {sourceID = 224325 }),	-- Entombed Seraph's Casque
+					i(228149, {sourceID = 224326 }),	-- Entombed Seraph's Casque
+					i(228149, {sourceID = 224327 }),	-- Entombed Seraph's Casque
+					i(228149, {sourceID = 224328 }),	-- Entombed Seraph's Casque
+					i(228149, {sourceID = 224329 }),	-- Entombed Seraph's Casque
+					i(228149, {sourceID = 224330 }),	-- Entombed Seraph's Casque
+					i(228149, {sourceID = 224331 }),	-- Entombed Seraph's Casque
+					i(228149, {sourceID = 224332 }),	-- Entombed Seraph's Casque
+					i(228149, {sourceID = 224333 }),	-- Entombed Seraph's Casque
+					i(228149, {sourceID = 224334 }),	-- Entombed Seraph's Casque
+					i(228149, {sourceID = 224335 }),	-- Entombed Seraph's Casque
+					i(228149, {sourceID = 224336 }),	-- Entombed Seraph's Casque
 				}),
 				cl(PRIEST, {
-					i(228159, {["sourceID"] = 224445 }),	-- Living Luster's Semblance
-					i(228159, {["sourceID"] = 224446 }),	-- Living Luster's Semblance
-					i(228159, {["sourceID"] = 224447 }),	-- Living Luster's Semblance
-					i(228159, {["sourceID"] = 224448 }),	-- Living Luster's Semblance
-					i(228159, {["sourceID"] = 224449 }),	-- Living Luster's Semblance
-					i(228159, {["sourceID"] = 224450 }),	-- Living Luster's Semblance
-					i(228159, {["sourceID"] = 224451 }),	-- Living Luster's Semblance
-					i(228159, {["sourceID"] = 224452 }),	-- Living Luster's Semblance
-					i(228159, {["sourceID"] = 224453 }),	-- Living Luster's Semblance
-					i(228159, {["sourceID"] = 224454 }),	-- Living Luster's Semblance
-					i(228159, {["sourceID"] = 224455 }),	-- Living Luster's Semblance
-					i(228159, {["sourceID"] = 224456 }),	-- Living Luster's Semblance
+					i(228159, {sourceID = 224445 }),	-- Living Luster's Semblance
+					i(228159, {sourceID = 224446 }),	-- Living Luster's Semblance
+					i(228159, {sourceID = 224447 }),	-- Living Luster's Semblance
+					i(228159, {sourceID = 224448 }),	-- Living Luster's Semblance
+					i(228159, {sourceID = 224449 }),	-- Living Luster's Semblance
+					i(228159, {sourceID = 224450 }),	-- Living Luster's Semblance
+					i(228159, {sourceID = 224451 }),	-- Living Luster's Semblance
+					i(228159, {sourceID = 224452 }),	-- Living Luster's Semblance
+					i(228159, {sourceID = 224453 }),	-- Living Luster's Semblance
+					i(228159, {sourceID = 224454 }),	-- Living Luster's Semblance
+					i(228159, {sourceID = 224455 }),	-- Living Luster's Semblance
+					i(228159, {sourceID = 224456 }),	-- Living Luster's Semblance
 				}),
 				cl(ROGUE, {
-					i(228154, {["sourceID"] = 224385 }),	-- K'areshi Phantom's Emptiness
-					i(228154, {["sourceID"] = 224386 }),	-- K'areshi Phantom's Emptiness
-					i(228154, {["sourceID"] = 224387 }),	-- K'areshi Phantom's Emptiness
-					i(228154, {["sourceID"] = 224388 }),	-- K'areshi Phantom's Emptiness
-					i(228154, {["sourceID"] = 224389 }),	-- K'areshi Phantom's Emptiness
-					i(228154, {["sourceID"] = 224390 }),	-- K'areshi Phantom's Emptiness
-					i(228154, {["sourceID"] = 224391 }),	-- K'areshi Phantom's Emptiness
-					i(228154, {["sourceID"] = 224392 }),	-- K'areshi Phantom's Emptiness
-					i(228154, {["sourceID"] = 224393 }),	-- K'areshi Phantom's Emptiness
-					i(228154, {["sourceID"] = 224394 }),	-- K'areshi Phantom's Emptiness
-					i(228154, {["sourceID"] = 224395 }),	-- K'areshi Phantom's Emptiness
-					i(228154, {["sourceID"] = 224396 }),	-- K'areshi Phantom's Emptiness
+					i(228154, {sourceID = 224385 }),	-- K'areshi Phantom's Emptiness
+					i(228154, {sourceID = 224386 }),	-- K'areshi Phantom's Emptiness
+					i(228154, {sourceID = 224387 }),	-- K'areshi Phantom's Emptiness
+					i(228154, {sourceID = 224388 }),	-- K'areshi Phantom's Emptiness
+					i(228154, {sourceID = 224389 }),	-- K'areshi Phantom's Emptiness
+					i(228154, {sourceID = 224390 }),	-- K'areshi Phantom's Emptiness
+					i(228154, {sourceID = 224391 }),	-- K'areshi Phantom's Emptiness
+					i(228154, {sourceID = 224392 }),	-- K'areshi Phantom's Emptiness
+					i(228154, {sourceID = 224393 }),	-- K'areshi Phantom's Emptiness
+					i(228154, {sourceID = 224394 }),	-- K'areshi Phantom's Emptiness
+					i(228154, {sourceID = 224395 }),	-- K'areshi Phantom's Emptiness
+					i(228154, {sourceID = 224396 }),	-- K'areshi Phantom's Emptiness
 				}),
 				cl(SHAMAN, {
-					i(228151, {["sourceID"] = 224349 }),	-- Noetic of the Forgotten Reservoir
-					i(228151, {["sourceID"] = 224350 }),	-- Noetic of the Forgotten Reservoir
-					i(228151, {["sourceID"] = 224351 }),	-- Noetic of the Forgotten Reservoir
-					i(228151, {["sourceID"] = 224352 }),	-- Noetic of the Forgotten Reservoir
-					i(228151, {["sourceID"] = 224353 }),	-- Noetic of the Forgotten Reservoir
-					i(228151, {["sourceID"] = 224354 }),	-- Noetic of the Forgotten Reservoir
-					i(228151, {["sourceID"] = 224355 }),	-- Noetic of the Forgotten Reservoir
-					i(228151, {["sourceID"] = 224356 }),	-- Noetic of the Forgotten Reservoir
-					i(228151, {["sourceID"] = 224357 }),	-- Noetic of the Forgotten Reservoir
-					i(228151, {["sourceID"] = 224358 }),	-- Noetic of the Forgotten Reservoir
-					i(228151, {["sourceID"] = 224359 }),	-- Noetic of the Forgotten Reservoir
-					i(228151, {["sourceID"] = 224360 }),	-- Noetic of the Forgotten Reservoir
+					i(228151, {sourceID = 224349 }),	-- Noetic of the Forgotten Reservoir
+					i(228151, {sourceID = 224350 }),	-- Noetic of the Forgotten Reservoir
+					i(228151, {sourceID = 224351 }),	-- Noetic of the Forgotten Reservoir
+					i(228151, {sourceID = 224352 }),	-- Noetic of the Forgotten Reservoir
+					i(228151, {sourceID = 224353 }),	-- Noetic of the Forgotten Reservoir
+					i(228151, {sourceID = 224354 }),	-- Noetic of the Forgotten Reservoir
+					i(228151, {sourceID = 224355 }),	-- Noetic of the Forgotten Reservoir
+					i(228151, {sourceID = 224356 }),	-- Noetic of the Forgotten Reservoir
+					i(228151, {sourceID = 224357 }),	-- Noetic of the Forgotten Reservoir
+					i(228151, {sourceID = 224358 }),	-- Noetic of the Forgotten Reservoir
+					i(228151, {sourceID = 224359 }),	-- Noetic of the Forgotten Reservoir
+					i(228151, {sourceID = 224360 }),	-- Noetic of the Forgotten Reservoir
 					itemsource(221630),	-- Sarong of the Forgotten Reservoir
 					itemsource(221631),	-- Sarong of the Forgotten Reservoir
 					itemsource(222487),	-- Sarong of the Forgotten Reservoir
@@ -11498,40 +11498,40 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					itemsource(222518),	-- Vestments of the Forgotten Reservoir
 				}),
 				cl(WARLOCK, {
-					i(228158, {["sourceID"] = 224433 }),	-- Hexflame Coven's All-Seeing Eye
-					i(228158, {["sourceID"] = 224434 }),	-- Hexflame Coven's All-Seeing Eye
-					i(228158, {["sourceID"] = 224435 }),	-- Hexflame Coven's All-Seeing Eye
-					i(228158, {["sourceID"] = 224436 }),	-- Hexflame Coven's All-Seeing Eye
-					i(228158, {["sourceID"] = 224437 }),	-- Hexflame Coven's All-Seeing Eye
-					i(228158, {["sourceID"] = 224438 }),	-- Hexflame Coven's All-Seeing Eye
-					i(228158, {["sourceID"] = 224439 }),	-- Hexflame Coven's All-Seeing Eye
-					i(228158, {["sourceID"] = 224440 }),	-- Hexflame Coven's All-Seeing Eye
-					i(228158, {["sourceID"] = 224441 }),	-- Hexflame Coven's All-Seeing Eye
-					i(228158, {["sourceID"] = 224442 }),	-- Hexflame Coven's All-Seeing Eye
-					i(228158, {["sourceID"] = 224443 }),	-- Hexflame Coven's All-Seeing Eye
-					i(228158, {["sourceID"] = 224444 }),	-- Hexflame Coven's All-Seeing Eye
+					i(228158, {sourceID = 224433 }),	-- Hexflame Coven's All-Seeing Eye
+					i(228158, {sourceID = 224434 }),	-- Hexflame Coven's All-Seeing Eye
+					i(228158, {sourceID = 224435 }),	-- Hexflame Coven's All-Seeing Eye
+					i(228158, {sourceID = 224436 }),	-- Hexflame Coven's All-Seeing Eye
+					i(228158, {sourceID = 224437 }),	-- Hexflame Coven's All-Seeing Eye
+					i(228158, {sourceID = 224438 }),	-- Hexflame Coven's All-Seeing Eye
+					i(228158, {sourceID = 224439 }),	-- Hexflame Coven's All-Seeing Eye
+					i(228158, {sourceID = 224440 }),	-- Hexflame Coven's All-Seeing Eye
+					i(228158, {sourceID = 224441 }),	-- Hexflame Coven's All-Seeing Eye
+					i(228158, {sourceID = 224442 }),	-- Hexflame Coven's All-Seeing Eye
+					i(228158, {sourceID = 224443 }),	-- Hexflame Coven's All-Seeing Eye
+					i(228158, {sourceID = 224444 }),	-- Hexflame Coven's All-Seeing Eye
 				}),
 				cl(WARRIOR, {
-					i(228148, {["sourceID"] = 224313 }),	-- Warsculptor's Barbute
-					i(228148, {["sourceID"] = 224314 }),	-- Warsculptor's Barbute
-					i(228148, {["sourceID"] = 224315 }),	-- Warsculptor's Barbute
-					i(228148, {["sourceID"] = 224316 }),	-- Warsculptor's Barbute
-					i(228148, {["sourceID"] = 224317 }),	-- Warsculptor's Barbute
-					i(228148, {["sourceID"] = 224318 }),	-- Warsculptor's Barbute
-					i(228148, {["sourceID"] = 224319 }),	-- Warsculptor's Barbute
-					i(228148, {["sourceID"] = 224320 }),	-- Warsculptor's Barbute
-					i(228148, {["sourceID"] = 224321 }),	-- Warsculptor's Barbute
-					i(228148, {["sourceID"] = 224322 }),	-- Warsculptor's Barbute
-					i(228148, {["sourceID"] = 224323 }),	-- Warsculptor's Barbute
-					i(228148, {["sourceID"] = 224324 }),	-- Warsculptor's Barbute
+					i(228148, {sourceID = 224313 }),	-- Warsculptor's Barbute
+					i(228148, {sourceID = 224314 }),	-- Warsculptor's Barbute
+					i(228148, {sourceID = 224315 }),	-- Warsculptor's Barbute
+					i(228148, {sourceID = 224316 }),	-- Warsculptor's Barbute
+					i(228148, {sourceID = 224317 }),	-- Warsculptor's Barbute
+					i(228148, {sourceID = 224318 }),	-- Warsculptor's Barbute
+					i(228148, {sourceID = 224319 }),	-- Warsculptor's Barbute
+					i(228148, {sourceID = 224320 }),	-- Warsculptor's Barbute
+					i(228148, {sourceID = 224321 }),	-- Warsculptor's Barbute
+					i(228148, {sourceID = 224322 }),	-- Warsculptor's Barbute
+					i(228148, {sourceID = 224323 }),	-- Warsculptor's Barbute
+					i(228148, {sourceID = 224324 }),	-- Warsculptor's Barbute
 				}),
 			}),
 		})),
 
 		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ timeline = { CREATED_11_0_2 } }, {
 			header(HEADERS.Item, 226224, {	-- Luminous Nerubian Catalyst Stone
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(211997),	-- Exhumed Centurion's Drape
 						i(211998),	-- Exhumed Centurion's Manacles
@@ -11640,117 +11640,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(211987),	-- Warsculptor's Furred Plastron
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
-					cl(DEATHKNIGHT, {
-						i(211997),	-- Exhumed Centurion's Drape
-						i(211998),	-- Exhumed Centurion's Manacles
-						i(212001),	-- Exhumed Centurion's Chausses
-						i(212003),	-- Exhumed Centurion's Gauntlets
-						i(212004),	-- Exhumed Centurion's Sollerets
-						i(212005),	-- Exhumed Centurion's Breastplate
-					}),
-					cl(DEMONHUNTER, {
-						i(212060),	-- Drape of the Hypogeal Nemesis
-						i(212061),	-- Armguards of the Hypogeal Nemesis
-						i(212064),	-- Pantaloons of the Hypogeal Nemesis
-						i(212067),	-- Talons of the Hypogeal Nemesis
-						i(212068),	-- Chestguard of the Hypogeal Nemesis
-					}),
-					cl(DRUID, {
-						i(212051),	-- Cloak of the Greatlynx
-						i(212052),	-- Great Links of the Greatlynx
-						i(212055),	-- Leggings of the Greatlynx
-						i(212057),	-- Eviscerators of the Greatlynx
-						i(212058),	-- Treads of the Greatlynx
-						i(212059),	-- Hide of the Greatlynx
-					}),
-					cl(EVOKER, {
-						i(212024),	-- Cape of the Destroyer
-						i(212025),	-- Wristblades of the Destroyer
-						i(212026),	-- Core of the Destroyer
-						i(212028),	-- Legguards of the Destroyer
-						i(212030),	-- Rippers of the Destroyer
-						i(212031),	-- Talons of the Destroyer
-						i(212032),	-- Scales of the Destroyer
-					}),
-					cl(HUNTER, {
-						i(212015),	-- Lightless Scavenger's Hide
-						i(212016),	-- Lightless Scavenger's Wristguards
-						i(212017),	-- Lightless Scavenger's Bonegirdle
-						i(212019),	-- Lightless Scavenger's Stalkings
-						i(212021),	-- Lightless Scavenger's Mitts
-						i(212022),	-- Lightless Scavenger's Footpads
-						i(212023),	-- Lightless Scavenger's Tunic
-					}),
-					cl(MAGE, {
-						i(212087),	-- Ward of Violet Rebirth
-						i(212088),	-- Bracelets of Violet Rebirth
-						i(212091),	-- Coattails of Violet Rebirth
-						i(212094),	-- Slippers of Violet Rebirth
-					}),
-					cl(MONK, {
-						i(212042),	-- Gatecrasher's Mantle
-						i(212043),	-- Gatecrasher's Armguards
-						i(212044),	-- Gatecrasher's Cord
-						i(212046),	-- Gatecrasher's Kilt
-						i(212048),	-- Gatecrasher's Protectors
-						i(212049),	-- Gatecrasher's Tabi
-						i(212050),	-- Gatecrasher's Gi
-					}),
-					cl(PALADIN, {
-						i(211988),	-- Entombed Seraph's Greatcloak
-						i(211989),	-- Entombed Seraph's Shackles
-						i(211990),	-- Entombed Seraph's Waistguard
-						i(211992),	-- Entombed Seraph's Greaves
-						i(211994),	-- Entombed Seraph's Castigation
-						i(211995),	-- Entombed Seraph's Sabatons
-						i(211996),	-- Entombed Seraph's Breastplate
-					}),
-					cl(PRIEST, {
-						i(212078),	-- Living Luster's Glow
-						i(212079),	-- Living Luster's Crystbands
-						i(212082),	-- Living Luster's Trousers
-						i(212084),	-- Living Luster's Touch
-						i(212085),	-- Living Luster's Boots
-						i(212086),	-- Living Luster's Raiment
-					}),
-					cl(ROGUE, {
-						i(212033),	-- K'areshi Phantom's Breeze
-						i(212034),	-- K'areshi Phantom's Cuffs
-						i(212035),	-- K'areshi Phantom's Belt
-						i(212037),	-- K'areshi Phantom's Leggings
-						i(212038),	-- K'areshi Phantom's Emptiness
-						i(212039),	-- K'areshi Phantom's Grips
-						i(212040),	-- K'areshi Phantom's Netherwalkers
-						i(212041),	-- K'areshi Phantom's Nexus Wraps
-					}),
-					cl(SHAMAN, {
-						i(212006),	-- Mist of the Forgotten Reservoir
-						i(212007),	-- Embrace of the Forgotten Reservoir
-						i(212008),	-- Wrappings of the Forgotten Reservoir
-						i(212012),	-- Covenant of the Forgotten Reservoir
-						i(212013),	-- Shoes of the Forgotten Reservoir
-					}),
-					cl(WARLOCK, {
-						i(212069),	-- Hexflame Coven's Shawl
-						i(212070),	-- Hexflame Coven's Wristlace
-						i(212071),	-- Hexflame Coven's Dormant Eye
-						i(212073),	-- Hexflame Coven's Leggings
-						i(212075),	-- Hexflame Coven's Sleeves
-						i(212076),	-- Hexflame Coven's Treads
-						i(212077),	-- Hexflame Coven's Ritual Harness
-					}),
-					cl(WARRIOR, {
-						i(211979),	-- Warsculptor's Cloak
-						i(211980),	-- Warsculptor's Armguards
-						i(211981),	-- Warsculptor's Buckle
-						i(211983),	-- Warsculptor's Cuisses
-						i(211985),	-- Warsculptor's Crushers
-						i(211986),	-- Warsculptor's Carved Boots
-						i(211987),	-- Warsculptor's Furred Plastron
-					}),
-				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(211997),	-- Exhumed Centurion's Drape
 						i(211998),	-- Exhumed Centurion's Manacles
@@ -11860,7 +11750,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(211987),	-- Warsculptor's Furred Plastron
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(211997),	-- Exhumed Centurion's Drape
 						i(211998),	-- Exhumed Centurion's Manacles
@@ -11970,7 +11860,117 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(211987),	-- Warsculptor's Furred Plastron
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
+					cl(DEATHKNIGHT, {
+						i(211997),	-- Exhumed Centurion's Drape
+						i(211998),	-- Exhumed Centurion's Manacles
+						i(212001),	-- Exhumed Centurion's Chausses
+						i(212003),	-- Exhumed Centurion's Gauntlets
+						i(212004),	-- Exhumed Centurion's Sollerets
+						i(212005),	-- Exhumed Centurion's Breastplate
+					}),
+					cl(DEMONHUNTER, {
+						i(212060),	-- Drape of the Hypogeal Nemesis
+						i(212061),	-- Armguards of the Hypogeal Nemesis
+						i(212064),	-- Pantaloons of the Hypogeal Nemesis
+						i(212067),	-- Talons of the Hypogeal Nemesis
+						i(212068),	-- Chestguard of the Hypogeal Nemesis
+					}),
+					cl(DRUID, {
+						i(212051),	-- Cloak of the Greatlynx
+						i(212052),	-- Great Links of the Greatlynx
+						i(212055),	-- Leggings of the Greatlynx
+						i(212057),	-- Eviscerators of the Greatlynx
+						i(212058),	-- Treads of the Greatlynx
+						i(212059),	-- Hide of the Greatlynx
+					}),
+					cl(EVOKER, {
+						i(212024),	-- Cape of the Destroyer
+						i(212025),	-- Wristblades of the Destroyer
+						i(212026),	-- Core of the Destroyer
+						i(212028),	-- Legguards of the Destroyer
+						i(212030),	-- Rippers of the Destroyer
+						i(212031),	-- Talons of the Destroyer
+						i(212032),	-- Scales of the Destroyer
+					}),
+					cl(HUNTER, {
+						i(212015),	-- Lightless Scavenger's Hide
+						i(212016),	-- Lightless Scavenger's Wristguards
+						i(212017),	-- Lightless Scavenger's Bonegirdle
+						i(212019),	-- Lightless Scavenger's Stalkings
+						i(212021),	-- Lightless Scavenger's Mitts
+						i(212022),	-- Lightless Scavenger's Footpads
+						i(212023),	-- Lightless Scavenger's Tunic
+					}),
+					cl(MAGE, {
+						i(212087),	-- Ward of Violet Rebirth
+						i(212088),	-- Bracelets of Violet Rebirth
+						i(212091),	-- Coattails of Violet Rebirth
+						i(212094),	-- Slippers of Violet Rebirth
+					}),
+					cl(MONK, {
+						i(212042),	-- Gatecrasher's Mantle
+						i(212043),	-- Gatecrasher's Armguards
+						i(212044),	-- Gatecrasher's Cord
+						i(212046),	-- Gatecrasher's Kilt
+						i(212048),	-- Gatecrasher's Protectors
+						i(212049),	-- Gatecrasher's Tabi
+						i(212050),	-- Gatecrasher's Gi
+					}),
+					cl(PALADIN, {
+						i(211988),	-- Entombed Seraph's Greatcloak
+						i(211989),	-- Entombed Seraph's Shackles
+						i(211990),	-- Entombed Seraph's Waistguard
+						i(211992),	-- Entombed Seraph's Greaves
+						i(211994),	-- Entombed Seraph's Castigation
+						i(211995),	-- Entombed Seraph's Sabatons
+						i(211996),	-- Entombed Seraph's Breastplate
+					}),
+					cl(PRIEST, {
+						i(212078),	-- Living Luster's Glow
+						i(212079),	-- Living Luster's Crystbands
+						i(212082),	-- Living Luster's Trousers
+						i(212084),	-- Living Luster's Touch
+						i(212085),	-- Living Luster's Boots
+						i(212086),	-- Living Luster's Raiment
+					}),
+					cl(ROGUE, {
+						i(212033),	-- K'areshi Phantom's Breeze
+						i(212034),	-- K'areshi Phantom's Cuffs
+						i(212035),	-- K'areshi Phantom's Belt
+						i(212037),	-- K'areshi Phantom's Leggings
+						i(212038),	-- K'areshi Phantom's Emptiness
+						i(212039),	-- K'areshi Phantom's Grips
+						i(212040),	-- K'areshi Phantom's Netherwalkers
+						i(212041),	-- K'areshi Phantom's Nexus Wraps
+					}),
+					cl(SHAMAN, {
+						i(212006),	-- Mist of the Forgotten Reservoir
+						i(212007),	-- Embrace of the Forgotten Reservoir
+						i(212008),	-- Wrappings of the Forgotten Reservoir
+						i(212012),	-- Covenant of the Forgotten Reservoir
+						i(212013),	-- Shoes of the Forgotten Reservoir
+					}),
+					cl(WARLOCK, {
+						i(212069),	-- Hexflame Coven's Shawl
+						i(212070),	-- Hexflame Coven's Wristlace
+						i(212071),	-- Hexflame Coven's Dormant Eye
+						i(212073),	-- Hexflame Coven's Leggings
+						i(212075),	-- Hexflame Coven's Sleeves
+						i(212076),	-- Hexflame Coven's Treads
+						i(212077),	-- Hexflame Coven's Ritual Harness
+					}),
+					cl(WARRIOR, {
+						i(211979),	-- Warsculptor's Cloak
+						i(211980),	-- Warsculptor's Armguards
+						i(211981),	-- Warsculptor's Buckle
+						i(211983),	-- Warsculptor's Cuisses
+						i(211985),	-- Warsculptor's Crushers
+						i(211986),	-- Warsculptor's Carved Boots
+						i(211987),	-- Warsculptor's Furred Plastron
+					}),
+				})),
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(211997),	-- Exhumed Centurion's Drape
 						i(211998),	-- Exhumed Centurion's Manacles
@@ -12353,7 +12353,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(218706),	-- Forged Gladiator's Shawl
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(211997),	-- Exhumed Centurion's Drape
 						i(211998),	-- Exhumed Centurion's Manacles
@@ -12741,7 +12741,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			-- #if BEFORE MID
 			-- Added to TWW Elite Ensembles with Midnight
 			header(HEADERS.Object, 456208, {	-- The Catalyst
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 7532 }, {
 					cl(DEATHKNIGHT, {
 						i(211997),	-- Exhumed Centurion's Drape
 						i(211998),	-- Exhumed Centurion's Manacles
@@ -12892,7 +12892,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			-- #if BEFORE MID
 			-- Added to TWW Elite Ensembles with Midnight
 			n(SEASON_FORGED, {
-				n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 7532 }, {
+				n(PVP_ELITE, bubbleDownSelf({ bonusID = 7532 }, {
 					cl(DEATHKNIGHT, {
 						i(218651),	-- Forged Gladiator's Chestplate
 						i(218667),	-- Forged Gladiator's Drape
@@ -13055,7 +13055,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ timeline = { CREATED_11_0_5 } }, {
 			i(225021),	-- Dragonstalker's Eternal Belt
 			i(225020),	-- Dragonstalker's Eternal Bracers
 			i(225027),	-- Dragonstalker's Eternal Breastplate
@@ -13176,9 +13176,9 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
 			header(HEADERS.Item, 236852, {	-- Gallagio Highroller's Boomstone
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(229248),	-- Cauldron Champion's Spined Cloak
 						i(229249),	-- Cauldron Champion's Wraps
@@ -13294,7 +13294,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(229238),	-- Enforcer's Backalley Vestplate
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(229248),	-- Cauldron Champion's Spined Cloak
 						i(229249),	-- Cauldron Champion's Wraps
@@ -13410,7 +13410,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(229238),	-- Enforcer's Backalley Vestplate
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(229248),	-- Cauldron Champion's Spined Cloak
 						i(229249),	-- Cauldron Champion's Wraps
@@ -13526,7 +13526,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(229238),	-- Enforcer's Backalley Vestplate
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(229248),	-- Cauldron Champion's Spined Cloak
 						i(229249),	-- Cauldron Champion's Wraps
@@ -13642,7 +13642,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(229238),	-- Enforcer's Backalley Vestplate
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(229248),	-- Cauldron Champion's Spined Cloak
 						i(229249),	-- Cauldron Champion's Wraps
@@ -14031,7 +14031,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(229769),	-- Prized Gladiator's Plate Wristguards
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(229248),	-- Cauldron Champion's Spined Cloak
 						i(229249),	-- Cauldron Champion's Wraps
@@ -14422,7 +14422,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				})),
 			}),
 			header(HEADERS.Object, 456208, {	-- The Catalyst
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 7532 }, {
 					cl(DEATHKNIGHT, {
 						i(229248),	-- Cauldron Champion's Spined Cloak
 						i(229249),	-- Cauldron Champion's Wraps
@@ -14572,7 +14572,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			-- #if BEFORE MID
 			-- Added to TWW Elite Ensembles with Midnight
 			n(SEASON_PRIZED, {
-				n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 7532 }, {
+				n(PVP_ELITE, bubbleDownSelf({ bonusID = 7532 }, {
 					cl(DEATHKNIGHT, {
 						i(229726),	-- Prized Gladiator's Plate Pauldrons
 						i(229722),	-- Prized Gladiator's Plate Helmet
@@ -14735,9 +14735,9 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
 			header(HEADERS.Item, 246737, {	-- K'areshi Voidstone
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(237623),	-- Hollow Sentinel's Wingdrape
 						i(237624),	-- Hollow Sentinel's Stonecuffs
@@ -14851,7 +14851,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(237613),	-- Living Weapon's Bulwark
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(237623),	-- Hollow Sentinel's Wingdrape
 						i(237624),	-- Hollow Sentinel's Stonecuffs
@@ -14965,7 +14965,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(237613),	-- Living Weapon's Bulwark
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(237623),	-- Hollow Sentinel's Wingdrape
 						i(237624),	-- Hollow Sentinel's Stonecuffs
@@ -15079,7 +15079,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(237613),	-- Living Weapon's Bulwark
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(237623),	-- Hollow Sentinel's Wingdrape
 						i(237624),	-- Hollow Sentinel's Stonecuffs
@@ -15193,7 +15193,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(237613),	-- Living Weapon's Bulwark
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(237623),	-- Hollow Sentinel's Wingdrape
 						i(237624),	-- Hollow Sentinel's Stonecuffs
@@ -15580,7 +15580,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(230627),	-- Astral Gladiator's Plate Wristguards
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(237623),	-- Hollow Sentinel's Wingdrape
 						i(237624),	-- Hollow Sentinel's Stonecuffs
@@ -15972,7 +15972,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			-- #if BEFORE MID
 			-- Added to TWW Elite Ensembles with Midnight
 			header(HEADERS.Object, 456208, {	-- The Catalyst
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 7532 }, {
 					cl(DEATHKNIGHT, {
 						i(237623),	-- Hollow Sentinel's Wingdrape
 						i(237624),	-- Hollow Sentinel's Stonecuffs
@@ -16123,7 +16123,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			-- #if BEFORE MID
 			-- Added to TWW Elite Ensembles with Midnight
 			n(SEASON_ASTRAL, {
-				n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 7532 }, {
+				n(PVP_ELITE, bubbleDownSelf({ bonusID = 7532 }, {
 					cl(DEATHKNIGHT, {
 						i(230586),	-- Astral Gladiator's Plate Pauldrons
 						i(230582),	-- Astral Gladiator's Plate Helmet
@@ -16286,7 +16286,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 11.2.5
-		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_5 } }, {
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ timeline = { CREATED_11_2_5 } }, {
 			filter(LEATHER, {
 				i(239820),	-- Boots of the Hunting Dream
 				i(239814),	-- Cuffs of the Hunting Dream
@@ -16341,9 +16341,9 @@ root(ROOTS.NeverImplemented, n(SETS, {
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
 			header(HEADERS.Item, 265071, {	-- Gleaming Sunmote
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(249965),	-- Relentless Rider's Drape
 						i(249966),	-- Relentless Rider's Manacles
@@ -16458,7 +16458,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(249955),	-- Night Ender's Breastplate
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(249965),	-- Relentless Rider's Drape
 						i(249966),	-- Relentless Rider's Manacles
@@ -16573,7 +16573,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(249955),	-- Night Ender's Breastplate
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(249965),	-- Relentless Rider's Drape
 						i(249966),	-- Relentless Rider's Manacles
@@ -16688,7 +16688,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(249955),	-- Night Ender's Breastplate
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(249965),	-- Relentless Rider's Drape
 						i(249966),	-- Relentless Rider's Manacles
@@ -16803,7 +16803,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(249955),	-- Night Ender's Breastplate
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(255549),	-- Galactic Gladiator's Chestguard
 						i(255550),	-- Galactic Gladiator's Chestplate
@@ -17048,7 +17048,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(255606),	-- Galactic Gladiator's Shawl
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(255549),	-- Galactic Gladiator's Chestguard
 						i(255550),	-- Galactic Gladiator's Chestplate
@@ -17295,7 +17295,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				})),
 			}),
 			n(SEASON_GALACTIC, {
-				n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 7532 }, {
+				n(PVP_ELITE, bubbleDownSelf({ bonusID = 7532 }, {
 					cl(DEATHKNIGHT, {
 						i(255560),	-- Galactic Gladiator's Plate Pauldrons
 						i(255558),	-- Galactic Gladiator's Plate Wargreaves

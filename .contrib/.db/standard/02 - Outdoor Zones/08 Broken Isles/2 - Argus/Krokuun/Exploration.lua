@@ -4,7 +4,7 @@
 
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
-		m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
+		m(ARGUS, bubbleDown({ timeline = { ADDED_7_3_0 } }, {
 			m(KROKUUN, {
 				explorationHeader({
 					exploration(8695),	-- Annihilan Pits

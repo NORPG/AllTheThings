@@ -176,19 +176,19 @@ InstanceHelper.BossObjects = {
 	[MOTHER] = { 291079 },	-- MOTHER's Cache
 }
 InstanceHelper.LFRQueueNPC = {
-	["crs"] = {
+	crs = {
 		177193,	-- Kiku
 		177208,	-- Eppu
 	},
-	["coords"] = {
+	coords = {
 		{ 74.0, 13.4, BORALUS },	-- Kiku
 		{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 	inst(1031, {	-- Uldir
-		["maps"] = {
+		maps = {
 			1148,	-- Ruin's Descent
 			1149,	-- Hall of Sanitation
 			1150,	-- Ring of Containment
@@ -198,14 +198,14 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			1154,	-- The Oblivion Door
 			1155,	-- The Festering Core
 		},
-		["isRaid"] = true,
-		["lvl"] = { 50 },
-		["groups"] = {
+		isRaid = true,
+		lvl = { 50 },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(12537),	-- Uldir Guild Run
 				ach(12991),	-- New Mog, G'huun This?
 				ach(12806, {	-- Glory of the Uldir Raider
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						12551,	-- Double Dribble
 						12937,	-- Elevator Music
 						12938,	-- Parental Controls
@@ -215,44 +215,44 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						12830,	-- Edgelords
 						12836,	-- Existential Crisis
 					}},
-					["groups"] = {
+					groups = {
 						i(163216),	-- Bloodgorged Crawg (MOUNT!)
 					},
 				}),
 				ach(12521, {	-- Halls of Containment
 					crit(40246, {	-- Taloc
-						["_encounter"] = { TALOC, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { TALOC, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(40247, {	-- MOTHER
-						["_encounter"] = { MOTHER, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { MOTHER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(40223, {	-- Zek'voz, Herald of N'zoth
-						["_encounter"] = { ZEKVOZ, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ZEKVOZ, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(12522, {	-- Crimson Descent
 					crit(40248, {	-- Vectis
-						["_encounter"] = { VECTIS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { VECTIS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(40222, {	-- Fetid Devourer
-						["_encounter"] = { FETID_DEVOURER, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { FETID_DEVOURER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(40224, {	-- Zul, Reborn
-						["_encounter"] = { ZUL, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ZUL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(12523, {	-- Heart of Corruption
 					crit(40220, {	-- Mythrax the Unraveler
-						["_encounter"] = { MYTHRAX, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { MYTHRAX, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(40221, {	-- G'huun
-						["_encounter"] = { GHUUN, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { GHUUN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(40960, {	-- Uldir
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						12522,	-- Crimson Descent
 						12521,	-- Halls of Containment
 						12523,	-- Heart of Corruption
@@ -261,71 +261,71 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			n(QUESTS, {
 				spell(281237, {	-- Reorigination Array
-					["description"] = "As mentioned above, Reorigination Array can stack up to 10 times, and the tooltip reveals how this system works. Every week, there is a hidden mini-quest to defeat 3 bosses in Uldir, this objective can be completed in any difficulty. You do not need to have any Azerite Armor from Uldir to progress in these quests. Completing this quest will reward you with one stack of Reorigination Array while in Uldir permanently.\n\nThe track of the complete upgrade system is achieved by a dozen different flag quests, listed below. Note, however, that these quests don't have database entries as they only serve as flags, but can be actually queried in-game for their completion. The first part of the system controls how many bosses have been killed in Uldir for that week:",
-					["groups"] = {
+					description = "As mentioned above, Reorigination Array can stack up to 10 times, and the tooltip reveals how this system works. Every week, there is a hidden mini-quest to defeat 3 bosses in Uldir, this objective can be completed in any difficulty. You do not need to have any Azerite Armor from Uldir to progress in these quests. Completing this quest will reward you with one stack of Reorigination Array while in Uldir permanently.\n\nThe track of the complete upgrade system is achieved by a dozen different flag quests, listed below. Note, however, that these quests don't have database entries as they only serve as flags, but can be actually queried in-game for their completion. The first part of the system controls how many bosses have been killed in Uldir for that week:",
+					groups = {
 						q(53568, {	-- Kill Credit 1
-							["name"] = "Kill Credit 1",
-							["icon"] = 1392920,
-							["isWeekly"] = true,
+							name = "Kill Credit 1",
+							icon = 1392920,
+							isWeekly = true,
 						}),
 						q(53569, {	-- Kill Credit 2
-							["name"] = "Kill Credit 2",
-							["icon"] = 1392921,
-							["isWeekly"] = true,
+							name = "Kill Credit 2",
+							icon = 1392921,
+							isWeekly = true,
 						}),
 						q(53570, {	-- Kill Credit 3
-							["name"] = "Kill Credit 3",
-							["icon"] = 1392922,
-							["isWeekly"] = true,
+							name = "Kill Credit 3",
+							icon = 1392922,
+							isWeekly = true,
 						}),
 						q(53571, {	-- Power Increased to Level 1
-							["name"] = "Power Increased to Level 1",
-							["icon"] = 2000859,
+							name = "Power Increased to Level 1",
+							icon = 2000859,
 						}),
 						q(53572, {	-- Power Increased to Level 2
-							["name"] = "Power Increased to Level 2",
-							["icon"] = 2000859,
-							["sourceQuests"] = { 53571 },	-- Power Increased to Level 1
+							name = "Power Increased to Level 2",
+							icon = 2000859,
+							sourceQuests = { 53571 },	-- Power Increased to Level 1
 						}),
 						q(53573, {	-- Power Increased to Level 3
-							["name"] = "Power Increased to Level 3",
-							["icon"] = 2000859,
-							["sourceQuests"] = { 53572 },	-- Power Increased to Level 2
+							name = "Power Increased to Level 3",
+							icon = 2000859,
+							sourceQuests = { 53572 },	-- Power Increased to Level 2
 						}),
 						q(53574, {	-- Power Increased to Level 4
-							["name"] = "Power Increased to Level 4",
-							["icon"] = 2000859,
-							["sourceQuests"] = { 53573 },	-- Power Increased to Level 3
+							name = "Power Increased to Level 4",
+							icon = 2000859,
+							sourceQuests = { 53573 },	-- Power Increased to Level 3
 						}),
 						q(53575, {	-- Power Increased to Level 5
-							["name"] = "Power Increased to Level 5",
-							["icon"] = 2000859,
-							["sourceQuests"] = { 53574 },	-- Power Increased to Level 4
+							name = "Power Increased to Level 5",
+							icon = 2000859,
+							sourceQuests = { 53574 },	-- Power Increased to Level 4
 						}),
 						q(53576, {	-- Power Increased to Level 6
-							["name"] = "Power Increased to Level 6",
-							["icon"] = 2000859,
-							["sourceQuests"] = { 53575 },	-- Power Increased to Level 5
+							name = "Power Increased to Level 6",
+							icon = 2000859,
+							sourceQuests = { 53575 },	-- Power Increased to Level 5
 						}),
 						q(53577, {	-- Power Increased to Level 7
-							["name"] = "Power Increased to Level 7",
-							["icon"] = 2000859,
-							["sourceQuests"] = { 53576 },	-- Power Increased to Level 6
+							name = "Power Increased to Level 7",
+							icon = 2000859,
+							sourceQuests = { 53576 },	-- Power Increased to Level 6
 						}),
 						q(53578, {	-- Power Increased to Level 8
-							["name"] = "Power Increased to Level 8",
-							["icon"] = 2000859,
-							["sourceQuests"] = { 53577 },	-- Power Increased to Level 7
+							name = "Power Increased to Level 8",
+							icon = 2000859,
+							sourceQuests = { 53577 },	-- Power Increased to Level 7
 						}),
 						q(53579, {	-- Power Increased to Level 9
-							["name"] = "Power Increased to Level 9",
-							["icon"] = 2000859,
-							["sourceQuests"] = { 53578 },	-- Power Increased to Level 8
+							name = "Power Increased to Level 9",
+							icon = 2000859,
+							sourceQuests = { 53578 },	-- Power Increased to Level 8
 						}),
 						q(53580, {	-- Power Increased to Level 10
-							["name"] = "Power Increased to Level 10",
-							["icon"] = 2000859,
-							["sourceQuests"] = { 53579 },	-- Power Increased to Level 9
+							name = "Power Increased to Level 10",
+							icon = 2000859,
+							sourceQuests = { 53579 },	-- Power Increased to Level 9
 						}),
 					},
 				}),
@@ -410,7 +410,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(GHUUN, {
 					ach(12536, {	-- Ahead of the Curve: G'huun
-						["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 },
+						timeline = { ADDED_8_0_1, REMOVED_8_1_0 },
 					}),
 				}),
 			}),
@@ -450,21 +450,21 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				Boss(GHUUN, {
 					ach(12535, {	-- Cutting Edge: G'huun
-						["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 },
+						timeline = { ADDED_8_0_1, REMOVED_8_1_0 },
 					}),
 					ach(12533, {	-- Mythic: G'huun
 						title(381),	-- <Name> the Purifier
 					}),
 					ach(13010),	-- Mythic: G'huun Guild Run
-					ach(12542, applyDataSelf({["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 } }, {	-- Hall of Fame: G'huun (Alliance)
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+					ach(12542, applyDataSelf({timeline = { ADDED_8_0_1, REMOVED_8_1_0 } }, {	-- Hall of Fame: G'huun (Alliance)
+						races = ALLIANCE_ONLY,
+						groups = {
 							title(374),	-- <Name>, Famed Slayer of G'huun
 						},
 					})),
-					ach(12543, applyDataSelf({["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 } }, {	-- Hall of Fame: G'huun (Horde)
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+					ach(12543, applyDataSelf({timeline = { ADDED_8_0_1, REMOVED_8_1_0 } }, {	-- Hall of Fame: G'huun (Horde)
+						races = HORDE_ONLY,
+						groups = {
 							title(374),	-- <Name>, Famed Slayer of G'huun
 						},
 					})),
@@ -474,7 +474,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 	inst(1031, {	-- Uldir
 		q(53269),	-- killed Taloc the Corrupted in LFR
 		q(51736),	-- killed Taloc on Mythic

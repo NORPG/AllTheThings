@@ -167,14 +167,14 @@ local Boss, BossOnly, Difficulty, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.ZoneDrops
 
 InstanceHelper.LFRQueueNPC = {
-	["cr"] = 111246,	-- Archmage Timear
-	["coord"] = { 63.7, 55.0, LEGION_DALARAN },
+	cr = 111246,	-- Archmage Timear
+	coord = { 63.7, 55.0, LEGION_DALARAN },
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 	inst(768, {	-- The Emerald Nightmare
-		["coord"] = { 56.3, 36.9, VALSHARAH },
-		["maps"] = {
+		coord = { 56.3, 36.9, VALSHARAH },
+		maps = {
 			777,
 			778,
 			779,
@@ -189,45 +189,45 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			788,
 			789,
 		},
-		["isRaid"] = true,
-		["lvl"] = 110,
-		["groups"] = {
+		isRaid = true,
+		lvl = 110,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(10818, {	-- Darkbough
 					crit(31428, {	-- Nythendra
-						["_encounter"] = { NYTHENDRA, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { NYTHENDRA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(31429, {	-- Elerethe Renferal
-						["_encounter"] = { ELERETHE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ELERETHE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(31430, {	-- Il'gynoth, Heart of Corruption
-						["_encounter"] = { ILGYNOTH, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ILGYNOTH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(10819, {	-- Tormented Guardians
 					crit(31431, {	-- Ursoc
-						["_encounter"] = { URSOC, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { URSOC, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(31433, {	-- Dragons of Nightmare
-						["_encounter"] = { DRAGONS_NIGHTMARE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { DRAGONS_NIGHTMARE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(31432, {	-- Cenarius
-						["_encounter"] = { CENARIUS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { CENARIUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(10820, {	-- Rift of Aln
 					crit(31434, {	-- Xavius
-						["_encounter"] = { XAVIUS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { XAVIUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(42029, {	-- The Emerald Nightmare (automated)
-					["timeline"] = { ADDED_11_1_7 },
+					timeline = { ADDED_11_1_7 },
 				}),
 				ach(10866),	-- The Emerald Nightmare Guild Run
 			}),
 			petbattle(filter(BATTLE_PETS, {
 				pet(1722, {	-- Dream Whelpling (PET!)
-					["description"] = "Once you defeat Xavius these will spawn in the area after him."
+					description = "Once you defeat Xavius these will spawn in the area after him."
 				}),
 			})),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
@@ -244,7 +244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1] (RECIPE!)
 					i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2] (RECIPE!)
 					i(139569, {	-- Claw of N'Zoth
-						-- ["sourceQuest"] = , TODO
+						-- sourceQuest = , TODO
 					}),
 				}),
 				BossOnly(URSOC, {
@@ -252,10 +252,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1] (RECIPE!)
 					i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2] (RECIPE!)
 					i(139557, {	-- Last Breath of the Forest
-						-- ["sourceQuest"] = , TODO
+						-- sourceQuest = , TODO
 					}),
 					i(139553, {	-- Mark of the Glade Guardian
-						-- ["sourceQuest"] = , TODO
+						-- sourceQuest = , TODO
 					}),
 				}),
 				BossOnly(DRAGONS_NIGHTMARE, {
@@ -263,7 +263,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1] (RECIPE!)
 					i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2] (RECIPE!)
 					i(139562, {	-- Breath of the Undying Serpent
-						-- ["sourceQuest"] = , TODO
+						-- sourceQuest = , TODO
 					}),
 				}),
 				BossOnly(CENARIUS, {
@@ -297,17 +297,17 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(NYTHENDRA, {
 					ach(10555, {	-- Buggy Fight
-						["cr"] = 105097,	-- Glow Bug
+						cr = 105097,	-- Glow Bug
 					}),
 				}),
 				BossOnly(ELERETHE, {
 					ach(10771, {	-- Webbing Crashers
-						["cr"] = 112078,	-- Pulsing Egg Sac
+						cr = 112078,	-- Pulsing Egg Sac
 					}),
 				}),
 				BossOnly(ILGYNOTH, {
 					ach(10830, {	-- Took the Red Eye Down
-						["crs"] = {
+						crs = {
 							105304,	-- Dominator Tentacle
 							105322,	-- Deathglare Tentacle
 							105591,	-- Nightmare Horror
@@ -317,7 +317,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				BossOnly(URSOC, {
 					ach(10753, {	-- Scare Bear
-						["cr"] = 111263,	-- Tur Ragepaw
+						cr = 111263,	-- Tur Ragepaw
 					}),
 				}),
 				BossOnly(DRAGONS_NIGHTMARE, {
@@ -326,16 +326,16 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				BossOnly(CENARIUS, {
 					ach(10772, {	-- Use the Force(s)
 						crit(31349, {	-- Dryads Uncleansed
-							["cr"] = 105495,	-- Twisted Sister
+							cr = 105495,	-- Twisted Sister
 						}),
 						crit(31350, {	-- Treants Uncleansed
-							["cr"] = 105468,	-- Nightmare Ancient
+							cr = 105468,	-- Nightmare Ancient
 						}),
 						crit(31351, {	-- Wisps Uncleansed
-							["cr"] = 113774,	-- Corrupted Wisp
+							cr = 113774,	-- Corrupted Wisp
 						}),
 						crit(31348, {	-- Drakes Uncleansed
-							["cr"] = 105494,	-- Rotten Drake
+							cr = 105494,	-- Rotten Drake
 						}),
 					}),
 				}),
@@ -347,13 +347,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(44283, {	-- The Emerald Nightmare: Piercing the Veil (Normal)
-						["description"] = "Finishing this quest will grant you immediate access to Cenarius on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
-						["altQuests"] = {
+						description = "Finishing this quest will grant you immediate access to Cenarius on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						altQuests = {
 							44284,	-- The Emerald Nightmare: Piercing the Veil (Heroic)
 							44285,	-- The Emerald Nightmare: Piercing the Veil (Mythic)
 						},
-						["qg"] = 106482,	-- Malfurion Stormrage
-						["qi"] = 141303,	-- Essence of Clarity (QI!)
+						qg = 106482,	-- Malfurion Stormrage
+						qi = 141303,	-- Essence of Clarity (QI!)
 					}),
 				}),
 				Boss(NYTHENDRA),
@@ -367,7 +367,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(XAVIUS, {
 					ach(11194, {	-- Ahead of the Curve: Xavius
-						["timeline"] = { REMOVED_7_1_0 },
+						timeline = { REMOVED_7_1_0 },
 					}),
 				}),
 			}),
@@ -375,10 +375,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(44284, {	-- The Emerald Nightmare: Piercing the Veil [Heroic]
-						["description"] = "Finishing this quest will grant you immediate access to Cenarius on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
-						["altQuests"] = { 44285 },	-- The Emerald Nightmare: Piercing the Veil (Mythic)
-						["qg"] = 106482,	-- Malfurion Stormrage
-						["qi"] = 141304,	-- Essence of Clarity (QI!)
+						description = "Finishing this quest will grant you immediate access to Cenarius on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						altQuests = { 44285 },	-- The Emerald Nightmare: Piercing the Veil (Mythic)
+						qg = 106482,	-- Malfurion Stormrage
+						qi = 141304,	-- Essence of Clarity (QI!)
 					}),
 				}),
 				Boss(NYTHENDRA),
@@ -395,9 +395,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(44285, {	-- The Emerald Nightmare: Piercing the Veil [Mythic]
-						["description"] = "Finishing this quest will grant you immediate access to Cenarius on Mythic difficulty each week.\n",
-						["qg"] = 106482,	-- Malfurion Stormrage
-						["qi"] = 141305,	-- Essence of Clarity (QI!)
+						description = "Finishing this quest will grant you immediate access to Cenarius on Mythic difficulty each week.\n",
+						qg = 106482,	-- Malfurion Stormrage
+						qi = 141305,	-- Essence of Clarity (QI!)
 					}),
 				}),
 				Boss(NYTHENDRA, {
@@ -420,11 +420,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				Boss(XAVIUS, {
 					ach(11191, {	-- Cutting Edge: Xavius
-						["timeline"] = { REMOVED_7_1_0 },
+						timeline = { REMOVED_7_1_0 },
 					}),
 					i(141006),	-- The First Satyr's Spaulders [Heroic and Mythic only!]
 					ach(10854, {	-- Realm First! Xavius
-						["u"] = REMOVED_FROM_GAME,
+						u = REMOVED_FROM_GAME,
 					}),
 					ach(10827, {	-- Mythic: Xavius
 						title(341),	-- The Dreamer
@@ -436,7 +436,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 	inst(768, {
 		q(44142),	-- Nythendra
 		q(44143),	-- Il'gynoth, Heart of Corruption

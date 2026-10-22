@@ -272,10 +272,10 @@ InstanceHelper.UpgradeMapping = {
 	-- #ENDIF
 };
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
 	inst(1273, {	-- Nerub'ar Palace
-		["coord"] = { 35.6, 71.6, AZJ_KAHET },
-		["maps"] = {
+		coord = { 35.6, 71.6, AZJ_KAHET },
+		maps = {
 			2291,	-- The Pulsing Pit
 			2292,	-- Grand Rampart
 			2293,	-- Terrace of Majesty
@@ -283,94 +283,94 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			2295,	-- The Crown of Shadows
 			2296,	-- The Crown of Shadows - Upper
 		},
-		["isRaid"] = true,
-		["groups"] = {
+		isRaid = true,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(40247, {	-- The Skittering Battlements
 					crit(67564, {	-- Ulgrax the Devourer
-						["_encounter"] = { ULGRAX, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ULGRAX, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(67566, {	-- The Bloodbound Horror
-						["_encounter"] = { BLOODBOUND_HORROR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { BLOODBOUND_HORROR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(67566, {	-- Sikran, Captain of the Sureki
-						["_encounter"] = { SIKRAN, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SIKRAN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(40248, {	-- Secrets of Nerub-ar Palace
 					crit(67567, {	-- Rasha'nan
-						["_encounter"] = { RASHANAN, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { RASHANAN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(67568, {	-- Broodtwister Ovi'nax
-						["_encounter"] = { OVINAX, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { OVINAX, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(67569, {	-- Nexus-Princess Ky'veza
-						["_encounter"] = { KYVEZA, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { KYVEZA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(40249, {	-- A Queen's Fall
 					crit(67570, {	-- The Silken Court
-						["_encounter"] = { SILKEN_COURT, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SILKEN_COURT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(67571, {	-- Queen Ansurek
-						["_encounter"] = { ANSUREK, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ANSUREK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(40244, {	-- Nerub-ar Palace
 					crit(67564, {	-- Ulgrax the Devourer
-						["_encounter"] = { ULGRAX, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ULGRAX, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(67565, {	-- The Bloodborne Horror
-						["_encounter"] = { BLOODBOUND_HORROR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { BLOODBOUND_HORROR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(67566, {	-- Sikran, Captain of the Sureki
-						["_encounter"] = { SIKRAN, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SIKRAN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(67567, {	-- Rasha'nan
-						["_encounter"] = { RASHANAN, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { RASHANAN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(67568, {	-- Broodtwister Ovi'nax
-						["_encounter"] = { OVINAX, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { OVINAX, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(67569, {	-- Nexus-Princess Ky'veza
-						["_encounter"] = { KYVEZA, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { KYVEZA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(67570, {	-- The Silken Court
-						["_encounter"] = { SILKEN_COURT, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SILKEN_COURT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(67571, {	-- Queen Ansurek
-						["_encounter"] = { ANSUREK, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ANSUREK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(40245, {	-- Heroic: Nerub-ar Palace
 					crit(67572, {	-- Ulgrax the Devourer
-						["_encounter"] = { ULGRAX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { ULGRAX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(67573, {	-- The Bloodborne Horror
-						["_encounter"] = { BLOODBOUND_HORROR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { BLOODBOUND_HORROR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(67574, {	-- Sikran, Captain of the Sureki
-						["_encounter"] = { SIKRAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { SIKRAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(67575, {	-- Rasha'nan
-						["_encounter"] = { RASHANAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { RASHANAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(67576, {	-- Broodtwister Ovi'nax
-						["_encounter"] = { OVINAX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { OVINAX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(67577, {	-- Nexus-Princess Ky'veza
-						["_encounter"] = { KYVEZA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { KYVEZA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(67578, {	-- The Silken Court
-						["_encounter"] = { SILKEN_COURT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { SILKEN_COURT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(67579, {	-- Queen Ansurek
-						["_encounter"] = { ANSUREK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { ANSUREK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				}),
 				ach(40246, {	-- Mythic: Nerub-ar Palace
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						40236,	-- Mythic: Ulgrax the Devourer
 						40237,	-- Mythic: The Bloodbound Horror
 						40238,	-- Mythic: Sikran, Captain of the Sureki
@@ -383,7 +383,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				ach(40232, {	-- Glory of the Nerub-ar Raider
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						40261,	-- Slimy Yet Satisfying
 						40260,	-- You Can't See Me
 						40255,	-- Sik Parry Bro
@@ -393,7 +393,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						40730,	-- Love is in the Lair
 						40266,	-- Missed 'Em by That Much
 					}},
-					["groups"] = {
+					groups = {
 						i(223266),	-- Shadowed Swarmite (MOUNT!)
 					},
 				}),
@@ -402,45 +402,45 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				ach(40257),	-- Heroic: Nerub-ar Palace Guild Run
 			}),
 			n(FLIGHT_PATHS, sharedData({
-				["collectible"] = false,	-- these are not collectible since they change/reset with difficulty-based lockout and progress
+				collectible = false,	-- these are not collectible since they change/reset with difficulty-based lockout and progress
 			},{
 				fp(2933, {	-- Grand Rampart
-					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+					crs = { 207469 },	-- Nerubian Swarmite Taxi
 				}),
 				fp(2934, {	-- The Pulsing Pit
-					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+					crs = { 207469 },	-- Nerubian Swarmite Taxi
 				}),
 				fp(2971, {	-- The Pulsing Pit (One Way)
-					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+					crs = { 207469 },	-- Nerubian Swarmite Taxi
 				}),
 				fp(2936, {	-- The Swaying Span (One Way)
-					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+					crs = { 207469 },	-- Nerubian Swarmite Taxi
 				}),
 				fp(2935, {	-- Terrace of Majesty
-					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+					crs = { 207469 },	-- Nerubian Swarmite Taxi
 				}),
 				fp(2937, {	-- The Narthex
-					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+					crs = { 207469 },	-- Nerubian Swarmite Taxi
 				}),
 				fp(2984, {	-- The Ascending Reach
-					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+					crs = { 207469 },	-- Nerubian Swarmite Taxi
 				}),
 				fp(3003, {	-- The Crown of Shadows
-					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+					crs = { 207469 },	-- Nerubian Swarmite Taxi
 				}),
 			})),
 			n(SPECIAL, {
 				n(228081, {	-- Ethereum Void Reaper
-					["description"] =
+					description =
 					-- #if BEFORE 11.0.7
 					"This rare has a chance to spawn while using the Trinket, Treacherous Transmitter, in any outdoor Khaz Algar zone.",
 					-- #else
 					"This rare has a chance to spawn while using the Trinket, Treacherous Transmitter, in any outdoor zone.",
 					-- #endif
-					["crs"] = { 228078 },	-- Ethereum Void Reaper (Unsure which ID or both //Braghe)
-					["provider"] = { "i", 221023 },	-- Treacherous Transmitter
+					crs = { 228078 },	-- Ethereum Void Reaper (Unsure which ID or both //Braghe)
+					provider = { "i", 221023 },	-- Treacherous Transmitter
 					-- #if BEFORE 11.0.7
-					["maps"] = {
+					maps = {
 						ISLE_OF_DORN,
 						HALLOWFALL,
 						THE_RINGING_DEEPS,
@@ -448,27 +448,27 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						AZJ_KAHET_LOWER,
 					},
 					-- #endif
-					["groups"] = {
+					groups = {
 						i(226810),	-- Infiltrator's Shroud (TOY!)
 					},
 				}),
 			}),
 			o(456208, {	-- The Catalyst
-				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
-				["coord"] = { 50.0, 54.2, DORNOGAL },
-				["modelScale"] = 4,
-				["catalystID"] = 8,	-- ItemBonus.Value_0 TWW:S1
-				["groups"] = {
-					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups(
+				description = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
+				coord = { 50.0, 54.2, DORNOGAL },
+				modelScale = 4,
+				catalystID = 8,	-- ItemBonus.Value_0 TWW:S1
+				groups = {
+					Difficulty(DIFFICULTY.RAID.LFR, {upgradeTrackID=UPGRADETRACKS.VETERAN}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.LFR)
 					),
-					Difficulty(DIFFICULTY.RAID.NORMAL, {["upgradeTrackID"]=UPGRADETRACKS.CHAMPION}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.NORMAL, {upgradeTrackID=UPGRADETRACKS.CHAMPION}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.NORMAL)
 					),
-					Difficulty(DIFFICULTY.RAID.HEROIC, {["upgradeTrackID"]=UPGRADETRACKS.HERO}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.HEROIC, {upgradeTrackID=UPGRADETRACKS.HERO}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.HEROIC)
 					),
-					Difficulty(DIFFICULTY.RAID.MYTHIC, {["upgradeTrackID"]=UPGRADETRACKS.MYTH}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.MYTHIC, {upgradeTrackID=UPGRADETRACKS.MYTH}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.MYTHIC)
 					),
 				},
@@ -500,7 +500,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				n(QUESTS, {
 					q(84286, {	-- The Finer Things
-						["provider"] = { "n", 225184 },	-- Anub'azal
+						provider = { "n", 225184 },	-- Anub'azal
 					}),
 				}),
 			}),
@@ -509,7 +509,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				CommonBossDrops({
 					currency(WEATHERED_HARBINGER_CREST, {
-						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+						timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 					}),
 				}),
 				header(HEADERS.Achievement, 40247, {	-- The Skittering Battlements
@@ -520,9 +520,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				header(HEADERS.Achievement, 40248, {	-- Secrets of Nerub-ar Palace
 					Boss(RASHANAN, {
 						i(225574, {	-- Wings of Shattered Sorrow
-							["ItemAppearanceModifierID"]=4,
-							["modID"] = 67,	-- unique modID for warband drop only
-							["nomerge"] = true,
+							ItemAppearanceModifierID=4,
+							modID = 67,	-- unique modID for warband drop only
+							nomerge = true,
 						}),
 						i(225574, {ItemAppearanceModifierID=0}),	-- Wings of Shattered Sorrow
 					}),
@@ -533,9 +533,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					Boss(SILKEN_COURT),
 					Boss(ANSUREK, {
 						i(225634, {	-- Web-Wrapped Curio
-							["crs"] = 227003,	-- Kir'xal (Vendor)
-							["sym"] = {{"sub","instance_tier",1273,DIFFICULTY.RAID.LFR}},
-							["up"] = IGNORED_VALUE,
+							crs = 227003,	-- Kir'xal (Vendor)
+							sym = {{"sub","instance_tier",1273,DIFFICULTY.RAID.LFR}},
+							up = IGNORED_VALUE,
 						}),
 					}),
 				}),
@@ -569,13 +569,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CARVED_HARBINGER_CREST, {
-						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+						timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 					}),
 				}),
 				n(QUESTS, {
 					q(82629,{	-- Nerub-ar Palace: For Nerubian Eyes Only
-						["provider"] = { "n", 216971 },	-- Shadow Walker Tarvex
-						["groups"] = {
+						provider = { "n", 216971 },	-- Shadow Walker Tarvex
+						groups = {
 							i(224014),	-- Signet of the Skeinspiner (QI!)
 							i(224011),	-- Signet of the Thousand Scars (QI!)
 						},
@@ -595,9 +595,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				Boss(SILKEN_COURT),
 				Boss(ANSUREK, {
 					i(225634, {	-- Web-Wrapped Curio
-						["crs"] = 227003,	-- Kir'xal (Vendor)
-						["sym"] = {{"sub","instance_tier",1273,DIFFICULTY.RAID.NORMAL}},
-						["up"] = IGNORED_VALUE,
+						crs = 227003,	-- Kir'xal (Vendor)
+						sym = {{"sub","instance_tier",1273,DIFFICULTY.RAID.NORMAL}},
+						up = IGNORED_VALUE,
 					}),
 				}),
 			}),
@@ -612,19 +612,19 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(KYVEZA),
 				BossOnly(SILKEN_COURT),
 				BossOnly(ANSUREK, {
-					ach(40253, {["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART }}),	-- Ahead of the Curve: Queen Ansurek
+					ach(40253, {timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART }}),	-- Ahead of the Curve: Queen Ansurek
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(RUNED_HARBINGER_CREST, {
-						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+						timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 					}),
 				}),
 				n(QUESTS, {
 					q(82638,{	-- Nerub-ar Palace: For Nerubian Eyes Only
-						["provider"] = { "n", 216971 },	-- Shadow Walker Tarvex
-						["groups"] = {
+						provider = { "n", 216971 },	-- Shadow Walker Tarvex
+						groups = {
 							i(224015),	-- Signet of the Skeinspiner (QI!)
 							i(224012),	-- Signet of the Thousand Scars (QI!)
 						},
@@ -641,22 +641,22 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				Boss(SILKEN_COURT),
 				Boss(ANSUREK, {
 					i(225634, {	-- Web-Wrapped Curio
-						["crs"] = 227003,	-- Kir'xal (Vendor)
-						["sym"] = {{"sub","instance_tier",1273,DIFFICULTY.RAID.HEROIC}},
-						["up"] = IGNORED_VALUE,
+						crs = 227003,	-- Kir'xal (Vendor)
+						sym = {{"sub","instance_tier",1273,DIFFICULTY.RAID.HEROIC}},
+						up = IGNORED_VALUE,
 					}),
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(GILDED_HARBINGER_CREST, {
-						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+						timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 					}),
 				}),
 				n(QUESTS, {
 					q(82639,{	-- Nerub-ar Palace: For Nerubian Eyes Only
-						["provider"] = { "n", 216971 },	-- Shadow Walker Tarvex
-						["groups"] = {
+						provider = { "n", 216971 },	-- Shadow Walker Tarvex
+						groups = {
 							i(224016),	-- Signet of the Skeinspiner (QI!)
 							i(224013),	-- Signet of the Thousand Scars (QI!)
 						},
@@ -689,24 +689,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					ach(40243, {	-- Mythic: Queen Ansurek
 						title(556),	-- Queenslayer <Name>
 					}),
-					ach(40254, {["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART }}),	-- Cutting Edge: Queen Ansurek
-					ach(40259, bubbleDownSelf({["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {	-- Hall of Fame: Queen Ansurek
+					ach(40254, {timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART }}),	-- Cutting Edge: Queen Ansurek
+					ach(40259, bubbleDownSelf({timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {	-- Hall of Fame: Queen Ansurek
 						title(561),	-- <Name>, Famed Slayer of Ansurek
 					})),
 					ach(40258),	-- Mythic: Queen Ansurek Guild Run
 					i(224151),	-- Ascendant Skyrazor (MOUNT!)
 					i(225634, {	-- Web-Wrapped Curio
-						["crs"] = 227003,	-- Kir'xal (Vendor)
-						["sym"] = {{"sub","instance_tier",1273,DIFFICULTY.RAID.MYTHIC}},
-						["up"] = IGNORED_VALUE,
+						crs = 227003,	-- Kir'xal (Vendor)
+						sym = {{"sub","instance_tier",1273,DIFFICULTY.RAID.MYTHIC}},
+						up = IGNORED_VALUE,
 					}),
 				}),
 			}),
 			n(VENDORS, {
 				-- Raid vendor gear for curio
 				n(227003, {	-- Kir'xal
-					["coord"] = { 56.7, 46.1, NERUBAR_LOWER },
-					["sym"] = {{"select","itemID",
+					coord = { 56.7, 46.1, NERUBAR_LOWER },
+					sym = {{"select","itemID",
 						modItemId(225634,4),	-- Web-Wrapped Curio [L]
 						modItemId(225634,3),	-- Web-Wrapped Curio [N]
 						modItemId(225634,5),	-- Web-Wrapped Curio [H]
@@ -718,9 +718,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
 	inst(1273, bubbleDown({	-- Nerub'ar Palace
-		["isWeekly"] = true,
+		isWeekly = true,
 	},{
 		-- LFR/Normal/Heroic
 		q(83508),	-- First trash pack
@@ -746,14 +746,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(84275),	-- The Silken Court
 		q(84277),	-- Queen Ansurek
 
-		q(84597, {["timeline"] = { ADDED_11_0_5 }}),	-- Bronze Celebration Token (Queen Ansurek [H])
+		q(84597, {timeline = { ADDED_11_0_5 }}),	-- Bronze Celebration Token (Queen Ansurek [H])
 	})),
 	-- One-Time flags
 	inst(1273, {
 		-- The Finer Things (Account-Wide Buff tracking) (maybe do something neat to show current level)
 		q(84562, {
-			["name"]="Severed Threads Active",	-- 1st Turn in of 'The Finer Things' (84286)
-			["groups"] = {
+			name="Severed Threads Active",	-- 1st Turn in of 'The Finer Things' (84286)
+			groups = {
 				currency(3094),	-- Tracking Currency for Severed Threads stacks
 			},
 		}),

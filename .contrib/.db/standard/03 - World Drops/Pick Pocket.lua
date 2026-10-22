@@ -3,62 +3,62 @@
 -----------------------------------------------------
 root(ROOTS.WorldDrops, {
 	pickpocketing(true, {
-		["description"] = "A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",
-		["groups"] = {
+		description = "A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",
+		groups = {
 			expansion(EXPANSION.CLASSIC, {
 				i(6150, {	-- A Frayed Knot
-					["description"] = "Can be pickpocketed from Classic humanoids.",
+					description = "Can be pickpocketed from Classic humanoids.",
 				}),
 				i(5373, {	-- Lucky Charm
-					["description"] = "While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",
+					description = "While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",
 				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				i(37674, {	-- An Unopened Tome of Advice
-					["description"] = "If only they would have read this.",
-					["coord"] = { 47.8, 49.4, DRAGONBLIGHT },
-					["cr"] = 27539,	-- Frigid Necromancer <Cult of the Damned>
+					description = "If only they would have read this.",
+					coord = { 47.8, 49.4, DRAGONBLIGHT },
+					cr = 27539,	-- Frigid Necromancer <Cult of the Damned>
 				}),
 				filter(CONSUMABLES, {
 					i(40202),	-- Sizzling Grizzly Flank
 				}),
 				filter(TOYS, {
 					i(36863, {	-- Decahedral Dwarven Dice (TOY!)
-						["description"] = "Can be pickpocketed from Northrend humanoids.",
-						["timeline"] = { ADDED_3_0_2 },
-						["_drop"] = { "f" },	-- Drop Consumable
+						description = "Can be pickpocketed from Northrend humanoids.",
+						timeline = { ADDED_3_0_2 },
+						_drop = { "f" },	-- Drop Consumable
 					}),
 					i(36862, {	-- Worn Troll Dice (TOY!)
-						["description"] = "Can be pickpocketed from Northrend humanoids.",
-						["timeline"] = { ADDED_3_0_2 },
-						["_drop"] = { "f" },	-- Drop Consumable
+						description = "Can be pickpocketed from Northrend humanoids.",
+						timeline = { ADDED_3_0_2 },
+						_drop = { "f" },	-- Drop Consumable
 					}),
 				}),
 			}),
 			expansion(EXPANSION.CATA, {
 				filter(TOYS, {
 					i(63269, {	-- Loaded Gnomish Dice (TOY!)
-						["description"] = "Can be pickpocketed from Cataclysm humanoids.",
-						["timeline"] = { ADDED_4_0_1 },
-						["_drop"] = { "f" },	-- Drop Consumable
+						description = "Can be pickpocketed from Cataclysm humanoids.",
+						timeline = { ADDED_4_0_1 },
+						_drop = { "f" },	-- Drop Consumable
 					}),
 				}),
 			}),
 			expansion(EXPANSION.WOD, {
 				q(39107, {	-- An Even Bigga Score
-					["qg"] = 83006,	-- Griftah
-					["classes"] = { ROGUE },
-					["isWeekly"] = true,
+					qg = 83006,	-- Griftah
+					classes = { ROGUE },
+					isWeekly = true,
 				}),
 				q(37284, {	-- Da Big Score
-					["qg"] = 83006,	-- Griftah
-					["classes"] = { ROGUE },
-					["isWeekly"] = true,
+					qg = 83006,	-- Griftah
+					classes = { ROGUE },
+					isWeekly = true,
 				}),
 				q(37285, {	-- If You're Sure
-					["qg"] = 83006,	-- Griftah
-					["classes"] = { ROGUE },
-					["isWeekly"] = true,
+					qg = 83006,	-- Griftah
+					classes = { ROGUE },
+					isWeekly = true,
 				}),
 				i(112995),	-- Slimy Ring: 2 coins
 				i(112996),	-- Glistening Ring: 3 coins

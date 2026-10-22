@@ -2,14 +2,14 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	m(ORIBOS, {
 		n(WEEKLY_HOLIDAYS, {
 			n(REWARDS, {
 				i(184869, {	-- Cache of Nathrian Treasures (N)
-					["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 },
+					timeline = { ADDED_9_0_2, REMOVED_9_1_0 },
 					--[[
-					["sym"] = {
+					sym = {
 						{"select", "instanceID", 1190},			-- Castle Nathria
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
@@ -24,9 +24,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					--]]
 				}),
 				i(184868, {	-- Cache of Nathrian Treasures (HC)
-					["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 },
+					timeline = { ADDED_9_0_2, REMOVED_9_1_0 },
 					--[[
-					["sym"] = {
+					sym = {
 						{"select", "instanceID", 1190},			-- Castle Nathria
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
@@ -41,9 +41,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					--]]
 				}),
 				i(186531, {	-- Cache of Sanctum Treasures (N)
-					["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
+					timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
 					--[[
-					["sym"] = {
+					sym = {
 						{"select", "instanceID", 1193},			-- Sanctum of Domination
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
@@ -58,9 +58,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					--]]
 				}),
 				i(186533, {	-- Cache of Sanctum Treasures (HC)
-					["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
+					timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
 					--[[
-					["sym"] = {
+					sym = {
 						{"select", "instanceID", 1193},			-- Sanctum of Domination
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
@@ -75,9 +75,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					--]]
 				}),
 				i(190655, {	-- Cache of Sepulcher Treasures (N) or 190654
-					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
+					timeline = { ADDED_9_2_0, REMOVED_9_2_5 },
 					--[[
-					["sym"] = {
+					sym = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
@@ -90,9 +90,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					--]]
 				}),
 				i(191040, {	-- Cache of Sepulcher Treasures (5x BC TW -> N) [Q:62632]
-					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
+					timeline = { ADDED_9_2_0, REMOVED_9_2_5 },
 					--[[
-					["sym"] = {
+					sym = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
@@ -105,9 +105,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					--]]
 				}),
 				i(191041, {	-- Cache of Sepulcher Treasures (4x Mythic -> H)
-					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
+					timeline = { ADDED_9_2_0, REMOVED_9_2_5 },
 					--[[
-					["sym"] = {
+					sym = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
@@ -120,9 +120,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					--]]
 				}),
 				i(190656, {	-- Cache of Sepulcher Treasures (H)
-					["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
+					timeline = { ADDED_9_2_0, REMOVED_9_2_5 },
 					--[[
-					["sym"] = {
+					sym = {
 						{"select", "instanceID", 1195},			-- Sepulcher of the First Ones
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
@@ -135,11 +135,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					--]]
 				}),
 				i(192437, {	-- Cache of Fated Treasures (Normal)
-					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
-					["bonusID"] = 8157,
-					["modID"] = 11,
+					timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+					bonusID = 8157,
+					modID = 11,
 					--[[
-					["sym"] = {
+					sym = {
 						{"select", "instanceID"
 							,1190			-- Castle Nathria
 							,1193			-- Sanctum of Domination
@@ -163,11 +163,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					--]]
 				}),
 				i(192438, {	-- Cache of Fated Treasures (Heroic)
-					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
-					["bonusID"] = 8157,
-					["modID"] = 11,
+					timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+					bonusID = 8157,
+					modID = 11,
 					--[[
-					["sym"] = {
+					sym = {
 						{"select", "instanceID"
 							,1190			-- Castle Nathria
 							,1193			-- Sanctum of Domination
@@ -192,16 +192,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 			}),
 			n(QUESTS, sharedData({
-				["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
-				["isWeekly"] = true,
-				["coord"] = { 64.9, 32.7, ORIBOS },
-				["_drop"] = { "g" },	-- Drop Trash
-				["timeline"] = { REMOVED_10_0_2_LAUNCH },
+				provider = { "n", 166307 },	-- Caretaker Kah-Toll
+				isWeekly = true,
+				coord = { 64.9, 32.7, ORIBOS },
+				_drop = { "g" },	-- Drop Trash
+				timeline = { REMOVED_10_0_2_LAUNCH },
 			}, {
 				q(62632),					-- A Burning Path Through Time
 				pvp(q(62637)),				-- A Call to Battle
 				q(64709, {					-- A Fel Path Through Time
-					["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2_LAUNCH },
+					timeline = { ADDED_9_1_5, REMOVED_10_0_2_LAUNCH },
 				}),
 				q(62633),					-- A Frozen Path Through Time
 				q(62636),					-- A Savage Path Through Time
@@ -209,9 +209,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(62635),					-- A Shrouded Path Through Time
 				q(62638),					-- Emissary of War
 				q(64970, {					-- Timeworn Keystone: The Broken Isle
-					["provider"] = { "n", 178804 },	-- Ta'hsup
-					["coord"] = { 65.2, 35.1, ORIBOS },
-					["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2_LAUNCH },
+					provider = { "n", 178804 },	-- Ta'hsup
+					coord = { 65.2, 35.1, ORIBOS },
+					timeline = { ADDED_9_1_5, REMOVED_10_0_2_LAUNCH },
 				}),
 				pvp(q(62640)),				-- The Arena Calls
 				pvp(petbattle(q(62639))),	-- The Very Best
@@ -221,8 +221,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			-- #if AFTER SL
 			-- #IF BEFORE DF
 			n(QUESTS, sharedData({
-				["isWeekly"] = true,
-				["_drop"] = { "g" },	-- Drop Trash
+				isWeekly = true,
+				_drop = { "g" },	-- Drop Trash
 			}, {
 				pvp(q(47148)),			-- Something Different
 			})),

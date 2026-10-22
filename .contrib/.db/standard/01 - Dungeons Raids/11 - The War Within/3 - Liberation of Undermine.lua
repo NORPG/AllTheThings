@@ -275,9 +275,9 @@ InstanceHelper.UpgradeMapping = {
 
 root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 	inst(1296, {	-- Liberation of Undermine
-		["coord"] = { 42.0, 50.2, UNDERMINE },
-		["timeline"] = { ADDED_11_1_0_SEASONSTART },
-		["maps"] = {
+		coord = { 42.0, 50.2, UNDERMINE },
+		timeline = { ADDED_11_1_0_SEASONSTART },
+		maps = {
 			2406,	-- Undermine
 			2407,	-- The Gallagio
 			2408,	-- The Lucky Heart
@@ -285,96 +285,96 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			2411,	-- The Tower of Spades
 			2428,	-- Research and Destruction
 		},
-		["isRaid"] = true,
-		["groups"] = {
+		isRaid = true,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(41225, {	-- Shock and Awesome
 					crit(71696, {	-- Vexie and the Geargrinders
-						["_encounter"] = { VEXIE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { VEXIE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(71697, {	-- Cauldron of Carnage
-						["_encounter"] = { CARNAGE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { CARNAGE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(71698, {	-- Rik Reverb <Official Gallywix Hype Man>
-						["_encounter"] = { RIK, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { RIK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(41226, {	-- Maniacal Machinist
 					crit(71699, {	-- Stix Bunkjunker
-						["_encounter"] = { STIX, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { STIX, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(71700, {	-- Sprocketmonger Lockenstock
-						["_encounter"] = { LOCKENSTOCK, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { LOCKENSTOCK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(41227, {	-- Beating the Odds
 					crit(71701, {	-- One-Armed Bandit
-						["_encounter"] = { BANDIT, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { BANDIT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(71702, {	-- Mug'Zee, Heads of Security
-						["_encounter"] = { MUGZEE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { MUGZEE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(41228, {	-- Fall of the Chrome King
 					crit(71703, {	-- Chrome King Gallywix
-						["_encounter"] = { GALLYWIX, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { GALLYWIX, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(41222, {	-- Liberation of Undermine
 					crit(71696, {	-- Vexie and the Geargrinders
-						["_encounter"] = { VEXIE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { VEXIE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(71697, {	-- Cauldron of Carnage
-						["_encounter"] = { CARNAGE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { CARNAGE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(71698, {	-- Rik Reverb <Official Gallywix Hype Man>
-						["_encounter"] = { RIK, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { RIK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(71699, {	-- Stix Bunkjunker
-						["_encounter"] = { STIX, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { STIX, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(71700, {	-- Sprocketmonger Lockenstock
-						["_encounter"] = { LOCKENSTOCK, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { LOCKENSTOCK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(71701, {	-- One-Armed Bandit
-						["_encounter"] = { BANDIT, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { BANDIT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(71702, {	-- Mug'Zee, Heads of Security
-						["_encounter"] = { MUGZEE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { MUGZEE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(71703, {	-- Chrome King Gallywix
-						["_encounter"] = { GALLYWIX, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { GALLYWIX, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(41223, {	-- Heroic: Liberation of Undermine
 					crit(71704, {	-- Vexie and the Geargrinders
-						["_encounter"] = { VEXIE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { VEXIE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(71705, {	-- Cauldron of Carnage
-						["_encounter"] = { CARNAGE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { CARNAGE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(71706, {	-- Rik Reverb <Official Gallywix Hype Man>
-						["_encounter"] = { RIK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { RIK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(71707, {	-- Stix Bunkjunker
-						["_encounter"] = { STIX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { STIX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(71708, {	-- Sprocketmonger Lockenstock
-						["_encounter"] = { LOCKENSTOCK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { LOCKENSTOCK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(71709, {	-- One-Armed Bandit
-						["_encounter"] = { BANDIT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { BANDIT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(71710, {	-- Mug'Zee, Heads of Security
-						["_encounter"] = { MUGZEE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { MUGZEE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(71711, {	-- Chrome King Gallywix
-						["_encounter"] = { GALLYWIX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { GALLYWIX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				}),
 				ach(41224, {	-- Mythic: Liberation of Undermine
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						41229,	-- Mythic: Vexie and the Geargrinders
 						41230,	-- Mythic: Cauldron of Carnage
 						41231,	-- Mythic: Rik Reverb
@@ -387,7 +387,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 				ach(41286, {	-- Glory of the Liberation of Undermine Raider
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						41208,	-- Hold My Gear!
 						41554,	-- The Splash Zone
 						41338,	-- Just /Dance
@@ -397,7 +397,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						41337,	-- Sleep with the Fishes
 						41347,	-- Scheming on a Thing
 					}},
-					["groups"] = { i(231173) },	-- Junkmaestro's Magnetomech (MOUNT!)
+					groups = { i(231173) },	-- Junkmaestro's Magnetomech (MOUNT!)
 				}),
 				ach(41525),	-- Can You Please Spell "Gobanna?"
 				ach(41289),	-- Liberation of Undermine Guild Run
@@ -405,11 +405,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			}),
 			header(HEADERS.Faction, FACTION_GALLAGIO, {	-- Gallagio Loyalty Rewards Club
 				n(ACHIEVEMENTS, {
-					ach(60939, {["timeline"] = { ADDED_11_2_0 }}),	-- Bringing Down the House
+					ach(60939, {timeline = { ADDED_11_2_0 }}),	-- Bringing Down the House
 				}),
 				faction(FACTION_GALLAGIO),
 				n(QUESTS, sharedData({
-					["qg"] = 235617,	-- Paula Piranha <Renown Quartermaster>
+					qg = 235617,	-- Paula Piranha <Renown Quartermaster>
 				},bubbleDownRep(FACTION_GALLAGIO, {	-- Gallagio Loyalty Rewards Club
 					{		-- RENOWN 1 --
 						q(89016),	-- Members Only
@@ -437,7 +437,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						q(89025),	-- Time is Money!!
 					}, {	-- RENOWN 12 --
 						q(89251, {	-- Running Hot!
-							["qg"] = 235616,	-- Mickey Junkfeast <Trash Connoisseur>
+							qg = 235616,	-- Mickey Junkfeast <Trash Connoisseur>
 						}),
 					}, {	-- RENOWN 13 --
 						q(89021),	-- Loyal Customer: Black
@@ -456,23 +456,23 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					}, {	-- RENOWN 20 --
 						------ Paragon ------
 						q(85471, {	-- Renowned with the Gallagio Loyalty Rewards Club
-							["isRepeatable"] = true,
-							["groups"] = { i(232463) },	-- Overflowing Undermine Trove
+							isRepeatable = true,
+							groups = { i(232463) },	-- Overflowing Undermine Trove
 						}),
 					},
 				}))),
 				n(TREASURES, {
 					o(505248, {	-- Rune Dispenser
-						["description"] = "Interact with for a 10% chance for a free Crystalized Augment Rune.\n\nAt renown 14, you are guaranteed at least one.",
-						["questID"]	= 89350,
-						["minReputation"] = { FACTION_GALLAGIO, 2 },
-						["isWeekly"] = true,
-						["groups"] = { i(224572) },	-- Crystallized Augment Rune
+						description = "Interact with for a 10% chance for a free Crystalized Augment Rune.\n\nAt renown 14, you are guaranteed at least one.",
+						questID	= 89350,
+						minReputation = { FACTION_GALLAGIO, 2 },
+						isWeekly = true,
+						groups = { i(224572) },	-- Crystallized Augment Rune
 					}),
 				}),
 				n(VENDORS, {
 					n(235621, {	-- Ando the Gat <Black Market Broker>
-						["groups"] = bubbleDownRep(FACTION_GALLAGIO, {	-- Gallagio Loyalty Rewards Club
+						groups = bubbleDownRep(FACTION_GALLAGIO, {	-- Gallagio Loyalty Rewards Club
 							{		-- RENOWN 1 --
 							}, {	-- RENOWN 2 --
 							}, {	-- RENOWN 3 --
@@ -487,8 +487,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 							}, {	-- RENOWN 11 --
 							}, {	-- RENOWN 12 --
 								i(239213, {	-- Well-Lit Incontinental Loveseat (DECOR!)
-									["cost"] = 10000000,	-- 1,000g
-									["timeline"] = { ADDED_11_2_7 },
+									cost = 10000000,	-- 1,000g
+									timeline = { ADDED_11_2_7 },
 								}),
 							}, {	-- RENOWN 13 --
 							}, {	-- RENOWN 14 --
@@ -508,17 +508,17 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					n(235624, {	-- Skitto Screwjack
 						i(236413),	-- "Shockproof" Soda
 						i(236749, {	-- Take-Home Torq (TOY!)
-							["minReputation"] = { FACTION_GALLAGIO, 9 },
+							minReputation = { FACTION_GALLAGIO, 9 },
 						}),
 						i(232806, {	-- Tiny Torq (PET!)
-							["minReputation"] = { FACTION_GALLAGIO, 9 },
+							minReputation = { FACTION_GALLAGIO, 9 },
 						}),
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
-						["minReputation"] = { FACTION_GALLAGIO, 11 },
-						["groups"] = sharedData({
-							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
-							["sharedDescription"] = "Shared Transmog with |cFFFFFFFFNormal|r.",
+						minReputation = { FACTION_GALLAGIO, 11 },
+						groups = sharedData({
+							cost = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
+							sharedDescription = "Shared Transmog with |cFFFFFFFFNormal|r.",
 						}, {
 							i(238776),	-- Gallagio Raider's Bilgewater Blasthammer
 							i(238697),	-- Gallagio Raider's Bilgewater Boomfist
@@ -540,9 +540,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						}),
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
-						["groups"] = sharedData({
-							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
-							["sharedDescription"] = "Shared Transmog with |cFFA330C9Heroic|r.",
+						groups = sharedData({
+							cost = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
+							sharedDescription = "Shared Transmog with |cFFA330C9Heroic|r.",
 						}, {
 							i(238777),	-- Gallagio Raider's Blackwater Blasthammer
 							i(238698),	-- Gallagio Raider's Blackwater Boomfist
@@ -564,9 +564,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						}),
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
-						["groups"] = sharedData({
-							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
-							["sharedDescription"] = "Shared Transmog with |cFFED7014Mythic|r.",
+						groups = sharedData({
+							cost = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
+							sharedDescription = "Shared Transmog with |cFFED7014Mythic|r.",
 						}, {
 							i(238778),	-- Gallagio Raider's Darkfuse Blasthammer
 							i(238699),	-- Gallagio Raider's Darkfuse Boomfist
@@ -588,9 +588,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						}),
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
-						["groups"] = sharedData({
-							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
-							["sharedDescription"] = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
+						groups = sharedData({
+							cost = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
+							sharedDescription = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
 						}, {
 							i(238775),	-- Gallagio Raider's Venture Co. Blasthammer
 							i(238696),	-- Gallagio Raider's Venture Co. Boomfist
@@ -612,8 +612,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						}),
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
-						["groups"] = sharedData({
-							["cost"] = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
+						groups = sharedData({
+							cost = { { "i", 237578, 1 } },	-- 1x Counterfeit Dealer's Chip
 						}, {
 							i(238774),	-- Gallagio Raider's Knuckle Dusters
 							i(238761),	-- Gallagio Raider's Bootleg Lever
@@ -622,30 +622,30 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					n(235623, {	-- Snix Longpocket
 						i(236412),	-- "Fireproof" Punch
 						i(232844, {	-- Fuz-Size Flarendo (PET!)
-							["minReputation"] = { FACTION_GALLAGIO, 9 },
+							minReputation = { FACTION_GALLAGIO, 9 },
 						}),
 						i(236751, {	-- Take-Home Flarendo (TOY!)
-							["minReputation"] = { FACTION_GALLAGIO, 9 },
+							minReputation = { FACTION_GALLAGIO, 9 },
 						}),
 					}),
 				}),
 			}),
 			o(456208, {	-- The Catalyst
-				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
-				["coord"] = { 50.0, 54.2, DORNOGAL },
-				["modelScale"] = 4,
-				["catalystID"] = 10,	-- ItemBonus.Value_0 TWW:S2
-				["groups"] = {
-					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups(
+				description = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
+				coord = { 50.0, 54.2, DORNOGAL },
+				modelScale = 4,
+				catalystID = 10,	-- ItemBonus.Value_0 TWW:S2
+				groups = {
+					Difficulty(DIFFICULTY.RAID.LFR, {upgradeTrackID=UPGRADETRACKS.VETERAN}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.LFR)
 					),
-					Difficulty(DIFFICULTY.RAID.NORMAL, {["upgradeTrackID"]=UPGRADETRACKS.CHAMPION}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.NORMAL, {upgradeTrackID=UPGRADETRACKS.CHAMPION}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.NORMAL)
 					),
-					Difficulty(DIFFICULTY.RAID.HEROIC, {["upgradeTrackID"]=UPGRADETRACKS.HERO}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.HEROIC, {upgradeTrackID=UPGRADETRACKS.HERO}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.HEROIC)
 					),
-					Difficulty(DIFFICULTY.RAID.MYTHIC, {["upgradeTrackID"]=UPGRADETRACKS.MYTH}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.MYTHIC, {upgradeTrackID=UPGRADETRACKS.MYTH}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.MYTHIC)
 					),
 				},
@@ -665,11 +665,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					i(223097),	-- Pattern: Adrenal Surge Clasp (RECIPE!)
 				}),
 				BossOnly(BANDIT, {
-					i(232526,{ ["provider"] = { "i", 232805 } }),	-- Best-in-Slots
-					i(232805,{ ["provider"] = { "i", 232526 } }),	-- Best-in-Slots
+					i(232526,{ provider = { "i", 232805 } }),	-- Best-in-Slots
+					i(232805,{ provider = { "i", 232526 } }),	-- Best-in-Slots
 					i(237578, {	-- Counterfeit Dealer's Chip
-						["description"] = "Has a small chance dropping as Personal Loot from One-Armed Bandit once you have reached Renown 15 with the Gallagio Loyalty Rewards Club.",
-						["minReputation"] = { FACTION_GALLAGIO, 15 },
+						description = "Has a small chance dropping as Personal Loot from One-Armed Bandit once you have reached Renown 15 with the Gallagio Loyalty Rewards Club.",
+						minReputation = { FACTION_GALLAGIO, 15 },
 					}),
 				}),
 				BossOnly(MUGZEE, {
@@ -686,7 +686,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 				CommonBossDrops({
 					currency(WEATHERED_UNDERMINE_CREST, {
-						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+						timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 2780, {	-- Shock and Awesome
@@ -696,7 +696,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				header(HEADERS.LFGDungeon, 2781, {	-- Maniacal Machinist
 					Boss(STIX),
 					Boss(LOCKENSTOCK, {
-						i(228844, {up=IGNORED_VALUE, ["ItemAppearanceModifierID"] = 0}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
+						i(228844, {up=IGNORED_VALUE, ItemAppearanceModifierID = 0}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 2782, {	-- Two Heads Are Better
@@ -707,9 +707,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				header(HEADERS.LFGDungeon, 2783, {	-- The Chrome King
 					Boss(GALLYWIX, {
 						i(228819, {	-- Excessively Bejeweled Curio
-							-- ["crs"] = 227003,	-- Kir'xal (Vendor)
-							["sym"] = {{"sub","instance_tier",1296,DIFFICULTY.RAID.LFR}},
-							["up"] = IGNORED_VALUE,
+							-- crs = 227003,	-- Kir'xal (Vendor)
+							sym = {{"sub","instance_tier",1296,DIFFICULTY.RAID.LFR}},
+							up = IGNORED_VALUE,
 						}),
 					}),
 				}),
@@ -720,19 +720,19 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 				BossOnly(CARNAGE, {
 					ach(41694, {	-- Flarendo's Biggest Fan
-						["crs"] = {
+						crs = {
 							238586,	-- Flaming Megafan <Flarendo's Devoted>
 							229287,	-- Professor Boomspark <Torq's Manager>
 						},
 					}),
 					ach(41695, {	-- Torq's Biggest Fan
-						["crs"] = {
+						crs = {
 							238587,	-- Thundering Megafan <Torq's Devoted>
 							229288,	-- King Flamespite <Flarendo's Manager>
 						},
 					}),
 					ach(41554, {	-- The Splash Zone
-						["cost"] = {
+						cost = {
 							{ "i", 236413, 1 },	-- "Shockproof" Soda
 							{ "i", 236412, 1 },	-- "Fireproof" Punch
 						},
@@ -752,8 +752,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				BossOnly(BANDIT, {
 					ach(41119, {	-- One Rank Higher
 						i(245302, {	-- Gallagio L.U.C.K. Spinner (DECOR!)
-							["crs"] = { 235621 },	-- Ando the Gat <Black Market Broker>	-- TODO: revise with new Source impl
-							["timeline"] = { ADDED_11_2_7 },
+							crs = { 235621 },	-- Ando the Gat <Black Market Broker>	-- TODO: revise with new Source impl
+							timeline = { ADDED_11_2_7 },
 						}),
 					}),
 					ach(41120),	-- Two Ranks Higher
@@ -775,13 +775,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CARVED_UNDERMINE_CREST, {
-						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+						timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 					}),
 				}),
 				n(QUESTS, {
 					q(89351, {	-- Liberation of Undermine: Splitting Pairs [N]
-						["qg"] = 235619,	-- Lentil Sprocket <Gallagio "Chauffeur">
-						["minReputation"] = { FACTION_GALLAGIO, 5 },
+						qg = 235619,	-- Lentil Sprocket <Gallagio "Chauffeur">
+						minReputation = { FACTION_GALLAGIO, 5 },
 					}),
 				}),
 				ZoneDrops({
@@ -791,15 +791,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				Boss(RIK),
 				Boss(STIX),
 				Boss(LOCKENSTOCK, {
-					i(228844, {up=IGNORED_VALUE, ["ItemAppearanceModifierID"] = 1}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
+					i(228844, {up=IGNORED_VALUE, ItemAppearanceModifierID = 1}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
 				}),
 				Boss(BANDIT),
 				Boss(MUGZEE),
 				Boss(GALLYWIX, {
 					i(228819, {	-- Excessively Bejeweled Curio
-						-- ["crs"] = 227003,	-- Kir'xal (Vendor)
-						["sym"] = {{"sub","instance_tier",1296,DIFFICULTY.RAID.NORMAL}},
-						["up"] = IGNORED_VALUE,
+						-- crs = 227003,	-- Kir'xal (Vendor)
+						sym = {{"sub","instance_tier",1296,DIFFICULTY.RAID.NORMAL}},
+						up = IGNORED_VALUE,
 					}),
 				}),
 			}),
@@ -809,24 +809,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				BossOnly(RIK),
 				BossOnly(STIX),
 				BossOnly(LOCKENSTOCK, {
-					i(228844, {up=IGNORED_VALUE, modID=5, ["ItemAppearanceModifierID"] = 3}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
+					i(228844, {up=IGNORED_VALUE, modID=5, ItemAppearanceModifierID = 3}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
 				}),
 				BossOnly(BANDIT),
 				BossOnly(MUGZEE),
 				BossOnly(GALLYWIX, {
-					ach(41298, {["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART }}),	-- Ahead of the Curve: Chrome King Gallywix
+					ach(41298, {timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART }}),	-- Ahead of the Curve: Chrome King Gallywix
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(RUNED_UNDERMINE_CREST, {
-						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+						timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 					}),
 				}),
 				n(QUESTS, {
 					q(89352, {	-- Liberation of Undermine: Splitting Pairs [H]
-						["qg"] = 235619,	-- Lentil Sprocket <Gallagio "Chauffeur">
-						["minReputation"] = { FACTION_GALLAGIO, 5 },
+						qg = 235619,	-- Lentil Sprocket <Gallagio "Chauffeur">
+						minReputation = { FACTION_GALLAGIO, 5 },
 					}),
 				}),
 				ZoneDrops({
@@ -840,22 +840,22 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				Boss(MUGZEE),
 				Boss(GALLYWIX, {
 					i(228819, {	-- Excessively Bejeweled Curio
-						-- ["crs"] = 227003,	-- Kir'xal (Vendor)
-						["sym"] = {{"sub","instance_tier",1296,DIFFICULTY.RAID.HEROIC}},
-						["up"] = IGNORED_VALUE,
+						-- crs = 227003,	-- Kir'xal (Vendor)
+						sym = {{"sub","instance_tier",1296,DIFFICULTY.RAID.HEROIC}},
+						up = IGNORED_VALUE,
 					}),
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(GILDED_UNDERMINE_CREST, {
-						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+						timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 					}),
 				}),
 				n(QUESTS, {
 					q(89353, {	-- Liberation of Undermine: Splitting Pairs [M]
-						["qg"] = 235619,	-- Lentil Sprocket <Gallagio "Chauffeur">
-						["minReputation"] = { FACTION_GALLAGIO, 5 },
+						qg = 235619,	-- Lentil Sprocket <Gallagio "Chauffeur">
+						minReputation = { FACTION_GALLAGIO, 5 },
 					}),
 				}),
 				ZoneDrops({
@@ -885,16 +885,16 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					ach(41236, {	-- Mythic: Chrome King Gallywix
 						title(605),	-- <Name>, Liberator of Undermine
 					}),
-					ach(41297, {["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART }}),	-- Cutting Edge: Chrome King Gallywix
-					ach(41296, applyDataSelf({["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {	-- Hall of Fame: Chrome King Gallywix
+					ach(41297, {timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART }}),	-- Cutting Edge: Chrome King Gallywix
+					ach(41296, applyDataSelf({timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {	-- Hall of Fame: Chrome King Gallywix
 						title(604),	-- <Name>, Famed Slayer of The Chrome King
 					})),
 					ach(41292),	-- Mythic: Chrome King Gallywix Guild Run
 					i(235626),	-- The Big G (MOUNT!)
 					i(228819, {	-- Excessively Bejeweled Curio
-						-- ["crs"] = 227003,	-- Kir'xal (Vendor)
-						["sym"] = {{"sub","instance_tier",1296,DIFFICULTY.RAID.MYTHIC}},
-						["up"] = IGNORED_VALUE,
+						-- crs = 227003,	-- Kir'xal (Vendor)
+						sym = {{"sub","instance_tier",1296,DIFFICULTY.RAID.MYTHIC}},
+						up = IGNORED_VALUE,
 					}),
 				}),
 			}),
@@ -902,8 +902,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				--[[ add new vendor also to all the curios
 				-- Raid vendor gear for curio
 				n(227003, {	-- Kir'xal
-					["coord"] = { 56.7, 46.1, NERUBAR_LOWER },
-					["sym"] = {{"select","itemID",
+					coord = { 56.7, 46.1, NERUBAR_LOWER },
+					sym = {{"select","itemID",
 						modItemId(228819,4),	-- Excessively Bejeweled Curio [L]
 						modItemId(228819,3),	-- Excessively Bejeweled Curio [N]
 						modItemId(228819,5),	-- Excessively Bejeweled Curio [H]
@@ -918,8 +918,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({  }, {
 	inst(1296, {	-- Liberation of Undermine
-		["timeline"] = { ADDED_11_1_0_SEASONSTART },
-		["groups"] = {
+		timeline = { ADDED_11_1_0_SEASONSTART },
+		groups = {
 			n(FACTIONS, {
 				header(HEADERS.Faction, FACTION_GALLAGIO, {
 					n(QUESTS, {
@@ -931,7 +931,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({  }, {
 		},
 	}),
 	inst(1296, bubbleDown({	-- Liberation of Undermine
-		["isWeekly"] = true,
+		isWeekly = true,
 	},{
 		-- LFR
 		q(88835, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash

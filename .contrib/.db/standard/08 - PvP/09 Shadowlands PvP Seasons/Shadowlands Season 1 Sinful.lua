@@ -4,9 +4,9 @@
 
 root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 	n(SEASON_SINFUL, bubbleDownSelf({
-		["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH },
+		timeline = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH },
 	}, {
-		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
+		n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 			ach(14685),	-- Combatant: Shadowlands Season 1
 			ach(14686),	-- Challenger: Shadowlands Season 1
 			ach(14687),	-- Rival: Shadowlands Season 1
@@ -26,51 +26,51 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			}),
 			-- RBG
 			ach(14692, {	-- Hero of the Alliance: Sinful
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(14693, {	-- Hero of the Horde: Sinful
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			-- Fashion
 			ach(14831, {	-- I Live, I Die, I Queue Again
-				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH }
+				timeline = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH }
 			}),
 		})),
-		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 } }, {
+		filter(MOUNTS, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 } }, {
 			i(184014, {	-- Vicious War Spider [A] (MOUNT!)
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			i(184013, {	-- Vicious War Spider [H] (MOUNT!)
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 		})),
 		n(PVP_ASPIRANT, {
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
-				["coord"] = { 36.0, 58.6, ORIBOS },
-				["groups"] = sharedData({
-					["cost"] = { { "i", MOH, 12 } },
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
+				coord = { 36.0, 58.6, ORIBOS },
+				groups = sharedData({
+					cost = { { "i", MOH, 12 } },
+					timeline = { ADDED_10_0_2_LAUNCH },
 				}, {
 					iensemble(201878, {	-- Arsenal: Sinful Aspirant's Weapons
-						["cost"] = { { "i", MOH, 80 } },
+						cost = { { "i", MOH, 80 } },
 					}),
 					iensemble(201868, {	-- Ensemble: Sinful Aspirant's Cloth Armor
-						["classes"] = CLOTH_CLASSES,
+						classes = CLOTH_CLASSES,
 					}),
 					iensemble(201867, {	-- Ensemble: Sinful Aspirant's Leather Armor
-						["classes"] = LEATHER_CLASSES,
+						classes = LEATHER_CLASSES,
 					}),
 					iensemble(201866, {	-- Ensemble: Sinful Aspirant's Mail Armor
-						["classes"] = MAIL_CLASSES,
+						classes = MAIL_CLASSES,
 					}),
 					iensemble(201865, {	-- Ensemble: Sinful Aspirant's Plate Armor
-						["classes"] = PLATE_CLASSES,
+						classes = PLATE_CLASSES,
 					}),
 				}),
 			}),
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
-				["coord"] = { 36.0, 58.6, ORIBOS },
-				["groups"] = bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 } }, {
+				coord = { 36.0, 58.6, ORIBOS },
+				groups = bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 } }, {
 					filter(BACK_F, {
 						honor(525, i(178301)),	-- Sinful Aspirant's Cape
 						honor(525, i(175851)),	-- Sinful Aspirant's Cloak
@@ -159,40 +159,40 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		}),
 		n(PVP_GLADIATOR, {
 			n(168011, {	-- Zo'sorg <Master of Conflict>
-				["coord"] = { 35.0, 57.6, ORIBOS },
-				["groups"] = sharedData({
-					["cost"] = { { "i", MOH, 12 } },
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
+				coord = { 35.0, 57.6, ORIBOS },
+				groups = sharedData({
+					cost = { { "i", MOH, 12 } },
+					timeline = { ADDED_10_0_2_LAUNCH },
 				}, {
 					iensemble(201882, {	-- Arsenal: Sinful Gladiator's Ardenweald Weapons
-						["cost"] = { { "i", MOH, 80 } },
+						cost = { { "i", MOH, 80 } },
 					}),
 					iensemble(201881, {	-- Arsenal: Sinful Gladiator's Bastion Weapons
-						["cost"] = { { "i", MOH, 80 } },
+						cost = { { "i", MOH, 80 } },
 					}),
 					iensemble(201880, {	-- Arsenal: Sinful Gladiator's Maldraxxus Weapons
-						["cost"] = { { "i", MOH, 80 } },
+						cost = { { "i", MOH, 80 } },
 					}),
 					iensemble(201879, {	-- Arsenal: Sinful Gladiator's Revendreth Weapons
-						["cost"] = { { "i", MOH, 80 } },
+						cost = { { "i", MOH, 80 } },
 					}),
 					iensemble(201872, {	-- Ensemble: Sinful Gladiator's Cloth Armor
-						["classes"] = CLOTH_CLASSES,
+						classes = CLOTH_CLASSES,
 					}),
 					iensemble(201871, {	-- Ensemble: Sinful Gladiator's Leather Armor
-						["classes"] = LEATHER_CLASSES,
+						classes = LEATHER_CLASSES,
 					}),
 					iensemble(201870, {	-- Ensemble: Sinful Gladiator's Mail Armor
-						["classes"] = MAIL_CLASSES,
+						classes = MAIL_CLASSES,
 					}),
 					iensemble(201869, {	-- Ensemble: Sinful Gladiator's Plate Armor
-						["classes"] = PLATE_CLASSES,
+						classes = PLATE_CLASSES,
 					}),
 				}),
 			}),
 			n(168011, {	-- Zo'sorg <Master of Conflict>
-				["coord"] = { 35.0, 57.6, ORIBOS },
-				["groups"] = bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 } }, {
+				coord = { 35.0, 57.6, ORIBOS },
+				groups = bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 } }, {
 					filter(BACK_F, {
 						conquest(525, i(175888)),	-- Sinful Gladiator's Cloak
 						conquest(525, i(178353)),	-- Sinful Gladiator's Drape
@@ -290,7 +290,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 						conquest(525, i(181816)),	-- Sinful Gladiator's Sigil of Adaptation
 					}),
 					n(WEAPONS, {
-						n(KYRIAN, sharedData({ ["customCollect"] = { "SL_COV_KYR" } }, {
+						n(KYRIAN, sharedData({ customCollect = { "SL_COV_KYR" } }, {
 							conquest(1350, i(177851)),	-- Sinful Gladiator's Ceremonial Sword
 							conquest(450, i(177866)),	-- Sinful Gladiator's Chalice
 							conquest(1800, i(184549)),	-- Sinful Gladiator's Dory
@@ -306,7 +306,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 							conquest(900, i(184237)),	-- Sinful Gladiator's Warglaive
 							conquest(900, i(184547)),	-- Sinful Gladiator's Xiphos
 						})),
-						n(NECROLORD, sharedData({ ["customCollect"] = { "SL_COV_NEC" } }, {
+						n(NECROLORD, sharedData({ customCollect = { "SL_COV_NEC" } }, {
 							conquest(1800, i(183446)),	-- Sinful Gladiator's Cleaver
 							conquest(450, i(183439)),	-- Sinful Gladiator's Crystal
 							conquest(1350, i(183449)),	-- Sinful Gladiator's Gavel
@@ -320,7 +320,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 							conquest(900, i(183440)),	-- Sinful Gladiator's Splitter
 							conquest(900, i(183441)),	-- Sinful Gladiator's Warglaive
 						})),
-						n(NIGHT_FAE, sharedData({ ["customCollect"] = { "SL_COV_NFA" } }, {
+						n(NIGHT_FAE, sharedData({ customCollect = { "SL_COV_NFA" } }, {
 							conquest(1800, i(179543)),	-- Sinful Gladiator's Bludgeon
 							conquest(450, i(179609)),	-- Sinful Gladiator's Bulwark
 							conquest(900, i(180261)),	-- Sinful Gladiator's Edge
@@ -334,7 +334,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 							conquest(1350, i(180019)),	-- Sinful Gladiator's Wand
 							conquest(1800, i(180081)),	-- Sinful Gladiator's Warbow
 						})),
-						n(VENTHYR, sharedData({ ["customCollect"] = { "SL_COV_VEN" } }, {
+						n(VENTHYR, sharedData({ customCollect = { "SL_COV_VEN" } }, {
 							conquest(1800, i(182406)),	-- Sinful Gladiator's Battlestave
 							conquest(1800, i(182402)),	-- Sinful Gladiator's Crusaderblade
 							conquest(900, i(182403)),	-- Sinful Gladiator's Gargoyle Claw
@@ -354,7 +354,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				}),
 			}),
 		}),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 }, ["modID"] = 45 }, {
+		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 }, modID = 45 }, {
 			filter(BACK_F, {
 				i(175888),	-- Sinful Gladiator's Cloak
 				i(178353),	-- Sinful Gladiator's Drape
@@ -452,7 +452,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				i(181816),	-- Sinful Gladiator's Sigil of Adaptation
 			}),
 			n(WEAPONS, {
-				n(KYRIAN, sharedData({["customCollect"] = { "SL_COV_KYR" }}, {
+				n(KYRIAN, sharedData({customCollect = { "SL_COV_KYR" }}, {
 					i(177851),	-- Sinful Gladiator's Ceremonial Sword
 					i(184549),	-- Sinful Gladiator's Dory
 					i(177846),	-- Sinful Gladiator's Gladius
@@ -467,7 +467,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					i(184237),	-- Sinful Gladiator's Warglaive
 					i(184547),	-- Sinful Gladiator's Xiphos
 				})),
-				n(NECROLORD, sharedData({["customCollect"] = { "SL_COV_NEC" }}, {
+				n(NECROLORD, sharedData({customCollect = { "SL_COV_NEC" }}, {
 					i(183446),	-- Sinful Gladiator's Cleaver
 					i(183439),	-- Sinful Gladiator's Crystal
 					i(183449),	-- Sinful Gladiator's Gavel
@@ -481,7 +481,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					i(183440),	-- Sinful Gladiator's Splitter
 					i(183441),	-- Sinful Gladiator's Warglaive
 				})),
-				n(NIGHT_FAE, sharedData({["customCollect"] = { "SL_COV_NFA" }}, {
+				n(NIGHT_FAE, sharedData({customCollect = { "SL_COV_NFA" }}, {
 					i(179543),	-- Sinful Gladiator's Bludgeon
 					i(179609),	-- Sinful Gladiator's Bulwark
 					i(180261),	-- Sinful Gladiator's Edge
@@ -495,7 +495,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					i(180019),	-- Sinful Gladiator's Wand
 					i(180081),	-- Sinful Gladiator's Warbow
 				})),
-				n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }}, {
+				n(VENTHYR, sharedData({customCollect = { "SL_COV_VEN" }}, {
 					i(182406),	-- Sinful Gladiator's Battlestave
 					i(182402),	-- Sinful Gladiator's Crusaderblade
 					i(182403),	-- Sinful Gladiator's Gargoyle Claw

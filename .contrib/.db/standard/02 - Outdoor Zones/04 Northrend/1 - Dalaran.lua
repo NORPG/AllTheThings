@@ -4,23 +4,23 @@
 
 local EMBLEM_OF_TRIUMPH_QUARTERMASTER_GROUPS = {
 	emot(1, i(44711, {	-- Argent Crusade Commendation Badge
-		["timeline"] = { DELETED_6_0_2 },
+		timeline = { DELETED_6_0_2 },
 	})),
 	emot(1, i(44713, {	-- Ebon Blade Commendation Badge [BOP]
-		["timeline"] = { DELETED_6_0_2 },
+		timeline = { DELETED_6_0_2 },
 	})),
 	emot(1, i(43950, {	-- Kirin Tor Commendation Badge
-		["timeline"] = { DELETED_6_0_2 },
+		timeline = { DELETED_6_0_2 },
 	})),
 	emot(1, i(49702, {	-- Sons of Hodir Commendation Badge
-		["timeline"] = { DELETED_6_0_2 },
+		timeline = { DELETED_6_0_2 },
 	})),
 	emot(1, i(44710, {	-- Wyrmrest Commendation Badge
-		["timeline"] = { DELETED_6_0_2 },
+		timeline = { DELETED_6_0_2 },
 	})),
 	emot(35, i(47732)),	-- Band of the Invoker
 	emot(25, i(47660, {	-- Blades of the Sable Cross
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emot(35, i(47729)),	-- Bloodshed Band
 	emot(25, i(47658)),	-- Brimstone Igniter
@@ -111,44 +111,44 @@ local EMBLEM_OF_TRIUMPH_QUARTERMASTER_GROUPS = {
 	emot(35, i(47733)),	-- Heartmender Circle
 	-- #if BEFORE MOP
 	emoc(25, i(47671, {	-- Idol of Flaring Growth
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47670, {	-- Idol of Lunar Fury
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47668, {	-- Idol of Mutilation
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47664, {	-- Libram of Defiance
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47661, {	-- Libram of Valiance
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47662, {	-- Libram of Veracity
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	-- #endif
 	emot(50, i(47734)),	-- Mark of Supremacy
 	emot(50, i(48722)),	-- Shard of the Crystal Heart
 	-- #if BEFORE MOP
 	emoc(25, i(47672, {	-- Sigil of Insolence
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47673, {	-- Sigil of Virulence
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	-- #endif
 	emot(50, i(48724)),	-- Talisman of Resurgence
 	-- #if BEFORE MOP
 	emoc(25, i(47665, {	-- Totem of Calming Tides
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47666, {	-- Totem of Electrifying Wind
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47667, {	-- Totem of Quaking Earth
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	-- #endif
 };
@@ -296,13 +296,13 @@ local EMBLEM_OF_CONQUEST_QUARTERMASTER_GROUPS = {
 	emoc(28, i(45839)),	-- Grips of the Secret Grove
 	-- #if BEFORE MOP
 	emoc(19, i(45509, {	-- Idol of the Corruptor
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45270, {	-- Idol of the Crying Wind
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(46138, {	-- Idol of the Flourishing Life
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	-- #endif
 	emoc(39, i(45844)),	-- Leggings of the Tireless Sentry
@@ -313,13 +313,13 @@ local EMBLEM_OF_CONQUEST_QUARTERMASTER_GROUPS = {
 	emoc(39, i(45848)),	-- Legwraps of the Master Conjurer
 	-- #if BEFORE MOP
 	emoc(19, i(45510, {	-- Libram of Discord
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45436, {	-- Libram of the Resolute
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45145, {	-- Libram of the Sacred Shield
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	-- #endif
 	emoc(18, i(45087)),	-- Runed Orb
@@ -328,22 +328,22 @@ local EMBLEM_OF_CONQUEST_QUARTERMASTER_GROUPS = {
 	emoc(28, i(45825)),	-- Shieldwarder Girdle
 	-- #if BEFORE MOP
 	emoc(19, i(45144, {	-- Sigil of Deflection
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45254, {	-- Sigil of the Vengeful Heart
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	-- #endif
 	emoc(19, i(45819)),	-- Spiked Battleguard Choker
 	-- #if BEFORE MOP
 	emoc(19, i(45114, {	-- Steamcaller's Totem
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45255, {	-- Thunderfall Totem
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45169, {	-- Totem of the Dancing Flame
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	-- #endif
 	emoc(28, i(45840)),	-- Touch of the Occult
@@ -357,7 +357,7 @@ local EMBLEM_OF_FROST_QUARTERMASTER_GROUPS = {
 	emof(60, i(50994)),	-- Belt of Petrified Ivy
 	-- #if BEFORE MOP
 	emof(30, i(50458, {	-- Bizuri's Totem of Shattered Ice
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	-- #endif
 	emof(60, i(50980)),	-- Blizzard Keeper's Mitts
@@ -378,22 +378,22 @@ local EMBLEM_OF_FROST_QUARTERMASTER_GROUPS = {
 	emof(60, i(50355)),	-- Herkuml War Token
 	-- #if BEFORE MOP
 	emof(30, i(50454, {	-- Idol of the Black Willow
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50456, {	-- Idol of the Crying Moon
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50457, {	-- Idol of the Lunar Eclipse
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50460, {	-- Libram of Blinding Light
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50461, {	-- Libram of the Eternal Tower
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50455, {	-- Libram of Three Truths
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	-- #endif
 	emof(60, i(50989)),	-- Lich Killer's Lanyard
@@ -490,20 +490,20 @@ local EMBLEM_OF_FROST_QUARTERMASTER_GROUPS = {
 	emof(50, i(50466)),	-- Sentinel's Winter Cloak
 	emof(95, i(50972)),	-- Shadow Seeker's Tunic
 	emof(30, i(50474, {	-- Shrapnel Star
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	-- #if BEFORE MOP
 	emof(30, i(50462, {	-- Sigil of the Bone Gryphon
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50459, {	-- Sigil of the Hanged Man
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50463, {	-- Totem of the Avalanche
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50464, {	-- Totem of the Surging Sea
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	-- #endif
 	emof(60, i(50995)),	-- Vengeful Noose
@@ -529,29 +529,29 @@ local EMBLEM_OF_HEROISM_QUARTERMASTER_GROUPS = {
 	emoh(25, i(40699)),	-- Handbook of Obscure Remedies
 	-- #if BEFORE MOP
 	emoh(15, i(40711, {	-- Idol of Lush Moss
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40712, {	-- Idol of Steadfast Renewal
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40713, {	-- Idol of the Ravenous Beast
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	-- #endif
 	emoh(40, i(40694)),	-- Jorach's Crocolisk Skin Belt
 	emoh(25, i(40681)),	-- Lattice Choker of Light
 	-- #if BEFORE MOP
 	emoh(15, i(40707, {	-- Libram of Obstruction
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40706, {	-- Libram of Reciprocation
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40705, {	-- Libram of Renewal
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40716, {	-- Lillehoff's Winged Blades
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	-- #endif
 	emoh(40, i(40691)),	-- Magroth's Meditative Cincture
@@ -643,23 +643,23 @@ local EMBLEM_OF_HEROISM_QUARTERMASTER_GROUPS = {
 	i(41278),	-- Savage Gladiator's Wyrmhide Spaulders
 	-- #if BEFORE MOP
 	emoh(15, i(40715, {	-- Sigil of Haunted Dreams
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40714, {	-- Sigil of the Unfaltering Knight
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	-- #endif
 	emoh(40, i(40682)),	-- Sundial of the Exiled
 	emoh(40, i(40685)),	-- The Egg of Mortal Essence
 	-- #if BEFORE MOP
 	emoh(15, i(40709, {	-- Totem of Forest Growth
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40710, {	-- Totem of Splintering
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40708, {	-- Totem of the Elemental Plane
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	-- #endif
 	emoh(40, i(40683)),	-- Valor Medal of the First War
@@ -800,32 +800,32 @@ end]];
 root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(NORTHREND_DALARAN, {
-			["lore"] = "Dalaran is a magocratic city-state and was once located within the Alterac Mountains in the Eastern Kingdoms. Now, the city, including the Violet Citadel, resides above the Crystalsong Forest in Northrend. The top part of the city is sparkling and airy, while the sewers underground show the darker side of magic addiction and luxury.",
-			["icon"] = 237509,
-			["maps"] = {
+			lore = "Dalaran is a magocratic city-state and was once located within the Alterac Mountains in the Eastern Kingdoms. Now, the city, including the Violet Citadel, resides above the Crystalsong Forest in Northrend. The top part of the city is sparkling and airy, while the sewers underground show the darker side of magic addiction and luxury.",
+			icon = 237509,
+			maps = {
 				501,	-- Dalaran (operation shieldwall)
 				502,	-- Dalaran (sewers, operation shieldwall)
 			},
-			["isRaid"] = true,
-			["lvl"] = 58,
-			["groups"] = {
+			isRaid = true,
+			lvl = 58,
+			groups = {
 				m(NORTHREND_THE_UNDERBELLY, {
-					["zoneTextAreaID"] = 4560,	-- The Underbelly
-					["icon"] = 460862,
-					["groups"] = {
+					zoneTextAreaID = 4560,	-- The Underbelly
+					icon = 460862,
+					groups = {
 						n(ACHIEVEMENTS, {
 							ach(1958, {	-- I Smell A Giant Rat
-								["provider"] = { "i", 43698 },	-- Giant Sewer Rat
-								["requireSkill"] = FISHING,
+								provider = { "i", 43698 },	-- Giant Sewer Rat
+								requireSkill = FISHING,
 							}),
 						}),
 						prof(COOKING, {
 							i(43100, {	-- Infused Mushroom (QI!)
-								["provider"] = { "o", 192818 },	-- Infused Mushroom
+								provider = { "o", 192818 },	-- Infused Mushroom
 							}),
 							n(33026, {	-- Sarah Brady <Alcohol>
-								["coord"] = { 44.15, 47.63, NORTHREND_THE_UNDERBELLY },
-								["groups"] = {
+								coord = { 44.15, 47.63, NORTHREND_THE_UNDERBELLY },
+								groups = {
 									i(2593),	-- Flask of Stormwind Tawny
 								},
 							}),
@@ -833,86 +833,86 @@ root(ROOTS.Zones, {
 						prof(FISHING, {
 							i(45903),	-- Corroded Jewelry (QI!)
 							i(43698, {	-- Giant Sewer Rat (PET!)
-								["timeline"] = { ADDED_3_0_2 },
+								timeline = { ADDED_3_0_2 },
 							}),
 						}),
 						n(QUESTS, {
 							q(13571, {	-- Fletcher's Lost and Found
-								["sourceQuest"] = 12645,	-- The Taste Test
-								["qg"] = 32516,	-- Washed-Up Mage
-								["coord"] = { 44.2, 25.6, NORTHREND_THE_UNDERBELLY },
-								["requireSkill"] = COOKING,
-								["groups"] = {
+								sourceQuest = 12645,	-- The Taste Test
+								qg = 32516,	-- Washed-Up Mage
+								coord = { 44.2, 25.6, NORTHREND_THE_UNDERBELLY },
+								requireSkill = COOKING,
+								groups = {
 									recipe(53056),	-- Kungaloosh (RECIPE!)
 								},
 							}),
 							q(13845, {	-- Sealed Vial of Poison
-								["providers"] = {
+								providers = {
 									{ "i", 46004 },	-- Sealed Vial of Poison
 									{ "i", 46004 },	-- Sealed Vial of Poison
 									{ "n", 29535 },	-- Alchemist Cinesra <Poison Vendor>
 								},
-								["coord"] = { 63.6, 12.0, NORTHREND_THE_UNDERBELLY },
-								["repeatable"] = true,
+								coord = { 63.6, 12.0, NORTHREND_THE_UNDERBELLY },
+								repeatable = true,
 							}),
 						}),
 						n(VENDORS, {
 							n(29535, {	-- Alchemist Cinesra
-								["coord"] = { 63.2, 11.4, NORTHREND_THE_UNDERBELLY },
+								coord = { 63.2, 11.4, NORTHREND_THE_UNDERBELLY },
 								-- #if AFTER MOP
-								["sym"] = {{"select","itemID",
+								sym = {{"select","itemID",
 									4565,	-- Simple Dagger
 								}},
 								-- #endif
 							}),
 							-- #if NOT ANYCLASSIC
 							n(30885, {	-- Blazik Fireclaw <Hateful Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+] / Blazik Fireclaw <Water Vendor> [WRATH]
-								["coord"] = { 59.5, 57.9, NORTHREND_THE_UNDERBELLY },
+								coord = { 59.5, 57.9, NORTHREND_THE_UNDERBELLY },
 								-- #if AFTER LEGION
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{"merge"},{ "pop" }},	-- Hateful Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{"merge"},{ "pop" }},	-- Hateful Gladiator's Set
 								-- #elseif AFTER CATA
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Brutal Gladiator's Set [TODO: Specifically Just the Armor...]
+								sym = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Brutal Gladiator's Set [TODO: Specifically Just the Armor...]
 								-- #endif
 							}),
 							-- #endif
 							n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
-								["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
-								["coord"] = { 47.0, 28.1, NORTHREND_THE_UNDERBELLY },
-								["timeline"] = { ADDED_7_0_3 },
-								["groups"] = {
+								description = "This vendor is not always present. It can appear in either version of Dalaran.",
+								coord = { 47.0, 28.1, NORTHREND_THE_UNDERBELLY },
+								timeline = { ADDED_7_0_3 },
+								groups = {
 									i(136803, {	-- Dirty Tricks, Vol 1: Detection (CI!)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									}),
 									i(136927, {	-- Scarlet Confessional Book (TOY!)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									}),
 									i(141056, {	-- Technique: Glyph of Burnout (RECIPE!)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									}),
 									i(136972, {	-- Tome of Hex: Cockroach (CI!)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									}),
 								},
 							}),
 							n(29537, {	-- Darahir <Reagents & Magical Goods>
-								["coord"] = { 63.4, 16.2, NORTHREND_THE_UNDERBELLY },
-								["groups"] = {
+								coord = { 63.4, 16.2, NORTHREND_THE_UNDERBELLY },
+								groups = {
 									i(39973, {	-- Ghostly Skull (PET!)
-										["timeline"] = { ADDED_3_0_2 },
+										timeline = { ADDED_3_0_2 },
 									}),
 								},
 							}),
 							-- #if NOT ANYCLASSIC
 							-- Wouter TODO: check if this NPC gets added later in MoP Classic
 							n(69321, {	-- Herwin Steampop <Deadly Gladiator>
-								["coord"] = { 59.4, 57.8, NORTHREND_THE_UNDERBELLY },
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Deadly Gladiator's Set
-								["timeline"] = { ADDED_5_2_0 },
+								coord = { 59.4, 57.8, NORTHREND_THE_UNDERBELLY },
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Deadly Gladiator's Set
+								timeline = { ADDED_5_2_0 },
 							}),
 							-- #endif
 							n(29538, {	-- Hexil Garrot <Tools of the Trade>
-								["coord"] = { 60.6, 11.9, NORTHREND_THE_UNDERBELLY },
-								["groups"] = {
+								coord = { 60.6, 11.9, NORTHREND_THE_UNDERBELLY },
+								groups = {
 									emov(60, i(40739)),	-- Bands of the Great Tree
 									emof(60, i(50994)),	-- Belt of Petrified Ivy
 									emoc(28, i(45830)),	-- Belt of the Living Thicket
@@ -921,7 +921,7 @@ root(ROOTS.Zones, {
 									emof(60, i(50982)),	-- Cat Burglar's Grips
 									i(44652),	-- Dalaran Dagger
 									i(44644, {	-- Dalaran Dart
-										["timeline"] = { REMOVED_5_0_4 },
+										timeline = { REMOVED_5_0_4 },
 									}),
 									i(44641),	-- Dalaran Knuckles
 									emoc(28, i(45838)),	-- Gloves of the Blind Stalker
@@ -930,7 +930,7 @@ root(ROOTS.Zones, {
 									emoh(40, i(40694)),	-- Jorach's Crocolisk Skin Belt
 									emoc(39, i(45846)),	-- Leggings of Wavering Shadow
 									emoh(15, i(40716, {	-- Lillehoff's Winged Blades
-										["timeline"] = { REMOVED_5_0_4 },
+										timeline = { REMOVED_5_0_4 },
 									})),
 									emoh(50, i(40704)),	-- Pride
 									emov(40, i(40749)),	-- Rainey's Chewed Boots
@@ -946,65 +946,65 @@ root(ROOTS.Zones, {
 							-- #if NOT ANYCLASSIC
 							-- Wouter TODO: check if this NPC gets added later in MoP Classic
 							n(69318, {	-- Kylo Kelwin <Furious Gladiator>
-								["coord"] = { 59.0, 57.6, NORTHREND_THE_UNDERBELLY },
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Furious Gladiator's Set
-								["timeline"] = { ADDED_5_2_0 },
+								coord = { 59.0, 57.6, NORTHREND_THE_UNDERBELLY },
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Furious Gladiator's Set
+								timeline = { ADDED_5_2_0 },
 							}),
 							-- #endif
 							applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(54653, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
-								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
+								coord = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 7.0.1
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR }},	-- Cataclysmic Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR }},	-- Cataclysmic Gladiator's Set
 								-- #endif
-								["timeline"] = { ADDED_4_3_0, REMOVED_7_0_3 },
+								timeline = { ADDED_4_3_0, REMOVED_7_0_3 },
 							})),
 							applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(52541, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
-								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
+								coord = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 5.0.1
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR }},	-- Ruthless Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR }},	-- Ruthless Gladiator's Set
 								-- #endif
-								["timeline"] = { ADDED_4_2_0, REMOVED_4_3_0 },
+								timeline = { ADDED_4_2_0, REMOVED_4_3_0 },
 							})),
 							applyclassicphase(CATA_PHASE_ONE, n(40211, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
-								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
+								coord = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 5.0.1
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR }},	-- Vicious Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR }},	-- Vicious Gladiator's Set
 								-- #endif
-								["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 },
+								timeline = { ADDED_4_0_3, REMOVED_4_2_0 },
 							})),
 							applyclassicphase(WRATH_PHASE_FOUR, n(33936, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S8 Vendor // Wrathful Gladiator: Season 8 Gladiator Gear
-								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
+								coord = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR },{ "pop" }},	-- Wrathful Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR },{ "pop" }},	-- Wrathful Gladiator's Set
 								-- #endif
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_THREE, n(33927, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S7 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
-								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
+								coord = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
 								-- #endif
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_TWO, n(33921, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S6 Vendor // Furious Gladiator: Season 6 Gladiator Gear
-								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
+								coord = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
 								-- #endif
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, n(31863, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S5 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
 								-- Wouter NOTE: I adjusted this NPC with Classic specific data starting from MoP, expansions before that may be inaccurate
-								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
+								coord = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE CATA
-								["sym"] = {
+								sym = {
 									{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR }, { "pop" },	-- Deadly Gladiator's Set
 									-- #if ANYCLASSIC
 									{ "select", "itemID", 201993 },	-- Deadly Gladiator's Tabard (Wrath Classic Only)
 									-- #endif
 								},
 								-- #elseif ANYCLASSIC
-								["sym"] = {
+								sym = {
 									{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR }, { "merge" }, { "pop" },	-- Deadly Gladiator's Set
 									{ "not", "headerID", BACK, WAIST, WRIST, FEET },				-- Exclude off-piece headers
 									{ "not", "filterID", NECK_F, FINGER_F, RELICS_F, TRINKET_F },	-- Exclude off-piece filters
@@ -1013,90 +1013,90 @@ root(ROOTS.Zones, {
 								},
 								-- #endif
 								-- #if NOT ANYCLASSIC
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 								-- #endif
 							})),
 							-- #if NOT ANYCLASSIC
 							applyclassicphase(CATA_PHASE_ONE, n(40212, {	-- Trapjaw Rix <Savage Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+]
-								["coord"] = { 59.3, 57.3, NORTHREND_THE_UNDERBELLY },
+								coord = { 59.3, 57.3, NORTHREND_THE_UNDERBELLY },
 								-- #if AFTER LEGION
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR },{"merge"},{ "pop" }},	-- Savage Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR },{"merge"},{ "pop" }},	-- Savage Gladiator's Set
 								-- #elseif AFTER CATA
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Brutal Gladiator's Set [TODO: Specifically Just the Weapons...]
+								sym = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Brutal Gladiator's Set [TODO: Specifically Just the Weapons...]
 								-- #endif
-								["timeline"] = { ADDED_4_0_3 },
+								timeline = { ADDED_4_0_3 },
 							})),
 							-- #endif
 							applyclassicphase(WRATH_PHASE_FOUR, n(34095, {	-- Trapjaw Rix <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S8 ELITE VENDOR
-								["coord"] = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
+								coord = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_ELITE },{"merge"}},	-- Wrathful Gladiator's Elite Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_ELITE },{"merge"}},	-- Wrathful Gladiator's Elite Set
 								-- #endif
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_THREE, n(34092, {	-- Trapjaw Rix <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S7 ELITE VENDOR
-								["coord"] = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
+								coord = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_ELITE },{"merge"}},	-- Relentless Gladiator's Elite Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_ELITE },{"merge"}},	-- Relentless Gladiator's Elite Set
 								-- #endif
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_TWO, n(34087, {	-- Trapjaw Rix <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S6 ELITE VENDOR
 								-- Wouter NOTE: I adjusted this NPC with Classic specific data starting from MoP, expansions before that may be inaccurate
-								["coord"] = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
+								coord = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE CATA
-								["sym"] = {{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE }, { "merge" }},	-- Furious Gladiator's Elite Set
+								sym = {{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE }, { "merge" }},	-- Furious Gladiator's Elite Set
 								-- #elseif ANYCLASSIC
-								["sym"] = {
+								sym = {
 									{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_ELITE }, { "merge" },	-- Wrathful Gladiator's Elite Set
 									{ "pop" }, { "where", "headerID", WEAPONS },	-- Pop Elite Set header and select Weapons header
 									{ "pop" },	-- Flatten everything out
 								},
 								-- #endif
 								-- #if NOT ANYCLASSIC
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 								-- #endif
 							})),
 							-- #if NOT ANYCLASSIC
 							-- Wouter TODO: check if this NPC gets added later in MoP Classic
 							n(69971, {	-- Xazi Smolderpipe <Wrathful Gladiator> [Legion?] / Xazi Smolderpipe <Conquest Quartermaster> [MOP?]
-								["coord"] = { 58.5, 58.3, NORTHREND_THE_UNDERBELLY },
+								coord = { 58.5, 58.3, NORTHREND_THE_UNDERBELLY },
 								-- #if AFTER LEGION
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Wrathful Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Wrathful Gladiator's Set
 								-- #else
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Cataclysmic Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Cataclysmic Gladiator's Set
 								-- #endif
-								["timeline"] = { ADDED_5_2_0 },
+								timeline = { ADDED_5_2_0 },
 							}),
 							-- #endif
 							applyclassicphase(WRATH_PHASE_FOUR, n(33937, {	-- Xazi Smolderpipe <Arena Vendor> // Original S8 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
-								["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
+								coord = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
 								-- #endif
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_THREE, n(33926, {	-- Xazi Smolderpipe <Arena Vendor> // Original S7 Vendor // Furious Gladiator: Season 6 Gladiator Gear
-								["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
+								coord = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
 								-- #endif
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_TWO, n(33922, {	-- Xazi Smolderpipe <Arena Vendor> // Original S6 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
-								["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
+								coord = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
 								-- #endif
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, n(31864, {	-- Xazi Smolderpipe <Arena Vendor> // Original S5 Vendor // Hateful Gladiator: Season 5 Gladiator Gear
 								-- Wouter NOTE: I adjusted this NPC with Classic specific data starting from MoP, expansions before that may be inaccurate
-								["coord"] = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
+								coord = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE CATA
-								["sym"] = {{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL }, { "pop" }},	-- Hateful Gladiator's Set
+								sym = {{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL }, { "pop" }},	-- Hateful Gladiator's Set
 								-- #elseif ANYCLASSIC
-								["sym"] = {
+								sym = {
 									{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR }, { "merge" },	-- Relentless Gladiator's Set
 									{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_ELITE }, { "merge" }, { "pop" },	-- Relentless Gladiator's Elite Set
 									{ "not", "headerID", BACK, WAIST, WRIST, FEET },				-- Exclude off-piece headers
@@ -1106,69 +1106,69 @@ root(ROOTS.Zones, {
 								},
 								-- #endif
 								-- #if NOT ANYCLASSIC
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 								-- #endif
 							})),
 							-- #if NOT ANYCLASSIC
 							-- Wouter TODO: check if this NPC gets added later in MoP Classic
 							n(69973, {	-- Zom Bocom <Relentless Gladiator> [Legion?] / Zom Bocom <Honor Quartermaster> [MOP?]
-								["coord"] = { 59.0, 58.8, NORTHREND_THE_UNDERBELLY },
+								coord = { 59.0, 58.8, NORTHREND_THE_UNDERBELLY },
 								-- #if AFTER LEGION
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Relentless Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Relentless Gladiator's Set
 								-- #else
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Ruthless Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Ruthless Gladiator's Set
 								-- #endif
-								["timeline"] = { ADDED_5_2_0 },
+								timeline = { ADDED_5_2_0 },
 							}),
 							-- #endif
 							applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(54651, {	-- Zom Bocom <Honor Quartermaster>
 								-- #if BEFORE 5.2.0.16577
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR }},	-- Ruthless Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR }},	-- Ruthless Gladiator's Set
 								-- #endif
-								["timeline"] = { ADDED_4_3_0, REMOVED_5_2_0 },
+								timeline = { ADDED_4_3_0, REMOVED_5_2_0 },
 							})),
 							applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(52534, {	-- Zom Bocom <Honor Quartermaster>
-								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
+								coord = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 5.0.1
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR }},	-- Vicious Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR }},	-- Vicious Gladiator's Set
 								-- #endif
-								["timeline"] = { ADDED_4_2_0, REMOVED_4_3_0 },
+								timeline = { ADDED_4_2_0, REMOVED_4_3_0 },
 							})),
 							applyclassicphase(CATA_PHASE_ONE, n(40205, {	-- Zom Bocom <Honor Quartermaster>
-								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
+								coord = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 5.0.1
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR }},	-- Bloodthirsty Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR }},	-- Bloodthirsty Gladiator's Set
 								-- #endif
-								["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 },
+								timeline = { ADDED_4_0_3, REMOVED_4_2_0 },
 							})),
 							applyclassicphase(WRATH_PHASE_FOUR, n(33938, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S8 Vendor // Furious Gladiator: Season 8 Honor Gear
-								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
+								coord = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
 								-- #endif
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_THREE, n(33925, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S7 Vendor // Deadly Gladiator: Season 7 Honor Gear
-								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
+								coord = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
 								-- #endif
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_TWO, n(33923, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S6 Vendor // Hateful Gladiator: Season 6 Honor Gear
-								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
+								coord = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 4.0.3.13277
-								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
+								sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
 								-- #endif
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, n(31865, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S5 Vendor // Savage Gladiator: Season 5 Honor Gear
 								-- Wouter NOTE: I adjusted this NPC with Classic specific data starting from MoP, expansions before that may be inaccurate
-								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
+								coord = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE CATA
-								["sym"] = {{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR }, { "pop" }},	-- Savage Gladiator's Set
+								sym = {{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR }, { "pop" }},	-- Savage Gladiator's Set
 								-- #elseif ANYCLASSIC
-								["sym"] = {
+								sym = {
 									{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR },							-- Savage Gladiator's Set
 									{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },					-- Hateful Gladiator's Set
 									{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },						-- Deadly Gladiator's Set
@@ -1185,7 +1185,7 @@ root(ROOTS.Zones, {
 								},
 								-- #endif
 								-- #if NOT ANYCLASSIC
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 								-- #endif
 							})),
 						}),
@@ -1193,195 +1193,195 @@ root(ROOTS.Zones, {
 				}),
 				n(ACHIEVEMENTS, {
 					ach(2094, {	-- A Penny For Your Thoughts
-						["sym"] = {{ "achievement_criteria" }},
-						["requireSkill"] = FISHING,
+						sym = {{ "achievement_criteria" }},
+						requireSkill = FISHING,
 					}),
 					ach(3217, {	-- Chasing Marcia
-						["requireSkill"] = FISHING,
-						["groups"] = {
+						requireSkill = FISHING,
+						groups = {
 							crit(13367, {	-- Blood Is Thicker
-								["_quests"] = { 13833 },
+								_quests = { 13833 },
 							}),
 							crit(13365, {	-- Dangerously Delicious
-								["_quests"] = { 13834 },
+								_quests = { 13834 },
 							}),
 							crit(13366, {	-- Disarmed!
-								["_quests"] = { 13836 },
+								_quests = { 13836 },
 							}),
 							crit(13364, {	-- Jewel Of The Sewers
-								["_quests"] = { 13832 },
+								_quests = { 13832 },
 							}),
 							crit(13363, {	-- The Ghostfish
-								["_quests"] = { 13830 },
+								_quests = { 13830 },
 							}),
 						},
 					}),
 					ach(3296, {	-- Cooking with Style
 						-- #if AFTER 7.0.3.22248
-						["provider"] = { "i", 134020 },	-- Chef's Hat
+						provider = { "i", 134020 },	-- Chef's Hat
 						-- #else
-						["provider"] = { "i", 46349 },	-- Chef's Hat
+						provider = { "i", 46349 },	-- Chef's Hat
 						-- #endif
-						["requireSkill"] = COOKING,
+						requireSkill = COOKING,
 					}),
 					ach(1956, {	-- Higher Learning
-						["description"] = "The Schools of Arcane Magic books share a spawn location with generic books. Read the books in each location to start the respawn timer, which seems to be 3-4 hours.\n\nThe best time to hunt books is right after a server restart.",
-						["groups"] = {
+						description = "The Schools of Arcane Magic books share a spawn location with generic books. Read the books in each location to start the respawn timer, which seems to be 3-4 hours.\n\nThe best time to hunt books is right after a server restart.",
+						groups = {
 							i(44738, {	-- Kirin Tor Familiar (PET!)
-								["description"] = "This pet is obtained by doing the following:\n1. Complete the achievement 'Higher Learning'\n2. Use the newly acquired toy 'The Schools of Arcane Magic - Mastery' and teleport yourself to the spires atop Violet Citadel.\n3. Interact with Archmage Vargoth.",
-								["timeline"] = { ADDED_3_0_3 },
+								description = "This pet is obtained by doing the following:\n1. Complete the achievement 'Higher Learning'\n2. Use the newly acquired toy 'The Schools of Arcane Magic - Mastery' and teleport yourself to the spires atop Violet Citadel.\n3. Interact with Archmage Vargoth.",
+								timeline = { ADDED_3_0_3 },
 							}),
 							i(43824, {	-- The Schools of Arcane Magic - Mastery (TOY!)
-								["description"] = "If you lost the book, Rhonin will provide it to you at no charge as long as you have the achievement. This only works on the character who completed the achievement.",
-								["cr"] = 16128,	-- Rhonin <Leader of the Kirin Tor>
+								description = "If you lost the book, Rhonin will provide it to you at no charge as long as you have the achievement. This only works on the character who completed the achievement.",
+								cr = 16128,	-- Rhonin <Leader of the Kirin Tor>
 							}),
 						},
 					}),
 					achWithReps(1010, { FACTION_ARGENT_CRUSADE, FACTION_KIRIN_TOR, FACTION_EBON_BLADE, FACTION_THE_WYRMREST_ACCORD }, {	-- Northrend Vanguard
-						["maps"] = {
+						maps = {
 							DRAGONBLIGHT,
 							ICECROWN,
 						},
 					}),
 					ach(1782, {	-- Our Daily Bread (A)
-						["requireSkill"] = COOKING,
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						requireSkill = COOKING,
+						races = ALLIANCE_ONLY,
+						groups = {
 							crit(12082, {	-- Cheese for Glowergold
-								["_quests"] = { 13103 },
+								_quests = { 13103 },
 							}),
 							crit(12078, {	-- Convention at the Legerdemain
-								["_quests"] = { 13101 },
+								_quests = { 13101 },
 							}),
 							crit(11960, {	-- Infused Mushroom Meatloaf
-								["_quests"] = { 13100 },
+								_quests = { 13100 },
 							}),
 							crit(12084, {	-- Mustard Dogs!
-								["_quests"] = { 13107 },
+								_quests = { 13107 },
 							}),
 							crit(12080, {	-- Sewer Stew
-								["_quests"] = { 13102 },
+								_quests = { 13102 },
 							}),
 						},
 					}),
 					ach(1783, {	-- Our Daily Bread (H)
-						["requireSkill"] = COOKING,
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						requireSkill = COOKING,
+						races = HORDE_ONLY,
+						groups = {
 							crit(12083, {	-- Cheese for Glowergold
-								["_quests"] = { 13115 },
+								_quests = { 13115 },
 							}),
 							crit(12079, {	-- Convention at the Legerdemain
-								["_quests"] = { 13113 },
+								_quests = { 13113 },
 							}),
 							crit(11961, {	-- Infused Mushroom Meatloaf
-								["_quests"] = { 13112 },
+								_quests = { 13112 },
 							}),
 							crit(12085, {	-- Mustard Dogs!
-								["_quests"] = { 13116 },
+								_quests = { 13116 },
 							}),
 							crit(12081, {	-- Sewer Stew
-								["_quests"] = { 13114 },
+								_quests = { 13114 },
 							}),
 						},
 					}),
 					ach(2019, bubbleDownSelf({	-- Proof of Demise
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
 					},  {
-						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
-						["groups"] = {
+						timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
+						groups = {
 							crit(7309, {	-- Proof of Demise: Anub'arak
-								["_quests"] = { 13254 },	-- Proof of Demise: Anub'arak
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13254 },	-- Proof of Demise: Anub'arak
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7311, {	-- Proof of Demise: Cyanigosa
-								["_quests"] = { 13256 },	-- Proof of Demise: Cyanigosa
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13256 },	-- Proof of Demise: Cyanigosa
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7305, {	-- Proof of Demise: Gal'darah
-								["_quests"] = { 13250 },	-- Proof of Demise: Gal'darah
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13250 },	-- Proof of Demise: Gal'darah
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7310, {	-- Proof of Demise: Herald Volazj
-								["_quests"] = { 13255 },	-- Proof of Demise: Herald Volazj
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13255 },	-- Proof of Demise: Herald Volazj
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7300, {	-- Proof of Demise: Ingvar the Plunderer
-								["_quests"] = { 13245 },	-- Proof of Demise: Ingvar the Plunderer
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13245 },	-- Proof of Demise: Ingvar the Plunderer
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7301, {	-- Proof of Demise: Keristrasza
-								["_quests"] = { 13246 },	-- Proof of Demise: Keristrasza
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13246 },	-- Proof of Demise: Keristrasza
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7303, {	-- Proof of Demise: King Ymiron
-								["_quests"] = { 13248 },	-- Proof of Demise: King Ymiron
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13248 },	-- Proof of Demise: King Ymiron
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7302, {	-- Proof of Demise: Ley-Guardian Eregos
-								["_quests"] = { 13247 },	-- Proof of Demise: Ley-Guardian Eregos
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13247 },	-- Proof of Demise: Ley-Guardian Eregos
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7308, {	-- Proof of Demise: Loken
-								["_quests"] = { 13253 },	-- Proof of Demise: Loken
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13253 },	-- Proof of Demise: Loken
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7306, {	-- Proof of Demise: Mal'Ganis
-								["_quests"] = { 13251 },	-- Proof of Demise: Mal'Ganis
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13251 },	-- Proof of Demise: Mal'Ganis
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7307, {	-- Proof of Demise: Sjonnir The Ironshaper
-								["_quests"] = { 13252 },	-- Proof of Demise: Sjonnir The Ironshaper
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13252 },	-- Proof of Demise: Sjonnir The Ironshaper
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7304, {	-- Proof of Demise: The Prophet Tharon'ja
-								["_quests"] = { 13249 },	-- Proof of Demise: The Prophet Tharon'ja
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13249 },	-- Proof of Demise: The Prophet Tharon'ja
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 						},
 					})),
 					ach(2095, {	-- Silver in the City
-						["sym"] = {{ "achievement_criteria" }},
-						["requireSkill"] = FISHING,
+						sym = {{ "achievement_criteria" }},
+						requireSkill = FISHING,
 					}),
 					ach(2096, {	-- The Coin Master
-						["sym"] = {{"meta_achievement",
+						sym = {{"meta_achievement",
 							2094,	-- A Penny For Your Thoughts
 							2095,	-- Silver in the City
 							1957,	-- There's Gold In That There Fountain
 						}},
-						["requireSkill"] = FISHING,
-						["groups"] = { i(44430) },	-- Titanium Seal of Dalaran (TOY!)
+						requireSkill = FISHING,
+						groups = { i(44430) },	-- Titanium Seal of Dalaran (TOY!)
 					}),
 					achWithRep(1008, FACTION_KIRIN_TOR),	-- The Kirin Tor
 					ach(1957, {	-- There's Gold In That There Fountain
-						["sym"] = {{ "achievement_criteria" }},
-						["requireSkill"] = FISHING,
+						sym = {{ "achievement_criteria" }},
+						requireSkill = FISHING,
 					}),
 					ach(2018, bubbleDownSelf({	-- Timear Foresees
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
 					}, {
-						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
-						["groups"] = {
+						timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
+						groups = {
 							crit(7296, {	-- Timear Foresees Centrifuge Constructs in your Future!
-								["_quests"] = { 13240 },	-- Timear Foresees Centrifuge Constructs in your Future!
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13240 },	-- Timear Foresees Centrifuge Constructs in your Future!
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7298, {	-- Timear Foresees Infinite Agents in your Future!
-								["_quests"] = { 13243 },	-- Timear Foresees Infinite Agents in your Future!
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13243 },	-- Timear Foresees Infinite Agents in your Future!
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7299, {	-- Timear Foresees Titanium Vanguards in your Future!
-								["_quests"] = { 13244 },	-- Timear Foresees Titanium Vanguards in your Future!
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13244 },	-- Timear Foresees Titanium Vanguards in your Future!
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7297, {	-- Timear Foresees Ymirjar Berserkers in your Future!
-								["_quests"] = { 13241 },	-- Timear Foresees Ymirjar Berserkers in your Future!
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+								_quests = { 13241 },	-- Timear Foresees Ymirjar Berserkers in your Future!
+								timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 						},
 					})),
@@ -1389,102 +1389,102 @@ root(ROOTS.Zones, {
 				-- #if AFTER MOP
 				filter(BATTLE_PETS, {
 					pet(1604, {	-- Nethaera's Light (PET!)
-						["description"] = "To obtain this pet do /cheer at it.\nNote: May go to the closest player who does not already have the pet.",
-						["coords"] = {
+						description = "To obtain this pet do /cheer at it.\nNote: May go to the closest player who does not already have the pet.",
+						coords = {
 							{ 41.2, 41.6, NORTHREND_DALARAN },
 							{ 53.3, 35.3, NORTHREND_DALARAN },
 						},
-						["crs"] = { 93432 },	-- Nethaera's Light
-						["timeline"] = { ADDED_6_2_0 },
+						crs = { 93432 },	-- Nethaera's Light
+						timeline = { ADDED_6_2_0 },
 					}),
 				}),
 				-- #endif
 				n(FACTIONS, {
 					faction(FACTION_KIRIN_TOR, {	-- Kirin Tor
-						["provider"] = { "i", 43157 },	-- Tabard of the Kirin Tor
-						["icon"] = 135933,
+						provider = { "i", 43157 },	-- Tabard of the Kirin Tor
+						icon = 135933,
 					}),
 					faction(FACTION_THE_SILVER_COVENANT, {	-- The Silver Covenant
-						["icon"] = 132483,
-						["maps"] = { ICECROWN },
-						["races"] = ALLIANCE_ONLY,
+						icon = 132483,
+						maps = { ICECROWN },
+						races = ALLIANCE_ONLY,
 					}),
 					faction(FACTION_THE_SUNREAVERS, {	-- The Sunreavers
-						["icon"] = 132850,
-						["maps"] = { ICECROWN },
-						["races"] = HORDE_ONLY,
+						icon = 132850,
+						maps = { ICECROWN },
+						races = HORDE_ONLY,
 					}),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(310, {	-- Dalaran
-						["cr"] = 28674,	-- Aludane Whitecloud <Flight Master>
-						["coord"] = { 72.1, 45.7, NORTHREND_DALARAN },
+						cr = 28674,	-- Aludane Whitecloud <Flight Master>
+						coord = { 72.1, 45.7, NORTHREND_DALARAN },
 					}),
 				}),
 				-- #if NOT ANYCLASSIC
 				-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 				o(208316, {	-- Hero's Call Board
-					["coords"] = {
+					coords = {
 						{ 25.9, 43.1, NORTHREND_DALARAN },
 						{ 47.8, 41.2, NORTHREND_DALARAN },
 						{ 37.8, 63.8, NORTHREND_DALARAN },
 					},
-					["timeline"] = { ADDED_4_0_1 },
-					["sym"] = HEROS_CALL_BOARD_SYMLINK,
-					["races"] = ALLIANCE_ONLY,
-					["skipFill"] = true,
+					timeline = { ADDED_4_0_1 },
+					sym = HEROS_CALL_BOARD_SYMLINK,
+					races = ALLIANCE_ONLY,
+					skipFill = true,
 				}),
 				-- #endif
 				n(32838, {	-- Minigob Manabonk
-					["timeline"] = { ADDED_3_1_0 },
-					["groups"] = {
+					timeline = { ADDED_3_1_0 },
+					groups = {
 						i(44817),	-- The Mischief Maker
 					},
 				}),
 				n(PROFESSIONS, {
 					prof(ALCHEMY, {
 						n(28703, {	-- Linzy Blackbolt <Alchemy Trainer>
-							["coord"] = { 42.4, 32.0, NORTHREND_DALARAN },
-							["groups"] = WRATH_ALCHEMY,
+							coord = { 42.4, 32.0, NORTHREND_DALARAN },
+							groups = WRATH_ALCHEMY,
 						}),
 					}),
 					prof(BLACKSMITHING, {
 						n(28694, {	-- Alard Schmied <Blacksmithing Trainer>
-							["coord"] = { 45.8, 27.4, NORTHREND_DALARAN },
-							["groups"] = WRATH_BLACKSMITHING,
+							coord = { 45.8, 27.4, NORTHREND_DALARAN },
+							groups = WRATH_BLACKSMITHING,
 						}),
 						n(29505, {	-- Imindril Spearsong <Blacksmithing Trainer>
-							["coord"] = { 45.6, 28.6, NORTHREND_DALARAN },
-							["groups"] = WRATH_WEAPONSMITHING,
+							coord = { 45.6, 28.6, NORTHREND_DALARAN },
+							groups = WRATH_WEAPONSMITHING,
 						}),
 						n(29506, {	-- Orland Schaeffer <Blacksmithing Trainer>
-							["coord"] = { 45.0, 28.0, NORTHREND_DALARAN },
-							["groups"] = WRATH_ARMORSMITHING,
+							coord = { 45.0, 28.0, NORTHREND_DALARAN },
+							groups = WRATH_ARMORSMITHING,
 						}),
 					}),
 					prof(COOKING, {
 						{
-							["aqd"] = n(28705, {	-- Katherine Lee <Cooking Trainer>
-								["coord"] = { 41.6, 64.6, NORTHREND_DALARAN },
+							aqd = n(28705, {	-- Katherine Lee <Cooking Trainer>
+								coord = { 41.6, 64.6, NORTHREND_DALARAN },
 							}),
-							["hqd"] = n(29631, {	-- Awilo Lon'gomba <Cooking Trainer>
-								["coord"] = { 52.2, 36.4, NORTHREND_DALARAN },
+							hqd = n(29631, {	-- Awilo Lon'gomba <Cooking Trainer>
+								coord = { 52.2, 36.4, NORTHREND_DALARAN },
 							}),
-							["groups"] = WRATH_COOKING,
+							groups = WRATH_COOKING,
 						},
 						{
-							["aqd"] = n(31032, {	-- Derek Odds <Cooking Supplies>
-								["coord"] = { 40.7, 65.9, NORTHREND_DALARAN },
+							aqd = n(31032, {	-- Derek Odds <Cooking Supplies>
+								coord = { 40.7, 65.9, NORTHREND_DALARAN },
 							}),
-							["hqd"] = n(31031, {	-- Misensi <Cooking Supplies>
-								["coord"] = { 70.0, 38.6, NORTHREND_DALARAN },
+							hqd = n(31031, {	-- Misensi <Cooking Supplies>
+								coord = { 70.0, 38.6, NORTHREND_DALARAN },
 							}),
-							["groups"] = {
+							groups = {
 								epicurean(100, i(46349, {	-- Chef's Hat
-									["timeline"] = { DELETED_7_0_3 },
+									timeline = { DELETED_7_0_3 },
 								})),
 								epicurean(100, i(134020, {	-- Chef's Hat (TOY!)
-									["timeline"] = { ADDED_7_0_3 },
+									timeline = { ADDED_7_0_3 },
 								})),
 								epicurean(1, i(43007)),	-- Northern Spices
 								epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin (RECIPE!)
@@ -1494,7 +1494,7 @@ root(ROOTS.Zones, {
 								epicurean(3, i(43036)),	-- Recipe: Dragonfin Filet (RECIPE!)
 								epicurean(3, i(43024)),	-- Recipe: Firecracker Salmon (RECIPE!)
 								epicurean(5, i(43017, {	-- Recipe: Fish Feast (RECIPE!)
-									["timeline"] = { ADDED_3_0_8 },
+									timeline = { ADDED_3_0_8 },
 								})),
 								epicurean(3, i(43505)),	-- Recipe: Gigantic Feast (RECIPE!)
 								epicurean(3, i(43030)),	-- Recipe: Hearty Rhino (RECIPE!)
@@ -1513,78 +1513,78 @@ root(ROOTS.Zones, {
 								epicurean(3, i(43037)),	-- Recipe: Tracker Snacks (RECIPE!)
 								epicurean(3, i(43021)),	-- Recipe: Very Burnt Worg (RECIPE!)
 								epicurean(3, i(44954, {	-- Recipe: Worg Tartare (RECIPE!)
-									["timeline"] = { ADDED_3_0_8 },
+									timeline = { ADDED_3_0_8 },
 								})),
 							},
 						},
 						i(43143, {	-- Wild Mustard
-							["provider"] = { "o", 192827 },	-- Wild Mustard
+							provider = { "o", 192827 },	-- Wild Mustard
 						}),
 					}),
 					prof(ENCHANTING, {
 						n(28693, {	-- Enchanter Nalthanis <Enchanting Trainer>
-							["coord"] = { 39.4, 41.2, NORTHREND_DALARAN },
-							["groups"] = WRATH_ENCHANTING,
+							coord = { 39.4, 41.2, NORTHREND_DALARAN },
+							groups = WRATH_ENCHANTING,
 						}),
 					}),
 					prof(ENGINEERING, {
 						n(28697, {	-- Timofey Oshenko <Engineering Trainer>
-							["coord"] = { 38.8, 25.8, NORTHREND_DALARAN },
-							["groups"] = WRATH_ENGINEERING,
+							coord = { 38.8, 25.8, NORTHREND_DALARAN },
+							groups = WRATH_ENGINEERING,
 						}),
 					}),
 					prof(FIRST_AID, {
 						n(28706, {	-- Olisarra the Kind <Bandage Trainer>
-							["coord"] = { 36.8, 37.0, NORTHREND_DALARAN },
-							["groups"] = WRATH_FIRST_AID,
+							coord = { 36.8, 37.0, NORTHREND_DALARAN },
+							groups = WRATH_FIRST_AID,
 						}),
 					}),
 					prof(FISHING, {
 						n(28742, {	-- Marcia Chase <Fishing Trainer & Supplies>
-							["coord"] = { 52.6, 65.6, NORTHREND_DALARAN },
-							["groups"] = WRATH_FISHING,
+							coord = { 52.6, 65.6, NORTHREND_DALARAN },
+							groups = WRATH_FISHING,
 						}),
 						i(45328, {	-- Bloated Slippery Eel
 							i(45323),	-- Severed Arm
 						}),
 						i(43659, {	-- Bloodied Prison Shank
-							["timeline"] = { ADDED_3_0_2 },
-							["description"] = "Can be fished up from the waters outside Violet Hold on WotLK Dalaran.",
+							timeline = { ADDED_3_0_2 },
+							description = "Can be fished up from the waters outside Violet Hold on WotLK Dalaran.",
 						}),
 						o(193402, {	-- Rusted Prisoner's Footlocker
-							["coord"] = { 64.5, 73.8, NORTHREND_DALARAN },
-							["cost"] = {
+							coord = { 64.5, 73.8, NORTHREND_DALARAN },
+							cost = {
 								-- #if AFTER 5.2.0
 								{ "i", 93738, 1 },	-- Rusty Prison Key
 								-- #else
 								{ "i", 43650, 1 },	-- Rusty Prison Key
 								-- #endif
 							},
-							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3, ADDED_5_2_0 },
-							["groups"] = {
+							timeline = { ADDED_3_0_2, REMOVED_4_0_3, ADDED_5_2_0 },
+							groups = {
 								i(37891),	-- Cast Iron Shackles
 								i(37890),	-- Chain Gang Legguards
 								i(37889),	-- Prison Manifest
 							},
 						}),
 						i(93738, {	-- Rusty Prison Key
-							["timeline"] = { ADDED_5_2_0 },
+							timeline = { ADDED_5_2_0 },
 						}),
 						i(43650, {	-- Rusty Prison Key
-							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
+							timeline = { ADDED_3_0_2, REMOVED_4_0_3 },
 						}),
 					}),
 					prof(HERBALISM, {
 						n(28704, {	-- Dorothy Egan <Herbalism Trainer>
-							["coord"] = { 43.8, 34.8, NORTHREND_DALARAN },
-							["groups"] = WRATH_HERBALISM,
+							coord = { 43.8, 34.8, NORTHREND_DALARAN },
+							groups = WRATH_HERBALISM,
 						}),
 					}),
 					prof(INSCRIPTION, {
 						n(28702, {	-- Professor Pallin <Inscription Trainer>
-							["coord"] = { 42.6, 37.8, NORTHREND_DALARAN },
-							["groups"] = {
-								n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+							coord = { 42.6, 37.8, NORTHREND_DALARAN },
+							groups = {
+								n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 									r(1263575),	-- Dalaran Post
 									r(1263570),	-- Dalaran Scholar's Bookcase
 									r(1263564),	-- Dalaran Street Sign
@@ -1596,55 +1596,55 @@ root(ROOTS.Zones, {
 					}),
 					prof(JEWELCRAFTING, {
 						n(28721, {	-- Tiffany Cartier <Jewelcrafting Supplies>
-							["coord"] = { 40.4, 34.6, NORTHREND_DALARAN },
-							["groups"] = TIFFANY_JEWELCRAFTING_RECIPES,
+							coord = { 40.4, 34.6, NORTHREND_DALARAN },
+							groups = TIFFANY_JEWELCRAFTING_RECIPES,
 						}),
 						n(28701, {	-- Timothy Jones <Jewelcrafting Trainer>
-							["description"] = "Daily Jewelcrafting quests:\n\nShipment: Blood Jade Amulet - Vrykul can be found on Ymirheim, in the middle of Icecrown.\n\nShipment: Bright Armor Relic - Revenants/Elementals can be found in Dragonblight, following the mountainside from the Crystal Vice towards Wrathgate.\n\nShipment: Glowing Ivory Figurine - Mammoth can be found in southernmost Storm Peaks, by the road towards K3.\n\nShipment: Intricate Bone Figurine - Proto Dragons can be found in Storm Peaks, in the valley above Brunnhildar Village.\n\nShipment:Shifting Sun Curio - Scourge/Undead can be found as neutral ghosts in Crystalsong Forest, by the Violet Stand beneath Dalaran.\n\nShipment: Wicked Armour Relic - Iron Dwarfs can be found in the Storm Peaks, in a cave between Frosthold and Valkyrion.",
-							["coord"] = { 40.3, 35.1, NORTHREND_DALARAN },
-							["groups"] = appendGroups(WRATH_JEWELCRAFTING,TIMOTHY_JEWELCRAFTING_RECIPES),
+							description = "Daily Jewelcrafting quests:\n\nShipment: Blood Jade Amulet - Vrykul can be found on Ymirheim, in the middle of Icecrown.\n\nShipment: Bright Armor Relic - Revenants/Elementals can be found in Dragonblight, following the mountainside from the Crystal Vice towards Wrathgate.\n\nShipment: Glowing Ivory Figurine - Mammoth can be found in southernmost Storm Peaks, by the road towards K3.\n\nShipment: Intricate Bone Figurine - Proto Dragons can be found in Storm Peaks, in the valley above Brunnhildar Village.\n\nShipment:Shifting Sun Curio - Scourge/Undead can be found as neutral ghosts in Crystalsong Forest, by the Violet Stand beneath Dalaran.\n\nShipment: Wicked Armour Relic - Iron Dwarfs can be found in the Storm Peaks, in a cave between Frosthold and Valkyrion.",
+							coord = { 40.3, 35.1, NORTHREND_DALARAN },
+							groups = appendGroups(WRATH_JEWELCRAFTING,TIMOTHY_JEWELCRAFTING_RECIPES),
 						}),
 					}),
 					prof(LEATHERWORKING, {
 						n(28700, {	-- Diane Cannings <Leatherworking Trainer>
-							["coord"] = { 35.0, 28.6, NORTHREND_DALARAN },
-							["groups"] = WRATH_LEATHERWORKING,
+							coord = { 35.0, 28.6, NORTHREND_DALARAN },
+							groups = WRATH_LEATHERWORKING,
 						}),
 					}),
 					prof(MINING, {
 						n(28698, {	-- Jedidiah Handers <Mining Trainer>
-							["coord"] = { 41.2, 27.0, NORTHREND_DALARAN },
-							["groups"] = WRATH_MINING,
+							coord = { 41.2, 27.0, NORTHREND_DALARAN },
+							groups = WRATH_MINING,
 						}),
 					}),
 					prof(SKINNING, {
 						n(28696, {	-- Derik Marks <Grand Master Skinning Trainer>
-							["coord"] = { 35.2, 28.4, NORTHREND_DALARAN },
-							["groups"] = WRATH_SKINNING,
+							coord = { 35.2, 28.4, NORTHREND_DALARAN },
+							groups = WRATH_SKINNING,
 						}),
 					}),
 					prof(TAILORING, {
 						n(28699, {	-- Charles Worth <Tailoring Trainer>
 							-- #if AFTER 6.2.2
-							["description"] = "You can now learn these recipes even if the achievements have been completed on a different character. If your tailor isn't your main, rejoice!  Just speak to Charles Worth and tell him you're ready to learn the patterns.",
+							description = "You can now learn these recipes even if the achievements have been completed on a different character. If your tailor isn't your main, rejoice!  Just speak to Charles Worth and tell him you're ready to learn the patterns.",
 							-- #endif
-							["coord"] = { 36.3, 33.4, NORTHREND_DALARAN },
-							["requireSkill"] = TAILORING,
-							["groups"] = appendGroups(WRATH_TAILORING, {
+							coord = { 36.3, 33.4, NORTHREND_DALARAN },
+							requireSkill = TAILORING,
+							groups = appendGroups(WRATH_TAILORING, {
 								r(56017, {	-- Deathchill Cloak
-									["sourceAchievements"] = {
+									sourceAchievements = {
 										41,	-- Loremaster of Northrend (A)
 										-- #if BEFORE 5.0.4
 										1360,	-- Loremaster of Northrend (H)
 										-- #endif
 									},
-									["description"] = "In order to learn this recipe, you must have the Loremaster of Northrend achievement completed.",
-									["requireSkill"] = TAILORING,
+									description = "In order to learn this recipe, you must have the Loremaster of Northrend achievement completed.",
+									requireSkill = TAILORING,
 								}),
 								r(56016, {	-- Wispcloak
-									["sourceAchievement"] = 1288,	-- Northrend Dungeonmaster
-									["description"] = "In order to learn this recipe, you must have the Northrend Dungeonmaster achievement completed.",
-									["requireSkill"] = TAILORING,
+									sourceAchievement = 1288,	-- Northrend Dungeonmaster
+									description = "In order to learn this recipe, you must have the Northrend Dungeonmaster achievement completed.",
+									requireSkill = TAILORING,
 								}),
 							}),
 						}),
@@ -1652,57 +1652,57 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					applyclassicphase(WRATH_PHASE_THREE, q(14409, {	-- A Cautious Return
-						["qg"] = 36506,	-- Daros Moonlance <The Highborne>
-						["qi"] = 49335,	-- Daros' Journal
-						["coord"] = { 36.4, 61.0, NORTHREND_DALARAN },
-						["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },	-- This was a pre-introduction quest for Night Elf Mages in Cataclysm.
-						["maps"] = { DARNASSUS },
-						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 71,
+						qg = 36506,	-- Daros Moonlance <The Highborne>
+						qi = 49335,	-- Daros' Journal
+						coord = { 36.4, 61.0, NORTHREND_DALARAN },
+						timeline = { ADDED_3_3_0, REMOVED_4_0_1 },	-- This was a pre-introduction quest for Night Elf Mages in Cataclysm.
+						maps = { DARNASSUS },
+						races = ALLIANCE_ONLY,
+						lvl = 71,
 					})),
 					q(29608, {	-- Allies in Dalaran
-						["qgs"] = {
+						qgs = {
 							23736,	-- Pricilla Winterwind
 							26879,	-- Tomas Riverwell
 						},
-						["coords"] = {
+						coords = {
 							{ 59.7, 63.2, HOWLING_FJORD },	-- Pricilla Winterwind
 							{ 58.9, 68.2, BOREAN_TUNDRA },	-- Tomas Riverwell
 						},
-						["timeline"] = { ADDED_4_3_0 },
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,	-- Gold said this gets invalidated by something, but idk what.
+						timeline = { ADDED_4_3_0 },
+						races = ALLIANCE_ONLY,
+						isBreadcrumb = true,	-- Gold said this gets invalidated by something, but idk what.
 					}),
 					applyclassicphase(WRATH_PHASE_THREE, q(13986, {	-- An Injured Colleague
-						["qg"] = 35471,	-- Sorn Proudmane
-						["qi"] = 46775,	-- Battered Tribal Shield
-						["coord"] = { 60.2, 26.6, NORTHREND_DALARAN },
-						["timeline"] = { REMOVED_4_0_3 },
-						["maps"] = { THUNDER_BLUFF },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 71,
+						qg = 35471,	-- Sorn Proudmane
+						qi = 46775,	-- Battered Tribal Shield
+						coord = { 60.2, 26.6, NORTHREND_DALARAN },
+						timeline = { REMOVED_4_0_3 },
+						maps = { THUNDER_BLUFF },
+						races = HORDE_ONLY,
+						lvl = 71,
 					})),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24580, {	-- Anub'Rekhan Must Die!
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-						["maps"] = { NAXXRAMAS },
-						["isWeekly"] = true,
-						["groups"] = {
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.3, 66.7, NORTHREND_DALARAN },
+						maps = { NAXXRAMAS },
+						isWeekly = true,
+						groups = {
 							objective(1, {	-- 0/1 Anub'Rekhan slain
-								["provider"] = { "n", 15956 },	-- Anub'Rekhan
+								provider = { "n", 15956 },	-- Anub'Rekhan
 							}),
 						},
 					})),
 					q(13833, {	-- Blood Is Thicker
-						["qg"] = 28742,	-- Marcia Chase
-						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["maps"] = { BOREAN_TUNDRA },
-						["requireSkill"] = FISHING,
-						["isDaily"] = true,
-						["groups"] = {
+						qg = 28742,	-- Marcia Chase
+						coord = { 53.0, 64.9, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						maps = { BOREAN_TUNDRA },
+						requireSkill = FISHING,
+						isDaily = true,
+						groups = {
 							objective(1, {	-- 0/5 Bloodtooth Frenzy
-								["providers"] = {
+								providers = {
 									{ "i", 45905 },	-- Bloodtooth Frenzy
 									{ "o", 194479 },	-- Pool of Blood
 								},
@@ -1711,21 +1711,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					{	-- Cheese for Glowergold
-						["allianceQuestData"] = q(13103, {	-- Cheese for Glowergold [A]
-							["qg"] = 28705,	-- Katherine Lee
-							["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
+						allianceQuestData = q(13103, {	-- Cheese for Glowergold [A]
+							qg = 28705,	-- Katherine Lee
+							coord = { 40.6, 64.9, NORTHREND_DALARAN },
 						}),
-						["hordeQuestData"] = q(13115, {	-- Cheese for Glowergold [H]
-							["qg"] = 29631,	-- Awilo Longomba
-							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
+						hordeQuestData = q(13115, {	-- Cheese for Glowergold [H]
+							qg = 29631,	-- Awilo Longomba
+							coord = { 70.0, 39.0, NORTHREND_DALARAN },
 						}),
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["requireSkill"] = COOKING,
-						["isDaily"] = true,
-						["groups"] = {
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						requireSkill = COOKING,
+						isDaily = true,
+						groups = {
 							objective(1, {	-- 0/1 Wine and Cheese Platter
-								["provider"] = { "i", 43136 },	-- Wine and Cheese Platter
-								["cost"] = {
+								provider = { "i", 43136 },	-- Wine and Cheese Platter
+								cost = {
 									{ "i", 43139, 1 },	-- Empty Cheese Serving Platter
 									{ "i", 43137, 1 },	-- Aged Dalaran Limburger
 									{ "i", 43138, 6 },	-- Half Full Dalaran Wine Glass
@@ -1733,24 +1733,24 @@ root(ROOTS.Zones, {
 							}),
 							-- #if ANYCLASSIC
 							i(43137, {	-- Aged Dalaran Limburger
-								["provider"] = { "o", 192825 },	-- Aged Dalaran Limburger
+								provider = { "o", 192825 },	-- Aged Dalaran Limburger
 							}),
 							i(43138, {	-- Half Full Dalaran Wine Glass
-								["provider"] = { "o", 192824 },	-- Half Full Glass of Wine
+								provider = { "o", 192824 },	-- Half Full Glass of Wine
 							}),
 							-- #endif
 							i(258145, {	-- Eversong Party Platter (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
+								timeline = { ADDED_11_2_7 },
 							}),
 							i(44113),	-- Small Spice Bag
 							currency(81),	-- Epicurean's Award
 						},
 					},
 					q(13272, {	-- Cloth Scavenging (Neutral)
-						["qg"] = 28699,	-- Charles Worth
-						["coord"] = { 36.1, 33.5, NORTHREND_DALARAN },
-						["requireSkill"] = TAILORING,
-						["lockCriteria"] = { 1,
+						qg = 28699,	-- Charles Worth
+						coord = { 36.1, 33.5, NORTHREND_DALARAN },
+						requireSkill = TAILORING,
+						lockCriteria = { 1,
 							-- "questID", 13272,	-- Cloth Scavenging (N, Dalaran)
 							"questID", 13268,	-- Cloth Scavenging (A, Howling Fjord)
 							"questID", 13269,	-- Cloth Scavenging (H, Howling Fjord)
@@ -1760,28 +1760,28 @@ root(ROOTS.Zones, {
 							"spellID", 343634,	-- Shadowlands Cloth Scavenging
 							"spellID", 392396,	-- Dragon Isles Cloth Scavenging
 						},
-						["groups"] = {
+						groups = {
 							spell(59390),	-- Cloth Scavenging	-- NOTE: there doesn't appear to be a recipe for this
 						},
 					}),
 					{	-- Convention at the Legerdemain
-						["allianceQuestData"] = q(13101, {	-- Convention at the Legerdemain [A]
-							["qg"] = 28705,	-- Katherine Lee
-							["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
+						allianceQuestData = q(13101, {	-- Convention at the Legerdemain [A]
+							qg = 28705,	-- Katherine Lee
+							coord = { 40.6, 64.9, NORTHREND_DALARAN },
 						}),
-						["hordeQuestData"] = q(13113, {	-- Convention at the Legerdemain [H]
-							["qg"] = 29631,	-- Awilo Longomba
-							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
+						hordeQuestData = q(13113, {	-- Convention at the Legerdemain [H]
+							qg = 29631,	-- Awilo Longomba
+							coord = { 70.0, 39.0, NORTHREND_DALARAN },
 						}),
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["requireSkill"] = COOKING,
-						["isDaily"] = true,
-						["groups"] = {
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						requireSkill = COOKING,
+						isDaily = true,
+						groups = {
 							objective(1, {	-- 0/4 Northern Stew
-								["provider"] = { "i", 34747 },	-- Northern Stew
+								provider = { "i", 34747 },	-- Northern Stew
 							}),
 							objective(2, {	-- 0/1 Jug of Wine
-								["providers"] = {
+								providers = {
 									{ "i", 43128 },	-- Jug of Wine
 									{ "o", 192823 },	-- Full Jug of Wine
 								},
@@ -1791,95 +1791,95 @@ root(ROOTS.Zones, {
 						},
 					},
 					q(13834, {	-- Dangerously Delicious
-						["qg"] = 28742,	-- Marcia Chase
-						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["maps"] = { WINTERGRASP },
-						["requireSkill"] = FISHING,
-						["isDaily"] = true,
-						["groups"] = {
+						qg = 28742,	-- Marcia Chase
+						coord = { 53.0, 64.9, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						maps = { WINTERGRASP },
+						requireSkill = FISHING,
+						isDaily = true,
+						groups = {
 							objective(1, {	-- 0/10 Terrorfish
-								["provider"] = { "i", 45904 },	-- Terrorfish
+								provider = { "i", 45904 },	-- Terrorfish
 							}),
 							i(46007),	-- Bag of Fishing Treasures
 						},
 					}),
 					q(13836, {	-- Disarmed!
-						["qg"] = 28742,	-- Marcia Chase
-						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["requireSkill"] = FISHING,
-						["isDaily"] = true,
-						["groups"] = {
+						qg = 28742,	-- Marcia Chase
+						coord = { 53.0, 64.9, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						requireSkill = FISHING,
+						isDaily = true,
+						groups = {
 							objective(1, {	-- 0/1 Severed Arm
-								["provider"] = { "i", 45323 },	-- Severed Arm
+								provider = { "i", 45323 },	-- Severed Arm
 							}),
 							i(46007),	-- Bag of Fishing Treasures
 						},
 					}),
 					q(13041, {	-- Finish the Shipment
-						["qg"] = 28701,	-- Timothy Jones
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["requireSkill"] = JEWELCRAFTING,
-						["lvl"] = lvlsquish(65, 65, 10),
-						["groups"] = {
+						qg = 28701,	-- Timothy Jones
+						coord = { 40.7, 35.4, NORTHREND_DALARAN },
+						requireSkill = JEWELCRAFTING,
+						lvl = lvlsquish(65, 65, 10),
+						groups = {
 							objective(1, {	-- 0/1 Chalcedony
-								["provider"] = { "i", 36923 },	-- Chalcedony
+								provider = { "i", 36923 },	-- Chalcedony
 							}),
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24585, {	-- Flame Leviathan Must Die!
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-						["maps"] = { ULDUAR },
-						["isWeekly"] = true,
-						["groups"] = {
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.3, 66.7, NORTHREND_DALARAN },
+						maps = { ULDUAR },
+						isWeekly = true,
+						groups = {
 							objective(1, {	-- 0/1 Flame Leviathan slain
-								["provider"] = { "n", 33113 },	-- Flame Leviathan
+								provider = { "n", 33113 },	-- Flame Leviathan
 							}),
 						},
 					})),
 					q(29609, {	-- Friends in Dalaran
-						["qgs"] = {
+						qgs = {
 							27344,	-- Adeline Chambers
 							25288,	-- Turida Coldwind
 						},
-						["coords"] = {
+						coords = {
 							{ 79.0, 29.7, HOWLING_FJORD },	-- Adeline Chambers
 							{ 40.3, 51.3, BOREAN_TUNDRA },	-- Turida Coldwind
 						},
-						["timeline"] = { ADDED_4_3_0 },
-						["races"] = HORDE_ONLY,
+						timeline = { ADDED_4_3_0 },
+						races = HORDE_ONLY,
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24587, {	-- Ignis the Furnace Master Must Die!
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-						["maps"] = { ULDUAR },
-						["isWeekly"] = true,
-						["groups"] = {
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.3, 66.7, NORTHREND_DALARAN },
+						maps = { ULDUAR },
+						isWeekly = true,
+						groups = {
 							objective(1, {	-- 0/1 Ignis the Furnace Master slain
-								["provider"] = { "n", 33118 },	-- Ignis the Furnace Master
+								provider = { "n", 33118 },	-- Ignis the Furnace Master
 							}),
 						},
 					})),
 					{	-- Infused Mushroom Meatloaf
-						["allianceQuestData"] = q(13100, {	-- Infused Mushroom Meatloaf [A]
-							["qg"] = 28705,	-- Katherine Lee
-							["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
+						allianceQuestData = q(13100, {	-- Infused Mushroom Meatloaf [A]
+							qg = 28705,	-- Katherine Lee
+							coord = { 40.6, 64.9, NORTHREND_DALARAN },
 						}),
-						["hordeQuestData"] = q(13112, {	-- Infused Mushroom Meatloaf [H]
-							["qg"] = 29631,	-- Awilo Longomba
-							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
+						hordeQuestData = q(13112, {	-- Infused Mushroom Meatloaf [H]
+							qg = 29631,	-- Awilo Longomba
+							coord = { 70.0, 39.0, NORTHREND_DALARAN },
 						}),
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["maps"] = { NORTHREND_THE_UNDERBELLY },
-						["requireSkill"] = COOKING,
-						["isDaily"] = true,
-						["groups"] = {
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						maps = { NORTHREND_THE_UNDERBELLY },
+						requireSkill = COOKING,
+						isDaily = true,
+						groups = {
 							objective(1, {	-- 0/1 Infused Mushroom Meatloaf
-								["provider"] = { "i", 43099 },	-- Infused Mushroom Meatloaf
-								["cost"] = {
+								provider = { "i", 43099 },	-- Infused Mushroom Meatloaf
+								cost = {
 									{ "i", 43101, 1 },	-- Meatloaf Pan
 									{ "i", 43100, 4 },	-- Infused Mushroom
 									{ "i", 43013, 2 },	-- Chilled Meat
@@ -1890,32 +1890,32 @@ root(ROOTS.Zones, {
 						},
 					},
 					applyclassicphase(WRATH_PHASE_FOUR, q(24582, {	-- Instructor Razuvious Must Die!
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-						["maps"] = { NAXXRAMAS },
-						["isWeekly"] = true,
-						["groups"] = {
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.3, 66.7, NORTHREND_DALARAN },
+						maps = { NAXXRAMAS },
+						isWeekly = true,
+						groups = {
 							objective(1, {	-- 0/1 Instructor Razuvious slain
-								["provider"] = { "n", 16061 },	-- Instructor Razuvious
+								provider = { "n", 16061 },	-- Instructor Razuvious
 							}),
 						},
 					})),
 					q(13832, {	-- Jewel Of The Sewers
-						["qg"] = 28742,	-- Marcia Chase
-						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["maps"] = { NORTHREND_THE_UNDERBELLY },
-						["requireSkill"] = FISHING,
-						["isDaily"] = true,
-						["groups"] = {
+						qg = 28742,	-- Marcia Chase
+						coord = { 53.0, 64.9, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						maps = { NORTHREND_THE_UNDERBELLY },
+						requireSkill = FISHING,
+						isDaily = true,
+						groups = {
 							objective(1, {	-- 0/1 Corroded Jewelry
-								["provider"] = { "i", 45903 },	-- Corroded Jewelry
+								provider = { "i", 45903 },	-- Corroded Jewelry
 							}),
 							i(46007),	-- Bag of Fishing Treasures
 						},
 					}),
 					q(12790, {	-- Learning to Leave and Return: the Magical Way
-						["sourceQuests"] = {
+						sourceQuests = {
 							12791,	-- The Magical Kingdom of Dalaran (Horde only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
 							12794,	-- The Magical Kingdom of Dalaran (Alliance only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
 							12796,	-- The Magical Kingdom of Dalaran (Zul'Drak)
@@ -1923,92 +1923,92 @@ root(ROOTS.Zones, {
 							39210,	-- The Magical Kingdom of Dalaran (Adventure Guide)
 							-- #endif
 						},
-						["qg"] = 29156,	-- Archmage Celindra
-						["coord"] = { 56.3, 46.7, NORTHREND_DALARAN },
-						["maps"] = { CRYSTALSONG_FOREST },
+						qg = 29156,	-- Archmage Celindra
+						coord = { 56.3, 46.7, NORTHREND_DALARAN },
+						maps = { CRYSTALSONG_FOREST },
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24589, {	-- Lord Jaraxxus Must Die!
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-						["maps"] = { TRIAL_OF_THE_CRUSADER },
-						["isWeekly"] = true,
-						["groups"] = {
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.3, 66.7, NORTHREND_DALARAN },
+						maps = { TRIAL_OF_THE_CRUSADER },
+						isWeekly = true,
+						groups = {
 							objective(1, {	-- 0/1 Lord Jaraxxus slain
-								["provider"] = { "n", 34780 },	-- Lord Jaraxxus
+								provider = { "n", 34780 },	-- Lord Jaraxxus
 							}),
 						},
 					})),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24590, {	-- Lord Marrowgar Must Die!
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-						["maps"] = { ICECROWN_CITADEL },
-						["isWeekly"] = true,
-						["groups"] = {
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.3, 66.7, NORTHREND_DALARAN },
+						maps = { ICECROWN_CITADEL },
+						isWeekly = true,
+						groups = {
 							objective(1, {	-- 0/1 Lord Marrowgar slain
-								["provider"] = { "n", 36612 },	-- Lord Marrowgar
+								provider = { "n", 36612 },	-- Lord Marrowgar
 							}),
 						},
 					})),
 					q(29073, {	-- Make Haste to Orgrimmar!
 						-- #if BEFORE 6.2.0
-						["description"] = "If you have your hearthstone set to Dalaran, this quest will be available to you.",
+						description = "If you have your hearthstone set to Dalaran, this quest will be available to you.",
 						-- #endif
-						["providers"] = {
+						providers = {
 							{ "o", 208317 },	-- Warchief's Command Board
 							{ "i",  68809 },	-- Veteran's Hearthstone
 						},
-						["coords"] = {
+						coords = {
 							{ 48.7, 39.6, NORTHREND_DALARAN },
 							{ 59.2, 27.4, NORTHREND_DALARAN },
 						},
-						["timeline"] = { ADDED_4_0_6, REMOVED_6_2_0 },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 80,
+						timeline = { ADDED_4_0_6, REMOVED_6_2_0 },
+						races = HORDE_ONLY,
+						lvl = 80,
 					}),
 					q(29071, {	-- Make Haste to Stormwind!
 						-- #if BEFORE 6.2.0
-						["description"] = "If you have your hearthstone set to Dalaran, this quest will be available to you.",
+						description = "If you have your hearthstone set to Dalaran, this quest will be available to you.",
 						-- #endif
-						["providers"] = {
+						providers = {
 							{ "o", 208316 },	-- Hero's Call Board
 							{ "i",  68808 },	-- Hero's Hearthstone
 						},
-						["coords"] = {
+						coords = {
 							{ 25.9, 43.1, NORTHREND_DALARAN },
 							{ 47.8, 41.2, NORTHREND_DALARAN },
 							{ 37.8, 63.8, NORTHREND_DALARAN },
 						},
-						["timeline"] = { ADDED_4_0_6, REMOVED_6_2_0 },
-						["races"] = ALLIANCE_ONLY,
-						["lvl"] = 80,
+						timeline = { ADDED_4_0_6, REMOVED_6_2_0 },
+						races = ALLIANCE_ONLY,
+						lvl = 80,
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24584, {	-- Malygos Must Die!
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-						["maps"] = { THE_EYE_OF_ETERNITY },
-						["isWeekly"] = true,
-						["groups"] = {
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.3, 66.7, NORTHREND_DALARAN },
+						maps = { THE_EYE_OF_ETERNITY },
+						isWeekly = true,
+						groups = {
 							objective(1, {	-- 0/1 Malygos slain
-								["provider"] = { "n", 28859 },	-- Malygos
+								provider = { "n", 28859 },	-- Malygos
 							}),
 						},
 					})),
 					{	-- Mustard Dogs!
-						["allianceQuestData"] = q(13107, {	-- Mustard Dogs! [A]
-							["qg"] = 28705,	-- Katherine Lee
-							["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
+						allianceQuestData = q(13107, {	-- Mustard Dogs! [A]
+							qg = 28705,	-- Katherine Lee
+							coord = { 40.6, 64.9, NORTHREND_DALARAN },
 						}),
-						["hordeQuestData"] = q(13116, {	-- Mustard Dogs! [H]
-							["qg"] = 29631,	-- Awilo Longomba
-							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
+						hordeQuestData = q(13116, {	-- Mustard Dogs! [H]
+							qg = 29631,	-- Awilo Longomba
+							coord = { 70.0, 39.0, NORTHREND_DALARAN },
 						}),
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["requireSkill"] = COOKING,
-						["isDaily"] = true,
-						["groups"] = {
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						requireSkill = COOKING,
+						isDaily = true,
+						groups = {
 							objective(1, {	-- 0/1 Mustard Dog Basket
-								["provider"] = { "i", 43144 },	-- Mustard Dog Basket
-								["cost"] = {
+								provider = { "i", 43144 },	-- Mustard Dog Basket
+								cost = {
 									{ "i", 43142, 1 },	-- Empty Picnic Basket
 									{ "i", 34752, 4 },	-- Rhino Dogs
 									{ "i", 43143, 4 },	-- Wild Mustard
@@ -2019,18 +2019,18 @@ root(ROOTS.Zones, {
 						},
 					},
 					q(13148, {	-- Necklace Repair
-						["providers"] = {
+						providers = {
 							{ "i", 43297 },	-- Damaged Necklace
 							{ "n", 28701 },	-- Timothy Jones
 						},
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["requireSkill"] = JEWELCRAFTING,
-						["repeatable"] = true,
-						["lvl"] = lvlsquish(77, 77, 10),
-						["groups"] = {
+						coord = { 40.7, 35.4, NORTHREND_DALARAN },
+						requireSkill = JEWELCRAFTING,
+						repeatable = true,
+						lvl = lvlsquish(77, 77, 10),
+						groups = {
 							objective(1, {	-- 0/1 Beautiful Chalcedony Necklace
-								["provider"] = { "i", 43298 },	-- Beautiful Chalcedony Necklace
-								["cost"] = {
+								provider = { "i", 43298 },	-- Beautiful Chalcedony Necklace
+								cost = {
 									{ "i", 43299, 1 },	-- Damaged Necklace
 									{ "i", 36923, 1 },	-- Chalcedony
 								},
@@ -2039,212 +2039,212 @@ root(ROOTS.Zones, {
 						},
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24581, {	-- Noth the Plaguebringer Must Die!
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-						["maps"] = { NAXXRAMAS },
-						["isWeekly"] = true,
-						["groups"] = {
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.3, 66.7, NORTHREND_DALARAN },
+						maps = { NAXXRAMAS },
+						isWeekly = true,
+						groups = {
 							objective(1, {	-- 0/1 Noth the Plaguebringer slain
-								["provider"] = { "n", 15954 },	-- Noth the Plaguebringer
+								provider = { "n", 15954 },	-- Noth the Plaguebringer
 							}),
 						},
 					})),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24583, {	-- Patchwerk Must Die!
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-						["maps"] = { NAXXRAMAS },
-						["isWeekly"] = true,
-						["groups"] = {
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.3, 66.7, NORTHREND_DALARAN },
+						maps = { NAXXRAMAS },
+						isWeekly = true,
+						groups = {
 							objective(1, {	-- 0/1 Patchwerk slain
-								["provider"] = { "n", 16028 },	-- Patchwerk
+								provider = { "n", 16028 },	-- Patchwerk
 							}),
 						},
 					})),
 					q(13254, {	-- Proof of Demise: Anub'arak
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3 },
-						["isDaily"] = true,
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.6, 66.8, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3 },
+						isDaily = true,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/1 The Idle Crown of Anub'arak
-								["provider"] = { "i", 43726 },	-- The Idle Crown of Anub'arak
+								provider = { "i", 43726 },	-- The Idle Crown of Anub'arak
 							}),
 						},
 					}),
 					q(13256, {	-- Proof of Demise: Cyanigosa
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { THE_VIOLET_HOLD_WRATH },
-						["isDaily"] = true,
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.6, 66.8, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { THE_VIOLET_HOLD_WRATH },
+						isDaily = true,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/1 Head of Cyanigosa
-								["provider"] = { "i", 43823 },	-- Head of Cyanigosa
+								provider = { "i", 43823 },	-- Head of Cyanigosa
 							}),
 						},
 					}),
 					q(13250, {	-- Proof of Demise: Gal'darah
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { GUNDRAK, GUNDRAK_FLOOR2 },
-						["isDaily"] = true,
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.6, 66.8, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { GUNDRAK, GUNDRAK_FLOOR2 },
+						isDaily = true,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/1 Mojo Remnant of Akali
-								["provider"] = { "i", 43693 },	-- Mojo Remnant of Akali
+								provider = { "i", 43693 },	-- Mojo Remnant of Akali
 							}),
 						},
 					}),
 					q(13255, {	-- Proof of Demise: Herald Volazj
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { AHNKAHET_THE_OLD_KINGDOM },
-						["isDaily"] = true,
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.6, 66.8, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { AHNKAHET_THE_OLD_KINGDOM },
+						isDaily = true,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/1 Faceless One's Withered Brain
-								["provider"] = { "i", 43821 },	-- Faceless One's Withered Brain
+								provider = { "i", 43821 },	-- Faceless One's Withered Brain
 							}),
 						},
 					}),
 					q(13245, {	-- Proof of Demise: Ingvar the Plunderer
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
-						["isDaily"] = true,
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.6, 66.8, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
+						isDaily = true,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/1 Axe of the Plunderer
-								["provider"] = { "i", 43662 },	-- Axe of the Plunderer
+								provider = { "i", 43662 },	-- Axe of the Plunderer
 							}),
 						},
 					}),
 					q(13246, {	-- Proof of Demise: Keristrasza
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { THE_NEXUS },
-						["isDaily"] = true,
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.6, 66.8, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { THE_NEXUS },
+						isDaily = true,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/1 Keristrasza's Broken Heart
-								["provider"] = { "i", 43665 },	-- Keristrasza's Broken Heart
+								provider = { "i", 43665 },	-- Keristrasza's Broken Heart
 							}),
 						},
 					}),
 					q(13248, {	-- Proof of Demise: King Ymiron
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
-						["isDaily"] = true,
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.6, 66.8, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
+						isDaily = true,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/1 Locket of the Deceased Queen
-								["provider"] = { "i", 43669 },	-- Locket of the Deceased Queen
+								provider = { "i", 43669 },	-- Locket of the Deceased Queen
 							}),
 						},
 					}),
 					q(13247, {	-- Proof of Demise: Ley-Guardian Eregos
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
-						["isDaily"] = true,
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.6, 66.8, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
+						isDaily = true,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/1 Ley Line Tuner
-								["provider"] = { "i", 43668 },	-- Ley Line Tuner
+								provider = { "i", 43668 },	-- Ley Line Tuner
 							}),
 						},
 					}),
 					q(13253, {	-- Proof of Demise: Loken
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2 },
-						["isDaily"] = true,
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.6, 66.8, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2 },
+						isDaily = true,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/1 Celestial Ruby Ring
-								["provider"] = { "i", 43724 },	-- Celestial Ruby Ring
+								provider = { "i", 43724 },	-- Celestial Ruby Ring
 							}),
 						},
 					}),
 					q(13251, {	-- Proof of Demise: Mal'Ganis
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2 },
-						["isDaily"] = true,
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.6, 66.8, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2 },
+						isDaily = true,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/1 Artifact from the Nathrezim Homeworld
-								["provider"] = { "i", 43697 },	-- Artifact from the Nathrezim Homeworld
+								provider = { "i", 43697 },	-- Artifact from the Nathrezim Homeworld
 							}),
 						},
 					}),
 					q(13252, {	-- Proof of Demise: Sjonnir The Ironshaper
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { HALLS_OF_STONE },
-						["isDaily"] = true,
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.6, 66.8, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { HALLS_OF_STONE },
+						isDaily = true,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/1 The Curse of Flesh Disc
-								["provider"] = { "i", 43699 },	-- The Curse of Flesh Disc
+								provider = { "i", 43699 },	-- The Curse of Flesh Disc
 							}),
 						},
 					}),
 					applyclassicphase(WRATH_PHASE_THREE, q(14199, {	-- Proof of Demise: The Black Knight
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { TRIAL_OF_THE_CHAMPION },
-						["isDaily"] = true,
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.6, 66.8, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { TRIAL_OF_THE_CHAMPION },
+						isDaily = true,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = [[function(t)
+						OnUpdate = [[function(t)
 							if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_FOUR .. [[) then
 								t.u = ]] .. REMOVED_FROM_GAME .. [[;
 								t.rwp = nil;
@@ -2254,38 +2254,38 @@ root(ROOTS.Zones, {
 							end
 						end]],
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/1 Fragment of the Black Knight's Soul
-								["provider"] = { "i", 48418 },	-- Fragment of the Black Knight's Soul
+								provider = { "i", 48418 },	-- Fragment of the Black Knight's Soul
 							}),
 						},
 					})),
 					q(13249, {	-- Proof of Demise: The Prophet Tharon'ja
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2 },
-						["isDaily"] = true,
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.6, 66.8, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2 },
+						isDaily = true,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/1 Prophet's Enchanted Tiki
-								["provider"] = { "i", 43670 },	-- Prophet's Enchanted Tiki
+								provider = { "i", 43670 },	-- Prophet's Enchanted Tiki
 							}),
 						},
 					}),
 					-- #if ANYCLASSIC
 					applyclassicphase(WRATH_PHASE_FOUR, q(78752, {	-- Proof of Demise: Titan Rune Protocol Gamma
 						-- #if BEFORE 4.0.1
-						["description"] = "The quest item can also drop from any of the new Icecrown Heroic Dungeons.",
+						description = "The quest item can also drop from any of the new Icecrown Heroic Dungeons.",
 						-- #endif
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
-						["maps"] = {
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.6, 66.8, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { ADDED_3_3_0, REMOVED_4_0_1 },
+						maps = {
 							AHNKAHET_THE_OLD_KINGDOM,
 							AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3,
 							DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2,
@@ -2303,10 +2303,10 @@ root(ROOTS.Zones, {
 							UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3,
 							UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2,
 						},
-						["isDaily"] = true,
-						["groups"] = {
+						isDaily = true,
+						groups = {
 							objective(1, {	-- 0/1 Defiler's Medallion
-								["provider"] = { "i", 211206 },	-- Defiler's Medallion
+								provider = { "i", 211206 },	-- Defiler's Medallion
 							}),
 							-- #if BEFORE 4.0.1
 							currency(341),	-- Emblem of Frost
@@ -2314,11 +2314,11 @@ root(ROOTS.Zones, {
 						},
 					})),
 					applyclassicphase(WRATH_PHASE_FOUR, q(78753, {	-- Proof of Demise: Threats to Azeroth
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
-						["maps"] = {
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.6, 66.8, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { ADDED_3_3_0, REMOVED_4_0_1 },
+						maps = {
 							AHNKAHET_THE_OLD_KINGDOM,
 							AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3,
 							DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2,
@@ -2336,10 +2336,10 @@ root(ROOTS.Zones, {
 							UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3,
 							UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2,
 						},
-						["isDaily"] = true,
-						["groups"] = {
+						isDaily = true,
+						groups = {
 							objective(1, {	-- 0/1 Mysterious Artifact
-								["provider"] = { "i", 211207 },	-- Mysterious Artifact
+								provider = { "i", 211207 },	-- Mysterious Artifact
 							}),
 							-- #if BEFORE 4.0.1
 							currency(341),	-- Emblem of Frost
@@ -2348,44 +2348,44 @@ root(ROOTS.Zones, {
 					})),
 					-- #endif
 					applyclassicphase(WRATH_PHASE_FOUR, q(24586, {	-- Razorscale Must Die!
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-						["maps"] = { ULDUAR },
-						["isWeekly"] = true,
-						["groups"] = {
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.3, 66.7, NORTHREND_DALARAN },
+						maps = { ULDUAR },
+						isWeekly = true,
+						groups = {
 							objective(1, {	-- 0/1 Razorscale slain
-								["provider"] = { "n", 33186 },	-- Razorscale
+								provider = { "n", 33186 },	-- Razorscale
 							}),
 						},
 					})),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24579, {	-- Sartharion Must Die!
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-						["maps"] = { THE_OBSIDIAN_SANCTUM },
-						["isWeekly"] = true,
-						["groups"] = {
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.3, 66.7, NORTHREND_DALARAN },
+						maps = { THE_OBSIDIAN_SANCTUM },
+						isWeekly = true,
+						groups = {
 							objective(1, {	-- 0/1 Sartharion slain
-								["provider"] = { "n", 28860 },	-- Sartharion
+								provider = { "n", 28860 },	-- Sartharion
 							}),
 						},
 					})),
 					{	-- Sewer Stew
-						["allianceQuestData"] = q(13102, {	-- Sewer Stew [A]
-							["qg"] = 28705,	-- Katherine Lee
-							["coord"] = { 40.6, 64.9, NORTHREND_DALARAN },
+						allianceQuestData = q(13102, {	-- Sewer Stew [A]
+							qg = 28705,	-- Katherine Lee
+							coord = { 40.6, 64.9, NORTHREND_DALARAN },
 						}),
-						["hordeQuestData"] = q(13114, {	-- Sewer Stew [H]
-							["qg"] = 29631,	-- Awilo Longomba
-							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
+						hordeQuestData = q(13114, {	-- Sewer Stew [H]
+							qg = 29631,	-- Awilo Longomba
+							coord = { 70.0, 39.0, NORTHREND_DALARAN },
 						}),
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["maps"] = { NORTHREND_THE_UNDERBELLY, CRYSTALSONG_FOREST },
-						["requireSkill"] = COOKING,
-						["isDaily"] = true,
-						["groups"] = {
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						maps = { NORTHREND_THE_UNDERBELLY, CRYSTALSONG_FOREST },
+						requireSkill = COOKING,
+						isDaily = true,
+						groups = {
 							objective(1, {	-- 0/1 Vegetable Stew
-								["provider"] = { "i", 43149 },	-- Vegetable Stew
-								["cost"] = {
+								provider = { "i", 43149 },	-- Vegetable Stew
+								cost = {
 									{ "i", 43147, 1 },	-- Stew Cookpot
 									{ "i", 43148, 4 },	-- Crystalsong Carrot
 									{ "i", 43013, 4 },	-- Chilled Meat
@@ -2396,17 +2396,17 @@ root(ROOTS.Zones, {
 						},
 					},
 					q(12958, {	-- Shipment: Blood Jade Amulet
-						["qg"] = 28701,	-- Timothy Jones
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["maps"] = { ICECROWN, THE_STORM_PEAKS, HOWLING_FJORD },
-						["requireSkill"] = JEWELCRAFTING,
-						["isDaily"] = true,
-						["lvl"] = lvlsquish(65, 65, 10),
-						["groups"] = {
+						qg = 28701,	-- Timothy Jones
+						coord = { 40.7, 35.4, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						maps = { ICECROWN, THE_STORM_PEAKS, HOWLING_FJORD },
+						requireSkill = JEWELCRAFTING,
+						isDaily = true,
+						lvl = lvlsquish(65, 65, 10),
+						groups = {
 							objective(1, {	-- 0/1 Blood Jade Amulet
-								["provider"] = { "i", 43269 },	-- Blood Jade Amulet
-								["cost"] = {
+								provider = { "i", 43269 },	-- Blood Jade Amulet
+								cost = {
 									{ "i", 41989, 1 },	-- Vrykul Amulet
 									{ "i", 36932, 1 },	-- Dark Jade
 									{ "i", 36917, 1 },	-- Bloodstone
@@ -2416,17 +2416,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12962, {	-- Shipment: Bright Armor Relic
-						["qg"] = 28701,	-- Timothy Jones
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["maps"] = { DRAGONBLIGHT, THE_STORM_PEAKS },
-						["requireSkill"] = JEWELCRAFTING,
-						["isDaily"] = true,
-						["lvl"] = lvlsquish(65, 65, 10),
-						["groups"] = {
+						qg = 28701,	-- Timothy Jones
+						coord = { 40.7, 35.4, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						maps = { DRAGONBLIGHT, THE_STORM_PEAKS },
+						requireSkill = JEWELCRAFTING,
+						isDaily = true,
+						lvl = lvlsquish(65, 65, 10),
+						groups = {
 							objective(1, {	-- 0/1 Bright Armor Relic
-								["provider"] = { "i", 43275 },	-- Bright Armor Relic
-								["cost"] = {
+								provider = { "i", 43275 },	-- Bright Armor Relic
+								cost = {
 									{ "i", 42107, 1 },	-- Elemental Armor Scrap
 									{ "i", 36929, 1 },	-- Huge Citrine
 									{ "i", 36917, 1 },	-- Bloodstone
@@ -2436,17 +2436,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12959, {	-- Shipment: Glowing Ivory Figurine
-						["qg"] = 28701,	-- Timothy Jones
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["maps"] = { DRAGONBLIGHT, SHOLAZAR_BASIN, THE_STORM_PEAKS },
-						["requireSkill"] = JEWELCRAFTING,
-						["isDaily"] = true,
-						["lvl"] = lvlsquish(65, 65, 10),
-						["groups"] = {
+						qg = 28701,	-- Timothy Jones
+						coord = { 40.7, 35.4, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						maps = { DRAGONBLIGHT, SHOLAZAR_BASIN, THE_STORM_PEAKS },
+						requireSkill = JEWELCRAFTING,
+						isDaily = true,
+						lvl = lvlsquish(65, 65, 10),
+						groups = {
 							objective(1, {	-- 0/1 Glowing Ivory Figurine
-								["provider"] = { "i", 43270 },	-- Glowing Ivory Figurine
-								["cost"] = {
+								provider = { "i", 43270 },	-- Glowing Ivory Figurine
+								cost = {
 									{ "i", 42104, 1 },	-- Northern Ivory
 									{ "i", 36923, 1 },	-- Chalcedony
 									{ "i", 36926, 1 },	-- Shadow Crystal
@@ -2456,17 +2456,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12961, {	-- Shipment: Intricate Bone Figurine
-						["qg"] = 28701,	-- Timothy Jones
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["maps"] = { THE_STORM_PEAKS, SHOLAZAR_BASIN, HOWLING_FJORD },
-						["requireSkill"] = JEWELCRAFTING,
-						["isDaily"] = true,
-						["lvl"] = lvlsquish(65, 65, 10),
-						["groups"] = {
+						qg = 28701,	-- Timothy Jones
+						coord = { 40.7, 35.4, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						maps = { THE_STORM_PEAKS, SHOLAZAR_BASIN, HOWLING_FJORD },
+						requireSkill = JEWELCRAFTING,
+						isDaily = true,
+						lvl = lvlsquish(65, 65, 10),
+						groups = {
 							objective(1, {	-- 0/1 Intricate Bone Figurine
-								["provider"] = { "i", 43274 },	-- Intricate Bone Figurine
-								["cost"] = {
+								provider = { "i", 43274 },	-- Intricate Bone Figurine
+								cost = {
 									{ "i", 42106, 1 },	-- Proto Dragon Bone
 									{ "i", 36920, 1 },	-- Sun Crystal
 									{ "i", 36932, 1 },	-- Dark Jade
@@ -2476,17 +2476,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12963, {	-- Shipment: Shifting Sun Curio
-						["qg"] = 28701,	-- Timothy Jones
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["maps"] = { ICECROWN, CRYSTALSONG_FOREST },
-						["requireSkill"] = JEWELCRAFTING,
-						["isDaily"] = true,
-						["lvl"] = lvlsquish(65, 65, 10),
-						["groups"] = {
+						qg = 28701,	-- Timothy Jones
+						coord = { 40.7, 35.4, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						maps = { ICECROWN, CRYSTALSONG_FOREST },
+						requireSkill = JEWELCRAFTING,
+						isDaily = true,
+						lvl = lvlsquish(65, 65, 10),
+						groups = {
 							objective(1, {	-- 0/1 Shifting Sun Curio
-								["provider"] = { "i", 43276 },	-- Shifting Sun Curio
-								["cost"] = {
+								provider = { "i", 43276 },	-- Shifting Sun Curio
+								cost = {
 									{ "i", 42108, 1 },	-- Scourge Curio
 									{ "i", 36920, 1 },	-- Sun Crystal
 									{ "i", 36926, 1 },	-- Shadow Crystal
@@ -2496,17 +2496,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12960, {	-- Shipment: Wicked Sun Brooch
-						["qg"] = 28701,	-- Timothy Jones
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["maps"] = { THE_STORM_PEAKS, HOWLING_FJORD, GRIZZLY_HILLS },
-						["requireSkill"] = JEWELCRAFTING,
-						["isDaily"] = true,
-						["lvl"] = lvlsquish(65, 65, 10),
-						["groups"] = {
+						qg = 28701,	-- Timothy Jones
+						coord = { 40.7, 35.4, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						maps = { THE_STORM_PEAKS, HOWLING_FJORD, GRIZZLY_HILLS },
+						requireSkill = JEWELCRAFTING,
+						isDaily = true,
+						lvl = lvlsquish(65, 65, 10),
+						groups = {
 							objective(1, {	-- 0/1 Wicked Sun Brooch
-								["provider"] = { "i", 43272 },	-- Wicked Sun Brooch
-								["cost"] = {
+								provider = { "i", 43272 },	-- Wicked Sun Brooch
+								cost = {
 									{ "i", 42105, 1 },	-- Wicked Sun Brooch
 									{ "i", 36929, 1 },	-- Huge Citrine
 									{ "i", 36920, 1 },	-- Sun Crystal
@@ -2516,236 +2516,236 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(39209, {	-- Sholazar Basin	-- Adventure Guide
-						["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
+						timeline = { ADDED_6_2_0, REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
 					}),
 					q(39212, {	-- Sholazar Basin	-- Adventure Guide
-						["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
+						timeline = { ADDED_6_2_0, REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
 					}),
 					q(13830, {	-- The Ghostfish
-						["qg"] = 28742,	-- Marcia Chase
-						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["maps"] = { SHOLAZAR_BASIN },
-						["requireSkill"] = FISHING,
-						["isDaily"] = true,
-						["groups"] = {
+						qg = 28742,	-- Marcia Chase
+						coord = { 53.0, 64.9, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						maps = { SHOLAZAR_BASIN },
+						requireSkill = FISHING,
+						isDaily = true,
+						groups = {
 							objective(1, {	-- 0/1 Discover the Ghostfish mystery
-								["provider"] = { "i", 45902 },	-- Phantom Ghostfish
+								provider = { "i", 45902 },	-- Phantom Ghostfish
 							}),
 							i(46007),	-- Bag of Fishing Treasures
 						},
 					}),
 					q(12794, {	-- The Magical Kingdom of Dalaran (A)
-						["qgs"] = {
+						qgs = {
 							23729,	-- Baron Ulrik von Stromhearth
 							26673,	-- Image of Archmage Modera
 							29158,	-- Magister Dath'omere
 							29161,	-- Magistrix Haelenai
 						},
-						["coords"] = {
+						coords = {
 							{ 58.6, 68.2, BOREAN_TUNDRA },
 							{ 29.0, 55.4, DRAGONBLIGHT },
 							{ 58.8, 62.8, HOWLING_FJORD },
 							{ 32.0, 59.8, GRIZZLY_HILLS },
 						},
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
+						races = ALLIANCE_ONLY,
+						isBreadcrumb = true,
 					}),
 					q(12791, {	-- The Magical Kingdom of Dalaran (H)
-						["qgs"] = {
+						qgs = {
 							26471,	-- Image of Archmage Aethas Sunreaver
 							29160,	-- Magistrix Phaelista
 							29162,	-- Magister Tyr'ganal
 							29159,	-- Magister Varenthas
 						},
-						["coords"] = {
+						coords = {
 							{ 20.6, 64.2, GRIZZLY_HILLS },
 							{ 79.4, 29.4, HOWLING_FJORD },
 							{ 38.0, 46.2, DRAGONBLIGHT },	-- Image of Archmage Aethas Sunreaver
 							{ 76.8, 63.2, DRAGONBLIGHT },	-- Magister Tyr'ganal
 						},
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
+						races = HORDE_ONLY,
+						isBreadcrumb = true,
 					}),
 					q(12796, {	-- The Magical Kingdom of Dalaran (Zul'Drak)
-						["qg"] = 29169,	-- Magister Teronus III
-						["coord"] = { 40.6, 66.9, ZULDRAK },
-						["isBreadcrumb"] = true,
+						qg = 29169,	-- Magister Teronus III
+						coord = { 40.6, 66.9, ZULDRAK },
+						isBreadcrumb = true,
 					}),
 					q(39210, {	-- The Magical Kingdom of Dalaran (Adventure Guide)
-						["description"] = "Can be acquired through the Adventure Guide.",
-						["timeline"] = { ADDED_6_2_0 },
-						["isBreadcrumb"] = true,
+						description = "Can be acquired through the Adventure Guide.",
+						timeline = { ADDED_6_2_0 },
+						isBreadcrumb = true,
 					}),
 					q(13240, {	-- Timear Foresees Centrifuge Constructs in your Future!
-						["qg"] = 31439,	-- Archmage Timear
-						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
-						["isDaily"] = true,
-						["lvl"] = 78,
+						qg = 31439,	-- Archmage Timear
+						coord = { 63.8, 55.0, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
+						isDaily = true,
+						lvl = 78,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/10 Centrifuge Construct slain
-								["provider"] = { "n", 27641 },	-- Centrifuge Construct
+								provider = { "n", 27641 },	-- Centrifuge Construct
 							}),
 							i(44711, {	-- Argent Crusade Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(49702, {	-- Sons of Hodir Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(44710, {	-- Wyrmrest Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 						},
 					}),
 					q(13243, {	-- Timear Foresees Infinite Agents in your Future!
-						["qg"] = 31439,	-- Archmage Timear
-						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2 },
-						["isDaily"] = true,
-						["lvl"] = 78,
+						qg = 31439,	-- Archmage Timear
+						coord = { 63.8, 55.0, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2 },
+						isDaily = true,
+						lvl = 78,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/4 Infinite Agent slain
-								["provider"] = { "n", 27744 },	-- Infinite Agent
+								provider = { "n", 27744 },	-- Infinite Agent
 							}),
 							i(44711, {	-- Argent Crusade Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(49702, {	-- Sons of Hodir Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(44710, {	-- Wyrmrest Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 						},
 					}),
 					q(13244, {	-- Timear Foresees Titanium Vanguards in your Future!
-						["qg"] = 31439,	-- Archmage Timear
-						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2 },
-						["isDaily"] = true,
-						["lvl"] = 78,
+						qg = 31439,	-- Archmage Timear
+						coord = { 63.8, 55.0, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2 },
+						isDaily = true,
+						lvl = 78,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/7 Titanium Vanguard slain
-								["provider"] = { "n", 28838 },	-- Titanium Vanguard
+								provider = { "n", 28838 },	-- Titanium Vanguard
 							}),
 							i(44711, {	-- Argent Crusade Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(49702, {	-- Sons of Hodir Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(44710, {	-- Wyrmrest Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 						},
 					}),
 					q(13241, {	-- Timear Foresees Ymirjar Berserkers in your Future!
-						["qg"] = 31439,	-- Archmage Timear
-						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
-						["isDaily"] = true,
-						["lvl"] = 78,
+						qg = 31439,	-- Archmage Timear
+						coord = { 63.8, 55.0, NORTHREND_DALARAN },
+						maxReputation = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						timeline = { REMOVED_4_0_1 },
+						maps = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
+						isDaily = true,
+						lvl = 78,
 						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
+						OnUpdate = OnUpdateForTimearDailies,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/7 Ymirjar Berserker slain
-								["provider"] = { "n", 26696 },	-- Ymirjar Berserker
+								provider = { "n", 26696 },	-- Ymirjar Berserker
 							}),
 							i(44711, {	-- Argent Crusade Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(49702, {	-- Sons of Hodir Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 							i(44710, {	-- Wyrmrest Commendation Badge
-								["timeline"] = { DELETED_6_0_2 },
+								timeline = { DELETED_6_0_2 },
 							}),
 						},
 					}),
 					applyclassicphase(WRATH_PHASE_THREE, q(14103, {	-- Titanium Powder
-						["qg"] = 28701,	-- Timothy Jones
-						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["cost"] = { { "i", 46849, 10 } },	-- Titanium Powder
-						["requireSkill"] = JEWELCRAFTING,
-						["repeatable"] = true,
-						["groups"] = {
+						qg = 28701,	-- Timothy Jones
+						coord = { 40.7, 35.4, NORTHREND_DALARAN },
+						cost = { { "i", 46849, 10 } },	-- Titanium Powder
+						requireSkill = JEWELCRAFTING,
+						repeatable = true,
+						groups = {
 							currency(61),	-- Dalaran Jewelcrafter's Token
 						},
 					})),
 					q(24431, {	-- Waterlogged Recipe
-						["provider"] = { "i", 49667 },	-- Waterlogged Recipe
-						["requireSkill"] = COOKING,
-						["repeatable"] = true,
-						["groups"] = {
+						provider = { "i", 49667 },	-- Waterlogged Recipe
+						requireSkill = COOKING,
+						repeatable = true,
+						groups = {
 							currency(81),	-- Epicurean's Award 5x
 						},
 					}),
 					q(14160, {	-- Writ of Merit
-						["provider"] = { "i", 47246 },	-- Writ of Merit
-						["timeline"] = { ADDED_3_2_0, REMOVED_3_2_2 },	-- This was a one-time ever quest sent out to JCs during 3.2.0 when they changed Dragon's Eyes.
-						["requireSkill"] = JEWELCRAFTING,
+						provider = { "i", 47246 },	-- Writ of Merit
+						timeline = { ADDED_3_2_0, REMOVED_3_2_2 },	-- This was a one-time ever quest sent out to JCs during 3.2.0 when they changed Dragon's Eyes.
+						requireSkill = JEWELCRAFTING,
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24588, {	-- XT-002 Deconstructor Must Die!
-						["qg"] = 20735,	-- Archmage Lan'dalock
-						["coord"] = { 57.3, 66.7, NORTHREND_DALARAN },
-						["maps"] = { ULDUAR },
-						["isWeekly"] = true,
-						["groups"] = {
+						qg = 20735,	-- Archmage Lan'dalock
+						coord = { 57.3, 66.7, NORTHREND_DALARAN },
+						maps = { ULDUAR },
+						isWeekly = true,
+						groups = {
 							objective(1, {	-- 0/1 XT-002 Deconstructor slain
-								["provider"] = { "n", 33293 },	-- XT-002 Deconstructor
+								provider = { "n", 33293 },	-- XT-002 Deconstructor
 							}),
 						},
 					})),
 				}),
 				n(REWARDS, {
 					container(46007, {	-- Bag of Fishing Treasures
-						["provider"] = { "n", 28742 },	-- Marcia Chase
-						["description"] = "Fishing Daily Quest Reward",
-						["requireSkill"] = FISHING,
-						["groups"] = {
+						provider = { "n", 28742 },	-- Marcia Chase
+						description = "Fishing Daily Quest Reward",
+						requireSkill = FISHING,
+						groups = {
 							applyclassicphase(WRATH_PHASE_TWO, i(45862)),	-- Bold Stormjewel
 							applyclassicphase(WRATH_PHASE_TWO, i(45882)),	-- Brilliant Stormjewel
 							applyclassicphase(WRATH_PHASE_TWO, i(45879)),	-- Delicate Stormjewel
@@ -2755,20 +2755,20 @@ root(ROOTS.Zones, {
 							applyclassicphase(WRATH_PHASE_TWO, i(45881)),	-- Sparkling Stormjewel
 							i(45998),	-- Battered Jungle Hat
 							i(45991, {	-- Bone Fishing Pole
-								["timeline"] = { ADDED_3_1_0 },
+								timeline = { ADDED_3_1_0 },
 							}),
 							i(6522),	-- Deviate Fish
 							i(45861),	-- Diamond-tipped Cane
 							i(46006),	-- Glow Worm
 							i(19971),	-- High Test Eternium Fishing Line
 							i(45992, {	-- Jeweled Fishing Pole
-								["timeline"] = { ADDED_3_1_0 },
+								timeline = { ADDED_3_1_0 },
 							}),
 							i(36783),	-- Northsea Pearl
 							i(40195),	-- Pygmy Oil
 							i(46004, {	-- Sealed Vial of Poison
 								-- #if ANYCLASSIC
-								["description"] = "Provides a nice source of XP. You can buy and sell this on the AH!",
+								description = "Provides a nice source of XP. You can buy and sell this on the AH!",
 								-- #endif
 							}),
 							i(36784),	-- Siren's Tear
@@ -2790,15 +2790,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					container(44113, {	-- Small Spice Bag
-						["description"] = "Cooking Daily Quest Reward",
-						["requireSkill"] = COOKING,
-						["groups"] = {
+						description = "Cooking Daily Quest Reward",
+						requireSkill = COOKING,
+						groups = {
 							currency(81),	-- Epicurean's Award
 							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 							i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
 							i(33871),	-- Recipe: Stormchops (RECIPE!)
 							i(43007, {	-- Northern Spices
-								["description"] = "Only available from given Cooking suppliers."
+								description = "Only available from given Cooking suppliers."
 							}),
 							i(44228),	-- Baby Spice
 							i(44114),	-- Old Spices
@@ -2807,43 +2807,43 @@ root(ROOTS.Zones, {
 				}),
 				n(TREASURES, {
 					o(192709, {	-- The Schools of Arcane Magic - Abjuration
-						["description"] = "The floor of the Dalaran Visitors Center next to a small book covered table.",
-						["coord"] = { 52.2, 54.8, NORTHREND_DALARAN },
+						description = "The floor of the Dalaran Visitors Center next to a small book covered table.",
+						coord = { 52.2, 54.8, NORTHREND_DALARAN },
 					}),
 					o(192710, {	-- The Schools of Arcane Magic - Conjuration
-						["description"] = "First floor of the Violet Citadel on the bottom shelf of the left bookcase on the north side of the room.",
-						["coord"] = { 31.0, 46.7, NORTHREND_DALARAN },
+						description = "First floor of the Violet Citadel on the bottom shelf of the left bookcase on the north side of the room.",
+						coord = { 31.0, 46.7, NORTHREND_DALARAN },
 					}),
 					o(192711, {	-- The Schools of Arcane Magic - Divination
-						["description"] = "Between the two bookcases on the south side of the second floor of the Violet Citadel.",
-						["coord"] = { 26.5, 52.2, NORTHREND_DALARAN },
+						description = "Between the two bookcases on the south side of the second floor of the Violet Citadel.",
+						coord = { 26.5, 52.2, NORTHREND_DALARAN },
 					}),
 					o(192713, {	-- The Schools of Arcane Magic - Enchantment
-						["description"] = "On a box on the upper balcony of The Threads of Fate.",
-						["coord"] = { 43.6, 46.7, NORTHREND_DALARAN },
+						description = "On a box on the upper balcony of The Threads of Fate.",
+						coord = { 43.6, 46.7, NORTHREND_DALARAN },
 					}),
 					o(192865, {	-- The Schools of Arcane Magic - Illusion
-						["description"] = "On a box in the corner of the Violet Hold near Archmage Timear.",
-						["coord"] = { 64.4, 52.3, NORTHREND_DALARAN },
+						description = "On a box in the corner of the Violet Hold near Archmage Timear.",
+						coord = { 64.4, 52.3, NORTHREND_DALARAN },
 					}),
 					o(192708, {	-- The Schools of Arcane Magic - Introduction
-						["description"] = "First floor of the teleportation room of the Violet Gate near a bookcase.",
-						["coord"] = { 56.7, 45.5, NORTHREND_DALARAN },
+						description = "First floor of the teleportation room of the Violet Gate near a bookcase.",
+						coord = { 56.7, 45.5, NORTHREND_DALARAN },
 					}),
 					o(192866, {	-- The Schools of Arcane Magic - Necromancy
-						["description"] = "Second floor of the Legerdemain Lounge in a bookcase in the northwest bedroom.",
-						["coord"] = { 46.8, 39.1, NORTHREND_DALARAN },
+						description = "Second floor of the Legerdemain Lounge in a bookcase in the northwest bedroom.",
+						coord = { 46.8, 39.1, NORTHREND_DALARAN },
 					}),
 					o(192867, {	-- The Schools of Arcane Magic - Transmutation
-						["description"] = "First floor of the Legerdemain Lounge in the bookcase nearest the stove.",
-						["coord"] = { 46.8, 40.0, NORTHREND_DALARAN },
+						description = "First floor of the Legerdemain Lounge in the bookcase nearest the stove.",
+						coord = { 46.8, 40.0, NORTHREND_DALARAN },
 					}),
 				}),
 				n(VENDORS, {
 					-- #if BEFORE 8.0.1
 					n(28994, {	-- Abra Cadabra [WRATH] / Wanda Chanter <Wands> [BFA+]
-						["coord"] = { 49.1, 73.2, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 49.1, 73.2, NORTHREND_DALARAN },
+						groups = {
 							emot(25, i(47658)),	-- Brimstone Igniter
 							i(40019),	-- Wand of Amber
 							i(40021),	-- Wand of Crystal
@@ -2853,28 +2853,28 @@ root(ROOTS.Zones, {
 					}),
 					-- #endif
 					n(28989, {	-- Aemara <Bowyer>
-						["coord"] = { 60.6, 52.2, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 60.6, 52.2, NORTHREND_DALARAN },
+						groups = {
 							i(44643),	-- Dalaran Bow
 							i(44637),	-- Dalaran Crossbow
 						},
 					}),
 					n(29548, {	-- Aimee <Pie, Pastry & Cakes>
-						["coord"] = { 36.4, 33.8, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 36.4, 33.8, NORTHREND_DALARAN },
+						groups = {
 							i(42439),	-- Big Berry Pie
 							i(42428),	-- Carrot Cupcake
 							i(42436),	-- Chocolate Celebration Cake
 							i(42431),	-- Dalaran Brownie
 							i(42430),	-- Dalaran Doughnut
-							i(74921, {["timeline"] = { ADDED_4_3_0 }}),	-- Darkmoon Doughnut
+							i(74921, {timeline = { ADDED_4_3_0 }}),	-- Darkmoon Doughnut
 							i(42438),	-- Lovely Cake
 							i(42429),	-- Red Velvet Cupcake
 						},
 					}),
 					n(29512, {	-- Ainderu Summerleaf <Mooncloth Tailoring Specialist>
-						["coord"] = { 36.4, 33.8, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 36.4, 33.8, NORTHREND_DALARAN },
+						groups = {
 							i(21895),	-- Pattern: Primal Mooncloth (RECIPE!)
 							i(21919),	-- Pattern: Primal Mooncloth Bag (RECIPE!)
 							i(21916),	-- Pattern: Primal Mooncloth Belt (RECIPE!)
@@ -2883,9 +2883,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(32631, {	-- Alfred Copperworth <Butler>
-						["coord"] = { 26.2, 39.2, NORTHREND_DALARAN },
-						["description"] = "Walks around the Purple Parlour.",
-						["groups"] = {
+						coord = { 26.2, 39.2, NORTHREND_DALARAN },
+						description = "Walks around the Purple Parlour.",
+						groups = {
 							i(33451),	-- Fillet of Icefin
 							i(33452),	-- Honey-Spiced Lichen
 							i(33445),	-- Honeymint Tea
@@ -2898,23 +2898,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(29628, {	-- Angelique Butler <First Aid Supplies>
-						["coord"] = { 37.0, 37.4, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 37.0, 37.4, NORTHREND_DALARAN },
+						groups = {
 							i(44694),	-- Antiseptic-Soaked Dressing
 							i(44692),	-- Dalaran Nurse's Gown
 							i(44693),	-- Wound Dressing
 						},
 					}),
 					n(28990, {	-- Anthony Durain <Shield Merchant>
-						["coord"] = { 46.8, 27.6, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 46.8, 27.6, NORTHREND_DALARAN },
+						groups = {
 							emoh(35, i(40701)),	-- Crygil's Discarded Plate Panel
 							emoh(35, i(40700)),	-- Protective Barricade of the Light
 						},
 					}),
 					n(29547, {	-- Applebough <Fruit Vendor>
-						["coord"] = { 43.1, 57.0, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 43.1, 57.0, NORTHREND_DALARAN },
+						groups = {
 							i(43088),	-- Dalaran Apple Bowl
 							i(43086),	-- Fresh Apple Juice
 							i(35948),	-- Savoury Snowplum
@@ -2922,40 +2922,40 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(31579, {	-- Arcanist Adurin <Legacy Justice Quartermaster> / <Emblem of Valor Quartermaster> [WRATH]
-						["coord"] = { 37.2, 54.5, NORTHREND_DALARAN },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = EMBLEM_OF_VALOR_QUARTERMASTER_GROUPS,
+						coord = { 37.2, 54.5, NORTHREND_DALARAN },
+						races = ALLIANCE_ONLY,
+						groups = EMBLEM_OF_VALOR_QUARTERMASTER_GROUPS,
 					}),
 					applyclassicphase(WRATH_PHASE_TWO, n(33964, {	-- Arcanist Firael <Legacy Justice Quartermaster> / <Emblem of Conquest Quartermaster> [WRATH]
-						["coord"] = { 38.7, 55.1, NORTHREND_DALARAN },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = EMBLEM_OF_CONQUEST_QUARTERMASTER_GROUPS,
+						coord = { 38.7, 55.1, NORTHREND_DALARAN },
+						races = ALLIANCE_ONLY,
+						groups = EMBLEM_OF_CONQUEST_QUARTERMASTER_GROUPS,
 					})),
 					n(31580, {	-- Arcanist Ivrenne <Legacy Justice Quartermaster> / <Emblem of Heroism Quartermaster> [WRATH]
-						["coord"] = { 36.9, 55.0, NORTHREND_DALARAN },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = EMBLEM_OF_HEROISM_QUARTERMASTER_GROUPS,
+						coord = { 36.9, 55.0, NORTHREND_DALARAN },
+						races = ALLIANCE_ONLY,
+						groups = EMBLEM_OF_HEROISM_QUARTERMASTER_GROUPS,
 					}),
 					applyclassicphase(WRATH_PHASE_THREE, n(35494, {	-- Arcanist Miluria <Legacy Justice Quartermaster> / <Emblem of Triumph Quartermaster> [WRATH]
-						["coord"] = { 37.9, 54.3, NORTHREND_DALARAN },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = EMBLEM_OF_TRIUMPH_QUARTERMASTER_A_GROUPS,
+						coord = { 37.9, 54.3, NORTHREND_DALARAN },
+						races = ALLIANCE_ONLY,
+						groups = EMBLEM_OF_TRIUMPH_QUARTERMASTER_A_GROUPS,
 					})),
 					applyclassicphase(WRATH_PHASE_FOUR, n(37942, {	-- Arcanist Uovril <Legacy Justice Quartermaster> / <Emblem of Frost Quartermaster> [WRATH]
-						["coord"] = { 38.3, 54.4, NORTHREND_DALARAN },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = EMBLEM_OF_FROST_QUARTERMASTER_GROUPS,
+						coord = { 38.3, 54.4, NORTHREND_DALARAN },
+						races = ALLIANCE_ONLY,
+						groups = EMBLEM_OF_FROST_QUARTERMASTER_GROUPS,
 					})),
 					n(32287, {	-- Archmage Alvareaux <Kirin Tor Quartermaster>
-						["coord"] = { 25.2, 47.8, NORTHREND_DALARAN },
-						["groups"] = bubbleDownClassicRep(FACTION_KIRIN_TOR, {
+						coord = { 25.2, 47.8, NORTHREND_DALARAN },
+						groups = bubbleDownClassicRep(FACTION_KIRIN_TOR, {
 							{		-- Neutral
 							}, {	-- Friendly
 								i(43157),	-- Tabard of the Kirin Tor
 							}, {	-- Honored
 								i(44141, {	-- Arcanum of the Flame's Soul
-									["timeline"] = { REMOVED_5_0_4 },
-									["filterID"] = CONSUMABLES,
+									timeline = { REMOVED_5_0_4 },
+									filterID = CONSUMABLES,
 								}),
 								i(44170),	-- Helm of the Majestic Stag
 								i(44166),	-- Lightblade Rivener
@@ -2964,14 +2964,14 @@ root(ROOTS.Zones, {
 							}, {	-- Revered
 								i(50368, {	-- Arcanum of Burning Mysteries
 									-- #if BEFORE MOP
-									["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+									description = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
 									-- #endif
-									["timeline"] = { REMOVED_5_0_4 },
-									["filterID"] = CONSUMABLES,
+									timeline = { REMOVED_5_0_4 },
+									filterID = CONSUMABLES,
 								}),
 								i(44159, {	-- Arcanum of Burning Mysteries
-									["timeline"] = { REMOVED_5_0_4 },
-									["filterID"] = CONSUMABLES,
+									timeline = { REMOVED_5_0_4 },
+									filterID = CONSUMABLES,
 								}),
 								i(44173),	-- Flameheart Spell Scalpel
 								i(44176),	-- Girdle of the Warrior Magi
@@ -2988,27 +2988,27 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					n(29499, {	-- Bartram Haller <Dagger & Fist Weapon Merchant>
-						["coord"] = { 53.5, 62.4, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 53.5, 62.4, NORTHREND_DALARAN },
+						groups = {
 							i(44652),	-- Dalaran Dagger
 							i(44644, {	-- Dalaran Dart
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 							i(44641),	-- Dalaran Knuckles
 							emoh(50, i(40704)),	-- Pride
 							emoh(50, i(40702)),	-- Rolfsen's Ripper
 							emoh(15, i(40716, {	-- Lillehoff's Winged Blades
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							})),
 						},
 					}),
 					n(32515, {	-- Braeg Stoutbeard
-						["coord"] = { 37.33, 28.69, NORTHREND_DALARAN },
-						["groups"] = COMMON_WRATH_LEATHERWORKING_RECIPES,
+						coord = { 37.33, 28.69, NORTHREND_DALARAN },
+						groups = COMMON_WRATH_LEATHERWORKING_RECIPES,
 					}),
 					n(29523, {	-- Bragund Brightlink <Mail Armor Merchant>
-						["coord"] = { 51.2, 72.8, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 51.2, 72.8, NORTHREND_DALARAN },
+						groups = {
 							cl(HUNTER, appendGroups(
 								TIER_EIGHT_HEROIC_GROUPS.HUNTER,
 								TIER_EIGHT_GROUPS.HUNTER,
@@ -3039,115 +3039,115 @@ root(ROOTS.Zones, {
 							emoc(28, i(45828)),	-- Windchill Binding
 						},
 					}),
-					n(32509, bubbleDown({ ["timeline"] = { REMOVED_6_1_0 } }, {	-- Brammold Deepmine <Antiques & Heirlooms>
-						["coord"] = { 51.0, 53.6, NORTHREND_DALARAN },
-						["groups"] = {
+					n(32509, bubbleDown({ timeline = { REMOVED_6_1_0 } }, {	-- Brammold Deepmine <Antiques & Heirlooms>
+						coord = { 51.0, 53.6, NORTHREND_DALARAN },
+						groups = {
 							i(93876, {			-- Awakened Pauldrons of Elements
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93885, {			-- Awakened Vest of Elements
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							emoh(40, i(42944)),	-- Balanced Heartseeker
 							emoh(65, i(42943)),	-- Bloodied Arcanite Reaper
 							i(69893, {			-- Bloodsoaked Skullforge Reaver
-								["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
+								timeline = { ADDED_4_1_0, REMOVED_6_1_0 },
 							}),
 							i(93859, {			-- Bloodstained Dreadmist Mantle
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93860, {			-- Bloodstained Dreadmist Robe
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93892, {			-- Brushed Breastplate of Might
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93893, {			-- Brushed Pauldrons of Might
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(69889, {			-- Burnished Breastplate of Might
-								["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
+								timeline = { ADDED_4_1_0, REMOVED_6_1_0 },
 							}),
 							i(69890, {			-- Burnished Pauldrons of Might
-								["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
+								timeline = { ADDED_4_1_0, REMOVED_6_1_0 },
 							}),
 							i(79131, {			-- Burnished Warden Staff
-								["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
+								timeline = { ADDED_5_0_4, REMOVED_6_1_0 },
 							}),
 							emoh(40, i(42950)),	-- Champion Herod's Shoulder
 							emoh(40, i(48677)),	-- Champion's Deathdealer Breastplate
 							emoh(65, i(42946)),	-- Charmed Ancient Bone Bow
 							i(93847, {			-- Crushing Mass of McGowan
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							emoh(50, i(42948)),	-- Devout Aurastone Hammer
 							emoh(65, i(42947)),	-- Dignified Headmaster's Charge
 							emoh(50, i(42992)),	-- Discerning Eye of the Beast
 							i(93902, {			-- Flamescarred Draconian Deflector
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93896, {			-- Forceful Hand of Justice
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93888, {			-- Furious Deathdealer Breastplate
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93891, {			-- Gleaming Breastplate of Valor
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93890, {			-- Gleaming Spaulders of Valor
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93845, {			-- Gore-Steeped Skullforge Reaver
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93887, {			-- Grand Champion Herod's Shoulder
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93843, {			-- Hardened Arcanite Reaper
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93865, {			-- Majestic Ironfeather Breastplate
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93864, {			-- Majestic Ironfeather Shoulders
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93904, {			-- Musty Tome of the Lost
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							emoh(40, i(42951)),	-- Mystical Pauldrons of Elements
 							emoh(40, i(48683)),	-- Mystical Vest of Elements
 							i(93856, {			-- Noble Dal'Rend's Sacred Charge
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93897, {			-- Piercing Eye of the Beast
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93853, {			-- Pious Aurastone Hammer
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							emoh(40, i(48685)),	-- Polished Breastplate of Valor
 							emoh(40, i(42949)),	-- Polished Spaulders of Valor
 							emoh(40, i(48687)),	-- Preened Ironfeather Breastplate
 							emoh(40, i(42984)),	-- Preened Ironfeather Shoulders
 							i(93846, {			-- Re-engineered Lava Dredger
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93844, {			-- Refinished Warden Staff
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							emoh(65, i(48718)),	-- Repurposed Lava Dredger
 							i(93854, {			-- Scholarly Headmaster's Charge
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							emoh(40, i(42952)),	-- Stained Shadowcraft Spaulders
 							emoh(40, i(48689)),	-- Stained Shadowcraft Tunic
 							i(93862, {			-- Supple Shadowcraft Spaulders
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93863, {			-- Supple Shadowcraft Tunic
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							emoh(50, i(42991)),	-- Swift Hand of Justice
 							emoh(40, i(42985)),	-- Tattered Dreadmist Mantle
@@ -3155,29 +3155,29 @@ root(ROOTS.Zones, {
 							emoh(40, i(42945)),	-- Venerable Dal'Rend's Sacred Charge
 							emoh(40, i(48716)),	-- Venerable Mass of McGowan
 							i(93857, {			-- Vengeful Heartseeker
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93855, {			-- War-Torn Ancient Bone Bow
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93903, {			-- Weathered Observer's Shield
-								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+								timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 						},
 					})),
 					n(28951, {	-- Breanni <Pet Supplies>
-						["coord"] = { 58.7, 39.2, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 58.7, 39.2, NORTHREND_DALARAN },
+						groups = {
 							i(44822),	-- Albino Snake (PET!)
 							i(46398, {	-- Calico Cat (PET!)
-								["timeline"] = { ADDED_3_3_0 },
+								timeline = { ADDED_3_3_0 },
 							}),
 							i(37431),	-- Fetch Ball
 							i(129826, {	-- Nursery Spider (PET!)
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							}),
 							i(48120, {	-- Obsidian Hatchling (PET!)
-								["timeline"] = { ADDED_3_2_0 },
+								timeline = { ADDED_3_2_0 },
 							}),
 							i(43352),	-- Pet Grooming Kit
 							i(44820),	-- Red Ribbon Pet Leash (TOY!)
@@ -3185,27 +3185,27 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(28722, {	-- Bryan Landers <Engineering Supplies>
-						["coord"] = { 39.0, 26.0, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 39.0, 26.0, NORTHREND_DALARAN },
+						groups = {
 							i(136782, {	-- Fireworks Instruction Manual (CI!)
-								["timeline"] = { ADDED_7_0_3_LAUNCH },
+								timeline = { ADDED_7_0_3_LAUNCH },
 							}),
 							i(23817, {	-- Schematic: Titanium Toolbox (RECIPE!)
-								["isLimited"] = true,
-								["timeline"] = { ADDED_3_0_8 },
+								isLimited = true,
+								timeline = { ADDED_3_0_8 },
 							}),
 						},
 					}),
 					n(29702, {	-- Chameli Banaphash <Haberdasher>
-						["coord"] = { 44.8, 46.6, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 44.8, 46.6, NORTHREND_DALARAN },
+						groups = {
 							i(44648),	-- Purple Turban
 							i(44647),	-- Violet Hat
 						},
 					}),
 					n(32337, {	-- Christi Stockton <Wine Vendor>
-						["coord"] = { 53.8, 32.6, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 53.8, 32.6, NORTHREND_DALARAN },
+						groups = {
 							i(44625),	-- Bottle of Aged Dalaran Red
 							i(44623),	-- Bottle of Dalaran Red
 							i(44621),	-- Bottle of Dalaran White
@@ -3217,52 +3217,52 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(29716, {	-- Clockwork Assistant <Jepetto's Companion>
-						["coord"] = { 44.8, 46.3, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 44.8, 46.3, NORTHREND_DALARAN },
+						groups = {
 							i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
-								["timeline"] = { ADDED_3_3_3 },
+								timeline = { ADDED_3_3_3 },
 							}),
 							i(95621, {	-- Warbot (PET!)
-								["timeline"] = { ADDED_5_2_0 },
+								timeline = { ADDED_5_2_0 },
 							}),
 							i(54343, {	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
-								["timeline"] = { ADDED_3_3_3 },
+								timeline = { ADDED_3_3_3 },
 							}),
 							i(192099, {	-- Earpieces of Tranquil Focus (TOY!)
-								["timeline"] = { ADDED_9_2_5 },
+								timeline = { ADDED_9_2_5 },
 							}),
 							i(104324, {	-- Foot Ball (TOY!)
-								["timeline"] = { ADDED_5_4_0 },
+								timeline = { ADDED_5_4_0 },
 							}),
 							i(137663, {	-- Soft Foam Sword (TOY!)
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							}),
 							i(104323, {	-- The Swineskin (TOY!)
-								["timeline"] = { ADDED_5_4_0 },
+								timeline = { ADDED_5_4_0 },
 							}),
 							i(54438, {	-- Tiny Blue Ragdoll (TOY!)
-								["timeline"] = { ADDED_3_3_3 },
+								timeline = { ADDED_3_3_3 },
 							}),
 							i(54437, {	-- Tiny Green Ragdoll (TOY!)
-								["timeline"] = { ADDED_3_3_3 },
+								timeline = { ADDED_3_3_3 },
 							}),
 							i(44606, {	-- Toy Train Set Toy (TOY!)
-								["timeline"] = { ADDED_3_0_2 },
+								timeline = { ADDED_3_0_2 },
 							}),
 							i(45057, {	-- Wind-Up Train Wrecker Toy (TOY!)
-								["timeline"] = { ADDED_3_1_0 },
+								timeline = { ADDED_3_1_0 },
 							}),
 						},
 					}),
 					n(29476, {	-- Dagna Flintlock <Gunsmith>
-						["coord"] = { 60.0, 52.6, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 60.0, 52.6, NORTHREND_DALARAN },
+						groups = {
 							i(44635),	-- Dalaran Rifle
 						},
 					}),
 					n(29528, {	-- Debbi Moore <Trinkets & Charms>
-						["coord"] = { 49.7, 55.5, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 49.7, 55.5, NORTHREND_DALARAN },
+						groups = {
 							emof(60, i(50356)),	-- Corroded Skeleton Key
 							emot(50, i(47735)),	-- Glyph of Indomitability
 							emof(60, i(50355)),	-- Herkuml War Token
@@ -3278,12 +3278,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(28726, {	-- Dominique Stefano <Tailoring Supplies>
-						["coord"] = { 35.6, 34.4, NORTHREND_DALARAN },
-						["groups"] = ETERNIUM_THREAD,
+						coord = { 35.6, 34.4, NORTHREND_DALARAN },
+						groups = ETERNIUM_THREAD,
 					}),
 					n(34252, {	-- Dubin Clay <Plate Armor Merchant>
-						["coord"] = { 46.2, 27.2, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 46.2, 27.2, NORTHREND_DALARAN },
+						groups = {
 							-- NOTE: This vendor doesn't sell the horde T9.
 							cl(DEATHKNIGHT, appendGroups(
 								TIER_NINE_GROUPS.DEATHKNIGHT_A,
@@ -3300,57 +3300,57 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(35508, {	-- Enchanter Erodin <Heirloom Vendor>
-						["coord"] = { 37.2, 55.6, NORTHREND_DALARAN },
-						["sym"] = {{ "select", "npcID", 32509 },{"pop"}},	-- Brammold Deepmine <Antiques & Heirlooms>
-						["races"] = HORDE_ONLY,
+						coord = { 37.2, 55.6, NORTHREND_DALARAN },
+						sym = {{ "select", "npcID", 32509 },{"pop"}},	-- Brammold Deepmine <Antiques & Heirlooms>
+						races = HORDE_ONLY,
 					}),
 					n(35507, {	-- Enchanter Isian <Heirloom Vendor>
-						["coord"] = { 37.2, 55.6, NORTHREND_DALARAN },
-						["sym"] = {{ "select", "npcID", 32509 },{"pop"}},	-- Brammold Deepmine <Antiques & Heirlooms>
-						["races"] = ALLIANCE_ONLY,
+						coord = { 37.2, 55.6, NORTHREND_DALARAN },
+						sym = {{ "select", "npcID", 32509 },{"pop"}},	-- Brammold Deepmine <Antiques & Heirlooms>
+						races = ALLIANCE_ONLY,
 					}),
 					n(28715, {	-- Endora Moorehead
-						["coord"] = { 38.62, 55.57, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 38.62, 55.57, NORTHREND_DALARAN },
+						groups = {
 							i(82470, {	-- Ancient Tome of Portal: Dalaran (CI!)
-								["timeline"] = { ADDED_5_0_4 },
-								["isLimited"] = true,
+								timeline = { ADDED_5_0_4 },
+								isLimited = true,
 							}),
 							i(137294, {	-- Dalaran Initiates' Pin (TOY!)
-								["timeline"] = { ADDED_7_0_3_LAUNCH },
-								["classes"] = { MAGE },
-								["isLimited"] = true,
+								timeline = { ADDED_7_0_3_LAUNCH },
+								classes = { MAGE },
+								isLimited = true,
 							}),
 							i(136846, {	-- Familiar Stone (TOY!)
-								["timeline"] = { ADDED_7_0_3_LAUNCH },
-								["classes"] = { MAGE },
+								timeline = { ADDED_7_0_3_LAUNCH },
+								classes = { MAGE },
 							}),
 							i(136797, {	-- Mystical Tome: Arcane Linguist (CI!)
-								["timeline"] = { ADDED_7_0_3_LAUNCH },
+								timeline = { ADDED_7_0_3_LAUNCH },
 							}),
 							i(136799, {	-- Mystical Tome: Illusion (CI!)
-								["timeline"] = { ADDED_7_0_3_LAUNCH },
+								timeline = { ADDED_7_0_3_LAUNCH },
 							}),
 							i(167733, {	-- Technique: Glyph of Dalaran Brilliance (RECIPE!)
-								["timeline"] = { ADDED_8_1_5 },
-								["isLimited"] = true,
+								timeline = { ADDED_8_1_5 },
+								isLimited = true,
 							}),
 							i(44714, {	-- Tome of Dalaran Brilliance (CI!)
-								["timeline"] = { ADDED_3_0_3, REMOVED_7_0_3 },
-								["isLimited"] = true,
+								timeline = { ADDED_3_0_3, REMOVED_7_0_3 },
+								isLimited = true,
 							}),
 							i(44602, {	-- Tome of Dalaran Intellect (CI!)
-								["timeline"] = { ADDED_3_0_3, REMOVED_7_0_3 },
-								["isLimited"] = true,
+								timeline = { ADDED_3_0_3, REMOVED_7_0_3 },
+								isLimited = true,
 							}),
 							i(44709, {	-- Tome of Polymorph: Black Cat (CI!)
-								["isLimited"] = true,
+								isLimited = true,
 							}),
 						},
 					}),
 					n(28776, {	-- Elizabeth Ross <Tabard Vendor>
-						["coord"] = { 51.8, 55.8, NORTHREND_DALARAN },
-						["sym"] = {
+						coord = { 51.8, 55.8, NORTHREND_DALARAN },
+						sym = {
 							{"select", "itemID",
 							31779,	-- Aldor Tabard
 							31804,	-- Cenarion Expedition Tabard
@@ -3392,8 +3392,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(29715, {	-- Fialla Sweetberry <Food & Drink>
-						["coord"] = { 53.4, 34.6, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 53.4, 34.6, NORTHREND_DALARAN },
+						groups = {
 							i(40042),	-- Caraway Burnwine
 							i(44618),	-- Glass of Aged Dalaran Red
 							i(44617),	-- Glass of Dalaran Red
@@ -3403,44 +3403,44 @@ root(ROOTS.Zones, {
 						},
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, n(40160, {	-- Frozo the Renowned <Frozen Orb Trader>
-						["coord"] = { 40.0, 28.9, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 40.0, 28.9, NORTHREND_DALARAN },
+						groups = {
 							applyclassicphase(WRATH_PHASE_THREE, i(47556, {	-- Crusader Orb
-								["cost"] = { { "i", 43102, 6 } },	-- 6x Frozen Orb
+								cost = { { "i", 43102, 6 } },	-- 6x Frozen Orb
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, i(35623, {	-- Eternal Air
-								["cost"] = { { "i", 43102, 1 } },	-- 1x Frozen Orb
+								cost = { { "i", 43102, 1 } },	-- 1x Frozen Orb
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, i(35624, {	-- Eternal Earth
-								["cost"] = { { "i", 43102, 1 } },	-- 1x Frozen Orb
+								cost = { { "i", 43102, 1 } },	-- 1x Frozen Orb
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, i(36860, {	-- Eternal Fire
-								["cost"] = { { "i", 43102, 1 } },	-- 1x Frozen Orb
+								cost = { { "i", 43102, 1 } },	-- 1x Frozen Orb
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, i(35625, {	-- Eternal Life
-								["cost"] = { { "i", 43102, 1 } },	-- 1x Frozen Orb
+								cost = { { "i", 43102, 1 } },	-- 1x Frozen Orb
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, i(35627, {	-- Eternal Shadow
-								["cost"] = { { "i", 43102, 1 } },	-- 1x Frozen Orb
+								cost = { { "i", 43102, 1 } },	-- 1x Frozen Orb
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, i(35622, {	-- Eternal Water
-								["cost"] = { { "i", 43102, 1 } },	-- 1x Frozen Orb
+								cost = { { "i", 43102, 1 } },	-- 1x Frozen Orb
 							})),
 							applyclassicphase(WRATH_PHASE_ONE, i(36908, {	-- Frost Lotus
-								["cost"] = { { "i", 43102, 1 } },	-- 1x Frozen Orb
+								cost = { { "i", 43102, 1 } },	-- 1x Frozen Orb
 							})),
 							i(54798, {	-- Pattern: Frosty Flying Carpet
-								["cost"] = { { "i", 43102, 6 } },	-- 6x Frozen Orb
-								["timeline"] = { ADDED_3_3_3 },
+								cost = { { "i", 43102, 6 } },	-- 6x Frozen Orb
+								timeline = { ADDED_3_3_3 },
 							}),
 							applyclassicphase(WRATH_PHASE_TWO, i(45087, {	-- Runed Orb
-								["cost"] = { { "i", 43102, 4 } },	-- 4x Frozen Orb
+								cost = { { "i", 43102, 4 } },	-- 4x Frozen Orb
 							})),
 						},
 					})),
 					n(28997, {	-- Griselda Hunderland <Plate Armor Merchant>
-						["coord"] = { 46.3, 27.2, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 46.3, 27.2, NORTHREND_DALARAN },
+						groups = {
 							cl(DEATHKNIGHT, appendGroups(
 								TIER_SEVEN_HEROIC_GROUPS.DEATHKNIGHT,
 								TIER_SEVEN_GROUPS.DEATHKNIGHT, {})),
@@ -3480,19 +3480,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(32638, {	-- Hakmud of Argus <Traveling Trader>
-						["providers"] = {
+						providers = {
 							{ "i", 44235 },	-- Traveler's Tundra Mammoth (A) (MOUNT!)
 						},
-						["description"] = "This vendor can be found on someone's Traveler's Tundra Mammoth.",
-						["groups"] = {
+						description = "This vendor can be found on someone's Traveler's Tundra Mammoth.",
+						groups = {
 							i(44737),	-- Draenic Silk Robes
 						},
 					}),
 					n(32172, {	-- Harold Winston <Jewelry Vendor>
-						["coord"] = { 40.2, 34.3, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 40.2, 34.3, NORTHREND_DALARAN },
+						groups = {
 							ach(2084, {	-- Ring of the Kirin Tor
-								["providers"] = {
+								providers = {
 									{ "i", 40586 },	-- Band of the Kirin Tor
 									{ "i", 44934 },	-- Loop of the Kirin Tor
 									{ "i", 44935 },	-- Ring of the Kirin Tor
@@ -3502,7 +3502,7 @@ root(ROOTS.Zones, {
 							emov(25, i(40719)),	-- Band of Channeled Magic
 							emot(35, i(47732)),	-- Band of the Invoker
 							i(40586, {	-- Band of the Kirin Tor
-								["cost"] = 85000000,	-- 8.5k
+								cost = 85000000,	-- 8.5k
 							}),
 							emot(35, i(47729)),	-- Bloodshed Band
 							emoc(19, i(45820)),	-- Brooch of the Wailing Night
@@ -3511,25 +3511,25 @@ root(ROOTS.Zones, {
 							emot(35, i(47730)),	-- Dexterous Brightstone Ring
 							emoh(25, i(40680)),	-- Encircling Burnished Gold Chains
 							applyclassicphase(WRATH_PHASE_THREE, i(48954, {	-- Etched Band of the Kirin Tor
-								["cost"] = {
+								cost = {
 									{ "i", 45688, 1 },	-- Inscribed Band of the Kirin Tor
 									{ "g", 12500000 },	-- 1250g
 								},
 							})),
 							applyclassicphase(WRATH_PHASE_THREE, i(48955, {	-- Etched Loop of the Kirin Tor
-								["cost"] = {
+								cost = {
 									{ "i", 45689, 1 },	-- Inscribed Loop of the Kirin Tor
 									{ "g", 12500000 },	-- 1250g
 								},
 							})),
 							applyclassicphase(WRATH_PHASE_THREE, i(48956, {	-- Etched Ring of the Kirin Tor
-								["cost"] = {
+								cost = {
 									{ "i", 45690, 1 },	-- Inscribed Ring of the Kirin Tor
 									{ "g", 12500000 },	-- 1250g
 								},
 							})),
 							applyclassicphase(WRATH_PHASE_THREE, i(48957, {	-- Etched Signet of the Kirin Tor
-								["cost"] = {
+								cost = {
 									{ "i", 45691, 1 },	-- Inscribed Signet of the Kirin Tor
 									{ "g", 12500000 },	-- 1250g
 								},
@@ -3538,59 +3538,59 @@ root(ROOTS.Zones, {
 							emoc(19, i(45823)),	-- Frozen Tear of Elune
 							emot(35, i(47733)),	-- Heartmender Circle
 							applyclassicphase(WRATH_PHASE_TWO, i(45688, {	-- Inscribed Band of the Kirin Tor
-								["cost"] = {
+								cost = {
 									{ "i", 40586, 1 },	-- Band of the Kirin Tor
 									{ "g", 12500000 },	-- 1250g
 								},
 							})),
 							applyclassicphase(WRATH_PHASE_TWO, i(45689, {	-- Inscribed Loop of the Kirin Tor
-								["cost"] = {
+								cost = {
 									{ "i", 44934, 1 },	-- Loop of the Kirin Tor
 									{ "g", 12500000 },	-- 1250g
 								},
 							})),
 							applyclassicphase(WRATH_PHASE_TWO, i(45690, {	-- Inscribed Ring of the Kirin Tor
-								["cost"] = {
+								cost = {
 									{ "i", 44935, 1 },	-- Ring of the Kirin Tor
 									{ "g", 12500000 },	-- 1250g
 								},
 							})),
 							applyclassicphase(WRATH_PHASE_TWO, i(45691, {	-- Inscribed Signet of the Kirin Tor
-								["cost"] = {
+								cost = {
 									{ "i", 40585, 1 },	-- Signet of the Kirin Tor
 									{ "g", 12500000 },	-- 1250g
 								},
 							})),
 							emoh(25, i(40681)),	-- Lattice Choker of Light
 							i(44934, {	-- Loop of the Kirin Tor
-								["cost"] = 85000000,	-- 8.5k
+								cost = 85000000,	-- 8.5k
 							}),
 							emoh(25, i(40678)),	-- Pendant of the Outcast Hero
 							emov(25, i(40720)),	-- Renewal of Life
 							emov(25, i(40717)),	-- Ring of Invincibility
 							i(44935, {	-- Ring of the Kirin Tor
-								["cost"] = 85000000,	-- 8.5k
+								cost = 85000000,	-- 8.5k
 							}),
 							applyclassicphase(WRATH_PHASE_FOUR, i(51560, {	-- Runed Band of the Kirin Tor
-								["cost"] = {
+								cost = {
 									{ "i", 48954, 1 },	-- Etched Band of the Kirin Tor
 									{ "g", 12500000 },	-- 1250g
 								},
 							})),
 							applyclassicphase(WRATH_PHASE_FOUR, i(51558, {	-- Runed Loop of the Kirin Tor
-								["cost"] = {
+								cost = {
 									{ "i", 48955, 1 },	-- Etched Loop of the Kirin Tor
 									{ "g", 12500000 },	-- 1250g
 								},
 							})),
 							applyclassicphase(WRATH_PHASE_FOUR, i(51559, {	-- Runed Ring of the Kirin Tor
-								["cost"] = {
+								cost = {
 									{ "i", 48956, 1 },	-- Etched Ring of the Kirin Tor
 									{ "g", 12500000 },	-- 1250g
 								},
 							})),
 							applyclassicphase(WRATH_PHASE_FOUR, i(51557, {	-- Runed Signet of the Kirin Tor
-								["cost"] = {
+								cost = {
 									{ "i", 48957, 1 },	-- Etched Signet of the Kirin Tor
 									{ "g", 12500000 },	-- 1250g
 								},
@@ -3598,28 +3598,28 @@ root(ROOTS.Zones, {
 							emoc(19, i(45821)),	-- Shard of the Crystal Forest
 							emov(25, i(40718)),	-- Signet of the Impregnable Fortress
 							i(40585, {	-- Signet of the Kirin Tor
-								["cost"] = 85000000,	-- 8.5k
+								cost = 85000000,	-- 8.5k
 							}),
 							emoc(19, i(45819)),	-- Spiked Battleguard Choker
 						},
 					}),
 					n(31238, {	-- Hira Snowdawn <Cold Weather Flying Trainer>
-						["coord"] = { 69.73, 45.45, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 69.73, 45.45, NORTHREND_DALARAN },
+						groups = {
 							i(49177, {	-- Tome of Cold Weather Flight
 								-- #IF ANYCLASSIC
-								["recipeID"] = 54197,	-- Cold Weather Flying
+								recipeID = 54197,	-- Cold Weather Flying
 								-- #ELSE
-								["f"] = MISC,
+								f = MISC,
 								-- #ENDIF
-								["timeline"] = { REMOVED_7_3_5 },
-								["cost"] = { { "g", 10000000 } },	-- 1000g
+								timeline = { REMOVED_7_3_5 },
+								cost = { { "g", 10000000 } },	-- 1000g
 							}),
 						},
 					}),
 					n(35498, {	-- Horace Hunderland <Plate Armor Merchant>
-						["coord"] = { 46.6, 27.1, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 46.6, 27.1, NORTHREND_DALARAN },
+						groups = {
 							cl(DEATHKNIGHT, appendGroups(
 								TIER_TEN_HEROIC_GROUPS.DEATHKNIGHT,
 								TIER_TEN_NORMAL_GROUPS.DEATHKNIGHT,
@@ -3642,67 +3642,67 @@ root(ROOTS.Zones, {
 					}),
 					-- #if AFTER CATA
 					n(28714, {	-- Ildine Sorrowspear <Enchanting Supplies>
-						["coord"] = { 38.78, 41.56, NORTHREND_DALARAN },
+						coord = { 38.78, 41.56, NORTHREND_DALARAN },
 					}),
 					-- #endif
 					n(28682, {	-- Inzi Charmlight <Barmaid>
-						["coord"] = { 44.2, 62.3, NORTHREND_DALARAN },
-						["description"] = "Inzi is walking around in the Tavern.",
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						coord = { 44.2, 62.3, NORTHREND_DALARAN },
+						description = "Inzi is walking around in the Tavern.",
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(35948),	-- Savoury Snowplum
 							i(35949),	-- Tundra Berries
 						},
 					}),
 					-- #if BEFORE MOP
 					n(29493, {	-- Jarold Puller <Specialty Ammunition>
-						["coord"] = { 60.0, 51.8, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 60.0, 51.8, NORTHREND_DALARAN },
+						groups = {
 							emot(25, i(47660, {	-- Blades of the Sable Cross
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							})),
 							emot(25, i(47659, {	-- Crimson Star
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							})),
 							i(32883, {	-- Felbane Slugs
-								["timeline"] = { REMOVED_4_0_1 },
-								["races"] = ALLIANCE_ONLY,
+								timeline = { REMOVED_4_0_1 },
+								races = ALLIANCE_ONLY,
 							}),
 							i(32882, {	-- Hellfire Shot
-								["timeline"] = { REMOVED_4_0_1 },
-								["races"] = HORDE_ONLY,
+								timeline = { REMOVED_4_0_1 },
+								races = HORDE_ONLY,
 							}),
 							emoh(15, i(40716, {	-- Lillehoff's Winged Blades
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(34581, {	-- Mysterious Arrow
-								["timeline"] = { REMOVED_4_0_1 },
+								timeline = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(34582, {	-- Mysterious Shell
-								["timeline"] = { REMOVED_4_0_1 },
+								timeline = { REMOVED_4_0_1 },
 							})),
 							emof(30, i(50474, {	-- Shrapnel Star
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(31737, {	-- Timeless Arrow
-								["timeline"] = { REMOVED_4_0_1 },
+								timeline = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(31735, {	-- Timeless Shell
-								["timeline"] = { REMOVED_4_0_1 },
+								timeline = { REMOVED_4_0_1 },
 							})),
 							i(31949, {	-- Warden's Arrow
-								["timeline"] = { REMOVED_4_0_1 },
+								timeline = { REMOVED_4_0_1 },
 							}),
 						},
 					}),
 					-- #endif
 					n(29478, {	-- Jepetto Joybuzz <Toymaker>
-						["coord"] = { 44.5, 45.7, NORTHREND_DALARAN },
-						["sym"] = {{"sub", "common_vendor", 29716}},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
+						coord = { 44.5, 45.7, NORTHREND_DALARAN },
+						sym = {{"sub", "common_vendor", 29716}},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
 					}),
 					n(29491, {	-- Karandonna <Clothier>
-						["coord"] = { 44.4, 48.9, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 44.4, 48.9, NORTHREND_DALARAN },
+						groups = {
 							i(42365),	-- Amber Filigreed Doublet
 							i(42371),	-- Amber Filigreeed Shirt
 							i(42374),	-- Blue Martial Shirt
@@ -3711,8 +3711,8 @@ root(ROOTS.Zones, {
 							i(42360),	-- Ebon Filigreed Doublet
 							i(42369),	-- Ebon Filigreed Shirt
 							i(53852, {	-- Embroidered Shirt
-								["timeline"] = { ADDED_6_0_3 },
-								["cost"] = 10000000,	-- 1,000g
+								timeline = { ADDED_6_0_3 },
+								cost = 10000000,	-- 1,000g
 							}),
 							i(42363),	-- Golden Filigreed Doublet
 							i(42373),	-- Golden Filigreed Shirt
@@ -3725,44 +3725,44 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(35826, {	-- Kaye Toogie
-						["description"] = "When using |cff0070ddWormhole Generator: Northrend|r, you have a chance to receive the option 'Underground...,' which ports you to the vendor. You must have Engineering to use the toy.",
-						["requireSkill"] = ENGINEERING,
-						["groups"] = {
+						description = "When using |cff0070ddWormhole Generator: Northrend|r, you have a chance to receive the option 'Underground...,' which ports you to the vendor. You must have Engineering to use the toy.",
+						requireSkill = ENGINEERING,
+						groups = {
 							i(16054, {	-- Schematic: Arcanite Dragonling (RECIPE!)
-								["timeline"] = { ADDED_3_0_3 },
-								["isLimited"] = true,
+								timeline = { ADDED_3_0_3 },
+								isLimited = true,
 							}),
 							i(13311, {	-- Schematic: Mechanical Dragonling (RECIPE!)
-								["isLimited"] = true,
+								isLimited = true,
 							}),
 							i(10609, {	-- Schematic: Mithril Mechanical Dragonling (RECIPE!)
-								["isLimited"] = true,
+								isLimited = true,
 							}),
 						},
 					}),
 					n(29496, {	-- Kerta the Bold <Axe & Polearm Merchant>
-						["coord"] = { 54.4, 62.0, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 54.4, 62.0, NORTHREND_DALARAN },
+						groups = {
 							i(44642),	-- Dalaran Axe
 							i(44640),	-- Dalaran Great Axe
 							i(44654),	-- Dalaran Spear
 						},
 					}),
 					n(32253, {	-- Kyunghee
-						["coord"] = { 71.6, 31.8, NORTHREND_DALARAN },
-						["races"] = HORDE_ONLY,
-						["sym"] = {{"select","itemID",
+						coord = { 71.6, 31.8, NORTHREND_DALARAN },
+						races = HORDE_ONLY,
+						sym = {{"select","itemID",
 							2523,	-- Bullova
 							2531,	-- Great Axe
 						}},
-						["groups"] = {
+						groups = {
 							i(2522),	-- Crescent Axe
 							i(2530),	-- Francisca
 						},
 					}),
 					n(29511, {	-- Lalla Brightweave <Spellfire Tailoring Specialist>
-						["coord"] = { 36.6, 32.8, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 36.6, 32.8, NORTHREND_DALARAN },
+						groups = {
 							i(24316),	-- Pattern: Spellcloth (RECIPE!)
 							i(21911),	-- Pattern: Spellfire Bag (RECIPE!)
 							i(21908),	-- Pattern: Spellfire Belt (RECIPE!)
@@ -3772,23 +3772,23 @@ root(ROOTS.Zones, {
 					}),
 					-- #if BEFORE 7.0.3
 					n(28723, {	-- Larana Drome <Inscription Supplies>
-						["coord"] = { 41.8, 36.8, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 41.8, 36.8, NORTHREND_DALARAN },
+						groups = {
 							i(50166, {	-- Technique: Glyph of Eternal Water / Technique: Glyph of Mana Shield [CATA+] / Technique: Glyph of Counterspell [MOP+]
-								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
+								timeline = { ADDED_3_3_0, DELETED_7_0_3 },
 							}),
 							i(50168, {	-- Technique: Glyph of Quick Decay / Technique: Glyph of Lash of Pain [CATA+] / Technique: Glyph of Everlasting Affliction [5.0.4+] / Glyph of Eternal Resolve [5.4.0+]
-								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
+								timeline = { ADDED_3_3_0, DELETED_7_0_3 },
 							}),
 							i(50167, {	-- Technique: Glyph of Rapid Rejuvenation
-								["timeline"] = { ADDED_3_3_0, DELETED_4_0_1 },
+								timeline = { ADDED_3_3_0, DELETED_4_0_1 },
 							}),
 						},
 					}),
 					-- #endif
 					n(29510, {	-- Linna Bruder <Shadoweave Tailoring Specialist>
-						["coord"] = { 34.6, 34.4, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 34.6, 34.4, NORTHREND_DALARAN },
+						groups = {
 							i(21915),	-- Pattern: Ebon Shadowbag (RECIPE!)
 							i(21914),	-- Pattern: Frozen Shadoweave Boots (RECIPE!)
 							i(21912),	-- Pattern: Frozen Shadoweave Shoulders (RECIPE!)
@@ -3797,8 +3797,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(29714, {	-- Lucian Trias <Bread & Cheese Vendor>
-						["coord"] = { 55.0, 31.1, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 55.0, 31.1, NORTHREND_DALARAN },
+						groups = {
 							-- Bread:
 							i(33449),	-- Crusty Flat Bread
 							i(44610),	-- Fresh Dalaran Bread
@@ -3811,33 +3811,33 @@ root(ROOTS.Zones, {
 						},
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, n(37941, {	-- Magister Arlan <Legacy Justice Quartermaster> / <Emblem of Frost Quartermaster> [WRATH]
-						["coord"] = { 65.9, 22.9, NORTHREND_DALARAN },
-						["races"] = HORDE_ONLY,
-						["groups"] = EMBLEM_OF_FROST_QUARTERMASTER_GROUPS,
+						coord = { 65.9, 22.9, NORTHREND_DALARAN },
+						races = HORDE_ONLY,
+						groups = EMBLEM_OF_FROST_QUARTERMASTER_GROUPS,
 					})),
 					n(31581, {	-- Magister Brasael <Legacy Justice Quartermaster> / <Emblem of Valor Quartermaster> [WRATH]
-						["coord"] = { 66.1, 23.4, NORTHREND_DALARAN },
-						["races"] = HORDE_ONLY,
-						["groups"] = EMBLEM_OF_VALOR_QUARTERMASTER_GROUPS,
+						coord = { 66.1, 23.4, NORTHREND_DALARAN },
+						races = HORDE_ONLY,
+						groups = EMBLEM_OF_VALOR_QUARTERMASTER_GROUPS,
 					}),
 					applyclassicphase(WRATH_PHASE_TWO, n(33963, {	-- Magister Sarien <Legacy Justice Quartermaster> / <Emblem of Conquest Quartermaster> [WRATH]
-						["coord"] = { 65.7, 24.4, NORTHREND_DALARAN },
-						["races"] = HORDE_ONLY,
-						["groups"] = EMBLEM_OF_CONQUEST_QUARTERMASTER_GROUPS,
+						coord = { 65.7, 24.4, NORTHREND_DALARAN },
+						races = HORDE_ONLY,
+						groups = EMBLEM_OF_CONQUEST_QUARTERMASTER_GROUPS,
 					})),
 					n(31582, {	-- Magistrix Lambriesse <Legacy Justice Quartermaster> / <Emblem of Heroism Quartermaster> [WRATH]
-						["coord"] = { 65.6, 22.7, NORTHREND_DALARAN },
-						["races"] = HORDE_ONLY,
-						["groups"] = EMBLEM_OF_HEROISM_QUARTERMASTER_GROUPS,
+						coord = { 65.6, 22.7, NORTHREND_DALARAN },
+						races = HORDE_ONLY,
+						groups = EMBLEM_OF_HEROISM_QUARTERMASTER_GROUPS,
 					}),
 					applyclassicphase(WRATH_PHASE_THREE, n(35495, {	-- Magistrix Vesara <Legacy Justice Quartermaster> / <Emblem of Triumph Quartermaster> [WRATH]
-						["coord"] = { 65.0, 23.0, NORTHREND_DALARAN },
-						["races"] = HORDE_ONLY,
-						["groups"] = EMBLEM_OF_TRIUMPH_QUARTERMASTER_H_GROUPS,
+						coord = { 65.0, 23.0, NORTHREND_DALARAN },
+						races = HORDE_ONLY,
+						groups = EMBLEM_OF_TRIUMPH_QUARTERMASTER_H_GROUPS,
 					})),
 					n(35500, {	-- Matilda Brightlink <Mail Armor Merchant>
-						["coord"] = { 51.7, 73.0, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 51.7, 73.0, NORTHREND_DALARAN },
+						groups = {
 							cl(HUNTER, appendGroups(
 								TIER_TEN_HEROIC_GROUPS.HUNTER,
 								TIER_TEN_NORMAL_GROUPS.HUNTER,
@@ -3851,41 +3851,41 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(32216, {	-- Mei Francis <Exotic Mounts>
-						["coord"] = { 57.8, 42.5, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 57.8, 42.5, NORTHREND_DALARAN },
+						groups = {
 							ach(2076, {	-- Armored Brown Bear
-								["providers"] = {
+								providers = {
 									{ "i", 44225 },	-- Armored Brown Bear (A) (MOUNT!)
 									{ "i", 44226 },	-- Armored Brown Bear (H) (MOUNT!)
 								},
 							}),
 							ach(2078, {	-- Traveler's Tundra Mammoth
-								["providers"] = {
+								providers = {
 									{ "i", 44235 },	-- Traveler's Tundra Mammoth (A) (MOUNT!)
 									{ "i", 44234 },	-- Traveler's Tundra Mammoth (H) (MOUNT!)
 								},
 							}),
 							ach(2077, {	-- Wooly Mammoth
-								["providers"] = {
+								providers = {
 									{ "i", 44230 },	-- Wooly Mammoth (A) (MOUNT!)
 									{ "i", 44231 },	-- Wooly Mammoth (H) (MOUNT!)
 								},
 							}),
 							i(44690, {	-- Armored Blue Wind Rider (MOUNT!)
-								["races"] = HORDE_ONLY,
-								["cost"] = 20000000,	-- 2,000g
+								races = HORDE_ONLY,
+								cost = 20000000,	-- 2,000g
 							}),
 							i(44225, {	-- Armored Brown Bear (A) (MOUNT!)
-								["races"] = ALLIANCE_ONLY,
-								["cost"] = 7500000,	-- 750g
+								races = ALLIANCE_ONLY,
+								cost = 7500000,	-- 750g
 							}),
 							i(44226, {	-- Armored Brown Bear (H) (MOUNT!)
-								["races"] = HORDE_ONLY,
-								["cost"] = 7500000,	-- 750g
+								races = HORDE_ONLY,
+								cost = 7500000,	-- 750g
 							}),
 							i(44689, {	-- Armored Snowy Gryphon (MOUNT!)
-								["races"] = ALLIANCE_ONLY,
-								["cost"] = 20000000,	-- 2,000g
+								races = ALLIANCE_ONLY,
+								cost = 20000000,	-- 2,000g
 							}),
 							h(i(25475)),	-- Blue Wind Rider (MOUNT!)
 							a(i(25471)),	-- Ebon Gryphon (MOUNT!)
@@ -3902,16 +3902,16 @@ root(ROOTS.Zones, {
 							h(i(25532)),	-- Swift Yellow Wind Rider (MOUNT!)
 							h(i(25474)),	-- Tawny Wind Rider (MOUNT!)
 							i(44235, {	-- Traveler's Tundra Mammoth (A) (MOUNT!)
-								["races"] = ALLIANCE_ONLY,
-								["cost"] = 200000000,	-- 20,000g
+								races = ALLIANCE_ONLY,
+								cost = 200000000,	-- 20,000g
 							}),
 							i(44234, {	-- Traveler's Tundra Mammoth (H) (MOUNT!)
-								["races"] = HORDE_ONLY,
-								["cost"] = 200000000,	-- 20,000g
+								races = HORDE_ONLY,
+								cost = 200000000,	-- 20,000g
 							}),
 							i(44230, {	-- Wooly Mammoth (A) (MOUNT!)
-								["races"] = ALLIANCE_ONLY,
-								["cost"] = {
+								races = ALLIANCE_ONLY,
+								cost = {
 									-- #if AFTER CATA
 									{ "g", 100000000 },	-- 10,000g
 									-- #else
@@ -3920,8 +3920,8 @@ root(ROOTS.Zones, {
 								},
 							}),
 							i(44231, {	-- Wooly Mammoth (H) (MOUNT!)
-								["races"] = HORDE_ONLY,
-								["cost"] = {
+								races = HORDE_ONLY,
+								cost = {
 									-- #if AFTER CATA
 									{ "g", 100000000 },	-- 10,000g
 									-- #else
@@ -3929,22 +3929,22 @@ root(ROOTS.Zones, {
 									-- #endif
 								},
 							}),
-							i(224270, {["timeline"] = { ADDED_10_2_7 }}),	-- Certificate of Ownership (RECIPE!)
+							i(224270, {timeline = { ADDED_10_2_7 }}),	-- Certificate of Ownership (RECIPE!)
 						},
 					}),
 					n(32420, {	-- Mimbihi <Barmaid>
-						["coord"] = { 67.4, 32.2, NORTHREND_DALARAN },
-						["description"] = "Mimbihi is walking around in the Tavern.",
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						coord = { 67.4, 32.2, NORTHREND_DALARAN },
+						description = "Mimbihi is walking around in the Tavern.",
+						races = HORDE_ONLY,
+						groups = {
 							i(35948),	-- Savoury Snowplum
 							i(35949),	-- Tundra Berries
 						},
 					}),
 					n(29529, {	-- Ninsianna <Relics>
-						["description"] = "If you /dance with her, she will say Not bad, though some additional schooling wouldn't hurt! Here, watch my hips... like so! and start dancing.",
+						description = "If you /dance with her, she will say Not bad, though some additional schooling wouldn't hurt! Here, watch my hips... like so! and start dancing.",
 						-- #if BEFORE MOP
-						["groups"] = bubbleDown({ ["timeline"] = { REMOVED_5_0_4 } }, {
+						groups = bubbleDown({ timeline = { REMOVED_5_0_4 } }, {
 							emof(30, i(50458)),	-- Bizuri's Totem of Shattered Ice
 							emov(25, i(40342)),	-- Idol of Awakening
 							emot(25, i(47671)),	-- Idol of Flaring Growth
@@ -3981,8 +3981,8 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					n(29495, {	-- Norvin Alderman <Cloaks>
-						["coord"] = { 44.7, 48.9, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 44.7, 48.9, NORTHREND_DALARAN },
+						groups = {
 							emov(25, i(40724)),	-- Cloak of Kea Feathers
 							emov(25, i(40723)),	-- Disguise of the Kumiho
 							emof(50, i(50468)),	-- Drape of the Violet Tower
@@ -3995,15 +3995,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(29527, {	-- Orton Bennet <Offhand Offerings>
-						["coord"] = { 51.9, 55.1, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 51.9, 55.1, NORTHREND_DALARAN },
+						groups = {
 							emoh(25, i(40699)),	-- Handbook of Obscure Remedies
 							emoh(25, i(40698)),	-- Ward of the Violet Citadel
 						},
 					}),
 					n(28995, {	-- Paldesse <Cloth Armor Merchant>
-						["coord"] = { 43.8, 49.4, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 43.8, 49.4, NORTHREND_DALARAN },
+						groups = {
 							cl(MAGE, appendGroups(
 								TIER_EIGHT_HEROIC_GROUPS.MAGE,
 								TIER_EIGHT_GROUPS.MAGE,
@@ -4036,8 +4036,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(35497, {	-- Rafael Langrom <Leather Armor Merchant>
-						["coord"] = { 51.2, 71.5, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 51.2, 71.5, NORTHREND_DALARAN },
+						groups = {
 							cl(DRUID, appendGroups(
 								TIER_TEN_HEROIC_GROUPS.DRUID,
 								TIER_TEN_NORMAL_GROUPS.DRUID,
@@ -4051,8 +4051,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(35496, {	-- Rueben Lauren <Cloth Armor Merchant>
-						["coord"] = { 44.1, 48.9, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 44.1, 48.9, NORTHREND_DALARAN },
+						groups = {
 							cl(MAGE, appendGroups(
 								TIER_TEN_HEROIC_GROUPS.MAGE,
 								TIER_TEN_NORMAL_GROUPS.MAGE,
@@ -4071,8 +4071,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(29703, {	-- Sheddle Glossgleam <Cobbler>
-						["coord"] = { 45.0, 46.5, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 45.0, 46.5, NORTHREND_DALARAN },
+						groups = {
 							emov(40, i(40742)),	-- Bladed Steelboots
 							emov(40, i(40748)),	-- Boots of Captain Ellis
 							emov(40, i(40743)),	-- Kyzoc's Ground Stompers
@@ -4085,39 +4085,39 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(29494, {	-- Shen Kang Cheng <Staves>
-						["coord"] = { 49.6, 72.6, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 49.6, 72.6, NORTHREND_DALARAN },
+						groups = {
 							i(44655),	-- Dalaran Stave
 						},
 					}),
 					-- #if AFTER CATA
 					n(32712, {	-- The Amazing Zanzo
-						["description"] = "This NPC have two possiple spawns and routes: Either leaving The Militiant Mystic in The Eventide going to the nearby bank, or leaving the Legerdemain Lounge for a stroll through the Magus Commerce Exchange and back.",
-						["groups"] = {
+						description = "This NPC have two possiple spawns and routes: Either leaving The Militiant Mystic in The Eventide going to the nearby bank, or leaving the Legerdemain Lounge for a stroll through the Magus Commerce Exchange and back.",
+						groups = {
 							{
-								["recipeID"] = 28272,	-- Polymorph (Pig)
-								["classes"] = { MAGE },
+								recipeID = 28272,	-- Polymorph (Pig)
+								classes = { MAGE },
 							},
 						},
 					}),
 					-- #endif
 					n(32419, {	-- Umbiwa <Barmaid>
-						["coord"] = { 67.4, 32.2, NORTHREND_DALARAN },
-						["description"] = "Umbiwa is walking around in the Tavern.",
-						["races"] = HORDE_ONLY,
-						["sym"] = {{ "sub", "common_vendor", 32420 }},	-- Mimbihi <Barmaid>
+						coord = { 67.4, 32.2, NORTHREND_DALARAN },
+						description = "Umbiwa is walking around in the Tavern.",
+						races = HORDE_ONLY,
+						sym = {{ "sub", "common_vendor", 32420 }},	-- Mimbihi <Barmaid>
 					}),
 					n(28991, {	-- Valaden Silverblade <Sword Merchant>
-						["coord"] = { 54.5, 62.9, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 54.5, 62.9, NORTHREND_DALARAN },
+						groups = {
 							i(44639),	-- Dalaran Greatsword
 							i(44638),	-- Dalaran Sword
 							emoh(50, i(40703)),	-- Grasscutter
 						},
 					}),
 					n(28992, {	-- Valerie Langrom <Leather Armor Merchant>
-						["coord"] = { 51.6, 72.4, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 51.6, 72.4, NORTHREND_DALARAN },
+						groups = {
 							cl(DRUID, appendGroups(
 								TIER_EIGHT_HEROIC_GROUPS.DRUID,
 								TIER_EIGHT_GROUPS.DRUID,
@@ -4149,104 +4149,104 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(32514, {	-- Vanessa Sellers
-						["coord"] = { 38.4, 41.1, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 38.4, 41.1, NORTHREND_DALARAN },
+						groups = {
 							i(44483, {	-- Formula: Enchant 2H Weapon - Massacre (RECIPE!)
-								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
-								["timeline"] = { ADDED_3_1_0 },
+								cost = { { "i", 34052, 10 } },	-- 10x Dream Shard
+								timeline = { ADDED_3_1_0 },
 							}),
 							i(44490, {	-- Formula: Enchant Boots - Greater Assault (RECIPE!)
-								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
-								["timeline"] = { ADDED_3_1_0 },
+								cost = { { "i", 34052, 4 } },	-- 4x Dream Shard
+								timeline = { ADDED_3_1_0 },
 							}),
 							i(44491, {	-- Formula: Enchant Boots - Tuskarr's Vitality (RECIPE!)
-								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
+								cost = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(44484, {	-- Formula: Enchant Bracer - Greater Assault (RECIPE!)
-								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
+								cost = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(44944, {	-- Formula: Enchant Bracer - Major Stamina (RECIPE!)
-								["cost"] = { { "i", 34057, 5 } },	-- 5x Abyss Crystal
-								["timeline"] = { ADDED_3_1_0 },
+								cost = { { "i", 34057, 5 } },	-- 5x Abyss Crystal
+								timeline = { ADDED_3_1_0 },
 							}),
 							i(44498, {	-- Formula: Enchant Bracer - Superior Spellpower (RECIPE!)
-								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
-								["timeline"] = { ADDED_3_1_0 },
+								cost = { { "i", 34052, 4 } },	-- 4x Dream Shard
+								timeline = { ADDED_3_1_0 },
 							}),
 							i(37340, {	-- Formula: Enchant Chest - Exceptional Armor / WOTLK: ormula: Enchant Chest - Exceptional Resilience (RECIPE!)
-								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
+								cost = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(44489, {	-- Formula: Enchant Chest - Powerful Stats (RECIPE!)
-								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
-								["timeline"] = { ADDED_3_1_0 },
+								cost = { { "i", 34052, 4 } },	-- 4x Dream Shard
+								timeline = { ADDED_3_1_0 },
 							}),
 							i(44472, {	-- Formula: Enchant Cloak - Greater Speed (RECIPE!)
-								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
+								cost = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(44471, {	-- Formula: Enchant Cloak - Mighty Stamina (RECIPE!)
-								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
+								cost = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(37349, {	-- Formula: Enchant Cloak - Shadow Armor (RECIPE!)
-								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
+								cost = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(37347, {	-- Formula: Enchant Cloak - Superior Dodge / WOTLK: ormula: Enchant Cloak - Titanweave (RECIPE!)
-								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
+								cost = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(44488, {	-- Formula: Enchant Cloak - Wisdom (RECIPE!)
-								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
+								cost = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(44485, {	-- Formula: Enchant Gloves - Armsman (RECIPE!)
-								["cost"] = { { "i", 34052, 4 } },	-- 4x Dream Shard
+								cost = { { "i", 34052, 4 } },	-- 4x Dream Shard
 							}),
 							i(45059, {	-- Formula: Enchant Staff - Greater Spellpower (RECIPE!)
-								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
-								["timeline"] = { ADDED_3_1_0 },
+								cost = { { "i", 34052, 10 } },	-- 10x Dream Shard
+								timeline = { ADDED_3_1_0 },
 							}),
 							i(44496, {	-- Formula: Enchant Weapon - Accuracy (RECIPE!)
-								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
-								["timeline"] = { ADDED_3_1_0 },
+								cost = { { "i", 34052, 10 } },	-- 10x Dream Shard
+								timeline = { ADDED_3_1_0 },
 							}),
 							i(44492, {	-- Formula: Enchant Weapon - Berserking (RECIPE!)
-								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
-								["timeline"] = { ADDED_3_1_0 },
+								cost = { { "i", 34052, 10 } },	-- 10x Dream Shard
+								timeline = { ADDED_3_1_0 },
 							}),
 							i(44495, {	-- Formula: Enchant Weapon - Black Magic (RECIPE!)
-								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
-								["timeline"] = { ADDED_3_1_0 },
+								cost = { { "i", 34052, 10 } },	-- 10x Dream Shard
+								timeline = { ADDED_3_1_0 },
 							}),
 							i(37339, {	-- Formula: Enchant Weapon - Giant Slayer (RECIPE!)
-								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
+								cost = { { "i", 34052, 10 } },	-- 10x Dream Shard
 							}),
 							i(37344, {	-- Formula: Enchant Weapon - Icebreaker (RECIPE!)
-								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
+								cost = { { "i", 34052, 10 } },	-- 10x Dream Shard
 							}),
 							i(44494, {	-- Formula: Enchant Weapon - Lifeward (RECIPE!)
-								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
+								cost = { { "i", 34052, 10 } },	-- 10x Dream Shard
 							}),
 							i(44487, {	-- Formula: Enchant Weapon - Mighty Spellpower (RECIPE!)
-								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
-								["timeline"] = { ADDED_3_1_0 },
+								cost = { { "i", 34052, 10 } },	-- 10x Dream Shard
+								timeline = { ADDED_3_1_0 },
 							}),
 							i(44473, {	-- Formula: Enchant Weapon - Scourgebane (RECIPE!)
-								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
+								cost = { { "i", 34052, 10 } },	-- 10x Dream Shard
 							}),
 							i(44486, {	-- Formula: Enchant Weapon - Superior Potency (RECIPE!)
-								["cost"] = { { "i", 34052, 10 } },	-- 10x Dream Shard
-								["timeline"] = { ADDED_3_1_0 },
+								cost = { { "i", 34052, 10 } },	-- 10x Dream Shard
+								timeline = { ADDED_3_1_0 },
 							}),
 						},
 					}),
 					n(29497, {	-- Walther Whiteford <Mace Merchant>
-						["coord"] = { 55.8, 62.8, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 55.8, 62.8, NORTHREND_DALARAN },
+						groups = {
 							i(44636),	-- Dalaran Cudgel
 							i(44645),	-- Dalaran Hammer
 						},
 					}),
 					-- #if AFTER 8.0.1
 					n(28994, {	-- Wanda Chanter <Wands> [BFA+] / Abra Cadabra [WRATH]
-						["coord"] = { 49.1, 73.2, NORTHREND_DALARAN },
-						["groups"] = {
+						coord = { 49.1, 73.2, NORTHREND_DALARAN },
+						groups = {
 							emot(25, i(47658)),	-- Brimstone Igniter
 							i(40019),	-- Wand of Amber
 							i(40021),	-- Wand of Crystal
@@ -4259,14 +4259,14 @@ root(ROOTS.Zones, {
 				-- #if NOT ANYCLASSIC
 				-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 				o(208317, {	-- Warchief's Command Board
-					["coords"] = {
+					coords = {
 						{ 48.7, 39.6, NORTHREND_DALARAN },
 						{ 59.2, 27.4, NORTHREND_DALARAN },
 					},
-					["timeline"] = { ADDED_4_0_1 },
-					["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
-					["races"] = HORDE_ONLY,
-					["skipFill"] = true,
+					timeline = { ADDED_4_0_1 },
+					sym = WARCHIEFS_COMMAND_BOARD_SYMLINK,
+					races = HORDE_ONLY,
+					skipFill = true,
 				}),
 				-- #endif
 			},

@@ -5,8 +5,8 @@
 root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.LEGION, {
 		n(LEGION_INVASIONS, {
-			["description"] = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
-			["maps"] = {
+			description = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
+			maps = {
 				VALSHARAH,
 				HIGHMOUNTAIN,
 				STORMHEIM,
@@ -17,9 +17,9 @@ root(ROOTS.ExpansionFeatures,
 				696,	-- Stormheim (scenario)
 				1642,	-- Val'sharah (Scenario)
 			},
-			["questID"] = 47063,	-- Tracking Quest
-			["isWorldQuest"] = true,
-			["groups"] = {
+			questID = 47063,	-- Tracking Quest
+			isWorldQuest = true,
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(11544, {	-- Defender of the Broken Isles
 						crit(36546),	-- Battle for Azsuna
@@ -35,98 +35,98 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				n(QUESTS, {
 					q(46205, {	-- A Conduit No More
-						["sourceQuests"] = { 45795 },	-- Presence of Power
-						["provider"] = { "n", 117774 },	-- Prince Farondis
-						["coord"] = { 55.1, 67.4, AZSUNA },
-						["repeatable"] = true,
+						sourceQuests = { 45795 },	-- Presence of Power
+						provider = { "n", 117774 },	-- Prince Farondis
+						coord = { 55.1, 67.4, AZSUNA },
+						repeatable = true,
 					}),
 					q(45838, {	-- Assault on Azsuna
-						["repeatable"] = true,
-						["groups"] = {
+						repeatable = true,
+						groups = {
 							-- Blizzard links this HQT as the criteria for 'Defender of the Broken Isles' (11544)
-							hqt(47193, {["name"] = "First Completion"}),
+							hqt(47193, {name = "First Completion"}),
 						}
 					}),
 					q(45840, {	-- Assault on Highmountain
-						["repeatable"] = true,
-						["groups"] = {
+						repeatable = true,
+						groups = {
 							-- Blizzard links this HQT as the criteria for 'Defender of the Broken Isles' (11544)
-							hqt(47194, {["name"] = "First Completion"}),
+							hqt(47194, {name = "First Completion"}),
 						}
 					}),
 					q(45839, {	-- Assault on Stormheim
-						["repeatable"] = true,
-						["groups"] = {
+						repeatable = true,
+						groups = {
 							-- Blizzard links this HQT as the criteria for 'Defender of the Broken Isles' (11544)
-							hqt(47195, {["name"] = "First Completion"}),
+							hqt(47195, {name = "First Completion"}),
 						}
 					}),
 					q(45812, {	-- Assault on Val'sharah
-						["repeatable"] = true,
-						["groups"] = {
+						repeatable = true,
+						groups = {
 							-- Blizzard links this HQT as the criteria for 'Defender of the Broken Isles' (11544)
-							hqt(47196, {["name"] = "First Completion"}),
+							hqt(47196, {name = "First Completion"}),
 						}
 					}),
 					q(46199, {	-- Battle for Azsuna
-						["sourceQuests"] = { 46205 },	-- A Conduit No More
-						["provider"] = { "n", 119002 },	-- Prince Farondis
-						["coord"] = { 58.4, 21.4, AZSUNA },
-						["repeatable"] = true,
+						sourceQuests = { 46205 },	-- A Conduit No More
+						provider = { "n", 119002 },	-- Prince Farondis
+						coord = { 58.4, 21.4, AZSUNA },
+						repeatable = true,
 					}),
 					q(46182, {	-- Battle for Highmountain
-						["sourceQuests"] = { 45572 },	-- Holding Our Ground
-						["provider"] = { "n", 119676 },	-- Lasan Skyhorn
-						["coord"] = { 50.2, 64.4, HIGHMOUNTAIN },
-						["repeatable"] = true,
+						sourceQuests = { 45572 },	-- Holding Our Ground
+						provider = { "n", 119676 },	-- Lasan Skyhorn
+						coord = { 50.2, 64.4, HIGHMOUNTAIN },
+						repeatable = true,
 					}),
 					q(45856, {	-- Battle for Val'sharah
-						["sourceQuests"] = { 44789 },	-- Holding the Ramparts
-						["provider"] = { "n", 118250 },	-- Commander Jarod Shadowsong
-						["coord"] = { 44.0, 50.6, VALSHARAH },
-						["repeatable"] = true,
+						sourceQuests = { 44789 },	-- Holding the Ramparts
+						provider = { "n", 118250 },	-- Commander Jarod Shadowsong
+						coord = { 44.0, 50.6, VALSHARAH },
+						repeatable = true,
 					}),
 					q(46110, {	-- Battle for Stormheim
-						["sourceQuests"] = { 45406 },	-- The Storm's Fury
-						["provider"] = { "n", 118778 },	-- Val'kyr of Odyn
-						["coord"] = { 81.7, 7.1, STORMHEIM },
-						["repeatable"] = true,
+						sourceQuests = { 45406 },	-- The Storm's Fury
+						provider = { "n", 118778 },	-- Val'kyr of Odyn
+						coord = { 81.7, 7.1, STORMHEIM },
+						repeatable = true,
 					}),
 					q(45572, {	-- Holding Our Ground
-						["sourceQuests"] = { 45840 },	-- Assault on Highmountain
-						["provider"] = { "n", 119944 },	-- Lasan Skyhorn
-						["coords"] = {
+						sourceQuests = { 45840 },	-- Assault on Highmountain
+						provider = { "n", 119944 },	-- Lasan Skyhorn
+						coords = {
 							{ 25.2, 22.6, 750 },	-- Thunder Totem
 							{ 44.2, 57.2, HIGHMOUNTAIN },
 						},
-						["repeatable"] = true,
+						repeatable = true,
 					}),
 					q(44789, {	-- Holding the Ramparts
-						["sourceQuests"] = { 45812 },	-- Assault on Val'sharah
-						["provider"] = { "n", 118183 },	-- Commander Jarod Shadowsong
-						["coord"] = { 39.0, 51.6, VALSHARAH },
-						["repeatable"] = true,
+						sourceQuests = { 45812 },	-- Assault on Val'sharah
+						provider = { "n", 118183 },	-- Commander Jarod Shadowsong
+						coord = { 39.0, 51.6, VALSHARAH },
+						repeatable = true,
 					}),
 					q(45795, {	-- Presence of Power
-						["sourceQuests"] = { 45838 },	-- Assault on Azsuna
-						["provider"] = { "n", 118942 },	-- Prince Farondis
-						["coord"] = { 56.0, 60.8, AZSUNA },
-						["repeatable"] = true,
+						sourceQuests = { 45838 },	-- Assault on Azsuna
+						provider = { "n", 118942 },	-- Prince Farondis
+						coord = { 56.0, 60.8, AZSUNA },
+						repeatable = true,
 					}),
 					q(45406, {	-- The Storm's Fury
-						["sourceQuests"] = { 45839 },	-- Assault on Stormheim
-						["provider"] = { "n", 116868 },	-- Vethir
-						["repeatable"] = true,
+						sourceQuests = { 45839 },	-- Assault on Stormheim
+						provider = { "n", 116868 },	-- Vethir
+						repeatable = true,
 					}),
 				}),
 				n(SCENARIO_COMPLETION, {
-					["crs"] = {
+					crs = {
 						118180,	-- Dread Vizier Gra'tork <Legion Commander>
 						119579,	-- Fel Commander Erixtol
 						118840,	-- Lord Commander Alexius
 						118975,	-- Xeritas
 					},
-					["sym"] = {
+					sym = {
 						SymSelector.select("LEGION_INVASIONS_WORLD_QUESTS"),
 						{"pop"},	-- Push all of the groups contained to the processing layer.
 						{"select", "itemID",
@@ -144,7 +144,7 @@ root(ROOTS.ExpansionFeatures,
 							147223,	-- Dauntless Trinket
 						},
 					},
-					["groups"] = {
+					groups = {
 						i(139158),	-- Battle Mace of the Niskaran Guard
 						i(139163),	-- Star of Niskara
 						i(138762),	-- Niskaran Morning Star
@@ -202,7 +202,7 @@ root(ROOTS.ExpansionFeatures,
 	})
 );
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
 			n(LEGION_INVASIONS, {

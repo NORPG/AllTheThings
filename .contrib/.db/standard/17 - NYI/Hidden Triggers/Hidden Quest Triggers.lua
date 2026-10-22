@@ -276,7 +276,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	----------------------
 	--      LEGION      --
 	----------------------
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 		n(PVP, {
 			q(45538),	-- 10v10 Weekly Quest UI
 			q(42548),	-- 10v10 #1
@@ -299,7 +299,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		}),
 		-- Legion start
 		q(42741),	-- Legion Expansion Started Tracking Quest
-		q(46733, { ["timeline"] = { ADDED_7_2_0 } }),	-- Legion Expansion Started Tracking Quest
+		q(46733, { timeline = { ADDED_7_2_0 } }),	-- Legion Expansion Started Tracking Quest
 		q(40658),	-- Durotar - Tracking Quest - W1 - See Demon Attack ("Demons Among Us" quest)
 		q(40768),	-- Orgrimmar - Tracking Quest - W1 - Intro to Illidari Complete - triggers when turning in "Keep Your Friends Close"
 		q(40616),	-- Tracking Quest - W1 - Saw Leader Die
@@ -310,12 +310,12 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(44659),	-- Dalaran - I Skipped The Intro Tracking Quest
 
 		-- Generic Order Hall
-		q(45171, { ["timeline"] = { ADDED_7_1_0 } }),	-- 7.1 Class Hall - Special - PVP - PVP Intro Mission - Tracking Quest
+		q(45171, { timeline = { ADDED_7_1_0 } }),	-- 7.1 Class Hall - Special - PVP - PVP Intro Mission - Tracking Quest
 		q(47661),	-- [DNT] - tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
 		q(47699),	-- [DNT] - tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
 		q(44483),	-- Vendor Beckon Trigger - triggers all classes
 		q(44484),	-- Vendor Beckon Trigger - triggers all classes
-		q(45773, { ["timeline"] = { ADDED_7_2_0 } }),	-- 7.2 Class Hall - Maximillian of Northshire - Acquisition - Track Mail Sent
+		q(45773, { timeline = { ADDED_7_2_0 } }),	-- 7.2 Class Hall - Maximillian of Northshire - Acquisition - Track Mail Sent
 
 		-- Random	-- TODO -Darkal
 
@@ -339,8 +339,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(42212),	-- Fire Mage - Flavor Event 03
 		q(42860),	-- Tracking - God-King Scene - something happened around turning in #38811/39791 that triggered some /yells from God-King Skovald
 		q(39017, {	-- Triggered when turning in first DK artifact completion quest (likely triggers after any first artifact quest for DK)
-			["name"] = "Flight Path Unlock",
-			["sourceQuests"] = {
+			name = "Flight Path Unlock",
+			sourceQuests = {
 				40740,	-- The Dead and the Damned [Blood Artifact]*
 				38990,	-- The Call of Icecrown [Frost Artifact] TODO: confirm
 				40930,	-- Apocalypse [Unholy Artifact] TODO: confirm
@@ -352,7 +352,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-------------------
 	--      BFA      --
 	-------------------
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 		-- VARIOUS
 		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success" (spellID 388051)
 		q(50419),	-- tracking quest from the 8.1.5 Blacksmithing questling ending with "Therazane's Choice"
@@ -588,8 +588,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(56881),	-- Triggered upon first entry into Nazjatar
 		q(56677),	-- Triggered sometime after turning in "Needs of the People", after picking up the dailies, but before leaving Newhome. TODO:  research more (possibly bodyguard dialogue quest?)
 		q(56661),	-- Triggered when walking into the "Void Chamber" cave
-		q(55604, {["isDaily"]=true}),	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
-		q(56901, {["isDaily"]=true}),	-- Triggers after buying anything from Mrrl's secret trader stock (requires cloak with special stock trait).
+		q(55604, {isDaily=true}),	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
+		q(56901, {isDaily=true}),	-- Triggers after buying anything from Mrrl's secret trader stock (requires cloak with special stock trait).
 		q(57191),	-- Glimmering Chest — Prismatic Manapearls
 		q(57192),	-- Glimmering Chest — Prismatic Manapearls
 		q(56571),	-- Triggers when completing the Baine Rescue scenario. Probably used as unlock criteria for the Tauren Heritage armor chain
@@ -667,7 +667,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	------------------
 	--      SL      --
 	------------------
-	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 		n(GROUP_FINDER, {
 			q(62079),	-- Received weekly Mythic+ Keystone
 		}),
@@ -749,24 +749,24 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(64536),	-- looting Maldraxxus Larva Shell (300 Catalogued Research)
 
 		-- Unknown?
-		q(64655, {["timeline"] = {ADDED_9_1_0}}),	-- unsure precisely what triggers this - it was added late in the PTR cycle and popped originally in Korthia.  popped soon after i logged in on my main on retail
+		q(64655, {timeline = {ADDED_9_1_0}}),	-- unsure precisely what triggers this - it was added late in the PTR cycle and popped originally in Korthia.  popped soon after i logged in on my main on retail
 	})),
 
 	------------------
 	--      DF      --
 	------------------
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 		n(PVP, {
-			q(79332, {["timeline"] = {ADDED_10_2_0}, ["repeatable"] = true}),	-- Triggers after winning a Brawl: Battleground Blitz (possibly only when there's an enlistment bonus?)
+			q(79332, {timeline = {ADDED_10_2_0}, repeatable = true}),	-- Triggers after winning a Brawl: Battleground Blitz (possibly only when there's an enlistment bonus?)
 		}),
 	})),
 
 	------------------
 	--     TWW      --
 	------------------
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		q(94711, { ["timeline"] = { ADDED_12_0_0 } }),						-- Flags and unflags randomly when interacting with vendors?
-		q(95270, { ["isDaily"] = true, ["timeline"] = { ADDED_11_2_7 } }),	-- Triggers literally anywhere for anything? (bountiful chest, killing boss, using items, finishing quests etc.)
+	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+		q(94711, { timeline = { ADDED_12_0_0 } }),						-- Flags and unflags randomly when interacting with vendors?
+		q(95270, { isDaily = true, timeline = { ADDED_11_2_7 } }),	-- Triggers literally anywhere for anything? (bountiful chest, killing boss, using items, finishing quests etc.)
 	})),
 
 	--------------------

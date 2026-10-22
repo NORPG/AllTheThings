@@ -3,11 +3,11 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
-	["timeline"] = { ADDED_12_0_0 },
-	["groups"] = {
+	timeline = { ADDED_12_0_0 },
+	groups = {
 		n(ACHIEVEMENTS, {
-			ach(41805, { ["timeline"] = { ADDED_12_0_1_LAUNCH } }),	-- Arator's Journey
-			ach(62188, { ["timeline"] = { ADDED_12_0_1_LAUNCH } }),	-- More Than Just Their Roots (Automated)
+			ach(41805, { timeline = { ADDED_12_0_1_LAUNCH } }),	-- Arator's Journey
+			ach(62188, { timeline = { ADDED_12_0_1_LAUNCH } }),	-- More Than Just Their Roots (Automated)
 			ach(62386, {	-- Light Up the Night
 				i(252011),	-- Brilliant Petalwing (MOUNT)
 			}),
@@ -21,13 +21,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(61859),	-- Midnight Flight Master
 			skyriding(ach(61584, {	-- Midnight Glyph Hunter
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					61576,	-- Eversong Woods Glyph Hunter
 					61582,	-- Harandar Glyph Hunter
 					61583,	-- Voidstorm Glyph Hunter
 					61581,	-- Zul'Aman Glyph Hunter
 				}},
-				["groups"] = { i(257145) },	-- Crimson Dragonhawk (MOUNT!)
+				groups = { i(257145) },	-- Crimson Dragonhawk (MOUNT!)
 			})),
 			ach(62104),	-- Midnight Lore Hunter
 			ach(61839, {	-- Midnight Pathfinder
@@ -38,16 +38,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			ach(62057),	-- Midnight: The Highest Peaks
 			ach(61910, {	-- Mrglgrgl of Grglmrgl
-				title(766, {["timeline"] = { ADDED_12_0_5 }}),	-- <Name>, Mrglgrgl of Grglmrgl
+				title(766, {timeline = { ADDED_12_0_5 }}),	-- <Name>, Mrglgrgl of Grglmrgl
 			}),
-			ach(60891, { ["timeline"] = { ADDED_12_0_1_LAUNCH } }),	-- The Crimson Rogue
+			ach(60891, { timeline = { ADDED_12_0_1_LAUNCH } }),	-- The Crimson Rogue
 			ach(63713, {	-- The Coreway Advance
-				["timeline"] = { ADDED_12_1_7 },
-				--["groups"] = { i(XXXXXX) },	-- TBD
+				timeline = { ADDED_12_1_7 },
+				--groups = { i(XXXXXX) },	-- TBD
 			}),
 			ach(61854, {	-- The Midnight Explorer
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					61855,	-- Explore Eversong Woods
 					61520,	-- Explore Harandar
 					61857,	-- Explore Voidstorm
@@ -56,22 +56,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			ach(42117),	-- The War of Light and Shadow
 		}),
-		header(HEADERS.Achievement, 62188, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {	-- More Than Just Their Roots
+		header(HEADERS.Achievement, 62188, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {	-- More Than Just Their Roots
 			-- This allows achCriteria to link NPCs and plot coordinates directly from the Achievement
 			n(245103, {	-- Chonon
-				["coord"] = { 58.4, 30.0, MOUNT_HYJAL },
+				coord = { 58.4, 30.0, MOUNT_HYJAL },
 			}),
 			n(245107, {	-- Fuunid
-				["coord"] = { 34.2, 52.6, AMIRDRASSIL },
+				coord = { 34.2, 52.6, AMIRDRASSIL },
 			}),
 			n(251936, {	-- Kawayn
-				["coord"] = { 50.8, 42.6, GRIZZLY_HILLS },
+				coord = { 50.8, 42.6, GRIZZLY_HILLS },
 			}),
 			n(245105, {	-- Or'jan
-				["coord"] = { 33.2, 66.8, DARKSHORE },
+				coord = { 33.2, 66.8, DARKSHORE },
 			}),
 			n(245106, {	-- Zhakir
-				["coord"] = { 46.6, 35.6, VALSHARAH },
+				coord = { 46.6, 35.6, VALSHARAH },
 			}),
 		})),
 	},

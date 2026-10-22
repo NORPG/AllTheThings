@@ -2,35 +2,35 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 	inst(726, {	-- The Arcway
-		["mapID"] = 749,
-		["lvl"] = 110,
-		["groups"] = {
+		mapID = 749,
+		lvl = 110,
+		groups = {
 			n(WORLD_QUESTS, {
 				q(43639, {	-- The Arcway: Arcanist Down
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(43637, {	-- The Arcway: Clogged Drain
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(43640, {	-- The Arcway: Creeping Suspicions
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(43638, {	-- The Arcway: Silver Serpent
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(43641, {	-- The Arcway: Wandering Plague
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
-					["groups"] = {
+					isWorldQuest = true,
+					lvl = 110,
+					groups = {
 						i(141053, {	-- Technique: Glyph of Polymorphic Proportions (RECIPE!)
-							["description"] = "The rare that drops this glyph is only available during the WQ The Arcway: Wandering Plague.",
-							["cr"] = 111057,	-- The Rat King
+							description = "The rare that drops this glyph is only available during the WQ The Arcway: Wandering Plague.",
+							cr = 111057,	-- The Rat King
 						}),
 					},
 				}),
@@ -115,8 +115,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				})),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				["ItemAppearanceModifierID"] = 0,
-				["groups"] = {
+				ItemAppearanceModifierID = 0,
+				groups = {
 					cr(98203, e(1497, {	-- Ivanyr
 						ach(10773),	-- Arcanic Cling
 						i(134269),	-- Arcane Defender's Belt
@@ -172,7 +172,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						ach(10813),	-- Mythic: The Arcway
 						ach(10864),	-- Mythic: The Arcway Guild Run
 						ach(10776, {	-- No Time to Waste
-							["crs"] = { 103130 },	-- Timeless Wraith
+							crs = { 103130 },	-- Timeless Wraith
 						}),
 						i(137851),	-- Design: Tranquil Necklace of Prophecy [Rank 3] (RECIPE!)
 						i(134267),	-- Arcane Defender's Breastplate

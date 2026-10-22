@@ -6,7 +6,7 @@
 -- the 'cost' on the Tier items sold for gold since it would make it appear that they are sold using the Tier Token, when they are not.
 
 local HELM_CONQ = i(71675, {	-- Helm of the Fiery Conqueror
-	["sym"] = {{"select","itemID",
+	sym = {{"select","itemID",
 		71282,	-- Balespider's Hood
 		71272,	-- Cowl of the Cleansing Flame
 		71277,	-- Hood of the Cleansing Flame
@@ -16,7 +16,7 @@ local HELM_CONQ = i(71675, {	-- Helm of the Fiery Conqueror
 	}},
 });
 local HELM_PROT = i(71682, {	-- Helm of the Fiery Protector
-	["sym"] = {{"select","itemID",
+	sym = {{"select","itemID",
 		71298,	-- Erupting Volcanic Faceguard
 		71293,	-- Erupting Volcanic Headpiece
 		71303,	-- Erupting Volcanic Helmet
@@ -26,7 +26,7 @@ local HELM_PROT = i(71682, {	-- Helm of the Fiery Protector
 	}},
 });
 local HELM_VANQ = i(71668, {	-- Helm of the Fiery Vanquisher
-	["sym"] = {{"select","itemID",
+	sym = {{"select","itemID",
 		71047,	-- Dark Phoenix Helmet
 		70954,	-- Elementium Deathplate Faceguard
 		71060,	-- Elementium Deathplate Helmet
@@ -37,7 +37,7 @@ local HELM_VANQ = i(71668, {	-- Helm of the Fiery Vanquisher
 	}},
 });
 local SHOULDER_CONQ = i(71681, {	-- Mantle of the Fiery Conqueror
-	["sym"] = {{"select","itemID",
+	sym = {{"select","itemID",
 		71285,	-- Balespider's Mantle
 		71095,	-- Immolation Mantle
 		71067,	-- Immolation Pauldrons
@@ -47,7 +47,7 @@ local SHOULDER_CONQ = i(71681, {	-- Mantle of the Fiery Conqueror
 	}},
 });
 local SHOULDER_PROT = i(71688, {	-- Mantle of the Fiery Protector
-	["sym"] = {{"select","itemID",
+	sym = {{"select","itemID",
 		71300,	-- Erupting Volcanic Mantle
 		71295,	-- Erupting Volcanic Shoulderwraps
 		71305,	-- Erupting Volcanic Spaulders
@@ -57,7 +57,7 @@ local SHOULDER_PROT = i(71688, {	-- Mantle of the Fiery Protector
 	}},
 });
 local SHOULDER_VANQ = i(71674, {	-- Mantle of the Fiery Vanquisher
-	["sym"] = {{"select","itemID",
+	sym = {{"select","itemID",
 		71049,	-- Dark Phoenix Spaulders
 		71062,	-- Elementium Deathplate Pauldrons
 		70951,	-- Elementium Deathplate Shoulderguards
@@ -79,78 +79,78 @@ local HEROIC_DIFFICULTY_ID = DIFFICULTY.LEGACY_RAID.MULTI.HEROIC;
 -- #endif
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, inst(78, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 }, }, {	-- Firelands
-		["coord"] = { 47.3, 78.1, MOUNT_HYJAL },
-		["maps"] = { 367, 368, 369 },
-		["isRaid"] = true,
-		["lvl"] = 85,
-		["groups"] = {
+	applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, inst(78, bubbleDownSelf({ timeline = { ADDED_4_2_0 }, }, {	-- Firelands
+		coord = { 47.3, 78.1, MOUNT_HYJAL },
+		maps = { 367, 368, 369 },
+		isRaid = true,
+		lvl = 85,
+		groups = {
 			header(HEADERS.Item, 71086, {	-- Dragonwrath, Tarecgosa's Rest
-				["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER },
-				["isRaid"] = true,
-				["lvl"] = 85,
-				["groups"] = {
+				classes = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER },
+				isRaid = true,
+				lvl = 85,
+				groups = {
 					a(q(29453, {	-- Your Time Has Come [A]
-						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
-						["qg"] = 53115,	-- Molten Lord
-						["maps"] = { STORMWIND_CITY },
-						["isBreadcrumb"] = true,	-- for A Legendary Engagement
+						description = "This quest is auto accepted upon killing a Molten Lord.",
+						qg = 53115,	-- Molten Lord
+						maps = { STORMWIND_CITY },
+						isBreadcrumb = true,	-- for A Legendary Engagement
 					})),
 					h(q(29452, {	-- Your Time Has Come [H]
-						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
-						["qg"] = 53115,	-- Molten Lord
-						["maps"] = { ORGRIMMAR },
-						["isBreadcrumb"] = true,	-- for A Legendary Engagement
+						description = "This quest is auto accepted upon killing a Molten Lord.",
+						qg = 53115,	-- Molten Lord
+						maps = { ORGRIMMAR },
+						isBreadcrumb = true,	-- for A Legendary Engagement
 					})),
 					a(q(29132, {	-- A Legendary Engagement [A]
-						["description"] = "Located inside Portal tower.\n\nThis is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
-						["sourceQuest"] = 29453,	-- Your Time Has Come [A]
-						["qg"] = 52408,	-- Coridormi
-						["coord"] = { 47.2, 91.2, STORMWIND_CITY },
-						["maps"] = { CAVERNS_OF_TIME },
+						description = "Located inside Portal tower.\n\nThis is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+						sourceQuest = 29453,	-- Your Time Has Come [A]
+						qg = 52408,	-- Coridormi
+						coord = { 47.2, 91.2, STORMWIND_CITY },
+						maps = { CAVERNS_OF_TIME },
 					})),
 					h(q(29129, {	-- A Legendary Engagement [H]
-						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
-						["sourceQuest"] = 29452,	-- Your Time Has Come [H]
-						["qg"] = 52382,	-- Ziradormi
-						["coord"] = { 48.8, 70.1, ORGRIMMAR },
-						["maps"] = { CAVERNS_OF_TIME },
+						description = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+						sourceQuest = 29452,	-- Your Time Has Come [H]
+						qg = 52382,	-- Ziradormi
+						coord = { 48.8, 70.1, ORGRIMMAR },
+						maps = { CAVERNS_OF_TIME },
 					})),
 					q(29134, {	-- A Wrinkle in Time
-						["sourceQuests"] = {
+						sourceQuests = {
 							29129,	-- A Legendary Engagement [H]
 							29132,	-- A Legendary Engagement [A]
 						},
-						["qg"] = 15192,	-- Anachronos
-						["coord"] = { 41.8, 49.8, CAVERNS_OF_TIME },
+						qg = 15192,	-- Anachronos
+						coord = { 41.8, 49.8, CAVERNS_OF_TIME },
 					}),
 					q(29135, {	-- All-Seeing Eye
-						["sourceQuest"] = 29134,	-- A Wrinkle in Time
-						["qg"] = 15192,	-- Anachronos
-						["coord"] = { 41.8, 49.8, CAVERNS_OF_TIME },
+						sourceQuest = 29134,	-- A Wrinkle in Time
+						qg = 15192,	-- Anachronos
+						coord = { 41.8, 49.8, CAVERNS_OF_TIME },
 						-- #if NOT OBJECTIVES
-						["cost"] = {
+						cost = {
 							{ "i", 71141, 25 },	-- Eternal Ember
 							{ "i", 65893, 3 },	-- Sands of Time
 						},
 						-- #else
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/25 Eternal Ember
-								["provider"] = { "i", 71141 },	-- Eternal Ember
+								provider = { "i", 71141 },	-- Eternal Ember
 							}),
 							objective(2, {	-- 0/3 Sands of Time
-								["provider"] = { "i", 65893 },	-- Sands of Time
+								provider = { "i", 65893 },	-- Sands of Time
 							}),
 						},
 						-- #endif
 					}),
 					q(29193, {	-- On a Wing and a Prayer
-						["sourceQuest"] = 29135,	-- All-Seeing Eye
-						["qg"] = 15192,	-- Anachronos
-						["coord"] = { 41.8, 49.8, CAVERNS_OF_TIME },
-						["groups"] = {
+						sourceQuest = 29135,	-- All-Seeing Eye
+						qg = 15192,	-- Anachronos
+						coord = { 41.8, 49.8, CAVERNS_OF_TIME },
+						groups = {
 							objective(1, {	-- Brought Timeless Eye to Coldarra
-								["providers"] = {
+								providers = {
 									{ "i",  69238 },	-- Timeless Eye
 									{ "o", 208430 },	-- Timeless Eye
 								},
@@ -158,18 +158,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					q(29194, {	-- Through a Glass, Darkly
-						["sourceQuest"] = 29193,	-- On a Wing and a Prayer
-						["qg"] = 52835,	-- Tarecgosa
-						["coord"] = { 34.5, 25.3, BOREAN_TUNDRA },
-						["maps"] = { 370 },	-- The Nexus (Scenario Map)
+						sourceQuest = 29193,	-- On a Wing and a Prayer
+						qg = 52835,	-- Tarecgosa
+						coord = { 34.5, 25.3, BOREAN_TUNDRA },
+						maps = { 370 },	-- The Nexus (Scenario Map)
 					}),
 					q(29225, {	-- Actionable Intelligence
-						["sourceQuest"] = 29194,	-- Through a Glass, Darkly
-						["qg"] = 53567,	-- Tarecgosa
-						["maps"] = { 370, MOUNT_HYJAL },	-- The Nexus (Scenario Map)
+						sourceQuest = 29194,	-- Through a Glass, Darkly
+						qg = 53567,	-- Tarecgosa
+						maps = { 370, MOUNT_HYJAL },	-- The Nexus (Scenario Map)
 					}),
 					q(29234, {	-- Delegation
-						["description"] =
+						description =
 							-- #IF ANYCLASSIC
 							"Defeat Volcanus and recover the Branch of Nordrassil. In order to summon him, you need to open the Circle of Thorns portal. You can do this by completing the Delegation Tracker quest or by having someone else that has previously opened their own portal open the portal for you.\n\nNOTE: You will be locked out of doing the same for others should you choose to go this route.",
 							-- #ELSE
@@ -177,30 +177,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							-- but that is a very niche scenario that likely no one would actually perform on purpose so doesn't merit being in the description
 							"Defeat Volcanus and recover the Branch of Nordrassil. In order to summon him, you need to open the Circle of Thorns portal.",
 							-- #ENDIF
-						["sourceQuests"] = {
+						sourceQuests = {
 							29225,	-- Actionable Intelligence
 							-- #IF NOT ANYCLASSIC
 							29432,	-- Delegation Tracker HQT
 							-- #ENDIF
 						},
-						["qg"] = 52995,	-- Kalecgos
-						["providers"] = {
+						qg = 52995,	-- Kalecgos
+						providers = {
 							{ "o", 209098 },	-- Circle of Thorns Portal
 						},
-						["coord"] = { 62.1, 23.1, MOUNT_HYJAL },
-						["groups"] = {
+						coord = { 62.1, 23.1, MOUNT_HYJAL },
+						groups = {
 							objective(1, {	-- Branch of Nordrassil
-								["provider"] = { "i", 69646 },	-- Branch of Nordrassil
+								provider = { "i", 69646 },	-- Branch of Nordrassil
 							}),
 						},
 					}),
 					o(209098, {	-- Circle of Thorns Portal
-						["questID"] = 29432,	-- Delegation Tracker HQT
-						["lockCriteria"] = { 1, "questID", 29234 },	-- Delegation
+						questID = 29432,	-- Delegation Tracker HQT
+						lockCriteria = { 1, "questID", 29234 },	-- Delegation
 						-- #IF ANYCLASSIC
-						["description"] = "Completing this quest means that you personally unlocked the Circle of Thorns Portal and can open the portal for others in the future instead of taking the lazy route and having someone else open the portal for you.",
+						description = "Completing this quest means that you personally unlocked the Circle of Thorns Portal and can open the portal for others in the future instead of taking the lazy route and having someone else open the portal for you.",
 						-- #ENDIF
-						["cost"] = {
+						cost = {
 							{ "i", 71017, 1 },	-- Charged Chitinous Focus
 							{ "i", 71015, 1 },	-- Charged Emberstone Focus
 							{ "i", 71016, 1 },	-- Charged Pyreshell Focus
@@ -208,72 +208,72 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					q(29239, {	-- Nordrassil's Bough
-						["sourceQuest"] = 29234,	-- Delegation
-						["qg"] = 53009,	-- Kalecgos
-						["coord"] = { 46.4, 35.4, BOREAN_TUNDRA },
-						["groups"] = {
+						sourceQuest = 29234,	-- Delegation
+						qg = 53009,	-- Kalecgos
+						coord = { 46.4, 35.4, BOREAN_TUNDRA },
+						groups = {
 							i(71084, {	-- Branch of Nordrassil
-								["cr"] = 54233,	-- Branch of Nordrassil
+								cr = 54233,	-- Branch of Nordrassil
 							}),
 						},
 					}),
 					q(29240, {	-- Emergency Extraction
-						["sourceQuest"] = 29239,	-- Nordrassil's Bough
-						["qg"] = 53009,	-- Kalecgos
-						["coord"] = { 46.4, 35.4, BOREAN_TUNDRA },
+						sourceQuest = 29239,	-- Nordrassil's Bough
+						qg = 53009,	-- Kalecgos
+						coord = { 46.4, 35.4, BOREAN_TUNDRA },
 					}),
 					q(29269, {	-- At One
-						["sourceQuest"] = 29240,	-- Emergency Extraction
-						["qg"] = 53149,	-- Kalecgos
-						["coord"] = { 31.0, 24.0, BOREAN_TUNDRA },
-						["groups"] = {
+						sourceQuest = 29240,	-- Emergency Extraction
+						qg = 53149,	-- Kalecgos
+						coord = { 31.0, 24.0, BOREAN_TUNDRA },
+						groups = {
 							objective(1, {	-- Bonded with Tarecgosa's Essence
-								["provider"] = { "n", 52835 },	-- Tarecgosa
+								provider = { "n", 52835 },	-- Tarecgosa
 							}),
 							objective(2, {	-- Speak to Kalecgos in Coldarra.
-								["provider"] = { "n", 53210 },	-- Kalecgos
+								provider = { "n", 53210 },	-- Kalecgos
 							}),
 						},
 					}),
 					q(29270, {	-- Time Grows Short
-						["sourceQuest"] = 29269,	-- At One
-						["qg"] = 53210,	-- Kalecgos
-						["coord"] = { 31.0, 24.0, BOREAN_TUNDRA },
-						["groups"] = {
+						sourceQuest = 29269,	-- At One
+						qg = 53210,	-- Kalecgos
+						coord = { 31.0, 24.0, BOREAN_TUNDRA },
+						groups = {
 							objective(1, {	-- 0/1000 Seething Cinder
-								["provider"] = { "i", 69815 },	-- Seething Cinder
+								provider = { "i", 69815 },	-- Seething Cinder
 							}),
 						},
 					}),
 					q(29285, {	-- Alignment
-						["sourceQuest"] = 29270,	-- Time Grows Short
-						["qg"] = 53215,	-- Kalecgos
-						["coord"] = { 23.0, 30.8, BOREAN_TUNDRA },
-						["groups"] = {
+						sourceQuest = 29270,	-- Time Grows Short
+						qg = 53215,	-- Kalecgos
+						coord = { 23.0, 30.8, BOREAN_TUNDRA },
+						groups = {
 							objective(1, {	-- Witnessed Kalecgos's Ascension
-								["provider"] = { "n", 53227 },	-- Kalecgos
+								provider = { "n", 53227 },	-- Kalecgos
 							}),
 							objective(2, {	-- 0/1 Branch of Nordrassil
-								["provider"] = { "i", 71084 },	-- Branch of Nordrassil
+								provider = { "i", 71084 },	-- Branch of Nordrassil
 							}),
 							i(71085),	-- Runestaff of Nordrassil
 						},
 					}),
 					{	-- Heart of Flame
-						["qg"] = 53349,	-- Kalecgos
-						["sourceQuest"] = 29285,	-- Alignment
-						["allianceQuestData"] = q(29307, {	-- Heart of Flame [A]
-							["maps"] = { STORMWIND_CITY },
+						qg = 53349,	-- Kalecgos
+						sourceQuest = 29285,	-- Alignment
+						allianceQuestData = q(29307, {	-- Heart of Flame [A]
+							maps = { STORMWIND_CITY },
 						}),
-						["hordeQuestData"] = q(29308, {	-- Heart of Flame [H]
-							["maps"] = { ORGRIMMAR },
+						hordeQuestData = q(29308, {	-- Heart of Flame [H]
+							maps = { ORGRIMMAR },
 						}),
-						["coord"] = { 23.2, 22.8, BOREAN_TUNDRA },
-						["groups"] = {
+						coord = { 23.2, 22.8, BOREAN_TUNDRA },
+						groups = {
 							objective(1, {	-- 0/250 Smouldering Essences Collected
-								["provider"] = { "i", 71085 },	-- Runestaff of Nordrassil
-								["description"] = "Gather Essences by killing the bosses and syphoning the essences with your staff.",
-								["crs"] = {
+								provider = { "i", 71085 },	-- Runestaff of Nordrassil
+								description = "Gather Essences by killing the bosses and syphoning the essences with your staff.",
+								crs = {
 									53691,	-- Shannox
 									52498,	-- Beth'tilac <The Red Widow>
 									52530,	-- Alysrazor
@@ -283,35 +283,35 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 								},
 							}),
 							objective(2, {	-- 0/1 Heart of Flame
-								["providers"] = {
+								providers = {
 									{ "i", 69848 },	-- Heart of Flame
 									{ "n", 54293 },	-- Heart of Ragnaros
 								},
-								["description"] = "The heart spawns after killing Ragnaros for anyone on the quest once you have obtained 250 smoldering essences, regardless of raid size or difficulty. Only one person can loot the heart per lockout.",
+								description = "The heart spawns after killing Ragnaros for anyone on the quest once you have obtained 250 smoldering essences, regardless of raid size or difficulty. Only one person can loot the heart per lockout.",
 							}),
 						},
 					},
 					{	-- The Stuff of Legends
-						["qg"] = 53466,	-- Hallegosa
-						["allianceQuestData"] = q(29312, {	-- The Stuff of Legends [A]
-							["sourceQuest"] = 29307,	-- Heart of Flame [A]
-							["coord"] = { 54.6, 56.0, STORMWIND_CITY },
+						qg = 53466,	-- Hallegosa
+						allianceQuestData = q(29312, {	-- The Stuff of Legends [A]
+							sourceQuest = 29307,	-- Heart of Flame [A]
+							coord = { 54.6, 56.0, STORMWIND_CITY },
 						}),
-						["hordeQuestData"] = q(29309, {	-- The Stuff of Legends [H]
-							["sourceQuest"] = 29308,	-- Heart of Flame [H]
-							["coord"] = { 48.4, 71.6, ORGRIMMAR },
+						hordeQuestData = q(29309, {	-- The Stuff of Legends [H]
+							sourceQuest = 29308,	-- Heart of Flame [H]
+							coord = { 48.4, 71.6, ORGRIMMAR },
 						}),
-						["groups"] = {
+						groups = {
 							objective(1, {	-- Witnessed Dragonwrath Ceremony
-								["providers"] = {
+								providers = {
 									{ "i", 71085 },	-- Runestaff of Nordrassil
 									{ "n", 53715 },	-- Tarecgosa
 								},
 							}),
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest
 							ach(5839, {	-- Dragonwrath, Tarecgosa's Rest
-								["provider"] = { "i", 71086 },	-- Dragonwrath, Tarecgosa's Rest
-								["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER },
+								provider = { "i", 71086 },	-- Dragonwrath, Tarecgosa's Rest
+								classes = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER },
 							}),
 						},
 					},
@@ -320,7 +320,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			n(ACHIEVEMENTS, {
 				ach(5828, {	-- Glory of the Firelands Raider
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						5807,	-- Heroic: Beth'tilac
 						5808,	-- Heroic: Lord Rhyolith
 						5806,	-- Heroic: Shannox
@@ -334,42 +334,42 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						5830,	-- Share the Pain
 						5799,	-- Only the Penitent...
 					}},
-					["groups"] = {
+					groups = {
 						i(69230),	-- Corrupted Fire Hawk (MOUNT!)
 					},
 				}),
 				achWithRep(5827, FACTION_AVENGERS_OF_HYJAL, {	-- Avengers of Hyjal
 					title(188),	-- <Name>, Avenger of Hyjal
 				}),
-				ach(11755, {["timeline"] = {ADDED_7_2_0}}),	-- Hot Couture (Firelands)
+				ach(11755, {timeline = {ADDED_7_2_0}}),	-- Hot Couture (Firelands)
 				ach(5802, {	-- Firelands
 					crit(17430, {	-- Beth'tilac
-						["_encounter"] = { 192, NORMAL_HEROIC_DIFFICULTY_ID },
+						_encounter = { 192, NORMAL_HEROIC_DIFFICULTY_ID },
 					}),
 					crit(17431, {	-- Lord Rhyolith
-						["_encounter"] = { 193, NORMAL_HEROIC_DIFFICULTY_ID },
+						_encounter = { 193, NORMAL_HEROIC_DIFFICULTY_ID },
 					}),
 					crit(17435, {	-- Alysrazor
-						["_encounter"] = { 194, NORMAL_HEROIC_DIFFICULTY_ID },
+						_encounter = { 194, NORMAL_HEROIC_DIFFICULTY_ID },
 					}),
 					crit(17429, {	-- Shannox
-						["_encounter"] = { 195, NORMAL_HEROIC_DIFFICULTY_ID },
+						_encounter = { 195, NORMAL_HEROIC_DIFFICULTY_ID },
 					}),
 					crit(17432, {	-- Baleroc, the Gatekeeper
-						["_encounter"] = { 196, NORMAL_HEROIC_DIFFICULTY_ID },
+						_encounter = { 196, NORMAL_HEROIC_DIFFICULTY_ID },
 					}),
 					crit(17433, {	-- Majordomo Staghelm
-						["_encounter"] = { 197, NORMAL_HEROIC_DIFFICULTY_ID },
+						_encounter = { 197, NORMAL_HEROIC_DIFFICULTY_ID },
 					}),
 					crit(17434, {	-- Ragnaros
-						["_encounter"] = { 198, NORMAL_HEROIC_DIFFICULTY_ID },
+						_encounter = { 198, NORMAL_HEROIC_DIFFICULTY_ID },
 					}),
 				}),
 				ach(5983),	-- Firelands Guild Run
 			}),
 			n(FACTIONS, {
 				faction(FACTION_AVENGERS_OF_HYJAL, {	-- Avengers of Hyjal
-					["icon"] = 512609,
+					icon = 512609,
 				}),
 			}),
 			n(VENDORS, {
@@ -422,7 +422,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				i(70929),	-- Firebound Gorget
 				-- #if BEFORE MOP
 				i(71154, {	-- Giantslicer
-					["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+					timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
 				}),
 				-- #endif
 				i(71365),	-- Hide-Bound Chains
@@ -437,7 +437,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			d(NORMAL_HEROIC_DIFFICULTY_ID, {
 				n(COMMON_BOSS_DROPS, {
 					i(71141, {	-- Eternal Ember
-						["crs"] = {
+						crs = {
 							53691,	-- Shannox
 							52498,	-- Beth'tilac <The Red Widow>
 							52530,	-- Alysrazor
@@ -448,7 +448,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					i(69815, {	-- Seething Cinder
-						["crs"] = {
+						crs = {
 							53691,	-- Shannox
 							52498,	-- Beth'tilac <The Red Widow>
 							52530,	-- Alysrazor
@@ -460,65 +460,65 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				}),
 				e(192, {	-- Beth'tilac
-					["creatureID"] = 52498,
-					["groups"] = {
+					creatureID = 52498,
+					groups = {
 						ach(5821),	-- Death from Above
 						i(152976, {	-- Cinderweb Recluse (PET!)
-							["timeline"] = { ADDED_7_3_0 },
+							timeline = { ADDED_7_3_0 },
 						}),
 						i(71017, {	-- Charged Chitinous Focus
-							["providers"] = {
+							providers = {
 								{ "n", 53971 },	-- Charged Chitinous Focus
 							},
-							["cost"] = { { "i", 70998, 1 } },	-- Dull Chitinous Focus
+							cost = { { "i", 70998, 1 } },	-- Dull Chitinous Focus
 						}),
 						i(70998, {	-- Dull Chitinous Focus
-							["description"] = "Use on top of the web just before she uses Smoldering Devastation at 0 Energy. Loot the Charged Chitinous Focus afterwards.",
-							["cost"] = { { "i", 70999, 3 } },	-- Obsidian-Flecked Chitin Fragment
+							description = "Use on top of the web just before she uses Smoldering Devastation at 0 Energy. Loot the Charged Chitinous Focus afterwards.",
+							cost = { { "i", 70999, 3 } },	-- Obsidian-Flecked Chitin Fragment
 						}),
 						i(70999, {	-- Obsidian-Flecked Chitin Fragment
-							["description"] = "While fighting Beth'tilac you loot the Obsidian-Flecked Chitin Fragments, three of which spawn when a Cinderweb Drone is killed. Gather them and create a Dull Chitinous Focus.",
-							["provider"] = { "o", 209037 },	-- Obsidian-Flecked Chitin
-							["cr"] = 52581,	-- Cinderweb Drone
+							description = "While fighting Beth'tilac you loot the Obsidian-Flecked Chitin Fragments, three of which spawn when a Cinderweb Drone is killed. Gather them and create a Dull Chitinous Focus.",
+							provider = { "o", 209037 },	-- Obsidian-Flecked Chitin
+							cr = 52581,	-- Cinderweb Drone
 						}),
 					},
 				}),
 				n(53833, {	-- Volcanus <Firelord>
-					["sourceQuest"] = 29432,	-- Circle of Thorns Portal (Delegation Tracker HQT)
-					["description"] = "This encounter does not drop any loot directly, instead, the Branch of Nordrassil is spawned on the ground after he is defeated.\n\nOnly available when someone in your party that has completed their Circle of Thorns Portal quest opens the portal. NOTE: You can have someone that has completed their staff AND opened THEIR OWN PORTAL during Delegation open the portal for you. HOWEVER, this means that you specifically will not be able to do the same for other players in the future.",
-					["groups"] = {
+					sourceQuest = 29432,	-- Circle of Thorns Portal (Delegation Tracker HQT)
+					description = "This encounter does not drop any loot directly, instead, the Branch of Nordrassil is spawned on the ground after he is defeated.\n\nOnly available when someone in your party that has completed their Circle of Thorns Portal quest opens the portal. NOTE: You can have someone that has completed their staff AND opened THEIR OWN PORTAL during Delegation open the portal for you. HOWEVER, this means that you specifically will not be able to do the same for other players in the future.",
+					groups = {
 						title(146, {	-- <Name>, Blessed Defender of Nordrassil
-							["description"] = "You only have this title for as long as you are in tree form. :(",
-							["collectible"] = false,
+							description = "You only have this title for as long as you are in tree form. :(",
+							collectible = false,
 						}),
 						i(69646, {	-- Branch of Nordrassil
-							["provider"] = { "o", 209100 },	-- Branch of Nordrassil
+							provider = { "o", 209100 },	-- Branch of Nordrassil
 						}),
 					},
 				}),
 				e(193, {	-- Lord Rhyolith
-					["creatureID"] = 52558,
-					["groups"] = {
+					creatureID = 52558,
+					groups = {
 						ach(5810),	-- Not an Ambi-Turner
 						i(71008, {	-- Charged Rhyolite Focus
-							["providers"] = {
+							providers = {
 								{ "n", 53955 },	-- Charged Rhyolite Focus
 							},
-							["cost"] = { { "i", 70996, 1 } },	-- Dull Rhyolite Focus
+							cost = { { "i", 70996, 1 } },	-- Dull Rhyolite Focus
 						}),
 						i(70996, {	-- Dull Rhyolite Focus
-							["description"] = "Use just before he uses Concussive Stomp. (STOMP NOW!) He has to stand on it almost directly so make sure you're pretty close before using it. Loot the Charged Rhyolite Focus afterwards.",
-							["cost"] = { { "i", 70997, 3 } },	-- Rhyolite Fragment
+							description = "Use just before he uses Concussive Stomp. (STOMP NOW!) He has to stand on it almost directly so make sure you're pretty close before using it. Loot the Charged Rhyolite Focus afterwards.",
+							cost = { { "i", 70997, 3 } },	-- Rhyolite Fragment
 						}),
 						i(70997, {	-- Rhyolite Fragment
-							["description"] = "Rhyolite Fragments which randomly spawn around the edge of the area after killing mobs spawned during the encounter. Gather three of them and create a Dull Rhyolite Focus.",
-							["provider"] = { "o", 209033 },	-- Rhyolite Fragment
+							description = "Rhyolite Fragments which randomly spawn around the edge of the area after killing mobs spawned during the encounter. Gather three of them and create a Dull Rhyolite Focus.",
+							provider = { "o", 209033 },	-- Rhyolite Fragment
 						}),
 					},
 				}),
 				e(194, {	-- Alysrazor
-					["creatureID"] = 52530,
-					["groups"] = {
+					creatureID = 52530,
+					groups = {
 						ach(5813, {	-- Do a Barrel Roll!
 							crit(17533),	-- Brushfire
 							crit(17535),	-- Lava Spew
@@ -527,24 +527,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						}),
 						i(71665),	-- Flametalon of Alysrazor (MOUNT!)
 						i(71016, {	-- Charged Pyreshell Focus
-							["providers"] = {
+							providers = {
 								{ "n", 53967 },	-- Charged Pyreshell Focus
 							},
-							["cost"] = { { "i", 70995, 1 } },	-- Dull Pyreshell Focus
+							cost = { { "i", 70995, 1 } },	-- Dull Pyreshell Focus
 						}),
 						i(70995, {	-- Dull Pyreshell Focus
-							["description"] = "Use when she is on the ground and close to full resources during Burnout. Loot the Charged Pyreshell Focus afterwards.\n\nIf she stays grounded and you need more fragments or need to charge your focus, you can fly out of the instance to reset, no more Eggs will spawn at this time.",
-							["cost"] = { { "i", 70994, 3 } },	-- Pyreshell Fragment
+							description = "Use when she is on the ground and close to full resources during Burnout. Loot the Charged Pyreshell Focus afterwards.\n\nIf she stays grounded and you need more fragments or need to charge your focus, you can fly out of the instance to reset, no more Eggs will spawn at this time.",
+							cost = { { "i", 70994, 3 } },	-- Pyreshell Fragment
 						}),
 						i(70994, {	-- Pyreshell Fragment
-							["description"] = "A Pyreshell Fragment spawns whenever a Molten Egg hatches during the encounter. Gather three and create a Dull Pyreshell Focus.",
-							["provider"] = { "o", 209036 },	-- Pyreshell Fragment
+							description = "A Pyreshell Fragment spawns whenever a Molten Egg hatches during the encounter. Gather three and create a Dull Pyreshell Focus.",
+							provider = { "o", 209036 },	-- Pyreshell Fragment
 						}),
 					},
 				}),
 				e(195, {	-- Shannox
-					["creatureID"] = 53691,
-					["groups"] = {
+					creatureID = 53691,
+					groups = {
 						ach(5829, {	-- Bucket List
 							crit(17576),	-- Shannox
 							crit(17775),	-- Beth'tilac's Lair
@@ -554,69 +554,69 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							crit(17779),	-- Shatterstone
 						}),
 						i(152975, {	-- Blazehound (PET!)
-							["timeline"] = { ADDED_7_3_0 },
+							timeline = { ADDED_7_3_0 },
 						}),
 						i(71015, {	-- Charged Emberstone Focus
-							["providers"] = {
+							providers = {
 								{ "n", 53969 },	-- Charged Emberstone Focus
 							},
-							["cost"] = { { "i", 71001, 1 } },	-- Dull Emberstone Focus
+							cost = { { "i", 71001, 1 } },	-- Dull Emberstone Focus
 						}),
 						i(71001, {	-- Dull Emberstone Focus
-							["description"] = "Use just before he uses Hurl Spear. The spear has to hit the focus so make sure you're close. Once the fire has died down loot the Charged Emberstone Focus.\n\nNOTE: This requires at least two targets:\nA mage can use the Frost Elemental.\nA shaman can summon the Earth Elemental.\nA Warlock can use its pet.\nA Priest or Druid needs a friend. :(",
-							["cost"] = { { "i", 71000, 3 } },	-- Emberstone Fragment
+							description = "Use just before he uses Hurl Spear. The spear has to hit the focus so make sure you're close. Once the fire has died down loot the Charged Emberstone Focus.\n\nNOTE: This requires at least two targets:\nA mage can use the Frost Elemental.\nA shaman can summon the Earth Elemental.\nA Warlock can use its pet.\nA Priest or Druid needs a friend. :(",
+							cost = { { "i", 71000, 3 } },	-- Emberstone Fragment
 						}),
 						i(71000, {	-- Emberstone Fragment
-							["description"] = "An Emberstone Fragment spawns whenever a Crystal Prison Trap is destroyed. Gather three of them and create a Dull Emberstone Focus.",
-							["provider"] = { "o", 209035 },	-- Emberstone Fragment
+							description = "An Emberstone Fragment spawns whenever a Crystal Prison Trap is destroyed. Gather three of them and create a Dull Emberstone Focus.",
+							provider = { "o", 209035 },	-- Emberstone Fragment
 						}),
 					},
 				}),
 				e(196, {	-- Baleroc, the Gatekeeper
-					["creatureID"] = 53494,
-					["groups"] = {
+					creatureID = 53494,
+					groups = {
 						ach(5830),	-- Share the Pain
 						i(152977, {	-- Surger (PET!)
-							["timeline"] = { ADDED_7_3_0 },
+							timeline = { ADDED_7_3_0 },
 						}),
 					},
 				}),
 				e(197, {	-- Majordomo Staghelm
-					["creatureID"] = 52571,
-					["groups"] = {
+					creatureID = 52571,
+					groups = {
 						ach(5799, {	-- Only the Penitent...
-							["description"] = "If you aim to do this achievement, do not move past the Circle of Thorns Portal unprepared! The objective is to reach and interact with the two orbs of flame on each side of the Druids of Flame without getting hit by the AoE effect. You avoid getting hit by not standing on it's way, you have to duck beneath it with /kneel or any other emotes lowering your height. Any shrinking effects from toys does not counts. If the orbs disappear you have failed and need to reset the instance.\n\nAlthough some classes might be able to solo it, being two is easier.",
+							description = "If you aim to do this achievement, do not move past the Circle of Thorns Portal unprepared! The objective is to reach and interact with the two orbs of flame on each side of the Druids of Flame without getting hit by the AoE effect. You avoid getting hit by not standing on it's way, you have to duck beneath it with /kneel or any other emotes lowering your height. Any shrinking effects from toys does not counts. If the orbs disappear you have failed and need to reset the instance.\n\nAlthough some classes might be able to solo it, being two is easier.",
 						}),
 						i(152978, {	-- Infernal Pyreclaw (PET!)
-							["timeline"] = { ADDED_7_3_0 },
+							timeline = { ADDED_7_3_0 },
 						}),
 						i(122304, {	-- Fandral's Seed Pouch (TOY!)
-							["timeline"] = { ADDED_6_1_0 },
+							timeline = { ADDED_6_1_0 },
 						}),
 					},
 				}),
 				e(198, {	-- Ragnaros
-					["creatureID"] = 52409,
-					["groups"] = {
+					creatureID = 52409,
+					groups = {
 						ach(5855),	-- Ragnar-O's
 						i(69224),	-- Pureblood Fire Hawk (MOUNT!)
 						ig(175158, {	-- Flames of Fury (RI!)
-							["timeline"] = { ADDED_8_3_0 },
+							timeline = { ADDED_8_3_0 },
 						}),
 					},
 				}),
 			}),
 			d(NORMAL_DIFFICULTY_ID, {
-				["difficulties"] = {
+				difficulties = {
 					-- #if AFTER 8.2.5
 					DIFFICULTY.DUNGEON.NORMAL,
 					-- #endif
 					DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL,
 					DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL,
 				},
-				["groups"] = {
+				groups = {
 					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
+						crs = {
 							53691,	-- Shannox
 							52498,	-- Beth'tilac <The Red Widow>
 							52530,	-- Alysrazor
@@ -625,7 +625,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							52571,	-- Majordomo Staghelm <Archdruid of the Flame>
 							52409,	-- Ragnaros
 						},
-						["groups"] = {
+						groups = {
 							i(71779),	-- Avool's Incendiary Shanker
 							i(71787),	-- Entrail Disgorger
 							i(71776),	-- Eye of Purification
@@ -634,13 +634,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71775),	-- Smoldering Censer of Purity
 							i(71780),	-- Zoid's Firelit Greatsword
 							ig(69237, {	-- Living Ember
-								["description"] = "Drops commonly from Firelands bosses.",
+								description = "Drops commonly from Firelands bosses.",
 							}),
 						},
 					}),
 					e(192, {	-- Beth'tilac
-						["creatureID"] = 52498,
-						["groups"] = {
+						creatureID = 52498,
+						groups = {
 							i(71039),	-- Funeral Pyre
 							i(70922),	-- Mandible of Beth'tilac
 							i(71038),	-- Ward of the Red Widow
@@ -658,8 +658,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					e(193, {	-- Lord Rhyolith
-						["creatureID"] = 52558,
-						["groups"] = {
+						creatureID = 52558,
+						groups = {
 							i(71006),	-- Volcanospike
 							i(70991),	-- Arbalest of Erupting Fury
 							i(71011),	-- Flickering Cowl
@@ -676,8 +676,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					e(194, {	-- Alysrazor
-						["creatureID"] = 52530,
-						["groups"] = {
+						creatureID = 52530,
+						groups = {
 							i(70733),	-- Alysra's Razor
 							i(70734),	-- Greathelm of the Voracious Maw
 							i(70985),	-- Craterflame Spaulders
@@ -695,8 +695,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					e(195, {	-- Shannox
-						["creatureID"] = 53691,
-						["groups"] = {
+						creatureID = 53691,
+						groups = {
 							i(71014),	-- Skullstealer Greataxe
 							i(71013),	-- Feeding Frenzy
 							i(71022),	-- Goblet of Anger
@@ -714,8 +714,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					e(196, {	-- Baleroc, the Gatekeeper
-						["creatureID"] = 53494,
-						["groups"] = {
+						creatureID = 53494,
+						groups = {
 							i(71312),	-- Gatecrasher
 							i(70915),	-- Shard of Torment
 							i(71323),	-- Molten Scream
@@ -732,8 +732,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					e(197, {	-- Majordomo Staghelm
-						["creatureID"] = 52571,
-						["groups"] = {
+						creatureID = 52571,
+						groups = {
 							SHOULDER_CONQ,	-- Shoulders of the Fiery Conqueror
 							SHOULDER_PROT,	-- Shoulders of the Fiery Protector
 							SHOULDER_VANQ,	-- Shoulders of the Fiery Vanquisher
@@ -752,8 +752,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					e(198, {	-- Ragnaros
-						["creatureID"] = 52409,
-						["groups"] = {
+						creatureID = 52409,
+						groups = {
 							HELM_CONQ,	-- Crown of the Fiery Conqueror
 							HELM_PROT,	-- Crown of the Fiery Protector
 							HELM_VANQ,	-- Crown of the Fiery Vanquisher
@@ -774,158 +774,158 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 			d(HEROIC_DIFFICULTY_ID, {
-				["difficulties"] = {
+				difficulties = {
 					-- #if AFTER 8.2.5
 					DIFFICULTY.DUNGEON.HEROIC,
 					-- #endif
 					DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC,
 					DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC
 				},
-				["groups"] = {
+				groups = {
 					n(VENDORS, {
 						n(54402, {	-- Lurah Wrathvine
-							["description"] = "Bring this vendor Crystallized Firestones from the bosses and the BoE and she'll upgrade it to the Heroic version.",
-							["groups"] = {
+							description = "Bring this vendor Crystallized Firestones from the bosses and the BoE and she'll upgrade it to the Heroic version.",
+							groups = {
 								i(69113, {	-- Apparatus of Khaz'goroth
-									["cost"] = {
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 68972, 1 },	-- Apparatus of Khaz'goroth
 									},
 								}),
 								i(71560, {	-- Chelley's Sterilized Scalpel
-									["cost"] = {
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71359, 1 },	-- Chelley's Sterilized Scalpel
 									},
 								}),
 								-- #if BEFORE MOP
 								i(71567, {	-- Covenant of the Flame
-									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
-									["cost"] = {
+									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71146, 1 },	-- Covenant of the Flame
 									},
 								}),
 								i(71590, {	-- Deathclutch Figurine
-									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
-									["cost"] = {
+									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 70939, 1 },	-- Deathclutch Figurine
 									},
 								}),
 								i(71592, {	-- Deflecting Star
-									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
-									["cost"] = {
+									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71218, 1 },	-- Deflecting Star
 									},
 								}),
 								-- #endif
 								i(71563, {	-- Firebound Gorget
-									["cost"] = {
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 70929, 1 },	-- Firebound Gorget
 									},
 								}),
 								-- #if BEFORE MOP
 								i(71593, {	-- Giantslicer
-									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
-									["cost"] = {
+									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71154, 1 },	-- Giantslicer
 									},
 								}),
 								-- #endif
 								i(71561, {	-- Hide-Bound Chains
-									["cost"] = {
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71365, 1 },	-- Hide-Bound Chains
 									},
 								}),
 								i(71558, {	-- Lava Bolt Crossbow
-									["cost"] = {
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71366, 1 },	-- Lava Bolt Crossbow
 									},
 								}),
 								-- #if BEFORE MOP
 								i(71568, {	-- Morningstar Shard
-									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
-									["cost"] = {
+									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71152, 1 },	-- Morningstar Shard
 									},
 								}),
 								-- #endif
 								i(71562, {	-- Obsidium Cleaver
-									["cost"] = {
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71362, 1 },	-- Obsidium Cleaver
 									},
 								}),
 								i(71557, {	-- Ranseur of Hatred
-									["cost"] = {
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71361, 1 },	-- Ranseur of Hatred
 									},
 								}),
 								-- #if BEFORE MOP
 								i(71587, {	-- Relic of the Elemental Lords
-									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
-									["cost"] = {
+									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71147, 1 },	-- Relic of the Elemental Lords
 									},
 								}),
 								-- #endif
 								i(71641, {	-- Riplimb's Lost Collar
-									["cost"] = {
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71640, 1 },	-- Riplimb's Lost Collar
 									},
 								}),
 								i(69109, {	-- Scales of Life
-									["cost"] = {
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 68915, 1 },	-- Scales of Life
 									},
 								}),
 								i(71579, {	-- Scorchvine Wand
-									["cost"] = {
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71150, 1 },	-- Scorchvine Wand
 									},
 								}),
 								-- #if BEFORE MOP
 								i(71577, {	-- Singed Plume of Aviana
-									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
-									["cost"] = {
+									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71149, 1 },	-- Singed Plume of Aviana
 									},
 								}),
 								i(71580, {	-- Soulflame Vial
-									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
-									["cost"] = {
+									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71148, 1 },	-- Soulflame Vial
 									},
 								}),
 								-- #endif
 								i(71559, {	-- Spire of Scarlet Pain
-									["cost"] = {
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71360, 1 },	-- Spire of Scarlet Pain
 									},
 								}),
 								i(71564, {	-- Theck's Emberseal
-									["cost"] = {
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71367, 1 },	-- Theck's Emberseal
 									},
 								}),
 								i(71575, {	-- Trail of Embers
-									["cost"] = {
+									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71151, 1 },	-- Trail of Embers
 									},
@@ -934,7 +934,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						}),
 					}),
 					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
+						crs = {
 							53691,	-- Shannox
 							52498,	-- Beth'tilac <The Red Widow>
 							52530,	-- Alysrazor
@@ -943,7 +943,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							52571,	-- Majordomo Staghelm <Archdruid of the Flame>
 							52409,	-- Ragnaros
 						},
-						["groups"] = {
+						groups = {
 							i(71778),	-- Avool's Incendiary Shanker
 							i(71786),	-- Entrail Disgorger
 							i(71777),	-- Eye of Purification
@@ -953,13 +953,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71781),	-- Zoid's Firelit Greatsword
 							ig(69237),	-- Living Ember
 							i(71617, {	-- Crystallized Firestone
-								["description"] = "You can use this item to upgrade certain normal mode BoE items to Heroic BoP versions.",
+								description = "You can use this item to upgrade certain normal mode BoE items to Heroic BoP versions.",
 							}),
 						},
 					}),
 					e(192, {	-- Beth'tilac
-						["creatureID"] = 52498,
-						["groups"] = {
+						creatureID = 52498,
+						groups = {
 							ach(5807),	-- Heroic: Beth'tilac
 							i(71409),	-- Funeral Pyre
 							i(71406),	-- Mandible of Beth'tilac
@@ -978,8 +978,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					e(193, {	-- Lord Rhyolith
-						["creatureID"] = 52558,
-						["groups"] = {
+						creatureID = 52558,
+						groups = {
 							ach(5808),	-- Heroic: Lord Rhyolith
 							i(71422),	-- Volcanospike
 							i(71414),	-- Arbalest of Erupting Fury
@@ -997,8 +997,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					e(194, {	-- Alysrazor
-						["creatureID"] = 52530,
-						["groups"] = {
+						creatureID = 52530,
+						groups = {
 							ach(5809),	-- Heroic: Alysrazor
 							i(71679),	-- Chest of the Fiery Conqueror
 							i(71686),	-- Chest of the Fiery Protector
@@ -1020,8 +1020,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					e(195, {	-- Shannox
-						["creatureID"] = 53691,
-						["groups"] = {
+						creatureID = 53691,
+						groups = {
 							ach(5806),	-- Heroic: Shannox
 							i(71678),	-- Leggings of the Fiery Conqueror
 							i(71685),	-- Leggings of the Fiery Protector
@@ -1043,8 +1043,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					e(196, {	-- Baleroc, the Gatekeeper
-						["creatureID"] = 53494,
-						["groups"] = {
+						creatureID = 53494,
+						groups = {
 							ach(5805),	-- Heroic: Baleroc
 							i(71676),	-- Gauntlets of the Fiery Conqueror
 							i(71683),	-- Gauntlets of the Fiery Protector
@@ -1065,8 +1065,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					e(197, {	-- Majordomo Staghelm
-						["creatureID"] = 52571,
-						["groups"] = {
+						creatureID = 52571,
+						groups = {
 							ach(5804),	-- Heroic: Majordomo Fandral Staghelm
 							i(71680),	-- Shoulders of the Fiery Conqueror
 							i(71687),	-- Shoulders of the Fiery Protector
@@ -1086,8 +1086,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					e(198, {	-- Ragnaros
-						["creatureID"] = 52409,
-						["groups"] = {
+						creatureID = 52409,
+						groups = {
 							un(REMOVED_FROM_GAME, ach(5985)),	-- Realm First! Ragnaros
 							ach(5803, {	-- Heroic: Ragnaros
 								title(190),	-- Firelord
@@ -1116,7 +1116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	}))),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ timeline = { ADDED_4_2_0 } }, {
 	inst(78, {	-- Firelands
 		header(HEADERS.Item, 71086, {	-- Dragonwrath, Tarecgosa's Rest
 			n(QUESTS, {

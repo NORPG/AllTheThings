@@ -2,12 +2,12 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 	n(COMMON_DUNGEON_DROPS, {
 		i(162460, {	-- Hydrocore
-			["description"] = "Drops from any final bosses at Mythic or Heroic",
-			["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 },
-			["crs"] = {
+			description = "Drops from any final bosses at Mythic or Heroic",
+			timeline = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 },
+			crs = {
 				122968,	-- Yazma
 				126983,	-- Harlan Sweete
 				136160,	-- King Dazar <The First>
@@ -22,8 +22,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			},
 		}),
 		i(162520, {	-- Recipe: Mystical Cauldron [Rank 2] (RECIPE!)
-			["description"] = "Drops from any final bosses at Mythic",
-			["crs"] = {
+			description = "Drops from any final bosses at Mythic",
+			crs = {
 				122968,	-- Yazma
 				126983,	-- Harlan Sweete
 				136160,	-- King Dazar <The First>
@@ -43,9 +43,9 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			},
 		}),
 		i(165948, {	-- Tidalcore
-			["description"] = "Drops from any final bosses at Mythic or Heroic",
-			["timeline"] = { ADDED_8_1_0 },
-			["crs"] = {
+			description = "Drops from any final bosses at Mythic or Heroic",
+			timeline = { ADDED_8_1_0 },
+			crs = {
 				122968,	-- Yazma
 				126983,	-- Harlan Sweete
 				136160,	-- King Dazar <The First>

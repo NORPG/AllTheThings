@@ -323,14 +323,14 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 InstanceHelper.LFRQueueNPC = {
-	["cr"] = 111246,	-- Archmage Timear
-	["coord"] = { 63.7, 55.0, LEGION_DALARAN },
+	cr = 111246,	-- Archmage Timear
+	coord = { 63.7, 55.0, LEGION_DALARAN },
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_3_0 } }, {
 	inst(946, {	-- Antorus, the Burning Throne
-		["coord"] = { 54.9, 62.3, ANTORAN_WASTES },
-		["maps"] = {
+		coord = { 54.9, 62.3, ANTORAN_WASTES },
+		maps = {
 			909,	-- Antorus, the Burning Throne
 			910,	-- Gaze of the Legion
 			911,	-- Halls of the Boundless Reach
@@ -344,58 +344,58 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			919,	-- Upper Deck
 			920,	-- Lower Deck
 		},
-		["isRaid"] = true,
-		["lvl"] = { 45 },
-		["groups"] = {
+		isRaid = true,
+		lvl = { 45 },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(42032, {	-- Antorus, the Burning Throne (automated)
-					["timeline"] = { ADDED_11_1_7 },
+					timeline = { ADDED_11_1_7 },
 				}),
 				ach(12020),	-- Argussy Up (Antorus, the Burning Throne)
 				ach(11988, {	-- Light's Breach
 					crit(37232, {	-- Garothi Worldbreaker
-						["_encounter"] = { WORLDBREAKER, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { WORLDBREAKER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(37233, {	-- Felhounds of Sargeras
-						["_encounter"] = { FELHOUNDS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { FELHOUNDS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(37234, {	-- Antoran High Command
-						["_encounter"] = { HIGH_COMMAND, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { HIGH_COMMAND, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(11989, {	-- Hope's End
 					crit(37236, {	-- Eonar the Life-Bender
-						["_encounter"] = { EONAR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { EONAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(37235, {	-- Portal Keeper Hasabel
-						["_encounter"] = { HASABEL, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { HASABEL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(37237, {	-- Imonar the Soulhunter
-						["_encounter"] = { IMONAR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { IMONAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(11990, {	-- Forbidden Descent
 					crit(37238, {	-- Kin'garoth
-						["_encounter"] = { KINGAROTH, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { KINGAROTH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(37239, {	-- Varimathras
-						["_encounter"] = { VARIMATHRAS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { VARIMATHRAS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(37240, {	-- The Coven of Shivarra
-						["_encounter"] = { COVEN, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { COVEN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(11991, {	-- Seat of the Pantheon
 					crit(37241, {	-- Aggramar
-						["_encounter"] = { AGGRAMAR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { AGGRAMAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(37242, {	-- Argus the Unmaker
-						["_encounter"] = { ARGUS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ARGUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						11949,	-- Hard to Kill
 						11948,	-- Together We Stand
 						11930,	-- Worm-monger
@@ -408,18 +408,18 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						12046,	-- Remember the Titans
 						12257,	-- Stardust Crusaders
 					}},
-					["groups"] = { i(152815) },	-- Antoran Gloomhound (MOUNT!)
+					groups = { i(152815) },	-- Antoran Gloomhound (MOUNT!)
 				}),
 				ach(12112),	-- Antorus, the Burning Throne Guild Run
 			}),
 			n(QUESTS, {
-				q(48954, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0, REMOVED_8_0_1, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END } }, {	-- Blood of a Titan
-					["provider"] = { "i", 152900 },	-- Blood of the Unmaker
-					["groups"] = { i(152901) },	-- Violet Spellwing (MOUNT!)
+				q(48954, bubbleDownSelf({ timeline = { ADDED_7_3_0, REMOVED_8_0_1, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END } }, {	-- Blood of a Titan
+					provider = { "i", 152900 },	-- Blood of the Unmaker
+					groups = { i(152901) },	-- Violet Spellwing (MOUNT!)
 				})),
 				q(49077, {	-- Moments of Reflection
-					["qg"] = 129429,	-- Alor'idal Crystal
-					["qi"] = 153555,	-- Alor'idal Crystal (QI!)
+					qg = 129429,	-- Alor'idal Crystal
+					qi = 153555,	-- Alor'idal Crystal (QI!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
@@ -436,7 +436,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					i(151732),	-- Design: Empyrial Elemental Crown [Rank 3] (RECIPE!)
 					i(151735),	-- Design: Empyrial Titan Crown [Rank 3] (RECIPE!)
 					i(208051, {	-- Grimoire of the Antoran Felhunter (CI!)
-						["timeline"] = { ADDED_10_1_5 },
+						timeline = { ADDED_10_1_5 },
 					}),
 				}),
 				BossOnly(HIGH_COMMAND, {
@@ -446,16 +446,16 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				BossOnly(HASABEL, {
 					o(405307, {	-- Singed Grimoire
 						i(208050, {	-- Grimoire of the Xorothian Felhunter (CI!)
-							["description"] = "1. Defeat Portal Keeper Hasabel in Antorus, the Burning Throne, while wearing a staff transmogged into Zhar'doom, Greatstaff of the Devourer.\n2. Enter the Orange portal of the boss encounter to be teleported to a different platform.\n3. Interact with the deactivated portal near the center of the platform while wearing the transmogged staff and select <Channel the power of your weapon into the gateway.>",
-							["providers"] = {
+							description = "1. Defeat Portal Keeper Hasabel in Antorus, the Burning Throne, while wearing a staff transmogged into Zhar'doom, Greatstaff of the Devourer.\n2. Enter the Orange portal of the boss encounter to be teleported to a different platform.\n3. Interact with the deactivated portal near the center of the platform while wearing the transmogged staff and select <Channel the power of your weapon into the gateway.>",
+							providers = {
 								{ "i", 32374, },	-- Zhar'doom, Greatstaff of the Devourer
 								{ "i", 150517, },	-- Zhar'doom, Greatstaff of the Devourer (TW)
 							},
-							["timeline"] = { ADDED_10_1_5 },
+							timeline = { ADDED_10_1_5 },
 						}),
 					}),
 					i(213014, {	-- Grimoire of the Xorothian Darkglare (CI!)
-						["timeline"] = { ADDED_10_2_5 },
+						timeline = { ADDED_10_2_5 },
 					}),
 					i(151748),	-- Pattern: Lightweave Breeches [Rank 3] (RECIPE!)
 				}),
@@ -496,7 +496,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(WORLDBREAKER, {
 					ach(11930, {	-- Worm-monger
-						["crs"] = { 124436 },	-- Blightscale Worm
+						crs = { 124436 },	-- Blightscale Worm
 					}),
 					i(151713),	-- Plans: Empyrial Breastplate (Rank 3)
 				}),
@@ -526,7 +526,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				BossOnly(AGGRAMAR, {
 					ach(11915, {	-- Don't Sweat the Technique
-						["crs"] = { 123531 },	-- Manifestation of Taeshalach
+						crs = { 123531 },	-- Manifestation of Taeshalach
 					}),
 				}),
 				BossOnly(ARGUS, {
@@ -544,23 +544,23 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(49032, {	-- Antorus, the Burning Throne: Dark Passage (Normal)
-						["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
-						["altQuests"] = {
+						description = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						altQuests = {
 							49075,	-- Antorus, the Burning Throne: Dark Passage (Heroic)
 							49076,	-- Antorus, the Burning Throne: Dark Passage (Mythic)
 						},
-						["qg"] = 125512,	-- High Exarch Turalyon
-						["qi"] = 152902,	-- Rune of Passage (QI!)
+						qg = 125512,	-- High Exarch Turalyon
+						qi = 152902,	-- Rune of Passage (QI!)
 					}),
 					q(49133, {	-- Antorus, the Burning Throne: The Heart of Argus (Normal)
-						["description"] = "Finishing this quest will grant you immediate access to Aggramar on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
-						["sourceQuests"] = { 49032 },	-- Antorus, the Burning Throne: Dark Passage (Normal)
-						["altQuests"] = {
+						description = "Finishing this quest will grant you immediate access to Aggramar on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						sourceQuests = { 49032 },	-- Antorus, the Burning Throne: Dark Passage (Normal)
+						altQuests = {
 							49134,	-- Antorus, the Burning Throne: The Heart of Argus (Heroic)
 							49135,	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
 						},
-						["qg"] = 125682,	-- Prophet Velen
-						["qi"] = 152908,	-- Sigil of the Dark Titan (QI!)
+						qg = 125682,	-- Prophet Velen
+						qi = 152908,	-- Sigil of the Dark Titan (QI!)
 					}),
 				}),
 				Boss(WORLDBREAKER),
@@ -578,10 +578,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(ARGUS, {
 					ach(12110, {	-- Ahead of the Curve: Argus the Unmaker
-						["timeline"] = { ADDED_7_3_0, REMOVED_8_0_1 },
+						timeline = { ADDED_7_3_0, REMOVED_8_0_1 },
 					}),
 					i(152900, {	-- Blood of the Unmaker
-						["timeline"] = { ADDED_7_3_0, REMOVED_8_0_1 },
+						timeline = { ADDED_7_3_0, REMOVED_8_0_1 },
 					}),
 				}),
 			}),
@@ -589,17 +589,17 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(49075, {	-- Antorus, the Burning Throne: Dark Passage (Heroic)
-						["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
-						["altQuests"] = { 49076 },	-- Antorus, the Burning Throne: Dark Passage (Mythic)
-						["qg"] = 125512,	-- High Exarch Turalyon
-						["qi"] = 152906,	-- Rune of Passage (QI!)
+						description = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						altQuests = { 49076 },	-- Antorus, the Burning Throne: Dark Passage (Mythic)
+						qg = 125512,	-- High Exarch Turalyon
+						qi = 152906,	-- Rune of Passage (QI!)
 					}),
 					q(49134, {	-- Antorus, the Burning Throne: The Heart of Argus (Heroic)
-						["description"] = "Finishing this quest will grant you immediate access to Aggramar on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
-						["sourceQuests"] = { 49075 },	-- Antorus, the Burning Throne: Dark Passage (Heroic)
-						["altQuests"] = { 49135 },	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
-						["qg"] = 125682,	-- Prophet Velen
-						["qi"] = 152909,	-- Sigil of the Dark Titan (QI!)
+						description = "Finishing this quest will grant you immediate access to Aggramar on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						sourceQuests = { 49075 },	-- Antorus, the Burning Throne: Dark Passage (Heroic)
+						altQuests = { 49135 },	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
+						qg = 125682,	-- Prophet Velen
+						qi = 152909,	-- Sigil of the Dark Titan (QI!)
 					}),
 				}),
 				Boss(WORLDBREAKER),
@@ -618,15 +618,15 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(49076, {	-- Antorus, the Burning Throne: Dark Passage (Mythic)
-						["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Mythic difficulty each week.\n",
-						["qg"] = 125512,	-- High Exarch Turalyon
-						["qi"] = 152907,	-- Rune of Passage (QI!)
+						description = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Mythic difficulty each week.\n",
+						qg = 125512,	-- High Exarch Turalyon
+						qi = 152907,	-- Rune of Passage (QI!)
 					}),
 					q(49135, {	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
-						["description"] = "Finishing this quest will grant you immediate access to Aggramar on Mythic difficulty each week.\n",
-						["sourceQuests"] = { 49076 },	-- Antorus, the Burning Throne: Dark Passage (Mythic)
-						["qg"] = 125682,	-- Prophet Velen
-						["qi"] = 152910,	-- Sigil of the Dark Titan (QI!)
+						description = "Finishing this quest will grant you immediate access to Aggramar on Mythic difficulty each week.\n",
+						sourceQuests = { 49076 },	-- Antorus, the Burning Throne: Dark Passage (Mythic)
+						qg = 125682,	-- Prophet Velen
+						qi = 152910,	-- Sigil of the Dark Titan (QI!)
 					}),
 				}),
 				Boss(WORLDBREAKER, {
@@ -661,14 +661,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				Boss(ARGUS, {
 					ach(12111, {	-- Cutting Edge: Argus the Unmaker
-						["timeline"] = { ADDED_7_3_0, REMOVED_8_0_1 },
+						timeline = { ADDED_7_3_0, REMOVED_8_0_1 },
 					}),
 					ach(12002, {	-- Mythic: Argus the Unmaker
 						title(364),	-- Titanslayer
 					}),
 					ach(12113),	-- Mythic: Argus the Unmaker Guild Run
 					ach(12258, {	-- Realm First! Argus the Unmaker
-						["timeline"] = { ADDED_7_3_0, REMOVED_8_0_1 },
+						timeline = { ADDED_7_3_0, REMOVED_8_0_1 },
 					}),
 					i(155880),	-- Scythe of the Unmaker [RED]
 					i(152789),	-- Shackled Ur'zul (MOUNT!)
@@ -679,7 +679,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {
 		inst(946, {
 			q(45460),	-- Garothi Worldbreaker
 			q(48420),	-- Garothi Worldbreaker (triggered at the same time as above)
@@ -719,9 +719,9 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(48570),	-- Tracking Quest - triggers when the door opens to Kin'garoth
 		}),
 	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
 		inst(946, {
-			q(77246, {["timeline"]={ADDED_10_1_5}}),	-- after <Channel the power of your weapon into the gateway.> for Grimoire of the Xorothian Felhunter (itemID 208050)
+			q(77246, {timeline={ADDED_10_1_5}}),	-- after <Channel the power of your weapon into the gateway.> for Grimoire of the Xorothian Felhunter (itemID 208050)
 		}),
 	})),
 });

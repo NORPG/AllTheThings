@@ -3,7 +3,7 @@ local i = function(itemID
 				,conduitID
 				,classes
 				,covenant)
-	local item = { ["conduitID"] = conduitID, };
+	local item = { conduitID = conduitID, };
 	if #classes < 12 then
 		item.classes = classes;
 	end

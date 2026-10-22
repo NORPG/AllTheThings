@@ -4,18 +4,18 @@
 
 -- Everything in this section should be common to both Vale and Uldum N'Zoth
 -- assault and tagged with location information
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8_3_0 } }, {
 	n(NZOTH_ASSAULTS, {
-		["maps"] = {
+		maps = {
 			NZOTH_ASSAULT_ULDUM,
 			NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS,
 		},
-		["groups"] = {
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(40959, {	-- Black Empire State of Mind
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						14161,	-- All Consuming
 						14159,	-- Combating the Corruption
 						14154,	-- Defend the Vale
@@ -27,9 +27,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 				}),
 				ach(14159, {	-- Combating the Corruption
 					crit(47211, {		-- Corrupted Acolyte slain
-						["description"] = "Shares a spawn with Acolyte of N'Zoth.",
-						["cr"] = 162249,	-- Corrupted Acolyte
-						["coords"] = {
+						description = "Shares a spawn with Acolyte of N'Zoth.",
+						cr = 162249,	-- Corrupted Acolyte
+						coords = {
 							{ 49.5, 39.9, NZOTH_ASSAULT_ULDUM },
 							{ 51.2, 73.2, NZOTH_ASSAULT_ULDUM },
 							{ 49.0, 80.0, NZOTH_ASSAULT_ULDUM },
@@ -48,9 +48,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47212, {		-- Corrupted Assassin slain
-						["description"] = "Shares a spawn with Black Empire Assassin.",
-						["cr"] = 162250,	-- Corrupted Assassin
-						["coords"] = {
+						description = "Shares a spawn with Black Empire Assassin.",
+						cr = 162250,	-- Corrupted Assassin
+						coords = {
 							{ 51.7, 71.1, NZOTH_ASSAULT_ULDUM },
 							{ 50.7, 72.3, NZOTH_ASSAULT_ULDUM },
 							{ 50.2, 72.6, NZOTH_ASSAULT_ULDUM },
@@ -67,9 +67,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47213, {		-- Corrupted Beheader slain
-						["description"] = "Shares a spawn with Black Empire Beheader.",
-						["cr"] = 162252,	-- Corrupted Beheader
-						["coords"] = {
+						description = "Shares a spawn with Black Empire Beheader.",
+						cr = 162252,	-- Corrupted Beheader
+						coords = {
 							{ 58.4, 42.8, NZOTH_ASSAULT_ULDUM },
 							{ 52.6, 46.4, NZOTH_ASSAULT_ULDUM },
 							{ 60.0, 49.5, NZOTH_ASSAULT_ULDUM },
@@ -84,18 +84,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47214,	{		-- Corrupted Bloodseeker slain
-						["description"] = "This doesn't appear to share a spawn with any other mob, but it's an elite shark that spawns off the southern coast of Uldum. It can swim very far out, close to fatigue waters, so if you're searching for Corrupted Bloodseeker it may be helpful to follow the outside edge rather than sticking to the coast.",
-						["cr"] = 162290,	-- Corrupted Bloodseeker
-						["coords"] = {
+						description = "This doesn't appear to share a spawn with any other mob, but it's an elite shark that spawns off the southern coast of Uldum. It can swim very far out, close to fatigue waters, so if you're searching for Corrupted Bloodseeker it may be helpful to follow the outside edge rather than sticking to the coast.",
+						cr = 162290,	-- Corrupted Bloodseeker
+						coords = {
 							{ 13.8, 63.6, NZOTH_ASSAULT_ULDUM },
 							{ 26.8, 76.6, NZOTH_ASSAULT_ULDUM },
 							{ 46.6, 91.2, NZOTH_ASSAULT_ULDUM },
 						},
 					}),
 					crit(47215,	{		-- Corrupted Bonestripper slain
-						["description"] = "Shares a spawn with N'Zoth Bonestripper. Found in most water locations.",
-						["cr"] = 159087,	-- Corrupted Bonestripper
-						["coords"] = {
+						description = "Shares a spawn with N'Zoth Bonestripper. Found in most water locations.",
+						cr = 159087,	-- Corrupted Bonestripper
+						coords = {
 							{ 55.7, 43.8, NZOTH_ASSAULT_ULDUM },
 							{ 57.5, 17.7, NZOTH_ASSAULT_ULDUM },
 							{ 56.6, 20.6, NZOTH_ASSAULT_ULDUM },
@@ -110,9 +110,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47216,	{		-- Corrupted Despoiler slain
-						["description"] = "Shares a spawn with Faceless Despoiler and Mind Eater. Can also result in Corrupted Mind Eater spawning.",
-						["cr"] = 156709,	-- Corrupted Despoiler
-						["coords"] = {
+						description = "Shares a spawn with Faceless Despoiler and Mind Eater. Can also result in Corrupted Mind Eater spawning.",
+						cr = 156709,	-- Corrupted Despoiler
+						coords = {
 							{ 59.5, 47.4, NZOTH_ASSAULT_ULDUM },
 							{ 59.1, 42.7, NZOTH_ASSAULT_ULDUM },
 							{ 55.1, 53.4, NZOTH_ASSAULT_ULDUM },
@@ -141,9 +141,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47217,	{		-- Corrupted Dominator slain
-						["description"] = "Shares a spawn with Faceless Dominator.",
-						["cr"] = 162246,	-- Corrupted Dominator
-						["coords"] = {
+						description = "Shares a spawn with Faceless Dominator.",
+						cr = 162246,	-- Corrupted Dominator
+						coords = {
 							{ 63.0, 71.0, NZOTH_ASSAULT_ULDUM },
 							{ 63.8, 72.8, NZOTH_ASSAULT_ULDUM },
 							{ 64.5, 74.5, NZOTH_ASSAULT_ULDUM },
@@ -153,9 +153,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47218, {		-- Corrupted Doomsayer slain
-						["description"] = "Shares a spawn with K'thir Doomsayer.",
-						["cr"] = 162244,	-- Corrupted Doomsayer
-						["coords"] = {
+						description = "Shares a spawn with K'thir Doomsayer.",
+						cr = 162244,	-- Corrupted Doomsayer
+						coords = {
 							{ 60.8, 71.5, NZOTH_ASSAULT_ULDUM },
 							{ 60.2, 71.3, NZOTH_ASSAULT_ULDUM },
 							{ 62.0, 73.7, NZOTH_ASSAULT_ULDUM },
@@ -180,9 +180,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47219, {		-- Corrupted Fleshbeast slain
-						["description"] = "Shares a spawn with Burbling Fleshbeast.",
-						["cr"] = 158632,	-- Corrupted Fleshbeast
-						["coords"] = {
+						description = "Shares a spawn with Burbling Fleshbeast.",
+						cr = 158632,	-- Corrupted Fleshbeast
+						coords = {
 							{ 59.5, 48.6, NZOTH_ASSAULT_ULDUM },
 							{ 49.0, 35.5, NZOTH_ASSAULT_ULDUM },
 							{ 62.2, 68.7, NZOTH_ASSAULT_ULDUM },
@@ -204,9 +204,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47220, {		-- Corrupted Jailer slain
-						["description"] = "Shares a spawn with Faceless Jailer.",
-						["cr"] = 162247,	-- Corrupted Jailer
-						["coords"] = {
+						description = "Shares a spawn with Faceless Jailer.",
+						cr = 162247,	-- Corrupted Jailer
+						coords = {
 							{ 60.8, 71.5, NZOTH_ASSAULT_ULDUM },
 							{ 62.1, 74.7, NZOTH_ASSAULT_ULDUM },
 							{ 63.4, 72.6, NZOTH_ASSAULT_ULDUM },
@@ -214,9 +214,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47221, {		-- Corrupted Mind Eater slain
-						["description"] = "Shares a spawn with Mind Eater and Faceless Despoiler. Can also result in Corrupted Despoiler spawning.",
-						["cr"] = 162243,	-- Corrupted Mind Eater
-						["coords"] = {
+						description = "Shares a spawn with Mind Eater and Faceless Despoiler. Can also result in Corrupted Despoiler spawning.",
+						cr = 162243,	-- Corrupted Mind Eater
+						coords = {
 							{ 59.5, 47.4, NZOTH_ASSAULT_ULDUM },
 							{ 59.1, 42.7, NZOTH_ASSAULT_ULDUM },
 							{ 55.1, 53.4, NZOTH_ASSAULT_ULDUM },
@@ -245,9 +245,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47222, {		-- Corrupted Neferset Guard slain
-						["description"] = "Shares a spawn with Voidwarped Neferset and Voidwarped Neferset High Guard.",
-						["cr"] = 158531,	-- Corrupted Neferset Guard
-						["coords"] = {
+						description = "Shares a spawn with Voidwarped Neferset and Voidwarped Neferset High Guard.",
+						cr = 158531,	-- Corrupted Neferset Guard
+						coords = {
 							{ 50.9, 82.9, NZOTH_ASSAULT_ULDUM },
 							{ 51.6, 81.7, NZOTH_ASSAULT_ULDUM },
 							{ 49.8, 82.0, NZOTH_ASSAULT_ULDUM },
@@ -263,9 +263,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47223, {		-- Corrupted Observer slain
-						["description"] = "Shares a spawn with Foul Observer.",	-- add Vale mob to description (can't remember what it's called, the eye mob ugh)
-						["cr"] = 162254,	-- Corrupted Observer
-						["coords"] = {
+						description = "Shares a spawn with Foul Observer.",	-- add Vale mob to description (can't remember what it's called, the eye mob ugh)
+						cr = 162254,	-- Corrupted Observer
+						coords = {
 							{ 55.4, 51.0, NZOTH_ASSAULT_ULDUM },
 							{ 43.0, 62.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							{ 52.0, 67.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
@@ -290,9 +290,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47224, {		-- Corrupted Putrefaction slain
-						["description"] = "Shares a spawn with Oozing Putrefaction.",
-						["cr"] = 158706,	-- Corrupted Putrefaction
-						["coords"] = {
+						description = "Shares a spawn with Oozing Putrefaction.",
+						cr = 158706,	-- Corrupted Putrefaction
+						coords = {
 							{ 59.3, 41.4, NZOTH_ASSAULT_ULDUM },
 							{ 60.4, 39.9, NZOTH_ASSAULT_ULDUM },
 							{ 47.4, 26.3, NZOTH_ASSAULT_ULDUM },
@@ -301,9 +301,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47225, {		-- Corrupted Summoner slain
-						["description"] = "Shares a spawn with Black Empire Conjurers.",
-						["cr"] = 162251,	-- Corrupted Summoner
-						["coords"] = {
+						description = "Shares a spawn with Black Empire Conjurers.",
+						cr = 162251,	-- Corrupted Summoner
+						coords = {
 							{ 58.9, 46.2, NZOTH_ASSAULT_ULDUM },
 							{ 60.3, 50.9, NZOTH_ASSAULT_ULDUM },
 							{ 59.7, 50.9, NZOTH_ASSAULT_ULDUM },
@@ -321,9 +321,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47226, {		-- Corrupted Thaumaturge slain
-						["description"] = "Shares a spawn with Black Empire Thaumaturge and Black Empire Conjurer.",
-						["cr"] = 162253,	-- Corrupted Thaumaturge
-						["coords"] = {
+						description = "Shares a spawn with Black Empire Thaumaturge and Black Empire Conjurer.",
+						cr = 162253,	-- Corrupted Thaumaturge
+						coords = {
 							{ 51.9, 70.3, NZOTH_ASSAULT_ULDUM },
 							{ 50.5, 81.8, NZOTH_ASSAULT_ULDUM },
 							{ 50.1, 74.6, NZOTH_ASSAULT_ULDUM },
@@ -340,8 +340,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						},
 					}),
 					crit(47227, {		-- Corrupted Thoughtstealer slain
-						["description"] = "Shares a spawn with K'thir Thoughtstealer.",
-						["coords"] = {
+						description = "Shares a spawn with K'thir Thoughtstealer.",
+						coords = {
 							{ 62.7, 75.4, NZOTH_ASSAULT_ULDUM },
 							{ 61.0, 72.0, NZOTH_ASSAULT_ULDUM },
 							{ 60.5, 68.7, NZOTH_ASSAULT_ULDUM },
@@ -349,22 +349,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							{ 61.1, 66.5, NZOTH_ASSAULT_ULDUM },
 							{ 62.9, 74.3, NZOTH_ASSAULT_ULDUM },
 						},
-						["cr"] = 162241,	-- Corrupted Thoughtstealer
+						cr = 162241,	-- Corrupted Thoughtstealer
 					}),
 					crit(47228, {		-- Corrupted Tormentor slain	-- TODO:  Add coords
-						["description"] = "Shares a spawn with Tentacle Tormentors, found off the southern coast of Uldum.",
-						["coords"] = {
+						description = "Shares a spawn with Tentacle Tormentors, found off the southern coast of Uldum.",
+						coords = {
 							{ 13.0, 64.6, NZOTH_ASSAULT_ULDUM },
 							{ 32.6, 73.2, NZOTH_ASSAULT_ULDUM },
 							{ 49.6, 91.8, NZOTH_ASSAULT_ULDUM },
 							{ 75.6, 79.0, NZOTH_ASSAULT_ULDUM },
 							{ 87.2, 47.2, NZOTH_ASSAULT_ULDUM },
 						},
-						["cr"] = 162245,	-- Corrupted Tormentor
+						cr = 162245,	-- Corrupted Tormentor
 					}),
 					crit(47229, {		-- Corrupted Watcher slain
-						["description"] = "Shares a spawn with Voidwarped Watcher.",
-						["coords"] = {
+						description = "Shares a spawn with Voidwarped Watcher.",
+						coords = {
 							{ 61.8, 73.0, NZOTH_ASSAULT_ULDUM },
 							{ 63.4, 72.9, NZOTH_ASSAULT_ULDUM },
 							{ 52.0, 69.8, NZOTH_ASSAULT_ULDUM },
@@ -373,7 +373,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							{ 52.1, 83.0, NZOTH_ASSAULT_ULDUM },
 							{ 50.8, 69.8, NZOTH_ASSAULT_ULDUM },
 						},
-						["cr"] = 150829,	-- Corrupted Watcher
+						cr = 150829,	-- Corrupted Watcher
 					}),
 				}),
 				ach(14161),	-- Get In My Belly!	-- TODO:  update with map-specific criteria when they get added
@@ -382,100 +382,100 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			}),
 			n(AZERITE_ESSENCES, {
 				i(168574, {	-- Petrified Living Bark (Rank 2)
-					["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
+					cost = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
 				}),
 				i(168439, {	-- Swirling Star Dust (Rank 2)
-					["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
+					cost = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
 				}),
 				i(173281, {	-- Token of Death's Mark (Rank 2)
-					["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
+					cost = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
 				}),
 			}),
 			n(VISIONS_OF_NZOTH, {
 				n(QUESTS, sharedData({
-					["isDaily"] = true,
+					isDaily = true,
 				}, {
 					-- Lesser Visions dailies
 					q(58168, {	-- A Dark, Glaring Reality
-						["provider"] = { "n", 160252 },	-- Blacktalon Agent
-						["coords"] = {
+						provider = { "n", 160252 },	-- Blacktalon Agent
+						coords = {
 							{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
 							{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
-						["maps"] = {
+						maps = {
 							1570,	-- Vale of Eternal Blossoms, Vision
 							1571,	-- Uldum, Vision
 						},
-						["groups"] = {
+						groups = {
 							i(173810),	-- Darksight Potion (QI!)
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
-								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+								description = "Awarded once a week upon completion of your first Visions of Darkness quest.",
 							}),
 						},
 					}),
 					q(58151, {	-- Minions of N'Zoth
-						["provider"] = { "n", 160252 },	-- Blacktalon Agent
-						["coords"] = {
+						provider = { "n", 160252 },	-- Blacktalon Agent
+						coords = {
 							{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
 							{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
-						["maps"] = {
+						maps = {
 							1570,	-- Vale of Eternal Blossoms, Vision
 							1571,	-- Uldum, Vision
 						},
-						["groups"] = {
+						groups = {
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
-								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+								description = "Awarded once a week upon completion of your first Visions of Darkness quest.",
 							}),
 						},
 					}),
 					q(58167, {	-- Preventative Measures
-						["provider"] = { "n", 160252 },	-- Blacktalon Agent
-						["coords"] = {
+						provider = { "n", 160252 },	-- Blacktalon Agent
+						coords = {
 							{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
 							{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
-						["maps"] = {
+						maps = {
 							1570,	-- Vale of Eternal Blossoms, Vision
 							1571,	-- Uldum, Vision
 						},
-						["groups"] = {
+						groups = {
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
-								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+								description = "Awarded once a week upon completion of your first Visions of Darkness quest.",
 							}),
 						},
 					}),
 					q(58156, {	-- Vanquishing the Darkness
-						["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
-						["provider"] = { "n", 160252 },	-- Blacktalon Agent
-						["coords"] = {
+						sourceQuest = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
+						provider = { "n", 160252 },	-- Blacktalon Agent
+						coords = {
 							{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
 							{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
-						["maps"] = {
+						maps = {
 							1570,	-- Vale of Eternal Blossoms, Vision
 							1571,	-- Uldum, Vision
 						},
-						["groups"] = {
+						groups = {
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
-								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+								description = "Awarded once a week upon completion of your first Visions of Darkness quest.",
 							}),
 						},
 					}),
 					q(58155, {	-- A Hand in the Dark
-						["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
-						["provider"] = { "n", 160252 },
-						["coords"] = {
+						sourceQuest = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
+						provider = { "n", 160252 },
+						coords = {
 							{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
 							{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
-						["maps"] = {
+						maps = {
 							1570,	-- Vale of Eternal Blossoms, Vision
 							1571,	-- Uldum, Vision
 						},
-						["groups"] = {
+						groups = {
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
-								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+								description = "Awarded once a week upon completion of your first Visions of Darkness quest.",
 							}),
 						},
 					}),
@@ -489,13 +489,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(174456, {	-- Gloop (PET!)
-						["description"] = "Can be caught from schools of fish in a zone currently affected by a N'Zoth Assault.",
+						description = "Can be caught from schools of fish in a zone currently affected by a N'Zoth Assault.",
 					}),
 				}),
 			}),
 			n(SPECIAL, {
 				i(175140, {	-- All-Seeing Eyes (TOY!)
-					["cost"] = {
+					cost = {
 						{ "i", 175142, 1 },	-- All-Seeing Right Eye
 						{ "i", 175141, 1 },	-- All-Seeing Left Eye
 					},
@@ -701,22 +701,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					azewrongItem(184601),	-- Malignant Leviathan's Spaulders
 				}),
 				i(173936, {	-- Dookin' Ookin' Quarterstaff
-					["coord"] = { 80.4, 63.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
-					["crs"] = {
+					coord = { 80.4, 63.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+					crs = {
 						154451,	-- Squidtail Screamer
 						154467,	-- Chief Mek-mek
 					}
 				}),
 				i(173935, {	-- Nik-Nik's Slicky Sticker
-					["coord"] = { 80.4, 63.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
-					["crs"] = {
+					coord = { 80.4, 63.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+					crs = {
 						154451,	-- Squidtail Screamer
 						154467,	-- Chief Mek-mek
 					}
 				}),
 				-- #IF AFTER TWW
 				i(174768, {	-- Cursed Relic
-					["cost"] = { { "i", 174758, 6 } },	-- 6x Voidwarped Relic Fragment
+					cost = { { "i", 174758, 6 } },	-- 6x Voidwarped Relic Fragment
 				}),
 				i(174758),	-- Voidwarped Relic Fragment
 				-- #ENDIF

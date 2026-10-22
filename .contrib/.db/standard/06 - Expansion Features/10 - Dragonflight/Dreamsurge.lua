@@ -18,27 +18,27 @@ DREAMSURGE_CHRYSALIS = 208153;
 DREAMSURGE_CHRYSALIS = 210254;
 -- #endif
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
-	n(DREAMSURGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+	n(DREAMSURGE, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 		n(QUESTS, {
 			q(77423, {	-- Surging Dreams
-				["provider"] = { "n", 211031 },	-- Archdruid Hamuul Runetotem
-				["coord"] = { 50.6, 57.4, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_7, REMOVED_10_2_0 },
-				["isBreadcrumb"] = true,
+				provider = { "n", 211031 },	-- Archdruid Hamuul Runetotem
+				coord = { 50.6, 57.4, VALDRAKKEN },
+				timeline = { ADDED_10_1_7, REMOVED_10_2_0 },
+				isBreadcrumb = true,
 			}),
 			q(77414, {	-- Dreamsurge Investigation
-				["sourceQuests"] = { 77423 },	-- Surging Dreams
-				["provider"] = { "n", 208649 },	-- Archdruid Hamuul Runetotem
-				["coords"] = {
+				sourceQuests = { 77423 },	-- Surging Dreams
+				provider = { "n", 208649 },	-- Archdruid Hamuul Runetotem
+				coords = {
 					{ 51.2, 43.3, THALDRASZUS },
 					{ 58.3, 67.7, THE_WAKING_SHORES },
 					{ 64.1, 41.7, OHNAHRAN_PLAINS },
 					{ 45.6, 39.8, THE_AZURE_SPAN },
 				},
-				["groups"] = {
+				groups = {
 					i(209833, {	-- Crate of Dreambound Armor
-						["sym"] = {{"select","itemID",
+						sym = {{"select","itemID",
 							208918,	-- Dreambound Cloth Gloves
 							208917,	-- Dreambound Cloth Boots
 							208911,	-- Dreambound Cloth Belt
@@ -77,39 +77,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(77251, {	-- Shaping the Dreamsurge
-				["provider"] = { "n", 208649 },	-- Archdruid Hamuul Runetotem
-				["coords"] = {
+				provider = { "n", 208649 },	-- Archdruid Hamuul Runetotem
+				coords = {
 					{ 51.2, 43.3, THALDRASZUS },
 					{ 58.3, 67.7, THE_WAKING_SHORES },
 					{ 64.1, 41.7, OHNAHRAN_PLAINS },
 					{ 45.6, 39.8, THE_AZURE_SPAN },
 				},
-				["isWeekly"] = true,
-				["groups"] = {
+				isWeekly = true,
+				groups = {
 					ach(19008),	-- Dream Shaper
 					i(208153, {	-- Dreamsurge Chrysalis
-						["timeline"] = { ADDED_10_1_7, REMOVED_10_2_0 },
+						timeline = { ADDED_10_1_7, REMOVED_10_2_0 },
 					}),
 					i(210254, {	-- Dreamsurge Chrysalis
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+						timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 					i(224297, {	-- Dreamsurge Cradle
-						["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+						timeline = { ADDED_10_2_6_SEASON_FOUR },
 					}),
 					i(215364, {	-- Cache of Dreams
-						["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+						timeline = { ADDED_10_2_6_SEASON_FOUR },
 					}),
 				},
 			}),
 		}),
 		n(RARES, sharedData({
-			["provider"] = { "o", 406383 },	-- Firelands Portal (vignette), Thaldraszus
-			["groups"] = {
+			provider = { "o", 406383 },	-- Firelands Portal (vignette), Thaldraszus
+			groups = {
 				i(209419),	-- Charred Elemental Remains
 			},
 		}, {
 			n(209754, {	-- Allied Cinderrager
-				["coords"] = {
+				coords = {
 					{ 61.9, 26.5, THALDRASZUS },
 					{ 41.2, 77.5, THE_WAKING_SHORES },
 					{ 24.3, 60.9, OHNAHRAN_PLAINS },
@@ -117,7 +117,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			n(209837, {	-- Flamewing Ascendant
-				["coords"] = {
+				coords = {
 					{ 62.4, 26.0, THALDRASZUS },
 					{ 41.2, 77.5, THE_WAKING_SHORES },
 					{ 24.3, 60.9, OHNAHRAN_PLAINS },
@@ -125,7 +125,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			n(209491, {	-- Molten General
-				["coords"] = {
+				coords = {
 					{ 61.8, 26.3, THALDRASZUS },
 					{ 41.2, 77.5, THE_WAKING_SHORES },
 					{ 24.3, 60.9, OHNAHRAN_PLAINS },
@@ -133,7 +133,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			n(209753, {	-- Planesborn Annihilator
-				["coords"] = {
+				coords = {
 					{ 61.7, 26.2, THALDRASZUS },
 					{ 41.2, 77.5, THE_WAKING_SHORES },
 					{ 24.3, 60.9, OHNAHRAN_PLAINS },
@@ -141,38 +141,38 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			n(206825, {	-- Waking Dream
-				["description"] = "Can be found in Dreamsurge zone, interact with it to start event, kill all npcs that came out and portal is closed.",
-				["maps"] = { THALDRASZUS, THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN },	-- otherwise too many coords
-				["questID"] = 78273,
-				["isDaily"] = true,
+				description = "Can be found in Dreamsurge zone, interact with it to start event, kill all npcs that came out and portal is closed.",
+				maps = { THALDRASZUS, THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN },	-- otherwise too many coords
+				questID = 78273,
+				isDaily = true,
 			}),
 		})),
 		n(REWARDS, {
-			["maps"] = {
+			maps = {
 				OHNAHRAN_PLAINS,
 				THALDRASZUS,
 				THE_AZURE_SPAN,
 				THE_WAKING_SHORES,
 			},
-			["groups"] = {
+			groups = {
 				i(DREAMSURGE_COALESCENCE, {
-					["description"] = "10 per WQ, 25 per rare kill in zone where Dreamsurge is active",
+					description = "10 per WQ, 25 per rare kill in zone where Dreamsurge is active",
 				}),
 				i(192807, {	-- Renewed Magmammoth (MOUNT!)
-					["cost"] = { { "i", 209419, 20 } },	-- 20x Charred Elemental Remains
+					cost = { { "i", 209419, 20 } },	-- 20x Charred Elemental Remains
 				}),
 			},
 		}),
 		n(VENDORS, {
 			n(210608, {	-- Celestine of the Harvest
-				["coords"] = {
+				coords = {
 					{ 51.1, 43.4, THALDRASZUS },
 					{ 58.4, 67.8, THE_WAKING_SHORES },
 					{ 64.2, 41.6, OHNAHRAN_PLAINS},
 					{ 45.6, 39.7, THE_AZURE_SPAN },
 				},
-				["groups"] = bubbleDownFiltered({
-					["cost"] = { { "i", DREAMSURGE_COALESCENCE, 100 } },
+				groups = bubbleDownFiltered({
+					cost = { { "i", DREAMSURGE_COALESCENCE, 100 } },
 				},FILTERFUNC_itemID,{
 					filter(CLOTH, {
 						DreamboundBOA(208918, 209409),	-- Dreambound Cloth Gloves
@@ -216,7 +216,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					n(BACK, {
 						i(208922, {	-- Dreambound Cloak
-							["sym"] = {{"select","itemID",
+							sym = {{"select","itemID",
 								209414,	-- Dreambound Drape
 								209413,	-- Dreambound Cape
 								209412,	-- Dreambound Greatcloak
@@ -226,7 +226,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					filter(FINGER_F, {
 						i(208923, {	-- Dreambound Ring
-							["sym"] = {{"select","itemID",
+							sym = {{"select","itemID",
 								209368,	-- Dreambound Loop
 								209367,	-- Dreambound Signet
 								209358,	-- Dreambound Band
@@ -238,7 +238,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					n(WEAPONS, {
 						i(208926, {	-- Dreambound Weapon
-							["sym"] = {{"select","itemID",
+							sym = {{"select","itemID",
 								209379,	-- Dreambound Barrier
 								209378,	-- Dreambound Scepter
 								209377,	-- Dreambound Wand
@@ -262,35 +262,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}),
 					i(198824, {	-- Duskwing Ohuna (MOUNT!)
-						["cost"] = { { "i", DREAMSURGE_COALESCENCE, 1000 } },
+						cost = { { "i", DREAMSURGE_COALESCENCE, 1000 } },
 					}),
 					i(205024, {	-- Cheddar (PET!)
-						["cost"] = { { "i", DREAMSURGE_COALESCENCE, 250 } },
+						cost = { { "i", DREAMSURGE_COALESCENCE, 250 } },
 					}),
 					i(205010, {	-- Crimson Swoglet (PET!)
-						["cost"] = { { "i", DREAMSURGE_COALESCENCE, 250 } },
+						cost = { { "i", DREAMSURGE_COALESCENCE, 250 } },
 					}),
 					i(209858, {	-- Dreamsurge Remnant (TOY!)
-						["cost"] = { { "i", DREAMSURGE_COALESCENCE, 500 } },
+						cost = { { "i", DREAMSURGE_COALESCENCE, 500 } },
 					}),
 					i(209944, {	-- Friendsurge Defenders (TOY!)
-						["cost"] = { { "i", DREAMSURGE_COALESCENCE, 500 } },
+						cost = { { "i", DREAMSURGE_COALESCENCE, 500 } },
 					}),
 					i(255673, {	-- Moonclasp Satchel (DEDOR!)
-						["cost"] = { { "i", DREAMSURGE_COALESCENCE, 500 } },
-						["timeline"] = { ADDED_11_2_7 },
+						cost = { { "i", DREAMSURGE_COALESCENCE, 500 } },
+						timeline = { ADDED_11_2_7 },
 					}),
 				}),
 			}),
 			n(208649, {	-- Archdruid Hamuul Runetotem
-				["coords"] = {
+				coords = {
 					{ 51.2, 43.3, THALDRASZUS },
 					{ 58.4, 67.7, THE_WAKING_SHORES },
 					{ 64.1, 41.7, OHNAHRAN_PLAINS },
 					{ 45.6, 39.8, THE_AZURE_SPAN },
 				},
-				["groups"] = bubbleDownFiltered({
-					["cost"] = { { "i", DREAMSURGE_CHRYSALIS, 1 } },
+				groups = bubbleDownFiltered({
+					cost = { { "i", DREAMSURGE_CHRYSALIS, 1 } },
 				},FILTERFUNC_itemID,{
 					n(BACK, {
 						i(209414),	-- Dreambound Drape
@@ -375,7 +375,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 	n(DREAMSURGE, {
 		q(78276),	-- 1st kill day / weekly
 		q(77794),	-- after 'some' boss kills for 'Birth of Flames' event

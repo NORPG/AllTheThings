@@ -4,8 +4,8 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 	n(COVENANT_SANCTUMS, {
-		["timeline"] = { ADDED_9_0_2_LAUNCH },
-		["maps"] = {
+		timeline = { ADDED_9_0_2_LAUNCH },
+		maps = {
 			-- Kyrian
 			ARCHONS_RISE,
 			SANCTUM_OF_BINDING,

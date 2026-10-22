@@ -2,24 +2,24 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
 	n(WORLD_BOSSES, {
-		["isRaid"] = true,
-		["groups"] = sharedData({
-			["isRaid"] = true,
-			["isWeekly"] = true,
+		isRaid = true,
+		groups = sharedData({
+			isRaid = true,
+			isWeekly = true,
 		}, {
-			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, e(814, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Nalak, The Storm Lord
-				["crs"] = { 69099 },	-- Nalak, the Storm Lord
-				["questID"] = 32518,
-				["coord"] = { 60.0, 37.7, ISLE_OF_THUNDER },
-				["maps"] = {	-- all Isle of Thunder maps
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, e(814, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {	-- Nalak, The Storm Lord
+				crs = { 69099 },	-- Nalak, the Storm Lord
+				questID = 32518,
+				coord = { 60.0, 37.7, ISLE_OF_THUNDER },
+				maps = {	-- all Isle of Thunder maps
 					505,	-- Lightning Vein Mine
 					506,	-- The Swollen Vault
 					516,	-- Scenario [Phase 1]
 					517,	-- Lightning Vein Mine
 				},
-				["groups"] = {
+				groups = {
 					ach(8137),	-- Nalak Guild Run
 					ach(8028),	-- Praise the Sun!
 					-- Mounts
@@ -363,13 +363,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					-- Consolation Prize
 					i(95602, {	-- Stormtouched Cache
-						["description"] = "This is awarded as a consolation prize to players who did not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
+						description = "This is awarded as a consolation prize to players who did not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
 						-- #if BEFORE 9.0.1
 						-- CRIEVE NOTE: Rumor has it that this doesn't drop pets anymore, despite originally having them be possible.
 						-- Goldenshacal Note: They had very low droprate, similar to a world drop. Commenting them out for visual cleanup
-						-- ["sym"] = {MOP_SYM_PETS},
+						-- sym = {MOP_SYM_PETS},
 						-- #endif
-						["groups"] = {
+						groups = {
 							i(95972),	-- Abandoned Zandalari Arrowlinks
 							i(95976),	-- Abandoned Zandalari Bucklebreaker
 							i(95961),	-- Abandoned Zandalari Firecord
@@ -390,11 +390,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			}))),
-			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, e(826, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Oondasta
-				["questID"] = 32519,
-				["coord"] = { 49.9, 56.8, ISLE_OF_GIANTS },
-				["crs"] = { 69161 },	-- Oondasta
-				["groups"] = {
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, e(826, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {	-- Oondasta
+				questID = 32519,
+				coord = { 49.9, 56.8, ISLE_OF_GIANTS },
+				crs = { 69161 },	-- Oondasta
+				groups = {
 					ach(8123),	-- Millions of Years of Evolution vs. My Fist
 					ach(8138),	-- Oondasta Guild Run
 					-- Mounts
@@ -449,13 +449,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 
 					-- Consolation Prize
 					i(95601, {	-- Shiny Pile of Refuse
-						["description"] = "This is awarded as a consolation prize to players who did not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
+						description = "This is awarded as a consolation prize to players who did not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
 						-- #if BEFORE 9.0.1
 						-- CRIEVE NOTE: Rumor has it that this doesn't drop pets anymore, despite originally having them be possible.
 						-- Goldenshacal Note: They had very low droprate, similar to a world drop. Commenting them out for visual cleanup
-						-- ["sym"] = {MOP_SYM_PETS},
+						-- sym = {MOP_SYM_PETS},
 						-- #endif
-						["groups"] = {
+						groups = {
 							i(95972),	-- Abandoned Zandalari Arrowlinks
 							i(95976),	-- Abandoned Zandalari Bucklebreaker
 							i(95961),	-- Abandoned Zandalari Firecord
@@ -487,18 +487,18 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			}))),
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, e(861, bubbleDownSelf({	-- Ordos, Fire-God of the Yaungol
 				-- #if AFTER WOD
-				["u"] = TEMP_MOP_LEGENDARY_CLOAK_PHASE,	-- Legendary Cloak Filter
+				u = TEMP_MOP_LEGENDARY_CLOAK_PHASE,	-- Legendary Cloak Filter
 				-- #endif
-				["timeline"] = { ADDED_5_4_0 },
+				timeline = { ADDED_5_4_0 },
 			}, {
-				["sourceQuests"] = { 33104 },	-- A Pandaren Legend
-				["questID"] = 33118,
-				["coord"] = { 54.9, 17.3, TIMELESS_ISLE },
-				["maps"] = {	-- all Timeless Isle maps
+				sourceQuests = { 33104 },	-- A Pandaren Legend
+				questID = 33118,
+				coord = { 54.9, 17.3, TIMELESS_ISLE },
+				maps = {	-- all Timeless Isle maps
 					555,	-- Cavern of Lost Spirits
 				},
-				["crs"] = { 72057 },	-- Ordos, Fire-God of the Yaungol
-				["groups"] = {
+				crs = { 72057 },	-- Ordos, Fire-God of the Yaungol
+				groups = {
 					ach(8533),	-- Ordos
 					ach(8790),	-- Ordos Guild Run
 					-- Head
@@ -568,8 +568,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(105757),	-- Shipley's Shady Silks
 					-- Consolation Prize
 					i(104273, {	-- Flame-Scarred Cache of Offerings
-						["description"] = "Awarded if you fail your loot roll. Usually contains gold or crafting materials. May follow your actual spec instead of loot spec, please provide more information to ATT Discord.",
-						["groups"] = {
+						description = "Awarded if you fail your loot roll. Usually contains gold or crafting materials. May follow your actual spec instead of loot spec, please provide more information to ATT Discord.",
+						groups = {
 							-- NOTE FOR CONTRIBS: Only add items you receive to this if they are only currently obtainable from this container. The old listings on WoWHead may be inaccurate or out of date.
 							-- it's likely that the commented items drop also. if they get confirmed, uncomment them and adjust the unobtainable filter here + in Siege of Orgrimmar
 							i(105838),	-- Aeth's Swiftcinder Cloak Normal
@@ -592,11 +592,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				},
 			}))),
 			applyclassicphase(MOP_PHASE_ONE_MOGUSHAN_VAULTS, e(725, {	-- Saylis's Warband [Galleon]
-				["questID"] = 32098,
-				["coord"] = { 70.79, 63.51, VALLEY_OF_THE_FOUR_WINDS },
-				["maps"] = { VALLEY_OF_THE_FOUR_WINDS_CAVERN_OF_ENDLESS_ECHOES },	-- CRIEVE NOTE: TODO: I don't think this is necessary anymore?
-				["crs"] = { 62346 },	-- Galleon
-				["groups"] = {
+				questID = 32098,
+				coord = { 70.79, 63.51, VALLEY_OF_THE_FOUR_WINDS },
+				maps = { VALLEY_OF_THE_FOUR_WINDS_CAVERN_OF_ENDLESS_ECHOES },	-- CRIEVE NOTE: TODO: I don't think this is necessary anymore?
+				crs = { 62346 },	-- Galleon
+				groups = {
 					ach(6517),	-- Extinction Event
 					ach(6708),	-- Salyis's Warband Guild Run
 					-- Mounts
@@ -604,30 +604,30 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					-- Helms
 					i(90410, {	-- Cap of Wandering Pride
 						-- #if BEFORE WOD
-						["classes"] = LEATHER_CLASSES_INTELLECT,
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = LEATHER_CLASSES_INTELLECT,
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90413),	-- Crest of the Grand Warband
 					i(90416, {	-- Crown of Ranging Invasion
 						-- #if BEFORE WOD
-						["classes"] = { PALADIN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = { PALADIN },
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90411),	-- Facemask of Unrepentant Banditry
 					i(90408, {	-- Free Spirit Hood
 						-- #if BEFORE WOD
-						["classes"] = { PRIEST },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = { PRIEST },
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90415),	-- Giantfoot Headguard
 					i(90414),	-- Greathelm of the Monstrous Mushan
 					i(90412, {	-- Helm of Restoring Wind
 						-- #if BEFORE WOD
-						["classes"] = { SHAMAN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = { SHAMAN },
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90409),	-- Sky-Sear Cowl
@@ -640,30 +640,30 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					-- Chests
 					i(90422, {	-- Armor of the Single Cloud
 						-- #if BEFORE WOD
-						["classes"] = { SHAMAN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = { SHAMAN },
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90425),	-- Carapace of Crushed Conviction
 					i(90421),	-- Chain of Unsiezed Skies
 					i(90423, {	-- Chestguard of the Unbowed Back
 						-- #if BEFORE WOD
-						["classes"] = { PALADIN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = { PALADIN },
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90419, {	-- Fireproofed Chestguard
 						-- #if BEFORE WOD
-						["classes"] = LEATHER_CLASSES_INTELLECT,
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = LEATHER_CLASSES_INTELLECT,
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90420),	-- Flameshot Wrap
 					i(90424),	-- Ravaging Warrior's Chestplate
 					i(90417, {	-- Robes of Blue Skies
 						-- #if BEFORE WOD
-						["classes"] = { PRIEST },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = { PRIEST },
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90418),	-- Robes of the Lightning Rider
@@ -672,42 +672,42 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90451),	-- Cannoneer's Gunpowder Carrier
 					i(90448, {	-- Cannonfire Cord
 						-- #if BEFORE WOD
-						["classes"] = { PRIEST },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = { PRIEST },
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90450, {	-- Carrot-Holder Belt
 						-- #if BEFORE WOD
-						["classes"] = LEATHER_CLASSES_INTELLECT,
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = LEATHER_CLASSES_INTELLECT,
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90456),	-- Cord of Crazed Strength
 					i(90454, {	-- Girdle of the Galloping Giant
 						-- #if BEFORE WOD
-						["classes"] = { PALADIN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = { PALADIN },
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90453),	-- Girdle of the Raging Rider
 					i(90455),	-- Greatbelt of Livid Fury
 					i(90452, {	-- Sparkmaker Girdle
 						-- #if BEFORE WOD
-						["classes"] = { SHAMAN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = { SHAMAN },
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					-- Boots
 					i(90443, {	-- Burnmender Boots
 						-- #if BEFORE WOD
-						["classes"] = { SHAMAN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = { SHAMAN },
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90445, {	-- Firerider Treads
 						-- #if BEFORE WOD
-						["classes"] = { PALADIN },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = { PALADIN },
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90442),	-- Flamefoot Tabi
@@ -715,14 +715,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90446),	-- Silverspur Warboots
 					i(90440, {	-- Slippers of Fiery Retribution
 						-- #if BEFORE WOD
-						["classes"] = { PRIEST },
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = { PRIEST },
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90441, {	-- Stompdodger Boots
 						-- #if BEFORE WOD
-						["classes"] = LEATHER_CLASSES_INTELLECT,
-						["description"] = "Before WoD, this item is only available to classes with a relevant specialization.",
+						classes = LEATHER_CLASSES_INTELLECT,
+						description = "Before WoD, this item is only available to classes with a relevant specialization.",
 						-- #endif
 					}),
 					i(90447),	-- Stompers of Vigorous Stomping
@@ -735,11 +735,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90434),	-- Steaming Seal of Flame
 					-- Consolation Prize
 					i(90840, {	-- Marauder's Gleaming Sack of Gold
-						["description"] = "This is awarded as a consolation prize to players who do not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
+						description = "This is awarded as a consolation prize to players who do not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
 						-- #if BEFORE 6.0.0
-						["sym"] = {{ "select", "itemID", 95618 }},	-- Cache of Mogu Riches
+						sym = {{ "select", "itemID", 95618 }},	-- Cache of Mogu Riches
 						-- #endif
-						["groups"] = {
+						groups = {
 							-- #if AFTER 6.0.0
 							-- Belts
 							i(86884),	-- Belt of Embodied Terror
@@ -772,9 +772,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				},
 			})),
 			applyclassicphase(MOP_PHASE_ONE_MOGUSHAN_VAULTS, e(691, {	-- Sha of Anger
-				["questID"] = 32099,
-				["coord"] = { 53.53, 65.26, KUN_LAI_SUMMIT },
-				["maps"] = {	-- all Kun-Lai Summit maps
+				questID = 32099,
+				coord = { 53.53, 65.26, KUN_LAI_SUMMIT },
+				maps = {	-- all Kun-Lai Summit maps
 					380,	-- Howlingwind Cavern
 					381,	-- Pranksters' Hollow
 					382,	-- Knucklethump Hole
@@ -785,8 +785,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					387,	-- Ruins of Korune (Lower Floor)
 					434,	-- The Ancient Passage
 				},
-				["crs"] = { 60491 },	-- Sha of Anger
-				["groups"] = appendGroups(applyclassicphase(MOP_PHASE_ONE_SHA_OF_ANGER_TIER_14, {	-- Tier 14 Gear
+				crs = { 60491 },	-- Sha of Anger
+				groups = appendGroups(applyclassicphase(MOP_PHASE_ONE_SHA_OF_ANGER_TIER_14, {	-- Tier 14 Gear
 					-- Tier Gear
 					cl(WARRIOR, {
 						-- DPS
@@ -1010,11 +1010,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				}, {
 					-- Consolation Prize
 					i(90839, {	-- Cache of Sha-Touched Gold
-						["description"] = "This is awarded as a consolation prize to players who do not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
+						description = "This is awarded as a consolation prize to players who do not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
 						-- #if BEFORE 6.0.0
-						["sym"] = {{ "select", "itemID", 95618 }},	-- Cache of Mogu Riches
+						sym = {{ "select", "itemID", 95618 }},	-- Cache of Mogu Riches
 						-- #endif
-						["groups"] = {
+						groups = {
 							-- #if AFTER 6.0.0
 							-- Belts
 							i(86884),	-- Belt of Embodied Terror
@@ -1050,45 +1050,45 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(89317),	-- Claw of Anger
 				}),
 			})),
-			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, header(HEADERS.Achievement, 8535, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Celestial Challenge
-				["questID"] = 33117,
-				["maps"] = {	-- all Timeless Isle maps
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, header(HEADERS.Achievement, 8535, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {	-- Celestial Challenge
+				questID = 33117,
+				maps = {	-- all Timeless Isle maps
 					555,	-- Cavern of Lost Spirits
 				},
-				["coord"] = { 38.87, 55.29, TIMELESS_ISLE },
-				["crs"] = {
+				coord = { 38.87, 55.29, TIMELESS_ISLE },
+				crs = {
 					71952,	-- Chi-Ji, The Red Crane
 					71954,	-- Niuzao, The Black Ox
 					71953,	-- Xuen, The White Tiger
 					71955,	-- Yu'lon, The Jade Serpent
 				},
-				["groups"] = {
+				groups = {
 					ach(8535, {	-- Celestial Challenge
 						crit(23743, {	-- Chi-Ji slain
-							["_encounter"] =  { 857, 8535 },
+							_encounter =  { 857, 8535 },
 						}),
 						crit(23745, {	-- Niuzao slain
-							["_encounter"] =  { 859, 8535 },
+							_encounter =  { 859, 8535 },
 						}),
 						crit(23746, {	-- Xuen slain
-							["_encounter"] =  { 860, 8535 },
+							_encounter =  { 860, 8535 },
 						}),
 						crit(23744, {	-- Yu'lon slain
-							["_encounter"] =  { 858, 8535 },
+							_encounter =  { 858, 8535 },
 						}),
 					}),
 					ach(8789),	-- Celestial Challenge Guild Run
 					e(857, cr(71952, {	-- Chi-Ji, The Red Crane
-						["isRaid"] = true,
+						isRaid = true,
 					})),
 					e(859, cr(71954, {	-- Niuzao, The Black Ox
-						["isRaid"] = true,
+						isRaid = true,
 					})),
 					e(860, cr(71953, {	-- Xuen, The White Tiger
-						["isRaid"] = true,
+						isRaid = true,
 					})),
 					e(858, cr(71955, {	-- Yu'lon, The Jade Serpent
-						["isRaid"] = true,
+						isRaid = true,
 					})),
 					cl(WARRIOR, {
 						-- DPS
@@ -1449,14 +1449,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
 	m(PANDARIA, {
-		m(ISLE_OF_GIANTS, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {
+		m(ISLE_OF_GIANTS, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {
 			n(WORLD_BOSSES, {
 				q(32922),	-- Short-Supply Reward - Oondasta bonus roll
 			}),
 		})),
-		m(ISLE_OF_THUNDER, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {
+		m(ISLE_OF_THUNDER, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {
 			n(WORLD_BOSSES, {
 				q(32919),	-- Short-Supply Reward - Nalak bonus roll
 				q(33109),	-- Short-Supply Reward - Nalak secondary killID
@@ -1467,7 +1467,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 				q(32924),	-- Short-Supply Reward - Sha of Anger bonus roll
 			}),
 		}),
-		m(TIMELESS_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
+		m(TIMELESS_ISLE, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {
 			n(WORLD_BOSSES, {
 				q(33226),	-- Short-Supply Reward - Celestials bonus roll
 				q(33225),	-- Short-Supply Reward - Ordos bonus roll

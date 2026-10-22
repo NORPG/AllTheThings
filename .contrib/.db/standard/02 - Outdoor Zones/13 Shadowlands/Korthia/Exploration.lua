@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
 	m(KORTHIA, {
 		explorationHeader({
 			visit_exploration(13691,{coord={52.5,32.2,KORTHIA}}),	-- Chamber of Knowledge

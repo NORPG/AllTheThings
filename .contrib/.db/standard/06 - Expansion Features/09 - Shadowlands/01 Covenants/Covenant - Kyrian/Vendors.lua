@@ -2,29 +2,29 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-local CHRONICLE_OF_LOST_MEMORIES = ChronicleOfLostMemories({["cost"] = { { "c", GRATEFUL, 35 } }})	-- Chronicle of Lost Memories
+local CHRONICLE_OF_LOST_MEMORIES = ChronicleOfLostMemories({cost = { { "c", GRATEFUL, 35 } }})	-- Chronicle of Lost Memories
 local MEMORY_OF_A_VITAL_SACRIFICE = i(183249, {	-- Memory of a Vital Sacrifice
-	["cost"] = { { "c", ANIMA, 250 } },
+	cost = { { "c", ANIMA, 250 } },
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(REWARDS, {
 			i(183701, {	-- Cleansing Rite Materials
-				["description"] = "Only Obtainable via Pelagos Soulbind.",
+				description = "Only Obtainable via Pelagos Soulbind.",
 			}),
 		}),
 		n(VENDORS, {
 			n(COMMON_VENDOR_ITEMS, {	-- LFR/Normal/Heroic Weapons
-				["crs"] = {
+				crs = {
 					175522,	-- Kelli Hoo <Raid Finder Nathrian Weaponsmith>
 					175521,	-- Alisius <Normal Nathrian Weaponsmith>
 					175523,	-- Provisioner Prothos <Heroic Nathrian Weaponsmith>
 				},
-				["groups"] = {
+				groups = {
 					-- Lazily copied since parser handles merging anyway
 					i(177872, {	-- Archon's Guiding Glaive
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -32,7 +32,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184272, {	-- Ascended Gladius of Glory
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -40,19 +40,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(175254, {	-- Burning Beacon of Hope
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,04), 1 },	-- LFR Apogee Anima Bead - 187
 							{ "i", modItemId(183889,04), 1 },	-- LFR Thaumaturgic Anima Bead - 187
 						},
 					}),
 					i(174315, {	-- Chyrus's Crest of Hope
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,04), 1 },	-- LFR Apogee Anima Bead - 194
 							{ "i", modItemId(183894,83), 1 },	-- LFR Thaumaturgic Anima Bead - 194
 						},
 					}),
 					i(184270, {	-- Disciple's Peacebound Poniard
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -60,7 +60,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(174298, {	-- Dutiful Disciple's Cleaver
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -68,13 +68,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(174310, {	-- Elysian Sentinel's Aegis
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,04), 1 },	-- LFR Apogee Anima Bead - 187
 							{ "i", modItemId(183889,04), 1 },	-- LFR Thaumaturgic Anima Bead - 187
 						},
 					}),
 					i(177865, {	-- Faithful Sidearm
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -82,7 +82,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(175251, {	-- Forked Blade of Fortitude
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -90,7 +90,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180312, {	-- Guarding Cudgel of the Goliath
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -98,7 +98,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(174302, {	-- Labrys of the Loyal Larion
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -106,7 +106,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(175279, {	-- Lost Soul Xiphos
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -114,7 +114,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177850, {	-- Meditation's Muse
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -122,7 +122,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184230, {	-- Pike of the Honored Peltast
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -130,7 +130,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180315, {	-- Polemarch's Scepter of Faith
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -138,7 +138,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184243, {	-- Praetorian Wingblade
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -146,7 +146,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184273, {	-- Puremind Piercer
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -154,7 +154,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184274, {	-- Reaver of Renewed Resolve
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -162,7 +162,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184275, {	-- Sacred Sparrer's Edge
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -170,7 +170,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177860, {	-- Silvered Recurve of Reconciliation
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -178,7 +178,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177849, {	-- Soulbearer's Blade of Salvation
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -186,7 +186,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177855, {	-- Spellblade of Antiquity
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -194,7 +194,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(178973, {	-- Symphonic Chimekeeper
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -202,13 +202,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177870, {	-- Thenios's Beacon of Foresight
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,04), 1 },	-- LFR Apogee Anima Bead - 194
 							{ "i", modItemId(183894,83), 1 },	-- LFR Thaumaturgic Anima Bead - 194
 						},
 					}),
 					i(176098, {	-- Truthseeker Longbow
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -216,7 +216,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(178975, {	-- Vesiphone's Vesper of Reflection
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -224,7 +224,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184236, {	-- Warglaive of Devoted Might
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -232,7 +232,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184271, {	-- Xandria's Kopis of Courage
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -240,7 +240,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177872, {	-- Archon's Guiding Glaive
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -248,7 +248,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184272, {	-- Ascended Gladius of Glory
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -256,19 +256,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(175254, {	-- Burning Beacon of Hope
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,03), 1 },	-- Normal Apogee Anima Bead - 200
 							{ "i", modItemId(183889,03), 1 },	-- Normal Thaumaturgic Anima Bead - 200
 						},
 					}),
 					i(174315, {	-- Chyrus's Crest of Hope
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,82), 1 },	-- Normal Apogee Anima Bead - 207
 							{ "i", modItemId(183894,82), 1 },	-- Normal Thaumaturgic Anima Bead - 207
 						},
 					}),
 					i(184270, {	-- Disciple's Peacebound Poniard
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -276,7 +276,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(174298, {	-- Dutiful Disciple's Cleaver
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -284,13 +284,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(174310, {	-- Elysian Sentinel's Aegis
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,03), 1 },	-- Normal Apogee Anima Bead - 200
 							{ "i", modItemId(183889,03), 1 },	-- Normal Thaumaturgic Anima Bead - 200
 						},
 					}),
 					i(177865, {	-- Faithful Sidearm
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -298,7 +298,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(175251, {	-- Forked Blade of Fortitude
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -306,7 +306,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180312, {	-- Guarding Cudgel of the Goliath
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -314,7 +314,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(174302, {	-- Labrys of the Loyal Larion
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -322,7 +322,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(175279, {	-- Lost Soul Xiphos
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -330,7 +330,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177850, {	-- Meditation's Muse
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -338,7 +338,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184230, {	-- Pike of the Honored Peltast
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -346,7 +346,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180315, {	-- Polemarch's Scepter of Faith
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -354,7 +354,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184243, {	-- Praetorian Wingblade
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -362,7 +362,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184273, {	-- Puremind Piercer
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -370,7 +370,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184274, {	-- Reaver of Renewed Resolve
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -378,7 +378,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184275, {	-- Sacred Sparrer's Edge
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -386,7 +386,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177860, {	-- Silvered Recurve of Reconciliation
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -394,7 +394,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177849, {	-- Soulbearer's Blade of Salvation
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -402,7 +402,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177855, {	-- Spellblade of Antiquity
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -410,7 +410,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(178973, {	-- Symphonic Chimekeeper
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -418,13 +418,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177870, {	-- Thenios's Beacon of Foresight
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,82), 1 },	-- Normal Apogee Anima Bead - 207
 							{ "i", modItemId(183894,82), 1 },	-- Normal Thaumaturgic Anima Bead - 207
 						},
 					}),
 					i(176098, {	-- Truthseeker Longbow
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -432,7 +432,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(178975, {	-- Vesiphone's Vesper of Reflection
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -440,7 +440,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184236, {	-- Warglaive of Devoted Might
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -448,7 +448,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184271, {	-- Xandria's Kopis of Courage
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -456,7 +456,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177872, {	-- Archon's Guiding Glaive
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -464,7 +464,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184272, {	-- Ascended Gladius of Glory
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -472,19 +472,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(175254, {	-- Burning Beacon of Hope
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,05), 1 },	-- Heroic Apogee Anima Bead - 213
 							{ "i", modItemId(183889,05), 1 },	-- Heroic Thaumaturgic Anima Bead - 213
 						},
 					}),
 					i(174315, {	-- Chyrus's Crest of Hope
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,84), 1 },	-- Heroic Apogee Anima Bead - 220
 							{ "i", modItemId(183894,84), 1 },	-- Heroic Thaumaturgic Anima Bead - 220
 						},
 					}),
 					i(184270, {	-- Disciple's Peacebound Poniard
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -492,7 +492,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(174298, {	-- Dutiful Disciple's Cleaver
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -500,13 +500,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(174310, {	-- Elysian Sentinel's Aegis
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,05), 1 },	-- Heroic Apogee Anima Bead - 213
 							{ "i", modItemId(183889,05), 1 },	-- Heroic Thaumaturgic Anima Bead - 213
 						},
 					}),
 					i(177865, {	-- Faithful Sidearm
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -514,7 +514,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(175251, {	-- Forked Blade of Fortitude
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -522,7 +522,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180312, {	-- Guarding Cudgel of the Goliath
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -530,7 +530,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(174302, {	-- Labrys of the Loyal Larion
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -538,7 +538,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(175279, {	-- Lost Soul Xiphos
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -546,7 +546,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177850, {	-- Meditation's Muse
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -554,7 +554,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184230, {	-- Pike of the Honored Peltast
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -562,7 +562,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180315, {	-- Polemarch's Scepter of Faith
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -570,7 +570,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184243, {	-- Praetorian Wingblade
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -578,7 +578,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184273, {	-- Puremind Piercer
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -586,7 +586,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184274, {	-- Reaver of Renewed Resolve
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -594,7 +594,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184275, {	-- Sacred Sparrer's Edge
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -602,7 +602,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177860, {	-- Silvered Recurve of Reconciliation
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -610,7 +610,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177849, {	-- Soulbearer's Blade of Salvation
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -618,7 +618,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177855, {	-- Spellblade of Antiquity
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -626,7 +626,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(178973, {	-- Symphonic Chimekeeper
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -634,13 +634,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177870, {	-- Thenios's Beacon of Foresight
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,84), 1 },	-- Heroic Apogee Anima Bead - 220
 							{ "i", modItemId(183894,84), 1 },	-- Heroic Thaumaturgic Anima Bead - 220
 						},
 					}),
 					i(176098, {	-- Truthseeker Longbow
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -648,7 +648,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(178975, {	-- Vesiphone's Vesper of Reflection
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -656,7 +656,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184236, {	-- Warglaive of Devoted Might
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -664,7 +664,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184271, {	-- Xandria's Kopis of Courage
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -674,345 +674,345 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			n(174937, {	-- Adjutant Galos <Renown Quartermaster>
-				["coord"] = { 63.3, 30.6, SANCTUM_OF_BINDING },
-				["groups"] = {
+				coord = { 63.3, 30.6, SANCTUM_OF_BINDING },
+				groups = {
 					i(186485, {	-- Ascendant's Aquilon (MOUNT!)
-						["cost"] = { { "c", ANIMA, 7500 } },
+						cost = { { "c", ANIMA, 7500 } },
 					}),
 					CHRONICLE_OF_LOST_MEMORIES,
 					i(180762, {	-- Phalynx of Humility (MOUNT!)
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 5000 },
 							{ "c", GRATEFUL, 100 },
 						},
 					}),
 					i(180764, {	-- Phalynx of Purity (MOUNT!)
-						["cost"] = { { "c", ANIMA, 5000 } },
+						cost = { { "c", ANIMA, 5000 } },
 					}),
 					i(184353, {	-- Kyrian Hearthstone (TOY!)
-						["cost"] = { { "c", ANIMA, 750 } },
+						cost = { { "c", ANIMA, 750 } },
 					}),
 					i(184350, {	-- Ruffle (PET!)
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(184352, {	-- Illusion: Transcendent Soul (ILLUSION!)
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					MEMORY_OF_A_VITAL_SACRIFICE,
 					iensemble(186516, {	-- Ensemble: Devoted Aspirant's Regalia
-						["cost"] = { { "c", ANIMA, 10000 } },
+						cost = { { "c", ANIMA, 10000 } },
 					}),
 					i(181288, {	-- Halo of the Harmonious
-						["cost"] = { { "c", ANIMA, 3500 } },
+						cost = { { "c", ANIMA, 3500 } },
 					}),
 					i(177197, {	-- Harmonious Bearer's Chestplate
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(177220, {	-- Harmonious Bearer's Cloak
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(177199, {	-- Harmonious Bearer's Gauntlets
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(177202, {	-- Harmonious Bearer's Girdle
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(184545, {	-- Harmonious Bearer's Halberd
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(177196, {	-- Harmonious Bearer's Helm
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(177200, {	-- Harmonious Bearer's Legguards
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(177864, {	-- Harmonious Bearer's Poniard
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(177201, {	-- Harmonious Bearer's Shoulders
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(177198, {	-- Harmonious Bearer's Warboots
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(184240, {	-- Harmonious Bearer's Warglaive
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(177203, {	-- Harmonious Bearer's Wristwraps
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(184541, {	-- Harmonious Collector's Battleaxe
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(174314, {	-- Harmonious Collector's Bulwark
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(177667, {	-- Harmonious Collector's Chestplate
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(177674, {	-- Harmonious Collector's Cloak
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(177669, {	-- Harmonious Collector's Gauntlets
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(177672, {	-- Harmonious Collector's Girdle
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(180316, {	-- Harmonious Collector's Greatmaul
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(177666, {	-- Harmonious Collector's Helm
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(177848, {	-- Harmonious Collector's Kopis
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(177670, {	-- Harmonious Collector's Legguards
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(177671, {	-- Harmonious Collector's Shoulders
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(177668, {	-- Harmonious Collector's Warboots
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(177673, {	-- Harmonious Collector's Wristwraps
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(179955, {	-- Harmonious Forgelite's Belt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(184542, {	-- Harmonious Forgelite's Blade
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(179950, {	-- Harmonious Forgelite's Boots
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(177859, {	-- Harmonious Forgelite's Bow
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(179953, {	-- Harmonious Forgelite's Breeches
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(174303, {	-- Harmonious Forgelite's Carver
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(179957, {	-- Harmonious Forgelite's Cloak
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(179951, {	-- Harmonious Forgelite's Gloves
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(179952, {	-- Harmonious Forgelite's Helm
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(179954, {	-- Harmonious Forgelite's Spaulders
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(179949, {	-- Harmonious Forgelite's Vest
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(179956, {	-- Harmonious Forgelite's Wristwraps
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(184543, {	-- Harmonious Watcher's Barb
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(178180, {	-- Harmonious Watcher's Chestplate
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(178187, {	-- Harmonious Watcher's Cloak
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(178182, {	-- Harmonious Watcher's Gauntlets
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(178185, {	-- Harmonious Watcher's Girdle
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(177869, {	-- Harmonious Watcher's Guiding Light
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(178179, {	-- Harmonious Watcher's Helm
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(178183, {	-- Harmonious Watcher's Legguards
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(178184, {	-- Harmonious Watcher's Shoulders
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(177854, {	-- Harmonious Watcher's Spellsword
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(178974, {	-- Harmonious Watcher's Vesperstaff
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(178181, {	-- Harmonious Watcher's Warboots
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(178186, {	-- Harmonious Watcher's Wristwraps
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(181294, {	-- Harmonious Wings of the Ascended
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 40 },
 						},
@@ -1020,14 +1020,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			n(175521, {	-- Alisius <Normal Nathrian Weaponsmith>
-				["coord"] = { 56.1, 84.5, ARCHONS_RISE },
+				coord = { 56.1, 84.5, ARCHONS_RISE },
 			}),
 			n(175524, {	-- Battlemaster Endios <Mythic Nathrian Weaponsmith>
-				["coord"] = { 58.0, 81.4, ARCHONS_RISE },
-				["groups"] = bubbleDown({ ["modID"] = 6 }, {	-- Mythic
+				coord = { 58.0, 81.4, ARCHONS_RISE },
+				groups = bubbleDown({ modID = 6 }, {	-- Mythic
 					i(177872, {	-- Archon's Guiding Glaive
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1035,7 +1035,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184272, {	-- Ascended Gladius of Glory
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1043,21 +1043,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(175254, {	-- Burning Beacon of Hope
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,06), 1 },	-- Mythic Apogee Anima Bead - 226
 							{ "i", modItemId(183889,06), 1 },	-- Mythic Thaumaturgic Anima Bead - 226
 						},
 					}),
 					i(174315, {	-- Chyrus's Crest of Hope
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183895,85), 1 },	-- Mythic Apogee Anima Bead - 233
 							{ "i", modItemId(183894,85), 1 },	-- Mythic Thaumaturgic Anima Bead - 233
 						},
 					}),
 					i(184270, {	-- Disciple's Peacebound Poniard
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1065,7 +1065,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(174298, {	-- Dutiful Disciple's Cleaver
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1073,14 +1073,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(174310, {	-- Elysian Sentinel's Aegis
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,06), 1 },	-- Mythic Apogee Anima Bead - 226
 							{ "i", modItemId(183889,06), 1 },	-- Mythic Thaumaturgic Anima Bead - 226
 						},
 					}),
 					i(177865, {	-- Faithful Sidearm
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1088,7 +1088,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(175251, {	-- Forked Blade of Fortitude
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1096,7 +1096,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180312, {	-- Guarding Cudgel of the Goliath
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1104,8 +1104,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(174302, {	-- Labrys of the Loyal Larion
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1113,7 +1113,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(175279, {	-- Lost Soul Xiphos
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1121,7 +1121,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177850, {	-- Meditation's Muse
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1129,7 +1129,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184230, {	-- Pike of the Honored Peltast
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1137,8 +1137,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(180315, {	-- Polemarch's Scepter of Faith
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1146,8 +1146,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184243, {	-- Praetorian Wingblade
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1155,7 +1155,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184273, {	-- Puremind Piercer
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1163,8 +1163,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184274, {	-- Reaver of Renewed Resolve
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1172,7 +1172,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184275, {	-- Sacred Sparrer's Edge
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1180,8 +1180,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177860, {	-- Silvered Recurve of Reconciliation
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1189,8 +1189,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177849, {	-- Soulbearer's Blade of Salvation
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1198,8 +1198,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177855, {	-- Spellblade of Antiquity
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1207,7 +1207,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(178973, {	-- Symphonic Chimekeeper
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1215,14 +1215,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(177870, {	-- Thenios's Beacon of Foresight
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183895,85), 1 },	-- Mythic Apogee Anima Bead - 233
 							{ "i", modItemId(183894,85), 1 },	-- Mythic Thaumaturgic Anima Bead - 233
 						},
 					}),
 					i(176098, {	-- Truthseeker Longbow
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1230,8 +1230,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(178975, {	-- Vesiphone's Vesper of Reflection
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1239,7 +1239,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184236, {	-- Warglaive of Devoted Might
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -1247,8 +1247,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184271, {	-- Xandria's Kopis of Courage
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -1258,8 +1258,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				}),
 			}),
 			n(175823, {	-- Forgelite Neptira <Kyrian Armorsmith>
-				["coord"] = { 56.9, 30.9, SANCTUM_OF_BINDING },
-				["sym"] = { { "select", "itemID",
+				coord = { 56.9, 30.9, SANCTUM_OF_BINDING },
+				sym = { { "select", "itemID",
 					-- These items are only purchasable after you complete the covenant campaign.
 					-- Doing the Campaign also rewards all those items, so no need to list 2 sources per item.
 					178155,	-- Selfless Watcher's Warboots
@@ -1292,108 +1292,108 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					178158,	-- Selfless Watcher's Shoulders
 					178160,	-- Selfless Watcher's Wristwraps
 				}},
-				["groups"] = {
+				groups = {
 					i(175248, {	-- Selfless Bearer's Blade
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(177051, {	-- Selfless Bearer's Chest
-						["cost"] = { { "c", ANIMA, 250 } },
+						cost = { { "c", ANIMA, 250 } },
 					}),
 					i(177052, {	-- Selfless Bearer's Feet
-						["cost"] = { { "c", ANIMA, 250 } },
+						cost = { { "c", ANIMA, 250 } },
 					}),
 					i(174301, {	-- Selfless Bearer's Labrys
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(184239, {	-- Selfless Bearer's Warglaive
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(177868, {	-- Selfless Bearer's Waylight
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(174290, {	-- Selfless Collector's Chestplate
-						["cost"] = { { "c", ANIMA, 250 } },
+						cost = { { "c", ANIMA, 250 } },
 					}),
 					i(180311, {	-- Selfless Collector's Cudgel
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(175249, {	-- Selfless Collector's Javelin
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(174291, {	-- Selfless Collector's Warboots
-						["cost"] = { { "c", ANIMA, 250 } },
+						cost = { { "c", ANIMA, 250 } },
 					}),
 					i(174313, {	-- Selfless Collector's Ward
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(179941, {	-- Selfless Forgelite's Boots
-						["cost"] = { { "c", ANIMA, 250 } },
+						cost = { { "c", ANIMA, 250 } },
 					}),
 					i(184537, {	-- Selfless Forgelite's Falchion
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(184535, {	-- Selfless Forgelite's Hatchet
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(177858, {	-- Selfless Forgelite's Longbow
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(179940, {	-- Selfless Forgelite's Vest
-						["cost"] = { { "c", ANIMA, 250 } },
+						cost = { { "c", ANIMA, 250 } },
 					}),
 					i(178154, {	-- Selfless Watcher's Chestplate
-						["cost"] = { { "c", ANIMA, 250 } },
+						cost = { { "c", ANIMA, 250 } },
 					}),
 					i(184536, {	-- Selfless Watcher's Edge
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(177863, {	-- Selfless Watcher's Sidearm
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(177853, {	-- Selfless Watcher's Spellsword
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(178970, {	-- Selfless Watcher's Spire
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
@@ -1401,17 +1401,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			n(175522, {	-- Kelli Hoo <Raid Finder Nathrian Weaponsmith>
-				["coord"] = { 55.0, 82.9, ARCHONS_RISE },
+				coord = { 55.0, 82.9, ARCHONS_RISE },
 			}),
 			n(175523, {	-- Provisioner Prothos <Heroic Nathrian Weaponsmith>
-				["coord"] = { 57.0, 79.8, ARCHONS_RISE },
+				coord = { 57.0, 79.8, ARCHONS_RISE },
 			}),
 		}),
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-	n(KYRIAN,  bubbleDown({ ["customCollect"] = "SL_COV_KYR" }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH } }, {
+	n(KYRIAN,  bubbleDown({ customCollect = "SL_COV_KYR" }, {
 		n(VENDORS, {
 			q(60595),	-- unlocking 12 Kyrian sets, no idea why they all have the same TrackingQuestID: https://wow.tools/dbc/?dbc=transmogset&build=9.1.5.40944#page=1&colFilter[3]=60595
 		}),

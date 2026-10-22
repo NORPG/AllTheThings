@@ -2,16 +2,16 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	m(TORGHAST, {
 		n(176761, {	-- Adamant Vault
-			n(COMMON_BOSS_DROPS, sharedData({ ["timeline"] = { ADDED_9_1_0 } }, {
-				["crs"] = {
+			n(COMMON_BOSS_DROPS, sharedData({ timeline = { ADDED_9_1_0 } }, {
+				crs = {
 					179433,	-- Vault Aegis
 					176578,	-- Vault Sentinel
 					179526,	-- Troz'igal the Oppressor
 				},
-				["groups"] = {
+				groups = {
 					i(187093),	-- Gilded Ornamental Mantle
 					i(187091),	-- Gilded Twin-Scythe Shoulders
 					i(187876),	-- Saurolisk Hatchling Soul (AV)
@@ -29,38 +29,38 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			})),
 		}),
-		n(COMMON_BOSS_DROPS, sharedData({ ["timeline"] = { ADDED_9_2_0 } }, {
+		n(COMMON_BOSS_DROPS, sharedData({ timeline = { ADDED_9_2_0 } }, {
 			i(188688, {	-- Burnished Eye Crescent
-				["crs"] = {
+				crs = {
 					155945,	-- Gherus the Chained
 				},
 			}),
 			i(188687, {	-- Burnished Skull Crescent
-				["crs"] = {
+				crs = {
 					153382,	-- Maw of the Maw
 				},
 			}),
 			i(188686, {	-- Burnished Soul Restraint
-				["crs"] = {
+				crs = {
 					171422,	-- Arch-Suppressor Laguas
 					155945,	-- Gherus the Chained
 				},
 			}),
 			i(188700, {	-- Colossal Umbrahide Mawrat (MOUNT!)
-				["description"] = "Only from Layer 13 or higher",
-				["crs"] = {
+				description = "Only from Layer 13 or higher",
+				crs = {
 					171422,	-- Arch-Suppressor Laguas
 				},
 			}),
 		})),
-		n(COMMON_BOSS_DROPS, sharedData({ ["timeline"] = { ADDED_9_1_0 } }, {
+		n(COMMON_BOSS_DROPS, sharedData({ timeline = { ADDED_9_1_0 } }, {
 			i(187096, {	-- Adamant Vault Shoulderplates
-				["crs"] = {
+				crs = {
 					155945,	-- Gherus the Chained
 				},
 			}),
 			i(187075, {	-- Box of Rattling Chains (TOY!)
-				["crs"] = {
+				crs = {
 					151331,	-- Cellblock Sentinel
 					170418,	-- Goxul the Devourer
 					157122,	-- Patrician Cromwell
@@ -68,7 +68,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			i(187044, {	-- Deathbringer's Epaulets
-				["crs"] = {
+				crs = {
 					151331,	-- Cellblock Sentinel
 					170418,	-- Goxul the Devourer
 					153382,	-- Maw of the Maw
@@ -76,13 +76,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			i(187030, {	-- Deathsworn Shoulderguards
-				["crs"] = {
+				crs = {
 					151329,	-- Warden Skoldus
 					153174,	-- Watchers of Death
 				},
 			}),
 			i(187039, {	-- Malleare's Stygian Pauldrons
-				["crs"] = {
+				crs = {
 					171422,	-- Arch-Suppressor Laguas
 					151331,	-- Cellblock Sentinel
 					153165,	-- Custodian Thonar
@@ -92,7 +92,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			i(187042, {	-- Occultist's Ornamental Gorget
-				["crs"] = {
+				crs = {
 					151331,	-- Cellblock Sentinel
 					153165,	-- Custodian Thonar
 					155945,	-- Gherus the Chained
@@ -102,20 +102,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			i(187046, {	-- Pauldrons of Immaculate Laceration
-				["crs"] = {
+				crs = {
 					151331,	-- Cellblock Sentinel
 					153382,	-- Maw of the Maw
 					151329,	-- Warden Skoldus
 				},
 			}),
 			i(187041, {	-- Shoulders of Unbreakable Demise
-				["crs"] = {
+				crs = {
 					155250,	-- Decayspeaker
 					159190,	-- Synod
 				},
 			}),
 			i(187038, {	-- Shoulders of Vehement Slicing
-				["crs"] = {
+				crs = {
 					151331,	-- Cellblock Sentinel
 					157122,	-- Patrician Cromwell
 					159190,	-- Synod
@@ -123,7 +123,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			i(187027, {	-- Skoldus' Shoulder Skewers
-				["crs"] = {
+				crs = {
 					151331,	-- Cellblock Sentinel
 					153165,	-- Custodian Thonar
 					170418,	-- Goxul the Devourer
@@ -132,7 +132,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			i(187032, {	-- Spaulders of Prophetic Death
-				["crs"] = {
+				crs = {
 					151331,	-- Cellblock Sentinel
 					170418,	-- Goxul the Devourer
 					151329,	-- Warden Skoldus
@@ -140,7 +140,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			i(187043, {	-- Spiked Citadel Shoulderguards
-				["crs"] = {
+				crs = {
 					151331,	-- Cellblock Sentinel
 					153165,	-- Custodian Thonar
 					155250,	-- Decayspeaker
@@ -151,18 +151,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			i(187031, {	-- Towering Mantle of the Maw
-				["crs"] = {
+				crs = {
 					153165,	-- Custodian Thonar
 					169859,	-- Observer Zelgar <The Third Eye>
 				},
 			}),
 			i(187040, {	-- Twin-Scythe Spaulders
-				["crs"] = {
+				crs = {
 					169859,	-- Observer Zelgar
 				},
 			}),
 			i(187045, {	-- Veiled Tormentor's Mantle
-				["crs"] = {
+				crs = {
 					151331,	-- Cellblock Sentinel
 					153165,	-- Custodian Thonar
 					159190,	-- Synod
@@ -173,28 +173,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 		n(COMMON_BOSS_DROPS, {
 			currency(1828),	-- Soul Ash
 			i(183193, {	-- Ashen Chomper (PET!)
-				["crs"] = {
+				crs = {
 					151331,	-- Cellblock Sentinel
 					153165,	-- Custodian Thonar
 					151329,	-- Warden Skoldus
 				},
 			}),
 			i(183192, {	-- Frenzied Mawrat (PET!)
-				["crs"] = {
+				crs = {
 					151331,	-- Cellblock Sentinel
 					153165,	-- Custodian Thonar
 					151329,	-- Warden Skoldus
 				},
 			}),
 			i(183116, {	-- Hissing Deathroach (PET!)
-				["crs"] = {
+				crs = {
 					156239,	-- Dark Ascended Corrus
 					155250,	-- Decayspeaker
 					155251,	-- Elder Longbranch
 				},
 			}),
 			i(183191, {	-- Maw Crawler (PET!)
-				["crs"] = {
+				crs = {
 					153165,	-- Custodian Thonar
 					155945,	-- Gherus the Chained
 					153451,	-- Kosarus the Fallen
@@ -203,7 +203,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			i(183194, {	-- Maw Stalker (PET!)
-				["crs"] = {
+				crs = {
 					171422,	-- Arch-Suppressor Laguas
 					151331,	-- Cellblock Sentinel
 					169859,	-- Observer Zelgar
@@ -211,7 +211,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			i(183117, {	-- Severs (PET!)
-				["crs"] = {
+				crs = {
 					171422,	-- Arch-Suppressor Laguas
 					155945,	-- Gherus the Chained
 					170418,	-- Goxul the Devourer
@@ -221,7 +221,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			}),
 			i(178585),	-- The Forgotten Key (QI!)
 			i(183195, {	-- Torghast Lurker (PET!)
-				["crs"] = {
+				crs = {
 					153011,	-- Binder Baritas
 					170418,	-- Goxul the Devourer
 					153382,	-- Maw of the Maw
@@ -230,7 +230,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			i(183115, {	-- Tower Deathroach (PET!)
-				["crs"] = {
+				crs = {
 					156239,	-- Dark Ascended Corrus
 					155250,	-- Decayspeaker
 					155251,	-- Elder Longbranch

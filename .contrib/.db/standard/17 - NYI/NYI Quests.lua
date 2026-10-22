@@ -5,258 +5,258 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	expansion(EXPANSION.CLASSIC, {
 		-- 1.x.x
 		n(P1xx, {
-			q(548, { ["name"] = "[DEPRECATED] <NYI> <TXT> Bloodstone Pendant", }),
-			q(6708, { ["name"] = "[DEPRECATED] <TXT> BRD, DM, BRS", }),
-			q(6702, { ["name"] = "[DEPRECATED] <TXT> SF, RFK, GNOMER, BF", }),
-			q(6704, { ["name"] = "[DEPRECATED] <TXT> SM, RFD, ULD", }),
-			q(6710, { ["name"] = "[DEPRECATED] <TXT> UBRS, STRATH, SCHOL", }),
-			q(6706, { ["name"] = "[DEPRECATED] <TXT> ZUL, ST, MAR", }),
-			q(4541, { ["name"] = "<NYI> <TXT>", }),
-			q(5698, { ["name"] = "<NYI> <TXT> A Small Amount of Hope", }),
-			q(5688, { ["name"] = "<NYI> <TXT> A Touch of Voodoo", }),
-			q(5690, { ["name"] = "<NYI> <TXT> A Touch of Voodoo", }),
-			q(6165, { ["name"] = "<NYI> <TXT> Archmage Timolain's Remains", }),
-			q(1155, { ["name"] = "<NYI> <TXT> bug crystal side quest", }),
-			q(1291, { ["name"] = "<nyi> <TXT> Centaur Hoofprints", }),
-			q(1293, { ["name"] = "<nyi> <TXT> Centaur Hoofprints", }),
-			q(1295, { ["name"] = "<nyi> <TXT> Course of Action", }),
-			q(1296, { ["name"] = "<nyi> <TXT> Course of Action", }),
-			q(1297, { ["name"] = "<nyi> <TXT> Course of Action", }),
-			q(5707, { ["name"] = "<NYI> <TXT> Flirting With Darkness", }),
-			q(4323, { ["name"] = "<NYI> <TXT> Get those Hyenas!!!", }),
-			q(1161, { ["name"] = "<NYI> <TXT> gossip shade of ambermoon", }),
-			q(8444, { ["name"] = "<NYI> <TXT> gossip shade of ambermoon", }),
-			q(8445, { ["name"] = "<NYI> <TXT> gossip shade of ambermoon", }),
-			q(6003, { ["name"] = "<nyi> <txt> Green With Envy", }),
-			q(5691, { ["name"] = "<NYI> <TXT> In the Dark it was Created", }),
-			q(1300, { ["name"] = "<nyi> <TXT> Lorn Grim Totem", }),
-			q(5530, { ["name"] = "<NYI> <TXT> Necklace of the Dawn", }),
-			q(1157, { ["name"] = "<NYI> <TXT> pestlezugg needs items", }),
-			q(3064, { ["name"] = "<NYI> <TXT> Pirate Hats", }),
-			q(5532, { ["name"] = "<NYI> <TXT> Ring of the Dawn ", }),
-			q(1156, { ["name"] = "<NYI> <TXT> speak to alchemist pestlezugg", }),
-			q(1162, { ["name"] = "<NYI> <TXT> speak to hamuul runetotem", }),
-			q(1158, { ["name"] = "<NYI> <TXT> speak to rabine saturna", }),
-			q(1163, { ["name"] = "<NYI> <TXT> speak to tyrande whisperwind", }),
-			q(137, { ["name"] = "<NYI> <TXT> Stormwind Commendation", }),
-			q(5208, { ["name"] = "<NYI> <TXT> The Blessing of Evil", }),
-			q(1277, { ["name"] = "<nyi> <TXT> The Centaur Hoofprints", }),
-			q(3885, { ["name"] = "<NYI> <TXT> The Gadgetzan Run", }),
-			q(1278, { ["name"] = "<nyi> <TXT> The Grim Totem Clan", }),
-			q(5685, { ["name"] = "<NYI> <TXT> The Light Protects You", }),
-			q(3482, { ["name"] = "<NYI> <TXT> The Pocked Black Box", }),
-			q(5701, { ["name"] = "<NYI> <TXT> The Rites of Old", }),
-			q(7384, { ["name"] = "<nyi> <txt> The Scale Crafters", }),
-			q(5207, { ["name"] = "<NYI> <TXT> The True Summoner", }),
-			q(3910, { ["name"] = "<NYI> <TXT> The Un'Goro Run", }),
-			q(1298, { ["name"] = "<nyi> <TXT> Thrall's Dirty Work", }),
-			q(1299, { ["name"] = "<nyi> <TXT> Thrall's Dirty Work", }),
-			q(5710, { ["name"] = "<NYI> <TXT> Troll Priest Robe", }),
-			q(5704, { ["name"] = "<NYI> <TXT> Undead Priest Robe", }),
-			q(3241, { ["name"] = "<NYI> <TXT><redux> Dreadmist Peak", }),
-			q(1294, { ["name"] = "<nyi> <TXT>Centaur Sympathies", }),
-			q(1279, { ["name"] = "<nyi> <TXT>The Centaur Hoofprints", }),
-			q(1280, { ["name"] = "<nyi> <TXT>The Centaur Hoofprints", }),
-			q(4299, { ["name"] = "<NYI> <TXT>The Tomb of the Seven", }),
-			q(5668, { ["name"] = "<NYI> A Blessing of Light", }),
-			q(5669, { ["name"] = "<NYI> A Blessing of Light", }),
-			q(5670, { ["name"] = "<NYI> A Blessing of Light", }),
-			q(5671, { ["name"] = "<NYI> A Blessing of Light", }),
-			q(5699, { ["name"] = "<NYI> A Small Amount of Hope", }),
-			q(5700, { ["name"] = "<NYI> A Small Amount of Hope", }),
-			q(5689, { ["name"] = "<NYI> A Touch of Voodoo", }),
-			q(1533, { ["name"] = "<NYI> Call of Air", }),
-			q(1537, { ["name"] = "<NYI> Call of Air", }),
-			q(1538, { ["name"] = "<NYI> Call of Air", }),
-			q(5708, { ["name"] = "<NYI> Flirting With Darkness", }),
-			q(5709, { ["name"] = "<NYI> Flirting With Darkness", }),
-			q(5653, { ["name"] = "<NYI> Hex of Weakness", }),
-			q(5692, { ["name"] = "<NYI> In the Dark It was Created", }),
-			q(5693, { ["name"] = "<NYI> In the Dark It was Created", }),
-			q(1290, { ["name"] = "<nyi> Investigating Mosarn", }),
-			q(5705, { ["name"] = "<NYI> No Longer a Shadow", }),
-			q(5706, { ["name"] = "<NYI> No Longer a Shadow", }),
-			q(1390, { ["name"] = "<nyi> Oops, We Killed Them Again.", }),
-			q(1397, { ["name"] = "<nyi> Saved!", }),
-			q(5686, { ["name"] = "<NYI> The Light Protects You", }),
-			q(5687, { ["name"] = "<NYI> The Light Protects You", }),
-			q(5711, { ["name"] = "<NYI> The Lost Ways", }),
-			q(5712, { ["name"] = "<NYI> The Lost Ways", }),
-			q(5702, { ["name"] = "<NYI> The Rites of Old", }),
-			q(5703, { ["name"] = "<NYI> The Rites of Old", }),
-			q(1443, { ["name"] = "<nyi> The Shakedown", }),
-			q(5659, { ["name"] = "<NYI> Touch of Weakness", }),
-			q(1288, { ["name"] = "<nyi> Vimes's Report", }),
-			q(1289, { ["name"] = "<nyi> Vimes's Report", }),
-			q(1292, { ["name"] = "<nyi><TXT> Centaur Hoofprints", }),
-			q(241, { ["name"] = "<TEST> HEY MISTER WILSON!", }),
-			q(73, { ["name"] = "<TXT> No Reward", }),
-			q(2868, { ["name"] = "<TXT> The Shriveled Heart", }),
-			q(242, { ["name"] = "<UNUSED>", }),
-			q(259, { ["name"] = "<UNUSED>", }),
-			q(260, { ["name"] = "<UNUSED>", }),
-			q(352, { ["name"] = "<UNUSED>", }),
-			q(406, { ["name"] = "<UNUSED>", }),
-			q(462, { ["name"] = "<UNUSED>", }),
-			q(490, { ["name"] = "<UNUSED>", }),
-			q(497, { ["name"] = "<UNUSED>", }),
-			q(534, { ["name"] = "<UNUSED>", }),
-			q(612, { ["name"] = "<UNUSED>", }),
-			q(774, { ["name"] = "<UNUSED>", }),	-- Mulgore
-			q(807, { ["name"] = "<UNUSED>", }),
-			q(810, { ["name"] = "<UNUSED>", }),
-			q(811, { ["name"] = "<UNUSED>", }),
-			q(814, { ["name"] = "<UNUSED>", }),
-			q(820, { ["name"] = "<UNUSED>", }),
-			q(839, { ["name"] = "<UNUSED>", }),
-			q(856, { ["name"] = "<UNUSED>", }),
-			q(946, { ["name"] = "<UNUSED>", }),
-			q(988, { ["name"] = "<UNUSED>", }),
-			q(989, { ["name"] = "<UNUSED>", }),
-			q(1441, { ["name"] = "<UNUSED>", }),
-			q(1460, { ["name"] = "<UNUSED>", }),
-			q(1461, { ["name"] = "<UNUSED>", }),
-			q(1659, { ["name"] = "<UNUSED>", }),
-			q(1660, { ["name"] = "<UNUSED>", }),
-			q(1662, { ["name"] = "<UNUSED>", }),
-			q(1663, { ["name"] = "<UNUSED>", }),
-			q(1664, { ["name"] = "<UNUSED>", }),
-			q(2020, { ["name"] = "<UNUSED>", }),
-			q(2058, { ["name"] = "<UNUSED>", }),
-			q(2059, { ["name"] = "<UNUSED>", }),
-			q(2971, { ["name"] = "<UNUSED>", }),
-			q(3023, { ["name"] = "<UNUSED>", }),
-			q(3383, { ["name"] = "<UNUSED>", }),
-			q(3384, { ["name"] = "<UNUSED>", }),
-			q(3401, { ["name"] = "<UNUSED>", }),
-			q(3403, { ["name"] = "<UNUSED>", }),
-			q(3404, { ["name"] = "<UNUSED>", }),
-			q(3405, { ["name"] = "<UNUSED>", }),
-			q(3422, { ["name"] = "<UNUSED>", }),
-			q(3423, { ["name"] = "<UNUSED>", }),
-			q(3424, { ["name"] = "<UNUSED>", }),
-			q(3425, { ["name"] = "<UNUSED>", }),
-			q(3515, { ["name"] = "<UNUSED>", }),
-			q(3516, { ["name"] = "<UNUSED>", }),
-			q(3529, { ["name"] = "<UNUSED>", }),
-			q(3530, { ["name"] = "<UNUSED>", }),
-			q(3531, { ["name"] = "<UNUSED>", }),
-			q(3622, { ["name"] = "<UNUSED>", }),
-			q(3623, { ["name"] = "<UNUSED>", }),
-			q(3624, { ["name"] = "<UNUSED>", }),
-			q(4905, { ["name"] = "<UNUSED>", }),
-			q(5205, { ["name"] = "<UNUSED>", }),
-			q(5209, { ["name"] = "<UNUSED>", }),
-			q(5303, { ["name"] = "<UNUSED>", }),
-			q(5304, { ["name"] = "<UNUSED>", }),
-			q(5506, { ["name"] = "<UNUSED>", }),
-			q(5512, { ["name"] = "<UNUSED>", }),
-			q(5516, { ["name"] = "<UNUSED>", }),
-			q(5520, { ["name"] = "<UNUSED>", }),
-			q(5523, { ["name"] = "<UNUSED>", }),
-			q(5664, { ["name"] = "<UNUSED>", }),
-			q(5665, { ["name"] = "<UNUSED>", }),
-			q(5666, { ["name"] = "<UNUSED>", }),
-			q(5667, { ["name"] = "<UNUSED>", }),
-			q(5681, { ["name"] = "<UNUSED>", }),
-			q(5682, { ["name"] = "<UNUSED>", }),
-			q(5683, { ["name"] = "<UNUSED>", }),
-			q(5684, { ["name"] = "<UNUSED>", }),
-			q(5694, { ["name"] = "<UNUSED>", }),
-			q(5695, { ["name"] = "<UNUSED>", }),
-			q(5696, { ["name"] = "<UNUSED>", }),
-			q(5697, { ["name"] = "<UNUSED>", }),
-			q(6841, { ["name"] = "<UNUSED>", }),
-			q(7904, { ["name"] = "<UNUSED>", }),
-			q(8247, { ["name"] = "<UNUSED>", }),
-			q(8248, { ["name"] = "<UNUSED>", }),
-			q(8337, { ["name"] = "<UNUSED>", }),
-			q(8459, { ["name"] = "<UNUSED>", }),
-			q(3111, { ["name"] = "<UNUSED> [DEPRECATED]", }),
-			q(8571, { ["name"] = "<UNUSED> Armor Kits", }),
-			q(6202, { ["name"] = "<UNUSED> Good and Evil", }),
-			q(6201, { ["name"] = "<UNUSED> The Legacy of the Ashbringer", }),
-			q(6606, { ["name"] = "A Little Luck", }),	-- Winterspring
-			q(785, { ["name"] = "A Strategic Alliance", }),
-			q(8489, { ["name"] = "An Intact Converter", }),
-			q(8478, { ["name"] = "Choose Your Weapon", }),
-			q(8230, { ["name"] = "Collin's Test Quest", }),
-			q(6843, { ["name"] = "Da Foo", }),
-			q(7906, { ["name"] = "Darkmoon Cards - Beast", }),
-			q(5674, { ["name"] = "Elune's Grace", }),
-			q(7522, { ["name"] = "Examine the Vessel", }),
-			q(1272, { ["name"] = "Finding Reethe <CHANGE INTO GOSSIP>", }),	-- Dustwallow Marsh
-			q(1283, { ["name"] = "Fire at the Shady Rest <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
-			q(1127, { ["name"] = "Fool's Stout", }),
-			q(1174, { ["name"] = "Gnomes Win!", }),
-			q(1099, { ["name"] = "Goblins Win!", }),
-			q(7681, { ["name"] = "Hunter test quest", }),
-			q(7682, { ["name"] = "Hunter test quest2", }),
-			q(1281, { ["name"] = "Jim's Song <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
-			q(5383, { ["name"] = "Krastinov's Bag of Horrors", }),
-			q(5101, { ["name"] = "Lee's Ultimate Test Quest... of Doom!", }),
-			q(636, { ["name"] = "Legends of the Earth <NYI>", }),
-			q(7479, { ["name"] = "Libram of Focus", }),
-			q(7480, { ["name"] = "Libram of Protection", }),
-			q(7478, { ["name"] = "Libram of Rapidity", }),
-			q(7741, { ["name"] = "Praise from the Emerald Circle <NYI> <TXT>", }),
-			q(8152, { ["name"] = "REUSE", }),
-			q(8973, { ["name"] = "REUSE", }),
-			q(7561, { ["name"] = "Rise, Thunderfury!", }),
-			q(2000, { ["name"] = "Rokar Bladeshadow", }),
-			q(2018, { ["name"] = "Rokar's Test", }),
-			q(8339, { ["name"] = "Royalty of the Council <NYI> <TXT> UNUSED", }),
-			q(402, { ["name"] = "Sirra is Busy", }),
-			q(7221, { ["name"] = "Speak with Prospector Stonehewer", }),
-			q(7222, { ["name"] = "Speak with Voggah Deathgrip", }),
-			q(912, { ["name"] = "Stonesplinter Trogg Disguise", }),
-			q(8869, { ["name"] = "Sweet Serenity", }),
-			q(7869, { ["name"] = "test quest - do not use", }),
-			q(7870, { ["name"] = "test quest2 - do not use", }),
-			q(8531, { ["name"] = "The Alliance Needs More Singed Corestones!", }),
-			q(8530, { ["name"] = "The Alliance Needs Singed Corestones!", }),
-			q(708, { ["name"] = "The Black Box", }),
-			q(1263, { ["name"] = "The Burning Inn <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
-			q(9065, { ["name"] = "The \"Chow\" Quest (123)aa", }),	-- Dustwallow Marsh
-			q(8896, { ["name"] = "The Dwarven Spy", }),
-			q(8618, { ["name"] = "The Horde Needs More Singed Corestones!", }),
-			q(8617, { ["name"] = "The Horde Needs Singed Corestones!", }),
-			q(787, { ["name"] = "The New Horde", }),
-			q(7462, { ["name"] = "The Treasure of the Shen'dralar", }),
-			q(7790, { ["name"] = "The Written Word", }),
-			q(7521, { ["name"] = "Thunderaan the Windseeker", }),
-			q(6131, { ["name"] = "Timbermaw Ally (old version, deprecated)", }),
-			q(9556, { ["name"] = "To The Victor...", }),
-			q(2019, { ["name"] = "Tools of the Trade", }),
-			q(8340, { ["name"] = "Twilight Signet Ring <NYI> <TXT>", }),
-			q(1318, { ["name"] = "Unfinished Gordok Business", }),
-			q(7962, { ["name"] = "Wabbit Pelts", }),
-			q(7961, { ["name"] = "Waskily Wabbits!", }),
-			q(9296, { ["name"] = "reuse", }),	-- Scourge Invasion (Unused)
-			q(9297, { ["name"] = "reuse", }),	-- Scourge Invasion (Unused)
-			q(9298, { ["name"] = "reuse", }),	-- Scourge Invasion (Unused)
-			q(9411, { ["name"] = "<UNUSED>Infused Bandages", }),
-			q(9412, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
-			q(9413, { ["name"] = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
-			q(9414, { ["name"] = "<UNUSED>Infused Bandages", }),
-			q(9695, { ["name"] = "The Sun King's Command", }),
-			i(20946, { ["name"] = "Tactical Task Briefing III", }),	-- Silithus
-			i(21246, { ["name"] = "Combat Task Briefing I", }),	-- Silithus
-			i(21247, { ["name"] = "Combat Task Briefing II", }),	-- Silithus
-			q(999, { ["name"] = "When Dreams Turn to Nightmares", }),
-			q(1005, { ["name"] = "What Lurks Beyond", }),
-			q(1006, { ["name"] = "What Lies Beyond", }),
-			q(1500, { ["name"] = "Waking Naralex", }),
+			q(548, { name = "[DEPRECATED] <NYI> <TXT> Bloodstone Pendant", }),
+			q(6708, { name = "[DEPRECATED] <TXT> BRD, DM, BRS", }),
+			q(6702, { name = "[DEPRECATED] <TXT> SF, RFK, GNOMER, BF", }),
+			q(6704, { name = "[DEPRECATED] <TXT> SM, RFD, ULD", }),
+			q(6710, { name = "[DEPRECATED] <TXT> UBRS, STRATH, SCHOL", }),
+			q(6706, { name = "[DEPRECATED] <TXT> ZUL, ST, MAR", }),
+			q(4541, { name = "<NYI> <TXT>", }),
+			q(5698, { name = "<NYI> <TXT> A Small Amount of Hope", }),
+			q(5688, { name = "<NYI> <TXT> A Touch of Voodoo", }),
+			q(5690, { name = "<NYI> <TXT> A Touch of Voodoo", }),
+			q(6165, { name = "<NYI> <TXT> Archmage Timolain's Remains", }),
+			q(1155, { name = "<NYI> <TXT> bug crystal side quest", }),
+			q(1291, { name = "<nyi> <TXT> Centaur Hoofprints", }),
+			q(1293, { name = "<nyi> <TXT> Centaur Hoofprints", }),
+			q(1295, { name = "<nyi> <TXT> Course of Action", }),
+			q(1296, { name = "<nyi> <TXT> Course of Action", }),
+			q(1297, { name = "<nyi> <TXT> Course of Action", }),
+			q(5707, { name = "<NYI> <TXT> Flirting With Darkness", }),
+			q(4323, { name = "<NYI> <TXT> Get those Hyenas!!!", }),
+			q(1161, { name = "<NYI> <TXT> gossip shade of ambermoon", }),
+			q(8444, { name = "<NYI> <TXT> gossip shade of ambermoon", }),
+			q(8445, { name = "<NYI> <TXT> gossip shade of ambermoon", }),
+			q(6003, { name = "<nyi> <txt> Green With Envy", }),
+			q(5691, { name = "<NYI> <TXT> In the Dark it was Created", }),
+			q(1300, { name = "<nyi> <TXT> Lorn Grim Totem", }),
+			q(5530, { name = "<NYI> <TXT> Necklace of the Dawn", }),
+			q(1157, { name = "<NYI> <TXT> pestlezugg needs items", }),
+			q(3064, { name = "<NYI> <TXT> Pirate Hats", }),
+			q(5532, { name = "<NYI> <TXT> Ring of the Dawn ", }),
+			q(1156, { name = "<NYI> <TXT> speak to alchemist pestlezugg", }),
+			q(1162, { name = "<NYI> <TXT> speak to hamuul runetotem", }),
+			q(1158, { name = "<NYI> <TXT> speak to rabine saturna", }),
+			q(1163, { name = "<NYI> <TXT> speak to tyrande whisperwind", }),
+			q(137, { name = "<NYI> <TXT> Stormwind Commendation", }),
+			q(5208, { name = "<NYI> <TXT> The Blessing of Evil", }),
+			q(1277, { name = "<nyi> <TXT> The Centaur Hoofprints", }),
+			q(3885, { name = "<NYI> <TXT> The Gadgetzan Run", }),
+			q(1278, { name = "<nyi> <TXT> The Grim Totem Clan", }),
+			q(5685, { name = "<NYI> <TXT> The Light Protects You", }),
+			q(3482, { name = "<NYI> <TXT> The Pocked Black Box", }),
+			q(5701, { name = "<NYI> <TXT> The Rites of Old", }),
+			q(7384, { name = "<nyi> <txt> The Scale Crafters", }),
+			q(5207, { name = "<NYI> <TXT> The True Summoner", }),
+			q(3910, { name = "<NYI> <TXT> The Un'Goro Run", }),
+			q(1298, { name = "<nyi> <TXT> Thrall's Dirty Work", }),
+			q(1299, { name = "<nyi> <TXT> Thrall's Dirty Work", }),
+			q(5710, { name = "<NYI> <TXT> Troll Priest Robe", }),
+			q(5704, { name = "<NYI> <TXT> Undead Priest Robe", }),
+			q(3241, { name = "<NYI> <TXT><redux> Dreadmist Peak", }),
+			q(1294, { name = "<nyi> <TXT>Centaur Sympathies", }),
+			q(1279, { name = "<nyi> <TXT>The Centaur Hoofprints", }),
+			q(1280, { name = "<nyi> <TXT>The Centaur Hoofprints", }),
+			q(4299, { name = "<NYI> <TXT>The Tomb of the Seven", }),
+			q(5668, { name = "<NYI> A Blessing of Light", }),
+			q(5669, { name = "<NYI> A Blessing of Light", }),
+			q(5670, { name = "<NYI> A Blessing of Light", }),
+			q(5671, { name = "<NYI> A Blessing of Light", }),
+			q(5699, { name = "<NYI> A Small Amount of Hope", }),
+			q(5700, { name = "<NYI> A Small Amount of Hope", }),
+			q(5689, { name = "<NYI> A Touch of Voodoo", }),
+			q(1533, { name = "<NYI> Call of Air", }),
+			q(1537, { name = "<NYI> Call of Air", }),
+			q(1538, { name = "<NYI> Call of Air", }),
+			q(5708, { name = "<NYI> Flirting With Darkness", }),
+			q(5709, { name = "<NYI> Flirting With Darkness", }),
+			q(5653, { name = "<NYI> Hex of Weakness", }),
+			q(5692, { name = "<NYI> In the Dark It was Created", }),
+			q(5693, { name = "<NYI> In the Dark It was Created", }),
+			q(1290, { name = "<nyi> Investigating Mosarn", }),
+			q(5705, { name = "<NYI> No Longer a Shadow", }),
+			q(5706, { name = "<NYI> No Longer a Shadow", }),
+			q(1390, { name = "<nyi> Oops, We Killed Them Again.", }),
+			q(1397, { name = "<nyi> Saved!", }),
+			q(5686, { name = "<NYI> The Light Protects You", }),
+			q(5687, { name = "<NYI> The Light Protects You", }),
+			q(5711, { name = "<NYI> The Lost Ways", }),
+			q(5712, { name = "<NYI> The Lost Ways", }),
+			q(5702, { name = "<NYI> The Rites of Old", }),
+			q(5703, { name = "<NYI> The Rites of Old", }),
+			q(1443, { name = "<nyi> The Shakedown", }),
+			q(5659, { name = "<NYI> Touch of Weakness", }),
+			q(1288, { name = "<nyi> Vimes's Report", }),
+			q(1289, { name = "<nyi> Vimes's Report", }),
+			q(1292, { name = "<nyi><TXT> Centaur Hoofprints", }),
+			q(241, { name = "<TEST> HEY MISTER WILSON!", }),
+			q(73, { name = "<TXT> No Reward", }),
+			q(2868, { name = "<TXT> The Shriveled Heart", }),
+			q(242, { name = "<UNUSED>", }),
+			q(259, { name = "<UNUSED>", }),
+			q(260, { name = "<UNUSED>", }),
+			q(352, { name = "<UNUSED>", }),
+			q(406, { name = "<UNUSED>", }),
+			q(462, { name = "<UNUSED>", }),
+			q(490, { name = "<UNUSED>", }),
+			q(497, { name = "<UNUSED>", }),
+			q(534, { name = "<UNUSED>", }),
+			q(612, { name = "<UNUSED>", }),
+			q(774, { name = "<UNUSED>", }),	-- Mulgore
+			q(807, { name = "<UNUSED>", }),
+			q(810, { name = "<UNUSED>", }),
+			q(811, { name = "<UNUSED>", }),
+			q(814, { name = "<UNUSED>", }),
+			q(820, { name = "<UNUSED>", }),
+			q(839, { name = "<UNUSED>", }),
+			q(856, { name = "<UNUSED>", }),
+			q(946, { name = "<UNUSED>", }),
+			q(988, { name = "<UNUSED>", }),
+			q(989, { name = "<UNUSED>", }),
+			q(1441, { name = "<UNUSED>", }),
+			q(1460, { name = "<UNUSED>", }),
+			q(1461, { name = "<UNUSED>", }),
+			q(1659, { name = "<UNUSED>", }),
+			q(1660, { name = "<UNUSED>", }),
+			q(1662, { name = "<UNUSED>", }),
+			q(1663, { name = "<UNUSED>", }),
+			q(1664, { name = "<UNUSED>", }),
+			q(2020, { name = "<UNUSED>", }),
+			q(2058, { name = "<UNUSED>", }),
+			q(2059, { name = "<UNUSED>", }),
+			q(2971, { name = "<UNUSED>", }),
+			q(3023, { name = "<UNUSED>", }),
+			q(3383, { name = "<UNUSED>", }),
+			q(3384, { name = "<UNUSED>", }),
+			q(3401, { name = "<UNUSED>", }),
+			q(3403, { name = "<UNUSED>", }),
+			q(3404, { name = "<UNUSED>", }),
+			q(3405, { name = "<UNUSED>", }),
+			q(3422, { name = "<UNUSED>", }),
+			q(3423, { name = "<UNUSED>", }),
+			q(3424, { name = "<UNUSED>", }),
+			q(3425, { name = "<UNUSED>", }),
+			q(3515, { name = "<UNUSED>", }),
+			q(3516, { name = "<UNUSED>", }),
+			q(3529, { name = "<UNUSED>", }),
+			q(3530, { name = "<UNUSED>", }),
+			q(3531, { name = "<UNUSED>", }),
+			q(3622, { name = "<UNUSED>", }),
+			q(3623, { name = "<UNUSED>", }),
+			q(3624, { name = "<UNUSED>", }),
+			q(4905, { name = "<UNUSED>", }),
+			q(5205, { name = "<UNUSED>", }),
+			q(5209, { name = "<UNUSED>", }),
+			q(5303, { name = "<UNUSED>", }),
+			q(5304, { name = "<UNUSED>", }),
+			q(5506, { name = "<UNUSED>", }),
+			q(5512, { name = "<UNUSED>", }),
+			q(5516, { name = "<UNUSED>", }),
+			q(5520, { name = "<UNUSED>", }),
+			q(5523, { name = "<UNUSED>", }),
+			q(5664, { name = "<UNUSED>", }),
+			q(5665, { name = "<UNUSED>", }),
+			q(5666, { name = "<UNUSED>", }),
+			q(5667, { name = "<UNUSED>", }),
+			q(5681, { name = "<UNUSED>", }),
+			q(5682, { name = "<UNUSED>", }),
+			q(5683, { name = "<UNUSED>", }),
+			q(5684, { name = "<UNUSED>", }),
+			q(5694, { name = "<UNUSED>", }),
+			q(5695, { name = "<UNUSED>", }),
+			q(5696, { name = "<UNUSED>", }),
+			q(5697, { name = "<UNUSED>", }),
+			q(6841, { name = "<UNUSED>", }),
+			q(7904, { name = "<UNUSED>", }),
+			q(8247, { name = "<UNUSED>", }),
+			q(8248, { name = "<UNUSED>", }),
+			q(8337, { name = "<UNUSED>", }),
+			q(8459, { name = "<UNUSED>", }),
+			q(3111, { name = "<UNUSED> [DEPRECATED]", }),
+			q(8571, { name = "<UNUSED> Armor Kits", }),
+			q(6202, { name = "<UNUSED> Good and Evil", }),
+			q(6201, { name = "<UNUSED> The Legacy of the Ashbringer", }),
+			q(6606, { name = "A Little Luck", }),	-- Winterspring
+			q(785, { name = "A Strategic Alliance", }),
+			q(8489, { name = "An Intact Converter", }),
+			q(8478, { name = "Choose Your Weapon", }),
+			q(8230, { name = "Collin's Test Quest", }),
+			q(6843, { name = "Da Foo", }),
+			q(7906, { name = "Darkmoon Cards - Beast", }),
+			q(5674, { name = "Elune's Grace", }),
+			q(7522, { name = "Examine the Vessel", }),
+			q(1272, { name = "Finding Reethe <CHANGE INTO GOSSIP>", }),	-- Dustwallow Marsh
+			q(1283, { name = "Fire at the Shady Rest <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
+			q(1127, { name = "Fool's Stout", }),
+			q(1174, { name = "Gnomes Win!", }),
+			q(1099, { name = "Goblins Win!", }),
+			q(7681, { name = "Hunter test quest", }),
+			q(7682, { name = "Hunter test quest2", }),
+			q(1281, { name = "Jim's Song <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
+			q(5383, { name = "Krastinov's Bag of Horrors", }),
+			q(5101, { name = "Lee's Ultimate Test Quest... of Doom!", }),
+			q(636, { name = "Legends of the Earth <NYI>", }),
+			q(7479, { name = "Libram of Focus", }),
+			q(7480, { name = "Libram of Protection", }),
+			q(7478, { name = "Libram of Rapidity", }),
+			q(7741, { name = "Praise from the Emerald Circle <NYI> <TXT>", }),
+			q(8152, { name = "REUSE", }),
+			q(8973, { name = "REUSE", }),
+			q(7561, { name = "Rise, Thunderfury!", }),
+			q(2000, { name = "Rokar Bladeshadow", }),
+			q(2018, { name = "Rokar's Test", }),
+			q(8339, { name = "Royalty of the Council <NYI> <TXT> UNUSED", }),
+			q(402, { name = "Sirra is Busy", }),
+			q(7221, { name = "Speak with Prospector Stonehewer", }),
+			q(7222, { name = "Speak with Voggah Deathgrip", }),
+			q(912, { name = "Stonesplinter Trogg Disguise", }),
+			q(8869, { name = "Sweet Serenity", }),
+			q(7869, { name = "test quest - do not use", }),
+			q(7870, { name = "test quest2 - do not use", }),
+			q(8531, { name = "The Alliance Needs More Singed Corestones!", }),
+			q(8530, { name = "The Alliance Needs Singed Corestones!", }),
+			q(708, { name = "The Black Box", }),
+			q(1263, { name = "The Burning Inn <CHANGE TO GOSSIP>", }),	-- Dustwallow Marsh
+			q(9065, { name = "The \"Chow\" Quest (123)aa", }),	-- Dustwallow Marsh
+			q(8896, { name = "The Dwarven Spy", }),
+			q(8618, { name = "The Horde Needs More Singed Corestones!", }),
+			q(8617, { name = "The Horde Needs Singed Corestones!", }),
+			q(787, { name = "The New Horde", }),
+			q(7462, { name = "The Treasure of the Shen'dralar", }),
+			q(7790, { name = "The Written Word", }),
+			q(7521, { name = "Thunderaan the Windseeker", }),
+			q(6131, { name = "Timbermaw Ally (old version, deprecated)", }),
+			q(9556, { name = "To The Victor...", }),
+			q(2019, { name = "Tools of the Trade", }),
+			q(8340, { name = "Twilight Signet Ring <NYI> <TXT>", }),
+			q(1318, { name = "Unfinished Gordok Business", }),
+			q(7962, { name = "Wabbit Pelts", }),
+			q(7961, { name = "Waskily Wabbits!", }),
+			q(9296, { name = "reuse", }),	-- Scourge Invasion (Unused)
+			q(9297, { name = "reuse", }),	-- Scourge Invasion (Unused)
+			q(9298, { name = "reuse", }),	-- Scourge Invasion (Unused)
+			q(9411, { name = "<UNUSED>Infused Bandages", }),
+			q(9412, { name = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
+			q(9413, { name = "<UNUSED>Crystal Flake Throat Lozenget Lozenge", }),
+			q(9414, { name = "<UNUSED>Infused Bandages", }),
+			q(9695, { name = "The Sun King's Command", }),
+			i(20946, { name = "Tactical Task Briefing III", }),	-- Silithus
+			i(21246, { name = "Combat Task Briefing I", }),	-- Silithus
+			i(21247, { name = "Combat Task Briefing II", }),	-- Silithus
+			q(999, { name = "When Dreams Turn to Nightmares", }),
+			q(1005, { name = "What Lurks Beyond", }),
+			q(1006, { name = "What Lies Beyond", }),
+			q(1500, { name = "Waking Naralex", }),
 
 			-- Got these from Questie
-			q(1, { ["name"] = "The \"Chow\" Quest (123)aa", }),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
-			q(8411, { ["name"] = "Mastering the Elements", }),
-			q(7788, { ["name"] = "Vanquish the Invaders!", }),
-			q(7871, { ["name"] = "Vanquish the Invaders!", }),
-			q(7872, { ["name"] = "Vanquish the Invaders!", }),
-			q(7873, { ["name"] = "Vanquish the Invaders!", }),
-			q(8290, { ["name"] = "Vanquish the Invaders!", }),
-			q(8291, { ["name"] = "Vanquish the Invaders!", }),
+			q(1, { name = "The \"Chow\" Quest (123)aa", }),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
+			q(8411, { name = "Mastering the Elements", }),
+			q(7788, { name = "Vanquish the Invaders!", }),
+			q(7871, { name = "Vanquish the Invaders!", }),
+			q(7872, { name = "Vanquish the Invaders!", }),
+			q(7873, { name = "Vanquish the Invaders!", }),
+			q(8290, { name = "Vanquish the Invaders!", }),
+			q(8291, { name = "Vanquish the Invaders!", }),
 
 			-- Retired PVP Battleground Quests
 			-- Warsong Gulch
@@ -266,16 +266,16 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(7924),	-- Mark of Honor [lvl 30]
 			q(7925),	-- Mark of Honor [lvl 20]
 			q(8296),	-- Mark of Honor [lvl 10]
-			q(8567, { ["name"] = "Past Victories in Warsong Gulch", }),
-			q(8568, { ["name"] = "Past Victories in Warsong Gulch", }),
-			q(8569, { ["name"] = "Past Efforts in Warsong Gulch", }),
-			q(8570, { ["name"] = "Past Efforts in Warsong Gulch", }),
-			q(7789, { ["name"] = "Quell the Silverwing Usurpers", }),
-			q(7874, { ["name"] = "Quell the Silverwing Usurpers", }),
-			q(7875, { ["name"] = "Quell the Silverwing Usurpers", }),
-			q(7876, { ["name"] = "Quell the Silverwing Usurpers", }),
-			q(8294, { ["name"] = "Quell the Silverwing Usurpers", }),
-			q(8295, { ["name"] = "Quell the Silverwing Usurpers", }),
+			q(8567, { name = "Past Victories in Warsong Gulch", }),
+			q(8568, { name = "Past Victories in Warsong Gulch", }),
+			q(8569, { name = "Past Efforts in Warsong Gulch", }),
+			q(8570, { name = "Past Efforts in Warsong Gulch", }),
+			q(7789, { name = "Quell the Silverwing Usurpers", }),
+			q(7874, { name = "Quell the Silverwing Usurpers", }),
+			q(7875, { name = "Quell the Silverwing Usurpers", }),
+			q(7876, { name = "Quell the Silverwing Usurpers", }),
+			q(8294, { name = "Quell the Silverwing Usurpers", }),
+			q(8295, { name = "Quell the Silverwing Usurpers", }),
 			q(8266),	-- Ribbons of Sacrifice
 			q(8267),	-- Ribbons of Sacrifice
 			q(8268),	-- Ribbons of Sacrifice
@@ -306,224 +306,224 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(8300),	-- More Resource Crates [lvl 60] (H)
 			q(8565),	-- Past Victories in Arathi
 			q(8566),	-- Past Victories in Arathi
-			q(8080, { ["name"] = "Arathi Basin Resources!", }),
-			q(8081, { ["name"] = "More Resource Crates", }),
-			q(8124, { ["name"] = "More Resource Crates", }),
-			q(8157, { ["name"] = "More Resource Crates", }),
-			q(8158, { ["name"] = "More Resource Crates", }),
-			q(8159, { ["name"] = "More Resource Crates", }),
-			q(8163, { ["name"] = "More Resource Crates", }),
-			q(8164, { ["name"] = "More Resource Crates", }),
-			q(8165, { ["name"] = "More Resource Crates", }),
-			q(8298, { ["name"] = "More Resource Crates", }),
-			q(8300, { ["name"] = "More Resource Crates", }),
-			q(8565, { ["name"] = "Past Victories in Arathi", }),
-			q(8566, { ["name"] = "Past Victories in Arathi", }),
-			q(8123, { ["name"] = "Cut Arathor Supply Lines", }),
-			q(8160, { ["name"] = "Cut Arathor Supply Lines", }),
-			q(8161, { ["name"] = "Cut Arathor Supply Lines", }),
-			q(8162, { ["name"] = "Cut Arathor Supply Lines", }),
-			q(8299, { ["name"] = "Cut Arathor Supply Lines", }),
-			q(8154, { ["name"] = "Arathi Basin Resources!", }),
-			q(8155, { ["name"] = "Arathi Basin Resources!", }),
-			q(8156, { ["name"] = "Arathi Basin Resources!", }),
-			q(8297, { ["name"] = "Arathi Basin Resources!", }),
+			q(8080, { name = "Arathi Basin Resources!", }),
+			q(8081, { name = "More Resource Crates", }),
+			q(8124, { name = "More Resource Crates", }),
+			q(8157, { name = "More Resource Crates", }),
+			q(8158, { name = "More Resource Crates", }),
+			q(8159, { name = "More Resource Crates", }),
+			q(8163, { name = "More Resource Crates", }),
+			q(8164, { name = "More Resource Crates", }),
+			q(8165, { name = "More Resource Crates", }),
+			q(8298, { name = "More Resource Crates", }),
+			q(8300, { name = "More Resource Crates", }),
+			q(8565, { name = "Past Victories in Arathi", }),
+			q(8566, { name = "Past Victories in Arathi", }),
+			q(8123, { name = "Cut Arathor Supply Lines", }),
+			q(8160, { name = "Cut Arathor Supply Lines", }),
+			q(8161, { name = "Cut Arathor Supply Lines", }),
+			q(8162, { name = "Cut Arathor Supply Lines", }),
+			q(8299, { name = "Cut Arathor Supply Lines", }),
+			q(8154, { name = "Arathi Basin Resources!", }),
+			q(8155, { name = "Arathi Basin Resources!", }),
+			q(8156, { name = "Arathi Basin Resources!", }),
+			q(8297, { name = "Arathi Basin Resources!", }),
 
 		}),
 	}),
 	expansion(EXPANSION.TBC, {
 		-- 2.x.x
 		n(P2xx, {
-			q(9754, { ["name"] = "", }),
-			q(9755, { ["name"] = "", }),
-			q(10215, { ["name"] = "", }),
-			q(10787, { ["name"] = "[DEPRECATED]<txt><nyi>The Dragons of Dragons' End", }),
-			q(10743, { ["name"] = "[DEPRECATED]<txt>Hero of the Mok'Nathal", }),
-			q(11437, { ["name"] = "[PH] Beer Garden A", }),
-			q(11444, { ["name"] = "[PH] Beer Garden A", }),
-			q(11438, { ["name"] = "[PH] Beer Garden B", }),
-			q(11445, { ["name"] = "[PH] Beer Garden B", }),
-			q(11125, { ["name"] = "[PH] New Hinterlands Quest", }),
-			q(11974, { ["name"] = "[ph] Now, When I Grow Up...", }),
-			q(9316, { ["name"] = "[TXT] Goblin Savages", }),
-			q(10890, { ["name"] = "[UNUSED] <NYI>", }),
-			q(9308, { ["name"] = "<DEPRECATED>Blood Elf Remains?", }),
-			q(9307, { ["name"] = "<DEPRECATED>Compassion", }),
-			q(9596, { ["name"] = "<DEPRECATED>Control", }),
-			q(9507, { ["name"] = "<DEPRECATED>From the Desk of Mogul Razdunk", }),
-			q(9306, { ["name"] = "<DEPRECATED>Speak with Vindicator Aldar", }),
-			q(9745, { ["name"] = "<DEPRECATED>Suppressing the Flame", }),
-			q(9445, { ["name"] = "<NYI><TXT>Placeholder: A Worthy Offering", }),
-			q(10616, { ["name"] = "<nyi>Breadcrumb", }),
-			q(9384, { ["name"] = "<NYI>Harnessing the Light", }),
-			q(9679, { ["name"] = "<NYI>Return to Knight-Lord Bloodvalor", }),
-			q(11127, { ["name"] = "<NYI>Thunderbrew Secrets", }),
-			q(10402, { ["name"] = "<TXT>", }),
-			q(9597, { ["name"] = "<UNUSED>", }),
-			q(9599, { ["name"] = "<UNUSED>", }),
-			q(9949, { ["name"] = "A Bird's-Eye View", }),
-			q(9950, { ["name"] = "A Bird's-Eye View", }),
-			q(9988, { ["name"] = "A Dandy's Best Friend", }),
-			q(10048, { ["name"] = "A Handful of Magic Dust BETA", }),
-			q(10049, { ["name"] = "A Handful of Magic Dust BETA", }),
-			q(9344, { ["name"] = "A Hasty Departure", }),
-			q(10187, { ["name"] = "A Message for the Archmage", }),
-			q(9965, { ["name"] = "A Show of Good Faith", }),
-			q(9966, { ["name"] = "A Show of Good Faith", }),
-			q(11551, { ["name"] = "Agamath, the First Gate", }),
-			q(11553, { ["name"] = "Archonisus, the Final Gate", }),
-			q(10032, { ["name"] = "Artifacts from Tuurem", }),
-			q(10084, { ["name"] = "Assault on Mageddon", }),
-			q(10092, { ["name"] = "Assault on Mageddon", }),
-			q(10056, { ["name"] = "Bleeding Hollow Supplies", }),
-			q(10158, { ["name"] = "Bleeding Hollow Supplies", }),
-			q(9510, { ["name"] = "Bristlehide Clefthoof Hides", }),
-			q(11401, { ["name"] = "Call the Headless Horseman", }),
-			q(11404, { ["name"] = "Call the Headless Horseman", }),
-			q(11405, { ["name"] = "Call the Headless Horseman", }),
-			q(12405, { ["name"] = "Candy Bucket", ["_drop"] = { "g" }, }),
-			q(12410, { ["name"] = "Candy Bucket", ["_drop"] = { "g" }, }),
-			q(10181, { ["name"] = "Collector's Edition: -pn - E - FLAG", }),
-			q(9577, { ["name"] = "DAILY TEST QUEST (PVP)     TBC:DAILY TEST QUEST (PVP)  WOTLK:DAILY TEST QUEST (PVP)", }),
-			q(11121, { ["name"] = "DAILY TEST QUEST (RAID)", }),
-			q(10059, { ["name"] = "Dealing With Zeth'Gor", }),
-			q(10053, { ["name"] = "Dealing with Zeth'Gor", }),
-			q(10746, { ["name"] = "DEPRECATED Karazhan: LAB - E - Exalted Ring - Caster", }),
-			q(9654, { ["name"] = "Deprecated: A Well Rounded Defense", }),
-			q(9661, { ["name"] = "Deprecated: A Well Rounded Defense", }),
-			q(9655, { ["name"] = "Deprecated: Healing Amplification", }),
-			q(9659, { ["name"] = "Deprecated: Healing Amplification", }),
-			q(9662, { ["name"] = "Deprecated: Keanna's Freedom", }),
-			q(9613, { ["name"] = "Deprecated: Keanna's Will", }),
-			q(9656, { ["name"] = "Deprecated: Lethality First", }),
-			q(9660, { ["name"] = "Deprecated: Lethality First", }),
-			q(9650, { ["name"] = "Deprecated: Magical Augmentation", }),
-			q(9651, { ["name"] = "Deprecated: Magical Augmentation", }),
-			q(9657, { ["name"] = "Deprecated: Offensive Channeling", }),
-			q(9658, { ["name"] = "Deprecated: Offensive Channeling", }),
-			q(9652, { ["name"] = "Deprecated: Physical Enhancement", }),
-			q(9653, { ["name"] = "Deprecated: Physical Enhancement", }),
-			q(9615, { ["name"] = "Deprecated: Reforge a Long Blade", }),
-			q(9614, { ["name"] = "Deprecated: Reforge a Short Blade", }),
-			q(10591, { ["name"] = "DESTROY THIS QUEST!", }),
-			q(10139, { ["name"] = "Dispatching the Commander [Alliance]", }),
-			q(10157, { ["name"] = "Dispatching the Commander [Horde]", }),
-			q(10452, { ["name"] = "DON'T USE [PH] Fel Orc 1", }),
-			q(10453, { ["name"] = "DON'T USE [PH] Fel Orc bread", }),
-			q(9926, { ["name"] = "FLAG Shadow Council/Warmaul Questline", }),
-			q(11353, { ["name"] = "FLAG: Got the work shirt", }),
-			q(12187, { ["name"] = "FLAG: Participant", }),
-			q(12186, { ["name"] = "FLAG: Winner", }),
-			q(10089, { ["name"] = "Forge Camps of the Legion", }),
-			q(9408, { ["name"] = "Forgotten Heroes", }),
-			q(11435, { ["name"] = "Gathered Pumpkins NYI", }),
-			q(13800, { ["name"] = "Get My Keys", }),
-			q(11334, { ["name"] = "He Shoots, He Scores!", }),
-			q(9880, { ["name"] = "Hellfire Penninsula: -pn - A - ToWoW - Hellfire Turnin Cap", }),
-			q(9881, { ["name"] = "Hellfire Penninsula: -pn - H - ToWoW - Hellfire Turnin Cap", }),
-			q(9984, { ["name"] = "Host of the Hidden City", }),
-			q(9985, { ["name"] = "Host of the Hidden City", }),
-			q(9380, { ["name"] = "Hounded for More", }),
-			q(10054, { ["name"] = "Impending Doom", }),
-			q(10060, { ["name"] = "Impending Doom", }),
-			q(9511, { ["name"] = "Kargath's Battle Plans", }),
-			q(9953, { ["name"] = "Lookout Nodak", }),
-			q(9342, { ["name"] = "Marauding Crust Bursters", }),
-			q(10195, { ["name"] = "Mercenary See, Mercenary Do", }),
-			q(10148, { ["name"] = "Mission: Be the Messenger [Alliance]", }),
-			q(10135, { ["name"] = "Mission: Be the Messenger [Horde]", }),
-			q(10133, { ["name"] = "Mission: Kill the Messenger", }),
-			q(10147, { ["name"] = "Mission: Kill the Messenger", }),
-			q(10145, { ["name"] = "Mission: Sever the Tie UNUSED", }),
-			q(10127, { ["name"] = "Mission: Sever the Tie", }),
-			q(10196, { ["name"] = "More Arakkoa Feathers", }),
-			q(10370, { ["name"] = "Nazgrel's Command", }),
-			q(10638, { ["name"] = "NOT A QUEST", }),
-			q(10375, { ["name"] = "Obsidian Warbeads", }),
-			q(9583, { ["name"] = "Omar's Test Quest bk", }),
-			q(10693, { ["name"] = "One Commendation Signet", }),
-			q(10695, { ["name"] = "One Commendation Signet", }),
-			q(10697, { ["name"] = "One Commendation Signet", }),
-			q(10699, { ["name"] = "One Commendation Signet", }),
-			q(10441, { ["name"] = "Peddling the Goods", }),
-			q(10131, { ["name"] = "Planning the Escape", }),
-			q(10154, { ["name"] = "Planning the Escape", }),
-			q(9975, { ["name"] = "Primal Magic", }),
-			q(9976, { ["name"] = "Primal Magic", }),
-			q(11345, { ["name"] = "Prizes for Pellets", }),
-			q(10610, { ["name"] = "Prospecting Basics", }),
-			q(9952, { ["name"] = "Prospector Balmoral", }),
-			q(10137, { ["name"] = "Provoking the Warboss", }),
-			q(10155, { ["name"] = "Provoking the Warboss", }),
-			q(10244, { ["name"] = "R.T.F.R.C.M.", }),
-			q(9980, { ["name"] = "Rescue Deirom!", }),
-			q(9981, { ["name"] = "Rescue Deirom!", }),
-			q(10398, { ["name"] = "Return to Honor Hold", }),
-			q(9947, { ["name"] = "Return to Rokag", }),
-			q(9943, { ["name"] = "Return to Thander", }),
-			q(10534, { ["name"] = "Returning Home", }),
-			q(10539, { ["name"] = "Returning Home", }),
-			q(11588, { ["name"] = "REUSE", }),
-			q(11589, { ["name"] = "REUSE", }),
-			q(10558, { ["name"] = "Revered Among Honor Hold", }),
-			q(10459, { ["name"] = "Revered Among the Cenarion Expedition", }),
-			q(10561, { ["name"] = "Revered Among the Keepers of Time", }),
-			q(10560, { ["name"] = "Revered Among the Sha'tar", }),
-			q(10559, { ["name"] = "Revered Among Thrallmar", }),
-			q(11552, { ["name"] = "Rohendor, the Second Gate", }),
-			q(10128, { ["name"] = "Saving Private Imarion", }),
-			q(10153, { ["name"] = "Saving Scout Makha", }),
-			q(9958, { ["name"] = "Scouting the Defenses", }),
-			q(9959, { ["name"] = "Scouting the Defenses", }),
-			q(9963, { ["name"] = "Seeking Help from the Source", }),
-			q(9964, { ["name"] = "Seeking Help from the Source", }),
-			q(10694, { ["name"] = "Ten Commendation Signets", }),
-			q(10696, { ["name"] = "Ten Commendation Signets", }),
-			q(10698, { ["name"] = "Ten Commendation Signets", }),
-			q(10700, { ["name"] = "Ten Commendation Signets", }),
-			q(10716, { ["name"] = "Test Flight: Raven's Wood <needs reward>", }),
-			q(11425, { ["name"] = "Test Quest - Craig", }),
-			q(10122, { ["name"] = "The Citadel's Reach", }),
-			q(10150, { ["name"] = "The Citadel's Reach", }),
-			q(10179, { ["name"] = "The Custodian of Kirin'Var", }),
-			q(9382, { ["name"] = "The Fate of the Clefthoof", }),
-			q(9969, { ["name"] = "The Final Reagents", }),
-			q(9974, { ["name"] = "The Final Reagents", }),
-			q(10014, { ["name"] = "The Firewing Point Project", }),
-			q(10015, { ["name"] = "The Firewing Point Project", }),
-			q(10090, { ["name"] = "The Legion's Plans", }),
-			q(10100, { ["name"] = "The Mastermind", }),
-			q(9929, { ["name"] = "The Missing Merchant", }),
-			q(9930, { ["name"] = "The Missing Merchant", }),
-			q(10029, { ["name"] = "The Spirits Are Calling", }),
-			q(10130, { ["name"] = "The Western Flank", }),
-			q(10152, { ["name"] = "The Western Flank", }),
-			q(9377, { ["name"] = "Thirsting For Power", }),
-			q(10046, { ["name"] = "Through the Dark Portal", }),
-			q(9941, { ["name"] = "Tracking Down the Culprits", }),
-			q(9942, { ["name"] = "Tracking Down the Culprits", }),
-			q(10138, { ["name"] = "Under Whose Orders?", }),
-			q(10156, { ["name"] = "Under Whose Orders?", }),
-			q(12923, { ["name"] = "UNUSED", }),
-			q(11493, { ["name"] = "UNUSED", }),
-			q(12600, { ["name"] = "Upper Deck Promo - Bear Mount", }),
-			q(11874, { ["name"] = "Upper Deck Promo - Rocket Mount", }),
-			q(11226, { ["name"] = "Upper Deck Promo - Spectral Tiger Mount", }),
-			q(10126, { ["name"] = "Warboss Nekrogg's Orders", }),
-			q(10151, { ["name"] = "Warboss Nekrogg's Orders", }),
-			q(9346, { ["name"] = "When Helboars Fly", }),
-			q(13799, { ["name"] = "Where Are My Keys?", }),
-			q(11577, { ["name"] = "WoW Collector's Edition: - DEM - E - FLAG", }),
-			q(12479, { ["name"] = "Wrath of the Lich King: Onwards to Northrend!", }),
-			q(12480, { ["name"] = "Wrath of the Lich King: Onwards to Northrend!", }),
-			q(11197, { ["name"] = "ZZOLD Upper Deck Promo - Ghost Wolf Mount OLD", }),
-			q(9168, { ["name"] = "Heart of Deatholme", }),
-			q(9357, { ["name"] = "Report to Aeldon Sunbrand", }),
-			q(9568, { ["name"] = "On the Offensive", }),
-			q(10260, { ["name"] = "Netherologist Coppernickels", }),
-			q(10292, { ["name"] = "More Power!", }),
-			q(10404, { ["name"] = "Against the Legion", }),
-			q(10844, { ["name"] = "Forge Camp: Anger", }),
+			q(9754, { name = "", }),
+			q(9755, { name = "", }),
+			q(10215, { name = "", }),
+			q(10787, { name = "[DEPRECATED]<txt><nyi>The Dragons of Dragons' End", }),
+			q(10743, { name = "[DEPRECATED]<txt>Hero of the Mok'Nathal", }),
+			q(11437, { name = "[PH] Beer Garden A", }),
+			q(11444, { name = "[PH] Beer Garden A", }),
+			q(11438, { name = "[PH] Beer Garden B", }),
+			q(11445, { name = "[PH] Beer Garden B", }),
+			q(11125, { name = "[PH] New Hinterlands Quest", }),
+			q(11974, { name = "[ph] Now, When I Grow Up...", }),
+			q(9316, { name = "[TXT] Goblin Savages", }),
+			q(10890, { name = "[UNUSED] <NYI>", }),
+			q(9308, { name = "<DEPRECATED>Blood Elf Remains?", }),
+			q(9307, { name = "<DEPRECATED>Compassion", }),
+			q(9596, { name = "<DEPRECATED>Control", }),
+			q(9507, { name = "<DEPRECATED>From the Desk of Mogul Razdunk", }),
+			q(9306, { name = "<DEPRECATED>Speak with Vindicator Aldar", }),
+			q(9745, { name = "<DEPRECATED>Suppressing the Flame", }),
+			q(9445, { name = "<NYI><TXT>Placeholder: A Worthy Offering", }),
+			q(10616, { name = "<nyi>Breadcrumb", }),
+			q(9384, { name = "<NYI>Harnessing the Light", }),
+			q(9679, { name = "<NYI>Return to Knight-Lord Bloodvalor", }),
+			q(11127, { name = "<NYI>Thunderbrew Secrets", }),
+			q(10402, { name = "<TXT>", }),
+			q(9597, { name = "<UNUSED>", }),
+			q(9599, { name = "<UNUSED>", }),
+			q(9949, { name = "A Bird's-Eye View", }),
+			q(9950, { name = "A Bird's-Eye View", }),
+			q(9988, { name = "A Dandy's Best Friend", }),
+			q(10048, { name = "A Handful of Magic Dust BETA", }),
+			q(10049, { name = "A Handful of Magic Dust BETA", }),
+			q(9344, { name = "A Hasty Departure", }),
+			q(10187, { name = "A Message for the Archmage", }),
+			q(9965, { name = "A Show of Good Faith", }),
+			q(9966, { name = "A Show of Good Faith", }),
+			q(11551, { name = "Agamath, the First Gate", }),
+			q(11553, { name = "Archonisus, the Final Gate", }),
+			q(10032, { name = "Artifacts from Tuurem", }),
+			q(10084, { name = "Assault on Mageddon", }),
+			q(10092, { name = "Assault on Mageddon", }),
+			q(10056, { name = "Bleeding Hollow Supplies", }),
+			q(10158, { name = "Bleeding Hollow Supplies", }),
+			q(9510, { name = "Bristlehide Clefthoof Hides", }),
+			q(11401, { name = "Call the Headless Horseman", }),
+			q(11404, { name = "Call the Headless Horseman", }),
+			q(11405, { name = "Call the Headless Horseman", }),
+			q(12405, { name = "Candy Bucket", _drop = { "g" }, }),
+			q(12410, { name = "Candy Bucket", _drop = { "g" }, }),
+			q(10181, { name = "Collector's Edition: -pn - E - FLAG", }),
+			q(9577, { name = "DAILY TEST QUEST (PVP)     TBC:DAILY TEST QUEST (PVP)  WOTLK:DAILY TEST QUEST (PVP)", }),
+			q(11121, { name = "DAILY TEST QUEST (RAID)", }),
+			q(10059, { name = "Dealing With Zeth'Gor", }),
+			q(10053, { name = "Dealing with Zeth'Gor", }),
+			q(10746, { name = "DEPRECATED Karazhan: LAB - E - Exalted Ring - Caster", }),
+			q(9654, { name = "Deprecated: A Well Rounded Defense", }),
+			q(9661, { name = "Deprecated: A Well Rounded Defense", }),
+			q(9655, { name = "Deprecated: Healing Amplification", }),
+			q(9659, { name = "Deprecated: Healing Amplification", }),
+			q(9662, { name = "Deprecated: Keanna's Freedom", }),
+			q(9613, { name = "Deprecated: Keanna's Will", }),
+			q(9656, { name = "Deprecated: Lethality First", }),
+			q(9660, { name = "Deprecated: Lethality First", }),
+			q(9650, { name = "Deprecated: Magical Augmentation", }),
+			q(9651, { name = "Deprecated: Magical Augmentation", }),
+			q(9657, { name = "Deprecated: Offensive Channeling", }),
+			q(9658, { name = "Deprecated: Offensive Channeling", }),
+			q(9652, { name = "Deprecated: Physical Enhancement", }),
+			q(9653, { name = "Deprecated: Physical Enhancement", }),
+			q(9615, { name = "Deprecated: Reforge a Long Blade", }),
+			q(9614, { name = "Deprecated: Reforge a Short Blade", }),
+			q(10591, { name = "DESTROY THIS QUEST!", }),
+			q(10139, { name = "Dispatching the Commander [Alliance]", }),
+			q(10157, { name = "Dispatching the Commander [Horde]", }),
+			q(10452, { name = "DON'T USE [PH] Fel Orc 1", }),
+			q(10453, { name = "DON'T USE [PH] Fel Orc bread", }),
+			q(9926, { name = "FLAG Shadow Council/Warmaul Questline", }),
+			q(11353, { name = "FLAG: Got the work shirt", }),
+			q(12187, { name = "FLAG: Participant", }),
+			q(12186, { name = "FLAG: Winner", }),
+			q(10089, { name = "Forge Camps of the Legion", }),
+			q(9408, { name = "Forgotten Heroes", }),
+			q(11435, { name = "Gathered Pumpkins NYI", }),
+			q(13800, { name = "Get My Keys", }),
+			q(11334, { name = "He Shoots, He Scores!", }),
+			q(9880, { name = "Hellfire Penninsula: -pn - A - ToWoW - Hellfire Turnin Cap", }),
+			q(9881, { name = "Hellfire Penninsula: -pn - H - ToWoW - Hellfire Turnin Cap", }),
+			q(9984, { name = "Host of the Hidden City", }),
+			q(9985, { name = "Host of the Hidden City", }),
+			q(9380, { name = "Hounded for More", }),
+			q(10054, { name = "Impending Doom", }),
+			q(10060, { name = "Impending Doom", }),
+			q(9511, { name = "Kargath's Battle Plans", }),
+			q(9953, { name = "Lookout Nodak", }),
+			q(9342, { name = "Marauding Crust Bursters", }),
+			q(10195, { name = "Mercenary See, Mercenary Do", }),
+			q(10148, { name = "Mission: Be the Messenger [Alliance]", }),
+			q(10135, { name = "Mission: Be the Messenger [Horde]", }),
+			q(10133, { name = "Mission: Kill the Messenger", }),
+			q(10147, { name = "Mission: Kill the Messenger", }),
+			q(10145, { name = "Mission: Sever the Tie UNUSED", }),
+			q(10127, { name = "Mission: Sever the Tie", }),
+			q(10196, { name = "More Arakkoa Feathers", }),
+			q(10370, { name = "Nazgrel's Command", }),
+			q(10638, { name = "NOT A QUEST", }),
+			q(10375, { name = "Obsidian Warbeads", }),
+			q(9583, { name = "Omar's Test Quest bk", }),
+			q(10693, { name = "One Commendation Signet", }),
+			q(10695, { name = "One Commendation Signet", }),
+			q(10697, { name = "One Commendation Signet", }),
+			q(10699, { name = "One Commendation Signet", }),
+			q(10441, { name = "Peddling the Goods", }),
+			q(10131, { name = "Planning the Escape", }),
+			q(10154, { name = "Planning the Escape", }),
+			q(9975, { name = "Primal Magic", }),
+			q(9976, { name = "Primal Magic", }),
+			q(11345, { name = "Prizes for Pellets", }),
+			q(10610, { name = "Prospecting Basics", }),
+			q(9952, { name = "Prospector Balmoral", }),
+			q(10137, { name = "Provoking the Warboss", }),
+			q(10155, { name = "Provoking the Warboss", }),
+			q(10244, { name = "R.T.F.R.C.M.", }),
+			q(9980, { name = "Rescue Deirom!", }),
+			q(9981, { name = "Rescue Deirom!", }),
+			q(10398, { name = "Return to Honor Hold", }),
+			q(9947, { name = "Return to Rokag", }),
+			q(9943, { name = "Return to Thander", }),
+			q(10534, { name = "Returning Home", }),
+			q(10539, { name = "Returning Home", }),
+			q(11588, { name = "REUSE", }),
+			q(11589, { name = "REUSE", }),
+			q(10558, { name = "Revered Among Honor Hold", }),
+			q(10459, { name = "Revered Among the Cenarion Expedition", }),
+			q(10561, { name = "Revered Among the Keepers of Time", }),
+			q(10560, { name = "Revered Among the Sha'tar", }),
+			q(10559, { name = "Revered Among Thrallmar", }),
+			q(11552, { name = "Rohendor, the Second Gate", }),
+			q(10128, { name = "Saving Private Imarion", }),
+			q(10153, { name = "Saving Scout Makha", }),
+			q(9958, { name = "Scouting the Defenses", }),
+			q(9959, { name = "Scouting the Defenses", }),
+			q(9963, { name = "Seeking Help from the Source", }),
+			q(9964, { name = "Seeking Help from the Source", }),
+			q(10694, { name = "Ten Commendation Signets", }),
+			q(10696, { name = "Ten Commendation Signets", }),
+			q(10698, { name = "Ten Commendation Signets", }),
+			q(10700, { name = "Ten Commendation Signets", }),
+			q(10716, { name = "Test Flight: Raven's Wood <needs reward>", }),
+			q(11425, { name = "Test Quest - Craig", }),
+			q(10122, { name = "The Citadel's Reach", }),
+			q(10150, { name = "The Citadel's Reach", }),
+			q(10179, { name = "The Custodian of Kirin'Var", }),
+			q(9382, { name = "The Fate of the Clefthoof", }),
+			q(9969, { name = "The Final Reagents", }),
+			q(9974, { name = "The Final Reagents", }),
+			q(10014, { name = "The Firewing Point Project", }),
+			q(10015, { name = "The Firewing Point Project", }),
+			q(10090, { name = "The Legion's Plans", }),
+			q(10100, { name = "The Mastermind", }),
+			q(9929, { name = "The Missing Merchant", }),
+			q(9930, { name = "The Missing Merchant", }),
+			q(10029, { name = "The Spirits Are Calling", }),
+			q(10130, { name = "The Western Flank", }),
+			q(10152, { name = "The Western Flank", }),
+			q(9377, { name = "Thirsting For Power", }),
+			q(10046, { name = "Through the Dark Portal", }),
+			q(9941, { name = "Tracking Down the Culprits", }),
+			q(9942, { name = "Tracking Down the Culprits", }),
+			q(10138, { name = "Under Whose Orders?", }),
+			q(10156, { name = "Under Whose Orders?", }),
+			q(12923, { name = "UNUSED", }),
+			q(11493, { name = "UNUSED", }),
+			q(12600, { name = "Upper Deck Promo - Bear Mount", }),
+			q(11874, { name = "Upper Deck Promo - Rocket Mount", }),
+			q(11226, { name = "Upper Deck Promo - Spectral Tiger Mount", }),
+			q(10126, { name = "Warboss Nekrogg's Orders", }),
+			q(10151, { name = "Warboss Nekrogg's Orders", }),
+			q(9346, { name = "When Helboars Fly", }),
+			q(13799, { name = "Where Are My Keys?", }),
+			q(11577, { name = "WoW Collector's Edition: - DEM - E - FLAG", }),
+			q(12479, { name = "Wrath of the Lich King: Onwards to Northrend!", }),
+			q(12480, { name = "Wrath of the Lich King: Onwards to Northrend!", }),
+			q(11197, { name = "ZZOLD Upper Deck Promo - Ghost Wolf Mount OLD", }),
+			q(9168, { name = "Heart of Deatholme", }),
+			q(9357, { name = "Report to Aeldon Sunbrand", }),
+			q(9568, { name = "On the Offensive", }),
+			q(10260, { name = "Netherologist Coppernickels", }),
+			q(10292, { name = "More Power!", }),
+			q(10404, { name = "Against the Legion", }),
+			q(10844, { name = "Forge Camp: Anger", }),
 			-- #if BEFORE WRATH
 			q(10871),	-- Ally of the Netherwing
 			q(11052),	-- Akama's Promise
@@ -534,37 +534,37 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	expansion(EXPANSION.WRATH, {
 		-- 3.x.x
 		n(P3xx, {
-			q(11939, { ["name"] = "?????", }),
-			q(11558, { ["name"] = "Dangerous Love", }),
-			q(12233, { ["name"] = "[Depricated]Sewing Your Seed", }),
-			q(24908, { ["name"] = "[NOT USED] Build the Fort Placeholder", }),
-			q(24867, { ["name"] = "[NOT USED] Lumberjack Slam Placeholder", }),
-			q(24909, { ["name"] = "[NOT USED] Protect the Pass Placeholder", }),
-			q(11179, { ["name"] = "[Temporarily Deprecated Awaiting a New Mob]Finlay Is Gutless", }),
-			q(24818, { ["name"] = "A Change of Heart", }),
-			q(24881, { ["name"] = "Classic Random 5-15 (1st)", }),
-			q(24889, { ["name"] = "Classic Random 5-15 (Nth)", }),
-			q(24790, { ["name"] = "Daily Normal Random (1st)", }),
-			q(24791, { ["name"] = "Daily Normal Random (Nth)", }),
-			q(13908, { ["name"] = "Gearing Up To Ride", }),
-			q(12890, { ["name"] = "If Size Mattered...", }),
-			q(24922, { ["name"] = "LFGDungeons - Burning Crusade - Heroic Random - 1st", }),
-			q(24923, { ["name"] = "LFGDungeons - Burning Crusade - Heroic Random - Nth", }),
-			q(24882, { ["name"] = "LFGDungeons - Classic - Random - 1st", }),
-			q(24890, { ["name"] = "LFGDungeons - Classic - Random - Nth", }),
-			q(25484, { ["name"] = "LFGDungeons - Holiday Dungeon - Ahune - 1st", }),
-			q(25483, { ["name"] = "LFGDungeons - Holiday Dungeon - Coren Direbrew - 1st", }),
-			q(25485, { ["name"] = "LFGDungeons - Holiday Dungeon - Crown Chemical - 1st", }),
-			q(25482, { ["name"] = "LFGDungeons - Holiday Dungeon - Headless Horseman - 1st", }),
-			q(24788, { ["name"] = "LFGDungeons - Lich King - Heroic Random - 1st", }),
-			q(24789, { ["name"] = "LFGDungeons - Lich King - Heroic Random - Nth", }),
-			q(13184, { ["name"] = "Outliving Usefulness", }),
-			q(13176, { ["name"] = "Preparing the Delivery", }),
-			q(13175, { ["name"] = "Regaining Control", }),
-			q(12051, { ["name"] = "Rustling Some Feathers", }),
-			q(13692, { ["name"] = "The Sword and the Sea", }),
-			q(12490, { ["name"] = "Veehja's Revenge", }),
-			q(25306, { ["name"] = "You're In The Army Gnow!", }),
+			q(11939, { name = "?????", }),
+			q(11558, { name = "Dangerous Love", }),
+			q(12233, { name = "[Depricated]Sewing Your Seed", }),
+			q(24908, { name = "[NOT USED] Build the Fort Placeholder", }),
+			q(24867, { name = "[NOT USED] Lumberjack Slam Placeholder", }),
+			q(24909, { name = "[NOT USED] Protect the Pass Placeholder", }),
+			q(11179, { name = "[Temporarily Deprecated Awaiting a New Mob]Finlay Is Gutless", }),
+			q(24818, { name = "A Change of Heart", }),
+			q(24881, { name = "Classic Random 5-15 (1st)", }),
+			q(24889, { name = "Classic Random 5-15 (Nth)", }),
+			q(24790, { name = "Daily Normal Random (1st)", }),
+			q(24791, { name = "Daily Normal Random (Nth)", }),
+			q(13908, { name = "Gearing Up To Ride", }),
+			q(12890, { name = "If Size Mattered...", }),
+			q(24922, { name = "LFGDungeons - Burning Crusade - Heroic Random - 1st", }),
+			q(24923, { name = "LFGDungeons - Burning Crusade - Heroic Random - Nth", }),
+			q(24882, { name = "LFGDungeons - Classic - Random - 1st", }),
+			q(24890, { name = "LFGDungeons - Classic - Random - Nth", }),
+			q(25484, { name = "LFGDungeons - Holiday Dungeon - Ahune - 1st", }),
+			q(25483, { name = "LFGDungeons - Holiday Dungeon - Coren Direbrew - 1st", }),
+			q(25485, { name = "LFGDungeons - Holiday Dungeon - Crown Chemical - 1st", }),
+			q(25482, { name = "LFGDungeons - Holiday Dungeon - Headless Horseman - 1st", }),
+			q(24788, { name = "LFGDungeons - Lich King - Heroic Random - 1st", }),
+			q(24789, { name = "LFGDungeons - Lich King - Heroic Random - Nth", }),
+			q(13184, { name = "Outliving Usefulness", }),
+			q(13176, { name = "Preparing the Delivery", }),
+			q(13175, { name = "Regaining Control", }),
+			q(12051, { name = "Rustling Some Feathers", }),
+			q(13692, { name = "The Sword and the Sea", }),
+			q(12490, { name = "Veehja's Revenge", }),
+			q(25306, { name = "You're In The Army Gnow!", }),
 		}),
 	}),
 	expansion(EXPANSION.CATA, {
@@ -704,1105 +704,1105 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.0.1
-		expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
-			q(30003, { ["name"] = "A Book By Its Cover", }),	-- A Book By Its Cover
-			q(30019, { ["name"] = "A Breach in the Wall", }),	-- A Breach in the Wall
-			q(30537, { ["name"] = "A Fizzy Fusion", }),	-- A Fizzy Fusion
-			q(29766, { ["name"] = "A Good Start", }),	-- A Good Start
-			q(29722, { ["name"] = "A Lesson in Bravery", }),	-- A Lesson in Bravery
-			q(29561, { ["name"] = "Against the Odds", }),	-- Against the Odds
-			q(31668, { ["name"] = "Ambush Event Tracking", }),	-- Ambush Event Tracking
-			q(29721, { ["name"] = "An Offering", }),	-- An Offering
-			q(30986, { ["name"] = "Ancient Mogu Crypt", }),	-- Ancient Mogu Crypt
-			q(30706, { ["name"] = "Angry Scribblings", }),	-- Angry Scribblings
-			q(31604, { ["name"] = "Assault on Zan'vess", }),	-- Assault on Zan'vess
-			q(29843, { ["name"] = "Aunty Lin Windfur", }),	-- Aunty Lin Windfur
-			q(29703, { ["name"] = "Barrel of Monkies", }),	-- Barrel of Monkies
-			q(29746, { ["name"] = "Breadcrumb Into Ruins", }),	-- Breadcrumb Into Ruins
-			q(31761, { ["name"] = "Breaking Their Spirits (Not Yet Implemented)", }),	-- Breaking Their Spirits (Not Yet Implemented)
-			q(29878, { ["name"] = "Building a Better Hozen Trap", }),	-- Building a Better Hozen Trap
-			q(29724, { ["name"] = "Burial at Sea", }),	-- Burial at Sea
-			q(29856, { ["name"] = "Cairn of Bone", }),	-- Cairn of Bone
-			q(30705, { ["name"] = "Captain's Log", }),	-- Captain's Log
-			q(29880, { ["name"] = "Catch and Release!", ["_drop"] = { "g" }, }),	-- Catch and Release!
-			q(30197, { ["name"] = "Cart Ride", }),	-- Cart Ride
-			q(29534, { ["name"] = "Collect Things", }),	-- Collect Things
-			q(30934, { ["name"] = "Criteria Effects Test Quest", }),	-- Criteria Effects Test Quest
-			q(31060, { ["name"] = "Dawson test POI", }),	-- Dawson test POI
-			q(31027, { ["name"] = "Defeat the Abomination", }),	-- Defeat the Abomination
-			q(30215, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(30216, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(30217, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(30218, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(30219, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(30220, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(30221, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(30222, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(30223, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(30224, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(29868, { ["name"] = "DEPRECATED: Captain Cartheron", }),	-- DEPRECATED: Captain Cartheron
-			q(29846, { ["name"] = "DEPRECATED: Captain Rufus Hardwick", }),	-- DEPRECATED: Captain Rufus Hardwick
-			q(29854, { ["name"] = "DEPRECATED: Claiming Kalimdor", }),	-- DEPRECATED: Claiming Kalimdor
-			q(29832, { ["name"] = "DEPRECATED: Gathering Evidence", }),	-- DEPRECATED: Gathering Evidence
-			q(29849, { ["name"] = "DEPRECATED: Gunner Blastbarrel", }),	-- DEPRECATED: Gunner Blastbarrel
-			q(29867, { ["name"] = "DEPRECATED: Shadow Hunter Urko'jin", }),	-- DEPRECATED: Shadow Hunter Urko'jin
-			q(29859, { ["name"] = "DEPRECATED: Spies in Our Midst", }),	-- DEPRECATED: Spies in Our Midst
-			q(29831, { ["name"] = "DEPRECATED: Terror on the High Seas", }),	-- DEPRECATED: Terror on the High Seas
-			q(29845, { ["name"] = "DEPRECATED: The Merchants' Plight", }),	-- DEPRECATED: The Merchants' Plight
-			q(29876, { ["name"] = "DEPRECATED: The Third Captain", }),	-- DEPRECATED: The Third Captain
-			q(29852, { ["name"] = "DEPRECATED: They Call Him Swifthands", }),	-- DEPRECATED: They Call Him Swifthands
-			q(29857, { ["name"] = "DEPRECATED: Where Are Those Ships?", }),	-- DEPRECATED: Where Are Those Ships?
-			q(30714, { ["name"] = "Destroy the Leaders", }),	-- Destroy the Leaders
-			q(31654, { ["name"] = "Doors to Vale OPEN", }),	-- Doors to Vale OPEN
-			q(29817, { ["name"] = "Drunken Tigers", }),	-- Drunken Tigers
-			q(31600, { ["name"] = "Enable Scenarios", }),	-- Enable Scenarios
-			q(30886, { ["name"] = "Example Pandaren Race Quest", }),	-- Example Pandaren Race Quest
-			q(30609, { ["name"] = "Exit Strategy", }),	-- Exit Strategy
-			q(29728, { ["name"] = "Explosive Evidence", }),	-- Explosive Evidence
-			q(29902, { ["name"] = "Fighting the Flames", }),	-- Fighting the Flames
-			q(31278, { ["name"] = "Figuring out how to make quests", }),	-- Figuring out how to make quests
-			q(31331, { ["name"] = "Figuring out how to make quests", }),	-- Figuring out how to make quests
-			q(29767, { ["name"] = "Fish Fry", }),	-- Fish Fry
-			q(29818, { ["name"] = "Fix the Flavor", }),	-- Fix the Flavor
-			q(31219, { ["name"] = "FLAG - Unlocked Nurong", }),	-- FLAG - Unlocked Nurong
-			q(31218, { ["name"] = "FLAG - Unlocked Tenwu", }),	-- FLAG - Unlocked Tenwu
-			q(31665, { ["name"] = "FLAG - Vegetron 4000 Converted", }),	-- FLAG - Vegetron 4000 Converted
-			q(29549, { ["name"] = "Flightmaster Down", }),	-- Flightmaster Down
-			q(30364, { ["name"] = "Fly, Spy!", }),	-- Fly, Spy!
-			q(31098, { ["name"] = "Founding of the Order of the Cloud Serpent", }),	-- Founding of the Order of the Cloud Serpent
-			q(29938, { ["name"] = "Friends and Foes", ["_drop"] = { "g" }, }),	-- Friends and Foes
-			q(30153, { ["name"] = "Full Speed Ahead", }),	-- Full Speed Ahead
-			q(30538, { ["name"] = "Fun for the Little Ones", }),	-- Fun for the Little Ones
-			q(29816, { ["name"] = "Get a Sample", }),	-- Get a Sample
-			q(30501, { ["name"] = "Gossip Accept Quest Test Case", }),	-- Gossip Accept Quest Test Case
-			q(30910, { ["name"] = "Greenstone Village", }),	-- Greenstone Village
-			q(29551, { ["name"] = "Grove Stalkers", }),	-- Grove Stalkers
-			q(30358, { ["name"] = "Gryphon, Down", }),	-- Gryphon, Down
-			q(30965, { ["name"] = "Herding Cats", }),	-- Herding Cats
-			q(30311, { ["name"] = "High Standards", }),	-- High Standards
-			q(31694, { ["name"] = "Hisingen Blues", }),	-- Hisingen Blues
-			q(29712, { ["name"] = "Horde Justice", }),	-- Horde Justice
-			q(30704, { ["name"] = "Hozen in the Mist", }),	-- Hozen in the Mist
-			q(30918, { ["name"] = "Hui's Vengeance", }),	-- Hui's Vengeance
-			q(30021, { ["name"] = "Impenetrable", }),	-- Impenetrable
-			q(29705, { ["name"] = "Invasion of the Bottle Snatchers", }),	-- Invasion of the Bottle Snatchers
+		expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+			q(30003, { name = "A Book By Its Cover", }),	-- A Book By Its Cover
+			q(30019, { name = "A Breach in the Wall", }),	-- A Breach in the Wall
+			q(30537, { name = "A Fizzy Fusion", }),	-- A Fizzy Fusion
+			q(29766, { name = "A Good Start", }),	-- A Good Start
+			q(29722, { name = "A Lesson in Bravery", }),	-- A Lesson in Bravery
+			q(29561, { name = "Against the Odds", }),	-- Against the Odds
+			q(31668, { name = "Ambush Event Tracking", }),	-- Ambush Event Tracking
+			q(29721, { name = "An Offering", }),	-- An Offering
+			q(30986, { name = "Ancient Mogu Crypt", }),	-- Ancient Mogu Crypt
+			q(30706, { name = "Angry Scribblings", }),	-- Angry Scribblings
+			q(31604, { name = "Assault on Zan'vess", }),	-- Assault on Zan'vess
+			q(29843, { name = "Aunty Lin Windfur", }),	-- Aunty Lin Windfur
+			q(29703, { name = "Barrel of Monkies", }),	-- Barrel of Monkies
+			q(29746, { name = "Breadcrumb Into Ruins", }),	-- Breadcrumb Into Ruins
+			q(31761, { name = "Breaking Their Spirits (Not Yet Implemented)", }),	-- Breaking Their Spirits (Not Yet Implemented)
+			q(29878, { name = "Building a Better Hozen Trap", }),	-- Building a Better Hozen Trap
+			q(29724, { name = "Burial at Sea", }),	-- Burial at Sea
+			q(29856, { name = "Cairn of Bone", }),	-- Cairn of Bone
+			q(30705, { name = "Captain's Log", }),	-- Captain's Log
+			q(29880, { name = "Catch and Release!", _drop = { "g" }, }),	-- Catch and Release!
+			q(30197, { name = "Cart Ride", }),	-- Cart Ride
+			q(29534, { name = "Collect Things", }),	-- Collect Things
+			q(30934, { name = "Criteria Effects Test Quest", }),	-- Criteria Effects Test Quest
+			q(31060, { name = "Dawson test POI", }),	-- Dawson test POI
+			q(31027, { name = "Defeat the Abomination", }),	-- Defeat the Abomination
+			q(30215, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(30216, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(30217, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(30218, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(30219, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(30220, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(30221, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(30222, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(30223, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(30224, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(29868, { name = "DEPRECATED: Captain Cartheron", }),	-- DEPRECATED: Captain Cartheron
+			q(29846, { name = "DEPRECATED: Captain Rufus Hardwick", }),	-- DEPRECATED: Captain Rufus Hardwick
+			q(29854, { name = "DEPRECATED: Claiming Kalimdor", }),	-- DEPRECATED: Claiming Kalimdor
+			q(29832, { name = "DEPRECATED: Gathering Evidence", }),	-- DEPRECATED: Gathering Evidence
+			q(29849, { name = "DEPRECATED: Gunner Blastbarrel", }),	-- DEPRECATED: Gunner Blastbarrel
+			q(29867, { name = "DEPRECATED: Shadow Hunter Urko'jin", }),	-- DEPRECATED: Shadow Hunter Urko'jin
+			q(29859, { name = "DEPRECATED: Spies in Our Midst", }),	-- DEPRECATED: Spies in Our Midst
+			q(29831, { name = "DEPRECATED: Terror on the High Seas", }),	-- DEPRECATED: Terror on the High Seas
+			q(29845, { name = "DEPRECATED: The Merchants' Plight", }),	-- DEPRECATED: The Merchants' Plight
+			q(29876, { name = "DEPRECATED: The Third Captain", }),	-- DEPRECATED: The Third Captain
+			q(29852, { name = "DEPRECATED: They Call Him Swifthands", }),	-- DEPRECATED: They Call Him Swifthands
+			q(29857, { name = "DEPRECATED: Where Are Those Ships?", }),	-- DEPRECATED: Where Are Those Ships?
+			q(30714, { name = "Destroy the Leaders", }),	-- Destroy the Leaders
+			q(31654, { name = "Doors to Vale OPEN", }),	-- Doors to Vale OPEN
+			q(29817, { name = "Drunken Tigers", }),	-- Drunken Tigers
+			q(31600, { name = "Enable Scenarios", }),	-- Enable Scenarios
+			q(30886, { name = "Example Pandaren Race Quest", }),	-- Example Pandaren Race Quest
+			q(30609, { name = "Exit Strategy", }),	-- Exit Strategy
+			q(29728, { name = "Explosive Evidence", }),	-- Explosive Evidence
+			q(29902, { name = "Fighting the Flames", }),	-- Fighting the Flames
+			q(31278, { name = "Figuring out how to make quests", }),	-- Figuring out how to make quests
+			q(31331, { name = "Figuring out how to make quests", }),	-- Figuring out how to make quests
+			q(29767, { name = "Fish Fry", }),	-- Fish Fry
+			q(29818, { name = "Fix the Flavor", }),	-- Fix the Flavor
+			q(31219, { name = "FLAG - Unlocked Nurong", }),	-- FLAG - Unlocked Nurong
+			q(31218, { name = "FLAG - Unlocked Tenwu", }),	-- FLAG - Unlocked Tenwu
+			q(31665, { name = "FLAG - Vegetron 4000 Converted", }),	-- FLAG - Vegetron 4000 Converted
+			q(29549, { name = "Flightmaster Down", }),	-- Flightmaster Down
+			q(30364, { name = "Fly, Spy!", }),	-- Fly, Spy!
+			q(31098, { name = "Founding of the Order of the Cloud Serpent", }),	-- Founding of the Order of the Cloud Serpent
+			q(29938, { name = "Friends and Foes", _drop = { "g" }, }),	-- Friends and Foes
+			q(30153, { name = "Full Speed Ahead", }),	-- Full Speed Ahead
+			q(30538, { name = "Fun for the Little Ones", }),	-- Fun for the Little Ones
+			q(29816, { name = "Get a Sample", }),	-- Get a Sample
+			q(30501, { name = "Gossip Accept Quest Test Case", }),	-- Gossip Accept Quest Test Case
+			q(30910, { name = "Greenstone Village", }),	-- Greenstone Village
+			q(29551, { name = "Grove Stalkers", }),	-- Grove Stalkers
+			q(30358, { name = "Gryphon, Down", }),	-- Gryphon, Down
+			q(30965, { name = "Herding Cats", }),	-- Herding Cats
+			q(30311, { name = "High Standards", }),	-- High Standards
+			q(31694, { name = "Hisingen Blues", }),	-- Hisingen Blues
+			q(29712, { name = "Horde Justice", }),	-- Horde Justice
+			q(30704, { name = "Hozen in the Mist", }),	-- Hozen in the Mist
+			q(30918, { name = "Hui's Vengeance", }),	-- Hui's Vengeance
+			q(30021, { name = "Impenetrable", }),	-- Impenetrable
+			q(29705, { name = "Invasion of the Bottle Snatchers", }),	-- Invasion of the Bottle Snatchers
 			-- #if NOT ANYCLASSIC
-			q(31697, { ["name"] = "Jeremy's Test Quest", }),	-- Jeremy's Test Quest
+			q(31697, { name = "Jeremy's Test Quest", }),	-- Jeremy's Test Quest
 			-- #endif
-			q(29706, { ["name"] = "Kegplosion", }),	-- Kegplosion
-			q(29584, { ["name"] = "Kill Mogu Firestarters", }),	-- Kill Mogu Firestarters
-			q(29531, { ["name"] = "Kill Stuff", }),	-- Kill Stuff
-			q(31099, { ["name"] = "Klaxx Attack", }),	-- Klaxx Attack
-			q(30180, { ["name"] = "Labor for Labor", }),	-- Labor for Labor
-			q(29841, { ["name"] = "Lay of the Land[TEMP]", }),	-- Lay of the Land[TEMP]
-			q(31101, { ["name"] = "Legends of the Brewfathers", }),	-- Legends of the Brewfathers
-			q(29813, { ["name"] = "Lethal Hangovers", }),	-- Lethal Hangovers
-			q(30316, { ["name"] = "Longshot", }),	-- Longshot
-			q(30377, { ["name"] = "Minimum Safe Distance", }),	-- Minimum Safe Distance
-			q(31655, { ["name"] = "Mishi Tracking 1", }),	-- Mishi Tracking 1
-			q(31172, { ["name"] = "Monk Training", }),	-- Monk Training
-			q(30009, { ["name"] = "Muster of Fort Grookin", }),	-- Muster of Fort Grookin
-			q(29696, { ["name"] = "My Stars!", }),	-- My Stars!
-			q(29814, { ["name"] = "Need a Chaser", }),	-- Need a Chaser
-			q(29897, { ["name"] = "No Such Thing As A Free Lunch", }),	-- No Such Thing As A Free Lunch
-			q(30198, { ["name"] = "NOT USED", }),	-- NOT USED
-			q(30199, { ["name"] = "NOT USED", }),	-- NOT USED
-			q(30201, { ["name"] = "NOT USED", }),	-- NOT USED
-			q(30202, { ["name"] = "NOT USED", }),	-- NOT USED
-			q(30203, { ["name"] = "NOT USED", }),	-- NOT USED
-			q(30262, { ["name"] = "NOT USED", }),	-- NOT USED
-			q(30303, { ["name"] = "NOT USED", }),	-- NOT USED
-			q(30483, { ["name"] = "NOT USED", }),	-- NOT USED
-			q(30315, { ["name"] = "Normal Quest Test Case", }),	-- Normal Quest Test Case
-			q(31554, { ["name"] = "On The Mend", }),	-- On The Mend
-			q(29869, { ["name"] = "One Hand Clapping", }),	-- One Hand Clapping
-			q(30990, { ["name"] = "Open the Golden Doors", }),	-- Open the Golden Doors
-			q(31028, { ["name"] = "Paragon 5", }),	-- Paragon 5
-			q(30345, { ["name"] = "Poisoned!", }),	-- Poisoned!
-			q(30941, { ["name"] = "Preparing Zouchin Village", }),	-- Preparing Zouchin Village
-			q(30710, { ["name"] = "Provoking the Trolls", }),	-- Provoking the Trolls
-			q(30974, { ["name"] = "Raising Spirits", ["_drop"] = { "g" }, }),	-- Raising Spirits
-			q(31273, { ["name"] = "Relics of the Swarm", }),	-- Relics of the Swarm
-			q(30278, { ["name"] = "REUSE FOR PROGRESSION", }),	-- REUSE FOR PROGRESSION
-			q(30279, { ["name"] = "REUSE FOR PROGRESSION", }),	-- REUSE FOR PROGRESSION
-			q(30247, { ["name"] = "Roll Club: Vale of Eternal Blossoms", }),	-- Roll Club: Vale of Eternal Blossoms
-			q(30020, { ["name"] = "Running Out of Options", }),	-- Running Out of Options
-			q(29837, { ["name"] = "Sacred Scroll", }),	-- Sacred Scroll
-			q(29812, { ["name"] = "Save the Cuddlies", }),	-- Save the Cuddlies
-			q(29550, { ["name"] = "Saving Snowpuff", }),	-- Saving Snowpuff
-			q(30961, { ["name"] = "Savior of the Inkgill", }),	-- Savior of the Inkgill
-			q(29842, { ["name"] = "Seeking Answers", }),	-- Seeking Answers
-			q(30677, { ["name"] = "Shuttle Service", }),	-- Shuttle Service
-			q(30122, { ["name"] = "Silver Filigree Flask", ["_drop"] = { "g" }, }),	-- Silver Filigree Flask
-			q(29718, { ["name"] = "Sixteen Fluid Ounces of Prevention", }),	-- Sixteen Fluid Ounces of Prevention
-			q(29744, { ["name"] = "Some \"Pupil of Nature\"", }),	-- Some "Pupil of Nature"
-			q(30759, { ["name"] = "Sotelo's Quest", }),	-- Sotelo's Quest
-			q(29554, { ["name"] = "Sunken Junk", }),	-- Sunken Junk
-			q(30250, { ["name"] = "Survival Ring: Thunder", }),	-- Survival Ring: Thunder
-			q(29713, { ["name"] = "Standard Protocol", }),	-- Standard Protocol
-			q(29896, { ["name"] = "Steaking a Claim", }),	-- Steaking a Claim
-			q(31025, { ["name"] = "Sweet Tooth", }),	-- Sweet Tooth
-			q(29541, { ["name"] = "Take Care of It", }),	-- Take Care of It
-			q(30362, { ["name"] = "Tanks for Nothing!", }),	-- Tanks for Nothing!
-			q(30378, { ["name"] = "The Blastmaster", }),	-- The Blastmaster
-			q(29719, { ["name"] = "The Double Hozu Dare", }),	-- The Double Hozu Dare
-			q(29923, { ["name"] = "The Dream Brew", }),	-- The Dream Brew
-			q(30253, { ["name"] = "The Family Farm", }),	-- The Family Farm
-			q(31545, { ["name"] = "The Finer Things", }),	-- The Finer Things
-			q(31557, { ["name"] = "The Finer Things", }),	-- The Finer Things
-			q(31558, { ["name"] = "The Finer Things", }),	-- The Finer Things
-			q(31559, { ["name"] = "The Finer Things", }),	-- The Finer Things
-			q(31560, { ["name"] = "The Finer Things", }),	-- The Finer Things
-			q(31561, { ["name"] = "The Finer Things", }),	-- The Finer Things
-			q(31562, { ["name"] = "The Finer Things", }),	-- The Finer Things
-			q(31563, { ["name"] = "The Finer Things", }),	-- The Finer Things
-			q(31564, { ["name"] = "The Finer Things", }),	-- The Finer Things
-			q(31565, { ["name"] = "The Finer Things", }),	-- The Finer Things
-			q(31566, { ["name"] = "The Finer Things", }),	-- The Finer Things
-			q(31567, { ["name"] = "The Finer Things", }),	-- The Finer Things
-			q(29407, { ["name"] = "The First Sign of Winter", }),	-- The First Sign of Winter
-			q(29693, { ["name"] = "The General's Edge", }),	-- The General's Edge
-			q(31017, { ["name"] = "The Humble Grummle", }),	-- The Humble Grummle
-			q(29720, { ["name"] = "The Jade Witch", }),	-- The Jade Witch
-			q(29557, { ["name"] = "The Mission Continues", }),	-- The Mission Continues
-			q(29819, { ["name"] = "The New Master", }),	-- The New Master
-			q(31533, { ["name"] = "The Perfect Feather", }),	-- The Perfect Feather
-			q(30458, { ["name"] = "The Scouts Return", }),	-- The Scouts Return
-			q(31491, { ["name"] = "The Ten Foot Pole", }),	-- The Ten Foot Pole
-			q(31518, { ["name"] = "The Vale of Eternal Blossoms", }),	-- The Vale of Eternal Blossoms
-			q(29806, { ["name"] = "The Wanderer", }),	-- The Wanderer
-			q(31305, { ["name"] = "The Way of the Grill", }),	-- The Way of the Grill
-			q(29715, { ["name"] = "The Witch in the Woods", }),	-- The Witch in the Woods
-			q(31283, { ["name"] = "Theramore Destroyed Tracking", }),	-- Theramore Destroyed Tracking
-			q(29546, { ["name"] = "Tipping the Scales", }),	-- Tipping the Scales
-			q(30343, { ["name"] = "To the Waterline!", }),	-- To the Waterline!
-			q(30007, { ["name"] = "Tracking Event: Completed Arrival Phase", }),	-- Tracking Event: Completed Arrival Phase
-			q(29805, { ["name"] = "Tracking Event: Found Mishka at Plane", }),	-- Tracking Event: Found Mishka at Plane
-			q(29602, { ["name"] = "Tracking Event: Gryphon Found", }),	-- Tracking Event: Gryphon Found
-			q(29710, { ["name"] = "Tracking Event: Looted Food Crate", }),	-- Tracking Event: Looted Food Crate
-			q(29711, { ["name"] = "Tracking Event: Looted Scroll", }),	-- Tracking Event: Looted Scroll
-			q(29707, { ["name"] = "Tracking Event: Opened Shackle 1", }),	-- Tracking Event: Opened Shackle 1
-			q(29708, { ["name"] = "Tracking Event: Opened Shackle 2", }),	-- Tracking Event: Opened Shackle 2
-			q(29709, { ["name"] = "Tracking Event: Opened Shackle 3", }),	-- Tracking Event: Opened Shackle 3
-			q(29610, { ["name"] = "Tracking Event: Player's First Arrival", }),	-- Tracking Event: Player's First Arrival
-			q(29603, { ["name"] = "Tracking Event: Provisioner Found", }),	-- Tracking Event: Provisioner Found
-			q(30415, { ["name"] = "Tracking Quest - Successful", }),	-- Tracking Quest - Successful
-			q(29895, { ["name"] = "Trail of the White Pawn", }),	-- Trail of the White Pawn
-			q(30520, { ["name"] = "Tummy Trouble", }),	-- Tummy Trouble
-			q(30295, { ["name"] = "Turn-in Quest Test Case", }),	-- Turn-in Quest Test Case
-			q(29621, { ["name"] = "UNUSED", }),	-- UNUSED
-			q(29625, { ["name"] = "UNUSED", }),	-- UNUSED
-			q(29648, { ["name"] = "UNUSED", }),	-- UNUSED
-			q(31685, { ["name"] = "Valley of the Four Winds", }),	-- Valley of the Four Winds
-			q(31723, { ["name"] = "Valley of the Four Winds", }),	-- Valley of the Four Winds
-			q(30443, { ["name"] = "Walking on Sunwalkers", }),	-- Walking on Sunwalkers
-			q(31280, { ["name"] = "Ways of Cooking", }),	-- Ways of Cooking
-			q(29714, { ["name"] = "Wet Work!", }),	-- Wet Work!
-			q(29732, { ["name"] = "What Goes Down, Must Come Up!", }),	-- What Goes Down, Must Come Up!
-			q(29858, { ["name"] = "Wisdom of the Ages", }),	-- Wisdom of the Ages
-			q(29729, { ["name"] = "Without a Trace", ["_drop"] = { "g" }, }),	-- Without a Trace
-			q(29773, { ["name"] = "Wugou, the Spirit of Earth", }),	-- Wugou, the Spirit of Earth
-			q(29886, { ["name"] = "Zen Healing", }),	-- Zen Healing
-			q(31763, { ["name"] = "[KILL GIANT SERPENT] [GET RID OF THIS?]", }),	-- [KILL GIANT SERPENT] [GET RID OF THIS?]
-			q(31764, { ["name"] = "[PUT OUT THE FIRES]", }),	-- [PUT OUT THE FIRES]
-			q(31759, { ["name"] = "[RESCUE GOLDEN LOTUS SQUAD] [GET RID OF THIS?]", }),	-- [RESCUE GOLDEN LOTUS SQUAD] [GET RID OF THIS?]
-			q(31731, { ["name"] = "[SINK SHIPS] (Not Used?)", }),	-- [SINK SHIPS] (Not Used?)
+			q(29706, { name = "Kegplosion", }),	-- Kegplosion
+			q(29584, { name = "Kill Mogu Firestarters", }),	-- Kill Mogu Firestarters
+			q(29531, { name = "Kill Stuff", }),	-- Kill Stuff
+			q(31099, { name = "Klaxx Attack", }),	-- Klaxx Attack
+			q(30180, { name = "Labor for Labor", }),	-- Labor for Labor
+			q(29841, { name = "Lay of the Land[TEMP]", }),	-- Lay of the Land[TEMP]
+			q(31101, { name = "Legends of the Brewfathers", }),	-- Legends of the Brewfathers
+			q(29813, { name = "Lethal Hangovers", }),	-- Lethal Hangovers
+			q(30316, { name = "Longshot", }),	-- Longshot
+			q(30377, { name = "Minimum Safe Distance", }),	-- Minimum Safe Distance
+			q(31655, { name = "Mishi Tracking 1", }),	-- Mishi Tracking 1
+			q(31172, { name = "Monk Training", }),	-- Monk Training
+			q(30009, { name = "Muster of Fort Grookin", }),	-- Muster of Fort Grookin
+			q(29696, { name = "My Stars!", }),	-- My Stars!
+			q(29814, { name = "Need a Chaser", }),	-- Need a Chaser
+			q(29897, { name = "No Such Thing As A Free Lunch", }),	-- No Such Thing As A Free Lunch
+			q(30198, { name = "NOT USED", }),	-- NOT USED
+			q(30199, { name = "NOT USED", }),	-- NOT USED
+			q(30201, { name = "NOT USED", }),	-- NOT USED
+			q(30202, { name = "NOT USED", }),	-- NOT USED
+			q(30203, { name = "NOT USED", }),	-- NOT USED
+			q(30262, { name = "NOT USED", }),	-- NOT USED
+			q(30303, { name = "NOT USED", }),	-- NOT USED
+			q(30483, { name = "NOT USED", }),	-- NOT USED
+			q(30315, { name = "Normal Quest Test Case", }),	-- Normal Quest Test Case
+			q(31554, { name = "On The Mend", }),	-- On The Mend
+			q(29869, { name = "One Hand Clapping", }),	-- One Hand Clapping
+			q(30990, { name = "Open the Golden Doors", }),	-- Open the Golden Doors
+			q(31028, { name = "Paragon 5", }),	-- Paragon 5
+			q(30345, { name = "Poisoned!", }),	-- Poisoned!
+			q(30941, { name = "Preparing Zouchin Village", }),	-- Preparing Zouchin Village
+			q(30710, { name = "Provoking the Trolls", }),	-- Provoking the Trolls
+			q(30974, { name = "Raising Spirits", _drop = { "g" }, }),	-- Raising Spirits
+			q(31273, { name = "Relics of the Swarm", }),	-- Relics of the Swarm
+			q(30278, { name = "REUSE FOR PROGRESSION", }),	-- REUSE FOR PROGRESSION
+			q(30279, { name = "REUSE FOR PROGRESSION", }),	-- REUSE FOR PROGRESSION
+			q(30247, { name = "Roll Club: Vale of Eternal Blossoms", }),	-- Roll Club: Vale of Eternal Blossoms
+			q(30020, { name = "Running Out of Options", }),	-- Running Out of Options
+			q(29837, { name = "Sacred Scroll", }),	-- Sacred Scroll
+			q(29812, { name = "Save the Cuddlies", }),	-- Save the Cuddlies
+			q(29550, { name = "Saving Snowpuff", }),	-- Saving Snowpuff
+			q(30961, { name = "Savior of the Inkgill", }),	-- Savior of the Inkgill
+			q(29842, { name = "Seeking Answers", }),	-- Seeking Answers
+			q(30677, { name = "Shuttle Service", }),	-- Shuttle Service
+			q(30122, { name = "Silver Filigree Flask", _drop = { "g" }, }),	-- Silver Filigree Flask
+			q(29718, { name = "Sixteen Fluid Ounces of Prevention", }),	-- Sixteen Fluid Ounces of Prevention
+			q(29744, { name = "Some \"Pupil of Nature\"", }),	-- Some "Pupil of Nature"
+			q(30759, { name = "Sotelo's Quest", }),	-- Sotelo's Quest
+			q(29554, { name = "Sunken Junk", }),	-- Sunken Junk
+			q(30250, { name = "Survival Ring: Thunder", }),	-- Survival Ring: Thunder
+			q(29713, { name = "Standard Protocol", }),	-- Standard Protocol
+			q(29896, { name = "Steaking a Claim", }),	-- Steaking a Claim
+			q(31025, { name = "Sweet Tooth", }),	-- Sweet Tooth
+			q(29541, { name = "Take Care of It", }),	-- Take Care of It
+			q(30362, { name = "Tanks for Nothing!", }),	-- Tanks for Nothing!
+			q(30378, { name = "The Blastmaster", }),	-- The Blastmaster
+			q(29719, { name = "The Double Hozu Dare", }),	-- The Double Hozu Dare
+			q(29923, { name = "The Dream Brew", }),	-- The Dream Brew
+			q(30253, { name = "The Family Farm", }),	-- The Family Farm
+			q(31545, { name = "The Finer Things", }),	-- The Finer Things
+			q(31557, { name = "The Finer Things", }),	-- The Finer Things
+			q(31558, { name = "The Finer Things", }),	-- The Finer Things
+			q(31559, { name = "The Finer Things", }),	-- The Finer Things
+			q(31560, { name = "The Finer Things", }),	-- The Finer Things
+			q(31561, { name = "The Finer Things", }),	-- The Finer Things
+			q(31562, { name = "The Finer Things", }),	-- The Finer Things
+			q(31563, { name = "The Finer Things", }),	-- The Finer Things
+			q(31564, { name = "The Finer Things", }),	-- The Finer Things
+			q(31565, { name = "The Finer Things", }),	-- The Finer Things
+			q(31566, { name = "The Finer Things", }),	-- The Finer Things
+			q(31567, { name = "The Finer Things", }),	-- The Finer Things
+			q(29407, { name = "The First Sign of Winter", }),	-- The First Sign of Winter
+			q(29693, { name = "The General's Edge", }),	-- The General's Edge
+			q(31017, { name = "The Humble Grummle", }),	-- The Humble Grummle
+			q(29720, { name = "The Jade Witch", }),	-- The Jade Witch
+			q(29557, { name = "The Mission Continues", }),	-- The Mission Continues
+			q(29819, { name = "The New Master", }),	-- The New Master
+			q(31533, { name = "The Perfect Feather", }),	-- The Perfect Feather
+			q(30458, { name = "The Scouts Return", }),	-- The Scouts Return
+			q(31491, { name = "The Ten Foot Pole", }),	-- The Ten Foot Pole
+			q(31518, { name = "The Vale of Eternal Blossoms", }),	-- The Vale of Eternal Blossoms
+			q(29806, { name = "The Wanderer", }),	-- The Wanderer
+			q(31305, { name = "The Way of the Grill", }),	-- The Way of the Grill
+			q(29715, { name = "The Witch in the Woods", }),	-- The Witch in the Woods
+			q(31283, { name = "Theramore Destroyed Tracking", }),	-- Theramore Destroyed Tracking
+			q(29546, { name = "Tipping the Scales", }),	-- Tipping the Scales
+			q(30343, { name = "To the Waterline!", }),	-- To the Waterline!
+			q(30007, { name = "Tracking Event: Completed Arrival Phase", }),	-- Tracking Event: Completed Arrival Phase
+			q(29805, { name = "Tracking Event: Found Mishka at Plane", }),	-- Tracking Event: Found Mishka at Plane
+			q(29602, { name = "Tracking Event: Gryphon Found", }),	-- Tracking Event: Gryphon Found
+			q(29710, { name = "Tracking Event: Looted Food Crate", }),	-- Tracking Event: Looted Food Crate
+			q(29711, { name = "Tracking Event: Looted Scroll", }),	-- Tracking Event: Looted Scroll
+			q(29707, { name = "Tracking Event: Opened Shackle 1", }),	-- Tracking Event: Opened Shackle 1
+			q(29708, { name = "Tracking Event: Opened Shackle 2", }),	-- Tracking Event: Opened Shackle 2
+			q(29709, { name = "Tracking Event: Opened Shackle 3", }),	-- Tracking Event: Opened Shackle 3
+			q(29610, { name = "Tracking Event: Player's First Arrival", }),	-- Tracking Event: Player's First Arrival
+			q(29603, { name = "Tracking Event: Provisioner Found", }),	-- Tracking Event: Provisioner Found
+			q(30415, { name = "Tracking Quest - Successful", }),	-- Tracking Quest - Successful
+			q(29895, { name = "Trail of the White Pawn", }),	-- Trail of the White Pawn
+			q(30520, { name = "Tummy Trouble", }),	-- Tummy Trouble
+			q(30295, { name = "Turn-in Quest Test Case", }),	-- Turn-in Quest Test Case
+			q(29621, { name = "UNUSED", }),	-- UNUSED
+			q(29625, { name = "UNUSED", }),	-- UNUSED
+			q(29648, { name = "UNUSED", }),	-- UNUSED
+			q(31685, { name = "Valley of the Four Winds", }),	-- Valley of the Four Winds
+			q(31723, { name = "Valley of the Four Winds", }),	-- Valley of the Four Winds
+			q(30443, { name = "Walking on Sunwalkers", }),	-- Walking on Sunwalkers
+			q(31280, { name = "Ways of Cooking", }),	-- Ways of Cooking
+			q(29714, { name = "Wet Work!", }),	-- Wet Work!
+			q(29732, { name = "What Goes Down, Must Come Up!", }),	-- What Goes Down, Must Come Up!
+			q(29858, { name = "Wisdom of the Ages", }),	-- Wisdom of the Ages
+			q(29729, { name = "Without a Trace", _drop = { "g" }, }),	-- Without a Trace
+			q(29773, { name = "Wugou, the Spirit of Earth", }),	-- Wugou, the Spirit of Earth
+			q(29886, { name = "Zen Healing", }),	-- Zen Healing
+			q(31763, { name = "[KILL GIANT SERPENT] [GET RID OF THIS?]", }),	-- [KILL GIANT SERPENT] [GET RID OF THIS?]
+			q(31764, { name = "[PUT OUT THE FIRES]", }),	-- [PUT OUT THE FIRES]
+			q(31759, { name = "[RESCUE GOLDEN LOTUS SQUAD] [GET RID OF THIS?]", }),	-- [RESCUE GOLDEN LOTUS SQUAD] [GET RID OF THIS?]
+			q(31731, { name = "[SINK SHIPS] (Not Used?)", }),	-- [SINK SHIPS] (Not Used?)
 		})),
 
 		-- 5.0.4
-		expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
-			q(31940, { ["name"] = "Battle Pet Trainers: Pandaria", }),	-- Battle Pet Trainers: Pandaria
-			q(31988, { ["name"] = "Daily Selected Scenario", }),	-- Daily Selected Scenario
-			q(31968, { ["name"] = "Doubt Begins To Surface", }),	-- Doubt Begins To Surface
-			q(31887, { ["name"] = "Pet Battle Trainers: Kalimdor", }),	-- Pet Battle Trainers: Kalimdor
-			q(31888, { ["name"] = "Pet Battle Trainers: Kalimdor", }),	-- Pet Battle Trainers: Kalimdor
-			q(31890, { ["name"] = "Pet Battle Trainers: Kalimdor", }),	-- Pet Battle Trainers: Kalimdor
-			q(31892, { ["name"] = "Pet Battle Trainers: Kalimdor", }),	-- Pet Battle Trainers: Kalimdor
-			q(31893, { ["name"] = "Pet Battle Trainers: Kalimdor", }),	-- Pet Battle Trainers: Kalimdor
-			q(32114, { ["name"] = "So, You Wanted to Test Daily Quests?", }),	-- So, You Wanted to Test Daily Quests?
-			q(31939, { ["name"] = "Test", }),	-- Test
-			q(31979, { ["name"] = "The Returning Champion", }),	-- The Returning Champion
-			q(31816, { ["name"] = "Traitor Gluk", }),	-- Traitor Gluk
-			q(32396, { ["name"] = "Uncompletable Binding Quest [DND]", }),	-- Uncompletable Binding Quest [DND]
-			q(32013, { ["name"] = "[Coming in Patch 5.1]", }),	-- [Coming in Patch 5.1]
-			q(32014, { ["name"] = "[Coming Soon...]", }),	-- [Coming Soon...]
-			q(32015, { ["name"] = "[Coming Soon...]", }),	-- [Coming Soon...]
+		expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+			q(31940, { name = "Battle Pet Trainers: Pandaria", }),	-- Battle Pet Trainers: Pandaria
+			q(31988, { name = "Daily Selected Scenario", }),	-- Daily Selected Scenario
+			q(31968, { name = "Doubt Begins To Surface", }),	-- Doubt Begins To Surface
+			q(31887, { name = "Pet Battle Trainers: Kalimdor", }),	-- Pet Battle Trainers: Kalimdor
+			q(31888, { name = "Pet Battle Trainers: Kalimdor", }),	-- Pet Battle Trainers: Kalimdor
+			q(31890, { name = "Pet Battle Trainers: Kalimdor", }),	-- Pet Battle Trainers: Kalimdor
+			q(31892, { name = "Pet Battle Trainers: Kalimdor", }),	-- Pet Battle Trainers: Kalimdor
+			q(31893, { name = "Pet Battle Trainers: Kalimdor", }),	-- Pet Battle Trainers: Kalimdor
+			q(32114, { name = "So, You Wanted to Test Daily Quests?", }),	-- So, You Wanted to Test Daily Quests?
+			q(31939, { name = "Test", }),	-- Test
+			q(31979, { name = "The Returning Champion", }),	-- The Returning Champion
+			q(31816, { name = "Traitor Gluk", }),	-- Traitor Gluk
+			q(32396, { name = "Uncompletable Binding Quest [DND]", }),	-- Uncompletable Binding Quest [DND]
+			q(32013, { name = "[Coming in Patch 5.1]", }),	-- [Coming in Patch 5.1]
+			q(32014, { name = "[Coming Soon...]", }),	-- [Coming Soon...]
+			q(32015, { name = "[Coming Soon...]", }),	-- [Coming Soon...]
 		})),
 
 		-- 5.1.0
-		expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ ["timeline"] = {CREATED_5_1_0} }, {
-			q(32367, { ["name"] = "A Bit of Yak", }),	-- A Bit of Yak
-			q(32375, { ["name"] = "A Dash of That", }),	-- A Dash of That
-			q(32366, { ["name"] = "A Lick of Fire", }),	-- A Lick of Fire
-			q(32195, { ["name"] = "Anger Remains", }),	-- Anger Remains
-			q(32147, { ["name"] = "Attack Daily 06", }),	-- Attack Daily 06
-			q(32360, { ["name"] = "Awaiting the Black Harvest", }),	-- Awaiting the Black Harvest
-			q(32173, { ["name"] = "Build Portal 01", }),	-- Build Portal 01
-			q(32174, { ["name"] = "Build Portal 01", }),	-- Build Portal 01
-			q(32159, { ["name"] = "Circle of Life", }),	-- Circle of Life
-			q(32129, { ["name"] = "Defense Daily 06", }),	-- Defense Daily 06
-			q(32311, { ["name"] = "Enlistment Orders", }),	-- Enlistment Orders
-			q(32312, { ["name"] = "Enlistment Orders", }),	-- Enlistment Orders
-			q(32313, { ["name"] = "Hunt Helheim", }),	-- Hunt Helheim
-			q(32155, { ["name"] = "Necessary Breaks", }),	-- Necessary Breaks
-			q(32369, { ["name"] = "Secrets of the Past", }),	-- Secrets of the Past
-			q(32314, { ["name"] = "Slaughter Selenora", }),	-- Slaughter Selenora
-			q(32359, { ["name"] = "The Eye of the Naaru", }),	-- The Eye of the Naaru
-			q(32358, { ["name"] = "The Soulcore", }),	-- The Soulcore
-			q(32415, { ["name"] = "Their Tracks", }),	-- Their Tracks
-			q(32433, { ["name"] = "Undermining the Under Miner", }),	-- Undermining the Under Miner
-			q(32458, { ["name"] = "With the Wind's Blessing...", }),	-- With the Wind's Blessing...
-			q(32459, { ["name"] = "With the Wind's Blessing...", }),	-- With the Wind's Blessing...
-			q(32425, { ["name"] = "[NYI] A Return to Lion's Landing", }),	-- [NYI] A Return to Lion's Landing
-			q(32422, { ["name"] = "[NYI] Into Violet Hold", }),	-- [NYI] Into Violet Hold
-			q(32407, { ["name"] = "[NYI] Magus Commerce Exchange", }),	-- [NYI] Magus Commerce Exchange
-			q(32424, { ["name"] = "[NYI] What Had To Be Done", }),	-- [NYI] What Had To Be Done
+		expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ timeline = {CREATED_5_1_0} }, {
+			q(32367, { name = "A Bit of Yak", }),	-- A Bit of Yak
+			q(32375, { name = "A Dash of That", }),	-- A Dash of That
+			q(32366, { name = "A Lick of Fire", }),	-- A Lick of Fire
+			q(32195, { name = "Anger Remains", }),	-- Anger Remains
+			q(32147, { name = "Attack Daily 06", }),	-- Attack Daily 06
+			q(32360, { name = "Awaiting the Black Harvest", }),	-- Awaiting the Black Harvest
+			q(32173, { name = "Build Portal 01", }),	-- Build Portal 01
+			q(32174, { name = "Build Portal 01", }),	-- Build Portal 01
+			q(32159, { name = "Circle of Life", }),	-- Circle of Life
+			q(32129, { name = "Defense Daily 06", }),	-- Defense Daily 06
+			q(32311, { name = "Enlistment Orders", }),	-- Enlistment Orders
+			q(32312, { name = "Enlistment Orders", }),	-- Enlistment Orders
+			q(32313, { name = "Hunt Helheim", }),	-- Hunt Helheim
+			q(32155, { name = "Necessary Breaks", }),	-- Necessary Breaks
+			q(32369, { name = "Secrets of the Past", }),	-- Secrets of the Past
+			q(32314, { name = "Slaughter Selenora", }),	-- Slaughter Selenora
+			q(32359, { name = "The Eye of the Naaru", }),	-- The Eye of the Naaru
+			q(32358, { name = "The Soulcore", }),	-- The Soulcore
+			q(32415, { name = "Their Tracks", }),	-- Their Tracks
+			q(32433, { name = "Undermining the Under Miner", }),	-- Undermining the Under Miner
+			q(32458, { name = "With the Wind's Blessing...", }),	-- With the Wind's Blessing...
+			q(32459, { name = "With the Wind's Blessing...", }),	-- With the Wind's Blessing...
+			q(32425, { name = "[NYI] A Return to Lion's Landing", }),	-- [NYI] A Return to Lion's Landing
+			q(32422, { name = "[NYI] Into Violet Hold", }),	-- [NYI] Into Violet Hold
+			q(32407, { name = "[NYI] Magus Commerce Exchange", }),	-- [NYI] Magus Commerce Exchange
+			q(32424, { name = "[NYI] What Had To Be Done", }),	-- [NYI] What Had To Be Done
 		})),
 
 		-- 5.2.0
-		expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ ["timeline"] = {CREATED_5_2_0} }, {
-			q(32475, { ["name"] = "A Spark of Life", }),	-- A Spark of Life
-			q(32727, { ["name"] = "Contributed to Server Percentage Daily Tracking Quest", }),	-- Contributed to Server Percentage Daily Tracking Quest
-			q(32566, { ["name"] = "DEBUG: Eligible for All Quests", }),	-- DEBUG: Eligible for All Quests
-			q(32492, { ["name"] = "Destroy Cauldrons", }),	-- Destroy Cauldrons
-			q(32267, { ["name"] = "Destroy enemy portal near camp (streaming attackers, defended, enemy can use)", }),	-- Destroy enemy portal near camp (streaming attackers, defended, enemy can use)
-			q(32273, { ["name"] = "Destroy summoning circles in enemy camp (BloodElf_PowerOrb_Red)", }),	-- Destroy summoning circles in enemy camp (BloodElf_PowerOrb_Red)
-			q(32270, { ["name"] = "Disarm mines near enemy camp (poke them with a stick =P)", }),	-- Disarm mines near enemy camp (poke them with a stick =P)
-			q(32263, { ["name"] = "Find scout near enemy camp (injured, port him back)", }),	-- Find scout near enemy camp (injured, port him back)
-			q(32281, { ["name"] = "Fleshcrafter's End", }),	-- Fleshcrafter's End
-			q(32472, { ["name"] = "Frighten Pterodactyls [PH]", }),	-- Frighten Pterodactyls [PH]
-			q(32205, { ["name"] = "Gather Scout Reports", }),	-- Gather Scout Reports
-			q(32570, { ["name"] = "Gather Scout Reports", }),	-- Gather Scout Reports
-			q(32622, { ["name"] = "Intro Flight", }),	-- Intro Flight
-			q(32651, { ["name"] = "Intro Flight", }),	-- Intro Flight
-			q(32286, { ["name"] = "Kill Mogu Blood-seekers (Roaming pairs, actively fighting scouts, and performing rituals on corpses)", }),	-- Kill Mogu Blood-seekers (Roaming pairs, actively fighting scouts, and performing rituals on corpses)
-			q(32210, { ["name"] = "Kill mogu boss for key, use object behind jumping puzzle", }),	-- Kill mogu boss for key, use object behind jumping puzzle
-			q(32203, { ["name"] = "Kill Mogu Spirits", }),	-- Kill Mogu Spirits
-			q(32229, { ["name"] = "Kill Roaming Troll War Party", }),	-- Kill Roaming Troll War Party
-			q(32202, { ["name"] = "Kill Trolls", }),	-- Kill Trolls
-			q(32280, { ["name"] = "Metalocalypse", }),	-- Metalocalypse
-			q(32504, { ["name"] = "Mission: The Secrets of Stormwind", }),	-- Mission: The Secrets of Stormwind
-			q(32211, { ["name"] = "Nalak the Storm Lord", }),	-- Nalak the Storm Lord
-			q(32758, { ["name"] = "Reader for the Dead Tongue", }),	-- Reader for the Dead Tongue
-			q(32253, { ["name"] = "REMOVE (No Longer Used)", }),	-- REMOVE (No Longer Used)
-			q(32717, { ["name"] = "REUSE ME", }),	-- REUSE ME
-			q(32467, { ["name"] = "Sacrificial Prevention [PH]", }),	-- Sacrificial Prevention [PH]
-			q(32271, { ["name"] = "Set magical mines around camp (using modern warfare lightning)", }),	-- Set magical mines around camp (using modern warfare lightning)
-			q(32482, { ["name"] = "Shwayder's Test Quest", }),	-- Shwayder's Test Quest
-			q(32272, { ["name"] = "Start and defend summoning ritual near enemy camp", }),	-- Start and defend summoning ritual near enemy camp
-			q(32231, { ["name"] = "Trailing Light in the Dark", }),	-- Trailing Light in the Dark
-			q(32569, { ["name"] = "Trailing Light in the Dark", }),	-- Trailing Light in the Dark
-			q(32290, { ["name"] = "Unused", }),	-- Unused
-			q(32490, { ["name"] = "UNUSED", }),	-- UNUSED
-			q(32508, { ["name"] = "Welcome to the Island", }),	-- Welcome to the Island
-			q(32291, { ["name"] = "[PH] The Fall of Shan Bu", }),	-- [PH] The Fall of Shan Bu
+		expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ timeline = {CREATED_5_2_0} }, {
+			q(32475, { name = "A Spark of Life", }),	-- A Spark of Life
+			q(32727, { name = "Contributed to Server Percentage Daily Tracking Quest", }),	-- Contributed to Server Percentage Daily Tracking Quest
+			q(32566, { name = "DEBUG: Eligible for All Quests", }),	-- DEBUG: Eligible for All Quests
+			q(32492, { name = "Destroy Cauldrons", }),	-- Destroy Cauldrons
+			q(32267, { name = "Destroy enemy portal near camp (streaming attackers, defended, enemy can use)", }),	-- Destroy enemy portal near camp (streaming attackers, defended, enemy can use)
+			q(32273, { name = "Destroy summoning circles in enemy camp (BloodElf_PowerOrb_Red)", }),	-- Destroy summoning circles in enemy camp (BloodElf_PowerOrb_Red)
+			q(32270, { name = "Disarm mines near enemy camp (poke them with a stick =P)", }),	-- Disarm mines near enemy camp (poke them with a stick =P)
+			q(32263, { name = "Find scout near enemy camp (injured, port him back)", }),	-- Find scout near enemy camp (injured, port him back)
+			q(32281, { name = "Fleshcrafter's End", }),	-- Fleshcrafter's End
+			q(32472, { name = "Frighten Pterodactyls [PH]", }),	-- Frighten Pterodactyls [PH]
+			q(32205, { name = "Gather Scout Reports", }),	-- Gather Scout Reports
+			q(32570, { name = "Gather Scout Reports", }),	-- Gather Scout Reports
+			q(32622, { name = "Intro Flight", }),	-- Intro Flight
+			q(32651, { name = "Intro Flight", }),	-- Intro Flight
+			q(32286, { name = "Kill Mogu Blood-seekers (Roaming pairs, actively fighting scouts, and performing rituals on corpses)", }),	-- Kill Mogu Blood-seekers (Roaming pairs, actively fighting scouts, and performing rituals on corpses)
+			q(32210, { name = "Kill mogu boss for key, use object behind jumping puzzle", }),	-- Kill mogu boss for key, use object behind jumping puzzle
+			q(32203, { name = "Kill Mogu Spirits", }),	-- Kill Mogu Spirits
+			q(32229, { name = "Kill Roaming Troll War Party", }),	-- Kill Roaming Troll War Party
+			q(32202, { name = "Kill Trolls", }),	-- Kill Trolls
+			q(32280, { name = "Metalocalypse", }),	-- Metalocalypse
+			q(32504, { name = "Mission: The Secrets of Stormwind", }),	-- Mission: The Secrets of Stormwind
+			q(32211, { name = "Nalak the Storm Lord", }),	-- Nalak the Storm Lord
+			q(32758, { name = "Reader for the Dead Tongue", }),	-- Reader for the Dead Tongue
+			q(32253, { name = "REMOVE (No Longer Used)", }),	-- REMOVE (No Longer Used)
+			q(32717, { name = "REUSE ME", }),	-- REUSE ME
+			q(32467, { name = "Sacrificial Prevention [PH]", }),	-- Sacrificial Prevention [PH]
+			q(32271, { name = "Set magical mines around camp (using modern warfare lightning)", }),	-- Set magical mines around camp (using modern warfare lightning)
+			q(32482, { name = "Shwayder's Test Quest", }),	-- Shwayder's Test Quest
+			q(32272, { name = "Start and defend summoning ritual near enemy camp", }),	-- Start and defend summoning ritual near enemy camp
+			q(32231, { name = "Trailing Light in the Dark", }),	-- Trailing Light in the Dark
+			q(32569, { name = "Trailing Light in the Dark", }),	-- Trailing Light in the Dark
+			q(32290, { name = "Unused", }),	-- Unused
+			q(32490, { name = "UNUSED", }),	-- UNUSED
+			q(32508, { name = "Welcome to the Island", }),	-- Welcome to the Island
+			q(32291, { name = "[PH] The Fall of Shan Bu", }),	-- [PH] The Fall of Shan Bu
 		})),
 
 		-- 5.4.0
-		expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ ["timeline"] = {CREATED_5_4_0} }, {
-			q(33360, { ["name"] = "5.4 Raid - RRP - Boss 1 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 1 Legendary Quest
-			q(33361, { ["name"] = "5.4 Raid - RRP - Boss 2 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 2 Legendary Quest
-			q(33362, { ["name"] = "5.4 Raid - RRP - Boss 3 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 3 Legendary Quest
-			q(33363, { ["name"] = "5.4 Raid - RRP - Boss 4 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 4 Legendary Quest
-			q(33364, { ["name"] = "5.4 Raid - RRP - Boss 5 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 5 Legendary Quest
-			q(33365, { ["name"] = "5.4 Raid - RRP - Boss 6 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 6 Legendary Quest
-			q(33366, { ["name"] = "5.4 Raid - RRP - Boss 7 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 7 Legendary Quest
-			q(33367, { ["name"] = "5.4 Raid - RRP - Boss 8 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 8 Legendary Quest
-			q(33368, { ["name"] = "5.4 Raid - RRP - Boss 9 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 9 Legendary Quest
-			q(33369, { ["name"] = "5.4 Raid - RRP - Boss 10 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 10 Legendary Quest
-			q(33370, { ["name"] = "5.4 Raid - RRP - Boss 11 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 11 Legendary Quest
-			q(33371, { ["name"] = "5.4 Raid - RRP - Boss 12 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 12 Legendary Quest
-			q(33372, { ["name"] = "5.4 Raid - RRP - Boss 13 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 13 Legendary Quest
-			q(33373, { ["name"] = "5.4 Raid - RRP - Boss 14 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 14 Legendary Quest
-			q(33347, { ["name"] = "5.4 Test - RRP - Child Level Tracking Quest", }),	-- 5.4 Test - RRP - Child Level Tracking Quest
-			q(33346, { ["name"] = "5.4 Test - RRP - Top Level Tracking Quest", }),	-- 5.4 Test - RRP - Top Level Tracking Quest
-			q(32995, { ["name"] = "A Blood-Caked Scroll", }),	-- A Blood-Caked Scroll
-			q(32973, { ["name"] = "Avatar of Flame Kill Tracking Quest", }),	-- Avatar of Flame Kill Tracking Quest
-			q(32972, { ["name"] = "Avatar of Flame Transform Tracking Quest", }),	-- Avatar of Flame Transform Tracking Quest
-			q(32996, { ["name"] = "Battle-Hardened Relics", }),	-- Battle-Hardened Relics
-			q(33122, { ["name"] = "DEPRECATED Great Job, You Won", }),	-- DEPRECATED Great Job, You Won
-			q(33121, { ["name"] = "DEPRECATED The Celestial Tournament", }),	-- DEPRECATED The Celestial Tournament
-			q(33124, { ["name"] = "Fishing with Fin - Tracking Quest", }),	-- Fishing with Fin - Tracking Quest
-			q(33003, { ["name"] = "Glyph of the Armsmaster", }),	-- Glyph of the Armsmaster
-			q(33019, { ["name"] = "NC S1 Q2", }),	-- NC S1 Q2
-			q(33023, { ["name"] = "NC S1 Q6", }),	-- NC S1 Q6
-			q(33025, { ["name"] = "NC S2 Q2", }),	-- NC S2 Q2
-			q(33007, { ["name"] = "Proving Grounds", }),	-- Proving Grounds
-			q(32910, { ["name"] = "reuse me", }),	-- reuse me
-			q(33000, { ["name"] = "Saurfang, Warrior", }),	-- Saurfang, Warrior
-			q(33002, { ["name"] = "Scribe Wei Wu", }),	-- Scribe Wei Wu
-			q(33257, { ["name"] = "Sprite Fright - Tracking Quest", }),	-- Sprite Fright - Tracking Quest
-			q(32952, { ["name"] = "TEST", }),	-- TEST
-			q(33001, { ["name"] = "The Armsmasters", }),	-- The Armsmasters
-			q(33123, { ["name"] = "The Celestial Tournament", }),	-- The Celestial Tournament
-			q(33110, { ["name"] = "The Usurper", }),	-- The Usurper
-			q(32964, { ["name"] = "Tracking Quest: Ghost Pirate Battle - Completed", }),	-- Tracking Quest: Ghost Pirate Battle - Completed
-			q(32965, { ["name"] = "Tracking Quest: Ghost Pirate Battle - Looted Treasure", }),	-- Tracking Quest: Ghost Pirate Battle - Looted Treasure
-			q(32949, { ["name"] = "Tracking Quest: Guru Kukuru", }),	-- Tracking Quest: Guru Kukuru
-			q(32958, { ["name"] = "[REUSEME]", }),	-- [REUSEME]
+		expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ timeline = {CREATED_5_4_0} }, {
+			q(33360, { name = "5.4 Raid - RRP - Boss 1 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 1 Legendary Quest
+			q(33361, { name = "5.4 Raid - RRP - Boss 2 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 2 Legendary Quest
+			q(33362, { name = "5.4 Raid - RRP - Boss 3 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 3 Legendary Quest
+			q(33363, { name = "5.4 Raid - RRP - Boss 4 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 4 Legendary Quest
+			q(33364, { name = "5.4 Raid - RRP - Boss 5 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 5 Legendary Quest
+			q(33365, { name = "5.4 Raid - RRP - Boss 6 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 6 Legendary Quest
+			q(33366, { name = "5.4 Raid - RRP - Boss 7 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 7 Legendary Quest
+			q(33367, { name = "5.4 Raid - RRP - Boss 8 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 8 Legendary Quest
+			q(33368, { name = "5.4 Raid - RRP - Boss 9 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 9 Legendary Quest
+			q(33369, { name = "5.4 Raid - RRP - Boss 10 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 10 Legendary Quest
+			q(33370, { name = "5.4 Raid - RRP - Boss 11 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 11 Legendary Quest
+			q(33371, { name = "5.4 Raid - RRP - Boss 12 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 12 Legendary Quest
+			q(33372, { name = "5.4 Raid - RRP - Boss 13 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 13 Legendary Quest
+			q(33373, { name = "5.4 Raid - RRP - Boss 14 Legendary Quest", }),	-- 5.4 Raid - RRP - Boss 14 Legendary Quest
+			q(33347, { name = "5.4 Test - RRP - Child Level Tracking Quest", }),	-- 5.4 Test - RRP - Child Level Tracking Quest
+			q(33346, { name = "5.4 Test - RRP - Top Level Tracking Quest", }),	-- 5.4 Test - RRP - Top Level Tracking Quest
+			q(32995, { name = "A Blood-Caked Scroll", }),	-- A Blood-Caked Scroll
+			q(32973, { name = "Avatar of Flame Kill Tracking Quest", }),	-- Avatar of Flame Kill Tracking Quest
+			q(32972, { name = "Avatar of Flame Transform Tracking Quest", }),	-- Avatar of Flame Transform Tracking Quest
+			q(32996, { name = "Battle-Hardened Relics", }),	-- Battle-Hardened Relics
+			q(33122, { name = "DEPRECATED Great Job, You Won", }),	-- DEPRECATED Great Job, You Won
+			q(33121, { name = "DEPRECATED The Celestial Tournament", }),	-- DEPRECATED The Celestial Tournament
+			q(33124, { name = "Fishing with Fin - Tracking Quest", }),	-- Fishing with Fin - Tracking Quest
+			q(33003, { name = "Glyph of the Armsmaster", }),	-- Glyph of the Armsmaster
+			q(33019, { name = "NC S1 Q2", }),	-- NC S1 Q2
+			q(33023, { name = "NC S1 Q6", }),	-- NC S1 Q6
+			q(33025, { name = "NC S2 Q2", }),	-- NC S2 Q2
+			q(33007, { name = "Proving Grounds", }),	-- Proving Grounds
+			q(32910, { name = "reuse me", }),	-- reuse me
+			q(33000, { name = "Saurfang, Warrior", }),	-- Saurfang, Warrior
+			q(33002, { name = "Scribe Wei Wu", }),	-- Scribe Wei Wu
+			q(33257, { name = "Sprite Fright - Tracking Quest", }),	-- Sprite Fright - Tracking Quest
+			q(32952, { name = "TEST", }),	-- TEST
+			q(33001, { name = "The Armsmasters", }),	-- The Armsmasters
+			q(33123, { name = "The Celestial Tournament", }),	-- The Celestial Tournament
+			q(33110, { name = "The Usurper", }),	-- The Usurper
+			q(32964, { name = "Tracking Quest: Ghost Pirate Battle - Completed", }),	-- Tracking Quest: Ghost Pirate Battle - Completed
+			q(32965, { name = "Tracking Quest: Ghost Pirate Battle - Looted Treasure", }),	-- Tracking Quest: Ghost Pirate Battle - Looted Treasure
+			q(32949, { name = "Tracking Quest: Guru Kukuru", }),	-- Tracking Quest: Guru Kukuru
+			q(32958, { name = "[REUSEME]", }),	-- [REUSEME]
 		})),
 
 		-- 5.4.2
-		expansion(EXPANSION.MOP, patch(4,2), bubbleDownSelf({ ["timeline"] = { CREATED_5_4_2 } }, {
-			q(33634, { ["name"] = "6.0 Invasion Opt-Out", }),	-- Maldo's Test Quest
+		expansion(EXPANSION.MOP, patch(4,2), bubbleDownSelf({ timeline = { CREATED_5_4_2 } }, {
+			q(33634, { name = "6.0 Invasion Opt-Out", }),	-- Maldo's Test Quest
 		})),
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.0.1
-		expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
-			q(33772, { ["name"] = "6.0 Invasion Opt-Out", }),	-- 6.0 Invasion Opt-Out
-			q(34311, { ["name"] = "6.0 Invasion: Opted Out", }),	-- 6.0 Invasion: Opted Out
-			q(36358, { ["name"] = "A Father and His Son", }),	-- A Father and His Son
-			q(35866, { ["name"] = "A Few Artifact Fragments", }),	-- A Few Artifact Fragments
-			q(37188, { ["name"] = "A Flash of Bronze...", }),	-- A Flash of Bronze...
-			q(37194, { ["name"] = "A Flash of Bronze...", }),	-- A Flash of Bronze...
-			q(34944, { ["name"] = "A Flock of Fledglings", }),	-- A Flock of Fledglings
-			q(34354, { ["name"] = "A Good Death", }),	-- A Good Death
-			q(33266, { ["name"] = "A Light in the Dark - Tracking Quest", }),	-- A Light in the Dark - Tracking Quest
-			q(33577, { ["name"] = "A New Threat", }),	-- A New Threat
-			q(36413, { ["name"] = "A Power Restored", }),	-- A Power Restored
-			q(36263, { ["name"] = "A Strengthened Bond", }),	-- A Strengthened Bond
-			q(34299, { ["name"] = "A Threat We Can't Ignore", }),	-- A Threat We Can't Ignore
-			q(37259, { ["name"] = "A Worthy Challenge: Teron'gor", }),	-- A Worthy Challenge: Teron'gor
-			q(37271, { ["name"] = "A Worthy Challenge: Teron'gor", }),	-- A Worthy Challenge: Teron'gor
-			q(35346, { ["name"] = "Abatha, the Alchemist", }),	-- Abatha, the Alchemist
-			q(35791, { ["name"] = "Absorbable Vellum", }),	-- Absorbable Vellum
-			q(35785, { ["name"] = "Abstract Painting", }),	-- Abstract Painting
-			q(33910, { ["name"] = "Aklana Rescue", }),	-- Aklana Rescue
-			q(35772, { ["name"] = "Alchemist Field Guide", }),	-- Alchemist Field Guide
-			q(35770, { ["name"] = "Alchemist Notebook", }),	-- Alchemist Notebook
-			q(35292, { ["name"] = "Ang'kra, the Alchemist", }),	-- Ang'kra, the Alchemist
-			q(33545, { ["name"] = "Arkonite Crystals", }),	-- Arkonite Crystals
-			q(35742, { ["name"] = "Attuned Alchemist Stone", }),	-- Attuned Alchemist Stone
-			q(34158, { ["name"] = "Auchindoun Must Not Fall", }),	-- Auchindoun Must Not Fall
-			q(36872, { ["name"] = "Austin's Folly", }),	-- Austin's Folly
-			q(36095, { ["name"] = "Azuka Bladefury", }),	-- Azuka Bladefury
-			q(33904, { ["name"] = "Balance of Power", }),	-- Balance of Power
-			q(35726, { ["name"] = "Balanced Short Sword", }),	-- Balanced Short Sword
-			q(35852, { ["name"] = "Basic Antivenom Kit", }),	-- Basic Antivenom Kit
-			q(35848, { ["name"] = "Basic Medic Kit", }),	-- Basic Medic Kit
-			q(35851, { ["name"] = "Battle Medic Vestments", }),	-- Battle Medic Vestments
-			q(33351, { ["name"] = "Become Chief", }),	-- Become Chief
-			q(35779, { ["name"] = "Bent Card", }),	-- Bent Card
-			q(35862, { ["name"] = "Blackrock Cluster Bomb", }),	-- Blackrock Cluster Bomb
-			q(33149, { ["name"] = "Blackrock Down", }),	-- Blackrock Down
-			q(35860, { ["name"] = "Blackrock Fragment Grenade", }),	-- Blackrock Fragment Grenade
-			q(35724, { ["name"] = "Blood-Washed Greaves", }),	-- Blood-Washed Greaves
-			q(33425, { ["name"] = "Blue/Yellow Sprint 15 INTERNAL REPEATABLE", }),	-- Blue/Yellow Sprint 15 INTERNAL REPEATABLE
-			q(34183, { ["name"] = "Bombardment Triggered", }),	-- Bombardment Triggered
-			q(34343, { ["name"] = "Bonus Objective: Kill Frostiron Magnaron", }),	-- Bonus Objective: Kill Frostiron Magnaron
-			q(34499, { ["name"] = "Bonus Objective: Kill Malevolent Breath", }),	-- Bonus Objective: Kill Malevolent Breath
-			q(34327, { ["name"] = "Bonus Objective: Kill Ogron", }),	-- Bonus Objective: Kill Ogron
-			q(34500, { ["name"] = "Bonus Objective: Kill Ogron", }),	-- Bonus Objective: Kill Ogron
-			q(34502, { ["name"] = "Bonus Objective: Kill Pale", }),	-- Bonus Objective: Kill Pale
-			q(34457, { ["name"] = "Bonus Objective: Ogron-Be-Gone", }),	-- Bonus Objective: Ogron-Be-Gone
-			q(35107, { ["name"] = "Book of Alchemical Secrets", }),	-- Book of Alchemical Secrets
-			q(35855, { ["name"] = "Book of Draenic Cures", }),	-- Book of Draenic Cures
-			q(35854, { ["name"] = "Botanic Cure Guide", }),	-- Botanic Cure Guide
-			q(35786, { ["name"] = "Bronze Victory", }),	-- Bronze Victory
-			q(37305, { ["name"] = "Bronze Victory", }),	-- Bronze Victory
-			q(35571, { ["name"] = "Brutality in the Basin, Violence in the Valley", }),	-- Brutality in the Basin, Violence in the Valley
-			q(33150, { ["name"] = "Brute Beatdown", }),	-- Brute Beatdown
-			q(35829, { ["name"] = "Buffed Crystal", }),	-- Buffed Crystal
-			q(34006, { ["name"] = "Build Us A Backdoor", }),	-- Build Us A Backdoor
-			q(35578, { ["name"] = "Building an Ancient of War", }),	-- Building an Ancient of War
-			q(33881, { ["name"] = "Can't Live With 'Em, Can't Learn Without 'Em", }),	-- Can't Live With 'Em, Can't Learn Without 'Em
-			q(33456, { ["name"] = "Catapult Vision", }),	-- Catapult Vision
-			q(33457, { ["name"] = "Catapult Vision", }),	-- Catapult Vision
-			q(33458, { ["name"] = "Catapult Vision", }),	-- Catapult Vision
-			q(35252, { ["name"] = "Chest Reward Tracking Quest", }),	-- Chest Reward Tracking Quest
-			q(37114, { ["name"] = "Choluna", }),	-- Choluna
-			q(33880, { ["name"] = "Collect Crystals [PH]", }),	-- Collect Crystals [PH]
-			q(33058, { ["name"] = "Collect Karabor Axes", }),	-- Collect Karabor Axes
-			q(33268, { ["name"] = "Collect Moonstones", }),	-- Collect Moonstones
-			q(35849, { ["name"] = "Combat Medic Kit", }),	-- Combat Medic Kit
-			q(34224, { ["name"] = "Creature Treasure: Bloodcleave", }),	-- Creature Treasure: Bloodcleave
-			q(34412, { ["name"] = "Creature Treasure: Gnarljaw", }),	-- Creature Treasure: Gnarljaw
-			q(34222, { ["name"] = "Creature Treasure: Iron Horde Blacksmith", }),	-- Creature Treasure: Iron Horde Blacksmith
-			q(34225, { ["name"] = "Creature Treasure: Iron Horde Slacker", }),	-- Creature Treasure: Iron Horde Slacker
-			q(34223, { ["name"] = "Creature Treasure: Iron Horde Stable Master", }),	-- Creature Treasure: Iron Horde Stable Master
-			q(34411, { ["name"] = "Creature Treasure: King Slime", }),	-- Creature Treasure: King Slime
-			q(35833, { ["name"] = "Crude Gryphon Figurine", }),	-- Crude Gryphon Figurine
-			q(35221, { ["name"] = "Da Keeper", }),	-- Da Keeper
-			q(34970, { ["name"] = "Darkmoon Iron Deck", }),	-- Darkmoon Iron Deck
-			q(34973, { ["name"] = "Darkmoon Moon Deck", }),	-- Darkmoon Moon Deck
-			q(34974, { ["name"] = "Darkmoon Visions Deck", }),	-- Darkmoon Visions Deck
-			q(34975, { ["name"] = "Darkmoon War Deck", }),	-- Darkmoon War Deck
-			q(34359, { ["name"] = "Darktide Defender TEST", }),	-- Darktide Defender TEST
-			q(33800, { ["name"] = "Darren's Bombing Run of Awesomeness", }),	-- Darren's Bombing Run of Awesomeness
-			q(33381, { ["name"] = "Death of a Tyrant", }),	-- Death of a Tyrant
-			q(35728, { ["name"] = "Decent Barrier Shield", }),	-- Decent Barrier Shield
-			q(34688, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(36873, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(33547, { ["name"] = "Desperate Times", }),	-- Desperate Times
-			q(33913, { ["name"] = "Desperate Times", }),	-- Desperate Times
-			q(33877, { ["name"] = "Destroy Diggers [PH]", }),	-- Destroy Diggers [PH]
-			q(35756, { ["name"] = "Disturbing Ritual Mask", }),	-- Disturbing Ritual Mask
-			q(34966, { ["name"] = "Doug Test - Daily Repeatable", }),	-- Doug Test - Daily Repeatable
-			q(35783, { ["name"] = "Draenic Survivalist Cloak", }),	-- Draenic Survivalist Cloak
-			q(34722, { ["name"] = "Durotan Been Askin' For Ya", }),	-- Durotan Been Askin' For Ya
-			q(33428, { ["name"] = "Elwynn Forest Racing", }),	-- Elwynn Forest Racing
-			q(33422, { ["name"] = "Elwynn Long Distance Practice", }),	-- Elwynn Long Distance Practice
-			q(33429, { ["name"] = "Elwynn Long Distance Trial: 25", }),	-- Elwynn Long Distance Trial: 25
-			q(33409, { ["name"] = "Elwynn Run", }),	-- Elwynn Run
-			q(33432, { ["name"] = "Elwynn South Distance Practice", }),	-- Elwynn South Distance Practice
-			q(33431, { ["name"] = "Elwynn South Distance Trial: 30", }),	-- Elwynn South Distance Trial: 30
-			q(35769, { ["name"] = "Empowered Scroll", }),	-- Empowered Scroll
-			q(32797, { ["name"] = "END OF PROTOTYPE! [Return to Durotan at Ogre Citadel]", }),	-- END OF PROTOTYPE! [Return to Durotan at Ogre Citadel]
-			q(34063, { ["name"] = "Enemies Above", }),	-- Enemies Above
-			q(35767, { ["name"] = "Experimental Healing Potion", }),	-- Experimental Healing Potion
-			q(33085, { ["name"] = "Fallen From the Stars", }),	-- Fallen From the Stars
-			q(33522, { ["name"] = "Felblood", }),	-- Felblood
-			q(33154, { ["name"] = "Fight for Freedom", }),	-- Fight for Freedom
-			q(33323, { ["name"] = "Finale - Tracking Quest", }),	-- Finale - Tracking Quest
-			q(33534, { ["name"] = "Find D'kaan", }),	-- Find D'kaan
-			q(35222, { ["name"] = "Firing the Mayor", }),	-- Firing the Mayor
-			q(35228, { ["name"] = "Firing the Mayor", }),	-- Firing the Mayor
-			q(33755, { ["name"] = "First Test Race: 2 Laps", ["_drop"] = { "g" }, }),	-- First Test Race: 2 Laps
-			q(34846, { ["name"] = "Fish Fight", ["_drop"] = { "g" }, }),	-- Fish Fight
-			q(33635, { ["name"] = "FLAG - Seen Gazebo Explosion", }),	-- FLAG - Seen Gazebo Explosion
-			q(33644, { ["name"] = "FLAG - Seen Wall Explosion", }),	-- FLAG - Seen Wall Explosion
-			q(35827, { ["name"] = "Focused Crystal", }),	-- Focused Crystal
-			q(34474, { ["name"] = "Follow Spirit", }),	-- Follow Spirit
-			q(35796, { ["name"] = "Frenzy War Drum", }),	-- Frenzy War Drum
-			q(35740, { ["name"] = "Frightening Voodoo Doll", }),	-- Frightening Voodoo Doll
-			q(33464, { ["name"] = "From Over the Walls", }),	-- From Over the Walls
-			q(34141, { ["name"] = "Frostboar Frenzy", }),	-- Frostboar Frenzy
-			q(34714, { ["name"] = "Frostfire Ridge: (RRP) - Treasure - Pale Leather Cache", }),	-- Frostfire Ridge: (RRP) - Treasure - Pale Leather Cache
-			q(35729, { ["name"] = "Frosty Bulwark", }),	-- Frosty Bulwark
-			q(34475, { ["name"] = "Garrison Invasion!", }),	-- Garrison Invasion!
-			q(37308, { ["name"] = "Garrison Invasion - Reward Tracker - Bronze", }),	-- Garrison Invasion - Reward Tracker - Bronze
-			q(37310, { ["name"] = "Garrison Invasion - Reward Tracker - Gold", }),	-- Garrison Invasion - Reward Tracker - Gold
-			q(37309, { ["name"] = "Garrison Invasion - Reward Tracker - Silver", }),	-- Garrison Invasion - Reward Tracker - Silver
-			q(36525, { ["name"] = "Garrison Max-level Choice Reward Summary: Group", }),	-- Garrison Max-level Choice Reward Summary: Group
-			q(36542, { ["name"] = "Garrison Max-level Choice Reward Summary: Group", }),	-- Garrison Max-level Choice Reward Summary: Group
-			q(36526, { ["name"] = "Garrison Max-level Choice Reward Summary: PvP", }),	-- Garrison Max-level Choice Reward Summary: PvP
-			q(36543, { ["name"] = "Garrison Max-level Choice Reward Summary: PvP", }),	-- Garrison Max-level Choice Reward Summary: PvP
-			q(36524, { ["name"] = "Garrison Max-level Choice Reward Summary: Solo", }),	-- Garrison Max-level Choice Reward Summary: Solo
-			q(36544, { ["name"] = "Garrison Max-level Choice Reward Summary: Solo", }),	-- Garrison Max-level Choice Reward Summary: Solo
-			q(36665, { ["name"] = "Garrison Max-level Choice Tracker: ALL CHOICES DEBUG", }),	-- Garrison Max-level Choice Tracker: ALL CHOICES DEBUG
-			q(36666, { ["name"] = "Garrison Max-level Choice Tracker: ALL CHOICES DEBUG", }),	-- Garrison Max-level Choice Tracker: ALL CHOICES DEBUG
-			q(36535, { ["name"] = "Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood", }),	-- Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood
-			q(36546, { ["name"] = "Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood", }),	-- Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood
-			q(36536, { ["name"] = "Garrison Max-level Choice Tracker: (PVP) Ashran", }),	-- Garrison Max-level Choice Tracker: (PVP) Ashran
-			q(36548, { ["name"] = "Garrison Max-level Choice Tracker: (PVP) Ashran", }),	-- Garrison Max-level Choice Tracker: (PVP) Ashran
-			q(35681, { ["name"] = "Garrison Supplies", }),	-- Garrison Supplies
-			q(34669, { ["name"] = "Gather Lumber", }),	-- Gather Lumber
-			q(33400, { ["name"] = "General Problems", }),	-- General Problems
-			q(35618, { ["name"] = "Gidwin Goldbraids", }),	-- Gidwin Goldbraids
-			q(35788, { ["name"] = "Gold Victory", ["_drop"] = { "g" }, }),	-- Gold Victory
-			q(37307, { ["name"] = "Gold Victory", ["_drop"] = { "g" }, }),	-- Gold Victory
-			q(34771, { ["name"] = "Good Stuff", }),	-- Good Stuff
-			q(33968, { ["name"] = "Goren Boss Kill and Collect", }),	-- Goren Boss Kill and Collect
-			q(33875, { ["name"] = "Goren, Goren, Gone!", }),	-- Goren, Goren, Gone!
-			q(33879, { ["name"] = "Goren, Goren, Gone!", }),	-- Goren, Goren, Gone!
-			q(36834, { ["name"] = "Gorgrond Ogre Gateway - Tracking", }),	-- Gorgrond Ogre Gateway - Tracking
-			q(34267, { ["name"] = "Grommar Forces", }),	-- Grommar Forces
-			q(34004, { ["name"] = "Hansel, Report", }),	-- Hansel, Report
-			q(35805, { ["name"] = "Heavy Duty Knapsack", }),	-- Heavy Duty Knapsack
-			q(35790, { ["name"] = "Heavy Duty Utilicap", }),	-- Heavy Duty Utilicap
-			q(35105, { ["name"] = "Honor and Remember", }),	-- Honor and Remember
-			q(35592, { ["name"] = "Honorable Victor", }),	-- Honorable Victor
-			q(35794, { ["name"] = "Huntsman's Saddlebag", }),	-- Huntsman's Saddlebag
-			q(35859, { ["name"] = "Hyper Sight Scope", }),	-- Hyper Sight Scope
-			q(35825, { ["name"] = "Imbued Locket", }),	-- Imbued Locket
-			q(35802, { ["name"] = "Immaculate Lace Kerchief", }),	-- Immaculate Lace Kerchief
-			q(35789, { ["name"] = "Infantry Leather Cap", }),	-- Infantry Leather Cap
-			q(33638, { ["name"] = "Insatiable Swarms", }),	-- Insatiable Swarms
-			q(34509, { ["name"] = "Into the Jaws of the Jungle", }),	-- Into the Jaws of the Jungle
-			q(35755, { ["name"] = "Intricately Carved Battle Staff", }),	-- Intricately Carved Battle Staff
-			q(33987, { ["name"] = "Intro Tracking", }),	-- Intro Tracking
-			q(33496, { ["name"] = "Iron Horde in Karabor", }),	-- Iron Horde in Karabor
-			q(35504, { ["name"] = "Iron Joker", ["_drop"] = { "g" }, }),	-- Iron Joker
-			q(35020, { ["name"] = "Jared's Test Quest", }),	-- Jared's Test Quest
-			q(35294, { ["name"] = "Jasper Moves", }),	-- Jasper Moves
-			q(34690, { ["name"] = "Just the Beginning", }),	-- Just the Beginning
-			q(34691, { ["name"] = "Just the Beginning", }),	-- Just the Beginning
-			q(33733, { ["name"] = "Karmaan", }),	-- Karmaan
-			q(33782, { ["name"] = "Keeping the Balance", }),	-- Keeping the Balance
-			q(34602, { ["name"] = "Kill Goren", }),	-- Kill Goren
-			q(33783, { ["name"] = "Kuuros Farm", }),	-- Kuuros Farm
-			q(32917, { ["name"] = "Kyle Currency Test Quest", }),	-- Kyle Currency Test Quest
-			q(33822, { ["name"] = "Laabru's Rebellion", }),	-- Laabru's Rebellion
-			q(35754, { ["name"] = "Leering Ritual Mask", }),	-- Leering Ritual Mask
-			q(35771, { ["name"] = "Legible Scroll", }),	-- Legible Scroll
-			q(35743, { ["name"] = "Lesser Alchemist Stone", }),	-- Lesser Alchemist Stone
-			q(35803, { ["name"] = "Lesser Mage Robe", }),	-- Lesser Mage Robe
-			q(34413, { ["name"] = "Lumberstruck", }),	-- Lumberstruck
-			q(34845, { ["name"] = "Lurking in the Shadows", }),	-- Lurking in the Shadows
-			q(35800, { ["name"] = "Luxurious Bedroll", }),	-- Luxurious Bedroll
-			q(35752, { ["name"] = "Magically Banded Totem", }),	-- Magically Banded Totem
-			q(35795, { ["name"] = "Marching Drum", }),	-- Marching Drum
-			q(34454, { ["name"] = "Mind Controlled Rylaks", }),	-- Mind Controlled Rylaks
-			q(33956, { ["name"] = "Missing Frostwolves", }),	-- Missing Frostwolves
-			q(33148, { ["name"] = "Missing Hunting Party", }),	-- Missing Hunting Party
-			q(34079, { ["name"] = "Mission Successful", }),	-- Mission Successful
-			q(35775, { ["name"] = "Moldy Book", }),	-- Moldy Book
-			q(35203, { ["name"] = "More Materials", }),	-- More Materials
-			q(35774, { ["name"] = "Mostly Stable Elixir", }),	-- Mostly Stable Elixir
-			q(36188, { ["name"] = "Moving On Up", }),	-- Moving On Up
-			q(33557, { ["name"] = "Muddy Waters", }),	-- Muddy Waters
-			q(33485, { ["name"] = "Multiplayer Race", }),	-- Multiplayer Race
-			q(33561, { ["name"] = "Multiplayer Race", }),	-- Multiplayer Race
-			q(34181, { ["name"] = "Mutation Station", }),	-- Mutation Station
-			q(34304, { ["name"] = "Mutation Station", }),	-- Mutation Station
-			q(36052, { ["name"] = "Nagrand - Treasure 037 - Misplaced Artifacts", }),	-- Nagrand - Treasure 037 - Misplaced Artifacts
-			q(36072, { ["name"] = "Nagrand - Treasure 056 - Abu'Gar's Favorite Lure", }),	-- Nagrand - Treasure 056 - Abu'Gar's Favorite Lure
-			q(35711, { ["name"] = "Nagrand - Treasure 059 - Abu'gar's Tenacity", }),	-- Nagrand - Treasure 059 - Abu'gar's Tenacity
-			q(36089, { ["name"] = "Nagrand - Treasure 070 - Abu'Gar's Reel", }),	-- Nagrand - Treasure 070 - Abu'Gar's Reel
-			q(33529, { ["name"] = "Nightmare in the Tomb", }),	-- Nightmare in the Tomb
-			q(33878, { ["name"] = "No Miner Left Behind", }),	-- No Miner Left Behind
-			q(33424, { ["name"] = "Northshire Dash 12", }),	-- Northshire Dash 12
-			q(33609, { ["name"] = "Northshire Dash Practice", }),	-- Northshire Dash Practice
-			q(33492, { ["name"] = "Northshire Sprint Practice", }),	-- Northshire Sprint Practice
-			q(33449, { ["name"] = "Northwestern Medicine", }),	-- Northwestern Medicine
-			q(34677, { ["name"] = "NOT USED", }),	-- NOT USED
-			q(34025, { ["name"] = "Nuke Bastion Rise Tracking Flag", }),	-- Nuke Bastion Rise Tracking Flag
-			q(34738, { ["name"] = "Nullin' Void", }),	-- Nullin' Void
-			q(35721, { ["name"] = "Old Balance Treads", }),	-- Old Balance Treads
-			q(32784, { ["name"] = "On the Trail of Blood", }),	-- On the Trail of Blood
-			q(34684, { ["name"] = "One Step Ahead", }),	-- One Step Ahead
-			q(34637, { ["name"] = "Open the Portal", }),	-- Open the Portal
-			q(34376, { ["name"] = "Ore Not to Be", }),	-- Ore Not to Be
-			q(34055, { ["name"] = "Origin Unknown", }),	-- Origin Unknown
-			q(33943, { ["name"] = "Outrider Urukag", }),	-- Outrider Urukag
-			q(35776, { ["name"] = "Overly Clear Book", }),	-- Overly Clear Book
-			q(35758, { ["name"] = "Patched Wand", }),	-- Patched Wand
-			q(35749, { ["name"] = "Passable Old Staff", }),	-- Passable Old Staff
-			q(35217, { ["name"] = "Pearing It Up", }),	-- Pearing It Up
-			q(34905, { ["name"] = "Placeholder Quest", }),	-- Placeholder Quest
-			q(34459, { ["name"] = "Powering the Defenses", }),	-- Powering the Defenses
-			q(35858, { ["name"] = "Precision-Tuned Scope", }),	-- Precision-Tuned Scope
-			q(35804, { ["name"] = "Primal Mage Robe", }),	-- Primal Mage Robe
-			q(34670, { ["name"] = "Professional Processing", }),	-- Professional Processing
-			q(35850, { ["name"] = "Protective Medic Vest", }),	-- Protective Medic Vest
-			q(35863, { ["name"] = "Proximity Alarm Bot", }),	-- Proximity Alarm Bot
-			q(33060, { ["name"] = "Put down Poisonfiend.", }),	-- Put down Poisonfiend.
-			q(33131, { ["name"] = "Put down Poisonfiend.", }),	-- Put down Poisonfiend.
-			q(34617, { ["name"] = "QA Test Quest 3", }),	-- QA Test Quest 3
-			q(33750, { ["name"] = "Quest Reward Summary: Pipeworks", }),	-- Quest Reward Summary: Pipeworks
-			q(33749, { ["name"] = "Quest Reward Summary: Train Depot", }),	-- Quest Reward Summary: Train Depot
-			q(33350, { ["name"] = "Redridge Group Trial", }),	-- Redridge Group Trial
-			q(35824, { ["name"] = "Renewed Band", }),	-- Renewed Band
-			q(35781, { ["name"] = "Restored Infantry Cloak", }),	-- Restored Infantry Cloak
-			q(35801, { ["name"] = "Restored Lace Kerchief", }),	-- Restored Lace Kerchief
-			q(35831, { ["name"] = "Restored Statue", }),	-- Restored Statue
-			q(32914, { ["name"] = "Return to Ga'nar", }),	-- Return to Ga'nar
-			q(34080, { ["name"] = "Return To Sender", }),	-- Return To Sender
-			q(33448, { ["name"] = "REUSE", }),	-- REUSE
-			q(34083, { ["name"] = "REUSE", }),	-- REUSE
-			q(34633, { ["name"] = "REUSE", }),	-- REUSE
-			q(35722, { ["name"] = "Re-Soled Treads", }),	-- Re-Soled Treads
-			q(35624, { ["name"] = "Roona", }),	-- Roona
-			q(36135, { ["name"] = "Rosa is bad", }),	-- Rosa is bad
-			q(34200, { ["name"] = "Ruk'Gan Movement.", }),	-- Ruk'Gan Movement.
-			q(33924, { ["name"] = "Saberon Matriarch", }),	-- Saberon Matriarch
-			q(33705, { ["name"] = "Sacking the Saberon Stronghold", }),	-- Sacking the Saberon Stronghold
-			q(35741, { ["name"] = "Sad Voodoo Doll", }),	-- Sad Voodoo Doll
-			q(35753, { ["name"] = "Sanded Totem", }),	-- Sanded Totem
-			q(33521, { ["name"] = "Save Auchenai Caretakers", }),	-- Save Auchenai Caretakers
-			q(32982, { ["name"] = "Scavengers of Flame", }),	-- Scavengers of Flame
-			q(36060, { ["name"] = "Seal of Tempered Fate: Apexis Crystals", }),	-- Seal of Tempered Fate: Apexis Crystals
-			q(35720, { ["name"] = "Seamless Breastplate", }),	-- Seamless Breastplate
-			q(37268, { ["name"] = "Shadowmoon Invasion! BETA", }),	-- Shadowmoon Invasion! BETA
-			q(37269, { ["name"] = "Shadowmoon Invasion! BETA", }),	-- Shadowmoon Invasion! BETA
-			q(33157, { ["name"] = "Shadowmoon Phased Terrain Swap 1", }),	-- Shadowmoon Phased Terrain Swap 1
-			q(33158, { ["name"] = "Shadowmoon Phased Terrain Swap 2", }),	-- Shadowmoon Phased Terrain Swap 2
-			q(33159, { ["name"] = "Shadowmoon Phased Terrain Swap 3", }),	-- Shadowmoon Phased Terrain Swap 3
-			q(34360, { ["name"] = "SHWAYDER TEST", }),	-- SHWAYDER TEST
-			q(33817, { ["name"] = "Signs of a Struggle", }),	-- Signs of a Struggle
-			q(35787, { ["name"] = "Silver Victory", }),	-- Silver Victory
-			q(37306, { ["name"] = "Silver Victory", }),	-- Silver Victory
-			q(35727, { ["name"] = "Slightly-Bent Short Sword", }),	-- Slightly-Bent Short Sword
-			q(34217, { ["name"] = "Smash Blon'sky!", }),	-- Smash Blon'sky!
-			q(33416, { ["name"] = "South Sprint 12", }),	-- South Sprint 12
-			q(33398, { ["name"] = "South Sprint Practice", }),	-- South Sprint Practice
-			q(35823, { ["name"] = "Sparkling Band", }),	-- Sparkling Band
-			q(36452, { ["name"] = "Spawn Tracking & Spell Visuals: Do They Work?", }),	-- Spawn Tracking & Spell Visuals: Do They Work?
-			q(32793, { ["name"] = "Speak to Ga'nar", }),	-- Speak to Ga'nar
-			q(33395, { ["name"] = "Speak to Thrall", }),	-- Speak to Thrall
-			q(36847, { ["name"] = "Spires Ogre Gateway - Tracking", }),	-- Spires Ogre Gateway - Tracking
-			q(36463, { ["name"] = "Spires - Treasure 012 - Taylor's Coffer Key", }),	-- Spires - Treasure 012 - Taylor's Coffer Key
-			q(36415, { ["name"] = "Spires - Treasure 020 - Reagent Pouch", }),	-- Spires - Treasure 020 - Reagent Pouch
-			q(36363, { ["name"] = "Spires - Treasure 037 - Shattered Hand Spoils", }),	-- Spires - Treasure 037 - Shattered Hand Spoils
-			q(36459, { ["name"] = "Spires - Treasure 056 - Dislodged Saw Blade", }),	-- Spires - Treasure 056 - Dislodged Saw Blade
-			q(36424, { ["name"] = "Spires - Treasure 059 - Sun-Touched Cache", }),	-- Spires - Treasure 059 - Sun-Touched Cache
-			q(36479, { ["name"] = "Spires - Vignette 021 - Nightmaw", }),	-- Spires - Vignette 021 - Nightmaw
-			q(36303, { ["name"] = "Spires - Vignette Boss 019 - Eyeless", }),	-- Spires - Vignette Boss 019 - Eyeless
-			q(36304, { ["name"] = "Spires - Vignette Boss 022 - Gochar", }),	-- Spires - Vignette Boss 022 - Gochar
-			q(36312, { ["name"] = "Spires - Vignette Boss 025 - Sun Sage Valarik", }),	-- Spires - Vignette Boss 025 - Sun Sage Valarik
-			q(35780, { ["name"] = "Stable Elixir", }),	-- Stable Elixir
-			q(35856, { ["name"] = "Standard Survey Bot", }),	-- Standard Survey Bot
-			q(33349, { ["name"] = "STARTER QUEST - RED->PURPLE 15", }),	-- STARTER QUEST - RED->PURPLE 15
-			q(35792, { ["name"] = "Stitched Saddle Bag", }),	-- Stitched Saddle Bag
-			q(33921, { ["name"] = "Stolen Axes", }),	-- Stolen Axes
-			q(35773, { ["name"] = "Strangely Pleasant Painting", }),	-- Strangely Pleasant Painting
-			q(36620, { ["name"] = "Strategic Choices", }),	-- Strategic Choices
-			q(33737, { ["name"] = "Strike While the Iron Is Hot", }),	-- Strike While the Iron Is Hot
-			q(37120, { ["name"] = "Sunspring POI Tracking Quest", }),	-- Sunspring POI Tracking Quest
-			q(35853, { ["name"] = "Super Immunoglobulin Kit", }),	-- Super Immunoglobulin Kit
-			q(35296, { ["name"] = "Tainted Garden", }),	-- Tainted Garden
-			q(33656, { ["name"] = "Talbuk Roundup", }),	-- Talbuk Roundup
-			q(34366, { ["name"] = "Tanaan 01: Front of the Portal", }),	-- Tanaan 01: Front of the Portal
-			q(35621, { ["name"] = "Tarenar Sunstrike", }),	-- Tarenar Sunstrike
-			q(33588, { ["name"] = "Task: Break Corrupt Deathweb Eggs", }),	-- Task: Break Corrupt Deathweb Eggs
-			q(33126, { ["name"] = "Task: Clear Out Grimfrost Hill.", }),	-- Task: Clear Out Grimfrost Hill.
-			q(33223, { ["name"] = "Task: Collect Ogre Queasine", }),	-- Task: Collect Ogre Queasine
-			q(33224, { ["name"] = "Task: Collect Ogre Queasine [FOR TESTING]", }),	-- Task: Collect Ogre Queasine [FOR TESTING]
-			q(33155, { ["name"] = "Task: Destroy Iron Horde Banners", }),	-- Task: Destroy Iron Horde Banners
-			q(33713, { ["name"] = "TASK: Kill Ogre Slavers", }),	-- TASK: Kill Ogre Slavers
-			q(34268, { ["name"] = "Task: Kill Wildlife", }),	-- Task: Kill Wildlife
-			q(34269, { ["name"] = "Task: Kill Wolf Boss", }),	-- Task: Kill Wolf Boss
-			q(33108, { ["name"] = "Task: Poisionous bunnies", }),	-- Task: Poisionous bunnies
-			q(33129, { ["name"] = "Task: Poisionous bunnies", }),	-- Task: Poisionous bunnies
-			q(33130, { ["name"] = "Task: Poisionous bunnies", }),	-- Task: Poisionous bunnies
-			q(33659, { ["name"] = "Task: Put Down Poisoned Elekk", }),	-- Task: Put Down Poisoned Elekk
-			q(32799, { ["name"] = "Task: Retrieve Scorpar Husk Fragments", }),	-- Task: Retrieve Scorpar Husk Fragments
-			q(32800, { ["name"] = "Task: Retrieve Wooly Clefthoof Pelts", }),	-- Task: Retrieve Wooly Clefthoof Pelts
-			q(33068, { ["name"] = "Task: Retrieve Thunderlord Armbands", }),	-- Task: Retrieve Thunderlord Armbands
-			q(32801, { ["name"] = "Task: Retrieve Thunderlord Insignias", }),	-- Task: Retrieve Thunderlord Insignias
-			q(32802, { ["name"] = "Task: Retrieve Warm Frostpear Bulbs", }),	-- Task: Retrieve Warm Frostpear Bulbs
-			q(32934, { ["name"] = "Task: Scorpid Stomp", }),	-- Task: Scorpid Stomp
-			q(33012, { ["name"] = "Task: Stonefang Outpost Fires", }),	-- Task: Stonefang Outpost Fires
-			q(33330, { ["name"] = "Task: Trapped Critters", }),	-- Task: Trapped Critters
-			q(33067, { ["name"] = "Task: Warsong Riot", }),	-- Task: Warsong Riot
-			q(36659, { ["name"] = "TBD", }),	-- TBD
-			q(34532, { ["name"] = "Tearing Up Talador", }),	-- Tearing Up Talador
-			q(35250, { ["name"] = "Test Quest", }),	-- Test Quest
-			q(34589, { ["name"] = "TEST - Quest Objective Completion Effect Not Firing", }),	-- TEST - Quest Objective Completion Effect Not Firing
-			q(33686, { ["name"] = "That's No Podling", }),	-- That's No Podling
-			q(33954, { ["name"] = "The Bloodmaul Scheme", }),	-- The Bloodmaul Scheme
-			q(34588, { ["name"] = "The Bounty of Bladespire", }),	-- The Bounty of Bladespire
-			q(34424, { ["name"] = "The Chase is On", }),	-- The Chase is On
-			q(33549, { ["name"] = "The Cost of Chaos", }),	-- The Cost of Chaos
-			q(37195, { ["name"] = "The Dark Portal", }),	-- The Dark Portal
-			q(34842, { ["name"] = "The Den of Skog", }),	-- The Den of Skog
-			q(34661, { ["name"] = "The Drudgeboat", }),	-- The Drudgeboat
-			q(33536, { ["name"] = "The Element of Demise", }),	-- The Element of Demise
-			q(35604, { ["name"] = "The Epic Eleven", }),	-- The Epic Eleven
-			q(34441, { ["name"] = "The Fewer, the Merrier", }),	-- The Fewer, the Merrier
-			q(33265, { ["name"] = "The Friendly Foreling", }),	-- The Friendly Foreling
-			q(33952, { ["name"] = "The Hunting Party", }),	-- The Hunting Party
-			q(34074, { ["name"] = "The Iron March", }),	-- The Iron March
-			q(33658, { ["name"] = "The Iron Missive", }),	-- The Iron Missive
-			q(33463, { ["name"] = "The Iron Tide", }),	-- The Iron Tide
-			q(33074, { ["name"] = "The Memory of Fire", }),	-- The Memory of Fire
-			q(33844, { ["name"] = "The Pale Hunter", }),	-- The Pale Hunter
-			q(33840, { ["name"] = "The Plight of the Worgen", }),	-- The Plight of the Worgen
-			q(34377, { ["name"] = "The Portal Home", }),	-- The Portal Home
-			q(35092, { ["name"] = "The Portal's Power", }),	-- The Portal's Power
-			q(33907, { ["name"] = "The Power Shards", }),	-- The Power Shards
-			q(33908, { ["name"] = "The Power Shards", }),	-- The Power Shards
-			q(36673, { ["name"] = "The Ring of Blood: Dreshax!", }),	-- The Ring of Blood: Dreshax!
-			q(36671, { ["name"] = "The Ring of Blood: Fracktus!", }),	-- The Ring of Blood: Fracktus!
-			q(36705, { ["name"] = "The Ring of Blood: Mogor!", }),	-- The Ring of Blood: Mogor!
-			q(36670, { ["name"] = "The Ring of Blood: Skull Chewer!", }),	-- The Ring of Blood: Skull Chewer!
-			q(36672, { ["name"] = "The Ring of Blood: Venoxis!", }),	-- The Ring of Blood: Venoxis!
-			q(34064, { ["name"] = "The Search For Drogguk", }),	-- The Search For Drogguk
-			q(34121, { ["name"] = "The Shard of Shadows", }),	-- The Shard of Shadows
-			q(33781, { ["name"] = "The Survivalist's Way", }),	-- The Survivalist's Way
-			q(33766, { ["name"] = "The Thing in the Cave", }),	-- The Thing in the Cave
-			q(33767, { ["name"] = "The Thing in the Cave", }),	-- The Thing in the Cave
-			q(34213, { ["name"] = "They Have My Son", }),	-- They Have My Son
-			q(34244, { ["name"] = "They Took My Father", }),	-- They Took My Father
-			q(33327, { ["name"] = "This One Is Just Right", }),	-- This One Is Just Right
-			q(32946, { ["name"] = "This Time", }),	-- This Time
-			q(34650, { ["name"] = "Thunderlord Invasion", }),	-- Thunderlord Invasion
-			q(34735, { ["name"] = "Thunderlord Invasion!", }),	-- Thunderlord Invasion!
-			q(33015, { ["name"] = "Thunderlord War-Gronn", }),	-- Thunderlord War-Gronn
-			q(33441, { ["name"] = "Thrall Vision", }),	-- Thrall Vision
-			q(34848, { ["name"] = "To Even the Odds", }),	-- To Even the Odds
-			q(33028, { ["name"] = "To Karabor!", }),	-- To Karabor!
-			q(33253, { ["name"] = "To the Defense of Karabor", }),	-- To the Defense of Karabor
-			q(33401, { ["name"] = "Torg's Trouble", }),	-- Torg's Trouble
-			q(33352, { ["name"] = "Tracking Event: Chief killed", }),	-- Tracking Event: Chief killed
-			q(33418, { ["name"] = "Tracking Quest - Failed", }),	-- Tracking Quest - Failed
-			q(33748, { ["name"] = "Tracking Quest - Saberon Servent Snip Scene", }),	-- Tracking Quest - Saberon Servent Snip Scene
-			q(34705, { ["name"] = "Tracking Quest - Shadowmoon Intro", }),	-- Tracking Quest - Shadowmoon Intro
-			q(33693, { ["name"] = "Tracking Quest: First Time at Capping Operation", }),	-- Tracking Quest: First Time at Capping Operation
-			q(33382, { ["name"] = "Tracking Quest: Saw Maraad Storm Off", }),	-- Tracking Quest: Saw Maraad Storm Off
-			q(35703, { ["name"] = "Tracking: Mill Treasure Barrier 1", }),	-- Tracking: Mill Treasure Barrier 1
-			q(35793, { ["name"] = "Transferable Vellum", }),	-- Transferable Vellum
-			q(36331, { ["name"] = "Treasure: Above Ogre Race Track", }),	-- Treasure: Above Ogre Race Track
-			q(36325, { ["name"] = "Treasure: Above Ogre/Goren Cave", }),	-- Treasure: Above Ogre/Goren Cave
-			q(36319, { ["name"] = "Treasure: Arakkoa Hut", }),	-- Treasure: Arakkoa Hut
-			q(34262, { ["name"] = "Treasure: Aruuna Mining Cart", }),	-- Treasure: Aruuna Mining Cart
-			q(36334, { ["name"] = "Treasure: Beach Near Ogre Race Track", }),	-- Treasure: Beach Near Ogre Race Track
-			q(36328, { ["name"] = "Treasure: Behind Arakkoa Camp", }),	-- Treasure: Behind Arakkoa Camp
-			q(36332, { ["name"] = "Treasure: Beside Central Pond", }),	-- Treasure: Beside Central Pond
-			q(33498, { ["name"] = "Treasure: Bladespire Chef", }),	-- Treasure: Bladespire Chef
-			q(33447, { ["name"] = "Treasure: Bladespire Craftsman", }),	-- Treasure: Bladespire Craftsman
-			q(33989, { ["name"] = "Treasure: Blasting Charges - Cave A Cache", }),	-- Treasure: Blasting Charges - Cave A Cache
-			q(33991, { ["name"] = "Treasure: Blasting Charges - Cave B Cache", }),	-- Treasure: Blasting Charges - Cave B Cache
-			q(33996, { ["name"] = "Treasure: Blasting Charges - Cave C Cache", }),	-- Treasure: Blasting Charges - Cave C Cache
-			q(33998, { ["name"] = "Treasure: Blasting Charges - Cave D Cache", }),	-- Treasure: Blasting Charges - Cave D Cache
-			q(33975, { ["name"] = "Treasure: Blasting Charges - Rubble A", }),	-- Treasure: Blasting Charges - Rubble A
-			q(33990, { ["name"] = "Treasure: Blasting Charges - Rubble B", }),	-- Treasure: Blasting Charges - Rubble B
-			q(33995, { ["name"] = "Treasure: Blasting Charges - Rubble C", }),	-- Treasure: Blasting Charges - Rubble C
-			q(33997, { ["name"] = "Treasure: Blasting Charges - Rubble D", }),	-- Treasure: Blasting Charges - Rubble D
-			q(36320, { ["name"] = "Treasure: Front of Saberon Cave", }),	-- Treasure: Front of Saberon Cave
-			q(33925, { ["name"] = "Treasure: Frostwolf Cache 01", }),	-- Treasure: Frostwolf Cache 01
-			q(33945, { ["name"] = "Treasure: Frostwolf Cache 03", }),	-- Treasure: Frostwolf Cache 03
-			q(33949, { ["name"] = "Treasure: Frostwolf Cache 07", }),	-- Treasure: Frostwolf Cache 07
-			q(33016, { ["name"] = "Treasure: Frostwolf Supply Cache", }),	-- Treasure: Frostwolf Supply Cache
-			q(34212, { ["name"] = "Treasure: Gorgrond Treasure", }),	-- Treasure: Gorgrond Treasure
-			q(34147, { ["name"] = "Treasure: Gorgrond Treasure 01", }),	-- Treasure: Gorgrond Treasure 01
-			q(34149, { ["name"] = "Treasure: Gorgrond Treasure 02", }),	-- Treasure: Gorgrond Treasure 02
-			q(34151, { ["name"] = "Treasure: Gorgrond Treasure 03", }),	-- Treasure: Gorgrond Treasure 03
-			q(34153, { ["name"] = "Treasure: Gorgrond Treasure 04", }),	-- Treasure: Gorgrond Treasure 04
-			q(34146, { ["name"] = "Treasure: Gorgrond Treasure 05", }),	-- Treasure: Gorgrond Treasure 05
-			q(34155, { ["name"] = "Treasure: Gorgrond Treasure 06", }),	-- Treasure: Gorgrond Treasure 06
-			q(34152, { ["name"] = "Treasure: Gorgrond Treasure 07", }),	-- Treasure: Gorgrond Treasure 07
-			q(34172, { ["name"] = "Treasure: Gorgrond Treasure 08", }),	-- Treasure: Gorgrond Treasure 08
-			q(34173, { ["name"] = "Treasure: Gorgrond Treasure 09", }),	-- Treasure: Gorgrond Treasure 09
-			q(34176, { ["name"] = "Treasure: Gorgrond Treasure 11", }),	-- Treasure: Gorgrond Treasure 11
-			q(34201, { ["name"] = "Treasure: Gorgrond Treasure 13", }),	-- Treasure: Gorgrond Treasure 13
-			q(34177, { ["name"] = "Treasure: Gorgrond Treasure 14", }),	-- Treasure: Gorgrond Treasure 14
-			q(34219, { ["name"] = "Treasure: Gorgrond Treasure 15", }),	-- Treasure: Gorgrond Treasure 15
-			q(34195, { ["name"] = "Treasure: Gorgrond Treasure 16", }),	-- Treasure: Gorgrond Treasure 16
-			q(34206, { ["name"] = "Treasure: Gorgrond Treasure 17", }),	-- Treasure: Gorgrond Treasure 17
-			q(34179, { ["name"] = "Treasure: Gorgrond Treasure 18", }),	-- Treasure: Gorgrond Treasure 18
-			q(34210, { ["name"] = "Treasure: Gorgrond Treasure 19", }),	-- Treasure: Gorgrond Treasure 19
-			q(34211, { ["name"] = "Treasure: Gorgrond Treasure 20", }),	-- Treasure: Gorgrond Treasure 20
-			q(34214, { ["name"] = "Treasure: Gorgrond Treasure 21", }),	-- Treasure: Gorgrond Treasure 21
-			q(34215, { ["name"] = "Treasure: Gorgrond Treasure 22", }),	-- Treasure: Gorgrond Treasure 22
-			q(34218, { ["name"] = "Treasure: Gorgrond Treasure 23", }),	-- Treasure: Gorgrond Treasure 23
-			q(34713, { ["name"] = "Treasure: Gronnstalker's Cache", }),	-- Treasure: Gronnstalker's Cache
-			q(36318, { ["name"] = "Treasure: Hanging Alliance Platform", }),	-- Treasure: Hanging Alliance Platform
-			q(36324, { ["name"] = "Treasure: In Ogre/Goren Cave", }),	-- Treasure: In Ogre/Goren Cave
-			q(36321, { ["name"] = "Treasure: Iron Horde Boat Chest", }),	-- Treasure: Iron Horde Boat Chest
-			q(33887, { ["name"] = "Treasure: Mini-War Machine A", }),	-- Treasure: Mini-War Machine A
-			q(33888, { ["name"] = "Treasure: Mini-War Machine B", }),	-- Treasure: Mini-War Machine B
-			q(33889, { ["name"] = "Treasure: Mini-War Machine C", }),	-- Treasure: Mini-War Machine C
-			q(33890, { ["name"] = "Treasure: Mini-War Machine D", }),	-- Treasure: Mini-War Machine D
-			q(36317, { ["name"] = "Treasure: Ogre Arena Entrance Bridge", }),	-- Treasure: Ogre Arena Entrance Bridge
-			q(36330, { ["name"] = "Treasure: Ogre Arena Hidden Cache", }),	-- Treasure: Ogre Arena Hidden Cache
-			q(36322, { ["name"] = "Treasure: Ogre Tower Hidden Cache", }),	-- Treasure: Ogre Tower Hidden Cache
-			q(36336, { ["name"] = "Treasure: On Pillars in Ogre Red Tree Area", }),	-- Treasure: On Pillars in Ogre Red Tree Area
-			q(33930, { ["name"] = "Treasure: Saberon Stash", }),	-- Treasure: Saberon Stash
-			q(33571, { ["name"] = "Treasure: Shadowmoon Clan Treasure", }),	-- Treasure: Shadowmoon Clan Treasure
-			q(36878, { ["name"] = "Treasure: The Light of Karabor", }),	-- Treasure: The Light of Karabor
-			q(33499, { ["name"] = "Treasure: Time-Warped Ogre", }),	-- Treasure: Time-Warped Ogre
-			q(36335, { ["name"] = "Treasure: Treasure Stump Behind Saberon", }),	-- Treasure: Treasure Stump Behind Saberon
-			q(36333, { ["name"] = "Treasure: Treasure Stump Near Central Pond", }),	-- Treasure: Treasure Stump Near Central Pond
-			q(36337, { ["name"] = "Treasure: Treasure Stump Near Ogre Race Track", }),	-- Treasure: Treasure Stump Near Ogre Race Track
-			q(36323, { ["name"] = "Treasure: Treasure Stump Near Saberon Pond", }),	-- Treasure: Treasure Stump Near Saberon Pond
-			q(36326, { ["name"] = "Treasure: Under Horde Bridge", }),	-- Treasure: Under Horde Bridge
-			q(36329, { ["name"] = "Treasure: Water in the Red Tree Area", }),	-- Treasure: Water in the Red Tree Area
-			q(36327, { ["name"] = "Treasure: Wrecked Ship", }),	-- Treasure: Wrecked Ship
-			q(35282, { ["name"] = "Treasure - Glowing Blue Mushroom", }),	-- Treasure - Glowing Blue Mushroom
-			q(35821, { ["name"] = "Trophy of Glory: Sodius", }),	-- Trophy of Glory: Sodius
-			q(35822, { ["name"] = "Trophy of Glory: Sodius", }),	-- Trophy of Glory: Sodius
-			q(33562, { ["name"] = "Trophy: Gorg'ak's Obsidian Spines", }),	-- Trophy: Gorg'ak's Obsidian Spines
-			q(34077, { ["name"] = "Trouble to the South", }),	-- Trouble to the South
-			q(35857, { ["name"] = "Turbo Survey Bot", }),	-- Turbo Survey Bot
-			q(33726, { ["name"] = "Tuurem Task TBD", }),	-- Tuurem Task TBD
-			q(33320, { ["name"] = "Two Birds One Power Core", }),	-- Two Birds One Power Core
-			q(35723, { ["name"] = "Two-Toned Greaves", }),	-- Two-Toned Greaves
-			q(35768, { ["name"] = "Ultra Healing Potion", }),	-- Ultra Healing Potion
-			q(35777, { ["name"] = "Unbendable Card", }),	-- Unbendable Card
-			q(33509, { ["name"] = "Unexpected Assault", }),	-- Unexpected Assault
-			q(33510, { ["name"] = "Unexpected Assault", }),	-- Unexpected Assault
-			q(35008, { ["name"] = "UNUSED", }),	-- UNUSED
-			q(35306, { ["name"] = "Unused", }),	-- Unused
-			q(35308, { ["name"] = "Unused", }),	-- Unused
-			q(35310, { ["name"] = "Unused", }),	-- Unused
-			q(35313, { ["name"] = "Unused", }),	-- Unused
-			q(35314, { ["name"] = "Unused", }),	-- Unused
-			q(35326, { ["name"] = "Unused", }),	-- Unused
-			q(35359, { ["name"] = "unused", }),	-- unused
-			q(35360, { ["name"] = "unused", }),	-- unused
-			q(35361, { ["name"] = "unused", }),	-- unused
-			q(35362, { ["name"] = "unused", }),	-- unused
-			q(35417, { ["name"] = "Unused", }),	-- Unused
-			q(35418, { ["name"] = "Unused", }),	-- Unused
-			q(35419, { ["name"] = "Unused", }),	-- Unused
-			q(35421, { ["name"] = "Unused", }),	-- Unused
-			q(35422, { ["name"] = "Unused", }),	-- Unused
-			q(35423, { ["name"] = "Unused", }),	-- Unused
-			q(35425, { ["name"] = "Unused", }),	-- Unused
-			q(35427, { ["name"] = "Unused", }),	-- Unused
-			q(35428, { ["name"] = "Unused", }),	-- Unused
-			q(35466, { ["name"] = "Unused", }),	-- Unused
-			q(35467, { ["name"] = "Unused", }),	-- Unused
-			q(35469, { ["name"] = "Unused", }),	-- Unused
-			q(35470, { ["name"] = "Unused", }),	-- Unused
-			q(35479, { ["name"] = "Unused", }),	-- Unused
-			q(33516, { ["name"] = "Un-Safety First", }),	-- Un-Safety First
-			q(35826, { ["name"] = "Used Locket", }),	-- Used Locket
-			q(33402, { ["name"] = "Verick's Vindicators", }),	-- Verick's Vindicators
-			q(35057, { ["name"] = "Vignette XP reward - Frostfire", }),	-- Vignette XP reward - Frostfire
-			q(35161, { ["name"] = "Vignette XP reward - Talador", }),	-- Vignette XP reward - Talador
-			q(32911, { ["name"] = "Vignette: Ancient Clefthoof (Tracking Quest)", }),	-- Vignette: Ancient Clefthoof (Tracking Quest)
-			q(32913, { ["name"] = "Vignette: Arranok's Ritual (Tracking Quest)", }),	-- Vignette: Arranok's Ritual (Tracking Quest)
-			q(34197, { ["name"] = "Vignette: Bloodbloom the Colossus", }),	-- Vignette: Bloodbloom the Colossus
-			q(32920, { ["name"] = "Vignette: Deathtoll", }),	-- Vignette: Deathtoll
-			q(35996, { ["name"] = "Vignette: Depthroot", }),	-- Vignette: Depthroot
-			q(33045, { ["name"] = "Vignette: Foreling Circle Ritual", }),	-- Vignette: Foreling Circle Ritual
-			q(35153, { ["name"] = "Vignette: Fungal Praetorian", }),	-- Vignette: Fungal Praetorian
-			q(34483, { ["name"] = "Vignette: Galzomar", }),	-- Vignette: Galzomar
-			q(34231, { ["name"] = "Vignette: Giant Snake", }),	-- Vignette: Giant Snake
-			q(34807, { ["name"] = "Vignette: Goldmane the Skinner", }),	-- Vignette: Goldmane the Skinner
-			q(34382, { ["name"] = "Vignette: Grand Warlock Duress", }),	-- Vignette: Grand Warlock Duress
-			q(34851, { ["name"] = "Vignette: Gruuk", }),	-- Vignette: Gruuk
-			q(33641, { ["name"] = "Vignette: Hippo Boss", }),	-- Vignette: Hippo Boss
-			q(33056, { ["name"] = "Vignette: Hygrocybe", }),	-- Vignette: Hygrocybe
-			q(34162, { ["name"] = "Vignette: Icklarv", }),	-- Vignette: Icklarv
-			q(34143, { ["name"] = "Vignette: Kal'rak the Drunk", }),	-- Vignette: Kal'rak the Drunk
-			q(35220, { ["name"] = "Vignette: Kharazos the Triumphant", }),	-- Vignette: Kharazos the Triumphant
-			q(36568, { ["name"] = "Vignette: Malgosh Shadowkeeper", }),	-- Vignette: Malgosh Shadowkeeper
-			q(34755, { ["name"] = "Vignette: Mining Captain Bashgar", }),	-- Vignette: Mining Captain Bashgar
-			q(34170, { ["name"] = "Vignette: Moltnar", }),	-- Vignette: Moltnar
-			q(33065, { ["name"] = "Vignette: Mooncrush", }),	-- Vignette: Mooncrush
-			q(34127, { ["name"] = "Vignette: Mother Bloodtusk", }),	-- Vignette: Mother Bloodtusk
-			q(34160, { ["name"] = "Vignette: Nixxie the Goblin", }),	-- Vignette: Nixxie the Goblin
-			q(33035, { ["name"] = "Vignette: Pale Capture", }),	-- Vignette: Pale Capture
-			q(33051, { ["name"] = "Vignette: Prophecy of Jerrikar", }),	-- Vignette: Prophecy of Jerrikar
-			q(33052, { ["name"] = "Vignette: Prophecy of Kraator", }),	-- Vignette: Prophecy of Kraator
-			q(33053, { ["name"] = "Vignette: Prophecy of the Warp-Watcher", }),	-- Vignette: Prophecy of the Warp-Watcher
-			q(34243, { ["name"] = "Vignette: Rak'nar Muzzlebash", }),	-- Vignette: Rak'nar Muzzlebash
-			q(34198, { ["name"] = "Vignette: Roardan", }),	-- Vignette: Roardan
-			q(33057, { ["name"] = "Vignette: Rotbelcher", }),	-- Vignette: Rotbelcher
-			q(35244, { ["name"] = "Vignette: Skagg", }),	-- Vignette: Skagg
-			q(32921, { ["name"] = "Vignette: Skel'tik the Baleful", }),	-- Vignette: Skel'tik the Baleful
-			q(36431, { ["name"] = "Vignette: Soul-twister Torek", }),	-- Vignette: Soul-twister Torek
-			q(33036, { ["name"] = "Vignette: Starcrusher Roghash", }),	-- Vignette: Starcrusher Roghash
-			q(34168, { ["name"] = "Vignette: Stormwave", }),	-- Vignette: Stormwave
-			q(33044, { ["name"] = "Vignette: Synodicus", }),	-- Vignette: Synodicus
-			q(33042, { ["name"] = "Vignette: Tank Construction", }),	-- Vignette: Tank Construction
-			q(34191, { ["name"] = "Vignette: Un'glok Blackfinger", }),	-- Vignette: Un'glok Blackfinger
-			q(34907, { ["name"] = "Vignette/Treasure: Lagoon Pool/Giant Clam", }),	-- Vignette/Treasure: Lagoon Pool/Giant Clam
-			q(34652, { ["name"] = "Vignette/Treasure: Savage Clam", }),	-- Vignette/Treasure: Savage Clam
-			q(32936, { ["name"] = "War Horses!", }),	-- War Horses!
-			q(33906, { ["name"] = "War Kangaroo!", }),	-- War Kangaroo!
-			q(34008, { ["name"] = "We Are Leaving!", }),	-- We Are Leaving!
-			q(34844, { ["name"] = "We Require More Resources", }),	-- We Require More Resources
-			q(35193, { ["name"] = "Weapons Of Our Enemies", }),	-- Weapons Of Our Enemies
-			q(33434, { ["name"] = "Westfall Race 30", }),	-- Westfall Race 30
-			q(33455, { ["name"] = "Westfall Race Practice UNUSED", }),	-- Westfall Race Practice UNUSED
-			q(35799, { ["name"] = "Wooly Bedroll", }),	-- Wooly Bedroll
-			q(33959, { ["name"] = "You Sunk My Battleship!", }),	-- You Sunk My Battleship!
-			q(36838, { ["name"] = "Your Second Alchemy Work Order", }),	-- Your Second Alchemy Work Order
-			q(35172, { ["name"] = "Your Second Blacksmithing Work Order", }),	-- Your Second Blacksmithing Work Order
-			q(36839, { ["name"] = "Your Second Enchanting Work Order", }),	-- Your Second Enchanting Work Order
-			q(36840, { ["name"] = "Your Second Engineering Work Order", }),	-- Your Second Engineering Work Order
-			q(36841, { ["name"] = "Your Second Inscription Work Order", }),	-- Your Second Inscription Work Order
-			q(36842, { ["name"] = "Your Second Jewelcrafting Work Order", }),	-- Your Second Jewelcrafting Work Order
-			q(36844, { ["name"] = "Your Second Leatherworking Work Order", }),	-- Your Second Leatherworking Work Order
-			q(36845, { ["name"] = "Your Second Tailoring Work Order", }),	-- Your Second Tailoring Work Order
-			q(33829, { ["name"] = "zzOLD Honor Has its Rewards", }),	-- zzOLD Honor Has its Rewards
-			q(36922, { ["name"] = "zzzzTITLE TEST", }),	-- zzzzTITLE TEST
-			q(35551, { ["name"] = "[Deprecated]", }),	-- [Deprecated]
-			q(35635, { ["name"] = "[Deprecated]", }),	-- [Deprecated]
-			q(36113, { ["name"] = "[Deprecated] Azuka Bladefury", }),	-- [Deprecated] Azuka Bladefury
-			q(34591, { ["name"] = "[Deprecated] Clearing out the Shadows", }),	-- [Deprecated] Clearing out the Shadows
-			q(34640, { ["name"] = "[Deprecated] Doorway to Draenor", }),	-- [Deprecated] Doorway to Draenor
-			q(34694, { ["name"] = "[Deprecated] Invasion Quest", }),	-- [Deprecated] Invasion Quest
-			q(34059, { ["name"] = "[DEPRECATED] Keeping Calm", }),	-- [DEPRECATED] Keeping Calm
-			q(34084, { ["name"] = "[DEPRECATED] Keeping Calm", }),	-- [DEPRECATED] Keeping Calm
-			q(34449, { ["name"] = "[Deprecated] Kill Thunderlord Master", }),	-- [Deprecated] Kill Thunderlord Master
-			q(33789, { ["name"] = "[Deprecated] Lifebloom Orchids", }),	-- [Deprecated] Lifebloom Orchids
-			q(34693, { ["name"] = "[Deprecated] Profession Quest", }),	-- [Deprecated] Profession Quest
-			q(36172, { ["name"] = "[Deprecated] Put out the Fires", }),	-- [Deprecated] Put out the Fires
-			q(34150, { ["name"] = "[Deprecated] Treasure: Gorgrond Treasure", }),	-- [Deprecated] Treasure: Gorgrond Treasure
-			q(34180, { ["name"] = "[Deprecated] Treasure: Gorgrond Treasure 02", }),	-- [Deprecated] Treasure: Gorgrond Treasure 02
-			q(35385, { ["name"] = "[Deprectated ] Treasure: Shadowmoon Treasure 07", }),	-- [Deprectated ] Treasure: Shadowmoon Treasure 07
-			q(34178, { ["name"] = "[Deprecate]Treasure: Gorgrond Treasure 08", }),	-- [Deprecate]Treasure: Gorgrond Treasure 08
-			q(34175, { ["name"] = "[Deprecate] Treasure: Gorgrond Treasure 09", }),	-- [Deprecate] Treasure: Gorgrond Treasure 09
-			q(33746, { ["name"] = "[DEPRECATED]Y'kish Joins the Party", }),	-- [DEPRECATED]Y'kish Joins the Party
-			q(33442, { ["name"] = "[FLAG] Caravan Position Bitflag 01", }),	-- [FLAG] Caravan Position Bitflag 01
-			q(33445, { ["name"] = "[FLAG] Caravan Position Bitflag 02", }),	-- [FLAG] Caravan Position Bitflag 02
-			q(33446, { ["name"] = "[FLAG] Caravan Position Bitflag 03", }),	-- [FLAG] Caravan Position Bitflag 03
-			q(33054, { ["name"] = "[NOTUSED]Vignette: Iron Ball Cache", }),	-- [NOTUSED]Vignette: Iron Ball Cache
-			q(33063, { ["name"] = "[NOTUSED]Vignette: Shadowcaller Anga", }),	-- [NOTUSED]Vignette: Shadowcaller Anga
-			q(33034, { ["name"] = "[NOTUSED]Vignette: The Obliterator", }),	-- [NOTUSED]Vignette: The Obliterator
-			q(34757, { ["name"] = "[PH] Elixir", }),	-- [PH] Elixir
-			q(36154, { ["name"] = "[PH] Lumber Mill Rank 02 Alliance", }),	-- [PH] Lumber Mill Rank 02 Alliance
-			q(36155, { ["name"] = "[PH] Lumber Mill Rank 03 Alliance", }),	-- [PH] Lumber Mill Rank 03 Alliance
-			q(34282, { ["name"] = "<UNUSED>", }),	-- <UNUSED>
-			q(34283, { ["name"] = "<UNUSED>", }),	-- <UNUSED>
-			q(34307, { ["name"] = "<UNUSED>", }),	-- <UNUSED>
-			q(34308, { ["name"] = "<UNUSED>", }),	-- <UNUSED>
-			q(34317, { ["name"] = "<UNUSED>", }),	-- <UNUSED>
-			q(34623, { ["name"] = "<UNUSED>", }),	-- <UNUSED>
+		expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+			q(33772, { name = "6.0 Invasion Opt-Out", }),	-- 6.0 Invasion Opt-Out
+			q(34311, { name = "6.0 Invasion: Opted Out", }),	-- 6.0 Invasion: Opted Out
+			q(36358, { name = "A Father and His Son", }),	-- A Father and His Son
+			q(35866, { name = "A Few Artifact Fragments", }),	-- A Few Artifact Fragments
+			q(37188, { name = "A Flash of Bronze...", }),	-- A Flash of Bronze...
+			q(37194, { name = "A Flash of Bronze...", }),	-- A Flash of Bronze...
+			q(34944, { name = "A Flock of Fledglings", }),	-- A Flock of Fledglings
+			q(34354, { name = "A Good Death", }),	-- A Good Death
+			q(33266, { name = "A Light in the Dark - Tracking Quest", }),	-- A Light in the Dark - Tracking Quest
+			q(33577, { name = "A New Threat", }),	-- A New Threat
+			q(36413, { name = "A Power Restored", }),	-- A Power Restored
+			q(36263, { name = "A Strengthened Bond", }),	-- A Strengthened Bond
+			q(34299, { name = "A Threat We Can't Ignore", }),	-- A Threat We Can't Ignore
+			q(37259, { name = "A Worthy Challenge: Teron'gor", }),	-- A Worthy Challenge: Teron'gor
+			q(37271, { name = "A Worthy Challenge: Teron'gor", }),	-- A Worthy Challenge: Teron'gor
+			q(35346, { name = "Abatha, the Alchemist", }),	-- Abatha, the Alchemist
+			q(35791, { name = "Absorbable Vellum", }),	-- Absorbable Vellum
+			q(35785, { name = "Abstract Painting", }),	-- Abstract Painting
+			q(33910, { name = "Aklana Rescue", }),	-- Aklana Rescue
+			q(35772, { name = "Alchemist Field Guide", }),	-- Alchemist Field Guide
+			q(35770, { name = "Alchemist Notebook", }),	-- Alchemist Notebook
+			q(35292, { name = "Ang'kra, the Alchemist", }),	-- Ang'kra, the Alchemist
+			q(33545, { name = "Arkonite Crystals", }),	-- Arkonite Crystals
+			q(35742, { name = "Attuned Alchemist Stone", }),	-- Attuned Alchemist Stone
+			q(34158, { name = "Auchindoun Must Not Fall", }),	-- Auchindoun Must Not Fall
+			q(36872, { name = "Austin's Folly", }),	-- Austin's Folly
+			q(36095, { name = "Azuka Bladefury", }),	-- Azuka Bladefury
+			q(33904, { name = "Balance of Power", }),	-- Balance of Power
+			q(35726, { name = "Balanced Short Sword", }),	-- Balanced Short Sword
+			q(35852, { name = "Basic Antivenom Kit", }),	-- Basic Antivenom Kit
+			q(35848, { name = "Basic Medic Kit", }),	-- Basic Medic Kit
+			q(35851, { name = "Battle Medic Vestments", }),	-- Battle Medic Vestments
+			q(33351, { name = "Become Chief", }),	-- Become Chief
+			q(35779, { name = "Bent Card", }),	-- Bent Card
+			q(35862, { name = "Blackrock Cluster Bomb", }),	-- Blackrock Cluster Bomb
+			q(33149, { name = "Blackrock Down", }),	-- Blackrock Down
+			q(35860, { name = "Blackrock Fragment Grenade", }),	-- Blackrock Fragment Grenade
+			q(35724, { name = "Blood-Washed Greaves", }),	-- Blood-Washed Greaves
+			q(33425, { name = "Blue/Yellow Sprint 15 INTERNAL REPEATABLE", }),	-- Blue/Yellow Sprint 15 INTERNAL REPEATABLE
+			q(34183, { name = "Bombardment Triggered", }),	-- Bombardment Triggered
+			q(34343, { name = "Bonus Objective: Kill Frostiron Magnaron", }),	-- Bonus Objective: Kill Frostiron Magnaron
+			q(34499, { name = "Bonus Objective: Kill Malevolent Breath", }),	-- Bonus Objective: Kill Malevolent Breath
+			q(34327, { name = "Bonus Objective: Kill Ogron", }),	-- Bonus Objective: Kill Ogron
+			q(34500, { name = "Bonus Objective: Kill Ogron", }),	-- Bonus Objective: Kill Ogron
+			q(34502, { name = "Bonus Objective: Kill Pale", }),	-- Bonus Objective: Kill Pale
+			q(34457, { name = "Bonus Objective: Ogron-Be-Gone", }),	-- Bonus Objective: Ogron-Be-Gone
+			q(35107, { name = "Book of Alchemical Secrets", }),	-- Book of Alchemical Secrets
+			q(35855, { name = "Book of Draenic Cures", }),	-- Book of Draenic Cures
+			q(35854, { name = "Botanic Cure Guide", }),	-- Botanic Cure Guide
+			q(35786, { name = "Bronze Victory", }),	-- Bronze Victory
+			q(37305, { name = "Bronze Victory", }),	-- Bronze Victory
+			q(35571, { name = "Brutality in the Basin, Violence in the Valley", }),	-- Brutality in the Basin, Violence in the Valley
+			q(33150, { name = "Brute Beatdown", }),	-- Brute Beatdown
+			q(35829, { name = "Buffed Crystal", }),	-- Buffed Crystal
+			q(34006, { name = "Build Us A Backdoor", }),	-- Build Us A Backdoor
+			q(35578, { name = "Building an Ancient of War", }),	-- Building an Ancient of War
+			q(33881, { name = "Can't Live With 'Em, Can't Learn Without 'Em", }),	-- Can't Live With 'Em, Can't Learn Without 'Em
+			q(33456, { name = "Catapult Vision", }),	-- Catapult Vision
+			q(33457, { name = "Catapult Vision", }),	-- Catapult Vision
+			q(33458, { name = "Catapult Vision", }),	-- Catapult Vision
+			q(35252, { name = "Chest Reward Tracking Quest", }),	-- Chest Reward Tracking Quest
+			q(37114, { name = "Choluna", }),	-- Choluna
+			q(33880, { name = "Collect Crystals [PH]", }),	-- Collect Crystals [PH]
+			q(33058, { name = "Collect Karabor Axes", }),	-- Collect Karabor Axes
+			q(33268, { name = "Collect Moonstones", }),	-- Collect Moonstones
+			q(35849, { name = "Combat Medic Kit", }),	-- Combat Medic Kit
+			q(34224, { name = "Creature Treasure: Bloodcleave", }),	-- Creature Treasure: Bloodcleave
+			q(34412, { name = "Creature Treasure: Gnarljaw", }),	-- Creature Treasure: Gnarljaw
+			q(34222, { name = "Creature Treasure: Iron Horde Blacksmith", }),	-- Creature Treasure: Iron Horde Blacksmith
+			q(34225, { name = "Creature Treasure: Iron Horde Slacker", }),	-- Creature Treasure: Iron Horde Slacker
+			q(34223, { name = "Creature Treasure: Iron Horde Stable Master", }),	-- Creature Treasure: Iron Horde Stable Master
+			q(34411, { name = "Creature Treasure: King Slime", }),	-- Creature Treasure: King Slime
+			q(35833, { name = "Crude Gryphon Figurine", }),	-- Crude Gryphon Figurine
+			q(35221, { name = "Da Keeper", }),	-- Da Keeper
+			q(34970, { name = "Darkmoon Iron Deck", }),	-- Darkmoon Iron Deck
+			q(34973, { name = "Darkmoon Moon Deck", }),	-- Darkmoon Moon Deck
+			q(34974, { name = "Darkmoon Visions Deck", }),	-- Darkmoon Visions Deck
+			q(34975, { name = "Darkmoon War Deck", }),	-- Darkmoon War Deck
+			q(34359, { name = "Darktide Defender TEST", }),	-- Darktide Defender TEST
+			q(33800, { name = "Darren's Bombing Run of Awesomeness", }),	-- Darren's Bombing Run of Awesomeness
+			q(33381, { name = "Death of a Tyrant", }),	-- Death of a Tyrant
+			q(35728, { name = "Decent Barrier Shield", }),	-- Decent Barrier Shield
+			q(34688, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(36873, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(33547, { name = "Desperate Times", }),	-- Desperate Times
+			q(33913, { name = "Desperate Times", }),	-- Desperate Times
+			q(33877, { name = "Destroy Diggers [PH]", }),	-- Destroy Diggers [PH]
+			q(35756, { name = "Disturbing Ritual Mask", }),	-- Disturbing Ritual Mask
+			q(34966, { name = "Doug Test - Daily Repeatable", }),	-- Doug Test - Daily Repeatable
+			q(35783, { name = "Draenic Survivalist Cloak", }),	-- Draenic Survivalist Cloak
+			q(34722, { name = "Durotan Been Askin' For Ya", }),	-- Durotan Been Askin' For Ya
+			q(33428, { name = "Elwynn Forest Racing", }),	-- Elwynn Forest Racing
+			q(33422, { name = "Elwynn Long Distance Practice", }),	-- Elwynn Long Distance Practice
+			q(33429, { name = "Elwynn Long Distance Trial: 25", }),	-- Elwynn Long Distance Trial: 25
+			q(33409, { name = "Elwynn Run", }),	-- Elwynn Run
+			q(33432, { name = "Elwynn South Distance Practice", }),	-- Elwynn South Distance Practice
+			q(33431, { name = "Elwynn South Distance Trial: 30", }),	-- Elwynn South Distance Trial: 30
+			q(35769, { name = "Empowered Scroll", }),	-- Empowered Scroll
+			q(32797, { name = "END OF PROTOTYPE! [Return to Durotan at Ogre Citadel]", }),	-- END OF PROTOTYPE! [Return to Durotan at Ogre Citadel]
+			q(34063, { name = "Enemies Above", }),	-- Enemies Above
+			q(35767, { name = "Experimental Healing Potion", }),	-- Experimental Healing Potion
+			q(33085, { name = "Fallen From the Stars", }),	-- Fallen From the Stars
+			q(33522, { name = "Felblood", }),	-- Felblood
+			q(33154, { name = "Fight for Freedom", }),	-- Fight for Freedom
+			q(33323, { name = "Finale - Tracking Quest", }),	-- Finale - Tracking Quest
+			q(33534, { name = "Find D'kaan", }),	-- Find D'kaan
+			q(35222, { name = "Firing the Mayor", }),	-- Firing the Mayor
+			q(35228, { name = "Firing the Mayor", }),	-- Firing the Mayor
+			q(33755, { name = "First Test Race: 2 Laps", _drop = { "g" }, }),	-- First Test Race: 2 Laps
+			q(34846, { name = "Fish Fight", _drop = { "g" }, }),	-- Fish Fight
+			q(33635, { name = "FLAG - Seen Gazebo Explosion", }),	-- FLAG - Seen Gazebo Explosion
+			q(33644, { name = "FLAG - Seen Wall Explosion", }),	-- FLAG - Seen Wall Explosion
+			q(35827, { name = "Focused Crystal", }),	-- Focused Crystal
+			q(34474, { name = "Follow Spirit", }),	-- Follow Spirit
+			q(35796, { name = "Frenzy War Drum", }),	-- Frenzy War Drum
+			q(35740, { name = "Frightening Voodoo Doll", }),	-- Frightening Voodoo Doll
+			q(33464, { name = "From Over the Walls", }),	-- From Over the Walls
+			q(34141, { name = "Frostboar Frenzy", }),	-- Frostboar Frenzy
+			q(34714, { name = "Frostfire Ridge: (RRP) - Treasure - Pale Leather Cache", }),	-- Frostfire Ridge: (RRP) - Treasure - Pale Leather Cache
+			q(35729, { name = "Frosty Bulwark", }),	-- Frosty Bulwark
+			q(34475, { name = "Garrison Invasion!", }),	-- Garrison Invasion!
+			q(37308, { name = "Garrison Invasion - Reward Tracker - Bronze", }),	-- Garrison Invasion - Reward Tracker - Bronze
+			q(37310, { name = "Garrison Invasion - Reward Tracker - Gold", }),	-- Garrison Invasion - Reward Tracker - Gold
+			q(37309, { name = "Garrison Invasion - Reward Tracker - Silver", }),	-- Garrison Invasion - Reward Tracker - Silver
+			q(36525, { name = "Garrison Max-level Choice Reward Summary: Group", }),	-- Garrison Max-level Choice Reward Summary: Group
+			q(36542, { name = "Garrison Max-level Choice Reward Summary: Group", }),	-- Garrison Max-level Choice Reward Summary: Group
+			q(36526, { name = "Garrison Max-level Choice Reward Summary: PvP", }),	-- Garrison Max-level Choice Reward Summary: PvP
+			q(36543, { name = "Garrison Max-level Choice Reward Summary: PvP", }),	-- Garrison Max-level Choice Reward Summary: PvP
+			q(36524, { name = "Garrison Max-level Choice Reward Summary: Solo", }),	-- Garrison Max-level Choice Reward Summary: Solo
+			q(36544, { name = "Garrison Max-level Choice Reward Summary: Solo", }),	-- Garrison Max-level Choice Reward Summary: Solo
+			q(36665, { name = "Garrison Max-level Choice Tracker: ALL CHOICES DEBUG", }),	-- Garrison Max-level Choice Tracker: ALL CHOICES DEBUG
+			q(36666, { name = "Garrison Max-level Choice Tracker: ALL CHOICES DEBUG", }),	-- Garrison Max-level Choice Tracker: ALL CHOICES DEBUG
+			q(36535, { name = "Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood", }),	-- Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood
+			q(36546, { name = "Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood", }),	-- Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood
+			q(36536, { name = "Garrison Max-level Choice Tracker: (PVP) Ashran", }),	-- Garrison Max-level Choice Tracker: (PVP) Ashran
+			q(36548, { name = "Garrison Max-level Choice Tracker: (PVP) Ashran", }),	-- Garrison Max-level Choice Tracker: (PVP) Ashran
+			q(35681, { name = "Garrison Supplies", }),	-- Garrison Supplies
+			q(34669, { name = "Gather Lumber", }),	-- Gather Lumber
+			q(33400, { name = "General Problems", }),	-- General Problems
+			q(35618, { name = "Gidwin Goldbraids", }),	-- Gidwin Goldbraids
+			q(35788, { name = "Gold Victory", _drop = { "g" }, }),	-- Gold Victory
+			q(37307, { name = "Gold Victory", _drop = { "g" }, }),	-- Gold Victory
+			q(34771, { name = "Good Stuff", }),	-- Good Stuff
+			q(33968, { name = "Goren Boss Kill and Collect", }),	-- Goren Boss Kill and Collect
+			q(33875, { name = "Goren, Goren, Gone!", }),	-- Goren, Goren, Gone!
+			q(33879, { name = "Goren, Goren, Gone!", }),	-- Goren, Goren, Gone!
+			q(36834, { name = "Gorgrond Ogre Gateway - Tracking", }),	-- Gorgrond Ogre Gateway - Tracking
+			q(34267, { name = "Grommar Forces", }),	-- Grommar Forces
+			q(34004, { name = "Hansel, Report", }),	-- Hansel, Report
+			q(35805, { name = "Heavy Duty Knapsack", }),	-- Heavy Duty Knapsack
+			q(35790, { name = "Heavy Duty Utilicap", }),	-- Heavy Duty Utilicap
+			q(35105, { name = "Honor and Remember", }),	-- Honor and Remember
+			q(35592, { name = "Honorable Victor", }),	-- Honorable Victor
+			q(35794, { name = "Huntsman's Saddlebag", }),	-- Huntsman's Saddlebag
+			q(35859, { name = "Hyper Sight Scope", }),	-- Hyper Sight Scope
+			q(35825, { name = "Imbued Locket", }),	-- Imbued Locket
+			q(35802, { name = "Immaculate Lace Kerchief", }),	-- Immaculate Lace Kerchief
+			q(35789, { name = "Infantry Leather Cap", }),	-- Infantry Leather Cap
+			q(33638, { name = "Insatiable Swarms", }),	-- Insatiable Swarms
+			q(34509, { name = "Into the Jaws of the Jungle", }),	-- Into the Jaws of the Jungle
+			q(35755, { name = "Intricately Carved Battle Staff", }),	-- Intricately Carved Battle Staff
+			q(33987, { name = "Intro Tracking", }),	-- Intro Tracking
+			q(33496, { name = "Iron Horde in Karabor", }),	-- Iron Horde in Karabor
+			q(35504, { name = "Iron Joker", _drop = { "g" }, }),	-- Iron Joker
+			q(35020, { name = "Jared's Test Quest", }),	-- Jared's Test Quest
+			q(35294, { name = "Jasper Moves", }),	-- Jasper Moves
+			q(34690, { name = "Just the Beginning", }),	-- Just the Beginning
+			q(34691, { name = "Just the Beginning", }),	-- Just the Beginning
+			q(33733, { name = "Karmaan", }),	-- Karmaan
+			q(33782, { name = "Keeping the Balance", }),	-- Keeping the Balance
+			q(34602, { name = "Kill Goren", }),	-- Kill Goren
+			q(33783, { name = "Kuuros Farm", }),	-- Kuuros Farm
+			q(32917, { name = "Kyle Currency Test Quest", }),	-- Kyle Currency Test Quest
+			q(33822, { name = "Laabru's Rebellion", }),	-- Laabru's Rebellion
+			q(35754, { name = "Leering Ritual Mask", }),	-- Leering Ritual Mask
+			q(35771, { name = "Legible Scroll", }),	-- Legible Scroll
+			q(35743, { name = "Lesser Alchemist Stone", }),	-- Lesser Alchemist Stone
+			q(35803, { name = "Lesser Mage Robe", }),	-- Lesser Mage Robe
+			q(34413, { name = "Lumberstruck", }),	-- Lumberstruck
+			q(34845, { name = "Lurking in the Shadows", }),	-- Lurking in the Shadows
+			q(35800, { name = "Luxurious Bedroll", }),	-- Luxurious Bedroll
+			q(35752, { name = "Magically Banded Totem", }),	-- Magically Banded Totem
+			q(35795, { name = "Marching Drum", }),	-- Marching Drum
+			q(34454, { name = "Mind Controlled Rylaks", }),	-- Mind Controlled Rylaks
+			q(33956, { name = "Missing Frostwolves", }),	-- Missing Frostwolves
+			q(33148, { name = "Missing Hunting Party", }),	-- Missing Hunting Party
+			q(34079, { name = "Mission Successful", }),	-- Mission Successful
+			q(35775, { name = "Moldy Book", }),	-- Moldy Book
+			q(35203, { name = "More Materials", }),	-- More Materials
+			q(35774, { name = "Mostly Stable Elixir", }),	-- Mostly Stable Elixir
+			q(36188, { name = "Moving On Up", }),	-- Moving On Up
+			q(33557, { name = "Muddy Waters", }),	-- Muddy Waters
+			q(33485, { name = "Multiplayer Race", }),	-- Multiplayer Race
+			q(33561, { name = "Multiplayer Race", }),	-- Multiplayer Race
+			q(34181, { name = "Mutation Station", }),	-- Mutation Station
+			q(34304, { name = "Mutation Station", }),	-- Mutation Station
+			q(36052, { name = "Nagrand - Treasure 037 - Misplaced Artifacts", }),	-- Nagrand - Treasure 037 - Misplaced Artifacts
+			q(36072, { name = "Nagrand - Treasure 056 - Abu'Gar's Favorite Lure", }),	-- Nagrand - Treasure 056 - Abu'Gar's Favorite Lure
+			q(35711, { name = "Nagrand - Treasure 059 - Abu'gar's Tenacity", }),	-- Nagrand - Treasure 059 - Abu'gar's Tenacity
+			q(36089, { name = "Nagrand - Treasure 070 - Abu'Gar's Reel", }),	-- Nagrand - Treasure 070 - Abu'Gar's Reel
+			q(33529, { name = "Nightmare in the Tomb", }),	-- Nightmare in the Tomb
+			q(33878, { name = "No Miner Left Behind", }),	-- No Miner Left Behind
+			q(33424, { name = "Northshire Dash 12", }),	-- Northshire Dash 12
+			q(33609, { name = "Northshire Dash Practice", }),	-- Northshire Dash Practice
+			q(33492, { name = "Northshire Sprint Practice", }),	-- Northshire Sprint Practice
+			q(33449, { name = "Northwestern Medicine", }),	-- Northwestern Medicine
+			q(34677, { name = "NOT USED", }),	-- NOT USED
+			q(34025, { name = "Nuke Bastion Rise Tracking Flag", }),	-- Nuke Bastion Rise Tracking Flag
+			q(34738, { name = "Nullin' Void", }),	-- Nullin' Void
+			q(35721, { name = "Old Balance Treads", }),	-- Old Balance Treads
+			q(32784, { name = "On the Trail of Blood", }),	-- On the Trail of Blood
+			q(34684, { name = "One Step Ahead", }),	-- One Step Ahead
+			q(34637, { name = "Open the Portal", }),	-- Open the Portal
+			q(34376, { name = "Ore Not to Be", }),	-- Ore Not to Be
+			q(34055, { name = "Origin Unknown", }),	-- Origin Unknown
+			q(33943, { name = "Outrider Urukag", }),	-- Outrider Urukag
+			q(35776, { name = "Overly Clear Book", }),	-- Overly Clear Book
+			q(35758, { name = "Patched Wand", }),	-- Patched Wand
+			q(35749, { name = "Passable Old Staff", }),	-- Passable Old Staff
+			q(35217, { name = "Pearing It Up", }),	-- Pearing It Up
+			q(34905, { name = "Placeholder Quest", }),	-- Placeholder Quest
+			q(34459, { name = "Powering the Defenses", }),	-- Powering the Defenses
+			q(35858, { name = "Precision-Tuned Scope", }),	-- Precision-Tuned Scope
+			q(35804, { name = "Primal Mage Robe", }),	-- Primal Mage Robe
+			q(34670, { name = "Professional Processing", }),	-- Professional Processing
+			q(35850, { name = "Protective Medic Vest", }),	-- Protective Medic Vest
+			q(35863, { name = "Proximity Alarm Bot", }),	-- Proximity Alarm Bot
+			q(33060, { name = "Put down Poisonfiend.", }),	-- Put down Poisonfiend.
+			q(33131, { name = "Put down Poisonfiend.", }),	-- Put down Poisonfiend.
+			q(34617, { name = "QA Test Quest 3", }),	-- QA Test Quest 3
+			q(33750, { name = "Quest Reward Summary: Pipeworks", }),	-- Quest Reward Summary: Pipeworks
+			q(33749, { name = "Quest Reward Summary: Train Depot", }),	-- Quest Reward Summary: Train Depot
+			q(33350, { name = "Redridge Group Trial", }),	-- Redridge Group Trial
+			q(35824, { name = "Renewed Band", }),	-- Renewed Band
+			q(35781, { name = "Restored Infantry Cloak", }),	-- Restored Infantry Cloak
+			q(35801, { name = "Restored Lace Kerchief", }),	-- Restored Lace Kerchief
+			q(35831, { name = "Restored Statue", }),	-- Restored Statue
+			q(32914, { name = "Return to Ga'nar", }),	-- Return to Ga'nar
+			q(34080, { name = "Return To Sender", }),	-- Return To Sender
+			q(33448, { name = "REUSE", }),	-- REUSE
+			q(34083, { name = "REUSE", }),	-- REUSE
+			q(34633, { name = "REUSE", }),	-- REUSE
+			q(35722, { name = "Re-Soled Treads", }),	-- Re-Soled Treads
+			q(35624, { name = "Roona", }),	-- Roona
+			q(36135, { name = "Rosa is bad", }),	-- Rosa is bad
+			q(34200, { name = "Ruk'Gan Movement.", }),	-- Ruk'Gan Movement.
+			q(33924, { name = "Saberon Matriarch", }),	-- Saberon Matriarch
+			q(33705, { name = "Sacking the Saberon Stronghold", }),	-- Sacking the Saberon Stronghold
+			q(35741, { name = "Sad Voodoo Doll", }),	-- Sad Voodoo Doll
+			q(35753, { name = "Sanded Totem", }),	-- Sanded Totem
+			q(33521, { name = "Save Auchenai Caretakers", }),	-- Save Auchenai Caretakers
+			q(32982, { name = "Scavengers of Flame", }),	-- Scavengers of Flame
+			q(36060, { name = "Seal of Tempered Fate: Apexis Crystals", }),	-- Seal of Tempered Fate: Apexis Crystals
+			q(35720, { name = "Seamless Breastplate", }),	-- Seamless Breastplate
+			q(37268, { name = "Shadowmoon Invasion! BETA", }),	-- Shadowmoon Invasion! BETA
+			q(37269, { name = "Shadowmoon Invasion! BETA", }),	-- Shadowmoon Invasion! BETA
+			q(33157, { name = "Shadowmoon Phased Terrain Swap 1", }),	-- Shadowmoon Phased Terrain Swap 1
+			q(33158, { name = "Shadowmoon Phased Terrain Swap 2", }),	-- Shadowmoon Phased Terrain Swap 2
+			q(33159, { name = "Shadowmoon Phased Terrain Swap 3", }),	-- Shadowmoon Phased Terrain Swap 3
+			q(34360, { name = "SHWAYDER TEST", }),	-- SHWAYDER TEST
+			q(33817, { name = "Signs of a Struggle", }),	-- Signs of a Struggle
+			q(35787, { name = "Silver Victory", }),	-- Silver Victory
+			q(37306, { name = "Silver Victory", }),	-- Silver Victory
+			q(35727, { name = "Slightly-Bent Short Sword", }),	-- Slightly-Bent Short Sword
+			q(34217, { name = "Smash Blon'sky!", }),	-- Smash Blon'sky!
+			q(33416, { name = "South Sprint 12", }),	-- South Sprint 12
+			q(33398, { name = "South Sprint Practice", }),	-- South Sprint Practice
+			q(35823, { name = "Sparkling Band", }),	-- Sparkling Band
+			q(36452, { name = "Spawn Tracking & Spell Visuals: Do They Work?", }),	-- Spawn Tracking & Spell Visuals: Do They Work?
+			q(32793, { name = "Speak to Ga'nar", }),	-- Speak to Ga'nar
+			q(33395, { name = "Speak to Thrall", }),	-- Speak to Thrall
+			q(36847, { name = "Spires Ogre Gateway - Tracking", }),	-- Spires Ogre Gateway - Tracking
+			q(36463, { name = "Spires - Treasure 012 - Taylor's Coffer Key", }),	-- Spires - Treasure 012 - Taylor's Coffer Key
+			q(36415, { name = "Spires - Treasure 020 - Reagent Pouch", }),	-- Spires - Treasure 020 - Reagent Pouch
+			q(36363, { name = "Spires - Treasure 037 - Shattered Hand Spoils", }),	-- Spires - Treasure 037 - Shattered Hand Spoils
+			q(36459, { name = "Spires - Treasure 056 - Dislodged Saw Blade", }),	-- Spires - Treasure 056 - Dislodged Saw Blade
+			q(36424, { name = "Spires - Treasure 059 - Sun-Touched Cache", }),	-- Spires - Treasure 059 - Sun-Touched Cache
+			q(36479, { name = "Spires - Vignette 021 - Nightmaw", }),	-- Spires - Vignette 021 - Nightmaw
+			q(36303, { name = "Spires - Vignette Boss 019 - Eyeless", }),	-- Spires - Vignette Boss 019 - Eyeless
+			q(36304, { name = "Spires - Vignette Boss 022 - Gochar", }),	-- Spires - Vignette Boss 022 - Gochar
+			q(36312, { name = "Spires - Vignette Boss 025 - Sun Sage Valarik", }),	-- Spires - Vignette Boss 025 - Sun Sage Valarik
+			q(35780, { name = "Stable Elixir", }),	-- Stable Elixir
+			q(35856, { name = "Standard Survey Bot", }),	-- Standard Survey Bot
+			q(33349, { name = "STARTER QUEST - RED->PURPLE 15", }),	-- STARTER QUEST - RED->PURPLE 15
+			q(35792, { name = "Stitched Saddle Bag", }),	-- Stitched Saddle Bag
+			q(33921, { name = "Stolen Axes", }),	-- Stolen Axes
+			q(35773, { name = "Strangely Pleasant Painting", }),	-- Strangely Pleasant Painting
+			q(36620, { name = "Strategic Choices", }),	-- Strategic Choices
+			q(33737, { name = "Strike While the Iron Is Hot", }),	-- Strike While the Iron Is Hot
+			q(37120, { name = "Sunspring POI Tracking Quest", }),	-- Sunspring POI Tracking Quest
+			q(35853, { name = "Super Immunoglobulin Kit", }),	-- Super Immunoglobulin Kit
+			q(35296, { name = "Tainted Garden", }),	-- Tainted Garden
+			q(33656, { name = "Talbuk Roundup", }),	-- Talbuk Roundup
+			q(34366, { name = "Tanaan 01: Front of the Portal", }),	-- Tanaan 01: Front of the Portal
+			q(35621, { name = "Tarenar Sunstrike", }),	-- Tarenar Sunstrike
+			q(33588, { name = "Task: Break Corrupt Deathweb Eggs", }),	-- Task: Break Corrupt Deathweb Eggs
+			q(33126, { name = "Task: Clear Out Grimfrost Hill.", }),	-- Task: Clear Out Grimfrost Hill.
+			q(33223, { name = "Task: Collect Ogre Queasine", }),	-- Task: Collect Ogre Queasine
+			q(33224, { name = "Task: Collect Ogre Queasine [FOR TESTING]", }),	-- Task: Collect Ogre Queasine [FOR TESTING]
+			q(33155, { name = "Task: Destroy Iron Horde Banners", }),	-- Task: Destroy Iron Horde Banners
+			q(33713, { name = "TASK: Kill Ogre Slavers", }),	-- TASK: Kill Ogre Slavers
+			q(34268, { name = "Task: Kill Wildlife", }),	-- Task: Kill Wildlife
+			q(34269, { name = "Task: Kill Wolf Boss", }),	-- Task: Kill Wolf Boss
+			q(33108, { name = "Task: Poisionous bunnies", }),	-- Task: Poisionous bunnies
+			q(33129, { name = "Task: Poisionous bunnies", }),	-- Task: Poisionous bunnies
+			q(33130, { name = "Task: Poisionous bunnies", }),	-- Task: Poisionous bunnies
+			q(33659, { name = "Task: Put Down Poisoned Elekk", }),	-- Task: Put Down Poisoned Elekk
+			q(32799, { name = "Task: Retrieve Scorpar Husk Fragments", }),	-- Task: Retrieve Scorpar Husk Fragments
+			q(32800, { name = "Task: Retrieve Wooly Clefthoof Pelts", }),	-- Task: Retrieve Wooly Clefthoof Pelts
+			q(33068, { name = "Task: Retrieve Thunderlord Armbands", }),	-- Task: Retrieve Thunderlord Armbands
+			q(32801, { name = "Task: Retrieve Thunderlord Insignias", }),	-- Task: Retrieve Thunderlord Insignias
+			q(32802, { name = "Task: Retrieve Warm Frostpear Bulbs", }),	-- Task: Retrieve Warm Frostpear Bulbs
+			q(32934, { name = "Task: Scorpid Stomp", }),	-- Task: Scorpid Stomp
+			q(33012, { name = "Task: Stonefang Outpost Fires", }),	-- Task: Stonefang Outpost Fires
+			q(33330, { name = "Task: Trapped Critters", }),	-- Task: Trapped Critters
+			q(33067, { name = "Task: Warsong Riot", }),	-- Task: Warsong Riot
+			q(36659, { name = "TBD", }),	-- TBD
+			q(34532, { name = "Tearing Up Talador", }),	-- Tearing Up Talador
+			q(35250, { name = "Test Quest", }),	-- Test Quest
+			q(34589, { name = "TEST - Quest Objective Completion Effect Not Firing", }),	-- TEST - Quest Objective Completion Effect Not Firing
+			q(33686, { name = "That's No Podling", }),	-- That's No Podling
+			q(33954, { name = "The Bloodmaul Scheme", }),	-- The Bloodmaul Scheme
+			q(34588, { name = "The Bounty of Bladespire", }),	-- The Bounty of Bladespire
+			q(34424, { name = "The Chase is On", }),	-- The Chase is On
+			q(33549, { name = "The Cost of Chaos", }),	-- The Cost of Chaos
+			q(37195, { name = "The Dark Portal", }),	-- The Dark Portal
+			q(34842, { name = "The Den of Skog", }),	-- The Den of Skog
+			q(34661, { name = "The Drudgeboat", }),	-- The Drudgeboat
+			q(33536, { name = "The Element of Demise", }),	-- The Element of Demise
+			q(35604, { name = "The Epic Eleven", }),	-- The Epic Eleven
+			q(34441, { name = "The Fewer, the Merrier", }),	-- The Fewer, the Merrier
+			q(33265, { name = "The Friendly Foreling", }),	-- The Friendly Foreling
+			q(33952, { name = "The Hunting Party", }),	-- The Hunting Party
+			q(34074, { name = "The Iron March", }),	-- The Iron March
+			q(33658, { name = "The Iron Missive", }),	-- The Iron Missive
+			q(33463, { name = "The Iron Tide", }),	-- The Iron Tide
+			q(33074, { name = "The Memory of Fire", }),	-- The Memory of Fire
+			q(33844, { name = "The Pale Hunter", }),	-- The Pale Hunter
+			q(33840, { name = "The Plight of the Worgen", }),	-- The Plight of the Worgen
+			q(34377, { name = "The Portal Home", }),	-- The Portal Home
+			q(35092, { name = "The Portal's Power", }),	-- The Portal's Power
+			q(33907, { name = "The Power Shards", }),	-- The Power Shards
+			q(33908, { name = "The Power Shards", }),	-- The Power Shards
+			q(36673, { name = "The Ring of Blood: Dreshax!", }),	-- The Ring of Blood: Dreshax!
+			q(36671, { name = "The Ring of Blood: Fracktus!", }),	-- The Ring of Blood: Fracktus!
+			q(36705, { name = "The Ring of Blood: Mogor!", }),	-- The Ring of Blood: Mogor!
+			q(36670, { name = "The Ring of Blood: Skull Chewer!", }),	-- The Ring of Blood: Skull Chewer!
+			q(36672, { name = "The Ring of Blood: Venoxis!", }),	-- The Ring of Blood: Venoxis!
+			q(34064, { name = "The Search For Drogguk", }),	-- The Search For Drogguk
+			q(34121, { name = "The Shard of Shadows", }),	-- The Shard of Shadows
+			q(33781, { name = "The Survivalist's Way", }),	-- The Survivalist's Way
+			q(33766, { name = "The Thing in the Cave", }),	-- The Thing in the Cave
+			q(33767, { name = "The Thing in the Cave", }),	-- The Thing in the Cave
+			q(34213, { name = "They Have My Son", }),	-- They Have My Son
+			q(34244, { name = "They Took My Father", }),	-- They Took My Father
+			q(33327, { name = "This One Is Just Right", }),	-- This One Is Just Right
+			q(32946, { name = "This Time", }),	-- This Time
+			q(34650, { name = "Thunderlord Invasion", }),	-- Thunderlord Invasion
+			q(34735, { name = "Thunderlord Invasion!", }),	-- Thunderlord Invasion!
+			q(33015, { name = "Thunderlord War-Gronn", }),	-- Thunderlord War-Gronn
+			q(33441, { name = "Thrall Vision", }),	-- Thrall Vision
+			q(34848, { name = "To Even the Odds", }),	-- To Even the Odds
+			q(33028, { name = "To Karabor!", }),	-- To Karabor!
+			q(33253, { name = "To the Defense of Karabor", }),	-- To the Defense of Karabor
+			q(33401, { name = "Torg's Trouble", }),	-- Torg's Trouble
+			q(33352, { name = "Tracking Event: Chief killed", }),	-- Tracking Event: Chief killed
+			q(33418, { name = "Tracking Quest - Failed", }),	-- Tracking Quest - Failed
+			q(33748, { name = "Tracking Quest - Saberon Servent Snip Scene", }),	-- Tracking Quest - Saberon Servent Snip Scene
+			q(34705, { name = "Tracking Quest - Shadowmoon Intro", }),	-- Tracking Quest - Shadowmoon Intro
+			q(33693, { name = "Tracking Quest: First Time at Capping Operation", }),	-- Tracking Quest: First Time at Capping Operation
+			q(33382, { name = "Tracking Quest: Saw Maraad Storm Off", }),	-- Tracking Quest: Saw Maraad Storm Off
+			q(35703, { name = "Tracking: Mill Treasure Barrier 1", }),	-- Tracking: Mill Treasure Barrier 1
+			q(35793, { name = "Transferable Vellum", }),	-- Transferable Vellum
+			q(36331, { name = "Treasure: Above Ogre Race Track", }),	-- Treasure: Above Ogre Race Track
+			q(36325, { name = "Treasure: Above Ogre/Goren Cave", }),	-- Treasure: Above Ogre/Goren Cave
+			q(36319, { name = "Treasure: Arakkoa Hut", }),	-- Treasure: Arakkoa Hut
+			q(34262, { name = "Treasure: Aruuna Mining Cart", }),	-- Treasure: Aruuna Mining Cart
+			q(36334, { name = "Treasure: Beach Near Ogre Race Track", }),	-- Treasure: Beach Near Ogre Race Track
+			q(36328, { name = "Treasure: Behind Arakkoa Camp", }),	-- Treasure: Behind Arakkoa Camp
+			q(36332, { name = "Treasure: Beside Central Pond", }),	-- Treasure: Beside Central Pond
+			q(33498, { name = "Treasure: Bladespire Chef", }),	-- Treasure: Bladespire Chef
+			q(33447, { name = "Treasure: Bladespire Craftsman", }),	-- Treasure: Bladespire Craftsman
+			q(33989, { name = "Treasure: Blasting Charges - Cave A Cache", }),	-- Treasure: Blasting Charges - Cave A Cache
+			q(33991, { name = "Treasure: Blasting Charges - Cave B Cache", }),	-- Treasure: Blasting Charges - Cave B Cache
+			q(33996, { name = "Treasure: Blasting Charges - Cave C Cache", }),	-- Treasure: Blasting Charges - Cave C Cache
+			q(33998, { name = "Treasure: Blasting Charges - Cave D Cache", }),	-- Treasure: Blasting Charges - Cave D Cache
+			q(33975, { name = "Treasure: Blasting Charges - Rubble A", }),	-- Treasure: Blasting Charges - Rubble A
+			q(33990, { name = "Treasure: Blasting Charges - Rubble B", }),	-- Treasure: Blasting Charges - Rubble B
+			q(33995, { name = "Treasure: Blasting Charges - Rubble C", }),	-- Treasure: Blasting Charges - Rubble C
+			q(33997, { name = "Treasure: Blasting Charges - Rubble D", }),	-- Treasure: Blasting Charges - Rubble D
+			q(36320, { name = "Treasure: Front of Saberon Cave", }),	-- Treasure: Front of Saberon Cave
+			q(33925, { name = "Treasure: Frostwolf Cache 01", }),	-- Treasure: Frostwolf Cache 01
+			q(33945, { name = "Treasure: Frostwolf Cache 03", }),	-- Treasure: Frostwolf Cache 03
+			q(33949, { name = "Treasure: Frostwolf Cache 07", }),	-- Treasure: Frostwolf Cache 07
+			q(33016, { name = "Treasure: Frostwolf Supply Cache", }),	-- Treasure: Frostwolf Supply Cache
+			q(34212, { name = "Treasure: Gorgrond Treasure", }),	-- Treasure: Gorgrond Treasure
+			q(34147, { name = "Treasure: Gorgrond Treasure 01", }),	-- Treasure: Gorgrond Treasure 01
+			q(34149, { name = "Treasure: Gorgrond Treasure 02", }),	-- Treasure: Gorgrond Treasure 02
+			q(34151, { name = "Treasure: Gorgrond Treasure 03", }),	-- Treasure: Gorgrond Treasure 03
+			q(34153, { name = "Treasure: Gorgrond Treasure 04", }),	-- Treasure: Gorgrond Treasure 04
+			q(34146, { name = "Treasure: Gorgrond Treasure 05", }),	-- Treasure: Gorgrond Treasure 05
+			q(34155, { name = "Treasure: Gorgrond Treasure 06", }),	-- Treasure: Gorgrond Treasure 06
+			q(34152, { name = "Treasure: Gorgrond Treasure 07", }),	-- Treasure: Gorgrond Treasure 07
+			q(34172, { name = "Treasure: Gorgrond Treasure 08", }),	-- Treasure: Gorgrond Treasure 08
+			q(34173, { name = "Treasure: Gorgrond Treasure 09", }),	-- Treasure: Gorgrond Treasure 09
+			q(34176, { name = "Treasure: Gorgrond Treasure 11", }),	-- Treasure: Gorgrond Treasure 11
+			q(34201, { name = "Treasure: Gorgrond Treasure 13", }),	-- Treasure: Gorgrond Treasure 13
+			q(34177, { name = "Treasure: Gorgrond Treasure 14", }),	-- Treasure: Gorgrond Treasure 14
+			q(34219, { name = "Treasure: Gorgrond Treasure 15", }),	-- Treasure: Gorgrond Treasure 15
+			q(34195, { name = "Treasure: Gorgrond Treasure 16", }),	-- Treasure: Gorgrond Treasure 16
+			q(34206, { name = "Treasure: Gorgrond Treasure 17", }),	-- Treasure: Gorgrond Treasure 17
+			q(34179, { name = "Treasure: Gorgrond Treasure 18", }),	-- Treasure: Gorgrond Treasure 18
+			q(34210, { name = "Treasure: Gorgrond Treasure 19", }),	-- Treasure: Gorgrond Treasure 19
+			q(34211, { name = "Treasure: Gorgrond Treasure 20", }),	-- Treasure: Gorgrond Treasure 20
+			q(34214, { name = "Treasure: Gorgrond Treasure 21", }),	-- Treasure: Gorgrond Treasure 21
+			q(34215, { name = "Treasure: Gorgrond Treasure 22", }),	-- Treasure: Gorgrond Treasure 22
+			q(34218, { name = "Treasure: Gorgrond Treasure 23", }),	-- Treasure: Gorgrond Treasure 23
+			q(34713, { name = "Treasure: Gronnstalker's Cache", }),	-- Treasure: Gronnstalker's Cache
+			q(36318, { name = "Treasure: Hanging Alliance Platform", }),	-- Treasure: Hanging Alliance Platform
+			q(36324, { name = "Treasure: In Ogre/Goren Cave", }),	-- Treasure: In Ogre/Goren Cave
+			q(36321, { name = "Treasure: Iron Horde Boat Chest", }),	-- Treasure: Iron Horde Boat Chest
+			q(33887, { name = "Treasure: Mini-War Machine A", }),	-- Treasure: Mini-War Machine A
+			q(33888, { name = "Treasure: Mini-War Machine B", }),	-- Treasure: Mini-War Machine B
+			q(33889, { name = "Treasure: Mini-War Machine C", }),	-- Treasure: Mini-War Machine C
+			q(33890, { name = "Treasure: Mini-War Machine D", }),	-- Treasure: Mini-War Machine D
+			q(36317, { name = "Treasure: Ogre Arena Entrance Bridge", }),	-- Treasure: Ogre Arena Entrance Bridge
+			q(36330, { name = "Treasure: Ogre Arena Hidden Cache", }),	-- Treasure: Ogre Arena Hidden Cache
+			q(36322, { name = "Treasure: Ogre Tower Hidden Cache", }),	-- Treasure: Ogre Tower Hidden Cache
+			q(36336, { name = "Treasure: On Pillars in Ogre Red Tree Area", }),	-- Treasure: On Pillars in Ogre Red Tree Area
+			q(33930, { name = "Treasure: Saberon Stash", }),	-- Treasure: Saberon Stash
+			q(33571, { name = "Treasure: Shadowmoon Clan Treasure", }),	-- Treasure: Shadowmoon Clan Treasure
+			q(36878, { name = "Treasure: The Light of Karabor", }),	-- Treasure: The Light of Karabor
+			q(33499, { name = "Treasure: Time-Warped Ogre", }),	-- Treasure: Time-Warped Ogre
+			q(36335, { name = "Treasure: Treasure Stump Behind Saberon", }),	-- Treasure: Treasure Stump Behind Saberon
+			q(36333, { name = "Treasure: Treasure Stump Near Central Pond", }),	-- Treasure: Treasure Stump Near Central Pond
+			q(36337, { name = "Treasure: Treasure Stump Near Ogre Race Track", }),	-- Treasure: Treasure Stump Near Ogre Race Track
+			q(36323, { name = "Treasure: Treasure Stump Near Saberon Pond", }),	-- Treasure: Treasure Stump Near Saberon Pond
+			q(36326, { name = "Treasure: Under Horde Bridge", }),	-- Treasure: Under Horde Bridge
+			q(36329, { name = "Treasure: Water in the Red Tree Area", }),	-- Treasure: Water in the Red Tree Area
+			q(36327, { name = "Treasure: Wrecked Ship", }),	-- Treasure: Wrecked Ship
+			q(35282, { name = "Treasure - Glowing Blue Mushroom", }),	-- Treasure - Glowing Blue Mushroom
+			q(35821, { name = "Trophy of Glory: Sodius", }),	-- Trophy of Glory: Sodius
+			q(35822, { name = "Trophy of Glory: Sodius", }),	-- Trophy of Glory: Sodius
+			q(33562, { name = "Trophy: Gorg'ak's Obsidian Spines", }),	-- Trophy: Gorg'ak's Obsidian Spines
+			q(34077, { name = "Trouble to the South", }),	-- Trouble to the South
+			q(35857, { name = "Turbo Survey Bot", }),	-- Turbo Survey Bot
+			q(33726, { name = "Tuurem Task TBD", }),	-- Tuurem Task TBD
+			q(33320, { name = "Two Birds One Power Core", }),	-- Two Birds One Power Core
+			q(35723, { name = "Two-Toned Greaves", }),	-- Two-Toned Greaves
+			q(35768, { name = "Ultra Healing Potion", }),	-- Ultra Healing Potion
+			q(35777, { name = "Unbendable Card", }),	-- Unbendable Card
+			q(33509, { name = "Unexpected Assault", }),	-- Unexpected Assault
+			q(33510, { name = "Unexpected Assault", }),	-- Unexpected Assault
+			q(35008, { name = "UNUSED", }),	-- UNUSED
+			q(35306, { name = "Unused", }),	-- Unused
+			q(35308, { name = "Unused", }),	-- Unused
+			q(35310, { name = "Unused", }),	-- Unused
+			q(35313, { name = "Unused", }),	-- Unused
+			q(35314, { name = "Unused", }),	-- Unused
+			q(35326, { name = "Unused", }),	-- Unused
+			q(35359, { name = "unused", }),	-- unused
+			q(35360, { name = "unused", }),	-- unused
+			q(35361, { name = "unused", }),	-- unused
+			q(35362, { name = "unused", }),	-- unused
+			q(35417, { name = "Unused", }),	-- Unused
+			q(35418, { name = "Unused", }),	-- Unused
+			q(35419, { name = "Unused", }),	-- Unused
+			q(35421, { name = "Unused", }),	-- Unused
+			q(35422, { name = "Unused", }),	-- Unused
+			q(35423, { name = "Unused", }),	-- Unused
+			q(35425, { name = "Unused", }),	-- Unused
+			q(35427, { name = "Unused", }),	-- Unused
+			q(35428, { name = "Unused", }),	-- Unused
+			q(35466, { name = "Unused", }),	-- Unused
+			q(35467, { name = "Unused", }),	-- Unused
+			q(35469, { name = "Unused", }),	-- Unused
+			q(35470, { name = "Unused", }),	-- Unused
+			q(35479, { name = "Unused", }),	-- Unused
+			q(33516, { name = "Un-Safety First", }),	-- Un-Safety First
+			q(35826, { name = "Used Locket", }),	-- Used Locket
+			q(33402, { name = "Verick's Vindicators", }),	-- Verick's Vindicators
+			q(35057, { name = "Vignette XP reward - Frostfire", }),	-- Vignette XP reward - Frostfire
+			q(35161, { name = "Vignette XP reward - Talador", }),	-- Vignette XP reward - Talador
+			q(32911, { name = "Vignette: Ancient Clefthoof (Tracking Quest)", }),	-- Vignette: Ancient Clefthoof (Tracking Quest)
+			q(32913, { name = "Vignette: Arranok's Ritual (Tracking Quest)", }),	-- Vignette: Arranok's Ritual (Tracking Quest)
+			q(34197, { name = "Vignette: Bloodbloom the Colossus", }),	-- Vignette: Bloodbloom the Colossus
+			q(32920, { name = "Vignette: Deathtoll", }),	-- Vignette: Deathtoll
+			q(35996, { name = "Vignette: Depthroot", }),	-- Vignette: Depthroot
+			q(33045, { name = "Vignette: Foreling Circle Ritual", }),	-- Vignette: Foreling Circle Ritual
+			q(35153, { name = "Vignette: Fungal Praetorian", }),	-- Vignette: Fungal Praetorian
+			q(34483, { name = "Vignette: Galzomar", }),	-- Vignette: Galzomar
+			q(34231, { name = "Vignette: Giant Snake", }),	-- Vignette: Giant Snake
+			q(34807, { name = "Vignette: Goldmane the Skinner", }),	-- Vignette: Goldmane the Skinner
+			q(34382, { name = "Vignette: Grand Warlock Duress", }),	-- Vignette: Grand Warlock Duress
+			q(34851, { name = "Vignette: Gruuk", }),	-- Vignette: Gruuk
+			q(33641, { name = "Vignette: Hippo Boss", }),	-- Vignette: Hippo Boss
+			q(33056, { name = "Vignette: Hygrocybe", }),	-- Vignette: Hygrocybe
+			q(34162, { name = "Vignette: Icklarv", }),	-- Vignette: Icklarv
+			q(34143, { name = "Vignette: Kal'rak the Drunk", }),	-- Vignette: Kal'rak the Drunk
+			q(35220, { name = "Vignette: Kharazos the Triumphant", }),	-- Vignette: Kharazos the Triumphant
+			q(36568, { name = "Vignette: Malgosh Shadowkeeper", }),	-- Vignette: Malgosh Shadowkeeper
+			q(34755, { name = "Vignette: Mining Captain Bashgar", }),	-- Vignette: Mining Captain Bashgar
+			q(34170, { name = "Vignette: Moltnar", }),	-- Vignette: Moltnar
+			q(33065, { name = "Vignette: Mooncrush", }),	-- Vignette: Mooncrush
+			q(34127, { name = "Vignette: Mother Bloodtusk", }),	-- Vignette: Mother Bloodtusk
+			q(34160, { name = "Vignette: Nixxie the Goblin", }),	-- Vignette: Nixxie the Goblin
+			q(33035, { name = "Vignette: Pale Capture", }),	-- Vignette: Pale Capture
+			q(33051, { name = "Vignette: Prophecy of Jerrikar", }),	-- Vignette: Prophecy of Jerrikar
+			q(33052, { name = "Vignette: Prophecy of Kraator", }),	-- Vignette: Prophecy of Kraator
+			q(33053, { name = "Vignette: Prophecy of the Warp-Watcher", }),	-- Vignette: Prophecy of the Warp-Watcher
+			q(34243, { name = "Vignette: Rak'nar Muzzlebash", }),	-- Vignette: Rak'nar Muzzlebash
+			q(34198, { name = "Vignette: Roardan", }),	-- Vignette: Roardan
+			q(33057, { name = "Vignette: Rotbelcher", }),	-- Vignette: Rotbelcher
+			q(35244, { name = "Vignette: Skagg", }),	-- Vignette: Skagg
+			q(32921, { name = "Vignette: Skel'tik the Baleful", }),	-- Vignette: Skel'tik the Baleful
+			q(36431, { name = "Vignette: Soul-twister Torek", }),	-- Vignette: Soul-twister Torek
+			q(33036, { name = "Vignette: Starcrusher Roghash", }),	-- Vignette: Starcrusher Roghash
+			q(34168, { name = "Vignette: Stormwave", }),	-- Vignette: Stormwave
+			q(33044, { name = "Vignette: Synodicus", }),	-- Vignette: Synodicus
+			q(33042, { name = "Vignette: Tank Construction", }),	-- Vignette: Tank Construction
+			q(34191, { name = "Vignette: Un'glok Blackfinger", }),	-- Vignette: Un'glok Blackfinger
+			q(34907, { name = "Vignette/Treasure: Lagoon Pool/Giant Clam", }),	-- Vignette/Treasure: Lagoon Pool/Giant Clam
+			q(34652, { name = "Vignette/Treasure: Savage Clam", }),	-- Vignette/Treasure: Savage Clam
+			q(32936, { name = "War Horses!", }),	-- War Horses!
+			q(33906, { name = "War Kangaroo!", }),	-- War Kangaroo!
+			q(34008, { name = "We Are Leaving!", }),	-- We Are Leaving!
+			q(34844, { name = "We Require More Resources", }),	-- We Require More Resources
+			q(35193, { name = "Weapons Of Our Enemies", }),	-- Weapons Of Our Enemies
+			q(33434, { name = "Westfall Race 30", }),	-- Westfall Race 30
+			q(33455, { name = "Westfall Race Practice UNUSED", }),	-- Westfall Race Practice UNUSED
+			q(35799, { name = "Wooly Bedroll", }),	-- Wooly Bedroll
+			q(33959, { name = "You Sunk My Battleship!", }),	-- You Sunk My Battleship!
+			q(36838, { name = "Your Second Alchemy Work Order", }),	-- Your Second Alchemy Work Order
+			q(35172, { name = "Your Second Blacksmithing Work Order", }),	-- Your Second Blacksmithing Work Order
+			q(36839, { name = "Your Second Enchanting Work Order", }),	-- Your Second Enchanting Work Order
+			q(36840, { name = "Your Second Engineering Work Order", }),	-- Your Second Engineering Work Order
+			q(36841, { name = "Your Second Inscription Work Order", }),	-- Your Second Inscription Work Order
+			q(36842, { name = "Your Second Jewelcrafting Work Order", }),	-- Your Second Jewelcrafting Work Order
+			q(36844, { name = "Your Second Leatherworking Work Order", }),	-- Your Second Leatherworking Work Order
+			q(36845, { name = "Your Second Tailoring Work Order", }),	-- Your Second Tailoring Work Order
+			q(33829, { name = "zzOLD Honor Has its Rewards", }),	-- zzOLD Honor Has its Rewards
+			q(36922, { name = "zzzzTITLE TEST", }),	-- zzzzTITLE TEST
+			q(35551, { name = "[Deprecated]", }),	-- [Deprecated]
+			q(35635, { name = "[Deprecated]", }),	-- [Deprecated]
+			q(36113, { name = "[Deprecated] Azuka Bladefury", }),	-- [Deprecated] Azuka Bladefury
+			q(34591, { name = "[Deprecated] Clearing out the Shadows", }),	-- [Deprecated] Clearing out the Shadows
+			q(34640, { name = "[Deprecated] Doorway to Draenor", }),	-- [Deprecated] Doorway to Draenor
+			q(34694, { name = "[Deprecated] Invasion Quest", }),	-- [Deprecated] Invasion Quest
+			q(34059, { name = "[DEPRECATED] Keeping Calm", }),	-- [DEPRECATED] Keeping Calm
+			q(34084, { name = "[DEPRECATED] Keeping Calm", }),	-- [DEPRECATED] Keeping Calm
+			q(34449, { name = "[Deprecated] Kill Thunderlord Master", }),	-- [Deprecated] Kill Thunderlord Master
+			q(33789, { name = "[Deprecated] Lifebloom Orchids", }),	-- [Deprecated] Lifebloom Orchids
+			q(34693, { name = "[Deprecated] Profession Quest", }),	-- [Deprecated] Profession Quest
+			q(36172, { name = "[Deprecated] Put out the Fires", }),	-- [Deprecated] Put out the Fires
+			q(34150, { name = "[Deprecated] Treasure: Gorgrond Treasure", }),	-- [Deprecated] Treasure: Gorgrond Treasure
+			q(34180, { name = "[Deprecated] Treasure: Gorgrond Treasure 02", }),	-- [Deprecated] Treasure: Gorgrond Treasure 02
+			q(35385, { name = "[Deprectated ] Treasure: Shadowmoon Treasure 07", }),	-- [Deprectated ] Treasure: Shadowmoon Treasure 07
+			q(34178, { name = "[Deprecate]Treasure: Gorgrond Treasure 08", }),	-- [Deprecate]Treasure: Gorgrond Treasure 08
+			q(34175, { name = "[Deprecate] Treasure: Gorgrond Treasure 09", }),	-- [Deprecate] Treasure: Gorgrond Treasure 09
+			q(33746, { name = "[DEPRECATED]Y'kish Joins the Party", }),	-- [DEPRECATED]Y'kish Joins the Party
+			q(33442, { name = "[FLAG] Caravan Position Bitflag 01", }),	-- [FLAG] Caravan Position Bitflag 01
+			q(33445, { name = "[FLAG] Caravan Position Bitflag 02", }),	-- [FLAG] Caravan Position Bitflag 02
+			q(33446, { name = "[FLAG] Caravan Position Bitflag 03", }),	-- [FLAG] Caravan Position Bitflag 03
+			q(33054, { name = "[NOTUSED]Vignette: Iron Ball Cache", }),	-- [NOTUSED]Vignette: Iron Ball Cache
+			q(33063, { name = "[NOTUSED]Vignette: Shadowcaller Anga", }),	-- [NOTUSED]Vignette: Shadowcaller Anga
+			q(33034, { name = "[NOTUSED]Vignette: The Obliterator", }),	-- [NOTUSED]Vignette: The Obliterator
+			q(34757, { name = "[PH] Elixir", }),	-- [PH] Elixir
+			q(36154, { name = "[PH] Lumber Mill Rank 02 Alliance", }),	-- [PH] Lumber Mill Rank 02 Alliance
+			q(36155, { name = "[PH] Lumber Mill Rank 03 Alliance", }),	-- [PH] Lumber Mill Rank 03 Alliance
+			q(34282, { name = "<UNUSED>", }),	-- <UNUSED>
+			q(34283, { name = "<UNUSED>", }),	-- <UNUSED>
+			q(34307, { name = "<UNUSED>", }),	-- <UNUSED>
+			q(34308, { name = "<UNUSED>", }),	-- <UNUSED>
+			q(34317, { name = "<UNUSED>", }),	-- <UNUSED>
+			q(34623, { name = "<UNUSED>", }),	-- <UNUSED>
 		})),
 
 		-- 6.0.2
-		expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
-			q(37598, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
-			q(37599, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
-			q(37600, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
-			q(37601, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
-			q(37602, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
-			q(37603, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
-			q(37604, { ["name"] = "Abrogator Stones", }),	-- Abrogator Stones
-			q(37478, { ["name"] = "Amphitheater of Annihilation", }),	-- Amphitheater of Annihilation
-			q(37169, { ["name"] = "Apexis Guardian Ziri'ak", }),	-- Apexis Guardian Ziri'ak
-			q(37476, { ["name"] = "Ashmaul Burial Grounds", }),	-- Ashmaul Burial Grounds
-			q(37625, { ["name"] = "Assault on Magnarok", }),	-- Assault on Magnarok (A)
-			q(37523, { ["name"] = "Assault on the Gorian Proving Grounds", }),	-- Assault on the Gorian Proving Grounds (A)
-			q(37524, { ["name"] = "Assault on the Gorian Proving Grounds", }),	-- Assault on the Gorian Proving Grounds (H)
-			q(37474, { ["name"] = "Basics First", }),	-- Basics First
-			q(37299, { ["name"] = "Bonus Objective: Kill Stormshield Priests", }),	-- Bonus Objective: Kill Stormshield Priests
-			q(37298, { ["name"] = "Bonus Objective: Kill Warspear Priests", }),	-- Bonus Objective: Kill Warspear Priests
-			q(37514, { ["name"] = "Breakers Invasion!! BETA", }),	-- Breakers Invasion!! BETA
-			q(37477, { ["name"] = "Brute's Rise", }),	-- Brute's Rise
-			q(37605, { ["name"] = "Elemental Runes", }),	-- Elemental Runes
-			q(37606, { ["name"] = "Elemental Runes", }),	-- Elemental Runes
-			q(37607, { ["name"] = "Elemental Runes", }),	-- Elemental Runes
-			q(37608, { ["name"] = "Elemental Runes", }),	-- Elemental Runes
-			q(37609, { ["name"] = "Elemental Runes", }),	-- Elemental Runes
-			q(37610, { ["name"] = "Elemental Runes", }),	-- Elemental Runes
-			q(37611, { ["name"] = "Elemental Runes", }),	-- Elemental Runes
-			q(37612, { ["name"] = "Elemental Runes", }),	-- Elemental Runes
-			q(37613, { ["name"] = "Elemental Runes", }),	-- Elemental Runes
-			q(37614, { ["name"] = "Elemental Runes", }),	-- Elemental Runes
-			q(35757, { ["name"] = "Extendable Wand", }),	-- Extendable Wand
-			q(35864, { ["name"] = "Garrison Defense Bot", }),	-- Garrison Defense Bot
-			q(35830, { ["name"] = "Immaculate Statue", }),	-- Immaculate Statue
-			q(37567, { ["name"] = "Interact with Dudebro", }),	-- Interact with Dudebro
-			q(37297, { ["name"] = "Kill Jeron Emberfall", }),	-- Kill Jeron Emberfall
-			q(37295, { ["name"] = "Kill Rylai Crestfall", }),	-- Kill Rylai Crestfall
-			q(37248, { ["name"] = "Mastering the Menagerie", }),	-- Mastering the Menagerie
-			q(37475, { ["name"] = "Molten Quarry", }),	-- Molten Quarry
-			q(37513, { ["name"] = "Ogres Invasion! BETA", }),	-- Ogres Invasion! BETA
-			q(35832, { ["name"] = "Priceless Gryphon Figurine", }),	-- Priceless Gryphon Figurine
-			q(37512, { ["name"] = "Primals Invasion! BETA", }),	-- Primals Invasion! BETA
-			q(35806, { ["name"] = "Rugged Knapsack", }),	-- Rugged Knapsack
-			q(37597, { ["name"] = "Talk to Testie", }),	-- Talk to Testie
-			q(37515, { ["name"] = "The Iron Horde Approaches... BETA", }),	-- The Iron Horde Approaches... BETA
-			q(37508, { ["name"] = "Tracking Event: Stacking the Deck", }),	-- Tracking Event: Stacking the Deck
-			q(37509, { ["name"] = "Tracking Event: Stacking the Deck", }),	-- Tracking Event: Stacking the Deck
-			q(37531, { ["name"] = "Tracking - See Closed Chest", }),	-- Tracking - See Closed Chest
-			q(36343, { ["name"] = "UNUSED", }),	-- UNUSED
-			q(37539, { ["name"] = "UNUSED", }),	-- UNUSED
-			q(37471, { ["name"] = "Vignette: Dahrok Boneshatter", }),	-- Vignette: Dahrok Boneshatter
-			q(37650, { ["name"] = "Vignette: Iron Horde Caravan", }),	-- Vignette: Iron Horde Caravan
-			q(37389, { ["name"] = "Vignette: Ug'lok the Frozen", }),	-- Vignette: Ug'lok the Frozen
-			q(37584, { ["name"] = "Your Second Alchemy Work Order", }),	-- Your Second Alchemy Work Order
-			q(37587, { ["name"] = "Your Second Blacksmithing Work Order", }),	-- Your Second Blacksmithing Work Order
-			q(37589, { ["name"] = "Your Second Enchanting Work Order", }),	-- Your Second Enchanting Work Order
-			q(37590, { ["name"] = "Your Second Engineering Work Order", }),	-- Your Second Engineering Work Order
-			q(37591, { ["name"] = "Your Second Inscription Work Order", }),	-- Your Second Inscription Work Order
-			q(37595, { ["name"] = "Your Second Inscription Work Order", }),	-- Your Second Inscription Work Order
-			q(37592, { ["name"] = "Your Second Jewelcrafting Work Order", }),	-- Your Second Jewelcrafting Work Order
-			q(37593, { ["name"] = "Your Second Leatherworking Work Order", }),	-- Your Second Leatherworking Work Order
-			q(37594, { ["name"] = "Your Second Tailoring Work Order", }),	-- Your Second Tailoring Work Order
+		expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+			q(37598, { name = "Abrogator Stones", }),	-- Abrogator Stones
+			q(37599, { name = "Abrogator Stones", }),	-- Abrogator Stones
+			q(37600, { name = "Abrogator Stones", }),	-- Abrogator Stones
+			q(37601, { name = "Abrogator Stones", }),	-- Abrogator Stones
+			q(37602, { name = "Abrogator Stones", }),	-- Abrogator Stones
+			q(37603, { name = "Abrogator Stones", }),	-- Abrogator Stones
+			q(37604, { name = "Abrogator Stones", }),	-- Abrogator Stones
+			q(37478, { name = "Amphitheater of Annihilation", }),	-- Amphitheater of Annihilation
+			q(37169, { name = "Apexis Guardian Ziri'ak", }),	-- Apexis Guardian Ziri'ak
+			q(37476, { name = "Ashmaul Burial Grounds", }),	-- Ashmaul Burial Grounds
+			q(37625, { name = "Assault on Magnarok", }),	-- Assault on Magnarok (A)
+			q(37523, { name = "Assault on the Gorian Proving Grounds", }),	-- Assault on the Gorian Proving Grounds (A)
+			q(37524, { name = "Assault on the Gorian Proving Grounds", }),	-- Assault on the Gorian Proving Grounds (H)
+			q(37474, { name = "Basics First", }),	-- Basics First
+			q(37299, { name = "Bonus Objective: Kill Stormshield Priests", }),	-- Bonus Objective: Kill Stormshield Priests
+			q(37298, { name = "Bonus Objective: Kill Warspear Priests", }),	-- Bonus Objective: Kill Warspear Priests
+			q(37514, { name = "Breakers Invasion!! BETA", }),	-- Breakers Invasion!! BETA
+			q(37477, { name = "Brute's Rise", }),	-- Brute's Rise
+			q(37605, { name = "Elemental Runes", }),	-- Elemental Runes
+			q(37606, { name = "Elemental Runes", }),	-- Elemental Runes
+			q(37607, { name = "Elemental Runes", }),	-- Elemental Runes
+			q(37608, { name = "Elemental Runes", }),	-- Elemental Runes
+			q(37609, { name = "Elemental Runes", }),	-- Elemental Runes
+			q(37610, { name = "Elemental Runes", }),	-- Elemental Runes
+			q(37611, { name = "Elemental Runes", }),	-- Elemental Runes
+			q(37612, { name = "Elemental Runes", }),	-- Elemental Runes
+			q(37613, { name = "Elemental Runes", }),	-- Elemental Runes
+			q(37614, { name = "Elemental Runes", }),	-- Elemental Runes
+			q(35757, { name = "Extendable Wand", }),	-- Extendable Wand
+			q(35864, { name = "Garrison Defense Bot", }),	-- Garrison Defense Bot
+			q(35830, { name = "Immaculate Statue", }),	-- Immaculate Statue
+			q(37567, { name = "Interact with Dudebro", }),	-- Interact with Dudebro
+			q(37297, { name = "Kill Jeron Emberfall", }),	-- Kill Jeron Emberfall
+			q(37295, { name = "Kill Rylai Crestfall", }),	-- Kill Rylai Crestfall
+			q(37248, { name = "Mastering the Menagerie", }),	-- Mastering the Menagerie
+			q(37475, { name = "Molten Quarry", }),	-- Molten Quarry
+			q(37513, { name = "Ogres Invasion! BETA", }),	-- Ogres Invasion! BETA
+			q(35832, { name = "Priceless Gryphon Figurine", }),	-- Priceless Gryphon Figurine
+			q(37512, { name = "Primals Invasion! BETA", }),	-- Primals Invasion! BETA
+			q(35806, { name = "Rugged Knapsack", }),	-- Rugged Knapsack
+			q(37597, { name = "Talk to Testie", }),	-- Talk to Testie
+			q(37515, { name = "The Iron Horde Approaches... BETA", }),	-- The Iron Horde Approaches... BETA
+			q(37508, { name = "Tracking Event: Stacking the Deck", }),	-- Tracking Event: Stacking the Deck
+			q(37509, { name = "Tracking Event: Stacking the Deck", }),	-- Tracking Event: Stacking the Deck
+			q(37531, { name = "Tracking - See Closed Chest", }),	-- Tracking - See Closed Chest
+			q(36343, { name = "UNUSED", }),	-- UNUSED
+			q(37539, { name = "UNUSED", }),	-- UNUSED
+			q(37471, { name = "Vignette: Dahrok Boneshatter", }),	-- Vignette: Dahrok Boneshatter
+			q(37650, { name = "Vignette: Iron Horde Caravan", }),	-- Vignette: Iron Horde Caravan
+			q(37389, { name = "Vignette: Ug'lok the Frozen", }),	-- Vignette: Ug'lok the Frozen
+			q(37584, { name = "Your Second Alchemy Work Order", }),	-- Your Second Alchemy Work Order
+			q(37587, { name = "Your Second Blacksmithing Work Order", }),	-- Your Second Blacksmithing Work Order
+			q(37589, { name = "Your Second Enchanting Work Order", }),	-- Your Second Enchanting Work Order
+			q(37590, { name = "Your Second Engineering Work Order", }),	-- Your Second Engineering Work Order
+			q(37591, { name = "Your Second Inscription Work Order", }),	-- Your Second Inscription Work Order
+			q(37595, { name = "Your Second Inscription Work Order", }),	-- Your Second Inscription Work Order
+			q(37592, { name = "Your Second Jewelcrafting Work Order", }),	-- Your Second Jewelcrafting Work Order
+			q(37593, { name = "Your Second Leatherworking Work Order", }),	-- Your Second Leatherworking Work Order
+			q(37594, { name = "Your Second Tailoring Work Order", }),	-- Your Second Tailoring Work Order
 		})),
 
 		-- 6.0.3
-		expansion(EXPANSION.WOD, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_3 } }, {
-			q(33466, { ["name"] = "Rally the Artificers", }),	-- Rally the Artificers
+		expansion(EXPANSION.WOD, patch(0,3), bubbleDownSelf({ timeline = { CREATED_6_0_3 } }, {
+			q(33466, { name = "Rally the Artificers", }),	-- Rally the Artificers
 		})),
 
 		-- 6.1.0
-		expansion(EXPANSION.WOD, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_6_1_0 } }, {
-			q(35256, { ["name"] = "A Heart Unbroken", }),	-- A Heart Unbroken
-			q(38204, { ["name"] = "Assault on the Gorian Proving Grounds", }),	-- Assault on the Gorian Proving Grounds (A)
-			q(38205, { ["name"] = "Assault on the Gorian Proving Grounds", }),	-- Assault on the Gorian Proving Grounds (H)
-			q(37751, { ["name"] = "Bounties Active", }),	-- Bounties Active
-			q(38005, { ["name"] = "delete me", }),	-- delete me
-			q(38006, { ["name"] = "delete me", }),	-- delete me
-			q(38297, { ["name"] = "Herbs Galore", ["_drop"] = { "g" }, }),	-- Herbs Galore
-			q(38298, { ["name"] = "Herbs Galore", ["_drop"] = { "g" }, }),	-- Herbs Galore
-			q(36293, { ["name"] = "It's Gotta Work!", }),	-- It's Gotta Work!
-			q(38245, { ["name"] = "Lots of Ore", ["_drop"] = { "g" }, }),	-- Lots of Ore
-			q(38194, { ["name"] = "Missive: Assault on the Gorian Proving Grounds", }),	-- Missive: Assault on the Gorian Proving Grounds
-			q(38202, { ["name"] = "Missive: Assault on the Gorian Proving Grounds", }),	-- Missive: Assault on the Gorian Proving Grounds
-			q(38244, { ["name"] = "More Ore", ["_drop"] = { "g" }, }),	-- More Ore
-			q(37752, { ["name"] = "Pet Battles Active", }),	-- Pet Battles Active
-			q(37972, { ["name"] = "Pet Battles Not Active", }),	-- Pet Battles Not Active
-			q(37974, { ["name"] = "Pet Battles Not Active", }),	-- Pet Battles Not Active
-			q(37975, { ["name"] = "Pet Battles Not Active", }),	-- Pet Battles Not Active
-			q(37750, { ["name"] = "Professions Active", }),	-- Professions Active
-			q(38240, { ["name"] = "Raid Active", }),	-- Raid Active
-			q(37753, { ["name"] = "Relic Hunter Active", }),	-- Relic Hunter Active
-			q(38288, { ["name"] = "Raw Beast Hides", ["_drop"] = { "g" }, }),	-- Raw Beast Hides
-			q(38289, { ["name"] = "Raw Beast Hides", ["_drop"] = { "g" }, }),	-- Raw Beast Hides
-			q(38291, { ["name"] = "Some Dust", ["_drop"] = { "g" }, }),	-- Some Dust
-			q(38292, { ["name"] = "Some Dust", ["_drop"] = { "g" }, }),	-- Some Dust
-			q(38294, { ["name"] = "Sumptuous Fur", ["_drop"] = { "g" }, }),	-- Sumptuous Fur
-			q(38295, { ["name"] = "Sumptuous Fur", ["_drop"] = { "g" }, }),	-- Sumptuous Fur
-			q(36496, { ["name"] = "The Lumber Mill", }),	-- The Lumber Mill
-			q(35394, { ["name"] = "The Pale Threat", }),	-- The Pale Threat
-			q(37800, { ["name"] = "Tracking Quest: Start the Garrison Campaign", }),	-- Tracking Quest: Start the Garrison Campaign
-			q(38003, { ["name"] = "Vignette: Killed Gaiju", }),	-- Vignette: Killed Gaiju
-			q(38004, { ["name"] = "Vignette: Looted Treasure", }),	-- Vignette: Looted Treasure
-			q(37842, { ["name"] = "Vignette: Yaeger-367", }),	-- Vignette: Yaeger-367
-			q(38007, { ["name"] = "zzOldEMPTY TEST", }),	-- zzOldEMPTY TEST
+		expansion(EXPANSION.WOD, patch(1,0), bubbleDownSelf({ timeline = { CREATED_6_1_0 } }, {
+			q(35256, { name = "A Heart Unbroken", }),	-- A Heart Unbroken
+			q(38204, { name = "Assault on the Gorian Proving Grounds", }),	-- Assault on the Gorian Proving Grounds (A)
+			q(38205, { name = "Assault on the Gorian Proving Grounds", }),	-- Assault on the Gorian Proving Grounds (H)
+			q(37751, { name = "Bounties Active", }),	-- Bounties Active
+			q(38005, { name = "delete me", }),	-- delete me
+			q(38006, { name = "delete me", }),	-- delete me
+			q(38297, { name = "Herbs Galore", _drop = { "g" }, }),	-- Herbs Galore
+			q(38298, { name = "Herbs Galore", _drop = { "g" }, }),	-- Herbs Galore
+			q(36293, { name = "It's Gotta Work!", }),	-- It's Gotta Work!
+			q(38245, { name = "Lots of Ore", _drop = { "g" }, }),	-- Lots of Ore
+			q(38194, { name = "Missive: Assault on the Gorian Proving Grounds", }),	-- Missive: Assault on the Gorian Proving Grounds
+			q(38202, { name = "Missive: Assault on the Gorian Proving Grounds", }),	-- Missive: Assault on the Gorian Proving Grounds
+			q(38244, { name = "More Ore", _drop = { "g" }, }),	-- More Ore
+			q(37752, { name = "Pet Battles Active", }),	-- Pet Battles Active
+			q(37972, { name = "Pet Battles Not Active", }),	-- Pet Battles Not Active
+			q(37974, { name = "Pet Battles Not Active", }),	-- Pet Battles Not Active
+			q(37975, { name = "Pet Battles Not Active", }),	-- Pet Battles Not Active
+			q(37750, { name = "Professions Active", }),	-- Professions Active
+			q(38240, { name = "Raid Active", }),	-- Raid Active
+			q(37753, { name = "Relic Hunter Active", }),	-- Relic Hunter Active
+			q(38288, { name = "Raw Beast Hides", _drop = { "g" }, }),	-- Raw Beast Hides
+			q(38289, { name = "Raw Beast Hides", _drop = { "g" }, }),	-- Raw Beast Hides
+			q(38291, { name = "Some Dust", _drop = { "g" }, }),	-- Some Dust
+			q(38292, { name = "Some Dust", _drop = { "g" }, }),	-- Some Dust
+			q(38294, { name = "Sumptuous Fur", _drop = { "g" }, }),	-- Sumptuous Fur
+			q(38295, { name = "Sumptuous Fur", _drop = { "g" }, }),	-- Sumptuous Fur
+			q(36496, { name = "The Lumber Mill", }),	-- The Lumber Mill
+			q(35394, { name = "The Pale Threat", }),	-- The Pale Threat
+			q(37800, { name = "Tracking Quest: Start the Garrison Campaign", }),	-- Tracking Quest: Start the Garrison Campaign
+			q(38003, { name = "Vignette: Killed Gaiju", }),	-- Vignette: Killed Gaiju
+			q(38004, { name = "Vignette: Looted Treasure", }),	-- Vignette: Looted Treasure
+			q(37842, { name = "Vignette: Yaeger-367", }),	-- Vignette: Yaeger-367
+			q(38007, { name = "zzOldEMPTY TEST", }),	-- zzOldEMPTY TEST
 		})),
 
 		-- 6.2.0
-		expansion(EXPANSION.WOD, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_6_2_0 } }, {
-			q(38592, { ["name"] = "6.2 Tanaan Max-level Choice Reward Summary: Group", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
-			q(38594, { ["name"] = "6.2 Tanaan Max-level Choice Reward Summary: Group", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
-			q(37888, { ["name"] = "6.2 Tanaan Max-level Choice Reward Summary: Solo", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Solo
-			q(37947, { ["name"] = "6.2 Tanaan Max-level Choice Reward Summary: Solo", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Solo
-			q(39147, { ["name"] = "6.2 Tanaan - PTR - Unlock Tanaan Debug", }),	-- 6.2 Tanaan - PTR - Unlock Tanaan Debug
-			q(39294, { ["name"] = "Ashran Dominance", }),	-- Ashran Dominance
-			q(39520, { ["name"] = "Ashran Dominance", }),	-- Ashran Dominance
-			q(39522, { ["name"] = "Ashran Dominance", }),	-- Ashran Dominance
-			q(39263, { ["name"] = "Ashran Excavation", }),	-- Ashran Excavation
-			q(38874, { ["name"] = "BAD", }),	-- BAD
-			q(39264, { ["name"] = "Bonus Objective: Ashran Excavation", }),	-- Bonus Objective: Ashran Excavation
-			q(38633, { ["name"] = "Burning Importance", }),	-- Burning Importance
-			q(38924, { ["name"] = "Continue the Domination", }),	-- Continue the Domination
-			q(38926, { ["name"] = "Continue the Domination", }),	-- Continue the Domination
-			q(39521, { ["name"] = "Continue the Domination", }),	-- Continue the Domination
-			q(39523, { ["name"] = "Continue the Domination", }),	-- Continue the Domination
-			q(38707, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(38733, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(39076, { ["name"] = "DEPRICATED", }),	-- DEPRICATED
-			q(37754, { ["name"] = "Dungeon Active", }),	-- Dungeon Active
-			q(39370, { ["name"] = "Equipment Blueprint: Ammo Reserves", }),	-- Equipment Blueprint: Ammo Reserves
-			q(39369, { ["name"] = "Equipment Blueprint: Automated Sky Scanner", }),	-- Equipment Blueprint: Automated Sky Scanner
-			q(39368, { ["name"] = "Equipment Blueprint: Blast Furnace", }),	-- Equipment Blueprint: Blast Furnace
-			q(39367, { ["name"] = "Equipment Blueprint: Extra Quarters", }),	-- Equipment Blueprint: Extra Quarters
-			q(39362, { ["name"] = "Equipment Blueprint: Q-43 Noisemaker Mines", }),	-- Equipment Blueprint: Q-43 Noisemaker Mines
-			q(39361, { ["name"] = "Equipment Blueprint: Sonic Amplification Field", }),	-- Equipment Blueprint: Sonic Amplification Field
-			q(39461, { ["name"] = "NOT USED", }),	-- NOT USED
-			q(39002, { ["name"] = "Ogres of the Deep", }),	-- Ogres of the Deep
-			q(38214, { ["name"] = "REUSE", }),	-- REUSE
-			q(38222, { ["name"] = "REUSE", }),	-- REUSE
-			q(39524, { ["name"] = "Slay Them All!", }),	-- Slay Them All!
-			q(39525, { ["name"] = "Slay Them All!", }),	-- Slay Them All!
-			q(38843, { ["name"] = "Smashing Eggs", }),	-- Smashing Eggs
-			q(39001, { ["name"] = "To Farahlon!", }),	-- To Farahlon!
-			q(39036, { ["name"] = "Tracking: Alliance Siegebreaker", }),	-- Tracking: Alliance Siegebreaker
-			q(39035, { ["name"] = "Tracking: Horde Siegebreaker", }),	-- Tracking: Horde Siegebreaker
-			q(39037, { ["name"] = "Tracking: Iron Horde Siegebreaker", }),	-- Tracking: Iron Horde Siegebreaker
-			q(39038, { ["name"] = "Tracking: Resource Rich", }),	-- Tracking: Resource Rich
-			q(38280, { ["name"] = "Treasure: Skragg's Buried Treasure", }),	-- Treasure: Skragg's Buried Treasure
-			q(37749, { ["name"] = "Trials of Khadgar: Iron Maidens", }),	-- Trials of Khadgar: Iron Maidens
-			q(38221, { ["name"] = "UNUSED", }),	-- UNUSED
-			q(38261, { ["name"] = "UNUSED", }),	-- UNUSED
-			q(38022, { ["name"] = "[DEPRECATED]Assault on the Temple of Sha'naar", }),	-- [DEPRECATED]Assault on the Temple of Sha'naar
+		expansion(EXPANSION.WOD, patch(2,0), bubbleDownSelf({ timeline = { CREATED_6_2_0 } }, {
+			q(38592, { name = "6.2 Tanaan Max-level Choice Reward Summary: Group", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
+			q(38594, { name = "6.2 Tanaan Max-level Choice Reward Summary: Group", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Group
+			q(37888, { name = "6.2 Tanaan Max-level Choice Reward Summary: Solo", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Solo
+			q(37947, { name = "6.2 Tanaan Max-level Choice Reward Summary: Solo", }),	-- 6.2 Tanaan Max-level Choice Reward Summary: Solo
+			q(39147, { name = "6.2 Tanaan - PTR - Unlock Tanaan Debug", }),	-- 6.2 Tanaan - PTR - Unlock Tanaan Debug
+			q(39294, { name = "Ashran Dominance", }),	-- Ashran Dominance
+			q(39520, { name = "Ashran Dominance", }),	-- Ashran Dominance
+			q(39522, { name = "Ashran Dominance", }),	-- Ashran Dominance
+			q(39263, { name = "Ashran Excavation", }),	-- Ashran Excavation
+			q(38874, { name = "BAD", }),	-- BAD
+			q(39264, { name = "Bonus Objective: Ashran Excavation", }),	-- Bonus Objective: Ashran Excavation
+			q(38633, { name = "Burning Importance", }),	-- Burning Importance
+			q(38924, { name = "Continue the Domination", }),	-- Continue the Domination
+			q(38926, { name = "Continue the Domination", }),	-- Continue the Domination
+			q(39521, { name = "Continue the Domination", }),	-- Continue the Domination
+			q(39523, { name = "Continue the Domination", }),	-- Continue the Domination
+			q(38707, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(38733, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(39076, { name = "DEPRICATED", }),	-- DEPRICATED
+			q(37754, { name = "Dungeon Active", }),	-- Dungeon Active
+			q(39370, { name = "Equipment Blueprint: Ammo Reserves", }),	-- Equipment Blueprint: Ammo Reserves
+			q(39369, { name = "Equipment Blueprint: Automated Sky Scanner", }),	-- Equipment Blueprint: Automated Sky Scanner
+			q(39368, { name = "Equipment Blueprint: Blast Furnace", }),	-- Equipment Blueprint: Blast Furnace
+			q(39367, { name = "Equipment Blueprint: Extra Quarters", }),	-- Equipment Blueprint: Extra Quarters
+			q(39362, { name = "Equipment Blueprint: Q-43 Noisemaker Mines", }),	-- Equipment Blueprint: Q-43 Noisemaker Mines
+			q(39361, { name = "Equipment Blueprint: Sonic Amplification Field", }),	-- Equipment Blueprint: Sonic Amplification Field
+			q(39461, { name = "NOT USED", }),	-- NOT USED
+			q(39002, { name = "Ogres of the Deep", }),	-- Ogres of the Deep
+			q(38214, { name = "REUSE", }),	-- REUSE
+			q(38222, { name = "REUSE", }),	-- REUSE
+			q(39524, { name = "Slay Them All!", }),	-- Slay Them All!
+			q(39525, { name = "Slay Them All!", }),	-- Slay Them All!
+			q(38843, { name = "Smashing Eggs", }),	-- Smashing Eggs
+			q(39001, { name = "To Farahlon!", }),	-- To Farahlon!
+			q(39036, { name = "Tracking: Alliance Siegebreaker", }),	-- Tracking: Alliance Siegebreaker
+			q(39035, { name = "Tracking: Horde Siegebreaker", }),	-- Tracking: Horde Siegebreaker
+			q(39037, { name = "Tracking: Iron Horde Siegebreaker", }),	-- Tracking: Iron Horde Siegebreaker
+			q(39038, { name = "Tracking: Resource Rich", }),	-- Tracking: Resource Rich
+			q(38280, { name = "Treasure: Skragg's Buried Treasure", }),	-- Treasure: Skragg's Buried Treasure
+			q(37749, { name = "Trials of Khadgar: Iron Maidens", }),	-- Trials of Khadgar: Iron Maidens
+			q(38221, { name = "UNUSED", }),	-- UNUSED
+			q(38261, { name = "UNUSED", }),	-- UNUSED
+			q(38022, { name = "[DEPRECATED]Assault on the Temple of Sha'naar", }),	-- [DEPRECATED]Assault on the Temple of Sha'naar
 		})),
 
 		-- 6.2.1
-		expansion(EXPANSION.WOD, patch(2,1), bubbleDownSelf({ ["timeline"] = { CREATED_6_2_2 } }, {
-			q(39292, { ["name"] = "Ashran Dominance", }),	-- Ashran Dominance
-			q(38260, { ["name"] = "Beachhead", }),	-- Beachhead
-			q(38575, { ["name"] = "Beachhead", }),	-- Beachhead
-			q(36593, { ["name"] = "Breakers Invasion! UNUSED", }),	-- Breakers Invasion! UNUSED
-			q(39129, { ["name"] = "Ill Tempered", ["_drop"] = { "g" }, }),	-- Ill Tempered
-			q(38224, { ["name"] = "REUSE", }),	-- REUSE
-			q(36572, { ["name"] = "Tangleheart Return", }),	-- Tangleheart Return
-			q(36661, { ["name"] = "The Power of the Red", }),	-- The Power of the Red
-			q(38855, { ["name"] = "zzDEPRECATEDzz Fighting on the Front", }),	-- zzDEPRECATEDzz Fighting on the Front
+		expansion(EXPANSION.WOD, patch(2,1), bubbleDownSelf({ timeline = { CREATED_6_2_2 } }, {
+			q(39292, { name = "Ashran Dominance", }),	-- Ashran Dominance
+			q(38260, { name = "Beachhead", }),	-- Beachhead
+			q(38575, { name = "Beachhead", }),	-- Beachhead
+			q(36593, { name = "Breakers Invasion! UNUSED", }),	-- Breakers Invasion! UNUSED
+			q(39129, { name = "Ill Tempered", _drop = { "g" }, }),	-- Ill Tempered
+			q(38224, { name = "REUSE", }),	-- REUSE
+			q(36572, { name = "Tangleheart Return", }),	-- Tangleheart Return
+			q(36661, { name = "The Power of the Red", }),	-- The Power of the Red
+			q(38855, { name = "zzDEPRECATEDzz Fighting on the Front", }),	-- zzDEPRECATEDzz Fighting on the Front
 		})),
 
 		-- 6.2.2
-		expansion(EXPANSION.WOD, patch(2,2), bubbleDownSelf({ ["timeline"] = { CREATED_6_2_2 } }, {
-			q(35499, { ["name"] = "Blow up towers", }),	-- Blow up towers
-			q(39052, { ["name"] = "Blueprints Are Important", }),	-- Blueprints Are Important
-			q(33560, { ["name"] = "Light's Rest", }),	-- Light's Rest
-			q(37924, { ["name"] = "Maritime Salvage", }),	-- Maritime Salvage
-			q(39608, { ["name"] = "Mysterious Brew Consumed", }),	-- Mysterious Brew Consumed
-			q(33911, { ["name"] = "No Draenei Left Behind", }),	-- No Draenei Left Behind
-			q(34120, { ["name"] = "The Shard of Shadows", }),	-- The Shard of Shadows
-			q(37113, { ["name"] = "Thisalee Crow", }),	-- Thisalee Crow
-			q(39714, { ["name"] = "Where Are the Children?", }),	-- Where Are the Children?
+		expansion(EXPANSION.WOD, patch(2,2), bubbleDownSelf({ timeline = { CREATED_6_2_2 } }, {
+			q(35499, { name = "Blow up towers", }),	-- Blow up towers
+			q(39052, { name = "Blueprints Are Important", }),	-- Blueprints Are Important
+			q(33560, { name = "Light's Rest", }),	-- Light's Rest
+			q(37924, { name = "Maritime Salvage", }),	-- Maritime Salvage
+			q(39608, { name = "Mysterious Brew Consumed", }),	-- Mysterious Brew Consumed
+			q(33911, { name = "No Draenei Left Behind", }),	-- No Draenei Left Behind
+			q(34120, { name = "The Shard of Shadows", }),	-- The Shard of Shadows
+			q(37113, { name = "Thisalee Crow", }),	-- Thisalee Crow
+			q(39714, { name = "Where Are the Children?", }),	-- Where Are the Children?
 		})),
 
 		-- 6.x.x
@@ -2059,1013 +2059,1013 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.1
-		expansion(EXPANSION.LEGION, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
-			q(40103, { ["name"] = "7.0 ALPHA DK TEST QUEST", }),	-- 7.0 ALPHA DK TEST QUEST
-			q(39846, { ["name"] = "7.0 Dalaran - Treasure 001 - Burnt Cart", }),	-- 7.0 Dalaran - Treasure 001 - Burnt Cart
-			q(39507, { ["name"] = "7.0 Highmountain - Treasure 062 - Pinerock Basin", }),	-- 7.0 Highmountain - Treasure 062 - Pinerock Basin
-			q(38215, { ["name"] = "7.0 Stormheim - Treasure 015 - Haustvald - ZTO", }),	-- 7.0 Stormheim - Treasure 015 - Haustvald - ZTO
-			q(38494, { ["name"] = "7.0 Stormheim - Treasure 016 - Bear Cave - ZTO", }),	-- 7.0 Stormheim - Treasure 016 - Bear Cave - ZTO
-			q(38509, { ["name"] = "7.0 Stormheim - Treasure 021 - Helheim - ZTO", }),	-- 7.0 Stormheim - Treasure 021 - Helheim - ZTO
-			q(38511, { ["name"] = "7.0 Stormheim - Treasure 022 - Helheim - ZTO", }),	-- 7.0 Stormheim - Treasure 022 - Helheim - ZTO
-			q(40066, { ["name"] = "7.0 Stormheim - Treasure 032 - Blackbeak Overlook - twh", }),	-- 7.0 Stormheim - Treasure 032 - Blackbeak Overlook - twh
-			q(40067, { ["name"] = "7.0 Stormheim - Vignette: Boulderfall - twh", }),	-- 7.0 Stormheim - Vignette: Boulderfall - twh
-			q(40100, { ["name"] = "7.0 Stormheim - Vignette: Eileen the Raven - twh", }),	-- 7.0 Stormheim - Vignette: Eileen the Raven - twh
-			q(40097, { ["name"] = "7.0 Stormheim - Vignette: Sunbreeze - twh", }),	-- 7.0 Stormheim - Vignette: Sunbreeze - twh
-			q(41048, { ["name"] = "7.0 Suramar - Treasure 003 - Jandvik - twh", }),	-- 7.0 Suramar - Treasure 003 - Jandvik - twh
-			q(41049, { ["name"] = "7.0 Suramar - Treasure 004 - Jandvik - twh", }),	-- 7.0 Suramar - Treasure 004 - Jandvik - twh
-			q(41050, { ["name"] = "7.0 Suramar - Treasure 005 - Jandvik - twh", }),	-- 7.0 Suramar - Treasure 005 - Jandvik - twh
-			q(41051, { ["name"] = "7.0 Suramar - Treasure 006 - Jandvik - twh", }),	-- 7.0 Suramar - Treasure 006 - Jandvik - twh
-			q(41681, { ["name"] = "7.0 Suramar - Treasure 007 - Jandvik - twh", }),	-- 7.0 Suramar - Treasure 007 - Jandvik - twh
-			q(41682, { ["name"] = "7.0 Suramar - Treasure 008 - Sashj'tar Ruins - twh", }),	-- 7.0 Suramar - Treasure 008 - Sashj'tar Ruins - twh
-			q(41126, { ["name"] = "7.0 Suramar - Vignette: Flotsam - twh", }),	-- 7.0 Suramar - Vignette: Flotsam - twh
-			q(41134, { ["name"] = "7.0 Suramar - Vignette: Jetsam - twh", }),	-- 7.0 Suramar - Vignette: Jetsam - twh
-			q(41142, { ["name"] = "7.0 Suramar - Vignette: Khory - twh", }),	-- 7.0 Suramar - Vignette: Khory - twh
-			q(40399, { ["name"] = "7.0 Suramar - Vignette: Sailor's Nightmare - twh", }),	-- 7.0 Suramar - Vignette: Sailor's Nightmare - twh
-			q(39099, { ["name"] = "7.0 Val'sharah - Hollow - Small Treasure 000 - twh", }),	-- 7.0 Val'sharah - Hollow - Small Treasure 000 - twh
-			q(39100, { ["name"] = "7.0 Val'sharah - Hollow - Small Treasure 001 - twh", }),	-- 7.0 Val'sharah - Hollow - Small Treasure 001 - twh
-			q(39101, { ["name"] = "7.0 Val'sharah - Hollow - Small Treasure 002 - twh", }),	-- 7.0 Val'sharah - Hollow - Small Treasure 002 - twh
-			q(39110, { ["name"] = "7.0 Val'sharah - Rook - Large Treasure 000 - twh", }),	-- 7.0 Val'sharah - Rook - Large Treasure 000 - twh
-			q(39109, { ["name"] = "7.0 Val'sharah - Rook - Medium Treasure 001 - twh", }),	-- 7.0 Val'sharah - Rook - Medium Treasure 001 - twh
-			q(39103, { ["name"] = "7.0 Val'sharah - Rook - Small Treasure 000 - twh", }),	-- 7.0 Val'sharah - Rook - Small Treasure 000 - twh
-			q(39104, { ["name"] = "7.0 Val'sharah - Rook - Small Treasure 001 - twh", }),	-- 7.0 Val'sharah - Rook - Small Treasure 001 - twh
-			q(39105, { ["name"] = "7.0 Val'sharah - Rook - Small Treasure 002 - twh", }),	-- 7.0 Val'sharah - Rook - Small Treasure 002 - twh
-			q(39106, { ["name"] = "7.0 Val'sharah - Rook - Small Treasure 003 - twh", }),	-- 7.0 Val'sharah - Rook - Small Treasure 003 - twh
-			q(39114, { ["name"] = "7.0 Val'sharah - Ruins - Medium Treasure 000 - twh", }),	-- 7.0 Val'sharah - Ruins - Medium Treasure 000 - twh
-			q(39111, { ["name"] = "7.0 Val'sharah - Ruins - Small Treasure 000 - twh", }),	-- 7.0 Val'sharah - Ruins - Small Treasure 000 - twh
-			q(39112, { ["name"] = "7.0 Val'sharah - Ruins - Small Treasure 001 - twh", }),	-- 7.0 Val'sharah - Ruins - Small Treasure 001 - twh
-			q(39113, { ["name"] = "7.0 Val'sharah - Ruins - Small Treasure 002 - twh", }),	-- 7.0 Val'sharah - Ruins - Small Treasure 002 - twh
-			q(40273, { ["name"] = "7.0 Val'sharah - Temple of Elune - Medium Treasure 001 - bic", }),	-- 7.0 Val'sharah - Temple of Elune - Medium Treasure 001 - bic
-			q(38392, { ["name"] = "7.0 Val'sharah - Treasure 014 - Malorne's Refuge - twh", }),	-- 7.0 Val'sharah - Treasure 014 - Malorne's Refuge - twh
-			q(38393, { ["name"] = "7.0 Val'sharah - Treasure 015 - Malorne's Refuge - twh", }),	-- 7.0 Val'sharah - Treasure 015 - Malorne's Refuge - twh
-			q(38895, { ["name"] = "7.0 Val'sharah - Vignette: Swiftflight - Treasure001 - twh", }),	-- 7.0 Val'sharah - Vignette: Swiftflight - Treasure001 - twh
-			q(40272, { ["name"] = "7.0 Val'sharah - Village - Medium Treasure 001 - twh", }),	-- 7.0 Val'sharah - Village - Medium Treasure 001 - twh
-			q(39094, { ["name"] = "7.0 Val'sharah - Village - Small Treasure 001 - twh", }),	-- 7.0 Val'sharah - Village - Small Treasure 001 - twh
-			q(39095, { ["name"] = "7.0 Val'sharah - Village - Small Treasure 002 - twh", }),	-- 7.0 Val'sharah - Village - Small Treasure 002 - twh
-			q(39098, { ["name"] = "7.0 Val'sharah - Village - Small Treasure 003 - twh", }),	-- 7.0 Val'sharah - Village - Small Treasure 003 - twh
-			q(42012, { ["name"] = "A Gift of Time", }),	-- A Gift of Time
-			q(39589, { ["name"] = "A Mysterious Summons", }),	-- A Mysterious Summons
-			q(41978, { ["name"] = "A Strong Defense", }),	-- A Strong Defense
-			q(41988, { ["name"] = "A Strong Defense", }),	-- A Strong Defense
-			q(41997, { ["name"] = "A Strong Defense", }),	-- A Strong Defense
-			q(39032, { ["name"] = "A Summons from Saylanna", }),	-- A Summons from Saylanna
-			q(39135, { ["name"] = "A Sundered Tribe", }),	-- A Sundered Tribe
-			q(40312, { ["name"] = "A Timely Opportunity", }),	-- A Timely Opportunity
-			q(38227, { ["name"] = "A True Leader Inspires Others", }),	-- A True Leader Inspires Others
-			q(39993, { ["name"] = "Abandoned Fishing Pole", }),	-- Abandoned Fishing Pole
-			q(40891, { ["name"] = "Aegis of Aggramar Activated", }),	-- Aegis of Aggramar Activated
-			q(40622, { ["name"] = "Aman'thul Shrine Cleansed", }),	-- Aman'thul Shrine Cleansed
-			q(38220, { ["name"] = "Arauk Nashal 70:JP3 - Aggramar's Vault - Tracking Quest Cleared - Aggramar's Vault", }),	-- Arauk Nashal 70:JP3 - Aggramar's Vault - Tracking Quest Cleared - Aggramar's Vault
-			q(39030, { ["name"] = "Arauk Nashal 70:JP3 - Aggramar's Vault - Tracking Quest Cleared - God-King Intro", }),	-- Arauk Nashal 70:JP3 - Aggramar's Vault - Tracking Quest Cleared - God-King Intro
-			q(38610, { ["name"] = "Arauk Nashal 70:JP3 - Gates of Valhallas -Tracking quest - Titan Vehicle - Bonus Objective", }),	-- Arauk Nashal 70:JP3 - Gates of Valhallas -Tracking quest - Titan Vehicle - Bonus Objective
-			q(37982, { ["name"] = "Art Tracker - Ashbringer - Tier 0 - Base", }),	-- Art Tracker - Ashbringer - Tier 0 - Base
-			q(37985, { ["name"] = "Art Tracker - Ashbringer - Tier 1 - Corrupted", }),	-- Art Tracker - Ashbringer - Tier 1 - Corrupted
-			q(37984, { ["name"] = "Art Tracker - Ashbringer - Tier 1 - Fire", }),	-- Art Tracker - Ashbringer - Tier 1 - Fire
-			q(37983, { ["name"] = "Art Tracker - Ashbringer - Tier 1 - Holy", }),	-- Art Tracker - Ashbringer - Tier 1 - Holy
-			q(37986, { ["name"] = "Art Tracker - Ashbringer - Tier 2 - Corrupted", }),	-- Art Tracker - Ashbringer - Tier 2 - Corrupted
-			q(37987, { ["name"] = "Art Tracker - Ashbringer - Tier 2 - Fire", }),	-- Art Tracker - Ashbringer - Tier 2 - Fire
-			q(37988, { ["name"] = "Art Tracker - Ashbringer - Tier 2 - Holy", }),	-- Art Tracker - Ashbringer - Tier 2 - Holy
-			q(39464, { ["name"] = "Artifact Received", }),	-- Artifact Received
-			q(40448, { ["name"] = "Artifact XP - Araxxas", }),	-- Artifact XP - Araxxas
-			q(40453, { ["name"] = "Artifact XP - Darkest Fear", }),	-- Artifact XP - Darkest Fear
-			q(40381, { ["name"] = "Artifact XP - Darkfiend Assassin", }),	-- Artifact XP - Darkfiend Assassin
-			q(40431, { ["name"] = "Artifact XP - Dreadbog", }),	-- Artifact XP - Dreadbog
-			q(40456, { ["name"] = "Artifact XP - Gorebeak", }),	-- Artifact XP - Gorebeak
-			q(40446, { ["name"] = "Artifact XP - Gravax the Desecrator", }),	-- Artifact XP - Gravax the Desecrator
-			q(40427, { ["name"] = "Artifact XP - Grelda the Crone", }),	-- Artifact XP - Grelda the Crone
-			q(40428, { ["name"] = "Artifact XP - Henry", }),	-- Artifact XP - Henry
-			q(41213, { ["name"] = "Artifact XP - Cho'Zok", }),	-- Artifact XP - Cho'Zok
-			q(40454, { ["name"] = "Artifact XP - Imagined Horror", }),	-- Artifact XP - Imagined Horror
-			q(40369, { ["name"] = "Artifact XP - Ironbranch", }),	-- Artifact XP - Ironbranch
-			q(40382, { ["name"] = "Artifact XP - Jinikki the Puncturer", }),	-- Artifact XP - Jinikki the Puncturer
-			q(40437, { ["name"] = "Artifact XP - Kagraxxis the Corruptor", }),	-- Artifact XP - Kagraxxis the Corruptor
-			q(40426, { ["name"] = "Artifact XP - Kalazzius the Guileful", }),	-- Artifact XP - Kalazzius the Guileful
-			q(40443, { ["name"] = "Artifact XP - Kester Farseeker", }),	-- Artifact XP - Kester Farseeker
-			q(40383, { ["name"] = "Artifact XP - Kiranys Duskwhisper", }),	-- Artifact XP - Kiranys Duskwhisper
-			q(40441, { ["name"] = "Artifact XP - Lieutenant Desdel Stareye", }),	-- Artifact XP - Lieutenant Desdel Stareye
-			q(40433, { ["name"] = "Artifact XP - Lyrath Moonfeather", }),	-- Artifact XP - Lyrath Moonfeather
-			q(40450, { ["name"] = "Artifact XP - Magula", }),	-- Artifact XP - Magula
-			q(40451, { ["name"] = "Artifact XP - Morphael", }),	-- Artifact XP - Morphael
-			q(40429, { ["name"] = "Artifact XP - Perrexx", }),	-- Artifact XP - Perrexx
-			q(40425, { ["name"] = "Artifact XP - Pollous the Fetid", }),	-- Artifact XP - Pollous the Fetid
-			q(40432, { ["name"] = "Artifact XP - Razzok", }),	-- Artifact XP - Razzok
-			q(40440, { ["name"] = "Artifact XP - Rotbeak", }),	-- Artifact XP - Rotbeak
-			q(40455, { ["name"] = "Artifact XP - Seersei", }),	-- Artifact XP - Seersei
-			q(40439, { ["name"] = "Artifact XP - Sirius Ebonwing", }),	-- Artifact XP - Sirius Ebonwing
-			q(40445, { ["name"] = "Artifact XP - Starlys Strongbow", }),	-- Artifact XP - Starlys Strongbow
-			q(40436, { ["name"] = "Artifact XP - Thaon Moonclaw", }),	-- Artifact XP - Thaon Moonclaw
-			q(40452, { ["name"] = "Artifact XP - Theryssia", }),	-- Artifact XP - Theryssia
-			q(40380, { ["name"] = "Artifact XP - Thondrax", }),	-- Artifact XP - Thondrax
-			q(40444, { ["name"] = "Artifact XP - Trelan Shieldbreaker", }),	-- Artifact XP - Trelan Shieldbreaker
-			q(40434, { ["name"] = "Artifact XP - Tur'xoran", }),	-- Artifact XP - Tur'xoran
-			q(40442, { ["name"] = "Artifact XP - Varethos", }),	-- Artifact XP - Varethos
-			q(40447, { ["name"] = "Artifact XP - Verus Shadowfall", }),	-- Artifact XP - Verus Shadowfall
-			q(40435, { ["name"] = "Artifact XP - Wingterror Ikzil", }),	-- Artifact XP - Wingterror Ikzil
-			q(40430, { ["name"] = "Artifact XP - Wraithtalon", }),	-- Artifact XP - Wraithtalon
-			q(40449, { ["name"] = "Artifact XP - Xalythar the Tormentor", }),	-- Artifact XP - Xalythar the Tormentor
-			q(40438, { ["name"] = "Artifact XP - Xandris the Betrayer", }),	-- Artifact XP - Xandris the Betrayer
-			q(41823, { ["name"] = "Ashes to Ashes", }),	-- Ashes to Ashes
-			q(41006, { ["name"] = "Assassinate That Guy", }),	-- Assassinate That Guy
-			q(38000, { ["name"] = "Azsuna - Treasure 001 - Drowned Ruins", }),	-- Azsuna - Treasure 001 - Drowned Ruins
-			q(37826, { ["name"] = "Azsuna - Treasure 003 - Plundered Artifacts", }),	-- Azsuna - Treasure 003 - Plundered Artifacts
-			q(37827, { ["name"] = "Azsuna - Treasure 005 - Discarded Flotsam", }),	-- Azsuna - Treasure 005 - Discarded Flotsam
-			q(37833, { ["name"] = "Azsuna - Treasure 010 - Offerings To Elune", }),	-- Azsuna - Treasure 010 - Offerings To Elune
-			q(38734, { ["name"] = "Banshee Queen", }),	-- Banshee Queen
-			q(40305, { ["name"] = "Barracks Drop 01 Tracking Event", }),	-- Barracks Drop 01 Tracking Event
-			q(40313, { ["name"] = "Barracks Drop 02 Tracking Event", }),	-- Barracks Drop 02 Tracking Event
-			q(41408, { ["name"] = "Battle: Pandaren Cuisine - Elling Trias", }),	-- Battle: Pandaren Cuisine - Elling Trias
-			q(41405, { ["name"] = "Battle: Pandaren Cuisine - Sungshin Ironpaw", }),	-- Battle: Pandaren Cuisine - Sungshin Ironpaw
-			q(41406, { ["name"] = "Battle: Pandaren Cuisine - Torg Slowflame", }),	-- Battle: Pandaren Cuisine - Torg Slowflame
-			q(41400, { ["name"] = "Battle: Pandaren Cuisine!", }),	-- Battle: Pandaren Cuisine!
-			q(41016, { ["name"] = "BC TL", }),	-- BC TL
-			q(39311, { ["name"] = "Bitestone Enclave Treasure", }),	-- Bitestone Enclave Treasure
-			q(40468, { ["name"] = "Bitestone Enclave Treasure", }),	-- Bitestone Enclave Treasure
-			q(39011, { ["name"] = "Black Rook Invasion", }),	-- Black Rook Invasion
-			q(38648, { ["name"] = "Black Rook Orders", }),	-- Black Rook Orders
-			q(38321, { ["name"] = "Blackbeak Overlook", }),	-- Blackbeak Overlook
-			q(39819, { ["name"] = "Bloodhunt Highland Treasure", }),	-- Bloodhunt Highland Treasure
-			q(39820, { ["name"] = "Bloodhunt Highland Treasure", }),	-- Bloodhunt Highland Treasure
-			q(39821, { ["name"] = "Bloodhunt Highland Treasure", }),	-- Bloodhunt Highland Treasure
-			q(39822, { ["name"] = "Bloodhunt Highland Treasure", }),	-- Bloodhunt Highland Treasure
-			q(39823, { ["name"] = "Bloodhunt Highland Treasure", }),	-- Bloodhunt Highland Treasure
-			q(40322, { ["name"] = "Bloodhunt Highland Treasure", }),	-- Bloodhunt Highland Treasure
-			q(41982, { ["name"] = "Book Read Tracking Quest", }),	-- Book Read Tracking Quest
-			q(41842, { ["name"] = "Bottom of the Food Chain", }),	-- Bottom of the Food Chain
-			q(38535, { ["name"] = "Brimbil's Journey", }),	-- Brimbil's Journey
-			q(38548, { ["name"] = "Brimbil's Journey - Reward", }),	-- Brimbil's Journey - Reward
-			q(42030, { ["name"] = "Building Our Troops [NYI]", }),	-- Building Our Troops [NYI]
-			q(40323, { ["name"] = "Cave of the Blood Trial Treasure", }),	-- Cave of the Blood Trial Treasure
-			q(41937, { ["name"] = "Combat Training", }),	-- Combat Training
-			q(38699, { ["name"] = "Competitive Exorcise", }),	-- Competitive Exorcise
-			q(38311, { ["name"] = "Content Perk: Call of the Highlord", }),	-- Content Perk: Call of the Highlord
-			q(38310, { ["name"] = "Content Perk: Righteous Strength", }),	-- Content Perk: Righteous Strength
-			q(38309, { ["name"] = "Content Perk: The Light Reveals", }),	-- Content Perk: The Light Reveals
-			q(40628, { ["name"] = "Corrupted Ashbringer", }),	-- Corrupted Ashbringer
-			q(40664, { ["name"] = "Corrupted Chosen", }),	-- Corrupted Chosen
-			q(37175, { ["name"] = "Craig's Test Quest Again!", }),	-- Craig's Test Quest Again!
-			q(40699, { ["name"] = "Credit - Scenario Complete", }),	-- Credit - Scenario Complete
-			q(39296, { ["name"] = "Crystal Fissure Treasure", }),	-- Crystal Fissure Treasure
-			q(37867, { ["name"] = "Crystalbeard", }),	-- Crystalbeard
-			q(39854, { ["name"] = "Curse of the Sea", }),	-- Curse of the Sea
-			q(41241, { ["name"] = "Cursed Queenfish Needed", }),	-- Cursed Queenfish Needed
-			q(40572, { ["name"] = "Darkheart Thicket Normal Reward Quest", }),	-- Darkheart Thicket Normal Reward Quest
-			q(41880, { ["name"] = "Den of Shadows", }),	-- Den of Shadows
-			q(40720, { ["name"] = "DEPRECATE - REUSE", }),	-- DEPRECATE - REUSE
-			q(40719, { ["name"] = "DEPRECATE- REUSE", }),	-- DEPRECATE- REUSE
-			q(39116, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(39190, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(39979, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(40641, { ["name"] = "Deprecated", }),	-- Deprecated
-			q(41248, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(41250, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(41251, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(39896, { ["name"] = "DEPRECATED: The Ringer", }),	-- DEPRECATED: The Ringer
-			q(38841, { ["name"] = "Die, Fish-People", }),	-- Die, Fish-People
-			q(40110, { ["name"] = "Disrupt the Inkbinders", }),	-- Disrupt the Inkbinders
-			q(38839, { ["name"] = "Done with Waiting", }),	-- Done with Waiting
-			q(39805, { ["name"] = "Drogbar Spellcaster", }),	-- Drogbar Spellcaster
-			q(39813, { ["name"] = "Earthmother's Bounty Treasure", }),	-- Earthmother's Bounty Treasure
-			q(38471, { ["name"] = "Elune's Kiss", }),	-- Elune's Kiss
-			q(39925, { ["name"] = "Emissary Azathar Looted", }),	-- Emissary Azathar Looted
-			q(37844, { ["name"] = "Essence of the Unbound", }),	-- Essence of the Unbound
-			q(39352, { ["name"] = "Extinguishing the Sentinels", }),	-- Extinguishing the Sentinels
-			q(38730, { ["name"] = "Farm Defense", }),	-- Farm Defense
-			q(39152, { ["name"] = "Felwrought Annihilator Looted", }),	-- Felwrought Annihilator Looted
-			q(40007, { ["name"] = "Fields of An'she Treasure", }),	-- Fields of An'she Treasure
-			q(40461, { ["name"] = "Fields of An'she Treasure", }),	-- Fields of An'she Treasure
-			q(40462, { ["name"] = "Fields of An'she Treasure", }),	-- Fields of An'she Treasure
-			q(40463, { ["name"] = "Fields of An'she Treasure", }),	-- Fields of An'she Treasure
-			q(40629, { ["name"] = "Fiery Ashbringer", }),	-- Fiery Ashbringer
-			q(40663, { ["name"] = "Fiery Chosen", }),	-- Fiery Chosen
-			q(38940, { ["name"] = "First Mission Complete", }),	-- First Mission Complete
-			q(39273, { ["name"] = "First Mission Complete", }),	-- First Mission Complete
-			q(38993, { ["name"] = "First Mission Sent", }),	-- First Mission Sent
-			q(39271, { ["name"] = "First Mission Sent", }),	-- First Mission Sent
-			q(38840, { ["name"] = "Fishy Business", }),	-- Fishy Business
-			q(39618, { ["name"] = "FLAG - Enchanting Research G/1/1/1", }),	-- FLAG - Enchanting Research G/1/1/1
-			q(39619, { ["name"] = "FLAG - Enchanting Research G/1/1/2", }),	-- FLAG - Enchanting Research G/1/1/2
-			q(39620, { ["name"] = "FLAG - Enchanting Research G/1/1/3", }),	-- FLAG - Enchanting Research G/1/1/3
-			q(39621, { ["name"] = "FLAG - Enchanting Research G/1/2/1", }),	-- FLAG - Enchanting Research G/1/2/1
-			q(39622, { ["name"] = "FLAG - Enchanting Research G/1/2/2", }),	-- FLAG - Enchanting Research G/1/2/2
-			q(39623, { ["name"] = "FLAG - Enchanting Research G/1/2/3", }),	-- FLAG - Enchanting Research G/1/2/3
-			q(39624, { ["name"] = "FLAG - Enchanting Research G/1/3/1", }),	-- FLAG - Enchanting Research G/1/3/1
-			q(39625, { ["name"] = "FLAG - Enchanting Research G/1/3/2", }),	-- FLAG - Enchanting Research G/1/3/2
-			q(39626, { ["name"] = "FLAG - Enchanting Research G/1/3/3", }),	-- FLAG - Enchanting Research G/1/3/3
-			q(39627, { ["name"] = "FLAG - Enchanting Research G/2/1/1", }),	-- FLAG - Enchanting Research G/2/1/1
-			q(39628, { ["name"] = "FLAG - Enchanting Research G/2/1/2", }),	-- FLAG - Enchanting Research G/2/1/2
-			q(39629, { ["name"] = "FLAG - Enchanting Research G/2/1/3", }),	-- FLAG - Enchanting Research G/2/1/3
-			q(39630, { ["name"] = "FLAG - Enchanting Research G/2/2/1", }),	-- FLAG - Enchanting Research G/2/2/1
-			q(39631, { ["name"] = "FLAG - Enchanting Research G/2/2/2", }),	-- FLAG - Enchanting Research G/2/2/2
-			q(39632, { ["name"] = "FLAG - Enchanting Research G/2/2/3", }),	-- FLAG - Enchanting Research G/2/2/3
-			q(39633, { ["name"] = "FLAG - Enchanting Research G/2/3/1", }),	-- FLAG - Enchanting Research G/2/3/1
-			q(39634, { ["name"] = "FLAG - Enchanting Research G/2/3/2", }),	-- FLAG - Enchanting Research G/2/3/2
-			q(39635, { ["name"] = "FLAG - Enchanting Research G/2/3/3", }),	-- FLAG - Enchanting Research G/2/3/3
-			q(39636, { ["name"] = "FLAG - Enchanting Research G/3/1/1", }),	-- FLAG - Enchanting Research G/3/1/1
-			q(39637, { ["name"] = "FLAG - Enchanting Research G/3/1/2", }),	-- FLAG - Enchanting Research G/3/1/2
-			q(39638, { ["name"] = "FLAG - Enchanting Research G/3/1/3", }),	-- FLAG - Enchanting Research G/3/1/3
-			q(39639, { ["name"] = "FLAG - Enchanting Research G/3/2/1", }),	-- FLAG - Enchanting Research G/3/2/1
-			q(39640, { ["name"] = "FLAG - Enchanting Research G/3/2/2", }),	-- FLAG - Enchanting Research G/3/2/2
-			q(39641, { ["name"] = "FLAG - Enchanting Research G/3/2/3", }),	-- FLAG - Enchanting Research G/3/2/3
-			q(39642, { ["name"] = "FLAG - Enchanting Research G/3/3/1", }),	-- FLAG - Enchanting Research G/3/3/1
-			q(39643, { ["name"] = "FLAG - Enchanting Research G/3/3/2", }),	-- FLAG - Enchanting Research G/3/3/2
-			q(39644, { ["name"] = "FLAG - Enchanting Research G/3/3/3", }),	-- FLAG - Enchanting Research G/3/3/3
-			q(39534, { ["name"] = "FLAG - Enchanting Research S/1/1/1", }),	-- FLAG - Enchanting Research S/1/1/1
-			q(39535, { ["name"] = "FLAG - Enchanting Research S/1/1/2", }),	-- FLAG - Enchanting Research S/1/1/2
-			q(39536, { ["name"] = "FLAG - Enchanting Research S/1/1/3", }),	-- FLAG - Enchanting Research S/1/1/3
-			q(39537, { ["name"] = "FLAG - Enchanting Research S/1/2/1", }),	-- FLAG - Enchanting Research S/1/2/1
-			q(39538, { ["name"] = "FLAG - Enchanting Research S/1/2/2", }),	-- FLAG - Enchanting Research S/1/2/2
-			q(39539, { ["name"] = "FLAG - Enchanting Research S/1/2/3", }),	-- FLAG - Enchanting Research S/1/2/3
-			q(39540, { ["name"] = "FLAG - Enchanting Research S/1/3/1", }),	-- FLAG - Enchanting Research S/1/3/1
-			q(39541, { ["name"] = "FLAG - Enchanting Research S/1/3/2", }),	-- FLAG - Enchanting Research S/1/3/2
-			q(39542, { ["name"] = "FLAG - Enchanting Research S/1/3/3", }),	-- FLAG - Enchanting Research S/1/3/3
-			q(39551, { ["name"] = "FLAG - Enchanting Research S/2/1/1", }),	-- FLAG - Enchanting Research S/2/1/1
-			q(39550, { ["name"] = "FLAG - Enchanting Research S/2/1/2", }),	-- FLAG - Enchanting Research S/2/1/2
-			q(39549, { ["name"] = "FLAG - Enchanting Research S/2/1/3", }),	-- FLAG - Enchanting Research S/2/1/3
-			q(39548, { ["name"] = "FLAG - Enchanting Research S/2/2/1", }),	-- FLAG - Enchanting Research S/2/2/1
-			q(39547, { ["name"] = "FLAG - Enchanting Research S/2/2/2", }),	-- FLAG - Enchanting Research S/2/2/2
-			q(39546, { ["name"] = "FLAG - Enchanting Research S/2/2/3", }),	-- FLAG - Enchanting Research S/2/2/3
-			q(39545, { ["name"] = "FLAG - Enchanting Research S/2/3/1", }),	-- FLAG - Enchanting Research S/2/3/1
-			q(39544, { ["name"] = "FLAG - Enchanting Research S/2/3/2", }),	-- FLAG - Enchanting Research S/2/3/2
-			q(39543, { ["name"] = "FLAG - Enchanting Research S/2/3/3", }),	-- FLAG - Enchanting Research S/2/3/3
-			q(39552, { ["name"] = "FLAG - Enchanting Research S/3/1/1", }),	-- FLAG - Enchanting Research S/3/1/1
-			q(39553, { ["name"] = "FLAG - Enchanting Research S/3/1/2", }),	-- FLAG - Enchanting Research S/3/1/2
-			q(39554, { ["name"] = "FLAG - Enchanting Research S/3/1/3", }),	-- FLAG - Enchanting Research S/3/1/3
-			q(39555, { ["name"] = "FLAG - Enchanting Research S/3/2/1", }),	-- FLAG - Enchanting Research S/3/2/1
-			q(39556, { ["name"] = "FLAG - Enchanting Research S/3/2/2", }),	-- FLAG - Enchanting Research S/3/2/2
-			q(39557, { ["name"] = "FLAG - Enchanting Research S/3/2/3", }),	-- FLAG - Enchanting Research S/3/2/3
-			q(39558, { ["name"] = "FLAG - Enchanting Research S/3/3/1", }),	-- FLAG - Enchanting Research S/3/3/1
-			q(39559, { ["name"] = "FLAG - Enchanting Research S/3/3/2", }),	-- FLAG - Enchanting Research S/3/3/2
-			q(39560, { ["name"] = "FLAG - Enchanting Research S/3/3/3", }),	-- FLAG - Enchanting Research S/3/3/3
-			q(40739, { ["name"] = "FLAG - Reaves Thermal Anvil Module", }),	-- FLAG - Reaves Thermal Anvil Module
-			q(41822, { ["name"] = "Following his Hoofsteps", }),	-- Following his Hoofsteps
-			q(39151, { ["name"] = "Forging the Artifact", }),	-- Forging the Artifact
-			q(41875, { ["name"] = "Found First Clue", }),	-- Found First Clue
-			q(41987, { ["name"] = "Garn", }),	-- Garn
-			q(41903, { ["name"] = "Gathering the Pieces", }),	-- Gathering the Pieces
-			q(39647, { ["name"] = "Get the Little Ones!", }),	-- Get the Little Ones!
-			q(40124, { ["name"] = "Gift of the Storm Cooldown", }),	-- Gift of the Storm Cooldown
-			q(40574, { ["name"] = "Golganneth Shrine Cleansed", }),	-- Golganneth Shrine Cleansed
-			q(38670, { ["name"] = "Goredome 2", }),	-- Goredome 2
-			q(41833, { ["name"] = "Grmlrml's Last Ride", }),	-- Grmlrml's Last Ride
-			q(39436, { ["name"] = "Haglands Treasure", }),	-- Haglands Treasure
-			q(39827, { ["name"] = "Haglands Treasure", }),	-- Haglands Treasure
-			q(40888, { ["name"] = "Hammer of Khaz'goroth Actived", }),	-- Hammer of Khaz'goroth Actived
-			q(39687, { ["name"] = "Harbingers of the Past", }),	-- Harbingers of the Past
-			q(39980, { ["name"] = "Highlord Darion Mograine Slotted", }),	-- Highlord Darion Mograine Slotted
-			q(38856, { ["name"] = "Holy Retribution", }),	-- Holy Retribution
-			q(40992, { ["name"] = "Honor Among Thieves", }),	-- Honor Among Thieves
-			q(38688, { ["name"] = "Hope Remains", }),	-- Hope Remains
-			q(40466, { ["name"] = "Howling Hills Treasure", }),	-- Howling Hills Treasure
-			q(40467, { ["name"] = "Howling Hills Treasure", }),	-- Howling Hills Treasure
-			q(39871, { ["name"] = "Huntress Ellandryn", }),	-- Huntress Ellandryn
-			q(41042, { ["name"] = "Champion Chomper", }),	-- Champion Chomper
-			q(40766, { ["name"] = "Charfeather", }),	-- Charfeather
-			q(38491, { ["name"] = "Infected Mushroom", }),	-- Infected Mushroom
-			q(38867, { ["name"] = "Inspiration Strikes", }),	-- Inspiration Strikes
-			q(40685, { ["name"] = "Into the Mouth of the Nether", }),	-- Into the Mouth of the Nether
-			q(39397, { ["name"] = "Invasion Experience Received", }),	-- Invasion Experience Received
-			q(39989, { ["name"] = "Keepers of the Hammer", }),	-- Keepers of the Hammer
-			q(42003, { ["name"] = "Kept Secret, Kept Safe", }),	-- Kept Secret, Kept Safe
-			q(39745, { ["name"] = "Khadgar Teleport", }),	-- Khadgar Teleport
-			q(39969, { ["name"] = "Kill Azshara", }),	-- Kill Azshara
-			q(41012, { ["name"] = "Kirin Tor Showdown Seen", }),	-- Kirin Tor Showdown Seen
-			q(41963, { ["name"] = "Knowledge Unlock Daily Tracking Quest", }),	-- Knowledge Unlock Daily Tracking Quest
-			q(39982, { ["name"] = "Koltira Deathweaver Slotted", }),	-- Koltira Deathweaver Slotted
-			q(39798, { ["name"] = "Lady Liadrin Slotted", }),	-- Lady Liadrin Slotted
-			q(41101, { ["name"] = "Lady S'theno Calls", }),	-- Lady S'theno Calls
-			q(41848, { ["name"] = "Legion Invaders", }),	-- Legion Invaders
-			q(41431, { ["name"] = "Legion Portal", }),	-- Legion Portal
-			q(41856, { ["name"] = "Legion Portal", }),	-- Legion Portal
-			q(41932, { ["name"] = "Legion Portal", }),	-- Legion Portal
-			q(41933, { ["name"] = "Legion Portal", }),	-- Legion Portal
-			q(41942, { ["name"] = "Legion Portal", }),	-- Legion Portal
-			q(41947, { ["name"] = "Legion Portal", }),	-- Legion Portal
-			q(41951, { ["name"] = "Legion Portal", }),	-- Legion Portal
-			q(41959, { ["name"] = "Legion Portal", }),	-- Legion Portal
-			q(41994, { ["name"] = "Legion Portal", }),	-- Legion Portal
-			q(40121, { ["name"] = "Ley Line Influences", }),	-- Ley Line Influences
-			q(40166, { ["name"] = "Leying with Murlocs", }),	-- Leying with Murlocs
-			q(40804, { ["name"] = "Li Li Slotted", }),	-- Li Li Slotted
-			q(39814, { ["name"] = "Lifespring Cavern Treasure", }),	-- Lifespring Cavern Treasure
-			q(40240, { ["name"] = "Looted Blacksmith Defender's Cache", }),	-- Looted Blacksmith Defender's Cache
-			q(40246, { ["name"] = "Looted Leatherworking Defender's Cache", }),	-- Looted Leatherworking Defender's Cache
-			q(40245, { ["name"] = "Looted Tailoring Defender's Cache", }),	-- Looted Tailoring Defender's Cache
-			q(38552, { ["name"] = "Lord Hal'shara's Tomb", }),	-- Lord Hal'shara's Tomb
-			q(39926, { ["name"] = "Lord Malus Looted", }),	-- Lord Malus Looted
-			q(39794, { ["name"] = "Lord Maxwell Tyrosus Slotted", }),	-- Lord Maxwell Tyrosus Slotted
-			q(39118, { ["name"] = "Lower Citadel Speed Tracking", }),	-- Lower Citadel Speed Tracking
-			q(39200, { ["name"] = "Lynore's Fury", }),	-- Lynore's Fury
-			q(40160, { ["name"] = "Magic Clams", }),	-- Magic Clams
-			q(40343, { ["name"] = "Magni/Eitrigg Meetup Seen", }),	-- Magni/Eitrigg Meetup Seen
-			q(38674, { ["name"] = "Malfurion's Cure", }),	-- Malfurion's Cure
-			q(37843, { ["name"] = "Mana Bark", }),	-- Mana Bark
-			q(39138, { ["name"] = "March Forth and Conquer", }),	-- March Forth and Conquer
-			q(40805, { ["name"] = "Meet The Master", }),	-- Meet The Master
-			q(38992, { ["name"] = "Mograine's Oath", }),	-- Mograine's Oath
-			q(40833, { ["name"] = "Mograine's Recruit", }),	-- Mograine's Recruit
-			q(40464, { ["name"] = "Mucksnout Den Treasure", }),	-- Mucksnout Den Treasure
-			q(39418, { ["name"] = "Neltharion's Lair Reward Quest", }),	-- Neltharion's Lair Reward Quest
-			q(40268, { ["name"] = "Neltharion's Vault Treasure", }),	-- Neltharion's Vault Treasure
-			q(39269, { ["name"] = "Never Alone", }),	-- Never Alone
-			q(38890, { ["name"] = "Not Dead Yet!", }),	-- Not Dead Yet!
-			q(38512, { ["name"] = "Oakleaf", }),	-- Oakleaf
-			q(40513, { ["name"] = "Oro's Overlook Treasure", }),	-- Oro's Overlook Treasure
-			q(38668, { ["name"] = "Our Last Hope", }),	-- Our Last Hope
-			q(38669, { ["name"] = "Our Last Hope", }),	-- Our Last Hope
-			q(39809, { ["name"] = "Path of Huln Treasure", }),	-- Path of Huln Treasure
-			q(39234, { ["name"] = "Peak Urgency", }),	-- Peak Urgency
-			q(39382, { ["name"] = "Perrexx the Corruptor", }),	-- Perrexx the Corruptor
-			q(39493, { ["name"] = "Pinerock Basin Treasure", }),	-- Pinerock Basin Treasure
-			q(39506, { ["name"] = "Pinerock Basin Treasure", }),	-- Pinerock Basin Treasure
-			q(39508, { ["name"] = "Pinerock Basin Treasure", }),	-- Pinerock Basin Treasure
-			q(39964, { ["name"] = "Pinerock Basin Treasure", }),	-- Pinerock Basin Treasure
-			q(40458, { ["name"] = "Pinerock Basin Treasure", }),	-- Pinerock Basin Treasure
-			q(40459, { ["name"] = "Pinerock Basin Treasure", }),	-- Pinerock Basin Treasure
-			q(40460, { ["name"] = "Pinerock Basin Treasure", }),	-- Pinerock Basin Treasure
-			q(39131, { ["name"] = "Possessions of Power", }),	-- Possessions of Power
-			q(40114, { ["name"] = "Prephoof Compound Treasure", }),	-- Prephoof Compound Treasure
-			q(40115, { ["name"] = "Prephoof Compound Treasure", }),	-- Prephoof Compound Treasure
-			q(40116, { ["name"] = "Prephoof Compound Treasure", }),	-- Prephoof Compound Treasure
-			q(38708, { ["name"] = "Purge the River", }),	-- Purge the River
-			q(38844, { ["name"] = "Rally the Wilds Buff Received", }),	-- Rally the Wilds Buff Received
-			q(38470, { ["name"] = "Rampant Mandragora", }),	-- Rampant Mandragora
-			q(39216, { ["name"] = "Ready to forge Tracking Bit", }),	-- Ready to forge Tracking Bit
-			q(40998, { ["name"] = "Rendezvous", }),	-- Rendezvous
-			q(41859, { ["name"] = "Rescue Efforts", }),	-- Rescue Efforts
-			q(41952, { ["name"] = "Rescue Efforts", }),	-- Rescue Efforts
-			q(41954, { ["name"] = "Rescue Efforts", }),	-- Rescue Efforts
-			q(41960, { ["name"] = "Rescue Efforts", }),	-- Rescue Efforts
-			q(41979, { ["name"] = "Rescue Efforts", }),	-- Rescue Efforts
-			q(41991, { ["name"] = "Rescue Efforts", }),	-- Rescue Efforts
-			q(37962, { ["name"] = "REUSE", }),	-- REUSE
-			q(40164, { ["name"] = "REUSE", }),	-- REUSE
-			q(41986, { ["name"] = "REUSE", }),	-- REUSE
-			q(40565, { ["name"] = "REUSEME", }),	-- REUSEME
-			q(41082, { ["name"] = "Reward: Aluneth", }),	-- Reward: Aluneth
-			q(40689, { ["name"] = "Reward: Deadwind Harvester", }),	-- Reward: Deadwind Harvester
-			q(41084, { ["name"] = "Reward: Ebonchill", }),	-- Reward: Ebonchill
-			q(41083, { ["name"] = "Reward: Felo'melorn", }),	-- Reward: Felo'melorn
-			q(40691, { ["name"] = "Reward: Skull of the Man'ari", }),	-- Reward: Skull of the Man'ari
-			q(40690, { ["name"] = "Reward: Staff of Sargeras", }),	-- Reward: Staff of Sargeras
-			q(37845, { ["name"] = "Rift Rippers", }),	-- Rift Rippers
-			q(42029, { ["name"] = "Rise, Champions [NYI]", }),	-- Rise, Champions [NYI]
-			q(39966, { ["name"] = "Riverbend Treasure", }),	-- Riverbend Treasure
-			q(40457, { ["name"] = "Riverbend Treasure", }),	-- Riverbend Treasure
-			q(41837, { ["name"] = "Rockaway Bully", }),	-- Rockaway Bully
-			q(39995, { ["name"] = "Rockaway Coast Treasure", }),	-- Rockaway Coast Treasure
-			q(39996, { ["name"] = "Rockaway Coast Treasure", }),	-- Rockaway Coast Treasure
-			q(39997, { ["name"] = "Rockaway Coast Treasure", }),	-- Rockaway Coast Treasure
-			q(39999, { ["name"] = "Rockaway Coast Treasure", }),	-- Rockaway Coast Treasure
-			q(40465, { ["name"] = "Rockcrawler Chasm Treasure", }),	-- Rockcrawler Chasm Treasure
-			q(39428, { ["name"] = "Satyr Line TRACKING", }),	-- Satyr Line TRACKING
-			q(39717, { ["name"] = "Scouting Mission Complete", }),	-- Scouting Mission Complete
-			q(39730, { ["name"] = "Scouting Mission Complete", }),	-- Scouting Mission Complete
-			q(39732, { ["name"] = "Scouting Mission Complete", }),	-- Scouting Mission Complete
-			q(39734, { ["name"] = "Scouting Mission Complete", }),	-- Scouting Mission Complete
-			q(38892, { ["name"] = "Scouting Report", }),	-- Scouting Report
-			q(39006, { ["name"] = "Second Mission Complete", }),	-- Second Mission Complete
-			q(39282, { ["name"] = "Second Mission Complete", }),	-- Second Mission Complete
-			q(39005, { ["name"] = "Second Mission Sent", }),	-- Second Mission Sent
-			q(39285, { ["name"] = "Second Mission Sent", }),	-- Second Mission Sent
-			q(38914, { ["name"] = "Secrets of Highmountain", }),	-- Secrets of Highmountain
-			q(39808, { ["name"] = "Sepulcher of the Sky Treasure", }),	-- Sepulcher of the Sky Treasure
-			q(40630, { ["name"] = "Shattered Ashbringer", }),	-- Shattered Ashbringer
-			q(40662, { ["name"] = "Shattered Chosen", }),	-- Shattered Chosen
-			q(38885, { ["name"] = "Shivering Ashmaw Cub", }),	-- Shivering Ashmaw Cub
-			q(38504, { ["name"] = "Shrine of the Bear Twins", }),	-- Shrine of the Bear Twins
-			q(38508, { ["name"] = "Shrine of the Bear Twins - Reward", }),	-- Shrine of the Bear Twins - Reward
-			q(41817, { ["name"] = "Skull of the Taskmaster", }),	-- Skull of the Taskmaster
-			q(40485, { ["name"] = "Skyhorn Treasure", }),	-- Skyhorn Treasure
-			q(40486, { ["name"] = "Skyhorn Treasure", }),	-- Skyhorn Treasure
-			q(40504, { ["name"] = "Skyhorn Treasure", }),	-- Skyhorn Treasure
-			q(40162, { ["name"] = "Snowblind Mesa Treasure", }),	-- Snowblind Mesa Treasure
-			q(40163, { ["name"] = "Snowblind Mesa Treasure", }),	-- Snowblind Mesa Treasure
-			q(40512, { ["name"] = "Snowblind Mesa Treasure", }),	-- Snowblind Mesa Treasure
-			q(40333, { ["name"] = "Spiritwind Summit Treasure", }),	-- Spiritwind Summit Treasure
-			q(39825, { ["name"] = "Stonedark Grotto Treasure", }),	-- Stonedark Grotto Treasure
-			q(40250, { ["name"] = "Suramar - Demon Hunter Daily - Choice Reward Summary - 1", }),	-- Suramar - Demon Hunter Daily - Choice Reward Summary - 1
-			q(40258, { ["name"] = "Suramar - Demon Hunter Daily - Choice Reward Summary - 2", }),	-- Suramar - Demon Hunter Daily - Choice Reward Summary - 2
-			q(40260, { ["name"] = "Suramar - Demon Hunter Daily - Choice Reward Summary - 3", }),	-- Suramar - Demon Hunter Daily - Choice Reward Summary - 3
-			q(41424, { ["name"] = "Suramar Noble District Heroic Reward Quest", }),	-- Suramar Noble District Heroic Reward Quest
-			q(41423, { ["name"] = "Suramar Noble District Reward Quest", }),	-- Suramar Noble District Reward Quest
-			q(39815, { ["name"] = "Sylvan Falls Treasure", }),	-- Sylvan Falls Treasure
-			q(39965, { ["name"] = "Sylvan Falls Treasure", }),	-- Sylvan Falls Treasure
-			q(40006, { ["name"] = "Sylvan Falls Treasure", }),	-- Sylvan Falls Treasure
-			q(41874, { ["name"] = "Talked to Tyrande to Start Events", }),	-- Talked to Tyrande to Start Events
-			q(40161, { ["name"] = "Tapping the Underground", }),	-- Tapping the Underground
-			q(41831, { ["name"] = "Taurson's Punch Out", }),	-- Taurson's Punch Out
-			q(38517, { ["name"] = "Tayla's Rescue", }),	-- Tayla's Rescue
-			q(38521, { ["name"] = "Tayla's Rescue - Reward", }),	-- Tayla's Rescue - Reward
-			q(41879, { ["name"] = "TBD", }),	-- TBD
-			q(38896, { ["name"] = "Tearing down the Legion", }),	-- Tearing down the Legion
-			q(40502, { ["name"] = "Test - Fireball", }),	-- Test - Fireball
-			q(40940, { ["name"] = "Test Quest Two", }),	-- Test Quest Two
-			q(40726, { ["name"] = "Test Reward Quest", }),	-- Test Reward Quest
-			q(39981, { ["name"] = "Thassarian Slotted", }),	-- Thassarian Slotted
-			q(38434, { ["name"] = "The Ashbringer", }),	-- The Ashbringer
-			q(41829, { ["name"] = "The Darkfeather Scout", }),	-- The Darkfeather Scout
-			q(38667, { ["name"] = "The Demon's Trail", }),	-- The Demon's Trail
-			q(40407, { ["name"] = "The Fate of Azeroth", }),	-- The Fate of Azeroth
-			q(38850, { ["name"] = "The Fate of Tirion Fordring", }),	-- The Fate of Tirion Fordring
-			q(41058, { ["name"] = "The Forge of Guardians", }),	-- The Forge of Guardians
-			q(39132, { ["name"] = "The New Chieftain", }),	-- The New Chieftain
-			q(39693, { ["name"] = "The Path of Huln", }),	-- The Path of Huln
-			q(38279, { ["name"] = "The Royal Taster", }),	-- The Royal Taster
-			q(40591, { ["name"] = "The Second Valarjar", }),	-- The Second Valarjar
-			q(39807, { ["name"] = "The Snowbringer", }),	-- The Snowbringer
-			q(39205, { ["name"] = "The Twisted Garden", }),	-- The Twisted Garden
-			q(39009, { ["name"] = "Third Mission Complete", }),	-- Third Mission Complete
-			q(39304, { ["name"] = "Third Mission Complete", }),	-- Third Mission Complete
-			q(39010, { ["name"] = "Third Mission Sent", }),	-- Third Mission Sent
-			q(39303, { ["name"] = "Third Mission Sent", }),	-- Third Mission Sent
-			q(39324, { ["name"] = "Through the Portal", }),	-- Through the Portal
-			q(39312, { ["name"] = "Thunder Totem Treasure", }),	-- Thunder Totem Treasure
-			q(39967, { ["name"] = "Thunder Totem Treasure", }),	-- Thunder Totem Treasure
-			q(39968, { ["name"] = "Thunder Totem Treasure", }),	-- Thunder Totem Treasure
-			q(40490, { ["name"] = "Thunder Totem Treasure", }),	-- Thunder Totem Treasure
-			q(40492, { ["name"] = "Thunder Totem Treasure", }),	-- Thunder Totem Treasure
-			q(40597, { ["name"] = "Thunder Totem Treasure", }),	-- Thunder Totem Treasure
-			q(40889, { ["name"] = "Tidestone of Golganneth Activated", }),	-- Tidestone of Golganneth Activated
-			q(40311, { ["name"] = "Titanic Showdown", }),	-- Titanic Showdown
-			q(38906, { ["name"] = "To the Rescue", }),	-- To the Rescue
-			q(39869, { ["name"] = "Toll for the Soul", }),	-- Toll for the Soul
-			q(40269, { ["name"] = "Torok's Bluff Treasure", }),	-- Torok's Bluff Treasure
-			q(42113, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(40764, { ["name"] = "Tracking Quest for Latosius Challenge 1", }),	-- Tracking Quest for Latosius Challenge 1
-			q(41029, { ["name"] = "Tracking Quest for Latosius Challenge 2", }),	-- Tracking Quest for Latosius Challenge 2
-			q(40296, { ["name"] = "Tracking Quest: Corridor", }),	-- Tracking Quest: Corridor
-			q(40810, { ["name"] = "Tracking Quest: Dorion Fed", }),	-- Tracking Quest: Dorion Fed
-			q(41229, { ["name"] = "Tracking Quest: Chen Obtained", }),	-- Tracking Quest: Chen Obtained
-			q(41285, { ["name"] = "Tracking Quest: Li Li Obtained", }),	-- Tracking Quest: Li Li Obtained
-			q(38664, { ["name"] = "Tracking Quest: Saved Family 1", }),	-- Tracking Quest: Saved Family 1
-			q(38665, { ["name"] = "Tracking Quest: Saved Family 2", }),	-- Tracking Quest: Saved Family 2
-			q(41284, { ["name"] = "Tracking Quest: The Monkey King Obtained", }),	-- Tracking Quest: The Monkey King Obtained
-			q(37697, { ["name"] = "Treasure Goblin", }),	-- Treasure Goblin
-			q(38281, { ["name"] = "Treasure: Spoils of the Burning Crusade", }),	-- Treasure: Spoils of the Burning Crusade
-			q(39962, { ["name"] = "Trouble for Okuna", }),	-- Trouble for Okuna
-			q(41065, { ["name"] = "Troubling News", }),	-- Troubling News
-			q(41102, { ["name"] = "Trusted Lieutenant", }),	-- Trusted Lieutenant
-			q(41876, { ["name"] = "Umbraxis Tracker", }),	-- Umbraxis Tracker
-			q(38938, { ["name"] = "Unbearable", }),	-- Unbearable
-			q(38454, { ["name"] = "Unfortunate Circumstances", }),	-- Unfortunate Circumstances
-			q(41103, { ["name"] = "Unleashed Havoc", }),	-- Unleashed Havoc
-			q(39136, { ["name"] = "Unused", }),	-- Unused
-			q(41018, { ["name"] = "UNUSED - Agent of Aid", }),	-- UNUSED - Agent of Aid
-			q(39016, { ["name"] = "Unused - The Fish Must Flow", }),	-- Unused - The Fish Must Flow
-			q(38937, { ["name"] = "Unused - Wraith Zapper", }),	-- Unused - Wraith Zapper
-			q(41688, { ["name"] = "Ursol", }),	-- Ursol
-			q(39156, { ["name"] = "Uther's Spirit Honored", }),	-- Uther's Spirit Honored
-			q(39928, { ["name"] = "Uther's Spirit Honored", }),	-- Uther's Spirit Honored
-			q(39929, { ["name"] = "Uther's Spirit Honored", }),	-- Uther's Spirit Honored
-			q(39930, { ["name"] = "Uther's Spirit Honored", }),	-- Uther's Spirit Honored
-			q(39460, { ["name"] = "Vale POI Event TRACKING", }),	-- Vale POI Event TRACKING
-			q(41128, { ["name"] = "Valhallas - Vignette: Earlnoc - MRN", }),	-- Valhallas - Vignette: Earlnoc - MRN
-			q(39744, { ["name"] = "Valhallas Reward Quest", }),	-- Valhallas Reward Quest
-			q(38304, { ["name"] = "Val'sharah", }),	-- Val'sharah
-			q(37825, { ["name"] = "Vignette Placeholder", }),	-- Vignette Placeholder
-			q(41917, { ["name"] = "Vignette: Bear Cub", }),	-- Vignette: Bear Cub
-			q(38902, { ["name"] = "Vignette: Coruscating Bloom", }),	-- Vignette: Coruscating Bloom
-			q(38838, { ["name"] = "Vignette: Enraged Earthservant", }),	-- Vignette: Enraged Earthservant
-			q(38451, { ["name"] = "Vignette: Geir Gutslice", }),	-- Vignette: Geir Gutslice
-			q(38398, { ["name"] = "Vignette: Helyra's Kraken", }),	-- Vignette: Helyra's Kraken
-			q(38314, { ["name"] = "Vignette: Hidden Demon", }),	-- Vignette: Hidden Demon
-			q(38368, { ["name"] = "Vignette: Hidden Demon", }),	-- Vignette: Hidden Demon
-			q(38452, { ["name"] = "Vignette: Hidden Demon", }),	-- Vignette: Hidden Demon
-			q(38380, { ["name"] = "Vignette: Hivequeen Zsala", }),	-- Vignette: Hivequeen Zsala
-			q(38278, { ["name"] = "Vignette: Kraw the Mystic", }),	-- Vignette: Kraw the Mystic
-			q(39158, { ["name"] = "Vignette: Rally the Wilds", }),	-- Vignette: Rally the Wilds
-			q(38465, { ["name"] = "Vignette: Shyama the Dreaded", }),	-- Vignette: Shyama the Dreaded
-			q(39467, { ["name"] = "Vignette: Sorcery and Suction", }),	-- Vignette: Sorcery and Suction
-			q(40939, { ["name"] = "Vignette: Stormwing Matriarch", }),	-- Vignette: Stormwing Matriarch
-			q(39795, { ["name"] = "Vindicator Boros Slotted", }),	-- Vindicator Boros Slotted
-			q(41953, { ["name"] = "Vis'ileth", }),	-- Vis'ileth
-			q(41820, { ["name"] = "Walk Without Rhythm", }),	-- Walk Without Rhythm
-			q(40590, { ["name"] = "Warrior Inbound", }),	-- Warrior Inbound
-			q(37927, { ["name"] = "We Meet at Light's Hope", }),	-- We Meet at Light's Hope
-			q(44115, { ["name"] = "Welcome to Legion!", }),	-- Welcome to Legion!
-			q(37930, { ["name"] = "Whelp? That Happened.", }),	-- Whelp? That Happened.
-			q(41559, { ["name"] = "Where's Our Wine? - Tracking", }),	-- Where's Our Wine? - Tracking
-			q(41832, { ["name"] = "White Water Terror", }),	-- White Water Terror
-			q(39810, { ["name"] = "Whitewater Wash Treasure", }),	-- Whitewater Wash Treasure
-			q(39811, { ["name"] = "Whitewater Wash Treasure", }),	-- Whitewater Wash Treasure
-			q(41761, { ["name"] = "Winter Moose Roundup", }),	-- Winter Moose Roundup
-			q(41825, { ["name"] = "Winged Menace", }),	-- Winged Menace
-			q(39927, { ["name"] = "Wingterror Ikzil Looted", }),	-- Wingterror Ikzil Looted
-			q(39826, { ["name"] = "Witchwood Treasure", }),	-- Witchwood Treasure
-			q(40728, { ["name"] = "Wormgut's Quest", }),	-- Wormgut's Quest
-			q(39527, { ["name"] = "Wrath of Azshara Reward Quest", }),	-- Wrath of Azshara Reward Quest
-			q(39420, { ["name"] = "Xavius Event TRACKING", }),	-- Xavius Event TRACKING
-			q(38827, { ["name"] = "Your Will Be Done", }),	-- Your Will Be Done
-			q(41872, { ["name"] = "[DEPRECATED]", }),	-- [DEPRECATED]
-			q(37691, { ["name"] = "[DEPRECATED]The Ancient One", }),	-- [DEPRECATED]The Ancient One
-			q(41983, { ["name"] = "[NYI] Bear Necessities", }),	-- [NYI] Bear Necessities
-			q(39852, { ["name"] = "[PH] Collect Weapons", }),	-- [PH] Collect Weapons
-			q(39785, { ["name"] = "[PH] Walrus Tusks", }),	-- [PH] Walrus Tusks
-			q(38313, { ["name"] = "[PH] Worg Pelts", }),	-- [PH] Worg Pelts
-			q(36939, { ["name"] = "[UNUSED]Blood of the Annihilan", }),	-- [UNUSED]Blood of the Annihilan
+		expansion(EXPANSION.LEGION, patch(0,1), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+			q(40103, { name = "7.0 ALPHA DK TEST QUEST", }),	-- 7.0 ALPHA DK TEST QUEST
+			q(39846, { name = "7.0 Dalaran - Treasure 001 - Burnt Cart", }),	-- 7.0 Dalaran - Treasure 001 - Burnt Cart
+			q(39507, { name = "7.0 Highmountain - Treasure 062 - Pinerock Basin", }),	-- 7.0 Highmountain - Treasure 062 - Pinerock Basin
+			q(38215, { name = "7.0 Stormheim - Treasure 015 - Haustvald - ZTO", }),	-- 7.0 Stormheim - Treasure 015 - Haustvald - ZTO
+			q(38494, { name = "7.0 Stormheim - Treasure 016 - Bear Cave - ZTO", }),	-- 7.0 Stormheim - Treasure 016 - Bear Cave - ZTO
+			q(38509, { name = "7.0 Stormheim - Treasure 021 - Helheim - ZTO", }),	-- 7.0 Stormheim - Treasure 021 - Helheim - ZTO
+			q(38511, { name = "7.0 Stormheim - Treasure 022 - Helheim - ZTO", }),	-- 7.0 Stormheim - Treasure 022 - Helheim - ZTO
+			q(40066, { name = "7.0 Stormheim - Treasure 032 - Blackbeak Overlook - twh", }),	-- 7.0 Stormheim - Treasure 032 - Blackbeak Overlook - twh
+			q(40067, { name = "7.0 Stormheim - Vignette: Boulderfall - twh", }),	-- 7.0 Stormheim - Vignette: Boulderfall - twh
+			q(40100, { name = "7.0 Stormheim - Vignette: Eileen the Raven - twh", }),	-- 7.0 Stormheim - Vignette: Eileen the Raven - twh
+			q(40097, { name = "7.0 Stormheim - Vignette: Sunbreeze - twh", }),	-- 7.0 Stormheim - Vignette: Sunbreeze - twh
+			q(41048, { name = "7.0 Suramar - Treasure 003 - Jandvik - twh", }),	-- 7.0 Suramar - Treasure 003 - Jandvik - twh
+			q(41049, { name = "7.0 Suramar - Treasure 004 - Jandvik - twh", }),	-- 7.0 Suramar - Treasure 004 - Jandvik - twh
+			q(41050, { name = "7.0 Suramar - Treasure 005 - Jandvik - twh", }),	-- 7.0 Suramar - Treasure 005 - Jandvik - twh
+			q(41051, { name = "7.0 Suramar - Treasure 006 - Jandvik - twh", }),	-- 7.0 Suramar - Treasure 006 - Jandvik - twh
+			q(41681, { name = "7.0 Suramar - Treasure 007 - Jandvik - twh", }),	-- 7.0 Suramar - Treasure 007 - Jandvik - twh
+			q(41682, { name = "7.0 Suramar - Treasure 008 - Sashj'tar Ruins - twh", }),	-- 7.0 Suramar - Treasure 008 - Sashj'tar Ruins - twh
+			q(41126, { name = "7.0 Suramar - Vignette: Flotsam - twh", }),	-- 7.0 Suramar - Vignette: Flotsam - twh
+			q(41134, { name = "7.0 Suramar - Vignette: Jetsam - twh", }),	-- 7.0 Suramar - Vignette: Jetsam - twh
+			q(41142, { name = "7.0 Suramar - Vignette: Khory - twh", }),	-- 7.0 Suramar - Vignette: Khory - twh
+			q(40399, { name = "7.0 Suramar - Vignette: Sailor's Nightmare - twh", }),	-- 7.0 Suramar - Vignette: Sailor's Nightmare - twh
+			q(39099, { name = "7.0 Val'sharah - Hollow - Small Treasure 000 - twh", }),	-- 7.0 Val'sharah - Hollow - Small Treasure 000 - twh
+			q(39100, { name = "7.0 Val'sharah - Hollow - Small Treasure 001 - twh", }),	-- 7.0 Val'sharah - Hollow - Small Treasure 001 - twh
+			q(39101, { name = "7.0 Val'sharah - Hollow - Small Treasure 002 - twh", }),	-- 7.0 Val'sharah - Hollow - Small Treasure 002 - twh
+			q(39110, { name = "7.0 Val'sharah - Rook - Large Treasure 000 - twh", }),	-- 7.0 Val'sharah - Rook - Large Treasure 000 - twh
+			q(39109, { name = "7.0 Val'sharah - Rook - Medium Treasure 001 - twh", }),	-- 7.0 Val'sharah - Rook - Medium Treasure 001 - twh
+			q(39103, { name = "7.0 Val'sharah - Rook - Small Treasure 000 - twh", }),	-- 7.0 Val'sharah - Rook - Small Treasure 000 - twh
+			q(39104, { name = "7.0 Val'sharah - Rook - Small Treasure 001 - twh", }),	-- 7.0 Val'sharah - Rook - Small Treasure 001 - twh
+			q(39105, { name = "7.0 Val'sharah - Rook - Small Treasure 002 - twh", }),	-- 7.0 Val'sharah - Rook - Small Treasure 002 - twh
+			q(39106, { name = "7.0 Val'sharah - Rook - Small Treasure 003 - twh", }),	-- 7.0 Val'sharah - Rook - Small Treasure 003 - twh
+			q(39114, { name = "7.0 Val'sharah - Ruins - Medium Treasure 000 - twh", }),	-- 7.0 Val'sharah - Ruins - Medium Treasure 000 - twh
+			q(39111, { name = "7.0 Val'sharah - Ruins - Small Treasure 000 - twh", }),	-- 7.0 Val'sharah - Ruins - Small Treasure 000 - twh
+			q(39112, { name = "7.0 Val'sharah - Ruins - Small Treasure 001 - twh", }),	-- 7.0 Val'sharah - Ruins - Small Treasure 001 - twh
+			q(39113, { name = "7.0 Val'sharah - Ruins - Small Treasure 002 - twh", }),	-- 7.0 Val'sharah - Ruins - Small Treasure 002 - twh
+			q(40273, { name = "7.0 Val'sharah - Temple of Elune - Medium Treasure 001 - bic", }),	-- 7.0 Val'sharah - Temple of Elune - Medium Treasure 001 - bic
+			q(38392, { name = "7.0 Val'sharah - Treasure 014 - Malorne's Refuge - twh", }),	-- 7.0 Val'sharah - Treasure 014 - Malorne's Refuge - twh
+			q(38393, { name = "7.0 Val'sharah - Treasure 015 - Malorne's Refuge - twh", }),	-- 7.0 Val'sharah - Treasure 015 - Malorne's Refuge - twh
+			q(38895, { name = "7.0 Val'sharah - Vignette: Swiftflight - Treasure001 - twh", }),	-- 7.0 Val'sharah - Vignette: Swiftflight - Treasure001 - twh
+			q(40272, { name = "7.0 Val'sharah - Village - Medium Treasure 001 - twh", }),	-- 7.0 Val'sharah - Village - Medium Treasure 001 - twh
+			q(39094, { name = "7.0 Val'sharah - Village - Small Treasure 001 - twh", }),	-- 7.0 Val'sharah - Village - Small Treasure 001 - twh
+			q(39095, { name = "7.0 Val'sharah - Village - Small Treasure 002 - twh", }),	-- 7.0 Val'sharah - Village - Small Treasure 002 - twh
+			q(39098, { name = "7.0 Val'sharah - Village - Small Treasure 003 - twh", }),	-- 7.0 Val'sharah - Village - Small Treasure 003 - twh
+			q(42012, { name = "A Gift of Time", }),	-- A Gift of Time
+			q(39589, { name = "A Mysterious Summons", }),	-- A Mysterious Summons
+			q(41978, { name = "A Strong Defense", }),	-- A Strong Defense
+			q(41988, { name = "A Strong Defense", }),	-- A Strong Defense
+			q(41997, { name = "A Strong Defense", }),	-- A Strong Defense
+			q(39032, { name = "A Summons from Saylanna", }),	-- A Summons from Saylanna
+			q(39135, { name = "A Sundered Tribe", }),	-- A Sundered Tribe
+			q(40312, { name = "A Timely Opportunity", }),	-- A Timely Opportunity
+			q(38227, { name = "A True Leader Inspires Others", }),	-- A True Leader Inspires Others
+			q(39993, { name = "Abandoned Fishing Pole", }),	-- Abandoned Fishing Pole
+			q(40891, { name = "Aegis of Aggramar Activated", }),	-- Aegis of Aggramar Activated
+			q(40622, { name = "Aman'thul Shrine Cleansed", }),	-- Aman'thul Shrine Cleansed
+			q(38220, { name = "Arauk Nashal 70:JP3 - Aggramar's Vault - Tracking Quest Cleared - Aggramar's Vault", }),	-- Arauk Nashal 70:JP3 - Aggramar's Vault - Tracking Quest Cleared - Aggramar's Vault
+			q(39030, { name = "Arauk Nashal 70:JP3 - Aggramar's Vault - Tracking Quest Cleared - God-King Intro", }),	-- Arauk Nashal 70:JP3 - Aggramar's Vault - Tracking Quest Cleared - God-King Intro
+			q(38610, { name = "Arauk Nashal 70:JP3 - Gates of Valhallas -Tracking quest - Titan Vehicle - Bonus Objective", }),	-- Arauk Nashal 70:JP3 - Gates of Valhallas -Tracking quest - Titan Vehicle - Bonus Objective
+			q(37982, { name = "Art Tracker - Ashbringer - Tier 0 - Base", }),	-- Art Tracker - Ashbringer - Tier 0 - Base
+			q(37985, { name = "Art Tracker - Ashbringer - Tier 1 - Corrupted", }),	-- Art Tracker - Ashbringer - Tier 1 - Corrupted
+			q(37984, { name = "Art Tracker - Ashbringer - Tier 1 - Fire", }),	-- Art Tracker - Ashbringer - Tier 1 - Fire
+			q(37983, { name = "Art Tracker - Ashbringer - Tier 1 - Holy", }),	-- Art Tracker - Ashbringer - Tier 1 - Holy
+			q(37986, { name = "Art Tracker - Ashbringer - Tier 2 - Corrupted", }),	-- Art Tracker - Ashbringer - Tier 2 - Corrupted
+			q(37987, { name = "Art Tracker - Ashbringer - Tier 2 - Fire", }),	-- Art Tracker - Ashbringer - Tier 2 - Fire
+			q(37988, { name = "Art Tracker - Ashbringer - Tier 2 - Holy", }),	-- Art Tracker - Ashbringer - Tier 2 - Holy
+			q(39464, { name = "Artifact Received", }),	-- Artifact Received
+			q(40448, { name = "Artifact XP - Araxxas", }),	-- Artifact XP - Araxxas
+			q(40453, { name = "Artifact XP - Darkest Fear", }),	-- Artifact XP - Darkest Fear
+			q(40381, { name = "Artifact XP - Darkfiend Assassin", }),	-- Artifact XP - Darkfiend Assassin
+			q(40431, { name = "Artifact XP - Dreadbog", }),	-- Artifact XP - Dreadbog
+			q(40456, { name = "Artifact XP - Gorebeak", }),	-- Artifact XP - Gorebeak
+			q(40446, { name = "Artifact XP - Gravax the Desecrator", }),	-- Artifact XP - Gravax the Desecrator
+			q(40427, { name = "Artifact XP - Grelda the Crone", }),	-- Artifact XP - Grelda the Crone
+			q(40428, { name = "Artifact XP - Henry", }),	-- Artifact XP - Henry
+			q(41213, { name = "Artifact XP - Cho'Zok", }),	-- Artifact XP - Cho'Zok
+			q(40454, { name = "Artifact XP - Imagined Horror", }),	-- Artifact XP - Imagined Horror
+			q(40369, { name = "Artifact XP - Ironbranch", }),	-- Artifact XP - Ironbranch
+			q(40382, { name = "Artifact XP - Jinikki the Puncturer", }),	-- Artifact XP - Jinikki the Puncturer
+			q(40437, { name = "Artifact XP - Kagraxxis the Corruptor", }),	-- Artifact XP - Kagraxxis the Corruptor
+			q(40426, { name = "Artifact XP - Kalazzius the Guileful", }),	-- Artifact XP - Kalazzius the Guileful
+			q(40443, { name = "Artifact XP - Kester Farseeker", }),	-- Artifact XP - Kester Farseeker
+			q(40383, { name = "Artifact XP - Kiranys Duskwhisper", }),	-- Artifact XP - Kiranys Duskwhisper
+			q(40441, { name = "Artifact XP - Lieutenant Desdel Stareye", }),	-- Artifact XP - Lieutenant Desdel Stareye
+			q(40433, { name = "Artifact XP - Lyrath Moonfeather", }),	-- Artifact XP - Lyrath Moonfeather
+			q(40450, { name = "Artifact XP - Magula", }),	-- Artifact XP - Magula
+			q(40451, { name = "Artifact XP - Morphael", }),	-- Artifact XP - Morphael
+			q(40429, { name = "Artifact XP - Perrexx", }),	-- Artifact XP - Perrexx
+			q(40425, { name = "Artifact XP - Pollous the Fetid", }),	-- Artifact XP - Pollous the Fetid
+			q(40432, { name = "Artifact XP - Razzok", }),	-- Artifact XP - Razzok
+			q(40440, { name = "Artifact XP - Rotbeak", }),	-- Artifact XP - Rotbeak
+			q(40455, { name = "Artifact XP - Seersei", }),	-- Artifact XP - Seersei
+			q(40439, { name = "Artifact XP - Sirius Ebonwing", }),	-- Artifact XP - Sirius Ebonwing
+			q(40445, { name = "Artifact XP - Starlys Strongbow", }),	-- Artifact XP - Starlys Strongbow
+			q(40436, { name = "Artifact XP - Thaon Moonclaw", }),	-- Artifact XP - Thaon Moonclaw
+			q(40452, { name = "Artifact XP - Theryssia", }),	-- Artifact XP - Theryssia
+			q(40380, { name = "Artifact XP - Thondrax", }),	-- Artifact XP - Thondrax
+			q(40444, { name = "Artifact XP - Trelan Shieldbreaker", }),	-- Artifact XP - Trelan Shieldbreaker
+			q(40434, { name = "Artifact XP - Tur'xoran", }),	-- Artifact XP - Tur'xoran
+			q(40442, { name = "Artifact XP - Varethos", }),	-- Artifact XP - Varethos
+			q(40447, { name = "Artifact XP - Verus Shadowfall", }),	-- Artifact XP - Verus Shadowfall
+			q(40435, { name = "Artifact XP - Wingterror Ikzil", }),	-- Artifact XP - Wingterror Ikzil
+			q(40430, { name = "Artifact XP - Wraithtalon", }),	-- Artifact XP - Wraithtalon
+			q(40449, { name = "Artifact XP - Xalythar the Tormentor", }),	-- Artifact XP - Xalythar the Tormentor
+			q(40438, { name = "Artifact XP - Xandris the Betrayer", }),	-- Artifact XP - Xandris the Betrayer
+			q(41823, { name = "Ashes to Ashes", }),	-- Ashes to Ashes
+			q(41006, { name = "Assassinate That Guy", }),	-- Assassinate That Guy
+			q(38000, { name = "Azsuna - Treasure 001 - Drowned Ruins", }),	-- Azsuna - Treasure 001 - Drowned Ruins
+			q(37826, { name = "Azsuna - Treasure 003 - Plundered Artifacts", }),	-- Azsuna - Treasure 003 - Plundered Artifacts
+			q(37827, { name = "Azsuna - Treasure 005 - Discarded Flotsam", }),	-- Azsuna - Treasure 005 - Discarded Flotsam
+			q(37833, { name = "Azsuna - Treasure 010 - Offerings To Elune", }),	-- Azsuna - Treasure 010 - Offerings To Elune
+			q(38734, { name = "Banshee Queen", }),	-- Banshee Queen
+			q(40305, { name = "Barracks Drop 01 Tracking Event", }),	-- Barracks Drop 01 Tracking Event
+			q(40313, { name = "Barracks Drop 02 Tracking Event", }),	-- Barracks Drop 02 Tracking Event
+			q(41408, { name = "Battle: Pandaren Cuisine - Elling Trias", }),	-- Battle: Pandaren Cuisine - Elling Trias
+			q(41405, { name = "Battle: Pandaren Cuisine - Sungshin Ironpaw", }),	-- Battle: Pandaren Cuisine - Sungshin Ironpaw
+			q(41406, { name = "Battle: Pandaren Cuisine - Torg Slowflame", }),	-- Battle: Pandaren Cuisine - Torg Slowflame
+			q(41400, { name = "Battle: Pandaren Cuisine!", }),	-- Battle: Pandaren Cuisine!
+			q(41016, { name = "BC TL", }),	-- BC TL
+			q(39311, { name = "Bitestone Enclave Treasure", }),	-- Bitestone Enclave Treasure
+			q(40468, { name = "Bitestone Enclave Treasure", }),	-- Bitestone Enclave Treasure
+			q(39011, { name = "Black Rook Invasion", }),	-- Black Rook Invasion
+			q(38648, { name = "Black Rook Orders", }),	-- Black Rook Orders
+			q(38321, { name = "Blackbeak Overlook", }),	-- Blackbeak Overlook
+			q(39819, { name = "Bloodhunt Highland Treasure", }),	-- Bloodhunt Highland Treasure
+			q(39820, { name = "Bloodhunt Highland Treasure", }),	-- Bloodhunt Highland Treasure
+			q(39821, { name = "Bloodhunt Highland Treasure", }),	-- Bloodhunt Highland Treasure
+			q(39822, { name = "Bloodhunt Highland Treasure", }),	-- Bloodhunt Highland Treasure
+			q(39823, { name = "Bloodhunt Highland Treasure", }),	-- Bloodhunt Highland Treasure
+			q(40322, { name = "Bloodhunt Highland Treasure", }),	-- Bloodhunt Highland Treasure
+			q(41982, { name = "Book Read Tracking Quest", }),	-- Book Read Tracking Quest
+			q(41842, { name = "Bottom of the Food Chain", }),	-- Bottom of the Food Chain
+			q(38535, { name = "Brimbil's Journey", }),	-- Brimbil's Journey
+			q(38548, { name = "Brimbil's Journey - Reward", }),	-- Brimbil's Journey - Reward
+			q(42030, { name = "Building Our Troops [NYI]", }),	-- Building Our Troops [NYI]
+			q(40323, { name = "Cave of the Blood Trial Treasure", }),	-- Cave of the Blood Trial Treasure
+			q(41937, { name = "Combat Training", }),	-- Combat Training
+			q(38699, { name = "Competitive Exorcise", }),	-- Competitive Exorcise
+			q(38311, { name = "Content Perk: Call of the Highlord", }),	-- Content Perk: Call of the Highlord
+			q(38310, { name = "Content Perk: Righteous Strength", }),	-- Content Perk: Righteous Strength
+			q(38309, { name = "Content Perk: The Light Reveals", }),	-- Content Perk: The Light Reveals
+			q(40628, { name = "Corrupted Ashbringer", }),	-- Corrupted Ashbringer
+			q(40664, { name = "Corrupted Chosen", }),	-- Corrupted Chosen
+			q(37175, { name = "Craig's Test Quest Again!", }),	-- Craig's Test Quest Again!
+			q(40699, { name = "Credit - Scenario Complete", }),	-- Credit - Scenario Complete
+			q(39296, { name = "Crystal Fissure Treasure", }),	-- Crystal Fissure Treasure
+			q(37867, { name = "Crystalbeard", }),	-- Crystalbeard
+			q(39854, { name = "Curse of the Sea", }),	-- Curse of the Sea
+			q(41241, { name = "Cursed Queenfish Needed", }),	-- Cursed Queenfish Needed
+			q(40572, { name = "Darkheart Thicket Normal Reward Quest", }),	-- Darkheart Thicket Normal Reward Quest
+			q(41880, { name = "Den of Shadows", }),	-- Den of Shadows
+			q(40720, { name = "DEPRECATE - REUSE", }),	-- DEPRECATE - REUSE
+			q(40719, { name = "DEPRECATE- REUSE", }),	-- DEPRECATE- REUSE
+			q(39116, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(39190, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(39979, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(40641, { name = "Deprecated", }),	-- Deprecated
+			q(41248, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(41250, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(41251, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(39896, { name = "DEPRECATED: The Ringer", }),	-- DEPRECATED: The Ringer
+			q(38841, { name = "Die, Fish-People", }),	-- Die, Fish-People
+			q(40110, { name = "Disrupt the Inkbinders", }),	-- Disrupt the Inkbinders
+			q(38839, { name = "Done with Waiting", }),	-- Done with Waiting
+			q(39805, { name = "Drogbar Spellcaster", }),	-- Drogbar Spellcaster
+			q(39813, { name = "Earthmother's Bounty Treasure", }),	-- Earthmother's Bounty Treasure
+			q(38471, { name = "Elune's Kiss", }),	-- Elune's Kiss
+			q(39925, { name = "Emissary Azathar Looted", }),	-- Emissary Azathar Looted
+			q(37844, { name = "Essence of the Unbound", }),	-- Essence of the Unbound
+			q(39352, { name = "Extinguishing the Sentinels", }),	-- Extinguishing the Sentinels
+			q(38730, { name = "Farm Defense", }),	-- Farm Defense
+			q(39152, { name = "Felwrought Annihilator Looted", }),	-- Felwrought Annihilator Looted
+			q(40007, { name = "Fields of An'she Treasure", }),	-- Fields of An'she Treasure
+			q(40461, { name = "Fields of An'she Treasure", }),	-- Fields of An'she Treasure
+			q(40462, { name = "Fields of An'she Treasure", }),	-- Fields of An'she Treasure
+			q(40463, { name = "Fields of An'she Treasure", }),	-- Fields of An'she Treasure
+			q(40629, { name = "Fiery Ashbringer", }),	-- Fiery Ashbringer
+			q(40663, { name = "Fiery Chosen", }),	-- Fiery Chosen
+			q(38940, { name = "First Mission Complete", }),	-- First Mission Complete
+			q(39273, { name = "First Mission Complete", }),	-- First Mission Complete
+			q(38993, { name = "First Mission Sent", }),	-- First Mission Sent
+			q(39271, { name = "First Mission Sent", }),	-- First Mission Sent
+			q(38840, { name = "Fishy Business", }),	-- Fishy Business
+			q(39618, { name = "FLAG - Enchanting Research G/1/1/1", }),	-- FLAG - Enchanting Research G/1/1/1
+			q(39619, { name = "FLAG - Enchanting Research G/1/1/2", }),	-- FLAG - Enchanting Research G/1/1/2
+			q(39620, { name = "FLAG - Enchanting Research G/1/1/3", }),	-- FLAG - Enchanting Research G/1/1/3
+			q(39621, { name = "FLAG - Enchanting Research G/1/2/1", }),	-- FLAG - Enchanting Research G/1/2/1
+			q(39622, { name = "FLAG - Enchanting Research G/1/2/2", }),	-- FLAG - Enchanting Research G/1/2/2
+			q(39623, { name = "FLAG - Enchanting Research G/1/2/3", }),	-- FLAG - Enchanting Research G/1/2/3
+			q(39624, { name = "FLAG - Enchanting Research G/1/3/1", }),	-- FLAG - Enchanting Research G/1/3/1
+			q(39625, { name = "FLAG - Enchanting Research G/1/3/2", }),	-- FLAG - Enchanting Research G/1/3/2
+			q(39626, { name = "FLAG - Enchanting Research G/1/3/3", }),	-- FLAG - Enchanting Research G/1/3/3
+			q(39627, { name = "FLAG - Enchanting Research G/2/1/1", }),	-- FLAG - Enchanting Research G/2/1/1
+			q(39628, { name = "FLAG - Enchanting Research G/2/1/2", }),	-- FLAG - Enchanting Research G/2/1/2
+			q(39629, { name = "FLAG - Enchanting Research G/2/1/3", }),	-- FLAG - Enchanting Research G/2/1/3
+			q(39630, { name = "FLAG - Enchanting Research G/2/2/1", }),	-- FLAG - Enchanting Research G/2/2/1
+			q(39631, { name = "FLAG - Enchanting Research G/2/2/2", }),	-- FLAG - Enchanting Research G/2/2/2
+			q(39632, { name = "FLAG - Enchanting Research G/2/2/3", }),	-- FLAG - Enchanting Research G/2/2/3
+			q(39633, { name = "FLAG - Enchanting Research G/2/3/1", }),	-- FLAG - Enchanting Research G/2/3/1
+			q(39634, { name = "FLAG - Enchanting Research G/2/3/2", }),	-- FLAG - Enchanting Research G/2/3/2
+			q(39635, { name = "FLAG - Enchanting Research G/2/3/3", }),	-- FLAG - Enchanting Research G/2/3/3
+			q(39636, { name = "FLAG - Enchanting Research G/3/1/1", }),	-- FLAG - Enchanting Research G/3/1/1
+			q(39637, { name = "FLAG - Enchanting Research G/3/1/2", }),	-- FLAG - Enchanting Research G/3/1/2
+			q(39638, { name = "FLAG - Enchanting Research G/3/1/3", }),	-- FLAG - Enchanting Research G/3/1/3
+			q(39639, { name = "FLAG - Enchanting Research G/3/2/1", }),	-- FLAG - Enchanting Research G/3/2/1
+			q(39640, { name = "FLAG - Enchanting Research G/3/2/2", }),	-- FLAG - Enchanting Research G/3/2/2
+			q(39641, { name = "FLAG - Enchanting Research G/3/2/3", }),	-- FLAG - Enchanting Research G/3/2/3
+			q(39642, { name = "FLAG - Enchanting Research G/3/3/1", }),	-- FLAG - Enchanting Research G/3/3/1
+			q(39643, { name = "FLAG - Enchanting Research G/3/3/2", }),	-- FLAG - Enchanting Research G/3/3/2
+			q(39644, { name = "FLAG - Enchanting Research G/3/3/3", }),	-- FLAG - Enchanting Research G/3/3/3
+			q(39534, { name = "FLAG - Enchanting Research S/1/1/1", }),	-- FLAG - Enchanting Research S/1/1/1
+			q(39535, { name = "FLAG - Enchanting Research S/1/1/2", }),	-- FLAG - Enchanting Research S/1/1/2
+			q(39536, { name = "FLAG - Enchanting Research S/1/1/3", }),	-- FLAG - Enchanting Research S/1/1/3
+			q(39537, { name = "FLAG - Enchanting Research S/1/2/1", }),	-- FLAG - Enchanting Research S/1/2/1
+			q(39538, { name = "FLAG - Enchanting Research S/1/2/2", }),	-- FLAG - Enchanting Research S/1/2/2
+			q(39539, { name = "FLAG - Enchanting Research S/1/2/3", }),	-- FLAG - Enchanting Research S/1/2/3
+			q(39540, { name = "FLAG - Enchanting Research S/1/3/1", }),	-- FLAG - Enchanting Research S/1/3/1
+			q(39541, { name = "FLAG - Enchanting Research S/1/3/2", }),	-- FLAG - Enchanting Research S/1/3/2
+			q(39542, { name = "FLAG - Enchanting Research S/1/3/3", }),	-- FLAG - Enchanting Research S/1/3/3
+			q(39551, { name = "FLAG - Enchanting Research S/2/1/1", }),	-- FLAG - Enchanting Research S/2/1/1
+			q(39550, { name = "FLAG - Enchanting Research S/2/1/2", }),	-- FLAG - Enchanting Research S/2/1/2
+			q(39549, { name = "FLAG - Enchanting Research S/2/1/3", }),	-- FLAG - Enchanting Research S/2/1/3
+			q(39548, { name = "FLAG - Enchanting Research S/2/2/1", }),	-- FLAG - Enchanting Research S/2/2/1
+			q(39547, { name = "FLAG - Enchanting Research S/2/2/2", }),	-- FLAG - Enchanting Research S/2/2/2
+			q(39546, { name = "FLAG - Enchanting Research S/2/2/3", }),	-- FLAG - Enchanting Research S/2/2/3
+			q(39545, { name = "FLAG - Enchanting Research S/2/3/1", }),	-- FLAG - Enchanting Research S/2/3/1
+			q(39544, { name = "FLAG - Enchanting Research S/2/3/2", }),	-- FLAG - Enchanting Research S/2/3/2
+			q(39543, { name = "FLAG - Enchanting Research S/2/3/3", }),	-- FLAG - Enchanting Research S/2/3/3
+			q(39552, { name = "FLAG - Enchanting Research S/3/1/1", }),	-- FLAG - Enchanting Research S/3/1/1
+			q(39553, { name = "FLAG - Enchanting Research S/3/1/2", }),	-- FLAG - Enchanting Research S/3/1/2
+			q(39554, { name = "FLAG - Enchanting Research S/3/1/3", }),	-- FLAG - Enchanting Research S/3/1/3
+			q(39555, { name = "FLAG - Enchanting Research S/3/2/1", }),	-- FLAG - Enchanting Research S/3/2/1
+			q(39556, { name = "FLAG - Enchanting Research S/3/2/2", }),	-- FLAG - Enchanting Research S/3/2/2
+			q(39557, { name = "FLAG - Enchanting Research S/3/2/3", }),	-- FLAG - Enchanting Research S/3/2/3
+			q(39558, { name = "FLAG - Enchanting Research S/3/3/1", }),	-- FLAG - Enchanting Research S/3/3/1
+			q(39559, { name = "FLAG - Enchanting Research S/3/3/2", }),	-- FLAG - Enchanting Research S/3/3/2
+			q(39560, { name = "FLAG - Enchanting Research S/3/3/3", }),	-- FLAG - Enchanting Research S/3/3/3
+			q(40739, { name = "FLAG - Reaves Thermal Anvil Module", }),	-- FLAG - Reaves Thermal Anvil Module
+			q(41822, { name = "Following his Hoofsteps", }),	-- Following his Hoofsteps
+			q(39151, { name = "Forging the Artifact", }),	-- Forging the Artifact
+			q(41875, { name = "Found First Clue", }),	-- Found First Clue
+			q(41987, { name = "Garn", }),	-- Garn
+			q(41903, { name = "Gathering the Pieces", }),	-- Gathering the Pieces
+			q(39647, { name = "Get the Little Ones!", }),	-- Get the Little Ones!
+			q(40124, { name = "Gift of the Storm Cooldown", }),	-- Gift of the Storm Cooldown
+			q(40574, { name = "Golganneth Shrine Cleansed", }),	-- Golganneth Shrine Cleansed
+			q(38670, { name = "Goredome 2", }),	-- Goredome 2
+			q(41833, { name = "Grmlrml's Last Ride", }),	-- Grmlrml's Last Ride
+			q(39436, { name = "Haglands Treasure", }),	-- Haglands Treasure
+			q(39827, { name = "Haglands Treasure", }),	-- Haglands Treasure
+			q(40888, { name = "Hammer of Khaz'goroth Actived", }),	-- Hammer of Khaz'goroth Actived
+			q(39687, { name = "Harbingers of the Past", }),	-- Harbingers of the Past
+			q(39980, { name = "Highlord Darion Mograine Slotted", }),	-- Highlord Darion Mograine Slotted
+			q(38856, { name = "Holy Retribution", }),	-- Holy Retribution
+			q(40992, { name = "Honor Among Thieves", }),	-- Honor Among Thieves
+			q(38688, { name = "Hope Remains", }),	-- Hope Remains
+			q(40466, { name = "Howling Hills Treasure", }),	-- Howling Hills Treasure
+			q(40467, { name = "Howling Hills Treasure", }),	-- Howling Hills Treasure
+			q(39871, { name = "Huntress Ellandryn", }),	-- Huntress Ellandryn
+			q(41042, { name = "Champion Chomper", }),	-- Champion Chomper
+			q(40766, { name = "Charfeather", }),	-- Charfeather
+			q(38491, { name = "Infected Mushroom", }),	-- Infected Mushroom
+			q(38867, { name = "Inspiration Strikes", }),	-- Inspiration Strikes
+			q(40685, { name = "Into the Mouth of the Nether", }),	-- Into the Mouth of the Nether
+			q(39397, { name = "Invasion Experience Received", }),	-- Invasion Experience Received
+			q(39989, { name = "Keepers of the Hammer", }),	-- Keepers of the Hammer
+			q(42003, { name = "Kept Secret, Kept Safe", }),	-- Kept Secret, Kept Safe
+			q(39745, { name = "Khadgar Teleport", }),	-- Khadgar Teleport
+			q(39969, { name = "Kill Azshara", }),	-- Kill Azshara
+			q(41012, { name = "Kirin Tor Showdown Seen", }),	-- Kirin Tor Showdown Seen
+			q(41963, { name = "Knowledge Unlock Daily Tracking Quest", }),	-- Knowledge Unlock Daily Tracking Quest
+			q(39982, { name = "Koltira Deathweaver Slotted", }),	-- Koltira Deathweaver Slotted
+			q(39798, { name = "Lady Liadrin Slotted", }),	-- Lady Liadrin Slotted
+			q(41101, { name = "Lady S'theno Calls", }),	-- Lady S'theno Calls
+			q(41848, { name = "Legion Invaders", }),	-- Legion Invaders
+			q(41431, { name = "Legion Portal", }),	-- Legion Portal
+			q(41856, { name = "Legion Portal", }),	-- Legion Portal
+			q(41932, { name = "Legion Portal", }),	-- Legion Portal
+			q(41933, { name = "Legion Portal", }),	-- Legion Portal
+			q(41942, { name = "Legion Portal", }),	-- Legion Portal
+			q(41947, { name = "Legion Portal", }),	-- Legion Portal
+			q(41951, { name = "Legion Portal", }),	-- Legion Portal
+			q(41959, { name = "Legion Portal", }),	-- Legion Portal
+			q(41994, { name = "Legion Portal", }),	-- Legion Portal
+			q(40121, { name = "Ley Line Influences", }),	-- Ley Line Influences
+			q(40166, { name = "Leying with Murlocs", }),	-- Leying with Murlocs
+			q(40804, { name = "Li Li Slotted", }),	-- Li Li Slotted
+			q(39814, { name = "Lifespring Cavern Treasure", }),	-- Lifespring Cavern Treasure
+			q(40240, { name = "Looted Blacksmith Defender's Cache", }),	-- Looted Blacksmith Defender's Cache
+			q(40246, { name = "Looted Leatherworking Defender's Cache", }),	-- Looted Leatherworking Defender's Cache
+			q(40245, { name = "Looted Tailoring Defender's Cache", }),	-- Looted Tailoring Defender's Cache
+			q(38552, { name = "Lord Hal'shara's Tomb", }),	-- Lord Hal'shara's Tomb
+			q(39926, { name = "Lord Malus Looted", }),	-- Lord Malus Looted
+			q(39794, { name = "Lord Maxwell Tyrosus Slotted", }),	-- Lord Maxwell Tyrosus Slotted
+			q(39118, { name = "Lower Citadel Speed Tracking", }),	-- Lower Citadel Speed Tracking
+			q(39200, { name = "Lynore's Fury", }),	-- Lynore's Fury
+			q(40160, { name = "Magic Clams", }),	-- Magic Clams
+			q(40343, { name = "Magni/Eitrigg Meetup Seen", }),	-- Magni/Eitrigg Meetup Seen
+			q(38674, { name = "Malfurion's Cure", }),	-- Malfurion's Cure
+			q(37843, { name = "Mana Bark", }),	-- Mana Bark
+			q(39138, { name = "March Forth and Conquer", }),	-- March Forth and Conquer
+			q(40805, { name = "Meet The Master", }),	-- Meet The Master
+			q(38992, { name = "Mograine's Oath", }),	-- Mograine's Oath
+			q(40833, { name = "Mograine's Recruit", }),	-- Mograine's Recruit
+			q(40464, { name = "Mucksnout Den Treasure", }),	-- Mucksnout Den Treasure
+			q(39418, { name = "Neltharion's Lair Reward Quest", }),	-- Neltharion's Lair Reward Quest
+			q(40268, { name = "Neltharion's Vault Treasure", }),	-- Neltharion's Vault Treasure
+			q(39269, { name = "Never Alone", }),	-- Never Alone
+			q(38890, { name = "Not Dead Yet!", }),	-- Not Dead Yet!
+			q(38512, { name = "Oakleaf", }),	-- Oakleaf
+			q(40513, { name = "Oro's Overlook Treasure", }),	-- Oro's Overlook Treasure
+			q(38668, { name = "Our Last Hope", }),	-- Our Last Hope
+			q(38669, { name = "Our Last Hope", }),	-- Our Last Hope
+			q(39809, { name = "Path of Huln Treasure", }),	-- Path of Huln Treasure
+			q(39234, { name = "Peak Urgency", }),	-- Peak Urgency
+			q(39382, { name = "Perrexx the Corruptor", }),	-- Perrexx the Corruptor
+			q(39493, { name = "Pinerock Basin Treasure", }),	-- Pinerock Basin Treasure
+			q(39506, { name = "Pinerock Basin Treasure", }),	-- Pinerock Basin Treasure
+			q(39508, { name = "Pinerock Basin Treasure", }),	-- Pinerock Basin Treasure
+			q(39964, { name = "Pinerock Basin Treasure", }),	-- Pinerock Basin Treasure
+			q(40458, { name = "Pinerock Basin Treasure", }),	-- Pinerock Basin Treasure
+			q(40459, { name = "Pinerock Basin Treasure", }),	-- Pinerock Basin Treasure
+			q(40460, { name = "Pinerock Basin Treasure", }),	-- Pinerock Basin Treasure
+			q(39131, { name = "Possessions of Power", }),	-- Possessions of Power
+			q(40114, { name = "Prephoof Compound Treasure", }),	-- Prephoof Compound Treasure
+			q(40115, { name = "Prephoof Compound Treasure", }),	-- Prephoof Compound Treasure
+			q(40116, { name = "Prephoof Compound Treasure", }),	-- Prephoof Compound Treasure
+			q(38708, { name = "Purge the River", }),	-- Purge the River
+			q(38844, { name = "Rally the Wilds Buff Received", }),	-- Rally the Wilds Buff Received
+			q(38470, { name = "Rampant Mandragora", }),	-- Rampant Mandragora
+			q(39216, { name = "Ready to forge Tracking Bit", }),	-- Ready to forge Tracking Bit
+			q(40998, { name = "Rendezvous", }),	-- Rendezvous
+			q(41859, { name = "Rescue Efforts", }),	-- Rescue Efforts
+			q(41952, { name = "Rescue Efforts", }),	-- Rescue Efforts
+			q(41954, { name = "Rescue Efforts", }),	-- Rescue Efforts
+			q(41960, { name = "Rescue Efforts", }),	-- Rescue Efforts
+			q(41979, { name = "Rescue Efforts", }),	-- Rescue Efforts
+			q(41991, { name = "Rescue Efforts", }),	-- Rescue Efforts
+			q(37962, { name = "REUSE", }),	-- REUSE
+			q(40164, { name = "REUSE", }),	-- REUSE
+			q(41986, { name = "REUSE", }),	-- REUSE
+			q(40565, { name = "REUSEME", }),	-- REUSEME
+			q(41082, { name = "Reward: Aluneth", }),	-- Reward: Aluneth
+			q(40689, { name = "Reward: Deadwind Harvester", }),	-- Reward: Deadwind Harvester
+			q(41084, { name = "Reward: Ebonchill", }),	-- Reward: Ebonchill
+			q(41083, { name = "Reward: Felo'melorn", }),	-- Reward: Felo'melorn
+			q(40691, { name = "Reward: Skull of the Man'ari", }),	-- Reward: Skull of the Man'ari
+			q(40690, { name = "Reward: Staff of Sargeras", }),	-- Reward: Staff of Sargeras
+			q(37845, { name = "Rift Rippers", }),	-- Rift Rippers
+			q(42029, { name = "Rise, Champions [NYI]", }),	-- Rise, Champions [NYI]
+			q(39966, { name = "Riverbend Treasure", }),	-- Riverbend Treasure
+			q(40457, { name = "Riverbend Treasure", }),	-- Riverbend Treasure
+			q(41837, { name = "Rockaway Bully", }),	-- Rockaway Bully
+			q(39995, { name = "Rockaway Coast Treasure", }),	-- Rockaway Coast Treasure
+			q(39996, { name = "Rockaway Coast Treasure", }),	-- Rockaway Coast Treasure
+			q(39997, { name = "Rockaway Coast Treasure", }),	-- Rockaway Coast Treasure
+			q(39999, { name = "Rockaway Coast Treasure", }),	-- Rockaway Coast Treasure
+			q(40465, { name = "Rockcrawler Chasm Treasure", }),	-- Rockcrawler Chasm Treasure
+			q(39428, { name = "Satyr Line TRACKING", }),	-- Satyr Line TRACKING
+			q(39717, { name = "Scouting Mission Complete", }),	-- Scouting Mission Complete
+			q(39730, { name = "Scouting Mission Complete", }),	-- Scouting Mission Complete
+			q(39732, { name = "Scouting Mission Complete", }),	-- Scouting Mission Complete
+			q(39734, { name = "Scouting Mission Complete", }),	-- Scouting Mission Complete
+			q(38892, { name = "Scouting Report", }),	-- Scouting Report
+			q(39006, { name = "Second Mission Complete", }),	-- Second Mission Complete
+			q(39282, { name = "Second Mission Complete", }),	-- Second Mission Complete
+			q(39005, { name = "Second Mission Sent", }),	-- Second Mission Sent
+			q(39285, { name = "Second Mission Sent", }),	-- Second Mission Sent
+			q(38914, { name = "Secrets of Highmountain", }),	-- Secrets of Highmountain
+			q(39808, { name = "Sepulcher of the Sky Treasure", }),	-- Sepulcher of the Sky Treasure
+			q(40630, { name = "Shattered Ashbringer", }),	-- Shattered Ashbringer
+			q(40662, { name = "Shattered Chosen", }),	-- Shattered Chosen
+			q(38885, { name = "Shivering Ashmaw Cub", }),	-- Shivering Ashmaw Cub
+			q(38504, { name = "Shrine of the Bear Twins", }),	-- Shrine of the Bear Twins
+			q(38508, { name = "Shrine of the Bear Twins - Reward", }),	-- Shrine of the Bear Twins - Reward
+			q(41817, { name = "Skull of the Taskmaster", }),	-- Skull of the Taskmaster
+			q(40485, { name = "Skyhorn Treasure", }),	-- Skyhorn Treasure
+			q(40486, { name = "Skyhorn Treasure", }),	-- Skyhorn Treasure
+			q(40504, { name = "Skyhorn Treasure", }),	-- Skyhorn Treasure
+			q(40162, { name = "Snowblind Mesa Treasure", }),	-- Snowblind Mesa Treasure
+			q(40163, { name = "Snowblind Mesa Treasure", }),	-- Snowblind Mesa Treasure
+			q(40512, { name = "Snowblind Mesa Treasure", }),	-- Snowblind Mesa Treasure
+			q(40333, { name = "Spiritwind Summit Treasure", }),	-- Spiritwind Summit Treasure
+			q(39825, { name = "Stonedark Grotto Treasure", }),	-- Stonedark Grotto Treasure
+			q(40250, { name = "Suramar - Demon Hunter Daily - Choice Reward Summary - 1", }),	-- Suramar - Demon Hunter Daily - Choice Reward Summary - 1
+			q(40258, { name = "Suramar - Demon Hunter Daily - Choice Reward Summary - 2", }),	-- Suramar - Demon Hunter Daily - Choice Reward Summary - 2
+			q(40260, { name = "Suramar - Demon Hunter Daily - Choice Reward Summary - 3", }),	-- Suramar - Demon Hunter Daily - Choice Reward Summary - 3
+			q(41424, { name = "Suramar Noble District Heroic Reward Quest", }),	-- Suramar Noble District Heroic Reward Quest
+			q(41423, { name = "Suramar Noble District Reward Quest", }),	-- Suramar Noble District Reward Quest
+			q(39815, { name = "Sylvan Falls Treasure", }),	-- Sylvan Falls Treasure
+			q(39965, { name = "Sylvan Falls Treasure", }),	-- Sylvan Falls Treasure
+			q(40006, { name = "Sylvan Falls Treasure", }),	-- Sylvan Falls Treasure
+			q(41874, { name = "Talked to Tyrande to Start Events", }),	-- Talked to Tyrande to Start Events
+			q(40161, { name = "Tapping the Underground", }),	-- Tapping the Underground
+			q(41831, { name = "Taurson's Punch Out", }),	-- Taurson's Punch Out
+			q(38517, { name = "Tayla's Rescue", }),	-- Tayla's Rescue
+			q(38521, { name = "Tayla's Rescue - Reward", }),	-- Tayla's Rescue - Reward
+			q(41879, { name = "TBD", }),	-- TBD
+			q(38896, { name = "Tearing down the Legion", }),	-- Tearing down the Legion
+			q(40502, { name = "Test - Fireball", }),	-- Test - Fireball
+			q(40940, { name = "Test Quest Two", }),	-- Test Quest Two
+			q(40726, { name = "Test Reward Quest", }),	-- Test Reward Quest
+			q(39981, { name = "Thassarian Slotted", }),	-- Thassarian Slotted
+			q(38434, { name = "The Ashbringer", }),	-- The Ashbringer
+			q(41829, { name = "The Darkfeather Scout", }),	-- The Darkfeather Scout
+			q(38667, { name = "The Demon's Trail", }),	-- The Demon's Trail
+			q(40407, { name = "The Fate of Azeroth", }),	-- The Fate of Azeroth
+			q(38850, { name = "The Fate of Tirion Fordring", }),	-- The Fate of Tirion Fordring
+			q(41058, { name = "The Forge of Guardians", }),	-- The Forge of Guardians
+			q(39132, { name = "The New Chieftain", }),	-- The New Chieftain
+			q(39693, { name = "The Path of Huln", }),	-- The Path of Huln
+			q(38279, { name = "The Royal Taster", }),	-- The Royal Taster
+			q(40591, { name = "The Second Valarjar", }),	-- The Second Valarjar
+			q(39807, { name = "The Snowbringer", }),	-- The Snowbringer
+			q(39205, { name = "The Twisted Garden", }),	-- The Twisted Garden
+			q(39009, { name = "Third Mission Complete", }),	-- Third Mission Complete
+			q(39304, { name = "Third Mission Complete", }),	-- Third Mission Complete
+			q(39010, { name = "Third Mission Sent", }),	-- Third Mission Sent
+			q(39303, { name = "Third Mission Sent", }),	-- Third Mission Sent
+			q(39324, { name = "Through the Portal", }),	-- Through the Portal
+			q(39312, { name = "Thunder Totem Treasure", }),	-- Thunder Totem Treasure
+			q(39967, { name = "Thunder Totem Treasure", }),	-- Thunder Totem Treasure
+			q(39968, { name = "Thunder Totem Treasure", }),	-- Thunder Totem Treasure
+			q(40490, { name = "Thunder Totem Treasure", }),	-- Thunder Totem Treasure
+			q(40492, { name = "Thunder Totem Treasure", }),	-- Thunder Totem Treasure
+			q(40597, { name = "Thunder Totem Treasure", }),	-- Thunder Totem Treasure
+			q(40889, { name = "Tidestone of Golganneth Activated", }),	-- Tidestone of Golganneth Activated
+			q(40311, { name = "Titanic Showdown", }),	-- Titanic Showdown
+			q(38906, { name = "To the Rescue", }),	-- To the Rescue
+			q(39869, { name = "Toll for the Soul", }),	-- Toll for the Soul
+			q(40269, { name = "Torok's Bluff Treasure", }),	-- Torok's Bluff Treasure
+			q(42113, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(40764, { name = "Tracking Quest for Latosius Challenge 1", }),	-- Tracking Quest for Latosius Challenge 1
+			q(41029, { name = "Tracking Quest for Latosius Challenge 2", }),	-- Tracking Quest for Latosius Challenge 2
+			q(40296, { name = "Tracking Quest: Corridor", }),	-- Tracking Quest: Corridor
+			q(40810, { name = "Tracking Quest: Dorion Fed", }),	-- Tracking Quest: Dorion Fed
+			q(41229, { name = "Tracking Quest: Chen Obtained", }),	-- Tracking Quest: Chen Obtained
+			q(41285, { name = "Tracking Quest: Li Li Obtained", }),	-- Tracking Quest: Li Li Obtained
+			q(38664, { name = "Tracking Quest: Saved Family 1", }),	-- Tracking Quest: Saved Family 1
+			q(38665, { name = "Tracking Quest: Saved Family 2", }),	-- Tracking Quest: Saved Family 2
+			q(41284, { name = "Tracking Quest: The Monkey King Obtained", }),	-- Tracking Quest: The Monkey King Obtained
+			q(37697, { name = "Treasure Goblin", }),	-- Treasure Goblin
+			q(38281, { name = "Treasure: Spoils of the Burning Crusade", }),	-- Treasure: Spoils of the Burning Crusade
+			q(39962, { name = "Trouble for Okuna", }),	-- Trouble for Okuna
+			q(41065, { name = "Troubling News", }),	-- Troubling News
+			q(41102, { name = "Trusted Lieutenant", }),	-- Trusted Lieutenant
+			q(41876, { name = "Umbraxis Tracker", }),	-- Umbraxis Tracker
+			q(38938, { name = "Unbearable", }),	-- Unbearable
+			q(38454, { name = "Unfortunate Circumstances", }),	-- Unfortunate Circumstances
+			q(41103, { name = "Unleashed Havoc", }),	-- Unleashed Havoc
+			q(39136, { name = "Unused", }),	-- Unused
+			q(41018, { name = "UNUSED - Agent of Aid", }),	-- UNUSED - Agent of Aid
+			q(39016, { name = "Unused - The Fish Must Flow", }),	-- Unused - The Fish Must Flow
+			q(38937, { name = "Unused - Wraith Zapper", }),	-- Unused - Wraith Zapper
+			q(41688, { name = "Ursol", }),	-- Ursol
+			q(39156, { name = "Uther's Spirit Honored", }),	-- Uther's Spirit Honored
+			q(39928, { name = "Uther's Spirit Honored", }),	-- Uther's Spirit Honored
+			q(39929, { name = "Uther's Spirit Honored", }),	-- Uther's Spirit Honored
+			q(39930, { name = "Uther's Spirit Honored", }),	-- Uther's Spirit Honored
+			q(39460, { name = "Vale POI Event TRACKING", }),	-- Vale POI Event TRACKING
+			q(41128, { name = "Valhallas - Vignette: Earlnoc - MRN", }),	-- Valhallas - Vignette: Earlnoc - MRN
+			q(39744, { name = "Valhallas Reward Quest", }),	-- Valhallas Reward Quest
+			q(38304, { name = "Val'sharah", }),	-- Val'sharah
+			q(37825, { name = "Vignette Placeholder", }),	-- Vignette Placeholder
+			q(41917, { name = "Vignette: Bear Cub", }),	-- Vignette: Bear Cub
+			q(38902, { name = "Vignette: Coruscating Bloom", }),	-- Vignette: Coruscating Bloom
+			q(38838, { name = "Vignette: Enraged Earthservant", }),	-- Vignette: Enraged Earthservant
+			q(38451, { name = "Vignette: Geir Gutslice", }),	-- Vignette: Geir Gutslice
+			q(38398, { name = "Vignette: Helyra's Kraken", }),	-- Vignette: Helyra's Kraken
+			q(38314, { name = "Vignette: Hidden Demon", }),	-- Vignette: Hidden Demon
+			q(38368, { name = "Vignette: Hidden Demon", }),	-- Vignette: Hidden Demon
+			q(38452, { name = "Vignette: Hidden Demon", }),	-- Vignette: Hidden Demon
+			q(38380, { name = "Vignette: Hivequeen Zsala", }),	-- Vignette: Hivequeen Zsala
+			q(38278, { name = "Vignette: Kraw the Mystic", }),	-- Vignette: Kraw the Mystic
+			q(39158, { name = "Vignette: Rally the Wilds", }),	-- Vignette: Rally the Wilds
+			q(38465, { name = "Vignette: Shyama the Dreaded", }),	-- Vignette: Shyama the Dreaded
+			q(39467, { name = "Vignette: Sorcery and Suction", }),	-- Vignette: Sorcery and Suction
+			q(40939, { name = "Vignette: Stormwing Matriarch", }),	-- Vignette: Stormwing Matriarch
+			q(39795, { name = "Vindicator Boros Slotted", }),	-- Vindicator Boros Slotted
+			q(41953, { name = "Vis'ileth", }),	-- Vis'ileth
+			q(41820, { name = "Walk Without Rhythm", }),	-- Walk Without Rhythm
+			q(40590, { name = "Warrior Inbound", }),	-- Warrior Inbound
+			q(37927, { name = "We Meet at Light's Hope", }),	-- We Meet at Light's Hope
+			q(44115, { name = "Welcome to Legion!", }),	-- Welcome to Legion!
+			q(37930, { name = "Whelp? That Happened.", }),	-- Whelp? That Happened.
+			q(41559, { name = "Where's Our Wine? - Tracking", }),	-- Where's Our Wine? - Tracking
+			q(41832, { name = "White Water Terror", }),	-- White Water Terror
+			q(39810, { name = "Whitewater Wash Treasure", }),	-- Whitewater Wash Treasure
+			q(39811, { name = "Whitewater Wash Treasure", }),	-- Whitewater Wash Treasure
+			q(41761, { name = "Winter Moose Roundup", }),	-- Winter Moose Roundup
+			q(41825, { name = "Winged Menace", }),	-- Winged Menace
+			q(39927, { name = "Wingterror Ikzil Looted", }),	-- Wingterror Ikzil Looted
+			q(39826, { name = "Witchwood Treasure", }),	-- Witchwood Treasure
+			q(40728, { name = "Wormgut's Quest", }),	-- Wormgut's Quest
+			q(39527, { name = "Wrath of Azshara Reward Quest", }),	-- Wrath of Azshara Reward Quest
+			q(39420, { name = "Xavius Event TRACKING", }),	-- Xavius Event TRACKING
+			q(38827, { name = "Your Will Be Done", }),	-- Your Will Be Done
+			q(41872, { name = "[DEPRECATED]", }),	-- [DEPRECATED]
+			q(37691, { name = "[DEPRECATED]The Ancient One", }),	-- [DEPRECATED]The Ancient One
+			q(41983, { name = "[NYI] Bear Necessities", }),	-- [NYI] Bear Necessities
+			q(39852, { name = "[PH] Collect Weapons", }),	-- [PH] Collect Weapons
+			q(39785, { name = "[PH] Walrus Tusks", }),	-- [PH] Walrus Tusks
+			q(38313, { name = "[PH] Worg Pelts", }),	-- [PH] Worg Pelts
+			q(36939, { name = "[UNUSED]Blood of the Annihilan", }),	-- [UNUSED]Blood of the Annihilan
 		})),
 
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
-			q(42374, { ["name"] = "7.0 Greeting Kits - Tracking Quest", }),	-- 7.0 Greeting Kits - Tracking Quest
-			q(42566, { ["name"] = "A Blaze of Starlight", }),	-- A Blaze of Starlight
-			q(40790, { ["name"] = "A Struggle Of Power", }),	-- A Struggle Of Power
-			q(40749, { ["name"] = "A Token of Remembrance", }),	-- A Token of Remembrance
-			q(43413, { ["name"] = "A Twist in the Nether", }),	-- A Twist in the Nether
-			q(44085, { ["name"] = "Affliction Chosen", }),	-- Affliction Chosen
-			q(38658, { ["name"] = "Aid For the Wounded", }),	-- Aid For the Wounded
-			q(38737, { ["name"] = "An End To War", }),	-- An End To War
-			q(40806, { ["name"] = "Arcano-Plasm", }),	-- Arcano-Plasm
-			q(40825, { ["name"] = "Arcano-Plasm", }),	-- Arcano-Plasm
-			q(40725, { ["name"] = "Arganax", }),	-- Arganax
-			q(42456, { ["name"] = "Assn Rogue - Flavor Event 01 (Horde)", }),	-- Assn Rogue - Flavor Event 01 (Horde)
-			q(42507, { ["name"] = "Assn Rogue - Flavor Event 04", }),	-- Assn Rogue - Flavor Event 04
-			q(43584, { ["name"] = "Battlelord of the Valarjar", }),	-- Battlelord of the Valarjar
-			q(40918, { ["name"] = "Black Rook Hold Heroic Reward Quest", }),	-- Black Rook Hold Heroic Reward Quest
-			q(40769, { ["name"] = "Blackroot Idols", }),	-- Blackroot Idols
-			q(44358, { ["name"] = "Bonus Book Read Tracking Quest", }),	-- Bonus Book Read Tracking Quest
-			q(38469, { ["name"] = "Bonus Objective: The Moonclaw Vale", }),	-- Bonus Objective: The Moonclaw Vale
-			q(42726, { ["name"] = "Brutal Gladiator's Battlegear", }),	-- Brutal Gladiator's Battlegear
-			q(43316, { ["name"] = "By Invitation Only", }),	-- By Invitation Only
-			q(42296, { ["name"] = "Calcified Wormscales", }),	-- Calcified Wormscales
-			q(38660, { ["name"] = "Cleansing the Corruption", }),	-- Cleansing the Corruption
-			q(39126, { ["name"] = "Cleansing the Fountain", }),	-- Cleansing the Fountain
-			q(40807, { ["name"] = "Clearing the Tunnels", }),	-- Clearing the Tunnels
-			q(40827, { ["name"] = "Clearing the Tunnels", }),	-- Clearing the Tunnels
-			q(40845, { ["name"] = "Coastal Healing", }),	-- Coastal Healing
-			q(40884, { ["name"] = "Corrupted Into Crystal", }),	-- Corrupted Into Crystal
-			q(40973, { ["name"] = "Creating Time", }),	-- Creating Time
-			q(43405, { ["name"] = "Da-Nel's Second Quest", }),	-- Da-Nel's Second Quest
-			q(41779, { ["name"] = "DANGER: Xavrix", }),	-- DANGER: Xavrix
-			q(40571, { ["name"] = "Darkheart Thicket Heroic Reward Quest", }),	-- Darkheart Thicket Heroic Reward Quest
-			q(40851, { ["name"] = "Darkwell's Request", }),	-- Darkwell's Request
-			q(38219, { ["name"] = "Defending The Grove", }),	-- Defending The Grove
-			q(42807, { ["name"] = "Demon Commander", }),	-- Demon Commander
-			q(39125, { ["name"] = "Demon Destroyer", }),	-- Demon Destroyer
-			q(44088, { ["name"] = "Demonology Chosen", }),	-- Demonology Chosen
-			q(41608, { ["name"] = "DEPREACTED: Huge Highmountain Salmon", }),	-- DEPREACTED: Huge Highmountain Salmon
-			q(44134, { ["name"] = "DEPRECATED", }),	-- DEPRECATED
-			q(41586, { ["name"] = "DEPRECATED: Bristly Ironhorn Hide", }),	-- DEPRECATED: Bristly Ironhorn Hide
-			q(41579, { ["name"] = "DEPRECATED: Calcified Wormscales", }),	-- DEPRECATED: Calcified Wormscales
-			q(41585, { ["name"] = "DEPRECATED: Musky Bear Hide", }),	-- DEPRECATED: Musky Bear Hide
-			q(41584, { ["name"] = "DEPRECATED: Rugged Wolf Hide", }),	-- DEPRECATED: Rugged Wolf Hide
-			q(41583, { ["name"] = "DEPRECATED: Slick Seal Hide", }),	-- DEPRECATED: Slick Seal Hide
-			q(41591, { ["name"] = "DEPRECATED: Solid Turtleshell Fragment", }),	-- DEPRECATED: Solid Turtleshell Fragment
-			q(41590, { ["name"] = "DEPRECATED: Thick Bear Hide", }),	-- DEPRECATED: Thick Bear Hide
-			q(41580, { ["name"] = "DEPRECATED: Unscratched Hippogryph Scale", }),	-- DEPRECATED: Unscratched Hippogryph Scale
-			q(43922, { ["name"] = "Deprecated: Work Order: Warhide Gloves", }),	-- Deprecated: Work Order: Warhide Gloves
-			q(44086, { ["name"] = "Destruction Chosen", }),	-- Destruction Chosen
-			q(44008, { ["name"] = "DO NOT LOCALIZE - TEMP PRE-REQ", }),	-- DO NOT LOCALIZE - TEMP PRE-REQ
-			q(43796, { ["name"] = "Draenei Spoken To", }),	-- Draenei Spoken To
-			q(40420, { ["name"] = "Felsoul Hold", }),	-- Felsoul Hold
-			q(43783, { ["name"] = "Field Rations", }),	-- Field Rations
-			q(40598, { ["name"] = "Finishing Touches - Choice UI - Skystone Loop", ["_drop"] = { "g" }, }),	-- Finishing Touches - Choice UI - Skystone Loop
-			q(40848, { ["name"] = "Foe Underestimation", }),	-- Foe Underestimation
-			q(41031, { ["name"] = "For the People", }),	-- For the People
-			q(44080, { ["name"] = "Friend of the Animals", }),	-- Friend of the Animals
-			q(40808, { ["name"] = "Fuel Transfer Worker", }),	-- Fuel Transfer Worker
-			q(40828, { ["name"] = "Fuel Transfer Worker", }),	-- Fuel Transfer Worker
-			q(38607, { ["name"] = "Gates of Valhallas", }),	-- Gates of Valhallas
-			q(42379, { ["name"] = "Growing Power", }),	-- Growing Power
-			q(42613, { ["name"] = "Growing Power", }),	-- Growing Power
-			q(42672, { ["name"] = "Growing Power", }),	-- Growing Power
-			q(43260, { ["name"] = "Growing Power", }),	-- Growing Power
-			q(43263, { ["name"] = "Growing Power", }),	-- Growing Power
-			q(38341, { ["name"] = "Halting the Nightmare", }),	-- Halting the Nightmare
-			q(38745, { ["name"] = "Hard Lessons", }),	-- Hard Lessons
-			q(44073, { ["name"] = "Help from Within", }),	-- Help from Within
-			q(43466, { ["name"] = "Hidden History", }),	-- Hidden History
-			q(43816, { ["name"] = "Hidden History", }),	-- Hidden History
-			q(43817, { ["name"] = "Hidden History", }),	-- Hidden History
-			q(43818, { ["name"] = "Hidden History", }),	-- Hidden History
-			q(43819, { ["name"] = "Hidden History", }),	-- Hidden History
-			q(43820, { ["name"] = "Hidden History", }),	-- Hidden History
-			q(43821, { ["name"] = "Hidden History", }),	-- Hidden History
-			q(43822, { ["name"] = "Hidden History", }),	-- Hidden History
-			q(43823, { ["name"] = "Hidden History", }),	-- Hidden History
-			q(43824, { ["name"] = "Hidden History", }),	-- Hidden History
-			q(43825, { ["name"] = "Hidden History", }),	-- Hidden History
-			q(43826, { ["name"] = "Hidden History", }),	-- Hidden History
-			q(41008, { ["name"] = "Hunter to Hunter", }),	-- Hunter to Hunter
-			q(40780, { ["name"] = "Hunting Impaired", }),	-- Hunting Impaired
-			-- q(42729, { ["name"] = "Challenger's Armaments", }),	-- Challenger's Armaments
-			q(42853, { ["name"] = "Champion: Aponi Brightmane [NYI]", }),	-- Champion: Aponi Brightmane [NYI]
-			q(42855, { ["name"] = "Champion: Arator the Redeemer [NYI]", }),	-- Champion: Arator the Redeemer [NYI]
-			q(42617, { ["name"] = "Champion: King Ymiron", }),	-- Champion: King Ymiron
-			q(42856, { ["name"] = "Champion: Lord Commander Leothraxion [NYI]", }),	-- Champion: Lord Commander Leothraxion [NYI]
-			q(42854, { ["name"] = "Champion: Maximillian of Northshire [NYI]", }),	-- Champion: Maximillian of Northshire [NYI]
-			q(43561, { ["name"] = "I Believe I Can Fly!", ["_drop"] = { "g" }, }),	-- I Believe I Can Fly!
-			q(42951, { ["name"] = "Illusion - Glory of the Clans", }),	-- Illusion - Glory of the Clans
-			q(43693, { ["name"] = "Invasion: Azshara", }),	-- Invasion: Azshara
-			q(40813, { ["name"] = "It's in the Glands", }),	-- It's in the Glands
-			q(43206, { ["name"] = "Jeremy's Test Quest", }),	-- Jeremy's Test Quest
-			q(40776, { ["name"] = "Kazok'thul", }),	-- Kazok'thul
-			q(40770, { ["name"] = "Keeper's Request", }),	-- Keeper's Request
-			q(40974, { ["name"] = "Latosius' Trial", }),	-- Latosius' Trial
-			q(38285, { ["name"] = "Menacing Sprites", }),	-- Menacing Sprites
-			q(43337, { ["name"] = "Met Sylvanas With Windrunner Bow", }),	-- Met Sylvanas With Windrunner Bow
-			q(39388, { ["name"] = "Moonclaw's Wisdom", }),	-- Moonclaw's Wisdom
-			q(41281, { ["name"] = "Mounted Shark Fishing", }),	-- Mounted Shark Fishing
-			q(44554, { ["name"] = "Mythic Keystone Weekly Tracking Quest", }),	-- Mythic Keystone Weekly Tracking Quest
-			q(43635, { ["name"] = "Needs of the Many", ["_drop"] = { "g" }, }),	-- Needs of the Many
-			q(44091, { ["name"] = "Needs of the Many", }),	-- Needs of the Many
-			q(39868, { ["name"] = "Neltharion's Lair Heroic Reward Quest", }),	-- Neltharion's Lair Heroic Reward Quest
-			q(38661, { ["name"] = "Nightmare Bombs", }),	-- Nightmare Bombs
-			q(40811, { ["name"] = "Not to Scale", }),	-- Not to Scale
-			q(43742, { ["name"] = "Odyn Death Conversation Enabled", }),	-- Odyn Death Conversation Enabled
-			q(41027, { ["name"] = "One Last Breath", }),	-- One Last Breath
-			q(42381, { ["name"] = "Ox'iloth", }),	-- Ox'iloth
-			q(42106, { ["name"] = "Party Crasher", }),	-- Party Crasher
-			q(43367, { ["name"] = "Pixie Dust", }),	-- Pixie Dust
-			q(43691, { ["name"] = "Plaguemaw", }),	-- Plaguemaw
-			q(38218, { ["name"] = "Preserving The Lore", }),	-- Preserving The Lore
-			q(42981, { ["name"] = "Pure Water", }),	-- Pure Water
-			q(38608, { ["name"] = "Reclaim Valhallas", }),	-- Reclaim Valhallas
-			q(40782, { ["name"] = "Relief For Parim", }),	-- Relief For Parim
-			q(40129, { ["name"] = "Repairing the Source", }),	-- Repairing the Source
-			q(43406, { ["name"] = "Request for the Deathlord", }),	-- Request for the Deathlord
-			q(38353, { ["name"] = "Rescued From Darkness", }),	-- Rescued From Darkness
-			q(39028, { ["name"] = "REUSE ME", }),	-- REUSE ME
-			q(40803, { ["name"] = "REUSE ME", }),	-- REUSE ME
-			q(42485, { ["name"] = "REUSE ME", }),	-- REUSE ME
-			q(43274, { ["name"] = "reuse me", }),	-- reuse me
-			q(44698, { ["name"] = "Ritual Bit", }),	-- Ritual Bit
-			q(44708, { ["name"] = "Ritual of Doom", }),	-- Ritual of Doom
-			q(40335, { ["name"] = "Sashj'tar Accord DISABLED", }),	-- Sashj'tar Accord DISABLED
-			q(41041, { ["name"] = "Sashj'tar Allies DISBALED", }),	-- Sashj'tar Allies DISBALED
-			q(40831, { ["name"] = "Save the Crumbling Coast", }),	-- Save the Crumbling Coast
-			q(38284, { ["name"] = "Seeds of Remedy", }),	-- Seeds of Remedy
-			q(40906, { ["name"] = "Serpents from the Deep", }),	-- Serpents from the Deep
-			q(44584, { ["name"] = "Short-Supply Reward", ["_drop"] = { "g" }, }),	-- Short-Supply Reward
-			q(43690, { ["name"] = "Shroudseeker", }),	-- Shroudseeker
-			q(43295, { ["name"] = "Slaughter the Fel Armies", }),	-- Slaughter the Fel Armies
-			q(43689, { ["name"] = "Soulfiend Tagerma", }),	-- Soulfiend Tagerma
-			q(43408, { ["name"] = "Summons for the Arch Druid", }),	-- Summons for the Arch Druid
-			q(44078, { ["name"] = "Supporting Cast", }),	-- Supporting Cast
-			q(40342, { ["name"] = "Surprise the Sashj'tar", }),	-- Surprise the Sashj'tar
-			q(40841, { ["name"] = "The Aid of Val'sharah", }),	-- The Aid of Val'sharah
-			q(42822, { ["name"] = "The Banner of the Ebon Blade", }),	-- The Banner of the Ebon Blade
-			q(43419, { ["name"] = "The Light Beckons", }),	-- The Light Beckons
-			q(43410, { ["name"] = "The Master is Requested", }),	-- The Master is Requested
-			q(43411, { ["name"] = "The Master is Requested", }),	-- The Master is Requested
-			q(44210, { ["name"] = "The Might of Dalaran pt2", }),	-- The Might of Dalaran pt2
-			q(41147, { ["name"] = "The Other City of Mages", }),	-- The Other City of Mages
-			q(43421, { ["name"] = "The Raven Calls", }),	-- The Raven Calls
-			q(42052, { ["name"] = "The Shade of Xavius", }),	-- The Shade of Xavius
-			q(43417, { ["name"] = "The Spirits Call", }),	-- The Spirits Call
-			q(38697, { ["name"] = "The Sword of Truth", }),	-- The Sword of Truth
-			q(38673, { ["name"] = "The Wormtalon Crone", }),	-- The Wormtalon Crone
-			q(42364, { ["name"] = "Tracker Test Quest - DAW", }),	-- Tracker Test Quest - DAW
-			q(42952, { ["name"] = "Tracking Down the Skull", }),	-- Tracking Down the Skull
-			q(42939, { ["name"] = "Tracking Down Uthalesh", }),	-- Tracking Down Uthalesh
-			q(42427, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(42637, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(42638, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(42724, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(43340, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(44697, { ["name"] = "Tracking Quest - Prestige UI - Artifact", }),	-- Tracking Quest - Prestige UI - Artifact
-			q(44354, { ["name"] = "Tracking Quest - W2 - Spoke to Brann", }),	-- Tracking Quest - W2 - Spoke to Brann
-			q(44374, { ["name"] = "Tracking Quest: Galen Betrayal", }),	-- Tracking Quest: Galen Betrayal
-			q(44359, { ["name"] = "Tracking Quest: Lich King Conversation 01", }),	-- Tracking Quest: Lich King Conversation 01
-			q(44360, { ["name"] = "Tracking Quest: Lich King Conversation 02", }),	-- Tracking Quest: Lich King Conversation 02
-			q(44361, { ["name"] = "Tracking Quest: Lich King Conversation 03", }),	-- Tracking Quest: Lich King Conversation 03
-			q(44362, { ["name"] = "Tracking Quest: Lich King Conversation 04", }),	-- Tracking Quest: Lich King Conversation 04
-			q(44005, { ["name"] = "Tracking Quest: Reaction to Warrior Artifacts", }),	-- Tracking Quest: Reaction to Warrior Artifacts
-			q(42426, { ["name"] = "Tracking Quest: Test Enabled", }),	-- Tracking Quest: Test Enabled
-			q(40885, { ["name"] = "Transplanting Their Cores", }),	-- Transplanting Their Cores
-			q(43833, { ["name"] = "Treasure 003 - Felsoul Lower", }),	-- Treasure 003 - Felsoul Lower
-			q(43843, { ["name"] = "Treasure 010 - Falanaar Outdoor Ruins", }),	-- Treasure 010 - Falanaar Outdoor Ruins
-			q(43308, { ["name"] = "Treasure 071 - Outskirts", }),	-- Treasure 071 - Outskirts
-			q(40812, { ["name"] = "Trident True", }),	-- Trident True
-			q(40775, { ["name"] = "Trophy Hunting", }),	-- Trophy Hunting
-			q(42448, { ["name"] = "Unholy Destiny", }),	-- Unholy Destiny
-			q(44430, { ["name"] = "Unused", }),	-- Unused
-			q(39743, { ["name"] = "Valhallas Heroic Reward Quest", }),	-- Valhallas Heroic Reward Quest
-			q(42461, { ["name"] = "Vanilla 10-19", }),	-- Vanilla 10-19
-			q(40886, { ["name"] = "Verdant Search", }),	-- Verdant Search
-			q(43740, { ["name"] = "Vignette: Roardan", }),	-- Vignette: Roardan
-			q(40777, { ["name"] = "Vittles and Bits", }),	-- Vittles and Bits
-			q(44616, { ["name"] = "We'll Need Some Obliterum", }),	-- We'll Need Some Obliterum
-			q(40771, { ["name"] = "Wild By Nature", }),	-- Wild By Nature
-			q(40788, { ["name"] = "Withered and Creeping", }),	-- Withered and Creeping
-			q(39528, { ["name"] = "Wrath of Azshara Heroic Reward Quest", }),	-- Wrath of Azshara Heroic Reward Quest
-			q(40700, { ["name"] = "Xalethar", }),	-- Xalethar
-			q(43990, { ["name"] = "ZZZNOTUSEDZZZ", }),	-- ZZZNOTUSEDZZZ
-			q(38693, { ["name"] = "[DEPRECATED] Kill Feral Dogs", }),	-- [DEPRECATED] Kill Feral Dogs
-			q(42179, { ["name"] = "[NYI] Pump it Up Again", }),	-- [NYI] Pump it Up Again
-			q(39066, { ["name"] = "[PH] Defeat the Dark Val'kyr", }),	-- [PH] Defeat the Dark Val'kyr
-			q(43836, { ["name"] = "[reuse]", }),	-- [reuse]
+		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+			q(42374, { name = "7.0 Greeting Kits - Tracking Quest", }),	-- 7.0 Greeting Kits - Tracking Quest
+			q(42566, { name = "A Blaze of Starlight", }),	-- A Blaze of Starlight
+			q(40790, { name = "A Struggle Of Power", }),	-- A Struggle Of Power
+			q(40749, { name = "A Token of Remembrance", }),	-- A Token of Remembrance
+			q(43413, { name = "A Twist in the Nether", }),	-- A Twist in the Nether
+			q(44085, { name = "Affliction Chosen", }),	-- Affliction Chosen
+			q(38658, { name = "Aid For the Wounded", }),	-- Aid For the Wounded
+			q(38737, { name = "An End To War", }),	-- An End To War
+			q(40806, { name = "Arcano-Plasm", }),	-- Arcano-Plasm
+			q(40825, { name = "Arcano-Plasm", }),	-- Arcano-Plasm
+			q(40725, { name = "Arganax", }),	-- Arganax
+			q(42456, { name = "Assn Rogue - Flavor Event 01 (Horde)", }),	-- Assn Rogue - Flavor Event 01 (Horde)
+			q(42507, { name = "Assn Rogue - Flavor Event 04", }),	-- Assn Rogue - Flavor Event 04
+			q(43584, { name = "Battlelord of the Valarjar", }),	-- Battlelord of the Valarjar
+			q(40918, { name = "Black Rook Hold Heroic Reward Quest", }),	-- Black Rook Hold Heroic Reward Quest
+			q(40769, { name = "Blackroot Idols", }),	-- Blackroot Idols
+			q(44358, { name = "Bonus Book Read Tracking Quest", }),	-- Bonus Book Read Tracking Quest
+			q(38469, { name = "Bonus Objective: The Moonclaw Vale", }),	-- Bonus Objective: The Moonclaw Vale
+			q(42726, { name = "Brutal Gladiator's Battlegear", }),	-- Brutal Gladiator's Battlegear
+			q(43316, { name = "By Invitation Only", }),	-- By Invitation Only
+			q(42296, { name = "Calcified Wormscales", }),	-- Calcified Wormscales
+			q(38660, { name = "Cleansing the Corruption", }),	-- Cleansing the Corruption
+			q(39126, { name = "Cleansing the Fountain", }),	-- Cleansing the Fountain
+			q(40807, { name = "Clearing the Tunnels", }),	-- Clearing the Tunnels
+			q(40827, { name = "Clearing the Tunnels", }),	-- Clearing the Tunnels
+			q(40845, { name = "Coastal Healing", }),	-- Coastal Healing
+			q(40884, { name = "Corrupted Into Crystal", }),	-- Corrupted Into Crystal
+			q(40973, { name = "Creating Time", }),	-- Creating Time
+			q(43405, { name = "Da-Nel's Second Quest", }),	-- Da-Nel's Second Quest
+			q(41779, { name = "DANGER: Xavrix", }),	-- DANGER: Xavrix
+			q(40571, { name = "Darkheart Thicket Heroic Reward Quest", }),	-- Darkheart Thicket Heroic Reward Quest
+			q(40851, { name = "Darkwell's Request", }),	-- Darkwell's Request
+			q(38219, { name = "Defending The Grove", }),	-- Defending The Grove
+			q(42807, { name = "Demon Commander", }),	-- Demon Commander
+			q(39125, { name = "Demon Destroyer", }),	-- Demon Destroyer
+			q(44088, { name = "Demonology Chosen", }),	-- Demonology Chosen
+			q(41608, { name = "DEPREACTED: Huge Highmountain Salmon", }),	-- DEPREACTED: Huge Highmountain Salmon
+			q(44134, { name = "DEPRECATED", }),	-- DEPRECATED
+			q(41586, { name = "DEPRECATED: Bristly Ironhorn Hide", }),	-- DEPRECATED: Bristly Ironhorn Hide
+			q(41579, { name = "DEPRECATED: Calcified Wormscales", }),	-- DEPRECATED: Calcified Wormscales
+			q(41585, { name = "DEPRECATED: Musky Bear Hide", }),	-- DEPRECATED: Musky Bear Hide
+			q(41584, { name = "DEPRECATED: Rugged Wolf Hide", }),	-- DEPRECATED: Rugged Wolf Hide
+			q(41583, { name = "DEPRECATED: Slick Seal Hide", }),	-- DEPRECATED: Slick Seal Hide
+			q(41591, { name = "DEPRECATED: Solid Turtleshell Fragment", }),	-- DEPRECATED: Solid Turtleshell Fragment
+			q(41590, { name = "DEPRECATED: Thick Bear Hide", }),	-- DEPRECATED: Thick Bear Hide
+			q(41580, { name = "DEPRECATED: Unscratched Hippogryph Scale", }),	-- DEPRECATED: Unscratched Hippogryph Scale
+			q(43922, { name = "Deprecated: Work Order: Warhide Gloves", }),	-- Deprecated: Work Order: Warhide Gloves
+			q(44086, { name = "Destruction Chosen", }),	-- Destruction Chosen
+			q(44008, { name = "DO NOT LOCALIZE - TEMP PRE-REQ", }),	-- DO NOT LOCALIZE - TEMP PRE-REQ
+			q(43796, { name = "Draenei Spoken To", }),	-- Draenei Spoken To
+			q(40420, { name = "Felsoul Hold", }),	-- Felsoul Hold
+			q(43783, { name = "Field Rations", }),	-- Field Rations
+			q(40598, { name = "Finishing Touches - Choice UI - Skystone Loop", _drop = { "g" }, }),	-- Finishing Touches - Choice UI - Skystone Loop
+			q(40848, { name = "Foe Underestimation", }),	-- Foe Underestimation
+			q(41031, { name = "For the People", }),	-- For the People
+			q(44080, { name = "Friend of the Animals", }),	-- Friend of the Animals
+			q(40808, { name = "Fuel Transfer Worker", }),	-- Fuel Transfer Worker
+			q(40828, { name = "Fuel Transfer Worker", }),	-- Fuel Transfer Worker
+			q(38607, { name = "Gates of Valhallas", }),	-- Gates of Valhallas
+			q(42379, { name = "Growing Power", }),	-- Growing Power
+			q(42613, { name = "Growing Power", }),	-- Growing Power
+			q(42672, { name = "Growing Power", }),	-- Growing Power
+			q(43260, { name = "Growing Power", }),	-- Growing Power
+			q(43263, { name = "Growing Power", }),	-- Growing Power
+			q(38341, { name = "Halting the Nightmare", }),	-- Halting the Nightmare
+			q(38745, { name = "Hard Lessons", }),	-- Hard Lessons
+			q(44073, { name = "Help from Within", }),	-- Help from Within
+			q(43466, { name = "Hidden History", }),	-- Hidden History
+			q(43816, { name = "Hidden History", }),	-- Hidden History
+			q(43817, { name = "Hidden History", }),	-- Hidden History
+			q(43818, { name = "Hidden History", }),	-- Hidden History
+			q(43819, { name = "Hidden History", }),	-- Hidden History
+			q(43820, { name = "Hidden History", }),	-- Hidden History
+			q(43821, { name = "Hidden History", }),	-- Hidden History
+			q(43822, { name = "Hidden History", }),	-- Hidden History
+			q(43823, { name = "Hidden History", }),	-- Hidden History
+			q(43824, { name = "Hidden History", }),	-- Hidden History
+			q(43825, { name = "Hidden History", }),	-- Hidden History
+			q(43826, { name = "Hidden History", }),	-- Hidden History
+			q(41008, { name = "Hunter to Hunter", }),	-- Hunter to Hunter
+			q(40780, { name = "Hunting Impaired", }),	-- Hunting Impaired
+			-- q(42729, { name = "Challenger's Armaments", }),	-- Challenger's Armaments
+			q(42853, { name = "Champion: Aponi Brightmane [NYI]", }),	-- Champion: Aponi Brightmane [NYI]
+			q(42855, { name = "Champion: Arator the Redeemer [NYI]", }),	-- Champion: Arator the Redeemer [NYI]
+			q(42617, { name = "Champion: King Ymiron", }),	-- Champion: King Ymiron
+			q(42856, { name = "Champion: Lord Commander Leothraxion [NYI]", }),	-- Champion: Lord Commander Leothraxion [NYI]
+			q(42854, { name = "Champion: Maximillian of Northshire [NYI]", }),	-- Champion: Maximillian of Northshire [NYI]
+			q(43561, { name = "I Believe I Can Fly!", _drop = { "g" }, }),	-- I Believe I Can Fly!
+			q(42951, { name = "Illusion - Glory of the Clans", }),	-- Illusion - Glory of the Clans
+			q(43693, { name = "Invasion: Azshara", }),	-- Invasion: Azshara
+			q(40813, { name = "It's in the Glands", }),	-- It's in the Glands
+			q(43206, { name = "Jeremy's Test Quest", }),	-- Jeremy's Test Quest
+			q(40776, { name = "Kazok'thul", }),	-- Kazok'thul
+			q(40770, { name = "Keeper's Request", }),	-- Keeper's Request
+			q(40974, { name = "Latosius' Trial", }),	-- Latosius' Trial
+			q(38285, { name = "Menacing Sprites", }),	-- Menacing Sprites
+			q(43337, { name = "Met Sylvanas With Windrunner Bow", }),	-- Met Sylvanas With Windrunner Bow
+			q(39388, { name = "Moonclaw's Wisdom", }),	-- Moonclaw's Wisdom
+			q(41281, { name = "Mounted Shark Fishing", }),	-- Mounted Shark Fishing
+			q(44554, { name = "Mythic Keystone Weekly Tracking Quest", }),	-- Mythic Keystone Weekly Tracking Quest
+			q(43635, { name = "Needs of the Many", _drop = { "g" }, }),	-- Needs of the Many
+			q(44091, { name = "Needs of the Many", }),	-- Needs of the Many
+			q(39868, { name = "Neltharion's Lair Heroic Reward Quest", }),	-- Neltharion's Lair Heroic Reward Quest
+			q(38661, { name = "Nightmare Bombs", }),	-- Nightmare Bombs
+			q(40811, { name = "Not to Scale", }),	-- Not to Scale
+			q(43742, { name = "Odyn Death Conversation Enabled", }),	-- Odyn Death Conversation Enabled
+			q(41027, { name = "One Last Breath", }),	-- One Last Breath
+			q(42381, { name = "Ox'iloth", }),	-- Ox'iloth
+			q(42106, { name = "Party Crasher", }),	-- Party Crasher
+			q(43367, { name = "Pixie Dust", }),	-- Pixie Dust
+			q(43691, { name = "Plaguemaw", }),	-- Plaguemaw
+			q(38218, { name = "Preserving The Lore", }),	-- Preserving The Lore
+			q(42981, { name = "Pure Water", }),	-- Pure Water
+			q(38608, { name = "Reclaim Valhallas", }),	-- Reclaim Valhallas
+			q(40782, { name = "Relief For Parim", }),	-- Relief For Parim
+			q(40129, { name = "Repairing the Source", }),	-- Repairing the Source
+			q(43406, { name = "Request for the Deathlord", }),	-- Request for the Deathlord
+			q(38353, { name = "Rescued From Darkness", }),	-- Rescued From Darkness
+			q(39028, { name = "REUSE ME", }),	-- REUSE ME
+			q(40803, { name = "REUSE ME", }),	-- REUSE ME
+			q(42485, { name = "REUSE ME", }),	-- REUSE ME
+			q(43274, { name = "reuse me", }),	-- reuse me
+			q(44698, { name = "Ritual Bit", }),	-- Ritual Bit
+			q(44708, { name = "Ritual of Doom", }),	-- Ritual of Doom
+			q(40335, { name = "Sashj'tar Accord DISABLED", }),	-- Sashj'tar Accord DISABLED
+			q(41041, { name = "Sashj'tar Allies DISBALED", }),	-- Sashj'tar Allies DISBALED
+			q(40831, { name = "Save the Crumbling Coast", }),	-- Save the Crumbling Coast
+			q(38284, { name = "Seeds of Remedy", }),	-- Seeds of Remedy
+			q(40906, { name = "Serpents from the Deep", }),	-- Serpents from the Deep
+			q(44584, { name = "Short-Supply Reward", _drop = { "g" }, }),	-- Short-Supply Reward
+			q(43690, { name = "Shroudseeker", }),	-- Shroudseeker
+			q(43295, { name = "Slaughter the Fel Armies", }),	-- Slaughter the Fel Armies
+			q(43689, { name = "Soulfiend Tagerma", }),	-- Soulfiend Tagerma
+			q(43408, { name = "Summons for the Arch Druid", }),	-- Summons for the Arch Druid
+			q(44078, { name = "Supporting Cast", }),	-- Supporting Cast
+			q(40342, { name = "Surprise the Sashj'tar", }),	-- Surprise the Sashj'tar
+			q(40841, { name = "The Aid of Val'sharah", }),	-- The Aid of Val'sharah
+			q(42822, { name = "The Banner of the Ebon Blade", }),	-- The Banner of the Ebon Blade
+			q(43419, { name = "The Light Beckons", }),	-- The Light Beckons
+			q(43410, { name = "The Master is Requested", }),	-- The Master is Requested
+			q(43411, { name = "The Master is Requested", }),	-- The Master is Requested
+			q(44210, { name = "The Might of Dalaran pt2", }),	-- The Might of Dalaran pt2
+			q(41147, { name = "The Other City of Mages", }),	-- The Other City of Mages
+			q(43421, { name = "The Raven Calls", }),	-- The Raven Calls
+			q(42052, { name = "The Shade of Xavius", }),	-- The Shade of Xavius
+			q(43417, { name = "The Spirits Call", }),	-- The Spirits Call
+			q(38697, { name = "The Sword of Truth", }),	-- The Sword of Truth
+			q(38673, { name = "The Wormtalon Crone", }),	-- The Wormtalon Crone
+			q(42364, { name = "Tracker Test Quest - DAW", }),	-- Tracker Test Quest - DAW
+			q(42952, { name = "Tracking Down the Skull", }),	-- Tracking Down the Skull
+			q(42939, { name = "Tracking Down Uthalesh", }),	-- Tracking Down Uthalesh
+			q(42427, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(42637, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(42638, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(42724, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(43340, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(44697, { name = "Tracking Quest - Prestige UI - Artifact", }),	-- Tracking Quest - Prestige UI - Artifact
+			q(44354, { name = "Tracking Quest - W2 - Spoke to Brann", }),	-- Tracking Quest - W2 - Spoke to Brann
+			q(44374, { name = "Tracking Quest: Galen Betrayal", }),	-- Tracking Quest: Galen Betrayal
+			q(44359, { name = "Tracking Quest: Lich King Conversation 01", }),	-- Tracking Quest: Lich King Conversation 01
+			q(44360, { name = "Tracking Quest: Lich King Conversation 02", }),	-- Tracking Quest: Lich King Conversation 02
+			q(44361, { name = "Tracking Quest: Lich King Conversation 03", }),	-- Tracking Quest: Lich King Conversation 03
+			q(44362, { name = "Tracking Quest: Lich King Conversation 04", }),	-- Tracking Quest: Lich King Conversation 04
+			q(44005, { name = "Tracking Quest: Reaction to Warrior Artifacts", }),	-- Tracking Quest: Reaction to Warrior Artifacts
+			q(42426, { name = "Tracking Quest: Test Enabled", }),	-- Tracking Quest: Test Enabled
+			q(40885, { name = "Transplanting Their Cores", }),	-- Transplanting Their Cores
+			q(43833, { name = "Treasure 003 - Felsoul Lower", }),	-- Treasure 003 - Felsoul Lower
+			q(43843, { name = "Treasure 010 - Falanaar Outdoor Ruins", }),	-- Treasure 010 - Falanaar Outdoor Ruins
+			q(43308, { name = "Treasure 071 - Outskirts", }),	-- Treasure 071 - Outskirts
+			q(40812, { name = "Trident True", }),	-- Trident True
+			q(40775, { name = "Trophy Hunting", }),	-- Trophy Hunting
+			q(42448, { name = "Unholy Destiny", }),	-- Unholy Destiny
+			q(44430, { name = "Unused", }),	-- Unused
+			q(39743, { name = "Valhallas Heroic Reward Quest", }),	-- Valhallas Heroic Reward Quest
+			q(42461, { name = "Vanilla 10-19", }),	-- Vanilla 10-19
+			q(40886, { name = "Verdant Search", }),	-- Verdant Search
+			q(43740, { name = "Vignette: Roardan", }),	-- Vignette: Roardan
+			q(40777, { name = "Vittles and Bits", }),	-- Vittles and Bits
+			q(44616, { name = "We'll Need Some Obliterum", }),	-- We'll Need Some Obliterum
+			q(40771, { name = "Wild By Nature", }),	-- Wild By Nature
+			q(40788, { name = "Withered and Creeping", }),	-- Withered and Creeping
+			q(39528, { name = "Wrath of Azshara Heroic Reward Quest", }),	-- Wrath of Azshara Heroic Reward Quest
+			q(40700, { name = "Xalethar", }),	-- Xalethar
+			q(43990, { name = "ZZZNOTUSEDZZZ", }),	-- ZZZNOTUSEDZZZ
+			q(38693, { name = "[DEPRECATED] Kill Feral Dogs", }),	-- [DEPRECATED] Kill Feral Dogs
+			q(42179, { name = "[NYI] Pump it Up Again", }),	-- [NYI] Pump it Up Again
+			q(39066, { name = "[PH] Defeat the Dark Val'kyr", }),	-- [PH] Defeat the Dark Val'kyr
+			q(43836, { name = "[reuse]", }),	-- [reuse]
 		})),
 
 		-- 7.1.0
-		expansion(EXPANSION.LEGION, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_7_1_0 } }, {
-			q(44916, { ["name"] = "99.0 [reuse me]", }),	-- 99.0 [reuse me]
-			q(40243, { ["name"] = "Break Weapon Racks", }),	-- Break Weapon Racks
-			q(45508, { ["name"] = "Durguth", }),	-- Durguth
-			q(44578, { ["name"] = "Honor the Flame", }),	-- Honor the Flame
-			q(45682, { ["name"] = "Looted Rogue Vault", }),	-- Looted Rogue Vault
-			q(44732, { ["name"] = "Morgalash", }),	-- Morgalash
-			q(42492, { ["name"] = "PH: Withered Scenario", }),	-- PH: Withered Scenario
-			q(44931, { ["name"] = "REUSE", }),	-- REUSE
-			q(44728, { ["name"] = "REUSE ME", }),	-- REUSE ME
-			q(44777, { ["name"] = "REUSE ME", }),	-- REUSE ME
-			q(44913, { ["name"] = "reuse me", }),	-- reuse me
-			q(44864, { ["name"] = "Scarlet Crusader", }),	-- Scarlet Crusader
-			q(45427, { ["name"] = "Short-Supply Reward", }),	-- Short-Supply Reward
-			q(45428, { ["name"] = "Short-Supply Reward", }),	-- Short-Supply Reward
-			q(45210, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(45211, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(45212, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(45213, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(45214, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(45215, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(45216, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(45217, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(45218, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(44910, { ["name"] = "unused", }),	-- unused
-			q(44911, { ["name"] = "unused", }),	-- unused
-			q(45509, { ["name"] = "Xavrix", }),	-- Xavrix
+		expansion(EXPANSION.LEGION, patch(1,0), bubbleDownSelf({ timeline = { CREATED_7_1_0 } }, {
+			q(44916, { name = "99.0 [reuse me]", }),	-- 99.0 [reuse me]
+			q(40243, { name = "Break Weapon Racks", }),	-- Break Weapon Racks
+			q(45508, { name = "Durguth", }),	-- Durguth
+			q(44578, { name = "Honor the Flame", }),	-- Honor the Flame
+			q(45682, { name = "Looted Rogue Vault", }),	-- Looted Rogue Vault
+			q(44732, { name = "Morgalash", }),	-- Morgalash
+			q(42492, { name = "PH: Withered Scenario", }),	-- PH: Withered Scenario
+			q(44931, { name = "REUSE", }),	-- REUSE
+			q(44728, { name = "REUSE ME", }),	-- REUSE ME
+			q(44777, { name = "REUSE ME", }),	-- REUSE ME
+			q(44913, { name = "reuse me", }),	-- reuse me
+			q(44864, { name = "Scarlet Crusader", }),	-- Scarlet Crusader
+			q(45427, { name = "Short-Supply Reward", }),	-- Short-Supply Reward
+			q(45428, { name = "Short-Supply Reward", }),	-- Short-Supply Reward
+			q(45210, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(45211, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(45212, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(45213, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(45214, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(45215, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(45216, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(45217, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(45218, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(44910, { name = "unused", }),	-- unused
+			q(44911, { name = "unused", }),	-- unused
+			q(45509, { name = "Xavrix", }),	-- Xavrix
 		})),
 
 		-- 7.1.5
-		expansion(EXPANSION.LEGION, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_7_1_5 } }, {
-			q(40631, { ["name"] = "Basking in Glory", }),	-- Basking in Glory
-			q(39770, { ["name"] = "Burn the Candle at Both Ends [NOT USED]", }),	-- Burn the Candle at Both Ends [NOT USED]
-			q(44941, { ["name"] = "Dances With Ravenbears (UNUSED)", }),	-- Dances With Ravenbears (UNUSED)
-			q(40693, { ["name"] = "Eyes of Nashal - Choice UI - Deadly Eye of Prophecy", ["_drop"] = { "g" }, }),	-- Eyes of Nashal - Choice UI - Deadly Eye of Prophecy
-			q(40696, { ["name"] = "Eyes of Nashal - Choice UI - Masterful Shadowruby", ["_drop"] = { "g" }, }),	-- Eyes of Nashal - Choice UI - Masterful Shadowruby
-			q(40695, { ["name"] = "Eyes of Nashal - Choice UI - Quick Dawnlight", ["_drop"] = { "g" }, }),	-- Eyes of Nashal - Choice UI - Quick Dawnlight
-			q(40600, { ["name"] = "Finishing Touches - Choice UI - Azsunite Loop", ["_drop"] = { "g" }, }),	-- Finishing Touches - Choice UI - Azsunite Loop
-			q(40599, { ["name"] = "Finishing Touches - Choice UI - Deep Amber Loop", ["_drop"] = { "g" }, }),	-- Finishing Touches - Choice UI - Deep Amber Loop
-			q(40583, { ["name"] = "Making the Cut - Choice UI - Deadly Deep Amber", ["_drop"] = { "g" }, }),	-- Making the Cut - Choice UI - Deadly Deep Amber
-			q(40587, { ["name"] = "Making the Cut - Choice UI - Masterful Queen's Opal", ["_drop"] = { "g" }, }),	-- Making the Cut - Choice UI - Masterful Queen's Opal
-			q(40586, { ["name"] = "Making the Cut - Choice UI - Quick Azsunite", ["_drop"] = { "g" }, }),	-- Making the Cut - Choice UI - Quick Azsunite
-			q(40637, { ["name"] = "Proof of Honor", }),	-- Proof of Honor
-			q(40635, { ["name"] = "Sashj'tar Slayer", }),	-- Sashj'tar Slayer
-			q(40676, { ["name"] = "You Must Make Haste", }),	-- You Must Make Haste
-			q(37532, { ["name"] = "[UNUSED]Rolling With the Tidestone", }),	-- [UNUSED]Rolling With the Tidestone
+		expansion(EXPANSION.LEGION, patch(1,5), bubbleDownSelf({ timeline = { CREATED_7_1_5 } }, {
+			q(40631, { name = "Basking in Glory", }),	-- Basking in Glory
+			q(39770, { name = "Burn the Candle at Both Ends [NOT USED]", }),	-- Burn the Candle at Both Ends [NOT USED]
+			q(44941, { name = "Dances With Ravenbears (UNUSED)", }),	-- Dances With Ravenbears (UNUSED)
+			q(40693, { name = "Eyes of Nashal - Choice UI - Deadly Eye of Prophecy", _drop = { "g" }, }),	-- Eyes of Nashal - Choice UI - Deadly Eye of Prophecy
+			q(40696, { name = "Eyes of Nashal - Choice UI - Masterful Shadowruby", _drop = { "g" }, }),	-- Eyes of Nashal - Choice UI - Masterful Shadowruby
+			q(40695, { name = "Eyes of Nashal - Choice UI - Quick Dawnlight", _drop = { "g" }, }),	-- Eyes of Nashal - Choice UI - Quick Dawnlight
+			q(40600, { name = "Finishing Touches - Choice UI - Azsunite Loop", _drop = { "g" }, }),	-- Finishing Touches - Choice UI - Azsunite Loop
+			q(40599, { name = "Finishing Touches - Choice UI - Deep Amber Loop", _drop = { "g" }, }),	-- Finishing Touches - Choice UI - Deep Amber Loop
+			q(40583, { name = "Making the Cut - Choice UI - Deadly Deep Amber", _drop = { "g" }, }),	-- Making the Cut - Choice UI - Deadly Deep Amber
+			q(40587, { name = "Making the Cut - Choice UI - Masterful Queen's Opal", _drop = { "g" }, }),	-- Making the Cut - Choice UI - Masterful Queen's Opal
+			q(40586, { name = "Making the Cut - Choice UI - Quick Azsunite", _drop = { "g" }, }),	-- Making the Cut - Choice UI - Quick Azsunite
+			q(40637, { name = "Proof of Honor", }),	-- Proof of Honor
+			q(40635, { name = "Sashj'tar Slayer", }),	-- Sashj'tar Slayer
+			q(40676, { name = "You Must Make Haste", }),	-- You Must Make Haste
+			q(37532, { name = "[UNUSED]Rolling With the Tidestone", }),	-- [UNUSED]Rolling With the Tidestone
 		})),
 
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
-			q(45022, { ["name"] = "3+ Targets Chosen", }),	-- 3+ Targets Chosen
-			q(45054, { ["name"] = "Ancient Elven War Orders", }),	-- Ancient Elven War Orders
-			q(44854, { ["name"] = "AoE Chosen", }),	-- AoE Chosen
-			q(46040, { ["name"] = "Battlegear of Iron Wrath", }),	-- Battlegear of Iron Wrath
-			q(46041, { ["name"] = "Battlegear of Iron Wrath", }),	-- Battlegear of Iron Wrath
-			q(46042, { ["name"] = "Battlegear of Iron Wrath", }),	-- Battlegear of Iron Wrath
-			q(46826, { ["name"] = "Battleplate of the Silver Hand", }),	-- Battleplate of the Silver Hand
-			q(45102, { ["name"] = "Begin the Assault", }),	-- Begin the Assault
-			q(46522, { ["name"] = "Bloodthirsty Gladiator's Weapons", }),	-- Bloodthirsty Gladiator's Weapons
-			q(45913, { ["name"] = "Broken Shore Main Questline: Tracking Flag", }),	-- Broken Shore Main Questline: Tracking Flag
-			q(45060, { ["name"] = "Damaged Kirin Tor Insignia", }),	-- Damaged Kirin Tor Insignia
-			q(45825, { ["name"] = "Death Knight", }),	-- Death Knight
-			q(45828, { ["name"] = "Demon Hunter", }),	-- Demon Hunter
-			q(45052, { ["name"] = "Depleted Nether Crystal", }),	-- Depleted Nether Crystal
-			q(46036, { ["name"] = "Dreadnaught's Battlegear", }),	-- Dreadnaught's Battlegear
-			q(45829, { ["name"] = "Druid", }),	-- Druid
-			q(44970, { ["name"] = "Dual Boss Chosen", }),	-- Dual Boss Chosen
-			q(45204, { ["name"] = "ELIGIBLE FOR BROKEN SHORE INTRO", }),	-- ELIGIBLE FOR BROKEN SHORE INTRO
-			q(46493, { ["name"] = "Elite - Legion Season 3 and 4 - Gladiator's Weapons", }),	-- Elite - Legion Season 3 and 4 - Gladiator's Weapons
-			q(46494, { ["name"] = "Elite - Legion Season 3 and 4 - Gladiator's Weapons", }),	-- Elite - Legion Season 3 and 4 - Gladiator's Weapons
-			q(46764, { ["name"] = "Enable Challenge Boss Fights", }),	-- Enable Challenge Boss Fights
-			q(46427, { ["name"] = "Fearless Combatant's Dragonhide Armor", }),	-- Fearless Combatant's Dragonhide Armor
-			q(46428, { ["name"] = "Fearless Combatant's Dragonhide Armor", }),	-- Fearless Combatant's Dragonhide Armor
-			q(46429, { ["name"] = "Fearless Combatant's Dreadplate Armor", }),	-- Fearless Combatant's Dreadplate Armor
-			q(46430, { ["name"] = "Fearless Combatant's Dreadplate Armor", }),	-- Fearless Combatant's Dreadplate Armor
-			q(46497, { ["name"] = "Fearless Combatant's Felweave Armor", }),	-- Fearless Combatant's Felweave Armor
-			q(46498, { ["name"] = "Fearless Combatant's Felweave Armor", }),	-- Fearless Combatant's Felweave Armor
-			q(46425, { ["name"] = "Fearless Combatant's Chain Armor", }),	-- Fearless Combatant's Chain Armor
-			q(46426, { ["name"] = "Fearless Combatant's Chain Armor", }),	-- Fearless Combatant's Chain Armor
-			q(46431, { ["name"] = "Fearless Combatant's Ironskin Armor", }),	-- Fearless Combatant's Ironskin Armor
-			q(46432, { ["name"] = "Fearless Combatant's Ironskin Armor", }),	-- Fearless Combatant's Ironskin Armor
-			q(46433, { ["name"] = "Fearless Combatant's Leather Armor", }),	-- Fearless Combatant's Leather Armor
-			q(46434, { ["name"] = "Fearless Combatant's Leather Armor", }),	-- Fearless Combatant's Leather Armor
-			q(46435, { ["name"] = "Fearless Combatant's Plate Armor", }),	-- Fearless Combatant's Plate Armor
-			q(46436, { ["name"] = "Fearless Combatant's Plate Armor", }),	-- Fearless Combatant's Plate Armor
-			q(46437, { ["name"] = "Fearless Combatant's Ringmail Armor", }),	-- Fearless Combatant's Ringmail Armor
-			q(46438, { ["name"] = "Fearless Combatant's Ringmail Armor", }),	-- Fearless Combatant's Ringmail Armor
-			q(46439, { ["name"] = "Fearless Combatant's Satin Armor", }),	-- Fearless Combatant's Satin Armor
-			q(46440, { ["name"] = "Fearless Combatant's Satin Armor", }),	-- Fearless Combatant's Satin Armor
-			q(46441, { ["name"] = "Fearless Combatant's Scaled Armor", }),	-- Fearless Combatant's Scaled Armor
-			q(46442, { ["name"] = "Fearless Combatant's Scaled Armor", }),	-- Fearless Combatant's Scaled Armor
-			q(46443, { ["name"] = "Fearless Combatant's Silk Armor", }),	-- Fearless Combatant's Silk Armor
-			q(46444, { ["name"] = "Fearless Combatant's Silk Armor", }),	-- Fearless Combatant's Silk Armor
-			q(46445, { ["name"] = "Fearless Combatant's Weapons", }),	-- Fearless Combatant's Weapons
-			q(46446, { ["name"] = "Fearless Combatant's Weapons", }),	-- Fearless Combatant's Weapons
-			q(45059, { ["name"] = "Fel Infused Totem Fragment", }),	-- Fel Infused Totem Fragment
-			q(45368, { ["name"] = "Fel Shard", }),	-- Fel Shard
-			q(46787, { ["name"] = "Further Advancement", }),	-- Further Advancement
-			q(46172, { ["name"] = "Greeting Kit", }),	-- Greeting Kit
-			q(44966, { ["name"] = "Healer Chosen", }),	-- Healer Chosen
-			q(45831, { ["name"] = "Hunter", }),	-- Hunter
-			q(45023, { ["name"] = "Hybrid Chosen", }),	-- Hybrid Chosen
-			q(44772, { ["name"] = "Ch 5 Available Tracking Quest", }),	-- Ch 5 Available Tracking Quest
-			q(45200, { ["name"] = "Ch 5 Intro Complete Tracking Quest", }),	-- Ch 5 Intro Complete Tracking Quest
-			q(45816, { ["name"] = "Choose Order Hall to Support", }),	-- Choose Order Hall to Support
-			q(45050, { ["name"] = "Infiltration Plans", }),	-- Infiltration Plans
-			q(46469, { ["name"] = "Legion Season 3 and 4 - Gladiator's Weapons", }),	-- Legion Season 3 and 4 - Gladiator's Weapons
-			q(46470, { ["name"] = "Legion Season 3 and 4 - Gladiator's Weapons", }),	-- Legion Season 3 and 4 - Gladiator's Weapons
-			q(45817, { ["name"] = "Mage", }),	-- Mage
-			q(44853, { ["name"] = "Melee DPS Chosen", }),	-- Melee DPS Chosen
-			q(45337, { ["name"] = "Mo'arg Brute Squad", }),	-- Mo'arg Brute Squad
-			q(45827, { ["name"] = "Monk", }),	-- Monk
-			q(44761, { ["name"] = "Mysterious Runebound Scroll", }),	-- Mysterious Runebound Scroll
-			q(45206, { ["name"] = "Overloaded Soulshard", }),	-- Overloaded Soulshard
-			q(45351, { ["name"] = "Overloaded Soulshard", }),	-- Overloaded Soulshard
-			q(45824, { ["name"] = "Paladin", }),	-- Paladin
-			q(45823, { ["name"] = "Priest", }),	-- Priest
-			q(44963, { ["name"] = "Ranged DPS Chosen", }),	-- Ranged DPS Chosen
-			q(46820, { ["name"] = "REUSE", }),	-- REUSE
-			q(46257, { ["name"] = "REUSE ME", }),	-- REUSE ME
-			q(46270, { ["name"] = "reuse me", }),	-- reuse me
-			q(46996, { ["name"] = "reuse me", }),	-- reuse me
-			q(45815, { ["name"] = "Rogue", }),	-- Rogue
-			q(45061, { ["name"] = "Scrolls of the Faldrottin", }),	-- Scrolls of the Faldrottin
-			q(45340, { ["name"] = "Sea Giant's Stash", }),	-- Sea Giant's Stash
-			q(46823, { ["name"] = "Shadowstrike and Thunderstrike", }),	-- Shadowstrike and Thunderstrike
-			q(46824, { ["name"] = "Shadowstrike and Thunderstrike Anniversary", }),	-- Shadowstrike and Thunderstrike Anniversary
-			q(45830, { ["name"] = "Shaman", }),	-- Shaman
-			q(44885, { ["name"] = "Shipwrecked Survivors", }),	-- Shipwrecked Survivors
-			q(44965, { ["name"] = "Stealth Chosen", }),	-- Stealth Chosen
-			q(46721, { ["name"] = "Sulfuron Hammer", }),	-- Sulfuron Hammer
-			q(44951, { ["name"] = "Tank Chosen", }),	-- Tank Chosen
-			q(46254, { ["name"] = "TBD", }),	-- TBD
-			q(44781, { ["name"] = "The Council's Call", }),	-- The Council's Call
-			q(46273, { ["name"] = "The Giver of Quests", }),	-- The Giver of Quests
-			q(45999, { ["name"] = "The Legion Assault", }),	-- The Legion Assault
-			q(46002, { ["name"] = "The Legion Assault - Viewed", }),	-- The Legion Assault - Viewed
-			q(45053, { ["name"] = "Thief's Instructions", }),	-- Thief's Instructions
-			q(45577, { ["name"] = "thing", }),	-- thing
-			q(47178, { ["name"] = "Tier 2 Mob Daily Bonus", }),	-- Tier 2 Mob Daily Bonus
-			q(47179, { ["name"] = "Tier 3 Mob Weekly Bonus", }),	-- Tier 3 Mob Weekly Bonus
-			q(46753, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(45332, { ["name"] = "Tracking Quest - Zirux", }),	-- Tracking Quest - Zirux
-			q(45095, { ["name"] = "Treasure 001 - Crashed Horde Ship", }),	-- Treasure 001 - Crashed Horde Ship
-			q(45096, { ["name"] = "Treasure 002 - Fel Cave", }),	-- Treasure 002 - Fel Cave
-			q(45097, { ["name"] = "Treasure 003 - Puddle Cave", }),	-- Treasure 003 - Puddle Cave
-			q(45110, { ["name"] = "Treasure 004 - Fel Tower 001", }),	-- Treasure 004 - Fel Tower 001
-			q(45119, { ["name"] = "Treasure 005 - Fel Tower 002", }),	-- Treasure 005 - Fel Tower 002
-			q(45121, { ["name"] = "Treasure 006 - Pillar 001", }),	-- Treasure 006 - Pillar 001
-			q(45122, { ["name"] = "Treasure 007 - Back Beach", }),	-- Treasure 007 - Back Beach
-			q(45135, { ["name"] = "Treasure 008 - The Lost Temple", }),	-- Treasure 008 - The Lost Temple
-			q(45136, { ["name"] = "Treasure 009 - The Lost Temple 002", }),	-- Treasure 009 - The Lost Temple 002
-			q(45137, { ["name"] = "Treasure 010 - Malgoreth's Chamber", }),	-- Treasure 010 - Malgoreth's Chamber
-			q(45141, { ["name"] = "Treasure 011 - Vol'jin's Fall", }),	-- Treasure 011 - Vol'jin's Fall
-			q(45142, { ["name"] = "Treasure 012 - Behind Tomb of Sargeras", }),	-- Treasure 012 - Behind Tomb of Sargeras
-			q(45150, { ["name"] = "Treasure 013 - Fel Tower 003", }),	-- Treasure 013 - Fel Tower 003
-			q(45144, { ["name"] = "Treasure 013 - Ruined Temple", }),	-- Treasure 013 - Ruined Temple
-			q(45151, { ["name"] = "Treasure 015 - Ritual Altar", }),	-- Treasure 015 - Ritual Altar
-			q(45153, { ["name"] = "Treasure 016 - Undersea Naval Battle", }),	-- Treasure 016 - Undersea Naval Battle
-			q(45154, { ["name"] = "Treasure 017 - Egg Cave", }),	-- Treasure 017 - Egg Cave
-			q(45158, { ["name"] = "Treasure 018 - Crashed Alliance Sea Ship", }),	-- Treasure 018 - Crashed Alliance Sea Ship
-			q(45120, { ["name"] = "Treasure 019 - Ruined Temple 002", }),	-- Treasure 019 - Ruined Temple 002
-			q(45166, { ["name"] = "Treasure 020 - Murloc Beach Hut", }),	-- Treasure 020 - Murloc Beach Hut
-			q(45168, { ["name"] = "Treasure 021 - Above Puddle Cave", }),	-- Treasure 021 - Above Puddle Cave
-			q(45169, { ["name"] = "Treasure 022 - Hub Cliff", }),	-- Treasure 022 - Hub Cliff
-			q(45186, { ["name"] = "Treasure 023 - Sargeras Tower 001", }),	-- Treasure 023 - Sargeras Tower 001
-			q(45189, { ["name"] = "Treasure 024 - Fel River Rock", }),	-- Treasure 024 - Fel River Rock
-			q(45191, { ["name"] = "Treasure 025 - Night Elf Ruins 001", }),	-- Treasure 025 - Night Elf Ruins 001
-			q(45198, { ["name"] = "Treasure 026 - Fallen Fel Tower", }),	-- Treasure 026 - Fallen Fel Tower
-			q(45199, { ["name"] = "Treasure 027 - Kirin Tor Tower", }),	-- Treasure 027 - Kirin Tor Tower
-			q(45201, { ["name"] = "Treasure 028 - Varian's Fall", }),	-- Treasure 028 - Varian's Fall
-			q(45202, { ["name"] = "Treasure 029 - Undersea 002", }),	-- Treasure 029 - Undersea 002
-			q(45205, { ["name"] = "Treasure 030 - Broken Ship Tip", }),	-- Treasure 030 - Broken Ship Tip
-			q(45244, { ["name"] = "Treasure 031 - Cave Underneath Horde Ship", }),	-- Treasure 031 - Cave Underneath Horde Ship
-			q(45246, { ["name"] = "Treasure 032 - Fel River Nook", }),	-- Treasure 032 - Fel River Nook
-			q(45248, { ["name"] = "Treasure 033 - Fel Crystal Tower 000", }),	-- Treasure 033 - Fel Crystal Tower 000
-			q(45249, { ["name"] = "Treasure 034 - Beach Pole", }),	-- Treasure 034 - Beach Pole
-			q(45250, { ["name"] = "Treasure 035 - Dead Tree", }),	-- Treasure 035 - Dead Tree
-			q(45152, { ["name"] = "Treasure 036 - Tomb Statue Book", }),	-- Treasure 036 - Tomb Statue Book
-			q(45252, { ["name"] = "Treasure 037 - Above Lost Temple", }),	-- Treasure 037 - Above Lost Temple
-			q(45253, { ["name"] = "Treasure 038 - Above Felfire Pass", }),	-- Treasure 038 - Above Felfire Pass
-			q(45254, { ["name"] = "Treasure 039 - Felfire Pass Chain Cage", }),	-- Treasure 039 - Felfire Pass Chain Cage
-			q(45255, { ["name"] = "Treasure 040 - Fel Waterfall", }),	-- Treasure 040 - Fel Waterfall
-			q(45256, { ["name"] = "Treasure 041 - Spike Overlook", }),	-- Treasure 041 - Spike Overlook
-			q(45257, { ["name"] = "Treasure 042 - Underwater 003", }),	-- Treasure 042 - Underwater 003
-			q(45258, { ["name"] = "Treasure 043 - Underwater 004", }),	-- Treasure 043 - Underwater 004
-			q(45259, { ["name"] = "Treasure 044 - Crashed Alliance Gunship", }),	-- Treasure 044 - Crashed Alliance Gunship
-			q(45264, { ["name"] = "Treasure 045 - South Peak", }),	-- Treasure 045 - South Peak
-			q(45270, { ["name"] = "Treasure 046 - Bundle of Cages 000", }),	-- Treasure 046 - Bundle of Cages 000
-			q(45276, { ["name"] = "Treasure 047 - Webbed Path", }),	-- Treasure 047 - Webbed Path
-			q(45279, { ["name"] = "Treasure 048 - Western Island Tree", }),	-- Treasure 048 - Western Island Tree
-			q(45283, { ["name"] = "Treasure 049 - Behind Purple Ritual", }),	-- Treasure 049 - Behind Purple Ritual
-			q(45284, { ["name"] = "Treasure 050 - Spikes Over Green", }),	-- Treasure 050 - Spikes Over Green
-			q(45286, { ["name"] = "Treasure 051 - Death Knight Overhang", }),	-- Treasure 051 - Death Knight Overhang
-			q(45288, { ["name"] = "Treasure 052 - Green Ritual Chamber", }),	-- Treasure 052 - Green Ritual Chamber
-			q(45289, { ["name"] = "Treasure 053 - Underneath Tomb Bridge", }),	-- Treasure 053 - Underneath Tomb Bridge
-			q(45298, { ["name"] = "Treasure 054 - Death Knight Nook", }),	-- Treasure 054 - Death Knight Nook
-			q(45299, { ["name"] = "Treasure 055 - Felbreach Hollow", }),	-- Treasure 055 - Felbreach Hollow
-			q(45300, { ["name"] = "Treasure 056 - Giant Tree", }),	-- Treasure 056 - Giant Tree
-			q(45305, { ["name"] = "Treasure 057 - East Rock Cliff", }),	-- Treasure 057 - East Rock Cliff
-			q(45306, { ["name"] = "Treasure 058 - Purple Ritual Chamber", }),	-- Treasure 058 - Purple Ritual Chamber
-			q(45308, { ["name"] = "Treasure 059 - Northern Night Elf Ruins", }),	-- Treasure 059 - Northern Night Elf Ruins
-			q(45314, { ["name"] = "Treasure 060 - Fel Hammer", }),	-- Treasure 060 - Fel Hammer
-			q(44890, { ["name"] = "Vignette: Azrok the Afflictor", }),	-- Vignette: Azrok the Afflictor
-			q(45421, { ["name"] = "Vignette: Dirge of Asgrim", }),	-- Vignette: Dirge of Asgrim
-			q(46375, { ["name"] = "Vindictive Combatant's Weapons", }),	-- Vindictive Combatant's Weapons
-			q(46376, { ["name"] = "Vindictive Combatant's Weapons", }),	-- Vindictive Combatant's Weapons
-			q(45826, { ["name"] = "Warlock", }),	-- Warlock
-			q(45822, { ["name"] = "Warrior", }),	-- Warrior
-			q(46256, { ["name"] = "X Treasures Found, 1 Challenge Attempted", }),	-- X Treasures Found, 1 Challenge Attempted
-			q(46255, { ["name"] = "X Unstable Portals Disrupted, 1 World Boss Defeated", }),	-- X Unstable Portals Disrupted, 1 World Boss Defeated
-			q(46037, { ["name"] = "Ymirjar's Battlegear", }),	-- Ymirjar's Battlegear
-			q(46038, { ["name"] = "Ymirjar's Battlegear", }),	-- Ymirjar's Battlegear
-			q(46039, { ["name"] = "Ymirjar's Battlegear", }),	-- Ymirjar's Battlegear
-			q(45104, { ["name"] = "Your Next Assignment...", }),	-- Your Next Assignment...
-			q(45116, { ["name"] = "Your Next Assignment...", }),	-- Your Next Assignment...
+		expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ timeline = { CREATED_7_2_0 } }, {
+			q(45022, { name = "3+ Targets Chosen", }),	-- 3+ Targets Chosen
+			q(45054, { name = "Ancient Elven War Orders", }),	-- Ancient Elven War Orders
+			q(44854, { name = "AoE Chosen", }),	-- AoE Chosen
+			q(46040, { name = "Battlegear of Iron Wrath", }),	-- Battlegear of Iron Wrath
+			q(46041, { name = "Battlegear of Iron Wrath", }),	-- Battlegear of Iron Wrath
+			q(46042, { name = "Battlegear of Iron Wrath", }),	-- Battlegear of Iron Wrath
+			q(46826, { name = "Battleplate of the Silver Hand", }),	-- Battleplate of the Silver Hand
+			q(45102, { name = "Begin the Assault", }),	-- Begin the Assault
+			q(46522, { name = "Bloodthirsty Gladiator's Weapons", }),	-- Bloodthirsty Gladiator's Weapons
+			q(45913, { name = "Broken Shore Main Questline: Tracking Flag", }),	-- Broken Shore Main Questline: Tracking Flag
+			q(45060, { name = "Damaged Kirin Tor Insignia", }),	-- Damaged Kirin Tor Insignia
+			q(45825, { name = "Death Knight", }),	-- Death Knight
+			q(45828, { name = "Demon Hunter", }),	-- Demon Hunter
+			q(45052, { name = "Depleted Nether Crystal", }),	-- Depleted Nether Crystal
+			q(46036, { name = "Dreadnaught's Battlegear", }),	-- Dreadnaught's Battlegear
+			q(45829, { name = "Druid", }),	-- Druid
+			q(44970, { name = "Dual Boss Chosen", }),	-- Dual Boss Chosen
+			q(45204, { name = "ELIGIBLE FOR BROKEN SHORE INTRO", }),	-- ELIGIBLE FOR BROKEN SHORE INTRO
+			q(46493, { name = "Elite - Legion Season 3 and 4 - Gladiator's Weapons", }),	-- Elite - Legion Season 3 and 4 - Gladiator's Weapons
+			q(46494, { name = "Elite - Legion Season 3 and 4 - Gladiator's Weapons", }),	-- Elite - Legion Season 3 and 4 - Gladiator's Weapons
+			q(46764, { name = "Enable Challenge Boss Fights", }),	-- Enable Challenge Boss Fights
+			q(46427, { name = "Fearless Combatant's Dragonhide Armor", }),	-- Fearless Combatant's Dragonhide Armor
+			q(46428, { name = "Fearless Combatant's Dragonhide Armor", }),	-- Fearless Combatant's Dragonhide Armor
+			q(46429, { name = "Fearless Combatant's Dreadplate Armor", }),	-- Fearless Combatant's Dreadplate Armor
+			q(46430, { name = "Fearless Combatant's Dreadplate Armor", }),	-- Fearless Combatant's Dreadplate Armor
+			q(46497, { name = "Fearless Combatant's Felweave Armor", }),	-- Fearless Combatant's Felweave Armor
+			q(46498, { name = "Fearless Combatant's Felweave Armor", }),	-- Fearless Combatant's Felweave Armor
+			q(46425, { name = "Fearless Combatant's Chain Armor", }),	-- Fearless Combatant's Chain Armor
+			q(46426, { name = "Fearless Combatant's Chain Armor", }),	-- Fearless Combatant's Chain Armor
+			q(46431, { name = "Fearless Combatant's Ironskin Armor", }),	-- Fearless Combatant's Ironskin Armor
+			q(46432, { name = "Fearless Combatant's Ironskin Armor", }),	-- Fearless Combatant's Ironskin Armor
+			q(46433, { name = "Fearless Combatant's Leather Armor", }),	-- Fearless Combatant's Leather Armor
+			q(46434, { name = "Fearless Combatant's Leather Armor", }),	-- Fearless Combatant's Leather Armor
+			q(46435, { name = "Fearless Combatant's Plate Armor", }),	-- Fearless Combatant's Plate Armor
+			q(46436, { name = "Fearless Combatant's Plate Armor", }),	-- Fearless Combatant's Plate Armor
+			q(46437, { name = "Fearless Combatant's Ringmail Armor", }),	-- Fearless Combatant's Ringmail Armor
+			q(46438, { name = "Fearless Combatant's Ringmail Armor", }),	-- Fearless Combatant's Ringmail Armor
+			q(46439, { name = "Fearless Combatant's Satin Armor", }),	-- Fearless Combatant's Satin Armor
+			q(46440, { name = "Fearless Combatant's Satin Armor", }),	-- Fearless Combatant's Satin Armor
+			q(46441, { name = "Fearless Combatant's Scaled Armor", }),	-- Fearless Combatant's Scaled Armor
+			q(46442, { name = "Fearless Combatant's Scaled Armor", }),	-- Fearless Combatant's Scaled Armor
+			q(46443, { name = "Fearless Combatant's Silk Armor", }),	-- Fearless Combatant's Silk Armor
+			q(46444, { name = "Fearless Combatant's Silk Armor", }),	-- Fearless Combatant's Silk Armor
+			q(46445, { name = "Fearless Combatant's Weapons", }),	-- Fearless Combatant's Weapons
+			q(46446, { name = "Fearless Combatant's Weapons", }),	-- Fearless Combatant's Weapons
+			q(45059, { name = "Fel Infused Totem Fragment", }),	-- Fel Infused Totem Fragment
+			q(45368, { name = "Fel Shard", }),	-- Fel Shard
+			q(46787, { name = "Further Advancement", }),	-- Further Advancement
+			q(46172, { name = "Greeting Kit", }),	-- Greeting Kit
+			q(44966, { name = "Healer Chosen", }),	-- Healer Chosen
+			q(45831, { name = "Hunter", }),	-- Hunter
+			q(45023, { name = "Hybrid Chosen", }),	-- Hybrid Chosen
+			q(44772, { name = "Ch 5 Available Tracking Quest", }),	-- Ch 5 Available Tracking Quest
+			q(45200, { name = "Ch 5 Intro Complete Tracking Quest", }),	-- Ch 5 Intro Complete Tracking Quest
+			q(45816, { name = "Choose Order Hall to Support", }),	-- Choose Order Hall to Support
+			q(45050, { name = "Infiltration Plans", }),	-- Infiltration Plans
+			q(46469, { name = "Legion Season 3 and 4 - Gladiator's Weapons", }),	-- Legion Season 3 and 4 - Gladiator's Weapons
+			q(46470, { name = "Legion Season 3 and 4 - Gladiator's Weapons", }),	-- Legion Season 3 and 4 - Gladiator's Weapons
+			q(45817, { name = "Mage", }),	-- Mage
+			q(44853, { name = "Melee DPS Chosen", }),	-- Melee DPS Chosen
+			q(45337, { name = "Mo'arg Brute Squad", }),	-- Mo'arg Brute Squad
+			q(45827, { name = "Monk", }),	-- Monk
+			q(44761, { name = "Mysterious Runebound Scroll", }),	-- Mysterious Runebound Scroll
+			q(45206, { name = "Overloaded Soulshard", }),	-- Overloaded Soulshard
+			q(45351, { name = "Overloaded Soulshard", }),	-- Overloaded Soulshard
+			q(45824, { name = "Paladin", }),	-- Paladin
+			q(45823, { name = "Priest", }),	-- Priest
+			q(44963, { name = "Ranged DPS Chosen", }),	-- Ranged DPS Chosen
+			q(46820, { name = "REUSE", }),	-- REUSE
+			q(46257, { name = "REUSE ME", }),	-- REUSE ME
+			q(46270, { name = "reuse me", }),	-- reuse me
+			q(46996, { name = "reuse me", }),	-- reuse me
+			q(45815, { name = "Rogue", }),	-- Rogue
+			q(45061, { name = "Scrolls of the Faldrottin", }),	-- Scrolls of the Faldrottin
+			q(45340, { name = "Sea Giant's Stash", }),	-- Sea Giant's Stash
+			q(46823, { name = "Shadowstrike and Thunderstrike", }),	-- Shadowstrike and Thunderstrike
+			q(46824, { name = "Shadowstrike and Thunderstrike Anniversary", }),	-- Shadowstrike and Thunderstrike Anniversary
+			q(45830, { name = "Shaman", }),	-- Shaman
+			q(44885, { name = "Shipwrecked Survivors", }),	-- Shipwrecked Survivors
+			q(44965, { name = "Stealth Chosen", }),	-- Stealth Chosen
+			q(46721, { name = "Sulfuron Hammer", }),	-- Sulfuron Hammer
+			q(44951, { name = "Tank Chosen", }),	-- Tank Chosen
+			q(46254, { name = "TBD", }),	-- TBD
+			q(44781, { name = "The Council's Call", }),	-- The Council's Call
+			q(46273, { name = "The Giver of Quests", }),	-- The Giver of Quests
+			q(45999, { name = "The Legion Assault", }),	-- The Legion Assault
+			q(46002, { name = "The Legion Assault - Viewed", }),	-- The Legion Assault - Viewed
+			q(45053, { name = "Thief's Instructions", }),	-- Thief's Instructions
+			q(45577, { name = "thing", }),	-- thing
+			q(47178, { name = "Tier 2 Mob Daily Bonus", }),	-- Tier 2 Mob Daily Bonus
+			q(47179, { name = "Tier 3 Mob Weekly Bonus", }),	-- Tier 3 Mob Weekly Bonus
+			q(46753, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(45332, { name = "Tracking Quest - Zirux", }),	-- Tracking Quest - Zirux
+			q(45095, { name = "Treasure 001 - Crashed Horde Ship", }),	-- Treasure 001 - Crashed Horde Ship
+			q(45096, { name = "Treasure 002 - Fel Cave", }),	-- Treasure 002 - Fel Cave
+			q(45097, { name = "Treasure 003 - Puddle Cave", }),	-- Treasure 003 - Puddle Cave
+			q(45110, { name = "Treasure 004 - Fel Tower 001", }),	-- Treasure 004 - Fel Tower 001
+			q(45119, { name = "Treasure 005 - Fel Tower 002", }),	-- Treasure 005 - Fel Tower 002
+			q(45121, { name = "Treasure 006 - Pillar 001", }),	-- Treasure 006 - Pillar 001
+			q(45122, { name = "Treasure 007 - Back Beach", }),	-- Treasure 007 - Back Beach
+			q(45135, { name = "Treasure 008 - The Lost Temple", }),	-- Treasure 008 - The Lost Temple
+			q(45136, { name = "Treasure 009 - The Lost Temple 002", }),	-- Treasure 009 - The Lost Temple 002
+			q(45137, { name = "Treasure 010 - Malgoreth's Chamber", }),	-- Treasure 010 - Malgoreth's Chamber
+			q(45141, { name = "Treasure 011 - Vol'jin's Fall", }),	-- Treasure 011 - Vol'jin's Fall
+			q(45142, { name = "Treasure 012 - Behind Tomb of Sargeras", }),	-- Treasure 012 - Behind Tomb of Sargeras
+			q(45150, { name = "Treasure 013 - Fel Tower 003", }),	-- Treasure 013 - Fel Tower 003
+			q(45144, { name = "Treasure 013 - Ruined Temple", }),	-- Treasure 013 - Ruined Temple
+			q(45151, { name = "Treasure 015 - Ritual Altar", }),	-- Treasure 015 - Ritual Altar
+			q(45153, { name = "Treasure 016 - Undersea Naval Battle", }),	-- Treasure 016 - Undersea Naval Battle
+			q(45154, { name = "Treasure 017 - Egg Cave", }),	-- Treasure 017 - Egg Cave
+			q(45158, { name = "Treasure 018 - Crashed Alliance Sea Ship", }),	-- Treasure 018 - Crashed Alliance Sea Ship
+			q(45120, { name = "Treasure 019 - Ruined Temple 002", }),	-- Treasure 019 - Ruined Temple 002
+			q(45166, { name = "Treasure 020 - Murloc Beach Hut", }),	-- Treasure 020 - Murloc Beach Hut
+			q(45168, { name = "Treasure 021 - Above Puddle Cave", }),	-- Treasure 021 - Above Puddle Cave
+			q(45169, { name = "Treasure 022 - Hub Cliff", }),	-- Treasure 022 - Hub Cliff
+			q(45186, { name = "Treasure 023 - Sargeras Tower 001", }),	-- Treasure 023 - Sargeras Tower 001
+			q(45189, { name = "Treasure 024 - Fel River Rock", }),	-- Treasure 024 - Fel River Rock
+			q(45191, { name = "Treasure 025 - Night Elf Ruins 001", }),	-- Treasure 025 - Night Elf Ruins 001
+			q(45198, { name = "Treasure 026 - Fallen Fel Tower", }),	-- Treasure 026 - Fallen Fel Tower
+			q(45199, { name = "Treasure 027 - Kirin Tor Tower", }),	-- Treasure 027 - Kirin Tor Tower
+			q(45201, { name = "Treasure 028 - Varian's Fall", }),	-- Treasure 028 - Varian's Fall
+			q(45202, { name = "Treasure 029 - Undersea 002", }),	-- Treasure 029 - Undersea 002
+			q(45205, { name = "Treasure 030 - Broken Ship Tip", }),	-- Treasure 030 - Broken Ship Tip
+			q(45244, { name = "Treasure 031 - Cave Underneath Horde Ship", }),	-- Treasure 031 - Cave Underneath Horde Ship
+			q(45246, { name = "Treasure 032 - Fel River Nook", }),	-- Treasure 032 - Fel River Nook
+			q(45248, { name = "Treasure 033 - Fel Crystal Tower 000", }),	-- Treasure 033 - Fel Crystal Tower 000
+			q(45249, { name = "Treasure 034 - Beach Pole", }),	-- Treasure 034 - Beach Pole
+			q(45250, { name = "Treasure 035 - Dead Tree", }),	-- Treasure 035 - Dead Tree
+			q(45152, { name = "Treasure 036 - Tomb Statue Book", }),	-- Treasure 036 - Tomb Statue Book
+			q(45252, { name = "Treasure 037 - Above Lost Temple", }),	-- Treasure 037 - Above Lost Temple
+			q(45253, { name = "Treasure 038 - Above Felfire Pass", }),	-- Treasure 038 - Above Felfire Pass
+			q(45254, { name = "Treasure 039 - Felfire Pass Chain Cage", }),	-- Treasure 039 - Felfire Pass Chain Cage
+			q(45255, { name = "Treasure 040 - Fel Waterfall", }),	-- Treasure 040 - Fel Waterfall
+			q(45256, { name = "Treasure 041 - Spike Overlook", }),	-- Treasure 041 - Spike Overlook
+			q(45257, { name = "Treasure 042 - Underwater 003", }),	-- Treasure 042 - Underwater 003
+			q(45258, { name = "Treasure 043 - Underwater 004", }),	-- Treasure 043 - Underwater 004
+			q(45259, { name = "Treasure 044 - Crashed Alliance Gunship", }),	-- Treasure 044 - Crashed Alliance Gunship
+			q(45264, { name = "Treasure 045 - South Peak", }),	-- Treasure 045 - South Peak
+			q(45270, { name = "Treasure 046 - Bundle of Cages 000", }),	-- Treasure 046 - Bundle of Cages 000
+			q(45276, { name = "Treasure 047 - Webbed Path", }),	-- Treasure 047 - Webbed Path
+			q(45279, { name = "Treasure 048 - Western Island Tree", }),	-- Treasure 048 - Western Island Tree
+			q(45283, { name = "Treasure 049 - Behind Purple Ritual", }),	-- Treasure 049 - Behind Purple Ritual
+			q(45284, { name = "Treasure 050 - Spikes Over Green", }),	-- Treasure 050 - Spikes Over Green
+			q(45286, { name = "Treasure 051 - Death Knight Overhang", }),	-- Treasure 051 - Death Knight Overhang
+			q(45288, { name = "Treasure 052 - Green Ritual Chamber", }),	-- Treasure 052 - Green Ritual Chamber
+			q(45289, { name = "Treasure 053 - Underneath Tomb Bridge", }),	-- Treasure 053 - Underneath Tomb Bridge
+			q(45298, { name = "Treasure 054 - Death Knight Nook", }),	-- Treasure 054 - Death Knight Nook
+			q(45299, { name = "Treasure 055 - Felbreach Hollow", }),	-- Treasure 055 - Felbreach Hollow
+			q(45300, { name = "Treasure 056 - Giant Tree", }),	-- Treasure 056 - Giant Tree
+			q(45305, { name = "Treasure 057 - East Rock Cliff", }),	-- Treasure 057 - East Rock Cliff
+			q(45306, { name = "Treasure 058 - Purple Ritual Chamber", }),	-- Treasure 058 - Purple Ritual Chamber
+			q(45308, { name = "Treasure 059 - Northern Night Elf Ruins", }),	-- Treasure 059 - Northern Night Elf Ruins
+			q(45314, { name = "Treasure 060 - Fel Hammer", }),	-- Treasure 060 - Fel Hammer
+			q(44890, { name = "Vignette: Azrok the Afflictor", }),	-- Vignette: Azrok the Afflictor
+			q(45421, { name = "Vignette: Dirge of Asgrim", }),	-- Vignette: Dirge of Asgrim
+			q(46375, { name = "Vindictive Combatant's Weapons", }),	-- Vindictive Combatant's Weapons
+			q(46376, { name = "Vindictive Combatant's Weapons", }),	-- Vindictive Combatant's Weapons
+			q(45826, { name = "Warlock", }),	-- Warlock
+			q(45822, { name = "Warrior", }),	-- Warrior
+			q(46256, { name = "X Treasures Found, 1 Challenge Attempted", }),	-- X Treasures Found, 1 Challenge Attempted
+			q(46255, { name = "X Unstable Portals Disrupted, 1 World Boss Defeated", }),	-- X Unstable Portals Disrupted, 1 World Boss Defeated
+			q(46037, { name = "Ymirjar's Battlegear", }),	-- Ymirjar's Battlegear
+			q(46038, { name = "Ymirjar's Battlegear", }),	-- Ymirjar's Battlegear
+			q(46039, { name = "Ymirjar's Battlegear", }),	-- Ymirjar's Battlegear
+			q(45104, { name = "Your Next Assignment...", }),	-- Your Next Assignment...
+			q(45116, { name = "Your Next Assignment...", }),	-- Your Next Assignment...
 		})),
 
 		-- 7.2.5
-		expansion(EXPANSION.LEGION, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_7_2_5 } }, {
-			q(43404, { ["name"] = "A Gathering for the Grand Master", }),	-- A Gathering for the Grand Master
-			q(45441, { ["name"] = "Adacic Grubs - REWORK", }),	-- Adacic Grubs - REWORK
-			q(47611, { ["name"] = "Betrayer Regalia", }),	-- Betrayer Regalia
-			q(47619, { ["name"] = "Cycle Armor", }),	-- Cycle Armor
-			q(47806, { ["name"] = "Draconic Assistant", }),	-- Draconic Assistant
-			q(47617, { ["name"] = "Elemental Triad Regalia", }),	-- Elemental Triad Regalia
-			q(47802, { ["name"] = "Fangs of the Bronze", }),	-- Fangs of the Bronze
-			q(47424, { ["name"] = "FLAG - First Chromie Saved", }),	-- FLAG - First Chromie Saved
-			q(47801, { ["name"] = "Gold", }),	-- Gold
-			q(47610, { ["name"] = "Golden King Plate", }),	-- Golden King Plate
-			q(47803, { ["name"] = "Hide of the Bronze", }),	-- Hide of the Bronze
-			q(47615, { ["name"] = "Holy Warrior Plate", }),	-- Holy Warrior Plate
-			q(47618, { ["name"] = "Howling Beast Set", }),	-- Howling Beast Set
-			q(47795, { ["name"] = "Chromie Reputation", }),	-- Chromie Reputation
-			q(47798, { ["name"] = "Chromie Reputation", }),	-- Chromie Reputation
-			q(47799, { ["name"] = "Chromie Reputation", }),	-- Chromie Reputation
-			q(47800, { ["name"] = "Chromie Reputation Aura", }),	-- Chromie Reputation Aura
-			q(47825, { ["name"] = "Keepsake Box", }),	-- Keepsake Box
-			q(47614, { ["name"] = "Light Regalia", }),	-- Light Regalia
-			q(47620, { ["name"] = "Lich Lord Plate", }),	-- Lich Lord Plate
-			q(45333, { ["name"] = "On Unhallowed Ground", }),	-- On Unhallowed Ground
-			q(47616, { ["name"] = "Regal Lord Armor", }),	-- Regal Lord Armor
-			q(48062, { ["name"] = "Scarlet Crusader", }),	-- Scarlet Crusader
-			q(47964, { ["name"] = "Shoe Shine Kit Tracking Quest", }),	-- Shoe Shine Kit Tracking Quest
-			q(47613, { ["name"] = "Silent Assassin Armor", }),	-- Silent Assassin Armor
-			q(47805, { ["name"] = "Stolen Time", }),	-- Stolen Time
-			q(47820, { ["name"] = "Stolen Time", }),	-- Stolen Time
-			q(47821, { ["name"] = "Stolen Time", }),	-- Stolen Time
-			q(47796, { ["name"] = "Timewarped Badges", }),	-- Timewarped Badges
-			q(47331, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(47715, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(47609, { ["name"] = "Wild Gladiator's Chain Armor", }),	-- Wild Gladiator's Chain Armor
-			q(47612, { ["name"] = "Windfury Set", }),	-- Windfury Set
-			q(47804, { ["name"] = "Wings of the Bronze", }),	-- Wings of the Bronze
-			q(47290, { ["name"] = "World Event Dungeon - Hummel", }),	-- World Event Dungeon - Hummel
+		expansion(EXPANSION.LEGION, patch(2,5), bubbleDownSelf({ timeline = { CREATED_7_2_5 } }, {
+			q(43404, { name = "A Gathering for the Grand Master", }),	-- A Gathering for the Grand Master
+			q(45441, { name = "Adacic Grubs - REWORK", }),	-- Adacic Grubs - REWORK
+			q(47611, { name = "Betrayer Regalia", }),	-- Betrayer Regalia
+			q(47619, { name = "Cycle Armor", }),	-- Cycle Armor
+			q(47806, { name = "Draconic Assistant", }),	-- Draconic Assistant
+			q(47617, { name = "Elemental Triad Regalia", }),	-- Elemental Triad Regalia
+			q(47802, { name = "Fangs of the Bronze", }),	-- Fangs of the Bronze
+			q(47424, { name = "FLAG - First Chromie Saved", }),	-- FLAG - First Chromie Saved
+			q(47801, { name = "Gold", }),	-- Gold
+			q(47610, { name = "Golden King Plate", }),	-- Golden King Plate
+			q(47803, { name = "Hide of the Bronze", }),	-- Hide of the Bronze
+			q(47615, { name = "Holy Warrior Plate", }),	-- Holy Warrior Plate
+			q(47618, { name = "Howling Beast Set", }),	-- Howling Beast Set
+			q(47795, { name = "Chromie Reputation", }),	-- Chromie Reputation
+			q(47798, { name = "Chromie Reputation", }),	-- Chromie Reputation
+			q(47799, { name = "Chromie Reputation", }),	-- Chromie Reputation
+			q(47800, { name = "Chromie Reputation Aura", }),	-- Chromie Reputation Aura
+			q(47825, { name = "Keepsake Box", }),	-- Keepsake Box
+			q(47614, { name = "Light Regalia", }),	-- Light Regalia
+			q(47620, { name = "Lich Lord Plate", }),	-- Lich Lord Plate
+			q(45333, { name = "On Unhallowed Ground", }),	-- On Unhallowed Ground
+			q(47616, { name = "Regal Lord Armor", }),	-- Regal Lord Armor
+			q(48062, { name = "Scarlet Crusader", }),	-- Scarlet Crusader
+			q(47964, { name = "Shoe Shine Kit Tracking Quest", }),	-- Shoe Shine Kit Tracking Quest
+			q(47613, { name = "Silent Assassin Armor", }),	-- Silent Assassin Armor
+			q(47805, { name = "Stolen Time", }),	-- Stolen Time
+			q(47820, { name = "Stolen Time", }),	-- Stolen Time
+			q(47821, { name = "Stolen Time", }),	-- Stolen Time
+			q(47796, { name = "Timewarped Badges", }),	-- Timewarped Badges
+			q(47331, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(47715, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(47609, { name = "Wild Gladiator's Chain Armor", }),	-- Wild Gladiator's Chain Armor
+			q(47612, { name = "Windfury Set", }),	-- Windfury Set
+			q(47804, { name = "Wings of the Bronze", }),	-- Wings of the Bronze
+			q(47290, { name = "World Event Dungeon - Hummel", }),	-- World Event Dungeon - Hummel
 		})),
 
 		-- 7.3.0
-		expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
-			q(49193, { ["name"] = "A Pile of Intact Demon Eyes", }),	-- A Pile of Intact Demon Eyes
-			q(49194, { ["name"] = "Another Pile of Intact Demon Eyes", }),	-- Another Pile of Intact Demon Eyes
-			q(45036, { ["name"] = "Asgrim the Dreadkiller", }),	-- Asgrim the Dreadkiller
-			q(46831, { ["name"] = "Broken Village", }),	-- Broken Village
-			q(48278, { ["name"] = "Fate of the Life-Binder", }),	-- Fate of the Life-Binder
-			q(45034, { ["name"] = "Fire the Cannons!", }),	-- Fire the Cannons!
-			q(49030, { ["name"] = "Fragments of the Abyss",["_drop"] = { "g" }, }),	-- Fragments of the Abyss
-			q(48964, { ["name"] = "Immortal Ace", }),	-- Immortal Ace
-			q(49189, { ["name"] = "Intact Demon Eyes", }),	-- Intact Demon Eyes
-			q(49029, { ["name"] = "Invasion of Space",["_drop"] = { "g" }, }),	-- Invasion of Space
-			q(45728, { ["name"] = "Legion Assault: Thunder Totem", }),	-- Legion Assault: Thunder Totem
-			q(47359, { ["name"] = "Legion Season 5, 6, and 7 - Gladiator's Weapons", }),	-- Legion Season 5, 6, and 7 - Gladiator's Weapons
-			q(47360, { ["name"] = "Legion Season 5, 6, and 7 - Gladiator's Weapons", }),	-- Legion Season 5, 6, and 7 - Gladiator's Weapons
-			q(48687, { ["name"] = "Lockout Tracking - Boss - Blood", }),	-- Lockout Tracking - Boss - Blood
-			q(48685, { ["name"] = "Lockout Tracking - Boss - Fire", }),	-- Lockout Tracking - Boss - Fire
-			q(48690, { ["name"] = "Lockout Tracking - Boss - Forest", }),	-- Lockout Tracking - Boss - Forest
-			q(48686, { ["name"] = "Lockout Tracking - Boss - Ice", }),	-- Lockout Tracking - Boss - Ice
-			q(48688, { ["name"] = "Lockout Tracking - Boss - Islands", }),	-- Lockout Tracking - Boss - Islands
-			q(48689, { ["name"] = "Lockout Tracking - Boss - Marsh", }),	-- Lockout Tracking - Boss - Marsh
-			q(45105, { ["name"] = "Lord Raz'gor", }),	-- Lord Raz'gor
-			q(49191, { ["name"] = "Many More Intact Demon Eyes", }),	-- Many More Intact Demon Eyes
-			q(49190, { ["name"] = "More Intact Demon Eyes", }),	-- More Intact Demon Eyes
-			q(49031, { ["name"] = "Out With The Inquisitors",["_drop"] = { "g" }, }),	-- Out With The Inquisitors
-			q(48547, { ["name"] = "Quest", }),	-- Quest
-			q(48548, { ["name"] = "Quest", }),	-- Quest
-			q(47857, { ["name"] = "REUSE ME", }),	-- REUSE ME
-			q(49033, { ["name"] = "REUSE ME", }),	-- REUSE ME
-			q(48631, { ["name"] = "Securing Krokuun", }),	-- Securing Krokuun
-			q(48545, { ["name"] = "Strange Ecologies", }),	-- Strange Ecologies
-			q(49027, { ["name"] = "Targets of Opportunity: Terminus", ["_drop"] = { "g" }, }),	-- Targets of Opportunity: Terminus
-			q(47002, { ["name"] = "The Crown of the Triumvirate", }),	-- The Crown of the Triumvirate
-			q(47385, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(47386, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(47859, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(48340, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(48341, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(48342, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(48377, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(48379, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(48380, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(48392, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(48393, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(48396, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(48819, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(48906, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(47288, { ["name"] = "Valuable Fossils", }),	-- Valuable Fossils
-			q(48378, { ["name"] = "VO LINES FOR WQ", }),	-- VO LINES FOR WQ
-			q(48632, { ["name"] = "Void Extract", }),	-- Void Extract
-			q(40779, { ["name"] = "We Need Even More Power!", }),	-- We Need Even More Power!
-			q(49200, { ["name"] = "Yet More Intact Demon Eyes", }),	-- Yet More Intact Demon Eyes
+		expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ timeline = { CREATED_7_3_0 } }, {
+			q(49193, { name = "A Pile of Intact Demon Eyes", }),	-- A Pile of Intact Demon Eyes
+			q(49194, { name = "Another Pile of Intact Demon Eyes", }),	-- Another Pile of Intact Demon Eyes
+			q(45036, { name = "Asgrim the Dreadkiller", }),	-- Asgrim the Dreadkiller
+			q(46831, { name = "Broken Village", }),	-- Broken Village
+			q(48278, { name = "Fate of the Life-Binder", }),	-- Fate of the Life-Binder
+			q(45034, { name = "Fire the Cannons!", }),	-- Fire the Cannons!
+			q(49030, { name = "Fragments of the Abyss",_drop = { "g" }, }),	-- Fragments of the Abyss
+			q(48964, { name = "Immortal Ace", }),	-- Immortal Ace
+			q(49189, { name = "Intact Demon Eyes", }),	-- Intact Demon Eyes
+			q(49029, { name = "Invasion of Space",_drop = { "g" }, }),	-- Invasion of Space
+			q(45728, { name = "Legion Assault: Thunder Totem", }),	-- Legion Assault: Thunder Totem
+			q(47359, { name = "Legion Season 5, 6, and 7 - Gladiator's Weapons", }),	-- Legion Season 5, 6, and 7 - Gladiator's Weapons
+			q(47360, { name = "Legion Season 5, 6, and 7 - Gladiator's Weapons", }),	-- Legion Season 5, 6, and 7 - Gladiator's Weapons
+			q(48687, { name = "Lockout Tracking - Boss - Blood", }),	-- Lockout Tracking - Boss - Blood
+			q(48685, { name = "Lockout Tracking - Boss - Fire", }),	-- Lockout Tracking - Boss - Fire
+			q(48690, { name = "Lockout Tracking - Boss - Forest", }),	-- Lockout Tracking - Boss - Forest
+			q(48686, { name = "Lockout Tracking - Boss - Ice", }),	-- Lockout Tracking - Boss - Ice
+			q(48688, { name = "Lockout Tracking - Boss - Islands", }),	-- Lockout Tracking - Boss - Islands
+			q(48689, { name = "Lockout Tracking - Boss - Marsh", }),	-- Lockout Tracking - Boss - Marsh
+			q(45105, { name = "Lord Raz'gor", }),	-- Lord Raz'gor
+			q(49191, { name = "Many More Intact Demon Eyes", }),	-- Many More Intact Demon Eyes
+			q(49190, { name = "More Intact Demon Eyes", }),	-- More Intact Demon Eyes
+			q(49031, { name = "Out With The Inquisitors",_drop = { "g" }, }),	-- Out With The Inquisitors
+			q(48547, { name = "Quest", }),	-- Quest
+			q(48548, { name = "Quest", }),	-- Quest
+			q(47857, { name = "REUSE ME", }),	-- REUSE ME
+			q(49033, { name = "REUSE ME", }),	-- REUSE ME
+			q(48631, { name = "Securing Krokuun", }),	-- Securing Krokuun
+			q(48545, { name = "Strange Ecologies", }),	-- Strange Ecologies
+			q(49027, { name = "Targets of Opportunity: Terminus", _drop = { "g" }, }),	-- Targets of Opportunity: Terminus
+			q(47002, { name = "The Crown of the Triumvirate", }),	-- The Crown of the Triumvirate
+			q(47385, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(47386, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(47859, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(48340, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(48341, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(48342, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(48377, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(48379, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(48380, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(48392, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(48393, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(48396, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(48819, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(48906, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(47288, { name = "Valuable Fossils", }),	-- Valuable Fossils
+			q(48378, { name = "VO LINES FOR WQ", }),	-- VO LINES FOR WQ
+			q(48632, { name = "Void Extract", }),	-- Void Extract
+			q(40779, { name = "We Need Even More Power!", }),	-- We Need Even More Power!
+			q(49200, { name = "Yet More Intact Demon Eyes", }),	-- Yet More Intact Demon Eyes
 			-- Tools
 			-- 7.3.0.24484
 			-- 7.3.0.24492
@@ -3121,17 +3121,17 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 7.3.5
-		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_5 } }, {
-			q(50035, { ["name"] = "Bret Test - SQL", }),	-- Bret Test - SQL
-			q(50384, { ["name"] = "Doug Test - Completable Quest4", ["_drop"] = { "g" }, }),	-- Doug Test - Completable Quest4
-			q(50250, { ["name"] = "Posthaste", }),	-- Posthaste
-			q(49789, { ["name"] = "The Pledge", }),	-- The Pledge
-			q(48489, { ["name"] = "The Spires of Home", }),	-- The Spires of Home
-			q(49931, { ["name"] = "The Titan's Wrath", }),	-- The Titan's Wrath
+		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ timeline = { CREATED_7_3_5 } }, {
+			q(50035, { name = "Bret Test - SQL", }),	-- Bret Test - SQL
+			q(50384, { name = "Doug Test - Completable Quest4", _drop = { "g" }, }),	-- Doug Test - Completable Quest4
+			q(50250, { name = "Posthaste", }),	-- Posthaste
+			q(49789, { name = "The Pledge", }),	-- The Pledge
+			q(48489, { name = "The Spires of Home", }),	-- The Spires of Home
+			q(49931, { name = "The Titan's Wrath", }),	-- The Titan's Wrath
 			-- Tools
 			-- 7.3.5.25928
-			q(48068, { ["name"] = "A Cure for Ebonhorn", }),	-- A Cure for Ebonhorn
-			q(48435, { ["name"] = "The Spiritwalkers", }),	-- The Spiritwalkers
+			q(48068, { name = "A Cure for Ebonhorn", }),	-- A Cure for Ebonhorn
+			q(48435, { name = "The Spiritwalkers", }),	-- The Spiritwalkers
 			q(48490),	--
 			q(48491),	--
 			q(49659),	--
@@ -3166,51 +3166,51 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 
 		-- 7.x.x
 		n(P7xx, {
-			q(39286, { ["name"] = "A Gruesome Task", }),	-- A Gruesome Task
-			q(41044, { ["name"] = "Attack and Assail!", }),	-- Attack and Assail!
-			q(45631, { ["name"] = "Avocation of Antonidas", }),	-- Avocation of Antonidas
-			q(45801, { ["name"] = "Avocation of Antonidas", }),	-- Avocation of Antonidas
-			q(45802, { ["name"] = "Avocation of Antonidas", }),	-- Avocation of Antonidas
-			q(45803, { ["name"] = "Avocation of Antonidas", }),	-- Avocation of Antonidas
-			q(40393, { ["name"] = "Axes for Arrows", }),	-- Axes for Arrows
-			q(41007, { ["name"] = "Building a Better Boat", }),	-- Building a Better Boat
-			q(40763, { ["name"] = "Casual Redistribution", }),	-- Casual Redistribution
-			q(41005, { ["name"] = "Coastal Cleanup", }),	-- Coastal Cleanup
-			q(40656, { ["name"] = "Cutting the Crystal Flow", }),	-- Cutting the Crystal Flow
-			q(40394, { ["name"] = "Fish and Supplies", }),	-- Fish and Supplies
-			q(40741, { ["name"] = "In Need of Information", }),	-- In Need of Information
-			q(41004, { ["name"] = "Jandvik Craftsmanship", }),	-- Jandvik Craftsmanship
-			q(41043, { ["name"] = "Jandvik's First Sailor", }),	-- Jandvik's First Sailor
-			q(40674, { ["name"] = "Jars for Jandvik", }),	-- Jars for Jandvik
-			q(41000, { ["name"] = "King Forgalash's Burden", }),	-- King Forgalash's Burden
-			q(44200, { ["name"] = "Mathias Visit Not Active 05", }),	-- Mathias Visit Not Active 05
-			q(40346, { ["name"] = "Pilfered Provisions", }),	-- Pilfered Provisions
-			q(41846, { ["name"] = "Power in a Vessel", }),	-- Power in a Vessel
-			q(44482, { ["name"] = "Recruiting Ebon Knights", }),	-- Recruiting Ebon Knights
-			q(40659, { ["name"] = "Seeing Stars", }),	-- Seeing Stars
-			q(40670, { ["name"] = "Shattering the Sashj'tar", ["_drop"] = { "g" }, }),	-- Shattering the Sashj'tar
-			q(45112, { ["name"] = "Signs of Madness", }),	-- Signs of Madness
-			q(40396, { ["name"] = "That's the Spirit", }),	-- That's the Spirit
-			q(42143, { ["name"] = "The Champion's Call [WIP]", }),	-- The Champion's Call [WIP]
-			q(40742, { ["name"] = "The Elusive Three", }),	-- The Elusive Three
-			q(45043, { ["name"] = "The Glowing Bloodthistle Petal", }),	-- The Glowing Bloodthistle Petal
-			q(41684, { ["name"] = "The Necrodark", }),	-- The Necrodark
-			q(48394, { ["name"] = "The Necrodark", }),	-- The Necrodark
-			q(41104, { ["name"] = "The New Jarl", }),	-- The New Jarl
-			q(41839, { ["name"] = "The Taken", }),	-- The Taken
-			q(40372, { ["name"] = "The Tidemistress", }),	-- The Tidemistress
-			q(41845, { ["name"] = "The Tribes Must Be Warned", }),	-- The Tribes Must Be Warned
-			q(45045, { ["name"] = "The Vial of Ancient Mana", }),	-- The Vial of Ancient Mana
-			q(43215, { ["name"] = "Tracking Down the Scepter", }),	-- Tracking Down the Scepter
-			q(41883, { ["name"] = "Whispers from the Shadows", }),	-- Whispers from the Shadows
-			q(47811, { ["name"] = "Whispers from the Shadows", }),	-- Whispers from the Shadows
-			q(48395, { ["name"] = "Whispers from the Shadows", }),	-- Whispers from the Shadows
+			q(39286, { name = "A Gruesome Task", }),	-- A Gruesome Task
+			q(41044, { name = "Attack and Assail!", }),	-- Attack and Assail!
+			q(45631, { name = "Avocation of Antonidas", }),	-- Avocation of Antonidas
+			q(45801, { name = "Avocation of Antonidas", }),	-- Avocation of Antonidas
+			q(45802, { name = "Avocation of Antonidas", }),	-- Avocation of Antonidas
+			q(45803, { name = "Avocation of Antonidas", }),	-- Avocation of Antonidas
+			q(40393, { name = "Axes for Arrows", }),	-- Axes for Arrows
+			q(41007, { name = "Building a Better Boat", }),	-- Building a Better Boat
+			q(40763, { name = "Casual Redistribution", }),	-- Casual Redistribution
+			q(41005, { name = "Coastal Cleanup", }),	-- Coastal Cleanup
+			q(40656, { name = "Cutting the Crystal Flow", }),	-- Cutting the Crystal Flow
+			q(40394, { name = "Fish and Supplies", }),	-- Fish and Supplies
+			q(40741, { name = "In Need of Information", }),	-- In Need of Information
+			q(41004, { name = "Jandvik Craftsmanship", }),	-- Jandvik Craftsmanship
+			q(41043, { name = "Jandvik's First Sailor", }),	-- Jandvik's First Sailor
+			q(40674, { name = "Jars for Jandvik", }),	-- Jars for Jandvik
+			q(41000, { name = "King Forgalash's Burden", }),	-- King Forgalash's Burden
+			q(44200, { name = "Mathias Visit Not Active 05", }),	-- Mathias Visit Not Active 05
+			q(40346, { name = "Pilfered Provisions", }),	-- Pilfered Provisions
+			q(41846, { name = "Power in a Vessel", }),	-- Power in a Vessel
+			q(44482, { name = "Recruiting Ebon Knights", }),	-- Recruiting Ebon Knights
+			q(40659, { name = "Seeing Stars", }),	-- Seeing Stars
+			q(40670, { name = "Shattering the Sashj'tar", _drop = { "g" }, }),	-- Shattering the Sashj'tar
+			q(45112, { name = "Signs of Madness", }),	-- Signs of Madness
+			q(40396, { name = "That's the Spirit", }),	-- That's the Spirit
+			q(42143, { name = "The Champion's Call [WIP]", }),	-- The Champion's Call [WIP]
+			q(40742, { name = "The Elusive Three", }),	-- The Elusive Three
+			q(45043, { name = "The Glowing Bloodthistle Petal", }),	-- The Glowing Bloodthistle Petal
+			q(41684, { name = "The Necrodark", }),	-- The Necrodark
+			q(48394, { name = "The Necrodark", }),	-- The Necrodark
+			q(41104, { name = "The New Jarl", }),	-- The New Jarl
+			q(41839, { name = "The Taken", }),	-- The Taken
+			q(40372, { name = "The Tidemistress", }),	-- The Tidemistress
+			q(41845, { name = "The Tribes Must Be Warned", }),	-- The Tribes Must Be Warned
+			q(45045, { name = "The Vial of Ancient Mana", }),	-- The Vial of Ancient Mana
+			q(43215, { name = "Tracking Down the Scepter", }),	-- Tracking Down the Scepter
+			q(41883, { name = "Whispers from the Shadows", }),	-- Whispers from the Shadows
+			q(47811, { name = "Whispers from the Shadows", }),	-- Whispers from the Shadows
+			q(48395, { name = "Whispers from the Shadows", }),	-- Whispers from the Shadows
 		}),
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
-			q(50882,{ ["_drop"] = { "g" },}),	-- All to Ash
+		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+			q(50882,{ _drop = { "g" },}),	-- All to Ash
 			q(52220),	-- Dragon Attack
 			q(49675),	--
 			q(47860),	-- A Rude Awakening
@@ -3235,9 +3235,9 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(48990),	-- The Leader Calls
 			q(48838),	-- Water Reclamation
 			q(54755, {	-- Not My Table
-				["sourceQuests"] = { 54106 },	-- Tracking Tipoff
-				["maps"] = { REDRIDGE_MOUNTAINS },
-				["races"] = HORDE_ONLY,
+				sourceQuests = { 54106 },	-- Tracking Tipoff
+				maps = { REDRIDGE_MOUNTAINS },
+				races = HORDE_ONLY,
 			}),
 			q(56110),	-- A Defender Emerges
 			q(56112),	-- A Royal Awakening
@@ -3250,7 +3250,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(49732),	-- Evacuate!
 			q(51750),	-- Field Promotions
 			q(51883, {	-- Grizz's Lunch
-				["provider"] = { "i", 160897 },	-- Grizz's Lunchbox
+				provider = { "i", 160897 },	-- Grizz's Lunchbox
 			}),
 			q(50060),	-- Honey, Slimes!
 			q(51557),	-- Irontide Warning
@@ -3268,746 +3268,746 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(51708),	-- Warfang Hold Quest Template
 			-- Unsorted
 			q(47246, {	-- Remnants of the Damned
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 20,
+				description = "Area: |cFFf09f26Nazmir|r",
+				races = HORDE_ONLY,
+				lvl = 20,
 			}),
 			q(47506, {
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 255,
+				races = ALLIANCE_ONLY,
+				lvl = 255,
 			}),
 			q(47529, {
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 20,
+				description = "Area: |cFFf09f26Nazmir|r",
+				races = HORDE_ONLY,
+				lvl = 20,
 			}),
 			q(47588, {
-				["description"] = "Area: |cFFf09f26Zuldazar|r",
-				["lvl"] = 10,
+				description = "Area: |cFFf09f26Zuldazar|r",
+				lvl = 10,
 			}),
 			q(47695, {
-				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
+				description = "Area: |cFFf09f26Tiragarde Sound|r",
+				races = ALLIANCE_ONLY,
+				lvl = 10,
 			}),
 			q(47894, {
-				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
+				description = "Area: |cFFf09f26Tiragarde Sound|r",
+				races = ALLIANCE_ONLY,
+				lvl = 10,
 			}),
 			q(48023, {	-- Orders Received
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 20,
-				["groups"] = {
+				description = "Area: |cFFf09f26Nazmir|r",
+				races = HORDE_ONLY,
+				lvl = 20,
+				groups = {
 					i(151928),	-- Explicit Orders (QI!)
 				},
 			}),
 			q(48086, {
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 20,
+				description = "Area: |cFFf09f26Nazmir|r",
+				races = HORDE_ONLY,
+				lvl = 20,
 			}),
 			q(48104, {
-				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
+				description = "Area: |cFFf09f26Tiragarde Sound|r",
+				races = ALLIANCE_ONLY,
+				lvl = 10,
 			}),
 			q(48176, {
-				["description"] = "Area: |cFFf09f26Zuldazar|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 10,
+				description = "Area: |cFFf09f26Zuldazar|r",
+				races = HORDE_ONLY,
+				lvl = 10,
 			}),
 			q(48237, {
-				["description"] = "Type: |cFFf09f26Account|r",
+				description = "Type: |cFFf09f26Account|r",
 			}),
 			q(48515, {	-- Silver Blades
-				["description"] = "Area: |cFFf09f26Drustvar|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 20,
-				["groups"] = {
+				description = "Area: |cFFf09f26Drustvar|r",
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
 					i(155906),	-- Tarnished Silver Blade (QI!)
 				},
 			}),
 			q(48604, {	-- Home Again, Home Again
-				["description"] = "Area: |cFFf09f26Drustvar|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 20,
-				["groups"] = {
+				description = "Area: |cFFf09f26Drustvar|r",
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
 					i(152629),	-- Crate of Non-Tainted Meat Products (QI!)
 				},
 			}),
 			q(48653, {	-- A Bejeweled Prison
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["provider"] = { "i", 152655 },	-- Restored Eye of Obsidian (QS!)
-				["cost"] = {{ "i", 152656, 5 },},	-- Eye of Obsidian Fragment
-				["races"] = HORDE_ONLY,
-				["lvl"] = 20,
+				description = "Area: |cFFf09f26Nazmir|r",
+				provider = { "i", 152655 },	-- Restored Eye of Obsidian (QS!)
+				cost = {{ "i", 152656, 5 },},	-- Eye of Obsidian Fragment
+				races = HORDE_ONLY,
+				lvl = 20,
 			}),
 			q(48759, {
-				["description"] = "Category: |cFFf09f26Herbalism|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Herbalism|r",
+				lvl = 10,
 			}),
 			q(48760, {
-				["description"] = "Category: |cFFf09f26Herbalism|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Herbalism|r",
+				lvl = 10,
 			}),
 			q(48765, {
-				["description"] = "Category: |cFFf09f26Herbalism|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Herbalism|r",
+				lvl = 10,
 			}),
 			q(48766, {
-				["description"] = "Category: |cFFf09f26Herbalism|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Herbalism|r",
+				lvl = 10,
 			}),
 			q(48771, {
-				["description"] = "Category: |cFFf09f26Herbalism|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Herbalism|r",
+				lvl = 10,
 			}),
 			q(48772, {
-				["description"] = "Category: |cFFf09f26Herbalism|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Herbalism|r",
+				lvl = 10,
 			}),
 			q(48808, {	-- Thesis Statement
-				["description"] = "Area: |cFFf09f26Drustvar|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 20,
-				["groups"] = {
+				description = "Area: |cFFf09f26Drustvar|r",
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
 					i(152705),	-- Thesis Paper Page (QI!)
 				},
 			}),
 			q(48905, {	-- Unappreciated Scrolls
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
-				["groups"] = {
+				description = "Area: |cFFf09f26Nazmir|r",
+				lvl = 20,
+				groups = {
 					i(152864),	-- Tortollan Scroll (QI!)
 				},
 			}),
 			q(48913, {
-				["description"] = "Category: |cFFf09f26Mining|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Mining|r",
+				lvl = 10,
 			}),
 			q(48914, {
-				["description"] = "Category: |cFFf09f26Mining|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Mining|r",
+				lvl = 10,
 			}),
 			q(48915, {
-				["description"] = "Category: |cFFf09f26Mining|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Mining|r",
+				lvl = 10,
 			}),
 			q(48916, {
-				["description"] = "Category: |cFFf09f26Mining|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Mining|r",
+				lvl = 10,
 			}),
 			q(48917, {
-				["description"] = "Category: |cFFf09f26Mining|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Mining|r",
+				lvl = 10,
 			}),
 			q(48918, {
-				["description"] = "Category: |cFFf09f26Mining|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Mining|r",
+				lvl = 10,
 			}),
 			q(48919, {
-				["description"] = "Category: |cFFf09f26Mining|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Mining|r",
+				lvl = 10,
 			}),
 			q(48920, {
-				["description"] = "Category: |cFFf09f26Mining|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Mining|r",
+				lvl = 10,
 			}),
 			q(48921, {
-				["description"] = "Category: |cFFf09f26Mining|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Mining|r",
+				lvl = 10,
 			}),
 			q(48922, {
-				["description"] = "Category: |cFFf09f26Mining|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Mining|r",
+				lvl = 10,
 			}),
 			q(48923, {
-				["description"] = "Category: |cFFf09f26Mining|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Mining|r",
+				lvl = 10,
 			}),
 			q(48924, {
-				["description"] = "Category: |cFFf09f26Mining|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Mining|r",
+				lvl = 10,
 			}),
 			q(48925, {
-				["description"] = "Category: |cFFf09f26Mining|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Mining|r",
+				lvl = 10,
 			}),
 			q(48926, {
-				["description"] = "Category: |cFFf09f26Mining|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Mining|r",
+				lvl = 10,
 			}),
 			q(48927, {
-				["description"] = "Category: |cFFf09f26Mining|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Mining|r",
+				lvl = 10,
 			}),
 			q(48949, {	-- Weeds of the Mire
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 20,
-				["groups"] = {
+				description = "Area: |cFFf09f26Nazmir|r",
+				races = HORDE_ONLY,
+				lvl = 20,
+				groups = {
 					i(152895),	-- Sprig of Graveweed (QI!)
 				},
 			}),
 			q(48950, {
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 20,
+				description = "Area: |cFFf09f26Nazmir|r",
+				races = HORDE_ONLY,
+				lvl = 20,
 			}),
 			q(49073, {	-- Ritualistic Denial
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 20,
-				["groups"] = {
+				description = "Area: |cFFf09f26Nazmir|r",
+				races = HORDE_ONLY,
+				lvl = 20,
+				groups = {
 					i(153025),	-- Scroll of Purging (QI!)
 				},
 			}),
 			q(49123, {
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 20,
+				description = "Area: |cFFf09f26Nazmir|r",
+				races = HORDE_ONLY,
+				lvl = 20,
 			}),
 			q(49124, {	-- Tortollan Rescue
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 20,
-				["groups"] = {
+				description = "Area: |cFFf09f26Nazmir|r",
+				races = HORDE_ONLY,
+				lvl = 20,
+				groups = {
 					i(153049),	-- Scroll of Purging (QI!)
 				},
 			}),
 			q(49375, {
-				["description"] = "Area: |cFFf09f26Nazmir|r",
+				description = "Area: |cFFf09f26Nazmir|r",
 			}),
 			q(49376, {
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 20,
+				description = "Area: |cFFf09f26Nazmir|r",
+				races = HORDE_ONLY,
+				lvl = 20,
 			}),
 			q(49381, {
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 20,
+				description = "Area: |cFFf09f26Nazmir|r",
+				races = HORDE_ONLY,
+				lvl = 20,
 			}),
 			q(49408, {
-				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
+				description = "Area: |cFFf09f26Tiragarde Sound|r",
+				races = ALLIANCE_ONLY,
+				lvl = 10,
 			}),
 			q(49449, {
-				["description"] = "Category: |cFFf09f26Herbalism|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Herbalism|r",
+				lvl = 10,
 			}),
 			q(49455, {
-				["description"] = "Category: |cFFf09f26Herbalism|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Herbalism|r",
+				lvl = 10,
 			}),
 			q(49456, {
-				["description"] = "Category: |cFFf09f26Herbalism|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Herbalism|r",
+				lvl = 10,
 			}),
 			q(49457, {
-				["description"] = "Category: |cFFf09f26Herbalism|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Herbalism|r",
+				lvl = 10,
 			}),
 			q(49458, {
-				["description"] = "Category: |cFFf09f26Herbalism|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Herbalism|r",
+				lvl = 10,
 			}),
 			q(49459, {
-				["description"] = "Category: |cFFf09f26Herbalism|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Herbalism|r",
+				lvl = 10,
 			}),
 			q(49460, {
-				["description"] = "Category: |cFFf09f26Herbalism|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Herbalism|r",
+				lvl = 10,
 			}),
 			q(49461, {
-				["description"] = "Category: |cFFf09f26Herbalism|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Herbalism|r",
+				lvl = 10,
 			}),
 			q(49462, {
-				["description"] = "Category: |cFFf09f26Herbalism|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Herbalism|r",
+				lvl = 10,
 			}),
 			q(49464, {	-- Saurolisk Tails
-				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
-				["groups"] = {
+				description = "Area: |cFFf09f26Tiragarde Sound|r",
+				races = ALLIANCE_ONLY,
+				lvl = 10,
+				groups = {
 					i(155663),	-- Saurolisk Tail (QI!)
 				},
 			}),
 			q(49578, {
-				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Jewelcrafting|r",
+				races = ALLIANCE_ONLY,
+				lvl = 10,
 			}),
 			q(49579, {
-				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Jewelcrafting|r",
+				races = ALLIANCE_ONLY,
+				lvl = 10,
 			}),
 			q(49580, {
-				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Jewelcrafting|r",
+				races = ALLIANCE_ONLY,
+				lvl = 10,
 			}),
 			q(49590, {
-				["description"] = "Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Jewelcrafting|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Jewelcrafting|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(49591, {
-				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Category: |cFFf09f26Jewelcrafting|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(49592, {
-				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Category: |cFFf09f26Jewelcrafting|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(49593, {
-				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Jewelcrafting|r",
+				races = HORDE_ONLY,
+				lvl = 10,
 			}),
 			q(49594, {
-				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Jewelcrafting|r",
+				races = HORDE_ONLY,
+				lvl = 10,
 			}),
 			q(49595, {
-				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Jewelcrafting|r",
+				races = HORDE_ONLY,
+				lvl = 10,
 			}),
 			q(49596, {
-				["description"] = "Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Jewelcrafting|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Jewelcrafting|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(49597, {	-- REUSE ME
-				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
-				-- ["groups"] = {
+				description = "Category: |cFFf09f26Jewelcrafting|r",
+				races = HORDE_ONLY,
+				lvl = 50,
+				-- groups = {
 				-- 	i(155830),	-- Runic Core (QI!)
 				-- },
 			}),
 			q(49598, {
-				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Category: |cFFf09f26Jewelcrafting|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(49661, {	-- Locally Sourced Eggs
-				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
-				["groups"] = {
+				description = "Area: |cFFf09f26Tiragarde Sound|r",
+				races = ALLIANCE_ONLY,
+				lvl = 10,
+				groups = {
 					i(155660),	-- Coilscale Egg (QI!)
 				},
 			}),
 			q(49875, {
-				["description"] = "Category: |cFFf09f26Inscription|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Inscription|r",
+				races = ALLIANCE_ONLY,
+				lvl = 10,
 			}),
 			q(49880, {
-				["description"] = "Category: |cFFf09f26Inscription|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Inscription|r",
+				races = ALLIANCE_ONLY,
+				lvl = 10,
 			}),
 			q(49945, {
-				["description"] = "Category: |cFFf09f26Inscription|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Inscription|r",
+				races = HORDE_ONLY,
+				lvl = 10,
 			}),
 			q(49947, {
-				["description"] = "Category: |cFFf09f26Inscription|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Inscription|r",
+				races = HORDE_ONLY,
+				lvl = 10,
 			}),
 			q(49948, {
-				["description"] = "Category: |cFFf09f26Inscription|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Inscription|r",
+				races = HORDE_ONLY,
+				lvl = 10,
 			}),
 			q(49952, {
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 20,
+				description = "Area: |cFFf09f26Nazmir|r",
+				races = HORDE_ONLY,
+				lvl = 20,
 			}),
 			q(49991, {
-				["description"] = "Area: |cFFf09f26Zuldazar|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 10,
+				description = "Area: |cFFf09f26Zuldazar|r",
+				races = HORDE_ONLY,
+				lvl = 10,
 			}),
 			q(50084, {
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 20,
+				description = "Area: |cFFf09f26Nazmir|r",
+				races = HORDE_ONLY,
+				lvl = 20,
 			}),
 			q(50273, {	-- Atal'Dazar: Locking Horns
-				["description"] = "Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Blacksmithing|r",
-				["lvl"] = 10,
-				["groups"] = {
+				description = "Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Blacksmithing|r",
+				lvl = 10,
+				groups = {
 					i(156920),	-- The Golden Horn of Rezan (QI!)
 				},
 			}),
 			q(50321, {
-				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 20,
+				description = "Area: |cFFf09f26Nazmir|r",
+				races = HORDE_ONLY,
+				lvl = 20,
 			}),
 			q(50326, {
-				["description"] = "Category: |cFFf09f26Warfronts|r",
-				["lvl"] = 50,
-				["groups"] = {
+				description = "Category: |cFFf09f26Warfronts|r",
+				lvl = 50,
+				groups = {
 					i(150733, {	-- Scroll of Town Portal
-						["b"] = 1,
-						["q"] = 1,
-						["spellID"] = 259731,
+						b = 1,
+						q = 1,
+						spellID = 259731,
 					}),
 				},
 			}),
 			q(50350, {
-				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
+				description = "Area: |cFFf09f26Tiragarde Sound|r",
+				races = ALLIANCE_ONLY,
+				lvl = 10,
 			}),
 			q(50375, {
-				["description"] = "Area: |cFFf09f26Zuldazar|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 10,
+				description = "Area: |cFFf09f26Zuldazar|r",
+				races = HORDE_ONLY,
+				lvl = 10,
 			}),
 			q(50377, {
-				["description"] = "Area: |cFFf09f26Zuldazar|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 10,
+				description = "Area: |cFFf09f26Zuldazar|r",
+				races = HORDE_ONLY,
+				lvl = 10,
 			}),
 			q(50520, {
-				["lvl"] = 30,
+				lvl = 30,
 			}),
 			q(50632, {	-- Battlefield Scavenging
-				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
-				["groups"] = {
+				description = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
+				races = HORDE_ONLY,
+				lvl = 50,
+				groups = {
 					i(158172),	-- Circle of Elements Supplies (QI!)
 					i(163125),	-- High Perch Supplies (QI!)
 					i(163126),	-- Newstead Supplies (QI!)
 					i(158174, {	-- Battleworn Armor Kit
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 2,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 2,
 					}),
 					i(162143, {	-- Potion of Restoration
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 2,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 2,
 					}),
 					i(158179, {	-- Potion of Combat Acumen
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 2,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 2,
 					}),
 				},
 			}),
 			q(50670, {
 			}),
 			q(50709, {
-				["description"] = "Category: |cFFf09f26Warfronts|r",
-				["races"] = HORDE_ONLY,
-				["isDaily"] = 1,
-				["lvl"] = 50,
-				["groups"] = {
+				description = "Category: |cFFf09f26Warfronts|r",
+				races = HORDE_ONLY,
+				isDaily = 1,
+				lvl = 50,
+				groups = {
 					i(158326, {	-- Makeshift Explosives
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 2,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 2,
 					}),
 				},
 			}),
 			q(50764, {
-				["description"] = "Category: |cFFf09f26Warfronts|r",
-				["races"] = HORDE_ONLY,
-				["isDaily"] = 1,
-				["lvl"] = 50,
-				["groups"] = {
+				description = "Category: |cFFf09f26Warfronts|r",
+				races = HORDE_ONLY,
+				isDaily = 1,
+				lvl = 50,
+				groups = {
 					i(158709, {	-- Refurbished Shredder
-						["b"] = 1,
-						["filterID"] = TOYS,
-						["q"] = 3,
+						b = 1,
+						filterID = TOYS,
+						q = 3,
 					}),
 				},
 			}),
 			q(51052, {
-				["races"] = ALLIANCE_ONLY,
-				["repeatable"] = 1,
-				["lvl"] = 50,
-				-- ["groups"] = {
+				races = ALLIANCE_ONLY,
+				repeatable = 1,
+				lvl = 50,
+				-- groups = {
 				-- 	i(151557, {	-- Champion's Strongbox
-				-- 		["b"] = 1,
-				-- 		["q"] = 2,
+				-- 		b = 1,
+				-- 		q = 2,
 				-- 	}),
 				-- },
 			}),
 			q(51068, {	-- Raiding Their Stores
-				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
-				["groups"] = {
+				description = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
+				races = HORDE_ONLY,
+				lvl = 50,
+				groups = {
 					i(159719),	-- Basket of Eggs (QI!)
 					i(159718),	-- Colossal Cheese Wheel (QI!)
 					i(159720),	-- Keg of Applebrew (QI!)
 					i(159717),	-- Roast Boar (QI!)
 					i(159723, {	-- Chunk of Boar Meat
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 1,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 1,
 					}),
 					i(159726, {	-- Baked Egg
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 1,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 1,
 					}),
 					i(159724, {	-- Slice of Cheese
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 1,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 1,
 					}),
 					i(159727, {	-- Flagon of Applebrew
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 1,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 1,
 					}),
 				},
 			}),
 			q(51070, {	-- Raiding the Boulderfist
-				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
-				["groups"] = {
+				description = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
+				races = HORDE_ONLY,
+				lvl = 50,
+				groups = {
 					i(159721),	-- Unprocessed Iron Ore (QI!)
 				},
 			}),
 			q(51086, {	-- Break's Over (QI!)
-				["description"] = "Category: |cFFf09f26Warfronts|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
-				["groups"] = {
+				description = "Category: |cFFf09f26Warfronts|r",
+				races = HORDE_ONLY,
+				lvl = 50,
+				groups = {
 					i(159744),	-- Overseer's Blackjack (QI!)
 				},
 			}),
 			q(51130, {
-				["races"] = HORDE_ONLY,
-				["repeatable"] = 1,
-				["lvl"] = 50,
-				-- ["groups"] = {
+				races = HORDE_ONLY,
+				repeatable = 1,
+				lvl = 50,
+				-- groups = {
 				-- 	i(151557, {	-- Champion's Strongbox
-				-- 		["b"] = 1,
-				-- 		["q"] = 2,
+				-- 		b = 1,
+				-- 		q = 2,
 				-- 	}),
 				-- },
 			}),
 			q(51344, {	-- To Matters at Hand
-				["description"] = "Area: |cFFf09f26Hall of Communion|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 10,
-				-- ["groups"] = {
+				description = "Area: |cFFf09f26Hall of Communion|r",
+				races = HORDE_ONLY,
+				lvl = 10,
+				-- groups = {
 				-- 	i(159671),	-- Silithus Portal Stone (QI!)
 				-- },
 			}),
 			q(51425, {
-				["description"] = "Category: |cFFf09f26Warfronts|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
-				["groups"] = {
+				description = "Category: |cFFf09f26Warfronts|r",
+				races = ALLIANCE_ONLY,
+				lvl = 50,
+				groups = {
 					i(160219, {	-- Scroll of Town Portal
-						["b"] = 1,
-						["q"] = 1,
-						["spellID"] = 278212,
+						b = 1,
+						q = 1,
+						spellID = 278212,
 					}),
 				},
 			}),
 			q(51535, {
-				["description"] = "Category: |cFFf09f26Mag'har Orc|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Category: |cFFf09f26Mag'har Orc|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(51567, {
-				["description"] = "Category: |cFFf09f26Island Expeditions|r",
-				["lvl"] = 10,
+				description = "Category: |cFFf09f26Island Expeditions|r",
+				lvl = 10,
 			}),
 			q(51703, {
-				["lvl"] = 10,
+				lvl = 10,
 			}),
 			q(51704, {
-				["lvl"] = 10,
+				lvl = 10,
 			}),
 			q(52012, {
-				["description"] = "Category: |cFFf09f26Horde War Campaign|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Category: |cFFf09f26Horde War Campaign|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(52440, {
-				["description"] = "Category: |cFFf09f26Warfronts|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
+				description = "Category: |cFFf09f26Warfronts|r",
+				races = ALLIANCE_ONLY,
+				lvl = 50,
 			}),
 			q(52467, {	-- Battlefield Scavenging
-				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
-				["groups"] = {
+				description = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
+				races = ALLIANCE_ONLY,
+				lvl = 50,
+				groups = {
 					i(162031),	-- Circle of Elements Supplies (QI!)
 					i(163129),	-- High Perch Supplies (QI!)
 					i(163130),	-- Newstead Supplies (QI!)
 					i(162140, {	-- Battleworn Armor Kit
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 2,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 2,
 					}),
 					i(162142, {	-- Potion of Restoration
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 2,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 2,
 					}),
 					i(162141, {	-- Potion of Combat Acumen
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 2,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 2,
 					}),
 				},
 			}),
 			q(52468, {	-- Raiding Their Stores
-				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
-				["groups"] = {
+				description = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
+				races = ALLIANCE_ONLY,
+				lvl = 50,
+				groups = {
 					i(159719),	-- Basket of Eggs (QI!)
 					i(159718),	-- Colossal Cheese Wheel (QI!)
 					i(159720),	-- Keg of Applebrew (QI!)
 					i(159717),	-- Roast Boar (QI!)
 					i(163988, {	-- Chunk of Boar Meat
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 1,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 1,
 					}),
 					i(163990, {	-- Baked Egg
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 1,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 1,
 					}),
 					i(163989, {	-- Slice of Cheese
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 1,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 1,
 					}),
 					i(163991, {	-- Flagon of Applebrew
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 1,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 1,
 					}),
 				},
 			}),
 			q(52497, {	-- Raiding the Boulderfist
-				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
-				["groups"] = {
+				description = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
+				races = ALLIANCE_ONLY,
+				lvl = 50,
+				groups = {
 					i(159721),	-- Unprocessed Iron Ore (QI!)
 				},
 			}),
 			q(52991, {	-- [REMOVED]
-				["description"] = "Category: |cFFf09f26Hallow's End|r",
-				["lvl"] = 10,
-				["groups"] = {
+				description = "Category: |cFFf09f26Hallow's End|r",
+				lvl = 10,
+				groups = {
 					i(162972),	-- Bloody Apple (QI!)
 				},
 			}),
 			q(53080, {
-				["description"] = "Category: |cFFf09f26Warfronts|r",
-				["races"] = ALLIANCE_ONLY,
-				["isDaily"] = 1,
-				["lvl"] = 50,
-				["groups"] = {
+				description = "Category: |cFFf09f26Warfronts|r",
+				races = ALLIANCE_ONLY,
+				isDaily = 1,
+				lvl = 50,
+				groups = {
 					i(163219, {	-- Repurposed Explosive Device
-						["b"] = 1,
-						["filterID"] = CONSUMABLES,
-						["q"] = 2,
+						b = 1,
+						filterID = CONSUMABLES,
+						q = 2,
 					}),
 				},
 			}),
 			q(53146, {
-				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Arathi Highlands|r",
+				races = ALLIANCE_ONLY,
+				lvl = 50,
 			}),
 			q(53148, {
-				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Arathi Highlands|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(53149, {
-				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Arathi Highlands|r",
+				races = ALLIANCE_ONLY,
+				lvl = 50,
 			}),
 			q(53150, {
-				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Arathi Highlands|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(53162, {
-				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Arathi Highlands|r",
+				races = ALLIANCE_ONLY,
+				lvl = 50,
 			}),
 			q(53173, {
-				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Arathi Highlands|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(53179, {
-				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Arathi Highlands|r",
+				races = ALLIANCE_ONLY,
+				lvl = 50,
 			}),
 			q(53190, {
-				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Arathi Highlands|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(53192, {
-				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Arathi Highlands|r",
+				races = ALLIANCE_ONLY,
+				lvl = 50,
 			}),
 			q(53193, {
-				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Arathi Highlands|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(53199, {
-				["description"] = "Area: |cFFf09f26Zuldazar|r",
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Zuldazar|r",
+				lvl = 50,
 			}),
 			q(53358, {
-				["lvl"] = 10,
+				lvl = 10,
 			}),
 			q(53413, {
-				["description"] = "Category: |cFFf09f26Warfronts|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
+				description = "Category: |cFFf09f26Warfronts|r",
+				races = ALLIANCE_ONLY,
+				lvl = 50,
 			}),
 			q(53415, {
-				["description"] = "Category: |cFFf09f26Warfronts|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Category: |cFFf09f26Warfronts|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			-- Tools
 			-- 8.0.1.25902
@@ -4582,23 +4582,23 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(53271),	-- Blooming Star Moss
 			q(53281),	-- Winter's Kiss Cluster
 			q(53283, {	-- Flourishing Sea Stalks
-				-- ["groups"] = {
+				-- groups = {
 				-- 	i(163588),	-- Flourishing Sea Stalk (QI!)
 				-- },
 			}),
 			q(53284, {	-- Flourishing Riverbud
-				-- ["groups"] = {
+				-- groups = {
 				-- 	i(163595),	-- Flourishing Riverbud (QI!)
 				-- },
 			}),
 			q(53297, {	-- Flourishing Riverbud
-				-- ["groups"] = {
+				-- groups = {
 				-- 	i(163595),	-- Flourishing Riverbud (QI!)
 				-- },
 			}),
 			q(53299),	-- Blooming Siren's Sting
 			q(53302, {	-- Flourishing Riverbud
-				-- ["groups"] = {
+				-- groups = {
 				-- 	i(163595),	-- Flourishing Riverbud (QI!)
 				-- },
 			}),
@@ -4610,15 +4610,15 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			-- 8.0.1.26707
 			q(52048),	--
 			q(53319, {	-- Our Sacred Forest
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 10,
-				["groups"] = {
+				races = ALLIANCE_ONLY,
+				lvl = 10,
+				groups = {
 					i(163631),	-- Sacred Timber (QI!)
 				},
 			}),
 			q(53320, {	-- Ours For the Taking
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				races = HORDE_ONLY,
+				groups = {
 					i(163631),	-- Sacred Timber (QI!)
 				},
 			}),
@@ -4688,17 +4688,17 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = { CREATED_8_1_0 } }, {
 			-- Unsorted
 			q(53987, {
-				["description"] = "Category: |cFFf09f26Horde War Campaign|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Category: |cFFf09f26Horde War Campaign|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(54210, {
-				["description"] = "Category: |cFFf09f26Alliance War Campaign|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
+				description = "Category: |cFFf09f26Alliance War Campaign|r",
+				races = ALLIANCE_ONLY,
+				lvl = 50,
 			}),
 			q(54748, {
 			}),
@@ -4797,31 +4797,31 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_8_1_5 } }, {
+		expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ timeline = { CREATED_8_1_5 } }, {
 			-- Unsorted
 			q(53787, {
-				["description"] = "Category: |cFFf09f26Engineering|r",
-				["lvl"] = 50,
+				description = "Category: |cFFf09f26Engineering|r",
+				lvl = 50,
 			}),
 			q(53943, {
-				["description"] = "Category: |cFFf09f26Engineering|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
+				description = "Category: |cFFf09f26Engineering|r",
+				races = ALLIANCE_ONLY,
+				lvl = 50,
 			}),
 			q(53953, {
-				["description"] = "Category: |cFFf09f26Brawler's Guild|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 60,
+				description = "Category: |cFFf09f26Brawler's Guild|r",
+				races = HORDE_ONLY,
+				lvl = 60,
 			}),
 			q(54957, {
-				["description"] = "Area: |cFFf09f26Trueshot Lodge|r",
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Trueshot Lodge|r",
+				lvl = 50,
 			}),
 			q(55667, {
-				["lvl"] = 50,
+				lvl = 50,
 			}),
 			q(55668, {
-				["lvl"] = 50,
+				lvl = 50,
 			}),
 			-- Tools
 			-- 8.1.5.28938
@@ -4874,7 +4874,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
 			q(54048),	-- To Kill A Warden
 			q(56836),	-- The Eternal Palace: Master's Call
 			q(56837),	-- The Eternal Palace: Master's Call
@@ -4890,233 +4890,233 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(56129),	-- Heroic: Battle for Stromgarde
 			q(56206),	-- Heroic: Battle for Stromgarde
 			q(56164, {	-- Desperate Need (A)
-				["sourceQuest"] = 56156,	-- A Tempered Blade
-				["provider"] = { "n", 151763 },	-- Isla
-				["coord"] = { 37.7, 55.3, NAZJATAR },
-				["races"] = ALLIANCE_ONLY,
+				sourceQuest = 56156,	-- A Tempered Blade
+				provider = { "n", 151763 },	-- Isla
+				coord = { 37.7, 55.3, NAZJATAR },
+				races = ALLIANCE_ONLY,
 			}),
 			q(56176, {	-- Desperate Need (H)
-				["sourceQuest"] = 55500,	-- Save a Friend
-				["provider"] = { "n", 154208 },	-- Jonah Lowtide
-				["coord"] = { 50.5, 66.2, NAZJATAR },
-				["races"] = HORDE_ONLY,
+				sourceQuest = 55500,	-- Save a Friend
+				provider = { "n", 154208 },	-- Jonah Lowtide
+				coord = { 50.5, 66.2, NAZJATAR },
+				races = HORDE_ONLY,
 			}),
 			q(56166, {	-- The Needs of the People
-				["sourceQuest"] = 56164,	-- Desperate Need
-				["provider"] = { "n", 151763 },	-- Isla
-				["coord"] = { 37.7, 55.3, NAZJATAR },
-				["races"] = ALLIANCE_ONLY,
+				sourceQuest = 56164,	-- Desperate Need
+				provider = { "n", 151763 },	-- Isla
+				coord = { 37.7, 55.3, NAZJATAR },
+				races = ALLIANCE_ONLY,
 			}),
 			q(56179, {	-- The Needs of the People
-				["sourceQuest"] = 56176,	-- Desperate Need
-				["provider"] = { "n", 154208 },	-- Jonah Lowtide
-				["coord"] = { 50.5, 66.2, NAZJATAR },
-				["races"] = HORDE_ONLY,
+				sourceQuest = 56176,	-- Desperate Need
+				provider = { "n", 154208 },	-- Jonah Lowtide
+				coord = { 50.5, 66.2, NAZJATAR },
+				races = HORDE_ONLY,
 			}),
 			-- Unsorted
 			q(54085, {
-				["lvl"] = 50,
+				lvl = 50,
 			}),
 			q(54941, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				lvl = 50,
 			}),
 			q(55111, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
-				["groups"] = {
+				description = "Area: |cFFf09f26Nazjatar|r",
+				lvl = 50,
+				groups = {
 					i(169444, {	-- Creature Compendium: Zanj'ir Naga
-						["q"] = 0,
+						q = 0,
 					}),
 				},
 			}),
 			q(55224, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
-				["_drop"] = { "g" },
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
+				_drop = { "g" },
 			}),
 			q(55225, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55226, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55483, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(55484, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(55487, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(55523, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				lvl = 50,
 			}),
 			q(55524, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				lvl = 50,
 			}),
 			q(55525, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				lvl = 50,
 			}),
 			q(55526, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				lvl = 50,
 			}),
 			q(55527, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				lvl = 50,
 			}),
 			q(55722, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55788, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55802, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55803, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55804, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55805, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55806, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55807, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55808, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55809, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55826, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55835, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55838, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55839, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55840, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55841, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55842, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55843, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(55844, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["isDaily"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				isDaily = 1,
+				lvl = 50,
 			}),
 			q(56080, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				lvl = 50,
 			}),
 			q(56081, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				lvl = 50,
 			}),
 			q(56138, {
-				["description"] = "Type: |cFFf09f26Group|r\nArea: |cFFf09f26Mechagon|r",
-				["lvl"] = 50,
+				description = "Type: |cFFf09f26Group|r\nArea: |cFFf09f26Mechagon|r",
+				lvl = 50,
 			}),
 			q(56406, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["repeatable"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				repeatable = 1,
+				lvl = 50,
 			}),
 			q(56409, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["repeatable"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				repeatable = 1,
+				lvl = 50,
 			}),
 			q(56411, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["repeatable"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				repeatable = 1,
+				lvl = 50,
 			}),
 			q(56412, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["repeatable"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				repeatable = 1,
+				lvl = 50,
 			}),
 			q(56415, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["repeatable"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				repeatable = 1,
+				lvl = 50,
 			}),
 			q(56416, {
-				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["repeatable"] = 1,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Nazjatar|r",
+				repeatable = 1,
+				lvl = 50,
 			}),
 			-- Mechagon
 			q(54084),	-- [DNT]
@@ -5348,47 +5348,47 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 8.2.5
-		expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_5 } }, {
+		expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ timeline = { CREATED_8_2_5 } }, {
 			q(57377),	-- A Hand Offered
 			q(57850),	-- Storied Partnerships
 			q(57852),	-- Dungeon Adventure
 			q(57853, {	-- Battleforged Team
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
+				_drop = { "g" },	-- drop MoH to remove this quest from the popout
 			}),
 			q(58089),	-- Test Quest
 			-- Unsorted
 			q(54052, {
-				["description"] = "Category: |cFFf09f26Questfall|r",
+				description = "Category: |cFFf09f26Questfall|r",
 			}),
 			q(56622, {
-				["description"] = "Area: |cFFf09f26Ashran|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 60,
-				["groups"] = {
+				description = "Area: |cFFf09f26Ashran|r",
+				races = HORDE_ONLY,
+				lvl = 60,
+				groups = {
 					i(170077, {	-- Gleaming Ashmaul Strongbox
-						["b"] = 1,
-						["q"] = 4,
+						b = 1,
+						q = 4,
 					}),
 				},
 			}),
 			q(56623, {
-				["description"] = "Area: |cFFf09f26Ashran|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 60,
-				["groups"] = {
+				description = "Area: |cFFf09f26Ashran|r",
+				races = ALLIANCE_ONLY,
+				lvl = 60,
+				groups = {
 					i(170077, {	-- Gleaming Ashmaul Strongbox
-						["b"] = 1,
-						["q"] = 4,
+						b = 1,
+						q = 4,
 					}),
 				},
 			}),
 			q(57308, {
-				["description"] = "Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",
-				["lvl"] = 10,
+				description = "Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",
+				lvl = 10,
 			}),
 			q(57319, {
-				["description"] = "Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",
-				["lvl"] = 10,
+				description = "Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",
+				lvl = 10,
 			}),
 			-- tools
 			-- 8.2.5.31337
@@ -5436,10 +5436,10 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 8.3.0
-		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
+		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_8_3_0 } }, {
 			q(58801),	-- Enter the Void
 			q(58904, {	-- Shards of Corruption
-				["groups"] = {
+				groups = {
 					i(174867),	-- Shard of Corruption (QI!)
 				},
 			}),
@@ -5453,34 +5453,34 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(57874),	-- Visions of a Dark Destiny
 			-- Unsorted
 			q(55036, {
-				["description"] = "Area: |cFFf09f26Prototype|r",
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Prototype|r",
+				lvl = 50,
 			}),
 			q(55037, {
-				["description"] = "Area: |cFFf09f26Prototype|r",
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Prototype|r",
+				lvl = 50,
 			}),
 			q(57022, {
-				["description"] = "Area: |cFFf09f26Uldum|r",
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Uldum|r",
+				lvl = 50,
 			}),
 			q(57155, {
-				["description"] = "Area: |cFFf09f26Crucible of Storms|r",
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Crucible of Storms|r",
+				races = ALLIANCE_ONLY,
+				lvl = 50,
 			}),
 			q(57156, {
-				["description"] = "Area: |cFFf09f26Crucible of Storms|r",
-				["races"] = HORDE_ONLY,
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Crucible of Storms|r",
+				races = HORDE_ONLY,
+				lvl = 50,
 			}),
 			q(57370, {
-				["description"] = "Area: |cFFf09f26Uldum|r",
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Uldum|r",
+				lvl = 50,
 			}),
 			q(57371, {
-				["description"] = "Area: |cFFf09f26Uldum|r",
-				["lvl"] = 50,
+				description = "Area: |cFFf09f26Uldum|r",
+				lvl = 50,
 			}),
 			q(58703),	--
 			-- Tools
@@ -5656,7 +5656,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 8.3.7
-		expansion(EXPANSION.BFA, patch(3,7), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_7 } }, {
+		expansion(EXPANSION.BFA, patch(3,7), bubbleDownSelf({ timeline = { CREATED_8_3_7 } }, {
 			-- Tools
 			-- 8.3.7.34872
 			q(59248),	--
@@ -5672,16 +5672,16 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		-- 8.x.x
 		n(P8xx, {
 			q(54168, {
-				["description"] = "Category: |cFFf09f26Free T-Shirt Day|r",
-				["races"] = HORDE_ONLY,
-				["repeatable"] = 1,
-				["isDaily"] = 1,
+				description = "Category: |cFFf09f26Free T-Shirt Day|r",
+				races = HORDE_ONLY,
+				repeatable = 1,
+				isDaily = 1,
 			}),
 			q(54986, {
-				["lvl"] = 50,
-				["groups"] = {
+				lvl = 50,
+				groups = {
 					i(169154, {	-- [PH] N'Zoth Cache
-						["q"] = 4,
+						q = 4,
 					}),
 				},
 			}),
@@ -5690,7 +5690,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
 			q(44498),	-- Winterhoof Cleansing
 			q(60362),	-- Blank
 			q(57766),	-- War with the Horde
@@ -5855,7 +5855,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(63026),	-- Return Lost Souls
 			q(63027),	-- Return Lost Souls
 			q(59606),	-- The Anima Expert
-			q(57896, { ["_drop"] = { "g" }, }),	-- The Archon's Will
+			q(57896, { _drop = { "g" }, }),	-- The Archon's Will
 			q(59318),	-- Work Not Wasted
 			q(60124),
 			q(62300),	-- Classic 20-49
@@ -5891,46 +5891,46 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(60364),	-- Gildenite Grab (Night Fae)
 			q(60365),	-- Gildenite Grab (Venthyr)
 			-- Quest from Unsorted
-			q(60286, { ["name"] = "A Token of Our Admiration", }),	-- A Token of Our Admiration
-			q(60157, { ["name"] = "Answers from the Ascended", }),	-- Answers from the Ascended
-			q(55424, { ["name"] = "Aspirant Elynna", }),	-- Aspirant Elynna
-			q(62168, { ["name"] = "Bonescript Dispatches", }),	-- Bonescript Dispatches
-			q(59084, { ["name"] = "Bybeen Dreadweaver", }),	-- Bybeen Dreadweaver
-			q(60104, { ["name"] = "Darkness' Domain", }),	-- Darkness' Domain
-			q(60101, { ["name"] = "Deadsoul Interstitia", }),	-- Deadsoul Interstitia
-			q(59080, { ["name"] = "Demons!", }),	-- Demons!
-			q(62072, { ["name"] = "Familiar Faces", }),	-- Familiar Faces
-			q(60099, { ["name"] = "Fracture Chambers", }),	-- Fracture Chambers
-			q(60102, { ["name"] = "Kakophonus", }),	-- Kakophonus
-			q(59086, { ["name"] = "Manor of Minions", }),	-- Manor of Minions
-			q(57671, { ["name"] = "Meeting Blightcaller", }),	-- Meeting Blightcaller
-			q(59082, { ["name"] = "Next Realm!", }),	-- Next Realm!
-			q(62289, { ["name"] = "Observing Conflict", ["_drop"] = { "g" }, }),	-- Observing Conflict
-			q(59079, { ["name"] = "Portal to Paradise", }),	-- Portal to Paradise
-			q(62071, { ["name"] = "RRP Test Quest", }),	-- RRP Test Quest
-			q(59081, { ["name"] = "Scum Scrape", }),	-- Scum Scrape
-			q(60105, { ["name"] = "Sineater Belfry", }),	-- Sineater Belfry
-			q(60092, { ["name"] = "Skoldus Hall", }),	-- Skoldus Hall
-			q(60474, { ["name"] = "Spawn Tracking Unit-Specified World Effect in a WMO Bug", }),	-- Spawn Tracking Unit-Specified World Effect in a WMO Bug
-			q(59083, { ["name"] = "Sticky Getaway", }),	-- Sticky Getaway
-			q(62402, { ["name"] = "Timewalking Campaigns", }),	-- Timewalking Campaigns
-			q(59078, { ["name"] = "The Hook", }),	-- The Hook
-			q(60499, { ["name"] = "The Light's Retribution", }),	-- The Light's Retribution
-			q(59076, { ["name"] = "The Minions of Mayhem", }),	-- The Minions of Mayhem
-			q(60103, { ["name"] = "The Miscreation Wing", }),	-- The Miscreation Wing
-			q(59077, { ["name"] = "The Plan", }),	-- The Plan
-			q(62594, { ["name"] = "The Safety of Others", }),	-- The Safety of Others
-			q(62595, { ["name"] = "The Safety of Others", }),	-- The Safety of Others
-			q(60100, { ["name"] = "The Soulforges", }),	-- The Soulforges
-			q(60106, { ["name"] = "The Upper Reaches", }),	-- The Upper Reaches
-			q(60107, { ["name"] = "The Winding Halls", }),	-- The Winding Halls
-			q(59085, { ["name"] = "Third Time is a Charm", }),	-- Third Time is a Charm
-			q(60172, { ["name"] = "This Quest is Temporary", }),	-- This Quest is Temporary
-			q(60155, { ["name"] = "To Open the Way", }),	-- To Open the Way
-			q(62077, { ["name"] = "To the Chase", }),	-- To the Chase
-			q(60138, { ["name"] = "Unlocking the Gates", }),	-- Unlocking the Gates
-			q(60559, { ["name"] = "Unused", }),	-- Unused
-			q(56070, { ["name"] = "Vengeance for the Venthyr", }),	-- Vengeance for the Venthyr
+			q(60286, { name = "A Token of Our Admiration", }),	-- A Token of Our Admiration
+			q(60157, { name = "Answers from the Ascended", }),	-- Answers from the Ascended
+			q(55424, { name = "Aspirant Elynna", }),	-- Aspirant Elynna
+			q(62168, { name = "Bonescript Dispatches", }),	-- Bonescript Dispatches
+			q(59084, { name = "Bybeen Dreadweaver", }),	-- Bybeen Dreadweaver
+			q(60104, { name = "Darkness' Domain", }),	-- Darkness' Domain
+			q(60101, { name = "Deadsoul Interstitia", }),	-- Deadsoul Interstitia
+			q(59080, { name = "Demons!", }),	-- Demons!
+			q(62072, { name = "Familiar Faces", }),	-- Familiar Faces
+			q(60099, { name = "Fracture Chambers", }),	-- Fracture Chambers
+			q(60102, { name = "Kakophonus", }),	-- Kakophonus
+			q(59086, { name = "Manor of Minions", }),	-- Manor of Minions
+			q(57671, { name = "Meeting Blightcaller", }),	-- Meeting Blightcaller
+			q(59082, { name = "Next Realm!", }),	-- Next Realm!
+			q(62289, { name = "Observing Conflict", _drop = { "g" }, }),	-- Observing Conflict
+			q(59079, { name = "Portal to Paradise", }),	-- Portal to Paradise
+			q(62071, { name = "RRP Test Quest", }),	-- RRP Test Quest
+			q(59081, { name = "Scum Scrape", }),	-- Scum Scrape
+			q(60105, { name = "Sineater Belfry", }),	-- Sineater Belfry
+			q(60092, { name = "Skoldus Hall", }),	-- Skoldus Hall
+			q(60474, { name = "Spawn Tracking Unit-Specified World Effect in a WMO Bug", }),	-- Spawn Tracking Unit-Specified World Effect in a WMO Bug
+			q(59083, { name = "Sticky Getaway", }),	-- Sticky Getaway
+			q(62402, { name = "Timewalking Campaigns", }),	-- Timewalking Campaigns
+			q(59078, { name = "The Hook", }),	-- The Hook
+			q(60499, { name = "The Light's Retribution", }),	-- The Light's Retribution
+			q(59076, { name = "The Minions of Mayhem", }),	-- The Minions of Mayhem
+			q(60103, { name = "The Miscreation Wing", }),	-- The Miscreation Wing
+			q(59077, { name = "The Plan", }),	-- The Plan
+			q(62594, { name = "The Safety of Others", }),	-- The Safety of Others
+			q(62595, { name = "The Safety of Others", }),	-- The Safety of Others
+			q(60100, { name = "The Soulforges", }),	-- The Soulforges
+			q(60106, { name = "The Upper Reaches", }),	-- The Upper Reaches
+			q(60107, { name = "The Winding Halls", }),	-- The Winding Halls
+			q(59085, { name = "Third Time is a Charm", }),	-- Third Time is a Charm
+			q(60172, { name = "This Quest is Temporary", }),	-- This Quest is Temporary
+			q(60155, { name = "To Open the Way", }),	-- To Open the Way
+			q(62077, { name = "To the Chase", }),	-- To the Chase
+			q(60138, { name = "Unlocking the Gates", }),	-- Unlocking the Gates
+			q(60559, { name = "Unused", }),	-- Unused
+			q(56070, { name = "Vengeance for the Venthyr", }),	-- Vengeance for the Venthyr
 
 			q(60937),	-- [DNT] Blueprint: Herald's Footpads
 			q(61265),	-- Blueprint: Charm of Alacrity
@@ -5990,13 +5990,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(57483),	--
 			q(57485),	--
 			q(57507),	--
-			q(57510, { ["name"] = "Darklord Taraxis", }),	-- Darklord Taraxis
+			q(57510, { name = "Darklord Taraxis", }),	-- Darklord Taraxis
 			q(57525),	--
 			q(57526),	--
 			q(57527),	--
 			q(57539),	--
 			q(57548),	--
-			q(57556, { ["name"] = "The Maw - Weekly Treasures", }),	-- The Maw - Weekly Treasures
+			q(57556, { name = "The Maw - Weekly Treasures", }),	-- The Maw - Weekly Treasures
 			q(57570),	--
 			q(57572),	--
 			q(57576),	--
@@ -6139,7 +6139,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(58713),	--
 			q(58722),	--
 			q(58739),	--
-			q(58752, { ["name"] = "Feather Fall Tracking Quest", }),	-- Feather Fall Tracking Quest
+			q(58752, { name = "Feather Fall Tracking Quest", }),	-- Feather Fall Tracking Quest
 			q(58753),	--
 			q(58766),	--
 			q(58786),	--
@@ -6165,10 +6165,10 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(58958),	--
 			q(58959),	--
 			q(58982),	--
-			q(58985, { ["name"] = "Terrified Soul", }),	-- Terrified Soul
+			q(58985, { name = "Terrified Soul", }),	-- Terrified Soul
 			q(58986),	--
 			q(58988),	--
-			q(58999, { ["name"] = "Shackled Soul", }),	-- Shackled Soul
+			q(58999, { name = "Shackled Soul", }),	-- Shackled Soul
 			q(59001),	--
 			q(59005),	--
 			q(59010),	--
@@ -6182,7 +6182,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(59058),	--
 			q(59064),	--
 			q(59066),	--
-			q(59067, { ["name"] = "Orb of Extrication", }),	-- Orb of Extrication
+			q(59067, { name = "Orb of Extrication", }),	-- Orb of Extrication
 			q(59119),	--
 			q(59125),	--
 			q(59127),	--
@@ -6201,7 +6201,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(59177),	--
 			q(59178),	--
 			q(59182),	--
-			q(59184, { ["name"] = "Borr-Geth", }),	-- Borr-Geth
+			q(59184, { name = "Borr-Geth", }),	-- Borr-Geth
 			q(59186),	--
 			q(59205),	--
 			q(59212),	--
@@ -6215,7 +6215,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(59224),	--
 			q(59227),	--
 			q(59228),	--
-			q(59229, { ["name"] = "Gargantuan Seeker", }),	-- Gargantuan Seeker
+			q(59229, { name = "Gargantuan Seeker", }),	-- Gargantuan Seeker
 			q(59237),	--
 			q(59238),	--
 			q(59239),	--
@@ -6227,7 +6227,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(59251),	--
 			q(59252),	--
 			q(59253),	--
-			q(59259, { ["name"] = "The Eternal Tormentor", }),	-- The Eternal Tormentor
+			q(59259, { name = "The Eternal Tormentor", }),	-- The Eternal Tormentor
 			q(59260),	--
 			q(59261),	--
 			q(59264),	--
@@ -6409,38 +6409,38 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(59963),	--
 			q(59964),	--
 			q(59998),	--
-			q(60010, { ["name"] = "Tremaculum: Liberated Souls", }),	-- Tremaculum: Liberated Souls
-			q(60011, { ["name"] = "Calcis: Decryption", }),	-- Calcis: Decryption
-			q(60012, { ["name"] = "Zovaal's Cauldron: Stygia Overflow", }),	-- Zovaal's Cauldron: Stygia Overflow
+			q(60010, { name = "Tremaculum: Liberated Souls", }),	-- Tremaculum: Liberated Souls
+			q(60011, { name = "Calcis: Decryption", }),	-- Calcis: Decryption
+			q(60012, { name = "Zovaal's Cauldron: Stygia Overflow", }),	-- Zovaal's Cauldron: Stygia Overflow
 			q(60045),	--
 			q(60046),	--
 			q(60047),	--
-			q(60058, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60058, { name = "Conquest's Reward", }),	-- Conquest's Reward
 			q(60059),	--
-			q(60068, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60069, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60070, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60071, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60072, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60073, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60074, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60075, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60076, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60077, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60078, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60079, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60080, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60081, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60082, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60083, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60084, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60085, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60086, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60087, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60088, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60089, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60090, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
-			q(60091, { ["name"] = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60068, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60069, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60070, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60071, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60072, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60073, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60074, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60075, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60076, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60077, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60078, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60079, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60080, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60081, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60082, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60083, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60084, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60085, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60086, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60087, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60088, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60089, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60090, { name = "Conquest's Reward", }),	-- Conquest's Reward
+			q(60091, { name = "Conquest's Reward", }),	-- Conquest's Reward
 			q(60131),	--
 			q(60133),	--
 			q(60135),	--
@@ -6547,7 +6547,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(60967),	--
 			q(60976),	--
 			q(60989),	--
-			q(60990, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
+			q(60990, { name = "Tracking Quest", }),	-- Tracking Quest
 			q(61003),	--
 			q(61004),	--
 			q(61005),	--
@@ -6558,14 +6558,14 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(61012),	--
 			q(61013),	--
 			q(61055),	--
-			q(61062, { ["name"] = "Adjutant Dekaris", }),	-- Adjutant Dekaris
+			q(61062, { name = "Adjutant Dekaris", }),	-- Adjutant Dekaris
 			q(61063),	--
 			-- 9.0.1.34714
 			q(61064),	--
 			q(61066),	--
 			q(61071),	--
 			q(61094),	--
-			q(61124, { ["name"] = "Warren Mongrel", }),	-- Warren Mongrel
+			q(61124, { name = "Warren Mongrel", }),	-- Warren Mongrel
 			-- 9.0.1.34821
 			q(61151),	--
 			q(61152),	--
@@ -6616,11 +6616,11 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(61487),	--
 			q(61503),	--
 			q(61507),	--
-			q(61517, { ["name"] = "zz", }),	-- zz
-			q(61521, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
+			q(61517, { name = "zz", }),	-- zz
+			q(61521, { name = "Tracking Quest", }),	-- Tracking Quest
 			-- 9.0.1.35167
 			q(61563),	--
-			q(61565, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
+			q(61565, { name = "Tracking Quest", }),	-- Tracking Quest
 			q(61566),	--
 			q(61617),	--
 			q(61639),	--
@@ -6679,7 +6679,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(61897),	--
 			q(61917),	--
 			q(61920),	--
-			q(61964, { ["name"] = "Aubrie Weekly Jailers Tower Quest", }),	-- Aubrie Weekly Jailers Tower Quest
+			q(61964, { name = "Aubrie Weekly Jailers Tower Quest", }),	-- Aubrie Weekly Jailers Tower Quest
 			-- 9.0.1.35282
 			-- 9.0.1.35360
 			q(61997),	--
@@ -6687,21 +6687,21 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(62010),	--
 			q(62040),	--
 			q(62193),	--
-			q(62212, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
+			q(62212, { name = "Tracking Quest", }),	-- Tracking Quest
 			q(62228),	--
-			q(62230, { ["name"] = "A Stolen Stone Fiend", }),	-- A Stolen Stone Fiend
+			q(62230, { name = "A Stolen Stone Fiend", }),	-- A Stolen Stone Fiend
 			-- 9.0.1.35432
-			q(62233, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(62245, { ["name"] = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
-			q(62249, { ["name"] = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
-			q(62253, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(62257, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
+			q(62233, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(62245, { name = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
+			q(62249, { name = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
+			q(62253, { name = "Tracking Quest", }),	-- Tracking Quest
+			q(62257, { name = "Tracking Quest", }),	-- Tracking Quest
 			q(62268),	--
 			q(62272),	--
 			q(62273),	--
 			q(62274),	--
 			q(62283),	--
-			q(62291, { ["name"] = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
+			q(62291, { name = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
 			-- 9.0.1.35482
 			-- 9.0.1.35522
 			q(62413),	--
@@ -6720,7 +6720,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(62564),	--
 			q(62565),	--
 			q(62566),	--
-			q(62579, { ["name"] = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
+			q(62579, { name = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
 			q(62581),	--
 			q(62617),	--
 			-- 9.0.1.35679
@@ -6731,12 +6731,12 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			-- 9.0.1.35755
 			q(62702),	--
 			q(62703),	--
-			q(62717, { ["name"] = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
-			q(62724, { ["name"] = "Ye Olde Test of Strength", }),	-- Ye Olde Test of Strength
-			q(62725, { ["name"] = "A Test of Guile", }),	-- A Test of Guile
-			q(62726, { ["name"] = "Ye Olde Test of Fortitude", }),	-- Ye Olde Test of Fortitude
-			q(62727, { ["name"] = "9.0 Rated PvP Incentive - Shadowlands Season 1 Exclusive Mount", }),	-- 9.0 Rated PvP Incentive - Shadowlands Season 1 Exclusive Mount
-			q(62728, { ["name"] = "9.0 Rated PvP Incentive - Shadowlands Season 1 Saddle", }),	-- 9.0 Rated PvP Incentive - Shadowlands Season 1 Saddle
+			q(62717, { name = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
+			q(62724, { name = "Ye Olde Test of Strength", }),	-- Ye Olde Test of Strength
+			q(62725, { name = "A Test of Guile", }),	-- A Test of Guile
+			q(62726, { name = "Ye Olde Test of Fortitude", }),	-- Ye Olde Test of Fortitude
+			q(62727, { name = "9.0 Rated PvP Incentive - Shadowlands Season 1 Exclusive Mount", }),	-- 9.0 Rated PvP Incentive - Shadowlands Season 1 Exclusive Mount
+			q(62728, { name = "9.0 Rated PvP Incentive - Shadowlands Season 1 Saddle", }),	-- 9.0 Rated PvP Incentive - Shadowlands Season 1 Saddle
 			q(62765),	--
 			q(62766),	--
 			q(62767),	--
@@ -6771,7 +6771,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 9.0.2
-		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
+		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ timeline = { CREATED_9_0_2 } }, {
 			q(62696),	-- A Call to Service
 			q(59598),	-- Good for the Soul
 			q(63061),	-- Helping Hand
@@ -6792,7 +6792,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(61554),	-- The Play's The Thing
 			q(63101),	-- XX REUSEME
 			-- Quest from Unsorted
-			q(63041, { ["name"] = "Short-Supply Reward", ["_drop"] = {"g"} }),	-- Short-Supply Reward
+			q(63041, { name = "Short-Supply Reward", _drop = {"g"} }),	-- Short-Supply Reward
 			-- Quest from WoW.Tools
 			-- 9.0.2.35854
 			q(62815),	--
@@ -6800,7 +6800,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(62818),	-- Pumpkin Head	(spellID 344765)
 			q(62820),	--
 			-- 9.0.2.35938
-			q(62828, { ["name"] = "[DNT] Door of Shadows", }),	-- [DNT] Door of Shadows
+			q(62828, { name = "[DNT] Door of Shadows", }),	-- [DNT] Door of Shadows
 			q(62830),	--
 			q(62881),	--
 			q(62906),	--
@@ -6858,15 +6858,15 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 9.0.5
-		expansion(EXPANSION.SL, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_5 } }, {
+		expansion(EXPANSION.SL, patch(0,5), bubbleDownSelf({ timeline = { CREATED_9_0_5 } }, {
 			-- Quest from Unsorted
 			-- Quest from WoW.Tools
 			-- 9.0.5.37503
 			q(63670),	--
 			-- 9.0.5.37623
 			-- 9.0.5.37705
-			q(62149, { ["name"] = "[DNT]", }),	-- [DNT]
-			q(62150, { ["name"] = "[DNT]", }),	-- [DNT]
+			q(62149, { name = "[DNT]", }),	-- [DNT]
+			q(62150, { name = "[DNT]", }),	-- [DNT]
 			-- 9.0.5.37774
 			-- 9.0.5.37844
 			-- 9.0.5.37862
@@ -6879,41 +6879,41 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ timeline = { CREATED_9_1_0 } }, {
 			q(63420),
 			q(63430),
 			q(63431),
 			q(63432),
 			q(63729),
 			q(63862, {
-				["description"] = "Area: |cFFf09f26Korthia|r",
-				["lvl"] = 60,
+				description = "Area: |cFFf09f26Korthia|r",
+				lvl = 60,
 			}),
 			q(63946, {
-				["description"] = "Category: |cFFf09f26The Archivists' Codex|r",
-				["lvl"] = 60,
+				description = "Category: |cFFf09f26The Archivists' Codex|r",
+				lvl = 60,
 			}),
 			q(64569, {
-				["description"] = "Area: |cFFf09f26Bastion|r",
-				["lvl"] = 60,
+				description = "Area: |cFFf09f26Bastion|r",
+				lvl = 60,
 			}),
 			-- Quest from Unsorted
-			q(63751, { ["name"] = "A Terrible Power", }),	-- A Terrible Power
-			q(64640, { ["name"] = "AubriesTestQuestForJeff", }),	-- AubriesTestQuestForJeff
-			q(64517, { ["name"] = "Byron Test - Item Gained", }),	-- Byron Test - Item Gained
-			q(64518, { ["name"] = "Byron Test - Obtain Any Item", }),	-- Byron Test - Obtain Any Item
-			q(64654, { ["name"] = "Champion: Ben Howell", }),	-- Champion: Ben Howell
-			q(64193, { ["name"] = "DEPRECATED: Table of Discontent", }),	-- DEPRECATED: Table of Discontent
-			q(63418, { ["name"] = "Exploited Explorers", }),	-- Exploited Explorers
-			q(63671, { ["name"] = "Favor: The Nathrezim Documents", }),	-- Favor: The Nathrezim Documents
-			q(64306, { ["name"] = "Quest Completion Criteria", }),	-- Quest Completion Criteria
-			q(63947, { ["name"] = "Raiders in the Ruins [PH]", }),	-- Raiders in the Ruins [PH]
-			q(63735, { ["name"] = "Recover the Research", }),	-- Recover the Research
-			q(63948, { ["name"] = "Seeking the Seeker's Staff [PH]", }),	-- Seeking the Seeker's Staff [PH]
-			q(63419, { ["name"] = "Spores Galore", }),	-- Spores Galore
-			q(64305, { ["name"] = "The Tormentors of Torghast", }),	-- The Tormentors of Torghast
-			q(64235, { ["name"] = "[DNT] Training Kill Quest", }),	-- [DNT] Training Kill Quest
-			q(64231, { ["name"] = "[DNT] Training Quest", }),	-- [DNT] Training Quest
+			q(63751, { name = "A Terrible Power", }),	-- A Terrible Power
+			q(64640, { name = "AubriesTestQuestForJeff", }),	-- AubriesTestQuestForJeff
+			q(64517, { name = "Byron Test - Item Gained", }),	-- Byron Test - Item Gained
+			q(64518, { name = "Byron Test - Obtain Any Item", }),	-- Byron Test - Obtain Any Item
+			q(64654, { name = "Champion: Ben Howell", }),	-- Champion: Ben Howell
+			q(64193, { name = "DEPRECATED: Table of Discontent", }),	-- DEPRECATED: Table of Discontent
+			q(63418, { name = "Exploited Explorers", }),	-- Exploited Explorers
+			q(63671, { name = "Favor: The Nathrezim Documents", }),	-- Favor: The Nathrezim Documents
+			q(64306, { name = "Quest Completion Criteria", }),	-- Quest Completion Criteria
+			q(63947, { name = "Raiders in the Ruins [PH]", }),	-- Raiders in the Ruins [PH]
+			q(63735, { name = "Recover the Research", }),	-- Recover the Research
+			q(63948, { name = "Seeking the Seeker's Staff [PH]", }),	-- Seeking the Seeker's Staff [PH]
+			q(63419, { name = "Spores Galore", }),	-- Spores Galore
+			q(64305, { name = "The Tormentors of Torghast", }),	-- The Tormentors of Torghast
+			q(64235, { name = "[DNT] Training Kill Quest", }),	-- [DNT] Training Kill Quest
+			q(64231, { name = "[DNT] Training Quest", }),	-- [DNT] Training Quest
 			-- Quest from WoW.Tools
 			-- 9.1.0.38312
 			q(63457),	--
@@ -7001,7 +7001,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			-- 9.1.0.39291
 			-- 9.1.0.39318
 			-- 9.1.0.39335
-			q(64784, { ["name"] = "9.0 Rated PvP Incentive - Shadowlands Season 2 Exclusive Mount", }),	-- 9.0 Rated PvP Incentive - Shadowlands Season 2 Exclusive Mount
+			q(64784, { name = "9.0 Rated PvP Incentive - Shadowlands Season 2 Exclusive Mount", }),	-- 9.0 Rated PvP Incentive - Shadowlands Season 2 Exclusive Mount
 			-- 9.1.0.39413
 			-- 9.1.0.39427
 			-- 9.1.0.39497
@@ -7019,7 +7019,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 9.1.5
-		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
+		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ timeline = { CREATED_9_1_5 } }, {
 			-- Quest from WoW.Tools
 			-- 9.1.5.39977
 			q(64711),	--
@@ -7092,17 +7092,17 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
-			q(65152, { ["name"] = "A Hardened Bond", }),	-- A Hardened Bond
-			q(64649, { ["name"] = "A Mountain of Work to Do", }),	-- A Mountain of Work to Do
+		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ timeline = { CREATED_9_2_0 } }, {
+			q(65152, { name = "A Hardened Bond", }),	-- A Hardened Bond
+			q(64649, { name = "A Mountain of Work to Do", }),	-- A Mountain of Work to Do
 			-- Quest from Unsorted
-			q(64006, { ["name"] = "Nav Test: Zereth Mortis", }),	-- Nav Test: Zereth Mortis
-			q(64582, { ["name"] = "Yuni-Test", }),	-- Yuni-Test
+			q(64006, { name = "Nav Test: Zereth Mortis", }),	-- Nav Test: Zereth Mortis
+			q(64582, { name = "Yuni-Test", }),	-- Yuni-Test
 
 			q(65392),	-- Schematic Reassimilation: Patient Bufonid
 			-- Quest from WoW.Tools
 			-- 9.2.0.41089
-			q(63766, { ["name"] = "Relic of the First Ones", }),	-- Relic of the First Ones
+			q(63766, { name = "Relic of the First Ones", }),	-- Relic of the First Ones
 			q(63905),	--
 			q(63906),	--
 			q(63907),	--
@@ -7117,7 +7117,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(64345),	--
 			q(64352),	--
 			q(64353),	--
-			q(64510, { ["name"] = "Peter's Test Task", }),	-- Peter's Test Task
+			q(64510, { name = "Peter's Test Task", }),	-- Peter's Test Task
 			q(64520),	--
 			q(64544),	--
 			q(64574),	--
@@ -7238,7 +7238,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(65577),	--
 			q(65578),	--
 			q(65588),	--
-			q(65621, { ["name"] = "[DEPRECATED] Tracking Quest - Egg Tracker", }),	-- [DEPRECATED] Tracking Quest - Egg Tracker
+			q(65621, { name = "[DEPRECATED] Tracking Quest - Egg Tracker", }),	-- [DEPRECATED] Tracking Quest - Egg Tracker
 			-- 9.2.0.41726
 			q(65626),	--
 			q(65627),	--
@@ -7288,7 +7288,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 9.2.5
-		expansion(EXPANSION.SL, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_9_2_5 } }, {
+		expansion(EXPANSION.SL, patch(2,5), bubbleDownSelf({ timeline = { CREATED_9_2_5 } }, {
 			-- 9.2.5.42850
 			q(63505),	-- An Engraved Invitation	-- Ardenweald category
 			q(63506),	-- Mecha Gone	-- Ardenweald category, weird
@@ -7315,7 +7315,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
 			q(70390),	-- (DNT) Chloe's Onboarding Kill Quest
 			q(65894),	-- [DNT] - Removed - Eggs Benediction
 			q(65897),	-- [DNT] - Removed - Focus Locus
@@ -7328,7 +7328,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(70222),	-- [DNT] Death to Onboarding
 			q(67000),	-- [DNT] Game, Set, Match
 			q(67112),	-- [DNT] Kill those Bandits
-			q(66277, {["_drop"] = {"g"}}),	-- [DNT] Making Quest
+			q(66277, {_drop = {"g"}}),	-- [DNT] Making Quest
 			q(67070),	-- [DNT] My First Quest
 			q(70443),	-- [DNT] Stay Awhile RP (spellID 385931)
 			q(67017),	-- [DNT] Training: Nothing Like a Strider Wing
@@ -7427,7 +7427,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(65086),	-- Second Thoughts
 			q(67744),	-- Shezra
 			q(65876),	-- Shiverweb Silk
-			q(72191, {["_drop"] = {"g"}}),	-- Short-Supply Reward
+			q(72191, {_drop = {"g"}}),	-- Short-Supply Reward
 			q(66515),	-- Sizzling Nuggets
 			q(69854),	-- Solethus' Gravestone
 			q(64523),	-- Speed Talent 1 Quest Flag (spellID 357790)
@@ -7463,7 +7463,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66926),	-- Treasure Map: The Waking Shores (spellID 375918)
 			q(66927),	-- Treasure Map: The Azure Span (spellID 375926)
 			q(66928),	-- Treasure Map: Thaldraszus (spellID 375920)
-			q(70816, {["_drop"] = {"g"}}),	-- Treasure Tracking Techniques
+			q(70816, {_drop = {"g"}}),	-- Treasure Tracking Techniques
 			q(70044),	-- Truths and Revelations [A]
 			q(70045),	-- Truths and Revelations [H]
 			q(66549),	-- Waking Shores Rally
@@ -7609,11 +7609,11 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66303),	--
 			q(66304),	--
 			q(66305),	--
-			q(66306, {["_drop"] = {"g"}}),	--
+			q(66306, {_drop = {"g"}}),	--
 			q(66307),	--
 			q(66310),	--
 			q(66311),	--
-			q(66312, {["_drop"] = {"g"}}),	--
+			q(66312, {_drop = {"g"}}),	--
 			q(66315),	--
 			q(66319),	--
 			q(66322),	--
@@ -8051,9 +8051,9 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 10.0.2
-		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
+		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ timeline = { CREATED_10_0_2 } }, {
 			q(72365),	-- [test] Learn to spend talent points
-			q(72643, {["_drop"] = {"g"}}),	-- Dragon Isles Supplies
+			q(72643, {_drop = {"g"}}),	-- Dragon Isles Supplies
 			q(72357),	-- Review Box Used [DNT] (spellID 374484)
 			q(72434),	-- Ruby Lifeshrine Loop
 			q(72350),	--
@@ -8147,7 +8147,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 10.0.5
-		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
+		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ timeline = { CREATED_10_0_5 } }, {
 			q(66925),	-- [DNT] Boar-B-Q
 			q(72384),	-- Valdrakken Tour
 			q(72085),	--
@@ -8155,18 +8155,18 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 10.0.7
-		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ timeline = { CREATED_10_0_7 } }, {
 			q(73549),	-- [DNT] Complete Clan Tracking Quest (spellID 399498)
 			q(73177),	-- [DNT] Injured Youth Kill Credit (spellID 398844)
 			q(74384),	-- [DNT] Placeholder Broadcast: Finale (spellID 398724)
 			q(72906),	-- [DNT] Storm Pet Battle
-			q(74955, { ["_drop"] = { "g" }, }),	-- An Egg-centric Discovery
+			q(74955, { _drop = { "g" }, }),	-- An Egg-centric Discovery
 			q(75065),	-- Campaign Testing - Dummy Quest
 			q(73696),	-- Dragonscale Expedition Flag - Flag at 24.4, 55.6, THE_FORBIDDEN_REACH
 			q(73702),	-- Dragonscale Expedition Flag - Flag at 80.5, 48.1, THE_FORBIDDEN_REACH
 			q(74361),	-- Deprecated Quest
 			q(74362),	-- Deprecated Quest
-			q(74774, {["_drop"] = {"g"}}),	-- More Keys
+			q(74774, {_drop = {"g"}}),	-- More Keys
 			q(74116),	-- Reach North
 			q(74392),	-- Reach South
 			q(74360),	-- Signed, Sealed, Delivered
@@ -8220,7 +8220,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ timeline = { CREATED_10_1_0 } }, {
 			q(75719),	-- [DNT] Test Quest
 			q(72027),	-- [DNT] Training Kill Quest JKP
 			q(72480),	-- [DNT] Training Collect Quest
@@ -8238,7 +8238,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75342),	-- Kronkapace
 			q(75338),	-- Lavermix
 			q(72885),	-- Loamm Placeholder Quest
-			q(75937, {["_drop"] = {"g"}}),	-- No Time Like The Present
+			q(75937, {_drop = {"g"}}),	-- No Time Like The Present
 			q(72932),	-- Our Father's Legacy - DEPRECATED
 			q(75726),	-- Sweaty Armor
 			q(75022),	-- Vinyeti
@@ -8347,7 +8347,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ timeline = { CREATED_10_1_5 } }, {
 			q(73022),	-- [DNT] Custom Delays
 			q(75714),	-- A Trainee's Test [DNT]
 			q(76021),	-- Basic Kill Quest [DNT]
@@ -8407,7 +8407,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 10.1.7
-		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ timeline = { CREATED_10_1_7 } }, {
 			q(76560),	-- [PH] Cogs Breadcrumb
 			q(77488),	-- Excavation: Back to Eadweard!
 			q(77485),	-- Technoscrying: Back to Eadweard!
@@ -8438,7 +8438,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { CREATED_10_2_0 } }, {
 			q(78001),	-- [DEPRECATED] 10.2 Enchanting
 			q(78268),	-- [DNT] Test Quest
 			q(76167),	-- A Place of Refuge
@@ -8550,7 +8550,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ timeline = { CREATED_10_2_5 } }, {
 			q(77764),	-- Curious Find: Apprentice Astrologist Homework
 			q(80059),	-- Ensemble: Spring Reveler's Dandelion Collection
 			q(80060),	-- Ensemble: Spring Reveler's Dandelion Collection
@@ -8558,7 +8558,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(80064),	-- Ensemble: Spring Reveler's Turquoise Collection
 			q(80065),	-- Ensemble: Spring Reveler's Cornsilk Collection
 			q(80066),	-- Ensemble: Spring Reveler's Cornsilk Collection
-			q(78272, { ["_drop"] = { "g" }, }),	-- Interrupting Duck
+			q(78272, { _drop = { "g" }, }),	-- Interrupting Duck
 			q(79350),	-- Intro Dummy Quest Week 1 (Text Only)
 			q(79537),	-- Jrz Test Currency Quest
 			q(76391),	--
@@ -8580,7 +8580,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 10.2.6
-		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
+		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ timeline = { CREATED_10_2_6 } }, {
 			q(79462),	-- [DNT] Renown Reward 001
 			q(79464),	-- [DNT] Renown Reward 002
 			q(79465),	-- [DNT] Renown Reward 003
@@ -8599,7 +8599,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ timeline = { CREATED_10_2_7 } }, {
 			q(81469),	-- charlie's test quest
 			q(82971),	-- Queue Bonus
 			q(82972),	-- Queue Bonus
@@ -8692,7 +8692,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
 			q(79085),	-- A Pile of Fish
 			q(79087),	-- A Pile of Clams
 			q(82650),	-- A Pinch of Salt
@@ -9370,7 +9370,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ timeline = { CREATED_11_0_2 } }, {
 			q(85731),	-- Tracking Quest
 			q(84694),	-- Weaver's Lair Profession Table
 			q(84509),	--
@@ -9402,7 +9402,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ timeline = { CREATED_11_0_5 } }, {
 			q(86481),	-- Short-Supply Reward
 			q(85561),	-- [DNT] Debugging Abandon
 			q(82779),	--
@@ -9453,7 +9453,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ timeline = { CREATED_11_0_7 } }, {
 			q(84731),	-- Storm Breadcrumb
 			q(85560),	-- TEST
 			q(85139),	-- [PH]
@@ -9522,7 +9522,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
 			q(83110),	-- Deliver Equipment
 			q(84894),	-- G.E.T.A. 2
 			q(86448),	-- Piecing Things Together
@@ -9624,7 +9624,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 11.1.5
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_5 } }, {
 			q(90661),	-- Dastardly Duos
 			q(90504),	-- Dastardly Duos Weekly Wins
 			q(90503),	-- Dastardly Duos Weekly Wins
@@ -9672,7 +9672,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 11.1.7
-		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ timeline = { CREATED_11_1_7 } }, {
 			q(86469),	-- A Stromgarde Tour
 			q(84653),	-- DEPRECATED
 			q(86470),	-- Fearin's Version
@@ -9691,7 +9691,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
 			q(85873),	-- Another Shadowy Invitation
 			q(85044),	-- DEPRECATED
 			q(90087),	-- Distance Tracker (DNT)
@@ -9767,7 +9767,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 11.2.5
-		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_5 } }, {
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ timeline = { CREATED_11_2_5 } }, {
 			q(89403),	-- 11.2.5 Delves - Mid-Season Refresh - Player Choice Affix - TEST - ZGS
 			q(87540),	-- Begin the Sky Assaults
 			q(88750),	-- Tracking Quest
@@ -9847,7 +9847,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 11.2.7
-		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
 			q(84934),	-- A Dark Descent
 			q(86962),	-- Blood in the Wound
 			q(91865),	-- Catch Up: Khaz Algar
@@ -9934,16 +9934,16 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
 			q(93969),	-- BETA:Call Shot
 			q(93235),	-- First Craft: M0LL1, Atomic Anomaly
 			q(90436),	-- First Craft: Pigments of the Wind
 		})),
 
 		-- 12.0.1
-		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_1 } }, {
-			q(93523, {["_drop"] = {"g"}}),	-- Short-Supply Reward
-			q(94423, {["_drop"] = {"g"}}),	-- Sanctum Secure
+		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ timeline = { CREATED_12_0_1 } }, {
+			q(93523, {_drop = {"g"}}),	-- Short-Supply Reward
+			q(94423, {_drop = {"g"}}),	-- Sanctum Secure
 		})),
 	}),
 }));

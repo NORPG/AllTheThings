@@ -2,19 +2,19 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {
 	n(SEASON_VENOMOUS_PVP, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }, {
 			ach(62497, {	-- Venomous Weapons of Conquest
 				i(270560),	-- Venomous Gladiator's Weapon Token
 			}),
 			ach(63099, {	-- Venomous Combatant
-				["races"] = ALLIANCE_ONLY,
-				["collectible"] = false,
+				races = ALLIANCE_ONLY,
+				collectible = false,
 			}),
 			ach(63103, {	-- Venomous Combatant
-				["races"] = HORDE_ONLY,
-				["collectible"] = false,
+				races = HORDE_ONLY,
+				collectible = false,
 			}),
 			ach(62926),	-- Combatant I: Midnight Season 2
 			ach(62951),	-- Combatant II: Midnight Season 2
@@ -22,10 +22,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			ach(62952),	-- Challenger II: Midnight Season 2
 			ach(62929, {	-- Duelist: Midnight Season 2
 				i(272010, {	-- Venomous Gladiator's Prestigious Cloak
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				i(272007, {	-- Venomous Gladiator's Prestigious Cloak
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 			}),
 			ach(62931),	-- Elite: Midnight Season 2
@@ -42,22 +42,22 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			}),
 			-- RBG
 			ach(62924, {	-- Venomous Marshal: Midnight Season 2
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				races = ALLIANCE_ONLY,
+				groups = {
 					title(769),	-- Venomous Marshal <Name>
 				},
 			}),
 			ach(62925, {	-- Venomous Warlord: Midnight Season 2
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				races = HORDE_ONLY,
+				groups = {
 					title(770),	-- Venomous Warlord <Name>
 				},
 			}),
 			ach(62953, {	-- Hero of the Alliance: Venomous
-				["races"]= ALLIANCE_ONLY,
+				races= ALLIANCE_ONLY,
 			}),
 			ach(62954, {	-- Hero of the Horde: Venomous
-				["races"]= HORDE_ONLY,
+				races= HORDE_ONLY,
 			}),
 			ach(62950, {	-- Strategist: Midnight Season 2
 				i(275068),	-- Venomous Legend's Pennant (COSMETIC!)
@@ -67,7 +67,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				i(275068),	-- Venomous Legend's Pennant (COSMETIC!)
 			}),
 			ach(62921, {	-- Battle Mender: Midnight Season 2
-				["classes"] = HEALERS,
+				classes = HEALERS,
 			}),
 			ach(62923, {	-- Venomous Legend: Midnight Season 2
 				title(768),	-- Venomous Legend <Name>
@@ -75,18 +75,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			-- Fashion
 			ach(63608),	-- Venomous Vestments
 		})),
-		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }, {
+		filter(MOUNTS, bubbleDownSelf({ timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }, {
 			i(275433, {	-- Vicious Lightbloom Boar [A] (MOUNT!)
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			i(275432, {	-- Vicious Lightbloom Boar [H] (MOUNT!)
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 		})),
-		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }, {
+		n(PVP_WARMODE, bubbleDownSelf({ timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }, {
 			n(243224, {	-- Knight-Lord Bloodvalor <War Mode Quartermaster>
-				["coord"] = { 34.1, 81.7, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
+				coord = { 34.1, 81.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				groups = {
 					filter(BACK_F, {
 						bloody(525, i(270349)),	-- Venomous Warmonger's Cape
 						bloody(525, i(270347)),	-- Venomous Warmonger's Cloak
@@ -161,17 +161,17 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(270408)),		-- Venomous Warmonger's Sword
 						bloody(1225, i(270394)),	-- Venomous Warmonger's Wand
 						bloody(1750, i(277970, {	-- Venomous Warmonger's Warblade
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						})),
 						bloody(875, i(270395)),		-- Venomous Warmonger's Warglaive
 					}),
 				},
 			}),
 		})),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }, {
 			n(243221, {	-- Captain Dawnrunner <Honor Quartermaster>
-				["coord"] = { 34.0, 81.0, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
+				coord = { 34.0, 81.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				groups = {
 					filter(BACK_F, {
 						honor(525, i(270539)),	-- Venomous Aspirant's Cape
 						honor(525, i(270540)),	-- Venomous Aspirant's Cloak
@@ -292,18 +292,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 						honor(875, i(270457)),	-- Venomous Aspirant's Sword
 						honor(1225, i(270455)),	-- Venomous Aspirant's Wand
 						honor(1750, i(270448, {	-- Venomous Aspirant's Warblade
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						})),
 						honor(875, i(270454)),	-- Venomous Aspirant's Warglaive
 					}),
 				},
 			}),
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }, {
 			n(243220, {	-- Irissa Bloodstar <Conquest Quartermaster>
-				["coord"] = { 34.1, 80.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["ItemAppearanceModifierID"] = 159,
-				["groups"] = {
+				coord = { 34.1, 80.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				ItemAppearanceModifierID = 159,
+				groups = {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(875, i(270773)),	-- Venomous Gladiator's Chestguard
@@ -586,10 +586,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 					}),
 					filter(MISC, {
 						i(281225, {	-- Conqueror's Venomous Lacquer
-							["cost"] = { { "c", CONQUEST, 700 } },
+							cost = { { "c", CONQUEST, 700 } },
 						}),
 						i(281224, {	-- Conqueror's Venomous Varnish
-							["cost"] = { { "c", CONQUEST, 875 } },
+							cost = { { "c", CONQUEST, 875 } },
 						}),
 					}),
 					filter(NECK_F, {
@@ -636,28 +636,28 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 						conquest(1750, i(270846)),	-- Venomous Gladiator's Stave
 						conquest(875, i(270832)),	-- Venomous Gladiator's Sword
 						conquest(1750, i(270852, {	-- Venomous Gladiator's Warblade
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						})),
 					}),
-					i(271991, { ["timeline"] = { ADDED_12_1_5, REMOVED_12_2_0 } }),	-- Venomous Equipment Chest
+					i(271991, { timeline = { ADDED_12_1_5, REMOVED_12_2_0 } }),	-- Venomous Equipment Chest
 				},
 			}),
 			--[[o(532226, {	-- The Catalyst
-				["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
-				["coord"] = { 40.3, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["modelScale"] = 4,
-				["catalystID"] = 12,	-- ItemBonus.Value_0 MID:S1
-				["groups"] = bubbleDown({ ["modID"] = 14, }, {
+				description = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
+				coord = { 40.3, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+				modelScale = 4,
+				catalystID = 12,	-- ItemBonus.Value_0 MID:S1
+				groups = bubbleDown({ modID = 14, }, {
 					-- Blizzard removed all Gladiator and Elite pieces for this Catalyst version during Midnight beta.
 					-- Keep this Catalyst here in case gear can be converted into different pieces than in previous seasons.
 				}),
 			}),--]]
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }, ["bonusID"] = 7532 }, {
+		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_12_1_0, REMOVED_12_2_0 }, bonusID = 7532 }, {
 			n(255844, {	-- Soryn <Elite Conquest Quartermaster>
-				["coord"] = { 34.0, 80.7, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = appendGroups(sharedData({
-					["sourceAchievements"] = { 62929 },	-- Duelist: Midnight Season 2
+				coord = { 34.0, 80.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				groups = appendGroups(sharedData({
+					sourceAchievements = { 62929 },	-- Duelist: Midnight Season 2
 				}, {
 					moh(5, i(277312)),	-- Venomous Gladiator's Axe
 					moh(10, i(277306)),	-- Venomous Gladiator's Barb
@@ -679,21 +679,21 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				}), {
 					i(272005, {	-- Venomous Gladiator's Tabard
 						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
-						["races"] = ALLIANCE_ONLY,
-						["sourceAchievements"] = { 62931 },	-- Elite: Midnight Season 2
+						races = ALLIANCE_ONLY,
+						sourceAchievements = { 62931 },	-- Elite: Midnight Season 2
 					}),
 					i(272006, {	-- Venomous Gladiator's Tabard
 						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
-						["races"] = HORDE_ONLY,
-						["sourceAchievements"] = { 62931 },	-- Elite: Midnight Season 2
+						races = HORDE_ONLY,
+						sourceAchievements = { 62931 },	-- Elite: Midnight Season 2
 					}),
 				}),
 			}),
 		})),
 		n(REWARDS, {
 			i(275634, {	-- Artisan's Consortium Flyer (QS!)
-				["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
-				["description"] = "Rewarded from the first Arena win, including training grounds.",
+				timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
+				description = "Rewarded from the first Arena win, including training grounds.",
 			}),
 		}),
 	}),

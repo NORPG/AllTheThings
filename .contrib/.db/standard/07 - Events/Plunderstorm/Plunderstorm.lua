@@ -65,16 +65,16 @@ local PLUNDERSTORE = createHeader({
 });
 
 -- #if NOT ANYCLASSIC
-root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ timeline = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
 	n(PLUNDERSTORM, {
-		["maps"] = { 2257 },	-- Arathi Highlands
-		["groups"] = {
+		maps = { 2257 },	-- Arathi Highlands
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(20509),	-- Plunderking
 				ach(20508),	-- Plunder Wonder
 			}),
 			n(QUESTS, sharedData({
-				["isWorldQuest"] = true,
+				isWorldQuest = true,
 			}, {
 				q(79246),	-- Captain's Orders: Coffer Collector
 				q(80081),	-- Captain's Orders: Flood and Plunder
@@ -86,26 +86,26 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 			})),
 			n(VENDORS, {
 				n(219760, {	-- Da'kash Grimledger <Quartermaster>
-					["sourceQuests"] = { 80384 },	-- xx
-					["coord"] = { 46.5, 45.1, VALDRAKKEN },
-					["groups"] = {
+					sourceQuests = { 80384 },	-- xx
+					coord = { 46.5, 45.1, VALDRAKKEN },
+					groups = {
 						i(217411, {	-- Blackened Flightstone
-							["cost"] = { { "i", 217397, 1 } },	-- 1x Keg-Stamped Coin
+							cost = { { "i", 217397, 1 } },	-- 1x Keg-Stamped Coin
 						}),
 						i(217412, {	-- Blackened Flightstone
-							["cost"] = { { "i", 217397, 1 } },	-- 1x Keg-Stamped Coin
+							cost = { { "i", 217397, 1 } },	-- 1x Keg-Stamped Coin
 						}),
 						i(210923, {	-- Clutch of Wyrm's Dreaming Crests
-							["cost"] = { { "i", 217397, 3 } },	-- 3x Keg-Stamped Coin
+							cost = { { "i", 217397, 3 } },	-- 3x Keg-Stamped Coin
 						}),
 						i(217419, {	-- Large Satchel of Drake's Dreaming Crests
-							["cost"] = { { "i", 217397, 2 } },	-- 2x Keg-Stamped Coin
+							cost = { { "i", 217397, 2 } },	-- 2x Keg-Stamped Coin
 						}),
 						i(217420, {	-- Large Pouch of Whelpling's Awakened Crests
-							["cost"] = { { "i", 217397, 2 } },	-- 2x Keg-Stamped Coin
+							cost = { { "i", 217397, 2 } },	-- 2x Keg-Stamped Coin
 						}),
 						i(217705, {	-- Pirate's Booty (CI!)
-							["cost"] = 18	-- 18c
+							cost = 18	-- 18c
 						}),
 					},
 				}),
@@ -121,12 +121,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 			{	-- RENOWN 1 --
 				i(216775),	-- Deadly Dagger
 				title(543, {	-- Deck Hand <Name>
-					["collectible"] = false,
+					collectible = false,
 				}),
 			}, {	-- RENOWN 2 --
 				i(216987),	-- Swabbie's Gloves
 				title(542, {	-- Swabbie <Name>
-					["collectible"] = false,
+					collectible = false,
 				}),
 			}, {	-- RENOWN 3 --
 				i(216991),	-- Surefooted Boots
@@ -136,7 +136,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				i(216776),	-- Calcified Claymore
 				q(80384, {	-- A Keg-Stamped Package (account wide quest!)
 					-- pop asap as r5 is obtained with no providers
-					["groups"] = { i(217397) },	-- 15x Keg-Stamped Coin
+					groups = { i(217397) },	-- 15x Keg-Stamped Coin
 				}),
 			}, {	-- RENOWN 6 --
 				-- #if BEFORE 11.0.7
@@ -158,7 +158,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				i(233243),	-- Silver Tidestallion (MOUNT!)
 				-- #endif
 				title(544, {	-- Swashbuckler <Name>
-					["collectible"] = false,
+					collectible = false,
 				}),
 			}, {	-- RENOWN 11 --
 				-- #if BEFORE 11.0.7
@@ -190,7 +190,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				i(233242),	-- Royal Seafeather (MOUNT!)
 				-- #endif
 				title(545, {	-- Buccaneer <Name>
-					["collectible"] = false,
+					collectible = false,
 				}),
 			}, {	-- RENOWN 21 --
 				i(216993),	-- Storm Captain's Hat
@@ -217,7 +217,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				i(233248),	-- Glamrok (PET!)
 				-- #endif
 				title(546, {	-- First Mate <Name>
-					["collectible"] = false,
+					collectible = false,
 				}),
 			}, {	-- RENOWN 31 --
 				i(216756),	-- Plunderlord's Fine Rapier
@@ -248,7 +248,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 		})),
 	}),
 })));
-root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_11_0_7, REMOVED_11_1_0 } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ timeline = { ADDED_11_0_7, REMOVED_11_1_0 } }, {
 	n(PLUNDERSTORM, {
 		n(ACHIEVEMENTS, {
 			ach(20508),	-- Plunder Wonder (Win)
@@ -284,8 +284,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 		}),
 		filter(MISC, {
 			i(234422, {	-- Storm-Singed Plunder
-				["description"] = "Contains 1 Silver and 2 Bronze Spoils.",
-				["groups"] = {
+				description = "Contains 1 Silver and 2 Bronze Spoils.",
+				groups = {
 					i(234423),	-- Keg-Leg's Silver Spoils
 					i(234424),	-- Keg-Leg's Bronze Spoils
 				},	-- Wowhead reports this is given from a(41218)?
@@ -294,222 +294,222 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 		n(PLUNDERSTORE, {
 			filter(BATTLE_PETS, {
 				i(233251, {	-- Bubbles
-					["cost"] = { { "c", PLUNDER, 500 } },
+					cost = { { "c", PLUNDER, 500 } },
 				}),
 				i(233248, {	-- Glamrok
-					["cost"] = { { "c", PLUNDER, 1000 } },
+					cost = { { "c", PLUNDER, 1000 } },
 				}),
 				i(233252, {	-- Happy
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(235989, {	-- Parley
-					["cost"] = { { "c", PLUNDER, 2000 } },
+					cost = { { "c", PLUNDER, 2000 } },
 				}),
 				i(233247, {	-- Sparklesnap
-					["cost"] = { { "c", PLUNDER, 2000 } },
+					cost = { { "c", PLUNDER, 2000 } },
 				}),
 			}),
 			filter(COSMETIC, {
 				i(216777, {	-- Blacksteel Saber
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216778, {	-- Bloody Iron Cleaver
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216776, {	-- Calcified Claymore
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216779, {	-- Copper Cannon
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216775, {	-- Deadly Dagger
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(213436, {	-- Fine Crimson Doublet
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(232431, {	-- First Mate's Dashing Cap
-					["cost"] = { { "c", PLUNDER, 1000 } },
+					cost = { { "c", PLUNDER, 1000 } },
 				}),
 				i(232594, {	-- First Mate's Dashing Headgear
-					["cost"] = { { "c", PLUNDER, 1000 } },
+					cost = { { "c", PLUNDER, 1000 } },
 				}),
 				i(216990, {	-- Handwoven Trousers
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216780, {	-- Marvelous Multi-Shot
-					["cost"] = { { "c", PLUNDER, 500 } },
+					cost = { { "c", PLUNDER, 500 } },
 				}),
 				i(216731, {	-- Plunderlord's Cuffs
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216728, {	-- Plunderlord's Drapery
-					["cost"] = { { "c", PLUNDER, 1000 } },
+					cost = { { "c", PLUNDER, 1000 } },
 				}),
 				i(216729, {	-- Plunderlord's Fancy Trousers
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216756, {	-- Plunderlord's Fine Rapier
-					["cost"] = { { "c", PLUNDER, 1000 } },
+					cost = { { "c", PLUNDER, 1000 } },
 				}),
 				i(216755, {	-- Plunderlord's Gilded Sigil
-					["cost"] = { { "c", PLUNDER, 1000 } },
+					cost = { { "c", PLUNDER, 1000 } },
 				}),
 				i(216732, {	-- Plunderlord's Golden Cinch
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216774, {	-- Plunderlord's Hand Cannon
-					["cost"] = { { "c", PLUNDER, 1000 } },
+					cost = { { "c", PLUNDER, 1000 } },
 				}),
 				i(219348, {	-- Plunderlord's Monocle
-					["cost"] = { { "c", PLUNDER, 500 } },
+					cost = { { "c", PLUNDER, 500 } },
 				}),
 				i(216733, {	-- Plunderlord's Muckscrapers
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216765, {	-- Plunderlord's Neck-Severer
-					["cost"] = { { "c", PLUNDER, 1000 } },
+					cost = { { "c", PLUNDER, 1000 } },
 				}),
 				i(232585, {	-- Plunderlord's Old Eye Patch
-					["cost"] = { { "c", PLUNDER, 2000 } },
+					cost = { { "c", PLUNDER, 2000 } },
 				}),
 				i(232586, {	-- Plunderlord's Old Hat
-					["cost"] = { { "c", PLUNDER, 2000 } },
+					cost = { { "c", PLUNDER, 2000 } },
 				}),
 				i(216730, {	-- Plunderlord's Pilferers
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216763, {	-- Plunderlord's Silver Cutlass
-					["cost"] = { { "c", PLUNDER, 1000 } },
+					cost = { { "c", PLUNDER, 1000 } },
 				}),
 				i(232591, {	-- Plunderlord's Stormridden Cinch
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(232590, {	-- Plunderlord's Stormridden Cuffs
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(232581, {	-- Plunderlord's Stormridden Cutlass
-					["cost"] = { { "c", PLUNDER, 1500 } },
+					cost = { { "c", PLUNDER, 1500 } },
 				}),
 				i(232588, {	-- Plunderlord's Stormridden Drapery
-					["cost"] = { { "c", PLUNDER, 1500 } },
+					cost = { { "c", PLUNDER, 1500 } },
 				}),
 				i(232583, {	-- Plunderlord's Stormridden Hand Cannon
-					["cost"] = { { "c", PLUNDER, 1500 } },
+					cost = { { "c", PLUNDER, 1500 } },
 				}),
 				i(232593, {	-- Plunderlord's Stormridden Muckscrapers
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(232579, {	-- Plunderlord's Stormridden Neck-Severer
-					["cost"] = { { "c", PLUNDER, 1500 } },
+					cost = { { "c", PLUNDER, 1500 } },
 				}),
 				i(232584, {	-- Plunderlord's Stormridden Pilferers
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(232580, {	-- Plunderlord's Stormridden Rapier
-					["cost"] = { { "c", PLUNDER, 1500 } },
+					cost = { { "c", PLUNDER, 1500 } },
 				}),
 				i(232582, {	-- Plunderlord's Stormridden Sigil
-					["cost"] = { { "c", PLUNDER, 1500 } },
+					cost = { { "c", PLUNDER, 1500 } },
 				}),
 				i(232587, {	-- Plunderlord's Stormridden Spaulders
-					["cost"] = { { "c", PLUNDER, 1000 } },
+					cost = { { "c", PLUNDER, 1000 } },
 				}),
 				i(232430, {	-- Plunderlord's Stormridden Tricorne
-					["cost"] = { { "c", PLUNDER, 1000 } },
+					cost = { { "c", PLUNDER, 1000 } },
 				}),
 				i(232592, {	-- Plunderlord's Stormridden Trousers
-					["cost"] = { { "c", PLUNDER, 500 } },
+					cost = { { "c", PLUNDER, 500 } },
 				}),
 				i(232589, {	-- Plunderlord's Stormridden Waistcoat
-					["cost"] = { { "c", PLUNDER, 1000 } },
+					cost = { { "c", PLUNDER, 1000 } },
 				}),
 				i(219349, {	-- Plunderlord's Tabard
-					["cost"] = { { "c", PLUNDER, 5000 } },
+					cost = { { "c", PLUNDER, 5000 } },
 				}),
 				i(216727, {	-- Plunderlord's Tassled Spaulders
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216734, {	-- Plunderlord's Tricorne of Admiralty
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216735, {	-- Plunderlord's Waistcoat
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216989, {	-- Quilted Breeches
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216992, {	-- Silent Leathers
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216984, {	-- Skulker's Cloak
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216988, {	-- Spun Cotton Shirt
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216993, {	-- Storm Captain's Hat
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216991, {	-- Surefooted Boots
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216987, {	-- Swabbie's Gloves
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(232596, {	-- Swabbie's Oar
-					["cost"] = { { "c", PLUNDER, 1000 } },
-					["groups"] = { i(232597) },	-- Swabbie's Oar (Bonus)
+					cost = { { "c", PLUNDER, 1000 } },
+					groups = { i(232597) },	-- Swabbie's Oar (Bonus)
 				}),
 				i(232595, {	-- Swabbie's Shovel
-					["cost"] = { { "c", PLUNDER, 1000 } },
-					["groups"] = { i(236180) },	-- Swabbie's Shovel (Bonus)
+					cost = { { "c", PLUNDER, 1000 } },
+					groups = { i(236180) },	-- Swabbie's Shovel (Bonus)
 				}),
 				i(216986, {	-- Swindler's Cutouts
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216994, {	-- Warm Woolen Cap
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 				i(216985, {	-- Weatherproven Drape
-					["cost"] = { { "c", PLUNDER, 250 } },
+					cost = { { "c", PLUNDER, 250 } },
 				}),
 			}),
 			filter(MOUNTS, {
 				i(233241, {	-- Hooktalon
-					["cost"] = { { "c", PLUNDER, 5000 } },
+					cost = { { "c", PLUNDER, 5000 } },
 				}),
 				i(226042, {	-- Plunderlord's Midnight Crocolisk
-					["cost"] = { { "c", PLUNDER, 5000 } },
+					cost = { { "c", PLUNDER, 5000 } },
 				}),
 				i(233240, {	-- Polly Roger
-					["cost"] = { { "c", PLUNDER, 5000 } },
+					cost = { { "c", PLUNDER, 5000 } },
 				}),
 				i(233242, {	-- Royal Seafeather
-					["cost"] = { { "c", PLUNDER, 5000 } },
+					cost = { { "c", PLUNDER, 5000 } },
 				}),
 				i(233243, {	-- Silver Tidestallion
-					["cost"] = { { "c", PLUNDER, 1500 } },
+					cost = { { "c", PLUNDER, 1500 } },
 				}),
 			}),
 			filter(TOYS, {
 				i(216907, {	-- A Tiny Plumed Tricorne (Pepe!)
-					["cost"] = { { "c", PLUNDER, 500 } },
+					cost = { { "c", PLUNDER, 500 } },
 				}),
 				i(170197, {	-- Swarthy Warning Sign
-					["cost"] = { { "c", PLUNDER, 500 } },
+					cost = { { "c", PLUNDER, 500 } },
 				}),
 			}),
 		}),
 		n(VENDORS, {
 			n(219760, {	-- Da'kash Grimledger <Quartermaster>
-				["coord"] = { 57.1, 61.6, DORNOGAL },
-				["groups"] = {
+				coord = { 57.1, 61.6, DORNOGAL },
+				groups = {
 					i(234450, {	-- Pirate's Booty
-						["cost"] = { { "i", 234423, 1 } },	-- 1x Keg-Leg's Silver Spoils
+						cost = { { "i", 234423, 1 } },	-- 1x Keg-Leg's Silver Spoils
 					}),
 					i(234453, {	-- Swabbie's Lockbox
-						["cost"] = { { "i", 234424, 1 } },	-- 1x Keg-Leg's Bronze Spoils
+						cost = { { "i", 234424, 1 } },	-- 1x Keg-Leg's Bronze Spoils
 					}),
 				},
 			}),
@@ -517,11 +517,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 	}),
 })));
 -- #else
-root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDown({ ["timeline"] = { ADDED_3_4_3, REMOVED_4_0_1 } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDown({ timeline = { ADDED_3_4_3, REMOVED_4_0_1 } }, {
 	n(PLUNDERSTORM, {
 		pet(4532, {		-- Pinchy the Plunderer (PET!)
-			["spellID"] = 446916,	-- Pinchy the Plunderer
-			["petTypeID"] = 9,	-- Aquatic?
+			spellID = 446916,	-- Pinchy the Plunderer
+			petTypeID = 9,	-- Aquatic?
 		}),
 		mount(446902),	-- Polly Roger (MOUNT!)
 	}),
@@ -529,7 +529,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, applyclassicphase(WRATH_
 -- #endif
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
 		n(PLUNDERSTORM, {
 			q(80110),	-- First WQ of the Day
 			q(80262),	-- Renown 6 - Shabby Swabbie outfit unlocked in Plunderstorm
@@ -561,7 +561,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- q(79466),	-- [DNT] Renown Reward 004
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7, REMOVED_11_1_0 } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_7, REMOVED_11_1_0 } }, {
 		n(PLUNDERSTORM, {
 			n(PLUNDERSTORE, {
 				q(86212),	-- Purchased Swabbie's Shovel

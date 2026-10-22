@@ -5,18 +5,18 @@
 root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 	n(SEASON_DOMINANT, bubbleDownSelf({
 		-- Not the Best Timelining.. /Braghe
-		["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5, ADDED_8_0_1_LAUNCH },
+		timeline = { ADDED_7_3_2, REMOVED_7_3_5, ADDED_8_0_1_LAUNCH },
 	}, {
-		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
+		n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
 			ach(12137, {	-- Dominant Combatant [A]
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
 			ach(12136, {	-- Dominant Combatant [H]
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				races = HORDE_ONLY,
+				groups = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
@@ -28,44 +28,44 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 				i(141848),	-- Dominant Gladiator's Storm Dragon (MOUNT!)
 			}),
 			ach(12139, {	-- Dominant Gladiator's Storm Dragon
-				["provider"] = { "i", 141848 },	-- Dominant Gladiator's Storm Dragon (MOUNT!)
-				["filterID"] = MOUNTS,
+				provider = { "i", 141848 },	-- Dominant Gladiator's Storm Dragon (MOUNT!)
+				filterID = MOUNTS,
 			}),
 			ach(12134, {	-- Dominant Gladiator: Legion Season 6
 				title(368),	-- Dominant Gladiator <Name>
 			}),
 			-- RBG
 			ach(12179, {	-- Soldier of the Alliance: Legion Season 6
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(12178, {	-- Soldier of the Horde: Legion Season 6
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(12175, {	-- Defender of the Alliance: Legion Season 6
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(12174, {	-- Defender of the Horde: Legion Season 6
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(12177, {	-- Guardian of the Alliance: Legion Season 6
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(12176, {	-- Guardian of the Horde: Legion Season 6
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(12173, {	-- Hero of the Alliance: Dominant
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(12172, {	-- Hero of the Horde: Dominant
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			-- Fashion
 			ach(12021, {	-- Claws Out
-				["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5, ADDED_8_0_1_LAUNCH },
+				timeline = { ADDED_7_3_2, REMOVED_7_3_5, ADDED_8_0_1_LAUNCH },
 			}),
 		})),
 		n(PVP_COMBATANT, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(149756),	-- Dominant Combatant's Dreadcloak [A]
@@ -222,7 +222,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(149968),	-- Dominant Combatant's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(149757),	-- Dominant Combatant's Dreadcloak [H]
@@ -379,7 +379,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(149969),	-- Dominant Combatant's Insignia of Victory [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
 				filter(RELICS_F, {
 					i(150306),	-- Alliance of Convenience
 					i(150357),	-- Battering Tempest
@@ -415,7 +415,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_GLADIATOR, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(148402),	-- Dominant Gladiator's Dreadcloak [A]
@@ -572,7 +572,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(148614),	-- Dominant Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(148403),	-- Dominant Gladiator's Dreadcloak [H]
@@ -729,7 +729,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(148615),	-- Dominant Gladiator's Insignia of Victory [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
 				filter(RELICS_F, {
 					i(154060),	-- Alliance of Convenience
 					i(154079),	-- Battering Tempest
@@ -765,24 +765,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_ELITE, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_2 }, races = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
-					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["sourceAchievements"] = { 12135 },	-- Dominant Elite
-						["cost"] = { { "i", MOH, 50 } },
-						["u"] = ELITE_PVP_REQUIREMENT,
+					coord = { 29.6, 74.8, LEGION_DALARAN },
+					groups = sharedData({
+						sourceAchievements = { 12135 },	-- Dominant Elite
+						cost = { { "i", MOH, 50 } },
+						u = ELITE_PVP_REQUIREMENT,
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
-							["sourceAchievements"] = { 12167 },	-- Gladiator: Legion Season 6
-							["cost"] = { { "i", MOH, 12 } },
+							sourceAchievements = { 12167 },	-- Gladiator: Legion Season 6
+							cost = { { "i", MOH, 12 } },
 						}),
 						i(149449),	-- Dominant Gladiator's Cloak [A]
 						i(149447),	-- Dominant Gladiator's Tabard [A]
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(148648),	-- Dominant Gladiator's Dreadcloak [A]
@@ -939,24 +939,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(148860),	-- Dominant Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_2 }, races = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
-					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["sourceAchievements"] = { 12135 },	-- Dominant Elite
-						["cost"] = { { "i", MOH, 50 } },
-						["u"] = ELITE_PVP_REQUIREMENT,
+					coord = { 57.0, 27.8, LEGION_DALARAN },
+					groups = sharedData({
+						sourceAchievements = { 12135 },	-- Dominant Elite
+						cost = { { "i", MOH, 50 } },
+						u = ELITE_PVP_REQUIREMENT,
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
-							["sourceAchievements"] = { 12167 },	-- Gladiator: Legion Season 6
-							["cost"] = { { "i", MOH, 12 } },
+							sourceAchievements = { 12167 },	-- Gladiator: Legion Season 6
+							cost = { { "i", MOH, 12 } },
 						}),
 						i(149448),	-- Dominant Gladiator's Cloak [H]
 						i(149446),	-- Dominant Gladiator's Tabard [H]
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(148649),	-- Dominant Gladiator's Dreadcloak [H]
@@ -1113,7 +1113,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(148861),	-- Dominant Gladiator's Insignia of Victory [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
 				filter(RELICS_F, {
 					i(155716),	-- "Borrowed Soul" Essence
 					i(155703),	-- Alliance of Convenience

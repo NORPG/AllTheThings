@@ -44,12 +44,12 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, BossWithHeader =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.BossWithHeader
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	inst(536, {	-- Grimrail Depot
-		["coord"] = { 55.0, 31.3, GORGROND },
-		["maps"] = { 606, 607, 608, 609 },
-		["lvl"] = 100,
-		["groups"] = {
+		coord = { 55.0, 31.3, GORGROND },
+		maps = { 606, 607, 608, 609 },
+		lvl = 100,
+		groups = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(ROCKET_BORKA),
 				BossOnly(NITROGG),
@@ -59,35 +59,35 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC).AddGroups({
 				Boss(ROCKET_BORKA, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, WAIST, FINGER),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, WAIST, FINGER),
 				}),
 				Boss(NITROGG, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, CHEST, NECK),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, CHEST, NECK),
 				}),
 				Boss(TOVRA, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, WRIST, HANDS, LEGS),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, WRIST, HANDS, LEGS),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 				BossWithHeader(ROCKET_BORKA, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, WAIST, FINGER),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, WAIST, FINGER),
 				}),
 				BossWithHeader(NITROGG, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, CHEST, NECK),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, CHEST, NECK),
 				}),
 				BossWithHeader(TOVRA, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, WRIST, HANDS, LEGS),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, WRIST, HANDS, LEGS),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(ROCKET_BORKA, {
 					ach(9024, {	-- This Is Why We Can't Have Nice Things
-						["crs"] = { 81834 },	-- Priceless Paraphernalia
+						crs = { 81834 },	-- Priceless Paraphernalia
 					}),
 				}),
 				BossOnly(NITROGG, {
 					ach(9007, {	-- No Ticket
-						["crs"] = { 80936 },	-- Grom'kar Grenadier
+						crs = { 80936 },	-- Grom'kar Grenadier
 					}),
 				}),
 				BossOnly(TOVRA, {
@@ -98,13 +98,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
 				Boss(ROCKET_BORKA, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, WAIST, FINGER),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, WAIST, FINGER),
 				}),
 				Boss(NITROGG, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, CHEST, NECK),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, CHEST, NECK),
 				}),
 				Boss(TOVRA, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, WRIST, HANDS, LEGS),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, WRIST, HANDS, LEGS),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
@@ -118,7 +118,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(536, {
 		q(34548),	-- Iron Depot Challenge Mode - Bronze Addition (Nth)
 		q(34529),	-- Iron Depot Challenge Mode - Consolation (Nth)

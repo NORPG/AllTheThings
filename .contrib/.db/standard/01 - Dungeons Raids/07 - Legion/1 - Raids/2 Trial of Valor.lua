@@ -80,65 +80,65 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 InstanceHelper.LFRQueueNPC = {
-	["cr"] = 111246,	-- Archmage Timear
-	["coord"] = { 63.7, 55.0, LEGION_DALARAN },
+	cr = 111246,	-- Archmage Timear
+	coord = { 63.7, 55.0, LEGION_DALARAN },
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_1_0 } }, {
 	inst(861, {	-- Trial of Valor
-		["coord"] = { 70.4, 69.4, STORMHEIM },
-		["maps"] = { 806, 807, 808 },
-		["isRaid"] = true,
-		["lvl"] = 110,
-		["groups"] = {
+		coord = { 70.4, 69.4, STORMHEIM },
+		maps = { 806, 807, 808 },
+		isRaid = true,
+		lvl = 110,
+		groups = {
 			n(ACHIEVEMENTS, {
-				ach(11762, {["timeline"] = {ADDED_7_2_0}}),	-- Can I Get A Helya (Trial of Valor)
+				ach(11762, {timeline = {ADDED_7_2_0}}),	-- Can I Get A Helya (Trial of Valor)
 				ach(11394, {	-- Trial of Valor
 					crit(34578, {	-- Odyn
-						["_encounter"] = { ODYN, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ODYN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(34800, {	-- Guarm
-						["_encounter"] = { GUARM, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { GUARM, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(34799, {	-- Helya
-						["_encounter"] = { HELYA, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { HELYA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(11426, {	-- Heroic: Trial of Valor
 					crit(34839, {	-- Odyn
-						["_encounter"] = { ODYN, DIFFICULTY.RAID.HEROIC },
+						_encounter = { ODYN, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(34841, {	-- Guarm
-						["_encounter"] = { GUARM, DIFFICULTY.RAID.HEROIC },
+						_encounter = { GUARM, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(34840, {	-- Helya
-						["_encounter"] = { HELYA, DIFFICULTY.RAID.HEROIC },
+						_encounter = { HELYA, DIFFICULTY.RAID.HEROIC },
 					}),
 				}),
 				ach(11403),	-- Trial of Valor Guild Run
 			}),
 			n(QUESTS, {
 				q(44868, {	-- Trial of Valor: Odyn's Judgment
-					["sourceQuest"] = 44729,	-- Trial of Valor: Odyn's Favor
-					["qg"] = 114263,	-- Odyn
+					sourceQuest = 44729,	-- Trial of Valor: Odyn's Favor
+					qg = 114263,	-- Odyn
 				}),
 				q(45088, {	-- Trial of Valor: The Lost Army
-					["qg"] = 114263,	-- Odyn
-					["qi"] = 142487,	-- Valarjar Soul Fragment (QI!)
-					["groups"] = {
-						iensemble(143514, { ["classes"] = MAIL_CLASSES }),	-- Ensemble: Chains of the Chosen Dead
-						iensemble(143518, { ["classes"] = PLATE_CLASSES }),	-- Ensemble: Funerary Plate of the Chosen Dead
-						iensemble(143510, { ["classes"] = LEATHER_CLASSES }),	-- Ensemble: Garb of the Chosen Dead
-						iensemble(143506, { ["classes"] = CLOTH_CLASSES }),	-- Ensemble: Vestment of the Chosen Dead
+					qg = 114263,	-- Odyn
+					qi = 142487,	-- Valarjar Soul Fragment (QI!)
+					groups = {
+						iensemble(143514, { classes = MAIL_CLASSES }),	-- Ensemble: Chains of the Chosen Dead
+						iensemble(143518, { classes = PLATE_CLASSES }),	-- Ensemble: Funerary Plate of the Chosen Dead
+						iensemble(143510, { classes = LEATHER_CLASSES }),	-- Ensemble: Garb of the Chosen Dead
+						iensemble(143506, { classes = CLOTH_CLASSES }),	-- Ensemble: Vestment of the Chosen Dead
 					},
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				CommonBossDrops({
-					iensemble(143517, { ["classes"] = MAIL_CLASSES }),	-- Ensemble: Chains of the Chosen Dead
-					iensemble(143521, { ["classes"] = PLATE_CLASSES }),	-- Ensemble: Funerary Plate of the Chosen Dead
-					iensemble(143513, { ["classes"] = LEATHER_CLASSES }),	-- Ensemble: Garb of the Chosen Dead
-					iensemble(143509, { ["classes"] = CLOTH_CLASSES }),	-- Ensemble: Vestment of the Chosen Dead
+					iensemble(143517, { classes = MAIL_CLASSES }),	-- Ensemble: Chains of the Chosen Dead
+					iensemble(143521, { classes = PLATE_CLASSES }),	-- Ensemble: Funerary Plate of the Chosen Dead
+					iensemble(143513, { classes = LEATHER_CLASSES }),	-- Ensemble: Garb of the Chosen Dead
+					iensemble(143509, { classes = CLOTH_CLASSES }),	-- Ensemble: Vestment of the Chosen Dead
 				}),
 				BossOnly(ODYN, {
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1] (RECIPE!)
@@ -167,7 +167,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				BossOnly(GUARM, {
 					ach(11386, {	-- Boneafide Tri Tip
-						["crs"] = { 116404 },	-- Guarm's Chew Toy
+						crs = { 116404 },	-- Guarm's Chew Toy
 					}),
 				}),
 				BossOnly(HELYA, {
@@ -183,27 +183,27 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				CommonBossDrops({
 					iensemble(143507, {	-- Ensemble: Vestment of the Chosen Dead
-						["classes"] = CLOTH_CLASSES,
-						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
+						classes = CLOTH_CLASSES,
+						crs = { 116245 },	-- Heroic Champion of the Chosen Dead
 					}),
 					iensemble(143511, {	-- Ensemble: Garb of the Chosen Dead
-						["classes"] = LEATHER_CLASSES,
-						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
+						classes = LEATHER_CLASSES,
+						crs = { 116245 },	-- Heroic Champion of the Chosen Dead
 					}),
 					iensemble(143515, {	-- Ensemble: Chains of the Chosen Dead
-						["classes"] = MAIL_CLASSES,
-						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
+						classes = MAIL_CLASSES,
+						crs = { 116245 },	-- Heroic Champion of the Chosen Dead
 					}),
 					iensemble(143519, {	-- Ensemble: Funerary Plate of the Chosen Dead
-						["classes"] = PLATE_CLASSES,
-						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
+						classes = PLATE_CLASSES,
+						crs = { 116245 },	-- Heroic Champion of the Chosen Dead
 					}),
 				}),
 				BossOnly(ODYN),
 				BossOnly(GUARM),
 				BossOnly(HELYA, {
 					ach(11581, {	-- Ahead of the Curve: Helya
-						["timeline"] = { REMOVED_7_2_0 },
+						timeline = { REMOVED_7_2_0 },
 					}),
 				}),
 			}),
@@ -223,27 +223,27 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				Boss(HELYA, {
 					ach(11580, {	-- Cutting Edge: Helya
-						["timeline"] = { REMOVED_7_2_0 },
+						timeline = { REMOVED_7_2_0 },
 					}),
 					ach(11398),	-- Mythic: Helya
 					ach(11404),	-- Mythic: Helya Guild Run
 					un(REMOVED_FROM_GAME, ach(11405)),	-- Realm First! Helya
 					ach(11387, {	-- The Chosen
-						["crs"] = { 116229 },	-- Mythical Champion of the Chosen Dead
-						["timeline"] = { REMOVED_8_0_1 },
-						["groups"] = {
+						crs = { 116229 },	-- Mythical Champion of the Chosen Dead
+						timeline = { REMOVED_8_0_1 },
+						groups = {
 							title(347),	-- The Chosen
 							iensemble(143508, {	-- Ensemble: Vestment of the Chosen Dead
-								["classes"] = CLOTH_CLASSES,
+								classes = CLOTH_CLASSES,
 							}),
 							iensemble(143512, {	-- Ensemble: Garb of the Chosen Dead
-								["classes"] = LEATHER_CLASSES,
+								classes = LEATHER_CLASSES,
 							}),
 							iensemble(143516, {	-- Ensemble: Chains of the Chosen Dead
-								["classes"] = MAIL_CLASSES,
+								classes = MAIL_CLASSES,
 							}),
 							iensemble(143520, {	-- Ensemble: Funerary Plate of the Chosen Dead
-								["classes"] = PLATE_CLASSES,
+								classes = PLATE_CLASSES,
 							}),
 						},
 					}),
@@ -253,7 +253,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_1_5 } }, {
 	inst(861, {	-- Trial of Valor
 		q(46661),	-- Odyn LFR
 		q(46662),	-- Odyn Normal

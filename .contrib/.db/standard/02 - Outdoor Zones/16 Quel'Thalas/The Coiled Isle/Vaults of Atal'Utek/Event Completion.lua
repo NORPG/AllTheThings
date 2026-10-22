@@ -7,12 +7,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {
 			n(EVENT_COMPLETION, {
 				i(279345, {	-- Venom-Drenched Sack
-					["providers"] = {
+					providers = {
 						{ "n", 263014 },	-- Congealed Malice
 						{ "n", 263015 },	-- Khu'tulak <Blade of Nek'zali>
 						{ "n", 263016 },	-- Susarikk <Spawn of the First Clutch>
 					},
-					["groups"] = {
+					groups = {
 						n(ARMOR, {
 							n(BACK, {
 								i(279217),	-- Venom-Cursed Dragonhawk's Shroud
@@ -79,16 +79,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					},
 				}),
 				i(279287, {	-- Corroded Pouch
-					["sym"] = {{"select","itemID",279345},{"pop"}},
+					sym = {{"select","itemID",279345},{"pop"}},
 				}),
 				i(279288, {	-- Corroded Satchel
-					["sym"] = {{"select","itemID",279345},{"pop"}},
+					sym = {{"select","itemID",279345},{"pop"}},
 				}),
 				i(280004, {	-- Corroded Key
-					["description"] = "Received as a reward for doing a Temple Strike."
+					description = "Received as a reward for doing a Temple Strike."
 				}),
 				i(280003, {	-- Excising Knife
-					["description"] = "Received as a reward for doing a Temple Incursion."
+					description = "Received as a reward for doing a Temple Incursion."
 				}),
 				i(280006),	-- Spirit Loupe
 			}),

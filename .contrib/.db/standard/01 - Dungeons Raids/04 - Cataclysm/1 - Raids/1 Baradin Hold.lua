@@ -3,29 +3,29 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_ONE, inst(75, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {	-- Baradin Hold
-		["mapID"] = 282,
-		["coord"] = { 46.1, 47.9, TOL_BARAD },
-		["sharedLockout"] = 1,
-		["isRaid"] = true,
-		["lvl"] = 85,
-		["groups"] = {
+	applyclassicphase(CATA_PHASE_ONE, inst(75, bubbleDownSelf({ timeline = { ADDED_4_0_3 }, }, {	-- Baradin Hold
+		mapID = 282,
+		coord = { 46.1, 47.9, TOL_BARAD },
+		sharedLockout = 1,
+		isRaid = true,
+		lvl = 85,
+		groups = {
 			n(ACHIEVEMENTS, {
 				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, ach(5425, {	-- Baradin Hold Guild Run
 					crit(15480, {	-- Argaloth
-						["_npcs"] = { 47120 },	-- Argaloth
+						_npcs = { 47120 },	-- Argaloth
 					}),
 					crit(18478, {	-- Occu'thar
-						["_npcs"] = { 52363 },	-- Occu'thar
+						_npcs = { 52363 },	-- Occu'thar
 					}),
 					crit(18479, {	-- Alizabal, Mistress of Hate
-						["_npcs"] = { 55869 },	-- Alizabal, Mistress of Hate
+						_npcs = { 55869 },	-- Alizabal, Mistress of Hate
 					}),
 				})),
 			}),
 			applyclassicphase(CATA_PHASE_ONE, e(139, {	-- Argaloth
-				["creatureID"] = 47120,
-				["groups"] = {
+				creatureID = 47120,
+				groups = {
 					ach(5416),	-- Pit Lord Argaloth
 					i(60673),	-- Vicious Gladiator's Choker of Accuracy
 					i(60670),	-- Vicious Gladiator's Choker of Proficiency
@@ -165,9 +165,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					h(i(60807)),	-- Vicious Gladiator's Medallion of Tenacity (Horde)
 				},
 			})),
-			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, e(339, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {	-- Alizabal, Mistress of Hate
-				["creatureID"] = 55869,
-				["groups"] = {
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, e(339, bubbleDownSelf({ timeline = { ADDED_4_3_0 }, }, {	-- Alizabal, Mistress of Hate
+				creatureID = 55869,
+				groups = {
 					ach(6108),	-- Alizabal
 					i(73493),	-- Cataclysmic Gladiator's Choker of Proficiency
 					i(73492),	-- Cataclysmic Gladiator's Choker of Prowess
@@ -322,9 +322,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					h(i(73537)),	-- Cataclysmic Gladiator's Medallion of Tenacity (Horde)
 				},
 			}))),
-			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, e(140, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 }, }, {	-- Occu'thar
-				["creatureID"] = 52363,
-				["groups"] = {
+			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, e(140, bubbleDownSelf({ timeline = { ADDED_4_2_0 }, }, {	-- Occu'thar
+				creatureID = 52363,
+				groups = {
 					ach(6045),	-- Occu'thar
 					i(70382),	-- Ruthless Gladiator's Choker of Accuracy
 					i(70381),	-- Ruthless Gladiator's Choker of Proficiency

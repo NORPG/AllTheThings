@@ -4,16 +4,16 @@
 
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(907, {	-- Seething Shore
-		["icon"] = 236310,
-		["timeline"] = { ADDED_7_3_5 },
-		["maps"] = {
+		icon = 236310,
+		timeline = { ADDED_7_3_5 },
+		maps = {
 			904,	-- Silithus Brawl
 		},
-		["groups"] = {
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(12412, {	-- Master of Seething Shore
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						12410,	-- Seething Shore Veteran
 						12407,	-- Seething Shore Perfection
 						12408,	-- Seething Shore Domination
@@ -22,7 +22,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						12406,	-- A Good Start
 						12411,	-- Blood and Sand
 					}},
-					["groups"] = {
+					groups = {
 						title(373),	-- Prospector
 					},
 				}),

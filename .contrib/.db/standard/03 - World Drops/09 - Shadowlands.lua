@@ -1,12 +1,12 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.WorldDrops, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	filter(MISC, {
 		i(158932, {	-- Secretest Fish
-			["description"] = "Can be found in any Shadowlands zone when wearing the googles.",
-			["provider"] = { "i", 167698 },	-- Secret Fish Goggles
-			["maps"] = {
+			description = "Can be found in any Shadowlands zone when wearing the googles.",
+			provider = { "i", 167698 },	-- Secret Fish Goggles
+			maps = {
 				ARDENWEALD,
 				BASTION,
 				MALDRAXXUS,
@@ -27,7 +27,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADD
 	}),
 	filter(RECIPES, {
 		i(186995, {	-- Pattern: Shrouded Hand Towel (RECIPE!)
-			["timeline"] = { ADDED_9_1_0 },
+			timeline = { ADDED_9_1_0 },
 		}),
 	}),
 	n(ARMOR, {

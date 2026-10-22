@@ -8,44 +8,44 @@ local SECRET_OF_DRAENOR_BLACKSMITHING = 118720;
 APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = {
 	r(2018, {	-- Blacksmithing (Apprentice)
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 5,
+		lvl = 5,
 		-- #endif
-		["rank"] = 1,
+		rank = 1,
 	}),
 	r(3100, {	-- Blacksmithing (Journeyman)
-		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		timeline = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 10,
+		lvl = 10,
 		-- #endif
-		["rank"] = 2,
+		rank = 2,
 	}),
 	r(3538, {	-- Blacksmithing (Expert)
-		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		timeline = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
 		-- #if SEASON_OF_DISCOVERY
-		["OnUpdate"] = [[function(t)
+		OnUpdate = [[function(t)
 			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 26 or 20;
 		end]],
 		-- #else
-		["lvl"] = 20,
+		lvl = 20,
 		-- #endif
 		-- #endif
-		["rank"] = 3,
+		rank = 3,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264434, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Blacksmithing
-	r(330134, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [CLASSIC]
-	r(330140, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [CLASSIC]
-	r(330141, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [CLASSIC]
-	r(330142, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [CLASSIC]
-	r(330143, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [CLASSIC]
+	applyclassicphase(BFA_PHASE_ONE, r(264434, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Blacksmithing
+	r(330134, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [CLASSIC]
+	r(330140, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [CLASSIC]
+	r(330141, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [CLASSIC]
+	r(330142, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV [CLASSIC]
+	r(330143, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V [CLASSIC]
 	n(ARMOR, {
-		r(280671, {["timeline"] = {ADDED_8_0_1_LAUNCH}}),	-- Barbaric Iron Hauberk
+		r(280671, {timeline = {ADDED_8_0_1_LAUNCH}}),	-- Barbaric Iron Hauberk
 		r(2661),	-- Copper Chain Belt
 		r(3319),	-- Copper Chain Boots
 		r(2663),	-- Copper Bracers
@@ -92,10 +92,10 @@ APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = {
 		r(19668),	-- Truesilver Skeleton Key
 	}),
 	filter(REAGENTS, {
-		r(14379, {["timeline"] = {REMOVED_5_0_4}}),	-- Golden Rod
+		r(14379, {timeline = {REMOVED_5_0_4}}),	-- Golden Rod
 		r(8768),	-- Iron Buckle
-		r(7818, {["timeline"] = {REMOVED_5_0_4}}),	-- Silver Rod
-		r(14380, {["timeline"] = {REMOVED_5_0_4}}),	-- Truesilver Rod
+		r(7818, {timeline = {REMOVED_5_0_4}}),	-- Silver Rod
+		r(14380, {timeline = {REMOVED_5_0_4}}),	-- Truesilver Rod
 	}),
 	n(WEAPONS, {
 		r(2738),	-- Copper Axe
@@ -112,32 +112,32 @@ APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = {
 		r(2737),	-- Copper Mace
 		r(2739),	-- Copper Shortsword
 		r(15972),	-- Glinting Steel Dagger
-		applyclassicphase(TBC_PHASE_ONE, r(34982, {["timeline"] = {ADDED_2_0_5,REMOVED_5_0_4}})),	-- Enchanted Thorium Blades
+		applyclassicphase(TBC_PHASE_ONE, r(34982, {timeline = {ADDED_2_0_5,REMOVED_5_0_4}})),	-- Enchanted Thorium Blades
 		r(3296),	-- Heavy Bronze Mace
 		r(3292),	-- Heavy Copper Broadsword
 		r(7408),	-- Heavy Copper Maul
 		r(9993),	-- Heavy Mithril Axe
 		r(6517),	-- Pearl-handled Dagger
-		applyclassicphase(TBC_PHASE_ONE, r(34979, {["timeline"] = {ADDED_2_0_5,REMOVED_5_0_4}})),	-- Thick Bronze Darts
+		applyclassicphase(TBC_PHASE_ONE, r(34979, {timeline = {ADDED_2_0_5,REMOVED_5_0_4}})),	-- Thick Bronze Darts
 		r(3294),	-- Thick War Axe
-		applyclassicphase(TBC_PHASE_ONE, r(34981, {["timeline"] = {ADDED_2_0_5,REMOVED_5_0_4}})),	-- Whirling Steel Axes
+		applyclassicphase(TBC_PHASE_ONE, r(34981, {timeline = {ADDED_2_0_5,REMOVED_5_0_4}})),	-- Whirling Steel Axes
 	}),
 };
 ARTISAN_BLACKSMITHING = {
 	r(9785, {	-- Blacksmithing (Artisan)
-		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		timeline = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
 		-- #if SEASON_OF_DISCOVERY
-		["OnUpdate"] = [[function(t)
+		OnUpdate = [[function(t)
 			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 41 or 35;
 		end]],
 		-- #else
-		["lvl"] = 35,
+		lvl = 35,
 		-- #endif
 		-- #endif
-		["rank"] = 4,
+		rank = 4,
 	}),
 	n(ARMOR, {
 		r(9968),	-- Heavy Mithril Boots
@@ -153,41 +153,41 @@ ARTISAN_BLACKSMITHING = {
 		-- #endif
 		r(9961),	-- Mithril Coif
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1261497),	-- Shadowforge Sconce
 		r(1261499),	-- Steel Ironforge Emblem
 	})),
 	n(WEAPONS, {
 		r(10001),	-- Big Black Mace
-		applyclassicphase(TBC_PHASE_ONE, r(34981, {["timeline"] = {ADDED_2_0_5,REMOVED_5_0_4}})),	-- Whirling Steel Axes
+		applyclassicphase(TBC_PHASE_ONE, r(34981, {timeline = {ADDED_2_0_5,REMOVED_5_0_4}})),	-- Whirling Steel Axes
 	}),
 	filter(MISC, {
-		r(20201, {["timeline"] = {REMOVED_5_0_4}}),	-- Arcanite Rod
+		r(20201, {timeline = {REMOVED_5_0_4}}),	-- Arcanite Rod
 		r(19669),	-- Arcanite Skeleton Key
 		r(16639),	-- Dense Grinding Stone
 		r(16641),	-- Dense Sharpening Stone
 		r(16640),	-- Dense Weightstone
 	}),
 };
-CLASSIC_WEAPONSMITHING = sharedData({ ["timeline"] = { REMOVED_4_0_3_LAUNCH } }, {
+CLASSIC_WEAPONSMITHING = sharedData({ timeline = { REMOVED_4_0_3_LAUNCH } }, {
 	r(9787, {	-- Weaponsmith
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
 	}),
 	r(17041, {	-- Master Axesmith
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
 	}),
 	r(17039, {	-- Master Swordsmith
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
 	}),
 	r(17040, {	-- Master Hammersmith
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
 	}),
 	r(10003),	-- The Shatterer
@@ -195,10 +195,10 @@ CLASSIC_WEAPONSMITHING = sharedData({ ["timeline"] = { REMOVED_4_0_3_LAUNCH } },
 	r(10011),	-- Blight
 	r(10015),	-- Truesilver Champion
 });
-CLASSIC_ARMORSMITHING = sharedData({ ["timeline"] = { REMOVED_4_0_3_LAUNCH } }, {
+CLASSIC_ARMORSMITHING = sharedData({ timeline = { REMOVED_4_0_3_LAUNCH } }, {
 	r(9788, {	-- Armorsmith
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
 	}),
 	r(9974),	-- Truesilver Breastplate
@@ -211,22 +211,22 @@ ARTISAN_BLACKSMITHING
 	{}
 -- #endif
 );
-TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
+TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2_0_5 } }, {
 	r(29844, {	-- Blacksmithing (Master)
-		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 50,
+		lvl = 50,
 		-- #endif
-		["rank"] = 5,
+		rank = 5,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264436, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Outland Blacksmithing
-	r(330144, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [The Burning Cruse]
-	r(330145, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [The Burning Cruse]
-	r(330146, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [The Burning Cruse]
-	r(330147, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [The Burning Cruse]
-	r(330148, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [The Burning Cruse]
+	applyclassicphase(BFA_PHASE_ONE, r(264436, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Outland Blacksmithing
+	r(330144, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [The Burning Cruse]
+	r(330145, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [The Burning Cruse]
+	r(330146, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [The Burning Cruse]
+	r(330147, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV [The Burning Cruse]
+	r(330148, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V [The Burning Cruse]
 	n(ARMOR, {
 		r(29553),	-- Fel Iron Chain Bracers
 		r(29551),	-- Fel Iron Chain Coif
@@ -238,13 +238,13 @@ TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(29545),	-- Fel Iron Plate Gloves
 		r(29549),	-- Fel Iron Plate Pants
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1261347),	-- Bronze Banner of the Exiled
 		r(1261359),	-- Draenei Crystal Forge
 		r(1261383),	-- Draenei Smith's Anvil
 	})),
 	filter(MISC, {
-		r(32655, {["timeline"] = {ADDED_2_0_5,REMOVED_5_0_4}}),	-- Fel Iron Rod
+		r(32655, {timeline = {ADDED_2_0_5,REMOVED_5_0_4}}),	-- Fel Iron Rod
 		r(29654),	-- Fel Sharpening Stone
 		r(34607),	-- Fel Weightstone
 		r(32284),	-- Lesser Rune of Warding
@@ -253,10 +253,10 @@ TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(29565),	-- Fel Iron Greatsword
 		r(29558),	-- Fel Iron Hammer
 		r(29557),	-- Fel Iron Hatchet
-		r(34983, {["timeline"] = {ADDED_2_0_5,REMOVED_5_0_4}}),	-- Felsteel Whisper Knives
+		r(34983, {timeline = {ADDED_2_0_5,REMOVED_5_0_4}}),	-- Felsteel Whisper Knives
 	}),
 }));
-TBC_ARMORSMITHING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_2_0_5, REMOVED_4_0_3_LAUNCH } }, {
+TBC_ARMORSMITHING = applyclassicphase(TBC_PHASE_ONE, sharedData({ timeline = { ADDED_2_0_5, REMOVED_4_0_3_LAUNCH } }, {
 	r(34533),	-- Breastplate of Kings
 	r(34534),	-- Bulwark of Kings
 	r(36257),	-- Bulwark of the Ancient Kings
@@ -268,7 +268,7 @@ TBC_ARMORSMITHING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] =
 	r(34530),	-- Twisting Nether Chain Shirt
 	r(36124),	-- Windforged Leggings
 }));
-TBC_WEAPONSMITHING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_2_0_5, REMOVED_4_0_3_LAUNCH } }, {
+TBC_WEAPONSMITHING = applyclassicphase(TBC_PHASE_ONE, sharedData({ timeline = { ADDED_2_0_5, REMOVED_4_0_3_LAUNCH } }, {
 	r(34542),	-- Black Planar Edge
 	r(36258),	-- Blazefury
 	r(34537),	-- Blazeguard
@@ -299,22 +299,22 @@ TBC_WEAPONSMITHING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] 
 	r(36131),	-- Windforged Rapier
 	-- #endif
 }));
-WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {
+WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3 } }, {
 	r(51300, {	-- Blacksmithing (Grand Master)
-		["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 65,
+		lvl = 65,
 		-- #endif
-		["rank"] = 6,
+		rank = 6,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264438, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Blacksmithing
-	r(330149, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Wrath of the Lich King]
-	r(330150, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Wrath of the Lich King]
-	r(330151, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Wrath of the Lich King]
-	r(330152, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Wrath of the Lich King]
-	r(330153, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Wrath of the Lich King]
+	applyclassicphase(BFA_PHASE_ONE, r(264438, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Blacksmithing
+	r(330149, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [Wrath of the Lich King]
+	r(330150, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [Wrath of the Lich King]
+	r(330151, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [Wrath of the Lich King]
+	r(330152, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV [Wrath of the Lich King]
+	r(330153, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V [Wrath of the Lich King]
 	n(ARMOR, {
 		r(59436),	-- Brilliant Saronite Belt
 		r(55057),	-- Brilliant Saronite Boots
@@ -381,7 +381,7 @@ WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(55376),	-- Tempered Titansteel Treads
 		r(55298),	-- Vengeance Bindings
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1261327),	-- Dalaran Runic Anvil
 		r(1272662),	-- Dalaran Sewer Gate
 		r(1272614),	-- Dalaran Sun Sconce
@@ -390,14 +390,14 @@ WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(59405),	-- Cobalt Skeleton Key
 		r(55656),	-- Eternal Belt Buckle
 		r(55628, {	-- Socket Bracer
-			["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 },
-			["rank"] = 1,
+			timeline = { ADDED_3_0_3, REMOVED_6_0_2 },
+			rank = 1,
 		}),
 		r(55641, {	-- Socket Gloves
-			["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 },
-			["rank"] = 1,
+			timeline = { ADDED_3_0_3, REMOVED_6_0_2 },
+			rank = 1,
 		}),
-		r(55732, {["timeline"] = {ADDED_3_0_3,REMOVED_5_0_4}}),	-- Titanium Rod
+		r(55732, {timeline = {ADDED_3_0_3,REMOVED_5_0_4}}),	-- Titanium Rod
 		r(56357),	-- Titanium Shield Spike
 		r(59406),	-- Titanium Skeleton Key
 		r(55839),	-- Titanium Weapon Chain
@@ -419,43 +419,43 @@ WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(59442),	-- Saronite Spellblade
 		r(55177),	-- Savage Cobalt Slicer
 		r(55200),	-- Sturdy Cobalt Quickblade
-		r(55202, {["timeline"] = {ADDED_3_0_3,REMOVED_5_0_4}}),	-- Sure-fire Shuriken
+		r(55202, {timeline = {ADDED_3_0_3,REMOVED_5_0_4}}),	-- Sure-fire Shuriken
 		r(55370),	-- Titansteel Bonecrusher
 		r(55369),	-- Titansteel Destroyer
 		r(55371),	-- Titansteel Guardian
 		r(56234),	-- Titansteel Shanker
 		r(56400),	-- Titansteel Shield Wall
-		r(63182, {["timeline"] = {ADDED_3_1_0}}),	-- Titansteel Spellblade
+		r(63182, {timeline = {ADDED_3_1_0}}),	-- Titansteel Spellblade
 		-- #if AFTER CATA
 		r(55185),	-- Saronite Mindcrusher
 		-- #endif
 	}),
 }));
-WRATH_ARMORSMITHING = applyclassicphase(WRATH_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3_LAUNCH } }, {
+WRATH_ARMORSMITHING = applyclassicphase(WRATH_PHASE_ONE, sharedData({ timeline = { ADDED_3_0_3, REMOVED_4_0_3_LAUNCH } }, {
 	r(55186),	-- Chestplate of Conquest
 	r(55187),	-- Legplates of Conquest
 }));
-WRATH_WEAPONSMITHING = applyclassicphase(WRATH_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3_LAUNCH } }, {
+WRATH_WEAPONSMITHING = applyclassicphase(WRATH_PHASE_ONE, sharedData({ timeline = { ADDED_3_0_3, REMOVED_4_0_3_LAUNCH } }, {
 	r(55183),	-- Corroded Saronite Edge
 	r(55184),	-- Corroded Saronite Woundbringer
 	-- #if BEFORE CATA
 	r(55185),	-- Saronite Mindcrusher
 	-- #endif
 }));
-CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ timeline = { ADDED_4_0_3_LAUNCH } }, {
 	r(76666, {	-- Blacksmithing (Illustrious)
-		["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
-		["rank"] = 7,
+		rank = 7,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264440, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Cataclysm Blacksmithing
-	r(330154, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Cataclysm]
-	r(330155, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Cataclysm]
-	r(330156, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Cataclysm]
-	r(330157, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Cataclysm]
-	r(330158, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Cataclysm]
+	applyclassicphase(BFA_PHASE_ONE, r(264440, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Cataclysm Blacksmithing
+	r(330154, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [Cataclysm]
+	r(330155, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [Cataclysm]
+	r(330156, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [Cataclysm]
+	r(330157, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV [Cataclysm]
+	r(330158, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V [Cataclysm]
 	n(ARMOR, {
 		r(76181),	-- Hardened Obsidium Belt
 		r(76182),	-- Hardened Obsidium Boots
@@ -482,12 +482,12 @@ CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"]
 		r(76287),	-- Stormforged Legguards
 		r(76286),	-- Stormforged Shoulders
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1261256),	-- Gilnean Pitchfork
 		r(1262308),	-- Standing Smoke Lamp
 	})),
 	filter(MISC, {
-		r(92375, {["timeline"] = {ADDED_4_0_3_LAUNCH,REMOVED_5_0_4}}),	-- Elementium Rod
+		r(92375, {timeline = {ADDED_4_0_3_LAUNCH,REMOVED_5_0_4}}),	-- Elementium Rod
 		r(76441),	-- Elementium Shield Spike
 		r(76178),	-- Folded Obsidium
 		r(76438),	-- Obsidium Skeleton Key
@@ -510,305 +510,305 @@ CATA_BLACKSMITHING
 {}
 -- #endif
 );
-COMMON_CATACLYSM_BLACKSMITHING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+COMMON_CATACLYSM_BLACKSMITHING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ timeline = { ADDED_4_0_3_LAUNCH } }, {
 	i(66100, {	-- Plans: Ebonsteel Belt Buckle (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
+		cost = {{"i", PYRIUM, 5}},
 	}),
 	i(66113, {	-- Plans: Elementium Bonesplitter (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66106, {	-- Plans: Elementium Deathplate (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66115, {	-- Plans: Elementium Earthguard (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66107, {	-- Plans: Elementium Girdle of Pain (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	i(67603, {	-- Plans: Elementium Gutslicer (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66111, {	-- Plans: Elementium Hammer (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66112, {	-- Plans: Elementium Poleaxe (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66114, {	-- Plans: Elementium Shank (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66110, {	-- Plans: Elementium Spellblade (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66116, {	-- Plans: Elementium Stormshield (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(67606, {	-- Plans: Forged Elementium Mindcrusher (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
+		cost = {{"i", PYRIUM, 5}},
 	}),
 	i(66105, {	-- Plans: Hardened Elementium Girdle (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	i(66104, {	-- Plans: Hardened Elementium Hauberk (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66109, {	-- Plans: Light Elementium Belt (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	i(66108, {	-- Plans: Light Elementium Chestguard (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66101, {	-- Plans: Pyrium Shield Spike (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
+		cost = {{"i", PYRIUM, 5}},
 	}),
 	i(66103, {	-- Plans: Pyrium Weapon Chain (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	-- #if ANYCLASSIC
 	-- CRIEVE NOTE: Cataclysm Classic Devs couldn't figure out how to reconcile the recipe getting replaced, so they completely removed the old ones and put in new ones. Idiots.
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238131, {	-- Plans: Bloodied Pyrium Belt (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238132, {	-- Plans: Bloodied Pyrium Boots (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238129, {	-- Plans: Bloodied Pyrium Bracers (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238136, {	-- Plans: Bloodied Pyrium Breastplate (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", PYRIUM, 5}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238130, {	-- Plans: Bloodied Pyrium Gauntlets (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238135, {	-- Plans: Bloodied Pyrium Helm (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", PYRIUM, 5}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238134, {	-- Plans: Bloodied Pyrium Legguards (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", PYRIUM, 5}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238133, {	-- Plans: Bloodied Pyrium Shoulders (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	-- CRIEVE NOTE: These were repurposed from the Vicious versions and renamed to Bloodthirsty for Cata Classic in Phase 4. For Cata Classic Classic, might need to update the phase ID.
 	i(66127, {	-- Plans: Bloodthirsty Ornate Pyrium Belt (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	i(66128, {	-- Plans: Bloodthirsty Ornate Pyrium Boots (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66125, {	-- Plans: Bloodthirsty Ornate Pyrium Bracers (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	i(66132, {	-- Plans: Bloodthirsty Ornate Pyrium Breastplate (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
+		cost = {{"i", PYRIUM, 5}},
 	}),
 	i(66126, {	-- Plans: Bloodthirsty Ornate Pyrium Gauntlets (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	i(66131, {	-- Plans: Bloodthirsty Ornate Pyrium Helm (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
+		cost = {{"i", PYRIUM, 5}},
 	}),
 	i(66130, {	-- Plans: Bloodthirsty Ornate Pyrium Legguards (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
+		cost = {{"i", PYRIUM, 5}},
 	}),
 	i(66129, {	-- Plans: Bloodthirsty Ornate Pyrium Shoulders (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66119, {	-- Plans: Bloodthirsty Pyrium Belt (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	i(66120, {	-- Plans: Bloodthirsty Pyrium Boots (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66117, {	-- Plans: Bloodthirsty Pyrium Bracers (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	i(66124, {	-- Plans: Bloodthirsty Pyrium Breastplate (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
+		cost = {{"i", PYRIUM, 5}},
 	}),
 	i(66118, {	-- Plans: Bloodthirsty Pyrium Gauntlets (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	i(66123, {	-- Plans: Bloodthirsty Pyrium Helm (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
+		cost = {{"i", PYRIUM, 5}},
 	}),
 	i(66122, {	-- Plans: Bloodthirsty Pyrium Legguards (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
+		cost = {{"i", PYRIUM, 5}},
 	}),
 	i(66121, {	-- Plans: Bloodthirsty Pyrium Shoulders (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238139, {	-- Plans: Ornate Pyrium Belt (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238140, {	-- Plans: Ornate Pyrium Boots (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238137, {	-- Plans: Ornate Pyrium Bracers (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238144, {	-- Plans: Ornate Pyrium Breastplate (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", PYRIUM, 5}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238138, {	-- Plans: Ornate Pyrium Gauntlets (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238143, {	-- Plans: Ornate Pyrium Helm (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", PYRIUM, 5}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238142, {	-- Plans: Ornate Pyrium Legguards (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", PYRIUM, 5}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238141, {	-- Plans: Ornate Pyrium Shoulders (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238084, {	-- Plans: Vicious Ornate Pyrium Belt (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238085, {	-- Plans: Vicious Ornate Pyrium Boots (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238082, {	-- Plans: Vicious Ornate Pyrium Bracers (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238089, {	-- Plans: Vicious Ornate Pyrium Breastplate (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", PYRIUM, 5}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238083, {	-- Plans: Vicious Ornate Pyrium Gauntlets (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238088, {	-- Plans: Vicious Ornate Pyrium Helm (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", PYRIUM, 5}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238087, {	-- Plans: Vicious Ornate Pyrium Legguards (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", PYRIUM, 5}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238086, {	-- Plans: Vicious Ornate Pyrium Shoulders (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238076, {	-- Plans: Vicious Pyrium Belt (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238077, {	-- Plans: Vicious Pyrium Boots (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238074, {	-- Plans: Vicious Pyrium Bracers (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238081, {	-- Plans: Vicious Pyrium Breastplate (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", PYRIUM, 5}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238075, {	-- Plans: Vicious Pyrium Gauntlets (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238080, {	-- Plans: Vicious Pyrium Helm (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", PYRIUM, 5}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238079, {	-- Plans: Vicious Pyrium Legguards (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", PYRIUM, 5}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238078, {	-- Plans: Vicious Pyrium Shoulders (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	-- #else
 	i(66127, {	-- Plans: Vicious Ornate Pyrium Belt (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	i(66128, {	-- Plans: Vicious Ornate Pyrium Boots (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66125, {	-- Plans: Vicious Ornate Pyrium Bracers (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	i(66132, {	-- Plans: Vicious Ornate Pyrium Breastplate (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
+		cost = {{"i", PYRIUM, 5}},
 	}),
 	i(66126, {	-- Plans: Vicious Ornate Pyrium Gauntlets (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	i(66131, {	-- Plans: Vicious Ornate Pyrium Helm (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
+		cost = {{"i", PYRIUM, 5}},
 	}),
 	i(66130, {	-- Plans: Vicious Ornate Pyrium Legguards (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
+		cost = {{"i", PYRIUM, 5}},
 	}),
 	i(66129, {	-- Plans: Vicious Ornate Pyrium Shoulders (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66119, {	-- Plans: Vicious Pyrium Belt (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	i(66120, {	-- Plans: Vicious Pyrium Boots (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	i(66117, {	-- Plans: Vicious Pyrium Bracers (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	i(66124, {	-- Plans: Vicious Pyrium Breastplate (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
+		cost = {{"i", PYRIUM, 5}},
 	}),
 	i(66118, {	-- Plans: Vicious Pyrium Gauntlets (RECIPE!)
-		["cost"] = {{"i", ELEMENTIUM_BAR, 20}},
+		cost = {{"i", ELEMENTIUM_BAR, 20}},
 	}),
 	i(66123, {	-- Plans: Vicious Pyrium Helm (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
+		cost = {{"i", PYRIUM, 5}},
 	}),
 	i(66122, {	-- Plans: Vicious Pyrium Legguards (RECIPE!)
-		["cost"] = {{"i", PYRIUM, 5}},
+		cost = {{"i", PYRIUM, 5}},
 	}),
 	i(66121, {	-- Plans: Vicious Pyrium Shoulders (RECIPE!)
-		["cost"] = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
+		cost = {{"i", HARDENED_ELEMENTIUM_BAR, 2}},
 	}),
 	-- #endif
 }));
-MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
 	r(110396, {	-- Blacksmithing (Zen Master)
-		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
-		["rank"] = 8,
+		rank = 8,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264442, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Pandaria Blacksmithing
-	r(330159, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Mist of Pandaria]
-	r(330160, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Mist of Pandaria]
-	r(330161, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Mist of Pandaria]
-	r(330162, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Mist of Pandaria]
-	r(330163, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Mist of Pandaria]
+	applyclassicphase(BFA_PHASE_ONE, r(264442, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Pandaria Blacksmithing
+	r(330159, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [Mist of Pandaria]
+	r(330160, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [Mist of Pandaria]
+	r(330161, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [Mist of Pandaria]
+	r(330162, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV [Mist of Pandaria]
+	r(330163, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V [Mist of Pandaria]
 	n(ARMOR, {
 		r(122583),	-- Ghost-Forged Belt
 		r(122638),	-- Ghost-Forged Blade
@@ -819,28 +819,28 @@ MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timelin
 		r(122576),	-- Ghost-Forged Helm
 		r(122580),	-- Ghost-Forged Legplates
 		r(122577),	-- Ghost-Forged Shoulders
-		r(122589, {["timeline"] = {CREATED_5_0_4, ADDED_7_3_5, REMOVED_10_0_2}}),	-- Lightsteel Bracers
-		r(122573, {["timeline"] = {CREATED_5_0_4, ADDED_7_3_5, REMOVED_10_0_2}}),	-- Spiritguard Bracers
+		r(122589, {timeline = {CREATED_5_0_4, ADDED_7_3_5, REMOVED_10_0_2}}),	-- Lightsteel Bracers
+		r(122573, {timeline = {CREATED_5_0_4, ADDED_7_3_5, REMOVED_10_0_2}}),	-- Spiritguard Bracers
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1261234),	-- Pandaren Fireplace
 		r(1261235),	-- Pandaren Signal Brazier
 	})),
 	filter(MISC, {
-		r(126869, {["timeline"] = {CREATED_5_0_4, ADDED_7_3_5, REMOVED_10_0_2}}),	-- Folded Ghost Iron
+		r(126869, {timeline = {CREATED_5_0_4, ADDED_7_3_5, REMOVED_10_0_2}}),	-- Folded Ghost Iron
 		r(122633),	-- Ghostly Skeleton Key
 		r(113263, {	-- Socket Bracer
-			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-			["rank"] = 2,
+			timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+			rank = 2,
 		}),
 		r(114112, {	-- Socket Gloves
-			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-			["rank"] = 2,
+			timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+			rank = 2,
 		}),
 	}),
 	filter(MISC, sharedData({
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_0_3_LAUNCH },
-		["u"]=TRAINING
+		timeline = { ADDED_5_2_0, REMOVED_6_0_3_LAUNCH },
+		u=TRAINING
 	}, {
 		r(139753),	-- Training Project: Decorative Spoons
 		r(139756),	-- Training Project: Ghost Iron Barrel
@@ -874,7 +874,7 @@ MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timelin
 		r(122636),	-- Spiritguard Shield
 	}),
 }));
-COMMON_MOP_BLACKSMITHING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData({ ["cost"] = {{"i", SPIRIT_OF_HARMONY, 1}}, ["timeline"] = { ADDED_5_0_4 } }, {
+COMMON_MOP_BLACKSMITHING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData({ cost = {{"i", SPIRIT_OF_HARMONY, 1}}, timeline = { ADDED_5_0_4 } }, {
 	i(84158),	-- Plans: Contender's Revenant Belt (RECIPE!)
 	i(84159),	-- Plans: Contender's Revenant Boots (RECIPE!)
 	i(84160),	-- Plans: Contender's Revenant Bracers (RECIPE!)
@@ -902,22 +902,22 @@ COMMON_MOP_BLACKSMITHING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData({
 	i(84226),	-- Plans: Masterwork Spiritguard Shield (RECIPE!)
 	i(84227),	-- Plans: Masterwork Spiritguard Shoulders (RECIPE!)
 }));
-DRAENOR_BLACKSMITHING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	["description"] = "This is a reward for completing the introductory Blacksmithing questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
-	["groups"] = {
+DRAENOR_BLACKSMITHING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+	description = "This is a reward for completing the introductory Blacksmithing questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
+	groups = {
 		r(158737, {	-- Blacksmithing (Draenor Master)
-			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC
-			["collectible"] = false,
+			collectible = false,
 			-- #endif
-			["rank"] = 9,
+			rank = 9,
 		}),
-		applyclassicphase(BFA_PHASE_ONE, r(264444, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Draenor Blacksmithing
-		r(330164, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Warlords of Draenor]
-		r(330165, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Warlords of Draenor]
-		r(330166, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Warlords of Draenor]
-		r(330167, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Warlords of Draenor]
-		r(330168, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Warlords of Draenor]
+		applyclassicphase(BFA_PHASE_ONE, r(264444, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Draenor Blacksmithing
+		r(330164, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [Warlords of Draenor]
+		r(330165, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [Warlords of Draenor]
+		r(330166, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [Warlords of Draenor]
+		r(330167, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV [Warlords of Draenor]
+		r(330168, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V [Warlords of Draenor]
 		r(171692),	-- Smoldering Breastplate
 		r(171693),	-- Smoldering Greaves
 		r(171691),	-- Smoldering Helm
@@ -925,122 +925,122 @@ DRAENOR_BLACKSMITHING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSel
 		r(171690),	-- Truesteel Ingot
 	},
 })));
-COMMON_DRAENOR_BLACKSMITHING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+COMMON_DRAENOR_BLACKSMITHING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	i(256940, {	-- Plans: Blackrock Weapon Rack (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
-		["timeline"] = { ADDED_11_2_7 },
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		timeline = { ADDED_11_2_7 },
 	}),
 	i(256939, {	-- Plans: Frostwall Forge (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
-		["timeline"] = { ADDED_11_2_7 },
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		timeline = { ADDED_11_2_7 },
 	}),
 	i(116746, {	-- Plans: Greater Steelforged Essence (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
-		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_6_2_0 },
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
+		timeline = { ADDED_6_0_3_LAUNCH, REMOVED_6_2_0 },
 	}),
 	i(116744, {	-- Plans: Greater Truesteel Essence (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
-		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_6_2_0 },
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
+		timeline = { ADDED_6_0_3_LAUNCH, REMOVED_6_2_0 },
 	}),
 	i(119329, {	-- Plans: Soul of the Forge (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(120262, {	-- Plans: Steelforged Aegis (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(120260, {	-- Plans: Steelforged Axe (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(116731, {	-- Plans: Steelforged Dagger (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(116729, {	-- Plans: Steelforged Greataxe (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(116732, {	-- Plans: Steelforged Hammer (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(116730, {	-- Plans: Steelforged Saber (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(116733, {	-- Plans: Steelforged Shield (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(116740, {	-- Plans: Truesteel Armguards (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(116741, {	-- Plans: Truesteel Boots (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(116739, {	-- Plans: Truesteel Breastplate (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(116738, {	-- Plans: Truesteel Gauntlets (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(116737, {	-- Plans: Truesteel Greaves (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(116734, {	-- Plans: Truesteel Grinder (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(116736, {	-- Plans: Truesteel Helm (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(116735, {	-- Plans: Truesteel Pauldrons (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(118044, {	-- Plans: Truesteel Reshaper (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(116742, {	-- Plans: Truesteel Waistguard (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},
 	}),
 	i(116743, {	-- Plans: Truesteel Essence (RECIPE!)
-		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
-		["collectible"] = false,
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
-		["timeline"] = { REMOVED_10_0_5 },
+		description = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+		collectible = false,
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
+		timeline = { REMOVED_10_0_5 },
 	}),
 	i(116745, {	-- Plans: Steelforged Essence (RECIPE!)
-		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
-		["collectible"] = false,
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
-		["timeline"] = { REMOVED_10_0_5 },
+		description = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+		collectible = false,
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
+		timeline = { REMOVED_10_0_5 },
 	}),
 	i(202223, {	-- Plans: Impressive Steelforged Essence (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
-		["timeline"] = { ADDED_10_0_5 },
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
+		timeline = { ADDED_10_0_5 },
 	}),
 	i(202224, {	-- Plans: Remarkable Steelforged Essence (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
-		["timeline"] = { ADDED_10_0_5 },
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
+		timeline = { ADDED_10_0_5 },
 	}),
 	i(202226, {	-- Plans: Impressive Truesteel Essence (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
-		["timeline"] = { ADDED_10_0_5 },
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
+		timeline = { ADDED_10_0_5 },
 	}),
 	i(202227, {	-- Plans: Remarkable Truesteel Essence (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
-		["timeline"] = { ADDED_10_0_5 },
+		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 5}},
+		timeline = { ADDED_10_0_5 },
 	}),
 }));
-LEGION_BLACKSMITHING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+LEGION_BLACKSMITHING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1260693),	-- Suramar Fence
 		r(1260695),	-- Suramar Fencepost
 		r(1260698),	-- Tauren Soup Pot
 	})),
 }));
-BFA_BLACKSMITHING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
-	r(330174, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Battle for Azeroth]
-	r(330175, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Battle for Azeroth]
-	r(330176, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Battle for Azeroth]
-	r(330177, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Battle for Azeroth]
-	r(330178, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Battle for Azeroth]
+BFA_BLACKSMITHING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+	r(330174, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [Battle for Azeroth]
+	r(330175, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [Battle for Azeroth]
+	r(330176, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [Battle for Azeroth]
+	r(330177, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV [Battle for Azeroth]
+	r(330178, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V [Battle for Azeroth]
 	n(ARMOR, {
-		r(285081, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Stormsteel Girdle
-		r(285082, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Stormsteel Legguards
+		r(285081, {timeline = {ADDED_8_1_0}}),	-- Enhanced Stormsteel Girdle
+		r(285082, {timeline = {ADDED_8_1_0}}),	-- Enhanced Stormsteel Legguards
 		r(269451),	-- Honorable Combatant's Plate Armguards [Rank 1]
 		r(269424),	-- Honorable Combatant's Plate Boots [Rank 1]
 		r(269421),	-- Honorable Combatant's Plate Gauntlets [Rank 1]
@@ -1054,35 +1054,35 @@ BFA_BLACKSMITHING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(253171),	-- Monel-Hardened Helm
 		r(253177),	-- Monel-Hardened Pauldrons
 		r(253180),	-- Monel-Hardened Waistguard
-		r(282889, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Armguards [Rank 1]
-		r(283249, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Boots [Rank 1]
-		r(283245, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Gauntlets [Rank 1]
-		r(283242, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Greaves [Rank 1]
-		r(283239, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Waistguard [Rank 1]
+		r(282889, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Armguards [Rank 1]
+		r(283249, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Boots [Rank 1]
+		r(283245, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Gauntlets [Rank 1]
+		r(283242, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Greaves [Rank 1]
+		r(283239, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Plate Waistguard [Rank 1]
 		r(253190),	-- Stormsteel Girdle
 		r(253186),	-- Stormsteel Legguards
-		r(304317, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Armguards [Rank 1]
-		r(304307, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Boots [Rank 1]
-		r(304308, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Gauntlets [Rank 1]
-		r(304312, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Greaves [Rank 1]
-		r(304315, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Waistguard [Rank 1]
+		r(304317, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Armguards [Rank 1]
+		r(304307, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Boots [Rank 1]
+		r(304308, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Gauntlets [Rank 1]
+		r(304312, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Greaves [Rank 1]
+		r(304315, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Plate Waistguard [Rank 1]
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1260691),	-- Brennadam Grinder
-		r(1313521, { ["timeline"] = { ADDED_12_1_5 } }),	-- Gleaming Lightforge
-		r(1315468, { ["timeline"] = { ADDED_12_1_5 } }),	-- Nomad's Steel Forge
+		r(1313521, { timeline = { ADDED_12_1_5 } }),	-- Gleaming Lightforge
+		r(1315468, { timeline = { ADDED_12_1_5 } }),	-- Nomad's Steel Forge
 		r(1260692),	-- Stormsong Stove
 	})),
 	filter(MISC, {
-		r(287235, {["timeline"] = {ADDED_8_1_0}}),	-- Aqueous Reconstruction
+		r(287235, {timeline = {ADDED_8_1_0}}),	-- Aqueous Reconstruction
 		r(278416),	-- Magnetic Mining Pick
 		r(253110),	-- Monel-Hardened Hoofplates
-		r(286015, {["timeline"] = {ADDED_8_1_0}}),	-- Monel-Hardened Hoofplates [Rank 2]
+		r(286015, {timeline = {ADDED_8_1_0}}),	-- Monel-Hardened Hoofplates [Rank 2]
 		r(253112),	-- Monel-Hardened Stirrups
 		r(269064),	-- Monelite Skeleton Key
 		r(278415),	-- Storm Silver Spurs
 		r(278417),	-- Platinum Whetstone
-		r(286631, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguinated Reconstruction
+		r(286631, {timeline = {ADDED_8_1_0}}),	-- Sanguinated Reconstruction
 	}),
 	n(WEAPONS, {
 		r(269464),	-- Honorable Combatant's Cutlass [Rank 1]
@@ -1097,12 +1097,12 @@ BFA_BLACKSMITHING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(253141),	-- Monel-Hardened Polearm
 		r(253138),	-- Monel-Hardened Shanker
 		r(253113),	-- Monel-Hardened Shield
-		r(282871, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Cutlass [Rank 1]
-		r(282868, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Deckpounder [Rank 1]
-		r(282859, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Polearm [Rank 1]
-		r(282862, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Shanker [Rank 1]
-		r(282876, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Shield [Rank 1]
-		r(282865, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Spellblade [Rank 1]
+		r(282871, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Cutlass [Rank 1]
+		r(282868, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Deckpounder [Rank 1]
+		r(282859, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Polearm [Rank 1]
+		r(282862, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Shanker [Rank 1]
+		r(282876, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Shield [Rank 1]
+		r(282865, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Spellblade [Rank 1]
 		r(253156),	-- Stormsteel Dagger [Rank 1]
 		r(253157),	-- Stormsteel Dagger [Rank 2]
 		r(278131),	-- Stormsteel Saber [Rank 1]
@@ -1111,15 +1111,15 @@ BFA_BLACKSMITHING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(253117),	-- Stormsteel Shield [Rank 2]
 		r(253159),	-- Stormsteel Spear [Rank 1]
 		r(253160),	-- Stormsteel Spear [Rank 2]
-		r(304318, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Cutlass [Rank 1]
-		r(304320, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Deckpounder [Rank 1]
-		r(304324, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Polearm [Rank 1]
-		r(304323, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Shanker [Rank 1]
-		r(304314, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Shield [Rank 1]
-		r(304322, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Spellblade [Rank 1]
+		r(304318, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Cutlass [Rank 1]
+		r(304320, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Deckpounder [Rank 1]
+		r(304324, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Polearm [Rank 1]
+		r(304323, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Shanker [Rank 1]
+		r(304314, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Shield [Rank 1]
+		r(304322, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Spellblade [Rank 1]
 	}),
 }));
-NAZJATAR_BLACKSMITHING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
+NAZJATAR_BLACKSMITHING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
 	n(ARMOR, {
 		r(294763),	-- Notorious Combatant's Plate Armguards [Rank 1]
 		r(294748),	-- Notorious Combatant's Plate Boots [Rank 1]
@@ -1141,7 +1141,7 @@ NAZJATAR_BLACKSMITHING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timel
 		r(294772),	-- Notorious Combatant's Spellblade [Rank 1]
 	}),
 }));
-SL_BLACKSMITHING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_BLACKSMITHING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	r(309827),	-- Shadowlands Blacksmithing
 	n(ARMOR, {
 		r(307670),	-- Ceremonious Armguards
@@ -1153,28 +1153,28 @@ SL_BLACKSMITHING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(307664),	-- Ceremonious Sabatons
 		r(307669),	-- Ceremonious Waistguard
 		r(307705, {	-- Shadowghast Armguards [Rank 1]
-			["sourceQuests"] = { 62797 },	-- The Vessels of Metal
+			sourceQuests = { 62797 },	-- The Vessels of Metal
 		}),
 		r(307712, {	-- Shadowghast Breastplate [Rank 1]
-			["sourceQuests"] = { 62797 },	-- The Vessels of Metal
+			sourceQuests = { 62797 },	-- The Vessels of Metal
 		}),
 		r(307710, {	-- Shadowghast Gauntlets [Rank 1]
-			["sourceQuests"] = { 62797 },	-- The Vessels of Metal
+			sourceQuests = { 62797 },	-- The Vessels of Metal
 		}),
 		r(307708, {	-- Shadowghast Greaves [Rank 1]
-			["sourceQuests"] = { 62797 },	-- The Vessels of Metal
+			sourceQuests = { 62797 },	-- The Vessels of Metal
 		}),
 		r(307709, {	-- Shadowghast Helm [Rank 1]
-			["sourceQuests"] = { 62797 },	-- The Vessels of Metal
+			sourceQuests = { 62797 },	-- The Vessels of Metal
 		}),
 		r(307707, {	-- Shadowghast Pauldrons [Rank 1]
-			["sourceQuests"] = { 62797 },	-- The Vessels of Metal
+			sourceQuests = { 62797 },	-- The Vessels of Metal
 		}),
 		r(307711, {	-- Shadowghast Sabatons [Rank 1]
-			["sourceQuests"] = { 62797 },	-- The Vessels of Metal
+			sourceQuests = { 62797 },	-- The Vessels of Metal
 		}),
 		r(307706, {	-- Shadowghast Waistguard [Rank 1]
-			["sourceQuests"] = { 62797 },	-- The Vessels of Metal
+			sourceQuests = { 62797 },	-- The Vessels of Metal
 		}),
 		r(322595),	-- Shadowsteel Armguards
 		r(322587),	-- Shadowsteel Breastplate
@@ -1183,8 +1183,8 @@ SL_BLACKSMITHING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(322588),	-- Shadowsteel Sabatons
 		r(322594),	-- Shadowsteel Waistguard
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
-		r(1315292, { ["timeline"] = { ADDED_12_1_5 } }),	-- Anima-Powered Anvil
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
+		r(1315292, { timeline = { ADDED_12_1_5 } }),	-- Anima-Powered Anvil
 		r(1261982),	-- Aspirant's Meditation Pool
 		r(1261980),	-- Bejeweled Venthyr Chalice
 	})),
@@ -1212,7 +1212,7 @@ SL_BLACKSMITHING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(307682),	-- Ceremonious Warglaive
 	}),
 }));
-DF_BLACKSMITHING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+DF_BLACKSMITHING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	r(365677),	-- Dragon Isles Blacksmithing
 	n(ARMOR, {
 		r(367611),	-- Explorer's Expert Clasp
@@ -1224,7 +1224,7 @@ DF_BLACKSMITHING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(367609),	-- Explorer's Plate Bracers
 		r(395886),	-- Explorer's Plate Chestguard
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1261892),	-- Valdrakken Hanging Cauldron
 		r(1261896),	-- Wingrest Signal Brazier
 	})),
@@ -1258,7 +1258,7 @@ DF_BLACKSMITHING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(367599),	-- Draconium Sword
 	}),
 }));
-TWW_BLACKSMITHING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+TWW_BLACKSMITHING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
 	r(423332),	-- Khaz Algar Blacksmithing
 	n(ARMOR, {
 		r(450266),	-- Dredger's Developed Gauntlets
@@ -1270,7 +1270,7 @@ TWW_BLACKSMITHING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(450258),	-- Dredger's Plate Sabatons
 		r(450264),	-- Dredger's Plate Vambraces
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1259675),	-- Rusting Bolted Bench
 		r(1259681),	-- Shredderwheel Storage Chest
 	})),
@@ -1309,7 +1309,7 @@ TWW_BLACKSMITHING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(450253),	-- Ironclaw Sword
 	}),
 });
-MID_BLACKSMITHING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+MID_BLACKSMITHING = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 	r(471004),	-- Midnight Blacksmithing
 	r(1265668),	-- Artisan Blacksmith's Moxie
 	r(1265676),	-- Concentration

@@ -2,18 +2,18 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 	m(TIRAGARDE_SOUND, {
 		m(BORALUS, {
-			["icon"] = 2011139,
+			icon = 2011139,
 			-- Almost all rep for the Proudmoore Faction comes from Tirisgarde, so the rep vendor should show up in the Minilist.
 			-- Horde does not have this issue, thanks blizz.
-			["groups"] = {
+			groups = {
 				n(VENDORS, {
 					n(135808, {	-- Provisioner Fray <Proudmoore Admiralty Emissary>
-						["coord"] = { 67.5, 21.5, BORALUS },
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {{"select","itemID",
+						coord = { 67.5, 21.5, BORALUS },
+						races = ALLIANCE_ONLY,
+						sym = {{"select","itemID",
 							161976,	-- Admiralty Marine's Duffel
 							161574,	-- Boarding Action Vambraces
 							161571,	-- Cordage Sliding Grips
@@ -50,40 +50,40 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		}),
 		n(VENDORS, {
 			n(252316, {	-- Delphine <Chandelier Maker>
-				["coord"] = { 53.4, 31.3, TIRAGARDE_SOUND },
-				["timeline"] = { ADDED_11_2_7 },
-				["groups"] = {
+				coord = { 53.4, 31.3, TIRAGARDE_SOUND },
+				timeline = { ADDED_11_2_7 },
+				groups = {
 					i(252392, {	-- Admiral's Chandelier (DECOR!)
-						["cost"] = { { "c", WAR_RESOURCES, 250 } },
+						cost = { { "c", WAR_RESOURCES, 250 } },
 					}),
 					i(252405, {	-- Admiral's Low-Hanging Chandelier (DECOR!)
-						["sourceQuest"] = 48089,	-- Mountain Sounds	// Not rewarded by the quest but simply unlocked for buying at the vendor
-						["cost"] = { { "c", WAR_RESOURCES, 250 } },
+						sourceQuest = 48089,	-- Mountain Sounds	// Not rewarded by the quest but simply unlocked for buying at the vendor
+						cost = { { "c", WAR_RESOURCES, 250 } },
 					}),
 				},
 			}),
 			n(134446, {	-- Francois
-				["coord"] = { 52.8, 31.1, TIRAGARDE_SOUND },
-				["description"] = "Must have 1 million gold in your inventory before he will talk to you. You do NOT lose any gold in this transaction.",
-				["groups"] = { i(158077) },	-- Francois (PET!)
+				coord = { 52.8, 31.1, TIRAGARDE_SOUND },
+				description = "Must have 1 million gold in your inventory before he will talk to you. You do NOT lose any gold in this transaction.",
+				groups = { i(158077) },	-- Francois (PET!)
 			}),
 			n(142838, {	-- Grumpy Grimble
-				["description"] = "When you have 150 BfA Inscription, speak to the NPC and he will teach you the technique.",
-				["coord"] = { 49.8, 36.8, TIRAGARDE_SOUND },
-				["groups"] = { i(162030) },	-- Technique: Glyph of the Humble Flyer (RECIPE!)
+				description = "When you have 150 BfA Inscription, speak to the NPC and he will teach you the technique.",
+				coord = { 49.8, 36.8, TIRAGARDE_SOUND },
+				groups = { i(162030) },	-- Technique: Glyph of the Humble Flyer (RECIPE!)
 			}),
 			n(128702, {	-- Roko <Wandering Merchant>
 				-- this vendor has a quest unlock requirement; need to figure out precisely which one and attach it. wowhead comments just say "unlock freehold," which isn't very specific.
-				["coord"] = { 79.6, 81.8, TIRAGARDE_SOUND },
-				["groups"] = {
+				coord = { 79.6, 81.8, TIRAGARDE_SOUND },
+				groups = {
 					i(141042),	-- Technique: Glyph of Autumnal Bloom (RECIPE!)
 					i(141030),	-- Technique: Glyph of Cracked Ice (RECIPE!)
 					i(141037),	-- Technique: Glyph of Mana Touched Souls (RECIPE!)
 					i(184099, {	-- Technique: Glyph of the Aerial Chameleon (RECIPE!)
-						["timeline"] = { ADDED_9_0_2 },
+						timeline = { ADDED_9_0_2 },
 					}),
 					i(184098, {	-- Technique: Glyph of the Aquatic Chameleon (RECIPE!)
-						["timeline"] = { ADDED_9_0_2 },
+						timeline = { ADDED_9_0_2 },
 					}),
 					i(141068),	-- Technique: Glyph of the Blazing Savior (RECIPE!)
 					i(141033),	-- Technique: Glyph of the Crimson Shell (RECIPE!)
@@ -91,7 +91,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(141040),	-- Technique: Glyph of the Feral Chameleon (RECIPE!)
 					i(141062),	-- Technique: Glyph of the Inquisitor's Eye (RECIPE!)
 					i(184095, {	-- Technique: Glyph of the Swift Chameleon (RECIPE!)
-						["timeline"] = { ADDED_9_0_2 },
+						timeline = { ADDED_9_0_2 },
 					}),
 					i(141055),	-- Technique: Glyph of Yu'lon's Grace (RECIPE!)
 				},

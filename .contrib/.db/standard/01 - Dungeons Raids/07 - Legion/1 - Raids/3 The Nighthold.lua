@@ -198,111 +198,111 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 InstanceHelper.LFRQueueNPC = {
-	["cr"] = 111246,	-- Archmage Timear
-	["coord"] = { 63.7, 55.0, LEGION_DALARAN },
+	cr = 111246,	-- Archmage Timear
+	coord = { 63.7, 55.0, LEGION_DALARAN },
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_1_0 } }, {
 	inst(786, {	-- The Nighthold
-		["coords"] = {
+		coords = {
 			{ 43.3, 62.3, SURAMAR },	-- entrance that leads underground
 			{ 44.1, 59.7, SURAMAR },	-- actual raid entrance
 		},
-		["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
-		["isRaid"] = true,
-		["lvl"] = 110,
-		["groups"] = {
+		maps = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
+		isRaid = true,
+		lvl = 110,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(10829, {	-- Arcing Aqueducts
 					crit(31445, {	-- Skorpyron
-						["_encounter"] = { SKORPYRON, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SKORPYRON, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(31444, {	-- Chronomatic Anomaly
-						["_encounter"] = { CHRONOMATIC, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { CHRONOMATIC, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(31443, {	-- Trilliax
-						["_encounter"] = { TRILLIAX, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { TRILLIAX, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(10837, {	-- Royal Athenaeum
 					crit(31447, {	-- Spellblade Aluriel
-						["_encounter"] = { ALURIEL, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ALURIEL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(31448, {	-- Star Augur Etraeus
-						["_encounter"] = { ETRAEUS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ETRAEUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(31449, {	-- High Botanist Tel'arn
-						["_encounter"] = { TELARN, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { TELARN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(10838, {	-- Nightspire
 					crit(31452, {	-- Tichondrius
-						["_encounter"] = { TICHONDRIUS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { TICHONDRIUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(31451, {	-- Krosus
-						["_encounter"] = { KROSUS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { KROSUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(31450, {	-- Elisande
-						["_encounter"] = { ELISANDE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ELISANDE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(10839, {	-- Betrayer's Rise
 					crit(31453, {	-- Gul'dan
-						["_encounter"] = { GULDAN, DIFFICULTY.RAID.MULTI.ALL },
-						["provider"] = { "n", 104154 },	-- Gul'dan
+						_encounter = { GULDAN, DIFFICULTY.RAID.MULTI.ALL },
+						provider = { "n", 104154 },	-- Gul'dan
 					}),
 				}),
-				ach(11628, {["timeline"] = {ADDED_7_2_0}}),	-- That's So Last Millennium (Nighthold)
+				ach(11628, {timeline = {ADDED_7_2_0}}),	-- That's So Last Millennium (Nighthold)
 				ach(42030, {	-- The Nighthold (automated)
-					["timeline"] = { ADDED_11_1_7 },
+					timeline = { ADDED_11_1_7 },
 				}),
 				ach(10868),	-- The Nighthold Guild Run
 			}),
 			n(WORLD_QUESTS, {
 				q(44934, {	-- The Nighthold: Creepy Crawlers
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(44932, {	-- The Nighthold: Ettin Your Foot In The Door
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(44937, {	-- The Nighthold: Focused Power
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(44935, {	-- The Nighthold: Gilded Guardian
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(44938, {	-- The Nighthold: Love Tap
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(44939, {	-- The Nighthold: Seeds of Destruction
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(44936, {	-- The Nighthold: Supply Routes
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(44933, {	-- The Nighthold: Wailing In The Night
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 			}),
 			n(QUESTS, {
 				q(45417, {	-- The Nighthold: Lord of the Shadow Council
-					["description"] = "Click on the Eye of Aman'thul after Gul'dan dies to complete the quest.",
-					["sourceQuests"] = { 44719 },	-- Breaching the Sanctum
-					["provider"] = { "n", 115367 },	-- Archmage Khadgar
-					["coord"] = { 44.1, 60.1, SURAMAR },
+					description = "Click on the Eye of Aman'thul after Gul'dan dies to complete the quest.",
+					sourceQuests = { 44719 },	-- Breaching the Sanctum
+					provider = { "n", 115367 },	-- Archmage Khadgar
+					coord = { 44.1, 60.1, SURAMAR },
 				}),
 				q(45420, {	-- The Nighthold: The Eye of Aman'Thul
-					["sourceQuests"] = { 45417 },	-- The Nighthold: Lord of the Shadow Council
-					["provider"] = { "n", 106522 },	-- Archmage Khadgar
-					["groups"] = {
+					sourceQuests = { 45417 },	-- The Nighthold: Lord of the Shadow Council
+					provider = { "n", 106522 },	-- Archmage Khadgar
+					groups = {
 						sp(233377),	-- Gaze of Aman'Thul
 					},
 				}),
@@ -323,7 +323,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				BossOnly(ALURIEL, {
 					i(256682, {	-- Magistrix's Garden Fountain
-						["timeline"] = { ADDED_11_2_7 },
+						timeline = { ADDED_11_2_7 },
 					}),
 					i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1] (RECIPE!)
 					i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2] (RECIPE!)
@@ -355,7 +355,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					i(119211),	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)
 					i(143544),	-- Skull of Corruption (TOY!)
 					i(141061, {	-- Technique: Grimoire of the Abyssal
-						["timeline"] = { ADDED_10_1_5 },
+						timeline = { ADDED_10_1_5 },
 					}),
 					i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1] (RECIPE!)
 					i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2] (RECIPE!)
@@ -480,13 +480,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				BossOnly(ALURIEL, {
 					ach(10817, {	-- A Change In Scenery
 						crit(31807, {	-- The Shal'dorei Terrace
-							["_noautomation"] = true,
+							_noautomation = true,
 						}),
 						crit(31806, {	-- The Shattered Walkway
-							["_noautomation"] = true,
+							_noautomation = true,
 						}),
 						crit(31808, {	-- Astromancer's Rise
-							["_noautomation"] = true,
+							_noautomation = true,
 						}),
 					}),
 				}),
@@ -501,17 +501,17 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				BossOnly(ETRAEUS, {
 					ach(10851, {	-- Elementalry!
-						["crs"] = { 111595 },	-- Well-Traveled Nether Elemental
+						crs = { 111595 },	-- Well-Traveled Nether Elemental
 					}),
 				}),
 				BossOnly(ELISANDE, {
 					ach(10699, {	-- Infinitesimal
-						["crs"] = { 108802 },	-- Infinite Drakeling
+						crs = { 108802 },	-- Infinite Drakeling
 					}),
 				}),
 				BossOnly(GULDAN, {
 					ach(10696, {	-- I've Got My Eyes On You
-						["crs"] = { 105630 },	-- Eye of Gul'dan <Gul'dan's Minion>
+						crs = { 105630 },	-- Eye of Gul'dan <Gul'dan's Minion>
 					}),
 					i(137574),	-- Felblaze Infernal (MOUNT!)
 				}),
@@ -520,14 +520,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(45381, {	-- The Nighthold: Talisman of the Shal'dorei (Normal)
-						["description"] = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
-						["altQuests"] = {
+						description = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						altQuests = {
 							45382,	-- The Nighthold: Talisman of the Shal'dorei (Heroic)
 							45383,	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
 						},
-						["qg"] = 110791,	-- First Arcanist Thalyssra
-						["qi"] = 143656,	-- Echo of Time (QI!)
-						["groups"] = { ig(141324) },	-- Talisman of the Shal'dorei (Normal)
+						qg = 110791,	-- First Arcanist Thalyssra
+						qi = 143656,	-- Echo of Time (QI!)
+						groups = { ig(141324) },	-- Talisman of the Shal'dorei (Normal)
 					}),
 				}),
 				Boss(SKORPYRON),
@@ -658,7 +658,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(GULDAN, {
 					ach(11195, {	-- Ahead of the Curve: Gul'dan
-						["timeline"] = { REMOVED_7_2_0 },
+						timeline = { REMOVED_7_2_0 },
 					}),
 				}),
 			}),
@@ -666,11 +666,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(45382, {	-- The Nighthold: Talisman of the Shal'dorei (Heroic)
-						["description"] = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
-						["altQuests"] = { 45383 },	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
-						["qg"] = 110791,	-- First Arcanist Thalyssra
-						["qi"] = 143657,	-- Echo of Time (QI!)
-						["groups"] = { ig(141325) },	-- Talisman of the Shal'dorei (Heroic)
+						description = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						altQuests = { 45383 },	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
+						qg = 110791,	-- First Arcanist Thalyssra
+						qi = 143657,	-- Echo of Time (QI!)
+						groups = { ig(141325) },	-- Talisman of the Shal'dorei (Heroic)
 					}),
 				}),
 				Boss(SKORPYRON),
@@ -802,10 +802,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ZoneDrops({}),
 				n(QUESTS, {
 					q(45383, {	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
-						["description"] = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Mythic difficulty each week.\n",
-						["qg"] = 110791,	-- First Arcanist Thalyssra
-						["qi"] = 143658,	-- Echo of Time (QI!)
-						["groups"] = { ig(141326) },	-- Talisman of the Shal'dorei (Mythic)
+						description = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Mythic difficulty each week.\n",
+						qg = 110791,	-- First Arcanist Thalyssra
+						qi = 143658,	-- Echo of Time (QI!)
+						groups = { ig(141326) },	-- Talisman of the Shal'dorei (Mythic)
 					}),
 				}),
 				Boss(SKORPYRON, {
@@ -927,7 +927,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				Boss(GULDAN, {
 					ach(11192, {	-- Cutting Edge: Gul'dan
-						["timeline"] = { REMOVED_7_2_0 },
+						timeline = { REMOVED_7_2_0 },
 					}),
 					i(137575),	-- Hellfire Infernal (MOUNT!)
 					i(143564, {	-- Leggings of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -953,7 +953,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					}),
 					ach(11239),	-- Mythic: Gul'dan Guild Run
 					ach(10855, {	-- Realm First! Gul'dan
-						["u"] = REMOVED_FROM_GAME,
+						u = REMOVED_FROM_GAME,
 					}),
 				}),
 			}),
@@ -961,7 +961,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_1_0 } }, {
 	inst(786, {
 		q(45318),	-- Skorpyron
 		q(45319),	-- Chronomatic Anomaly

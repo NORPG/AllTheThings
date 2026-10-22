@@ -4,13 +4,13 @@
 
 -- #if ANYCLASSIC
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_TWO, {
-	n(DEFENSE_PROTOCOL_ALPHA, bubbleDownSelf({ ["timeline"] = { ADDED_3_4_1 } }, {
-		["lvl"] = 80,
-		["groups"] = {
+	n(DEFENSE_PROTOCOL_ALPHA, bubbleDownSelf({ timeline = { ADDED_3_4_1 } }, {
+		lvl = 80,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(17304, {	-- Defense Protocol Alpha: Terminated
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						17291,	-- Defense Protocol Alpha: Ahn'kahet: The Old Kingdom
 						17285,	-- Defense Protocol Alpha: Azjol-Nerub
 						17292,	-- Defense Protocol Alpha: Drak'Tharon Keep
@@ -27,7 +27,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
+				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
 					394435, 412991, 424196,	-- Arcane Rune Buffs
 					394438, 413169, 424203,	-- Blood Rune Buffs
 					392430, 412770, 424194,	-- Frost Rune Buffs
@@ -35,8 +35,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					394437, 412470, 424201,	-- Shadow Rune Buffs
 					394441, 413078, 424205	-- Titan Rune Buffs
 				),
-				["description"] = "Defeating the final boss encounter on Defense Protocol Alpha will reward 1 Emblem of Conquest and can also drop T7 tokens for helm, spaulders, and leggings.",
-				["maps"] = {
+				description = "Defeating the final boss encounter on Defense Protocol Alpha will reward 1 Emblem of Conquest and can also drop T7 tokens for helm, spaulders, and leggings.",
+				maps = {
 					AHNKAHET_THE_OLD_KINGDOM,
 					AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3,
 					DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2,
@@ -50,7 +50,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3,
 					UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2,
 				},
-				["crs"] = {
+				crs = {
 					29311,	-- Herald Volazj [Ahn'kahet: The Old Kingdom]
 					29120,	-- Anub'arak [Azjol-Nerub]
 					26632,	-- The Prophet Tharon'ja [Drak'Tharon Keep]
@@ -64,7 +64,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					23954,	-- Ingvar the Plunderer [Utgarde Keep]
 					26861,	-- King Ymiron [Utgarde Pinnacle]
 				},
-				["groups"] = {
+				groups = {
 					currency(221),	-- Emblem of Conquest
 					i(40616),	-- Helm of the Lost Conqueror
 					i(40617),	-- Helm of the Lost Protector

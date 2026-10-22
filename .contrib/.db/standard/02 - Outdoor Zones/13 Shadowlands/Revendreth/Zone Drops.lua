@@ -2,28 +2,28 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	m(REVENDRETH, {
 		n(ZONE_DROPS, {
 			i(179311),	-- Oxxein Lockbox
 			i(187822, {	-- A Defector's Request
-				["timeline"] = { ADDED_9_1_5 },
-				["crs"] = {
+				timeline = { ADDED_9_1_5 },
+				crs = {
 					161180,	-- Maldraxxi Defector
 					163245,	-- Maldraxxi Defector
 					163243,	-- Maldraxxi Defector
 				},
 			}),
 			i(172957, {	-- Atonement Crypt Key
-				["description"] = "Used to open the crypts around |cFFFFFFFF70.1, 55.2|r.",
-				["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
+				description = "Used to open the crypts around |cFFFFFFFF70.1, 55.2|r.",
+				sourceQuests = { 57928 },	-- Atonement Crypt Key
 			}),
 			i(173735, {	-- Atonement Crypt Key (QI!)
-				["sourceQuest"] = 57925,	-- Archivist Fane
+				sourceQuest = 57925,	-- Archivist Fane
 			}),
 			i(182703, {	-- Bubbling Red Muck Dye
-				["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Blistering Bog area (|cFFFFFFFF35.7, 32.7|r).",
-				["crs"] = {
+				description = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Blistering Bog area (|cFFFFFFFF35.7, 32.7|r).",
+				crs = {
 					166292,	-- Bog Beast
 					166320,	-- Bog Dredger
 					166206,	-- Primordial Sludge
@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			i(180602, {	-- Crimson Dredwing Pup (PET!)
-				["crs"] = {
+				crs = {
 					159178,	-- Dire Evedweller
 					169154,	-- Famished Fangling
 					163893,	-- Fanged Dredbat
@@ -44,8 +44,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			i(182972, {	-- Critter Two-Thumbs Portrait
-				["description"] = "Drops from mobs in the Endmire area (|cFFFFFFFF62.5, 44.3|r).",
-				["crs"] = {
+				description = "Drops from mobs in the Endmire area (|cFFFFFFFF62.5, 44.3|r).",
+				crs = {
 					159676,	-- Animus Mite
 					160421,	-- Devourer Mite
 					156061,	-- Devourer Mite
@@ -68,27 +68,27 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			i(187430),	-- Harvester's Sinvyr Chalice
 			i(183420, {	-- Hopebreaker's Right Boot
-				["classes"] = LEATHER_CLASSES,
-				["groups"] = {
+				classes = LEATHER_CLASSES,
+				groups = {
 					i(183418, {	-- Hopebreaker's Boots
-						["cost"] = {
+						cost = {
 							{ "i", 183419, 1 },	-- Hopebreaker's Left Boot
 						},
 					}),
 				},
 			}),
 			i(183417, {	-- Mail Courier's Right Runner
-				["classes"] = MAIL_CLASSES,
-				["groups"] = {
+				classes = MAIL_CLASSES,
+				groups = {
 					i(182719, {	-- Mail Courier's Runners
-						["cost"] = {
+						cost = {
 							{ "i", 183416, 1 },	-- Mail Courier's Left Runner
 						},
 					}),
 				},
 			}),
 			i(174378, {	-- Mortegore Scroll
-				["crs"] = {
+				crs = {
 					161248,	-- Big Shiny
 					161294,	-- Carved Sniffer
 					161246,	-- Heftor
@@ -101,32 +101,32 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			i(183430, {	-- Researcher's Right Slipper
-				["classes"] = CLOTH_CLASSES,
-				["groups"] = {
+				classes = CLOTH_CLASSES,
+				groups = {
 					i(183425, {	-- Researcher's Slippers
-						["cost"] = {
+						cost = {
 							{ "i", 183427, 1 },	-- Researcher's Left Slipper
 						},
 					}),
 				},
 			}),
 			i(183970, {	-- Royal Arcanist's Ritual Blade
-				["crs"] = { 165270 },	-- Royal Arcanist
+				crs = { 165270 },	-- Royal Arcanist
 			}),
 			i(183423, {	-- Stone Legion Right Sabaton
-				["classes"] = PLATE_CLASSES,
-				["groups"] = {
+				classes = PLATE_CLASSES,
+				groups = {
 					i(183421, {	-- Stone Legion Sabatons
-						["cost"] = {
+						cost = {
 							{ "i", 183422, 1 },	-- Stone Legion Left Sabaton
 						},
 					}),
 				},
 			}),
 			i(178557, {	-- Supply Chain Memo
-				["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
-				["coord"] = { 57.2, 68.4, REVENDRETH },
-				["cr"] = 158796,	-- Stonevigil Collector
+				sourceQuests = { 57727 },	-- Stonevigil Unrest
+				coord = { 57.2, 68.4, REVENDRETH },
+				cr = 158796,	-- Stonevigil Collector
 			}),
 			i(180595),	-- Nightforged Steel
 			i(177772),	-- Avowed Tormenter's Cord
@@ -139,16 +139,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			i(177773),	-- Avowed Tormenter's Wristwraps
 			i(177806),	-- Banewood Dirk
 			i(174655, {	-- Bell of Remembrance
-				["questID"] = 61194,	-- after the first day, when you can do the original quest item > second looted bell (this one), i haven't been able to loot more than one bell per day. they also generally drop very quickly, like in < 10 mob kills, and this quest triggers on loot each time
-				["description"] = "Use in front of the Seal of the Forgotten at |cFFFFFFFF73.2, 33.8|r.",
-				["sourceQuests"] = { 58725 },	-- Sinkeeper
-				["isDaily"] = true,
-				["crs"] = { 160716 },	-- Sinstone Rampager
+				questID = 61194,	-- after the first day, when you can do the original quest item > second looted bell (this one), i haven't been able to loot more than one bell per day. they also generally drop very quickly, like in < 10 mob kills, and this quest triggers on loot each time
+				description = "Use in front of the Seal of the Forgotten at |cFFFFFFFF73.2, 33.8|r.",
+				sourceQuests = { 58725 },	-- Sinkeeper
+				isDaily = true,
+				crs = { 160716 },	-- Sinstone Rampager
 				-- no questID appears to be attached to this, you can just judge souls as often as you loot bells. this gives no rep (with court of harvesters or the avowed) and i'm not sure if there's anything interesting from the satchel either. it gave me a buff item + some greys the first time, the second one gave me a Crumbling Sinstone that gave 8 Sinstone Fragments
-				["groups"] = {
+				groups = {
 					i(174652, {	-- Satchel of Forgotten Heirlooms
-						["description"] = "Awarded regardless of your judgment.",	-- as of December 14th 2021 she gives the satchel regardless of player's decision.
-						["groups"] = {
+						description = "Awarded regardless of your judgment.",	-- as of December 14th 2021 she gives the satchel regardless of player's decision.
+						groups = {
 							i(180387),	-- Crumbling Sinstone
 							i(180403),	-- Vessel of Distilled Regret
 							i(180402),	-- Barrier of the Forgotten
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			i(174674, {	-- Bell of Remembrance (QI!)
-				["crs"] = { 160716 },	-- Sinstone Rampager
+				crs = { 160716 },	-- Sinstone Rampager
 			}),
 			i(177800),	-- Bubbling Concoction
 			i(180862),	-- Bulletslinger
@@ -179,8 +179,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			i(177816),	-- Dredhollow Cape
 			i(179323),	-- Dredhollow Cudgel
 			i(173939, {	-- Enticing Anima
-				["description"] = "Used to summon the Worldedge Gorger.",
-				["crs"] = {
+				description = "Used to summon the Worldedge Gorger.",
+				crs = {
 					159676,	-- Animus Mite
 					156061,	-- Devourer Mite
 					175077,	-- Devourer Mite
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			i(177792),	-- Night Guardian Legguards
 			i(177793),	-- Night Guardian Pauldrons
 			i(173719, {	-- Pristine Dredbat Fang
-				["crs"] = {
+				crs = {
 					169154,	-- Famished Fangling
 					161206,	-- Fanged Dredbat
 					163893,	-- Fanged Dredbat
@@ -234,18 +234,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			i(177810),	-- Stonebreaker Mace
 			i(180487),	-- Stonefist's Knuckle Cover
 			i(187930, {	-- Technique: Mark of the Regal Dredbat (RECIPE!)
-				["description"] = "Drops from Evedweller bats in Dominance Keep.",
-				["timeline"] = { ADDED_9_1_5 },
-				["crs"] = {
+				description = "Drops from Evedweller bats in Dominance Keep.",
+				timeline = { ADDED_9_1_5 },
+				crs = {
 					158976,	-- Shrieking Evedweller
 					159178,	-- Dire Evedweller
 				},
 			}),
 			i(182705, {	-- Vial of Blue Muck Dye
 				-- may also come from the |cFFFFFFFFDiscarded Vial object that can be found around the muck lakes - only the other itemID version shows up for that now, though|r
-				["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Dredgewood area (|cFFFFFFFF72.9, 73.5|r).",
+				description = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Dredgewood area (|cFFFFFFFF72.9, 73.5|r).",
 			--[[ commenting until we know whether it's based on the mobs being in the specific area, or the mobs themselves, most of which are in multiple areas
-				["crs"] = {
+				crs = {
 					157332,	-- Bonemauler Alpha
 					156077,	-- Fiendish Terrorwing
 					156596,	-- Horrific Bonemauler
@@ -254,7 +254,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			--]]
 			}),
 			i(184446, {	-- Vial of Blue Muck Dye
-				["description"] = "This version of the dye appears to only be used during the initial questline to obtain your Dredger.",
+				description = "This version of the dye appears to only be used during the initial questline to obtain your Dredger.",
 			}),
 			i(179334),	-- Wingblade Staff
 		}),

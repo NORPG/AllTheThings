@@ -4,18 +4,18 @@
 
 root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 	n(SEASON_FEARLESS, bubbleDownSelf({
-		["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0, ADDED_7_2_0 },
+		timeline = { ADDED_7_1_0, REMOVED_7_2_0, ADDED_7_2_0 },
 	}, {
-		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0 } }, {
+		n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_7_1_0, REMOVED_7_2_0 } }, {
 			ach(11004, {	-- Fearless Combatant [A]
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
 			ach(11003, {	-- Fearless Combatant [H]
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				races = HORDE_ONLY,
+				groups = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
@@ -23,50 +23,50 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			ach(11027),	-- Rival: Legion Season 2
 			ach(11026),	-- Duelist: Legion Season 2
 			ach(11579, {	-- Fearless Elite
-				["timeline"] = { ADDED_7_2_0, REMOVED_7_2_0 },
+				timeline = { ADDED_7_2_0, REMOVED_7_2_0 },
 			}),
 			ach(11013, {	-- Gladiator: Legion Season 2
 				i(141844),	-- Fearless Gladiator's Storm Dragon (MOUNT!)
 			}),
 			ach(11000, {	-- Fearless Gladiator's Storm Dragon
-				["provider"] = { "i", 141844 },	-- Fearless Gladiator's Storm Dragon (MOUNT!)
-				["filterID"] = MOUNTS,
+				provider = { "i", 141844 },	-- Fearless Gladiator's Storm Dragon (MOUNT!)
+				filterID = MOUNTS,
 			}),
 			ach(11014, {	-- Fearless Gladiator: Legion Season 2
 				title(355),	-- Fearless Gladiator <Name>
 			}),
 			-- RBG
 			ach(11036, {	-- Soldier of the Alliance: Legion Season 2
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11035, {	-- Soldier of the Horde: Legion Season 2
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(11034, {	-- Defender of the Alliance: Legion Season 2
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11033, {	-- Defender of the Horde: Legion Season 2
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(11032, {	-- Guardian of the Alliance: Legion Season 2
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11031, {	-- Guardian of the Horde: Legion Season 2
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(11030, {	-- Hero of the Alliance: Fearless
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11029, {	-- Hero of the Horde: Fearless
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			-- Fashion
 			ach(11630, {	-- More Like Win-dictive
-				["timeline"] = { ADDED_7_2_0 },
+				timeline = { ADDED_7_2_0 },
 			}),
 		})),
 		n(PVP_COMBATANT, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_1_0, REMOVED_7_2_0 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(142874),	-- Fearless Combatant's Dreadcloak [A]
@@ -227,7 +227,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(142897),	-- Fearless Combatant's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_1_0, REMOVED_7_2_0 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(142987),	-- Fearless Combatant's Dreadcloak [H]
@@ -390,7 +390,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_GLADIATOR, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_1_0, REMOVED_7_2_0 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(142648),	-- Fearless Gladiator's Dreadcloak [A]
@@ -551,7 +551,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(142671),	-- Fearless Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_1_0, REMOVED_7_2_0 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(142761),	-- Fearless Gladiator's Dreadcloak [H]
@@ -714,7 +714,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_ELITE, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_1_0, REMOVED_7_2_0 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(143100),	-- Fearless Gladiator's Dreadcloak [A]
@@ -875,7 +875,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(143123),	-- Fearless Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_1_0, REMOVED_7_2_0 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(143213),	-- Fearless Gladiator's Dreadcloak [H]

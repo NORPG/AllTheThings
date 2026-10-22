@@ -1,9 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 	n(COMMON_DUNGEON_DROPS, sharedData({
-		["crs"] = {
+		crs = {
 			246404,	-- Nalorakk
 			231865,	-- Degentrius
 			248605,	-- Rak'tul

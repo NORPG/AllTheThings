@@ -4,10 +4,10 @@
 
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.THE_COILED_ISLE, {
-		["maps"] = {	-- Sub maps under Exploration file instead of making a Metadata file
+		maps = {	-- Sub maps under Exploration file instead of making a Metadata file
 			2645,	-- Kin's rest
 		},
-		["groups"] = {
+		groups = {
 			explorationHeader({
 				exploration(16793),	-- Blistering Terrace
 				exploration(16785),	-- Gate of the Eastern Fang

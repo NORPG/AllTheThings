@@ -6,8 +6,8 @@ root(ROOTS.Zones, {
 	m(DRAENOR, {
 		n(RARES, {
 			o(239828, {	-- Edge of Reality
-				["description"] = "When you click on the Edge of Reality, it will teleport you. Click on the egg to receive the mount.\n\nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you.",
-				["coords"] = {
+				description = "When you click on the Edge of Reality, it will teleport you. Click on the egg to receive the mount.\n\nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you.",
+				coords = {
 					{ 51.1, 19.9, FROSTFIRE_RIDGE },
 					{ 52.4, 18.9, FROSTFIRE_RIDGE },
 					{ 53.8, 17.5, FROSTFIRE_RIDGE },
@@ -41,11 +41,11 @@ root(ROOTS.Zones, {
 					{ 52.1, 41.1, TALADOR },
 					{ 52.3, 25.8, TALADOR },
 				},
-				["modelScale"] = 3,
-				["groups"] = {
+				modelScale = 3,
+				groups = {
 					o(239901, {	-- Voidtalon Egg
-						["modelScale"] = 1.5,
-						["groups"] = { i(121815) },	-- Voidtalon of the Dark Star (MOUNT!)
+						modelScale = 1.5,
+						groups = { i(121815) },	-- Voidtalon of the Dark Star (MOUNT!)
 					}),
 				},
 			}),
@@ -53,7 +53,7 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	n(RARES, {
 		o(239828, {	-- Edge of Reality
 			q(37864),	-- Voidtalon of the Dark Star - triggers after the player leaves the scenario

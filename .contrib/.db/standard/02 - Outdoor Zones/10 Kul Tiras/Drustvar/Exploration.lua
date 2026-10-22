@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 	m(DRUSTVAR, {
 		explorationHeader({
 			exploration(9268),	-- Alpine Rise

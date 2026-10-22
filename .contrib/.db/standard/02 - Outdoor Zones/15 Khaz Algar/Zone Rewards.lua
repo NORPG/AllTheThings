@@ -5,9 +5,9 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	n(ZONE_DROPS, {
 		i(228963, {	-- Unfamiliar Emblem (QS!)
-			["timeline"] = { ADDED_11_1_7 },
-			["maps"] = { 2372 },	-- Arathi Highlands
-			["crs"] = {
+			timeline = { ADDED_11_1_7 },
+			maps = { 2372 },	-- Arathi Highlands
+			crs = {
 				230199,	-- Defias Bandit
 				230021,	-- Defias Lookout
 				230020,	-- Defias Ringleader
@@ -83,9 +83,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				i(225638),	-- Spelunker's Waning Candle
 			}),
 		}),
-		filter(MISC, sharedDataSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+		filter(MISC, sharedDataSelf({ timeline = { ADDED_11_1_0 } }, {
 			i(237014),	-- Severed Threads Commendation [1500 Rep]
-			i(244848, { ["timeline"] = { ADDED_11_1_7 } }),	-- Severed Threads Commendation [100 Rep]
+			i(244848, { timeline = { ADDED_11_1_7 } }),	-- Severed Threads Commendation [100 Rep]
 		})),
 		n(WEAPONS, {
 			i(224702),	-- Ancient Forged Blade
@@ -107,18 +107,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		}),
 		--
 		i(229354, {	-- Algari Adventurer's Cache
-			["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
+			sym = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
 		}),
 		i(224784, {	-- Pinnacle Cache (S1)
-			["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
-			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+			sym = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
+			timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 		}),
 		i(239118, {	-- Pinnacle Cache (S2)
-			["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
-			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+			sym = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
+			timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 		}),
 		i(244865, {	-- Pinnacle Cache (S3)
-			["sym"] = {	-- [K'aresh Zone Rewards content]
+			sym = {	-- [K'aresh Zone Rewards content]
 				{"select","mapID",KARESH},{"pop"},
 				{"where","headerID",ZONE_REWARDS},{"pop"},
 				{"where","headerID",ARMOR},{"finalize"},
@@ -127,10 +127,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				{"where","headerID",ZONE_REWARDS},{"pop"},
 				{"where","headerID",WEAPONS},
 			},
-			["timeline"] = { ADDED_11_2_0 },
+			timeline = { ADDED_11_2_0 },
 		}),
 		i(228361, {	-- Seasoned Adventurer's Cache (S1)
-			["sym"] = {	-- [Khaz Algar Zone Rewards content]
+			sym = {	-- [Khaz Algar Zone Rewards content]
 				{"select","mapID",KHAZ_ALGAR},{"pop"},
 				{"where","headerID",ZONE_REWARDS},{"pop"},
 				{"where","headerID",ARMOR},{"finalize"},
@@ -139,14 +139,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				{"where","headerID",ZONE_REWARDS},{"pop"},
 				{"where","headerID",WEAPONS},
 			},
-			["timeline"] = { REMOVED_11_1_0_SEASONSTART },
+			timeline = { REMOVED_11_1_0_SEASONSTART },
 		}),
 		i(239120, {	-- Seasoned Adventurer's Cache (S2)
-			["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
-			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+			sym = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
+			timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 		}),
 		i(235639, {	-- Seasoned Adventurer's Cache (Undermine)
-			["sym"] = {	-- [Undermine Zone Rewards content]
+			sym = {	-- [Undermine Zone Rewards content]
 				{"select","mapID",KHAZ_ALGAR},{"pop"},
 				{"where","mapID",UNDERMINE},{"pop"},
 				{"where","headerID",ZONE_REWARDS},{"pop"},
@@ -157,19 +157,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				{"where","headerID",ZONE_REWARDS},{"pop"},
 				{"where","headerID",WEAPONS},
 			},
-			["timeline"] = { ADDED_11_1_0_SEASONSTART },
+			timeline = { ADDED_11_1_0_SEASONSTART },
 		}),
 		i(235610, {	-- Seasoned Adventurer's Cache (Undermine)
-			["sym"] = {{"select","itemID",235639},{"pop"}},	-- Seasoned Adventurer's Cache [Undermine Zone Rewards content]
-			["timeline"] = { ADDED_11_1_0_SEASONSTART },
+			sym = {{"select","itemID",235639},{"pop"}},	-- Seasoned Adventurer's Cache [Undermine Zone Rewards content]
+			timeline = { ADDED_11_1_0_SEASONSTART },
 		}),
 		i(245280, {	-- Seasoned Khaz Algar Adventurer's Cache
-			["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
-			["timeline"] = { ADDED_11_2_0 },
+			sym = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
+			timeline = { ADDED_11_2_0 },
 		}),
 		i(244883, {	-- Seasoned Undermine Adventurer's Cache
-			["sym"] = {{"select","itemID",235639},{"pop"}},	-- Seasoned Adventurer's Cache [Undermine Zone Rewards content]
-			["timeline"] = { ADDED_11_2_0_SEASONSTART },
+			sym = {{"select","itemID",235639},{"pop"}},	-- Seasoned Adventurer's Cache [Undermine Zone Rewards content]
+			timeline = { ADDED_11_2_0_SEASONSTART },
 		}),
 		currency(RESONANCE_CRYSTALS),
 	}),
@@ -177,9 +177,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		n(WORLD_QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-			q(83280, name(HEADERS.Item,228361,{["isWeekly"]=true,})),	-- Granted additional reward from weekly caches #1
-			q(83281, name(HEADERS.Item,228361,{["isWeekly"]=true,})),	-- Granted additional reward from weekly caches #2
+		n(WORLD_QUESTS, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+			q(83280, name(HEADERS.Item,228361,{isWeekly=true,})),	-- Granted additional reward from weekly caches #1
+			q(83281, name(HEADERS.Item,228361,{isWeekly=true,})),	-- Granted additional reward from weekly caches #2
 		})),
 	}),
 }));

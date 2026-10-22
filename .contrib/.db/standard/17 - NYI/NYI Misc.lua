@@ -42,7 +42,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.TBC, {
 		-- 2.4.0
-		expansion(EXPANSION.TBC, patch(4,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
+		expansion(EXPANSION.TBC, patch(4,0), bubbleDownSelf({ timeline = { CREATED_2_4_0 } }, {
 			i(34548),	-- Cache of the Shattered Sun
 			i(34544),	-- Essence of the Immortals
 			i(35728),	-- Greater Inscription of the Blade (arena realm only)
@@ -64,17 +64,17 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.0.1
-		expansion(EXPANSION.WRATH, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+		expansion(EXPANSION.WRATH, patch(0,1), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
 			i(41596),	-- Dalaran Jewelcrafter's Token
 		})),
 
 		-- 3.0.2
-		expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+		expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
 			i(43016),	-- Dalaran Cooking Award
 		})),
 
 		-- 3.1.0
-		expansion(EXPANSION.WRATH, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_3_1_0 } }, {
+		expansion(EXPANSION.WRATH, patch(1,0), bubbleDownSelf({ timeline = { CREATED_3_1_0 } }, {
 			i(45705),	-- Argent Tournament Invitation
 			i(45924),	-- Certificate of Appreciation
 			i(44871),	-- Greater Inscription of the Axe
@@ -84,13 +84,13 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 3.3.3
-		expansion(EXPANSION.WRATH, patch(3,3), bubbleDownSelf({ ["timeline"] = { CREATED_3_3_3 } }, {
+		expansion(EXPANSION.WRATH, patch(3,3), bubbleDownSelf({ timeline = { CREATED_3_3_3 } }, {
 			i(50329),	-- Icecrown-10 Normal Loot Token
 		})),
 
 		-- 3.4.2
 		-- #if ANYCLASSIC
-		expansion(EXPANSION.WRATH, patch(4,2), bubbleDownSelf({ ["timeline"] = { CREATED_3_4_2 } }, {
+		expansion(EXPANSION.WRATH, patch(4,2), bubbleDownSelf({ timeline = { CREATED_3_4_2 } }, {
 			i(208157),	-- Bounty Satchel
 			i(206759),	-- Essence or Dust
 		})),
@@ -106,7 +106,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.CATA, {
 		-- 4.0.1
-		expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
+		expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_4_0_1 } }, {
 			i(42975),	-- Ace of Lords
 			i(42977),	-- Two of Lords
 			i(42978),	-- Three of Lords
@@ -120,7 +120,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 4.0.3
-		expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+		expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ timeline = { CREATED_4_0_3 } }, {
 			i(55217),	-- Aqua Transform
 			i(43254),	-- Essence Crystal
 			i(55216),	-- Fiery Transform
@@ -130,7 +130,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 4.3.0
-		expansion(EXPANSION.CATA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
+		expansion(EXPANSION.CATA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_4_3_0 } }, {
 			i(78892),	-- Perfect Geode
 		})),
 
@@ -141,17 +141,17 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.0.1
-		expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+		expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
 			i(79907),	-- Spear of Xuen (Old Version)
 		})),
 
 		-- 5.1.0
-		expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_1_0 } }, {
+		expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ timeline = { CREATED_5_1_0 } }, {
 			i(92563),	-- The Eye of the Storm
 		})),
 
 		-- 5.2.0
-		expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
+		expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ timeline = { CREATED_5_2_0 } }, {
 			i(96194),	-- Chest of the Crackling Vanquisher
 			i(96195),	-- Chest of the Crackling Conqueror
 			i(96196),	-- Chest of the Crackling Protector
@@ -185,19 +185,19 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 5.3.0
-		expansion(EXPANSION.MOP, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_3_0 } }, {
+		expansion(EXPANSION.MOP, patch(3,0), bubbleDownSelf({ timeline = { CREATED_5_3_0 } }, {
 			i(98001),	-- Saurok Collection
 			i(98005),	-- Saurok Collection
 		})),
 
 		-- 5.4.0
-		expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
+		expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ timeline = { CREATED_5_4_0 } }, {
 			i(103535),	-- Bulging Bag of Charms (was planned for asia store)
 		})),
 
 		-- 5.5.0
 		-- #if ANYCLASSIC
-		expansion(EXPANSION.MOP, patch(5,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_5_0 } }, {
+		expansion(EXPANSION.MOP, patch(5,0), bubbleDownSelf({ timeline = { CREATED_5_5_0 } }, {
 			i(249899),	-- Coinpurse of Good Fortune (a way of giving beta testers quick Elder Charms of Good Fortune)
 		})),
 		-- #endif
@@ -216,7 +216,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.0.1
-		expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+		expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
 			i(115371),	-- [PLACEHOLDER TIER 3 ITEM]
 			i(107459),	-- Black Iron Fragment
 			i(108882),	-- Bloodmaul Blasting Charge
@@ -233,7 +233,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 6.1.0
-		expansion(EXPANSION.WOD, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_6_1_0 } }, {
+		expansion(EXPANSION.WOD, patch(1,0), bubbleDownSelf({ timeline = { CREATED_6_1_0 } }, {
 			i(122419),	-- Scouting Missive: Gorian Proving Grounds
 			i(122420),	-- Scouting Missive: Gorian Proving Grounds
 		})),
@@ -247,7 +247,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
 			i(134824),	-- "Sir Pugsington" Costume
 			i(132118),	-- Aggramar's Blessing
 			i(129742),	-- Badge of Timewalking Justice
@@ -264,7 +264,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
+		expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ timeline = { CREATED_7_2_0 } }, {
 			n(SEASON_RUTHLESS, {
 				n(PVP_ELITE, {
 					i(146483),	-- Ensemble: Elite Ruthless Gladiator's Dreadplate Armor
@@ -299,13 +299,13 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 7.3.2
-		expansion(EXPANSION.LEGION, patch(3,2), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_2 } }, {
+		expansion(EXPANSION.LEGION, patch(3,2), bubbleDownSelf({ timeline = { CREATED_7_3_2 } }, {
 			i(155657),	-- Alor'idal Crystal Shard
 			i(154991),	-- Brawler's Footlocker
 		})),
 
 		-- 7.3.5
-		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_5 } }, {
+		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ timeline = { CREATED_7_3_5 } }, {
 			i(156707),	-- Bret's Satchel of Helpful Goods
 			i(156718),	-- Stolen Ore
 		})),
@@ -323,7 +323,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
 			i(159731),	-- Add Keystone Affix: Bolstering
 			i(159732),	-- Add Keystone Affix: Bursting
 			i(159733),	-- Add Keystone Affix: Explosive
@@ -388,7 +388,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = { CREATED_8_1_0 } }, {
 			i(165730),	-- Cache of Dazar'alor Treasures
 			i(165731),	-- Cache of Dazar'alor Treasures
 			i(165732),	-- Cache of Dazar'alor Treasures
@@ -415,12 +415,12 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_8_1_5 } }, {
+		expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ timeline = { CREATED_8_1_5 } }, {
 			i(167026),	-- Cache of Crucible Treasures
 		})),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
 			i(168272),	-- [PH] Amathet Cache
 			i(170501),	-- [PH] Mogu Cache
 			i(169154),	-- [PH] N'Zoth Cache
@@ -435,7 +435,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 8.2.5
-		expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_5 } }, {
+		expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ timeline = { CREATED_8_2_5 } }, {
 			i(169389),	-- [DNT] Lookout's Key
 			i(170488),	-- [DNT] Torn Journal Page #7
 			i(170484),	-- [DNT] Torn Journal Page #14
@@ -448,7 +448,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 8.3.0
-		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
+		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_8_3_0 } }, {
 			i(174097),	-- [DNT] Corruptium
 			i(171321),	-- [DNT] REUSE ME [MTMM]
 			i(171322),	-- [DNT] REUSE ME [MTMM]
@@ -535,7 +535,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
 			i(178152),	-- <Broker Adjective> Return Beacon
 			i(173063),	-- [DNT] REUSE ME
 			i(173064),	-- [DNT] REUSE ME
@@ -829,7 +829,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 9.0.2
-		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
+		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ timeline = { CREATED_9_0_2 } }, {
 			i(178659),	-- Abominable Backup
 			i(181739),	-- Bag of Soul Ash
 			i(184482),	-- Blueprint: Phial of Serenity
@@ -868,7 +868,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 9.0.5
-		expansion(EXPANSION.SL, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_5 } }, {
+		expansion(EXPANSION.SL, patch(0,5), bubbleDownSelf({ timeline = { CREATED_9_0_5 } }, {
 			i(185472),	-- Heritage of the Shu'halo
 			i(185717),	-- Slumbering Spirit
 			i(186099),	-- Spatial Realignment Apparatus
@@ -876,7 +876,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ timeline = { CREATED_9_1_0 } }, {
 			i(187524),	-- Add Keystone Affix: Tormented
 			i(186402),	-- Armament Ehancement Matrix
 			i(187120),	-- Blood Healing Shard 1 - Rank 5
@@ -961,7 +961,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 9.1.5
-		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
+		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ timeline = { CREATED_9_1_5 } }, {
 			i(189534),	-- Add Keystone Affix: Infernal
 			i(187610),	-- Court of Farondis Insignia
 			i(188168),	-- Kyrian Traveler's Anima Cache
@@ -973,7 +973,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
+		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ timeline = { CREATED_9_2_0 } }, {
 			i(189452),	-- 9.2 Mount Crafting Bag of Goodies
 			i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
 			i(190938),	-- Add Keystone Affix: Encrypted
@@ -1026,7 +1026,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 9.2.5
-		expansion(EXPANSION.SL, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_9_2_5 } }, {
+		expansion(EXPANSION.SL, patch(2,5), bubbleDownSelf({ timeline = { CREATED_9_2_5 } }, {
 			i(191217),	-- [Daon Test]Beast Battle-Training Stone
 			i(191219),	-- [Daon Test]Immaculate Elemental Battle-Stone
 			i(191200),	-- [Daon Test]Ultimate Battle-Training Stone
@@ -1037,7 +1037,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 9.2.7
-		expansion(EXPANSION.SL, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_9_2_7 } }, {
+		expansion(EXPANSION.SL, patch(2,7), bubbleDownSelf({ timeline = { CREATED_9_2_7 } }, {
 			i(200655),	-- Set Keystone Level: 36
 			i(200656),	-- Set Keystone Level: 37
 			i(200657),	-- Set Keystone Level: 38
@@ -1053,7 +1053,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
 			i(194719),	-- [DEPRECATED]Illusionary Coin
 			i(192600),	-- [DNT][PH] Meat
 			i(194110),	-- [PH] Dragon Rider's Honor
@@ -1081,7 +1081,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(192127),	-- Basilisk Eggs
 			i(192560),	-- Bossy Storm Stuff
 			i(192078),	-- Bottled Putrescence
-			i(199690, {["sourceID"] = 182206 }),	-- BWU Test Profession Accessory
+			i(199690, {sourceID = 182206 }),	-- BWU Test Profession Accessory
 			i(200950),	-- Consortium Packaging String
 			i(191058),	-- Dilapidated Parchment: Bottom Half
 			i(191059),	-- Dilapidated Parchment: Top Half
@@ -1222,7 +1222,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 10.0.2
-		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
+		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ timeline = { CREATED_10_0_2 } }, {
 			i(201252),	-- 10.0 Bronze PvP Chest (DNT)
 			i(193057),	-- 10.0 Placeholder Enchanting Crystal
 			i(193067),	-- Acadia's Tools [DNT/Unused]
@@ -1280,7 +1280,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 10.0.5
-		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
+		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ timeline = { CREATED_10_0_5 } }, {
 			i(203461),	-- Chronologically Reallocated Rations
 			i(202112),	-- Crystal Shattering Armaments
 			i(201990),	-- Primal Mote
@@ -1290,7 +1290,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 10.0.7
-		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ timeline = { CREATED_10_0_7 } }, {
 			i(202663),	-- [DNT] Dragonscale Expedition Item 01
 			i(202671),	-- [DNT] Dragonscale Expedition Item 02
 			i(202672),	-- [DNT] Dragonscale Expedition Item 03
@@ -1337,7 +1337,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ timeline = { CREATED_10_1_0 } }, {
 			i(205934),	-- Add Keystone Affix: Afflicted
 			i(205933),	-- Add Keystone Affix: Entangling
 			i(205935),	-- Add Keystone Affix: Incorporeal
@@ -1370,15 +1370,15 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
-			i(208097, {["sourceID"] = 189585 }),	-- Flamethrower
+		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ timeline = { CREATED_10_1_5 } }, {
+			i(208097, {sourceID = 189585 }),	-- Flamethrower
 			i(205259),	-- Order Soul
 			i(207096),	-- Paracausal Chest
-			i(207102, {["sourceID"] = 188669 }),	-- TESTING ITEM DELETE ME
+			i(207102, {sourceID = 188669 }),	-- TESTING ITEM DELETE ME
 		})),
 
 		-- 10.1.7
-		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ timeline = { CREATED_10_1_7 } }, {
 			i(208549),	-- Canned Meat Product
 			i(208783),	-- Corrupted Blood
 			i(209832),	-- Crate of Dreambound Leather
@@ -1459,7 +1459,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { CREATED_10_2_0 } }, {
 			i(208692),	-- Ancient Roottwined Tome
 			i(210441),	-- Behemoth's Feather
 			i(208840),	-- Concentrated Sophic Vellum
@@ -1500,7 +1500,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ timeline = { CREATED_10_2_5 } }, {
 			i(190924),	-- Arsenal: Ruby Felfire Armaments
 			i(212784),	-- Destroyed Relic
 			i(211104),	-- Ephemeral Fractured Emerald
@@ -1513,7 +1513,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 10.2.6
-		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
+		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ timeline = { CREATED_10_2_6 } }, {
 			------ Plunderstorm ------
 			i(212096),	-- [DNT] Starter Pirate Gear
 			i(212097),	-- [DNT] Starter Pirate Gear - Health Potion
@@ -1564,7 +1564,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ timeline = { CREATED_10_2_7 } }, {
 			i(218120),	-- Arsenal: Exodar Peacekeeper's Armaments
 			i(211932),	-- Cache of Infinite Treasure
 			i(219220),	-- Catch Up Thread
@@ -1586,15 +1586,15 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(216638),	-- Timerunner's Intro Kit
 			i(219218),	-- Timerunner's Starter Kit
 			i(219219),	-- Timerunner's Starter Kit
-			i(223639, {["isBounty"] = true, ["description"] = "This ensemble is broken and will most likely not work when used."}),	-- Unburied Aspirant's Cloak Rack
-			i(223640, {["isBounty"] = true, ["description"] = "This ensemble is broken and will most likely not work when used."}),	-- Unburied Gladiator's Cloak Rack
+			i(223639, {isBounty = true, description = "This ensemble is broken and will most likely not work when used."}),	-- Unburied Aspirant's Cloak Rack
+			i(223640, {isBounty = true, description = "This ensemble is broken and will most likely not work when used."}),	-- Unburied Gladiator's Cloak Rack
 			i(213532),	-- Void Rune
 			i(213537),	-- Void Tendril
 		})),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
 			i(225640),	-- Abyssal Lure
 			i(228415),	-- Adelgonn's Journal
 			i(225211),	-- Airship Operations Manual
@@ -1763,7 +1763,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,02), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,02), bubbleDownSelf({ timeline = { CREATED_11_0_2 } }, {
 			i(230209),	-- Add Keystone Affix: Challenger's Peril
 			i(230202),	-- Add Keystone Affix: Xal'atath's Bargain: Ascendant
 			i(230206),	-- Add Keystone Affix: Xal'atath's Bargain: Devour
@@ -1787,7 +1787,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,05), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,05), bubbleDownSelf({ timeline = { CREATED_11_0_5 } }, {
 			i(223620),	-- 20th Anniversary Cache
 			i(223621),	-- 20th Anniversary Cache
 			i(223622),	-- 20th Anniversary Cache
@@ -1833,7 +1833,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ timeline = { CREATED_11_0_7 } }, {
 			i(224258),	-- [DNT] Flower
 			i(234313),	-- [DNT] Item
 			i(234969),	-- Archivist Chassis
@@ -1854,7 +1854,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
 			i(235667),	-- Add Keystone Affix: Xal'atath's Bargain: Pulsar
 			i(232076),	-- Adventurer's Warbound Battlegear Drop
 			i(232069),	-- Adventurer's Warbound Boots
@@ -1893,7 +1893,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 11.1.5
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_5 } }, {
 			i(237509),	-- Bottle of Invisibility
 			i(237508),	-- Can of Amps
 			i(235804),	-- Concentrated Potion of Celerity
@@ -1924,14 +1924,14 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 11.1.7
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_7 } }, {
 			i(246114),	-- Catalyst Elixir
 			i(238740),	-- Distilled Knowledge of Timeways
 			i(246730),	-- Landro's Loot Box
 		})),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
 			i(239204),	-- (DNT NEEDS CRESTS) Overflowing K'aresh Trove
 			i(239109),	-- [NYI] Outdoor Voidforged Container - Ruins of Yaathron
 			i(246822),	-- A Steamy Romance Novel: Devouring Love
@@ -1971,7 +1971,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 11.2.5
-		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_5 } }, {
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ timeline = { CREATED_11_2_5 } }, {
 			i(239786),	-- [DNT]
 			i(239787),	-- [DNT]
 			i(239788),	-- [DNT]
@@ -2093,7 +2093,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 11.2.7
-		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
 			i(230012),	-- [DNT]Black Coffee
 			i(228971),	-- [DNT]Captain's Cappuccino
 			i(228939),	-- [DNT]Coffee Bean
@@ -2124,7 +2124,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
 			i(257347),	-- [DNT] [PH] 12.0 Armor Box
 			i(258279),	-- [DNT] Big Pouch of Supplies
 			i(258280),	-- [DNT] Huge Pouch of Supplies
@@ -2268,7 +2268,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 12.0.1
-		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_1 } }, {
+		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ timeline = { CREATED_12_0_1 } }, {
 			i(271616),	-- Add Keystone Affix: Lindormi's Guidance
 			i(271631),	-- Light Guardian's Reward
 			i(271713),	-- Title: Azeroth's Top Ten Youth
@@ -2284,7 +2284,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 12.0.5
-		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
+		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ timeline = { CREATED_12_0_5 } }, {
 			i(273152),	-- Delve Gearbox
 			i(273153),	-- Delve Gearbox
 			i(273154),	-- Delve Gearbox
@@ -2293,12 +2293,12 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 12.0.7
-		expansion(EXPANSION.MID, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_7 } }, {
+		expansion(EXPANSION.MID, patch(0,7), bubbleDownSelf({ timeline = { CREATED_12_0_7 } }, {
 			i(277124),	-- Warbound Cache of Void-Touched Armaments (Champion)
 		})),
 
 		-- 12.1.0
-		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { CREATED_12_1_0 } }, {
 			i(281540),	-- Roomy McRommerson (DECOR!)
 			i(271679),	-- Set Keystone Level: 2
 			i(271944),	-- Set Keystone Map: Altar of Fangs

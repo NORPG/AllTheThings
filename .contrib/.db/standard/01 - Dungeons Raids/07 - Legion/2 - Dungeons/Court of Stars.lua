@@ -2,31 +2,31 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 	inst(800, {	-- Court of Stars
-		["coord"] = { 51.0, 65.6, SURAMAR },
-		["maps"] = { 761, 762, 763 },
-		["groups"] = {
+		coord = { 51.0, 65.6, SURAMAR },
+		maps = { 761, 762, 763 },
+		groups = {
 			n(WORLD_QUESTS, {
 				q(42769, {	-- Court of Stars: Bring Me the Eyes
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(42781, {	-- Court of Stars: Disarmning the Watch
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(42784, {	-- Court of Stars: The Deceitful Student
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(42783, {	-- Court of Stars: They Bloom at Night
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(42764, {	-- Court of Stars: Wraith in the Machine
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
@@ -34,7 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				})),
 				cr(104217, e(1719, {	-- Talixae Flamewreath
 					i(201994, {	-- Felsworn Covenant Crossbow
-						["timeline"] = { ADDED_11_0_2 },
+						timeline = { ADDED_11_0_2 },
 					}),
 				})),
 				cr(104218, e(1720, {	-- Advisor Melandrus
@@ -43,17 +43,17 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					i(137929),	-- Pattern: Gravenscale Grips [Rank 3] (RECIPE!)
 					i(127926),	-- Recipe: Potion of Deadly Grace [Rank 2] (RECIPE!)
 					i(201995, {	-- Crux of Blind Faith
-						["timeline"] = { ADDED_11_0_2 },
+						timeline = { ADDED_11_0_2 },
 					}),
 					i(201996, {	-- Edge of the First Blade
-						["timeline"] = { ADDED_11_0_2 },
+						timeline = { ADDED_11_0_2 },
 					}),
 					i(247913, {	-- Ornate Suramar Table (DECOR!)
-						["timeline"] = { ADDED_11_2_7 },
+						timeline = { ADDED_11_2_7 },
 					}),
 				})),
 			}),
-			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
+			n(MYTHIC_PLUS, sharedDataSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 				i(201995),	-- Crux of Blind Faith
 				i(201996),	-- Edge of the First Blade
 				i(201994),	-- Felsworn Covenant Crossbow
@@ -107,11 +107,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				})),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				["ItemAppearanceModifierID"] = 0,
-				["groups"] = {
+				ItemAppearanceModifierID = 0,
+				groups = {
 					n(ACHIEVEMENTS, {
 						ach(10611, {	-- Dropping Some Eaves
-							["description"] = "Don't let any of the 5 Sentries complete their Sound Alarm cast, disable the 5 beacons before engaging the first boss, kill all 3 demons separately before pulling Talixae and then guess spy on the first try.",
+							description = "Don't let any of the 5 Sentries complete their Sound Alarm cast, disable the 5 beacons before engaging the first boss, kill all 3 demons separately before pulling Talixae and then guess spy on the first try.",
 						}),
 					}),
 					cr(104215, e(1718, {	-- Patrol Captain Gerdo

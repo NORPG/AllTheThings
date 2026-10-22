@@ -2,10 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
 		ach(11164, {	-- Legion Dungeon Hero
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				10781,	-- Heroic: Eye of Azshara
 				10784,	-- Heroic: Darkheart Thicket
 				10788,	-- Heroic: Halls of Valor
@@ -17,7 +17,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			}},
 		}),
 		ach(11163, {	-- Glory of the Legion Hero
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				10456,	-- But You Say He's Just a Friend
 				10457,	-- Stay Salty
 				10458,	-- Ready for Raiding V
@@ -47,12 +47,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				10610,	-- Waiting for Gerdo
 				10611,	-- Dropping Some Eaves
 			}},
-			["groups"] = {
+			groups = {
 				i(141217),	-- Leyfeather Hippogryph (MOUNT!)
 			},
 		}),
 		ach(11180, {	-- Glory of the Legion Raider
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				10555,	-- Buggy Fight
 				10771,	-- Webbing Crashers
 				10753,	-- Scare Bear
@@ -71,11 +71,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				10699,	-- Infinitesimal
 				10696,	-- I've Got My Eyes On You
 			}},
-			["maps"] = {
+			maps = {
 				764, 765, 766, 767, 768, 769, 770, 771, 772,	-- The Nighthold
 				777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789,	-- The Emerald Nightmare
 			},
-			["groups"] = {
+			groups = {
 				i(141216),	-- Grove Defiler (MOUNT!)
 			},
 		}),

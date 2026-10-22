@@ -62,27 +62,27 @@ end]];
 
 root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 	applyclassicphase(WRATH_PHASE_ONE, n(SEASON_DEADLY, {
-		["timeline"] = { ADDED_3_0_2 },
-		["groups"] = {
+		timeline = { ADDED_3_0_2 },
+		groups = {
 			n(ACHIEVEMENTS, {
-				ach(11710, {["timeline"] = {ADDED_7_2_0}}),	-- Lethal Looks (PvP Season 5)
+				ach(11710, {timeline = {ADDED_7_2_0}}),	-- Lethal Looks (PvP Season 5)
 			}),
 			n(ACHIEVEMENTS, elitepvp(bubbleDown({
 				-- #if BEFORE CATA
-				["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
+				OnUpdate = DEADLY_GLADIATOR_ONUPDATE,
 				-- #endif
 			}, {
-				["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
-				["groups"] = {
+				timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+				groups = {
 					ach(3336, {	-- Deadly Gladiator: Wrath of the Lich King Season 1
 						title(56),	-- Deadly Gladiator <Name>
 					}),
 					ach(3096, {	-- Deadly Gladiator's Frost Wyrm
-						["provider"] = { "i", 46708 },	-- Deadly Gladiator's Frost Wyrm
-						["filterID"] = MOUNTS,
+						provider = { "i", 46708 },	-- Deadly Gladiator's Frost Wyrm
+						filterID = MOUNTS,
 					}),
 					i(46708, {	-- Deadly Gladiator's Frost Wyrm
-						["description"] = "Awarded to members of the Arena teams during Wrath Season 1 that were in the 0.5% bracket of their battlegroup.",
+						description = "Awarded to members of the Arena teams during Wrath Season 1 that were in the 0.5% bracket of their battlegroup.",
 					}),
 					-- #if ANYCLASSIC
 					ach(16316),	-- Challenger: Season 5
@@ -97,120 +97,120 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 			n(PVP_HONOR, {
 				n(WEAPONS, {
 					moh(80, iensemble(146647, {	-- Arsenal: Savage Gladiator's Weapons
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					-- #if BEFORE MOP
 					i(42444, {	-- Savage Gladiator's War Edge (Throw Wep)
-						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
 					}),
 					-- #endif
 					i(42511, {	-- Savage Gladiator's Baton of Light
-						["timeline"] = { ADDED_3_0_2 },
+						timeline = { ADDED_3_0_2 },
 					}),
 					i(42448, {	-- Savage Gladiator's Touch of Defeat
-						["timeline"] = { ADDED_3_0_2 },
+						timeline = { ADDED_3_0_2 },
 					}),
 					i(42517, {	-- Savage Gladiator's Piercing Touch
-						["timeline"] = { ADDED_3_0_2 },
+						timeline = { ADDED_3_0_2 },
 					}),
 					i(42214, {	-- Savage Gladiator's Waraxe
-						["timeline"] = { ADDED_3_0_2 },
+						timeline = { ADDED_3_0_2 },
 					}),
 					-- Other Savage Gladiator weapons have never been implemented
 					i(42557, {	-- Savage Gladiator's Barrier
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42356, {	-- Savage Gladiator's Battle Staff
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42221, {	-- Savage Gladiator's Bonecracker
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42295, {	-- Savage Gladiator's Bonegrinder
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42212, {	-- Savage Gladiator's Chopper
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42206, {	-- Savage Gladiator's Cleaver
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42294, {	-- Savage Gladiator's Decapitator
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42382, {	-- Savage Gladiator's Energy Staff
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42220, {	-- Savage Gladiator's Fleshslicer
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(44416, {	-- Savage Gladiator's Focus Staff
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42344, {	-- Savage Gladiator's Gavel
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42297, {	-- Savage Gladiator's Greatsword
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42213, {	-- Savage Gladiator's Hacker
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42446, {	-- Savage Gladiator's Heavy Crossbow
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42445, {	-- Savage Gladiator's Longbow
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42215, {	-- Savage Gladiator's Mutilator
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42296, {	-- Savage Gladiator's Pike
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42222, {	-- Savage Gladiator's Pummeler
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42223, {	-- Savage Gladiator's Quickblade
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42568, {	-- Savage Gladiator's Redoubt
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42447, {	-- Savage Gladiator's Rifle
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42218, {	-- Savage Gladiator's Ripper
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42216, {	-- Savage Gladiator's Shanker
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42556, {	-- Savage Gladiator's Shield Wall
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42217, {	-- Savage Gladiator's Shiv
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42219, {	-- Savage Gladiator's Slasher
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42224, {	-- Savage Gladiator's Slicer
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42343, {	-- Savage Gladiator's Spellblade
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(42388, {	-- Savage Gladiator's Staff
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 					i(44415, {	-- Savage Gladiator's War Staff
-						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						timeline = { CREATED_3_0_2, ADDED_7_2_0 },
 					}),
 				}),
 				cl(DEATHKNIGHT, {
 					moh(12, iensemble(146580, {	-- Ensemble: Savage Gladiator's Dreadplate Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(40779)),	-- Savage Gladiator's Dreadplate Chestpiece
 					moh(2, i(40799)),	-- Savage Gladiator's Dreadplate Gauntlets
@@ -220,7 +220,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(DRUID, {
 					moh(12, iensemble(146579, {	-- Ensemble: Savage Gladiator's Dragonhide Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41770)),	-- Savage Gladiator's Dragonhide Gloves
 					moh(3, i(41675)),	-- Savage Gladiator's Dragonhide Helm
@@ -240,7 +240,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(HUNTER, {
 					moh(12, iensemble(146578, {	-- Ensemble: Savage Gladiator's Chain Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(41084)),	-- Savage Gladiator's Chain Armor
 					moh(2, i(41140)),	-- Savage Gladiator's Chain Gauntlets
@@ -250,7 +250,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(MAGE, {
 					moh(12, iensemble(146587, {	-- Ensemble: Savage Gladiator's Silk Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41962)),	-- Savage Gladiator's Silk Amice
 					moh(3, i(41943)),	-- Savage Gladiator's Silk Cowl
@@ -260,7 +260,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(PALADIN, {
 					moh(12, iensemble(146586, {	-- Ensemble: Savage Gladiator's Scaled Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(40898)),	-- Savage Gladiator's Ornamented Chestguard
 					moh(2, i(40918)),	-- Savage Gladiator's Ornamented Gloves
@@ -275,7 +275,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(PRIEST, {
 					moh(12, iensemble(146585, {	-- Ensemble: Savage Gladiator's Satin Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41847)),	-- Savage Gladiator's Mooncloth Gloves
 					moh(3, i(41848)),	-- Savage Gladiator's Mooncloth Hood
@@ -290,7 +290,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(ROGUE, {
 					moh(12, iensemble(146582, {	-- Ensemble: Savage Gladiator's Leather Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41643)),	-- Savage Gladiator's Leather Gloves
 					moh(3, i(41644)),	-- Savage Gladiator's Leather Helm
@@ -300,7 +300,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(SHAMAN, {
 					moh(12, iensemble(146584, {	-- Ensemble: Savage Gladiator's Ringmail Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(41078)),	-- Savage Gladiator's Linked Armor
 					moh(2, i(41134)),	-- Savage Gladiator's Linked Gauntlets
@@ -320,7 +320,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(WARLOCK, {
 					moh(12, iensemble(146581, {	-- Ensemble: Savage Gladiator's Felweave Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(42008)),	-- Savage Gladiator's Felweave Amice
 					moh(3, i(41990)),	-- Savage Gladiator's Felweave Cowl
@@ -330,7 +330,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(WARRIOR, {
 					moh(12, iensemble(146583, {	-- Ensemble: Savage Gladiator's Plate Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(40778)),	-- Savage Gladiator's Plate Chestpiece
 					moh(2, i(40797)),	-- Savage Gladiator's Plate Gauntlets
@@ -341,11 +341,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				-- #if BEFORE MOP
 				filter(RELICS_F, bubbleDownSelf({
 					-- #if BEFORE CATA
-					["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
+					OnUpdate = DEADLY_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
-					["groups"] = {
+					timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
+					groups = {
 						i(42574),	-- Savage Gladiator's Idol of Resolve
 						i(42575),	-- Savage Gladiator's Idol of Steadfastness
 						i(42576),	-- Savage Gladiator's Idol of Tenacity
@@ -361,20 +361,20 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 			}),
 			n(PRE_SEASON_HATEFUL, {
 				n(WEAPONS, {
-					["groups"] = sharedData({
+					groups = sharedData({
 						-- #if ANYCLASSIC
-						["timeline"] = { CREATED_3_0_2 }
+						timeline = { CREATED_3_0_2 }
 						-- #endif
 					}, {
 						moh(80, iensemble(146646, {	-- Arsenal: Hateful Gladiator's Weapons
-							["timeline"] = { ADDED_7_2_0 },
+							timeline = { ADDED_7_2_0 },
 						})),
 						-- #if AFTER MOP
 						moh(2, i(42563)),	-- Hateful Gladiator's Barrier
 						-- #endif
 						moh(5, i(42512, {	-- Hateful Gladiator's Baton of Light
 							-- #if ANYCLASSIC
-							["timeline"] = { ADDED_3_0_2 },
+							timeline = { ADDED_3_0_2 },
 							-- #endif
 						})),
 						-- #if AFTER MOP
@@ -398,7 +398,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 						-- #endif
 						moh(5, i(42518, {	-- Hateful Gladiator's Piercing Touch
 							-- #if ANYCLASSIC
-							["timeline"] = { ADDED_3_0_2 },
+							timeline = { ADDED_3_0_2 },
 							-- #endif
 						})),
 						-- #if AFTER MOP
@@ -419,7 +419,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 						-- #endif
 						moh(5, i(42501, {	-- Hateful Gladiator's Touch of Defeat
 							-- #if ANYCLASSIC
-							["timeline"] = { ADDED_3_0_2 },
+							timeline = { ADDED_3_0_2 },
 							-- #endif
 						})),
 						-- #if AFTER MOP
@@ -428,14 +428,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 						moh(5, i(42236)),	-- Hateful Gladiator's Waraxe
 						-- #if BEFORE MOP
 						i(42449, {	-- Hateful Gladiator's War Edge (Throw Wep)
-							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+							timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
 						}),
 						-- #endif
 					}),
 				}),
 				cl(DEATHKNIGHT, {
 					moh(12, iensemble(146560, {	-- Ensemble: Hateful Gladiator's Dreadplate Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(40781)),	-- Hateful Gladiator's Dreadplate Chestpiece
 					moh(2, i(40803)),	-- Hateful Gladiator's Dreadplate Gauntlets
@@ -445,7 +445,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(DRUID, {
 					moh(12, iensemble(146559, {	-- Ensemble: Hateful Gladiator's Dragonhide Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41771)),	-- Hateful Gladiator's Dragonhide Gloves
 					moh(3, i(41676)),	-- Hateful Gladiator's Dragonhide Helm
@@ -465,7 +465,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(HUNTER, {
 					moh(12, iensemble(146558, {	-- Ensemble: Hateful Gladiator's Chain Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(41085)),	-- Hateful Gladiator's Chain Armor
 					moh(2, i(41141)),	-- Hateful Gladiator's Chain Gauntlets
@@ -475,7 +475,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(MAGE, {
 					moh(12, iensemble(146567, {	-- Ensemble: Hateful Gladiator's Silk Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41963)),	-- Hateful Gladiator's Silk Amice
 					moh(3, i(41944)),	-- Hateful Gladiator's Silk Cowl
@@ -485,7 +485,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(PALADIN, {
 					moh(12, iensemble(146566, {	-- Ensemble: Hateful Gladiator's Scaled Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(40904)),	-- Hateful Gladiator's Ornamented Chestguard
 					moh(2, i(40925)),	-- Hateful Gladiator's Ornamented Gloves
@@ -500,7 +500,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(PRIEST, {
 					moh(12, iensemble(146565, {	-- Ensemble: Hateful Gladiator's Satin Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41872)),	-- Hateful Gladiator's Mooncloth Gloves
 					moh(3, i(41852)),	-- Hateful Gladiator's Mooncloth Hood
@@ -515,7 +515,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(ROGUE, {
 					moh(12, iensemble(146562, {	-- Ensemble: Hateful Gladiator's Leather Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41765)),	-- Hateful Gladiator's Leather Gloves
 					moh(3, i(41670)),	-- Hateful Gladiator's Leather Helm
@@ -525,7 +525,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(SHAMAN, {
 					moh(12, iensemble(146564, {	-- Ensemble: Hateful Gladiator's Ringmail Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(41079)),	-- Hateful Gladiator's Linked Armor
 					moh(2, i(41135)),	-- Hateful Gladiator's Linked Gauntlets
@@ -545,7 +545,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(WARLOCK, {
 					moh(12, iensemble(146561, {	-- Ensemble: Hateful Gladiator's Felweave Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(42009)),	-- Hateful Gladiator's Felweave Amice
 					moh(3, i(41991)),	-- Hateful Gladiator's Felweave Cowl
@@ -555,7 +555,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(WARRIOR, {
 					moh(12, iensemble(146563, {	-- Ensemble: Hateful Gladiator's Plate Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(40783)),	-- Hateful Gladiator's Plate Chestpiece
 					moh(2, i(40801)),	-- Hateful Gladiator's Plate Gauntlets
@@ -565,9 +565,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				n(BACK, {
 					-- #if ANYCLASSIC
-					["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
+					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
 					-- #endif
-					["groups"] = {
+					groups = {
 						moh(1, i(42057)),	-- Hateful Gladiator's Cloak of Ascendancy
 						moh(1, i(42059)),	-- Hateful Gladiator's Cloak of Deliverance
 						moh(1, i(42055)),	-- Hateful Gladiator's Cloak of Dominance
@@ -579,19 +579,19 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				n(WRIST, {
 					-- #if ANYCLASSIC
-					["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
+					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
 					-- #endif
-					["groups"] = {
+					groups = {
 						moh(1, i(41638)),	-- Hateful Gladiator's Armwraps of Dominance
 						moh(1, i(41332)),	-- Hateful Gladiator's Armwraps of Salvation
 						moh(1, i(41830)),	-- Hateful Gladiator's Armwraps of Triumph
 						moh(1, i(40972)),	-- Hateful Gladiator's Bracers of Salvation
 						moh(1, i(40887)),	-- Hateful Gladiator's Bracers of Triumph
 						moh(1, i(147583, {	-- Hateful Gladiator's Bracers of Victory
-							["timeline"] = { ADDED_7_2_0 },
+							timeline = { ADDED_7_2_0 },
 						})),
 						moh(1, i(147586, {	-- Hateful Gladiator's Cuffs of Ascendancy
-							["timeline"] = { ADDED_7_2_0 },
+							timeline = { ADDED_7_2_0 },
 						})),
 						moh(1, i(41907)),	-- Hateful Gladiator's Cuffs of Dominance
 						moh(1, i(41878)),	-- Hateful Gladiator's Cuffs of Salvation
@@ -602,21 +602,21 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				n(WAIST, {
 					-- #if ANYCLASSIC
-					["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
+					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
 					-- #endif
-					["groups"] = {
+					groups = {
 						moh(1, i(41628)),	-- Hateful Gladiator's Belt of Dominance
 						moh(1, i(41330)),	-- Hateful Gladiator's Belt of Salvation
 						moh(1, i(41827)),	-- Hateful Gladiator's Belt of Triumph
 						moh(1, i(147587, {	-- Hateful Gladiator's Cord of Ascendancy
-							["timeline"] = { ADDED_7_2_0 },
+							timeline = { ADDED_7_2_0 },
 						})),
 						moh(1, i(41896)),	-- Hateful Gladiator's Cord of Dominance
 						moh(1, i(41877)),	-- Hateful Gladiator's Cord of Salvation
 						moh(1, i(40966)),	-- Hateful Gladiator's Girdle of Salvation
 						moh(1, i(40877)),	-- Hateful Gladiator's Girdle of Triumph
 						moh(1, i(147584, {	-- Hateful Gladiator's Girdle of Victory
-							["timeline"] = { ADDED_7_2_0 },
+							timeline = { ADDED_7_2_0 },
 						})),
 						moh(1, i(41068)),	-- Hateful Gladiator's Waistguard of Dominance
 						moh(1, i(41050)),	-- Hateful Gladiator's Waistguard of Salvation
@@ -625,22 +625,22 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				n(FEET, {
 					-- #if ANYCLASSIC
-					["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
+					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
 					-- #endif
-					["groups"] = {
+					groups = {
 						moh(2, i(41633)),	-- Hateful Gladiator's Boots of Dominance
 						moh(2, i(41331)),	-- Hateful Gladiator's Boots of Salvation
 						moh(2, i(41828)),	-- Hateful Gladiator's Boots of Triumph
 						moh(2, i(40973)),	-- Hateful Gladiator's Greaves of Salvation
 						moh(2, i(40878)),	-- Hateful Gladiator's Greaves of Triumph
 						moh(2, i(147585, {	-- Hateful Gladiator's Greaves of Victory
-							["timeline"] = { ADDED_7_2_0 },
+							timeline = { ADDED_7_2_0 },
 						})),
 						moh(2, i(41073)),	-- Hateful Gladiator's Sabatons of Dominance
 						moh(2, i(41049)),	-- Hateful Gladiator's Sabatons of Salvation
 						moh(2, i(41228)),	-- Hateful Gladiator's Sabatons of Triumph
 						moh(2, i(147588, {	-- Hateful Gladiator's Slippers of Ascendancy
-							["timeline"] = { ADDED_7_2_0 },
+							timeline = { ADDED_7_2_0 },
 						})),
 						moh(2, i(41901)),	-- Hateful Gladiator's Slippers of Dominance
 						moh(2, i(41879)),	-- Hateful Gladiator's Slippers of Salvation
@@ -648,11 +648,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				filter(NECK_F, bubbleDown({
 					-- #if BEFORE CATA
-					["OnUpdate"] = HATEFUL_GLADIATOR_ONUPDATE,
+					OnUpdate = HATEFUL_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
-					["groups"] = {
+					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+					groups = {
 						i(42024),	-- Hateful Gladiator's Pendant of Ascendancy
 						i(42025),	-- Hateful Gladiator's Pendant of Deliverance
 						i(42022),	-- Hateful Gladiator's Pendant of Dominance
@@ -664,11 +664,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				})),
 				filter(FINGER_F, bubbleDown({
 					-- #if BEFORE CATA
-					["OnUpdate"] = HATEFUL_GLADIATOR_ONUPDATE,
+					OnUpdate = HATEFUL_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
-					["groups"] = {
+					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+					groups = {
 						i(42110),	-- Hateful Gladiator's Band of Dominance
 						i(42112),	-- Hateful Gladiator's Band of Triumph
 					},
@@ -676,11 +676,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				-- #if BEFORE MOP
 				filter(RELICS_F, bubbleDownSelf({
 					-- #if BEFORE CATA
-					["OnUpdate"] = HATEFUL_GLADIATOR_ONUPDATE,
+					OnUpdate = HATEFUL_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
-					["groups"] = {
+					timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
+					groups = {
 						i(42587),	-- Hateful Gladiator's Idol of Resolve
 						i(42582),	-- Hateful Gladiator's Idol of Steadfastness
 						i(42577),	-- Hateful Gladiator's Idol of Tenacity
@@ -697,7 +697,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
 					moh(80, iensemble(146645, {	-- Arsenal: Deadly Gladiator's Weapon
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(42564)),	-- Deadly Gladiator's Barrier
 					moh(5, i(42513)),	-- Deadly Gladiator's Baton of Light
@@ -738,13 +738,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(5, i(42237)),	-- Deadly Gladiator's Waraxe
 					-- #if BEFORE MOP
 					i(42450, {	-- Deadly Gladiator's War Edge (Throw Wep)
-						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
 					}),
 					-- #endif
 				}),
 				cl(DEATHKNIGHT, {
 					moh(12, iensemble(146540, {	-- Ensemble: Deadly Gladiator's Dreadplate Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(40784)),	-- Deadly Gladiator's Dreadplate Chestpiece
 					moh(2, i(40806)),	-- Deadly Gladiator's Dreadplate Gauntlets
@@ -754,7 +754,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(DRUID, {
 					moh(12, iensemble(146539, {	-- Ensemble: Deadly Gladiator's Dragonhide Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41772)),	-- Deadly Gladiator's Dragonhide Gloves
 					moh(3, i(41677)),	-- Deadly Gladiator's Dragonhide Helm
@@ -774,7 +774,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(HUNTER, {
 					moh(12, iensemble(146538, {	-- Ensemble: Deadly Gladiator's Chain Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(41086)),	-- Deadly Gladiator's Chain Armor
 					moh(2, i(41142)),	-- Deadly Gladiator's Chain Gauntlets
@@ -784,7 +784,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(MAGE, {
 					moh(12, iensemble(146547, {	-- Ensemble: Deadly Gladiator's Silk Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41964)),	-- Deadly Gladiator's Silk Amice
 					moh(3, i(41945)),	-- Deadly Gladiator's Silk Cowl
@@ -794,7 +794,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(PALADIN, {
 					moh(12, iensemble(146546, {	-- Ensemble: Deadly Gladiator's Scaled Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(40905)),	-- Deadly Gladiator's Ornamented Chestguard
 					moh(2, i(40926)),	-- Deadly Gladiator's Ornamented Gloves
@@ -809,7 +809,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(PRIEST, {
 					moh(12, iensemble(146545, {	-- Ensemble: Deadly Gladiator's Satin Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41873)),	-- Deadly Gladiator's Mooncloth Gloves
 					moh(3, i(41853)),	-- Deadly Gladiator's Mooncloth Hood
@@ -824,7 +824,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(ROGUE, {
 					moh(12, iensemble(146542, {	-- Ensemble: Deadly Gladiator's Leather Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41766)),	-- Deadly Gladiator's Leather Gloves
 					moh(3, i(41671)),	-- Deadly Gladiator's Leather Helm
@@ -834,7 +834,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(SHAMAN, {
 					moh(12, iensemble(146544, {	-- Ensemble: Deadly Gladiator's Ringmail Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(41080)),	-- Deadly Gladiator's Linked Armor
 					moh(2, i(41136)),	-- Deadly Gladiator's Linked Gauntlets
@@ -854,7 +854,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(WARLOCK, {
 					moh(12, iensemble(146541, {	-- Ensemble: Deadly Gladiator's Felweave Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(42010)),	-- Deadly Gladiator's Felweave Amice
 					moh(3, i(41992)),	-- Deadly Gladiator's Felweave Cowl
@@ -864,7 +864,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(WARRIOR, {
 					moh(12, iensemble(146543, {	-- Ensemble: Deadly Gladiator's Plate Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(40786)),	-- Deadly Gladiator's Plate Chestpiece
 					moh(2, i(40804)),	-- Deadly Gladiator's Plate Gauntlets
@@ -888,10 +888,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(1, i(40982)),	-- Deadly Gladiator's Bracers of Salvation
 					moh(1, i(40888)),	-- Deadly Gladiator's Bracers of Triumph
 					moh(1, i(147589, {	-- Deadly Gladiator's Bracers of Victory
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(1, i(147592, {	-- Deadly Gladiator's Cuffs of Ascendancy
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(1, i(41908)),	-- Deadly Gladiator's Cuffs of Dominance
 					moh(1, i(41892)),	-- Deadly Gladiator's Cuffs of Salvation
@@ -904,14 +904,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(1, i(41616)),	-- Deadly Gladiator's Belt of Salvation
 					moh(1, i(41831)),	-- Deadly Gladiator's Belt of Triumph
 					moh(1, i(147593, {	-- Deadly Gladiator's Cord of Ascendancy
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(1, i(41897)),	-- Deadly Gladiator's Cord of Dominance
 					moh(1, i(41880)),	-- Deadly Gladiator's Cord of Salvation
 					moh(1, i(40974)),	-- Deadly Gladiator's Girdle of Salvation
 					moh(1, i(40879)),	-- Deadly Gladiator's Girdle of Triumph
 					moh(1, i(147590, {	-- Deadly Gladiator's Girdle of Victory
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(1, i(41069)),	-- Deadly Gladiator's Waistguard of Dominance
 					moh(1, i(41048)),	-- Deadly Gladiator's Waistguard of Salvation
@@ -924,13 +924,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(2, i(40975)),	-- Deadly Gladiator's Greaves of Salvation
 					moh(2, i(40880)),	-- Deadly Gladiator's Greaves of Triumph
 					moh(2, i(147591, {	-- Deadly Gladiator's Greaves of Victory
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41074)),	-- Deadly Gladiator's Sabatons of Dominance
 					moh(2, i(41054)),	-- Deadly Gladiator's Sabatons of Salvation
 					moh(2, i(41229)),	-- Deadly Gladiator's Sabatons of Triumph
 					moh(2, i(147594, {	-- Deadly Gladiator's Treads of Ascendancy
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41902)),	-- Deadly Gladiator's Treads of Dominance
 					moh(2, i(41884)),	-- Deadly Gladiator's Treads of Salvation
@@ -951,11 +951,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				-- #if BEFORE MOP
 				filter(RELICS_F, bubbleDownSelf({
 					-- #if BEFORE CATA
-					["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
+					OnUpdate = DEADLY_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
-					["groups"] = {
+					timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
+					groups = {
 						i(42588),	-- Deadly Gladiator's Idol of Resolve
 						i(42583),	-- Deadly Gladiator's Idol of Steadfastness
 						i(42578),	-- Deadly Gladiator's Idol of Tenacity
@@ -970,11 +970,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				-- #endif
 				filter(TRINKET_F, bubbleDown({
 					-- #if BEFORE CATA
-					["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
+					OnUpdate = DEADLY_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
-					["groups"] = {	-- see https://www.wowhead.com/forums/topic/arena-season-5-guide-60347 also has npcs
+					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+					groups = {	-- see https://www.wowhead.com/forums/topic/arena-season-5-guide-60347 also has npcs
 						i(42123),	-- (A) Medallion of the Alliance Patch 3.0.1
 						i(42122),	-- (H) Medallion of the Horde Patch 3.0.1
 
@@ -989,14 +989,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 			-- #if ANYCLASSIC
 			n(PVP_ELITE, bubbleDownSelf({
 				-- #if BEFORE CATA
-				["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
+				OnUpdate = DEADLY_GLADIATOR_ONUPDATE,
 				-- #endif
 			}, {
-				["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
-				["groups"] = {
+				timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+				groups = {
 					-- Exclusive to classic reward... BLIZZARD.
 					i(201993, {	-- Deadly Gladiator's Tabard
-						["f"] = TABARDS,
+						f = TABARDS,
 					}),
 				}
 			})),
@@ -1004,27 +1004,27 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 		},
 	})),
 	applyclassicphase(WRATH_PHASE_TWO, n(SEASON_FURIOUS, {
-		["timeline"] = { ADDED_3_1_0 },
-		["groups"] = {
+		timeline = { ADDED_3_1_0 },
+		groups = {
 			n(ACHIEVEMENTS, {
-				ach(11711, {["timeline"] = {ADDED_7_2_0}}),	-- The Fierce and the Furious (PvP Season 6)
+				ach(11711, {timeline = {ADDED_7_2_0}}),	-- The Fierce and the Furious (PvP Season 6)
 			}),
 			n(ACHIEVEMENTS, elitepvp(bubbleDown({
 				-- #if BEFORE CATA
-				["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
+				OnUpdate = FURIOUS_GLADIATOR_ONUPDATE,
 				-- #endif
 			},{
-				["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-				["groups"] = {
+				timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
+				groups = {
 					ach(3436, {	-- Furious Gladiator: Wrath of the Lich King Season 2
 						title(132),	-- Furious Gladiator <Name>
 					}),
 					ach(3756, {	-- Furious Gladiator's Frost Wyrm
-						["provider"] = { "i", 46171 },	-- Furious Gladiator's Frost Wyrm
-						["filterID"] = MOUNTS,
+						provider = { "i", 46171 },	-- Furious Gladiator's Frost Wyrm
+						filterID = MOUNTS,
 					}),
 					i(46171, {	-- Furious Gladiator's Frost Wyrm
-						["description"] = "Awarded to members of the Arena teams during Wrath Season 2 that were in the 0.5% bracket of their battlegroup.",
+						description = "Awarded to members of the Arena teams during Wrath Season 2 that were in the 0.5% bracket of their battlegroup.",
 					}),
 					-- #if ANYCLASSIC
 					ach(17418),	-- Challenger: Season 6
@@ -1039,7 +1039,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
 					moh(80, iensemble(146644, {	-- Arsenal: Furious Gladiator's Weapons
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(42565)),	-- Furious Gladiator's Barrier
 					moh(5, i(42514)),	-- Furious Gladiator's Baton of Light
@@ -1078,17 +1078,17 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(5, i(42503)),	-- Furious Gladiator's Touch of Defeat
 					moh(5, i(44421)),	-- Furious Gladiator's War Staff
 					i(42238, {	-- Furious Gladiator's Waraxe
-						["timeline"] = { CREATED_3_1_1 },	-- This may have never been implemented, we'll find out!
+						timeline = { CREATED_3_1_1 },	-- This may have never been implemented, we'll find out!
 					}),
 					-- #if BEFORE MOP
 					i(42451, {	-- Furious Gladiator's War Edge (Throw Wep)
-						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
 					}),
 					-- #endif
 				}),
 				cl(DEATHKNIGHT, {
 					moh(12, iensemble(146550, {	-- Ensemble: Furious Gladiator's Dreadplate Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(40787)),	-- Furious Gladiator's Dreadplate Chestpiece
 					moh(2, i(40809)),	-- Furious Gladiator's Dreadplate Gauntlets
@@ -1098,7 +1098,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(DRUID, {
 					moh(12, iensemble(146549, {	-- Ensemble: Furious Gladiator's Dragonhide Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41773)),	-- Furious Gladiator's Dragonhide Gloves
 					moh(3, i(41678)),	-- Furious Gladiator's Dragonhide Helm
@@ -1118,7 +1118,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(HUNTER, {
 					moh(12, iensemble(146548, {	-- Ensemble: Furious Gladiator's Chain Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(41087)),	-- Furious Gladiator's Chain Armor
 					moh(2, i(41143)),	-- Furious Gladiator's Chain Gauntlets
@@ -1128,7 +1128,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(MAGE, {
 					moh(12, iensemble(146557, {	-- Ensemble: Furious Gladiator's Silk Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41965)),	-- Furious Gladiator's Silk Amice
 					moh(3, i(41946)),	-- Furious Gladiator's Silk Cowl
@@ -1138,7 +1138,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(PALADIN, {
 					moh(12, iensemble(146556, {	-- Ensemble: Furious Gladiator's Scaled Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(40907)),	-- Furious Gladiator's Ornamented Chestguard
 					moh(2, i(40927)),	-- Furious Gladiator's Ornamented Gloves
@@ -1153,7 +1153,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(PRIEST, {
 					moh(12, iensemble(146555, {	-- Ensemble: Furious Gladiator's Satin Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41874)),	-- Furious Gladiator's Mooncloth Gloves
 					moh(3, i(41854)),	-- Furious Gladiator's Mooncloth Hood
@@ -1168,7 +1168,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(ROGUE, {
 					moh(12, iensemble(146552, {	-- Ensemble: Furious Gladiator's Leather Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41767)),	-- Furious Gladiator's Leather Gloves
 					moh(3, i(41672)),	-- Furious Gladiator's Leather Helm
@@ -1178,7 +1178,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(SHAMAN, {
 					moh(12, iensemble(146554, {	-- Ensemble: Furious Gladiator's Ringmail Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(41081)),	-- Furious Gladiator's Linked Armor
 					moh(2, i(41137)),	-- Furious Gladiator's Linked Gauntlets
@@ -1198,7 +1198,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(WARLOCK, {
 					moh(12, iensemble(146551, {	-- Ensemble: Furious Gladiator's Felweave Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(42011)),	-- Furious Gladiator's Felweave Amice
 					moh(3, i(41993)),	-- Furious Gladiator's Felweave Cowl
@@ -1208,7 +1208,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(WARRIOR, {
 					moh(12, iensemble(146553, {	-- Ensemble: Furious Gladiator's Plate Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(40789)),	-- Furious Gladiator's Plate Chestpiece
 					moh(2, i(40807)),	-- Furious Gladiator's Plate Gauntlets
@@ -1232,10 +1232,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(1, i(40983)),	-- Furious Gladiator's Bracers of Salvation
 					moh(1, i(40889)),	-- Furious Gladiator's Bracers of Triumph
 					moh(1, i(147598, {	-- Furious Gladiator's Bracers of Victory
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(1, i(147595, {	-- Furious Gladiator's Cuffs of Ascendancy
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(1, i(41909)),	-- Furious Gladiator's Cuffs of Dominance
 					moh(1, i(41893)),	-- Furious Gladiator's Cuffs of Salvation
@@ -1248,14 +1248,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(1, i(41617)),	-- Furious Gladiator's Belt of Salvation
 					moh(1, i(41832)),	-- Furious Gladiator's Belt of Triumph
 					moh(1, i(147596, {	-- Furious Gladiator's Cord of Ascendancy
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(1, i(41898)),	-- Furious Gladiator's Cord of Dominance
 					moh(1, i(41881)),	-- Furious Gladiator's Cord of Salvation
 					moh(1, i(40976)),	-- Furious Gladiator's Girdle of Salvation
 					moh(1, i(40881)),	-- Furious Gladiator's Girdle of Triumph
 					moh(1, i(147599, {	-- Furious Gladiator's Girdle of Victory
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(1, i(41070)),	-- Furious Gladiator's Waistguard of Dominance
 					moh(1, i(41051)),	-- Furious Gladiator's Waistguard of Salvation
@@ -1268,13 +1268,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(2, i(40977)),	-- Furious Gladiator's Greaves of Salvation
 					moh(2, i(40882)),	-- Furious Gladiator's Greaves of Triumph
 					moh(2, i(147600, {	-- Furious Gladiator's Greaves of Victory
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41075)),	-- Furious Gladiator's Sabatons of Dominance
 					moh(2, i(41055)),	-- Furious Gladiator's Sabatons of Salvation
 					moh(2, i(41230)),	-- Furious Gladiator's Sabatons of Triumph
 					moh(2, i(147597, {	-- Furious Gladiator's Slippers of Ascendancy
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41903)),	-- Furious Gladiator's Slippers of Dominance
 					moh(2, i(41885)),	-- Furious Gladiator's Slippers of Salvation
@@ -1296,11 +1296,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				-- #if BEFORE MOP
 				filter(RELICS_F, bubbleDownSelf({
 					-- #if BEFORE CATA
-					["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
+					OnUpdate = FURIOUS_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					["timeline"] = { ADDED_3_1_0, REMOVED_5_0_4 },
-					["groups"] = {
+					timeline = { ADDED_3_1_0, REMOVED_5_0_4 },
+					groups = {
 						i(42589),	-- Furious Gladiator's Idol of Resolve
 						i(42584),	-- Furious Gladiator's Idol of Steadfastness
 						i(42579),	-- Furious Gladiator's Idol of Tenacity
@@ -1315,11 +1315,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				-- #endif
 				filter(TRINKET_F, bubbleDown({
 					-- #if BEFORE CATA
-					["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
+					OnUpdate = FURIOUS_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-					["groups"] = {
+					timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
+					groups = {
 						i(42124),	-- (A) Medallion of the Alliance
 						i(42126),	-- (H) Medallion of the Horde
 					},
@@ -1327,21 +1327,21 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 			}),
 			n(PVP_ELITE, bubbleDownSelf({
 				-- #if BEFORE CATA
-				["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
+				OnUpdate = FURIOUS_GLADIATOR_ONUPDATE,
 				-- #endif
 			}, {
-				["timeline"] =
+				timeline =
 				-- #if ANYCLASSIC
 				{ ADDED_3_1_0 },
 				-- #else
 				{ ADDED_3_1_0, REMOVED_3_2_0 },
 				-- #endif
-				["groups"] = {
+				groups = {
 					-- Original Sources are:
 					-- n34087 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
 					-- n34089 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52
 					-- n34088 Blazzek the Biter <Exceptional Arena Weaponry> in Gadgetzan
-					i(45983, { ["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 } }),	-- Furious Gladiator's Tabard
+					i(45983, { timeline = { ADDED_3_1_0, REMOVED_3_2_0 } }),	-- Furious Gladiator's Tabard
 					n(WEAPONS, {
 						i(45954),	-- Furious Gladiator's Acute Staff
 						i(45968),	-- Furious Gladiator's Claw
@@ -1376,27 +1376,27 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 		},
 	})),
 	applyclassicphase(WRATH_PHASE_THREE, n(SEASON_RELENTLESS, {
-		["timeline"] = { ADDED_3_2_0 },
-		["groups"] = {
+		timeline = { ADDED_3_2_0 },
+		groups = {
 			n(ACHIEVEMENTS, {
-				ach(11712, {["timeline"] = {ADDED_7_2_0}}),	-- Relentlessly Good Looking (PvP Season 7)
+				ach(11712, {timeline = {ADDED_7_2_0}}),	-- Relentlessly Good Looking (PvP Season 7)
 			}),
 			n(ACHIEVEMENTS, elitepvp(bubbleDown({
 				-- #if BEFORE CATA
-				["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
+				OnUpdate = RELENTLESS_GLADIATOR_ONUPDATE,
 				-- #endif
 			},{
-				["timeline"] = { ADDED_3_2_0, REMOVED_3_3_2 },
-				["groups"] = {
+				timeline = { ADDED_3_2_0, REMOVED_3_3_2 },
+				groups = {
 					ach(3758, {	-- Relentless Gladiator: Wrath of the Lich King Season 3
 						title(134),	-- Relentless Gladiator <Name>
 					}),
 					ach(3757, {	-- Relentless Gladiator's Frost Wyrm
-						["provider"] = { "i", 47840 },	-- Relentless Gladiator's Frost Wyrm
-						["filterID"] = MOUNTS,
+						provider = { "i", 47840 },	-- Relentless Gladiator's Frost Wyrm
+						filterID = MOUNTS,
 					}),
 					i(47840, {	-- Relentless Gladiator's Frost Wyrm
-						["description"] = "Awarded to members of the Arena teams during Wrath Season 3 that were in the 0.5% bracket of their battlegroup.",
+						description = "Awarded to members of the Arena teams during Wrath Season 3 that were in the 0.5% bracket of their battlegroup.",
 					}),
 					-- #if ANYCLASSIC
 					ach(18547),	-- Challenger: Season 7
@@ -1411,7 +1411,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
 					moh(80, iensemble(146643, {	-- Arsenal: Relentless Gladiator's Weapons
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(42566)),	-- Relentless Gladiator's Barrier
 					moh(5, i(42515)),	-- Relentless Gladiator's Baton of Light
@@ -1457,13 +1457,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(5, i(44423)),	-- Relentless Gladiator's War Staff
 					-- #if BEFORE MOP
 					i(42483, {	-- Relentless Gladiator's War Edge (Throw Wep)
-						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
 					}),
 					-- #endif
 				}),
 				cl(DEATHKNIGHT, {
 					moh(12, iensemble(146570, {	-- Ensemble: Relentless Gladiator's Dreadplate Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(40791)),	-- Relentless Gladiator's Dreadplate Chestpiece
 					moh(2, i(40811)),	-- Relentless Gladiator's Dreadplate Gauntlets
@@ -1473,7 +1473,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(DRUID, {
 					moh(12, iensemble(146569, {	-- Ensemble: Relentless Gladiator's Dragonhide Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41774)),	-- Relentless Gladiator's Dragonhide Gloves
 					moh(3, i(41679)),	-- Relentless Gladiator's Dragonhide Helm
@@ -1493,7 +1493,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(HUNTER, {
 					moh(12, iensemble(146568, {	-- Ensemble: Relentless Gladiator's Chain Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(41088)),	-- Relentless Gladiator's Chain Armor
 					moh(2, i(41144)),	-- Relentless Gladiator's Chain Gauntlets
@@ -1503,7 +1503,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(MAGE, {
 					moh(12, iensemble(146577, {	-- Ensemble: Relentless Gladiator's Silk Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41966)),	-- Relentless Gladiator's Silk Amice
 					moh(3, i(41947)),	-- Relentless Gladiator's Silk Cowl
@@ -1513,7 +1513,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(PALADIN, {
 					moh(12, iensemble(146576, {	-- Ensemble: Relentless Gladiator's Scaled Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(40910)),	-- Relentless Gladiator's Ornamented Chestguard
 					moh(2, i(40928)),	-- Relentless Gladiator's Ornamented Gloves
@@ -1528,7 +1528,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(PRIEST, {
 					moh(12, iensemble(146575, {	-- Ensemble: Relentless Gladiator's Satin Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41875)),	-- Relentless Gladiator's Mooncloth Gloves
 					moh(3, i(41855)),	-- Relentless Gladiator's Mooncloth Hood
@@ -1543,7 +1543,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(ROGUE, {
 					moh(12, iensemble(146572, {	-- Ensemble: Relentless Gladiator's Leather Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41768)),	-- Relentless Gladiator's Leather Gloves
 					moh(3, i(41673)),	-- Relentless Gladiator's Leather Helm
@@ -1553,7 +1553,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(SHAMAN, {
 					moh(12, iensemble(146574, {	-- Ensemble: Relentless Gladiator's Ringmail Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(41082)),	-- Relentless Gladiator's Linked Armor
 					moh(2, i(41138)),	-- Relentless Gladiator's Linked Gauntlets
@@ -1573,7 +1573,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(WARLOCK, {
 					moh(12, iensemble(146571, {	-- Ensemble: Relentless Gladiator's Felweave Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(42012)),	-- Relentless Gladiator's Felweave Amice
 					moh(3, i(41994)),	-- Relentless Gladiator's Felweave Cowl
@@ -1583,7 +1583,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(WARRIOR, {
 					moh(12, iensemble(146573, {	-- Ensemble: Relentless Gladiator's Plate Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(40790)),	-- Relentless Gladiator's Plate Chestpiece
 					moh(2, i(40810)),	-- Relentless Gladiator's Plate Gauntlets
@@ -1607,11 +1607,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(1, i(40984)),	-- Relentless Gladiator's Bracers of Salvation
 					moh(1, i(40890)),	-- Relentless Gladiator's Bracers of Triumph
 					moh(1, i(147603, {	-- Relentless Gladiator's Bracers of Victory
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(1, i(49181)),	-- Relentless Gladiator's Cuffs of Alacrity
 					moh(1, i(147602, {	-- Relentless Gladiator's Cuffs of Ascendancy
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(1, i(41910)),	-- Relentless Gladiator's Cuffs of Dominance
 					moh(1, i(41894)),	-- Relentless Gladiator's Cuffs of Salvation
@@ -1629,7 +1629,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(1, i(40978)),	-- Relentless Gladiator's Girdle of Salvation
 					moh(1, i(40883)),	-- Relentless Gladiator's Girdle of Triumph
 					moh(1, i(147604, {	-- Relentless Gladiator's Girdle of Victory
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(1, i(41071)),	-- Relentless Gladiator's Waistguard of Dominance
 					moh(1, i(41052)),	-- Relentless Gladiator's Waistguard of Salvation
@@ -1642,7 +1642,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(2, i(40979)),	-- Relentless Gladiator's Greaves of Salvation
 					moh(2, i(40884)),	-- Relentless Gladiator's Greaves of Triumph
 					moh(2, i(147601, {	-- Relentless Gladiator's Greaves of Victory
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(41076)),	-- Relentless Gladiator's Sabatons of Dominance
 					moh(2, i(41056)),	-- Relentless Gladiator's Sabatons of Salvation
@@ -1668,11 +1668,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				-- #if BEFORE MOP
 				filter(RELICS_F, bubbleDownSelf({
 					-- #if BEFORE CATA
-					["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
+					OnUpdate = RELENTLESS_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					["timeline"] = { ADDED_3_2_0, REMOVED_5_0_4 },
-					["groups"] = {
+					timeline = { ADDED_3_2_0, REMOVED_5_0_4 },
+					groups = {
 						i(42591),	-- Relentless Gladiator's Idol of Resolve
 						i(42585),	-- Relentless Gladiator's Idol of Steadfastness
 						i(42580),	-- Relentless Gladiator's Idol of Tenacity
@@ -1687,11 +1687,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				-- #endif
 				filter(TRINKET_F, bubbleDown({
 					-- #if BEFORE CATA
-					["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
+					OnUpdate = RELENTLESS_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					["timeline"] = { ADDED_3_2_0, REMOVED_3_3_2 },
-					["groups"] = {
+					timeline = { ADDED_3_2_0, REMOVED_3_3_2 },
+					groups = {
 						i(42133),	-- Battlemaster's Fury
 						i(42134),	-- Battlemaster's Precision
 						i(42136),	-- Battlemaster's Rage
@@ -1702,21 +1702,21 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 			}),
 			n(PVP_ELITE, bubbleDownSelf({
 				-- #if BEFORE CATA
-				["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
+				OnUpdate = RELENTLESS_GLADIATOR_ONUPDATE,
 				-- #endif
 			}, {
-				["timeline"] =
+				timeline =
 				-- #if ANYCLASSIC
 				{ ADDED_3_2_0 },
 				-- #else
 				{ ADDED_3_2_0, REMOVED_3_3_2 },
 				-- #endif
-				["groups"] = {
+				groups = {
 					-- Original Sources are:
 					-- n34092 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
 					-- n34091 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52
 					-- n34090 Blazzek the Biter <Exceptional Arena Weaponry> in Gadgetzan
-					i(49086, { ["timeline"] = { ADDED_3_2_0, REMOVED_3_3_2 } }),	-- Relentless Gladiator's Tabard
+					i(49086, { timeline = { ADDED_3_2_0, REMOVED_3_3_2 } }),	-- Relentless Gladiator's Tabard
 					n(WEAPONS, {
 						i(48412),	-- Relentless Gladiator's Acute Staff
 						i(49191),	-- Relentless Gladiator's Blade of Celerity
@@ -1754,27 +1754,27 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 		},
 	})),
 	applyclassicphase(WRATH_PHASE_FOUR, n(SEASON_WRATHFUL, {
-		["timeline"] = { ADDED_3_3_2 },
-		["groups"] = {
+		timeline = { ADDED_3_3_2 },
+		groups = {
 			n(ACHIEVEMENTS, {
-				ach(11713, {["timeline"] = {ADDED_7_2_0}}),	-- Wrath of the Stitch King (PvP Season 8)
+				ach(11713, {timeline = {ADDED_7_2_0}}),	-- Wrath of the Stitch King (PvP Season 8)
 			}),
 			n(ACHIEVEMENTS, elitepvp(bubbleDown({
 				-- #if BEFORE CATA
-				["OnUpdate"] = WRATHFUL_GLADIATOR_ONUPDATE,
+				OnUpdate = WRATHFUL_GLADIATOR_ONUPDATE,
 				-- #endif
 			},{
-				["timeline"] = { ADDED_3_3_2, REMOVED_4_0_1 },
-				["groups"] = {
+				timeline = { ADDED_3_3_2, REMOVED_4_0_1 },
+				groups = {
 					ach(4599, {	-- Wrathful Gladiator: Wrath of the Lich King Season  4
 						title(142),	-- Wrathful Gladiator <Name>
 					}),
 					ach(4600, {	-- Wrathful Gladiator's Frost Wyrm
-						["provider"] = { "i", 50435 },	-- Wrathful Gladiator's Frost Wyrm
-						["filterID"] = MOUNTS,
+						provider = { "i", 50435 },	-- Wrathful Gladiator's Frost Wyrm
+						filterID = MOUNTS,
 					}),
 					i(50435, {	-- Wrathful Gladiator's Frost Wyrm
-						["description"] = "Awarded to members of the Arena teams during Wrath Season 4 that were in the 0.5% bracket of their battlegroup.",
+						description = "Awarded to members of the Arena teams during Wrath Season 4 that were in the 0.5% bracket of their battlegroup.",
 					}),
 					-- #if ANYCLASSIC
 					ach(18548),	-- Rival: Season 8
@@ -1789,7 +1789,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
 					moh(80, iensemble(146642, {	-- Arsenal: Wrathful Gladiator's Weapons
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(51452)),	-- Wrathful Gladiator's Barrier
 					moh(5, i(51532)),	-- Wrathful Gladiator's Baton of Light
@@ -1832,13 +1832,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(5, i(51400)),	-- Wrathful Gladiator's War Staff
 					-- #if BEFORE MOP
 					i(51535, {	-- Wrathful Gladiator's War Edge (Throw Wep)
-						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
 					}),
 					-- #endif
 				}),
 				cl(DEATHKNIGHT, {
 					moh(12, iensemble(146590, {	-- Ensemble: Wrathful Gladiator's Dreadplate Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(51413)),	-- Wrathful Gladiator's Dreadplate Chestpiece
 					moh(2, i(51414)),	-- Wrathful Gladiator's Dreadplate Gauntlets
@@ -1848,7 +1848,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(DRUID, {
 					moh(12, iensemble(146589, {	-- Ensemble: Wrathful Gladiator's Dragonhide Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(51426)),	-- Wrathful Gladiator's Dragonhide Gloves
 					moh(3, i(51427)),	-- Wrathful Gladiator's Dragonhide Helm
@@ -1868,7 +1868,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(HUNTER, {
 					moh(12, iensemble(146588, {	-- Ensemble: Wrathful Gladiator's Chain Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(51458)),	-- Wrathful Gladiator's Chain Armor
 					moh(2, i(51459)),	-- Wrathful Gladiator's Chain Gauntlets
@@ -1878,7 +1878,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(MAGE, {
 					moh(12, iensemble(146597, {	-- Ensemble: Wrathful Gladiator's Silk Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(51467)),	-- Wrathful Gladiator's Silk Amice
 					moh(3, i(51465)),	-- Wrathful Gladiator's Silk Cowl
@@ -1888,7 +1888,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(PALADIN, {
 					moh(12, iensemble(146596, {	-- Ensemble: Wrathful Gladiator's Scaled Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(51468)),	-- Wrathful Gladiator's Ornamented Chestguard
 					moh(2, i(51469)),	-- Wrathful Gladiator's Ornamented Gloves
@@ -1903,7 +1903,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(PRIEST, {
 					moh(12, iensemble(146595, {	-- Ensemble: Wrathful Gladiator's Satin Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(51483)),	-- Wrathful Gladiator's Mooncloth Gloves
 					moh(3, i(51484)),	-- Wrathful Gladiator's Mooncloth Hood
@@ -1918,7 +1918,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(ROGUE, {
 					moh(12, iensemble(146592, {	-- Ensemble: Wrathful Gladiator's Leather Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(51493)),	-- Wrathful Gladiator's Leather Gloves
 					moh(3, i(51494)),	-- Wrathful Gladiator's Leather Helm
@@ -1928,7 +1928,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(SHAMAN, {
 					moh(12, iensemble(146594, {	-- Ensemble: Wrathful Gladiator's Ringmail Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(51503)),	-- Wrathful Gladiator's Linked Armor
 					moh(2, i(51504)),	-- Wrathful Gladiator's Linked Gauntlets
@@ -1948,7 +1948,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(WARLOCK, {
 					moh(12, iensemble(146591, {	-- Ensemble: Wrathful Gladiator's Felweave Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(51540)),	-- Wrathful Gladiator's Felweave Amice
 					moh(3, i(51538)),	-- Wrathful Gladiator's Felweave Cowl
@@ -1958,7 +1958,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				cl(WARRIOR, {
 					moh(12, iensemble(146593, {	-- Ensemble: Wrathful Gladiator's Plate Armor
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(3, i(51541)),	-- Wrathful Gladiator's Plate Chestpiece
 					moh(2, i(51542)),	-- Wrathful Gladiator's Plate Gauntlets
@@ -1982,11 +1982,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(1, i(51361)),	-- Wrathful Gladiator's Bracers of Salvation
 					moh(1, i(51364)),	-- Wrathful Gladiator's Bracers of Triumph
 					moh(1, i(147607, {	-- Wrathful Gladiator's Bracers of Victory
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(1, i(51339)),	-- Wrathful Gladiator's Cuffs of Alacrity
 					moh(1, i(147605, {	-- Wrathful Gladiator's Cuffs of Ascendancy
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(1, i(51329)),	-- Wrathful Gladiator's Cuffs of Dominance
 					moh(1, i(51367)),	-- Wrathful Gladiator's Cuffs of Salvation
@@ -2000,14 +2000,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(1, i(51368)),	-- Wrathful Gladiator's Belt of Triumph
 					moh(1, i(51337)),	-- Wrathful Gladiator's Cord of Alacrity
 					moh(1, i(147606, {	-- Wrathful Gladiator's Cord of Ascendancy
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(1, i(51327)),	-- Wrathful Gladiator's Cord of Dominance
 					moh(1, i(51365)),	-- Wrathful Gladiator's Cord of Salvation
 					moh(1, i(51359)),	-- Wrathful Gladiator's Girdle of Salvation
 					moh(1, i(51362)),	-- Wrathful Gladiator's Girdle of Triumph
 					moh(1, i(147608, {	-- Wrathful Gladiator's Girdle of Victory
-						["timeline"] = { ADDED_7_2_0 },
+						timeline = { ADDED_7_2_0 },
 					})),
 					moh(1, i(51374)),	-- Wrathful Gladiator's Waistguard of Dominance
 					moh(1, i(51371)),	-- Wrathful Gladiator's Waistguard of Salvation
@@ -2043,11 +2043,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				-- #if BEFORE MOP
 				filter(RELICS_F, bubbleDownSelf({
 					-- #if BEFORE CATA
-					["OnUpdate"] = WRATHFUL_GLADIATOR_ONUPDATE,
+					OnUpdate = WRATHFUL_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					["timeline"] = { ADDED_3_3_2, REMOVED_5_0_4 },
-					["groups"] = {
+					timeline = { ADDED_3_3_2, REMOVED_5_0_4 },
+					groups = {
 						i(51429),	-- Wrathful Gladiator's Idol of Resolve
 						i(51437),	-- Wrathful Gladiator's Idol of Steadfastness
 						i(51423),	-- Wrathful Gladiator's Idol of Tenacity
@@ -2062,11 +2062,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				-- #endif
 				filter(TRINKET_F, bubbleDown({
 					-- #if BEFORE CATA
-					["OnUpdate"] = WRATHFUL_GLADIATOR_ONUPDATE,
+					OnUpdate = WRATHFUL_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					["timeline"] = { ADDED_3_3_2, REMOVED_4_0_1 },
-					["groups"] = {
+					timeline = { ADDED_3_3_2, REMOVED_4_0_1 },
+					groups = {
 						i(51377),	-- (A) Medallion of the Alliance
 						i(51378),	-- (H) Medallion of the Horde
 					},
@@ -2074,16 +2074,16 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 			}),
 			n(PVP_ELITE, bubbleDownSelf({
 				-- #if BEFORE CATA
-				["OnUpdate"] = WRATHFUL_GLADIATOR_ONUPDATE,
+				OnUpdate = WRATHFUL_GLADIATOR_ONUPDATE,
 				-- #endif
 			}, {
-				["timeline"] =
+				timeline =
 				-- #if ANYCLASSIC
 				{ ADDED_3_3_2 },
 				-- #else
 				{ ADDED_3_3_2, REMOVED_4_0_1 },
 				-- #endif
-				["groups"] = {
+				groups = {
 					-- Original Sources are:
 					-- n34095 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
 					-- n34094 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52
@@ -2091,7 +2091,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					i(51534, {	-- Wrathful Gladiator's Tabard
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
-						["description"] = "This was never removed from the vendor in Classic.",
+						description = "This was never removed from the vendor in Classic.",
 						-- #endif
 						-- #endif
 					}),
@@ -2131,7 +2131,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 	})),
 }))));
 
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
+-- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
 -- 	n(PVP, {
 -- 		-- PvP Ensembles
 -- 		q(46555),	-- Savage Gladiator's Chain Armor (Hunter)

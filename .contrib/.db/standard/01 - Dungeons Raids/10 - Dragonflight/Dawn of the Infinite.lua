@@ -16,7 +16,7 @@ local DIVERGENT = createHeader({
 });
 
 local QUANTUM_GROUP = sharedData({
-	["description"] = "Has a 100% drop chance on Mythic Difficulty. This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",
+	description = "Has a 100% drop chance on Mythic Difficulty. This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed Deadmines&Stockades)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight+ Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",
 },{
 	-- Please use 'ig()' to make sure Mythic ModID isn't attached to all of these sourced items
 	-- If the item needs different/other ModID or BonusID you need to use 'i()' instead
@@ -24,13 +24,13 @@ local QUANTUM_GROUP = sharedData({
 	i(208061, {	-- Quantum Headpiece
 		filter(CLOTH, {
 			hqt(77629, {	-- when you learn everything from Quantum Headpiece (Cloth)
-				["name"] = "Quantum Headpiece (Cloth) completed.",
+				name = "Quantum Headpiece (Cloth) completed.",
 			}),
 			ig(114263),	-- Firefly Hood						(NYI)
 			ig(114387),	-- Hood of Hooded Nighmates			(NYI)
 			i(147517, {	-- Inquisitor's Battle Cowl			(NYI)
-				["modID"] = 2,
-				["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+				modID = 2,
+				timeline = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
 			}),
 			ig(121507),	-- Runespeaker's Crown				(NYI)
 
@@ -42,13 +42,13 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(LEATHER, {
 			hqt(77628, {	-- when you learn everything from Quantum Headpiece (Leather)
-				["name"] = "Quantum Headpiece (Leather) completed.",
+				name = "Quantum Headpiece (Leather) completed.",
 			}),
 			ig(114264),	-- Bloodthorn Hood					(NYI)
 			ig(114388),	-- Hood of Falling Leaves			(NYI)
 			i(147516, {	-- Legion Stalker's Hood			(NYI)
-				["modID"] = 2,	-- Heroic dungeon
-				["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+				modID = 2,	-- Heroic dungeon
+				timeline = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
 			}),
 			ig(121509),	-- Runesworn Crown					(NYI)
 
@@ -57,7 +57,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(MAIL, {
 			hqt(77627, {	-- when you learn everything from Quantum Headpiece (Mail)
-				["name"] = "Quantum Headpiece (Mail) completed.",
+				name = "Quantum Headpiece (Mail) completed.",
 			}),
 			ig(114389),	-- Element-Binder Helm				(NYI)
 			ig(114265),	-- Leafscale Helm					(NYI)
@@ -68,7 +68,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(PLATE, {
 			hqt(77626, {	-- when you learn everything from Quantum Headpiece (Plate)
-				["name"] = "Quantum Headpiece (Plate) completed.",
+				name = "Quantum Headpiece (Plate) completed.",
 			}),
 			ig(121506),	-- Dreadsworn Crown					(NYI)
 			ig(114390),	-- Greathelm of Grievous Storms		(NYI)
@@ -89,7 +89,7 @@ local QUANTUM_GROUP = sharedData({
 	i(208062, {	-- Quantum Shoulders
 		filter(CLOTH, {
 			hqt(77641, {	-- when you learn everything from Quantum Shoulders (Cloth)
-				["name"] = "Quantum Shoulders (Cloth) completed.",
+				name = "Quantum Shoulders (Cloth) completed.",
 			}),
 			ig(114271),	-- Firefly Mantle					(NYI)
 			ig(3958),	-- Mesh Mantle						(NYI)
@@ -102,7 +102,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(LEATHER, {
 			hqt(77640, {	-- when you learn everything from Quantum Shoulders (Leather)
-				["name"] = "Quantum Shoulders (Leather) completed.",
+				name = "Quantum Shoulders (Leather) completed.",
 			}),
 			ig(114272),	-- Bloodthorn Spaulders				(NYI)
 			ig(3983),	-- Strapped Shoulderpads			(NYI)
@@ -114,7 +114,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(MAIL, {
 			hqt(77639, {	-- when you learn everything from Quantum Shoulders (Mail)
-				["name"] = "Quantum Shoulders (Mail) completed.",
+				name = "Quantum Shoulders (Mail) completed.",
 			}),
 			ig(18320),	-- Demonheart Spaulders				(NYI)
 			ig(114273),	-- Leafscale Spaulders				(NYI)
@@ -128,7 +128,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(PLATE, {
 			hqt(77638 , {	-- when you learn everything from Quantum Shoulders (Plate)
-				["name"] = "Quantum Shoulders (Plate) completed.",
+				name = "Quantum Shoulders (Plate) completed.",
 			}),
 			ig(108083),	-- Hardened Draenic Steel Shoulders	(NYI)
 			ig(108167),	-- Peerless Draenic Steel Shoulders	(NYI)
@@ -149,7 +149,7 @@ local QUANTUM_GROUP = sharedData({
 	i(208064, {	-- Quantum Chestpiece
 		filter(CLOTH, {
 			hqt(77637, {	-- when you learn everything from Quantum Chestpiece (Cloth)
-				["name"] = "Quantum Chestpiece (Cloth) completed.",
+				name = "Quantum Chestpiece (Cloth) completed.",
 			}),
 			ig(114254),	-- Firefly Robes					(NYI)
 			ig(114317),	-- Mantisweave Robes				(NYI)
@@ -165,7 +165,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(LEATHER, {
 			hqt(77636, {	-- when you learn everything from Quantum Chestpiece (Leather)
-				["name"] = "Quantum Chestpiece (Leather) completed.",
+				name = "Quantum Chestpiece (Leather) completed.",
 			}),
 			ig(114251),	-- Bloodthorn Chestguard			(NYI)
 			ig(189917),	-- Constellation Master's Smock		(NYI)
@@ -182,7 +182,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(MAIL, {
 			hqt(77635, {	-- when you learn everything from Quantum Chestpiece (Mail)
-				["name"] = "Quantum Chestpiece (Mail) completed.",
+				name = "Quantum Chestpiece (Mail) completed.",
 			}),
 			ig(114315),	-- Chestguard of Meditative Focus	(NYI)
 			ig(18304),	-- Greenroot Mail					(NYI Unique)
@@ -198,7 +198,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(PLATE, {
 			hqt(77634, {	-- when you learn everything from Quantum Chestpiece (Plate)
-				["name"] = "Quantum Chestpiece (Plate) completed.",
+				name = "Quantum Chestpiece (Plate) completed.",
 			}),
 			ig(180535),	-- Breatplate of the Highlord			(NYI)
 			ig(108078),	-- Hardened Draenic Steel Chestplate	(NYI)
@@ -221,17 +221,17 @@ local QUANTUM_GROUP = sharedData({
 	i(208063, {	-- Quantum Gloves
 		filter(CLOTH, {
 			hqt(77633 , {	-- when you learn everything from Quantum Gloves (Cloth)
-				["name"] = "Quantum Gloves (Cloth) completed.",
+				name = "Quantum Gloves (Cloth) completed.",
 			}),
 			ig(114259),	-- Firefly Gloves					(NYI)
 			ig(114383),	-- Gloves of Hooded Nightmares		(NYI)
 			i(113225, {	-- Kalaena's Arcane Handwraps		(NYI)
-				["modID"] = 4,
+				modID = 4,
 			}),
 			ig(3956),	-- Mesh Gloves
 			ig(189904),	-- Meticulous Architect's Mitts		(NYI)
 			i(113218, {	-- Seebo's Sainted Touch			(NYI)
-				["modID"] = 4,
+				modID = 4,
 			}),
 
 			ig(20655),	-- Abyssal Cloth Handwraps			(Removed)
@@ -241,15 +241,15 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(LEATHER, {
 			hqt(77632 , {	-- when you learn everything from Quantum Gloves (Leather)
-				["name"] = "Quantum Gloves (Leather) completed.",
+				name = "Quantum Gloves (Leather) completed.",
 			}),
 			ig(114260),	-- Bloodthorn Gauntlets				(NYI)
 			i(113220, {	-- Crimson Gauntlets of Death		(NYI)
-				["modID"] = 4,
+				modID = 4,
 			}),
 			ig(114384),	-- Gauntlets of Falling Leaves		(NYI)
 			i(113221, {	-- Siid's Silent Stranglers			(NYI)
-				["modID"] = 4,
+				modID = 4,
 			}),
 			ig(3981),	-- Strapped Gloves					(NYI)
 
@@ -260,15 +260,15 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(MAIL, {
 			hqt(77631 , {	-- when you learn everything from Quantum Gloves (Mail)
-				["name"] = "Quantum Gloves (Mail) completed.",
+				name = "Quantum Gloves (Mail) completed.",
 			}),
 			ig(114385),	-- Element-Binder Gauntlets			(NYI)
 			i(113222, {	-- Keengrip Arrowpullers			(NYI)
-				["modID"] = 4,
+				modID = 4,
 			}),
 			ig(114261),	-- Leafscale Gauntlets				(NYI)
 			i(113227, {	-- Marco's Crackling Gloves			(NYI)
-				["modID"] = 4,
+				modID = 4,
 			}),
 			ig(4012),	-- Sterling Chain Gloves			(NYI)
 
@@ -282,10 +282,10 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(PLATE, {
 			hqt(77630, {	-- when you learn everything from Quantum Gloves (Plate)
-				["name"] = "Quantum Gloves (Plate) completed.",
+				name = "Quantum Gloves (Plate) completed.",
 			}),
 			i(113228, {	-- Gauntlets of Discarded Time		(NYI)
-				["modID"] = 4,
+				modID = 4,
 			}),
 			ig(114386),	-- Gauntlets of Grievous Storms		(NYI)
 			ig(108080),	-- Hardened Draenic Steel Guantlets	(NYI)
@@ -297,11 +297,11 @@ local QUANTUM_GROUP = sharedData({
 			ig(108212),	-- Peerless Draenic Steel Guantlets	(NYI)
 			ig(108220),	-- Peerless Draenic Steel Guantlets	(NYI)
 			i(113219, {	-- Romy's Reliable Grips			(NYI)
-				["modID"] = 4,
+				modID = 4,
 			}),
 			ig(114262),	-- Ruby Plate Gauntlets				(NYI)
 			i(113229, {	-- Zoid's Molten Gauntlets			(NYI)
-				["modID"] = 4,
+				modID = 4,
 			}),
 
 			ig(20653),	-- Abyssal Plate Gauntlets			(Removed)
@@ -313,7 +313,7 @@ local QUANTUM_GROUP = sharedData({
 	i(208065, {	-- Quantum Legs
 		filter(CLOTH, {
 			hqt(77625, {	-- when you learn everything from Quantum Legs (Cloth)
-				["name"] = "Quantum Legs (Cloth) completed.",
+				name = "Quantum Legs (Cloth) completed.",
 			}),
 			ig(114267),	-- Firefly Trousers					(NYI)
 			ig(3957),	-- Mesh Pants						(NYI)(Unique)
@@ -328,7 +328,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(LEATHER, {
 			hqt(77624, {	-- when you learn everything from Quantum Legs (Leather)
-				["name"] = "Quantum Legs (Leather) completed.",
+				name = "Quantum Legs (Leather) completed.",
 			}),
 			ig(114268),	-- Bloodthorn Legguards				(NYI)
 			ig(114392),	-- Legguards of Falling Leaves		(NYI)
@@ -340,14 +340,14 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(MAIL, {
 			hqt(77623, {	-- when you learn everything from Quantum Legs (Mail)
-				["name"] = "Quantum Legs (Mail) completed.",
+				name = "Quantum Legs (Mail) completed.",
 			}),
 			ig(114393),	-- Element-Binder Legguards			(NYI)
 			ig(189943),	-- Greaves of Cosmic Designs		(NYI)
 			ig(114269),	-- Leafscale Legguards				(NYI)
 			i(147515, {	-- Hellblaze Invader's Greaves	(NYI)
-				["modID"] = 2,	-- Heroic dungeon
-				["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+				modID = 2,	-- Heroic dungeon
+				timeline = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
 			}),
 			ig(4013),	-- Sterling Chain Pants				(NYI)
 			ig(121512),	-- Stormborn Leggings				(NYI)
@@ -358,12 +358,12 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(PLATE, {
 			hqt(77622, {	-- when you learn everything from Quantum Legs (Plate)
-				["name"] = "Quantum Legs (Plate) completed.",
+				name = "Quantum Legs (Plate) completed.",
 			}),
 			ig(121510),	-- Dreadsworn Legguards				(NYI)
 			i(147514, {	-- Felguard Destroyer's Legplates	(NYI)
-				["modID"] = 2,
-				["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+				modID = 2,
+				timeline = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
 			}),
 			ig(108082),	-- Hardened Draenic Steel Legguards	(NYI)
 			ig(114394),	-- Legplates of Grievous Storms		(NYI)
@@ -383,7 +383,7 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208111, {	-- Quantum Axe			(One-Handed)
 		hqt(77597, {	-- when you learn everything from Quantum Axe (One-Handed)
-			["name"] = "Quantum Axe (One-Handed) completed.",
+			name = "Quantum Axe (One-Handed) completed.",
 		}),
 		ig(134755),	-- Covert Hatchet						(NYI)
 		ig(5255),	-- Quilboar Tomahawk					(NYI)
@@ -401,26 +401,26 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208117, {	-- Quantum Bow
 		hqt(77603, {	-- when you learn everything from Quantum Bow
-			["name"] = "Quantum Bow completed.",
+			name = "Quantum Bow completed.",
 		}),
 		ig(5748),	-- Centaur Longbow						(NYI)
 		ig(204674, {	-- Cursed Demonbone Longbow				(NYI)
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2 },
+			timeline = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		i(186414, {	-- Rae'shalare, Death's Whisper (LFR)	(NYI)
-			["bonusID"] = 451,
-			["modID"] = 0,
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+			bonusID = 451,
+			modID = 0,
+			timeline = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
 		}),
 		i(186414, {	-- Rae'shalare, Death's Whisper (HC)	(NYI)
-			["bonusID"] = 1,
-			["modID"] = 0,
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+			bonusID = 1,
+			modID = 0,
+			timeline = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
 		}),
 		i(186414, {	-- Rae'shalare, Death's Whisper (M)		(NYI)
-			["bonusID"] = 450,
-			["modID"] = 0,
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+			bonusID = 450,
+			modID = 0,
+			timeline = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
 		}),
 		ig(115294),	-- Spectral Longbow						(NYI)
 
@@ -429,28 +429,28 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208118, {	-- Quantum Crossbow
 		hqt(77604, {	-- when you learn everything from Quantum Crossbow
-			["name"] = "Quantum Crossbow completed.",
+			name = "Quantum Crossbow completed.",
 		}),
 		ig(134778),	-- Seasoned Crossbow					(Removed)
 		ig(134580),	-- Vanguard Heavy Crossbow				(Removed)
 	}),
 	i(208119, {	-- Quantum Firearm
 		hqt(77605, {	-- when you learn everything from Quantum Firearm/Gun
-			["name"] = "Quantum Firearm/Gun completed.",
+			name = "Quantum Firearm/Gun completed.",
 		}),
 		i(110591),	-- Flintlocke's Blasthammer				(NYI)
 
 		ig(134720),	-- Cold-Touched Rifle					(Removed)
 		ig(134749),	-- Covert Rifle							(Removed)
 		i(55853, {	-- Thundercall							(Removed)
-			["modID"] = 1,
+			modID = 1,
 		}),
 		ig(56376),	-- Thundercall							(Removed)
 		ig(18755),	-- Xorothian Firestick					(Removed)
 	}),
 	i(208125, {	-- Quantum Focus
 		hqt(77609, {	-- when you learn everything from Quantum Focus (Off-hand)
-			["name"] = "Quantum Focus/Off-hand completed.",
+			name = "Quantum Focus/Off-hand completed.",
 		}),
 		ig(153641),	-- Manual of Elemental Enchancement		(NYI)
 		ig(161932),	-- Manual of Elemental Enchancement		(NYI)
@@ -465,7 +465,7 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208113, {	-- Quantum Greataxe		(Two-Handed)
 		hqt(77599, {	-- when you learn everything from Quantum Greataxe (Two-Handed)
-			["name"] = "Quantum Greataxe (Two-Handed) completed.",
+			name = "Quantum Greataxe (Two-Handed) completed.",
 		}),
 		ig(108046),	-- Draenic Steel War Axe				(NYI)
 		ig(189996),	-- Elegantly Balanced Axe				(NYI)(Unique)
@@ -483,34 +483,34 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208114, {	-- Quantum Greathammer	(Two-Handed) (Mace)
 		hqt(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
-			["name"] = "Quantum Greathammer/Mace (Two-Handed) completed.",
+			name = "Quantum Greathammer/Mace (Two-Handed) completed.",
 		}),
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
 		hqt(77598, {	-- when you learn everything from Quantum Greatsword	(Two-Handed)
-			["name"] = "Quantum Greatsword (Two-Handed) completed.",
+			name = "Quantum Greatsword (Two-Handed) completed.",
 		}),
 		ig(134746),	-- Covert Greatsword				(Removed)
 		i(186410, {	-- Jaithys, the Prison Blade		(Removed)
-			["modID"] = 2,	-- Heroic raid
+			modID = 2,	-- Heroic raid
 		}),
 		i(186410, {	-- Jaithys, the Prison Blade		(Removed)
-			["modID"] = 6,	-- Mythic raid
+			modID = 6,	-- Mythic raid
 		}),
 		i(187542, {	-- Jaithys, the Prison Blade		(Removed)
-			["modID"] = 4,	-- LFR raid
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+			modID = 4,	-- LFR raid
+			timeline = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
 		}),
 		i(187542, {	-- Jaithys, the Prison Blade		(Removed)
-			["modID"] = 3,	-- Normal raid
+			modID = 3,	-- Normal raid
 		}),
 		i(187542, {	-- Jaithys, the Prison Blade		(Removed)
-			["modID"] = 5,	-- Heroic raid
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+			modID = 5,	-- Heroic raid
+			timeline = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
 		}),
 		i(187542, {	-- Jaithys, the Prison Blade		(Removed)
-			["modID"] = 6,	-- Mythic raid
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+			modID = 6,	-- Mythic raid
+			timeline = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
 		}),
 		-- This item is available outside of Quantum, but nobody knows where. Maybe in WoD Classic!
 		ig(108905),	-- Jagged Turtleshell Blade				(Removed)
@@ -518,10 +518,10 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208120, {	-- Quantum Knife
 		hqt(77606, {	-- when you learn everything from Quantum Knife (Dagger)
-			["name"] = "Quantum Knife/Dagger completed.",
+			name = "Quantum Knife/Dagger completed.",
 		}),
 		ig(147908, {	-- 6.0 Weapon - Knife_1h_DraenorRaid_D_01 - Jade	(NYI)
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2 },
+			timeline = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		ig(108054),	-- Draenic Steel Dagger					(NYI)
 		ig(108150),	-- Hardened Draeneic Steel Dagger		(NYI)
@@ -550,7 +550,7 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208121, {	-- Quantum Knuckles
 		hqt(77607, {	-- when you learn everything from Quantum Knuckles (Fist Weapon)
-			["name"] = "Quantum Knuckles/Fist Weapon completed.",
+			name = "Quantum Knuckles/Fist Weapon completed.",
 		}),
 		ig(134719),	-- Cold-Touched Ripper					(Removed)
 		ig(2942),	-- Iron Knuckles						(Removed)
@@ -559,17 +559,17 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208110, {	-- Quantum Mace			(One-Handed)
 		hqt(77596, {	-- when you learn everything from Quantum Mace (One-Handed)
-			["name"] = "Quantum Mace (One-Handed) completed.",
+			name = "Quantum Mace (One-Handed) completed.",
 		}),
 		ig(166405),	-- Blindside							(NYI)
 		ig(108058),	-- Draenic Steel Mace					(NYI)
 		ig(174228, {	-- Gavel of the Oasis				(NYI)
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2 },
+			timeline = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		ig(108154),	-- Hardened Draenic Steel Mace			(NYI)
 		ig(163930),	-- Kovork's Rattle						(NYI)
 		ig(161118, {	-- Marrow Shatter					(NYI)
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2 },
+			timeline = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		ig(107390),	-- Obliterator Firing Lever				(NYI)(Unique)
 		ig(108238),	-- Peerless Draenic Steel Mace			(NYI)
@@ -593,7 +593,7 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208116, {	-- Quantum Polearm
 		hqt(77602, {	-- when you learn everything from Quantum Polearm
-			["name"] = "Quantum Polearm completed.",
+			name = "Quantum Polearm completed.",
 		}),
 		ig(115297),	-- Spectral Polearm						(NYI)
 
@@ -604,7 +604,7 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208126, {	-- Quantum Shield
 		hqt(77611, {	-- when you learn everything from Quantum Shield
-			["name"] = "Quantum Shield completed.",
+			name = "Quantum Shield completed.",
 		}),
 		ig(108062),	-- Draenic Steel Bulwark				(NYI)
 		ig(108158),	-- Hardened Draenic Steel Bulwark		(NYI)
@@ -626,7 +626,7 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208115, {	-- Quantum Staff
 		hqt(77601, {	-- when you learn everything from Quantum Staff
-			["name"] = "Quantum Staff completed.",
+			name = "Quantum Staff completed.",
 		}),
 		ig(115298),	-- Spectral Spire						(NYI)
 
@@ -641,11 +641,11 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208109, {	-- Quantum Sword		(One-Handed)
 		hqt(77595, {	-- when you learn everything from Quantum Sword (One-Handed)
-			["name"] = "Quantum Sword (One-Handed) completed.",
+			name = "Quantum Sword (One-Handed) completed.",
 		}),
 		ig(134613),	-- Scorching Quickblade					(NYI)
 		ig(166364, {	-- Song of the Fallen				(NYI)
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2 },
+			timeline = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		ig(155074),	-- Toll Enforcer						(NYI)
 
@@ -659,32 +659,32 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208123, {	-- Quantum Wand
 		hqt(77610, {	-- when you learn everything from Quantum Wand
-			["name"] = "Quantum Wand completed.",
+			name = "Quantum Wand completed.",
 		}),
 		ig(152871, {	-- Seapriest's Wand					(NYI)
-			["races"] = HORDE_ONLY,
+			races = HORDE_ONLY,
 		}),
 		ig(161924, {	-- Seapriest's Wand					(NYI)
-			["races"] = ALLIANCE_ONLY,
+			races = ALLIANCE_ONLY,
 		}),
 		ig(152873, {	-- Talanji's Salutary Scepter		(NYI)
-			["races"] = HORDE_ONLY,
+			races = HORDE_ONLY,
 		}),
 		ig(161926, {	-- Talanji's Salutary Scepter		(NYI)
-			["races"] = ALLIANCE_ONLY,
+			races = ALLIANCE_ONLY,
 		}),
 		ig(134728),	-- Cold-Touched Wand					(Removed)
 		ig(134590),	-- Vanguard Baton of Light				(Removed)
 	}),
 	i(208122, {	-- Quantum Warglaives
 		hqt(77608, {	-- when you learn everything from Quantum Warglaives
-			["name"] = "Quantum Warglaives completed.",
+			name = "Quantum Warglaives completed.",
 		}),
 	}),
 	i(208216, {	-- Reins of the Quantum Courser
-		["description"] = "Turns into one (1) unlearned Dungeon Mount from before Dragonflight.",
-		["filter"] = MISC,	-- Not an actual Mount itself
-		["sym"] = {{"select","itemID",
+		description = "Turns into one (1) unlearned Dungeon Mount from before Dragonflight.",
+		filter = MISC,	-- Not an actual Mount itself
+		sym = {{"select","itemID",
 			-- Dungeon
 			68823,	-- Armored Razzashi Raptor
 			186638,	-- Cartel Master's Gearglider
@@ -704,15 +704,15 @@ local QUANTUM_GROUP = sharedData({
 		},
 		{"prune","u","e"}	-- prune any unobtainable/event statuses from the selected monuts
 		},-- Raid (Maybe in future)--	78919,	-- Experiment 12-B--	71665,	-- Flametalon of Alysrazor--	77069,	-- Life-Binder's Handmaiden--	45693,	-- Mimiron's Head--	77067,	-- Reins of the Blazing Drake
-		["groups"] = {
+		groups = {
 			i(133543),	-- Reins of the Infinite Timereaver
 		},
 	}),
 });
-root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_1_5 } }, {
 	inst(1209, {	-- Dawn of the Infinite
-		["coord"] = { 61.0, 84.3, THALDRASZUS },
-		["maps"] = {
+		coord = { 61.0, 84.3, THALDRASZUS },
+		maps = {
 			2190,	-- Sanctum of Chronology
 			2191,	-- Milleenia's Threshold
 			2192,	-- Locus of Eternity
@@ -723,63 +723,63 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			2197,	-- Immemorial Battlefield
 			2198,	-- Dawn of the Infinite
 		},
-		["groups"] = {
+		groups = {
 			n(QUESTS, {
 				q(76140, {	-- Dawn of the Infinite
-					["provider"] = { "n", 187669 },	-- Nozdormu
-					["coord"] = { 60.8, 38.9, VALDRAKKEN },
-					["timeline"] = { REMOVED_11_0_0 },
+					provider = { "n", 187669 },	-- Nozdormu
+					coord = { 60.8, 38.9, VALDRAKKEN },
+					timeline = { REMOVED_11_0_0 },
 				}),
 				q(76141, {	-- Align in the Sand
-					["sourceQuests"] = { 76140 },	-- Dawn of the Infinite
-					["provider"] = { "n", 205706 },	-- Future Chromie
-					["coord"] = { 52.3, 39.5, THALDRASZUS },
+					sourceQuests = { 76140 },	-- Dawn of the Infinite
+					provider = { "n", 205706 },	-- Future Chromie
+					coord = { 52.3, 39.5, THALDRASZUS },
 				}),
 				q(76142, {	-- On Borrowed Time
-					["sourceQuests"] = { 76140 },	-- Dawn of the Infinite
-					["provider"] = { "n", 205706 },	-- Future Chromie
-					["coord"] = { 52.3, 39.5, THALDRASZUS },
-					["groups"] = {
+					sourceQuests = { 76140 },	-- Dawn of the Infinite
+					provider = { "n", 205706 },	-- Future Chromie
+					coord = { 52.3, 39.5, THALDRASZUS },
+					groups = {
 						i(206586),	-- Epoch Extractor (QI!)
 						i(206269),	-- Time-Lost Essence (QI!)
 					},
 				}),
 				q(76431),	-- Popped when Future Chromie and Chromie met
 				q(76143, {	-- Chro-me?
-					["sourceQuests"] = {
+					sourceQuests = {
 						76141,	-- Align in the Sand
 						76142,	-- On Borrowed Time
 					},
-					["provider"] = { "n", 205707 },	-- Chromie
-					["coord"] = { 61.4, 79.7, THALDRASZUS },
-					["groups"] = {
+					provider = { "n", 205707 },	-- Chromie
+					coord = { 61.4, 79.7, THALDRASZUS },
+					groups = {
 						i(206369),	-- Time Trap (QI!)
 					},
 				}),
 				q(76144, {	-- Morchie Mayhem
-					["sourceQuests"] = { 76143 },	-- Chro-me?
-					["provider"] = { "n", 205707 },	-- Chromie
-					["coord"] = { 61.4, 79.7, THALDRASZUS },
+					sourceQuests = { 76143 },	-- Chro-me?
+					provider = { "n", 205707 },	-- Chromie
+					coord = { 61.4, 79.7, THALDRASZUS },
 				}),
 				q(76145, {	-- Who's That Chromie?
-					["sourceQuests"] = { 76144 },	-- Morchie Mayhem
-					["provider"] = { "n", 206149 },	-- Chromie
-					["coord"] = { 62.1, 81.5, THALDRASZUS },
+					sourceQuests = { 76144 },	-- Morchie Mayhem
+					provider = { "n", 206149 },	-- Chromie
+					coord = { 62.1, 81.5, THALDRASZUS },
 				}),
 				q(76146, {	-- Dawn of the Infinite: Chrono-Lord Deios
-					["sourceQuests"] = { 76145 },	-- Who's That Chromie?
-					["provider"] = { "n", 205710 },	-- Chromie
-					["coord"] = { 62.2, 83.2, THALDRASZUS },
-					["groups"] = {
+					sourceQuests = { 76145 },	-- Who's That Chromie?
+					provider = { "n", 205710 },	-- Chromie
+					coord = { 62.2, 83.2, THALDRASZUS },
+					groups = {
 						-- Received if you already have the Toy
 						i(208417),	-- Chromie's Certificate of Temporal Tidiness
 						i(208415),	-- Stasis Sand (TOY!)
 					},
 				}),
 				q(76147, {	-- Rewind and Reconcile
-					["provider"] = { "i", 206145 },	-- Mysterious Time Relic (QI!)
-					-- ["coord"] = { ??, ??, 2194 },	-- No coords since it dungeon
-					["groups"] = {
+					provider = { "i", 206145 },	-- Mysterious Time Relic (QI!)
+					-- coord = { ??, ??, 2194 },	-- No coords since it dungeon
+					groups = {
 						i(208390),	-- Bronze Archive Stone
 					},
 				}),
@@ -791,114 +791,114 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					currency(SORIDORMIS_RECOGNITION),
 				}),
 				e(2521, {	-- Chronikar
-					["crs"] = { 198995 },	-- Chronikar
-					["groups"] = {
+					crs = { 198995 },	-- Chronikar
+					groups = {
 						i(207828),	-- Bronze Defender's Vesture
 						i(207995),	-- Chronikar's Ceremonial Saber
 						i(207819),	-- Timeways Intruder's Greaves
 						i(207838),	-- Vigorous Sandstompers
 						i(207923),	-- Zealous Commander's Cuffs
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(207991),	-- Double Time
 						})),
 					},
 				}),
 				e(2528, {	-- Manifested Timeways
-					["crs"] = { 198996 },	-- Manifested Timeways
-					["groups"] = {
+					crs = { 198996 },	-- Manifested Timeways
+					groups = {
 						i(207566),	-- Accelerating Sandglass
 						i(207999),	-- Conflux Caller's Baton
 						i(207903),	-- Fading Chronogrips
 						i(207898),	-- Mobius Strap
 						i(207851),	-- Timeway Sojourner's Bracelet
 						i(207858),	-- Unwinding Eon Girdle
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(207996),	-- Nick of Time
 						})),
 					},
 				}),
 				e(2535, {	-- Blight of Galakrond
-					["crs"] = {
+					crs = {
 						198997,	-- Blight of Galakrond
 						201792,	-- Ahnzon
 						201788,	-- Dazhak
 						201790,	-- Loszkeleth
 					},
-					["groups"] = {
+					groups = {
 						i(207836),	-- Ahnzon's Corroded Carapace
 						i(207983),	-- Ancestor's Necromantic Focus
 						i(207921),	-- Dazhak's Desiccated Wingbones
 						i(207992),	-- Fallen Drake's Bonesplitter
 						i(207912),	-- Loszkeleth's Blighted Skullhelm
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(207817),	-- Imbued Frostweave Slippers
 						})),
 					},
 				}),
 				e(2537, {	-- Iridikron the Stonescaled
-					["crs"] = {
+					crs = {
 						204459,	-- Iridikron the Stonescaled
 						198933,	-- Iridikron the Stonescaled
 					},
-					["groups"] = {
+					groups = {
 						ach(18703),	-- Dawn of the Infinite: Galakrond's Fall
 						i(207820),	-- Galakrond's Voracious Hide
 						i(207920),	-- Incarnate's Perceptive Casque
 						i(207897),	-- Mantle of Meticulous Plans
 						i(207528),	-- Prophetic Stonescales
 						i(207911),	-- Stonecracker Knuckles
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(208321),	-- Iridal, the Earth's Master
 						})),
 					},
 				}),
 				e(2526, {	-- Tyr, the Infinite Keeper
-					["crs"] = { 198998 },	-- Tyr, the Infinite Keeper
-					["groups"] = {
+					crs = { 198998 },	-- Tyr, the Infinite Keeper
+					groups = {
 						i(207927),	-- Crown of the Infinite Lord
 						i(207552),	-- Echoing Tyrstone
 						i(207950),	-- Marbled Oathstone Greatboots
 						i(207876),	-- Temple Acolyte's Uniform
 						i(207873),	-- Titanic Shouldersparks
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(208391),	-- The Infinite Hand
 						})),
 					},
 				}),
 				e(2536, {	-- Morchie
-					["crs"] = { 198999 },	-- Morchie
-					["groups"] = {
+					crs = { 198999 },	-- Morchie
+					groups = {
 						i(207939),	-- Chronomancer's Stasis Shackles
 						i(207862),	-- Familiar's Frayed Gloves
 						i(207824),	-- Greaves of Parallel Lives
 						i(207997),	-- Morchie's Distorted Spellblade
 						i(207946),	-- Reality-Warping Waistband
 						i(207579),	-- Time-Thief's Gambit
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(207986),	-- Traveler's Timesplitter
 						})),
 					},
 				}),
 				e(2533, {	-- Time-Lost Battlefield [A]
-					["crs"] = {
+					crs = {
 						209207,	-- Grommash Hellscream <Warlord with the Iron Will>
 						203679,	-- Anduin Lothar <Knight Champion of the Kingdom of Stormwind>
 					},
-					["groups"] = {
+					groups = {
 						i(207867),	-- Arathi Field Bandages
 						i(208000),	-- Cudgel of Bygone Victories
 						i(207878),	-- Grunt's Eternal Treads
 						i(207936),	-- Hood of Perpetual Conflict
 						i(207884),	-- Unceasing Footman's Breastplate
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(208193),	-- Gorehowl, Might of the Warchief
 							i(207994),	-- Quel'Zaram, High Blade of the Lion
 						})),
 					},
 				}),
 				e(2538, {	-- Chrono-Lord Deios and the Infinite Dragonflight
-					["crs"] = { 199000 },	-- Chrono-Lord Deios
-					["groups"] = appendGroups(QUANTUM_GROUP, {
+					crs = { 199000 },	-- Chrono-Lord Deios
+					groups = appendGroups(QUANTUM_GROUP, {
 						ach(18704),	-- Dawn of the Infinite: Murozond's Rise
 						i(206145),	-- Mysterious Time Relic (QI!)
 						i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite (MM!)
@@ -912,7 +912,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						i(207928),	-- Leggings of the New Dawn
 						i(207581),	-- Mirror of Fractured Tomorrows
 						i(207978),	-- Murozond's Timeless Scale
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(207987),	-- Borrowed Time
 						})),
 					}),
@@ -920,37 +920,37 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				n(ACHIEVEMENTS, {
-					ach(18705, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 } }, {	-- Defender of the Timeways
+					ach(18705, bubbleDownSelf({ timeline = { ADDED_10_1_5, REMOVED_10_2_0 } }, {	-- Defender of the Timeways
 						title(514),	-- <Name> of the Infinite
 						crit(60810, {	-- Chronikar
-							["_encounter"] = { 2521, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 2521, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60811, {	-- Manifested Timeways
-							["_encounter"] = { 2528, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 2528, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60812, {	-- Blight of Galakrond
-							["_encounter"] = { 2535, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 2535, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60813, {	-- Iridikron the Stonescaled
-							["_encounter"] = { 2537, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 2537, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60814, {	-- Tyr, the Infinite Keeper
-							["_encounter"] = { 2526, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 2526, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60815, {	-- Morchie
-							["_encounter"] = { 2536, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 2536, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60816, {	-- Time-Lost Battlefield
-							["_encounter"] = { 2533, DIFFICULTY.DUNGEON.MYTHIC },	-- [A]
-							-- ["_encounter"] = { 2534, DIFFICULTY.DUNGEON.MYTHIC },	-- [H]
+							_encounter = { 2533, DIFFICULTY.DUNGEON.MYTHIC },	-- [A]
+							-- _encounter = { 2534, DIFFICULTY.DUNGEON.MYTHIC },	-- [H]
 						}),
 						crit(60817, {	-- Chrono-Lord Deios and the Infinite Dragonflight
-							["_encounter"] = { 2538, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 2538, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 					})),
-					ach(18706, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Put That Thing Back Where It Came From
+					ach(18706, bubbleDown({ timeline = { ADDED_10_1_5 } }, {	-- Put That Thing Back Where It Came From
 						iensemble(208490, {	-- Ensemble: Infinite Acolyte's Regalia
-							["extraTransmogSetSpells"] = {
+							extraTransmogSetSpells = {
 								421485,	-- Ensemble: Infinite Acolyte's Regalia
 								421486,	-- Ensemble: Infinite Acolyte's Regalia
 								421487,	-- Ensemble: Infinite Acolyte's Regalia
@@ -964,87 +964,87 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					i(204078),	-- Aspect's Shadowflame Crest Fragment
 				}),
 				e(2521, {	-- Chronikar
-					["crs"] = { 198995 },	-- Chronikar
-					["groups"] = {
+					crs = { 198995 },	-- Chronikar
+					groups = {
 						ach(18589),	-- Crunch Time
 					},
 				}),
 				e(2528, {	-- Manifested Timeways
-					["crs"] = { 198996 },	-- Manifested Timeways
-					["groups"] = {
+					crs = { 198996 },	-- Manifested Timeways
+					groups = {
 						ach(18556),	-- Chaotic Time
 					},
 				}),
 				e(2535, {	-- Blight of Galakrond
-					["crs"] = {
+					crs = {
 						198997,	-- Blight of Galakrond
 						201792,	-- Ahnzon
 						201788,	-- Dazhak
 						201790,	-- Loszkeleth
 					},
-					["groups"] = {
+					groups = {
 						ach(18612),	-- A Slime in Need
 					},
 				}),
 				e(2537, {	-- Iridikron the Stonescaled
-					["crs"] = {
+					crs = {
 						204459,	-- Iridikron the Stonescaled
 						198933,	-- Iridikron the Stonescaled
 					},
 				}),
 				e(2526, {	-- Tyr, the Infinite Keeper
-					["crs"] = { 198998 },	-- Tyr, the Infinite Keeper
-					["groups"] = {
+					crs = { 198998 },	-- Tyr, the Infinite Keeper
+					groups = {
 						ach(18539),	-- Back En-masse
 					},
 				}),
 				e(2536, {	-- Morchie
-					["crs"] = { 198999 },	-- Morchie
+					crs = { 198999 },	-- Morchie
 				}),
 				e(2533, {	-- Time-Lost Battlefield [A]
-					["crs"] = {
+					crs = {
 						209207,	-- Grommash Hellscream <Warlord with the Iron Will>
 						203679,	-- Anduin Lothar <Knight Champion of the Kingdom of Stormwind>
 					},
 				}),
 				e(2538, {	-- Chrono-Lord Deios and the Infinite Dragonflight
-					["crs"] = { 199000 },	-- Chrono-Lord Deios
+					crs = { 199000 },	-- Chrono-Lord Deios
 				}),
 			}),
 			-- #else
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				n(ACHIEVEMENTS, {
-					ach(18705, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 } }, {	-- Defender of the Timeways
+					ach(18705, bubbleDownSelf({ timeline = { ADDED_10_1_5, REMOVED_10_2_0 } }, {	-- Defender of the Timeways
 						title(514),	-- <Name> of the Infinite
 						crit(60810, {	-- Chronikar
-							["_encounter"] = { 2521, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 2521, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60811, {	-- Manifested Timeways
-							["_encounter"] = { 2528, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 2528, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60812, {	-- Blight of Galakrond
-							["_encounter"] = { 2535, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 2535, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60813, {	-- Iridikron the Stonescaled
-							["_encounter"] = { 2537, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 2537, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60814, {	-- Tyr, the Infinite Keeper
-							["_encounter"] = { 2526, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 2526, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60815, {	-- Morchie
-							["_encounter"] = { 2536, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 2536, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(60816, {	-- Time-Lost Battlefield
-							["_encounter"] = { 2533, DIFFICULTY.DUNGEON.MYTHIC },	-- [A]
-							-- ["_encounter"] = { 2534, DIFFICULTY.DUNGEON.MYTHIC },	-- [H]
+							_encounter = { 2533, DIFFICULTY.DUNGEON.MYTHIC },	-- [A]
+							-- _encounter = { 2534, DIFFICULTY.DUNGEON.MYTHIC },	-- [H]
 						}),
 						crit(60817, {	-- Chrono-Lord Deios and the Infinite Dragonflight
-							["_encounter"] = { 2538, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 2538, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 					})),
-					ach(18706, bubbleDown({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 } }, {	-- Put That Thing Back Where It Came From
+					ach(18706, bubbleDown({ timeline = { ADDED_10_1_5, REMOVED_10_2_0 } }, {	-- Put That Thing Back Where It Came From
 						iensemble(208490, {	-- Ensemble: Infinite Acolyte's Regalia
-							["extraTransmogSetSpells"] = {
+							extraTransmogSetSpells = {
 								421485,	-- Ensemble: Infinite Acolyte's Regalia
 								421486,	-- Ensemble: Infinite Acolyte's Regalia
 								421487,	-- Ensemble: Infinite Acolyte's Regalia
@@ -1058,22 +1058,22 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					i(204078),	-- Aspect's Shadowflame Crest Fragment
 				}),
 				e(2521, {	-- Chronikar
-					["crs"] = { 198995 },	-- Chronikar
-					["groups"] = {
+					crs = { 198995 },	-- Chronikar
+					groups = {
 						ach(18589),	-- Crunch Time
 						i(207828),	-- Bronze Defender's Vesture
 						i(207995),	-- Chronikar's Ceremonial Saber
 						i(207819),	-- Timeways Intruder's Greaves
 						i(207838),	-- Vigorous Sandstompers
 						i(207923),	-- Zealous Commander's Cuffs
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(207991),	-- Double Time
 						})),
 					},
 				}),
 				e(2528, {	-- Manifested Timeways
-					["crs"] = { 198996 },	-- Manifested Timeways
-					["groups"] = {
+					crs = { 198996 },	-- Manifested Timeways
+					groups = {
 						ach(18556),	-- Chaotic Time
 						i(207566),	-- Accelerating Sandglass
 						i(207999),	-- Conflux Caller's Baton
@@ -1081,87 +1081,87 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						i(207898),	-- Mobius Strap
 						i(207851),	-- Timeway Sojourner's Bracelet
 						i(207858),	-- Unwinding Eon Girdle
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(207996),	-- Nick of Time
 						})),
 					},
 				}),
 				e(2535, {	-- Blight of Galakrond
-					["crs"] = {
+					crs = {
 						198997,	-- Blight of Galakrond
 						201792,	-- Ahnzon
 						201788,	-- Dazhak
 						201790,	-- Loszkeleth
 					},
-					["groups"] = {
+					groups = {
 						ach(18612),	-- A Slime in Need
 						i(207836),	-- Ahnzon's Corroded Carapace
 						i(207983),	-- Ancestor's Necromantic Focus
 						i(207921),	-- Dazhak's Desiccated Wingbones
 						i(207992),	-- Fallen Drake's Bonesplitter
 						i(207912),	-- Loszkeleth's Blighted Skullhelm
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(207817),	-- Imbued Frostweave Slippers
 						})),
 					},
 				}),
 				e(2537, {	-- Iridikron the Stonescaled
-					["crs"] = {
+					crs = {
 						204459,	-- Iridikron the Stonescaled
 						198933,	-- Iridikron the Stonescaled
 					},
-					["groups"] = {
+					groups = {
 						ach(18703),	-- Dawn of the Infinite: Galakrond's Fall
 						i(207820),	-- Galakrond's Voracious Hide
 						i(207920),	-- Incarnate's Perceptive Casque
 						i(207897),	-- Mantle of Meticulous Plans
 						i(207528),	-- Prophetic Stonescales
 						i(207911),	-- Stonecracker Knuckles
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(208321),	-- Iridal, the Earth's Master
 						})),
 					},
 				}),
 				e(2526, {	-- Tyr, the Infinite Keeper
-					["crs"] = { 198998 },	-- Tyr, the Infinite Keeper
-					["groups"] = {
+					crs = { 198998 },	-- Tyr, the Infinite Keeper
+					groups = {
 						ach(18539),	-- Back En-masse
 						i(207927),	-- Crown of the Infinite Lord
 						i(207552),	-- Echoing Tyrstone
 						i(207950),	-- Marbled Oathstone Greatboots
 						i(207876),	-- Temple Acolyte's Uniform
 						i(207873),	-- Titanic Shouldersparks
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(208391),	-- The Infinite Hand
 						})),
 					},
 				}),
 				e(2536, {	-- Morchie
-					["crs"] = { 198999 },	-- Morchie
-					["groups"] = {
+					crs = { 198999 },	-- Morchie
+					groups = {
 						i(207939),	-- Chronomancer's Stasis Shackles
 						i(207862),	-- Familiar's Frayed Gloves
 						i(207824),	-- Greaves of Parallel Lives
 						i(207997),	-- Morchie's Distorted Spellblade
 						i(207946),	-- Reality-Warping Waistband
 						i(207579),	-- Time-Thief's Gambit
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(207986),	-- Traveler's Timesplitter
 						})),
 					},
 				}),
 				e(2533, {	-- Time-Lost Battlefield [A]
-					["crs"] = {
+					crs = {
 						209207,	-- Grommash Hellscream <Warlord with the Iron Will>
 						203679,	-- Anduin Lothar <Knight Champion of the Kingdom of Stormwind>
 					},
-					["groups"] = {
+					groups = {
 						i(207867),	-- Arathi Field Bandages
 						i(208000),	-- Cudgel of Bygone Victories
 						i(207878),	-- Grunt's Eternal Treads
 						i(207936),	-- Hood of Perpetual Conflict
 						i(207884),	-- Unceasing Footman's Breastplate
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(208193),	-- Gorehowl, Might of the Warchief
 							i(207994),	-- Quel'Zaram, High Blade of the Lion
 						})),
@@ -1169,14 +1169,14 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				--[[	Dont seem to be any difference in loot. Might just use one?
 				e(2534, {	-- Time-Lost Battlefield [H]
-					["crs"] = { 203679 },	-- Anduin Lothar <Knight Champion of the Kingdom of Stormwind>
-					["groups"] = {
+					crs = { 203679 },	-- Anduin Lothar <Knight Champion of the Kingdom of Stormwind>
+					groups = {
 						i(207867),	-- Arathi Field Bandages
 						i(208000),	-- Cudgel of Bygone Victories
 						i(207878),	-- Grunt's Eternal Treads
 						i(207936),	-- Hood of Perpetual Conflict
 						i(207884),	-- Unceasing Footman's Breastplate
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(208193),	-- Gorehowl, Might of the Warchief
 							i(207994),	-- Quel'Zaram, High Blade of the Lion
 						})),
@@ -1184,8 +1184,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				--]]
 				e(2538, {	-- Chrono-Lord Deios and the Infinite Dragonflight
-					["crs"] = { 199000 },	-- Chrono-Lord Deios
-					["groups"] = appendGroups(QUANTUM_GROUP, {
+					crs = { 199000 },	-- Chrono-Lord Deios
+					groups = appendGroups(QUANTUM_GROUP, {
 						ach(18704),	-- Dawn of the Infinite: Murozond's Rise
 						i(206145),	-- Mysterious Time Relic (QI!)
 						i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite (MM!)
@@ -1199,7 +1199,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						i(207928),	-- Leggings of the New Dawn
 						i(207581),	-- Mirror of Fractured Tomorrows
 						i(207978),	-- Murozond's Timeless Scale
-						n(DIVERGENT, sharedData({ ["bonusID"] = 9526 }, {
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
 							i(207987),	-- Borrowed Time
 						})),
 					}),
@@ -1209,7 +1209,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 		},
 	}),
 })));
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+-- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
 -- 	inst(1209, {	-- Dawn of the Infinite
 -- 		-- Ensembles
 -- 		q(77850),	-- Ensemble: Infinite Acolyte's Regalia (spellID 419820)

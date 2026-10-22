@@ -2,17 +2,17 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	m(TORGHAST, {
 		SL_Legendaries({
-			["description"] = "These memories only drop from Layer 3 or above, except for Phantasma Lure.",
-			["groups"] = {
+			description = "These memories only drop from Layer 3 or above, except for Phantasma Lure.",
+			groups = {
 				i(183247, {	-- Memory of a Stable Phantasma Lure
-					["description"] = "This memory is the only exception and will only drop from Layer 6 or above.",
+					description = "This memory is the only exception and will only drop from Layer 6 or above.",
 				}),
 				header(HEADERS.Achievement, 14463, {	-- Skoldus Hall
-					["icon"] = 2178518,
-					["groups"] = {
+					icon = 2178518,
+					groups = {
 						i(182634),	-- Memory of a Frozen Champion's Rage
 						i(183221),	-- Memory of the Dark Flame Spirit
 						i(183226),	-- Memory of the Balance of All Things
@@ -26,8 +26,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					},
 				}),
 				header(HEADERS.Achievement, 14473, {	-- Fracture Chambers
-					["icon"] = 1392920,
-					["groups"] = {
+					icon = 1392920,
+					groups = {
 						i(182640),	-- Memory of a Reanimated Shambler
 						i(183217),	-- Memory of my Darker Nature
 						i(183239),	-- Memory of an Unending Growth
@@ -41,8 +41,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					},
 				}),
 				header(HEADERS.Achievement, 14478, {	-- The Soulforges
-					["icon"] = 1392929,
-					["groups"] = {
+					icon = 1392929,
+					groups = {
 						i(183219),	-- Memory of Soul of Fire
 						i(183232),	-- Memory of a Symmetrical Eye
 						i(183255),	-- Memory of the Flamewaker
@@ -57,8 +57,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					},
 				}),
 				header(HEADERS.Achievement, 14483, {	-- Coldheart Interstitia
-					["icon"] = 1392911,
-					["groups"] = {
+					icon = 1392911,
+					groups = {
 						i(182632),	-- Memory of Absolute Zero
 						i(183236),	-- Memory of Ursoc
 						i(183280),	-- Memory of Fragments of Ice
@@ -72,8 +72,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					},
 				}),
 				header(HEADERS.Achievement, 14488, {	-- Mort'regar
-					["icon"] = 2178500,
-					["groups"] = {
+					icon = 2178500,
+					groups = {
 						i(182628),	-- Memory of Bryndaor
 						i(183237),	-- Memory of the Sleeper
 						i(183262),	-- Memory of the Butcher's Bone Fragments
@@ -87,8 +87,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					},
 				}),
 				header(HEADERS.Achievement, 14493, {	-- The Upper Reaches
-					["icon"] = 2178509,
-					["groups"] = {
+					icon = 2178509,
+					groups = {
 						i(182631),	-- Memory of a Vampiric Aura
 						i(183230),	-- Memory of the Apex Predator
 						i(183259),	-- Memory of the Unblinking Vigil

@@ -2,13 +2,13 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 	m(STORMSONG_VALLEY, {
 		n(ZONE_DROPS, {
 			i(163699, {	-- Annealed Honey Amulet
-				["coord"] = { 69.2, 68.8, STORMSONG_VALLEY },
-				["races"] = ALLIANCE_ONLY,
-				["crs"] = {
+				coord = { 69.2, 68.8, STORMSONG_VALLEY },
+				races = ALLIANCE_ONLY,
+				crs = {
 					134147,	-- Beehemoth
 					133429,	-- Bubbling Mead
 					141901,	-- Bumbling Bee
@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			i(155838),	-- Briarback Quills
 			i(163573, {	-- Goldenmane (MOUNT!)
-				["crs"] = {
+				crs = {
 					132226,	-- Briarback Kraultender
 					129750,	-- Briarback Skirmisher
 					130039,	-- Brinebrawn Cannoneer
@@ -36,8 +36,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			i(168152, {	-- Miniaturized Power Core
-				["coord"] = { 34.2, 32.0, STORMSONG_VALLEY },
-				["crs"] = {
+				coord = { 34.2, 32.0, STORMSONG_VALLEY },
+				crs = {
 					-- All Sabertron colors
 					139356,
 					139328,

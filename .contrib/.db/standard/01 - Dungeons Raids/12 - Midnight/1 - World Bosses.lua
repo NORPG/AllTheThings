@@ -66,20 +66,20 @@ InstanceHelper.Coords = EncounterCoords
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	n(WORLD_BOSSES, {
-		["timeline"] = { ADDED_12_0_1_LAUNCH },
-		["groups"] = bubbleDownFiltered({
-			["isRaid"] = true,
-			["isWeekly"] = true,
+		timeline = { ADDED_12_0_1_LAUNCH },
+		groups = bubbleDownFiltered({
+			isRaid = true,
+			isWeekly = true,
 		},FILTERFUNC_questIDORencounterID,{
 			n(COMMON_BOSS_DROPS, {
-				["crs"] = appendAllGroups(
+				crs = appendAllGroups(
 					nil,
 					EncounterToCRS[CRAGSPINE],
 					EncounterToCRS[LUASHAL],
 					EncounterToCRS[PREDAXUS],
 					EncounterToCRS[THORMBELAN]
 				),
-				["groups"] = {
+				groups = {
 					i(250459),	-- Bramblestalker's Feathered Cowl
 					i(250458),	-- Host Commander's Casque
 					i(250456),	-- Wretched Scholar's Gilded Robe
@@ -88,28 +88,28 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				},
 			}),
 			Boss(CRAGSPINE, {	-- Cragspine
-				["questID"] = 92128,
+				questID = 92128,
 			}),
 			BossWorldQuest(CRAGSPINE, 92123),	-- Cragspine WQ
 			Boss(LUASHAL, {	-- Lu'ashal
-				["questID"] = 92127,	-- maybe this is something else since it's account-wide...
+				questID = 92127,	-- maybe this is something else since it's account-wide...
 			}),
 			BossWorldQuest(LUASHAL, 92560),	-- Lu'ashal WQ
 			Boss(PREDAXUS, {	-- Predaxus
-				["questID"] = 92130,
+				questID = 92130,
 			}),
 			BossWorldQuest(PREDAXUS, 92636),	-- Predaxus WQ
 			Boss(THORMBELAN, {	-- Thormbelan
-				["questID"] = 92129,
+				questID = 92129,
 			}),
 			BossWorldQuest(THORMBELAN, 92034),	-- Thormbelan WQ
 			n(260875, {	-- Nexus-Captain Leth'ir
-				["timeline"] = { ADDED_12_0_7 },
-				["isRaid"] = true,
-				["isWeekly"] = true,
-				["coord"] = { 78.4, 69.2, NAIGTAL },
-				["crs"] = { 260833 },	-- Adjutant Mertei
-				["groups"] = {
+				timeline = { ADDED_12_0_7 },
+				isRaid = true,
+				isWeekly = true,
+				coord = { 78.4, 69.2, NAIGTAL },
+				crs = { 260833 },	-- Adjutant Mertei
+				groups = {
 					d(DIFFICULTY.RAID.MULTI.NORMAL_HEROIC, {
 						-- Shared appearances
 						i(275216),	-- Phaseblade's Edges
@@ -123,11 +123,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 						i(275227),	-- Leth'ir's Dress Sabatons
 					}),
 					d(DIFFICULTY.RAID.HEROIC, {
-						["groups"] = {
+						groups = {
 							-- Heroic appearances
 							i(275224),	-- Mertei's Adjutant Leggings
 							i(275227),	-- Leth'ir's Dress Sabatons
-							n(UPGRADE, bubbleDownSelf({ ["modID"] = 6, ["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 } }, {
+							n(UPGRADE, bubbleDownSelf({ modID = 6, timeline = { ADDED_12_0_7, REMOVED_12_1_0 } }, {
 								-- Mythic appearances
 								i(275224),	-- Mertei's Adjutant Leggings
 								i(275227),	-- Leth'ir's Dress Sabatons
@@ -137,12 +137,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				},
 			}),
 			n(261072, {	-- Imperator Pertinax
-				["timeline"] = { ADDED_12_0_7 },
-				["questID"] = 98292,	-- + 96787/96788/98587/98588 (Heroic)
-				["isRaid"] = true,
-				["isWeekly"] = true,
-				["coord"] = { 40.2, 77.5, 2618 },	-- Void Acropolis (Lower)
-				["groups"] = {
+				timeline = { ADDED_12_0_7 },
+				questID = 98292,	-- + 96787/96788/98587/98588 (Heroic)
+				isRaid = true,
+				isWeekly = true,
+				coord = { 40.2, 77.5, 2618 },	-- Void Acropolis (Lower)
+				groups = {
 					d(DIFFICULTY.RAID.MULTI.NORMAL_HEROIC, {
 						-- Shared appearances
 						i(275219),	-- Pertinax's Beast Prod
@@ -157,11 +157,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 						i(275226),	-- Shredclaw Handler's Grips
 					}),
 					d(DIFFICULTY.RAID.HEROIC, {
-						["groups"] = {
+						groups = {
 							-- Heroic appearances
 							i(275225),	-- Toxic Voidscythe Spaulders
 							i(275226),	-- Shredclaw Handler's Grips
-							n(UPGRADE, bubbleDownSelf({ ["modID"] = 6, ["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 } }, {
+							n(UPGRADE, bubbleDownSelf({ modID = 6, timeline = { ADDED_12_0_7, REMOVED_12_1_0 } }, {
 								i(275225),	-- Toxic Voidscythe Spaulders
 								i(275226),	-- Shredclaw Handler's Grips
 							})),

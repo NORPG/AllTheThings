@@ -64,58 +64,58 @@ end
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(VALE_OF_ETERNAL_BLOSSOMS, {
-			["lore"] = "The Vale of Eternal Blossoms is a zone at the center of the continent of Pandaria. The Vale has great cultural importance to both the pandaren and mogu, particularly the Mogu'shan Palace. Formerly known as a Cradle of Life and used as a place of experimentation by the Titans similar to Sholazar Basin and Un'goro Crater, this vale of golden flowers and trees served as the seat of power for the rulers of Pandaria, such as Emperor Shaohao and the mogu rulers following the death of Lei Shen.",
-			["icon"] = 618798,
-			["maps"] = {
+			lore = "The Vale of Eternal Blossoms is a zone at the center of the continent of Pandaria. The Vale has great cultural importance to both the pandaren and mogu, particularly the Mogu'shan Palace. Formerly known as a Cradle of Life and used as a place of experimentation by the Titans similar to Sholazar Basin and Un'goro Crater, this vale of golden flowers and trees served as the seat of power for the rulers of Pandaria, such as Emperor Shaohao and the mogu rulers following the death of Lei Shen.",
+			icon = 618798,
+			maps = {
 				VALE_OF_ETERNAL_BLOSSOMS_GUO_LAI_HALLS,
 				VALE_OF_ETERNAL_BLOSSOMS_THE_HALL_OF_THE_SERPENT,
 			},
-			["groups"] = {
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(6979),	-- Explore Vale of Eternal Blossoms
 				}),
 				battlepets({
 					pet(751, {	-- Dancing Water Skimmer (PET!)
-						["description"] = "also common as a secondary pet.",
-						["coords"] = {
+						description = "also common as a secondary pet.",
+						coords = {
 							{ 30.2, 77.6, VALE_OF_ETERNAL_BLOSSOMS },	-- Mistfall Village
 							{ 71.2, 40.2, VALE_OF_ETERNAL_BLOSSOMS },	-- By Mogu'shan Palace
 							{ 76.2, 60.0, VALE_OF_ETERNAL_BLOSSOMS },	-- The Summer Fields
 						},
 					}),
 					pet(747, {	-- Effervescent Glowfly (PET!)
-						["description"] = "Commonly found as a secondary pet in Vale of Eternal Blossoms. Can also be found as primary pets outside the Gate of the August Celestials as well as occasional spawns through the Vale of Eternal Blossoms.",
-						["coords"] = {
+						description = "Commonly found as a secondary pet in Vale of Eternal Blossoms. Can also be found as primary pets outside the Gate of the August Celestials as well as occasional spawns through the Vale of Eternal Blossoms.",
+						coords = {
 							{ 56.0, 89.0, KUN_LAI_SUMMIT },	-- By Gate of the August Celestials
 							{ 53.7, 89.2, KUN_LAI_SUMMIT },	-- By Gate of the August Celestials
 						},
 					}),
 					pet(383, {	-- Eternal Strider (PET!)
-						["description"] = "In commonly found by the riverbed.",
-						["coords"] = {
+						description = "In commonly found by the riverbed.",
+						coords = {
 							{ 34.0, 78.6, VALE_OF_ETERNAL_BLOSSOMS },	-- Mistfall Village
 							{ 72.6, 27.6, VALE_OF_ETERNAL_BLOSSOMS },	-- By Mogu'shan Palace
 							{ 87.0, 46.2, VALE_OF_ETERNAL_BLOSSOMS },	-- By Mogu'shan Palace
 						},
 					}),
 					pet(748, {	-- Gilded Moth (PET!)
-						["description"] = "Can be found in groups of three across the zone. However, only 1-2 groups are spawned at any time, and the Gilded Moths can only be found as primary pets. Use a target macro and consider using a Battle-Stone to get a rare quality pet.",
+						description = "Can be found in groups of three across the zone. However, only 1-2 groups are spawned at any time, and the Gilded Moths can only be found as primary pets. Use a target macro and consider using a Battle-Stone to get a rare quality pet.",
 					}),
 					pet(749, {	-- Golden Civet (PET!)
-						["description"] = "also common as a secondary pet.",
-						["coords"] = {
+						description = "also common as a secondary pet.",
+						coords = {
 							{ 11.2, 70.0, VALE_OF_ETERNAL_BLOSSOMS },	-- Gate of the Setting Sun
 						},
 					}),
 					pet(750, {	-- Golden Civet Kitten (PET!)
-						["description"] = "also common as a secondary pet.",
-						["coords"] = {
+						description = "also common as a secondary pet.",
+						coords = {
 							{ 11.2, 70.0, VALE_OF_ETERNAL_BLOSSOMS },	-- Gate of the Setting Sun
 							{ 38.6, 64.8, VALE_OF_ETERNAL_BLOSSOMS },	-- Jin Yang Road
 						},
 					}),
 					pet(752, {	-- Yellow-Bellied Bullfrog (PET!)
-						["description"] = "Can sometimes be found by the riverbed, also common as a secondary pet.",
+						description = "Can sometimes be found by the riverbed, also common as a secondary pet.",
 					}),
 				}),
 				explorationHeader({
@@ -150,64 +150,64 @@ root(ROOTS.Zones, {
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1073, {	-- Serpent's Spine, Vale of Eternal Blossoms
-						["cr"] = 63497,	-- Mai of the Wall <Flight Master>
-						["coord"] = { 14.2, 79.2, VALE_OF_ETERNAL_BLOSSOMS },
+						cr = 63497,	-- Mai of the Wall <Flight Master>
+						coord = { 14.2, 79.2, VALE_OF_ETERNAL_BLOSSOMS },
 					}),
 					fp(1057, {	-- Shrine of Seven Stars, Vale of Eternal Blossoms
-						["cr"] = 61121,	-- Sharinga Springrunner <Flight Master>
-						["coord"] = { 84.6, 62.4, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = ALLIANCE_ONLY,
+						cr = 61121,	-- Sharinga Springrunner <Flight Master>
+						coord = { 84.6, 62.4, VALE_OF_ETERNAL_BLOSSOMS },
+						races = ALLIANCE_ONLY,
 					}),
 					fp(1058, {	-- Shrine of Two Moons, Vale of Eternal Blossoms
-						["cr"] = 61122,	-- Tania Summerbreeze <Flight Master>
-						["coord"] = { 62.8, 21.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = HORDE_ONLY,
+						cr = 61122,	-- Tania Summerbreeze <Flight Master>
+						coord = { 62.8, 21.6, VALE_OF_ETERNAL_BLOSSOMS },
+						races = HORDE_ONLY,
 					}),
 					fp(2544, {	-- Mistfall Village, Vale of Eternal Blossoms
-						["cr"] = 154805,	-- Ryuxi <Master of Serpents>
-						-- ["sourceQuests"] = {  },	-- TODO: likely requires some 8.3 quest chain before becoming available?
-						["coord"] = { 38.9, 72.8, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { ADDED_8_3_0 },
+						cr = 154805,	-- Ryuxi <Master of Serpents>
+						-- sourceQuests = {  },	-- TODO: likely requires some 8.3 quest chain before becoming available?
+						coord = { 38.9, 72.8, VALE_OF_ETERNAL_BLOSSOMS },
+						timeline = { ADDED_8_3_0 },
 					}),
 				}),
 				petbattles({
 					n(66741, {	-- Aki the Chosen <Grand Master Pet Tamer>
-						["coords"] = {
+						coords = {
 							{ 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
 							-- #if AFTER 8.3.0
 							{ 84.1, 28.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							-- #endif
 						},
-						["timeline"] = { ADDED_5_1_0 },
-						["petBattleLvl"] = 25,
-						["groups"] = {
+						timeline = { ADDED_5_1_0 },
+						petBattleLvl = 25,
+						groups = {
 							q(31958, {	-- Grand Master Aki
-								["sourceAchievement"] = 6606,	-- Taming Pandaria
-								["timeline"] = { ADDED_5_1_0 },
-								["isDaily"] = true,
-								["groups"] = {
+								sourceAchievement = 6606,	-- Taming Pandaria
+								timeline = { ADDED_5_1_0 },
+								isDaily = true,
+								groups = {
 									i(89125),	-- Sack of Pet Supplies
 								},
 							}),
 						},
 					}),
 					q(31951, {	-- Grand Master Aki
-						["sourceQuests"] = {
+						sourceQuests = {
 							31930,	-- Battle Pet Tamers: Pandaria (A)
 							31952,	-- Battle Pet Tamers: Pandaria (H)
 						},
-						["qg"] = 66741,	-- Aki the Chosen
-						["coords"] = {
+						qg = 66741,	-- Aki the Chosen
+						coords = {
 							{ 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
 							-- #if AFTER 8.3.0
 							{ 84.1, 28.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							-- #endif
 						},
-						["timeline"] = { ADDED_5_0_4 },
-						["groups"] = {
+						timeline = { ADDED_5_0_4 },
+						groups = {
 							objective(1, {	-- Defeat Aki the Chosen
-								["provider"] = { "n", 66741 },	-- Aki the Chosen
-								["coords"] = {
+								provider = { "n", 66741 },	-- Aki the Chosen
+								coords = {
 									{ 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
 									-- #if AFTER 8.3.0
 									{ 84.1, 28.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
@@ -218,192 +218,192 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(32603, {	-- Beasts of Fable
-						["aqd"] = {
-							["qg"] = 64572,	-- Sara Finkleswitch
-							["coord"] = { 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
-							["maps"] = { SHRINE_OF_SEVEN_STARS },
+						aqd = {
+							qg = 64572,	-- Sara Finkleswitch
+							coord = { 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+							maps = { SHRINE_OF_SEVEN_STARS },
 						},
-						["hqd"] = {
-							["qg"] = 64582,	-- Gentle San
-							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
-							["maps"] = { SHRINE_OF_TWO_MOONS },
+						hqd = {
+							qg = 64582,	-- Gentle San
+							coord = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+							maps = { SHRINE_OF_TWO_MOONS },
 						},
-						["sourceAchievement"] = 7499,	-- Taming the World
-						["timeline"] = { ADDED_5_2_0 },
-						["maps"] = { THE_JADE_FOREST, DREAD_WASTES, VALLEY_OF_THE_FOUR_WINDS, TOWNLONG_STEPPES, KUN_LAI_SUMMIT, KRASARANG_WILDS },
-						["groups"] = {
+						sourceAchievement = 7499,	-- Taming the World
+						timeline = { ADDED_5_2_0 },
+						maps = { THE_JADE_FOREST, DREAD_WASTES, VALLEY_OF_THE_FOUR_WINDS, TOWNLONG_STEPPES, KUN_LAI_SUMMIT, KRASARANG_WILDS },
+						groups = {
 							objective(1, {	-- Defeat Ka'wi the Gorger
-								["provider"] = { "n", 68555 },	-- Ka'wi the Gorger
-								["coord"] = { 48.4, 71.0, THE_JADE_FOREST },
+								provider = { "n", 68555 },	-- Ka'wi the Gorger
+								coord = { 48.4, 71.0, THE_JADE_FOREST },
 							}),
 							objective(2, {	-- Defeat Gorespine
-								["provider"] = { "n", 68558 },	-- Gorespine
-								["coord"] = { 26.2, 50.2, DREAD_WASTES },
+								provider = { "n", 68558 },	-- Gorespine
+								coord = { 26.2, 50.2, DREAD_WASTES },
 							}),
 							objective(3, {	-- Defeat No-No
-								["provider"] = { "n", 68559 },	-- No-No
-								["coord"] = { 11.0, 70.6, VALE_OF_ETERNAL_BLOSSOMS },
+								provider = { "n", 68559 },	-- No-No
+								coord = { 11.0, 70.6, VALE_OF_ETERNAL_BLOSSOMS },
 							}),
 							objective(4, {	-- Defeat Greyhoof
-								["provider"] = { "n", 68560 },	-- Greyhoof <Calf of Darkhide>
-								["coord"] = { 25.2, 78.6, VALLEY_OF_THE_FOUR_WINDS },
+								provider = { "n", 68560 },	-- Greyhoof <Calf of Darkhide>
+								coord = { 25.2, 78.6, VALLEY_OF_THE_FOUR_WINDS },
 							}),
 							objective(5, {	-- Defeat Lucky Yi
-								["provider"] = { "n", 68561 },	-- Lucky Yi
-								["coord"] = { 40.4, 43.8, VALLEY_OF_THE_FOUR_WINDS },
+								provider = { "n", 68561 },	-- Lucky Yi
+								coord = { 40.4, 43.8, VALLEY_OF_THE_FOUR_WINDS },
 							}),
 							objective(6, {	-- Defeat Ti'un the Wanderer
-								["provider"] = { "n", 68562 },	-- Ti'un the Wanderer
-								["coord"] = { 72.2, 79.8, TOWNLONG_STEPPES },
+								provider = { "n", 68562 },	-- Ti'un the Wanderer
+								coord = { 72.2, 79.8, TOWNLONG_STEPPES },
 							}),
 							objective(7, {	-- Defeat Kafi
-								["provider"] = { "n", 68563 },	-- Kafi
-								["coord"] = { 35.2, 56.0, KUN_LAI_SUMMIT },
+								provider = { "n", 68563 },	-- Kafi
+								coord = { 35.2, 56.0, KUN_LAI_SUMMIT },
 							}),
 							objective(8, {	-- Defeat Dos-Ryga
-								["provider"] = { "n", 68564 },	-- Dos-Ryga
-								["coord"] = { 67.8, 84.6, KUN_LAI_SUMMIT },
+								provider = { "n", 68564 },	-- Dos-Ryga
+								coord = { 67.8, 84.6, KUN_LAI_SUMMIT },
 							}),
 							objective(9, {	-- Defeat Nitun
-								["provider"] = { "n", 68565 },	-- Nitun <The Midnight Plunderer>
-								["coord"] = { 57.0, 29.2, THE_JADE_FOREST },
+								provider = { "n", 68565 },	-- Nitun <The Midnight Plunderer>
+								coord = { 57.0, 29.2, THE_JADE_FOREST },
 							}),
 							objective(10, {	-- Defeat Skitterer Xi'a
-								["provider"] = { "n", 68566 },	-- Skitterer Xi'a
-								["coord"] = { 36.2, 37.2, KRASARANG_WILDS },
+								provider = { "n", 68566 },	-- Skitterer Xi'a
+								coord = { 36.2, 37.2, KRASARANG_WILDS },
 							}),
 							i(94025, {	-- Red Panda (PET!)
-								["timeline"] = { ADDED_5_2_0 },
+								timeline = { ADDED_5_2_0 },
 							}),
 						},
 					}),
 					q(32604, {	-- Beasts of Fable Book I
-						["aqd"] = {
-							["qg"] = 64572,	-- Sara Finkleswitch
-							["coord"] = { 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
-							["maps"] = { THE_JADE_FOREST, KUN_LAI_SUMMIT, SHRINE_OF_SEVEN_STARS },
+						aqd = {
+							qg = 64572,	-- Sara Finkleswitch
+							coord = { 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+							maps = { THE_JADE_FOREST, KUN_LAI_SUMMIT, SHRINE_OF_SEVEN_STARS },
 						},
-						["hqd"] = {
-							["qg"] = 64582,	-- Gentle San
-							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
-							["maps"] = { THE_JADE_FOREST, KUN_LAI_SUMMIT, SHRINE_OF_TWO_MOONS },
+						hqd = {
+							qg = 64582,	-- Gentle San
+							coord = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+							maps = { THE_JADE_FOREST, KUN_LAI_SUMMIT, SHRINE_OF_TWO_MOONS },
 						},
-						["description"] = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
-						["sourceQuest"] = 32603,	-- Beasts of Fable
-						["timeline"] = { ADDED_5_2_0 },
-						["isDaily"] = true,
-						["groups"] = {
+						description = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
+						sourceQuest = 32603,	-- Beasts of Fable
+						timeline = { ADDED_5_2_0 },
+						isDaily = true,
+						groups = {
 							objective(1, {	-- Defeat Ka'wi the Gorger
-								["provider"] = { "n", 68555 },	-- Ka'wi the Gorger
-								["coord"] = { 48.4, 71.0, THE_JADE_FOREST },
+								provider = { "n", 68555 },	-- Ka'wi the Gorger
+								coord = { 48.4, 71.0, THE_JADE_FOREST },
 							}),
 							objective(2, {	-- Defeat Kafi
-								["provider"] = { "n", 68563 },	-- Kafi
-								["coord"] = { 35.2, 56.0, KUN_LAI_SUMMIT },
+								provider = { "n", 68563 },	-- Kafi
+								coord = { 35.2, 56.0, KUN_LAI_SUMMIT },
 							}),
 							objective(3, {	-- Defeat Dos-Ryga
-								["provider"] = { "n", 68564 },	-- Dos-Ryga
-								["coord"] = { 67.8, 84.6, KUN_LAI_SUMMIT },
+								provider = { "n", 68564 },	-- Dos-Ryga
+								coord = { 67.8, 84.6, KUN_LAI_SUMMIT },
 							}),
 							objective(4, {	-- Defeat Nitun
-								["provider"] = { "n", 68565 },	-- Nitun <The Midnight Plunderer>
-								["coord"] = { 57.0, 29.2, THE_JADE_FOREST },
+								provider = { "n", 68565 },	-- Nitun <The Midnight Plunderer>
+								coord = { 57.0, 29.2, THE_JADE_FOREST },
 							}),
 							i(94207),	-- Fabled Pandaren Pet Supplies
 						},
 					}),
 					q(32868, {	-- Beasts of Fable Book II
-						["aqd"] = {
-							["qg"] = 64572,	-- Sara Finkleswitch
-							["coord"] = { 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
-							["maps"] = { VALLEY_OF_THE_FOUR_WINDS, KRASARANG_WILDS, SHRINE_OF_SEVEN_STARS },
+						aqd = {
+							qg = 64572,	-- Sara Finkleswitch
+							coord = { 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+							maps = { VALLEY_OF_THE_FOUR_WINDS, KRASARANG_WILDS, SHRINE_OF_SEVEN_STARS },
 						},
-						["hqd"] = {
-							["qg"] = 64582,	-- Gentle San
-							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
-							["maps"] = { VALLEY_OF_THE_FOUR_WINDS, KRASARANG_WILDS, SHRINE_OF_TWO_MOONS },
+						hqd = {
+							qg = 64582,	-- Gentle San
+							coord = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+							maps = { VALLEY_OF_THE_FOUR_WINDS, KRASARANG_WILDS, SHRINE_OF_TWO_MOONS },
 						},
-						["description"] = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
-						["sourceQuest"] = 32603,	-- Beasts of Fable
-						["timeline"] = { ADDED_5_2_0 },
-						["isDaily"] = true,
-						["groups"] = {
+						description = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
+						sourceQuest = 32603,	-- Beasts of Fable
+						timeline = { ADDED_5_2_0 },
+						isDaily = true,
+						groups = {
 							objective(1, {	-- Defeat Greyhoof
-								["provider"] = { "n", 68560 },	-- Greyhoof <Calf of Darkhide>
-								["coord"] = { 25.2, 78.6, VALLEY_OF_THE_FOUR_WINDS },
+								provider = { "n", 68560 },	-- Greyhoof <Calf of Darkhide>
+								coord = { 25.2, 78.6, VALLEY_OF_THE_FOUR_WINDS },
 							}),
 							objective(2, {	-- Defeat Lucky Yi
-								["provider"] = { "n", 68561 },	-- Lucky Yi
-								["coord"] = { 40.4, 43.8, VALLEY_OF_THE_FOUR_WINDS },
+								provider = { "n", 68561 },	-- Lucky Yi
+								coord = { 40.4, 43.8, VALLEY_OF_THE_FOUR_WINDS },
 							}),
 							objective(3, {	-- Defeat Skitterer Xi'a
-								["provider"] = { "n", 68566 },	-- Skitterer Xi'a
-								["coord"] = { 36.2, 37.2, KRASARANG_WILDS },
+								provider = { "n", 68566 },	-- Skitterer Xi'a
+								coord = { 36.2, 37.2, KRASARANG_WILDS },
 							}),
 							i(94207),	-- Fabled Pandaren Pet Supplies
 						},
 					}),
 					q(32869, {	-- Beasts of Fable Book III
-						["aqd"] = {
-							["qg"] = 64572,	-- Sara Finkleswitch
-							["coord"] = { 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
-							["maps"] = { DREAD_WASTES, TOWNLONG_STEPPES, SHRINE_OF_SEVEN_STARS },
+						aqd = {
+							qg = 64572,	-- Sara Finkleswitch
+							coord = { 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+							maps = { DREAD_WASTES, TOWNLONG_STEPPES, SHRINE_OF_SEVEN_STARS },
 						},
-						["hqd"] = {
-							["qg"] = 64582,	-- Gentle San
-							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
-							["maps"] = { DREAD_WASTES, TOWNLONG_STEPPES, SHRINE_OF_TWO_MOONS },
+						hqd = {
+							qg = 64582,	-- Gentle San
+							coord = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+							maps = { DREAD_WASTES, TOWNLONG_STEPPES, SHRINE_OF_TWO_MOONS },
 						},
-						["description"] = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
-						["sourceQuest"] = 32603,	-- Beasts of Fable
-						["timeline"] = { ADDED_5_2_0 },
-						["isDaily"] = true,
-						["groups"] = {
+						description = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
+						sourceQuest = 32603,	-- Beasts of Fable
+						timeline = { ADDED_5_2_0 },
+						isDaily = true,
+						groups = {
 							objective(1, {	-- Defeat Gorespine
-								["provider"] = { "n", 68558 },	-- Gorespine
-								["coord"] = { 26.2, 50.2, DREAD_WASTES },
+								provider = { "n", 68558 },	-- Gorespine
+								coord = { 26.2, 50.2, DREAD_WASTES },
 							}),
 							objective(2, {	-- Defeat No-No
-								["provider"] = { "n", 68559 },	-- No-No
-								["coord"] = { 11.0, 70.6, VALE_OF_ETERNAL_BLOSSOMS },
+								provider = { "n", 68559 },	-- No-No
+								coord = { 11.0, 70.6, VALE_OF_ETERNAL_BLOSSOMS },
 							}),
 							objective(3, {	-- Defeat Ti'un the Wanderer
-								["provider"] = { "n", 68562 },	-- Ti'un the Wanderer
-								["coord"] = { 72.2, 79.8, TOWNLONG_STEPPES },
+								provider = { "n", 68562 },	-- Ti'un the Wanderer
+								coord = { 72.2, 79.8, TOWNLONG_STEPPES },
 							}),
 							i(94207),	-- Fabled Pandaren Pet Supplies
 						},
 					}),
 					q(32428, {	-- Pandaren Spirit Tamer
-						["aqd"] = {
-							["qg"] = 64572,	-- Sara Finkleswitch
-							["coord"] = { 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
-							["maps"] = { TOWNLONG_STEPPES, KUN_LAI_SUMMIT, THE_JADE_FOREST, DREAD_WASTES, SHRINE_OF_SEVEN_STARS },
+						aqd = {
+							qg = 64572,	-- Sara Finkleswitch
+							coord = { 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+							maps = { TOWNLONG_STEPPES, KUN_LAI_SUMMIT, THE_JADE_FOREST, DREAD_WASTES, SHRINE_OF_SEVEN_STARS },
 						},
-						["hqd"] = {
-							["qg"] = 64582,	-- Gentle San
-							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
-							["maps"] = { TOWNLONG_STEPPES, KUN_LAI_SUMMIT, THE_JADE_FOREST, DREAD_WASTES, SHRINE_OF_TWO_MOONS },
+						hqd = {
+							qg = 64582,	-- Gentle San
+							coord = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+							maps = { TOWNLONG_STEPPES, KUN_LAI_SUMMIT, THE_JADE_FOREST, DREAD_WASTES, SHRINE_OF_TWO_MOONS },
 						},
-						["description"] = "These pets can be found in the Pandaren Spirit Pet Supplies received from the four Pandaren Spirit Tamers in their individual Daily Quests once you complete this quest.",
-						["sourceAchievement"] = 7499,	-- Taming the World
-						["timeline"] = { ADDED_5_0_4 },
-						["groups"] = {
+						description = "These pets can be found in the Pandaren Spirit Pet Supplies received from the four Pandaren Spirit Tamers in their individual Daily Quests once you complete this quest.",
+						sourceAchievement = 7499,	-- Taming the World
+						timeline = { ADDED_5_0_4 },
+						groups = {
 							objective(1, {	-- Defeat Burning Pandaren Spirit
-								["provider"] = { "n", 68463 },	-- Burning Pandaren Spirit <Grand Master Pet Tamer>
-								["coord"] = { 57.0, 42.2, TOWNLONG_STEPPES },
+								provider = { "n", 68463 },	-- Burning Pandaren Spirit <Grand Master Pet Tamer>
+								coord = { 57.0, 42.2, TOWNLONG_STEPPES },
 							}),
 							objective(2, {	-- Defeat Thundering Pandaren Spirit
-								["provider"] = { "n", 68465 },	-- Thundering Pandaren Spirit <Grand Master Pet Tamer>
-								["coord"] = { 64.8, 93.6, KUN_LAI_SUMMIT },
+								provider = { "n", 68465 },	-- Thundering Pandaren Spirit <Grand Master Pet Tamer>
+								coord = { 64.8, 93.6, KUN_LAI_SUMMIT },
 							}),
 							objective(3, {	-- Defeat Whispering Pandaren Spirit
-								["provider"] = { "n", 68464 },	-- Whispering Pandaren Spirit <Grand Master Pet Tamer>
-								["coord"] = { 28.8, 36.0, THE_JADE_FOREST },
+								provider = { "n", 68464 },	-- Whispering Pandaren Spirit <Grand Master Pet Tamer>
+								coord = { 28.8, 36.0, THE_JADE_FOREST },
 							}),
 							objective(4, {	-- Defeat Flowing Pandaren Spirit
-								["provider"] = { "n", 68462 },	-- Flowing Pandaren Spirit <Grand Master Pet Tamer>
-								["coord"] = { 61.2, 87.6, DREAD_WASTES },
+								provider = { "n", 68462 },	-- Flowing Pandaren Spirit <Grand Master Pet Tamer>
+								coord = { 61.2, 87.6, DREAD_WASTES },
 							}),
 							i(92799),	-- Pandaren Air Spirit (PET!)
 							i(92798),	-- Pandaren Fire Spirit (PET!)
@@ -412,34 +412,34 @@ root(ROOTS.Zones, {
 						},
 					}),
 					pvp(q(32863, {	-- What We've Been Training For
-						["aqd"] = {
-							["qgs"] = {
+						aqd = {
+							qgs = {
 								64572,	-- Sara Finkleswitch
 								63596,	-- Audrey Burnhep
 							},
-							["coords"] = {
+							coords = {
 								{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
 								{ 69.2, 25.0, STORMWIND_CITY },
 							},
-							["maps"] = { SHRINE_OF_SEVEN_STARS },
+							maps = { SHRINE_OF_SEVEN_STARS },
 						},
-						["hqd"] = {
-							["qgs"] = {
+						hqd = {
+							qgs = {
 								64582,	-- Gentle San
 								63626,	-- Varzok
 							},
-							["coords"] = {
+							coords = {
 								{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 								{ 52.6, 59.3, ORGRIMMAR },
 							},
-							["maps"] = { SHRINE_OF_TWO_MOONS },
+							maps = { SHRINE_OF_TWO_MOONS },
 						},
-						["description"] = "Account-Wide Weekly Quest.",
-						["timeline"] = { ADDED_5_3_0 },
-						["isWeekly"] = true,
-						["groups"] = {
+						description = "Account-Wide Weekly Quest.",
+						timeline = { ADDED_5_3_0 },
+						isWeekly = true,
+						groups = {
 							i(98095, {	-- Brawler's Pet Supplies
-								["sym"] = {{"select","itemID",
+								sym = {{"select","itemID",
 									89139,	-- Chain Pet Leash
 									44820,	-- Red Ribbon Pet Leash
 									37460,	-- Rope Pet Leash
@@ -460,184 +460,184 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					RemovedWithSOO(q(30634, {	-- Barring Entry
-						["sourceQuest"] = 30632,	-- The Ruins of Guo-Lai
-						["qg"] = 58471,	-- Kun Autumnlight
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["groups"] = {
+						sourceQuest = 30632,	-- The Ruins of Guo-Lai
+						qg = 58471,	-- Kun Autumnlight
+						coord = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
+						groups = {
 							i(80484),	-- Explosive Keg (QI!)
 						},
 					})),
 					{
-						["aqd"] = q(32016, {	-- Elder Charm of Good Fortune (A)
-							["qg"] = 64029,	-- Elder Lin
-							["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
+						aqd = q(32016, {	-- Elder Charm of Good Fortune (A)
+							qg = 64029,	-- Elder Lin
+							coord = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
-						["hqd"] = q(32017, {	-- Elder Charm of Good Fortune (H)
-							["qg"] = 63996,	-- Elder Liao
-							["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
+						hqd = q(32017, {	-- Elder Charm of Good Fortune (H)
+							qg = 63996,	-- Elder Liao
+							coord = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
-						["timeline"] = {
+						timeline = {
 							ADDED_5_0_4,
 							-- #if NOT ANYCLASSIC
 							REMOVED_5_2_0,
 							-- #endif
 						},
-						["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
-						["isWeekly"] = true,
-						["groups"] = {
+						cost = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
+						isWeekly = true,
+						groups = {
 							currency(697),	-- Elder Charm of Good Fortune
 						},
 					},
 					applyclassicphase(MOP_PHASE_ESCALATION, {	-- Heroic Deeds
-						["aqd"] = q(32900, {	-- Heroic Deeds (A)
-							["qg"] = 64101,	-- Taijin the Cyclone
-							["coord"] = { 47.23, 49.71, SHRINE_OF_SEVEN_STARS },
+						aqd = q(32900, {	-- Heroic Deeds (A)
+							qg = 64101,	-- Taijin the Cyclone
+							coord = { 47.23, 49.71, SHRINE_OF_SEVEN_STARS },
 						}),
-						["hqd"] = q(32901, {	-- Heroic Deeds (H)
-							["qg"] = 66998,	-- Jinho the Wind Breaker
-							["coord"] = { 46.6, 56.5, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+						hqd = q(32901, {	-- Heroic Deeds (H)
+							qg = 66998,	-- Jinho the Wind Breaker
+							coord = { 46.6, 56.5, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 						}),
-						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.",
-						["timeline"] = { ADDED_5_3_0 },
-						["groups"] = {
+						description = "Quest may only be completed ONCE per character. Items you receive from the Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.",
+						timeline = { ADDED_5_3_0 },
+						groups = {
 							i(98546),	-- Bulging Heroic Cache of Treasures
 						},
 					}),
 					-- Wouter NOTE: it's been confirmed by Blizzard that Into the Vale quests will NOT be added to MoP Classic (not deemed important enough to fix)
 					q(30630, {	-- Into the Vale (A)
-						["sourceQuests"] = { 31512 },	-- A Witness to History (A)
-						["qg"] = 59964,	-- Pako the Speaker
-						["races"] = ALLIANCE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
+						sourceQuests = { 31512 },	-- A Witness to History (A)
+						qg = 59964,	-- Pako the Speaker
+						races = ALLIANCE_ONLY,
+						u = REMOVED_FROM_GAME,
 					}),
 					q(33008, {	-- Into the Vale (H)
-						["sourceQuests"] = { 31511 },	-- A Witness to History (H)
-						["qg"] = 59964,	-- Pako the Speaker
-						["races"] = HORDE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
+						sourceQuests = { 31511 },	-- A Witness to History (H)
+						qg = 59964,	-- Pako the Speaker
+						races = HORDE_ONLY,
+						u = REMOVED_FROM_GAME,
 					}),
 					RemovedWithSOO(q(30635, {	-- Killing the Quilen
-						["sourceQuests"] = {
+						sourceQuests = {
 							30633,	-- Out with the Scouts
 							30634,	-- Barring Entry
 						},
-						["qg"] = 58465,	-- Anji Autumnlight
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
+						qg = 58465,	-- Anji Autumnlight
+						coord = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 					})),
 					RemovedWithSOO(q(30638, {	-- Leaving an Opening
-						["sourceQuests"] = {
+						sourceQuests = {
 							30635,	-- Killing the Quilen
 							30636,	-- Stones of Power
 							30637,	-- The Guo-Lai Halls
 							30654,	-- The Guo-Lai Halls
 						},
-						["qg"] = 58465,	-- Anji Autumnlight
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
+						qg = 58465,	-- Anji Autumnlight
+						coord = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 					})),
 					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
-						["aqd"] = q(32719, {	-- Mogu Runes of Fate (A)
-							["qg"] = 64029,	-- Elder Lin
-							["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
+						aqd = q(32719, {	-- Mogu Runes of Fate (A)
+							qg = 64029,	-- Elder Lin
+							coord = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
-						["hqd"] = q(32718, {	-- Mogu Runes of Fate (H)
-							["qg"] = 63996,	-- Elder Liao
-							["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
+						hqd = q(32718, {	-- Mogu Runes of Fate (H)
+							qg = 63996,	-- Elder Liao
+							coord = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
-						["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
-						["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
-						["isWeekly"] = true,
-						["groups"] = {
+						timeline = { ADDED_5_2_0, REMOVED_5_4_0 },
+						cost = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
+						isWeekly = true,
+						groups = {
 							currency(752),	-- Mogu Rune of Fate
 						},
 					}),
 					-- #if ANYCLASSIC
 					-- CRIEVE NOTE: They added this new version of the quests probably to prevent them from randomly disappearing in later phases. We'll see if this set gets removed.
 					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(94404, {	-- Mogu Runes of Fate (Both)
-						["aqd"] = {
-							["qg"] = 64029,	-- Elder Lin
-							["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
+						aqd = {
+							qg = 64029,	-- Elder Lin
+							coord = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
 						},
-						["hqd"] = {
-							["qg"] = 63996,	-- Elder Liao
-							["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
+						hqd = {
+							qg = 63996,	-- Elder Liao
+							coord = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
 						},
-						["timeline"] = { ADDED_5_5_3 },
-						["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
-						["isWeekly"] = true,
-						["groups"] = {
+						timeline = { ADDED_5_5_3 },
+						cost = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
+						isWeekly = true,
+						groups = {
 							currency(752),	-- Mogu Rune of Fate
 						},
 					})),
 					-- #endif
 					RemovedWithSOO(q(30633, {	-- Out with the Scouts
-						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
-						["qg"] = 58465,	-- Anji Autumnlight
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
+						sourceQuests = { 30632 },	-- The Ruins of Guo-Lai
+						qg = 58465,	-- Anji Autumnlight
+						coord = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 					})),
 					RemovedWithSOO(q(30636, {	-- Stones of Power
-						["sourceQuests"] = {
+						sourceQuests = {
 							30633,	-- Out with the Scouts
 							30634,	-- Barring Entry
 						},
-						["qg"] = 58465,	-- Anji Autumnlight
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
+						qg = 58465,	-- Anji Autumnlight
+						coord = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 					})),
 					q(31369, {	-- The Anglers [A]
-						["qg"] = 64033,	-- Master Angler Karu
-						["coord"] = { 86.5, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { REMOVED_5_1_0, ADDED_10_2_7 },
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
+						qg = 64033,	-- Master Angler Karu
+						coord = { 86.5, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+						timeline = { REMOVED_5_1_0, ADDED_10_2_7 },
+						races = ALLIANCE_ONLY,
+						isBreadcrumb = true,
 					}),
 					q(31370, {	-- The Anglers [H]
-						["qg"] = 64010,	-- Master Angler Karu
-						["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { REMOVED_5_1_0, ADDED_10_2_7 },
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,	-- this wasn't available for me until I party synced, but no follow up quest on turn in... not sure what locks
+						qg = 64010,	-- Master Angler Karu
+						coord = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+						timeline = { REMOVED_5_1_0, ADDED_10_2_7 },
+						races = HORDE_ONLY,
+						isBreadcrumb = true,	-- this wasn't available for me until I party synced, but no follow up quest on turn in... not sure what locks
 					}),
 					RemovedWithSOO(q(30637, {	-- The Guo-Lai Halls
-						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
-						["qg"] = 58465,	-- Anji Autumnlight
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
+						sourceQuests = { 30632 },	-- The Ruins of Guo-Lai
+						qg = 58465,	-- Anji Autumnlight
+						coord = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 					})),
 					RemovedWithSOO(q(30654, {	-- The Guo-Lai Halls
-						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
-						["qg"] = 58465,	-- Anji Autumnlight
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
+						sourceQuests = { 30632 },	-- The Ruins of Guo-Lai
+						qg = 58465,	-- Anji Autumnlight
+						coord = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 					})),
 					q(31876, {	-- The Inkmasters of the Arboretum
-						["qg"] = 64691,	-- Lorewalker Huynh
-						["coord"] = { 82.0, 29.4, VALE_OF_ETERNAL_BLOSSOMS },
-						["requireSkill"] = INSCRIPTION,
-						["isWeekly"] = true,
+						qg = 64691,	-- Lorewalker Huynh
+						coord = { 82.0, 29.4, VALE_OF_ETERNAL_BLOSSOMS },
+						requireSkill = INSCRIPTION,
+						isWeekly = true,
 					}),
 					RemovedWithSOO(q(30632, {	-- The Ruins of Guo-Lai
-						["sourceQuests"] = {
+						sourceQuests = {
 							31512,	-- A Witness to History (A)
 							31511,	-- A Witness to History (H)
 							30631,	-- The Shrine of Seven Stars (A)
 							30649,	-- The Shrine of Two Moons (H)
 						},
-						["qg"] = 58408,	-- Leven Dawnblade
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
+						qg = 58408,	-- Leven Dawnblade
+						coord = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 					})),
 					RemovedWithSOO(q(30631, {	-- The Shrine of Seven Stars
-						["sourceQuests"] = { 30630 },	-- Into the Vale (A)
-						["qg"] = 58468,	-- Sun Tenderheart
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = ALLIANCE_ONLY,
+						sourceQuests = { 30630 },	-- Into the Vale (A)
+						qg = 58468,	-- Sun Tenderheart
+						coord = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
+						races = ALLIANCE_ONLY,
 					})),
 					RemovedWithSOO(q(30649, {	-- The Shrine of Two Moons
-						["sourceQuests"] = { 33008 },	-- Into the Vale (H)
-						["qg"] = 58468,	-- Sun Tenderheart
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = HORDE_ONLY,
+						sourceQuests = { 33008 },	-- Into the Vale (H)
+						qg = 58468,	-- Sun Tenderheart
+						coord = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
+						races = HORDE_ONLY,
 					})),
 				}),
 				n(RARES, {
 					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
+						crs = {
 							50822,	-- Ai-Ran the Shifting Cloud
 							50749,	-- Kal'tik the Blight
 							50349,	-- Kang the Soul Thief
@@ -647,7 +647,7 @@ root(ROOTS.Zones, {
 							50359,	-- Urgolax
 							50336,	-- Yorik Sharpeye
 						},
-						["groups"] = {
+						groups = {
 							i(87636),	-- Cloak of the Forgotten Emperor
 							i(87638),	-- Cloak of Tranquil Clouds
 							i(87637),	-- Jade Harbinger's Cloak
@@ -657,73 +657,73 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(50822, {	-- Ai-Ran the Shifting Cloud
-						["coord"] = { 42.8, 69.2, VALE_OF_ETERNAL_BLOSSOMS },
-						["groups"] = {
+						coord = { 42.8, 69.2, VALE_OF_ETERNAL_BLOSSOMS },
+						groups = {
 							i(86590),	-- Essence of the Breeze (TOY!)
 						},
 					}),
 					n(50749, {	-- Kal'tik the Blight
-						["coord"] = { 14.0, 58.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["groups"] = {
+						coord = { 14.0, 58.6, VALE_OF_ETERNAL_BLOSSOMS },
+						groups = {
 							i(86579, {	-- Bottled Tornado [Should be a toy...]
-								["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
+								timeline = { ADDED_5_0_4, DELETED_7_0_3 },
 							}),
 							i(134023, {	-- Bottled Tornado (TOY!)
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							}),
 						},
 					}),
 					n(50349, {	-- Kang the Soul Thief
-						["coord"] = { 15.2, 35.2, VALE_OF_ETERNAL_BLOSSOMS },
-						["groups"] = {
+						coord = { 15.2, 35.2, VALE_OF_ETERNAL_BLOSSOMS },
+						groups = {
 							i(86571),	-- Kang's Bindstone (TOY!)
 						},
 					}),
 					n(50840, {	-- Major Nanners
-						["coord"] = { 30.7, 91.5, VALE_OF_ETERNAL_BLOSSOMS },
-						["groups"] = {
+						coord = { 30.7, 91.5, VALE_OF_ETERNAL_BLOSSOMS },
+						groups = {
 							i(86594),	-- Helpful Wikky's Whistle (TOY!)
 						},
 					}),
 					n(50806, {	-- Moldo One-Eye
-						["coords"] = {
+						coords = {
 							{ 39.1, 54.0, VALE_OF_ETERNAL_BLOSSOMS },
 							{ 34.8, 60.7, VALE_OF_ETERNAL_BLOSSOMS },
 						},
-						["groups"] = {
+						groups = {
 							i(86586),	-- Panflute of Pandaria (TOY!)
 						},
 					}),
 					n(50843, {	-- Portent
-						["description"] = "This is a rare Tameable Hunter Pet of 4 varying colors.",
+						description = "This is a rare Tameable Hunter Pet of 4 varying colors.",
 					}),
 					n(50780, {	-- Sahn Tidehunter
-						["coords"] = {
+						coords = {
 							-- #if MOP_BEFORE_SOO
 							{ 61.7, 55.4, VALE_OF_ETERNAL_BLOSSOMS },
 							-- #else
 							{ 69.4, 30.5, VALE_OF_ETERNAL_BLOSSOMS },
 							-- #endif
 						},
-						["groups"] = {
+						groups = {
 							i(86582),	-- Aqua Jewel (TOY!)
 						},
 					}),
 					n(50359, {	-- Urgolax
-						["coord"] = { 39.5, 25.1, VALE_OF_ETERNAL_BLOSSOMS },
-						["groups"] = {
+						coord = { 39.5, 25.1, VALE_OF_ETERNAL_BLOSSOMS },
+						groups = {
 							i(86575),	-- Chalice of Secrets (TOY!)
 						},
 					}),
 					n(50336, {	-- Yorik Sharpeye
-						["coord"] = { 88.0, 44.3, VALE_OF_ETERNAL_BLOSSOMS },
-						["groups"] = {
+						coord = { 88.0, 44.3, VALE_OF_ETERNAL_BLOSSOMS },
+						groups = {
 							i(86568),	-- Mr. Smite's Brass Compass (TOY!)
 						},
 					}),
 				}),
 				n(REWARDS, {
-					petbattle(container(94207, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Fabled Pandaren Pet Supplies
+					petbattle(container(94207, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {	-- Fabled Pandaren Pet Supplies
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94210)),	-- Mountain Panda (PET!)
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94209)),	-- Snowy Panda (PET!)
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94208)),	-- Sunfur Panda (PET!)
@@ -744,23 +744,23 @@ root(ROOTS.Zones, {
 				}),
 				n(SPECIAL, {
 					n(64403, {	-- Alani
-						["description"] = "Only the person who uses the Sky Crystal on Alani will get the mount, and they can sell or trade it.",
-						["coords"] = {
+						description = "Only the person who uses the Sky Crystal on Alani will get the mount, and they can sell or trade it.",
+						coords = {
 							{ 56.2, 42.6, VALE_OF_ETERNAL_BLOSSOMS },
 							{ 35.6, 26.0, VALE_OF_ETERNAL_BLOSSOMS },
 							{ 38.6, 64.6, VALE_OF_ETERNAL_BLOSSOMS },
 						},
-						["cost"] = {
+						cost = {
 							{ "i", 86546, 1 },	-- Sky Crystal
 						},
-						["groups"] = {
+						groups = {
 							i(90655),	-- Thundering Ruby Cloud Serpent (MOUNT!)
 						},
 					}),
 				}),
 				n(TREASURES, {
 					o(213414, {	-- Always Remember
-						["coords"] = {
+						coords = {
 							{ 53.0, 68.3, VALE_OF_ETERNAL_BLOSSOMS },
 							-- #if AFTER BFA
 							{ 53.0, 68.3, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- BFA alternate zone
@@ -768,10 +768,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(214388, {	-- Ancient Guo-Lai Cache
-						["cost"] = {{ "i", 87779, 1 }},	-- Ancient Guo-Lai Cache Key
-						["groups"] = appendGroups({
+						cost = {{ "i", 87779, 1 }},	-- Ancient Guo-Lai Cache Key
+						groups = appendGroups({
 							ach(7318, {	-- A Taste of History
-								["_drop"] = { "providers" },	-- Drop the "reputation spell"?
+								_drop = { "providers" },	-- Drop the "reputation spell"?
 							}),
 							i(90470),	-- Design: Jade Owl (RECIPE!)
 							i(90471),	-- Design: Sapphire Cub (RECIPE!)
@@ -779,7 +779,7 @@ root(ROOTS.Zones, {
 							i(90816),	-- Relic of the Thunder King
 							i(79731),	-- Scroll of Wisdom
 						},
-						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, sharedData({ ["timeline"] = { ADDED_5_4_0 } }, {
+						applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, sharedData({ timeline = { ADDED_5_4_0 } }, {
 							i(102541),	-- Aged Balsamic Vinegar
 							i(102543),	-- Aged Mogu'shan Cheese
 							i(102542),	-- Ancient Pandaren Spices
@@ -790,18 +790,18 @@ root(ROOTS.Zones, {
 							i(101766),	-- Recipe: Spiced Blossom Soup (RECIPE!)
 							i(101769),	-- Recipe: Stuffed Lushrooms (RECIPE!)
 							i(103624),	-- Treasures of the Vale
-							--applyclassicphase(MOP_PHASE_ONE, i(76061, { ["timeline"] = { ADDED_5_0_4 } })),	-- Spirit of Harmony // These are world drops
+							--applyclassicphase(MOP_PHASE_ONE, i(76061, { timeline = { ADDED_5_0_4 } })),	-- Spirit of Harmony // These are world drops
 						})),
 						{}),
 					}),
 					o(213456, {	-- The Emperor's Burden - Part 8
 						-- #if AFTER BFA
-						["description"] = "This can only be found in the non-N'zoth phase. Speak to Zidormi atop the Seat of Knowledge to travel to the past.",
+						description = "This can only be found in the non-N'zoth phase. Speak to Zidormi atop the Seat of Knowledge to travel to the past.",
 						-- #endif
-						["coord"] = { 67.7, 44.2, VALE_OF_ETERNAL_BLOSSOMS },
+						coord = { 67.7, 44.2, VALE_OF_ETERNAL_BLOSSOMS },
 					}),
 					o(213334, {	-- The Thunder King
-						["coords"] = {
+						coords = {
 							{ 40.1, 75.6, VALE_OF_ETERNAL_BLOSSOMS },
 							-- #if AFTER BFA
 							{ 40.1, 75.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- BFA alternate zone
@@ -809,7 +809,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(213416, {	-- Together, We Are Strong
-						["coords"] = {
+						coords = {
 							{ 26.6, 20.8, VALE_OF_ETERNAL_BLOSSOMS },
 							-- #if AFTER BFA
 							{ 26.6, 20.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- BFA alternate zone
@@ -819,7 +819,7 @@ root(ROOTS.Zones, {
 				}),
 				n(VENDORS, {
 					n(61650, {	-- Big Keech <Rare Antiquities>
-						["coords"] = {
+						coords = {
 							-- #if AFTER 5.4.0
 							-- are there different locations due to phasing in 5.4 questline?
 							{ 70.9, 40.5, VALE_OF_ETERNAL_BLOSSOMS },
@@ -827,29 +827,29 @@ root(ROOTS.Zones, {
 							{ 62.6, 41.8, VALE_OF_ETERNAL_BLOSSOMS },
 							-- #endif
 						},
-						["groups"] = {
+						groups = {
 							i(44500, {	-- Elementium-Plated Exhaust Pipe
-								["cost"] = 15000000,	-- 1500g
+								cost = 15000000,	-- 1500g
 							}),
 							i(44501, {	-- Goblin-Machined Piston
-								["cost"] = 10000000,	-- 1000g
+								cost = 10000000,	-- 1000g
 							}),
 							i(83092, {	-- Orb of Mystery
-								["cost"] = 200000000,	-- 20000g
+								cost = 200000000,	-- 20000g
 							}),
 							i(44499, {	-- Salvaged Iron Golem Parts
-								["cost"] = 30000000,	-- 3000g
+								cost = 30000000,	-- 3000g
 							}),
 							i(65893, {	-- Sands of Time
-								["cost"] = 30000000,	-- 3000g
+								cost = 30000000,	-- 3000g
 							}),
 						},
 					}),
 					-- #if MOP
 					n(257969, {	-- Jaelof Ironhart <Challenge Mode Exchange>
-						["coord"] = { 39.4, 45.2, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = sharedData({ ["timeline"] = { ADDED_5_5_0, REMOVED_6_0_2 } }, {
+						coord = { 39.4, 45.2, VALE_OF_ETERNAL_BLOSSOMS },
+						races = ALLIANCE_ONLY,
+						groups = sharedData({ timeline = { ADDED_5_5_0, REMOVED_6_0_2 } }, {
 							-- Cloth Armors
 							platinum(5, i(265220)),	-- Crimson Amice of the Betrayer
 							platinum(5, i(265215)),	-- Crimson Belt of the Betrayer
@@ -1066,9 +1066,9 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					n(258126, {	-- Viktor Felhallow <Challenge Mode Exchange>
-						["coord"] = { 40.5, 73.3, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = HORDE_ONLY,
-						["groups"] = sharedData({ ["timeline"] = { ADDED_5_5_0, REMOVED_6_0_2 } }, {
+						coord = { 40.5, 73.3, VALE_OF_ETERNAL_BLOSSOMS },
+						races = HORDE_ONLY,
+						groups = sharedData({ timeline = { ADDED_5_5_0, REMOVED_6_0_2 } }, {
 							-- Cloth Armors
 							platinum(5, i(265220)),	-- Crimson Amice of the Betrayer
 							platinum(5, i(265215)),	-- Crimson Belt of the Betrayer
@@ -1286,10 +1286,10 @@ root(ROOTS.Zones, {
 					}),
 					-- #endif
 					n(64028, {	-- Challenger Soong <Challenge Dungeons>
-						["description"] = "You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon. You can only buy the set for your class.",
-						["coord"] = { 86.3, 61.5, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = sharedData({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
+						description = "You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon. You can only buy the set for your class.",
+						coord = { 86.3, 61.5, VALE_OF_ETERNAL_BLOSSOMS },
+						races = ALLIANCE_ONLY,
+						groups = sharedData({ timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
 							i(90049),	-- Girdle of the Lich Lord
 							i(90050),	-- Treads of the Lich Lord
 							i(90051),	-- Chestguard of the Lich Lord
@@ -1381,10 +1381,10 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					n(63994, {	-- Challenger Wuli <Challenge Dungeons>
-						["description"] = "You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon. You can only buy the set for your class.",
-						["coord"] = { 61.2, 20.8, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = HORDE_ONLY,
-						["groups"] = sharedData({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
+						description = "You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon. You can only buy the set for your class.",
+						coord = { 61.2, 20.8, VALE_OF_ETERNAL_BLOSSOMS },
+						races = HORDE_ONLY,
+						groups = sharedData({ timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
 							i(90049),	-- Girdle of the Lich Lord
 							i(90050),	-- Treads of the Lich Lord
 							i(90051),	-- Chestguard of the Lich Lord
@@ -1476,51 +1476,51 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					n(66973, {	-- Kai Featherfall <Phoenix Egg Trader>
-						["coord"] = { 82.2, 34.0, VALE_OF_ETERNAL_BLOSSOMS },
-						["groups"] = sharedData({
-							["cost"] = {{"i", 90045, 1 }},	-- 1x Ancestral Phoenix Egg
-							["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
+						coord = { 82.2, 34.0, VALE_OF_ETERNAL_BLOSSOMS },
+						groups = sharedData({
+							cost = {{"i", 90045, 1 }},	-- 1x Ancestral Phoenix Egg
+							timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
 						}, {
 							i(90710, {	-- Ashen Pandaren Phoenix (MOUNT!)
 								-- #if MOP
-								["OnUpdate"] = PHOENIX_MOUNT_ONUPDATE,
+								OnUpdate = PHOENIX_MOUNT_ONUPDATE,
 								-- #endif
 							}),
 							i(89154, {	-- Crimson Pandaren Phoenix (MOUNT!)
 								-- #if MOP
-								["OnUpdate"] = PHOENIX_MOUNT_ONUPDATE,
+								OnUpdate = PHOENIX_MOUNT_ONUPDATE,
 								-- #endif
 							}),
 							i(90711, {	-- Emerald Pandaren Phoenix (MOUNT!)
 								-- #if MOP
-								["OnUpdate"] = PHOENIX_MOUNT_ONUPDATE,
+								OnUpdate = PHOENIX_MOUNT_ONUPDATE,
 								-- #endif
 							}),
 							i(90712, {	-- Violet Pandaren Phoenix (MOUNT!)
 								-- #if MOP
-								["OnUpdate"] = PHOENIX_MOUNT_ONUPDATE,
+								OnUpdate = PHOENIX_MOUNT_ONUPDATE,
 								-- #endif
 							}),
 						}),
 					}),
 					n(62088, {	-- Lali the Assistant <Lorewalker Assistant>
-						["coord"] = { 82.8, 30.4, VALE_OF_ETERNAL_BLOSSOMS },
-						["groups"] = sharedData({
-							["timeline"] = { ADDED_11_2_7 },
-							["cost"] = { { "g", 20000000 } },	-- 2,000g
+						coord = { 82.8, 30.4, VALE_OF_ETERNAL_BLOSSOMS },
+						groups = sharedData({
+							timeline = { ADDED_11_2_7 },
+							cost = { { "g", 20000000 } },	-- 2,000g
 						}, {
 							i(257354),	-- Scroll of K'aresh's Fall (DECOR!)
 							i(257351),	-- Tale of the Penultimate Lich King (DECOR!)
 							i(271971, {	-- Tome of Kings (DECOR!)
-								["timeline"] = { ADDED_12_0_7 },
+								timeline = { ADDED_12_0_7 },
 							}),
 							i(245332),	-- Tome of Silvermoon Intrigue (DECOR!)
 							i(257355),	-- Tome of the Survivor (DECOR!)
 						}),
 					}),
 					n(65172, {	-- Len at Arms <Adventuring Supplies>
-						["coord"] = { 14.1, 78.8, VALE_OF_ETERNAL_BLOSSOMS },
-						["groups"] = {
+						coord = { 14.1, 78.8, VALE_OF_ETERNAL_BLOSSOMS },
+						groups = {
 							i(83234),	-- Wasteland Amulet
 							i(83229),	-- Wasteland Armored Bracers
 							i(83184),	-- Wasteland Armored Chestpiece
@@ -1634,10 +1634,10 @@ root(ROOTS.Zones, {
 				}),
 				n(ZONE_DROPS, {
 					i(87779, {	-- Ancient Guo-Lai Cache Key
-						["description"] = "Can randomly drop from any Mogu related mob in the zone.",
+						description = "Can randomly drop from any Mogu related mob in the zone.",
 					}),
 					i(85582, {	-- Shao-Tien Cage Key
-						["crs"] = {
+						crs = {
 							63641,	-- Shao-Tien Torturer
 							63610,	-- Shao-Tien Dominator
 							63611,	-- Shao-Tien Soul-Caller
@@ -1645,7 +1645,7 @@ root(ROOTS.Zones, {
 					}),
 					i(86547),	-- Skyshard
 					i(86546, {	-- Sky Crystal
-						["cost"] = { { "i", 86547, 10 } },	-- 10x Skyshard
+						cost = { { "i", 86547, 10 } },	-- 10x Skyshard
 					}),
 				}),
 			},
@@ -1654,9 +1654,9 @@ root(ROOTS.Zones, {
 });
 
 -- #if ANYCLASSIC
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_5_0 } }, {
 	m(VALE_OF_ETERNAL_BLOSSOMS, {
-		q(92522, { ["timeline"] = { ADDED_5_5_0, REMOVED_5_5_2 } }),	-- Weekly turn-in for Elder Charms of Good Fortune (Alliance, idk if it's different for Horde)
+		q(92522, { timeline = { ADDED_5_5_0, REMOVED_5_5_2 } }),	-- Weekly turn-in for Elder Charms of Good Fortune (Alliance, idk if it's different for Horde)
 	}),
 })));
 -- #endif

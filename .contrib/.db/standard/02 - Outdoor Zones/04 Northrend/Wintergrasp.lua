@@ -22,10 +22,10 @@ local BLACK_WAR_MAMMOTH_HORDE = pvp({
 });
 local ARCANUM_ITEMS = pvp({
 	sks(40, i(44075, {	-- Arcanum of Dominance
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	sks(40, i(44069, {	-- Arcanum of Triumph
-		["timeline"] = { REMOVED_5_0_4 },
+		timeline = { REMOVED_5_0_4 },
 	})),
 	moh(1, sks(30, i(44067))),	-- Inscription of Triumph
 	moh(1, sks(30, i(44068))),	-- Inscription of Dominance
@@ -33,19 +33,19 @@ local ARCANUM_ITEMS = pvp({
 local JEWELCRAFTING_RECIPES = pvp({
 	-- #if BEFORE CATA
 	moh(1, sks(12, i(41730))),	-- Design: Durable Monarch Topaz (RECIPE!)
-	sks(12, i(41732, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}})),	-- Design: Empowered Monarch Topaz (RECIPE!)
+	sks(12, i(41732, {timeline = {ADDED_3_0_3, REMOVED_4_0_3}})),	-- Design: Empowered Monarch Topaz (RECIPE!)
 	moh(1, sks(24, i(41742))),	-- Design: Enigmatic Skyflare Diamond (RECIPE!)
 	moh(1, sks(24, i(41743))),	-- Design: Forlorn Skyflare Diamond (RECIPE!)
 	moh(1, sks(24, i(41744))),	-- Design: Impassive Skyflare Diamond (RECIPE!)
 	moh(1, sks(12, i(41733))),	-- Design: Lucent Monarch Topaz (RECIPE!)
 	moh(1, sks(12, i(41740))),	-- Design: Mysterious Twilight Opal (RECIPE!)
 	moh(1, sks(12, i(41727))),	-- Design: Mystic Autumn's Glow (RECIPE!)
-	sks(12, i(41739, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}})),	-- Design: Opaque Forest Emerald (RECIPE!)
+	sks(12, i(41739, {timeline = {ADDED_3_0_3, REMOVED_4_0_3}})),	-- Design: Opaque Forest Emerald (RECIPE!)
 	moh(1, sks(12, i(41734))),	-- Design: Resplendent Monarch Topaz (RECIPE!)
 	moh(1, sks(12, i(41735))),	-- Design: Shattered Forest Emerald (RECIPE!)
 	moh(1, sks(12, i(41738))),	-- Design: Steady Forest Emerald (RECIPE!)
 	moh(1, sks(12, i(41728))),	-- Design: Stormy Sky Sapphire (RECIPE!)
-	sks(12, i(41736, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}})),	-- Design: Tense Forest Emerald (RECIPE!)
+	sks(12, i(41736, {timeline = {ADDED_3_0_3, REMOVED_4_0_3}})),	-- Design: Tense Forest Emerald (RECIPE!)
 	moh(1, sks(12, i(41737))),	-- Design: Turbid Forest Emerald (RECIPE!)
 	moh(1, sks(15, i(44081))),	-- Enigmatic Starflare Diamond
 	moh(1, sks(15, i(44084))),	-- Forlorn Starflare Diamond
@@ -60,16 +60,16 @@ local JEWELCRAFTING_RECIPES = pvp({
 	moh(1, sks(24, i(41742))),	-- Design: Enigmatic Skyflare Diamond (RECIPE!)
 	moh(1, sks(24, i(41743))),	-- Design: Forlorn Skyflare Diamond (RECIPE!)
 	moh(1, sks(24, i(41744))),	-- Design: Impassive Skyflare Diamond (RECIPE!)
-	sks(12, i(41732, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}})),	-- Design: Lucent Monarch Topaz (RECIPE!)
+	sks(12, i(41732, {timeline = {ADDED_3_0_3, REMOVED_4_0_3}})),	-- Design: Lucent Monarch Topaz (RECIPE!)
 	moh(1, sks(12, i(41733))),	-- Design: Lucent Monarch Topaz (RECIPE!)
 	moh(1, sks(12, i(41740))),	-- Design: Mysterious Twilight Opal (RECIPE!)
 	moh(1, sks(12, i(41727))),	-- Design: Mystic Autumn's Glow (RECIPE!)
-	sks(12, i(41736, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}})),	-- Design: Radiant Forest Emerald (RECIPE!)
+	sks(12, i(41736, {timeline = {ADDED_3_0_3, REMOVED_4_0_3}})),	-- Design: Radiant Forest Emerald (RECIPE!)
 	moh(1, sks(12, i(41734))),	-- Design: Resplendent Monarch Topaz (RECIPE!)
 	moh(1, sks(12, i(41735))),	-- Design: Shattered Forest Emerald (RECIPE!)
 	moh(1, sks(12, i(41738))),	-- Design: Steady Forest Emerald (RECIPE!)
 	moh(1, sks(12, i(41728))),	-- Design: Stormy Sky Sapphire (RECIPE!)
-	sks(12, i(41739, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_3}})),	-- Design: Turbid Forest Emerald (RECIPE!)
+	sks(12, i(41739, {timeline = {ADDED_3_0_3, REMOVED_4_0_3}})),	-- Design: Turbid Forest Emerald (RECIPE!)
 	moh(1, sks(12, i(41737))),	-- Design: Turbid Forest Emerald (RECIPE!)
 	moh(1, sks(12, i(41730))),	-- Design: Willful Monarch Topaz (RECIPE!)
 	moh(1, sks(15, i(44081))),	-- Enigmatic Starflare Diamond
@@ -152,7 +152,7 @@ local WINTERGRASP_CLOAKS = applyclassicphase(WRATH_PHASE_THREE, pvp({
 }));
 local WINTERGRASP_COMMENDATION = pvp({
 	wmoh(9, sks(30, i(44115, {	-- Wintergrasp Commendation
-		["timeline"] = { REMOVED_4_0_1 },
+		timeline = { REMOVED_4_0_1 },
 	}))),
 });
 local WINTERGRASP_HELMS = applyclassicphase(WRATH_PHASE_ONE, pvp({
@@ -203,153 +203,153 @@ local WINTERGRASP_SHOULDERS = applyclassicphase(WRATH_PHASE_FOUR, pvp({
 }));
 local WINTERGRASP_HEIRLOOMS = pvp({
 	moh(8, i(122375, {	-- Aged Pauldrons of The Five Thunders
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(12, i(122338, {	-- Ancient Heirloom Armor Casing
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(14, i(122339, {	-- Ancient Heirloom Scabbard
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(10, i(122369, {	-- Battleworn Thrash Blade
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(8, i(122376, {	-- Exceptional Stormshroud Shoulders
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(8, i(122378, {	-- Exquisite Sunderseer Mantle
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(4, i(122371, {	-- Inherited Insignia of the Alliance
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(4, i(122370, {	-- Inherited Insignia of the Horde
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(4, i(122530, {	-- Inherited Mark of Tyranny
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(10, i(122368, {	-- Grand Staff of Jordan
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(8, i(122377, {	-- Lasting Feralheart Spaulders
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(8, i(122373, {	-- Pristine Lightforge Spaulders
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(8, i(122374, {	-- Prized Beastmaster's Mantle
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(10, i(122365, {	-- Reforged Truesilver Champion
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(10, i(122364, {	-- Sharpened Scarlet Kris
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(8, i(122372, {	-- Strengthened Stockade Pauldrons
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(10, i(122367, {	-- The Blessed Hammer of Grace
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 	moh(10, i(122366, {	-- Upgraded Dwarven Hand Cannon
-		["timeline"] = { ADDED_6_1_0 },
+		timeline = { ADDED_6_1_0 },
 	})),
 
 	-- Old Heirlooms before they became learnable
 	i(93886, {			-- Adorned Beastmaster's Mantle
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 	sks(200, i(44102, {	-- Aged Pauldrons of The Five Thunders
-		["timeline"] = { REMOVED_6_1_0 },
+		timeline = { REMOVED_6_1_0 },
 	})),
 	i(93851, {			-- Battle-Forged Truesilver Champion
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 	i(93848, {			-- Battle-Hardened Thrash Blade
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 	sks(200, i(44096, {	-- Battleworn Thrash Blade
-		["timeline"] = { REMOVED_6_1_0 },
+		timeline = { REMOVED_6_1_0 },
 	})),
 	i(93899, {			-- Bequeathed Insignia of the Alliance
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 	i(93898, {			-- Bequeathed Insignia of the Horde
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 	i(93852, {			-- Deadly Scarlet Kris
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 	i(93849, {			-- Elder Staff of Jordan
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 	sks(200, i(44103, {	-- Exceptional Stormshroud Shoulders
-		["timeline"] = { REMOVED_6_1_0 },
+		timeline = { REMOVED_6_1_0 },
 	})),
 	sks(200, i(44107, {	-- Exquisite Sunderseer Mantle
-		["timeline"] = { REMOVED_6_1_0 },
+		timeline = { REMOVED_6_1_0 },
 	})),
 	i(93894, {			-- Immaculate Lightforge Spaulders
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 	sks(250, i(44098, {	-- Inherited Insignia of the Alliance
-		["timeline"] = { REMOVED_6_1_0 },
+		timeline = { REMOVED_6_1_0 },
 	})),
 	sks(250, i(44097, {	-- Inherited Insignia of the Horde
-		["timeline"] = { REMOVED_6_1_0 },
+		timeline = { REMOVED_6_1_0 },
 	})),
 	i(93900, {			-- Inherited Mark of Tyranny
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 	sks(325, i(44095, {	-- Grand Staff of Jordan
-		["timeline"] = { REMOVED_6_1_0 },
+		timeline = { REMOVED_6_1_0 },
 	})),
 	sks(200, i(44105, {	-- Lasting Feralheart Spaulders
-		["timeline"] = { REMOVED_6_1_0 },
+		timeline = { REMOVED_6_1_0 },
 	})),
 	i(93861, {			-- Prestigious Sunderseer Mantle
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 	sks(200, i(44100, {	-- Pristine Lightforge Spaulders
-		["timeline"] = { REMOVED_6_1_0 },
+		timeline = { REMOVED_6_1_0 },
 	})),
 	sks(200, i(44101, {	-- Prized Beastmaster's Mantle
-		["timeline"] = { REMOVED_6_1_0 },
+		timeline = { REMOVED_6_1_0 },
 	})),
 	sks(325, i(44092, {	-- Reforged Truesilver Champion
-		["timeline"] = { REMOVED_6_1_0 },
+		timeline = { REMOVED_6_1_0 },
 	})),
 	i(93895, {			-- Reinforced Stockade Pauldrons
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 	sks(200, i(44091, {	-- Sharpened Scarlet Kris
-		["timeline"] = { REMOVED_6_1_0 },
+		timeline = { REMOVED_6_1_0 },
 	})),
 	i(93841, {			-- Smoothbore Dwarven Hand Cannon
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 	sks(200, i(44099, {	-- Strengthened Stockade Pauldrons
-		["timeline"] = { REMOVED_6_1_0 },
+		timeline = { REMOVED_6_1_0 },
 	})),
 	i(93867, {			-- Superior Stormshroud Shoulders
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 	sks(250, i(44094, {	-- The Blessed Hammer of Grace
-		["timeline"] = { REMOVED_6_1_0 },
+		timeline = { REMOVED_6_1_0 },
 	})),
 	i(93850, {			-- The Sanctified Hammer of Grace
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 	sks(325, i(44093, {	-- Upgraded Dwarven Hand Cannon
-		["timeline"] = { REMOVED_6_1_0 },
+		timeline = { REMOVED_6_1_0 },
 	})),
 	i(93889, {			-- Venerated Pauldrons of The Five Thunders
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 	i(93866, {			-- Wild Feralheart Spaulders
-		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+		timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 	}),
 });
 
@@ -437,283 +437,283 @@ appendGroups(WINTERGRASP_HEIRLOOMS, TRAVIS_DAY_GROUPS);
 root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(WINTERGRASP, {
-			["lore"] = "Wintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns.",
-			["icon"] = 135836,
-			["groups"] = {
+			lore = "Wintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns.",
+			icon = 135836,
+			groups = {
 				n(FLIGHT_PATHS, {
 					fp(303, {	-- Valiance Landing Camp
-						["cr"] = 30869,	-- Arzo Safeflight <Flight Master>
-						["coord"] = { 72.0, 31.0, WINTERGRASP },
-						["races"] = ALLIANCE_ONLY,
+						cr = 30869,	-- Arzo Safeflight <Flight Master>
+						coord = { 72.0, 31.0, WINTERGRASP },
+						races = ALLIANCE_ONLY,
 					}),
 					fp(332, {	-- Warsong Camp
-						["cr"] = 30870,	-- Herzo Safeflight <Flight Master>
-						["coord"] = { 21.6, 34.8, WINTERGRASP },
-						["races"] = HORDE_ONLY,
+						cr = 30870,	-- Herzo Safeflight <Flight Master>
+						coord = { 21.6, 34.8, WINTERGRASP },
+						races = HORDE_ONLY,
 					}),
 				}),
 				n(QUESTS, {
 					q(13156, {	-- A Rare Herb
-						["qg"] = 31054,	-- Anchorite Tessa
-						["coord"] = { 72.4, 31.6, WINTERGRASP },
-						["races"] = ALLIANCE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31054,	-- Anchorite Tessa
+						coord = { 72.4, 31.6, WINTERGRASP },
+						races = ALLIANCE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13195, {	-- A Rare Herb
-						["qg"] = 31054,	-- Anchorite Tessa
-						["coord"] = { 72.4, 31.6, WINTERGRASP },
-						["races"] = ALLIANCE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31054,	-- Anchorite Tessa
+						coord = { 72.4, 31.6, WINTERGRASP },
+						races = ALLIANCE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13196, {	-- Bones and Arrows (A)
-						["qg"] = 31052,	-- Bowyer Randolph
-						["coord"] = { 53.0, 20.8, WINTERGRASP },
-						["races"] = ALLIANCE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31052,	-- Bowyer Randolph
+						coord = { 53.0, 20.8, WINTERGRASP },
+						races = ALLIANCE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13154, {	-- Bones and Arrows (A)
-						["qg"] = 31052,	-- Bowyer Randolph
-						["coord"] = { 53.0, 20.8, WINTERGRASP },
-						["races"] = ALLIANCE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31052,	-- Bowyer Randolph
+						coord = { 53.0, 20.8, WINTERGRASP },
+						races = ALLIANCE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13193, {	-- Bones and Arrows (H)
-						["qg"] = 31102,	-- Vieron Blazefeather
-						["coord"] = { 22.4, 34.6, WINTERGRASP },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31102,	-- Vieron Blazefeather
+						coord = { 22.4, 34.6, WINTERGRASP },
+						races = HORDE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13199, {	-- Bones and Arrows (H)
-						["qg"] = 31102,	-- Vieron Blazefeather
-						["coord"] = { 22.4, 34.6, WINTERGRASP },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31102,	-- Vieron Blazefeather
+						coord = { 22.4, 34.6, WINTERGRASP },
+						races = HORDE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13222, {	-- Defend the Siege (A)
-						["qg"] = 31109,	-- Senior Demolitionist Legoso
-						["coord"] = { 71.6, 32.0, WINTERGRASP },
-						["races"] = ALLIANCE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31109,	-- Senior Demolitionist Legoso
+						coord = { 71.6, 32.0, WINTERGRASP },
+						races = ALLIANCE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13223, {	-- Defend the Siege (H)
-						["qg"] = 31107,	-- Lieutenant Murp
-						["coord"] = { 22.4, 35.6, WINTERGRASP },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31107,	-- Lieutenant Murp
+						coord = { 22.4, 35.6, WINTERGRASP },
+						races = HORDE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13197, {	-- Fueling the Demolishers (A)
-						["qg"] = 31108,	-- Siege Master Stouthandle
-						["coord"] = { 71.8, 31.2, WINTERGRASP },
-						["races"] = ALLIANCE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31108,	-- Siege Master Stouthandle
+						coord = { 71.8, 31.2, WINTERGRASP },
+						races = ALLIANCE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13191, {	-- Fueling the Demolishers (H)
-						["qg"] = 31106,	-- Siegesmith Stronghoof
-						["coord"] = { 47.0, 21.0, WINTERGRASP },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31106,	-- Siegesmith Stronghoof
+						coord = { 47.0, 21.0, WINTERGRASP },
+						races = HORDE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13200, {	-- Fueling the Demolishers (H)
-						["qg"] = 31106,	-- Siegesmith Stronghoof
-						["coord"] = { 47.0, 21.0, WINTERGRASP },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31106,	-- Siegesmith Stronghoof
+						coord = { 47.0, 21.0, WINTERGRASP },
+						races = HORDE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13194, {	-- Healing with Roses
-						["qg"] = 31053,	-- Primalist Mulfort
-						["coord"] = { 22.2, 34.6, WINTERGRASP },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31053,	-- Primalist Mulfort
+						coord = { 22.2, 34.6, WINTERGRASP },
+						races = HORDE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13201, {	-- Healing with Roses
-						["qg"] = 31053,	-- Primalist Mulfort
-						["coord"] = { 22.2, 34.6, WINTERGRASP },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31053,	-- Primalist Mulfort
+						coord = { 22.2, 34.6, WINTERGRASP },
+						races = HORDE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13202, {	-- Jinxing the Walls
-						["qg"] = 31101,	-- Hoodoo Master Fu'jin
-						["coord"] = { 51.6, 21.0, WINTERGRASP },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31101,	-- Hoodoo Master Fu'jin
+						coord = { 51.6, 21.0, WINTERGRASP },
+						races = HORDE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13179, {	-- No Mercy for the Merciless
-						["qg"] = 31036,	-- Commander Zanneth
-						["coord"] = { 72.0, 32.0, WINTERGRASP },
-						["races"] = ALLIANCE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31036,	-- Commander Zanneth
+						coord = { 72.0, 32.0, WINTERGRASP },
+						races = ALLIANCE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13177, {	-- No Mercy for the Merciless
-						["qg"] = 31036,	-- Commander Zanneth
-						["coord"] = { 72.0, 32.0, WINTERGRASP },
-						["races"] = ALLIANCE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31036,	-- Commander Zanneth
+						coord = { 72.0, 32.0, WINTERGRASP },
+						races = ALLIANCE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13178, {	-- Slay them all!
-						["qg"] = 31091,	-- Commander Dardosh
-						["coord"] = { 22.0, 35.0, WINTERGRASP },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31091,	-- Commander Dardosh
+						coord = { 22.0, 35.0, WINTERGRASP },
+						races = HORDE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13180, {	-- Slay them all!
-						["qg"] = 31091,	-- Commander Dardosh
-						["coord"] = { 22.0, 35.0, WINTERGRASP },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31091,	-- Commander Dardosh
+						coord = { 22.0, 35.0, WINTERGRASP },
+						races = HORDE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13538, {	-- Southern Sabotage
-						["qg"] = 31153,	-- Tactical Officer Ahbramis
-						["coord"] = { 50.2, 17.8, WINTERGRASP },
-						["races"] = ALLIANCE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31153,	-- Tactical Officer Ahbramis
+						coord = { 50.2, 17.8, WINTERGRASP },
+						races = ALLIANCE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13186, {	-- Stop the Siege (A)
-						["qg"] = 31109,	-- Senior Demolitionist Legoso
-						["coord"] = { 71.6, 32.0, WINTERGRASP },
-						["races"] = ALLIANCE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31109,	-- Senior Demolitionist Legoso
+						coord = { 71.6, 32.0, WINTERGRASP },
+						races = ALLIANCE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13185, {	-- Stop the Siege (H)
-						["qg"] = 31107,	-- Lieutenant Murp
-						["coord"] = { 22.4, 35.6, WINTERGRASP },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31107,	-- Lieutenant Murp
+						coord = { 22.4, 35.6, WINTERGRASP },
+						races = HORDE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13539, {	-- Toppling the Towers
-						["qg"] = 31151,	-- Tactical Officer Kilrath
-						["coord"] = { 50.2, 17.8, WINTERGRASP },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31151,	-- Tactical Officer Kilrath
+						coord = { 50.2, 17.8, WINTERGRASP },
+						races = HORDE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13181, {	-- Victory in Wintergrasp (A)
-						["qg"] = 31153,	-- Tactical Officer Ahbramis
-						["coord"] = { 50.2, 17.8, WINTERGRASP },
-						["races"] = ALLIANCE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31153,	-- Tactical Officer Ahbramis
+						coord = { 50.2, 17.8, WINTERGRASP },
+						races = ALLIANCE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13183, {	-- Victory in Wintergrasp (H)
-						["qg"] = 31151,	-- Tactical Officer Kilrath
-						["coord"] = { 50.2, 17.8, WINTERGRASP },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31151,	-- Tactical Officer Kilrath
+						coord = { 50.2, 17.8, WINTERGRASP },
+						races = HORDE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13153, {	-- Warding the Warriors (A)
-						["qg"] = 31051,	-- Sorceress Kaylana
-						["coord"] = { 48.4, 21.08, WINTERGRASP },
-						["races"] = ALLIANCE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31051,	-- Sorceress Kaylana
+						coord = { 48.4, 21.08, WINTERGRASP },
+						races = ALLIANCE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13198, {	-- Warding the Warriors (A)
-						["qg"] = 31051,	-- Sorceress Kaylana
-						["coord"] = { 48.4, 21.08, WINTERGRASP },
-						["races"] = ALLIANCE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31051,	-- Sorceress Kaylana
+						coord = { 48.4, 21.08, WINTERGRASP },
+						races = ALLIANCE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 					q(13192, {	-- Warding the Walls (H)
-						["qg"] = 31101,	-- Hoodoo Master Fu'jin
-						["coord"] = { 51.6, 21.0, WINTERGRASP },
-						["races"] = HORDE_ONLY,
-						["isWeekly"] = true,
-						["lvl"] = 75,
+						qg = 31101,	-- Hoodoo Master Fu'jin
+						coord = { 51.6, 21.0, WINTERGRASP },
+						races = HORDE_ONLY,
+						isWeekly = true,
+						lvl = 75,
 					}),
 				}),
 				n(REWARDS, {
 					currency(161, {	-- Stone Keeper's Shard
-						["description"] = "While your faction controls Wintergrasp on your layer, this will drop from killing bosses in Wrath dungeons and RDF.",
-						["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3 },
+						description = "While your faction controls Wintergrasp on your layer, this will drop from killing bosses in Wrath dungeons and RDF.",
+						timeline = { ADDED_3_0_3, REMOVED_4_0_3 },
 					});
 				}),
 				n(VENDORS, {
-					["description"] = "These vendors will only show if your faction controls Wintergrasp.",
-					["groups"] = {
+					description = "These vendors will only show if your faction controls Wintergrasp.",
+					groups = {
 						n(39173, {	-- Champion Ros'slai <Wintergrasp Quartermaster>
-							["coords"] = {
+							coords = {
 								{ 51.8, 17.3, WINTERGRASP },
 								{ 51.8, 17.4, WINTERGRASP_BG },
 							},
-							["races"] = HORDE_ONLY,
-							["groups"] = CHAMPION_ROSSLAI_GROUPS,
+							races = HORDE_ONLY,
+							groups = CHAMPION_ROSSLAI_GROUPS,
 						}),
 						n(31101, {	-- Hoodoo Master Fu'jin
-							["coords"] = {
+							coords = {
 								{ 51.7, 21.2, WINTERGRASP },
 								{ 21.9, 35.4, WINTERGRASP },
 								{ 51.6, 21.0, WINTERGRASP_BG },
 							},
-							["races"] = HORDE_ONLY,
-							["groups"] = ARCANUM_ITEMS,
+							races = HORDE_ONLY,
+							groups = ARCANUM_ITEMS,
 						}),
 						n(32294, {	-- Knight Dameron <Wintergrasp Quartermaster>
-							["coords"] = {
+							coords = {
 								{ 51.7, 17.2, WINTERGRASP },
 								{ 51.6, 17.6, WINTERGRASP_BG },
 							},
-							["races"] = ALLIANCE_ONLY,
-							["groups"] = KNIGHT_DAMERON_GROUPS,
+							races = ALLIANCE_ONLY,
+							groups = KNIGHT_DAMERON_GROUPS,
 						}),
 						n(39172, {	-- Marshal Magruder <Wintergrasp Quartermaster>
-							["coords"] = {
+							coords = {
 								{ 51.8, 17.3, WINTERGRASP },
 								{ 51.6, 17.6, WINTERGRASP_BG },
 							},
-							["races"] = ALLIANCE_ONLY,
-							["groups"] = MARSHAL_MAGRUDER_GROUPS,
+							races = ALLIANCE_ONLY,
+							groups = MARSHAL_MAGRUDER_GROUPS,
 						}),
 						n(30489, {	-- Morgan Day <Jewelcrafter>
-							["coords"] = {
+							coords = {
 								{ 48.9, 17.5, WINTERGRASP },
 								{ 48.8, 17.6, WINTERGRASP_BG },
 							},
-							["races"] = ALLIANCE_ONLY,
-							["groups"] = JEWELCRAFTING_RECIPES,
+							races = ALLIANCE_ONLY,
+							groups = JEWELCRAFTING_RECIPES,
 						}),
 						n(31051, {	-- Sorceress Kaylana
-							["coords"] = {
+							coords = {
 								{ 48.5, 21.2, WINTERGRASP },
 								{ 72.5, 32.0, WINTERGRASP },
 								{ 48.4, 21.08, WINTERGRASP_BG },
 							},
-							["races"] = ALLIANCE_ONLY,
-							["groups"] = ARCANUM_ITEMS,
+							races = ALLIANCE_ONLY,
+							groups = ARCANUM_ITEMS,
 						}),
 						n(32296, {	-- Stone Guard Mukar <Wintergrasp Quartermaster>
-							["coords"] = {
+							coords = {
 								{ 51.7, 17.2, WINTERGRASP },
 								{ 51.6, 17.6, WINTERGRASP_BG },
 							},
-							["races"] = HORDE_ONLY,
-							["groups"] = STONE_GUARD_GROUPS,
+							races = HORDE_ONLY,
+							groups = STONE_GUARD_GROUPS,
 						}),
 						n(30488, {	-- Travis Day <Legacy Weaponsmith>
-							["coord"] = { 51.0, 17.4, WINTERGRASP },
-							["races"] = ALLIANCE_ONLY,
-							["groups"] = TRAVIS_DAY_GROUPS,
+							coord = { 51.0, 17.4, WINTERGRASP },
+							races = ALLIANCE_ONLY,
+							groups = TRAVIS_DAY_GROUPS,
 						}),
 					},
 				}),

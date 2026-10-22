@@ -11,9 +11,9 @@ local TOURNAMENT_GEAR = createHeader({
 });
 
 root(ROOTS.PVP, pvp(n(TOURNAMENT_GEAR, {
-	["description"] = "These items were available during Warlords of Draenor, but only served as an iLvl booster for players participating in War Games for fun. They could not be transmogged nor used for any purpose other than War Games.",
-	["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
-	["groups"] = {
+	description = "These items were available during Warlords of Draenor, but only served as an iLvl booster for players participating in War Games for fun. They could not be transmogged nor used for any purpose other than War Games.",
+	timeline = { ADDED_6_0_2, REMOVED_7_0_3 },
+	groups = {
 		i(117714),	-- Tournament Gladiator's Choker of Cruelty
 		i(117915),	-- Tournament Gladiator's Choker of Cruelty
 		i(120109),	-- Tournament Gladiator's Choker of Endurance

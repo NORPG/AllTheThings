@@ -136,15 +136,15 @@ local GROUPS = {
 	}),
 	MYTHIC_8_0 =
 	Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
-		["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
+		difficulties = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
 	}).AddGroups({
 		ach(12503, {	-- Snake Eyes
-			["timeline"] = { REMOVED_12_1_0 },
+			timeline = { REMOVED_12_1_0 },
 		}),
 		Boss(Encounters.ADDERIS_ASPIX),
 		Boss(Encounters.MEREKTHA, {
 			ach(12507, {	-- Snake Eater
-				["timeline"] = { REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 			}),
 			i(160832, {	-- Viable Cobra Egg
 				i(160831, {	-- Cracking Cobra Egg
@@ -155,11 +155,11 @@ local GROUPS = {
 		Boss(Encounters.GALVAZZT),
 		Boss(Encounters.AVATAR, appendAllGroups({
 			ach(12508, {	-- Good Night, Sweet Prince
-				["timeline"] = { REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 			}),
 			ach(12506),	-- Mythic: The Temple of Sethraliss
 			ach(13004),	-- Mythic: The Temple of Sethraliss Guild Run
-			i(278982, {	["timeline"] = { ADDED_12_1_0 } }),	-- Hatchery of Hissing Eggs (DECOR!)
+			i(278982, {	timeline = { ADDED_12_1_0 } }),	-- Hatchery of Hissing Eggs (DECOR!)
 		}, clone(AzeriteLoot[Encounters.AVATAR]))),
 	}),
 	NORMAL_PLUS_8_0 =
@@ -172,7 +172,7 @@ local GROUPS = {
 		BossOnly(Encounters.AVATAR, {
 			ach(12504),	-- The Temple of Sethraliss
 			i(168131),	-- Essence of the Sands
-			i(278982, {	["timeline"] = { ADDED_12_1_0 } }),	-- Hatchery of Hissing Eggs (DECOR!)
+			i(278982, {	timeline = { ADDED_12_1_0 } }),	-- Hatchery of Hissing Eggs (DECOR!)
 		}),
 	}),
 	HEROIC_PLUS_8_0 =
@@ -192,7 +192,7 @@ local GROUPS = {
 		Boss(Encounters.MEREKTHA),
 		Boss(Encounters.GALVAZZT),
 		Boss(Encounters.AVATAR, {
-			i(278982, {	["timeline"] = { ADDED_12_1_0 } }),	-- Hatchery of Hissing Eggs (DECOR!)
+			i(278982, {	timeline = { ADDED_12_1_0 } }),	-- Hatchery of Hissing Eggs (DECOR!)
 		}),
 	}),
 	NORMAL_AZERITE_12_1 =
@@ -219,12 +219,12 @@ local GROUPS = {
 	MYTHIC_12_1 =
 	Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
 		ach(12503, {	-- Snake Eyes
-			["timeline"] = { REMOVED_12_1_0 },
+			timeline = { REMOVED_12_1_0 },
 		}),
 		BossOnly(Encounters.ADDERIS_ASPIX),
 		BossOnly(Encounters.MEREKTHA, {
 			ach(12507, {	-- Snake Eater
-				["timeline"] = { REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 			}),
 			i(160832, {	-- Viable Cobra Egg
 				i(160831, {	-- Cracking Cobra Egg
@@ -235,7 +235,7 @@ local GROUPS = {
 		BossOnly(Encounters.GALVAZZT),
 		BossOnly(Encounters.AVATAR, {
 			ach(12508, {	-- Good Night, Sweet Prince
-				["timeline"] = { REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 			}),
 			ach(12506),	-- Mythic: The Temple of Sethraliss
 			ach(13004),	-- Mythic: The Temple of Sethraliss Guild Run
@@ -274,16 +274,16 @@ local GROUPS = {
 local InstanceGroups = {
 	n(WORLD_QUESTS, {
 		q(51378, {	-- Temple of Sethraliss: A Bazaar Menagerie
-			["isWorldQuest"] = true,
-			["lvl"] = 120,
+			isWorldQuest = true,
+			lvl = 120,
 		}),
 		q(51377, {	-- Temple of Sethraliss: Ecological Research
-			["isWorldQuest"] = true,
-			["lvl"] = 120,
+			isWorldQuest = true,
+			lvl = 120,
 		}),
 		q(51379, {	-- Temple of Sethraliss: Navigating Currents
-			["isWorldQuest"] = true,
-			["lvl"] = 120,
+			isWorldQuest = true,
+			lvl = 120,
 		}),
 	}),
 }
@@ -341,13 +341,13 @@ end
 root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1030, {	-- Temple of Sethraliss
 		InRetailSeason=InRetailSeason,
-		["coord"] = { 51.9, 25.4, VOLDUN },
-		["maps"] = {
+		coord = { 51.9, 25.4, VOLDUN },
+		maps = {
 			1038,	-- Temple of Sethraliss
 			1043,	-- Atrium of Sethraliss
 		},
-		["lvl"] = 110,
-		["timeline"] = { ADDED_8_0_1_LAUNCH },
-		["groups"] = InstanceGroups,
+		lvl = 110,
+		timeline = { ADDED_8_0_1_LAUNCH },
+		groups = InstanceGroups,
 	}),
 }))

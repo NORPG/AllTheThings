@@ -4,30 +4,30 @@
 
 local legendary = function(itemID, creatureID)
 	return i(itemID, {
-		["collectible"] = false,
-		["cr"] = creatureID,
+		collectible = false,
+		cr = creatureID,
 		-- #if NOT ANYCLASSIC
-		["u"] = UNLEARNABLE,
+		u = UNLEARNABLE,
 		-- #endif
 	});
 end;
 
-root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, bubbleDown({ ["timeline"] = { ADDED_2_0_3 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, bubbleDown({ timeline = { ADDED_2_0_3 } }, {
 	inst(749, {	-- The Eye
-		["lore"] = "With Outland serving as the strategic battlefront in the ongoing Burning Crusade, the Naaru used Tempest Keep to reach the shattered land. However, when the Naaru set out from their stronghold, Prince Kael'thas and his blood elves quickly raided the dimensional fortress and assumed control over its satellite structures. Guided by some unknown purpose, Kael'thas manipulates the keep's otherworldly technologies, using them to harness the chaotic energies of the Netherstorm itself.",
+		lore = "With Outland serving as the strategic battlefront in the ongoing Burning Crusade, the Naaru used Tempest Keep to reach the shattered land. However, when the Naaru set out from their stronghold, Prince Kael'thas and his blood elves quickly raided the dimensional fortress and assumed control over its satellite structures. Guided by some unknown purpose, Kael'thas manipulates the keep's otherworldly technologies, using them to harness the chaotic energies of the Netherstorm itself.",
 		-- #if BEFORE WRATH
-		["sourceQuest"] = 10888,	-- Trial of the Naaru: Magtheridon
+		sourceQuest = 10888,	-- Trial of the Naaru: Magtheridon
 		-- #endif
-		["mapID"] = TEMPEST_KEEP_THE_EYE,
-		["coord"] = { 73.73, 63.71, NETHERSTORM },	-- The Eye, Netherstorm
-		["sharedLockout"] = 1,
-		["isRaid"] = true,
-		["lvl"] = lvlsquish(70, 68, 30),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
-		["groups"] = {
+		mapID = TEMPEST_KEEP_THE_EYE,
+		coord = { 73.73, 63.71, NETHERSTORM },	-- The Eye, Netherstorm
+		sharedLockout = 1,
+		isRaid = true,
+		lvl = lvlsquish(70, 68, 30),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
+		groups = {
 			n(QUESTS, {
 				q(11007, {	-- Kael'thas and the Verdant Sphere
-					["provider"] = { "i", 32405 },	-- Verdant Sphere
-					["groups"] = {
+					provider = { "i", 32405 },	-- Verdant Sphere
+					groups = {
 						i(30018),	-- Lord Sanguinar's Claim
 						i(30017),	-- Telonicus' Pendant of Mayhem
 						i(30007),	-- The Darkener's Grasp
@@ -35,14 +35,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					},
 				}),
 				q(10946, {	-- Ruse of the Ashtongue
-					["sourceQuest"] = 10944,	-- The Secret Compromised
-					["qg"] = 21700,	-- Akama
-					["timeline"] = { ADDED_2_1_0 },
-					["coord"] = { 58.0, 48.2, SHADOWMOON_VALLEY },
-					["groups"] = {
+					sourceQuest = 10944,	-- The Secret Compromised
+					qg = 21700,	-- Akama
+					timeline = { ADDED_2_1_0 },
+					coord = { 58.0, 48.2, SHADOWMOON_VALLEY },
+					groups = {
 						objective(1, {
-							["provider"] = { "i", 31946 },	-- Ashtongue Cowl
-							["cr"] = 19514,	-- A'lar
+							provider = { "i", 31946 },	-- Ashtongue Cowl
+							cr = 19514,	-- A'lar
 						}),
 					},
 				}),
@@ -75,10 +75,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				i(30183),	-- Nether Vortex
 			}),
 			e(1573, {	-- Al'ar
-				["creatureID"] = 19514,
-				["groups"] = {
+				creatureID = 19514,
+				groups = {
 					i(97557, {	-- Phoenix Hawk Hatchling (PET!)
-						["timeline"] = { ADDED_5_3_0 },
+						timeline = { ADDED_5_3_0 },
 					}),
 					i(29949),	-- Arcanite Steam-Pistol
 					i(29948),	-- Claw of the Phoenix
@@ -92,27 +92,27 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					i(29922),	-- Band of Al'ar
 					i(29920),	-- Phoenix-Ring of Rebirth
 					i(30448, {	-- Talon of Al'ar
-						["classes"] = { HUNTER },
+						classes = { HUNTER },
 					}),
 					i(30447, {	-- Tome of Fiery Redemption
-						["classes"] = { PALADIN },
+						classes = { PALADIN },
 					}),
 				},
 			}),
 			e(1574, {	-- Void Reaver
-				["creatureID"] = 19516,
-				["groups"] = {
+				creatureID = 19516,
+				groups = {
 					i(97555, {	-- Pocket Reaver (PET!)
-						["timeline"] = { ADDED_5_3_0 },
+						timeline = { ADDED_5_3_0 },
 					}),
 					i(30248, {	-- Pauldrons of the Vanquished Champion
-						["classes"] = { PALADIN, ROGUE, SHAMAN },
+						classes = { PALADIN, ROGUE, SHAMAN },
 					}),
 					i(30249, {	-- Pauldrons of the Vanquished Defender
-						["classes"] = { DRUID, PRIEST, WARRIOR },
+						classes = { DRUID, PRIEST, WARRIOR },
 					}),
 					i(30250, {	-- Pauldrons of the Vanquished Hero
-						["classes"] = { HUNTER, MAGE, WARLOCK },
+						classes = { HUNTER, MAGE, WARLOCK },
 					}),
 					i(29986),	-- Cowl of the Grand Engineer
 					i(29983),	-- Fel-Steel Warhelm
@@ -121,15 +121,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					i(29985),	-- Void Reaver Greaves
 					i(30619),	-- Fel Reaver's Piston
 					i(30450, {	-- Warp-Spring Coil
-						["classes"] = { ROGUE },
+						classes = { ROGUE },
 					}),
 				},
 			}),
 			e(1575, {	-- High Astromancer Solarian
-				["creatureID"] = 18805,
-				["groups"] = {
+				creatureID = 18805,
+				groups = {
 					i(97556, {	-- Lesser Voidcaller (PET!)
-						["timeline"] = { ADDED_5_3_0 },
+						timeline = { ADDED_5_3_0 },
 					}),
 					i(29981),	-- Ethereum Life-Staff
 					i(29962),	-- Heartrazor
@@ -143,39 +143,39 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					i(32267),	-- Boots of the Resilient
 					i(29951),	-- Star-Strider Boots
 					i(30446, {	-- Solarian's Sapphire
-						["classes"] = { WARRIOR },
+						classes = { WARRIOR },
 					}),
 					i(30449, {	-- Void Star Talisman
-						["classes"] = { WARLOCK },
+						classes = { WARLOCK },
 					}),
 				},
 			}),
 			e(1576, {	-- Kael'thas Sunstrider
-				["creatureID"] = 19622,
-				["groups"] = {
+				creatureID = 19622,
+				groups = {
 					ach(696, {	-- Tempest Keep
 						-- #if NOT ANYCLASSIC
 						-- CRIEVE NOTE: This achievement can be earned ahead of time by having completing 'The Vials of Eternity'.
-						["timeline"] = { ADDED_3_0_2 },
+						timeline = { ADDED_3_0_2 },
 						-- #endif
 					}),
 					ach(5089, {	-- Tempest Keep Guild Run
-						["timeline"] = { ADDED_4_0_3 },
+						timeline = { ADDED_4_0_3 },
 					}),
 					ach(885, {	-- Ashes of Al'ar
-						["provider"] = { "i", 32458 },	-- Ashes of Al'ar
-						["filterID"] = MOUNTS,
+						provider = { "i", 32458 },	-- Ashes of Al'ar
+						filterID = MOUNTS,
 					}),
 					i(32458),	-- Ashes of Al'ar (MOUNT!)
 					i(32405),	-- Verdant Sphere
 					i(30236, {	-- Chestguard of the Vanquished Champion
-						["classes"] = { PALADIN, ROGUE, SHAMAN },
+						classes = { PALADIN, ROGUE, SHAMAN },
 					}),
 					i(30237, {	-- Chestguard of the Vanquished Defender
-						["classes"] = { DRUID, PRIEST, WARRIOR },
+						classes = { DRUID, PRIEST, WARRIOR },
 					}),
 					i(30238, {	-- Chestguard of the Vanquished Hero
-						["classes"] = { HUNTER, MAGE, WARLOCK },
+						classes = { HUNTER, MAGE, WARLOCK },
 					}),
 					i(29996),	-- Rod of the Sun King
 					i(29988),	-- The Nexus Key
@@ -190,12 +190,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					i(29991),	-- Sunhawk Leggings
 					i(29997),	-- Band of the Ranger-General
 					i(30320, {	-- Bundle of Nether Spikes
-						["description"] = "Contains 6 stacks of Nether Spike arrows.",
-						["timeline"] = { REMOVED_4_0_1 },
-						["cr"] = 21268,	-- Netherstrand Longbow
-						["groups"] = {
+						description = "Contains 6 stacks of Nether Spike arrows.",
+						timeline = { REMOVED_4_0_1 },
+						cr = 21268,	-- Netherstrand Longbow
+						groups = {
 							i(30319, {	-- Nether Spike
-								["timeline"] = { REMOVED_4_0_1 },
+								timeline = { REMOVED_4_0_1 },
 							}),
 						},
 					}),
@@ -207,8 +207,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					legendary(30313, 21274),	-- Staff of Disintegration
 					legendary(30311, 21272),	-- Warp Slicer
 					i(32896, {	-- Scroll of the Sun
-						["timeline"] = { REMOVED_4_0_3 },	-- TODO: Determine exactly when to remove this.
-						["groups"] = {
+						timeline = { REMOVED_4_0_3 },	-- TODO: Determine exactly when to remove this.
+						groups = {
 							i(32897),	-- Mark of the Illidari
 						},
 					}),

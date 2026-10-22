@@ -4,7 +4,7 @@
 
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	n(GEAR_CONVERSION, {
-		["groups"] = {
+		groups = {
 			cl(DEATHKNIGHT, {
 				i(218130, {	-- Adventurer's Footlocker
 					i(170591),	-- Heart-Lesion Blade

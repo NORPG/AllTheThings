@@ -3,5 +3,5 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
-	["timeline"] = { ADDED_4_0_3 },	-- NOTE: This is the base patch for all of the content in this section and does not need to be added to everything within it.
+	timeline = { ADDED_4_0_3 },	-- NOTE: This is the base patch for all of the content in this section and does not need to be added to everything within it.
 })));

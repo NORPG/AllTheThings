@@ -6,8 +6,8 @@
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	n(ACHIEVEMENTS, {
 		ach(1283, {		-- Classic Dungeonmaster
-			["timeline"] = { ADDED_3_0_2 },
-			["sym"] = {{"meta_achievement",
+			timeline = { ADDED_3_0_2 },
+			sym = {{"meta_achievement",
 				628,	-- Deadmines
 				629,	-- Ragefire Chasm
 				630,	-- Wailing Caverns
@@ -30,8 +30,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}},
 		}),
 		ach(1285, {		-- Classic Raider
-			["timeline"] = { ADDED_3_0_2 },
-			["sym"] = {{"meta_achievement",
+			timeline = { ADDED_3_0_2 },
+			sym = {{"meta_achievement",
 				685,	-- Blackwing Lair
 				686,	-- Molten Core
 				687,	-- Temple of Ahn'Qiraj
@@ -39,8 +39,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}},
 		}),
 		ach(7934, {	-- Raiding with Leashes
-			["timeline"] = { ADDED_5_1_0 },
-			["groups"] = { i(93031) },	-- Mr. Bigglesworth (PET!)
+			timeline = { ADDED_5_1_0 },
+			groups = { i(93031) },	-- Mr. Bigglesworth (PET!)
 		}),
 	}),
 }));

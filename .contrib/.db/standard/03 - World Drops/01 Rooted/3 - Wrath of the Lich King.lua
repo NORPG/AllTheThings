@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
 	filter(CLOAKS, {
 		i(36411),	-- Brawler's Cape
 		i(36410),	-- Caribou Skin Cloak
@@ -616,13 +616,13 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36583),	-- Skeletal Hacker
 			i(36584),	-- Snowy Edge
 			i(36574, {	-- Bone Cleaver
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36577, {	-- Disk Axe
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36575, {	-- Dragonflayer Hatchet
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(TWO_HANDED_AXES, {
@@ -642,7 +642,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36598),	-- Scarlet Battle Axe
 			i(37811),	-- Captain Carver's Persuader
 			i(36589, {	-- Segmenting Broadaxe
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(BOWS, {
@@ -661,10 +661,10 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36626),	-- Military Compound Bow
 			i(37809),	-- Roc-Feather Longbow
 			i(36618, {	-- Twisted Longbow
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36617, {	-- Yielding Bow
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(CROSSBOWS, {
@@ -682,7 +682,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36639),	-- Brutal Ballista
 			i(36640),	-- Scourge Crossbow
 			i(36631, {	-- Horned Crossbow
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(DAGGERS, {
@@ -714,12 +714,12 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36476),	-- Whale Ripper
 			i(36675),	-- Sockeye Dagger
 			i(36477, {	-- Twin-Edged Stilletto
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36676),	-- Water Blade
 			i(36681),	-- Wisdom Carver
 			i(36673, {	-- Wise Dagger
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(FIST_WEAPONS, {
@@ -738,7 +738,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36570),	-- Corrupted Scythes
 			i(37749),	-- Shocking Claws
 			i(36561, {	-- Mummified Paw
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(GUNS, {
@@ -757,7 +757,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36653),	-- Precipice Longrifle
 			i(36654),	-- Harsh-Winter Rifle
 			i(36645, {	-- Tuskarr Boomstick
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(ONE_HANDED_MACES, {
@@ -791,13 +791,13 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(37805),	-- Melia's Magnificent Scepter
 			i(37808),	-- Dragonjaw Mauler
 			i(36505, {	-- Frosted Steel Mallet
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36493, {	-- Furbolg Truncheon
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36491, {	-- Serrated Maul
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(TWO_HANDED_MACES, {
@@ -822,7 +822,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36600),	-- Village Scythe
 			i(36601),	-- Patient Harpoon
 			i(36603, {	-- Archaic Longspear
-				["timeline"] = { CREATED_3_0_2, ADDED_4_0_1, REMOVED_6_0_3, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { CREATED_3_0_2, ADDED_4_0_1, REMOVED_6_0_3, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36604),	-- Grizzly Glaive
 			i(36605),	-- Wind Scythe
@@ -835,7 +835,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36612),	-- Scourge War Spear
 			i(37813),	-- Banner Slicer
 			i(36602, {	-- Rust-Covered Polearm
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_3, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_3, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(STAVES, {
@@ -869,13 +869,13 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(37804),	-- Bloodwood Greatstaff
 			i(37806),	-- Zabra's Misplaced Staff
 			i(36547, {	-- Jester's Stick
-				["timeline"] = { CREATED_2_0_3, ADDED_3_0_2, REMOVED_6_0_3, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { CREATED_2_0_3, ADDED_3_0_2, REMOVED_6_0_3, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36701, {	-- Pine Needle Staff
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36549, {	-- Pulsing Quarterstaff
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_3, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_3, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(ONE_HANDED_SWORDS, {
@@ -896,13 +896,13 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(37807),	-- Lydia's Sharpened Swordbreaker
 			i(44311),	-- Avool's Sword of Jin
 			i(36519, {	-- Moonlit Katana
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		filter(TWO_HANDED_SWORDS, {
 			i(33430),	-- Abandoned Greatsword
 			i(36533, {	-- Adorned Broadsword
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_3, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_3, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36529),	-- Unearthed Broadsword
 			i(36530),	-- Whetted Ironblade
@@ -934,52 +934,52 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36668),	-- Mindless Wand
 			i(37824),	-- Gwyneth's Runed Dragonwand
 			i(36659, {	-- Shivery Wand
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
+				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 		}),
 		-- #if BEFORE MOP
 		filter(THROWN, {
 			i(36723, {	-- Clawed Shuriken
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(36721, {	-- Dragon's Teeth
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(36720, {	-- Flying Knives
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(36711, {	-- Forsaken Edge
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(36724, {	-- Frozen Throwing Blades
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(36712, {	-- Howling Throwing Knives
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(36719, {	-- Hunter's Scout
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(36718, {	-- Nexus Shrike
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(36722, {	-- Pyramid Throwing Star
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(36713, {	-- Reaching Star
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(36715, {	-- Runed Shuriken (TODO: May have never been implemented according to wowpedia)
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(36716, {	-- Threatening Darts
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(36714, {	-- Tuskarr's Piercers
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(36717, {	-- Venture Co. Throwing Axe
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 		}),
 		-- #endif
@@ -996,9 +996,9 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 		i(36453),	-- Embossed Brazen Shield
 		i(36454, {	-- Domed Buckler [Removed from Game - Crates Only!]
 			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+			description = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { CREATED_3_0_2, ADDED_6_0_2, REMOVED_7_0_3 },
+			timeline = { CREATED_3_0_2, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		i(36455),	-- Plated Bulwark
 		i(36456),	-- Icy Kite Shield
@@ -1073,8 +1073,8 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 	}),
 	filter(MISC, {
 		i(44663, {	-- Abandoned Adventurer's Satchel
-			["description"] = "Drops from any of the Northrend Rares. Contains some gold, Frostweave Cloth and crystallized motes.",
-			["crs"] = {
+			description = "Drops from any of the Northrend Rares. Contains some gold, Frostweave Cloth and crystallized motes.",
+			crs = {
 				32481,	-- Aotona
 				38453,	-- Arcturis
 				32409,	-- Crazed Indu'le Survivor
@@ -1106,7 +1106,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 		}),
 		i(43297),	-- Damaged Necklace
 		i(36812, {	-- Ground Gear
-			["description"] = "Drops from mechs in Northrend for level 10-12 characters. Can also drop from Mimiron in Ulduar.",
+			description = "Drops from mechs in Northrend for level 10-12 characters. Can also drop from Mimiron in Ulduar.",
 		}),
 	}),
 	filter(TOYS, {
@@ -1128,14 +1128,14 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(45912, {	-- Book of Glyph Mastery
 				-- #if AFTER 6.0.1.18379
 				-- TODO: this spell is not sourced in Retail... it probably should be but I'm not sure where that's all being done currently
-				-- ["sym"] = {{"select","spellID",165465}},	-- Research: Ink of the Sea
+				-- sym = {{"select","spellID",165465}},	-- Research: Ink of the Sea
 				-- #endif
 			}),
 		}),
 		prof(JEWELCRAFTING, {
 			-- #if BEFORE CATA
 			i(41818, {	-- Design: Accurate Twilight Opal (RECIPE!)
-				["crs"] = {
+				crs = {
 					28851,	-- Enraged Mammoth
 					29402,	-- Ironwool Mammoth
 					30448,	-- Plains Mammoth
@@ -1144,47 +1144,47 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 				},
 			}),
 			i(41788, {	-- Design: Beaming Earthsiege Diamond (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41780, {	-- Design: Champion's Monarch Topaz (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41786, {	-- Design: Destructive Skyflare Diamond (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41777, {	-- Design: Etched Monarch Topaz (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41789, {	-- Design: Inscribed Monarch Topaz (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41781, {	-- Design: Misty Forest Emerald (RECIPE!)
-				["timeline"] = { ADDED_3_0_8, REMOVED_4_0_3 },
+				timeline = { ADDED_3_0_8, REMOVED_4_0_3 },
 			}),
 			i(41783, {	-- Design: Purified Twilight Opal (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41778, {	-- Design: Resolute Monarch Topaz (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41782, {	-- Design: Shining Forest Emerald (RECIPE!)
-				["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3 },
+				timeline = { ADDED_3_0_3, REMOVED_4_0_3 },
 			}),
 			i(41784, {	-- Design: Sovereign Twilight Opal (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41779, {	-- Design: Stalwart Monarch Topaz (RECIPE!)
-				["timeline"] = { ADDED_3_0_8, REMOVED_4_0_3 },
+				timeline = { ADDED_3_0_8, REMOVED_4_0_3 },
 			}),
 			i(41785, {	-- Design: Tenuous Twilight Opal (RECIPE!)
-				["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3 },
+				timeline = { ADDED_3_0_3, REMOVED_4_0_3 },
 			}),
 			i(41787, {	-- Design: Thundering Skyflare Diamond (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			-- #else
 			i(41818, {	-- Design: Accurate Twilight Opal (RECIPE!)
-				["crs"] = {
+				crs = {
 					28851,	-- Enraged Mammoth
 					29402,	-- Ironwool Mammoth
 					30448,	-- Plains Mammoth
@@ -1193,50 +1193,50 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 				},
 			}),
 			i(41788, {	-- Design: Beaming Earthsiege Diamond (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41780, {	-- Design: Champion's Monarch Topaz (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41786, {	-- Design: Destructive Skyflare Diamond (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41777, {	-- Design: Etched Twilight Opal (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41785, {	-- Design: Glinting Twilight Opal (RECIPE!)
-				["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3 },
+				timeline = { ADDED_3_0_3, REMOVED_4_0_3 },
 			}),
 			i(41789, {	-- Design: Inscribed Monarch Topaz (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41782, {	-- Design: Lightning Forest Emerald (RECIPE!)
-				["timeline"] = { ADDED_3_0_8, REMOVED_4_0_3 },
+				timeline = { ADDED_3_0_8, REMOVED_4_0_3 },
 			}),
 			i(41781, {	-- Design: Misty Forest Emerald (RECIPE!)
-				["timeline"] = { ADDED_3_0_8, REMOVED_4_0_3 },
+				timeline = { ADDED_3_0_8, REMOVED_4_0_3 },
 			}),
 			i(41783, {	-- Design: Purified Twilight Opal (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41778, {	-- Design: Resolute Monarch Topaz (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41784, {	-- Design: Sovereign Twilight Opal (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			i(41779, {	-- Design: Stalwart Monarch Topaz (RECIPE!)
-				["timeline"] = { ADDED_3_0_8, REMOVED_4_0_3 },
+				timeline = { ADDED_3_0_8, REMOVED_4_0_3 },
 			}),
 			i(41787, {	-- Design: Thundering Skyflare Diamond (RECIPE!)
-				["timeline"] = { ADDED_3_0_8 },
+				timeline = { ADDED_3_0_8 },
 			}),
 			-- #endif
 		}),
 		prof(TAILORING, {
 			i(43876, {	-- A Guide to Northern Cloth Scavenging (RECIPE!)
 				-- #if NOT ANYCLASSIC
-				["collectible"] = false,
+				collectible = false,
 				-- #endif
 			}),
 			-- #if AFTER 8.0.1
@@ -1251,7 +1251,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 		}),
 	}),
 	filter(REAGENTS, {
-		["groups"] = appendAllGroups(
+		groups = appendAllGroups(
 			-- Table of Content:
 			-- 	Cloth + Silk
 			-- 	Elemental reagents
@@ -1263,15 +1263,15 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			-- 	Cloth + Silk:
 			{
 				i(33470, {
-					["description"] = "Frostweave Cloth is a very common drop from WotLK humanoid and undead creatures."
+					description = "Frostweave Cloth is a very common drop from WotLK humanoid and undead creatures."
 				}),
 				i(42253, {	-- Iceweb Silk
-					["coords"] = {
+					coords = {
 						{ 40.4, 78.0, THE_STORM_PEAKS },	-- Crystalweb Cavern
 						{ 37.0, 56.2, ZULDRAK },	-- Heb'Valok
 						{ 47.6, 83.1, ZULDRAK },	-- Drak'Sotra Fields, southeast of.
 					},
-					["crs"] = {
+					crs = {
 						15975,	-- Carrion Spinner
 						29412,	-- Crystalweb Splitter
 						29411,	-- Crystalweb Weaver
@@ -1281,14 +1281,14 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 						28221,	-- Trapdoor Crawler
 						15976,	-- Venom Stalker
 					},
-					["maps"] = { NAXXRAMAS },
+					maps = { NAXXRAMAS },
 				}),
 			},
 			-- _________________________________
 			--
 			-- 	Elemental reagents:
 			sharedData({	-- Air
-				["coords"] = {
+				coords = {
 					{ 75.0, 54.6, GRIZZLY_HILLS },	-- Dun Argol
 					{ 73.9, 58.6, ZULDRAK },	-- Altar of Quetz'lun
 					{ 67.0, 44.9, THE_STORM_PEAKS },	-- The Howling Hollow
@@ -1298,7 +1298,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					{ 44.9, 8.6, BOREAN_TUNDRA },	-- Ruins of Eldra'nath
 					{ 73.0, 31.8, BOREAN_TUNDRA },	-- Steam Springs
 				},
-				["crs"] = {
+				crs = {
 					28784,	-- Altar Warden
 					24879,	-- Arctic Cloud (Gas cloud)
 					25415,	-- Enraged Tempest
@@ -1310,20 +1310,20 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					30875,	-- Tempest Revenant
 					30848,	-- Whispering Wind
 				},
-				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+				description = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
 			}, {
 				i(37700),	-- Crystallized Air
 				i(35623),	-- Eternal Air
 			}),
 			sharedData({	-- Earth
-				["coords"] = {
+				coords = {
 					{ 64.2, 23.3, GRIZZLY_HILLS },	-- Thor Modan
 					{ 15.5, 77.6, ZULDRAK },	-- Ebon Watch, south of.
 					{ 58.5, 45.6, ZULDRAK },	-- Zim'Rhuk
 					{ 70.0, 59.2, THE_STORM_PEAKS },	-- Frostfield Lake
 					{ 56.6, 41.7, WINTERGRASP },	-- Wintergrasp East
 				},
-				["crs"] = {
+				crs = {
 					30160,	-- Brittle Revenant
 					30849,	-- Chilled Earth Revenant
 					30876,	-- Earthbound Revenant
@@ -1331,8 +1331,8 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					29436,	-- Icetouched Earthrager
 					26284,	-- Runic Battle Golem
 				},
-				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
-				["providers"] = {
+				description = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+				providers = {
 					{ "o", 189978 },	-- Cobalt Deposit
 					{ "o", 189979 },	-- Rich Cobalt Deposit
 					{ "o", 189981 },	-- Rich Saronite Deposit
@@ -1343,13 +1343,13 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 				i(35624),	-- Eternal Earth
 			}),
 			sharedData({	-- Fire
-				["coords"] = {
+				coords = {
 					{ 48.7, 14.4, BOREAN_TUNDRA },	-- Charred Rise
 					{ 84.0, 71.5, WINTERGRASP },	-- The Cauldron of Flames
 					{ 62.5, 41.5, THE_STORM_PEAKS },	-- Frostfloe Deep
 					{ 75.5, 63.2, THE_STORM_PEAKS },	-- Fjorn's Anvil
 				},
-				["crs"] = {
+				crs = {
 					32522,	-- Cinder Cloud (Gas cloud)
 					30873,	-- Flame Revenant
 					25417,	-- Raging Boiler
@@ -1358,28 +1358,28 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					32544,	-- Steam Cloud (Gas cloud)
 					30450,	-- Wailing Winds
 				},
-				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+				description = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
 			}, {
 				i(37702),	-- Crystallized Fire
 				i(36860),	-- Eternal Fire
 			}),
 			sharedData({	-- Life
-				["coords"] = {
+				coords = {
 					{ 54.0, 17.6, HOWLING_FJORD },	-- The Twisted Glade
 					{ 44.0, 59.3, ZULDRAK },	-- Drak'Agal
 					{ 9.5, 61.6, WINTERGRASP },	-- The Steppe of Life
 					{ 48.9, 54.0, SHOLAZAR_BASIN },	-- River's Heart, north of.
 					{ 44.3, 69.9, SHOLAZAR_BASIN },	-- River's Heart, southwest of.
 				},
-				["crs"] = {
+				crs = {
 					30845,	-- Living Lasher
 					34300,	-- Mature Lasher
 					28323,	-- Mossy Rampager
 					29036,	-- Servant of Freya
 					23874,	-- Thornwine Creeper
 				},
-				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
-				["providers"] = {
+				description = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+				providers = {
 					{ "o", 191019 },	-- Adder's Tongue
 					{ "o", 191303 },	-- Firethorn
 					{ "o", 189973 },	-- Goldclover
@@ -1393,26 +1393,26 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 				i(35625),	-- Eternal Life
 			}),
 			sharedData({	-- Shadow
-				["coords"] = {
+				coords = {
 					{ 74.6, 23.2, DRAGONBLIGHT },	-- Frostmourne Cavern
 					{ 18.0, 56.0, WINTERGRASP },	-- The Forest of Shadows
 				},
-				["crs"] = {
+				crs = {
 					27382,	-- Deathbringer Revenant
 					30872,	-- Shadow Revenant
 					30842,	-- Wandering Shadow
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 189981 },	-- Rich Saronite Deposit
 					{ "o", 189980 },	-- Saronite Deposit
 				},
-				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+				description = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
 			}, {
 				i(37703),	-- Crystallized Shadow
 				i(35627),	-- Eternal Shadow
 			}),
 			sharedData({	-- Water
-				["coords"] = {
+				coords = {
 					{ 27.6, 33.4, SHOLAZAR_BASIN },	-- The Stormwright's Shelf
 					{ 46.3, 13.4, BOREAN_TUNDRA },	-- Blistering Pool
 					{ 49.6, 54.6, WINTERGRASP },	-- Wintergrasp
@@ -1426,7 +1426,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					{ 65.3, 69.1, GRIZZLY_HILLS },	-- The Forgotten Overlook
 					{ 61.3, 23.0, HOWLING_FJORD },	-- The Frozen Glade
 				},
-				["crs"] = {
+				crs = {
 					28862,	-- Aquerous Spirit
 					24879,	-- Arctic Cloud (Gas cloud)
 					25419,	-- Boiling Spirit
@@ -1443,8 +1443,8 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					32544,	-- Steam Cloud (Gas cloud)
 					30877,	-- Water Revenant
 				},
-				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
-				["providers"] = {
+				description = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+				providers = {
 					{ "o", 189978 },	-- Cobalt Deposit
 					{ "o", 189979 },	-- Rich Cobalt Deposit
 				},
@@ -1457,7 +1457,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			--
 			-- 	Clams:
 				i(44700, {	-- Brooding Darkwater Clam
-					["coords"] = {
+					coords = {
 						{ 60.9, 50.6, BOREAN_TUNDRA },	-- The Flood Plain, southwest
 						{ 66.6, 40.7, BOREAN_TUNDRA },	-- The Flood Plain, west
 						{ 72.2, 44.5, BOREAN_TUNDRA },	-- The Flood Plain, central
@@ -1469,7 +1469,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 						{ 44.5, 36.6, SHOLAZAR_BASIN },	-- Mistwhisper Refuge
 						{ 32.8, 74.9, SHOLAZAR_BASIN },	-- Sparktouched Haven
 					},
-					["crs"] = {
+					crs = {
 						25686,	-- Gorloc Gibberer
 						25699,	-- Gorloc Mud Splasher
 						25687,	-- Gorloc Steam Belcher
@@ -1485,15 +1485,15 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 						25215,	-- Winterfin Shorestriker
 						25217,	-- Winterfin Warrior
 					},
-					["description"] = "Is a rare drop from water creatures like murlocs and whales, and have a high chance of containing pearls. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",
-					["groups"] = {
+					description = "Is a rare drop from water creatures like murlocs and whales, and have a high chance of containing pearls. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",
+					groups = {
 						i(36782),	-- Succulent Clam Meat
 						i(36783),	-- Northsea Pearl
 						i(36784),	-- Siren's Tear
 					},
 				}),
 				i(36781, {	-- Darkwater Clam
-					["coords"] = {
+					coords = {
 						{ 60.9, 50.6, BOREAN_TUNDRA },	-- The Flood Plain, southwest
 						{ 66.6, 40.7, BOREAN_TUNDRA },	-- The Flood Plain, west
 						{ 72.2, 44.5, BOREAN_TUNDRA },	-- The Flood Plain, central
@@ -1505,7 +1505,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 						{ 44.5, 36.6, SHOLAZAR_BASIN },	-- Mistwhisper Refuge
 						{ 32.8, 74.9, SHOLAZAR_BASIN },	-- Sparktouched Haven
 					},
-					["crs"] = {
+					crs = {
 						25686,	-- Gorloc Gibberer
 						25699,	-- Gorloc Mud Splasher
 						25687,	-- Gorloc Steam Belcher
@@ -1521,8 +1521,8 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 						25215,	-- Winterfin Shorestriker
 						25217,	-- Winterfin Warrior
 					},
-					["description"] = "Is a common drop from water creatures like murlocs and whales. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",
-					["groups"] = {
+					description = "Is a common drop from water creatures like murlocs and whales. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",
+					groups = {
 						i(36782),	-- Succulent Clam Meat
 						i(36783),	-- Northsea Pearl
 						i(36784),	-- Siren's Tear
@@ -1533,10 +1533,10 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			--
 			-- 	Cooking reagents:
 				i(43013, {	-- Chilled Meat
-					["description"] = "Can drop from any Northrend beasts.",
+					description = "Can drop from any Northrend beasts.",
 				}),
 				i(34736, {	-- Chunk o' Mammoth
-					["coords"] = {
+					coords = {
 						{ 82.2, 31.3, BOREAN_TUNDRA },	-- Transborea
 						{ 55.6, 31.9, BOREAN_TUNDRA },	-- Coldrock Quarry, east of.
 						{ 65.5, 38.1, DRAGONBLIGHT },	-- The Dragon Wastes
@@ -1545,7 +1545,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 						{ 58.0, 62.0, THE_STORM_PEAKS },	-- Valley of Ancient Winters
 						{ 34.7, 84.9, THE_STORM_PEAKS },	-- Snowblind Hills
 					},
-					["crs"] = {
+					crs = {
 						26272,	-- Emaciated Mammoth
 						26271,	-- Emaciated Mammoth Bull
 						26273,	-- Emaciated Mammoth Calf
@@ -1562,14 +1562,14 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					},
 				}),
 				i(43501, {	-- Northern Egg
-					["coords"] = {
+					coords = {
 						{ 59.0, 26.3, BOREAN_TUNDRA },	-- Scalding Pools
 						{ 82.9, 36.4, BOREAN_TUNDRA },	-- Transborea
 						{ 37.9, 60.6, GRIZZLY_HILLS },	-- Amberpine Lodge, east of.
 						{ 58.3, 28.1, SHOLAZAR_BASIN },	-- The Bonefields
 						{ 17.1, 58.5, ZULDRAK },	-- Thrym's End
 					},
-					["crs"] = {
+					crs = {
 						26483,	-- Carrion Condor
 						26174,	-- Dragonbone Condor
 						27244,	-- Emerald Skytalon
@@ -1580,17 +1580,17 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 						25817,	-- Oiled Fledgeling
 						29453,	-- Vargul Plaguetalon
 					},
-					["maps"] = { DRAGONBLIGHT },
+					maps = { DRAGONBLIGHT },
 				}),
 				i(43012, {	-- Rhino Meat
-					["coords"] = {
+					coords = {
 						{ 44.7, 42.4, BOREAN_TUNDRA },	-- Amber Ledge, south of.
 						{ 46.2, 72.7, BOREAN_TUNDRA },	-- Riplash Strand, north of.
 						{ 26.7, 51.7, SHOLAZAR_BASIN },	-- The Suntouched Pillar, west of.
 						{ 43.4, 58.6, THE_STORM_PEAKS },	-- The Foot Steppes
 						{ 65.0, 43.0, THE_STORM_PEAKS },	-- Plain of Echoes
 					},
-					["crs"] = {
+					crs = {
 						30445,	-- Ice Steppe Bull
 						29469,	-- Ice Steppe Rhino
 						30447,	-- Rhomping Rhino
@@ -1601,7 +1601,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					},
 				}),
 				i(43009, {	-- Shoveltusk Flank
-					["crs"] = {
+					crs = {
 						24681,	-- Island Shoveltusk
 						23690,	-- Shoveltusk
 						24791,	-- Shoveltusk Calf
@@ -1610,11 +1610,11 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 						29486,	-- Tamed Shoveltusk
 						29487,	-- Wild Shoveltusk
 					},
-					["maps"] = { HOWLING_FJORD },
+					maps = { HOWLING_FJORD },
 				}),
 				-- i(36782),	-- Succulent Clam Meat > Properly sourced under Clams listed above.
 				i(43011, {	-- Worg Haunch
-					["coords"] = {
+					coords = {
 						{ 39.5, 71.8, BOREAN_TUNDRA },	-- Bloodspore Plains
 						{ 48.7, 47.8, BOREAN_TUNDRA },	-- Warsong Hold, northeast of.
 						{ 73.3, 32.9, GRIZZLY_HILLS },	-- Harkor's Camp, north of.
@@ -1624,7 +1624,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 						{ 74.8, 33.4, HOWLING_FJORD },	-- Bleeding Vale
 						{ 47.1, 54.9, THE_STORM_PEAKS },	-- Gimorek's Den
 					},
-					["crs"] = {
+					crs = {
 						30164,	-- Cavedweller Wolf
 						27408,	-- Duskhowl Prowler
 						24026,	-- Fanggore Wolf
@@ -1635,7 +1635,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					},
 				}),
 				i(43010, {	-- Worm Meat
-					["coords"] = {
+					coords = {
 						{ 82.2, 31.3, BOREAN_TUNDRA },	-- Transborea
 						{ 57.3, 12.3, DRAGONBLIGHT },	-- The Crystal Vice
 						{ 51.3, 23.9, DRAGONBLIGHT },	-- The Dragon Wastes
@@ -1643,7 +1643,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 						{ 47.1, 54.9, THE_STORM_PEAKS },	-- Gimorek's Den
 						{ 27.6, 46.7, THE_STORM_PEAKS },	-- Snowdrift Plains
 					},
-					["crs"] = {
+					crs = {
 						26293,	-- Hulking Jormungar
 						26358,	-- Ice Heart Jormungar Feeder
 						26359,	-- Ice Heart Jormungar Spawn
@@ -1659,7 +1659,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			--
 			-- Other reagents:
 				i(43102, {	-- Frozen Orb
-					["description"] = "Has a chance to drop from the last boss of any Heroic WotLK dungeon.",
+					description = "Has a chance to drop from the last boss of any Heroic WotLK dungeon.",
 				}),
 			}
 		),

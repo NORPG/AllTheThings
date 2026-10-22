@@ -23,33 +23,33 @@ local DARKSPEAR_DASH = createHeader({
 });
 
 root(ROOTS.Holidays, applyevent(EVENTS.DARKSPEAR_DASH, n(DARKSPEAR_DASH, {
-	["description"] = "The Darkspear Dash is a weekend Horde-only micro-holiday taking place at the end of June. Players will join in on a 'dash' from Echo Isles to Silvermoon City.\n\nThe event is inspired by the 'Running of the Trolls' community charity event.",
-	["timeline"] = { ADDED_12_0_7 },
-	["groups"] = {
+	description = "The Darkspear Dash is a weekend Horde-only micro-holiday taking place at the end of June. Players will join in on a 'dash' from Echo Isles to Silvermoon City.\n\nThe event is inspired by the 'Running of the Trolls' community charity event.",
+	timeline = { ADDED_12_0_7 },
+	groups = {
 		n(QUESTS, {
 			q(95009, {	-- Doing the Dash
-				["qgs"] = {
+				qgs = {
 					220307,	-- Holiday Enthusiast
 				},
-				-- ["isYearly"] = true,	-- expected but obviously not confirmed
-				["coords"] = {
+				-- isYearly = true,	-- expected but obviously not confirmed
+				coords = {
 					{ 46.0, 55.0, DORNOGAL },
 					{ 51.1, 76.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				},
-				["races"] = HORDE_ONLY,	-- Currently horde only
-				["isBreadcrumb"] = true,
+				races = HORDE_ONLY,	-- Currently horde only
+				isBreadcrumb = true,
 			}),
 			q(94954, {	-- Darkspear Dash
-				["sourceQuest"] = 95009,	-- Doing the Dash
-				["provider"] = { "n", 259191 },	-- Kalaya
-				-- ["isYearly"] = true,	-- expected but obviously not confirmed
-				["coords"] = {
+				sourceQuest = 95009,	-- Doing the Dash
+				provider = { "n", 259191 },	-- Kalaya
+				-- isYearly = true,	-- expected but obviously not confirmed
+				coords = {
 					{ 46.7, 47.4, ECHO_ISLES },
 				},
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				races = HORDE_ONLY,
+				groups = {
 					title(749, {	-- Darkspear Dasher <Name>
-						["collectible"] = false,	-- Only for 1 day
+						collectible = false,	-- Only for 1 day
 					}),
 					i(267323),	-- Troll Scroll of Rainbow Roll (TOY!)
 				},
@@ -57,15 +57,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKSPEAR_DASH, n(DARKSPEAR_DASH, {
 		}),
 		n(VENDORS, {
 			n(259188, {	-- Naz'do
-				["coord"] = { 47.5, 46.6, ECHO_ISLES },
-				["groups"] = {
+				coord = { 47.5, 46.6, ECHO_ISLES },
+				groups = {
 					i(267280),	-- Darkspear Dash Tabard
 					i(267352),	-- Pocket Rainbow
 					i(267353),	-- Pocket Sand
 					i(268694),	-- Rainbow Runners
 					i(226127),	-- Recruit's Shirt
 				},
-				["sym"] = {{"select","itemID",
+				sym = {{"select","itemID",
 					210469,	-- Personal Tabard
 					140309,	-- Prismatic Bauble
 				}},

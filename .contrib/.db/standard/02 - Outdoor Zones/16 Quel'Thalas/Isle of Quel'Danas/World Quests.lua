@@ -5,9 +5,9 @@
 root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.ISLE_OF_QUELDANAS, {
 		n(WORLD_QUESTS, {
-		--	["sourceQuests"] = {
+		--	sourceQuests = {
 		--	},
-		--	["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+		--	groups = bubbleDownFiltered({ isWorldQuest = true, },FILTERFUNC_questID,{
 		--	}),
 		}),
 	}),

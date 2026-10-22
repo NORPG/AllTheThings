@@ -2,29 +2,29 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
 		n(VENDORS, {
 			n(208170, {	-- Mythrin'dir <Trade Goods>
-				["coord"] = { 49.6, 62.8, EMERALD_DREAM },
-				["groups"] = {
+				coord = { 49.6, 62.8, EMERALD_DREAM },
+				groups = {
 					i(211399),	-- Technique: Glyph of the Lunar Chameleon (RECIPE!)
 				},
 			}),
 			n(212903, {	-- Thaelishar Groveheart <Fauna Specialist>
-				["coord"] = { 60.3, 16.9, EMERALD_DREAM },
-				["groups"] = {
+				coord = { 60.3, 16.9, EMERALD_DREAM },
+				groups = {
 					i(210764),	-- Silent Mark of the Dreamtalon
 					i(210767),	-- Silent Mark of the Dreamstag
 					i(210755),	-- Silent Mark of the Dreamsaber
 					i(210766),	-- Silent Mark of the Umbraclaw
 				},
 			}),
-			n(213285, bubbleDown({ ["timeline"] = { REMOVED_11_0_0 } }, {	-- Theozhaklos the Curious <Novice Explorer>
-				["coord"] = { 36.7, 33.3, EMERALD_DREAM },
-				["groups"] = bubbleDownFiltered({
-					["cost"] = { { "i", 210944, 1 } },	-- Emerald Mark of Mastery
-					["bonusID"] = 7532,
+			n(213285, bubbleDown({ timeline = { REMOVED_11_0_0 } }, {	-- Theozhaklos the Curious <Novice Explorer>
+				coord = { 36.7, 33.3, EMERALD_DREAM },
+				groups = bubbleDownFiltered({
+					cost = { { "i", 210944, 1 } },	-- Emerald Mark of Mastery
+					bonusID = 7532,
 				},FILTERFUNC_itemID,{
 					cl(DEATHKNIGHT, {
 						i(207203),	-- Casket of the Risen Nightmare
@@ -120,49 +120,49 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 			})),
 			n(211328, {	-- Vaskarn <Dreaming Crest Exchange>
-				["coord"] = { 49.8, 62.9, EMERALD_DREAM },
-				["groups"] = {
+				coord = { 49.8, 62.9, EMERALD_DREAM },
+				groups = {
 					-- Trade Up
 					i(210756, {	-- Gleaming Satchel of Drake's Dreaming Crests
-						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
-						["cost"] = { { "c", ASPECTS_DREAMING_CREST, 90 } },
-						["groups"] = {
+						timeline = { REMOVED_10_2_6_SEASON_FOUR },
+						cost = { { "c", ASPECTS_DREAMING_CREST, 90 } },
+						groups = {
 							currency(DRAKES_DREAMING_CREST),
 						},
 					}),
 					i(210762, {	-- Shimmering Clutch of Wyrm's Dreaming Crests
-						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
-						["cost"] = { { "c", ASPECTS_DREAMING_CREST, 50 } },
-						["groups"] = {
+						timeline = { REMOVED_10_2_6_SEASON_FOUR },
+						cost = { { "c", ASPECTS_DREAMING_CREST, 50 } },
+						groups = {
 							currency(WYRMS_DREAMING_CREST),
 						},
 					}),
 					i(210768, {	-- Viridescent Bouquet of Aspect's Dreaming Crests
-						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
-						["cost"] = { { "c", ASPECTS_DREAMING_CREST, 30 } },
-						["groups"] = {
+						timeline = { REMOVED_10_2_6_SEASON_FOUR },
+						cost = { { "c", ASPECTS_DREAMING_CREST, 30 } },
+						groups = {
 							currency(ASPECTS_DREAMING_CREST),
 						},
 					}),
 					-- Trade Down
 					i(210923, {	-- Clutch of Wyrm's Dreaming Crests
-						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
-						["cost"] = { { "c", ASPECTS_DREAMING_CREST, 15 } },
-						["groups"] = {
+						timeline = { REMOVED_10_2_6_SEASON_FOUR },
+						cost = { { "c", ASPECTS_DREAMING_CREST, 15 } },
+						groups = {
 							currency(WYRMS_DREAMING_CREST),
 						},
 					}),
 					i(210917, {	-- Pouch of Whelpling's Dreaming Crests
-						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
-						["cost"] = { { "c", DRAKES_DREAMING_CREST, 15 } },
-						["groups"] = {
+						timeline = { REMOVED_10_2_6_SEASON_FOUR },
+						cost = { { "c", DRAKES_DREAMING_CREST, 15 } },
+						groups = {
 							currency(WHELPLINGS_DREAMING_CREST),
 						},
 					}),
 					i(210770, {	-- Satchel of Drake's Dreaming Crests
-						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
-						["cost"] = { { "c", WYRMS_DREAMING_CREST, 15 } },
-						["groups"] = {
+						timeline = { REMOVED_10_2_6_SEASON_FOUR },
+						cost = { { "c", WYRMS_DREAMING_CREST, 15 } },
+						groups = {
 							currency(DRAKES_DREAMING_CREST),
 						},
 					}),

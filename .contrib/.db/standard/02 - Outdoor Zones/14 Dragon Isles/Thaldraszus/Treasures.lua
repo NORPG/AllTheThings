@@ -2,98 +2,98 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, {
 		n(TREASURES, {
 			o(381731, {	-- A Timely Message
-				["coord"] = { 60.1, 85.0, THALDRASZUS },
+				coord = { 60.1, 85.0, THALDRASZUS },
 			}),
 			n(196172, {	-- Acorn Harvester
-				["description"] = "Bring nearby Acorn to Tree.",
-				["coord"] = { 49.4, 63.1, THALDRASZUS },
-				["questID"] = 70611,
-				["groups"] = {
+				description = "Bring nearby Acorn to Tree.",
+				coord = { 49.4, 63.1, THALDRASZUS },
+				questID = 70611,
+				groups = {
 					i(193066),	-- Chestnut (PET!)
 				},
 			}),
 			o(380867, {	-- Amber Gem Cluster
-				["coord"] = { 52.6, 76.7, THALDRASZUS },
-				["questID"] = 70408,
-				["cost"] = { { "i", 198852, 1 } },	-- 1x Yennu's Map
-				["groups"] = {
+				coord = { 52.6, 76.7, THALDRASZUS },
+				questID = 70408,
+				cost = { { "i", 198852, 1 } },	-- 1x Yennu's Map
+				groups = {
 					i(200863),	-- Glimmering Nozdorite Cluster
 					i(194651),	-- Design: Jeweled Amber Whelpling (RECIPE!)
 				},
 			}),
 			o(381735, {	-- Caretaker's Notes
-				["coord"] = { 62.4, 15.9, THALDRASZUS },
+				coord = { 62.4, 15.9, THALDRASZUS },
 			}),
 			o(381223, {	-- Cracked Hourglass
-				["description"] = "In a Cave.",
-				["coord"] = { 33.9, 76.9, THALDRASZUS },
-				["questID"] = 70607,
-				["cost"] = { { "i", 199068, 1 } },	-- 1x Time-Lost Memo
+				description = "In a Cave.",
+				coord = { 33.9, 76.9, THALDRASZUS },
+				questID = 70607,
+				cost = { { "i", 199068, 1 } },	-- 1x Time-Lost Memo
 			}),
 			o(381094, {	-- Elegant Canvas Brush
-				["coord"] = { 60.2, 41.6, THALDRASZUS },
-				["questID"] = 70609,
-				["groups"] = {
+				coord = { 60.2, 41.6, THALDRASZUS },
+				questID = 70609,
+				groups = {
 					i(203206),	-- Elegant Canvas Brush
 				},
 			}),
 			o(380429, {	-- Golden Claw
-				["coord"] = { 38.8, 45.01, THALDRASZUS },
-				["description"] = "Underneath the dragon statue.",
-				["groups"] = {
+				coord = { 38.8, 45.01, THALDRASZUS },
+				description = "Underneath the dragon statue.",
+				groups = {
 					i(198540),	-- Golden Claw
 				},
 			}),
 			o(381733, {	-- Guardian Wings
-				["coord"] = { 52.4, 38.8, THALDRASZUS },
+				coord = { 52.4, 38.8, THALDRASZUS },
 			}),
 			o(381732, {	-- Keeper's Blessing
-				["coord"] = { 58.2, 58.1, THALDRASZUS },
+				coord = { 58.2, 58.1, THALDRASZUS },
 			}),
 			o(381730, {	-- Mighty Ducks
-				["coord"] = { 42.8, 70.4, THALDRASZUS },
+				coord = { 42.8, 70.4, THALDRASZUS },
 			}),
 			o(381361, {	-- Precious Stone Fragment
-				["coord"] = { 57.1, 64.6, THALDRASZUS },
-				["description"] = "Underneath the right foot of the titan statue.",
-				["groups"] = {
+				coord = { 57.1, 64.6, THALDRASZUS },
+				description = "Underneath the right foot of the titan statue.",
+				groups = {
 					i(199893),	-- Precious Stone Fragment
 				},
 			}),
 			o(381107, {	-- Sand Pile
-				["coord"] = { 58.2, 80.1, THALDRASZUS },
-				["questID"] = 70608,
-				["cost"] = { { "i", 199069, 1 } },	-- 1x Yennu's Map
+				coord = { 58.2, 80.1, THALDRASZUS },
+				questID = 70608,
+				cost = { { "i", 199069, 1 } },	-- 1x Yennu's Map
 			}),
 			n(198604, {	-- Strange Bear Cub
-				["coord"] = { 52.5, 83.6, THALDRASZUS },
-				["questID"] = 72355,
-				["groups"] = {
+				coord = { 52.5, 83.6, THALDRASZUS },
+				questID = 72355,
+				groups = {
 					i(201463),	-- Cubbly (PET!)
 				},
 			}),
 			o(381216, {	-- Surveyor's Magnifying Glass
-				["coord"] = { 64.8, 16.5, THALDRASZUS },
-				["questID"] = 70610,
-				["groups"] = {
+				coord = { 64.8, 16.5, THALDRASZUS },
+				questID = 70610,
+				groups = {
 					i(193036),	-- Left-Handed Magnifying Glass
 				},
 			}),
 			o(410833, {	-- The Reforging of the Tyr's Guard
-				["sourceQuests"] = { 77344 },	-- Time to Process
-				["timeline"] = { ADDED_10_2_0 },
-				["coord"] = { 60.8, 63.8, THALDRASZUS },
-				["questID"] = 78330,
-				["groups"] = {
+				sourceQuests = { 77344 },	-- Time to Process
+				timeline = { ADDED_10_2_0 },
+				coord = { 60.8, 63.8, THALDRASZUS },
+				questID = 78330,
+				groups = {
 					i(210321),	-- The Reforging of the Tyr's Guard [book]
 				},
 			}),
 			o(376578, {	-- Titan Chest
-				["coords"] = {
+				coords = {
 					{ 34.1, 73.1, THALDRASZUS },
 					{ 34.3, 66.0, THALDRASZUS },
 					{ 34.7, 67.0, THALDRASZUS },
@@ -122,7 +122,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 60.6, 62.2, THALDRASZUS },
 					{ 61.9, 61.8, THALDRASZUS },
 				},
-				["groups"] = {
+				groups = {
 					i(201458),	-- Aegis of Tyrhold
 					i(201460),	-- Gavel of Tyrhold
 					i(201055),	-- Tyrhold Bindings
@@ -142,14 +142,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			o(381734, {	-- Together Bound
-				["coord"] = { 58.4, 67.8, THALDRASZUS },
+				coord = { 58.4, 67.8, THALDRASZUS },
 			}),
 			o(381736, {	-- Valdrakken
-				["coord"] = { 57.1, 81.4, VALDRAKKEN },
+				coord = { 57.1, 81.4, VALDRAKKEN },
 			}),
 			o(381108, {	-- Yennu's Map
-				["coord"] = { 54.9, 75.4, THALDRASZUS },
-				["groups"] = {
+				coord = { 54.9, 75.4, THALDRASZUS },
+				groups = {
 					i(199069),	-- Yennu's Map (CI!)
 				},
 			}),

@@ -5,9 +5,9 @@
 -- #if ANYCLASSIC
 -- Wouter NOTE: level 85 boosts became available in Classic shortly after the launch of Dragon Soul, with the Sha-Infused Epic Pack for MoP
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.MOP, bubbleDown({ ["u"] = REAL_MONEY, ["timeline"] = { ADDED_4_4_2 } }, {
+	expansion(EXPANSION.MOP, bubbleDown({ u = REAL_MONEY, timeline = { ADDED_4_4_2 } }, {
 		header(HEADERS.Achievement, 4826, {
-			["groups"] = {
+			groups = {
 				cl(DEATHKNIGHT, {
 					i(92110),	-- Scourgeheart Blade
 					i(92354),	-- Scourgeheart Hammer
@@ -90,7 +90,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				}),
 				cl(HUNTER, {
 					i(92193),	-- Forestwalker Rifle
-					i(92357, { ["timeline"] = { ADDED_4_4_2, REMOVED_5_5_0 } }),	-- Forestwalker Spear
+					i(92357, { timeline = { ADDED_4_4_2, REMOVED_5_5_0 } }),	-- Forestwalker Spear
 					i(92247),	-- Forestwalker Helm
 					i(92153),	-- Forestwalker Spaulders
 					i(92213),	-- Forestwalker Choker
@@ -124,7 +124,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 					i(92144),	-- Enlightened Idol of Destruction
 					i(92143),	-- Enlightened Stone of Destruction
 				}),
-				cl(MONK, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_0 } }, {
+				cl(MONK, bubbleDownSelf({ timeline = { ADDED_5_5_0 } }, {
 					i(92372),	-- Waterdancer Spire
 					i(92373),	-- Waterdancer Staff
 					i(92405),	-- Waterdancer Sword

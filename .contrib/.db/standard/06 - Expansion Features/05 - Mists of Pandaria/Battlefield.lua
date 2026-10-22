@@ -23,147 +23,147 @@ end]];
 -- #endif
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
-	["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 },
+	timeline = { ADDED_5_3_0, REMOVED_5_4_0 },
 	-- #if MOP
-	["OnUpdate"] = BATTLEFIELD_ONUPDATE,
+	OnUpdate = BATTLEFIELD_ONUPDATE,
 	-- #endif
 }, {
 	n(BATTLEFIELD_BARRENS, {
-		["description"] = "During 5.3 a big battle occurred in Barrens.",
-		["maps"] = {
+		description = "During 5.3 a big battle occurred in Barrens.",
+		maps = {
 			DUROTAR,
 			NORTHERN_BARRENS,
 			VALE_OF_ETERNAL_BLOSSOMS,
 		},
-		["groups"] = {
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(8307, {	-- Darkspear Revolutionary
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						title(228, {	-- Darkspear Revolutionary <Name>
-							["races"] = HORDE_ONLY,
+							races = HORDE_ONLY,
 						}),
 					}
 				}),
 				ach(8306, {	-- Hordebreaker
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						title(230, {	-- <Name> the Hordebreaker
-							["races"] = ALLIANCE_ONLY,
+							races = ALLIANCE_ONLY,
 						}),
 					}
 				}),
 			}),
 			n(QUESTS, {
 				q(32892, {	-- War is Coming
-					["isBreadcrumb"] = true,
+					isBreadcrumb = true,
 				}),
 				q(32808, {	-- A Little Field Work
-					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
-					["qg"] = 61962,	-- Lorewalker Cho
-					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
-					["races"] = ALLIANCE_ONLY,
+					sourceQuests = { 32807 },	-- The Warchief and the Darkness
+					qg = 61962,	-- Lorewalker Cho
+					coord = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
+					races = ALLIANCE_ONLY,
 				}),
 				q(32809, {	-- Gathering Intelligence
-					["sourceQuests"] = { 32808 },	-- A Little Field Work
-					["qg"] = 71027,	-- Amber Kearnen
-					["coord"] = { 54.4, 9.8, DUROTAR },
-					["races"] = ALLIANCE_ONLY,
+					sourceQuests = { 32808 },	-- A Little Field Work
+					qg = 71027,	-- Amber Kearnen
+					coord = { 54.4, 9.8, DUROTAR },
+					races = ALLIANCE_ONLY,
 				}),
 				q(32810, {	-- The Darkspear Rebellion
-					["sourceQuests"] = { 32809 },	-- Gathering Intelligence
-					["qg"] = 71027,	-- Amber Kearnen
-					["coord"] = { 54.4, 9.8, DUROTAR },
-					["races"] = ALLIANCE_ONLY,
+					sourceQuests = { 32809 },	-- Gathering Intelligence
+					qg = 71027,	-- Amber Kearnen
+					coord = { 54.4, 9.8, DUROTAR },
+					races = ALLIANCE_ONLY,
 				}),
 				q(32871, {	-- Vol'jin of the Darkspear
-					["sourceQuests"] = { 32810 },	-- The Darkspear Rebellion
-					["qg"] = 71320,	-- Zen'tabra
-					["coord"] = { 51.8, 39.2, DUROTAR },
-					["races"] = ALLIANCE_ONLY,
+					sourceQuests = { 32810 },	-- The Darkspear Rebellion
+					qg = 71320,	-- Zen'tabra
+					coord = { 51.8, 39.2, DUROTAR },
+					races = ALLIANCE_ONLY,
 				}),
 				q(32811, {	-- Battlefield: Barrens
-					["sourceQuests"] = { 32871 },	-- Vol'jin of the Darkspear
-					["qg"] = 70978,	-- Vol'jin
-					["coord"] = { 49.7, 40.1, DUROTAR },
-					["races"] = ALLIANCE_ONLY,
+					sourceQuests = { 32871 },	-- Vol'jin of the Darkspear
+					qg = 70978,	-- Vol'jin
+					coord = { 49.7, 40.1, DUROTAR },
+					races = ALLIANCE_ONLY,
 				}),
 				q(32895, {	-- The Road to War
-					["sourceQuests"] = { 32811 },	-- Battlefield: Barrens
-					["qg"] = 71336,	-- Gleep Chatterswitch
-					["coord"] = { 85.8, 59.6, VALE_OF_ETERNAL_BLOSSOMS },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["isWeekly"] = true,
+					sourceQuests = { 32811 },	-- Battlefield: Barrens
+					qg = 71336,	-- Gleep Chatterswitch
+					coord = { 85.8, 59.6, VALE_OF_ETERNAL_BLOSSOMS },
+					races = ALLIANCE_ONLY,
+					isBreadcrumb = true,
+					isWeekly = true,
 				}),
 				q(32872, {	-- Battlefield: Barrens
-					["sourceQuests"] = {
+					sourceQuests = {
 						32811,	-- Battlefield: Barrens
 						32895,	-- The Road to War
 					},
-					["qg"] = 71333,	-- Ki'ta Arrowtusk
-					["coord"] = { 49.8, 40.0, DUROTAR },
-					["races"] = ALLIANCE_ONLY,
-					["isWeekly"] = true,
-					["groups"] = {
+					qg = 71333,	-- Ki'ta Arrowtusk
+					coord = { 49.8, 40.0, DUROTAR },
+					races = ALLIANCE_ONLY,
+					isWeekly = true,
+					groups = {
 						i(RADICAL_MOJO),
 					},
 				}),
 				q(32812, {	-- The Darkspear Rebellion
-					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
-					["qg"] = 61962,	-- Lorewalker Cho
-					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
-					["races"] = HORDE_ONLY,
+					sourceQuests = { 32807 },	-- The Warchief and the Darkness
+					qg = 61962,	-- Lorewalker Cho
+					coord = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
+					races = HORDE_ONLY,
 				}),
 				q(32867, {	-- Vol'jin of the Darkspear
-					["sourceQuests"] = { 32812 },	-- The Darkspear Rebellion
-					["qg"] = 71333,	-- Ki'ta Arrowtusk
-					["coord"] = { 49.8, 40.0, DUROTAR },
-					["races"] = HORDE_ONLY,
+					sourceQuests = { 32812 },	-- The Darkspear Rebellion
+					qg = 71333,	-- Ki'ta Arrowtusk
+					coord = { 49.8, 40.0, DUROTAR },
+					races = HORDE_ONLY,
 				}),
 				q(32819, {	-- Battlefield: Barrens
-					["sourceQuests"] = { 32867 },	-- Vol'jin of the Darkspear
-					["qg"] = 70978,	-- Vol'jin
-					["coord"] = { 49.7, 40.1, DUROTAR },
-					["races"] = HORDE_ONLY,
+					sourceQuests = { 32867 },	-- Vol'jin of the Darkspear
+					qg = 70978,	-- Vol'jin
+					coord = { 49.7, 40.1, DUROTAR },
+					races = HORDE_ONLY,
 				}),
 				q(32813, {	-- Battle of Sen'jin Village
-					["sourceQuests"] = { 32819 },	-- Battlefield: Barrens
-					["qg"] = 70978,	-- Vol'jin
-					["coord"] = { 49.7, 40.1, DUROTAR },
-					["races"] = HORDE_ONLY,
+					sourceQuests = { 32819 },	-- Battlefield: Barrens
+					qg = 70978,	-- Vol'jin
+					coord = { 49.7, 40.1, DUROTAR },
+					races = HORDE_ONLY,
 				}),
 				q(32814, {	-- Battle of Razor Hill
-					["sourceQuests"] = { 32813 },	-- Battle of Sen'jin Village
-					["qg"] = 70978,	-- Vol'jin
-					["coord"] = { 49.7, 40.1, DUROTAR },
-					["races"] = HORDE_ONLY,
+					sourceQuests = { 32813 },	-- Battle of Sen'jin Village
+					qg = 70978,	-- Vol'jin
+					coord = { 49.7, 40.1, DUROTAR },
+					races = HORDE_ONLY,
 				}),
 				q(32896, {	-- The Road to War
-					["sourceQuests"] = { 32814 },	-- Battle of Razor Hill
-					["qg"] = 71483,	-- Abrogar Dusthoof
-					["coord"] = { 62.2, 23.8, VALE_OF_ETERNAL_BLOSSOMS },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["isWeekly"] = true,
+					sourceQuests = { 32814 },	-- Battle of Razor Hill
+					qg = 71483,	-- Abrogar Dusthoof
+					coord = { 62.2, 23.8, VALE_OF_ETERNAL_BLOSSOMS },
+					races = HORDE_ONLY,
+					isBreadcrumb = true,
+					isWeekly = true,
 				}),
 				q(32862, {	-- Battlefield: Barrens
-					["sourceQuests"] = {
+					sourceQuests = {
 						32814,	-- Battle of Razor Hill
 						32896,	-- The Road to War
 					},
-					["qg"] = 71333,	-- Ki'ta Arrowtusk
-					["coord"] = { 49.8, 40.0, DUROTAR },
-					["races"] = HORDE_ONLY,
-					["isWeekly"] = true,
-					["groups"] = {
+					qg = 71333,	-- Ki'ta Arrowtusk
+					coord = { 49.8, 40.0, DUROTAR },
+					races = HORDE_ONLY,
+					isWeekly = true,
+					groups = {
 						i(RADICAL_MOJO),
 					},
 				}),
 			}),
 			n(REWARDS, {
 				header(HEADERS.Item, LATENT_KORKRON_HELM, sharedData({
-					["cost"] = {
+					cost = {
 						{ "i", RADICAL_MOJO, 1 },
 						{ "i", LATENT_KORKRON_HELM, 1 },
 					},
@@ -189,7 +189,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 					i(97764),	-- Insurrection Helm
 				})),
 				header(HEADERS.Item, LATENT_KORKRON_SPAULDERS, sharedData({
-					["cost"] = {
+					cost = {
 						{ "i", RADICAL_MOJO, 1 },
 						{ "i", LATENT_KORKRON_SPAULDERS, 1 },
 					},
@@ -215,7 +215,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 					i(97761),	-- Insurrection Spaulders
 				})),
 				header(HEADERS.Item, LATENT_KORKRON_CHESTPIECE, sharedData({
-					["cost"] = {
+					cost = {
 						{ "i", RADICAL_MOJO, 1 },
 						{ "i", LATENT_KORKRON_CHESTPIECE, 1 },
 					},
@@ -241,7 +241,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 					i(97766),	-- Insurrection Breastplate
 				})),
 				header(HEADERS.Item, LATENT_KORKRON_GLOVES, sharedData({
-					["cost"] = {
+					cost = {
 						{ "i", RADICAL_MOJO, 1 },
 						{ "i", LATENT_KORKRON_GLOVES, 1 },
 					},
@@ -267,7 +267,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 					i(97763),	-- Insurrection Gauntlets
 				})),
 				header(HEADERS.Item, LATENT_KORKRON_BELT, sharedData({
-					["cost"] = {
+					cost = {
 						{ "i", RADICAL_MOJO, 1 },
 						{ "i", LATENT_KORKRON_BELT, 1 },
 					},
@@ -293,7 +293,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 					i(97762),	-- Insurrection Belt
 				})),
 				header(HEADERS.Item, LATENT_KORKRON_LEGGINGS, sharedData({
-					["cost"] = {
+					cost = {
 						{ "i", RADICAL_MOJO, 1 },
 						{ "i", LATENT_KORKRON_LEGGINGS, 1 },
 					},
@@ -319,7 +319,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 					i(97765),	-- Insurrection Legplates
 				})),
 				header(HEADERS.Item, LATENT_KORKRON_BOOTS, sharedData({
-					["cost"] = {
+					cost = {
 						{ "i", RADICAL_MOJO, 1 },
 						{ "i", LATENT_KORKRON_BOOTS, 1 },
 					},
@@ -347,8 +347,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 			}),
 			n(VENDORS, {
 				n(71226, {	-- Ravika <Darkspear Quartermaster> 5.3 Version
-					["description"] = "Rebellion Quartermaster during Barrens Battlefield.",
-					["groups"] = {
+					description = "Rebellion Quartermaster during Barrens Battlefield.",
+					groups = {
 						i(97901),	-- Griftah's Authentic Troll Shoes
 						i(97919),	-- Whole-Body Shinka' (TOY!)
 						i(97942),	-- Sen'jin Spirit Drum (TOY!)
@@ -381,7 +381,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ESCALATION, bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ESCALATION, bubbleDownSelf({ timeline = { ADDED_5_3_0 } }, {
 	m(KALIMDOR, {
 		m(DUROTAR, {
 			n(BATTLEFIELD_BARRENS, {

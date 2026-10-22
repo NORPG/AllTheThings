@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
+root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {
 	n(REWARDS, {
 		-- Benthic Items
 		container(169478, {	-- Benthic Bracers

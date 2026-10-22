@@ -46,8 +46,8 @@ local EncounterToLoot = {
 		i(195479),	-- Flametender's Legwraps
 		i(195477),	-- Scaldrons of Molten Might
 		i(195480, {	-- Seal of Diurna's Chosen
-			["sourceID"] = 181139,
-			["collectible"] = false,
+			sourceID = 181139,
+			collectible = false,
 		}),
 		i(195490),	-- Searing Blazecaster
 		i(195478),	-- Valdrakken Protector's Turncoat
@@ -62,8 +62,8 @@ local EncounterToLoot = {
 		i(195497),	-- Quake-Detecting Seismostaff
 		i(194303),	-- Rumbling Ruby
 		i(195502, {	-- Terros' Captive Core
-			["sourceID"] = 181161,
-			["collectible"] = false,
+			sourceID = 181161,
+			collectible = false,
 		}),
 	},
 	[THE_PRIMAL_COUNCIL] = {
@@ -92,8 +92,8 @@ local EncounterToLoot = {
 		i(195495),	-- Daring Chasm-Leapers
 		i(195494),	-- Dathea's Cyclonic Cage
 		i(195496, {	-- Eye of the Vengeful Hurricane
-			["sourceID"] = 181155,
-			["collectible"] = false,
+			sourceID = 181155,
+			collectible = false,
 		}),
 		i(195491),	-- Infused Stormglaives
 		i(195481),	-- Scepter of Drastic Measures
@@ -121,8 +121,8 @@ local EncounterToLoot = {
 		i(195524),	-- Matriarch's Opulent Girdle
 		i(195521),	-- Ornamental Drakonid Claw
 		i(195526, {	-- Seal of Filial Duty
-			["sourceID"] = 181185,
-			["collectible"] = false,
+			sourceID = 181185,
+			collectible = false,
 		}),
 		i(195522),	-- Tassets of the Tarasek Legion
 	},
@@ -143,8 +143,8 @@ local EncounterToLoot = {
 local ZoneDropLoot = {
 	i(202004),	-- Brawler's Earthen Cuirass [BoE]
 	i(201992, {	-- Emissary's Flamewrought Seal [BoE]
-		["sourceID"] = 184046,
-		["collectible"] = false,
+		sourceID = 184046,
+		collectible = false,
 	}),
 	i(202005),	-- Frozen Claw Mantle [BoE]
 	i(202008),	-- Galvanic Gaiters [BoE]
@@ -164,8 +164,8 @@ InstanceHelper.BossObjects = {
 }
 -- #if AFTER 12.0.5
 InstanceHelper.LFRQueueNPC = {	-- Queue NPC
-	["crs"] = { 262873 },	-- Luka Ferad <Storyteller>
-	["coord"] = { 58.5, 35.4, VALDRAKKEN },
+	crs = { 262873 },	-- Luka Ferad <Storyteller>
+	coord = { 58.5, 35.4, VALDRAKKEN },
 }
 -- #endif
 
@@ -315,9 +315,9 @@ InstanceHelper.ExtraLoots = {
 					i(200426),	-- Casque of the Walking Mountain
 				}),
 				i(217408, {	-- Awakened Tempostone
-					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
-					["sym"] = GET_SYM_DF_S4_TIER_TOKENS(),
-					["up"] = IGNORED_VALUE,
+					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					sym = GET_SYM_DF_S4_TIER_TOKENS(),
+					up = IGNORED_VALUE,
 				}),
 			},
 		}
@@ -328,9 +328,9 @@ local TIMELINE_LFR = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_2, ADDED_12_0_5 }
 
 root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1200, {	-- Vault of the Incarnates
-		["coord"] = { 73.0, 55.7, THALDRASZUS },
-		["timeline"] = { ADDED_10_0_2_LAUNCH },
-		["maps"] = {
+		coord = { 73.0, 55.7, THALDRASZUS },
+		timeline = { ADDED_10_0_2_LAUNCH },
+		maps = {
 			2119,	-- The Primal Bulwark
 			2120,	-- The Elemental Conclave
 			2121,	-- Galewind Crag
@@ -341,94 +341,94 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			2126,	-- The Clutchwarren
 			2135,	-- Valdrakken
 		},
-		["isRaid"] = true,
-		["groups"] = {
+		isRaid = true,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(17110, {	-- The Primal Bulwark
 					crit(55109, {	-- Eranog
-						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ERANOG, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55110, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55111, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { DATHEA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(17111, {	-- Caverns of Infusion
 					crit(55113, {	-- Terros
-						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { TERROS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55114, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SENNARTH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55115, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { KUROG, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(17112, {	-- Fury of the Storm
 					crit(55116, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { DIURNA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55117, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { RASZAGETH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(16343, {	-- Vault of the Incarnates
 					crit(55109, {	-- Eranog
-						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ERANOG, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55110, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55111, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { DATHEA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55113, {	-- Terros
-						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { TERROS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55114, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SENNARTH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55115, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { KUROG, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55116, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { DIURNA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(55117, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { RASZAGETH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(16345, {	-- Heroic: Vault of the Incarnates
 					crit(55121, {	-- Eranog
-						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { ERANOG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(55122, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(55123, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { DATHEA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(55124, {	-- Terros
-						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { TERROS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(55125, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { SENNARTH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(55127, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { KUROG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(55126, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { DIURNA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(55128, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { RASZAGETH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				}),
 				ach(16354, {	-- Mythic: Vault of the Incarnates
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						16346,	-- Mythic: Eranog
 						16347,	-- Mythic: Terros
 						16348,	-- Mythic: The Primal Council
@@ -441,7 +441,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				ach(16355, {	-- Glory of the Vault Raider
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						16335,	-- What Frozen Things Do
 						16365,	-- Little Friends
 						16364,	-- The Lunker Below
@@ -451,99 +451,99 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						16442,	-- Incubation Extermination
 						16451,	-- The Ol Raszle Daszle
 					}},
-					["groups"] = {
+					groups = {
 						i(192806),	-- Raging Magmammoth (MOUNT!)
 					},
 				}),
 				-- Awakened
 				ach(19564, {	-- Awakened Storms
-					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
-					["groups"] = {
+					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					groups = {
 						crit(64929, {	-- Eranog
-							["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+							_encounter = { ERANOG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 						}),
 						crit(64930, {	-- The Primal Council
-							["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+							_encounter = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 						}),
 						crit(64931, {	-- Terros
-							["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+							_encounter = { TERROS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 						}),
 						crit(64932, {	-- Sennarth, the Cold Breath
-							["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+							_encounter = { SENNARTH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 						}),
 						crit(64933, {	-- Dathea, Ascended
-							["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+							_encounter = { DATHEA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 						}),
 						crit(64934, {	-- Kurog Grimtotem
-							["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+							_encounter = { KUROG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 						}),
 						crit(64935, {	-- Broodkeeper Diurna
-							["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+							_encounter = { DIURNA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 						}),
 						crit(64936, {	-- Raszageth the Storm-Eater
-							["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+							_encounter = { RASZAGETH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 						}),
 					},
 				}),
 				ach(19565, {	-- Heroic: Awakened Storms
-					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
-					["groups"] = {
+					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					groups = {
 						crit(64937, {	-- Eranog
-							["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { ERANOG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(64938, {	-- The Primal Council
-							["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(64939, {	-- Terros
-							["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { TERROS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(64940, {	-- Sennarth, the Cold Breath
-							["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { SENNARTH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(64941, {	-- Dathea, Ascended
-							["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { DATHEA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(64942, {	-- Kurog Grimtotem
-							["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { KUROG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(64943, {	-- Broodkeeper Diurna
-							["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { DIURNA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(64944, {	-- Raszageth the Storm-Eater
-							["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { RASZAGETH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 					},
 				}),
 				ach(19566, {	-- Mythic: Awakened Storms
-					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
-					["groups"] = {
+					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					groups = {
 						crit(64945, {	-- Eranog
-							["_encounter"] = { ERANOG, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { ERANOG, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(64946, {	-- The Primal Council
-							["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(64947, {	-- Terros
-							["_encounter"] = { TERROS, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { TERROS, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(64948, {	-- Sennarth, the Cold Breath
-							["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { SENNARTH, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(64949, {	-- Dathea, Ascended
-							["_encounter"] = { DATHEA, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { DATHEA, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(64950, {	-- Kurog Grimtotem
-							["_encounter"] = { KUROG, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { KUROG, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(64951, {	-- Broodkeeper Diurna
-							["_encounter"] = { DIURNA, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { DIURNA, DIFFICULTY.RAID.MYTHIC },
 						}),
 						-- Criteria not found in past wagotools tables, typo maybe? Would explain there existing a mysterious extra.
 						-- crit(64952, {	-- Raszageth the Storm-Eater
-						-- 	["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
+						-- 	_encounter = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
 						-- }),
 						crit(64953, {	-- Raszageth the Storm-Eater (extra criteria??)
-							["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
 						}),
 					},
 				}),
@@ -553,33 +553,33 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				ach(16357),	-- Heroic: Vault of the Incarnates Guild Run
 			}),
 			o(382621, {	-- Revival Catalyst Console
-				["description"] = "The Revival Catalyst is a system that lets you convert non-set items from the Vault of the Incarnates Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
-				["coord"] = { 60.6, 53.8, THALDRASZUS },
-				["modelScale"] = 4,
-				["catalystID"] = 3,	-- ItemBonus.Value_0 DF:S1
-				["groups"] = {
+				description = "The Revival Catalyst is a system that lets you convert non-set items from the Vault of the Incarnates Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+				coord = { 60.6, 53.8, THALDRASZUS },
+				modelScale = 4,
+				catalystID = 3,	-- ItemBonus.Value_0 DF:S1
+				groups = {
 					Difficulty(DIFFICULTY.RAID.LFR, {
-						["upgradeTrackID"]=UPGRADETRACKS.VETERAN,
-						["timeline"] = TIMELINE_LFR}).AddGroups(
+						upgradeTrackID=UPGRADETRACKS.VETERAN,
+						timeline = TIMELINE_LFR}).AddGroups(
 						bubbleDownFiltered({bonusID=451},FILTERFUNC_itemID,
 						ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.LFR))
 					),
-					Difficulty(DIFFICULTY.RAID.NORMAL, {["upgradeTrackID"]=UPGRADETRACKS.CHAMPION}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.NORMAL, {upgradeTrackID=UPGRADETRACKS.CHAMPION}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.NORMAL)
 					),
-					Difficulty(DIFFICULTY.RAID.HEROIC, {["upgradeTrackID"]=UPGRADETRACKS.HERO}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.HEROIC, {upgradeTrackID=UPGRADETRACKS.HERO}).AddGroups(
 						bubbleDownFiltered({bonusID=1},FILTERFUNC_itemID,
 						ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.HEROIC))
 					),
-					Difficulty(DIFFICULTY.RAID.MYTHIC, {["upgradeTrackID"]=UPGRADETRACKS.MYTH}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.MYTHIC, {upgradeTrackID=UPGRADETRACKS.MYTH}).AddGroups(
 						bubbleDownFiltered({bonusID=450},FILTERFUNC_itemID,
 						ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.MYTHIC))
 					),
 				},
 			}),
-			CommonBossDrops(sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
+			CommonBossDrops(sharedData({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 				i(205962, {	-- Echoing Storm Flightstone
-					["timeline"] = { ADDED_10_1_0 },
+					timeline = { ADDED_10_1_0 },
 				}),
 				i(194642),	-- Design: Choker of Shielding (RECIPE!)
 				i(194259),	-- Pattern: Allied Cinch of Time Dilation (RECIPE!)
@@ -596,21 +596,21 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			})),
 			n(QUESTS, {
 				q(72261, {	-- More Than a Prison?
-					["provider"] = { "i", 201412 },	-- Ancient Vault Artifact
+					provider = { "i", 201412 },	-- Ancient Vault Artifact
 				}),
 				q(72259, {	-- Vault Artifacts
-					["provider"] = { "n", 197095 },	-- Lillian Brightmoon
-					["coord"] = { 35.2, 24.6, VALDRAKKEN },
-					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
-					["cost"] = { { "i", 201411, 1 } },	-- 1x Ancient Vault Artifact
-					["repeatable"] = true,
+					provider = { "n", 197095 },	-- Lillian Brightmoon
+					coord = { 35.2, 24.6, VALDRAKKEN },
+					maxReputation = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
+					cost = { { "i", 201411, 1 } },	-- 1x Ancient Vault Artifact
+					repeatable = true,
 				}),
 				q(72260, {	-- Vault Artifacts
-					["provider"] = { "n", 197095 },	-- Lillian Brightmoon
-					["coord"] = { 35.2, 24.6, VALDRAKKEN },
-					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
-					["cost"] = { { "i", 201411, 5 } },	-- 5x Ancient Vault Artifact
-					["repeatable"] = true,
+					provider = { "n", 197095 },	-- Lillian Brightmoon
+					coord = { 35.2, 24.6, VALDRAKKEN },
+					maxReputation = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
+					cost = { { "i", 201411, 5 } },	-- 5x Ancient Vault Artifact
+					repeatable = true,
 				}),
 			}),
 			n(ZONE_DROPS, {
@@ -631,7 +631,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (MM!)
 				}),
 			}),
-			Difficulty(DIFFICULTY.RAID.LFR, {["timeline"] = TIMELINE_LFR}).AddGroups({
+			Difficulty(DIFFICULTY.RAID.LFR, {timeline = TIMELINE_LFR}).AddGroups({
 				ZoneDrops(),
 				header(HEADERS.Achievement, 17110, {	-- The Primal Bulwark
 					Boss(ERANOG),
@@ -677,8 +677,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(71018, {	-- Vault of the Incarnates: Break a Few Eggs (N)
-						["provider"] = { "n", 193460 },	-- Kalecgos
-						["groups"] = {
+						provider = { "n", 193460 },	-- Kalecgos
+						groups = {
 							i(200225),	-- Shard of the Greatstaff
 						},
 					}),
@@ -708,7 +708,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				BossOnly(KUROG),
 				BossOnly(DIURNA),
 				BossOnly(RASZAGETH, {
-					ach(17107, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Ahead of the Curve: Raszageth the Storm-Eater
+					ach(17107, {timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Ahead of the Curve: Raszageth the Storm-Eater
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
@@ -717,8 +717,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				n(QUESTS, {
 					q(71019, {	-- Vault of the Incarnates: Break a Few Eggs (H)
-						["provider"] = { "n", 193460 },	-- Kalecgos
-						["groups"] = {
+						provider = { "n", 193460 },	-- Kalecgos
+						groups = {
 							i(200226),	-- Shard of the Greatstaff
 						},
 					}),
@@ -739,20 +739,20 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				n(QUESTS, {
 					q(71020, {	-- Vault of the Incarnates: Break a Few Eggs (M)
-						["provider"] = { "n", 193460 },	-- Kalecgos
-						["groups"] = {
+						provider = { "n", 193460 },	-- Kalecgos
+						groups = {
 							i(200227),	-- Shard of the Greatstaff
 						},
 					}),
 				}),
 				ZoneDrops(),
 				n(ZONE_DROPS, sharedData({	-- First 2 weeks BoP version drops
-					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH },
+					timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH },
 				},{
 					i(202146),	-- Brawler's Earthen Cuirass [BoP]
 					i(202148, {	-- Emissary's Flamewrought Seal [BoP]
-						["sourceID"] = 184133,
-						["collectible"] = false,
+						sourceID = 184133,
+						collectible = false,
 					}),
 					i(202145),	-- Frozen Claw Mantle [BoP]
 					i(202150),	-- Galvanic Gaiters [BoP]
@@ -788,18 +788,18 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						title(488),	-- <Name> the Storm-Eater
 					}),
 					ach(16358),	-- Mythic: Raszageth the Storm-Eater Guild Run
-					ach(17108, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Cutting Edge: Raszageth the Storm-Eater
+					ach(17108, {timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Cutting Edge: Raszageth the Storm-Eater
 					ach(17116, {	-- Hall of Fame: Raszageth the Storm-Eater (A)
-						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
-						["groups"] = {
+						races = ALLIANCE_ONLY,
+						timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+						groups = {
 							title(487),	-- <Name>, Famed Slayer of Raszageth
 						},
 					}),
 					ach(17118, {	-- Hall of Fame: Raszageth the Storm-Eater (H)
-						["races"] = HORDE_ONLY,
-						["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
-						["groups"] = {
+						races = HORDE_ONLY,
+						timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+						groups = {
 							title(487),	-- <Name>, Famed Slayer of Raszageth
 						},
 					}),
@@ -811,8 +811,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	inst(1200, {	-- Vault of the Incarnates
-		["timeline"] = { ADDED_10_0_2_LAUNCH },
-		["groups"] = {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
 			q(72264),	-- 'Anicent Vault Artifact' first drop per week
 			q(72612),	-- Volcanius (trash)
 			q(70076),	-- Eranog (N)

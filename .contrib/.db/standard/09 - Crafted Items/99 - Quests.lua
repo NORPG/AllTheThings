@@ -4,14 +4,14 @@
 
 -- These are Quests which have no restriction on the Quest itself but requires some Profession-made Thing to start the Quest
 root(ROOTS.Craftables, {
-	expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
 		n(QUESTS, {
 			q(31752, {	-- Blingtron 4000
-				["qg"] = 43929,	-- Blingtron 4000
-				["isDaily"] = true,
-				["groups"] = {
+				qg = 43929,	-- Blingtron 4000
+				isDaily = true,
+				groups = {
 					i(86623, {	-- Blingtron 4000 Gift Package
-						["sym"] = {{"select","itemID",
+						sym = {{"select","itemID",
 							87250,	-- Depleted-Kyparium Rocket (MOUNT!)
 							87251,	-- Geosynchronous World Spinner (MOUNT!)
 							41508,	-- Mechano-Hog (MOUNT!)
@@ -22,18 +22,18 @@ root(ROOTS.Craftables, {
 							11825,	-- Pet Bombling (PET!)
 							21277,	-- Tranquil Mechanical Yeti (PET!)
 						}},
-						["groups"] = {
+						groups = {
 							applyclassicphase(MOP_PHASE_ESCALATION, i(97985, {	-- Dusty Old Robot (QI!)
-								["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+								timeline = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 								-- Wouter NOTE: in MoP Classic, this started dropping in Phase 2 (Landfall) already
 								-- #if BEFORE 5.5.3
-								["description"] = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
+								description = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
 								-- #endif
 							})),
 							i(103670),	-- Lil' Bling (PET!)
 							i(90561, {	-- Eternium Rose
 								-- #if AFTER 6.2.0
-								["description"] = "Can be turned in in Booty Bay for a bag of gold!",
+								description = "Can be turned in in Booty Bay for a bag of gold!",
 								-- #endif
 							}),
 						},
@@ -42,20 +42,20 @@ root(ROOTS.Craftables, {
 			}),
 		}),
 	}))),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+	expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 		n(QUESTS, {
 			q(34774, {	-- Blingtron 5000
-				["qg"] = 77789,	-- Blingtron 5000
-				["isDaily"] = true,
-				["groups"] = {
+				qg = 77789,	-- Blingtron 5000
+				isDaily = true,
+				groups = {
 					ach(9071, {	-- Inspector Gadgetzan (automated)
-						["_doautomation"] = true,	-- otherwise ignored from quest parent
+						_doautomation = true,	-- otherwise ignored from quest parent
 					}),
 					i(113258, {	-- Blingtron 5000 Gift Package
-						["sym"] = {{"select","itemID",86623},{"pop"}},	-- Blingtron 4000 Gift Package
-						["groups"] = {
+						sym = {{"select","itemID",86623},{"pop"}},	-- Blingtron 4000 Gift Package
+						groups = {
 							i(97985, {	-- Dusty Old Robot (QI!)
-								["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
+								timeline = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
 							}),
 							i(115483),	-- Sky-Bo (PET!)
 							i(123851),	-- Photo B.O.M.B. (TOY!)
@@ -75,35 +75,35 @@ root(ROOTS.Craftables, {
 			}),
 		}),
 	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 		n(QUESTS, {
 			q(40753, {	-- Blingtron 6000
-				["qg"] = 101527,	-- Blingtron 6000
-				["isDaily"] = true,
-				["groups"] = {
+				qg = 101527,	-- Blingtron 6000
+				isDaily = true,
+				groups = {
 					i(132892, {	-- Blingtron 6000 Gift Package
-						["sym"] = {{"select","itemID",113258},{"pop"},	-- Blingtron 5000 Gift Package
+						sym = {{"select","itemID",113258},{"pop"},	-- Blingtron 5000 Gift Package
 							{"select","itemID",
 								136631,	-- Surface-to-Infernal Rocket Launcher
 								136630,	-- "Twirling Bottom" Repeaater"
 								136629,	-- Felgibber Shotgun
 								136632,	-- Chaos Blaster
 						}},
-						["groups"] = { i(136911) },	-- Knockoff Blingtron (PET!)
+						groups = { i(136911) },	-- Knockoff Blingtron (PET!)
 					}),
 				},
 			}),
 		}),
 	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
+	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {
 		n(QUESTS, {
 			q(56042, {	-- Blingtron 7000
-				["qg"] = 153897,	-- Blingtron 7000
-				["isDaily"] = true,
-				["groups"] = {
+				qg = 153897,	-- Blingtron 7000
+				isDaily = true,
+				groups = {
 					i(168740, {	-- Blingtron 7000 Gift Package
-						["sym"] = {{"select","itemID",132892},{"pop"}},	-- Blingtron 6000 Gift Package
-						["groups"] = {
+						sym = {{"select","itemID",132892},{"pop"}},	-- Blingtron 6000 Gift Package
+						groups = {
 							i(170060, {	-- Encrypted Message
 								i(170055),	-- Decrypted Message 001-322
 								i(170056),	-- Decrypted Message 001-346

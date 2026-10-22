@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_DRAGONSCALE_EXPEDITION, {
 		n(TREASURES, {
 			i(199061),	-- A Guide to Rare Fish (CI!)
@@ -16,58 +16,58 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			i(199068),	-- Time-Lost Memo (CI!)
 			n(WEEKLY_PROFESSION_KNOWLEDGE, {
 				i(193891, {	-- Experimental Substance
-					["requireSkill"] = ALCHEMY,
+					requireSkill = ALCHEMY,
 				}),
 				i(193897, {	-- Reawakened Catalyst
-					["requireSkill"] = ALCHEMY,
+					requireSkill = ALCHEMY,
 				}),
 				i(192131, {	-- Valdrakken Weapon Chain
-					["requireSkill"] = BLACKSMITHING,
+					requireSkill = BLACKSMITHING,
 				}),
 				i(192132, {	-- Draconium Blade Sharpener
-					["requireSkill"] = BLACKSMITHING,
+					requireSkill = BLACKSMITHING,
 				}),
 				i(193900, {	-- Prismatic Focusing Shard
-					["requireSkill"] = ENCHANTING,
+					requireSkill = ENCHANTING,
 				}),
 				i(193901, {	-- Primal Dust
-					["requireSkill"] = ENCHANTING,
+					requireSkill = ENCHANTING,
 				}),
 				i(193902, {	-- Eroded Titan Gizmo
-					["requireSkill"] = ENGINEERING,
+					requireSkill = ENGINEERING,
 				}),
 				i(193903, {	-- Watcher Power Core
-					["requireSkill"] = ENGINEERING,
+					requireSkill = ENGINEERING,
 				}),
 				i(193904, {	-- Phoenix Feather Quill
-					["requireSkill"] = INSCRIPTION,
+					requireSkill = INSCRIPTION,
 				}),
 				i(193905, {	-- Iskaaran Trading Ledger
-					["requireSkill"] = INSCRIPTION,
+					requireSkill = INSCRIPTION,
 				}),
 				i(193909, {	-- Ancient Gem Fragments
-					["requireSkill"] = JEWELCRAFTING,
+					requireSkill = JEWELCRAFTING,
 				}),
 				i(193907, {	-- Chipped Tyrstone
-					["requireSkill"] = JEWELCRAFTING,
+					requireSkill = JEWELCRAFTING,
 				}),
 				i(193910, {	-- Molted Dragon Scales
-					["requireSkill"] = LEATHERWORKING,
+					requireSkill = LEATHERWORKING,
 				}),
 				i(193913, {	-- Preserved Animal Parts
-					["requireSkill"] = LEATHERWORKING,
+					requireSkill = LEATHERWORKING,
 				}),
 				i(193898, {	-- Umbral Bone Needle
-					["requireSkill"] = TAILORING,
+					requireSkill = TAILORING,
 				}),
 				i(193899, {	-- Primalweave Spindle
-					["requireSkill"] = TAILORING,
+					requireSkill = TAILORING,
 				}),
 			}),
 			o_repeated({	-- Disturbed Dirt (all 5 of them)
-				["cost"] = { { "i", 191304, 1 } },	-- Sturdy Expedition Shovel
-				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-				["sym"] = {{"select","itemID",
+				cost = { { "i", 191304, 1 } },	-- Sturdy Expedition Shovel
+				maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				sym = {{"select","itemID",
 					199061,	-- A Guide to Rare Fish
 					199062,	-- Ruby Gem Cluster Map
 					194540,	-- Nokhud Armorer's Notes
@@ -112,7 +112,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					201393,	-- Dragonspawn Spellweaver's Focus
 					201392,	-- Drakonid Striker's Cutlass
 				}},
-				["groups"] = {
+				groups = {
 					o(383735),	-- Disturbed Dirt
 					o(376386),	-- Disturbed Dirt
 					o(383734),	-- Disturbed Dirt
@@ -122,9 +122,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			o(376587, {	-- Expedition Scout's Pack
-				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				-- No coords. Wowhead has literally over 1,000 coords for it
-				["sym"] = {{"select","itemID",
+				sym = {{"select","itemID",
 					-- Common Drops
 					199061,	-- A Guide to Rare Fish
 					199062,	-- Ruby Gem Cluster Map
@@ -153,7 +153,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					193898,	-- Umbral Bone Needle
 					193899,	-- Primalweave Spindle
 				}},
-				["groups"] = {
+				groups = {
 					i(201391),	-- Drakonid Enforcer's Hidesplitter
 					i(201387),	-- Drakonid Stalker's Halberd
 					i(201386),	-- Drakonid Defender's Pike
@@ -172,7 +172,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			o(376426, {	-- Magic-Bound Chest
-				["providers"] = {
+				providers = {
 					{ "n", 192012 },	-- Icy Lock (vignette)
 					{ "n", 191861 },	-- Magic-Bound Chest (vignette)
 					{ "n", 191905 },	-- Magic-Bound Chest (vignette)
@@ -180,8 +180,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					{ "o", 385074 },	-- Magic-Bound Chest (vignette)
 					{ "o", 385075 },	-- Magic-Bound Chest (vignette)
 				},
-				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-				["sym"] = {{"select","itemID",
+				maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				sym = {{"select","itemID",
 					199061,	-- A Guide to Rare Fish
 					199062,	-- Ruby Gem Cluster Map
 					194540,	-- Nokhud Armorer's Notes

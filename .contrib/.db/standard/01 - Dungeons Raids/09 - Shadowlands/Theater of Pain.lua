@@ -2,32 +2,32 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1187, {	-- Theater of Pain
-		["coord"] = { 53.1, 53.0, MALDRAXXUS },
-		["maps"] = {
+		coord = { 53.1, 53.0, MALDRAXXUS },
+		maps = {
 			1683,	-- Theater of Pain
 			1684,	-- Chamber of Conquest
 			1685,	-- Altars of Agony
 			1686,	-- Upper Barrow of Carnage
 			1687,	-- Lower Barrow of Carnage
 		},
-		["groups"] = {
+		groups = {
 			n(QUESTS, {
 				q(58095, {	-- Theater of Pain: Help Wanted
-					["provider"] = { "n", 159689 },	-- Overseer Kalvaros
-					["coord"] = { 54.0, 50.8, MALDRAXXUS },
-					["_drop"] = { "g" },	-- Anima Trash
+					provider = { "n", 159689 },	-- Overseer Kalvaros
+					coord = { 54.0, 50.8, MALDRAXXUS },
+					_drop = { "g" },	-- Anima Trash
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2397, {	-- An Affront of Challengers
-					["crs"] = {
+					crs = {
 						164451,	-- Dessia the Decapitator
 						164463,	-- Paceran the Virulent
 						164461,	-- Sathel the Accursed
 					},
-					["groups"] = {
+					groups = {
 						-- Legendaries
 						i(183332),	-- Memory of the Master Assassin's Mark
 						-- Conduits
@@ -46,8 +46,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2401, {	-- Gorechop
-					["crs"] = { 162317 },	-- Gorechop
-					["groups"] = {
+					crs = { 162317 },	-- Gorechop
+					groups = {
 						-- Conduits
 						i(183510),	-- Count the Odds
 						i(180932),	-- Fueled by Violence
@@ -61,8 +61,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2390, {	-- Xav the Unfallen
-					["crs"] = { 162329 },	-- Xav the Unfallen
-					["groups"] = {
+					crs = { 162329 },	-- Xav the Unfallen
+					groups = {
 						-- Legendaries
 						i(183220),	-- Memory of Razelikh's Defilement
 						i(183300),	-- Memory of the Magistrate's Judgment
@@ -82,8 +82,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2389, {	-- Kul'tharok
-					["crs"] = { 162309 },	-- Kul'tharok
-					["groups"] = {
+					crs = { 162309 },	-- Kul'tharok
+					groups = {
 						-- Legendaries
 						i(182617),	-- Memory of Death's Embrace
 						i(183375),	-- Memory of the Diabolic Raiment
@@ -101,8 +101,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2417, {	-- Mordretha, the Endless Empress
-					["crs"] = { 165946 },	-- Mordretha, the Endless Empress
-					["groups"] = {
+					crs = { 165946 },	-- Mordretha, the Endless Empress
+					groups = {
 						ach(14372),	-- Theater of Pain
 						-- Legendaries
 						i(183314),	-- Memory of Cauterizing Shadows
@@ -126,20 +126,20 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2417, {	-- Mordretha, the Endless Empress
-					["crs"] = { 165946 },	-- Mordretha, the Endless Empress
-					["groups"] = {
+					crs = { 165946 },	-- Mordretha, the Endless Empress
+					groups = {
 						ach(14416),	-- Heroic: Theater of Pain
 					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2397, {	-- An Affront of Challengers
-					["crs"] = {
+					crs = {
 						164451,	-- Dessia the Decapitator
 						164463,	-- Paceran the Virulent
 						164461,	-- Sathel the Accursed
 					},
-					["groups"] = {
+					groups = {
 						ach(14297, {	-- Three Choose One
 							crit(48444),	-- Paceran the Virulent
 							crit(48445),	-- Sathel the Accursed
@@ -148,14 +148,14 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2401, {	-- Gorechop
-					["crs"] = { 162317 },	-- Gorechop
-					["groups"] = {
+					crs = { 162317 },	-- Gorechop
+					groups = {
 						ach(14607),	-- Fresh Meat!
 					},
 				}),
 				e(2417, {	-- Mordretha, the Endless Empress
-					["crs"] = { 165946 },	-- Mordretha, the Endless Empress
-					["groups"] = {
+					crs = { 165946 },	-- Mordretha, the Endless Empress
+					groups = {
 						ach(14417),	-- Mythic: Theater of Pain
 						ach(14385),	-- Mythic: Theater of Pain Guild Run
 						ach(14533),	-- Royal Rumble

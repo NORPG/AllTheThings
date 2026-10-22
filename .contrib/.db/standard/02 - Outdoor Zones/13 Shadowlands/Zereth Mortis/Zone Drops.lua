@@ -2,35 +2,35 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_DROPS, {
 			i(189704, {	-- Dominance Key
-				["cr"] = 181403,	-- Mawsworn Inquisitor
+				cr = 181403,	-- Mawsworn Inquisitor
 			}),
 			i(187707),	-- Progenitor Essentia
 			i(187704),	-- Protoflesh
 			i(192444, {	-- Resonating Disc
-				["timeline"] = { ADDED_9_2_5 },
+				timeline = { ADDED_9_2_5 },
 			}),
 			i(190198),	-- Sandworn Chest Key Fragment
 			i(190197, {	-- Sandworn Chest Key
-				["cost"] = { { "i", 190198, 5 } },	-- Sandworn Chest Key Fragment
+				cost = { { "i", 190198, 5 } },	-- Sandworn Chest Key Fragment
 			}),
 			i(187703),	-- Silken Protofiber
 			i(190579),	-- Unformed Essence
 			filter(COSMETIC, {
 				i(190951, {	-- Distinguished Blade of Cartel Al
-					["cr"] = 181407,	-- Mawsworn Striker
+					cr = 181407,	-- Mawsworn Striker
 				}),
 				i(190950, {	-- Gavel of Lost Purpose
-					["cr"] = 181407,	-- Mawsworn Striker
+					cr = 181407,	-- Mawsworn Striker
 				}),
 				i(190948, {	-- Staff of the Dormant Oracle
-					["cr"] = 181407,	-- Mawsworn Striker
+					cr = 181407,	-- Mawsworn Striker
 				}),
 				i(190735, {	-- Varruth's Guillotine
-					["cr"] = 181407,	-- Mawsworn Striker
+					cr = 181407,	-- Mawsworn Striker
 				}),
 			}),
 			filter(CLOAKS, {
@@ -93,8 +93,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			filter(RECIPES, {
 				i(189468, {	-- Schematic: Goldplate Bufonid
-					["cr"] = 178803,	-- Accelerated Bufonid
-					["coords"] = {
+					cr = 178803,	-- Accelerated Bufonid
+					coords = {
 						{ 49.8, 72.6, ZERETH_MORTIS },
 						{ 51.8, 75.8, ZERETH_MORTIS },
 						{ 76.8, 45.2, ZERETH_MORTIS },
@@ -105,22 +105,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				i(190585, {	-- Schematic: Heartbond Lupine
-					["cr"] = 179939,	-- Maw-Frenzied Lupine
+					cr = 179939,	-- Maw-Frenzied Lupine
 				}),
 				i(189459, {	-- Schematic: Mawdapted Raptora
-					["cr"] = 181412,	-- Mawsworn Hulk
+					cr = 181412,	-- Mawsworn Hulk
 				}),
 			}),
 			filter(REAGENTS, {
 				i(188957),	-- Genesis Mote
 				i(187636, {	-- Aurelid Lattice
-					["crs"] = {
+					crs = {
 						182688,	-- Aurelid
 						180978,	-- Hirukon <Aurelid Prime>
 					},
 				}),
 				i(187633, {	-- Bufonid Lattice
-					["crs"] = {
+					crs = {
 						178803,	-- Accelerated Bufonid
 						184603,	-- Ancient Bufonid
 						178963,	-- Gorkek <Bufonid Prime>
@@ -130,7 +130,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				i(187635, {	-- Cervid Lattice
-					["crs"] = {
+					crs = {
 						182269,	-- Carnivorous Cervid
 						180049,	-- Cervid Grazer
 						178098,	-- Cervid Grazer
@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				i(189146, {	-- Geomental Lattice
-					["crs"] = {
+					crs = {
 						180930,	-- Forgotten Geomental
 						181968,	-- Generated Automental
 						178560,	-- Hulking Geomental
@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				i(189145, {	-- Helicid Lattice
-					["crs"] = {
+					crs = {
 						178831,	-- Accelerated Helicid
 						179043,	-- Orixal <Gastropod Prime>
 						185487,	-- Overgrown Helicid
@@ -162,20 +162,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				i(189147, {	-- Leporid Lattice
-					["crs"] = {
+					crs = {
 						185270,	-- Agitated Leponid
 						185267,	-- Clutch Guardian
 					},
 				}),
 				i(190388, {	-- Lupine Lattice
-					["crs"] = {
+					crs = {
 						180051,	-- Lupine Animate
 						181484,	-- Mawtouched Animate
 						181360,	-- Vexis <Lupine Prime>
 					},
 				}),
 				i(189149, {	-- Proto Avian Lattice
-					["crs"] = {
+					crs = {
 						184623,	-- Ancient Avian
 						182096,	-- Enhanced Avian
 						183674,	-- Enhanced Avian
@@ -183,7 +183,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				i(189150, {	-- Raptora Lattice
-					["crs"] = {
+					crs = {
 						179004,	-- Basal Raptora
 						181352,	-- Bitterbeak
 						183274,	-- Desert Nester
@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				i(189151, {	-- Scarabid Lattice
-					["crs"] = {
+					crs = {
 						178563,	-- Hadeon the Stonebreaker <Scarabid Prime>
 						183927,	-- Sand Matriarch Ileus
 						178155,	-- Scarabid Burrower
@@ -205,20 +205,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				i(189152, {	-- Tarachnid Lattice
-					["crs"] = {
+					crs = {
 						178508,	-- Mother Phestis <Tarachnid Prime>
 						181685,	-- Tarachnid
 						181687,	-- Tarachnid Hatchling
 					},
 				}),
 				i(189153, {	-- Unformed Lattice
-					["crs"] = {
+					crs = {
 						184660,	-- Adrift Core
 						180917,	-- Destabilized Core
 					},
 				}),
 				i(189154, {	-- Vespoid Lattice
-					["crs"] = {
+					crs = {
 						178229,	-- Feasting
 						185486,	-- Furious Vespoid
 						178159,	-- Vespoid Drone
@@ -228,12 +228,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				i(189155, {	-- Viperid Lattice
-					["crs"] = {
+					crs = {
 						181086,	-- Desert Viperid
 					},
 				}),
 				i(189156, {	-- Vombata Lattice
-					["crs"] = {
+					crs = {
 						181963,	-- Generated Dire Vombata
 						178913,	-- Grasslands Vombata
 						181359,	-- Mawtouched Bull
@@ -249,7 +249,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				i(189162),	-- Glimmer of Metamorphosis
 				i(189163),	-- Glimmer of Motion
 				i(189164, {	-- Glimmer of Multiplicity
-					["crs"] = {
+					crs = {
 						185486,	-- Furious Vespoid
 						182319,	-- Skittering Nibbler
 						178158,	-- Vespoid Worker
@@ -259,21 +259,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				i(189165, {	-- Glimmer of Predation
-					["crs"] = {
+					crs = {
 						181116,	-- Dematerializing Worldeater
 					},
-					["coords"] = {
+					coords = {
 						{ 40.4, 24.8, ZERETH_MORTIS },
 						{ 43.8, 23.6, ZERETH_MORTIS },
 						{ 47.8, 25.8, ZERETH_MORTIS },
 					},
 				}),
 				i(189166, {	-- Glimmer of Renewal
-					["crs"] = {
+					crs = {
 						182322,	-- Carnivorous Overgrowth
 						182217,	-- Carnivorous Overgrowth
 					},
-					["coords"] = {
+					coords = {
 						{ 45.0, 73.8, ZERETH_MORTIS },
 						{ 48.6, 76.2, ZERETH_MORTIS },
 						{ 45.2, 87.8, ZERETH_MORTIS },
@@ -283,12 +283,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				i(189169, {	-- Glimmer of Survival
-					["crs"] = {
+					crs = {
 						183884,	-- Climbing Brambles
 						182326,	-- Creeping Brambles
 						182215,	-- Creeping Brambles
 					},
-					["coords"] = {
+					coords = {
 						{ 44.0, 80.6, ZERETH_MORTIS },
 						{ 49.2, 83.0, ZERETH_MORTIS },
 						{ 49.2, 77.0, ZERETH_MORTIS },
@@ -297,12 +297,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				i(189170, {	-- Glimmer of Vigilance
-					-- ["description"] = "Drops from Vine-Choked Protectors & Overgrown Drifter",	-- No description due translations?
-					["crs"] = {
+					-- description = "Drops from Vine-Choked Protectors & Overgrown Drifter",	-- No description due translations?
+					crs = {
 						182350,	-- Vine-Choked Protector
 						182364,	-- Overgrown Drifter
 					},
-					["coords"] = {
+					coords = {
 						{ 45.4, 85.6, ZERETH_MORTIS },
 						{ 44.0, 88.6, ZERETH_MORTIS },
 						{ 50.8, 86.2, ZERETH_MORTIS },
@@ -312,8 +312,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				-- Mount Protoform
 				i(189173, {	-- Eternal Ragepearl
-					["description"] = "Most mobs in the desert drop those, top right of Zereth Mortis.",
-					["crs"] = {
+					description = "Most mobs in the desert drop those, top right of Zereth Mortis.",
+					crs = {
 						183225,	-- Cliff Reclaimer
 						184268,	-- Discordant Sentry
 						183253,	-- Dominated Runeshaper
@@ -325,14 +325,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				i(189176, {	-- Protoform Sentience Crown
-					["description"] = "Drops from Automas, best farmed during the Dangerous State Daily.",
+					description = "Drops from Automas, best farmed during the Dangerous State Daily.",
 				}),
 				i(189180, {	-- Wind's Infinite Call
-					["crs"] = {
+					crs = {
 						182096,	-- Enhanced Avian
 						183674,	-- Enhanced Avian
 					},
-					["coords"] = {
+					coords = {
 						{ 77.2, 46.6, ZERETH_MORTIS },
 						{ 77.6, 59.0, ZERETH_MORTIS },
 						{ 51.2, 62.8, ZERETH_MORTIS },

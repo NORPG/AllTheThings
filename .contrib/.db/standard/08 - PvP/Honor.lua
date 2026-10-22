@@ -3,25 +3,25 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, pvp(n(PVP_HONOR, {
-	["timeline"] = { ADDED_8_0_1 },
-	["groups"] = {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		currency(HONOR, {	-- Honor
-			["timeline"] = { ADDED_9_0_1 }
+			timeline = { ADDED_9_0_1 }
 		}),
 		n(ACHIEVEMENTS, {
 			ach(12893, {	-- Honor Level 5
-				["groups"] = {
+				groups = {
 					i(142380, {	-- Dutiful Gruntling (PET!)
-						["races"] = HORDE_ONLY,
-						["crs"] = {
+						races = HORDE_ONLY,
+						crs = {
 							119272,	-- Sarah the Savage (Horde / Dalaran)
 							145837,	-- Violet Shadowmend (Horde / Zuldazar)
 							146626,	-- Legionaire Voladis (Horde / OG)
 						},
 					}),
 					i(142379, {	-- Dutiful Squire (PET!)
-						["races"] = ALLIANCE_ONLY,
-						["crs"] = {
+						races = ALLIANCE_ONLY,
+						crs = {
 							119484,	-- Captain Roberts (Ally / Dalaran)
 							146633,	-- Knight-Captain Jessica (Ally / SW)
 							145838,	-- Marshal Frazer (Ally / Boralus)
@@ -37,16 +37,16 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 			}),
 			ach(12900, {	-- Honor Level 20
 				i(139776, {	-- Horde Fanatic (PET!)
-					["races"] = HORDE_ONLY,
-					["crs"] = {
+					races = HORDE_ONLY,
+					crs = {
 						119272,	-- Sarah the Savage (Horde / Dalaran)
 						145837,	-- Violet Shadowmend (Horde / Zuldazar)
 						146626,	-- Legionaire Voladis (Horde / OG)
 					},
 				}),
 				i(139775, {	-- Alliance Enthusiast (PET!)
-					["races"] = ALLIANCE_ONLY,
-					["crs"] = {
+					races = ALLIANCE_ONLY,
+					crs = {
 						119484,	-- Captain Roberts (Ally / Dalaran)
 						146633,	-- Knight-Captain Jessica (Ally / SW)
 						145838,	-- Marshal Frazer (Ally / Boralus)
@@ -100,16 +100,16 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 			}),
 			ach(12916, {	-- Honor Level 400
 				i(163974, {	-- Bucketshell (PET!)
-					["races"] = HORDE_ONLY,
-					["crs"] = {
+					races = HORDE_ONLY,
+					crs = {
 						119272,	-- Sarah the Savage (Horde / Dalaran)
 						145837,	-- Violet Shadowmend (Horde / Zuldazar)
 						146626,	-- Legionaire Voladis (Horde / OG)
 					},
 				}),
 				i(163975, {	-- Sir Snips (PET!)
-					["races"] = ALLIANCE_ONLY,
-					["crs"] = {
+					races = ALLIANCE_ONLY,
+					crs = {
 						119484,	-- Captain Roberts (Ally / Dalaran)
 						146633,	-- Knight-Captain Jessica (Ally / SW)
 						145838,	-- Marshal Frazer (Ally / Boralus)

@@ -4,16 +4,16 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
-	applyclassicphase(SOD_PHASE_FOUR, inst(2791, bubbleDownSelf({["timeline"] = { ADDED_1_15_3 }}, {	-- Storm Cliffs
-		["lore"] = "The Storm Cliffs is a place in Azshara known for its weather and acts as the home away from home for the blue dragonflight.",
-		["zoneTextAreaID"] = 15532,	-- Storm Cliffs
-		["coord"] = { 43.5, 83.6, AZSHARA },
-		["isRaid"] = true,
-		["lvl"] = 60,
-		["groups"] = {
+	applyclassicphase(SOD_PHASE_FOUR, inst(2791, bubbleDownSelf({timeline = { ADDED_1_15_3 }}, {	-- Storm Cliffs
+		lore = "The Storm Cliffs is a place in Azshara known for its weather and acts as the home away from home for the blue dragonflight.",
+		zoneTextAreaID = 15532,	-- Storm Cliffs
+		coord = { 43.5, 83.6, AZSHARA },
+		isRaid = true,
+		lvl = 60,
+		groups = {
 			n(6109, {	-- Azuregos
 				i(18704, {	-- Mature Blue Dragon Sinew
-					["classes"] = { HUNTER },
+					classes = { HUNTER },
 				}),
 				i(228381),	-- Cold Snap
 				i(228349),	-- Eskhandar's Left Claw
@@ -29,38 +29,38 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(228250),	-- Plans: Stronger-hold Gauntlets
 			}),
 			n(6109, {	-- Azuregos
-				["timeline"] = { REMOVED_1_15_3 },
-				["modelScale"] = 6.0,
-				["groups"] = {
+				timeline = { REMOVED_1_15_3 },
+				modelScale = 6.0,
+				groups = {
 					i(19130, {	-- Cold Snap
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(18202, {	-- Eskhandar's Left Claw
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(17070, {	-- Fang of the Mystics
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(18542, {	-- Typhoon
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(19132, {	-- Crystal Adorned Crown
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(18208, {	-- Drape of Benediction
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(18541, {	-- Puissant Cape
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(18547, {	-- Unmelting Ice Girdle
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(18545, {	-- Leggings of Arcane Supremacy
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(19131, {	-- Snowblind Shoes
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 				},
 			}),

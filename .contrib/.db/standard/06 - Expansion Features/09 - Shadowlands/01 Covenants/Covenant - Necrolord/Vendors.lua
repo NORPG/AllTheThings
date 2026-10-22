@@ -2,29 +2,29 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-local CHRONICLE_OF_LOST_MEMORIES = ChronicleOfLostMemories({["cost"] = { { "c", GRATEFUL, 35 } }})	-- Chronicle of Lost Memories
+local CHRONICLE_OF_LOST_MEMORIES = ChronicleOfLostMemories({cost = { { "c", GRATEFUL, 35 } }})	-- Chronicle of Lost Memories
 local MEMORY_OF_A_VITAL_SACRIFICE = i(183249, {	-- Memory of a Vital Sacrifice
-	["cost"] = { { "c", ANIMA, 250 } },
+	cost = { { "c", ANIMA, 250 } },
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(REWARDS, {
 			i(183703, {	-- Bonesmith's Satchel
-				["description"] = "Only Obtainable from Heirmir Soulbind.",
+				description = "Only Obtainable from Heirmir Soulbind.",
 			}),
 		}),
 		n(VENDORS, {
 			n(COMMON_VENDOR_ITEMS, {	-- LFR/Normal/Heroic Weapons
-				["crs"] = {
+				crs = {
 					175310,	-- Mellisa Fate <Raid Finder Nathrian Warsmith>
 					175371,	-- Mortis Elfsen <Normal Nathrian Warsmith>
 					175312,	-- Taiya Tacere <Heroic Nathrian Warsmith>
 				},
-				["groups"] = {
+				groups = {
 					-- Lazily copied since parser handles merging anyway
 					i(184253, {	-- Abdomen Chopper
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -32,7 +32,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184265, {	-- Abdomen Splitter
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -40,7 +40,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184252, {	-- Aranakk Torture Device
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -48,13 +48,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184245, {	-- Barrier of the Chosen
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,04), 1 },	-- LFR Apogee Anima Bead - 187
 							{ "i", modItemId(183889,04), 1 },	-- LFR Thaumaturgic Anima Bead - 187
 						},
 					}),
 					i(184244, {	-- Biting Gutsliver Shank
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -62,7 +62,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184248, {	-- Blightforged Twinblade
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -70,13 +70,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184257, {	-- Burden of the Protectorate
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,83), 1 },	-- LFR Apogee Anima Bead - 194
 							{ "i", modItemId(183894,83), 1 },	-- LFR Thaumaturgic Anima Bead - 194
 						},
 					}),
 					i(184250, {	-- Deadeye Blunderbuss
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -84,7 +84,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184262, {	-- Deadeye Cannon
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -92,7 +92,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184266, {	-- Fleshscourge Sickle
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -100,13 +100,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184246, {	-- Frigid Invoker's Focus
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,04), 1 },	-- LFR Apogee Anima Bead - 187
 							{ "i", modItemId(183889,04), 1 },	-- LFR Thaumaturgic Anima Bead - 187
 						},
 					}),
 					i(184259, {	-- Grasp from the Grave
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -114,7 +114,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184261, {	-- Greatstaff of the Lichsworn General
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -122,7 +122,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184247, {	-- Grip of the Dead
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -130,7 +130,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184255, {	-- Gristlegore Hacker
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -138,7 +138,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184264, {	-- Krexus's Bloodletting Polearm
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -146,13 +146,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184258, {	-- Malevolent Invoker's Crystal
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,83), 1 },	-- LFR Apogee Anima Bead - 194
 							{ "i", modItemId(183894,83), 1 },	-- LFR Thaumaturgic Anima Bead - 194
 						},
 					}),
 					i(184251, {	-- Ossified Broadaxe
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -160,7 +160,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184263, {	-- Ossified Greataxe
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -168,7 +168,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184254, {	-- Plaguespine Sickle
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -176,7 +176,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184267, {	-- Skullcleaver of the Merciless One
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -184,7 +184,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184249, {	-- Staff of the Lichsworn Lieutenant
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
 							{ "i", modItemId(183892,04), 1 },	-- LFR Mystic Anima Spherule - 187
 							{ "i", modItemId(183891,04), 1 },	-- LFR Venerated Anima Spherule - 187
@@ -192,7 +192,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184256, {	-- Vicious Goreripper Shank
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -200,7 +200,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184260, {	-- Warglaive of the Hidden Fiend
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,83), 1 },	-- LFR Abominable Anima Spherule - 194
 							{ "i", modItemId(183897,83), 1 },	-- LFR Mystic Anima Spherule - 194
 							{ "i", modItemId(183898,83), 1 },	-- LFR Venerated Anima Spherule - 194
@@ -208,7 +208,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184253, {	-- Abdomen Chopper
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -216,7 +216,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184265, {	-- Abdomen Splitter
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -224,7 +224,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184252, {	-- Aranakk Torture Device
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -232,13 +232,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184245, {	-- Barrier of the Chosen
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,03), 1 },	-- Normal Apogee Anima Bead - 200
 							{ "i", modItemId(183889,03), 1 },	-- Normal Thaumaturgic Anima Bead - 200
 						},
 					}),
 					i(184244, {	-- Biting Gutsliver Shank
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -246,7 +246,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184248, {	-- Blightforged Twinblade
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -254,13 +254,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184257, {	-- Burden of the Protectorate
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,82), 1 },	-- Normal Apogee Anima Bead - 207
 							{ "i", modItemId(183894,82), 1 },	-- Normal Thaumaturgic Anima Bead - 207
 						},
 					}),
 					i(184250, {	-- Deadeye Blunderbuss
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -268,7 +268,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184262, {	-- Deadeye Cannon
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -276,7 +276,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184266, {	-- Fleshscourge Sickle
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -284,13 +284,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184246, {	-- Frigid Invoker's Focus
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,03), 1 },	-- Normal Apogee Anima Bead - 200
 							{ "i", modItemId(183889,03), 1 },	-- Normal Thaumaturgic Anima Bead - 200
 						},
 					}),
 					i(184259, {	-- Grasp from the Grave
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -298,7 +298,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184261, {	-- Greatstaff of the Lichsworn General
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -306,7 +306,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184247, {	-- Grip of the Dead
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -314,7 +314,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184255, {	-- Gristlegore Hacker
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -322,7 +322,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184264, {	-- Krexus's Bloodletting Polearm
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -330,13 +330,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184258, {	-- Malevolent Invoker's Crystal
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,82), 1 },	-- Normal Apogee Anima Bead - 207
 							{ "i", modItemId(183894,82), 1 },	-- Normal Thaumaturgic Anima Bead - 207
 						},
 					}),
 					i(184251, {	-- Ossified Broadaxe
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -344,7 +344,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184263, {	-- Ossified Greataxe
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -352,7 +352,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184254, {	-- Plaguespine Sickle
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -360,7 +360,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184267, {	-- Skullcleaver of the Merciless One
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -368,7 +368,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184249, {	-- Staff of the Lichsworn Lieutenant
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
 							{ "i", modItemId(183892,03), 1 },	-- Normal Mystic Anima Spherule - 200
 							{ "i", modItemId(183891,03), 1 },	-- Normal Venerated Anima Spherule - 200
@@ -376,7 +376,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184256, {	-- Vicious Goreripper Shank
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -384,7 +384,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184260, {	-- Warglaive of the Hidden Fiend
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,82), 1 },	-- Normal Abominable Anima Spherule - 207
 							{ "i", modItemId(183897,82), 1 },	-- Normal Mystic Anima Spherule - 207
 							{ "i", modItemId(183898,82), 1 },	-- Normal Venerated Anima Spherule - 207
@@ -392,7 +392,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184253, {	-- Abdomen Chopper
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -400,7 +400,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184265, {	-- Abdomen Splitter
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -408,7 +408,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184252, {	-- Aranakk Torture Device
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -416,13 +416,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184245, {	-- Barrier of the Chosen
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,05), 1 },	-- Heroic Apogee Anima Bead - 213
 							{ "i", modItemId(183889,05), 1 },	-- Heroic Thaumaturgic Anima Bead - 213
 						},
 					}),
 					i(184244, {	-- Biting Gutsliver Shank
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -430,7 +430,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184248, {	-- Blightforged Twinblade
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -438,13 +438,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184257, {	-- Burden of the Protectorate
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,84), 1 },	-- Heroic Apogee Anima Bead - 220
 							{ "i", modItemId(183894,84), 1 },	-- Heroic Thaumaturgic Anima Bead - 220
 						},
 					}),
 					i(184250, {	-- Deadeye Blunderbuss
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -452,7 +452,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184262, {	-- Deadeye Cannon
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -460,7 +460,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184266, {	-- Fleshscourge Sickle
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -468,13 +468,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184246, {	-- Frigid Invoker's Focus
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,05), 1 },	-- Heroic Apogee Anima Bead - 213
 							{ "i", modItemId(183889,05), 1 },	-- Heroic Thaumaturgic Anima Bead - 213
 						},
 					}),
 					i(184259, {	-- Grasp from the Grave
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -482,7 +482,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184261, {	-- Greatstaff of the Lichsworn General
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -490,7 +490,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184247, {	-- Grip of the Dead
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -498,7 +498,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184255, {	-- Gristlegore Hacker
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -506,7 +506,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184264, {	-- Krexus's Bloodletting Polearm
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -514,13 +514,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184258, {	-- Malevolent Invoker's Crystal
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183895,84), 1 },	-- Heroic Apogee Anima Bead - 220
 							{ "i", modItemId(183894,84), 1 },	-- Heroic Thaumaturgic Anima Bead - 220
 						},
 					}),
 					i(184251, {	-- Ossified Broadaxe
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -528,7 +528,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184263, {	-- Ossified Greataxe
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -536,7 +536,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184254, {	-- Plaguespine Sickle
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -544,7 +544,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184267, {	-- Skullcleaver of the Merciless One
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -552,7 +552,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184249, {	-- Staff of the Lichsworn Lieutenant
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
 							{ "i", modItemId(183892,05), 1 },	-- Heroic Mystic Anima Spherule - 213
 							{ "i", modItemId(183891,05), 1 },	-- Heroic Venerated Anima Spherule - 213
@@ -560,7 +560,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184256, {	-- Vicious Goreripper Shank
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -568,7 +568,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184260, {	-- Warglaive of the Hidden Fiend
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183896,84), 1 },	-- Heroic Abominable Anima Spherule - 220
 							{ "i", modItemId(183897,84), 1 },	-- Heroic Mystic Anima Spherule - 220
 							{ "i", modItemId(183898,84), 1 },	-- Heroic Venerated Anima Spherule - 220
@@ -578,17 +578,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			n(175310, {	-- Mellisa Fate <Raid Finder Nathrian Warsmith>
-				["coord"] = { 60.8, 44.3, SEAT_OF_THE_PRIMUS },
+				coord = { 60.8, 44.3, SEAT_OF_THE_PRIMUS },
 			}),
 			n(175371, {	-- Mortis Elfsen <Normal Nathrian Warsmith>
-				["coord"] = { 61.1, 45.7, SEAT_OF_THE_PRIMUS },
+				coord = { 61.1, 45.7, SEAT_OF_THE_PRIMUS },
 			}),
 			n(175370, {	-- Odious Gwor <Mythic Nathrian Warsmith>
 				-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
-				["coord"] = { 60.5, 48.6, SEAT_OF_THE_PRIMUS },
-				["groups"] = bubbleDown({ ["modID"] = 6 }, {	-- Mythic
+				coord = { 60.5, 48.6, SEAT_OF_THE_PRIMUS },
+				groups = bubbleDown({ modID = 6 }, {	-- Mythic
 					i(184253, {	-- Abdomen Chopper
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -596,8 +596,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184265, {	-- Abdomen Splitter
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -605,7 +605,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184252, {	-- Aranakk Torture Device
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -613,13 +613,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184245, {	-- Barrier of the Chosen
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,06), 1 },	-- Mythic Apogee Anima Bead - 226
 							{ "i", modItemId(183889,06), 1 },	-- Mythic Thaumaturgic Anima Bead - 226
 						},
 					}),
 					i(184244, {	-- Biting Gutsliver Shank
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -627,7 +627,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184248, {	-- Blightforged Twinblade
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -635,14 +635,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184257, {	-- Burden of the Protectorate
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183895,85), 1 },	-- Mythic Apogee Anima Bead - 233
 							{ "i", modItemId(183894,85), 1 },	-- Mythic Thaumaturgic Anima Bead - 233
 						},
 					}),
 					i(184250, {	-- Deadeye Blunderbuss
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -650,8 +650,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184262, {	-- Deadeye Cannon
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -659,8 +659,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184266, {	-- Fleshscourge Sickle
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -668,14 +668,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184246, {	-- Frigid Invoker's Focus
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183888,06), 1 },	-- Mythic Apogee Anima Bead - 226
 							{ "i", modItemId(183889,06), 1 },	-- Mythic Thaumaturgic Anima Bead - 226
 						},
 					}),
 					i(184259, {	-- Grasp from the Grave
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -683,8 +683,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184261, {	-- Greatstaff of the Lichsworn General
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -692,7 +692,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184247, {	-- Grip of the Dead
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -700,7 +700,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184255, {	-- Gristlegore Hacker
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -708,8 +708,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184264, {	-- Krexus's Bloodletting Polearm
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -717,14 +717,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184258, {	-- Malevolent Invoker's Crystal
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183895,85), 1 },	-- Mythic Apogee Anima Bead - 233
 							{ "i", modItemId(183894,85), 1 },	-- Mythic Thaumaturgic Anima Bead - 233
 						},
 					}),
 					i(184251, {	-- Ossified Broadaxe
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -732,8 +732,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184263, {	-- Ossified Greataxe
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -741,7 +741,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184254, {	-- Plaguespine Sickle
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -749,8 +749,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184267, {	-- Skullcleaver of the Merciless One
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -758,7 +758,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184249, {	-- Staff of the Lichsworn Lieutenant
-						["cost"] = {
+						cost = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
 							{ "i", modItemId(183892,06), 1 },	-- Mythic Mystic Anima Spherule - 226
 							{ "i", modItemId(183891,06), 1 },	-- Mythic Venerated Anima Spherule - 226
@@ -766,8 +766,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184256, {	-- Vicious Goreripper Shank
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -775,8 +775,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					i(184260, {	-- Warglaive of the Hidden Fiend
-						["modID"] = 85,
-						["cost"] = {
+						modID = 85,
+						cost = {
 							{ "i", modItemId(183896,85), 1 },	-- Mythic Abominable Anima Spherule - 233
 							{ "i", modItemId(183897,85), 1 },	-- Mythic Mystic Anima Spherule - 233
 							{ "i", modItemId(183898,85), 1 },	-- Mythic Venerated Anima Spherule - 233
@@ -786,8 +786,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				}),
 			}),
 			n(175311, {	-- Slayer Araya <Covenant Armor>
-				["coord"] = { 57.1, 48.3, SEAT_OF_THE_PRIMUS },
-				["sym"] = { { "select", "itemID",
+				coord = { 57.1, 48.3, SEAT_OF_THE_PRIMUS },
+				sym = { { "select", "itemID",
 					-- These items are only purchasable after you complete the covenant campaign.
 					-- Doing the Campaign also rewards all those items, so no need to list 2 sources per item.
 					182276,	-- Bladesworn Conjurer's Cape
@@ -827,76 +827,76 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					182262,	-- Bladesworn Wraith's Stranglers
 					182259,	-- Bladesworn Wraith's Visage
 				}},
-				["groups"] = {
+				groups = {
 					CHRONICLE_OF_LOST_MEMORIES,
 					i(183451, {	-- Goreforged Barrier
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(183456, {	-- Goreforged Blunderbuss
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(183946, {	-- Goreforged Chopper
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(183459, {	-- Goreforged Cleaver
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(183452, {	-- Goreforged Focus
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(183457, {	-- Goreforged Greataxe
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(183453, {	-- Goreforged Mace
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(183458, {	-- Goreforged Polearm
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(183450, {	-- Goreforged Shank
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(183460, {	-- Goreforged Sickle
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(183455, {	-- Goreforged Staff
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(183454, {	-- Goreforged Warglaive
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 10 },
 						},
@@ -904,335 +904,335 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			n(172176, {	-- Su Zettai <Renown Quartermaster>
-				["coord"] = { 52.5, 41.2, SEAT_OF_THE_PRIMUS },
-				["groups"] = {
+				coord = { 52.5, 41.2, SEAT_OF_THE_PRIMUS },
+				groups = {
 					i(181815, {	-- Armored Bonehoof Tauralus (MOUNT!)
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 5000 },
 							{ "c", GRATEFUL, 100 },
 						},
 					}),
 					i(181821, {	-- Armored Plaguerot Tauralus (MOUNT!)
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 100 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(182076, {	-- Plaguerot Tauralus (MOUNT!)
-						["cost"] = { { "c", ANIMA, 5000 } },
+						cost = { { "c", ANIMA, 5000 } },
 					}),
 					i(186488, {	-- Regal Corpsefly (MOUNT!)
-						["cost"] = { { "c", ANIMA, 7500 } },
+						cost = { { "c", ANIMA, 7500 } },
 					}),
 					i(183462, {	-- Illusion: Unbreakable Resolve (ILLUSION!)
-						["cost"] = { { "c", ANIMA, 2500 } },
+						cost = { { "c", ANIMA, 2500 } },
 					}),
 					MEMORY_OF_A_VITAL_SACRIFICE,
 					i(183601, {	-- Jiggles (PET!)
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(182773, {	-- Necrolord Hearthstone (TOY!)
-						["cost"] = { { "c", ANIMA, 750 } },
+						cost = { { "c", ANIMA, 750 } },
 					}),
 					i(184071, {	-- Blooddoused Aranakk Polearm
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(184072, {	-- Brutal Fury-Forged Cleaver
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(184074, {	-- Chopper of the Hidden Hand
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(184070, {	-- Colossal Greataxe of Pandemonium
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(184073, {	-- Crooked Plaguedtouched Dagger
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(184064, {	-- Deathforged Bulwark of Maldraxxus
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					iensemble(186502, {	-- Ensemble: Marileth's Assistant Vestments
-						["cost"] = { { "c", ANIMA, 10000 } },
+						cost = { { "c", ANIMA, 10000 } },
 					}),
 					i(184068, {	-- Greatstaff of the Lichsworn
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(184065, {	-- Lambent Plaguetouched Focux
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(181805, {	-- Osteowings of the Necrolords
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 40 },
 						},
 					}),
 					i(182239, {	-- Prime Conjurer's Cape
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(182237, {	-- Prime Conjurer's Cinch
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(182231, {	-- Prime Conjurer's Cowl
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(182234, {	-- Prime Conjurer's Gloves
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(182235, {	-- Prime Conjurer's Leggings
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(182236, {	-- Prime Conjurer's Mantle
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(182233, {	-- Prime Conjurer's Slippers
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(182232, {	-- Prime Conjurer's Tunic
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(182238, {	-- Prime Conjurer's Wristwraps
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(182214, {	-- Prime Harbinger's Chestguard
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(182216, {	-- Prime Harbinger's Crushers
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(182221, {	-- Prime Harbinger's Greatcloak
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(182213, {	-- Prime Harbinger's Greathelm
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(182217, {	-- Prime Harbinger's Greaves
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(182218, {	-- Prime Harbinger's Pauldrons
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(182215, {	-- Prime Harbinger's Stompers
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(182220, {	-- Prime Harbinger's Vambraces
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(182219, {	-- Prime Harbinger's Warbelt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(182247, {	-- Prime Tactician's Bracers
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(182244, {	-- Prime Tactician's Chausses
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(182248, {	-- Prime Tactician's Drape
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(182240, {	-- Prime Tactician's Faceguard
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(182243, {	-- Prime Tactician's Gauntlets
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(182246, {	-- Prime Tactician's Girdle
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(182241, {	-- Prime Tactician's Hauberk
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(182242, {	-- Prime Tactician's Sabatons
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(182245, {	-- Prime Tactician's Spaulders
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(182229, {	-- Prime Wraith's Armguards
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(182228, {	-- Prime Wraith's Belt
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(182226, {	-- Prime Wraith's Breeches
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3000 },
 							{ "c", GRATEFUL, 25 },
 						},
 					}),
 					i(182224, {	-- Prime Wraith's Boots
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(182230, {	-- Prime Wraith's Cloak
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 1500 },
 							{ "c", GRATEFUL, 10 },
 						},
 					}),
 					i(182223, {	-- Prime Wraith's Jerkin
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(182227, {	-- Prime Wraith's Shoulders
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(182225, {	-- Prime Wraith's Stranglers
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 2000 },
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
 					i(182222, {	-- Prime Wraith's Visage
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 4000 },
 							{ "c", GRATEFUL, 30 },
 						},
 					}),
 					i(184063, {	-- Shank of the Unseen Eye
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(184067, {	-- Skullformed Ossein Warglaive
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(184069, {	-- Soulbarb, the Breathless Kill
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
 					i(181801, {	-- Standard of the Necrolords
-						["cost"] = { { "c", ANIMA, 3500 } },
+						cost = { { "c", ANIMA, 3500 } },
 					}),
 					i(184066, {	-- Wriggling Soulcharged Mace
-						["cost"] = {
+						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },
 						},
@@ -1240,14 +1240,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			n(175312, {	-- Taiya Tacere <Heroic Nathrian Warsmith>
-				["coord"] = { 61.2, 47.4, SEAT_OF_THE_PRIMUS },
+				coord = { 61.2, 47.4, SEAT_OF_THE_PRIMUS },
 			}),
 		}),
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-	n(NECROLORD,  bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH } }, {
+	n(NECROLORD,  bubbleDown({ customCollect = "SL_COV_NEC" }, {
 		n(VENDORS, {
 			q(62005),	-- unlocking Rationale of Maldraxxus set (TransmogSetID 2031, Prime Conjurer's items)
 			q(62009),	-- unlocking Wisdom of Maldraxxus set (TransmogSetID 2032, Bladesworn Conjurer's items)

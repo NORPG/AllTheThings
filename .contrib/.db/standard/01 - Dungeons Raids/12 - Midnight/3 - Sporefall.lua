@@ -44,25 +44,25 @@ InstanceHelper.UpgradeMapping = {
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1305, {	-- Sporefall
-		["coord"] = { 73.5, 66.4, MAP.MIDNIGHT.HARANDAR },
-		["maps"] = {
+		coord = { 73.5, 66.4, MAP.MIDNIGHT.HARANDAR },
+		maps = {
 			2427,	-- Sporefall
 		},
-		["isRaid"] = true,
-		["timeline"] = { ADDED_12_0_7 },
-		["groups"] = {
+		isRaid = true,
+		timeline = { ADDED_12_0_7 },
+		groups = {
 			n(ACHIEVEMENTS, {
 			}),
 			filter(MOUNTS, {
 				i(269240, {	-- Luminous Sporeglider (MOUNT!)
-					["cost"] = { { "i", 269245, 4 } },	-- 4x Delicious Sporesnack
+					cost = { { "i", 269245, 4 } },	-- 4x Delicious Sporesnack
 				}),
 			}),
 			n(QUESTS, {
 				q(96746, {	-- Sporefall: Rotmire
-					["qg"] = 266165,	-- Sporomir
-					["coord"] = { 36.8, 68.7, MAP.MIDNIGHT.SILVERMOON_CITY },
-					["groups"] = { i(269258) },	-- Void-Twisted Sporbit
+					qg = 266165,	-- Sporomir
+					coord = { 36.8, 68.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+					groups = { i(269258) },	-- Void-Twisted Sporbit
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
@@ -71,7 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				BossOnly(ROTMIRE, {
 					ach(63237),	-- Rotmire
 					ach(63242),	-- Rotmire Guild Run
-					i(275228, {["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Rotmire
+					i(275228, {timeline = { ADDED_12_0_7, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Rotmire
 					i(247235),	-- Luminous Rotshroom (DECOR!)
 					i(264313),	-- Madcap Redcap (TOY!)
 					i(264367),	-- Mycomancer's Hearthspore (TOY!)
@@ -83,7 +83,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				--ZoneDrops({}),
 				CommonBossDrops({
 					currency(VETERAN_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 },
+						timeline = { ADDED_12_0_7, REMOVED_12_1_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 3215, {	-- Sporefall
@@ -93,7 +93,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CHAMPION_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 },
+						timeline = { ADDED_12_0_7, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -108,18 +108,18 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(HERO_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 },
+						timeline = { ADDED_12_0_7, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
 				Boss(ROTMIRE),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC, {
-				["difficulties"] = { DIFFICULTY.RAID.MYTHIC_FLEX },	-- technically the only difficulty, but Blizzard gave it a long name
+				difficulties = { DIFFICULTY.RAID.MYTHIC_FLEX },	-- technically the only difficulty, but Blizzard gave it a long name
 			}).AddGroups({
 				CommonBossDrops({
 					currency(MYTH_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_7, REMOVED_12_1_0 },
+						timeline = { ADDED_12_0_7, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -134,8 +134,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1305, {	-- Sporefall
-		["timeline"] = { ADDED_12_0_7 },
-		["groups"] = {
+		timeline = { ADDED_12_0_7 },
+		groups = {
 			q(95405),	-- Mythic Rotmire
 		},
 	}),

@@ -3,9 +3,9 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, pvp(n(PRESTIGE, {
-	["description"] = "System that was used during Legion Expansion.",
-	["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
-	["groups"] = {
+	description = "System that was used during Legion Expansion.",
+	timeline = { ADDED_7_0_3, REMOVED_8_0_1 },
+	groups = {
 		ach(10991, {	-- First Step into a Larger World [1]
 			i(139777, {	-- Strange Crate
 				i(139775),	-- Alliance Enthusiast (PET!)
@@ -13,47 +13,47 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, {
 			}),
 		}),
 		ach(10743, {	-- The Prestige (A) [2]
-			["races"] = ALLIANCE_ONLY,
-			["groups"] = {
+			races = ALLIANCE_ONLY,
+			groups = {
 				i(138992, {	-- Grand Marshal's Medal of Valor
-					["timeline"] = { REMOVED_8_0_1 },
-					["races"] = ALLIANCE_ONLY,
+					timeline = { REMOVED_8_0_1 },
+					races = ALLIANCE_ONLY,
 				}),
 				q(42978, {	-- A Royal Audience [Alliance]
-					["description"] = "You get this quest when you reach Prestige Rank 2.",
-					["provider"] = { "i", 138992 },	-- Grand Marshal's Medal of Valor
-					["timeline"] = { REMOVED_8_0_1 },
-					["maps"] = { STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
+					description = "You get this quest when you reach Prestige Rank 2.",
+					provider = { "i", 138992 },	-- Grand Marshal's Medal of Valor
+					timeline = { REMOVED_8_0_1 },
+					maps = { STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
 				}),
 				q(42982, {	-- The Victor's Spoils [Alliance]
-					["sourceQuest"] = 42978,	-- A Royal Audience [Alliance]
-					["qg"] = 109466,	-- Anduin Wrynn <King of Stormwind>
-					["timeline"] = { REMOVED_8_0_1 },
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 42978,	-- A Royal Audience [Alliance]
+					qg = 109466,	-- Anduin Wrynn <King of Stormwind>
+					timeline = { REMOVED_8_0_1 },
+					races = ALLIANCE_ONLY,
 				}),
 			},
 		}),
 		ach(10745, {	-- The Prestige (H) [2]
-			["races"] = HORDE_ONLY,
-			["groups"] = {
+			races = HORDE_ONLY,
+			groups = {
 				i(138996, {	-- High Warlord's Medal of Valor
-					["timeline"] = { REMOVED_8_0_1 },
-					["races"] = HORDE_ONLY,
+					timeline = { REMOVED_8_0_1 },
+					races = HORDE_ONLY,
 				}),
 				q(42985, {	-- A Royal Audience [Horde]
-					["description"] = "You get this quest when you reach Prestige Rank 2.",
-					["provider"] = { "i", 138996 },	-- High Warlord's Medal of Valor
-					["timeline"] = { REMOVED_8_0_1 },
-					["maps"] = { UNDERCITY },
-					["races"] = HORDE_ONLY,
+					description = "You get this quest when you reach Prestige Rank 2.",
+					provider = { "i", 138996 },	-- High Warlord's Medal of Valor
+					timeline = { REMOVED_8_0_1 },
+					maps = { UNDERCITY },
+					races = HORDE_ONLY,
 				}),
 				q(42987, {	-- The Victor's Spoils [Horde]
-					["sourceQuest"] = 42985,	-- A Royal Audience
-					["qg"] = 109471,	-- Lady Sylvanas Windrunner
-					["coord"] = { 57.8, 91.6, UNDERCITY },
-					["timeline"] = { REMOVED_8_0_1 },
-					["races"] = HORDE_ONLY,
+					sourceQuest = 42985,	-- A Royal Audience
+					qg = 109471,	-- Lady Sylvanas Windrunner
+					coord = { 57.8, 91.6, UNDERCITY },
+					timeline = { REMOVED_8_0_1 },
+					races = HORDE_ONLY,
 				}),
 			},
 		}),

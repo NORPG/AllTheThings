@@ -41,308 +41,308 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_3_2_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_THREE, bubbleDown({ timeline = { ADDED_3_2_0 } }, {
 	inst(284, {	-- Trial of the Champion
-		["mapID"] = TRIAL_OF_THE_CHAMPION,
-		["coord"] = { 74.0, 20.9, ICECROWN },
-		["lvl"] = lvlsquish(75, 75, 25),
-		["groups"] = {
+		mapID = TRIAL_OF_THE_CHAMPION,
+		coord = { 74.0, 20.9, ICECROWN },
+		lvl = lvlsquish(75, 75, 25),
+		groups = {
 			n(ACHIEVEMENTS, {
-				bubbleDown({ ["races"] = ALLIANCE_ONLY }, ach(4296, {	-- Trial of the Champion (A)
+				bubbleDown({ races = ALLIANCE_ONLY }, ach(4296, {	-- Trial of the Champion (A)
 					-- #if AFTER 7.3.5
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed the criteria for this achievement in Wrath Classic.
 					crit(11420, {	-- Mokra the Skullcrusher
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(12298, {	-- Deathstalker Visceri
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(12299, {	-- Runok Wildmane
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(12300, {	-- Eressea Dawnsinger
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(12301, {	-- Zul'tore
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(13312, {	-- Argent Confessor Paletress
-						["_encounter"] = { PALETRESS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { PALETRESS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(13313, {	-- Eadric the Pure
-						["_encounter"] = { EADRIC, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { EADRIC, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					-- #endif
 					crit(13314, {	-- The Black Knight
-						["_encounter"] = { BLACK_KNIGHT, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { BLACK_KNIGHT, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					-- #else
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed the criteria for this achievement in Wrath Classic.
 					crit(11420, {	-- Mokra the Skullcrusher
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(12298, {	-- Deathstalker Visceri
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(12299, {	-- Runok Wildmane
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(12300, {	-- Eressea Dawnsinger
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(12301, {	-- Zul'tore
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13312, {	-- Argent Confessor Paletress
-						["_encounter"] = { PALETRESS, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { PALETRESS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13313, {	-- Eadric the Pure
-						["_encounter"] = { EADRIC, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { EADRIC, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 					crit(13314, {	-- The Black Knight
-						["_encounter"] = { BLACK_KNIGHT, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { BLACK_KNIGHT, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 				})),
-				bubbleDown({ ["races"] = ALLIANCE_ONLY }, ach(4298, {	-- Heroic: Trial of the Champion (A)
+				bubbleDown({ races = ALLIANCE_ONLY }, ach(4298, {	-- Heroic: Trial of the Champion (A)
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed the criteria for this achievement in Wrath Classic.
 					crit(12539, {	-- Mokra the Skullcrusher
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(12545, {	-- Deathstalker Visceri
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(RUNOK_CRITERIA_UID_HEROIC_ALLIANCE, {	-- Runok Wildmane
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(12543, {	-- Eressea Dawnsinger
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(12541, {	-- Zul'tore
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(12549, {	-- Argent Confessor Paletress
-						["_encounter"] = { PALETRESS, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { PALETRESS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(12551, {	-- Eadric the Pure
-						["_encounter"] = { EADRIC, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { EADRIC, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					-- #endif
 					crit(12553, {	-- The Black Knight
-						["_encounter"] = { BLACK_KNIGHT, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { BLACK_KNIGHT, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				})),
-				bubbleDown({ ["races"] = HORDE_ONLY }, ach(3778, {	-- Trial of the Champion (H)
+				bubbleDown({ races = HORDE_ONLY }, ach(3778, {	-- Trial of the Champion (H)
 					-- #if AFTER 7.3.5
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed the criteria for this achievement in Wrath Classic.
 					crit(11420, {	-- Marshal Jacob Alerius
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(12298, {	-- Lana Stouthammer
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(12299, {	-- Colosos
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(12300, {	-- Ambrose Boltspark
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(12301, {	-- Jaelyne Evensong
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(13312, {	-- Argent Confessor Paletress
-						["_encounter"] = { PALETRESS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { PALETRESS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(13313, {	-- Eadric the Pure
-						["_encounter"] = { EADRIC, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { EADRIC, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					-- #endif
 					crit(13314, {	-- The Black Knight
-						["_encounter"] = { BLACK_KNIGHT, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { BLACK_KNIGHT, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					-- #else
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed the criteria for this achievement in Wrath Classic.
 					crit(11420, {	-- Marshal Jacob Alerius
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(12298, {	-- Lana Stouthammer
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(12299, {	-- Colosos
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(12300, {	-- Ambrose Boltspark
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(12301, {	-- Jaelyne Evensong
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13312, {	-- Argent Confessor Paletress
-						["_encounter"] = { PALETRESS, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { PALETRESS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13313, {	-- Eadric the Pure
-						["_encounter"] = { EADRIC, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { EADRIC, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 					crit(13314, {	-- The Black Knight
-						["_encounter"] = { BLACK_KNIGHT, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { BLACK_KNIGHT, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 				})),
-				bubbleDown({ ["races"] = HORDE_ONLY }, ach(4297, {	-- Heroic: Trial of the Champion (H)
+				bubbleDown({ races = HORDE_ONLY }, ach(4297, {	-- Heroic: Trial of the Champion (H)
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed the criteria for this achievement in Wrath Classic.
 					crit(12539, {	-- Marshal Jacob Alerius
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(12545, {	-- Lana Stouthammer
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(COLOSOS_CRITERIA_UID_HEROIC_HORDE, {	-- Colosos
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(12543, {	-- Ambrose Boltspark
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(12541, {	-- Jaelyne Evensong
-						["_encounter"] = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { GRAND_CHAMPIONS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(12549, {	-- Argent Confessor Paletress
-						["_encounter"] = { PALETRESS, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { PALETRESS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(12551, {	-- Eadric the Pure
-						["_encounter"] = { EADRIC, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { EADRIC, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					-- #endif
 					crit(12553, {	-- The Black Knight
-						["_encounter"] = { BLACK_KNIGHT, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { BLACK_KNIGHT, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				})),
 				-- #if ANYCLASSIC
-				applyclassicphase(WRATH_PHASE_THREE, bubbleDownFiltered({ ["races"] = ALLIANCE_ONLY },	-- Defense Protocol Beta: Trial of the Champion (A)
+				applyclassicphase(WRATH_PHASE_THREE, bubbleDownFiltered({ races = ALLIANCE_ONLY },	-- Defense Protocol Beta: Trial of the Champion (A)
 					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(18677, {
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.
 					crit(60760, {	-- Mokra the Skullcrusher
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60761, {	-- Deathstalker Visceri
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60765, {	-- Runok Wildmane
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60766, {	-- Eressea Dawnsinger
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60763, {	-- Zul'tore
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60764, {	-- Argent Confessor Paletress
-						["_encounter"] = { PALETRESS, DEFENSE_PROTOCOL_BETA },
+						_encounter = { PALETRESS, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60762, {	-- Eadric the Pure
-						["_encounter"] = { EADRIC, DEFENSE_PROTOCOL_BETA },
+						_encounter = { EADRIC, DEFENSE_PROTOCOL_BETA },
 					}),
 					-- #endif
 					crit(60621, {	-- The Black Knight
-						["_encounter"] = { BLACK_KNIGHT, DEFENSE_PROTOCOL_BETA },
+						_encounter = { BLACK_KNIGHT, DEFENSE_PROTOCOL_BETA },
 					}),
 				}))),
-				applyclassicphase(WRATH_PHASE_THREE, bubbleDownFiltered({ ["races"] = HORDE_ONLY },	-- Defense Protocol Beta: Trial of the Champion (H)
+				applyclassicphase(WRATH_PHASE_THREE, bubbleDownFiltered({ races = HORDE_ONLY },	-- Defense Protocol Beta: Trial of the Champion (H)
 					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(18678, {
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.
 					crit(60768, {	-- Marshal Jacob Alerius
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60771, {	-- Lana Stouthammer
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60770, {	-- Colosos
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60764, {	-- Ambrose Boltspark
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60767, {	-- Jaelyne Evensong
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60764, {	-- Argent Confessor Paletress
-						["_encounter"] = { PALETRESS, DEFENSE_PROTOCOL_BETA },
+						_encounter = { PALETRESS, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60762, {	-- Eadric the Pure
-						["_encounter"] = { EADRIC, DEFENSE_PROTOCOL_BETA },
+						_encounter = { EADRIC, DEFENSE_PROTOCOL_BETA },
 					}),
 					-- #endif
 					crit(60621, {	-- The Black Knight
-						["_encounter"] = { BLACK_KNIGHT, DEFENSE_PROTOCOL_BETA },
+						_encounter = { BLACK_KNIGHT, DEFENSE_PROTOCOL_BETA },
 					}),
 				}))),
-				applyclassicphase(WRATH_PHASE_FOUR, bubbleDownFiltered({ ["races"] = ALLIANCE_ONLY },	-- Defense Protocol Gamma: Trial of the Champion (A)
+				applyclassicphase(WRATH_PHASE_FOUR, bubbleDownFiltered({ races = ALLIANCE_ONLY },	-- Defense Protocol Gamma: Trial of the Champion (A)
 					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(19426, {
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.
 					crit(63308, {	-- Mokra the Skullcrusher
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63317, {	-- Deathstalker Visceri
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63314, {	-- Runok Wildmane
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63313, {	-- Eressea Dawnsinger
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63306, {	-- Zul'tore
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63310, {	-- Argent Confessor Paletress
-						["_encounter"] = { PALETRESS, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { PALETRESS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63315, {	-- Eadric the Pure
-						["_encounter"] = { EADRIC, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { EADRIC, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					-- #endif
 					crit(63310, {	-- The Black Knight
-						["_encounter"] = { BLACK_KNIGHT, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { BLACK_KNIGHT, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				}))),
-				applyclassicphase(WRATH_PHASE_FOUR, bubbleDownFiltered({ ["races"] = HORDE_ONLY },	-- Defense Protocol Gamma: Trial of the Champion (H)
+				applyclassicphase(WRATH_PHASE_FOUR, bubbleDownFiltered({ races = HORDE_ONLY },	-- Defense Protocol Gamma: Trial of the Champion (H)
 					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(19425, {
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.
 					crit(63308, {	-- Marshal Jacob Alerius
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(60771, {	-- Lana Stouthammer
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63314, {	-- Colosos
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63313, {	-- Ambrose Boltspark
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63306, {	-- Jaelyne Evensong
-						["_encounter"] = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { GRAND_CHAMPIONS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63316, {	-- Argent Confessor Paletress
-						["_encounter"] = { PALETRESS, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { PALETRESS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63315, {	-- Eadric the Pure
-						["_encounter"] = { EADRIC, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { EADRIC, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					-- #endif
 					crit(63310, {	-- The Black Knight
-						["_encounter"] = { BLACK_KNIGHT, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { BLACK_KNIGHT, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				}))),
 				-- #endif
@@ -351,11 +351,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			n(QUESTS, {
 				q(29851, {	-- Champion of the Tournament
 					-- #if BEFORE 5.0.4
-					["description"] = "Blizzard broke auto complete quests, so until they fix that system, this can't be turned in.",
-					["isBounty"] = true,
+					description = "Blizzard broke auto complete quests, so until they fix that system, this can't be turned in.",
+					isBounty = true,
 					-- #endif
-					["qg"] = 34996,	-- Highlord Tirion Fordring
-					["timeline"] = {
+					qg = 34996,	-- Highlord Tirion Fordring
+					timeline = {
 						-- #if ANYCLASSIC
 						CREATED_4_3_0,
 						ADDED_5_0_4,
@@ -475,12 +475,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					-- #endif
 				}),
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
 				n(COMMON_BOSS_DROPS, {
 					currency(241),	-- Champion's Seal
 					-- #if BEFORE CATA
 					currency(301, {	-- Emblem of Triumph
-						["timeline"] = { ADDED_3_2_0, REMOVED_4_0_1 },
+						timeline = { ADDED_3_2_0, REMOVED_4_0_1 },
 					}),
 					-- #endif
 				}),
@@ -491,85 +491,85 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				BossOnly(PALETRESS, {
 					ach(3802, {	-- Argent Confessor
 						crit(11927, {	-- Algalon
-							["cr"] = 35052,	-- Memory of Algalon
+							cr = 35052,	-- Memory of Algalon
 						}),
 						crit(11916, {	-- Archimonde
-							["cr"] = 35041,	-- Memory of Archimonde
+							cr = 35041,	-- Memory of Archimonde
 						}),
 						crit(11909, {	-- Chromaggus
-							["cr"] = 35033,	-- Memory of Chromaggus
+							cr = 35033,	-- Memory of Chromaggus
 						}),
 						crit(11921, {	-- Cyanigosa
-							["cr"] = 35046,	-- Memory of Cyanigosa
+							cr = 35046,	-- Memory of Cyanigosa
 						}),
 						crit(11918, {	-- Delrissa
-							["cr"] = 35043,	-- Memory of Delrissa
+							cr = 35043,	-- Memory of Delrissa
 						}),
 						crit(11922, {	-- Eck
-							["cr"] = 35047,	-- Memory of Eck
+							cr = 35047,	-- Memory of Eck
 						}),
 						crit(11914, {	-- Gruul
-							["cr"] = 35039,	-- Memory of Gruul
+							cr = 35039,	-- Memory of Gruul
 						}),
 						crit(11910, {	-- Hakkar
-							["cr"] = 35034,	-- Memory of Hakkar
+							cr = 35034,	-- Memory of Hakkar
 						}),
 						crit(11924, {	-- Heigan
-							["cr"] = 35049,	-- Memory of Heigan
+							cr = 35049,	-- Memory of Heigan
 						}),
 						crit(11906,	{	-- Herod
-							["cr"] = 35030,	-- Memory of Herod
+							cr = 35030,	-- Memory of Herod
 						}),
 						crit(11863,	{	-- Hogger
-							["cr"] = 34942,	-- Memory of Hogger
+							cr = 34942,	-- Memory of Hogger
 						}),
 						crit(11925, {	-- Ignis
-							["cr"] = 35050,	-- Memory of Ignis
+							cr = 35050,	-- Memory of Ignis
 						}),
 						crit(11917, {	-- Illidan
-							["cr"] = 35042,	-- Memory of Illidan
+							cr = 35042,	-- Memory of Illidan
 						}),
 						crit(11920, {	-- Ingvar
-							["cr"] = 35045,	-- Memory of Ingvar
+							cr = 35045,	-- Memory of Ingvar
 						}),
 						crit(11912, {	-- Kalithresh
-							["cr"] = 35037,	-- Memory of Kalithresh
+							cr = 35037,	-- Memory of Kalithresh
 						}),
 						crit(11907,	{	-- Lucifron
-							["cr"] = 35031,	-- Memory of Lucifron
+							cr = 35031,	-- Memory of Lucifron
 						}),
 						crit(11919, {	-- M'uru (Entropius)
-							["cr"] = 35044,	-- Memory of Entropius
+							cr = 35044,	-- Memory of Entropius
 						}),
 						crit(11913, {	-- Malchezaar
-							["cr"] = 35038,	-- Memory of Malchezaar
+							cr = 35038,	-- Memory of Malchezaar
 						}),
 						crit(11905,	{	-- Mutanus
-							["cr"] = 35029,	-- Memory of Mutanus
+							cr = 35029,	-- Memory of Mutanus
 						}),
 						crit(11923, {	-- Onyxia
-							["cr"] = 35048,	-- Memory of Onyxia
+							cr = 35048,	-- Memory of Onyxia
 						}),
 						crit(11908,	{	-- Thunderaan
-							["cr"] = 35032,	-- Memory of Thunderaan
+							cr = 35032,	-- Memory of Thunderaan
 						}),
 						crit(11904,	{	-- VanCleef
-							["cr"] = 35028,	-- Memory of VanCleef
+							cr = 35028,	-- Memory of VanCleef
 						}),
 						crit(11915, {	-- Vashj
-							["cr"] = 35040,	-- Memory of Vashj
+							cr = 35040,	-- Memory of Vashj
 						}),
 						crit(11911,	{	-- Vek'nilash
-							["cr"] = 35036,	-- Memory of Vek'nilash
+							cr = 35036,	-- Memory of Vek'nilash
 						}),
 						crit(11926, {	-- Vezax
-							["cr"] = 35051,	-- Memory of Vezax
+							cr = 35051,	-- Memory of Vezax
 						}),
 					}),
 				}),
 				BossOnly(BLACK_KNIGHT, {
-					ach(5110, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Trial of the Champion Guild Run [H]
-					ach(5111, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Trial of the Champion Guild Run [A]
+					ach(5110, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Trial of the Champion Guild Run [H]
+					ach(5111, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Trial of the Champion Guild Run [A]
 					ach(3804),	-- I've Had Worse
 				}),
 			}),
@@ -626,12 +626,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					i(47222),	-- Uruka's Band of Zeal
 				}),
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
 				n(COMMON_BOSS_DROPS, {
 					currency(241),	-- Champion's Seal
 					-- #if BEFORE CATA
 					currency(301, {	-- Emblem of Triumph
-						["timeline"] = { ADDED_3_2_0, REMOVED_4_0_1 },
+						timeline = { ADDED_3_2_0, REMOVED_4_0_1 },
 					}),
 					-- #endif
 				}),
@@ -661,79 +661,79 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				BossOnly(PALETRESS, {
 					ach(3802, {	-- Argent Confessor
 						crit(11927, {	-- Algalon
-							["cr"] = 35052,	-- Memory of Algalon
+							cr = 35052,	-- Memory of Algalon
 						}),
 						crit(11916, {	-- Archimonde
-							["cr"] = 35041,	-- Memory of Archimonde
+							cr = 35041,	-- Memory of Archimonde
 						}),
 						crit(11909, {	-- Chromaggus
-							["cr"] = 35033,	-- Memory of Chromaggus
+							cr = 35033,	-- Memory of Chromaggus
 						}),
 						crit(11921, {	-- Cyanigosa
-							["cr"] = 35046,	-- Memory of Cyanigosa
+							cr = 35046,	-- Memory of Cyanigosa
 						}),
 						crit(11918, {	-- Delrissa
-							["cr"] = 35043,	-- Memory of Delrissa
+							cr = 35043,	-- Memory of Delrissa
 						}),
 						crit(11922, {	-- Eck
-							["cr"] = 35047,	-- Memory of Eck
+							cr = 35047,	-- Memory of Eck
 						}),
 						crit(11914, {	-- Gruul
-							["cr"] = 35039,	-- Memory of Gruul
+							cr = 35039,	-- Memory of Gruul
 						}),
 						crit(11910, {	-- Hakkar
-							["cr"] = 35034,	-- Memory of Hakkar
+							cr = 35034,	-- Memory of Hakkar
 						}),
 						crit(11924, {	-- Heigan
-							["cr"] = 35049,	-- Memory of Heigan
+							cr = 35049,	-- Memory of Heigan
 						}),
 						crit(11906,	{	-- Herod
-							["cr"] = 35030,	-- Memory of Herod
+							cr = 35030,	-- Memory of Herod
 						}),
 						crit(11863,	{	-- Hogger
-							["cr"] = 34942,	-- Memory of Hogger
+							cr = 34942,	-- Memory of Hogger
 						}),
 						crit(11925, {	-- Ignis
-							["cr"] = 35050,	-- Memory of Ignis
+							cr = 35050,	-- Memory of Ignis
 						}),
 						crit(11917, {	-- Illidan
-							["cr"] = 35042,	-- Memory of Illidan
+							cr = 35042,	-- Memory of Illidan
 						}),
 						crit(11920, {	-- Ingvar
-							["cr"] = 35045,	-- Memory of Ingvar
+							cr = 35045,	-- Memory of Ingvar
 						}),
 						crit(11912, {	-- Kalithresh
-							["cr"] = 35037,	-- Memory of Kalithresh
+							cr = 35037,	-- Memory of Kalithresh
 						}),
 						crit(11907,	{	-- Lucifron
-							["cr"] = 35031,	-- Memory of Lucifron
+							cr = 35031,	-- Memory of Lucifron
 						}),
 						crit(11919, {	-- M'uru (Entropius)
-							["cr"] = 35044,	-- Memory of Entropius
+							cr = 35044,	-- Memory of Entropius
 						}),
 						crit(11913, {	-- Malchezaar
-							["cr"] = 35038,	-- Memory of Malchezaar
+							cr = 35038,	-- Memory of Malchezaar
 						}),
 						crit(11905,	{	-- Mutanus
-							["cr"] = 35029,	-- Memory of Mutanus
+							cr = 35029,	-- Memory of Mutanus
 						}),
 						crit(11923, {	-- Onyxia
-							["cr"] = 35048,	-- Memory of Onyxia
+							cr = 35048,	-- Memory of Onyxia
 						}),
 						crit(11908,	{	-- Thunderaan
-							["cr"] = 35032,	-- Memory of Thunderaan
+							cr = 35032,	-- Memory of Thunderaan
 						}),
 						crit(11904,	{	-- VanCleef
-							["cr"] = 35028,	-- Memory of VanCleef
+							cr = 35028,	-- Memory of VanCleef
 						}),
 						crit(11915, {	-- Vashj
-							["cr"] = 35040,	-- Memory of Vashj
+							cr = 35040,	-- Memory of Vashj
 						}),
 						crit(11911,	{	-- Vek'nilash
-							["cr"] = 35036,	-- Memory of Vek'nilash
+							cr = 35036,	-- Memory of Vek'nilash
 						}),
 						crit(11926, {	-- Vezax
-							["cr"] = 35051,	-- Memory of Vezax
+							cr = 35051,	-- Memory of Vezax
 						}),
 					}),
 					i(47494),	-- Ancient Pendant of Arathor
@@ -750,8 +750,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					i(47510),	-- Trueheart Girdle
 				}),
 				BossOnly(BLACK_KNIGHT, {
-					ach(5110, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Trial of the Champion Guild Run [H]
-					ach(5111, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Trial of the Champion Guild Run [A]
+					ach(5110, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Trial of the Champion Guild Run [H]
+					ach(5111, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Trial of the Champion Guild Run [A]
 					ach(3804),	-- I've Had Worse
 					i(49682),	-- Black Knight's Rondel
 					i(47560),	-- Boots of the Crackling Flame
@@ -774,9 +774,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			-- #endif
 			-- #if ANYCLASSIC
 			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(413573, 424211),
-				["lvl"] = lvlsquish(80, 80, 30),
-				["groups"] = {
+				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(413573, 424211),
+				lvl = lvlsquish(80, 80, 30),
+				groups = {
 					BossOnly(GRAND_CHAMPIONS, {
 						i(46028),	-- Faceguard of the Eyeless Horror
 						i(46024),	-- Kingsbane
@@ -797,9 +797,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				},
 			})),
 			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424211),
-				["lvl"] = lvlsquish(80, 80, 30),
-				["groups"] = {
+				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424211),
+				lvl = lvlsquish(80, 80, 30),
+				groups = {
 					BossOnly(BLACK_KNIGHT),
 				},
 			})),
@@ -808,7 +808,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(284, {
 		q(35950),	-- Trial of the Champion Reward Quest - Normal / Heroic completion
 	}),

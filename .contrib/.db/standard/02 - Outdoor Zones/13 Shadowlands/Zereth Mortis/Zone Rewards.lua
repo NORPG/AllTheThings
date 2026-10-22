@@ -2,16 +2,16 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(ZONE_REWARDS, {
 			currency(1979),	-- Cyphers of the First Ones
 			currency(2009),	-- Cosmic Flux
 			i(190189),	-- Sandworn Relic
 			i(190336, {	-- Thrumming Powerstone
-				["description"] = "Disenchant might give lattices.",
-				["requireSkill"] = ENCHANTING,
-				["groups"] = {
+				description = "Disenchant might give lattices.",
+				requireSkill = ENCHANTING,
+				groups = {
 					i(189153),	-- Unformed Lattice	-- no comments on Wowhead about any other Type dropped specifically?
 				},
 			}),
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				i(190389),	-- Broker's Lucky Coin
 				i(190726),	-- Extract of Prodigious Sands
 			}),
-			n(WEAPONS, sharedData({ ["timeline"] = { ADDED_9_2_5 } }, {
+			n(WEAPONS, sharedData({ timeline = { ADDED_9_2_5 } }, {
 				i(192428),	-- Ballad Shield
 				i(192450),	-- Choral Staff
 				i(192422),	-- Harmonium Lantern

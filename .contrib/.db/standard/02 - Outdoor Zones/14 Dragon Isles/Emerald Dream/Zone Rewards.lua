@@ -2,11 +2,11 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
 		n(ZONE_REWARDS, {
 			o(414169, {	-- Mysterious Seeds
-				["coords"] = {
+				coords = {
 					{ 38.3, 59.3, EMERALD_DREAM },
 					{ 39.9, 52.5, EMERALD_DREAM },
 					{ 40.6, 43.5, EMERALD_DREAM },
@@ -25,13 +25,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ 63.6, 47.2, EMERALD_DREAM },
 					{ 64.0, 64.8, EMERALD_DREAM },
 				},
-				["groups"] = {
+				groups = {
 					i(210050),	-- Mysterious Seeds (QI!)
 				},
 			}),
 			o(409458, {	-- Lost Fishing Supplies
-				["coord"] = { 63.3, 85.1, EMERALD_DREAM },
-				["groups"] = {
+				coord = { 63.3, 85.1, EMERALD_DREAM },
+				groups = {
 					i(209853),	-- Unstable Water Walking Potion
 				},
 			}),

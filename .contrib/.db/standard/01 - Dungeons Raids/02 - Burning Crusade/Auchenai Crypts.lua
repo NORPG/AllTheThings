@@ -18,40 +18,40 @@ local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(247, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {	-- Auchenai Crypts
-		["lore"] = "Auchenai Crypts is the main seat of power for the Auchenai - a renegade religious sect of draenei led by the Exarch Maladaar. The crypts are populated by these draenei and the unliving creatures they have summoned. The most important remains interred within the crypt are those of D'ore, one of the naaru. D'ore perished in the collision that brought Oshu'gun (and the draenei) to Draenor. In death, D'ore entered its void stage. The dark energies exuded by this phenomenon resulted, directly or indirectly, in the evils that have since befallen the crypts.",
+	inst(247, bubbleDownSelf({ timeline = { ADDED_2_0_3 } }, {	-- Auchenai Crypts
+		lore = "Auchenai Crypts is the main seat of power for the Auchenai - a renegade religious sect of draenei led by the Exarch Maladaar. The crypts are populated by these draenei and the unliving creatures they have summoned. The most important remains interred within the crypt are those of D'ore, one of the naaru. D'ore perished in the collision that brought Oshu'gun (and the draenei) to Draenor. In death, D'ore entered its void stage. The dark energies exuded by this phenomenon resulted, directly or indirectly, in the evils that have since befallen the crypts.",
 		-- #if BEFORE MOP
-		["zoneTextAreaID"] = 3790,	-- Auchenai Crypts
+		zoneTextAreaID = 3790,	-- Auchenai Crypts
 		-- #endif
-		["coord"] = { 34.34, 65.61, TEROKKAR_FOREST },	-- Auchenai Crypts, Terokkar Forest
-		["maps"] = {
+		coord = { 34.34, 65.61, TEROKKAR_FOREST },	-- Auchenai Crypts, Terokkar Forest
+		maps = {
 			AUCHINDOUN_AUCHENAI_CRYPTS,	-- Halls of Hereafter
 			257,	-- Bridge of Souls
 		},
-		["lvl"] = lvlsquish(62, 62, 15),
-		["groups"] = {
+		lvl = lvlsquish(62, 62, 15),
+		groups = {
 			n(QUESTS, {
 				q(10167, {	-- Auchindoun...
-					["sourceQuest"] = 10102,	-- A Secret Revealed
-					["qg"] = 18481,	-- A'dal
-					["coord"] = { 53.9, 44.8, SHATTRATH_CITY },
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(66, 66, 15),
-					["groups"] = {
+					sourceQuest = 10102,	-- A Secret Revealed
+					qg = 18481,	-- A'dal
+					coord = { 53.9, 44.8, SHATTRATH_CITY },
+					races = HORDE_ONLY,
+					lvl = lvlsquish(66, 66, 15),
+					groups = {
 						objective(1, {	-- Exarch Maladaar slain
-							["provider"] = { "n", 18373 },	-- Exarch Maladaar
+							provider = { "n", 18373 },	-- Exarch Maladaar
 						}),
 					},
 				}),
 				q(10164, {	-- Everything Will Be Alright
-					["sourceQuest"] = 10253,	-- Levixus the Soul Caller
-					["qg"] = 19698,	-- Greatfather Aldrimus
-					["coord"] = { 35.1, 65.2, TEROKKAR_FOREST },
-					["timeline"] = { REMOVED_4_3_0 },
-					["lvl"] = lvlsquish(64, 64, 15),
-					["groups"] = {
+					sourceQuest = 10253,	-- Levixus the Soul Caller
+					qg = 19698,	-- Greatfather Aldrimus
+					coord = { 35.1, 65.2, TEROKKAR_FOREST },
+					timeline = { REMOVED_4_3_0 },
+					lvl = lvlsquish(64, 64, 15),
+					groups = {
 						objective(1, {	-- Exarch Maladaar slain
-							["provider"] = { "n", 18373 },	-- Exarch Maladaar
+							provider = { "n", 18373 },	-- Exarch Maladaar
 						}),
 						i(29341),	-- Auchenai Anchorite's Robe
 						i(29340),	-- Auchenai Monk's Tunic
@@ -60,47 +60,47 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29595, {	-- Everything Will Be Alright
-					["sourceQuest"] = 10253,	-- Levixus the Soul Caller
-					["qg"] = 19698,	-- Greatfather Aldrimus
-					["coord"] = { 35.0, 65.2, TEROKKAR_FOREST },
-					["timeline"] = { ADDED_4_3_0 },
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(64, 64, 15),
+					sourceQuest = 10253,	-- Levixus the Soul Caller
+					qg = 19698,	-- Greatfather Aldrimus
+					coord = { 35.0, 65.2, TEROKKAR_FOREST },
+					timeline = { ADDED_4_3_0 },
+					isBreadcrumb = true,
+					lvl = lvlsquish(64, 64, 15),
 				}),
 				q(29591, {	-- Raging Spirits
-					["qg"] = 54698,	-- Tormented Soulpriest
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(63, 63, 15),
-					["groups"] = {
+					qg = 54698,	-- Tormented Soulpriest
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(63, 63, 15),
+					groups = {
 						objective(1, {	-- 0/5 Angered Skeleton slain
-							["provider"] = { "n", 18524 },	-- Angered Skeleton
+							provider = { "n", 18524 },	-- Angered Skeleton
 						}),
 						objective(2, {	-- 0/5 Raging Skeleton slain
-							["provider"] = { "n", 18521 },	-- Raging Skeleton
+							provider = { "n", 18521 },	-- Raging Skeleton
 						}),
 						objective(3, {	-- 0/3 Auchenai Necromancer slain
-							["provider"] = { "n", 18702 },	-- Auchenai Necromancer
+							provider = { "n", 18702 },	-- Auchenai Necromancer
 						}),
 					},
 				}),
 				q(29590, {	-- The Dead Watcher
-					["qg"] = 54725,	-- Draenei Spirit
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(63, 63, 15),
-					["groups"] = {
+					qg = 54725,	-- Draenei Spirit
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(63, 63, 15),
+					groups = {
 						objective(1, {	-- Shirrak the Dead Watcher slain
-							["provider"] = { "n", 18371 },	-- Shirrak the Dead Watcher
+							provider = { "n", 18371 },	-- Shirrak the Dead Watcher
 						}),
 					},
 				}),
 				q(29596, {	-- The End of the Exarch
-					["sourceQuest"] = 29595,	-- Everything Will Be Alright
-					["qg"] = 54725,	-- Draenei Spirit
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(63, 63, 15),
-					["groups"] = {
+					sourceQuest = 29595,	-- Everything Will Be Alright
+					qg = 54725,	-- Draenei Spirit
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(63, 63, 15),
+					groups = {
 						objective(1, {	-- Exarch Maladaar slain
-							["provider"] = { "n", 18373 },	-- Exarch Maladaar
+							provider = { "n", 18373 },	-- Exarch Maladaar
 						}),
 						i(29341),	-- Auchenai Anchorite's Robe
 						i(29340),	-- Auchenai Monk's Tunic
@@ -109,23 +109,23 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10168, {	-- What the Soul Sees
-					["sourceQuest"] = 10167,	-- Auchindoun...
-					["qg"] = 19412,	-- D'ore
-					["coord"] = { 73.8, 57.0, 257 },
-					["maps"] = { NAGRAND },
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(66, 66, 15),
-					["groups"] = {
+					sourceQuest = 10167,	-- Auchindoun...
+					qg = 19412,	-- D'ore
+					coord = { 73.8, 57.0, 257 },
+					maps = { NAGRAND },
+					races = HORDE_ONLY,
+					lvl = lvlsquish(66, 66, 15),
+					groups = {
 						objective(1, {	-- Darkened Spirit slain
-							["provider"] = { "i", 28283 },	-- Soul Mirror
-							["crs"] = {
+							provider = { "i", 28283 },	-- Soul Mirror
+							crs = {
 								18688,	-- Ancient Orc Ancestor
 								19480,	-- Darkened Spirit
 							},
 						}),
 						objective(2, {	-- 0/1 Soul Mirror
-							["provider"] = { "i", 28283 },	-- Soul Mirror
-							["description"] = "The soul mirror is located in the same chamber you pick up the quest from D'ore in Auchenai Crypts.\n\nDO NOT LEAVE WITHOUT IT.",
+							provider = { "i", 28283 },	-- Soul Mirror
+							description = "The soul mirror is located in the same chamber you pick up the quest from D'ore in Auchenai Crypts.\n\nDO NOT LEAVE WITHOUT IT.",
 						}),
 					},
 				}),
@@ -134,12 +134,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
 				n(COMMON_BOSS_DROPS, {
 					i(28558, {	-- Spirit Shard
-						["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
-						["timeline"] = { REMOVED_8_0_1 },
+						description = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
+						timeline = { REMOVED_8_0_1 },
 					}),
 					currency(1704, {	-- Spirit Shard
-						["timeline"] = { ADDED_8_0_1 },
-						["description"] =	-- From 9.1.5 (specific patch unconfirmed) this currency can be obtained regardless of whom controls the Spirit Towers in the Bone Wastes. This could have been true already from 8.0.1, but no reports seems to confirm it.
+						timeline = { ADDED_8_0_1 },
+						description =	-- From 9.1.5 (specific patch unconfirmed) this currency can be obtained regardless of whom controls the Spirit Towers in the Bone Wastes. This could have been true already from 8.0.1, but no reports seems to confirm it.
 							-- #if AFTER 9.1.5
 							"Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
 							-- #else
@@ -149,10 +149,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				n(ZONE_DROPS, {
 					i(22544, {	-- Formula: Enchant Boots - Dexterity (RECIPE!)
-						["cr"] = 18521,	-- Raging Skeleton
+						cr = 18521,	-- Raging Skeleton
 					}),
 					i(23605, {	-- Plans: Felsteel Gloves
-						["cr"] = 18497,	-- Auchenai Monk
+						cr = 18497,	-- Auchenai Monk
 					}),
 				}),
 				BossOnly(SHIRRAK, {
@@ -189,13 +189,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(70, 70, 30) }).AddGroups({
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(70, 70, 30) }).AddGroups({
 				n(COMMON_BOSS_DROPS, {
-					["crs"] = {
+					crs = {
 						18371,	-- Shirrak the Dead Watcher
 						18373,	-- Exarch Maladaar
 					},
-					["groups"] = {
+					groups = {
 						i(30587),	-- Champion's Fire Opal
 						i(30588),	-- Potent Fire Opal
 						i(30586),	-- Purified Tanzanite
@@ -203,12 +203,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				BossOnly(EXARCH_MALADAAR, {
 					ach(672),	-- Heroic: Auchenai Crypts
-					ach(5072, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Auchenai Crypts Guild Run
+					ach(5072, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Auchenai Crypts Guild Run
 					applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 					i(33836),	-- The Exarch's Soul Gem (QI!)
 					n(18478, {	-- Avatar of the Fallen
-						["description"] = "This mob will spawn once the Exarch reaches 25%. If you want the extra loot, the Exarch must stay alive until he spawns.",
-						["groups"] = {
+						description = "This mob will spawn once the Exarch reaches 25%. If you want the extra loot, the Exarch must stay alive until he spawns.",
+						groups = {
 							i(27878),	-- Auchenai Death Shroud
 							i(27877),	-- Draenic Wildstaff
 							i(28268),	-- Natural Mender's Wraps
@@ -223,16 +223,16 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
 				n(COMMON_BOSS_DROPS, {
 					i(28558, {	-- Spirit Shard
-						["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
-						["timeline"] = { REMOVED_8_0_1 },
+						description = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
+						timeline = { REMOVED_8_0_1 },
 					}),
 				}),
 				n(ZONE_DROPS, {
 					i(22544, {	-- Formula: Enchant Boots - Dexterity (RECIPE!)
-						["cr"] = 18521,	-- Raging Skeleton
+						cr = 18521,	-- Raging Skeleton
 					}),
 					i(23605, {	-- Plans: Felsteel Gloves
-						["cr"] = 18497,	-- Auchenai Monk
+						cr = 18497,	-- Auchenai Monk
 					}),
 				}),
 			}),
@@ -256,22 +256,22 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
-				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["cost"] = {
+				description = "You need to have a key to the instance in order to access this mode.",
+				cost = {
 					{ "i", 30633, 1 },	-- Auchenai Key
 					-- #if CLASSIC_ANNIVERSARY
 					{ "i", 265845, 1 },	-- Communal Auchenai Key
 					-- #endif
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 70, 30),
+				lvl = lvlsquish(70, 70, 30),
 			}).AddGroups({
 				n(COMMON_BOSS_DROPS, {
-					["crs"] = {
+					crs = {
 						18371,	-- Shirrak the Dead Watcher
 						18373,	-- Exarch Maladaar
 					},
-					["groups"] = {
+					groups = {
 						-- #if BEFORE CATA
 						BADGE_OF_JUSTICE(1),
 						-- #endif
@@ -290,7 +290,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				BossOnly(EXARCH_MALADAAR, {
 					ach(672),	-- Heroic: Auchenai Crypts
-					ach(5072, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Auchenai Crypts Guild Run
+					ach(5072, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Auchenai Crypts Guild Run
 					i(27867),	-- Boots of the Unjust
 					i(27870),	-- Doomplate Legguards
 					i(27523),	-- Exarch's Diamond Band
@@ -303,8 +303,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 					i(33836),	-- The Exarch's Soul Gem (QI!)
 					n(18478, {	-- Avatar of the Fallen
-						["description"] = "This mob will spawn once the Exarch reaches 25%. If you want the extra loot, the Exarch must stay alive until he spawns.",
-						["groups"] = {
+						description = "This mob will spawn once the Exarch reaches 25%. If you want the extra loot, the Exarch must stay alive until he spawns.",
+						groups = {
 							i(27878),	-- Auchenai Death Shroud
 							i(27877),	-- Draenic Wildstaff
 							i(28268),	-- Natural Mender's Wraps
@@ -320,7 +320,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(247, {
 		q(35544),	-- Auchinai Crypts Reward Quest - Normal completion
 		q(35545),	-- Auchinai Crypts Reward Quest - Heroic completion

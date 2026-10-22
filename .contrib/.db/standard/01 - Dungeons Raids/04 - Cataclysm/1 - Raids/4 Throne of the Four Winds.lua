@@ -3,53 +3,53 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_ONE, inst(74, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {	-- Throne of the Four Winds
-		["mapID"] = 328,
-		["coord"] = { 38.37, 80.63, ULDUM },	-- Throne of the Four Winds
-		["sharedLockout"] = 1,
-		["isRaid"] = true,
-		["lvl"] = 85,
-		["groups"] = {
+	applyclassicphase(CATA_PHASE_ONE, inst(74, bubbleDownSelf({ timeline = { ADDED_4_0_3 }, }, {	-- Throne of the Four Winds
+		mapID = 328,
+		coord = { 38.37, 80.63, ULDUM },	-- Throne of the Four Winds
+		sharedLockout = 1,
+		isRaid = true,
+		lvl = 85,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(4851, {		-- Throne of the Four Winds
 					crit(14097, {	-- Conclave of Wind
-						["_encounter"] = { 154, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },
+						_encounter = { 154, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },
 					}),
 					crit(13581, {	-- Al'Akir
-						["_encounter"] = { 155, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },
+						_encounter = { 155, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },
 					}),
 				}),
 				ach(4987),	-- Throne of the Four Winds Guild Run
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {
 				e(154, {	-- The Conclave of Wind
-					["creatureID"] = 45871,
-					["groups"] = {
+					creatureID = 45871,
+					groups = {
 						ach(5304),	-- Stay Chill
 						i(152974,	{	-- Drafty (PET!)
-							["timeline"] = { ADDED_7_3_0 },
+							timeline = { ADDED_7_3_0 },
 						}),
 					},
 				}),
 				e(155, {	-- Al'Akir
-					["creatureID"] = 46753,
-					["groups"] = {
+					creatureID = 46753,
+					groups = {
 						ach(5305),	-- Four Play
 						i(138836, {	-- Illusion: Windfury (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
-							["classes"] = { SHAMAN },
+							timeline = { ADDED_7_0_3 },
+							classes = { SHAMAN },
 						}),
 						i(63041),	-- Drake of the South Wind (MOUNT!)
 						i(152973, {	-- Zephyrian Prince (PET!)
-							["timeline"] = { ADDED_7_3_0 },
+							timeline = { ADDED_7_3_0 },
 						}),
 					},
 				}),
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 				e(154, {	-- The Conclave of Wind
-					["creatureID"] = 45871,
-					["groups"] = {
+					creatureID = 45871,
+					groups = {
 						i(63497),	-- Gale Rouser Belt
 						i(63496),	-- Lightning Well Belt
 						i(63490),	-- Sky Strider Belt
@@ -64,25 +64,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(155, {	-- Al'Akir
-					["creatureID"] = 46753,
-					["groups"] = {
+					creatureID = 46753,
+					groups = {
 						i(63683, {	-- Helm of the Forlorn Conqueror
-							["sym"] = SYMLINKS.TIER_ELEVEN.CONQ.HEAD,
+							sym = SYMLINKS.TIER_ELEVEN.CONQ.HEAD,
 						}),
 						i(63684, {	-- Helm of the Forlorn Protector
-							["sym"] = SYMLINKS.TIER_ELEVEN.PROT.HEAD,
+							sym = SYMLINKS.TIER_ELEVEN.PROT.HEAD,
 						}),
 						i(63682, {	-- Helm of the Forlorn Vanquisher
-							["sym"] = SYMLINKS.TIER_ELEVEN.VANQ.HEAD,
+							sym = SYMLINKS.TIER_ELEVEN.VANQ.HEAD,
 						}),
 						i(64315, {	-- Mantle of the Forlorn Conqueror
-							["sym"] = SYMLINKS.TIER_ELEVEN.CONQ.SHOULDER,
+							sym = SYMLINKS.TIER_ELEVEN.CONQ.SHOULDER,
 						}),
 						i(64316, {	-- Mantle of the Forlorn Protector
-							["sym"] = SYMLINKS.TIER_ELEVEN.PROT.SHOULDER,
+							sym = SYMLINKS.TIER_ELEVEN.PROT.SHOULDER,
 						}),
 						i(64314, {	-- Mantle of the Forlorn Vanquisher
-							["sym"] = SYMLINKS.TIER_ELEVEN.VANQ.SHOULDER,
+							sym = SYMLINKS.TIER_ELEVEN.VANQ.SHOULDER,
 						}),
 						i(68127),	-- Stormwake, the Tempest's Reach
 						i(68128),	-- Stormwake, the Tempest's Reach
@@ -109,8 +109,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
 				e(154, {	-- The Conclave of Wind
-					["creatureID"] = 45871,
-					["groups"] = {
+					creatureID = 45871,
+					groups = {
 						ach(5122),	-- Heroic: Conclave of Wind
 						i(65374),	-- Gale Rouser Belt
 						i(65377),	-- Lightning Well Belt
@@ -126,8 +126,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(155, {	-- Al'Akir
-					["creatureID"] = 46753,
-					["groups"] = {
+					creatureID = 46753,
+					groups = {
 						ach(5123, {	-- Heroic: Al'Akir
 							title(151),	-- of the Four Winds
 						}),

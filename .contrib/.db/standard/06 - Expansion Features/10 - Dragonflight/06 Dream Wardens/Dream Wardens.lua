@@ -21,68 +21,68 @@ local DREAM_INFUSION = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
 	header(HEADERS.Faction, FACTION_DREAM_WARDENS, {
 		faction(FACTION_DREAM_WARDENS, {
-			["icon"] = 5244643,
+			icon = 5244643,
 		}),
 		n(ACHIEVEMENTS, {
 			ach(19230, {	-- Friends in the Dream
-				["minReputation"] = { FACTION_DREAM_WARDENS, 15 },	-- Dream Wardens Renown 15
-				["timeline"] = { REMOVED_11_0_7 },
+				minReputation = { FACTION_DREAM_WARDENS, 15 },	-- Dream Wardens Renown 15
+				timeline = { REMOVED_11_0_7 },
 			}),
 			ach(41176, {	-- Friends in the Dream
-				["minReputation"] = { FACTION_DREAM_WARDENS, 15 },	-- Dream Wardens Renown 15
-				["timeline"] = { ADDED_11_0_7 },
+				minReputation = { FACTION_DREAM_WARDENS, 15 },	-- Dream Wardens Renown 15
+				timeline = { ADDED_11_0_7 },
 			}),
 			ach(19235, {	-- Warden of the Dream
-				["minReputation"] = { FACTION_DREAM_WARDENS, 20 },	-- Dream Wardens Renown 20
-				["timeline"] = { REMOVED_11_0_7 },
+				minReputation = { FACTION_DREAM_WARDENS, 20 },	-- Dream Wardens Renown 20
+				timeline = { REMOVED_11_0_7 },
 			}),
 			ach(41177, {	-- Warden of the Dream
-				["minReputation"] = { FACTION_DREAM_WARDENS, 20 },	-- Dream Wardens Renown 20
-				["timeline"] = { ADDED_11_0_7 },
+				minReputation = { FACTION_DREAM_WARDENS, 20 },	-- Dream Wardens Renown 20
+				timeline = { ADDED_11_0_7 },
 			}),
 		}),
-		n(DREAM_INFUSION, bubbleDownSelf({ ["minReputation"] = { FACTION_DREAM_WARDENS, 5 } }, {
+		n(DREAM_INFUSION, bubbleDownSelf({ minReputation = { FACTION_DREAM_WARDENS, 5 } }, {
 			q(78430, {	-- Mean Green Infusion Machine
-				["sourceQuests"] = { 78386 },	-- Emerald Reawakening (TODO: may be become available without renown after done once?)
-				["provider"] = { "n", 211209 },	-- Elianna
-				["coord"] = { 50.2, 61.8, EMERALD_DREAM },
-				["groups"] = {
+				sourceQuests = { 78386 },	-- Emerald Reawakening (TODO: may be become available without renown after done once?)
+				provider = { "n", 211209 },	-- Elianna
+				coord = { 50.2, 61.8, EMERALD_DREAM },
+				groups = {
 					i(205160),	-- Rithro (PET!)
 				},
 			}),
 			q(78431, {	-- Green Dream Team
-				["sourceQuests"] = { 78430 },	-- Mean Green Infusion Machine
-				["provider"] = { "n", 211209 },	-- Elianna
-				["coord"] = { 50.2, 61.8, EMERALD_DREAM },
-				["repeatable"] = true,	-- TODO: ShadowBrooks remove repeatable flag once blizzard fixes quest
-				["groups"] = {
+				sourceQuests = { 78430 },	-- Mean Green Infusion Machine
+				provider = { "n", 211209 },	-- Elianna
+				coord = { 50.2, 61.8, EMERALD_DREAM },
+				repeatable = true,	-- TODO: ShadowBrooks remove repeatable flag once blizzard fixes quest
+				groups = {
 					i(210776),	-- Lesser Dream Infusion
 				},
 			}),
 			q(78598, {	-- Dream Infusion
-				["sourceQuests"] = { 78431 },	-- Green Dream Team
-				["provider"] = { "n", 211209 },	-- Elianna
-				["coord"] = { 50.2, 61.8, EMERALD_DREAM },
-				["repeatable"] = true,
-				["groups"] = {
+				sourceQuests = { 78431 },	-- Green Dream Team
+				provider = { "n", 211209 },	-- Elianna
+				coord = { 50.2, 61.8, EMERALD_DREAM },
+				repeatable = true,
+				groups = {
 					currency(CURRENCY_DREAM_INFUSION),
 				},
 			}),
 			q(78595, {	-- Dream Infused
-				["description"] = "Requires Renown 18",
-				["provider"] = { "n", 211962 },	-- Merlsysra
-				["groups"] = {
+				description = "Requires Renown 18",
+				provider = { "n", 211962 },	-- Merlsysra
+				groups = {
 					currency(CURRENCY_DREAM_INFUSION),
 				},
 			}),
 			n(VENDORS, {
 				n(211209, {	-- Elianna <Dream Infuser>
-					["coord"] = { 50.2, 61.8, EMERALD_DREAM },
-					["groups"] = bubbleDownFiltered({
-						["cost"] = { { "c", CURRENCY_DREAM_INFUSION, 1 } },
+					coord = { 50.2, 61.8, EMERALD_DREAM },
+					groups = bubbleDownFiltered({
+						cost = { { "c", CURRENCY_DREAM_INFUSION, 1 } },
 					},FILTERFUNC_itemID,{
 						filter(BATTLE_PETS, {
 							hqt(78857, name(HEADERS.Item, 210652)),	-- unlock ability to buy Somnolet (i: 210652) (require: Sapnibbler (i: ?)) (spellID 429070)
@@ -94,26 +94,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							hqt(78854, name(HEADERS.Item, 210553)),	-- unlock ability to buy Dreamborne Scarab (i: 210553) (require: Endmite (i: ?)) (spellID 429058)
 
 							i(210785, {	-- Snorr (PET!)
-								["cost"] = { { "i", 210776, 1 } },	-- 1x Lesser Dream Infusion
-								["sourceQuest"] = 78857,
+								cost = { { "i", 210776, 1 } },	-- 1x Lesser Dream Infusion
+								sourceQuest = 78857,
 							}),
 							i(210553, {	-- Dreamborne Scarab (PET!)
-								["sourceQuest"] = 78854,
+								sourceQuest = 78854,
 							}),
 							i(210555, {	-- Dreamhoof (PET!)
-								["sourceQuest"] = 78855,
+								sourceQuest = 78855,
 							}),
 							i(210777, {	-- Drowsey (PET!)
-								["sourceQuest"] = 78859,
+								sourceQuest = 78859,
 							}),
 							i(210567, {	-- Memorie (PET!)
-								["sourceQuest"] = 78856,
+								sourceQuest = 78856,
 							}),
 							i(210652, {	-- Somnolet (PET!)
-								["sourceQuest"] = 78857,
+								sourceQuest = 78857,
 							}),
 							i(210505, {	-- Reverie (PET!)
-								["sourceQuest"] = 78858,
+								sourceQuest = 78858,
 							}),
 						}),
 						filter(MOUNTS, {
@@ -132,19 +132,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(QUESTS, bubbleDownRep(FACTION_DREAM_WARDENS, {
 				{		-- RENOWN 1 --
 					q(78444, {	-- A Worthy Ally: Dream Wardens
-						["sourceQuests"] = {
+						sourceQuests = {
 							77283,	-- A Multi-Front Battle
 							77887,	-- 'World Quest Unlock' (spellID 421687)
 						},
-						["sourceQuestNumRequired"] = 1,
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-						["maxReputation"] = { FACTION_DREAM_WARDENS, 20 },
-						["isWeekly"] = true,
-						["groups"] = {
+						sourceQuestNumRequired = 1,
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
+						maxReputation = { FACTION_DREAM_WARDENS, 20 },
+						isWeekly = true,
+						groups = {
 							i(210421),	-- Dream Wardens Insignia [Epic 500]
 							i(210872, {	-- Satchel of Dreams
-								["sym"] = {
+								sym = {
 									{"select", "itemID", 211389 },	-- Cache of Overblooming Treasures,
 									{"pop"},
 									{"exclude","itemID",
@@ -152,13 +152,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 										210243,	-- Technique: Contract: Dream Wardens (RECIPE!)
 									},
 								},
-								["groups"] = {
+								groups = {
 									i(202172),	-- Overflowing Satchel of Coins
 								},
 							}),
 							--[[ Discuss-
 							i(210872, {	-- Satchel of Dreams
-								["groups"] = {
+								groups = {
 									i(202172),	-- Overflowing Satchel of Coins
 									-- filter(CLOTH, {	-- Commented out due Tooltip Length
 										i(210349),	-- Frigid Conservator's Gown
@@ -240,149 +240,149 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 2 --
 					q(78579, {	-- Dragon Isles Supplies
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-						["timeline"] = { REMOVED_11_0_0 },
-						["lockCriteria"] = { 1, "questID", 78386 },	-- Emerald Reawakening
-						["DisablePartySync"] = true,
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
+						timeline = { REMOVED_11_0_0 },
+						lockCriteria = { 1, "questID", 78386 },	-- Emerald Reawakening
+						DisablePartySync = true,
 					}),
 				}, {	-- RENOWN 3 --
 					q(78385, {	-- Small Dreamseeds
-						["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-						["coord"] = { 59.7, 16.9, EMERALD_DREAM },
+						provider = { "n", 211265 },	-- Sylvia Whisperbloom
+						coord = { 59.7, 16.9, EMERALD_DREAM },
 					}),
 				}, {	-- RENOWN 4 --
 					q(78356, {	-- Whelpling's Dreaming Crest
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-						["timeline"] = { REMOVED_11_0_0 },
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
+						timeline = { REMOVED_11_0_0 },
 					}),
 				}, {	-- RENOWN 5 --
 					q(78386, {	-- Emerald Reawakening
-						["provider"] = { "n", 211962 },	-- Melsysra
-						["maps"] = { EMERALD_DREAM },	-- follow you around
+						provider = { "n", 211962 },	-- Melsysra
+						maps = { EMERALD_DREAM },	-- follow you around
 					}),
 					q(78580, {	-- Dragon Isles Supplies
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-						["timeline"] = { REMOVED_11_0_0 },
-						["lockCriteria"] = { 1, "questID", 78386 },	-- Emerald Reawakening
-						["DisablePartySync"] = true,
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
+						timeline = { REMOVED_11_0_0 },
+						lockCriteria = { 1, "questID", 78386 },	-- Emerald Reawakening
+						DisablePartySync = true,
 					}),
 				}, {	-- RENOWN 6 --
 				}, {	-- RENOWN 7 --
 				}, {	-- RENOWN 8 --
 					q(78358, {	-- Drake's Dreaming Crest
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
 					}),
 					q(78581, {	-- Dragon Isles Supplies
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-						["timeline"] = { REMOVED_11_0_0 },
-						["lockCriteria"] = { 1, "questID", 78358 },	-- Drake's Dreaming Crest
-						["DisablePartySync"] = true,
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
+						timeline = { REMOVED_11_0_0 },
+						lockCriteria = { 1, "questID", 78358 },	-- Drake's Dreaming Crest
+						DisablePartySync = true,
 					}),
 				}, {	-- RENOWN 9 --
 					q(78387, {	-- Plump Dreamseeds
-						["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-						["coord"] = { 59.7, 16.9, EMERALD_DREAM },
+						provider = { "n", 211265 },	-- Sylvia Whisperbloom
+						coord = { 59.7, 16.9, EMERALD_DREAM },
 					}),
 				}, {	-- RENOWN 10 --
 					q(78363, {	-- The Tabard of Your Dreams
-						["provider"] = { "n", 211962 },	-- Melsysra
-						["maps"] = { EMERALD_DREAM },	-- follow you around
-						["groups"] = {
+						provider = { "n", 211962 },	-- Melsysra
+						maps = { EMERALD_DREAM },	-- follow you around
+						groups = {
 							i(210501),	-- Dream Wardens Tabard
 						},
 					}),
 				}, {	-- RENOWN 11 --
 					q(78582, {	-- Dragon Isles Supplies
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-						["timeline"] = { REMOVED_11_0_0 },
-						["lockCriteria"] = { 1, "questID", 78364 },	-- Drake's Dreaming Crest
-						["DisablePartySync"] = true,
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
+						timeline = { REMOVED_11_0_0 },
+						lockCriteria = { 1, "questID", 78364 },	-- Drake's Dreaming Crest
+						DisablePartySync = true,
 					}),
 				}, {	-- RENOWN 12 --
 					q(78364, {	-- Drake's Dreaming Crest
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
 					}),
 					q(78583, {	-- Dragon Isles Supplies
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-						["timeline"] = { REMOVED_11_0_0 },
-						["lockCriteria"] = { 1, "questID", 78364 },	-- Drake's Dreaming Crest
-						["DisablePartySync"] = true,
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
+						timeline = { REMOVED_11_0_0 },
+						lockCriteria = { 1, "questID", 78364 },	-- Drake's Dreaming Crest
+						DisablePartySync = true,
 					}),
 				}, {	-- RENOWN 13 --
 				}, {	-- RENOWN 14 --
 				}, {	-- RENOWN 15 --
 					q(78374, {	-- Flightstones
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
 					}),
 					q(78584, {	-- Dragon Isles Supplies
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-						["timeline"] = { REMOVED_11_0_0 },
-						["lockCriteria"] = { 1, "questID", 78374 },	-- Flightstones
-						["DisablePartySync"] = true,
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
+						timeline = { REMOVED_11_0_0 },
+						lockCriteria = { 1, "questID", 78374 },	-- Flightstones
+						DisablePartySync = true,
 					}),
 				}, {	-- RENOWN 16 --
 					q(78585, {	-- Dragon Isles Supplies
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-						["timeline"] = { REMOVED_11_0_0 },
-						["lockCriteria"] = { 1, "questID", 78388 },	-- Gigantic Dreamseeds
-						["DisablePartySync"] = true,
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
+						timeline = { REMOVED_11_0_0 },
+						lockCriteria = { 1, "questID", 78388 },	-- Gigantic Dreamseeds
+						DisablePartySync = true,
 					}),
 				}, {	-- RENOWN 17 --
 					q(78388, {	-- Gigantic Dreamseeds
-						["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-						["coord"] = { 59.7, 16.9, EMERALD_DREAM },
+						provider = { "n", 211265 },	-- Sylvia Whisperbloom
+						coord = { 59.7, 16.9, EMERALD_DREAM },
 					}),
 					q(78586, {	-- Dragon Isles Supplies
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-						["timeline"] = { REMOVED_11_0_0 },
-						["lockCriteria"] = { 1, "questID", 78388 },	-- Gigantic Dreamseeds
-						["DisablePartySync"] = true,
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
+						timeline = { REMOVED_11_0_0 },
+						lockCriteria = { 1, "questID", 78388 },	-- Gigantic Dreamseeds
+						DisablePartySync = true,
 					}),
 				}, {	-- RENOWN 18 --
 					q(78587, {	-- Dragon Isles Supplies
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-						["timeline"] = { REMOVED_11_0_0 },
-						["lockCriteria"] = { 1, "questID", 78372 },	-- Drake's Dreaming Crest
-						["DisablePartySync"] = true,
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
+						timeline = { REMOVED_11_0_0 },
+						lockCriteria = { 1, "questID", 78372 },	-- Drake's Dreaming Crest
+						DisablePartySync = true,
 					}),
 				}, {	-- RENOWN 19 --
 					q(78372, {	-- Drake's Dreaming Crest
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
 					}),
 				}, {	-- RENOWN 20 --
 					q(78373, {	-- The Dream Thanks You
-						["provider"] = { "n", 211962 },	-- Melsysra
-						["maps"] = { EMERALD_DREAM },	-- follow you around
-						["groups"] = { i(206960) },	-- Enchanted Wyrm's Dreaming Crest
+						provider = { "n", 211962 },	-- Melsysra
+						maps = { EMERALD_DREAM },	-- follow you around
+						groups = { i(206960) },	-- Enchanted Wyrm's Dreaming Crest
 					}),
 					q(78588, {	-- Dragon Isles Supplies
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-						["timeline"] = { REMOVED_11_0_0 },
-						["lockCriteria"] = { 1, "questID", 78373 },	-- The Dream Thanks You
-						["DisablePartySync"] = true,
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
+						timeline = { REMOVED_11_0_0 },
+						lockCriteria = { 1, "questID", 78373 },	-- The Dream Thanks You
+						DisablePartySync = true,
 					}),
 					title(532),	-- <Name>, Dream Defender
 						-- RENOWN 20+++ --
 					q(76425, {	-- Renowned with the Dream Wardens
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
-						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-						["repeatable"] = true,
-						["groups"] = {
+						provider = { "n", 208143 },	-- Keeper Amrymn
+						coord = { 50.2, 61.6, EMERALD_DREAM },
+						repeatable = true,
+						groups = {
 								i(210992, {	-- Overflowing Dream Warden Trove
 							}),
 						},
@@ -392,8 +392,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		}),
 		n(VENDORS, {
 			n(208156, {	-- Moon Priestress Lasara <Renown Quatermaster>
-				["coord"] = { 50.3, 61.6, EMERALD_DREAM },
-				["groups"] = bubbleDownRep(FACTION_DREAM_WARDENS, {
+				coord = { 50.3, 61.6, EMERALD_DREAM },
+				groups = bubbleDownRep(FACTION_DREAM_WARDENS, {
 					{		-- RENOWN 1 --
 					}, {	-- RENOWN 2 --
 					}, {	-- RENOWN 3 --
@@ -401,26 +401,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}, {	-- RENOWN 5 --
 					}, {	-- RENOWN 6 --
 						i(210482, {	-- Flourishing Whimsydrake: Back Fins (MM!)
-							["cost"] = { { "c", DRAGON_SUPPLIES, 225 } },
+							cost = { { "c", DRAGON_SUPPLIES, 225 } },
 						}),
 						i(210483, {	-- Flourishing Whimsydrake: Ridged Brow (MM!)
-							["cost"] = { { "c", DRAGON_SUPPLIES, 225 } },
+							cost = { { "c", DRAGON_SUPPLIES, 225 } },
 						}),
 						i(210484, {	-- Flourishing Whimsydrake: Underbite Snout (MM!)
-							["cost"] = { { "c", DRAGON_SUPPLIES, 225 } },
+							cost = { { "c", DRAGON_SUPPLIES, 225 } },
 						}),
 					}, {	-- RENOWN 7 --
 						i(210702, {	-- Solar Synthesis Gloves
-							["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+							cost = { { "c", DRAGON_SUPPLIES, 300 } },
 						}),
 						i(210706, {	-- Drowsed Shepherd's Gloves
-							["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+							cost = { { "c", DRAGON_SUPPLIES, 300 } },
 						}),
 						i(210700, {	-- Auburn Scavenger Gauntlets
-							["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+							cost = { { "c", DRAGON_SUPPLIES, 300 } },
 						}),
 						i(210704, {	-- Fallen Protector Handguards
-							["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+							cost = { { "c", DRAGON_SUPPLIES, 300 } },
 						}),
 					}, {	-- RENOWN 8 --
 					}, {	-- RENOWN 9 --
@@ -429,78 +429,78 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}, {	-- RENOWN 12 --
 					}, {	-- RENOWN 13 --
 						i(210485, {	-- Flourishing Whimsydrake: Long Snout (MM!)
-							["cost"] = { { "c", DRAGON_SUPPLIES, 450 } },
+							cost = { { "c", DRAGON_SUPPLIES, 450 } },
 						}),
 						i(210487, {	-- Flourishing Whimsydrake: Neck Fins (MM!)
-							["cost"] = { { "c", DRAGON_SUPPLIES, 450 } },
+							cost = { { "c", DRAGON_SUPPLIES, 450 } },
 						}),
 						i(210486, {	-- Flourishing Whimsydrake: Horns (MM!)
-							["cost"] = { { "c", DRAGON_SUPPLIES, 450 } },
+							cost = { { "c", DRAGON_SUPPLIES, 450 } },
 						}),
 					}, {	-- RENOWN 14 --
 						i(210703, {	-- Solar Synthesis Crown
-							["cost"] = { { "c", DRAGON_SUPPLIES, 600 } },
+							cost = { { "c", DRAGON_SUPPLIES, 600 } },
 						}),
 						i(210707, {	-- Drowsed Shepherd's Hood
-							["cost"] = { { "c", DRAGON_SUPPLIES, 600 } },
+							cost = { { "c", DRAGON_SUPPLIES, 600 } },
 						}),
 						i(210701, {	-- Auburn Scavenger Helm
-							["cost"] = { { "c", DRAGON_SUPPLIES, 600 } },
+							cost = { { "c", DRAGON_SUPPLIES, 600 } },
 						}),
 						i(210705, {	-- Fallen Protector Greathelm
-							["cost"] = { { "c", DRAGON_SUPPLIES, 600 } },
+							cost = { { "c", DRAGON_SUPPLIES, 600 } },
 						}),
 					}, {	-- RENOWN 15 --
 						i(210692, {	-- Juniper (PET!)
-							["cost"] = { { "c", DRAGON_SUPPLIES, 375 } },
+							cost = { { "c", DRAGON_SUPPLIES, 375 } },
 						}),
 						i(210691, {	-- Spruce (PET!)
-							["cost"] = { { "c", DRAGON_SUPPLIES, 375 } },
+							cost = { { "c", DRAGON_SUPPLIES, 375 } },
 						}),
 					}, {	-- RENOWN 16 --
 						iensemble(210790, {	-- Ensemble: Elegant Green Dragon Outerwear
-							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
+							cost = { { "c", DRAGON_SUPPLIES, 500 } },
 						}),
 						i(210677, {	-- Survivalist's Shovel
-							["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+							cost = { { "c", DRAGON_SUPPLIES, 300 } },
 						}),
 						i(210685, {	-- Ranger's Longbow
-							["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+							cost = { { "c", DRAGON_SUPPLIES, 300 } },
 						}),
 						i(210680, {	-- Caretaker's Trowel
-							["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+							cost = { { "c", DRAGON_SUPPLIES, 300 } },
 						}),
 						i(210679, {	-- Cultivator's Watering Can
-							["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+							cost = { { "c", DRAGON_SUPPLIES, 300 } },
 						}),
 						i(210676, {	-- Elderwood Cane
-							["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
+							cost = { { "c", DRAGON_SUPPLIES, 300 } },
 						}),
 					}, {	-- RENOWN 17 --
 						i(209951, {	-- Lunar Dreamstag (MOUNT!)
-							["cost"] = { { "c", DRAGON_SUPPLIES, 1200 } },
+							cost = { { "c", DRAGON_SUPPLIES, 1200 } },
 						}),
 						i(209949, {	-- Suntouched Dreamstag (MOUNT!)
-							["cost"] = { { "c", DRAGON_SUPPLIES, 1200 } },
+							cost = { { "c", DRAGON_SUPPLIES, 1200 } },
 						}),
 					}, {	-- RENOWN 18 --
 						i(211495),	-- Dreambound Augment Rune
 					}, {	-- RENOWN 19 --
 						i(210479, {	-- Flourishing Whimsydrake: Night Scales (MM!)
-							["cost"] = { { "c", DRAGON_SUPPLIES, 1250 } },
+							cost = { { "c", DRAGON_SUPPLIES, 1250 } },
 						}),
 						i(210481, {	-- Flourishing Whimsydrake: Sunset Scales (MM!)
-							["cost"] = { { "c", DRAGON_SUPPLIES, 1250 } },
+							cost = { { "c", DRAGON_SUPPLIES, 1250 } },
 						}),
 					}, {	-- RENOWN 20 --
 						i(208066, {	-- Small Dreamseed
-							["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
+							cost = { { "c", DRAGON_SUPPLIES, 100 } },
 						}),
 						i(208067, {	-- Plump Dreamseed
-							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
+							cost = { { "c", DRAGON_SUPPLIES, 500 } },
 						}),
 						i(208047, {	-- Gigantic Dreamseed
-							["cost"] = { { "c", DRAGON_SUPPLIES, 1500 } },
+							cost = { { "c", DRAGON_SUPPLIES, 1500 } },
 						}),
 					},
 				}),
@@ -509,7 +509,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
 	m(DRAGON_ISLES, {
 		header(HEADERS.Faction, FACTION_DREAM_WARDENS, {
 			n(DREAM_INFUSION, {

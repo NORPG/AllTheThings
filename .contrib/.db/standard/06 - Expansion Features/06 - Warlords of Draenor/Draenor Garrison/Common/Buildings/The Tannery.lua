@@ -2,8 +2,8 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+	n(GARRISONS, sharedData({maps = { LUNARFALL, FROSTWALL } },	{
 		n(BUILDINGS, {
 			garrisonBuilding(122, {	-- The Tannery (rank 1: 90, rank 2: 121, rank 3: 122)
 				n(CRAFTABLES, {
@@ -33,20 +33,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 				}),
 				n(QUESTS, {
 					q(36642, {	-- Your First Leatherworking Work Order
-						["qg"] = 77383,	-- Anders Longstitch
-						["races"] = ALLIANCE_ONLY,
+						qg = 77383,	-- Anders Longstitch
+						races = ALLIANCE_ONLY,
 					}),
 					q(37574, {	-- Your First Leatherworking Work Order
-						["qg"] = 79834,	-- Murne Greenhoof
-						["races"] = HORDE_ONLY,
+						qg = 79834,	-- Murne Greenhoof
+						races = HORDE_ONLY,
 					}),
 				}),
 				filter(RECIPES, {
-					["crs"] = {
+					crs = {
 						88383,	-- Leatherworking Follower [A]
 						88382,	-- Leatherworking Follower [H]
 					},
-					["groups"] = sharedData({ ["u"] = TRAINING }, {
+					groups = sharedData({ u = TRAINING }, {
 						r(176408),	-- Archmage's Tent
 						r(176413),	-- Blood Elven Tent
 						r(176409),	-- Brute's Tent
@@ -74,12 +74,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 				}),
 				n(VENDORS, {
 					n(77383, {	-- Anders Longstitch <Leatherworker>
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {{"sub", "common_vendor", 87057}},	-- Leara Moonsilk <Leatherworking Patterns>
+						races = ALLIANCE_ONLY,
+						sym = {{"sub", "common_vendor", 87057}},	-- Leara Moonsilk <Leatherworking Patterns>
 					}),
 					n(79834, {	-- Murne Greenhoof <Leatherworker>
-						["races"] = HORDE_ONLY,
-						["sym"] = {{"sub", "common_vendor", 87549}},	-- Garm Gladestride <Leatherworking Patterns>
+						races = HORDE_ONLY,
+						sym = {{"sub", "common_vendor", 87549}},	-- Garm Gladestride <Leatherworking Patterns>
 					}),
 				}),
 			}),

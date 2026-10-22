@@ -4,17 +4,17 @@
 
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(FELWOOD, {
-		["lore"] = "Once a wooded paradise, Felwood bears a ten-thousand-year-old curse. The trees, land and creatures are twisted and evil, violent and wild. Cursed ancients and furbolg maul any who come close, and satyrs hold depraved court near tainted moonwells. The animals within are mad and brutal and have no fear of humanoids. The undead and demons that survived the Third War fled here as well, and hide in the deep tangles. Felwood is a chaos of battling creatures, and blood soaks the ground. The infamous Shadow Council, a group of orc warlocks loyal to the Burning Legion, hides somewhere within.\n\nAlliance heroes, particularly druids, make forays into the cursed wood in attempts to destroy some of the larger menaces, root out the Shadow Council, and perhaps, some day, restore the land to its former legacy.",
-		["icon"] = 236763,
-		["groups"] = {
+		lore = "Once a wooded paradise, Felwood bears a ten-thousand-year-old curse. The trees, land and creatures are twisted and evil, violent and wild. Cursed ancients and furbolg maul any who come close, and satyrs hold depraved court near tainted moonwells. The animals within are mad and brutal and have no fear of humanoids. The undead and demons that survived the Third War fled here as well, and hide in the deep tangles. Felwood is a chaos of battling creatures, and blood soaks the ground. The infamous Shadow Council, a group of orc warlocks loyal to the Burning Legion, hides somewhere within.\n\nAlliance heroes, particularly druids, make forays into the cursed wood in attempts to destroy some of the larger menaces, root out the Shadow Council, and perhaps, some day, restore the land to its former legacy.",
+		icon = 236763,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(853),	-- Explore Felwood
 				ach(4931, {	-- Felwood Quests
-					["timeline"] = { ADDED_4_0_3},
+					timeline = { ADDED_4_0_3},
 					-- #if AFTER 7.3.5
-					["_doautomation"] = true,
+					_doautomation = true,
 					-- #else
-					["sourceQuests"] = {
+					sourceQuests = {
 						27997,	-- The Corruption of the Jadefire
 						28148,	-- Culling the Corrupted
 						27995,	-- Dance for Ruumbo!
@@ -42,13 +42,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			battlepets({
-				["sym"] = {{"select","speciesID",
+				sym = {{"select","speciesID",
 					406,	-- Beetle (PET!)
 					420,	-- Toad (PET!)
 				}},
-				["groups"] = {
+				groups = {
 					pet(500, {	-- Minfernal (PET!)
-						["description"] = "Can be found around Shatter Scar Vale near Infernal Sentries.",
+						description = "Can be found around Shatter Scar Vale near Infernal Sentries.",
 					}),
 					pet(497),	-- Tainted Cockroach (PET!)
 					pet(498),	-- Tainted Moth (PET!)
@@ -75,92 +75,92 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FLIGHT_PATHS, {
 				fp(48, {	-- Bloodvenom Post, Felwood
-					["cr"] = 11900,	-- Brakkar <Wind Rider Master>
-					["coord"] = { 34.4, 53.8, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = HORDE_ONLY,
+					cr = 11900,	-- Brakkar <Wind Rider Master>
+					coord = { 34.4, 53.8, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					races = HORDE_ONLY,
 				}),
 				fp(166, {	-- Emerald Sanctuary, Felwood
-					["cr"] = 22931,	-- Gorrim <Emerald Circle Flight Master>
-					["coords"] = {
+					cr = 22931,	-- Gorrim <Emerald Circle Flight Master>
+					coords = {
 						-- #if AFTER CATA
 						{ 51.4, 80.8, FELWOOD },
 						-- #else
 						{ 51.5, 82.2, FELWOOD },
 						-- #endif
 					},
-					["timeline"] = { ADDED_2_2_0 },
+					timeline = { ADDED_2_2_0 },
 				}),
 				fp(597, {	-- Irontree Clearing, Felwood
-					["cr"] = 43085,	-- Dirzak Pryocrank <Flight Master>
-					["coord"] = { 56.2, 8.6, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
+					cr = 43085,	-- Dirzak Pryocrank <Flight Master>
+					coord = { 56.2, 8.6, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = HORDE_ONLY,
 				}),
 				fp(65, {	-- Talonbranch Glade, Felwood
-					["cr"] = 12578,	-- Mishellena <Hippogryph Master>
-					["coords"] = {
+					cr = 12578,	-- Mishellena <Hippogryph Master>
+					coords = {
 						-- #if AFTER CATA
 						{ 60.6, 25.2, FELWOOD },
 						-- #else
 						{ 62.6, 24.2, FELWOOD },
 						-- #endif
 					},
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				fp(594, {	-- Whisperwind Grove, Felwood
-					["cr"] = 43073,	-- Hanah Southsong <Hippogryph Master>
-					["coord"] = { 43.6, 28.6, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
+					cr = 43073,	-- Hanah Southsong <Hippogryph Master>
+					coord = { 43.6, 28.6, FELWOOD },
+					timeline = { ADDED_4_0_3 },
 				}),
 				fp(595, {	-- Wildheart Point, Felwood
-					["cr"] = 43079,	-- Chyella Hushglade <Hippogryph Master>
-					["coord"] = { 44.2, 61.8, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
+					cr = 43079,	-- Chyella Hushglade <Hippogryph Master>
+					coord = { 44.2, 61.8, FELWOOD },
+					timeline = { ADDED_4_0_3 },
 				}),
 			}),
 			-- #if BEFORE 4.0.3
 			prof(HERBALISM, {
 				i(11514, {	-- Fel Creep
-					["description"] = "In order for this to drop while Herbing, you must have the Cenarion Beacon in your bags.",
-					["provider"] = { "i", 11511 },	-- Cenarion Beacon
-					["timeline"] = { REMOVED_4_0_3 },
+					description = "In order for this to drop while Herbing, you must have the Cenarion Beacon in your bags.",
+					provider = { "i", 11511 },	-- Cenarion Beacon
+					timeline = { REMOVED_4_0_3 },
 				}),
 			}),
 			prof(MINING, {
 				i(11513, {	-- Tainted Vitriol
-					["description"] = "In order for this to drop while Mining, you must have the Cenarion Beacon in your bags.",
-					["provider"] = { "i", 11511 },	-- Cenarion Beacon
-					["timeline"] = { REMOVED_4_0_3 },
+					description = "In order for this to drop while Mining, you must have the Cenarion Beacon in your bags.",
+					provider = { "i", 11511 },	-- Cenarion Beacon
+					timeline = { REMOVED_4_0_3 },
 				}),
 			}),
 			-- #endif
 			petbattles({
 				n(66442, {	-- Zoltan <Master Pet Tamer>
-					["coord"] = { 40.0, 56.6, FELWOOD },
-					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nZoltan's pets are level 16 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",
-					["timeline"] = { ADDED_5_0_4 },
-					["petBattleLvl"] = 16,
-					["groups"] = {
+					coord = { 40.0, 56.6, FELWOOD },
+					description = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nZoltan's pets are level 16 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",
+					timeline = { ADDED_5_0_4 },
+					petBattleLvl = 16,
+					groups = {
 						q(31907, {	-- Zoltan
-							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
+							sourceAchievement = 6602,	-- Taming Kalimdor
+							timeline = { ADDED_5_0_4 },
+							races = HORDE_ONLY,
+							isDaily = true,
 						}),
 					},
 				}),
 			}),
 			n(QUESTS, {
 				q(28340, {	-- A Bomb Deal
-					["sourceQuest"] = 28380,	-- Pikwik in Peril
-					["qg"] = 48333,	-- Foreman Pikwik
-					["coord"] = { 54.6, 18.3, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					sourceQuest = 28380,	-- Pikwik in Peril
+					qg = 48333,	-- Foreman Pikwik
+					coord = { 54.6, 18.3, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = HORDE_ONLY,
+					groups = {
 						objective(1, {	-- 0/8 Irontree Explosives
-							["providers"] = {
+							providers = {
 								{ "i", 63516 },	-- Irontree Explosives
 								{ "o", 207105 },	-- Irontree Explosive
 							},
@@ -168,79 +168,79 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(28218, {	-- A Destiny of Flame and Sorrow
-					["sourceQuest"] = 28217,	-- Wanted: The Demon Hunter
-					["qg"] = 47923,	-- Feronas Sindweller
-					["coords"] = {
+					sourceQuest = 28217,	-- Wanted: The Demon Hunter
+					qg = 47923,	-- Feronas Sindweller
+					coords = {
 						{ 45.5, 20.1, FELWOOD },
 						{ 49.0, 24.0, KALIMDOR },
 					},
-					["timeline"] = { ADDED_4_0_3 },
+					timeline = { ADDED_4_0_3 },
 				}),
 				q(5242, {	-- A Final Blow
-					["sourceQuest"] = 5165,	-- Dousing the Flames of Protection
-					["qg"] = 10922,	-- Greta Mosshoof
-					["coord"] = { 51.2, 82.2, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 5165,	-- Dousing the Flames of Protection
+					qg = 10922,	-- Greta Mosshoof
+					coord = { 51.2, 82.2, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					lvl = 48,
+					groups = {
 						objective(1, {	-- 0/1 Moora slain
-							["provider"] = { "n", 9861 },	-- Moora
-							["coord"] = { 38.8, 46.8, FELWOOD },
+							provider = { "n", 9861 },	-- Moora
+							coord = { 38.8, 46.8, FELWOOD },
 						}),
 						objective(2, {	-- 0/1 Salia slain
-							["provider"] = { "n", 9860 },	-- Salia
-							["coord"] = { 39.6, 47.0, FELWOOD },
+							provider = { "n", 9860 },	-- Salia
+							coord = { 39.6, 47.0, FELWOOD },
 						}),
 						objective(3, {	-- 0/1 Shadow Lord Fel'dan's Head
-							["provider"] = { "i", 13207 },	-- Shadow Lord Fel'dan's Head
-							["coord"] = { 38.8, 46.8, FELWOOD },
-							["cr"] = 9517,	-- Shadow Lord Fel'dan
+							provider = { "i", 13207 },	-- Shadow Lord Fel'dan's Head
+							coord = { 38.8, 46.8, FELWOOD },
+							cr = 9517,	-- Shadow Lord Fel'dan
 						}),
 						i(15707, {	-- Brantwood Sash
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 						i(15708, {	-- Blight Leather Gloves
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 						i(15709, {	-- Gearforge Girdle
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(28334, {	-- A Flare Fight
-					["sourceQuest"] = 28372,	-- Back in Business
-					["qg"] = 48127,	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					sourceQuest = 28372,	-- Back in Business
+					qg = 48127,	-- Darla Drilldozer
+					coord = { 56.3, 8.1, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = HORDE_ONLY,
+					groups = {
 						objective(1, {	-- 0/8 Talonbranch Prowler slain
-							["provider"] = { "n", 48311 },	-- Talonbranch Prowler
+							provider = { "n", 48311 },	-- Talonbranch Prowler
 						}),
 					},
 				}),
 				q(6162, {	-- A Husband's Last Battle
-					["qg"] = 9620,	-- Dreka'Sur
-					["coord"] = { 34.8, 52.6, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 46,
-					["groups"] = {
+					qg = 9620,	-- Dreka'Sur
+					coord = { 34.8, 52.6, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					races = HORDE_ONLY,
+					lvl = 46,
+					groups = {
 						objective(1, {	-- 0/1 Overlord Ror's Claw
-							["provider"] = { "i", 15879 },	-- Overlord Ror's Claw
-							["coord"] = { 48.6, 93.6, FELWOOD },
-							["cr"] = 9464,	-- Overlord Ror
+							provider = { "i", 15879 },	-- Overlord Ror's Claw
+							coord = { 48.6, 93.6, FELWOOD },
+							cr = 9464,	-- Overlord Ror
 						}),
 					},
 				}),
 				q(28207, {	-- A Slimy Situation
-					["sourceQuest"] = 28305,	-- The Fate of Bloodvenom Post
-					["qg"] = 47696,	-- Kelnir Leafsong
-					["coord"] = { 41.2, 49.9, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28305,	-- The Fate of Bloodvenom Post
+					qg = 47696,	-- Kelnir Leafsong
+					coord = { 41.2, 49.9, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/7 Emerald Shimmercap
-							["providers"] = {
+							providers = {
 								{ "i", 63078 },	-- Emerald Shimmercap
 								{ "o", 206764 },	-- Emerald Shimmercap
 							},
@@ -248,9 +248,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(5202, {	-- A Strange Red Key
-					["provider"] = { "i", 13140 },	-- Blood Red Key
-					["timeline"] = { REMOVED_4_0_3 },
-					["crs"] = {
+					provider = { "i", 13140 },	-- Blood Red Key
+					timeline = { REMOVED_4_0_3 },
+					crs = {
 						7118,	-- Jaedenar Darkweaver
 						7114,	-- Jaedenar Enforcer
 						9862,	-- Jaedenar Legionnaire
@@ -258,12 +258,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14523,	-- Ulathek
 						14522,	-- Ur'dan
 					},
-					["lvl"] = 49,
+					lvl = 49,
 				}),
 				q(28100, {	-- A Talking Totem
-					["qg"] = 11554,	-- Grazle
-					["coord"] = { 51.4, 80.4, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
+					qg = 11554,	-- Grazle
+					coord = { 51.4, 80.4, FELWOOD },
+					timeline = { ADDED_4_0_3 },
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, n(createHeader({	-- Aeonas: Journey to Felwood
@@ -273,13 +273,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						en = "Aeonas: Journey to Felwood",
 					},
 				}), {
-					["qg"] = 218160,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
-					["questID"] = 81879,	-- Aeonas: Journey to Felwood HQT
-					["sourceQuest"] = 81764,	-- The Mysterious Merchant
-					["coord"] = { 37.6, 31.6, STORMWIND_CITY },
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 44,
+					qg = 218160,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+					questID = 81879,	-- Aeonas: Journey to Felwood HQT
+					sourceQuest = 81764,	-- The Mysterious Merchant
+					coord = { 37.6, 31.6, STORMWIND_CITY },
+					classes = { PALADIN },
+					races = ALLIANCE_ONLY,
+					lvl = 44,
 				})),
 				applyclassicphase(SOD_PHASE_THREE, n(createHeader({	-- Aeonas: Trust in a Friend
 					readable = "SOD - Aeonas: Trust in a Friend",
@@ -288,547 +288,547 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						en = "Aeonas: Trust in a Friend",
 					},
 				}), {
-					["qg"] = 221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
-					["questID"] = 81883,	-- Aeonas: Trust in a Friend HQT
-					["sourceQuest"] = 81879,	-- Aeonas: Journey to Felwood HQT
-					["coord"] = { 45.0, 52.0, FELWOOD },
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 44,
+					qg = 221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+					questID = 81883,	-- Aeonas: Trust in a Friend HQT
+					sourceQuest = 81879,	-- Aeonas: Journey to Felwood HQT
+					coord = { 45.0, 52.0, FELWOOD },
+					classes = { PALADIN },
+					races = ALLIANCE_ONLY,
+					lvl = 44,
 				})),
 				-- #endif
 				q(28150, {	-- An Arcane Ally
-					["sourceQuests"] = {
+					sourceQuests = {
 						28148,	-- Culling the Corrupted
 						27995,	-- Dance for Ruumbo!
 						27997,	-- The Corruption of the Jadefire
 					},
-					["qg"] = 10923,	-- Tenell Leafrunner
-					["coord"] = { 51.1, 80.4, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["isBreadcrumb"] = true,
+					qg = 10923,	-- Tenell Leafrunner
+					coord = { 51.1, 80.4, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					isBreadcrumb = true,
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8419, {	-- An Imp's Request
-					["altQuests"] = { 8420 },	-- Hot and Itchy
-					["qgs"] = {
+					altQuests = { 8420 },	-- Hot and Itchy
+					qgs = {
 						3326,	-- Zevrost <Warlock Trainer>
 						5172,	-- Briarthorn <Warlock Trainer>
 						461,	-- Demisette Cloyce <Warlock Trainer>
 						4563,	-- Kaal Soulreaper <Warlock Trainer>
 					},
-					["coords"] = {
+					coords = {
 						{ 48.4, 45.6, ORGRIMMAR },
 						{ 50.2, 6.0, IRONFORGE },
 						{ 28.4, 78.2, STORMWIND_CITY },
 						{ 86.0, 15.6, UNDERCITY },
 					},
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 14256, 1 } },	-- Felcloth
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARLOCK },
-					["lvl"] = 50,
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 14256, 1 } },	-- Felcloth
+					races = HORDE_ONLY,
+					classes = { WARLOCK },
+					lvl = 50,
 				})),
 				q(4261, {	-- Ancient Spirit
-					["sourceQuest"] = 4442,	-- Purified!
-					["qg"] = 9598,	-- Arei
-					["qi"] = 11445,	-- Flute of the Ancients
-					["coord"] = { 49.4, 14.4, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { ASHENVALE },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 49,
-					["groups"] = {
+					sourceQuest = 4442,	-- Purified!
+					qg = 9598,	-- Arei
+					qi = 11445,	-- Flute of the Ancients
+					coord = { 49.4, 14.4, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					maps = { ASHENVALE },
+					races = ALLIANCE_ONLY,
+					lvl = 49,
+					groups = {
 						i(11873, {	-- Ethereal Mist Cape
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 						i(11874, {	-- Clouddrift Mantle
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4005, {	-- Aquementas
-					["sourceQuest"] = 4084,	-- Silver Heart
-					["qg"] = 9116,	-- Eridan Bluewind <Emerald Circle>
-					["coord"] = { 51.2, 81.6, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { TANARIS, UNGORO_CRATER },
-					["lvl"] = 47,
-					["groups"] = {
+					sourceQuest = 4084,	-- Silver Heart
+					qg = 9116,	-- Eridan Bluewind <Emerald Circle>
+					coord = { 51.2, 81.6, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					maps = { TANARIS, UNGORO_CRATER },
+					lvl = 47,
+					groups = {
 						objective(1, {	-- 0/1 Silver Totem of Aquementas
-							["provider"] = { "i", 11522 },	-- Silver Totem of Aquementas
+							provider = { "i", 11522 },	-- Silver Totem of Aquementas
 						}),
 						i(11617, {	-- Eridan's Supplies
 							i(11169, {	-- Book of Aquor
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 							}),
 						}),
 						i(11522, {	-- Silver Totem of Aquementas
-							["providers"] = { "i", 11169 },	-- Book of Aquor
-							["timeline"] = { REMOVED_4_0_3 },
-							["coord"] = { 70.0, 49.0, TANARIS },
-							["cr"] = 9453,	-- Aquementas
+							providers = { "i", 11169 },	-- Book of Aquor
+							timeline = { REMOVED_4_0_3 },
+							coord = { 70.0, 49.0, TANARIS },
+							cr = 9453,	-- Aquementas
 						}),
 					},
 				}),
 				q(28372, {	-- Back to Business
-					["sourceQuests"] = {
+					sourceQuests = {
 						28264,	-- Navarax's Gambit
 						28228,	-- Rejoining the Forest
 					},
-					["qg"] = 48469,	-- Fez Hobnob
-					["coord"] = { 44.2, 27.9, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
+					qg = 48469,	-- Fez Hobnob
+					coord = { 44.2, 27.9, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = HORDE_ONLY,
+					isBreadcrumb = true,
 				}),
 				q(28388, {	-- Bloody Wages
-					["sourceQuests"] = {
+					sourceQuests = {
 						28386,	-- Borrowed Bombs
 						28385,	-- Oil and Irony
 					},
-					["qg"] = 48493,	-- Alton Redding
-					["coord"] = { 56.8, 18.4, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					qg = 48493,	-- Alton Redding
+					coord = { 56.8, 18.4, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = ALLIANCE_ONLY,
+					groups = {
 						objective(1, {	-- 0/7 Panicking Worker slain
-							["provider"] = { "n", 48331 },	-- Panicking Worker
+							provider = { "n", 48331 },	-- Panicking Worker
 						}),
 					},
 				}),
 				q(28386, {	-- Borrowed Bombs
-					["sourceQuest"] = 28337,	-- The Shredders of Irontree
-					["qg"] = 48493,	-- Alton Redding
-					["coord"] = { 56.8, 18.4, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					sourceQuest = 28337,	-- The Shredders of Irontree
+					qg = 48493,	-- Alton Redding
+					coord = { 56.8, 18.4, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = ALLIANCE_ONLY,
+					groups = {
 						objective(1, {	-- 0/8 Irontree Explosives
-							["providers"] = {
+							providers = {
 								{ "i", 63516 },	-- Irontree Explosives
 								{ "o", 207105 },	-- Irontree Explosive
 							},
 						}),
 						i(65342, {	-- Irontree Cloak
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65291, {	-- Oilfoot Slippers
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65310, {	-- Alton's Leggings
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65329, {	-- Breastplate of Protest
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(28113, {	-- Break the Unbreakable
-					["sourceQuest"] = 28044,	-- Touch the Untouchable
-					["qg"] = 47341,	-- Arcanist Delaris
-					["coord"] = { 41.9, 72.0, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28044,	-- Touch the Untouchable
+					qg = 47341,	-- Arcanist Delaris
+					coord = { 41.9, 72.0, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/1 Xavathras slain
-							["provider"] = { "n", 9454 },	-- Xavathras
+							provider = { "n", 9454 },	-- Xavathras
 						}),
 						i(65277, {	-- Delaris' Gloves
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65297, {	-- Glovelettes of Opening
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65316, {	-- Spellbreaker's Helm
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65335, {	-- Demon Smasher
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(28387, {	-- Burnout
-					["sourceQuests"] = {
+					sourceQuests = {
 						28386,	-- Borrowed Bombs
 						28385,	-- Oil and Irony
 					},
-					["qg"] = 48493,	-- Alton Redding
-					["coord"] = { 56.8, 18.4, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					qg = 48493,	-- Alton Redding
+					coord = { 56.8, 18.4, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = ALLIANCE_ONLY,
+					groups = {
 						objective(1, {	-- 0/7 Oil Gusher ignited
-							["provider"] = { "n", 48317 },	-- Oil Gusher
+							provider = { "n", 48317 },	-- Oil Gusher
 						}),
 					},
 				}),
 				q(28219, {	-- Buzzers for Baby
-					["sourceQuest"] = 28229,	-- Nature and Nurture
-					["qg"] = 48032,	-- Seedling Protector (mobileNPC)
-					["coord"] = { 48.6, 25.1, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28229,	-- Nature and Nurture
+					qg = 48032,	-- Seedling Protector (mobileNPC)
+					coord = { 48.6, 25.1, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/10 Ironwood Buzzer slain
-							["provider"] = { "n", 48038 },	-- Ironwood Buzzer
+							provider = { "n", 48038 },	-- Ironwood Buzzer
 						}),
 					},
 				}),
 				q(5159, {	-- Cleansed Water Returns to Felwood
-					["sourceQuest"] = 5158,	-- Seeking Spiritual Aid
-					["qg"] = 5901,	-- Islen Waterseer
-					["qi"] = 12906,	-- Purified Moonwell Water
-					["coord"] = { 65.8, 43.8, THE_BARRENS },
-					["timeline"] = { REMOVED_4_0_3 },
-					["lvl"] = 48,
+					sourceQuest = 5158,	-- Seeking Spiritual Aid
+					qg = 5901,	-- Islen Waterseer
+					qi = 12906,	-- Purified Moonwell Water
+					coord = { 65.8, 43.8, THE_BARRENS },
+					timeline = { REMOVED_4_0_3 },
+					lvl = 48,
 				}),
 				{	-- Cleansing Felwood
-					["allianceQuestData"] = q(4101, {	-- Cleansing Felwood (A)
-						["qg"] = 9528,	-- Arathandris Silversky
-						["coord"] = { 54.2, 86.7, FELWOOD },
+					allianceQuestData = q(4101, {	-- Cleansing Felwood (A)
+						qg = 9528,	-- Arathandris Silversky
+						coord = { 54.2, 86.7, FELWOOD },
 					}),
-					["hordeQuestData"] = q(4102, {	-- Cleansing Felwood (H)
-						["qg"] = 9529,	-- Maybess Riverbreeze
-						["coord"] = { 46.8, 83.0, FELWOOD },
+					hordeQuestData = q(4102, {	-- Cleansing Felwood (H)
+						qg = 9529,	-- Maybess Riverbreeze
+						coord = { 46.8, 83.0, FELWOOD },
 					}),
-					["timeline"] = { REMOVED_4_0_3 },
-					["lvl"] = 48,
-					["groups"] = {
+					timeline = { REMOVED_4_0_3 },
+					lvl = 48,
+					groups = {
 						objective(1, {	-- 0/15 Blood Amber
-							["provider"] = { "i", 11503 },	-- Blood Amber
-							["crs"] = {
+							provider = { "i", 11503 },	-- Blood Amber
+							crs = {
 								7104,	-- Dessecus
 								7100,	-- Warpwood Moss Flayer
 								7101,	-- Warpwood Shredder
 							},
 						}),
 						i(11511, {	-- Cenarion Beacon
-							["description"] = "You must keep this in your bags for the Fel Creep, Patch of Tainted Skin, Tainted Vitriol, and Corrupted Soul Shards to drop from the various means of gathering.",
+							description = "You must keep this in your bags for the Fel Creep, Patch of Tainted Skin, Tainted Vitriol, and Corrupted Soul Shards to drop from the various means of gathering.",
 						}),
 					},
 				},
 				q(28214, {	-- Cleanup at Bloodvenom Post
-					["sourceQuest"] = 28208,	-- Winna's Kitten
-					["qg"] = 47692,	-- Altsoba Ragetotem
-					["coord"] = { 41.2, 49.9, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28208,	-- Winna's Kitten
+					qg = 47692,	-- Altsoba Ragetotem
+					coord = { 41.2, 49.9, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/6 Bloodvenom Slimeslave slain
-							["provider"] = { "n", 47675 },	-- Bloodvenom Slimeslave
+							provider = { "n", 47675 },	-- Bloodvenom Slimeslave
 						}),
 					},
 				}),
 				q(28341, {	-- Collecting Corruption
-					["qg"] = 48339,	-- Elessa Starbreeze
-					["coord"] = { 43.9, 27.8, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					qg = 48339,	-- Elessa Starbreeze
+					coord = { 43.9, 27.8, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/8 Entropic Essence
-							["provider"] = { "i", 63522 },	-- Entropic Essence
-							["cr"] = 9879,	-- Entropic Horror
+							provider = { "i", 63522 },	-- Entropic Essence
+							cr = 9879,	-- Entropic Horror
 						}),
 					},
 				}),
 				q(5157, {	-- Collection of the Corrupt Water
-					["sourceQuest"] = 5155,	-- Forces of Jaedenar
-					["qg"] = 10922,	-- Greta Mosshoof
-					["coord"] = { 51.2, 82.2, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 5155,	-- Forces of Jaedenar
+					qg = 10922,	-- Greta Mosshoof
+					coord = { 51.2, 82.2, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					lvl = 48,
+					groups = {
 						objective(1, {	-- 0/1 Corrupt Moonwell Water
-							["providers"] = {
+							providers = {
 								{ "i", 12907 },	-- Corrupt Moonwell Water
 								{ "i", 12922 },	-- Empty Canteen
 							},
-							["coord"] = { 35.2, 59.8, FELWOOD },
+							coord = { 35.2, 59.8, FELWOOD },
 						}),
 					},
 				}),
 				q(4119, {	-- Corrupted Night Dragon
-					["provider"] = { "o", 164885 },	-- Corrupted Night Dragon
-					["coord"] = { 40.7, 78.3, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11952) },	-- Night Dragon's Breath
+					provider = { "o", 164885 },	-- Corrupted Night Dragon
+					coord = { 40.7, 78.3, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11952) },	-- Night Dragon's Breath
 				}),
 				q(4447, {	-- Corrupted Night Dragon
-					["provider"] = { "o", 173324 },	-- Corrupted Night Dragon
-					["coord"] = { 50.6, 30.4, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11952) },	-- Night Dragon's Breath
+					provider = { "o", 173324 },	-- Corrupted Night Dragon
+					coord = { 50.6, 30.4, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11952) },	-- Night Dragon's Breath
 				}),
 				q(4448, {	-- Corrupted Night Dragon
-					["provider"] = { "o", 174608 },	-- Corrupted Night Dragon
-					["coord"] = { 42.5, 13.9, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11952) },	-- Night Dragon's Breath
+					provider = { "o", 174608 },	-- Corrupted Night Dragon
+					coord = { 42.5, 13.9, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11952) },	-- Night Dragon's Breath
 				}),
 				q(4462, {	-- Corrupted Night Dragon
-					["provider"] = { "o", 174684 },	-- Corrupted Night Dragon
-					["coord"] = { 35.1, 59.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11952) },	-- Night Dragon's Breath
+					provider = { "o", 174684 },	-- Corrupted Night Dragon
+					coord = { 35.1, 59.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11952) },	-- Night Dragon's Breath
 				}),
 				q(4506, {	-- Corrupted Sabers
-					["sourceQuest"] = 4504,	-- Well of Corruption
-					["qg"] = 9996,	-- Winna Hazzard
-					["coord"] = { 34.2, 52.4, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 49,
-					["groups"] = {
+					sourceQuest = 4504,	-- Well of Corruption
+					qg = 9996,	-- Winna Hazzard
+					coord = { 34.2, 52.4, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					races = HORDE_ONLY,
+					lvl = 49,
+					groups = {
 						objective(1, {	-- Return the corrupted cat to Winna Hazzard
-							["providers"] = {
+							providers = {
 								{ "n", 10042 },	-- Corrupted Saber
 								{ "i", 12565 },	-- Winna's Kitten Carrier
 							},
-							["coord"] = { 32.0, 66.0, FELWOOD },
-							["description"] = "When you get back to Winna, the cat stops, and you have to TALK TO THE CAT.",
+							coord = { 32.0, 66.0, FELWOOD },
+							description = "When you get back to Winna, the cat stops, and you have to TALK TO THE CAT.",
 						}),
 					},
 				}),
 				q(2523, {	-- Corrupted Songflower
-					["provider"] = { "o", 171942 },	-- Corrupted Songflower
-					["coord"] = { 48.3, 75.6, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
+					provider = { "o", 171942 },	-- Corrupted Songflower
+					coord = { 48.3, 75.6, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
 				}),
 				q(2878, {	-- Corrupted Songflower
-					["provider"] = { "o", 174594 },	-- Corrupted Songflower
-					["coord"] = { 63.3, 22.6, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
+					provider = { "o", 174594 },	-- Corrupted Songflower
+					coord = { 63.3, 22.6, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
 				}),
 				q(3363, {	-- Corrupted Songflower
-					["provider"] = { "o", 174595 },	-- Corrupted Songflower
-					["coord"] = { 63.9, 6.1, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
+					provider = { "o", 174595 },	-- Corrupted Songflower
+					coord = { 63.9, 6.1, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
 				}),
 				q(4113, {	-- Corrupted Songflower
-					["provider"] = { "o", 164886 },	-- Corrupted Songflower
-					["coord"] = { 52.9, 87.8, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
+					provider = { "o", 164886 },	-- Corrupted Songflower
+					coord = { 52.9, 87.8, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
 				}),
 				q(4114, {	-- Corrupted Songflower
-					["provider"] = { "o", 174596 },	-- Corrupted Songflower
-					["coord"] = { 55.8, 10.5, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
+					provider = { "o", 174596 },	-- Corrupted Songflower
+					coord = { 55.8, 10.5, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
 				}),
 				q(4116, {	-- Corrupted Songflower
-					["provider"] = { "o", 174597 },	-- Corrupted Songflower
-					["coord"] = { 50.6, 13.9, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
+					provider = { "o", 174597 },	-- Corrupted Songflower
+					coord = { 50.6, 13.9, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
 				}),
 				q(4118, {	-- Corrupted Songflower
-					["provider"] = { "o", 174598 },	-- Corrupted Songflower
-					["coord"] = { 34.4, 52.2, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
+					provider = { "o", 174598 },	-- Corrupted Songflower
+					coord = { 34.4, 52.2, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
 				}),
 				q(4401, {	-- Corrupted Songflower
-					["provider"] = { "o", 171939 },	-- Corrupted Songflower
-					["coord"] = { 46.0, 85.2, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
+					provider = { "o", 171939 },	-- Corrupted Songflower
+					coord = { 46.0, 85.2, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
 				}),
 				q(4464, {	-- Corrupted Songflower
-					["provider"] = { "o", 174712 },	-- Corrupted Songflower
-					["coord"] = { 40.2, 56.6, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
+					provider = { "o", 174712 },	-- Corrupted Songflower
+					coord = { 40.2, 56.6, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
 				}),
 				q(4465, {	-- Corrupted Songflower
-					["provider"] = { "o", 174713 },	-- Corrupted Songflower
-					["coord"] = { 40.1, 44.4, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
+					provider = { "o", 174713 },	-- Corrupted Songflower
+					coord = { 40.1, 44.4, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
 				}),
 				q(4117, {	-- Corrupted Whipper Root
-					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
-					["coord"] = { 40.2, 85.2, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11951) },	-- Whipper Root Tuber
+					provider = { "o", 164888 },	-- Corrupted Whipper Root
+					coord = { 40.2, 85.2, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11951) },	-- Whipper Root Tuber
 				}),
 				q(4443, {	-- Corrupted Whipper Root
-					["provider"] = { "o", 173284 },	-- Corrupted Whipper Root
-					["coord"] = { 50.6, 18.2, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11951) },	-- Whipper Root Tuber
+					provider = { "o", 173284 },	-- Corrupted Whipper Root
+					coord = { 50.6, 18.2, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11951) },	-- Whipper Root Tuber
 				}),
 				q(4444, {	-- Corrupted Whipper Root
-					["provider"] = { "o", 174605 },	-- Corrupted Whipper Root
-					["coord"] = { 49.4, 12.2, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11951) },	-- Whipper Root Tuber
+					provider = { "o", 174605 },	-- Corrupted Whipper Root
+					coord = { 49.4, 12.2, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11951) },	-- Whipper Root Tuber
 				}),
 				q(4445, {	-- Corrupted Whipper Root
-					["provider"] = { "o", 174606 },	-- Corrupted Whipper Root
-					["coord"] = { 40.7, 19.2, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11951) },	-- Whipper Root Tuber
+					provider = { "o", 174606 },	-- Corrupted Whipper Root
+					coord = { 40.7, 19.2, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11951) },	-- Whipper Root Tuber
 				}),
 				q(4446, {	-- Corrupted Whipper Root
-					["provider"] = { "o", 174607 },	-- Corrupted Whipper Root
-					["coord"] = { 43.0, 46.9, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11951) },	-- Whipper Root Tuber
+					provider = { "o", 174607 },	-- Corrupted Whipper Root
+					coord = { 43.0, 46.9, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11951) },	-- Whipper Root Tuber
 				}),
 				q(4461, {	-- Corrupted Whipper Root
-					["provider"] = { "o", 174686 },	-- Corrupted Whipper Root
-					["coord"] = { 34.1, 60.3, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11951) },	-- Whipper Root Tuber
+					provider = { "o", 174686 },	-- Corrupted Whipper Root
+					coord = { 34.1, 60.3, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11951) },	-- Whipper Root Tuber
 				}),
 				q(996, {	-- Corrupted Windblossom
-					["provider"] = { "o", 174600 },	-- Corrupted Windblossom
-					["coord"] = { 57.5, 20.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11950) },	-- Windblossom Berries
+					provider = { "o", 174600 },	-- Corrupted Windblossom
+					coord = { 57.5, 20.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11950) },	-- Windblossom Berries
 				}),
 				q(998, {	-- Corrupted Windblossom
-					["provider"] = { "o", 174599 },	-- Corrupted Windblossom
-					["coord"] = { 55.8, 7.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11950) },	-- Windblossom Berries
+					provider = { "o", 174599 },	-- Corrupted Windblossom
+					coord = { 55.8, 7.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11950) },	-- Windblossom Berries
 				}),
 				q(1514, {	-- Corrupted Windblossom
-					["provider"] = { "o", 173327 },	-- Corrupted Windblossom
-					["coord"] = { 55.2, 23.5, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11950) },	-- Windblossom Berries
+					provider = { "o", 173327 },	-- Corrupted Windblossom
+					coord = { 55.2, 23.5, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11950) },	-- Windblossom Berries
 				}),
 				q(4115, {	-- Corrupted Windblossom
-					["provider"] = { "o", 164887 },	-- Corrupted Windblossom
-					["coord"] = { 50.0, 80.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11950) },	-- Windblossom Berries
+					provider = { "o", 164887 },	-- Corrupted Windblossom
+					coord = { 50.0, 80.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11950) },	-- Windblossom Berries
 				}),
 				q(4221, {	-- Corrupted Windblossom
-					["provider"] = { "o", 174604 },	-- Corrupted Windblossom
-					["coord"] = { 39.0, 59.1, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11950) },	-- Windblossom Berries
+					provider = { "o", 174604 },	-- Corrupted Windblossom
+					coord = { 39.0, 59.1, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11950) },	-- Windblossom Berries
 				}),
 				q(4222, {	-- Corrupted Windblossom
-					["provider"] = { "o", 174603 },	-- Corrupted Windblossom
-					["coord"] = { 34.4, 48.8, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11950) },	-- Windblossom Berries
+					provider = { "o", 174603 },	-- Corrupted Windblossom
+					coord = { 34.4, 48.8, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11950) },	-- Windblossom Berries
 				}),
 				q(4343, {	-- Corrupted Windblossom
-					["provider"] = { "o", 174602 },	-- Corrupted Windblossom
-					["coord"] = { 38.8, 21.9, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11950) },	-- Windblossom Berries
+					provider = { "o", 174602 },	-- Corrupted Windblossom
+					coord = { 38.8, 21.9, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11950) },	-- Windblossom Berries
 				}),
 				q(4403, {	-- Corrupted Windblossom
-					["provider"] = { "o", 174601 },	-- Corrupted Windblossom
-					["coord"] = { 45.4, 18.3, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11950) },	-- Windblossom Berries
+					provider = { "o", 174601 },	-- Corrupted Windblossom
+					coord = { 45.4, 18.3, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11950) },	-- Windblossom Berries
 				}),
 				q(4466, {	-- Corrupted Windblossom
-					["provider"] = { "o", 174708 },	-- Corrupted Windblossom
-					["coord"] = { 36.5, 61.9, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11950) },	-- Windblossom Berries
+					provider = { "o", 174708 },	-- Corrupted Windblossom
+					coord = { 36.5, 61.9, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11950) },	-- Windblossom Berries
 				}),
 				q(4467, {	-- Corrupted Windblossom
-					["provider"] = { "o", 174709 },	-- Corrupted Windblossom
-					["coord"] = { 44.8, 41.7, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = { i(11950) },	-- Windblossom Berries
+					provider = { "o", 174709 },	-- Corrupted Windblossom
+					coord = { 44.8, 41.7, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
+					repeatable = true,
+					lvl = 48,
+					groups = { i(11950) },	-- Windblossom Berries
 				}),
 				q(28116, {	-- Crying Violet
-					["sourceQuest"] = 28152,	-- Jaedenar Awaits
-					["qg"] = 10922,	-- Greta Mosshoof
-					["coord"] = { 43.9, 61.8, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28152,	-- Jaedenar Awaits
+					qg = 10922,	-- Greta Mosshoof
+					coord = { 43.9, 61.8, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/8 Crying Violet
-							["providers"] = {
+							providers = {
 								{ "i", 63032 },	-- Crying Violet
 								{ "o", 206706 },	-- Crying Violet
 							},
@@ -836,80 +836,80 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(28148, {	-- Culling the Corrupted
-					["qg"] = 10921,	-- Taronn Redfeather
-					["coord"] = { 50.9, 80.1, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					qg = 10921,	-- Taronn Redfeather
+					coord = { 50.9, 80.1, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/10 Corrupted Pelt
-							["provider"] = { "i", 63088 },	-- Corrupted Pelt
-							["crs"] = {
+							provider = { "i", 63088 },	-- Corrupted Pelt
+							crs = {
 								8956,	-- Angerclaw Bear
 								8959,	-- Felpaw Wolf
 							},
 						}),
 						i(65275, {	-- Angerclaw Leggings
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65295, {	-- Felpaw Boots
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65314, {	-- Belt of the Sanctuary
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65333, {	-- Redfeather Band
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(27995, {	-- Dance for Ruumbo!
-					["sourceQuests"] = {
+					sourceQuests = {
 						27989,	-- Ruumbo Demands Honey
 						27994,	-- Ruumbo Demands Justice
 					},
-					["provider"] = { "o", 206585 },	-- Totem of Ruumbo
-					["coord"] = { 51.4, 83.7, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					provider = { "o", 206585 },	-- Totem of Ruumbo
+					coord = { 51.4, 83.7, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						i(65279, {	-- Grazle's Sandals
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65299, {	-- Allen's Abandoned Belt
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65318, {	-- Ruumbo's Arm
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65336, {	-- Pulled Wool
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(28261, {	-- Deceivers In Our Midst
-					["sourceQuest"] = 28257,	-- The Fall of Tichondrius
-					["qg"] = 47923,	-- Feronas Sindweller
-					["coords"] = {
+					sourceQuest = 28257,	-- The Fall of Tichondrius
+					qg = 47923,	-- Feronas Sindweller
+					coords = {
 						{ 45.5, 20.1, FELWOOD },
 						{ 49.0, 24.0, KALIMDOR },
 					},
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/12 Jadefire Shifter slain
-							["provider"] = { "n", 48154 },	-- Jadefire Shifter
+							provider = { "n", 48154 },	-- Jadefire Shifter
 						}),
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84384, {	-- Demonic Deceptions
-					["qg"] =  222408,	-- Shadowtooth Emissary
-					["coord"] = { 51.6, 82.0, FELWOOD },
-					["timeline"] = { ADDED_1_15_3 },
-					["maps"] = { WINTERSPRING },
-					["lvl"] = 55,
-					["groups"] = {
+					qg =  222408,	-- Shadowtooth Emissary
+					coord = { 51.6, 82.0, FELWOOD },
+					timeline = { ADDED_1_15_3 },
+					maps = { WINTERSPRING },
+					lvl = 55,
+					groups = {
 						objective(1, {	-- 0/6 Owlbeast Pineal Gland
-							["provider"] = { "i", 227914 },	-- Owlbeast Pineal Gland
-							["coord"] = { 65.6, 21.4, WINTERSPRING },
-							["crs"] = {
+							provider = { "i", 227914 },	-- Owlbeast Pineal Gland
+							coord = { 65.6, 21.4, WINTERSPRING },
+							crs = {
 								7454,	-- Berserk Owlbeast
 								7452,	-- Crazed Owlbeast
 								7453,	-- Moontouched Owlbeast
@@ -922,164 +922,164 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(28000, {	-- Do the Imp-Possible
-					["sourceQuests"] = {
+					sourceQuests = {
 						28150,	-- An Arcane Ally
 						28148,	-- Culling the Corrupted
 						27995,	-- Dance for Ruumbo!
 						27997,	-- The Corruption of the Jadefire
 					},
-					["qg"] = 47341,	-- Arcanist Delaris
-					["coord"] = { 41.9, 72.0, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
+					qg = 47341,	-- Arcanist Delaris
+					coord = { 41.9, 72.0, FELWOOD },
+					timeline = { ADDED_4_0_3 },
 				}),
 				q(28126, {	-- Dousing the Flames of Protection
-					["sourceQuest"] = 28119,	-- Purity from Corruption
-					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
-					["coords"] = {
+					sourceQuest = 28119,	-- Purity from Corruption
+					qg = 51664,	-- Andalar Shadevale <Emerald Circle>
+					coords = {
 						{ 36.3, 58.2, FELWOOD },
 						{ 47.5, 30.3, KALIMDOR },
 					},
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/1 Extinguish the Brazier of Pain
-							["provider"] = { "o", 176158 },	-- Brazier of Pain
-							["coord"] = { 37.0, 55.9, FELWOOD },
+							provider = { "o", 176158 },	-- Brazier of Pain
+							coord = { 37.0, 55.9, FELWOOD },
 						}),
 						objective(2, {	-- 0/1 Extinguish the Brazier of Malice
-							["provider"] = { "o", 176159 },	-- Brazier of Malice
-							["coord"] = { 38.3, 52.5, FELWOOD },
+							provider = { "o", 176159 },	-- Brazier of Malice
+							coord = { 38.3, 52.5, FELWOOD },
 						}),
 						objective(3, {	-- 0/1 Extinguish the Brazier of Suffering
-							["provider"] = { "o", 176160 },	-- Brazier of Suffering
-							["coord"] = { 37.4, 53.1, FELWOOD },
+							provider = { "o", 176160 },	-- Brazier of Suffering
+							coord = { 37.4, 53.1, FELWOOD },
 						}),
 						objective(4, {	-- 0/1 Extinguish the Brazier of Hatred
-							["provider"] = { "o", 176161 },	-- Brazier of Hatred
-							["coord"] = { 37.2, 54.9, FELWOOD },
+							provider = { "o", 176161 },	-- Brazier of Hatred
+							coord = { 37.2, 54.9, FELWOOD },
 						}),
 						i(65281, {	-- Belt of the Lost Barrow
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65301, {	-- Jade Green Spaulders
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65320, {	-- Sanctuary Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65337, {	-- Emerald Orb
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						--
 						i(12906),	-- Purified Moonwell Water (QI!)
 					},
 				}),
 				q(5165, {	-- Dousing the Flames of Protection
-					["sourceQuest"] = 5159,	-- Cleansed Water Returns to Felwood
-					["qg"] = 10922,	-- Greta Mosshoof
-					["coord"] = { 51.2, 82.2, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 5159,	-- Cleansed Water Returns to Felwood
+					qg = 10922,	-- Greta Mosshoof
+					coord = { 51.2, 82.2, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					lvl = 48,
+					groups = {
 						objective(1, {	-- Extinguish the Brazier of Pain
-							["providers"] = {
+							providers = {
 								{ "i", 12906 },	-- Purified Moonwell Water
 								{ "o", 176158 },	-- Brazier of Pain
 							},
-							["coord"] = { 36.3, 56.3, FELWOOD },
+							coord = { 36.3, 56.3, FELWOOD },
 						}),
 						objective(2, {	-- Extinguish the Brazier of Malice
-							["providers"] = {
+							providers = {
 								{ "i", 12906 },	-- Purified Moonwell Water
 								{ "o", 176159 },	-- Brazier of Malice
 							},
-							["coord"] = { 37.7, 52.7, FELWOOD },
+							coord = { 37.7, 52.7, FELWOOD },
 						}),
 						objective(3, {	-- Extinguish the Brazier of Suffering
-							["providers"] = {
+							providers = {
 								{ "i", 12906 },	-- Purified Moonwell Water
 								{ "o", 176160 },	-- Brazier of Suffering
 							},
-							["coord"] = { 36.7, 53.3, FELWOOD },
+							coord = { 36.7, 53.3, FELWOOD },
 						}),
 						objective(4, {	-- Extinguish the Brazier of Hatred
-							["providers"] = {
+							providers = {
 								{ "i", 12906 },	-- Purified Moonwell Water
 								{ "o", 176161 },	-- Brazier of Hatred
 							},
-							["coord"] = { 36.5, 55.2, FELWOOD },
+							coord = { 36.5, 55.2, FELWOOD },
 						}),
 					},
 				}),
 				q(28382, {	-- Enemy at our Roots
-					["sourceQuest"] = 28381,	-- The Denmother
-					["qg"] = 47931,	-- Denmother Ulrica
-					["coord"] = { 61.8, 26.6, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					sourceQuest = 28381,	-- The Denmother
+					qg = 47931,	-- Denmother Ulrica
+					coord = { 61.8, 26.6, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = ALLIANCE_ONLY,
+					groups = {
 						objective(1, {	-- 0/8 Irontree Chopper slain
-							["provider"] = { "n", 48453 },	-- Irontree Chopper
+							provider = { "n", 48453 },	-- Irontree Chopper
 						}),
 						i(65341, {	-- Bloodwater Shield
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65290, {	-- Packrunner's Spaulders
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65309, {	-- Deaf Ear Helm
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65328, {	-- Talon Branch
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(28396, {	-- Feathers for Grazle
-					["sourceQuest"] = 27995,	-- Dance for Ruumbo!
-					["qg"] = 11554,	-- Grazle
-					["coord"] = { 51.4, 80.4, FELWOOD },
-					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
-					["timeline"] = { ADDED_4_0_3 },
-					["cost"] = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
-					["repeatable"] = true,
+					sourceQuest = 27995,	-- Dance for Ruumbo!
+					qg = 11554,	-- Grazle
+					coord = { 51.4, 80.4, FELWOOD },
+					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					timeline = { ADDED_4_0_3 },
+					cost = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
+					repeatable = true,
 				}),
 				q(28342, {	-- Fel To Pieces
-					["qg"] = 48339,	-- Elessa Starbreeze
-					["coord"] = { 43.9, 27.8, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					qg = 48339,	-- Elessa Starbreeze
+					coord = { 43.9, 27.8, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/9 Infernal Debris
-							["provider"] = { "i", 63123 },	-- Infernal Debris
-							["cr"] = 7136,	-- Infernal Sentry
+							provider = { "i", 63123 },	-- Infernal Debris
+							cr = 7136,	-- Infernal Sentry
 						}),
 					},
 				}),
 				q(4441, {	-- Felbound Ancients
-					["sourceQuest"] = 939,	-- Flute of Xavaric
-					["qg"] = 9116,	-- Eridan Bluewind
-					["coord"] = { 51.4, 81.5, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 49,
-					["groups"] = {
+					sourceQuest = 939,	-- Flute of Xavaric
+					qg = 9116,	-- Eridan Bluewind
+					coord = { 51.4, 81.5, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					maps = { DARNASSUS },
+					races = ALLIANCE_ONLY,
+					lvl = 49,
+					groups = {
 						objective(1, {	-- 0/1 Vial of Blessed Water
-							["providers"] = {
+							providers = {
 								{ "i", 5646 },	-- Vial of Blessed Water
 								{ "i", 11682 },	-- Eridan's Vial
 							},
-							["coord"] = { 39.0, 84.0, DARNASSUS },
+							coord = { 39.0, 84.0, DARNASSUS },
 						}),
 					},
 				}),
 				q(28102, {	-- Fight the Power
-					["sourceQuest"] = 28044,	-- Touch the Untouchable
-					["qg"] = 9116,	-- Eridan Bluewind
-					["coord"] = { 42.0, 71.7, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28044,	-- Touch the Untouchable
+					qg = 9116,	-- Eridan Bluewind
+					coord = { 42.0, 71.7, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/8 Jadefire Rogue or Shadowstalker slain
-							["providers"] = {
+							providers = {
 								{ "n", 7106},	-- Jadefire Rogue
 								{ "n", 7110},	-- Jadefire Shadowstalker
 							},
@@ -1087,63 +1087,63 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(28368, {	-- Fire in the Hole!
-					["sourceQuest"] = 28335,	-- Turn It Off! Turn It Off!
-					["provider"] = { "o", 207104 },	-- Master Control Pump
-					["coord"] = { 60.4, 22.2, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					sourceQuest = 28335,	-- Turn It Off! Turn It Off!
+					provider = { "o", 207104 },	-- Master Control Pump
+					coord = { 60.4, 22.2, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = HORDE_ONLY,
+					groups = {
 						objective(1, {	-- 0/1 Grolvitar the Everburning slain
-							["provider"] = { "n", 48352 },	-- Grolvitar the Everburning
+							provider = { "n", 48352 },	-- Grolvitar the Everburning
 						}),
 						i(65346, {	-- Gauntlets of Raw Strength
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65349, {	-- Everburning Cloak
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65352, {	-- Drilldozer Band
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(7602, {	-- Flawless Fel Essence
-					["sourceQuest"] = 7601,	-- What Niby Commands
-					["qg"] = 14470,	-- Impsy <Niby's Minion>
-					["coord"] = { 41.6, 44.8, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { AZSHARA, BLASTED_LANDS },
-					["classes"] = { WARLOCK },
-					["lvl"] = 50,
-					["groups"] = {
+					sourceQuest = 7601,	-- What Niby Commands
+					qg = 14470,	-- Impsy <Niby's Minion>
+					coord = { 41.6, 44.8, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					maps = { AZSHARA, BLASTED_LANDS },
+					classes = { WARLOCK },
+					lvl = 50,
+					groups = {
 						objective(1, {	-- 0/1 Flawless Fel Essence (Azshara)
-							["provider"] = { "i", 18624 },	-- Flawless Fel Essence (Azshara)
-							["crs"] = {
+							provider = { "i", 18624 },	-- Flawless Fel Essence (Azshara)
+							crs = {
 								6202,	-- Legashi Hellcaller
 								6201,	-- Legashi Rogue
 								6200,	-- Legashi Satyr
 							},
 						}),
 						objective(2, {	-- 0/1 Flawless Fel Essence (Jaedenar)
-							["provider"] = { "i", 18622 },	-- Flawless Fel Essence (Jaedenar)
-							["cr"] = 9862,	-- Jaedenar Legionnaire
+							provider = { "i", 18622 },	-- Flawless Fel Essence (Jaedenar)
+							cr = 9862,	-- Jaedenar Legionnaire
 						}),
 						objective(3, {	-- 0/1 Flawless Fel Essence (Dark Portal)
-							["provider"] = { "i", 18623 },	-- Flawless Fel Essence (Dark Portal)
-							["cr"] = 6011,	-- Felguard Sentry
+							provider = { "i", 18623 },	-- Flawless Fel Essence (Dark Portal)
+							cr = 6011,	-- Felguard Sentry
 						}),
 					},
 				}),
 				q(939, {	-- Flute of Xavaric
-					["sourceQuest"] = 4906,	-- Further Corruption
-					["provider"] = { "i", 11668 },	-- Flute of Xavaric
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 49,
-					["groups"] = {
+					sourceQuest = 4906,	-- Further Corruption
+					provider = { "i", 11668 },	-- Flute of Xavaric
+					timeline = { REMOVED_4_0_3 },
+					races = ALLIANCE_ONLY,
+					lvl = 49,
+					groups = {
 						objective(1, {	-- 0/5 Jadefire Felbind
-							["provider"] = { "i", 11674 },	-- Jadefire Felbind
-							["crs"] = {
+							provider = { "i", 11674 },	-- Jadefire Felbind
+							crs = {
 								14340,	-- Alshirr Banebreath
 								7108,	-- Jadefire Betrayer
 								7109,	-- Jadefire Felsworn
@@ -1157,12 +1157,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(28121, {	-- Forces of Jaedenar
-					["qg"] = 11019,	-- Jessir Moonbow
-					["coord"] = { 44.0, 61.9, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					qg = 11019,	-- Jessir Moonbow
+					coord = { 44.0, 61.9, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/12 Jaedenar Forces Slain
-							["providers"] = {
+							providers = {
 								{ "n", 7125},	-- Jaedenar Hound
 								{ "n", 7112},	-- Jaedenar Cultist
 								{ "n", 7113},	-- Jaedenar Guardian
@@ -1172,47 +1172,47 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(5155, {	-- Forces of Jaedenar
-					["qg"] = 10922,	-- Greta Mosshoof
-					["coord"] = { 51.2, 82.2, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["lvl"] = 48,
-					["groups"] = {
+					qg = 10922,	-- Greta Mosshoof
+					coord = { 51.2, 82.2, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					lvl = 48,
+					groups = {
 						objective(1, {	-- 0/4 Jaedenar Hound slain
-							["provider"] = { "n", 7125 },	-- Jaedenar Hound
+							provider = { "n", 7125 },	-- Jaedenar Hound
 						}),
 						objective(2, {	-- 0/4 Jaedenar Guardian slain
-							["provider"] = { "n", 7113 },	-- Jaedenar Guardian
+							provider = { "n", 7113 },	-- Jaedenar Guardian
 						}),
 						objective(3, {	-- 0/6 Jaedenar Adept slain
-							["provider"] = { "n", 7115 },	-- Jaedenar Adept
+							provider = { "n", 7115 },	-- Jaedenar Adept
 						}),
 						objective(4, {	-- 0/6 Jaedenar Cultist slain
-							["provider"] = { "n", 7112 },	-- Jaedenar Cultist
+							provider = { "n", 7112 },	-- Jaedenar Cultist
 						}),
 					},
 				}),
 				q(4906, {	-- Further Corruption
-					["sourceQuest"] = 4421,	-- Corruption of the Jadefire
-					["qg"] = 9116,	-- Eridan Bluewind
-					["coord"] = { 51.4, 81.5, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 49,
-					["groups"] = {
+					sourceQuest = 4421,	-- Corruption of the Jadefire
+					qg = 9116,	-- Eridan Bluewind
+					coord = { 51.4, 81.5, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					races = ALLIANCE_ONLY,
+					lvl = 49,
+					groups = {
 						objective(1, {	-- 0/8 Jadefire Hellcaller slain
-							["provider"] = { "n", 7111 },	-- Jadefire Hellcaller
+							provider = { "n", 7111 },	-- Jadefire Hellcaller
 						}),
 						objective(2, {	-- 0/8 Jadefire Betrayer slain
-							["provider"] = { "n", 7108 },	-- Jadefire Betrayer
+							provider = { "n", 7108 },	-- Jadefire Betrayer
 						}),
 						objective(3, {	-- 0/8 Jadefire Trickster slain
-							["provider"] = { "n", 7107 },	-- Jadefire Trickster
+							provider = { "n", 7107 },	-- Jadefire Trickster
 						}),
 						objective(4, {	-- 0/1 Xavaric slain
-							["provider"] = { "n", 10648 },	-- Xavaric
+							provider = { "n", 10648 },	-- Xavaric
 						}),
 						i(11875, {	-- Breezecloud Bracers
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1224,198 +1224,198 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						en = "Gregory: You Can Trust Me... Probably.",
 					},
 				}), {
-					["qg"] = 221636,	-- Gregory <Truthbearer>
-					["questID"] = 81884,	-- Gregory: You Can Trust Me... Probably. HQT
-					["sourceQuest"] = 81883,	-- Aeonas: Trust in a Friend HQT
-					["coord"] = { 44.6, 52.0, FELWOOD },
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 44,
+					qg = 221636,	-- Gregory <Truthbearer>
+					questID = 81884,	-- Gregory: You Can Trust Me... Probably. HQT
+					sourceQuest = 81883,	-- Aeonas: Trust in a Friend HQT
+					coord = { 44.6, 52.0, FELWOOD },
+					classes = { PALADIN },
+					races = ALLIANCE_ONLY,
+					lvl = 44,
 				})),
 				-- #endif
 				q(4883, {	-- Guarding Secrets (2/2)
-					["sourceQuest"] = 4882,	-- Guarding Secrets (1/2)
-					["qs"] = 12558,	-- Blue-feathered Necklace
-					["coord"] = { 34.6, 52.6, FELWOOD },
-					["cr"] = 10306,	-- Trull Failbane
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 52,
-					["groups"] = {
+					sourceQuest = 4882,	-- Guarding Secrets (1/2)
+					qs = 12558,	-- Blue-feathered Necklace
+					coord = { 34.6, 52.6, FELWOOD },
+					cr = 10306,	-- Trull Failbane
+					timeline = { REMOVED_4_0_3 },
+					maps = { THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					lvl = 52,
+					groups = {
 						i(15796, {	-- Seaspray Bracers
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 						i(15797, {	-- Shining Armplates
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(28213, {	-- Hazzard Disposal
-					["sourceQuest"] = 28208,	-- Winna's Kitten
-					["qg"] = 47696,	-- Kelnir Leafsong
-					["coord"] = { 41.2, 49.9, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28208,	-- Winna's Kitten
+					qg = 47696,	-- Kelnir Leafsong
+					coord = { 41.2, 49.9, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/1 Winna Hazzard slain
-							["provider"] = { "n", 47679 },	-- Winna Hazzard
+							provider = { "n", 47679 },	-- Winna Hazzard
 						}),
 						i(65283, {	-- Flowery Mantle
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65303, {	-- Leafsong Vest
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65322, {	-- Mr. Tauren's Boots
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65338, {	-- Belt of Regret
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				heroscall(q(28543, {	-- Hero's Call: Felwood!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
-					["isBreadcrumb"] = true,
+					timeline = { ADDED_4_0_3 },
+					maps = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					isBreadcrumb = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
 					-- Cataclysm: Maximum is level 48 (TODO: Test max level between 48 and 55)
-					["lvl"] = { 44, 48 },
+					lvl = { 44, 48 },
 					-- #endif
 				})),
 				q(8420, {	-- Hot and Itchy
-					["altQuests"] = { 8419 },	-- An Imp's Request
-					["qg"] = 14470,	-- Impsy <Niby's Minion>
-					["coord"] = { 41.6, 45.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 14256, 1 } },	-- Felcloth
-					["classes"] = { WARLOCK },
-					["lvl"] = 50,
+					altQuests = { 8419 },	-- An Imp's Request
+					qg = 14470,	-- Impsy <Niby's Minion>
+					coord = { 41.6, 45.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 14256, 1 } },	-- Felcloth
+					classes = { WARLOCK },
+					lvl = 50,
 				}),
 				q(28358, {	-- Hunting the Damned
-					["qg"] = 48349,	-- Hurak Wildhorn
-					["coord"] = { 44.0, 27.8, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					qg = 48349,	-- Hurak Wildhorn
+					coord = { 44.0, 27.8, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/6 Infernal Sentry slain
-							["provider"] = { "n", 7136 },	-- Infernal Sentry
+							provider = { "n", 7136 },	-- Infernal Sentry
 						}),
 					},
 				}),
 				q(28384, {	-- Into the Clearing
-					["sourceQuests"] = {
+					sourceQuests = {
 						28382,	-- Enemy at our Roots
 						28383,	-- Wisps of the Woods
 					},
-					["qg"] = 47931,	-- Denmother Ulrica
-					["coord"] = { 61.8, 26.6, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
+					qg = 47931,	-- Denmother Ulrica
+					coord = { 61.8, 26.6, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = ALLIANCE_ONLY,
 				}),
 				q(28339, {	-- Is Your Oil Running?
-					["sourceQuests"] = {
+					sourceQuests = {
 						28357,	-- Take it to the Tree
 						28370,	-- Wisp-napping
 					},
-					["qg"] = 48127,	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					qg = 48127,	-- Darla Drilldozer
+					coord = { 56.3, 8.1, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = HORDE_ONLY,
+					groups = {
 						objective(1, {	-- 0/10 Crude Tarball
-							["provider"] = { "i", 63519 },	-- Crude Tarball
-							["cr"] = 48315,	-- Oily Sludge
+							provider = { "i", 63519 },	-- Crude Tarball
+							cr = 48315,	-- Oily Sludge
 						}),
 					},
 				}),
 				q(28333, {	-- It's Time to Oil Up
-					["qg"] = 48127,	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					qg = 48127,	-- Darla Drilldozer
+					coord = { 56.3, 8.1, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = HORDE_ONLY,
+					groups = {
 						i(65344, {	-- Overworked Shoulders
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65347, {	-- Shredder Operator's Helmet
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65350, {	-- Efficiency Spell Mace
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65353, {	-- Oil Bailer's Shield
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(28152, {	-- Jaedenar Awaits
-					["sourceQuest"] = 28113,	-- Break the Unbreakable
-					["qg"] = 9116,	-- Eridan Bluewind
-					["coord"] = { 42.0, 71.7, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["isBreadcrumb"] = true,
+					sourceQuest = 28113,	-- Break the Unbreakable
+					qg = 9116,	-- Eridan Bluewind
+					coord = { 42.0, 71.7, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					isBreadcrumb = true,
 				}),
 				q(7603, {	-- Kroshius' Infernal Core
-					["sourceQuest"] = 7602,	-- Flawless Fel Essence
-					["qg"] = 14470,	-- Impsy <Niby's Minion>
-					["coord"] = { 41.6, 45.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { WARLOCK },
-					["lvl"] = 50,
-					["groups"] = {
+					sourceQuest = 7602,	-- Flawless Fel Essence
+					qg = 14470,	-- Impsy <Niby's Minion>
+					coord = { 41.6, 45.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					classes = { WARLOCK },
+					lvl = 50,
+					groups = {
 						objective(1, {	-- 0/1 Kroshius' Infernal Core
-							["providers"] = {
+							providers = {
 								{ "i", 18625 },	-- Kroshius' Infernal Core
 								{ "i", 18626 },	-- Fel Fire
 							},
-							["coord"] = { 45.4, 35.4, FELWOOD },
-							["cr"] = 14467,	-- Kroshius
+							coord = { 45.4, 35.4, FELWOOD },
+							cr = 14467,	-- Kroshius
 						}),
 						-- #if BEFORE 4.0.3
 						recipe(1122),	-- Inferno / Summon Infernal
 						-- #endif
 						i(18762, {	-- Shard of the Green Flame
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(28155, {	-- Lord Banehollow
-					["sourceQuest"] = 28153,	-- Shadow Lord Fel'dan
-					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
-					["coord"] = { 36.2, 58.2, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28153,	-- Shadow Lord Fel'dan
+					qg = 51664,	-- Andalar Shadevale <Emerald Circle>
+					coord = { 36.2, 58.2, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/1 Lord Banehollow slain
-							["provider"] = { "n", 9516 },	-- Lord Banehollow
+							provider = { "n", 9516 },	-- Lord Banehollow
 						}),
 						i(65282, {	-- Cleansed Shadow Council Belt
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65302, {	-- Farlus' Staff
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						-- #if BEFORE MOP
 						i(65321, {	-- Stars of Felwood
-							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+							timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 						}),
 						-- #endif
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(81790, {	-- Materials of Significance
-					["sourceQuest"] = 81884,	-- Gregory: You Can Trust Me... Probably. HQT
-					["qg"] =  221636,	-- Gregory <Truthbearer>
-					["coord"] = { 44.6, 52.0, FELWOOD },
-					["maps"] = { MARAUDON, HILLSBRAD_FOOTHILLS, BLACKROCK_DEPTHS },
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 44,
-					["groups"] = {
+					sourceQuest = 81884,	-- Gregory: You Can Trust Me... Probably. HQT
+					qg =  221636,	-- Gregory <Truthbearer>
+					coord = { 44.6, 52.0, FELWOOD },
+					maps = { MARAUDON, HILLSBRAD_FOOTHILLS, BLACKROCK_DEPTHS },
+					classes = { PALADIN },
+					races = ALLIANCE_ONLY,
+					lvl = 44,
+					groups = {
 						objective(1, {	-- 0/3 Fiery Infernal Core
-							["provider"] = { "i", 220166 },	-- Fiery Infernal Core
-							["coord"] = { 42.8, 43.6, FELWOOD },
-							["crs"] = {
+							provider = { "i", 220166 },	-- Fiery Infernal Core
+							coord = { 42.8, 43.6, FELWOOD },
+							crs = {
 								7135,	-- Infernal Bodyguard
 								7136,	-- Infernal Sentry
 								9878,	-- Entropic Beast
@@ -1423,26 +1423,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						objective(2, {	-- 0/1 Shimmering Grave Dust
-							["providers"] = {
+							providers = {
 								{ "i", 220167 },	-- Shimmering Grave Dust
 								{ "o", 441222 },	-- Grave Mound
 							},
-							["description"] = "You can find this after killing Princess in Maraudon, right in front of Zaetar's Spirit next to his feet.",
+							description = "You can find this after killing Princess in Maraudon, right in front of Zaetar's Spirit next to his feet.",
 						}),
 						objective(3, {	-- 0/1 Triple-Brewed Molten Lager
-							["provider"] = { "i", 220168 },	-- Triple-Brewed Molten Lager
-							["description"] = "Sold by Plugger Spazzring in Blackrock Depths.",
+							provider = { "i", 220168 },	-- Triple-Brewed Molten Lager
+							description = "Sold by Plugger Spazzring in Blackrock Depths.",
 						}),
 						q(81944, {	-- A Newly Discovered Purpose...
-							["qg"] = 214529,	-- Brave Stonetorch
-							["coord"] = { 67.4, 14.8, HILLSBRAD_FOOTHILLS },
-							["classes"] = { PALADIN },
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 44,
-							["groups"] = {
+							qg = 214529,	-- Brave Stonetorch
+							coord = { 67.4, 14.8, HILLSBRAD_FOOTHILLS },
+							classes = { PALADIN },
+							races = ALLIANCE_ONLY,
+							lvl = 44,
+							groups = {
 								objective(4, {	-- 0/1 Symbol of Faith
-									["questID"] = 81790,	-- Materials of Significance
-									["provider"] = { "i", 220169 },	-- Symbol of Faith
+									questID = 81790,	-- Materials of Significance
+									provider = { "i", 220169 },	-- Symbol of Faith
 								}),
 							},
 						}),
@@ -1450,202 +1450,202 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(5085, {	-- Mystery Goo
-					["sourceQuest"] = 5084,	-- Falling to Corruption
-					["providers"] = {
+					sourceQuest = 5084,	-- Falling to Corruption
+					providers = {
 						{ "o", 176091 },	-- Deadwood Cauldron
 						{ "i", 12813 },	-- Flask of Mystery Goo
 					},
-					["coord"] = { 60.2, 5.9, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["lvl"] = 52,
+					coord = { 60.2, 5.9, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					lvl = 52,
 				}),
 				q(28229, {	-- Nature and Nurture
-					["sourceQuest"] = 28374,	-- Weeding the Lawn
-					["qg"] = 48126,	-- Isural Forestsworn
-					["coord"] = { 43.9, 28.1, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28374,	-- Weeding the Lawn
+					qg = 48126,	-- Isural Forestsworn
+					coord = { 43.9, 28.1, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/1 Stonemaul Clan Avenged
-							["provider"] = { "i", 63332 },	-- Empty Moonwell Vial
-							["coord"] = { 44.0, 28.4, FELWOOD },
+							provider = { "i", 63332 },	-- Empty Moonwell Vial
+							coord = { 44.0, 28.4, FELWOOD },
 						}),
 					},
 				}),
 				q(28264, {	-- Navarax's Gambit
-					["sourceQuest"] = 28261,	-- Deceivers In Our Midst
-					["qg"] = 47923,	-- Feronas Sindweller
-					["coord"] = { 45.5, 20.1, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28261,	-- Deceivers In Our Midst
+					qg = 47923,	-- Feronas Sindweller
+					coord = { 45.5, 20.1, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/1 Arch Druid Navarax slain
-							["provider"] = { "n", 47842 },	-- Arch Druid Navarax
+							provider = { "n", 47842 },	-- Arch Druid Navarax
 						}),
 						i(65285, {	-- Selura's Cloak
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65305, {	-- Demon Heart Pendant
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65324, {	-- Navarax's Signet
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(28385, {	-- Oil and Irony
-					["sourceQuest"] = 28337,	-- The Shredders of Irontree
-					["qg"] = 48493,	-- Alton Redding
-					["coord"] = { 56.8, 18.4, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 28337,	-- The Shredders of Irontree
+					qg = 48493,	-- Alton Redding
+					coord = { 56.8, 18.4, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = ALLIANCE_ONLY,
 				}),
 				q(28288, {	-- Open Their Eyes
-					["sourceQuest"] = 28113,	-- Break the Unbreakable
-					["qg"] = 47341,	-- Arcanist Delaris
-					["coord"] = { 41.9, 72.0, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28113,	-- Break the Unbreakable
+					qg = 47341,	-- Arcanist Delaris
+					coord = { 41.9, 72.0, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/20 Imps terrified
-							["provider"] = { "i", 63395 },	-- Delaris's Prism
-							["cr"] = 47369,	-- Jadefire Imp
+							provider = { "i", 63395 },	-- Delaris's Prism
+							cr = 47369,	-- Jadefire Imp
 						}),
 						i(65278, {	-- Gold Pot Gloves
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65298, {	-- Cheerful Shoulders
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65317, {	-- Rainbow Band
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65357, {	-- Rainbow Generator
-							["timeline"] = { ADDED_4_0_3, DELETED_7_0_3 },
+							timeline = { ADDED_4_0_3, DELETED_7_0_3 },
 						}),
 						i(133998, {	-- Rainbow Generator (TOY!)
-							["timeline"] = { ADDED_7_0_3 },
+							timeline = { ADDED_7_0_3 },
 						}),
 					},
 				}),
 				q(28380, {	-- Pikwik in Peril
-					["sourceQuests"] = {
+					sourceQuests = {
 						28339,	-- Is Your Oil Running?
 						28336,	-- Slap and Cap
 					},
-					["qg"] = 48127,	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
+					qg = 48127,	-- Darla Drilldozer
+					coord = { 56.3, 8.1, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = HORDE_ONLY,
 				}),
 				q(4442, {	-- Purified!
-					["sourceQuest"] = 4441,	-- Felbound Ancients
-					["qg"] = 9116,	-- Eridan Bluewind <Emerald Circle>
-					["coord"] = { 51.2, 81.6, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 49,
-					["groups"] = {
+					sourceQuest = 4441,	-- Felbound Ancients
+					qg = 9116,	-- Eridan Bluewind <Emerald Circle>
+					coord = { 51.2, 81.6, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					races = ALLIANCE_ONLY,
+					lvl = 49,
+					groups = {
 						{
-							["itemID"] = 11445,	-- Flute of the Ancients
-							["description"] = "You need to save this flute for the 'Ancient Spirit' escort quest, then you can safely discard it.",
-							["timeline"] = { REMOVED_4_0_3 },
+							itemID = 11445,	-- Flute of the Ancients
+							description = "You need to save this flute for the 'Ancient Spirit' escort quest, then you can safely discard it.",
+							timeline = { REMOVED_4_0_3 },
 						},
 					},
 				}),
 				q(28119, {	-- Purity From Corruption
-					["sourceQuest"] = 28116,	-- Crying Violet
-					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
-					["coords"] = {
+					sourceQuest = 28116,	-- Crying Violet
+					qg = 51664,	-- Andalar Shadevale <Emerald Circle>
+					coords = {
 						{ 36.3, 58.2, FELWOOD },
 						{ 47.5, 30.3, KALIMDOR },
 					},
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						i(12907),	-- Corrupt Moonwell Water (QI!)
 						i(12922),	-- Empty Canteen (QI!)
 					},
 				}),
 				q(28228, {	-- Rejoining the Forest
-					["sourceQuest"] = 28224,	-- The Last Protector
-					["qg"] = 48044,	-- Flourishing Protector (mobileNPC)
-					["coord"] = { 48.7, 25.2, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28224,	-- The Last Protector
+					qg = 48044,	-- Flourishing Protector (mobileNPC)
+					coord = { 48.7, 25.2, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						i(65287, {	-- Gifted Bough
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65306, {	-- Amulet of Living Wood
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65325, {	-- Tree Ring Band
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(28389, {	-- Report to the Denmother
-					["sourceQuests"] = {
+					sourceQuests = {
 						28388,	-- Bloody Wages
 						28387,	-- Burnout
 					},
-					["qg"] = 48493,	-- Alton Redding
-					["coord"] = { 56.8, 18.4, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					qg = 48493,	-- Alton Redding
+					coord = { 56.8, 18.4, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(65292, {	-- Fists of the Pack
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65311, {	-- Denmother's Cloak
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65330, {	-- Token of the Bond
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(5203, {	-- Rescue From Jaedenar
-					["sourceQuest"] = 5202,	-- A Strange Red Key
-					["qg"] = 11016,	-- Captured Arko'narin
-					["coord"] = { 36.2, 55.4, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["lvl"] = 49,
+					sourceQuest = 5202,	-- A Strange Red Key
+					qg = 11016,	-- Captured Arko'narin
+					coord = { 36.2, 55.4, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					lvl = 49,
 				}),
 				q(5204, {	-- Retribution of the Light
-					["sourceQuest"] = 5203,	-- Rescue from Jaedenar
-					["qg"] = 11019,	-- Jessir Moonbow
-					["coord"] = { 51.3, 82.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["lvl"] = 49,
-					["groups"] = {
+					sourceQuest = 5203,	-- Rescue from Jaedenar
+					qg = 11019,	-- Jessir Moonbow
+					coord = { 51.3, 82.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					lvl = 49,
+					groups = {
 						objective(1, {	-- 0/1 Rakaiah slain
-							["provider"] = { "n", 9518 },	-- Rakaiah
-							["coord"] = { 38.2, 50.4, FELWOOD },
+							provider = { "n", 9518 },	-- Rakaiah
+							coord = { 38.2, 50.4, FELWOOD },
 						}),
 					},
 				}),
 				q(28360, {	-- Running Their Course
-					["sourceQuest"] = 28306,	-- Whisperwind Grove
-					["qg"] = 48459,	-- Tender Puregrove
-					["coord"] = { 43.3, 30.4, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28306,	-- Whisperwind Grove
+					qg = 48459,	-- Tender Puregrove
+					coord = { 43.3, 30.4, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/8 Felrot Courser slain
-							["provider"] = { "n", 48455 },	-- Felrot Courser
+							provider = { "n", 48455 },	-- Felrot Courser
 						}),
 					},
 				}),
 				q(27989, {	-- Ruumbo Demands Honey
-					["sourceQuest"] = 28100,	-- A Talking Totem
-					["provider"] = { "o", 206585 },	-- Totem of Ruumbo
-					["coord"] = { 51.4, 83.7, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
+					sourceQuest = 28100,	-- A Talking Totem
+					provider = { "o", 206585 },	-- Totem of Ruumbo
+					coord = { 51.4, 83.7, FELWOOD },
+					timeline = { ADDED_4_0_3 },
 				}),
 				q(27994, {	-- Ruumbo Demands Justice
-					["sourceQuest"] = 28100,	-- A Talking Totem
-					["provider"] = { "o", 206585 },	-- Totem of Ruumbo
-					["coord"] = { 51.4, 83.7, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28100,	-- A Talking Totem
+					provider = { "o", 206585 },	-- Totem of Ruumbo
+					coord = { 51.4, 83.7, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/15 Deadwood Furbolg slain
-							["providers"] = {
+							providers = {
 								{ "n", 7153},	-- Deadwood Warrior
 								{ "n", 7154},	-- Deadwood Gardener
 								{ "n", 7155},	-- Deadwood Pathfinder
@@ -1654,391 +1654,391 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(5886, {	-- Salve via Disenchanting (1/2)
-					["sourceQuest"] = 4101,	-- Cleansing Felwood (A)
-					["qg"] = 9528,	-- Arathandris Silversky
-					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11174, 1 } },	-- Lesser Nether Essence
-					["requireSkill"] = ENCHANTING,
-					["learnedAt"] = 225,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 4101,	-- Cleansing Felwood (A)
+					qg = 9528,	-- Arathandris Silversky
+					coord = { 54.2, 86.7, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11174, 1 } },	-- Lesser Nether Essence
+					requireSkill = ENCHANTING,
+					learnedAt = 225,
+					races = ALLIANCE_ONLY,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4107, {	-- Salve via Disenchanting (2/2)
-					["sourceQuest"] = 5886,	-- Salve via Disenchanting (1/2)
-					["qg"] = 9528,	-- Arathandris Silversky
-					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11174, 1 } },	-- Lesser Nether Essence
-					["requireSkill"] = ENCHANTING,
-					["learnedAt"] = 225,
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 5886,	-- Salve via Disenchanting (1/2)
+					qg = 9528,	-- Arathandris Silversky
+					coord = { 54.2, 86.7, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11174, 1 } },	-- Lesser Nether Essence
+					requireSkill = ENCHANTING,
+					learnedAt = 225,
+					races = ALLIANCE_ONLY,
+					repeatable = true,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5891, {	-- Salve via Disenchanting (1/2)
-					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11174, 1 } },	-- Lesser Nether Essence
-					["requireSkill"] = ENCHANTING,
-					["learnedAt"] = 225,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 4102,	-- Cleansing Felwood (H)
+					qg = 9529,	-- Maybess Riverbreeze
+					coord = { 46.8, 83.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11174, 1 } },	-- Lesser Nether Essence
+					requireSkill = ENCHANTING,
+					learnedAt = 225,
+					races = HORDE_ONLY,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4112, {	-- Salve via Disenchanting (2/2)
-					["sourceQuest"] = 4112,	-- Salve via Disenchanting (1/2)
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11174, 1 } },	-- Lesser Nether Essence
-					["requireSkill"] = ENCHANTING,
-					["learnedAt"] = 225,
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 4112,	-- Salve via Disenchanting (1/2)
+					qg = 9529,	-- Maybess Riverbreeze
+					coord = { 46.8, 83.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11174, 1 } },	-- Lesser Nether Essence
+					requireSkill = ENCHANTING,
+					learnedAt = 225,
+					races = HORDE_ONLY,
+					repeatable = true,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5884, {	-- Salve via Gathering (1/2)
-					["sourceQuest"] = 4101,	-- Cleansing Felwood (A)
-					["qg"] = 9528,	-- Arathandris Silversky
-					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11514, 4 } },	-- Fel Creep
-					["requireSkill"] = HERBALISM,
-					["learnedAt"] = 225,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 4101,	-- Cleansing Felwood (A)
+					qg = 9528,	-- Arathandris Silversky
+					coord = { 54.2, 86.7, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11514, 4 } },	-- Fel Creep
+					requireSkill = HERBALISM,
+					learnedAt = 225,
+					races = ALLIANCE_ONLY,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4105, {	-- Salve via Gathering (2/2)
-					["sourceQuest"] = 5884,	-- Salve via Gathering (1/2)
-					["qg"] = 9528,	-- Arathandris Silversky
-					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11514, 4 } },	-- Fel Creep
-					["requireSkill"] = HERBALISM,
-					["learnedAt"] = 225,
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 5884,	-- Salve via Gathering (1/2)
+					qg = 9528,	-- Arathandris Silversky
+					coord = { 54.2, 86.7, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11514, 4 } },	-- Fel Creep
+					requireSkill = HERBALISM,
+					learnedAt = 225,
+					races = ALLIANCE_ONLY,
+					repeatable = true,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5889, {	-- Salve via Gathering (1/2)
-					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11514, 4 } },	-- Fel Creep
-					["requireSkill"] = HERBALISM,
-					["learnedAt"] = 225,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 4102,	-- Cleansing Felwood (H)
+					qg = 9529,	-- Maybess Riverbreeze
+					coord = { 46.8, 83.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11514, 4 } },	-- Fel Creep
+					requireSkill = HERBALISM,
+					learnedAt = 225,
+					races = HORDE_ONLY,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4110, {	-- Salve via Gathering (2/2)
-					["sourceQuest"] = 5889,	-- Salve via Gathering (1/2)
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11514, 4 } },	-- Fel Creep
-					["requireSkill"] = HERBALISM,
-					["learnedAt"] = 225,
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 5889,	-- Salve via Gathering (1/2)
+					qg = 9529,	-- Maybess Riverbreeze
+					coord = { 46.8, 83.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11514, 4 } },	-- Fel Creep
+					requireSkill = HERBALISM,
+					learnedAt = 225,
+					races = HORDE_ONLY,
+					repeatable = true,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5882, {	-- Salve via Hunting (1/2)
-					["sourceQuest"] = 4101,	-- Cleansing Felwood (A)
-					["qg"] = 9528,	-- Arathandris Silversky
-					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 4101,	-- Cleansing Felwood (A)
+					qg = 9528,	-- Arathandris Silversky
+					coord = { 54.2, 86.7, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
+					races = ALLIANCE_ONLY,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4103, {	-- Salve via Hunting (2/2)
-					["sourceQuest"] = 5882,	-- Salve via Hunting (1/2)
-					["qg"] = 9528,	-- Arathandris Silversky
-					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 5882,	-- Salve via Hunting (1/2)
+					qg = 9528,	-- Arathandris Silversky
+					coord = { 54.2, 86.7, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
+					races = ALLIANCE_ONLY,
+					repeatable = true,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5887, {	-- Salve via Hunting (1/2)
-					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
-					["races"] = HORDE_ONLY,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 4102,	-- Cleansing Felwood (H)
+					qg = 9529,	-- Maybess Riverbreeze
+					coord = { 46.8, 83.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
+					races = HORDE_ONLY,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4108, {	-- Salve via Hunting (2/2)
-					["sourceQuest"] = 5887,	-- Salve via Hunting (1/2)
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 5887,	-- Salve via Hunting (1/2)
+					qg = 9529,	-- Maybess Riverbreeze
+					coord = { 46.8, 83.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
+					races = HORDE_ONLY,
+					repeatable = true,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5883, {	-- Salve via Mining (1/2)
-					["sourceQuest"] = 4101,	-- Cleansing Felwood (A)
-					["qg"] = 9528,	-- Arathandris Silversky
-					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11513, 4 } },	-- Tainted Vitriol
-					["requireSkill"] = MINING,
-					["learnedAt"] = 225,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 4101,	-- Cleansing Felwood (A)
+					qg = 9528,	-- Arathandris Silversky
+					coord = { 54.2, 86.7, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11513, 4 } },	-- Tainted Vitriol
+					requireSkill = MINING,
+					learnedAt = 225,
+					races = ALLIANCE_ONLY,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4104, {	-- Salve via Mining (2/2)
-					["sourceQuest"] = 5883,	-- Salve via Mining (1/2)
-					["qg"] = 9528,	-- Arathandris Silversky
-					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11513, 4 } },	-- Tainted Vitriol
-					["requireSkill"] = MINING,
-					["learnedAt"] = 225,
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 5883,	-- Salve via Mining (1/2)
+					qg = 9528,	-- Arathandris Silversky
+					coord = { 54.2, 86.7, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11513, 4 } },	-- Tainted Vitriol
+					requireSkill = MINING,
+					learnedAt = 225,
+					races = ALLIANCE_ONLY,
+					repeatable = true,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5888, {	-- Salve via Mining (1/2)
-					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11513, 4 } },	-- Tainted Vitriol
-					["requireSkill"] = MINING,
-					["learnedAt"] = 225,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 4102,	-- Cleansing Felwood (H)
+					qg = 9529,	-- Maybess Riverbreeze
+					coord = { 46.8, 83.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11513, 4 } },	-- Tainted Vitriol
+					requireSkill = MINING,
+					learnedAt = 225,
+					races = HORDE_ONLY,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4109, {	-- Salve via Mining (2/2)
-					["sourceQuest"] = 5888,	-- Salve via Mining (1/2)
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11513, 4 } },	-- Tainted Vitriol
-					["requireSkill"] = MINING,
-					["learnedAt"] = 225,
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 5888,	-- Salve via Mining (1/2)
+					qg = 9529,	-- Maybess Riverbreeze
+					coord = { 46.8, 83.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11513, 4 } },	-- Tainted Vitriol
+					requireSkill = MINING,
+					learnedAt = 225,
+					races = HORDE_ONLY,
+					repeatable = true,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5885, {	-- Salve via Skinning (1/2)
-					["sourceQuest"] = 4101,	-- Cleansing Felwood (A)
-					["qg"] = 9528,	-- Arathandris Silversky
-					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
-					["requireSkill"] = SKINNING,
-					["learnedAt"] = 225,
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 4101,	-- Cleansing Felwood (A)
+					qg = 9528,	-- Arathandris Silversky
+					coord = { 54.2, 86.7, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
+					requireSkill = SKINNING,
+					learnedAt = 225,
+					races = ALLIANCE_ONLY,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4106, {	-- Salve via Skinning (2/2)
-					["sourceQuest"] = 5885,	-- Salve via Skinning (1/2)
-					["qg"] = 9528,	-- Arathandris Silversky
-					["coord"] = { 54.2, 86.7, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
-					["requireSkill"] = SKINNING,
-					["learnedAt"] = 225,
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 5885,	-- Salve via Skinning (1/2)
+					qg = 9528,	-- Arathandris Silversky
+					coord = { 54.2, 86.7, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
+					requireSkill = SKINNING,
+					learnedAt = 225,
+					races = ALLIANCE_ONLY,
+					repeatable = true,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(5890, {	-- Salve via Skinning (1/2)
-					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
-					["requireSkill"] = SKINNING,
-					["learnedAt"] = 225,
-					["races"] = HORDE_ONLY,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 4102,	-- Cleansing Felwood (H)
+					qg = 9529,	-- Maybess Riverbreeze
+					coord = { 46.8, 83.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
+					requireSkill = SKINNING,
+					learnedAt = 225,
+					races = HORDE_ONLY,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(4111, {	-- Salve via Skinning (2/2)
-					["sourceQuest"] = 5890,	-- Salve via Skinning (1/2)
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
-					["requireSkill"] = SKINNING,
-					["learnedAt"] = 225,
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["groups"] = {
+					sourceQuest = 5890,	-- Salve via Skinning (1/2)
+					qg = 9529,	-- Maybess Riverbreeze
+					coord = { 46.8, 83.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
+					requireSkill = SKINNING,
+					learnedAt = 225,
+					races = HORDE_ONLY,
+					repeatable = true,
+					lvl = 48,
+					groups = {
 						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				q(28049, {	-- See the Invisible
-					["sourceQuest"] = 28000,	-- Do the Imp-Possible
-					["qg"] = 47366,	-- Impsy
-					["coord"] = { 41.8, 71.9, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28000,	-- Do the Imp-Possible
+					qg = 47366,	-- Impsy
+					coord = { 41.8, 71.9, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/8 Cursed Ooze
-							["provider"] = { "i", 62918 },	-- Cursed Ooze
-							["cr"] = 7086,	-- Cursed Ooze
+							provider = { "i", 62918 },	-- Cursed Ooze
+							cr = 7086,	-- Cursed Ooze
 						}),
 						i(65276, {	-- Gloves of Constellas
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65296, {	-- Oozing Vest
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65315, {	-- Impish Boots
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65334, {	-- Impsy's Wand
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(28220, {	-- Seeking Soil
-					["sourceQuest"] = 28229,	-- Nature and Nurture
-					["coord"] = { 48.6, 25.1, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28229,	-- Nature and Nurture
+					coord = { 48.6, 25.1, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						i(65286, {	-- Ancient Seed Casing
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(5158, {	-- Seeking Spiritual Aid
-					["sourceQuest"] = 5157,	-- Collection of the Corrupt Water
-					["qg"] = 10922,	-- Greta Mosshoof
-					["qi"] = 12907,	-- Corrupt Moonwell Water
-					["coord"] = { 51.2, 82.2, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_BARRENS },
-					["lvl"] = 48,
+					sourceQuest = 5157,	-- Collection of the Corrupt Water
+					qg = 10922,	-- Greta Mosshoof
+					qi = 12907,	-- Corrupt Moonwell Water
+					coord = { 51.2, 82.2, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					maps = { THE_BARRENS },
+					lvl = 48,
 				}),
 				q(28153, {	-- Shadow Lord Fel'dan
-					["sourceQuest"] = 28131,	-- Twin Temptresses
-					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
-					["coord"] = { 36.2, 58.2, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28131,	-- Twin Temptresses
+					qg = 51664,	-- Andalar Shadevale <Emerald Circle>
+					coord = { 36.2, 58.2, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/1 Shadow Lord Fel'dan slain
-							["provider"] = { "n", 9517 },	-- Shadow Lord Fel'dan
+							provider = { "n", 9517 },	-- Shadow Lord Fel'dan
 						}),
 					},
 				}),
 				q(4084, {	-- Silver Heart
-					["sourceQuest"] = 3942,	-- Linken's Memory
-					["qg"] = 9116,	-- Eridan Bluewind <Emerald Circle>
-					["coord"] = { 51.2, 81.6, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["lvl"] = 47,
-					["groups"] = {
+					sourceQuest = 3942,	-- Linken's Memory
+					qg = 9116,	-- Eridan Bluewind <Emerald Circle>
+					coord = { 51.2, 81.6, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					lvl = 47,
+					groups = {
 						objective(1, {	-- 0/11 Silvery Claws
-							["provider"] = { "i", 11172 },	-- Silvery Claws
-							["crs"] = {
+							provider = { "i", 11172 },	-- Silvery Claws
+							crs = {
 								8956,	-- Angerclaw Bear
 								8957,	-- Angerclaw Grizzly
 								8958,	-- Angerclaw Mauler
@@ -2050,8 +2050,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						objective(2, {	-- 0/1 Irontree Heart
-							["provider"] = { "i", 11173 },	-- Irontree Heart
-							["crs"] = {
+							provider = { "i", 11173 },	-- Irontree Heart
+							crs = {
 								7139,	-- Irontree Stomper
 								7138,	-- Irontree Wanderer
 							},
@@ -2059,101 +2059,101 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(28222, {	-- Singin' in the Sun
-					["sourceQuests"] = {
+					sourceQuests = {
 						28219,	-- Buzzers for Baby
 						28220,	-- Seeking Soil
 					},
-					["qg"] = 48032,	-- Seedling Protector
-					["coord"] = { 48.6, 25.1, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
+					qg = 48032,	-- Seedling Protector
+					coord = { 48.6, 25.1, FELWOOD },
+					timeline = { ADDED_4_0_3 },
 				}),
 				q(28336, {	-- Slap and Cap
-					["sourceQuests"] = {
+					sourceQuests = {
 						28357,	-- Take it to the Tree
 						28370,	-- Wisp-napping
 					},
-					["qg"] = 48127,	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					qg = 48127,	-- Darla Drilldozer
+					coord = { 56.3, 8.1, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = HORDE_ONLY,
+					groups = {
 						objective(1, {	-- 0/7 Panicking Worker slapped
-							["provider"] = { "n", 48331 },	-- Panicking Worker
+							provider = { "n", 48331 },	-- Panicking Worker
 						}),
 						i(65345, {	-- Oilfoot Slippers
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65348, {	-- Oil Grush Leggings
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65351, {	-- Workforce Chestguard
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65354, {	-- Cloak of Sleep Deprivation
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(28361, {	-- Squirrely Clean
-					["qg"] = 48459,	-- Tender Puregrove
-					["coord"] = { 43.3, 30.4, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					qg = 48459,	-- Tender Puregrove
+					coord = { 43.3, 30.4, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/6 Tainted Squirrel scrubbed
-							["provider"] = { "i", 63688 },	-- Squirrel Scrubbing Solution
-							["cr"] = 48457,	-- Tainted Squirrel
+							provider = { "i", 63688 },	-- Squirrel Scrubbing Solution
+							cr = 48457,	-- Tainted Squirrel
 						}),
 					},
 				}),
 				q(28357, {	-- Take it to the Tree
-					["sourceQuests"] = {
+					sourceQuests = {
 						28334,	-- A Flare Fight
 						28333,	-- It's Time to Oil Up
 					},
-					["qg"] = 48127,	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					qg = 48127,	-- Darla Drilldozer
+					coord = { 56.3, 8.1, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = HORDE_ONLY,
+					groups = {
 						objective(1, {	-- 0/8 Talonbranch Defender slain
-							["provider"] = { "n", 48452 },	-- Talonbranch Defender
+							provider = { "n", 48452 },	-- Talonbranch Defender
 						}),
 					},
 				}),
 				q(28359, {	-- The Core of Kroshius
-					["qg"] = 48349,	-- Hurak Wildhorn
-					["coord"] = { 44.0, 27.8, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					qg = 48349,	-- Hurak Wildhorn
+					coord = { 44.0, 27.8, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/1 Kroshius' Infernal Core
-							["provider"] = { "i", 63687 },	-- Kroshius' Infernal Core
-							["cr"] = 48344,	-- Kroshius
+							provider = { "i", 63687 },	-- Kroshius' Infernal Core
+							cr = 48344,	-- Kroshius
 						}),
 						i(65288, {	-- Shadow Curse Hood
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65307, {	-- Whisperwind Armbands
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65326, {	-- Infernal Breastplate
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65339, {	-- Warlockbane Shield
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(27997, {	-- The Corruption of the Jadefire
-					["sourceQuests"] = {
+					sourceQuests = {
 						28543,	-- Hero's Call: Felwood!
 						28542,	-- Warchief's Command: Felwood!
 					},
-					["qg"] = 10923,	-- Tenell Leafrunner
-					["coord"] = { 51.1, 80.4, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					qg = 10923,	-- Tenell Leafrunner
+					coord = { 51.1, 80.4, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/12 Jadefire Glen satyr slain
-							["providers"] = {
+							providers = {
 								{ "n", 7105},	-- Jadefire Satyr
 								{ "n", 7109},	-- Jadefire Felsworn
 							},
@@ -2161,96 +2161,96 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4421, {	-- The Corruption of the Jadefire
-					["qg"] = 9116,	-- Eridan Bluewind
-					["coord"] = { 51.4, 81.5, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 49,
-					["groups"] = {
+					qg = 9116,	-- Eridan Bluewind
+					coord = { 51.4, 81.5, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					races = ALLIANCE_ONLY,
+					lvl = 49,
+					groups = {
 						objective(4, {	-- 0/1 Xavathras slain
-							["provider"] = { "n", 9454 },	-- Xavathras
+							provider = { "n", 9454 },	-- Xavathras
 						}),
 						objective(1, {	-- 0/11 Jadefire Felsworn slain
-							["provider"] = { "n", 7109 },	-- Jadefire Felsworn
+							provider = { "n", 7109 },	-- Jadefire Felsworn
 						}),
 						objective(2, {	-- 0/9 Jadefire Shadowstalker slain
-							["provider"] = { "n", 7110 },	-- Jadefire Shadowstalker
+							provider = { "n", 7110 },	-- Jadefire Shadowstalker
 						}),
 						objective(3, {	-- 0/9 Jadefire Rogue slain
-							["provider"] = { "n", 7106 },	-- Jadefire Rogue
+							provider = { "n", 7106 },	-- Jadefire Rogue
 						}),
 						objective(4, {	-- 0/1 Xavathras slain
-							["provider"] = { "n", 9454 },	-- Xavathras
+							provider = { "n", 9454 },	-- Xavathras
 						}),
 					},
 				}),
 				q(28129, {	-- The Demon Prince
-					["sourceQuest"] = 28119,	-- Purity from Corruption
-					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
-					["coords"] = {
+					sourceQuest = 28119,	-- Purity from Corruption
+					qg = 51664,	-- Andalar Shadevale <Emerald Circle>
+					coords = {
 						{ 36.3, 58.2, FELWOOD },
 						{ 47.5, 30.3, KALIMDOR },
 					},
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/1 Prince Xavalis slain
-							["provider"] = { "n", 9877 },	-- Prince Xavalis
+							provider = { "n", 9877 },	-- Prince Xavalis
 						}),
 					},
 				}),
 				q(28381, {	-- The Denmother
-					["sourceQuests"] = {
+					sourceQuests = {
 						28264,	-- Navarax's Gambit
 						28224,	-- Rejoining the Forest
 					},
-					["qg"] = 48491,	-- James Hallow
-					["coord"] = { 44.2, 28.0, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,	-- for "Enemy at Our Roots"
+					qg = 48491,	-- James Hallow
+					coord = { 44.2, 28.0, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = ALLIANCE_ONLY,
+					isBreadcrumb = true,	-- for "Enemy at Our Roots"
 				}),
 				q(28257, {	-- The Fall of Tichondrius
-					["sourceQuest"] = 28256,	-- The Skull of Gul'dan
-					["qg"] = 47923,	-- Feronas Sindweller
-					["coords"] = {
+					sourceQuest = 28256,	-- The Skull of Gul'dan
+					qg = 47923,	-- Feronas Sindweller
+					coords = {
 						{ 45.5, 20.1, FELWOOD },
 						{ 49.0, 24.0, KALIMDOR },
 					},
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						i(65284, {	-- Imposter's Mask
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65304, {	-- Sindweller's Armguards
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65323, {	-- Pauldrons of Thankless Deeds
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(28305, {	-- The Fate of Bloodvenom Post
-					["sourceQuests"] = {
+					sourceQuests = {
 						28126,	-- Dousing the Flames of Protection
 						28155,	-- Lord Banehollow
 						28128,	-- The Inner Circle
 					},
-					["qg"] = 47617,	-- Farlus Wildheart
-					["coord"] = { 44.1, 61.8, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["isBreadcrumb"] = true,
+					qg = 47617,	-- Farlus Wildheart
+					coord = { 44.1, 61.8, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					isBreadcrumb = true,
 				}),
 				q(28128, {	-- The Inner Circle
-					["sourceQuest"] = 28119,	-- Purity From Corruption
-					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
-					["coords"] = {
+					sourceQuest = 28119,	-- Purity From Corruption
+					qg = 51664,	-- Andalar Shadevale <Emerald Circle>
+					coords = {
 						{ 36.3, 58.2, FELWOOD },
 						{ 47.5, 30.3, KALIMDOR },
 					},
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/12 Shadow Hold Defenders Slain
-							["providers"] = {
+							providers = {
 								{ "n", 7120},	-- Jaedenar Warlock
 								{ "n", 7114},	-- Jaedenar Enforcer
 								{ "n", 7118},	-- Jaedenar Darkweaver
@@ -2259,193 +2259,193 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(65280, {	-- Shadow Hold Mace
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65300, {	-- Moonbow
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65319, {	-- Purified Jaedenar Amulet
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(156982, {	-- Shadow Hold Dagger
-							["timeline"] = { ADDED_7_3_5 },
+							timeline = { ADDED_7_3_5 },
 						}),
 					},
 				}),
 				q(28224, {	-- The Last Protector
-					["sourceQuests"] = {
+					sourceQuests = {
 						28222,	-- Singin' in the Sun
 						28221,	-- These Roots Were Made For Stompin'
 					},
-					["qg"] = 48044,	-- Flourishing Protector (mobileNPC)
-					["coord"] = { 48.7, 25.2, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
+					qg = 48044,	-- Flourishing Protector (mobileNPC)
+					coord = { 48.7, 25.2, FELWOOD },
+					timeline = { ADDED_4_0_3 },
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(82135, {	-- The Price of Hope
-					["sourceQuest"] = 81885,	-- The Ritual
-					["qg"] = 221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
-					["qi"] = 221519,	-- Mannoroc Orb
-					["coord"] = { 45.0, 52.0, FELWOOD },
-					["maps"] = { STORMWIND_CITY },
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 44,
-					["groups"] = {
+					sourceQuest = 81885,	-- The Ritual
+					qg = 221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+					qi = 221519,	-- Mannoroc Orb
+					coord = { 45.0, 52.0, FELWOOD },
+					maps = { STORMWIND_CITY },
+					classes = { PALADIN },
+					races = ALLIANCE_ONLY,
+					lvl = 44,
+					groups = {
 						objective(1, {	-- 0/1 Withered Protector slain
-							["provider"] = { "n", 7149 },	-- Withered Protector
+							provider = { "n", 7149 },	-- Withered Protector
 						}),
 						i(221518),	-- Whisper
 					},
 				})),
 				-- #endif
 				q(5385, {	-- The Remains of Trey Lightforge
-					["sourceQuest"] = 5204,	-- Retribution of the Light
-					["qg"] = 11020,	-- Remains of Trey Lightforge
-					["qi"] = 13562,	-- Remains of Trey Lightforge
-					["coord"] = { 38.4, 50.4, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["lvl"] = 49,
-					["groups"] = {
+					sourceQuest = 5204,	-- Retribution of the Light
+					qg = 11020,	-- Remains of Trey Lightforge
+					qi = 13562,	-- Remains of Trey Lightforge
+					coord = { 38.4, 50.4, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					lvl = 49,
+					groups = {
 						i(15706, {	-- Hunt Tracker Blade
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 						i(15705, {	-- Tidecrest Blade
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(81885, {	-- The Ritual
-					["sourceQuest"] = 81790,	-- Materials of Significance
-					["qg"] =  221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
-					["coord"] = { 45.0, 52.0, FELWOOD },
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 44,
-					["groups"] = {
+					sourceQuest = 81790,	-- Materials of Significance
+					qg =  221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+					coord = { 45.0, 52.0, FELWOOD },
+					classes = { PALADIN },
+					races = ALLIANCE_ONLY,
+					lvl = 44,
+					groups = {
 						objective(1, {	-- Complete the Ritual
-							["provider"] = { "n", 221636 },	-- Gregory
-							["coord"] = { 44.6, 52.0, FELWOOD },
+							provider = { "n", 221636 },	-- Gregory
+							coord = { 44.6, 52.0, FELWOOD },
 						}),
 						recipe(410013),	-- Engrave Bracers - Hammer of the Righteous
 					},
 				})),
 				-- #endif
 				q(28337, {	-- The Shredders of Irontree
-					["sourceQuest"] = 28384,	-- Into the Clearing
-					["qg"] = 48493,	-- Alton Redding
-					["coord"] = { 56.8, 18.4, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					sourceQuest = 28384,	-- Into the Clearing
+					qg = 48493,	-- Alton Redding
+					coord = { 56.8, 18.4, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = ALLIANCE_ONLY,
+					groups = {
 						objective(1, {	-- 0/9 Irontree Shredder slain
-							["provider"] = { "n", 48259 },	-- Irontree Shredder
+							provider = { "n", 48259 },	-- Irontree Shredder
 						}),
 						i(256903, {	-- Gilnean Banded Crate (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
+							timeline = { ADDED_11_2_7 },
 						}),
 					},
 				}),
 				q(28256, {	-- The Skull of Gul'dan
-					["sourceQuest"] = 28218,	-- A Destiny of Flame and Shadow
-					["qg"] = 47923,	-- Feronas Sindweller
-					["coords"] = {
+					sourceQuest = 28218,	-- A Destiny of Flame and Shadow
+					qg = 47923,	-- Feronas Sindweller
+					coords = {
 						{ 45.5, 20.1, FELWOOD },
 						{ 49.0, 24.0, KALIMDOR },
 					},
-					["timeline"] = { ADDED_4_0_3 },
+					timeline = { ADDED_4_0_3 },
 				}),
 				q(28190, {	-- The Tainted Ooze
-					["qg"] = 47692,	-- Altsoba Ragetotem
-					["coord"] = { 41.2, 49.9, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					qg = 47692,	-- Altsoba Ragetotem
+					coord = { 41.2, 49.9, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/8 Tainted Ooze slain
-							["provider"] = { "n", 7092 },	-- Tainted Ooze
+							provider = { "n", 7092 },	-- Tainted Ooze
 						}),
 					},
 				}),
 				q(28392, {	-- The Timbermaw Tribe
-					["sourceQuest"] = 28389,	-- Report to the Denmother
-					["qg"] = 47931,	-- Denmother Ulrica
-					["coord"] = { 61.8, 26.6, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
+					sourceQuest = 28389,	-- Report to the Denmother
+					qg = 47931,	-- Denmother Ulrica
+					coord = { 61.8, 26.6, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = ALLIANCE_ONLY,
+					isBreadcrumb = true,
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(82043, {	-- The Wild Gods (1/2)
-					["qg"] = 222408,	-- Shadowtooth Emissary
-					["coord"] = { 51.4, 82.0, FELWOOD },
-					["timeline"] = { ADDED_1_15_2 },
-					["maps"] = { THE_HINTERLANDS, RAZORFEN_DOWNS },
-					["cost"] = { { "i", 221261, 1 } },	-- Wildwhisper Draught
-					["lvl"] = 40,
-					["groups"] = {
+					qg = 222408,	-- Shadowtooth Emissary
+					coord = { 51.4, 82.0, FELWOOD },
+					timeline = { ADDED_1_15_2 },
+					maps = { THE_HINTERLANDS, RAZORFEN_DOWNS },
+					cost = { { "i", 221261, 1 } },	-- Wildwhisper Draught
+					lvl = 40,
+					groups = {
 						i(221418),	-- Agamaggan's Roar
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, q(82044, {	-- The Wild Gods (2/2)
-					["sourceQuest"] = 82043,	-- The Wild Gods (1/2)
-					["qg"] = 222522,	-- Spirit of Agamaggan
-					["timeline"] = { ADDED_1_15_2 },
-					["maps"] = { RAZORFEN_DOWNS, ZULFARRAK, MARAUDON, BLACKROCK_DEPTHS },
-					["lvl"] = 40,
-					["groups"] = {
+					sourceQuest = 82043,	-- The Wild Gods (1/2)
+					qg = 222522,	-- Spirit of Agamaggan
+					timeline = { ADDED_1_15_2 },
+					maps = { RAZORFEN_DOWNS, ZULFARRAK, MARAUDON, BLACKROCK_DEPTHS },
+					lvl = 40,
+					groups = {
 						objective(1, {	-- 0/3 Wild Offering
-							["provider"] = { "i", 221262 },	-- Wild Offering
-							["description"] = "Zul'Farrak - Clear any 3 bosses to spawn Delirious Ancient\nMaraudon - Kill Princess Theradras to spawn Delirious Ancient\nBlackrock Depths - Kill all three boss encounters - High Interrogator Gerstahn, Houndmaster Grebmar & High Justice Grimstone - to spawn Delirious Ancient\n\nUse Agamaggan's Roar Agamaggan's Roar on any of the ghostly spawns to summon dungeon-respective Delirious Ancient.",
+							provider = { "i", 221262 },	-- Wild Offering
+							description = "Zul'Farrak - Clear any 3 bosses to spawn Delirious Ancient\nMaraudon - Kill Princess Theradras to spawn Delirious Ancient\nBlackrock Depths - Kill all three boss encounters - High Interrogator Gerstahn, Houndmaster Grebmar & High Justice Grimstone - to spawn Delirious Ancient\n\nUse Agamaggan's Roar Agamaggan's Roar on any of the ghostly spawns to summon dungeon-respective Delirious Ancient.",
 						}),
 						i(222962, {	-- Hyjal's Wisdom
 							recipe(429247, {	-- Engrave Helm - Improved Sanctuary
-								["classes"] = { PALADIN },
+								classes = { PALADIN },
 							}),
 							i(221488, {	-- Resolute Epiphany
-								["classes"] = { PRIEST },
-								["groups"] = {
+								classes = { PRIEST },
+								groups = {
 									recipe(431650),	-- Engrave Helm - Divine Aegis
 								},
 							}),
 							i(221514, {	-- Rune of Firepower
-								["classes"] = { HUNTER },
-								["groups"] = {
+								classes = { HUNTER },
+								groups = {
 									recipe(416085),	-- Engrave Helm - Lock and Load
 								},
 							}),
 							i(221513, {	-- Rune of Potency
-								["classes"] = { ROGUE },
-								["groups"] = {
+								classes = { ROGUE },
+								groups = {
 									recipe(432293),	-- Engrave Helm - Combat Potency
 								},
 							}),
 							i(221516, {	-- Rune of Primal Energy
-								["classes"] = { DRUID },
-								["groups"] = {
+								classes = { DRUID },
+								groups = {
 									recipe(431461),	-- Engrave Bracers - Improved Frenzied Regeneration
 								},
 							}),
 							i(221490, {	-- Rune of Riptide
-								["classes"] = { SHAMAN },
-								["groups"] = {
+								classes = { SHAMAN },
+								groups = {
 									recipe(410105),	-- Engrave Bracers - Riptide
 								},
 							}),
 							i(221510, {	-- Rune of the Knight
-								["classes"] = { WARRIOR },
-								["groups"] = {
+								classes = { WARRIOR },
+								groups = {
 									recipe(427082),	-- Engrave Bracers - Sword and Board
 								},
 							}),
 							i(221489, {	-- Rune of Vengeance
-								["classes"] = { WARLOCK },
-								["groups"] = {
+								classes = { WARLOCK },
+								groups = {
 									recipe(426470),	-- Engrave Helm - Vengeance
 								},
 							}),
 							i(221487, {	-- Spell Notes: Advanced Warding
-								["classes"] = { MAGE },
-								["groups"] = {
+								classes = { MAGE },
+								groups = {
 									recipe(401754),	-- Engrave Helm - Advanced Warding
 								},
 							}),
@@ -2454,290 +2454,290 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8421, {	-- The Wrong Stuff
-					["sourceQuests"] = {
+					sourceQuests = {
 						8419,	-- An Imp's Request
 						8420,	-- Hot and Itchy
 					},
-					["qg"] = 14470,	-- Impsy <Niby's Minion>
-					["coord"] = { 41.6, 45.0, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { WARLOCK },
-					["lvl"] = 50,
-					["groups"] = {
+					qg = 14470,	-- Impsy <Niby's Minion>
+					coord = { 41.6, 45.0, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					classes = { WARLOCK },
+					lvl = 50,
+					groups = {
 						objective(1, {	-- 0/10 Rotting Wood
-							["provider"] = { "i", 20613 },	-- Rotting Wood
-							["crs"] = {
+							provider = { "i", 20613 },	-- Rotting Wood
+							crs = {
 								7139,	-- Irontree Stomper
 								7138,	-- Irontree Wanderer
 								7149,	-- Withered Protector
 							},
 						}),
 						objective(2, {	-- 0/4 Bloodvenom Essence
-							["provider"] = { "i", 20614 },	-- Bloodvenom Essence
-							["cr"] = 7092,	-- Tainted Ooze
+							provider = { "i", 20614 },	-- Bloodvenom Essence
+							cr = 7092,	-- Tainted Ooze
 						}),
 					},
 				})),
 				q(28221, {	-- These Roots Were Made For Stompin'
-					["sourceQuests"] = {
+					sourceQuests = {
 						28219,	-- Buzzers for Baby
 						28220,	-- Seeking Soil
 					},
-					["qg"] = 48042,	-- Sapling Protector (mobileNPC)
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					qg = 48042,	-- Sapling Protector (mobileNPC)
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/10 Irontree Stomper slain
-							["provider"] = { "n", 7139 },	-- Irontree Stomper
+							provider = { "n", 7139 },	-- Irontree Stomper
 						}),
 					},
 				}),
 				q(28044, {	-- Touch the Untouchable
-					["sourceQuest"] = 28049,	-- See the Invisible
-					["qg"] = 47366,	-- Impsy
-					["coord"] = { 41.8, 71.9, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28049,	-- See the Invisible
+					qg = 47366,	-- Impsy
+					coord = { 41.8, 71.9, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/1 Claw of Tichondrius
-							["provider"] = { "i", 62919 },	-- Claw of Tichondrius
-							["cr"] = 47398,	-- Vorlus
+							provider = { "i", 62919 },	-- Claw of Tichondrius
+							cr = 47398,	-- Vorlus
 						}),
 					},
 				}),
 				q(28335, {	-- Turn It Off! Turn It Off!
-					["sourceQuest"] = 28380,	-- Pikwik in Peril
-					["qg"] = 48333,	-- Foreman Pikwik
-					["coord"] = { 54.6, 18.3, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
+					sourceQuest = 28380,	-- Pikwik in Peril
+					qg = 48333,	-- Foreman Pikwik
+					coord = { 54.6, 18.3, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = HORDE_ONLY,
 				}),
 				q(28131, {	-- Twin Temptresses
-					["sourceQuest"] = 28129,	-- The Demon Prince
-					["qg"] = 51664,	-- Andalar Shadevale <Emerald Circle>
-					["coord"] = { 36.3, 58.2, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28129,	-- The Demon Prince
+					qg = 51664,	-- Andalar Shadevale <Emerald Circle>
+					coord = { 36.3, 58.2, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/1 Moora slain
-							["provider"] = { "n", 9861 },	-- Moora
+							provider = { "n", 9861 },	-- Moora
 						}),
 						objective(2, {	-- 0/1 Salia slain
-							["provider"] = { "n", 9860 },	-- Salia
+							provider = { "n", 9860 },	-- Salia
 						}),
 					},
 				}),
 				q(7624, {	-- Ulathek the Traitor
-					["sourceQuest"] = 7623,	-- Lord Banehollow
-					["qg"] = 9516,	-- Lord Banehollow
-					["coord"] = { 36.0, 44.6, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = { { "i", 18802, 1 } },	-- Shadowy Potion
-					["classes"] = { WARLOCK },
-					["lvl"] = 60,
-					["groups"] = {
+					sourceQuest = 7623,	-- Lord Banehollow
+					qg = 9516,	-- Lord Banehollow
+					coord = { 36.0, 44.6, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = { { "i", 18802, 1 } },	-- Shadowy Potion
+					classes = { WARLOCK },
+					lvl = 60,
+					groups = {
 						objective(1, {	-- 0/1 The Traitor's Heart
-							["provider"] = { "i", 18719 },	-- The Traitor's Heart
-							["coord"] = { 40.6, 48.4, FELWOOD },
-							["cr"] = 14523,	-- Ulathek
+							provider = { "i", 18719 },	-- The Traitor's Heart
+							coord = { 40.6, 48.4, FELWOOD },
+							cr = 14523,	-- Ulathek
 						}),
 					},
 				}),
 				q(5156, {	-- Verifying the Corruption
-					["qg"] = 10921,	-- Taronn Redfeather
-					["coord"] = { 50.9, 81.6, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["lvl"] = 48,
-					["groups"] = {
+					qg = 10921,	-- Taronn Redfeather
+					coord = { 50.9, 81.6, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					lvl = 48,
+					groups = {
 						objective(1, {	-- 0/2 Entropic Beast slain
-							["provider"] = { "n", 9878 },	-- Entropic Beast
+							provider = { "n", 9878 },	-- Entropic Beast
 						}),
 						objective(2, {	-- 0/2 Entropic Horror slain
-							["provider"] = { "n", 9879 },	-- Entropic Horror
+							provider = { "n", 9879 },	-- Entropic Horror
 						}),
 					},
 				}),
 				q(28217, {	-- Wanted: The Demon Hunter
-					["sourceQuest"] = 28374,	-- Weeding the Lawn
-					["qg"] = 47843,	-- Huntress Selura
-					["coord"] = { 43.4, 28.1, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					sourceQuest = 28374,	-- Weeding the Lawn
+					qg = 47843,	-- Huntress Selura
+					coord = { 43.4, 28.1, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/1 Feronas Sindweller slain
-							["provider"] = { "n", 47923 },	-- Feronas Sindweller
+							provider = { "n", 47923 },	-- Feronas Sindweller
 						}),
 					},
 				}),
 				warchiefscommand(q(28542, {	-- Warchief's Command: Felwood!
-					["timeline"] = { ADDED_4_0_3 },
-					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
-					["isBreadcrumb"] = true,
+					timeline = { ADDED_4_0_3 },
+					maps = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					isBreadcrumb = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
 					-- Cataclysm: Maximum is level 48. (TODO: Test max level)
-					["lvl"] = { 44, 48 },
+					lvl = { 44, 48 },
 					-- #endif
 				})),
 				q(28374, {	-- Weeding the Lawn
-					["sourceQuests"] = {
+					sourceQuests = {
 						28360,	-- Running Their Course
 						28361,	-- Squirrely Clean
 					},
-					["qg"] = 48459,	-- Tender Puregrove
-					["coord"] = { 43.3, 30.3, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					qg = 48459,	-- Tender Puregrove
+					coord = { 43.3, 30.3, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/7 Whisperwind Lashers checked
-							["provider"] = { "n", 47747 },	-- Whisperwind Lasher
+							provider = { "n", 47747 },	-- Whisperwind Lasher
 						}),
 						i(65289, {	-- Floral Pantaloons
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65308, {	-- Puregrove Spaulders
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65327, {	-- Weed Puller's Bracers
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(65340, {	-- Thornward Greaves
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),
 				q(4505, {	-- Well of Corruption
-					["sourceQuest"] = 6605,	-- A Strange One
-					["qg"] = 9996,	-- Winna Hazzard
-					["coord"] = { 34.2, 52.4, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 49,
-					["groups"] = {
+					sourceQuest = 6605,	-- A Strange One
+					qg = 9996,	-- Winna Hazzard
+					coord = { 34.2, 52.4, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					races = HORDE_ONLY,
+					lvl = 49,
+					groups = {
 						objective(1, {	-- 0/1 Filled Flasket
-							["providers"] = {
+							providers = {
 								{ "i", 12567 },	-- Filled Flasket
 								{ "i", 12566 },	-- Hardened Flasket
 							},
-							["coord"] = { 32.0, 66.0, FELWOOD },
+							coord = { 32.0, 66.0, FELWOOD },
 						}),
 					},
 				}),
 				q(7601, {	-- What Niby Commands
-					["qg"] = 14469,	-- Niby the Almighty
-					["coord"] = { 41.4, 44.8, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { WARLOCK },
-					["lvl"] = 50,
+					qg = 14469,	-- Niby the Almighty
+					coord = { 41.4, 44.8, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					classes = { WARLOCK },
+					lvl = 50,
 				}),
 				q(28306, {	-- Whisperwind Grove
-					["sourceQuests"] = {
+					sourceQuests = {
 						28214,	-- Cleanup at Bloodvenom Post
 						28213,	-- Hazzard Disposal
 					},
-					["qg"] = 47696,	-- Kelnir Leafsong
-					["coord"] = { 41.2, 49.9, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["isBreadcrumb"] = true,
+					qg = 47696,	-- Kelnir Leafsong
+					coord = { 41.2, 49.9, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					isBreadcrumb = true,
 				}),
 				q(4521, {	-- Wild Guardians (1/3)
-					["qg"] = 10306,	-- Trull Failbane
-					["coord"] = { 34.6, 52.6, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WINTERSPRING },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 52,
-					["groups"] = {
+					qg = 10306,	-- Trull Failbane
+					coord = { 34.6, 52.6, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					maps = { WINTERSPRING },
+					races = HORDE_ONLY,
+					lvl = 52,
+					groups = {
 						objective(1, {	-- 0/15 Raging Owlbeast slain
-							["provider"] = { "n", 7451 },	-- Raging Owlbeast
+							provider = { "n", 7451 },	-- Raging Owlbeast
 						}),
 						objective(2, {	-- 0/15 Ragged Owlbeast slain
-							["provider"] = { "n", 7450 },	-- Ragged Owlbeast
+							provider = { "n", 7450 },	-- Ragged Owlbeast
 						}),
 					},
 				}),
 				q(4741, {	-- Wild Guardians (2/3)
-					["sourceQuest"] = 4521,	-- Wild Guardians (1/3)
-					["qg"] = 10306,	-- Trull Failbane
-					["coord"] = { 34.6, 52.6, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WINTERSPRING },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 52,
-					["groups"] = {
+					sourceQuest = 4521,	-- Wild Guardians (1/3)
+					qg = 10306,	-- Trull Failbane
+					coord = { 34.6, 52.6, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					maps = { WINTERSPRING },
+					races = HORDE_ONLY,
+					lvl = 52,
+					groups = {
 						objective(1, {	-- 0/13 Moontouched Owlbeast slain
-							["provider"] = { "n", 7453 },	-- Moontouched Owlbeast
+							provider = { "n", 7453 },	-- Moontouched Owlbeast
 						}),
 					},
 				}),
 				q(4721, {	-- Wild Guardians (3/3)
-					["sourceQuest"] = 4741,	-- Wild Guardians (2/3)
-					["qg"] = 10306,	-- Trull Failbane
-					["coord"] = { 34.6, 52.6, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WINTERSPRING },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 52,
-					["groups"] = {
+					sourceQuest = 4741,	-- Wild Guardians (2/3)
+					qg = 10306,	-- Trull Failbane
+					coord = { 34.6, 52.6, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					maps = { WINTERSPRING },
+					races = HORDE_ONLY,
+					lvl = 52,
+					groups = {
 						objective(1, {	-- 0/10 Berserk Owlbeast slain
-							["provider"] = { "n", 7454 },	-- Berserk Owlbeast
+							provider = { "n", 7454 },	-- Berserk Owlbeast
 						}),
 					},
 				}),
 				q(28208, {	-- Winna's Kitten
-					["sourceQuests"] = {
+					sourceQuests = {
 						28207,	-- A Slimy Situation
 						28190,	-- The Tainted Ooze
 					},
-					["qg"] = 47696,	-- Kelnir Leafsong
-					["coord"] = { 41.2, 49.9, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					qg = 47696,	-- Kelnir Leafsong
+					coord = { 41.2, 49.9, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						objective(1, {	-- 0/1 Kitty's Eartag
-							["provider"] = { "i", 63279 },	-- Kitty's Eartag
-							["cr"] = 47687,	-- Winna's Kitten
+							provider = { "i", 63279 },	-- Kitty's Eartag
+							cr = 47687,	-- Winna's Kitten
 						}),
 					},
 				}),
 				q(28370, {	-- Wisp-napping
-					["sourceQuests"] = {
+					sourceQuests = {
 						28334,	-- A Flare Fight
 						28333,	-- It's Time to Oil Up
 					},
-					["qg"] = 48127,	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					qg = 48127,	-- Darla Drilldozer
+					coord = { 56.3, 8.1, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = HORDE_ONLY,
+					groups = {
 						objective(1, {	-- 0/5 Talonbranch Wisp captured
-							["provider"] = { "i", 63698 },	-- Darla's Wisp Magnet
-							["cr"] = 48454,	-- Talonbranch Wisp
+							provider = { "i", 63698 },	-- Darla's Wisp Magnet
+							cr = 48454,	-- Talonbranch Wisp
 						}),
 					},
 				}),
 				q(28383, {	-- Wisps of the Woods
-					["qg"] = 48492,	-- Lyros Swiftwind
-					["coord"] = { 61.8, 26.6, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					qg = 48492,	-- Lyros Swiftwind
+					coord = { 61.8, 26.6, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					races = ALLIANCE_ONLY,
+					groups = {
 						objective(1, {	-- 0/5 Talonbranch Wisp captured
-							["provider"] = { "i", 64300 },	-- Swiftwind Switch
-							["cr"] = 48454,	-- Talonbranch Wisp
+							provider = { "i", 64300 },	-- Swiftwind Switch
+							cr = 48454,	-- Talonbranch Wisp
 						}),
 					},
 				}),
 				q(7625, {	-- Xorothian Stardust
-					["sourceQuest"] = 7624,	-- Ulathek the Traitor
-					["qg"] = 9516,	-- Lord Banehollow
-					["coord"] = { 36.0, 44.6, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
+					sourceQuest = 7624,	-- Ulathek the Traitor
+					qg = 9516,	-- Lord Banehollow
+					coord = { 36.0, 44.6, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					cost = {
 						{ "i", 18802, 1 },	-- Shadowy Potion
 						{ "i", 18687, 1 },	-- Xorothian Stardust
 					},
-					["classes"] = { WARLOCK },
-					["lvl"] = 60,
+					classes = { WARLOCK },
+					lvl = 60,
 				}),
 			}),
 			n(RARES, {
 				n(14340, {	-- Alshirr Banebreath
-					["coords"] = {
+					coords = {
 						-- #if AFTER CATA
 						{ 40.0, 82.2, FELWOOD },
 						{ 40.6, 83.2, FELWOOD },
@@ -2752,15 +2752,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(50362, {	-- Blackbog the Fang
-					["coord"] = { 34.8, 59.6, FELWOOD },
-					["timeline"] = { ADDED_5_1_0 },
+					coord = { 34.8, 59.6, FELWOOD },
+					timeline = { ADDED_5_1_0 },
 				}),
 				n(50905, {	-- Cida
-					["coord"] = { 45.0, 31.8, FELWOOD },
-					["timeline"] = { ADDED_5_2_0 },
+					coord = { 45.0, 31.8, FELWOOD },
+					timeline = { ADDED_5_2_0 },
 				}),
 				n(14339, {	-- Death Howl
-					["coords"] = {
+					coords = {
 						-- #if AFTER CATA
 						{ 54.2, 84.4, FELWOOD },
 						{ 48.2, 74.6, FELWOOD },
@@ -2772,7 +2772,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(7104, {	-- Dessecus
-					["coords"] = {
+					coords = {
 						-- #if AFTER CATA
 						{ 57.8, 19.6, FELWOOD },
 						-- #else
@@ -2783,37 +2783,37 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(51025, {	-- Dilennaa
-					["coord"] = { 42.2, 48.2, FELWOOD },
-					["timeline"] = { ADDED_5_2_0 },
+					coord = { 42.2, 48.2, FELWOOD },
+					timeline = { ADDED_5_2_0 },
 				}),
 				n(50833, {	-- Duskcoat
-					["coord"] = { 39.8, 31.4, FELWOOD },
-					["timeline"] = { ADDED_5_1_0 },
+					coord = { 39.8, 31.4, FELWOOD },
+					timeline = { ADDED_5_1_0 },
 				}),
 				n(51046, {	-- Fidonis
-					["coord"] = { 38.6, 52.8, FELWOOD },
-					["timeline"] = { ADDED_5_1_0 },
+					coord = { 38.6, 52.8, FELWOOD },
+					timeline = { ADDED_5_1_0 },
 				}),
 				n(51017, {	-- Gezan
-					["coord"] = { 52.6, 31.8, FELWOOD },
-					["timeline"] = { ADDED_5_2_0 },
+					coord = { 52.6, 31.8, FELWOOD },
+					timeline = { ADDED_5_2_0 },
 				}),
 				n(107595, {	-- Grimrot
-					["description"] = "This is the daytime light grey bear model.",
-					["coord"] = { 38.2, 45.4, FELWOOD },
-					["timeline"] = { ADDED_7_0_3 },
+					description = "This is the daytime light grey bear model.",
+					coord = { 38.2, 45.4, FELWOOD },
+					timeline = { ADDED_7_0_3 },
 				}),
 				n(107596, {	-- Grimrot
-					["description"] = "This is the nighttime black diseased bear model.",
-					["coord"] = { 38.2, 45.4, FELWOOD },
-					["timeline"] = { ADDED_7_0_3 },
+					description = "This is the nighttime black diseased bear model.",
+					coord = { 38.2, 45.4, FELWOOD },
+					timeline = { ADDED_7_0_3 },
 				}),
 				n(50925, {	-- Grovepaw
-					["coord"] = { 38.2, 72.8, FELWOOD },
-					["timeline"] = { ADDED_5_2_0 },
+					coord = { 38.2, 72.8, FELWOOD },
+					timeline = { ADDED_5_2_0 },
 				}),
 				n(7137, {	-- Immolatus
-					["coords"] = {
+					coords = {
 						-- #if AFTER CATA
 						{ 41.4, 42.0, FELWOOD },
 						-- #else
@@ -2825,7 +2825,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(14344, {	-- Mongress
-					["coords"] = {
+					coords = {
 						-- #if AFTER CATA
 						{ 43.4, 75.8, FELWOOD },
 						{ 46.8, 82.0, FELWOOD },
@@ -2836,11 +2836,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(50777, {	-- Needle
-					["coord"] = { 51.0, 34.2, FELWOOD },
-					["timeline"] = { ADDED_5_1_0 },
+					coord = { 51.0, 34.2, FELWOOD },
+					timeline = { ADDED_5_1_0 },
 				}),
 				n(14343, {	-- Olm the Wise
-					["coords"] = {
+					coords = {
 						-- #if AFTER CATA
 						{ 57.8, 19.4, FELWOOD },
 						{ 56.6, 23.6, FELWOOD },
@@ -2855,7 +2855,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(14342, {	-- Ragepaw
-					["coords"] = {
+					coords = {
 						-- #if AFTER CATA
 						{ 48.6, 89.0, FELWOOD },
 						-- #else
@@ -2866,11 +2866,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(50724, {	-- Spinecrawl
-					["coord"] = { 60.6, 22.2, FELWOOD },
-					["timeline"] = { ADDED_5_2_0 },
+					coord = { 60.6, 22.2, FELWOOD },
+					timeline = { ADDED_5_2_0 },
 				}),
 				n(14345, {	-- The Ongar
-					["coords"] = {
+					coords = {
 						-- #if AFTER CATA
 						{ 42.0, 45.8, FELWOOD },
 						-- #else
@@ -2881,17 +2881,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(50864, {	-- Thicket
-					["coord"] = { 59.6, 6.8, FELWOOD },
-					["timeline"] = { ADDED_5_1_0 },
+					coord = { 59.6, 6.8, FELWOOD },
+					timeline = { ADDED_5_1_0 },
 				}),
 			}),
 			-- #if BEFORE 4.0.3
 			prof(SKINNING, {
 				i(11512, {	-- Patch of Tainted Skin
-					["description"] = "In order for this to drop while Skinning, you must have the Cenarion Beacon in your bags.",
-					["provider"] = { "i", 11511 },	-- Cenarion Beacon
-					["timeline"] = { REMOVED_4_0_3 },
-					["crs"] = {
+					description = "In order for this to drop while Skinning, you must have the Cenarion Beacon in your bags.",
+					provider = { "i", 11511 },	-- Cenarion Beacon
+					timeline = { REMOVED_4_0_3 },
+					crs = {
 						8956,	-- Angerclaw Bear
 						8957,	-- Angerclaw Grizzly
 						8958,	-- Angerclaw Mauler
@@ -2907,13 +2907,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_FOUR, i(226416, {	-- Rune of Nature Specialization
-					["provider"] = { "o", 457092 },	-- The Fury of Stormrage
-					["coord"] = { 62.8, 7.5, FELWOOD },
-					["timeline"] = { ADDED_1_15_3 },
-					["classes"] = { HUNTER, ROGUE, SHAMAN, DRUID },
-					["groups"] = {
+					provider = { "o", 457092 },	-- The Fury of Stormrage
+					coord = { 62.8, 7.5, FELWOOD },
+					timeline = { ADDED_1_15_3 },
+					classes = { HUNTER, ROGUE, SHAMAN, DRUID },
+					groups = {
 						recipe(453698, {	-- Engrave Ring - Nature Specialization
-							["classes"] = { HUNTER, ROGUE, SHAMAN, DRUID },
+							classes = { HUNTER, ROGUE, SHAMAN, DRUID },
 						}),
 					},
 				})),
@@ -2921,66 +2921,66 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(VENDORS, {
 				n(2806, {	-- Bale <General Goods>
-					["coord"] = { 34.8, 53.2, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					coord = { 34.8, 53.2, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					races = HORDE_ONLY,
+					groups = {
 						i(35564, {	-- Recipe: Charred Bear Kabobs (RECIPE!)
-							["timeline"] = { ADDED_2_4_0, REMOVED_4_1_0 },	-- Moved to Trainers
+							timeline = { ADDED_2_4_0, REMOVED_4_1_0 },	-- Moved to Trainers
 						}),
 						i(35566, {	-- Recipe: Juicy Bear Burger (RECIPE!)
-							["timeline"] = { ADDED_2_4_0, REMOVED_4_1_0 },	-- Moved to Trainers
+							timeline = { ADDED_2_4_0, REMOVED_4_1_0 },	-- Moved to Trainers
 						}),
 						i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 					},
 				}),
 				n(48577, {	-- Ciana <Weaponsmith>
-					["coord"] = { 43.2, 28.4, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					coord = { 43.2, 28.4, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						i(11308, {	-- Sylvan Shortbow
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 					},
 				}),
 				n(48580, {	-- Desaan <Cooking Supplies>
-					["coord"] = { 43.8, 29.8, FELWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					coord = { 43.8, 29.8, FELWOOD },
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(2803, {	-- Malygen <General Goods>
-					["coords"] = {
+					coords = {
 						-- #if AFTER CATA
 						{ 61.2, 26.8, FELWOOD },
 						-- #else
 						{ 62.2, 25.6, FELWOOD },
 						-- #endif
 					},
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(35564, {	-- Recipe: Charred Bear Kabobs (RECIPE!)
-							["timeline"] = { ADDED_2_4_0, REMOVED_4_1_0 },	-- Moved to Trainers
+							timeline = { ADDED_2_4_0, REMOVED_4_1_0 },	-- Moved to Trainers
 						}),
 						i(35566, {	-- Recipe: Juicy Bear Burger (RECIPE!)
-							["timeline"] = { ADDED_2_4_0, REMOVED_4_1_0 },	-- Moved to Trainers
+							timeline = { ADDED_2_4_0, REMOVED_4_1_0 },	-- Moved to Trainers
 						}),
 						i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, n(222408, {	-- Shadowtooth Emissary
-					["sourceQuest"] = 82044,	-- The Wild Gods (2/2)
-					["coord"] = { 51.4, 82.0, FELWOOD },
-					["timeline"] = { ADDED_1_15_2 },
-					["lvl"] = 40,
-					["groups"] = {
+					sourceQuest = 82044,	-- The Wild Gods (2/2)
+					coord = { 51.4, 82.0, FELWOOD },
+					timeline = { ADDED_1_15_2 },
+					lvl = 40,
+					groups = {
 						i(221491, {	-- Shadowtooth Bag
-							["description"] = "Random non-Ace card from the new DMF decks.",
-							["cost"] = { { "i", 221262, 10 } },	-- 10x Wild Offering
-							["sym"] = {{ "select", "itemID",
+							description = "Random non-Ace card from the new DMF decks.",
+							cost = { { "i", 221262, 10 } },	-- 10x Wild Offering
+							sym = {{ "select", "itemID",
 								221291,	-- Two of Dunes
 								221292,	-- Three of Dunes
 								221293,	-- Four of Dunes
@@ -3012,53 +3012,53 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							}},
 						}),
 						i(223197, {	-- Defender of the Wilds
-							["cost"] = { { "i", 221262, 15 } },	-- 15x Wild Offering
+							cost = { { "i", 221262, 15 } },	-- 15x Wild Offering
 						}),
 						i(223193, {	-- Crown of the Dreamweaver
-							["cost"] = { { "i", 221262, 15 } },	-- 15x Wild Offering
+							cost = { { "i", 221262, 15 } },	-- 15x Wild Offering
 						}),
 						i(223192, {	-- Cord of the Untamed
-							["cost"] = { { "i", 221262, 15 } },	-- 15x Wild Offering
+							cost = { { "i", 221262, 15 } },	-- 15x Wild Offering
 						}),
 						i(223196, {	-- Godslayer's Greaves
-							["cost"] = { { "i", 221262, 15 } },	-- 15x Wild Offering
+							cost = { { "i", 221262, 15 } },	-- 15x Wild Offering
 						}),
 						i(223194, {	-- Band of the Wilds
-							["cost"] = { { "i", 221262, 12 } },	-- 12x Wild Offering
+							cost = { { "i", 221262, 12 } },	-- 12x Wild Offering
 						}),
 						i(223195, {	-- Breadth of the Beast
-							["cost"] = { { "i", 221262, 12 } },	-- 12x Wild Offering
+							cost = { { "i", 221262, 12 } },	-- 12x Wild Offering
 						}),
 					},
 				})),
 				-- #endif
 				n(14522, {	-- Ur'dan
-					["sourceQuest"] = 7625,	-- Xorothian Stardust
-					["coord"] = { 36.2, 44.6, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { WARLOCK },
-					["groups"] = {
+					sourceQuest = 7625,	-- Xorothian Stardust
+					coord = { 36.2, 44.6, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					classes = { WARLOCK },
+					groups = {
 						i(18687, {	-- Xorothian Stardust
-							["timeline"] = { REMOVED_4_0_3 },
-							["cost"] = 1500000,	-- 150g
+							timeline = { REMOVED_4_0_3 },
+							cost = 1500000,	-- 150g
 						}),
 					},
 				}),
 				n(48258, {	-- Willard Harrington <Blacksmithing Supplies>
-					["coord"] = { 61.6, 25.8, FELWOOD },
-					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { ADDED_4_0_3 },
-					["groups"] = {
+					coord = { 61.6, 25.8, FELWOOD },
+					races = ALLIANCE_ONLY,
+					timeline = { ADDED_4_0_3 },
+					groups = {
 						i(256903, {	-- Gilnean Banded Crate (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
+							timeline = { ADDED_11_2_7 },
 						}),
 					},
 				}),
 			}),
 			n(ZONE_DROPS, {
 				i(13140, {	-- Blood Red Key
-					["timeline"] = { REMOVED_4_0_3 },
-					["crs"] = {
+					timeline = { REMOVED_4_0_3 },
+					crs = {
 						7118,	-- Jaedendar Darkweaver
 						7114,	-- Jaedendar Enforcer
 						9862,	-- Jaedendar Legionnaire
@@ -3067,14 +3067,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if BEFORE 4.0.3
 				i(11515, {	-- Corrupted Soul Shard
-					["description"] = "In order for this to drop by killing mobs, you must have the Cenarion Beacon in your bags.",
-					["provider"] = { "i", 11511 },	-- Cenarion Beacon
-					["timeline"] = { REMOVED_4_0_3 },
+					description = "In order for this to drop by killing mobs, you must have the Cenarion Beacon in your bags.",
+					provider = { "i", 11511 },	-- Cenarion Beacon
+					timeline = { REMOVED_4_0_3 },
 				}),
 				-- #endif
 				i(21377, {	-- Deadwood Headdress Feather
-					["description"] = "Drops commonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",
-					["crs"] = {
+					description = "Drops commonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold.",
+					crs = {
 						9462,	-- Chieftain Bloodmaw
 						7157,	-- Deadwood Avenger
 						7156,	-- Deadwood Den Watcher
@@ -3087,49 +3087,49 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(11668, {	-- Flute of Xavaric
-					["coord"] = { 39.6, 22.2, FELWOOD },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["cr"] = 10648,	-- Xavaric
+					coord = { 39.6, 22.2, FELWOOD },
+					timeline = { REMOVED_4_0_3 },
+					races = ALLIANCE_ONLY,
+					cr = 10648,	-- Xavaric
 				}),
 				i(20768, {	-- Oozing Bag
-					["crs"] = {
+					crs = {
 						7092,	-- Tainted Ooze
 						14345,	-- The Ongar
 						7093,	-- Vile Ooze
 					},
-					["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
+					sym = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 				}),
 				i(15752, {	-- Pattern: Living Leggings (RECIPE!)
-					["coords"] = {
+					coords = {
 						{ 62.6, 12.6, FELWOOD },
 						{ 61.6, 7.4, FELWOOD },
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					["cr"] = 7158,	-- Deadwood Shaman
+					timeline = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					cr = 7158,	-- Deadwood Shaman
 				}),
 				i(15739, {	-- Pattern: Runic Leather Bracers
-					["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainers
-					["cr"] = 7112,	-- Jaedenar Cultist
+					timeline = { REMOVED_4_0_3 },	-- Moved to Trainers
+					cr = 7112,	-- Jaedenar Cultist
 				}),
 				i(15754, {	-- Pattern: Warbear Woolies (RECIPE!)
-					["timeline"] = { REMOVED_1_11_1 },
-					["crs"] = {
+					timeline = { REMOVED_1_11_1 },
+					crs = {
 						7158,	-- Deadwood Shaman
 						7156,	-- Deadwood Den Watcher
 					},
 				}),
 				i(15744, {	-- Pattern: Wicked Leather Headband (RECIPE!)
-					["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainers
-					["cr"] = 7107,	-- Jadefire Trickster
+					timeline = { REMOVED_4_0_3 },	-- Moved to Trainers
+					cr = 7107,	-- Jadefire Trickster
 				}),
 				i(13491, {	-- Recipe: Elixir of the Mongoose (RECIPE!)
-					["coords"] = {
+					coords = {
 						{ 38.6, 69.6, FELWOOD },
 						{ 33.8, 66.6, FELWOOD },
 					},
-					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					["cr"] = 7106,	-- Jadefire Rogue
+					timeline = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					cr = 7106,	-- Jadefire Rogue
 				}),
 			}),
 		},

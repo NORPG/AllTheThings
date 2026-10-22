@@ -2,11 +2,11 @@
 --       E X P A N S I O N   F E A T U R E S   M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
-		ach(61451, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Worldsoul-Searching
+		ach(61451, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {	-- Worldsoul-Searching
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				40244,	-- Nerub-ar Palace
 				41222,	-- Liberation of Undermine
 				41598,	-- Manaforge Omega
@@ -18,14 +18,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				41997,	-- Owner of a Radiant Heart
 				60889,	-- Unraveled and Persevering
 			}},
-			["groups"] = {
+			groups = {
 				i(257353),	-- Drained Dark Heart of Galakrond (DECOR!)
 				i(258188),	-- Geargrinder Mk. 11 (MOUNT!)
 			},
 		})),
-		ach(41665, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {	-- Dressed to the Mines (automated)
+		ach(41665, bubbleDownSelf({ timeline = { ADDED_11_1_0 } }, {	-- Dressed to the Mines (automated)
 			iensemble(236852, {	-- Gallagio Highroller's Boomstone (CI!)
-				--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(229251),	-- Cauldron Champion's Screamplate
 						i(229253),	-- Cauldron Champion's Crown
@@ -82,7 +82,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(229235),	-- Enforcer's Backalley Faceshield
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(229251),	-- Cauldron Champion's Screamplate
 						i(229253),	-- Cauldron Champion's Crown
@@ -139,7 +139,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(229235),	-- Enforcer's Backalley Faceshield
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(229251),	-- Cauldron Champion's Screamplate
 						i(229253),	-- Cauldron Champion's Crown
@@ -196,7 +196,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(229235),	-- Enforcer's Backalley Faceshield
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(229251),	-- Cauldron Champion's Screamplate
 						i(229253),	-- Cauldron Champion's Crown
@@ -253,7 +253,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(229235),	-- Enforcer's Backalley Faceshield
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(229251),	-- Cauldron Champion's Screamplate
 						i(229253),	-- Cauldron Champion's Crown
@@ -310,7 +310,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(229235),	-- Enforcer's Backalley Faceshield
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(229251),	-- Cauldron Champion's Screamplate
 						i(229253),	-- Cauldron Champion's Crown
@@ -371,40 +371,40 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 		})),
 		ach(40107, {	-- Harbinger of the Weatherd
 			-- INFO: The 4 harbinger achievements (which are feats of strength) were added at the start of 11.0.2 but didn't fire and showed a TODO in the name. They were corrected before 11.0.5. They could be timelined to the exact build if preferred but this is good enough.
-			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+			timeline = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
 		ach(40115, {	-- Harbinger of the Carved
-			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+			timeline = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
 		ach(40118, {	-- Harbinger of the Runed
-			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+			timeline = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
 		ach(40939, {	-- Harbinger of the Gilded
-			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+			timeline = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
 		ach(40942, {	-- Weathered of the Undermine
-			["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+			timeline = { ADDED_11_1_0, REMOVED_11_2_0 },
 		}),
 		ach(40943, {	-- Carved of the Undermine
-			["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+			timeline = { ADDED_11_1_0, REMOVED_11_2_0 },
 		}),
 		ach(40944, {	-- Runed of the Undermine
-			["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+			timeline = { ADDED_11_1_0, REMOVED_11_2_0 },
 		}),
 		ach(40945, {	-- Gilded of the Undermine
-			["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+			timeline = { ADDED_11_1_0, REMOVED_11_2_0 },
 		}),
 		ach(41886, {	-- Weathered of the Ethereal
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
+			timeline = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 		}),
 		ach(41887, {	-- Carved of the Ethereal
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
+			timeline = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 		}),
 		ach(41888, {	-- Runed of the Ethereal
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
+			timeline = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 		}),
 		ach(41892, {	-- Gilded of the Ethereal
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
+			timeline = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 		}),
 		ach(40591, {	-- Khaz Algar Diplomat
 			-- Unfun fact: Blizzard isn't currently showing these criteria ingame, and manually adding them doesn't properly fetch their names, I'm just gonna leave them here for reference for when they fix this. It can be either automated, or written out in full.
@@ -413,14 +413,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			-- crit(68908),	-- The Assembly of the Deeps
 			-- crit(68909),	-- Hallowfall Arathi
 			-- crit(68910),	-- The Severed Threads
-			["timeline"] = { REMOVED_11_0_7 },
-			["groups"] = {
+			timeline = { REMOVED_11_0_7 },
+			groups = {
 				iensemble(219110),	-- Vermillion Patron's Elegance
 			},
 		}),
 		ach(41169, {	-- Khaz Algar Diplomat
-			["timeline"] = { ADDED_11_0_7 },
-			["groups"] = {
+			timeline = { ADDED_11_0_7 },
+			groups = {
 				crit(71181),	-- Council of Dornogal
 				crit(71180),	-- The Assembly of the Deeps
 				crit(71179),	-- Hallowfall Arathi
@@ -429,28 +429,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			},
 		}),
 		-- INFO: Verified 2024-10-04, only shows one criteria without achraw
-		achraw(40660, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART }, }, {	-- The War Within Season 1: Spelunker Supreme
+		achraw(40660, bubbleDownSelf({ timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART }, }, {	-- The War Within Season 1: Spelunker Supreme
 			crit(67375),	-- Attained 1600+ Rated PVP rating
 			crit(66890),	-- Attained 2000+ Mythic Plus rating
 			crit(67597),	-- Defeated Queen Ansurek on Heroic or Mythic difficulty
 			i(226206),	-- Mark of the Spelunker Supreme
 		})),
 		-- INFO: Verified 2025-01-12, shows no criteria without achraw
-		achraw(40911, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART }, }, {	-- The War Within Season 2: Master Blaster
+		achraw(40911, bubbleDownSelf({ timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART }, }, {	-- The War Within Season 2: Master Blaster
 			crit(70046),	-- Attained 1600+ Rated PVP rating
 			crit(70053),	-- Attained 2000+ Mythic Plus rating
 			crit(70052),	-- Defeated Gallywix on Heroic or Mythic difficulty
 			i(236877),	-- Crystallized Essence of Kaja'mite
 		})),
-		achraw(41937, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH }, }, {	-- The War Within Season 3: Voidborne Victor
+		achraw(41937, bubbleDownSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH }, }, {	-- The War Within Season 3: Voidborne Victor
 			crit(70694),	-- Attained 1600+ Rated PVP rating
 			crit(104328),	-- Attained 2000+ Mythic Plus rating
 			crit(103332),	-- Defeated Dimensius on Heroic or Mythic difficulty
 			i(240175),	-- Crystallized Ethereal Voidsplinter
 		})),
-		ach(42325, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 }, }, {	-- Void Wear Prohibited (automated)
+		ach(42325, bubbleDownSelf({ timeline = { ADDED_11_2_0 }, }, {	-- Void Wear Prohibited (automated)
 			iensemble(246737, {	-- K'areshi Voidstone (CI!)
-				--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(237626),	-- Hollow Senintel's Perches
 						i(237628),	-- Hollow Sentinel's Stonemask
@@ -509,7 +509,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(237610),	-- Living Weapon's Faceshield
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(237626),	-- Hollow Senintel's Perches
 						i(237628),	-- Hollow Sentinel's Stonemask
@@ -568,7 +568,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(237610),	-- Living Weapon's Faceshield
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(237626),	-- Hollow Senintel's Perches
 						i(237628),	-- Hollow Sentinel's Stonemask
@@ -627,7 +627,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(237610),	-- Living Weapon's Faceshield
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(237626),	-- Hollow Senintel's Perches
 						i(237628),	-- Hollow Sentinel's Stonemask
@@ -686,7 +686,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(237610),	-- Living Weapon's Faceshield
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(237626),	-- Hollow Senintel's Perches
 						i(237628),	-- Hollow Sentinel's Stonemask
@@ -745,7 +745,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(237610),	-- Living Weapon's Faceshield
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(237626),	-- Hollow Senintel's Perches
 						i(237628),	-- Hollow Sentinel's Stonemask
@@ -808,7 +808,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 		})),
 		ach(40723, {	-- Web-Wrapped in the Finest Silks (automated)
 			iensemble(226224, {	-- Luminous Nerubian Catalyst Stone (CI!)
-				--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(211999),	-- Exhumed Centurion's Baltea
 						i(212000),	-- Exhumed Centurion's Spikes
@@ -866,7 +866,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(211984),	-- Warsculptor's Barbute
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(211999),	-- Exhumed Centurion's Baltea
 						i(212000),	-- Exhumed Centurion's Spikes
@@ -924,7 +924,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(211984),	-- Warsculptor's Barbute
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(211999),	-- Exhumed Centurion's Baltea
 						i(212000),	-- Exhumed Centurion's Spikes
@@ -982,7 +982,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(211984),	-- Warsculptor's Barbute
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(211999),	-- Exhumed Centurion's Baltea
 						i(212000),	-- Exhumed Centurion's Spikes
@@ -1040,7 +1040,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(211984),	-- Warsculptor's Barbute
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(211999),	-- Exhumed Centurion's Baltea
 						i(212000),	-- Exhumed Centurion's Spikes
@@ -1098,7 +1098,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(211984),	-- Warsculptor's Barbute
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(211999),	-- Exhumed Centurion's Baltea
 						i(212000),	-- Exhumed Centurion's Spikes
@@ -1159,17 +1159,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			}),
 		}),
 		ach(41201, bubbleDownSelf({	-- You Xal Not Pass
-			["timeline"] = { ADDED_11_0_7 },
+			timeline = { ADDED_11_0_7 },
 		},{
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				41189,	-- Azj the World Turns
 				41188,	-- Crystal Chronicled
 				41133,	-- Isle Remember You
 				41187,	-- Rage Aside the Machine
 				41186,	-- Slate of the Union
 			}},
-			["groups"] = {
+			groups = {
 				i(223313),	-- Shadow of Doubt (MOUNT!)
 			},
 		})),

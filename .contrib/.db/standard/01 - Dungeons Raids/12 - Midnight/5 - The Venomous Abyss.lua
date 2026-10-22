@@ -277,98 +277,98 @@ InstanceHelper.BossObjects = {
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1320, {	-- The Venomous Abyss
-		["coord"] = { 47.2, 22.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-		["maps"] = {
+		coord = { 47.2, 22.7, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+		maps = {
 			2606,	-- The Soulcoil Well
 			2607,	-- The Pit of Fangs
 			2608,	-- The Vile Crypt
 			2609,	-- Crypt of the Soulcoilers
 			2610,	-- The Coiled Altar
 		},
-		["isRaid"] = true,
-		["timeline"] = { ADDED_12_1_0 },
-		["groups"] = {
+		isRaid = true,
+		timeline = { ADDED_12_1_0 },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(63530, {	-- The Venomous Abyss: Essence of Ula'tek
 					crit(116119, {	-- Nek'zali the Soulcoiler
-						["_encounter"] = { NEKZALI, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { NEKZALI, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(116120, {	-- Entombed Sentinels
-						["_encounter"] = { ENTOMBED, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ENTOMBED, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(116122, {	-- Vashnik the Malignant
-						["_encounter"] = { VASHNIK, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { VASHNIK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(63531, {	-- The Venomous Abyss: Beasts of Ula'tek
 					crit(116121, {	-- The Lost Explorers
-						["_encounter"] = { EXPLORERS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { EXPLORERS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(116123, {	-- Sszorak
-						["_encounter"] = { SSZORAK, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SSZORAK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(116124, {	-- The Twin Fangs
-						["_encounter"] = { TWIN_FANGS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { TWIN_FANGS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(63532, {	-- The Venomous Abyss: Ula'tek
 					crit(116125, {	-- The Coiled Altar
-						["_encounter"] = { COILED_ALTAR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { COILED_ALTAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(116126, {	-- Ula'tek
-						["_encounter"] = { ULATEK, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ULATEK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(63521, {	-- The Venomous Abyss
 					crit(116119, {	-- Nek'zali the Soulcoiler
-						["_encounter"] = { NEKZALI, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { NEKZALI, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(116120, {	-- Entombed Sentinels
-						["_encounter"] = { ENTOMBED, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ENTOMBED, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(116122, {	-- Vashnik the Malignant
-						["_encounter"] = { VASHNIK, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { VASHNIK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(116121, {	-- The Lost Explorers
-						["_encounter"] = { EXPLORERS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { EXPLORERS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(116123, {	-- Sszorak
-						["_encounter"] = { SSZORAK, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SSZORAK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(116124, {	-- The Twin Fangs
-						["_encounter"] = { TWIN_FANGS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { TWIN_FANGS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(116125, {	-- The Coiled Altar
-						["_encounter"] = { COILED_ALTAR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { COILED_ALTAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(116126, {	-- Ula'tek
-						["_encounter"] = { ULATEK, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ULATEK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(63520, {	-- Heroic: The Venomous Abyss
 					crit(116111, {	-- Nek'zali the Soulcoiler
-						["_encounter"] = { NEKZALI, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { NEKZALI, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(116112, {	-- Entombed Sentinels
-						["_encounter"] = { ENTOMBED, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { ENTOMBED, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(116114, {	-- Vashnik the Malignant
-						["_encounter"] = { VASHNIK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { VASHNIK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(116113, {	-- The Lost Explorers
-						["_encounter"] = { EXPLORERS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { EXPLORERS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(116115, {	-- Sszorak
-						["_encounter"] = { SSZORAK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { SSZORAK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(116116, {	-- The Twin Fangs
-						["_encounter"] = { TWIN_FANGS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { TWIN_FANGS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(116117, {	-- The Coiled Altar
-						["_encounter"] = { COILED_ALTAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { COILED_ALTAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(116118, {	-- Ula'tek
-						["_encounter"] = { ULATEK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { ULATEK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				}),
 				ach(63522),	-- Mythic: The Venomous Abyss (automated)
@@ -380,21 +380,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				ach(63647),	-- Heroic: The Venomous Abyss Guild Run
 			}),
 			o(532226, {	-- The Catalyst
-				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
-				["coord"] = { 40.3, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["modelScale"] = 4,
-				["catalystID"] = 13,	-- ItemBonus.Value_0 MID:S2
-				["groups"] = {
-					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups(
+				description = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
+				coord = { 40.3, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+				modelScale = 4,
+				catalystID = 13,	-- ItemBonus.Value_0 MID:S2
+				groups = {
+					Difficulty(DIFFICULTY.RAID.LFR, {upgradeTrackID=UPGRADETRACKS.VETERAN}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(THE_VENOMOUS_ABYSS_TIER, DIFFICULTY.RAID.LFR)
 					),
-					Difficulty(DIFFICULTY.RAID.NORMAL, {["upgradeTrackID"]=UPGRADETRACKS.CHAMPION}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.NORMAL, {upgradeTrackID=UPGRADETRACKS.CHAMPION}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(THE_VENOMOUS_ABYSS_TIER, DIFFICULTY.RAID.NORMAL)
 					),
-					Difficulty(DIFFICULTY.RAID.HEROIC, {["upgradeTrackID"]=UPGRADETRACKS.HERO}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.HEROIC, {upgradeTrackID=UPGRADETRACKS.HERO}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(THE_VENOMOUS_ABYSS_TIER, DIFFICULTY.RAID.HEROIC)
 					),
-					Difficulty(DIFFICULTY.RAID.MYTHIC, {["upgradeTrackID"]=UPGRADETRACKS.MYTH}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.MYTHIC, {upgradeTrackID=UPGRADETRACKS.MYTH}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(THE_VENOMOUS_ABYSS_TIER, DIFFICULTY.RAID.MYTHIC)
 					),
 				},
@@ -404,29 +404,29 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					q(96794),	-- Fury of the Dead
 				}),
 				BossOnly(NEKZALI, {
-					i(278285, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Soulcoiler Nek'zali
+					i(278285, { timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Soulcoiler Nek'zali
 					i(280305),	-- Soulcoil Remnant (PET!)
 					i(279115),	-- Soulcoiler's Ritual Candle (DECOR!)
 					i(281227),	-- Soulcoiler's Rush'kah (COSMETIC!)
 				}),
 				BossOnly(ENTOMBED, {
 					i(264716),	-- Hexed Tomb Brazier (DECOR!) [NYI??]
-					i(278283, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Entombed Sentinels
+					i(278283, { timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Entombed Sentinels
 				}),
 				BossOnly(VASHNIK, {
-					i(278287, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Vashnik
+					i(278287, { timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Vashnik
 					i(272361),	-- Venomous Pyre (DECOR!)
 				}),
 				BossOnly(EXPLORERS, {
 					i(279118),	-- Lost Explorers Mailbox (DECOR!)
-					i(278286, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Tortollan Explorers
+					i(278286, { timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Tortollan Explorers
 				}),
 				BossOnly(SSZORAK, {
-					i(278288, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Sszorak
+					i(278288, { timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Sszorak
 					i(244343),	-- Vessel of the Howling Ossuary (DECOR!) [Check]
 				}),
 				BossOnly(TWIN_FANGS, {
-					i(278289, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: The Twin Fangs
+					i(278289, { timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: The Twin Fangs
 					i(273070),	-- Pattern: Adorned Fang (RECIPE!)
 					i(279122),	-- Venom-Fanged Font (DECOR)
 				}),
@@ -435,15 +435,15 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					i(279449, {	-- Hex Troll Mask Fragment
 						i(275937),	-- Hex Lord's Visage (COSMETIC!)
 					}),
-					i(278290, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: The Coiled Alter
+					i(278290, { timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: The Coiled Alter
 					i(279131),	-- Pillar of the Coiled Isle (DECOR!)
 				}),
 				BossOnly(ULATEK, {
 					i(279500),	-- "Rage of the Shackled" Mural (DECOR!)
 					i(278340),	-- Blighted Pearl (CI!)
 					i(271092),	-- Jan'thrazet, the Soul Fang
-					i(278284, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Ula'tek
-					i(279127, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- The Venomous Abyss Argent Trophy (DECOR!)
+					i(278284, { timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Ula'tek
+					i(279127, { timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- The Venomous Abyss Argent Trophy (DECOR!)
 					i(271093),	-- Zatha'tek, Breath of Corruption
 				}),
 			}),
@@ -451,7 +451,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				ZoneDrops({}),
 				CommonBossDrops({
 					currency(VETERAN_MISTCREST, {
-						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+						timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 3316, {	-- The Soulcoilers
@@ -470,8 +470,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					Boss(COILED_ALTAR),
 					Boss(ULATEK, {
 						i(270909, {	-- Slumbering Coil Curio
-							["sym"] = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.LFR}},
-							["up"] = IGNORED_VALUE,
+							sym = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.LFR}},
+							up = IGNORED_VALUE,
 						}),
 					}),
 				}),
@@ -510,13 +510,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CHAMPION_MISTCREST, {
-						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+						timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 					}),
 				}),
 				n(QUESTS, {
 					q(98226, {	-- The Venomous Abyss: Deception Unmasked [N]
-						["qg"] = 262667,	-- Zul'jarra
-						["qi"] = 280007,	-- Mask Fragment (QI!)
+						qg = 262667,	-- Zul'jarra
+						qi = 280007,	-- Mask Fragment (QI!)
 					}),
 				}),
 				ZoneDrops({}),
@@ -529,8 +529,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				Boss(COILED_ALTAR),
 				Boss(ULATEK, {
 					i(270909, {	-- Slumbering Coil Curio
-						["sym"] = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.NORMAL}},
-						["up"] = IGNORED_VALUE,
+						sym = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.NORMAL}},
+						up = IGNORED_VALUE,
 					}),
 				}),
 			}),
@@ -543,20 +543,20 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				BossOnly(TWIN_FANGS),
 				BossOnly(COILED_ALTAR),
 				BossOnly(ULATEK, {
-					ach(63650, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Ahead of the Curve: Ula'tek
-					i(279125, { ["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- The Venomous Abyss Aureate Trophy (DECOR!)
+					ach(63650, { timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- Ahead of the Curve: Ula'tek
+					i(279125, { timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }),	-- The Venomous Abyss Aureate Trophy (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(HERO_MISTCREST, {
-						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+						timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 					}),
 				}),
 				n(QUESTS, {
 					q(98228, {	-- The Venomous Abyss: Deception Unmasked [H]
-						["qg"] = 262667,	-- Zul'jarra
-						["qi"] = 280089,	-- Mask Fragment (QI!)
+						qg = 262667,	-- Zul'jarra
+						qi = 280089,	-- Mask Fragment (QI!)
 					}),
 				}),
 				ZoneDrops({}),
@@ -569,21 +569,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				Boss(COILED_ALTAR),
 				Boss(ULATEK, {
 					i(270909, {	-- Slumbering Coil Curio
-						["sym"] = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.HEROIC}},
-						["up"] = IGNORED_VALUE,
+						sym = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.HEROIC}},
+						up = IGNORED_VALUE,
 					}),
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(MYTH_MISTCREST, {
-						["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+						timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 					}),
 				}),
 				n(QUESTS, {
 					q(98229, {	-- The Venomous Abyss: Deception Unmasked [M]
-						["qg"] = 262667,	-- Zul'jarra
-						["qi"] = 280090,	-- Mask Fragment (QI!)
+						qg = 262667,	-- Zul'jarra
+						qi = 280090,	-- Mask Fragment (QI!)
 					}),
 				}),
 				ZoneDrops({}),
@@ -612,16 +612,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					ach(63476, {	-- Mythic: Ula'tek
 						title(791),	-- <Name>, Venom's End
 					}),
-					ach(63651, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Cutting Edge: Ula'tek
-					ach(63652, applyDataSelf({["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 } }, {	-- Hall of Fame: Ula'tek
+					ach(63651, {timeline = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Cutting Edge: Ula'tek
+					ach(63652, applyDataSelf({timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }, {	-- Hall of Fame: Ula'tek
 						title(790),	-- <Name>, Famed Slayer of Ula'tek
 					})),
 					ach(63648),	-- Mythic: Ula'tek Guild Run
 					i(275658),	-- Primeval Skyfriend (MOUNT!)
-					i(279129, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- The Venomous Abyss Gleaming Trophy (DECOR!)
+					i(279129, {timeline = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- The Venomous Abyss Gleaming Trophy (DECOR!)
 					i(270909, {	-- Slumbering Coil Curio
-						["sym"] = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.MYTHIC}},
-						["up"] = IGNORED_VALUE,
+						sym = {{"sub", "instance_tier",1320,DIFFICULTY.RAID.MYTHIC}},
+						up = IGNORED_VALUE,
 					}),
 				}),
 			}),
@@ -631,8 +631,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1320, {	-- The Venomous Abyss
-		["timeline"] = { ADDED_12_1_0 },
-		["groups"] = sharedData({
+		timeline = { ADDED_12_1_0 },
+		groups = sharedData({
 			isWeekly=true
 		},{
 			-- LFR
@@ -669,10 +669,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 --[[ This is not quite accurate. Only certain Zone Drops were given random NYI versions, or maybe they really do come from some other situation...
 root(ROOTS.NeverImplemented, expansion(EXPANSION.MID, {
 	inst(1320, {	-- The Venomous Abyss
-		["timeline"] = { ADDED_12_1_0 },
-		["groups"] = {
+		timeline = { ADDED_12_1_0 },
+		groups = {
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
-				ZoneDrops(sharedData({["bonusID"] = 6895},clone(ZoneDropLoot))),
+				ZoneDrops(sharedData({bonusID = 6895},clone(ZoneDropLoot))),
 			}),
 		},
 	}),

@@ -46,18 +46,18 @@ root(ROOTS.Promotions, {
 	-- #if ANYCLASSIC
 	cnONLY(n(CN_PROMOTIONS_CLASSIC, {
 		cnONLY(i(33225, {	-- Reins of the Swift Spectral Tiger (MOUNT!)
-			["description"] = "Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",
-			["u"] = REMOVED_FROM_GAME,
+			description = "Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",
+			u = REMOVED_FROM_GAME,
 		})),
 		cnONLY(mount(471440, {	-- Skybound Spectral Tiger (MOUNT!)
-			["timeline"] = { ADDED_3_4_3, "removed 3.4.5", "added 5.5.2", "removed 5.5.10" },
-			["description"] = "Can be bought for ¥1888 ($265 USD) or a discounted price of ¥588 ($82 USD) for owners of the original from October 2024 to 7 January 2025 in the Ingame Shop. The bundle returned for 2026.",
+			timeline = { ADDED_3_4_3, "removed 3.4.5", "added 5.5.2", "removed 5.5.10" },
+			description = "Can be bought for ¥1888 ($265 USD) or a discounted price of ¥588 ($82 USD) for owners of the original from October 2024 to 7 January 2025 in the Ingame Shop. The bundle returned for 2026.",
 		})),
 		n(TREASURE_OF_AZEROTH, sharedDataSelf({
-			["timeline"] = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
-			["u"] = REAL_MONEY,
+			timeline = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
+			u = REAL_MONEY,
 		}, {
-			["groups"] = {
+			groups = {
 				i(265944),	-- Ashened Cataclysm (MOUNT!)
 				-- #if AFTER 5.5.0
 				i(79769),	-- Demon Hunter's Aspect (TOY!) (MoP Classic only)
@@ -74,9 +74,9 @@ root(ROOTS.Promotions, {
 			},
 		})),
 		n(QUICKSAND_SECRET_TREASURE_VAULT, sharedDataSelf({
-			["timeline"] = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
+			timeline = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
 		}, {
-			["groups"] = {
+			groups = {
 				i(38576),	-- Big Battle Bear (MOUNT!)
 				i(49704),	-- Carved Ogre Idol (TOY!)
 				i(63125),	-- Dark Phoenix (MOUNT!) (August 2026)
@@ -88,10 +88,10 @@ root(ROOTS.Promotions, {
 			},
 		}));
 		n(DELUXEBUNDLE2025CLASSIC, sharedDataSelf({
-			["timeline"] = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
-			["u"] = REAL_MONEY,
+			timeline = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
+			u = REAL_MONEY,
 		}, {
-			["groups"] = {
+			groups = {
 				--	i(247848),	-- "Quietwater Angler" Title (Classic)
 				i(248263),	-- Azure Sea Boat (TOY!) (Classic)
 				i(109013),	-- Reins of the Dread Raven (MOUNT!) (Classic)
@@ -105,10 +105,10 @@ root(ROOTS.Promotions, {
 			},
 		})),
 		n(LUNARNEWYEAR, sharedDataSelf({
-			["timeline"] = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
-			["u"] = REAL_MONEY,
+			timeline = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
+			u = REAL_MONEY,
 		}, {
-			["groups"] = {
+			groups = {
 				i(267279),	-- Embers of Al'ar (TOY!)
 				i(268924),	-- Scorching Imperial Quilen (MOUNT!)
 				i(254735, {	-- Thunderhoof Celestial (MOUNT!)
@@ -117,16 +117,16 @@ root(ROOTS.Promotions, {
 			},
 		})),
 		n(CRIMSONTIDE_TREASURETROVE, sharedDataSelf({
-			["timeline"] = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
-			["u"] = REAL_MONEY,
+			timeline = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
+			u = REAL_MONEY,
 		}, {
-			["groups"] = {
+			groups = {
 				i(272312),	-- Crimson Bloodwater (TOY!)
 				i(45037),	-- Epic Purple Shirt
 				mount(457485),	-- Grizzly Hills Packmaster (MOUNT!)
 				i(273849, {	-- Landro's Sha-Touched Loot Box
-					["description"] = "1.25% chance for any of the following:",
-					["groups"] = {
+					description = "1.25% chance for any of the following:",
+					groups = {
 						i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
 						i(269640),	-- Sha-Warped Owl (MOUNT!)
 						i(269012),	-- Sha-Warped Riding Wolf (MOUNT!)
@@ -142,7 +142,7 @@ root(ROOTS.Promotions, {
 				i(269659),	-- The Sire's Palanquin (MOUNT!)
 				i(271652),	-- The Sire's Ghastly Screecher (PET!)
 				n(TOP_TIER_CNONLY, {
-					["groups"] = {
+					groups = {
 						mount(423869),	-- Avatar of Flame (MOUNT!)
 						mount(457485),	-- Grizzly Hills Packmaster (MOUNT!)
 						i(83086),	-- Heart of the Nightwing (MOUNT!)
@@ -151,7 +151,7 @@ root(ROOTS.Promotions, {
 					},
 				}),
 				n(FIRST_TIER_CNONLY, {
-					["groups"] = {
+					groups = {
 						i(54069),	-- Blazing Hippogryph (MOUNT!)
 						i(272312),	-- Crimson Bloodwater (TOY!)
 						i(201699),	-- Festering Emerald Drake (MOUNT!)
@@ -162,7 +162,7 @@ root(ROOTS.Promotions, {
 					},
 				}),
 				n(SECOND_TIER_CNONLY, {
-					["groups"] = {
+					groups = {
 						i(49704),	-- Carved Ogre Idol (TOY!)
 						i(45037),	-- Epic Purple Shirt
 						i(33223),	-- Fishing Chair (DECOR!)
@@ -175,7 +175,7 @@ root(ROOTS.Promotions, {
 					},
 				}),
 				n(THIRD_TIER_CNONLY, {
-					["groups"] = {
+					groups = {
 						i(38301),	-- D.I.S.C.O. (TOY!)
 						i(49664),	-- Enchanted Purple Jade (TOY!)
 						i(33219),	-- Goblin Gumbo Kettle (TOY!)
@@ -192,14 +192,14 @@ root(ROOTS.Promotions, {
 			},
 		})),
 		n(LUCKY_BAMBOO_TILES, sharedDataSelf({
-			["timeline"] = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
+			timeline = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
 		}, {
-			["groups"] = {
+			groups = {
 				i(98550),	-- Blossoming Ancient (PET!)
 				i(170206),	-- Crown of Infinite Prosperity (COSMETIC!)
 				i(273849, {	-- Landro's Sha-Touched Loot Box
-					["description"] = "1.25% chance for any of the following:",
-					["groups"] = {
+					description = "1.25% chance for any of the following:",
+					groups = {
 						i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
 						i(269640),	-- Sha-Warped Owl (MOUNT!)
 						i(269012),	-- Sha-Warped Riding Wolf (MOUNT!)
@@ -221,10 +221,10 @@ root(ROOTS.Promotions, {
 			},
 		}));
 		n(DELUXEBUNDLE2026, sharedDataSelf({
-			["timeline"] = { ADDED_12_1_0, REMOVED_12_1_5 },
-			["u"] = REAL_MONEY,
+			timeline = { ADDED_12_1_0, REMOVED_12_1_5 },
+			u = REAL_MONEY,
 		}, {
-			["groups"] = {
+			groups = {
 				i(258883),	-- Sha-scarred Drake (MOUNT!)
 				i(267301),	-- Smoldering Courage (PET!)
 				i(277193),	-- Sunflutter Driftmoth (PET!)
@@ -236,10 +236,10 @@ root(ROOTS.Promotions, {
 			},
 		})),
 		n(AZURESPAN_TREASURETROVE, sharedDataSelf({
-			["timeline"] = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
-			["u"] = REAL_MONEY,
+			timeline = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
+			u = REAL_MONEY,
 		}, {
-			["groups"] = {
+			groups = {
 				i(193837),	-- Backswimmer Timbertooth (PET!)
 				i(200882),	-- Big Kinook's Spare Ladle (COSMETIC!)
 				--	i(ITEMID_TODO),	-- Death Knight toy item (TOY!)
@@ -249,8 +249,8 @@ root(ROOTS.Promotions, {
 				i(274037),	-- Tuskarr Hermit Crab (MOUNT!)
 				i(274730),	-- Tuskarr Ice Fishing Tent (TOY!)
 				i(273849, {	-- Landro's Sha-Touched Loot Box
-					["description"] = "1.25% chance for any of the following:",
-					["groups"] = {
+					description = "1.25% chance for any of the following:",
+					groups = {
 						i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
 						i(269640),	-- Sha-Warped Owl (MOUNT!)
 						i(269012),	-- Sha-Warped Riding Wolf (MOUNT!)
@@ -261,7 +261,7 @@ root(ROOTS.Promotions, {
 			--	i(ITEMID_TODO),	-- Northrend Adventuring Supplies (Titan Reforged)
 			--	--i(ITEMID_TODO),	-- Treasure Shard (CURRENCY!)
 				n(TOP_TIER_CNONLY, {
-					["groups"] = {
+					groups = {
 						mount(423869),	-- Avatar of Flame (MOUNT!)
 						--	i(ITEMID_TODO),	-- Death Knight toy item (TOY!)
 						i(83086),	-- Heart of the Nightwing (MOUNT!)
@@ -269,7 +269,7 @@ root(ROOTS.Promotions, {
 					},
 				}),
 				n(FIRST_TIER_CNONLY, {
-					["groups"] = {
+					groups = {
 						i(54069),	-- Blazing Hippogryph (MOUNT!)
 						i(201699),	-- Festering Emerald Drake (MOUNT!)
 						mount(463045),	-- Lava Drake (MOUNT!)
@@ -280,7 +280,7 @@ root(ROOTS.Promotions, {
 					},
 				}),
 				n(SECOND_TIER_CNONLY, {
-					["groups"] = {
+					groups = {
 						i(193837),	-- Backswimmer Timbertooth (PET!)
 						i(49704),	-- Carved Ogre Idol (TOY!)
 						i(274925),	-- Delta (PET!)
@@ -293,7 +293,7 @@ root(ROOTS.Promotions, {
 					},
 				}),
 				n(THIRD_TIER_CNONLY, {
-					["groups"] = {
+					groups = {
 						i(38301),	-- D.I.S.C.O. (TOY!)
 						i(49664),	-- Enchanted Purple Jade (TOY!)
 						i(33219),	-- Goblin Gumbo Kettle (TOY!)
@@ -310,9 +310,9 @@ root(ROOTS.Promotions, {
 			},
 		})),
 		n(CN_WOW_ANNIVERSARY_TWENTYONE, sharedDataSelf({	-- Yes CN is 1year Behind and celebrates 21st Bday 2026
-			["timeline"] = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
+			timeline = { "added 3.80.0", "removed 3.80.10", "added 5.5.0", "removed 5.5.10" },
 		}, {
-			["groups"] = {
+			groups = {
 				-- Login giveaway
 				i(95059),	-- Clutch of Ji-Kun (MOUNT!)
 				i(273150),	-- Voidfeather Dragonhawk (MOUNT!)
@@ -322,10 +322,10 @@ root(ROOTS.Promotions, {
 		})),
 	})),
 	cnONLY(n(TITANFORGED_PROMOTIONS, {
-		["timeline"] = { "added 3.80.0", "removed 3.80.10" },
-		["groups"] = {
+		timeline = { "added 3.80.0", "removed 3.80.10" },
+		groups = {
 			mount(1280400, {	-- Reforged Invincible (MOUNT!)
-				["description"] = "This red version of the iconic Invincible mount has so far only been available in China. We don't know if or when it'll become available in the rest of the world. It was obtainable only through a special event on China's Titan Reforged servers in September-November 2025, awarded to players who defeated the Lich King in Icecrown Citadel on any difficulty.",
+				description = "This red version of the iconic Invincible mount has so far only been available in China. We don't know if or when it'll become available in the rest of the world. It was obtainable only through a special event on China's Titan Reforged servers in September-November 2025, awarded to players who defeated the Lich King in Icecrown Citadel on any difficulty.",
 			}),
 		},
 	})),

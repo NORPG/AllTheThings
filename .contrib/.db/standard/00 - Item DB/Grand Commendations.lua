@@ -1,6 +1,6 @@
 local Items = ItemDBConditional;
 local i = function(itemID, factionID, unlock)
-	local o = { ["factionID"] = factionID };
+	local o = { factionID = factionID };
 	if not unlock then o.repeatable = true; end
 	Items[itemID] = o;
 	-- ItemDBConditional uses an internal table when making new assignments into the DB, so we can't return the table used to set the key

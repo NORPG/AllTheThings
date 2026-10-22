@@ -3,25 +3,25 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(256, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {	-- The Blood Furnace
-		["lore"] = "The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",
+	inst(256, bubbleDownSelf({ timeline = { ADDED_2_0_3 } }, {	-- The Blood Furnace
+		lore = "The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",
 		-- #if BEFORE MOP
-		["zoneTextAreaID"] = 3713,	-- The Blood Furnace
+		zoneTextAreaID = 3713,	-- The Blood Furnace
 		-- #endif
-		["mapID"] = HELLFIRE_CITADEL_BLOOD_FURNACE,
-		["coord"] = { 46.06, 51.74, HELLFIRE_PENINSULA },	-- The Blood Furnace, Hellfire Peninsula
-		["lvl"] = lvlsquish(58, 58, 10),
-		["groups"] = {
+		mapID = HELLFIRE_CITADEL_BLOOD_FURNACE,
+		coord = { 46.06, 51.74, HELLFIRE_PENINSULA },	-- The Blood Furnace, Hellfire Peninsula
+		lvl = lvlsquish(58, 58, 10),
+		groups = {
 			n(QUESTS, {
 				q(9607, {	-- Heart of Rage [Alliance]
-					["qg"] = 17479,	-- Gunny
-					["sourceQuest"] = 9575,	-- Weaken the Ramparts [Alliance]
-					["coord"] = { 56.4, 66.7, HELLFIRE_PENINSULA },
-					["timeline"] = { REMOVED_4_3_0 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(59, 59, 10),
+					qg = 17479,	-- Gunny
+					sourceQuest = 9575,	-- Weaken the Ramparts [Alliance]
+					coord = { 56.4, 66.7, HELLFIRE_PENINSULA },
+					timeline = { REMOVED_4_3_0 },
+					races = ALLIANCE_ONLY,
+					lvl = lvlsquish(59, 59, 10),
 					-- #if BEFORE 4.3.0.14732
-					["groups"] = {
+					groups = {
 						i(25714),	-- Crimson Pendant of Clarity
 						i(25713),	-- Holy Healing Band
 						i(25712),	-- Perfectly Balanced Cape
@@ -29,14 +29,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					-- #endif
 				}),
 				q(9608, {	-- Heart of Rage [Horde]
-					["qg"] = 17558,	-- Caza'rez
-					["sourceQuest"] = 9572,	-- Weaken the Ramparts [Horde]
-					["coord"] = { 54.9, 36.0, HELLFIRE_PENINSULA },
-					["timeline"] = { REMOVED_4_3_0 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 59, 10),
+					qg = 17558,	-- Caza'rez
+					sourceQuest = 9572,	-- Weaken the Ramparts [Horde]
+					coord = { 54.9, 36.0, HELLFIRE_PENINSULA },
+					timeline = { REMOVED_4_3_0 },
+					races = HORDE_ONLY,
+					lvl = lvlsquish(59, 59, 10),
 					-- #if BEFORE 4.3.0.14732
-					["groups"] = {
+					groups = {
 						i(25714),	-- Crimson Pendant of Clarity
 						i(25713),	-- Holy Healing Band
 						i(25712),	-- Perfectly Balanced Cape
@@ -44,63 +44,63 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					-- #endif
 				}),
 				q(29539, {	-- Heart of Rage [Alliance]
-					["qg"] = 54629,	-- Gunny
-					["timeline"] = { ADDED_4_3_0 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(59, 59, 10),
-					["groups"] = {
+					qg = 54629,	-- Gunny
+					timeline = { ADDED_4_3_0 },
+					races = ALLIANCE_ONLY,
+					lvl = lvlsquish(59, 59, 10),
+					groups = {
 						i(25714),	-- Crimson Pendant of Clarity
 						i(25713),	-- Holy Healing Band
 						i(25712),	-- Perfectly Balanced Cape
 					},
 				}),
 				q(29536, {	-- Heart of Rage [Horde]
-					["qg"] = 54636,	-- Caza'rez
-					["timeline"] = { ADDED_4_3_0 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 59, 10),
-					["groups"] = {
+					qg = 54636,	-- Caza'rez
+					timeline = { ADDED_4_3_0 },
+					races = HORDE_ONLY,
+					lvl = lvlsquish(59, 59, 10),
+					groups = {
 						i(25714),	-- Crimson Pendant of Clarity
 						i(25713),	-- Holy Healing Band
 						i(25712),	-- Perfectly Balanced Cape
 					},
 				}),
 				q(29538, {	-- Make Them Bleed [Alliance]
-					["qg"] = 54629,	-- Gunny
-					["timeline"] = { ADDED_4_3_0 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(59, 59, 10),
-					["groups"] = {
+					qg = 54629,	-- Gunny
+					timeline = { ADDED_4_3_0 },
+					races = ALLIANCE_ONLY,
+					lvl = lvlsquish(59, 59, 10),
+					groups = {
 						objective(1, {	-- 0/10 Fel Orc Blood Vial
-							["provider"] = { "i", 23894 },	-- Fel Orc Blood Vial
+							provider = { "i", 23894 },	-- Fel Orc Blood Vial
 						}),
 						objective(2, {	-- 0/1 Fel Infusion Rod
-							["provider"] = { "i", 73200 },	-- Fel Infusion Rod
+							provider = { "i", 73200 },	-- Fel Infusion Rod
 						}),
 					},
 				}),
 				q(29535, {	-- Make Them Bleed [Horde]
-					["qg"] = 54636,	-- Caza'rez
-					["timeline"] = { ADDED_4_3_0 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 59, 10),
-					["groups"] = {
+					qg = 54636,	-- Caza'rez
+					timeline = { ADDED_4_3_0 },
+					races = HORDE_ONLY,
+					lvl = lvlsquish(59, 59, 10),
+					groups = {
 						objective(1, {	-- 0/10 Fel Orc Blood Vial
-							["provider"] = { "i", 23894 },	-- Fel Orc Blood Vial
+							provider = { "i", 23894 },	-- Fel Orc Blood Vial
 						}),
 						objective(2, {	-- 0/1 Fel Infusion Rod
-							["provider"] = { "i", 73200 },	-- Fel Infusion Rod
+							provider = { "i", 73200 },	-- Fel Infusion Rod
 						}),
 					},
 				}),
 				q(29537, {	-- Mind the Gap
-					["qg"] = 54636,	-- Caza'rez
-					["timeline"] = { ADDED_4_3_0 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 59, 10),
-					["groups"] = {
+					qg = 54636,	-- Caza'rez
+					timeline = { ADDED_4_3_0 },
+					races = HORDE_ONLY,
+					lvl = lvlsquish(59, 59, 10),
+					groups = {
 						objective(1, {	-- Keli'dan the Breaker slain
-							["provider"] = { "n", 17377 },	-- Keli'dan the Breaker
+							provider = { "n", 17377 },	-- Keli'dan the Breaker
 						}),
 						i(25701),	-- Breastplate of Retribution
 						i(25711),	-- Deadly Borer Leggings
@@ -109,15 +109,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(9589, {	-- The Blood is Life [Alliance]
-					["sourceQuest"] = 9587,	-- Dark Tidings [Alliance]
-					["qg"] = 17479,	-- Gunny
-					["coord"] = { 56.4, 66.7, HELLFIRE_PENINSULA },
-					["timeline"] = { REMOVED_4_3_0 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(59, 59, 10),
-					["groups"] = {
+					sourceQuest = 9587,	-- Dark Tidings [Alliance]
+					qg = 17479,	-- Gunny
+					coord = { 56.4, 66.7, HELLFIRE_PENINSULA },
+					timeline = { REMOVED_4_3_0 },
+					races = ALLIANCE_ONLY,
+					lvl = lvlsquish(59, 59, 10),
+					groups = {
 						objective(1, {	-- 0/10 Fel Orc Blood Vial
-							["provider"] = { "i", 23894 },	-- Fel Orc Blood Vial
+							provider = { "i", 23894 },	-- Fel Orc Blood Vial
 						}),
 						-- #if BEFORE 4.3.0.14732
 						i(25701),	-- Breastplate of Retribution
@@ -128,15 +128,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(9590, {	-- The Blood is Life [Horde]
-					["sourceQuest"] = 9588,	-- Dark Tidings [Horde]
-					["qg"] = 17558,	-- Caza'rez
-					["coord"] = { 54.9, 36.0, HELLFIRE_PENINSULA },
-					["timeline"] = { REMOVED_4_3_0 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 59, 10),
-					["groups"] = {
+					sourceQuest = 9588,	-- Dark Tidings [Horde]
+					qg = 17558,	-- Caza'rez
+					coord = { 54.9, 36.0, HELLFIRE_PENINSULA },
+					timeline = { REMOVED_4_3_0 },
+					races = HORDE_ONLY,
+					lvl = lvlsquish(59, 59, 10),
+					groups = {
 						objective(1, {	-- 0/10 Fel Orc Blood Vial
-							["provider"] = { "i", 23894 },	-- Fel Orc Blood Vial
+							provider = { "i", 23894 },	-- Fel Orc Blood Vial
 						}),
 						-- #if BEFORE 4.3.0.14732
 						i(25701),	-- Breastplate of Retribution
@@ -147,13 +147,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29540, {	-- The Breaker
-					["qg"] = 54629,	-- Gunny
-					["timeline"] = { ADDED_4_3_0 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(59, 59, 10),
-					["groups"] = {
+					qg = 54629,	-- Gunny
+					timeline = { ADDED_4_3_0 },
+					races = ALLIANCE_ONLY,
+					lvl = lvlsquish(59, 59, 10),
+					groups = {
 						objective(1, {	-- Keli'dan the Breaker slain
-							["provider"] = { "n", 17377 },	-- Keli'dan the Breaker
+							provider = { "n", 17377 },	-- Keli'dan the Breaker
 						}),
 						i(25701),	-- Breastplate of Retribution
 						i(25711),	-- Deadly Borer Leggings
@@ -167,8 +167,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(555, {	-- The Maker
-					["creatureID"] = 17381,
-					["groups"] = {
+					creatureID = 17381,
+					groups = {
 						i(24384),	-- Diamond-Core Sledgemace
 						-- #if AFTER 7.3.5
 						i(27488),	-- Mage-Collar of the Firestorm
@@ -185,19 +185,19 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						-- #endif
 						-- #if BEFORE MOP
 						i(24386, {	-- Libram of Saints Departed
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 						i(73200, {	-- Fel Infusion Rod
-							["timeline"] = { ADDED_4_3_0 },
+							timeline = { ADDED_4_3_0 },
 						}),
 					},
 				}),
 				e(556, {	-- Broggok
-					["creatureID"] = 17380,
-					["groups"] = {
+					creatureID = 17380,
+					groups = {
 						i(141063,{	-- Technique: Grimoire of the Observer (RECIPE!)
-							["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },
+							timeline = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },
 						}),
 						-- #if AFTER 7.3.5
 						i(27490),	-- Firebrand Battleaxe
@@ -219,8 +219,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				e(557, {	-- Keli'dan the Breaker
-					["creatureID"] = 17377,
-					["groups"] = {
+					creatureID = 17377,
+					groups = {
 						ach(648),	-- The Blood Furnace
 						i(24394),	-- Warsong Howling Axe
 						-- #if AFTER 7.3.5
@@ -254,17 +254,17 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
-				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["aqd"] = {
-					["cost"] = {
+				description = "You need to have a key to the instance in order to access this mode.",
+				aqd = {
+					cost = {
 						{ "i", 30622, 1 },    -- Flamewrought Key [A]
 						-- #if CLASSIC_ANNIVERSARY
 						{ "i", 265830, 1 },    -- Communal Flamewrought Key [A]
 						-- #endif
 					},
 				},
-				["hqd"] = {
-					["cost"] = {
+				hqd = {
+					cost = {
 						{ "i", 30637, 1 },    -- Flamewrought Key [H]
 						-- #if CLASSIC_ANNIVERSARY
 						{ "i", 265826, 1 },    -- Communal Flamewrought Key [H]
@@ -272,15 +272,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 70, 30),
-				["groups"] = {
+				lvl = lvlsquish(70, 70, 30),
+				groups = {
 					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
+						crs = {
 							17381,	-- The Maker
 							17380,	-- Broggok
 							17377,	-- Keli'dan the Breaker
 						},
-						["groups"] = {
+						groups = {
 							-- #if BEFORE CATA
 							BADGE_OF_JUSTICE(1),
 							-- #endif
@@ -290,8 +290,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					e(555, {	-- The Maker
-						["creatureID"] = 17381,
-						["groups"] = {
+						creatureID = 17381,
+						groups = {
 							-- #if AFTER 7.3.5
 							i(24384),	-- Diamond-Core Sledgemace
 							-- #endif
@@ -308,19 +308,19 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27487),	-- Bloodlord Legplates
 							-- #if BEFORE MOP
 							i(27484, {	-- Libram of Avengement
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(73200, {	-- Fel Infusion Rod
-								["timeline"] = { ADDED_4_3_0 },
+								timeline = { ADDED_4_3_0 },
 							}),
 						},
 					}),
 					e(556, {	-- Broggok
-						["creatureID"] = 17380,
-						["groups"] = {
+						creatureID = 17380,
+						groups = {
 							i(141063,{	-- Technique: Grimoire of the Observer (RECIPE!)
-								["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },
+								timeline = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },
 							}),
 							i(27490),	-- Firebrand Battleaxe
 							-- #if AFTER 7.3.5
@@ -344,11 +344,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					e(557, {	-- Keli'dan the Breaker
-						["creatureID"] = 17377,
-						["groups"] = {
+						creatureID = 17377,
+						groups = {
 							ach(668),	-- Heroic: The Blood Furnace
 							ach(5068, {	-- Heroic: The Blood Furnace Guild Run
-								["timeline"] = { ADDED_4_0_3 },
+								timeline = { ADDED_4_0_3 },
 							}),
 							-- #if AFTER 7.3.5
 							i(24394),	-- Warsong Howling Axe
@@ -391,7 +391,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(256, {
 		q(35565),	-- The Blood Furnace Reward Quest - Normal completion
 		q(35566),	-- The Blood Furnace Reward Quest - Heroic completion

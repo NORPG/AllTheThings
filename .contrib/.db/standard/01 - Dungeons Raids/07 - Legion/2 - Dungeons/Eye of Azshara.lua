@@ -2,27 +2,27 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 	inst(716, {	-- Eye of Azshara
-		["mapID"] = 713,
-		["coord"] = { 61.2, 41.1, AZSUNA },
-		["lvl"] = 98,
-		["groups"] = {
+		mapID = 713,
+		coord = { 61.2, 41.1, AZSUNA },
+		lvl = 98,
+		groups = {
 			n(ZONE_DROPS, {
 				i(137726),	-- Schematic: Leystone Buoy (RECIPE!)
 				prof(INSCRIPTION, {
 					i(141051, {	-- Technique: Glyph of the Trident (RECIPE!)
-						["description"] = "Drops from Naga in any Broken Isles zone. Recommended to farm the Naga before the first Boss in the Eye of Azshara Dungeon.",
+						description = "Drops from Naga in any Broken Isles zone. Recommended to farm the Naga before the first Boss in the Eye of Azshara Dungeon.",
 					}),
 				}),
 			}),
 			n(QUESTS, {
 				q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
-					["sourceQuest"] = 38286,	-- Eye of Azshara: Wrath of Azshara
-					["qg"] = 106780,	-- Tidestone of Golganneth
-					["modelScale"] = 3,
-					["qi"] = 137206,	-- Tidestone of Golganneth (QI!)
-					["groups"] = {
+					sourceQuest = 38286,	-- Eye of Azshara: Wrath of Azshara
+					qg = 106780,	-- Tidestone of Golganneth
+					modelScale = 3,
+					qi = 137206,	-- Tidestone of Golganneth (QI!)
+					groups = {
 						i(140624),	-- Bitterbrine Binding
 						i(140623),	-- Brightscale Waistguard
 						i(140622),	-- Hardshell Greatbelt
@@ -32,29 +32,29 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			}),
 			n(WORLD_QUESTS, {
 				q(42723, {	-- Eye of Azshara: A Tough Shell
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(42755, {	-- Eye of Azshara: Azsunian Pearls
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
-					["groups"] = {
+					isWorldQuest = true,
+					lvl = 110,
+					groups = {
 						o(251287, {	-- Massive Azsunian Pearl
 							i(138398),	-- Massive Azsunian Pearl (QI!)
 						}),
 					},
 				}),
 				q(42746, {	-- Eye of Azshara: Dread End
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(42713, {	-- Eye of Azshara: Slug It Out
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(42712, {	-- Eye of Azshara: Termination Claws
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
@@ -143,8 +143,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				})),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["lvl"] = 110,
-				["groups"] = {
+				lvl = 110,
+				groups = {
 					cr(91784, e(1480, {	-- Warlord Parjesh
 						i(134240),	-- Brinewashed Leather Cowl
 						i(134223),	-- Coralplate Chestguard
@@ -216,12 +216,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				["ItemAppearanceModifierID"] = 0,
-				["lvl"] = 110,
-				["groups"] = {
+				ItemAppearanceModifierID = 0,
+				lvl = 110,
+				groups = {
 					cr(91784, e(1480, {	-- Warlord Parjesh
 						ach(10456, {	-- But You Say He's Just a Friend
-							["crs"] = { 97264 },	-- Hatecoil Shellbreaker
+							crs = { 97264 },	-- Hatecoil Shellbreaker
 						}),
 						i(134240),	-- Brinewashed Leather Cowl
 						i(134223),	-- Coralplate Chestguard
@@ -237,7 +237,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					})),
 					cr(91789, e(1490, {	-- Lady Hatecoil
 						ach(10457, {	-- Stay Salty
-							["crs"] = { 98293 },	-- Saltsea Globule
+							crs = { 98293 },	-- Saltsea Globule
 						}),
 						i(134238),	-- Brinewashed Leather Pants
 						i(134230),	-- Coralplate Wristguard

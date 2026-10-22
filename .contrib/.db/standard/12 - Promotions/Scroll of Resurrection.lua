@@ -25,8 +25,8 @@ local SCROLL_OF_RESURRECTION = createHeader({
 });
 
 root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
-	["timeline"] = { ADDED_4_3_0, REMOVED_5_3_0 },
-	["groups"] = {
+	timeline = { ADDED_4_3_0, REMOVED_5_3_0 },
+	groups = {
 		cl(DEATHKNIGHT, {
 			i(72994),	-- Ebonsoul Blade
 			i(72990),	-- Ebonsoul Hammer
@@ -61,10 +61,10 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73154),	-- Ebonsoul Stone of Battle
 			-- #if BEFORE MOP
 			i(73343, {	-- Ebonsoul Sigil of Battle
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			i(73346, {	-- Ebonsoul Sigil of Stoicism
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			-- #endif
 		}),
@@ -116,13 +116,13 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73126),	-- Wildsoul Stone of Wisdom
 			-- #if BEFORE MOP
 			i(73339, {	-- Wildsoul Idol of Destruction
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			i(73338, {	-- Wildsoul Idol of Rage
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			i(73337, {	-- Wildsoul Idol of Wisdom
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			-- #endif
 		}),
@@ -163,8 +163,8 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73101),	-- Magesoul Stone of Destruction
 		}),
 		cl(MONK, {
-			["timeline"] = { ADDED_5_0_4 },
-			["groups"] = {
+			timeline = { ADDED_5_0_4 },
+			groups = {
 				i(88648),	-- Monastic Spire
 				i(88622),	-- Monastic Staff
 				i(88649),	-- Monastic Sword
@@ -253,13 +253,13 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73064),	-- Zealous Stone of Wisdom
 			-- #if BEFORE MOP
 			i(73354, {	-- Zealous Libram of Battle
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			i(73355, {	-- Zealous Libram of Stoicism
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			i(73356, {	-- Zealous Libram of Wisdom
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			-- #endif
 		}),
@@ -316,7 +316,7 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73121),	-- Shadowstalking Stone of Rage
 			-- #if BEFORE MOP
 			i(73357, {	-- Shadowstalking Knives
-				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+				timeline = { ADDED_4_3_0, REMOVED_5_0_4 },
 			}),
 			-- #endif
 		}),
@@ -370,13 +370,13 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73145),	-- Stormbinder Stone of Wisdom
 			-- #if BEFORE MOP
 			i(73340, {	-- Stormbinder Totem of Destruction
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			i(73342, {	-- Stormbinder Totem of Rage
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			i(73341, {	-- Stormbinder Totem of Wisdom
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			-- #endif
 		}),
@@ -433,16 +433,16 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73164),	-- Valiant Stone of Battle
 			-- #if BEFORE MOP
 			i(73358, {	-- Valiant Knives of Battle
-				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+				timeline = { ADDED_4_3_0, REMOVED_5_0_4 },
 			}),
 			i(73359, {	-- Valiant Knives of Stoicism
-				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+				timeline = { ADDED_4_3_0, REMOVED_5_0_4 },
 			}),
 			-- #endif
 		}),
-		bubbleDown({ ["u"] = REAL_MONEY }, i(77956, bubbleDown({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_4_7 } }, {	-- Spectral Mount Crate
-			["description"] = "This crate was given to players whose friends returned to the game by means of the Scroll of Resurrection.",
-			["groups"] = {
+		bubbleDown({ u = REAL_MONEY }, i(77956, bubbleDown({ timeline = { ADDED_4_3_0, REMOVED_5_4_7 } }, {	-- Spectral Mount Crate
+			description = "This crate was given to players whose friends returned to the game by means of the Scroll of Resurrection.",
+			groups = {
 				a(i(76889)),	-- Spectral Gryphon (MOUNT!)
 				h(i(76902)),	-- Spectral Wind Rider (MOUNT!)
 			},

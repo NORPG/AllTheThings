@@ -5,10 +5,10 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 	n(ACHIEVEMENTS, {	-- Achievements (Achievements that don't really fit into a specific Location which are specific to SL)
 		ach(15654, bubbleDownSelf({	-- Back from the Beyond (Legacy)
-			["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+			timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 		}, {
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				14715,	-- Castle Nathria
 				14961,	-- Chains of Domination
 				15647,	-- Dead Men Tell Some Tales
@@ -27,17 +27,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 				15648,	-- Walking in Maw-mphis
 			}},
 			-- #if BEFORE 10.0.2
-			["sharedDescription"] = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
+			sharedDescription = "|cffff0000Becomes unobtainable at Dragonflight Launch!|r",
 			-- #endif
-			["groups"] = {
+			groups = {
 				title(463),	-- Veilstrider <Name>
 			},
 		})),
 		ach(20501, bubbleDownSelf({	-- Back from the Beyond
-			["timeline"] = { ADDED_10_2_6 },
+			timeline = { ADDED_10_2_6 },
 		}, {
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				14715,	-- Castle Nathria
 				14961,	-- Chains of Domination
 				15647,	-- Dead Men Tell Some Tales
@@ -55,9 +55,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 				15324,	-- Tower Ranger
 				15648,	-- Walking in Maw-mphis
 			}},
-			["groups"] = {
+			groups = {
 				i(248125, {	-- Portal to Damnation (DECOR!)
-					["timeline"] = { ADDED_11_2_7 },
+					timeline = { ADDED_11_2_7 },
 				}),
 				i(217612),	-- Zovaal's Shadebeast Collar (MOUNT!)
 			},
@@ -65,30 +65,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 		ach(14763, {	-- Crypt Couture
 			i(183693),	-- Plague Doctor's Mask (CI!)
 			crit(49929, {	-- Ashen Ink
-				["provider"] = { "i",183690 },
+				provider = { "i",183690 },
 			}),
 			crit(49930, {	-- Jagged Bonesaw
-				["provider"] = { "i", 183692 },
+				provider = { "i", 183692 },
 			}),
 			crit(49931, {	-- Discarded Grimoire
-				["provider"] = { "i", 183394 },
+				provider = { "i", 183394 },
 			}),
 			crit(49932, {	-- Sorcerer's Blade
-				["provider"] = { "i", 183397 },
+				provider = { "i", 183397 },
 			}),
 			crit(49933, {	-- Mucosal Pigment
-				["provider"] = { "i", 183691 },
+				provider = { "i", 183691 },
 			}),
 			crit(49934, {	-- Amethystine Dye
-				["provider"] = { "i", 183401 },
+				provider = { "i", 183401 },
 			}),
 			crit(49935, {	-- Ritualist's Mantle
-				["provider"] = { "i", 183399 },
+				provider = { "i", 183399 },
 			}),
 		}),
 		ach(14315, {	-- Shadowlands Diplomat
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				14335,	-- The Ascended
 				14336,	-- Undying Army
 				14338,	-- Court of Harvesters

@@ -2,16 +2,16 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {
+root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_2_6_SEASON_FOUR } }, {
 	n(SEASON_DRACONIC_PVP, {
-		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+		n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
 			ach(19501, {	-- Draconic Combatant [A]
-				["races"] = ALLIANCE_ONLY,
-				["collectible"] = false,
+				races = ALLIANCE_ONLY,
+				collectible = false,
 			}),
 			ach(19502, {	-- Draconic Combatant [H]
-				["races"] = HORDE_ONLY,
-				["collectible"] = false,
+				races = HORDE_ONLY,
+				collectible = false,
 			}),
 			ach(19494),	-- Combatant I: Dragonflight Season 4
 			ach(19495),	-- Combatant II: Dragonflight Season 4
@@ -34,14 +34,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			-- RBG
 			ach(19455, {	-- Hero of the Alliance: Draconic
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(19456, {	-- Hero of the Horde: Draconic
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			-- Solo
 			ach(19513, {	-- Battle Mender: Dragonflight Season 4
-				["classes"] = HEALERS,
+				classes = HEALERS,
 			}),
 			ach(19500, {	-- Legend: Dragonflight Season 4
 				i(211869),	-- Draconic Legend's Pennant (TOY!)
@@ -51,21 +51,21 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			-- Fashion
 			ach(19276, {	-- Verdant Vogue
-				["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+				timeline = { ADDED_10_2_6_SEASON_FOUR },
 			}),
 		})),
-		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
+		filter(MOUNTS, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
 			i(213439, {	-- Vicious Dreamtalon [A] (MOUNT!)
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			i(213440, {	-- Vicious Dreamtalon [H] (MOUNT!)
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 		})),
-		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
+		n(PVP_WARMODE, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
 			n(197553, {	-- Fieldmaster Emberath
-				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["groups"] = {
+				coord = { 43.1, 42.4, VALDRAKKEN },
+				groups = {
 					n(BACK, {
 						bloody(120, i(217101)),	-- Draconic Warmonger's Cape
 						bloody(120, i(217103)),	-- Draconic Warmonger's Cloak
@@ -142,10 +142,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			}),
 		})),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
 			n(199601, {	-- Seltherex
-				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["groups"] = {
+				coord = { 44.7, 37.0, VALDRAKKEN },
+				groups = {
 					filter(BACK_F, {
 						honor(525, i(216381)),	-- Draconic Aspirant's Cape
 						honor(525, i(216379)),	-- Draconic Aspirant's Cloak
@@ -263,11 +263,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			}),
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
 			n(199599, {	-- Calderax
-				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["ItemAppearanceModifierID"] = 159,
-				["groups"] = {
+				coord = { 44.3, 36.6, VALDRAKKEN },
+				ItemAppearanceModifierID = 159,
+				groups = {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(525, i(216232)),	-- Draconic Gladiator's Cloak
@@ -586,7 +586,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			}),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 }, ["bonusID"] = 7532 }, {
+		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 }, bonusID = 7532 }, {
 			n(CLASSES, {
 				cl(DEATHKNIGHT, {
 					i(216232),	-- Draconic Gladiator's Cloak
@@ -705,14 +705,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					-- Old: https://wago.tools/db2/ItemModifiedAppearance?build=11.0.2.56071&filter%5BItemAppearanceModifierID%5D=0&filter%5BItemID%5D=216027&page=1
 					-- #IF BEFORE 11.0.2
 					i(216027, {	-- Draconic Gladiator's Silk Blouse
-						["ItemAppearanceModifierID"] = 160,
-						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "deleted 11.0.2.56110" },
+						ItemAppearanceModifierID = 160,
+						timeline = { ADDED_10_2_6_SEASON_FOUR, "deleted 11.0.2.56110" },
 					}),
 					-- #ELSE
 					i(216027, {	-- Draconic Gladiator's Silk Blouse
-						["bonusID"] = 1,
-						["ItemAppearanceModifierID"] = 1,
-						["timeline"] = { "created 11.0.2.56110" },	-- only obtainable via Ensemble, which is not currently accurate
+						bonusID = 1,
+						ItemAppearanceModifierID = 1,
+						timeline = { "created 11.0.2.56110" },	-- only obtainable via Ensemble, which is not currently accurate
 					}),
 					-- #ENDIF
 					i(216033),	-- Draconic Gladiator's Silk Cap
@@ -894,11 +894,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				i(216283),	-- Draconic Gladiator's Sigil of Adaptation
 			}),
 			n(199720, {	-- Glamora
-				["coord"] = { 45.9, 38.7, VALDRAKKEN },
-				["groups"] = {
+				coord = { 45.9, 38.7, VALDRAKKEN },
+				groups = {
 					honor(100, i(216667, {	-- Draconic Gladiator's Tabard
-						["sourceAchievements"] = { 19509 },	-- Elite: Dragonflight Season 4
-						["bonusID"] = 0,
+						sourceAchievements = { 19509 },	-- Elite: Dragonflight Season 4
+						bonusID = 0,
 					})),
 					moh(5, i(217353)),	-- Draconic Gladiator's Axe
 					moh(10, i(217360)),	-- Draconic Gladiator's Axestaff
@@ -925,10 +925,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		filter(RECIPES, {
 			-- #if AFTER TWW
 			n(221421, {	-- Eraneth <Draconic Combatant Recipes>
-				["timeline"] = { ADDED_11_0_0 },
-				["coord"] = { 43.6, 42.4, VALDRAKKEN },
-				["groups"] = sharedData({
-					["cost"] = { { "i", MOH, 3 } },
+				timeline = { ADDED_11_0_0 },
+				coord = { 43.6, 42.4, VALDRAKKEN },
+				groups = sharedData({
+					cost = { { "i", MOH, 3 } },
 				}, {
 			-- #endif
 					i(211588),	-- Design: Draconic Combatant's Jeweled Amulet (RECIPE!)
@@ -978,10 +978,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			-- #endif
 			n(197553, {	-- Fieldmaster Emberath
-				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["groups"] = sharedData({
-					["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
-					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+				coord = { 43.1, 42.4, VALDRAKKEN },
+				groups = sharedData({
+					cost = { { "i", 190450, 3 } },	-- 3x Awakened Ire
+					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				}, {
 					i(211611),	-- Technique: Draconic Combatant's Emblem (RECIPE!)
 					i(211610),	-- Technique: Draconic Combatant's Insignia of Alacrity (RECIPE!)

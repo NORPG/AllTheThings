@@ -2,21 +2,21 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_3_0 } }, {
 	inst(959, {	-- Invasion Points
-		-- ["sourceQuests"] = { },	-- TODO pretty sure a quest is required to unlock these
-		["coords"] = {
+		-- sourceQuests = { },	-- TODO pretty sure a quest is required to unlock these
+		coords = {
 			{ 38.8, 12.4, EREDATH },
 			{ 70.5, 38.8, EREDATH },
 			-- TODO more coords for possible spawns
 			-- then remove the maps for Krokuun and Antoran Wastes once coords added
 		},
-		["isRaid"] = true,
-		["groups"] = {
+		isRaid = true,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(12028, {	-- Envision Invasion Eradication
 					-- TODO: instead of maps on entire achieve, have coords/maps on each criteria as needed
-					["maps"] = {
+					maps = {
 						921,	-- Invasion Point: Aurinor
 						922,	-- Invasion Point: Bonich
 						923,	-- Invasion Point: Cen'gar
@@ -32,7 +32,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 						THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 					},
-					["crs"] = {
+					crs = {
 						125849,	-- Invasion Point: Aurinor
 						126547,	-- Invasion Point: Bonich
 						126120,	-- Invasion Point: Cen'gar
@@ -40,78 +40,78 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						125863,	-- Invasion Point: Sangua
 						126499,	-- Invasion Point: Val
 					},
-					["groups"] = {
+					groups = {
 						crit(37456, {	-- Mazgoroth
-							["crs"] = { 125137 },	-- Mazgoroth
+							crs = { 125137 },	-- Mazgoroth
 						}),
 						crit(37457, {	-- Gorgoloth
-							["crs"] = { 125148 },	-- Gorgoloth
+							crs = { 125148 },	-- Gorgoloth
 						}),
 						crit(37458, {	-- Dread Knight Zak'gal
-							["crs"] = { 125252 },	-- Dread Knight Zak'gal
+							crs = { 125252 },	-- Dread Knight Zak'gal
 						}),
 						crit(37459, {	-- Fel Lord Kaz'ral
-							["crs"] = { 125272 },	-- Fel Lord Kaz'ral
+							crs = { 125272 },	-- Fel Lord Kaz'ral
 						}),
 						crit(37460, {	-- Flamecaller Vezrah
-							["crs"] = { 125280 },	-- Flamecaller Vezrah
+							crs = { 125280 },	-- Flamecaller Vezrah
 						}),
 						crit(37461, {	-- Flameweaver Verathix
-							["crs"] = { 125314 },	-- Flameweaver Verathix
+							crs = { 125314 },	-- Flameweaver Verathix
 						}),
 						crit(37462, {	-- Harbinger Drel'nathar
-							["crs"] = { 125483 },	-- Harbinger Drel'nathar
+							crs = { 125483 },	-- Harbinger Drel'nathar
 						}),
 						crit(37463, {	-- Dreadbringer Valus
-							["crs"] = { 125527 },	-- Dreadbringer Valus
+							crs = { 125527 },	-- Dreadbringer Valus
 						}),
 						crit(37464, {	-- Malphazel
-							["crs"] = { 125578 },	-- Malphazel
+							crs = { 125578 },	-- Malphazel
 						}),
 						crit(37465, {	-- Vogrethar the Defiled
-							["crs"] = { 125587 },	-- Vogrethar the Defiled
+							crs = { 125587 },	-- Vogrethar the Defiled
 						}),
 						crit(37466, {	-- Vel'thrak the Punisher
-							["crs"] = { 125634 },	-- Vel'thrak the Punisher
+							crs = { 125634 },	-- Vel'thrak the Punisher
 						}),
 						crit(37467, {	-- Flamebringer Az'rothel
-							["crs"] = { 125655 },	-- Flamebringer Az'rothel
+							crs = { 125655 },	-- Flamebringer Az'rothel
 						}),
 						crit(37468, {	-- Baldrazar
-							["crs"] = { 125666 },	-- Baldrazar
+							crs = { 125666 },	-- Baldrazar
 						}),
 					},
 				}),
 				ach(12026, {	-- Invasion Obliteration
 					crit(37450, {	-- Occularus
-						["_npcs"] = { 124492 },	-- Occularus
+						_npcs = { 124492 },	-- Occularus
 					}),
 					crit(37451, {	-- Sotanathor
-						["_npcs"] = { 124555 },	-- Sotanathor
+						_npcs = { 124555 },	-- Sotanathor
 					}),
 					crit(37452, {	-- Matron Folnuna
-						["_npcs"] = { 124514 },	-- Matron Folnuna
+						_npcs = { 124514 },	-- Matron Folnuna
 					}),
 					crit(37453, {	-- Inquisitor Meto
-						["_npcs"] = { 124592 },	-- Inquisitor Meto
+						_npcs = { 124592 },	-- Inquisitor Meto
 					}),
 					crit(37454, {	-- Mistress Alluradel
-						["_npcs"] = { 124625 },	-- Mistress Alluradel
+						_npcs = { 124625 },	-- Mistress Alluradel
 					}),
 					crit(37455, {	-- Pit Lord Vilemus
-						["_npcs"] = { 124719 },	-- Pit Lord Vilemus
+						_npcs = { 124719 },	-- Pit Lord Vilemus
 					}),
-					i(282162, { ["timeline"] = { ADDED_12_1_5 } }),	-- Ceremonial Lightforged Standard (DECOR!)
+					i(282162, { timeline = { ADDED_12_1_5 } }),	-- Ceremonial Lightforged Standard (DECOR!)
 				}),
 			}),
 			e(2010, {	-- Matron Folnuna
-				["creatureID"] = 124514,	-- Matron Folnuna
-				["crs"] = { 127528 },	-- Greater Invasion Point: Matron Folnuna
-				["questID"] = 49169,
-				["modelScale"] = 0.65,
-				["isRaid"] = true,
-				["isWeekly"] = true,
-				["maps"] = {
+				creatureID = 124514,	-- Matron Folnuna
+				crs = { 127528 },	-- Greater Invasion Point: Matron Folnuna
+				questID = 49169,
+				modelScale = 0.65,
+				isRaid = true,
+				isWeekly = true,
+				maps = {
 					929,	-- Greater Invasion Point: Matron Folnuna
 					KROKUUN,
 					THE_VINDICAAR_KROKUUN_UPPER,
@@ -122,9 +122,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["groups"] = {
+				groups = {
 					i(207296, {	-- Grimoire of the Netherbound Imp (CI!)
-						["timeline"] = { ADDED_10_1_5 },
+						timeline = { ADDED_10_1_5 },
 					}),
 					i(152376),	-- Crown of Burning Resolve
 					i(152369),	-- Helm of the Vigilant Eye
@@ -143,13 +143,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(2011, {	-- Mistress Alluradel
-				["creatureID"] = 124625,	-- Mistress Alluradel
-				["crs"] = { 127536 },	-- Greater Invasion Point: Mistress Alluradel
-				["questID"] = 49167,
-				["modelScale"] = 0.95,
-				["isRaid"] = true,
-				["isWeekly"] = true,
-				["maps"] = {
+				creatureID = 124625,	-- Mistress Alluradel
+				crs = { 127536 },	-- Greater Invasion Point: Mistress Alluradel
+				questID = 49167,
+				modelScale = 0.95,
+				isRaid = true,
+				isWeekly = true,
+				maps = {
 					928,	-- Greater Invasion Point: Mistress Alluradel
 					KROKUUN,
 					THE_VINDICAAR_KROKUUN_UPPER,
@@ -160,7 +160,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["groups"] = {
+				groups = {
 					i(152351),	-- Mesmerizing Soul Hood
 					i(152354),	-- Accursed Defiler's Mantle
 					i(152363),	-- Fel-Spike Shoulderpads
@@ -178,13 +178,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(2012, {	-- Inquisitor Meto
-				["creatureID"] = 124592,	-- Inquisitor Meto
-				["crs"] = { 127535 },	-- Greater Invasion Point: Inquisitor Meto
-				["questID"] = 49166,
-				["modelScale"] = 0.85,
-				["isRaid"] = true,
-				["isWeekly"] = true,
-				["maps"] = {
+				creatureID = 124592,	-- Inquisitor Meto
+				crs = { 127535 },	-- Greater Invasion Point: Inquisitor Meto
+				questID = 49166,
+				modelScale = 0.85,
+				isRaid = true,
+				isWeekly = true,
+				maps = {
 					930,	-- Greater Invasion Point: Inquisitor Meto
 					KROKUUN,
 					THE_VINDICAAR_KROKUUN_UPPER,
@@ -195,7 +195,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["groups"] = {
+				groups = {
 					i(152361),	-- Horned Hood of Retaliation
 					i(152371),	-- Shoulderguards of Despondent Masses
 					i(152378),	-- Breastplate of Terminal End
@@ -213,13 +213,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(2013, {	-- Occularus
-				["creatureID"] = 124492,	-- Occularus
-				["crs"] = { 127533 },	-- Greater Invasion Point: Occularus
-				["questID"] = 49170,
-				["modelScale"] = 0.50,
-				["isRaid"] = true,
-				["isWeekly"] = true,
-				["maps"] = {
+				creatureID = 124492,	-- Occularus
+				crs = { 127533 },	-- Greater Invasion Point: Occularus
+				questID = 49170,
+				modelScale = 0.50,
+				isRaid = true,
+				isWeekly = true,
+				maps = {
 					932,	-- Greater Invasion Point: Occularus
 					KROKUUN,
 					THE_VINDICAAR_KROKUUN_UPPER,
@@ -230,7 +230,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["groups"] = {
+				groups = {
 					i(152369),	-- Helm of the Vigilant Eye
 					i(152351),	-- Mesmerizing Soul Hood
 					i(152354),	-- Accursed Defiler's Mantle
@@ -246,13 +246,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(2014, {	-- Sotanathor
-				["creatureID"] = 124555,	-- Sotanathor
-				["crs"] = { 127532 },	-- Greater Invasion Point: Sotanathor
-				["questID"] = 49171,
-				["modelScale"] = 0.75,
-				["isRaid"] = true,
-				["isWeekly"] = true,
-				["maps"] = {
+				creatureID = 124555,	-- Sotanathor
+				crs = { 127532 },	-- Greater Invasion Point: Sotanathor
+				questID = 49171,
+				modelScale = 0.75,
+				isRaid = true,
+				isWeekly = true,
+				maps = {
 					931,	-- Greater Invasion Point: Sotanathor
 					KROKUUN,
 					THE_VINDICAAR_KROKUUN_UPPER,
@@ -263,7 +263,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["groups"] = {
+				groups = {
 					i(152361),	-- Horned Hood of Retaliation
 					i(152379),	-- Spaulders of Vile Determination
 					i(152366),	-- Enthralling Chain Armor
@@ -281,13 +281,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(2015, {	-- Pit Lord Vilemus
-				["creatureID"] = 124719,	-- Pit Lord Vilemus
-				["crs"] = { 127531 },	-- Greater Invasion Point: Pit Lord Vilemus
-				["questID"] = 49168,
-				["modelScale"] = 1.15,
-				["isRaid"] = true,
-				["isWeekly"] = true,
-				["maps"] = {
+				creatureID = 124719,	-- Pit Lord Vilemus
+				crs = { 127531 },	-- Greater Invasion Point: Pit Lord Vilemus
+				questID = 49168,
+				modelScale = 1.15,
+				isRaid = true,
+				isWeekly = true,
+				maps = {
 					927,	-- Greater Invasion Point: Pit Lord Vilemus
 					KROKUUN,
 					THE_VINDICAAR_KROKUUN_UPPER,
@@ -298,7 +298,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["groups"] = {
+				groups = {
 					i(152376),	-- Crown of Burning Resolve
 					i(152363),	-- Fel-Spike Shoulderpads
 					i(152378),	-- Breastplate of Terminal End
@@ -315,8 +315,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			q(48982, {	-- Invasion Point: Aurinor
-				["icon"] = 1450455,
-				["maps"] = {
+				icon = 1450455,
+				maps = {
 					921,	-- Invasion Point: Aurinor
 					KROKUUN,
 					THE_VINDICAAR_KROKUUN_UPPER,
@@ -327,16 +327,16 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["repeatable"] = true,
-				["crs"] = { 125849 },	-- Invasion Point: Aurinor
-				["groups"] = {
+				repeatable = true,
+				crs = { 125849 },	-- Invasion Point: Aurinor
+				groups = {
 					i(153265),	-- Enclave Aspirant's Battleaxe
 					i(153261),	-- Forlorn Artificer's Hammer
 				},
 			}),
 			q(49099, {	-- Invasion Point: Bonich
-				["icon"] = 1450455,
-				["maps"] = {
+				icon = 1450455,
+				maps = {
 					922,	-- Invasion Point: Bonich
 					KROKUUN,
 					THE_VINDICAAR_KROKUUN_UPPER,
@@ -347,16 +347,16 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["repeatable"] = true,
-				["crs"] = { 126547 },	-- Invasion Point: Bonich
-				["groups"] = {
+				repeatable = true,
+				crs = { 126547 },	-- Invasion Point: Bonich
+				groups = {
 					i(153320),	-- Ardent Vindicator's Demolisher
 					i(153295),	-- Spectral Consul's Quickblade
 				},
 			}),
 			q(49098, {	-- Invasion Point: Cen'gar
-				["icon"] = 1450455,
-				["maps"] = {
+				icon = 1450455,
+				maps = {
 					923,	-- Invasion Point: Cen'gar
 					KROKUUN,
 					THE_VINDICAAR_KROKUUN_UPPER,
@@ -367,16 +367,16 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["repeatable"] = true,
-				["crs"] = { 126120 },	-- Invasion Point: Cen'gar
-				["groups"] = {
+				repeatable = true,
+				crs = { 126120 },	-- Invasion Point: Cen'gar
+				groups = {
 					i(153262),	-- Forlorn Artificer's Gavel
 					i(153300),	-- Militant Exarch's Saber
 				},
 			}),
 			q(49096, {	-- Invasion Point: Naigtal
-				["icon"] = 1450455,
-				["maps"] = {
+				icon = 1450455,
+				maps = {
 					924,	-- Invasion Point: Naigtal
 					KROKUUN,
 					THE_VINDICAAR_KROKUUN_UPPER,
@@ -387,16 +387,16 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["repeatable"] = true,
-				["crs"] = { 126593 },	-- Invasion Point: Naigtal
-				["groups"] = {
+				repeatable = true,
+				crs = { 126593 },	-- Invasion Point: Naigtal
+				groups = {
 					i(153264),	-- Enclave Aspirant's Splitter
 					i(153301),	-- Militant Exarch's Slicer
 				},
 			}),
 			q(49097, {	-- Invasion Point: Sangua
-				["icon"] = 1450455,
-				["maps"] = {
+				icon = 1450455,
+				maps = {
 					925,	-- Invasion Point: Sangua
 					KROKUUN,
 					THE_VINDICAAR_KROKUUN_UPPER,
@@ -407,16 +407,16 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["repeatable"] = true,
-				["crs"] = { 125863 },	-- Invasion Point: Sangua
-				["groups"] = {
+				repeatable = true,
+				crs = { 125863 },	-- Invasion Point: Sangua
+				groups = {
 					i(153307),	-- Oronaar Miner's Pickaxe
 					i(153297),	-- Spectral Consul's Broadsword
 				},
 			}),
 			q(49091, {	-- Invasion Point: Val
-				["icon"] = 1450455,
-				["maps"] = {
+				icon = 1450455,
+				maps = {
 					926,	-- Invasion Point: Val
 					KROKUUN,
 					THE_VINDICAAR_KROKUUN_UPPER,
@@ -427,9 +427,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["repeatable"] = true,
-				["crs"] = { 126499 },	-- Invasion Point: Val
-				["groups"] = {
+				repeatable = true,
+				crs = { 126499 },	-- Invasion Point: Val
+				groups = {
 					i(153258),	-- Forlorn Artificer's Mace
 					i(153254),	-- Isolon Anchorite's Mace
 				},
@@ -438,7 +438,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {
 	inst(959, {
 			-- secondary quests trigger multiple times throughout the week (aka if you complete it on tuesday and wednesday, both official + secondary quest pop both days).
 			-- secondary quests don't seem to be tied to which boss you kill OR loot (have gotten them when receiving rep tokens, unsullied tokens, blue drops, and even just AP/a grey item).

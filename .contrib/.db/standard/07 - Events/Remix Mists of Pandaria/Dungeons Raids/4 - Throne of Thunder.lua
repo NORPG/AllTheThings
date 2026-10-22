@@ -2,11 +2,11 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(RAIDS, {
 		inst(362, {	-- Throne of Thunder
-			["coord"] = { 63.4, 32.6, ISLE_OF_THUNDER },	-- Throne of Thunder
-			["maps"] = {
+			coord = { 63.4, 32.6, ISLE_OF_THUNDER },	-- Throne of Thunder
+			maps = {
 				508,	-- Overgrown Statuary
 				509,	-- Royal Amphitheater
 				510,	-- Forgotten Depths
@@ -16,130 +16,130 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				514,	-- Pinnacle of Storms
 				515,	-- Hidden Cell
 			},
-			["isRaid"] = true,
-			["groups"] = {
+			isRaid = true,
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(19955, {	-- Raid Finder: Throne of Thunder
 						crit(65724, {	-- Jin'rokh the Breaker
-							["_encounter"] = { 827, DIFFICULTY.LEGACY_RAID.FINDER },
+							_encounter = { 827, DIFFICULTY.LEGACY_RAID.FINDER },
 						}),
 						crit(65725, {	-- Horridon
-							["_encounter"] = { 819, DIFFICULTY.LEGACY_RAID.FINDER },
+							_encounter = { 819, DIFFICULTY.LEGACY_RAID.FINDER },
 						}),
 						crit(65726, {	-- Council of Elders
-							["_encounter"] = { 816, DIFFICULTY.LEGACY_RAID.FINDER },
+							_encounter = { 816, DIFFICULTY.LEGACY_RAID.FINDER },
 						}),
 						crit(65727, {	-- Tortos
-							["_encounter"] = { 825, DIFFICULTY.LEGACY_RAID.FINDER },
+							_encounter = { 825, DIFFICULTY.LEGACY_RAID.FINDER },
 						}),
 						crit(65728, {	-- Megaera
-							["_encounter"] = { 821, DIFFICULTY.LEGACY_RAID.FINDER },
+							_encounter = { 821, DIFFICULTY.LEGACY_RAID.FINDER },
 						}),
 						crit(65729, {	-- Ji-Kun
-							["_encounter"] = { 828, DIFFICULTY.LEGACY_RAID.FINDER },
+							_encounter = { 828, DIFFICULTY.LEGACY_RAID.FINDER },
 						}),
 						crit(65730, {	-- Durumu the Forgotten
-							["_encounter"] = { 818, DIFFICULTY.LEGACY_RAID.FINDER },
+							_encounter = { 818, DIFFICULTY.LEGACY_RAID.FINDER },
 						}),
 						crit(65731, {	-- Primordius
-							["_encounter"] = { 820, DIFFICULTY.LEGACY_RAID.FINDER },
+							_encounter = { 820, DIFFICULTY.LEGACY_RAID.FINDER },
 						}),
 						crit(65732, {	-- Dark Animus
-							["_encounter"] = { 824, DIFFICULTY.LEGACY_RAID.FINDER },
+							_encounter = { 824, DIFFICULTY.LEGACY_RAID.FINDER },
 						}),
 						crit(65733, {	-- Iron Qon
-							["_encounter"] = { 817, DIFFICULTY.LEGACY_RAID.FINDER },
+							_encounter = { 817, DIFFICULTY.LEGACY_RAID.FINDER },
 						}),
 						crit(65734, {	-- Twin Empyreans
-							["_encounter"] = { 829, DIFFICULTY.LEGACY_RAID.FINDER },
+							_encounter = { 829, DIFFICULTY.LEGACY_RAID.FINDER },
 						}),
 						crit(65735, {	-- Lei Shen
-							["_encounter"] = { 832, DIFFICULTY.LEGACY_RAID.FINDER },
+							_encounter = { 832, DIFFICULTY.LEGACY_RAID.FINDER },
 						}),
 					}),
 					ach(19956, {	-- Throne of Thunder
 						crit(65736, {	-- Jin'rokh the Breaker
-							["_encounter"] = { 827, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+							_encounter = { 827, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(65737, {	-- Horridon
-							["_encounter"] = { 819, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+							_encounter = { 819, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(65738, {	-- Council of Elders
-							["_encounter"] = { 816, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+							_encounter = { 816, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(65739, {	-- Tortos
-							["_encounter"] = { 825, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+							_encounter = { 825, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(65740, {	-- Megaera
-							["_encounter"] = { 821, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+							_encounter = { 821, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(65741, {	-- Ji-Kun
-							["_encounter"] = { 828, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+							_encounter = { 828, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(65742, {	-- Durumu the Forgotten
-							["_encounter"] = { 818, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+							_encounter = { 818, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(65743, {	-- Primordius
-							["_encounter"] = { 820, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+							_encounter = { 820, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(65744, {	-- Dark Animus
-							["_encounter"] = { 824, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+							_encounter = { 824, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(65745, {	-- Iron Qon
-							["_encounter"] = { 817, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+							_encounter = { 817, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(65746, {	-- Twin Empyreans
-							["_encounter"] = { 829, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+							_encounter = { 829, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 						crit(65747, {	-- Lei Shen
-							["_encounter"] = { 832, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+							_encounter = { 832, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 						}),
 					}),
 					ach(19957, {	-- Heroic: Throne of Thunder
 						crit(65748, {	-- Jin'rokh the Breaker
-							["_encounter"] = { 827, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+							_encounter = { 827, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(65749, {	-- Horridon
-							["_encounter"] = { 819, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+							_encounter = { 819, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(65750, {	-- Council of Elders
-							["_encounter"] = { 816, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+							_encounter = { 816, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(65751, {	-- Tortos
-							["_encounter"] = { 825, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+							_encounter = { 825, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(65752, {	-- Megaera
-							["_encounter"] = { 821, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+							_encounter = { 821, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(65753, {	-- Ji-Kun
-							["_encounter"] = { 828, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+							_encounter = { 828, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(65754, {	-- Durumu the Forgotten
-							["_encounter"] = { 818, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+							_encounter = { 818, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(65755, {	-- Primordius
-							["_encounter"] = { 820, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+							_encounter = { 820, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(65756, {	-- Dark Animus
-							["_encounter"] = { 824, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+							_encounter = { 824, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(65757, {	-- Iron Qon
-							["_encounter"] = { 817, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+							_encounter = { 817, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(65758, {	-- Twin Empyreans
-							["_encounter"] = { 829, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+							_encounter = { 829, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(65759, {	-- Lei Shen
-							["_encounter"] = { 832, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+							_encounter = { 832, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 						crit(65760, {	-- Ra-den
-							["_encounter"] = { 831, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+							_encounter = { 831, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 						}),
 					}),
 					ach(19921),	-- Shado-Pan Assault
 				}),
 				d(DIFFICULTY.LEGACY_RAID.FINDER, {
-					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
+					n(ARMOR, bubbleDown({ modID = 0 }, {
 						filter(CLOTH, {
 							-- PRIEST
 							i(213874),	-- Bracers of the Exorcist
@@ -250,7 +250,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215008),	-- Girdle of the Last Mogu
 						}),
 					})),
-					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
+					n(WEAPONS, bubbleDown({ modID = 0 }, {
 						i(216425),	-- Acid-Spine Bonebreaker
 						i(216427),	-- Acid-Spine Bonebreaker
 						i(215652),	-- Amun-Thoth, Sul's Spiritrender
@@ -321,13 +321,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					})),
 					header(HEADERS.Achievement, 8069, {	-- Last Stand of the Zandalari
 						e(827, {	-- Jin'rokh the Breaker
-							["crs"] = { 69465 },	-- Jin'rokh the Breaker
+							crs = { 69465 },	-- Jin'rokh the Breaker
 						}),
 						e(819, {	-- Horridon
-							["crs"] = { 68476 },	-- Horridon
+							crs = { 68476 },	-- Horridon
 						}),
 						e(816, {	-- Council of Elders
-							["crs"] = {
+							crs = {
 								69131,	-- Frost King Malakk
 								69132,	-- High Priestess Mar'li
 								69134,	-- Kazra'jin
@@ -337,10 +337,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					header(HEADERS.Achievement, 8070, {	-- Forgotten Depths
 						e(825, {	-- Tortos
-							["crs"] = { 67977 },	-- Tortos
+							crs = { 67977 },	-- Tortos
 						}),
 						e(821, {	-- Megaera
-							["crs"] = {
+							crs = {
 								70252,	-- Arcane Head <Head of Megaera>
 								70212,	-- Flaming Head <Head of Megaera>
 								70235,	-- Frozen Head <Head of Megaera>
@@ -348,18 +348,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							},
 						}),
 						e(828, {	-- Ji-Kun
-							["crs"] = { 69712 },	-- Ji-Kun
+							crs = { 69712 },	-- Ji-Kun
 						}),
 					}),
 					header(HEADERS.Achievement, 8071, {	-- Halls of Flesh-Shaping
 						e(818, {	-- Durumu the Forgotten
-							["crs"] = { 68036 },	-- Durumu the Forgotten
+							crs = { 68036 },	-- Durumu the Forgotten
 						}),
 						e(820, {	-- Primordius
-							["crs"] = { 69017 },	-- Primordius
+							crs = { 69017 },	-- Primordius
 						}),
 						e(824, {	-- Dark Animus
-							["crs"] = {
+							crs = {
 								69756,	-- Anima Orb
 								69427,	-- Dark Animus
 							},
@@ -367,7 +367,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					header(HEADERS.Achievement, 8072, {	-- Pinnacle of Storms
 						e(817, {	-- Iron Qon
-							["crs"] = {
+							crs = {
 								68081,	-- Dam'ren <The Frozen Sage>
 								68078,	-- Iron Qon <Mastern of Quilen>
 								68080,	-- Quet'zal <The Stormcaller>
@@ -375,18 +375,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							},
 						}),
 						e(829, {	-- Twin Empyreans
-							["crs"] = {
+							crs = {
 								68904,	-- Suen <Mistress of Anger>
 								68905,	-- Lu'lin <Mistress of Solitude>
 							},
 						}),
 						e(832, {	-- Lei Shen
-							["crs"] = { 68397 },	-- Lei Shen
+							crs = { 68397 },	-- Lei Shen
 						}),
 					}),
 				}),
 				d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
-					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
+					n(ARMOR, bubbleDown({ modID = 0 }, {
 						filter(CLOTH, {
 							-- MAGE
 							i(213811),	-- Wristwraps of the Chromatic Hydra
@@ -495,7 +495,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215016),	-- Warboots of the Last Mogu
 						}),
 					})),
-					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
+					n(WEAPONS, bubbleDown({ modID = 0 }, {
 						i(216426),	-- Acid-Spine Bonebreaker
 						i(215653),	-- Amun-Thoth, Sul's Spiritrender
 						i(216405),	-- Blade of the Sanguine Ritual
@@ -535,13 +535,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215992),	-- Zerat, Soulburner's Greatsword
 					})),
 					e(827, {	-- Jin'rokh the Breaker
-						["crs"] = { 69465 },	-- Jin'rokh the Breaker
+						crs = { 69465 },	-- Jin'rokh the Breaker
 					}),
 					e(819, {	-- Horridon
-						["crs"] = { 68476 },	-- Horridon
+						crs = { 68476 },	-- Horridon
 					}),
 					e(816, {	-- Council of Elders
-						["crs"] = {
+						crs = {
 							69131,	-- Frost King Malakk
 							69132,	-- High Priestess Mar'li
 							69134,	-- Kazra'jin
@@ -549,10 +549,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 					e(825, {	-- Tortos
-						["crs"] = { 67977 },	-- Tortos
+						crs = { 67977 },	-- Tortos
 					}),
 					e(821, {	-- Megaera
-						["crs"] = {
+						crs = {
 							70248,	-- Arcane Head <Head of Megaera>
 							70212,	-- Flaming Head <Head of Megaera>
 							70235,	-- Frozen Head <Head of Megaera>
@@ -561,22 +561,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 					e(828, {	-- Ji-Kun
-						["crs"] = { 69712 },	-- Ji-Kun
+						crs = { 69712 },	-- Ji-Kun
 					}),
 					e(818, {	-- Durumu the Forgotten
-						["crs"] = { 68036 },	-- Durumu the Forgotten
+						crs = { 68036 },	-- Durumu the Forgotten
 					}),
 					e(820, {	-- Primordius
-						["crs"] = { 69017 },	-- Primordius
+						crs = { 69017 },	-- Primordius
 					}),
 					e(824, {	-- Animus
-						["crs"] = {
+						crs = {
 							69756,	-- Anima Orb
 							69427,	-- Dark Animus
 						},
 					}),
 					e(817, {	-- Iron Qon
-						["crs"] = {
+						crs = {
 							68081,	-- Dam'ren <The Frozen Sage>
 							68078,	-- Iron Qon <Mastern of Quilen>
 							68080,	-- Quet'zal <The Stormcaller>
@@ -584,17 +584,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 					e(829, {	-- Twin Empyreans
-						["crs"] = {
+						crs = {
 							68904,	-- Suen <Mistress of Anger>
 							68905,	-- Lu'lin <Mistress of Solitude>
 						},
 					}),
 					e(832, {	-- Lei Shen
-						["crs"] = { 68397 },	-- Lei Shen
+						crs = { 68397 },	-- Lei Shen
 					}),
 				}),
 				d(DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC, {
-					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
+					n(ARMOR, bubbleDown({ modID = 0 }, {
 						filter(CLOTH, {
 							-- MAGE
 							i(213794),	-- Bracers of the Chromatic Hydra
@@ -703,7 +703,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215000),	-- Greatboots of the Last Mogu
 						}),
 					})),
-					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
+					n(WEAPONS, bubbleDown({ modID = 0 }, {
 						i(216432),	-- Acid-Spine Bonebreaker
 						i(215654),	-- Amun-Thoth, Sul's Spiritrender
 						i(216406),	-- Blade of the Sanguine Ritual
@@ -743,13 +743,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215990),	-- Zerat, Soulburner's Greatsword
 					})),
 					e(827, {	-- Jin'rokh the Breaker
-						["crs"] = { 69465 },	-- Jin'rokh the Breaker
+						crs = { 69465 },	-- Jin'rokh the Breaker
 					}),
 					e(819, {	-- Horridon
-						["crs"] = { 68476 },	-- Horridon
+						crs = { 68476 },	-- Horridon
 					}),
 					e(816, {	-- Council of Elders
-						["crs"] = {
+						crs = {
 							69131,	-- Frost King Malakk
 							69132,	-- High Priestess Mar'li
 							69134,	-- Kazra'jin
@@ -757,10 +757,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 					e(825, {	-- Tortos
-						["crs"] = { 67977 },	-- Tortos
+						crs = { 67977 },	-- Tortos
 					}),
 					e(821, {	-- Megaera
-						["crs"] = {
+						crs = {
 							70248,	-- Arcane Head <Head of Megaera>
 							70212,	-- Flaming Head <Head of Megaera>
 							70235,	-- Frozen Head <Head of Megaera>
@@ -769,22 +769,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 					e(828, {	-- Ji-Kun
-						["crs"] = { 69712 },	-- Ji-Kun
+						crs = { 69712 },	-- Ji-Kun
 					}),
 					e(818, {	-- Durumu the Forgotten
-						["crs"] = { 68036 },	-- Durumu the Forgotten
+						crs = { 68036 },	-- Durumu the Forgotten
 					}),
 					e(820, {	-- Primordius
-						["crs"] = { 69017 },	-- Primordius
+						crs = { 69017 },	-- Primordius
 					}),
 					e(824, {	-- Animus
-						["crs"] = {
+						crs = {
 							69756,	-- Anima Orb
 							69427,	-- Dark Animus
 						},
 					}),
 					e(817, {	-- Iron Qon
-						["crs"] = {
+						crs = {
 							68081,	-- Dam'ren <The Frozen Sage>
 							68078,	-- Iron Qon <Mastern of Quilen>
 							68080,	-- Quet'zal <The Stormcaller>
@@ -792,16 +792,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 					e(829, {	-- Twin Empyreans
-						["crs"] = {
+						crs = {
 							68904,	-- Suen <Mistress of Anger>
 							68905,	-- Lu'lin <Mistress of Solitude>
 						},
 					}),
 					e(832, {	-- Lei Shen
-						["crs"] = { 68397 },	-- Lei Shen
+						crs = { 68397 },	-- Lei Shen
 					}),
 					e(831, {	-- Ra-den
-						["crs"] = { 69473 },	-- Ra-den
+						crs = { 69473 },	-- Ra-den
 					}),
 				}),
 			},

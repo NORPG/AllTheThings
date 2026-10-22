@@ -69,7 +69,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		n(ACHIEVEMENTS, {
 			ach(42692, {	-- Broken Isles Dungeoneer
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					60846,	-- Assault on Violet Hold
 					60834,	-- Black Rook Hold
 					60843,	-- Court of Stars
@@ -81,15 +81,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					60840,	-- The Arcway
 					60822,	-- Vault of the Wardens
 				}},
-				["groups"] = {
+				groups = {
 					i(250403, {	-- Legion’s Holo-Communicator (DECOR!)
-						["timeline"] = { ADDED_11_2_7 },
+						timeline = { ADDED_11_2_7 },
 					}),
 				},
 			}),
 			ach(61115, {	-- Legion Dungeons: Might of the Legion
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					60846,	-- Assault on Violet Hold
 					60834,	-- Black Rook Hold
 					60822,	-- Vault of the Wardens
@@ -97,7 +97,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			}),
 			ach(61114, {	-- Legion Dungeons: Power of the Ancients
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					60843,	-- Court of Stars
 					60819,	-- Eye of Azshara
 					60840,	-- The Arcway
@@ -105,7 +105,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			}),
 			ach(61113, {	-- Legion Dungeons: Threats of the Isle
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					60837,	-- Darkheart Thicket
 					60831,	-- Halls of Valor
 					60828,	-- Maw of Souls
@@ -114,7 +114,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			}),
 			ach(42320, {	-- Legion Remix Dungeoneer
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					60846,	-- Assault on Violet Hold
 					60834,	-- Black Rook Hold
 					60849,	-- Cathedral of Eternal Night
@@ -132,7 +132,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			}),
 			ach(61073, {	-- Heroic Legion Remix Dungeoneer
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					60847,	-- Heroic: Assault on Violet Hold
 					60835,	-- Heroic: Black Rook Hold
 					60850,	-- Heroic: Cathedral of Eternal Night
@@ -150,7 +150,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			}),
 			ach(61074, {	-- Mythic Legion Remix Dungeoneer
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					60848,	-- Mythic: Assault on Violet Hold
 					60836,	-- Mythic: Black Rook Hold
 					60851,	-- Mythic: Cathedral of Eternal Night
@@ -170,7 +170,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			mapped(ach(42688)),	-- Timeworn Keystone Adept (L7)
 			mapped(ach(42689, {	-- Timeworn Keystone Master (L15)
 				i(251779, {	-- Fel Fountain (DECOR!)
-					["timeline"] = { ADDED_11_2_7 },
+					timeline = { ADDED_11_2_7 },
 				}),
 			})),
 			mapped(ach(42690, {	-- Timeworn Keystone Hero (L30)
@@ -235,47 +235,47 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			i(239247),	-- Bonus Experience
 		}),
 		inst(777, {	-- Assault on Violet Hold (Legion)
-			["coord"] = { 66.2, 68.3, LEGION_DALARAN },
-			["maps"] = { 732 },
-			["groups"] = {
+			coord = { 66.2, 68.3, LEGION_DALARAN },
+			maps = { 732 },
+			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(1697, {	-- Sael'orn
-						["cr"] = 102387,	-- Sael'orn
-						["groups"] = {
+						cr = 102387,	-- Sael'orn
+						groups = {
 							ach(60846),	-- Assault on Violet Hold
 						},
 					}),
 					e(1711, {	-- Fel Lord Betrug
-						["cr"] = 102446,	-- Fel Lord Betrug
-						["groups"] = {
+						cr = 102446,	-- Fel Lord Betrug
+						groups = {
 							ach(60846),	-- Assault on Violet Hold
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(1697, {	-- Sael'orn
-						["cr"] = 102387,	-- Sael'orn
-						["groups"] = {
+						cr = 102387,	-- Sael'orn
+						groups = {
 							ach(60847),	-- Heroic: Assault on Violet Hold
 						},
 					}),
 					e(1711, {	-- Fel Lord Betrug
-						["cr"] = 102446,	-- Fel Lord Betrug
-						["groups"] = {
+						cr = 102446,	-- Fel Lord Betrug
+						groups = {
 							ach(60847),	-- Heroic: Assault on Violet Hold
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.MYTHIC, {
 					e(1697, {	-- Sael'orn
-						["cr"] = 102387,	-- Sael'orn
-						["groups"] = {
+						cr = 102387,	-- Sael'orn
+						groups = {
 							ach(60848),	-- Mythic: Assault on Violet Hold
 						},
 					}),
 					e(1711, {	-- Fel Lord Betrug
-						["cr"] = 102446,	-- Fel Lord Betrug
-						["groups"] = {
+						cr = 102446,	-- Fel Lord Betrug
+						groups = {
 							ach(60848),	-- Mythic: Assault on Violet Hold
 						},
 					}),
@@ -283,38 +283,38 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		inst(740, {	-- Black Rook Hold
-			["coord"] = { 38.4, 50.8, VALSHARAH },
-			["maps"] = { 751, 752, 753, 754, 755, 756 },
-			["groups"] = {
+			coord = { 38.4, 50.8, VALSHARAH },
+			maps = { 751, 752, 753, 754, 755, 756 },
+			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(1672, {	-- Lord Kur'talos Ravencrest
-						["crs"] = {
+						crs = {
 							98970,	-- Dantalionax
 							98965,	-- Kur'talos Ravencrest
 						},
-						["groups"] = {
+						groups = {
 							ach(60834),	-- Black Rook Hold
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(1672, {	-- Lord Kur'talos Ravencrest
-						["crs"] = {
+						crs = {
 							98970,	-- Dantalionax
 							98965,	-- Kur'talos Ravencrest
 						},
-						["groups"] = {
+						groups = {
 							ach(60835),	-- Heroic: Black Rook Hold
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.MYTHIC, {
 					e(1672, {	-- Lord Kur'talos Ravencrest
-						["crs"] = {
+						crs = {
 							98970,	-- Dantalionax
 							98965,	-- Kur'talos Ravencrest
 						},
-						["groups"] = {
+						groups = {
 							ach(60836),	-- Mythic: Black Rook Hold
 						},
 					}),
@@ -322,29 +322,29 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		inst(900, {	-- Cathedral of Eternal Night
-			["coord"] = { 64.7, 16.6, BROKEN_SHORE },
-			["maps"] = { 845, 846, 847, 848, 849 },
-			["groups"] = {
+			coord = { 64.7, 16.6, BROKEN_SHORE },
+			maps = { 845, 846, 847, 848, 849 },
+			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(1878, {	-- Mephistroth
-						["cr"] = 120793,	-- Mephistroth
-						["groups"] = {
+						cr = 120793,	-- Mephistroth
+						groups = {
 							ach(60849),	-- Cathedral of Eternal Night
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(1878, {	-- Mephistroth
-						["cr"] = 120793,	-- Mephistroth
-						["groups"] = {
+						cr = 120793,	-- Mephistroth
+						groups = {
 							ach(60850),	-- Heroic: Cathedral of Eternal Night
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.MYTHIC, {
 					e(1878, {	-- Mephistroth
-						["cr"] = 120793,	-- Mephistroth
-						["groups"] = {
+						cr = 120793,	-- Mephistroth
+						groups = {
 							ach(60851),	-- Mythic: Cathedral of Eternal Night
 						},
 					}),
@@ -352,29 +352,29 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		inst(800, {	-- Court of Stars
-			["coord"] = { 51.0, 65.6, SURAMAR },
-			["maps"] = { 761, 762, 763 },
-			["groups"] = {
+			coord = { 51.0, 65.6, SURAMAR },
+			maps = { 761, 762, 763 },
+			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(1720, {	-- Advisor Melandrus
-						["cr"] = 104218,	-- Advisor Melandrus
-						["groups"] = {
+						cr = 104218,	-- Advisor Melandrus
+						groups = {
 							ach(60843),	-- Court of Stars
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(1720, {	-- Advisor Melandrus
-						["cr"] = 104218,	-- Advisor Melandrus
-						["groups"] = {
+						cr = 104218,	-- Advisor Melandrus
+						groups = {
 							ach(60844),	-- Heroic: Court of Stars
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.MYTHIC, {
 					e(1720, {	-- Advisor Melandrus
-						["cr"] = 104218,	-- Advisor Melandrus
-						["groups"] = {
+						cr = 104218,	-- Advisor Melandrus
+						groups = {
 							ach(60845),	-- Mythic: Court of Stars
 						},
 					}),
@@ -382,29 +382,29 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		inst(762, {	-- Darkheart Thicket
-			["coord"] = { 59.0, 31.3, VALSHARAH },
-			["maps"] = { 733 },
-			["groups"] = {
+			coord = { 59.0, 31.3, VALSHARAH },
+			maps = { 733 },
+			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(1657, {	-- Shade of Xavius
-						["cr"] = 99192,	-- Shade of Xavius
-						["groups"] = {
+						cr = 99192,	-- Shade of Xavius
+						groups = {
 							ach(60837),	-- Darkheart Thicket
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(1657, {	-- Shade of Xavius
-						["cr"] = 99192,	-- Shade of Xavius
-						["groups"] = {
+						cr = 99192,	-- Shade of Xavius
+						groups = {
 							ach(60838),	-- Heroic: Darkheart Thicket
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.MYTHIC, {
 					e(1657, {	-- Shade of Xavius
-						["cr"] = 99192,	-- Shade of Xavius
-						["groups"] = {
+						cr = 99192,	-- Shade of Xavius
+						groups = {
 							ach(60839),	-- Mythic: Darkheart Thicket
 						},
 					}),
@@ -412,29 +412,29 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		inst(716, {	-- Eye of Azshara
-			["coord"] = { 61.2, 41.1, AZSUNA },
-			["maps"] = { 713 },
-			["groups"] = {
+			coord = { 61.2, 41.1, AZSUNA },
+			maps = { 713 },
+			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(1492, {	-- Wrath of Azshara
-						["cr"] = 96028,	-- Wrath of Azshara
-						["groups"] = {
+						cr = 96028,	-- Wrath of Azshara
+						groups = {
 							ach(60819),	-- Eye of Azshara
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(1492, {	-- Wrath of Azshara
-						["cr"] = 96028,	-- Wrath of Azshara
-						["groups"] = {
+						cr = 96028,	-- Wrath of Azshara
+						groups = {
 							ach(60820),	-- Heroic: Eye of Azshara
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.MYTHIC, {
 					e(1492, {	-- Wrath of Azshara
-						["cr"] = 96028,	-- Wrath of Azshara
-						["groups"] = {
+						cr = 96028,	-- Wrath of Azshara
+						groups = {
 							ach(60821),	-- Mythic: Eye of Azshara
 						},
 					}),
@@ -442,29 +442,29 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		inst(721, {	-- Halls of Valor
-			["coord"] = { 70.4, 69.4, STORMHEIM },
-			["maps"] = { 703, 704, 705 },
-			["groups"] = {
+			coord = { 70.4, 69.4, STORMHEIM },
+			maps = { 703, 704, 705 },
+			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(1489, {	-- Odyn
-						["creatureID"] = 95676,	-- Odyn
-						["groups"] = {
+						creatureID = 95676,	-- Odyn
+						groups = {
 							ach(60831),	-- Halls of Valor
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(1489, {	-- Odyn
-						["creatureID"] = 95676,	-- Odyn
-						["groups"] = {
+						creatureID = 95676,	-- Odyn
+						groups = {
 							ach(60832),	-- Heroic: Halls of Valor
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.MYTHIC, {
 					e(1489, {	-- Odyn
-						["creatureID"] = 95676,	-- Odyn
-						["groups"] = {
+						creatureID = 95676,	-- Odyn
+						groups = {
 							ach(60833),	-- Mythic: Halls of Valor
 						},
 					}),
@@ -472,29 +472,29 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		inst(727, {	-- Maw of Souls
-			["coord"] = { 52.5, 45.3, STORMHEIM },
-			["maps"] = { 706, 707, 708 },
-			["groups"] = {
+			coord = { 52.5, 45.3, STORMHEIM },
+			maps = { 706, 707, 708 },
+			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(1663, {	-- Helya
-						["cr"] = 96759,	-- Helya
-						["groups"] = {
+						cr = 96759,	-- Helya
+						groups = {
 							ach(60828),	-- Maw of Souls
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(1663, {	-- Helya
-						["cr"] = 96759,	-- Helya
-						["groups"] = {
+						cr = 96759,	-- Helya
+						groups = {
 							ach(60829),	-- Heroic: Maw of Souls
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.MYTHIC, {
 					e(1663, {	-- Helya
-						["cr"] = 96759,	-- Helya
-						["groups"] = {
+						cr = 96759,	-- Helya
+						groups = {
 							ach(60830),	-- Mythic: Maw of Souls
 						},
 					}),
@@ -502,29 +502,29 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		inst(767, {	-- Neltharion's Lair
-			["coord"] = { 49.5, 68.5, HIGHMOUNTAIN },
-			["maps"] = { 731 },
-			["groups"] = {
+			coord = { 49.5, 68.5, HIGHMOUNTAIN },
+			maps = { 731 },
+			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(1687, {	-- Dargrul
-						["cr"] = 91007,	-- Dargrul
-						["groups"] = {
+						cr = 91007,	-- Dargrul
+						groups = {
 							ach(60825),	-- Neltharion's Lair
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(1687, {	-- Dargrul
-						["cr"] = 91007,	-- Dargrul
-						["groups"] = {
+						cr = 91007,	-- Dargrul
+						groups = {
 							ach(60826),	-- Heroic: Neltharion's Lair
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.MYTHIC, {
 					e(1687, {	-- Dargrul
-						["cr"] = 91007,	-- Dargrul
-						["groups"] = {
+						cr = 91007,	-- Dargrul
+						groups = {
 							ach(60827),	-- Mythic: Neltharion's Lair
 						},
 					}),
@@ -532,24 +532,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		inst(860, {	-- Return to Karazhan
-			["coord"] = { 46.7, 70.1, DEADWIND_PASS },
-			["maps"] = {
+			coord = { 46.7, 70.1, DEADWIND_PASS },
+			maps = {
 				815, 816, 817, 818, 819, 820, 821, 822,	-- Upper
 				809, 810, 811, 812, 813, 814,	-- Lower
 			},
-			["groups"] = {
+			groups = {
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(1838, {	-- Viz'aduum the Watcher
-						["cr"] = 114790,	-- Viz'aduum the Watcher
-						["groups"] = {
+						cr = 114790,	-- Viz'aduum the Watcher
+						groups = {
 							ach(60854),	-- Heroic: Return to Karazhan
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.MYTHIC, {
 					e(1838, {	-- Viz'aduum the Watcher
-						["cr"] = 114790,	-- Viz'aduum the Watcher
-						["groups"] = {
+						cr = 114790,	-- Viz'aduum the Watcher
+						groups = {
 							ach(60855),	-- Mythic: Return to Karazhan
 						},
 					}),
@@ -557,21 +557,21 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		inst(945, {	-- Seat of the Triumvirate
-			["coord"] = { 22.2, 55.9, EREDATH },
-			["maps"] = { 903 },
-			["groups"] = {
+			coord = { 22.2, 55.9, EREDATH },
+			maps = { 903 },
+			groups = {
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(1982, {	-- L'ura
-						["cr"] = 124729,	-- L'ura
-						["groups"] = {
+						cr = 124729,	-- L'ura
+						groups = {
 							ach(60852),	-- Heroic: Seat of the Triumvirate
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.MYTHIC, {
 					e(1982, {	-- L'ura
-						["cr"] = 122314,	-- L'ura
-						["groups"] = {
+						cr = 122314,	-- L'ura
+						groups = {
 							ach(60853),	-- Mythic: Seat of the Triumvirate
 						},
 					}),
@@ -579,29 +579,29 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		inst(726, {	-- The Arcway
-			["coord"] = { 49.5, 68.5, HIGHMOUNTAIN },
-			["maps"] = { 749 },
-			["groups"] = {
+			coord = { 49.5, 68.5, HIGHMOUNTAIN },
+			maps = { 749 },
+			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(1501, {	-- Advisor Vandros
-						["cr"] = 98208,	-- Advisor Vandros
-						["groups"] = {
+						cr = 98208,	-- Advisor Vandros
+						groups = {
 							ach(60840),	-- The Arcway
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(1501, {	-- Advisor Vandros
-						["cr"] = 98208,	-- Advisor Vandros
-						["groups"] = {
+						cr = 98208,	-- Advisor Vandros
+						groups = {
 							ach(60841),	-- Heroic: The Arcway
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.MYTHIC, {
 					e(1501, {	-- Advisor Vandros
-						["cr"] = 98208,	-- Advisor Vandros
-						["groups"] = {
+						cr = 98208,	-- Advisor Vandros
+						groups = {
 							ach(60842),	-- Mythic: The Arcway
 						},
 					}),
@@ -609,29 +609,29 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		inst(707, {	-- Vault of the Wardens
-			["coord"] = { 48.0, 82.1, AZSUNA },
-			["maps"] = { 710, 711, 712 },
-			["groups"] = {
+			coord = { 48.0, 82.1, AZSUNA },
+			maps = { 710, 711, 712 },
+			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(1470, {	-- Cordana Felsong
-						["cr"] = 95888,	-- Cordana Felsong
-						["groups"] = {
+						cr = 95888,	-- Cordana Felsong
+						groups = {
 							ach(60822),	-- Vault of the Wardens
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(1470, {	-- Cordana Felsong
-						["cr"] = 95888,	-- Cordana Felsong
-						["groups"] = {
+						cr = 95888,	-- Cordana Felsong
+						groups = {
 							ach(60823),	-- Heroic: Vault of the Wardens
 						},
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.MYTHIC, {
 					e(1470, {	-- Cordana Felsong
-						["cr"] = 95888,	-- Cordana Felsong
-						["groups"] = {
+						cr = 95888,	-- Cordana Felsong
+						groups = {
 							ach(60824),	-- Mythic: Vault of the Wardens
 						},
 					}),

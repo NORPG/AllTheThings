@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		n(ACHIEVEMENTS, {
 			ach(41133, {	-- Isle Remember You
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					41050,	-- A Choir of Citrines
 					41045,	-- A Song of Secrets
 					41046,	-- Clean Up on Isle Siren
@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					41042,	-- Siren-ity Now!
 					41131,	-- Treasures of the Storm
 				}},
-				["groups"] = {
+				groups = {
 					i(232991),	-- The Breaker's Song (MOUNT!)
 				},
 			}),
@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			ach(41042),	-- Siren-ity Now! (automated!)
 			ach(41131, {	-- Treasures of the Storm
-				["providers"] = {
+				providers = {
 					{ "o", 474822 },	-- Runed Storm Cache (non storm id)
 					{ "o", 500407 },	-- Runed Storm Cache (storm id)
 				},

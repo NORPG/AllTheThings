@@ -28,9 +28,9 @@ local ICOKE_PROMOTION = createHeader({
 	},
 });
 
-root(ROOTS.Promotions, n(ICOKE_PROMOTION, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
-	["timeline"] = { ADDED_1_12_1 },
-	["groups"] = {
+root(ROOTS.Promotions, n(ICOKE_PROMOTION, bubbleDown({ u = REMOVED_FROM_GAME }, {
+	timeline = { ADDED_1_12_1 },
+	groups = {
 		i(22781),	-- Poley (PET!)
 		i(22780),	-- Terky (PET!)
 		i(19055),	-- Tiny Green Dragon (PET!)

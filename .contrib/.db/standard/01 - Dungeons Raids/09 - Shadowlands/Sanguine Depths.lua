@@ -2,23 +2,23 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1189, {	-- Sanguine Depths
-		["coord"] = { 51.0, 30.1, REVENDRETH },
-		["maps"] = {
+		coord = { 51.0, 30.1, REVENDRETH },
+		maps = {
 			1675,	-- Depths of Despair
 			1676,	-- Amphitheater of Sorrow
 		},
-		["groups"] = {
+		groups = {
 			n(QUESTS, {
 				q(60502,{	-- Sanguine Depths: An Ally Within
-					["provider"] = { "n", 166689 },	-- General Draven
+					provider = { "n", 166689 },	-- General Draven
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2388, {	-- Kryxis the Voracious
-					["crs"] = { 162100 },	-- Kryxis the Voracious
-					["groups"] = {
+					crs = { 162100 },	-- Kryxis the Voracious
+					groups = {
 						-- Legendaries
 						i(183234),	-- Memory of a Luffa-Infused Embrace
 						i(183297),	-- Memory of Xuen
@@ -38,8 +38,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2415, {	-- Executor Tarvold
-					["crs"] = { 162103 },	-- Executor Tarvold
-					["groups"] = {
+					crs = { 162103 },	-- Executor Tarvold
+					groups = {
 						-- Conduits
 						i(182755),	-- Ashen Remains
 						i(182203),	-- Debilitating Malady
@@ -56,8 +56,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2421, {	-- Grand Proctor Beryllia
-					["crs"] = { 162102 },	-- Grand Proctor Beryllia
-					["groups"] = {
+					crs = { 162102 },	-- Grand Proctor Beryllia
+					groups = {
 						-- Legendaries
 						i(183323),	-- Memory of Flash Concentration
 						i(183303),	-- Memory of Maraad's Dying Breath
@@ -77,11 +77,11 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2407, {	-- General Kaal
-					["crs"] = {
+					crs = {
 						162133,	-- General Kaal (during gauntlet)
 						162099,	-- General Kaal
 					},
-					["groups"] = {
+					groups = {
 						ach(14197),	-- Sanguine Depths
 						-- Legendaries
 						i(183358),	-- Memory of an Earthen Harmony
@@ -105,11 +105,11 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2407, {	-- General Kaal
-					["crs"] = {
+					crs = {
 						162133,	-- General Kaal (during gauntlet)
 						162099,	-- General Kaal
 					},
-					["groups"] = {
+					groups = {
 						ach(14198),	-- Heroic: Sanguine Depths
 					},
 				}),
@@ -119,23 +119,23 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					ach(14290),	-- I Only Have Eyes For You
 				}),
 				e(2415, {	-- Executor Tarvold
-					["crs"] = { 162103 },	-- Executor Tarvold
-					["groups"] = {
+					crs = { 162103 },	-- Executor Tarvold
+					groups = {
 						ach(14286),	-- Residue Evil
 					},
 				}),
 				e(2421, {	-- Grand Proctor Beryllia
-					["crs"] = { 162102 },	-- Grand Proctor Beryllia
-					["groups"] = {
+					crs = { 162102 },	-- Grand Proctor Beryllia
+					groups = {
 						i(180591),	-- Raw Emotion (PET!)
 					},
 				}),
 				e(2407, {	-- General Kaal
-					["crs"] = {
+					crs = {
 						162133,	-- General Kaal (during gauntlet)
 						162099,	-- General Kaal
 					},
-					["groups"] = {
+					groups = {
 						ach(14199),	-- Mythic: Sanguine Depths
 						ach(14200),	-- Mythic: Sanguine Depths Guild Run
 						ach(14289),	-- Kaal-ed Shot

@@ -4,406 +4,406 @@
 
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 	expansion(EXPANSION.BFA,{
-		["forcetimeline"] = { ADDED_8_0_1, REMOVED_8_0_1 },
-		["lvl"] = 110,
+		forcetimeline = { ADDED_8_0_1, REMOVED_8_0_1 },
+		lvl = 110,
 	}),
 	expansion(EXPANSION.BFA, {
 		n(QUESTS, {
 			-- Attaching the quests to each zone that is involved in the "War of the Thorns" Campaign. Excluding Undercity, Stormwind and Northern Barrens due to only one quest taking place in these zones and it's not relevant to link for just the one.
-			["maps"] = {
+			maps = {
 				ASHENVALE,
 				DARNASSUS,
 				DARKSHORE,
 			},
-			["groups"] = {	-- [Note: Do not adjust ordering.]
+			groups = {	-- [Note: Do not adjust ordering.]
 				-- ALLIANCE PART I
 				q(52062, {	-- A Disturbancee in Ashenvale
-					["sourceQuest"] = 52060,	-- The Horde Uprising
-					["qg"] = 139798,	-- Master Mathias Shaw
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52060,	-- The Horde Uprising
+					qg = 139798,	-- Master Mathias Shaw
+					races = ALLIANCE_ONLY,
 				}),
 				q(52279, {	-- A Looming Threat [Note: Final Quest for Part 1]
-					["sourceQuest"] = 52257,	-- "Rock" The World
-					["qg"] = 134578,	-- Captain Delaryn Summermoon
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52257,	-- "Rock" The World
+					qg = 134578,	-- Captain Delaryn Summermoon
+					races = ALLIANCE_ONLY,
 				}),
 				q(52058, {	-- A Short-Lived Peace
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(157832),	-- A Royal Summons (QI!)
 					},
 				}),
 				q(52116, {	-- A Soft Glow
-					["sourceQuests"] = {
+					sourceQuests = {
 						52072,	-- The Light of Elune
 						53616,	-- Knives of the Forsaken
 					},
-					["qg"] = 134578,	-- Captain Delaryn Summermoon
-					["races"] = ALLIANCE_ONLY,
+					qg = 134578,	-- Captain Delaryn Summermoon
+					races = ALLIANCE_ONLY,
 				}),
 				q(53619, {	-- Azerite Denial
-					["sourceQuest"] = 52242,	-- The Wake of Something New
-					["qg"] = 134578,	-- Captain Delaryn Summermoon
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52242,	-- The Wake of Something New
+					qg = 134578,	-- Captain Delaryn Summermoon
+					races = ALLIANCE_ONLY,
 				}),
 				q(53551, {	-- Elves in the Machine
-					["sourceQuest"] = 52240,	-- Garden Grove
-					["qg"] = 140728,	-- Captain Delaryn Silvermoon
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52240,	-- Garden Grove
+					qg = 140728,	-- Captain Delaryn Silvermoon
+					races = ALLIANCE_ONLY,
 				}),
 				q(52245, {	-- Enraged Furblogs
-					["sourceQuest"] = 52240,	-- Garden Grove
-					["qg"] = 33072,	-- Onu <Ancient of Lore>
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52240,	-- Garden Grove
+					qg = 33072,	-- Onu <Ancient of Lore>
+					races = ALLIANCE_ONLY,
 				}),
 				q(52240, {	-- Garden Grove
-					["sourceQuests"] = {
+					sourceQuests = {
 						52234,	-- Hidden Amongst the Leaves
 						53617,	-- Mercy for the Mad
 					},
-					["qg"] = 134578,	-- Captain  Delaryn Summermoon
-					["races"] = ALLIANCE_ONLY,
+					qg = 134578,	-- Captain  Delaryn Summermoon
+					races = ALLIANCE_ONLY,
 				}),
 				q(52234, {	-- Hidden Amongst the Leaves
-					["sourceQuest"] = 52116,	-- A Soft Glow
-					["qg"] = 133693,	-- Malfurion Stormrage
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52116,	-- A Soft Glow
+					qg = 133693,	-- Malfurion Stormrage
+					races = ALLIANCE_ONLY,
 				}),
 				q(53616, {	-- Knives of the Forsaken
-					["sourceQuest"] = 52062,	-- A Disturbancee in Ashenvale
-					["qg"] = 134578,	-- Captain Delaryn Summermoon
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52062,	-- A Disturbancee in Ashenvale
+					qg = 134578,	-- Captain Delaryn Summermoon
+					races = ALLIANCE_ONLY,
 				}),
 				q(52197, {	-- Long Away
-					["sourceQuest"] = 52257,	-- "Rock" The World
-					["qg"] = 133693,	-- Malfurion Stormrage
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52257,	-- "Rock" The World
+					qg = 133693,	-- Malfurion Stormrage
+					races = ALLIANCE_ONLY,
 				}),
 				q(52256, {	-- Malfurion Returns
-					["sourceQuests"] = {
+					sourceQuests = {
 						53619,	-- Azerite Denial
 						53621,	-- No Horde Allowed
 					},
-					["qg"] = 134578,	-- Captain Delaryn Summermoon
-					["races"] = ALLIANCE_ONLY,
+					qg = 134578,	-- Captain Delaryn Summermoon
+					races = ALLIANCE_ONLY,
 				}),
 				q(52060, {	-- The Horde Uprising
-					["sourceQuest"] = 52058,	-- A Short-Lived Pace
-					["qg"] = 107574,	-- Anduin Wrynn
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					sourceQuest = 52058,	-- A Short-Lived Pace
+					qg = 107574,	-- Anduin Wrynn
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(157832),	-- A Royal Summons (QI!)
 					},
 				}),
 				q(53617, {	-- Mercy for the Mad
-					["sourceQuest"] = 52116,	-- A Soft Glow
-					["qg"] = 133693,	-- Malfurion Stormrage
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52116,	-- A Soft Glow
+					qg = 133693,	-- Malfurion Stormrage
+					races = ALLIANCE_ONLY,
 				}),
 				q(53621, {	-- No Horde Allowed
-					["sourceQuest"] = 52242,	-- The Wake of Something New
-					["qg"] = 134578,	-- Captain Delaryn Summermoon
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52242,	-- The Wake of Something New
+					qg = 134578,	-- Captain Delaryn Summermoon
+					races = ALLIANCE_ONLY,
 				}),
 				q(52257, {	-- "Rock" The World
-					["sourceQuest"] = 52256,	-- Malufrion Returns
-					["qg"] = 133693,	-- Malfurion Stormrage
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52256,	-- Malufrion Returns
+					qg = 133693,	-- Malfurion Stormrage
+					races = ALLIANCE_ONLY,
 				}),
 				q(52072, {	-- The Light of Elune
-					["sourceQuest"] = 52062,	-- A Disturbancee in Ashenvale
-					["qg"] = 134578,	-- Captain Delaryn Summermoon
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52062,	-- A Disturbancee in Ashenvale
+					qg = 134578,	-- Captain Delaryn Summermoon
+					races = ALLIANCE_ONLY,
 				}),
 				q(52242, {	-- The Wake of Something New
-					["sourceQuests"] = {
+					sourceQuests = {
 						52245,	-- Enraged Furblogs
 						53551,	-- Elves in the Machine
 					},
-					["qg"] = 33072,	-- Onu <Ancient of Lore>
-					["races"] = ALLIANCE_ONLY,
+					qg = 33072,	-- Onu <Ancient of Lore>
+					races = ALLIANCE_ONLY,
 				}),
 				-- ALLIANCE PART II [LUCETIA: UNORGANIZED DUE TO WAITING FOR LAUNCH TO VERIFY IN THE ORDER IT ORIGINALLY WAS]
 				q(52973, {	-- A Threat From the North
-					["sourceQuest"] = 52279,	-- A Looming Threat
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52279,	-- A Looming Threat
+					races = ALLIANCE_ONLY,
 				}),
 				q(52974, {	-- Rescue Effort
-					["sourceQuest"] = 52973,	-- A Threat From the North
-					["qg"] = 140877,	-- Malfurion Stormrage
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52973,	-- A Threat From the North
+					qg = 140877,	-- Malfurion Stormrage
+					races = ALLIANCE_ONLY,
 				}),
 				q(53622, {	-- Defending Lor'danel
-					["sourceQuest"] = 52973,	-- A Threat From the North
-					["qg"] = 140877,	-- Malfurion Stormrage
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52973,	-- A Threat From the North
+					qg = 140877,	-- Malfurion Stormrage
+					races = ALLIANCE_ONLY,
 				}),
 				q(52975, {	-- Action This Day
-					["sourceQuest"] = 52973,	-- A Threat From the North
-					["qg"] = 134578,	-- Captain Delaryn Summermoon
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 52973,	-- A Threat From the North
+					qg = 134578,	-- Captain Delaryn Summermoon
+					races = ALLIANCE_ONLY,
 				}),
 				q(52977, {	-- The Guidance of Our Shan'do
-					["sourceQuests"] = {
+					sourceQuests = {
 						52974,	-- Rescue Effort
 						53622,	-- Defending Lor'danel
 						52975,	-- Action This Day
 					},
-					["qg"] = 134578,	-- Captain Delaryn Summermoon
-					["races"] = ALLIANCE_ONLY,
+					qg = 134578,	-- Captain Delaryn Summermoon
+					races = ALLIANCE_ONLY,
 				}),
 				q(53095, {	-- A Flicker of Hope
-					["description"] = "You do not have to save all 982 people. Once timer runs out this quest is removed and next one is auto-accepted.",
-					["sourceQuest"] = 52977,	-- The Guidance of Our Shan'do
-					["qg"] = 142978,	-- Mia Greymane <Queen of Gilneas>
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					description = "You do not have to save all 982 people. Once timer runs out this quest is removed and next one is auto-accepted.",
+					sourceQuest = 52977,	-- The Guidance of Our Shan'do
+					qg = 142978,	-- Mia Greymane <Queen of Gilneas>
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(163189),	-- Bucket of Moonwell Water (QI!)
 					},
 				}),
 				q(53310, {	-- From the Ashes… [Note: Final Quest for Part 2]
-					["description"] = "Upon either failing or completing \"A Flicker of Hope\" this quest is auto-accepted",
-					["sourceQuest"] = 53095,	-- A Flicker of Hope
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					description = "Upon either failing or completing \"A Flicker of Hope\" this quest is auto-accepted",
+					sourceQuest = 53095,	-- A Flicker of Hope
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(163127),	-- Teldrassil Hippogryph (MOUNT!)
 					},
 				}),
 				-- Horde Part I
 				q(53627, {	-- A Gift of Azerite
-					["sourceQuests"] = {
+					sourceQuests = {
 						53608,	-- Fueling the Horde War Machine
 						53609,	-- A Very Clear Message
 					},
-					["qg"] = 144346,	-- Jux Burstkix
-					["races"] = HORDE_ONLY,
+					qg = 144346,	-- Jux Burstkix
+					races = HORDE_ONLY,
 				}),
 				q(53605, {	-- A Glaive Misunderstanding
-					["sourceQuest"] = 50880,	-- An Unstoppable Force
-					["qg"] = 134554,	-- Lady Sylvanas Windrunner
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					sourceQuest = 50880,	-- An Unstoppable Force
+					qg = 134554,	-- Lady Sylvanas Windrunner
+					races = HORDE_ONLY,
+					groups = {
 						i(158937),	-- Everburning Torch (QI!)
 					},
 				}),
 				q(52806, {	-- A Looming Threat [Note: Final Quest for Part 1]
-					["sourceQuest"] = 52438,	-- A Wild Ride
-					["qg"] = 134554,	-- Lady Sylvanas Windrunner
-					["races"] = HORDE_ONLY,
+					sourceQuest = 52438,	-- A Wild Ride
+					qg = 134554,	-- Lady Sylvanas Windrunner
+					races = HORDE_ONLY,
 				}),
 				q(50646, {	-- A Quick Diversion
-					["sourceQuest"] = 50642,	-- The Warchief Commands
-					["qg"] = 134574,	-- High Overlord Saurfang
-					["races"] = HORDE_ONLY,
+					sourceQuest = 50642,	-- The Warchief Commands
+					qg = 134574,	-- High Overlord Saurfang
+					races = HORDE_ONLY,
 				}),
 				q(50837, {	-- A Quick Flyover
-					["sourceQuest"] = 50823,	-- Ripe for the Picking
-					["qg"] = 134554,	-- Lady Sylvanas Windrunner
-					["races"] = HORDE_ONLY,
+					sourceQuest = 50823,	-- Ripe for the Picking
+					qg = 134554,	-- Lady Sylvanas Windrunner
+					races = HORDE_ONLY,
 				}),
 				q(50738, {	-- A Timely Arrival
-					["sourceQuest"] = 50647,	-- Everybody Has a Price
-					["qg"] = 134573,	-- Lorash
-					["races"] = HORDE_ONLY,
+					sourceQuest = 50647,	-- Everybody Has a Price
+					qg = 134573,	-- Lorash
+					races = HORDE_ONLY,
 				}),
 				q(53609, {	-- A Very Clear Message
-					["sourceQuest"] = 52437,	-- The Start of Something Good
-					["qg"] = 144346,	-- Jux Burstkix
-					["races"] = HORDE_ONLY,
+					sourceQuest = 52437,	-- The Start of Something Good
+					qg = 144346,	-- Jux Burstkix
+					races = HORDE_ONLY,
 				}),
 				q(53606, {	-- Aggressive Inspiration
-					["sourceQuest"] = 52436,	-- The Blackwood Den
-					["qg"] = 135003,	-- Lady Sylvanas Windrunner
-					["races"] = HORDE_ONLY,
+					sourceQuest = 52436,	-- The Blackwood Den
+					qg = 135003,	-- Lady Sylvanas Windrunner
+					races = HORDE_ONLY,
 				}),
 				q(52438, {	-- A Wild Ride
-					["sourceQuest"] = 53627,	-- A Gift of Azerite
-					["qg"] = 135501,	-- Zarvik Blastwix
-					["races"] = HORDE_ONLY,
+					sourceQuest = 53627,	-- A Gift of Azerite
+					qg = 135501,	-- Zarvik Blastwix
+					races = HORDE_ONLY,
 				}),
 				q(50880, {	-- An Unstoppable Force
-					["sourceQuest"] = 50837,	-- A Quick Flyover
-					["qg"] = 134554,	-- Lady Sylvanas Windrunner
-					["races"] = HORDE_ONLY,
+					sourceQuest = 50837,	-- A Quick Flyover
+					qg = 134554,	-- Lady Sylvanas Windrunner
+					races = HORDE_ONLY,
 				}),
 				q(50878, {	-- Blurred Vision
-					["sourceQuests"] = {
+					sourceQuests = {
 						53604,	-- Clearing Them Out
 						53605,	-- A Glaive Misunderstanding
 					},
-					["qg"] = 134554,	-- Lady Sylvanas Windrunner
-					["races"] = HORDE_ONLY,
+					qg = 134554,	-- Lady Sylvanas Windrunner
+					races = HORDE_ONLY,
 				}),
 				q(53604, {	-- Clearing Them Out
-					["sourceQuest"] = 50880,	-- An Unstoppable Force
-					["qg"] = 134554,	-- Lady Sylvanas Windrunner
-					["races"] = HORDE_ONLY,
+					sourceQuest = 50880,	-- An Unstoppable Force
+					qg = 134554,	-- Lady Sylvanas Windrunner
+					races = HORDE_ONLY,
 				}),
 				q(50647, {	-- Everybody Has a Price
-					["sourceQuest"] = 50646,	-- A Quick Diversion
-					["qg"] = 134573,	-- Lorash
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					sourceQuest = 50646,	-- A Quick Diversion
+					qg = 134573,	-- Lorash
+					races = HORDE_ONLY,
+					groups = {
 						i(158190),	-- Target Marker (QI!)
 					},
 				}),
 				q(53608, {	-- Fueling the Horde War Machine
-					["sourceQuest"] = 52437,	-- The Start of Something Good
-					["qg"] = 144346,	-- Jux Burstkix
-					["races"] = HORDE_ONLY,
+					sourceQuest = 52437,	-- The Start of Something Good
+					qg = 144346,	-- Jux Burstkix
+					races = HORDE_ONLY,
 				}),
 				q(50800, {	-- Into the Woods
-					["sourceQuest"] = 50772,	-- On The Prowl
-					["qg"] = 134554,	-- Lady Sylvanas Windrunner
-					["races"] = HORDE_ONLY,
+					sourceQuest = 50772,	-- On The Prowl
+					qg = 134554,	-- Lady Sylvanas Windrunner
+					races = HORDE_ONLY,
 				}),
 				q(50772, {	-- On The Prowl
-					["sourceQuest"] = 50740,	-- Zoram'gar Outpost
-					["qg"] = 134574,	-- High Overlord Saurfang
-					["races"] = HORDE_ONLY,
+					sourceQuest = 50740,	-- Zoram'gar Outpost
+					qg = 134574,	-- High Overlord Saurfang
+					races = HORDE_ONLY,
 				}),
 				q(50823, {	-- Ripe for the Picking
-					["sourceQuest"] = 50800,	-- Into the Woods
-					["qg"] = 134554,	-- Lady Sylvanas Windrunner
-					["races"] = HORDE_ONLY,
+					sourceQuest = 50800,	-- Into the Woods
+					qg = 134554,	-- Lady Sylvanas Windrunner
+					races = HORDE_ONLY,
 				}),
 				q(52436, {	-- The Blackwood Den
-					["sourceQuest"] = 50879,	-- The Trees Have Ears
-					["qg"] = 135003,	-- Lady Sylvanas Windrunner
-					["races"] = HORDE_ONLY,
+					sourceQuest = 50879,	-- The Trees Have Ears
+					qg = 135003,	-- Lady Sylvanas Windrunner
+					races = HORDE_ONLY,
 				}),
 				q(52437, {	-- The Start of Something Good
-					["sourceQuests"] = {
+					sourceQuests = {
 						52436,	-- The Blackwood Den
 						53606,	-- Aggressive Inspiration
 					},
-					["qg"] = 135003,	-- Lady Sylvanas Windrunner
-					["races"] = HORDE_ONLY,
+					qg = 135003,	-- Lady Sylvanas Windrunner
+					races = HORDE_ONLY,
 				}),
 				q(50879, {	-- The Trees Have Ears
-					["sourceQuest"] = 50878,	-- Blurred Vision
-					["qg"] = 135003,	-- Lady Sylvanas Windrunner
-					["races"] = HORDE_ONLY,
+					sourceQuest = 50878,	-- Blurred Vision
+					qg = 135003,	-- Lady Sylvanas Windrunner
+					races = HORDE_ONLY,
 				}),
 				q(50476, {	-- The Warchief Awaits
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						i(157832),	-- A Royal Summons (QI!)
 					},
 				}),
 				q(50642, {	-- The Warchief Commands
-					["sourceQuest"] = 50476,	-- The Warchief Awaits
-					["qg"] = 134554,	-- Lady Sylvanas Windrunner
-					["races"] = HORDE_ONLY,
+					sourceQuest = 50476,	-- The Warchief Awaits
+					qg = 134554,	-- Lady Sylvanas Windrunner
+					races = HORDE_ONLY,
 				}),
 				q(50740, {	-- Zoram'gar Outpost
-					["sourceQuest"] = 50738,	-- A Timely Arrival
-					["qg"] = 135003,	-- Lady Sylvanas Windrunner
-					["races"] = HORDE_ONLY,
+					sourceQuest = 50738,	-- A Timely Arrival
+					qg = 135003,	-- Lady Sylvanas Windrunner
+					races = HORDE_ONLY,
 				}),
 				-- PART 2
 				q(52967, {	-- Saurfang Returns
-					["sourceQuest"] = 52806,	-- A Looming Threat
-					["races"] = HORDE_ONLY,
+					sourceQuest = 52806,	-- A Looming Threat
+					races = HORDE_ONLY,
 				}),
 				q(52970, {	-- No Small Mercy
-					["sourceQuest"] = 52967,	-- Saurfang Returns
-					["qg"] = 142310,	-- High Overlord Saurfang
-					["races"] = HORDE_ONLY,
+					sourceQuest = 52967,	-- Saurfang Returns
+					qg = 142310,	-- High Overlord Saurfang
+					races = HORDE_ONLY,
 				}),
 				q(52971, {	-- Seaside Rendezvous
-					["sourceQuest"] = 52967,	-- Saurfang Returns
-					["qg"] = 142310,	-- High Overlord Saurfang
-					["races"] = HORDE_ONLY,
+					sourceQuest = 52967,	-- Saurfang Returns
+					qg = 142310,	-- High Overlord Saurfang
+					races = HORDE_ONLY,
 				}),
 				q(53610, {	-- Driving Them Out
-					["sourceQuest"] = 52967,	-- Saurfang Returns
-					["qg"] = 142310,	-- High Overlord Saurfang
-					["races"] = HORDE_ONLY,
+					sourceQuest = 52967,	-- Saurfang Returns
+					qg = 142310,	-- High Overlord Saurfang
+					races = HORDE_ONLY,
 				}),
 				q(52981, {	-- Killer Queen [Note: Final Quest for Part 2]
-					["sourceQuests"] = {
+					sourceQuests = {
 						52970,	-- No Small Mercy
 						52971,	-- Seaside Rendezvous
 						53610,	-- Driving Them Out
 					},
-					["qg"] = 142310,	-- High Overlord Saurfang
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					qg = 142310,	-- High Overlord Saurfang
+					races = HORDE_ONLY,
+					groups = {
 						i(163128),	-- Undercity Plaguebat (MOUNT!)
 					},
 				}),
 			},
 		}),
 		n(WORLD_QUESTS, {
-			["maps"] = { DARKSHORE },	-- Let's attach the map to this zone since all the WQ's are here.
-			["groups"] = {
-				n(QUESTS, bubbleDown({ ["isWorldQuest"] = true }, {
+			maps = { DARKSHORE },	-- Let's attach the map to this zone since all the WQ's are here.
+			groups = {
+				n(QUESTS, bubbleDown({ isWorldQuest = true }, {
 					q(52895, {	-- Arboria
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					q(52506, {	-- Blunt the Spikes
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					q(53497, {	-- Break Free
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					q(53520, {	-- Detonate!
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					q(52894, {	-- Don't Stop Me Now
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					q(52312, {	-- Extinguish the Light
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					q(52885, {	-- Fey There
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					q(52243, {	-- Fuel for the Demolishers
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					q(52983, {	-- I Want It All
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					q(52890, {	-- It's a Kind of Magic
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					q(52893, {	-- One Vision
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					q(52505, {	-- Pruning the Thorns
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					q(52504, {	-- So We Meat Again
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(162013),	-- Haunch of Meat (QI!)
 						},
 					}),
 					q(52307, {	-- Spiritual Aid
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					q(53498, {	-- Staying Power
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					q(52244, {	-- Stop the Drilling
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					q(52343, {	-- They Eat Like Orcs
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						races = HORDE_ONLY,
+						groups = {
 							i(162013),	-- Haunch of Meat (QI!)
 						},
 					}),
 					q(52896, {	-- Under Pressure
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					q(52897, {	-- We Will "Rock" You
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					q(53552, {	-- Wicked Kegger
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 				})),
 				n(REWARDS, {

@@ -21,10 +21,10 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 	inst(1300, {	-- Magister's Terrace
-		["coord"] = { 63.0, 15.1, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
-		["maps"] = {
+		coord = { 63.0, 15.1, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+		maps = {
 			2511,	-- Magisters' Terrace
 			2515,	-- Arcane Atheneum
 			2516,	-- Grand Magister Asylum
@@ -33,7 +33,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			2519,	-- Upper Tower
 			2520,	-- Celestial Orrery
 		},
-		["groups"] = {
+		groups = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(CUSTOS, {
 					i(251101),	-- Arcane Guardian's Shell
@@ -76,16 +76,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
-				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
-				["groups"] = {
+				timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
+				groups = {
 					BossOnly(DEGENTRIUS, {
 						ach(61213),	-- Heroic: Magisters' Terrace
 					}),
 				},
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
-				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
-				["groups"] = {
+				timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
+				groups = {
 					BossOnly(DEGENTRIUS, {
 						ach(61214),	-- Mythic: Magisters' Terrace
 						ach(61615),	-- Mythic: Magisters' Terrace Guild Run

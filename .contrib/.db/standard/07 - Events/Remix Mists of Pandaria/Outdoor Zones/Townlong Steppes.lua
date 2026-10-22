@@ -2,31 +2,31 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(TOWNLONG_STEPPES, {
-		["icon"] = 618796,
-		["groups"] = {
+		icon = 618796,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(19889),	-- Campaign: Townlong Steppes
 				ach(19997),	-- Elusive Foes: Townlong Steppes
 				ach(20030),	-- Explore Townlong Steppes (automated)
 				ach(19981, {	-- Hidden Treasures: Townlong Steppes
 					crit(65491, {	-- Fragment of Dread
-						["_quests"] = { 31423 },
+						_quests = { 31423 },
 					}),
 					crit(65492, {	-- Hardened Sap of Kri'vess
-						["_quests"] = { 31424 },
+						_quests = { 31424 },
 					}),
 					crit(65493, {	-- Amber Encased Moth
-						["_quests"] = { 31426 },
+						_quests = { 31426 },
 					}),
 					crit(65494, {	-- Abandoned Crate of Goods
-						["_quests"] = { 31427 },
+						_quests = { 31427 },
 					}),
 				}),
 				ach(20012, {	-- Looking For Group: Townlong Steppes
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19930,	-- Assault on Zan'vess
 						19900,	-- Siege of Niuzao Temple
 					}},
@@ -34,7 +34,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				ach(19914),	-- Shado-Pan
 				ach(19966, {	-- Tour Townlong Steppes
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19997,	-- Elusive Foes: Townlong Steppes
 						20030,	-- Explore Townlong Steppes
 						19981,	-- Hidden Treasures: Townlong Steppes
@@ -42,29 +42,29 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				ach(19877, {	-- Townlong Steppes
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19889,	-- Campaign: Townlong Steppes
 						20012,	-- Looking For Group: Townlong Steppes
 						19914,	-- Shado-Pan
 						19966,	-- Tour Townlong Steppes
 					}},
-					["groups"] = {
+					groups = {
 						i(221817),	-- Muskpaw Calf (PET!)
 					},
 				}),
 			}),
 			n(QUESTS, {
 				q(80430, {	-- Aid the August Celestials
-					["provider"] = { "n", 61584 },	-- Sentinel Commander Qipan
-					["coord"] = { 39.3, 62.0, TOWNLONG_STEPPES },
-					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
-					["repeatable"] = true,
+					provider = { "n", 61584 },	-- Sentinel Commander Qipan
+					coord = { 39.3, 62.0, TOWNLONG_STEPPES },
+					cost = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					repeatable = true,
 				}),
 				q(80426, {	-- Aid the Shado-Pan
-					["provider"] = { "n", 63009 },	-- Master Snowdrift
-					["coord"] = { 49.3, 70.6, TOWNLONG_STEPPES },
-					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
-					["repeatable"] = true,
+					provider = { "n", 63009 },	-- Master Snowdrift
+					coord = { 49.3, 70.6, TOWNLONG_STEPPES },
+					cost = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					repeatable = true,
 				}),
 			}),
 			n(ZONE_REWARDS, {

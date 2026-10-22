@@ -46,8 +46,8 @@ end
 
 -- 10 Man Exclusive Content
 local NAXX_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
-	["lvl"] = lvlsquish(80, 80, 30),
-	["groups"] = {
+	lvl = lvlsquish(80, 80, 30),
+	groups = {
 		n(ACHIEVEMENTS, {
 			ach(578),	-- The Dedicated Few (10 player)
 			ach(562),	-- The Arachnid Quarter (10 player)
@@ -56,7 +56,7 @@ local NAXX_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_N
 			ach(564),	-- The Construct Quarter (10 player)
 			ach(576, {	-- The Fall of Naxxramas (10 player)
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					562,	-- The Arachnid Quarter (10 player)
 					566,	-- The Plague Quarter (10 player)
 					568,	-- The Military Quarter (10 player)
@@ -66,37 +66,37 @@ local NAXX_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_N
 				}},
 			}),
 			ach(2187, {	-- The Undying
-				["timeline"] = { REMOVED_4_0_3 },
-				["groups"] = {
+				timeline = { REMOVED_4_0_3 },
+				groups = {
 					title(109, {	-- The Undying
-						["timeline"] = { REMOVED_4_0_3 },
+						timeline = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
 		}),
 		n(QUESTS, {
 			q(13372, {	-- The Key to the Focusing Iris (Quest)
-				["provider"] = { "i", 44569 },	-- Key to the Focusing Iris (Item)
-				["lvl"] = lvlsquish(78, 78, 30),
+				provider = { "i", 44569 },	-- Key to the Focusing Iris (Item)
+				lvl = lvlsquish(78, 78, 30),
 				-- #if ANYCLASSIC
-				["OnUpdate"] = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
+				OnUpdate = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
 				-- #endif
-				["groups"] = {
+				groups = {
 					i(44582, {	-- Key to the Focusing Iris
-						["timeline"] = { DELETED_4_2_0 },
+						timeline = { DELETED_4_2_0 },
 						-- #if ANYCLASSIC
-						["OnUpdate"] = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
+						OnUpdate = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
 						-- #endif
 					}),
 				},
 			}),
 		}),
-		n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+		n(SPECIAL, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
 			n(206712, {	-- Valiance
-				["description"] = "You must do this in the 10-man version of Naxxramas, with Instructor Razuvious still alive.\n\nOnce you have the Rotten Delicious apple, you need to go back to Valiance, and slowly approach it, while attempting to give the item. Once you're able to do so, the steed will eat the rotten apple, but that will not be enough, as it will still refuse you as its rider.\n\nClick on one of the Obedience Crystal near the boss to mind control one of the Understudy adds, and bring the mind-controlled add to Valiance, which will at that point mount Valiance. Bring the mounted add back to Razuvious, and then break the mind control by clicking on the mind-controlled pet portrait and selecting Dismiss.\n\nNow kill the boss and loot your new mount.",
-				["questID"] = 76378,
-				["cost"] = { { "i", 208068, 1 } },	-- 1x Rotten Delicious
-				["groups"] = {
+				description = "You must do this in the 10-man version of Naxxramas, with Instructor Razuvious still alive.\n\nOnce you have the Rotten Delicious apple, you need to go back to Valiance, and slowly approach it, while attempting to give the item. Once you're able to do so, the steed will eat the rotten apple, but that will not be enough, as it will still refuse you as its rider.\n\nClick on one of the Obedience Crystal near the boss to mind control one of the Understudy adds, and bring the mind-controlled add to Valiance, which will at that point mount Valiance. Bring the mounted add back to Razuvious, and then break the mind control by clicking on the mind-controlled pet portrait and selecting Dismiss.\n\nNow kill the boss and loot your new mount.",
+				questID = 76378,
+				cost = { { "i", 208068, 1 } },	-- 1x Rotten Delicious
+				groups = {
 					i(206585),	-- Valiance (MOUNT!)
 				},
 			}),
@@ -106,275 +106,275 @@ local NAXX_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_N
 		-- #endif
 		n(NAXX_ARACHNID_QUARTER, {
 			e(1601, {	-- Anub'Rehkan
-				["creatureID"] = 15956,	-- Anub'Rehkan
-				["lore"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
-				["groups"] = {
+				creatureID = 15956,	-- Anub'Rehkan
+				lore = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
+				groups = {
 					ach(562, {	-- The Arachnid Quarter (10 player)
-						["criteriaID"] = 5100,	-- Anub'Rehkan slain
+						criteriaID = 5100,	-- Anub'Rehkan slain
 					}),
 					ach(578, {	-- The Dedicated Few (10 player)
-						["criteriaID"] = 7146,	-- Anub'Rehkan slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
+						criteriaID = 7146,	-- Anub'Rehkan slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 					}),
 				},
 			}),
 			e(1602, {	-- Grand Widow Faerlina
-				["creatureID"] = 15953,	-- Grand Widow Faerlina
-				["lore"] = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
-				["groups"] = {
+				creatureID = 15953,	-- Grand Widow Faerlina
+				lore = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
+				groups = {
 					ach(1997),	-- Momma Said Knock You Out (10 player)
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					ach(562, {	-- The Arachnid Quarter (10 player)
-						["criteriaID"] = 5101,	-- Grand Widow Faerlina slain
+						criteriaID = 5101,	-- Grand Widow Faerlina slain
 					}),
 					-- #else
 					ach(562, {	-- The Arachnid Quarter (10 player)
-						["criteriaID"] = 6430,	-- Grand Widow Faerlina slain
+						criteriaID = 6430,	-- Grand Widow Faerlina slain
 					}),
 					-- #endif
 					ach(578, {	-- The Dedicated Few (10 player)
-						["criteriaID"] = 7147,	-- Grand Widow Faerlina slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
+						criteriaID = 7147,	-- Grand Widow Faerlina slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 					}),
 				},
 			}),
 			e(1603, {	-- Maexxna
-				["creatureID"] = 15952,	-- Maexxna
-				["lore"] = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
-				["groups"] = {
+				creatureID = 15952,	-- Maexxna
+				lore = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
+				groups = {
 					ach(1858),	-- Arachnophobia (10 player)
 					ach(562, {	-- The Arachnid Quarter (10 player)
-						["criteriaID"] = 5102,	-- Maexxna slain
+						criteriaID = 5102,	-- Maexxna slain
 					}),
 					ach(578, {	-- The Dedicated Few (10 player)
-						["criteriaID"] = 7148,	-- Maexxna slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
+						criteriaID = 7148,	-- Maexxna slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 					}),
 				},
 			}),
 		}),
 		n(NAXX_PLAGUE_QUARTER, {
 			e(1604, {	-- Noth the Plaguebringer
-				["creatureID"] = 15954,	-- Noth the Plaguebringer
-				["lore"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
-				["groups"] = {
+				creatureID = 15954,	-- Noth the Plaguebringer
+				lore = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
+				groups = {
 					ach(566, {	-- The Plague Quarter (10 player)
-						["criteriaID"] = 5104,	-- Noth the Plaguebringer slain
+						criteriaID = 5104,	-- Noth the Plaguebringer slain
 					}),
 					ach(578, {	-- The Dedicated Few (10 player)
-						["criteriaID"] = 7153,	-- Noth the Plaguebringer slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
+						criteriaID = 7153,	-- Noth the Plaguebringer slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 					}),
 				},
 			}),
 			e(1605, {	-- Heigan the Unclean
-				["creatureID"] = 15936,	-- Heigan the Unclean
-				["lore"] = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
-				["groups"] = {
+				creatureID = 15936,	-- Heigan the Unclean
+				lore = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
+				groups = {
 					ach(1996),	-- The Safety Dance (10 player)
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					ach(566, {	-- The Plague Quarter (10 player)
-						["criteriaID"] = 5112,	-- Heigan the Unclean slain
+						criteriaID = 5112,	-- Heigan the Unclean slain
 					}),
 					-- #else
 					ach(566, {	-- The Plague Quarter (10 player)
-						["criteriaID"] = 6426,	-- Heigan the Unclean slain
+						criteriaID = 6426,	-- Heigan the Unclean slain
 					}),
 					-- #endif
 					ach(578, {	-- The Dedicated Few (10 player)
-						["criteriaID"] = 7154,	-- Heigan the Unclean slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
+						criteriaID = 7154,	-- Heigan the Unclean slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 					}),
 				},
 			}),
 			e(1606, {	-- Loatheb
-				["creatureID"] = 16011,	-- Loatheb
-				["lore"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
-				["groups"] = {
+				creatureID = 16011,	-- Loatheb
+				lore = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
+				groups = {
 					ach(2182),	-- Spore Loser (10 player)
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					ach(566, {	-- The Plague Quarter (10 player)
-						["criteriaID"] = 5113,	-- Loatheb slain
+						criteriaID = 5113,	-- Loatheb slain
 					}),
 					-- #else
 					ach(566, {	-- The Plague Quarter (10 player)
-						["criteriaID"] = 6428,	-- Loatheb slain
+						criteriaID = 6428,	-- Loatheb slain
 					}),
 					-- #endif
 					ach(578, {	-- The Dedicated Few (10 player)
-						["criteriaID"] = 7155,	-- Loatheb slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
+						criteriaID = 7155,	-- Loatheb slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 					}),
 				},
 			}),
 		}),
 		n(NAXX_MILITARY_QUARTER, {
 			e(1607, {	-- Instructor Razuvious
-				["creatureID"] = 16061,	-- Instructor Razuvious
-				["lore"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
-				["groups"] = {
+				creatureID = 16061,	-- Instructor Razuvious
+				lore = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
+				groups = {
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					ach(568, {	-- The Military Quarter (10 player)
-						["criteriaID"] = 6429,	-- Instructor Razuvious slain
+						criteriaID = 6429,	-- Instructor Razuvious slain
 					}),
 					-- #else
 					ach(568, {	-- The Military Quarter (10 player)
-						["criteriaID"] = 5120,	-- Instructor Razuvious slain
+						criteriaID = 5120,	-- Instructor Razuvious slain
 					}),
 					-- #endif
 					ach(578, {	-- The Dedicated Few (10 player)
-						["criteriaID"] = 7156,	-- Instructor Razuvious slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
+						criteriaID = 7156,	-- Instructor Razuvious slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 					}),
 				},
 			}),
 			e(1608, {	-- Gothik the Harvester
-				["creatureID"] = 16060,	-- Gothik the Harvester
-				["lore"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
-				["groups"] = {
+				creatureID = 16060,	-- Gothik the Harvester
+				lore = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
+				groups = {
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					ach(568, {	-- The Military Quarter (10 player)
-						["criteriaID"] = 6431,	-- Gothik the Harvester slain
+						criteriaID = 6431,	-- Gothik the Harvester slain
 					}),
 					-- #else
 					ach(568, {	-- The Military Quarter (10 player)
-						["criteriaID"] = 5108,	-- Gothik the Harvester slain
+						criteriaID = 5108,	-- Gothik the Harvester slain
 					}),
 					-- #endif
 					ach(578, {	-- The Dedicated Few (10 player)
-						["criteriaID"] = 7157,	-- Gothik the Harvester slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
+						criteriaID = 7157,	-- Gothik the Harvester slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 					}),
 				},
 			}),
 			e(1609, {	-- The Four Horsemen
-				["crs"] = {
+				crs = {
 					30549,	-- Baron Rivendare
 					16064,	-- Thane Korth'azz
 					16065,	-- Lady Blaumeux
 					16063,	-- Sir Zeliek
 				},
-				["lore"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
-				["provider"] = { "o", 193426 },	-- Four Horsemen Chest
-				["groups"] = {
+				lore = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
+				provider = { "o", 193426 },	-- Four Horsemen Chest
+				groups = {
 					ach(2176),	-- And They Would All Go Down Together (10 player)
 					ach(568, {	-- The Military Quarter (10 player)
-						["criteriaID"] = 7805,	-- The Four Horsemen slain
+						criteriaID = 7805,	-- The Four Horsemen slain
 					}),
 				},
 			}),
 		}),
 		n(NAXX_CONSTRUCT_QUARTER, {
 			e(1610, {	-- Patchwerk
-				["creatureID"] = 16028,	-- Patchwerk
-				["lore"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
-				["groups"] = {
+				creatureID = 16028,	-- Patchwerk
+				lore = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
+				groups = {
 					ach(1856),	-- Make Quick Werk of Him (10 player)
 					ach(564, {	-- The Construct Quarter (10 player)
-						["criteriaID"] = 5110,	-- Patchwerk slain
+						criteriaID = 5110,	-- Patchwerk slain
 					}),
 					ach(578, {	-- The Dedicated Few (10 player)
-						["criteriaID"] = 7149,	-- Patchwerk slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
+						criteriaID = 7149,	-- Patchwerk slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 					}),
 				},
 			}),
 			e(1611, {	-- Grobbulus
-				["creatureID"] = 15931,	-- Grobbulus
-				["lore"] = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
-				["groups"] = {
+				creatureID = 15931,	-- Grobbulus
+				lore = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
+				groups = {
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					ach(564, {	-- The Construct Quarter (10 player)
-						["criteriaID"] = 5114,	-- Grobbulus slain
+						criteriaID = 5114,	-- Grobbulus slain
 					}),
 					-- #else
 					ach(564, {	-- The Construct Quarter (10 player)
-						["criteriaID"] = 6425,	-- Grobbulus slain
+						criteriaID = 6425,	-- Grobbulus slain
 					}),
 					-- #endif
 					ach(578, {	-- The Dedicated Few (10 player)
-						["criteriaID"] = 7150,	-- Grobbulus slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
+						criteriaID = 7150,	-- Grobbulus slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 					}),
 				},
 			}),
 			e(1612, {	-- Gluth
-				["creatureID"] = 15932,	-- Gluth
-				["lore"] = "The foul plague-dog of Naxxramas, was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
-				["groups"] = {
+				creatureID = 15932,	-- Gluth
+				lore = "The foul plague-dog of Naxxramas, was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
+				groups = {
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					ach(564, {	-- The Construct Quarter (10 player)
-						["criteriaID"] = 6416,	-- Gluth slain
+						criteriaID = 6416,	-- Gluth slain
 					}),
 					-- #else
 					ach(564, {	-- The Construct Quarter (10 player)
-						["criteriaID"] = 5117,	-- Gluth slain
+						criteriaID = 5117,	-- Gluth slain
 					}),
 					-- #endif
 					ach(578, {	-- The Dedicated Few (10 player)
-						["criteriaID"] = 7151,	-- Gluth slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
+						criteriaID = 7151,	-- Gluth slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 					}),
 				},
 			}),
 			e(1613, {	-- Thaddius
-				["creatureID"] = 15928,	-- Thaddius
-				["lore"] = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
-				["groups"] = {
+				creatureID = 15928,	-- Thaddius
+				lore = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
+				groups = {
 					ach(2178),	-- Shocking! (10 player)
 					ach(2180),	-- Subtraction (10 player)
 					ach(564, {	-- The Construct Quarter (10 player)
-						["criteriaID"] = 5119,	-- Thaddius slain
+						criteriaID = 5119,	-- Thaddius slain
 					}),
 					ach(578, {	-- The Dedicated Few (10 player)
-						["criteriaID"] = 7152,	-- Thaddius slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
+						criteriaID = 7152,	-- Thaddius slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 					}),
 				},
 			}),
 		}),
 		n(NAXX_UPPER_NECROPOLIS, {
 			e(1614, {	-- Sapphiron
-				["creatureID"] = 15989,	-- Sapphiron
-				["lore"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
-				["groups"] = {
+				creatureID = 15989,	-- Sapphiron
+				lore = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
+				groups = {
 					ach(572),	-- Sapphiron's Demise (10 player)
 					ach(2146),	-- The Hundred Club (10 player)
 					ach(578, {	-- The Dedicated Few (10 player)
-						["criteriaID"] = 7158,	-- Sapphiron slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
+						criteriaID = 7158,	-- Sapphiron slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 					}),
 					i(44569, {	-- Key to the Focusing Iris (Item)
 						-- #if ANYCLASSIC
-						["OnUpdate"] = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
+						OnUpdate = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
 						-- #endif
 					}),
 				},
 			}),
 			e(1615, {	-- Kel'Thuzad
-				["creatureID"] = 15990,	-- Kel'Thuzad
-				["lore"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
-				["groups"] = {
+				creatureID = 15990,	-- Kel'Thuzad
+				lore = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
+				groups = {
 					ach(574),	-- Kel'Thuzad's Defeat (10 player)
 					ach(2184, {	-- Just Can't Get Enough (10 player)
-						["cr"] = 16428,	-- Unstoppable Abomination
+						cr = 16428,	-- Unstoppable Abomination
 						-- #if AFTER MOP
-						["description"] = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
+						description = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
 						-- #endif
 					}),
 					ach(5016, {	-- Just Can't Get Enough - Guild Edition
-						["timeline"] = { ADDED_4_0_3 },
+						timeline = { ADDED_4_0_3 },
 					}),
 					ach(578, {	-- The Dedicated Few (10 player)
-						["criteriaID"] = 6802,	-- Kel'Thuzad slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
+						criteriaID = 6802,	-- Kel'Thuzad slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 					}),
 				},
 			}),
@@ -512,19 +512,19 @@ local NAXX_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 			i(39275),	-- Contagion Gloves
 			i(39262, {	-- Gauntlets of Combined Strength
 				-- #if ANYCLASSIC
-				["description"] = "This item was originally available in Naxxramas 10, but after H+ was introduced to Wrath Classic, it was removed.",
-				["timeline"] = { ADDED_3_0_2, REMOVED_3_4_1 },
+				description = "This item was originally available in Naxxramas 10, but after H+ was introduced to Wrath Classic, it was removed.",
+				timeline = { ADDED_3_0_2, REMOVED_3_4_1 },
 				-- #endif
 			}),
 			i(39261),	-- Tainted Girdle of Mending
 			i(39263, {	-- Dissevered Leggings
 				-- #if ANYCLASSIC
-				["OnUpdate"] = [[function(t) if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then t.u = nil; else t.u = ]] .. WRATH_PHASE_TWO .. [[; end end]],
+				OnUpdate = [[function(t) if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then t.u = nil; else t.u = ]] .. WRATH_PHASE_TWO .. [[; end end]],
 				-- #endif
 				-- #if BEFORE 8.0.1
-				["description"] = "This item was originally unavailable until Patch 8.0.1, but after H+ was introduced to Wrath Classic, it was added as a boss drop from Old Kingdom.\n\nInterestingly enough, its absence triggered the creation of the addon by Crieve after failing to get this transmog to drop after many many months of unsuccessfully farming for it.",
+				description = "This item was originally unavailable until Patch 8.0.1, but after H+ was introduced to Wrath Classic, it was added as a boss drop from Old Kingdom.\n\nInterestingly enough, its absence triggered the creation of the addon by Crieve after failing to get this transmog to drop after many many months of unsuccessfully farming for it.",
 				-- #endif
-				["timeline"] = { CREATED_3_0_2, ADDED_8_0_1 },
+				timeline = { CREATED_3_0_2, ADDED_8_0_1 },
 			}),
 			i(39273),	-- Sullen Cloth Boots
 		}),
@@ -541,7 +541,7 @@ local NAXX_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 			i(39277),	-- Sealing Ring of Grobbulus
 		}),
 		e(1612, {	-- Gluth
-			["sym"] = {
+			sym = {
 				{"select","instanceID",754},{"pop"},	-- Naxx
 				-- #if NOT NAXX_10MAN_DROPS_25MAN_LOOT
 				{"where","difficultyID",3},	-- 10 Difficulty
@@ -604,8 +604,8 @@ local NAXX_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 
 -- 25 Man Exclusive Content
 local NAXX_25MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
-	["lvl"] = lvlsquish(80, 80, 30),
-	["groups"] = {
+	lvl = lvlsquish(80, 80, 30),
+	groups = {
 		n(ACHIEVEMENTS, {
 			ach(579),	-- The Dedicated Few (25 player)
 			ach(563),	-- The Arachnid Quarter (25 player)
@@ -614,7 +614,7 @@ local NAXX_25MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER25_N
 			ach(565),	-- The Construct Quarter (25 player)
 			ach(577, {	-- The Fall of Naxxramas (25 player)
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					563,	-- The Arachnid Quarter (25 player)
 					567,	-- The Plague Quarter (25 player)
 					569,	-- The Military Quarter (25 player)
@@ -624,10 +624,10 @@ local NAXX_25MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER25_N
 				}},
 			}),
 			ach(2186, {	-- The Immortal
-				["timeline"] = { REMOVED_4_0_3 },
-				["groups"] = {
+				timeline = { REMOVED_4_0_3 },
+				groups = {
 					title(108, {	-- The Immortal
-						["timeline"] = { REMOVED_4_0_3 },
+						timeline = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -638,247 +638,247 @@ local NAXX_25MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER25_N
 		-- #endif
 		n(NAXX_ARACHNID_QUARTER, {
 			e(1601, {	-- Anub'Rekhan
-				["creatureID"] = 15956,	-- Anub'Rekhan
-				["lore"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
-				["groups"] = {
+				creatureID = 15956,	-- Anub'Rekhan
+				lore = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
+				groups = {
 					ach(563, {	-- The Arachnid Quarter (25 player)
-						["criteriaID"] = 5111,	-- Anub'Rekhan slain
+						criteriaID = 5111,	-- Anub'Rekhan slain
 					}),
 					ach(579, {	-- The Dedicated Few (25 player)
-						["criteriaID"] = 7159,	-- Anub'Rekhan slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
+						criteriaID = 7159,	-- Anub'Rekhan slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 					}),
 				},
 			}),
 			e(1602, {	-- Grand Widow Faerlina
-				["creatureID"] = 15953,	-- Grand Widow Faerlina
-				["lore"] = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
-				["groups"] = {
+				creatureID = 15953,	-- Grand Widow Faerlina
+				lore = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
+				groups = {
 					ach(2140),	-- Momma Said Knock You Out (25 player)
 					ach(563, {	-- The Arachnid Quarter (25 player)
-						["criteriaID"] = 5126,	-- Grand Widow Faerlina slain
+						criteriaID = 5126,	-- Grand Widow Faerlina slain
 					}),
 					ach(579, {	-- The Dedicated Few (25 player)
-						["criteriaID"] = 7160,	-- Grand Widow Faerlina slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
+						criteriaID = 7160,	-- Grand Widow Faerlina slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 					}),
 				},
 			}),
 			e(1603, {	-- Maexxna
-				["creatureID"] = 15952,	-- Maexxna
-				["lore"] = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
-				["groups"] = {
+				creatureID = 15952,	-- Maexxna
+				lore = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
+				groups = {
 					ach(1859),	-- Arachnophobia (25 player)
 					ach(563, {	-- The Arachnid Quarter (25 player)
-						["criteriaID"] = 6405,	-- Maexxna slain
+						criteriaID = 6405,	-- Maexxna slain
 					}),
 					ach(579, {	-- The Dedicated Few (25 player)
-						["criteriaID"] = 7161,	-- Maexxna slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
+						criteriaID = 7161,	-- Maexxna slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 					}),
 				},
 			}),
 		}),
 		n(NAXX_PLAGUE_QUARTER, {
 			e(1604, {	-- Noth the Plaguebringer
-				["creatureID"] = 15954,	-- Noth the Plaguebringer
-				["lore"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
-				["groups"] = {
+				creatureID = 15954,	-- Noth the Plaguebringer
+				lore = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
+				groups = {
 					ach(567, {	-- The Plague Quarter (25 player)
-						["criteriaID"] = 5133,	-- Noth the Plaguebringer slain
+						criteriaID = 5133,	-- Noth the Plaguebringer slain
 					}),
 					ach(579, {	-- The Dedicated Few (25 player)
-						["criteriaID"] = 7166,	-- Noth the Plaguebringer slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
+						criteriaID = 7166,	-- Noth the Plaguebringer slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 					}),
 				},
 			}),
 			e(1605, {	-- Heigan the Unclean
-				["creatureID"] = 15936,	-- Heigan the Unclean
-				["lore"] = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
-				["groups"] = {
+				creatureID = 15936,	-- Heigan the Unclean
+				lore = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
+				groups = {
 					ach(2139),	-- The Safety Dance (25 player)
 					ach(567, {	-- The Plague Quarter (25 player)
-						["criteriaID"] = 5128,	-- Heigan the Unclean slain
+						criteriaID = 5128,	-- Heigan the Unclean slain
 					}),
 					ach(579, {	-- The Dedicated Few (25 player)
-						["criteriaID"] = 7167,	-- Heigan the Unclean slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
+						criteriaID = 7167,	-- Heigan the Unclean slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 					}),
 				},
 			}),
 			e(1606, {	-- Loatheb
-				["creatureID"] = 16011,	-- Loatheb
-				["lore"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
-				["groups"] = {
+				creatureID = 16011,	-- Loatheb
+				lore = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
+				groups = {
 					ach(2183),	-- Spore Loser (25 player)
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					ach(567, {	-- The Plague Quarter (25 player)
-						["criteriaID"] = 5131,	-- Loatheb slain
+						criteriaID = 5131,	-- Loatheb slain
 					}),
 					-- #else
 					ach(567, {	-- The Plague Quarter (25 player)
-						["criteriaID"] = 6409,	-- Loatheb slain
+						criteriaID = 6409,	-- Loatheb slain
 					}),
 					-- #endif
 					ach(579, {	-- The Dedicated Few (25 player)
-						["criteriaID"] = 7168,	-- Loatheb slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
+						criteriaID = 7168,	-- Loatheb slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 					}),
 				},
 			}),
 		}),
 		n(NAXX_MILITARY_QUARTER, {
 			e(1607, {	-- Instructor Razuvious
-				["creatureID"] = 16061,	-- Instructor Razuvious
-				["lore"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
-				["groups"] = {
+				creatureID = 16061,	-- Instructor Razuvious
+				lore = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
+				groups = {
 					ach(569, {	-- The Military Quarter (25 player)
-						["criteriaID"] = 6410,	-- Instructor Razuvious slain
+						criteriaID = 6410,	-- Instructor Razuvious slain
 					}),
 					ach(579, {	-- The Dedicated Few (25 player)
-						["criteriaID"] = 7169,	-- Instructor Razuvious slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
+						criteriaID = 7169,	-- Instructor Razuvious slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 					}),
 				},
 			}),
 			e(1608, {	-- Gothik the Harvester
-				["creatureID"] = 16060,	-- Gothik the Harvester
-				["lore"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
-				["groups"] = {
+				creatureID = 16060,	-- Gothik the Harvester
+				lore = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
+				groups = {
 					ach(569, {	-- The Military Quarter (25 player)
-						["criteriaID"] = 5125,	-- Gothik the Harvester slain
+						criteriaID = 5125,	-- Gothik the Harvester slain
 					}),
 					ach(579, {	-- The Dedicated Few (25 player)
-						["criteriaID"] = 7170,	-- Gothik the Harvester slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
+						criteriaID = 7170,	-- Gothik the Harvester slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 					}),
 				},
 			}),
 			e(1609, {	-- The Four Horsemen
-				["crs"] = {
+				crs = {
 					30549,	-- Baron Rivendare
 					16064,	-- Thane Korth'azz
 					16065,	-- Lady Blaumeux
 					16063,	-- Sir Zeliek
 				},
-				["lore"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
-				["provider"] = { "o", 193426 },	-- Four Horsemen Chest
-				["groups"] = {
+				lore = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
+				provider = { "o", 193426 },	-- Four Horsemen Chest
+				groups = {
 					ach(2177),	-- And They Would All Go Down Together (25 player)
 					ach(569, {	-- The Military Quarter (25 player)
-						["criteriaID"] = 7806,	-- The Four Horsemen slain
+						criteriaID = 7806,	-- The Four Horsemen slain
 					}),
 					i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-						["sourceQuest"] = 38990,	-- The Call of Icecrown
-						["timeline"] = { ADDED_7_0_3 },
+						sourceQuest = 38990,	-- The Call of Icecrown
+						timeline = { ADDED_7_0_3 },
 					}),
 				},
 			}),
 		}),
 		n(NAXX_CONSTRUCT_QUARTER, {
 			e(1610, {	-- Patchwerk
-				["creatureID"] = 16028,	-- Patchwerk
-				["lore"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
-				["groups"] = {
+				creatureID = 16028,	-- Patchwerk
+				lore = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
+				groups = {
 					ach(1857),	-- Make Quick Werk of Him (25 player)
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					ach(565, {	-- The Construct Quarter (25 player)
-						["criteriaID"] = 5103,	-- Patchwerk slain
+						criteriaID = 5103,	-- Patchwerk slain
 					}),
 					-- #else
 					ach(565, {	-- The Construct Quarter (25 player)
-						["criteriaID"] = 6403,	-- Patchwerk slain
+						criteriaID = 6403,	-- Patchwerk slain
 					}),
 					-- #endif
 					ach(579, {	-- The Dedicated Few (25 player)
-						["criteriaID"] = 7162,	-- Patchwerk slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
+						criteriaID = 7162,	-- Patchwerk slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 					}),
 				},
 			}),
 			e(1611, {	-- Grobbulus
-				["creatureID"] = 15931,	-- Grobbulus
-				["lore"] = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
-				["groups"] = {
+				creatureID = 15931,	-- Grobbulus
+				lore = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
+				groups = {
 					ach(565, {	-- The Construct Quarter (25 player)
-						["criteriaID"] = 6406,	-- Grobbulus slain
+						criteriaID = 6406,	-- Grobbulus slain
 					}),
 					ach(579, {	-- The Dedicated Few (25 player)
-						["criteriaID"] = 7163,	-- Grobbulus slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
+						criteriaID = 7163,	-- Grobbulus slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 					}),
 				},
 			}),
 			e(1612, {	-- Gluth
-				["creatureID"] = 15932,	-- Gluth
-				["lore"] = "The foul plague-dog of Naxxramas was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
-				["groups"] = {
+				creatureID = 15932,	-- Gluth
+				lore = "The foul plague-dog of Naxxramas was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
+				groups = {
 					ach(565, {	-- The Construct Quarter (25 player)
-						["criteriaID"] = 5124,	-- Gluth slain
+						criteriaID = 5124,	-- Gluth slain
 					}),
 					ach(579, {	-- The Dedicated Few (25 player)
-						["criteriaID"] = 7164,	-- Gluth slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
+						criteriaID = 7164,	-- Gluth slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 					}),
 				},
 			}),
 			e(1613, {	-- Thaddius
-				["creatureID"] = 15928,	-- Thaddius
-				["lore"] = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
-				["groups"] = {
+				creatureID = 15928,	-- Thaddius
+				lore = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
+				groups = {
 					ach(2179),	-- Shocking! (25 player)
 					ach(2181),	-- Subtraction (25 player)
 					ach(565, {	-- The Construct Quarter (25 player)
-						["criteriaID"] = 5134,	-- Thaddius slain
+						criteriaID = 5134,	-- Thaddius slain
 					}),
 					ach(579, {	-- The Dedicated Few (25 player)
-						["criteriaID"] = 7165,	-- Thaddius slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
+						criteriaID = 7165,	-- Thaddius slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 					}),
 				},
 			}),
 		}),
 		n(NAXX_UPPER_NECROPOLIS, {
 			e(1614, {	-- Sapphiron
-				["creatureID"] = 15989,	-- Sapphiron
-				["lore"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
-				["groups"] = {
+				creatureID = 15989,	-- Sapphiron
+				lore = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
+				groups = {
 					ach(573),	-- Sapphiron's Demise (25 player)
 					ach(2147),	-- The Hundred Club (25 player)
 					ach(579, {	-- The Dedicated Few (25 player)
-						["criteriaID"] = 7171,	-- Sapphiron slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
+						criteriaID = 7171,	-- Sapphiron slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 					}),
 				},
 			}),
 			e(1615, {	-- Kel'Thuzad
-				["creatureID"] = 15990,	-- Kel'Thuzad
-				["lore"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
-				["groups"] = {
+				creatureID = 15990,	-- Kel'Thuzad
+				lore = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
+				groups = {
 					applyclassicphase(WRATH_PHASE_ONE_REALM_FIRST, ach(1402, {	-- Realm First! Conqueror of Naxxramas
-						["timeline"] = { REMOVED_4_0_3 },
-						["groups"] = {
+						timeline = { REMOVED_4_0_3 },
+						groups = {
 							title(90, {	-- <Name>, Conqueror of Naxxramas
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 							}),
 						},
 					})),
 					ach(575),	-- Kel'Thuzad's Defeat (25 player)
 					ach(2185, {	-- Just Can't Get Enough (25 player)
-						["cr"] = 16428,	-- Unstoppable Abomination
+						cr = 16428,	-- Unstoppable Abomination
 						-- #if AFTER MOP
-						["description"] = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
+						description = "Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",
 						-- #endif
 					}),
 					ach(5016, {	-- Just Can't Get Enough - Guild Edition
-						["timeline"] = { ADDED_4_0_3 },
+						timeline = { ADDED_4_0_3 },
 					}),
 					ach(579, {	-- The Dedicated Few (25 player)
-						["criteriaID"] = 7172,	-- Kel'Thuzad slain
-						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
+						criteriaID = 7172,	-- Kel'Thuzad slain
+						OnUpdate = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 					}),
 				},
 			}),
@@ -892,15 +892,15 @@ local NAXX_25MAN_DIFFICULTY_ID = DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL;
 NAXX_25MAN_DIFFICULTY_ID = DIFFICULTY.LEGACY_RAID.MULTI.NORMAL;
 -- #endif
 local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
-	["lvl"] = lvlsquish(80, 80, 30),
-	["groups"] = {
+	lvl = lvlsquish(80, 80, 30),
+	groups = {
 		n(QUESTS, {
 			q(13375, {	-- The Heroic Key to the Focusing Iris (Quest)
-				["provider"] = { "i", 44577 },	-- Heroic Key to the Focusing Iris (Item)
-				["lvl"] = lvlsquish(78, 78, 30),
-				["groups"] = {
+				provider = { "i", 44577 },	-- Heroic Key to the Focusing Iris (Item)
+				lvl = lvlsquish(78, 78, 30),
+				groups = {
 					i(44581, {	-- Heroic Key to the Focusing Iris
-						["timeline"] = { DELETED_4_2_0 },
+						timeline = { DELETED_4_2_0 },
 					}),
 				},
 			}),
@@ -916,9 +916,9 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 		}),
 		n(NAXX_ARACHNID_QUARTER, {
 			e(1601, {	-- Anub'Rekhan
-				["creatureID"] = 15956,	-- Anub'Rekhan
-				["lore"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
-				["groups"] = {
+				creatureID = 15956,	-- Anub'Rekhan
+				lore = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
+				groups = {
 					i(39714),	-- Webbed Death
 					i(39712),	-- Gemmed Wand of the Nerubians
 					i(39716),	-- Shield of Assimilation
@@ -945,9 +945,9 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 				},
 			}),
 			e(1602, {	-- Grand Widow Faerlina
-				["creatureID"] = 15953,	-- Grand Widow Faerlina
-				["lore"] = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
-				["groups"] = {
+				creatureID = 15953,	-- Grand Widow Faerlina
+				lore = "A botanist in life, breeder and caretaker of arachnids in death, she oversees the spider wing, developing the most potent of poisons for the Lich King.",
+				groups = {
 					i(39730),	-- Widow's Fury
 					i(39732),	-- Faerlina's Madness
 					i(39723),	-- Fire-Scorched Greathelm
@@ -971,17 +971,17 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 					i(40108),	-- Seized Beauty
 					i(40074),	-- Strong-Handed Ring
 					i(39757, {	-- Idol of Worship
-						["timeline"] = { REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					i(39728, {	-- Totem of Misery
-						["timeline"] = { REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 				},
 			}),
 			e(1603, {	-- Maexxna
-				["creatureID"] = 15952,	-- Maexxna
-				["lore"] = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
-				["groups"] = {
+				creatureID = 15952,	-- Maexxna
+				lore = "Born deep within the mountains of Northrend many ages ago, she was captured within the dread citadel Naxxramas, where she gives birth to her brood, feeding them the corpses of all who dare venture too deeply into Naxxramas.",
+				groups = {
 					i(39758),	-- The Jawbone
 					i(39763),	-- Wraith Strike
 					i(39766),	-- Matriarch's Spawn
@@ -1011,9 +1011,9 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 		}),
 		n(NAXX_PLAGUE_QUARTER, {
 			e(1604, {	-- Noth the Plaguebringer
-				["creatureID"] = 15954,	-- Noth the Plaguebringer
-				["lore"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
-				["groups"] = {
+				creatureID = 15954,	-- Noth the Plaguebringer
+				lore = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
+				groups = {
 					i(40189),	-- Angry Dread
 					i(40192),	-- Accursed Spine
 					i(40071),	-- Chains of Adoration
@@ -1037,17 +1037,17 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 					i(40108),	-- Seized Beauty
 					i(40074),	-- Strong-Handed Ring
 					i(40190, {	-- Spinning Fate
-						["timeline"] = { REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					i(40191, {	-- Libram of Radiance
-						["timeline"] = { REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 				},
 			}),
 			e(1605, {	-- Heigan the Unclean
-				["creatureID"] = 15936,	-- Heigan the Unclean
-				["lore"] = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
-				["groups"] = {
+				creatureID = 15936,	-- Heigan the Unclean
+				lore = "The mastermind behind the plague cauldrons that turned the wilderness of Azeroth into the Plaguelands. It is said that Heigan has rigged the very walls and floors of Naxxramas itself with a vast array of traps, which he can trigger at will.",
+				groups = {
 					i(40208),	-- Cryptfiend's Bite
 					i(40233),	-- The Undeath Carrier
 					i(40235),	-- Helm of Pilgrimage
@@ -1072,14 +1072,14 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 					i(40258),	-- Forethought Talisman
 					i(40256),	-- Grim Toll
 					i(40207, {	-- Sigil of Awareness
-						["timeline"] = { REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 				},
 			}),
 			e(1606, {	-- Loatheb
-				["creatureID"] = 16011,	-- Loatheb
-				["lore"] = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
-				["groups"] = {
+				creatureID = 16011,	-- Loatheb
+				lore = "The hideous result of fusing the living plague of the Plaguelands with the bog beasts of Azeroth, Loatheb is said to control the power of healing itself.",
+				groups = {
 					i(40637),	-- Mantle of the Lost Conqueror
 					i(40638),	-- Mantle of the Lost Protector
 					i(40639),	-- Mantle of the Lost Vanquisher
@@ -1098,9 +1098,9 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 		}),
 		n(NAXX_MILITARY_QUARTER, {
 			e(1607, {	-- Instructor Razuvious
-				["creatureID"] = 16061,	-- Instructor Razuvious
-				["lore"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
-				["groups"] = {
+				creatureID = 16061,	-- Instructor Razuvious
+				lore = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
+				groups = {
 					i(40071),	-- Chains of Adoration
 					i(40065),	-- Fool's Trial
 					i(40069),	-- Heritage
@@ -1124,17 +1124,17 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 					i(40108),	-- Seized Beauty
 					i(40074),	-- Strong-Handed Ring
 					i(40321, {	-- Idol of the Shooting Star
-						["timeline"] = { REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					i(40322, {	-- Totem of Dueling
-						["timeline"] = { REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 				},
 			}),
 			e(1608, {	-- Gothik the Harvester
-				["creatureID"] = 16060,	-- Gothik the Harvester
-				["lore"] = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
-				["groups"] = {
+				creatureID = 16060,	-- Gothik the Harvester
+				lore = "A master of necromancy and conjuration, Gothik is said to be able to beckon forth legions of the undead at a moment's notice. It is with his guidance that even the weakest of Death Knights can raise the dead.",
+				groups = {
 					i(40336),	-- Life and Death
 					i(40335),	-- Touch of Horror
 					i(40339),	-- Gothik's Cowl
@@ -1158,23 +1158,23 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 					i(40258),	-- Forethought Talisman
 					i(40256),	-- Grim Toll
 					i(40342, {	-- Idol of Awakening
-						["timeline"] = { REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					i(40337, {	-- Libram of Resurgence
-						["timeline"] = { REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 				},
 			}),
 			e(1609, {	-- The Four Horsemen
-				["crs"] = {
+				crs = {
 					30549,	-- Baron Rivendare
 					16064,	-- Thane Korth'azz
 					16065,	-- Lady Blaumeux
 					16063,	-- Sir Zeliek
 				},
-				["lore"] = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
-				["provider"] = { "o", 193426 },	-- Four Horsemen Chest
-				["groups"] = {
+				lore = "The most powerful death knights within Naxxramas are the four horsemen. They represent the pinnacle of Kel'Thuzad's guard. The first, Thane Korth'azz, holds the power of flame. The next, Lady Blaumeux, calls forth the power of shadows, drawing the souls of the living into the voracious embrace. Sir Zeliek, a paladin in life, so strong in his faith, that even in undeath, the power of the light still heeds his call, smiting his foes in battle. The final death knight, Lord Mograine, was the finest warrior that the death knights had ever seen. However, after the events of Azeroth, he vanished without a trace. Kel'Thuzad has appointed Baron Rivendare in his place.",
+				provider = { "o", 193426 },	-- Four Horsemen Chest
+				groups = {
 					i(40625),	-- Breastplate of the Lost Conqueror
 					i(40626),	-- Breastplate of the Lost Protector
 					i(40627),	-- Breastplate of the Lost Vanquisher
@@ -1193,9 +1193,9 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 		}),
 		n(NAXX_CONSTRUCT_QUARTER, {
 			e(1610, {	-- Patchwerk
-				["creatureID"] = 16028,	-- Patchwerk
-				["lore"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
-				["groups"] = {
+				creatureID = 16028,	-- Patchwerk
+				lore = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
+				groups = {
 					i(40264),	-- Split Greathammer
 					i(40265),	-- Arrowsong
 					i(40266),	-- Hero's Surrender
@@ -1219,17 +1219,17 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 					i(40108),	-- Seized Beauty
 					i(40074),	-- Strong-Handed Ring
 					i(40268, {	-- Libram of Tolerance
-						["timeline"] = { REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					i(40267, {	-- Totem of Hex
-						["timeline"] = { REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 				},
 			}),
 			e(1611, {	-- Grobbulus
-				["creatureID"] = 15931,	-- Grobbulus
-				["lore"] = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
-				["groups"] = {
+				creatureID = 15931,	-- Grobbulus
+				lore = "The first of what was to be an army of flesh giants. It carried the plague slime of Naxxramas within its body, injecting the living ooze into the bodies of its foe. The recipient of this foul injection would usually flee to his allies, bringing them down with him.",
+				groups = {
 					i(40280),	-- Origin of Nightmares
 					i(40281),	-- Twilight Mist
 					i(40284),	-- Plague Igniter
@@ -1257,9 +1257,9 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 				},
 			}),
 			e(1612, {	-- Gluth
-				["creatureID"] = 15932,	-- Gluth
-				["lore"] = "The foul plague-dog of Naxxramas was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
-				["sym"] = {
+				creatureID = 15932,	-- Gluth
+				lore = "The foul plague-dog of Naxxramas was said to have an appetite so voracious that even the living were not enough to satisfy his hunger. Feugen was said to feed him an army of zombies daily, recycling the remains of undead too weak to use in combat.",
+				sym = {
 					{"select","instanceID",754},{"pop"},	-- Naxx
 					-- #if NOT NAXX_10MAN_DROPS_25MAN_LOOT
 					{"where","difficultyID",4},	-- 25 Difficulty
@@ -1278,9 +1278,9 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 				},
 			}),
 			e(1613, {	-- Thaddius
-				["creatureID"] = 15928,	-- Thaddius
-				["lore"] = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
-				["groups"] = {
+				creatureID = 15928,	-- Thaddius
+				lore = "Built from the flesh of women and children, it is said that their souls are fused together - eternally bound within that foul prison of flesh.",
+				groups = {
 					i(40634),	-- Legplates of the Lost Conqueror
 					i(40635),	-- Legplates of the Lost Protector
 					i(40636),	-- Legplates of the Lost Vanquisher
@@ -1299,9 +1299,9 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 		}),
 		n(NAXX_UPPER_NECROPOLIS, {
 			e(1614, {	-- Sapphiron
-				["creatureID"] = 15989,	-- Sapphiron
-				["lore"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
-				["groups"] = {
+				creatureID = 15989,	-- Sapphiron
+				lore = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
+				groups = {
 					i(44577),	-- Heroic Key to the Focusing Iris (Item)
 					i(40368),	-- Murder
 					i(40366),	-- Platehelm of the Great Wyrm
@@ -1326,9 +1326,9 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 				},
 			}),
 			e(1615, {	-- Kel'Thuzad
-				["creatureID"] = 15990,	-- Kel'Thuzad
-				["lore"] = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
-				["groups"] = {
+				creatureID = 15990,	-- Kel'Thuzad
+				lore = "He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",
+				groups = {
 					i(40631),	-- Crown of the Lost Conqueror
 					i(40632),	-- Crown of the Lost Protector
 					i(40633),	-- Crown of the Lost Vanquisher
@@ -1356,9 +1356,9 @@ local NAXX_25MAN_LOOT = d(NAXX_25MAN_DIFFICULTY_ID, {
 -- Shared 10/25 Man Content
 -- #if AFTER 5.1.0
 local NAXX_SHARED_CONTENT = d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
-	["description"] = "With the release of Defense Protocol Alpha, loot that originally dropped in 10 man Naxx was moved to the DPA level difficulty dungeons and 10 man Naxx itself was upgraded to drop its 25 man loot instead.",
-	["lvl"] = lvlsquish(80, 80, 30),
-	["groups"] = {
+	description = "With the release of Defense Protocol Alpha, loot that originally dropped in 10 man Naxx was moved to the DPA level difficulty dungeons and 10 man Naxx itself was upgraded to drop its 25 man loot instead.",
+	lvl = lvlsquish(80, 80, 30),
+	groups = {
 		-- #if NAXX_10MAN_DROPS_25MAN_LOOT
 		n(QUESTS),
 		n(ZONE_DROPS),
@@ -1368,10 +1368,10 @@ local NAXX_SHARED_CONTENT = d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 			e(1601),	-- Anub'Rekhan
 			-- #endif
 			e(1603, {	-- Maexxna
-				["creatureID"] = 15952,	-- Maexxna
-				["groups"] = {
+				creatureID = 15952,	-- Maexxna
+				groups = {
 					i(93030, {	-- Giant Bone Spider (PET!)
-						["timeline"] = { ADDED_5_1_0 },
+						timeline = { ADDED_5_1_0 },
 					}),
 				},
 			}),
@@ -1382,10 +1382,10 @@ local NAXX_SHARED_CONTENT = d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 			e(1605),	-- Heigan the Unclean
 			-- #endif
 			e(1606, {	-- Loatheb
-				["creatureID"] = 16011,	-- Loatheb
-				["groups"] = {
+				creatureID = 16011,	-- Loatheb
+				groups = {
 					i(93032, {	-- Fungal Abomination (PET!)
-						["timeline"] = { ADDED_5_1_0 },
+						timeline = { ADDED_5_1_0 },
 					}),
 				},
 			}),
@@ -1399,10 +1399,10 @@ local NAXX_SHARED_CONTENT = d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 			e(1611),	-- Grobbulus
 			-- #endif
 			e(1612, {	-- Gluth
-				["creatureID"] = 15932,	-- Gluth
-				["groups"] = {
+				creatureID = 15932,	-- Gluth
+				groups = {
 					i(93029, {	-- Stitched Pup (PET!)
-						["timeline"] = { ADDED_5_1_0 },
+						timeline = { ADDED_5_1_0 },
 					}),
 				},
 			}),
@@ -1416,10 +1416,10 @@ local NAXX_SHARED_CONTENT = d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 			e(1614),	-- Sapphiron
 			-- #endif
 			e(1615, {	-- Kel'Thuzad
-				["creatureID"] = 15990,	-- Kel'Thuzad
-				["groups"] = {
+				creatureID = 15990,	-- Kel'Thuzad
+				groups = {
 					i(122197, {	-- Music Roll: Wrath of the Lich King
-						["timeline"] = { ADDED_6_1_0 },
+						timeline = { ADDED_6_1_0 },
 					}),
 				},
 			}),
@@ -1435,82 +1435,82 @@ local NAXX_SHARED_CONTENT = d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 local DEATHS_BARGAINING_CHIP = 206576;
 -- #endif
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
 inst(754, {	-- Naxxramas
 	-- #if AFTER 10.1.5
-	["description"] = "Make sure you go through 'Wards of the Dread Citadel' prior to farming this raid, then you will be able to obtain Scourgestones and special reagents during your grind. See the respective header for more information.",
+	description = "Make sure you go through 'Wards of the Dread Citadel' prior to farming this raid, then you will be able to obtain Scourgestones and special reagents during your grind. See the respective header for more information.",
 	-- #endif
-	["mapID"] = NAXXRAMAS,
-	["coords"] = {
+	mapID = NAXXRAMAS,
+	coords = {
 		{ 87.4, 51.1, DRAGONBLIGHT },
 		-- #if AFTER 10.1.5
 		{ 35.7, 22.9, EASTERN_PLAGUELANDS },
 		-- #endif
 	},
-	["maps"] = { NAXXRAMAS_LEVEL2, NAXXRAMAS_LEVEL3, NAXXRAMAS_LEVEL4, NAXXRAMAS_LEVEL5, NAXXRAMAS_LEVEL6 },
+	maps = { NAXXRAMAS_LEVEL2, NAXXRAMAS_LEVEL3, NAXXRAMAS_LEVEL4, NAXXRAMAS_LEVEL5, NAXXRAMAS_LEVEL6 },
 	-- #if NOT ANYCLASSIC
-	["sharedLockout"] = 1,
+	sharedLockout = 1,
 	-- #endif
-	["isRaid"] = true,
-	["groups"] = appendGroups(
+	isRaid = true,
+	groups = appendGroups(
 		-- #if AFTER 7.2.0
 		{
 			-- #if AFTER 10.1.5
-			header(HEADERS.Achievement, 18372, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {		-- Wards of the Dread Citadel
-				["description"] = "With 10.1.5, Blizzard readded vanilla Naxxramas and the tier 3 crafts. Unlocking this content requires completing following stages:\n\nStages 1-3 takes place in Scholomance and Plaguelands, see instructions in the 'Wards of the Dread Citadel'-header in the respective zones.\n\nThe following stages takes place in Naxxramas, and you can get here from Eastern Plaguelands by using a portal at coordinates 35.7, 23.1. It is recommended to proceed with a Gnome or Goblin due to required parkouring in tight spaces.\nRequired items:\nAt least 1x Stratholme Holy Water\n3x Dark Rune\n20x Invader's Scourgestones\n1x Black Coffee, bought in Shattrath (70.6, 51.8) / Stormwind (69.4, 65.4)\n2x Speed potions if you do not have an ability like Burning Rush.\n\nStage 4: Makeshift Grappling Hook, see the instructions in the subheader below.\n\nStage 5: Mutually Beneficial Transactions, see the instructions in the subheader below.\n\nStage 6: Forgotten Knowledge, see the instructions in the subheader below.\n\nCongratulations, all is unlocked and welcome to the grind!",
-				["groups"] = {
+			header(HEADERS.Achievement, 18372, bubbleDown({ timeline = { ADDED_10_1_5 } }, {		-- Wards of the Dread Citadel
+				description = "With 10.1.5, Blizzard readded vanilla Naxxramas and the tier 3 crafts. Unlocking this content requires completing following stages:\n\nStages 1-3 takes place in Scholomance and Plaguelands, see instructions in the 'Wards of the Dread Citadel'-header in the respective zones.\n\nThe following stages takes place in Naxxramas, and you can get here from Eastern Plaguelands by using a portal at coordinates 35.7, 23.1. It is recommended to proceed with a Gnome or Goblin due to required parkouring in tight spaces.\nRequired items:\nAt least 1x Stratholme Holy Water\n3x Dark Rune\n20x Invader's Scourgestones\n1x Black Coffee, bought in Shattrath (70.6, 51.8) / Stormwind (69.4, 65.4)\n2x Speed potions if you do not have an ability like Burning Rush.\n\nStage 4: Makeshift Grappling Hook, see the instructions in the subheader below.\n\nStage 5: Mutually Beneficial Transactions, see the instructions in the subheader below.\n\nStage 6: Forgotten Knowledge, see the instructions in the subheader below.\n\nCongratulations, all is unlocked and welcome to the grind!",
+				groups = {
 					header(HEADERS.Item, 206473, {	-- Makeshift Grappling Hook
-						["description"] = "1. First you need to create a Makeshift Grappling Hook from the following items:\n\n1.1 Abomination's Chain can be fished from any slime (green liquid), like the small pool just inside Arachnid Quarter.\n\n1.2 Faerlina's Sewing Kit drops from Grand Widow Faerlina in the Arachnid Quarter.\n\n1.3 Construct's Hook can be found on a handle under a vat of slime on the right side of the second room of the Construct Quarter.\n\n2. Use your Makeshift Grappling Hook to get access to grapple points inside Naxxramas on an account-wide basis.\n\n",
-						["groups"] = {
+						description = "1. First you need to create a Makeshift Grappling Hook from the following items:\n\n1.1 Abomination's Chain can be fished from any slime (green liquid), like the small pool just inside Arachnid Quarter.\n\n1.2 Faerlina's Sewing Kit drops from Grand Widow Faerlina in the Arachnid Quarter.\n\n1.3 Construct's Hook can be found on a handle under a vat of slime on the right side of the second room of the Construct Quarter.\n\n2. Use your Makeshift Grappling Hook to get access to grapple points inside Naxxramas on an account-wide basis.\n\n",
+						groups = {
 							prof(FISHING, {
 								i(206471, {	-- Abomination's Chain
-									["description"] = "Chance to be fished from any slime in Naxxramas.",
-									["sourceQuests"] = {
+									description = "Chance to be fished from any slime in Naxxramas.",
+									sourceQuests = {
 										76263,	-- The Dread Citadel - Naxxramas [Honored]
 										76264,	-- The Dread Citadel - Naxxramas [Revered]
 										76265,	-- The Dread Citadel - Naxxramas [Exalted]
 									},
-									["sourceQuestNumRequired"] = 1,
-									["requireSkill"] = FISHING,
+									sourceQuestNumRequired = 1,
+									requireSkill = FISHING,
 								}),
 							}),
 							ignoreTimeline(e(1602, {	-- Grand Widow Faerlina
-								["creatureID"] = 15953,	-- Grand Widow Faerlina
-								["groups"] = {
+								creatureID = 15953,	-- Grand Widow Faerlina
+								groups = {
 									i(206472, {	-- Faerlina's Sewing Kit
-										["sourceQuests"] = {
+										sourceQuests = {
 											76263,	-- The Dread Citadel - Naxxramas [Honored]
 											76264,	-- The Dread Citadel - Naxxramas [Revered]
 											76265,	-- The Dread Citadel - Naxxramas [Exalted]
 										},
-										["sourceQuestNumRequired"] = 1,
-										["timeline"] = { ADDED_10_1_5 },
+										sourceQuestNumRequired = 1,
+										timeline = { ADDED_10_1_5 },
 									}),
 								},
 							})),
 							n(TREASURES, {
 								o(403722, {	-- Conveniently Misplaced Hook
-									["description"] = "Located in the second room of the Construct Quarter, by a vat of slime to the right.",
-									["sourceQuests"] = {
+									description = "Located in the second room of the Construct Quarter, by a vat of slime to the right.",
+									sourceQuests = {
 										76263,	-- The Dread Citadel - Naxxramas [Honored]
 										76264,	-- The Dread Citadel - Naxxramas [Revered]
 										76265,	-- The Dread Citadel - Naxxramas [Exalted]
 									},
-									["sourceQuestNumRequired"] = 1,
-									["groups"] = {
+									sourceQuestNumRequired = 1,
+									groups = {
 										i(206470),	-- Construct's Hook
 									},
 								}),
 							}),
 							n(SPECIAL, {
 								i(206473, {	-- Makeshift Grappling Hook (CI!)
-									["sourceQuests"] = {
+									sourceQuests = {
 										76263,	-- The Dread Citadel - Naxxramas [Honored]
 										76264,	-- The Dread Citadel - Naxxramas [Revered]
 										76265,	-- The Dread Citadel - Naxxramas [Exalted]
 									},
-									["sourceQuestNumRequired"] = 1,
-									["cost"] = {
+									sourceQuestNumRequired = 1,
+									cost = {
 										{ "i", 206471, 1 },	-- 1x Abomination's Chain
 										{ "i", 206470, 1 },	-- 1x Construct's Hook
 										{ "i", 206472, 1 },	-- 1x Faerlina's Sewing Kit
@@ -1520,22 +1520,22 @@ inst(754, {	-- Naxxramas
 						},
 					}),
 					header(HEADERS.Spell, 413989, {	-- Mutually Beneficial Transactions
-						["description"] = "1. Kill all bosses in Construct Quarter, and walk back to the entrance of The Halls of Reanimation.\n\n2. Walk up the slope to the platform on left side, and you should see two Grapple Point on two ledges to the left side. Grapple to the southern ledge.\n\n3. Speed-jump (Burning Rush/Speed potion) to the platform northeast of the ledge, and position yourself such that you are facing the corresponding platform to the northern ledge. Said platform is connected to a wall structure with two windows on the top. The left window ledge is the location of the next grappling point. Grapple up to it.\n\n4. Jump down to the brown ledge following the wall in a northeastern direction and around the corner, then over the skull on the wall, and back in a southeastern direction. The next grapple point is across the gap to a window ledge on left side, grapple to it.\n\n5. Follow the ledge in a southwestern direction and around the corner. You should see two pipe ends on the wall in front of you, the next grappling point on the left pipe. Grapple to it.\n\n6. Facing the position you grappled from, you should see Zackett Skullsmash on a window ledge. Jump down to the NPC.\n\n7. Use Stratholme Holy Water on Zackett Skullsmash and accept the quest Inconvenience Fee. You should have all required items on you and be able to turn it in immediately. This unlocks Zackett Skullsmash on an account-wide basis, and the Goblin will move to the central ring.\n\n8. You can safely get down by jumping down to the ledge above the entrance to the room, and leave through the Naxxramas Portal located where you killed Thaddius.\n\n",
-						["groups"] = {
+						description = "1. Kill all bosses in Construct Quarter, and walk back to the entrance of The Halls of Reanimation.\n\n2. Walk up the slope to the platform on left side, and you should see two Grapple Point on two ledges to the left side. Grapple to the southern ledge.\n\n3. Speed-jump (Burning Rush/Speed potion) to the platform northeast of the ledge, and position yourself such that you are facing the corresponding platform to the northern ledge. Said platform is connected to a wall structure with two windows on the top. The left window ledge is the location of the next grappling point. Grapple up to it.\n\n4. Jump down to the brown ledge following the wall in a northeastern direction and around the corner, then over the skull on the wall, and back in a southeastern direction. The next grapple point is across the gap to a window ledge on left side, grapple to it.\n\n5. Follow the ledge in a southwestern direction and around the corner. You should see two pipe ends on the wall in front of you, the next grappling point on the left pipe. Grapple to it.\n\n6. Facing the position you grappled from, you should see Zackett Skullsmash on a window ledge. Jump down to the NPC.\n\n7. Use Stratholme Holy Water on Zackett Skullsmash and accept the quest Inconvenience Fee. You should have all required items on you and be able to turn it in immediately. This unlocks Zackett Skullsmash on an account-wide basis, and the Goblin will move to the central ring.\n\n8. You can safely get down by jumping down to the ledge above the entrance to the room, and leave through the Naxxramas Portal located where you killed Thaddius.\n\n",
+						groups = {
 							n(206572, {	-- Zackett Skullsmash
-								["sourceQuests"] = { 76390 },	-- Inconvenience Fee
-								["groups"] = {
+								sourceQuests = { 76390 },	-- Inconvenience Fee
+								groups = {
 									i(206573, {	-- Dented Raider's Belt
-										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = "Includes a wide range of Bind on Equip (BoE) Belts from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-										["groups"] = {
+										cost = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
+										description = "Includes a wide range of Bind on Equip (BoE) Belts from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
+										groups = {
 											i(206609),	-- Lamented Crusader's Belt
 										},
 									}),
 									i(206575, {	-- Dented Raider's Boots
-										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = "Includes a wide range of Bind on Equip (BoE) Boots from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-										["groups"] = {
+										cost = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
+										description = "Includes a wide range of Bind on Equip (BoE) Boots from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
+										groups = {
 											i(10402),	-- Blackened Defias Boots
 											i(206611),	-- Lamented Crusader's Boots
 											i(7187),	-- VanCleef's Boots
@@ -1543,81 +1543,81 @@ inst(754, {	-- Naxxramas
 										},
 									}),
 									i(206571, {	-- Dented Raider's Bracers
-										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = "Includes a wide range of Bind on Equip (BoE) Bracers from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-										["groups"] = {
+										cost = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
+										description = "Includes a wide range of Bind on Equip (BoE) Bracers from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
+										groups = {
 											i(206607),	-- Lamented Crusader's Bracers
 										},
 									}),
 									i(206570, {	-- Dented Raider's Chestpiece
-										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = "Includes a wide range of Bind on Equip (BoE) Chestpieces from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-										["groups"] = {
+										cost = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
+										description = "Includes a wide range of Bind on Equip (BoE) Chestpieces from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
+										groups = {
 											i(206606),	-- Lamented Crusader's Chestpiece
 											i(3019),	-- Noble's Robe
 										},
 									}),
 									i(206572, {	-- Dented Raider's Gauntlets
-										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = "Includes a wide range of Bind on Equip (BoE) Gauntlets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-										["groups"] = {
+										cost = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
+										description = "Includes a wide range of Bind on Equip (BoE) Gauntlets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
+										groups = {
 											i(206608),	-- Lamented Crusader's Gauntlets
 											-- i(1944),	-- Metalworking Gloves				Added to original Source in 10.1.7
 											-- i(1945),	-- Woodworking Gloves				Added to original Source in 10.1.7
 										},
 									}),
 									i(206568, {	-- Dented Raider's Helmet
-										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = "Includes a wide range of Bind on Equip (BoE) Helmets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-										["groups"] = {
+										cost = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
+										description = "Includes a wide range of Bind on Equip (BoE) Helmets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
+										groups = {
 											i(206604),	-- Lamented Crusader's Helmet
 										},
 									}),
 									i(206574, {	-- Dented Raider's Leggings
-										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = "Includes a wide range of Bind on Equip (BoE) Leggings from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-										["groups"] = {
+										cost = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
+										description = "Includes a wide range of Bind on Equip (BoE) Leggings from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
+										groups = {
 											-- i(1943),	-- Goblin Mail Leggings				Added to original Source in 10.1.7
 											-- i(2978),	-- Veteran Leggings					-- Likely added back. Add when confirmed
 											i(206610),	-- Lamented Crusader's Leggings
 										},
 									}),
 									i(206569, {	-- Dented Raider's Spaulders
-										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
-										["description"] = "Includes a wide range of Bind on Equip (BoE) Spaulders from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-										["groups"] = {
+										cost = { { "i", DEATHS_BARGAINING_CHIP, 3 } },
+										description = "Includes a wide range of Bind on Equip (BoE) Spaulders from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
+										groups = {
 											i(206605),	-- Lamented Crusader's Spaulders
 										},
 									}),
 									i(206771, {	-- Pattern: Cursed Cloth (RECIPE!)
-										["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
-										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
+										sourceAchievements = { 11744 },	-- Drop Dead, Gorgeous
+										cost = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
 									}),
 									i(206772, {	-- Pattern: Languished Leather (RECIPE!)
-										["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
-										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
+										sourceAchievements = { 11744 },	-- Drop Dead, Gorgeous
+										cost = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
 									}),
 									i(206773, {	-- Pattern: Scourged Scales (RECIPE!)
-										["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
-										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
+										sourceAchievements = { 11744 },	-- Drop Dead, Gorgeous
+										cost = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
 									}),
 									i(206774, {	-- Plans: Undeath Metal (RECIPE!)
-										["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
-										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
+										sourceAchievements = { 11744 },	-- Drop Dead, Gorgeous
+										cost = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
 									}),
 									i(206579, {	-- Phylacterweave
 										-- Dont symlink it Dented tokens, makes it too spammy
-										["description"] = "Can also drop from any Dented Raider's Token.\nChanged to Bind on Account in 10.1.7",
+										description = "Can also drop from any Dented Raider's Token.\nChanged to Bind on Account in 10.1.7",
 									}),
 									i(206565, {	-- Plagued Grain (TOY!)
-										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 15 } },
+										cost = { { "i", DEATHS_BARGAINING_CHIP, 15 } },
 									}),
 									i(208068, {	-- Rotten Delicious
-										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 30 } },
+										cost = { { "i", DEATHS_BARGAINING_CHIP, 30 } },
 									}),
 									i(206577, {	-- Slime-Covered Scroll
-										["cost"] = { { "i", DEATHS_BARGAINING_CHIP, 12 } },
-										["groups"] = {
+										cost = { { "i", DEATHS_BARGAINING_CHIP, 12 } },
+										groups = {
 											i(206552),	-- Ancient Design: Frostwyrm's Frigid Stare (RECIPE!)
 											i(206551),	-- Ancient Design: Frostwyrm's Icy Gaze (RECIPE!)
 											i(206543),	-- Ancient Design: Gem of the Nerubians (RECIPE!)
@@ -1657,25 +1657,25 @@ inst(754, {	-- Naxxramas
 							}),
 							n(QUESTS, {
 								q(76395, {	-- Corruptor's Scourgestones
-									["sourceQuests"] = { 76390 },	-- Inconvenience Fee
-									["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-									["cost"] = { { "i", 206375, 1 } },	-- 1x Corruptor's Scourgestone
-									["repeatable"] = true,
-									["groups"] = {
+									sourceQuests = { 76390 },	-- Inconvenience Fee
+									provider = { "n", 206572 },	-- Zackett Skullsmash
+									cost = { { "i", 206375, 1 } },	-- 1x Corruptor's Scourgestone
+									repeatable = true,
+									groups = {
 										i(DEATHS_BARGAINING_CHIP),
 									},
 								}),
 								q(76390, {	-- Inconvenience Fee
-									["sourceQuests"] = { 76307 },	-- Makeshift Grappling Hook
-									["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-									["cost"] = {
+									sourceQuests = { 76307 },	-- Makeshift Grappling Hook
+									provider = { "n", 206572 },	-- Zackett Skullsmash
+									cost = {
 										{ "i", 206374, 20 },	-- 20x Invader's Scourgestone
 										{ "i", 206375, 5 },	-- 5x Corruptor's Scourgestone
 										{ "i", 20520, 3 },	-- 3x Dark Rune
 										{ "i", 33042, 1 },	-- 1x Black Coffee
 										{ "i", 13180, 2 },	-- 2x Stratholme Holy Water
 									},
-									["groups"] = {
+									groups = {
 										i(206615),	-- Desecrated Cloth Bracers
 										i(206623),	-- Desecrated Leather Bracers
 										i(206631),	-- Desecrated Mail Bracers
@@ -1683,29 +1683,29 @@ inst(754, {	-- Naxxramas
 									},
 								}),
 								q(76396, {	-- Invader's Scourgestones
-									["sourceQuests"] = { 76390 },	-- Inconvenience Fee
-									["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-									["cost"] = { { "i", 206374, 10 } },	-- 10x Invader's Scourgestone
-									["repeatable"] = true,
-									["groups"] = {
+									sourceQuests = { 76390 },	-- Inconvenience Fee
+									provider = { "n", 206572 },	-- Zackett Skullsmash
+									cost = { { "i", 206374, 10 } },	-- 10x Invader's Scourgestone
+									repeatable = true,
+									groups = {
 										i(DEATHS_BARGAINING_CHIP),
 									},
 								}),
 								q(77244, {	-- Many Corruptor's Scourgestones
-									["sourceQuests"] = { 76390 },	-- Inconvenience Fee
-									["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-									["cost"] = { { "i", 206375, 5 } },	-- 5x Corruptor's Scourgestone
-									["repeatable"] = true,
-									["groups"] = {
+									sourceQuests = { 76390 },	-- Inconvenience Fee
+									provider = { "n", 206572 },	-- Zackett Skullsmash
+									cost = { { "i", 206375, 5 } },	-- 5x Corruptor's Scourgestone
+									repeatable = true,
+									groups = {
 										i(DEATHS_BARGAINING_CHIP),
 									},
 								}),
 								q(77245, {	-- Many Invader's Scourgestones
-									["sourceQuests"] = { 76390 },	-- Inconvenience Fee
-									["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-									["cost"] = { { "i", 206374, 50 } },	-- 50x Invader's Scourgestone
-									["repeatable"] = true,
-									["groups"] = {
+									sourceQuests = { 76390 },	-- Inconvenience Fee
+									provider = { "n", 206572 },	-- Zackett Skullsmash
+									cost = { { "i", 206374, 50 } },	-- 50x Invader's Scourgestone
+									repeatable = true,
+									groups = {
 										i(DEATHS_BARGAINING_CHIP),
 									},
 								}),
@@ -1713,161 +1713,161 @@ inst(754, {	-- Naxxramas
 						},
 					}),
 					header(HEADERS.Spell, 413594, {	-- Forgotten Knowledge
-						["description"] = "1. Enter the Military Quarter and walk straight into the end wall of the second room. On your right side is a cage containing Omarion's Second Handbook. Loot it and accept the quest.\n\n2. Get back to the central ring and use the portal to Eastern Plaguelands, and turn in the quest in Light's Hope Chapel. This will reward you with the ability to collect the missing recipes and buy them from Master Craftsman Omarion on an account-wide basis.\n\n3. Now, you still need to collect the lost pages and return them to Omarion. There are 16 double-pages to collect, and the respective pages have descriptions giving information about where to find them. The pages are somewhat in order:\n\nArachnid Quarter:\nPages 3 and 4 -> Pages 5 and 6 ->\nPages 1 and 2 -> Pages 7 and 8.\n\nConstruct Quarter:\nPages 9 and 10 = Pages 11 and 12 =\nPages 13 and 14 -> Pages 15 and 16.\n\nPlague Quarter:\nPages 17 and 18 -> Pages 19 and 20 ->\nPages 21 and 22 -> Pages 23 and 24\n\nMilitary Quarter:\nPages 29 and 30 -> Pages 31 and 32 ->\nPages 25 and 26 -> Pages 27 and 28\n\n4. Return to Master Craftsman Omarion with the lost pages and all his recipes will become available on an account-wide basis.",
-						["groups"] = {
+						description = "1. Enter the Military Quarter and walk straight into the end wall of the second room. On your right side is a cage containing Omarion's Second Handbook. Loot it and accept the quest.\n\n2. Get back to the central ring and use the portal to Eastern Plaguelands, and turn in the quest in Light's Hope Chapel. This will reward you with the ability to collect the missing recipes and buy them from Master Craftsman Omarion on an account-wide basis.\n\n3. Now, you still need to collect the lost pages and return them to Omarion. There are 16 double-pages to collect, and the respective pages have descriptions giving information about where to find them. The pages are somewhat in order:\n\nArachnid Quarter:\nPages 3 and 4 -> Pages 5 and 6 ->\nPages 1 and 2 -> Pages 7 and 8.\n\nConstruct Quarter:\nPages 9 and 10 = Pages 11 and 12 =\nPages 13 and 14 -> Pages 15 and 16.\n\nPlague Quarter:\nPages 17 and 18 -> Pages 19 and 20 ->\nPages 21 and 22 -> Pages 23 and 24\n\nMilitary Quarter:\nPages 29 and 30 -> Pages 31 and 32 ->\nPages 25 and 26 -> Pages 27 and 28\n\n4. Return to Master Craftsman Omarion with the lost pages and all his recipes will become available on an account-wide basis.",
+						groups = {
 							o(403702, {	-- Lost Page
-								["description"] = "Pages 1 and 2 of Omarion's Notes can be found in the Outer Ring of Naxxramas, inside the slime pool that separates the Construct and Arachnid Quarters, to the north of the instance. It will be at the bottom of the pool.",
-								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-								["groups"] = {
+								description = "Pages 1 and 2 of Omarion's Notes can be found in the Outer Ring of Naxxramas, inside the slime pool that separates the Construct and Arachnid Quarters, to the north of the instance. It will be at the bottom of the pool.",
+								sourceQuests = { 76290 },	-- Omarion's Second Handbook
+								groups = {
 									i(206450),	-- Omarion's Notes - Pages 1 & 2 (CI!)
 								},
 							}),
 							o(403703, {	-- Lost Page
-								["description"] = "Pages 3 and 4 of Omarion's notes can be found in the first room of the Arachnid Quarter, hidden within the ruined structure by the slime pool.",
-								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-								["groups"] = {
+								description = "Pages 3 and 4 of Omarion's notes can be found in the first room of the Arachnid Quarter, hidden within the ruined structure by the slime pool.",
+								sourceQuests = { 76290 },	-- Omarion's Second Handbook
+								groups = {
 									i(206451),	-- Omarion's Notes - Pages 3 & 4 (CI!)
 								},
 							}),
 							o(403704, {	-- Lost Page
-								["description"] = "Pages 5 and 6 of Omarion's Notes can be found just before entering Faerlina's room - Instead of taking a left to enter the boss room, take a right. Page is hidden beneath some spider eggs.",
-								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-								["groups"] = {
+								description = "Pages 5 and 6 of Omarion's Notes can be found just before entering Faerlina's room - Instead of taking a left to enter the boss room, take a right. Page is hidden beneath some spider eggs.",
+								sourceQuests = { 76290 },	-- Omarion's Second Handbook
+								groups = {
 									i(206452),	-- Omarion's Notes - Pages 5 & 6 (CI!)
 								},
 							}),
 							o(403705, {	-- Lost Page
-								["description"] = "Pages 7 and 8 of Omarion's Notes can be found in Maexxna's Room. Once you enter the room, turn back to face the entrance and look up, there will be a grapple point just above the entrance. Grapple and walk around the outer ring to the eastern end of the room, where the notes will be waiting for you.",
-								["sourceQuests"] = {
+								description = "Pages 7 and 8 of Omarion's Notes can be found in Maexxna's Room. Once you enter the room, turn back to face the entrance and look up, there will be a grapple point just above the entrance. Grapple and walk around the outer ring to the eastern end of the room, where the notes will be waiting for you.",
+								sourceQuests = {
 									76307,	-- Makeshift Grappling Hook
 									76290,	-- Omarion's Second Handbook
 								},
-								["groups"] = {
+								groups = {
 									i(206453),	-- Omarion's Notes - Pages 7 & 8 (CI!)
 								},
 							}),
 							o(403706, {	-- Lost Page
-								["description"] = "Pages 9 and 10 of Omarion's Notes can be found just before the tunnel that leads to Gluth. Before you enter the tunnel, by the pipe after Grobbulus, there will be a grapple point. Simply grapple to it to reach the note.",
-								["sourceQuests"] = {
+								description = "Pages 9 and 10 of Omarion's Notes can be found just before the tunnel that leads to Gluth. Before you enter the tunnel, by the pipe after Grobbulus, there will be a grapple point. Simply grapple to it to reach the note.",
+								sourceQuests = {
 									76307,	-- Makeshift Grappling Hook
 									76290,	-- Omarion's Second Handbook
 								},
-								["groups"] = {
+								groups = {
 									i(206454),	-- Omarion's Notes - Pages 9 & 10 (CI!)
 								},
 							}),
 							o(403707, {	-- Lost Page
-								["description"] = "Pages 11 and 12 of Omarion's Notes can be found in Grobbulus's room. Climb the ramp behind the boss and turn back, you will see a grappling point to a small alcove near the ceiling of the room. Grapple there and walk to the end of the alcove to reach the note.",
-								["sourceQuests"] = {
+								description = "Pages 11 and 12 of Omarion's Notes can be found in Grobbulus's room. Climb the ramp behind the boss and turn back, you will see a grappling point to a small alcove near the ceiling of the room. Grapple there and walk to the end of the alcove to reach the note.",
+								sourceQuests = {
 									76307,	-- Makeshift Grappling Hook
 									76290,	-- Omarion's Second Handbook
 								},
-								["groups"] = {
+								groups = {
 									i(206455),	-- Omarion's Notes - Pages 11 & 12 (CI!)
 								},
 							}),
 							o(403708, {	-- Lost Page
-								["description"] = "Pages 13 and 14 of Omarion's Notes can be found high on the ceiling on the corridor after Patchwerk. To reach the page, start by grabbing a grapple point by the tunnel leading to Gluth, at the broken portion to the left just before dropping to the boss, then follow a small grappling puzzle to get to the page.",
-								["sourceQuests"] = {
+								description = "Pages 13 and 14 of Omarion's Notes can be found high on the ceiling on the corridor after Patchwerk. To reach the page, start by grabbing a grapple point by the tunnel leading to Gluth, at the broken portion to the left just before dropping to the boss, then follow a small grappling puzzle to get to the page.",
+								sourceQuests = {
 									76307,	-- Makeshift Grappling Hook
 									76290,	-- Omarion's Second Handbook
 								},
-								["groups"] = {
+								groups = {
 									i(206456),	-- Omarion's Notes - Pages 13 & 14 (CI!)
 								},
 							}),
 							o(403709, {	-- Lost Page
-								["description"] = "Pages 15 and 16 of Omarion's Notes can be found in Thaddius's room, by grappling on your way towards Zackett Skullsmash as described in the header 'Mutually Beneficial Transactions'. The note is by the second grapple point.",
-								["sourceQuests"] = {
+								description = "Pages 15 and 16 of Omarion's Notes can be found in Thaddius's room, by grappling on your way towards Zackett Skullsmash as described in the header 'Mutually Beneficial Transactions'. The note is by the second grapple point.",
+								sourceQuests = {
 									76307,	-- Makeshift Grappling Hook
 									76290,	-- Omarion's Second Handbook
 								},
-								["groups"] = {
+								groups = {
 									i(206457),	-- Omarion's Notes - Pages 15 & 16 (CI!)
 								},
 							}),
 							o(403710, {	-- Lost Page
-								["description"] = "Pages 17 and 18 of Omarion's Notes can be found in the first room of the Plague Quarter, sitting by a meat wagon just to the left of the entrance. The page does blend in well with the wagon so it can be easy to miss.",
-								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-								["groups"] = {
+								description = "Pages 17 and 18 of Omarion's Notes can be found in the first room of the Plague Quarter, sitting by a meat wagon just to the left of the entrance. The page does blend in well with the wagon so it can be easy to miss.",
+								sourceQuests = { 76290 },	-- Omarion's Second Handbook
+								groups = {
 									i(206458),	-- Omarion's Notes - Pages 17 & 18 (CI!)
 								},
 							}),
 							o(403711, {	-- Lost Page
-								["description"] = "Pages 19 and 20 of Omarion's Notes can be found by the corridor between Noth and Heigan in the Plague Quarter. On the mob gauntlet on the left side, there will be a slime pool covered by a sewer lid, and some mushrooms in the area. The note will be on top of one of the mushrooms.",
-								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-								["groups"] = {
+								description = "Pages 19 and 20 of Omarion's Notes can be found by the corridor between Noth and Heigan in the Plague Quarter. On the mob gauntlet on the left side, there will be a slime pool covered by a sewer lid, and some mushrooms in the area. The note will be on top of one of the mushrooms.",
+								sourceQuests = { 76290 },	-- Omarion's Second Handbook
+								groups = {
 									i(206459),	-- Omarion's Notes - Pages 19 & 20 (CI!)
 								},
 							}),
 							o(403712, {	-- Lost Page
-								["description"] = "Pages 21 and 22 of Omarion's Notes can be found in Loatheb's room, by a gate to the left of where the boss is standing (when looking from the boss's room entrance).",
-								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-								["groups"] = {
+								description = "Pages 21 and 22 of Omarion's Notes can be found in Loatheb's room, by a gate to the left of where the boss is standing (when looking from the boss's room entrance).",
+								sourceQuests = { 76290 },	-- Omarion's Second Handbook
+								groups = {
 									i(206460),	-- Omarion's Notes - Pages 21 & 22 (CI!)
 								},
 							}),
 							o(403713, {	-- Lost Page
-								["description"] = "Pages 23 and 24 of Omarion's Notes can be found by the platform overlooking Noth's room. The platform is accessible by reaching it via the Outer Ring.",
-								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-								["groups"] = {
+								description = "Pages 23 and 24 of Omarion's Notes can be found by the platform overlooking Noth's room. The platform is accessible by reaching it via the Outer Ring.",
+								sourceQuests = { 76290 },	-- Omarion's Second Handbook
+								groups = {
 									i(206461),	-- Omarion's Notes - Pages 23 & 24 (CI!)
 								},
 							}),
 							o(403714, {	-- Lost Page
-								["description"] = "Pages 25 and 26 of Omarion's Notes can be found above the entrance to Gothik's room. Grapple to an upper alcove right at the entrance of the weapon mobs room after Razuvious, then carefully run along the small alcove all the way to Gothik's room to reach the page.",
-								["sourceQuests"] = {
+								description = "Pages 25 and 26 of Omarion's Notes can be found above the entrance to Gothik's room. Grapple to an upper alcove right at the entrance of the weapon mobs room after Razuvious, then carefully run along the small alcove all the way to Gothik's room to reach the page.",
+								sourceQuests = {
 									76307,	-- Makeshift Grappling Hook
 									76290,	-- Omarion's Second Handbook
 								},
-								["groups"] = {
+								groups = {
 									i(206462),	-- Omarion's Notes - Pages 25 & 26 (CI!)
 								},
 							}),
 							o(403715, {	-- Lost Page
-								["description"] = "Pages 27 and 28 of Omarion's Notes can be found in the Four Horsemen room, by a sewer pipe to the left as you enter the room.",
-								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-								["groups"] = {
+								description = "Pages 27 and 28 of Omarion's Notes can be found in the Four Horsemen room, by a sewer pipe to the left as you enter the room.",
+								sourceQuests = { 76290 },	-- Omarion's Second Handbook
+								groups = {
 									i(206463),	-- Omarion's Notes - Pages 27 & 28 (CI!)
 								},
 							}),
 							o(403716, {	-- Lost Page
-								["description"] = "Pages 29 and 30 of Omarion's Notes can be found by the stables in Instructor Razuvious's room. Use the grapple point to an upper alcove by the nest just in front of the entrance of Razuvious's battle arena, then run along the alcove eastwards to reach the note.",
-								["sourceQuests"] = {
+								description = "Pages 29 and 30 of Omarion's Notes can be found by the stables in Instructor Razuvious's room. Use the grapple point to an upper alcove by the nest just in front of the entrance of Razuvious's battle arena, then run along the alcove eastwards to reach the note.",
+								sourceQuests = {
 									76307,	-- Makeshift Grappling Hook
 									76290,	-- Omarion's Second Handbook
 								},
-								["groups"] = {
+								groups = {
 									i(206464),	-- Omarion's Notes - Pages 29 & 30 (CI!)
 								},
 							}),
 							o(403717, {	-- Lost Page
-								["description"] = "Pages 31 and 32 of Omarion's Notes can be found in the room after Razuvious with all the enchanted weapons. By the right, next to the corner, by one of the window frames.",
-								["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-								["groups"] = {
+								description = "Pages 31 and 32 of Omarion's Notes can be found in the room after Razuvious with all the enchanted weapons. By the right, next to the corner, by one of the window frames.",
+								sourceQuests = { 76290 },	-- Omarion's Second Handbook
+								groups = {
 									i(206465),	-- Omarion's Notes - Pages 31 & 32 (CI!)
 								},
 							}),
 							o(403962, {	-- Omarion's Second Handbook
-								["description"] = "Located inside a cage in the first major room of the Military Quarter.",
-								["groups"] = {
+								description = "Located inside a cage in the first major room of the Military Quarter.",
+								groups = {
 									i(206449),	-- Omarion's Second Handbook
 								},
 							}),
 							q(76290, {	-- Omarion's Second Handbook
-								["sourceQuests"] = {
+								sourceQuests = {
 									76263,	-- The Dread Citadel - Naxxramas [Honored]
 									76264,	-- The Dread Citadel - Naxxramas [Revered]
 									76265,	-- The Dread Citadel - Naxxramas [Exalted]
 								},
-								["sourceQuestNumRequired"] = 1,
-								["provider"] = { "i", 206449 },	-- Omarion's Second Handbook
+								sourceQuestNumRequired = 1,
+								provider = { "i", 206449 },	-- Omarion's Second Handbook
 							}),
 						},
 					}),
 					n(COMMON_BOSS_DROPS, {
 						i(206375, {	-- Corruptor's Scourgestone
-							["timeline"] = { ADDED_10_1_5 },
+							timeline = { ADDED_10_1_5 },
 						}),
 					}),
 					n(TIER_THREE_SETS, {
@@ -1875,49 +1875,49 @@ inst(754, {	-- Naxxramas
 						n(CRAFTABLES, {
 							filter(CLOTH, {
 								i(206617, {	-- Desecrated Cloth Belt
-									["cost"] = {
+									cost = {
 										{ "i", 206609, 1 },	-- 1x Lamented Crusader's Belt
 										{ "i", 206645, 1 },	-- 1x Cursed Cloth
 									},
 								}),
 								i(206619, {	-- Desecrated Cloth Boots
-									["cost"] = {
+									cost = {
 										{ "i", 206611, 1 },	-- 1x Lamented Crusader's Boots
 										{ "i", 206645, 1 },	-- 1x Cursed Cloth
 									},
 								}),
 								i(206615, {	-- Desecrated Cloth Bracers
-									["cost"] = {
+									cost = {
 										{ "i", 206607, 1 },	-- 1x Lamented Crusader's Bracers
 										{ "i", 206645, 1 },	-- 1x Cursed Cloth
 									},
 								}),
 								i(206614, {	-- Desecrated Cloth Chestpiece
-									["cost"] = {
+									cost = {
 										{ "i", 206606, 1 },	-- 1x Lamented Crusader's Chestpiece
 										{ "i", 206645, 1 },	-- 1x Cursed Cloth
 									},
 								}),
 								i(206616, {	-- Desecrated Cloth Gauntlets
-									["cost"] = {
+									cost = {
 										{ "i", 206608, 1 },	-- 1x Lamented Crusader's Gauntlets
 										{ "i", 206645, 1 },	-- 1x Cursed Cloth
 									},
 								}),
 								i(206612, {	-- Desecrated Cloth Helmet
-									["cost"] = {
+									cost = {
 										{ "i", 206604, 1 },	-- 1x Lamented Crusader's Helmet
 										{ "i", 206645, 1 },	-- 1x Cursed Cloth
 									},
 								}),
 								i(206618, {	-- Desecrated Cloth Leggings
-									["cost"] = {
+									cost = {
 										{ "i", 206610, 1 },	-- 1x Lamented Crusader's Leggings
 										{ "i", 206645, 1 },	-- 1x Cursed Cloth
 									},
 								}),
 								i(206613, {	-- Desecrated Cloth Spaulders
-									["cost"] = {
+									cost = {
 										{ "i", 206605, 1 },	-- 1x Lamented Crusader's Spaulders
 										{ "i", 206645, 1 },	-- 1x Cursed Cloth
 									},
@@ -1925,49 +1925,49 @@ inst(754, {	-- Naxxramas
 							}),
 							filter(LEATHER, {
 								i(206625, {	-- Desecrated Leather Belt
-									["cost"] = {
+									cost = {
 										{ "i", 206609, 1 },	-- 1x Lamented Crusader's Belt
 										{ "i", 206646, 1 },	-- 1x Languished Leather
 									},
 								}),
 								i(206627, {	-- Desecrated Leather Boots
-									["cost"] = {
+									cost = {
 										{ "i", 206611, 1 },	-- 1x Lamented Crusader's Boots
 										{ "i", 206646, 1 },	-- 1x Languished Leather
 									},
 								}),
 								i(206623, {	-- Desecrated Leather Bracers
-									["cost"] = {
+									cost = {
 										{ "i", 206607, 1 },	-- 1x Lamented Crusader's Bracers
 										{ "i", 206646, 1 },	-- 1x Languished Leather
 									},
 								}),
 								i(206622, {	-- Desecrated Leather Chestpiece
-									["cost"] = {
+									cost = {
 										{ "i", 206606, 1 },	-- 1x Lamented Crusader's Chestpiece
 										{ "i", 206646, 1 },	-- 1x Languished Leather
 									},
 								}),
 								i(206624, {	-- Desecrated Leather Gauntlets
-									["cost"] = {
+									cost = {
 										{ "i", 206608, 1 },	-- 1x Lamented Crusader's Gauntlets
 										{ "i", 206646, 1 },	-- 1x Languished Leather
 									},
 								}),
 								i(206620, {	-- Desecrated Leather Helmet
-									["cost"] = {
+									cost = {
 										{ "i", 206604, 1 },	-- 1x Lamented Crusader's Helmet
 										{ "i", 206646, 1 },	-- 1x Languished Leather
 									},
 								}),
 								i(206626, {	-- Desecrated Leather Leggings
-									["cost"] = {
+									cost = {
 										{ "i", 206610, 1 },	-- 1x Lamented Crusader's Leggings
 										{ "i", 206646, 1 },	-- 1x Languished Leather
 									},
 								}),
 								i(206621, {	-- Desecrated Leather Spaulders
-									["cost"] = {
+									cost = {
 										{ "i", 206605, 1 },	-- 1x Lamented Crusader's Spaulders
 										{ "i", 206646, 1 },	-- 1x Languished Leather
 									},
@@ -1975,49 +1975,49 @@ inst(754, {	-- Naxxramas
 							}),
 							filter(MAIL, {
 								i(206633, {	-- Desecrated Mail Belt
-									["cost"] = {
+									cost = {
 										{ "i", 206609, 1 },	-- 1x Lamented Crusader's Belt
 										{ "i", 206647, 1 },	-- 1x Scourged Scales
 									},
 								}),
 								i(206635, {	-- Desecrated Mail Boots
-									["cost"] = {
+									cost = {
 										{ "i", 206611, 1 },	-- 1x Lamented Crusader's Boots
 										{ "i", 206647, 1 },	-- 1x Scourged Scales
 									},
 								}),
 								i(206631, {	-- Desecrated Mail Bracers
-									["cost"] = {
+									cost = {
 										{ "i", 206607, 1 },	-- 1x Lamented Crusader's Bracers
 										{ "i", 206647, 1 },	-- 1x Scourged Scales
 									},
 								}),
 								i(206630, {	-- Desecrated Mail Chestpiece
-									["cost"] = {
+									cost = {
 										{ "i", 206606, 1 },	-- 1x Lamented Crusader's Chestpiece
 										{ "i", 206647, 1 },	-- 1x Scourged Scales
 									},
 								}),
 								i(206632, {	-- Desecrated Mail Gauntlets
-									["cost"] = {
+									cost = {
 										{ "i", 206608, 1 },	-- 1x Lamented Crusader's Gauntlets
 										{ "i", 206647, 1 },	-- 1x Scourged Scales
 									},
 								}),
 								i(206628, {	-- Desecrated Mail Helmet
-									["cost"] = {
+									cost = {
 										{ "i", 206604, 1 },	-- 1x Lamented Crusader's Helmet
 										{ "i", 206647, 1 },	-- 1x Scourged Scales
 									},
 								}),
 								i(206634, {	-- Desecrated Mail Leggings
-									["cost"] = {
+									cost = {
 										{ "i", 206610, 1 },	-- 1x Lamented Crusader's Leggings
 										{ "i", 206647, 1 },	-- 1x Scourged Scales
 									},
 								}),
 								i(206629, {	-- Desecrated Mail Spaulders
-									["cost"] = {
+									cost = {
 										{ "i", 206605, 1 },	-- 1x Lamented Crusader's Spaulders
 										{ "i", 206647, 1 },	-- 1x Scourged Scales
 									},
@@ -2025,49 +2025,49 @@ inst(754, {	-- Naxxramas
 							}),
 							filter(PLATE, {
 								i(206642, {	-- Desecrated Plate Belt
-									["cost"] = {
+									cost = {
 										{ "i", 206609, 1 },	-- 1x Lamented Crusader's Belt
 										{ "i", 206648, 1 },	-- 1x Undeath Metal
 									},
 								}),
 								i(206644, {	-- Desecrated Plate Boots
-									["cost"] = {
+									cost = {
 										{ "i", 206611, 1 },	-- 1x Lamented Crusader's Boots
 										{ "i", 206648, 1 },	-- 1x Undeath Metal
 									},
 								}),
 								i(206640, {	-- Desecrated Plate Bracers
-									["cost"] = {
+									cost = {
 										{ "i", 206607, 1 },	-- 1x Lamented Crusader's Bracers
 										{ "i", 206648, 1 },	-- 1x Undeath Metal
 									},
 								}),
 								i(206639, {	-- Desecrated Plate Chestpiece
-									["cost"] = {
+									cost = {
 										{ "i", 206606, 1 },	-- 1x Lamented Crusader's Chestpiece
 										{ "i", 206648, 1 },	-- 1x Undeath Metal
 									},
 								}),
 								i(206641, {	-- Desecrated Plate Gauntlets
-									["cost"] = {
+									cost = {
 										{ "i", 206608, 1 },	-- 1x Lamented Crusader's Gauntlets
 										{ "i", 206648, 1 },	-- 1x Undeath Metal
 									},
 								}),
 								i(206636, {	-- Desecrated Plate Helmet
-									["cost"] = {
+									cost = {
 										{ "i", 206604, 1 },	-- 1x Lamented Crusader's Helmet
 										{ "i", 206648, 1 },	-- 1x Undeath Metal
 									},
 								}),
 								i(206643, {	-- Desecrated Plate Leggings
-									["cost"] = {
+									cost = {
 										{ "i", 206610, 1 },	-- 1x Lamented Crusader's Leggings
 										{ "i", 206648, 1 },	-- 1x Undeath Metal
 									},
 								}),
 								i(206637, {	-- Desecrated Plate Spaulders
-									["cost"] = {
+									cost = {
 										{ "i", 206605, 1 },	-- 1x Lamented Crusader's Spaulders
 										{ "i", 206648, 1 },	-- 1x Undeath Metal
 									},
@@ -2076,56 +2076,56 @@ inst(754, {	-- Naxxramas
 						}),
 						cl(DRUID, {
 							i(22490, {	-- Dreamwalker Headpiece
-								["cost"] = {
+								cost = {
 									{ "i", 206620, 1 },	-- 1x Desecrated Leather Helmet
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22491, {	-- Dreamwalker Spaulders
-								["cost"] = {
+								cost = {
 									{ "i", 206621, 1 },	-- 1x Desecrated Leather Spaulders
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22488, {	-- Dreamwalker Tunic
-								["cost"] = {
+								cost = {
 									{ "i", 206622, 1 },	-- 1x Desecrated Leather Chestpiece
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22495, {	-- Dreamwalker Wristguards
-								["cost"] = {
+								cost = {
 									{ "i", 206623, 1 },	-- 1x Desecrated Leather Bracers
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22493, {	-- Dreamwalker Handguards
-								["cost"] = {
+								cost = {
 									{ "i", 206624, 1 },	-- 1x Desecrated Leather Gauntlets
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22494, {	-- Dreamwalker Girdle
-								["cost"] = {
+								cost = {
 									{ "i", 206625, 1 },	-- 1x Desecrated Leather Belt
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22489, {	-- Dreamwalker Legguards
-								["cost"] = {
+								cost = {
 									{ "i", 206626, 1 },	-- 1x Desecrated Leather Leggings
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22492, {	-- Dreamwalker Boots
-								["cost"] = {
+								cost = {
 									{ "i", 206627, 1 },	-- 1x Desecrated Leather Boots
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
@@ -2134,56 +2134,56 @@ inst(754, {	-- Naxxramas
 						}),
 						cl(MAGE, {
 							i(22498, {	-- Frostfire Circlet
-								["cost"] = {
+								cost = {
 									{ "i", 206612, 1 },	-- 1x Desecrated Cloth Helmet
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22499, {	-- Frostfire Shoulderpads
-								["cost"] = {
+								cost = {
 									{ "i", 206613, 1 },	-- 1x Desecrated Cloth Spaulders
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22496, {	-- Frostfire Robe
-								["cost"] = {
+								cost = {
 									{ "i", 206614, 1 },	-- 1x Desecrated Cloth Chestpiece
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22503, {	-- Frostfire Bindings
-								["cost"] = {
+								cost = {
 									{ "i", 206615, 1 },	-- 1x Desecrated Cloth Bracers
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22501, {	-- Frostfire Gloves
-								["cost"] = {
+								cost = {
 									{ "i", 206616, 1 },	-- 1x Desecrated Cloth Gauntlets
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22502, {	-- Frostfire Belt
-								["cost"] = {
+								cost = {
 									{ "i", 206617, 1 },	-- 1x Desecrated Cloth Belt
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22497, {	-- Frostfire Leggings
-								["cost"] = {
+								cost = {
 									{ "i", 206618, 1 },	-- 1x Desecrated Cloth Leggings
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22500, {	-- Frostfire Sandals
-								["cost"] = {
+								cost = {
 									{ "i", 206619, 1 },	-- 1x Desecrated Cloth Boots
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
@@ -2192,56 +2192,56 @@ inst(754, {	-- Naxxramas
 						}),
 						cl(HUNTER, {
 							i(22438, {	-- Cryptstalker Headpiece
-								["cost"] = {
+								cost = {
 									{ "i", 206628, 1 },	-- 1x Desecrated Mail Helmet
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22439, {	-- Cryptstalker Spaulders
-								["cost"] = {
+								cost = {
 									{ "i", 206629, 1 },	-- 1x Desecrated Mail Spaulders
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22436, {	-- Cryptstalker Tunic
-								["cost"] = {
+								cost = {
 									{ "i", 206630, 1 },	-- 1x Desecrated Mail Chestpiece
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22443, {	-- Cryptstalker Wristguards
-								["cost"] = {
+								cost = {
 									{ "i", 206631, 1 },	-- 1x Desecrated Mail Bracers
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22441, {	-- Cryptstalker Handguards
-								["cost"] = {
+								cost = {
 									{ "i", 206632, 1 },	-- 1x Desecrated Mail Gauntlets
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22442, {	-- Cryptstalker Girdle
-								["cost"] = {
+								cost = {
 									{ "i", 206633, 1 },	-- 1x Desecrated Mail Belt
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22437, {	-- Cryptstalker Legguards
-								["cost"] = {
+								cost = {
 									{ "i", 206634, 1 },	-- 1x Desecrated Mail Leggings
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22440, {	-- Cryptstalker Boots
-								["cost"] = {
+								cost = {
 									{ "i", 206635, 1 },	-- 1x Desecrated Mail Boots
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
@@ -2250,56 +2250,56 @@ inst(754, {	-- Naxxramas
 						}),
 						cl(PALADIN, {
 							i(22428, {	-- Redemption Headpiece
-								["cost"] = {
+								cost = {
 									{ "i", 206636, 1 },	-- 1x Desecrated Plate Helmet
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22429, {	-- Redemption Spaulders
-								["cost"] = {
+								cost = {
 									{ "i", 206637, 1 },	-- 1x Desecrated Plate Spaulders
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22425, {	-- Redemption Tunic
-								["cost"] = {
+								cost = {
 									{ "i", 206639, 1 },	-- 1x Desecrated Plate Chestpiece
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22424, {	-- Redemption Wristguards
-								["cost"] = {
+								cost = {
 									{ "i", 206640, 1 },	-- 1x Desecrated Plate Bracers
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22426, {	-- Redemption Handguards
-								["cost"] = {
+								cost = {
 									{ "i", 206641, 1 },	-- 1x Desecrated Plate Gauntlets
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22431, {	-- Redemption Girdle
-								["cost"] = {
+								cost = {
 									{ "i", 206642, 1 },	-- 1x Desecrated Plate Belt
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22427, {	-- Redemption Legguards
-								["cost"] = {
+								cost = {
 									{ "i", 206643, 1 },	-- 1x Desecrated Plate Leggings
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22430, {	-- Redemption Boots
-								["cost"] = {
+								cost = {
 									{ "i", 206644, 1 },	-- 1x Desecrated Plate Boots
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
@@ -2308,56 +2308,56 @@ inst(754, {	-- Naxxramas
 						}),
 						cl(PRIEST, {
 							i(22514, {	-- Circlet of Faith
-								["cost"] = {
+								cost = {
 									{ "i", 206612, 1 },	-- 1x Desecrated Cloth Helmet
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22515, {	-- Shoulderpads of Faith
-								["cost"] = {
+								cost = {
 									{ "i", 206613, 1 },	-- 1x Desecrated Cloth Spaulders
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22512, {	-- Robe of Faith
-								["cost"] = {
+								cost = {
 									{ "i", 206614, 1 },	-- 1x Desecrated Cloth Chestpiece
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22519, {	-- Bindings of Faith
-								["cost"] = {
+								cost = {
 									{ "i", 206615, 1 },	-- 1x Desecrated Cloth Bracers
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22517, {	-- Gloves of Faith
-								["cost"] = {
+								cost = {
 									{ "i", 206616, 1 },	-- 1x Desecrated Cloth Gauntlets
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22518, {	-- Belt of Faith
-								["cost"] = {
+								cost = {
 									{ "i", 206617, 1 },	-- 1x Desecrated Cloth Belt
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22513, {	-- Leggings of Faith
-								["cost"] = {
+								cost = {
 									{ "i", 206618, 1 },	-- 1x Desecrated Cloth Leggings
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22516, {	-- Sandals of Faith
-								["cost"] = {
+								cost = {
 									{ "i", 206619, 1 },	-- 1x Desecrated Cloth Boots
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
@@ -2366,56 +2366,56 @@ inst(754, {	-- Naxxramas
 						}),
 						cl(ROGUE, {
 							i(22478, {	-- Bonescythe Helmet
-								["cost"] = {
+								cost = {
 									{ "i", 206620, 1 },	-- 1x Desecrated Leather Helmet
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22479, {	-- Bonescythe Pauldrons
-								["cost"] = {
+								cost = {
 									{ "i", 206621, 1 },	-- 1x Desecrated Leather Spaulders
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22476, {	-- Bonescythe Breastplate
-								["cost"] = {
+								cost = {
 									{ "i", 206622, 1 },	-- 1x Desecrated Leather Chestpiece
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22483, {	-- Bonescythe Bracers
-								["cost"] = {
+								cost = {
 									{ "i", 206623, 1 },	-- 1x Desecrated Leather Bracers
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22481, {	-- Bonescythe Gauntlets
-								["cost"] = {
+								cost = {
 									{ "i", 206624, 1 },	-- 1x Desecrated Leather Gauntlets
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22482, {	-- Bonescythe Waistguard
-								["cost"] = {
+								cost = {
 									{ "i", 206625, 1 },	-- 1x Desecrated Leather Belt
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22477, {	-- Bonescythe Legplates
-								["cost"] = {
+								cost = {
 									{ "i", 206626, 1 },	-- 1x Desecrated Leather Leggings
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22480, {	-- Bonescythe Sabatons
-								["cost"] = {
+								cost = {
 									{ "i", 206627, 1 },	-- 1x Desecrated Leather Boots
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
@@ -2424,56 +2424,56 @@ inst(754, {	-- Naxxramas
 						}),
 						cl(SHAMAN, {
 							i(22466, {	-- Earthshatter Headpiece
-								["cost"] = {
+								cost = {
 									{ "i", 206628, 1 },	-- 1x Desecrated Mail Helmet
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22467, {	-- Earthshatter Spaulders
-								["cost"] = {
+								cost = {
 									{ "i", 206629, 1 },	-- 1x Desecrated Mail Spaulders
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22464, {	-- Earthshatter Tunic
-								["cost"] = {
+								cost = {
 									{ "i", 206630, 1 },	-- 1x Desecrated Mail Chestpiece
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22471, {	-- Earthshatter Wristguards
-								["cost"] = {
+								cost = {
 									{ "i", 206631, 1 },	-- 1x Desecrated Mail Bracers
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22469, {	-- Earthshatter Handguards
-								["cost"] = {
+								cost = {
 									{ "i", 206632, 1 },	-- 1x Desecrated Mail Gauntlets
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22470, {	-- Earthshatter Girdle
-								["cost"] = {
+								cost = {
 									{ "i", 206633, 1 },	-- 1x Desecrated Mail Belt
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22465, {	-- Earthshatter Legguards
-								["cost"] = {
+								cost = {
 									{ "i", 206634, 1 },	-- 1x Desecrated Mail Leggings
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22468, {	-- Earthshatter Boots
-								["cost"] = {
+								cost = {
 									{ "i", 206635, 1 },	-- 1x Desecrated Mail Boots
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
@@ -2482,56 +2482,56 @@ inst(754, {	-- Naxxramas
 						}),
 						cl(WARLOCK, {
 							i(22506, {	-- Plagueheart Circlet
-								["cost"] = {
+								cost = {
 									{ "i", 206612, 1 },	-- 1x Desecrated Cloth Helmet
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22507, {	-- Plagueheart Shoulderpads
-								["cost"] = {
+								cost = {
 									{ "i", 206613, 1 },	-- 1x Desecrated Cloth Spaulders
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22504, {	-- Plagueheart Robe
-								["cost"] = {
+								cost = {
 									{ "i", 206614, 1 },	-- 1x Desecrated Cloth Chestpiece
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22511, {	-- Plagueheart Bindings
-								["cost"] = {
+								cost = {
 									{ "i", 206615, 1 },	-- 1x Desecrated Cloth Bracers
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22509, {	-- Plagueheart Gloves
-								["cost"] = {
+								cost = {
 									{ "i", 206616, 1 },	-- 1x Desecrated Cloth Gauntlets
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22510, {	-- Plagueheart Belt
-								["cost"] = {
+								cost = {
 									{ "i", 206617, 1 },	-- 1x Desecrated Cloth Belt
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22505, {	-- Plagueheart Leggings
-								["cost"] = {
+								cost = {
 									{ "i", 206618, 1 },	-- 1x Desecrated Cloth Leggings
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22508, {	-- Plagueheart Sandals
-								["cost"] = {
+								cost = {
 									{ "i", 206619, 1 },	-- 1x Desecrated Cloth Boots
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
@@ -2540,56 +2540,56 @@ inst(754, {	-- Naxxramas
 						}),
 						cl(WARRIOR, {
 							i(22418, {	-- Dreadnaught Helmet
-								["cost"] = {
+								cost = {
 									{ "i", 206636, 1 },	-- 1x Desecrated Plate Helmet
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22419, {	-- Dreadnaught Pauldrons
-								["cost"] = {
+								cost = {
 									{ "i", 206637, 1 },	-- 1x Desecrated Plate Spaulders
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 280 },	-- 280x Phylacterweave
 								},
 							}),
 							i(22416, {	-- Dreadnaught Breastplate
-								["cost"] = {
+								cost = {
 									{ "i", 206639, 1 },	-- 1x Desecrated Plate Chestpiece
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22423, {	-- Dreadnaught Bracers
-								["cost"] = {
+								cost = {
 									{ "i", 206640, 1 },	-- 1x Desecrated Plate Bracers
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22421, {	-- Dreadnaught Gauntlets
-								["cost"] = {
+								cost = {
 									{ "i", 206641, 1 },	-- 1x Desecrated Plate Gauntlets
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
 								},
 							}),
 							i(22422, {	-- Dreadnaught Waistguard
-								["cost"] = {
+								cost = {
 									{ "i", 206642, 1 },	-- 1x Desecrated Plate Belt
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 70 },	-- 70x Phylacterweave
 								},
 							}),
 							i(22417, {	-- Dreadnaught Legplates
-								["cost"] = {
+								cost = {
 									{ "i", 206643, 1 },	-- 1x Desecrated Plate Leggings
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 210 },	-- 210x Phylacterweave
 								},
 							}),
 							i(22420, {	-- Dreadnaught Sabatons
-								["cost"] = {
+								cost = {
 									{ "i", 206644, 1 },	-- 1x Desecrated Plate Boots
 									{ "i", 12811, 10 },	-- 10x Righteous Orb
 									{ "i", 206579, 140 },	-- 140x Phylacterweave
@@ -2599,15 +2599,15 @@ inst(754, {	-- Naxxramas
 					}),
 					n(TREASURES, {
 						o(403731, {	-- Frozen Rune
-							["sourceQuests"] = {
+							sourceQuests = {
 								76263,	-- The Dread Citadel - Naxxramas [Honored]
 								76264,	-- The Dread Citadel - Naxxramas [Revered]
 								76265,	-- The Dread Citadel - Naxxramas [Exalted]
 							},
-							["sourceQuestNumRequired"] = 1,
-							["groups"] = {
+							sourceQuestNumRequired = 1,
+							groups = {
 								i(22682, {	-- Frozen Rune
-									["description"] = "31 Frozen Runes can be found through (Lower) Naxxramas:\n\n6 in Arachnid Quarter, in which 4 are near or between the bosses. The last 2 can be found in the northwestern section of the Outer Ring.\n\n8 in Plague Quarter, in which 5 are near the bosses. The last 3 can be found through the Outer Ring.\n\n8 in Military Quarter, in which 5 are near or between the bosses. The last 3 can be found in the northwestern section of the Outer Ring.\n\n9 in Construct Quarter, in which 5 are near the bosses. The last 4 can be found through the Outer Ring.",
+									description = "31 Frozen Runes can be found through (Lower) Naxxramas:\n\n6 in Arachnid Quarter, in which 4 are near or between the bosses. The last 2 can be found in the northwestern section of the Outer Ring.\n\n8 in Plague Quarter, in which 5 are near the bosses. The last 3 can be found through the Outer Ring.\n\n8 in Military Quarter, in which 5 are near or between the bosses. The last 3 can be found in the northwestern section of the Outer Ring.\n\n9 in Construct Quarter, in which 5 are near the bosses. The last 4 can be found through the Outer Ring.",
 									-- Arachnid Quarter: (6)
 										-- 1: Behind Anub'Rekhan
 										-- 2: To the left of Grand Widow Faerlina
@@ -2646,14 +2646,14 @@ inst(754, {	-- Naxxramas
 					}),
 					n(ZONE_DROPS, {
 						i(207702, {	-- Wartorn Scrap
-							["timeline"] = { ADDED_10_1_5 },
+							timeline = { ADDED_10_1_5 },
 						}),
 					}),
 				},
 			})),
 			-- #endif
 			n(ACHIEVEMENTS, {
-				ach(11750, {["timeline"] = { ADDED_7_2_0 }}),	-- Undying Aesthetic (Naxxramas)
+				ach(11750, {timeline = { ADDED_7_2_0 }}),	-- Undying Aesthetic (Naxxramas)
 			}),
 		},
 		-- #endif

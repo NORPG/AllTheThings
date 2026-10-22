@@ -8,16 +8,16 @@ local DARK_PARTICLE = 267051;
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	n(SHOWDOWN, {
 		n(ZONE_DROPS, {
-			["maps"] = {
+			maps = {
 				NAIGTAL,
 				VAL,
 			},
-			["groups"] = {
+			groups = {
 				currency(FIELD_ACCOLADE),
 				i(DARK_PARTICLE),
 				i(278116),	-- Player Experience
 				i(276330, {	-- Taken Riftwalker's Starbarb (COSMETIC!)
-					["providers"] = {
+					providers = {
 						{ "n", 265882 },	-- Spellslinger Rem'lazar <Warp Rider>
 						{ "n", 265881 },	-- Renegade Kulivero <Warp Rider>
 						{ "n", 265879 },	-- Guardian Halazir <Warp Rider>
@@ -30,7 +30,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					},
 				}),
 				i(276298, {	-- Forgotten Fel-Shard Talon (COSMETIC!)
-					["providers"] = {
+					providers = {
 						{ "n", 264571 },	-- Indomitable Mk XII
 						{ "n", 264869 },	-- Nelgothar
 						{ "n", 267422 },	-- Warbringer Thal'kuur
@@ -39,12 +39,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			},
 		}),
 		n(COMMON_BOSS_DROPS, {
-			["description"] = "Showdown Elite Patrol creatures have a small (<1%) chance to drop or reward these items, in addition to their most prevalent Source.",
-			["sym"] = {{"select","symselector",
+			description = "Showdown Elite Patrol creatures have a small (<1%) chance to drop or reward these items, in addition to their most prevalent Source.",
+			sym = {{"select","symselector",
 							SymSelector.MID_SHOWDOWN_ZONE_REWARDS,
 							SymSelector.MID_SHOWDOWN_NAIGTAL_RARES},
 						{"extract","itemID"}},
-			["providers"] = {
+			providers = {
 				{ "n", 265882 },	-- Spellslinger Rem'lazar <Warp Rider>
 				{ "n", 265881 },	-- Renegade Kulivero <Warp Rider>
 				{ "n", 265879 },	-- Guardian Halazir <Warp Rider>
@@ -57,13 +57,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			},
 		}),
 		n(ZONE_REWARDS, {
-			["sharedDescription"] = "|cffd15517It is FAR preferable to use lower-level characters to acquire these Items|r as they will always be rewarded from the constantly-rotating selection of World Quests and Bonus Objectives in the active Showdown Zone. Max level characters may see one drop after hours of active gameplay from farming the respective Rares.",
-			["symselector"] = SymSelector.MID_SHOWDOWN_ZONE_REWARDS,
-			["maps"] = {
+			sharedDescription = "|cffd15517It is FAR preferable to use lower-level characters to acquire these Items|r as they will always be rewarded from the constantly-rotating selection of World Quests and Bonus Objectives in the active Showdown Zone. Max level characters may see one drop after hours of active gameplay from farming the respective Rares.",
+			symselector = SymSelector.MID_SHOWDOWN_ZONE_REWARDS,
+			maps = {
 				NAIGTAL,
 				VAL,
 			},
-			["groups"] = {
+			groups = {
 				n(ARMOR, {
 					filter(BACK_F, {
 						i(274820),	-- Cloak of the Voracious Gorger

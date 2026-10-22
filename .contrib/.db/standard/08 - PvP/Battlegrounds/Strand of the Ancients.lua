@@ -3,13 +3,13 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
-	applyclassicphase(WRATH_PHASE_ONE, m(128, bubbleDown({ ["timeline"] = { ADDED_3_0_2, REMOVED_8_0_1 }, }, {	-- Strand of the Ancients
-		["icon"] = 236394,
-		["groups"] = {
+	applyclassicphase(WRATH_PHASE_ONE, m(128, bubbleDown({ timeline = { ADDED_3_0_2, REMOVED_8_0_1 }, }, {	-- Strand of the Ancients
+		icon = 236394,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(2194, {	-- Master of Strand of the Ancients (Alliance - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						1309,	-- Strand of the Ancients Veteran
 						1310,	-- Storm the Beach
 						1765,	-- Steady Hands
@@ -31,12 +31,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						-- #endif
 					}},
 					-- #if BEFORE 4.3.0
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 					-- #endif
 				}),
 				ach(2195, {	-- Master of Strand of the Ancients (Horde - before 4.3.0)
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						1309,	-- Strand of the Ancients Veteran
 						1310,	-- Storm the Beach
 						1765,	-- Steady Hands
@@ -51,14 +51,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						2191,	-- Ancient Courtyard Protector
 						2200,	-- Defense of the Ancients (Horde)
 					}},
-					["timeline"] = { ADDED_3_0_2, REMOVED_4_3_0 },
-					["races"] = HORDE_ONLY,
+					timeline = { ADDED_3_0_2, REMOVED_4_3_0 },
+					races = HORDE_ONLY,
 				}),
 				ach(1308, {	-- Strand of the Ancients Victory
-					["rank"] = 1,
+					rank = 1,
 				}),
 				ach(1309, {	-- Strand of the Ancients Veteran
-					["rank"] = 100,
+					rank = 100,
 				}),
 				ach(1310),	-- Storm the Beach
 				ach(2191),	-- Ancient Courtyard Protector

@@ -41,31 +41,31 @@ end]];
 
 root(ROOTS.PVP, {
 	run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.MOP, {
-		n(SEASON_MALEVOLENT, applyclassicphase(MOP_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+		n(SEASON_MALEVOLENT, applyclassicphase(MOP_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
 			n(ACHIEVEMENTS, {
-				ach(11717, {["timeline"] = {ADDED_7_2_0}}),	-- Why Male(volent) Models? (PvP Season 12)
+				ach(11717, {timeline = {ADDED_7_2_0}}),	-- Why Male(volent) Models? (PvP Season 12)
 			}),
 			n(ACHIEVEMENTS, bubbleDown({
-				["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+				timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
 				-- #if BEFORE WOD
-				["OnUpdate"] = SEASON_MALEVOLENT_ONUPDATE,
+				OnUpdate = SEASON_MALEVOLENT_ONUPDATE,
 				-- #endif
 			}, {
 				ach(8243, {	-- Hero of the Alliance: Malevolent
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(8244, {	-- Hero of the Horde: Malevolent
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 				ach(8214, {	-- Malevolent Gladiator (Retail) // Malevolent Gladiator: Season 12 (3v3) (Classic)
 					title(223),	-- Malevolent Gladiator <Name>
 				}),
 				ach(8216, {	-- Malevolent Gladiator's Cloud Serpent
-					["provider"] = { "i", 95041 },	-- Malevolent Gladiator's Cloud Serpent
-					["filterID"] = MOUNTS,
+					provider = { "i", 95041 },	-- Malevolent Gladiator's Cloud Serpent
+					filterID = MOUNTS,
 				}),
 				i(95041, {	-- Malevolent Gladiator's Cloud Serpent
-					["description"] = "Awarded to members of the Arena teams during MoP Season 1 that were in the 0.5% bracket of their battlegroup.",
+					description = "Awarded to members of the Arena teams during MoP Season 1 that were in the 0.5% bracket of their battlegroup.",
 				}),
 				-- #if ANYCLASSIC
 				ach(42762),	-- Challenger: Season 12
@@ -78,10 +78,10 @@ root(ROOTS.PVP, {
 				ach(61358, {	-- Gladiator: Season 12 (5v5)
 				}),
 				ach(61459, {	-- Malevolent Conquest
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 				ach(61460, {	-- Malevolent Conquest
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(61354, {	-- Malevolent Gladiator: Season 12 (2v2)
 					title(223),	-- Malevolent Gladiator <Name>
@@ -126,7 +126,7 @@ root(ROOTS.PVP, {
 				-- #endif
 				cl(DEATHKNIGHT, {
 					moh(12, iensemble(138715, {	-- Ensemble: Dreadful Gladiator's Dreadplate Armor
-						["timeline"] = { ADDED_7_1_5 },
+						timeline = { ADDED_7_1_5 },
 					})),
 					moh(3, i(84372)),	-- Dreadful Gladiator's Dreadplate Chestpiece
 					moh(2, i(84373)),	-- Dreadful Gladiator's Dreadplate Gauntlets
@@ -136,7 +136,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(DRUID, {
 					moh(12, iensemble(138719, {	-- Ensemble: Dreadful Gladiator's Dragonhide Armor
-						["timeline"] = { ADDED_7_1_5 },
+						timeline = { ADDED_7_1_5 },
 					})),
 					moh(2, i(84377)),	-- Dreadful Gladiator's Dragonhide Gloves
 					moh(3, i(84378)),	-- Dreadful Gladiator's Dragonhide Helm
@@ -156,7 +156,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(HUNTER, {
 					moh(12, iensemble(138718, {	-- Ensemble: Dreadful Gladiator's Chain Armor
-						["timeline"] = { ADDED_7_1_5 },
+						timeline = { ADDED_7_1_5 },
 					})),
 					moh(3, i(84408)),	-- Dreadful Gladiator's Chain Armor
 					moh(2, i(84409)),	-- Dreadful Gladiator's Chain Gauntlets
@@ -166,7 +166,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(MAGE, {
 					moh(12, iensemble(138722, {	-- Ensemble: Dreadful Gladiator's Silk Armor
-						["timeline"] = { ADDED_7_1_5 },
+						timeline = { ADDED_7_1_5 },
 					})),
 					moh(2, i(84417)),	-- Dreadful Gladiator's Silk Amice
 					moh(3, i(84414)),	-- Dreadful Gladiator's Silk Cowl
@@ -176,7 +176,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(MONK, {
 					moh(12, iensemble(138720, {	-- Ensemble: Dreadful Gladiator's Ironskin Armor
-						["timeline"] = { ADDED_7_1_5 },
+						timeline = { ADDED_7_1_5 },
 					})),
 					moh(2, i(84548)),	-- Dreadful Gladiator's Copperskin Gloves
 					moh(3, i(84549)),	-- Dreadful Gladiator's Copperskin Helm
@@ -191,7 +191,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(PALADIN, {
 					moh(12, iensemble(138716, {	-- Ensemble: Dreadful Gladiator's Scaled Armor
-						["timeline"] = { ADDED_7_1_5 },
+						timeline = { ADDED_7_1_5 },
 					})),
 					moh(3, i(84429)),	-- Dreadful Gladiator's Ornamented Chestguard
 					moh(2, i(84430)),	-- Dreadful Gladiator's Ornamented Gloves
@@ -206,7 +206,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(PRIEST, {
 					moh(12, iensemble(138723, {	-- Ensemble: Dreadful Gladiator's Satin Armor
-						["timeline"] = { ADDED_7_1_5 },
+						timeline = { ADDED_7_1_5 },
 					})),
 					moh(2, i(84440)),	-- Dreadful Gladiator's Mooncloth Gloves
 					moh(3, i(84441)),	-- Dreadful Gladiator's Mooncloth Helm
@@ -221,7 +221,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(ROGUE, {
 					moh(12, iensemble(138721, {	-- Ensemble: Dreadful Gladiator's Leather Armor
-						["timeline"] = { ADDED_7_1_5 },
+						timeline = { ADDED_7_1_5 },
 					})),
 					moh(2, i(84463)),	-- Dreadful Gladiator's Leather Gloves
 					moh(3, i(84464)),	-- Dreadful Gladiator's Leather Helm
@@ -231,7 +231,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(SHAMAN, {
 					moh(12, iensemble(138717, {	-- Ensemble: Dreadful Gladiator's Ringmail Armor
-						["timeline"] = { ADDED_7_1_5 },
+						timeline = { ADDED_7_1_5 },
 					})),
 					moh(3, i(84477)),	-- Dreadful Gladiator's Linked Armor
 					moh(2, i(84478)),	-- Dreadful Gladiator's Linked Gauntlets
@@ -251,7 +251,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(WARLOCK, {
 					moh(12, iensemble(138724, {	-- Ensemble: Dreadful Gladiator's Felweave Armor
-						["timeline"] = { ADDED_7_1_5 },
+						timeline = { ADDED_7_1_5 },
 					})),
 					moh(2, i(84503)),	-- Dreadful Gladiator's Felweave Amice
 					moh(3, i(84500)),	-- Dreadful Gladiator's Felweave Cowl
@@ -261,7 +261,7 @@ root(ROOTS.PVP, {
 				}),
 				cl(WARRIOR, {
 					moh(12, iensemble(138714, {	-- Ensemble: Dreadful Gladiator's Plate Armor
-						["timeline"] = { ADDED_7_1_5 },
+						timeline = { ADDED_7_1_5 },
 					})),
 					moh(3, i(84504)),	-- Dreadful Gladiator's Plate Chestpiece
 					moh(2, i(84505)),	-- Dreadful Gladiator's Plate Gauntlets
@@ -330,9 +330,9 @@ root(ROOTS.PVP, {
 					moh(2, i(84436)),	-- Dreadful Gladiator's Warboots of Cruelty
 				}),
 				filter(FINGER_F, sharedData({
-					["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+					timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
 					-- #if BEFORE WOD
-					["OnUpdate"] = SEASON_MALEVOLENT_ONUPDATE,
+					OnUpdate = SEASON_MALEVOLENT_ONUPDATE,
 					-- #endif
 				}, {
 					i(84370),	-- Dreadful Gladiator's Band of Accuracy
@@ -344,9 +344,9 @@ root(ROOTS.PVP, {
 					i(84497),	-- Dreadful Gladiator's Signet of Cruelty
 				})),
 				filter(NECK_F, sharedData({
-					["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+					timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
 					-- #if BEFORE WOD
-					["OnUpdate"] = SEASON_MALEVOLENT_ONUPDATE,
+					OnUpdate = SEASON_MALEVOLENT_ONUPDATE,
 					-- #endif
 				}, {
 					i(84494),	-- Dreadful Gladiator's Choker of Accuracy
@@ -358,9 +358,9 @@ root(ROOTS.PVP, {
 					i(84367),	-- Dreadful Gladiator's Pendant of Meditation
 				})),
 				filter(TRINKET_F, sharedData({
-					["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+					timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
 					-- #if BEFORE WOD
-					["OnUpdate"] = SEASON_MALEVOLENT_ONUPDATE,
+					OnUpdate = SEASON_MALEVOLENT_ONUPDATE,
 					-- #endif
 				}, {
 					i(84344),	-- Dreadful Gladiator's Badge of Conquest
@@ -381,16 +381,16 @@ root(ROOTS.PVP, {
 				})),
 			}),
 			n(PVP_GLADIATOR, {
-				-- ["description"] = "These items are available from Malevolent Gladiator: Season 12 class ensembles only",
-				["groups"] = {
+				-- description = "These items are available from Malevolent Gladiator: Season 12 class ensembles only",
+				groups = {
 					n(WEAPONS, sharedData({
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+						timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
 						-- #if BEFORE WOD
-						["OnUpdate"] = SEASON_MALEVOLENT_ONUPDATE,
+						OnUpdate = SEASON_MALEVOLENT_ONUPDATE,
 						-- #endif
 					}, {
 						moh(80, iensemble(144243, {	-- Arsenal: Malevolent Gladiator's Weapons
-							["timeline"] = { ADDED_7_1_5 },
+							timeline = { ADDED_7_1_5 },
 						})),
 						-- S12 Tag
 						i(84911),	-- Malevolent Gladiator's Barrier
@@ -416,7 +416,7 @@ root(ROOTS.PVP, {
 						i(84967),	-- Malevolent Gladiator's Shanker
 						i(84910),	-- Malevolent Gladiator's Shield Wall
 						i(84894, {	-- Malevolent Gladiator's Slasher
-							["timeline"] = { CREATED_5_0_4 },
+							timeline = { CREATED_5_0_4 },
 						}),
 						i(84968),	-- Malevolent Gladiator's Slicer
 						i(84961),	-- Malevolent Gladiator's Spellblade
@@ -424,7 +424,7 @@ root(ROOTS.PVP, {
 					})),
 					cl(DEATHKNIGHT, {
 						moh(12, iensemble(138704, {	-- Ensemble: Malevolent Gladiator's Dreadplate Armor
-							["timeline"] = { ADDED_7_1_5 },
+							timeline = { ADDED_7_1_5 },
 						})),
 						i(84795),	-- Malevolent Gladiator's Dreadplate Chestpiece
 						i(84835),	-- Malevolent Gladiator's Dreadplate Gauntlets
@@ -434,7 +434,7 @@ root(ROOTS.PVP, {
 					}),
 					cl(DRUID, {
 						moh(12, iensemble(138708, {	-- Ensemble: Malevolent Gladiator's Dragonhide Armor
-							["timeline"] = { ADDED_7_1_5 },
+							timeline = { ADDED_7_1_5 },
 						})),
 						i(84832),	-- Malevolent Gladiator's Dragonhide Gloves
 						i(84852),	-- Malevolent Gladiator's Dragonhide Helm
@@ -454,7 +454,7 @@ root(ROOTS.PVP, {
 					}),
 					cl(HUNTER, {
 						moh(12, iensemble(138707, {	-- Ensemble: Malevolent Gladiator's Chain Armor
-							["timeline"] = { ADDED_7_1_5 },
+							timeline = { ADDED_7_1_5 },
 						})),
 						i(84796),	-- Malevolent Gladiator's Chain Armor
 						i(84841),	-- Malevolent Gladiator's Chain Gauntlets
@@ -464,7 +464,7 @@ root(ROOTS.PVP, {
 					}),
 					cl(MAGE, {
 						moh(12, iensemble(138711, {	-- Ensemble: Malevolent Gladiator's Silk Armor
-							["timeline"] = { ADDED_7_1_5 },
+							timeline = { ADDED_7_1_5 },
 						})),
 						i(84917),	-- Malevolent Gladiator's Silk Amice
 						i(84855),	-- Malevolent Gladiator's Silk Cowl
@@ -474,7 +474,7 @@ root(ROOTS.PVP, {
 					}),
 					cl(MONK, {
 						moh(12, iensemble(138709, {	-- Ensemble: Malevolent Gladiator's Ironskin Armor
-							["timeline"] = { ADDED_7_1_5 },
+							timeline = { ADDED_7_1_5 },
 						})),
 						i(84836),	-- Malevolent Gladiator's Copperskin Gloves
 						i(84854),	-- Malevolent Gladiator's Copperskin Helm
@@ -489,7 +489,7 @@ root(ROOTS.PVP, {
 					}),
 					cl(PALADIN, {
 						moh(12, iensemble(138705, {	-- Ensemble: Malevolent Gladiator's Scaled Armor
-							["timeline"] = { ADDED_7_1_5 },
+							timeline = { ADDED_7_1_5 },
 						})),
 						i(84793),	-- Malevolent Gladiator's Ornamented Chestguard
 						i(84831),	-- Malevolent Gladiator's Ornamented Gloves
@@ -504,7 +504,7 @@ root(ROOTS.PVP, {
 					}),
 					cl(PRIEST, {
 						moh(12, iensemble(138712, {	-- Ensemble: Malevolent Gladiator's Satin Armor
-							["timeline"] = { ADDED_7_1_5 },
+							timeline = { ADDED_7_1_5 },
 						})),
 						i(84846),	-- Malevolent Gladiator's Mooncloth Gloves
 						i(84863),	-- Malevolent Gladiator's Mooncloth Helm
@@ -519,7 +519,7 @@ root(ROOTS.PVP, {
 					}),
 					cl(ROGUE, {
 						moh(12, iensemble(138710, {	-- Ensemble: Malevolent Gladiator's Leather Armor
-							["timeline"] = { ADDED_7_1_5 },
+							timeline = { ADDED_7_1_5 },
 						})),
 						i(84830),	-- Malevolent Gladiator's Leather Gloves
 						i(84848),	-- Malevolent Gladiator's Leather Helm
@@ -529,7 +529,7 @@ root(ROOTS.PVP, {
 					}),
 					cl(SHAMAN, {
 						moh(12, iensemble(138706, {	-- Ensemble: Malevolent Gladiator's Ringmail Armor
-							["timeline"] = { ADDED_7_1_5 },
+							timeline = { ADDED_7_1_5 },
 						})),
 						i(84799),	-- Malevolent Gladiator's Linked Armor
 						i(84844),	-- Malevolent Gladiator's Linked Gauntlets
@@ -549,7 +549,7 @@ root(ROOTS.PVP, {
 					}),
 					cl(WARLOCK, {
 						moh(12, iensemble(138713, {	-- Ensemble: Malevolent Gladiator's Felweave Armor
-							["timeline"] = { ADDED_7_1_5 },
+							timeline = { ADDED_7_1_5 },
 						})),
 						i(84923),	-- Malevolent Gladiator's Felweave Amice
 						i(84859),	-- Malevolent Gladiator's Felweave Cowl
@@ -559,7 +559,7 @@ root(ROOTS.PVP, {
 					}),
 					cl(WARRIOR, {
 						moh(12, iensemble(138703, {	-- Ensemble: Malevolent Gladiator's Plate Armor
-							["timeline"] = { ADDED_7_1_5 },
+							timeline = { ADDED_7_1_5 },
 						})),
 						i(84797),	-- Malevolent Gladiator's Plate Chestpiece
 						i(84840),	-- Malevolent Gladiator's Plate Gauntlets
@@ -652,9 +652,9 @@ root(ROOTS.PVP, {
 						i(84828),	-- Malevolent Gladiator's Signet of Cruelty
 					}),
 					filter(TRINKET_F, sharedData({
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+						timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
 						-- #if BEFORE WOD
-						["OnUpdate"] = SEASON_MALEVOLENT_ONUPDATE,
+						OnUpdate = SEASON_MALEVOLENT_ONUPDATE,
 						-- #endif
 					}, {
 						i(84934),	-- Malevolent Gladiator's Badge of Conquest
@@ -676,9 +676,9 @@ root(ROOTS.PVP, {
 				},
 			}),
 			n(PVP_ELITE, bubbleDown({
-				["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+				timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
 				-- #if BEFORE WOD
-				["OnUpdate"] = SEASON_MALEVOLENT_ONUPDATE,
+				OnUpdate = SEASON_MALEVOLENT_ONUPDATE,
 				-- #endif
 			}, {
 				-- Original Sources are:
@@ -711,7 +711,7 @@ root(ROOTS.PVP, {
 					i(85133),	-- Malevolent Gladiator's Shanker
 					i(85124),	-- Malevolent Gladiator's Shield Wall
 					i(85117, {	-- Malevolent Gladiator's Slasher
-						["timeline"] = { CREATED_5_0_4 },
+						timeline = { CREATED_5_0_4 },
 					}),
 					i(85134),	-- Malevolent Gladiator's Slicer
 					i(85127),	-- Malevolent Gladiator's Spellblade
@@ -866,31 +866,31 @@ root(ROOTS.PVP, {
 				}),
 			})),
 		}))),
-		n(SEASON_TYRANNICAL, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {
+		n(SEASON_TYRANNICAL, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {
 			n(ACHIEVEMENTS, {
-				ach(11718, {["timeline"] = {ADDED_7_2_0}}),	-- Dressed to Oppress (PvP Season 13)
+				ach(11718, {timeline = {ADDED_7_2_0}}),	-- Dressed to Oppress (PvP Season 13)
 			}),
 			n(ACHIEVEMENTS, bubbleDown({
-				["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
+				timeline = { ADDED_5_2_0, REMOVED_5_4_0 },
 				-- #if BEFORE WOD
-				["OnUpdate"] = SEASON_TYRANNICAL_ONUPDATE,
+				OnUpdate = SEASON_TYRANNICAL_ONUPDATE,
 				-- #endif
 			}, {
 				ach(8652, {	-- Hero of the Alliance: Tyrannical
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(8653, {	-- Hero of the Horde: Tyrannical
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 				ach(8791, {	-- Tyrannical Gladiator (Retail) // Tyrannical Gladiator: Season 13 (3v3) (Classic)
 					title(225),	-- Tyrannical Gladiator <Name>
 				}),
 				ach(8678, {	-- Tyrannical Gladiator's Cloud Serpent
-					["provider"] = { "i", 104325 },	-- Tyrannical Gladiator's Cloud Serpent
-					["filterID"] = MOUNTS,
+					provider = { "i", 104325 },	-- Tyrannical Gladiator's Cloud Serpent
+					filterID = MOUNTS,
 				}),
 				i(104325, {	-- Tyrannical Gladiator's Cloud Serpent
-					["description"] = "Awarded to members of the Arena teams during MoP Season 2 that were in the 0.5% bracket of their battlegroup.",
+					description = "Awarded to members of the Arena teams during MoP Season 2 that were in the 0.5% bracket of their battlegroup.",
 				}),
 				-- #if ANYCLASSIC
 				ach(61098),	-- Challenger: Season 13
@@ -914,8 +914,8 @@ root(ROOTS.PVP, {
 				-- #endif
 			})),
 			n(PVP_HONOR, {
-				["description"] = "These items are available from Malevolent Gladiator: Season 12 Vendor.",
-				["groups"] = {
+				description = "These items are available from Malevolent Gladiator: Season 12 Vendor.",
+				groups = {
 					n(WEAPONS, {
 						moh(2, i(91482)),	-- Malevolent Gladiator's Barrier
 						moh(5, i(91486)),	-- Malevolent Gladiator's Battle Staff
@@ -1116,7 +1116,7 @@ root(ROOTS.PVP, {
 						moh(2, i(91656)),	-- Malevolent Gladiator's Warboots of Alacrity
 						moh(2, i(91654)),	-- Malevolent Gladiator's Warboots of Cruelty
 					}),
-					filter(FINGER_F, sharedData({ ["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
+					filter(FINGER_F, sharedData({ timeline = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
 						i(91492),	-- Malevolent Gladiator's Band of Accuracy
 						i(91491),	-- Malevolent Gladiator's Band of Cruelty
 						i(91493),	-- Malevolent Gladiator's Band of Meditation
@@ -1125,7 +1125,7 @@ root(ROOTS.PVP, {
 						i(91770),	-- Malevolent Gladiator's Signet of Accuracy
 						i(91769),	-- Malevolent Gladiator's Signet of Cruelty
 					})),
-					filter(NECK_F, sharedData({ ["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
+					filter(NECK_F, sharedData({ timeline = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
 						i(91767),	-- Malevolent Gladiator's Choker of Accuracy
 						i(91766),	-- Malevolent Gladiator's Choker of Proficiency
 						i(91455),	-- Malevolent Gladiator's Necklace of Proficiency
@@ -1134,7 +1134,7 @@ root(ROOTS.PVP, {
 						i(91488),	-- Malevolent Gladiator's Pendant of Cruelty
 						i(91490),	-- Malevolent Gladiator's Pendant of Meditation
 					})),
-					filter(TRINKET_F, sharedData({ ["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
+					filter(TRINKET_F, sharedData({ timeline = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
 						i(91452),	-- Malevolent Gladiator's Badge of Conquest
 						i(91753),	-- Malevolent Gladiator's Badge of Dominance
 						i(91763),	-- Malevolent Gladiator's Badge of Victory
@@ -1154,12 +1154,12 @@ root(ROOTS.PVP, {
 				},
 			}),
 			n(FACTION_HEADER_ALLIANCE, {
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				races = ALLIANCE_ONLY,
+				groups = {
 					n(PVP_GLADIATOR, {
-						n(WEAPONS, sharedData({ ["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
+						n(WEAPONS, sharedData({ timeline = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
 							moh(80, iensemble(144246, {	-- Arsenal: Tyrannical Gladiator's Weapons (A)
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(91129),	-- Tyrannical Gladiator's Barrier
 							i(91133),	-- Tyrannical Gladiator's Battle Staff
@@ -1187,7 +1187,7 @@ root(ROOTS.PVP, {
 						})),
 						cl(DEATHKNIGHT, {
 							moh(12, iensemble(138683, {	-- Ensemble: Tyrannical Gladiator's Dreadplate Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(91147),	-- Tyrannical Gladiator's Dreadplate Chestpiece
 							i(91149),	-- Tyrannical Gladiator's Dreadplate Gauntlets
@@ -1197,7 +1197,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(DRUID, {
 							moh(12, iensemble(138691, {	-- Ensemble: Tyrannical Gladiator's Dragonhide Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(91157),	-- Tyrannical Gladiator's Dragonhide Gloves
 							i(91159),	-- Tyrannical Gladiator's Dragonhide Helm
@@ -1217,7 +1217,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(HUNTER, {
 							moh(12, iensemble(138689, {	-- Ensemble: Tyrannical Gladiator's Chain Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(91222),	-- Tyrannical Gladiator's Chain Armor
 							i(91224),	-- Tyrannical Gladiator's Chain Gauntlets
@@ -1227,7 +1227,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(MAGE, {
 							moh(12, iensemble(138697, {	-- Ensemble: Tyrannical Gladiator's Silk Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(91240),	-- Tyrannical Gladiator's Silk Amice
 							i(91234),	-- Tyrannical Gladiator's Silk Cowl
@@ -1237,7 +1237,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(MONK, {
 							moh(12, iensemble(138693, {	-- Ensemble: Tyrannical Gladiator's Ironskin Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(91257),	-- Tyrannical Gladiator's Copperskin Gloves
 							i(91259),	-- Tyrannical Gladiator's Copperskin Helm
@@ -1252,7 +1252,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(PALADIN, {
 							moh(12, iensemble(138685, {	-- Ensemble: Tyrannical Gladiator's Scaled Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(91287),	-- Tyrannical Gladiator's Ornamented Chestguard
 							i(91289),	-- Tyrannical Gladiator's Ornamented Gloves
@@ -1267,7 +1267,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(PRIEST, {
 							moh(12, iensemble(138699, {	-- Ensemble: Tyrannical Gladiator's Satin Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(91309),	-- Tyrannical Gladiator's Mooncloth Gloves
 							i(91311),	-- Tyrannical Gladiator's Mooncloth Helm
@@ -1282,7 +1282,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(ROGUE, {
 							moh(12, iensemble(138695, {	-- Ensemble: Tyrannical Gladiator's Leather Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(91342),	-- Tyrannical Gladiator's Leather Gloves
 							i(91344),	-- Tyrannical Gladiator's Leather Helm
@@ -1292,7 +1292,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(SHAMAN, {
 							moh(12, iensemble(138687, {	-- Ensemble: Tyrannical Gladiator's Ringmail Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(91368),	-- Tyrannical Gladiator's Linked Armor
 							i(91370),	-- Tyrannical Gladiator's Linked Gauntlets
@@ -1312,7 +1312,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(WARLOCK, {
 							moh(12, iensemble(138701, {	-- Ensemble: Tyrannical Gladiator's Felweave Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(91428),	-- Tyrannical Gladiator's Felweave Amice
 							i(91422),	-- Tyrannical Gladiator's Felweave Cowl
@@ -1322,7 +1322,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(WARRIOR, {
 							moh(12, iensemble(138681, {	-- Ensemble: Tyrannical Gladiator's Plate Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(91430),	-- Tyrannical Gladiator's Plate Chestpiece
 							i(91432),	-- Tyrannical Gladiator's Plate Gauntlets
@@ -1414,7 +1414,7 @@ root(ROOTS.PVP, {
 							i(91417),	-- Tyrannical Gladiator's Signet of Accuracy
 							i(91416),	-- Tyrannical Gladiator's Signet of Cruelty
 						}),
-						filter(TRINKET_F, sharedData({ ["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
+						filter(TRINKET_F, sharedData({ timeline = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
 							i(91099),	-- Tyrannical Gladiator's Badge of Conquest
 							i(91400),	-- Tyrannical Gladiator's Badge of Dominance
 							i(91410),	-- Tyrannical Gladiator's Badge of Victory
@@ -1432,12 +1432,12 @@ root(ROOTS.PVP, {
 				},
 			}),
 			n(FACTION_HEADER_HORDE, {
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				races = HORDE_ONLY,
+				groups = {
 					n(PVP_GLADIATOR, {
-						n(WEAPONS, sharedData({ ["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
+						n(WEAPONS, sharedData({ timeline = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
 							moh(80, iensemble(144245, {	-- Arsenal: Tyrannical Gladiator's Weapons (H)
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(94501),	-- Tyrannical Gladiator's Barrier
 							i(94313),	-- Tyrannical Gladiator's Battle Staff
@@ -1465,7 +1465,7 @@ root(ROOTS.PVP, {
 						})),
 						cl(DEATHKNIGHT, {
 							moh(12, iensemble(138684, {	-- Ensemble: Tyrannical Gladiator's Dreadplate Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(94392),	-- Tyrannical Gladiator's Dreadplate Chestpiece
 							i(94364),	-- Tyrannical Gladiator's Dreadplate Gauntlets
@@ -1475,7 +1475,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(DRUID, {
 							moh(12, iensemble(138692, {	-- Ensemble: Tyrannical Gladiator's Dragonhide Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(94455),	-- Tyrannical Gladiator's Dragonhide Gloves
 							i(94367),	-- Tyrannical Gladiator's Dragonhide Helm
@@ -1495,7 +1495,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(HUNTER, {
 							moh(12, iensemble(138690, {	-- Ensemble: Tyrannical Gladiator's Chain Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(94405),	-- Tyrannical Gladiator's Chain Armor
 							i(94453),	-- Tyrannical Gladiator's Chain Gauntlets
@@ -1505,7 +1505,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(MAGE, {
 							moh(12, iensemble(138698, {	-- Ensemble: Tyrannical Gladiator's Silk Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(94389),	-- Tyrannical Gladiator's Silk Amice
 							i(94381),	-- Tyrannical Gladiator's Silk Cowl
@@ -1515,7 +1515,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(MONK, {
 							moh(12, iensemble(138694, {	-- Ensemble: Tyrannical Gladiator's Ironskin Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(94340),	-- Tyrannical Gladiator's Copperskin Gloves
 							i(94341),	-- Tyrannical Gladiator's Copperskin Helm
@@ -1530,7 +1530,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(PALADIN, {
 							moh(12, iensemble(138686, {	-- Ensemble: Tyrannical Gladiator's Scaled Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(94345),	-- Tyrannical Gladiator's Ornamented Chestguard
 							i(94438),	-- Tyrannical Gladiator's Ornamented Gloves
@@ -1545,7 +1545,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(PRIEST, {
 							moh(12, iensemble(138700, {	-- Ensemble: Tyrannical Gladiator's Satin Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(94328),	-- Tyrannical Gladiator's Mooncloth Gloves
 							i(94419),	-- Tyrannical Gladiator's Mooncloth Helm
@@ -1560,7 +1560,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(ROGUE, {
 							moh(12, iensemble(138696, {	-- Ensemble: Tyrannical Gladiator's Leather Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(94377),	-- Tyrannical Gladiator's Leather Gloves
 							i(94426),	-- Tyrannical Gladiator's Leather Helm
@@ -1570,7 +1570,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(SHAMAN, {
 							moh(12, iensemble(138688, {	-- Ensemble: Tyrannical Gladiator's Ringmail Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(94475),	-- Tyrannical Gladiator's Linked Armor
 							i(94458),	-- Tyrannical Gladiator's Linked Gauntlets
@@ -1590,7 +1590,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(WARLOCK, {
 							moh(12, iensemble(138702, {	-- Ensemble: Tyrannical Gladiator's Felweave Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(94398),	-- Tyrannical Gladiator's Felweave Amice
 							i(94442),	-- Tyrannical Gladiator's Felweave Cowl
@@ -1600,7 +1600,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(WARRIOR, {
 							moh(12, iensemble(138682, {	-- Ensemble: Tyrannical Gladiator's Plate Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(94444),	-- Tyrannical Gladiator's Plate Chestpiece
 							i(94331),	-- Tyrannical Gladiator's Plate Gauntlets
@@ -1692,7 +1692,7 @@ root(ROOTS.PVP, {
 							i(94462),	-- Tyrannical Gladiator's Signet of Accuracy
 							i(94417),	-- Tyrannical Gladiator's Signet of Cruelty
 						}),
-						filter(TRINKET_F, sharedData({ ["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
+						filter(TRINKET_F, sharedData({ timeline = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
 							i(94373),	-- Tyrannical Gladiator's Badge of Conquest
 							i(94346),	-- Tyrannical Gladiator's Badge of Dominance
 							i(94349),	-- Tyrannical Gladiator's Badge of Victory
@@ -1709,7 +1709,7 @@ root(ROOTS.PVP, {
 					}),
 				},
 			}),
-			n(PVP_ELITE, sharedData({ ["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
+			n(PVP_ELITE, sharedData({ timeline = { ADDED_5_2_0, REMOVED_5_4_0 } }, {
 				-- Original Sources are:
 				-- n70101 Armsmaster Holinka in Valley of the Four Winds (Alliance)
 				-- n70108 Roo Desvin in Area Kun-Lai Summit (Horde)
@@ -1900,46 +1900,46 @@ root(ROOTS.PVP, {
 			})),
 		}))),
 		-- Wouter NOTE: temporarily tied this to SoO phase release for MoP Classic, but this will likely be different
-		n(SEASON_GRIEVOUS, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
+		n(SEASON_GRIEVOUS, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {
 			n(ACHIEVEMENTS, {
-				ach(11719, {["timeline"] = {ADDED_7_2_0}}),	-- It's Not Fashion Unless It Hurts (PvP Season 14)
+				ach(11719, {timeline = {ADDED_7_2_0}}),	-- It's Not Fashion Unless It Hurts (PvP Season 14)
 			}),
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 				ach(8649),	-- Challenger: Mists of Pandaria Season 3/Season 14
 				ach(8645, {	-- Duelist: Mists of Pandaria Season 3/Season 14
 					elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
-						["timeline"] = { ADDED_7_3_2 },
+						timeline = { ADDED_7_3_2 },
 					})),
 				}),
 				ach(8644, {	-- Gladiator: Season 14 (Retail) // Gladiator: Season 14 (3v3) (Classic)
 					i(104326),	-- Grievous Gladiator's Cloud Serpent
 				}),
 				ach(8485, {	-- Grievous Combatant (Alliance) Mists of Pandaria Season 3/Season 14
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(8484, {	-- Grievous Combatant (Horde) Mists of Pandaria Season 3/Season 14
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 				ach(8643, {	-- Grievous Gladiator (Retail) // Grievous Gladiator: Season 14 (3v3) (Classic)
 					title(253),	-- Grievous Gladiator <Name>
 				}),
 				ach(8705, {	-- Grievous Gladiator's Cloud Serpent
-					["provider"] = { "i", 104326 },	-- Grievous Gladiator's Cloud Serpent
-					["filterID"] = MOUNTS,
+					provider = { "i", 104326 },	-- Grievous Gladiator's Cloud Serpent
+					filterID = MOUNTS,
 				}),
 				ach(8654, {	-- Hero of the Alliance: Grievous
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
-							["timeline"] = { ADDED_7_3_2 },
+							timeline = { ADDED_7_3_2 },
 						})),
 					},
 				}),
 				ach(8657, {	-- Hero of the Horde: Grievous
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
-							["timeline"] = { ADDED_7_3_2 },
+							timeline = { ADDED_7_3_2 },
 						})),
 					},
 				}),
@@ -1964,8 +1964,8 @@ root(ROOTS.PVP, {
 				-- #endif
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				races = ALLIANCE_ONLY,
+				groups = {
 					n(PVP_HONOR, {
 						n(WEAPONS, {
 							moh(2, i(99794)),	-- Tyrannical Gladiator's Barrier
@@ -2164,7 +2164,7 @@ root(ROOTS.PVP, {
 							moh(2, i(99889)),	-- Tyrannical Gladiator's Warboots of Alacrity
 							moh(2, i(99888)),	-- Tyrannical Gladiator's Warboots of Cruelty
 						}),
-						filter(NECK_F, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						filter(NECK_F, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							i(99947),	-- Tyrannical Gladiator's Choker of Accuracy
 							i(99946),	-- Tyrannical Gladiator's Choker of Proficiency
 							i(99775),	-- Tyrannical Gladiator's Necklace of Proficiency
@@ -2173,7 +2173,7 @@ root(ROOTS.PVP, {
 							i(99797),	-- Tyrannical Gladiator's Pendant of Cruelty
 							i(99799),	-- Tyrannical Gladiator's Pendant of Meditation
 						})),
-						filter(FINGER_F, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						filter(FINGER_F, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							i(99801),	-- Tyrannical Gladiator's Band of Accuracy
 							i(99800),	-- Tyrannical Gladiator's Band of Cruelty
 							i(99802),	-- Tyrannical Gladiator's Band of Meditation
@@ -2182,7 +2182,7 @@ root(ROOTS.PVP, {
 							i(99950),	-- Tyrannical Gladiator's Signet of Accuracy
 							i(99949),	-- Tyrannical Gladiator's Signet of Cruelty
 						})),
-						filter(TRINKET_F, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						filter(TRINKET_F, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							i(99772),	-- Tyrannical Gladiator's Badge of Conquest
 							i(99937),	-- Tyrannical Gladiator's Badge of Dominance
 							i(99943),	-- Tyrannical Gladiator's Badge of Victory
@@ -2198,9 +2198,9 @@ root(ROOTS.PVP, {
 						})),
 					}),
 					n(PVP_GLADIATOR, {
-						n(WEAPONS, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						n(WEAPONS, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							moh(80, iensemble(144252, {	-- Arsenal: Grievous Gladiator's Weapons (A)
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100225),	-- Grievous Gladiator's Barrier
 							i(100492),	-- Grievous Gladiator's Baton of Light
@@ -2231,7 +2231,7 @@ root(ROOTS.PVP, {
 						})),
 						cl(DEATHKNIGHT, {
 							moh(12, iensemble(138661, {	-- Ensemble: Grievous Gladiator's Dreadplate Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100243),	-- Grievous Gladiator's Dreadplate Chestpiece
 							i(100245),	-- Grievous Gladiator's Dreadplate Gauntlets
@@ -2241,7 +2241,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(DRUID, {
 							moh(12, iensemble(138669, {	-- Ensemble: Grievous Gladiator's Dragonhide Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100253),	-- Grievous Gladiator's Dragonhide Gloves
 							i(100255),	-- Grievous Gladiator's Dragonhide Helm
@@ -2261,7 +2261,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(HUNTER, {
 							moh(12, iensemble(138667, {	-- Ensemble: Grievous Gladiator's Chain Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100318),	-- Grievous Gladiator's Chain Armor
 							i(100320),	-- Grievous Gladiator's Chain Gauntlets
@@ -2271,7 +2271,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(MAGE, {
 							moh(12, iensemble(138675, {	-- Ensemble: Grievous Gladiator's Silk Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100336),	-- Grievous Gladiator's Silk Amice
 							i(100330),	-- Grievous Gladiator's Silk Cowl
@@ -2281,7 +2281,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(MONK, {
 							moh(12, iensemble(138671, {	-- Ensemble: Grievous Gladiator's Ironskin Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100353),	-- Grievous Gladiator's Copperskin Gloves
 							i(100355),	-- Grievous Gladiator's Copperskin Helm
@@ -2296,7 +2296,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(PALADIN, {
 							moh(12, iensemble(138663, {	-- Ensemble: Grievous Gladiator's Scaled Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100383),	-- Grievous Gladiator's Ornamented Chestguard
 							i(100385),	-- Grievous Gladiator's Ornamented Gloves
@@ -2311,7 +2311,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(PRIEST, {
 							moh(12, iensemble(138677, {	-- Ensemble: Grievous Gladiator's Satin Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100405),	-- Grievous Gladiator's Mooncloth Gloves
 							i(100407),	-- Grievous Gladiator's Mooncloth Helm
@@ -2327,7 +2327,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(ROGUE, {
 							moh(12, iensemble(138673, {	-- Ensemble: Grievous Gladiator's Leather Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100432),	-- Grievous Gladiator's Leather Gloves
 							i(100434),	-- Grievous Gladiator's Leather Helm
@@ -2337,7 +2337,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(SHAMAN, {
 							moh(12, iensemble(138665, {	-- Ensemble: Grievous Gladiator's Ringmail Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100458),	-- Grievous Gladiator's Linked Armor
 							i(100460),	-- Grievous Gladiator's Linked Gauntlets
@@ -2357,7 +2357,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(WARLOCK, {
 							moh(12, iensemble(138679, {	-- Ensemble: Grievous Gladiator's Felweave Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100518),	-- Grievous Gladiator's Felweave Amice
 							i(100512),	-- Grievous Gladiator's Felweave Cowl
@@ -2367,7 +2367,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(WARRIOR, {
 							moh(12, iensemble(138659, {	-- Ensemble: Grievous Gladiator's Plate Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100520),	-- Grievous Gladiator's Plate Chestpiece
 							i(100522),	-- Grievous Gladiator's Plate Gauntlets
@@ -2375,7 +2375,7 @@ root(ROOTS.PVP, {
 							i(100526),	-- Grievous Gladiator's Plate Legguards
 							i(100528),	-- Grievous Gladiator's Plate Shoulders
 						}),
-						n(BACK, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						n(BACK, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							i(100196),	-- Grievous Gladiator's Cape of Cruelty
 							i(100197),	-- Grievous Gladiator's Cape of Prowess
 							i(100501),	-- Grievous Gladiator's Cloak of Alacrity
@@ -2408,17 +2408,17 @@ root(ROOTS.PVP, {
 							i(100375),	-- Grievous Gladiator's Clasp of Meditation
 							i(100207, {	-- Grievous Gladiator's Cord of Accuracy
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
+								description = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
 								-- #endif
 							}),
 							i(100205, {	-- Grievous Gladiator's Cord of Cruelty
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
+								description = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
 								-- #endif
 							}),
 							i(100209, {	-- Grievous Gladiator's Cord of Meditation
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+								description = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
 								-- #endif
 							}),
 							i(100393),	-- Grievous Gladiator's Girdle of Accuracy
@@ -2443,23 +2443,23 @@ root(ROOTS.PVP, {
 							i(100312),	-- Grievous Gladiator's Sabatons of Cruelty
 							i(100213, {	-- Grievous Gladiator's Treads of Alacrity
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
+								description = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
 								-- #endif
 							}),
 							i(100211, {	-- Grievous Gladiator's Treads of Cruelty
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
+								description = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
 								-- #endif
 							}),
 							i(100215, {	-- Grievous Gladiator's Treads of Meditation
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+								description = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
 								-- #endif
 							}),
 							i(100399),	-- Grievous Gladiator's Warboots of Alacrity
 							i(100397),	-- Grievous Gladiator's Warboots of Cruelty
 						}),
-						filter(NECK_F, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						filter(NECK_F, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							i(100504),	-- Grievous Gladiator's Choker of Accuracy
 							i(100503),	-- Grievous Gladiator's Choker of Proficiency
 							i(100198),	-- Grievous Gladiator's Necklace of Proficiency
@@ -2468,7 +2468,7 @@ root(ROOTS.PVP, {
 							i(100231),	-- Grievous Gladiator's Pendant of Cruelty
 							i(100233),	-- Grievous Gladiator's Pendant of Meditation
 						})),
-						filter(FINGER_F, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						filter(FINGER_F, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							i(100235),	-- Grievous Gladiator's Band of Accuracy
 							i(100234),	-- Grievous Gladiator's Band of Cruelty
 							i(100236),	-- Grievous Gladiator's Band of Meditation
@@ -2477,7 +2477,7 @@ root(ROOTS.PVP, {
 							i(100507),	-- Grievous Gladiator's Signet of Accuracy
 							i(100506),	-- Grievous Gladiator's Signet of Cruelty
 						})),
-						filter(TRINKET_F, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						filter(TRINKET_F, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							i(100195),	-- Grievous Gladiator's Badge of Conquest
 							i(100490),	-- Grievous Gladiator's Badge of Dominance
 							i(100500),	-- Grievous Gladiator's Badge of Victory
@@ -2495,8 +2495,8 @@ root(ROOTS.PVP, {
 				},
 			}),
 			n(FACTION_HEADER_HORDE, {
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				races = HORDE_ONLY,
+				groups = {
 					n(PVP_HONOR, {
 						n(WEAPONS, {
 							moh(2, i(100171)),	-- Tyrannical Gladiator's Barrier
@@ -2695,7 +2695,7 @@ root(ROOTS.PVP, {
 							moh(2, i(100131)),	-- Tyrannical Gladiator's Warboots of Alacrity
 							moh(2, i(100084)),	-- Tyrannical Gladiator's Warboots of Cruelty
 						}),
-						filter(NECK_F, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						filter(NECK_F, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							i(100024),	-- Tyrannical Gladiator's Choker of Accuracy
 							i(100135),	-- Tyrannical Gladiator's Choker of Proficiency
 							i(100064),	-- Tyrannical Gladiator's Necklace of Proficiency
@@ -2704,7 +2704,7 @@ root(ROOTS.PVP, {
 							i(100159),	-- Tyrannical Gladiator's Pendant of Cruelty
 							i(100122),	-- Tyrannical Gladiator's Pendant of Meditation
 						})),
-						filter(FINGER_F, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						filter(FINGER_F, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							i(100033),	-- Tyrannical Gladiator's Band of Accuracy
 							i(100060),	-- Tyrannical Gladiator's Band of Cruelty
 							i(100144),	-- Tyrannical Gladiator's Band of Meditation
@@ -2713,7 +2713,7 @@ root(ROOTS.PVP, {
 							i(100132),	-- Tyrannical Gladiator's Signet of Accuracy
 							i(100087),	-- Tyrannical Gladiator's Signet of Cruelty
 						})),
-						filter(TRINKET_F, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						filter(TRINKET_F, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							i(100043),	-- Tyrannical Gladiator's Badge of Conquest
 							i(100016),	-- Tyrannical Gladiator's Badge of Dominance
 							i(100019),	-- Tyrannical Gladiator's Badge of Victory
@@ -2729,9 +2729,9 @@ root(ROOTS.PVP, {
 						})),
 					}),
 					n(PVP_GLADIATOR, {
-						n(WEAPONS, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						n(WEAPONS, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							moh(80, iensemble(144251, {	-- Arsenal: Grievous Gladiator's Weapons (H)
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100731),	-- Grievous Gladiator's Barrier
 							i(100538),	-- Grievous Gladiator's Baton of Light
@@ -2760,7 +2760,7 @@ root(ROOTS.PVP, {
 						})),
 						cl(DEATHKNIGHT, {
 							moh(12, iensemble(138662, {	-- Ensemble: Grievous Gladiator's Dreadplate Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100622),	-- Grievous Gladiator's Dreadplate Chestpiece
 							i(100594),	-- Grievous Gladiator's Dreadplate Gauntlets
@@ -2770,7 +2770,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(DRUID, {
 							moh(12, iensemble(138670, {	-- Ensemble: Grievous Gladiator's Dragonhide Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100685),	-- Grievous Gladiator's Dragonhide Gloves
 							i(100597),	-- Grievous Gladiator's Dragonhide Helm
@@ -2790,7 +2790,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(HUNTER, {
 							moh(12, iensemble(138668, {	-- Ensemble: Grievous Gladiator's Chain Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100635),	-- Grievous Gladiator's Chain Armor
 							i(100683),	-- Grievous Gladiator's Chain Gauntlets
@@ -2800,7 +2800,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(MAGE, {
 							moh(12, iensemble(138676, {	-- Ensemble: Grievous Gladiator's Silk Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100619),	-- Grievous Gladiator's Silk Amice
 							i(100611),	-- Grievous Gladiator's Silk Cowl
@@ -2810,7 +2810,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(MONK, {
 							moh(12, iensemble(138672, {	-- Ensemble: Grievous Gladiator's Ironskin Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100570),	-- Grievous Gladiator's Copperskin Gloves
 							i(100571),	-- Grievous Gladiator's Copperskin Helm
@@ -2825,7 +2825,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(PALADIN, {
 							moh(12, iensemble(138664, {	-- Ensemble: Grievous Gladiator's Scaled Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100575),	-- Grievous Gladiator's Ornamented Chestguard
 							i(100668),	-- Grievous Gladiator's Ornamented Gloves
@@ -2840,7 +2840,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(PRIEST, {
 							moh(12, iensemble(138678, {	-- Ensemble: Grievous Gladiator's Satin Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100558),	-- Grievous Gladiator's Mooncloth Gloves
 							i(100649),	-- Grievous Gladiator's Mooncloth Helm
@@ -2855,7 +2855,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(ROGUE, {
 							moh(12, iensemble(138674, {	-- Ensemble: Grievous Gladiator's Leather Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100607),	-- Grievous Gladiator's Leather Gloves
 							i(100656),	-- Grievous Gladiator's Leather Helm
@@ -2865,7 +2865,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(SHAMAN, {
 							moh(12, iensemble(138666, {	-- Ensemble: Grievous Gladiator's Ringmail Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100705),	-- Grievous Gladiator's Linked Armor
 							i(100688),	-- Grievous Gladiator's Linked Gauntlets
@@ -2885,7 +2885,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(WARLOCK, {
 							moh(12, iensemble(143826, {	-- Ensemble: Grievous Gladiator's Felweave Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100628),	-- Grievous Gladiator's Felweave Amice
 							i(100672),	-- Grievous Gladiator's Felweave Cowl
@@ -2895,7 +2895,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(WARRIOR, {
 							moh(12, iensemble(138660, {	-- Ensemble: Grievous Gladiator's Plate Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							i(100674),	-- Grievous Gladiator's Plate Chestpiece
 							i(100561),	-- Grievous Gladiator's Plate Gauntlets
@@ -2903,7 +2903,7 @@ root(ROOTS.PVP, {
 							i(100678),	-- Grievous Gladiator's Plate Legguards
 							i(100631),	-- Grievous Gladiator's Plate Shoulders
 						}),
-						n(BACK, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						n(BACK, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							i(100651),	-- Grievous Gladiator's Cape of Cruelty
 							i(100585),	-- Grievous Gladiator's Cape of Prowess
 							i(100715),	-- Grievous Gladiator's Cloak of Alacrity
@@ -2936,17 +2936,17 @@ root(ROOTS.PVP, {
 							i(100694),	-- Grievous Gladiator's Clasp of Meditation
 							i(100606, {	-- Grievous Gladiator's Cord of Accuracy
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
+								description = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
 								-- #endif
 							}),
 							i(100630, {	-- Grievous Gladiator's Cord of Cruelty
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
+								description = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
 								-- #endif
 							}),
 							i(100655, {	-- Grievous Gladiator's Cord of Meditation
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+								description = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
 								-- #endif
 							}),
 							i(100583),	-- Grievous Gladiator's Girdle of Accuracy
@@ -2971,23 +2971,23 @@ root(ROOTS.PVP, {
 							i(100675),	-- Grievous Gladiator's Sabatons of Cruelty
 							i(100563, {	-- Grievous Gladiator's Treads of Alacrity
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
+								description = "This item is only obtainable via the Grievous Gladiator Warlock Ensemble.",
 								-- #endif
 							}),
 							i(100632, {	-- Grievous Gladiator's Treads of Cruelty
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
+								description = "This item is only obtainable via the Grievous Gladiator Mage Ensemble.",
 								-- #endif
 							}),
 							i(100698, {	-- Grievous Gladiator's Treads of Meditation
 								-- #if AFTER 7.1.5
-								["description"] = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
+								description = "This item is only obtainable via the Grievous Gladiator Priest Ensemble.",
 								-- #endif
 							}),
 							i(100691),	-- Grievous Gladiator's Warboots of Alacrity
 							i(100644),	-- Grievous Gladiator's Warboots of Cruelty
 						}),
-						filter(NECK_F, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						filter(NECK_F, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							i(100584),	-- Grievous Gladiator's Choker of Accuracy
 							i(100695),	-- Grievous Gladiator's Choker of Proficiency
 							i(100624),	-- Grievous Gladiator's Necklace of Proficiency
@@ -2996,7 +2996,7 @@ root(ROOTS.PVP, {
 							i(100719),	-- Grievous Gladiator's Pendant of Cruelty
 							i(100682),	-- Grievous Gladiator's Pendant of Meditation
 						})),
-						filter(FINGER_F, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						filter(FINGER_F, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							i(100593),	-- Grievous Gladiator's Band of Accuracy
 							i(100620),	-- Grievous Gladiator's Band of Cruelty
 							i(100704),	-- Grievous Gladiator's Band of Meditation
@@ -3005,7 +3005,7 @@ root(ROOTS.PVP, {
 							i(100692),	-- Grievous Gladiator's Signet of Accuracy
 							i(100647),	-- Grievous Gladiator's Signet of Cruelty
 						})),
-						filter(TRINKET_F, sharedData({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+						filter(TRINKET_F, sharedData({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 							i(100603),	-- Grievous Gladiator's Badge of Conquest
 							i(100576),	-- Grievous Gladiator's Badge of Dominance
 							i(100579),	-- Grievous Gladiator's Badge of Victory
@@ -3022,7 +3022,7 @@ root(ROOTS.PVP, {
 					}),
 				},
 			}),
-			n(PVP_ELITE, bubbleDown({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+			n(PVP_ELITE, bubbleDown({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 				-- Original Sources are:
 				-- n00000 Unknown in Valley of the Four Winds (Alliance)
 				-- n00000 Unknown in Area Kun-Lai Summit (Horde)
@@ -3211,48 +3211,48 @@ root(ROOTS.PVP, {
 			})),
 		}))),
 		-- Wouter NOTE: temporarily tied this to SoO phase release for MoP Classic, but this will likely be different
-		n(SEASON_PRIDEFUL, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_7 } }, {
+		n(SEASON_PRIDEFUL, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, bubbleDownSelf({ timeline = { ADDED_5_4_7 } }, {
 			n(ACHIEVEMENTS, {
-				ach(11720, {["timeline"] = {ADDED_7_2_0}}),	-- Wear It With Pride (PvP Season 15)
+				ach(11720, {timeline = {ADDED_7_2_0}}),	-- Wear It With Pride (PvP Season 15)
 			}),
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
 				ach(8670),	-- Challenger: Mists of Pandaria Season 4/Season 15
 				ach(8668, {	-- Duelist: Mists of Pandaria Season 4/Season 15
 					elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
-						["timeline"] = { ADDED_7_3_2 },
+						timeline = { ADDED_7_3_2 },
 					})),
 				}),
 				ach(8667, {	-- Gladiator: Season 15 (Retail) // Gladiator: Season 15 (3v3) (Classic)
 					i(104327),	-- Prideful Gladiator's Cloud Serpent
 				}),
 				ach(8658, {	-- Hero of the Alliance: Prideful
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
-							["timeline"] = { ADDED_7_3_2 },
+							timeline = { ADDED_7_3_2 },
 						})),
 					},
 				}),
 				ach(8659, {	-- Hero of the Horde: Prideful
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
-							["timeline"] = { ADDED_7_3_2 },
+							timeline = { ADDED_7_3_2 },
 						})),
 					},
 				}),
 				ach(8642, {	-- Prideful Combatant (Alliance) Mists of Pandaria Season 4/Season 15
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(8641, {	-- Prideful Combatant (Horde) Mists of Pandaria Season 4/Season 15
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 				ach(8666, {	-- Prideful Gladiator (Retail) // Prideful Gladiator: Season 15 (3v3) (Classic)
 					title(254),	-- Prideful Gladiator <Name>
 				}),
 				ach(8707, {	-- Prideful Gladiator's Cloud Serpent
-					["provider"] = { "i", 104327 },	-- Prideful Gladiator's Cloud Serpent
-					["filterID"] = MOUNTS,
+					provider = { "i", 104327 },	-- Prideful Gladiator's Cloud Serpent
+					filterID = MOUNTS,
 				}),
 				ach(8669),	-- Rival: Mists of Pandaria Season 4/Season 15
 				-- #if ANYCLASSIC
@@ -3275,8 +3275,8 @@ root(ROOTS.PVP, {
 				-- #endif
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				races = ALLIANCE_ONLY,
+				groups = {
 					n(PVP_HONOR, {
 						n(WEAPONS, {
 							moh(2, i(103167)),	-- Grievous Gladiator's Barrier
@@ -3478,7 +3478,7 @@ root(ROOTS.PVP, {
 							moh(2, i(103261)),	-- Grievous Gladiator's Warboots of Alacrity
 							moh(2, i(103260)),	-- Grievous Gladiator's Warboots of Cruelty
 						}),
-						filter(NECK_F, sharedData({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
+						filter(NECK_F, sharedData({ timeline = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
 							i(103318),	-- Grievous Gladiator's Choker of Accuracy
 							i(103317),	-- Grievous Gladiator's Choker of Proficiency
 							i(103148),	-- Grievous Gladiator's Necklace of Proficiency
@@ -3487,7 +3487,7 @@ root(ROOTS.PVP, {
 							i(103170),	-- Grievous Gladiator's Pendant of Cruelty
 							i(103172),	-- Grievous Gladiator's Pendant of Meditation
 						})),
-						filter(FINGER_F, sharedData({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
+						filter(FINGER_F, sharedData({ timeline = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
 							i(103174),	-- Grievous Gladiator's Band of Accuracy
 							i(103173),	-- Grievous Gladiator's Band of Cruelty
 							i(103175),	-- Grievous Gladiator's Band of Meditation
@@ -3496,7 +3496,7 @@ root(ROOTS.PVP, {
 							i(103321),	-- Grievous Gladiator's Signet of Accuracy
 							i(103320),	-- Grievous Gladiator's Signet of Cruelty
 						})),
-						filter(TRINKET_F, sharedData({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
+						filter(TRINKET_F, sharedData({ timeline = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
 							i(103145),	-- Grievous Gladiator's Badge of Conquest
 							i(103308),	-- Grievous Gladiator's Badge of Dominance
 							i(103314),	-- Grievous Gladiator's Badge of Victory
@@ -3514,7 +3514,7 @@ root(ROOTS.PVP, {
 					n(PVP_GLADIATOR, {
 						n(WEAPONS, {
 							moh(80, iensemble(144248, {	-- Arsenal: Prideful Gladiator's Weapons (A)
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(2, i(102785)),	-- Prideful Gladiator's Barrier
 							moh(5, i(102596)),	-- Prideful Gladiator's Baton of Light
@@ -3545,7 +3545,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(DEATHKNIGHT, {
 							moh(12, iensemble(138639, {	-- Ensemble: Prideful Gladiator's Dreadplate Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(3, i(102676)),	-- Prideful Gladiator's Dreadplate Chestpiece
 							moh(2, i(102650)),	-- Prideful Gladiator's Dreadplate Gauntlets
@@ -3555,7 +3555,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(DRUID, {
 							moh(12, iensemble(138647, {	-- Ensemble: Prideful Gladiator's Dragonhide Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(2, i(102739)),	-- Prideful Gladiator's Dragonhide Gloves
 							moh(3, i(102653)),	-- Prideful Gladiator's Dragonhide Helm
@@ -3575,7 +3575,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(HUNTER, {
 							moh(12, iensemble(138645, {	-- Ensemble: Prideful Gladiator's Chain Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(3, i(102689)),	-- Prideful Gladiator's Chain Armor
 							moh(2, i(102737)),	-- Prideful Gladiator's Chain Gauntlets
@@ -3585,7 +3585,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(MAGE, {
 							moh(12, iensemble(138653, {	-- Ensemble: Prideful Gladiator's Silk Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(2, i(102673)),	-- Prideful Gladiator's Silk Amice
 							moh(3, i(102667)),	-- Prideful Gladiator's Silk Cowl
@@ -3595,7 +3595,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(MONK, {
 							moh(12, iensemble(138649, {	-- Ensemble: Prideful Gladiator's Ironskin Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(2, i(102627)),	-- Prideful Gladiator's Copperskin Gloves
 							moh(3, i(102628)),	-- Prideful Gladiator's Copperskin Helm
@@ -3610,7 +3610,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(PALADIN, {
 							moh(12, iensemble(138641, {	-- Ensemble: Prideful Gladiator's Scaled Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(3, i(102632)),	-- Prideful Gladiator's Ornamented Chestguard
 							moh(2, i(102722)),	-- Prideful Gladiator's Ornamented Gloves
@@ -3625,7 +3625,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(PRIEST, {
 							moh(12, iensemble(138655, {	-- Ensemble: Prideful Gladiator's Satin Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(2, i(102615)),	-- Prideful Gladiator's Mooncloth Gloves
 							moh(3, i(102703)),	-- Prideful Gladiator's Mooncloth Helm
@@ -3640,7 +3640,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(ROGUE, {
 							moh(12, iensemble(138651, {	-- Ensemble: Prideful Gladiator's Leather Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(2, i(102727)),	-- Prideful Gladiator's Leather Gloves
 							moh(3, i(102731)),	-- Prideful Gladiator's Leather Helm
@@ -3650,7 +3650,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(SHAMAN, {
 							moh(12, iensemble(138643, {	-- Ensemble: Prideful Gladiator's Ringmail Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(3, i(102759)),	-- Prideful Gladiator's Linked Armor
 							moh(2, i(102742)),	-- Prideful Gladiator's Linked Gauntlets
@@ -3670,7 +3670,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(WARLOCK, {
 							moh(12, iensemble(138657, {	-- Ensemble: Prideful Gladiator's Felweave Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(2, i(102682)),	-- Prideful Gladiator's Felweave Amice
 							moh(3, i(102726)),	-- Prideful Gladiator's Felweave Cowl
@@ -3680,7 +3680,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(WARRIOR, {
 							moh(12, iensemble(138637, {	-- Ensemble: Prideful Gladiator's Plate Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(3, i(102728)),	-- Prideful Gladiator's Plate Chestpiece
 							moh(2, i(102618)),	-- Prideful Gladiator's Plate Gauntlets
@@ -3773,7 +3773,7 @@ root(ROOTS.PVP, {
 							i(102746),	-- Prideful Gladiator's Signet of Accuracy
 							i(102701),	-- Prideful Gladiator's Signet of Cruelty
 						}),
-						filter(TRINKET_F, sharedData({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_0_2 } }, {
+						filter(TRINKET_F, sharedData({ timeline = { ADDED_5_4_7, REMOVED_6_0_2 } }, {
 							i(102659),	-- Prideful Gladiator's Badge of Conquest
 							i(102633),	-- Prideful Gladiator's Badge of Dominance
 							i(102636),	-- Prideful Gladiator's Badge of Victory
@@ -3791,8 +3791,8 @@ root(ROOTS.PVP, {
 				},
 			}),
 			n(FACTION_HEADER_HORDE, {
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				races = HORDE_ONLY,
+				groups = {
 					n(PVP_HONOR, {
 						n(WEAPONS, {
 							moh(2, i(102982)),	-- Grievous Gladiator's Barrier
@@ -3994,7 +3994,7 @@ root(ROOTS.PVP, {
 							moh(2, i(102942)),	-- Grievous Gladiator's Warboots of Alacrity
 							moh(2, i(102895)),	-- Grievous Gladiator's Warboots of Cruelty
 						}),
-						filter(NECK_F, sharedData({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
+						filter(NECK_F, sharedData({ timeline = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
 							i(102838),	-- Grievous Gladiator's Choker of Accuracy
 							i(102946),	-- Grievous Gladiator's Choker of Proficiency
 							i(102875),	-- Grievous Gladiator's Necklace of Proficiency
@@ -4003,7 +4003,7 @@ root(ROOTS.PVP, {
 							i(102970),	-- Grievous Gladiator's Pendant of Cruelty
 							i(102933),	-- Grievous Gladiator's Pendant of Meditation
 						})),
-						filter(FINGER_F, sharedData({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
+						filter(FINGER_F, sharedData({ timeline = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
 							i(102846),	-- Grievous Gladiator's Band of Accuracy
 							i(102871),	-- Grievous Gladiator's Band of Cruelty
 							i(102955),	-- Grievous Gladiator's Band of Meditation
@@ -4012,7 +4012,7 @@ root(ROOTS.PVP, {
 							i(102943),	-- Grievous Gladiator's Signet of Accuracy
 							i(102898),	-- Grievous Gladiator's Signet of Cruelty
 						})),
-						filter(TRINKET_F, sharedData({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
+						filter(TRINKET_F, sharedData({ timeline = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
 							i(102856),	-- Grievous Gladiator's Badge of Conquest
 							i(102830),	-- Grievous Gladiator's Badge of Dominance
 							i(102833),	-- Grievous Gladiator's Badge of Victory
@@ -4030,7 +4030,7 @@ root(ROOTS.PVP, {
 					n(PVP_GLADIATOR, {
 						n(WEAPONS, {
 							moh(80, iensemble(144250, {	-- Arsenal: Prideful Gladiator's Weapons (H)
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(2, i(103364)),	-- Prideful Gladiator's Barrier
 							moh(5, i(103507)),	-- Prideful Gladiator's Baton of Light
@@ -4061,7 +4061,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(DEATHKNIGHT, {
 							moh(12, iensemble(138640, {	-- Ensemble: Prideful Gladiator's Dreadplate Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(3, i(103376)),	-- Prideful Gladiator's Dreadplate Chestpiece
 							moh(2, i(103377)),	-- Prideful Gladiator's Dreadplate Gauntlets
@@ -4071,7 +4071,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(DRUID, {
 							moh(12, iensemble(138648, {	-- Ensemble: Prideful Gladiator's Dragonhide Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(2, i(103381)),	-- Prideful Gladiator's Dragonhide Gloves
 							moh(3, i(103382)),	-- Prideful Gladiator's Dragonhide Helm
@@ -4091,7 +4091,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(HUNTER, {
 							moh(12, iensemble(138646, {	-- Ensemble: Prideful Gladiator's Chain Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(3, i(103416)),	-- Prideful Gladiator's Chain Armor
 							moh(2, i(103417)),	-- Prideful Gladiator's Chain Gauntlets
@@ -4101,7 +4101,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(MAGE, {
 							moh(12, iensemble(138654, {	-- Ensemble: Prideful Gladiator's Silk Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(2, i(103425)),	-- Prideful Gladiator's Silk Amice
 							moh(3, i(103422)),	-- Prideful Gladiator's Silk Cowl
@@ -4111,7 +4111,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(MONK, {
 							moh(12, iensemble(138650, {	-- Ensemble: Prideful Gladiator's Ironskin Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(2, i(103434)),	-- Prideful Gladiator's Copperskin Gloves
 							moh(3, i(103435)),	-- Prideful Gladiator's Copperskin Helm
@@ -4126,7 +4126,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(PALADIN, {
 							moh(12, iensemble(138642, {	-- Ensemble: Prideful Gladiator's Scaled Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(3, i(103450)),	-- Prideful Gladiator's Ornamented Chestguard
 							moh(2, i(103451)),	-- Prideful Gladiator's Ornamented Gloves
@@ -4141,7 +4141,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(PRIEST, {
 							moh(12, iensemble(138656, {	-- Ensemble: Prideful Gladiator's Satin Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(2, i(103462)),	-- Prideful Gladiator's Mooncloth Gloves
 							moh(3, i(103463)),	-- Prideful Gladiator's Mooncloth Helm
@@ -4156,7 +4156,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(ROGUE, {
 							moh(12, iensemble(138652, {	-- Ensemble: Prideful Gladiator's Leather Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(2, i(103476)),	-- Prideful Gladiator's Leather Gloves
 							moh(3, i(103477)),	-- Prideful Gladiator's Leather Helm
@@ -4166,7 +4166,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(SHAMAN, {
 							moh(12, iensemble(138644, {	-- Ensemble: Prideful Gladiator's Ringmail Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(3, i(103490)),	-- Prideful Gladiator's Linked Armor
 							moh(2, i(103491)),	-- Prideful Gladiator's Linked Gauntlets
@@ -4186,7 +4186,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(WARLOCK, {
 							moh(12, iensemble(138658, {	-- Ensemble: Prideful Gladiator's Felweave Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(2, i(103524)),	-- Prideful Gladiator's Felweave Amice
 							moh(3, i(103521)),	-- Prideful Gladiator's Felweave Cowl
@@ -4196,7 +4196,7 @@ root(ROOTS.PVP, {
 						}),
 						cl(WARRIOR, {
 							moh(12, iensemble(138638, {	-- Ensemble: Prideful Gladiator's Plate Armor
-								["timeline"] = { ADDED_7_1_5 },
+								timeline = { ADDED_7_1_5 },
 							})),
 							moh(3, i(103525)),	-- Prideful Gladiator's Plate Chestpiece
 							moh(2, i(103526)),	-- Prideful Gladiator's Plate Gauntlets
@@ -4290,7 +4290,7 @@ root(ROOTS.PVP, {
 							i(103518),	-- Prideful Gladiator's Signet of Accuracy
 							i(103517),	-- Prideful Gladiator's Signet of Cruelty
 						}),
-						filter(TRINKET_F, sharedData({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_0_2 } }, {
+						filter(TRINKET_F, sharedData({ timeline = { ADDED_5_4_7, REMOVED_6_0_2 } }, {
 							i(103342),	-- Prideful Gladiator's Badge of Conquest
 							i(103505),	-- Prideful Gladiator's Badge of Dominance
 							i(103511),	-- Prideful Gladiator's Badge of Victory
@@ -4307,7 +4307,7 @@ root(ROOTS.PVP, {
 					}),
 				},
 			}),
-			n(PVP_ELITE, bubbleDown({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_0_2 } }, {
+			n(PVP_ELITE, bubbleDown({ timeline = { ADDED_5_4_7, REMOVED_6_0_2 } }, {
 				-- Original Sources are:
 				-- n73147 Ethan Natice in Valley of the Four Winds (Alliance)
 				-- n73145 Acon Deathwielder in Area Kun-Lai Summit (Horde)
@@ -4498,7 +4498,7 @@ root(ROOTS.PVP, {
 	}))),
 });
 
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
+-- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
 -- 	n(PVP, {
 -- 		-- PvP Ensembles
 -- 		q(45583),	-- Dreadful Gladiator's Chain Armor (Hunter)

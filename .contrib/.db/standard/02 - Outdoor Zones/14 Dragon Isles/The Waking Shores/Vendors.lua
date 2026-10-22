@@ -2,15 +2,15 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_WAKING_SHORES, {
 		n(VENDORS, {
 			n(193915, {	-- Emilia Bellocq
-				["coord"] = { 75.4, 34.0, THE_WAKING_SHORES },
-				["groups"] = {
+				coord = { 75.4, 34.0, THE_WAKING_SHORES },
+				groups = {
 					i(199900),	-- Secondhand Survery Tools
 					i(198646, {	-- Ornate Dragon Statue (TOY!)
-						["sourceQuests"] = {
+						sourceQuests = {
 							70236,	-- Dislodged Dragoneye
 							70207,	-- Tail Fragment
 							70175,	-- Broken Banding
@@ -26,12 +26,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			n(186752, {	-- Firstmate Kaleson
-				["coord"] = { 43.0, 67.4, THE_WAKING_SHORES },
-				["groups"] = { i(197739) },	-- Happy Trigger Sour
+				coord = { 43.0, 67.4, THE_WAKING_SHORES },
+				groups = { i(197739) },	-- Happy Trigger Sour
 			}),
 			n(189207, {	-- Griftah
-				["coord"] = { 25.6, 54.3, THE_WAKING_SHORES },
-				["groups"] = {
+				coord = { 25.6, 54.3, THE_WAKING_SHORES },
+				groups = {
 					i(27978),	-- Soap on a Rope
 					i(200265),	-- Lucky Dragon's Claw
 					i(200268),	-- Crumbling Elemental Stone
@@ -47,35 +47,35 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			n(187412, {	-- Happy Hal <Innkeeper>
-				["coord"] = { 81.2, 31.8, THE_WAKING_SHORES },
-				["groups"] = { i(194680) },	-- Jerky Surprise
+				coord = { 81.2, 31.8, THE_WAKING_SHORES },
+				groups = { i(194680) },	-- Jerky Surprise
 			}),
 			n(186454, {	-- Kora Fullsails <Food and Provisions>
-				["coord"] = { 43.0, 67.2, THE_WAKING_SHORES },
-				["groups"] = { i(198047) },	-- Kul Tiran Red
+				coord = { 43.0, 67.2, THE_WAKING_SHORES },
+				groups = { i(198047) },	-- Kul Tiran Red
 			}),
 			n(191025 , {	-- Lifecaller Tzadrak
-				["coord"] = { 61.9, 73.8, THE_WAKING_SHORES },
-				["groups"] = {
+				coord = { 61.9, 73.8, THE_WAKING_SHORES },
+				groups = {
 					i(246863, {	-- Open Tome of the Dragon's Dedication (DECOR!)
-						["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
-						["timeline"] = { ADDED_11_2_7 },
+						cost = { { "c", DRAGON_SUPPLIES, 500 } },
+						timeline = { ADDED_11_2_7 },
 					}),
 				},
 			}),
 			n(193955, {	-- Lillistrasza
-				["coord"] = { 59.8, 70.4, THE_WAKING_SHORES },
-				["groups"] = {
+				coord = { 59.8, 70.4, THE_WAKING_SHORES },
+				groups = {
 					i(284250, {	-- Pattern: Lillistrasza's Lucky Duck Plushie (RECIPE!)
-						["sourceQuest"] = 70058,	-- Friend on the Mend,
-						["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
-						["timeline"] = { ADDED_12_1_5 }
+						sourceQuest = 70058,	-- Friend on the Mend,
+						cost = { { "c", DRAGON_SUPPLIES, 400 } },
+						timeline = { ADDED_12_1_5 }
 					}),
 				},
 			}),
 			n(187399, {	-- Maribeth <Innkeeper>
-				["coord"] = { 47.7, 83.2, THE_WAKING_SHORES },
-				["groups"] = {
+				coord = { 47.7, 83.2, THE_WAKING_SHORES },
+				groups = {
 					i(197848),	-- Hearty Squash Stew
 					i(197856),	-- Cup o' Wakeup
 					i(197857),	-- Swog Slurp
@@ -83,17 +83,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			n(197510, {	-- Talon Scaralesh
-				["coord"] = { 47.0, 83.0, THE_WAKING_SHORES },
-				["groups"] = { i(200619) },	-- Scaralesh's Special
+				coord = { 47.0, 83.0, THE_WAKING_SHORES },
+				groups = { i(200619) },	-- Scaralesh's Special
 			}),
 			n(191135, {	-- Yries Lightfingers <Second-Hand Supplies>
-				["coord"] = { 26.4, 55.4, THE_WAKING_SHORES },
-				["groups"] = {
+				coord = { 26.4, 55.4, THE_WAKING_SHORES },
+				groups = {
 					i(194884),	-- Annoy-o-Tron Gang
 					i(193499),	-- Blacktalon Wingpack
 					i(194679),	-- BOOM-O-MATIC 90000
 					i(199326, {	-- Chip (PET!)
-						["cost"] = {
+						cost = {
 							{ "i", 198357, 1 },	-- 1x Rock of Aegis
 							{ "i", 198082, 2 },	-- 2x Pre-Sentient Rock Cluster
 							{ "i", 199219, 3 },	-- 3x Element-Infused Blood
@@ -101,14 +101,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					i(194890),	-- GG-117 Micro-Jetpack
 					i(201837, {	-- Magmammoth Harness
-						["description"] = "Use it while riding the Tame Magmammoth @ 33.3, 72.2",
-						["coord"] = { 33.3, 72.2, THE_WAKING_SHORES },
-						["cr"] = 198150,	-- Tame Magmammoth
-						["cost"] = {
+						description = "Use it while riding the Tame Magmammoth @ 33.3, 72.2",
+						coord = { 33.3, 72.2, THE_WAKING_SHORES },
+						cr = 198150,	-- Tame Magmammoth
+						cost = {
 							{ "i", 201839, 1 },	-- 1x Netherforged Lavaproof Boots
 							{ "i", 201840, 1 },	-- 1x Sturdy Obsidian Glasses
 						},
-						["groups"] = { i(192601) },	-- Loyal Magmammoth (MOUNT!)
+						groups = { i(192601) },	-- Loyal Magmammoth (MOUNT!)
 					}),
 					i(198452),	-- Prototype F
 					i(194696),	-- Recycled Crawler Mine

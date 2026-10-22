@@ -14,28 +14,28 @@ local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
 end]];
 -- #endif
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
 	inst(756, {	-- The Eye of Eternity
-		["mapID"] = THE_EYE_OF_ETERNITY,
-		["coord"] = { 27.5, 26.6, BOREAN_TUNDRA },	-- The Eye of Eternity (Coldarra)
+		mapID = THE_EYE_OF_ETERNITY,
+		coord = { 27.5, 26.6, BOREAN_TUNDRA },	-- The Eye of Eternity (Coldarra)
 		-- #if AFTER WOD
-		["sharedLockout"] = 1,
+		sharedLockout = 1,
 		-- #endif
-		["isRaid"] = true,
-		["lvl"] = 80,
-		["groups"] = {
+		isRaid = true,
+		lvl = 80,
+		groups = {
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				n(QUESTS, {
 					q(13384, {	-- Judgment at the Eye of Eternity
-						["sourceQuest"] = 13372,	-- The Key to the Focusing Iris
-						["qg"] = 27990,	-- Krasus <Consort of the Queen>
-						["coord"] = { 59.7, 54.6, DRAGONBLIGHT },
+						sourceQuest = 13372,	-- The Key to the Focusing Iris
+						qg = 27990,	-- Krasus <Consort of the Queen>
+						coord = { 59.7, 54.6, DRAGONBLIGHT },
 						-- #if ANYCLASSIC
-						["OnUpdate"] = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
+						OnUpdate = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
 						-- #endif
-						["groups"] = {
+						groups = {
 							objective(1, {	-- 0/1 Heart of Magic
-								["provider"] = { "i", 44650 },	-- Heart of Magic
+								provider = { "i", 44650 },	-- Heart of Magic
 							}),
 							i(44658),	-- Chain of the Ancient Wyrm
 							i(44660),	-- Drakescale Collar
@@ -45,22 +45,22 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				}),
 				e(1617, {	-- Malygos
-					["creatureID"] = 28859,	-- Malygos
-					["groups"] = {
+					creatureID = 28859,	-- Malygos
+					groups = {
 						ach(1869),	-- A Poke in the Eye (10 player)
 						ach(2148),	-- Denyin' the Scion (10 player)
 						ach(622),	-- The Spellweaver's Downfall (10 player)
 						ach(1874),	-- You Don't Have an Eternity (10 player)
 						ach(5018, {	-- You Don't Have an Eternity - Guild Edition
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(43952),	-- Azure Drake (MOUNT!)
 						-- #if AFTER 4.0.3
 						i(43953, {	-- Blue Drake (MOUNT!)
 							-- #if BEFORE 4.0.3
-							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Oculus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
+							description = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Oculus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
 							-- #endif
-							["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
+							timeline = { CREATED_3_0_2, ADDED_4_0_3 },
 						}),
 						-- #endif
 						i(40497),	-- Black Ice
@@ -80,12 +80,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
 				n(QUESTS, {
 					q(13385, {	-- Heroic Judgment at the Eye of Eternity
-						["sourceQuest"] = 13375,	-- The Heroic Key to the Focusing Iris
-						["qg"] = 27990,	-- Krasus <Consort of the Queen>
-						["coord"] = { 59.7, 54.6, DRAGONBLIGHT },
-						["groups"] = {
+						sourceQuest = 13375,	-- The Heroic Key to the Focusing Iris
+						qg = 27990,	-- Krasus <Consort of the Queen>
+						coord = { 59.7, 54.6, DRAGONBLIGHT },
+						groups = {
 							objective(1, {	-- 0/1 Heart of Magic
-								["provider"] = { "i", 44651 },	-- Heart of Magic
+								provider = { "i", 44651 },	-- Heart of Magic
 							}),
 							i(44664),	-- Favor of the Dragon Queen
 							i(44662),	-- Life-Binder's Locket
@@ -95,20 +95,20 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				}),
 				e(1617, {	-- Malygos
-					["creatureID"] = 28859,	-- Malygos
-					["groups"] = {
+					creatureID = 28859,	-- Malygos
+					groups = {
 						ach(1870),	-- A Poke in the Eye (25 player)
 						ach(2149),	-- Denyin' the Scion (25 player)
 						ach(623),	-- The Spellweaver's Downfall (25 player)
 						ach(1875),	-- You Don't Have an Eternity (25 player)
 						ach(5018, {	-- You Don't Have an Eternity - Guild Edition
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						ach(1400, {	-- Realm First! Magic Seeker
-							["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8  },
-							["groups"] = {
+							timeline = { ADDED_3_0_2, REMOVED_3_0_8  },
+							groups = {
 								title(88, {	-- <Name> the Magic Seeker
-									["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8 },
+									timeline = { ADDED_3_0_2, REMOVED_3_0_8 },
 								}),
 							},
 						}),
@@ -116,9 +116,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #if AFTER 4.0.3
 						i(43953, {	-- Blue Drake (MOUNT!)
 							-- #if BEFORE 4.0.3
-							["description"] = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Oculus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
+							description = "This mount was originally a drop from 10-man Malygos, but was moved to the cache of the ley guardian in the Oculus to encourage people to not skip the instance when it came up in the Dungeon Finder. In Wrath Classic, they decided to not implement the RDF feature, effectively making this mount unobtainable until Cataclysm.",
 							-- #endif
-							["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
+							timeline = { CREATED_3_0_2, ADDED_4_0_3 },
 						}),
 						-- #endif
 						i(40543),	-- Blue Aspect Helm

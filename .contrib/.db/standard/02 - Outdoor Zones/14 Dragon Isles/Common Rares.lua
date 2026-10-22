@@ -230,11 +230,11 @@ local RARE_GROUP_TEMPEST = {
 	201562,	-- Shardwing
 };
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	n(RARES, {
 		n(COMMON_BOSS_DROPS, {
-			["description"] = "These items can drop from any Lv70 Elite Rare or named Elite from any The Hunt Stage.",
-			["crs"] = {
+			description = "These items can drop from any Lv70 Elite Rare or named Elite from any The Hunt Stage.",
+			crs = {
 				193163,	-- Territorial Coastling
 				193201,	-- Mucka the Raker
 				193229,	-- Henlare
@@ -310,7 +310,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				-- Lunker (Fishing)
 				193634,	-- Swog'ranka <Lunker>
 			},
-			["groups"] = {
+			groups = {
 				i(200186),	-- Amberquill Shroud
 				i(200442),	-- Basilisk Hide Jerkin
 				i(200174),	-- Bonesigil Shoulderguards
@@ -344,339 +344,339 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		n(DROPS, {	-- Items which can drop from multiple, specifically-tagged Creatures
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(196991, {	-- Cliffside Wylderdrake: Black Horns (MM!)
-					["crs"] = RARE_GROUP_GIANT,
+					crs = RARE_GROUP_GIANT,
 				}),
 				i(196986, {	-- Cliffside Wylderdrake: Black Hair (MM!)
-					["crs"] = RARE_GROUP_TWO,
+					crs = RARE_GROUP_TWO,
 				}),
 				i(197019, {	-- Cliffside Wylderdrake: Blunt Spiked Tail (MM!)
-					["crs"] = RARE_GROUP_DJARADIN,
+					crs = RARE_GROUP_DJARADIN,
 				}),
 				i(196973, {	-- Cliffside Wylderdrake: Dual Horned Chin (MM!)
-					["crs"] = RARE_GROUP_TWO,
+					crs = RARE_GROUP_TWO,
 				}),
 				i(196982, {	-- Cliffside Wylderdrake: Ears (MM!)
-					["crs"] = RARE_GROUP_GNOLLS,
+					crs = RARE_GROUP_GNOLLS,
 				}),
 				i(197001, {	-- Cliffside Wylderdrake: Finned Cheek (MM!)
-					["crs"] = RARE_GROUP_WATER,
+					crs = RARE_GROUP_WATER,
 				}),
 				i(197022, {	-- Cliffside Wylderdrake: Finned Neck (MM!)
-					["crs"] = RARE_GROUP_FOUR,
+					crs = RARE_GROUP_FOUR,
 				}),
 				i(196992, {	-- Cliffside Wylderdrake: Heavy Horns (MM!)
-					["crs"] = RARE_GROUP_DRAGONKIN,
+					crs = RARE_GROUP_DRAGONKIN,
 				}),
 				i(196985, {	-- Cliffside Wylderdrake: Horned Jaw (MM!)
-					["crs"] = RARE_GROUP_SPECTRAL,
+					crs = RARE_GROUP_SPECTRAL,
 				}),
 				i(197005, {	-- Cliffside Wylderdrake: Horned Nose (MM!)
-					["crs"] = RARE_GROUP_DJARADIN,
+					crs = RARE_GROUP_DJARADIN,
 				}),
 				i(196983, {	-- Cliffside Wylderdrake: Maned Jaw (MM!)
-					["crs"] = RARE_GROUP_DRAGON,
+					crs = RARE_GROUP_DRAGON,
 				}),
 				i(197023, {	-- Cliffside Wylderdrake: Maned Neck (MM!)
-					["crs"] = RARE_GROUP_BEOGOKA,
+					crs = RARE_GROUP_BEOGOKA,
 				}),
 				i(197016, {	-- Cliffside Wylderdrake: Maned Tail (MM!)
-					["crs"] = RARE_GROUP_GHENDISH,
+					crs = RARE_GROUP_GHENDISH,
 				}),
 				i(197008, {	-- Cliffside Wylderdrake: Narrow Stripes Pattern (MM!)
-					["crs"] = RARE_GROUP_TIME,
+					crs = RARE_GROUP_TIME,
 				}),
 				i(196970, {	-- Cliffside Wylderdrake: Spiked Back (MM!)
-					["crs"] = RARE_GROUP_DRAGONKIN_SMALL,
+					crs = RARE_GROUP_DRAGONKIN_SMALL,
 				}),
 				i(196999, {	-- Cliffside Wylderdrake: Swept Horns (MM!)
-					["crs"] = RARE_GROUP_SUNDERING,
+					crs = RARE_GROUP_SUNDERING,
 				}),
 				i(197149, {	-- Highland Drake: Club Tail (MM!)
-					["crs"] = RARE_GROUP_THREE
+					crs = RARE_GROUP_THREE
 				}),
 				i(197125, {	-- Highland Drake: Coiled Horns (MM!)
-					["crs"] = RARE_GROUP_DRAGON,
+					crs = RARE_GROUP_DRAGON,
 				}),
 				i(197100, {	-- Highland Drake: Crested Brow (MM!)
-					["crs"] = RARE_GROUP_TITAN,
+					crs = RARE_GROUP_TITAN,
 				}),
 				i(197116, {	-- Highland Drake: Ears (MM!)
-					["crs"] = RARE_GROUP_SUNDERING,
+					crs = RARE_GROUP_SUNDERING,
 				}),
 				i(197098, {	-- Highland Drake: Finned Back (MM!)
-					["crs"] = RARE_GROUP_WATER,
+					crs = RARE_GROUP_WATER,
 				}),
 				i(197106, {	-- Highland Drake: Finned Head (MM!)
-					["crs"] = RARE_GROUP_SUNDER,
+					crs = RARE_GROUP_SUNDER,
 				}),
 				i(197150, {	-- Highland Drake: Spiked Club Tail (MM!)
-					["crs"] = RARE_GROUP_GNOLLS,
+					crs = RARE_GROUP_GNOLLS,
 				}),
 				i(197105, {	-- Highland Drake: Spined Chin (MM!)
-					["crs"] = RARE_GROUP_DRAGONKIN_SMALL,
+					crs = RARE_GROUP_DRAGONKIN_SMALL,
 				}),
 				i(197130, {	-- Highland Drake: Stag Horns (MM!)
-					["crs"] = RARE_GROUP_TIME,
+					crs = RARE_GROUP_TIME,
 				}),
 				i(197138, {	-- Highland Drake: Striped Pattern (MM!)
-					["crs"] = RARE_GROUP_ONE,
+					crs = RARE_GROUP_ONE,
 				}),
 				i(197121, {	-- Highland Drake: Tan Horns (MM!)
-					["crs"] = RARE_GROUP_AZRA,
+					crs = RARE_GROUP_AZRA,
 				}),
 				i(197135, {	-- Highland Drake: Toothy Mouth (MM!)
-					["crs"] = RARE_GROUP_BIQ,
+					crs = RARE_GROUP_BIQ,
 				}),
 				i(197403, {	-- Renewed Proto-Drake: Club Tail (MM!)
-					["crs"] = RARE_GROUP_DRAGONKIN,
+					crs = RARE_GROUP_DRAGONKIN,
 				}),
 				i(197367, {	-- Renewed Proto-Drake: Gray Hair (MM!)
-					["crs"] = RARE_GROUP_GHENDISH,
+					crs = RARE_GROUP_GHENDISH,
 				}),
 				i(197383, {	-- Renewed Proto-Drake: Heavy Horns (MM!)
-					["crs"] = RARE_GROUP_FIVE,
+					crs = RARE_GROUP_FIVE,
 				}),
 				i(197379, {	-- Renewed Proto-Drake: Impaler Horns (MM!)
-					["crs"] = RARE_GROUP_BIQ,
+					crs = RARE_GROUP_BIQ,
 				}),
 				i(197372, {	-- Renewed Proto-Drake: Purple Hair (MM!)
-					["crs"] = RARE_GROUP_WIND,
+					crs = RARE_GROUP_WIND,
 				}),
 				i(197400, {	-- Renewed Proto-Drake: Shark Snout (MM!)
-					["crs"] = RARE_GROUP_SUNDER,
+					crs = RARE_GROUP_SUNDER,
 				}),
 				i(197398, {	-- Renewed Proto-Drake: Snub Snout (MM!)
-					["crs"] = RARE_GROUP_AZRA,
+					crs = RARE_GROUP_AZRA,
 				}),
 				i(197382, {	-- Renewed Proto-Drake: White Horns (MM!)
-					["crs"] = RARE_GROUP_SPECTRAL,
+					crs = RARE_GROUP_SPECTRAL,
 				}),
 				i(197624, {	-- Windborne Velocidrake: Club Tail (MM!)
-					["crs"] = RARE_GROUP_GIANT,
+					crs = RARE_GROUP_GIANT,
 				}),
 				i(197602, {	-- Windborne Velocidrake: Cluster Horns (MM!)
-					["crs"] = RARE_GROUP_FIVE,
+					crs = RARE_GROUP_FIVE,
 				}),
 				i(197593, {	-- Windborne Velocidrake: Feathery Head (MM!)
-					["crs"] = RARE_GROUP_TEMPEST,
+					crs = RARE_GROUP_TEMPEST,
 				}),
 				i(197608, {	-- Windborne Velocidrake: Gray Horns (MM!)
-					["crs"] = RARE_GROUP_THREE
+					crs = RARE_GROUP_THREE
 				}),
 				i(197589, {	-- Windborne Velocidrake: Large Head Fin (MM!)
-					["crs"] = RARE_GROUP_FOUR,
+					crs = RARE_GROUP_FOUR,
 				}),
 				i(197586, {	-- Windborne Velocidrake: Spiked Back (MM!)
-					["crs"] = RARE_GROUP_ONE,
+					crs = RARE_GROUP_ONE,
 				}),
 				i(197606, {	-- Windborne Velocidrake: Swept Horns (MM!)
-					["crs"] = RARE_GROUP_WIND,
+					crs = RARE_GROUP_WIND,
 				}),
 			}),
 			n(ARMOR, {
 				i(200448, {	-- Abyssal Ward
-					["crs"] = RARE_GROUP_FOUR,
+					crs = RARE_GROUP_FOUR,
 				}),
 				i(200165, {	-- Aegis of Scales
-					["crs"] = RARE_GROUP_DRAGONKIN,
+					crs = RARE_GROUP_DRAGONKIN,
 				}),
 				i(200210, {	-- Amnesia
-					["crs"] = RARE_GROUP_ONE,
+					crs = RARE_GROUP_ONE,
 				}),
 				i(200138, {	-- Ancient Dancer's Longspear
-					["crs"] = RARE_GROUP_ONE,
+					crs = RARE_GROUP_ONE,
 				}),
 				i(200434, {	-- Anund's Mana-Singed Amice
-					["crs"] = RARE_GROUP_SUNDER,
+					crs = RARE_GROUP_SUNDER,
 				}),
 				i(200217, {	-- Blazing Essence
-					["crs"] = RARE_GROUP_BIQ,
+					crs = RARE_GROUP_BIQ,
 				}),
 				i(200435, {	-- Brackish Breeches
-					["crs"] = RARE_GROUP_FOUR,
+					crs = RARE_GROUP_FOUR,
 				}),
 				i(200758, {	-- Breastplate of Storied Antiquity
-					["crs"] = RARE_GROUP_ONE,
+					crs = RARE_GROUP_ONE,
 				}),
 				i(200208, {	-- Cloud Coalescing Handwraps
-					["crs"] = RARE_GROUP_WIND,
+					crs = RARE_GROUP_WIND,
 				}),
 				i(200292, {	-- Cragforge Pauldrons
-					["crs"] = RARE_GROUP_FIVE,
+					crs = RARE_GROUP_FIVE,
 				}),
 				i(200446, {	-- Crystalized Sigil
-					["crs"] = RARE_GROUP_SUNDER,
+					crs = RARE_GROUP_SUNDER,
 				}),
 				i(200313, {	-- Earthen Protoscale Drape
-					["crs"] = RARE_GROUP_FIVE,
+					crs = RARE_GROUP_FIVE,
 				}),
 				i(200158, {	-- Eerie Spectral Ring
-					["crs"] = RARE_GROUP_SPECTRAL,
+					crs = RARE_GROUP_SPECTRAL,
 				}),
 				i(200244, {	-- Enchanted Muckstompers
-					["crs"] = RARE_GROUP_GIANT,
+					crs = RARE_GROUP_GIANT,
 				}),
 				i(200283, {	-- Gnoll-Gnawed Breeches
-					["crs"] = RARE_GROUP_GNOLLS,
+					crs = RARE_GROUP_GNOLLS,
 				}),
 				i(200682, {	-- Hardened Scale Shoulderguards
-					["crs"] = RARE_GROUP_DRAGONKIN,
+					crs = RARE_GROUP_DRAGONKIN,
 				}),
 				i(200441, {	-- Jhakan's Horned Cowl
-					["crs"] = RARE_GROUP_GHENDISH,
+					crs = RARE_GROUP_GHENDISH,
 				}),
 				i(200164, {	-- Iceloop
-					["crs"] = RARE_GROUP_WATER,
+					crs = RARE_GROUP_WATER,
 				}),
 				i(200868, {	-- Integrated Primal Fire
-					["crs"] = RARE_GROUP_BIQ,
+					crs = RARE_GROUP_BIQ,
 				}),
 				i(200683, {	-- Legguards of the Deep Strata
-					["crs"] = RARE_GROUP_GIANT,
+					crs = RARE_GROUP_GIANT,
 				}),
 				i(200246, {	-- Lost Delving Lamp
-					["crs"] = RARE_GROUP_GIANT,
+					crs = RARE_GROUP_GIANT,
 				}),
 				i(200126, {	-- Mantle of Copious Chronologies
-					["crs"] = RARE_GROUP_TIME,
+					crs = RARE_GROUP_TIME,
 				}),
 				i(200228, {	-- Protoscale Pauldrons
-					["crs"] = RARE_GROUP_DRAGONKIN,
+					crs = RARE_GROUP_DRAGONKIN,
 				}),
 				i(200757, {	-- Qalashi War-Helm
-					["crs"] = RARE_GROUP_DJARADIN,
+					crs = RARE_GROUP_DJARADIN,
 				}),
 				i(200161, {	-- Razorwind Talisman
-					["crs"] = RARE_GROUP_WIND,
+					crs = RARE_GROUP_WIND,
 				}),
 				i(200267, {	-- Reinforced Garden Tenders
-					["crs"] = RARE_GROUP_AZRA,
+					crs = RARE_GROUP_AZRA,
 				}),
 				i(200203, {	-- Repurposed Giant's Thimble
-					["crs"] = RARE_GROUP_THREE,
+					crs = RARE_GROUP_THREE,
 				}),
 				i(200689, {	-- Rimetalon Band
-					["crs"] = RARE_GROUP_SUNDERING,
+					crs = RARE_GROUP_SUNDERING,
 				}),
 				i(200163, {	-- Ring of Embers
-					["crs"] = RARE_GROUP_BIQ,
+					crs = RARE_GROUP_BIQ,
 				}),
 				i(200432, {	-- Rotguard Cowl
-					["crs"] = RARE_GROUP_TWO,
+					crs = RARE_GROUP_TWO,
 				}),
 				i(200154, {	-- Rubyscale Band
-					["crs"] = RARE_GROUP_DRAGONKIN_SMALL,
+					crs = RARE_GROUP_DRAGONKIN_SMALL,
 				}),
 				i(200204, {	-- Sandshine Chestplate
-					["crs"] = RARE_GROUP_DRAGON,
+					crs = RARE_GROUP_DRAGON,
 				}),
 				i(200314, {	-- Skyspeaker's Envelope
-					["crs"] = RARE_GROUP_WIND,
+					crs = RARE_GROUP_WIND,
 				}),
 				i(200310, {	-- Stole of the Iron Phantom
-					["crs"] = RARE_GROUP_SPECTRAL,
+					crs = RARE_GROUP_SPECTRAL,
 				}),
 				i(200438, {	-- Surcoat of the Chastigator
-					["crs"] = RARE_GROUP_DRAGONKIN,
+					crs = RARE_GROUP_DRAGONKIN,
 				}),
 				i(200306, {	-- Tempest Shawl
-					["crs"] = RARE_GROUP_WIND,
+					crs = RARE_GROUP_WIND,
 				}),
 				i(200202, {	-- Tomorrow's Chains
-					["crs"] = RARE_GROUP_TIME,
+					crs = RARE_GROUP_TIME,
 				}),
 				i(200552, {	-- Torrent Caller's Shell
-					["crs"] = RARE_GROUP_WATER,
+					crs = RARE_GROUP_WATER,
 				}),
 				i(200254, {	-- Totemic Cinch
-					["crs"] = RARE_GROUP_BEOGOKA,
+					crs = RARE_GROUP_BEOGOKA,
 				}),
 				i(200172, {	-- Zephyrdance Signet
-					["crs"] = RARE_GROUP_WIND,
+					crs = RARE_GROUP_WIND,
 				}),
 			}),
 			n(WEAPONS, {
 				i(200237, {	-- Burnished Lifewarder's Targe
-					["crs"] = RARE_GROUP_DRAGONKIN_SMALL,
+					crs = RARE_GROUP_DRAGONKIN_SMALL,
 				}),
 				i(200135, {	-- Corroded Greatsword
-					["crs"] = RARE_GROUP_WATER,
+					crs = RARE_GROUP_WATER,
 				}),
 				i(200256, {	-- Darkmaul Soul Horn
-					["crs"] = RARE_GROUP_SPECTRAL,
+					crs = RARE_GROUP_SPECTRAL,
 				}),
 				i(200303, {	-- Dreamweaver Acolyte's Staff
-					["crs"] = RARE_GROUP_TITAN,
+					crs = RARE_GROUP_TITAN,
 				}),
 				i(200439, {	-- Earthpact Scepter
-					["crs"] = RARE_GROUP_FIVE,
+					crs = RARE_GROUP_FIVE,
 				}),
 				i(200684, {	-- Emerald Tailbone
-					["crs"] = RARE_GROUP_THREE,
+					crs = RARE_GROUP_THREE,
 				}),
 				i(200259, {	-- Forest Dweller's Shield
-					["crs"] = RARE_GROUP_AZRA,
+					crs = RARE_GROUP_AZRA,
 				}),
 				i(200266, {	-- Gnollish Chewtoy Launcher
-					["crs"] = RARE_GROUP_GNOLLS,
+					crs = RARE_GROUP_GNOLLS,
 				}),
 				i(200127, {	-- Gold-Alloy Blade
-					["crs"] = RARE_GROUP_TWO,
+					crs = RARE_GROUP_TWO,
 				}),
 				i(200297, {	-- Hastily Cobbled Maul
-					["crs"] = RARE_GROUP_SUNDERING,
+					crs = RARE_GROUP_SUNDERING,
 				}),
 				i(200247, {	-- Inextinguishable Gavel
-					["crs"] = RARE_GROUP_BIQ,
+					crs = RARE_GROUP_BIQ,
 				}),
 				i(200245, {	-- Leviathan Lure
-					["crs"] = RARE_GROUP_WATER,
+					crs = RARE_GROUP_WATER,
 				}),
 				i(200252, {	-- Molten Flak Cannon
-					["crs"] = RARE_GROUP_BIQ,
+					crs = RARE_GROUP_BIQ,
 				}),
 				i(200233, {	-- Paradox Saber
-					["crs"] = RARE_GROUP_DRAGON,
+					crs = RARE_GROUP_DRAGON,
 				}),
 				i(200293, {	-- Primal Scion's Twinblade
-					["crs"] = RARE_GROUP_FIVE,
+					crs = RARE_GROUP_FIVE,
 				}),
 				i(200169, {	-- Protector's Molten Cudgel
-					["crs"] = RARE_GROUP_DJARADIN,
+					crs = RARE_GROUP_DJARADIN,
 				}),
 				i(200308, {	-- Rellen's Legacy
-					["crs"] = RARE_GROUP_GHENDISH,
+					crs = RARE_GROUP_GHENDISH,
 				}),
 				i(200187, {	-- Rod of Glacial Force
-					["crs"] = RARE_GROUP_WATER,
+					crs = RARE_GROUP_WATER,
 				}),
 				i(200151, {	-- Seamist Blade
-					["crs"] = RARE_GROUP_FOUR,
+					crs = RARE_GROUP_FOUR,
 				}),
 				i(200253, {	-- Snowspring Incanter's Knife
-					["crs"] = RARE_GROUP_BEOGOKA,
+					crs = RARE_GROUP_BEOGOKA,
 				}),
 				i(200241, {	-- Stormcaller's Ritual Hatchet
-					["crs"] = RARE_GROUP_TEMPEST,
+					crs = RARE_GROUP_TEMPEST,
 				}),
 				i(200299, {	-- Strange Clockwork Gladius
-					["crs"] = RARE_GROUP_TITAN,
+					crs = RARE_GROUP_TITAN,
 				}),
 				i(198429, {	-- Typhoon Bringer
-					["crs"] = RARE_GROUP_WIND,
+					crs = RARE_GROUP_WIND,
 				}),
 				i(200133, {	-- Volcanic Chakram
-					["crs"] = RARE_GROUP_BIQ,
+					crs = RARE_GROUP_BIQ,
 				}),
 				i(200242, {	-- Watcher's Lightning Rod
-					["crs"] = RARE_GROUP_TEMPEST,
+					crs = RARE_GROUP_TEMPEST,
 				}),
 			}),
 			i(200148, {	-- A Collection of Me (TOY!)
-				["crs"] = RARE_GROUP_TIME,
+				crs = RARE_GROUP_TIME,
 			}),
 			i(200178, {	-- Infected Ichor (TOY!)
-				["crs"] = RARE_GROUP_TWO,
+				crs = RARE_GROUP_TWO,
 			}),
 		}),
 	}),

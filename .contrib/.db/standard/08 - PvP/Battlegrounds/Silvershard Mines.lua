@@ -4,13 +4,13 @@
 
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(423, {	-- Silvershard Mines
-		["icon"] = 622094,
-		["timeline"] = { ADDED_5_0_4 },
-		["groups"] = {
+		icon = 622094,
+		timeline = { ADDED_5_0_4 },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(7106, {	-- Master of Silvershard Mines
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						6883,	-- Silvershard Mines Veteran
 						7039,	-- The Long Riders
 						7049,	-- Mine Cart Courier
@@ -23,10 +23,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					}},
 				}),
 				ach(6739, {	-- Silvershard Mines Victory
-					["rank"] = 1,
+					rank = 1,
 				}),
 				ach(6883, {	-- Silvershard Mines Veteran
-					["rank"] = 100,
+					rank = 100,
 				}),
 				ach(7039),	-- The Long Riders
 				ach(7049, {	-- Mine Cart Courier

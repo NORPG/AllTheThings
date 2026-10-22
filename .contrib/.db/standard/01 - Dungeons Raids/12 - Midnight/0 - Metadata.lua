@@ -3,8 +3,8 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
-	["timeline"] = { ADDED_12_0_1_LAUNCH },
-	["groups"] = {
+	timeline = { ADDED_12_0_1_LAUNCH },
+	groups = {
 		n(ACHIEVEMENTS),
 		n(WORLD_BOSSES),
 		inst(1308),	-- March on Quel'Danas

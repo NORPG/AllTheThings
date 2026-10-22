@@ -13,7 +13,7 @@
 -- spellID 7413 Enchanting (Rank 3)
 
 local classHeader = function(classID, g)
-	return cl(classID, bubbleDown({ ["classes"] = { classID } }, g));
+	return cl(classID, bubbleDown({ classes = { classID } }, g));
 end
 
 local OnTooltipFor_ACA_SDL = [[function(t, tooltipInfo)
@@ -55,24 +55,24 @@ local OnUpdateFor_ACA_SDL = [[function(t)
 end]];
 
 local AZEROTH_COMMERCE_AUTHORITY_VENDORS = {	-- Azeroth Commerce Authority
-	["crs"] = {
+	crs = {
 		213077,	-- Elaine Compton <Supply Officer>
 		214099,	-- Tamelyn Aldridge <Supply Officer>
 		214101,	-- Marcy Baker <Supply Officer>
 	},
-	["coords"] = {
+	coords = {
 		{ 54.5, 61.2, STORMWIND_CITY },
 		{ 24.6, 67.2, IRONFORGE },
 		{ 59.8, 56.6, DARNASSUS },
 	},
 };
 local DUROTAR_SUPPLY_AND_LOGISTICS_VENDORS = {	-- Durotar Supply and Logistics
-	["crs"] = {
+	crs = {
 		214070,	-- Jornah <Supply Officer>
 		214096,	-- Dokimi <Supply Officer>
 		214098,	-- Gishah <Supply Officer>
 	},
-	["coords"] = {
+	coords = {
 		{ 51.6, 64.6, ORGRIMMAR },
 		{ 39.8, 53.4, THUNDER_BLUFF },
 		{ 64.6, 38.2, UNDERCITY },
@@ -199,254 +199,254 @@ local SEASON_OF_DISCOVERY_HEADER = createHeader({	-- Season of Discovery
 });
 
 assignRootCategoryHeader(60, ROOTS.SeasonOfDiscovery, SEASON_OF_DISCOVERY_HEADER, applyclassicphase(SOD_PHASE_ONE, {
-	["timeline"] = { REMOVED_2_0_1 },
+	timeline = { REMOVED_2_0_1 },
 }));
-root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["timeline"] = { REMOVED_2_0_1 } }, {
+root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ timeline = { REMOVED_2_0_1 } }, {
 	n(FACTIONS, {
 		faction(2586, {	-- Azeroth Commerce Authority
-			["OnUpdate"] = OnUpdateFor_ACA_SDL,
-			["OnTooltip"] = OnTooltipFor_ACA_SDL,
-			["maps"] = { DARNASSUS, IRONFORGE, STORMWIND_CITY },
-			["races"] = ALLIANCE_ONLY,
+			OnUpdate = OnUpdateFor_ACA_SDL,
+			OnTooltip = OnTooltipFor_ACA_SDL,
+			maps = { DARNASSUS, IRONFORGE, STORMWIND_CITY },
+			races = ALLIANCE_ONLY,
 		}),
 		faction(2587, {	-- Durotar Supply and Logistics
-			["OnUpdate"] = OnUpdateFor_ACA_SDL,
-			["OnTooltip"] = OnTooltipFor_ACA_SDL,
-			["maps"] = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },
-			["races"] = HORDE_ONLY,
+			OnUpdate = OnUpdateFor_ACA_SDL,
+			OnTooltip = OnTooltipFor_ACA_SDL,
+			maps = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },
+			races = HORDE_ONLY,
 		}),
 	}),
 	n(COMMON_VENDOR_ITEMS, {
-		["aqd"] = faction(2586, AZEROTH_COMMERCE_AUTHORITY_VENDORS),
-		["hqd"] = faction(2587, DUROTAR_SUPPLY_AND_LOGISTICS_VENDORS),
-		["OnInit"] = [[function(t) local rep = t.factionID; for index,child in ipairs(t.g) do if child.minReputation then child.minReputation[1] = rep; end end return t; end]],
-		["groups"] = bubbleDownClassicRep(2586, {	-- ACA / DSL
+		aqd = faction(2586, AZEROTH_COMMERCE_AUTHORITY_VENDORS),
+		hqd = faction(2587, DUROTAR_SUPPLY_AND_LOGISTICS_VENDORS),
+		OnInit = [[function(t) local rep = t.factionID; for index,child in ipairs(t.g) do if child.minReputation then child.minReputation[1] = rep; end end return t; end]],
+		groups = bubbleDownClassicRep(2586, {	-- ACA / DSL
 			{	-- Neutral
 
 			},
 			{	-- Friendly
 				i(211382, {	-- Small Courier Satchel
-					["cost"] = 4746,	-- 47s 36c
+					cost = 4746,	-- 47s 36c
 				}),
 				i(212588, {	-- Provisioner's Gloves
-					["cost"] = 1325,	-- 13s 25c
+					cost = 1325,	-- 13s 25c
 				}),
 				i(212590, {	-- Hoist Strap
-					["cost"] = 2555,	-- 25s 55c
+					cost = 2555,	-- 25s 55c
 				}),
 				i(212589, {	-- Courier Treads
-					["cost"] = 2214,	-- 22s 14c
+					cost = 2214,	-- 22s 14c
 				}),
 
 				-- After 2023-12-12 Hotfix, Runes were moved from Honored to Friendly with a reduced price.
 				i(211387, {	-- Rune of Beckoning Light
-					["classes"] = { PALADIN },
-					["cost"] = 20000,	-- 2g
-					["groups"] = {
+					classes = { PALADIN },
+					cost = 20000,	-- 2g
+					groups = {
 						recipe(409999),	-- Engrave Gloves - Beacon of Light
 					},
 				}),
 				i(211392, {	-- Rune of Everlasting Affliction
-					["classes"] = { WARLOCK },
-					["cost"] = 20000,	-- 2g
-					["groups"] = {
+					classes = { WARLOCK },
+					cost = 20000,	-- 2g
+					groups = {
 						recipe(416008),	-- Engrave Pants - Everlasting Affliction
 					},
 				}),
 				i(211391, {	-- Rune of Healing Rain
-					["classes"] = { SHAMAN },
-					["cost"] = 20000,	-- 2g
-					["groups"] = {
+					classes = { SHAMAN },
+					cost = 20000,	-- 2g
+					groups = {
 						recipe(416057),	-- Engrave Chest - Healing Rain
 					},
 				}),
 				i(211385, {	-- Rune of Serpent Spread
-					["classes"] = { HUNTER },
-					["cost"] = 20000,	-- 2g
-					["groups"] = {
+					classes = { HUNTER },
+					cost = 20000,	-- 2g
+					groups = {
 						recipe(425760),	-- Engrave Pants - Serpent Spread
 					},
 				}),
 				i(211393, {	-- Rune of Single-Minded Fury
-					["classes"] = { WARRIOR },
-					["cost"] = 20000,	-- 2g
-					["groups"] = {
+					classes = { WARRIOR },
+					cost = 20000,	-- 2g
+					groups = {
 						recipe(416003),	-- Engrave Gloves - Single-Minded Fury
 					},
 				}),
 				i(206992, {	-- Rune of Skull Bash
-					["classes"] = { DRUID },
-					["cost"] = 20000,	-- 2g
-					["groups"] = {
+					classes = { DRUID },
+					cost = 20000,	-- 2g
+					groups = {
 						recipe(416046),	-- Engrave Pants - Skull Bash
 					},
 				}),
 				i(211390, {	-- Rune of Teasing
-					["classes"] = { ROGUE },
-					["cost"] = 20000,	-- 2g
-					["groups"] = {
+					classes = { ROGUE },
+					cost = 20000,	-- 2g
+					groups = {
 						recipe(400082),	-- Engrave Chest - Just a Flesh Wound
 					},
 				}),
 				i(211386, {	-- Spell Notes: Arcane Surge
-					["classes"] = { MAGE },
-					["cost"] = 20000,	-- 2g
-					["groups"] = {
+					classes = { MAGE },
+					cost = 20000,	-- 2g
+					groups = {
 						recipe(425171),	-- Engrave Pants - Arcane Surge
 					},
 				}),
 				i(205950, {	-- Tenebrous Epiphany
-					["classes"] = { PRIEST },
-					["cost"] = 20000,	-- 2g
-					["groups"] = {
+					classes = { PRIEST },
+					cost = 20000,	-- 2g
+					groups = {
 						recipe(415996),	-- Engrave Gloves - Mind Sear
 					},
 				}),
 			},
 			{	-- Honored
 				i(211384, {	-- Sturdy Courier Bag
-					["cost"] = 19350,	-- 1g 93s 50c
+					cost = 19350,	-- 1g 93s 50c
 				}),
 				-- Prior to the 2023-12-12 Hotfix, Runes were Honored and cost 4.5g each.
 				--[[
 				i(211387, {	-- Rune of Beckoning Light
-					["classes"] = { PALADIN },
-					["cost"] = 45000,	-- 4.5g
-					["groups"] = {
+					classes = { PALADIN },
+					cost = 45000,	-- 4.5g
+					groups = {
 						recipe(409999),	-- Engrave Gloves - Beacon of Light
 					},
 				}),
 				i(211392, {	-- Rune of Everlasting Affliction
-					["classes"] = { WARLOCK },
-					["cost"] = 45000,	-- 4.5g
-					["groups"] = {
+					classes = { WARLOCK },
+					cost = 45000,	-- 4.5g
+					groups = {
 						recipe(416008),	-- Engrave Pants - Everlasting Affliction
 					},
 				}),
 				i(211391, {	-- Rune of Healing Rain
-					["classes"] = { SHAMAN },
-					["cost"] = 45000,	-- 4.5g
-					["groups"] = {
+					classes = { SHAMAN },
+					cost = 45000,	-- 4.5g
+					groups = {
 						recipe(416057),	-- Engrave Chest - Healing Rain
 					},
 				}),
 				i(211385, {	-- Rune of Serpent Spread
-					["classes"] = { HUNTER },
-					["cost"] = 45000,	-- 4.5g
-					["groups"] = {
+					classes = { HUNTER },
+					cost = 45000,	-- 4.5g
+					groups = {
 						recipe(425760),	-- Engrave Pants - Serpent Spread
 					},
 				}),
 				i(211393, {	-- Rune of Single-Minded Fury
-					["classes"] = { WARRIOR },
-					["cost"] = 45000,	-- 4.5g
-					["groups"] = {
+					classes = { WARRIOR },
+					cost = 45000,	-- 4.5g
+					groups = {
 						recipe(416003),	-- Engrave Gloves - Single-Minded Fury
 					},
 				}),
 				i(206992, {	-- Rune of Skull Bash
-					["classes"] = { DRUID },
-					["cost"] = 45000,	-- 4.5g
-					["groups"] = {
+					classes = { DRUID },
+					cost = 45000,	-- 4.5g
+					groups = {
 						recipe(416046),	-- Engrave Pants - Skull Bash
 					},
 				}),
 				i(211390, {	-- Rune of Teasing
-					["classes"] = { ROGUE },
-					["cost"] = 45000,	-- 4.5g
-					["groups"] = {
+					classes = { ROGUE },
+					cost = 45000,	-- 4.5g
+					groups = {
 						recipe(400082),	-- Engrave Chest - Just a Flesh Wound
 					},
 				}),
 				i(211386, {	-- Spell Notes: Arcane Surge
-					["classes"] = { MAGE },
-					["cost"] = 45000,	-- 4.5g
-					["groups"] = {
+					classes = { MAGE },
+					cost = 45000,	-- 4.5g
+					groups = {
 						recipe(425171),	-- Engrave Pants - Arcane Surge
 					},
 				}),
 				i(205950, {	-- Tenebrous Epiphany
-					["classes"] = { PRIEST },
-					["cost"] = 45000,	-- 4.5g
-					["groups"] = {
+					classes = { PRIEST },
+					cost = 45000,	-- 4.5g
+					groups = {
 						recipe(415996),	-- Engrave Gloves - Mind Sear
 					},
 				}),
 				]]--
 				i(211247, {	-- Pattern: Phoenix Bindings
-					["cost"] = 67500,	-- 6.75g
+					cost = 67500,	-- 6.75g
 				}),
 				i(210779, {	-- Plans: Mantle of the Second War
-					["cost"] = 67500,	-- 6.75g
+					cost = 67500,	-- 6.75g
 				}),
 				applyclassicphase(SOD_PHASE_TWO, i(212230, {	-- Schematic: Soul Vessel
-					["cost"] = 22500,	-- 2g 25s
+					cost = 22500,	-- 2g 25s
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(219023, {	-- Clerk's Ring
-					["cost"] = 36562,	-- 3g 65s 62c
-					["b"] = 2,	-- BoA
+					cost = 36562,	-- 3g 65s 62c
+					b = 2,	-- BoA
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(219022, {	-- Hauler's Ring
-					["cost"] = 36562,	-- 3g 65s 62c
-					["b"] = 2,	-- BoA
+					cost = 36562,	-- 3g 65s 62c
+					b = 2,	-- BoA
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(219024, {	-- Messenger's Ring
-					["cost"] = 36562,	-- 3g 65s 62c
-					["b"] = 2,	-- BoA
+					cost = 36562,	-- 3g 65s 62c
+					b = 2,	-- BoA
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(223160, {	-- Bargain Bush
-					["cost"] = 11890,	-- 1g 18s 90c
+					cost = 11890,	-- 1g 18s 90c
 				})),
 			},
 			{	-- Revered
 				applyclassicphase(SOD_PHASE_TWO, i(219021, {	-- Hefty Courier Pack
-					["cost"] = 48937,	-- 4g 89s 37c
+					cost = 48937,	-- 4g 89s 37c
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(217399, {	-- Recipe: Lesser Arcane Elixir
-					["cost"] = 22500,	-- 2g 25s
+					cost = 22500,	-- 2g 25s
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(219135, {	-- Curiosity Pendant
-					["cost"] = 72562,	-- 7g 25s 62c
-					["b"] = 2,	-- BoA
+					cost = 72562,	-- 7g 25s 62c
+					b = 2,	-- BoA
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(219137, {	-- Initiative Pendant
-					["cost"] = 72562,	-- 7g 25s 62c
-					["b"] = 2,	-- BoA
+					cost = 72562,	-- 7g 25s 62c
+					b = 2,	-- BoA
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(219136, {	-- Tenacity Pendant
-					["cost"] = 72562,	-- 7g 25s 62c
-					["b"] = 2,	-- BoA
+					cost = 72562,	-- 7g 25s 62c
+					b = 2,	-- BoA
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(223161, {	-- Empty Supply Crate
-					["cost"] = 33661,	-- 3g 36s 61c
+					cost = 33661,	-- 3g 36s 61c
 				})),
 			},
 			{	-- Exalted
 				applyclassicphase(SOD_PHASE_THREE, i(223162, {	-- Handy Courier Haversack
-					["cost"] = 101882,	-- 10g 18s 82c
+					cost = 101882,	-- 10g 18s 82c
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(223164, {	-- Curiosity Cowl
-					["cost"] = 72562,	-- 7g 25s 62c
-					["b"] = 2,	-- BoA
+					cost = 72562,	-- 7g 25s 62c
+					b = 2,	-- BoA
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(223167, {	-- Initiative Cap
-					["cost"] = 72562,	-- 7g 25s 62c
-					["b"] = 2,	-- BoA
+					cost = 72562,	-- 7g 25s 62c
+					b = 2,	-- BoA
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(223169, {	-- Tenacity Cap
-					["cost"] = 72562,	-- 7g 25s 62c
-					["b"] = 2,	-- BoA
+					cost = 72562,	-- 7g 25s 62c
+					b = 2,	-- BoA
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(223172, {	-- Tenacity Chain
-					["cost"] = 72562,	-- 7g 25s 62c
-					["b"] = 2,	-- BoA
+					cost = 72562,	-- 7g 25s 62c
+					b = 2,	-- BoA
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(223186, {	-- Supply Expediter
-					["cost"] = 5521,	-- 55s 21c
-					["b"] = 2,	-- BoA
+					cost = 5521,	-- 55s 21c
+					b = 2,	-- BoA
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220639, {	-- Lledra's Inanimator
-					["cost"] = 83793,	-- 8g 37s 93c
+					cost = 83793,	-- 8g 37s 93c
 				})),
 			},
 		}),
@@ -468,8 +468,8 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 			tw = "理解",
 		},
 	}), {
-		["classes"] = { MAGE },
-		["groups"] = {
+		classes = { MAGE },
+		groups = {
 			n(REWARDS, {
 				n(createHeader({	-- Tier 1
 					readable = "Comprehension - Tier 1",
@@ -488,14 +488,14 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 						tw = "等級 1",
 					},
 				}), {
-					["cost"] = {
+					cost = {
 						{ "i", 211779, 1 },	-- Comprehension Charm
 						{ "i", 211785, 1 },	-- Scroll: CWAL
 						{ "i", 211786, 1 },	-- Scroll: CHAP BALK WELLES
 						{ "i", 211787, 1 },	-- Scroll: LOWER PING WHOMEVER
 						{ "i", 211780, 1 },	-- Scroll: KWYJIBO
 					},
-					["groups"] = {
+					groups = {
 						i(3012),	-- Scroll of Agility
 						i( 955),	-- Scroll of Intellect
 						i(3013),	-- Scroll of Protection
@@ -503,8 +503,8 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 						i(1180),	-- Scroll of Stamina
 						i( 954),	-- Scroll of Strength
 						i(211800, {	-- Scroll of Reintegration
-							["description"] = "Consumed on use.",
-							["classes"] = { MAGE },
+							description = "Consumed on use.",
+							classes = { MAGE },
 						}),
 					},
 				}),
@@ -525,34 +525,34 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 						tw = "等級 2",
 					},
 				}), {
-					["cost"] = {
+					cost = {
 						{ "i", 211779, 1 },	-- Comprehension Charm
 						{ "i", 211854, 1 },	-- Scroll: OMIT KESA
 						{ "i", 211853, 1 },	-- Scroll: VOCE WELL
 						{ "i", 211784, 1 },	-- Scroll: WUBBA WUBBA
 						{ "i", 211855, 1 },	-- Scroll: STHENIC LUNATE
 					},
-					["groups"] = {
+					groups = {
 						i(211800, {	-- Scroll of Reintegration
-							["description"] = "Consumed on use.",
-							["classes"] = { MAGE },
+							description = "Consumed on use.",
+							classes = { MAGE },
 						}),
 						i(1712),	-- Scroll of Spirit II
 						i(1478),	-- Scroll of Protection II
 						i(211954, {	-- Scroll of Arcane Accuracy I
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						i(211953, {	-- Scroll of Arcane Recovery I
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						i(211957, {	-- Scroll of Arcane Power I
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						i(211955, {	-- Scroll of Arcane Protection - Fire I
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						i(211956, {	-- Scroll of Arcane Protection - Frost I
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 					},
 				}),
@@ -573,7 +573,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 						tw = "等級 3",
 					},
 				}), {
-					["cost"] = {
+					cost = {
 						{ "i", 211779, 1 },	-- Comprehension Charm
 						{ "i", 213545, 1 },	-- Scroll: PEATCHY ATTAX
 						{ "i", 213546, 1 },	-- Scroll: SHOOBEEDOOP
@@ -581,104 +581,104 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 						{ "i", 213544, 1 },	-- Scroll: TOPAZ YORAK
 						{ "i", 213543, 1 },	-- Scroll: UPDOG
 					},
-					["groups"] = {
+					groups = {
 						i(217496, {	-- Scroll of the Blade
-							["cost"] = { { "i", 7714, 1 } },	-- Hypnotic Blade
-							["classes"] = { MAGE },
-							["groups"] = {
+							cost = { { "i", 7714, 1 } },	-- Hypnotic Blade
+							classes = { MAGE },
+							groups = {
 								i(217497),	-- Narpas Sword
 							},
 						}),
 						i(213548, {	-- Scroll of Liminal Passage
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						i(215257, {	-- Scroll of Comprehension
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						i(217495, {	-- Scroll of Cryoblast
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						i(213550, {	-- Scroll of Polymorph: Odd Melon
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						applyclassicphase(SOD_PHASE_THREE, i(220792)),	-- Scroll of Spatial Mending
 					},
 				})),
 				i(203747, {	-- Spell Notes: Fingers of Frost
-					["cost"] = {
+					cost = {
 						{ "i", 211779, 1 },	-- Comprehension Charm
 						{ "i", 203753, 1 },	-- Spell Notes: RING SEFF OSTROF
 					},
-					["groups"] = {
+					groups = {
 						recipe(401765),	-- Engrave Chest - Fingers of Frost
 					},
 				}),
 				i(203745, {	-- Spell Notes: Ice Lance
-					["cost"] = {
+					cost = {
 						{ "i", 211809, 1 },	-- Comprehension Primer
 						{ "i", 203751, 1 },	-- Spell Notes: CALE ENCI
 					},
-					["groups"] = {
+					groups = {
 						recipe(401760),	-- Engrave Gloves - Ice Lance
 					},
 				}),
 				i(208799, {	-- Spell Notes: Living Bomb
-					["cost"] = {
+					cost = {
 						{ "i", 211779, 1 },	-- Comprehension Charm
 						{ "i", 208854, 1 },	-- Chewed Spell Notes
 						{ "i", 209028, 1 },	-- Spell Notes: BIVOLG NIMB
 					},
-					["groups"] = {
+					groups = {
 						recipe(415936),	-- Engrave Gloves - Living Bomb
 					},
 				}),
 				i(203746, {	-- Spell Notes: Living Flame
-					["cost"] = {
+					cost = {
 						{ "i", 211779, 1 },	-- Comprehension Charm
 						{ "i", 203752, 1 },	-- Spell Notes: MILEGIN VALF
 					},
-					["groups"] = {
+					groups = {
 						recipe(401768),	-- Engrave Pants - Living Flame
 					},
 				}),
 				i(208753, {	-- Spell Notes: Regeneration
-					["cost"] = {
+					cost = {
 						{ "i", 211779, 1 },	-- Comprehension Charm
 						{ "i", 208754, 1 },	-- Spell Notes: TENGI RONEERA
 					},
-					["groups"] = {
+					groups = {
 						recipe(401767),	-- Engrave Chest - Regeneration
 					},
 				}),
 			}),
 			n(QUESTS, {
 				applyclassicphase(SOD_PHASE_THREE, q(82084, {	-- A Lesson in Literacy
-					["altQuests"] = { 82086 },	-- A Lesson in Literacy (HQT?)
-					["providers"] = {
+					altQuests = { 82086 },	-- A Lesson in Literacy (HQT?)
+					providers = {
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coords"] = {
+					coords = {
 						{ 37.8, 80.2, STORMWIND_CITY },
 						{ 73.6, 33.0, UNDERCITY },
 					},
-					["timeline"] = { ADDED_1_15_2 },
-					["maps"] = { FERALAS, THE_HINTERLANDS, ZULFARRAK },
-					["lvl"] = 42,
-					["groups"] = {
+					timeline = { ADDED_1_15_2 },
+					maps = { FERALAS, THE_HINTERLANDS, ZULFARRAK },
+					lvl = 42,
+					groups = {
 						objective(1, {	-- 0/1 Pristine Owlbeast Quill
-							["provider"] = { "i", 221359 },	-- Pristine Owlbeast Quill
-							["coord"] = { 40.6, 55.6, THE_HINTERLANDS },
-							["crs"] = {
+							provider = { "i", 221359 },	-- Pristine Owlbeast Quill
+							coord = { 40.6, 55.6, THE_HINTERLANDS },
+							crs = {
 								2928,	-- Primitive Owlbeast
 								2929,	-- Savage Owlbeast
 								2927,	-- Vicious Owlbeast
 							},
 						}),
 						objective(2, {	-- 0/5 Zukk'ash Resin
-							["provider"] = { "i", 221361 },	-- Zukk'ash Resin
-							["coord"] = { 75.0, 59.2, FERALAS },
-							["crs"] = {
+							provider = { "i", 221361 },	-- Zukk'ash Resin
+							coord = { 75.0, 59.2, FERALAS },
+							crs = {
 								5246,	-- Zukk'ash Worker
 								5245,	-- Zukk'ash Wasp
 								5247,	-- Zukk'ash Tunneler
@@ -686,114 +686,114 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 							},
 						}),
 						objective(3, {	-- 0/8 Farraki Papyrus
-							["provider"] = { "i", 221360 },	-- Farraki Papyrus
-							["cr"] = 7286,	-- Zul'Farrak Zombie
+							provider = { "i", 221360 },	-- Farraki Papyrus
+							cr = 7286,	-- Zul'Farrak Zombie
 						}),
 						i(221344),	-- Personal Spellbook
 					},
 				})),
 				q(78145, {	-- Arcanic Systems Manual
-					["providers"] = {
+					providers = {
 						{ "i", 209847 },	-- Arcanic Systems Manual
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coords"] = {
+					coords = {
 						{ 37.8, 80.2, STORMWIND_CITY },
 						{ 73.6, 33.0, UNDERCITY },
 					},
-					["maps"] = { THE_BARRENS },
-					["groups"] = {
+					maps = { THE_BARRENS },
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
 				q(79091, {	-- Archmage Antonidas: The Unabridged Autobiography
-					["providers"] = {
+					providers = {
 						{ "i", 203754 },	-- Archmage Antonidas: The Unabridged Autobiography
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 					},
-					["coord"] = { 37.8, 80.2, STORMWIND_CITY },
-					["maps"] = { IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					coord = { 37.8, 80.2, STORMWIND_CITY },
+					maps = { IRONFORGE },
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
 				q(79092, {	-- Archmage Theocritus's Research Journal
-					["providers"] = {
+					providers = {
 						{ "i", 203755 },	-- Archmage Theocritus's Research Journal
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 					},
-					["coord"] = { 37.8, 80.2, STORMWIND_CITY },
-					["maps"] = { ELWYNN_FOREST },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					coord = { 37.8, 80.2, STORMWIND_CITY },
+					maps = { ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
 				q(79096, {	-- Ataeric: On Arcane Curiosities
-					["providers"] = {
+					providers = {
 						{ "i", 210177 },	-- Ataeric: On Arcane Curiosities
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coord"] = { 73.6, 33.0, UNDERCITY },
-					["maps"] = { SILVERPINE_FOREST },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					coord = { 73.6, 33.0, UNDERCITY },
+					maps = { SILVERPINE_FOREST },
+					races = HORDE_ONLY,
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
 				q(79097, {	-- Baxtan: On Destructive Magics
-					["providers"] = {
+					providers = {
 						{ "i", 208800 },	-- Baxtan: On Destructive Magics
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coords"] = {
+					coords = {
 						{ 37.8, 80.2, STORMWIND_CITY },
 						{ 73.6, 33.0, UNDERCITY },
 					},
-					["maps"] = { THE_BARRENS },
-					["groups"] = {
+					maps = { THE_BARRENS },
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
 				q(78142, {	-- Bewitchments and Glamours
-					["providers"] = {
+					providers = {
 						{ "i", 209845 },	-- Bewitchments and Glamours
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coords"] = {
+					coords = {
 						{ 37.8, 80.2, STORMWIND_CITY },
 						{ 73.6, 33.0, UNDERCITY },
 					},
-					["maps"] = { WESTFALL },
-					["groups"] = {
+					maps = { WESTFALL },
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
 				q(78147, {	-- Crimes Against Anatomy
-					["providers"] = {
+					providers = {
 						{ "i", 209849 },	-- Crimes Against Anatomy
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coords"] = {
+					coords = {
 						{ 37.8, 80.2, STORMWIND_CITY },
 						{ 73.6, 33.0, UNDERCITY },
 					},
-					["maps"] = { DUSKWOOD },
-					["groups"] = {
+					maps = { DUSKWOOD },
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
 				q(78150, {	-- Friend of the Library
-					["providers"] = {
+					providers = {
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["sourceQuests"] = {
+					sourceQuests = {
 						78145,	-- Arcanic Systems Manual
 						79091,	-- Archmage Antonidas: The Unabridged Autobiography
 						79092,	-- Archmage Theocritus's Research Journal
@@ -811,51 +811,51 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 						78127,	-- The Dalaran Digest
 						79094,	-- The Lessons of Ta'zo
 					},
-					["sourceQuestNumRequired"] = 10,
-					["coords"] = {
+					sourceQuestNumRequired = 10,
+					coords = {
 						{ 37.8, 80.2, STORMWIND_CITY },
 						{ 73.6, 33.0, UNDERCITY },
 					},
-					["groups"] = {
+					groups = {
 						recipe(425170),	-- Engrave Pants - Icy Veins
 					},
 				}),
 				q(78149, {	-- Fury of the Land
-					["providers"] = {
+					providers = {
 						{ "i", 209851 },	-- Fury of the Land
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coords"] = {
+					coords = {
 						{ 37.8, 80.2, STORMWIND_CITY },
 						{ 73.6, 33.0, UNDERCITY },
 					},
-					["maps"] = { STONETALON_MOUNTAINS },
-					["groups"] = {
+					maps = { STONETALON_MOUNTAINS },
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
 				q(78146, {	-- Goaz Scrolls
-					["providers"] = {
+					providers = {
 						{ "i", 209848 },	-- Goaz Scrolls
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coords"] = {
+					coords = {
 						{ 37.8, 80.2, STORMWIND_CITY },
 						{ 73.6, 33.0, UNDERCITY },
 					},
-					["maps"] = { WETLANDS },
-					["groups"] = {
+					maps = { WETLANDS },
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
 				applyclassicphase(SOD_PHASE_THREE, q(79536, {	-- Greater Friend of the Library
-					["providers"] = {
+					providers = {
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["sourceQuests"] = {
+					sourceQuests = {
 						78145,	-- Arcanic Systems Manual
 						79091,	-- Archmage Antonidas: The Unabridged Autobiography
 						79092,	-- Archmage Theocritus's Research Journal
@@ -874,108 +874,108 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 						79094,	-- The Lessons of Ta'zo
 						-- TODO: Need to add more book quests
 					},
-					["sourceQuestNumRequired"] = 20,
-					["coords"] = {
+					sourceQuestNumRequired = 20,
+					coords = {
 						{ 37.8, 80.2, STORMWIND_CITY },
 						{ 73.6, 33.0, UNDERCITY },
 					},
-					["groups"] = {
+					groups = {
 						recipe(415934),	-- Engrave Boots - Spell Power
 					},
 				})),
 				q(78124, {	-- Nar'thalas Almanac
-					["providers"] = {
+					providers = {
 						{ "i", 209843 },	-- Nar'thalas Almanac, Vol. 74
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coords"] = {
+					coords = {
 						{ 37.8, 80.2, STORMWIND_CITY },
 						{ 73.6, 33.0, UNDERCITY },
 					},
-					["maps"] = { DARKSHORE },
-					["groups"] = {
+					maps = { DARKSHORE },
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
 				q(79093, {	-- Rumi of Gnomeregan: The Collected Works
-					["providers"] = {
+					providers = {
 						{ "i", 208860 },	-- Rumi of Gnomeregan: The Collected Works
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 					},
-					["coord"] = { 37.8, 80.2, STORMWIND_CITY },
-					["maps"] = { WESTFALL, LOCH_MODAN },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					coord = { 37.8, 80.2, STORMWIND_CITY },
+					maps = { WESTFALL, LOCH_MODAN },
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
 				q(78148, {	-- Runes of the Sorceror-Kings
-					["providers"] = {
+					providers = {
 						{ "i", 209850 },	-- Runes of the Sorcerer-Kings
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coords"] = {
+					coords = {
 						{ 37.8, 80.2, STORMWIND_CITY },
 						{ 73.6, 33.0, UNDERCITY },
 					},
-					["maps"] = { LOCH_MODAN },
-					["groups"] = {
+					maps = { LOCH_MODAN },
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
 				q(78143, {	-- Secrets of the Dreamers
-					["providers"] = {
+					providers = {
 						{ "i", 209846 },	-- Secrets of the Dreamers
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coords"] = {
+					coords = {
 						{ 37.8, 80.2, STORMWIND_CITY },
 						{ 73.6, 33.0, UNDERCITY },
 					},
-					["maps"] = { WAILING_CAVERNS },
-					["groups"] = {
+					maps = { WAILING_CAVERNS },
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
 				q(79095, {	-- The Apothecary's Metaphysical Primer
-					["providers"] = {
+					providers = {
 						{ "i", 208185 },	-- The Apothecary's Metaphysical Primer
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coord"] = { 73.6, 33.0, UNDERCITY },
-					["maps"] = { TIRISFAL_GLADES },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					coord = { 73.6, 33.0, UNDERCITY },
+					maps = { TIRISFAL_GLADES },
+					races = HORDE_ONLY,
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
 				q(78127, {	-- The Dalaran Digest
-					["providers"] = {
+					providers = {
 						{ "i", 209844 },	-- The Dalaran Digest, Vol. 23
 						{ "n", 211033 },	-- Garion Wendell <Librarian>
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coords"] = {
+					coords = {
 						{ 37.8, 80.2, STORMWIND_CITY },
 						{ 73.6, 33.0, UNDERCITY },
 					},
-					["maps"] = { SILVERPINE_FOREST },
-					["groups"] = {
+					maps = { SILVERPINE_FOREST },
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
 				q(79094, {	-- The Lessons of Ta'zo
-					["providers"] = {
+					providers = {
 						{ "i", 207972 },	-- The Lessons of Ta'zo
 						{ "n", 211022 },	-- Owen Thadd <Librarian>
 					},
-					["coord"] = { 73.6, 33.0, UNDERCITY },
-					["maps"] = { ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					coord = { 73.6, 33.0, UNDERCITY },
+					maps = { ORGRIMMAR },
+					races = HORDE_ONLY,
+					groups = {
 						i(211779),	-- Comprehension Charm
 					},
 				}),
@@ -999,119 +999,119 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 			tw = "怪物狩獵",
 		},
 	}), {
-		["classes"] = { WARRIOR },
-		["groups"] = {
+		classes = { WARRIOR },
+		groups = {
 			i(204703, {	-- Rune of Devastate
-				["cost"] = {
+				cost = {
 					{ "i", 204688, 1 },	-- Monster Hunter's First Rune Fragment
 					{ "i", 204689, 1 },	-- Monster Hunter's Second Rune Fragment
 					{ "i", 204690, 1 },	-- Monster Hunter's Third Rune Fragment
 				},
-				["maps"] = { DARNASSUS, DUN_MOROGH, DUROTAR, STORMWIND_CITY, MULGORE, UNDERCITY },
-				["classes"] = { WARRIOR },
-				["groups"] = {
+				maps = { DARNASSUS, DUN_MOROGH, DUROTAR, STORMWIND_CITY, MULGORE, UNDERCITY },
+				classes = { WARRIOR },
+				groups = {
 					recipe(403475),	-- Engrave Gloves - Devastate
 				},
 			}),
 			n(209608, {	-- Delwynna <Monster Hunter>
-				["coord"] = { 64.0, 22.0, DARNASSUS },
-				["timeline"] = { REMOVED_2_0_1 },
-				["classes"] = { WARRIOR },
-				["races"] = { NIGHTELF },
-				["groups"] = {
+				coord = { 64.0, 22.0, DARNASSUS },
+				timeline = { REMOVED_2_0_1 },
+				classes = { WARRIOR },
+				races = { NIGHTELF },
+				groups = {
 					i(204688, {	-- Monster Hunter's First Rune Fragment
-						["cost"] = { { "i", 208610, 1 } },	-- Severed Owl Head
+						cost = { { "i", 208610, 1 } },	-- Severed Owl Head
 					}),
 					i(204689, {	-- Monster Hunter's Second Rune Fragment
-						["cost"] = { { "i", 208611, 1 } },	-- Severed Tiger Head
+						cost = { { "i", 208611, 1 } },	-- Severed Tiger Head
 					}),
 					i(204690, {	-- Monster Hunter's Third Rune Fragment
-						["cost"] = { { "i", 208612, 1 } },	-- Severed Spider Head
+						cost = { { "i", 208612, 1 } },	-- Severed Spider Head
 					}),
 				},
 			}),
 			n(208619, {	-- Dorac Graves <Tactical Surgeon>
-				["coord"] = { 48.0, 70.6, UNDERCITY },
-				["timeline"] = { REMOVED_2_0_1 },
-				["classes"] = { WARRIOR },
-				["races"] = { UNDEAD },
-				["groups"] = {
+				coord = { 48.0, 70.6, UNDERCITY },
+				timeline = { REMOVED_2_0_1 },
+				classes = { WARRIOR },
+				races = { UNDEAD },
+				groups = {
 					i(204688, {	-- Monster Hunter's First Rune Fragment
-						["cost"] = { { "i", 207975, 1 } },	-- Severed Bat Head
+						cost = { { "i", 207975, 1 } },	-- Severed Bat Head
 					}),
 					i(204689, {	-- Monster Hunter's Second Rune Fragment
-						["cost"] = { { "i", 204477, 1 } },	-- Severed Murloc Head
+						cost = { { "i", 204477, 1 } },	-- Severed Murloc Head
 					}),
 					i(204690, {	-- Monster Hunter's Third Rune Fragment
-						["cost"] = { { "i", 204478, 1 } },	-- Severed Gnoll Head
+						cost = { { "i", 204478, 1 } },	-- Severed Gnoll Head
 					}),
 				},
 			}),
 			n(208652, {	-- Junni Steelpass <Monster Hunter>
-				["coord"] = { 46.6, 53.6, DUN_MOROGH },
-				["timeline"] = { REMOVED_2_0_1 },
-				["classes"] = { WARRIOR },
-				["races"] = { DWARF, GNOME },
-				["groups"] = {
+				coord = { 46.6, 53.6, DUN_MOROGH },
+				timeline = { REMOVED_2_0_1 },
+				classes = { WARRIOR },
+				races = { DWARF, GNOME },
+				groups = {
 					i(204688, {	-- Monster Hunter's First Rune Fragment
-						["cost"] = { { "i", 208158, 1 } },	-- Pristine Trogg Heart
+						cost = { { "i", 208158, 1 } },	-- Pristine Trogg Heart
 					}),
 					i(204689, {	-- Monster Hunter's Second Rune Fragment
-						["cost"] = { { "i", 208159, 1 } },	-- Severed Troll Head
+						cost = { { "i", 208159, 1 } },	-- Severed Troll Head
 					}),
 					i(204690, {	-- Monster Hunter's Third Rune Fragment
-						["cost"] = { { "i", 208160, 1 } },	-- Severed Wendigo Paw
+						cost = { { "i", 208160, 1 } },	-- Severed Wendigo Paw
 					}),
 				},
 			}),
 			n(207637, {	-- Vateya Timberhoof <Monster Hunter>
-				["coord"] = { 46.4, 61.8, MULGORE },
-				["timeline"] = { REMOVED_2_0_1 },
-				["classes"] = { WARRIOR },
-				["races"] = { TAUREN },
-				["groups"] = {
+				coord = { 46.4, 61.8, MULGORE },
+				timeline = { REMOVED_2_0_1 },
+				classes = { WARRIOR },
+				races = { TAUREN },
+				groups = {
 					i(204688, {	-- Monster Hunter's First Rune Fragment
-						["cost"] = { { "i", 206994, 1 } },	-- Severed Quilboar Head
+						cost = { { "i", 206994, 1 } },	-- Severed Quilboar Head
 					}),
 					i(204689, {	-- Monster Hunter's Second Rune Fragment
-						["cost"] = { { "i", 206995, 1 } },	-- Severed Harpy Head
+						cost = { { "i", 206995, 1 } },	-- Severed Harpy Head
 					}),
 					i(204690, {	-- Monster Hunter's Third Rune Fragment
-						["cost"] = { { "i", 204478, 1 } },	-- Severed Gnoll Head
+						cost = { { "i", 204478, 1 } },	-- Severed Gnoll Head
 					}),
 				},
 			}),
 			n(207957, {	-- Vahi Bonesplitter <Monster Hunter>
-				["coord"] = { 53.0, 43.6, DUROTAR },
-				["timeline"] = { REMOVED_2_0_1 },
-				["classes"] = { WARRIOR },
-				["races"] = { ORC, TROLL },
-				["groups"] = {
+				coord = { 53.0, 43.6, DUROTAR },
+				timeline = { REMOVED_2_0_1 },
+				classes = { WARRIOR },
+				races = { ORC, TROLL },
+				groups = {
 					i(204688, {	-- Monster Hunter's First Rune Fragment
-						["cost"] = { { "i", 206994, 1 } },	-- Severed Quilboar Head
+						cost = { { "i", 206994, 1 } },	-- Severed Quilboar Head
 					}),
 					i(204689, {	-- Monster Hunter's Second Rune Fragment
-						["cost"] = { { "i", 206995, 1 } },	-- Severed Harpy Head
+						cost = { { "i", 206995, 1 } },	-- Severed Harpy Head
 					}),
 					i(204690, {	-- Monster Hunter's Third Rune Fragment
-						["cost"] = { { "i", 207062, 1 } },	-- Severed Centaur Head
+						cost = { { "i", 207062, 1 } },	-- Severed Centaur Head
 					}),
 				},
 			}),
 			n(203226, {	-- Viktoria Woods <Monster Hunter>
-				["coord"] = { 69.8, 50.0, STORMWIND_CITY },
-				["timeline"] = { REMOVED_2_0_1 },
-				["classes"] = { WARRIOR },
-				["races"] = { HUMAN },
-				["groups"] = {
+				coord = { 69.8, 50.0, STORMWIND_CITY },
+				timeline = { REMOVED_2_0_1 },
+				classes = { WARRIOR },
+				races = { HUMAN },
+				groups = {
 					i(204688, {	-- Monster Hunter's First Rune Fragment
-						["cost"] = { { "i", 204476, 1 } },	-- Severed Kobold Head
+						cost = { { "i", 204476, 1 } },	-- Severed Kobold Head
 					}),
 					i(204689, {	-- Monster Hunter's Second Rune Fragment
-						["cost"] = { { "i", 204477, 1 } },	-- Severed Murloc Head
+						cost = { { "i", 204477, 1 } },	-- Severed Murloc Head
 					}),
 					i(204690, {	-- Monster Hunter's Third Rune Fragment
-						["cost"] = { { "i", 204478, 1 } },	-- Severed Gnoll Head
+						cost = { { "i", 204478, 1 } },	-- Severed Gnoll Head
 					}),
 				},
 			}),
@@ -1140,153 +1140,153 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 	}), {
 		n(FACTIONS, {
 			faction(2641, {	-- Emerald Wardens
-				["OnTooltip"] = OnTooltip_EMERALD_WARDENS,
-				["maps"] = { ASHENVALE, DUSKWOOD, FERALAS, TEMPLE_OF_ATALHAKKAR, THE_HINTERLANDS },
+				OnTooltip = OnTooltip_EMERALD_WARDENS,
+				maps = { ASHENVALE, DUSKWOOD, FERALAS, TEMPLE_OF_ATALHAKKAR, THE_HINTERLANDS },
 			}),
 		}),
 		n(QUESTS, {
 			ashenvalequest(81768, {	-- Ashenvale Mission I: Defeat Satyrs [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219999 },	-- Nightmare Incursions: Ashenvale Mission I
 					{ "i", 220053 },	-- Deputization Authorization: Ashenvale Mission I
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/10 Dreamfire Hellcaller slain
-						["provider"] = { "n", 221262 },	-- Dreamfire Hellcaller
-						["coord"] = { 80.4, 48.4, ASHENVALE },
+						provider = { "n", 221262 },	-- Dreamfire Hellcaller
+						coord = { 80.4, 48.4, ASHENVALE },
 					}),
 					objective(2, {	-- 0/10 Dreamfire Betrayer slain
-						["provider"] = { "n", 221261 },	-- Dreamfire Betrayer
-						["coord"] = { 79.4, 51.0, ASHENVALE },
+						provider = { "n", 221261 },	-- Dreamfire Betrayer
+						coord = { 79.4, 51.0, ASHENVALE },
 					}),
 				},
 			}),
 			ashenvalequest(81769, {	-- Ashenvale Mission II: Defeat Treants [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220000 },	-- Nightmare Incursions: Ashenvale Mission II
 					{ "i", 220054 },	-- Deputization Authorization: Ashenvale Mission II
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/7 Vengeful Ancient slain
-						["provider"] = { "n", 221263 },	-- Vengeful Ancient
-						["coord"] = { 86.8, 59.2, ASHENVALE },
+						provider = { "n", 221263 },	-- Vengeful Ancient
+						coord = { 86.8, 59.2, ASHENVALE },
 					}),
 				},
 			}),
 			ashenvalequest(81770, {	-- Ashenvale Mission III: Defeat Dragonkin [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220001 },	-- Nightmare Incursions: Ashenvale Mission III
 					{ "i", 220055 },	-- Deputization Authorization: Ashenvale Mission III
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/3 Wyrmkin Nightstalker slain
-						["provider"] = { "n", 221259 },	-- Wyrmkin Nightstalker
-						["coord"] = { 85.8, 46.6, ASHENVALE },
+						provider = { "n", 221259 },	-- Wyrmkin Nightstalker
+						coord = { 85.8, 46.6, ASHENVALE },
 					}),
 					objective(2, {	-- 0/10 Terror Whelp slain
-						["provider"] = { "n", 221260 },	-- Terror Whelp
-						["coord"] = { 87.0, 44.6, ASHENVALE },
+						provider = { "n", 221260 },	-- Terror Whelp
+						coord = { 87.0, 44.6, ASHENVALE },
 					}),
 				},
 			}),
 			ashenvalequest(81771, {	-- Ashenvale Mission IV: Dragon Intelligence [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220002 },	-- Nightmare Incursions: Ashenvale Mission IV
 					{ "i", 220056 },	-- Deputization Authorization: Ashenvale Mission IV
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Intelligence Report: Forest Song
-						["provider"] = { "i", 219924 },	-- Intelligence Report: Forest Song
-						["coord"] = { 83.6, 45.4, ASHENVALE },
-						["cr"] = 221271,	-- Dreamwarden Ellodar
+						provider = { "i", 219924 },	-- Intelligence Report: Forest Song
+						coord = { 83.6, 45.4, ASHENVALE },
+						cr = 221271,	-- Dreamwarden Ellodar
 					}),
 				},
 			}),
 			ashenvalequest(81772, {	-- Ashenvale Mission V: Satyr Intelligence [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220003 },	-- Nightmare Incursions: Ashenvale Mission V
 					{ "i", 220057 },	-- Deputization Authorization: Ashenvale Mission V
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Intelligence Report: Satyrnaar
-						["provider"] = { "i", 219925 },	-- Intelligence Report: Satyrnaar
-						["coord"] = { 81.6, 48.6, ASHENVALE },
-						["cr"] = 221272,	-- Dreamwarden Mandoran
+						provider = { "i", 219925 },	-- Intelligence Report: Satyrnaar
+						coord = { 81.6, 48.6, ASHENVALE },
+						cr = 221272,	-- Dreamwarden Mandoran
 					}),
 				},
 			}),
 			ashenvalequest(81773, {	-- Ashenvale Mission VI: Treant Intelligence [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220004 },	-- Nightmare Incursions: Ashenvale Mission VI
 					{ "i", 220058 },	-- Deputization Authorization: Ashenvale Mission VI
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Intelligence Report: Warsong Lumber Camp
-						["provider"] = { "i", 219926 },	-- Intelligence Report: Warsong Lumber Camp
-						["coord"] = { 91.2, 58.0, ASHENVALE },
-						["cr"] = 221273,	-- Dreamwarden Lanaria
+						provider = { "i", 219926 },	-- Intelligence Report: Warsong Lumber Camp
+						coord = { 91.2, 58.0, ASHENVALE },
+						cr = 221273,	-- Dreamwarden Lanaria
 					}),
 				},
 			}),
 			ashenvalequest(81774, {	-- Ashenvale Mission VII: Recover Dreamengine [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220005 },	-- Nightmare Incursions: Ashenvale Mission VII
 					{ "i", 220059 },	-- Deputization Authorization: Ashenvale Mission VII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Dreamengine
-						["providers"] = {
+						providers = {
 							{ "i", 219448 },	-- Dreamengine
 							{ "o", 441128 },	-- Vibrating Crate
 						},
-						["coord"] = { 88.4, 55.5, ASHENVALE },
+						coord = { 88.4, 55.5, ASHENVALE },
 					}),
 				},
 			}),
 			ashenvalequest(81775, {	-- Ashenvale Mission VIII: Recover Azsharan Prophecy [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220006 },	-- Nightmare Incursions: Ashenvale Mission VIII
 					{ "i", 220060 },	-- Deputization Authorization: Ashenvale Mission VIII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Azsharan Prophecy
-						["providers"] = {
+						providers = {
 							{ "i", 219449 },	-- Azsharan Prophecy
 							{ "o", 441129 },	-- Azsharan Prophecy
 						},
-						["coord"] = { 80.7, 48.9, ASHENVALE },
+						coord = { 80.7, 48.9, ASHENVALE },
 					}),
 				},
 			}),
 			ashenvalequest(81776, {	-- Ashenvale Mission IX: Recover Dream-Touched Dragonegg [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220007 },	-- Nightmare Incursions: Ashenvale Mission IX
 					{ "i", 220061 },	-- Deputization Authorization: Ashenvale Mission IX
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Dream-Touched Dragon Egg
-						["providers"] = {
+						providers = {
 							{ "i", 219447 },	-- Dream-Touched Dragon Egg
 							{ "o", 441124 },	-- Dream-Touched Dragon Egg
 						},
-						["coord"] = { 86.1, 45.9, ASHENVALE },
+						coord = { 86.1, 45.9, ASHENVALE },
 					}),
 				},
 			}),
 			ashenvalequest(81777, {	-- Ashenvale Mission X: Dreamroot [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220008 },	-- Nightmare Incursions: Ashenvale Mission X
 					{ "i", 220062 },	-- Deputization Authorization: Ashenvale Mission X
 				},
-				["requireSkill"] = HERBALISM,
-				["learnedAt"] = 205,
-				["groups"] = {
+				requireSkill = HERBALISM,
+				learnedAt = 205,
+				groups = {
 					objective(1, {	-- 0/10 Dreamroot
-						["providers"] = {
+						providers = {
 							{ "i", 219444 },	-- Dreamroot
 							{ "o", 439627 },	-- Dreamroot
 						},
-						["coords"] = {
+						coords = {
 							{ 93.5, 38.3, ASHENVALE },
 							{ 81.0, 44.8, ASHENVALE },
 							{ 85.9, 56.5, ASHENVALE },
@@ -1295,19 +1295,19 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 				},
 			}),
 			ashenvalequest(81778, {	-- Ashenvale Mission XI: Fool's Gold Dust [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220009 },	-- Nightmare Incursions: Ashenvale Mission XI
 					{ "i", 220063 },	-- Deputization Authorization: Ashenvale Mission XI
 				},
-				["requireSkill"] = MINING,
-				["learnedAt"] = 205,
-				["groups"] = {
+				requireSkill = MINING,
+				learnedAt = 205,
+				groups = {
 					objective(1, {	-- 0/10 Fool's Gold Dust
-						["providers"] = {
+						providers = {
 							{ "i", 219445 },	-- Fool's Gold Dust
 							{ "o", 439628 },	-- Fool's Gold Vein
 						},
-						["coords"] = {
+						coords = {
 							{ 91.3, 37.6, ASHENVALE },
 							{ 82.7, 45.8, ASHENVALE },
 							{ 88.1, 62.1, ASHENVALE },
@@ -1316,17 +1316,17 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 				},
 			}),
 			ashenvalequest(81779, {	-- Ashenvale Mission XII: Dream-Infused Dragonscale [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220010 },	-- Nightmare Incursions: Ashenvale Mission XII
 					{ "i", 220064 },	-- Deputization Authorization: Ashenvale Mission XII
 				},
-				["requireSkill"] = SKINNING,
-				["learnedAt"] = 205,
-				["groups"] = {
+				requireSkill = SKINNING,
+				learnedAt = 205,
+				groups = {
 					objective(1, {	-- 0/10 Dream-Infused Dragonscale
-						["provider"] = { "i", 219446 },	-- Dream-Infused Dragonscale
-						["coord"] = { 86.8, 46.6, ASHENVALE },
-						["crs"] = {
+						provider = { "i", 219446 },	-- Dream-Infused Dragonscale
+						coord = { 86.8, 46.6, ASHENVALE },
+						crs = {
 							221259,	-- Wyrmkin Nightstalker
 							221260,	-- Terror Whelp
 						},
@@ -1334,223 +1334,223 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 				},
 			}),
 			ashenvalequest(81780, {	-- Ashenvale Mission XIII: Defeat Larsera [200 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220011 },	-- Nightmare Incursions: Ashenvale Mission XIII
 					{ "i", 220065 },	-- Deputization Authorization: Ashenvale Mission XVIII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Larsera slain
-						["provider"] = { "n", 221265 },	-- Larsera
-						["coord"] = { 86.6, 44.6, ASHENVALE },
+						provider = { "n", 221265 },	-- Larsera
+						coord = { 86.6, 44.6, ASHENVALE },
 					}),
 				},
 			}),
 			ashenvalequest(81781, {	-- Ashenvale Mission XIV: Defeat Zalius [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220012 },	-- Nightmare Incursions: Ashenvale Mission XIV
 					{ "i", 220066 },	-- Deputization Authorization: Ashenvale Mission XIV
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Zalius slain
-						["provider"] = { "n", 221266 },	-- Zalius <Dreamfire Elder>
-						["coord"] = { 81.0, 50.6, ASHENVALE },
+						provider = { "n", 221266 },	-- Zalius <Dreamfire Elder>
+						coord = { 81.0, 50.6, ASHENVALE },
 					}),
 				},
 			}),
 			ashenvalequest(81782, {	-- Ashenvale Mission XV: Defeat Shredder 9000 [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220013 },	-- Nightmare Incursions: Ashenvale Mission XV
 					{ "i", 220067 },	-- Deputization Authorization: Ashenvale Mission XV
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Shredder 9000 slain
-						["provider"] = { "n", 221267 },	-- Shredder 9000
-						["coord"] = { 86.8, 62.6, ASHENVALE },
+						provider = { "n", 221267 },	-- Shredder 9000
+						coord = { 86.8, 62.6, ASHENVALE },
 					}),
 				},
 			}),
 			ashenvalequest(81783, {	-- Ashenvale Mission XVI: Rescue Alyssian Windcaller [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220014 },	-- Nightmare Incursions: Ashenvale Mission XVI
 					{ "i", 220068 },	-- Deputization Authorization: Ashenvale Mission XVI
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- Rescue Alyssian Windcaller
-						["provider"] = { "n", 221270 },	-- Alyssian Windcaller <Druid of the Claw>
-						["coord"] = { 92.0, 54.0, ASHENVALE },
+						provider = { "n", 221270 },	-- Alyssian Windcaller <Druid of the Claw>
+						coord = { 92.0, 54.0, ASHENVALE },
 					}),
 				},
 			}),
 			ashenvalequest(81784, {	-- Ashenvale Mission XVII: Rescue Doran Dreambough [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220015 },	-- Nightmare Incursions: Ashenvale Mission XVII
 					{ "i", 220069 },	-- Deputization Authorization: Ashenvale Mission XVII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- Rescue Doran Dreambough
-						["provider"] = { "n", 221268 },	-- Doran Dreambough <Druid of the Claw>
-						["coord"] = { 87.2, 43.6, ASHENVALE },
+						provider = { "n", 221268 },	-- Doran Dreambough <Druid of the Claw>
+						coord = { 87.2, 43.6, ASHENVALE },
 					}),
 				},
 			}),
 			ashenvalequest(81785, {	-- Ashenvale Mission XVIII: Rescue Maseara Autumnmoon [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220016 },	-- Nightmare Incursions: Ashenvale Mission XVIII
 					{ "i", 220070 },	-- Deputization Authorization: Ashenvale Mission XVIII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- Rescue Maseara Autumnmoon
-						["provider"] = { "n", 221269 },	-- Maseara Autumnmoon <Druid of the Claw>
-						["coord"] = { 81.0, 50.0, ASHENVALE },
+						provider = { "n", 221269 },	-- Maseara Autumnmoon <Druid of the Claw>
+						coord = { 81.0, 50.0, ASHENVALE },
 					}),
 				},
 			}),
 			duskwoodquest(81730, {	-- Duskwood Mission I: Defeat Worgen [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219962 },	-- Nightmare Incursions: Duskwood Mission I
 					{ "i", 219963 },	-- Deputization Authorization: Duskwood Mission I
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/10 Nightmare Runner slain
-						["provider"] = { "n", 221171 },	-- Nightmare Runner
-						["coord"] = { 63.2, 72.2, DUSKWOOD },
+						provider = { "n", 221171 },	-- Nightmare Runner
+						coord = { 63.2, 72.2, DUSKWOOD },
 					}),
 					objective(2, {	-- 0/10 Nightmare Weaver slain
-						["provider"] = { "n", 221172 },	-- Nightmare Weaver
-						["coord"] = { 65.8, 66.2, DUSKWOOD },
+						provider = { "n", 221172 },	-- Nightmare Weaver
+						coord = { 65.8, 66.2, DUSKWOOD },
 					}),
 				},
 			}),
 			duskwoodquest(81731, {	-- Duskwood Mission II: Defeat Ogres [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219966 },	-- Nightmare Incursions: Duskwood Mission II
 					{ "i", 219965 },	-- Deputization Authorization: Duskwood Mission II
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/3 Deranged Ogre slain
-						["provider"] = { "n", 221174 },	-- Deranged Ogre
-						["coord"] = { 37.6, 71.6, DUSKWOOD },
+						provider = { "n", 221174 },	-- Deranged Ogre
+						coord = { 37.6, 71.6, DUSKWOOD },
 					}),
 					objective(2, {	-- 0/3 Demented Fire Weaver slain
-						["provider"] = { "n", 221175 },	-- Demented Fire Weaver
-						["coord"] = { 34.6, 77.8, DUSKWOOD },
+						provider = { "n", 221175 },	-- Demented Fire Weaver
+						coord = { 34.6, 77.8, DUSKWOOD },
 					}),
 				},
 			}),
 			duskwoodquest(81732, {	-- Duskwood Mission III: Defeat Dragonkin [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219967 },	-- Nightmare Incursions: Duskwood Mission III
 					{ "i", 219983 },	-- Deputization Authorization: Duskwood Mission III
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/3 Wyrmkin Terrorwalker slain
-						["provider"] = { "n", 221200 },	-- Wyrmkin Terrorwalker
-						["coord"] = { 49.0, 71.8, DUSKWOOD },
+						provider = { "n", 221200 },	-- Wyrmkin Terrorwalker
+						coord = { 49.0, 71.8, DUSKWOOD },
 					}),
 					objective(2, {	-- 0/10 Nightterror Whelp slain
-						["provider"] = { "n", 221176 },	-- Nightterror Whelp
-						["coord"] = { 49.6, 75.2, DUSKWOOD },
+						provider = { "n", 221176 },	-- Nightterror Whelp
+						coord = { 49.6, 75.2, DUSKWOOD },
 					}),
 				},
 			}),
 			duskwoodquest(81733, {	-- Duskwood Mission IV: Ogre Intelligence [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219968 },	-- Nightmare Incursions: Duskwood Mission IV
 					{ "i", 219984 },	-- Deputization Authorization: Duskwood Mission IV
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Intelligence Report: Vul'gol Ogre Mound
-						["provider"] = { "i", 219776 },	-- Intelligence Report: Vul'gol Ogre Mound
-						["coord"] = { 36.6, 83.8, DUSKWOOD },
-						["cr"] = 221222,	-- Dreamwarden Thalinar
+						provider = { "i", 219776 },	-- Intelligence Report: Vul'gol Ogre Mound
+						coord = { 36.6, 83.8, DUSKWOOD },
+						cr = 221222,	-- Dreamwarden Thalinar
 					}),
 				},
 			}),
 			duskwoodquest(81734, {	-- Duskwood Mission V: Worgen Intelligence [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219969 },	-- Nightmare Incursions: Duskwood Mission V
 					{ "i", 219985 },	-- Deputization Authorization: Duskwood Mission V
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Intelligence Report: Rotting Orchard
-						["provider"] = { "i", 219778 },	-- Intelligence Report: Rotting Orchard
-						["coord"] = { 66.2, 76.0, DUSKWOOD },
-						["cr"] = 221221,	-- Dreamwarden Dorilar
+						provider = { "i", 219778 },	-- Intelligence Report: Rotting Orchard
+						coord = { 66.2, 76.0, DUSKWOOD },
+						cr = 221221,	-- Dreamwarden Dorilar
 					}),
 				},
 			}),
 			duskwoodquest(81735, {	-- Duskwood Mission VI: Dragon Intelligence [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219970 },	-- Nightmare Incursions: Duskwood Mission VI
 					{ "i", 219986 },	-- Deputization Authorization: Duskwood Mission VI
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Intelligence Report: Yorgen Farmstead
-						["provider"] = { "i", 219803 },	-- Intelligence Report: Yorgen Farmstead
-						["coord"] = { 50.6, 77.0, DUSKWOOD },
-						["cr"] = 221220,	-- Dreamwarden Amalia
+						provider = { "i", 219803 },	-- Intelligence Report: Yorgen Farmstead
+						coord = { 50.6, 77.0, DUSKWOOD },
+						cr = 221220,	-- Dreamwarden Amalia
 					}),
 				},
 			}),
 			duskwoodquest(81736, {	-- Duskwood Mission VII: Recover Shadowscythe [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219971 },	-- Nightmare Incursions: Duskwood Mission VII
 					{ "i", 219987 },	-- Deputization Authorization: Duskwood Mission VII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Shadowscythe
-						["providers"] = {
+						providers = {
 							{ "i", 219404 },	-- Shadowscythe
 							{ "o", 441114 },	-- Mysterious Box
 						},
-						["coord"] = { 65.7, 67.5, DUSKWOOD },
+						coord = { 65.7, 67.5, DUSKWOOD },
 					}),
 				},
 			}),
 			duskwoodquest(81737, {	-- Duskwood Mission VIII: Recover Ogre Magi Text [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219972 },	-- Nightmare Incursions: Duskwood Mission VIII
 					{ "i", 219988 },	-- Deputization Authorization: Duskwood Mission VIII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Ogre Magi Text
-						["providers"] = {
+						providers = {
 							{ "i", 219405 },	-- Ogre Magi Text
 							{ "o", 441113 },	-- Ogre Magi Text
 						},
-						["coord"] = { 35.7, 80.1, DUSKWOOD },
+						coord = { 35.7, 80.1, DUSKWOOD },
 					}),
 				},
 			}),
 			duskwoodquest(81738, {	-- Duskwood Mission IX: Recover Dragon Egg [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219973 },	-- Nightmare Incursions: Duskwood Mission IX
 					{ "i", 219989 },	-- Deputization Authorization: Duskwood Mission IX
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Unhatched Green Dragon Egg
-						["providers"] = {
+						providers = {
 							{ "i", 219406 },	-- Unhatched Green Dragon Egg
 							{ "o", 441119 },	-- Unhatched Green Dragon Egg
 						},
-						["coord"] = { 49.5, 72.5, DUSKWOOD },
+						coord = { 49.5, 72.5, DUSKWOOD },
 					}),
 				},
 			}),
 			duskwoodquest(81739, {	-- Duskwood Mission X: Nightmare Moss [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219974 },	-- Nightmare Incursions: Duskwood Mission X
 					{ "i", 219990 },	-- Deputization Authorization: Duskwood Mission X
 				},
-				["requireSkill"] = HERBALISM,
-				["learnedAt"] = 125,
-				["groups"] = {
+				requireSkill = HERBALISM,
+				learnedAt = 125,
+				groups = {
 					objective(1, {	-- 0/10 Nightmare Moss
-						["providers"] = {
+						providers = {
 							{ "i", 219399 },	-- Nightmare Moss
 							{ "o", 439557 },	-- Nightmare Moss
 						},
-						["coords"] = {
+						coords = {
 							{ 47.8, 42.9, DUSKWOOD },
 							{ 61.6, 75.8, DUSKWOOD },
 							{ 35.1, 72.0, DUSKWOOD },
@@ -1559,19 +1559,19 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 				},
 			}),
 			duskwoodquest(81740, {	-- Duskwood Mission XI: Cold Iron Ore [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219975 },	-- Nightmare Incursions: Duskwood Mission XI
 					{ "i", 219991 },	-- Deputization Authorization: Duskwood Mission XI
 				},
-				["requireSkill"] = MINING,
-				["learnedAt"] = 125,
-				["groups"] = {
+				requireSkill = MINING,
+				learnedAt = 125,
+				groups = {
 					objective(1, {	-- 0/10 Cold Iron Ore
-						["providers"] = {
+						providers = {
 							{ "i", 219401 },	-- Cold Iron Ore
 							{ "o", 439558 },	-- Cold Iron Deposit
 						},
-						["coords"] = {
+						coords = {
 							{ 42.5, 34.6, DUSKWOOD },
 							{ 67.6, 78.1, DUSKWOOD },
 							{ 35.5, 68.0, DUSKWOOD },
@@ -1580,17 +1580,17 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 				},
 			}),
 			duskwoodquest(81741, {	-- Duskwood Mission XII: Dream-Touched Dragonscale [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219976 },	-- Nightmare Incursions: Duskwood Mission XII
 					{ "i", 219992 },	-- Deputization Authorization: Duskwood Mission XII
 				},
-				["requireSkill"] = SKINNING,
-				["learnedAt"] = 125,
-				["groups"] = {
+				requireSkill = SKINNING,
+				learnedAt = 125,
+				groups = {
 					objective(1, {	-- 0/10 Dream-Touched Dragonscale
-						["provider"] = { "i", 219402 },	-- Dream-Touched Dragonscale
-						["coord"] = { 48.8, 74.4, DUSKWOOD },
-						["crs"] = {
+						provider = { "i", 219402 },	-- Dream-Touched Dragonscale
+						coord = { 48.8, 74.4, DUSKWOOD },
+						crs = {
 							221176,	-- Nightterror Whelp
 							221200,	-- Wyrmkin Terrorwalker
 						},
@@ -1598,223 +1598,223 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 				},
 			}),
 			duskwoodquest(81742, {	-- Duskwood Mission XIII: Defeat Ylanthrius [200 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219977 },	-- Nightmare Incursions: Duskwood Mission XIII
 					{ "i", 219993 },	-- Deputization Authorization: Duskwood Mission XIII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Ylanthrius slain
-						["provider"] = { "n", 221204 },	-- Ylanthrius
-						["coord"] = { 48.2, 73.4, DUSKWOOD },
+						provider = { "n", 221204 },	-- Ylanthrius
+						coord = { 48.2, 73.4, DUSKWOOD },
 					}),
 				},
 			}),
 			duskwoodquest(81743, {	-- Duskwood Mission XIV: Defeat Vvarc'zul [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219978 },	-- Nightmare Incursions: Duskwood Mission XIV
 					{ "i", 219994 },	-- Deputization Authorization: Duskwood Mission XIV
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Vvarc'zul slain
-						["provider"] = { "n", 221206 },	-- Vvarc' Zul <King of The Woods>
-						["coord"] = { 37.0, 83.4, DUSKWOOD },
+						provider = { "n", 221206 },	-- Vvarc' Zul <King of The Woods>
+						coord = { 37.0, 83.4, DUSKWOOD },
 					}),
 				},
 			}),
 			duskwoodquest(81744, {	-- Duskwood Mission XV: Defeat Amokarok [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219979 },	-- Nightmare Incursions: Duskwood Mission XV
 					{ "i", 219995 },	-- Deputization Authorization: Duskwood Mission XV
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Amokarok slain
-						["provider"] = { "n", 221207 },	-- Amokarok <Lord of the Hunt>
-						["coord"] = { 66.2, 76.6, DUSKWOOD },
+						provider = { "n", 221207 },	-- Amokarok <Lord of the Hunt>
+						coord = { 66.2, 76.6, DUSKWOOD },
 					}),
 				},
 			}),
 			duskwoodquest(81745, {	-- Duskwood Mission XVI: Rescue Kroll Mountainshade [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219980 },	-- Nightmare Incursions: Duskwood Mission XVI
 					{ "i", 219996 },	-- Deputization Authorization: Duskwood Mission XVI
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- Rescue Kroll Mountainshade
-						["provider"] = { "n", 221210 },	-- Kroll Mountainshade <Druid of the Claw>
-						["coord"] = { 66.0, 69.2, DUSKWOOD },
+						provider = { "n", 221210 },	-- Kroll Mountainshade <Druid of the Claw>
+						coord = { 66.0, 69.2, DUSKWOOD },
 					}),
 				},
 			}),
 			duskwoodquest(81746, {	-- Duskwood Mission XVII: Rescue Alara Grovemender [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219981 },	-- Nightmare Incursions: Duskwood Mission XVII
 					{ "i", 219997 },	-- Deputization Authorization: Duskwood Mission XVII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- Rescue Alara Grovemender
-						["provider"] = { "n", 221215 },	-- Alara Grovemender <Druid of the Claw>
-						["coord"] = { 49.15, 77.55, DUSKWOOD },
+						provider = { "n", 221215 },	-- Alara Grovemender <Druid of the Claw>
+						coord = { 49.15, 77.55, DUSKWOOD },
 					}),
 				},
 			}),
 			duskwoodquest(81747, {	-- Duskwood Mission XVIII: Rescue Elenora Marshwalker [75 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 219982 },	-- Nightmare Incursions: Duskwood Mission XVIII
 					{ "i", 219998 },	-- Deputization Authorization: Duskwood Mission XVIII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- Rescue Elenora Marshwalker
-						["provider"] = { "n", 221216 },	-- Elenora Marshwalker
-						["coord"] = { 32.39, 69.48, DUSKWOOD },
+						provider = { "n", 221216 },	-- Elenora Marshwalker
+						coord = { 32.39, 69.48, DUSKWOOD },
 					}),
 				},
 			}),
 			feralasquest(81855, {	-- Feralas Mission I: Defeat Children of Cenarius [150 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220035 },	-- Nightmare Incursions: Feralas Mission I
 					{ "i", 220089 },	-- Deputization Authorization: Feralas Mission I
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/10 Lost Daughter slain
-						["provider"] = { "n", 221375 },	-- Lost Daughter
-						["coord"] = { 45.6, 22.2, FERALAS },
+						provider = { "n", 221375 },	-- Lost Daughter
+						coord = { 45.6, 22.2, FERALAS },
 					}),
 					objective(2, {	-- 0/10 Vengeful Son slain
-						["provider"] = { "n", 221377 },	-- Vengeful Son
-						["coord"] = { 46.4, 14.4, FERALAS },
+						provider = { "n", 221377 },	-- Vengeful Son
+						coord = { 46.4, 14.4, FERALAS },
 					}),
 				},
 			}),
 			feralasquest(81856, {	-- Feralas Mission II: Defeat Harpies [150 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220036 },	-- Nightmare Incursions: Feralas Mission II
 					{ "i", 220090 },	-- Deputization Authorization: Feralas Mission II
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/10 Dreamspring Roguefeather slain
-						["provider"] = { "n", 221370 },	-- Dreamspring Roguefeather
-						["coord"] = { 39.8, 12.6, FERALAS },
+						provider = { "n", 221370 },	-- Dreamspring Roguefeather
+						coord = { 39.8, 12.6, FERALAS },
 					}),
 					objective(2, {	-- 0/10 Dreamspring Stormcaller slain
-						["provider"] = { "n", 221371 },	-- Dreamspring Stormcaller
-						["coord"] = { 39.0, 13.4, FERALAS },
+						provider = { "n", 221371 },	-- Dreamspring Stormcaller
+						coord = { 39.0, 13.4, FERALAS },
 					}),
 				},
 			}),
 			feralasquest(81857, {	-- Feralas Mission III: Defeat Dragonkin [150 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220037 },	-- Nightmare Incursions: Feralas Mission III
 					{ "i", 220091 },	-- Deputization Authorization: Feralas Mission III
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/10 Frenzied Whelp slain
-						["provider"] = { "n", 221369 },	-- Frenzied Whelp
-						["coord"] = { 51.6, 19.6, FERALAS },
+						provider = { "n", 221369 },	-- Frenzied Whelp
+						coord = { 51.6, 19.6, FERALAS },
 					}),
 					objective(2, {	-- 0/3 Wyrmkin Berserker slain
-						["provider"] = { "n", 221367 },	-- Wyrmkin Berserker
-						["coord"] = { 51.6, 14.8, FERALAS },
+						provider = { "n", 221367 },	-- Wyrmkin Berserker
+						coord = { 51.6, 14.8, FERALAS },
 					}),
 				},
 			}),
 			feralasquest(81858, {	-- Feralas Mission IV: Dragon Intelligence [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220038 },	-- Nightmare Incursions: Feralas Mission IV
 					{ "i", 220092 },	-- Deputization Authorization: Feralas Mission IV
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Intelligence Report: Oneiros
-						["provider"] = { "i", 219957 },	-- Intelligence Report: Oneiros
-						["coord"] = { 50.6, 19.8, FERALAS },
-						["cr"] = 221401,	-- Dreamwarden Sheldryn
+						provider = { "i", 219957 },	-- Intelligence Report: Oneiros
+						coord = { 50.6, 19.8, FERALAS },
+						cr = 221401,	-- Dreamwarden Sheldryn
 					}),
 				},
 			}),
 			feralasquest(81859, {	-- Feralas Mission V: Cenarion Intelligence [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220039 },	-- Nightmare Incursions: Feralas Mission V
 					{ "i", 220093 },	-- Deputization Authorization: Feralas Mission V
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Intelligence Report: Twin Colossals
-						["provider"] = { "i", 219958 },	-- Intelligence Report: Twin Colossals
-						["coord"] = { 47.0, 21.6, FERALAS },
-						["cr"] = 221402,	-- Dreamwarden Gorlas
+						provider = { "i", 219958 },	-- Intelligence Report: Twin Colossals
+						coord = { 47.0, 21.6, FERALAS },
+						cr = 221402,	-- Dreamwarden Gorlas
 					}),
 				},
 			}),
 			feralasquest(81860, {	-- Feralas Mission VI: Harpy Intelligence [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220040 },	-- Nightmare Incursions: Feralas Mission VI
 					{ "i", 220094 },	-- Deputization Authorization: Feralas Mission VI
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Intelligence Report: Ruins of Ravenwind
-						["provider"] = { "i", 219959 },	-- Intelligence Report: Ruins of Ravenwind
-						["coord"] = { 37.6, 12.0, FERALAS },
-						["cr"] = 221404,	-- Dreamwarden Anadelle
+						provider = { "i", 219959 },	-- Intelligence Report: Ruins of Ravenwind
+						coord = { 37.6, 12.0, FERALAS },
+						cr = 221404,	-- Dreamwarden Anadelle
 					}),
 				},
 			}),
 			feralasquest(81861, {	-- Feralas Mission VII: Recover Moonglow Dragonegg [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220041 },	-- Nightmare Incursions: Feralas Mission VII
 					{ "i", 220095 },	-- Deputization Authorization: Feralas Mission VII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Moonglow Dragonegg
-						["providers"] = {
+						providers = {
 							{ "i", 219520 },	-- Moonglow Dragonegg
 							{ "o", 441310 },	-- Moonglow Dragonegg
 						},
-						["coord"] = { 50.7, 17.2, FERALAS },
+						coord = { 50.7, 17.2, FERALAS },
 					}),
 				},
 			}),
 			feralasquest(81863, {	-- Feralas Mission VIII: Recover Keeper's Notes [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220042 },	-- Nightmare Incursions: Feralas Mission VIII
 					{ "i", 220096 },	-- Deputization Authorization: Feralas Mission VIII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Mad Keeper's Notes
-						["providers"] = {
+						providers = {
 							{ "i", 219519 },	-- Mad Keeper's Notes
 							{ "o", 441312 },	-- Mad Keeper's Notes
 						},
-						["coord"] = { 45.0, 20.0, FERALAS },
+						coord = { 45.0, 20.0, FERALAS },
 					}),
 				},
 			}),
 			feralasquest(81864, {	-- Feralas Mission IX: Recover Harpy Screed [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220043 },	-- Nightmare Incursions: Feralas Mission IX
 					{ "i", 220097 },	-- Deputization Authorization: Feralas Mission IX
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Harpy Screed
-						["providers"] = {
+						providers = {
 							{ "i", 219518 },	-- Harpy Screed
 							{ "o", 441314 },	-- Harpy Screed
 						},
-						["coord"] = { 38.6, 15.7, FERALAS },
+						coord = { 38.6, 15.7, FERALAS },
 					}),
 				},
 			}),
 			feralasquest(81865, {	-- Feralas Mission X: Moonroot [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220044 },	-- Nightmare Incursions: Feralas Mission X
 					{ "i", 220098 },	-- Deputization Authorization: Feralas Mission X
 				},
-				["requireSkill"] = HERBALISM,
-				["learnedAt"] = 250,
-				["groups"] = {
+				requireSkill = HERBALISM,
+				learnedAt = 250,
+				groups = {
 					objective(1, {	-- 0/10 Moonroot
-						["providers"] = {
+						providers = {
 							{ "i", 219514 },	-- Moonroot
 							{ "o", 439810 },	-- Moonroot
 						},
-						["coords"] = {
+						coords = {
 							{ 40.5, 11.5, FERALAS },
 							{ 44.7, 23.1, FERALAS },
 							{ 53.6, 17.5, FERALAS },
@@ -1824,19 +1824,19 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 				},
 			}),
 			feralasquest(81866, {	-- Feralas Mission XI: Greater Moonstone [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220045 },	-- Nightmare Incursions: Feralas Mission XI
 					{ "i", 220099 },	-- Deputization Authorization: Feralas Mission XI
 				},
-				["requireSkill"] = MINING,
-				["learnedAt"] = 250,
-				["groups"] = {
+				requireSkill = MINING,
+				learnedAt = 250,
+				groups = {
 					objective(1, {	-- 0/10 Greater Moonstone
-						["providers"] = {
+						providers = {
 							{ "i", 219515 },	-- Greater Moonstone
 							{ "o", 439815 },	-- Greater Moonstone Formation
 						},
-						["coords"] = {
+						coords = {
 							{ 40.8, 9.9, FERALAS },
 							{ 37.7, 20.5, FERALAS },
 							{ 54.0, 13.5, FERALAS },
@@ -1845,21 +1845,21 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 				},
 			}),
 			feralasquest(81867, {	-- Feralas Mission XII: Greater Moondragon Scales [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220046 },	-- Nightmare Incursions: Feralas Mission XII
 					{ "i", 220100 },	-- Deputization Authorization: Feralas Mission XII
 				},
-				["requireSkill"] = SKINNING,
-				["learnedAt"] = 250,
-				["groups"] = {
+				requireSkill = SKINNING,
+				learnedAt = 250,
+				groups = {
 					objective(1, {	-- 0/10 Moondragon Scale
-						["provider"] = { "i", 219517 },	-- Moondragon Scale
-						["coords"] = {
+						provider = { "i", 219517 },	-- Moondragon Scale
+						coords = {
 							{ 46.6, 12.8, FERALAS },
 							{ 51.0, 24.0, FERALAS },
 							{ 53.4, 14.6, FERALAS },
 						},
-						["crs"] = {
+						crs = {
 							221369,	-- Frenzied Whelp
 							221367,	-- Wyrmkin Berserker
 						},
@@ -1867,228 +1867,228 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 				},
 			}),
 			feralasquest(81868, {	-- Feralas Mission XIII: Defeat Tyrannikus [200 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220047 },	-- Nightmare Incursions: Feralas Mission XIII
 					{ "i", 220101 },	-- Deputization Authorization: Feralas Mission XIII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Tyrannikus slain
-						["provider"] = { "n", 221393 },	-- Tyrannikus
-						["coord"] = { 53.6, 17.0, FERALAS },
+						provider = { "n", 221393 },	-- Tyrannikus
+						coord = { 53.6, 17.0, FERALAS },
 					}),
 				},
 			}),
 			feralasquest(81870, {	-- Feralas Mission XIV: Defeat Alondrius [150 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220048 },	-- Nightmare Incursions: Feralas Mission XIV
 					{ "i", 220102 },	-- Deputization Authorization: Feralas Mission XIV
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Alondrius slain
-						["provider"] = { "n", 221389 },	-- Alondrius <Keeper of the Nightmare>
-						["coord"] = { 47.6, 15.6, FERALAS },
+						provider = { "n", 221389 },	-- Alondrius <Keeper of the Nightmare>
+						coord = { 47.6, 15.6, FERALAS },
 					}),
 				},
 			}),
 			feralasquest(81871, {	-- Feralas Mission XV: Defeat Slirena [150 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220049 },	-- Nightmare Incursions: Feralas Mission XV
 					{ "i", 220103 },	-- Deputization Authorization: Feralas Mission XV
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Slirena slain
-						["provider"] = { "n", 221391 },	-- Slirena <Harpy Queen>
-						["coord"] = { 39.6, 13.8, FERALAS },
+						provider = { "n", 221391 },	-- Slirena <Harpy Queen>
+						coord = { 39.6, 13.8, FERALAS },
 					}),
 				},
 			}),
 			feralasquest(81872, {	-- Feralas Mission XVI: Rescue Mellias Earthtender [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220050 },	-- Nightmare Incursions: Feralas Mission XVI
 					{ "i", 220104 },	-- Deputization Authorization: Feralas Mission XVI
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- Rescue Mellias Earthtender
-						["provider"] = { "n", 221395 },	-- Mellias Earthtender <Druid of the Claw>
-						["coord"] = { 49.6, 15.5, FERALAS },
+						provider = { "n", 221395 },	-- Mellias Earthtender <Druid of the Claw>
+						coord = { 49.6, 15.5, FERALAS },
 					}),
 				},
 			}),
 			feralasquest(81873, {	-- Feralas Mission XVII: Rescue Nerene Brooksinger [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220051 },	-- Nightmare Incursions: Feralas Mission XVII
 					{ "i", 220105 },	-- Deputization Authorization: Feralas Mission XVII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- Rescue Nerene Brooksinger
-						["provider"] = { "n", 221398 },	-- Nerene Brooksinger <Druid of the Claw>
-						["coord"] = { 45.0, 16.0, FERALAS },
+						provider = { "n", 221398 },	-- Nerene Brooksinger <Druid of the Claw>
+						coord = { 45.0, 16.0, FERALAS },
 					}),
 				},
 			}),
 			feralasquest(81874, {	-- Feralas Mission XVIII: Rescue Jamniss Treemender [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220052 },	-- Nightmare Incursions: Feralas Mission XVIII
 					{ "i", 220106 },	-- Deputization Authorization: Feralas Mission XVIII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- Rescue Jamniss Treemender
-						["provider"] = { "n", 221399 },	-- Jamniss Treemender <Druid of the Claw>
-						["coord"] = { 40.6, 8.2, FERALAS },
+						provider = { "n", 221399 },	-- Jamniss Treemender <Druid of the Claw>
+						coord = { 40.6, 8.2, FERALAS },
 					}),
 				},
 			}),
 			q(82068, {	-- Fight the Nightmare Incursions
-				["qgs"] = {
+				qgs = {
 					221480,	-- Field Captain Arunnel
 					221479,	-- Field Captain Korlian
 				},
-				["coords"] = {
+				coords = {
 					{ 48.6, 12.4, FERALAS },
 					{ 61.4, 34.6, THE_HINTERLANDS },
 				},
-				["maxReputation"] = { 2641, EXALTED },	-- Emerald Wardens
-				["isDaily"] = true,
-				["lvl"] = 47,
+				maxReputation = { 2641, EXALTED },	-- Emerald Wardens
+				isDaily = true,
+				lvl = 47,
 			}),
 			hinterlandsquest(81786, {	-- Hinterlands Mission I: Defeat Moonkin [150 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220017 },	-- Nightmare Incursions: Hinterlands Mission I
 					{ "i", 220071 },	-- Deputization Authorization: Hinterlands Mission I
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/20 Fallen Moonkin slain
-						["provider"] = { "n", 221330 },	-- Fallen Moonkin
-						["coord"] = { 58.0, 42.5, THE_HINTERLANDS },
+						provider = { "n", 221330 },	-- Fallen Moonkin
+						coord = { 58.0, 42.5, THE_HINTERLANDS },
 					}),
 				},
 			}),
 			hinterlandsquest(81787, {	-- Hinterlands Mission II: Defeat Giant Turtles [150 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220018 },	-- Nightmare Incursions: Hinterlands Mission II
 					{ "i", 220072 },	-- Deputization Authorization: Hinterlands Mission II
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/20 Dreamwater Vicejaw slain
-						["provider"] = { "n", 221328 },	-- Dreamwater Vicejaw
-						["coord"] = { 65.0, 44.8, THE_HINTERLANDS },
+						provider = { "n", 221328 },	-- Dreamwater Vicejaw
+						coord = { 65.0, 44.8, THE_HINTERLANDS },
 					}),
 				},
 			}),
 			hinterlandsquest(81788, {	-- Hinterlands Mission III: Defeat Dragonkin [150 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220019 },	-- Nightmare Incursions: Hinterlands Mission III
 					{ "i", 220073 },	-- Deputization Authorization: Hinterlands Mission III
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/10 Wrath Whelp slain
-						["provider"] = { "n", 221326 },	-- Wrath Whelp
-						["coord"] = { 47.6, 41.0, THE_HINTERLANDS },
+						provider = { "n", 221326 },	-- Wrath Whelp
+						coord = { 47.6, 41.0, THE_HINTERLANDS },
 					}),
 					objective(2, {	-- 0/3 Wyrmkin Starhunter slain
-						["provider"] = { "n", 221325 },	-- Wyrmkin Starhunter
-						["coord"] = { 47.0, 41.6, THE_HINTERLANDS },
+						provider = { "n", 221325 },	-- Wyrmkin Starhunter
+						coord = { 47.0, 41.6, THE_HINTERLANDS },
 					}),
 				},
 			}),
 			hinterlandsquest(81789, {	-- Hinterlands Mission IV: Dragon Intelligence [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220020 },	-- Nightmare Incursions: Hinterlands Mission IV
 					{ "i", 220074 },	-- Deputization Authorization: Hinterlands Mission IV
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Intelligence Report: Agol'watha
-						["provider"] = { "i", 219928 },	-- Intelligence Report: Agol'watha
-						["coord"] = { 46.8, 41.2, THE_HINTERLANDS },
-						["cr"] = 221353,	-- Dreamwarden Laninar
+						provider = { "i", 219928 },	-- Intelligence Report: Agol'watha
+						coord = { 46.8, 41.2, THE_HINTERLANDS },
+						cr = 221353,	-- Dreamwarden Laninar
 					}),
 				},
 			}),
 			hinterlandsquest(81817, {	-- Hinterlands Mission V: Turtle Intelligence [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220021 },	-- Nightmare Incursions: Hinterlands Mission V
 					{ "i", 220075 },	-- Deputization Authorization: Hinterlands Mission V
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Intelligence Report: Shaol'watha
-						["provider"] = { "i", 219937 },	-- Intelligence Report: Shaol'watha
-						["coord"] = { 73.2, 54.0, THE_HINTERLANDS },
-						["cr"] = 221352,	-- Dreamwarden Sanathel
+						provider = { "i", 219937 },	-- Intelligence Report: Shaol'watha
+						coord = { 73.2, 54.0, THE_HINTERLANDS },
+						cr = 221352,	-- Dreamwarden Sanathel
 					}),
 				},
 			}),
 			hinterlandsquest(81820, {	-- Hinterlands Mission VI: Moonkin Intelligence [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220022 },	-- Nightmare Incursions: Hinterlands Mission VI
 					{ "i", 220076 },	-- Deputization Authorization: Hinterlands Mission VI
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Intelligence Report: Skulk Rock
-						["provider"] = { "i", 219938 },	-- Intelligence Report: Skulk Rock
-						["coord"] = { 56.6, 43.2, THE_HINTERLANDS },
-						["cr"] = 221351,	-- Dreamwarden Valori
+						provider = { "i", 219938 },	-- Intelligence Report: Skulk Rock
+						coord = { 56.6, 43.2, THE_HINTERLANDS },
+						cr = 221351,	-- Dreamwarden Valori
 					}),
 				},
 			}),
 			hinterlandsquest(81826, {	-- Hinterlands Mission VII: Recover Star-Touched Dragonegg [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220023 },	-- Nightmare Incursions: Hinterlands Mission VII
 					{ "i", 220077 },	-- Deputization Authorization: Hinterlands Mission VII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Star-Touched Dragonegg
-						["providers"] = {
+						providers = {
 							{ "i", 219488 },	-- Star-Touched Dragonegg
 							{ "o", 441133 },	-- Star-Touched Dragonegg
 						},
-						["coord"] = { 45.5, 38.7, THE_HINTERLANDS },
+						coord = { 45.5, 38.7, THE_HINTERLANDS },
 					}),
 				},
 			}),
 			hinterlandsquest(81830, {	-- Hinterlands Mission VIII: Recover Elunar Relic [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220024 },	-- Nightmare Incursions: Hinterlands Mission VIII
 					{ "i", 220078 },	-- Deputization Authorization: Hinterlands Mission VIII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Elunar Relic
-						["providers"] = {
+						providers = {
 							{ "i", 219490 },	-- Elunar Relic
 							{ "o", 441140 },	-- Humming Box
 						},
-						["coord"] = { 57.8, 43.3, THE_HINTERLANDS },
+						coord = { 57.8, 43.3, THE_HINTERLANDS },
 					}),
 				},
 			}),
 			hinterlandsquest(81832, {	-- Hinterlands Mission IX: Recover Dreampearl [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220025 },	-- Nightmare Incursions: Hinterlands Mission IX
 					{ "i", 220079 },	-- Deputization Authorization: Hinterlands Mission IX
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Dreampearl
-						["providers"] = {
+						providers = {
 							{ "i", 219491 },	-- Dreampearl
 							{ "o", 441141 },	-- Dreampearl
 						},
-						["coord"] = { 72.7, 54.2, THE_HINTERLANDS },
+						coord = { 72.7, 54.2, THE_HINTERLANDS },
 					}),
 				},
 			}),
 			hinterlandsquest(81833, {	-- Hinterlands Mission X: Star Lotus [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220026 },	-- Nightmare Incursions: Hinterlands Mission X
 					{ "i", 220080 },	-- Deputization Authorization: Hinterlands Mission X
 				},
-				["requireSkill"] = HERBALISM,
-				["learnedAt"] = 250,
-				["groups"] = {
+				requireSkill = HERBALISM,
+				learnedAt = 250,
+				groups = {
 					objective(1, {	-- 0/10 Star Lotus
-						["providers"] = {
+						providers = {
 							{ "i", 219454 },	-- Star Lotus
 							{ "o", 439762 },	-- Star Lotus
 						},
-						["coords"] = {
+						coords = {
 							{ 46.1, 38.5, THE_HINTERLANDS },
 							{ 61.8, 25.3, THE_HINTERLANDS },
 							{ 70.5, 45.5, THE_HINTERLANDS },
@@ -2097,19 +2097,19 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 				},
 			}),
 			hinterlandsquest(81834, {	-- Hinterlands Mission XI: Starsilver Ore [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220027 },	-- Nightmare Incursions: Hinterlands Mission XI
 					{ "i", 220081 },	-- Deputization Authorization: Hinterlands Mission XI
 				},
-				["requireSkill"] = MINING,
-				["learnedAt"] = 250,
-				["groups"] = {
+				requireSkill = MINING,
+				learnedAt = 250,
+				groups = {
 					objective(1, {	-- 0/10 Starsilver Ore
-						["providers"] = {
+						providers = {
 							{ "i", 219486 },	-- Starsilver Ore
 							{ "o", 439778 },	-- Starsilver Vein
 						},
-						["coords"] = {
+						coords = {
 							{ 45.4, 39.5, THE_HINTERLANDS },
 							{ 56.9, 43.5, THE_HINTERLANDS },
 							{ 72.2, 52.3, THE_HINTERLANDS },
@@ -2118,223 +2118,223 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 				},
 			}),
 			hinterlandsquest(81835, {	-- Hinterlands Mission XII: Starshells [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220028 },	-- Nightmare Incursions: Hinterlands Mission XII
 					{ "i", 220082 },	-- Deputization Authorization: Hinterlands Mission XII
 				},
-				["requireSkill"] = SKINNING,
-				["learnedAt"] = 250,
-				["groups"] = {
+				requireSkill = SKINNING,
+				learnedAt = 250,
+				groups = {
 					objective(1, {	-- 0/10 Starshell
-						["provider"] = { "i", 219487 },	-- Starshell
-						["coord"] = { 63.4, 42.2, THE_HINTERLANDS },
-						["cr"] = 221328,	-- Dreamwater Vicejaw
+						provider = { "i", 219487 },	-- Starshell
+						coord = { 63.4, 42.2, THE_HINTERLANDS },
+						cr = 221328,	-- Dreamwater Vicejaw
 					}),
 				},
 			}),
 			hinterlandsquest(81837, {	-- Hinterlands Mission XIII: Defeat Florius [200 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220029 },	-- Nightmare Incursions: Hinterlands Mission XIII
 					{ "i", 220083 },	-- Deputization Authorization: Hinterlands Mission XIII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Florius slain
-						["provider"] = { "n", 221331 },	-- Florius
-						["coord"] = { 46.6, 40.6, THE_HINTERLANDS },
+						provider = { "n", 221331 },	-- Florius
+						coord = { 46.6, 40.6, THE_HINTERLANDS },
 					}),
 				},
 			}),
 			hinterlandsquest(81838, {	-- Hinterlands Mission XIV: Defeat Doomkin [150 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220030 },	-- Nightmare Incursions: Hinterlands Mission XIV
 					{ "i", 220084 },	-- Deputization Authorization: Hinterlands Mission XIV
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Doomkin slain
-						["provider"] = { "n", 221333 },	-- Doomkin
-						["coord"] = { 58.0, 42.2, THE_HINTERLANDS },
+						provider = { "n", 221333 },	-- Doomkin
+						coord = { 58.0, 42.2, THE_HINTERLANDS },
 					}),
 				},
 			}),
 			hinterlandsquest(81839, {	-- Hinterlands Mission XV: Defeat Ghamoo-Raja [150 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220031 },	-- Nightmare Incursions: Hinterlands Mission XV
 					{ "i", 220085 },	-- Deputization Authorization: Hinterlands Mission XV
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- 0/1 Ghamoo-Raja slain
-						["provider"] = { "n", 221334 },	-- Ghamoo-Raja
-						["coord"] = { 72.0, 53.2, THE_HINTERLANDS },
+						provider = { "n", 221334 },	-- Ghamoo-Raja
+						coord = { 72.0, 53.2, THE_HINTERLANDS },
 					}),
 				},
 			}),
 			hinterlandsquest(81850, {	-- Hinterlands Mission XVI: Rescue Elianar Shadowdrinker [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220032 },	-- Nightmare Incursions: Hinterlands Mission XVI
 					{ "i", 220086 },	-- Deputization Authorization: Hinterlands Mission XVI
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- Rescue Elianar Shadowdrinker
-						["provider"] = { "n", 221335 },	-- Elianar Shadowdrinker <Druid of the Claw>
-						["coord"] = { 53.59, 39.0, THE_HINTERLANDS },
+						provider = { "n", 221335 },	-- Elianar Shadowdrinker <Druid of the Claw>
+						coord = { 53.59, 39.0, THE_HINTERLANDS },
 					}),
 				},
 			}),
 			hinterlandsquest(81851, {	-- Hinterlands Mission XVII: Rescue Serlina Starbright [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220033 },	-- Nightmare Incursions: Hinterlands Mission XVII
 					{ "i", 220087 },	-- Deputization Authorization: Hinterlands Mission XVII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- Rescue Serlina Starbright
-						["provider"] = { "n", 221336 },	-- Serlina Starbright <Druid of the Claw>
-						["coord"] = { 70.94, 47.36, THE_HINTERLANDS },
+						provider = { "n", 221336 },	-- Serlina Starbright <Druid of the Claw>
+						coord = { 70.94, 47.36, THE_HINTERLANDS },
 					}),
 				},
 			}),
 			hinterlandsquest(81852, {	-- Hinterlands Mission XVIII: Rescue Veanna Cloudsleeper [100 Rep]
-				["providers"] = {
+				providers = {
 					{ "i", 220034 },	-- Nightmare Incursions: Hinterlands Mission XVIII
 					{ "i", 220088 },	-- Deputization Authorization: Hinterlands Mission XVIII
 				},
-				["groups"] = {
+				groups = {
 					objective(1, {	-- Rescue Veanna Cloudsleeper
-						["provider"] = { "n", 221337 },	-- Veanna Cloudsleeper <Druid of the Claw>
-						["coord"] = { 57.31, 42.84, THE_HINTERLANDS },
+						provider = { "n", 221337 },	-- Veanna Cloudsleeper <Druid of the Claw>
+						coord = { 57.31, 42.84, THE_HINTERLANDS },
 					}),
 				},
 			}),
 			applyclassicphase(SOD_PHASE_FOUR, q(84013, {	-- More Starshells
-				["qg"] = 221479,	-- Field Captain Korlian
-				["coord"] = { 61.4, 34.6, THE_HINTERLANDS },
-				["maxReputation"] = { 2641, EXALTED };	-- Emerald Wardens
-				["cost"] = { { "i", 219487, 10 } },	-- Starshell
-				["requireSkill"] = SKINNING,
-				["learnedAt"] = 250,
-				["lvl"] = 53,
+				qg = 221479,	-- Field Captain Korlian
+				coord = { 61.4, 34.6, THE_HINTERLANDS },
+				maxReputation = { 2641, EXALTED };	-- Emerald Wardens
+				cost = { { "i", 219487, 10 } },	-- Starshell
+				requireSkill = SKINNING,
+				learnedAt = 250,
+				lvl = 53,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, q(84012, {	-- More Starsilver Ore
-				["qg"] = 221479,	-- Field Captain Korlian
-				["coord"] = { 61.4, 34.6, THE_HINTERLANDS },
-				["maxReputation"] = { 2641, EXALTED };	-- Emerald Wardens
-				["cost"] = { { "i", 219486, 10 } },	-- Starsilver Ore
-				["requireSkill"] = MINING,
-				["learnedAt"] = 250,
-				["lvl"] = 53,
+				qg = 221479,	-- Field Captain Korlian
+				coord = { 61.4, 34.6, THE_HINTERLANDS },
+				maxReputation = { 2641, EXALTED };	-- Emerald Wardens
+				cost = { { "i", 219486, 10 } },	-- Starsilver Ore
+				requireSkill = MINING,
+				learnedAt = 250,
+				lvl = 53,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, q(84011, {	-- More Star Lotus
-				["qg"] = 221479,	-- Field Captain Korlian
-				["coord"] = { 61.4, 34.6, THE_HINTERLANDS },
-				["maxReputation"] = { 2641, EXALTED };	-- Emerald Wardens
-				["cost"] = { { "i", 219454, 10 } },	-- Star Lotus
-				["requireSkill"] = HERBALISM,
-				["learnedAt"] = 250,
-				["lvl"] = 53,
+				qg = 221479,	-- Field Captain Korlian
+				coord = { 61.4, 34.6, THE_HINTERLANDS },
+				maxReputation = { 2641, EXALTED };	-- Emerald Wardens
+				cost = { { "i", 219454, 10 } },	-- Star Lotus
+				requireSkill = HERBALISM,
+				learnedAt = 250,
+				lvl = 53,
 			})),
 			q(81727, {	-- Recover Incursion Field Report: Ashenvale
-				["qg"] = 221477,	-- Field Captain Hannalah
-				["coord"] = { 89.6, 40.6, ASHENVALE },
-				["maxReputation"] = { 2641, EXALTED },	-- Emerald Wardens
-				["repeatable"] = true,
-				["lvl"] = 37,
-				["groups"] = {
+				qg = 221477,	-- Field Captain Hannalah
+				coord = { 89.6, 40.6, ASHENVALE },
+				maxReputation = { 2641, EXALTED },	-- Emerald Wardens
+				repeatable = true,
+				lvl = 37,
+				groups = {
 					objective(1, {	-- 0/1 Gemeron's Field Report
-						["provider"] = { "i", 219770 },	-- Gemeron's Field Report
-						["coord"] = { 93.8, 35.2, ASHENVALE },
-						["cr"] = 221482,	-- Scout Gemeron
+						provider = { "i", 219770 },	-- Gemeron's Field Report
+						coord = { 93.8, 35.2, ASHENVALE },
+						cr = 221482,	-- Scout Gemeron
 					}),
 					objective(2, {	-- 0/12 Dreampyre Imp slain
-						["provider"] = { "n", 221283 },	-- Dreampyre Imp
-						["coord"] = { 93.4, 39.6, ASHENVALE },
+						provider = { "n", 221283 },	-- Dreampyre Imp
+						coord = { 93.4, 39.6, ASHENVALE },
 					}),
 					objective(3, {	-- 0/4 Emberspark Dreamsworn slain
-						["provider"] = { "n", 221282 },	-- Emberspark Dreamsworn
-						["coord"] = { 94.0, 39.8, ASHENVALE },
+						provider = { "n", 221282 },	-- Emberspark Dreamsworn
+						coord = { 94.0, 39.8, ASHENVALE },
 					}),
 					objective(4, {	-- 0/4 Dreamhunter Hound slain
-						["provider"] = { "n", 221292 },	-- Dreamhunter Hound
-						["coord"] = { 93.6, 39.6, ASHENVALE },
+						provider = { "n", 221292 },	-- Dreamhunter Hound
+						coord = { 93.6, 39.6, ASHENVALE },
 					}),
 					i(219773),	-- Mission Brief: Ashenvale
 				},
 			}),
 			q(81716, {	-- Recover Incursion Field Report: Duskwood
-				["qg"] = 221471,	-- Field Captain Palandar
-				["coord"] = { 45.6, 51.2, DUSKWOOD },
-				["maxReputation"] = { 2641, EXALTED },	-- Emerald Wardens
-				["repeatable"] = true,
-				["lvl"] = 23,
-				["groups"] = {
+				qg = 221471,	-- Field Captain Palandar
+				coord = { 45.6, 51.2, DUSKWOOD },
+				maxReputation = { 2641, EXALTED },	-- Emerald Wardens
+				repeatable = true,
+				lvl = 23,
+				groups = {
 					objective(1, {	-- 0/1 Charla's Field Report
-						["provider"] = { "i", 219759 },	-- Charla's Field Report
-						["coord"] = { 47.0, 36.0, DUSKWOOD },
-						["cr"] = 221472,	-- Scout Charla
+						provider = { "i", 219759 },	-- Charla's Field Report
+						coord = { 47.0, 36.0, DUSKWOOD },
+						cr = 221472,	-- Scout Charla
 					}),
 					objective(2, {	-- 0/12 Firestarter Imp slain
-						["provider"] = { "n", 221226 },	-- Firestarter Imp
-						["coord"] = { 47.6, 40.0, DUSKWOOD },
+						provider = { "n", 221226 },	-- Firestarter Imp
+						coord = { 47.6, 40.0, DUSKWOOD },
 					}),
 					objective(3, {	-- 0/4 Duskblaze Shadowstalker slain
-						["provider"] = { "n", 221223 },	-- Duskblaze Shadowstalker
-						["coord"] = { 46.6, 42.2, DUSKWOOD },
+						provider = { "n", 221223 },	-- Duskblaze Shadowstalker
+						coord = { 46.6, 42.2, DUSKWOOD },
 					}),
 					objective(4, {	-- 0/4 Nightmare Hound slain
-						["provider"] = { "n", 221227 },	-- Nightmare Hound
-						["coord"] = { 44.8, 40.8, DUSKWOOD },
+						provider = { "n", 221227 },	-- Nightmare Hound
+						coord = { 44.8, 40.8, DUSKWOOD },
 					}),
 					i(219526),	-- Mission Brief: Duskwood
 				},
 			}),
 			q(81729, {	-- Recover Incursion Field Report: Feralas
-				["qg"] = 221480,	-- Field Captain Arunnel
-				["coord"] = { 48.6, 12.4, FERALAS },
-				["maxReputation"] = { 2641, EXALTED },	-- Emerald Wardens
-				["repeatable"] = true,
-				["lvl"] = 47,
-				["groups"] = {
+				qg = 221480,	-- Field Captain Arunnel
+				coord = { 48.6, 12.4, FERALAS },
+				maxReputation = { 2641, EXALTED },	-- Emerald Wardens
+				repeatable = true,
+				lvl = 47,
+				groups = {
 					objective(1, {	-- 0/1 Thandros' Field Report
-						["provider"] = { "i", 219771 },	-- Thandros' Field Report
-						["coord"] = { 51.0, 10.6, FERALAS },
-						["cr"] = 221484,	-- Scout Thandros
+						provider = { "i", 219771 },	-- Thandros' Field Report
+						coord = { 51.0, 10.6, FERALAS },
+						cr = 221484,	-- Scout Thandros
 					}),
 					objective(2, {	-- 0/12 Dreamshadow Imp slain
-						["provider"] = { "n", 221407 },	-- Dreamshadow Imp
-						["coord"] = { 50.2, 12.6, FERALAS },
+						provider = { "n", 221407 },	-- Dreamshadow Imp
+						coord = { 50.2, 12.6, FERALAS },
 					}),
 					objective(3, {	-- 0/4 Moonwalker Betrayer slain
-						["provider"] = { "n", 221406 },	-- Moonwalker Betrayer
-						["coord"] = { 48.8, 11.4, FERALAS },
+						provider = { "n", 221406 },	-- Moonwalker Betrayer
+						coord = { 48.8, 11.4, FERALAS },
 					}),
 					objective(4, {	-- 0/4 Night Hunter slain
-						["provider"] = { "n", 221408 },	-- Night Hunter
-						["coord"] = { 51.6, 12.6, FERALAS },
+						provider = { "n", 221408 },	-- Night Hunter
+						coord = { 51.6, 12.6, FERALAS },
 					}),
 					i(219775),	-- Mission Brief: Feralas
 				},
 			}),
 			q(81728, {	-- Recover Incursion Field Report: Hinterlands
-				["qg"] = 221479,	-- Field Captain Korlian
-				["coord"] = { 61.4, 34.6, THE_HINTERLANDS },
-				["maxReputation"] = { 2641, EXALTED },	-- Emerald Wardens
-				["repeatable"] = true,
-				["lvl"] = 47,
-				["groups"] = {
+				qg = 221479,	-- Field Captain Korlian
+				coord = { 61.4, 34.6, THE_HINTERLANDS },
+				maxReputation = { 2641, EXALTED },	-- Emerald Wardens
+				repeatable = true,
+				lvl = 47,
+				groups = {
 					objective(1, {	-- 0/1 Fallia's Field Report
-						["provider"] = { "i", 219772 },	-- Fallia's Field Report
-						["coord"] = { 61.8, 24.0, THE_HINTERLANDS },
-						["cr"] = 221483,	-- Scout Fallia
+						provider = { "i", 219772 },	-- Fallia's Field Report
+						coord = { 61.8, 24.0, THE_HINTERLANDS },
+						cr = 221483,	-- Scout Fallia
 					}),
 					objective(2, {	-- 0/12 Stardust Imp slain
-						["provider"] = { "n", 221357 },	-- Stardust Imp
-						["coord"] = { 62.6, 30.8, THE_HINTERLANDS },
+						provider = { "n", 221357 },	-- Stardust Imp
+						coord = { 62.6, 30.8, THE_HINTERLANDS },
 					}),
 					objective(3, {	-- 0/4 Doomspark Starsworn slain
-						["provider"] = { "n", 221356 },	-- Doomspark Starsworn
-						["coord"] = { 63.6, 27.6, THE_HINTERLANDS },
+						provider = { "n", 221356 },	-- Doomspark Starsworn
+						coord = { 63.6, 27.6, THE_HINTERLANDS },
 					}),
 					objective(4, {	-- 0/4 Starkiller Hound slain
-						["provider"] = { "n", 221360 },	-- Starkiller Hound
-						["coord"] = { 62.8, 25.8, THE_HINTERLANDS },
+						provider = { "n", 221360 },	-- Starkiller Hound
+						coord = { 62.8, 25.8, THE_HINTERLANDS },
 					}),
 					i(219774),	-- Mission Brief: Hinterlands
 				},
@@ -2495,340 +2495,340 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 			}),
 		}),
 		n(COMMON_VENDOR_ITEMS, {
-			["crs"] = {
+			crs = {
 				222685,	-- Quartermaster Kyleen
 				222684,	-- Quartermaster Falinar
 				222687,	-- Quartermaster Valdane
 				222686,	-- Quartermaster Alandra
 			},
-			["coords"] = {
+			coords = {
 				{ 89.6, 40.6, ASHENVALE },	-- Quartermaster Kyleen
 				{ 45.6, 51.2, DUSKWOOD },	-- Quartermaster Falinar
 				{ 48.6, 12.6, FERALAS },	-- Quartermaster Valdane
 				{ 61.4, 34.6, THE_HINTERLANDS },	-- Quartermaster Alandra
 			},
-			["groups"] = bubbleDownClassicRep(2641, {	-- Emerald Wardens
+			groups = bubbleDownClassicRep(2641, {	-- Emerald Wardens
 				{	-- Neutral
 					i(223914, {	-- Greater Healing Potion
-						["cost"] = 562,	-- 5s 62c
+						cost = 562,	-- 5s 62c
 					}),
 					i(223913, {	-- Major Healing Potion
-						["cost"] = 2812,	-- 28s 12c
+						cost = 2812,	-- 28s 12c
 					}),
 					i(223912, {	-- Purification Potion
-						["cost"] = 2250,	-- 22s 50c
+						cost = 2250,	-- 22s 50c
 					}),
 				},
 				{	-- Friendly
 					i(223648, {	-- Dream Imbued Arrow
-						["cost"] = { { "i", 10513, 200 } },	-- Mithril Gyro-Shot
+						cost = { { "i", 10513, 200 } },	-- Mithril Gyro-Shot
 					}),
 					i(221362, {	-- Weapon Cleaning Cloth
-						["cost"] = 2250,	-- 22s 50c
+						cost = 2250,	-- 22s 50c
 					}),
 					i(212568, {	-- Wolfshead Trophy
-						["cost"] = { { "i", 8345, 1 } },	-- Wolfshead Helm
+						cost = { { "i", 8345, 1 } },	-- Wolfshead Helm
 					}),
 					i(221481, {	-- Nihilist Epiphany
-						["classes"] = { PRIEST },
-						["cost"] = 18000,	-- 1g 80s
-						["groups"] = {
+						classes = { PRIEST },
+						cost = 18000,	-- 1g 80s
+						groups = {
 							recipe(431705),	-- Engrave Bracers - Void Zone
 						},
 					}),
 					i(221482, {	-- Rune of Affliction
-						["classes"] = { WARLOCK },
-						["cost"] = 18000,	-- 1g 80s
-						["groups"] = {
+						classes = { WARLOCK },
+						cost = 18000,	-- 1g 80s
+						groups = {
 							recipe(431747),	-- Engrave Bracers - Unstable Affliction
 						},
 					}),
 					i(221512, {	-- Rune of Alacrity
-						["classes"] = { ROGUE },
-						["cost"] = 18000,	-- 1g 80s
-						["groups"] = {
+						classes = { ROGUE },
+						cost = 18000,	-- 1g 80s
+						groups = {
 							recipe(432297),	-- Engrave Bracers - Cut to the Chase
 						},
 					}),
 					i(221517, {	-- Rune of Bloodshed
-						["classes"] = { DRUID },
-						["cost"] = 18000,	-- 1g 80s
-						["groups"] = {
+						classes = { DRUID },
+						cost = 18000,	-- 1g 80s
+						groups = {
 							recipe(431447),	-- Engrave Helm - Gore
 						},
 					}),
 					i(221483, {	-- Rune of Burn
-						["classes"] = { SHAMAN },
-						["cost"] = 18000,	-- 1g 80s
-						["groups"] = {
+						classes = { SHAMAN },
+						cost = 18000,	-- 1g 80s
+						groups = {
 							recipe(416066),	-- Engrave Helm - Burn
 						},
 					}),
 					i(221515, {	-- Rune of Detonation
-						["classes"] = { HUNTER },
-						["cost"] = 18000,	-- 1g 80s
-						["groups"] = {
+						classes = { HUNTER },
+						cost = 18000,	-- 1g 80s
+						groups = {
 							recipe(431611),	-- Engrave Bracers - T.N.T.
 						},
 					}),
 					i(223288, {	-- Rune of the Hammer
-						["classes"] = { PALADIN },
-						["cost"] = 18000,	-- 1g 80s
-						["groups"] = {
+						classes = { PALADIN },
+						cost = 18000,	-- 1g 80s
+						groups = {
 							recipe(429261),	-- Engrave Bracers - Improved Hammer of Wrath
 						},
 					}),
 					i(221511, {	-- Rune of the Protector
-						["classes"] = { WARRIOR },
-						["cost"] = 18000,	-- 1g 80s
-						["groups"] = {
+						classes = { WARRIOR },
+						cost = 18000,	-- 1g 80s
+						groups = {
 							recipe(427080),	-- Engrave Helm - Shield Mastery
 						},
 					}),
 					i(221480, {	-- Spell Notes: Molten Armor
-						["classes"] = { MAGE },
-						["cost"] = 18000,	-- 1g 80s
-						["groups"] = {
+						classes = { MAGE },
+						cost = 18000,	-- 1g 80s
+						groups = {
 							recipe(429308),	-- Engrave Bracers - Molten Armor
 						},
 					}),
 
 					i(221400, {	-- Emerald Chain Shoulders
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221403, {	-- Emerald Chain Gauntlets
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221405, {	-- Emerald Chain Boots
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 
 					i(221381, {	-- Emerald Dream Pauldrons
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221378, {	-- Emerald Dream Gauntlets
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221379, {	-- Emerald Dream Sabatons
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 
 					i(221416, {	-- Emerald Dreamkeeper Shoulders
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221412, {	-- Emerald Dreamkeeper Gloves
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221415, {	-- Emerald Dreamkeeper Boots
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 
 					i(221431, {	-- Emerald Enchanted Shoulders
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221427, {	-- Emerald Enchanted Gloves
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221426, {	-- Emerald Enchanted Boots
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 
 					i(221386, {	-- Emerald Encrusted Spaulders
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221383, {	-- Emerald Encrusted Handguards
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221387, {	-- Emerald Encrusted Plate Boots
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 
 					i(221399, {	-- Emerald Laden Shoulders
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221396, {	-- Emerald Laden Gauntlets
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221394, {	-- Emerald Laden Boots
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 
 					i(221411, {	-- Emerald Leather Shoulders
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221407, {	-- Emerald Leather Gloves
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221409, {	-- Emerald Leather Sabatons
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 
 					i(221392, {	-- Emerald Scalemail Shoulders
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221389, {	-- Emerald Scalemail Gauntlets
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221393, {	-- Emerald Scalemail Boots
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 
 					i(221424, {	-- Emerald Watcher Shoulders
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221421, {	-- Emerald Watcher Gloves
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221420, {	-- Emerald Watcher Boots
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 
 					i(221432, {	-- Emerald Woven Mantle
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221436, {	-- Emerald Woven Gloves
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 					i(221438, {	-- Emerald Woven Boots
-						["cost"] = 33750,	-- 3g 37s 50c
+						cost = 33750,	-- 3g 37s 50c
 					}),
 
 					i(224004, {	-- Emerald Ring
-						["cost"] = 4761,	-- 47s 61c
+						cost = 4761,	-- 47s 61c
 					}),
 					i(224005, {	-- Emerald Ring
-						["cost"] = 4761,	-- 47s 61c
+						cost = 4761,	-- 47s 61c
 					}),
 					i(221374, {	-- Anguish of the Dream
-						["cost"] = 9332,	-- 93s 32c
+						cost = 9332,	-- 93s 32c
 					}),
 					i(221369, {	-- Nightmare Siphon
-						["cost"] = 5521,	-- 55s 21c
+						cost = 5521,	-- 55s 21c
 					}),
 				},
 				{	-- Honored
 					i(213407, {	-- Catnip
-						["cost"] = 5625,	-- 56s 25c
+						cost = 5625,	-- 56s 25c
 					}),
 
 					i(221402, {	-- Emerald Chain Helmet
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221404, {	-- Emerald Chain Breastplate
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221401, {	-- Emerald Chain Leggings
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 
 					i(221376, {	-- Emerald Dream Helm
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221380, {	-- Emerald Dream Breastplate
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221377, {	-- Emerald Dream Legplates
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 
 					i(221413, {	-- Emerald Dreamkeeper Helm
-						["cost"] = 67500,	-- 6g 75s
-						["classes"] = { DRUID },
+						cost = 67500,	-- 6g 75s
+						classes = { DRUID },
 					}),
 					i(221417, {	-- Emerald Dreamkeeper Chest
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221414, {	-- Emerald Dreamkeeper Pants
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 
 					i(221425, {	-- Emerald Enchanted Circlet
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221430, {	-- Emerald Enchanted Robes
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221429, {	-- Emerald Enchanted Pants
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 
 					i(221384, {	-- Emerald Encrusted Helmet
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221382, {	-- Emerald Encrusted Battleplate
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221385, {	-- Emerald Encrusted Legplates
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 
 					i(221397, {	-- Emerald Laden Helmet
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221395, {	-- Emerald Laden Breastplate
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221398, {	-- Emerald Laden Leggings
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 
 					i(221408, {	-- Emerald Leather Helm
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221406, {	-- Emerald Leather Vest
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221410, {	-- Emerald Leather Pants
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 
 					i(221391, {	-- Emerald Scalemail Helmet
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221390, {	-- Emerald Scalemail Breastplate
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221388, {	-- Emerald Scalemail Leggings
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 
 					i(221422, {	-- Emerald Watcher Helm
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221419, {	-- Emerald Watcher Vest
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221423, {	-- Emerald Watcher Leggings
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 
 					i(221437, {	-- Emerald Woven Circlet
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221434, {	-- Emerald Woven Robes
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 					i(221435, {	-- Emerald Woven Pants
-						["cost"] = 67500,	-- 6g 75s
+						cost = 67500,	-- 6g 75s
 					}),
 
 					i(221193, {	-- Emerald Ring
-						["cost"] = 63512,	-- 6g 35s 12c
+						cost = 63512,	-- 6g 35s 12c
 					}),
 					i(224006, {	-- Emerald Ring
-						["cost"] = 63512,	-- 6g 35s 12c
+						cost = 63512,	-- 6g 35s 12c
 					}),
 				},
 				{	-- Revered
 					i(221441, {	-- Warden of the Dream
-						["cost"] = 88752,	-- 8g 87s 52c
+						cost = 88752,	-- 8g 87s 52c
 					}),
 					emeraldchip(50, i(221439)),	-- Armor of the Emerald Slumber
 					emeraldchip(50, i(220649)),	-- Merithra's Inheritence
 				},
 				{	-- Exalted
 					emeraldchip(75, i(220621, {	-- Nightmare Resonance Crystal
-						["description"] = "Allows you to see and pick resonating herbs in any of the incursions. Herbalism not required.",
+						description = "Allows you to see and pick resonating herbs in any of the incursions. Herbalism not required.",
 					})),
 					emeraldchip(75, i(221440)),	-- Roar of the Dream
 					emeraldchip(75, i(221443)),	-- Roar of the Grove
@@ -2902,7 +2902,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 			applyclassicphase(SOD_PHASE_FOUR, recipe(439767)),	-- Engrave Cloak - Tree of Life
 			applyclassicphase(SOD_PHASE_FOUR, recipe(439770)),	-- Engrave Cloak - Starfall
 			applyclassicphase(SOD_PHASE_FOUR, recipe(453703, {	-- Engrave Ring - Feral Combat Specialization
-				["timeline"] = { ADDED_1_15_3 },
+				timeline = { ADDED_1_15_3 },
 			})),
 		}),
 		classHeader(HUNTER, {
@@ -3201,60 +3201,60 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 
 		-- Non-Class Specific Runes
 		applyclassicphase(SOD_PHASE_FOUR, recipe(453695, {	-- Engrave Ring - Arcane Specialization
-			["timeline"] = { ADDED_1_15_3 },
-			["classes"] = { HUNTER, MAGE, DRUID },
+			timeline = { ADDED_1_15_3 },
+			classes = { HUNTER, MAGE, DRUID },
 		})),
 		applyclassicphase(SOD_PHASE_FOUR, recipe(453688, {	-- Engrave Ring - Axe Specialization
-			["timeline"] = { ADDED_1_15_3 },
-			["classes"] = { WARRIOR, PALADIN, HUNTER, SHAMAN },
+			timeline = { ADDED_1_15_3 },
+			classes = { WARRIOR, PALADIN, HUNTER, SHAMAN },
 		})),
 		applyclassicphase(SOD_PHASE_FOUR, recipe(453690, {	-- Engrave Ring - Dagger Specialization
-			["timeline"] = { ADDED_1_15_3 },
-			["classes"] = { WARRIOR, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
+			timeline = { ADDED_1_15_3 },
+			classes = { WARRIOR, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
 		})),
 		applyclassicphase(SOD_PHASE_FOUR, recipe(459313, {	-- Engrave Ring - Defense Specialization
-			["timeline"] = { ADDED_1_15_3 },
-			["classes"] = { WARRIOR, PALADIN, ROGUE, SHAMAN, WARLOCK, DRUID },
+			timeline = { ADDED_1_15_3 },
+			classes = { WARRIOR, PALADIN, ROGUE, SHAMAN, WARLOCK, DRUID },
 		})),
 		applyclassicphase(SOD_PHASE_FOUR, recipe(453696, {	-- Engrave Ring - Fire Specialization
-			["timeline"] = { ADDED_1_15_3 },
-			["classes"] = { HUNTER, SHAMAN, MAGE, WARLOCK },
+			timeline = { ADDED_1_15_3 },
+			classes = { HUNTER, SHAMAN, MAGE, WARLOCK },
 		})),
 		applyclassicphase(SOD_PHASE_FOUR, recipe(453691, {	-- Engrave Ring - Fist Weapon Specialization
-			["timeline"] = { ADDED_1_15_3 },
-			["classes"] = { WARRIOR, HUNTER, SHAMAN, ROGUE, DRUID },
+			timeline = { ADDED_1_15_3 },
+			classes = { WARRIOR, HUNTER, SHAMAN, ROGUE, DRUID },
 		})),
 		applyclassicphase(SOD_PHASE_FOUR, recipe(453697, {	-- Engrave Ring - Frost Specialization
-			["timeline"] = { ADDED_1_15_3 },
-			["classes"] = { HUNTER, SHAMAN, MAGE },
+			timeline = { ADDED_1_15_3 },
+			classes = { HUNTER, SHAMAN, MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_FOUR, recipe(453702, {	-- Engrave Ring - Holy Specialization
-			["timeline"] = { ADDED_1_15_3 },
-			["classes"] = { PALADIN, PRIEST },
+			timeline = { ADDED_1_15_3 },
+			classes = { PALADIN, PRIEST },
 		})),
 		applyclassicphase(SOD_PHASE_FOUR, recipe(453689, {	-- Engrave Ring - Mace Specialization
-			["timeline"] = { ADDED_1_15_3 },
-			["classes"] = { WARRIOR, PALADIN, PRIEST, SHAMAN, ROGUE, DRUID },
+			timeline = { ADDED_1_15_3 },
+			classes = { WARRIOR, PALADIN, PRIEST, SHAMAN, ROGUE, DRUID },
 		})),
 		applyclassicphase(SOD_PHASE_FOUR, recipe(453698, {	-- Engrave Ring - Nature Specialization
-			["timeline"] = { ADDED_1_15_3 },
-			["classes"] = { HUNTER, ROGUE, SHAMAN, DRUID },
+			timeline = { ADDED_1_15_3 },
+			classes = { HUNTER, ROGUE, SHAMAN, DRUID },
 		})),
 		applyclassicphase(SOD_PHASE_FOUR, recipe(453694, {	-- Engrave Ring - Pole Weapon Specialization
-			["timeline"] = { ADDED_1_15_3 },
-			["classes"] = { WARRIOR, PALADIN, HUNTER, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
+			timeline = { ADDED_1_15_3 },
+			classes = { WARRIOR, PALADIN, HUNTER, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
 		})),
 		applyclassicphase(SOD_PHASE_FOUR, recipe(453692, {	-- Engrave Ring - Ranged Weapon Specialization
-			["timeline"] = { ADDED_1_15_3 },
-			["classes"] = { WARRIOR, HUNTER, ROGUE },
+			timeline = { ADDED_1_15_3 },
+			classes = { WARRIOR, HUNTER, ROGUE },
 		})),
 		applyclassicphase(SOD_PHASE_FOUR, recipe(453700, {	-- Engrave Ring - Shadow Specialization
-			["timeline"] = { ADDED_1_15_3 },
-			["classes"] = { PRIEST, WARLOCK },
+			timeline = { ADDED_1_15_3 },
+			classes = { PRIEST, WARLOCK },
 		})),
 		applyclassicphase(SOD_PHASE_FOUR, recipe(453635, {	-- Engrave Ring - Sword Specialization
-			["timeline"] = { ADDED_1_15_3 },
-			["classes"] = { WARRIOR, PALADIN, HUNTER, MAGE, WARLOCK, ROGUE },
+			timeline = { ADDED_1_15_3 },
+			classes = { WARRIOR, PALADIN, HUNTER, MAGE, WARLOCK, ROGUE },
 		})),
 	}),
 	n(createHeader({	-- Soul Brokers
@@ -3274,44 +3274,44 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 			tw = "靈魂仲介者",
 		},
 	}), {
-		["aqd"] = {
-			["crs"] = {
+		aqd = {
+			crs = {
 				209002,	-- Gaklik Voidtwist <Soul Broker>
 				204256,	-- Damien Kane <Soul Broker>
 			},
-			["coords"] = {
+			coords = {
 				{ 47.2, 53.6, DUN_MOROGH },
 				{ 44.0, 66.2, ELWYNN_FOREST },
 			},
 		},
-		["hqd"] = {
-			["crs"] = {
+		hqd = {
+			crs = {
 				208226,	-- Darmak Bloodhowl <Soul Broker>
 				208682,	-- Denton Bleakway <Soul Broker>
 			},
-			["coords"] = {
+			coords = {
 				{ 54.6, 41.6, DUROTAR },
 				{ 84.0, 26.0, UNDERCITY },
 			},
-			["maps"] = { TIRISFAL_GLADES },
+			maps = { TIRISFAL_GLADES },
 		},
-		["classes"] = { WARLOCK },
-		["groups"] = {
+		classes = { WARLOCK },
+		groups = {
 			i(205022, {	-- Rune of Soul Siphon
-				["cost"] = {
+				cost = {
 					{ "i", 205020, 1 },	-- Pure Soul Shard
 					{ "i", 205019, 1 },	-- Tainted Soul Shard
 				},
-				["classes"] = { WARLOCK },
-				["groups"] = {
+				classes = { WARLOCK },
+				groups = {
 					recipe(403920),	-- Engrave Chest - Soul Siphon
 				},
 			}),
 			applyclassicphase(SOD_PHASE_THREE, i(221978, {	-- Explorer's Soul
-				["description"] = "Casting Drain Soul on any mob will reward you with this.",
-				["spellID"] = 445459,	-- Explorer Imp
-				["f"] = RECIPES,
-				["groups"] = {
+				description = "Casting Drain Soul on any mob will reward you with this.",
+				spellID = 445459,	-- Explorer Imp
+				f = RECIPES,
+				groups = {
 					i(220446, {	-- Otherworldly Treasure (15)
 						i(221499),	-- Rune of the Felguard
 						i(223215),	-- Orah Raka
@@ -3320,10 +3320,10 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 						i(223222),	-- Fel Mail Wristbands
 					}),
 					i(223148, {	-- Otherworldly Treasure (25)
-						["sym"] = {{"select","itemID",
+						sym = {{"select","itemID",
 							221499,	-- Rune of the Felguard
 						}},
-						["groups"] = {
+						groups = {
 							i(223163),	-- Formula: Scroll of Spatial Mending
 							i(223216),	-- Rakkan Archim
 							i(223237),	-- Fel Cloth Shoulder Pads
@@ -3332,11 +3332,11 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 						},
 					}),
 					i(223149, {	-- Otherworldly Treasure (35)
-						["sym"] = {{"select","itemID",
+						sym = {{"select","itemID",
 							223163,	-- Formula: Scroll of Spatial Mending
 							221499,	-- Rune of the Felguard
 						}},
-						["groups"] = {
+						groups = {
 							i(223217),	-- Rakkas Lek
 							i(223240),	-- Fel Cloth Hood
 							i(223241),	-- Fel Leather Hat
@@ -3344,11 +3344,11 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 						},
 					}),
 					i(223150, {	-- Otherworldly Treasure (45)
-						["sym"] = {{"select","itemID",
+						sym = {{"select","itemID",
 							223163,	-- Formula: Scroll of Spatial Mending
 							221499,	-- Rune of the Felguard
 						}},
-						["groups"] = {
+						groups = {
 							i(223168),	-- Worldcore Fragment
 							i(221547),	-- Coded Warlock Notes
 							i(223198),	-- Modas Karkun
@@ -3365,11 +3365,11 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 						},
 					}),
 					i(223151, {	-- Otherworldly Treasure (55)
-						["sym"] = {{"select","itemID",
+						sym = {{"select","itemID",
 							223163,	-- Formula: Scroll of Spatial Mending
 							221499,	-- Rune of the Felguard
 						}},
-						["groups"] = {
+						groups = {
 							-- No WOWHEAD Data, but probably the same as Lv45 Container
 							i(223168),	-- Worldcore Fragment
 							i(221547),	-- Coded Warlock Notes
@@ -3389,26 +3389,26 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 				},
 			})),
 			i(205020, {	-- Pure Soul Shard
-				["description"] = "Casting Drain Soul on any critter will reward you with this.",
+				description = "Casting Drain Soul on any critter will reward you with this.",
 			}),
 			i(205019, {	-- Tainted Soul Shard
-				["description"] = "Casting Drain Soul on any of the named mobs listed below will reward you with this. (does not need to be your tag!)",
-				["aqd"] = {
-					["coords"] = {
+				description = "Casting Drain Soul on any of the named mobs listed below will reward you with this. (does not need to be your tag!)",
+				aqd = {
+					coords = {
 						{ 27.0, 92.8, ELWYNN_FOREST },
 						{ 27.8, 57.4, DUN_MOROGH },
 					},
-					["crs"] = {
+					crs = {
 						448,	-- Hogger
 						6113,	-- Vejrek
 					},
 				},
-				["hqd"] = {
-					["coords"] = {
+				hqd = {
+					coords = {
 						{ 42.6, 26.4, DUROTAR },
 						{ 58.6, 31.6, TIRISFAL_GLADES },
 					},
-					["crs"] = {
+					crs = {
 						3203,	-- Fizzle Darkstorm
 						1753,	-- Maggot Eye
 					},
@@ -3432,11 +3432,11 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 			cn = "从50级开始，圣骑士可以在西瘟疫之地完成一条任务链，获得一件可以召唤专属侍从的遗物。该侍从可以通过参与战斗以及被圣骑士的法术治疗来升级。（进入战斗后，在他攻击怪物时不停刷1级圣光术即可。）",
 		},
 	}), {
-		["sourceQuest"] = 83936,	-- Dalton's Quest
-		["timeline"] = { ADDED_1_15_3 },
-		["classes"] = { PALADIN },
-		["lvl"] = 50,
-		["groups"] = {
+		sourceQuest = 83936,	-- Dalton's Quest
+		timeline = { ADDED_1_15_3 },
+		classes = { PALADIN },
+		lvl = 50,
+		groups = {
 			n(createHeader({	-- Inspiration Rank One
 				readable = "SOD - PALADIN - Squire Training - Inspiration Rank One",
 				icon = 131013,
@@ -3453,20 +3453,20 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 					cn = "获得侍从后，使用遗物将其召唤出来，然后通过进入战斗并保证他存活来为他升级。",
 				},
 			}), {
-				["providers"] = {
+				providers = {
 					{ "i", 226122 },	-- Dalton's Horn (Rank 1)
 					{ "n", 227673 },	-- <Player>'s Squire (Rank 1)
 				},
-				["questID"] = 84416,	-- Inspiration Rank One HQT
-				["sourceQuest"] = 83936,	-- Dalton's Quest
+				questID = 84416,	-- Inspiration Rank One HQT
+				sourceQuest = 83936,	-- Dalton's Quest
 			}),
 			q(83936, {	-- A Lesson in Violence
-				["qg"] = 227673,	-- <Player>'s Squire (Rank 1)
-				["sourceQuest"] = 84416,	-- Inspiration Rank One HQT
-				["timeline"] = { ADDED_1_15_3 },
-				["classes"] = { PALADIN },
-				["lvl"] = 50,
-				["groups"] = {
+				qg = 227673,	-- <Player>'s Squire (Rank 1)
+				sourceQuest = 84416,	-- Inspiration Rank One HQT
+				timeline = { ADDED_1_15_3 },
+				classes = { PALADIN },
+				lvl = 50,
+				groups = {
 					i(226523),	-- Dalton's Horn (Rank 2)
 				},
 			}),
@@ -3480,49 +3480,49 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 					cn = "启迪等级二",
 				},
 			}), {
-				["providers"] = {
+				providers = {
 					{ "i", 226523 },	-- Dalton's Horn (Rank 2)
 					{ "n", 227464 },	-- <Player>'s Squire (Rank 2)
 				},
-				["questID"] = 84417,	-- Inspiration Rank Two HQT
-				["sourceQuest"] = 83936,	-- A Lesson in Violence
+				questID = 84417,	-- Inspiration Rank Two HQT
+				sourceQuest = 83936,	-- A Lesson in Violence
 			}),
 			q(84008, {	-- A Lesson in Grace
-				["qg"] = 227464,	-- <Player>'s Squire (Rank 2)
-				["sourceQuest"] = 84417,	-- Inspiration Rank Two HQT
-				["timeline"] = { ADDED_1_15_3 },
-				["classes"] = { PALADIN },
-				["lvl"] = 50,
-				["groups"] = {
+				qg = 227464,	-- <Player>'s Squire (Rank 2)
+				sourceQuest = 84417,	-- Inspiration Rank Two HQT
+				timeline = { ADDED_1_15_3 },
+				classes = { PALADIN },
+				lvl = 50,
+				groups = {
 					i(226545),	-- Dalton's Horn (Rank 3)
 				},
 			}),
 			q(84017, {	-- A Time to Kill
-				["qg"] = 227674,	-- <Player>'s Squire (Rank 3)
-				["sourceQuest"] = 84008,	-- A Lesson in Grace
-				["timeline"] = { ADDED_1_15_3 },
-				["maps"] = { EASTERN_PLAGUELANDS },
-				["classes"] = { PALADIN },
-				["lvl"] = 50,
-				["groups"] = {
+				qg = 227674,	-- <Player>'s Squire (Rank 3)
+				sourceQuest = 84008,	-- A Lesson in Grace
+				timeline = { ADDED_1_15_3 },
+				maps = { EASTERN_PLAGUELANDS },
+				classes = { PALADIN },
+				lvl = 50,
+				groups = {
 					objective(1, {	-- 0/1 Arkonos Found
-						["provider"] = { "n", 227985 },	-- Arkonos the Cursed
-						["coord"] = { 86.8, 39.4, EASTERN_PLAGUELANDS },
+						provider = { "n", 227985 },	-- Arkonos the Cursed
+						coord = { 86.8, 39.4, EASTERN_PLAGUELANDS },
 					}),
 				},
 			}),
 			q(84125, {	-- Close Enough To Touch
-				["qg"] = 227674,	-- <Player>'s Squire (Rank 3)
-				["sourceQuest"] = 84017,	-- A Time to Kill
-				["coord"] = { 86.8, 39.4, EASTERN_PLAGUELANDS },
-				["timeline"] = { ADDED_1_15_3 },
-				["classes"] = { PALADIN },
-				["lvl"] = 50,
-				["groups"] = {
+				qg = 227674,	-- <Player>'s Squire (Rank 3)
+				sourceQuest = 84017,	-- A Time to Kill
+				coord = { 86.8, 39.4, EASTERN_PLAGUELANDS },
+				timeline = { ADDED_1_15_3 },
+				classes = { PALADIN },
+				lvl = 50,
+				groups = {
 					objective(1, {	-- 0/1 Scourge Shadow Scalpel
-						["provider"] = { "i", 227041 },	-- Scourge Shadow Scalpel
-						["coord"] = { 83.6, 42.0, EASTERN_PLAGUELANDS },
-						["crs"] = {
+						provider = { "i", 227041 },	-- Scourge Shadow Scalpel
+						coord = { 83.6, 42.0, EASTERN_PLAGUELANDS },
+						crs = {
 							8550,	-- Shadowmage <Cult of the Damned>
 							8528,	-- Dread Weaver
 						},
@@ -3530,24 +3530,24 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 				},
 			}),
 			q(84126, {	-- Finish the Fight
-				["qg"] = 227674,	-- <Player>'s Squire (Rank 3)
-				["sourceQuest"] = 84125,	-- Close Enough To Touch
-				["coord"] = { 86.8, 39.4, EASTERN_PLAGUELANDS },
-				["timeline"] = { ADDED_1_15_3 },
-				["classes"] = { PALADIN },
-				["lvl"] = 50,
-				["groups"] = {
+				qg = 227674,	-- <Player>'s Squire (Rank 3)
+				sourceQuest = 84125,	-- Close Enough To Touch
+				coord = { 86.8, 39.4, EASTERN_PLAGUELANDS },
+				timeline = { ADDED_1_15_3 },
+				classes = { PALADIN },
+				lvl = 50,
+				groups = {
 					objective(1, {	-- 0/1 Arkonos the Cursed slain
-						["providers"] = {
+						providers = {
 							{ "n", 227985 },	-- Arkonos the Cursed
 							{ "i", 227685 },	-- Modified Shadow Scalpel
 						},
-						["coord"] = { 86.8, 39.4, EASTERN_PLAGUELANDS },
+						coord = { 86.8, 39.4, EASTERN_PLAGUELANDS },
 					}),
 					recipe(440790),	-- Engrave Cloak - Shock and Awe
 					i(226399, {	-- Testament of Avenging Wrath
-						["spellID"] = 407788,	-- Avenging Wrath
-						["f"] = RECIPES,
+						spellID = 407788,	-- Avenging Wrath
+						f = RECIPES,
 					}),
 				},
 			}),
@@ -3563,659 +3563,659 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 			cn = "套装肩部附魔",
 		},
 	}), {
-		["groups"] = {
+		groups = {
 			n(QUESTS, {
 				applyclassicphase(SOD_PHASE_SEVEN, q(88745, {	-- Shadows of Doom
-					["qg"] = 16361,	-- Commander Thomas Helleran <The Argent Dawn>
-					["coord"] = { 80.8, 60.2, EASTERN_PLAGUELANDS },
-					["lvl"] = 50,
-					["groups"] = {
+					qg = 16361,	-- Commander Thomas Helleran <The Argent Dawn>
+					coord = { 80.8, 60.2, EASTERN_PLAGUELANDS },
+					lvl = 50,
+					groups = {
 						objective(1, {	-- 0/1 Shadow of Doom
-							["provider"] = { "n", 16143 },	-- Shadow of Doom
+							provider = { "n", 16143 },	-- Shadow of Doom
 						}),
 					},
 				})),
 				applyclassicphase(SOD_PHASE_SEVEN, q(87361, {	-- Laid to Rest
-					["provider"] = { "i", 236750},	-- Heart of Doom
-					["sourceQuest"] = 88745,	-- Shadows of Doom
-					["lvl"] = 60,
-					["groups"] = {
+					provider = { "i", 236750},	-- Heart of Doom
+					sourceQuest = 88745,	-- Shadows of Doom
+					lvl = 60,
+					groups = {
 						objective(1, {
-							["provider"] = { "n", 238376 },	-- Brother Luctus <Soul Seer>
-							["coord"] = { 80.6, 65.4 , EASTERN_PLAGUELANDS },
+							provider = { "n", 238376 },	-- Brother Luctus <Soul Seer>
+							coord = { 80.6, 65.4 , EASTERN_PLAGUELANDS },
 						}),
 					},
 				})),
 			}),
 			n(238376, {		-- Brother Luctus <Soul Seer>
-				["coord"] = { 80.6, 65.4 , EASTERN_PLAGUELANDS },
-				["groups"] = {
+				coord = { 80.6, 65.4 , EASTERN_PLAGUELANDS },
+				groups = {
 					i(236589, {		-- Soul of the Gentle Paw
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					}),
 					i(236590, {		-- Soul of the Ferocious
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					}),
 					i(236591, {		-- Soul of the Shifter
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					}),
 					applyclassicphase(SOD_PHASE_SEVEN, i(12844, {	-- Argent Dawn Valor Token
-						["cost"] = { { "i", 236397, 50 } },	-- Remnants of Valor
+						cost = { { "i", 236397, 50 } },	-- Remnants of Valor
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236869, {	-- Soulfrost Ammo Pouch
-						["cost"] = { { "i", 12844, 10 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 10 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236864, {	-- Soulfrost Quiver
-						["cost"] = { { "i", 12844, 10 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 10 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236623, {	-- Soul of Animalistic Expertise
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236427, {	-- Soul of Enmity
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236488, {	-- Soul of Echoes
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236469, {	-- Soul of the Abyssal
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236435, {	-- Soul of the Aftershock
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236484, {	-- Soul of the Alpha Tamer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236478, {	-- Soul of the Alternator
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236545, {	-- Soul of the Altruist
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236565, {	-- Soul of the Ancestors
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236587, {	-- Soul of the Ancestral Warden
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236546, {	-- Soul of the Arbiter
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236515, {	-- Soul of the Arcanist
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236500, {	-- Soul of the Archbishop
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236462, {	-- Soul of the Arsonist
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236550, {	-- Soul of the Ascendant
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236620, {	-- Soul of the Astral Ascendant
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236436, {	-- Soul of the Avoidant
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236610, {	-- Soul of the Barbaric
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236534, {	-- Soul of the Bastion
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236419, {	-- Soul of the Battle Forecaster
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236482, {	-- Soul of the Beast Tender
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236593, {	-- Soul of the Beast
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236603, {	-- Soul of the Benevolent Seer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236451, {	-- Soul of the Black Belt
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236420, {	-- Soul of the Bloodseeker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236454, {	-- Soul of the Bloodthirsty
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236480, {	-- Soul of the Bounty Hunter
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236440, {	-- Soul of the Butcher
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236495, {	-- Soul of the Celebrant
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236461, {	-- Soul of the Chaos Harbinger
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236573, {	-- Soul of the Chieftain
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236512, {	-- Soul of the Chronohealer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236608, {	-- Soul of the Claw
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236621, {	-- Soul of the Cometcaller
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236509, {	-- Soul of the Contemnor
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236525, {	-- Soul of Fiery Convergence
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236588, {	-- Soul of the Corrupt
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236520, {	-- Soul of the Cryomancer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236492, {	-- Soul of the Deadly Striker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236423, {	-- Soul of the Deathbound
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236505, {	-- Soul of the Deathdealer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236457, {	-- Soul of the Decimator
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236428, {	-- Soul of the Deflective
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236465, {	-- Soul of the Demonic Exorcist
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236464, {	-- Soul of the Demonlord
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236422, {	-- Soul of the Destroyer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236499, {	-- Soul of the Devotee
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236543, {	-- Soul of the Dominus
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236600, {	-- Soul of the Dreamwalker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236446, {	-- Soul of the Efficient
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236584, {	-- Soul of the Elder
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236569, {	-- Soul of the Elemental Seer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236581, {	-- Soul of the Elemental Master
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236522, {	-- Soul of the Elementalist
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236585, {	-- Soul of the Elements
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236449, {	-- Soul of the Equilibrist
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236516, {	-- Soul of the Eternal Caretaker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236521, {	-- Soul of the Evoker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236552, {	-- Soul of the Excommunicator
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236438, {	-- Soul of the Executioner
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236540, {	-- Soul of the Exemplar
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236554, {	-- Soul of the Exile
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236612, {	-- Soul of the Exsanguinator
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236496, {	-- Soul of the Faithful
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236602, {	-- Soul of the Feathered Sage
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236452, {	-- Soul of the Fencer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236578, {	-- Soul of the Flamebringer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236467, {	-- Soul of the Flamewraith
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236468, {	-- Soul of the Fleshfeaster
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236622, {	-- Soul of the Forest
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236611, {	-- Soul of the Frenetic
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236595, {	-- Soul of the Furious
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236574, {	-- Soul of the Furycharged
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236434, {	-- Soul of the Gladiator
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236619, {	-- Soul of the Graceful
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236519, {	-- Soul of Winter's Grasp
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236601, {	-- Soul of the Grove Tender
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236537, {	-- Soul of the Guardian
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236493, {	-- Soul of the Hastened Healer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236477, {	-- Soul of the Hazard Harrier
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236483, {	-- Soul of the Hound Master
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236485, {	-- Soul of the Huntsman
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236528, {	-- Soul of the Igniter
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236605, {	-- Soul of the Illuminator
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236430, {	-- Soul of the Incessant
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236463, {	-- Soul of the Infernal Shepherd
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236597, {	-- Soul of the Innervator
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236541, {	-- Soul of the Inquisitor
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236606, {	-- Soul of Predatory Instincts
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236536, {	-- Soul of the Ironclad
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236549, {	-- Soul of the Judicator
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236548, {	-- Soul of the Justicar
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236617, {	-- Soul of the Keepers
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236524, {	-- Soul of the Kindler
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236490, {	-- Soul of the Kineticist
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236447, {	-- Soul of the Knife Juggler
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236594, {	-- Soul of the Lacerator
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236586, {	-- Soul of the Lava Sage
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236562, {	-- Soul of the Lavawalker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236489, {	-- Soul of the Lethal Lasher
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236604, {	-- Soul of the Lifeweaver
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236553, {	-- Soul of the Lightbringer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236531, {	-- Soul of the Lightwarden
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236513, {	-- Soul of Temporal Longing
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236614, {	-- Soul of the Lunatic
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236561, {	-- Soul of the Maelstrombringer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236523, {	-- Soul of the Magical Armorer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236459, {	-- Soul of the Malevolent
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236596, {	-- Soul of the Mangler
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236504, {	-- Soul of the Mind Breaker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236474, {	-- Soul of the Misleader
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236616, {	-- Soul of the Night
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236598, {	-- Soul of the Nurturer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236439, {	-- Soul of the Opportunist
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236473, {	-- Soul of the Pain Spreader
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236466, {	-- Soul of the Pained
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236538, {	-- Soul of the Peacekeeper
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236501, {	-- Soul of the Penitent
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236526, {	-- Soul of the Perpetual Blaze
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236441, {	-- Soul of the Phantom
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236510, {	-- Soul of the Plaguebringer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236450, {	-- Soul of the Poised Brawler
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236514, {	-- Soul of the Precognitive
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236475, {	-- Soul of the Preyseeker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236609, {	-- Soul of the Prideful
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236425, {	-- Soul of the Pristine Blocker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236530, {	-- Soul of the Pristine Blocker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236527, {	-- Soul of the Pyromaniac
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236532, {	-- Soul of the Radiant Defender
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236580, {	-- Soul of the Raging Flame
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236535, {	-- Soul of the Reckoner
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236456, {	-- Soul of the Refined
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236494, {	-- Soul of the Refined
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236539, {	-- Soul of the Refined
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236572, {	-- Soul of the Refined
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236498, {	-- Soul of the Resonant
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236487, {	-- Soul of the Retaliator
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236551, {	-- Soul of the Retributor
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236429, {	-- Soul of the Revenger
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236511, {	-- Soul of the Reverberant
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236607, {	-- Soul of the Ripper
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236472, {	-- Soul of the Ritualist
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236458, {	-- Soul of the Rotbringer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236424, {	-- Soul of the Sanguinist
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236426, {	-- Soul of the Savage
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236442, {	-- Soul of the Scoundrel
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236547, {	-- Soul of the Sealbearer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236577, {	-- Soul of the Seismic Smasher
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236432, {	-- Soul of the Sentinel
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236497, {	-- Soul of the Serendipitous
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236448, {	-- Soul of the Shadow Master
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236460, {	-- Soul of the Shadowmancer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236476, {	-- Soul of the Sharpshooter
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236557, {	-- Soul of the Shield Master
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236533, {	-- Soul of the Shieldbearer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236444, {	-- Soul of the Shiv Savant
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236559, {	-- Soul of the Shock-Absorber
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236502, {	-- Soul of the Soul Warder
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236433, {	-- Soul of the Southpaw
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236542, {	-- Soul of the Sovereign
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236517, {	-- Soul of the Spellbider
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236506, {	-- Soul of the Spirit Font
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236583, {	-- Soul of the Spirit Guide
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236571, {	-- Soul of the Spirithealer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236560, {	-- Soul of the Spiritual Bulwark
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236566, {	-- Soul of the Spiritweaver
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236445, {	-- Soul of the Stalker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236615, {	-- Soul of the Starcaller
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236575, {	-- Soul of the Stormbreaker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236568, {	-- Soul of the Stormtender
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236491, {	-- Soul of the Strategist
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236453, {	-- Soul of the Swashbuckler
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236417, {	-- Soul of the Tactician
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236576, {	-- Soul of the Tempest
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236555, {	-- Soul of the Templar
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236592, {	-- Soul of the Territorial
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236613, {	-- Soul of the Thornkeeper
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236443, {	-- Soul of the Thrill Seeker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236431, {	-- Soul of the Thunderbringer
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236421, {	-- Soul of the Titan
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236529, {	-- Soul of the Torcher
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236558, {	-- Soul of the Totemic Protector
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236564, {	-- Soul of the Totemkeeper
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236437, {	-- Soul of the Toxicologist
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236479, {	-- Soul of the Toxinologist
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236599, {	-- Soul of the Tranquil
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236455, {	-- Soul of the Transfusionist
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236582, {	-- Soul of the Tribesman
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236481, {	-- Soul of the Trick Shooter
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236563, {	-- Soul of the True Alpha
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236503, {	-- Soul of the Twilight Walker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236471, {	-- Soul of the Umbral Blade
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236508, {	-- Soul of the Unwavering Defiler
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236544, {	-- Soul of the Vindicator
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236570, {	-- Soul of the Vitalist
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236470, {	-- Soul of the Voidborne
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236579, {	-- Soul of the Volcano
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236418, {	-- Soul of the War Veteran
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236518, {	-- Soul of the Wardshaper
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236567, {	-- Soul of the Waterwalker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236556, {	-- Soul of the Windwalker
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236618, {	-- Soul of the Wrathful
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 					applyclassicphase(SOD_PHASE_SEVEN, i(236507, {	-- Soul of the Zealot
-						["cost"] = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
+						cost = { { "i", 12844, 5 } },	-- Argent Dawn Valor Token
 					})),
 				},
 			}),
@@ -4252,91 +4252,91 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 			tw = "'遭攔截的物資'任務物品會從艾澤拉斯各地6級及以上的怪物掉落。這些任務要求將'遭攔截的物資'交付給某個組織的代表，以換取少量銀幣、經驗值和聲望。當然，物資運送中有一些物品遺失，你可以補充這些物品以獲得更多的聲望獎勵。",
 		},
 	}), {
-		["aqd"] = faction(2586, AZEROTH_COMMERCE_AUTHORITY_VENDORS),
-		["hqd"] = faction(2587, DUROTAR_SUPPLY_AND_LOGISTICS_VENDORS),
-		["OnInit"] = [[function(t) local rep = t.factionID; for index,child in ipairs(t.g[1].g) do if child.maxReputation then child.maxReputation[1] = rep; end end return t; end]],
-		["groups"] = {
+		aqd = faction(2586, AZEROTH_COMMERCE_AUTHORITY_VENDORS),
+		hqd = faction(2587, DUROTAR_SUPPLY_AND_LOGISTICS_VENDORS),
+		OnInit = [[function(t) local rep = t.factionID; for index,child in ipairs(t.g[1].g) do if child.maxReputation then child.maxReputation[1] = rep; end end return t; end]],
+		groups = {
 			n(QUESTS, {
 				q(78612, {	-- A Full Shipment [iLvl 10 - Gathered]
-					["provider"] = { "i", 211365 },	-- Supply Shipment [iLvl 10 - Gathered]
-					["maxReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
-					["description"] = "Grants 300 reputation.",
-					["repeatable"] = true,
-					["lvl"] = 9,
+					provider = { "i", 211365 },	-- Supply Shipment [iLvl 10 - Gathered]
+					maxReputation = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
+					description = "Grants 300 reputation.",
+					repeatable = true,
+					lvl = 9,
 				}),
 				q(78872, {	-- A Full Shipment [iLvl 10 - Crafted]
-					["provider"] = { "i", 211367 },	-- Supply Shipment [iLvl 10 - Crafted]
-					["maxReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
-					["description"] = "Grants 450 reputation.",
-					["repeatable"] = true,
-					["lvl"] = 12,
+					provider = { "i", 211367 },	-- Supply Shipment [iLvl 10 - Crafted]
+					maxReputation = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
+					description = "Grants 450 reputation.",
+					repeatable = true,
+					lvl = 12,
 				}),
 				q(79101, {	-- A Full Shipment [iLvl 25 - Gathered]
-					["provider"] = { "i", 211839 },	-- Supply Shipment [iLvl 25 - Gathered]
-					["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-					["description"] = "Grants 500 reputation.",
-					["repeatable"] = true,
-					["lvl"] = 18,
+					provider = { "i", 211839 },	-- Supply Shipment [iLvl 25 - Gathered]
+					maxReputation = { 2586, HONORED },	-- ACA / DSL, Honored.
+					description = "Grants 500 reputation.",
+					repeatable = true,
+					lvl = 18,
 				}),
 				applyclassicphase(SOD_PHASE_TWO, q(80307, {	-- A Full Shipment [iLvl 40 - Gathered]
-					["provider"] = { "i", 217337 },	-- Supply Shipment [iLvl 40 - Gathered]
-					["maxReputation"] = { 2586, REVERED },	-- ACA / DSL, Revered.
-					["description"] = "Grants 700 reputation.",
-					["repeatable"] = true,
-					["lvl"] = 28,
+					provider = { "i", 217337 },	-- Supply Shipment [iLvl 40 - Gathered]
+					maxReputation = { 2586, REVERED },	-- ACA / DSL, Revered.
+					description = "Grants 700 reputation.",
+					repeatable = true,
+					lvl = 28,
 				})),
 				applyclassicphase(SOD_PHASE_THREE, q(82307, {	-- A Full Shipment [iLvl 50 - Gathered]
-					["provider"] = { "i", 221008 },	-- Supply Shipment [iLvl 50 - Gathered]
-					["maxReputation"] = { 2586, EXALTED },	-- ACA / DSL, Exalted.
-					["description"] = "Grants 950 reputation.",
-					["repeatable"] = true,
-					["lvl"] = 42,
+					provider = { "i", 221008 },	-- Supply Shipment [iLvl 50 - Gathered]
+					maxReputation = { 2586, EXALTED },	-- ACA / DSL, Exalted.
+					description = "Grants 950 reputation.",
+					repeatable = true,
+					lvl = 42,
 				})),
 				q(79102, {	-- A Full Shipment [iLvl 25 - Crafted (Tier 1)]
-					["provider"] = { "i", 211840 },	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
-					["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-					["description"] = "Grants 650 reputation.",
-					["repeatable"] = true,
-					["lvl"] = 22,
+					provider = { "i", 211840 },	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
+					maxReputation = { 2586, HONORED },	-- ACA / DSL, Honored.
+					description = "Grants 650 reputation.",
+					repeatable = true,
+					lvl = 22,
 				}),
 				q(79103, {	-- A Full Shipment [iLvl 25 - Crafted (Tier 2)]
-					["provider"] = { "i", 211841 },	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
-					["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-					["description"] = "Grants 800 reputation.",
-					["repeatable"] = true,
-					["lvl"] = 25,
+					provider = { "i", 211841 },	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
+					maxReputation = { 2586, HONORED },	-- ACA / DSL, Honored.
+					description = "Grants 800 reputation.",
+					repeatable = true,
+					lvl = 25,
 				}),
 				applyclassicphase(SOD_PHASE_TWO, q(80308, {	-- A Full Shipment [iLvl 40 - Crafted (Tier 3)]
-					["provider"] = { "i", 217338 },	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
-					["maxReputation"] = { 2586, REVERED },	-- ACA / DSL, Revered.
-					["description"] = "Grants 850 reputation.",
-					["repeatable"] = true,
-					["lvl"] = 35,
+					provider = { "i", 217338 },	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
+					maxReputation = { 2586, REVERED },	-- ACA / DSL, Revered.
+					description = "Grants 850 reputation.",
+					repeatable = true,
+					lvl = 35,
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80309, {	-- A Full Shipment [iLvl 40 - Crafted (Tier 4)]
-					["provider"] = { "i", 217339 },	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
-					["maxReputation"] = { 2586, REVERED },	-- ACA / DSL, Revered.
-					["description"] = "Grants 1000 reputation.",
-					["repeatable"] = true,
-					["lvl"] = 40,
+					provider = { "i", 217339 },	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
+					maxReputation = { 2586, REVERED },	-- ACA / DSL, Revered.
+					description = "Grants 1000 reputation.",
+					repeatable = true,
+					lvl = 40,
 				})),
 				applyclassicphase(SOD_PHASE_THREE, q(82308, {	-- A Full Shipment [iLvl 50 - Crafted (Tier 5)]
-					["provider"] = { "i", 221009 },	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
-					["maxReputation"] = { 2586, EXALTED },	-- ACA / DSL, Exalted.
-					["description"] = "Grants 1300 reputation.",
-					["repeatable"] = true,
-					["lvl"] = 45,
+					provider = { "i", 221009 },	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
+					maxReputation = { 2586, EXALTED },	-- ACA / DSL, Exalted.
+					description = "Grants 1300 reputation.",
+					repeatable = true,
+					lvl = 45,
 				})),
 				applyclassicphase(SOD_PHASE_THREE, q(82309, {	-- A Full Shipment [iLvl 50 - Crafted (Tier 6)]
-					["provider"] = { "i", 221010 },	-- Supply Shipment [iLvl 50 - Crafted (Tier 6)]
-					["maxReputation"] = { 2586, EXALTED },	-- ACA / DSL, Exalted.
-					["description"] = "Grants 1850 reputation.",
-					["repeatable"] = true,
-					["lvl"] = 50,
+					provider = { "i", 221010 },	-- Supply Shipment [iLvl 50 - Crafted (Tier 6)]
+					maxReputation = { 2586, EXALTED },	-- ACA / DSL, Exalted.
+					description = "Grants 1850 reputation.",
+					repeatable = true,
+					lvl = 50,
 				})),
 				-- These were only in Phase 1, in Phase 2 you can only hand in full shipments (but you can carry multiple empty ones)
 				q(79100, {	-- A Waylaid Shipment [iLvl 10]
-					["providers"] = {
+					providers = {
 						{ "i", 211331 },	-- Waylaid Supplies: Brilliant Smallfish
 						{ "i", 211327 },	-- Waylaid Supplies: Brown Linen Pants
 						{ "i", 211328 },	-- Waylaid Supplies: Brown Linen Robes
@@ -4359,14 +4359,14 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 						{ "i", 211317 },	-- Waylaid Supplies: Silverleaf
 						{ "i", 211330 },	-- Waylaid Supplies: Spiced Wolf Meat
 					},
-					["maxReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
-					["description"] = "Grants 100 reputation.",
-					["timeline"] = { ADDED_1_15_0, REMOVED_1_15_1 },
-					["repeatable"] = true,
-					["lvl"] = 8,
+					maxReputation = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
+					description = "Grants 100 reputation.",
+					timeline = { ADDED_1_15_0, REMOVED_1_15_1 },
+					repeatable = true,
+					lvl = 8,
 				}),
 				q(78611, {	-- A Waylaid Shipment [iLvl 25]
-					["providers"] = {
+					providers = {
 						{ "i", 211819 },	-- Waylaid Supplies: Bronze Bars
 						{ "i", 211822 },	-- Waylaid Supplies: Bruiseweed
 						{ "i", 211837 },	-- Waylaid Supplies: Goblin Deviled Clams
@@ -4389,11 +4389,11 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 						{ "i", 211827 },	-- Waylaid Supplies: Runed Silver Rods
 						{ "i", 211826 },	-- Waylaid Supplies: Silver Skeleton Keys
 					},
-					["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-					["description"] = "Grants 200 reputation.",
-					["timeline"] = { ADDED_1_15_0, REMOVED_1_15_1 },
-					["repeatable"] = true,
-					["lvl"] = 15,
+					maxReputation = { 2586, HONORED },	-- ACA / DSL, Honored.
+					description = "Grants 200 reputation.",
+					timeline = { ADDED_1_15_0, REMOVED_1_15_1 },
+					repeatable = true,
+					lvl = 15,
 				}),
 			}),
 			n(createHeader({	-- Crafted
@@ -4415,372 +4415,372 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 			}), {
 				-- iLvl 10 - Crafted Supplies
 				i(211327, {	-- Waylaid Supplies: Brown Linen Pants
-					["cost"] = { { "i", 4343, 6 } },	-- Brown Linen Pants
-					["groups"] = {
+					cost = { { "i", 4343, 6 } },	-- Brown Linen Pants
+					groups = {
 						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
 					},
 				}),
 				i(211328, {	-- Waylaid Supplies: Brown Linen Robes
-					["cost"] = { { "i", 6238, 4 } },	-- Brown Linen Robes
-					["groups"] = {
+					cost = { { "i", 6238, 4 } },	-- Brown Linen Robes
+					groups = {
 						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
 					},
 				}),
 				i(211319, {	-- Waylaid Supplies: Copper Shortswords
-					["cost"] = { { "i", 2847, 6 } },	-- Copper Shortswords
-					["groups"] = {
+					cost = { { "i", 2847, 6 } },	-- Copper Shortswords
+					groups = {
 						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
 					},
 				}),
 				i(211326, {	-- Waylaid Supplies: Embossed Leather Vests
-					["cost"] = { { "i", 2300, 3 } },	-- Embossed Leather Vests
-					["groups"] = {
+					cost = { { "i", 2300, 3 } },	-- Embossed Leather Vests
+					groups = {
 						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
 					},
 				}),
 				i(211325, {	-- Waylaid Supplies: Handstitched Leather Belts
-					["cost"] = { { "i", 4237, 5 } },	-- Handstitched Leather Belts
-					["groups"] = {
+					cost = { { "i", 4237, 5 } },	-- Handstitched Leather Belts
+					groups = {
 						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
 					},
 				}),
 				i(211934, {	-- Waylaid Supplies: Healing Potions
-					["cost"] = { { "i", 929, 10 } },	-- Healing Potions
-					["groups"] = {
+					cost = { { "i", 929, 10 } },	-- Healing Potions
+					groups = {
 						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
 					},
 				}),
 				i(211321, {	-- Waylaid Supplies: Lesser Magic Wands
-					["cost"] = { { "i", 11287, 2 } },	-- Lesser Magic Wands
-					["groups"] = {
+					cost = { { "i", 11287, 2 } },	-- Lesser Magic Wands
+					groups = {
 						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
 					},
 				}),
 				i(211318, {	-- Waylaid Supplies: Minor Healing Potions
-					["cost"] = { { "i", 118, 20 } },	-- Minor Healing Potions
-					["groups"] = {
+					cost = { { "i", 118, 20 } },	-- Minor Healing Potions
+					groups = {
 						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
 					},
 				}),
 				i(211322, {	-- Waylaid Supplies: Minor Wizard Oil
-					["cost"] = { { "i", 20744, 2 } },	-- Minor Wizard Oil
-					["groups"] = {
+					cost = { { "i", 20744, 2 } },	-- Minor Wizard Oil
+					groups = {
 						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
 					},
 				}),
 				i(211324, {	-- Waylaid Supplies: Rough Boomsticks
-					["cost"] = { { "i", 4362, 3 } },	-- Rough Boomsticks
-					["groups"] = {
+					cost = { { "i", 4362, 3 } },	-- Rough Boomsticks
+					groups = {
 						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
 					},
 				}),
 				i(211323, {	-- Waylaid Supplies: Rough Copper Bombs
-					["cost"] = { { "i", 4360, 12 } },	-- Rough Copper Bombs
-					["groups"] = {
+					cost = { { "i", 4360, 12 } },	-- Rough Copper Bombs
+					groups = {
 						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
 					},
 				}),
 				i(211320, {	-- Waylaid Supplies: Runed Copper Pants
-					["cost"] = { { "i", 3473, 3 } },	-- Runed Copper Pants
-					["groups"] = {
+					cost = { { "i", 3473, 3 } },	-- Runed Copper Pants
+					groups = {
 						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
 					},
 				}),
 
 				-- iLvl 25 - Crafted Supplies (Tier 1)
 				i(211831, {	-- Waylaid Supplies: Dark Leather Cloaks
-					["cost"] = { { "i", 2316, 2 } },	-- Dark Leather Cloaks
-					["groups"] = {
+					cost = { { "i", 2316, 2 } },	-- Dark Leather Cloaks
+					groups = {
 						i(211840),	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
 					},
 				}),
 				i(211833, {	-- Waylaid Supplies: Gray Woolen Shirts
-					["cost"] = { { "i", 2587, 4 } },	-- Gray Woolen Shirts
-					["groups"] = {
+					cost = { { "i", 2587, 4 } },	-- Gray Woolen Shirts
+					groups = {
 						i(211840),	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
 					},
 				}),
 				i(211824, {	-- Waylaid Supplies: Lesser Mana Potions
-					["cost"] = { { "i", 3385, 20 } },	-- Lesser Mana Potions
-					["groups"] = {
+					cost = { { "i", 3385, 20 } },	-- Lesser Mana Potions
+					groups = {
 						i(211840),	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
 					},
 				}),
 				i(211828, {	-- Waylaid Supplies: Minor Mana Oil
-					["cost"] = { { "i", 20745, 2 } },	-- Minor Mana Oil
-					["groups"] = {
+					cost = { { "i", 20745, 2 } },	-- Minor Mana Oil
+					groups = {
 						i(211840),	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
 					},
 				}),
 				i(211825, {	-- Waylaid Supplies: Rough Bronze Boots
-					["cost"] = { { "i", 6350, 3 } },	-- Rough Bronze Boots
-					["groups"] = {
+					cost = { { "i", 6350, 3 } },	-- Rough Bronze Boots
+					groups = {
 						i(211840),	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
 					},
 				}),
 				i(211829, {	-- Waylaid Supplies: Small Bronze Bombs
-					["cost"] = { { "i", 4374, 12 } },	-- Small Bronze Bombs
-					["groups"] = {
+					cost = { { "i", 4374, 12 } },	-- Small Bronze Bombs
+					groups = {
 						i(211840),	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
 					},
 				}),
 
 				-- iLvl 25 - Crafted Supplies (Tier 2)
 				i(211935, {	-- Waylaid Supplies: Elixir of Firepower
-					["cost"] = { { "i", 6373, 15 } },	-- Elixir of Firepower
-					["groups"] = {
+					cost = { { "i", 6373, 15 } },	-- Elixir of Firepower
+					groups = {
 						i(211841),	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
 					},
 				}),
 				i(211832, {	-- Waylaid Supplies: Hillman's Shoulders
-					["cost"] = { { "i", 4251, 2 } },	-- Hillman's Shoulders
-					["groups"] = {
+					cost = { { "i", 4251, 2 } },	-- Hillman's Shoulders
+					groups = {
 						i(211841),	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
 					},
 				}),
 				i(211830, {	-- Waylaid Supplies: Ornate Spyglasses
-					["cost"] = { { "i", 5507, 2 } },	-- Ornate Spyglasses
-					["groups"] = {
+					cost = { { "i", 5507, 2 } },	-- Ornate Spyglasses
+					groups = {
 						i(211841),	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
 					},
 				}),
 				i(211834, {	-- Waylaid Supplies: Pearl-clasped Cloaks
-					["cost"] = { { "i", 5542, 3 } },	-- Pearl-clasped Cloaks
-					["groups"] = {
+					cost = { { "i", 5542, 3 } },	-- Pearl-clasped Cloaks
+					groups = {
 						i(211841),	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
 					},
 				}),
 				i(211827, {	-- Waylaid Supplies: Runed Silver Rods
-					["cost"] = { { "i", 6339, 1 } },	-- Runed Silver Rods
-					["groups"] = {
+					cost = { { "i", 6339, 1 } },	-- Runed Silver Rods
+					groups = {
 						i(211841),	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
 					},
 				}),
 				i(211826, {	-- Waylaid Supplies: Silver Skeleton Keys
-					["cost"] = { { "i", 15869, 14 } },	-- Silver Skeleton Keys
-					["groups"] = {
+					cost = { { "i", 15869, 14 } },	-- Silver Skeleton Keys
+					groups = {
 						i(211841),	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
 					},
 				}),
 
 				-- iLvl 40 - Crafted Supplies (Tier 3)
 				applyclassicphase(SOD_PHASE_TWO, i(215407, {	-- Waylaid Supplies: Barbaric Shoulders
-					["cost"] = { { "i", 5964, 4 } },	-- Barbaric Shoulders
-					["groups"] = {
+					cost = { { "i", 5964, 4 } },	-- Barbaric Shoulders
+					groups = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215402, {	-- Waylaid Supplies: Big Iron Bombs
-					["cost"] = { { "i", 4394, 8 } },	-- Big Iron Bomb
-					["groups"] = {
+					cost = { { "i", 4394, 8 } },	-- Big Iron Bomb
+					groups = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215401, {	-- Waylaid Supplies: Compact Harvest Reaper Kits
-					["cost"] = { { "i", 4391, 2 } },	-- Compact Harvest Reaper Kits
-					["groups"] = {
+					cost = { { "i", 4391, 2 } },	-- Compact Harvest Reaper Kits
+					groups = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215414, {	-- Waylaid Supplies: Crimson Silk Pantaloons
-					["cost"] = { { "i", 7062, 4 } },	-- Crimson Silk Pantaloons
-					["groups"] = {
+					cost = { { "i", 7062, 4 } },	-- Crimson Silk Pantaloons
+					groups = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215403, {	-- Waylaid Supplies: Deadly Scopes
-					["cost"] = { { "i", 10546, 4 } },	-- Deadly Scopes
-					["groups"] = {
+					cost = { { "i", 10546, 4 } },	-- Deadly Scopes
+					groups = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215410, {	-- Waylaid Supplies: Dusky Belts
 					-- TODO: Cost is currently bugged ingame. Fix when Blizzard also does.
-					["cost"] = { { "i", 2840, 20 } },	-- Dusky Belts
-					["timeline"] = { CREATED_1_15_1 },
-					["groups"] = {
+					cost = { { "i", 2840, 20 } },	-- Dusky Belts
+					timeline = { CREATED_1_15_1 },
+					groups = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215395, {	-- Waylaid Supplies: Elixirs of Agility
-					["cost"] = { { "i", 8949, 12 } },	-- Elixirs of Agility
-					["groups"] = {
+					cost = { { "i", 8949, 12 } },	-- Elixirs of Agility
+					groups = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215411, {	-- Waylaid Supplies: Frost Leather Cloaks
-					["cost"] = { { "i", 7377, 3 } },	-- Frost Leather Cloaks
-					["groups"] = {
+					cost = { { "i", 7377, 3 } },	-- Frost Leather Cloaks
+					groups = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215385, {	-- Waylaid Supplies: Gold Bars
-					["cost"] = { { "i", 3577, 4 } },	-- Gold Bars
-					["groups"] = {
+					cost = { { "i", 3577, 4 } },	-- Gold Bars
+					groups = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215393, {	-- Waylaid Supplies: Greater Healing Potions
-					["cost"] = { { "i", 1710, 16 } },	-- Greater Healing Potions
-					["groups"] = {
+					cost = { { "i", 1710, 16 } },	-- Greater Healing Potions
+					groups = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215398, {	-- Waylaid Supplies: Green Iron Bracers
-					["cost"] = { { "i", 3835, 5 } },	-- Green Iron Bracers
-					["groups"] = {
+					cost = { { "i", 3835, 5 } },	-- Green Iron Bracers
+					groups = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215408, {	-- Waylaid Supplies: Guardian Gloves
-					["cost"] = { { "i", 5966, 6 } },	-- Guardian Gloves
-					["groups"] = {
+					cost = { { "i", 5966, 6 } },	-- Guardian Gloves
+					groups = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215399, {	-- Waylaid Supplies: Heavy Mithril Gauntlets
-					["cost"] = { { "i", 7919, 4 } },	-- Heavy Mithril Gauntlets
-					["groups"] = {
+					cost = { { "i", 7919, 4 } },	-- Heavy Mithril Gauntlets
+					groups = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215415, {	-- Waylaid Supplies: Rich Purple Silk Shirts
-					["cost"] = { { "i", 4335, 5 } },	-- Rich Purple Silk Shirts
-					["groups"] = {
+					cost = { { "i", 4335, 5 } },	-- Rich Purple Silk Shirts
+					groups = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215412, {	-- Waylaid Supplies: Shadowskin Gloves
 					-- TODO: Cost is currently bugged ingame. Fix when Blizzard also does.
-					["cost"] = { { "i", 2840, 20 } },	-- Dusky Belts
-					["timeline"] = { CREATED_1_15_1 },
-					["groups"] = {
+					cost = { { "i", 2840, 20 } },	-- Dusky Belts
+					timeline = { CREATED_1_15_1 },
+					groups = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
 				})),
 
 				-- iLvl 40 - Crafted Supplies (Tier 4)
 				applyclassicphase(SOD_PHASE_TWO, i(215396, {	-- Waylaid Supplies: Elixirs of Greater Defense
-					["cost"] = { { "i", 8951, 14 } },	-- Elixir of Greater Defense
-					["groups"] = {
+					cost = { { "i", 8951, 14 } },	-- Elixir of Greater Defense
+					groups = {
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215397, {	-- Waylaid Supplies: Massive Iron Axes
-					["cost"] = { { "i", 3855, 2 } },	-- Massive Iron Axe
-					["groups"] = {
+					cost = { { "i", 3855, 2 } },	-- Massive Iron Axe
+					groups = {
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215404, {	-- Waylaid Supplies: Mithril Blunderbuss
-					["cost"] = { { "i", 10508, 2 } },	-- Mithril Blunderbuss
-					["groups"] = {
+					cost = { { "i", 10508, 2 } },	-- Mithril Blunderbuss
+					groups = {
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215416, {	-- Waylaid Supplies: White Bandit Masks
-					["cost"] = { { "i", 10008, 4 } },	-- White Bandit Mask
-					["groups"] = {
+					cost = { { "i", 10008, 4 } },	-- White Bandit Mask
+					groups = {
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215409, {	-- Waylaid Supplies: Turtle Scale Bracers
-					["cost"] = { { "i", 8198, 3 } },	-- Turtle Scale Bracers
-					["groups"] = {
+					cost = { { "i", 8198, 3 } },	-- Turtle Scale Bracers
+					groups = {
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
 				})),
 
 				-- iLvl 50 - Crafted Supplies (Tier 5)
 				applyclassicphase(SOD_PHASE_THREE, i(220940, {	-- Waylaid Supplies: Black Mageweave Headbands
-					["cost"] = { { "i", 10024, 5 } },	-- Black Mageweave Headband
-					["groups"] = {
+					cost = { { "i", 10024, 5 } },	-- Black Mageweave Headband
+					groups = {
 						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220928, {	-- Waylaid Supplies: Enchanted Thorium Bars
-					["cost"] = { { "i", 12655, 4 } },	-- Enchanted Thorium Bar
-					["groups"] = {
+					cost = { { "i", 12655, 4 } },	-- Enchanted Thorium Bar
+					groups = {
 						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220931, {	-- Waylaid Supplies: Hi-Explosive Bombs
-					["cost"] = { { "i", 10562, 16 } },	-- Hi-Explosive Bomb
-					["groups"] = {
+					cost = { { "i", 10562, 16 } },	-- Hi-Explosive Bomb
+					groups = {
 						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220930, {	-- Waylaid Supplies: Major Healing Potions
-					["cost"] = { { "i", 13446, 8 } },	-- Major Healing Potion
-					["groups"] = {
+					cost = { { "i", 13446, 8 } },	-- Major Healing Potion
+					groups = {
 						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220934, {	-- Waylaid Supplies: Mithril Coifs
-					["cost"] = { { "i", 7931, 3 } },	-- Mithril Coif
-					["groups"] = {
+					cost = { { "i", 7931, 3 } },	-- Mithril Coif
+					groups = {
 						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220937, {	-- Waylaid Supplies: Rugged Armor Kits
-					["cost"] = { { "i", 15564, 12 } },	-- Rugged Armor Kit
-					["groups"] = {
+					cost = { { "i", 15564, 12 } },	-- Rugged Armor Kit
+					groups = {
 						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220929, {	-- Waylaid Supplies: Superior Mana Potions
-					["cost"] = { { "i", 13443, 6 } },	-- Superior Mana Potion
-					["groups"] = {
+					cost = { { "i", 13443, 6 } },	-- Superior Mana Potion
+					groups = {
 						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220935, {	-- Waylaid Supplies: Thorium Belts
-					["cost"] = { { "i", 12406, 5 } },	-- Thorium Belt
-					["groups"] = {
+					cost = { { "i", 12406, 5 } },	-- Thorium Belt
+					groups = {
 						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220942, {	-- Waylaid Supplies: Tuxedo Shirts
-					["cost"] = { { "i", 10034, 4 } },	-- Tuxedo Shirt
-					["groups"] = {
+					cost = { { "i", 10034, 4 } },	-- Tuxedo Shirt
+					groups = {
 						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220938, {	-- Waylaid Supplies: Wicked Leather Bracers
-					["cost"] = { { "i", 15084, 6 } },	-- Wicked Leather Bracer
-					["groups"] = {
+					cost = { { "i", 15084, 6 } },	-- Wicked Leather Bracer
+					groups = {
 						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220932, {	-- Waylaid Supplies: Thorium Grenades
-					["cost"] = { { "i", 15993, 3 } },	-- Thorium Grenade
-					["groups"] = {
+					cost = { { "i", 15993, 3 } },	-- Thorium Grenade
+					groups = {
 						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
 					},
 				})),
 
 				-- iLvl 50 - Crafted Supplies (Tier 6)
 				applyclassicphase(SOD_PHASE_THREE, i(220941, {	-- Waylaid Supplies: Runecloth Belts
-					["cost"] = { { "i", 13856, 6 } },	-- Runecloth Belt
-					["groups"] = {
+					cost = { { "i", 13856, 6 } },	-- Runecloth Belt
+					groups = {
 						i(221010),	-- Supply Shipment [iLvl 50 - Crafted (Tier 6)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220939, {	-- Waylaid Supplies: Runic Leather Bracers
-					["cost"] = { { "i", 15092, 5 } },	-- Runic Leather Bracer
-					["groups"] = {
+					cost = { { "i", 15092, 5 } },	-- Runic Leather Bracer
+					groups = {
 						i(221010),	-- Supply Shipment [iLvl 50 - Crafted (Tier 6)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220933, {	-- Waylaid Supplies: Thorium Rifles
-					["cost"] = { { "i", 15995, 2 } },	-- Thorium Rifle
-					["groups"] = {
+					cost = { { "i", 15995, 2 } },	-- Thorium Rifle
+					groups = {
 						i(221010),	-- Supply Shipment [iLvl 50 - Crafted (Tier 6)]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220936, {	-- Waylaid Supplies: Truesilver Gauntlets
-					["cost"] = { { "i", 7938, 2 } },	-- Truesilver Gauntlet
-					["groups"] = {
+					cost = { { "i", 7938, 2 } },	-- Truesilver Gauntlet
+					groups = {
 						i(221010),	-- Supply Shipment [iLvl 50 - Crafted (Tier 6)]
 					},
 				})),
@@ -4805,260 +4805,260 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 			}), {
 				-- iLvl 10 - Gathering Supplies
 				i(211331, {	-- Waylaid Supplies: Brilliant Smallfish
-					["cost"] = { { "i", 6290, 20 } },	-- Brilliant Smallfish
-					["groups"] = {
+					cost = { { "i", 6290, 20 } },	-- Brilliant Smallfish
+					groups = {
 						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
 					},
 				}),
 				i(210771, {	-- Waylaid Supplies: Copper Bars
-					["cost"] = { { "i", 2840, 20 } },	-- Copper Bars
-					["groups"] = {
+					cost = { { "i", 2840, 20 } },	-- Copper Bars
+					groups = {
 						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
 					},
 				}),
 				i(211332, {	-- Waylaid Supplies: Heavy Linen Bandages
-					["cost"] = { { "i", 2581, 10 } },	-- Heavy Linen Bandages
-					["groups"] = {
+					cost = { { "i", 2581, 10 } },	-- Heavy Linen Bandages
+					groups = {
 						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
 					},
 				}),
 				i(211329, {	-- Waylaid Supplies: Herb Baked Eggs
-					["cost"] = { { "i", 6888, 20 } },	-- Herb Baked Eggs
-					["groups"] = {
+					cost = { { "i", 6888, 20 } },	-- Herb Baked Eggs
+					groups = {
 						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
 					},
 				}),
 				i(211315, {	-- Waylaid Supplies: Light Leather
-					["cost"] = { { "i", 2318, 14 } },	-- Light Leather
-					["groups"] = {
+					cost = { { "i", 2318, 14 } },	-- Light Leather
+					groups = {
 						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
 					},
 				}),
 				i(211316, {	-- Waylaid Supplies: Peacebloom
-					["cost"] = { { "i", 2447, 20 } },	-- Peacebloom
-					["groups"] = {
+					cost = { { "i", 2447, 20 } },	-- Peacebloom
+					groups = {
 						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
 					},
 				}),
 				i(211933, {	-- Waylaid Supplies: Rough Stone
-					["cost"] = { { "i", 2835, 10 } },	-- Rough Stone
-					["groups"] = {
+					cost = { { "i", 2835, 10 } },	-- Rough Stone
+					groups = {
 						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
 					},
 				}),
 				i(211317, {	-- Waylaid Supplies: Silverleaf
-					["cost"] = { { "i", 765, 20 } },	-- Silverleaf
-					["groups"] = {
+					cost = { { "i", 765, 20 } },	-- Silverleaf
+					groups = {
 						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
 					},
 				}),
 				i(211330, {	-- Waylaid Supplies: Spiced Wolf Meat
-					["cost"] = { { "i", 2680, 20 } },	-- Spiced Wolf Meat
-					["groups"] = {
+					cost = { { "i", 2680, 20 } },	-- Spiced Wolf Meat
+					groups = {
 						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
 					},
 				}),
 
 				-- iLvl 25 - Gathering Supplies
 				i(211819, {	-- Waylaid Supplies: Bronze Bars
-					["cost"] = { { "i", 2841, 12 } },	-- Bronze Bars
-					["groups"] = {
+					cost = { { "i", 2841, 12 } },	-- Bronze Bars
+					groups = {
 						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
 					},
 				}),
 				i(211822, {	-- Waylaid Supplies: Bruiseweed
-					["cost"] = { { "i", 2453, 20 } },	-- Bruiseweed
-					["groups"] = {
+					cost = { { "i", 2453, 20 } },	-- Bruiseweed
+					groups = {
 						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
 					},
 				}),
 				i(211837, {	-- Waylaid Supplies: Goblin Deviled Clams
-					["cost"] = { { "i", 5527, 8 } },	-- Goblin Deviled Clams
-					["groups"] = {
+					cost = { { "i", 5527, 8 } },	-- Goblin Deviled Clams
+					groups = {
 						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
 					},
 				}),
 				i(211838, {	-- Waylaid Supplies: Heavy Wool Bandages
-					["cost"] = { { "i", 3531, 15 } },	-- Heavy Wool Bandages
-					["groups"] = {
+					cost = { { "i", 3531, 15 } },	-- Heavy Wool Bandages
+					groups = {
 						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
 					},
 				}),
 				i(211821, {	-- Waylaid Supplies: Medium Leather
-					["cost"] = { { "i", 2319, 12 } },	-- Medium Leather
-					["groups"] = {
+					cost = { { "i", 2319, 12 } },	-- Medium Leather
+					groups = {
 						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
 					},
 				}),
 				i(211820, {	-- Waylaid Supplies: Silver Bars
-					["cost"] = { { "i", 2842, 6 } },	-- Silver Bars
-					["groups"] = {
+					cost = { { "i", 2842, 6 } },	-- Silver Bars
+					groups = {
 						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
 					},
 				}),
 				i(211836, {	-- Waylaid Supplies: Smoked Bear Meat
-					["cost"] = { { "i", 6890, 20 } },	-- Smoked Bear Meat
-					["groups"] = {
+					cost = { { "i", 6890, 20 } },	-- Smoked Bear Meat
+					groups = {
 						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
 					},
 				}),
 				i(211835, {	-- Waylaid Supplies: Smoked Sagefish
-					["cost"] = { { "i", 21072, 15 } },	-- Smoked Sagefish
-					["groups"] = {
+					cost = { { "i", 21072, 15 } },	-- Smoked Sagefish
+					groups = {
 						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
 					},
 				}),
 				i(211823, {	-- Waylaid Supplies: Swiftthistle
-					["cost"] = { { "i", 2452, 20 } },	-- Swiftthistle
-					["groups"] = {
+					cost = { { "i", 2452, 20 } },	-- Swiftthistle
+					groups = {
 						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
 					},
 				}),
 
 				-- iLvl 40 - Gathering Supplies
 				applyclassicphase(SOD_PHASE_TWO, i(215389, {	-- Waylaid Supplies: Fadeleaf
-					["cost"] = { { "i", 3818, 16 } },	-- Fadeleaf
-					["groups"] = {
+					cost = { { "i", 3818, 16 } },	-- Fadeleaf
+					groups = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215421, {	-- Waylaid Supplies: Fire Oil
-					["cost"] = { { "i", 6371, 10 } },	-- Fire Oil
-					["groups"] = {
+					cost = { { "i", 6371, 10 } },	-- Fire Oil
+					groups = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215413, {	-- Waylaid Supplies: Formal White Shirts
-					["cost"] = { { "i", 4334, 3 } },	-- Formal White Shirts
-					["groups"] = {
+					cost = { { "i", 4334, 3 } },	-- Formal White Shirts
+					groups = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215387, {	-- Waylaid Supplies: Heavy Hide
-					["cost"] = { { "i", 4235, 5 } },	-- Heavy Hide
-					["groups"] = {
+					cost = { { "i", 4235, 5 } },	-- Heavy Hide
+					groups = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215419, {	-- Waylaid Supplies: Heavy Silk Bandages
-					["cost"] = { { "i", 6451, 10 } },	-- Heavy Silk Bandages
-					["groups"] = {
+					cost = { { "i", 6451, 10 } },	-- Heavy Silk Bandages
+					groups = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215390, {	-- Waylaid Supplies: Khadgar's Whisker
-					["cost"] = { { "i", 3358, 10 } },	-- Khadgar's Whisker
-					["groups"] = {
+					cost = { { "i", 3358, 10 } },	-- Khadgar's Whisker
+					groups = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215386, {	-- Waylaid Supplies: Mithril Bars
-					["cost"] = { { "i", 3860, 6 } },	-- Mithril Bars
-					["groups"] = {
+					cost = { { "i", 3860, 6 } },	-- Mithril Bars
+					groups = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215392, {	-- Waylaid Supplies: Purple Lotus
-					["cost"] = { { "i", 8831, 8 } },	-- Purple Lotus
-					["groups"] = {
+					cost = { { "i", 8831, 8 } },	-- Purple Lotus
+					groups = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215420, {	-- Waylaid Supplies: Rockscale Cod
-					["cost"] = { { "i", 4594, 40 } },	-- Rockscale Cod
-					["groups"] = {
+					cost = { { "i", 4594, 40 } },	-- Rockscale Cod
+					groups = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215400, {	-- Waylaid Supplies: Solid Grinding Stones
-					["cost"] = { { "i", 7966, 10 } },	-- Solid Grinding Stones
-					["groups"] = {
+					cost = { { "i", 7966, 10 } },	-- Solid Grinding Stones
+					groups = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215417, {	-- Waylaid Supplies: Soothing Turtle Bisque
-					["cost"] = { { "i", 3729, 10 } },	-- Soothing Turtle Bisque
-					["groups"] = {
+					cost = { { "i", 3729, 10 } },	-- Soothing Turtle Bisque
+					groups = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215418, {	-- Waylaid Supplies: Spider Sausages
-					["cost"] = { { "i", 17222, 10 } },	-- Spider Sausages
-					["groups"] = {
+					cost = { { "i", 17222, 10 } },	-- Spider Sausages
+					groups = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215388, {	-- Waylaid Supplies: Thick Leather
-					["cost"] = { { "i", 4304, 10 } },	-- Thick Leather
-					["groups"] = {
+					cost = { { "i", 4304, 10 } },	-- Thick Leather
+					groups = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(215391, {	-- Waylaid Supplies: Wintersbite
-					["cost"] = { { "i", 3819, 20 } },	-- Wintersbite
-					["groups"] = {
+					cost = { { "i", 3819, 20 } },	-- Wintersbite
+					groups = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
 				})),
 
 				-- iLvl 50 - Gathering Supplies
 				applyclassicphase(SOD_PHASE_THREE, i(220923, {	-- Waylaid Supplies: Dreamfoil
-					["cost"] = { { "i", 13463, 6 } },	-- Dreamfoil
-					["groups"] = {
+					cost = { { "i", 13463, 6 } },	-- Dreamfoil
+					groups = {
 						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220921, {	-- Waylaid Supplies: Heavy Mageweave Bandages
-					["cost"] = { { "i", 8545, 14 } },	-- Heavy Mageweave Bandage
-					["groups"] = {
+					cost = { { "i", 8545, 14 } },	-- Heavy Mageweave Bandage
+					groups = {
 						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220919, {	-- Waylaid Supplies: Nightfin Soup
-					["cost"] = { { "i", 13931, 8 } },	-- Nightfin Soup
-					["groups"] = {
+					cost = { { "i", 13931, 8 } },	-- Nightfin Soup
+					groups = {
 						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220926, {	-- Waylaid Supplies: Rugged Leather
-					["cost"] = { { "i", 8170, 14 } },	-- Rugged Leather
-					["groups"] = {
+					cost = { { "i", 8170, 14 } },	-- Rugged Leather
+					groups = {
 						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220922, {	-- Waylaid Supplies: Sungrass
-					["cost"] = { { "i", 8838, 15 } },	-- Sungrass
-					["groups"] = {
+					cost = { { "i", 8838, 15 } },	-- Sungrass
+					groups = {
 						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220920, {	-- Waylaid Supplies: Tender Wolf Steaks
-					["cost"] = { { "i", 18045, 12 } },	-- Tender Wolf Steak
-					["groups"] = {
+					cost = { { "i", 18045, 12 } },	-- Tender Wolf Steak
+					groups = {
 						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220927, {	-- Waylaid Supplies: Thick Hide
-					["cost"] = { { "i", 8169, 8 } },	-- Thick Hide
-					["groups"] = {
+					cost = { { "i", 8169, 8 } },	-- Thick Hide
+					groups = {
 						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220925, {	-- Waylaid Supplies: Thorium Bars
-					["cost"] = { { "i", 12359, 16 } },	-- Thorium Bars
-					["groups"] = {
+					cost = { { "i", 12359, 16 } },	-- Thorium Bars
+					groups = {
 						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220924, {	-- Waylaid Supplies: Truesilver Bars
-					["cost"] = { { "i", 6037, 12 } },	-- Truesilver Bars
-					["groups"] = {
+					cost = { { "i", 6037, 12 } },	-- Truesilver Bars
+					groups = {
 						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
 					},
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220918, {	-- Waylaid Supplies: Undermine Clam Chowder
-					["cost"] = { { "i", 16766, 16 } },	-- Undermine Clam Chowder
-					["groups"] = {
+					cost = { { "i", 16766, 16 } },	-- Undermine Clam Chowder
+					groups = {
 						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
 					},
 				})),
@@ -5155,115 +5155,115 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 	filter(RECIPES, {
 		cl(DRUID, {
 			applyclassicphase(SOD_PHASE_TWO, i(216764, {	-- Leaflet of Deeper Wilds
-				["spellID"] = 436956,	-- Deeper Wilds
-				["f"] = RECIPES,
+				spellID = 436956,	-- Deeper Wilds
+				f = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(216771, {	-- Leaflet of Enhanced Restoration
-				["spellID"] = 417123,	-- Enhanced Restoration
-				["f"] = RECIPES,
+				spellID = 417123,	-- Enhanced Restoration
+				f = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(216767, {	-- Leaflet of Revive
-				["spellID"] = 437138,	-- Revive
-				["f"] = RECIPES,
+				spellID = 437138,	-- Revive
+				f = RECIPES,
 			})),
 		}),
 		cl(HUNTER, {
 			applyclassicphase(SOD_PHASE_TWO, i(216770, {	-- Treatise on Aspect of the Viper
-				["spellID"] = 415423,	-- Aspect of the Viper
-				["f"] = RECIPES,
+				spellID = 415423,	-- Aspect of the Viper
+				f = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, i(226401, {	-- Treatise on the Heart of the Lion
-				["spellID"] = 409580,	-- Heart of the Lion
-				["f"] = RECIPES,
+				spellID = 409580,	-- Heart of the Lion
+				f = RECIPES,
 			})),
 		}),
 		cl(MAGE, {
 			applyclassicphase(SOD_PHASE_TWO, i(216740, {	-- Tome of Expanded Intellect
-				["spellID"] = 436949,	-- Expanded Intellect
-				["f"] = RECIPES,
+				spellID = 436949,	-- Expanded Intellect
+				f = RECIPES,
 			})),
 		}),
 		cl(PALADIN, {
 			applyclassicphase(SOD_PHASE_TWO, i(216768, {	-- Testament of Enhanced Blessings
-				["spellID"] = 435984,	-- Enhanced Blessings
-				["f"] = RECIPES,
+				spellID = 435984,	-- Enhanced Blessings
+				f = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, i(226398, {	-- Testament of Martyrdom
-				["spellID"] = 407798,	-- Seal of Martyrdom
-				["f"] = RECIPES,
+				spellID = 407798,	-- Seal of Martyrdom
+				f = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, i(226400, {	-- Testament of the Exorcist
-				["spellID"] = 415076,	-- Exorcist
-				["f"] = RECIPES,
+				spellID = 415076,	-- Exorcist
+				f = RECIPES,
 			})),
 		}),
 		cl(PRIEST, {
 			applyclassicphase(SOD_PHASE_TWO, i(216744, {	-- Scroll of Increased Fortitude
-				["spellID"] = 436951,	-- Increased Fortitude
-				["f"] = RECIPES,
+				spellID = 436951,	-- Increased Fortitude
+				f = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(216745, {	-- Scroll of Shadowfiend
-				["spellID"] = 401977,	-- Shadowfiend
-				["f"] = RECIPES,
+				spellID = 401977,	-- Shadowfiend
+				f = RECIPES,
 			})),
 		}),
 		cl(ROGUE, {
 			applyclassicphase(SOD_PHASE_FOUR, i(226394, {	-- Manual of Atrophic Poison
-				["spellID"] = 439503,	-- Atrophic Poison
-				["f"] = RECIPES,
+				spellID = 439503,	-- Atrophic Poison
+				f = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, i(226395, {	-- Manual of Numbing Poison
-				["spellID"] = 439505,	-- Numbing Poison
-				["f"] = RECIPES,
+				spellID = 439505,	-- Numbing Poison
+				f = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, i(226396, {	-- Manual of Occult Poison
-				["spellID"] = 458822,	-- Occult Poison I
-				["f"] = RECIPES,
+				spellID = 458822,	-- Occult Poison I
+				f = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(216738, {	-- Manual of Redirect
-				["spellID"] = 438040,	-- Redirect
-				["f"] = RECIPES,
+				spellID = 438040,	-- Redirect
+				f = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, i(226397, {	-- Manual of Sebacious Poison
-				["spellID"] = 439500,	-- Sebacious Poison
-				["f"] = RECIPES,
+				spellID = 439500,	-- Sebacious Poison
+				f = RECIPES,
 			})),
 		}),
 		cl(SHAMAN, {
 			applyclassicphase(SOD_PHASE_FOUR, i(226402, {	-- Revelation of Shamanistic Rage
-				["spellID"] = 425336,	-- Shamanistic Rage
-				["f"] = RECIPES,
+				spellID = 425336,	-- Shamanistic Rage
+				f = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(216769, {	-- Revelation of Totemic Projection
-				["spellID"] = 437009,	-- Totemic Projection
-				["f"] = RECIPES,
+				spellID = 437009,	-- Totemic Projection
+				f = RECIPES,
 			})),
 		}),
 		cl(WARLOCK, {
 			applyclassicphase(SOD_PHASE_TWO, i(216748, {	-- Grimoire of Portal of Summoning
-				["spellID"] = 437169,	-- Portal of Summoning
-				["f"] = RECIPES,
+				spellID = 437169,	-- Portal of Summoning
+				f = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(216747, {	-- Grimoire of Soul Harvesting
-				["spellID"] = 437032,	-- Soul Harvesting
-				["f"] = RECIPES,
+				spellID = 437032,	-- Soul Harvesting
+				f = RECIPES,
 			})),
 		}),
 		cl(WARRIOR, {
 			applyclassicphase(SOD_PHASE_TWO, i(216746, {	-- Handbook of Commanding Shout
-				["spellID"] = 403215,	-- Commanding Shout
-				["f"] = RECIPES,
+				spellID = 403215,	-- Commanding Shout
+				f = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, i(226403, {	-- Handbook of Meathook
-				["spellID"] = 403228,	-- Meathook
-				["f"] = RECIPES,
+				spellID = 403228,	-- Meathook
+				f = RECIPES,
 			})),
 		}),
 	}),
 }));
 
 root(ROOTS.NeverImplemented, {
-	applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCOVERY_HEADER, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {
+	applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCOVERY_HEADER, bubbleDownSelf({ timeline = { REMOVED_2_0_1 } }, {
 		i(211445),	-- Barbaric Recurve
 		i(211443),	-- Blade of Rage
 		i(211444),	-- Summoner's Cloak

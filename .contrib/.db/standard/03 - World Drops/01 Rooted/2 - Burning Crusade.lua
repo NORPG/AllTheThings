@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
+root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, bubbleDownSelf({ timeline = { ADDED_2_0_3 } }, {
 	filter(CLOAKS, {
 		i(25043),	-- Amber Cape
 		i(25041),	-- Ambusher's Cloak
@@ -706,9 +706,9 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(25142),	-- Telaari Longblade
 			i(25145, {	-- Wisdom Blade
 				-- #if AFTER 6.0.1
-				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+				description = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				-- #endif
-				["timeline"] = { CREATED_2_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
+				timeline = { CREATED_2_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
 			}),
 		}),
 		filter(TWO_HANDED_SWORDS, {
@@ -728,9 +728,9 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(25400),	-- Tarnished Claymore
 			i(25159, {	-- Thunderstrike Falchion
 				-- #if AFTER 6.0.1
-				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+				description = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				-- #endif
-				["timeline"] = { CREATED_2_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
+				timeline = { CREATED_2_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
 			}),
 			i(25160),	-- Vengeance Blade
 		}),
@@ -906,46 +906,46 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 		-- #if BEFORE MOP
 		filter(THROWN, {
 			i(28535, {	-- Amani Throwing Axe
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(28540, {	-- Arakkoa Talon-Axe
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(28544, {	-- Assassin's Shuriken
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(28531, {	-- Barbed Shrike
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(28543, {	-- Dreghood Throwing Axe
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(28534, {	-- Fel Tipped Dart
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(28538, {	-- Forked Shuriken
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(28542, {	-- Heartseeker Knives
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(28536, {	-- Jagged Guillotine
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(28539, {	-- Razor-Edged Boomerang
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(28541, {	-- Sawshrike
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(28532, {	-- Silver Throwing Knifes
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(28537, {	-- Wildhammer Throwing Axe
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(28533, {	-- Wooden Boomerang
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 		}),
 		-- #endif
@@ -1031,7 +1031,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 	}),
 	filter(MISC, {
 		i(29739, {	-- Arcane Tome [The Scryers]
-			["coords"] = {
+			coords = {
 				{ 25.3, 70.4, NETHERSTORM },	-- Manaforge B'naar
 				{ 50.5, 83.1, NETHERSTORM },	-- Manaforge Coruu
 				{ 55.9, 79.2, NETHERSTORM },	-- Sunfury Hold
@@ -1040,10 +1040,10 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				{ 42.7, 37.4, ISLE_OF_QUELDANAS },	-- Dawnstar Village
 				-- #endif
 			},
-			["maps"] = { TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
+			maps = { TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
 		}),
 		i(29740, {	-- Fel Armament [The Aldor]
-			["coords"] = {
+			coords = {
 				{ 10.7, 40.5, NAGRAND },	-- The Twilight Ridge
 				{ 63.4, 65.7, BLADES_EDGE_MOUNTAINS },	-- Death's Door
 				{ 73.7, 40.9, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Anger
@@ -1051,23 +1051,23 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				{ 41.3, 21.0, NETHERSTORM },	-- Forge Base: Gehenna
 				{ 40.2, 38.2, SHADOWMOON_VALLEY },	-- The Deathforge
 			},
-			["maps"] = { AUCHINDOUN_SHADOW_LABYRINTH, TEMPEST_KEEP_ARCATRAZ },
+			maps = { AUCHINDOUN_SHADOW_LABYRINTH, TEMPEST_KEEP_ARCATRAZ },
 		}),
 		i(29426, {	-- Firewing Signet [The Scryers]
-			["coord"] = { 71.2, 37.4, TEROKKAR_FOREST },
+			coord = { 71.2, 37.4, TEROKKAR_FOREST },
 		}),
 		i(29425, {	-- Mark of Kil'jaeden [The Aldor]
-			["coords"] = {
+			coords = {
 				{ 40.2, 58.6, TEROKKAR_FOREST },	-- The Shadow Stair
 				{ 31.4, 52.7, TEROKKAR_FOREST },	-- Shadow Tomb
 				{ 70.8, 79.9, NAGRAND },	-- Kil'sorrow Fortress
 			},
 			-- #if AFTER 9.0.3
-			["description"] = "The Shadowlands level squish made this mark wonky to obtain, requiring low level character and specific conditions. Otherwise Mark of Sargeras drops in it's place.",
+			description = "The Shadowlands level squish made this mark wonky to obtain, requiring low level character and specific conditions. Otherwise Mark of Sargeras drops in it's place.",
 			-- #endif
 		}),
 		i(30809, {	-- Mark of Sargeras [The Aldor]
-			["coords"] = {
+			coords = {
 				{ 10.7, 40.5, NAGRAND },	-- The Twilight Ridge
 				{ 63.4, 65.7, BLADES_EDGE_MOUNTAINS },	-- Death's Door
 				{ 73.7, 40.9, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Anger
@@ -1075,10 +1075,10 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				{ 41.3, 21.0, NETHERSTORM },	-- Forge Base: Gehenna
 				{ 40.2, 38.2, SHADOWMOON_VALLEY },	-- The Deathforge
 			},
-			["maps"] = { AUCHINDOUN_SHADOW_LABYRINTH, TEMPEST_KEEP_ARCATRAZ },
+			maps = { AUCHINDOUN_SHADOW_LABYRINTH, TEMPEST_KEEP_ARCATRAZ },
 		}),
 		i(30810, {	-- Sunfury Signet [The Scryers]
-			["coords"] = {
+			coords = {
 				{ 25.3, 70.4, NETHERSTORM },	-- Manaforge B'naar
 				{ 50.5, 83.1, NETHERSTORM },	-- Manaforge Coruu
 				{ 55.9, 79.2, NETHERSTORM },	-- Sunfury Hold
@@ -1087,7 +1087,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				{ 42.7, 37.4, ISLE_OF_QUELDANAS },	-- Dawnstar Village
 				-- #endif
 			},
-			["maps"] = { TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
+			maps = { TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
 		}),
 		-- #IF AFTER 4.0.1
 		i(22146),	-- Book: Gift of the Wild
@@ -1137,7 +1137,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 		i(31893),	-- Eight of Storms
 	})),
 	filter(REAGENTS, {
-		["groups"] = appendAllGroups(
+		groups = appendAllGroups(
 			-- Table of Content:
 			-- 	Cloth + Silk
 			-- 	Elemental reagents
@@ -1149,24 +1149,24 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			-- 	Cloth + Silk:
 			{
 				i(21877, {	-- Netherweave Cloth
-					["description"] = "Netherweave Cloth is a very common drop from TBC humanoid and undead creatures.",
+					description = "Netherweave Cloth is a very common drop from TBC humanoid and undead creatures.",
 				}),
 				i(21881, {	-- Netherweb Spider Silk
-					["description"] =
+					description =
 						-- #if AFTER CATA
 						"Netherweb Spider Silk is a common drop from TBC spiders, most viably farmed in Karazhan and Terokkar Forest.",
 						-- #else
 						"Netherweb Spider Silk is a common drop from TBC spiders, most viably farmed in Terokkar Forest.",
 						-- #endif
-					["coords"] = {
+					coords = {
 						{ 52.3, 78.5, TEROKKAR_FOREST },	-- Netherweb Ridge
 						{ 54.8, 59.8, TEROKKAR_FOREST },	-- Allerian Stronghold, west of
 						{ 44.6, 34.3, TEROKKAR_FOREST },	-- Cenarion Thicket, south of
 					},
 					-- #if AFTER CATA
-					["maps"] = { KARAZHAN },
+					maps = { KARAZHAN },
 					-- #endif
-					["crs"] = {
+					crs = {
 						-- #if AFTER CATA
 						15170,	-- Coldmist Stalker
 						15171,	-- Coldmist Widow
@@ -1180,7 +1180,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			--
 			-- 	Elemental reagents:
 			sharedData({	-- Air
-				["coords"] = {
+				coords = {
 					{ 70.4, 21.2, NAGRAND },	-- Elemental Plateu, airy
 					{ 65.25, 22.5, SHADOWMOON_VALLEY },	-- Altar of Sha'tar, north of.
 					{ 66.1, 30.0, SHADOWMOON_VALLEY },	-- Altar of Sha'tar, east of.
@@ -1188,7 +1188,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					{ 61.6, 65.9, SHADOWMOON_VALLEY },	-- Netherwing Pass proper
 					{ 57.2, 73.2, SHADOWMOON_VALLEY },	-- Southwestern Netherwing Pass
 				},
-				["crs"] = {
+				crs = {
 					17158,	-- Dust Howler
 					21060,	-- Enraged Air Spirit
 					17160,	-- Living Cyclone
@@ -1196,13 +1196,13 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					22310,	-- Storming Wind-Ripper
 					24222,	-- Windy Cload (Gas cloud)
 				},
-				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
+				description = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
 			}, {
 				i(22572),	-- Mote of Air
 				i(22451),	-- Primal Air
 			}),
 			sharedData({	-- Earth
-				["coords"] = {
+				coords = {
 					{ 65.5, 23.7, NAGRAND },	-- Elemental Plateu, earthy
 					{ 67.1, 38.0, NAGRAND },	-- Garadar, east of
 					{ 54.4, 20.2, NAGRAND },	-- Kil'Sorrow Fortress, vest of.
@@ -1210,16 +1210,16 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					{ 31.5, 80.4, NAGRAND },	-- Oshu'gun, south of.
 					{ 46.5, 46.0, SHADOWMOON_VALLEY },	-- The Fel Pits
 				},
-				["crs"] = {
+				crs = {
 					21060,	-- Enraged Earth Spirit
 					18062,	-- Enraged Crusher
 					22313,	-- Rumbling Earth-Heart
 					17157,	-- Shattered Rumbler
 					17156,	-- Tortured Earth Spirit
 				},
-				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
-				["_allowObjectProvider"] = true,
-				["providers"] = {
+				description = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
+				_allowObjectProvider = true,
+				providers = {
 					{ "o", 181556 },	-- Adamantite Deposit
 					{ "o", 181555 },	-- Fel Iron Deposit
 					{ "o", 181557 },	-- Khorium Vein
@@ -1230,23 +1230,23 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				i(22452),	-- Primal Earth
 			}),
 			sharedData({	-- Fire
-				["coords"] = {
+				coords = {
 					{ 29.2, 81.3, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Terror
 					{ 72.4, 20.2, BLADES_EDGE_MOUNTAINS },	-- Skald
 					{ 62.7, 19.5, HELLFIRE_PENINSULA },	-- Throne of Kil'jaeden
 					{ 67.3, 21.2, NAGRAND },	-- Elemental Plateu, fiery
 					{ 46.5, 46.0, SHADOWMOON_VALLEY },	-- The Fel Pits
 				},
-				["crs"] = {
+				crs = {
 					21061,	-- Enraged Fire Spirit
 					22323,	-- Incandescent Fel Spark
 					22311,	-- Raging Fire-Soul
 					20514,	-- Searing Elemental
 					22298,	-- Vile Fire-Soul
 				},
-				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
-				["_allowObjectProvider"] = true,
-				["providers"] = {
+				description = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
+				_allowObjectProvider = true,
+				providers = {
 					{ "o", 181555 },	-- Fel Iron Deposit
 					{ "o", 181557 },	-- Khorium Vein
 				},
@@ -1255,7 +1255,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				i(21884),	-- Primal Fire
 			}),
 			sharedData({	-- Life
-				["crs"] = {
+				crs = {
 					17723,	-- Bog Giant
 					17770,	-- Hungarfen
 					-- #if BEFORE 2.3.0
@@ -1265,10 +1265,10 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					17725,	-- Underbog Lurker
 					17871,	-- Underbog Shambler
 				},
-				["description"] = "The given maps and sources applies for how to obtain this element's motes.",
-				["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
-				["_allowObjectProvider"] = true,
-				["providers"] = {
+				description = "The given maps and sources applies for how to obtain this element's motes.",
+				maps = { COILFANG_RESERVOIR_UNDERBOG },
+				_allowObjectProvider = true,
+				providers = {
 					{ "o", 181278 },	-- Ancient Lichen
 					{ "o", 181271 },	-- Dreaming Glory
 					{ "o", 181270 },	-- Felweed
@@ -1282,7 +1282,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				i(21886),	-- Primal Life
 			}),
 			sharedData({	-- Mana
-				["coords"] = {
+				coords = {
 					{ 51.5, 16.1, BLADES_EDGE_MOUNTAINS },	-- Bash'ir Landing
 					{ 67.5, 11.7, BLADES_EDGE_MOUNTAINS },	-- Crystal Spine East
 					{ 61.0, 11.0, BLADES_EDGE_MOUNTAINS },	-- Crystal Spine West
@@ -1297,7 +1297,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					{ 69.0, 67.3, SHADOWMOON_VALLEY },	-- Dragonmaw Fortress, south of
 					{ 70.0, 85.0, SHADOWMOON_VALLEY },	-- Netherwing Ledge
 				},
-				["crs"] = {
+				crs = {
 					22181,	-- Aether Ray
 					17408,	-- Arcane Vortex (Gas cloud)
 					-- #if AFTER 2.4.0
@@ -1313,21 +1313,21 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					18865,	-- Warp Aberration
 					20516,	-- Warp Monstrosity
 				},
-				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
-				["_allowObjectProvider"] = true,
-				["provider"] = { "o", 181279 },	-- Netherbloom
+				description = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
+				_allowObjectProvider = true,
+				provider = { "o", 181279 },	-- Netherbloom
 			}, {
 				i(22576),	-- Mote of Mana
 				i(22457),	-- Primal Mana
 			}),
 			sharedData({	-- Shadow
-				["coords"] = {
+				coords = {
 					{ 44.8, 83.2, HELLFIRE_PENINSULA },	-- The Warp Fields
 					{ 78.0, 71.6, HELLFIRE_PENINSULA },	-- Void Ridge
 					{ 36.0, 71.0, NAGRAND },	-- Oshu'gun
 					{ 62.3, 40.4, NETHERSTORM },	-- Manaforge Ultris
 				},
-				["crs"] = {
+				crs = {
 					17014,	-- Collapsing Voidwalker
 					17407,	-- Felmist (Gas cloud)
 					16974,	-- Rogue Voidwalker
@@ -1337,13 +1337,13 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					17981,	-- Voidspawn
 					18870,	-- Voidshrieker
 				},
-				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
+				description = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
 			}, {
 				i(22577),	-- Mote of Shadow
 				i(22456),	-- Primal Shadow
 			}),
 			sharedData({	-- Water
-				["coords"] = {
+				coords = {
 					{ 62.1, 16.1, NAGRAND },	-- Elemental Plateu, watery
 					{ 40.5, 44.9, NAGRAND },	-- Halaa Basin
 					{ 33.9, 50.0, NAGRAND },	-- Lake Sunspring
@@ -1354,7 +1354,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					{ 57.9, 63.7, ZANGARMARSH },	-- The Lagoon
 					{ 58.2, 54.1, ZANGARMARSH },	-- The Lagoon, north of
 				},
-				["crs"] = {
+				crs = {
 					20196,	-- Bloodthirsty Marshfang
 					22309,	-- Crashing Wave-Spirit
 					21059,	-- Enraged Water Spirit
@@ -1368,9 +1368,9 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					17378,	-- Swamp Gas (Gas cloud)
 					-- #endif
 				},
-				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
-				["_allowObjectProvider"] = true,
-				["provider"] = { "o", 182951 },	-- Pure Water (fishing school)
+				description = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
+				_allowObjectProvider = true,
+				provider = { "o", 182951 },	-- Pure Water (fishing school)
 			}, {
 				i(22578),	-- Mote of Water
 				i(21885),	-- Primal Water
@@ -1380,23 +1380,23 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			--
 			-- 	Clams:
 				i(24476, {	-- Jaggal Clam
-					["coords"] = {
+					coords = {
 						{ 46.2, 29.1, SHADOWMOON_VALLEY },	-- Coilskar Point
 						{ 53.1, 25.5, SHADOWMOON_VALLEY },	-- Coilskar Cistern
 					},
-					["maps"] = { ZANGARMARSH },
-					["description"] = "Drops commonly from humanoid- and beast water creatures like naga, dredgers and trashers.",
-					["groups"] = {
+					maps = { ZANGARMARSH },
+					description = "Drops commonly from humanoid- and beast water creatures like naga, dredgers and trashers.",
+					groups = {
 						i(24477),	-- Jaggal Clam Meat
 						i(24478),	-- Jaggal Pearl
-						i(24479, {["timeline"] = { ADDED_2_1_0 }}),	-- Shadow Pearl
+						i(24479, {timeline = { ADDED_2_1_0 }}),	-- Shadow Pearl
 					},
 				}),
 			-- _________________________________
 			--
 			-- 	Cooking reagents:
 				i(27671, {	-- Buzzard Meat
-					["coords"] = {
+					coords = {
 						{ 61.6, 67.7, HELLFIRE_PENINSULA },	-- Valley of Bones
 						{ 29.4, 54.8, HELLFIRE_PENINSULA },	-- Southeastern bonecage
 						{ 20.6, 52.5, HELLFIRE_PENINSULA },	-- Southwestern bonecages
@@ -1406,14 +1406,14 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 						{ 42.8, 52.2, TEROKKAR_FOREST },	-- Carrion Hill
 						{ 45.7, 62.5, TEROKKAR_FOREST },	-- The Bone Wastes east
 					},
-					["crs"] = {
+					crs = {
 						18470,	-- Bonelasher
 						16972,	-- Bonestripper Buzzard
 						16973,	-- Bonestripper Vulture
 					},
 				}),
 				i(27677, {	-- Chunk o' Basilisk
-					["coords"] = {
+					coords = {
 						{ 64.5, 33.0, BLADES_EDGE_MOUNTAINS },	-- Veil Ruuan
 						{ 72.4, 20.2, BLADES_EDGE_MOUNTAINS },	-- Skald
 						{ 40.2, 18.4, BLADES_EDGE_MOUNTAINS },	-- Grishnath
@@ -1428,7 +1428,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 						{ 14.9, 28.9, ZANGARMARSH },	-- Ango'rosh, west of
 						{ 8.3, 52.7, ZANGARMARSH },	-- Sporewind Lake, west of
 					},
-					["crs"] = {
+					crs = {
 						18461,	-- Dampscale Basilisk
 						18463,	-- Dampscale Devourer
 						20924,	-- Grishnath Basilisk
@@ -1445,25 +1445,25 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					},
 				}),
 				i(27678, {	-- Clefthoof Meat
-					["description"] = "Clefthoofs can be found all over Nagrand.",
-					["crs"] = {
+					description = "Clefthoofs can be found all over Nagrand.",
+					crs = {
 						17133,	-- Aged Clefthoof
 						17132,	-- Clefthoof Bull
 						19183,	-- Clefthoof Calf
 						18205,	-- Clefthoof
 					},
-					["maps"] = { NAGRAND },
+					maps = { NAGRAND },
 				}),
 				-- i(24477),	-- Jaggal Clam Meat > Properly sourced under Jaggal Clam listed above.
 				i(31670, {	-- Raptor Ribs
-					["coords"] = {
+					coords = {
 						{ 44.9, 54.8, BLADES_EDGE_MOUNTAINS },	-- Bladespire Grounds
 						{ 66.6, 57.0, BLADES_EDGE_MOUNTAINS },	-- Razor Ridge
 						{ 71.5, 30.1, BLADES_EDGE_MOUNTAINS },	-- Bladed Gulch
 						{ 66.0, 22.6, BLADES_EDGE_MOUNTAINS },	-- Gruul's Lair
 						{ 45.2, 11.3, NETHERSTORM },	-- Eco-Dome Farfield
 					},
-					["crs"] = {
+					crs = {
 						20728,	-- Bladespire Raptor
 						20729,	-- Bladespire Ravager
 						22052,	-- Daggermaw Blackhide
@@ -1473,13 +1473,13 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					},
 				}),
 				i(27674, {	-- Ravager Flesh
-					["coords"] = {
+					coords = {
 						{ 58.9, 69.3, BLADES_EDGE_MOUNTAINS },	-- Razor Ridge
 						{ 38.5, 88.3, HELLFIRE_PENINSULA },	-- Razorthorn Trail
 						{ 22.9, 67.2, HELLFIRE_PENINSULA },	-- Dustquill Ravine
 						{ 8.7, 50.8, HELLFIRE_PENINSULA },	-- Thornfang Hill
 					},
-					["crs"] = {
+					crs = {
 						16934,	-- Quillfang Ravager
 						19189,	-- Quillfang Skitterer
 						16932,	-- Razorfang Hatchling
@@ -1489,40 +1489,40 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					},
 				}),
 				i(31671, {	-- Serpent Flesh
-					["coords"] = {
+					coords = {
 						{ 68.5, 70.55, BLADES_EDGE_MOUNTAINS },	-- Scalewing Shelf
 						{ 66.0, 52.6, BLADES_EDGE_MOUNTAINS },	-- Razor Ridge
 						{ 71.5, 30.1, BLADES_EDGE_MOUNTAINS },	-- Bladed Gulch
 						{ 56.4, 60.0, NETHERSTORM },	-- The Vortex Fields west
 						{ 66.3, 61.8, NETHERSTORM },	-- The Vortex Fields east
 					},
-					["crs"] = {
+					crs = {
 						21123,	-- Felsworn Scalewing
 						20749,	-- Scalewing Serpent
 						20673,	-- Swiftwing Shredder
 					},
 				}),
 				i(27682, {	-- Talbuk Venison
-					["description"] = "Talbuks can be found all over Nagrand.",
-					["coord"] = { 41.8, 35.8, NETHERSTORM },	-- Eco-Dome Skyperch
-					["crs"] = {
+					description = "Talbuks can be found all over Nagrand.",
+					coord = { 41.8, 35.8, NETHERSTORM },	-- Eco-Dome Skyperch
+					crs = {
 						18964,	-- Injured Talbuk
 						20610,	-- Talbuk Doe
 						20777,	-- Talbuk Sire
 						17130,	-- Talbuk Stag
 						17131,	-- Talbuk Thorngrazer
 					},
-					["maps"] = { NAGRAND },
+					maps = { NAGRAND },
 				}),
 				i(27681, {	-- Warped Flesh
-					["coords"] = {
+					coords = {
 						{ 56.4, 60.0, NETHERSTORM },	-- The Vortex Fields west
 						{ 66.3, 61.8, NETHERSTORM },	-- The Vortex Fields east
 						{ 65.9, 85.0, TEROKKAR_FOREST },	-- Blackwind Lake Southside
 						{ 60.3, 38.7, TEROKKAR_FOREST },	-- Tuurem, southeast of
 						{ 20.6, 73.5, TEROKKAR_FOREST },	-- Veil Lithic, vest of
 					},
-					["crs"] = {
+					crs = {
 						23219,	-- Blackwind Warp Chaser
 						18884,	-- Warp Chaser
 						18465,	-- Warp Hunter
@@ -1533,24 +1533,24 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			--
 			-- 	Other reagents:
 				i(32428, {	-- Heart of Darkness
-					["description"] = "Can drop from most creatures within the given raids.",
-					["maps"] = {
+					description = "Can drop from most creatures within the given raids.",
+					maps = {
 						THE_BATTLE_FOR_MOUNT_HYJAL,
 						THE_BLACK_TEMPLE,
 					},
-					["timeline"] = { ADDED_2_1_0 },
+					timeline = { ADDED_2_1_0 },
 				}),
 				i(30183, {	-- Nether Vortex
-					["description"] = "Can drop from most creatures within the given raids.",
-					["maps"] = {
+					description = "Can drop from most creatures within the given raids.",
+					maps = {
 						SERPENTSHRINE_CAVERN,
 						TEMPEST_KEEP_THE_EYE,
 					},
 				}),
 				i(23572, {	-- Primal Nether
-					["description"] = "Guaranteed drop from the last boss in any Heroic TBC dungeon.",
+					description = "Guaranteed drop from the last boss in any Heroic TBC dungeon.",
 					-- Danny Donkey: Uncommenting this will create a Reagents header with Primal Nether in the given minilists on retail despite Primal Nether already being sourced on the bosses themselves.
-					--[[["maps"] = {
+					--[[maps = {
 						AUCHINDOUN_AUCHENAI_CRYPTS,
 						AUCHINDOUN_MANA_TOMBS,
 						AUCHINDOUN_SETHEKK_HALLS,
@@ -1578,10 +1578,10 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 		-- #if BEFORE 4.0.1
 		cl(DRUID, {
 			{
-				["itemID"] = 22146,	-- Book: Gift of the Wild III
-				["spellID"] = 26991,	-- Gift of the Wild III
-				["rank"] = 3,
-				["maps"] = {
+				itemID = 22146,	-- Book: Gift of the Wild III
+				spellID = 26991,	-- Gift of the Wild III
+				rank = 3,
+				maps = {
 						AUCHINDOUN_AUCHENAI_CRYPTS,
 						AUCHINDOUN_MANA_TOMBS,
 						AUCHINDOUN_SETHEKK_HALLS,
@@ -1629,33 +1629,33 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 		}),
 		cl(MAGE, {
 			{
-				["itemID"] = 22153,	-- Tome of Arcane Brilliance II
-				["spellID"] = 27127,	-- Arcane Brilliance II
-				["rank"] = 2,
+				itemID = 22153,	-- Tome of Arcane Brilliance II
+				spellID = 27127,	-- Arcane Brilliance II
+				rank = 2,
 			},
 			{
-				["itemID"] = 31501,	-- Tome of Conjure Food VIII
-				["spellID"] = 33717,	-- Conjure Food VIII
-				["description"] = "Learn both of these tomes and then visit your trainer for the table.",
-				["rank"] = 8,
+				itemID = 31501,	-- Tome of Conjure Food VIII
+				spellID = 33717,	-- Conjure Food VIII
+				description = "Learn both of these tomes and then visit your trainer for the table.",
+				rank = 8,
 			},
 			{
-				["itemID"] = 29550,	-- Tome of Conjure Water IX
-				["spellID"] = 27090,	-- Conjure Water IX
-				["description"] = "Learn both of these tomes and then visit your trainer for the table.",
-				["rank"] = 9,
+				itemID = 29550,	-- Tome of Conjure Water IX
+				spellID = 27090,	-- Conjure Water IX
+				description = "Learn both of these tomes and then visit your trainer for the table.",
+				rank = 9,
 			},
 		}),
 		cl(PRIEST, {
 			{
-				["itemID"] = 29549,	-- Codex: Prayer of Fortitude III
-				["spellID"] = 25392,	-- Prayer of Fortitude III
-				["rank"] = 3,
+				itemID = 29549,	-- Codex: Prayer of Fortitude III
+				spellID = 25392,	-- Prayer of Fortitude III
+				rank = 3,
 			},
 			{
-				["itemID"] = 31837,	-- Codex: Prayer of Shadow Protection II
-				["spellID"] = 39374,	-- Prayer of Shadow Protection II
-				["rank"] = 2,
+				itemID = 31837,	-- Codex: Prayer of Shadow Protection II
+				spellID = 39374,	-- Prayer of Shadow Protection II
+				rank = 2,
 			},
 		}),
 		-- #endif
@@ -1669,7 +1669,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(22903),	-- Recipe: Insane Strength Potion (RECIPE!)
 		}),
 		prof(BLACKSMITHING, {
-			i(33186, {["timeline"]={ADDED_2_3_0}}),	-- Plans: Adamantite Weapon Chain (RECIPE!)
+			i(33186, {timeline={ADDED_2_3_0}}),	-- Plans: Adamantite Weapon Chain (RECIPE!)
 			i(23626),	-- Plans: Black Felsteel Bracers (RECIPE!)
 			i(23628),	-- Plans: Blessed Bracers (RECIPE!)
 			i(23627),	-- Plans: Bracers of the Green Fortress (RECIPE!)
@@ -1681,7 +1681,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(23629),	-- Plans: Felsteel Longblade (RECIPE!)
 			i(23632),	-- Plans: Felsteel Reaper (RECIPE!)
 			i(23621),	-- Plans: Gauntlets of the Iron Tower (RECIPE!)
-			i(33954, {["timeline"]={ADDED_2_3_0}}),	-- Plans: Hammer of Righteous Might (RECIPE!)
+			i(33954, {timeline={ADDED_2_3_0}}),	-- Plans: Hammer of Righteous Might (RECIPE!)
 			i(23637),	-- Plans: Hand of Eternity (RECIPE!)
 			i(23624),	-- Plans: Helm of the Stalwart Defender (RECIPE!)
 			i(23630),	-- Plans: Khorium Champion (RECIPE!)
@@ -1696,9 +1696,9 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(22542),	-- Formula: Enchant Boots - Vitality (RECIPE!)
 			i(22532),	-- Formula: Enchant Bracer - Versatility Prime / TBC: Enchant Bracer - Restore Mana Prime (RECIPE!)
 			i(28270),	-- Formula: Enchant Chest - Major Resilience (RECIPE!)
-			i(22548, {["timeline"]={REMOVED_5_0_4}}),	-- Formula: Enchant Cloak - Major Resistance (RECIPE!)
+			i(22548, {timeline={REMOVED_5_0_4}}),	-- Formula: Enchant Cloak - Major Resistance (RECIPE!)
 			i(22540),	-- Formula: Enchant Shield - Parry / TBC: Formula: Enchant Shield - Shield Block (RECIPE!)
-			i(22541, {["timeline"]={REMOVED_5_0_4}}),	-- Formula: Enchant Shield - Resistance (RECIPE!)
+			i(22541, {timeline={REMOVED_5_0_4}}),	-- Formula: Enchant Shield - Resistance (RECIPE!)
 			i(22557),	-- Formula: Enchant Weapon - Battlemaster (RECIPE!)
 			i(22553),	-- Formula: Enchant Weapon - Potency (RECIPE!)
 			i(22558),	-- Formula: Enchant Weapon - Spellsurge (RECIPE!)
@@ -1713,7 +1713,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 		}),
 		prof(JEWELCRAFTING, {
 			-- #if BEFORE CATA
-			i(31876, {["timeline"]={ADDED_2_1_0}}),	-- Design: Balanced Nightseye (RECIPE!)
+			i(31876, {timeline={ADDED_2_1_0}}),	-- Design: Balanced Nightseye (RECIPE!)
 			i(24165),	-- Design: Blazing Eternium Band (RECIPE!)
 			i(24193),	-- Design: Bold Living Ruby (RECIPE!)
 			i(24168),	-- Design: Braided Eternium Chain (RECIPE!)
@@ -1732,9 +1732,9 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(24206),	-- Design: Gleaming Dawnstone (RECIPE!)
 			i(24216),	-- Design: Glinting Noble Topaz (RECIPE!)
 			i(24211),	-- Design: Glowing Nightseye (RECIPE!)
-			i(31875, {["timeline"]={ADDED_2_1_0}}),	-- Design: Great Dawnstone (RECIPE!)
+			i(31875, {timeline={ADDED_2_1_0}}),	-- Design: Great Dawnstone (RECIPE!)
 			i(24163),	-- Design: Heavy Felsteel Ring (RECIPE!)
-			i(31877, {["timeline"]={ADDED_2_1_0}}),	-- Design: Infused Nightseye (RECIPE!)
+			i(31877, {timeline={ADDED_2_1_0}}),	-- Design: Infused Nightseye (RECIPE!)
 			i(24213),	-- Design: Inscribed Noble Topaz (RECIPE!)
 			i(24220),	-- Design: Jagged Talasite (RECIPE!)
 			i(24167),	-- Design: Living Ruby Pendant (RECIPE!)
@@ -1754,23 +1754,23 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(23154),	-- Design: Stormy Azure Moonstone (RECIPE!)
 			i(24202),	-- Design: Stormy Star of Elune (RECIPE!)
 			i(24197),	-- Design: Subtle Living Ruby (RECIPE!)
-			i(24195, {["timeline"]={ADDED_2_0_5, REMOVED_4_0_3}}),	-- Design: Teardrop Living Ruby (RECIPE!)
+			i(24195, {timeline={ADDED_2_0_5, REMOVED_4_0_3}}),	-- Design: Teardrop Living Ruby (RECIPE!)
 			i(25905),	-- Design: Tenacious Earthstorm Diamond (RECIPE!)
 			i(24207),	-- Design: Thick Dawnstone (RECIPE!)
 			i(24166),	-- Design: Thick Felsteel Necklace (RECIPE!)
-			i(32411, {["timeline"]={ADDED_2_1_0}}),	-- Design: Thundering Skyfire Diamond (RECIPE!)
-			i(31878, {["timeline"]={ADDED_2_1_0}}),	-- Design: Veiled Noble Topaz (RECIPE!)
-			i(31879, {["timeline"]={ADDED_2_1_0}}),	-- Design: Wicked Noble Topaz (RECIPE!)
+			i(32411, {timeline={ADDED_2_1_0}}),	-- Design: Thundering Skyfire Diamond (RECIPE!)
+			i(31878, {timeline={ADDED_2_1_0}}),	-- Design: Veiled Noble Topaz (RECIPE!)
+			i(31879, {timeline={ADDED_2_1_0}}),	-- Design: Wicked Noble Topaz (RECIPE!)
 			-- #else
 			i(24165),	-- Design: Blazing Eternium Band (RECIPE!)
 			i(24193),	-- Design: Bold Living Ruby (RECIPE!)
 			i(24168),	-- Design: Braided Eternium Chain (RECIPE!)
 			i(24203),	-- Design: Brilliant Living Ruby (RECIPE!)
 			i(24196),	-- Design: Brilliant Living Ruby (RECIPE!) [BoE]
-			i(24195, {["timeline"]={ADDED_2_0_5, REMOVED_4_0_3}}),	-- Design: Brilliant Living Ruby (RECIPE!)
+			i(24195, {timeline={ADDED_2_0_5, REMOVED_4_0_3}}),	-- Design: Brilliant Living Ruby (RECIPE!)
 			i(25906),	-- Design: Brutal Earthstorm Diamond (RECIPE!)
 			i(24171),	-- Design: Chain of the Twilight Owl (RECIPE!)
-			i(31879, {["timeline"]={ADDED_2_1_0}}),	-- Design: Deadly Noble Topaz (RECIPE!)
+			i(31879, {timeline={ADDED_2_1_0}}),	-- Design: Deadly Noble Topaz (RECIPE!)
 			i(24164),	-- Design: Delicate Eternium Ring (RECIPE!)
 			i(24192),	-- Design: Delicate Living Ruby (RECIPE!) [BoE]
 			i(24194),	-- Design: Delicate Living Ruby (RECIPE!)
@@ -1779,7 +1779,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(24169),	-- Design: Eye of the Night (RECIPE!)
 			i(24198),	-- Design: Flashing Living (RECIPE!)
 			i(24216),	-- Design: Glinting Nightseye (RECIPE!)
-			i(31877, {["timeline"]={ADDED_2_1_0}}),	-- Design: Glinting Nightseye (RECIPE!)
+			i(31877, {timeline={ADDED_2_1_0}}),	-- Design: Glinting Nightseye (RECIPE!)
 			i(24163),	-- Design: Heavy Felsteel Ring (RECIPE!)
 			i(24213),	-- Design: Inscribed Noble Topaz (RECIPE!)
 			i(24220),	-- Design: Jagged Talasite (RECIPE!)
@@ -1791,9 +1791,9 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(24218),	-- Design: Radiant Talasite (RECIPE!)
 			i(24215),	-- Design: Reckless Noble Topaz (RECIPE!)
 			i(24217),	-- Design: Regal Talasite (RECIPE!)
-			i(31875, {["timeline"]={ADDED_2_1_0}}),	-- Design: Rigid Star of Elune (RECIPE!)
+			i(31875, {timeline={ADDED_2_1_0}}),	-- Design: Rigid Star of Elune (RECIPE!)
 			i(24205),	-- Design: Rigid Star of Elune (RECIPE!) [BoE]
-			i(31876, {["timeline"]={ADDED_2_1_0}}),	-- Design: Shifting Nightseye (RECIPE!)
+			i(31876, {timeline={ADDED_2_1_0}}),	-- Design: Shifting Nightseye (RECIPE!)
 			i(24210),	-- Design: Shifting Nightseye (RECIPE!)
 			i(24206),	-- Design: Smooth Dawnstone (RECIPE!)
 			i(24204),	-- Design: Smooth Dawnstone (RECIPE!)
@@ -1807,19 +1807,19 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(24197),	-- Design: Subtle Dawnstone (RECIPE!)
 			i(25905),	-- Design: Tenacious Earthstorm Diamond (RECIPE!)
 			i(24166),	-- Design: Thick Felsteel Necklace (RECIPE!)
-			i(32411, {["timeline"]={ADDED_2_1_0}}),	-- Design: Thundering Skyfire Diamond (RECIPE!)
+			i(32411, {timeline={ADDED_2_1_0}}),	-- Design: Thundering Skyfire Diamond (RECIPE!)
 			i(24211),	-- Design: Timeless Nightseye (RECIPE!)
-			i(31878, {["timeline"]={ADDED_2_1_0}}),	-- Design: Veiled Nightseye (RECIPE!)
+			i(31878, {timeline={ADDED_2_1_0}}),	-- Design: Veiled Nightseye (RECIPE!)
 			-- #endif
 		}),
 		prof(LEATHERWORKING, {
 			i(29724),	-- Pattern: Cobrascale Gloves (RECIPE!) (BoE version)
 			i(29723),	-- Pattern: Cobrascale Hood (RECIPE!)
 			i(29714, {	-- Pattern: Drums of Restoration (RECIPE!)
-				["timeline"] = { REMOVED_2_3_0 },
+				timeline = { REMOVED_2_3_0 },
 			}),
 			i(29718, {	-- Pattern: Drums of Speed (RECIPE!)
-				["timeline"] = { REMOVED_2_3_0 },
+				timeline = { REMOVED_2_3_0 },
 			}),
 			i(29730),	-- Pattern: Earthen Netherscale Boots (RECIPE!)
 			i(29727),	-- Pattern: Gloves of the Living Touch (RECIPE!) (BoE version)

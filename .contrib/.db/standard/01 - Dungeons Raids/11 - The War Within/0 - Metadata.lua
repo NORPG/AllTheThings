@@ -3,5 +3,5 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.TWW, {
-	["timeline"] = { ADDED_11_0_2 },
+	timeline = { ADDED_11_0_2 },
 }));

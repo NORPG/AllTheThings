@@ -2,7 +2,7 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	m(MALDRAXXUS, {
 		n(ZONE_DROPS, {
 			filter(REAGENTS, {
@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			i(187425),	-- Ancient Maldraxxi Armament
 			i(184104, {	-- Blight-Touched Egg
-				["crs"] = {
+				crs = {
 					170456,	-- Diseased Galescreamer
 					162259,	-- Galescreamer Pup
 					162588,	-- Gristlebeak
@@ -89,15 +89,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					162258,	-- Ravenous Galescreamer
 					164587,	-- Satiated Sawtooth
 				},
-				["groups"] = {
+				groups = {
 					i(184103, {	-- Cracked Blight-Touched Egg
 						i(181818),	-- Callow Flayedwing (MOUNT!)
 					}),
 				},
 			}),
 			i(177236, {	-- Dog Bone's Bone (EC!)
-				["customCollect"] = "SL_COV_VEN",
-				["crs"] = {
+				customCollect = "SL_COV_VEN",
+				crs = {
 					173509,	-- Animated Marrowhound
 					168453,	-- Animated Pointer
 					165960,	-- Blazing Forgehound
@@ -106,12 +106,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			i(180532),	-- Oxxein Lockbox
 			i(181777, {	-- Phaeton's Key
-				["coord"] = { 38.0, 70.6, MALDRAXXUS },
-				["crs"] = { 170563 },	-- Runespeaker Phaeton
+				coord = { 38.0, 70.6, MALDRAXXUS },
+				crs = { 170563 },	-- Runespeaker Phaeton
 			}),
 			i(183691, {	-- Mucosal Pigment (CI!)
-				["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
-				["crs"] = {
+				description = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
+				crs = {
 					165014,	-- Animated Plague
 					161599,	-- Bubbling Sclerosis
 					165027,	-- Burning Extract
@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			i(183124),	-- Simple Tome of Bone-Binding (CI!)
 			i(186727, {	-- Seal Breaker Key
-				["timeline"] = { ADDED_9_1_0 },
+				timeline = { ADDED_9_1_0 },
 			}),
 		}),
 	}),

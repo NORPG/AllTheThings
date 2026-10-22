@@ -4,13 +4,13 @@
 
 root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.WOD, {
-		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
+		n(GARRISONS, sharedData({maps = { LUNARFALL, FROSTWALL } },	{
 			n(BUILDINGS, {
 				garrisonBuilding(164, {	-- Goblin Workshop (rank 1: 162, rank 2: 163, rank 3: 164)
 					n(ACHIEVEMENTS, {
 						ach(9527, {		-- Terrific Technology
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = {
+							description = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							groups = {
 								a(i(111985)),	-- Gnomish Gearworks, Level 3 [Blueprints]
 								h(i(116201)),	-- Goblin Workshop, Level 3 [Blueprints]
 								crit(26627),	-- Robo-Rooster
@@ -27,22 +27,22 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					n(QUESTS, {
 						q(37420, {	-- Fully Armed and Operational
-							["description"] = "Requires Gnomish Gearworks Rank 3.",
-							["qg"] = 84286,	-- Zee
-							["races"] = ALLIANCE_ONLY,
+							description = "Requires Gnomish Gearworks Rank 3.",
+							qg = 84286,	-- Zee
+							races = ALLIANCE_ONLY,
 						}),
 						q(37418, {	-- Fully Armed and Operational
-							["description"] = "Requires Goblin Workshop Rank 3.",
-							["qg"] = 85369,	-- Vee
-							["races"] = HORDE_ONLY,
+							description = "Requires Goblin Workshop Rank 3.",
+							qg = 85369,	-- Vee
+							races = HORDE_ONLY,
 						}),
 						q(37091, {	-- Unconventional Inventions
-							["qg"] = 84286,	-- Zee
-							["races"] = ALLIANCE_ONLY,
+							qg = 84286,	-- Zee
+							races = ALLIANCE_ONLY,
 						}),
 						q(37044, {	-- Unconventional Inventions
-							["qg"] = 85369,	-- Vee
-							["races"] = HORDE_ONLY,
+							qg = 85369,	-- Vee
+							races = HORDE_ONLY,
 						}),
 					}),
 				}),

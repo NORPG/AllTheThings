@@ -2,15 +2,15 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 	m(NAZMIR, {
 		n(EMISSARY_QUESTS, {
-			q(54460, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_TALANJIS_EXPEDITION, EXALTED } }, {	-- Supplies from Talanji's Expedition
-				["provider"] = { "n", 135459 },	-- Provisioner Lija
-				["coord"] = { 39.11, 79.47, NAZMIR },
-				["races"] = HORDE_ONLY,
-				["repeatable"] = true,
-				["groups"] = {
+			q(54460, bubbleDownSelf({ timeline = { ADDED_8_1_0 }, minReputation = { FACTION_TALANJIS_EXPEDITION, EXALTED } }, {	-- Supplies from Talanji's Expedition
+				provider = { "n", 135459 },	-- Provisioner Lija
+				coord = { 39.11, 79.47, NAZMIR },
+				races = HORDE_ONLY,
+				repeatable = true,
+				groups = {
 					i(166282, {	-- Talanji's Expedition Supplies
 						i(166308),	-- For da Blood God! (TOY!)
 						i(166716),	-- Crimson Bat Pup (PET!)
@@ -18,14 +18,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			})),
 			q(50602, {	-- Talanji's Expedition
-				["provider"] = { "n", 135459 },	-- Provisioner Lija
-				["coord"] = { 39.11, 79.47, NAZMIR },
-				["races"] = HORDE_ONLY,
-				["isWorldQuest"] = true,
-				["lvl"] = 120,
-				["groups"] = {
+				provider = { "n", 135459 },	-- Provisioner Lija
+				coord = { 39.11, 79.47, NAZMIR },
+				races = HORDE_ONLY,
+				isWorldQuest = true,
+				lvl = 120,
+				groups = {
 					i(165865, {	-- Nazmir Expeditionary Equipment Cache
-						["sym"] = {
+						sym = {
 							{"select", "mapID", NAZMIR},
 							{"find", "headerID", ZONE_REWARDS },
 							{"extract", "itemID" },	-- Select the Items.
@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(165863, {	-- Zandalari Weapons Cache
-						["sym"] = {
+						sym = {
 							{"select", "mapID", ZANDALAR},
 							{"find", "headerID", ZONE_REWARDS },
 							{"extract", "itemID" },	-- Select the Items.
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(163857, {	-- Azerite Armor Cache
-						["sym"] = {
+						sym = {
 							{"sub", "bfa_azerite_armor_chest" },
 						},
 					}),
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 	m(ZANDALAR, {
 		m(NAZMIR, {
 			n(FACTIONS, {

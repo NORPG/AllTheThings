@@ -4,13 +4,13 @@
 
 -- #if ANYCLASSIC
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, {
-	n(DEFENSE_PROTOCOL_GAMMA, bubbleDownSelf({ ["timeline"] = { ADDED_3_4_3 } }, {
-		["lvl"] = 80,
-		["groups"] = {
+	n(DEFENSE_PROTOCOL_GAMMA, bubbleDownSelf({ timeline = { ADDED_3_4_3 } }, {
+		lvl = 80,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(19439, {	-- Defense Protocol Gamma: Terminated (A)
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19430,	-- Defense Protocol Gamma: Ahn'kahet: The Old Kingdom
 						19429,	-- Defense Protocol Gamma: Azjol-Nerub
 						19431,	-- Defense Protocol Gamma: Drak'Tharon Keep
@@ -25,14 +25,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						19427,	-- Defense Protocol Gamma: Utgarde Keep
 						19437,	-- Defense Protocol Gamma: Utgarde Pinnacle
 					}},
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(211082),	-- Arfus
 					},
 				}),
 				ach(19440, {	-- Defense Protocol Gamma: Terminated (H)
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19430,	-- Defense Protocol Gamma: Ahn'kahet: The Old Kingdom
 						19429,	-- Defense Protocol Gamma: Azjol-Nerub
 						19431,	-- Defense Protocol Gamma: Drak'Tharon Keep
@@ -47,14 +47,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						19427,	-- Defense Protocol Gamma: Utgarde Keep
 						19437,	-- Defense Protocol Gamma: Utgarde Pinnacle
 					}},
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						i(211082),	-- Arfus
 					},
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
+				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
 					424196,	-- Arcane Rune Buff
 					424203,	-- Blood Rune Buff
 					424194,	-- Frost Rune Buff
@@ -63,8 +63,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					424201,	-- Shadow Rune Buff
 					424205	-- Titan Rune Buff
 				),
-				["description"] = "Defeating any boss on Defense Protocol Gamma will reward 1 Defiler's Scourgestone.",
-				["maps"] = {
+				description = "Defeating any boss on Defense Protocol Gamma will reward 1 Defiler's Scourgestone.",
+				maps = {
 					AHNKAHET_THE_OLD_KINGDOM,
 					AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3,
 					DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2,
@@ -79,7 +79,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3,
 					UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2,
 				},
-				["crs"] = {
+				crs = {
 					-- Ahn'kahet: The Old Kingdom
 					29309,	-- Elder Nadox
 					29308,	-- Prince Taldaram
@@ -162,16 +162,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					26693,	-- Skadi the Ruthless
 					26861,	-- King Ymiron
 				},
-				["groups"] = {
+				groups = {
 					i(211206),	-- Defiler's Medallion (QI!)
 					currency(DEFILERS_SCOURGESTONE),
 				},
 			}),
 			n(VENDORS, {
 				n(211340, {	-- Kolara Dreamsmasher <Defiler's Scourgestone Exchange>
-					["coord"] = { 65.8, 24.8, NORTHREND_DALARAN },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					coord = { 65.8, 24.8, NORTHREND_DALARAN },
+					races = HORDE_ONLY,
+					groups = {
 						defilersscourgestone(1, currency(SIDEREAL_ESSENCE)),	-- Sidereal Essence
 						defilersscourgestone(12, i(49908)),	-- Primordial Saronite
 						defilersscourgestone(20, i(47242)),	-- Trophy of the Crusade
@@ -259,9 +259,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				n(211332, {	-- Korralin Hoperender <Defiler's Scourgestone Exchange>
-					["coord"] = { 37.2, 56.0, NORTHREND_DALARAN },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					coord = { 37.2, 56.0, NORTHREND_DALARAN },
+					races = ALLIANCE_ONLY,
+					groups = {
 						defilersscourgestone(1, currency(SIDEREAL_ESSENCE)),	-- Sidereal Essence
 						defilersscourgestone(12, i(49908)),	-- Primordial Saronite
 						defilersscourgestone(20, i(47242)),	-- Trophy of the Crusade

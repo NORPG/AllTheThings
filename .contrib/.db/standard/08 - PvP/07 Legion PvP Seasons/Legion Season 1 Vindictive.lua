@@ -4,18 +4,18 @@
 
 root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 	n(SEASON_VINDICTIVE, bubbleDownSelf({
-		["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0, ADDED_7_2_0 },
+		timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0, ADDED_7_2_0 },
 	}, {
-		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 } }, {
+		n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 } }, {
 			ach(10998, {	-- Vindictive Combatant [A]
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
 			ach(10997, {	-- Vindictive Combatant [H]
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				races = HORDE_ONLY,
+				groups = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
@@ -23,95 +23,95 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			ach(11016),	-- Rival: Legion Season 1
 			ach(11015),	-- Duelist: Legion Season 1
 			ach(11578, {	-- Vindictive Elite
-				["timeline"] = { ADDED_7_2_0, REMOVED_7_2_0 },
+				timeline = { ADDED_7_2_0, REMOVED_7_2_0 },
 			}),
 			ach(11011, {	-- Gladiator: Legion Season 1
 				i(141843),	-- Vindictive Gladiator's Storm Dragon (MOUNT!)
 			}),
 			ach(10999, {	-- Vindictive Gladiator's Storm Dragon
-				["provider"] = { "i", 141843 },	-- Vindictive Gladiator's Storm Dragon (MOUNT!)
-				["filterID"] = MOUNTS,
+				provider = { "i", 141843 },	-- Vindictive Gladiator's Storm Dragon (MOUNT!)
+				filterID = MOUNTS,
 			}),
 			ach(11012, {	-- Vindictive Gladiator: Legion Season 1
 				title(353),	-- Vindictive Gladiator <Name>
 			}),
 			-- RBG
 			ach(11024, {	-- Soldier of the Alliance: Legion Season 1
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11025, {	-- Soldier of the Horde: Legion Season 1
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(11022, {	-- Defender of the Alliance: Legion Season 1
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11023, {	-- Defender of the Horde: Legion Season 1
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(11020, {	-- Guardian of the Alliance: Legion Season 1
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11021, {	-- Guardian of the Horde: Legion Season 1
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(11018, {	-- Hero of the Alliance: Vindictive
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11019, {	-- Hero of the Horde: Vindictive
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			-- Fashion
 			ach(11630, {	-- More Like Win-dictive
-				["timeline"] = { ADDED_7_2_0 },
+				timeline = { ADDED_7_2_0 },
 			}),
 		})),
 		n(PVP_COMBATANT, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
-					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 29.6, 75.0, LEGION_DALARAN },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(146164, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor [A]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(146264, {	-- Ensemble: Vindictive Combatant's Felskin Armor [A]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(146168, {	-- Ensemble: Vindictive Combatant's Dragonhide Armor [A]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(146154, {	-- Ensemble: Vindictive Combatant's Chain Armor [A]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(146156, {	-- Ensemble: Vindictive Combatant's Silk Armor [A]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(146170, {	-- Ensemble: Vindictive Combatant's Ironskin Armor [A]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(146166, {	-- Ensemble: Vindictive Combatant's Scaled Armor [A]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(146158, {	-- Ensemble: Vindictive Combatant's Satin Armor [A]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(146172, {	-- Ensemble: Vindictive Combatant's Leather Armor [A]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(146152, {	-- Ensemble: Vindictive Combatant's Ringmail Armor [A]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(146160, {	-- Ensemble: Vindictive Combatant's Felweave Armor [A]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(146162, {	-- Ensemble: Vindictive Combatant's Plate Armor [A]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(135905),	-- Vindictive Combatant's Dreadcloak [A]
@@ -272,52 +272,52 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(135928),	-- Vindictive Combatant's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
-					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 56.8, 27.8, LEGION_DALARAN },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(146165, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor [H]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(146265, {	-- Ensemble: Vindictive Combatant's Felskin Armor [H]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(146169, {	-- Ensemble: Vindictive Combatant's Dragonhide Armor [H]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(146155, {	-- Ensemble: Vindictive Combatant's Chain Armor [H]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(146157, {	-- Ensemble: Vindictive Combatant's Silk Armor [H]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(146171, {	-- Ensemble: Vindictive Combatant's Ironskin Armor [H]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(146167, {	-- Ensemble: Vindictive Combatant's Scaled Armor [H]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(146159, {	-- Ensemble: Vindictive Combatant's Satin Armor [H]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(146173, {	-- Ensemble: Vindictive Combatant's Leather Armor [H]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(146153, {	-- Ensemble: Vindictive Combatant's Ringmail Armor [H]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(146161, {	-- Ensemble: Vindictive Combatant's Felweave Armor [H]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(146163, {	-- Ensemble: Vindictive Combatant's Plate Armor [H]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(136018),	-- Vindictive Combatant's Dreadcloak [H]
@@ -480,52 +480,52 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_GLADIATOR, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
-					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 29.6, 75.0, LEGION_DALARAN },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(146132, {	-- Ensemble: Vindictive Gladiator's Dreadplate Armor [A]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(146262, {	-- Ensemble: Vindictive Gladiator's Felskin Armor [A]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(146140, {	-- Ensemble: Vindictive Gladiator's Dragonhide Armor [A]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(146138, {	-- Ensemble: Vindictive Gladiator's Chain Armor [A]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(146146, {	-- Ensemble: Vindictive Gladiator's Silk Armor [A]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(146142, {	-- Ensemble: Vindictive Gladiator's Ironskin Armor [A]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(146134, {	-- Ensemble: Vindictive Gladiator's Scaled Armor [A]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(146148, {	-- Ensemble: Vindictive Gladiator's Satin Armor [A]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(146144, {	-- Ensemble: Vindictive Gladiator's Leather Armor [A]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(146136, {	-- Ensemble: Vindictive Gladiator's Ringmail Armor [A]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(146150, {	-- Ensemble: Vindictive Gladiator's Felweave Armor [A]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(146130, {	-- Ensemble: Vindictive Gladiator's Plate Armor [A]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(135679),	-- Vindictive Gladiator's Dreadcloak [A]
@@ -686,52 +686,52 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(135702),	-- Vindictive Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
-					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 56.8, 27.8, LEGION_DALARAN },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(146133, {	-- Ensemble: Vindictive Gladiator's Dreadplate Armor [H]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(146263, {	-- Ensemble: Vindictive Gladiator's Felskin Armor [H]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(146141, {	-- Ensemble: Vindictive Gladiator's Dragonhide Armor [H]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(146139, {	-- Ensemble: Vindictive Gladiator's Chain Armor [H]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(146147, {	-- Ensemble: Vindictive Gladiator's Silk Armor [H]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(146143, {	-- Ensemble: Vindictive Gladiator's Ironskin Armor [H]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(146135, {	-- Ensemble: Vindictive Gladiator's Scaled Armor [H]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(146149, {	-- Ensemble: Vindictive Gladiator's Satin Armor [H]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(146145, {	-- Ensemble: Vindictive Gladiator's Leather Armor [H]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(146137, {	-- Ensemble: Vindictive Gladiator's Ringmail Armor [H]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(146151, {	-- Ensemble: Vindictive Gladiator's Felweave Armor [H]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(146131, {	-- Ensemble: Vindictive Gladiator's Plate Armor [H]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(135792),	-- Vindictive Gladiator's Dreadcloak [H]
@@ -894,57 +894,57 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_ELITE, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
-					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["groups"] = bubbleDown({
-						["sourceAchievements"] = {
+					coord = { 29.6, 74.8, LEGION_DALARAN },
+					groups = bubbleDown({
+						sourceAchievements = {
 							11578,	-- Vindictive Elite
 							11579,	-- Fearless Elite
 						},
-						["cost"] = { { "i", MOH, 12 } },
-						["u"] = ELITE_PVP_REQUIREMENT,
+						cost = { { "i", MOH, 12 } },
+						u = ELITE_PVP_REQUIREMENT,
 					}, {
 						iensemble(146220, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor [A]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(146270, {	-- Ensemble: Elite Vindictive Gladiator's Felskin Armor [A]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(146228, {	-- Ensemble: Elite Vindictive Gladiator's Dragonhide Armor [A]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(146226, {	-- Ensemble: Elite Vindictive Gladiator's Chain Armor [A]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(146234, {	-- Ensemble: Elite Vindictive Gladiator's Silk Armor [A]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(146230, {	-- Ensemble: Elite Vindictive Gladiator's Ironskin Armor [A]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(146222, {	-- Ensemble: Elite Vindictive Gladiator's Scaled Armor [A]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(146236, {	-- Ensemble: Elite Vindictive Gladiator's Satin Armor [A]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(146232, {	-- Ensemble: Elite Vindictive Gladiator's Leather Armor [A]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(146224, {	-- Ensemble: Elite Vindictive Gladiator's Ringmail Armor [A]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(146238, {	-- Ensemble: Elite Vindictive Gladiator's Felweave Armor [A]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(146218, {	-- Ensemble: Elite Vindictive Gladiator's Plate Armor [A]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_0_3, REMOVED_7_1_0 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(136131),	-- Vindictive Gladiator's Dreadcloak [A]
@@ -1105,57 +1105,57 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(136154),	-- Vindictive Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
-					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["groups"] = bubbleDown({
-						["sourceAchievements"] = {
+					coord = { 57.0, 27.8, LEGION_DALARAN },
+					groups = bubbleDown({
+						sourceAchievements = {
 							11578,	-- Vindictive Elite
 							11579,	-- Fearless Elite
 						},
-						["cost"] = { { "i", MOH, 12 } },
-						["u"] = ELITE_PVP_REQUIREMENT,
+						cost = { { "i", MOH, 12 } },
+						u = ELITE_PVP_REQUIREMENT,
 					}, {
 						iensemble(146221, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor [H]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(146271, {	-- Ensemble: Elite Vindictive Gladiator's Felskin Armor [H]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(146229, {	-- Ensemble: Elite Vindictive Gladiator's Dragonhide Armor [H]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(146227, {	-- Ensemble: Elite Vindictive Gladiator's Chain Armor [H]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(146235, {	-- Ensemble: Elite Vindictive Gladiator's Silk Armor [H]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(146231, {	-- Ensemble: Elite Vindictive Gladiator's Ironskin Armor [H]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(146223, {	-- Ensemble: Elite Vindictive Gladiator's Scaled Armor [H]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(146237, {	-- Ensemble: Elite Vindictive Gladiator's Satin Armor [H]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(146233, {	-- Ensemble: Elite Vindictive Gladiator's Leather Armor [H]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(146225, {	-- Ensemble: Elite Vindictive Gladiator's Ringmail Armor [H]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(146239, {	-- Ensemble: Elite Vindictive Gladiator's Felweave Armor [H]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(146219, {	-- Ensemble: Elite Vindictive Gladiator's Plate Armor [H]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_0_3, REMOVED_7_1_0 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(136244),	-- Vindictive Gladiator's Dreadcloak [H]

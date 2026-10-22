@@ -1,26 +1,26 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Character, n(TUTORIALS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+root(ROOTS.Character, n(TUTORIALS, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
 	m(ARATHI_HIGHLANDS_CATCHUP, {
-		["icon"] = 236712,
-		["maps"] = { 2451 },	-- Arathi Highlands (Catch Up Experience)
-		["lore"] = "Journey through the Arathi Highlands to help refamiliarize yourself with World of Warcraft and receive upgraded gear for your character.",
-		["description"] = "Accessible through Tutorials tab of your Adventure Guide.\n\n|cFFE50D12WARNING:|r Trying to fly out of the area will reset the whole experience.",
-		["groups"] = {
+		icon = 236712,
+		maps = { 2451 },	-- Arathi Highlands (Catch Up Experience)
+		lore = "Journey through the Arathi Highlands to help refamiliarize yourself with World of Warcraft and receive upgraded gear for your character.",
+		description = "Accessible through Tutorials tab of your Adventure Guide.\n\n|cFFE50D12WARNING:|r Trying to fly out of the area will reset the whole experience.",
+		groups = {
 			n(QUESTS, sharedData({
-				["isRepeatable"] = true,
+				isRepeatable = true,
 			}, {
 				q(90882, {	-- Gnoll Way
-					["aqd"] = {
-						["qg"] = 244643,	-- Lady Jaina Proudmoore
-						["coord"] = { 70.0, 40.7, ARATHI_HIGHLANDS_CATCHUP },
+					aqd = {
+						qg = 244643,	-- Lady Jaina Proudmoore
+						coord = { 70.0, 40.7, ARATHI_HIGHLANDS_CATCHUP },
 					},
-					["hqd"] = {
-						["qg"] = 244642,	-- Thrall
-						["coord"] = { 69.8, 40.8, ARATHI_HIGHLANDS_CATCHUP },
+					hqd = {
+						qg = 244642,	-- Thrall
+						coord = { 69.8, 40.8, ARATHI_HIGHLANDS_CATCHUP },
 					},
-					["groups"] = {	-- Weapons
+					groups = {	-- Weapons
 						cl(DEATHKNIGHT, {
 							i(153726),	-- Heart-Lesion Blade x2
 							i(153747),	-- Heart-Lesion Runeblade
@@ -78,16 +78,16 @@ root(ROOTS.Character, n(TUTORIALS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_
 					},
 				}),
 				q(90883, {	-- To Go'shek Farm
-					["sourceQuest"] = 90882,	-- Gnoll Way
-					["aqd"] = {
-						["qg"] = 244643,	-- Lady Jaina Proudmoore
-						["coord"] = { 70.0, 40.7, ARATHI_HIGHLANDS_CATCHUP },
+					sourceQuest = 90882,	-- Gnoll Way
+					aqd = {
+						qg = 244643,	-- Lady Jaina Proudmoore
+						coord = { 70.0, 40.7, ARATHI_HIGHLANDS_CATCHUP },
 					},
-					["hqd"] = {
-						["qg"] = 244642,	-- Thrall
-						["coord"] = { 69.8, 40.8, ARATHI_HIGHLANDS_CATCHUP },
+					hqd = {
+						qg = 244642,	-- Thrall
+						coord = { 69.8, 40.8, ARATHI_HIGHLANDS_CATCHUP },
 					},
-					["groups"] = {	-- Bags
+					groups = {	-- Bags
 						i(249773),	-- Large Black Bag
 						i(249771),	-- Large Blue Bag
 						i(188213),	-- Large Green Bag
@@ -95,10 +95,10 @@ root(ROOTS.Character, n(TUTORIALS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_
 					},
 				}),
 				q(90885, {	-- My Beautiful Pumpkins
-					["sourceQuest"] = 90883,	-- To Go'shek Farm
-					["qg"] = 244729,	-- Farmer Bruvk
-					["coord"] = { 56.4, 59.6, ARATHI_HIGHLANDS_CATCHUP },
-					["groups"] = {	-- Rings
+					sourceQuest = 90883,	-- To Go'shek Farm
+					qg = 244729,	-- Farmer Bruvk
+					coord = { 56.4, 59.6, ARATHI_HIGHLANDS_CATCHUP },
+					groups = {	-- Rings
 						cl(DEATHKNIGHT, {
 							i(153742),	-- Heart-Lesion Band of Stoicism
 							i(153741),	-- Heart-Lesion Ring of Stoicism
@@ -154,10 +154,10 @@ root(ROOTS.Character, n(TUTORIALS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_
 					},
 				}),
 				q(90886, {	-- Best Laid Plans of Kobolds and Ogres
-					["sourceQuest"] = 90883,	-- To Go'shek Farm
-					["qg"] = 244656,	-- Thrall
-					["coord"] = { 56.3, 59.6, ARATHI_HIGHLANDS_CATCHUP },
-					["groups"] = {	-- Boots and Gloves
+					sourceQuest = 90883,	-- To Go'shek Farm
+					qg = 244656,	-- Thrall
+					coord = { 56.3, 59.6, ARATHI_HIGHLANDS_CATCHUP },
+					groups = {	-- Boots and Gloves
 						i(243573),	-- Poorly Written Plans (QI!)
 						--
 						cl(DEATHKNIGHT, {
@@ -215,10 +215,10 @@ root(ROOTS.Character, n(TUTORIALS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_
 					},
 				}),
 				q(90887, {	-- Farmer's Nemesis
-					["sourceQuest"] = 90883,	-- To Go'shek Farm
-					["qg"] = 244655,	-- Lady Jaina Proudmoore
-					["coord"] = { 56.5, 59.7, ARATHI_HIGHLANDS_CATCHUP },
-					["groups"] = {	-- Cloak and Chest
+					sourceQuest = 90883,	-- To Go'shek Farm
+					qg = 244655,	-- Lady Jaina Proudmoore
+					coord = { 56.5, 59.7, ARATHI_HIGHLANDS_CATCHUP },
+					groups = {	-- Cloak and Chest
 						cl(DEATHKNIGHT, {
 							i(153718),	-- Heart-Lesion Breastplate
 							i(153734),	-- Heart-Lesion Cloak of Stoicism
@@ -274,14 +274,14 @@ root(ROOTS.Character, n(TUTORIALS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_
 					},
 				}),
 				q(90888, {	-- Saving Stromgarde Keep
-					["sourceQuests"] = {
+					sourceQuests = {
 						90885,	-- My Beautiful Pumpkins
 						90886,	-- Best Laid Plans of Kobolds and Ogres
 						90887,	-- Farmer's Nemesis
 					},
-					["qg"] = 244655,	-- Lady Jaina Proudmoore
-					["coord"] = { 56.5, 59.7, ARATHI_HIGHLANDS_CATCHUP },
-					["groups"] = {	-- Trinkets
+					qg = 244655,	-- Lady Jaina Proudmoore
+					coord = { 56.5, 59.7, ARATHI_HIGHLANDS_CATCHUP },
+					groups = {	-- Trinkets
 						cl(DEATHKNIGHT, {
 							i(153740),	-- Heart-Lesion Defender Idol
 							i(153743),	-- Heart-Lesion Defender Stone
@@ -337,19 +337,19 @@ root(ROOTS.Character, n(TUTORIALS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_
 					},
 				}),
 				q(92028, {	-- Pardon the Interruption
-					["sourceQuests"] = {
+					sourceQuests = {
 						90885,	-- My Beautiful Pumpkins
 						90886,	-- Best Laid Plans of Kobolds and Ogres
 						90887,	-- Farmer's Nemesis
 					},
-					["qg"] = 249423,	-- Sergeant Colvin
-					["coord"] = { 19.6, 57.5, ARATHI_HIGHLANDS_CATCHUP },
+					qg = 249423,	-- Sergeant Colvin
+					coord = { 19.6, 57.5, ARATHI_HIGHLANDS_CATCHUP },
 				}),
 				q(90895, {	-- Catapult Bombardment
-					["sourceQuest"] = 90888,	-- Saving Stromgarde Keep
-					["qg"] = 244658,	-- Lady Jaina Proudmoore
-					["coord"] = { 19.5, 57.4, ARATHI_HIGHLANDS_CATCHUP },
-					["groups"] = {	-- Pants and Necklace
+					sourceQuest = 90888,	-- Saving Stromgarde Keep
+					qg = 244658,	-- Lady Jaina Proudmoore
+					coord = { 19.5, 57.4, ARATHI_HIGHLANDS_CATCHUP },
+					groups = {	-- Pants and Necklace
 						cl(DEATHKNIGHT, {
 							i(153739),	-- Heart-Lesion Amulet
 							i(153738),	-- Heart-Lesion Legguards
@@ -405,10 +405,10 @@ root(ROOTS.Character, n(TUTORIALS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_
 					},
 				}),
 				q(90893, {	-- Repelling the Siege
-					["sourceQuest"] = 90888,	-- Saving Stromgarde Keep
-					["qg"] = 244657,	-- Thrall
-					["coord"] = { 19.4, 57.4, ARATHI_HIGHLANDS_CATCHUP },
-					["groups"] = {	-- Waist and Wrist
+					sourceQuest = 90888,	-- Saving Stromgarde Keep
+					qg = 244657,	-- Thrall
+					coord = { 19.4, 57.4, ARATHI_HIGHLANDS_CATCHUP },
+					groups = {	-- Waist and Wrist
 						cl(DEATHKNIGHT, {
 							i(153746),	-- Heart-Lesion Armguards
 							i(153745),	-- Heart-Lesion Waistband
@@ -464,13 +464,13 @@ root(ROOTS.Character, n(TUTORIALS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_
 					},
 				}),
 				q(90896, {	-- One Last Ogre
-					["sourceQuests"] = {
+					sourceQuests = {
 						90888,	-- Catapult Bombardment
 						90893,	-- Repelling the Siege
 					},
-					["qg"] = 244666,	-- Thrall
-					["coord"] = { 24.6, 37.1, ARATHI_HIGHLANDS_CATCHUP },
-					["groups"] = {	-- Head & Shoulders
+					qg = 244666,	-- Thrall
+					coord = { 24.6, 37.1, ARATHI_HIGHLANDS_CATCHUP },
+					groups = {	-- Head & Shoulders
 						cl(DEATHKNIGHT, {
 							i(153737),	-- Heart-Lesion Faceguard
 							i(153744),	-- Heart-Lesion Shoulderguards
@@ -526,27 +526,27 @@ root(ROOTS.Character, n(TUTORIALS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_
 					},
 				}),
 				q(90897, {	-- Back to Stromgarde
-					["sourceQuest"] = 90896,	-- One Last Ogre
-					["qg"] = 244667,	-- Lady Jaina Proudmoore
-					["coord"] = { 24.7, 37.1, ARATHI_HIGHLANDS_CATCHUP },
-					["races"] = ALLIANCE_ONLY,
+					sourceQuest = 90896,	-- One Last Ogre
+					qg = 244667,	-- Lady Jaina Proudmoore
+					coord = { 24.7, 37.1, ARATHI_HIGHLANDS_CATCHUP },
+					races = ALLIANCE_ONLY,
 				}),
 				q(90898, {	-- Back to Hammerfall
-					["sourceQuest"] = 90896,	-- One Last Ogre
-					["qg"] = 244666,	-- Thrall
-					["coord"] = { 24.6, 37.1, ARATHI_HIGHLANDS_CATCHUP },
-					["races"] = HORDE_ONLY,
+					sourceQuest = 90896,	-- One Last Ogre
+					qg = 244666,	-- Thrall
+					coord = { 24.6, 37.1, ARATHI_HIGHLANDS_CATCHUP },
+					races = HORDE_ONLY,
 				}),
 				q(90911, {	-- Your Next Adventure
-					["aqd"] = {
-						["sourceQuest"] = 90897,	-- Back to Stromgarde
-						["qg"] = 244714,	-- Lady Jaina Proudmoore
-						["coord"] = { 19.5, 61.6, ARATHI_HIGHLANDS_CATCHUP },
+					aqd = {
+						sourceQuest = 90897,	-- Back to Stromgarde
+						qg = 244714,	-- Lady Jaina Proudmoore
+						coord = { 19.5, 61.6, ARATHI_HIGHLANDS_CATCHUP },
 					},
-					["hqd"] = {
-						["sourceQuest"] = 90898,	-- Back to Hammerfall
-						["qg"] = 244715,	-- Thrall
-						["coord"] = { 69.2, 34.6, ARATHI_HIGHLANDS_CATCHUP },
+					hqd = {
+						sourceQuest = 90898,	-- Back to Hammerfall
+						qg = 244715,	-- Thrall
+						coord = { 69.2, 34.6, ARATHI_HIGHLANDS_CATCHUP },
 					},
 				}),
 			})),
@@ -555,7 +555,7 @@ root(ROOTS.Character, n(TUTORIALS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
 		m(ARATHI_HIGHLANDS_CATCHUP, {
 			q(93382),	-- Pardon the Interruption
 		}),

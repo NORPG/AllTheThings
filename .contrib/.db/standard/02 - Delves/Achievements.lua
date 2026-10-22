@@ -32,37 +32,37 @@ local ALL_REGULAR_DELVES = {
 	-- #endif
 };
 
-root(ROOTS.Delves, timelineSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Delves, timelineSelf({ timeline = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
 		ach(40817, {	-- A Delver's Bounty
-			["maps"] = ALL_REGULAR_DELVES,
+			maps = ALL_REGULAR_DELVES,
 		}),
 		ach(40882, {	-- Copious Coffers
-			["maps"] = ALL_REGULAR_DELVES,
-			["groups"] = {
+			maps = ALL_REGULAR_DELVES,
+			groups = {
 				title(575),	-- <Name> the Bountiful
 				i(237358, {	-- Silver Coffer Key
-					["timeline"] = { ADDED_11_1_0 },
+					timeline = { ADDED_11_1_0 },
 				}),
 			},
 		}),
 		ach(41097, {	-- Curiosity Never Killed the Looter
-			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = ALL_REGULAR_DELVES,
+			timeline = { ADDED_11_1_0 },
+			maps = ALL_REGULAR_DELVES,
 		}),
 		ach(40460, {	-- Delve Deep
-			["maps"] = ALL_REGULAR_DELVES,
+			maps = ALL_REGULAR_DELVES,
 		}),
 		ach(40462, {	-- Delve Deeper
-			["maps"] = ALL_REGULAR_DELVES,
+			maps = ALL_REGULAR_DELVES,
 		}),
 		ach(40463, {	-- Delve Deepest (100)
-			["maps"] = ALL_REGULAR_DELVES,
+			maps = ALL_REGULAR_DELVES,
 		}),
 		ach(41095, {	-- Delve Beyond (500)
-			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = ALL_REGULAR_DELVES,
-			["groups"] = {
+			timeline = { ADDED_11_1_0 },
+			maps = ALL_REGULAR_DELVES,
+			groups = {
 				-- #if AFTER 11.2.0
 				title(650),	-- Delver <Name>
 				-- #else
@@ -71,51 +71,51 @@ root(ROOTS.Delves, timelineSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			},
 		}),
 		ach(41096, {	-- Delve Infinite (1000)
-			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = ALL_REGULAR_DELVES,
-			["groups"] = { title(599) },	-- Infinite Delver <Name>
+			timeline = { ADDED_11_1_0 },
+			maps = ALL_REGULAR_DELVES,
+			groups = { title(599) },	-- Infinite Delver <Name>
 		}),
 		ach(40098, {	-- Immortal Spelunker
-			["maps"] = ALL_REGULAR_DELVES,
-			["groups"] = {
+			maps = ALL_REGULAR_DELVES,
+			groups = {
 				title(549),	-- Immortal Spelunker <Name>
 			},
 		}),
 		ach(40763, {	-- I'm not a Thief, I'm a Treasure Hunter
-			["maps"] = ALL_REGULAR_DELVES,
+			maps = ALL_REGULAR_DELVES,
 		}),
 		ach(40788, {	-- I Got the Keys
-			["maps"] = ALL_REGULAR_DELVES,
+			maps = ALL_REGULAR_DELVES,
 		}),
 		ach(40863, {	-- Perplexing Puzzle
-			["maps"] = ALL_REGULAR_DELVES,
+			maps = ALL_REGULAR_DELVES,
 		}),
 		ach(40864, {	-- Plentiful Perplexing Puzzles
-			["maps"] = ALL_REGULAR_DELVES,
-			["crs"] = {
+			maps = ALL_REGULAR_DELVES,
+			crs = {
 				225401,	-- Wrapped Spool
 			},
 		}),
 		ach(41105, {	-- Prodigious Plentiful Perplexing Puzzles
-			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = ALL_REGULAR_DELVES,
-			["crs"] = {
+			timeline = { ADDED_11_1_0 },
+			maps = ALL_REGULAR_DELVES,
+			crs = {
 				225401,	-- Wrapped Spool
 			},
 		}),
 		ach(40819, {	-- Ready to Turn
-			["maps"] = ALL_REGULAR_DELVES,
+			maps = ALL_REGULAR_DELVES,
 		}),
 		ach(40885, {	-- The Key to Madness
-			["maps"] = ALL_REGULAR_DELVES,
-			["groups"] = {
+			maps = ALL_REGULAR_DELVES,
+			groups = {
 				i(237355, {	-- Golden Coffer Key
-					["timeline"] = { ADDED_11_1_0 },
+					timeline = { ADDED_11_1_0 },
 				}),
 			},
 		}),
 		ach(40436, {	-- You're Getting a Delve!
-			["maps"] = ALL_REGULAR_DELVES,
+			maps = ALL_REGULAR_DELVES,
 		}),
 	}),
 }));

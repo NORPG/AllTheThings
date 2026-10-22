@@ -2,72 +2,72 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 	n(WORLD_BOSSES, {
-		["isRaid"] = true,
-		["modID"] = 3,
-		["lvl"] = 110,
-		["groups"] = {
+		isRaid = true,
+		modID = 3,
+		lvl = 110,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(11786, {	-- Terrors of the Shore
 					crit(36550, {	-- Brutallus
-						["_npcs"] = { 117239 },
+						_npcs = { 117239 },
 					}),
 					crit(36551, {	-- Malificus
-						["_npcs"] = { 117303 },
+						_npcs = { 117303 },
 					}),
 					crit(36552, {	-- Si'vash
-						["_npcs"] = { 117470 },
+						_npcs = { 117470 },
 					}),
 					crit(36553, {	-- Apocron
-						["_npcs"] = { 121124 },
+						_npcs = { 121124 },
 					}),
 				}),
 				ach(11160, {	-- Unleashed Monstrosities
 					crit(32097, {	-- Na'zak the Fiend
-						["_npcs"] = { 110321 },
+						_npcs = { 110321 },
 					}),
 					crit(32096, {	-- Nithogg
-						["_npcs"] = { 107544 },
+						_npcs = { 107544 },
 					}),
 					crit(32099, {	-- Humongris
-						["_npcs"] = { 108879 },
+						_npcs = { 108879 },
 					}),
 					crit(32095, {	-- Flotsam
-						["_npcs"] = { 99929 },
+						_npcs = { 99929 },
 					}),
 					crit(32100, {	-- Ana-Mouz
-						["_npcs"] = { 109943 },
+						_npcs = { 109943 },
 					}),
 					crit(32102, {	-- Levantus
-						["_npcs"] = { 108829 },
+						_npcs = { 108829 },
 					}),
 					crit(32094, {	-- Drugon the Frostblood
-						["_npcs"] = { 110378 },
+						_npcs = { 110378 },
 					}),
 					crit(32889, {	-- The Soultakers (there was also 32890 and 32891)
-						["_quests"] = { 42269 },
+						_quests = { 42269 },
 					}),
 					crit(32101, {	-- Calamir
-						["_npcs"] = { 109331 },
+						_npcs = { 109331 },
 					}),
 					crit(32098, {	-- Shar'thos
-						["_npcs"] = { 108678 },
+						_npcs = { 108678 },
 					}),
 					crit(35022, {	-- Withered J'im
-						["_npcs"] = { 112350 },
+						_npcs = { 112350 },
 					}),
 				}),
 			}),
 			e(1790, {	-- Ana-Mouz
-				["coord"] = { 31.0, 65.5, SURAMAR },
-				["creatureID"] = 109943,	-- Ana-Mouz
-				["questID"] = 43512,	-- Ana-Mouz (WQ)
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["groups"] = {
+				coord = { 31.0, 65.5, SURAMAR },
+				creatureID = 109943,	-- Ana-Mouz
+				questID = 43512,	-- Ana-Mouz (WQ)
+				isWeekly = true,
+				isRaid = true,
+				groups = {
 					i(137778, {	-- Vantus Rune Technique: Tichondrius [Rank 3] (RECIPE!)
-						["timeline"] = { ADDED_7_1_0 },
+						timeline = { ADDED_7_1_0 },
 					}),
 					i(141448),	-- Imp Mother's Loincloth
 					i(141423),	-- Crop Top Chain Hauberk
@@ -79,13 +79,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(1956, {	-- Apocron
-				["coord"] = { 59.2, 62.6, BROKEN_SHORE },
-				["creatureID"] = 121124,	-- Apocron
-				["questID"] = 47061,	-- Apocron (WQ)
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["timeline"] = { ADDED_7_2_0 },
-				["groups"] = {
+				coord = { 59.2, 62.6, BROKEN_SHORE },
+				creatureID = 121124,	-- Apocron
+				questID = 47061,	-- Apocron (WQ)
+				isWeekly = true,
+				isRaid = true,
+				timeline = { ADDED_7_2_0 },
+				groups = {
 					i(147766),	-- Band of Dark Millennia
 					i(147734),	-- Spaulders of Forgotten Worlds
 					i(147743),	-- Harness of Devouring Flame
@@ -97,13 +97,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(1883, {	-- Brutallus
-				["coord"] = { 59.2, 28.4, BROKEN_SHORE },
-				["creatureID"] = 117239,	-- Brutallus
-				["questID"] = 46947,	-- Brutallus (WQ)
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["timeline"] = { ADDED_7_2_0 },
-				["groups"] = {
+				coord = { 59.2, 28.4, BROKEN_SHORE },
+				creatureID = 117239,	-- Brutallus
+				questID = 46947,	-- Brutallus (WQ)
+				isWeekly = true,
+				isRaid = true,
+				timeline = { ADDED_7_2_0 },
+				groups = {
 					i(147749),	-- Polished Felfury Helmet
 					i(147765),	-- Clasp of Burning Demise
 					i(147742),	-- Violent Zealot's Shoulderpads
@@ -116,12 +116,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(1774, {	-- Calamir
-				["coord"] = { 37.7, 83.6, AZSUNA },
-				["creatureID"] = 109331,	-- Calamir
-				["questID"] = 43193,	-- Calamitous Intent (WQ)
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["groups"] = {
+				coord = { 37.7, 83.6, AZSUNA },
+				creatureID = 109331,	-- Calamir
+				questID = 43193,	-- Calamitous Intent (WQ)
+				isWeekly = true,
+				isRaid = true,
+				groups = {
 					i(137847),	-- Design: Sorcerous Shadowruby Pendant [Rank 3] (Recipe!)
 					i(141438),	-- Pendant of Cold Flame
 					i(141432),	-- Frostburned Sabatons
@@ -133,14 +133,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(1789, {	-- Drugon the Frostblood
-				["coord"] = { 58.4, 72.6, HIGHMOUNTAIN },
-				["creatureID"] = 110378,	-- Drugon the Frostblood
-				["questID"] = 43448,	-- The Frozen King (WQ)
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["groups"] = {
+				coord = { 58.4, 72.6, HIGHMOUNTAIN },
+				creatureID = 110378,	-- Drugon the Frostblood
+				questID = 43448,	-- The Frozen King (WQ)
+				isWeekly = true,
+				isRaid = true,
+				groups = {
 					i(142108, {	-- Vantus Rune Technique: Guarm [Rank 3] (RECIPE!)
-						["timeline"] = { ADDED_7_1_0 },
+						timeline = { ADDED_7_1_0 },
 					}),
 					i(141538),	-- Giant's Handkerchief
 					i(141433),	-- Assorted Dragonscale Bracers
@@ -152,14 +152,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(1795, {	-- Flotsam
-				["coord"] = { 49.2, 7.60, HIGHMOUNTAIN },
-				["creatureID"] = 99929,	-- Flotsam
-				["questID"] = 43985,	-- A Dark Tide (WQ)
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["groups"] = {
+				coord = { 49.2, 7.60, HIGHMOUNTAIN },
+				creatureID = 99929,	-- Flotsam
+				questID = 43985,	-- A Dark Tide (WQ)
+				isWeekly = true,
+				isRaid = true,
+				groups = {
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
-						-- ["sourceQuest"] = , TODO
+						-- sourceQuest = , TODO
 					}),
 					i(141539),	-- Ragged Azsharan Sail Fragment
 					i(141466),	-- Blackwater Raider Handguards
@@ -171,12 +171,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(1770, {	-- Humongris <The Wizard>
-				["coord"] = { 24.6, 69.6, VALSHARAH },
-				["creatureID"] = 108879,	-- Humongris
-				["questID"] = 42819,	-- Pocket Wizard (WQ)
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["groups"] = {
+				coord = { 24.6, 69.6, VALSHARAH },
+				creatureID = 108879,	-- Humongris
+				questID = 42819,	-- Pocket Wizard (WQ)
+				isWeekly = true,
+				isRaid = true,
+				groups = {
 					i(139895),	-- Skinning Technique: Legion Butchery (RECIPE!)
 					i(141540),	-- Coerced Wizard's Cloak
 					i(141445),	-- Mantle of the Aspiring Spellgiant
@@ -188,17 +188,17 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(1769, {	-- Levantus
-				["coord"] = { 43.0, 67.6, AZSUNA },
-				["creatureID"] = 108829,	-- Levantus
-				["questID"] = 43192,	-- Terror of the Deep (WQ)
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["groups"] = {
+				coord = { 43.0, 67.6, AZSUNA },
+				creatureID = 108829,	-- Levantus
+				questID = 43192,	-- Terror of the Deep (WQ)
+				isWeekly = true,
+				isRaid = true,
+				groups = {
 					i(142109, {	-- Vantus Rune Technique: Helya [Rank 3] (RECIPE!)
-						["timeline"] = { ADDED_7_1_0 },
+						timeline = { ADDED_7_1_0 },
 					}),
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
-						-- ["sourceQuest"] = , TODO
+						-- sourceQuest = , TODO
 					}),
 					i(141473),	-- Krakentooth Necklace
 					i(141441),	-- Chum-Chopper Gauntlets
@@ -210,13 +210,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(1884, {	-- Malificus
-				["coord"] = { 59.8, 27.8, BROKEN_SHORE },
-				["creatureID"] = 117303,	-- Malificus
-				["questID"] = 46948,	-- Malificus (WQ)
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["timeline"] = { ADDED_7_2_0 },
-				["groups"] = {
+				coord = { 59.8, 27.8, BROKEN_SHORE },
+				creatureID = 117303,	-- Malificus
+				questID = 46948,	-- Malificus (WQ)
+				isWeekly = true,
+				isRaid = true,
+				timeline = { ADDED_7_2_0 },
+				groups = {
 					i(147740),	-- Plague-Resistant Headcover
 					i(147764),	-- Cloak of Growing Mistrust
 					i(147733),	-- Doomsayer's Ritualistic Vestment
@@ -230,15 +230,15 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(1783, {	-- Na'zak the Fiend
-				["coord"] = { 36.0, 66.4, 685 },	-- Shattered Locus (Floor #2)
-				["creatureID"] = 110321,	-- Na'zak the Fiend
-				["questID"] = 43513,	-- Na'zak the Fiend(WQ)
-				["maps"] = { SURAMAR },
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["groups"] = {
+				coord = { 36.0, 66.4, 685 },	-- Shattered Locus (Floor #2)
+				creatureID = 110321,	-- Na'zak the Fiend
+				questID = 43513,	-- Na'zak the Fiend(WQ)
+				maps = { SURAMAR },
+				isWeekly = true,
+				isRaid = true,
+				groups = {
 					i(142121, {	-- Recipe: Potion of Prolonged Power [Rank 3]
-						["timeline"] = { ADDED_7_1_0 },
+						timeline = { ADDED_7_1_0 },
 					}),
 					i(141425),	-- Avalanche Resistant Legplates
 					i(141417),	-- Desiccated Leather Pants
@@ -250,14 +250,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(1749, {	-- Nithogg
-				["coord"] = { 46.6, 30.0, STORMHEIM },
-				["creatureID"] = 107544,	-- Nithogg
-				["questID"] = 42270,	-- Scourge of the Skies (WQ)
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["groups"] = {
+				coord = { 46.6, 30.0, STORMHEIM },
+				creatureID = 107544,	-- Nithogg
+				questID = 42270,	-- Scourge of the Skies (WQ)
+				isWeekly = true,
+				isRaid = true,
+				groups = {
 					i(142107, {	-- Vantus Rune Technique: Odyn [Rank 3] (RECIPE!)
-						["timeline"] = { ADDED_7_1_0 },
+						timeline = { ADDED_7_1_0 },
 					}),
 					i(140658),	-- Skull of Nithogg
 					i(141420),	-- Coif of Unstable Discharge
@@ -270,12 +270,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(1763, {	-- Shar'thos
-				["coord"] = { 55.6, 43.2, VALSHARAH },
-				["creatureID"] = 108678,	-- Shar'thos
-				["questID"] = 42779,	-- The Sleeping Corruption (WQ)
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["groups"] = {
+				coord = { 55.6, 43.2, VALSHARAH },
+				creatureID = 108678,	-- Shar'thos
+				questID = 42779,	-- The Sleeping Corruption (WQ)
+				isWeekly = true,
+				isRaid = true,
+				groups = {
 					i(140659),	-- Skull of Shar'thos
 					i(141547),	-- Choker of Dreamthorns
 					i(141542),	-- Despoiled Dreamthread Cloak
@@ -287,13 +287,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(1885, {	-- Si'vash
-				["coord"] = { 89.6, 33.0, BROKEN_SHORE },
-				["creatureID"] = 117470,	-- Si'vash
-				["questID"] = 46945,	-- Si'vash (WQ)
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["timeline"] = { ADDED_7_2_0 },
-				["groups"] = {
+				coord = { 89.6, 33.0, BROKEN_SHORE },
+				creatureID = 117470,	-- Si'vash
+				questID = 46945,	-- Si'vash (WQ)
+				isWeekly = true,
+				isRaid = true,
+				timeline = { ADDED_7_2_0 },
+				groups = {
 					i(147731),	-- Cowl of Plumbed Depths
 					i(147752),	-- Pauldrons of the Engulfing Tide
 					i(147737),	-- Shorebreaker Robes
@@ -306,18 +306,18 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(1756, {	-- The Soultakers
-				["crs"] = {
+				crs = {
 					106981,	-- Captain Hring
 					106982,	-- Reaver Jdorn
 					106984,	-- Soultrapper Mevra
 				},
-				["coord"] = { 78.2, 8.60, STORMHEIM },
-				["questID"] = 42269,	-- The Soultakers (WQ)
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["groups"] = {
+				coord = { 78.2, 8.60, STORMHEIM },
+				questID = 42269,	-- The Soultakers (WQ)
+				isWeekly = true,
+				isRaid = true,
+				groups = {
 					i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-						["sourceQuest"] = 38990,	-- The Call of Icecrown
+						sourceQuest = 38990,	-- The Call of Icecrown
 					}),
 					i(141506),	-- Soultrapper's Pendant
 					i(141434),	-- Cord of Kept Souls
@@ -329,12 +329,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			e(1796, {	-- Withered J'im
-				["coord"] = { 52.6, 80.8, AZSUNA },
-				["creatureID"] = 112350,	-- Withered J'im
-				["questID"] = 44287,	-- DEADLY: Withered J'im (WQ)
-				["isWeekly"] = true,
-				["isRaid"] = true,
-				["groups"] = {
+				coord = { 52.6, 80.8, AZSUNA },
+				creatureID = 112350,	-- Withered J'im
+				questID = 44287,	-- DEADLY: Withered J'im (WQ)
+				isWeekly = true,
+				isRaid = true,
+				groups = {
 					i(141455),	-- Cave Skulker's Helm
 					i(141453),	-- Magic-Warped Hood
 					i(141459),	-- Manacrystal-Adorned Helmet
@@ -348,7 +348,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
@@ -361,7 +361,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 				q(44906),	-- Tracking Quest - Withered J'im bonus roll
 			}),
 		}),
-		m(BROKEN_SHORE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
+		m(BROKEN_SHORE, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
 			n(WORLD_BOSSES, {
 				q(47084),	-- Tracking Quest - Apocron killID
 				q(47087),	-- Tracking Quest - Apocron bonus roll

@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	m(OHNAHRAN_PLAINS, {
 		explorationHeader({
 			exploration(13921),	-- Ancient Bough
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			exploration(13766),	-- Nelthazan Ruins
 			exploration(13782),	-- Nokhudon Hold
 			exploration(13645, {	-- Ohn'ahran Plains
-				["description"] = "This node can only be uncovered by characters who have not yet unlocked the Emerald Dream.",
+				description = "This node can only be uncovered by characters who have not yet unlocked the Emerald Dream.",
 			}),
 			visit_exploration(13765,{coord={58.3,33.3,OHNAHRAN_PLAINS}}),	-- Ohn'ahra's Roost
 			exploration(13776),	-- Ohn'ir Geysers

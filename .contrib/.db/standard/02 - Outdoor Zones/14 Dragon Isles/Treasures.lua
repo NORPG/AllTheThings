@@ -3,10 +3,10 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, {
 	n(TREASURES, sharedData({
-		["description"] = "Does not show on minimap.\nEach 'cluster' of nearby coords has an independent spawn.\nPersists 90 sec once opened.\nRespawn: 60m",
+		description = "Does not show on minimap.\nEach 'cluster' of nearby coords has an independent spawn.\nPersists 90 sec once opened.\nRespawn: 60m",
 	},{
 		o(381041, {	-- Frostbound Chest
-			["coords"] = {
+			coords = {
 				{ 54.0, 61.5, THALDRASZUS },
 				{ 55.2, 62.9, THALDRASZUS },
 				{ 56.2, 64.4, THALDRASZUS },
@@ -19,14 +19,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 				{ 49.7, 63.9, THE_AZURE_SPAN },
 				{ 51.3, 60.8, THE_AZURE_SPAN },
 			},
-			["groups"] = {
+			groups = {
 				i(201442),	-- Primal Revenant's Frostblade
 				i(201443),	-- Primal Revenant's Icewall
 			},
 		}),
 		-- Appears to be a rare spawn of a Magic Bound Chest, not reliable to farm/list
 		-- o(377540, {	-- Ice Bound Chest
-		-- 	["coords"] = {
+		-- 	coords = {
 		-- 		{ 31.4, 71.6, OHNAHRAN_PLAINS },
 		-- 		{ 31.5, 71.6, OHNAHRAN_PLAINS },
 		-- 		{ 38.9, 55.9, OHNAHRAN_PLAINS },
@@ -70,13 +70,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 		-- 		{ 65.9, 55.6, THE_AZURE_SPAN },
 		-- 		{ 72.3, 42.1, THE_AZURE_SPAN },
 		-- 	},
-		-- 	["sym"] = {{"select","itemID",
+		-- 	sym = {{"select","itemID",
 		-- 		201442,	-- Primal Revenant's Frostblade
 		-- 		201443,	-- Primal Revenant's Icewall
 		-- 	}},
 		-- }),
 		o(381043, {	-- Lightning Bound Chest
-			["coords"] = {
+			coords = {
 				{ 22.4, 36.8, OHNAHRAN_PLAINS },
 				{ 23.0, 36.5, OHNAHRAN_PLAINS },
 				{ 58.1, 67.2, OHNAHRAN_PLAINS },
@@ -84,13 +84,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 				{ 59.3, 62.0, OHNAHRAN_PLAINS },
 				{ 61.0, 64.7, OHNAHRAN_PLAINS },
 			},
-			["groups"] = {
+			groups = {
 				i(201447),	-- Primal Revenant's Breezeblade
 				i(201448),	-- Primal Revenant's Windwall
 			},
 		}),
 		o(381042, {	-- Simmering Chest
-			["coords"] = {
+			coords = {
 				{ 35.6, 85.3, THALDRASZUS },
 				{ 38.9, 85.1, THALDRASZUS },
 				{ 39.9, 84.8, THALDRASZUS },
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 				{ 69.0, 63.7, THE_WAKING_SHORES },
 				{ 69.6, 65.5, THE_WAKING_SHORES },
 			},
-			["groups"] = {
+			groups = {
 				i(201445),	-- Primal Revenant's Emberblade
 				i(201446),	-- Primal Revenant's Firewall
 			},

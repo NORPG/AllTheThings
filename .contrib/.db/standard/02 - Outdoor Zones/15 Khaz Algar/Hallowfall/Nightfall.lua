@@ -24,7 +24,7 @@ local RADIANT_EMBLEM = 238920;
 
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
-		n(NIGHTFALL, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
+		n(NIGHTFALL, bubbleDownSelf({ timeline = { ADDED_11_1_5 } }, {
 			n(ACHIEVEMENTS, {
 				ach(41999),	-- Fighter of the Nightman
 				ach(41996),	-- I'm Doing My Part
@@ -32,30 +32,30 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			n(QUESTS, {
 				q(85005, {	-- A Radiant Call
-					["provider"] = { "n", 242126 },	-- Flame's Radiance Recruiter
-					["coord"] = { 45.9, 49.3, DORNOGAL },
+					provider = { "n", 242126 },	-- Flame's Radiance Recruiter
+					coord = { 45.9, 49.3, DORNOGAL },
 				}),
 				q(89332, {	-- Boot Camp
-					["provider"] = { "n", 234774 },	-- Mylton Wyldbraun
-					["coord"] = { 28.3, 56.1, HALLOWFALL },
+					provider = { "n", 234774 },	-- Mylton Wyldbraun
+					coord = { 28.3, 56.1, HALLOWFALL },
 				}),
 				q(89331, {	-- Flame Fortification
-					["provider"] = { "n", 234774 },	-- Mylton Wyldbraun
-					["coord"] = { 28.3, 56.1, HALLOWFALL },
+					provider = { "n", 234774 },	-- Mylton Wyldbraun
+					coord = { 28.3, 56.1, HALLOWFALL },
 				}),
 			}),
 			n(QUESTS, sharedData({
-				["provider"] = { "n", 234774 },	-- Mylton Wyldbraun
-				["coord"] = { 28.3, 56.1, HALLOWFALL },
-				["isWeekly"] = true,
-				["groups"] = {
+				provider = { "n", 234774 },	-- Mylton Wyldbraun
+				coord = { 28.3, 56.1, HALLOWFALL },
+				isWeekly = true,
+				groups = {
 					i(239546),	-- Confiscated Cultist's Bag
 				},
 			}, {
 				q(88945),	-- Radiant Incursion: Rak-Zakaz
 				q(88916),	-- Radiant Incursion: Sureki's End
 				q(88711, {	-- Radiant Incursion: Toxins and Pheromones
-					["groups"] = {
+					groups = {
 						o(529289, {	-- Spore Sample
 							i(240215),	-- Fungal Sample (QI!)
 						}),
@@ -67,14 +67,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(87480),	-- Sureki Incursion: The Eastern Assault
 				--
 				q(89295, {	-- The Flame Burns Eternal
-					["groups"] = {
+					groups = {
 						i(239004, {	-- Radiant Service Satchel
 							i(RADIANT_EMBLEM),
 						}),
 					},
 				}),
 				q(91173, {	-- The Flame Burns Eternal
-					["groups"] = {
+					groups = {
 						i(239004, {	-- Radiant Service Satchel
 							i(RADIANT_EMBLEM),
 						}),
@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			})),
 			n(RARES, {
 				n(COMMON_BOSS_DROPS, {
-					["crs"] = {
+					crs = {
 						241227,	-- Dissenter Glaivefur
 						241228,	-- Dissenter Oathland
 						241229,	-- Dissenter Fervormyt
@@ -97,7 +97,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						241238,	-- Whisperer Siegesage
 						241239,	-- Whisperer Warhavuk
 					},
-					["sym"] = {{"select","itemID",
+					sym = {{"select","itemID",
 						237471,	-- Band of the Voidmancer
 						237474,	-- Cult Former's Charm
 						237473,	-- Dark Bargainer's Chain
@@ -161,8 +161,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				-- AZJ'KAHET
 				-- Rak-Zakaz
 				o(527416, {	-- Suspicious Document (Dissenter Oathland/Whisperer Warsididel)
-					["description"] = "Spawns Dissenter Oathland/Whisperer Warsididel.",
-					["coords"] = {
+					description = "Spawns Dissenter Oathland/Whisperer Warsididel.",
+					coords = {
 						{ 61.9, 30.1, AZJ_KAHET },
 						{ 62.6, 26.7, AZJ_KAHET },
 						{ 64.1, 30.1, AZJ_KAHET },
@@ -171,22 +171,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				n(241228, {	-- Dissenter Oathland
-					["description"] = "Within the Rak-Zakaz assault.",
-					["provider"] = { "o", 527416 },	-- Suspicious Document
-					["maps"] = { AZJ_KAHET },
-					["questID"] = 91150,
-					["isDaily"] = true,
+					description = "Within the Rak-Zakaz assault.",
+					provider = { "o", 527416 },	-- Suspicious Document
+					maps = { AZJ_KAHET },
+					questID = 91150,
+					isDaily = true,
 				}),
 				n(241237, {	-- Whisperer Warsididel
-					["description"] = "Within the Rak-Zakaz assault.",
-					["provider"] = { "o", 527416 },	-- Suspicious Document
-					["maps"] = { AZJ_KAHET },
-					["questID"] = 91156,
-					["isDaily"] = true,
+					description = "Within the Rak-Zakaz assault.",
+					provider = { "o", 527416 },	-- Suspicious Document
+					maps = { AZJ_KAHET },
+					questID = 91156,
+					isDaily = true,
 				}),
 				-- Sureki's End
 				o(527415, {	-- Suspicious Document (Dissenter Tailtrek/Whisperer Hillhelm)
-					["coords"] = {
+					coords = {
 						{ 63.7, 6.8, AZJ_KAHET },
 						{ 64.8, 6.6, AZJ_KAHET },
 						{ 64.8, 13.3, AZJ_KAHET },
@@ -194,22 +194,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				n(241230, {	-- Dissenter Tailtrek
-					["description"] = "Within the Sureki's End assault.",
-					["provider"] = { "o", 527415 },	-- Suspicious Document
-					["maps"] = { AZJ_KAHET },
-					["questID"] = 91154,
-					["isDaily"] = true,
+					description = "Within the Sureki's End assault.",
+					provider = { "o", 527415 },	-- Suspicious Document
+					maps = { AZJ_KAHET },
+					questID = 91154,
+					isDaily = true,
 				}),
 				n(241235, {	-- Whisperer Hillhelm
-					["description"] = "Within the Sureki's End assault.",
-					["provider"] = { "o", 527415 },	-- Suspicious Document
-					["maps"] = { AZJ_KAHET },
-					["questID"] = 91152,
-					["isDaily"] = true,
+					description = "Within the Sureki's End assault.",
+					provider = { "o", 527415 },	-- Suspicious Document
+					maps = { AZJ_KAHET },
+					questID = 91152,
+					isDaily = true,
 				}),
 				-- Toxins and Pheromones
 				o(527413, {	-- Suspicious Document (Dissenter Glaivefur/Whisperer Warhavuk)
-					["coords"] = {
+					coords = {
 						{ 66.5, 53.7, AZJ_KAHET },
 						{ 66.7, 50.7, AZJ_KAHET },
 						{ 68.4, 54.6, AZJ_KAHET },
@@ -217,23 +217,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				n(241227, {	-- Dissenter Glaivefur
-					["description"] = "Within the Toxins and Pheromones assault.",
-					["provider"] = { "o", 527413 },	-- Suspicious Document
-					["maps"] = { AZJ_KAHET },
-					["questID"] = 89273,
-					["isDaily"] = true,
+					description = "Within the Toxins and Pheromones assault.",
+					provider = { "o", 527413 },	-- Suspicious Document
+					maps = { AZJ_KAHET },
+					questID = 89273,
+					isDaily = true,
 				}),
 				n(241239, {	-- Whisperer Warhavuk
-					["description"] = "Within the Toxins and Pheromones assault.",
-					["provider"] = { "o", 527413 },	-- Suspicious Document
-					["maps"] = { AZJ_KAHET },
-					["questID"] = 91160,
-					["isDaily"] = true,
+					description = "Within the Toxins and Pheromones assault.",
+					provider = { "o", 527413 },	-- Suspicious Document
+					maps = { AZJ_KAHET },
+					questID = 91160,
+					isDaily = true,
 				}),
 				-- HALLOWFALL
 				-- Hold the Wall --
 				o(527398, {	-- Suspicious Document (Dissenter Fortfervor/Whisperer Batalsworn)
-					["coords"] = {
+					coords = {
 						{ 40.1, 58.5, HALLOWFALL },
 						{ 40.3, 59.6, HALLOWFALL },
 						{ 40.3, 60.8, HALLOWFALL },
@@ -243,20 +243,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				n(241231, {	-- Dissenter Fortfervor
-					["description"] = "Within the Hold the Wall assault.",
-					["provider"] = { "o", 527398 },	-- Suspicious Document
-					["questID"] = 91157,
-					["isDaily"] = true,
+					description = "Within the Hold the Wall assault.",
+					provider = { "o", 527398 },	-- Suspicious Document
+					questID = 91157,
+					isDaily = true,
 				}),
 				n(241234, {	-- Whisperer Batalsworn
-					["description"] = "Within the Hold the Wall assault.",
-					["provider"] = { "o", 527398 },	-- Suspicious Document
-					["questID"] = 91151,
-					["isDaily"] = true,
+					description = "Within the Hold the Wall assault.",
+					provider = { "o", 527398 },	-- Suspicious Document
+					questID = 91151,
+					isDaily = true,
 				}),
 				-- Southern Swarm --
 				o(527409, {	-- Suspicious Document (Dissenter Fervormyt/Whisperer Siegesage)
-					["coords"] = {
+					coords = {
 						{ 49.8, 65.0, HALLOWFALL },
 						{ 49.8, 70.4, HALLOWFALL },
 						{ 50.6, 66.2, HALLOWFALL },
@@ -265,20 +265,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				n(241229, {	-- Dissenter Fervormyt
-					["description"] = "Within the Southern Swarm assault.",
-					["provider"] = { "o", 527409 },	-- Suspicious Document
-					["questID"] = 91153,
-					["isDaily"] = true,
+					description = "Within the Southern Swarm assault.",
+					provider = { "o", 527409 },	-- Suspicious Document
+					questID = 91153,
+					isDaily = true,
 				}),
 				n(241238, {	-- Whisperer Siegesage
-					["description"] = "Within the Southern Swarm assault.",
-					["provider"] = { "o", 527409 },	-- Suspicious Document
-					["questID"] = 91159,
-					["isDaily"] = true,
+					description = "Within the Southern Swarm assault.",
+					provider = { "o", 527409 },	-- Suspicious Document
+					questID = 91159,
+					isDaily = true,
 				}),
 				-- The Eastern Assault
 				o(527411, {	-- Suspicious Document (Dissenter Troosilver/Whisperer Bravefort)
-					["coords"] = {
+					coords = {
 						{ 71.8, 43.0, HALLOWFALL },
 						{ 72.4, 47.5, HALLOWFALL },
 						{ 72.7, 41.5, HALLOWFALL },
@@ -287,23 +287,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				n(241232, {	-- Dissenter Troosilver
-					["description"] = "Within The Eastern Assault.",
-					["provider"] = { "o", 527411 },	-- Suspicious Document
-					["questID"] = 91158,
-					["isDaily"] = true,
+					description = "Within The Eastern Assault.",
+					provider = { "o", 527411 },	-- Suspicious Document
+					questID = 91158,
+					isDaily = true,
 				}),
 				n(241236, {	-- Whisperer Bravefort
-					["description"] = "Within The Eastern Assault.",
-					["provider"] = { "o", 527411 },	-- Suspicious Document
-					["questID"] = 91155,
-					["isDaily"] = true,
+					description = "Within The Eastern Assault.",
+					provider = { "o", 527411 },	-- Suspicious Document
+					questID = 91155,
+					isDaily = true,
 				}),
 			}),
 			n(REWARDS, {
 				-- Special Single List Item:
 				container(239546, {	-- Confiscated Cultist's Bag
-					["description"] = "Rewarded by completing Radiant Incursion or Sureki Incursion Dailies.",
-					["groups"] = {
+					description = "Rewarded by completing Radiant Incursion or Sureki Incursion Dailies.",
+					groups = {
 						i(239563),	-- Shadowbound Leash (MOUNT!)
 						i(241126),	-- Sovereign Sureki Emblem (COSMETIC!)
 						filter(CLOTH, {
@@ -385,16 +385,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				i(237743, {	-- Arathi Soldier's Coffer (Uncommon) Only Green Cosmetics
-					["description"] = "Granted for achieving 33% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
-					["groups"] = {
+					description = "Granted for achieving 33% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
+					groups = {
 						i(241019),	-- Arathi Camper's Knife (COSMETIC!)
 						i(241016),	-- Arathi Lancer's Polearm (COSMETIC!)
 						i(241007),	-- Mereldar Blacksmithing Hammer (COSMETIC!)
 					},
 				}),
 				i(237759, {	-- Arathi Cleric's Chest (Rare) Only Weapons
-					["description"] = "Granted for achieving 66% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
-					["groups"] = {
+					description = "Granted for achieving 66% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
+					groups = {
 						n(WEAPONS, {
 							i(237795),	-- Arathi Abbot's Gavel
 							i(237799),	-- Arathi Abbot's Greatstaff
@@ -419,12 +419,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				i(237760, {	-- Arathi Champion's Spoils (Epic)
-					["description"] = "Granted for achieving 100% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
-					["sym"] = {	-- Arathi Cleric's Chest (Rare)
+					description = "Granted for achieving 100% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
+					sym = {	-- Arathi Cleric's Chest (Rare)
 						{"select","itemID",237759},{"pop"},
 						{"where","headerID",WEAPONS},
 					},
-					["groups"] = {
+					groups = {
 						filter(CLOAKS, {
 							i(237394),	-- Arathi Abbot's Cloak
 							i(237403),	-- Arathi Zealot's Cape
@@ -489,14 +489,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				-- Crafting reagent?
 				n(EVENT_COMPLETION, {
-					["description"] = "The Boss spawns at the end of the Nightfall Event.\nThe Event always starts on the hour.",
-					["coord"] = { 25.2, 55.6, HALLOWFALL },
-					["crs"] = {
+					description = "The Boss spawns at the end of the Nightfall Event.\nThe Event always starts on the hour.",
+					coord = { 25.2, 55.6, HALLOWFALL },
+					crs = {
 						240968,	-- Ahn'tak
 						240969,	-- Anub'Ranax
 						234440,	-- Azj-Tak the Behemoth
 					},
-					["sym"] = {{"select","itemID",
+					sym = {{"select","itemID",
 						237471,	-- Band of the Voidmancer
 						237474,	-- Cult Former's Charm
 						237473,	-- Dark Bargainer's Chain
@@ -560,9 +560,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			n(VENDORS, {
 				n(243253, {	-- Layne Pontelle
-					["coord"] = { 28.3, 56.1, HALLOWFALL },
-					["groups"] = sharedData({
-						["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
+					coord = { 28.3, 56.1, HALLOWFALL },
+					groups = sharedData({
+						cost = { { "c", RESONANCE_CRYSTALS, 500 } },
 					}, {
 						i(241278),	-- Stalwart's Waistcoat
 						i(241269),	-- Aeroknight's Undercoat
@@ -571,9 +571,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 				}),
 				n(240979, {	-- Vesper Churnmoat
-					["coord"] = { 28.2, 56.0, HALLOWFALL },
-					["groups"] = bubbleDownFiltered({
-						["cost"] = { { "i", RADIANT_EMBLEM, 1 } },
+					coord = { 28.2, 56.0, HALLOWFALL },
+					groups = bubbleDownFiltered({
+						cost = { { "i", RADIANT_EMBLEM, 1 } },
 					},FILTERFUNC_itemID,{
 						filter(FINGER_F, {
 							i(237471),	-- Band of the Voidmancer
@@ -608,9 +608,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 				}),
 				n(227797, {	-- Raen Dawncavalyr
-					["coord"] = { 28.3, 56.0, HALLOWFALL },
-					["groups"] = bubbleDownFiltered({
-						["cost"] = { { "i", RADIANT_EMBLEM, 1 } },
+					coord = { 28.3, 56.0, HALLOWFALL },
+					groups = bubbleDownFiltered({
+						cost = { { "i", RADIANT_EMBLEM, 1 } },
 					},FILTERFUNC_itemID,{
 						filter(CLOAKS, {
 							i(237394),	-- Arathi Abbot's Cloak
@@ -698,8 +698,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(HALLOWFALL, {
-			n(NIGHTFALL, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
-				q(90105, {["isDaily"]=true}),	-- Bonus reputation per day for 1st event when you filled progress bar
+			n(NIGHTFALL, bubbleDownSelf({ timeline = { ADDED_11_1_5 } }, {
+				q(90105, {isDaily=true}),	-- Bonus reputation per day for 1st event when you filled progress bar
 				-- after opening Arathi Champion's Spoils (237760) per slot as was for Siren Islands?
 				-- seems like one per Arathi XX set and one per Nightfall XX set?
 				q(88686),	-- 2H weapon (agi/str weapon) / Arathi Crusader's Halberd (itemID 237792)
@@ -709,31 +709,31 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(88684),	-- OH weapon (caster/off spec) / Arathi Abbot's Implement (itemID 237801)
 				q(88896),	-- OH weapon (caster/off spec) / Nightfall Darkcaster's Implement (itemID 237785) (it was looted from boss during nightfall event)
 				q(88687, {	-- Arathi Crusader Set Cape Unlock
-					-- ["name"] = "Unlocked Cape Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					-- name = "Unlocked Cape Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
 				}),
 				q(88692, {	-- Arathi Crusader Set Chest Unlock
-					["name"] = "Unlocked Chest Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					name = "Unlocked Chest Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
 				}),
 				q(88689, {	-- Arathi Crusader Set Belt Unlock
-					["name"] = "Unlocked Belt Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					name = "Unlocked Belt Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
 				}),
 				q(88691, {	-- Arathi Crusader Set Feet Unlock
-					["name"] = "Unlocked Feet Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					name = "Unlocked Feet Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
 				}),
 				q(88690, {	-- Arathi Crusader Set Hands Unlock
-					["name"] = "Unlocked Hands Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					name = "Unlocked Hands Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
 				}),
 				q(88695, {	-- Arathi Crusader Set Head Unlock
-					["name"] = "Unlocked Head Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					name = "Unlocked Head Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
 				}),
 				q(88693, {	-- Arathi Crusader Set Legs Unlock
-					["name"] = "Unlocked Legs Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					name = "Unlocked Legs Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
 				}),
 				q(88694, {	-- Arathi Crusader Set Shoulder Unlock
-					["name"] = "Unlocked Shoulder Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					name = "Unlocked Shoulder Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
 				}),
 				q(88688, {	-- Arathi Crusader Set Wrists Unlock
-					["name"] = "Unlocked Wrist Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					name = "Unlocked Wrist Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
 				}),
 				-- q(??),	-- Cape / Nightfall Curseblade Cape (itemID 237444)
 				q(88888),	-- Chest / Nightfall Curseblade's Vest
@@ -768,7 +768,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(91165),	-- Daily Rep Flame Radiance for killing Webspeaker Grik Ik (Ajz Kahet)
 				q(81608),	-- Enter Azj'Kahet post-patch? [DNT] Vizier - Level 4 Unlock / 443686 [DNT] Dummy - Pact Backup / 1231879
 				--
-				q(92488, {["timeline"]={ADDED_11_2_0}}),	-- Additional 600 crystals lockout per week per account, after opening The Flame Burns Eternal weekly satchel
+				q(92488, {timeline={ADDED_11_2_0}}),	-- Additional 600 crystals lockout per week per account, after opening The Flame Burns Eternal weekly satchel
 			})),
 		}),
 	}),

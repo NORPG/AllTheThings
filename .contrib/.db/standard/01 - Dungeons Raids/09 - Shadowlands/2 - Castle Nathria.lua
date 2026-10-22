@@ -258,15 +258,15 @@ InstanceHelper.BossObjects = {
 }
 -- #if AFTER 10.1.5
 InstanceHelper.LFRQueueNPC = {	-- Queue NPC
-	["crs"] = { 205959 },	-- Ta'elfar <Trader of Histories>
-	["coord"] = { 41.3, 71.0, ORIBOS },
+	crs = { 205959 },	-- Ta'elfar <Trader of Histories>
+	coord = { 41.3, 71.0, ORIBOS },
 }
 -- #endif
 
-root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1190, {	-- Castle Nathria
-		["coord"] = { 46.1, 41.5, REVENDRETH },
-		["maps"] = {
+		coord = { 46.1, 41.5, REVENDRETH },
+		maps = {
 			1734,	-- Revendreth (?)
 			1735,	-- The Grand Walk
 			1744,	-- The Purloined Stores
@@ -276,76 +276,76 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			1748,	-- The Observatorium
 			1750,	-- Feast of Arrogance
 		},
-		["isRaid"] = true,
-		["groups"] = {
+		isRaid = true,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(14715, {	-- Castle Nathria
 					crit(48950, {	-- Shriekwing
-						["_encounter"] = { 2393, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2393, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(48951, {	-- Huntsman Altimor
-						["_encounter"] = { 2429, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2429, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(48954, {	-- Sun King's Salvation
-						["_encounter"] = { 2422, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2422, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(48953, {	-- Artificer Xy'mox
-						["_encounter"] = { 2418, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2418, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(48952, {	-- Hungering Destroyer
-						["_encounter"] = { 2428, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2428, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(48955, {	-- Lady Inerva Darkvein
-						["_encounter"] = { 2420, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2420, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(48956, {	-- The Council of Blood
-						["_encounter"] = { 2426, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2426, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(48957, {	-- Sludgefist
-						["_encounter"] = { 2394, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2394, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(48958, {	-- Stone Legion Generals
-						["_encounter"] = { 2425, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2425, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(48959, {	-- Sire Denathrius
-						["_encounter"] = { 2424, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2424, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(14717, {	-- Heroic: Castle Nathria
 					crit(48970, {	-- Shriekwing
-						["_encounter"] = { 2393, DIFFICULTY.RAID.HEROIC },
+						_encounter = { 2393, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48971, {	-- Huntsman Altimor
-						["_encounter"] = { 2429, DIFFICULTY.RAID.HEROIC },
+						_encounter = { 2429, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48974, {	-- Sun King's Salvation
-						["_encounter"] = { 2422, DIFFICULTY.RAID.HEROIC },
+						_encounter = { 2422, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48973, {	-- Artificer Xy'mox
-						["_encounter"] = { 2418, DIFFICULTY.RAID.HEROIC },
+						_encounter = { 2418, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48972, {	-- Hungering Destroyer
-						["_encounter"] = { 2428, DIFFICULTY.RAID.HEROIC },
+						_encounter = { 2428, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48975, {	-- Lady Inerva Darkvein
-						["_encounter"] = { 2420, DIFFICULTY.RAID.HEROIC },
+						_encounter = { 2420, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48976, {	-- The Council of Blood
-						["_encounter"] = { 2426, DIFFICULTY.RAID.HEROIC },
+						_encounter = { 2426, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48977, {	-- Sludgefist
-						["_encounter"] = { 2394, DIFFICULTY.RAID.HEROIC },
+						_encounter = { 2394, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48978, {	-- Stone Legion Generals
-						["_encounter"] = { 2425, DIFFICULTY.RAID.HEROIC },
+						_encounter = { 2425, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(48979, {	-- Sire Denathrius
-						["_encounter"] = { 2424, DIFFICULTY.RAID.HEROIC },
+						_encounter = { 2424, DIFFICULTY.RAID.HEROIC },
 					}),
 				}),
 				ach(14718, {	-- Mythic: Castle Nathria
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						14356,	-- Mythic: Shriekwing
 						14357,	-- Mythic: Huntsman Altimor
 						14360,	-- Mythic: Sun King's Salvation
@@ -360,7 +360,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				ach(14355, {	-- Glory of the Nathria Raider
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						14293,	-- Blind as a Bat
 						14523,	-- Taking Care of Business
 						14608,	-- Burning Bright
@@ -372,106 +372,106 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						14525,	-- Feed Me, Seymour!
 						14610,	-- Clear Conscience
 					}},
-					["groups"] = {
+					groups = {
 						i(182596),	-- Rampart Screecher (MOUNT!)
 					},
 				}),
 				ach(14614),	-- Castle Vain
 				-- Fated
-				ach(15663, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Fate of Nathria
+				ach(15663, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Fate of Nathria
 					crit(53514, {	-- Shriekwing
-						["_encounter"] = { 2393, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2393, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53515, {	-- Huntsman Altimor
-						["_encounter"] = { 2429, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2429, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53516, {	-- Sun King's Salvation
-						["_encounter"] = { 2422, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2422, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53517, {	-- Artificer Xy'mox
-						["_encounter"] = { 2418, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2418, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53518, {	-- Hungering Destroyer
-						["_encounter"] = { 2428, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2428, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53519, {	-- Lady Inerva Darkvein
-						["_encounter"] = { 2420, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2420, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53520, {	-- The Council of Blood
-						["_encounter"] = { 2426, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2426, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53521, {	-- Sludgefist
-						["_encounter"] = { 2394, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2394, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53522, {	-- Stone Legion Generals
-						["_encounter"] = { 2425, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2425, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(53523, {	-- Sire Denathrius
-						["_encounter"] = { 2424, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2424, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				})),
-				ach(15664, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Heroic: Fate of Nathria
+				ach(15664, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Heroic: Fate of Nathria
 					crit(53524, {	-- Shriekwing
-						["_encounter"] = { 2393, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2393, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53525, {	-- Huntsman Altimor
-						["_encounter"] = { 2429, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2429, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53526, {	-- Sun King's Salvation
-						["_encounter"] = { 2422, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2422, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53527, {	-- Artificer Xy'mox
-						["_encounter"] = { 2418, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2418, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53528, {	-- Hungering Destroyer
-						["_encounter"] = { 2428, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2428, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53529, {	-- Lady Inerva Darkvein
-						["_encounter"] = { 2420, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2420, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53530, {	-- The Council of Blood
-						["_encounter"] = { 2426, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2426, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53531, {	-- Sludgefist
-						["_encounter"] = { 2394, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2394, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53532, {	-- Stone Legion Generals
-						["_encounter"] = { 2425, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2425, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(53533, {	-- Sire Denathrius
-						["_encounter"] = { 2424, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2424, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				})),
-				ach(15665, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Mythic: Fate of Nathria
+				ach(15665, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Mythic: Fate of Nathria
 					crit(53534, {	-- Shriekwing
-						["_encounter"] = { 2393, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2393, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(53535, {	-- Huntsman Altimor
-						["_encounter"] = { 2429, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2429, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(53536, {	-- Sun King's Salvation
-						["_encounter"] = { 2422, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2422, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(53537, {	-- Artificer Xy'mox
-						["_encounter"] = { 2418, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2418, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(53538, {	-- Hungering Destroyer
-						["_encounter"] = { 2428, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2428, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(53539, {	-- Lady Inerva Darkvein
-						["_encounter"] = { 2420, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2420, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(53540, {	-- The Council of Blood
-						["_encounter"] = { 2426, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2426, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(53541, {	-- Sludgefist
-						["_encounter"] = { 2394, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2394, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(53542, {	-- Stone Legion Generals
-						["_encounter"] = { 2425, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2425, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(53543, {	-- Sire Denathrius
-						["_encounter"] = { 2424, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2424, DIFFICULTY.RAID.MYTHIC },
 					}),
 				})),
 				-- Guild Achievements
@@ -485,8 +485,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				n(WORLD_QUESTS, {
 					q(66693, {	-- Tempting Fate: Castle Nathria
-						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
-						["isWorldQuest"] = true,
+						timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+						isWorldQuest = true,
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -730,7 +730,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(183199),	-- Withering Ground
 				}),
 			}),
-			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
+			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				ZoneDrops(),
 				n(LEECHING_VAULTS_HEADER, {
 					Boss(HUNTSMAN, {
@@ -759,11 +759,11 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					Boss(SLUDGEFIST),
 					Boss(GENERALS, {
 						i(183895, {	-- Apogee Anima Bead
-							["modID"] = LFR_LAST2,
+							modID = LFR_LAST2,
 						}),
 						FatedItem(modItemId(183895,LFR_LAST2), FATED_LFR_LAST2),	-- Apogee Anima Bead (Fated)
 						i(183894, {	-- Thaumaturgic Anima Bead
-							["modID"] = LFR_LAST2,
+							modID = LFR_LAST2,
 						}),
 						FatedItem(modItemId(183894,LFR_LAST2), FATED_LFR_LAST2),	-- Thaumaturgic Anima Bead (Fated)
 					}),
@@ -771,19 +771,19 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(AUDIENCE_WITH_ARROGANCE_HEADER, {
 					Boss(SIRE, {
 						i(183896, {	-- Abominable Anima Spherule
-							["modID"] = LFR_LAST2,
+							modID = LFR_LAST2,
 						}),
 						FatedItem(modItemId(183896,LFR_LAST2), FATED_LFR_LAST2),	-- Abominable Anima Spherule (Fated)
 						i(183897, {	-- Mystic Anima Spherule
-							["modID"] = LFR_LAST2,
+							modID = LFR_LAST2,
 						}),
 						FatedItem(modItemId(183897,LFR_LAST2), FATED_LFR_LAST2),	-- Mystic Anima Spherule (Fated)
 						i(183898, {	-- Venerated Anima Spherule
-							["modID"] = LFR_LAST2,
+							modID = LFR_LAST2,
 						}),
 						FatedItem(modItemId(183898,LFR_LAST2), FATED_LFR_LAST2),	-- Venerated Anima Spherule (Fated)
 						i(183899, {	-- Zenith Anima Spherule
-							["modID"] = LFR_LAST2,
+							modID = LFR_LAST2,
 						}),
 						FatedItem(modItemId(183899,LFR_LAST2), FATED_LFR_LAST2),	-- Zenith Anima Spherule (Fated)
 					}),
@@ -824,8 +824,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(62054, {	-- Castle Nathria: Getting a Head [Normal]
-						["qg"] = 172653,	-- General Draven
-						["qi"] = 182601,	-- Sludgefist's Head (QI!)
+						qg = 172653,	-- General Draven
+						qi = 182601,	-- Sludgefist's Head (QI!)
 					}),
 				}),
 				ZoneDrops(),
@@ -851,29 +851,29 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				Boss(SLUDGEFIST),
 				Boss(GENERALS, {
 					i(183895, {	-- Apogee Anima Bead
-						["modID"] = NORMAL_LAST2,
+						modID = NORMAL_LAST2,
 					}),
 					FatedItem(modItemId(183895,NORMAL_LAST2), FATED_NORMAL_LAST2),	-- Apogee Anima Bead (Fated)
 					i(183894, {	-- Thaumaturgic Anima Bead
-						["modID"] = NORMAL_LAST2,
+						modID = NORMAL_LAST2,
 					}),
 					FatedItem(modItemId(183894,NORMAL_LAST2), FATED_NORMAL_LAST2),	-- Thaumaturgic Anima Bead (Fated)
 				}),
 				Boss(SIRE, {
 					i(183896, {	-- Abominable Anima Spherule
-						["modID"] = NORMAL_LAST2,
+						modID = NORMAL_LAST2,
 					}),
 					FatedItem(modItemId(183896,NORMAL_LAST2), FATED_NORMAL_LAST2),	-- Abominable Anima Spherule (Fated)
 					i(183897, {	-- Mystic Anima Spherule
-						["modID"] = NORMAL_LAST2,
+						modID = NORMAL_LAST2,
 					}),
 					FatedItem(modItemId(183897,NORMAL_LAST2), FATED_NORMAL_LAST2),	-- Mystic Anima Spherule (Fated)
 					i(183898, {	-- Venerated Anima Spherule
-						["modID"] = NORMAL_LAST2,
+						modID = NORMAL_LAST2,
 					}),
 					FatedItem(modItemId(183898,NORMAL_LAST2), FATED_NORMAL_LAST2),	-- Venerated Anima Spherule (Fated)
 					i(183899, {	-- Zenith Anima Spherule
-						["modID"] = NORMAL_LAST2,
+						modID = NORMAL_LAST2,
 					}),
 					FatedItem(modItemId(183899,NORMAL_LAST2), FATED_NORMAL_LAST2),	-- Zenith Anima Spherule (Fated)
 				}),
@@ -889,15 +889,15 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				BossOnly(SLUDGEFIST),
 				BossOnly(GENERALS),
 				BossOnly(SIRE, {
-					ach(14460, {["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 }}),	-- Ahead of the Curve: Sire Denathrius
+					ach(14460, {timeline = { ADDED_9_0_2, REMOVED_9_1_0 }}),	-- Ahead of the Curve: Sire Denathrius
 					ig(182169),	-- Veilwing Soul (SS!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
 					q(62055, {	-- Castle Nathria: Getting a Head [Heroic]
-						["qg"] = 172653,	-- General Draven
-						["qi"] = 182602,	-- Sludgefist's Head (QI!)
+						qg = 172653,	-- General Draven
+						qi = 182602,	-- Sludgefist's Head (QI!)
 					}),
 				}),
 				ZoneDrops(),
@@ -923,29 +923,29 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				Boss(SLUDGEFIST),
 				Boss(GENERALS, {
 					i(183895, {	-- Apogee Anima Bead
-						["modID"] = HEROIC_LAST2,
+						modID = HEROIC_LAST2,
 					}),
 					FatedItem(modItemId(183895,HEROIC_LAST2), FATED_HEROIC_LAST2),	-- Apogee Anima Bead (Fated)
 					i(183894, {	-- Thaumaturgic Anima Bead
-						["modID"] = HEROIC_LAST2,
+						modID = HEROIC_LAST2,
 					}),
 					FatedItem(modItemId(183894,HEROIC_LAST2), FATED_HEROIC_LAST2),	-- Thaumaturgic Anima Bead (Fated)
 				}),
 				Boss(SIRE, {
 					i(183896, {	-- Abominable Anima Spherule
-						["modID"] = HEROIC_LAST2,
+						modID = HEROIC_LAST2,
 					}),
 					FatedItem(modItemId(183896,HEROIC_LAST2), FATED_HEROIC_LAST2),	-- Abominable Anima Spherule (Fated)
 					i(183897, {	-- Mystic Anima Spherule
-						["modID"] = HEROIC_LAST2,
+						modID = HEROIC_LAST2,
 					}),
 					FatedItem(modItemId(183897,HEROIC_LAST2), FATED_HEROIC_LAST2),	-- Mystic Anima Spherule (Fated)
 					i(183898, {	-- Venerated Anima Spherule
-						["modID"] = HEROIC_LAST2,
+						modID = HEROIC_LAST2,
 					}),
 					FatedItem(modItemId(183898,HEROIC_LAST2), FATED_HEROIC_LAST2),	-- Venerated Anima Spherule (Fated)
 					i(183899, {	-- Zenith Anima Spherule
-						["modID"] = HEROIC_LAST2,
+						modID = HEROIC_LAST2,
 					}),
 					FatedItem(modItemId(183899,HEROIC_LAST2), FATED_HEROIC_LAST2),	-- Zenith Anima Spherule (Fated)
 				}),
@@ -953,8 +953,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(62056, {	-- Castle Nathria: Getting a Head [Mythic]
-						["qg"] = 172653,	-- General Draven
-						["qi"] = 182603,	-- Sludgefist's Head (QI!)
+						qg = 172653,	-- General Draven
+						qi = 182603,	-- Sludgefist's Head (QI!)
 					}),
 				}),
 				ZoneDrops(),
@@ -991,25 +991,25 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				Boss(GENERALS, {
 					ach(14364),	-- Mythic: Stone Legion Generals
 					i(183895, {	-- Apogee Anima Bead
-						["modID"] = MYTHIC_LAST2,
+						modID = MYTHIC_LAST2,
 					}),
 					FatedItem(modItemId(183895,MYTHIC_LAST2), FATED_MYTHIC_LAST2),	-- Apogee Anima Bead (Fated)
 					i(183894, {	-- Thaumaturgic Anima Bead
-						["modID"] = MYTHIC_LAST2,
+						modID = MYTHIC_LAST2,
 					}),
 					FatedItem(modItemId(183894,MYTHIC_LAST2), FATED_MYTHIC_LAST2),	-- Thaumaturgic Anima Bead (Fated)
 				}),
 				Boss(SIRE, {
-					ach(14461, {["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 }}),	-- Cutting Edge: Sire Denathrius
-					ach(14649, bubbleDownSelf({["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {	-- Hall of Fame: Sire Denathrius (Alliance)
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+					ach(14461, {timeline = { ADDED_9_0_2, REMOVED_9_1_0 }}),	-- Cutting Edge: Sire Denathrius
+					ach(14649, bubbleDownSelf({timeline = { ADDED_9_0_2, REMOVED_9_1_0 } }, {	-- Hall of Fame: Sire Denathrius (Alliance)
+						races = ALLIANCE_ONLY,
+						groups = {
 							title(440),	-- <Name>, Famed Slayer of Denathrius
 						},
 					})),
-					ach(14650, bubbleDownSelf({["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {	-- Hall of Fame: Sire Denathrius (Horde)
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+					ach(14650, bubbleDownSelf({timeline = { ADDED_9_0_2, REMOVED_9_1_0 } }, {	-- Hall of Fame: Sire Denathrius (Horde)
+						races = HORDE_ONLY,
+						groups = {
 							title(440),	-- <Name>, Famed Slayer of Denathrius
 						},
 					})),
@@ -1017,19 +1017,19 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						title(432),	-- Sinbreaker <Name>
 					}),
 					i(183896, {	-- Abominable Anima Spherule
-						["modID"] = MYTHIC_LAST2,
+						modID = MYTHIC_LAST2,
 					}),
 					FatedItem(modItemId(183896,MYTHIC_LAST2), FATED_MYTHIC_LAST2),	-- Abominable Anima Spherule (Fated)
 					i(183897, {	-- Mystic Anima Spherule
-						["modID"] = MYTHIC_LAST2,
+						modID = MYTHIC_LAST2,
 					}),
 					FatedItem(modItemId(183897,MYTHIC_LAST2), FATED_MYTHIC_LAST2),	-- Mystic Anima Spherule (Fated)
 					i(183898, {	-- Venerated Anima Spherule
-						["modID"] = MYTHIC_LAST2,
+						modID = MYTHIC_LAST2,
 					}),
 					FatedItem(modItemId(183898,MYTHIC_LAST2), FATED_MYTHIC_LAST2),	-- Venerated Anima Spherule (Fated)
 					i(183899, {	-- Zenith Anima Spherule
-						["modID"] = MYTHIC_LAST2,
+						modID = MYTHIC_LAST2,
 					}),
 					FatedItem(modItemId(183899,MYTHIC_LAST2), FATED_MYTHIC_LAST2),	-- Zenith Anima Spherule (Fated)
 				}),
@@ -1038,7 +1038,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1190, {	-- Castle Nathria
 		q(60680),	-- LFR 'The Leeching Vaults' Completed
 		q(62949),	-- Sire Denathrius Slain (spellID 345481)

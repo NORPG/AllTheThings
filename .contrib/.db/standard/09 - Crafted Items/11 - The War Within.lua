@@ -1,24 +1,24 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
 	i(ARTISANS_ACUITY),
 	i(228338),	-- Soul Sigil I
 	i(228339),	-- Soul Sigil II
 	i(211296, {	-- Spark of Omens
-		["cost"] = {{"i", 211297, 2}},	-- Fractured Spark of Omens
+		cost = {{"i", 211297, 2}},	-- Fractured Spark of Omens
 	}),
 	i(230906, {	-- Spark of Fortunes
-		["cost"] = {{"i", 230905, 2}},	-- Fractured Spark of Fortunes
-		["timeline"] = { ADDED_11_1_0 },
+		cost = {{"i", 230905, 2}},	-- Fractured Spark of Fortunes
+		timeline = { ADDED_11_1_0 },
 	}),
 	i(231756, {	-- Spark of Starlight
-		["cost"] = {{"i", 231757, 2}},	-- Fractured Spark of Starlight
-		["timeline"] = { ADDED_11_2_0 },
+		cost = {{"i", 231757, 2}},	-- Fractured Spark of Starlight
+		timeline = { ADDED_11_2_0 },
 	}),
-	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+	n(DECOR, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
 		o_repeated({	-- Dornic Fir Lumber
-			["maps"] = {
+			maps = {
 				AZJ_KAHET,
 				NERUBAR,
 				HALLOWFALL,
@@ -27,7 +27,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				SIREN_ISLE,
 				THE_RINGING_DEEPS,
 			},
-			["groups"] = {
+			groups = {
 				-- Objects
 				o(544781),	-- [Azj-Kahet/City of Threads]
 				o(546737),	-- [Hallowfall]
@@ -102,7 +102,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				i(212956),	-- Fleeting Draught of Silent Footfalls+++
 				i(212968),	-- Fleeting Frontline Potion+++
 				i(212962),	-- Fleeting Grotesque Vial+++
-				i(244849, {["timeline"]={ADDED_11_2_0}}),	-- Fleeting Invigorating Healing Potion+++
+				i(244849, {timeline={ADDED_11_2_0}}),	-- Fleeting Invigorating Healing Potion+++
 				i(212974),	-- Fleeting Potion of the Reborn Cheetah+++
 				i(212965),	-- Fleeting Potion of Unwavering Focus+++
 				i(212953),	-- Fleeting Slumbering Soul Serum+++
@@ -144,9 +144,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(212254),	-- Grotesque Vial+
 			i(212255),	-- Grotesque Vial++
 			i(212256),	-- Grotesque Vial+++
-			i(244835, {["timeline"]={ADDED_11_2_0}}),	-- Invigorating Healing Potion+
-			i(244838, {["timeline"]={ADDED_11_2_0}}),	-- Invigorating Healing Potion++
-			i(244839, {["timeline"]={ADDED_11_2_0}}),	-- Invigorating Healing Potion+++
+			i(244835, {timeline={ADDED_11_2_0}}),	-- Invigorating Healing Potion+
+			i(244838, {timeline={ADDED_11_2_0}}),	-- Invigorating Healing Potion++
+			i(244839, {timeline={ADDED_11_2_0}}),	-- Invigorating Healing Potion+++
 			i(212314),	-- Phial of Bountiful Seasons+
 			i(212315),	-- Phial of Bountiful Seasons++
 			i(212316),	-- Phial of Bountiful Seasons+++
@@ -171,14 +171,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(212263),	-- Tempered Potion+
 			i(212264),	-- Tempered Potion++
 			i(212265),	-- Tempered Potion+++
-			i(248331, {["timeline"]={ADDED_11_2_0}}),	-- Umbral Essentia+
-			i(248585, {["timeline"]={ADDED_11_2_0}}),	-- Umbral Essentia++
-			i(248586, {["timeline"]={ADDED_11_2_0}}),	-- Umbral Essentia+++
+			i(248331, {timeline={ADDED_11_2_0}}),	-- Umbral Essentia+
+			i(248585, {timeline={ADDED_11_2_0}}),	-- Umbral Essentia++
+			i(248586, {timeline={ADDED_11_2_0}}),	-- Umbral Essentia+++
 			i(212289),	-- Vicious Flask of Classical Spirits
 			i(212292),	-- Vicious Flask of Honor
 			i(212298),	-- Vicious Flask of the Wrecking Ball
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(252758),	-- Boulder Springs Hot Tub (DECOR!)
 			i(257102),	-- Nerubian Alchemist's Retort (DECOR!)
 		})),
@@ -221,7 +221,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			}),
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = ALCHEMY,
+			requireSkill = ALCHEMY,
 		},{
 			-- Alchemy Essentials
 			FirstCraft(81132, 433087);	-- Formulated Courage
@@ -334,12 +334,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222435),	-- Everforged Vambraces
 			i(222458),	-- Sanctified Steps
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(245312),	-- Rusting Bolted Bench (DECOR!)
 			i(245323),	-- Shredderwheel Storage Chest (DECOR!)
 		})),
 		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = BLACKSMITHING,
+			requireSkill = BLACKSMITHING,
 		},{
 			-- Smelting
 			FirstCraft(80492, 450216);	-- Core Alloy
@@ -455,26 +455,26 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222504),	-- Ironclaw Whetstone+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(222494, {["requireSkill"] = BLACKSMITHING}),	-- Artisan Blacksmith's Hammer
-			i(222495, {["requireSkill"] = BLACKSMITHING}),	-- Artisan Blacksmith's Toolbox
-			i(222492, {["requireSkill"] = LEATHERWORKING}),	-- Artisan Leatherworker's Knife
+			i(222494, {requireSkill = BLACKSMITHING}),	-- Artisan Blacksmith's Hammer
+			i(222495, {requireSkill = BLACKSMITHING}),	-- Artisan Blacksmith's Toolbox
+			i(222492, {requireSkill = LEATHERWORKING}),	-- Artisan Leatherworker's Knife
 			i(222493, {	-- Artisan Leatherworker's Toolset
-				["requireSkill"] = LEATHERWORKING,
-				["sourceID"] = 219648,
-				["collectible"] = false,
+				requireSkill = LEATHERWORKING,
+				sourceID = 219648,
+				collectible = false,
 			}),
-			i(222491, {["requireSkill"] = TAILORING}),	-- Artisan Needle Set
-			i(222489, {["requireSkill"] = MINING}),	-- Artisan Pickaxe
-			i(222488, {["requireSkill"] = HERBALISM}),	-- Artisan Sickle
-			i(222490, {["requireSkill"] = SKINNING}),	-- Artisan Skinning Knife
-			i(222486, {["requireSkill"] = BLACKSMITHING}),	-- Proficient Blacksmith's Hammer
-			i(222487, {["requireSkill"] = BLACKSMITHING}),	-- Proficient Blacksmith's Toolbox
-			i(222484, {["requireSkill"] = LEATHERWORKING}),	-- Proficient Leatherworker's Knife
-			i(222485, {["requireSkill"] = LEATHERWORKING}),	-- Proficient Leatherworker's Toolset
-			i(222483, {["requireSkill"] = TAILORING}),	-- Proficient Needle Set
-			i(222481, {["requireSkill"] = MINING}),	-- Proficient Pickaxe
-			i(222480, {["requireSkill"] = HERBALISM}),	-- Proficient Sickle
-			i(222482, {["requireSkill"] = SKINNING}),	-- Proficient Skinning Knife
+			i(222491, {requireSkill = TAILORING}),	-- Artisan Needle Set
+			i(222489, {requireSkill = MINING}),	-- Artisan Pickaxe
+			i(222488, {requireSkill = HERBALISM}),	-- Artisan Sickle
+			i(222490, {requireSkill = SKINNING}),	-- Artisan Skinning Knife
+			i(222486, {requireSkill = BLACKSMITHING}),	-- Proficient Blacksmith's Hammer
+			i(222487, {requireSkill = BLACKSMITHING}),	-- Proficient Blacksmith's Toolbox
+			i(222484, {requireSkill = LEATHERWORKING}),	-- Proficient Leatherworker's Knife
+			i(222485, {requireSkill = LEATHERWORKING}),	-- Proficient Leatherworker's Toolset
+			i(222483, {requireSkill = TAILORING}),	-- Proficient Needle Set
+			i(222481, {requireSkill = MINING}),	-- Proficient Pickaxe
+			i(222480, {requireSkill = HERBALISM}),	-- Proficient Sickle
+			i(222482, {requireSkill = SKINNING}),	-- Proficient Skinning Knife
 		}),
 		filter(REAGENTS, {
 			i(222511),	-- Adjustable Framework+
@@ -546,7 +546,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				r(447873),	-- Secret Sauce
 			}),
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(239170),	-- Dornic Mine and Cheese Platter (DECOR!)
 			i(246708),	-- Dornic Sliced Mineloaf (DECOR!)
 			i(246709),	-- Earthen Hospitality Cheese-Like Brick (DECOR!)
@@ -559,7 +559,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222739),	-- Spiced Meat Stock
 		}),
 		i(222727),	-- Angler's Delight
-		i(235805, {["timeline"] = {ADDED_11_1_0}}),	-- Authentic Undermine Clam Chowder
+		i(235805, {timeline = {ADDED_11_1_0}}),	-- Authentic Undermine Clam Chowder
 		i(223971),	-- Azj-Kahet Special
 		i(222728),	-- Beledar's Bounty
 		i(222736),	-- Chippy Tea
@@ -580,7 +580,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(225855),	-- Ghoulfish Delight
 		i(222716),	-- Ginger-Glazed Fillet
 		i(222707),	-- Hallowfall Chili
-		i(235853, {["timeline"] = {ADDED_11_1_0}}),	-- Hearty Authentic Undermine Clam Chowder
+		i(235853, {timeline = {ADDED_11_1_0}}),	-- Hearty Authentic Undermine Clam Chowder
 		i(222776),	-- Hearty Beledar's Bounty
 		i(222775),	-- Hearty Angler's Delight
 		i(222784),	-- Hearty Chippy Tea
@@ -741,7 +741,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(223679),	-- Enchant Ring - Radiant Versatility++
 			i(223680),	-- Enchant Ring - Radiant Versatility+++
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(253039),	-- Dornogal Hanging Sconce (DECOR!)
 			i(253171),	-- Replica Awakening Machine Stasis Pod (DECOR!)
 		})),
@@ -760,7 +760,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(219948),	-- Storm Dust+++
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = ENCHANTING,
+			requireSkill = ENCHANTING,
 		},{
 			-- Algari Illusions
 			FirstCraft(81040, 445367);	-- Gleeful Glamour - Blood Elf
@@ -882,9 +882,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(224304),	-- Gleeful Glamour - Earthen+
 			i(224328),	-- Gleeful Glamour - Earthen++
 			i(224352),	-- Gleeful Glamour - Earthen+++
-			i(249706, {["timeline"]={ADDED_11_2_0}}),	-- Gleeful Glamour - Ethereal+
-			i(249707, {["timeline"]={ADDED_11_2_0}}),	-- Gleeful Glamour - Ethereal++
-			i(249708, {["timeline"]={ADDED_11_2_0}}),	-- Gleeful Glamour - Ethereal+++
+			i(249706, {timeline={ADDED_11_2_0}}),	-- Gleeful Glamour - Ethereal+
+			i(249707, {timeline={ADDED_11_2_0}}),	-- Gleeful Glamour - Ethereal++
+			i(249708, {timeline={ADDED_11_2_0}}),	-- Gleeful Glamour - Ethereal+++
 			i(224305),	-- Gleeful Glamour - Gnome+
 			i(224329),	-- Gleeful Glamour - Gnome++
 			i(224353),	-- Gleeful Glamour - Gnome+++
@@ -962,9 +962,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(224113),	-- Oil of Deep Toxins+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(224114, {["requireSkill"] = ENCHANTING}),	-- Runed Bismuth Rod
-			i(224115, {["requireSkill"] = ENCHANTING}),	-- Runed Ironclaw Rod
-			i(224116, {["requireSkill"] = ENCHANTING}),	-- Runed Null Stone Rod
+			i(224114, {requireSkill = ENCHANTING}),	-- Runed Bismuth Rod
+			i(224115, {requireSkill = ENCHANTING}),	-- Runed Ironclaw Rod
+			i(224116, {requireSkill = ENCHANTING}),	-- Runed Null Stone Rod
 		}),
 		filter(REAGENTS, {
 			i(224173),	-- Concentration Concentrate+
@@ -1066,7 +1066,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(221873),	-- Potion Bomb of Speed++
 			i(221874),	-- Potion Bomb of Speed+++
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(253252),	-- Replica Rumbling Wastes Drill Pod (DECOR!)
 			i(246066),	-- Schmancy Goblin String Lights (DECOR!)
 		})),
@@ -1133,16 +1133,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				}),
 			}),
 			i(219192, {	-- Comprehensibly Organized Ideas
-				["description"] = "NOTE: Some of these require a specific specialization to discover.",
-				["groups"] = {
+				description = "NOTE: Some of these require a specific specialization to discover.",
+				groups = {
 					r(447325, {	-- Aqirite Brainwave Projector
-						["description"] = "Requires specialization - Profession Gear to discover",
+						description = "Requires specialization - Profession Gear to discover",
 					}),
 					r(447327, {	-- Aqirite Fisherfriend
-						["description"] = "Requires specialization - Profession Gear to discover",
+						description = "Requires specialization - Profession Gear to discover",
 					}),
 					r(447331, {	-- Aqirite Miner's Headgear
-						["description"] = "Requires specialization - Profession Gear to discover",
+						description = "Requires specialization - Profession Gear to discover",
 					}),
 					r(447324),	-- Bismuth Brainwave Projector
 					r(447326),	-- Bismuth Fisherfriend
@@ -1150,53 +1150,53 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 					r(447330),	-- Bismuth Miner's Headgear
 					r(447358),	-- Blame Redirection Device
 					r(447318, {	-- Blasting Bracers
-						["description"] = "Requires specialization - Bracers to discover",
+						description = "Requires specialization - Bracers to discover",
 					}),
 					r(459299),	-- Bottled Brilliance
 					r(447321, {	-- Clanking Cuffs
-						["description"] = "Requires specialization - Bracers to discover",
+						description = "Requires specialization - Bracers to discover",
 					}),
 					r(447360),	-- Complicated Fuse Box
 					r(447373),	-- Crowd Pummeler 2-30
 					r(447362),	-- Concealed Chaos Module
 					r(447317, {	-- Dangerous Distraction Inhibitor
-						["description"] = "Requires specialization - Goggles to discover",
+						description = "Requires specialization - Goggles to discover",
 					}),
 					r(447363),	-- Energy Redistribution Beacon
 					r(447329, {	-- Lapidary's Aqirite Clamps
-						["description"] = "Requires specialization - Profession Gear to discover",
+						description = "Requires specialization - Profession Gear to discover",
 					}),
 					r(447328),	-- Lapidary's Bismuth Clamps
 					r(447335, {	-- Miner's Aqirite Hoard
-						["description"] = "Requires specialization - Profession Gear to discover",
+						description = "Requires specialization - Profession Gear to discover",
 					}),
 					r(447334),	-- Miner's Bismuth Hoard
 					r(447315, {	-- Overclocked Idea Generator
-						["description"] = "Requires specialization - Goggles to discover",
+						description = "Requires specialization - Goggles to discover",
 					}),
 					r(447361),	-- Pouch of Pocket Grenades
 					r(447357),	-- Recalibrated Safety Switch
 					r(447323, {	-- Spring-Loaded Aqirite Fabric Cutters
-						["description"] = "Requires specialization - Profession Gear to discover",
+						description = "Requires specialization - Profession Gear to discover",
 					}),
 					r(447322),	-- Spring-Loaded Bismuth Fabric Cutters
 					r(447314, {	-- Studious Brilliance Expeditor
-						["description"] = "Requires specialization - Goggles to discover",
+						description = "Requires specialization - Goggles to discover",
 					}),
 					r(447316, {	-- Supercharged Thought Enhancer
-						["description"] = "Requires specialization - Goggles to discover",
+						description = "Requires specialization - Goggles to discover",
 					}),
 					r(447319, {	-- Venting Vambraces
-						["description"] = "Requires specialization - Bracers to discover",
+						description = "Requires specialization - Bracers to discover",
 					}),
 					r(447320, {	-- Whirring Wristwraps
-						["description"] = "Requires specialization - Bracers to discover",
+						description = "Requires specialization - Bracers to discover",
 					}),
 				},
 			}),
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = ENGINEERING,
+			requireSkill = ENGINEERING,
 		},{
 			-- Miscellaneous
 			FirstCraft(86460, 1213620, ADDED_11_1_0),	-- 22H Slicks
@@ -1289,7 +1289,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(221910),	-- Tinker: Heartseeking Health Injector+++
 		}),
 		filter(MISC, {
-			i(232985, {["timeline"] = {ADDED_11_1_0}}),	-- 22H Slicks
+			i(232985, {timeline = {ADDED_11_1_0}}),	-- 22H Slicks
 			i(221920),	-- Adjustable Cogwheel+
 			i(221921),	-- Adjustable Cogwheel++
 			i(221922),	-- Adjustable Cogwheel+++
@@ -1338,20 +1338,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(227769),	-- Bountiful Bolts
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(221789, {["requireSkill"] = ENGINEERING}),	-- Aqirite Brainwave Projector
-			i(221791, {["requireSkill"] = FISHING}),	-- Aqirite Fisherfriend
-			i(221798, {["requireSkill"] = ENGINEERING}),	-- Aqirite Fueled Samophlange
-			i(221796, {["requireSkill"] = MINING}),	-- Aqirite Miner's Headgear
-			i(221788, {["requireSkill"] = ENGINEERING}),	-- Bismuth Brainwave Projector
-			i(221790, {["requireSkill"] = FISHING}),	-- Bismuth Fisherfriend
-			i(221797, {["requireSkill"] = ENGINEERING}),	-- Bismuth-Fueled Samophlange
-			i(221795, {["requireSkill"] = MINING}),	-- Bismuth Miner's Headgear
-			i(221793, {["requireSkill"] = JEWELCRAFTING}),	-- Lapidary's Aqirite Clamps
-			i(221792, {["requireSkill"] = JEWELCRAFTING}),	-- Lapidary's Bismuth Clamps
-			i(221800, {["requireSkill"] = MINING}),	-- Miner's Aqirite Hoard
-			i(221799, {["requireSkill"] = MINING}),	-- Miner's Bismuth Hoard
-			i(221787, {["requireSkill"] = TAILORING}),	-- Spring-Loaded Aqirite Fabric Cutters
-			i(221786, {["requireSkill"] = TAILORING}),	-- Spring-Loaded Bismuth Fabric Cutters
+			i(221789, {requireSkill = ENGINEERING}),	-- Aqirite Brainwave Projector
+			i(221791, {requireSkill = FISHING}),	-- Aqirite Fisherfriend
+			i(221798, {requireSkill = ENGINEERING}),	-- Aqirite Fueled Samophlange
+			i(221796, {requireSkill = MINING}),	-- Aqirite Miner's Headgear
+			i(221788, {requireSkill = ENGINEERING}),	-- Bismuth Brainwave Projector
+			i(221790, {requireSkill = FISHING}),	-- Bismuth Fisherfriend
+			i(221797, {requireSkill = ENGINEERING}),	-- Bismuth-Fueled Samophlange
+			i(221795, {requireSkill = MINING}),	-- Bismuth Miner's Headgear
+			i(221793, {requireSkill = JEWELCRAFTING}),	-- Lapidary's Aqirite Clamps
+			i(221792, {requireSkill = JEWELCRAFTING}),	-- Lapidary's Bismuth Clamps
+			i(221800, {requireSkill = MINING}),	-- Miner's Aqirite Hoard
+			i(221799, {requireSkill = MINING}),	-- Miner's Bismuth Hoard
+			i(221787, {requireSkill = TAILORING}),	-- Spring-Loaded Aqirite Fabric Cutters
+			i(221786, {requireSkill = TAILORING}),	-- Spring-Loaded Bismuth Fabric Cutters
 		}),
 		filter(MOUNTS, {
 			i(221967),	-- Crowd Pummeler 2-30 (MOUNT!)
@@ -1411,18 +1411,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			r(456154),	-- Anglerthread
 			r_withQuest(444795, 82907),	-- Arathor Hammerfish
 			r_withQuest(444803, 82915),	-- Awoken Coelacanth
-			r(456591, {["learnedAt"]=225}),	-- Azj-Kahet
+			r(456591, {learnedAt=225}),	-- Azj-Kahet
 			r_withQuest(444787, 82899),	-- Bismuth Bitterling
 			r_withQuest(444785, 82897),	-- Bloody Perch
 			r_withQuest(444786, 82898),	-- Crystalline Sturgeon
 			r_withQuest(444802, 82914),	-- Cursed Ghoulfish
 			r_withQuest(444792, 82896),	-- Dilly-Dally Dace
 			r_withQuest(444793, 82905),	-- Dornish Pike
-			r(454442, {["learnedAt"]=25}),	-- Fishing Skill and You
+			r(454442, {learnedAt=25}),	-- Fishing Skill and You
 			r_withQuest(444790, 82902),	-- Goldengill Trout
-			r(456590, {["learnedAt"]=150}),	-- Hallowfall
+			r(456590, {learnedAt=150}),	-- Hallowfall
 			r_withQuest(444797, 82909),	-- Kaheti Slum Shark
-			r(456180, {["learnedAt"]=150}),	-- Mereldar Fishing Derby
+			r(456180, {learnedAt=150}),	-- Mereldar Fishing Derby
 			r_withQuest(444788, 82900),	-- Nibbling Minnow
 			r_withQuest(444798, 82910),	-- Pale Huskfish
 			r_withQuest(444801, 82913),	-- Queen's Lurefish
@@ -1433,10 +1433,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			r(456152),	-- Seekerthread
 			r_withQuest(444791, 82903),	-- Specular Rainbowfish
 			r_withQuest(444800, 82912),	-- Spiked Sea Raven
-			r(456589, {["learnedAt"]=75}),	-- The Ringing Deeps
+			r(456589, {learnedAt=75}),	-- The Ringing Deeps
 			r_withQuest(444789, 82901),	-- Whispering Stargazer
 		}),
-		i(227673, {["timeline"] = {ADDED_11_1_0}}),	-- "Gold" Fish
+		i(227673, {timeline = {ADDED_11_1_0}}),	-- "Gold" Fish
 		i(225770),	-- Algari Anglerthread
 		i(225771),	-- Algari Seekerthread
 		i(220145),	-- Arathor Hammerfish
@@ -1460,8 +1460,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(224752),	-- Soaked Journal Entry
 		i(220141),	-- Specular Rainbowfish
 		i(220150),	-- Spiked Sea Raven
-		i(235846, {["timeline"] = {ADDED_11_1_0}}),	-- Undermine Clam
-		i(235845, {["timeline"] = {ADDED_11_1_0}}),	-- Undermine Clam Meat
+		i(235846, {timeline = {ADDED_11_1_0}}),	-- Undermine Clam
+		i(235845, {timeline = {ADDED_11_1_0}}),	-- Undermine Clam Meat
 		i(220139),	-- Whispering Stargazer
 	}),
 	prof(HERBALISM, {
@@ -1522,7 +1522,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(219196),	-- Empowered Mulch
 			i(219195),	-- Imbued Mulch
 			i(214597),	-- Irradiated Verdant Seed
-			i(240194, {["timeline"] = {ADDED_11_2_0}}),	-- K'areshi Lotus
+			i(240194, {timeline = {ADDED_11_2_0}}),	-- K'areshi Lotus
 			i(213613),	-- Leyline Residue
 			i(210799),	-- Luredrop+
 			i(210800),	-- Luredrop++
@@ -1535,9 +1535,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210802),	-- Orbinid+
 			i(210803),	-- Orbinid++
 			i(210804),	-- Orbinid+++
-			i(239690, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom+
-			i(239691, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom++
-			i(239692, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom+++
+			i(239690, {timeline = {ADDED_11_2_0}}),	-- Phantom Bloom+
+			i(239691, {timeline = {ADDED_11_2_0}}),	-- Phantom Bloom++
+			i(239692, {timeline = {ADDED_11_2_0}}),	-- Phantom Bloom+++
 			i(214595),	-- Sporefused Verdant Seed
 			i(214561),	-- Verdant Seed
 			i(213612),	-- Viridescent Spores
@@ -1545,7 +1545,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	prof(INSCRIPTION, {
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(253164),	-- Algari Fence (DECOR!)
 			i(253165),	-- Algari Fencepost (DECOR!)
 			i(253022),	-- Dornogal Bookcase (DECOR!)
@@ -1568,7 +1568,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			}),
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = INSCRIPTION,
+			requireSkill = INSCRIPTION,
 		},{
 			-- Competitor's Crafts (PvP)
 			FirstCraft(80748, 444338);	-- Algari Competitor's Emblem
@@ -1656,7 +1656,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(234246),	-- Glyph of the Admiral's Pistol Shot
 			i(234245),	-- Glyph of the Ashvane Pistol Shot
 			i(234247),	-- Glyph of the Gilded Pistol Shot
-			i(243051, {["timeline"] = {ADDED_11_1_7}}),	-- Glyph of the Strix
+			i(243051, {timeline = {ADDED_11_1_7}}),	-- Glyph of the Strix
 			i(234248),	-- Glyph of the Twilight Pistol Shot
 		}),
 		salvagerecipe(444181, 222545, {	-- Khaz Algar Milling
@@ -1675,129 +1675,129 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 		filter(MISC, {
 			i(222546, {	-- Algari Treatise on Alchemy
-				["questID"]= 83725,
-				["isWeekly"]=true,
-				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.ALCHEMY) },
+				questID= 83725,
+				isWeekly=true,
+				groups = { currency(PROFESSION_KNOWLEDGE.TWW.ALCHEMY) },
 			}),
 			i(222554, {	-- Algari Treatise on Blacksmithing
-				["questID"]= 83726,
-				["isWeekly"]=true,
-				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING) },
+				questID= 83726,
+				isWeekly=true,
+				groups = { currency(PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING) },
 			}),
 			i(222550, {	-- Algari Treatise on Enchanting
-				["questID"]= 83727,
-				["isWeekly"]=true,
-				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.ENCHANTING) },
+				questID= 83727,
+				isWeekly=true,
+				groups = { currency(PROFESSION_KNOWLEDGE.TWW.ENCHANTING) },
 			}),
 			TempForceMisc(i(222621, {	-- Algari Treatise on Engineering
-				["questID"]= 83728,
-				["isWeekly"]= true,
-				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.ENGINEERING) },
+				questID= 83728,
+				isWeekly= true,
+				groups = { currency(PROFESSION_KNOWLEDGE.TWW.ENGINEERING) },
 			})),
 			i(222552, {	-- Algari Treatise on Herbalism
-				["questID"]= 83729,
-				["isWeekly"]= true,
-				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.HERBALISM) },
+				questID= 83729,
+				isWeekly= true,
+				groups = { currency(PROFESSION_KNOWLEDGE.TWW.HERBALISM) },
 			}),
 			i(222548, {	-- Algari Treatise on Inscription
-				["questID"]= 83730,
-				["isWeekly"]= true,
-				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.INSCRIPTION) },
+				questID= 83730,
+				isWeekly= true,
+				groups = { currency(PROFESSION_KNOWLEDGE.TWW.INSCRIPTION) },
 			}),
 			i(222551, {	-- Algari Treatise on Jewelcrafting
-				["questID"]= 83731,
-				["isWeekly"]= true,
-				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING) },
+				questID= 83731,
+				isWeekly= true,
+				groups = { currency(PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING) },
 			}),
 			i(222549, {	-- Algari Treatise on Leatherworking
-				["questID"]= 83732,
-				["isWeekly"]= true,
-				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING) },
+				questID= 83732,
+				isWeekly= true,
+				groups = { currency(PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING) },
 			}),
 			i(222553, {	-- Algari Treatise on Mining
-				["questID"]= 83733,
-				["isWeekly"]= true,
-				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.MINING) },
+				questID= 83733,
+				isWeekly= true,
+				groups = { currency(PROFESSION_KNOWLEDGE.TWW.MINING) },
 			}),
 			i(222649, {	-- Algari Treatise on Skinning
-				["questID"]= 83734,
-				["isWeekly"]= true,
-				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.SKINNING) },
+				questID= 83734,
+				isWeekly= true,
+				groups = { currency(PROFESSION_KNOWLEDGE.TWW.SKINNING) },
 			}),
 			i(222547, {	-- Algari Treatise on Tailoring
-				["questID"]= 83735,
-				["isWeekly"]= true,
-				["groups"] = { currency(PROFESSION_KNOWLEDGE.TWW.TAILORING) },
+				questID= 83735,
+				isWeekly= true,
+				groups = { currency(PROFESSION_KNOWLEDGE.TWW.TAILORING) },
 			}),
-			i(222600, {["questID"]=84484,["isWeekly"]=true}),	-- Contract: Assembly of the Deeps+
-			i(222601, {["questID"]=84483,["isWeekly"]=true}),	-- Contract: Assembly of the Deeps++
-			i(222602, {["questID"]=84482,["isWeekly"]=true}),	-- Contract: Assembly of the Deeps+++
-			i(232532, {["timeline"]={ADDED_11_1_0},["questID"]=85793,["isWeekly"]=true}),	-- Contract: The Cartels of Undermine+
-			i(232533, {["timeline"]={ADDED_11_1_0},["questID"]=85794,["isWeekly"]=true}),	-- Contract: The Cartels of Undermine++
-			i(232534, {["timeline"]={ADDED_11_1_0},["questID"]=85795,["isWeekly"]=true}),	-- Contract: The Cartels of Undermine+++
-			i(222597, {["questID"]=84473,["isWeekly"]=true}),	-- Contract: Council of Dornogal+
-			i(222598, {["questID"]=84474,["isWeekly"]=true}),	-- Contract: Council of Dornogal++
-			i(222599, {["questID"]=84475,["isWeekly"]=true}),	-- Contract: Council of Dornogal+++
-			i(222603, {["questID"]=84479,["isWeekly"]=true}),	-- Contract: Hallowfall Arathi+
-			i(222604, {["questID"]=84480,["isWeekly"]=true}),	-- Contract: Hallowfall Arathi++
-			i(222605, {["questID"]=84481,["isWeekly"]=true}),	-- Contract: Hallowfall Arathi+++
-			i(243821, {["timeline"]={ADDED_11_2_0},["questID"]=90903,["isWeekly"]=true}),	-- Contract: The K'aresh Trust+
-			i(243822, {["timeline"]={ADDED_11_2_0},["questID"]=90904,["isWeekly"]=true}),	-- Contract: The K'aresh Trust++
-			i(243823, {["timeline"]={ADDED_11_2_0},["questID"]=90905,["isWeekly"]=true}),	-- Contract: The K'aresh Trust+++
-			i(222606, {["questID"]=84478,["isWeekly"]=true}),	-- Contract: The Severed Threads+
-			i(222607, {["questID"]=84477,["isWeekly"]=true}),	-- Contract: The Severed Threads++
-			i(222608, {["questID"]=84476,["isWeekly"]=true}),	-- Contract: The Severed Threads+++
+			i(222600, {questID=84484,isWeekly=true}),	-- Contract: Assembly of the Deeps+
+			i(222601, {questID=84483,isWeekly=true}),	-- Contract: Assembly of the Deeps++
+			i(222602, {questID=84482,isWeekly=true}),	-- Contract: Assembly of the Deeps+++
+			i(232532, {timeline={ADDED_11_1_0},questID=85793,isWeekly=true}),	-- Contract: The Cartels of Undermine+
+			i(232533, {timeline={ADDED_11_1_0},questID=85794,isWeekly=true}),	-- Contract: The Cartels of Undermine++
+			i(232534, {timeline={ADDED_11_1_0},questID=85795,isWeekly=true}),	-- Contract: The Cartels of Undermine+++
+			i(222597, {questID=84473,isWeekly=true}),	-- Contract: Council of Dornogal+
+			i(222598, {questID=84474,isWeekly=true}),	-- Contract: Council of Dornogal++
+			i(222599, {questID=84475,isWeekly=true}),	-- Contract: Council of Dornogal+++
+			i(222603, {questID=84479,isWeekly=true}),	-- Contract: Hallowfall Arathi+
+			i(222604, {questID=84480,isWeekly=true}),	-- Contract: Hallowfall Arathi++
+			i(222605, {questID=84481,isWeekly=true}),	-- Contract: Hallowfall Arathi+++
+			i(243821, {timeline={ADDED_11_2_0},questID=90903,isWeekly=true}),	-- Contract: The K'aresh Trust+
+			i(243822, {timeline={ADDED_11_2_0},questID=90904,isWeekly=true}),	-- Contract: The K'aresh Trust++
+			i(243823, {timeline={ADDED_11_2_0},questID=90905,isWeekly=true}),	-- Contract: The K'aresh Trust+++
+			i(222606, {questID=84478,isWeekly=true}),	-- Contract: The Severed Threads+
+			i(222607, {questID=84477,isWeekly=true}),	-- Contract: The Severed Threads++
+			i(222608, {questID=84476,isWeekly=true}),	-- Contract: The Severed Threads+++
 			i(249702, {	-- Deal: Cartel Ba
-				["timeline"] = {ADDED_11_2_0},
-				["questID"]= 92072,
-				["isWeekly"]= true,
-				["groups"] = {
+				timeline = {ADDED_11_2_0},
+				questID= 92072,
+				isWeekly= true,
+				groups = {
 					title(647, {	-- Ba'<Name>
-						["timeline"] = { ADDED_11_2_0 },
-						["collectible"] = false,
+						timeline = { ADDED_11_2_0 },
+						collectible = false,
 					}),
 				},
 			}),
 			i(249704, {	-- Deal: Cartel Om
-				["timeline"] = {ADDED_11_2_0},
-				["questID"]= 92073,
-				["isWeekly"]= true,
-				["groups"] = {
+				timeline = {ADDED_11_2_0},
+				questID= 92073,
+				isWeekly= true,
+				groups = {
 					title(649, {	-- Om'<Name>
-						["timeline"] = { ADDED_11_2_0 },
-						["collectible"] = false,
+						timeline = { ADDED_11_2_0 },
+						collectible = false,
 					}),
 				},
 			}),
 			i(249700, {	-- Deal: Cartel Zo
-				["timeline"] = {ADDED_11_2_0},
-				["questID"]= 92071,
-				["isWeekly"]= true,
-				["groups"] = {
+				timeline = {ADDED_11_2_0},
+				questID= 92071,
+				isWeekly= true,
+				groups = {
 					title(648, {	-- Zo'<Name>
-						["timeline"] = { ADDED_11_2_0 },
-						["collectible"] = false,
+						timeline = { ADDED_11_2_0 },
+						collectible = false,
 					}),
 				},
 			}),
-			i(246809, {["timeline"] = {ADDED_11_2_0}}),	-- Inspired Writer's Quill
-			i(232936, {["timeline"] = {ADDED_11_1_0}}),	-- Vantus Rune: Liberation of Undermine+
-			i(232935, {["timeline"] = {ADDED_11_1_0}}),	-- Vantus Rune: Liberation of Undermine++
-			i(232937, {["timeline"] = {ADDED_11_1_0}}),	-- Vantus Rune: Liberation of Undermine+++
-			i(244147, {["timeline"] = {ADDED_11_2_0}}),	-- Vantus Rune: Manaforge Omega+
-			i(244148, {["timeline"] = {ADDED_11_2_0}}),	-- Vantus Rune: Manaforge Omega++
-			i(244149, {["timeline"] = {ADDED_11_2_0}}),	-- Vantus Rune: Manaforge Omega+++
+			i(246809, {timeline = {ADDED_11_2_0}}),	-- Inspired Writer's Quill
+			i(232936, {timeline = {ADDED_11_1_0}}),	-- Vantus Rune: Liberation of Undermine+
+			i(232935, {timeline = {ADDED_11_1_0}}),	-- Vantus Rune: Liberation of Undermine++
+			i(232937, {timeline = {ADDED_11_1_0}}),	-- Vantus Rune: Liberation of Undermine+++
+			i(244147, {timeline = {ADDED_11_2_0}}),	-- Vantus Rune: Manaforge Omega+
+			i(244148, {timeline = {ADDED_11_2_0}}),	-- Vantus Rune: Manaforge Omega++
+			i(244149, {timeline = {ADDED_11_2_0}}),	-- Vantus Rune: Manaforge Omega+++
 			i(226034),	-- Vantus Rune: Nerub-ar Palace+
 			i(226035),	-- Vantus Rune: Nerub-ar Palace++
 			i(226036),	-- Vantus Rune: Nerub-ar Palace+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(222577, {["requireSkill"] = COOKING}),	-- Burnt Rolling Pin
-			i(222575, {["requireSkill"] = ALCHEMY}),	-- Hasty Alchemist's Mixing Rod
-			i(222578, {["requireSkill"] = COOKING}),	-- Inscribed Rolling Pin
-			i(222573, {["requireSkill"] = INSCRIPTION}),	-- Lightweight Scribe's Quill
-			i(222576, {["requireSkill"] = ALCHEMY}),	-- Patient Alchemist's Mixing Rod
-			i(222574, {["requireSkill"] = INSCRIPTION}),	-- Silver Tongue's Quill
+			i(222577, {requireSkill = COOKING}),	-- Burnt Rolling Pin
+			i(222575, {requireSkill = ALCHEMY}),	-- Hasty Alchemist's Mixing Rod
+			i(222578, {requireSkill = COOKING}),	-- Inscribed Rolling Pin
+			i(222573, {requireSkill = INSCRIPTION}),	-- Lightweight Scribe's Quill
+			i(222576, {requireSkill = ALCHEMY}),	-- Patient Alchemist's Mixing Rod
+			i(222574, {requireSkill = INSCRIPTION}),	-- Silver Tongue's Quill
 		}),
 		filter(REAGENTS, {
 			i(222635),	-- Algari Missive of Crafting Speed+
@@ -1962,7 +1962,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(215132),	-- Marvelous Mood Ring
 			i(215135),	-- Ring of Earthen Craftsmanship
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(253253),	-- Gundargaz Candelabra (DECOR!)
 			i(245559),	-- Octagonal Ochre Window (DECOR!)
 		})),
@@ -1970,7 +1970,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			r(434020),	-- Algari Crushing
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = JEWELCRAFTING,
+			requireSkill = JEWELCRAFTING,
 		},{
 			-- Prisms
 			FirstCraft(81232, 435337);	-- Algari Amber Prism
@@ -2168,17 +2168,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(213764),	-- Sifted Cave Sand+++
 		}),
 		filter(MOUNTS, {
-			i(235712, {["timeline"] = {ADDED_11_1_5}}),	-- Void-Crystal Panther (MOUNT!)
+			i(235712, {timeline = {ADDED_11_1_5}}),	-- Void-Crystal Panther (MOUNT!)
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(215125, {["requireSkill"] = ENCHANTING}),	-- Enchanter's Crystal
-			i(215124, {["requireSkill"] = JEWELCRAFTING}),	-- Extravagant Loupes
-			i(215123, {["requireSkill"] = INSCRIPTION}),	-- Forger's Font Inspector
-			i(215121, {["requireSkill"] = ENCHANTING}),	-- Incanter's Shard
-			i(215122, {["requireSkill"] = INSCRIPTION}),	-- Novelist's Specs
-			i(215120, {["requireSkill"] = JEWELCRAFTING}),	-- Radiant Loupes
-			i(215119, {["requireSkill"] = INSCRIPTION}),	-- Right-Handed Magnifying Glass
-			i(215117, {["requireSkill"] = INSCRIPTION}),	-- Storyteller's Glasses
+			i(215125, {requireSkill = ENCHANTING}),	-- Enchanter's Crystal
+			i(215124, {requireSkill = JEWELCRAFTING}),	-- Extravagant Loupes
+			i(215123, {requireSkill = INSCRIPTION}),	-- Forger's Font Inspector
+			i(215121, {requireSkill = ENCHANTING}),	-- Incanter's Shard
+			i(215122, {requireSkill = INSCRIPTION}),	-- Novelist's Specs
+			i(215120, {requireSkill = JEWELCRAFTING}),	-- Radiant Loupes
+			i(215119, {requireSkill = INSCRIPTION}),	-- Right-Handed Magnifying Glass
+			i(215117, {requireSkill = INSCRIPTION}),	-- Storyteller's Glasses
 		}),
 		filter(REAGENTS, {
 			i(213753),	-- Decorative Lens+
@@ -2267,12 +2267,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				i(219501),	-- Vambraces of Deepening Darkness
 			}),
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(239214),	-- Well-Lit Incontinental Couch (DECOR!)
 			i(243327),	-- Zhevra-Stripe Rug (DECOR!)
 		})),
 		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = LEATHERWORKING,
+			requireSkill = LEATHERWORKING,
 		},{
 			-- Arathorian Patterns
 			FirstCraft(80922, 441460);	-- Blessed Weapon Grip
@@ -2377,9 +2377,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(219495),	-- Blessed Weapon Grip+
 			i(219496),	-- Blessed Weapon Grip++
 			i(219497),	-- Blessed Weapon Grip+++
-			i(235335, {["timeline"] = {ADDED_11_1_0}}),	-- Charged Armor Kit+
-			i(235337, {["timeline"] = {ADDED_11_1_0}}),	-- Charged Armor Kit++
-			i(235336, {["timeline"] = {ADDED_11_1_0}}),	-- Charged Armor Kit+++
+			i(235335, {timeline = {ADDED_11_1_0}}),	-- Charged Armor Kit+
+			i(235337, {timeline = {ADDED_11_1_0}}),	-- Charged Armor Kit++
+			i(235336, {timeline = {ADDED_11_1_0}}),	-- Charged Armor Kit+++
 			i(219906),	-- Defender's Armor Kit+
 			i(219907),	-- Defender's Armor Kit++
 			i(219908),	-- Defender's Armor Kit+++
@@ -2395,22 +2395,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(219506),	-- Writhing Armor Banding+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(219866, {["requireSkill"] = ALCHEMY}),	-- Apothecary's Cap
-			i(219871, {["requireSkill"] = LEATHERWORKING}),	-- Arathi Leatherworker's Smock
-			i(219870, {["requireSkill"] = ENGINEERING}),	-- Charged Scrapmaster's Gauntlets
-			i(219869, {["requireSkill"] = SKINNING}),	-- Deep Tracker's Cap
-			i(219868, {["requireSkill"] = SKINNING}),	-- Deep Tracker's Pack
-			i(219874, {["requireSkill"] = BLACKSMITHING}),	-- Earthen Forgemaster's Apron
-			i(219876, {["requireSkill"] = JEWELCRAFTING}),	-- Earthen Jeweler's Cover
-			i(219861, {["requireSkill"] = HERBALISM}),	-- Gardener's Basket
-			i(219875, {["requireSkill"] = JEWELCRAFTING}),	-- Gemcutter's Apron
-			i(219863, {["requireSkill"] = SKINNING}),	-- Hideseeker's Hat
-			i(219862, {["requireSkill"] = SKINNING}),	-- Hideseeker's Pack
-			i(219865, {["requireSkill"] = LEATHERWORKING}),	-- Hideshaper's Cover
-			i(219872, {["requireSkill"] = ALCHEMY}),	-- Nerubian Alchemist's Hat
-			i(219864, {["requireSkill"] = ENGINEERING}),	-- Scrapsmith's Gloves
-			i(219873, {["requireSkill"] = BLACKSMITHING}),	-- Steelsmith's Apron
-			i(219867, {["requireSkill"] = HERBALISM}),	-- Stonebound Herbalist's Pack
+			i(219866, {requireSkill = ALCHEMY}),	-- Apothecary's Cap
+			i(219871, {requireSkill = LEATHERWORKING}),	-- Arathi Leatherworker's Smock
+			i(219870, {requireSkill = ENGINEERING}),	-- Charged Scrapmaster's Gauntlets
+			i(219869, {requireSkill = SKINNING}),	-- Deep Tracker's Cap
+			i(219868, {requireSkill = SKINNING}),	-- Deep Tracker's Pack
+			i(219874, {requireSkill = BLACKSMITHING}),	-- Earthen Forgemaster's Apron
+			i(219876, {requireSkill = JEWELCRAFTING}),	-- Earthen Jeweler's Cover
+			i(219861, {requireSkill = HERBALISM}),	-- Gardener's Basket
+			i(219875, {requireSkill = JEWELCRAFTING}),	-- Gemcutter's Apron
+			i(219863, {requireSkill = SKINNING}),	-- Hideseeker's Hat
+			i(219862, {requireSkill = SKINNING}),	-- Hideseeker's Pack
+			i(219865, {requireSkill = LEATHERWORKING}),	-- Hideshaper's Cover
+			i(219872, {requireSkill = ALCHEMY}),	-- Nerubian Alchemist's Hat
+			i(219864, {requireSkill = ENGINEERING}),	-- Scrapsmith's Gloves
+			i(219873, {requireSkill = BLACKSMITHING}),	-- Steelsmith's Apron
+			i(219867, {requireSkill = HERBALISM}),	-- Stonebound Herbalist's Pack
 		}),
 		filter(REAGENTS, {
 			i(219880),	-- Carapace-Backed Hide+
@@ -2490,11 +2490,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210936),	-- Ironclaw Ore+
 			i(210937),	-- Ironclaw Ore++
 			i(210938),	-- Ironclaw Ore+++
-			i(238201, {["timeline"]={ADDED_11_2_0}}),	-- Desolate Talus+
-			i(238212, {["timeline"]={ADDED_11_2_0}}),	-- Desolate Talus++
-			i(238213, {["timeline"]={ADDED_11_2_0}}),	-- Desolate Talus+++
-			i(240216, {["timeline"]={ADDED_11_2_0}}),	-- K'areshi Resonating Stone
-			i(246504, {["timeline"]={ADDED_11_2_0}}),	-- Inscrutable Ore (QS!)
+			i(238201, {timeline={ADDED_11_2_0}}),	-- Desolate Talus+
+			i(238212, {timeline={ADDED_11_2_0}}),	-- Desolate Talus++
+			i(238213, {timeline={ADDED_11_2_0}}),	-- Desolate Talus+++
+			i(240216, {timeline={ADDED_11_2_0}}),	-- K'areshi Resonating Stone
+			i(246504, {timeline={ADDED_11_2_0}}),	-- Inscrutable Ore (QS!)
 			i(224838),	-- Null Sliver
 			i(210939),	-- Null Stone
 			i(224583),	-- Slab of Slate
@@ -2502,8 +2502,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(213611),	-- Writhing Sample
 		}),
 		o(413902, {	-- Weeping Ironclaw
-			["description"] = "Has a chance to spawn only in a few Delves.",
-			["maps"] = { SKITTERING_BREACH, THE_UNDERKEEP, TAK_RETHAN_ABYSS },
+			description = "Has a chance to spawn only in a few Delves.",
+			maps = { SKITTERING_BREACH, THE_UNDERKEEP, TAK_RETHAN_ABYSS },
 		}),
 	}),
 	prof(SKINNING, {
@@ -2600,7 +2600,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222853),	-- Weavercloth Bag
 			i(222855),	-- Weavercloth Reagent Bag
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(252755),	-- Dornogal Framed Rug (DECOR!)
 			i(245305),	-- Undermine Bean Bag Chair (DECOR!)
 		})),
@@ -2643,18 +2643,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222890),	-- Weavercloth Spellthread+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(222850, {["requireSkill"] = ALCHEMY}),	-- Artisan Alchemist's Robe
-			i(222851, {["requireSkill"] = COOKING}),	-- Artisan Chef's Hat
-			i(222849, {["requireSkill"] = ENCHANTING}),	-- Artisan Enchanter's Hat
+			i(222850, {requireSkill = ALCHEMY}),	-- Artisan Alchemist's Robe
+			i(222851, {requireSkill = COOKING}),	-- Artisan Chef's Hat
+			i(222849, {requireSkill = ENCHANTING}),	-- Artisan Enchanter's Hat
 			i(222848),	-- Artisan Fishing Cap
 			i(222847, {_drop={"requireSkill"},requireSkill=HERBALISM}),	-- Artisan Gardening Hat
-			i(222852, {["requireSkill"] = TAILORING}),	-- Artisan Tailor's Coat
-			i(222845, {["requireSkill"] = ALCHEMY}),	-- Weavercloth Alchemist's Robe
-			i(222846, {["requireSkill"] = COOKING}),	-- Weavercloth Chef's Hat
-			i(222843, {["requireSkill"] = ENCHANTING}),	-- Weavercloth Enchanter's Hat
-			i(222842, {["requireSkill"] = FISHING}),	-- Weavercloth Fishing Cap
-			i(222841, {["requireSkill"] = HERBALISM}),	-- Weavercloth Gardening Hat
-			i(222844, {["requireSkill"] = TAILORING}),	-- Weavercloth Tailor's Coat
+			i(222852, {requireSkill = TAILORING}),	-- Artisan Tailor's Coat
+			i(222845, {requireSkill = ALCHEMY}),	-- Weavercloth Alchemist's Robe
+			i(222846, {requireSkill = COOKING}),	-- Weavercloth Chef's Hat
+			i(222843, {requireSkill = ENCHANTING}),	-- Weavercloth Enchanter's Hat
+			i(222842, {requireSkill = FISHING}),	-- Weavercloth Fishing Cap
+			i(222841, {requireSkill = HERBALISM}),	-- Weavercloth Gardening Hat
+			i(222844, {requireSkill = TAILORING}),	-- Weavercloth Tailor's Coat
 		}),
 		filter(REAGENTS, {
 			i(228930),	-- Adorning Ribbon
@@ -2682,7 +2682,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222806),	-- Weavercloth Bolt+++
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = TAILORING,
+			requireSkill = TAILORING,
 		},{
 			FirstCraft(80794, 438892);	-- Algari Competitor's Cloth Bands
 			FirstCraft(80799, 438897);	-- Algari Competitor's Cloth Cloak
@@ -2767,14 +2767,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
 	n(PROFESSIONS, {
 		prof(ALCHEMY, {
 			q(82473),	-- Transmutation 15/30
 			q(82474),	-- Transmutation 30/30
-			q(82388, {["isDaily"]=true}),	-- Daily craft bonus potion
-			q(81898, {["isDaily"]=true}),	-- Daily craft bonus flask
-			q(81090, {["isDaily"]=true}),	-- Daily craft Thaumaturgy
+			q(82388, {isDaily=true}),	-- Daily craft bonus potion
+			q(81898, {isDaily=true}),	-- Daily craft bonus flask
+			q(81090, {isDaily=true}),	-- Daily craft Thaumaturgy
 		}),
 		prof(BLACKSMITHING, {
 			q(83111),	-- 10/40 Everburning Forge
@@ -2798,8 +2798,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(81443),	-- 30/40 Meat Carver
 			q(81444),	-- 40/40 Meat Carver
 		}),
-		prof(SKINNING, sharedData({ ["isWeekly"] = true }, {
-			q(91127, name(HEADERS.NPC, 232098, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning "Chowdar"
+		prof(SKINNING, sharedData({ isWeekly = true }, {
+			q(91127, name(HEADERS.NPC, 232098, {timeline = { ADDED_11_2_0 }})),	-- Skinning "Chowdar"
 			q(83410, name(HEADERS.NPC, 216031)),	-- Skinning Abyssal Devourer
 			q(83411, name(HEADERS.NPC, 214151)),	-- Skinning Ahg'zagall
 			q(81450, name(HEADERS.NPC, 219264)),	-- Skinning Bloodmaw
@@ -2813,46 +2813,46 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(81448, name(HEADERS.NPC, 226232)),	-- Skinning Elusive Razormouth Steelhide
 			q(81451, name(HEADERS.NPC, 219265)),	-- Skinning Emperor Pitfang
 			q(85548, name(HEADERS.NPC, 220492)),	-- Skinning Finclaw Bloodtide
-			q(86795, name(HEADERS.NPC, 228601, {["timeline"] = { ADDED_11_0_7 }})),	-- Skinning Ghostmaker
-			q(87592, name(HEADERS.NPC, 230935, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Grease
-			q(87593, name(HEADERS.NPC, 230936, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Grime
-			q(87590, name(HEADERS.NPC, 231017, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Grimewick
-			q(91132, name(HEADERS.NPC, 238540, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Grubber
+			q(86795, name(HEADERS.NPC, 228601, {timeline = { ADDED_11_0_7 }})),	-- Skinning Ghostmaker
+			q(87592, name(HEADERS.NPC, 230935, {timeline = { ADDED_11_1_0 }})),	-- Skinning Grease
+			q(87593, name(HEADERS.NPC, 230936, {timeline = { ADDED_11_1_0 }})),	-- Skinning Grime
+			q(87590, name(HEADERS.NPC, 231017, {timeline = { ADDED_11_1_0 }})),	-- Skinning Grimewick
+			q(91132, name(HEADERS.NPC, 238540, {timeline = { ADDED_11_2_0 }})),	-- Skinning Grubber
 			q(83402, name(HEADERS.NPC, 221668)),	-- Skinning Horror of the Shallows
 			q(83413, name(HEADERS.NPC, 221327)),	-- Skinning Kaheti Silk Hauler
 			q(81455, name(HEADERS.NPC, 220275)),	-- Skinning King Splash
-			q(91126, name(HEADERS.NPC, 232077, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Korgorath the Ravager
+			q(91126, name(HEADERS.NPC, 232077, {timeline = { ADDED_11_2_0 }})),	-- Skinning Korgorath the Ravager
 			q(83409, name(HEADERS.NPC, 220285)),	-- Skinning Lurker of the Deeps
 			q(83400, name(HEADERS.NPC, 221534)),	-- Skinning Lytfang the Lost
 			q(83416, name(HEADERS.NPC, 216044)),	-- Skinning Maddened Siegebomber
-			q(91272, name(HEADERS.NPC, 245997, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Malek'ta
+			q(91272, name(HEADERS.NPC, 245997, {timeline = { ADDED_11_2_0 }})),	-- Skinning Malek'ta
 			q(83406, name(HEADERS.NPC, 220890)),	-- Skinning Matriarch Charfuria
-			q(91134, name(HEADERS.NPC, 231981, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Maw of the Sands
-			q(91128, name(HEADERS.NPC, 232108, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Morgil the Netherspawn
+			q(91134, name(HEADERS.NPC, 231981, {timeline = { ADDED_11_2_0 }})),	-- Skinning Maw of the Sands
+			q(91128, name(HEADERS.NPC, 232108, {timeline = { ADDED_11_2_0 }})),	-- Skinning Morgil the Netherspawn
 			q(81458, name(HEADERS.NPC, 218452)),	-- Skinning Murkshade
-			q(87589, name(HEADERS.NPC, 230995, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Nitro
-			q(91135, name(HEADERS.NPC, 232127, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Orith the Dreadful
+			q(87589, name(HEADERS.NPC, 230995, {timeline = { ADDED_11_1_0 }})),	-- Skinning Nitro
+			q(91135, name(HEADERS.NPC, 232127, {timeline = { ADDED_11_2_0 }})),	-- Skinning Orith the Dreadful
 			q(81452, name(HEADERS.NPC, 219267)),	-- Skinning Plaguehart
 			q(83403, name(HEADERS.NPC, 221786)),	-- Skinning Pride of Beledar
-			q(87591, name(HEADERS.NPC, 230934, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Ratspit
+			q(87591, name(HEADERS.NPC, 230934, {timeline = { ADDED_11_1_0 }})),	-- Skinning Ratspit
 			q(85547, name(HEADERS.NPC, 207826)),	-- Skinning Ravageant
-			q(87594, name(HEADERS.NPC, 230931, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Scrapbeak
-			q(87596, name(HEADERS.NPC, 233471, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Scrapchewer
-			q(91125, name(HEADERS.NPC, 232129, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Shadowhowl
+			q(87594, name(HEADERS.NPC, 230931, {timeline = { ADDED_11_1_0 }})),	-- Skinning Scrapbeak
+			q(87596, name(HEADERS.NPC, 233471, {timeline = { ADDED_11_1_0 }})),	-- Skinning Scrapchewer
+			q(91125, name(HEADERS.NPC, 232129, {timeline = { ADDED_11_2_0 }})),	-- Skinning Shadowhowl
 			q(85550, name(HEADERS.NPC, 219278)),	-- Skinning Shallowshell the Clacker
-			q(91133, name(HEADERS.NPC, 232006, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Sha'ryth the Cursed
+			q(91133, name(HEADERS.NPC, 232006, {timeline = { ADDED_11_2_0 }})),	-- Skinning Sha'ryth the Cursed
 			q(84259, name(HEADERS.NPC, 228439)),	-- Skinning Slatefang
 			q(83405, name(HEADERS.NPC, 221217)),	-- Skinning Spore-infused Shalewing
-			q(91130, name(HEADERS.NPC, 232193, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Stalker of the Wastes
+			q(91130, name(HEADERS.NPC, 232193, {timeline = { ADDED_11_2_0 }})),	-- Skinning Stalker of the Wastes
 			q(85551, name(HEADERS.NPC, 221690)),	-- Skinning Strength of Beledar
 			q(83407, name(HEADERS.NPC, 221126)),	-- Skinning Tephratennae
 			q(81456, name(HEADERS.NPC, 220271)),	-- Skinning Terror of the Forge
-			q(91129, name(HEADERS.NPC, 232111, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning The Nightreaver
+			q(91129, name(HEADERS.NPC, 232111, {timeline = { ADDED_11_2_0 }})),	-- Skinning The Nightreaver
 			q(83401, name(HEADERS.NPC, 221648)),	-- Skinning The Perchfather
 			q(81453, name(HEADERS.NPC, 219271)),	-- Skinning Twice-Stinger the Wretched
-			q(91131, name(HEADERS.NPC, 232195, {["timeline"] = { ADDED_11_2_0 }})),	-- Skinning Urmag
+			q(91131, name(HEADERS.NPC, 232195, {timeline = { ADDED_11_2_0 }})),	-- Skinning Urmag
 			q(83415, name(HEADERS.NPC, 216037)),	-- Skinning Vilewing
-			q(87595, name(HEADERS.NPC, 233472, {["timeline"] = { ADDED_11_1_0 }})),	-- Skinning Volstrike the Charged
+			q(87595, name(HEADERS.NPC, 233472, {timeline = { ADDED_11_1_0 }})),	-- Skinning Volstrike the Charged
 			q(81449, name(HEADERS.NPC, 219263)),	-- Skinning Warphorn
 			q(83412, name(HEADERS.NPC, 216039)),	-- Skinning Xishorr
 			q(81457, name(HEADERS.NPC, 220270)),	-- Skinning Zilthara
@@ -2879,9 +2879,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			-- q(84476),	-- Contract: The Severed Threads [Rank 3] (spellID 454942)
 			-- Craftable / Sparks
 			q(82039),	-- first Fractured Spark of Omens
-			q(85395, {["timeline"]={ADDED_11_1_0_SEASONSTART}}),	-- Fractured Spark of Fortunes
-			q(90664, {["timeline"]={ADDED_11_1_0_SEASONSTART}}),	-- Triggers with 90660 A Golden Circumstance
-			q(85685, {["timeline"]={ADDED_11_2_0}}),	-- Fractured Spark of Starlight
+			q(85395, {timeline={ADDED_11_1_0_SEASONSTART}}),	-- Fractured Spark of Fortunes
+			q(90664, {timeline={ADDED_11_1_0_SEASONSTART}}),	-- Triggers with 90660 A Golden Circumstance
+			q(85685, {timeline={ADDED_11_2_0}}),	-- Fractured Spark of Starlight
 		}),
 	}),
 })));

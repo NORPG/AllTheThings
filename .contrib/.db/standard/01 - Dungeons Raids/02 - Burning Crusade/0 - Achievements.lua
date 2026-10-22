@@ -3,11 +3,11 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
-		ach(11747, {["timeline"] = {ADDED_7_2_0}}),	-- Merely a Set (Serpentshrine Cavern and The Eye)
+	n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_2_0_3 } }, {
+		ach(11747, {timeline = {ADDED_7_2_0}}),	-- Merely a Set (Serpentshrine Cavern and The Eye)
 		ach(1287, {		-- Outland Dungeon Hero
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				672,	-- Heroic: Auchenai Crypts
 				667,	-- Heroic: Hellfire Ramparts
 				682,	-- Heroic: Magister's Terrace
@@ -26,11 +26,11 @@ root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, 
 				670,	-- Heroic: Underbog
 			}},
 			-- CRIEVE NOTE: This achievement can not be earned ahead of time.
-			["timeline"] = { ADDED_3_0_2 },
+			timeline = { ADDED_3_0_2 },
 		}),
 		ach(1284, {		-- Outland Dungeonmaster
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				666,	-- Auchenai Crypts
 				647,	-- Hellfire Ramparts
 				661,	-- Magister's Terrace
@@ -49,11 +49,11 @@ root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, 
 				650,	-- Underbog
 			}},
 			-- CRIEVE NOTE: This achievement can not be earned ahead of time.
-			["timeline"] = { ADDED_3_0_2 },
+			timeline = { ADDED_3_0_2 },
 		}),
 		ach(1286, {		-- Outland Raider
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				690,	-- Karazhan
 				692,	-- Gruul's Lair
 				693,	-- Magtheridon's Lair
@@ -65,19 +65,19 @@ root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, 
 			}},
 			-- #if NOT ANYCLASSIC
 			-- CRIEVE NOTE: This achievement can be earned ahead of time by completing the criteria for the other achievements.
-			["timeline"] = { ADDED_3_0_2 },
+			timeline = { ADDED_3_0_2 },
 			-- #endif
 		}),
-		ach(11746, {["timeline"] = {ADDED_7_2_0}}),	-- Outlandish Style (Gruuls' Lair, Karazhan, and Magtheridon's Lair)
+		ach(11746, {timeline = {ADDED_7_2_0}}),	-- Outlandish Style (Gruuls' Lair, Karazhan, and Magtheridon's Lair)
 		ach(8293, {	-- Raiding with Leashes II: Attunement Edition
-			["timeline"] = { ADDED_5_3_0 },
-			["groups"] = {
+			timeline = { ADDED_5_3_0 },
+			groups = {
 				i(97558),	-- Tito (PET!)
 			},
 		}),
 		ach(9824, {	-- Raiding with Leashes III: Drinkin' From the Sunwell
-			["timeline"] = { ADDED_6_1_0 },
-			["groups"] = {
+			timeline = { ADDED_6_1_0 },
+			groups = {
 				i(122116),	-- K'ute (PET!)
 			},
 		}),

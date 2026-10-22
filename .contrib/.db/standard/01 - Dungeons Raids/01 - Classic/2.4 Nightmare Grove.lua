@@ -4,8 +4,8 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
-	applyclassicphase(SOD_PHASE_SIX, inst(2832, bubbleDownSelf({["timeline"] = { ADDED_1_15_5 }}, {	-- Nightmare Grove
-		["headerID"] = createHeader({
+	applyclassicphase(SOD_PHASE_SIX, inst(2832, bubbleDownSelf({timeline = { ADDED_1_15_5 }}, {	-- Nightmare Grove
+		headerID = createHeader({
 			readable = "Nightmare Grove",
 			text = {
 				en = "Nightmare Grove",
@@ -34,40 +34,40 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				tw = "夢魘林地可在通往翡翠夢境的傳送門附近找到。",
 			},
 		}),
-		["coords"] = {
+		coords = {
 			{ 51.2, 10.9, FERALAS },
 			{ 63.3, 27.8, THE_HINTERLANDS },
 			{ 45.4, 39.6, DUSKWOOD },
 			{ 94.2, 35.7, ASHENVALE },
 		},
-		["isRaid"] = true,
-		["lvl"] = 60,
-		["groups"] = {
-			n(DRAGONS_OF_NIGHTMARE, bubbleDown({ ["timeline"] = { ADDED_1_11_0, REMOVED_1_15_5 } }, {
-				["description"] = "The original version of the nightmare dragon loot in Classic Era.",
-				["isRaid"] = true,
-				["groups"] = {
+		isRaid = true,
+		lvl = 60,
+		groups = {
+			n(DRAGONS_OF_NIGHTMARE, bubbleDown({ timeline = { ADDED_1_11_0, REMOVED_1_15_5 } }, {
+				description = "The original version of the nightmare dragon loot in Classic Era.",
+				isRaid = true,
+				groups = {
 					n(QUESTS, {
 						q(8446, {	-- Shrouded in Nightmare
-							["provider"] = { "i", 20644 },
-							["lvl"] = 60,
+							provider = { "i", 20644 },
+							lvl = 60,
 						}),
 						q(8447, {	-- Waking Legends
-							["sourceQuest"] = 8446,	-- Shrouded in Nightmare
-							["qg"] = 11832,	-- Keeper Remulos
-							["coord"] = { 36.18, 41.79, MOONGLADE },
-							["lvl"] = 60,
-							["groups"] = { i(20600) },	-- Malfurion's Signet Ring
+							sourceQuest = 8446,	-- Shrouded in Nightmare
+							qg = 11832,	-- Keeper Remulos
+							coord = { 36.18, 41.79, MOONGLADE },
+							lvl = 60,
+							groups = { i(20600) },	-- Malfurion's Signet Ring
 						}),
 					}),
 					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
+						crs = {
 							14889,	-- Emeriss
 							14888,	-- Lethon
 							14890,	-- Taerar
 							14887,	-- Ysondre
 						},
-						["groups"] = {
+						groups = {
 							i(20644),	-- Nightmare Engulfed Object
 							i(20619),	-- Acid Inscribed Greaves
 							i(20617),	-- Ancient Corroded Leggings
@@ -84,8 +84,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(14889, {	-- Emeriss
-						["modelScale"] = 6.0,
-						["groups"] = {
+						modelScale = 6.0,
+						groups = {
 							i(20599),	-- Polished Ironwood Crossbow
 							i(20623),	-- Circlet of Restless Dreams
 							i(20622),	-- Dragonheart Necklace
@@ -94,8 +94,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(14888, {	-- Lethon
-						["modelScale"] = 6.0,
-						["groups"] = {
+						modelScale = 6.0,
+						groups = {
 							i(20628),	-- Deviate Growth Cap
 							i(20626),	-- Black Bark Wristbands
 							i(20630),	-- Gauntlets of the Shining Light
@@ -105,8 +105,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(14890, {	-- Taerar
-						["modelScale"] = 6.0,
-						["groups"] = {
+						modelScale = 6.0,
+						groups = {
 							i(20577),	-- Nightmare Blade
 							i(20633),	-- Unnatural Leather Spaulders
 							i(20634),	-- Boots of Fright
@@ -115,8 +115,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(14887, {	-- Ysondre
-						["modelScale"] = 6.0,
-						["groups"] = {
+						modelScale = 6.0,
+						groups = {
 							i(20578),	-- Emerald Dragonfang
 							i(20637),	-- Acid Inscribed Pauldrons
 							i(20635),	-- Jade Inlaid Vestments
@@ -129,24 +129,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			})),
 			n(QUESTS, {
 				q(86679, {	-- Shrouded in Nightmare
-					["provider"] = { "i", 235049 },	-- Nightmare Engulfed Object
-					["maps"] = { MOONGLADE },
+					provider = { "i", 235049 },	-- Nightmare Engulfed Object
+					maps = { MOONGLADE },
 				}),
 				q(86680, {	-- Waking Legends
-					["sourceQuest"] = 86679,	-- Shrouded in Nightmare
-					["qg"] = 11832,	-- Keeper Remulos
-					["coord"] = { 36.2, 41.8, MOONGLADE },
-					["groups"] = { i(234155) },	-- Malfurion's Signet Ring
+					sourceQuest = 86679,	-- Shrouded in Nightmare
+					qg = 11832,	-- Keeper Remulos
+					coord = { 36.2, 41.8, MOONGLADE },
+					groups = { i(234155) },	-- Malfurion's Signet Ring
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
-				["crs"] = {
+				crs = {
 					234880,	-- Emeriss
 					235180,	-- Lethon
 					235197,	-- Taerar
 					235232,	-- Ysondre
 				},
-				["groups"] = {
+				groups = {
 					i(235049),	-- Nightmare Engulfed Object
 					i(234152),	-- Hammer of Bestial Fury
 					i(234154),	-- Trance Stone
@@ -160,64 +160,64 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					prof(SKINNING, {
 						i(20381),	-- Dreamscale
 					}),
-					applyclassicphase(SOD_PHASE_SEVEN, i(233997, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Enchant Chest - Living Stats
-					applyclassicphase(SOD_PHASE_SEVEN, i(233998, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Enchant Gloves - Holy Power
-					applyclassicphase(SOD_PHASE_SEVEN, i(233999, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Enchant Gloves - Arcane Power
-					applyclassicphase(SOD_PHASE_SEVEN, i(234266, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Speedstone
-					applyclassicphase(SOD_PHASE_SEVEN, i(234267, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Tear of the Dreamer
-					applyclassicphase(SOD_PHASE_SEVEN, i(234268, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Lodestone of Retaliation
-					applyclassicphase(SOD_PHASE_SEVEN, i(234269, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Enchanted Stopwatch
-					applyclassicphase(SOD_PHASE_SEVEN, i(234270, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Ruby-Encrusted Broach
-					applyclassicphase(SOD_PHASE_SEVEN, i(234275, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Enchanted Prayer Tome
-					applyclassicphase(SOD_PHASE_SEVEN, i(234276, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Enchanted Totem
-					applyclassicphase(SOD_PHASE_SEVEN, i(234277, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Enchanted Mushroom
-					applyclassicphase(SOD_PHASE_SEVEN, i(234271, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Scroll: Wrath of the Swarm
-					applyclassicphase(SOD_PHASE_SEVEN, i(235526, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Enchant Bracer - Spell Power
-					applyclassicphase(SOD_PHASE_SEVEN, i(235528, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Enchant Bracer - Agility
-					applyclassicphase(SOD_PHASE_SEVEN, i(235133, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Libram of Righteousness
-					applyclassicphase(SOD_PHASE_SEVEN, i(235134, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Libram of the Exorcist
-					applyclassicphase(SOD_PHASE_SEVEN, i(235135, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Libram of Sanctity
-					applyclassicphase(SOD_PHASE_SEVEN, i(235136, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Totem of Pyroclastic Thunder
-					applyclassicphase(SOD_PHASE_SEVEN, i(235137, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Totem of Thunderous Strikes
-					applyclassicphase(SOD_PHASE_SEVEN, i(235138, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Totem of Flowing Magma
-					applyclassicphase(SOD_PHASE_SEVEN, i(235139, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Idol of Sidereal Wrath
-					applyclassicphase(SOD_PHASE_SEVEN, i(235140, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Idol of Feline Ferocity
-					applyclassicphase(SOD_PHASE_SEVEN, i(235141, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Formula: Idol of Ursin Power
-					applyclassicphase(SOD_PHASE_SEVEN, i(234483, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Pattern: Dreamscale Bracers (RECIPE!)
-					applyclassicphase(SOD_PHASE_SEVEN, i(234486, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Pattern: Dreamscale Mitts (RECIPE!)
-					applyclassicphase(SOD_PHASE_SEVEN, i(234235, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Pattern: Glowing Chitin Armor Kit
-					applyclassicphase(SOD_PHASE_SEVEN, i(234236, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Pattern: Sharpened Chitin Armor Kit
-					applyclassicphase(SOD_PHASE_SEVEN, i(234237, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Pattern: Razorbramble Cowl
-					applyclassicphase(SOD_PHASE_SEVEN, i(234239, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Pattern: Razorbramble Leathers
-					applyclassicphase(SOD_PHASE_SEVEN, i(234238, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Pattern: Razorbramble Shoulderpads
-					applyclassicphase(SOD_PHASE_SEVEN, i(234249, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Pattern: Qiraji Silk Cape (RECIPE!)
-					applyclassicphase(SOD_PHASE_SEVEN, i(234250, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Pattern: Qiraji Silk Cloak (RECIPE!)
-					applyclassicphase(SOD_PHASE_SEVEN, i(234251, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Pattern: Qiraji Silk Drape (RECIPE!)
-					applyclassicphase(SOD_PHASE_SEVEN, i(234244, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Pattern: Qiraji Silk Scarf (RECIPE!)
-					applyclassicphase(SOD_PHASE_SEVEN, i(234240, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Pattern: Vampiric Cowl
-					applyclassicphase(SOD_PHASE_SEVEN, i(234241, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Pattern: Vampiric Shawl
-					applyclassicphase(SOD_PHASE_SEVEN, i(234242, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Pattern: Vampiric Robe
-					applyclassicphase(SOD_PHASE_SEVEN, i(234223, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Plans: Obsidian Reaver
-					applyclassicphase(SOD_PHASE_SEVEN, i(234224, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Plans: Obsidian Champion
-					applyclassicphase(SOD_PHASE_SEVEN, i(234225, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Plans: Obsidian Destroyer
-					applyclassicphase(SOD_PHASE_SEVEN, i(234226, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Plans: Obsidian Stormhammer
-					applyclassicphase(SOD_PHASE_SEVEN, i(234228, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Plans: Obsidian Defender
-					applyclassicphase(SOD_PHASE_SEVEN, i(234227, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Plans: Obsidian Sageblade
-					applyclassicphase(SOD_PHASE_SEVEN, i(234429, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Plans: Obsidian Heartseeker
-					applyclassicphase(SOD_PHASE_SEVEN, i(234253, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Recipe: Flask of Ancient Knowledge (RECIPE!)
-					applyclassicphase(SOD_PHASE_SEVEN, i(234256, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Recipe: Flask of Madness (RECIPE!)
-					applyclassicphase(SOD_PHASE_SEVEN, i(234252, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Recipe: Flask of Unyielding Sorrow (RECIPE!)
-					applyclassicphase(SOD_PHASE_SEVEN, i(234255, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Recipe: Flask of the Old Gods (RECIPE!)
-					applyclassicphase(SOD_PHASE_SEVEN, i(234264, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Schematic: G00 DV-1B3 Generator
-					applyclassicphase(SOD_PHASE_SEVEN, i(234265, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Schematic: Tuned Force Reactive Disk
-					applyclassicphase(SOD_PHASE_SEVEN, i(234435, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Schematic: Obsidian Shotgun
-					applyclassicphase(SOD_PHASE_SEVEN, i(235530, { ["timeline"] = { ADDED_1_15_6 }, })),	-- Schematic: Obsidian Scope
+					applyclassicphase(SOD_PHASE_SEVEN, i(233997, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Enchant Chest - Living Stats
+					applyclassicphase(SOD_PHASE_SEVEN, i(233998, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Enchant Gloves - Holy Power
+					applyclassicphase(SOD_PHASE_SEVEN, i(233999, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Enchant Gloves - Arcane Power
+					applyclassicphase(SOD_PHASE_SEVEN, i(234266, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Speedstone
+					applyclassicphase(SOD_PHASE_SEVEN, i(234267, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Tear of the Dreamer
+					applyclassicphase(SOD_PHASE_SEVEN, i(234268, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Lodestone of Retaliation
+					applyclassicphase(SOD_PHASE_SEVEN, i(234269, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Enchanted Stopwatch
+					applyclassicphase(SOD_PHASE_SEVEN, i(234270, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Ruby-Encrusted Broach
+					applyclassicphase(SOD_PHASE_SEVEN, i(234275, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Enchanted Prayer Tome
+					applyclassicphase(SOD_PHASE_SEVEN, i(234276, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Enchanted Totem
+					applyclassicphase(SOD_PHASE_SEVEN, i(234277, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Enchanted Mushroom
+					applyclassicphase(SOD_PHASE_SEVEN, i(234271, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Scroll: Wrath of the Swarm
+					applyclassicphase(SOD_PHASE_SEVEN, i(235526, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Enchant Bracer - Spell Power
+					applyclassicphase(SOD_PHASE_SEVEN, i(235528, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Enchant Bracer - Agility
+					applyclassicphase(SOD_PHASE_SEVEN, i(235133, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Libram of Righteousness
+					applyclassicphase(SOD_PHASE_SEVEN, i(235134, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Libram of the Exorcist
+					applyclassicphase(SOD_PHASE_SEVEN, i(235135, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Libram of Sanctity
+					applyclassicphase(SOD_PHASE_SEVEN, i(235136, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Totem of Pyroclastic Thunder
+					applyclassicphase(SOD_PHASE_SEVEN, i(235137, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Totem of Thunderous Strikes
+					applyclassicphase(SOD_PHASE_SEVEN, i(235138, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Totem of Flowing Magma
+					applyclassicphase(SOD_PHASE_SEVEN, i(235139, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Idol of Sidereal Wrath
+					applyclassicphase(SOD_PHASE_SEVEN, i(235140, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Idol of Feline Ferocity
+					applyclassicphase(SOD_PHASE_SEVEN, i(235141, { timeline = { ADDED_1_15_6 }, })),	-- Formula: Idol of Ursin Power
+					applyclassicphase(SOD_PHASE_SEVEN, i(234483, { timeline = { ADDED_1_15_6 }, })),	-- Pattern: Dreamscale Bracers (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234486, { timeline = { ADDED_1_15_6 }, })),	-- Pattern: Dreamscale Mitts (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234235, { timeline = { ADDED_1_15_6 }, })),	-- Pattern: Glowing Chitin Armor Kit
+					applyclassicphase(SOD_PHASE_SEVEN, i(234236, { timeline = { ADDED_1_15_6 }, })),	-- Pattern: Sharpened Chitin Armor Kit
+					applyclassicphase(SOD_PHASE_SEVEN, i(234237, { timeline = { ADDED_1_15_6 }, })),	-- Pattern: Razorbramble Cowl
+					applyclassicphase(SOD_PHASE_SEVEN, i(234239, { timeline = { ADDED_1_15_6 }, })),	-- Pattern: Razorbramble Leathers
+					applyclassicphase(SOD_PHASE_SEVEN, i(234238, { timeline = { ADDED_1_15_6 }, })),	-- Pattern: Razorbramble Shoulderpads
+					applyclassicphase(SOD_PHASE_SEVEN, i(234249, { timeline = { ADDED_1_15_6 }, })),	-- Pattern: Qiraji Silk Cape (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234250, { timeline = { ADDED_1_15_6 }, })),	-- Pattern: Qiraji Silk Cloak (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234251, { timeline = { ADDED_1_15_6 }, })),	-- Pattern: Qiraji Silk Drape (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234244, { timeline = { ADDED_1_15_6 }, })),	-- Pattern: Qiraji Silk Scarf (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234240, { timeline = { ADDED_1_15_6 }, })),	-- Pattern: Vampiric Cowl
+					applyclassicphase(SOD_PHASE_SEVEN, i(234241, { timeline = { ADDED_1_15_6 }, })),	-- Pattern: Vampiric Shawl
+					applyclassicphase(SOD_PHASE_SEVEN, i(234242, { timeline = { ADDED_1_15_6 }, })),	-- Pattern: Vampiric Robe
+					applyclassicphase(SOD_PHASE_SEVEN, i(234223, { timeline = { ADDED_1_15_6 }, })),	-- Plans: Obsidian Reaver
+					applyclassicphase(SOD_PHASE_SEVEN, i(234224, { timeline = { ADDED_1_15_6 }, })),	-- Plans: Obsidian Champion
+					applyclassicphase(SOD_PHASE_SEVEN, i(234225, { timeline = { ADDED_1_15_6 }, })),	-- Plans: Obsidian Destroyer
+					applyclassicphase(SOD_PHASE_SEVEN, i(234226, { timeline = { ADDED_1_15_6 }, })),	-- Plans: Obsidian Stormhammer
+					applyclassicphase(SOD_PHASE_SEVEN, i(234228, { timeline = { ADDED_1_15_6 }, })),	-- Plans: Obsidian Defender
+					applyclassicphase(SOD_PHASE_SEVEN, i(234227, { timeline = { ADDED_1_15_6 }, })),	-- Plans: Obsidian Sageblade
+					applyclassicphase(SOD_PHASE_SEVEN, i(234429, { timeline = { ADDED_1_15_6 }, })),	-- Plans: Obsidian Heartseeker
+					applyclassicphase(SOD_PHASE_SEVEN, i(234253, { timeline = { ADDED_1_15_6 }, })),	-- Recipe: Flask of Ancient Knowledge (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234256, { timeline = { ADDED_1_15_6 }, })),	-- Recipe: Flask of Madness (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234252, { timeline = { ADDED_1_15_6 }, })),	-- Recipe: Flask of Unyielding Sorrow (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234255, { timeline = { ADDED_1_15_6 }, })),	-- Recipe: Flask of the Old Gods (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234264, { timeline = { ADDED_1_15_6 }, })),	-- Schematic: G00 DV-1B3 Generator
+					applyclassicphase(SOD_PHASE_SEVEN, i(234265, { timeline = { ADDED_1_15_6 }, })),	-- Schematic: Tuned Force Reactive Disk
+					applyclassicphase(SOD_PHASE_SEVEN, i(234435, { timeline = { ADDED_1_15_6 }, })),	-- Schematic: Obsidian Shotgun
+					applyclassicphase(SOD_PHASE_SEVEN, i(235530, { timeline = { ADDED_1_15_6 }, })),	-- Schematic: Obsidian Scope
 				},
 			}),
 			n(234880, {	-- Emeriss
 				-- Unconfirmed Drop:
 				i(234159, {	-- Polished Ironwood Crossbow
-					["description"] = "If you get this to drop, @crieve on Discord!",
+					description = "If you get this to drop, @crieve on Discord!",
 				}),
 
 				-- Confirmed Drops:

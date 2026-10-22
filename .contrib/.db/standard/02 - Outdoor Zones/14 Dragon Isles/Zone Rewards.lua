@@ -2,10 +2,10 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	n(ZONE_DROPS, {	-- Drops available from pretty much anywhere in Dragon Isles
-		["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-		["groups"] = {
+		maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+		groups = {
 			i(202071),	-- Elemental Mote
 			i(202070),	-- Exceptional Pelt
 		},
@@ -32,27 +32,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		i(191784),	-- Dragon Shard of Knowledge
 		i(198058),	-- Titan Training Matrix III
 		i(205423, {	-- Shadowflame Residue Sack
-			["timeline"] = { ADDED_10_1_0 },
+			timeline = { ADDED_10_1_0 },
 		}),
 		i(205682, {	-- Large Shadowflame Residue Sack
-			["timeline"] = { ADDED_10_1_0 },
+			timeline = { ADDED_10_1_0 },
 		}),
 		i(209837, {	-- Faint Whispers of Dreaming
-			["timeline"] = { ADDED_10_2_0 },
+			timeline = { ADDED_10_2_0 },
 		}),
 		i(209839, {	-- Tangible Whispers of Dreaming
-			["timeline"] = { ADDED_10_2_0 },
+			timeline = { ADDED_10_2_0 },
 		}),
 		i(217243, {	-- Awakening Ruby Wing
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+			timeline = { ADDED_10_2_6_SEASON_FOUR },
 		}),
 		i(217242, {	-- Awakening Stone WingDreaming
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+			timeline = { ADDED_10_2_6_SEASON_FOUR },
 		}),
 		i(215362, {	-- Cache of Storms
-			["description"] = "Rewarded from any 'Awakened' Zone Activity",
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
-			["sym"] = {
+			description = "Rewarded from any 'Awakened' Zone Activity",
+			timeline = { ADDED_10_2_6_SEASON_FOUR },
+			sym = {
 				-- DF > Zone Rewards (Armors)
 				{"select","mapID",DRAGON_ISLES},{"pop"},{"where","headerID",ZONE_REWARDS},{"pop"},
 					{"whereany","filterID",CLOTH,LEATHER,MAIL,PLATE,TRINKET_F},{"finalize"},
@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				-- World Drops > DF
 				SymSelector.select("DRAGONFLIGHT_WORLDDROP_WEAPONS"),
 			},
-			["groups"] = {
+			groups = {
 				i(202172),	-- Overflowing Satchel of Coins
 			},
 		}),

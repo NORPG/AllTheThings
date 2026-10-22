@@ -66,12 +66,12 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, BossWithHeader =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.BossWithHeader
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	inst(556, {	-- The Everbloom
-		["coord"] = { 59.55, 45.45, GORGROND },
-		["maps"] = { 620, 621 },
-		["lvl"] = 100,
-		["groups"] = {
+		coord = { 59.55, 45.45, GORGROND },
+		maps = { 620, 621 },
+		lvl = 100,
+		groups = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(WITHERBARK),
 				BossOnly(PROTECTORS),
@@ -79,41 +79,41 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(ARCHMAGE),
 				BossOnly(YALNU, {
 					ach(9044),	-- The Everbloom
-					i(284194, { ["timeline"] = { ADDED_12_1_5 } }),	-- Everbloom Forest Floor (DECOR!)
+					i(284194, { timeline = { ADDED_12_1_5 } }),	-- Everbloom Forest Floor (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC).AddGroups({
 				Boss(WITHERBARK, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[WITHERBARK])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[WITHERBARK])),
 				}),
 				Boss(PROTECTORS, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[PROTECTORS])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[PROTECTORS])),
 				}),
 				Boss(XERITAC, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[XERITAC])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[XERITAC])),
 				}),
 				Boss(ARCHMAGE, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[ARCHMAGE])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[ARCHMAGE])),
 				}),
 				Boss(YALNU, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[YALNU])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[YALNU])),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 				BossWithHeader(WITHERBARK, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[WITHERBARK])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[WITHERBARK])),
 				}),
 				BossWithHeader(PROTECTORS, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[PROTECTORS])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[PROTECTORS])),
 				}),
 				BossWithHeader(XERITAC, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[XERITAC])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[XERITAC])),
 				}),
 				BossWithHeader(ARCHMAGE, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[ARCHMAGE])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[ARCHMAGE])),
 				}),
 				BossWithHeader(YALNU, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[YALNU])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[YALNU])),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
@@ -126,33 +126,33 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				BossOnly(ARCHMAGE, {
 					ach(9493, {	-- They Burn, Burn, Burn
-						["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_10_2_0 },
+						timeline = { ADDED_6_0_3_LAUNCH, REMOVED_10_2_0 },
 					}),
 				}),
 				BossOnly(YALNU, {
 					ach(9053),	-- Heroic: The Everbloom
 					ach(9374),	-- Heroic: The Everbloom Guild Run
 					ach(9223, {	-- Weed Whacker
-						["crs"] = { 84329 },	-- Kirin Tor Battle-Mage
+						crs = { 84329 },	-- Kirin Tor Battle-Mage
 					}),
 					un(REMOVED_FROM_GAME, i(114138)),	-- Core of Life
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
 				Boss(WITHERBARK, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[WITHERBARK])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[WITHERBARK])),
 				}),
 				Boss(PROTECTORS, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[PROTECTORS])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[PROTECTORS])),
 				}),
 				Boss(XERITAC, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[XERITAC])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[XERITAC])),
 				}),
 				Boss(ARCHMAGE, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[ARCHMAGE])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[ARCHMAGE])),
 				}),
 				Boss(YALNU, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[YALNU])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[YALNU])),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
@@ -168,7 +168,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(556, {
 		q(34551),	-- Shaper Dungeon [PH] Challenge Mode - Bronze Addition (Nth)
 		q(34530),	-- Shaper Dungeon [PH] Challenge Mode - Consolation (Nth)

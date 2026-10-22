@@ -8,14 +8,14 @@ local CLOAK_OF_INFINITE_BONUSIDS = function()
 	for bonusID=10973,11028,1 do
 		ItemAppearanceModifierID = ItemAppearanceModifierID + 1;
 		table.insert(cloaks, i(210333, {	-- Cloak of Infinite Potential
-			["ItemAppearanceModifierID"] = ItemAppearanceModifierID,
-			["bonusID"] = bonusID,
+			ItemAppearanceModifierID = ItemAppearanceModifierID,
+			bonusID = bonusID,
 		}));
 	end
 	return cloaks;
 end
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(REWARDS, {
 		i(211279, {	-- Cache of Infinite Treasure
 			i(210526),	-- Unraveling Tunic (QI!)

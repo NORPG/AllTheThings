@@ -5,13 +5,13 @@
 local Items = ItemDBConditional;
 -- Regular BoA/WuE Item
 local i = function(itemID)
-	local item = { ["b"] = 2 };
+	local item = { b = 2 };
 	Items[itemID] = item;
 	return item;
 end
 -- BoA/WuE Item forcibly ignoring bonuses (i.e. within Difficulties etc.)
 local ib = function(itemID)
-	local item = { ["b"] = 2, ["ignoreBonus"] = true };
+	local item = { b = 2, ignoreBonus = true };
 	Items[itemID] = item;
 	return item;
 end

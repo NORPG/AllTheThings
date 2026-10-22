@@ -76,7 +76,7 @@ local AzewrongLoot = {
 ------ Zone Drops ----------
 local ZoneDropLoot = {
 	i(168144, {	-- Extremely Precise Vial
-		["crs"] = {
+		crs = {
 			133432,	-- Venture Co. Alchemist
 			133430,	-- Venture Co. Mastermind
 			140902,	-- Vog'rish, the Ascended
@@ -193,23 +193,23 @@ appendAllGroups(SeasonDifficultyGroups, {
 local INSTANCE_GROUPS = {
 	n(VENDORS, {
 		n(140319, {	-- Hobart Grapplehammer
-			["description"] = "In the building directly at the end of the first road after entering the dungeon.",
-			["groups"] = {
+			description = "In the building directly at the end of the first road after entering the dungeon.",
+			groups = {
 				i(161131, {	-- Barely Stable Azerite Reactor
-					["cost"] = { { "g", 300000000 } },	-- 30k gold
+					cost = { { "g", 300000000 } },	-- 30k gold
 				}),
 			},
 		}),
 	}),
 	n(WORLD_QUESTS, {
 		q(52295, {	-- The MOTHERLODE!!: Elementals on the Payroll
-			["isWorldQuest"] = true,
+			isWorldQuest = true,
 		}),
 		q(52302, {	-- The MOTHERLODE!!: He's Got Really Big Bombs
-			["isWorldQuest"] = true,
+			isWorldQuest = true,
 		}),
 		q(52298, {	-- The MOTHERLODE!!: The Smarts Are In His Horn!
-			["isWorldQuest"] = true,
+			isWorldQuest = true,
 		}),
 	}),
 	ZoneDrops(),
@@ -223,18 +223,18 @@ local INSTANCE_GROUPS = {
 			ach(12844),	-- The MOTHERLODE!!
 			ig(163708),	-- Ironfoe (Dark Iron Dwarf Quest Item)
 			ig(161136, {	-- Azerite Forged Protection Plating
-				["description"] = "Seems to require at least 175 BFA Engineering Skill to drop.",
+				description = "Seems to require at least 175 BFA Engineering Skill to drop.",
 			}),
 			ig(161137, {	-- Blast-Fired Electric Servomotor
-				["description"] = "Seems to require at least 225 BFA Engineering Skill to drop.",
+				description = "Seems to require at least 225 BFA Engineering Skill to drop.",
 			}),
 			ig(161132, {	-- Crush Resistant Stabilizer
-				["description"] = "Seems to require at least 200 BFA Engineering Skill to drop.",
+				description = "Seems to require at least 200 BFA Engineering Skill to drop.",
 			}),
 			ig(161129, {	-- Mecha-Mogul Mk1 Remote Activation Device
-				["description"] = "Seems to require at least 250 BFA Engineering Skill to drop.",
-				["requireSkill"] = ENGINEERING,
-				["cost"] = { { "i", 161138, 1 } },	-- Azerite Inspir-A-Geneering Elixir
+				description = "Seems to require at least 250 BFA Engineering Skill to drop.",
+				requireSkill = ENGINEERING,
+				cost = { { "i", 161138, 1 } },	-- Azerite Inspir-A-Geneering Elixir
 			}),
 		}),
 	}),
@@ -256,32 +256,32 @@ local INSTANCE_GROUPS = {
 	Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
 		n(ZONE_DROPS, {
 			ig(161138, {	-- Azerite Inspir-A-Geneering Elixir
-				["description"] = "Seems to require at least 225 BFA Engineering Skill to drop.",
-				["requireSkill"] = ENGINEERING,
-				["crs"] = {
+				description = "Seems to require at least 225 BFA Engineering Skill to drop.",
+				requireSkill = ENGINEERING,
+				crs = {
 					133430,	-- Venture Co. Mastermind
 					140902,	-- Vog'rish, the Ascended
 				},
 			}),
 		}),
 		n(ZONE_DROPS, sharedData({
-			["crs"] = {
+			crs = {
 				136643,	-- Azerite Extractor
 				129214,	-- Coin-Operated Crowd Pummeler
 				130485,	-- Mechanized Peacekeeper
 				136139,	-- Mechanized Peacekeeper
 				133463,	-- Venture Co. War Machine
 			},
-			["requireSkill"] = ENGINEERING,
+			requireSkill = ENGINEERING,
 		},{
 			ig(161136, {	-- Azerite Forged Protection Plating
-				["description"] = "Seems to require at least 175 BFA Engineering Skill to drop.",
+				description = "Seems to require at least 175 BFA Engineering Skill to drop.",
 			}),
 			ig(161137, {	-- Blast-Fired Electric Servomotor
-				["description"] = "Seems to require at least 225 BFA Engineering Skill to drop.",
+				description = "Seems to require at least 225 BFA Engineering Skill to drop.",
 			}),
 			ig(161132, {	-- Crush Resistant Stabilizer
-				["description"] = "Seems to require at least 200 BFA Engineering Skill to drop.",
+				description = "Seems to require at least 200 BFA Engineering Skill to drop.",
 			}),
 		})),
 		BossOnly(PUMMELER, {
@@ -305,12 +305,12 @@ appendAllGroups(INSTANCE_GROUPS, SeasonDifficultyGroups)
 
 root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1012, {	-- The MOTHERLODE!!
-		["coords"] = {
+		coords = {
 			{ 39.2, 71.5, ZULDAZAR },	-- Alliance
 			{ 44.3, 92.6, DAZARALOR },	-- Horde
 		},
-		["timeline"] = { ADDED_8_0_1_LAUNCH },
-		["maps"] = { 1010 },	-- The Motherlode
-		["groups"] = INSTANCE_GROUPS
+		timeline = { ADDED_8_0_1_LAUNCH },
+		maps = { 1010 },	-- The Motherlode
+		groups = INSTANCE_GROUPS
 	}),
 }))

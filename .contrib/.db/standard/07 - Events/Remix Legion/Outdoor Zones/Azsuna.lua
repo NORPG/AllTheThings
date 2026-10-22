@@ -5,23 +5,23 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
-			["icon"] = 1408998,
-			["groups"] = {
+			icon = 1408998,
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(42319, {	-- Azsuna
 						-- Meta Achievement
-						["sym"] = {{"meta_achievement",
+						sym = {{"meta_achievement",
 							42317,	-- Campaign: Azsuna
 							42318,	-- Court of Farondis
 							42519,	-- Looking for Group: Azsuna
 							42515,	-- Tour Azsuna
 						}},
-						["groups"] = { i(252301) },	-- Warden's Companion (PET!)
+						groups = { i(252301) },	-- Warden's Companion (PET!)
 					}),
 					ach(42317),	-- Campaign: Azsuna
 					ach(42318, {	-- Court of Farondis
 						i(250307, {	-- Tome of the Corrupt (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
+							timeline = { ADDED_11_2_7 },
 						}),
 					}),
 					ach(42518),	-- Elusive Foes: Azsuna
@@ -29,14 +29,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					ach(42517),	-- Hidden Treasures: Azsuna
 					ach(42519, {	-- Looking for Group: Azsuna
 						-- Meta Achievement
-						["sym"] = {{"meta_achievement",
+						sym = {{"meta_achievement",
 							60819,	-- Eye of Azshara
 							60822,	-- Vault of the Wardens
 						}},
 					}),
 					ach(61108, {	-- Lorerunner of Azsuna
 						-- Meta Achievement
-						["sym"] = {{"meta_achievement",
+						sym = {{"meta_achievement",
 							42317,	-- Campaign: Azsuna
 							61103,	-- Sojourner of Azsuna
 						}},
@@ -44,12 +44,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					ach(61103),	-- Sojourner of Azsuna
 					ach(61218, {	-- The Wardens
 						i(251778, {	-- Sentinel’s Moonwing Gaze (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
+							timeline = { ADDED_11_2_7 },
 						}),
 					}),
 					ach(42515, {	-- Tour Azsuna
 						-- Meta Achievement
-						["sym"] = {{"meta_achievement",
+						sym = {{"meta_achievement",
 							42518,	-- Elusive Foes: Azsuna
 							42516,	-- Explore Azsuna
 							42517,	-- Hidden Treasures: Azsuna
@@ -58,13 +58,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				}),
 				n(RARES, {
 					n(244782, {	-- Eye of Greed
-						["coord"] = { 66.0, 45.9, AZSUNA },
+						coord = { 66.0, 45.9, AZSUNA },
 					}),
 				}),
 				n(TREASURES, {
 					header(HEADERS.Object, 240645, {	-- Glimmering Treasure Chest
-						["provider"] = { "o", 240645 },	-- Glimmering Treasure Chest
-						["groups"] = { i(251674) },	-- Sssurine's Luxurious Sssandals
+						provider = { "o", 240645 },	-- Glimmering Treasure Chest
+						groups = { i(251674) },	-- Sssurine's Luxurious Sssandals
 					}),
 				}),
 				n(ZONE_REWARDS, {

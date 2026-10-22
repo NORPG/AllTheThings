@@ -36,8 +36,8 @@ local PREYSEEKER_BOX_SYM_SEASON_TWO = {
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	n(PREY, {
 		n(PREY_MID_S2, {
-			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
-			["groups"] = {
+			timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(63611, {	-- Big Prey Hunter (Season 2)
 						title(792),	-- <Name>, Servant of Astalor
@@ -129,19 +129,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(275917),	-- Preyhunter's Veteran Sack
 						-- Boxes, Season 2
 						i(275918, {	-- Preyhunter's Adventurer Chest
-							["sym"] = PREYSEEKER_BOX_SYM_SEASON_TWO,
+							sym = PREYSEEKER_BOX_SYM_SEASON_TWO,
 						}),
 						i(275822, {	-- Preyhunter's Veteran Chest
-							["sym"] = PREYSEEKER_BOX_SYM_SEASON_TWO,
+							sym = PREYSEEKER_BOX_SYM_SEASON_TWO,
 						}),
 						i(275726, {	-- Preyhunter's Champion Chest
-							["sym"] = PREYSEEKER_BOX_SYM_SEASON_TWO,
+							sym = PREYSEEKER_BOX_SYM_SEASON_TWO,
 						}),
 						i(276104, {	-- Aspiring Preyhunter's Chest
-							["sym"] = PREYSEEKER_BOX_SYM_SEASON_TWO,
+							sym = PREYSEEKER_BOX_SYM_SEASON_TWO,
 						}),
 						-- Bonus roll
-						i(280131, {["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Prey
+						i(280131, {timeline = { ADDED_12_1_0, REMOVED_12_2_0 }}),	-- Nebulous Voidcache: Prey
 					}),
 					-- Weekly Bonus Reputations
 					-- Season 2 Prey

@@ -5,8 +5,8 @@
 -- #if ANYCLASSIC
 -- Wouter NOTE: level 70 boosts became available in Classic with the Wrath of the Lich King pre-patch, with the Northrend Heroic/Epic Upgrade for Wrath
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.WRATH, bubbleDown({ ["u"] = REAL_MONEY, ["timeline"] = { ADDED_3_4_0, REMOVED_3_4_3 } }, {
-		["groups"] = {
+	expansion(EXPANSION.WRATH, bubbleDown({ u = REAL_MONEY, timeline = { ADDED_3_4_0, REMOVED_3_4_3 } }, {
+		groups = {
 			cl(DRUID, {
 				i(199713),	-- Collective Stave (Agi Staff)
 				i(199463),	-- Collective Crown (Leather Int/Spi)

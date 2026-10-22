@@ -2,10 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
 	inst(1268, {	-- The Rookery
-		["coord"] = { 32.2, 34.6, DORNOGAL },
-		["maps"] = {
+		coord = { 32.2, 34.6, DORNOGAL },
+		maps = {
 			2315,	-- The Rookery Landing
 			2316,	-- Storm's Roost
 			2317,	-- Storm Rookery
@@ -13,11 +13,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			2319,	-- Crashing Storm Hall
 			2320,	-- Abandoned Mines
 		},
-		["groups"] = {
+		groups = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2566, {	-- Kyrioss
-					["crs"] = { 209230 },	-- Kyrioss
-					["groups"] = {
+					crs = { 209230 },	-- Kyrioss
+					groups = {
 						i(221037),	-- Charged Rookfeather Wraps
 						i(219294),	-- Charged Stormrook Plume
 						i(221033),	-- Hyperactive Stormclaw
@@ -28,8 +28,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					},
 				}),
 				e(2567, {	-- Stormguard Gorren
-					["crs"] = { 207205 },	-- Stormguard Gorren
-					["groups"] = {
+					crs = { 207205 },	-- Stormguard Gorren
+					groups = {
 						i(221041),	-- Boltbreaker Armor
 						i(221043),	-- Cloudstrider Soles
 						i(221038),	-- Crashing Thunderhammer
@@ -41,8 +41,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					},
 				}),
 				e(2568, {	-- Voidstone Monstrosity
-					["crs"] = { 207207 },	-- Voidstone Monstrosity
-					["groups"] = {
+					crs = { 207207 },	-- Voidstone Monstrosity
+					groups = {
 						ach(40621),	-- The Rookery
 						i(223096),	-- Pattern: Roiling Thunderstrike Talons (RECIPE!)
 						i(221048),	-- Amice of Oblivion
@@ -58,18 +58,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2568, {	-- Voidstone Monstrosity
-					["crs"] = { 207207 },	-- Voidstone Monstrosity
-					["groups"] = {
+					crs = { 207207 },	-- Voidstone Monstrosity
+					groups = {
 						ach(40637),	-- Heroic: The Rookery
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2, ADDED_11_1_0 } }, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ timeline = { CREATED_11_0_2, ADDED_11_1_0 } }, {
 				e(2568, {	-- Voidstone Monstrosity
-					["crs"] = { 207207 },	-- Voidstone Monstrosity
-					["groups"] = {
+					crs = { 207207 },	-- Voidstone Monstrosity
+					groups = {
 						ach(40642),	-- Mythic: The Rookery
-						ach(61601, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: The Rookery Guild Run
+						ach(61601, {timeline = { ADDED_12_0_0 }}),	-- Mythic: The Rookery Guild Run
 					},
 				}),
 			})),

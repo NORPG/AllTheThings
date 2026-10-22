@@ -4,92 +4,92 @@
 CLASSIC_HERBALISM = {
 	r(2383, {	-- Find Herbs [Rank 1]
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
-		["rank"] = 1,
+		rank = 1,
 	}),
 	r(2366, {	-- Herb Gathering (Apprentice)
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 5,
+		lvl = 5,
 		-- #endif
-		["rank"] = 1,
+		rank = 1,
 	}),
 	r(2368, {	-- Herb Gathering (Journeyman)
-		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		timeline = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 10,
+		lvl = 10,
 		-- #endif
-		["rank"] = 2,
+		rank = 2,
 	}),
 	r(3570, {	-- Herb Gathering (Expert)
-		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		timeline = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
 		-- #if SEASON_OF_DISCOVERY
-		["OnUpdate"] = [[function(t)
+		OnUpdate = [[function(t)
 			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 26 or 20;
 		end]],
 		-- #else
-		["lvl"] = 20,
+		lvl = 20,
 		-- #endif
 		-- #endif
-		["rank"] = 3,
+		rank = 3,
 	}),
 	r(11993, {	-- Herb Gathering (Artisan)
-		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		timeline = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
 		-- #if SEASON_OF_DISCOVERY
-		["OnUpdate"] = [[function(t)
+		OnUpdate = [[function(t)
 			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 41 or 35;
 		end]],
 		-- #else
-		["lvl"] = 35,
+		lvl = 35,
 		-- #endif
 		-- #endif
-		["rank"] = 4,
+		rank = 4,
 	}),
-	r(193290, {["timeline"] = {ADDED_7_0_3}}),	-- Herbalism Journal
-	applyclassicphase(BFA_PHASE_ONE, r(265819, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering
+	r(193290, {timeline = {ADDED_7_0_3}}),	-- Herbalism Journal
+	applyclassicphase(BFA_PHASE_ONE, r(265819, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering
 };
-TBC_HERBALISM = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
+TBC_HERBALISM = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2_0_5 } }, {
 	r(28695, {	-- Herb Gathering (Master)
-		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
-		["rank"] = 5,
+		rank = 5,
 	}),
-	r(193290, {["timeline"] = {ADDED_7_0_3}}),	-- Herbalism Journal
-	applyclassicphase(BFA_PHASE_ONE, r(265821, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering (Outland)
+	r(193290, {timeline = {ADDED_7_0_3}}),	-- Herbalism Journal
+	applyclassicphase(BFA_PHASE_ONE, r(265821, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering (Outland)
 }));
-WRATH_HERBALISM = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {
+WRATH_HERBALISM = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3 } }, {
 	r(50300, {	-- Herb Gathering (Grand Master)
-		["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
-		["rank"] = 6,
+		rank = 6,
 	}),
-	r(193290, {["timeline"] = {ADDED_7_0_3}}),	-- Herbalism Journal
-	applyclassicphase(BFA_PHASE_ONE, r(265823, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering (Northrend)
+	r(193290, {timeline = {ADDED_7_0_3}}),	-- Herbalism Journal
+	applyclassicphase(BFA_PHASE_ONE, r(265823, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering (Northrend)
 }));
-CATA_HERBALISM = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+CATA_HERBALISM = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ timeline = { ADDED_4_0_3_LAUNCH } }, {
 	r(74519, {	-- Herb Gathering (Illustrious)
-		["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
-		["rank"] = 7,
+		rank = 7,
 	}),
-	r(193290, {["timeline"] = {ADDED_7_0_3}}),	-- Herbalism Journal
-	applyclassicphase(BFA_PHASE_ONE, r(265825, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering (Cataclysm)
+	r(193290, {timeline = {ADDED_7_0_3}}),	-- Herbalism Journal
+	applyclassicphase(BFA_PHASE_ONE, r(265825, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering (Cataclysm)
 }));
 CLASSIC_CATA_HERBALISM = appendGroups(CLASSIC_HERBALISM,
 -- #if AFTER CATA
@@ -98,32 +98,32 @@ CATA_HERBALISM
 {}
 -- #endif
 );
-MOP_HERBALISM = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+MOP_HERBALISM = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
 	r(110413, {	-- Herb Gathering (Zen Master)
-		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
-		["rank"] = 8,
+		rank = 8,
 	}),
-	r(193290, {["timeline"] = {ADDED_7_0_3}}),	-- Herbalism Journal
-	applyclassicphase(BFA_PHASE_ONE, r(265827, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering (Pandaria)
+	r(193290, {timeline = {ADDED_7_0_3}}),	-- Herbalism Journal
+	applyclassicphase(BFA_PHASE_ONE, r(265827, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering (Pandaria)
 }));
-DRAENOR_HERBALISM = applyclassicphase(WOD_PHASE_ONE, i(111350, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	["description"] = "This can drop from any herb gathering node on Draenor.",
-	["groups"] = {
+DRAENOR_HERBALISM = applyclassicphase(WOD_PHASE_ONE, i(111350, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+	description = "This can drop from any herb gathering node on Draenor.",
+	groups = {
 		r(158745, {	-- Herb Gathering (Draenor Master)
-			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC
-			["collectible"] = false,
+			collectible = false,
 			-- #endif
-			["rank"] = 9,
+			rank = 9,
 		}),
-		r(193290, {["timeline"] = {ADDED_7_0_3}}),	-- Herbalism Journal
-		applyclassicphase(BFA_PHASE_ONE, r(265829, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering (Draenor)
+		r(193290, {timeline = {ADDED_7_0_3}}),	-- Herbalism Journal
+		applyclassicphase(BFA_PHASE_ONE, r(265829, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering (Draenor)
 	},
 })));
-BFA_HERBALISM = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+BFA_HERBALISM = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 	r(193290),	-- Herbalism Journal
 	r(252424),	-- Anchor Weed [Rank 1]
 	r(252411),	-- Akunda's Bite [Rank 1]
@@ -133,27 +133,27 @@ BFA_HERBALISM = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 	r(252408),	-- Star Moss [Rank 1]
 	r(252415),	-- Winter's Kiss [Rank 1]
 }));
-NAZJATAR_HERBALISM = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
+NAZJATAR_HERBALISM = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
 	r(298142),	-- Zin'anthid [Rank 1]
 }));
-SL_HERBALISM = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_HERBALISM = applyclassicphase(SL_PHASE_ONE, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	r(309780),	-- Herb Gathering (Shadowlands)
 	r(193290),	-- Herbalism Journal
 }));
-DF_HERBALISM = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+DF_HERBALISM = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	r(366252),	-- Herb Gathering (Dragon Isles)
 	r(193290),	-- Herbalism Journal
 	r(395275),	-- Dreambloom
 	r(391406),	-- Hochenblume
 	r(396171),	-- Infused Pollen
 }));
-TWW_HERBALISM = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+TWW_HERBALISM = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
 	r(441327),	-- Herb Gathering (Khaz Algar)
 	r(193290),	-- Herbalism Journal
 	r(452269),	-- Deepgrove Rose
 	r_withQuest(435811, 79906),	-- Mycobloom
 });
-MID_HERBALISM = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+MID_HERBALISM = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 	r(471009),	-- Herb Gathering (Quel'Thalas)
 	r(193290),	-- Herbalism Journal
 	r(1265814),	-- Artisan Herbalist's Moxie

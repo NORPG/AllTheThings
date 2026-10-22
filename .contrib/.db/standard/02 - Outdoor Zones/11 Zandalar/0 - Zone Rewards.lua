@@ -2,14 +2,14 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 	m(ZANDALAR, {
 		n(ZONE_REWARDS, {
 			i(163856, {	-- Ancient Pilgrimage Scrollcasing
-				["description"] = "Can drop from any of the repeatable Treasures in the various BFA zones.",
+				description = "Can drop from any of the repeatable Treasures in the various BFA zones.",
 			}),
 			i(163857, {	-- Azerite Armor Cache
-				["sym"] = {
+				sym = {
 					{"sub", "bfa_azerite_armor_chest" },
 				},
 			}),
@@ -32,16 +32,16 @@ root(ROOTS.Zones, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			i(158134),	-- Salt Coast Piercers
 			i(158122),	-- Spirit Bog Scepter
 			i(158108, {	-- Whisperfen Chopper
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			i(158111, {	-- Whisperfen Hewer
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			i(158128, {	-- Whisperfen Polearm
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			i(158131, {	-- Whisperfen Staff
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			i(158112),	-- Zandalari Greatbow
 			i(158133),	-- Zandalari Machete

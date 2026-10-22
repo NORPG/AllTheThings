@@ -2,14 +2,14 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	n(CONDUITS, {symselector=SymSelector.SL_CONDUITS}),
 	n(CONDUITS, {
 		i(187507, {	-- Adaptive Armor Fragment
-			["timeline"] = { ADDED_9_1_0 },
+			timeline = { ADDED_9_1_0 },
 		}),
 		i(187506, {	-- Condensed Anima Sphere
-			["timeline"] = { ADDED_9_1_0 },
+			timeline = { ADDED_9_1_0 },
 		}),
 		cl(DEATHKNIGHT, {
 			i(181848),	-- Accelerated Cold
@@ -33,16 +33,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			i(181866),	-- Withering Plague
 			-- Cov
 			i(182295, {	-- Proliferation
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
+				customCollect = "SL_COV_KYR",	-- Kyrian Covenant
 			}),
 			i(182292, {	-- Brutal Grasp
-				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+				customCollect = "SL_COV_NEC",	-- Necrolord Covenant
 			}),
 			i(183199, {	-- Withering Ground
-				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+				customCollect = "SL_COV_NFA",	-- Night Fae Covenant
 			}),
 			i(182288, {	-- Impenetrable Gloom
-				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+				customCollect = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
 		cl(DEMONHUNTER, {
@@ -62,16 +62,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			i(182318),	-- Viscous Ink
 			-- Cov
 			i(182646, {	-- Repeat Decree
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
+				customCollect = "SL_COV_KYR",	-- Kyrian Covenant
 			}),
 			i(182706, {	-- Brooding Pool
-				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+				customCollect = "SL_COV_NEC",	-- Necrolord Covenant
 			}),
 			i(183463, {	-- Unnatural Malice
-				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+				customCollect = "SL_COV_NFA",	-- Night Fae Covenant
 			}),
 			i(182685, {	-- Increased Scrutiny
-				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+				customCollect = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
 		cl(DRUID, {
@@ -100,19 +100,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			i(183486),	-- Well-Honed Instincts
 			-- Cov
 			i(183471, {	-- Deep Allegiance
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
+				customCollect = "SL_COV_KYR",	-- Kyrian Covenant
 			}),
 			i(183472, {	-- Evolved Swarm
-				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+				customCollect = "SL_COV_NEC",	-- Necrolord Covenant
 			}),
 			i(183473, {	-- Conflux of Elements
-				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+				customCollect = "SL_COV_NFA",	-- Night Fae Covenant
 			}),
 			i(183474, {	-- Endless Thirst
-				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+				customCollect = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
-		cl(EVOKER, bubbleDown({ ["timeline"] = { ADDED_10_0_0 } }, {
+		cl(EVOKER, bubbleDown({ timeline = { ADDED_10_0_0 } }, {
 			i(199454),	-- Bronze Acceleration
 			i(199457),	-- Circle of Life
 			i(199460),	-- Graceful Stride
@@ -147,16 +147,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			i(182605),	-- Tactical Retreat
 			-- Cov
 			i(182321, {	-- Enfeebled Mark
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
+				customCollect = "SL_COV_KYR",	-- Kyrian Covenant
 			}),
 			i(182339, {	-- Necrotic Barrage
-				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+				customCollect = "SL_COV_NEC",	-- Necrolord Covenant
 			}),
 			i(182335, {	-- Spirit Attunement
-				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+				customCollect = "SL_COV_NFA",	-- Night Fae Covenant
 			}),
 			i(182331, {	-- Empowered Release
-				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+				customCollect = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
 		cl(MAGE, {
@@ -181,16 +181,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			i(181464),	-- Winter's Protection
 			-- Cov
 			i(181600, {	-- Ire of the Ascended
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
+				customCollect = "SL_COV_KYR",	-- Kyrian Covenant
 			}),
 			i(181553, {	-- Gift of the Lich
-				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+				customCollect = "SL_COV_NEC",	-- Necrolord Covenant
 			}),
 			i(181539, {	-- Discipline of the Grove
-				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+				customCollect = "SL_COV_NFA",	-- Night Fae Covenant
 			}),
 			i(181639, {	-- Siphoned Malice
-				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+				customCollect = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
 		cl(MONK, {
@@ -215,16 +215,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			i(181465),	-- Xuen's Bond
 			-- Cov
 			i(181759, {	-- Strike with Clarity
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
+				customCollect = "SL_COV_KYR",	-- Kyrian Covenant
 			}),
 			i(181770, {	-- Bone Marrow Hops
-				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+				customCollect = "SL_COV_NEC",	-- Necrolord Covenant
 			}),
 			i(181775, {	-- Way of the Fae
-				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+				customCollect = "SL_COV_NFA",	-- Night Fae Covenant
 			}),
 			i(181774, {	-- Imbued Reflections
-				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+				customCollect = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
 		cl(PALADIN, {
@@ -249,16 +249,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			i(182456),	-- Wrench Evil
 			-- Cov
 			i(182778, {	-- Ringing Clarity
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
+				customCollect = "SL_COV_KYR",	-- Kyrian Covenant
 			}),
 			i(182770, {	-- Righteous Might
-				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+				customCollect = "SL_COV_NEC",	-- Necrolord Covenant
 			}),
 			i(182767, {	-- The Long Summer
-				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+				customCollect = "SL_COV_NFA",	-- Night Fae Covenant
 			}),
 			i(182777, {	-- Hallowed Discernment
-				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+				customCollect = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
 		cl(PRIEST, {
@@ -283,16 +283,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			i(181826),	-- Translucent Image
 			-- Cov
 			i(181974, {	-- Courageous Ascension
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
+				customCollect = "SL_COV_KYR",	-- Kyrian Covenant
 			}),
 			i(181981, {	-- Festering Transfusion
-				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+				customCollect = "SL_COV_NEC",	-- Necrolord Covenant
 			}),
 			i(182129, {	-- Fae Fermata
-				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+				customCollect = "SL_COV_NFA",	-- Night Fae Covenant
 			}),
 			i(182130, {	-- Shattered Perceptions
-				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+				customCollect = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
 		cl(ROGUE, {
@@ -317,16 +317,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			i(183504),	-- Well-Placed Steel
 			-- Cov
 			i(183492, {	-- Reverberation
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
+				customCollect = "SL_COV_KYR",	-- Kyrian Covenant
 			}),
 			i(183493, {	-- Sudden Fractures
-				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+				customCollect = "SL_COV_NEC",	-- Necrolord Covenant
 			}),
 			i(183494, {	-- Septic Shock
-				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+				customCollect = "SL_COV_NFA",	-- Night Fae Covenant
 			}),
 			i(183495, {	-- Lashing Scars
-				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+				customCollect = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
 		cl(SHAMAN, {
@@ -351,16 +351,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			i(182107),	-- Vital Accretion
 			-- Cov
 			i(182345, {	-- Elysian Dirge
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
+				customCollect = "SL_COV_KYR",	-- Kyrian Covenant
 			}),
 			i(182346, {	-- Tumbling Waves
-				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+				customCollect = "SL_COV_NEC",	-- Necrolord Covenant
 			}),
 			i(182347, {	-- Essential Extraction
-				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+				customCollect = "SL_COV_NFA",	-- Night Fae Covenant
 			}),
 			i(182348, {	-- Lavish Harvest
-				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+				customCollect = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
 		cl(WARLOCK, {
@@ -385,16 +385,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			i(182747),	-- Withering Bolt
 			-- Cov
 			i(182960, {	-- Soul Tithe
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
+				customCollect = "SL_COV_KYR",	-- Kyrian Covenant
 			}),
 			i(182961, {	-- Fatal Decimation
-				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+				customCollect = "SL_COV_NEC",	-- Necrolord Covenant
 			}),
 			i(182964, {	-- Soul Eater
-				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+				customCollect = "SL_COV_NFA",	-- Night Fae Covenant
 			}),
 			i(182962, {	-- Catastrophic Origin
-				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+				customCollect = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
 		cl(WARRIOR, {
@@ -417,16 +417,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			i(181776),	-- Vicious Contempt
 			-- Cov
 			i(182440, {	-- Piercing Verdict
-				["customCollect"] = "SL_COV_KYR",	-- Kyrian Covenant
+				customCollect = "SL_COV_KYR",	-- Kyrian Covenant
 			}),
 			i(182442, {	-- Veteran's Repute
-				["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
+				customCollect = "SL_COV_NEC",	-- Necrolord Covenant
 			}),
 			i(182651, {	-- Destructive Reverberations
-				["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
+				customCollect = "SL_COV_NFA",	-- Night Fae Covenant
 			}),
 			i(182463, {	-- Harrowing Punishment
-				["customCollect"] = "SL_COV_VEN",	-- Venthyr Covenant
+				customCollect = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
 	}),

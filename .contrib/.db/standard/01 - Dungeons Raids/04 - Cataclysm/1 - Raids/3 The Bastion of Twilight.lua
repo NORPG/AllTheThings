@@ -3,33 +3,33 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_ONE, inst(72, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {	-- The Bastion of Twilight
-		["mapID"] = 294,
-		["coord"] = { 34.2, 77.7, TWILIGHT_HIGHLANDS },
-		["maps"] = { 295, 296 },
-		["sharedLockout"] = 1,
-		["isRaid"] = true,
-		["lvl"] = 85,
-		["groups"] = {
+	applyclassicphase(CATA_PHASE_ONE, inst(72, bubbleDownSelf({ timeline = { ADDED_4_0_3 }, }, {	-- The Bastion of Twilight
+		mapID = 294,
+		coord = { 34.2, 77.7, TWILIGHT_HIGHLANDS },
+		maps = { 295, 296 },
+		sharedLockout = 1,
+		isRaid = true,
+		lvl = 85,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(4850, {	-- The Bastion of Twilight
 					crit(13577, {	-- Halfus Wyrmbreaker
-						["_encounter"] = { 156, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },
+						_encounter = { 156, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },
 					}),
 					crit(13576, {	-- Valiona and Theralion
-						["_encounter"] = { 157, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },
+						_encounter = { 157, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },
 					}),
 					crit(13578, {	-- Ascendant Council
-						["_encounter"] = { 158, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },
+						_encounter = { 158, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },
 					}),
 					crit(13579, {	-- Cho'gall
-						["_encounter"] = { 167, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },
+						_encounter = { 167, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },
 					}),
 				}),
 				ach(4986),	-- The Bastion of Twilight Guild Run
 				ach(11754, {	-- Glamour of Twilight (The Bastion of Twilight and Blackwing Descent)
-					["timeline"] = { ADDED_7_2_0 },
-					["maps"] = {
+					timeline = { ADDED_7_2_0 },
+					maps = {
 						285,	-- Blackwing Descent (The Broken Hall)
 						286,	-- Blackwing Descent (Vault of the Shadowflame)
 					},
@@ -41,7 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				i(60210),	-- Crossfire Carbine
 				-- #if BEFORE MOP
 				i(68608, {	-- Dragonwreck Throwing Axe
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 				}),
 				-- #endif
 				i(59901),	-- Heaving Plates of Protection
@@ -52,60 +52,60 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {
 				e(156, {	-- Halfus Wyrmbreaker
-					["creatureID"] = 44600,
-					["groups"] = {
+					creatureID = 44600,
+					groups = {
 						ach(5300),	-- The Only Escape
 					},
 				}),
 				e(157, {	-- Theralion and Valiona
-					["crs"] = {
+					crs = {
 						45992,	-- Valiona
 						45993,	-- Theralion
 					},
-					["groups"] = {
+					groups = {
 						ach(4852, {	-- Double Dragon
 							crit(13576),	-- Valiona and Theralion
 							crit(16015, {	-- Twilight Fiends killed
-								["cr"] = 49864,	-- Twilight Fiend
+								cr = 49864,	-- Twilight Fiend
 							}),
 						}),
 						i(152969, {	-- Twilight Clutch-Sister (PET!)
-							["timeline"] = { ADDED_7_3_0 },
+							timeline = { ADDED_7_3_0 },
 						}),
 					},
 				}),
 				e(158, {	-- Ascendant Council
-					["crs"] = {
+					crs = {
 						43735,	-- Elementium Monstrosity
 						43686,	-- Ignacious
 						43687,	-- Feludius
 						43688,	-- Arion
 						43689,	-- Terrastra
 					},
-					["groups"] = {
+					groups = {
 						ach(5311),	-- Elementary
 						i(152970,	{	-- Bound Stream (PET!)
-							["timeline"] = { ADDED_7_3_0 },
+							timeline = { ADDED_7_3_0 },
 						}),
 					},
 				}),
 				e(167, {	-- Cho'gall
-					["creatureID"] = 43324,
-					["groups"] = {
+					creatureID = 43324,
+					groups = {
 						ach(5312),	-- The Abyss Will Gaze Back Into You
 						i(152972, {	-- Faceless Minion (PET!)
-							["timeline"] = { ADDED_7_3_0 },
+							timeline = { ADDED_7_3_0 },
 						}),
 						ig(175159, {	-- Sinister Shadows (RI!)
-							["timeline"] = { ADDED_8_3_0 },
+							timeline = { ADDED_8_3_0 },
 						}),
 					},
 				}),
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 				e(156, {	-- Halfus Wyrmbreaker
-					["creatureID"] = 44600,
-					["groups"] = {
+					creatureID = 44600,
+					groups = {
 						i(59474),	-- Malevolence
 						i(59484),	-- Book of Binding Will
 						i(59481),	-- Helm of the Nether Scion
@@ -121,11 +121,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(157, {	-- Theralion and Valiona
-					["crs"] = {
+					crs = {
 						45992,	-- Valiona
 						45993,	-- Theralion
 					},
-					["groups"] = {
+					groups = {
 						i(63536),	-- Blade of the Witching Hour
 						i(63533),	-- Fang of Twilight
 						i(63532),	-- Dragonheart Piercer
@@ -141,14 +141,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(158, {	-- Ascendant Council
-					["crs"] = {
+					crs = {
 						43735,	-- Elementium Monstrosity
 						43686,	-- Ignacious
 						43687,	-- Feludius
 						43688,	-- Arion
 						43689,	-- Terrastra
 					},
-					["groups"] = {
+					groups = {
 						i(59513),	-- Scepter of Ice
 						i(59504),	-- Arion's Crown
 						i(59509),	-- Glaciated Helm
@@ -164,16 +164,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(167, {	-- Cho'gall
-					["creatureID"] = 43324,
-					["groups"] = {
+					creatureID = 43324,
+					groups = {
 						i(64315, {	-- Mantle of the Forlorn Conqueror
-							["sym"] = SYMLINKS.TIER_ELEVEN.CONQ.SHOULDER,
+							sym = SYMLINKS.TIER_ELEVEN.CONQ.SHOULDER,
 						}),
 						i(64316, {	-- Mantle of the Forlorn Protector
-							["sym"] = SYMLINKS.TIER_ELEVEN.PROT.SHOULDER,
+							sym = SYMLINKS.TIER_ELEVEN.PROT.SHOULDER,
 						}),
 						i(64314, {	-- Mantle of the Forlorn Vanquisher
-							["sym"] = SYMLINKS.TIER_ELEVEN.VANQ.SHOULDER,
+							sym = SYMLINKS.TIER_ELEVEN.VANQ.SHOULDER,
 						}),
 						i(59330),	-- Shalug'doom, the Axe of Unmaking
 						i(59494),	-- "Uhn'agh Fash, the Darkest Betrayal"
@@ -193,8 +193,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
 				e(156, {	-- Halfus Wyrmbreaker
-					["creatureID"] = 44600,
-					["groups"] = {
+					creatureID = 44600,
+					groups = {
 						ach(5118),	-- Heroic: Halfus Wyrmbreaker
 						i(67423),	-- Chest of the Forlorn Conqueror
 						i(67424),	-- Chest of the Forlorn Protector
@@ -214,11 +214,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(157, {	-- Theralion and Valiona
-					["crs"] = {
+					crs = {
 						45992,	-- Valiona
 						45993,	-- Theralion
 					},
-					["groups"] = {
+					groups = {
 						ach(5117),	-- Heroic: Valiona and Theralion
 						i(65091),	-- Blade of the Witching Hour
 						i(65094),	-- Fang of Twilight
@@ -235,14 +235,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(158, {	-- Ascendant Council
-					["crs"] = {
+					crs = {
 						43735,	-- Elementium Monstrosity
 						43686,	-- Ignacious
 						43687,	-- Feludius
 						43688,	-- Arion
 						43689,	-- Terrastra
 					},
-					["groups"] = {
+					groups = {
 						ach(5119),	-- Heroic: Ascendant Council
 						i(65111),	-- Scepter of Ice
 						i(65120),	-- Arion's Crown
@@ -259,8 +259,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(167, {	-- Cho'gall
-					["creatureID"] = 43324,
-					["groups"] = {
+					creatureID = 43324,
+					groups = {
 						ach(5120),	-- Heroic: Cho'gall
 						ach(5461),	-- Heroic: Cho'gall Guild Run
 						i(65088),	-- Shoulders of the Forlorn Conqueror
@@ -282,11 +282,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(168, {	-- Sinestra
-					["creatureID"] = 45213,
+					creatureID = 45213,
 					-- #if AFTER 6.0.3
-					["description"] = "This encounter can be buggy to solo. Stand in Sinestra's melee range, only leave for attacking the Pulsing Twilight Eggs when Sinestra have removed their damage protection.",
+					description = "This encounter can be buggy to solo. Stand in Sinestra's melee range, only leave for attacking the Pulsing Twilight Eggs when Sinestra have removed their damage protection.",
 					-- #endif
-					["groups"] = {
+					groups = {
 						un(REMOVED_FROM_GAME, ach(5313)),	-- I Can't Hear You Over the Sound of How Awesome I Am
 						ach(5121, {	-- Heroic: Sinestra
 							title(186),	-- Dragonslayer

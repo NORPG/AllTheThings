@@ -19,72 +19,72 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ ["timeline"] = { ADDED_3_3_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ timeline = { ADDED_3_3_0 } }, {
 	inst(276, {	-- Halls of Reflection
-		["mapID"] = HALLS_OF_REFLECTION,
-		["coord"] = { 52.3, 89.3, ICECROWN },
-		["lvl"] = lvlsquish(78, 78, 25),
-		["groups"] = {
+		mapID = HALLS_OF_REFLECTION,
+		coord = { 52.3, 89.3, ICECROWN },
+		lvl = lvlsquish(78, 78, 25),
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(4518, {	-- The Halls of Reflection
 					-- #if AFTER 7.3.5
 					crit(13320, {	-- Falric
-						["_encounter"] = { FALRIC, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { FALRIC, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(13321, {	-- Marwyn
-						["_encounter"] = { MARWYN, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { MARWYN, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(13323, {	-- Survive the encounter with the Lich King
-						["_encounter"] = { LICH_KING, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { LICH_KING, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					-- #else
 					crit(13320, {	-- Falric
-						["_encounter"] = { FALRIC, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { FALRIC, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13321, {	-- Marwyn
-						["_encounter"] = { MARWYN, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { MARWYN, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13323, {	-- Survive the encounter with the Lich King
-						["_encounter"] = { LICH_KING, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { LICH_KING, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 				}),
 				ach(4521, {	-- Heroic: The Halls of Reflection
 					crit(13177, {	-- Falric
-						["_encounter"] = { FALRIC, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { FALRIC, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(13179, {	-- Marwyn
-						["_encounter"] = { MARWYN, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { MARWYN, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(13181, {	-- Survive the encounter with the Lich King
-						["_encounter"] = { LICH_KING, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { LICH_KING, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
 			n(QUESTS, {
 				q(24500, {	-- Wrath of the Lich King
-					["qg"] = 37582,	-- Archmage Koreln <Kirin Tor>
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(78, 78, 25),
-					["groups"] = {
+					qg = 37582,	-- Archmage Koreln <Kirin Tor>
+					races = ALLIANCE_ONLY,
+					lvl = lvlsquish(78, 78, 25),
+					groups = {
 						objective(1, {	-- Find Lady Jaina Proudmoore
-							["provider"] = { "n", 36955 },	-- Lady Jaina Proudmoore
+							provider = { "n", 36955 },	-- Lady Jaina Proudmoore
 						}),
 						objective(2, {	-- Escape The Lich King
-							["provider"] = { "n", 36954 },	-- The Lich King
+							provider = { "n", 36954 },	-- The Lich King
 						}),
 					},
 				}),
 				q(24802, {	-- Wrath of the Lich King
-					["qg"] = 37779,	-- Dark Ranger Loralen
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(78, 78, 25),
-					["groups"] = {
+					qg = 37779,	-- Dark Ranger Loralen
+					races = HORDE_ONLY,
+					lvl = lvlsquish(78, 78, 25),
+					groups = {
 						objective(1, {	-- Find Lady Sylvanas Windrunner
-							["provider"] = { "n", 37554 },	-- Lady Sylvanas Windrunner
+							provider = { "n", 37554 },	-- Lady Sylvanas Windrunner
 						}),
 						objective(2, {	-- Escape The Lich King
-							["provider"] = { "n", 36954 },	-- The Lich King
+							provider = { "n", 36954 },	-- The Lich King
 						}),
 					},
 				}),
@@ -159,11 +159,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
 				BossOnly(FALRIC),
 				BossOnly(MARWYN),
 				BossOnly(LICH_KING, {
-					ach(5114, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: The Halls of Reflection Guild Run
+					ach(5114, { timeline = { ADDED_4_0_3 } }),	-- Heroic: The Halls of Reflection Guild Run
 					ach(4526),	-- We're Not Retreating; We're Advancing in a Different Direction.
 				}),
 			}),
@@ -206,7 +206,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					i(49849),	-- Tattered Glacial-Woven Hood
 				}),
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
 				n(ZONE_DROPS, {
 					a(i(50379)),	-- Battered Hilt [A]
 					h(i(50380)),	-- Battered Hilt [H]
@@ -231,7 +231,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					i(50299),	-- Suspiciously Soft Gloves
 				}),
 				BossOnly(LICH_KING, {
-					ach(5114, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: The Halls of Reflection Guild Run
+					ach(5114, { timeline = { ADDED_4_0_3 } }),	-- Heroic: The Halls of Reflection Guild Run
 					ach(4526),	-- We're Not Retreating; We're Advancing in a Different Direction.
 					i(50303),	-- Black Icicle
 					i(50308),	-- Blighted Leather Footpads
@@ -252,7 +252,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(276, {
 		q(35441),	-- Halls of Reflection Reward Quest - Normal completion
 		q(35442),	-- Halls of Reflection Reward Quest - Heroic completion

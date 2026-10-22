@@ -2,105 +2,105 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_5 } }, {
 	m(STORMSONG_VALLEY, {
 		n(FACTIONS, {
 			header(HEADERS.Faction, FACTION_HONEYBACK_HIVE, {	-- Honeyback Hive
-				["races"] = ALLIANCE_ONLY,
-				["icon"] = 3066348,
+				races = ALLIANCE_ONLY,
+				icon = 3066348,
 				-- Possible to use HQT's to track unlock
-				["description"] = "How to unlock the faction:\n\nStep1: Own either a Seabreeze Bumblebee or Bumbles.\nStep2: Go to Barry in Stormsong Valley at 69.64 with your Bee summoned.\nStep3: Follow the green clouds to 62.26 & watch the interaction between Barry and the Honeyback Hivemother.\nStep4: Loot the Thin Jelly just outside the Cave at 63.28, try to give it to the Hivemother & then talk to Barry again.\nStep5: Follow Barry inside, talk to him for the million'th time & then feed your first Jelly to the Nascent Harvester, which is in the honey pool in front of him. This gives you your first 20 reputation, allowing you to now see Jelly Deposits and earn reputation.\n\nAll Coordinates can be placed via rightclicking the Honeyback Hive Header.",
-				["coords"] = {
+				description = "How to unlock the faction:\n\nStep1: Own either a Seabreeze Bumblebee or Bumbles.\nStep2: Go to Barry in Stormsong Valley at 69.64 with your Bee summoned.\nStep3: Follow the green clouds to 62.26 & watch the interaction between Barry and the Honeyback Hivemother.\nStep4: Loot the Thin Jelly just outside the Cave at 63.28, try to give it to the Hivemother & then talk to Barry again.\nStep5: Follow Barry inside, talk to him for the million'th time & then feed your first Jelly to the Nascent Harvester, which is in the honey pool in front of him. This gives you your first 20 reputation, allowing you to now see Jelly Deposits and earn reputation.\n\nAll Coordinates can be placed via rightclicking the Honeyback Hive Header.",
+				coords = {
 					{ 69.2, 64.2, STORMSONG_VALLEY },	-- Barry
 					{ 62.93, 26.58, STORMSONG_VALLEY },	-- The Hive
 					{ 63.2, 28.5, STORMSONG_VALLEY },	-- First Jelly
 				},
-				["groups"] = {
+				groups = {
 					n(FACTIONS, {
 						faction(FACTION_HONEYBACK_HARVESTER, {	-- Honeyback Harvester
-							["races"] = ALLIANCE_ONLY,
+							races = ALLIANCE_ONLY,
 						}),
 						faction(FACTION_HONEYBACK_HIVE, {	-- Honeyback Hive
-							["races"] = ALLIANCE_ONLY,
-							["icon"] = 3066348,
+							races = ALLIANCE_ONLY,
+							icon = 3066348,
 						}),
 					}),
 					n(QUESTS, {
 						q(56473, {	-- Envenomed Spider Fang
-							["provider"] = { "i", 169656 },	-- Envenomed Spider Fang
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-							-- ["cr"] = 155172,	-- Trapdoor Bee Hunter
-							["groups"] = {
+							provider = { "i", 169656 },	-- Envenomed Spider Fang
+							races = ALLIANCE_ONLY,
+							isWeekly = true,
+							-- cr = 155172,	-- Trapdoor Bee Hunter
+							groups = {
 								i(172145),	-- Unremarkable Spider-Fang
 							},
 						}),
 						q(56474, {	-- Hivekiller Stinger
-							["provider"] = { "i", 169655 },	-- Hivekiller Stinger
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-							-- ["cr"] = 155171,	-- The Hivekiller
-							["groups"] = {
+							provider = { "i", 169655 },	-- Hivekiller Stinger
+							races = ALLIANCE_ONLY,
+							isWeekly = true,
+							-- cr = 155171,	-- The Hivekiller
+							groups = {
 								i(172144),	-- Glittering Stinger
 							},
 						}),
 						q(56092, {	-- Hivethief's Jelly Stash
-							["provider"] = { "i", 169657 },	-- Hivethief's Jelly Stash
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-							-- ["cr"] = 155055,	-- Gurg the Hivethief
-							["groups"] = {
+							provider = { "i", 169657 },	-- Hivethief's Jelly Stash
+							races = ALLIANCE_ONLY,
+							isWeekly = true,
+							-- cr = 155055,	-- Gurg the Hivethief
+							groups = {
 								i(172147),	-- Nugget Honey
 							},
 						}),
 						q(56108, {	-- Leaving the Hive
-							["provider"] = { "n", 155745 },	-- Honeyback Harvester
-							["coord"] = { 62.5, 26.3, STORMSONG_VALLEY },
-							["races"] = ALLIANCE_ONLY,
-							["groups"] = {
+							provider = { "n", 155745 },	-- Honeyback Harvester
+							coord = { 62.5, 26.3, STORMSONG_VALLEY },
+							races = ALLIANCE_ONLY,
+							groups = {
 								i(170069, {	-- Honeyback Harvester (MOUNT!)
-									["races"] = ALLIANCE_ONLY,
+									races = ALLIANCE_ONLY,
 								}),
 							},
 						}),
 						q(56144, {	-- Old Nasha's Paw
-							["provider"] = { "i", 169659 },	-- Old Nasha's Paw
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-							-- ["cr"] = 155176,	-- Old Nasha
-							["groups"] = {
+							provider = { "i", 169659 },	-- Old Nasha's Paw
+							races = ALLIANCE_ONLY,
+							isWeekly = true,
+							-- cr = 155176,	-- Old Nasha
+							groups = {
 								i(172146),	-- Glazed Bear Meat
 							},
 						}),
 						q(56475, {	-- Spiral Yeti Horn
-							["provider"] = { "i", 169654 },	-- Spiral Yeti Horn
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-							-- ["cr"] = 155059,	-- Yorag the Jelly Feaster
-							["groups"] = {
+							provider = { "i", 169654 },	-- Spiral Yeti Horn
+							races = ALLIANCE_ONLY,
+							isWeekly = true,
+							-- cr = 155059,	-- Yorag the Jelly Feaster
+							groups = {
 								i(172143),	-- Perforated Spiral Horn
 							},
 						}),
 						q(57670, {	-- Unbeelievable Quality
-							["providers"] = {
+							providers = {
 								{ "i", 173533 },	-- Collected Tidebloom Honey
 								{ "i", 172383 },	-- Collected Tidebloom Honey (changes to this version after you get your mount)
 							},
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
+							races = ALLIANCE_ONLY,
+							isWeekly = true,
 						}),
 						q(56091, {	-- Usurper's Scent Gland
-							["provider"] = { "i", 169658 },	-- Usurper's Scent Gland
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-							-- ["cr"] = 155173,	-- Honeyback Usurper
-							["groups"] = {
+							provider = { "i", 169658 },	-- Usurper's Scent Gland
+							races = ALLIANCE_ONLY,
+							isWeekly = true,
+							-- cr = 155173,	-- Honeyback Usurper
+							groups = {
 								i(172142),	-- Pilfered Beeswax
 							},
 						}),
 					}),
 					o(327230, {	-- Jelly Deposit
-						["coords"] = {
+						coords = {
 							{ 33.12, 71.66, STORMSONG_VALLEY },
 							{ 31.71, 74.54, STORMSONG_VALLEY },
 							{ 28.22, 74.87, STORMSONG_VALLEY },
@@ -213,23 +213,23 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							{ 68.10, 68.29, STORMSONG_VALLEY },
 							{ 61.18, 29.41, STORMSONG_VALLEY },
 						},
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(169152),	-- Empty Beehive
 							i(168822),	-- Thin Jelly
 						},
 					}),
 					o(327516, {	-- Jelly Deposit
-						["description"] = "This is the initial Jelly Deposit you encounter when unlocking the reputation.",
-						["coord"] = { 63.2, 28.5, STORMSONG_VALLEY },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						description = "This is the initial Jelly Deposit you encounter when unlocking the reputation.",
+						coord = { 63.2, 28.5, STORMSONG_VALLEY },
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(169106),	-- Thin Jelly
 						},
 					}),
 					n(RARES, sharedData({
-						["sharedDescription"] = "This Rare has a chance to spawn during the Honeyback Harvester Event on either Wave 4, 9, 14, 19 and so on.",
-						["coords"] = {
+						sharedDescription = "This Rare has a chance to spawn during the Honeyback Harvester Event on either Wave 4, 9, 14, 19 and so on.",
+						coords = {
 							{ 25.6, 73.2, STORMSONG_VALLEY },
 							{ 33.4, 32.8, STORMSONG_VALLEY },
 							{ 40.9, 62.1, STORMSONG_VALLEY },
@@ -240,45 +240,45 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							{ 66.3, 69.9, STORMSONG_VALLEY },
 							{ 72.3, 52.2, STORMSONG_VALLEY },
 						},
-						["crs"] = {
+						crs = {
 							154944,	-- Lush Flower Bed (vignette)
 						},
 					}, {
 						n(155055, {	-- Gurg the Hivethief
-							["groups"] = {
+							groups = {
 								i(169657),	-- Hivethief's Jelly Stash
 							},
 						}),
 						n(155173, {	-- Honeyback Usurper
-							["groups"] = {
+							groups = {
 								i(169658),	-- Usurper's Scent Gland
 							},
 						}),
 						n(155176, {	-- Old Nasha
-							["groups"] = {
+							groups = {
 								i(169659),	-- Old Nasha's Paw
 							},
 						}),
 						n(155171, {	-- The Hivekiller
-							["groups"] = {
+							groups = {
 								i(169655),	-- Hivekiller Stinger
 							},
 						}),
 						n(155172, {	-- Trapdoor Bee Hunter
-							["groups"] = {
+							groups = {
 								i(169656),	-- Envenomed Spider Fang
 							},
 						}),
 						n(155059, {	-- Yorag the Jelly Feaster
-							["groups"] = {
+							groups = {
 								i(169654),	-- Spiral Yeti Horn
 							},
 						}),
 					})),
 					n(VENDORS, {
 						n(153393, {	-- Barry
-							["coord"] = { 69.2, 64.2, STORMSONG_VALLEY },
-							["groups"] = {
+							coord = { 69.2, 64.2, STORMSONG_VALLEY },
+							groups = {
 								i(169109),	-- Beeholder's Goggles
 								i(169141),	-- Butterfly Net
 								i(169395),	-- Summit Zephyr
@@ -286,14 +286,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						}),
 						n(155176, {	-- Honeyback Hivemother
 							i(169862, {	-- Alluring Bloom
-								["minReputation"] = { FACTION_HONEYBACK_HIVE, FRIENDLY },	-- Honeyback Hive, Friendly
-								["cost"] = { { "i", 168822, 35 } },	-- Thin Jelly x35
+								minReputation = { FACTION_HONEYBACK_HIVE, FRIENDLY },	-- Honeyback Hive, Friendly
+								cost = { { "i", 168822, 35 } },	-- Thin Jelly x35
 							}),
 							i(172383, {	-- Collected Tidebloom Honey (QS!)
-								["cost"] = { { "i", 168828, 35 } },	-- Royal Jelly x35
+								cost = { { "i", 168828, 35 } },	-- Royal Jelly x35
 							}),
 							i(173533, {	-- Collected Tidebloom Honey (QS!)
-								["cost"] = { { "i", 168828, 35 } },	-- Royal Jelly x35
+								cost = { { "i", 168828, 35 } },	-- Royal Jelly x35
 							}),
 						}),
 					}),
@@ -303,7 +303,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_2_5 } }, {
 	m(KUL_TIRAS, {
 		m(STORMSONG_VALLEY, {
 			n(FACTIONS, {

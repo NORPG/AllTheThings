@@ -3,5 +3,5 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.BFA, {
-	["timeline"] = { ADDED_8_0_1_LAUNCH },
+	timeline = { ADDED_8_0_1_LAUNCH },
 }));

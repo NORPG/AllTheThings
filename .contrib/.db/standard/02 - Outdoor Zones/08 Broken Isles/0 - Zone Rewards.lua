@@ -70,7 +70,7 @@ root(ROOTS.Zones, {
 			i(140009),	-- Felsword Legplates
 			i(140017),	-- Boots of the Felsword
 			i(134334, {	-- Disgraced Court Cloak
-				["bonusID"] = 1812,
+				bonusID = 1812,
 			}),
 			filter(MISC, {
 				i(147869),	-- Fel Meteorite

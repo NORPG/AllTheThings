@@ -2,7 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
+root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3 } }, {
 	n(ARMOR, {
 		filter(CLOTH, {
 			i(121390),	-- Anund's Bandages
@@ -91,7 +91,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 			i(141589),	-- Treia's Handcrafted Shroud
 			i(141590),	-- Cloak of the Martayl Oceanstrider
 			i(134246, {	-- Herringbone Drape
-				["bonusID"] = 1812,
+				bonusID = 1812,
 			}),
 		}),
 		filter(NECK_F, {
@@ -128,7 +128,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 		i(121338),	-- Bent-Blade Axe
 		i(121381),	-- Chipped Colossus Blade
 		i(132168, {	-- Common Legion Blade
-			["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 }	-- TODO: is it removed?
+			timeline = { ADDED_7_0_3, REMOVED_7_1_0 }	-- TODO: is it removed?
 		}),
 		i(121383),	-- Curious Nar'thalas Student's Staff
 		i(121335),	-- Fixing Axe
@@ -146,7 +146,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 		i(121375),	-- Voo's Juicer
 	}),
 	filter(REAGENTS, {
-		i(151567, { ["timeline"] = { ADDED_7_3_0 } }),	-- Lightweave Cloth
+		i(151567, { timeline = { ADDED_7_3_0 } }),	-- Lightweave Cloth
 		i(124437),	-- Shal'dorei Silk
 		i(124438),	-- Unbroken Claw
 		i(124439),	-- Unbroken Tooth
@@ -154,13 +154,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 	filter(RECIPES, {
 		prof(ALCHEMY, {
 			i(142119, {	-- Recipe: Potion of Prolonged Power [Rank 1] (RECIPE!)
-				["timeline"] = { ADDED_7_1_0 },
+				timeline = { ADDED_7_1_0 },
 			}),
 			i(127925),	-- Recipe: Infernal Alchemist Stone [Rank 2] (RECIPE!)
 		}),
 		prof(BLACKSMITHING, {
 			i(136709, {	-- Plans: Demonsteel Stirrups (RECIPE!)
-				["crs"] = {
+				crs = {
 					104815,	-- Jojo the Palestrider
 					109819,	-- Wild Dreamrunner
 					112636,	-- Sinister Leyrunner
@@ -174,19 +174,19 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 			i(141919),	-- Formula: Enchant Neck - Mark of the Ancient Priestess [Rank 3] (RECIPE!)
 			i(128610),	-- Formula: Enchant Neck - Mark of the Claw [Rank 3] (RECIPE!)
 			i(141914, {	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 2] (RECIPE!)
-				["crs"] = 93095,	-- Voracious Bear
-				["coord"] = { 71.0, 51.9, STORMHEIM },
-				["description"] = "Drops from bears in any Broken Isles zone. Best farmed in Stormheim from Voracious Bears.",
+				crs = 93095,	-- Voracious Bear
+				coord = { 71.0, 51.9, STORMHEIM },
+				description = "Drops from bears in any Broken Isles zone. Best farmed in Stormheim from Voracious Bears.",
 			}),
 			i(141915, {	-- Formula: Enchant Neck - Mark of the Trained Soldier [Rank 2] (RECIPE!)
-				["description"] = "Drops from PVP world quest mobs in any Broken Isles zone.",
+				description = "Drops from PVP world quest mobs in any Broken Isles zone.",
 			}),
 			i(141918),	-- Formula: Enchant Neck - Mark of the Trained Soldier [Rank 3] (RECIPE!)
 		}),
 		prof(FISHING, {
 			i(137695, {	-- Schematic: Reaves Module: Wormhole Generator Mode (RECIPE!)
-				["description"] = "Fished from Coastal Pools.",
-				["maps"] = {
+				description = "Fished from Coastal Pools.",
+				maps = {
 					AZSUNA,
 					BROKEN_SHORE,
 					HIGHMOUNTAIN,
@@ -204,34 +204,34 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 			i(141054),	-- Technique: Glyph of Smolder (RECIPE!)
 			i(141032),	-- Technique: Glyph of the Chilled Shell (RECIPE!)
 			i(141039, {	-- Technique: Glyph of the Doe (RECIPE!)
-				["description"] = "Drops from doe's and stags in any Broken Isles zone. Recommended to farm around the Grove of Cenarius in Val'Sharah.",
-				["coord"] = { 55.0, 59.9, VALSHARAH },
+				description = "Drops from doe's and stags in any Broken Isles zone. Recommended to farm around the Grove of Cenarius in Val'Sharah.",
+				coord = { 55.0, 59.9, VALSHARAH },
 			}),
 			i(141049),	-- Technique: Glyph of the Hook (RECIPE!)
 			i(141051, {	-- Technique: Glyph of the Trident (RECIPE!)
-				["description"] = "Drops from Nagas in any Broken Isles zone. Recommended to farm the Nagas before the first Boss in the Eye of Azshara Dungeon.",
+				description = "Drops from Nagas in any Broken Isles zone. Recommended to farm the Nagas before the first Boss in the Eye of Azshara Dungeon.",
 			}),
 			i(141064),	-- Technique: Grimoire of the Shivarra (RECIPE!)
 		}),
 		prof(TAILORING, {
 			i(142077, {	-- Pattern: Imbued Silkweave Bag [Rank 2] (RECIPE!)
-				["description"] = "Drops from ghosts in any Broken Isles zone.",
-				["timeline"] = { ADDED_7_1_0 },
+				description = "Drops from ghosts in any Broken Isles zone.",
+				timeline = { ADDED_7_1_0 },
 			}),
 			i(138006, {	-- Pattern: Imbued Silkweave Cover [Rank 2] (RECIPE!)
-				["description"] = "Drops from furbolgs in any Broken Isles zone.",
+				description = "Drops from furbolgs in any Broken Isles zone.",
 			}),
 			i(138007),	-- Pattern: Imbued Silkweave Cover [Rank 3] (RECIPE!)
 			i(138009, {	-- Pattern: Imbued Silkweave Drape [Rank 2] (RECIPE!)
-				["description"] = "Drops from harpies in any Broken Isles zone.",
+				description = "Drops from harpies in any Broken Isles zone.",
 			}),
 			i(138010),	-- Pattern: Imbued Silkweave Drape [Rank 3] (RECIPE!)
 			i(138003, {	-- Pattern: Imbued Silkweave Flourish [Rank 2] (RECIPE!)
-				["description"] = "Drops from murlocs in any Broken Isles zone.",
+				description = "Drops from murlocs in any Broken Isles zone.",
 			}),
 			i(138004),	-- Pattern: Imbued Silkweave Flourish [Rank 3] (RECIPE!)
 			i(138000, {	-- Pattern: Imbued Silkweave Shade [Rank 2] (RECIPE!)
-				["description"] = "Drops from vrykul in any Broken Isles zone.",
+				description = "Drops from vrykul in any Broken Isles zone.",
 			}),
 			i(138001),	-- Pattern: Imbued Silkweave Shade [Rank 3] (RECIPE!)
 		}),

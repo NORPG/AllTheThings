@@ -6,8 +6,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 	m(MAP.MIDNIGHT.VOIDSTORM, {
 		n(VENDORS, {
 			n(249098, {	-- Balaak the Twice-Exiled
-				["coord"] = { 53.5, 52.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-				["groups"] = {
+				coord = { 53.5, 52.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				groups = {
 					--TODO: not worth to list cost, imo
 					--but if someone want 100x itemID 248944
 					i(258763),	-- Portable Void Zeal
@@ -21,18 +21,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			n(259922, {	-- Void Researcher Aemely <Decor Specialist>
-				["coord"] = { 52.7, 72.8, MAP.MIDNIGHT.VOIDSTORM },
-				["groups"] = sharedData({
-					["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+				coord = { 52.7, 72.8, MAP.MIDNIGHT.VOIDSTORM },
+				groups = sharedData({
+					cost = { { "c", VOIDLIGHT_MARL, 250 } },
 				}, {
 					i(264340, {	-- Cosmic Barrel (DECOR!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+						cost = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(262472, {	-- Cosmic Kettle (DECOR!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+						cost = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(264659, {	-- Cosmic Traveler's Satchel (DECOR!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+						cost = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(267209),	-- Open Void Elf Bedroll (DECOR!)
 					i(264657),	-- Open Sturdy Void Elf Trunk (DECOR!)
@@ -42,22 +42,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					i(262606),	-- Smoldering Energy Forge (DECOR!)
 					i(264508),	-- Sturdy Void Elf Barricade (DECOR!)
 					i(263240, {	-- Sturdy Void Elf Crate (DECOR!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+						cost = { { "c", VOIDLIGHT_MARL, 150 } },
 					}),
 					i(264656),	-- Void Elf Weapon Rack (DECOR!)
 				}),
 			}),
 			n(244749, {	-- Xy'dax
-				["coord"] = { 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
-				["groups"] = {
+				coord = { 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
+				groups = {
 					i(264503, {	-- Cracked Core
-						["cost"] = { { "i", 246951, 10 } },	-- 10x Stormarion Core
+						cost = { { "i", 246951, 10 } },	-- 10x Stormarion Core
 					}),
 					i(251635, {	-- Illegal Cosmic Emitter
-						["cost"] = { { "i", 246951, 30 } },	-- 30x Stormarion Core
+						cost = { { "i", 246951, 30 } },	-- 30x Stormarion Core
 					}),
 					i(251805, {	-- Unstable Explosive Device
-						["cost"] = { { "i", 246951, 10 } },	-- 10x Stormarion Core
+						cost = { { "i", 246951, 10 } },	-- 10x Stormarion Core
 					}),
 				},
 			}),

@@ -2,10 +2,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 	cl(WARRIOR, {
 		-- DPS
 		i(60325, {	-- Earthen Helmet
-			["cost"] = { { "i", 63684, 1 }, },	-- Helm of the Forlorn Protector
+			cost = { { "i", 63684, 1 }, },	-- Helm of the Forlorn Protector
 		}),
 		i(60327, {	-- Earthen Pauldrons
-			["cost"] = { { "i", 64316, 1 }, },	-- Mantle of the Forlorn Protector
+			cost = { { "i", 64316, 1 }, },	-- Mantle of the Forlorn Protector
 		}),
 		i(60326),	-- Earthen Gauntlets
 		i(60323),	-- Earthen Battleplate
@@ -13,10 +13,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 
 		-- Protection
 		i(60328, {	-- Earthen Faceguard
-			["cost"] = { { "i", 63684, 1 }, },	-- Helm of the Forlorn Protector
+			cost = { { "i", 63684, 1 }, },	-- Helm of the Forlorn Protector
 		}),
 		i(60331, {	-- Earthen Shoulderguards
-			["cost"] = { { "i", 64316, 1 }, },	-- Mantle of the Forlorn Protector
+			cost = { { "i", 64316, 1 }, },	-- Mantle of the Forlorn Protector
 		}),
 		i(60332),	-- Earthen Handguards
 		i(60329),	-- Earthen Chestguard
@@ -25,10 +25,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 	cl(PALADIN, {
 		-- DPS
 		i(60346, {	-- Reinforced Sapphirium Helmet
-			["cost"] = { { "i", 63683, 1 }, },	-- Helm of the Forlorn Conqueror
+			cost = { { "i", 63683, 1 }, },	-- Helm of the Forlorn Conqueror
 		}),
 		i(60348, {	-- Reinforced Sapphirium Pauldrons
-			["cost"] = { { "i", 64315, 1 }, },	-- Mantle of the Forlorn Conqueror
+			cost = { { "i", 64315, 1 }, },	-- Mantle of the Forlorn Conqueror
 		}),
 		i(60345),	-- Reinforced Sapphirium Gauntlets
 		i(60344),	-- Reinforced Sapphirium Battleplate
@@ -36,10 +36,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 
 		-- Holy
 		i(60359, {	-- Reinforced Sapphirium Headguard
-			["cost"] = { { "i", 63683, 1 }, },	-- Helm of the Forlorn Conqueror
+			cost = { { "i", 63683, 1 }, },	-- Helm of the Forlorn Conqueror
 		}),
 		i(60362, {	-- Reinforced Sapphirium Mantle
-			["cost"] = { { "i", 64315, 1 }, },	-- Mantle of the Forlorn Conqueror
+			cost = { { "i", 64315, 1 }, },	-- Mantle of the Forlorn Conqueror
 		}),
 		i(60363),	-- Reinforced Sapphirium Gloves
 		i(60360),	-- Reinforced Sapphirium Breastplate
@@ -47,10 +47,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 
 		-- Protection
 		i(60356, {	-- Reinforced Sapphirium Faceguard
-			["cost"] = { { "i", 63683, 1 }, },	-- Helm of the Forlorn Conqueror
+			cost = { { "i", 63683, 1 }, },	-- Helm of the Forlorn Conqueror
 		}),
 		i(60358, {	-- Reinforced Sapphirium Shoulderguards
-			["cost"] = { { "i", 64315, 1 }, },	-- Mantle of the Forlorn Conqueror
+			cost = { { "i", 64315, 1 }, },	-- Mantle of the Forlorn Conqueror
 		}),
 		i(60355),	-- Reinforced Sapphirium Handguards
 		i(60354),	-- Reinforced Sapphirium Chestguard
@@ -59,10 +59,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 	cl(DEATHKNIGHT, {
 		-- DPS
 		i(60341, {	-- Magma Plated Helmet
-			["cost"] = { { "i", 63682, 1 }, },	-- Helm of the Forlorn Vanquisher
+			cost = { { "i", 63682, 1 }, },	-- Helm of the Forlorn Vanquisher
 		}),
 		i(60343, {	-- Magma Plated Pauldrons
-			["cost"] = { { "i", 64314, 1 }, },	-- Mantle of the Forlorn Vanquisher
+			cost = { { "i", 64314, 1 }, },	-- Mantle of the Forlorn Vanquisher
 		}),
 		i(60340),	-- Magma Plated Gauntlets
 		i(60339),	-- Magma Plated Battleplate
@@ -70,10 +70,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 
 		-- Protection
 		i(60351, {	-- Magma Plated Faceguard
-			["cost"] = { { "i", 63682, 1 }, },	-- Helm of the Forlorn Vanquisher
+			cost = { { "i", 63682, 1 }, },	-- Helm of the Forlorn Vanquisher
 		}),
 		i(60353, {	-- Magma Plated Shoulderguards
-			["cost"] = { { "i", 64314, 1 }, },	-- Mantle of the Forlorn Vanquisher
+			cost = { { "i", 64314, 1 }, },	-- Mantle of the Forlorn Vanquisher
 		}),
 		i(60350),	-- Magma Plated Handguards
 		i(60349),	-- Magma Plated Chestguard
@@ -81,10 +81,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 	}),
 	cl(HUNTER, {
 		i(60303, {	-- Lightning-Charged Headguard
-			["cost"] = { { "i", 63684, 1 }, },	-- Helm of the Forlorn Protector
+			cost = { { "i", 63684, 1 }, },	-- Helm of the Forlorn Protector
 		}),
 		i(60306, {	-- Lightning-Charged Spaulders
-			["cost"] = { { "i", 64316, 1 }, },	-- Mantle of the Forlorn Protector
+			cost = { { "i", 64316, 1 }, },	-- Mantle of the Forlorn Protector
 		}),
 		i(60307),	-- Lightning-Charged Gloves
 		i(60304),	-- Lightning-Charged Tunic
@@ -92,10 +92,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 	}),
 	cl(ROGUE, {
 		i(60299, {	-- Wind Dancer's Helmet
-			["cost"] = { { "i", 63682, 1 }, },	-- Helm of the Forlorn Vanquisher
+			cost = { { "i", 63682, 1 }, },	-- Helm of the Forlorn Vanquisher
 		}),
 		i(60302, {	-- Wind Dancer's Spaulders
-			["cost"] = { { "i", 64314, 1 }, },	-- Mantle of the Forlorn Vanquisher
+			cost = { { "i", 64314, 1 }, },	-- Mantle of the Forlorn Vanquisher
 		}),
 		i(60298),	-- Wind Dancer's Gloves
 		i(60301),	-- Wind Dancer's Tunic
@@ -104,10 +104,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 	cl(PRIEST, {
 		-- DPS
 		i(60256, {	-- Mercurial Hood
-			["cost"] = { { "i", 63683, 1 }, },	-- Helm of the Forlorn Conqueror
+			cost = { { "i", 63683, 1 }, },	-- Helm of the Forlorn Conqueror
 		}),
 		i(60253, {	-- Mercurial Shoulderwraps
-			["cost"] = { { "i", 64315, 1 }, },	-- Mantle of the Forlorn Conqueror
+			cost = { { "i", 64315, 1 }, },	-- Mantle of the Forlorn Conqueror
 		}),
 		i(60257),	-- Mercurial Gloves
 		i(60254),	-- Mercurial Vestment
@@ -115,10 +115,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 
 		-- Holy
 		i(60258, {	-- Mercurial Cowl
-			["cost"] = { { "i", 63683, 1 }, },	-- Helm of the Forlorn Conqueror
+			cost = { { "i", 63683, 1 }, },	-- Helm of the Forlorn Conqueror
 		}),
 		i(60262, {	-- Mercurial Mantle
-			["cost"] = { { "i", 64315, 1 }, },	-- Mantle of the Forlorn Conqueror
+			cost = { { "i", 64315, 1 }, },	-- Mantle of the Forlorn Conqueror
 		}),
 		i(60275),	-- Mercurial Handwraps
 		i(60259),	-- Mercurial Robes
@@ -127,10 +127,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 	cl(SHAMAN, {
 		-- Enhance
 		i(60320, {	-- Helmet of the Raging Elements
-			["cost"] = { { "i", 63684, 1 }, },	-- Helm of the Forlorn Protector
+			cost = { { "i", 63684, 1 }, },	-- Helm of the Forlorn Protector
 		}),
 		i(60322, {	-- Spaulders of the Raging Elements
-			["cost"] = { { "i", 64316, 1 }, },	-- Mantle of the Forlorn Protector
+			cost = { { "i", 64316, 1 }, },	-- Mantle of the Forlorn Protector
 		}),
 		i(60319),	-- Grips of the Raging Elements
 		i(60318),	-- Cuirass of the Raging Elements
@@ -138,10 +138,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 
 		-- Elemental
 		i(60315, {	-- Headpiece of the Raging Elements
-			["cost"] = { { "i", 63684, 1 }, },	-- Helm of the Forlorn Protector
+			cost = { { "i", 63684, 1 }, },	-- Helm of the Forlorn Protector
 		}),
 		i(60317, {	-- Shoulderwraps of the Raging Elements
-			["cost"] = { { "i", 64316, 1 }, },	-- Mantle of the Forlorn Protector
+			cost = { { "i", 64316, 1 }, },	-- Mantle of the Forlorn Protector
 		}),
 		i(60314),	-- Gloves of the Raging Elements
 		i(60313),	-- Hauberk of the Raging Elements
@@ -149,10 +149,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 
 		-- Restoration
 		i(60308, {	-- Faceguard of the Raging Elements
-			["cost"] = { { "i", 63684, 1 }, },	-- Helm of the Forlorn Protector
+			cost = { { "i", 63684, 1 }, },	-- Helm of the Forlorn Protector
 		}),
 		i(60311, {	-- Mantle of the Raging Elements
-			["cost"] = { { "i", 64316, 1 }, },	-- Mantle of the Forlorn Protector
+			cost = { { "i", 64316, 1 }, },	-- Mantle of the Forlorn Protector
 		}),
 		i(60312),	-- Handwraps of the Raging Elements
 		i(60309),	-- Tunic of the Raging Elements
@@ -160,10 +160,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 	}),
 	cl(MAGE, {
 		i(60243, {	-- Firelord's Hood
-			["cost"] = { { "i", 63682, 1 }, },	-- Helm of the Forlorn Vanquisher
+			cost = { { "i", 63682, 1 }, },	-- Helm of the Forlorn Vanquisher
 		}),
 		i(60246, {	-- Firelord's Mantle
-			["cost"] = { { "i", 64314, 1 }, },	-- Mantle of the Forlorn Vanquisher
+			cost = { { "i", 64314, 1 }, },	-- Mantle of the Forlorn Vanquisher
 		}),
 		i(60247),	-- Firelord's Gloves
 		i(60244),	-- Firelord's Robes
@@ -171,10 +171,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 	}),
 	cl(WARLOCK, {
 		i(60249, {	-- Shadowflame Hood
-			["cost"] = { { "i", 63683, 1 }, },	-- Helm of the Forlorn Conqueror
+			cost = { { "i", 63683, 1 }, },	-- Helm of the Forlorn Conqueror
 		}),
 		i(60252, {	-- Shadowflame Mantle
-			["cost"] = { { "i", 64315, 1 }, },	-- Mantle of the Forlorn Conqueror
+			cost = { { "i", 64315, 1 }, },	-- Mantle of the Forlorn Conqueror
 		}),
 		i(60248),	-- Shadowflame Handwraps
 		i(60251),	-- Shadowflame Robes
@@ -183,10 +183,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 	cl(DRUID, {
 		-- Boomkin
 		i(60282, {	-- Stormrider's Cover
-			["cost"] = { { "i", 63682, 1 }, },	-- Helm of the Forlorn Vanquisher
+			cost = { { "i", 63682, 1 }, },	-- Helm of the Forlorn Vanquisher
 		}),
 		i(60284, {	-- Stormrider's Shoulderwraps
-			["cost"] = { { "i", 64314, 1 }, },	-- Mantle of the Forlorn Vanquisher
+			cost = { { "i", 64314, 1 }, },	-- Mantle of the Forlorn Vanquisher
 		}),
 		i(60285),	-- Stormrider's Gloves
 		i(60281),	-- Stormrider's Vestment
@@ -194,10 +194,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 
 		-- Feral
 		i(60286, {	-- Stormrider's Headpiece
-			["cost"] = { { "i", 63682, 1 }, },	-- Helm of the Forlorn Vanquisher
+			cost = { { "i", 63682, 1 }, },	-- Helm of the Forlorn Vanquisher
 		}),
 		i(60289, {	-- Stormrider's Spaulders
-			["cost"] = { { "i", 64314, 1 }, },	-- Mantle of the Forlorn Vanquisher
+			cost = { { "i", 64314, 1 }, },	-- Mantle of the Forlorn Vanquisher
 		}),
 		i(60290),	-- Stormrider's Grips
 		i(60287),	-- Stormrider's Raiment
@@ -205,10 +205,10 @@ local TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 
 		-- Restoration
 		i(60277, {	-- Stormrider's Helm
-			["cost"] = { { "i", 63682, 1 }, },	-- Helm of the Forlorn Vanquisher
+			cost = { { "i", 63682, 1 }, },	-- Helm of the Forlorn Vanquisher
 		}),
 		i(60279, {	-- Stormrider's Mantle
-			["cost"] = { { "i", 64314, 1 }, },	-- Mantle of the Forlorn Vanquisher
+			cost = { { "i", 64314, 1 }, },	-- Mantle of the Forlorn Vanquisher
 		}),
 		i(60280),	-- Stormrider's Handwraps
 		i(60276),	-- Stormrider's Robes
@@ -219,25 +219,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 	cl(WARRIOR, {
 		-- DPS
 		i(65266, {	-- Earthen Helmet
-			["cost"] = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
+			cost = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
 		}),
 		i(65268, {	-- Earthen Pauldrons
-			["cost"] = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
+			cost = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
 		}),
 		i(65265, {	-- Earthen Gauntlets
-			["cost"] = {
+			cost = {
 				{ "i", 67430, 1 },	-- Gauntlets of the Forlorn Protector
 				{ "i", 60326, 1 },	-- Earthen Gauntlets
 			},
 		}),
 		i(65264, {	-- Earthen Battleplate
-			["cost"] = {
+			cost = {
 				{ "i", 67424, 1 },	-- Chest of the Forlorn Protector
 				{ "i", 60323, 1 },	-- Earthen Battleplate
 			},
 		}),
 		i(65267, {	-- Earthen Legplates
-			["cost"] = {
+			cost = {
 				{ "i", 67427, 1 },	-- Leggings of the Forlorn Protector
 				{ "i", 60324, 1 },	-- Earthen Legplates
 			},
@@ -245,25 +245,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 
 		-- Protection
 		i(65271, {	-- Earthen Faceguard
-			["cost"] = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Vanquisher
+			cost = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Vanquisher
 		}),
 		i(65273, {	-- Earthen Shoulderguards
-			["cost"] = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
+			cost = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
 		}),
 		i(65270, {	-- Earthen Handguards
-			["cost"] = {
+			cost = {
 				{ "i", 67430, 1 },	-- Gauntlets of the Forlorn Protector
 				{ "i", 60332, 1 },	-- Earthen Handguards
 			},
 		}),
 		i(65269, {	-- Earthen Chestguard
-			["cost"] = {
+			cost = {
 				{ "i", 67424, 1 },	-- Chest of the Forlorn Protector
 				{ "i", 60329, 1 },	-- Earthen Chestguard
 			},
 		}),
 		i(65272, {	-- Earthen Legguards
-			["cost"] = {
+			cost = {
 				{ "i", 67427, 1 },	-- Leggings of the Forlorn Protector
 				{ "i", 60330, 1 },	-- Earthen Legguards
 			},
@@ -272,25 +272,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 	cl(PALADIN, {
 		-- DPS
 		i(65216, {	-- Reinforced Sapphirium Helmet
-			["cost"] = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
+			cost = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
 		}),
 		i(65218, {	-- Reinforced Sapphirium Pauldrons
-			["cost"] = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
+			cost = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
 		}),
 		i(65215, {	-- Reinforced Sapphirium Gauntlets
-			["cost"] = {
+			cost = {
 				{ "i", 67429, 1 },	-- Gauntlets of the Forlorn Conqueror
 				{ "i", 60345, 1 },	-- Reinforced Sapphirium Gauntlets
 			},
 		}),
 		i(65214, {	-- Reinforced Sapphirium Battleplate
-			["cost"] = {
+			cost = {
 				{ "i", 67423, 1 },	-- Chest of the Forlorn Conqueror
 				{ "i", 60344, 1 },	-- Reinforced Sapphirium Battleplate
 			},
 		}),
 		i(65217, {	-- Reinforced Sapphirium Legplates
-			["cost"] = {
+			cost = {
 				{ "i", 67428, 1 },	-- Leggings of the Forlorn Conqueror
 				{ "i", 60347, 1 },	-- Reinforced Sapphirium Legplates
 			},
@@ -298,25 +298,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 
 		-- Holy
 		i(65221, {	-- Reinforced Sapphirium Headguard
-			["cost"] = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
+			cost = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
 		}),
 		i(65223, {	-- Reinforced Sapphirium Mantle
-			["cost"] = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
+			cost = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
 		}),
 		i(65220, {	-- Reinforced Sapphirium Gloves
-			["cost"] = {
+			cost = {
 				{ "i", 67429, 1 },	-- Gauntlets of the Forlorn Conqueror
 				{ "i", 60363, 1 },	-- Reinforced Sapphirium Gloves
 			},
 		}),
 		i(65219, {	-- Reinforced Sapphirium Breastplate
-			["cost"] = {
+			cost = {
 				{ "i", 67423, 1 },	-- Chest of the Forlorn Conqueror
 				{ "i", 60360, 1 },	-- Reinforced Sapphirium Breastplate
 			},
 		}),
 		i(65222, {	-- Reinforced Sapphirium Greaves
-			["cost"] = {
+			cost = {
 				{ "i", 67428, 1 },	-- Leggings of the Forlorn Conqueror
 				{ "i", 60361, 1 },	-- Reinforced Sapphirium Greaves
 			},
@@ -324,25 +324,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 
 		-- Protection
 		i(65226, {	-- Reinforced Sapphirium Faceguard
-			["cost"] = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
+			cost = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
 		}),
 		i(65228, {	-- Reinforced Sapphirium Shoulderguards
-			["cost"] = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
+			cost = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
 		}),
 		i(65225, {	-- Reinforced Sapphirium Handguards
-			["cost"] = {
+			cost = {
 				{ "i", 67429, 1 },	-- Gauntlets of the Forlorn Conqueror
 				{ "i", 60355, 1 },	-- Reinforced Sapphirium Handguards
 			},
 		}),
 		i(65224, {	-- Reinforced Sapphirium Chestguard
-			["cost"] = {
+			cost = {
 				{ "i", 67423, 1 },	-- Chest of the Forlorn Conqueror
 				{ "i", 60354, 1 },	-- Reinforced Sapphirium Chestguard
 			},
 		}),
 		i(65227, {	-- Reinforced Sapphirium Legguards
-			["cost"] = {
+			cost = {
 				{ "i", 67428, 1 },	-- Leggings of the Forlorn Conqueror
 				{ "i", 60357, 1 },	-- Reinforced Sapphirium Legguards
 			},
@@ -351,25 +351,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 	cl(DEATHKNIGHT, {
 		-- DPS
 		i(65181, {	-- Magma Plated Helmet
-			["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
+			cost = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
 		}),
 		i(65183, {	-- Magma Plated Pauldrons
-			["cost"] = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
+			cost = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
 		}),
 		i(65180, {	-- Magma Plated Gauntlets
-			["cost"] = {
+			cost = {
 				{ "i", 67431, 1 },	-- Gauntlets of the Forlorn Vanquisher
 				{ "i", 60340, 1 },	-- Magma Plated Gauntlets
 			},
 		}),
 		i(65179, {	-- Magma Plated Battleplate
-			["cost"] = {
+			cost = {
 				{ "i", 67425, 1 },	-- Chest of the Forlorn Vanquisher
 				{ "i", 60339, 1 },	-- Magma Plated Battleplate
 			},
 		}),
 		i(65182, {	-- Magma Plated Legplates
-			["cost"] = {
+			cost = {
 				{ "i", 67426, 1 },	-- Leggings of the Forlorn Vanquisher
 				{ "i", 60342, 1 },	-- Magma Plated Legplates
 			},
@@ -377,25 +377,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 
 		-- Protection
 		i(65186, {	-- Magma Plated Faceguard
-			["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
+			cost = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
 		}),
 		i(65188, {	-- Magma Plated Shoulderguards
-			["cost"] = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
+			cost = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
 		}),
 		i(65185, {	-- Magma Plated Handguards
-			["cost"] = {
+			cost = {
 				{ "i", 67431, 1 },	-- Gauntlets of the Forlorn Vanquisher
 				{ "i", 60350, 1 },	-- Magma Plated Handguards
 			},
 		}),
 		i(65184, {	-- Magma Plated Chestguard
-			["cost"] = {
+			cost = {
 				{ "i", 67425, 1 },	-- Chest of the Forlorn Vanquisher
 				{ "i", 60349, 1 },	-- Magma Plated Chestguard
 			},
 		}),
 		i(65187, {	-- Magma Plated Legguards
-			["cost"] = {
+			cost = {
 				{ "i", 67426, 1 },	-- Leggings of the Forlorn Vanquisher
 				{ "i", 60352, 1 },	-- Magma Plated Legguards
 			},
@@ -403,25 +403,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 	}),
 	cl(HUNTER, {
 		i(65206, {	-- Lightning-Charged Headguard
-			["cost"] = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
+			cost = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
 		}),
 		i(65208, {	-- Lightning-Charged Spaulders
-			["cost"] = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
+			cost = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
 		}),
 		i(65205, {	-- Lightning-Charged Gloves
-			["cost"] = {
+			cost = {
 				{ "i", 67430, 1 },	-- Gauntlets of the Forlorn Protector
 				{ "i", 60307, 1 },	-- Lightning-Charged Gloves
 			},
 		}),
 		i(65204, {	-- Lightning-Charged Tunic
-			["cost"] = {
+			cost = {
 				{ "i", 67424, 1 },	-- Chest of the Forlorn Protector
 				{ "i", 60304, 1 },	-- Lightning-Charged Tunic
 			},
 		}),
 		i(65207, {	-- Lightning-Charged Legguards
-			["cost"] = {
+			cost = {
 				{ "i", 67427, 1 },	-- Leggings of the Forlorn Protector
 				{ "i", 60305, 1 },	-- Lightning-Charged Legguards
 			},
@@ -429,25 +429,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 	}),
 	cl(ROGUE, {
 		i(65241, {	-- Wind Dancer's Helmet
-			["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
+			cost = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
 		}),
 		i(65243, {	-- Wind Dancer's Spaulders
-			["cost"] = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
+			cost = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
 		}),
 		i(65240, {	-- Wind Dancer's Gloves
-			["cost"] = {
+			cost = {
 				{ "i", 67431, 1 },	-- Gauntlets of the Forlorn Vanquisher
 				{ "i", 60298, 1 },	-- Wind Dancer's Gloves
 			},
 		}),
 		i(65239, {	-- Wind Dancer's Tunic
-			["cost"] = {
+			cost = {
 				{ "i", 67425, 1 },	-- Chest of the Forlorn Vanquisher
 				{ "i", 60301, 1 },	-- Wind Dancer's Tunic
 			},
 		}),
 		i(65242, {	-- Wind Dancer's Legguards
-			["cost"] = {
+			cost = {
 				{ "i", 67426, 1 },	-- Leggings of the Forlorn Vanquisher
 				{ "i", 60300, 1 },	-- Wind Dancer's Legguards
 			},
@@ -456,25 +456,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 	cl(PRIEST, {
 		-- DPS
 		i(65235, {	-- Mercurial Hood
-			["cost"] = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
+			cost = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
 		}),
 		i(65238, {	-- Mercurial Shoulderwraps
-			["cost"] = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
+			cost = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
 		}),
 		i(65234, {	-- Mercurial Gloves
-			["cost"] = {
+			cost = {
 				{ "i", 67429, 1 },	-- Gauntlets of the Forlorn Conqueror
 				{ "i", 60257, 1 },	-- Mercurial Gloves
 			},
 		}),
 		i(65237, {	-- Mercurial Vestment
-			["cost"] = {
+			cost = {
 				{ "i", 67423, 1 },	-- Chest of the Forlorn Conqueror
 				{ "i", 60254, 1 },	-- Mercurial Vestment
 			},
 		}),
 		i(65236, {	-- Mercurial Leggings
-			["cost"] = {
+			cost = {
 				{ "i", 67428, 1 },	-- Leggings of the Forlorn Conqueror
 				{ "i", 60255, 1 },	-- Mercurial Leggings
 			},
@@ -482,25 +482,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 
 		-- Holy
 		i(65230, {	-- Mercurial Cowl
-			["cost"] = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
+			cost = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
 		}),
 		i(65233, {	-- Mercurial Mantle
-			["cost"] = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
+			cost = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
 		}),
 		i(65229, {	-- Mercurial Handwraps
-			["cost"] = {
+			cost = {
 				{ "i", 67429, 1 },	-- Gauntlets of the Forlorn Conqueror
 				{ "i", 60275, 1 },	-- Mercurial Handwraps
 			},
 		}),
 		i(65232, {	-- Mercurial Robes
-			["cost"] = {
+			cost = {
 				{ "i", 67423, 1 },	-- Chest of the Forlorn Conqueror
 				{ "i", 60259, 1 },	-- Mercurial Robes
 			},
 		}),
 		i(65231, {	-- Mercurial Legwraps
-			["cost"] = {
+			cost = {
 				{ "i", 67428, 1 },	-- Leggings of the Forlorn Conqueror
 				{ "i", 60261, 1 },	-- Mercurial Legwraps
 			},
@@ -509,25 +509,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 	cl(SHAMAN, {
 		-- Enhance
 		i(65251, {	-- Helmet of the Raging Elements
-			["cost"] = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
+			cost = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
 		}),
 		i(65253, {	-- Spaulders of the Raging Elements
-			["cost"] = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
+			cost = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
 		}),
 		i(65250, {	-- Grips of the Raging Elements
-			["cost"] = {
+			cost = {
 				{ "i", 67430, 1 },	-- Gauntlets of the Forlorn Protector
 				{ "i", 60319, 1 },	-- Grips of the Raging Elements
 			},
 		}),
 		i(65249, {	-- Cuirass of the Raging Elements
-			["cost"] = {
+			cost = {
 				{ "i", 67424, 1 },	-- Chest of the Forlorn Protector
 				{ "i", 60318, 1 },	-- Cuirass of the Raging Elements
 			},
 		}),
 		i(65252, {	-- Legguards of the Raging Elements
-			["cost"] = {
+			cost = {
 				{ "i", 67427, 1 },	-- Leggings of the Forlorn Protector
 				{ "i", 60321, 1 },	-- Legguards of the Raging Elements
 			},
@@ -535,25 +535,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 
 		-- Elemental
 		i(65256, {	-- Headpiece of the Raging Elements
-			["cost"] = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
+			cost = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
 		}),
 		i(65258, {	-- Shoulderwraps of the Raging Elements
-			["cost"] = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
+			cost = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
 		}),
 		i(65255, {	-- Gloves of the Raging Elements
-			["cost"] = {
+			cost = {
 				{ "i", 67430, 1 },	-- Gauntlets of the Forlorn Protector
 				{ "i", 60314, 1 },	-- Gloves of the Raging Elements
 			},
 		}),
 		i(65254, {	-- Hauberk of the Raging Elements
-			["cost"] = {
+			cost = {
 				{ "i", 67424, 1 },	-- Chest of the Forlorn Protector
 				{ "i", 60313, 1 },	-- Hauberk of the Raging Elements
 			},
 		}),
 		i(65257, {	-- Kilt of the Raging Elements
-			["cost"] = {
+			cost = {
 				{ "i", 67427, 1 },	-- Leggings of the Forlorn Protector
 				{ "i", 60316, 1 },	-- Kilt of the Raging Elements
 			},
@@ -561,25 +561,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 
 		-- Restoration
 		i(65246, {	-- Faceguard of the Raging Elements
-			["cost"] = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
+			cost = { { "i", 65000, 1 }, },	-- Crown of the Forlorn Protector
 		}),
 		i(65248, {	-- Mantle of the Raging Elements
-			["cost"] = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
+			cost = { { "i", 65087, 1 }, },	-- Shoulders of the Forlorn Protector
 		}),
 		i(65245, {	-- Handwraps of the Raging Elements
-			["cost"] = {
+			cost = {
 				{ "i", 67430, 1 },	-- Gauntlets of the Forlorn Protector
 				{ "i", 60312, 1 },	-- Handwraps of the Raging Elements
 			},
 		}),
 		i(65244, {	-- Tunic of the Raging Elements
-			["cost"] = {
+			cost = {
 				{ "i", 67424, 1 },	-- Chest of the Forlorn Protector
 				{ "i", 60309, 1 },	-- Tunic of the Raging Elements
 			},
 		}),
 		i(65247, {	-- Legwraps of the Raging Elements
-			["cost"] = {
+			cost = {
 				{ "i", 67427, 1 },	-- Leggings of the Forlorn Protector
 				{ "i", 60310, 1 },	-- Legwraps of the Raging Elements
 			},
@@ -587,25 +587,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 	}),
 	cl(MAGE, {
 		i(65210, {	-- Firelord's Hood
-			["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
+			cost = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
 		}),
 		i(65213, {	-- Firelord's Mantle
-			["cost"] = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
+			cost = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
 		}),
 		i(65209, {	-- Firelord's Gloves
-			["cost"] = {
+			cost = {
 				{ "i", 67431, 1 },	-- Gauntlets of the Forlorn Vanquisher
 				{ "i", 60247, 1 },	-- Firelord's Gloves
 			},
 		}),
 		i(65212, {	-- Firelord's Robes
-			["cost"] = {
+			cost = {
 				{ "i", 67425, 1 },	-- Chest of the Forlorn Vanquisher
 				{ "i", 60244, 1 },	-- Firelord's Robes
 			},
 		}),
 		i(65211, {	-- Firelord's Leggings
-			["cost"] = {
+			cost = {
 				{ "i", 67426, 1 },	-- Leggings of the Forlorn Vanquisher
 				{ "i", 60245, 1 },	-- Firelord's Leggings
 			},
@@ -613,25 +613,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 	}),
 	cl(WARLOCK, {
 		i(65260, {	-- Shadowflame Hood
-			["cost"] = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
+			cost = { { "i", 65001, 1 }, },	-- Crown of the Forlorn Conqueror
 		}),
 		i(65263, {	-- Shadowflame Mantle
-			["cost"] = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
+			cost = { { "i", 65088, 1 }, },	-- Shoulders of the Forlorn Conqueror
 		}),
 		i(65259, {	-- Shadowflame Handwraps
-			["cost"] = {
+			cost = {
 				{ "i", 67429, 1 },	-- Gauntlets of the Forlorn Conqueror
 				{ "i", 60248, 1 },	-- Shadowflame Handwraps
 			},
 		}),
 		i(65262, {	-- Shadowflame Robes
-			["cost"] = {
+			cost = {
 				{ "i", 67423, 1 },	-- Chest of the Forlorn Conqueror
 				{ "i", 60251, 1 },	-- Shadowflame Robes
 			},
 		}),
 		i(65261, {	-- Shadowflame Leggings
-			["cost"] = {
+			cost = {
 				{ "i", 67428, 1 },	-- Leggings of the Forlorn Conqueror
 				{ "i", 60250, 1 },	-- Shadowflame Leggings
 			},
@@ -640,25 +640,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 	cl(DRUID, {
 		-- Boomkin
 		i(65200, {	-- Stormrider's Cover
-			["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
+			cost = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
 		}),
 		i(65203, {	-- Stormrider's Shoulderwraps
-			["cost"] = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
+			cost = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
 		}),
 		i(65199, {	-- Stormrider's Gloves
-			["cost"] = {
+			cost = {
 				{ "i", 67431, 1 },	-- Gauntlets of the Forlorn Vanquisher
 				{ "i", 60285, 1 },	-- Stormrider's Gloves
 			},
 		}),
 		i(65202, {	-- Stormrider's Vestment
-			["cost"] = {
+			cost = {
 				{ "i", 67425, 1 },	-- Chest of the Forlorn Vanquisher
 				{ "i", 60281, 1 },	-- Stormrider's Vestment
 			},
 		}),
 		i(65201, {	-- Stormrider's Leggings
-			["cost"] = {
+			cost = {
 				{ "i", 67426, 1 },	-- Leggings of the Forlorn Vanquisher
 				{ "i", 60283, 1 },	-- Stormrider's Leggings
 			},
@@ -666,25 +666,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 
 		-- Feral
 		i(65190, {	-- Stormrider's Headpiece
-			["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
+			cost = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
 		}),
 		i(65193, {	-- Stormrider's Spaulders
-			["cost"] = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
+			cost = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
 		}),
 		i(65189, {	-- Stormrider's Grips
-			["cost"] = {
+			cost = {
 				{ "i", 67431, 1 },	-- Gauntlets of the Forlorn Vanquisher
 				{ "i", 60290, 1 },	-- Stormrider's Grips
 			},
 		}),
 		i(65192, {	-- Stormrider's Raiment
-			["cost"] = {
+			cost = {
 				{ "i", 67425, 1 },	-- Chest of the Forlorn Vanquisher
 				{ "i", 60287, 1 },	-- Stormrider's Raiment
 			},
 		}),
 		i(65191, {	-- Stormrider's Legguards
-			["cost"] = {
+			cost = {
 				{ "i", 67426, 1 },	-- Leggings of the Forlorn Vanquisher
 				{ "i", 60288, 1 },	-- Stormrider's Legguards
 			},
@@ -692,25 +692,25 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 
 		-- Restoration
 		i(65195, {	-- Stormrider's Helm
-			["cost"] = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
+			cost = { { "i", 65002, 1 }, },	-- Crown of the Forlorn Vanquisher
 		}),
 		i(65198, {	-- Stormrider's Mantle
-			["cost"] = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
+			cost = { { "i", 65089, 1 }, },	-- Shoulders of the Forlorn Vanquisher
 		}),
 		i(65194, {	-- Stormrider's Handwraps
-			["cost"] = {
+			cost = {
 				{ "i", 67431, 1 },	-- Gauntlets of the Forlorn Vanquisher
 				{ "i", 60280, 1 },	-- Stormrider's Handwraps
 			},
 		}),
 		i(65197, {	-- Stormrider's Robes
-			["cost"] = {
+			cost = {
 				{ "i", 67425, 1 },	-- Chest of the Forlorn Vanquisher
 				{ "i", 60276, 1 },	-- Stormrider's Robes
 			},
 		}),
 		i(65196, {	-- Stormrider's Legwraps
-			["cost"] = {
+			cost = {
 				{ "i", 67426, 1 },	-- Leggings of the Forlorn Vanquisher
 				{ "i", 60278, 1 },	-- Stormrider's Legwraps
 			},
@@ -719,49 +719,49 @@ local TIER_ELEVEN_HEROIC_GROUPS = {	-- Bastion of Twilight [Tier 11] (Heroic)
 };
 local TIER_ELEVEN_COMMON_GROUPS = {
 	i(65001, {	-- Crown of the Forlorn Conqueror
-		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+		cost = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),
 	i(65000, {	-- Crown of the Forlorn Protector
-		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+		cost = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),
 	i(65002, {	-- Crown of the Forlorn Vanquisher
-		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+		cost = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),
 	i(65088, {	-- Shoulders of the Forlorn Conqueror
-		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+		cost = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),
 	i(65087, {	-- Shoulders of the Forlorn Protector
-		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+		cost = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),
 	i(65089, {	-- Shoulders of the Forlorn Vanquisher
-		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+		cost = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),
 	i(67429, {	-- Gauntlets of the Forlorn Conqueror
-		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+		cost = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),
 	i(67430, {	-- Gauntlets of the Forlorn Protector
-		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+		cost = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),
 	i(67431, {	-- Gauntlets of the Forlorn Vanquisher
-		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+		cost = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),
 	i(67423, {	-- Chest of the Forlorn Conqueror
-		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+		cost = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),
 	i(67424, {	-- Chest of the Forlorn Protector
-		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+		cost = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),
 	i(67425, {	-- Chest of the Forlorn Vanquisher
-		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+		cost = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),
 	i(67428, {	-- Leggings of the Forlorn Conqueror
-		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+		cost = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),
 	i(67427, {	-- Leggings of the Forlorn Protector
-		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+		cost = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),
 	i(67426, {	-- Leggings of the Forlorn Vanquisher
-		["cost"] = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
+		cost = { { "i", 66998, 1 }, },	-- Essence of the Forlorn
 	}),
 	i(57931),	-- Amulet of Dull Dreaming
 	i(57924),	-- Apple-Bent Bough
@@ -829,19 +829,19 @@ local TIER_ELEVEN_COMMON_GROUPS = {
 	i(58187),	-- Ring of the Battle Anthem
 	-- #if BEFORE MOP
 	i(64674, {	-- Relic of Aggramar
-		["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+		timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 	}),
 	i(64673, {	-- Relic of Eonar
-		["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+		timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 	}),
 	i(64671, {	-- Relic of Golganneth
-		["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+		timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 	}),
 	i(64676, {	-- Relic of Khaz'goroth
-		["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+		timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 	}),
 	i(64672, {	-- Relic of Norgannon
-		["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+		timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 	}),
 	-- #endif
 	i(58153),	-- Robes of Embalmed Darkness

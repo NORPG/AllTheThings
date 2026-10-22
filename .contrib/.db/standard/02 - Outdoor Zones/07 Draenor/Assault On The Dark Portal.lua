@@ -27,29 +27,29 @@ local ASSAULT_ON_THE_DARK_PORTAL = createHeader({
 root(ROOTS.Zones, {
 	m(DRAENOR, {
 		n(ASSAULT_ON_THE_DARK_PORTAL, {
-			["maps"] = {
+			maps = {
 				577,	-- Tanaan Jungle (instanced)
 				578,	-- Umbral Halls
 			},
-			["lvl"] = 90,
-			["groups"] = {
+			lvl = 90,
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(8921, {	-- Welcome to Draenor (A)
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35884,
+						races = ALLIANCE_ONLY,
+						sourceQuest = 35884,
 					}),
 					ach(8922, {	-- Welcome to Draenor (H)
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35884,
+						races = HORDE_ONLY,
+						sourceQuest = 35884,
 					}),
 				}),
 				n(QUESTS, {
 					q(34478, {	-- A Potential Ally (A)
-						["sourceQuest"] = 34425,	-- The Kargathar Proving Grounds
-						["qg"] = 78560,	-- Archmage Khadgar
-						["coord"] = { 73.0, 38.1, 577 },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						sourceQuest = 34425,	-- The Kargathar Proving Grounds
+						qg = 78560,	-- Archmage Khadgar
+						coord = { 73.0, 38.1, 577 },
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(112442),	-- Slavebreaker Chainmail
 							i(112443),	-- Slavebreaker Chestguard
 							i(112440),	-- Slavebreaker Robes
@@ -57,11 +57,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34427, {	-- A Potential Ally (H)
-						["sourceQuest"] = 34425,	-- The Kargathar Proving Grounds
-						["qg"] = 78560,	-- Archmage Khadgar
-						["coord"] = { 73.0, 38.1, 577 },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						sourceQuest = 34425,	-- The Kargathar Proving Grounds
+						qg = 78560,	-- Archmage Khadgar
+						coord = { 73.0, 38.1, 577 },
+						races = HORDE_ONLY,
+						groups = {
 							i(112442),	-- Slavebreaker Chainmail
 							i(112443),	-- Slavebreaker Chestguard
 							i(112440),	-- Slavebreaker Robes
@@ -69,34 +69,34 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34445, {	-- A Taste of Iron
-						["sourceQuest"] = 35747,	-- Taking a Trip to the Top of the Tank
-						["qg"] = 80521,	-- Thaelin Darkanvil
-						["coord"] = { 40.1, 48.4, 577 },
+						sourceQuest = 35747,	-- Taking a Trip to the Top of the Tank
+						qg = 80521,	-- Thaelin Darkanvil
+						coord = { 40.1, 48.4, 577 },
 					}),
 					q(34423, {	-- Altar Altercation
-						["sourceQuests"] = {
+						sourceQuests = {
 							34422,	-- Blaze of Glory
 							34421,	-- Bled Dry
 							35240,	-- Bled Dry
 							35242,	-- Vengeance for the Fallen (A)
 							35241,	-- Vengeance for the Fallen	(H)
 						},
-						["qg"] = 78559,	-- Archmage Khadgar
-						["coord"] = { 71.5, 62.3, 577 },
+						qg = 78559,	-- Archmage Khadgar
+						coord = { 71.5, 62.3, 577 },
 					}),
 					q(35933, {	-- Azeroth's Last Stand
-						["sourceQuests"] = {
+						sourceQuests = {
 							36881,	-- The Dark Portal (A)
 							34398,	-- The Dark Portal (H)
 						},
-						["qg"] = 78558,	-- Archmage Khadgar
-						["coord"] = { 54.7, 48.2, 577 },
+						qg = 78558,	-- Archmage Khadgar
+						coord = { 54.7, 48.2, 577 },
 					}),
 					q(34422, {	-- Blaze of Glory
-						["sourceQuest"] = 34420,	-- The Cost of War
-						["qg"] = 78559,	-- Archmage Khadgar
-						["coord"] = { 60.2, 56.3, 577 },
-						["groups"] = {
+						sourceQuest = 34420,	-- The Cost of War
+						qg = 78559,	-- Archmage Khadgar
+						coord = { 60.2, 56.3, 577 },
+						groups = {
 							i(112432),	-- Hollowheart Chain Leggings
 							i(112431),	-- Hollowheart Legguards
 							i(112434),	-- Hollowheart Pantaloons
@@ -104,77 +104,77 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35240, {	-- Bled Dry (A)
-						["sourceQuest"] = 34420,	-- The Cost of War
-						["qg"] = 81762,	-- Taag
-						["coord"] = { 62.2, 52.9, 577 },
-						["races"] = ALLIANCE_ONLY,
+						sourceQuest = 34420,	-- The Cost of War
+						qg = 81762,	-- Taag
+						coord = { 62.2, 52.9, 577 },
+						races = ALLIANCE_ONLY,
 					}),
 					q(34421, {	-- Bled Dry (H)
-						["sourceQuest"] = 34420,	-- The Cost of War
-						["qg"] = 78573,	-- Korag
-						["coord"] = { 62.2, 52.9, 577 },
-						["races"] = HORDE_ONLY,
+						sourceQuest = 34420,	-- The Cost of War
+						qg = 78573,	-- Korag
+						coord = { 62.2, 52.9, 577 },
+						races = HORDE_ONLY,
 					}),
 					q(34442, {	-- Ga'nar of the Frostwolf
-						["sourceQuest"] = 34439,	-- The Battle of the Forge
-						["qg"] = 78996,	-- Farseer Drek'Thar
-						["coord"] = { 43.0, 26.4, 577 },
+						sourceQuest = 34439,	-- The Battle of the Forge
+						qg = 78996,	-- Farseer Drek'Thar
+						coord = { 43.0, 26.4, 577 },
 					}),
 					q(34436, {	-- Keli'dan the Breaker (A)
-						["sourceQuests"] = {
+						sourceQuests = {
 							34431,	-- Masters of Shadow
 							34432,	-- The Shadowmoon Clan
 							34740,	-- Yrel
 						},
-						["qg"] = 79537,	-- Exarch Maladaar
-						["coord"] = { 50.0, 48.1, 578 },
-						["races"] = ALLIANCE_ONLY,
+						qg = 79537,	-- Exarch Maladaar
+						coord = { 50.0, 48.1, 578 },
+						races = ALLIANCE_ONLY,
 					}),
 					q(34741, {	-- Keli'dan the Breaker (H)
-						["sourceQuests"] = {
+						sourceQuests = {
 							34737,	-- Masters of Shadow
 							34739,	-- The Shadowmoon Clan
 							34740,	-- Yrel
 						},
-						["qg"] = 79675,	-- Lady Liadrin
-						["coord"] = { 50.0, 48.1, 578 },
-						["races"] = HORDE_ONLY,
+						qg = 79675,	-- Lady Liadrin
+						coord = { 50.0, 48.1, 578 },
+						races = HORDE_ONLY,
 					}),
 					q(34429, {	-- Kill Your Hundred
-						["sourceQuest"] = 34427,	-- A Potential Ally
-						["qg"] = 78560,	-- Archmage Khadgar
-						["coord"] = { 73.0, 38.0, 577 },
+						sourceQuest = 34427,	-- A Potential Ally
+						qg = 78560,	-- Archmage Khadgar
+						coord = { 73.0, 38.0, 577 },
 					}),
 					q(34431, {	-- Masters of Shadow (A)
-						["sourceQuest"] = 34429,	-- Kill Your Hundred
-						["qg"] = 79661,	-- Luuka
-						["coord"] = { 82.8, 44.2, 578 },
-						["races"] = ALLIANCE_ONLY,
+						sourceQuest = 34429,	-- Kill Your Hundred
+						qg = 79661,	-- Luuka
+						coord = { 82.8, 44.2, 578 },
+						races = ALLIANCE_ONLY,
 					}),
 					q(34737, {	-- Masters of Shadow (H)
-						["sourceQuest"] = 34429,	-- Kill Your Hundred
-						["qg"] = 79661,	-- Luuka
-						["coord"] = { 82.8, 44.2, 578 },
-						["races"] = HORDE_ONLY,
+						sourceQuest = 34429,	-- Kill Your Hundred
+						qg = 79661,	-- Luuka
+						coord = { 82.8, 44.2, 578 },
+						races = HORDE_ONLY,
 					}),
 					q(34392, {	-- Onslaught's End
-						["sourceQuest"] = 35933,	-- Azeroth's Last Stand
-						["qg"] = 78558,	-- Archmage Khadgar
-						["coord"] = { 54.7, 48.2, 577 },
+						sourceQuest = 35933,	-- Azeroth's Last Stand
+						qg = 78558,	-- Archmage Khadgar
+						coord = { 54.7, 48.2, 577 },
 					}),
 					q(34925, {	-- Polishing the Iron Throne
-						["sourceQuest"] = 34442,	-- Ga'nar of the Frostwolf
-						["qg"] = 79917,	-- Ga'nar
-						["coord"] = { 41.8, 41.6, 577 },
+						sourceQuest = 34442,	-- Ga'nar of the Frostwolf
+						qg = 79917,	-- Ga'nar
+						coord = { 41.8, 41.6, 577 },
 					}),
 					q(35019, {	-- Prepare for Battle (A)
-						["sourceQuest"] = 34436,	-- Keli'dan the Breaker
-						["qg"] = 78554,	-- Vindicator Maraad
-						["coord"] = { 48.6, 14.2, 577 },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						sourceQuest = 34436,	-- Keli'dan the Breaker
+						qg = 78554,	-- Vindicator Maraad
+						coord = { 48.6, 14.2, 577 },
+						races = ALLIANCE_ONLY,
+						groups = {
 							o_repeated({	-- Iron Horde Weapon
-								["groups"] = {
+								groups = {
 									i(112337),	-- Blackrock Weapon (QI!)
 									o(231160),	-- Iron Horde Weapon Rack
 									o(231163),	-- Iron Horde Weapon Rack
@@ -198,13 +198,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35005, {	-- Prepare for Battle (H)
-						["sourceQuest"] = 34741,	-- Keli'dan the Breaker
-						["qg"] = 78553,	-- Thrall
-						["coord"] = { 50.0, 13.3, 577 },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						sourceQuest = 34741,	-- Keli'dan the Breaker
+						qg = 78553,	-- Thrall
+						coord = { 50.0, 13.3, 577 },
+						races = HORDE_ONLY,
+						groups = {
 							o_repeated({	-- Iron Horde Weapon
-								["groups"] = {
+								groups = {
 									i(112337),	-- Blackrock Weapon (QI!)
 									o(231160),	-- Iron Horde Weapon Rack
 									o(231163),	-- Iron Horde Weapon Rack
@@ -228,60 +228,60 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35747, {	-- Taking a Trip to the Top of the Tank
-						["sourceQuests"] = {
+						sourceQuests = {
 							34987,	-- The Gunpowder Plot (is this really needed?)
 							34437,	-- The Prodigal Frostwolf
 							34958,	-- The Shadow of the Worldbreaker
 						},
-						["qg"] = 78563,	-- Archmage Khadgar
-						["coord"] = { 43.1, 28.7, 577 },
+						qg = 78563,	-- Archmage Khadgar
+						coord = { 43.1, 28.7, 577 },
 					}),
 					q(34439, {	-- The Battle of the Forge
-						["sourceQuests"] = {
+						sourceQuests = {
 							35005,	-- Prepare for Battle
 							35019,	-- Prepare for Battle
 						},
-						["qg"] = 78430,	-- Cordana Felsong
-						["coord"] = { 49.5, 14.2, 577 },
+						qg = 78430,	-- Cordana Felsong
+						coord = { 49.5, 14.2, 577 },
 					}),
 					q(34420, {	-- The Cost of War
-						["sourceQuest"] = 34393,	-- The Portal's Power
-						["qg"] = 78558,	-- Archmage Khadgar
-						["coord"] = { 54.7, 48.2, 577 },
+						sourceQuest = 34393,	-- The Portal's Power
+						qg = 78558,	-- Archmage Khadgar
+						coord = { 54.7, 48.2, 577 },
 					}),
 					q(34987, {	-- The Gunpowder Plot
-						["sourceQuest"] = 34439,	-- The Battle of the Forge
-						["qg"] = 78569,	-- Hansel Heavyhands
-						["coord"] = { 44.0, 29.5, 577 },
-						["groups"] = {
+						sourceQuest = 34439,	-- The Battle of the Forge
+						qg = 78569,	-- Hansel Heavyhands
+						coord = { 44.0, 29.5, 577 },
+						groups = {
 							o(231119, {	-- Blackrock Powder Keg
-								["coord"] = { 46.9, 32.0, 577 },
-								["groups"] = { i(112323) },	-- Blackrock Powder Keg (QI!)
+								coord = { 46.9, 32.0, 577 },
+								groups = { i(112323) },	-- Blackrock Powder Keg (QI!)
 							}),
 						},
 					}),
 					q(35884, {	-- The Home Stretch (A)
-						["sourceQuest"] = 34445,	-- A Taste of Iron
-						["qg"] = 80521,	-- Thaelin Darkanvil
-						["coord"] = { 40.1, 48.4, 577 },
-						["races"] = ALLIANCE_ONLY,
+						sourceQuest = 34445,	-- A Taste of Iron
+						qg = 80521,	-- Thaelin Darkanvil
+						coord = { 40.1, 48.4, 577 },
+						races = ALLIANCE_ONLY,
 					}),
 					q(34446, {	-- The Home Stretch (H)
-						["sourceQuest"] = 34445,	-- A Taste of Iron
-						["qg"] = 80521,	-- Thaelin Darkanvil
-						["coord"] = { 40.1, 48.4, 577 },
-						["races"] = HORDE_ONLY,
+						sourceQuest = 34445,	-- A Taste of Iron
+						qg = 80521,	-- Thaelin Darkanvil
+						coord = { 40.1, 48.4, 577 },
+						races = HORDE_ONLY,
 					}),
 					q(34425, {	-- The Kargathar Proving Grounds
-						["sourceQuest"] = 34423,	-- Altar Altercation
-						["qg"] = 78560,	-- Archmage Khadgar
-						["coord"] = { 71.9, 40.4, 577 },
+						sourceQuest = 34423,	-- Altar Altercation
+						qg = 78560,	-- Archmage Khadgar
+						coord = { 71.9, 40.4, 577 },
 					}),
 					q(34393, {	-- The Portal's Power
-						["sourceQuest"] = 34392,	-- Onslaught's End
-						["qg"] = 78558,	-- Archmage Khadgar
-						["coord"] = { 54.6, 48.2, 577 },
-						["groups"] = {
+						sourceQuest = 34392,	-- Onslaught's End
+						qg = 78558,	-- Archmage Khadgar
+						coord = { 54.6, 48.2, 577 },
+						groups = {
 							i(112387),	-- Iron Horde Bolt-Thrower
 							i(112395),	-- Iron Horde Bramblestaff
 							i(120304),	-- Iron Horde Carving Knife
@@ -293,21 +293,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34437, {	-- The Prodigal Frostwolf
-						["sourceQuest"] = 34925,	-- Polishing the Iron Throne
-						["qg"] = 79917,	-- Ga'nar
-						["coord"] = { 41.8, 42.0, 577 },
+						sourceQuest = 34925,	-- Polishing the Iron Throne
+						qg = 79917,	-- Ga'nar
+						coord = { 41.8, 42.0, 577 },
 					}),
 					q(34958, {	-- The Shadow of the Worldbreaker
-						["sourceQuest"] = 34439,	-- The Battle of the Forge
-						["qg"] = 78568,	-- Thaelin Darkanvil
-						["coord"] = { 44.0, 29.6, 577 },
+						sourceQuest = 34439,	-- The Battle of the Forge
+						qg = 78568,	-- Thaelin Darkanvil
+						coord = { 44.0, 29.6, 577 },
 					}),
 					q(34432, {	-- The Shadowmoon Clan (A)
-						["sourceQuest"] = 34429,	-- Kill Your Hundred
-						["qg"] = 78554,	-- Vindicator Maraad
-						["coord"] = { 80.7, 45.3, 578 },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						sourceQuest = 34429,	-- Kill Your Hundred
+						qg = 78554,	-- Vindicator Maraad
+						coord = { 80.7, 45.3, 578 },
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(112664),	-- Voidgazer Cap
 							i(112665),	-- Voidgazer Chain Hood
 							i(112666),	-- Voidgazer Headcover
@@ -315,11 +315,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34739, {	-- The Shadowmoon Clan (H)
-						["sourceQuest"] = 34429,	-- Kill Your Hundred
-						["qg"] = 78553,	-- Thrall
-						["coord"] = { 81.5, 44.7, 578 },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						sourceQuest = 34429,	-- Kill Your Hundred
+						qg = 78553,	-- Thrall
+						coord = { 81.5, 44.7, 578 },
+						races = HORDE_ONLY,
+						groups = {
 							i(112664),	-- Voidgazer Cap
 							i(112665),	-- Voidgazer Chain Hood
 							i(112666),	-- Voidgazer Headcover
@@ -327,81 +327,81 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35242, {	-- Vengeance for the Fallen (A)
-						["sourceQuest"] = 34420,	-- The Cost of War
-						["qg"] = 81763,	-- Rephuura
-						["coord"] = { 62.2, 52.9, 577 },
-						["races"] = ALLIANCE_ONLY,
+						sourceQuest = 34420,	-- The Cost of War
+						qg = 81763,	-- Rephuura
+						coord = { 62.2, 52.9, 577 },
+						races = ALLIANCE_ONLY,
 					}),
 					q(35241, {	-- Vengeance for the Fallen (H)
-						["sourceQuest"] = 34420,	-- The Cost of War
-						["qg"] = 81761,	-- Ashka
-						["coord"] = { 62.2, 52.9, 577 },
-						["races"] = HORDE_ONLY,
+						sourceQuest = 34420,	-- The Cost of War
+						qg = 81761,	-- Ashka
+						coord = { 62.2, 52.9, 577 },
+						races = HORDE_ONLY,
 					}),
 					q(34434, {	-- Yrel (A)
-						["sourceQuest"] = 34429,	-- Kill Your Hundred
-						["qg"] = 78994,	-- Yrel
-						["coord"] = { 45.1, 15.9, 578 },
-						["races"] = ALLIANCE_ONLY,
+						sourceQuest = 34429,	-- Kill Your Hundred
+						qg = 78994,	-- Yrel
+						coord = { 45.1, 15.9, 578 },
+						races = ALLIANCE_ONLY,
 					}),
 					q(34740, {	-- Yrel (H)
-						["sourceQuest"] = 34429,	-- Kill Your Hundred
-						["qg"] = 78994,	-- Yrel
-						["coord"] = { 45.1, 15.9, 578 },
-						["races"] = HORDE_ONLY,
+						sourceQuest = 34429,	-- Kill Your Hundred
+						qg = 78994,	-- Yrel
+						coord = { 45.1, 15.9, 578 },
+						races = HORDE_ONLY,
 					}),
 				}),
-				n(ZONE_DROPS, sharedData({["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 } },{
+				n(ZONE_DROPS, sharedData({timeline = { ADDED_6_0_2, REMOVED_7_0_3 } },{
 					i(112436, {	-- Mismatched Cloth Gloves
-						["cr"] = 78651,	-- Shattered Hand Bonechopper
+						cr = 78651,	-- Shattered Hand Bonechopper
 					}),
 					i(112438, {	-- Mismatched Leather Gloves
-						["cr"] = 78651,	-- Shattered Hand Bonechopper
+						cr = 78651,	-- Shattered Hand Bonechopper
 					}),
 					i(112435, {	-- Mismatched Mail Gloves
-						["cr"] = 78651,	-- Shattered Hand Bonechopper
+						cr = 78651,	-- Shattered Hand Bonechopper
 					}),
 					i(112437, {	-- Mismatched Plate Gauntlets
-						["crs"] = {
+						crs = {
 							78651,	-- Shattered Hand Bonechopper
 							78650,	-- Shattered Hand Torturer
 						},
 					}),
 					i(112471, {	-- Jungle-Chopper Bracers
-						["crs"] = {
+						crs = {
 							78507,	-- Bleeding Hollow Savage
 							78510,	-- Bleeding Hollow Hatchet
 						},
 					}),
 					i(112468, {	-- Jungle-Chopper Manacles
-						["crs"] = {
+						crs = {
 							78507,	-- Bleeding Hollow Savage
 							78510,	-- Bleeding Hollow Hatchet
 						},
 					}),
 					i(112470, {	-- Jungle-Chopper Wristcovers
-						["crs"] = {
+						crs = {
 							78507,	-- Bleeding Hollow Savage
 							78509,	-- Bleeding Hollow Berserker
 						},
 					}),
 					i(112469, {	-- Jungle-Chopper Wristplates
-						["crs"] = {
+						crs = {
 							78507,	-- Bleeding Hollow Savage
 							78510,	-- Bleeding Hollow Hatchet
 						},
 					}),
 					i(112660, {	-- Blackrock Slippers
-						["cr"] = 81357,	-- Blackrock Slaghauler
+						cr = 81357,	-- Blackrock Slaghauler
 					}),
 					i(112662, {	-- Blackrock Moccasins
-						["cr"] = 81357,	-- Blackrock Slaghauler
+						cr = 81357,	-- Blackrock Slaghauler
 					}),
 					i(112661, {	-- Blackrock Chain Boots
-						["cr"] = 81357,	-- Blackrock Slaghauler
+						cr = 81357,	-- Blackrock Slaghauler
 					}),
 					i(112659, {	-- Blackrock Infantry Warboots
-						["crs"] = {
+						crs = {
 							81357,	-- Blackrock Slaghauler
 							81367,	-- Blackrock Forgeworker
 						},
@@ -416,31 +416,31 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	m(DRAENOR, {
 		n(ASSAULT_ON_THE_DARK_PORTAL, {
-			["timeline"] = { ADDED_6_0_2 },
-			["groups"] = {
+			timeline = { ADDED_6_0_2 },
+			groups = {
 				n(QUESTS, {
 					q(35297),	-- FLAG: Army Pushed - triggers during "Blaze of Glory" when you approach Khadgar around 67.6,60.5
 					q(35983),	-- FLAG: Hansel Event Complete - triggers during "Onslaught's End" when door to Cho'gal is opened
 					q(34440),	-- FLAG: Khadgar out of Portal - triggers just before turning in "Ga'nar of the Frostwolf" (questID 34442) or "Polishing the Iron Throne" (questID 34925)
 					q(35253),	-- FLAG: Thaelin Event Complete - triggers during "Onslaught's End" when door to Teron'gor is opened
 					q(36211, {	-- 6.0 Tanaan - Boots Bootstrap
-						["name"] = "6.0 Tanaan - Boots Bootstrap",
-						["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+						name = "6.0 Tanaan - Boots Bootstrap",
+						timeline = { ADDED_6_0_2, REMOVED_7_0_3 },
 					}),
 					q(36214, {	-- 6.0 Tanaan - Hands Bootstrap
-						["name"] = "6.0 Tanaan - Hands Bootstrap",
-						["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+						name = "6.0 Tanaan - Hands Bootstrap",
+						timeline = { ADDED_6_0_2, REMOVED_7_0_3 },
 					}),
 					q(36212, {	-- 6.0 Tanaan - Wrist Bootstrap
-						["name"] = "6.0 Tanaan - Wrist Bootstrap",
-						["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+						name = "6.0 Tanaan - Wrist Bootstrap",
+						timeline = { ADDED_6_0_2, REMOVED_7_0_3 },
 					}),
 					q(36213, {	-- 6.0 Tanaan - Ring Bootstrap
-						["name"] = "6.0 Tanaan - Ring Bootstrap",
-						["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+						name = "6.0 Tanaan - Ring Bootstrap",
+						timeline = { ADDED_6_0_2, REMOVED_7_0_3 },
 					}),
 				}),
 			},

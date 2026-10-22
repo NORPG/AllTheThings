@@ -2,35 +2,35 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_2_0 } }, {
 	inst(900, {	-- Cathedral of Eternal Night
-		["coord"] = { 64.7, 16.6, BROKEN_SHORE },
-		["maps"] = { 845, 846, 847, 848, 849 },
-		["groups"] = {
+		coord = { 64.7, 16.6, BROKEN_SHORE },
+		maps = { 845, 846, 847, 848, 849 },
+		groups = {
 			n(WORLD_QUESTS, {
 				q(46867, {	-- Cathedral of Eternal Night: Fel Beast
-					["sourceQuests"] = { 46773 },	-- The Command Center
-					["isWorldQuest"] = true,
+					sourceQuests = { 46773 },	-- The Command Center
+					isWorldQuest = true,
 				}),
 				q(46868, {	-- Cathedral of Eternal Night: Infernal Dead
-					["sourceQuests"] = { 46773 },	-- The Command Center
-					["isWorldQuest"] = true,
+					sourceQuests = { 46773 },	-- The Command Center
+					isWorldQuest = true,
 				}),
 				q(46844, {	-- Cathedral of Eternal Night: Mistress of Blades
-					["sourceQuests"] = { 46773 },	-- The Command Center
-					["isWorldQuest"] = true,
+					sourceQuests = { 46773 },	-- The Command Center
+					isWorldQuest = true,
 				}),
 				q(46865, {	-- Cathedral of Eternal Night: Mother of Flame
-					["sourceQuests"] = { 46773 },	-- The Command Center
-					["isWorldQuest"] = true,
+					sourceQuests = { 46773 },	-- The Command Center
+					isWorldQuest = true,
 				}),
 				q(46869, {	-- Cathedral of Eternal Night: Temptress of Pain
-					["sourceQuests"] = { 46773 },	-- The Command Center
-					["isWorldQuest"] = true,
+					sourceQuests = { 46773 },	-- The Command Center
+					isWorldQuest = true,
 				}),
 			}),
 			n(ZONE_DROPS, {
-				["crs"] = {
+				crs = {
 					118704,	-- Dul'zak
 					118723,	-- Gazerax
 					118705,	-- Nal'asha
@@ -39,20 +39,20 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					120715,	-- Raga'yut
 					120717,	-- Mistress Dominix
 				},
-				["groups"] = sharedData({
-					["bonusID"] = 1812,
+				groups = sharedData({
+					bonusID = 1812,
 				},{
 					i(147514),	-- Felguard Destroyer's Legplates
 					i(147515),	-- Hellblaze Invader's Greaves
 					i(147517),	-- Inquisitor's Battle Cowl
 					i(147516),	-- Legion Stalker's Hood
 					i(147117, {	-- Orb of the Fel Temptress (CI!)
-						["description"] = "This is a rare drop from the Hellblaze Temptress mobs in the Cathedral of Eternal Night, on Heroic or Mythic difficulty.\n\nThere are 7 Temptress' available before the first boss. Kill all 7 and then reset the dungeon.",
-						["crs"] = {
+						description = "This is a rare drop from the Hellblaze Temptress mobs in the Cathedral of Eternal Night, on Heroic or Mythic difficulty.\n\nThere are 7 Temptress' available before the first boss. Kill all 7 and then reset the dungeon.",
+						crs = {
 							120366,	-- Hellblaze Temptress
 							118714,	-- Hellblaze Temptress
 						},
-						["ignoreBonus"] = true,
+						ignoreBonus = true,
 					}),
 				}),
 			}),
@@ -115,11 +115,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				})),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				["ItemAppearanceModifierID"] = 0,
-				["groups"] = {
+				ItemAppearanceModifierID = 0,
+				groups = {
 					cr(117193, e(1905, {	-- Agronox
 						ach(11768, {	-- Boom Bloom
-							["crs"] = { 121695 },	-- Budding Flower
+							crs = { 121695 },	-- Budding Flower
 						}),
 						i(144469),	-- Caretaker's Budding Mantle
 						i(144491),	-- Choking Vine Bindings
@@ -135,7 +135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					})),
 					cr(117194, e(1906, {	-- Thrashbite the Scornful
 						ach(11769, {	-- A Steamy Romance Saga
-							["description"] = "Need to be in a full 5 man party for this achievement.",
+							description = "Need to be in a full 5 man party for this achievement.",
 						}),
 						i(144492),	-- Chain-Draped Gauntlets
 						i(144482),	-- Fel-Oiled Infernal Machine

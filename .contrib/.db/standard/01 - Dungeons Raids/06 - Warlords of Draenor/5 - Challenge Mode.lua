@@ -2,11 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3 } }, {
 	n(CHALLENGE_MODE, {
 		ach(8895, {	-- Challenge Warlord
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				8879,	-- Auchindoun Challenger
 				8875,	-- Bloodmaul Slag Mines Challenger
 				8887,	-- Grimrail Depot Challenger
@@ -19,7 +19,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		}),
 		ach(8897, {	-- Challenge Warlord: Bronze
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				8880,	-- Auchindoun: Bronze
 				8876,	-- Bloodmaul Slag Mines: Bronze
 				8888,	-- Grimrail Depot: Bronze
@@ -29,13 +29,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				9002,	-- The Everbloom: Bronze
 				8892,	-- Upper Blackrock Spire: Bronze
 			}},
-			["groups"] = {
+			groups = {
 				title(290),	-- <Name> the Indomitable
 			},
 		}),
 		ach(8898, {	-- Challenge Warlord: Silver
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				8881,	-- Auchindoun: Silver
 				8877,	-- Bloodmaul Slag Mines: Silver
 				8889,	-- Grimrail Depot: Silver
@@ -45,13 +45,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				9003,	-- The Everbloom: Silver
 				8893,	-- Upper Blackrock Spire: Silver
 			}},
-			["groups"] = {
+			groups = {
 				i(116791),	-- Challenger's War Yeti (MOUNT!)
 			},
 		}),
 		ach(8899, {	-- Challenge Warlord: Gold
 			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				8882,	-- Auchindoun: Gold
 				8878,	-- Bloodmaul Slag Mines: Gold
 				8890,	-- Grimrail Depot: Gold
@@ -61,7 +61,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				9004,	-- The Everbloom: Gold
 				8894,	-- Upper Blackrock Spire: Gold
 			}},
-			["groups"] = {
+			groups = {
 				i(118401),	-- Arcana Shard Spire
 				i(118396),	-- Bloodmaw Gargoyle
 				i(118395),	-- Claws of Creation

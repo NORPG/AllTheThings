@@ -106,41 +106,41 @@ InstanceHelper.Boss, InstanceHelper.BossWorldQuest
 
 InstanceHelper.Coords = EncounterCoords
 
-root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	n(WORLD_BOSSES, {
-		["isRaid"] = true,
-		["groups"] = bubbleDownFiltered({
-			["isRaid"] = true,
-			["isWeekly"] = true,
+		isRaid = true,
+		groups = bubbleDownFiltered({
+			isRaid = true,
+			isWeekly = true,
 		},FILTERFUNC_questIDORencounterID,{
 			Boss(STRUNRAAN, {	-- Strunraan, The Sky's Misery
-				["questID"] = 72055,
+				questID = 72055,
 			}),
 			BossWorldQuest(STRUNRAAN, 69929),	-- Strunraan (WQ)
 			Boss(BASRIKRON, {	-- Basrikron, The Shale Wing
-				["questID"] = 72056,
+				questID = 72056,
 			}),
 			BossWorldQuest(BASRIKRON, 69930),	-- Basrikron (WQ)
 			Boss(BAZUAL, {	-- Bazual, The Dreaded Flame
-				["questID"] = 72054,
+				questID = 72054,
 			}),
 			BossWorldQuest(BAZUAL, 69927),	-- Bazual (WQ)
 			Boss(LISKANOTH, {	-- Liskanoth, The Futurebane
-				["questID"] = 72057,
+				questID = 72057,
 			}),
 			BossWorldQuest(LISKANOTH, 69928),	-- Liskanoth (WQ)
 			Boss(ELDERS, {	-- The Zaqali Elders
-				["timeline"] = { ADDED_10_1_0 },
+				timeline = { ADDED_10_1_0 },
 			}),
 			BossWorldQuest(ELDERS, 74892, {	-- Zaqali Elders (WQ)
-				["timeline"] = { ADDED_10_1_0 },
+				timeline = { ADDED_10_1_0 },
 			}),
 			Boss(AUROSTAR, {	-- Aurostor, The Hibernator
-				["questID"] = 77758,
-				["timeline"] = { ADDED_10_2_0 },
+				questID = 77758,
+				timeline = { ADDED_10_2_0 },
 			}),
 			BossWorldQuest(AUROSTAR, 76367, {	-- Hibernation Heroes
-				["timeline"] = { ADDED_10_2_0 },
+				timeline = { ADDED_10_2_0 },
 			}),
 		}),
 	}),

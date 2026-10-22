@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 } }, {
+root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ timeline = { ADDED_4_0_3 } }, {
 	filter(CLOAKS, {
 		i(55308),	-- Moonbrook Cloak
 		i(55309),	-- Swamplight Cloak
@@ -629,31 +629,31 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 		filter(THROWN, {
 			-- TODO: https://www.wowhead.com/cata/items/weapons/thrown?filter=166;4;0#items;0+1+20
 			i(55472, {	-- Angerfang Knives
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			i(55476, {	-- Bladefist Knives
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			i(55477, {	-- Irontree Knives
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			i(55475, {	-- Mardenholde Knives
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			i(55473, {	-- Nethergarde Knives
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			i(55470, {	-- Razorwind Knives
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			i(55478, {	-- Rustmaul Knives
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			i(55474, {	-- Splinterspear Knives
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 			i(55471, {	-- Steelspark Knives
-				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
 		}),
 		-- #endif
@@ -732,26 +732,26 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 		i(68729),	-- Elementium Lockbox
 		-- #if BEFORE MOP
 		i(66988, {	-- Ashes of Youth
-			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 		}),
 		i(66912, {	-- Fetish of the Fiery Sands
-			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 		}),
 		i(67110, {	-- Goblin Surgeon's Kit
-			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 		}),
 		i(67059, {	-- Halted Clock
-			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 		}),
 		i(66961, {	-- Mindbender Bloom
-			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 		}),
 		-- These get moved to MOP World Drops with MOP
 		currency(395, {	-- Justice Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+			timeline = { ADDED_4_0_3, REMOVED_6_0_2 },
 		}),
 		currency(396, {	-- Valor Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+			timeline = { ADDED_4_0_3, REMOVED_6_0_2 },
 		}),
 		-- #endif
 	}),
@@ -762,8 +762,8 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			i(68789),	-- Formula: Enchant Bracer - Mighty Intellect (RECIPE!)
 		}),
 		prof(JEWELCRAFTING, {
-			i(68781, {["timeline"] = {ADDED_4_0_6}}),	-- Design: Agile Shadowspirit Diamond (RECIPE!)
-			i(68783, {["timeline"] = {ADDED_4_0_6}}),	-- Design: Burning Shadowspirit Diamond (RECIPE!)
+			i(68781, {timeline = {ADDED_4_0_6}}),	-- Design: Agile Shadowspirit Diamond (RECIPE!)
+			i(68783, {timeline = {ADDED_4_0_6}}),	-- Design: Burning Shadowspirit Diamond (RECIPE!)
 			i(52372),	-- Design: Deadly Hessonite (RECIPE!)
 			i(52366),	-- Design: Defender's Nightstone (RECIPE!)
 			i(52375),	-- Design: Deft Hessonite (RECIPE!)
@@ -783,11 +783,11 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			i(52370),	-- Design: Polished Hessonite (RECIPE!)
 			i(52373),	-- Design: Potent Hessonite (RECIPE!)
 			i(52368),	-- Design: Purified Nightstone (RECIPE!)
-			i(69820, {["timeline"] = {ADDED_4_1_0}}),	-- Design: Reckless Hessonite (RECIPE!)
+			i(69820, {timeline = {ADDED_4_1_0}}),	-- Design: Reckless Hessonite (RECIPE!)
 			i(52378),	-- Design: Regal Jasper (RECIPE!)
 			i(52369),	-- Design: Retaliating Nightstone (RECIPE!)
-			i(68782, {["timeline"] = {ADDED_4_0_6}}),	-- Design: Reverberating Shadowspirit Diamond (RECIPE!)
-			i(71965, {["timeline"] = {ADDED_4_3_0}}),	-- Design: Rhinestone Sunglasses
+			i(68782, {timeline = {ADDED_4_0_6}}),	-- Design: Reverberating Shadowspirit Diamond (RECIPE!)
+			i(71965, {timeline = {ADDED_4_3_0}}),	-- Design: Rhinestone Sunglasses
 			i(52383),	-- Design: Steady Jasper (RECIPE!)
 			i(52364),	-- Design: Stormy Zephyrite (RECIPE!)
 			i(52365),	-- Design: Subtle Alicite (RECIPE!)
@@ -811,13 +811,13 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 		--
 		-- 	Elemental reagents:
 		i(52328, {	-- Volatile Air
-			["coords"] = {
+			coords = {
 				{ 27.9, 39.9, MOUNT_HYJAL },	-- Lightning Ledge
 				{ 38.6, 82.7, TWILIGHT_HIGHLANDS },	-- Alter of Ascension
 				{ 40.2, 47.6, TWILIGHT_HIGHLANDS },	-- The Twilight Breach
 				{ 39.4, 42.5, ULDUM },	-- Orsis
 			},
-			["crs"] = {
+			crs = {
 				46328,	-- Enslaved Tempest
 				39844,	-- Howling Riftdweller
 				45755,	-- Scion of Al'Akir
@@ -825,10 +825,10 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				51672,	-- Sweeping Winds
 			},
 			-- #if AFTER 6.0.3
-			["description"] = "The Vortex Pinnacle is the place to farm these on higher levels.\nProtip: Do not forget Potion of Treasure Finding.",
+			description = "The Vortex Pinnacle is the place to farm these on higher levels.\nProtip: Do not forget Potion of Treasure Finding.",
 			-- #endif
-			["maps"] = { 325 },	-- The Vortex Pinnacle
-			["providers"] = {
+			maps = { 325 },	-- The Vortex Pinnacle
+			providers = {
 				{ "i", 67494 },	-- Electrostatic Condenser
 				{ "i", 67495 },	-- Strange Bloated Stomach
 				{ "i", 67539 },	-- Tiny Treasure Chest
@@ -838,7 +838,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			},
 		}),
 		i(52327, {	-- Volatile Earth
-			["coords"] = {
+			coords = {
 				{ 27.0, 40.0, THE_MOLTEN_FRONT },	-- Fireplume Peak
 				{ 65.8, 22.7, MOUNT_HYJAL },	-- Nordrassil
 				{ 64.9, 54.1, MOUNT_HYJAL },	-- The Crucible of Flame
@@ -847,7 +847,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				{ 35.5, 55.4, MOUNT_HYJAL },	-- The Lower Regrowth
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				41565,	-- Molten Tormentor
 				47226,	-- Obsidian Stoneslave
 				52107,	-- Obsidium Punisher
@@ -859,14 +859,14 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				46911,	-- Lava Surger
 				-- #endif
 			},
-			["description"] = "Access to some of the listed mobs and locations in Mount Hyjal requires quest progression through the zone.",
-			["providers"] = {
+			description = "Access to some of the listed mobs and locations in Mount Hyjal requires quest progression through the zone.",
+			providers = {
 				{ "i", 67495 },	-- Strange Bloated Stomach
 				{ "i", 67539 },	-- Tiny Treasure Chest
 			},
 		}),
 		i(52325, {	-- Volatile Fire
-			["coords"] = {
+			coords = {
 				{ 46.6, 28.2, MOUNT_HYJAL },	-- The Verdant Thicket
 				{ 26.0, 41.1, MOUNT_HYJAL },	-- Firelands Forgeworks
 				{ 11.6, 39.5, MOUNT_HYJAL },	-- The Upper Regrowth (By Grove of Aessina)
@@ -882,7 +882,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				{ 42.4, 23.5, TWILIGHT_HIGHLANDS },	-- Humboldt Conflagration
 				{ 40.5, 17.1, TWILIGHT_HIGHLANDS },	-- Ruins of Drakgor
 			},
-			["crs"] = {
+			crs = {
 				38876,	-- Blazebound Elemental
 				45258,	-- Bound Fleshburner
 				46327,	-- Enslaved Inferno
@@ -901,15 +901,15 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				52300,	-- Seething Pyrelord
 				-- #endif
 			},
-			["description"] = "Fishing is the most efficient way to get these. Access to some of the listed mobs and locations in Mount Hyjal requires quest progression through the zone.",
-			["providers"] = {
+			description = "Fishing is the most efficient way to get these. Access to some of the listed mobs and locations in Mount Hyjal requires quest progression through the zone.",
+			providers = {
 				{ "o", 207734 },	-- Pool of Fire (Fishing school)
 				{ "i", 67495 },	-- Strange Bloated Stomach
 				{ "i", 67539 },	-- Tiny Treasure Chest
 			},
 		}),
 		i(52329, {	-- Volatile Life
-			["providers"] = {
+			providers = {
 				{ "o", 202749 },	-- Azshara's Veil
 				{ "o", 202747 },	-- Cinderbloom
 				{ "o", 202750 },	-- Heartblossom
@@ -924,16 +924,16 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			},
 		}),
 		i(52326, {	-- Volatile Water
-			["coords"] = {
+			coords = {
 				{ 68.1, 48.8, TWILIGHT_HIGHLANDS },	-- Verrall Delta
 				{ 33.0, 63.8, TWILIGHT_HIGHLANDS },	-- Loch Verrall
 			},
-			["crs"] = {
+			crs = {
 				46329,	-- Enslaved Waterspout
 				44011,	-- Muddied Water Elemental
 			},
-			["description"] = "Protip: Do not forget Potion of Treasure Finding when farming the mobs.",
-			["providers"] = {
+			description = "Protip: Do not forget Potion of Treasure Finding when farming the mobs.",
+			providers = {
 				{ "o", 207724 },	-- Shipwreck Debris (Fishing school)
 				{ "i", 67495 },	-- Strange Bloated Stomach
 				{ "i", 67539 },	-- Tiny Treasure Chest
@@ -943,16 +943,16 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 		--
 		-- 	Clams:
 		i(52340, {	-- Abyssal Clam
-			["description"] = "Is a rare drop from humanoid water creatures like gilblins, murlocs and naga.",
-			["maps"] = {
+			description = "Is a rare drop from humanoid water creatures like gilblins, murlocs and naga.",
+			maps = {
 				-- THRONE_OF_THE_TIDES,
 				VASHJIR_ABYSSAL_DEPTHS,
 				VASHJIR_KELPTHAR_FOREST,
 				VASHJIR_SHIMMERING_EXPANSE,
 			},
-			["groups"] = {
+			groups = {
 				i(62791, {	-- Blood Shrimp
-					["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+					provider = { "i", 65513 },	-- Crate of tasty Meat
 				}),
 				i(52338),	-- Darkfathom Pearl
 				i(52339),	-- Flawless Pearl
@@ -962,41 +962,41 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 		--
 		-- 	Cooking reagents:
 		i(62783, {	-- Basilisk "Liver"
-			["coords"] = {
+			coords = {
 				{ 41.8,	20.8, DEEPHOLM },	-- The Pale Roost
 				{ 56.0,	86.1, DEEPHOLM },	-- Alabaster Shelf
 			},
-			["crs"] = {
+			crs = {
 				43981,	-- Jadecrest Basilisk
 				43181,	-- Shalehide Basilisk
 			},
-			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+			provider = { "i", 65513 },	-- Crate of tasty Meat
 		}),
 		-- i(62791),	-- Blood Shrimp > Properly sourced under Clams listed above.
 		i(62784, {	-- Crocolisk Tail
-			["coords"] = {
+			coords = {
 				{ 41.3,	47.0, TOL_BARAD },	-- Baradin Hold, west of.
 				{ 64.0,	78.9, ULDUM },	-- Vir'naal River Delta
 				{ 57.0,	49.2, ULDUM },	-- Vir'naal River
 				{ 47.7,	29.4, ULDUM },	-- Vir'naal Oasis west
 				{ 56.6,	22.0, ULDUM },	-- Vir'naal Oasis east
 			},
-			["crs"] = {
+			crs = {
 				46317,	-- Neferset Crocolisk
 				51675,	-- Oasis Crocolisk
 				45321,	-- Riverbed Crocolisk
 			},
-			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+			provider = { "i", 65513 },	-- Crate of tasty Meat
 		}),
 		i(62785, {	-- Delicate Wing
-			["coords"] = {
+			coords = {
 				{ 43.0,	43.4, MOUNT_HYJAL },	-- Shrine of Aviana
 				{ 65.5,	29.5, TWILIGHT_HIGHLANDS },	-- Kirthaven mountain, east of.
 				{ 54.0,	50.1, TWILIGHT_HIGHLANDS },	-- Bloodgulch, south of.
 				{ 44.1,	70.2, ULDUM },	-- Cradle of the Ancients
 				{ 68.0,	62.8, ULDUM },	-- Sunstone Terrace, southwest of.
 			},
-			["crs"] = {
+			crs = {
 				47202,	-- Diseased Vulture
 				42660,	-- Hyjal Darkhawk
 				42657,	-- Hyjal Eagle
@@ -1005,16 +1005,16 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				46162,	-- Tawny Owl
 				46158,	-- Untamed Gryphon
 			},
-			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+			provider = { "i", 65513 },	-- Crate of tasty Meat
 		}),
 		i(62782, {	-- Dragon Flank
-			["coords"] = {
+			coords = {
 				{ 40.9,	12.6, DEEPHOLM },	-- The Pale Roost
 				{ 56.0,	86.1, DEEPHOLM },	-- Alabaster Shelf
 				{ 29.1,	32.0, TWILIGHT_HIGHLANDS },	-- Vermillion Redoubt
 				{ 63.2,	77.5, TWILIGHT_HIGHLANDS },	-- Obsidian Forest
 			},
-			["crs"] = {
+			crs = {
 				47797,	-- Obsidian Charscale
 				46141,	-- Obsidian Pyrewing
 				47796,	-- Obsidian Viletongue
@@ -1022,26 +1022,26 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				43971,	-- Stonescale Drake
 				45748,	-- Twilight Wyrmkiller
 			},
-			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+			provider = { "i", 65513 },	-- Crate of tasty Meat
 		}),
 		i(62781, {	-- Giant Turtle Tongue
-			["coords"] = {
+			coords = {
 				{ 54.7,	47.3, VASHJIR_ABYSSAL_DEPTHS },	-- Seabrush
 				{ 54.2,	62.3, VASHJIR_ABYSSAL_DEPTHS },	-- Korthun's End, higher
 				{ 51.6,	72.1, VASHJIR_ABYSSAL_DEPTHS },	-- Korthun's End, lower
 				{ 54.8,	49.9, VASHJIR_KELPTHAR_FOREST },	-- Middle Kelp'thar Forest
 				{ 55.5,	83.7, VASHJIR_SHIMMERING_EXPANSE },	-- Biel'aran Ridge
 			},
-			["crs"] = {
+			crs = {
 				42108,	-- Seabrush Terrapin
 				40802,	-- Softshell Sea Turtle
 				40223,	-- Speckled Sea Turtle
 			},
-			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+			provider = { "i", 65513 },	-- Crate of tasty Meat
 		}),
 		i(62779, {	-- Monstrous Claw
-			["coord"] = { 44.5,	57.0, VASHJIR_ABYSSAL_DEPTHS },	-- Underlight Canyon
-			["crs"] = {
+			coord = { 44.5,	57.0, VASHJIR_ABYSSAL_DEPTHS },	-- Underlight Canyon
+			crs = {
 				39918,	-- Clacksnap Pincer
 				39418,	-- Green Sand Crab
 				41922,	-- Pyreshell Scuttler
@@ -1051,35 +1051,35 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				40798,	-- Spineshell Pincer
 				40685,	-- Splitclaw Skitterer
 			},
-			["maps"] = {
+			maps = {
 				VASHJIR_KELPTHAR_FOREST,
 				VASHJIR_SHIMMERING_EXPANSE,
 			},
-			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+			provider = { "i", 65513 },	-- Crate of tasty Meat
 		}),
 		i(62780, {	-- Snake Eye
-			["coord"] = { 57.2,	37.6, VASHJIR_KELPTHAR_FOREST },	-- Gorrok's Lament
-			["cr"] = 39948,	-- Brinescale Serpent
-			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+			coord = { 57.2,	37.6, VASHJIR_KELPTHAR_FOREST },	-- Gorrok's Lament
+			cr = 39948,	-- Brinescale Serpent
+			provider = { "i", 65513 },	-- Crate of tasty Meat
 		}),
 		i(62778, {	-- Toughened Flesh
-			["coords"] = {
+			coords = {
 				{ 55.1,	70.9, TWILIGHT_HIGHLANDS },	-- Highland Forest
 				{ 53.5,	31.5, TWILIGHT_HIGHLANDS },	-- Thundermar Ruins
 				{ 65.5,	29.5, TWILIGHT_HIGHLANDS },	-- Kirthaven mountain, east of.
 			},
-			["crs"] = {
+			crs = {
 				46970,	-- Highland Elk
 				46153,	-- Highland Worg
 			},
-			["description"] = "Can drop from all Cataclysm red meat animals.",
-			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+			description = "Can drop from all Cataclysm red meat animals.",
+			provider = { "i", 65513 },	-- Crate of tasty Meat
 		}),
 		-- __________________________________
 		--
 		-- Other reagents:
 		i(52078, {	-- Chaos Orb
-			["description"] = "Guaranteed drop from the last boss in any Heroic Cataclysm dungeon.",
+			description = "Guaranteed drop from the last boss in any Heroic Cataclysm dungeon.",
 		}),
 	}),
 }))));

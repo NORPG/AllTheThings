@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(ACHIEVEMENTS, {
 		ach(19871),	-- Infinite Power
 		ach(20527),	-- Infinite Power I
@@ -31,13 +31,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		}),
 	}),
 	n(64227, {	-- Frozen Trail Packer
-		["coords"] = {
+		coords = {
 			{ 37.4, 77.9, KUN_LAI_SUMMIT },	-- Cave entrance
 			{ 35.2, 76.4, KUN_LAI_SUMMIT },
 		},
-		["groups"] = {
+		groups = {
 			i(224003, {	-- Cup of Nearly Infinite Kafa
-				-- ["questID"] = 31304,
+				-- questID = 31304,
 			}),
 		},
 	}),

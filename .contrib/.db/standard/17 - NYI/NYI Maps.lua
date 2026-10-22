@@ -27,7 +27,7 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
 			-- 0 (World)
 			m(1180),	-- Abyssal Melody
 			m(1158),	-- Arathi Highlands
@@ -69,7 +69,7 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		})),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = { CREATED_8_1_0 } }, {
 			-- 0 (World)
 			m(1343),	-- 8.1 Darkshore Outdoor Final Phase
 			m(1362),	-- Shrine of the Storm
@@ -141,7 +141,7 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		})),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_8_1_5 } }, {
+		expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ timeline = { CREATED_8_1_5 } }, {
 			-- 0 (World)
 			m(1408),	-- Ashran
 			m(1465),	-- Scarlet Halls
@@ -162,7 +162,7 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		})),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
 			-- 0 (World)
 			m(1371),	-- GnomereganA
 			m(1372),	-- GnomereganB
@@ -173,7 +173,7 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		})),
 
 		-- 8.2.5
-		expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_5 } }, {
+		expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ timeline = { CREATED_8_2_5 } }, {
 			-- 0 (World)
 			m(1379),	-- 8.3 Visions of N'Zoth - Prototype
 			m(1560),	-- Blackwing Lair
@@ -182,7 +182,7 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		})),
 
 		-- 8.3.0
-		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
+		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_8_3_0 } }, {
 			-- 0 (World)
 			m(1547),	-- Mogu'shan Vaults
 			m(1600),	-- Vault of Y'Shaarj
@@ -190,7 +190,7 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
 			-- 0 (World)
 			m(1658),	-- Alpha_TG_R02
 			m(1659),	-- Alpha_TG_R03
@@ -297,14 +297,14 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		})),
 
 		-- 9.0.2
-		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
+		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ timeline = { CREATED_9_0_2 } }, {
 			-- 3 (Minimap)
 			m(1914),	-- Torghast
 			m(1921),	-- Torghast
 		})),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ timeline = { CREATED_9_1_0 } }, {
 			-- 2 (Taxi and Adventure)
 			m(1922),	-- Draenor
 			m(1923),	-- Pandaria
@@ -317,7 +317,7 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		})),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
+		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ timeline = { CREATED_9_2_0 } }, {
 			-- 2 (Taxi and Adventure)
 			m(2059),	-- Resonant Peaks
 			m(2055),	-- Sepulcher of the First Ones
@@ -326,7 +326,7 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
 			-- 0 (World)
 			m(2063),	-- Dragon Isles
 			m(2107),	-- The Forbidden Reach
@@ -342,13 +342,13 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		})),
 
 		-- 10.0.2
-		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
+		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ timeline = { CREATED_10_0_2 } }, {
 			-- 2 (Taxi and Adventure)
 			m(2149),	-- Ohn'ahran Plains
 		})),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ timeline = { CREATED_10_1_0 } }, {
 			-- 0 (World)
 			m(2176),	-- The Maelstrom
 			-- 2 (Taxi and Adventure)
@@ -357,21 +357,21 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		})),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { CREATED_10_2_0 } }, {
 			-- 2 (Taxi and Adventure)
 			m(2252),	-- Dragon Isles
 			m(2241),	-- Emerald Dream
 		})),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ timeline = { CREATED_10_2_5 } }, {
 			-- 2 (Taxi and Adventure)
 			m(2268),	-- Amirdrassil
 		})),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
 			-- 0 (World)
 			m(2311),	-- 11.0 - Hallowfall - [Spreading the Light]- Disabled
 			m(2275),	-- 11.0 - Underground [Deprecated]
@@ -385,7 +385,7 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
 			-- 2 (Taxi and Adventure)
 			m(2374),	-- Undermine
 			-- 3 (Minimap)
@@ -393,7 +393,7 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		})),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
 			-- 0 (World)
 			m(2453),	-- Archival Assault
 			-- 2 (Taxi and Adventure)
@@ -401,7 +401,7 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		})),
 
 		-- 11.2.7
-		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
 			-- 2 (Taxi and Adventure)
 			m(2401),	-- Alliance Housing District
 			m(2402),	-- Horde Housing District
@@ -409,7 +409,7 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
 			-- 2 (Taxi and Adventure)
 			m(2540),	-- Delve_Sunkiller_A
 			m(2567),	-- Eversong Woods

@@ -7,19 +7,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		pvp(n(PVP, {
 			n(QUESTS, {
 				q(93171, {	-- Calling All Combatants!
-					["qs"] = 257194,	-- Artisan's Consortium Flyer (QS!)
-					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+					qs = 257194,	-- Artisan's Consortium Flyer (QS!)
+					timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 				}),
 				q(96801, {	-- Calling All Combatants!
-					["qs"] = 275634,	-- Artisan's Consortium Flyer  (QS!)
-					["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+					qs = 275634,	-- Artisan's Consortium Flyer  (QS!)
+					timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 				}),
 				q(93899),	-- Slayer's Rise (TODO: Picked up from adventure journal, diidn't find proper source for it)
 			}),
 			n(QUESTS, sharedData({
-				["provider"] = { "n", 254971 },	-- Zerella
-				["coord"] = { 36.3, 81.1, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["isWeekly"] = true,
+				provider = { "n", 254971 },	-- Zerella
+				coord = { 36.3, 81.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+				isWeekly = true,
 			}, {
 				q(93499),	-- Enshrouded in Arenas
 				q(93506),	-- Enshrouded in Battle
@@ -28,28 +28,28 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(93503),	-- Enshrouded in Teamwork
 				q(93505),	-- Enshrouded in War
 				q(93423, {	-- Sparks of War: Eversong Woods
-					["qi"] = 219934,	-- Spark of War (QI!)
+					qi = 219934,	-- Spark of War (QI!)
 				}),
 				q(93425, {	-- Sparks of War: Harandar
-					["qi"] = 219934,	-- Spark of War (QI!)
+					qi = 219934,	-- Spark of War (QI!)
 				}),
 				q(96726, {	-- Sparks of War: Naigtal
-					["timeline"] = { ADDED_12_0_7 },
-					["qi"] = 275134,	-- Otherworldly Spark of War (QI!)
+					timeline = { ADDED_12_0_7 },
+					qi = 275134,	-- Otherworldly Spark of War (QI!)
 				}),
 				q(96808, {	-- Sparks of War: The Coiled Isle
-					["timeline"] = { ADDED_12_1_0 },
-					["qi"] = 219934,	-- Spark of War (QI!)
+					timeline = { ADDED_12_1_0 },
+					qi = 219934,	-- Spark of War (QI!)
 				}),
 				q(96725, {	-- Sparks of War: Val
-					["timeline"] = { ADDED_12_0_7 },
-					["qi"] = 275134,	-- Otherworldly Spark of War (QI!)
+					timeline = { ADDED_12_0_7 },
+					qi = 275134,	-- Otherworldly Spark of War (QI!)
 				}),
 				q(93426, {	-- Sparks of War: Voidstorm
-					["qi"] = 219934,	-- Spark of War (QI!)
+					qi = 219934,	-- Spark of War (QI!)
 				}),
 				q(93424, {	-- Sparks of War: Zul'Aman
-					["qi"] = 219934,	-- Spark of War (QI!)
+					qi = 219934,	-- Spark of War (QI!)
 				}),
 				-- #IF AFTER MID
 				-- #IF BEFORE TLT
@@ -59,9 +59,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			})),
 			n(VENDORS, {
 				n(243225, {	-- Mirvedon <Competitor's Recipes>
-					["coord"] = { 34.0, 81.2, MAP.MIDNIGHT.SILVERMOON_CITY },
-					["groups"] = bubbleDownFiltered({
-						["cost"] = { { "c", HONOR, 7500 } },
+					coord = { 34.0, 81.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+					groups = bubbleDownFiltered({
+						cost = { { "c", HONOR, 7500 } },
 					},FILTERFUNC_itemID,{
 						filter(RECIPES, {
 							i(256712),	-- Design: Cognitive Heliotrope (RECIPE!)
@@ -134,66 +134,66 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						}),
 						filter(MISC, {
 							i(257535, {	-- Galactic Jeweler's Setting
-								["cost"] = {
+								cost = {
 									{ "i", 253307, 3 },	-- 3x Infused Heliotrope
 									{ "c", HONOR, 5000 },
 								},
-								["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
+								timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 							}),
 							i(276187, {	-- Venomous Jeweler's Setting
-								["cost"] = {
+								cost = {
 									{ "i", 253307, 3 },	-- 3x Infused Heliotrope
 									{ "c", HONOR, 5000 },
 								},
-								["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+								timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 							}),
 						}),
 						filter(REAGENTS, {
 							-- Season 1
 							i(256607, {	-- Galactic Aspirant's Heraldry
-								["cost"] = { { "c", HONOR, 175 } },	-- TODO: fix cost when Blizzard fix it
-								["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
+								cost = { { "c", HONOR, 175 } },	-- TODO: fix cost when Blizzard fix it
+								timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 							}),
 							i(256559, {	-- Galactic Combatant's Heraldry
-								["cost"] = { { "c", HONOR, 175 } },
-								["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
+								cost = { { "c", HONOR, 175 } },
+								timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 							}),
 							i(256608, {	-- Galactic Gladiator's Heraldry
-								["cost"] = { { "c", CONQUEST, 175 } },	-- TODO: fix cost when Blizzard fix it
-								["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
+								cost = { { "c", CONQUEST, 175 } },	-- TODO: fix cost when Blizzard fix it
+								timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0 },
 							}),
 							-- Season 2
 							i(275383, {	-- Venomous Aspirant's Heraldry
-								["cost"] = { { "c", HONOR, 175 } },
-								["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+								cost = { { "c", HONOR, 175 } },
+								timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 							}),
 							i(275380, {	-- Venomous Combatant's Heraldry
-								["cost"] = { { "c", HONOR, 175 } },
-								["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+								cost = { { "c", HONOR, 175 } },
+								timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 							}),
 							i(275385, {	-- Venomous Gladiator's Heraldry
-								["cost"] = { { "c", CONQUEST, 175 } },
-								["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+								cost = { { "c", CONQUEST, 175 } },
+								timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 							}),
 							i(253307, {	-- Infused Heliotrope
-								["cost"] = { { "c", HONOR, 2500 } },
+								cost = { { "c", HONOR, 2500 } },
 							}),
 						}),
 					}),
 				}),
 				n(243221, {	-- Captain Dawnrunner <Honor Quartermaster>
-					["coord"] = { 34.0, 81.0, MAP.MIDNIGHT.SILVERMOON_CITY },
-					["groups"] = {
+					coord = { 34.0, 81.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+					groups = {
 						i(258534, {	-- Illustrious Contender's Strongbox
-							["cost"] = { { "c", HONOR, 3500 } },
-							["sym"] = {
+							cost = { { "c", HONOR, 3500 } },
+							sym = {
 								{"select","npcID",243225},{"pop"},	-- select Mirvedon <Competitor's Recipes>
 								{"find","filterID",RECIPES},{"pop"},	-- return recipes
 							},
 						}),
 						i(262662, {	-- Thalassian Distinguishment
-							["cost"] = { { "c", HONOR, 2000 } },
-							["groups"] = {
+							cost = { { "c", HONOR, 2000 } },
+							groups = {
 								i(137642),	-- Mark of Honor
 							},
 						}),
@@ -208,7 +208,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.VOIDSTORM, {
 			n(QUESTS, {
 				q(93645),	-- looted Spectral Battle Chest, first time of day/week/in zone
-				q(97028, { ["timeline"] = { ADDED_12_1_0 } }),	-- looted Spectral Battle Chest
+				q(97028, { timeline = { ADDED_12_1_0 } }),	-- looted Spectral Battle Chest
 			}),
 		}),
 	}),

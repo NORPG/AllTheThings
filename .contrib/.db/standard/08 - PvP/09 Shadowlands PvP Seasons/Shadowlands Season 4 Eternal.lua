@@ -4,16 +4,16 @@
 
 root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 	n(SEASON_ETERNAL, bubbleDownSelf({
-		["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_10_0_2_LAUNCH },
+		timeline = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_10_0_2_LAUNCH },
 	}, {
-		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
+		n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 			ach(15599, {	-- Eternal Combatant [A]
-				["races"] = ALLIANCE_ONLY,
-				["collectible"] = false,
+				races = ALLIANCE_ONLY,
+				collectible = false,
 			}),
 			ach(15598, {	-- Eternal Combatant [H]
-				["races"] = HORDE_ONLY,
-				["collectible"] = false,
+				races = HORDE_ONLY,
+				collectible = false,
 			}),
 			ach(15609),	-- Combatant I: Shadowlands Season 4
 			ach(15610),	-- Combatant II: Shadowlands Season 4
@@ -37,35 +37,35 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			}),
 			-- RBG
 			ach(15608, {	-- Hero of the Alliance: Eternal
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(15607, {	-- Hero of the Horde: Eternal
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			-- Fashion
 			ach(15408, {	-- Cosmic Chic
-				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_10_0_2_LAUNCH },
+				timeline = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_10_0_2_LAUNCH },
 			}),
 		})),
-		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
+		filter(MOUNTS, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 			i(187644, {	-- Vicious Warstalker [A] (MOUNT!)
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			i(187642, {	-- Vicious Warstalker [H] (MOUNT!)
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 		})),
 		n(PVP_ASPIRANT, {
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
-				["coord"] = { 36.0, 58.6, ORIBOS },
-				["groups"] = {
+				coord = { 36.0, 58.6, ORIBOS },
+				groups = {
 					-- Moved to NYI, it seems Blizzard will never fix this
 					--[[
-					i(223639, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Aspirant's Cloak Rack
-						["cost"] = { { "i", MOH, 1 } },
-						["description"] = "|Cffff0000This ensemble may or may not work. Even if it does work, you may not get every cloak that is listed, its random.|r",	-- Nobody should be interested in playing QA Tester for this bugged cloak ensemble.
-						["questID"] = 82343,
-						["groups"] = {
+					i(223639, bubbleDownSelf({ timeline = { ADDED_10_2_7 } }, {	-- Unburied Aspirant's Cloak Rack
+						cost = { { "i", MOH, 1 } },
+						description = "|Cffff0000This ensemble may or may not work. Even if it does work, you may not get every cloak that is listed, its random.|r",	-- Nobody should be interested in playing QA Tester for this bugged cloak ensemble.
+						questID = 82343,
+						groups = {
 							i(185128),	-- Unchained Aspirant's Cloak
 							i(185205),	-- Unchained Aspirant's Drape
 							i(185240),	-- Unchained Aspirant's Cape
@@ -78,8 +78,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				},
 			}),
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
-				["coord"] = { 36.0, 58.6, ORIBOS },
-				["groups"] = bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
+				coord = { 36.0, 58.6, ORIBOS },
+				groups = bubbleDown({ timeline = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 					filter(BACK_F, {
 						honor(525, i(192390)),	-- Eternal Aspirant's Cape
 						honor(525, i(192319)),	-- Eternal Aspirant's Cloak
@@ -201,38 +201,38 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		n(PVP_GLADIATOR, {symselector=SymSelector.SL_PVP_SEASON_ETERNAL_GLADIATOR}),
 		n(PVP_GLADIATOR, {
 			n(168011, {	-- Zo'sorg <Master of Conflict>
-				["coord"] = { 35.0, 57.6, ORIBOS },
-				["ItemAppearanceModifierID"] = 159,
-				["groups"] = {
+				coord = { 35.0, 57.6, ORIBOS },
+				ItemAppearanceModifierID = 159,
+				groups = {
 					-- Moved to NYI, it seems Blizzard will never fix this
 					--[[
-					i(223640, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Gladiator's Cloak Rack
-						["cost"] = { { "i", MOH, 1 } },
-						["description"] = "|Cffff0000This ensemble may or may not work. Even if it does work, you may not get every cloak that is listed, its random.|r",	-- Nobody should be interested in playing QA Tester for this bugged cloak ensemble.
-						["groups"] = {
+					i(223640, bubbleDownSelf({ timeline = { ADDED_10_2_7 } }, {	-- Unburied Gladiator's Cloak Rack
+						cost = { { "i", MOH, 1 } },
+						description = "|Cffff0000This ensemble may or may not work. Even if it does work, you may not get every cloak that is listed, its random.|r",	-- Nobody should be interested in playing QA Tester for this bugged cloak ensemble.
+						groups = {
 							-- Gladiator
-							i(175888, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Cloak
-							i(178353, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Drape
-							i(178414, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Shawl
-							i(184311, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Greatcloak
+							i(175888, { ItemAppearanceModifierID = 0 }),	-- Sinful Gladiator's Cloak
+							i(178353, { ItemAppearanceModifierID = 0 }),	-- Sinful Gladiator's Drape
+							i(178414, { ItemAppearanceModifierID = 0 }),	-- Sinful Gladiator's Shawl
+							i(184311, { ItemAppearanceModifierID = 0 }),	-- Sinful Gladiator's Greatcloak
 							i(192209),	-- Eternal Gladiator's Cloak
 							i(192210),	-- Eternal Gladiator's Drape
 							i(192211),	-- Eternal Gladiator's Shawl
 							i(192212),	-- Eternal Gladiator's Greatcloak
 							-- Elite (as of 10.2.7 it gives Elite cloaks too, but only Eternal not Sinful)
-							i(192209, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Cloak
-							i(192210, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Drape
-							i(192211, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Shawl
-							i(192212, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Greatcloak
+							i(192209, { bonusID = 7532 }),	-- Eternal Gladiator's Cloak
+							i(192210, { bonusID = 7532 }),	-- Eternal Gladiator's Drape
+							i(192211, { bonusID = 7532 }),	-- Eternal Gladiator's Shawl
+							i(192212, { bonusID = 7532 }),	-- Eternal Gladiator's Greatcloak
 						},
 					})),
 					]]--
 				},
 			}),
 			n(168011, {	-- Zo'sorg <Master of Conflict>
-				["coord"] = { 35.0, 57.6, ORIBOS },
-				["ItemAppearanceModifierID"] = 159,
-				["groups"] = bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
+				coord = { 35.0, 57.6, ORIBOS },
+				ItemAppearanceModifierID = 159,
+				groups = bubbleDown({ timeline = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 					filter(BACK_F, {
 						conquest(525, i(192209)),	-- Eternal Gladiator's Cloak
 						conquest(525, i(192210)),	-- Eternal Gladiator's Drape
@@ -360,10 +360,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					}),
 				}),
 			}),
-			n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
-				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
-				["groups"] = bubbleDownFiltered({
-					["bonusID"] = 7897,
+			n(CLASSES, bubbleDownSelf({ timeline = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
+				description = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
+				groups = bubbleDownFiltered({
+					bonusID = 7897,
 				},FILTERFUNC_itemID,{
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
@@ -500,10 +500,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				}),
 			})),
 		}),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 }, ["bonusID"] = 7532 }, {
+		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_0 }, bonusID = 7532 }, {
 			n(CLASSES,{
-				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
-				["groups"] = {
+				description = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
+				groups = {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
 						i(188866),	-- Chausses of the First Eidolon

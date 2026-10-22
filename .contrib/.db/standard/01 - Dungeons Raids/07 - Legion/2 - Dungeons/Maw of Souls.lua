@@ -41,24 +41,24 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot)
 local Boss, BossOnly, Difficulty =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 	inst(727, {	-- Maw of Souls
-		["coord"] = { 52.5, 45.3, STORMHEIM },
-		["maps"] = { 706, 707, 708 },
-		["lvl"] = 110,
-		["groups"] = {
+		coord = { 52.5, 45.3, STORMHEIM },
+		maps = { 706, 707, 708 },
+		lvl = 110,
+		groups = {
 			n(WORLD_QUESTS, {
 				q(42780, {	-- Maw of Souls: From Hell's Mouth
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(42757, {	-- Maw of Souls: Menace of the Seas
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(42788, {	-- Maw of Souls: Return of the Beast
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
@@ -150,27 +150,27 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
 				Boss(YMIRON, {
 					ach(10413, {	-- Instant Karma
-						["crs"] = { 98246 },	-- Risen Warrior
+						crs = { 98246 },	-- Risen Warrior
 					}),
 				}),
 				Boss(HARBARON, {
 					ach(10411, {	-- Helheim Hath No Fury
-						["description"] = "This is a speed-run style achievement. You must get to and kill Harbaron in under 3 minutes and 30 seconds.",
+						description = "This is a speed-run style achievement. You must get to and kill Harbaron in under 3 minutes and 30 seconds.",
 					}),
 				}),
 				Boss(HELYA, {
 					ach(10809),	-- Mythic: Maw of Souls
 					ach(10863),	-- Mythic: Maw of Souls Guild Run
 					ach(10412, {	-- Poor Unfortunate Souls
-						["description"] =
+						description =
 						-- #if BEFORE 11.2.5
 						"Absorb the soul at the beginning of Blackrook Hold, clear the dungeon, then clear Maw of Souls. You must not die at all through both dungeons.\n\nWARNING: You must do this with a group of 5 players for the buffs to upgrade after each boss kill.",
 						-- #else
 						"Absorb the soul at the beginning of Blackrook Hold, clear the dungeon, then clear Maw of Souls. You must not die at all through both dungeons.",
 						-- #endif
-						["maps"] = { 751, 752, 753, 754, 755, 756 },	-- Black Rook Hold
-						["crs"] = { 98806 },	-- Soul Essence
-						["groups"] = { i(140323) },	-- Lagan (PET!)
+						maps = { 751, 752, 753, 754, 755, 756 },	-- Black Rook Hold
+						crs = { 98806 },	-- Soul Essence
+						groups = { i(140323) },	-- Lagan (PET!)
 					}),
 					i(137899),	-- Pattern: Dreadleather Jerkin [Rank 3] (RECIPE!)
 				}),

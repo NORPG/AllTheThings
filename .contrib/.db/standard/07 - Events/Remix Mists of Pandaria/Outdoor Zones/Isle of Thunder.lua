@@ -2,58 +2,58 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(ISLE_OF_THUNDER, {
-		["icon"] = 136014,
-		["groups"] = {
+		icon = 136014,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(19892, {	-- Campaign: Isle of Thunder
 					crit(67270, {	-- Assault the Shipyard
-						["_quests"] = { 32655 },
+						_quests = { 32655 },
 					}),
 					crit(67271, {	-- Assault the Shipyard
-						["_quests"] = { 32278 },
+						_quests = { 32278 },
 					}),
 					crit(67273, {	-- The Fall of Shan Bu
-						["_quests"] = { 32656 },
+						_quests = { 32656 },
 					}),
 					crit(67274, {	-- The Fall of Shan Bu
-						["_quests"] = { 32279 },
+						_quests = { 32279 },
 					}),
 					crit(67276, {	-- Build a Base
-						["_quests"] = { 32644 },
+						_quests = { 32644 },
 					}),
 					crit(67277, {	-- Build a Base
-						["_quests"] = { 32212 },
+						_quests = { 32212 },
 					}),
 					crit(67281, {	-- First Landing
-						["_quests"] = { 32681 },
+						_quests = { 32681 },
 					}),
 					crit(67282, {	-- First Landing
-						["_quests"] = { 32680 },
+						_quests = { 32680 },
 					}),
 					crit(67283, {	-- Break Down the Wall
-						["_quests"] = { 32654 },
+						_quests = { 32654 },
 					}),
 					crit(67284, {	-- Break Down the Wall
-						["_quests"] = { 32276 },
+						_quests = { 32276 },
 					}),
 					crit(67286, {	-- Take the Forge
-						["_quests"] = { 32652 },
+						_quests = { 32652 },
 					}),
 					crit(67287, {	-- Take the Forge
-						["_quests"] = { 32277 },
+						_quests = { 32277 },
 					}),
 				}),
 				ach(20000),	-- Elusive Foes: Isle of Thunder
 				ach(19880, {	-- Isle of Thunder
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19892,	-- Campaign: Isle of Thunder
 						20000,	-- Elusive Foes: Isle of Thunder
 						20015,	-- Looking For Group: Isle of Thunder
 					}},
-					["groups"] = {
+					groups = {
 						clWithoutLock(DEATHKNIGHT, {
 							iensemble(217824),	-- Arsenal: Webbed Soulforged Weaponry
 						}),
@@ -97,7 +97,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				ach(20015, {	-- Looking For Group: Isle of Thunder
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						20020,	-- Oondasta
 						19955,	-- Raid Finder: Throne of Thunder
 						20019,	-- Nalak, the Storm Lord
@@ -106,21 +106,21 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(FACTIONS, {
 				faction(FACTION_KIRIN_TOR_OFFENSIVE, {	-- Kirin Tor Offensive
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						n(ACHIEVEMENTS, {
 							ach(19919, {	-- Kirin Tor Offensive
-								["races"] = ALLIANCE_ONLY,
+								races = ALLIANCE_ONLY,
 							}),
 						}),
 					},
 				}),
 				faction(FACTION_SUNREAVER_ONSLAUGHT, {	-- Sunreaver Onslaught
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						n(ACHIEVEMENTS, {
 							ach(19920, {	-- Sunreaver Onslaught
-								["races"] = HORDE_ONLY,
+								races = HORDE_ONLY,
 							}),
 						}),
 					},
@@ -128,32 +128,32 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(QUESTS, {
 				q(80443, {	-- Aid the Kirin Tor Offensive [A]
-					["provider"] = { "n", 67933 },	-- Vereesa Windrunner
-					["coord"] = { 63.2, 72.1, ISLE_OF_THUNDER },
-					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
+					provider = { "n", 67933 },	-- Vereesa Windrunner
+					coord = { 63.2, 72.1, ISLE_OF_THUNDER },
+					cost = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					races = ALLIANCE_ONLY,
+					isDaily = true,
 				}),
 				q(81749, {	-- Aid the Kirin Tor Offensive [A]
-					["provider"] = { "n", 67933 },	-- Vereesa Windrunner
-					["coord"] = { 63.2, 72.1, ISLE_OF_THUNDER },
-					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
+					provider = { "n", 67933 },	-- Vereesa Windrunner
+					coord = { 63.2, 72.1, ISLE_OF_THUNDER },
+					cost = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					races = ALLIANCE_ONLY,
+					repeatable = true,
 				}),
 				q(80442, {	-- Aid the Sunreavers Onslaught [H]
-					["provider"] = { "n", 70520 },	-- Halduron Brightwing
-					["coord"] = { 32.5, 35.5, ISLE_OF_THUNDER },
-					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
+					provider = { "n", 70520 },	-- Halduron Brightwing
+					coord = { 32.5, 35.5, ISLE_OF_THUNDER },
+					cost = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					races = HORDE_ONLY,
+					isDaily = true,
 				}),
 				q(81748, {	-- Aid the Sunreavers Onslaught [H]
-					["provider"] = { "n", 70520 },	-- Halduron Brightwing
-					["coord"] = { 32.5, 35.5, ISLE_OF_THUNDER },
-					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
+					provider = { "n", 70520 },	-- Halduron Brightwing
+					coord = { 32.5, 35.5, ISLE_OF_THUNDER },
+					cost = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					races = HORDE_ONLY,
+					repeatable = true,
 				}),
 			}),
 			n(ZONE_REWARDS, {

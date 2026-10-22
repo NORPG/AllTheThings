@@ -3,13 +3,13 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
-	applyclassicphase(WRATH_PHASE_THREE, m(169, bubbleDown({ ["timeline"] = { ADDED_3_2_0 }, }, {	-- Isle of Conquest
-		["icon"] = 236396,
-		["groups"] = {
+	applyclassicphase(WRATH_PHASE_THREE, m(169, bubbleDown({ timeline = { ADDED_3_2_0 }, }, {	-- Isle of Conquest
+		icon = 236396,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(3857, {	-- Master of Isle of Conquest (A)
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						3777,	-- Isle of Conquest Veteran
 						3848,	-- A-bomb-inable
 						3849,	-- A-bomb-ination
@@ -22,16 +22,16 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						3851,	-- Mine
 						3850,	-- Mowed Down
 					}},
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(49052, {	-- Tabard of Conquest
-							["races"] = ALLIANCE_ONLY,
+							races = ALLIANCE_ONLY,
 						}),
 					},
 				}),
 				ach(3957, {	-- Master of Isle of Conquest (H)
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						3777,	-- Isle of Conquest Veteran
 						3848,	-- A-bomb-inable
 						3849,	-- A-bomb-ination
@@ -44,10 +44,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						4177,	-- Mine
 						3850,	-- Mowed Down
 					}},
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						i(49054, {	-- Tabard of Conquest
-							["races"] = HORDE_ONLY,
+							races = HORDE_ONLY,
 						}),
 					},
 				}),
@@ -58,10 +58,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					crit(11491),	-- Kill a player
 				}),
 				ach(3776, {	-- Isle of Conquest Victory
-					["rank"] = 1,
+					rank = 1,
 				}),
 				ach(3777, {	-- Isle of Conquest Veteran
-					["rank"] = 100,
+					rank = 100,
 				}),
 				ach(3848),	-- A-bomb-inable
 				ach(3849),	-- A-bomb-ination
@@ -75,8 +75,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(3854),	-- Back Door Job
 				ach(3852),	-- Cut the Blue Wire... No the Red Wire!
 				ach(3856, {	-- Demolition Derby
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						crit(11497),	-- Glaive Thrower
 						crit(12179),	-- Demolisher
 						crit(12181),	-- Catapult
@@ -84,8 +84,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				ach(4256, {	-- Demolition Derby
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						crit(12178),	-- Glaive Thrower
 						crit(12179),	-- Demolisher
 						crit(12181),	-- Catapult
@@ -100,20 +100,20 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(3855),	-- Glaive Grave
 				ach(3851, {	-- Mine
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(4177, {	-- Mine
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 				ach(3850, {	-- Mowed Down
 					crit(12114),	-- Vehicles killed
 					crit(12068),	-- Players killed
 				}),
 				ach(3846, {	-- Resource Glut
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(4176, {	-- Resource Glut
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 			}),
 		},

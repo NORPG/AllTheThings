@@ -7,42 +7,42 @@ local SECRET_OF_DRAENOR_TAILORING = 118722;
 APPRENTICE_JOURNEYMAN_EXPERT_TAILORING = {
 	r(3908, {	-- Tailoring (Apprentice)
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 5,
+		lvl = 5,
 		-- #endif
-		["rank"] = 1,
+		rank = 1,
 	}),
 	r(3909, {	-- Tailoring (Journeyman)
-		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		timeline = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 10,
+		lvl = 10,
 		-- #endif
-		["rank"] = 2,
+		rank = 2,
 	}),
 	r(3910, {	-- Tailoring (Expert)
-		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		timeline = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
 		-- #if SEASON_OF_DISCOVERY
-		["OnUpdate"] = [[function(t)
+		OnUpdate = [[function(t)
 			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 26 or 20;
 		end]],
 		-- #else
-		["lvl"] = 20,
+		lvl = 20,
 		-- #endif
 		-- #endif
-		["rank"] = 3,
+		rank = 3,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264616, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Tailoring
-	r(330222, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [CLASSIC]
-	r(330223, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [CLASSIC]
-	r(330224, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [CLASSIC]
-	r(330225, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [CLASSIC]
-	r(330226, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [CLASSIC]
+	applyclassicphase(BFA_PHASE_ONE, r(264616, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Tailoring
+	r(330222, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [CLASSIC]
+	r(330223, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [CLASSIC]
+	r(330224, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [CLASSIC]
+	r(330225, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV [CLASSIC]
+	r(330226, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V [CLASSIC]
 	n(ARMOR, {
 		r(8766),	-- Azure Silk Belt
 		r(8760),	-- Azure Silk Hood
@@ -51,30 +51,30 @@ APPRENTICE_JOURNEYMAN_EXPERT_TAILORING = {
 		r(2395),	-- Barbaric Linen Vest
 		r(12053),	-- Black Mageweave Gloves
 		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_TWO, r(439088, {["timeline"] = {ADDED_1_15_1}})),	-- Black Mageweave Leggings
-		r(12049, {["timeline"] = {REMOVED_1_15_1}}),	-- Black Mageweave Leggings
+		applyclassicphase(SOD_PHASE_TWO, r(439088, {timeline = {ADDED_1_15_1}})),	-- Black Mageweave Leggings
+		r(12049, {timeline = {REMOVED_1_15_1}}),	-- Black Mageweave Leggings
 		-- #else
 		r(12049),	-- Black Mageweave Leggings
 		-- #endif
 		r(12050),	-- Black Mageweave Robe
 		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_TWO, r(439086, {["timeline"] = {ADDED_1_15_1}})),	-- Black Mageweave Vest
-		r(12048, {["timeline"] = {REMOVED_1_15_1}}),	-- Black Mageweave Vest
+		applyclassicphase(SOD_PHASE_TWO, r(439086, {timeline = {ADDED_1_15_1}})),	-- Black Mageweave Vest
+		r(12048, {timeline = {REMOVED_1_15_1}}),	-- Black Mageweave Vest
 		-- #else
 		r(12048),	-- Black Mageweave Vest
 		-- #endif
 		r(2394),	-- Blue Linen Shirt
-		r(18420, {["timeline"] = {ADDED_2_1_0}}),	-- Brightcloth Cloak
-		r(18415, {["timeline"] = {ADDED_2_1_0}}),	-- Brightcloth Gloves
-		r(18414, {["timeline"] = {ADDED_2_1_0}}),	-- Brightcloth Robe
+		r(18420, {timeline = {ADDED_2_1_0}}),	-- Brightcloth Cloak
+		r(18415, {timeline = {ADDED_2_1_0}}),	-- Brightcloth Gloves
+		r(18414, {timeline = {ADDED_2_1_0}}),	-- Brightcloth Robe
 		r(3914),	-- Brown Linen Pants
 		r(7623),	-- Brown Linen Robe
 		r(3915),	-- Brown Linen Shirt
 		r(2385),	-- Brown Linen Vest
 		r(12069),	-- Cindercloth Robe
 		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_TWO, r(439098, {["timeline"] = {ADDED_1_15_1}})),	-- Crimson Silk Belt
-		r(8772, {["timeline"] = {REMOVED_1_15_1}}),	-- Crimson Silk Belt
+		applyclassicphase(SOD_PHASE_TWO, r(439098, {timeline = {ADDED_1_15_1}})),	-- Crimson Silk Belt
+		r(8772, {timeline = {REMOVED_1_15_1}}),	-- Crimson Silk Belt
 		-- #else
 		r(8772),	-- Crimson Silk Belt
 		-- #endif
@@ -85,23 +85,23 @@ APPRENTICE_JOURNEYMAN_EXPERT_TAILORING = {
 		r(12067),	-- Dreamweave Gloves
 		r(12070),	-- Dreamweave Vest
 		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_TWO, r(439100, {["timeline"] = {ADDED_1_15_1}})),	-- Earthen Vest
-		r(8764, {["timeline"] = {REMOVED_1_15_1}}),	-- Earthen Vest
+		applyclassicphase(SOD_PHASE_TWO, r(439100, {timeline = {ADDED_1_15_1}})),	-- Earthen Vest
+		r(8764, {timeline = {REMOVED_1_15_1}}),	-- Earthen Vest
 		-- #else
 		r(8764),	-- Earthen Vest
 		-- #endif
-		r(18437, {["timeline"] = {ADDED_2_1_0}}),	-- Felcloth Boots
-		r(18442, {["timeline"] = {ADDED_2_1_0}}),	-- Felcloth Hood
-		r(18451, {["timeline"] = {ADDED_2_1_0}}),	-- Felcloth Robe
-		r(18453, {["timeline"] = {ADDED_2_1_0}}),	-- Felcloth Shoulders
+		r(18437, {timeline = {ADDED_2_1_0}}),	-- Felcloth Boots
+		r(18442, {timeline = {ADDED_2_1_0}}),	-- Felcloth Hood
+		r(18451, {timeline = {ADDED_2_1_0}}),	-- Felcloth Robe
+		r(18453, {timeline = {ADDED_2_1_0}}),	-- Felcloth Shoulders
 		r(3871),	-- Formal White Shirt
-		r(18411, {["timeline"] = {ADDED_2_1_0}}),	-- Frostweave Gloves
-		r(18424, {["timeline"] = {ADDED_2_1_0}}),	-- Frostweave Pants
-		r(18403, {["timeline"] = {ADDED_2_1_0}}),	-- Frostweave Tunic
-		r(18410, {["timeline"] = {ADDED_2_1_0}}),	-- Ghostweave Belt
-		r(18413, {["timeline"] = {ADDED_2_1_0}}),	-- Ghostweave Gloves
-		r(18441, {["timeline"] = {ADDED_2_1_0}}),	-- Ghostweave Pants
-		r(18416, {["timeline"] = {ADDED_2_1_0}}),	-- Ghostweave Vest
+		r(18411, {timeline = {ADDED_2_1_0}}),	-- Frostweave Gloves
+		r(18424, {timeline = {ADDED_2_1_0}}),	-- Frostweave Pants
+		r(18403, {timeline = {ADDED_2_1_0}}),	-- Frostweave Tunic
+		r(18410, {timeline = {ADDED_2_1_0}}),	-- Ghostweave Belt
+		r(18413, {timeline = {ADDED_2_1_0}}),	-- Ghostweave Gloves
+		r(18441, {timeline = {ADDED_2_1_0}}),	-- Ghostweave Pants
+		r(18416, {timeline = {ADDED_2_1_0}}),	-- Ghostweave Vest
 		r(3852),	-- Gloves of Meditation
 		r(2406),	-- Gray Woolen Shirt
 		r(3841),	-- Green Linen Bracers
@@ -117,8 +117,8 @@ APPRENTICE_JOURNEYMAN_EXPERT_TAILORING = {
 		r(2386),	-- Linen Boots
 		r(2387),	-- Linen Cloak
 		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_TWO, r(439094, {["timeline"] = {ADDED_1_15_1}})),	-- Long Silken Cloak
-		r(3861, {["timeline"] = {REMOVED_1_15_1}}),	-- Long Silken Cloak
+		applyclassicphase(SOD_PHASE_TWO, r(439094, {timeline = {ADDED_1_15_1}})),	-- Long Silken Cloak
+		r(3861, {timeline = {REMOVED_1_15_1}}),	-- Long Silken Cloak
 		-- #else
 		r(3861),	-- Long Silken Cloak
 		-- #endif
@@ -128,14 +128,14 @@ APPRENTICE_JOURNEYMAN_EXPERT_TAILORING = {
 		r(8489),	-- Red Swashbuckler's Shirt
 		r(2397),	-- Reinforced Linen Cape
 		r(8770),	-- Robe of Power
-		r(18423, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Boots
-		r(18409, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Cloak
-		r(18417, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Gloves
-		r(18444, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Headband
-		r(18438, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Pants
-		r(18406, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Robe
-		r(18449, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Shoulders
-		r(18407, {["timeline"] = {ADDED_2_1_0}}),	-- Runecloth Tunic
+		r(18423, {timeline = {ADDED_2_1_0}}),	-- Runecloth Boots
+		r(18409, {timeline = {ADDED_2_1_0}}),	-- Runecloth Cloak
+		r(18417, {timeline = {ADDED_2_1_0}}),	-- Runecloth Gloves
+		r(18444, {timeline = {ADDED_2_1_0}}),	-- Runecloth Headband
+		r(18438, {timeline = {ADDED_2_1_0}}),	-- Runecloth Pants
+		r(18406, {timeline = {ADDED_2_1_0}}),	-- Runecloth Robe
+		r(18449, {timeline = {ADDED_2_1_0}}),	-- Runecloth Shoulders
+		r(18407, {timeline = {ADDED_2_1_0}}),	-- Runecloth Tunic
 		r(8762),	-- Silk Headband
 		r(8465),	-- Simple Dress
 		r(12046),	-- Simple Kilt
@@ -143,15 +143,15 @@ APPRENTICE_JOURNEYMAN_EXPERT_TAILORING = {
 		r(12044),	-- Simple Linen Pants
 		r(3845),	-- Soft-soled Linen Boots
 		r(3855),	-- Spidersilk Boots
-		applyclassicphase(WRATH_PHASE_ONE, r(63742, {["timeline"] = {ADDED_3_1_0}})),	-- Spidersilk Drape
+		applyclassicphase(WRATH_PHASE_ONE, r(63742, {timeline = {ADDED_3_1_0}})),	-- Spidersilk Drape
 		r(3866),	-- Stylish Red Shirt
 		r(7624),	-- White Linen Robe
 		r(2393),	-- White Linen Shirt
 		r(8483),	-- White Swashbuckler's Shirt
 		r(8467),	-- White Woolen Dress
-		r(18421, {["timeline"] = {ADDED_2_1_0}}),	-- Wizardweave Leggings
-		r(18446, {["timeline"] = {ADDED_2_1_0}}),	-- Wizardweave Robe
-		r(18450, {["timeline"] = {ADDED_2_1_0}}),	-- Wizardweave Turban
+		r(18421, {timeline = {ADDED_2_1_0}}),	-- Wizardweave Leggings
+		r(18446, {timeline = {ADDED_2_1_0}}),	-- Wizardweave Robe
+		r(18450, {timeline = {ADDED_2_1_0}}),	-- Wizardweave Turban
 		r(2401),	-- Woolen Boots
 		r(2402),	-- Woolen Cape
 	}),
@@ -184,19 +184,19 @@ APPRENTICE_JOURNEYMAN_EXPERT_TAILORING = {
 };
 ARTISAN_TAILORING = {
 	r(12180, {	-- Tailoring (Artisan)
-		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		timeline = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
 		-- #if SEASON_OF_DISCOVERY
-		["OnUpdate"] = [[function(t)
+		OnUpdate = [[function(t)
 			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 41 or 35;
 		end]],
 		-- #else
-		["lvl"] = 35,
+		lvl = 35,
 		-- #endif
 		-- #endif
-		["rank"] = 4,
+		rank = 4,
 	}),
 	n(ARMOR, {
 		r(12073),	-- Black Mageweave Boots
@@ -210,8 +210,8 @@ ARTISAN_TAILORING = {
 	filter(BAGS, {
 		r(12079),	-- Red Mageweave Bag
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
-		r(1315757, { ["timeline"] = { ADDED_12_1_5 } }),	-- Beloved Plush Doll
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
+		r(1315757, { timeline = { ADDED_12_1_5 } }),	-- Beloved Plush Doll
 		r(1261695),	-- Dwarven District Banner
 		r(1261688),	-- Elder Rise Rug
 	})),
@@ -233,22 +233,22 @@ ARTISAN_TAILORING
 	{}
 -- #endif
 );
-TBC_TAILORING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
+TBC_TAILORING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2_0_5 } }, {
 	r(26790, {	-- Tailoring (Master)
-		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 50,
+		lvl = 50,
 		-- #endif
-		["rank"] = 5,
+		rank = 5,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264618, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Outland Tailoring
-	r(330227, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [The Burning Cruse]
-	r(330228, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [The Burning Cruse]
-	r(330229, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [The Burning Cruse]
-	r(330230, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [The Burning Cruse]
-	r(330231, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [The Burning Cruse]
+	applyclassicphase(BFA_PHASE_ONE, r(264618, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Outland Tailoring
+	r(330227, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [The Burning Cruse]
+	r(330228, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [The Burning Cruse]
+	r(330229, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [The Burning Cruse]
+	r(330230, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV [The Burning Cruse]
+	r(330231, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V [The Burning Cruse]
 	n(ARMOR, {
 		r(26765),	-- Netherweave Belt
 		r(26772),	-- Netherweave Boots
@@ -259,7 +259,7 @@ TBC_TAILORING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 	filter(BAGS, {
 		r(26746),	-- Netherweave Bag
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1263692),	-- Draenei Weaver's Loom
 		r(1263669),	-- Grand Drape of the Exiles
 	})),
@@ -274,28 +274,28 @@ TBC_TAILORING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(26745),	-- Bolt of Netherweave
 	}),
 }));
-WRATH_TAILORING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {
+WRATH_TAILORING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3 } }, {
 	r(51309, {	-- Tailoring (Grand Master)
-		["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 65,
+		lvl = 65,
 		-- #endif
-		["rank"] = 6,
+		rank = 6,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264620, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Tailoring
-	r(330232, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Wrath of the Lich King]
-	r(330233, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Wrath of the Lich King]
-	r(330234, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Wrath of the Lich King]
-	r(330235, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Wrath of the Lich King]
-	r(330236, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Wrath of the Lich King]
+	applyclassicphase(BFA_PHASE_ONE, r(264620, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Tailoring
+	r(330232, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [Wrath of the Lich King]
+	r(330233, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [Wrath of the Lich King]
+	r(330234, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [Wrath of the Lich King]
+	r(330235, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV [Wrath of the Lich King]
+	r(330236, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V [Wrath of the Lich King]
 	n(ARMOR, {
 		r(56023),	-- Aurora Slippers
 		r(55925),	-- Black Duskweave Leggings
 		r(55941),	-- Black Duskweave Robe
 		r(55943),	-- Black Duskweave Wristwraps
-		r(64730, {["timeline"] = {ADDED_3_1_0}}),	-- Cloak of Crimson Snow
+		r(64730, {timeline = {ADDED_3_1_0}}),	-- Cloak of Crimson Snow
 		r(56015),	-- Cloak of Frozen Spirits
 		r(56014),	-- Cloak of the Moon
 		r(56020),	-- Deep Frozen Cord
@@ -309,7 +309,7 @@ WRATH_TAILORING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(55920),	-- Duskweave Wristwraps
 		r(56027),	-- Ebonweave Gloves
 		r(56026),	-- Ebonweave Robe
-		r(64729, {["timeline"] = {ADDED_3_1_0}}),	-- Frostguard Drape
+		r(64729, {timeline = {ADDED_3_1_0}}),	-- Frostguard Drape
 		r(56021),	-- Frostmoon Pants
 		r(59582),	-- Frostsavage Belt
 		r(59585),	-- Frostsavage Boots
@@ -346,41 +346,41 @@ WRATH_TAILORING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] =
 	n(ARMOR_ENCHANTMENTS, {
 		r(56010),	-- Azure Spellthread
 		r(55769, {	-- Darkglow Embroidery [Rank 1]
-			["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 },
+			timeline = { ADDED_3_0_3, REMOVED_6_0_2 },
 			-- #if AFTER CATA
-			["rank"] = 1,
+			rank = 1,
 			-- #endif
 		}),
 		r(55642, {	-- Lightweave Embroidery [Rank 1]
-			["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 },
+			timeline = { ADDED_3_0_3, REMOVED_6_0_2 },
 			-- #if AFTER CATA
-			["rank"] = 1,
+			rank = 1,
 			-- #endif
 		}),
 		r(56034, {	-- Master's Spellthread [Rank 1]
-			["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 },
+			timeline = { ADDED_3_0_3, REMOVED_6_0_2 },
 			-- #if AFTER CATA
-			["rank"] = 1,
+			rank = 1,
 			-- #endif
 		}),
 		r(56039, {	-- Sanctified Spellthread [Rank 1]
-			["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 },
+			timeline = { ADDED_3_0_3, REMOVED_6_0_2 },
 			-- #if AFTER CATA
-			["rank"] = 1,
+			rank = 1,
 			-- #endif
 		}),
 		r(56008),	-- Shining Spellthread
 		r(55777, {	-- Swordguard Embroidery [Rank 1]
-			["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 },
+			timeline = { ADDED_3_0_3, REMOVED_6_0_2 },
 			-- #if AFTER CATA
-			["rank"] = 1,
+			rank = 1,
 			-- #endif
 		}),
 	}),
 	filter(BAGS, {
 		r(56007),	-- Frostweave Bag
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1263620),	-- Gilded Dalaran Banner
 		r(1263627),	-- Kirin Tor Skyline Banner
 	})),
@@ -408,40 +408,40 @@ WRATH_TAILORING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] =
 ETERNIUM_THREAD = applyclassicphase(WRATH_PHASE_ONE, {
 	i(38426, {	-- Eternium Thread
 		-- #if AFTER CATA
-		["description"] = "Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",
+		description = "Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",
 		-- #else
-		["description"] = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
+		description = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
 		-- #endif
-		["providers"] = {
+		providers = {
 			{ "n", 24341},	-- Barnabas Frye <Trade Goods>
 			{ "n", 27012},	-- Beem Goldsprocket <Trade Goods>
 			{ "n", 26941},	-- Brokkan Bear-Arms <Trade Goods>
 			{ "n", 28726},	-- Dominique Stefano <Tailoring Supplies>
 			{ "n", 23802},	-- Wink Sprinklesprankle <General Goods & Trade Supplies>
 		},
-		["timeline"] = { ADDED_3_0_3 },
+		timeline = { ADDED_3_0_3 },
 	})
 })
-CATA_TAILORING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+CATA_TAILORING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ timeline = { ADDED_4_0_3_LAUNCH } }, {
 	r(75156, {	-- Tailoring (Illustrious)
-		["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
-		["rank"] = 7,
+		rank = 7,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264622, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Cataclysm Tailoring
-	r(330237, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Cataclysm]
-	r(330238, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Cataclysm]
-	r(330239, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Cataclysm]
-	r(330240, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Cataclysm]
-	r(330241, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Cataclysm]
+	applyclassicphase(BFA_PHASE_ONE, r(264622, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Cataclysm Tailoring
+	r(330237, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [Cataclysm]
+	r(330238, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [Cataclysm]
+	r(330239, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [Cataclysm]
+	r(330240, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV [Cataclysm]
+	r(330241, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V [Cataclysm]
 	n(ARMOR, {
 		-- #if ANYCLASSIC
 		r(75293),	-- Vicious Embersilk Belt
 		r(75297),	-- Vicious Embersilk Boots
 		r(75270),	-- Vicious Embersilk Bracers
-		applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, r(1216338, {["timeline"] = {ADDED_4_4_1}})),	-- Bloodthirsty Embersilk Cape
+		applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, r(1216338, {timeline = {ADDED_4_4_1}})),	-- Bloodthirsty Embersilk Cape
 		r(75295),	-- Vicious Embersilk Gloves
 		r(75291),	-- Vicious Embersilk Shoulders
 		r(75269),	-- Vicious Fireweave Belt
@@ -467,22 +467,22 @@ CATA_TAILORING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(75267),	-- Spiritmend Robe
 		r(75260),	-- Spiritmend Shoulders
 		-- #if ANYCLASSIC
-		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224154, {["timeline"] = {ADDED_4_4_2}})),	-- Vicious Embersilk Belt
-		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224155, {["timeline"] = {ADDED_4_4_2}})),	-- Vicious Embersilk Boots
-		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224156, {["timeline"] = {ADDED_4_4_2}})),	-- Vicious Embersilk Bracers
-		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(99537,   {["timeline"] = {ADDED_4_4_2}})),	-- Vicious Embersilk Cape
-		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224158, {["timeline"] = {ADDED_4_4_2}})),	-- Vicious Embersilk Gloves
-		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224161, {["timeline"] = {ADDED_4_4_2}})),	-- Vicious Embersilk Shoulders
-		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224162, {["timeline"] = {ADDED_4_4_2}})),	-- Vicious Fireweave Belt
-		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224163, {["timeline"] = {ADDED_4_4_2}})),	-- Vicious Fireweave Boots
-		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224164, {["timeline"] = {ADDED_4_4_2}})),	-- Vicious Fireweave Bracers
-		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224166, {["timeline"] = {ADDED_4_4_2}})),	-- Vicious Fireweave Gloves
-		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224169, {["timeline"] = {ADDED_4_4_2}})),	-- Vicious Fireweave Shoulders
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224154, {timeline = {ADDED_4_4_2}})),	-- Vicious Embersilk Belt
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224155, {timeline = {ADDED_4_4_2}})),	-- Vicious Embersilk Boots
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224156, {timeline = {ADDED_4_4_2}})),	-- Vicious Embersilk Bracers
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(99537,   {timeline = {ADDED_4_4_2}})),	-- Vicious Embersilk Cape
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224158, {timeline = {ADDED_4_4_2}})),	-- Vicious Embersilk Gloves
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224161, {timeline = {ADDED_4_4_2}})),	-- Vicious Embersilk Shoulders
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224162, {timeline = {ADDED_4_4_2}})),	-- Vicious Fireweave Belt
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224163, {timeline = {ADDED_4_4_2}})),	-- Vicious Fireweave Boots
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224164, {timeline = {ADDED_4_4_2}})),	-- Vicious Fireweave Bracers
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224166, {timeline = {ADDED_4_4_2}})),	-- Vicious Fireweave Gloves
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, r(1224169, {timeline = {ADDED_4_4_2}})),	-- Vicious Fireweave Shoulders
 		-- #else
 		r(75293),	-- Vicious Embersilk Belt
 		r(75297),	-- Vicious Embersilk Boots
 		r(75270),	-- Vicious Embersilk Bracers
-		r(99537, {["timeline"] = {ADDED_4_2_0}}),	-- Vicious Embersilk Cape
+		r(99537, {timeline = {ADDED_4_2_0}}),	-- Vicious Embersilk Cape
 		r(75295),	-- Vicious Embersilk Gloves
 		r(75291),	-- Vicious Embersilk Shoulders
 		r(75269),	-- Vicious Fireweave Belt
@@ -495,26 +495,26 @@ CATA_TAILORING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = {
 	}),
 	n(ARMOR_ENCHANTMENTS, {
 		r(75175, {	-- Darkglow Embroidery [Rank 2]
-			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 },
-			["rank"] = 2,
+			timeline = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 },
+			rank = 2,
 		}),
 		r(75250),	-- Enchanted Spellthread
 		r(75255),	-- Ghostly Spellthread
 		r(75172, {	-- Lightweave Embroidery [Rank 2]
-			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 },
-			["rank"] = 2,
+			timeline = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 },
+			rank = 2,
 		}),
 		r(75154, {	-- Master's Spellthread [Rank 2]
-			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 },
-			["rank"] = 2,
+			timeline = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 },
+			rank = 2,
 		}),
 		r(75155, {	-- Sanctified Spellthread [Rank 2]
-			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 },
-			["rank"] = 2,
+			timeline = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 },
+			rank = 2,
 		}),
 		r(75178, {	-- Swordguard Embroidery [Rank 2]
-			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 },
-			["rank"] = 2,
+			timeline = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 },
+			rank = 2,
 		}),
 	}),
 	filter(BAGS, {
@@ -522,7 +522,7 @@ CATA_TAILORING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(75268),	-- Hyjal Expedition Bag
 		r(75265),	-- Otherworldly Bag
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1262370),	-- "Unity of Thorns" Tapestry
 		r(1261317),	-- Surwich Expedition Tent
 	})),
@@ -547,141 +547,141 @@ CATA_TAILORING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(75141),	-- Dream of Skywall
 	}),
 }));
-COMMON_CATACLYSM_TAILORING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+COMMON_CATACLYSM_TAILORING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedData({ timeline = { ADDED_4_0_3_LAUNCH } }, {
 	i(54601, {	-- Pattern: Belt of the Depths (RECIPE!)
-		["cost"] = {{"i", DREAMCLOTH, 1}},
+		cost = {{"i", DREAMCLOTH, 1}},
 	}),
 	i(68199, {	-- Pattern: Black Embersilk Gown (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	-- #if ANYCLASSIC
 	i(54593, {	-- Pattern: Bloodthirsty Embersilk Cowl (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	i(54594, {	-- Pattern: Bloodthirsty Embersilk Pants (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	i(54595, {	-- Pattern: Bloodthirsty Embersilk Robe (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	i(54596, {	-- Pattern: Bloodthirsty Fireweave (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	i(54597, {	-- Pattern: Bloodthirsty Fireweave Pants (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	i(54598, {	-- Pattern: Bloodthirsty Fireweave Robe (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	-- #endif
 	i(54603, {	-- Pattern: Breeches of Mended Nightmares (RECIPE!)
-		["cost"] = {{"i", DREAMCLOTH, 1}},
+		cost = {{"i", DREAMCLOTH, 1}},
 	}),
 	i(54602, {	-- Pattern: Dreamless Belt (RECIPE!)
-		["cost"] = {{"i", DREAMCLOTH, 1}},
+		cost = {{"i", DREAMCLOTH, 1}},
 	}),
 	-- #if ANYCLASSIC
 	i(238123, {	-- Pattern: Embersilk Cowl (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
+		timeline = { ADDED_4_4_2 },
 	}),
 	i(238124, {	-- Pattern: Embersilk Pants (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
+		timeline = { ADDED_4_4_2 },
 	}),
 	i(238125, {	-- Pattern: Embersilk Robe (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
+		timeline = { ADDED_4_4_2 },
 	}),
 	i(238126, {	-- Pattern: Fireweave Cowl (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
+		timeline = { ADDED_4_4_2 },
 	}),
 	i(238127, {	-- Pattern: Fireweave Pants (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
+		timeline = { ADDED_4_4_2 },
 	}),
 	i(238128, {	-- Pattern: Fireweave Robe (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
+		timeline = { ADDED_4_4_2 },
 	}),
 	-- #endif
 	i(54604, {	-- Pattern: Flame-Ascended Pantaloons (RECIPE!)
-		["cost"] = {{"i", DREAMCLOTH, 1}},
+		cost = {{"i", DREAMCLOTH, 1}},
 	}),
 	i(54605, {	-- Pattern: Illusionary Bag (RECIPE!)
-		["cost"] = {{"i", DREAMCLOTH, 1}},
+		cost = {{"i", DREAMCLOTH, 1}},
 	}),
 	i(54599, {	-- Pattern: Powerful Enchanted Spellthread (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	i(54600, {	-- Pattern: Powerful Ghostly Spellthread (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	-- #if ANYCLASSIC
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238068, {	-- Pattern: Vicious Embersilk Cowl (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238069, {	-- Pattern: Vicious Embersilk (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238070, {	-- Pattern: Vicious Embersilk Robe (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238071, {	-- Pattern: Vicious Fireweave Cowl (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238072, {	-- Pattern: Vicious Fireweave Pants (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(238073, {	-- Pattern: Vicious Fireweave Robe (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
-		["timeline"] = { ADDED_4_4_2 },
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
+		timeline = { ADDED_4_4_2 },
 	})),
 	-- #else
 	i(54593, {	-- Pattern: Vicious Embersilk Cowl (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	i(54594, {	-- Pattern: Vicious Embersilk Pants (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	i(54595, {	-- Pattern: Vicious Embersilk Robe (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	i(54596, {	-- Pattern: Vicious Fireweave Cowl (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	i(54597, {	-- Pattern: Vicious Fireweave Pants (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	i(54598, {	-- Pattern: Vicious Fireweave Robe (RECIPE!)
-		["cost"] = {{"i", BOLT_OF_EMBERSILK, 8}},
+		cost = {{"i", BOLT_OF_EMBERSILK, 8}},
 	}),
 	-- #endif
 }));
-MOP_TAILORING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+MOP_TAILORING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
 	r(110426, {	-- Tailoring (Zen Master)
-		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
-		["rank"] = 8,
+		rank = 8,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264624, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Pandaria Tailoring
-	r(330242, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Mist of Pandaria]
-	r(330243, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Mist of Pandaria]
-	r(330244, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Mist of Pandaria]
-	r(330245, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Mist of Pandaria]
-	r(330246, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Mist of Pandaria]
+	applyclassicphase(BFA_PHASE_ONE, r(264624, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Pandaria Tailoring
+	r(330242, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [Mist of Pandaria]
+	r(330243, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [Mist of Pandaria]
+	r(330244, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [Mist of Pandaria]
+	r(330245, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV [Mist of Pandaria]
+	r(330246, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V [Mist of Pandaria]
 	n(ARMOR, {
 		-- #if NOT ANYCLASSIC
 		-- Wouter NOTE: this is not available in Classic for some reason
-		r(134585, {["timeline"] = {ADDED_5_1_0}}),	-- Bipsi's Gloves
+		r(134585, {timeline = {ADDED_5_1_0}}),	-- Bipsi's Gloves
 		-- #endif
 		r(125530),	-- Windwool Belt
 		r(125529),	-- Windwool Boots
@@ -695,28 +695,28 @@ MOP_TAILORING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] 
 	n(ARMOR_ENCHANTMENTS, {
 		r(125553),	-- Cerulean Spellthread
 		r(125482, {	-- Darkglow Embroidery [Rank 3]
-			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-			["rank"] = 3,
+			timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+			rank = 3,
 		}),
 		r(125481, {	-- Lightweave Embroidery [Rank 3]
-			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-			["rank"] = 3,
+			timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+			rank = 3,
 		}),
 		r(125496, {	-- Master's Spellthread [Rank 3]
-			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-			["rank"] = 3,
+			timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+			rank = 3,
 		}),
 		r(125552),	-- Pearlescent Spellthread
 		r(125497, {	-- Sanctified Spellthread [Rank 3]
-			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-			["rank"] = 3,
+			timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+			rank = 3,
 		}),
 		r(125483, {	-- Swordguard Embroidery [Rank 3]
-			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-			["rank"] = 3,
+			timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+			rank = 3,
 		}),
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1263553),	-- Pandaren Fishing Net
 		r(1261250),	-- Pandaren Meander Rug
 	})),
@@ -732,22 +732,22 @@ MOP_TAILORING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] 
 		r(130325),	-- Song of Harmony
 	}),
 }));
-DRAENOR_TAILORING = applyclassicphase(WOD_PHASE_ONE, i(115357, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at Tailoring Emporium for 100 gold.",
-	["groups"] = {
+DRAENOR_TAILORING = applyclassicphase(WOD_PHASE_ONE, i(115357, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+	description = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at Tailoring Emporium for 100 gold.",
+	groups = {
 		r(158758, {	-- Tailoring (Draenor Master)
-			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC
-			["collectible"] = false,
+			collectible = false,
 			-- #endif
-			["rank"] = 9,
+			rank = 9,
 		}),
-		applyclassicphase(BFA_PHASE_ONE, r(264626, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Draenor Tailoring
-		r(330247, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Warlords of Draenor]
-		r(330248, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Warlords of Draenor]
-		r(330249, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Warlords of Draenor]
-		r(330250, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Warlords of Draenor]
-		r(330251, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Warlords of Draenor]
+		applyclassicphase(BFA_PHASE_ONE, r(264626, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Draenor Tailoring
+		r(330247, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [Warlords of Draenor]
+		r(330248, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [Warlords of Draenor]
+		r(330249, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [Warlords of Draenor]
+		r(330250, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV [Warlords of Draenor]
+		r(330251, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V [Warlords of Draenor]
 		-- #if AFTER BFA
 		r(172539),	-- Antiseptic Bandage
 		-- #endif
@@ -758,104 +758,104 @@ DRAENOR_TAILORING = applyclassicphase(WOD_PHASE_ONE, i(115357, bubbleDownSelf({ 
 		r(168853),	-- Sumptuous Robes
 	},
 })));
-COMMON_DRAENOR_TAILORING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+COMMON_DRAENOR_TAILORING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	i(257109, {	-- Pattern: Argussian Circular Rug (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
-		["timeline"] = { ADDED_11_2_7 },
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		timeline = { ADDED_11_2_7 },
 	}),
 	i(258486, {	-- Pattern: Beloved Elekk Plushie (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
-		["timeline"] = { ADDED_11_2_7 },
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		timeline = { ADDED_11_2_7 },
 	}),
 	i(284263, {	-- Pattern: Beloved Murloc Plushie (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
-		["timeline"] = { ADDED_12_1_5 },
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		timeline = { ADDED_12_1_5 },
 	}),
 	i(257110, {	-- Pattern: Karabor Bed (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
-		["timeline"] = { ADDED_11_2_7 },
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		timeline = { ADDED_11_2_7 },
 	}),
 	i(114863, {	-- Pattern: Brilliant Hexweave Cloak (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
 	}),
 	i(114866, {	-- Pattern: Creeping Carpet (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 5}},
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 5}},
 	}),
 	i(114865, {	-- Pattern: Elekk Plushie (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 5}},
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 5}},
 	}),
 	i(114872, {	-- Pattern: Greater Hexweave Essence (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 5}},
-		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_6_2_0 },
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 5}},
+		timeline = { ADDED_6_0_3_LAUNCH, REMOVED_6_2_0 },
 	}),
 	i(114864, {	-- Pattern: Hexweave Bag (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 5}},
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 5}},
 	}),
 	i(114860, {	-- Pattern: Hexweave Belt (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
 	}),
 	i(114858, {	-- Pattern: Hexweave Bracers (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
 	}),
 	i(114854, {	-- Pattern: Hexweave Cowl (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
 	}),
 	i(114852, {	-- Pattern: Hexweave Embroidery (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
 	}),
 	i(114856, {	-- Pattern: Hexweave Gloves (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
 	}),
 	i(114855, {	-- Pattern: Hexweave Leggings (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
 	}),
 	i(114853, {	-- Pattern: Hexweave Mantle (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
 	}),
 	i(114857, {	-- Pattern: Hexweave Robe (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
 	}),
 	i(114859, {	-- Pattern: Hexweave Slippers (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
 	}),
 	i(202234, {	-- Pattern: Impressive Hexweave Essence (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 5}},
-		["timeline"] = { ADDED_10_0_5 },
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 5}},
+		timeline = { ADDED_10_0_5 },
 	}),
 	i(114862, {	-- Pattern: Nimble Hexweave Cloak (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
 	}),
 	i(114861, {	-- Pattern: Powerful Hexweave Cloak (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},
 	}),
 	i(202235, {	-- Pattern: Remarkable Hexweave Essence (RECIPE!)
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 5}},
-		["timeline"] = { ADDED_10_0_5 },
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 5}},
+		timeline = { ADDED_10_0_5 },
 	}),
 	i(114871, {	-- Pattern: Hexweave Essence (RECIPE!)
-		["collectible"] = false,
-		["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
-		["cost"] = {{"i", SECRET_OF_DRAENOR_TAILORING, 5}},
-		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_10_0_5 },
+		collectible = false,
+		description = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
+		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 5}},
+		timeline = { ADDED_6_0_3_LAUNCH, REMOVED_10_0_5 },
 	}),
 }));
-LEGION_TAILORING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+LEGION_TAILORING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1263858),	-- Beloved Raptor Plushie
 		r(1260774),	-- Circular Shal'dorei Rug
-		r(1313524, { ["timeline"] = { ADDED_12_1_5 } }),	-- Decorative Lightweave Bolt
+		r(1313524, { timeline = { ADDED_12_1_5 } }),	-- Decorative Lightweave Bolt
 		r(1260769),	-- Shal'dorei Open-Air Tent
 	})),
 }));
-BFA_TAILORING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
-	r(330257, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Battle for Azeroth]
-	r(330258, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Battle for Azeroth]
-	r(330259, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Battle for Azeroth]
-	r(330260, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Battle for Azeroth]
-	r(330261, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Battle for Azeroth]
+BFA_TAILORING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+	r(330257, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [Battle for Azeroth]
+	r(330258, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [Battle for Azeroth]
+	r(330259, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [Battle for Azeroth]
+	r(330260, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV [Battle for Azeroth]
+	r(330261, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V [Battle for Azeroth]
 	n(ARMOR, {
-		r(285077, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Deep Sea Breeches
-		r(285078, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Deep Sea Gloves
+		r(285077, {timeline = {ADDED_8_1_0}}),	-- Enhanced Deep Sea Breeches
+		r(285078, {timeline = {ADDED_8_1_0}}),	-- Enhanced Deep Sea Gloves
 		r(257122),	-- Embroidered Deep Sea Breeches
 		r(257114),	-- Embroidered Deep Sea Cloak [Rank 1]
 		r(257115),	-- Embroidered Deep Sea Cloak [Rank 2]
@@ -867,12 +867,12 @@ BFA_TAILORING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(269596),	-- Honorable Combatant's Satin Cloak [Rank 1]
 		r(269602),	-- Honorable Combatant's Satin Mittens [Rank 1]
 		r(269605),	-- Honorable Combatant's Satin Pants [Rank 1]
-		r(282168, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Belt [Rank 1]
-		r(282194, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Boots [Rank 1]
-		r(282164, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Bracers [Rank 1]
-		r(282204, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Cloak [Rank 1]
-		r(282191, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Mittens [Rank 1]
-		r(282175, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Pants [Rank 1]
+		r(282168, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Belt [Rank 1]
+		r(282194, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Boots [Rank 1]
+		r(282164, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Bracers [Rank 1]
+		r(282204, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Cloak [Rank 1]
+		r(282191, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Mittens [Rank 1]
+		r(282175, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Pants [Rank 1]
 		r(257102),	-- Tidespray Linen Belt
 		r(257103),	-- Tidespray Linen Bracers
 		r(257107),	-- Tidespray Linen Cloak
@@ -883,12 +883,12 @@ BFA_TAILORING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(257104),	-- Tidespray Linen Robe
 		r(257095),	-- Tidespray Linen Sandals
 		r(257101),	-- Tidespray Linen Spaulders
-		r(304577, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Belt [Rank 1]
-		r(304568, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Boots [Rank 1]
-		r(304580, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Bracers [Rank 1]
-		r(304565, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Cloak [Rank 1]
-		r(304571, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Mittens [Rank 1]
-		r(304574, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Pants [Rank 1]
+		r(304577, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Belt [Rank 1]
+		r(304568, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Boots [Rank 1]
+		r(304580, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Bracers [Rank 1]
+		r(304565, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Cloak [Rank 1]
+		r(304571, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Mittens [Rank 1]
+		r(304574, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Pants [Rank 1]
 	}),
 	n(ARMOR_ENCHANTMENTS, {
 		r(279183),	-- Discreet Spellthread
@@ -899,13 +899,13 @@ BFA_TAILORING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(257125),	-- Deep Sea Bag [Rank 1]
 		r(257126),	-- Deep Sea Bag [Rank 2]
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1260458),	-- Red Dazar'alor Rug
-		r(1315445, { ["timeline"] = { ADDED_12_1_5 } }),	-- Round Nomad's Cushion
+		r(1315445, { timeline = { ADDED_12_1_5 } }),	-- Round Nomad's Cushion
 		r(1260475),	-- Zanchuli Tapestry
 	})),
 	filter(MISC, {
-		r(287274, {["timeline"] = {ADDED_8_1_0}}),	-- Aqueous Alteration
+		r(287274, {timeline = {ADDED_8_1_0}}),	-- Aqueous Alteration
 		r(257134),	-- Battle Flag: Phalanx Defense [Rank 1]
 		r(257135),	-- Battle Flag: Phalanx Defense [Rank 2]
 		r(257137),	-- Battle Flag: Rallying Swiftness [Rank 1]
@@ -915,11 +915,11 @@ BFA_TAILORING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(267202),	-- Deep Sea Bandage
 		r(268983),	-- Hooked Deep Sea Net
 		r(278414),	-- Rough-hooked Tidespray Linen
-		r(286654, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguinated Alteration
+		r(286654, {timeline = {ADDED_8_1_0}}),	-- Sanguinated Alteration
 		r(267201),	-- Tidespray Linen Bandage
 	}),
 }));
-NAZJATAR_TAILORING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
+NAZJATAR_TAILORING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
 	n(ARMOR, {
 		r(299034),	-- Gilded Seaweave Breeches
 		r(299031),	-- Gilded Seaweave Gloves
@@ -935,38 +935,38 @@ NAZJATAR_TAILORING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"
 		r(301403),	-- Seabreeze Saddle Blanket
 	}),
 }));
-SL_TAILORING = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_TAILORING = applyclassicphase(SL_PHASE_ONE, sharedData({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	r(310949),	-- Shadowlands Tailoring
 	r(343634, {	-- Shadowlands Cloth Scavenging
-		["collectible"] = false,
+		collectible = false,
 	}),
 	n(ARMOR, {
 		r(310885, {	-- Grim-Veiled Belt [Rank 1]
-			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
+			sourceQuests = { 62799 },	-- The Vessels of the Thread
 		}),
 		r(310886, {	-- Grim-Veiled Bracers [Rank 1]
-			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
+			sourceQuests = { 62799 },	-- The Vessels of the Thread
 		}),
 		r(310880, {	-- Grim-Veiled Cape [Rank 1]
-			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
+			sourceQuests = { 62799 },	-- The Vessels of the Thread
 		}),
 		r(310882, {	-- Grim-Veiled Hood [Rank 1]
-			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
+			sourceQuests = { 62799 },	-- The Vessels of the Thread
 		}),
 		r(310881, {	-- Grim-Veiled Mittens [Rank 1]
-			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
+			sourceQuests = { 62799 },	-- The Vessels of the Thread
 		}),
 		r(310883, {	-- Grim-Veiled Pants [Rank 1]
-			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
+			sourceQuests = { 62799 },	-- The Vessels of the Thread
 		}),
 		r(310879, {	-- Grim-Veiled Robe [Rank 1]
-			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
+			sourceQuests = { 62799 },	-- The Vessels of the Thread
 		}),
 		r(310878, {	-- Grim-Veiled Sandals [Rank 1]
-			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
+			sourceQuests = { 62799 },	-- The Vessels of the Thread
 		}),
 		r(310884, {	-- Grim-Veiled Spaulders [Rank 1]
-			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
+			sourceQuests = { 62799 },	-- The Vessels of the Thread
 		}),
 		r(310903),	-- Shadowlace Cord
 		r(310900),	-- Shadowlace Cowl
@@ -986,7 +986,7 @@ SL_TAILORING = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { ADD
 		r(310869),	-- Shrouded Cloth Sandals
 		r(310875),	-- Shrouded Cloth Spaulders
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1272578),	-- Aspirant's Ringed Banner
 		r(1272575),	-- Heart of the Forest Banner
 		r(1263853),	-- Kyrian Aspirant's Rolled Cushion
@@ -1000,15 +1000,15 @@ SL_TAILORING = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { ADD
 		r(310924),	-- Shrouded Cloth Bandage
 	}),
 }));
-DF_TAILORING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+DF_TAILORING = applyclassicphase(DF_PHASE_ONE, sharedData({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	r(366258),	-- Dragon Isles Tailoring
 	r(392396, {	-- Dragon Isles Cloth Scavenging
-		["collectible"] = false,
+		collectible = false,
 	}),
 	r(376562),	-- Dragon Isles Unravelling
 	-- Technically, not from the trainer - you temporarily learn these when you touch the crafting table.
-	r(376563, {["u"]=TRAINING}),	-- Fiddle with Draconium Fabric Cutters
-	r(376564, {["u"]=TRAINING}),	-- Fiddle with Khaz'gorite Fabric Cutters
+	r(376563, {u=TRAINING}),	-- Fiddle with Draconium Fabric Cutters
+	r(376564, {u=TRAINING}),	-- Fiddle with Khaz'gorite Fabric Cutters
 	n(ARMOR, {
 		r(376509),	-- Surveyor's Cloth Bands
 		r(376507),	-- Surveyor's Cloth Robe
@@ -1020,7 +1020,7 @@ DF_TAILORING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADD
 		r(395807),	-- Surveyor's Seasoned Hood
 		r(395815),	-- Surveyor's Seasoned Shoulders
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1259247),	-- Draconic Circular Rug
 		r(1261940),	-- Tapestry of the Five Flights
 	})),
@@ -1047,7 +1047,7 @@ DF_TAILORING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADD
 		r(376555),	-- Wildercloth Bolt
 	}),
 }));
-TWW_TAILORING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+TWW_TAILORING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
 	r(423343),	-- Khaz Algar Tailoring
 	r(446926),	-- Unraveling
 	r(425143),	-- Recraft Equipment
@@ -1066,7 +1066,7 @@ TWW_TAILORING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(446976),	-- Weavercloth Bag
 		r(446978),	-- Weavercloth Reagent Bag
 	}),
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1260215),	-- Dornogal Framed Rug
 		r(1260326),	-- Undermine Bean Bag Chair
 	})),
@@ -1090,7 +1090,7 @@ TWW_TAILORING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(446929),	-- Weavercloth Bolt
 	}),
 });
-MID_TAILORING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+MID_TAILORING = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 	r(471015),	-- Midnight Tailoring
 	r(1265674),	-- Artisan Tailor's Moxie
 	r(1265682),	-- Concentration

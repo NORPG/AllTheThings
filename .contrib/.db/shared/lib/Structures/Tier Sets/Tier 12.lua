@@ -143,25 +143,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 	cl(WARRIOR, {
 		-- DPS
 		i(71599, {	-- Helmet of the Molten Giant
-			["cost"] = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
+			cost = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
 		}),
 		i(71603, {	-- Pauldrons of the Molten Giant
-			["cost"] = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
+			cost = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
 		}),
 		i(71601, {	-- Gauntlets of the Molten Giant
-			["cost"] = {
+			cost = {
 				{ "i", 71069, 1 },	-- Gauntlets of the Molten Giant
 				{ "i", 71683, 1 },	-- Gauntlets of the Fiery Protector
 			},
 		}),
 		i(71600, {	-- Battleplate of the Molten Giant
-			["cost"] = {
+			cost = {
 				{ "i", 71068, 1 },	-- Battleplate of the Molten Giant
 				{ "i", 71686, 1 },	-- Chest of the Fiery Protector
 			},
 		}),
 		i(71602, {	-- Legplates of the Molten Giant
-			["cost"] = {
+			cost = {
 				{ "i", 71071, 1 },	-- Legplates of the Molten Giant
 				{ "i", 71685, 1 },	-- Leggings of the Fiery Protector
 			},
@@ -169,25 +169,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 
 		-- Protection
 		i(71606, {	-- Faceguard of the Molten Giant
-			["cost"] = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
+			cost = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
 		}),
 		i(71608, {	-- Shoulderguards of the Molten Giant
-			["cost"] = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
+			cost = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
 		}),
 		i(71605, {	-- Handguards of the Molten Giant
-			["cost"] = {
+			cost = {
 				{ "i", 70943, 1 },	-- Handguards of the Molten Giant
 				{ "i", 71683, 1 },	-- Gauntlets of the Fiery Protector
 			},
 		}),
 		i(71604, {	-- Chestguard of the Molten Giant
-			["cost"] = {
+			cost = {
 				{ "i", 70945, 1 },	-- Chestguard of the Molten Giant
 				{ "i", 71686, 1 },	-- Chest of the Fiery Protector
 			},
 		}),
 		i(71607, {	-- Legguards of the Molten Giant
-			["cost"] = {
+			cost = {
 				{ "i", 70942, 1 },	-- Legguards of the Molten Giant
 				{ "i", 71685, 1 },	-- Leggings of the Fiery Protector
 			},
@@ -196,25 +196,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 	cl(PALADIN, {
 		-- DPS
 		i(71514, {	-- Immolation Helmet
-			["cost"] = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
+			cost = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
 		}),
 		i(71516, {	-- Immolation Pauldrons
-			["cost"] = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
+			cost = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
 		}),
 		i(71513, {	-- Immolation Gauntlets
-			["cost"] = {
+			cost = {
 				{ "i", 71064, 1 },	-- Immolation Gauntlets
 				{ "i", 71676, 1 },	-- Gauntlets of the Fiery Conqueror
 			},
 		}),
 		i(71512, {	-- Immolation Battleplate
-			["cost"] = {
+			cost = {
 				{ "i", 71063, 1 },	-- Immolation Battleplate
 				{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
 			},
 		}),
 		i(71515, {	-- Immolation Legplates
-			["cost"] = {
+			cost = {
 				{ "i", 71066, 1 },	-- Immolation Legplates
 				{ "i", 71678, 1 },	-- Leggings of the Fiery Conqueror
 			},
@@ -222,25 +222,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 
 		-- Holy
 		i(71519, {	-- Immolation Headguard
-			["cost"] = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
+			cost = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
 		}),
 		i(71521, {	-- Immolation Mantle
-			["cost"] = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
+			cost = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
 		}),
 		i(71518, {	-- Immolation Gloves
-			["cost"] = {
+			cost = {
 				{ "i", 71092, 1 },	-- Immolation Gloves
 				{ "i", 71676, 1 },	-- Gauntlets of the Fiery Conqueror
 			},
 		}),
 		i(71517, {	-- Immolation Breastplate
-			["cost"] = {
+			cost = {
 				{ "i", 71091, 1 },	-- Immolation Breastplate
 				{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
 			},
 		}),
 		i(71520, {	-- Immolation Greaves
-			["cost"] = {
+			cost = {
 				{ "i", 71094, 1 },	-- Immolation Greaves
 				{ "i", 71678, 1 },	-- Leggings of the Fiery Conqueror
 			},
@@ -248,25 +248,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 
 		-- Protection
 		i(71524, {	-- Immolation Faceguard
-			["cost"] = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
+			cost = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
 		}),
 		i(71526, {	-- Immolation Shoulderguards
-			["cost"] = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
+			cost = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
 		}),
 		i(71523, {	-- Immolation Handguards
-			["cost"] = {
+			cost = {
 				{ "i", 70949, 1 },	-- Immolation Handguards
 				{ "i", 71676, 1 },	-- Gauntlets of the Fiery Conqueror
 			},
 		}),
 		i(71522, {	-- Immolation Chestguard
-			["cost"] = {
+			cost = {
 				{ "i", 70950, 1 },	-- Immolation Chestguard
 				{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
 			},
 		}),
 		i(71525, {	-- Immolation Legguards
-			["cost"] = {
+			cost = {
 				{ "i", 70947, 1 },	-- Immolation Legguards
 				{ "i", 71678, 1 },	-- Leggings of the Fiery Conqueror
 			},
@@ -275,25 +275,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 	cl(DEATHKNIGHT, {
 		-- DPS
 		i(71478, {	-- Elementium Deathplate Helmet
-			["cost"] = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
+			cost = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
 		}),
 		i(71480, {	-- Elementium Deathplate Pauldrons
-			["cost"] = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
+			cost = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
 		}),
 		i(71477, {	-- Elementium Deathplate Gauntlets
-			["cost"] = {
+			cost = {
 				{ "i", 71059, 1 },	-- Elementium Deathplate Gauntlets
 				{ "i", 71669, 1 },	-- Gauntlets of the Fiery Vanquisher
 			},
 		}),
 		i(71476, {	-- Elementium Deathplate Breastplate
-			["cost"] = {
+			cost = {
 				{ "i", 71058, 1 },	-- Elementium Deathplate Breastplate
 				{ "i", 71672, 1 },	-- Chest of the Fiery Vanquisher
 			},
 		}),
 		i(71479, {	-- Elementium Deathplate Greaves
-			["cost"] = {
+			cost = {
 				{ "i", 71061, 1 },	-- Elementium Deathplate Greaves
 				{ "i", 71671, 1 },	-- Leggings of the Fiery Vanquisher
 			},
@@ -301,25 +301,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 
 		-- Protection
 		i(71483, {	-- Elementium Deathplate Faceguard
-			["cost"] = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
+			cost = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
 		}),
 		i(71485, {	-- Elementium Deathplate Shoulderguards
-			["cost"] = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
+			cost = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
 		}),
 		i(71482, {	-- Elementium Deathplate Handguards
-			["cost"] = {
+			cost = {
 				{ "i", 70953, 1 },	-- Elementium Deathplate Handguards
 				{ "i", 71669, 1 },	-- Gauntlets of the Fiery Vanquisher
 			},
 		}),
 		i(71481, {	-- Elementium Deathplate Chestguard
-			["cost"] = {
+			cost = {
 				{ "i", 70955, 1 },	-- Elementium Deathplate Chestguard
 				{ "i", 71672, 1 },	-- Chest of the Fiery Vanquisher
 			},
 		}),
 		i(71484, {	-- Elementium Deathplate Legguards
-			["cost"] = {
+			cost = {
 				{ "i", 70952, 1 },	-- Elementium Deathplate Legguards
 				{ "i", 71671, 1 },	-- Leggings of the Fiery Vanquisher
 			},
@@ -327,25 +327,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 	}),
 	cl(HUNTER, {
 		i(71503, {	-- Flamewaker's Headguard
-			["cost"] = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
+			cost = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
 		}),
 		i(71505, {	-- Flamewaker's Spaulders
-			["cost"] = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
+			cost = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
 		}),
 		i(71502, {	-- Flamewaker's Gloves
-			["cost"] = {
+			cost = {
 				{ "i", 71050, 1 },	-- Flamewaker's Gloves
 				{ "i", 71683, 1 },	-- Gauntlets of the Fiery Protector
 			},
 		}),
 		i(71501, {	-- Flamewaker's Tunic
-			["cost"] = {
+			cost = {
 				{ "i", 71054, 1 },	-- Flamewaker's Tunic
 				{ "i", 71686, 1 },	-- Chest of the Fiery Protector
 			},
 		}),
 		i(71504, {	-- Flamewaker's Legguards
-			["cost"] = {
+			cost = {
 				{ "i", 71052, 1 },	-- Flamewaker's Legguards
 				{ "i", 71685, 1 },	-- Leggings of the Fiery Protector
 			},
@@ -353,25 +353,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 	}),
 	cl(ROGUE, {
 		i(71539, {	-- Dark Phoenix Helmet
-			["cost"] = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
+			cost = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
 		}),
 		i(71541, {	-- Dark Phoenix Spaulders
-			["cost"] = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
+			cost = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
 		}),
 		i(71538, {	-- Dark Phoenix Gloves
-			["cost"] = {
+			cost = {
 				{ "i", 71046, 1 },	-- Dark Phoenix Gloves
 				{ "i", 71669, 1 },	-- Gauntlets of the Fiery Vanquisher
 			},
 		}),
 		i(71537, {	-- Dark Phoenix Tunic
-			["cost"] = {
+			cost = {
 				{ "i", 71045, 1 },	-- Dark Phoenix Tunic
 				{ "i", 71672, 1 },	-- Chest of the Fiery Vanquisher
 			},
 		}),
 		i(71540, {	-- Dark Phoenix Legguards
-			["cost"] = {
+			cost = {
 				{ "i", 71048, 1 },	-- Dark Phoenix Legguards
 				{ "i", 71671, 1 },	-- Leggings of the Fiery Vanquisher
 			},
@@ -380,25 +380,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 	cl(PRIEST, {
 		-- DPS
 		i(71533, {	-- Hood of the Cleansing Flame
-			["cost"] = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
+			cost = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
 		}),
 		i(71536, {	-- Shoulderwraps of the Cleansing Flame
-			["cost"] = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
+			cost = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
 		}),
 		i(71532, {	-- Gloves of the Cleansing Flame
-			["cost"] = {
+			cost = {
 				{ "i", 71276, 1 },	-- Gloves of the Cleansing Flame
 				{ "i", 71676, 1 },	-- Gauntlets of the Fiery Conqueror
 			},
 		}),
 		i(71535, {	-- Vestment of the Cleansing Flame
-			["cost"] = {
+			cost = {
 				{ "i", 71279, 1 },	-- Vestment of the Cleansing Flame
 				{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
 			},
 		}),
 		i(71534, {	-- Leggings of the Cleansing Flame
-			["cost"] = {
+			cost = {
 				{ "i", 71278, 1 },	-- Leggings of the Cleansing Flame
 				{ "i", 71678, 1 },	-- Leggings of the Fiery Conqueror
 			},
@@ -406,25 +406,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 
 		-- Holy
 		i(71528, {	-- Cowl of the Cleansing Flame
-			["cost"] = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
+			cost = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
 		}),
 		i(71531, {	-- Mantle of the Cleansing Flame
-			["cost"] = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
+			cost = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
 		}),
 		i(71527, {	-- Handwraps of the Cleansing Flame
-			["cost"] = {
+			cost = {
 				{ "i", 71271, 1 },	-- Handwraps of the Cleansing Flame
 				{ "i", 71676, 1 },	-- Gauntlets of the Fiery Conqueror
 			},
 		}),
 		i(71530, {	-- Robes of the Cleansing Flame
-			["cost"] = {
+			cost = {
 				{ "i", 71274, 1 },	-- Robes of the Cleansing Flame
 				{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
 			},
 		}),
 		i(71529, {	-- Legwraps of the Cleansing Flame
-			["cost"] = {
+			cost = {
 				{ "i", 71273, 1 },	-- Legwraps of the Cleansing Flame
 				{ "i", 71678, 1 },	-- Leggings of the Fiery Conqueror
 			},
@@ -433,25 +433,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 	cl(SHAMAN, {
 		-- Enhance
 		i(71549, {	-- Erupting Volcanic Helmet
-			["cost"] = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
+			cost = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
 		}),
 		i(71551, {	-- Erupting Volcanic Spaulders
-			["cost"] = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
+			cost = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
 		}),
 		i(71548, {	-- Erupting Volcanic Grips
-			["cost"] = {
+			cost = {
 				{ "i", 71302, 1 },	-- Erupting Volcanic Grips
 				{ "i", 71683, 1 },	-- Gauntlets of the Fiery Protector
 			},
 		}),
 		i(71547, {	-- Erupting Volcanic Cuirass
-			["cost"] = {
+			cost = {
 				{ "i", 71301, 1 },	-- Erupting Volcanic Cuirass
 				{ "i", 71686, 1 },	-- Chest of the Fiery Protector
 			},
 		}),
 		i(71550, {	-- Erupting Volcanic Legguards
-			["cost"] = {
+			cost = {
 				{ "i", 71304, 1 },	-- Erupting Volcanic Legguards
 				{ "i", 71685, 1 },	-- Leggings of the Fiery Protector
 			},
@@ -459,25 +459,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 
 		-- Elemental
 		i(71554, {	-- Erupting Volcanic Headpiece
-			["cost"] = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
+			cost = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
 		}),
 		i(71556, {	-- Erupting Volcanic Shoulderwraps
-			["cost"] = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
+			cost = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
 		}),
 		i(71553, {	-- Erupting Volcanic Gloves
-			["cost"] = {
+			cost = {
 				{ "i", 71292, 1 },	-- Erupting Volcanic Gloves
 				{ "i", 71683, 1 },	-- Gauntlets of the Fiery Protector
 			},
 		}),
 		i(71552, {	-- Erupting Volcanic Hauberk
-			["cost"] = {
+			cost = {
 				{ "i", 71291, 1 },	-- Erupting Volcanic Hauberk
 				{ "i", 71686, 1 },	-- Chest of the Fiery Protector
 			},
 		}),
 		i(71555, {	-- Erupting Volcanic Kilt
-			["cost"] = {
+			cost = {
 				{ "i", 71294, 1 },	-- Erupting Volcanic Kilt
 				{ "i", 71685, 1 },	-- Leggings of the Fiery Protector
 			},
@@ -485,25 +485,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 
 		-- Restoration
 		i(71544, {	-- Erupting Volcanic Faceguard
-			["cost"] = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
+			cost = { { "i", 71684, 1 }, },	-- Crown of the Fiery Protector
 		}),
 		i(71546, {	-- Erupting Volcanic Mantle
-			["cost"] = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
+			cost = { { "i", 71687, 1 }, },	-- Shoulders of the Fiery Protector
 		}),
 		i(71543, {	-- Erupting Volcanic Handwraps
-			["cost"] = {
+			cost = {
 				{ "i", 71297, 1 },	-- Erupting Volcanic Handwraps
 				{ "i", 71683, 1 },	-- Gauntlets of the Fiery Protector
 			},
 		}),
 		i(71542, {	-- Erupting Volcanic Tunic
-			["cost"] = {
+			cost = {
 				{ "i", 71296, 1 },	-- Erupting Volcanic Tunic
 				{ "i", 71686, 1 },	-- Chest of the Fiery Protector
 			},
 		}),
 		i(71545, {	-- Erupting Volcanic Legwraps
-			["cost"] = {
+			cost = {
 				{ "i", 71299, 1 },	-- Erupting Volcanic Legwraps
 				{ "i", 71685, 1 },	-- Leggings of the Fiery Protector
 			},
@@ -511,25 +511,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 	}),
 	cl(MAGE, {
 		i(71508, {	-- Firehawk Hood
-			["cost"] = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
+			cost = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
 		}),
 		i(71511, {	-- Firehawk Mantle
-			["cost"] = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
+			cost = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
 		}),
 		i(71507, {	-- Firehawk Gloves
-			["cost"] = {
+			cost = {
 				{ "i", 71286, 1 },	-- Firehawk Gloves
 				{ "i", 71669, 1 },	-- Gauntlets of the Fiery Vanquisher
 			},
 		}),
 		i(71510, {	-- Firehawk Robes
-			["cost"] = {
+			cost = {
 				{ "i", 71289, 1 },	-- Firehawk Robes
 				{ "i", 71672, 1 },	-- Chest of the Fiery Vanquisher
 			},
 		}),
 		i(71509, {	-- Firehawk Leggings
-			["cost"] = {
+			cost = {
 				{ "i", 71288, 1 },	-- Firehawk Leggings
 				{ "i", 71671, 1 },	-- Leggings of the Fiery Vanquisher
 			},
@@ -537,25 +537,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 	}),
 	cl(WARLOCK, {
 		i(71595, {	-- Balespider's Hood
-			["cost"] = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
+			cost = { { "i", 71677, 1 }, },	-- Crown of the Fiery Conqueror
 		}),
 		i(71598, {	-- Balespider's Mantle
-			["cost"] = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
+			cost = { { "i", 71680, 1 }, },	-- Shoulders of the Fiery Conqueror
 		}),
 		i(71594, {	-- Balespider's Handwraps
-			["cost"] = {
+			cost = {
 				{ "i", 71281, 1 },	-- Balespider's Handwraps
 				{ "i", 71676, 1 },	-- Gauntlets of the Fiery Conqueror
 			},
 		}),
 		i(71597, {	-- Balespider's Robes
-			["cost"] = {
+			cost = {
 				{ "i", 71284, 1 },	-- Balespider's Robes
 				{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
 			},
 		}),
 		i(71596, {	-- Balespider's Leggings
-			["cost"] = {
+			cost = {
 				{ "i", 71283, 1 },	-- Balespider's Leggings
 				{ "i", 71678, 1 },	-- Leggings of the Fiery Conqueror
 			},
@@ -564,25 +564,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 	cl(DRUID, {
 		-- Boomkin
 		i(71497, {	-- Obsidian Arborweave Cover
-			["cost"] = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
+			cost = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
 		}),
 		i(71500, {	-- Obsidian Arborweave Shoulderwraps
-			["cost"] = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
+			cost = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
 		}),
 		i(71496, {	-- Obsidian Arborweave Gloves
-			["cost"] = {
+			cost = {
 				{ "i", 71107, 1 },	-- Obsidian Arborweave Gloves
 				{ "i", 71669, 1 },	-- Gauntlets of the Fiery Vanquisher
 			},
 		}),
 		i(71499, {	-- Obsidian Arborweave Vestment
-			["cost"] = {
+			cost = {
 				{ "i", 71110, 1 },	-- Obsidian Arborweave Vestment
 				{ "i", 71672, 1 },	-- Chest of the Fiery Vanquisher
 			},
 		}),
 		i(71498, {	-- Obsidian Arborweave Leggings
-			["cost"] = {
+			cost = {
 				{ "i", 71109, 1 },	-- Obsidian Arborweave Leggings
 				{ "i", 71671, 1 },	-- Leggings of the Fiery Vanquisher
 			},
@@ -590,25 +590,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 
 		-- Feral
 		i(71488, {	-- Obsidian Arborweave Headpiece
-			["cost"] = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
+			cost = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
 		}),
 		i(71490, {	-- Obsidian Arborweave Spaulders
-			["cost"] = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
+			cost = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
 		}),
 		i(71487, {	-- Obsidian Arborweave Grips
-			["cost"] = {
+			cost = {
 				{ "i", 71097, 1 },	-- Obsidian Arborweave Grips
 				{ "i", 71669, 1 },	-- Gauntlets of the Fiery Vanquisher
 			},
 		}),
 		i(71486, {	-- Obsidian Arborweave Raiment
-			["cost"] = {
+			cost = {
 				{ "i", 71100, 1 },	-- Obsidian Arborweave Raiment
 				{ "i", 71672, 1 },	-- Chest of the Fiery Vanquisher
 			},
 		}),
 		i(71489, {	-- Obsidian Arborweave Legguards
-			["cost"] = {
+			cost = {
 				{ "i", 71099, 1 },	-- Obsidian Arborweave Legguards
 				{ "i", 71671, 1 },	-- Leggings of the Fiery Vanquisher
 			},
@@ -616,25 +616,25 @@ local TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 
 		-- Restoration
 		i(71492, {	-- Obsidian Arborweave Helm
-			["cost"] = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
+			cost = { { "i", 71670, 1 }, },	-- Crown of the Fiery Vanquisher
 		}),
 		i(71495, {	-- Obsidian Arborweave Mantle
-			["cost"] = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
+			cost = { { "i", 71673, 1 }, },	-- Shoulders of the Fiery Vanquisher
 		}),
 		i(71491, {	-- Obsidian Arborweave Handwraps
-			["cost"] = {
+			cost = {
 				{ "i", 71102, 1 },	-- Obsidian Arborweave Handwraps
 				{ "i", 71669, 1 },	-- Gauntlets of the Fiery Vanquisher
 			},
 		}),
 		i(71494, {	-- Obsidian Arborweave Tunic
-			["cost"] = {
+			cost = {
 				{ "i", 71105, 1 },	-- Obsidian Arborweave Tunic
 				{ "i", 71672, 1 },	-- Chest of the Fiery Vanquisher
 			},
 		}),
 		i(71493, {	-- Obsidian Arborweave Legwraps
-			["cost"] = {
+			cost = {
 				{ "i", 71104, 1 },	-- Obsidian Arborweave Legwraps
 				{ "i", 71671, 1 },	-- Leggings of the Fiery Vanquisher
 			},
@@ -649,19 +649,19 @@ local TIER_TWELVE_COMMON_GROUPS = {
 	i(70937),	-- Bracers of Regal Force
 	-- #if BEFORE MOP
 	i(71146, {	-- Covenant of the Flame
-		["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+		timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
 	}),
 	-- #endif
 	i(71210),	-- Crystalline Brimstone Ring
 	-- #if BEFORE MOP
 	i(70939, {	-- Deathclutch Figurine
-		["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+		timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
 	}),
 	-- #endif
 	i(70940),	-- Deflecting Brimstone Band
 	-- #if BEFORE MOP
 	i(71218, {	-- Deflecting Star
-		["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+		timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
 	}),
 	-- #endif
 	i(71265),	-- Emberflame Bracers
@@ -671,27 +671,27 @@ local TIER_TWELVE_COMMON_GROUPS = {
 	i(71261),	-- Gigantiform Bracers
 	-- #if BEFORE MOP
 	i(71152, {	-- Morningstar Shard
-		["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+		timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
 	}),
 	-- #endif
 	i(71129),	-- Necklace of Smoke Signals
 	-- #if BEFORE MOP
 	i(71147, {	-- Relic of the Elemental Lords
-		["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+		timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
 	}),
 	-- #endif
 	i(71150),	-- Scorchvine Wand
 	i(71208),	-- Serrated Brimstone Signet
 	-- #if BEFORE MOP
 	i(71149, {	-- Singed Plume of Aviana
-		["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+		timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
 	}),
 	-- #endif
 	i(71262),	-- Smolderskull Bindings
 	i(71211),	-- Soothing Brimstone Circle
 	-- #if BEFORE MOP
 	i(71148, {	-- Soulflame Vial
-		["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+		timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
 	}),
 	-- #endif
 	i(71209),	-- Splintered Brimstone Seal

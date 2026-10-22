@@ -4,11 +4,11 @@
 
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, n(ACHIEVEMENTS, {
-		["timeline"] = { ADDED_5_0_4 },
-		["groups"] = {
+		timeline = { ADDED_5_0_4 },
+		groups = {
 			ach(6920, {	-- Challenge Conqueror
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					6894,	-- Gate of the Setting Sun Challenger
 					6892,	-- Mogu'shan Palace Challenger
 					6895,	-- Scarlet Halls Challenger
@@ -19,11 +19,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					6888,	-- Stormstout Brewery Challenger
 					6884,	-- Temple of the Jade Serpent Challenger
 				}},
-				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
+				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
 			}),
 			ach(6374, {	-- Challenge Conqueror: Bronze
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					6905,	-- Gate of the Setting Sun: Bronze
 					6899,	-- Mogu'shan Palace: Bronze
 					6908,	-- Scarlet Halls: Bronze
@@ -34,14 +34,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					6889,	-- Stormstout Brewery: Bronze
 					6885,	-- Temple of the Jade Serpent: Bronze
 				}},
-				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-				["groups"] = {
+				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				groups = {
 					title(201),	-- <Name> the Undaunted
 				},
 			}),
 			ach(6375, {	-- Challenge Conqueror: Silver
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					6906,	-- Gate of the Setting Sun: Silver
 					6900,	-- Mogu'shan Palace: Silver
 					6909,	-- Scarlet Halls: Silver
@@ -52,14 +52,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					6890,	-- Stormstout Brewery: Silver
 					6886,	-- Temple of the Jade Serpent: Silver
 				}},
-				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-				["groups"] = {
+				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				groups = {
 					i(90045),	-- Ancestral Phoenix Egg
 				},
 			}),
 			ach(6378, {	-- Challenge Conqueror: Gold
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					6907,	-- Gate of the Setting Sun: Gold
 					6901,	-- Mogu'shan Palace: Gold
 					6910,	-- Scarlet Halls: Gold
@@ -70,11 +70,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					6891,	-- Stormstout Brewery: Gold
 					6888,	-- Temple of the Jade Serpent: Gold
 				}},
-				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-				["groups"] = {
+				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				groups = {
 					i(90156, {	-- Golden Chest of the Betrayer
-						["classes"] = { WARLOCK },
-						["groups"] = {
+						classes = { WARLOCK },
+						groups = {
 							i(90137),	-- Boots of the Betrayer
 							i(90139),	-- Bracers of the Betrayer
 							i(90138),	-- Amice of the Betrayer
@@ -86,8 +86,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					i(90164, {	-- Golden Chest of the Cycle
-						["classes"] = { DRUID },
-						["groups"] = {
+						classes = { DRUID },
+						groups = {
 							i(90066),	-- Bracers of the Cycle
 							i(90063),	-- Leggings of the Cycle
 							i(90060),	-- Sandals of the Cycle
@@ -99,8 +99,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					i(90158, {	-- Golden Chest of the Elemental Triad
-						["classes"] = { MAGE },
-						["groups"] = {
+						classes = { MAGE },
+						groups = {
 							i(90082),	-- Hood of the Elemental Triad
 							i(90083),	-- Leggings of the Elemental Triad
 							i(90084),	-- Robes of the Elemental Triad
@@ -112,8 +112,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					i(90155, {	-- Golden Chest of the Golden King
-						["classes"] = { WARRIOR },
-						["groups"] = {
+						classes = { WARRIOR },
+						groups = {
 							i(90154),	-- Bracers of the Golden King
 							i(90151),	-- Crown of the Golden King
 							i(90148),	-- Greatboots of the Golden King
@@ -125,8 +125,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					i(90161, {	-- Golden Chest of the Holy Warrior
-						["classes"] = { PALADIN },
-						["groups"] = {
+						classes = { PALADIN },
+						groups = {
 							i(90098),	-- Chestplate of the Holy Warrior
 							i(90099),	-- Gauntlets of the Holy Warrior
 							i(90096),	-- Girdle of the Holy Warrior
@@ -138,8 +138,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					i(90163, {	-- Golden Chest of the Howling Beast
-						["classes"] = { HUNTER },
-						["groups"] = {
+						classes = { HUNTER },
+						groups = {
 							i(90070),	-- Chestguard of the Howling Beast
 							i(90075),	-- Wristwraps of the Howling Beast
 							i(90068),	-- Cinch of the Howling Beast
@@ -151,8 +151,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					i(90165, {	-- Golden Chest of the Lich Lord
-						["classes"] = { DEATHKNIGHT },
-						["groups"] = {
+						classes = { DEATHKNIGHT },
+						groups = {
 							i(90056),	-- Bracers of the Lich Lord
 							i(90051),	-- Chestguard of the Lich Lord
 							i(90053),	-- Crown of the Lich Lord
@@ -164,8 +164,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					i(90160, {	-- Golden Chest of the Light
-						["classes"] = { PRIEST },
-						["groups"] = {
+						classes = { PRIEST },
+						groups = {
 							i(90112),	-- Bracers of the Light
 							i(90116),	-- Cowl of the Light
 							i(90117),	-- Leggings of the Light
@@ -177,8 +177,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					i(90162, {	-- Golden Chest of the Regal Lord
-						["classes"] = { MONK },
-						["groups"] = {
+						classes = { MONK },
+						groups = {
 							i(90095),	-- Bracers of the Regal Lord
 							i(90090),	-- Chestwrap of the Regal Lord
 							i(90092),	-- Crown of the Regal Lord
@@ -190,8 +190,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					i(90159, {	-- Golden Chest of the Silent Assassin
-						["classes"] = { ROGUE },
-						["groups"] = {
+						classes = { ROGUE },
+						groups = {
 							i(90126),	-- Bracers of the Silent Assassin
 							i(90119),	-- Girdle of the Silent Assassin
 							i(90123),	-- Gloves of the Silent Assassin
@@ -203,8 +203,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					i(90157, {	-- Golden Chest of Windfury
-						["classes"] = { SHAMAN },
-						["groups"] = {
+						classes = { SHAMAN },
+						groups = {
 							i(90130),	-- Windfury Harness
 							i(90127),	-- Windfury Bracers
 							i(90133),	-- Windfury Legguards
@@ -220,7 +220,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			-- #if ANYCLASSIC
 			ach(61987, {	-- Challenge Conqueror: Platinum (Season 1)
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					61971,	-- Gate of the Setting Sun: Platinum
 					61969,	-- Mogu'shan Palace: Platinum
 					61972,	-- Scarlet Halls: Platinum
@@ -231,14 +231,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					61968,	-- Stormstout Brewery: Platinum
 					61967,	-- Temple of the Jade Serpent: Platinum
 				}},
-				["timeline"] = { ADDED_5_5_2, REMOVED_5_5_3 },
-				["groups"] = {
+				timeline = { ADDED_5_5_2, REMOVED_5_5_3 },
+				groups = {
 					-- Coins
 				},
 			}),
 			ach(61990, {	-- Challenge Conqueror: Platinum (Season 2)
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					61971,	-- Gate of the Setting Sun: Platinum
 					61969,	-- Mogu'shan Palace: Platinum
 					61972,	-- Scarlet Halls: Platinum
@@ -249,14 +249,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					61968,	-- Stormstout Brewery: Platinum
 					61967,	-- Temple of the Jade Serpent: Platinum
 				}},
-				["timeline"] = { ADDED_5_5_3, REMOVED_5_5_4 },
-				["groups"] = {
+				timeline = { ADDED_5_5_3, REMOVED_5_5_4 },
+				groups = {
 					-- Coins
 				},
 			}),
 			ach(61991, {	-- Challenge Conqueror: Platinum (Season 3)
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					61971,	-- Gate of the Setting Sun: Platinum
 					61969,	-- Mogu'shan Palace: Platinum
 					61972,	-- Scarlet Halls: Platinum
@@ -267,38 +267,38 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					61968,	-- Stormstout Brewery: Platinum
 					61967,	-- Temple of the Jade Serpent: Platinum
 				}},
-				["timeline"] = { ADDED_5_5_4, REMOVED_5_5_5 },
-				["groups"] = {
+				timeline = { ADDED_5_5_4, REMOVED_5_5_5 },
+				groups = {
 					-- Coins
 				},
 			}),
 			-- #endif
 			-- #if ANYCLASSIC
-			ach(62055, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_2, REMOVED_5_5_3 } }, {	-- The Mistwalker (Season 1)
-				["description"] = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit during Season 1 to be a Mistwalker.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
-				["groups"] = {
+			ach(62055, bubbleDownSelf({ timeline = { ADDED_5_5_2, REMOVED_5_5_3 } }, {	-- The Mistwalker (Season 1)
+				description = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit during Season 1 to be a Mistwalker.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
+				groups = {
 					title(255),	-- Mistwalker <Name>
 					i(248742),	-- Reins of the Celestial Riding Tiger (MOUNT!)
 				},
 			})),
-			ach(62059, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_3, REMOVED_5_5_4 } }, {	-- Mistborne (Season 2)
-			-- ToDo: Update for S2 End	["description"] = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit during Season 2 to be a Mistborne.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
-				["groups"] = {
+			ach(62059, bubbleDownSelf({ timeline = { ADDED_5_5_3, REMOVED_5_5_4 } }, {	-- Mistborne (Season 2)
+			-- ToDo: Update for S2 End	description = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit during Season 2 to be a Mistborne.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
+				groups = {
 					title(736),	-- <Name>, the Mistborne
 					i(275928),	-- Reins of the Fire Drake (MOUNT!)
 				},
 			})),
-			ach(62060, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_4, REMOVED_5_5_5 } }, {	-- Heir to the Mist (Season 3)
-			-- ToDo: Update for S3 End	["description"] = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit during Season 3 to be a Heir to the Mist.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
-				["groups"] = {
+			ach(62060, bubbleDownSelf({ timeline = { ADDED_5_5_4, REMOVED_5_5_5 } }, {	-- Heir to the Mist (Season 3)
+			-- ToDo: Update for S3 End	description = "Players must complete |cFFE50D12EACH:|r dungeon listed below within the time limit during Season 3 to be a Heir to the Mist.\n\nTemple of the Jade Serpent: 8m 30s\n\nStormstout Brewery: 6m 30s\n\nGate of the Setting Sun: 5m 30s\n\nShado-Pan Monastery: 10m 30s\n\nSiege of Niuzao Temple: 10m 15s\n\nMogu’shan Palace: 6m 45s\n\nScholomance: 7m 15s\n\nScarlet Halls: 4m 15s\n\nScarlet Monastery: 5m 30s",
+				groups = {
 					title(737),	-- <Name>, Heir to the Mist
 					i(248744),	-- Reins of the Celestial Riding Ox (MOUNT!)
 				},
 			})),
 			-- #else
-			challengemaster(ach(8903, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH } }, {	-- Mistwalker
+			challengemaster(ach(8903, bubbleDownSelf({ timeline = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH } }, {	-- Mistwalker
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					8434,	-- Challenge Master: Gate of the Setting Sun
 					8433,	-- Challenge Master: Mogu'shan Palace
 					8436,	-- Challenge Master: Scarlet Halls
@@ -309,30 +309,30 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					8431,	-- Challenge Master: Stormstout Brewery
 					8430,	-- Challenge Master: Temple of the Jade Serpent
 				}},
-				["groups"] = {
+				groups = {
 					title(255),	-- Mistwalker <Name>
 				},
 			}))),
 			-- #endif
 			ach(6433, {	-- Realm First! Challenge Conqueror: Gold
-				["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+				timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
 			}),
 			-- #if ANYCLASSIC
 			-- SEASON 2
-			ach(61962, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_3, REMOVED_5_5_4 } }, {	-- Realm First! Challenge Conqueror: Platinum (Season 2)
-				["groups"] = {
+			ach(61962, bubbleDownSelf({ timeline = { ADDED_5_5_3, REMOVED_5_5_4 } }, {	-- Realm First! Challenge Conqueror: Platinum (Season 2)
+				groups = {
 					title(738),	-- <Name>, the Thundering Stampede
 				},
 			})),
 			-- SEASON 3
-			ach(61963, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_4, REMOVED_5_5_5 } }, {	-- Realm First! Challenge Conqueror: Platinum (Season 3)
-				["groups"] = {
+			ach(61963, bubbleDownSelf({ timeline = { ADDED_5_5_4, REMOVED_5_5_5 } }, {	-- Realm First! Challenge Conqueror: Platinum (Season 3)
+				groups = {
 					title(739),	-- <Name>, the Momentous Terror
 				},
 			})),
 			-- #endif
 			ach(6927, {	-- Glory of the Pandaria Hero
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					6925,	-- Pandaria Dungeon Hero
 					6460,	-- Hydrophobia
 					6475,	-- Cleaning Up
@@ -362,13 +362,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					6822,	-- Run with the Wind
 					6715,	-- Polyformic Acid Science
 				}},
-				["groups"] = {
+				groups = {
 					i(87769),	-- Crimson Cloud Serpent (MOUNT!)
 				},
 			}),
 			ach(6932, {	-- Glory of the Pandaria Raider
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					6823,	-- Must Love Dogs
 					6674,	-- Anything You Can Do, I Can Do Better...
 					7056,	-- Sorry, Were You Looking for This?
@@ -399,13 +399,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					6732,	-- Heroic: Tsulong
 					6733,	-- Heroic: Lei Shi
 				}},
-				["groups"] = {
+				groups = {
 					i(87773),	-- Heavenly Crimson Cloud Serpent (MOUNT!)
 				},
 			}),
 			ach(6925, {	-- Pandaria Dungeon Hero
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					6758,	-- Heroic: Temple of the Jade Serpent
 					6456,	-- Heroic: Stormstout Brewery
 					6756,	-- Heroic: Mogu'shan Palace
@@ -417,7 +417,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					6763,	-- Heroic: Siege of Niuzao Temple
 				}},
 			}),
-			ach(13469, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Raiding with Leashes VI: Pets of Pandaria
+			ach(13469, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- Raiding with Leashes VI: Pets of Pandaria
 				i(167057),	-- Happiness (PET!)
 			})),
 		}

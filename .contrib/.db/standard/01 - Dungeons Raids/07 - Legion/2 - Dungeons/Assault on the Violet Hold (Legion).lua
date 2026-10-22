@@ -2,13 +2,13 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 	inst(777, {	-- Assault on Violet Hold (Legion)
-		["description"] = "The bosses are random on all difficulties except Mythic.",
-		["mapID"] = 732,
-		["coord"] = { 66.2, 68.3, LEGION_DALARAN },
-		["lvl"] = 105,
-		["groups"] = {
+		description = "The bosses are random on all difficulties except Mythic.",
+		mapID = 732,
+		coord = { 66.2, 68.3, LEGION_DALARAN },
+		lvl = 105,
+		groups = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				n(VH_FINAL_WAVE_BOSS, {
 					cr(102387, e(1697, {	-- Sael'orn
@@ -146,8 +146,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["lvl"] = 110,
-				["groups"] = {
+				lvl = 110,
+				groups = {
 					n(VH_WAVE_6_BOSS, {
 						cr(102431, e(1702, {	-- Blood-Princess Thal'ena
 							i(137461),	-- Breathless Choker
@@ -269,9 +269,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				["ItemAppearanceModifierID"] = 0,
-				["lvl"] = 110,
-				["groups"] = {
+				ItemAppearanceModifierID = 0,
+				lvl = 110,
+				groups = {
 					n(VH_WAVE_6_BOSS, {
 						cr(102431, e(1702, {	-- Blood-Princess Thal'ena
 							i(137461),	-- Breathless Choker
@@ -286,7 +286,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						})),
 						cr(101995, e(1693, {	-- Festerface
 							ach(10554, {	-- I Made a Food!
-								["crs"] = { 102169 },	-- Black Bile
+								crs = { 102169 },	-- Black Bile
 							}),
 							i(137438),	-- Band of Decaying Rubies
 							i(137435),	-- Blightbile Waistband

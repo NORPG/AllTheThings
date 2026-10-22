@@ -185,13 +185,13 @@ local EncounterToLoot = {
 		i(113889),	-- Elementalist's Shielding Talisman
 		n(BONUS_ROLL, {
 			i(119307, {	-- Leggings of the Iron Conqueror
-				["sym"] = SYM_CONQ_LEGS,
+				sym = SYM_CONQ_LEGS,
 			}),
 			i(119320, {	-- Leggings of the Iron Protector
-				["sym"] = SYM_PROT_LEGS,
+				sym = SYM_PROT_LEGS,
 			}),
 			i(119313, {	-- Leggings of the Iron Vanquisher
-				["sym"] = SYM_VANQ_LEGS,
+				sym = SYM_VANQ_LEGS,
 			}),
 		}),
 	},
@@ -239,13 +239,13 @@ local EncounterToLoot = {
 		i(119193),	-- Horn of Screaming Spirits
 		n(BONUS_ROLL, {
 			i(119305, {	-- Chest of the Iron Conqueror
-				["sym"] = SYM_CONQ_CHEST,
+				sym = SYM_CONQ_CHEST,
 			}),
 			i(119318, {	-- Chest of the Iron Protector
-				["sym"] = SYM_PROT_CHEST,
+				sym = SYM_PROT_CHEST,
 			}),
 			i(119315, {	-- Chest of the Iron Vanquisher
-				["sym"] = SYM_VANQ_CHEST,
+				sym = SYM_VANQ_CHEST,
 			}),
 		}),
 	},
@@ -276,13 +276,13 @@ local EncounterToLoot = {
 		i(113931),	-- Beating Heart of the Mountain
 		n(BONUS_ROLL, {
 			i(119308, {	-- Helm of the Iron Conqueror
-				["sym"] = SYM_CONQ_HELM,
+				sym = SYM_CONQ_HELM,
 			}),
 			i(119321, {	-- Helm of the Iron Protector
-				["sym"] = SYM_PROT_HELM,
+				sym = SYM_PROT_HELM,
 			}),
 			i(119312, {	-- Helm of the Iron Vanquisher
-				["sym"] = SYM_VANQ_HELM,
+				sym = SYM_VANQ_HELM,
 			}),
 		}),
 	},
@@ -328,13 +328,13 @@ local EncounterToLoot = {
 		i(113963),	-- Siege Bomber's Band
 		n(BONUS_ROLL, {
 			i(119309, {	-- Shoulders of the Iron Conqueror
-				["sym"] = SYM_CONQ_SHLDR,
+				sym = SYM_CONQ_SHLDR,
 			}),
 			i(119322, {	-- Shoulders of the Iron Protector
-				["sym"] = SYM_PROT_SHLDR,
+				sym = SYM_PROT_SHLDR,
 			}),
 			i(119314, {	-- Shoulders of the Iron Vanquisher
-				["sym"] = SYM_VANQ_SHLDR,
+				sym = SYM_VANQ_SHLDR,
 			}),
 		}),
 	},
@@ -366,13 +366,13 @@ local EncounterToLoot = {
 		i(113969),	-- Vial of Convulsive Shadows
 		n(BONUS_ROLL, {
 			i(119306, {	-- Gauntlets of the Iron Conqueror
-				["sym"] = SYM_CONQ_GLOVE,
+				sym = SYM_CONQ_GLOVE,
 			}),
 			i(119319, {	-- Gauntlets of the Iron Protector
-				["sym"] = SYM_PROT_GLOVE,
+				sym = SYM_PROT_GLOVE,
 			}),
 			i(119311, {	-- Gauntlets of the Iron Vanquisher
-				["sym"] = SYM_VANQ_GLOVE,
+				sym = SYM_VANQ_GLOVE,
 			}),
 		}),
 	},
@@ -408,55 +408,55 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 InstanceHelper.LFRQueueNPC = {
-	["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
+	crs = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	inst(457, {	-- Blackrock Foundry
-		["mapID"] = 598,
-		["maps"] = { 596, 597, 599, 600 },
-		["coord"] = { 51.55, 27.23, GORGROND },
-		["isRaid"] = true,
-		["lvl"] = 100,
-		["groups"] = {
+		mapID = 598,
+		maps = { 596, 597, 599, 600 },
+		coord = { 51.55, 27.23, GORGROND },
+		isRaid = true,
+		lvl = 100,
+		groups = {
 			n(ACHIEVEMENTS, {
-				ach(11740, {["timeline"] = {ADDED_7_2_0}}),	-- Make it W-orc W-orc (Blackrock Foundry)
+				ach(11740, {timeline = {ADDED_7_2_0}}),	-- Make it W-orc W-orc (Blackrock Foundry)
 				ach(8989, {	-- Slagworks
 					crit(25019, {	-- Gruul
-						["_encounter"] = { 1161, DIFFICULTY.RAID.LFR },
+						_encounter = { 1161, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25020, {	-- Oregorger
-						["_encounter"] = { 1202, DIFFICULTY.RAID.LFR },
+						_encounter = { 1202, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25021, {	-- The Blast Furnace
-						["_encounter"] = { 1154, DIFFICULTY.RAID.LFR },
+						_encounter = { 1154, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(8990, {	-- Black Forge
 					crit(25022, {	-- Hans'gar and Franzok
-						["_encounter"] = { 1155, DIFFICULTY.RAID.LFR },
+						_encounter = { 1155, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25023, {	-- Flamebender Ka'graz
-						["_encounter"] = { 1123, DIFFICULTY.RAID.LFR },
+						_encounter = { 1123, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25024, {	-- Kromog
-						["_encounter"] = { 1162, DIFFICULTY.RAID.LFR },
+						_encounter = { 1162, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(8991, {	-- Iron Assembly
 					crit(25025, {	-- Beastlord Darmac
-						["_encounter"] = { 1122, DIFFICULTY.RAID.LFR },
+						_encounter = { 1122, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25026, {	-- Operator Thogar
-						["_encounter"] = { 1147, DIFFICULTY.RAID.LFR },
+						_encounter = { 1147, DIFFICULTY.RAID.LFR },
 					}),
 					crit(25027, {	-- The Iron Maidens
-						["_encounter"] = { 1203, DIFFICULTY.RAID.LFR },
+						_encounter = { 1203, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(8992, {	-- Blackhand's Crucible
 					crit(24982, {	-- Blackhand
-						["_encounter"] = { 959, DIFFICULTY.RAID.LFR },
+						_encounter = { 959, DIFFICULTY.RAID.LFR },
 					}),
 				}),
 				ach(9417),	-- Blackrock Foundry Guild Run
@@ -474,12 +474,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					un(REMOVED_FROM_GAME, i(115493)),	-- Flamebender's Tome
 				}),
 				BossOnly(IRON_MAIDENS, {	-- The Iron Maidens
-					["crs"] = {
+					crs = {
 						77557,	-- Admiral Gar'an
 						77231,	-- Enforcer Sorka
 						77477,	-- Marak the Blooded
 					},
-					["groups"] = {
+					groups = {
 						un(REMOVED_FROM_GAME, i(115494)),	-- Draenic Thaumaturgical Orb
 					},
 				}),
@@ -645,10 +645,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						i(116042),	-- Ram-Carrier's Treads
 						i(116317),	-- Storage House Key
 						i(138809, {	-- Illusion: Mark of Blackrock (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
+							timeline = { ADDED_7_0_3 },
 						}),
 						i(122200, {	-- Music Roll: A Siege of Worlds
-							["timeline"] = { ADDED_6_1_0 },
+							timeline = { ADDED_6_1_0 },
 						}),
 					}),
 				}),
@@ -662,7 +662,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				BossOnly(BLAST_FURNACE, {	-- The Blast Furnace
 					ach(8930, {	-- Ya, We've Got Time...
-						["crs"] = { 76815 },	-- Primal Elementalist
+						crs = { 76815 },	-- Primal Elementalist
 					}),
 				}),
 				BossOnly(HANSGAR_AND_FRANZOK, {	-- Hans'gar and Franzok
@@ -670,33 +670,33 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				BossOnly(FLAMEBENDER_KAGRAZ, {	-- Flamebender Ka'graz
 					ach(8929, {	-- The Steel Has Been Brought
-						["crs"] = { 77337 },	-- Aknor Steelbringer
-						["groups"] = {
+						crs = { 77337 },	-- Aknor Steelbringer
+						groups = {
 							follower(225),	-- Aknor Steelbringer
 						},
 					}),
 				}),
 				BossOnly(KROMOG, {	-- Kromog <Legend of the Mountain>
 					ach(8983, {	-- Would You Give Me a Hand?
-						["crs"] = { 77893 },	-- Grasping Earth
+						crs = { 77893 },	-- Grasping Earth
 					}),
 				}),
 				BossOnly(BEASTLORD_DARMAC, {	-- Beastlord Darmac
 					ach(8981, {	-- Fain Would Lie Down
 						crit(24675, {	-- Dreadwing Mounted First
-							["provider"] = { "n", 76874 },	-- Dreadwing
+							provider = { "n", 76874 },	-- Dreadwing
 						}),
 						crit(24676, {	-- Ironcrusher Mounted First
-							["provider"] = { "n", 76945 },	-- Ironcrusher
+							provider = { "n", 76945 },	-- Ironcrusher
 						}),
 						crit(24677, {	-- Cruelfang Mounted First
-							["provider"] = { "n", 76884 },	-- Cruelfang
+							provider = { "n", 76884 },	-- Cruelfang
 						}),
 					}),
 				}),
 				BossOnly(OPERATOR_THOGAR, {	-- Operator Thogar
 					ach(8982, {	-- There's Always a Bigger Train
-						["providers"] = {
+						providers = {
 							{ "n", 81071 },	-- Exulting Wind-Up Train Wrecker
 							{ "i", 45057 },	-- Wind-Up Train Wrecker
 							{ "i", 44606 },	-- Toy Train Set
@@ -709,163 +709,163 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(BLACKHAND, {	-- Blackhand
 					ach(8952),	-- Ashes, Ashes...
 					i(138809, {	-- Illusion: Mark of Blackrock (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
+						timeline = { ADDED_7_0_3 },
 					}),
 					i(122200, {	-- Music Roll: A Siege of Worlds
-						["timeline"] = { ADDED_6_1_0 },
+						timeline = { ADDED_6_1_0 },
 					}),
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(37029, {	-- Sigil of the Black Hand
-						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r",
-						["altQuests"] = {
+						description = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r",
+						altQuests = {
 							37030,	-- Sigil of the Black Hand (Heroic)
 							37031,	-- Sigil of the Black Hand (Mythic)
 						},
-						["qgs"] = 87225,	-- Goraluk Anvilcrack
-						["qis"] = {
+						qgs = 87225,	-- Goraluk Anvilcrack
+						qis = {
 							118382,	-- Ember of the Mountain (QI!)
 							118383,	-- Heart of Stone (QI!)
 							118384,	-- Sliver of Iron (QI!)
 						},
 					}),
 					q(37553, {	-- Essence of the Iron Conqueror
-						["provider"] = { "i", 120277 },	-- Essence of the Iron Conqueror
-						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 120277 },	-- Essence of the Iron Conqueror
+						races = ALLIANCE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120215, {	-- Helm of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_HELM, 3),
+								sym = SymModID(SYM_CONQ_HELM, 3),
 							}),
 							i(120216, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_SHLDR, 3),
+								sym = SymModID(SYM_CONQ_SHLDR, 3),
 							}),
 							i(120212, {	-- Chest of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_CHEST, 3),
+								sym = SymModID(SYM_CONQ_CHEST, 3),
 							}),
 							i(120213, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_GLOVE, 3),
+								sym = SymModID(SYM_CONQ_GLOVE, 3),
 							}),
 							i(120214, {	-- Leggings of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_LEGS, 3),
+								sym = SymModID(SYM_CONQ_LEGS, 3),
 							}),
 						},
 					}),
 					q(37540, {	-- Essence of the Iron Conqueror
-						["provider"] = { "i", 119310 },	-- ITEM
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 119310 },	-- ITEM
+						races = HORDE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120215, {	-- Helm of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_HELM, 3),
+								sym = SymModID(SYM_CONQ_HELM, 3),
 							}),
 							i(120216, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_SHLDR, 3),
+								sym = SymModID(SYM_CONQ_SHLDR, 3),
 							}),
 							i(120212, {	-- Chest of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_CHEST, 3),
+								sym = SymModID(SYM_CONQ_CHEST, 3),
 							}),
 							i(120213, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_GLOVE, 3),
+								sym = SymModID(SYM_CONQ_GLOVE, 3),
 							}),
 							i(120214, {	-- Leggings of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_LEGS, 3),
+								sym = SymModID(SYM_CONQ_LEGS, 3),
 							}),
 						},
 					}),
 					q(37555, {	-- Essence of the Iron Protector
-						["provider"] = { "i", 120279 },	-- Essence of the Iron Protector
-						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 120279 },	-- Essence of the Iron Protector
+						races = ALLIANCE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120225, {	-- Helm of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_HELM, 3),
+								sym = SymModID(SYM_PROT_HELM, 3),
 							}),
 							i(120226, {	-- Shoulders of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_SHLDR, 3),
+								sym = SymModID(SYM_PROT_SHLDR, 3),
 							}),
 							i(120222, {	-- Chest of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_CHEST, 3),
+								sym = SymModID(SYM_PROT_CHEST, 3),
 							}),
 							i(120223, {	-- Gauntlets of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_GLOVE, 3),
+								sym = SymModID(SYM_PROT_GLOVE, 3),
 							}),
 							i(120224, {	-- Leggings of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_LEGS, 3),
+								sym = SymModID(SYM_PROT_LEGS, 3),
 							}),
 						},
 					}),
 					q(37543, {	-- Essence of the Iron Protector
-						["provider"] = { "i", 119323 },	-- Essence of the Iron Protector
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 119323 },	-- Essence of the Iron Protector
+						races = HORDE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120225, {	-- Helm of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_HELM, 3),
+								sym = SymModID(SYM_PROT_HELM, 3),
 							}),
 							i(120226, {	-- Shoulders of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_SHLDR, 3),
+								sym = SymModID(SYM_PROT_SHLDR, 3),
 							}),
 							i(120222, {	-- Chest of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_CHEST, 3),
+								sym = SymModID(SYM_PROT_CHEST, 3),
 							}),
 							i(120223, {	-- Gauntlets of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_GLOVE, 3),
+								sym = SymModID(SYM_PROT_GLOVE, 3),
 							}),
 							i(120224, {	-- Leggings of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_LEGS, 3),
+								sym = SymModID(SYM_PROT_LEGS, 3),
 							}),
 						},
 					}),
 					q(37554, {	-- Essence of the Iron Vanquisher
-						["provider"] = { "i", 120278 },	-- Essence of the Iron Vanquisher
-						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 120278 },	-- Essence of the Iron Vanquisher
+						races = ALLIANCE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120218, {	-- Helm of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_HELM, 3),
+								sym = SymModID(SYM_VANQ_HELM, 3),
 							}),
 							i(120220, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_SHLDR, 3),
+								sym = SymModID(SYM_VANQ_SHLDR, 3),
 							}),
 							i(120221, {	-- Chest of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_CHEST, 3),
+								sym = SymModID(SYM_VANQ_CHEST, 3),
 							}),
 							i(120217, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_GLOVE, 3),
+								sym = SymModID(SYM_VANQ_GLOVE, 3),
 							}),
 							i(120219, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_LEGS, 3),
+								sym = SymModID(SYM_VANQ_LEGS, 3),
 							}),
 						},
 					}),
 					q(37541, {	-- Essence of the Iron Vanquisher
-						["provider"] = { "i", 119316 },	-- Essence of the Iron Vanquisher
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 119316 },	-- Essence of the Iron Vanquisher
+						races = HORDE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120218, {	-- Helm of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_HELM, 3),
+								sym = SymModID(SYM_VANQ_HELM, 3),
 							}),
 							i(120220, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_SHLDR, 3),
+								sym = SymModID(SYM_VANQ_SHLDR, 3),
 							}),
 							i(120221, {	-- Chest of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_CHEST, 3),
+								sym = SymModID(SYM_VANQ_CHEST, 3),
 							}),
 							i(120217, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_GLOVE, 3),
+								sym = SymModID(SYM_VANQ_GLOVE, 3),
 							}),
 							i(120219, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_LEGS, 3),
+								sym = SymModID(SYM_VANQ_LEGS, 3),
 							}),
 						},
 					}),
@@ -878,181 +878,181 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				Boss(FLAMEBENDER_KAGRAZ),
 				Boss(KROMOG),
 				Boss(BEASTLORD_DARMAC, {
-					i(113945, { ["ItemAppearanceModifierID"] = 0 }),	-- Flame Infusion Drape
+					i(113945, { ItemAppearanceModifierID = 0 }),	-- Flame Infusion Drape
 				}),
 				Boss(OPERATOR_THOGAR),
 				Boss(IRON_MAIDENS),
 				Boss(BLACKHAND, {
-					i(113979, { ["ItemAppearanceModifierID"] = 0 }),	-- The Black Hand
+					i(113979, { ItemAppearanceModifierID = 0 }),	-- The Black Hand
 				}),
-				Boss(BLACKHAND, sharedData({ ["ignoreBonus"] = true }, {	-- in-game this drops with no modID
+				Boss(BLACKHAND, sharedData({ ignoreBonus = true }, {	-- in-game this drops with no modID
 					i(120277, {	-- Essence of the Iron Conqueror
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(119310, {	-- Essence of the Iron Conqueror
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(120279, {	-- Essence of the Iron Protector
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(119323, {	-- Essence of the Iron Protector
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(120278, {	-- Essence of the Iron Vanquisher
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(119316, {	-- Essence of the Iron Vanquisher
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 				})),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
 					q(37030, {	-- Sigil of the Black Hand (Heroic)
-						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
-						["altQuests"] = { 37031 },	-- Sigil of the Black Hand (Mythic)
-						["qg"] = 87225,	-- Goraluk Anvilcrack
-						["qis"] = {
+						description = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						altQuests = { 37031 },	-- Sigil of the Black Hand (Mythic)
+						qg = 87225,	-- Goraluk Anvilcrack
+						qis = {
 							118387,	-- Ember of the Mountain (QI!)
 							118386,	-- Heart of Stone (QI!)
 							118385,	-- Sliver of Iron (QI!)
 						},
 					}),
 					q(37557, {	-- Essence of the Iron Conqueror
-						["provider"] = { "i", 120280 },	-- Essence of the Iron Conqueror
-						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 120280 },	-- Essence of the Iron Conqueror
+						races = ALLIANCE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120230, {	-- Helm of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_HELM, 5),
+								sym = SymModID(SYM_CONQ_HELM, 5),
 							}),
 							i(120231, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_SHLDR, 5),
+								sym = SymModID(SYM_CONQ_SHLDR, 5),
 							}),
 							i(120227, {	-- Chest of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_CHEST, 5),
+								sym = SymModID(SYM_CONQ_CHEST, 5),
 							}),
 							i(120228, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_GLOVE, 5),
+								sym = SymModID(SYM_CONQ_GLOVE, 5),
 							}),
 							i(120229, {	-- Leggings of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_LEGS, 5),
+								sym = SymModID(SYM_CONQ_LEGS, 5),
 							}),
 						},
 					}),
 					q(37551, {	-- Essence of the Iron Conqueror
-						["provider"] = { "i", 120206 },	-- Essence of the Iron Conqueror
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 120206 },	-- Essence of the Iron Conqueror
+						races = HORDE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120230, {	-- Helm of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_HELM, 5),
+								sym = SymModID(SYM_CONQ_HELM, 5),
 							}),
 							i(120231, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_SHLDR, 5),
+								sym = SymModID(SYM_CONQ_SHLDR, 5),
 							}),
 							i(120227, {	-- Chest of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_CHEST, 5),
+								sym = SymModID(SYM_CONQ_CHEST, 5),
 							}),
 							i(120228, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_GLOVE, 5),
+								sym = SymModID(SYM_CONQ_GLOVE, 5),
 							}),
 							i(120229, {	-- Leggings of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_LEGS, 5),
+								sym = SymModID(SYM_CONQ_LEGS, 5),
 							}),
 						},
 					}),
 					q(37559, {	-- Essence of the Iron Protector
-						["provider"] = { "i", 120281 },	-- Essence of the Iron Protector
-						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 120281 },	-- Essence of the Iron Protector
+						races = ALLIANCE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120240, {	-- Helm of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_HELM, 5),
+								sym = SymModID(SYM_PROT_HELM, 5),
 							}),
 							i(120241, {	-- Shoulders of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_SHLDR, 5),
+								sym = SymModID(SYM_PROT_SHLDR, 5),
 							}),
 							i(120237, {	-- Chest of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_CHEST, 5),
+								sym = SymModID(SYM_PROT_CHEST, 5),
 							}),
 							i(120238, {	-- Gauntlets of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_GLOVE, 5),
+								sym = SymModID(SYM_PROT_GLOVE, 5),
 							}),
 							i(120239, {	-- Leggings of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_LEGS, 5),
+								sym = SymModID(SYM_PROT_LEGS, 5),
 							}),
 						},
 					}),
 					q(37547, {	-- Essence of the Iron Protector
-						["provider"] = { "i", 120207 },	-- Essence of the Iron Protector
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 120207 },	-- Essence of the Iron Protector
+						races = HORDE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120240, {	-- Helm of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_HELM, 5),
+								sym = SymModID(SYM_PROT_HELM, 5),
 							}),
 							i(120241, {	-- Shoulders of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_SHLDR, 5),
+								sym = SymModID(SYM_PROT_SHLDR, 5),
 							}),
 							i(120237, {	-- Chest of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_CHEST, 5),
+								sym = SymModID(SYM_PROT_CHEST, 5),
 							}),
 							i(120238, {	-- Gauntlets of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_GLOVE, 5),
+								sym = SymModID(SYM_PROT_GLOVE, 5),
 							}),
 							i(120239, {	-- Leggings of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_LEGS, 5),
+								sym = SymModID(SYM_PROT_LEGS, 5),
 							}),
 						},
 					}),
 					q(37558, {	-- Essence of the Iron Vanquisher
-						["provider"] = { "i", 120282 },	-- Essence of the Iron Vanquisher
-						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 120282 },	-- Essence of the Iron Vanquisher
+						races = ALLIANCE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120233, {	-- Helm of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_HELM, 5),
+								sym = SymModID(SYM_VANQ_HELM, 5),
 							}),
 							i(120235, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_SHLDR, 5),
+								sym = SymModID(SYM_VANQ_SHLDR, 5),
 							}),
 							i(120236, {	-- Chest of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_CHEST, 5),
+								sym = SymModID(SYM_VANQ_CHEST, 5),
 							}),
 							i(120232, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_GLOVE, 5),
+								sym = SymModID(SYM_VANQ_GLOVE, 5),
 							}),
 							i(120234, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_LEGS, 5),
+								sym = SymModID(SYM_VANQ_LEGS, 5),
 							}),
 						},
 					}),
 					q(37549, {	-- Essence of the Iron Vanquisher
-						["provider"] = { "i", 120208 },	-- Essence of the Iron Vanquisher
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 120208 },	-- Essence of the Iron Vanquisher
+						races = HORDE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120233, {	-- Helm of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_HELM, 5),
+								sym = SymModID(SYM_VANQ_HELM, 5),
 							}),
 							i(120235, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_SHLDR, 5),
+								sym = SymModID(SYM_VANQ_SHLDR, 5),
 							}),
 							i(120236, {	-- Chest of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_CHEST, 5),
+								sym = SymModID(SYM_VANQ_CHEST, 5),
 							}),
 							i(120232, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_GLOVE, 5),
+								sym = SymModID(SYM_VANQ_GLOVE, 5),
 							}),
 							i(120234, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_LEGS, 5),
+								sym = SymModID(SYM_VANQ_LEGS, 5),
 							}),
 						},
 					}),
@@ -1065,185 +1065,185 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				Boss(FLAMEBENDER_KAGRAZ),
 				Boss(KROMOG),
 				Boss(BEASTLORD_DARMAC, {
-					i(113945, { ["ItemAppearanceModifierID"] = 0 }),	-- Flame Infusion Drape
+					i(113945, { ItemAppearanceModifierID = 0 }),	-- Flame Infusion Drape
 				}),
 				Boss(OPERATOR_THOGAR),
 				Boss(IRON_MAIDENS),
 				Boss(BLACKHAND, {	-- Blackhand
 					ach(9444, {	-- Ahead of the Curve: Blackhand's Crucible
-						["u"] = REMOVED_FROM_GAME,
+						u = REMOVED_FROM_GAME,
 					}),
 				}),
 				Boss(BLACKHAND, {
-					i(113979, { ["ItemAppearanceModifierID"] = 1 }),	-- The Black Hand
+					i(113979, { ItemAppearanceModifierID = 1 }),	-- The Black Hand
 				}),
-				Boss(BLACKHAND, sharedData({ ["ignoreBonus"] = true }, {	-- in-game this drops with no modID
+				Boss(BLACKHAND, sharedData({ ignoreBonus = true }, {	-- in-game this drops with no modID
 					i(120280, {	-- Essence of the Iron Conqueror
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(120206, {	-- Essence of the Iron Conqueror
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(120281, {	-- Essence of the Iron Protector
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(120207, {	-- Essence of the Iron Protector
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(120282, {	-- Essence of the Iron Vanquisher
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(120208, {	-- Essence of the Iron Vanquisher
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 				})),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(37031, {	-- Sigil of the Black Hand (Mythic)
-						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic difficulty each week.",
-						["qg"] = 87225,	-- Goraluk Anvilcrack
-						["qis"] = {
+						description = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic difficulty each week.",
+						qg = 87225,	-- Goraluk Anvilcrack
+						qis = {
 							118390,	-- Ember of the Mountain (QI!)
 							118389,	-- Heart of Stone (QI!)
 							118388,	-- Sliver of Iron (QI!)
 						},
 					}),
 					q(37560, {	-- Essence of the Iron Conqueror
-						["provider"] = { "i", 120283 },	-- Essence of the Iron Conqueror
-						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 120283 },	-- Essence of the Iron Conqueror
+						races = ALLIANCE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120245, {	-- Helm of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_HELM, 6),
+								sym = SymModID(SYM_CONQ_HELM, 6),
 							}),
 							i(120246, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_SHLDR, 6),
+								sym = SymModID(SYM_CONQ_SHLDR, 6),
 							}),
 							i(120242, {	-- Chest of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_CHEST, 6),
+								sym = SymModID(SYM_CONQ_CHEST, 6),
 							}),
 							i(120243, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_GLOVE, 6),
+								sym = SymModID(SYM_CONQ_GLOVE, 6),
 							}),
 							i(120244, {	-- Leggings of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_LEGS, 6),
+								sym = SymModID(SYM_CONQ_LEGS, 6),
 							}),
 						},
 					}),
 					q(37552, {	-- Essence of the Iron Conqueror
-						["provider"] = { "i", 120209 },	-- Essence of the Iron Conqueror
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 120209 },	-- Essence of the Iron Conqueror
+						races = HORDE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120245, {	-- Helm of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_HELM, 6),
+								sym = SymModID(SYM_CONQ_HELM, 6),
 							}),
 							i(120246, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_SHLDR, 6),
+								sym = SymModID(SYM_CONQ_SHLDR, 6),
 							}),
 							i(120242, {	-- Chest of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_CHEST, 6),
+								sym = SymModID(SYM_CONQ_CHEST, 6),
 							}),
 							i(120243, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_GLOVE, 6),
+								sym = SymModID(SYM_CONQ_GLOVE, 6),
 							}),
 							i(120244, {	-- Leggings of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_LEGS, 6),
+								sym = SymModID(SYM_CONQ_LEGS, 6),
 							}),
 						},
 					}),
 					q(37562, {	-- Essence of the Iron Protector
-						["provider"] = { "i", 120284 },	-- Essence of the Iron Protector
-						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 120284 },	-- Essence of the Iron Protector
+						races = ALLIANCE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120255, {	-- Helm of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_HELM, 6),
+								sym = SymModID(SYM_PROT_HELM, 6),
 							}),
 							i(120256, {	-- Shoulders of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_SHLDR, 6),
+								sym = SymModID(SYM_PROT_SHLDR, 6),
 							}),
 							i(120252, {	-- Chest of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_CHEST, 6),
+								sym = SymModID(SYM_PROT_CHEST, 6),
 							}),
 							i(120253, {	-- Gauntlets of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_GLOVE, 6),
+								sym = SymModID(SYM_PROT_GLOVE, 6),
 							}),
 							i(120254, {	-- Leggings of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_LEGS, 6),
+								sym = SymModID(SYM_PROT_LEGS, 6),
 							}),
 						},
 					}),
 					q(37548, {	-- Essence of the Iron Protector
-						["provider"] = { "i", 120210 },	-- Essence of the Iron Protector
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 120210 },	-- Essence of the Iron Protector
+						races = HORDE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120255, {	-- Helm of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_HELM, 6),
+								sym = SymModID(SYM_PROT_HELM, 6),
 							}),
 							i(120256, {	-- Shoulders of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_SHLDR, 6),
+								sym = SymModID(SYM_PROT_SHLDR, 6),
 							}),
 							i(120252, {	-- Chest of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_CHEST, 6),
+								sym = SymModID(SYM_PROT_CHEST, 6),
 							}),
 							i(120253, {	-- Gauntlets of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_GLOVE, 6),
+								sym = SymModID(SYM_PROT_GLOVE, 6),
 							}),
 							i(120254, {	-- Leggings of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_LEGS, 6),
+								sym = SymModID(SYM_PROT_LEGS, 6),
 							}),
 						},
 					}),
 					q(37561, {	-- Essence of the Iron Vanquisher
-						["provider"] = { "i", 120285 },	-- Essence of the Iron Vanquisher
-						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 120285 },	-- Essence of the Iron Vanquisher
+						races = ALLIANCE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120248, {	-- Helm of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_HELM, 6),
+								sym = SymModID(SYM_VANQ_HELM, 6),
 							}),
 							i(120250, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_SHLDR, 6),
+								sym = SymModID(SYM_VANQ_SHLDR, 6),
 							}),
 							i(120251, {	-- Chest of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_CHEST, 6),
+								sym = SymModID(SYM_VANQ_CHEST, 6),
 							}),
 							i(120247, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_GLOVE, 6),
+								sym = SymModID(SYM_VANQ_GLOVE, 6),
 							}),
 							i(120249, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_LEGS, 6),
+								sym = SymModID(SYM_VANQ_LEGS, 6),
 							}),
 						},
 					}),
 					q(37550, {	-- Essence of the Iron Vanquisher
-						["provider"] = { "i", 120211 },	-- Essence of the Iron Vanquisher
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["groups"] = {
+						provider = { "i", 120211 },	-- Essence of the Iron Vanquisher
+						races = HORDE_ONLY,
+						repeatable = true,
+						_drop = { "g" },	-- API lists all 3 token types
+						groups = {
 							i(120248, {	-- Helm of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_HELM, 6),
+								sym = SymModID(SYM_VANQ_HELM, 6),
 							}),
 							i(120250, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_SHLDR, 6),
+								sym = SymModID(SYM_VANQ_SHLDR, 6),
 							}),
 							i(120251, {	-- Chest of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_CHEST, 6),
+								sym = SymModID(SYM_VANQ_CHEST, 6),
 							}),
 							i(120247, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_GLOVE, 6),
+								sym = SymModID(SYM_VANQ_GLOVE, 6),
 							}),
 							i(120249, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_LEGS, 6),
+								sym = SymModID(SYM_VANQ_LEGS, 6),
 							}),
 						},
 					}),
@@ -1269,7 +1269,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				Boss(BEASTLORD_DARMAC, {
 					ach(8956),	-- Mythic: Beastlord Darmac
-					i(113945, { ["ItemAppearanceModifierID"] = 3 }),	-- Flame Infusion Drape
+					i(113945, { ItemAppearanceModifierID = 3 }),	-- Flame Infusion Drape
 				}),
 				Boss(OPERATOR_THOGAR, {
 					ach(8969),	-- Mythic: Operator Thogar
@@ -1279,13 +1279,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				Boss(BLACKHAND, {	-- Blackhand
 					ach(9444, {	-- Ahead of the Curve: Blackhand's Crucible
-						["u"] = REMOVED_FROM_GAME,
+						u = REMOVED_FROM_GAME,
 					}),
 					ach(9443, {	-- Cutting Edge: Blackhand's Crucible
-						["u"] = REMOVED_FROM_GAME,
+						u = REMOVED_FROM_GAME,
 					}),
 					ach(9399, {	-- Realm First! Warlord Blackhand
-						["u"] = REMOVED_FROM_GAME,
+						u = REMOVED_FROM_GAME,
 					}),
 					ach(8973, {	-- Mythic: Blackhand's Crucible
 						title(301),	-- Ironbane
@@ -1294,41 +1294,41 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(116660),	-- Ironhoof Destroyer (MOUNT!)
 				}),
 				Boss(BLACKHAND, {
-					i(113979, { ["ItemAppearanceModifierID"] = 0 }),	-- The Black Hand
+					i(113979, { ItemAppearanceModifierID = 0 }),	-- The Black Hand
 				}),
-				Boss(BLACKHAND, sharedData({ ["ignoreBonus"] = true }, {	-- in-game this drops with no modID
+				Boss(BLACKHAND, sharedData({ ignoreBonus = true }, {	-- in-game this drops with no modID
 					i(120283, {	-- Essence of the Iron Conqueror
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(120209, {	-- Essence of the Iron Conqueror
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(120284, {	-- Essence of the Iron Protector
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(120210, {	-- Essence of the Iron Protector
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(120285, {	-- Essence of the Iron Vanquisher
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(120211, {	-- Essence of the Iron Vanquisher
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 				})),
 			}),
 			n(TREASURES, {
 				o(237452, {	-- Iron Horde Chest
-					["coord"] = { 51.8, 44.9, 599 },	-- Iron Assembly
-					["questID"] = 34405,
-					["isWeekly"] = true,
+					coord = { 51.8, 44.9, 599 },	-- Iron Assembly
+					questID = 34405,
+					isWeekly = true,
 				}),
 			}),
 		},
 	}),
 })));
 
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+-- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 -- 	inst(457, {
 -- 		q(34405),	-- DEPRECATED - REUSE - triggers after looting Blackrock Ore chest after Operator Thogar in LFR Blackrock Foundry
 -- 	}),

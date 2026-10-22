@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 	m(BORALUS, {
 		n(EXPLORATION, {
 			visit_exploration(9407,{coord={55.8,30.4,BORALUS}}),	-- Ashvane Company Yards

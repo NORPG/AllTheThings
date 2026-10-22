@@ -173,7 +173,7 @@ local ZoneDropLoot = {
 	i(169930),	-- Handwraps of Unhindered Resonance
 	i(169931),	-- Skulker's Blackwater Bands
 	i(170199, {	-- Zanj'ir Weapon Rack (TOY!)
-		["crs"] = {
+		crs = {
 			155920,	-- Azsh'ari Galeblade
 			155619,	-- Zanj'ir Honor Guard
 		},
@@ -186,20 +186,20 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 InstanceHelper.LFRQueueNPC = {
-	["crs"] = {
+	crs = {
 		177193,	-- Kiku
 		177208,	-- Eppu
 	},
-	["coords"] = {
+	coords = {
 		{ 74.0, 13.4, BORALUS },	-- Kiku
 		{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
 	inst(1179, {	-- The Eternal Palace
-		["coord"] = { 50.5, 11.9, NAZJATAR },
-		["maps"] = {
+		coord = { 50.5, 11.9, NAZJATAR },
+		maps = {
 			1512,	-- Dais of Eternity
 			1513,	-- Halls of the Chosen
 			1514,	-- Darkest Depths
@@ -209,43 +209,43 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			1519,	-- Precipice of Dreams
 			1520,	-- The Last Prison
 		},
-		["isRaid"] = true,
-		["groups"] = {
+		isRaid = true,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(13718, {	-- The Grand Reception
 					crit(45786, {	-- Abyssal Commander Sivara
-						["_encounter"] = { SIVARA, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SIVARA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(45787, {	-- Blackwater Behemoth
-						["_encounter"] = { BEHEMOTH, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { BEHEMOTH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(45788, {	-- Radiance of Azshara
-						["_encounter"] = { RADIANCE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { RADIANCE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(13719, {	-- Depths of the Devoted
 					crit(45794, {	-- Lady Ashvane
-						["_encounter"] = { ASHVANE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ASHVANE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(45795, {	-- Orgozoa
-						["_encounter"] = { ORGOZOA, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ORGOZOA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(45796, {	-- The Queen's Court
-						["_encounter"] = { COURT, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { COURT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(13725, {	-- The Circle of Stars
 					crit(45797, {	-- Za'qul, Harbinger of Ny'alotha
-						["_encounter"] = { ZAQUL, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ZAQUL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(45798, {	-- Queen Azshara
-						["_encounter"] = { QUEEN, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { QUEEN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(40962, {	-- The Eternal Palace
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						13719,	-- Depths of the Devoted
 						13725,	-- The Circle of Stars
 						13718,	-- The Grand Reception
@@ -253,7 +253,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				ach(13687, {	-- Glory of the Eternal Raider
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						13684,	-- You and What Army?
 						13628,	-- Intro to Marine Biology
 						13767,	-- Fun Run
@@ -263,7 +263,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						13716,	-- Lactose Intolerant
 						13768,	-- The Best of Us
 					}},
-					["groups"] = {
+					groups = {
 						i(167171),	-- Azshari Bloatray (MOUNT!)
 					},
 				}),
@@ -273,31 +273,31 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			n(AZERITE_ESSENCES, {
 				i(168328, {	-- Hardened Azerite Formation (Rank 1)
-					["cost"] = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
+					cost = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
 				}),
 				i(168536, {	-- Recrystallizing Azerite Formation (Rank 2)
-					["cost"] = { { "i", 169694, 18 } },	-- 18x Aqueous Reliquary
+					cost = { { "i", 169694, 18 } },	-- 18x Aqueous Reliquary
 				}),
 				i(168537, {	-- Tempered Azerite Formation (Rank 3)
-					["cost"] = { { "i", 169694, 36 } },	-- 36x Aqueous Reliquary
+					cost = { { "i", 169694, 36 } },	-- 36x Aqueous Reliquary
 				}),
 				i(168854, {	-- Animated Elemental Heart (Rank 1)
-					["cost"] = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
+					cost = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
 				}),
 				i(168855, {	-- Pulsing Elemental Heart (Rank 2)
-					["cost"] = { { "i", 169694, 18 } },	-- 18x Aqueous Reliquary
+					cost = { { "i", 169694, 18 } },	-- 18x Aqueous Reliquary
 				}),
 				i(168856, {	-- Resonating Elemental Heart (Rank 3)
-					["cost"] = { { "i", 169694, 36 } },	-- 36x Aqueous Reliquary
+					cost = { { "i", 169694, 36 } },	-- 36x Aqueous Reliquary
 				}),
 				i(168941, {	-- Vitality Redistribution Lattice (Rank 1)
-					["cost"] = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
+					cost = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
 				}),
 				i(168942, {	-- Mesh of Expanding Vitality (Rank 2)
-					["cost"] = { { "i", 169694, 18 } },	-- 18x Aqueous Reliquary
+					cost = { { "i", 169694, 18 } },	-- 18x Aqueous Reliquary
 				}),
 				i(168943, {	-- Grid of Bursting Vitality (Rank 3)
-					["cost"] = { { "i", 169694, 36 } },	-- 36x Aqueous Reliquary
+					cost = { { "i", 169694, 36 } },	-- 36x Aqueous Reliquary
 				}),
 			}),
 			petbattle(filter(BATTLE_PETS, {
@@ -394,7 +394,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				BossOnly(QUEEN, {
 					ach(13784, {	-- Ahead of the Curve: Queen
-						["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 },
+						timeline = { ADDED_8_2_0, REMOVED_8_3_0 },
 					}),
 				}),
 			}),
@@ -434,27 +434,27 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				Boss(QUEEN, {
 					ach(13785, {	-- Cutting Edge: Queen Azshara
-						["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 },
+						timeline = { ADDED_8_2_0, REMOVED_8_3_0 },
 					}),
 					ach(13733, {	-- Mythic: Queen Azshara
 						title(404),	-- the Eternal
 					}),
 					ach(13740),	-- Mythic: Queen Azshara Guild Run
-					ach(13787, bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {	-- Hall of Fame: Queen Azshara (A)
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = { title(409) },	-- <Name>, Famed Slayer of Azshara
+					ach(13787, bubbleDownSelf({timeline = { ADDED_8_2_0, REMOVED_8_3_0 } }, {	-- Hall of Fame: Queen Azshara (A)
+						races = ALLIANCE_ONLY,
+						groups = { title(409) },	-- <Name>, Famed Slayer of Azshara
 					})),
-					ach(13788, bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {	-- Hall of Fame: Queen Azshara (H)
-						["races"] = HORDE_ONLY,
-						["groups"] = { title(409) },	-- <Name>, Famed Slayer of Azshara
+					ach(13788, bubbleDownSelf({timeline = { ADDED_8_2_0, REMOVED_8_3_0 } }, {	-- Hall of Fame: Queen Azshara (H)
+						races = HORDE_ONLY,
+						groups = { title(409) },	-- <Name>, Famed Slayer of Azshara
 					})),
-					i(168538, bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_9_0_1 } }, {	-- Dazzling Azerite Formation (Rank 4)
-						["classes"] = TANKS,
+					i(168538, bubbleDownSelf({timeline = { ADDED_8_2_0, REMOVED_9_0_1 } }, {	-- Dazzling Azerite Formation (Rank 4)
+						classes = TANKS,
 					})),
-					i(168857, bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_9_0_1 } }, {	-- Sparkling Elemental Heart (Rank 4)
+					i(168857, bubbleDownSelf({timeline = { ADDED_8_2_0, REMOVED_9_0_1 } }, {	-- Sparkling Elemental Heart (Rank 4)
 					})),
-					i(168944, bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_9_0_1 } }, {	-- Web of Unbridled Vitality (Rank 4)
-						["classes"] = HEALERS,
+					i(168944, bubbleDownSelf({timeline = { ADDED_8_2_0, REMOVED_9_0_1 } }, {	-- Web of Unbridled Vitality (Rank 4)
+						classes = HEALERS,
 					})),
 				}),
 			}),
@@ -462,7 +462,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {
 	inst(1179, {	-- The Eternal Palace
 		-- Aqueous Reliquary LootIDs (This is a guess ... have to determine which ID is for which difficulty, - sadidorf)
 		q(56961),	-- Radiance of Azshara Aqueous Reliquary LFR? LootID

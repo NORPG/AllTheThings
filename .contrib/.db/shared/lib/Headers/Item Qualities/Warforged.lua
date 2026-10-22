@@ -17,5 +17,5 @@ WARFORGED = createHeader({
 });
 
 HEADER_WARFORGED = function(t)
-	return n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, t))
+	return n(WARFORGED, bubbleDown({bonusID = 4746 }, t))
 end

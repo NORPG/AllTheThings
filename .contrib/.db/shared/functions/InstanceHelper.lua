@@ -95,8 +95,8 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 	end
 	local function CommonBossDrops(t)
 		return n(COMMON_BOSS_DROPS, {
-					["crs"] = ALL_BOSSES,
-					["groups"] = t,
+					crs = ALL_BOSSES,
+					groups = t,
 				})
 	end
 	local function RawAllBosses(groups)

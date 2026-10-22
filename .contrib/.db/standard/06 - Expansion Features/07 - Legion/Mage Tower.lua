@@ -4,16 +4,16 @@
 
 local MageTowerFilter
 -- #if BEFORE BFA
-MageTowerFilter = {["u"] = 41};
+MageTowerFilter = {u = 41};
 -- #else
 MageTowerFilter =
-{["timeline"] = {
+{timeline = {
 	ADDED_7_2_0,
 	REMOVED_8_0_1,
 }};
 -- #endif
 local MageTowerFilter92 =
-{["timeline"] = {
+{timeline = {
 	ADDED_9_2_0,
 	REMOVED_10_0_0,
 	ADDED_10_0_5,
@@ -22,17 +22,17 @@ local MageTowerFilter92 =
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	-- Original Legion content
 	n(MAGE_TOWER, bubbleDown(MageTowerFilter, {
-		["description"] = "The Mage Tower Challenges were solo encounters designed for all of the 36 talent specializations in the game during Legion. They were designed to be challenging, but beatable. Access to these challenges was removed with the BFA Prepatch, 8.0.1.\n\nCongratulations to everyone that worked really hard attempting to collect all of these appearances!\n\n - Crieve (31/36)",
-		["groups"] = {
+		description = "The Mage Tower Challenges were solo encounters designed for all of the 36 talent specializations in the game during Legion. They were designed to be challenging, but beatable. Access to these challenges was removed with the BFA Prepatch, 8.0.1.\n\nCongratulations to everyone that worked really hard attempting to collect all of these appearances!\n\n - Crieve (31/36)",
+		groups = {
 			ach(11611, {	-- A Challenging Look
-				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+				timeline = { ADDED_7_2_0, REMOVED_8_0_1 },
 			}),
 			ach(11612, {	-- Fighting with Style: Challenging
-				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+				timeline = { ADDED_7_2_0, REMOVED_8_0_1 },
 			}),
 			q(46065, {	-- An Impossible Foe
-				["provider"] = { "n", 117871 },	-- War Councilor Victoria
-				["classes"] = {
+				provider = { "n", 117871 },	-- War Councilor Victoria
+				classes = {
 					DEATHKNIGHT,	-- Unholy
 					DRUID,			-- Feral
 					MAGE,			-- Fire
@@ -40,76 +40,76 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					SHAMAN,			-- Elemental
 					WARRIOR,		-- Fury
 				},
-				["crs"] = {
+				crs = {
 					115638,	-- Agatha
 					115719,	-- Imp Servant
 					115641,	-- Smoldering Imp
 					115642,	-- Umbral Imp
 					115640,	-- Fuming Imp
 				},
-				["groups"] = {
+				groups = {
 					artifact(947, {	-- Apocalypse
-						["classes"] = { DEATHKNIGHT },
+						classes = { DEATHKNIGHT },
 					}),
 					artifact(435, {	-- Fangs of Ashamane
-						["classes"] = { DRUID },
+						classes = { DRUID },
 					}),
 					artifact(489, {	-- Felo'melorn
-						["classes"] = { MAGE },
+						classes = { MAGE },
 					}),
 					artifact(702, {	-- The Dreadblades
-						["classes"] = { ROGUE },
+						classes = { ROGUE },
 					}),
 					artifact(684, {	-- The Fist of Ra-den
-						["classes"] = { SHAMAN },
+						classes = { SHAMAN },
 					}),
 					artifact(665, {	-- Warswords of the Valarjar
-						["classes"] = { WARRIOR },
+						classes = { WARRIOR },
 					}),
 				},
 			}),
 			q(44925, {	-- Closing the Eye
-				["provider"] = { "n", 117871 },	-- War Councilor Victoria
-				["classes"] = {
+				provider = { "n", 117871 },	-- War Councilor Victoria
+				classes = {
 					DEATHKNIGHT,	-- Frost
 					DEMONHUNTER,	-- Havoc
 					HUNTER,			-- Survival
 					ROGUE,			-- Subtlety
 					WARRIOR,		-- Arms
 				},
-				["crs"] = {
+				crs = {
 					115244,	-- Archmage Xylem
 					116839,	-- Corrupting Shadows
 				},
-				["groups"] = {
+				groups = {
 					i(142502),	-- Empowered Portal Stone (QI!)
 					artifact(383, {	-- Blades of the Fallen Prince
-						["classes"] = { DEATHKNIGHT },
+						classes = { DEATHKNIGHT },
 					}),
 					artifact(39, {	-- Twinblades of the Deceiver
-						["classes"] = { DEMONHUNTER },
+						classes = { DEMONHUNTER },
 					}),
 					artifact(973, {	-- Talonclaw
-						["classes"] = { HUNTER },
+						classes = { HUNTER },
 					}),
 					artifact(84, {	-- Fangs of the Devourer
-						["classes"] = { ROGUE },
+						classes = { ROGUE },
 					}),
 					artifact(806, {	-- Strom'kar, the Warbreaker
-						["classes"] = { WARRIOR },
+						classes = { WARRIOR },
 					}),
 				},
 			}),
 			q(46035, {	-- End of the Risen Threat
-				["provider"] = { "n", 117871 },	-- War Councilor Victoria
-				["classes"] = {
+				provider = { "n", 117871 },	-- War Councilor Victoria
+				classes = {
 					DRUID,		-- Restoration
 					PALADIN,	-- Holy
 					MONK,		-- Mistweaver
 					PRIEST,		-- Holy
 					SHAMAN,		-- Restoration
 				},
-				["crs"] = {
+				crs = {
 					118447,	-- Commander Jarod Shadowsong
 					118448,	-- Granny Marl
 					118451,	-- Callie Carrington
@@ -118,86 +118,86 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					119478,	-- Corrupted Risen Mage
 					119474,	-- Corrupted Risen Soldier
 				},
-				["groups"] = {
+				groups = {
 					artifact(875, {	-- G'Hanir, the Mother Tree
-						["classes"] = { DRUID },
+						classes = { DRUID },
 					}),
 					artifact(584, {	-- The Silver Hand
-						["classes"] = { PALADIN },
+						classes = { PALADIN },
 					}),
 					artifact(933, {	-- Sheilun, Staff of the Mists
-						["classes"] = { MONK },
+						classes = { MONK },
 					}),
 					artifact(758, {	-- T'uure, Beacon of the Naaru
-						["classes"] = { PRIEST },
+						classes = { PRIEST },
 					}),
 					artifact(787, {	-- Sharas'dal, Scepter of Tides
-						["classes"] = { SHAMAN },
+						classes = { SHAMAN },
 					}),
 				},
 			}),
 			q(45627, {	-- Feltotem's Fall
-				["provider"] = { "n", 117871 },	-- War Councilor Victoria
-				["classes"] = {
+				provider = { "n", 117871 },	-- War Councilor Victoria
+				classes = {
 					HUNTER,		-- Beast Mastery
 					MONK,		-- Windwalker
 					PRIEST,		-- Discipline
 					WARLOCK,	-- Destruction
 				},
-				["crs"] = {
+				crs = {
 					117230,	-- Tugar Bloodtotem
 					117484,	-- Jormog the Behemoth
 				},
-				["groups"] = {
+				groups = {
 					artifact(466, {	-- Titanstrike
-						["classes"] = { HUNTER },
+						classes = { HUNTER },
 					}),
 					artifact(941, {	-- Fists of the Heavens
-						["classes"] = { MONK },
+						classes = { MONK },
 					}),
 					artifact(956, {	-- Light's Wrath
-						["classes"] = { PRIEST },
+						classes = { PRIEST },
 					}),
 					artifact(915, {	-- Scepter of Sargeras
-						["classes"] = { WARLOCK },
+						classes = { WARLOCK },
 					}),
 				},
 			}),
 			q(45526, {	-- The God-Queen's Fury
-				["provider"] = { "n", 117871 },	-- War Councilor Victoria
-				["classes"] = {
+				provider = { "n", 117871 },	-- War Councilor Victoria
+				classes = {
 					MAGE,		-- Arcane
 					PALADIN,	-- Retribution
 					ROGUE,		-- Assassination
 					SHAMAN,		-- Enhancemeent
 					WARLOCK,	-- Demonology
 				},
-				["crs"] = {
+				crs = {
 					116484,	-- Sigryn
 					116499,	-- Jarl Velbrand
 					116496,	-- Runeseer Faljar
 				},
-				["groups"] = {
+				groups = {
 					artifact(144, {	-- Aluneth
-						["classes"] = { MAGE },
+						classes = { MAGE },
 					}),
 					artifact(23, {	-- Ashbringer
-						["classes"] = { PALADIN },
+						classes = { PALADIN },
 					}),
 					artifact(901, {	-- The Kingslayers
-						["classes"] = { ROGUE },
+						classes = { ROGUE },
 					}),
 					artifact(301, {	-- Doomhammer
-						["classes"] = { SHAMAN },
+						classes = { SHAMAN },
 					}),
 					artifact(828, {	-- Skull of the Man'ari
-						["classes"] = { WARLOCK },
+						classes = { WARLOCK },
 					}),
 				},
 			}),
 			q(45416, {	-- The Highlord's Return
-				["provider"] = { "n", 117871 },	-- War Councilor Victoria
-				["classes"] = {
+				provider = { "n", 117871 },	-- War Councilor Victoria
+				classes = {
 					DEATHKNIGHT,	-- Blood
 					DEMONHUNTER,	-- Vengeance
 					DRUID,			-- Guardian
@@ -205,64 +205,64 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					PALADIN,		-- Protection
 					WARRIOR,		-- Protection
 				},
-				["crs"] = {
+				crs = {
 					117933,	-- Inquisitor Variss
 					118032,	-- Tormenting Eye
 					103928,	-- Smoldering Infernal
 					118044,	-- Nether Horror
 					117198,	-- Highlord Kruul
 				},
-				["groups"] = {
+				groups = {
 					artifact(364, {	-- Maw of the Damned
-						["classes"] = { DEATHKNIGHT },
+						classes = { DEATHKNIGHT },
 					}),
 					artifact(857, {	-- Aldrachi Warblades
-						["classes"] = { DEMONHUNTER },
+						classes = { DEMONHUNTER },
 					}),
 					artifact(990, {	-- Claws of Ursoc
-						["classes"] = { DRUID },
+						classes = { DRUID },
 					}),
 					artifact(352, {	-- Fu Zan, the Wanderer's Companion
-						["classes"] = { MONK },
+						classes = { MONK },
 					}),
 					artifact(718, {	-- Truthguard
-						["classes"] = { PALADIN },
+						classes = { PALADIN },
 					}),
 					artifact(861, {	-- Scale of the Earth-Warder
-						["classes"] = { WARRIOR },
+						classes = { WARRIOR },
 					}),
 				},
 			}),
 			q(46127, {	-- Thwarting the Twins
-				["provider"] = { "n", 117871 },	-- War Councilor Victoria
-				["classes"] = {
+				provider = { "n", 117871 },	-- War Councilor Victoria
+				classes = {
 					DRUID,		-- Balance
 					HUNTER,		-- Marksmanship
 					MAGE,		-- Frost
 					PRIEST,		-- Shadow
 					WARLOCK,	-- Affliction
 				},
-				["crs"] = {
+				crs = {
 					116410,	-- Karam Magespear
 					116409,	-- Raest Magespear
 					118698,	-- Hand from Beyond
 					119098,	-- Thing of Nightmare
 				},
-				["groups"] = {
+				groups = {
 					artifact(929, {	-- Scythe of Elune
-						["classes"] = { DRUID },
+						classes = { DRUID },
 					}),
 					artifact(965, {	-- Thas'dorah, Legacy of the Windrunners
-						["classes"] = { HUNTER },
+						classes = { HUNTER },
 					}),
 					artifact(885, {	-- Ebonchill
-						["classes"] = { MAGE },
+						classes = { MAGE },
 					}),
 					artifact(261, {	-- Xal'atath, Blade of the Black Empire
-						["classes"] = { PRIEST },
+						classes = { PRIEST },
 					}),
 					artifact(972, {	-- Ulthalesh, the Deadwind Harvester
-						["classes"] = { WARLOCK },
+						classes = { WARLOCK },
 					}),
 				},
 			}),
@@ -270,8 +270,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	})),
 	-- Rehashed Permanent content
 	n(MAGE_TOWER, bubbleDown(MageTowerFilter92, {
-		["description"] = "The Mage Tower Challenges are back, more challenging than ever. Good luck everyone!",
-		["groups"] = {
+		description = "The Mage Tower Challenges are back, more challenging than ever. Good luck everyone!",
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(15309),	-- A Towering Success
 				ach(15310, {	-- A Tour of Towers
@@ -419,7 +419,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	})),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_1_5 } }, {
 	n(MAGE_TOWER, {
 		q(64923),	-- unlocking Gravewarden Armaments set
 		q(64924),	-- unlocking Demonbane Armor set

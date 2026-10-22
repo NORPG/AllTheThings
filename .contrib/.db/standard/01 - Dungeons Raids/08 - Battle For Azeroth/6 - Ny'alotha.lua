@@ -194,23 +194,23 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 InstanceHelper.LFRQueueNPC = {
-	["crs"] = {
+	crs = {
 		177193,	-- Kiku
 		177208,	-- Eppu
 	},
-	["coords"] = {
+	coords = {
 		{ 74.0, 13.4, BORALUS },	-- Kiku
 		{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8_3_0 } }, {
 	inst(1180, {	-- Ny'alotha
-		["coords"] = {
+		coords = {
 			{ 55.1, 43.8, NZOTH_ASSAULT_ULDUM },
 			{ 41.6, 45.5, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 		},
-		["maps"] = {
+		maps = {
 			1580,	-- Vision of Destiny
 			1581,	-- Annex of Prophecy
 			1582,	-- Ny'alotha
@@ -223,9 +223,9 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			1596,	-- Chamber of Rebirth
 			1597,	-- Locus of Infinite Truths
 		},
-		["isRaid"] = true,
-		["lvl"] = { 50 },
-		["groups"] = {
+		isRaid = true,
+		lvl = { 50 },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(14058),	-- All Eyes On Me (Ny'alotha)
 				ach(14146, {	-- Glory of the Ny'alotha Raider (automated)
@@ -233,62 +233,62 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				ach(14193, {	-- Vision of Destiny
 					crit(46693, {	-- Wrathion, the Black Emperor
-						["_encounter"] = { WRATHION, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { WRATHION, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(46694, {	-- Maut
-						["_encounter"] = { MAUT, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { MAUT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(46695, {	-- The Prophet Skitra
-						["_encounter"] = { PROPHET, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { PROPHET, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(14194, {	-- Halls of Devotion
 					crit(46696, {	-- Dark Inquisitor Xanesh
-						["_encounter"] = { INQUISITOR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { INQUISITOR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(46697, {	-- Vexiona
-						["_encounter"] = { VEXIONA, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { VEXIONA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(46698, {	-- The Hivemind
-						["_encounter"] = { HIVEMIND, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { HIVEMIND, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(46699, {	-- Ra-den the Despoiled
-						["_encounter"] = { RADEN, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { RADEN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(14195, {	-- Gift of Flesh
 					crit(46700, {	-- Shad'har the Insatiable
-						["_encounter"] = { SHADHAR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SHADHAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(46701, {	-- Drest'agath
-						["_encounter"] = { DRESTAGATH, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { DRESTAGATH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(46702, {	-- Il'gynoth, Corruption Reborn
-						["_encounter"] = { ILGYNOTH, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { ILGYNOTH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(14196, {	-- The Waking Dream
 					crit(46703, {	-- Carapace of N'Zoth
-						["_encounter"] = { CARAPACE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { CARAPACE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(46704, {	-- N'Zoth, the Corruptor
-						["_encounter"] = { NZOTH, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { NZOTH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(14039),	-- Ny'alotha, the Waking City Guild Run
 				ach(40963, {	-- Ny'alotha, the Waking City (automated)
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 			}),
 			n(AZERITE_ESSENCES, {
 				i(173883, {	-- Replicating Void Droplets (Rank 1)
-					["cost"] = { { "i", 174279, 15 } },	-- 15x Encrypted Ny'alothan Text
+					cost = { { "i", 174279, 15 } },	-- 15x Encrypted Ny'alothan Text
 				}),
 				i(173884, {	-- Burgeoning Void Droplet (Rank 2)
-					["cost"] = { { "i", 174279, 30 } },	-- 30x Encrypted Ny'alothan Text
+					cost = { { "i", 174279, 30 } },	-- 30x Encrypted Ny'alothan Text
 				}),
 				i(173885, {	-- Volatile Void Droplet (Rank 3)
-					["cost"] = { { "i", 174279, 60 } },	-- 60x Encrypted Ny'alothan Text
+					cost = { { "i", 174279, 60 } },	-- 60x Encrypted Ny'alothan Text
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
@@ -326,7 +326,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					i(174279),	-- Encrypted Ny'alothan Text
 					i(174452),	-- Eye of Corruption (PET!)
 					i(207091, {	-- Technique: Glyph of the Shath'Yar (RECIPE!)
-						["timeline"] = { ADDED_10_1_5 },
+						timeline = { ADDED_10_1_5 },
 					}),
 				}),
 			}),
@@ -395,12 +395,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(58373, {	-- Ny'alotha: MOTHER's Guidance [N]
-						["qg"] = 160177,	-- Wrathion
-						["lockCriteria"] = { 1,
+						qg = 160177,	-- Wrathion
+						lockCriteria = { 1,
 							"questID", 58374,	-- Ny'alotha: MOTHER's Guidance [H]
 							"questID", 58375,	-- Ny'alotha: MOTHER's Guidance [M]
 						},
-						["qis"] = {
+						qis = {
 							174910,	-- Dragon Heart (QI!)
 							174913,	-- Prophetic Eye (QI!)
 							174063,	-- Titan Core (QI!)
@@ -424,21 +424,21 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(NZOTH, {
 					ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
-						["timeline"] = { REMOVED_9_0_1 },
+						timeline = { REMOVED_9_0_1 },
 					}),
 					i(174863, {	-- Spawn of Vexiona (QS!)
-						["timeline"] = { REMOVED_9_0_1 },
+						timeline = { REMOVED_9_0_1 },
 					}),
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
 					q(58374, {	-- Ny'alotha: MOTHER's Guidance [H]
-						["qg"] = 160177,	-- Wrathion
-						["lockCriteria"] = { 1,
+						qg = 160177,	-- Wrathion
+						lockCriteria = { 1,
 							"questID", 58375,	-- Ny'alotha: MOTHER's Guidance [M]
 						},
-						["qis"] = {
+						qis = {
 							174909,	-- Dragon Heart (QI!)
 							174911,	-- Prophetic Eye (QI!)
 							174064,	-- Titan Core (QI!)
@@ -462,8 +462,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(58375, {	-- Ny'alotha: MOTHER's Guidance [M]
-						["qg"] = 160177,	-- Wrathion
-						["qis"] = {
+						qg = 160177,	-- Wrathion
+						qis = {
 							174908,	-- Dragon Heart (QI!)
 							174912,	-- Prophetic Eye (QI!)
 							174065,	-- Titan Core (QI!)
@@ -506,17 +506,17 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				Boss(NZOTH, {
 					ach(14069, {	-- Cutting Edge: N'Zoth, the Corruptor
-						["timeline"] = { REMOVED_9_0_1 },
+						timeline = { REMOVED_9_0_1 },
 					}),
 					ach(14071, {	-- Hall of Fame: N'Zoth the Corruptor (Alliance)
-						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { REMOVED_9_0_1 },
-						["groups"] = { title(416) },	-- <Name>, Famed Slayer of N'Zoth
+						races = ALLIANCE_ONLY,
+						timeline = { REMOVED_9_0_1 },
+						groups = { title(416) },	-- <Name>, Famed Slayer of N'Zoth
 					}),
 					ach(14072, {	-- Hall of Fame: N'Zoth the Corruptor (Horde)
-						["races"] = HORDE_ONLY,
-						["timeline"] = { REMOVED_9_0_1 },
-						["groups"] = { title(416) },	-- <Name>, Famed Slayer of N'Zoth
+						races = HORDE_ONLY,
+						timeline = { REMOVED_9_0_1 },
+						groups = { title(416) },	-- <Name>, Famed Slayer of N'Zoth
 					}),
 					ach(14055, {	-- Mythic: N'Zoth, the Corruptor
 						title(417),	-- the Uncorrupted
@@ -524,7 +524,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					ach(14040),	-- Mythic: N'Zoth the Corruptor Guild Run
 					i(174872),	-- Ny'alotha Allseer (MOUNT!)
 					i(173886, {	-- Bursting Void Droplet
-						["timeline"] = { REMOVED_9_0_1 },
+						timeline = { REMOVED_9_0_1 },
 					}),
 				}),
 			}),
@@ -532,7 +532,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_3_0 } }, {
 	inst(1180, {	-- Ny'alotha
 		q(58550),	-- Mythic: Prophet Skitra
 		q(58542),	-- Mythic: Vexiona

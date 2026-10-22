@@ -165,11 +165,11 @@ end
 -- CRIEVE NOTE: TODO: These are reportedly tied to a weekly HQT. It might be worthwhile to refactor these to include that information.
 local TWISTED_TREASURES_OF_THE_VALE = i(104275, {	-- Twisted Treasures of the Vale
 	-- #if AFTER 8.0.1
-	["description"] = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Siege of Orgrimmar.",
+	description = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Siege of Orgrimmar.",
 	-- #endif
-	["timeline"] = { ADDED_5_4_0, REMOVED_8_0_1 },
-	["sym"] = {MOP_SYM_PETS},
-	["groups"] = {
+	timeline = { ADDED_5_4_0, REMOVED_8_0_1 },
+	sym = {MOP_SYM_PETS},
+	groups = {
 		i(105824),	-- Aeth's Swiftcinder Cloak
 		i(105816),	-- Brave Niunai's Cloak
 		i(105812),	-- Cape of the Alpha
@@ -188,10 +188,10 @@ local TWISTED_TREASURES_OF_THE_VALE = i(104275, {	-- Twisted Treasures of the Va
 });
 local COALESCED_TURMOIL = i(105714, {	-- Coalesced Turmoil
 	-- #if AFTER 8.0.1
-	["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid. If you are 101+ then you will need to seek out each item based on their original sources. This change occurred in Patch 8.0.1",
+	description = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid. If you are 101+ then you will need to seek out each item based on their original sources. This change occurred in Patch 8.0.1",
 	-- #endif
-	["timeline"] = { ADDED_5_4_0, REMOVED_8_0_1 },
-	["crs"] = {
+	timeline = { ADDED_5_4_0, REMOVED_8_0_1 },
+	crs = {
 		72249,	-- Galakras
 		71466,	-- Iron Juggernaut
 		71859,	-- Earthbreaker Haromm [Kor'kron Dark Shaman]
@@ -228,15 +228,15 @@ end]];
 
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, inst(369, {	-- Siege of Orgrimmar
-		["mapID"] = 556,
-		["coords"] = {
+		mapID = 556,
+		coords = {
 			{ 72.3, 44.3, VALE_OF_ETERNAL_BLOSSOMS },	-- old Vale
 			-- #if AFTER BFA
 			{ 72.3, 44.3, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- new Vale
 			-- #endif
 		},
-		["timeline"] = { ADDED_5_4_0 },
-		["maps"] = {
+		timeline = { ADDED_5_4_0 },
+		maps = {
 			557,
 			558,
 			559,
@@ -252,62 +252,62 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			569,
 			570,
 		},
-		["isRaid"] = true,
-		["lvl"] = 90,
-		["groups"] = {
+		isRaid = true,
+		lvl = 90,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(8458, {	-- Vale of Eternal Sorrows
 					crit(23651, {	-- Immerseus
-						["_encounter"] = { 852, CURRENT_ALL_DIFFICULTIES },
+						_encounter = { 852, CURRENT_ALL_DIFFICULTIES },
 					}),
 					crit(23653, {	-- The Fallen Protectors
-						["_encounter"] = { 849, CURRENT_ALL_DIFFICULTIES },
+						_encounter = { 849, CURRENT_ALL_DIFFICULTIES },
 					}),
 					crit(23654, {	-- Norushen
-						["_encounter"] = { 866, CURRENT_ALL_DIFFICULTIES },
+						_encounter = { 866, CURRENT_ALL_DIFFICULTIES },
 					}),
 					crit(23652, {	-- Sha of Pride
-						["_encounter"] = { 867, CURRENT_ALL_DIFFICULTIES },
+						_encounter = { 867, CURRENT_ALL_DIFFICULTIES },
 					}),
 				}),
 				ach(8459, {	-- Gates of Retribution
 					crit(23655, {	-- Galakras
-						["_encounter"] = { 881, CURRENT_ALL_DIFFICULTIES },
+						_encounter = { 881, CURRENT_ALL_DIFFICULTIES },
 					}),
 					crit(23656, {	-- Iron Juggernaut
-						["_encounter"] = { 864, CURRENT_ALL_DIFFICULTIES },
+						_encounter = { 864, CURRENT_ALL_DIFFICULTIES },
 					}),
 					crit(23657, {	-- Kor'kron Dark Shaman
-						["_encounter"] = { 856, CURRENT_ALL_DIFFICULTIES },
+						_encounter = { 856, CURRENT_ALL_DIFFICULTIES },
 					}),
 					crit(23658, {	-- General Nazgrim
-						["_encounter"] = { 850, CURRENT_ALL_DIFFICULTIES },
+						_encounter = { 850, CURRENT_ALL_DIFFICULTIES },
 					}),
 				}),
 				ach(8461, {	-- The Underhold
 					crit(23659, {	-- Malkorok
-						["_encounter"] = { 846, CURRENT_ALL_DIFFICULTIES },
+						_encounter = { 846, CURRENT_ALL_DIFFICULTIES },
 					}),
 					crit(23660, {	-- Spoils of Pandaria
-						["_encounter"] = { 870, CURRENT_ALL_DIFFICULTIES },
+						_encounter = { 870, CURRENT_ALL_DIFFICULTIES },
 					}),
 					crit(23661, {	-- Thok the Bloodthirsty
-						["_encounter"] = { 851, CURRENT_ALL_DIFFICULTIES },
+						_encounter = { 851, CURRENT_ALL_DIFFICULTIES },
 					}),
 				}),
 				ach(8462, {	-- Downfall
 					crit(23662, {	-- Siegecrafter Blackfuse
-						["_encounter"] = { 865, CURRENT_ALL_DIFFICULTIES },
+						_encounter = { 865, CURRENT_ALL_DIFFICULTIES },
 					}),
 					crit(23906, {	-- Paragons of the Klaxxi
-						["_encounter"] = { 853, CURRENT_ALL_DIFFICULTIES },
+						_encounter = { 853, CURRENT_ALL_DIFFICULTIES },
 					}),
 					crit(23664, {	-- Garrosh Hellscream
-						["_encounter"] = { 869, CURRENT_ALL_DIFFICULTIES },
+						_encounter = { 869, CURRENT_ALL_DIFFICULTIES },
 					}),
 				}),
 				ach(8454, {	-- Glory of the Orgrimmar Raider
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						8536,	-- No More Tears
 						8528,	-- Go Long
 						8532,	-- None Shall Pass
@@ -323,52 +323,52 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						8531,	-- Now We are the Paragon
 						8537,	-- Strike!
 					}},
-					["groups"] = {
+					groups = {
 						i(104208),	-- Spawn of Galakras (MOUNT!)
 					},
 				}),
-				ach(11759, {["timeline"] = {ADDED_7_2_0}}),	-- Yaass'shaarj (Siege of Orgrimmar)
+				ach(11759, {timeline = {ADDED_7_2_0}}),	-- Yaass'shaarj (Siege of Orgrimmar)
 				ach(8510),	-- Siege of Orgrimmar Guild Run
 			}),
 			n(QUESTS, {
 				q(33147, {	-- The Last Gasp of Y'Shaarj
-					["provider"] = { "n", 73335 },	-- Fading Breath
-					-- ["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
+					provider = { "n", 73335 },	-- Fading Breath
+					-- coord = { <coords>, <mapID> },	-- Siege of Orgrimmar
 				}),
 				{
-					["aqd"] = q(33134, {	-- Warforged Seals (A)
-						["qg"] = 64029,	-- Elder Lin
-						["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
+					aqd = q(33134, {	-- Warforged Seals (A)
+						qg = 64029,	-- Elder Lin
+						coord = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
 					}),
-					["hqd"] = q(33133, {	-- Warforged Seals (H)
-						["qg"] = 63996,	-- Elder Liao
-						["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
+					hqd = q(33133, {	-- Warforged Seals (H)
+						qg = 63996,	-- Elder Liao
+						coord = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
 					}),
-					["timeline"] = { ADDED_5_4_0 },
-					["cost"] = { { "c", 738, 50 } },	-- Lesser Charms of Good Fortune
-					["repeatable"] = true,
-					["groups"] = {
+					timeline = { ADDED_5_4_0 },
+					cost = { { "c", 738, 50 } },	-- Lesser Charms of Good Fortune
+					repeatable = true,
+					groups = {
 						currency(776),	-- Warforged Seal
 					},
 				},
 				q(33138, {	-- Why Do We Fight?
-					["sourceQuests"] = { 33147 },	-- The Last Gasp of Y'Shaarj
-					["provider"] = { "n", 73318 },	-- Lorewalker Cho
-					-- ["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
+					sourceQuests = { 33147 },	-- The Last Gasp of Y'Shaarj
+					provider = { "n", 73318 },	-- Lorewalker Cho
+					-- coord = { <coords>, <mapID> },	-- Siege of Orgrimmar
 				}),
 			}),
 			n(VENDORS, {
 				n(COMMON_VENDOR_ITEMS, {
-					["aqd"] = {
-						["provider"] = { "n", 73614 },	-- Tinkmaster Overspark <Alliance Supplies> [A]
+					aqd = {
+						provider = { "n", 73614 },	-- Tinkmaster Overspark <Alliance Supplies> [A]
 					},
-					["hqd"] = {
-						["provider"] = { "n", 73715 },	-- Rivett Clutchpop <Horde Supplies> [H]
+					hqd = {
+						provider = { "n", 73715 },	-- Rivett Clutchpop <Horde Supplies> [H]
 					},
-					["description"] = "Vendor spawns in after opening gate after the Malkorok Boss fight in Kor'kron Barracks.",
-					["groups"] = {
+					description = "Vendor spawns in after opening gate after the Malkorok Boss fight in Kor'kron Barracks.",
+					groups = {
 						i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 						i(23807),	-- Schematic: Adamantite Scope (RECIPE!)
 						i(23803),	-- Schematic: Cogspinner Goggles (RECIPE!)
@@ -377,13 +377,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 				n(SOO_RAID_FINDER_VENDOR, {
-					["aqd"] = n(74020, {	-- Welbiz Cheerwhistle <Raid Finder Vendor> [A]
-						["coord"] = { 41.0, 42.5, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
+					aqd = n(74020, {	-- Welbiz Cheerwhistle <Raid Finder Vendor> [A]
+						coord = { 41.0, 42.5, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
 					}),
-					["hqd"] = n(73674, {	-- Blizzix Sparkshiv <Raid Finder Vendor> [H]
-						["coord"] = { 42.9, 74.7, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+					hqd = n(73674, {	-- Blizzix Sparkshiv <Raid Finder Vendor> [H]
+						coord = { 42.9, 74.7, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					}),
-					["groups"] = {
+					groups = {
 						cl(WARRIOR, {
 							-- DPS
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99046)),	-- Helmet of the Prehistoric Marauder
@@ -572,16 +572,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 				n(SOO_RAID_NORMAL_VENDOR, {
-					["aqd"] = n(74022, {	-- Thelett Shaleheart <Raid Vendor> [A]
-						["coord"] = { 41.9, 42.9, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
+					aqd = n(74022, {	-- Thelett Shaleheart <Raid Vendor> [A]
+						coord = { 41.9, 42.9, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
 					}),
-					["hqd"] = n(74010, {	-- Nadina Stargem <Raid Vendor> [H]
-						["coord"] = { 43.3, 76.0, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+					hqd = n(74010, {	-- Nadina Stargem <Raid Vendor> [H]
+						coord = { 43.3, 76.0, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					}),
 					-- #if ANYCLASSIC
-					["timeline"] = { ADDED_6_0_2 },
+					timeline = { ADDED_6_0_2 },
 					-- #endif
-					["groups"] = {
+					groups = {
 						cl(WARRIOR, {
 							-- DPS
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99602)),	-- Helmet of the Prehistoric Marauder
@@ -770,13 +770,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 				n(SOO_RAID_HEROIC_VENDOR, {
-					["aqd"] = n(74021, {	-- Clarice Chapmann <Heroic Vendor> [A]
-						["coord"] = { 43.0, 45.5, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
+					aqd = n(74021, {	-- Clarice Chapmann <Heroic Vendor> [A]
+						coord = { 43.0, 45.5, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
 					}),
-					["hqd"] = n(74012, {	-- Ki'agnuu <Heroic Vendor> [H]
-						["coord"] = { 43.1, 78.7, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+					hqd = n(74012, {	-- Ki'agnuu <Heroic Vendor> [H]
+						coord = { 43.1, 78.7, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					}),
-					["groups"] = {
+					groups = {
 						cl(WARRIOR, {
 							-- DPS
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99206)),	-- Helmet of the Prehistoric Marauder
@@ -965,13 +965,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 				n(SOO_RAID_MYTHIC_VENDOR, {
-					["aqd"] = n(74027, {	-- Lorry Warmheart <Mythic Vendor> [A]
-						["coord"] = { 43.1, 46.8, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
+					aqd = n(74027, {	-- Lorry Warmheart <Mythic Vendor> [A]
+						coord = { 43.1, 46.8, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
 					}),
-					["hqd"] = n(74019, {	-- Tu'aho Pathcutter <Mythic Vendor> [H]
-						["coord"] = { 43.4, 80.4, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+					hqd = n(74019, {	-- Tu'aho Pathcutter <Mythic Vendor> [H]
+						coord = { 43.4, 80.4, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					}),
-					["groups"] = {
+					groups = {
 						cl(WARRIOR, {
 							-- DPS
 							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99418)),	-- Helmet of the Prehistoric Marauder
@@ -1160,8 +1160,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 				n(72157, {	-- Hagrus <Reagents>
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						i(5643),	-- Recipe: Great Rage Potion (RECIPE!)
 						i(5640),	-- Recipe: Rage Potion (RECIPE!)
 					},
@@ -1172,14 +1172,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 				})),
 				e(849, {	-- The Fallen Protectors
-					["crs"] = {
+					crs = {
 						71479,	-- He Softfoot [The Fallen Protectors]
 						71475,	-- Rook Stonetoe [The Fallen Protectors]
 						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
 				}),
 				e(866, {	-- Norushen
-					["crs"] = {
+					crs = {
 						72276,	-- Amalgam of Corruption
 						71965,	-- Norushen
 					},
@@ -1193,7 +1193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				})),
 				cr(71466, e(864, {	-- Iron Juggernaut
 					i(140783, {	-- Predictive Combat Operations Databank
-						["timeline"] = { ADDED_7_0_3 },
+						timeline = { ADDED_7_0_3 },
 					}),
 				})),
 				cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
@@ -1215,7 +1215,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(104158),	-- Blackfuse Bombling (PET!)
 				})),
 				e(853, {	-- Paragons of the Klaxxi
-					["crs"] = {
+					crs = {
 						71153,	-- Hisek the Swarmkeeper
 						71160,	-- Iyyokuk the Lucid
 						71154,	-- Ka'roz the Locust
@@ -1226,49 +1226,49 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						71158,	-- Rik'kal the Dissector
 						71152,	-- Skeer the Bloodseeker
 					},
-					["groups"] = {
+					groups = {
 						i(104165),	-- Kovok (PET!)
 						title(231, {	-- <Name> the Poisoned Mind
-							["collectible"] = false,
+							collectible = false,
 						}),
 						title(232, {	-- <Name> the Bloodseeker
-							["collectible"] = false,
+							collectible = false,
 						}),
 						title(233, {	-- <Name> the Locust
-							["collectible"] = false,
+							collectible = false,
 						}),
 						title(234, {	-- <Name> the Swarmkeeper
-							["collectible"] = false,
+							collectible = false,
 						}),
 						title(235, {	-- <Name> the Prime
-							["collectible"] = false,
+							collectible = false,
 						}),
 						title(236, {	-- <Name> the Manipulator
-							["collectible"] = false,
+							collectible = false,
 						}),
 						title(237, {	-- <Name> the Dissector
-							["collectible"] = false,
+							collectible = false,
 						}),
 						title(238, {	-- <Name> the Lucid
-							["collectible"] = false,
+							collectible = false,
 						}),
 						title(239, {	-- <Name> the Wind-Reaver
-							["collectible"] = false,
+							collectible = false,
 						}),
 					},
 				}),
 				cr(71865, e(869, {	-- Garrosh Hellscream
-					i(253242, {["timeline"] = { ADDED_11_2_7 }}),	-- Horde Warlord's Throne (DECOR!)
+					i(253242, {timeline = { ADDED_11_2_7 }}),	-- Horde Warlord's Throne (DECOR!)
 				})),
 			}),
 			-- #if NOT ANYCLASSIC
 			d(DIFFICULTY.LEGACY_RAID.FINDER, {			-- Raid Finder (Removed with Patch 6.0.2) >> Items marked "Raid Finder" after 6.0 <<
 				-- #if AFTER 6.0.2
-				["description"] = "This was the original Raid Finder difficulty. Previously, loot had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
+				description = "This was the original Raid Finder difficulty. Previously, loot had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				-- #endif
-				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				["ignoreBonus"] = true,
-				["groups"] = {
+				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				ignoreBonus = true,
+				groups = {
 					-- #if BEFORE 6.0.2
 					n(COMMON_BOSS_DROPS, {
 						COALESCED_TURMOIL,
@@ -1301,12 +1301,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							i(104930),	-- Waterwalker Greatboots LFR
 						})),
 						e(849, {	-- The Fallen Protectors
-							["crs"] = {
+							crs = {
 								71479,	-- He Softfoot [The Fallen Protectors]
 								71475,	-- Rook Stonetoe [The Fallen Protectors]
 								71480,	-- Sun Tenderheart [The Fallen Protectors]
 							},
-							["groups"] = {
+							groups = {
 								i(104936),	-- Darkfallen Shoulderplates LFR
 								i(104931),	-- Death Lotus Crossbow LFR
 								i(104951),	-- Gaze of Echoing Despair LFR
@@ -1331,11 +1331,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							},
 						}),
 						e(866, {	-- Norushen
-							["crs"] = {
+							crs = {
 								71965,	-- Norushen
 								72276,	-- Amalgam of Corruption
 							},
-							["groups"] = {
+							groups = {
 								i(104964),	-- Blight Hurlers LFR
 								i(104969),	-- Boots of Broken Reliance LFR
 								i(104958),	-- Bracers of Blind Hatred LFR
@@ -1556,7 +1556,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							i(105114),	-- Ticking Ebon Detonator LFR
 						})),
 						e(853, {	-- Paragons of the Klaxxi
-							["crs"] = {
+							crs = {
 								71153,	-- Hisek the Swarmkeeper
 								71160,	-- Iyyokuk the Lucid
 								71154,	-- Ka'roz the Locust
@@ -1567,7 +1567,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 								71158,	-- Rik'kal the Dissector
 								71152,	-- Skeer the Bloodseeker
 							},
-							["groups"] = {
+							groups = {
 								-- #if BEFORE 6.0.2
 								ig(99675),	-- Leggings of the Cursed Conqueror
 								ig(99676),	-- Leggings of the Cursed Protector
@@ -1618,10 +1618,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				},
 			}),
 			d(DIFFICULTY.RAID.LFR, {					-- Raid Finder (Added with Patch 6.0.2)
-				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
-				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
-				["timeline"] = { ADDED_6_0_2 },
-				["groups"] = {
+				crs = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
+				coord = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
+				timeline = { ADDED_6_0_2 },
+				groups = {
 					-- #if AFTER 6.0.2
 					n(COMMON_BOSS_DROPS, {
 						COALESCED_TURMOIL,
@@ -1654,12 +1654,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							i(112426),	-- Purified Bindings of Immerseus
 						})),
 						e(849, {	-- The Fallen Protectors
-							["crs"] = {
+							crs = {
 								71479,	-- He Softfoot [The Fallen Protectors]
 								71475,	-- Rook Stonetoe [The Fallen Protectors]
 								71480,	-- Sun Tenderheart [The Fallen Protectors]
 							},
-							["groups"] = {
+							groups = {
 								i(112477),	-- Softfoot's Last Resort
 								i(112478),	-- Death Lotus Crossbow
 								i(112491),	-- Purehearted Cricket Cage
@@ -1684,11 +1684,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							},
 						}),
 						e(866, {	-- Norushen
-							["crs"] = {
+							crs = {
 								71965,	-- Norushen
 								72276,	-- Amalgam of Corruption
 							},
-							["groups"] = {
+							groups = {
 								i(112547),	-- Norushen's Shortblade
 								i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 								i(112560),	-- Norushen's Enigmatic Barrier
@@ -1902,7 +1902,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							i(112879),	-- Ticking Ebon Detonator
 						})),
 						e(853, {	-- Paragons of the Klaxxi
-							["crs"] = {
+							crs = {
 								71153,	-- Hisek the Swarmkeeper
 								71160,	-- Iyyokuk the Lucid
 								71154,	-- Ka'roz the Locust
@@ -1913,7 +1913,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 								71158,	-- Rik'kal the Dissector
 								71152,	-- Skeer the Bloodseeker
 							},
-							["groups"] = {
+							groups = {
 								ig(99675),	-- Leggings of the Cursed Conqueror
 								ig(99676),	-- Leggings of the Cursed Protector
 								ig(99674),	-- Leggings of the Cursed Vanquisher
@@ -1961,7 +1961,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			}),
 			-- #endif
 			d(CURRENT_NORMAL_PLUS_DIFFICULTIES, {		-- Flexible+ (5.4.0+) / Normal+ (6.0.2+)
-				n(ZONE_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+				n(ZONE_DROPS, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 					i(113224),	-- Aeth's Swiftcinder Cloak
 					i(113231),	-- Brave Niunai's Cloak
 					i(113226),	-- Cape of the Alpha
@@ -1981,21 +1981,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					ach(8536),	-- No More Tears
 				})),
 				e(849, {	-- The Fallen Protectors
-					["crs"] = {
+					crs = {
 						71479,	-- He Softfoot [The Fallen Protectors]
 						71475,	-- Rook Stonetoe [The Fallen Protectors]
 						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
-					["groups"] = {
+					groups = {
 						ach(8528),	-- Go Long
 					},
 				}),
 				e(866, {	-- Norushen
-					["crs"] = {
+					crs = {
 						72276,	-- Amalgam of Corruption
 						71965,	-- Norushen
 					},
-					["groups"] = {
+					groups = {
 						ach(8532),	-- None Shall Pass
 					},
 				}),
@@ -2009,11 +2009,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					ach(8520),	-- Fire in the Hole!
 				})),
 				cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
-					["crs"] = {
+					crs = {
 						71859,	-- Earthbreaker Haromm
 						71858,	-- Wavebinder Kardris
 					},
-					["groups"] = {
+					groups = {
 						ach(8453),	-- Rescue Raiders
 						i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
 							i(105745),	-- Kor'kron Dark Shaman Cowl
@@ -2048,7 +2048,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					}),
 				})),
 				e(853, {	-- Paragons of the Klaxxi
-					["crs"] = {
+					crs = {
 						71153,	-- Hisek the Swarmkeeper
 						71160,	-- Iyyokuk the Lucid
 						71154,	-- Ka'roz the Locust
@@ -2059,7 +2059,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						71158,	-- Rik'kal the Dissector
 						71152,	-- Skeer the Bloodseeker
 					},
-					["groups"] = {
+					groups = {
 						ach(8531),	-- Now We are the Paragon
 					},
 				}),
@@ -2069,9 +2069,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			}),
 			-- #if NOT ANYCLASSIC
 			FLEX_RAID_HEADER({							-- Flexible (Removed with Patch 6.0.2) >> Items marked "Normal" after 6.0 <<
-				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				["ignoreBonus"] = true,
-				["groups"] = {
+				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				ignoreBonus = true,
+				groups = {
 					n(ZONE_DROPS, {
 						i(105838),	-- Aeth's Swiftcinder Cloak Normal
 						i(105830),	-- Brave Niunai's Cloak Normal
@@ -2113,12 +2113,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(104681),	-- Waterwalker Greatboots Normal
 					})),
 					e(849, {	-- The Fallen Protectors
-						["crs"] = {
+						crs = {
 							71479,	-- He Softfoot [The Fallen Protectors]
 							71475,	-- Rook Stonetoe [The Fallen Protectors]
 							71480,	-- Sun Tenderheart [The Fallen Protectors]
 						},
-						["groups"] = {
+						groups = {
 							i(104687),	-- Darkfallen Shoulderplates Normal
 							i(104682),	-- Death Lotus Crossbow Normal
 							i(104702),	-- Gaze of Echoing Despair Normal
@@ -2143,11 +2143,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					e(866, {	-- Norushen
-						["crs"] = {
+						crs = {
 							72276,	-- Amalgam of Corruption
 							71965,	-- Norushen
 						},
-						["groups"] = {
+						groups = {
 							i(104715),	-- Blight Hurlers Normal
 							i(104720),	-- Boots of Broken Reliance Normal
 							i(104709),	-- Bracers of Blind Hatred Normal
@@ -2362,7 +2362,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(104865),	-- Ticking Ebon Detonator Normal
 					})),
 					e(853, {	-- Paragons of the Klaxxi
-						["crs"] = {
+						crs = {
 							71153,	-- Hisek the Swarmkeeper
 							71160,	-- Iyyokuk the Lucid
 							71154,	-- Ka'roz the Locust
@@ -2373,7 +2373,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							71158,	-- Rik'kal the Dissector
 							71152,	-- Skeer the Bloodseeker
 						},
-						["groups"] = {
+						groups = {
 							-- #if BEFORE 6.0.2
 							ig(99752),	-- Leggings of the Cursed Conqueror
 							ig(99753),	-- Leggings of the Cursed Protector
@@ -2439,8 +2439,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			-- #if AFTER 6.0.2
 			-- CRIEVE NOTE: This is necessary because 'Flexible' difficulty was repurposed to 'Normal', they use the same difficultyID and merge data in MOP Classic otherwise.
 			d(DIFFICULTY.RAID.NORMAL, {					-- Normal (Added with Patch 6.0.2)
-				["timeline"] = { ADDED_6_0_2 },
-				["groups"] = {
+				timeline = { ADDED_6_0_2 },
+				groups = {
 					n(ZONE_DROPS, {
 						i(113224),	-- Aeth's Swiftcinder Cloak
 						i(113231),	-- Brave Niunai's Cloak
@@ -2482,12 +2482,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112426),	-- Purified Bindings of Immerseus
 					})),
 					e(849, {	-- The Fallen Protectors
-						["crs"] = {
+						crs = {
 							71479,	-- He Softfoot [The Fallen Protectors]
 							71475,	-- Rook Stonetoe [The Fallen Protectors]
 							71480,	-- Sun Tenderheart [The Fallen Protectors]
 						},
-						["groups"] = {
+						groups = {
 							i(112477),	-- Softfoot's Last Resort
 							i(112478),	-- Death Lotus Crossbow
 							i(112491),	-- Purehearted Cricket Cage
@@ -2512,11 +2512,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					e(866, {	-- Norushen
-						["crs"] = {
+						crs = {
 							72276,	-- Amalgam of Corruption
 							71965,	-- Norushen
 						},
-						["groups"] = {
+						groups = {
 							i(112547),	-- Norushen's Shortblade
 							i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 							i(112560),	-- Norushen's Enigmatic Barrier
@@ -2605,11 +2605,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112729),	-- Juggernaut's Focusing Crystal
 					})),
 					cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
-						["crs"] = {
+						crs = {
 							71859,	-- Earthbreaker Haromm
 							71858,	-- Wavebinder Kardris
 						},
-						["groups"] = {
+						groups = {
 							i(112759),	-- Haromm's Frozen Crescent
 							i(112769),	-- Kardris' Scepter
 							i(112770),	-- Darkfang Mask
@@ -2729,7 +2729,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112879),	-- Ticking Ebon Detonator
 					})),
 					e(853, {	-- Paragons of the Klaxxi
-						["crs"] = {
+						crs = {
 							71153,	-- Hisek the Swarmkeeper
 							71160,	-- Iyyokuk the Lucid
 							71154,	-- Ka'roz the Locust
@@ -2740,7 +2740,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							71158,	-- Rik'kal the Dissector
 							71152,	-- Skeer the Bloodseeker
 						},
-						["groups"] = {
+						groups = {
 							ig(99752),	-- Leggings of the Cursed Conqueror
 							ig(99753),	-- Leggings of the Cursed Protector
 							ig(99751),	-- Leggings of the Cursed Vanquisher
@@ -2788,26 +2788,26 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			-- #endif
 			d(CURRENT_HEROIC_PLUS_DIFFICULTIES, {		-- Normal+ (5.4.0+) / Heroic+ (6.0.2+)
 				cr(71865, e(869, {	-- Garrosh Hellscream
-					ach(8679, bubbleDownSelf({["races"] = ALLIANCE_ONLY}, {	-- Conqueror of Orgrimmar
+					ach(8679, bubbleDownSelf({races = ALLIANCE_ONLY}, {	-- Conqueror of Orgrimmar
 						title(211),	-- Conqueror of Orgrimmar
 					})),
-					ach(8680, bubbleDownSelf({["races"] = HORDE_ONLY }, {	-- Liberator of Orgrimmar
+					ach(8680, bubbleDownSelf({races = HORDE_ONLY }, {	-- Liberator of Orgrimmar
 						title(212),	-- Liberator of Orgrimmar
 					})),
 				})),
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.PLAYER10, {
-				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				["groups"] = {
+				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				groups = {
 					cr(71865, e(869, {	-- Garrosh Hellscream
 						ach(8398, {	-- Ahead of the Curve: Garrosh Hellscream (10 player)
 							-- #if MOP
-							["OnUpdate"] = CUTTING_EDGE_ONUPDATE,
+							OnUpdate = CUTTING_EDGE_ONUPDATE,
 							-- #endif
-							["groups"] = {
+							groups = {
 								i(104246, {	-- Reins of the Kor'kron War Wolf (MOUNT!)
 									-- #if MOP
-									["OnUpdate"] = CUTTING_EDGE_ONUPDATE,
+									OnUpdate = CUTTING_EDGE_ONUPDATE,
 									-- #endif
 								}),
 							},
@@ -2816,17 +2816,17 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				},
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.PLAYER25, {
-				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				["groups"] = {
+				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				groups = {
 					cr(71865, e(869, {	-- Garrosh Hellscream
 						ach(8399, {	-- Ahead of the Curve: Garrosh Hellscream (25 player)
 							-- #if MOP
-							["OnUpdate"] = CUTTING_EDGE_ONUPDATE,
+							OnUpdate = CUTTING_EDGE_ONUPDATE,
 							-- #endif
-							["groups"] = {
+							groups = {
 								i(104246, {	-- Reins of the Kor'kron War Wolf (MOUNT!)
 									-- #if MOP
-									["OnUpdate"] = CUTTING_EDGE_ONUPDATE,
+									OnUpdate = CUTTING_EDGE_ONUPDATE,
 									-- #endif
 								}),
 							},
@@ -2836,11 +2836,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {	-- Normal (Removed with Patch 6.0.2) >> Items marked "Heroic" after 6.0 <<
 				-- #if AFTER 6.0.2
-				["description"] = "This was the original Normal difficulty. Previously, loot had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
+				description = "This was the original Normal difficulty. Previously, loot had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				-- #endif
-				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				["ignoreBonus"] = true,
-				["groups"] = {
+				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				ignoreBonus = true,
+				groups = {
 					n(ZONE_DROPS, {
 						i(103846),	-- Aeth's Swiftcinder Cloak Heroic
 						i(103960),	-- Brave Niunai's Cloak Heroic
@@ -2906,12 +2906,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						}),
 					})),
 					e(849, {	-- The Fallen Protectors
-						["crs"] = {
+						crs = {
 							71479,	-- He Softfoot [The Fallen Protectors]
 							71475,	-- Rook Stonetoe [The Fallen Protectors]
 							71480,	-- Sun Tenderheart [The Fallen Protectors]
 						},
-						["groups"] = {
+						groups = {
 							i(103783),	-- Darkfallen Shoulderplates Heroic
 							i(103776),	-- Death Lotus Crossbow Heroic
 							i(103820),	-- Gaze of Echoing Despair Heroic
@@ -2959,11 +2959,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					e(866, {	-- Norushen
-						["crs"] = {
+						crs = {
 							72276,	-- Amalgam of Corruption
 							71965,	-- Norushen
 						},
-						["groups"] = {
+						groups = {
 							i(103852),	-- Blight Hurlers Heroic
 							i(103762),	-- Boots of Broken Reliance Heroic
 							i(103740),	-- Bracers of Blind Hatred Heroic
@@ -3371,7 +3371,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						}),
 					})),
 					e(853, {	-- Paragons of the Klaxxi
-						["crs"] = {
+						crs = {
 							71153,	-- Hisek the Swarmkeeper
 							71160,	-- Iyyokuk the Lucid
 							71154,	-- Ka'roz the Locust
@@ -3382,7 +3382,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							71158,	-- Rik'kal the Dissector
 							71152,	-- Skeer the Bloodseeker
 						},
-						["groups"] = {
+						groups = {
 							-- #if BEFORE 6.0.2
 							ig(99688),	-- Leggings of the Cursed Conqueror
 							ig(99693),	-- Leggings of the Cursed Protector
@@ -3483,9 +3483,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				},
 			}),
 			d(DIFFICULTY.RAID.HEROIC, {					-- Heroic (Added with Patch 6.0.2)
-				["timeline"] = { ADDED_6_0_2 },
-				["ItemAppearanceModifierID"] = 0,
-				["groups"] = {
+				timeline = { ADDED_6_0_2 },
+				ItemAppearanceModifierID = 0,
+				groups = {
 					n(ZONE_DROPS, {
 						i(113224),	-- Aeth's Swiftcinder Cloak
 						i(113231),	-- Brave Niunai's Cloak
@@ -3527,12 +3527,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112426),	-- Purified Bindings of Immerseus
 					})),
 					e(849, {	-- The Fallen Protectors
-						["crs"] = {
+						crs = {
 							71479,	-- He Softfoot [The Fallen Protectors]
 							71475,	-- Rook Stonetoe [The Fallen Protectors]
 							71480,	-- Sun Tenderheart [The Fallen Protectors]
 						},
-						["groups"] = {
+						groups = {
 							i(112477),	-- Softfoot's Last Resort
 							i(112478),	-- Death Lotus Crossbow
 							i(112491),	-- Purehearted Cricket Cage
@@ -3557,11 +3557,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					e(866, {	-- Norushen
-						["crs"] = {
+						crs = {
 							72276,	-- Amalgam of Corruption
 							71965,	-- Norushen
 						},
-						["groups"] = {
+						groups = {
 							i(112547),	-- Norushen's Shortblade
 							i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 							i(112560),	-- Norushen's Enigmatic Barrier
@@ -3650,11 +3650,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112729),	-- Juggernaut's Focusing Crystal
 					})),
 					cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
-						["crs"] = {
+						crs = {
 							71859,	-- Earthbreaker Haromm
 							71858,	-- Wavebinder Kardris
 						},
-						["groups"] = {
+						groups = {
 							i(112759),	-- Haromm's Frozen Crescent
 							i(112769),	-- Kardris' Scepter
 							i(112770),	-- Darkfang Mask
@@ -3774,7 +3774,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112879),	-- Ticking Ebon Detonator
 					})),
 					e(853, {	-- Paragons of the Klaxxi
-						["crs"] = {
+						crs = {
 							71153,	-- Hisek the Swarmkeeper
 							71160,	-- Iyyokuk the Lucid
 							71154,	-- Ka'roz the Locust
@@ -3785,7 +3785,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							71158,	-- Rik'kal the Dissector
 							71152,	-- Skeer the Bloodseeker
 						},
-						["groups"] = {
+						groups = {
 							ig(99688),	-- Leggings of the Cursed Conqueror
 							ig(99693),	-- Leggings of the Cursed Protector
 							ig(99684),	-- Leggings of the Cursed Vanquisher
@@ -3806,7 +3806,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						ig(105858),	-- Essence of the Cursed Conqueror
 						ig(105857),	-- Essence of the Cursed Protector
 						ig(105859),	-- Essence of the Cursed Vanquisher
-						i(112935, { ["ItemAppearanceModifierID"] = 1 }),	-- Tusks of Mannoroth
+						i(112935, { ItemAppearanceModifierID = 1 }),	-- Tusks of Mannoroth
 						i(112932),	-- Kor'kron Spire of Supremacy
 						i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
 						i(112939),	-- Horned Mace of the Old Ones
@@ -3833,11 +3833,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {	-- Heroic (Removed with Patch 6.0.2) >> Items marked "Mythic" after 6.0 <<
 				-- #if AFTER 6.0.2
-				["description"] = "This was the original Heroic difficulty. Previously, loot had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
+				description = "This was the original Heroic difficulty. Previously, loot had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				-- #endif
-				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				["ignoreBonus"] = true,
-				["groups"] = {
+				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				ignoreBonus = true,
+				groups = {
 					n(ZONE_DROPS, {
 						i(105852),	-- Aeth's Swiftcinder Cloak Mythic
 						i(105844),	-- Brave Niunai's Cloak Mythic
@@ -3906,12 +3906,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						}),
 					})),
 					e(849, {	-- The Fallen Protectors
-						["crs"] = {
+						crs = {
 							71479,	-- He Softfoot [The Fallen Protectors]
 							71475,	-- Rook Stonetoe [The Fallen Protectors]
 							71480,	-- Sun Tenderheart [The Fallen Protectors]
 						},
-						["groups"] = {
+						groups = {
 							-- #if BEFORE 6.0.2
 							ach(8465),	-- Heroic: Fallen Protectors
 							-- #endif
@@ -3962,11 +3962,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					e(866, {	-- Norushen
-						["crs"] = {
+						crs = {
 							72276,	-- Amalgam of Corruption
 							71965,	-- Norushen
 						},
-						["groups"] = {
+						groups = {
 							-- #if BEFORE 6.0.2
 							ach(8466),	-- Heroic: Norushen
 							-- #endif
@@ -4396,7 +4396,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						}),
 					})),
 					e(853, {	-- Paragons of the Klaxxi
-						["crs"] = {
+						crs = {
 							71153,	-- Hisek the Swarmkeeper
 							71160,	-- Iyyokuk the Lucid
 							71154,	-- Ka'roz the Locust
@@ -4407,7 +4407,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							71158,	-- Rik'kal the Dissector
 							71152,	-- Skeer the Bloodseeker
 						},
-						["groups"] = {
+						groups = {
 							-- #if BEFORE 6.0.2
 							ach(8481),	-- Heroic: Paragons of the Klaxxi
 							ig(99712),	-- Leggings of the Cursed Conqueror
@@ -4514,8 +4514,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				},
 			}),
 			d(DIFFICULTY.RAID.MYTHIC, {					-- Mythic (Added with Patch 6.0.2)
-				["timeline"] = { ADDED_6_0_2 },
-				["groups"] = {
+				timeline = { ADDED_6_0_2 },
+				groups = {
 					n(ZONE_DROPS, {
 						i(113224),	-- Aeth's Swiftcinder Cloak
 						i(113231),	-- Brave Niunai's Cloak
@@ -4558,12 +4558,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112426),	-- Purified Bindings of Immerseus
 					})),
 					e(849, {	-- The Fallen Protectors
-						["crs"] = {
+						crs = {
 							71479,	-- He Softfoot [The Fallen Protectors]
 							71475,	-- Rook Stonetoe [The Fallen Protectors]
 							71480,	-- Sun Tenderheart [The Fallen Protectors]
 						},
-						["groups"] = {
+						groups = {
 							ach(8465),	-- Mythic: Fallen Protectors
 							i(112477),	-- Softfoot's Last Resort
 							i(112478),	-- Death Lotus Crossbow
@@ -4589,11 +4589,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 					e(866, {	-- Norushen
-						["crs"] = {
+						crs = {
 							72276,	-- Amalgam of Corruption
 							71965,	-- Norushen
 						},
-						["groups"] = {
+						groups = {
 							ach(8466),	-- Mythic: Norushen
 							i(112547),	-- Norushen's Shortblade
 							i(112546),	-- Xifeng, Longblade of the Titanic Guardian
@@ -4686,11 +4686,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112729),	-- Juggernaut's Focusing Crystal
 					})),
 					cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
-						["crs"] = {
+						crs = {
 							71859,	-- Earthbreaker Haromm
 							71858,	-- Wavebinder Kardris
 						},
-						["groups"] = {
+						groups = {
 							ach(8470),	-- Mythic: Kor'kron Dark Shaman
 							i(112759),	-- Haromm's Frozen Crescent
 							i(112769),	-- Kardris' Scepter
@@ -4816,7 +4816,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112879),	-- Ticking Ebon Detonator
 					})),
 					e(853, {	-- Paragons of the Klaxxi
-						["crs"] = {
+						crs = {
 							71153,	-- Hisek the Swarmkeeper
 							71160,	-- Iyyokuk the Lucid
 							71154,	-- Ka'roz the Locust
@@ -4827,7 +4827,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							71158,	-- Rik'kal the Dissector
 							71152,	-- Skeer the Bloodseeker
 						},
-						["groups"] = {
+						groups = {
 							ach(8481),	-- Mythic: Paragons of the Klaxxi
 							ig(99712),	-- Leggings of the Cursed Conqueror
 							ig(99713),	-- Leggings of the Cursed Protector
@@ -4880,34 +4880,34 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				},
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC, {
-				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				["groups"] = {
+				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				groups = {
 					cr(71865, e(869, {	-- Garrosh Hellscream
 						ach(8400, {	-- Cutting Edge: Garrosh Hellscream (10 player)
 							-- #if MOP
-							["OnUpdate"] = CUTTING_EDGE_ONUPDATE,
+							OnUpdate = CUTTING_EDGE_ONUPDATE,
 							-- #endif
 						}),
 						ach(8512, {	-- Realm First! Garrosh Hellscream (10 player)
 							-- #if MOP
-							["OnUpdate"] = CUTTING_EDGE_ONUPDATE,
+							OnUpdate = CUTTING_EDGE_ONUPDATE,
 							-- #endif
 						}),
 					})),
 				},
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC, {
-				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				["groups"] = {
+				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				groups = {
 					cr(71865, e(869, {	-- Garrosh Hellscream
 						ach(8401, {	-- Cutting Edge: Garrosh Hellscream (25 player)
 							-- #if MOP
-							["OnUpdate"] = CUTTING_EDGE_ONUPDATE,
+							OnUpdate = CUTTING_EDGE_ONUPDATE,
 							-- #endif
 						}),
 						ach(8513, {	-- Realm First! Garrosh Hellscream (25 player)
 							-- #if MOP
-							["OnUpdate"] = CUTTING_EDGE_ONUPDATE,
+							OnUpdate = CUTTING_EDGE_ONUPDATE,
 							-- #endif
 						}),
 					})),
@@ -4918,13 +4918,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
+	expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {
 		inst(369, {
 			q(33345),	-- Dark Shaman Weekly Attempt
 			q(33047),	-- Short-Supply Reward - Completed after looting an heirloom from Garrosh
 		}),
 	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
 		inst(369, {
 			q(42509),	-- Iron Juggernaut for Hunters attempting/receiving "Pile of Juggernaut Parts" (137654)
 			q(42538),	-- Siegecrafter Blackfuse for Hunters attempting/receiving "Blackfuse's Power Core" (138097)

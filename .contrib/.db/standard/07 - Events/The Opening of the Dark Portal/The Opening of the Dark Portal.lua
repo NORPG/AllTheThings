@@ -30,21 +30,21 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.TBC, { n(TH
 	applyclassicphase(TBC_PHASE_ONE_DARKPORTAL, bubbleDown({
 		-- #if ANYCLASSIC
 		-- This is so that it remains available until the end of phase one.
-		["timeline"] = { REMOVED_TBC_PHASE_TWO },
+		timeline = { REMOVED_TBC_PHASE_TWO },
 		-- #else
-		["timeline"] = { REMOVED_2_0_1 },
+		timeline = { REMOVED_2_0_1 },
 		-- #endif
 	}, {
-		["maps"] = { BLASTED_LANDS },
-		["lvl"] = 55,
-		["groups"] = {
+		maps = { BLASTED_LANDS },
+		lvl = 55,
+		groups = {
 			q(10259, {	-- Into the Breach
-				["qg"] = 19942,	-- Agent Proudwell <The Argent Dawn>
-				["coord"] = { 58.25, 55.05, BLASTED_LANDS },
-				["lvl"] = 55,
-				["groups"] = {
+				qg = 19942,	-- Agent Proudwell <The Argent Dawn>
+				coord = { 58.25, 55.05, BLASTED_LANDS },
+				lvl = 55,
+				groups = {
 					ach(2079, {	-- Tabard of the Protector
-						["provider"] = { "i", 28788 },	-- Tabard of the Protector
+						provider = { "i", 28788 },	-- Tabard of the Protector
 					}),
 					i(28788),	-- Tabard of the Protector
 				},

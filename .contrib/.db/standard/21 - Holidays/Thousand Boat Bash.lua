@@ -22,25 +22,25 @@ local THOUSAND_BOAT_BASH_HEADER = createHeader({
 	},
 });
 
-root(ROOTS.Holidays, applyevent(EVENTS.THOUSAND_BOAT_BASH, n(THOUSAND_BOAT_BASH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {
+root(ROOTS.Holidays, applyevent(EVENTS.THOUSAND_BOAT_BASH, n(THOUSAND_BOAT_BASH_HEADER, bubbleDownSelf({ timeline = { ADDED_7_1_5 } }, {
 	n(WORLD_QUESTS, sharedData({
-		["sharedDescription"] = "Thousand Boat Bash must be available for this World Quest to display.",
-		["isWorldQuest"] = true,
-		["maps"] = { THOUSAND_NEEDLES },
+		sharedDescription = "Thousand Boat Bash must be available for this World Quest to display.",
+		isWorldQuest = true,
+		maps = { THOUSAND_NEEDLES },
 	}, {
 		q(45808, {	-- Beach Ball Bash
-			["groups"] = {
+			groups = {
 				i(144074),	-- Mainsail
 			},
 		}),
 		q(45806),	-- Boat Tour
 		q(45807, {	-- Garbage Fishing
-			["groups"] = {
+			groups = {
 				i(144075),	-- Waxy Reeds
 			},
 		}),
 		q(45809, {	-- Grog, Rum, and Ale
-			["groups"] = {
+			groups = {
 				i(143932),	-- Flagon of Doublerum (QI!)
 				i(143934),	-- Keg of Pirate Ale (QI!)
 				i(143933),	-- Tankard of Grog (QI!)
@@ -48,22 +48,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.THOUSAND_BOAT_BASH, n(THOUSAND_BOAT_BASH_
 			},
 		}),
 		q(45810, {	-- The Gnomes Stole Our Bombs!
-			["races"] = HORDE_ONLY,
-			["qis"] = {
+			races = HORDE_ONLY,
+			qis = {
 				143952,	-- Celebratory Shrapnel Mine (QI!)
 				143951,	-- Crate of Giant Fireworks (QI!)
 				143950,	-- The Kablamminator (QI!)
 			},
-			["groups"] = { i(144073) },	-- Ship Mast
+			groups = { i(144073) },	-- Ship Mast
 		}),
 		q(45811, {	-- The Goblins Stole Our Bombs!
-			["races"] = ALLIANCE_ONLY,
-			["qis"] = {
+			races = ALLIANCE_ONLY,
+			qis = {
 				144033,	-- Enormous Crate of Tiny Bombs (QI!)
 				144034,	-- Nagrand Cherry-Bomb (QI!)
 				144032,	-- Party Dynamite (QI!)
 			},
-			["groups"] = { i(144073) },	-- Ship Mast
+			groups = { i(144073) },	-- Ship Mast
 		}),
 	})),
 }))));

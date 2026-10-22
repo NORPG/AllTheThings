@@ -4,8 +4,8 @@
 
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	n(WEEKLY_PROFESSION_KNOWLEDGE, {
-		["sharedDescription"] = "Rewarded from most repeatable treasures.",
-		["groups"] = {
+		sharedDescription = "Rewarded from most repeatable treasures.",
+		groups = {
 			-- Alchemy
 			i(225234),	-- Alchemical Sediment
 			i(225235),	-- Deepstone Crucible

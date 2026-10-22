@@ -9,37 +9,37 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			ach(61857),	-- Explore Voidstorm
 			ach(61861),	-- Oh, No You Don't!
 			skyriding(ach(61563, {	-- Skyriding Glyphs: Ethereum Refinery
-				["coord"] = { 38.9, 76.1, MAP.MIDNIGHT.VOIDSTORM },
+				coord = { 38.9, 76.1, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61558, {	-- Skyriding Glyphs: Gnawing Reach
-				["coord"] = { 54.9, 45.6, MAP.MIDNIGHT.VOIDSTORM },
+				coord = { 54.9, 45.6, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61564, {	-- Skyriding Glyphs: Hanaar Outpost
-				["coord"] = { 36.2, 45.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				coord = { 36.2, 45.0, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
 			})),
 			skyriding(ach(61562, {	-- Skyriding Glyphs: Masters' Perch
-				["coord"] = { 45.3, 52.3, MAP.MIDNIGHT.VOIDSTORM },
+				coord = { 45.3, 52.3, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61561, {	-- Skyriding Glyphs: Obscurion Citadel
-				["coord"] = { 65.1, 71.9, MAP.MIDNIGHT.VOIDSTORM },
+				coord = { 65.1, 71.9, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61560, {	-- Skyriding Glyphs: Shadowguard Point
-				["coord"] = { 36.0, 37.4, MAP.MIDNIGHT.VOIDSTORM },
+				coord = { 36.0, 37.4, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61557, {	-- Skyriding Glyphs: The Bladeburrows
-				["coord"] = { 39.9, 71.0, MAP.MIDNIGHT.VOIDSTORM },
+				coord = { 39.9, 71.0, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61559, {	-- Skyriding Glyphs: The Gorging Pit
-				["coord"] = { 49.2, 87.6, MAP.MIDNIGHT.VOIDSTORM },
+				coord = { 49.2, 87.6, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61556, {	-- Skyriding Glyphs: The Ingress
-				["coord"] = { 35.7, 61.1, MAP.MIDNIGHT.VOIDSTORM },
+				coord = { 35.7, 61.1, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61555, {	-- Skyriding Glyphs: The Molt
-				["coord"] = { 37.2, 50.0, MAP.MIDNIGHT.VOIDSTORM },
+				coord = { 37.2, 50.0, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			skyriding(ach(61552, {	-- Skyriding Glyphs: The Voidspire
-				["coord"] = { 51.3, 62.7, MAP.MIDNIGHT.VOIDSTORM },
+				coord = { 51.3, 62.7, MAP.MIDNIGHT.VOIDSTORM },
 			})),
 			ach(61864),	-- Sojourner of Voidstorm
 			ach(62385, {	-- Staring Into The Void
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			skyriding(ach(61583, {	-- Voidstorm Glyph Hunter
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					61563,	-- Skyriding Glyphs: Ethereum Refinery
 					61558,	-- Skyriding Glyphs: Gnawing Reach
 					61564,	-- Skyriding Glyphs: Hanaar Outpost

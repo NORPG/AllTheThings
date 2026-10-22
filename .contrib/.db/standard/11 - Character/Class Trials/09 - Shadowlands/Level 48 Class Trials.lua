@@ -2,15 +2,15 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.SL, bubbleDown({["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 }}, {
+	expansion(EXPANSION.SL, bubbleDown({timeline = { ADDED_8_0_1, REMOVED_9_0_1 }}, {
 		n(LEVEL_FOURTY_EIGHT, {
 			-- Note: [As of July 4, 2018 it's Boosted 110's as no 110 trial is available]
 			-- Note: [As of August 18th, 2018 110 trials have been implemented and use same itemID's as boosting]
 			-- Note: [As of October 13th, 2020 Level 110 trials became Level 48 trials]
 			-- Note: [As of November 11th, 2021 48 Trials became 50 Trials with a mix of ids from 48 Trials and 50 (SL Char Boost)]
-			["description"] = "These are gained by creating a Level 48 Trial of that particular class. Each class has one default spec except Shamans, Druids and Hunters.",
-			["lvl"] = 48,
-			["groups"] = {
+			description = "These are gained by creating a Level 48 Trial of that particular class. Each class has one default spec except Shamans, Druids and Hunters.",
+			lvl = 48,
+			groups = {
 				cl(DEATHKNIGHT, {
 					i(160439, {	-- Adventurer's Footlocker
 						i(153726),	-- Heart-Lesion Blade

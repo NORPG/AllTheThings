@@ -4,14 +4,14 @@
 
 root(ROOTS.Instances, expansion(EXPANSION.SL, {
 	inst(1194, {	-- Tazavesh, the Veiled Market
-		["coords"] = {
+		coords = {
 			{ 88.9, 44.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
 			-- #if AFTER 11.2.0
 			{ 36.3, 12.2, KARESH_TAZAVESH },
 			-- #endif
 		},
-		["timeline"] = { ADDED_9_1_0 },
-		["maps"] = {
+		timeline = { ADDED_9_1_0 },
+		maps = {
 			TAZAVESH_THE_VEILED_MARKET,
 			TAZAVESH_THE_MENAGERIE,
 			TAZAVESH_THE_POST,
@@ -21,38 +21,38 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 			TAZAVESH_BORALUS_HARBOR,
 			TAZAVESH_AGGRAMARS_VAULT,
 		},
-		["groups"] = {
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(61093, {	-- Flawless Transaction
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+					timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 				}),
 				ach(61092, {	-- Hard Mode: Tazavesh, the Veiled Market
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+					timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 				}),
 				ach(15190, {	-- Mischief!
 					crit(52460, {	-- Pickle
-						["cr"] = 180817,	-- Pickle
-						["coord"] = { 39.91, 38.78, TAZAVESH_THE_MENAGERIE },
+						cr = 180817,	-- Pickle
+						coord = { 39.91, 38.78, TAZAVESH_THE_MENAGERIE },
 					}),
 					crit(52461, {	-- Oswald
-						["cr"] = 180818,	-- Oswald
-						["coord"] = { 36.63, 33.37, TAZAVESH_THE_VEILED_MARKET },
+						cr = 180818,	-- Oswald
+						coord = { 36.63, 33.37, TAZAVESH_THE_VEILED_MARKET },
 					}),
 					crit(52462, {	-- Sassafras
-						["cr"] = 180821,	-- Sassafras
-						["coord"] = { 39.48, 65.67, TAZAVESH_THE_VEILED_MARKET },
+						cr = 180821,	-- Sassafras
+						coord = { 39.48, 65.67, TAZAVESH_THE_VEILED_MARKET },
 					}),
 					crit(52463, {	-- Goblin
-						["cr"] = 180822,	-- Goblin
-						["coord"] = { 59.59, 45.99, TAZAVESH_THE_VEILED_MARKET },
+						cr = 180822,	-- Goblin
+						coord = { 59.59, 45.99, TAZAVESH_THE_VEILED_MARKET },
 					}),
 					crit(52465, {	-- Pancake
-						["cr"] = 180823,	-- Pancake
-						["coord"] = { 55.43, 64.69, TAZAVESH_THE_VEILED_MARKET },
+						cr = 180823,	-- Pancake
+						coord = { 55.43, 64.69, TAZAVESH_THE_VEILED_MARKET },
 					}),
 					crit(52464, {	-- Waffle
-						["cr"] = 180824,	-- Waffle
-						["coord"] = { 77.29, 45.70, TAZAVESH_THE_VEILED_MARKET },
+						cr = 180824,	-- Waffle
+						coord = { 77.29, 45.70, TAZAVESH_THE_VEILED_MARKET },
 					}),
 				}),
 			}),
@@ -64,92 +64,92 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 			})),
 			n(FLIGHT_PATHS, {
 				fp(2703, {	-- Tazavesh, the Veiled Market
-					["coord"] = { 91.9, 41.9, TAZAVESH_THE_VEILED_MARKET_WORLD },
-					["cr"] = 178796,	-- Ta'rellano
+					coord = { 91.9, 41.9, TAZAVESH_THE_VEILED_MARKET_WORLD },
+					cr = 178796,	-- Ta'rellano
 				}),
 			}),
 			n(QUESTS, {
 				q(63976, {	-- The Al'ley Cat of Oribos
-					["provider"] = { "n", 156688 },	-- Host Ta'rela
-					["coord"] = { 67.0, 50.3, ORIBOS },	-- Ring of Fates
+					provider = { "n", 156688 },	-- Host Ta'rela
+					coord = { 67.0, 50.3, ORIBOS },	-- Ring of Fates
 				}),
 				q(63977, {	-- Insider Trading
-					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
-					["provider"] = { "n", 178908 },	-- Al'dalil
-					["coord"] = { 57.1, 31.1, 1672 },	-- Broker's Den
+					sourceQuests = { 63976 },	-- The Al'ley Cat of Oribos
+					provider = { "n", 178908 },	-- Al'dalil
+					coord = { 57.1, 31.1, 1672 },	-- Broker's Den
 				}),
 				q(63979, {	-- Things Best Kept Dark
-					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
-					["qg"] = 178908,	-- Al'dalil
-					["coord"] = { 57.1, 31.1, 1672 },	-- Broker's Den
-					["qi"] = 186182,	-- Cartel So Shipping Manifest (QI!)
+					sourceQuests = { 63976 },	-- The Al'ley Cat of Oribos
+					qg = 178908,	-- Al'dalil
+					coord = { 57.1, 31.1, 1672 },	-- Broker's Den
+					qi = 186182,	-- Cartel So Shipping Manifest (QI!)
 				}),
 				q(63980, {	-- Seeking Smugglers
-					["sourceQuests"] = {
+					sourceQuests = {
 						63977,	-- Insider Trading
 						63979,	-- Things Best Kept Dark
 					},
-					["provider"] = { "n", 178908 },	-- Al'dalil
-					["coord"] = { 57.1, 31.1, 1672 },	-- Broker's Den
+					provider = { "n", 178908 },	-- Al'dalil
+					coord = { 57.1, 31.1, 1672 },	-- Broker's Den
 				}),
 				q(63982, {	-- Above My Station
-					["sourceQuests"] = { 63980 },	-- Seeking Smugglers
-					["provider"] = { "n", 160090 },	-- Ta'nla the Identifier
-					["coord"] = { 51.4, 82.7, REVENDRETH },
+					sourceQuests = { 63980 },	-- Seeking Smugglers
+					provider = { "n", 160090 },	-- Ta'nla the Identifier
+					coord = { 51.4, 82.7, REVENDRETH },
 				}),
 				q(63983, {	-- Dead Drop
-					["sourceQuests"] = { 63982 },	-- Above My Station
-					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
-					["coord"] = { 32.5, 32.4, BASTION },
+					sourceQuests = { 63982 },	-- Above My Station
+					provider = { "n", 158890 },	-- Bounty Hunter Ta'oku
+					coord = { 32.5, 32.4, BASTION },
 				}),
 				q(63984, {	-- Coins for the Ferryman
-					["sourceQuests"] = { 63983 },	-- Dead Drop
-					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
-					["coord"] = { 32.5, 32.4, BASTION },
-					["groups"] = {
+					sourceQuests = { 63983 },	-- Dead Drop
+					provider = { "n", 158890 },	-- Bounty Hunter Ta'oku
+					coord = { 32.5, 32.4, BASTION },
+					groups = {
 						i(186696),	-- Ta Coin of Favors (QI!)
 					},
 				}),
 				q(63985, {	-- The Veiled Market
-					["sourceQuests"] = { 63984 },	-- Coins for the Ferryman
-					["provider"] = { "n", 178792 },	-- Ta'meri
-					["coord"] = { 29.6, 66.1, ORIBOS },	-- Ring of Fates
+					sourceQuests = { 63984 },	-- Coins for the Ferryman
+					provider = { "n", 178792 },	-- Ta'meri
+					coord = { 29.6, 66.1, ORIBOS },	-- Ring of Fates
 				}),
 				q(63986, {	-- Tazavesh: Raiders of the Lost Artifact
-					["sourceQuests"] = { 63985 },	-- The Veiled Market
-					["provider"] = { "n", 178908 },	-- Al'dalil
-					["coord"] = { 86.7, 48.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
-					["_drop"] = { "g" },	-- Anima Trash
+					sourceQuests = { 63985 },	-- The Veiled Market
+					provider = { "n", 178908 },	-- Al'dalil
+					coord = { 86.7, 48.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
+					_drop = { "g" },	-- Anima Trash
 				}),
 				q(64607, {	-- Tazavesh: A Hard Bargain
-					["description"] = "Requires |cFFFFFFFFPassably-Forged Credentials|r to be equipped to be able to accept the quest.",
-					["sourceQuests"] = { 63985 },	-- The Veiled Market
-					["provider"] = { "n", 180750 },	-- Au'manal <Master Forger>
-					["cost"] = { { "i", 185954, 1 } },	-- Passably-Forged Credentials
-					["groups"] = {
+					description = "Requires |cFFFFFFFFPassably-Forged Credentials|r to be equipped to be able to accept the quest.",
+					sourceQuests = { 63985 },	-- The Veiled Market
+					provider = { "n", 180750 },	-- Au'manal <Master Forger>
+					cost = { { "i", 185954, 1 } },	-- Passably-Forged Credentials
+					groups = {
 						i(187552),	-- Perfectly-Forged Credentials
 					},
 				}),
 				q(64571, {	-- Tazavesh: Seek and Do Not Destroyer
-					["timeline"] = {
+					timeline = {
 						CREATED_9_1_0,
 					},
-					["_drop"] = { "g" },
+					_drop = { "g" },
 				}),
 			}),
 			n(VENDORS, {
-				["description"] = "All the vendors with the name Vendor in them can be found just inside the entrance to the dungeon.",
-				["groups"] = {
+				description = "All the vendors with the name Vendor in them can be found just inside the entrance to the dungeon.",
+				groups = {
 					n(180130, {	-- Antique Vendor
 						i(34828),	-- Antique Silver Cufflinks
 						i(187179),	-- Glow Sticks
 						i(161208),	-- Pirate's Snuff Box
 					}),
 					n(180750, {	-- Au'manal <Master Forger>
-						["description"] = "Requires |cFFFFFFFFFraudulent Credentials|r to be equipped to be able to trade for the new neck.",
-						["groups"] = {
+						description = "Requires |cFFFFFFFFFraudulent Credentials|r to be equipped to be able to trade for the new neck.",
+						groups = {
 							i(185954, {	-- Passably-Forged Credentials
-								["cost"] = { { "i", 185953, 1 } },	-- Fraudulent Credentials
+								cost = { { "i", 185953, 1 } },	-- Fraudulent Credentials
 							}),
 						},
 					}),
@@ -178,10 +178,10 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						i(185953),	-- Fraudulent Credentials
 					}),
 					n(180161, {	-- Shopkeeper
-						["description"] = "When the NPC whispers you, |cFFFFFFFF/nod|r at them.",
-						["groups"] = {
+						description = "When the NPC whispers you, |cFFFFFFFF/nod|r at them.",
+						groups = {
 							i(186540, {	-- Rarity (PET!)
-								["cost"] = {
+								cost = {
 									{ "g", 21430000 },	-- 2,143g
 									{ "i", 180532, 1 },	-- 1x Oxxein Lockbox
 									{ "i", 180522, 1 },	-- 1x Phaedrum Lockbox
@@ -189,7 +189,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 								},
 							}),
 							i(187859, {	-- Rat Soul
-								["cost"] = {
+								cost = {
 									{ "g", 7350000 },	-- 735g
 									{ "i", 179311, 2 },	-- 2x Synvir Lockbox
 									{ "i", 186161, 2 },	-- 2x Stygian Lockbox
@@ -219,11 +219,11 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 			}),
 			-- #if AFTER 9.2.0
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
-				["timeline"] = { ADDED_9_2_0 },
-				["groups"] = {
+				timeline = { ADDED_9_2_0 },
+				groups = {
 					e(2437, {	-- Zo'phex the Sentinel
-						["crs"] = { 175616 },	-- Zo'phex
-						["groups"] = {
+						crs = { 175616 },	-- Zo'phex
+						groups = {
 							-- Conduits
 							i(183468),	-- Born Anew
 							i(183498),	-- Cloaked in Shadows
@@ -242,12 +242,12 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						},
 					}),
 					e(2454, {	-- The Menagerie
-						["crs"] = {
+						crs = {
 							176555,	-- Achillite
 							176556,	-- Alcruux
 							176705,	-- Venza Goldfuse
 						},
-						["groups"] = {
+						groups = {
 							i(185051),	-- Direhorn Soul (SS!)
 							-- Conduits
 							i(184587),	-- Ambuscade
@@ -261,24 +261,24 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 							i(185814),	-- Auctioneer's Counting Bracers
 							i(185777),	-- Fang of Alcruux
 							i(185794, {	-- Gavel Pounders
-								["timeline"] = { ADDED_9_1_0 },
+								timeline = { ADDED_9_1_0 },
 							}),
 							i(185821),	-- Gluttonous Rondel
 							i(246282, {	-- Order Bashers
-								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+								timeline = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(246281, {	-- Ring of the Panoply
-								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+								timeline = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(185840, {	-- Seal of the Panoply
-								["timeline"] = { ADDED_9_1_0 },
+								timeline = { ADDED_9_1_0 },
 							}),
 							i(185809),	-- Venza's Powderbelt
 						},
 					}),
 					e(2436, {	-- Mailroom Mayhem
-						["crs"] = { 175646 },	-- P.O.S.T Master
-						["groups"] = {
+						crs = { 175646 },	-- P.O.S.T Master
+						groups = {
 							i(186534),	-- Gizmo (PET!)
 							-- Conduits
 							i(182584),	-- Cheetah's Vigor
@@ -299,12 +299,12 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						},
 					}),
 					e(2452, {	-- Au'myza's Oasis
-						["crs"] = { 176563 },	-- Zo'gron
-						["groups"] = {
+						crs = { 176563 },	-- Zo'gron
+						groups = {
 							i(187256, {	-- Hips' Spare Fedora
 								-- #IF BEFORE 11.2.5
 								-- dropped in hardmode Taz as Night Fae
-								["customCollect"] = "SL_COV_VEN",
+								customCollect = "SL_COV_VEN",
 								-- #ENDIF
 							}),
 							-- Conduits
@@ -319,10 +319,10 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 							i(185802),	-- Breakbeat Shoulderguards
 							i(185804),	-- Harmonious Spaulders
 							i(185806, {	-- Improvisational Cinch
-								["timeline"] = { ADDED_9_1_0 },
+								timeline = { ADDED_9_1_0 },
 							}),
 							i(246287, {	-- Improvisational Girdle
-								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+								timeline = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(185842),	-- Ornately Engraved Amplifier
 							i(185789),	-- Sabatons of Measured Time
@@ -330,8 +330,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						},
 					}),
 					e(2451, {	-- So'azmi
-						["crs"] = { 175806 },	-- So'azmi
-						["groups"] = {
+						crs = { 175806 },	-- So'azmi
+						groups = {
 							-- Conduits
 							i(181707),	-- Diverted Energy
 							i(182449),	-- Resolute Barrier
@@ -344,10 +344,10 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 							i(185843),	-- Duplicating Drape
 							i(185778),	-- First Fist of the So Cartel
 							i(246285, {	-- Fluxphase Culottes
-								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+								timeline = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(185800, {	-- Orbitwarp Culottes
-								["timeline"] = { ADDED_9_1_0 },
+								timeline = { ADDED_9_1_0 },
 							}),
 							i(185798),	-- Quantum Leapers
 							i(185782),	-- Robes of Midnight Bargains
@@ -355,8 +355,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						},
 					}),
 					e(2448, {	-- Hylbrande
-						["crs"] = { 175663 },	-- Hylbrande
-						["groups"] = {
+						crs = { 175663 },	-- Hylbrande
+						groups = {
 							-- Conduits
 							i(182105),	-- Astral Projection
 							i(180943),	-- Cacophonous Roar
@@ -366,13 +366,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 							i(183467),	-- Tireless Pursuit
 							-- Items
 							i(246280, {	-- Boots of Titanic Deconversion
-								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+								timeline = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(246275, {	-- Codebreaker's Cunning Handwraps
-								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+								timeline = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(185788, {	-- Codebreaker's Cunning Sandals
-								["timeline"] = { ADDED_9_1_0 },
+								timeline = { ADDED_9_1_0 },
 							}),
 							i(185781),	-- Drape of Titanic Dreams
 							i(185805),	-- Hyldebrande's Retrofitted Shoulderguards
@@ -380,13 +380,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 							i(185779),	-- Spire of Expurgation
 							i(185803),	-- Stoneflesh Spaulders
 							i(185790, {	-- Treads of Titanic Deconversion
-								["timeline"] = { ADDED_9_1_0 },
+								timeline = { ADDED_9_1_0 },
 							}),
 						},
 					}),
 					e(2449, {	-- Timecap'n Hooktail
-						["crs"] = { 175546 },	-- Timecap'n Hooktail
-						["groups"] = {
+						crs = { 175546 },	-- Timecap'n Hooktail
+						groups = {
 							-- Conduits
 							i(181498),	-- Grounding Surge
 							i(181975),	-- Hardened Bones
@@ -398,20 +398,20 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 							i(185820),	-- Cabochon of the Infinite Flight
 							i(185795),	-- Cowl of Branching
 							i(246283, {	-- Crown of Absolute Command
-								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+								timeline = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(185796),	-- Dragonbane Diadem
 							i(185823),	-- Fatebreaker, Destroyer of Futures
 							i(185776, {	-- Hooktail's Commanding Gaze
-								["timeline"] = { ADDED_9_1_0 },
+								timeline = { ADDED_9_1_0 },
 							}),
 							i(185797),	-- Rakishly Tipped Tricorne
 							i(185841),	-- Timetwister Tulwar
 						},
 					}),
 					e(2455, {	-- So'leah
-						["crs"] = { 177269 },	-- So'leah
-						["groups"] = {
+						crs = { 177269 },	-- So'leah
+						groups = {
 							i(186638),	-- Cartel Master's Gearglider (MOUNT!)
 							-- Conduits
 							i(181838),	-- Charitable Soul
@@ -436,10 +436,10 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2437, {	-- Zo'phex the Sentinel
-					["crs"] = { 175616 },	-- Zo'phex
-					["groups"] = {
+					crs = { 175616 },	-- Zo'phex
+					groups = {
 						ach(15109, {	-- Will it Blend?
-							["cost"] = {
+							cost = {
 								{ "i", 187179, 1 },	-- Glow Sticks
 								{ "i", 187171, 1 },	-- Organic Melon
 								{ "i", 187178, 1 },	-- Sc'ootie's Favorite Plushie
@@ -449,42 +449,42 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					},
 				}),
 				e(2436, {	-- Mailroom Mayhem
-					["crs"] = { 175646 },	-- P.O.S.T Master
-					["groups"] = {
+					crs = { 175646 },	-- P.O.S.T Master
+					groups = {
 						ach(15106),	-- Quality Control
 						i(185844, {	-- Ticking Sack of Terror
-							["timeline"] = { ADDED_9_1_0 , REMOVED_9_2_0 },
+							timeline = { ADDED_9_1_0 , REMOVED_9_2_0 },
 						}),
 					},
 				}),
 				-- #if AFTER 9.2.5
 				e(2451, {	-- So'azmi
-					["crs"] = { 175806 },	-- So'azmi
-					["groups"] = {
-						ach(15650, {["timeline"] = { ADDED_9_2_5 }}),	-- Mythic: Streets of Wonder
+					crs = { 175806 },	-- So'azmi
+					groups = {
+						ach(15650, {timeline = { ADDED_9_2_5 }}),	-- Mythic: Streets of Wonder
 					},
 				}),
 				-- #endif
 				e(2448, {	-- Hylbrande
-					["crs"] = { 175663 },	-- Hylbrande
-					["groups"] = {
+					crs = { 175663 },	-- Hylbrande
+					groups = {
 						ach(15179),	-- This is Fine
 					},
 				}),
 				e(2455, {	-- So'leah
-					["crs"] = { 177269 },	-- So'leah
-					["groups"] = {
+					crs = { 177269 },	-- So'leah
+					groups = {
 						ach(15178, {	-- Fake It 'Til You Make It
 							i(186637),	-- Tazavesh Gearglider (MOUNT!)
 						}),
 						ach(15177),	-- Tazavesh, the Veiled Market
 						ach(15185),	-- Mythic: Tazavesh, the Veiled Market Guild Run
-						ach(15652, {["timeline"] = { ADDED_9_2_5 }}),	-- Mythic: So'leah's Gambit
+						ach(15652, {timeline = { ADDED_9_2_5 }}),	-- Mythic: So'leah's Gambit
 						i(185818, {	-- So'leah's Secret Technique
-							["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
+							timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
 						}),
 						i(185047, {	-- Yak Soul (SS!)
-							["description"] = "Drops on Hard Mode or M+.",
+							description = "Drops on Hard Mode or M+.",
 						}),
 					},
 				}),
@@ -492,10 +492,10 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 			-- #else
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2437, {	-- Zo'phex the Sentinel
-					["crs"] = { 175616 },	-- Zo'phex
-					["groups"] = {
+					crs = { 175616 },	-- Zo'phex
+					groups = {
 						ach(15109, {	-- Will it Blend?
-							["cost"] = {
+							cost = {
 								{ "i", 187179, 1 },	-- Glow Sticks
 								{ "i", 187171, 1 },	-- Organic Melon
 								{ "i", 187178, 1 },	-- Sc'ootie's Favorite Plushie
@@ -520,12 +520,12 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					},
 				}),
 				e(2454, {	-- The Menagerie
-					["crs"] = {
+					crs = {
 						176555,	-- Achillite
 						176556,	-- Alcruux
 						176705,	-- Venza Goldfuse
 					},
-					["groups"] = {
+					groups = {
 						i(185051),	-- Direhorn Soul (SS!)
 						-- Conduits
 						i(184587),	-- Ambuscade
@@ -545,8 +545,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					},
 				}),
 				e(2436, {	-- Mailroom Mayhem
-					["crs"] = { 175646 },	-- P.O.S.T Master
-					["groups"] = {
+					crs = { 175646 },	-- P.O.S.T Master
+					groups = {
 						ach(15106),	-- Quality Control
 						i(186534),	-- Gizmo (PET!)
 						-- Conduits
@@ -565,20 +565,20 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						i(185811),	-- Package Protector
 						i(185807),	-- Pan-Dimensional Packing Cord
 						i(185844, {	-- Ticking Sack of Terror
-							["timeline"] = { ADDED_9_1_0 , REMOVED_9_2_0 },
+							timeline = { ADDED_9_1_0 , REMOVED_9_2_0 },
 						}),
 						i(190652, {	-- Ticking Sack of Terror
-							["timeline"] = { ADDED_9_2_0 },
+							timeline = { ADDED_9_2_0 },
 						}),
 					},
 				}),
 				e(2452, {	-- Au'myza's Oasis
-					["crs"] = { 176563 },	-- Zo'gron
-					["groups"] = {
+					crs = { 176563 },	-- Zo'gron
+					groups = {
 						i(187256, {	-- Hips' Spare Fedora
 							-- #IF BEFORE 11.2.5
 							-- dropped in hardmode Taz as Night Fae
-							["customCollect"] = "SL_COV_VEN",
+							customCollect = "SL_COV_VEN",
 							-- #ENDIF
 						}),
 						-- Conduits
@@ -599,8 +599,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					},
 				}),
 				e(2451, {	-- So'azmi
-					["crs"] = { 175806 },	-- So'azmi
-					["groups"] = {
+					crs = { 175806 },	-- So'azmi
+					groups = {
 						-- Conduits
 						i(181707),	-- Diverted Energy
 						i(182449),	-- Resolute Barrier
@@ -619,8 +619,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					},
 				}),
 				e(2448, {	-- Hylbrande
-					["crs"] = { 175663 },	-- Hylbrande
-					["groups"] = {
+					crs = { 175663 },	-- Hylbrande
+					groups = {
 						ach(15179),	-- This is Fine
 						-- Conduits
 						i(182105),	-- Astral Projection
@@ -640,8 +640,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					},
 				}),
 				e(2449, {	-- Timecap'n Hooktail
-					["crs"] = { 175546 },	-- Timecap'n Hooktail
-					["groups"] = {
+					crs = { 175546 },	-- Timecap'n Hooktail
+					groups = {
 						-- Conduits
 						i(181498),	-- Grounding Surge
 						i(181975),	-- Hardened Bones
@@ -660,17 +660,17 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					},
 				}),
 				e(2455, {	-- So'leah
-					["crs"] = { 177269 },	-- So'leah
-					["groups"] = {
+					crs = { 177269 },	-- So'leah
+					groups = {
 						ach(15178, {	-- Fake It 'Til You Make It
 							i(186637),	-- Tazavesh Gearglider (MOUNT!)
 						}),
 						ach(15177),	-- Tazavesh, the Veiled Market
 						ach(15185),	-- Mythic: Tazavesh, the Veiled Market Guild Run
-						ach(15652, {["timeline"] = { ADDED_9_2_5 }}),	-- Mythic: So'leah's Gambit
+						ach(15652, {timeline = { ADDED_9_2_5 }}),	-- Mythic: So'leah's Gambit
 						i(186638),	-- Cartel Master's Gearglider (MOUNT!)
 						i(185047, {	-- Yak Soul (SS!)
-							["description"] = "Drops on Hard Mode or M+.",
+							description = "Drops on Hard Mode or M+.",
 						}),
 						-- Conduits
 						i(181838),	-- Charitable Soul
@@ -688,7 +688,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						i(185784),	-- Novaburst Warplate
 						i(185813),	-- Signet of Collapsing Stars
 						i(185818, {	-- So'leah's Secret Technique
-							["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
+							timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
 						}),
 						i(185822),	-- Staff of Fractured Spacetime
 					},
@@ -701,11 +701,11 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	inst(1194, {	-- Tazavesh, the Veiled Market
-		["timeline"] = { ADDED_9_1_0 },
-		["groups"] = {
+		timeline = { ADDED_9_1_0 },
+		groups = {
 			q(92651, {	-- Deathless Attempt Finished
-				["name"] = "Deathless Attempt Finished",
-				["isWeekly"] = true,
+				name = "Deathless Attempt Finished",
+				isWeekly = true,
 			}),
 		},
 	}),

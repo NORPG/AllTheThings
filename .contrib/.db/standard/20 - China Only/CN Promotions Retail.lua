@@ -23,47 +23,47 @@ local CN_PROMOTIONS_RETAIL = createHeader({
 root(ROOTS.Promotions, {
 	-- #if NOT ANYCLASSIC
 	cnONLY(n(CN_PROMOTIONS_RETAIL, {
-		["groups"] = {
+		groups = {
 			ach(40910, {	-- Successfully Stress Test CN Realms
-				["description"] = "Rewarded for aiding in the stress testing of the realms in China.",
-				["timeline"] = { ADDED_11_0_0, REMOVED_11_0_5 },
+				description = "Rewarded for aiding in the stress testing of the realms in China.",
+				timeline = { ADDED_11_0_0, REMOVED_11_0_5 },
 			}),
 			i(190231, {	-- Ash'adar, Harbinger of Dawn (MOUNT!)
 				-- #if AFTER 11.0.2
 				-- #if BEFORE 12.0.0
-				["description"] = "Rewarded for returning to World of Warcraft in 2024. China Only.",
+				description = "Rewarded for returning to World of Warcraft in 2024. China Only.",
 				-- #endif
 				-- #endif
-				["timeline"] = { ADDED_11_0_0 },
-				["u"] = REMOVED_FROM_GAME,	-- Probably removed in 2025
+				timeline = { ADDED_11_0_0 },
+				u = REMOVED_FROM_GAME,	-- Probably removed in 2025
 			}),
 			i(210409, {	-- Aura (PET!)
 				-- #if AFTER 11.0.2
 				-- #if BEFORE 12.0.0
-				["description"] = "Rewarded for returning to World of Warcraft in 2024. China Only.",
+				description = "Rewarded for returning to World of Warcraft in 2024. China Only.",
 				-- #endif
 				-- #endif
-				["timeline"] = { ADDED_11_0_0 },
-				["u"] = REMOVED_FROM_GAME,	-- Probably removed in 2025
+				timeline = { ADDED_11_0_0 },
+				u = REMOVED_FROM_GAME,	-- Probably removed in 2025
 			}),
 			i(229128, {	-- Harmonious Salutations Bear (MOUNT!)
-				["description"] = "Rewarded for returning to World of Warcraft in 2024. China Only.",
-				["timeline"] = { ADDED_11_0_0 },
-				["u"] = REMOVED_FROM_GAME,	-- Probably removed in 2025
+				description = "Rewarded for returning to World of Warcraft in 2024. China Only.",
+				timeline = { ADDED_11_0_0 },
+				u = REMOVED_FROM_GAME,	-- Probably removed in 2025
 			}),
 			i(235344, {	-- Blazing Royal Fire Hawk (MOUNT!) (CN Only)
-				["description"] = "Rewarded from the Treasure Workshop.",
-				["timeline"] = { ADDED_11_0_7, "removed 11.1.0.59425" },	-- Removed February 27th, 2025
+				description = "Rewarded from the Treasure Workshop.",
+				timeline = { ADDED_11_0_7, "removed 11.1.0.59425" },	-- Removed February 27th, 2025
 			}),
 			i(235378, {	-- Landro's Loot Box (CN Only)
 				-- #if AFTER 11.0.2
 				-- #if BEFORE 12.0.0
-				["description"] = "Can be bought for ¥200 RMB (~$27 USD) in the in-game shop for a limited time.",
+				description = "Can be bought for ¥200 RMB (~$27 USD) in the in-game shop for a limited time.",
 				-- #endif
 				-- #endif
-				["timeline"] = { ADDED_11_0_7, "removed 11.1.0.59425" },	-- Removed February 27th, 2025
-				["u"] = REAL_MONEY,
-				["groups"] = {
+				timeline = { ADDED_11_0_7, "removed 11.1.0.59425" },	-- Removed February 27th, 2025
+				u = REAL_MONEY,
+				groups = {
 					i(227362),	-- Golden Ashes of Al'ar (MOUNT!) (CN Only)
 					i(49284),	-- Reins of the Swift Spectral Tiger (MOUNT!)
 					i(49283),	-- Reins of the Spectral Tiger (MOUNT!)
@@ -75,21 +75,21 @@ root(ROOTS.Promotions, {
 				},
 			}),
 			i(246732, {	-- Void-Forged Overseer (MOUNT!) (CN Only)
-				["description"] = "Rewarded from the Season 3 Shop Bundle.",
-				["timeline"] = { ADDED_11_2_0, REMOVED_11_2_5 },
-				["u"] = REAL_MONEY,
+				description = "Rewarded from the Season 3 Shop Bundle.",
+				timeline = { ADDED_11_2_0, REMOVED_11_2_5 },
+				u = REAL_MONEY,
 			}),
 			n(TREASURE_OF_AZEROTH, sharedDataSelf({
-				["timeline"] = { "added 11.2.5.64395", "removed 11.2.7" },	-- Dec 31st
-				["u"] = REAL_MONEY,
+				timeline = { "added 11.2.5.64395", "removed 11.2.7" },	-- Dec 31st
+				u = REAL_MONEY,
 			}, {
-				["groups"] = {
+				groups = {
 					i(223459),	-- Blackrock Warsaber (MOUNT!)
 					i(79769),	-- Demon Hunter's Aspect (TOY!)
 					i(72134),	-- Gregarious Grell (PET!)
 					i(223471),	-- Kaldorei War Wolf (MOUNT!)
 					i(252656, {	-- K'areshi Scientific Expedition Supply
-						["description"] = "Contains a Quantum Token and rarely a Quantum Courser.",
+						description = "Contains a Quantum Token and rarely a Quantum Courser.",
 					}),
 					i(72159),	-- Magical Ogre Idol (TOY!)
 					i(252679),	-- Mechanical Prototype Panther MK-0 (MOUNT!)
@@ -99,25 +99,25 @@ root(ROOTS.Promotions, {
 				},
 			})),
 			n(QUICKSAND_SECRET_TREASURE_VAULT, sharedDataSelf({
-				["timeline"] = { "added 11.2.5", "removed 11.2.7", "added 12.0.1", "removed 12.0.5", "added 12.1.0", "removed 12.1.5" },	-- Nov 18 2025 - Sep 11 2026 (three separate runs)
-				["u"] = REAL_MONEY,
+				timeline = { "added 11.2.5", "removed 11.2.7", "added 12.0.1", "removed 12.0.5", "added 12.1.0", "removed 12.1.5" },	-- Nov 18 2025 - Sep 11 2026 (three separate runs)
+				u = REAL_MONEY,
 			}, {
-				["groups"] = {
-					i(220768, { ["timeline"] = { ADDED_12_1_0 } }),	-- Astral Emperor's Serpent (MOUNT!) (August 2026)
-					i(220766, { ["timeline"] = { ADDED_12_1_0 } }),	-- August Phoenix (MOUNT!) (August 2026)
+				groups = {
+					i(220768, { timeline = { ADDED_12_1_0 } }),	-- Astral Emperor's Serpent (MOUNT!) (August 2026)
+					i(220766, { timeline = { ADDED_12_1_0 } }),	-- August Phoenix (MOUNT!) (August 2026)
 					i(38576),	-- Big Battle Bear (MOUNT!)
 					i(93671),	-- Ghastly Charger's Skull (MOUNT!)
 					i(229128),	-- Harmonious Salutations Bear (MOUNT!)
 					i(211087),	-- Hateforged Blazecycle (MOUNT!)
 					i(204091),	-- Rocket Shredder 9001 (MOUNT!)
-					i(89783, { ["timeline"] = { ADDED_12_1_0 } }),	-- Son of Galleon's Saddle (MOUNT!) (August 2026)
+					i(89783, { timeline = { ADDED_12_1_0 } }),	-- Son of Galleon's Saddle (MOUNT!) (August 2026)
 				},
 			})),
 			n(DELUXEBUNDLE2025, sharedDataSelf({
-				["timeline"] = { "added 11.2.5", "removed 11.2.7" },	-- 16 July to 15 October 2025.
-				["u"] = REAL_MONEY,
+				timeline = { "added 11.2.5", "removed 11.2.7" },	-- 16 July to 15 October 2025.
+				u = REAL_MONEY,
 			}, {
-				["groups"] = {
+				groups = {
 					i(242534),	-- Azure Sea Skiff (TOY)
 					iensemble(244231),	-- Ensemble: Stillwater Fisher Attire (COSMETIC!)
 					-- 12-Month Subscription Bundle
@@ -132,10 +132,10 @@ root(ROOTS.Promotions, {
 				},
 			})),
 			n(LUNARNEWYEAR, sharedDataSelf({
-				["timeline"] = { ADDED_12_0_0, REMOVED_12_0_1_LAUNCH },
-				["u"] = REAL_MONEY,
+				timeline = { ADDED_12_0_0, REMOVED_12_0_1_LAUNCH },
+				u = REAL_MONEY,
 			}, {
-				["groups"] = {
+				groups = {
 					i(253404),	-- Auspicious Pixiu (PET!)
 					iensemble(257547),	-- Ensemble: Scorching Conqueror (COSMETIC!)
 					i(258840),	-- Gilded Fountain (TOY!)
@@ -163,10 +163,10 @@ root(ROOTS.Promotions, {
 					i(269743, {	-- Landro's Golden Loot Box
 						-- #if AFTER 12.0.0
 						-- #if BEFORE 12.0.1
-						["description"] = "The loot box from 2025 was brought back with new rewards. The 2026 variant works similarly where players can obtain up to 8 boxes for ¥1000 RMB (~$135 USD), while teaming up with other players and collectively spend at least ¥3000 RMB (~$405 USD), each member will receive an additional 4 boxes as a bonus.",
+						description = "The loot box from 2025 was brought back with new rewards. The 2026 variant works similarly where players can obtain up to 8 boxes for ¥1000 RMB (~$135 USD), while teaming up with other players and collectively spend at least ¥3000 RMB (~$405 USD), each member will receive an additional 4 boxes as a bonus.",
 						-- #endif
 						-- #endif
-						["groups"] = {
+						groups = {
 							i(251542),	-- Azure Drakefire
 							i(258135),	-- Gilded Coil Spire (TOY!) [BoE]
 							i(269009),	-- Golden Ashened Cataclysm (MOUNT!) [BoE]
@@ -182,10 +182,10 @@ root(ROOTS.Promotions, {
 				},
 			})),
 			n(CRIMSONTIDE_TREASURETROVE, sharedDataSelf({
-				["timeline"] = { ADDED_12_0_1, REMOVED_12_0_7 },	-- April 23rd through May 23rd 2026
-				["u"] = REAL_MONEY,
+				timeline = { ADDED_12_0_1, REMOVED_12_0_7 },	-- April 23rd through May 23rd 2026
+				u = REAL_MONEY,
 			}, {
-				["groups"] = {
+				groups = {
 					-- ===== RETAIL — Special Rewards =====
 					i(262344),	-- Scarlet Lady (MOUNT!)
 					i(269659),	-- The Sire's Palanquin (MOUNT!)
@@ -195,13 +195,13 @@ root(ROOTS.Promotions, {
 					iensemble(270222),	-- Ensemble: Sire's Ornate Attire (COSMETIC!)
 					i(262661),	-- Ghastropod (MOUNT!)
 					i(271631, {	-- Light Guardian's Reward
-						["description"] = "Contains a Quantum Token and rarely a Quantum Courser.",
+						description = "Contains a Quantum Token and rarely a Quantum Courser.",
 					}),
 					i(262881),	-- Lil' Staropod (PET!)
 					i(272355),	-- Orchestrion of Echoing Atonement (DECOR!)
 					i(274427, {	-- Sha Loot Box
-						["description"] = "1.25% chance for any of the following:",
-						["groups"] = {
+						description = "1.25% chance for any of the following:",
+						groups = {
 							i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
 							i(269640),	-- Sha-Warped Owl (MOUNT!)
 							i(269012),	-- Sha-Warped Riding Wolf (MOUNT!)
@@ -211,7 +211,7 @@ root(ROOTS.Promotions, {
 					i(272356),	-- Throne of Subjugated Souls (DECOR!)
 					--i(ITEMID_TODO),	-- Treasure Shard (CURRENCY!)
 					n(TOP_TIER_CNONLY, {
-						["groups"] = {
+						groups = {
 							iensemble(270222),	-- Ensemble: Sire's Ornate Attire (COSMETIC!)
 							i(262344),	-- Scarlet Lady (MOUNT!)
 							i(210008),	-- Smoldering Rune of Binding (MOUNT!)
@@ -220,7 +220,7 @@ root(ROOTS.Promotions, {
 						},
 					}),
 					n(FIRST_TIER_CNONLY, {
-						["groups"] = {
+						groups = {
 							i(223459),	-- Blackrock Warsaber (MOUNT!)
 							i(262661),	-- Ghastropod (MOUNT!)
 							i(228751),	-- Gigantic Grrloc (MOUNT!)
@@ -231,7 +231,7 @@ root(ROOTS.Promotions, {
 						},
 					}),
 					n(SECOND_TIER_CNONLY, {
-						["groups"] = {
+						groups = {
 							i(49704),	-- Carved Ogre Idol (TOY!)
 							i(79769),	-- Demon Hunter's Aspect (TOY!)
 							i(206268),	-- Ethereal Transmogrifier (TOY!)
@@ -244,7 +244,7 @@ root(ROOTS.Promotions, {
 						},
 					}),
 					n(THIRD_TIER_CNONLY, {
-						["groups"] = {
+						groups = {
 							i(206174),	-- Blub (PET!)
 							i(212722),	-- Buggsy (PET!)
 							i(273640),	-- Condensed Anima Orb (DECOR!)
@@ -261,10 +261,10 @@ root(ROOTS.Promotions, {
 				},
 			})),
 			n(LUCKY_BAMBOO_TILES, sharedDataSelf({
-				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_5 },
-				["u"] = REAL_MONEY,
+				timeline = { ADDED_12_1_0, REMOVED_12_1_5 },
+				u = REAL_MONEY,
 			}, {
-				["groups"] = {
+				groups = {
 					-- ===== RETAIL — Base Pool =====
 					i(269604),	-- Auspicious Picnic Basket (DECOR!)
 					i(269605),	-- Auspicious Meal Case (DECOR!)
@@ -272,8 +272,8 @@ root(ROOTS.Promotions, {
 					i(275999),	-- Flowering Mantle (COSMETIC!)
 					i(275818),	-- Pinky (PET!)
 					i(274427, {	-- Sha Loot Box
-						["description"] = "1.25% chance for any of the following:",
-						["groups"] = {
+						description = "1.25% chance for any of the following:",
+						groups = {
 							i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
 							i(269640),	-- Sha-Warped Owl (MOUNT!)
 							i(269012),	-- Sha-Warped Riding Wolf (MOUNT!)
@@ -285,10 +285,10 @@ root(ROOTS.Promotions, {
 				},
 			})),
 			n(DELUXEBUNDLE2026, sharedDataSelf({
-				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_5 },
-				["u"] = REAL_MONEY,
+				timeline = { ADDED_12_1_0, REMOVED_12_1_5 },
+				u = REAL_MONEY,
 			}, {
-				["groups"] = {
+				groups = {
 					iensemble(272335),	-- Ensemble: Varian's Azure Dragon Attire (COSMETIC!)
 					i(274967),	-- Varian's Dragon Throne (TOY!)
 					i(273655),	-- Sunflare Driftmoth (MOUNT!)
@@ -302,21 +302,21 @@ root(ROOTS.Promotions, {
 				},
 			})),
 			n(AZURESPAN_TREASURETROVE, sharedDataSelf({
-				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_5 },
-				["u"] = REAL_MONEY,
+				timeline = { ADDED_12_1_0, REMOVED_12_1_5 },
+				u = REAL_MONEY,
 			}, {
-				["groups"] = {
+				groups = {
 					-- ===== RETAIL — Base Pool =====
 					i(274925),	-- Delta (PET!)
 					i(279006),	-- Fisher's Pack (COSMETIC!)
 					i(252194),	-- Fishmonger May (PET!)
 					i(271631, {	-- Light Guardian's Reward
-						["description"] = "Contains a Quantum Token and rarely a Quantum Courser.",
+						description = "Contains a Quantum Token and rarely a Quantum Courser.",
 					}),
 					i(276625),	-- Puffin Pack (COSMETIC!)
 					i(274427, {	-- Sha Loot Box
-						["description"] = "1.25% chance for any of the following:",
-						["groups"] = {
+						description = "1.25% chance for any of the following:",
+						groups = {
 							i(273021),	-- Sha-Warped Hippogryph Hatchling (PET!)
 							i(269640),	-- Sha-Warped Owl (MOUNT!)
 							i(269012),	-- Sha-Warped Riding Wolf (MOUNT!)
@@ -331,7 +331,7 @@ root(ROOTS.Promotions, {
 					i(274730),	-- Tuskarr Ice Fishing Tent (TOY!)
 					--i(ITEMID_TODO),	-- Treasure Shard (CURRENCY!)
 					n(TOP_TIER_CNONLY, {
-						["groups"] = {
+						groups = {
 							i(279006),	-- Fisher's Pack (COSMETIC!)
 							i(276625),	-- Puffin Pack (COSMETIC!)
 							i(280457),	-- Shark Attack Pack (COSMETIC!)
@@ -341,7 +341,7 @@ root(ROOTS.Promotions, {
 						},
 					}),
 					n(FIRST_TIER_CNONLY, {
-						["groups"] = {
+						groups = {
 							-- ===== RETAIL — Bonus: First-Tier =====
 							i(223459),	-- Blackrock Warsaber (MOUNT!)
 							i(258427),	-- Bound Blizzard (MOUNT!)
@@ -353,7 +353,7 @@ root(ROOTS.Promotions, {
 						},
 					}),
 					n(SECOND_TIER_CNONLY, {
-						["groups"] = {
+						groups = {
 							-- ===== RETAIL — Bonus: Second-Tier =====
 							i(49704),	-- Carved Ogre Idol (TOY!)
 							i(274925),	-- Delta (PET!)
@@ -367,7 +367,7 @@ root(ROOTS.Promotions, {
 						},
 					}),
 					n(THIRD_TIER_CNONLY, {
-						["groups"] = {
+						groups = {
 							i(206174),	-- Blub (PET!)
 							i(212722),	-- Buggsy (PET!)
 							i(33223),	-- Fishing Chair (DECOR!)
@@ -384,10 +384,10 @@ root(ROOTS.Promotions, {
 				},
 			})),
 			n(AZEROTH_ADVENTURE_HANDBOOK, sharedDataSelf({
-				["timeline"] = { "added 12.1.5" },	-- Aug 13 - Dec 2 2026 (21st Anniversary run)
-				["u"] = REAL_MONEY,
+				timeline = { "added 12.1.5" },	-- Aug 13 - Dec 2 2026 (21st Anniversary run)
+				u = REAL_MONEY,
 			}, {
-				["groups"] = {
+				groups = {
 					i(210061),	-- Anu'relos, Flame's Guidance (MOUNT!)
 					i(205876),	-- Highland Drake: Embodiment of the Hellforged (MANUSCRIPT!)
 					i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (MANUSCRIPT!)
@@ -396,15 +396,15 @@ root(ROOTS.Promotions, {
 				},
 			})),
 			n(CN_WOW_ANNIVERSARY_TWENTYONE, {	-- Yes CN is 1 year behind and celebrates the 21st Bday in 2026
-				["timeline"] = { ADDED_12_1_0, REMOVED_12_1_7 },	-- Ends Dec 2 2026
-				["groups"] = {
+				timeline = { ADDED_12_1_0, REMOVED_12_1_7 },	-- Ends Dec 2 2026
+				groups = {
 					-- Login giveaway
 					i(264273),	-- Fel Spirehawk (MOUNT!) (retail)
 					i(87771),	-- Heavenly Onyx Cloud Serpent (MOUNT!) (retail)
 					i(246917, {	-- Thunder-Ridged Elekk (MOUNT!)
 						-- #if AFTER 12.1.0
 						-- #if BEFORE 12.2.0
-						["description"] = "Rewarded from completing the quiz.",
+						description = "Rewarded from completing the quiz.",
 						-- #endif
 						-- #endif
 					}),

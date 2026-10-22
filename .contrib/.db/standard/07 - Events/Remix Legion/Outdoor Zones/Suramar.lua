@@ -5,8 +5,8 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	m(BROKEN_ISLES, {
 		m(SURAMAR, {
-			["icon"] = 1409002,
-			["groups"] = {
+			icon = 1409002,
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(42586),	-- Campaign: Suramar
 					ach(60813),	-- Elusive Foes: Suramar
@@ -15,7 +15,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					ach(42537),	-- Insurrection
 					ach(42551, {	-- Looking for Group: Suramar
 						-- Meta Achievement
-						["sym"] = {{"meta_achievement",
+						sym = {{"meta_achievement",
 							60843,	-- Court of Stars
 							60840,	-- The Arcway
 							60865,	-- The Nighthold
@@ -23,7 +23,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					}),
 					ach(61112, {	-- Lorerunner of Suramar
 						-- Meta Achievement
-						["sym"] = {{"meta_achievement",
+						sym = {{"meta_achievement",
 							42586,	-- Campaign: Suramar
 							61107,	-- Sojourner of Suramar
 						}},
@@ -31,13 +31,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					ach(61107),	-- Sojourner of Suramar
 					ach(42605, {	-- Suramar
 						-- Meta Achievement
-						["sym"] = {{"meta_achievement",
+						sym = {{"meta_achievement",
 							42586,	-- Campaign: Suramar
 							42551,	-- Looking for Group: Suramar
 							42628,	-- The Nightfallen
 							42564,	-- Tour Suramar
 						}},
-						["groups"] = {	-- Ensemble: Kaldorei Queen's Royal Vestments
+						groups = {	-- Ensemble: Kaldorei Queen's Royal Vestments
 							i(253344),	-- Kaldorei Queen's Sarong
 							i(253345),	-- Kaldorei Queen's Crown
 							i(253346),	-- Kaldorei Queen's Robe
@@ -48,12 +48,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					}),
 					ach(42628, {	-- The Nightfallen
 						i(256677, {	-- Large Legion Candle (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
+							timeline = { ADDED_11_2_7 },
 						}),
 					}),
 					ach(42564, {	-- Tour Suramar
 						-- Meta Achievement
-						["sym"] = {{"meta_achievement",
+						sym = {{"meta_achievement",
 							60813,	-- Elusive Foes: Suramar
 							60812,	-- Explore Suramar
 							60814,	-- Hidden Treasures: Suramar

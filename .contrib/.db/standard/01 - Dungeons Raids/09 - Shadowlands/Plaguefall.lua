@@ -2,24 +2,24 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1183, {	-- Plaguefall
-		["coord"] = { 59.3, 64.8, MALDRAXXUS },
-		["maps"] = {
+		coord = { 59.3, 64.8, MALDRAXXUS },
+		maps = {
 			1674,	-- Plaguefall
 			1697,	-- The Festering Sanctum
 		},
-		["groups"] = {
+		groups = {
 			n(QUESTS, {
 				q(59520, {	-- Plaguefall: Knee Deep In It
-					["sourceQuests"] = { 59223 },	-- By Any Other Name
-					["qg"] = 165052,	-- Vial Master Lurgy
-					["coord"] = { 59.4, 72.9, MALDRAXXUS },
-					["qis"] = {
+					sourceQuests = { 59223 },	-- By Any Other Name
+					qg = 165052,	-- Vial Master Lurgy
+					coord = { 59.4, 72.9, MALDRAXXUS },
+					qis = {
 						176057,	-- Margrave Stradama's Plasm (QI!)
 						183724,	-- Poxedskin Sample (QI!)
 					},
-					["groups"] = {
+					groups = {
 						i(175533),	-- Corpse-Stitcher's Amice
 						i(175532),	-- Cruel Executioner's Pauldrons
 						i(175531),	-- Deceitful Agent's Shoulderpads
@@ -29,8 +29,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2419, {	-- Globgrog
-					["crs"] = { 164255 },	-- Globgrog
-					["groups"] = {
+					crs = { 164255 },	-- Globgrog
+					groups = {
 						-- Conduits
 						i(181786),	-- Eternal Hunger
 						i(183506),	-- Lethal Poisons
@@ -46,8 +46,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2403, {	-- Doctor Ickus
-					["crs"] = { 164967 },	-- Doctor Ickus
-					["groups"] = {
+					crs = { 164967 },	-- Doctor Ickus
+					groups = {
 						-- Conduits
 						i(180933),	-- Ashen Juggernaut
 						i(182140),	-- Dissonant Echoes
@@ -65,8 +65,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2423, {	-- Domina Venomblade
-					["crs"] = { 164266 },	-- Domina Venomblade
-					["groups"] = {
+					crs = { 164266 },	-- Domina Venomblade
+					groups = {
 						-- Legendaries
 						i(183345),	-- Memory of the Rotten
 						i(183260),	-- Memory of the Serpentstalker's Trickery
@@ -85,8 +85,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2404, {	-- Margrave Stradama
-					["crs"] = { 164267 },	-- Margrave Stradama
-					["groups"] = {
+					crs = { 164267 },	-- Margrave Stradama
+					groups = {
 						ach(14369),	-- Plaguefall
 						-- Legendaries
 						i(183212),	-- Memory of a Darkglare Medallion
@@ -111,12 +111,12 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				n(SPECIAL, {
 					mount(346141, {	-- Slime Serpent (MOUNT!)
-						["description"] = "Requires solo kill of all bosses in either Heroic or Mythic Plaguefall.",
+						description = "Requires solo kill of all bosses in either Heroic or Mythic Plaguefall.",
 					}),
 				}),
 				e(2404, {	-- Margrave Stradama
-					["crs"] = { 164267 },	-- Margrave Stradama
-					["groups"] = {
+					crs = { 164267 },	-- Margrave Stradama
+					groups = {
 						ach(14414),	-- Heroic: Plaguefall
 					},
 				}),
@@ -126,20 +126,20 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					ach(14292),	-- Riding with my Slimes
 				}),
 				e(2419, {	-- Globgrog
-					["crs"] = { 164255 },	-- Globgrog
-					["groups"] = {
+					crs = { 164255 },	-- Globgrog
+					groups = {
 						ach(14347),	-- Full Gores Meal
 					},
 				}),
 				e(2403, {	-- Doctor Ickus
-					["crs"] = { 164967 },	-- Doctor Ickus
-					["groups"] = {
+					crs = { 164967 },	-- Doctor Ickus
+					groups = {
 						ach(14296),	-- Going Viral
 					},
 				}),
 				e(2404, {	-- Margrave Stradama
-					["crs"] = { 164267 },	-- Margrave Stradama
-					["groups"] = {
+					crs = { 164267 },	-- Margrave Stradama
+					groups = {
 						ach(14415),	-- Mythic: Plaguefall
 						ach(14383),	-- Mythic: Plaguefall Guild Run
 						i(181271),	-- Sludge Feeler (PET!)
@@ -149,7 +149,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		},
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1183, {	-- Plaguefall
 		q(62685),	-- Triggers when solo killing last boss of heroic/mythic Plaguefall for collecting the Slime Serpent mount (spellID 303424)
 	}),

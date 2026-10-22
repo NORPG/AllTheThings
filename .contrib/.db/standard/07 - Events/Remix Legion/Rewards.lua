@@ -8,7 +8,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		i(248247),	-- Cache of Infinite Power
 		i(237812),	-- Cache of Infinite Treasure
 		i(239303),	-- Cache of Infinite Treasure (Call to Arms - Bonus Cache)
-		i(264675, { ["timeline"] = { ADDED_11_2_7 }	}),	-- Cache from the Infinite's Armory
+		i(264675, { timeline = { ADDED_11_2_7 }	}),	-- Cache from the Infinite's Armory
 
 		------ Bronze Caches, ordered by quality ------
 		i(246812),	-- Minor Bronze Cache (Uncommon)
@@ -51,7 +51,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 
 		------ Reputation Insignias ------
 		i(253621, {	-- Champion's Insignia
-			["description"] = "Turns into a Reputation Insignia for a Faction of the zone you are in.",
+			description = "Turns into a Reputation Insignia for a Faction of the zone you are in.",
 		}),
 		i(249788),	-- Argussian Reach Champion's Insignia
 		i(249780),	-- Army of the Light Champion's Insignia
@@ -67,7 +67,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		------ Max Level Item Tokens ------
 		i(253224, {	-- Mote of a Broken Time
 			-- Mote of a Broken Time drops at max level during the first four phases of Legion Remix and will reward raid gear from any of the currently-accessible raids.
-			["sym"] = {
+			sym = {
 				-- The Emerald Nightmare
 				{"select","instanceID",768},{"pop"},
 				{"where","difficultyID",14},{"pop"},			-- Normal difficulty
@@ -97,8 +97,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		}),
 		i(253227, {	-- Flawless Thread of Time (Phase 5)
 			-- Flawless Thread of Time drops at max level during the final phase of Legion Remix and can go past the 11.2.5 iLVL cap of 740 up to iLVL 779
-			["timeline"] = { CREATED_11_2_5, ADDED_11_2_7 },
-			["sym"] = {
+			timeline = { CREATED_11_2_5, ADDED_11_2_7 },
+			sym = {
 				-- The Emerald Nightmare
 				{"select","instanceID",768},{"pop"},
 				{"where","difficultyID",14},{"pop"},			-- Normal difficulty
@@ -129,7 +129,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 
 		------ Misc ------
 		i(248393, {	-- Blank Doomsayer's Pamphlet
-			["crs"] = {
+			crs = {
 				-- #if AFTER 11.2.7.65299
 				248661,	-- Infernal of the End Times
 				248689,	-- Infernal of the End Times
@@ -138,7 +138,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				248688,	-- Lost Legion Infernal
 				-- #endif
 			},
-			["timeline"] = { CREATED_11_2_5, ADDED_11_2_7 }
+			timeline = { CREATED_11_2_5, ADDED_11_2_7 }
 		}),
 		i(251562),	-- Tome of Combat Training
 		i(263226),	-- Infinite Knowledge

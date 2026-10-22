@@ -5,20 +5,20 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(INVASION_NAGA, {
-			["description"] = "Every week a faction invades the island.\n\nThe rotation is Vrykul>Naga>Pirates repeat.\n\nZone Drops listed here are only available when the invasion is active.",
-			["groups"] = {
+			description = "Every week a faction invades the island.\n\nThe rotation is Vrykul>Naga>Pirates repeat.\n\nZone Drops listed here are only available when the invasion is active.",
+			groups = {
 				petbattle(filter(BATTLE_PETS, {
 					pet(4711, {	-- Snapdragon Pup
-						["description"] = "Only spawns during Naga invasion week.",
+						description = "Only spawns during Naga invasion week.",
 					}),
 				})),
 				n(QUESTS, {
 					q(85051, {	-- Beach Comber
-						["sourceQuests"] = { 84725 },	-- The Circlet Calls
-						["provider"] = { "n", 231783 },	-- Machinist Kromleg
-						["coord"] = { 41.9, 68.0, SIREN_ISLE },
-						["isWeekly"] = true,
-						["groups"] = {
+						sourceQuests = { 84725 },	-- The Circlet Calls
+						provider = { "n", 231783 },	-- Machinist Kromleg
+						coord = { 41.9, 68.0, SIREN_ISLE },
+						isWeekly = true,
+						groups = {
 							o_repeated({
 								i(229967),	-- Salvageable Scrap (QI!)
 								o(473943),	-- Salvageable Scrap
@@ -30,11 +30,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(84430, {	-- Crystal Crusade
-						["sourceQuests"] = { 84725 },	-- The Circlet Calls
-						["provider"] = { "n", 227796 },	-- Sky-Captain Elaena Lancekat
-						["coord"] = { 69.4, 42.8, SIREN_ISLE },
-						["isWeekly"] = true,
-						["groups"] = {
+						sourceQuests = { 84725 },	-- The Circlet Calls
+						provider = { "n", 227796 },	-- Sky-Captain Elaena Lancekat
+						coord = { 69.4, 42.8, SIREN_ISLE },
+						isWeekly = true,
+						groups = {
 							o(465208, {	-- Crystal Chunk
 								i(228780),	-- Crystal Chunk (QI!)
 							}),
@@ -42,61 +42,61 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					q(85589, {	-- Ruffled Pages
-						["sourceQuests"] = { 84725 },	-- The Circlet Calls
-						["provider"] = { "n", 229716 },	-- Stellin Verasa
-						["coord"] = { 71.0, 39.6, SIREN_ISLE },
-						["isWeekly"] = true,
-						["groups"] = {
+						sourceQuests = { 84725 },	-- The Circlet Calls
+						provider = { "n", 229716 },	-- Stellin Verasa
+						coord = { 71.0, 39.6, SIREN_ISLE },
+						isWeekly = true,
+						groups = {
 							o(487825, {	-- Ruffled Pages
 								i(232361),	-- Ruffled Pages (QI!)
 							}),
 						},
 					}),
 					q(84627, {	-- Three Heads of the Deep
-						["sourceQuests"] = { 84725 },	-- The Circlet Calls
-						["provider"] = { "n", 227796 },	-- Sky-Captain Elaena Lancekat
-						["coord"] = { 69.4, 42.8, SIREN_ISLE },
-						["isWeekly"] = true,
+						sourceQuests = { 84725 },	-- The Circlet Calls
+						provider = { "n", 227796 },	-- Sky-Captain Elaena Lancekat
+						coord = { 69.4, 42.8, SIREN_ISLE },
+						isWeekly = true,
 					}),
 				}),
 				n(RARES, sharedData({
-					["isDaily"] = true,
+					isDaily = true,
 				},{
 					n(229852, {	-- Coralweaver Calliso
 						-- naga
-						["coord"] = { 61.5, 89.4, SIREN_ISLE },
-						["questID"] = 84802,
-						["groups"] = {
+						coord = { 61.5, 89.4, SIREN_ISLE },
+						questID = 84802,
+						groups = {
 							i(234973),	-- Pearlshell Scroll Case [book]
 						},
 					}),
 					n(229853, {	-- Siris the Sea Scorpion
 						-- naga
-						["coord"] = { 56.0, 83.6, SIREN_ISLE },
-						["questID"] = 84803,
-						["groups"] = {
+						coord = { 56.0, 83.6, SIREN_ISLE },
+						questID = 84803,
+						groups = {
 							i(234973),	-- Pearlshell Scroll Case [book]
 						},
 					}),
 				})),
 				n(TREASURES, {
 					o(463539, {	-- Pilfered Earthen Chest
-						["coord"] = { 68.4, 94.4, SIREN_ISLE },
-						["questID"] = 84527,
-						["isWeekly"] = true,
-						["groups"] = { i(229181) },	-- Ordained Forge Maul
+						coord = { 68.4, 94.4, SIREN_ISLE },
+						questID = 84527,
+						isWeekly = true,
+						groups = { i(229181) },	-- Ordained Forge Maul
 					}),
 				}),
 				n(WORLD_QUESTS, {
-					["sourceQuests"] = {
+					sourceQuests = {
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 						84725,	-- The Circlet Calls
 					},
-					["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+					groups = bubbleDownFiltered({ isWorldQuest = true, },FILTERFUNC_questID,{
 						q(84850, {	-- Serpent's Wrath
-							["groups"] = {
+							groups = {
 								i(228647, {	-- Seabed Leviathan's Citrine
-									["description"] = "Only counts for the achievement when looted from the respective World Quest.",
+									description = "Only counts for the achievement when looted from the respective World Quest.",
 								}),
 							},
 						}),
@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				n(ZONE_DROPS, {
 					i(233499, {	-- Royal Snapdragon Treat (CI!)
-						["description"] = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from Naga.",
+						description = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from Naga.",
 						-- n: 229851 (debugger)
 					}),
 				}),

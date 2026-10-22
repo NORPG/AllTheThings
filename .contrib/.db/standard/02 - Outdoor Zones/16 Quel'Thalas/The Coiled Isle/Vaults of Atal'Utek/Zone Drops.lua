@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			n(ZONE_DROPS, {
 				currency(3448),	-- Corrosive Coin
 				i(275048, {	-- Decrepit Key
-					["description"] = "Can be obtained from creatures with 'Corrosive' Aura after unlocking 'Slithering Secrets' trait at |cFFFFD700Altar of Corrosion|r.",
+					description = "Can be obtained from creatures with 'Corrosive' Aura after unlocking 'Slithering Secrets' trait at |cFFFFD700Altar of Corrosion|r.",
 				}),
 			}),
 		}),

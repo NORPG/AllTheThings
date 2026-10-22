@@ -14,71 +14,71 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		n(QUESTS, {
 			-- These quests need to be done once per account to unlock Island Expeditions. After completing, each character will have completed the flag quest 51994.
 			q(51903, {	-- Island Expedition (1/2) (A)
-				["sourceQuest"] = 53061,	-- The Azerite Advantage
-				["races"] = ALLIANCE_ONLY,
-				["lockCriteria"] = { 1, "questID", 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
+				sourceQuest = 53061,	-- The Azerite Advantage
+				races = ALLIANCE_ONLY,
+				lockCriteria = { 1, "questID", 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 			}),
 			q(51904, {	-- Island Expedition (2/2) (A)
-				["sourceQuest"] = 51903,	-- Island Expedition
-				["maps"] = { 1022 },	-- Uncharted Island
-				["races"] = ALLIANCE_ONLY,
-				["lockCriteria"] = { 1, "questID", 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
+				sourceQuest = 51903,	-- Island Expedition
+				maps = { 1022 },	-- Uncharted Island
+				races = ALLIANCE_ONLY,
+				lockCriteria = { 1, "questID", 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 			}),
 			q(51870, {	-- Island Expedition (1/2) (H)
-				["sourceQuest"] = 53062,	-- The Azerite Advantage
-				["qg"] = 135691,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
-				["coord"] = { 58.4, 62.6, ZULDAZAR },
-				["races"] = HORDE_ONLY,
-				["lockCriteria"] = { 1, "questID", 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
+				sourceQuest = 53062,	-- The Azerite Advantage
+				qg = 135691,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+				coord = { 58.4, 62.6, ZULDAZAR },
+				races = HORDE_ONLY,
+				lockCriteria = { 1, "questID", 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 			}),
 			q(51888, {	-- Island Expedition (2/2) (H)
-				["sourceQuest"] = 51870,	-- Island Expedition
-				["maps"] = { 1022 },	-- Uncharted Island
-				["races"] = HORDE_ONLY,
-				["lockCriteria"] = { 1, "questID", 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
+				sourceQuest = 51870,	-- Island Expedition
+				maps = { 1022 },	-- Uncharted Island
+				races = HORDE_ONLY,
+				lockCriteria = { 1, "questID", 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 			}),
 			q(53061, {	-- The Azerite Advantage (A)
-				["races"] = ALLIANCE_ONLY,
-				["isBreadcrumb"] = true,
-				["DisablePartySync"] = true,
-				["lockCriteria"] = { 1, "questID", 51994 },	-- This HQT is likely the lock criterium according to Jewel
+				races = ALLIANCE_ONLY,
+				isBreadcrumb = true,
+				DisablePartySync = true,
+				lockCriteria = { 1, "questID", 51994 },	-- This HQT is likely the lock criterium according to Jewel
 			}),
 			q(53062, {	-- The Azerite Advantage (H)
-				["races"] = HORDE_ONLY,
-				["isBreadcrumb"] = true,
-				["DisablePartySync"] = true,
-				["lockCriteria"] = { 1, "questID", 51994 },	-- This HQT is likely the lock criterium according to Jewel
+				races = HORDE_ONLY,
+				isBreadcrumb = true,
+				DisablePartySync = true,
+				lockCriteria = { 1, "questID", 51994 },	-- This HQT is likely the lock criterium according to Jewel
 			}),
 			q(53436, {	-- Azerite for the Alliance
-				["provider"] = { "n", 131290 },	-- Flynn
-				["coord"] = { 66.6, 35.5, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["isWeekly"] = true,
-				["groups"] = {
+				provider = { "n", 131290 },	-- Flynn
+				coord = { 66.6, 35.5, BORALUS },
+				races = ALLIANCE_ONLY,
+				isWeekly = true,
+				groups = {
 					i(168615),	-- Volatile Worldvein (Rank 1)
 					i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 					i(166999),	-- Treasure Map
 					i(169764),	-- Worldvein Intelligence Reports (QS!)
 					mi(2158, {	-- Investigating the Rumors
-						["questID"] = 56528,	-- procs when completing Investigating the Rumors on Alliance
-						["sourceQuest"] = 56533,	-- Worldvein Rumors
-						["groups"] = {
+						questID = 56528,	-- procs when completing Investigating the Rumors on Alliance
+						sourceQuest = 56533,	-- Worldvein Rumors
+						groups = {
 							i(171985),	-- Captured Documents
 						},
 					}),
 					mi(2161, {	-- Finding a Key
-						["questID"] = 56529,	-- procs when completing Finding a Key on Alliance
-						["sourceQuest"] = 56528,	-- Investigating the Rumors
-						["groups"] = {
+						questID = 56529,	-- procs when completing Finding a Key on Alliance
+						sourceQuest = 56528,	-- Investigating the Rumors
+						groups = {
 							i(171986),	-- Resonance Locator
 						},
 					}),
 					mi(2162, {	-- Tracking the Worldvein
-						["questID"] = 56530,
-						["sourceQuest"] = 56529,	-- Investigating the Rumors
-						["groups"] = {
+						questID = 56530,
+						sourceQuest = 56529,	-- Investigating the Rumors
+						groups = {
 							i(168617, {	-- Fluctuating Worldvein (Rank 3)
-								["modID"] = 14,
+								modID = 14,
 							}),
 						},
 					}),
@@ -88,39 +88,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			q(56533, {	-- Worldvein Rumors
-				["qs"] = 169764,	-- Worldvein Intelligence Reports 9QS!
-				["races"] = ALLIANCE_ONLY,
+				qs = 169764,	-- Worldvein Intelligence Reports 9QS!
+				races = ALLIANCE_ONLY,
 			}),
 			q(53435, {	-- Azerite for the Horde
-				["provider"] = { "n", 123000 },	-- Captain Rez'okun
-				["coord"] = { 44.60, 95.40, THE_GREAT_SEAL },
-				["races"] = HORDE_ONLY,
-				["isWeekly"] = true,
-				["groups"] = {
+				provider = { "n", 123000 },	-- Captain Rez'okun
+				coord = { 44.60, 95.40, THE_GREAT_SEAL },
+				races = HORDE_ONLY,
+				isWeekly = true,
+				groups = {
 					i(168615),	-- Volatile Worldvein (Rank 1)
 					i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 					i(166999),	-- Treasure Map
 					i(169765),	-- Worldvein Intelligence Reports
 					mi(2159, {	-- Investigating the Rumors
-						-- ["questID"] = ,	-- procs when completing Investigating the Rumors on Horde
-						["sourceQuest"] = 56534,	-- Worldvein Rumors
-						["groups"] = {
+						-- questID = ,	-- procs when completing Investigating the Rumors on Horde
+						sourceQuest = 56534,	-- Worldvein Rumors
+						groups = {
 							i(171985),	-- Captured Documents
 						},
 					}),
 					mi(2161, {	-- Finding a Key
-						-- ["questID"] = ,	-- procs when completing Finding a Key on Horde
-						-- ["sourceQuest"] = ,	-- Investigating the Rumors
-						["groups"] = {
+						-- questID = ,	-- procs when completing Finding a Key on Horde
+						-- sourceQuest = ,	-- Investigating the Rumors
+						groups = {
 							i(171986),	-- Resonance Locator
 						},
 					}),
 					mi(2162, {	-- Tracking the Worldvein
-						-- ["questID"] = ,	-- procs when completing Tracking the Worldvein on Horde
-						-- ["sourceQuest"] = ,	-- Finding a Key
-						["groups"] = {
+						-- questID = ,	-- procs when completing Tracking the Worldvein on Horde
+						-- sourceQuest = ,	-- Finding a Key
+						groups = {
 							i(168617, {	-- Fluctuating Worldvein (Rank 3)
-								["modID"] = 14,
+								modID = 14,
 							}),
 						},
 					}),
@@ -130,239 +130,239 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			q(56534, {	-- Worldvein Rumors
-				["qs"] = 169765,	-- Worldvein Intelligence Reports (QS!)
-				["races"] = HORDE_ONLY,
+				qs = 169765,	-- Worldvein Intelligence Reports (QS!)
+				races = HORDE_ONLY,
 			}),
 		}),
 		-- One-Time Item Drop Quests
 		n(QUESTS, {
 			q(53160, {	-- Ancient Crypt Key
-				["providers"] = {
+				providers = {
 					{ "i", 163470 },	-- Ancient Crypt Key
 					{ "n", 61962 },	-- Lorewalker Cho
 				},
-				["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
+				coord = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 			}),
 			q(53171, {	-- Battered Twilight Scale
-				["providers"] = {
+				providers = {
 					{ "i", 163478 },	-- Battered Twilight Scale
 					{ "n", 132888 },	-- Eryna
 				},
-				["coord"] = { 20.2, 54.6, TWILIGHT_HIGHLANDS },
+				coord = { 20.2, 54.6, TWILIGHT_HIGHLANDS },
 			}),
 			q(53163, {	-- Bloodwake Drinking Horn
-				["providers"] = {
+				providers = {
 					{ "i", 163472 },	-- Bloodwake Drinking Horn
 					{ "n", 93231 },	-- Vydhar
 				},
-				["coord"] = { 68.4, 54.2, STORMHEIM },
+				coord = { 68.4, 54.2, STORMHEIM },
 			}),
 			q(53177, {	-- Broken Compass
-				["providers"] = {
+				providers = {
 					{ "i", 163482 },	-- Broken Compass
 					{ "n", 908 },	-- Flora Silverwind
 				},
-				["coord"] = { 42.0, 74.6, THE_CAPE_OF_STRANGLETHORN },
+				coord = { 42.0, 74.6, THE_CAPE_OF_STRANGLETHORN },
 			}),
 			q(53181, {	-- Druidic Fur
-				["providers"] = {
+				providers = {
 					{ "i", 163485 },	-- Druidic Fur
 					{ "n", 12042 },	-- Loganaar
 				},
-				["coord"] = { 52.6, 40.6, MOONGLADE },
+				coord = { 52.6, 40.6, MOONGLADE },
 			}),
 			q(53169, {	-- Elemental Core
-				["providers"] = {
+				providers = {
 					{ "i", 163476 },	-- Elemental Core
 					{ "n", 13278 },	-- Duke Hydraxis
 				},
-				["coord"] = { 92.7, 42.0, AZSHARA },	-- TODO: Verify Coords/npcid
+				coord = { 92.7, 42.0, AZSHARA },	-- TODO: Verify Coords/npcid
 			}),
 			q(53176, {	-- Glittering Scarab
-				["providers"] = {
+				providers = {
 					{ "i", 163481 },	-- Glittering Scarab
 					{ "n", 46134 },	-- High Commander Kamses
 				},
-				["coord"] = { 58.8, 46.2, ULDUM },
+				coord = { 58.8, 46.2, ULDUM },
 			}),
 			q(53167, {	-- Icetusk Fur Cloak
-				["providers"] = {
+				providers = {
 					{ "i", 163474 },	-- Icetusk Fur Cloak
 					{ "n", 26245 },	-- Tua'kea
 				},
-				["coord"] = { 48.0, 76.0, DRAGONBLIGHT },
+				coord = { 48.0, 76.0, DRAGONBLIGHT },
 			}),
 			q(53168, {	-- Magical Spyglass
-				["providers"] = {
+				providers = {
 					{ "i", 163475 },	-- Magical Spyglass
 					{ "n", 2496 },	-- Baron Revilgaz
 				},
-				["coord"] = { 41.0, 73.0, THE_CAPE_OF_STRANGLETHORN },
+				coord = { 41.0, 73.0, THE_CAPE_OF_STRANGLETHORN },
 			}),
 			q(53174, {	-- Murloc Eye
-				["providers"] = {
+				providers = {
 					{ "i", 163480 },	-- Murloc Eye
 					{ "n", 98067 },	-- King Mrgl-Mrgl
 				},
-				["coords"] = {
+				coords = {
 					{ 42.6, 10.8, HIGHMOUNTAIN },
 					{ 49.6, 15.8, HIGHMOUNTAIN },
 				},
 			}),
 			q(53155, {	-- Notched Coin
-				["providers"] = {
+				providers = {
 					{ "i", 163466 },	-- Notched Coin
 					{ "n", 64365 },	-- Mili Wanderbrew
 				},
-				["coord"] = { 55.2, 19.2, THE_JADE_FOREST },
+				coord = { 55.2, 19.2, THE_JADE_FOREST },
 			}),
 			q(53178, {	-- Razorfin Hunting Spear
-				["providers"] = {
+				providers = {
 					{ "i", 163483 },	-- Razorfin Hunting Spear
 					{ "n", 58278 },	-- Tired Shushen
 				},
-				["coord"] = { 29.6, 39.0, KRASARANG_WILDS },
+				coord = { 29.6, 39.0, KRASARANG_WILDS },
 			}),
 			q(53161, {	-- Ring of the Reefs
-				["providers"] = {
+				providers = {
 					{ "i", 163471 },	-- Ring of the Reefs
 					{ "n", 106904 },	-- Valdemar Stormseeker
 				},
-				["coord"] = { 60.2, 51.2, STORMHEIM },
+				coord = { 60.2, 51.2, STORMHEIM },
 			}),
 			q(53164, {	-- Sonic Stone
-				["providers"] = {
+				providers = {
 					{ "i", 163473 },	-- Sonic Stone
 					{ "n", 61584 },	-- Sentinel Commander Qipan
 				},
-				["coord"] = { 39.4, 62.0, TOWNLONG_STEPPES },
+				coord = { 39.4, 62.0, TOWNLONG_STEPPES },
 			}),
 			q(53182, {	-- Strangling Root
-				["providers"] = {
+				providers = {
 					{ "i", 163486 },	-- Strangling Root
 					{ "n", 11832 },	-- Keeper Remulos
 				},
-				["coord"] = { 36.2, 41.8, MOONGLADE },
+				coord = { 36.2, 41.8, MOONGLADE },
 			}),
 			q(53170, {	-- Unscarred Black Scale
-				["providers"] = {
+				providers = {
 					{ "i", 163477 },	-- Unscarred Black Scale
 					{ "n", 66306 },	-- Blacktalon Agent
 				},
-				["coord"] = { 47.8, 68.8, BURNING_STEPPES },	-- TODO: Verify map/npc id
+				coord = { 47.8, 68.8, BURNING_STEPPES },	-- TODO: Verify map/npc id
 			}),
 			q(53172, {	-- Venture Co. Business Plan
-				["description"] = "Pats along the road between The Crossroads and Ratchet.",
-				["providers"] = {
+				description = "Pats along the road between The Crossroads and Ratchet.",
+				providers = {
 					{ "i", 163479 },	-- Venture Co. Business Plan
 					{ "n", 3658 },	-- Lizzarik
 				},
-				["coords"] = {
+				coords = {
 					{ 50.2, 59.2, NORTHERN_BARRENS },
 					{ 66.8, 72.6, NORTHERN_BARRENS },
 				},
 			}),
 			q(53180, {	-- Vorus'arak's Carapace
-				["providers"] = {
+				providers = {
 					{ "i", 163484 },	-- Vorus'arak's Carapace
 					{ "n", 26653 },	-- Kilix the Unraveler
 				},
-				["coord"] = { 26.2, 50.6, DRAGONBLIGHT },
+				coord = { 26.2, 50.6, DRAGONBLIGHT },
 			}),
 			q(53184, {	-- Weathered Pamphlet
-				["providers"] = {
+				providers = {
 					{ "i", 163488 },	-- Weathered Pamphlet
 					{ "n", 132832 },	-- Jordle Flangebender
 				},
-				["coord"] = { 52.0, 30.0, TANARIS },
+				coord = { 52.0, 30.0, TANARIS },
 			}),
 			q(53183, {	-- Wriggling Mass
-				["providers"] = {
+				providers = {
 					{ "i", 163487 },	-- Wriggling Mass
 					{ "n", 132886 },	-- Twilight Hermit
 				},
-				["coord"] = { 40.0, 76.6, SILITHUS },
+				coord = { 40.0, 76.6, SILITHUS },
 			}),
 		}),
 		-- Rep Item Quests
 		n(QUESTS, sharedData({
-			["repeatable"] = true,
+			repeatable = true,
 		},{
 			q(53112, {	-- Azeroth's Tear
-				["qg"] = 130216,	-- Magni Bronzebeard
-				["qi"] = 163217,	-- Azeroth's Tear
-				["coord"] = { 42.2, 44.2, SILITHUS },
-				["groups"] = { i(174502) },	-- Tear of Azeroth
+				qg = 130216,	-- Magni Bronzebeard
+				qi = 163217,	-- Azeroth's Tear
+				coord = { 42.2, 44.2, SILITHUS },
+				groups = { i(174502) },	-- Tear of Azeroth
 			}),
 			q(53118, {	-- Dented Coin (A)
-				["qg"] = 122370,	-- Cyrus Crestfall
-				["coord"] = { 68.0, 22.0, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["cost"] = { { "i", 163616, 1 } },	-- 1x Dented Coin (A)
-				["groups"] = { i(174504) },	-- Proudmoore War Copper
+				qg = 122370,	-- Cyrus Crestfall
+				coord = { 68.0, 22.0, BORALUS },
+				races = ALLIANCE_ONLY,
+				cost = { { "i", 163616, 1 } },	-- 1x Dented Coin (A)
+				groups = { i(174504) },	-- Proudmoore War Copper
 			}),
 			q(53120, {	-- Exotic Spices (A)
-				["qg"] = 136269,	-- Xun Xun Sweetflower
-				["coord"] = { 20.6, 45.6, DRUSTVAR },
-				["races"] = ALLIANCE_ONLY,
-				["cost"] = { { "i", 163614, 1 } },	-- 1x Exotic Spices (A)
-				["groups"] = { i(174503) },	-- Exotically Spiced Carrot
+				qg = 136269,	-- Xun Xun Sweetflower
+				coord = { 20.6, 45.6, DRUSTVAR },
+				races = ALLIANCE_ONLY,
+				cost = { { "i", 163614, 1 } },	-- 1x Exotic Spices (A)
+				groups = { i(174503) },	-- Exotically Spiced Carrot
 			}),
 			q(53114, {	-- Golden Beetle (H)
-				["qg"] = 120551,	-- Krag'wa the Huge
-				["coord"] = { 75.6, 56.6, NAZMIR },
-				["races"] = HORDE_ONLY,
-				["cost"] = { { "i", 163619, 1 } },	-- 1x Golden Beetle (H)
-				["groups"] = { i(174506) },	-- Golden Insect Wings
+				qg = 120551,	-- Krag'wa the Huge
+				coord = { 75.6, 56.6, NAZMIR },
+				races = HORDE_ONLY,
+				cost = { { "i", 163619, 1 } },	-- 1x Golden Beetle (H)
+				groups = { i(174506) },	-- Golden Insect Wings
 			}),
 			q(53115, {	-- Island Flotsam (H)
-				["sourceQuests"] = { 51142 },	-- Pests
-				["qg"] = 126334,	-- Jani
-				["coord"] = { 35.4, 7.8, THE_GREAT_SEAL },
-				["races"] = HORDE_ONLY,
-				["cost"] = { { "i", 163620, 1 } },	-- 1x Island Flotsam (H)
-				["groups"] = { i(174518) },	-- Jani Figurine
+				sourceQuests = { 51142 },	-- Pests
+				qg = 126334,	-- Jani
+				coord = { 35.4, 7.8, THE_GREAT_SEAL },
+				races = HORDE_ONLY,
+				cost = { { "i", 163620, 1 } },	-- 1x Island Flotsam (H)
+				groups = { i(174518) },	-- Jani Figurine
 			}),
 			q(53119, {	-- Lost Sea Scroll (A)
-				["qg"] = 130576,	-- Brother Pike
-				["coord"] = { 59.2, 68.6, STORMSONG_VALLEY },
-				["races"] = ALLIANCE_ONLY,
-				["cost"] = { { "i", 163615, 1 } },	-- 1x Lost Sea Scroll (A)
-				["groups"] = { i(174505) },	-- Tide-Speaker's Tome
+				qg = 130576,	-- Brother Pike
+				coord = { 59.2, 68.6, STORMSONG_VALLEY },
+				races = ALLIANCE_ONLY,
+				cost = { { "i", 163615, 1 } },	-- 1x Lost Sea Scroll (A)
+				groups = { i(174505) },	-- Tide-Speaker's Tome
 			}),
 			q(53117, {	-- Rusted Alliance Insignia (A)
-				["qg"] = 135446,	-- Vindicator Jaelaana
-				["coord"] = { 69.2, 25.0, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["cost"] = { { "i", 163617, 1 } },	-- 1x Rusted Alliance Insignia
-				["groups"] = { i(174507) },	-- Fallen Soldier's Insignia
+				qg = 135446,	-- Vindicator Jaelaana
+				coord = { 69.2, 25.0, BORALUS },
+				races = ALLIANCE_ONLY,
+				cost = { { "i", 163617, 1 } },	-- 1x Rusted Alliance Insignia
+				groups = { i(174507) },	-- Fallen Soldier's Insignia
 			}),
 			q(53116, {	-- Rusted Horde Insignia (H)
-				["qg"] = 135447,	-- Ransa Greyfeather
-				["coord"] = { 58.0, 62.6, ZULDAZAR },
-				["races"] = HORDE_ONLY,
-				["cost"] = { { "i", 163621, 1 } },	-- 1x Rusted Horde Insignia (H)
-				["groups"] = { i(174508) },	-- Fallen Soldier's Insignia
+				qg = 135447,	-- Ransa Greyfeather
+				coord = { 58.0, 62.6, ZULDAZAR },
+				races = HORDE_ONLY,
+				cost = { { "i", 163621, 1 } },	-- 1x Rusted Horde Insignia (H)
+				groups = { i(174508) },	-- Fallen Soldier's Insignia
 			}),
 			q(53113, {	-- Shimmering Shell (H)
-				["qg"] = 135804,	-- Hoarder Jena
-				["coord"] = { 56.7, 49.8, VOLDUN },
-				["races"] = HORDE_ONLY,
-				["cost"] = { { "i", 163618, 1 } },	-- 1x Shimmering Shell (H)
-				["groups"] = { i(174501) },	-- Ornate Voldunai Jewelry
+				qg = 135804,	-- Hoarder Jena
+				coord = { 56.7, 49.8, VOLDUN },
+				races = HORDE_ONLY,
+				cost = { { "i", 163618, 1 } },	-- 1x Shimmering Shell (H)
+				groups = { i(174501) },	-- Ornate Voldunai Jewelry
 			}),
 			q(54751, {	-- Soggy Page
-				["qgs"] = {
+				qgs = {
 					135793 ,	-- Collector Kojo (A)
 					134345 ,	-- Collector Kojo (H)
 				},
-				["cost"] = { { "i", 166501, 1 } },	-- 1x Soggy Page
-				["groups"] = { i(174519) },	-- Verdant Hills of Chokingvine - Page 17
+				cost = { { "i", 166501, 1 } },	-- 1x Soggy Page
+				groups = { i(174519) },	-- Verdant Hills of Chokingvine - Page 17
 			}),
 		})),
 		-- Island 'Help NPC' Quests
 		n(QUESTS, sharedData({
-			["repeatable"] = true,
+			repeatable = true,
 		},{
 			q(52559),	-- Aerin Needs Help! (no item)
 			q(52558),	-- Aerin Needs Help! (Key)
@@ -568,7 +568,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 	n(ISLAND_EXPEDITIONS, {
 		n(GROUP_FINDER, {
 			q(53339),	-- LFG - BFA - Island Expedition - Heroic Win - Nth
@@ -576,25 +576,25 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 			q(51838),	-- LFG - BFA - Island Expedition - Normal Win - Nth
 			q(53341),	-- LFG - BFA - Island Expedition - PvP Win - Nth
 		}),
-		q(55591, {["repeatable"]=true}),	-- Expedition Demolisher
+		q(55591, {repeatable=true}),	-- Expedition Demolisher
 		q(51994),	-- Unlock the ability to go on Island Expeditions in search of Azerite
-		q(55687, {["repeatable"]=true}),	-- Expedition GG-118 Micro-Jetpack — assembling a jetpack in Island Expeditions, Alliance
-		q(57104, {["repeatable"]=true}),	-- Expedition GG-118 Micro-Jetpack — assembling a jetpack in Island Expeditions, Horde
-		q(55713, {["repeatable"]=true}),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions, Alliance
-		q(57106, {["repeatable"]=true}),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions, Horde
-		q(55686, {["repeatable"]=true}),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions, Alliance
-		q(57105, {["repeatable"]=true}),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions, Horde
-		q(55712, {["repeatable"]=true}),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Alliance
-		q(57107, {["repeatable"]=true}),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Horde
-		q(55619, {["repeatable"]=true}),	-- Upgrade Your Vehicle (Optional), Alliance
-		q(57103, {["repeatable"]=true}),	-- Upgrade Your Vehicle (Optional), Horde
+		q(55687, {repeatable=true}),	-- Expedition GG-118 Micro-Jetpack — assembling a jetpack in Island Expeditions, Alliance
+		q(57104, {repeatable=true}),	-- Expedition GG-118 Micro-Jetpack — assembling a jetpack in Island Expeditions, Horde
+		q(55713, {repeatable=true}),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions, Alliance
+		q(57106, {repeatable=true}),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions, Horde
+		q(55686, {repeatable=true}),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions, Alliance
+		q(57105, {repeatable=true}),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions, Horde
+		q(55712, {repeatable=true}),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Alliance
+		q(57107, {repeatable=true}),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Horde
+		q(55619, {repeatable=true}),	-- Upgrade Your Vehicle (Optional), Alliance
+		q(57103, {repeatable=true}),	-- Upgrade Your Vehicle (Optional), Horde
 		q(55617),	-- Expedition Siege Engine — assembling siege engine in Island Expeditions
 		q(56998),	-- triggered when turning in "Azerite for the Alliance," (53436) which also triggered "Azerite for the Horde" (53435). i also got Rank 1 Volatile Worldvein from the quest, so maybe this is for receiving that?
 		q(56520),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
 		q(57060),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
 		q(57061),	-- popped when i manually refreshed after fully completing the mission / getting Fluctuating Worldvein in my inventory
-		q(57332, { ["timeline"] = { ADDED_8_2_0 } }),	-- using Map to the Last Worldvein to get mission The Last Worldvein (rank 4 Worldvein Resonance)
-		q(56910, { ["timeline"] = { ADDED_8_2_0 } }),	-- popped after finishing the mission The Last Worldvein (rank 4 Worldvein Resonance)
-		q(57062, { ["timeline"] = { ADDED_8_2_0 } }),	-- popped after finishing the mission The Last Worldvein (rank 4 Worldvein Resonance)
+		q(57332, { timeline = { ADDED_8_2_0 } }),	-- using Map to the Last Worldvein to get mission The Last Worldvein (rank 4 Worldvein Resonance)
+		q(56910, { timeline = { ADDED_8_2_0 } }),	-- popped after finishing the mission The Last Worldvein (rank 4 Worldvein Resonance)
+		q(57062, { timeline = { ADDED_8_2_0 } }),	-- popped after finishing the mission The Last Worldvein (rank 4 Worldvein Resonance)
 	}),
 })));

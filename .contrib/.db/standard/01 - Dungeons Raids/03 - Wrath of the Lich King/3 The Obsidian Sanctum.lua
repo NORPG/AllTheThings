@@ -71,22 +71,22 @@ local SARTH_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_
 	n(ACHIEVEMENTS, {
 		ach(624, {	-- Less Is More [10 player]
 			crit(522, {	-- Sartharion
-				["provider"] = { "n", 28860 },	-- Sartharion
+				provider = { "n", 28860 },	-- Sartharion
 			}),
 			crit(7191, {	-- Shadron
-				["provider"] = { "n", 30451 },	-- Shadron
+				provider = { "n", 30451 },	-- Shadron
 			}),
 			crit(7190, {	-- Tenebron
-				["provider"] = { "n", 30452 },	-- Tenebron
+				provider = { "n", 30452 },	-- Tenebron
 			}),
 			crit(7189, {	-- Vesperon
-				["provider"] = { "n", 30449 },	-- Vesperon
+				provider = { "n", 30449 },	-- Vesperon
 			}),
 		}),
 	}),
 	e(1616, {	-- Sartharion
-		["creatureID"] = 28860,	-- Sartharion
-		["groups"] = {
+		creatureID = 28860,	-- Sartharion
+		groups = {
 			ach(1876),	-- Besting the Black Dragonflight [10 player]
 			ach(2047),	-- Gonna Go When the Volcano Blows [10 player]
 			n(TWILIGHT_ZONE, {
@@ -95,7 +95,7 @@ local SARTH_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_
 					i(43986)	-- Black Drake (MOUNT!)
 				}),
 				ach(5017, {	-- The Twilight Zone - Guild Edition
-					["timeline"] = { ADDED_4_0_3 },
+					timeline = { ADDED_4_0_3 },
 				}),
 			}),
 			n(TWILIGHT_DUO, {
@@ -110,8 +110,8 @@ local SARTH_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_
 -- #if NOT NAXX_10MAN_DROPS_25MAN_LOOT
 local SARTH_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 	e(1616, {	-- Sartharion
-		["creatureID"] = 28860,	-- Sartharion
-		["groups"] = {
+		creatureID = 28860,	-- Sartharion
+		groups = {
 			n(TWILIGHT_DUO, {
 				i(43995),	-- Enamored Cowl
 				i(43998),	-- Chestguard of Flagrant Prowess
@@ -136,7 +136,7 @@ local SARTH_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 			i(40430),	-- Majestic Dragon Figurine
 			i(43345),	-- Dragon Hide Bag
 			i(43347, {	-- Satchel of Spoils
-				["description"] = "Contains gold.",
+				description = "Contains gold.",
 			}),
 		},
 	}),
@@ -148,30 +148,30 @@ local SARTH_25MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER25_
 	n(ACHIEVEMENTS, {
 		ach(1877, {	-- Less Is More [25 player]
 			crit(7186, {	-- Sartharion
-				["provider"] = { "n", 28860 },	-- Sartharion
+				provider = { "n", 28860 },	-- Sartharion
 			}),
 			crit(7187, {	-- Shadron
-				["provider"] = { "n", 30451 },	-- Shadron
+				provider = { "n", 30451 },	-- Shadron
 			}),
 			crit(7188, {	-- Tenebron
-				["provider"] = { "n", 30452 },	-- Tenebron
+				provider = { "n", 30452 },	-- Tenebron
 			}),
 			crit(7185, {	-- Vesperon
-				["provider"] = { "n", 30449 },	-- Vesperon
+				provider = { "n", 30449 },	-- Vesperon
 			}),
 		}),
 		ach(456, {	-- Realm First! Obsidian Slayer
-			["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8 },
-			["groups"] = {
+			timeline = { ADDED_3_0_2, REMOVED_3_0_8 },
+			groups = {
 				title(106, {	-- Obsidian Slayer <Name>
-					["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8 },
+					timeline = { ADDED_3_0_2, REMOVED_3_0_8 },
 				}),
 			},
 		}),
 	}),
 	e(1616, {	-- Sartharion
-		["creatureID"] = 28860,	-- Sartharion
-		["groups"] = {
+		creatureID = 28860,	-- Sartharion
+		groups = {
 			ach(625),	-- Besting the Black Dragonflight [25 player]
 			ach(2048),	-- Gonna Go When the Volcano Blows [25 player]
 			n(TWILIGHT_ZONE, {
@@ -180,7 +180,7 @@ local SARTH_25MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER25_
 					i(43954)	-- Twilight Drake (MOUNT!)
 				}),
 				ach(5017, {	-- The Twilight Zone - Guild Edition
-					["timeline"] = { ADDED_4_0_3 },
+					timeline = { ADDED_4_0_3 },
 				}),
 			}),
 			n(TWILIGHT_DUO, {
@@ -199,8 +199,8 @@ SARTH_25MAN_DIFFICULTY_ID = DIFFICULTY.LEGACY_RAID.MULTI.NORMAL;
 -- #endif
 local SARTH_25MAN_LOOT = d(SARTH_25MAN_DIFFICULTY_ID, {
 	e(1616, {	-- Sartharion
-		["creatureID"] = 28860,	-- Sartharion
-		["groups"] = {
+		creatureID = 28860,	-- Sartharion
+		groups = {
 			n(TWILIGHT_DUO, {
 				i(44007),	-- Headpiece of Reconciliation
 				i(44006),	-- Obsidian Greathelm
@@ -230,22 +230,22 @@ local SARTH_25MAN_LOOT = d(SARTH_25MAN_DIFFICULTY_ID, {
 			i(40432),	-- Illustration of the Dragon Soul
 			i(43345),	-- Dragon Hide Bag
 			i(43346, {	-- Large Satchel of Spoils
-				["description"] = "Contains gold.",
+				description = "Contains gold.",
 			}),
 		},
 	}),
 });
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
 	inst(755, {	-- The Obsidian Sanctum
-		["mapID"] = THE_OBSIDIAN_SANCTUM,
-		["coord"] = { 60.0, 56.7, DRAGONBLIGHT },
+		mapID = THE_OBSIDIAN_SANCTUM,
+		coord = { 60.0, 56.7, DRAGONBLIGHT },
 		-- #if AFTER WOD
-		["sharedLockout"] = 1,
+		sharedLockout = 1,
 		-- #endif
-		["isRaid"] = true,
-		["lvl"] = 80,
-		["groups"] = {
+		isRaid = true,
+		lvl = 80,
+		groups = {
 			SARTH_10MAN_METADATA_AND_ACHIEVEMENTS,
 			-- #if NOT NAXX_10MAN_DROPS_25MAN_LOOT
 			SARTH_10MAN_LOOT,

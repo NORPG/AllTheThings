@@ -2,23 +2,23 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 	m(BORALUS, {
 		n(EMISSARY_QUESTS, {
 			q(50605, {	-- Alliance War Effort [7th Legion]
-				["provider"] = { "n", 135446 },	-- Vindicator Jaelaana
-				["coord"] = { 69.32, 24.94, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["isWorldQuest"] = true,
-				["lvl"] = 120,
-				["sym"] = { { "select", "itemID", 165872, 163857 } },	-- 7th Legion Equipment Cache & Azerite Armor Cache
+				provider = { "n", 135446 },	-- Vindicator Jaelaana
+				coord = { 69.32, 24.94, BORALUS },
+				races = ALLIANCE_ONLY,
+				isWorldQuest = true,
+				lvl = 120,
+				sym = { { "select", "itemID", 165872, 163857 } },	-- 7th Legion Equipment Cache & Azerite Armor Cache
 			}),
-			q(54454, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_7TH_LEGION, EXALTED } }, {	-- Supplies from the 7th Legion
-				["provider"] = { "n", 135446 },	-- Vindicator Jaelaana
-				["coord"] = { 69.32, 24.94, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["repeatable"] = true,
-				["groups"] = {
+			q(54454, bubbleDownSelf({ timeline = { ADDED_8_1_0 }, minReputation = { FACTION_7TH_LEGION, EXALTED } }, {	-- Supplies from the 7th Legion
+				provider = { "n", 135446 },	-- Vindicator Jaelaana
+				coord = { 69.32, 24.94, BORALUS },
+				races = ALLIANCE_ONLY,
+				repeatable = true,
+				groups = {
 					i(166300, {	-- 7th Legion Supplies
 						i(166879),	-- Rallying War Banner (TOY!)
 						i(166279),	-- Technique: Contract: 7th Legion [Rank 3] (RECIPE!)
@@ -26,14 +26,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			})),
 			q(50599, {	-- Proudmoore Admiralty
-					["provider"] = { "n", 135808 },	-- Provisioner Fray
-					["coord"] = { 67.52, 21.56, BORALUS },
-					["races"] = ALLIANCE_ONLY,
-					["isWorldQuest"] = true,
-					["lvl"] = 120,
-					["groups"] = {
+					provider = { "n", 135808 },	-- Provisioner Fray
+					coord = { 67.52, 21.56, BORALUS },
+					races = ALLIANCE_ONLY,
+					isWorldQuest = true,
+					lvl = 120,
+					groups = {
 						i(165869, {	-- Proudmoore Admiralty Equipment Cache
-							["sym"] = {
+							sym = {
 								{"select", "itemID", 157996},	-- Harbormaster Pauldrons
 								{"finalize"},	-- Push the items to the finalized list.
 								{"select", "mapID", TIRAGARDE_SOUND},
@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							},
 						}),
 						i(165867, {	-- Kul Tiran Weapons Cache
-							["sym"] = {
+							sym = {
 								{"select", "mapID", KUL_TIRAS},
 								{"find", "headerID", ZONE_REWARDS },
 								{"extract", "itemID" },	-- Select the Items.
@@ -51,18 +51,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							},
 						}),
 						i(163857, {	-- Azerite Armor Cache
-							["sym"] = {
+							sym = {
 								{"sub", "bfa_azerite_armor_chest" },
 							},
 						}),
 					},
 			}),
-			q(54458, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_PROUDMOORE_ADMIRALTY, EXALTED } }, {	-- Supplies from Proudmoore Admiralty
-				["provider"] = { "n", 135808 },	-- Provisioner Fray
-				["coord"] = { 67.52, 21.56, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["repeatable"] = true,
-				["groups"] = {
+			q(54458, bubbleDownSelf({ timeline = { ADDED_8_1_0 }, minReputation = { FACTION_PROUDMOORE_ADMIRALTY, EXALTED } }, {	-- Supplies from Proudmoore Admiralty
+				provider = { "n", 135808 },	-- Provisioner Fray
+				coord = { 67.52, 21.56, BORALUS },
+				races = ALLIANCE_ONLY,
+				repeatable = true,
+				groups = {
 					i(166295, {	-- Proudmoore Admiralty Supplies
 						i(166714),	-- Albatross Hatchling (PET!)
 						i(166702),	-- Proudmoore Music Box (TOY!)
@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 	m(KUL_TIRAS, {
 		m(BORALUS, {
 			n(FACTIONS, {

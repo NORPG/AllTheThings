@@ -7,17 +7,17 @@ local DARK_PARTICLE = 267051;
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	n(SHOWDOWN, {
-		["timeline"] = { ADDED_12_0_7 },
-		["groups"] = {
+		timeline = { ADDED_12_0_7 },
+		groups = {
 			n(VENDORS, {
 				n(267315, {	-- Fieldsmith Ventem <Field Gear and Repairs>
-					["coords"] = {
+					coords = {
 						{ 48.6, 81.6, NAIGTAL },
 						{ 60.2, 16.1, VAL },
 					},
-					["groups"] = {	-- All items are (COSMETIC!)
+					groups = {	-- All items are (COSMETIC!)
 						n(WEAPONS, sharedData({
-							["cost"] = {
+							cost = {
 								{ "c", FIELD_ACCOLADE,  60 },
 								{ "c", VOIDLIGHT_MARL, 500 },
 							},
@@ -35,7 +35,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							i(275208),	-- Response Team's Warglaive
 						})),
 						filter(CLOAKS, sharedData({
-							["cost"] = {
+							cost = {
 								{ "c", FIELD_ACCOLADE,  30 },
 								{ "c", VOIDLIGHT_MARL, 300 },
 							},
@@ -46,7 +46,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							i(275170),	-- Response Team's Shawl
 						})),
 						filter(CLOTH, sharedData({
-							["cost"] = {
+							cost = {
 								{ "c", FIELD_ACCOLADE,  30 },
 								{ "c", VOIDLIGHT_MARL, 300 },
 							},
@@ -61,7 +61,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							i(275172),	-- Response Team's Vestments
 						})),
 						filter(LEATHER, sharedData({
-							["cost"] = {
+							cost = {
 								{ "c", FIELD_ACCOLADE,  30 },
 								{ "c", VOIDLIGHT_MARL, 300 },
 							},
@@ -76,7 +76,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							i(275184),	-- Response Team's Trousers
 						})),
 						filter(MAIL, sharedData({
-							["cost"] = {
+							cost = {
 								{ "c", FIELD_ACCOLADE,  30 },
 								{ "c", VOIDLIGHT_MARL, 300 },
 							},
@@ -91,7 +91,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							i(275193),	-- Response Team's Shoulderguards
 						})),
 						filter(PLATE, sharedData({
-							["cost"] = {
+							cost = {
 								{ "c", FIELD_ACCOLADE,  30 },
 								{ "c", VOIDLIGHT_MARL, 300 },
 							},
@@ -108,11 +108,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					},
 				}),
 				n(265559, {	-- Kifaan <The Consortium>
-					["coord"] = { 47.7, 81.2, NAIGTAL },
-					["groups"] = {
+					coord = { 47.7, 81.2, NAIGTAL },
+					groups = {
 						i(278026, {	-- Bulging Ethereal Pack
-							["cost"] = { { "c", FIELD_ACCOLADE, 250 } },
-							["groups"] = {
+							cost = { { "c", FIELD_ACCOLADE, 250 } },
+							groups = {
 								i(274884),	-- Arcanografter's Beacon (COSMETIC!)
 								i(274886),	-- Eradicator's Censer (COSMETIC!)
 								i(274880),	-- Hal'hadar Adjutant's Gavel (COSMETIC!)
@@ -129,8 +129,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							},
 						}),
 						i(278027, {	-- Bulging Winter Pack
-							["cost"] = { { "c", FIELD_ACCOLADE, 250 } },
-							["groups"] = {
+							cost = { { "c", FIELD_ACCOLADE, 250 } },
+							groups = {
 								i(249758),	-- Void-Touched Winter Belt (COSMETIC!)
 								i(249760),	-- Void-Touched Winter Boots (COSMETIC!)
 								i(249762),	-- Void-Touched Winter Cloak (COSMETIC!)
@@ -143,119 +143,119 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							},
 						}),
 						i(252195, {	-- Fishstick Keith (PET!)
-							["sourceAchievement"] = 62903,	-- Climate Strange: Val
-							["cost"] = {
+							sourceAchievement = 62903,	-- Climate Strange: Val
+							cost = {
 								{ "i", 238365, 50 },	-- 50x Sin'dorei Swarmer
 							},
 						}),
 						i(275662, {	-- Frosticus Maximus (PET!)
-							["sourceAchievement"] = 63349,	-- Ultradon Carnage
-							["sourceQuest"] = 95395,	-- Until it is Done
-							["cost"] = { { "c", VOIDLIGHT_MARL, 15 } },
+							sourceAchievement = 63349,	-- Ultradon Carnage
+							sourceQuest = 95395,	-- Until it is Done
+							cost = { { "c", VOIDLIGHT_MARL, 15 } },
 						}),
 						i(275663, {	-- Silento (PET!)
-							["sourceAchievements"] = {
+							sourceAchievements = {
 								62882,	-- Showdown Success: Naigtal
 								62880,	-- Showdown Success: Val
 							},
-							["cost"] = { { "c", VOIDLIGHT_MARL, 15 } },
+							cost = { { "c", VOIDLIGHT_MARL, 15 } },
 						}),
 						i(274650, {	-- Netherforged Nullframe (MOUNT!)
-							["sourceAchievement"] = 62874,	-- A Trip Through the Stars
-							["cost"] = { { "c", VOIDLIGHT_MARL, 15 } },
+							sourceAchievement = 62874,	-- A Trip Through the Stars
+							cost = { { "c", VOIDLIGHT_MARL, 15 } },
 						}),
 						i(260739, {	-- Swamp Dweller's Night Staff (COSMETIC!)
-							["cost"] = {
+							cost = {
 								{ "c", FIELD_ACCOLADE, 60 },
 								{ "c", VOIDLIGHT_MARL, 500 },
 							},
 						}),
 						i(275664, {	-- Tortured Gorger (MOUNT!)
-							["sourceAchievement"] = 63264,	-- Heroic Showdowns
-							["cost"] = { { "c", VOIDLIGHT_MARL, 15 } },
+							sourceAchievement = 63264,	-- Heroic Showdowns
+							cost = { { "c", VOIDLIGHT_MARL, 15 } },
 						}),
 						i(274649, {	-- Voidmancer's Starcarver (MOUNT!)
-							["sourceAchievement"] = 62873,	-- A Trip Around the Stars
-							["cost"] = { { "c", VOIDLIGHT_MARL, 15 } },
+							sourceAchievement = 62873,	-- A Trip Around the Stars
+							cost = { { "c", VOIDLIGHT_MARL, 15 } },
 						}),
 						-- Consumables
 						i(274772, {	-- Ethereal Bandage
-							["cost"] = { { "c", FIELD_ACCOLADE, 1 } },
+							cost = { { "c", FIELD_ACCOLADE, 1 } },
 						}),
 						i(274774, {	-- Frost-Injected Vapor
-							["cost"] = { { "c", FIELD_ACCOLADE, 2 } },
+							cost = { { "c", FIELD_ACCOLADE, 2 } },
 						}),
 						i(274793, {	-- Mana Barrier Projector
-							["cost"] = { { "c", FIELD_ACCOLADE, 2 } },
+							cost = { { "c", FIELD_ACCOLADE, 2 } },
 						}),
 						i(274794, {	-- Shockwave Amplifier
-							["cost"] = { { "c", FIELD_ACCOLADE, 2 } },
+							cost = { { "c", FIELD_ACCOLADE, 2 } },
 						}),
 						i(274775, {	-- Void Hungerer's Vapor
-							["cost"] = { { "c", FIELD_ACCOLADE, 2 } },
+							cost = { { "c", FIELD_ACCOLADE, 2 } },
 						}),
 						i(276375),	-- Technomancer's Scrying Matrix
 						i(274782, {	-- Tether-Severing Vapor
-							["cost"] = { { "c", FIELD_ACCOLADE, 2 } },
+							cost = { { "c", FIELD_ACCOLADE, 2 } },
 						}),
 					},
 				}),
 				n(266234, {	-- Kifaan <The Consortium>
-					["coord"] = { 59.8, 19.6, VAL },
-					["sym"] = { { "sub", "common_vendor", 265559 } },	-- Kifaan <The Consortium>
+					coord = { 59.8, 19.6, VAL },
+					sym = { { "sub", "common_vendor", 265559 } },	-- Kifaan <The Consortium>
 				}),
 				n(265581, {	-- Zuronar <Lightveil Artificer>
-					["coords"] = {
+					coords = {
 						{ 48.1, 83.3, NAIGTAL },
 						{ 63.7, 21.2, VAL },
 					},
-					["groups"] = {
+					groups = {
 						i(268112),	-- Argunite Beacon
 						i(268111),	-- Arkonite Beacon
 						i(276432, {	-- De-Powered Lightforged Siegebreaker (DECOR!)
-							["sourceAchievement"] = 63384,	-- Prepared for a Showdown
-							["cost"] = { { "c", VOIDLIGHT_MARL, 500 } },
+							sourceAchievement = 63384,	-- Prepared for a Showdown
+							cost = { { "c", VOIDLIGHT_MARL, 500 } },
 						}),
 						i(276429, {	-- Grand Artificer's Lightforged Console (DECOR!)
-							["sourceAchievement"] = 63384,	-- Prepared for a Showdown
-							["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+							sourceAchievement = 63384,	-- Prepared for a Showdown
+							cost = { { "c", VOIDLIGHT_MARL, 250 } },
 						}),
 						i(276289, {	-- Lightveil Argunite Blade (COSMETIC!)
-							["cost"] = {
+							cost = {
 								{ "c", FIELD_ACCOLADE,  60 },
 								{ "c", VOIDLIGHT_MARL, 500 },
 							},
 						}),
 						i(276301, {	-- Lightruned Crystal Beacon (COSMETIC!)
-							["cost"] = {
+							cost = {
 								{ "c", FIELD_ACCOLADE,  60 },
 								{ "c", VOIDLIGHT_MARL, 500 },
 							},
 						}),
 						i(276321, {	-- Luminant Defender's Golden Barricade (DECOR!)
-							["sourceAchievement"] = 62905,	-- Pain of Command
-							["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+							sourceAchievement = 62905,	-- Pain of Command
+							cost = { { "c", VOIDLIGHT_MARL, 150 } },
 						}),
 						i(276374),	-- Lightveil Rune Reader
 						i(276316, {	-- Lightveil's Transport Pad (DECOR!)
-							["sourceAchievement"] = 63384,	-- Prepared for a Showdown
-							["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+							sourceAchievement = 63384,	-- Prepared for a Showdown
+							cost = { { "c", VOIDLIGHT_MARL, 250 } },
 						}),
 						i(267211, {	-- Luminant Scout's Golden Fence (DECOR!)
-							["sourceAchievement"] = 62905,	-- Pain of Command
-							["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+							sourceAchievement = 62905,	-- Pain of Command
+							cost = { { "c", VOIDLIGHT_MARL, 150 } },
 						}),
 						i(276318, {	-- Luminant Soldier's War Banner (DECOR!)
-							["sourceAchievement"] = 62905,	-- Pain of Command
-							["cost"] = { { "c", VOIDLIGHT_MARL, 150 } },
+							sourceAchievement = 62905,	-- Pain of Command
+							cost = { { "c", VOIDLIGHT_MARL, 150 } },
 						}),
 						i(276375),	-- Technomancer's Scrying Matrix
 						iensemble(276364, {	-- Arsenal: Lightforged Armaments (COSMETIC!)
-							["sourceAchievements"] = {
+							sourceAchievements = {
 								62883,	-- Showdown Slugger: Naigtal
 								62881,	-- Showdown Slugger: Val
 							},
-							["cost"] = {
+							cost = {
 								{ "c", FIELD_ACCOLADE,  60 },
 								{ "c", VOIDLIGHT_MARL, 500 },
 							},

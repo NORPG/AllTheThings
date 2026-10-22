@@ -25,12 +25,12 @@ local mapped = function(t)
 	return t
 end
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(SCENARIOS, {
 		n(ACHIEVEMENTS, {
 			ach(19881, {	-- Escalation
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					19934,	-- Battle on the High Seas [A]
 					19936,	-- Battle on the High Seas [H]
 					19938,	-- Theramore's Fall [A]
@@ -40,13 +40,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					19944,	-- Secrets of Ragefire
 					19958,	-- Raid Finder: Siege of Orgrimmar
 				}},
-				["groups"] = {
+				groups = {
 					i(208554),	-- Timerunner's Beacon
 				},
 			}),
 			ach(20004, {	-- Heroic: Pandaria Scenarios
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					19945,	-- Heroic: Secrets of Ragefire
 					19943,	-- Heroic: Dark Heart of Pandaria
 					19941,	-- Heroic: Blood in the Snow
@@ -55,7 +55,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					19937,	-- Heroic: Battle on the High Seas [H]
 					19935,	-- Heroic: Battle on the High Seas [A]
 				}},
-				["groups"] = {
+				groups = {
 					i(208487),	-- Timerunner's Ring
 				},
 			}),
@@ -110,7 +110,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(214757),	-- Swarmbreaker's Warhelm
 			}),
 		})),
-		mapped(d(DIFFICULTY.SCENARIO.NORMAL, bubbleDown({ ["modID"] = 0 }, {
+		mapped(d(DIFFICULTY.SCENARIO.NORMAL, bubbleDown({ modID = 0 }, {
 			n(WEAPONS, {
 				i(215492),	-- Axe of Iron Might
 				i(215752),	-- Ced's Basher
@@ -135,7 +135,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215808),	-- Yak-Herder's Longspear
 			}),
 		}))),
-		mapped(d(DIFFICULTY.SCENARIO.HEROIC, bubbleDown({ ["modID"] = 0 }, {
+		mapped(d(DIFFICULTY.SCENARIO.HEROIC, bubbleDown({ modID = 0 }, {
 			n(WEAPONS, {
 				i(215615),	-- Amber Blade
 				i(216584),	-- Barrier of the Protectorate
@@ -183,16 +183,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		m(524, {	-- Battle on the High Seas
 			n(ACHIEVEMENTS, {
 				ach(19934, {	-- Battle on the High Seas [A]
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(19936, {	-- Battle on the High Seas [H]
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 				ach(19935, {	-- Heroic: Battle on the High Seas [A]
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(19937, {	-- Heroic: Battle on the High Seas [H]
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 			}),
 		}),
@@ -208,8 +208,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 		}),
 		m(481, {	-- Crypt of Forgotten Kings
-			["maps"] = { 482 },	-- Crypt of Forgotten Kings
-			["groups"] = {
+			maps = { 482 },	-- Crypt of Forgotten Kings
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(19928),	-- Crypt of Forgotten Kings
 					ach(19929),	-- Heroic: Crypt of Forgotten Kings
@@ -217,29 +217,29 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			},
 		}),
 		m(488, {	-- Dagger in the Dark
-			["maps"] = { 489 },	-- Dagger in the Dark
-			["groups"] = {
+			maps = { 489 },	-- Dagger in the Dark
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(19933),	-- Dagger in the Dark
 				}),
 			},
 		}),
 		m(498, {	-- Domination Point / Lion's Landing
-			["maps"] = { 486 },	-- Lion's Landing
-			["groups"] = {
+			maps = { 486 },	-- Lion's Landing
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(19932, {	-- Domination Point
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					ach(20500, {	-- Lion's Landing
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 				}),
 			},
 		}),
 		m(520, {	-- Dark Heart of Pandaria
-			["maps"] = { 521 },	-- Dark Heart of Pandaria
-			["groups"] = {
+			maps = { 521 },	-- Dark Heart of Pandaria
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(19942),	-- Dark Heart of Pandaria
 					ach(19943),	-- Heroic: Dark Heart of Pandaria
@@ -260,19 +260,19 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		m(483, {	-- Theramore's Fall
 			n(ACHIEVEMENTS, {
 				ach(19938, {	-- Theramore's Fall [A]
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(19939, {	-- Theramore's Fall [H]
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 			}),
 			i(89196, {	-- Theramore Tabard
-				["races"] = ALLIANCE_ONLY,
-				["description"] = "Buyable from the Toy Vendor at any Infinite Bazar Location or granted to Alliance players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great."	-- Fixed on 3-June-2024
+				races = ALLIANCE_ONLY,
+				description = "Buyable from the Toy Vendor at any Infinite Bazar Location or granted to Alliance players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great."	-- Fixed on 3-June-2024
 			}),
 			i(89205, {	-- Mini Mana Bomb Toy (TOY!)
-				["races"] = HORDE_ONLY,
-				["description"] = "Buyable from the Toy Vendor at any Infinite Bazar Location or granted to Horde players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great."	-- Fixed on 3-June-2024
+				races = HORDE_ONLY,
+				description = "Buyable from the Toy Vendor at any Infinite Bazar Location or granted to Horde players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great."	-- Fixed on 3-June-2024
 			}),
 		}),
 		m(450, {	-- Unga Ingoo

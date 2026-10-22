@@ -56,28 +56,28 @@ ExportDB.OnTooltipDB.ForLockpicking = [[~function(t, tooltipInfo)
 end]];
 root(ROOTS.Professions, lockpicking({
 	-- #if AFTER CATA
-	["description"] = "Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",
+	description = "Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",
 	-- #else
-	["description"] = "Lockpicking needs to be leveled up by practicing on lockboxes found in the world and junkboxes looted by using your pickpocket ability on appropriately leveled mobs.",
+	description = "Lockpicking needs to be leveled up by practicing on lockboxes found in the world and junkboxes looted by using your pickpocket ability on appropriately leveled mobs.",
 	-- TODO: Maybe add a thing in the tooltip for suggestions on where to level next?
 	-- #endif
 	-- This makes it ignore the profession requirement.
-	["DontEnforceSkillRequirements"] = true,
+	DontEnforceSkillRequirements = true,
 	-- #if BEFORE CATA
-	["OnUpdate"] = [[_.OnUpdateDB.ForLockpicking]],
-	["OnTooltip"] = [[_.OnTooltipDB.ForLockpicking]],
+	OnUpdate = [[_.OnUpdateDB.ForLockpicking]],
+	OnTooltip = [[_.OnTooltipDB.ForLockpicking]],
 	-- #endif
-	["groups"] = {
+	groups = {
 		recipe(1804, {	-- Pick Lock
-			["timeline"] = { ADDED_1_1_0 },
+			timeline = { ADDED_1_1_0 },
 			-- #if BEFORE WRATH
-			["provider"] = { "i", 5060 },	-- Thieves' Tools
+			provider = { "i", 5060 },	-- Thieves' Tools
 			-- #endif
-			["classes"] = { ROGUE },
+			classes = { ROGUE },
 		}),
 		recipe(921, {	-- Pick Pocket
-			["timeline"] = { ADDED_1_1_0 },
-			["classes"] = { ROGUE },
+			timeline = { ADDED_1_1_0 },
+			classes = { ROGUE },
 		}),
 	}
 }));

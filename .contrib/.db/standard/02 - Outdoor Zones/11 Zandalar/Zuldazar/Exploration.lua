@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 	m(ZULDAZAR, {
 		explorationHeader({
 			exploration(9404),	-- Atal'Dazar
@@ -15,8 +15,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			exploration(8666),	-- Grand Bazaar
 			exploration(9603),	-- Isle of Fangs
 			visit_exploration(15449, {	-- Kaja'Coast
-				["coord"] = { 22.1, 58.0, ZULDAZAR },
-				["timeline"] = { ADDED_11_1_0 },
+				coord = { 22.1, 58.0, ZULDAZAR },
+				timeline = { ADDED_11_1_0 },
 			}),
 			exploration(8731),	-- Mount Mugamba
 			exploration(8665),	-- Port of Zandalar

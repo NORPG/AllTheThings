@@ -2,7 +2,7 @@
 local Items = ItemDBConditional;
 local i = function(itemID, questID)
 	if itemID < 1 then return end
-	Items[itemID] = { ["questID"] = questID, ["type"] = "characterUnlockQuestID" };
+	Items[itemID] = { questID = questID, type = "characterUnlockQuestID" };
 end
 
 -----------------

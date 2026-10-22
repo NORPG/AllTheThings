@@ -32,68 +32,68 @@ HARVEST_FESTIVAL_HEADER = createHeader({
 root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEADER, {
 	n(MAILBOX, {
 		i(19697, {		-- Bounty of the Harvest
-			["timeline"] = { ADDED_1_12_1 },
+			timeline = { ADDED_1_12_1 },
 		}),
 	}),
 	n(QUESTS, {
 		q(8149, {	-- Honoring a Hero (A)
-			["qg"] = 15011,	-- Wagner Hammerstrike
-			["coords"] = {
+			qg = 15011,	-- Wagner Hammerstrike
+			coords = {
 				-- #if AFTER CATA
 				{ 59.8, 34.2, DUN_MOROGH },
 				-- #else
 				{ 52.6, 36.0, DUN_MOROGH },
 				-- #endif
 			},
-			["maxReputation"] = { 469, EXALTED },	-- Alliance, Exalted.
-			["maps"] = { WESTERN_PLAGUELANDS },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_1_12_1 },
-			["isYearly"] = true,
-			["lvl"] = lvlsquish(30, 30, 1),
-			["groups"] = {
+			maxReputation = { 469, EXALTED },	-- Alliance, Exalted.
+			maps = { WESTERN_PLAGUELANDS },
+			races = ALLIANCE_ONLY,
+			timeline = { ADDED_1_12_1 },
+			isYearly = true,
+			lvl = lvlsquish(30, 30, 1),
+			groups = {
 				objective(1, {	-- Uther's Tribute
-					["provider"] = { "i", 19850 },	-- Uther's Tribute
-					["coord"] = { 51.0, 82.0, WESTERN_PLAGUELANDS },
+					provider = { "i", 19850 },	-- Uther's Tribute
+					coord = { 51.0, 82.0, WESTERN_PLAGUELANDS },
 				}),
 				i(20009),	-- For the Light!
 			},
 		}),
 		q(8150, {	-- Honoring a Hero (H)
-			["qg"] = 15012,	-- Javnir Nashak
-			["coords"] = {
+			qg = 15012,	-- Javnir Nashak
+			coords = {
 				-- #if AFTER CATA
 				{ 46.2, 15.0, DUROTAR },
 				-- #else
 				{ 46.0, 13.6, DUROTAR },
 				-- #endif
 			},
-			["maxReputation"] = { 67, EXALTED },	-- Horde, Exalted.
-			["maps"] = { ASHENVALE },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_1_12_1 },
-			["isYearly"] = true,
-			["lvl"] = lvlsquish(30, 30, 1),
-			["groups"] = {
+			maxReputation = { 67, EXALTED },	-- Horde, Exalted.
+			maps = { ASHENVALE },
+			races = HORDE_ONLY,
+			timeline = { ADDED_1_12_1 },
+			isYearly = true,
+			lvl = lvlsquish(30, 30, 1),
+			groups = {
 				objective(1, {	-- Grom's Tribute
-					["provider"] = { "i", 19851 },	-- Grom's Tribute
-					["coord"] = { 83.0, 79.0, ASHENVALE },
+					provider = { "i", 19851 },	-- Grom's Tribute
+					coord = { 83.0, 79.0, ASHENVALE },
 				}),
 				i(20010),	-- The Horde's Hellscream
 			},
 		}),
 		q(54996, {	-- Remembrance
-			["qg"] = 149084,	-- Spiritwalker Ussoh
-			["coord"] = { 46.8, 15.4, DUROTAR },
-			["timeline"] = { ADDED_8_2_0 },
-			["races"] = { TAUREN },
-			["isYearly"] = true,
+			qg = 149084,	-- Spiritwalker Ussoh
+			coord = { 46.8, 15.4, DUROTAR },
+			timeline = { ADDED_8_2_0 },
+			races = { TAUREN },
+			isYearly = true,
 		}),
 	}),
 	n(REWARDS, {
-		["description"] = "This is some of the best food and water you can get for leveling! It does disappear 15 minutes after log out though, so pick this up at the start of your session and game until you run out.",
-		["timeline"] = { ADDED_1_12_1 },
-		["groups"] = {
+		description = "This is some of the best food and water you can get for leveling! It does disappear 15 minutes after log out though, so pick this up at the start of your session and game until you run out.",
+		timeline = { ADDED_1_12_1 },
+		groups = {
 			i(19995),	-- Harvest Boar
 			i(19696),	-- Harvest Bread
 			i(19996),	-- Harvest Fish
@@ -102,12 +102,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 		},
 	}),
 	n(VENDORS, {
-		["crs"] = {
+		crs = {
 			15012,	-- Javnir Nashak
 			15011,	-- Wagner Hammerstrike
 		},
-		["timeline"] = { ADDED_1_12_1 },
-		["groups"] = {
+		timeline = { ADDED_1_12_1 },
+		groups = {
 			i(9312),	-- Blue Firework
 			i(9313),	-- Green Firework
 			i(9318),	-- Red Firework

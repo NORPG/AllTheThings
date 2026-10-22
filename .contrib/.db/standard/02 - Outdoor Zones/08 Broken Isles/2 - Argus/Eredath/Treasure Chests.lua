@@ -4,95 +4,95 @@
 
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
-		m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
+		m(ARGUS, bubbleDown({ timeline = { ADDED_7_3_0 } }, {
 			m(EREDATH, {
 				n(TREASURES, {
 					o(277342, {	-- Augari Goods
-						["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
-						["coord"] = { 40.9, 69.9, EREDATH },
-						["questID"] = 49153,
-						["groups"] = {
+						description = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
+						coord = { 40.9, 69.9, EREDATH },
+						questID = 49153,
+						groups = {
 							i(153281),	-- Augari Wakener's Handwraps
 						},
 					}),
 					o(277327, {	-- Augari-Runed Chest
-						["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
-						["coord"] = { 70.6, 27.6, EREDATH },
-						["questID"] = 49129,
-						["groups"] = {
+						description = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
+						coord = { 70.6, 27.6, EREDATH },
+						questID = 49129,
+						groups = {
 							i(153280),	-- Augari Wakener's Circlet
 						},
 					}),
 					o(276227, {	-- Augari Secret Stash
-						["description"] = "Use a |cFFFFD700Goblin Glider Kit|r to reach the floating island.",
-						["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
-						["coord"] = { 70.2, 59.8, EREDATH },
-						["questID"] = 48748,
-						["groups"] = {
+						description = "Use a |cFFFFD700Goblin Glider Kit|r to reach the floating island.",
+						sourceQuests = { 48107 },	-- The Sigil of Awakening
+						coord = { 70.2, 59.8, EREDATH },
+						questID = 48748,
+						groups = {
 							i(153279),	-- Augari Wakener's Cord
 						},
 					}),
 					o(276224, {	-- Chest of Ill-Gotten Gains
-						["description"] = "You will need |cFFFFD700Light's Judgment|r to get into the cave.",
-						["coord"] = { 50.6, 38.5, EREDATH },
-						["questID"] = 48744,
-						["groups"] = {
+						description = "You will need |cFFFFD700Light's Judgment|r to get into the cave.",
+						coord = { 50.6, 38.5, EREDATH },
+						questID = 48744,
+						groups = {
 							i(153325),	-- Eredath Vigilant's Redoubt
 						},
 					}),
 					o(276228, {	-- Desperate Eredar's Cache
-						["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
-						["coord"] = { 57.1, 76.8, EREDATH },
-						["questID"] = 48749,
-						["groups"] = {
+						sourceQuests = { 48107 },	-- The Sigil of Awakening
+						coord = { 57.1, 76.8, EREDATH },
+						questID = 48749,
+						groups = {
 							i(153267),	-- Enclave Aspirant's Hatchet
 						},
 					}),
 					o(276230, {	-- Doomseeker's Treasure
-						["description"] = "Drop down into the hole by the waterfall and land on the ledge. You will need a |cFFFFD700Goblin Glider Kit|r to reach this chest.",
-						["coord"] = { 43.5, 54.4, EREDATH },
-						["questID"] = 48751,
-						["groups"] = {
+						description = "Drop down into the hole by the waterfall and land on the ledge. You will need a |cFFFFD700Goblin Glider Kit|r to reach this chest.",
+						coord = { 43.5, 54.4, EREDATH },
+						questID = 48751,
+						groups = {
 							i(153313),	-- Praetor's Ornamental Claymore
 						},
 					}),
 					o(276223, {	-- Eredar Treasure Cache
-						["description"] = "You can use the |cFFFFD700Lightforged Warframe|r to get across, although it shouldn't be necessary.",
-						["coord"] = { 42.9, 5.30, EREDATH },
-						["questID"] = 48743,
+						description = "You can use the |cFFFFD700Lightforged Warframe|r to get across, although it shouldn't be necessary.",
+						coord = { 42.9, 5.30, EREDATH },
+						questID = 48743,
 					}),
 					o(277340, {	-- Secret Augari Chest
-						["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
-						["coord"] = { 62.2, 22.3, EREDATH },
-						["questID"] = 49151,
-						["groups"] = {
+						description = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
+						coord = { 62.2, 22.3, EREDATH },
+						questID = 49151,
+						groups = {
 							i(153282),	-- Augari Wakener's Leggings
 						},
 					}),
 					o(276229, {	-- Shattered House Chest
-						["description"] = "You will need a |cFFFFD700Goblin Glider Kit|r to reach this chest.",
-						["coord"] = { 27.5, 40.2, EREDATH },
-						["questID"] = 48750,
+						description = "You will need a |cFFFFD700Goblin Glider Kit|r to reach this chest.",
+						coord = { 27.5, 40.2, EREDATH },
+						questID = 48750,
 					}),
 					o(276225, {	-- Student's Surprising Surplus
-						["description"] = "You will need |cFFFFD700Light's Judgment|r to get into the cave.",
-						["coord"] = { 61.2, 72.5, EREDATH },
-						["questID"] = 48745,
-						["groups"] = {
+						description = "You will need |cFFFFD700Light's Judgment|r to get into the cave.",
+						coord = { 61.2, 72.5, EREDATH },
+						questID = 48745,
+						groups = {
 							i(153286),	-- Augari Wakener's Cuffs
 						},
 					}),
 					o(276226, {	-- Void-Tinged Chest
-						["description"] = "You will need |cFFFFD700Lightforged Warframe|r to get into the cave.",
-						["coord"] = { 40.2, 51.5, EREDATH },
-						["questID"] = 48747,
-						["groups"] = {
+						description = "You will need |cFFFFD700Lightforged Warframe|r to get into the cave.",
+						coord = { 40.2, 51.5, EREDATH },
+						questID = 48747,
+						groups = {
 							i(153328),	-- Mystic Wakener's Shiv
 							i(152854),	-- Nethershorn Lantern
 						},
 					}),
 					o_repeated({	-- Ancient Eredar Cache
-						["groups"] = appendAllGroups({	-- Shared Rewards
+						groups = appendAllGroups({	-- Shared Rewards
 							i(153336),	-- Eredath Lightseeker's Armguards
 							i(153332),	-- Eredath Lightseeker's Chestpiece
 							i(153330),	-- Eredath Lightseeker's Greaves
@@ -101,7 +101,7 @@ root(ROOTS.Zones, {
 							i(153334),	-- Eredath Lightseeker's Spaulders
 							i(153337),	-- Eredath Lightseeker's Treads
 							i(153333),	-- Eredath Lightseeker's Waistplate
-							i(282164, { ["timeline"] = { ADDED_12_1_5 } }),	-- Eredath Worktable (DECOR!)
+							i(282164, { timeline = { ADDED_12_1_5 } }),	-- Eredath Worktable (DECOR!)
 							i(153276),	-- Forgotten Conservatory Amice
 							i(153272),	-- Forgotten Conservatory Gloves
 							i(153271),	-- Forgotten Conservatory Helm
@@ -111,11 +111,11 @@ root(ROOTS.Zones, {
 							i(153275),	-- Forgotten Conservatory Slippers
 							i(153277),	-- Forgotten Conservatory Wristwraps
 						},sharedData({	-- Common Objects
-							["isDaily"] = true,
+							isDaily = true,
 						},{
 							o(273301, {	-- Ancient Eredar Cache
-								["questID"] = 48346,
-								["coords"] = {
+								questID = 48346,
+								coords = {
 									{ 54.9, 57.7, EREDATH },
 									{ 48.0, 61.2, EREDATH },
 									{ 47.2, 62.3, EREDATH },
@@ -137,8 +137,8 @@ root(ROOTS.Zones, {
 								},
 							}),
 							o(273407, {	-- Ancient Eredar Cache
-								["questID"] = 48350,
-								["coords"] = {
+								questID = 48350,
+								coords = {
 									{ 53.9, 23.2, EREDATH },
 									{ 54.9, 25.0, EREDATH },
 									{ 53.3, 27.4, EREDATH },
@@ -154,8 +154,8 @@ root(ROOTS.Zones, {
 								},
 							}),
 							o(273412, {	-- Ancient Eredar Cache
-								["questID"] = 48351,
-								["coords"] = {
+								questID = 48351,
+								coords = {
 									{ 33.8, 55.5, EREDATH },
 									{ 34.2, 57.3, EREDATH },
 									{ 34.3, 59.1, EREDATH },
@@ -189,8 +189,8 @@ root(ROOTS.Zones, {
 								},
 							}),
 							o(273414, {	-- Ancient Eredar Cache
-								["questID"] = 48362,
-								["coords"] = {
+								questID = 48362,
+								coords = {
 									{ 62.2, 32.7, EREDATH },
 									{ 64.9, 29.5, EREDATH },
 									{ 66.4, 29.0, EREDATH },
@@ -224,8 +224,8 @@ root(ROOTS.Zones, {
 								},
 							}),
 							o(273415, {	-- Ancient Eredar Cache
-								["questID"] = 48357,
-								["coords"] = {
+								questID = 48357,
+								coords = {
 									{ 53.3, 8.50, EREDATH },
 									{ 58.0, 10.6, EREDATH },
 									{ 58.7, 13.3, EREDATH },
@@ -249,8 +249,8 @@ root(ROOTS.Zones, {
 								},
 							}),
 							o(273439, {	-- Ancient Eredar Cache
-								["questID"] = 48371,
-								["coords"] = {
+								questID = 48371,
+								coords = {
 									{ 59.3, 58.6, EREDATH },
 									{ 50.6, 55.8, EREDATH },
 									{ 49.9, 55.1, EREDATH },
@@ -272,23 +272,23 @@ root(ROOTS.Zones, {
 						})),
 					}),
 					o(273443, {	-- Void-Seeped Cache
-						["isDaily"] = true,
-						["questID"] = 48361,
-						["coords"] = {
+						isDaily = true,
+						questID = 48361,
+						coords = {
 							{ 19.8, 46.6, EREDATH },
 							{ 33.2, 43.5, EREDATH },
 							{ 35.3, 36.0, EREDATH },
 							{ 37.7, 48.7, EREDATH },
 						},
-						["groups"] = {
+						groups = {
 							i(152854),	-- Nethershorn Lantern
 							i(152862),	-- Shredded Felbroken Shawl
 						},
 					}),
 					o(277637, {	-- Void-Seeped Cache
-						-- ["isDaily"] = true, ?
-						-- ["questID"] = ?,
-						["coords"] = {
+						-- isDaily = true, ?
+						-- questID = ?,
+						coords = {
 							{ 31.4, 25.4, EREDATH },
 							{ 31.4, 25.7, EREDATH },
 							{ 31.5, 25.6, EREDATH },
@@ -312,7 +312,7 @@ root(ROOTS.Zones, {
 							{ 37.9, 23.5, EREDATH },
 							{ 38.1, 39.9, EREDATH },
 						},
-						["groups"] = {
+						groups = {
 							i(152854),	-- Nethershorn Lantern
 							i(152862),	-- Shredded Felbroken Shawl
 						},
@@ -323,7 +323,7 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {
 	m(BROKEN_ISLES, {
 		m(ARGUS, {
 			m(EREDATH, {

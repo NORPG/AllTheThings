@@ -4,18 +4,18 @@
 
 root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 	n(SEASON_FEROCIOUS, bubbleDownSelf({
-		["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0, ADDED_7_3_0 },
+		timeline = { ADDED_7_2_5, REMOVED_7_3_0, ADDED_7_3_0 },
 	}, {
-		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0 } }, {
+		n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_7_2_5, REMOVED_7_3_0 } }, {
 			ach(11010, {	-- Ferocious Combatant [A]
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
 			ach(11009, {	-- Ferocious Combatant [H]
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				races = HORDE_ONLY,
+				groups = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
@@ -27,44 +27,44 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 				i(141846),	-- Ferocious Gladiator's Storm Dragon (MOUNT!)
 			}),
 			ach(11002, {	-- Ferocious Gladiator's Storm Dragon
-				["provider"] = { "i", 141846 },	-- Ferocious Gladiator's Storm Dragon (MOUNT!)
-				["filterID"] = MOUNTS,
+				provider = { "i", 141846 },	-- Ferocious Gladiator's Storm Dragon (MOUNT!)
+				filterID = MOUNTS,
 			}),
 			ach(11062, {	-- Ferocious Gladiator: Legion Season 4
 				title(360),	-- Ferocious Gladiator <Name>
 			}),
 			-- RBG
 			ach(11050, {	-- Soldier of the Alliance: Legion Season 4
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11051, {	-- Soldier of the Horde: Legion Season 4
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(11054, {	-- Defender of the Alliance: Legion Season 4
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11055, {	-- Defender of the Horde: Legion Season 4
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(11052, {	-- Guardian of the Alliance: Legion Season 4
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11053, {	-- Guardian of the Horde: Legion Season 4
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(11056, {	-- Hero of the Alliance: Ferocious
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11057, {	-- Hero of the Horde: Ferocious
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			-- Fashion
 			ach(11723, {	-- Cruel Intentions
-				["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0, ADDED_7_3_0 },
+				timeline = { ADDED_7_2_5, REMOVED_7_3_0, ADDED_7_3_0 },
 			}),
 		})),
 		n(PVP_COMBATANT, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_5, REMOVED_7_3_0 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(145868),	-- Ferocious Combatant's Dreadcloak [A]
@@ -221,7 +221,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(146080),	-- Ferocious Combatant's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_5, REMOVED_7_3_0 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(145869),	-- Ferocious Combatant's Dreadcloak [H]
@@ -378,7 +378,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(146081),	-- Ferocious Combatant's Insignia of Victory [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_7_2_5, REMOVED_7_3_0 } }, {
 				filter(RELICS_F, {
 					i(145354),	-- Alliance of Convenience
 					i(145373),	-- Battering Tempest
@@ -414,7 +414,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_GLADIATOR, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_5, REMOVED_7_3_0 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(145376),	-- Ferocious Gladiator's Dreadcloak [A]
@@ -571,7 +571,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(145588),	-- Ferocious Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_5, REMOVED_7_3_0 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(145377),	-- Ferocious Gladiator's Dreadcloak [H]
@@ -728,7 +728,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(145589),	-- Ferocious Gladiator's Insignia of Victory [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_7_2_5, REMOVED_7_3_0 } }, {
 				filter(RELICS_F, {
 					i(151502),	-- Alliance of Convenience
 					i(151521),	-- Battering Tempest
@@ -764,24 +764,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_ELITE, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_5 }, races = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
-					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["sourceAchievements"] = { 11698 },	-- Ferocious Elite
-						["cost"] = { { "i", MOH, 50 } },
-						["u"] = ELITE_PVP_REQUIREMENT,
+					coord = { 29.6, 74.8, LEGION_DALARAN },
+					groups = sharedData({
+						sourceAchievements = { 11698 },	-- Ferocious Elite
+						cost = { { "i", MOH, 50 } },
+						u = ELITE_PVP_REQUIREMENT,
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
-							["sourceAchievements"] = { 11061 },	-- Gladiator: Legion Season 4
-							["cost"] = { { "i", MOH, 12 } },
+							sourceAchievements = { 11061 },	-- Gladiator: Legion Season 4
+							cost = { { "i", MOH, 12 } },
 						}),
 						i(147364),	-- Ferocious Gladiator's Cloak [A]
 						i(147339),	-- Ferocious Gladiator's Tabard [A]
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_5, REMOVED_7_3_0 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(145622),	-- Ferocious Gladiator's Dreadcloak [A]
@@ -938,24 +938,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(145834),	-- Ferocious Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_5 }, races = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
-					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["sourceAchievements"] = { 11698 },	-- Ferocious Elite
-						["cost"] = { { "i", MOH, 50 } },
-						["u"] = ELITE_PVP_REQUIREMENT,
+					coord = { 57.0, 27.8, LEGION_DALARAN },
+					groups = sharedData({
+						sourceAchievements = { 11698 },	-- Ferocious Elite
+						cost = { { "i", MOH, 50 } },
+						u = ELITE_PVP_REQUIREMENT,
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
-							["sourceAchievements"] = { 11061 },	-- Gladiator: Legion Season 4
-							["cost"] = { { "i", MOH, 12 } },
+							sourceAchievements = { 11061 },	-- Gladiator: Legion Season 4
+							cost = { { "i", MOH, 12 } },
 						}),
 						i(147363),	-- Ferocious Gladiator's Cloak [H]
 						i(147338),	-- Ferocious Gladiator's Tabard [H]
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_5, REMOVED_7_3_0 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(145623),	-- Ferocious Gladiator's Dreadcloak [H]

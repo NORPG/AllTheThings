@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		i(258138),	-- Potent Healing Potion
 		prof(FISHING, {
 			i(267395, {	-- Technique: Homely Wall Shelves (RECIPE!)
-				["maps"] = {
+				maps = {
 					MAP.MIDNIGHT.EVERSONG_WOODS,
 					MAP.MIDNIGHT.ZULAMAN,
 					MAP.MIDNIGHT.HARANDAR,

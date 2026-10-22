@@ -1,15 +1,15 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
-	i(180055, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I
-	i(180057, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II
-	i(180058, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III
-	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
-	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
-	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+	i(180055, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I
+	i(180057, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II
+	i(180058, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III
+	i(180059, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV
+	i(180060, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V
+	n(DECOR, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
 		o_repeated({	-- Fel-Touched Lumber
-			["maps"] = {
+			maps = {
 				AZSUNA,
 				BROKEN_SHORE,
 				EREDATH,
@@ -23,7 +23,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 				VALSHARAH,
 				THE_DREAMGROVE,
 			},
-			["groups"] = {
+			groups = {
 				-- Objects
 				o(559409),	-- [Azsuna]
 				o(562439),	-- [Broken Shore]
@@ -41,76 +41,76 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			i(127935, {	-- Recipe: Ancient Healing Potion [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188299 },	-- Ancient Healing Potion [Rank 2]
+				provider = { "s", 188299 },	-- Ancient Healing Potion [Rank 2]
 			}),
 			i(127918, {	-- Recipe: Ancient Mana Potion [Rank 2] (RECIPE!)
-				["provider"] = { "s", 188301 },	-- Ancient Mana Potion [Rank 1]
+				provider = { "s", 188301 },	-- Ancient Mana Potion [Rank 1]
 			}),
 			i(127936, {	-- Recipe: Ancient Mana Potion [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188302 },	-- Ancient Mana Potion [Rank 2]
+				provider = { "s", 188302 },	-- Ancient Mana Potion [Rank 2]
 			}),
 			i(127919, {	-- Recipe: Ancient Rejuvenation Potion [Rank 2] (RECIPE!)
-				["provider"] = { "s", 188304 },	-- Ancient Rejuvenation Potion [Rank 1]
+				provider = { "s", 188304 },	-- Ancient Rejuvenation Potion [Rank 1]
 			}),
 			i(127937, {	-- Recipe: Ancient Rejuvenation Potion [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188305 },	-- Ancient Rejuvenation Potion [Rank 2]
+				provider = { "s", 188305 },	-- Ancient Rejuvenation Potion [Rank 2]
 			}),
 			i(152617, {	-- Recipe: Astral Healing Potion [Rank 2]
-				["provider"] = { "s", 251646 },	-- Astral Healing Potion
-				["timeline"] = { ADDED_7_3_0 },
+				provider = { "s", 251646 },	-- Astral Healing Potion
+				timeline = { ADDED_7_3_0 },
 			}),
 			i(127940, {	-- Recipe: Avalanche Elixir [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188314 },	-- Avalanche Elixir [Rank 2]
+				provider = { "s", 188314 },	-- Avalanche Elixir [Rank 2]
 			}),
 			i(127938, {	-- Recipe: Draught of Raw Magic [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188308 },	-- Draught of Raw Magic [Rank 2]
+				provider = { "s", 188308 },	-- Draught of Raw Magic [Rank 2]
 			}),
 			i(127951, {	-- Recipe: Flask of Ten Thousand Scars [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188347 },	-- Flask of Ten Thousand Scars [Rank 2]
+				provider = { "s", 188347 },	-- Flask of Ten Thousand Scars [Rank 2]
 			}),
 			i(127950, {	-- Recipe: Flask of the Countless Armies [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188344 },	-- Flask of the Countless Armies [Rank 2]
+				provider = { "s", 188344 },	-- Flask of the Countless Armies [Rank 2]
 			}),
 			i(127949, {	-- Recipe: Flask of the Seventh Demon [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188341 },	-- Flask of the Seventh Demon [Rank 2]
+				provider = { "s", 188341 },	-- Flask of the Seventh Demon [Rank 2]
 			}),
 			i(127948, {	-- Recipe: Flask of the Whispered Pact [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188338 },	-- Flask of the Whispered Pact [Rank 2]
+				provider = { "s", 188338 },	-- Flask of the Whispered Pact [Rank 2]
 			}),
 			i(127943, {	-- Recipe: Infernal Alchemist Stone [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188323 },	-- Infernal Alchemist Stone [Rank 2]
+				provider = { "s", 188323 },	-- Infernal Alchemist Stone [Rank 2]
 			}),
 			i(127947, {	-- Recipe: Leytorrent Potion [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188335 },	-- Leytorrent Potion [Rank 2]
+				provider = { "s", 188335 },	-- Leytorrent Potion [Rank 2]
 			}),
 			i(151659, {	-- Recipe: Lightblood Elixir [Rank 3] (RECIPE!)
-				["provider"] = { "s", 247620 },	-- Lightblood Elixir [Rank 2]
-				["timeline"] = { ADDED_7_3_0 },
+				provider = { "s", 247620 },	-- Lightblood Elixir [Rank 2]
+				timeline = { ADDED_7_3_0 },
 			}),
 			i(127944, {	-- Recipe: Potion of Deadly Grace [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188326 },	-- Potion of Deadly Grace [Rank 2]
+				provider = { "s", 188326 },	-- Potion of Deadly Grace [Rank 2]
 			}),
 			i(127945, {	-- Recipe: Potion of the Old War [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188329 },	-- Potion of the Old War [Rank 2]
+				provider = { "s", 188329 },	-- Potion of the Old War [Rank 2]
 			}),
 			i(127941, {	-- Recipe: Skaggldrynk [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188317 },	-- Skaggldrynk [Rank 2]
+				provider = { "s", 188317 },	-- Skaggldrynk [Rank 2]
 			}),
 			i(127942, {	-- Recipe: Skystep Potion [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188320 },	-- Skystep Potion [Rank 2]
+				provider = { "s", 188320 },	-- Skystep Potion [Rank 2]
 			}),
 			i(127952, {	-- Recipe: Spirit Cauldron [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188350 },	-- Spirit Cauldron [Rank 2]
+				provider = { "s", 188350 },	-- Spirit Cauldron [Rank 2]
 			}),
 			i(127939, {	-- Recipe: Sylvan Elixir [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188311 },	-- Sylvan Elixir [Rank 2]
+				provider = { "s", 188311 },	-- Sylvan Elixir [Rank 2]
 			}),
 			i(151705, {	-- Recipe: Tears of the Naaru [Rank 3] (RECIPE!)
-				["provider"] = { "s", 247690 },	-- Tears of the Naaru [Rank 2]
-				["timeline"] = { ADDED_7_3_0 },
+				provider = { "s", 247690 },	-- Tears of the Naaru [Rank 2]
+				timeline = { ADDED_7_3_0 },
 			}),
 			i(127946, {	-- Recipe: Unbending Potion [Rank 3] (RECIPE!)
-				["provider"] = { "s", 188332 },	-- Unbending Potion [Rank 2]
+				provider = { "s", 188332 },	-- Unbending Potion [Rank 2]
 			}),
 			spell(188800, {	-- Wild Transformation [Rank 1]
 				i(128210),	-- Recipe: Wild Transmutation [Rank 2] (RECIPE!)
@@ -129,8 +129,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		}),
 		filter(BATTLE_PETS, {
 			i(137608, {	-- Growling Sac
-				["cost"] = {{ "i", 137599, 1 }},	-- Pulsating Sac
-				["sym"] = {{"select","itemID",
+				cost = {{ "i", 137599, 1 }},	-- Pulsating Sac
+				sym = {{"select","itemID",
 					44822,	-- Albino Snake (PET!)
 					11023,	-- Ancona Chicken (PET!)
 					10360,	-- Black Kingsnake (PET!)
@@ -144,7 +144,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 					29902,	-- Red Moth (PET!)
 					29903,	-- Yellow Moth (PET!)
 				}},
-				["groups"] = {
+				groups = {
 					i(136905),	-- Ridgeback Piglet (PET!)
 					i(136908),	-- Thaumaturgical Piglet (PET!)
 					i(139789),	-- Transmutant (PET!)
@@ -157,7 +157,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		filter(CONSUMABLES, {
 			i(127834),	-- Ancient Healing Potion
 			i(127835),	-- Ancient Mana Potion
-			i(152615, {["timeline"] = {ADDED_7_3_0}}),	-- Astral Healing Potion
+			i(152615, {timeline = {ADDED_7_3_0}}),	-- Astral Healing Potion
 			i(127839),	-- Avalanche Elixir
 			i(127836),	-- Coastal Rejuvenation Potion
 			i(127837),	-- Draught of Raw Magic
@@ -166,21 +166,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(127848),	-- Flask of the Seventh Demon
 			i(127847),	-- Flask of the Whispered Pact
 			i(127846),	-- Leytorrent Potion
-			i(151608, {["timeline"] = {ADDED_7_3_0}}),	-- Lightblood Elixir
+			i(151608, {timeline = {ADDED_7_3_0}}),	-- Lightblood Elixir
 			i(127843),	-- Potion of Deadly Grace
-			i(142117, {["timeline"] = {ADDED_7_1_0}}),	-- Potion of Prolonged Power
+			i(142117, {timeline = {ADDED_7_1_0}}),	-- Potion of Prolonged Power
 			i(127844),	-- Potion of the Old War
-			i(136653, {["timeline"] = {ADDED_8_0_1}}),	-- Silvery Salve
+			i(136653, {timeline = {ADDED_8_0_1}}),	-- Silvery Salve
 			i(127840),	-- Skaggldrynk
 			i(127841),	-- Skystep Potion
 			i(127851, {	-- Spirit Cauldron
 				i(127858),	-- Spirit Flask
 			}),
 			i(127838),	-- Sylvan Elixir
-			i(151609, {["timeline"] = {ADDED_7_3_0}}),	-- Tears of the Naaru
+			i(151609, {timeline = {ADDED_7_3_0}}),	-- Tears of the Naaru
 			i(127845),	-- Unbending Potion
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(256680),	-- Arcan'dor Cutting Fountain (DECOR!)
 			i(257045),	-- Starry Scrying Pool (DECOR!)
 		})),
@@ -193,7 +193,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			}),
 		}),
 		filter(TRINKET_F, {
-			i(151607, {["timeline"] = {ADDED_7_3_0}}),	-- Astral Alchemist Stone
+			i(151607, {timeline = {ADDED_7_3_0}}),	-- Astral Alchemist Stone
 			i(127842),	-- Infernal Alchemist Stone
 		}),
 	}),
@@ -203,21 +203,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(130904),	-- Highmountain Ritual-Stone
 		i(130905),	-- Mark of the Deceiver
 		i(87399),	-- Restored Artifact
-		header(HEADERS.Currency, ARCH_CURRENCY_DEMONIC, sharedData({["cost"]={{"c",ARCH_CURRENCY_DEMONIC,50}}},{	-- TODO: someone can add different fragment costs within as needed
-			["providers"] = {
+		header(HEADERS.Currency, ARCH_CURRENCY_DEMONIC, sharedData({cost={{"c",ARCH_CURRENCY_DEMONIC,50}}},{	-- TODO: someone can add different fragment costs within as needed
+			providers = {
 				{ "o", 246812 },	-- Demonic Archaeology Find
 				-- #if AFTER 7.2.5
 				{ "o", 268466 },	-- Demonic Archaeology Find
 				{ "o", 268451 },	-- Demonic Archaeology Find
 				-- #endif
 			},
-			["maps"] = {
+			maps = {
 				AZSUNA,
 				STORMHEIM,
 				SURAMAR,
 				VALSHARAH,
 			},
-			["groups"] = {
+			groups = {
 				i(130917),	-- Flayed-Skin Chronicle
 				i(130920),	-- Houndstooth Hauberk
 				i(130916),	-- Imp's Cup
@@ -230,20 +230,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 				i(130934),	-- Pristine Orb of Inner Chaos
 			},
 		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_HIGHBORNE, sharedData({["cost"]={{"c",ARCH_CURRENCY_HIGHBORNE,50}}},{	-- TODO: someone can add different fragment costs within as needed
-			["providers"] = {
+		header(HEADERS.Currency, ARCH_CURRENCY_HIGHBORNE, sharedData({cost={{"c",ARCH_CURRENCY_HIGHBORNE,50}}},{	-- TODO: someone can add different fragment costs within as needed
+			providers = {
 				{ "o", 246811 },	-- Highborne Archaeology Find
 				-- #if AFTER 7.2.0
 				{ "o", 268440 },	-- Highborne Archaeology Find
 				{ "o", 268453 },	-- Highborne Archaeology Find
 				-- #endif
 			},
-			["maps"] = {
+			maps = {
 				AZSUNA,
 				SURAMAR,
 				VALSHARAH,
 			},
-			["groups"] = {
+			groups = {
 				i(130907),	-- Inert Leystone Charm
 				i(130910),	-- Nobleman's Letter Opener
 				i(130909),	-- Pre-War Highborne Tapestry
@@ -253,23 +253,23 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 				i(130923),	-- Pristine Quietwine Vial
 				i(130921),	-- Pristine Violetglass Vessel
 				i(130908),	-- Quietwine Vial
-				i(137782, {["timeline"] = {ADDED_7_1_0}}),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 3] (RECIPE!)
+				i(137782, {timeline = {ADDED_7_1_0}}),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 3] (RECIPE!)
 				i(130906),	-- Violetglass Vessel
 			},
 		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_HIGHMOUNTAIN, sharedData({["cost"]={{"c",ARCH_CURRENCY_HIGHMOUNTAIN,50}}},{	-- TODO: someone can add different fragment costs within as needed
-			["providers"] = {
+		header(HEADERS.Currency, ARCH_CURRENCY_HIGHMOUNTAIN, sharedData({cost={{"c",ARCH_CURRENCY_HIGHMOUNTAIN,50}}},{	-- TODO: someone can add different fragment costs within as needed
+			providers = {
 				{ "o", 246804 },	-- Highmountain Tauren Archaeology Find
 				-- #if AFTER 7.2.0
 				{ "o", 268450 },	-- Highmountain Tauren Archaeology Find
 				-- #endif
 			},
-			["maps"] = {
+			maps = {
 				HIGHMOUNTAIN,
 				652,	-- Thunder Totem
 				750,	-- Thunder Totem
 			},
-			["groups"] = {
+			groups = {
 				i(130914),	-- Drogbar Gem-Roller
 				i(130913),	-- Hand-Smoothed Pyrestone
 				i(130912),	-- Moosebone Fish-Hook
@@ -293,7 +293,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(123913),	-- Demonsteel Helm
 			i(123915),	-- Demonsteel Pauldrons
 			i(123916),	-- Demonsteel Waistguard
-			i(151576, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrial Breastplate
+			i(151576, {timeline = {ADDED_7_3_0}}),	-- Empyrial Breastplate
 			i(123898),	-- Leystone Armguards
 			i(123892),	-- Leystone Boots
 			i(123891),	-- Leystone Breastplate
@@ -302,9 +302,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(123894),	-- Leystone Helm
 			i(123896),	-- Leystone Pauldrons
 			i(123897),	-- Leystone Waistguard
-			i(146667, {["timeline"] = {ADDED_7_2_0}}),	-- Rethu's Incessant Courage
+			i(146667, {timeline = {ADDED_7_2_0}}),	-- Rethu's Incessant Courage
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(247922),	-- Suramar Fence (DECOR!)
 			i(247909),	-- Suramar Fencepost (DECOR!)
 			i(245408),	-- Tauren Soup Pot (DECOR!)
@@ -312,11 +312,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		filter(MISC, {
 			i(124461),	-- Demonsteel Bar
 			i(136708),	-- Demonsteel Stirrups
-			i(151239, {["timeline"] = {ADDED_7_3_0}}),	-- Felslate Anchor
+			i(151239, {timeline = {ADDED_7_3_0}}),	-- Felslate Anchor
 			i(123956),	-- Leystone Hoofplates
 		}),
 		filter(MOUNTS, {
-			i(137686, {["timeline"] = {ADDED_7_1_0}}),	-- Steelbound Devourer (MOUNT!)
+			i(137686, {timeline = {ADDED_7_1_0}}),	-- Steelbound Devourer (MOUNT!)
 		}),
 		filter(RELICS_F, {
 			i(136685),	-- Consecrated Spike
@@ -334,7 +334,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(133575),	-- Dried Mackerel Strips
 		i(133569),	-- Drogbar-Style Salmon
 		i(133563),	-- Faronaar Fizz
-		i(152564, {["timeline"] = {ADDED_7_3_0}}),	-- Feast of the Fishes
+		i(152564, {timeline = {ADDED_7_3_0}}),	-- Feast of the Fishes
 		i(133577),	-- Fighter Chow
 		i(133574),	-- Fishbrul Special
 		i(133578),	-- Hearty Feast
@@ -345,7 +345,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(133562),	-- Pickled Stormray
 		i(133557),	-- Salt and Pepper Shank
 		i(133573),	-- Seed-Battered Fish Plate
-		i(142334, {["timeline"] = {ADDED_7_1_0}}),	-- Spiced Falcosaur Omelet
+		i(142334, {timeline = {ADDED_7_1_0}}),	-- Spiced Falcosaur Omelet
 		i(133564),	-- Spiced Rib Roast
 		i(133566),	-- Suramar Surf and Turf
 		i(133570),	-- The Hungry Magister
@@ -369,14 +369,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(128561),	-- Enchant Glove - Legion Surveying
 			i(141910),	-- Enchant Neck - Mark of the Ancient Priestess
 			i(128551),	-- Enchant Neck - Mark of the Claw
-			i(144307, {["timeline"] = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Deadly
+			i(144307, {timeline = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Deadly
 			i(128552),	-- Enchant Neck - Mark of the Distant Army
 			i(141908),	-- Enchant Neck - Mark of the Heavy Hide
 			i(128553),	-- Enchant Neck - Mark of the Hidden Satyr
-			i(144304, {["timeline"] = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Master
-			i(144306, {["timeline"] = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Quick
+			i(144304, {timeline = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Master
+			i(144306, {timeline = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Quick
 			i(141909),	-- Enchant Neck - Mark of the Trained Soldier
-			i(144305, {["timeline"] = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Versatile
+			i(144305, {timeline = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Versatile
 			i(128541),	-- Enchant Ring - Binding of Critical Strike
 			i(128542),	-- Enchant Ring - Binding of Haste
 			i(128543),	-- Enchant Ring - Binding of Mastery
@@ -392,8 +392,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(128535),	-- Enchanted Pen (PET!)
 			i(128534),	-- Enchanted Torch (PET!)
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
-			i(282140, { ["timeline"] = { ADDED_12_1_5 } }),	-- Shimmering Lightforged Canister (DECOR!)
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
+			i(282140, { timeline = { ADDED_12_1_5 } }),	-- Shimmering Lightforged Canister (DECOR!)
 			i(256681),	-- Nightspire Fountain (DECOR!)
 			i(247923),	-- Suramar Containment Cell (DECOR!)
 		})),
@@ -409,25 +409,25 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		n(ARMOR, {
 			i(132500),	-- Blink-Trigger Headgun
 			i(132502),	-- Bolt-Action Headgun
-			i(144333, {["timeline"] = {ADDED_7_1_5}}),	-- Chain Skullblasters
+			i(144333, {timeline = {ADDED_7_1_5}}),	-- Chain Skullblasters
 			i(132506),	-- Double-Barreled Cranial Cannon
-			i(144334, {["timeline"] = {ADDED_7_1_5}}),	-- Heavy Skullblasters
+			i(144334, {timeline = {ADDED_7_1_5}}),	-- Heavy Skullblasters
 			i(132507),	-- Ironsight Cranial Cannon
 			i(132503),	-- Reinforced Headgun
-			i(144332, {["timeline"] = {ADDED_7_1_5}}),	-- Rugged Skullblasters
+			i(144332, {timeline = {ADDED_7_1_5}}),	-- Rugged Skullblasters
 			i(132505),	-- Sawed-Off Cranial Cannon
 			i(132504),	-- Semi-Automagic Cranial Cannon
 			i(132501),	-- Tactical Headgun
-			i(144331, {["timeline"] = {ADDED_7_1_5}}),	-- Tailored Skullblasters
+			i(144331, {timeline = {ADDED_7_1_5}}),	-- Tailored Skullblasters
 		}),
 		filter(BATTLE_PETS, {
 			i(132519),	-- Trigger (PET!)
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(258226),	-- Dalaran Auto-Hammer (DECOR!)
 			i(258225),	-- Failed Failure Detection Pylon (DECOR!)
-			i(282124, { ["timeline"] = { ADDED_12_1_5 } }),	-- Gleaming Lightforge (DECOR!)
-			i(282144, { ["timeline"] = { ADDED_12_1_5 } }),	-- Lightforged Recall Beacon (DECOR!)
+			i(282124, { timeline = { ADDED_12_1_5 } }),	-- Gleaming Lightforge (DECOR!)
+			i(282144, { timeline = { ADDED_12_1_5 } }),	-- Lightforged Recall Beacon (DECOR!)
 		})),
 		filter(RELICS_F, {
 			i(136687),	-- "The Felic"
@@ -437,7 +437,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(132514),	-- Auto-Hammer
 			i(132509),	-- Deployable Bullet Dispenser
 			i(132515),	-- Failure Detection Pylon
-			i(151651, {["timeline"] = {ADDED_7_3_0}}),	-- Gravitational Reduction Slippers
+			i(151651, {timeline = {ADDED_7_3_0}}),	-- Gravitational Reduction Slippers
 			i(132513),	-- Gunpack
 			i(132510),	-- Gunpowder Charge
 			i(132516),	-- Gunshoes
@@ -447,37 +447,37 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(132511),	-- Pump-Action Bandage Gun
 			i(132523),	-- Reaves Battery
 			i(132530, {	-- Reaves Module: Bling Mode (CI!)
-				["requireSkill"] = ENGINEERING,
+				requireSkill = ENGINEERING,
 			}),
 			i(132526, {	-- Reaves Module: Failure Detection Mode (CI!)
-				["requireSkill"] = ENGINEERING,
+				requireSkill = ENGINEERING,
 			}),
 			i(132528, {	-- Reaves Module: Fireworks Display Mode (CI!)
-				["requireSkill"] = ENGINEERING,
+				requireSkill = ENGINEERING,
 			}),
 			i(132531, {	-- Reaves Module: Piloted Combat Mode (CI!)
-				["requireSkill"] = ENGINEERING,
+				requireSkill = ENGINEERING,
 			}),
 			i(132525, {	-- Reaves Module: Repair Mode (CI!)
-				["requireSkill"] = ENGINEERING,
+				requireSkill = ENGINEERING,
 			}),
 			i(132529, {	-- Reaves Module: Snack Distribution Mode (CI!)
-				["requireSkill"] = ENGINEERING,
+				requireSkill = ENGINEERING,
 			}),
 			i(132524, {	-- Reaves Module: Wormhole Generator Mode (CI!)
-				["requireSkill"] = ENGINEERING,
+				requireSkill = ENGINEERING,
 			}),
-			i(144341, {["timeline"] = {ADDED_7_1_5}}),	-- Rechargeable Reaves Battery
+			i(144341, {timeline = {ADDED_7_1_5}}),	-- Rechargeable Reaves Battery
 			i(132982),	-- Sonic Environment Enhancer
 		}),
 		filter(TOYS, {
 			i(132518),	-- Blingtron's Circuit Design Tutorial (TOY!)
-			i(151652, {["timeline"] = {ADDED_7_3_0}}),	-- Wormhole Generator: Argus (TOY!)*
+			i(151652, {timeline = {ADDED_7_3_0}}),	-- Wormhole Generator: Argus (TOY!)*
 		}),
 	}),
 	-- #if BEFORE BFA
 	prof(FIRST_AID, {
-		i(142332, {["timeline"] = {ADDED_7_1_0}}),	-- Feathered Luffa
+		i(142332, {timeline = {ADDED_7_1_0}}),	-- Feathered Luffa
 		i(133940),	-- Silkweave Bandage
 		i(133942),	-- Silkweave Splint
 		i(136653),	-- Silvery Salve
@@ -487,35 +487,35 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(133742),	-- Ancient Black Barracuda
 		i(133733),	-- Ancient Highmountain Salmon
 		i(133730),	-- Ancient Mossgill
-		i(146960, {["timeline"] = {ADDED_7_3_0}}),	-- Ancient Totem Fragment
+		i(146960, {timeline = {ADDED_7_3_0}}),	-- Ancient Totem Fragment
 		i(133740),	-- Axefish
 		i(124112),	-- Black Barracuda
 		i(133732),	-- Coldriver Carp
-		i(146959, {["timeline"] = {ADDED_7_3_0}}),	-- Corrupted Globule
+		i(146959, {timeline = {ADDED_7_3_0}}),	-- Corrupted Globule
 		i(124107),	-- Cursed Queenfish
-		i(146963, {["timeline"] = {ADDED_7_3_0}}),	-- Desecrated Seaweed
+		i(146963, {timeline = {ADDED_7_3_0}}),	-- Desecrated Seaweed
 		i(138448),	-- Emblem of Margoss
-		i(146848, {["timeline"] = {ADDED_7_3_0}}),	-- Fragmented Enchantment
+		i(146848, {timeline = {ADDED_7_3_0}}),	-- Fragmented Enchantment
 		i(133727),	-- Ghostly Queenfish
-		i(146962, {["timeline"] = {ADDED_7_3_0}}),	-- Golden Minnow
+		i(146962, {timeline = {ADDED_7_3_0}}),	-- Golden Minnow
 		i(133735),	-- Graybelly Lobster
 		i(124109),	-- Highmountain Salmon
-		i(143748, {["timeline"] = {ADDED_7_1_0}}),	-- Leyscale Koi
+		i(143748, {timeline = {ADDED_7_1_0}}),	-- Leyscale Koi
 		i(133725),	-- Leyshimmer Blenny
 		i(133887, {	-- Luminous Pearl
-			["description"] = "Pre-requisites:\n\n  Be level 45.\n  Have level 100 Legion Fishing.\n  Complete the achievement 'Bigger Fish to Fry'.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for this item.",
-			["lvl"] = { 45 },
+			description = "Pre-requisites:\n\n  Be level 45.\n  Have level 100 Legion Fishing.\n  Complete the achievement 'Bigger Fish to Fry'.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for this item.",
+			lvl = { 45 },
 		}),
 		i(133737),	-- Magic-Eater Frog
 		i(124108),	-- Mossgill Perch
 		i(133731),	-- Mountain Puffer
 		i(133726),	-- Nar'thalas Hermit
 		i(133734),	-- Oodelfjisk
-		i(152912, { ["timeline"] = { ADDED_7_3_0 } }),	-- Pond Nettle (MOUNT!)
+		i(152912, { timeline = { ADDED_7_3_0 } }),	-- Pond Nettle (MOUNT!)
 		i(124111),	-- Runescale Koi
 		i(133741),	-- Seabottom Squid
 		i(133738),	-- Seerspine Puffer
-		i(146961, {["timeline"] = {ADDED_7_3_0}}),	-- Shiny Bauble
+		i(146961, {timeline = {ADDED_7_3_0}}),	-- Shiny Bauble
 		i(133607),	-- Silver Mackerel
 		i(124110),	-- Stormray
 		i(133739),	-- Tainted Runescale Koi
@@ -524,34 +524,34 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(133736),	-- Thundering Stormray
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "Can be fished from schools.",
+				description = "Can be fished from schools.",
 			}),
 		}),
 	}),
 	prof(HERBALISM, {
 		n(DISCOVERY, {
 			r(195114, {	-- Herb Gathering (Legion)
-				["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
-				["collectible"] = false,
+				timeline = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+				collectible = false,
 			}),
 			r(193290),	-- Herbalism Journal
-			applyclassicphase(BFA_PHASE_ONE, r(265834, {["timeline"] = {ADDED_8_0_1}})),	-- Herb Gathering (Legion)
+			applyclassicphase(BFA_PHASE_ONE, r(265834, {timeline = {ADDED_8_0_1}})),	-- Herb Gathering (Legion)
 		}),
 		header(HEADERS.Spell, 2366, {	-- Herb Gathering
-			i(151857, {["timeline"] = {ADDED_7_3_0}}),	-- Adolescent Astral Glory
+			i(151857, {timeline = {ADDED_7_3_0}}),	-- Adolescent Astral Glory
 			i(124101),	-- Aethril
 			i(129117),	-- Aethril Sample
 			i(129284),	-- Aethril Seed
-			i(151565, {["timeline"] = {ADDED_7_3_0}}),	-- Astral Glory
-			i(151858, {["timeline"] = {ADDED_7_3_0}}),	-- Astral Glory Root Cluster
+			i(151565, {timeline = {ADDED_7_3_0}}),	-- Astral Glory
+			i(151858, {timeline = {ADDED_7_3_0}}),	-- Astral Glory Root Cluster
 			i(129141),	-- Blight-Choked Herb
 			i(129136),	-- Blight-Twisted Herb
 			i(124102),	-- Dreamleaf
 			i(129118),	-- Dreamleaf Sample
 			i(129285),	-- Dreamleaf Seed
 			i(153045, {	-- Fel Lasher (PET!)
-				["description"] = "This can be looted from any herb on Argus.",
-				["timeline"] = { ADDED_7_3_0 }
+				description = "This can be looted from any herb on Argus.",
+				timeline = { ADDED_7_3_0 }
 			}),
 			i(124106),	-- Felwort
 			i(129122),	-- Felwort Sample
@@ -572,35 +572,35 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(129288),	-- Starlight Rose Seed
 			i(129158),	-- Starlight Rosedust
 			i(129121),	-- Starlight Rosedust
-			i(151856, {["timeline"] = {ADDED_7_3_0}}),	-- Withered Astral Glory
+			i(151856, {timeline = {ADDED_7_3_0}}),	-- Withered Astral Glory
 		}),
 	}),
 	prof(INSCRIPTION, {
 		filter(GLYPHS, {
 			i(140630),	-- Mark of the Doe (CI!)
 			i(129021),	-- Mark of the Sentinel (CI!)
-			i(187933, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Duskwing Raven (CI!)
+			i(187933, {timeline = {ADDED_9_1_5}}),	-- Mark of the Duskwing Raven (CI!)
 			i(139314, {	-- Grimoire of the Abyssal (CI!)
-				["timeline"] = { ADDED_10_1_5 },
+				timeline = { ADDED_10_1_5 },
 			}),
 			i(129018),	-- Grimoire of the Fel Imp (CI!)
 			i(139312, {	-- Grimoire of the Observer (CI!)
-				["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },
+				timeline = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },
 			}),
 			i(147119, {	-- Grimoire of the Shadow Succubus (CI!)
-				["timeline"] = { ADDED_10_1_5 },
+				timeline = { ADDED_10_1_5 },
 			}),
 			i(139310),	-- Grimoire of the Shivarra (CI!)
 			i(139311),	-- Grimoire of the Voidlord (CI!)
 			i(139315, {	-- Grimoire of the Wrathguard (CI!)
-				["timeline"] = { ADDED_7_2_0 },
+				timeline = { ADDED_7_2_0 },
 			}),
 			i(139339),	-- Glyph of Yu'lon's Grace (CI!)
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(247916),	-- Covered Square Suramar Table (DECOR!)
 			i(258224),	-- Dalaran Display Shelves (DECOR!)
-			i(282132, { ["timeline"] = { ADDED_12_1_5 } }),	-- Eredath Artisan's Workbench (DECOR!)
+			i(282132, { timeline = { ADDED_12_1_5 } }),	-- Eredath Artisan's Workbench (DECOR!)
 			i(247918),	-- Nightborne Jeweler's Table (DECOR!)
 			i(245396),	-- Suramar Dresser (DECOR!)
 			i(247925),	-- Suramar Storage Crate (DECOR!)
@@ -637,45 +637,45 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		}),
 	}),
 	prof(FISHING, bubbleDown({
-		["requireSkill"] = FISHING,
+		requireSkill = FISHING,
 	},{
 		spell(201943, {	-- Better Luck Next Time
-			["maps"] = { AZSUNA, BROKEN_SHORE, EYE_OF_AZSHARA, HIGHMOUNTAIN, STORMHEIM, SURAMAR, VALSHARAH },
-			["groups"] = {
+			maps = { AZSUNA, BROKEN_SHORE, EYE_OF_AZSHARA, HIGHMOUNTAIN, STORMHEIM, SURAMAR, VALSHARAH },
+			groups = {
 				i(142528),	-- Crate of Bobbers: Can of Worms (TOY!)
 				i(142529),	-- Crate of Bobbers: Cat Head (TOY!)
 				i(142530),	-- Crate of Bobbers: Tugboat (TOY!)
 				i(143662),	-- Crate of Bobbers: Wooden Pepe (TOY!)
 				i(139408, {	-- Deck Sandals
-					["bonusID"] = 1812,
+					bonusID = 1812,
 				}),
 				i(139407, {	-- Diver's Chain Boots
-					["bonusID"] = 1812,
+					bonusID = 1812,
 				}),
 				i(139405, {	-- Kul'Tiras Marine Issue Boots
-					["bonusID"] = 1812,
+					bonusID = 1812,
 				}),
 				i(139406, {	-- Sea Dog Boots
-					["bonusID"] = 1812,
+					bonusID = 1812,
 				}),
 			},
 		}),
 	})),
 	prof(JEWELCRAFTING, {
 		header(HEADERS.Spell, 31252, {	-- Prospecting
-			i(151718, {["timeline"] = {ADDED_7_3_0}}),	-- Argulite
+			i(151718, {timeline = {ADDED_7_3_0}}),	-- Argulite
 			i(130174),	-- Azsunite
 			i(130175),	-- Chaotic Spinel
-			i(151720, {["timeline"] = {ADDED_7_3_0}}),	-- Chemirine
+			i(151720, {timeline = {ADDED_7_3_0}}),	-- Chemirine
 			i(130180),	-- Dawnlight
 			i(130173),	-- Deep Amber
 			i(130179),	-- Eye of Prophecy
-			i(151722, {["timeline"] = {ADDED_7_3_0}}),	-- Florid Malachite
+			i(151722, {timeline = {ADDED_7_3_0}}),	-- Florid Malachite
 			i(130178),	-- Furystone
 			i(129100),	-- Gem Chip
-			i(151721, {["timeline"] = {ADDED_7_3_0}}),	-- Hesselian
-			i(151579, {["timeline"] = {ADDED_7_3_0}}),	-- Labradorite
-			i(151719, {["timeline"] = {ADDED_7_3_0}}),	-- Lightsphene
+			i(151721, {timeline = {ADDED_7_3_0}}),	-- Hesselian
+			i(151579, {timeline = {ADDED_7_3_0}}),	-- Labradorite
+			i(151719, {timeline = {ADDED_7_3_0}}),	-- Lightsphene
 			i(130182),	-- Maelstrom Sapphire
 			i(130181),	-- Pandemonite
 			i(130177),	-- Queen's Opal
@@ -688,12 +688,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(141312),	-- Design: Mass Prospect Felslate
 		}),
 		n(ARMOR, {
-			i(151587, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrial Cosmic Crown
-			i(151588, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrial Deep Crown
-			i(151589, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrial Elemental Crown
-			i(151590, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrial Titan Crown
+			i(151587, {timeline = {ADDED_7_3_0}}),	-- Empyrial Cosmic Crown
+			i(151588, {timeline = {ADDED_7_3_0}}),	-- Empyrial Deep Crown
+			i(151589, {timeline = {ADDED_7_3_0}}),	-- Empyrial Elemental Crown
+			i(151590, {timeline = {ADDED_7_3_0}}),	-- Empyrial Titan Crown
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(245557),	-- Shaded Suramar Window (DECOR!)
 			i(258227),	-- Suramar Jeweler's Assortment (DECOR!)
 		})),
@@ -709,18 +709,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		}),
 		filter(GEMS, {
 			i(130215),	-- Deadly Deep Amber
-			i(151580, {["timeline"] = {ADDED_7_3_0}}),	-- Deadly Deep Chemirine
+			i(151580, {timeline = {ADDED_7_3_0}}),	-- Deadly Deep Chemirine
 			i(130219),	-- Deadly Eye of Prophecy
-			i(151584, {["timeline"] = {ADDED_7_3_0}}),	-- Masterful Argulite
+			i(151584, {timeline = {ADDED_7_3_0}}),	-- Masterful Argulite
 			i(130218),	-- Masterful Queen's Opal
 			i(130222),	-- Masterful Shadowruby
 			i(130216),	-- Quick Azsunite
 			i(130220),	-- Quick Dawnlight
-			i(151583, {["timeline"] = {ADDED_7_3_0}}),	-- Quick Lightsphene
+			i(151583, {timeline = {ADDED_7_3_0}}),	-- Quick Lightsphene
 			i(130247),	-- Saber's Eye of Agility
 			i(130248),	-- Saber's Eye of Intellect
 			i(130246),	-- Saber's Eye of Strength
-			i(151585, {["timeline"] = {ADDED_7_3_0}}),	-- Versatile Labradorite
+			i(151585, {timeline = {ADDED_7_3_0}}),	-- Versatile Labradorite
 			i(130221),	-- Versatile Maelstrom Sapphire
 			i(130217),	-- Versatile Skystone
 		}),
@@ -764,8 +764,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 				i(128887),	-- Dreadleather Mask
 				i(128888),	-- Dreadleather Pants
 				i(128889),	-- Dreadleather Shoulderguard
-				i(151577, {["timeline"] = {ADDED_7_3_0}}),	-- Fiendish Shoulderguards
-				i(146669, {["timeline"] = {ADDED_7_2_0}}),	-- The Sentinel's Eternal Refuge
+				i(151577, {timeline = {ADDED_7_3_0}}),	-- Fiendish Shoulderguards
+				i(146669, {timeline = {ADDED_7_2_0}}),	-- The Sentinel's Eternal Refuge
 				i(128882),	-- Warhide Belt
 				i(128883),	-- Warhide Bindings
 				i(128877),	-- Warhide Footpads
@@ -792,17 +792,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 				i(128905),	-- Gravenscale Spaulders
 				i(128901),	-- Gravenscale Treads
 				i(128903),	-- Gravenscale Warhelm
-				i(151578, {["timeline"] = {ADDED_7_3_0}}),	-- Fiendish Spaulders
-				i(146668, {["timeline"] = {ADDED_7_2_0}}),	-- Vigilance Perch
+				i(151578, {timeline = {ADDED_7_3_0}}),	-- Fiendish Spaulders
+				i(146668, {timeline = {ADDED_7_2_0}}),	-- Vigilance Perch
 			}),
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(257400),	-- Highmountain Tanner's Frame (DECOR!)
 			i(245407),	-- Tauren Fencepost (DECOR!)
 			i(245406),	-- Tauren Leather Fence (DECOR!)
 		})),
 		filter(MISC, {
-			i(142406, {["timeline"] = {ADDED_7_1_0}}),	-- Drums of the Mountain
+			i(142406, {timeline = {ADDED_7_1_0}}),	-- Drums of the Mountain
 			i(131746),	-- Stonehide Leather Barding
 		}),
 		filter(MOUNTS, {
@@ -818,21 +818,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 	prof(MINING, {
 		n(DISCOVERY, {
 			r(195122, {	-- Mining (Legion)
-				["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
-				["collectible"] = false,
+				timeline = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+				collectible = false,
 			}),
 			r(2656),	-- Mining Journal / Smelting
-			applyclassicphase(BFA_PHASE_ONE, r(265849, {["timeline"] = {ADDED_8_0_1}})),	-- Mining (Legion)
+			applyclassicphase(BFA_PHASE_ONE, r(265849, {timeline = {ADDED_8_0_1}})),	-- Mining (Legion)
 		}),
 		header(HEADERS.Spell, 2575, {	-- Mining
 			i(124493),	-- Battered Mining Pick
 			i(124494),	-- Chunk of Horn
-			i(151864, {["timeline"] = {ADDED_7_3_0}}),	-- Embedded Empyrium Ore
-			i(151564, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrium
-			i(151865, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrium Bits
-			i(151860, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrium Deposit Chunk
-			i(151861, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrium Dust
-			i(151863, {["timeline"] = {ADDED_7_3_0}}),	-- Empyrium Seam Chunk
+			i(151864, {timeline = {ADDED_7_3_0}}),	-- Embedded Empyrium Ore
+			i(151564, {timeline = {ADDED_7_3_0}}),	-- Empyrium
+			i(151865, {timeline = {ADDED_7_3_0}}),	-- Empyrium Bits
+			i(151860, {timeline = {ADDED_7_3_0}}),	-- Empyrium Deposit Chunk
+			i(151861, {timeline = {ADDED_7_3_0}}),	-- Empyrium Dust
+			i(151863, {timeline = {ADDED_7_3_0}}),	-- Empyrium Seam Chunk
 			i(123919),	-- Felslate
 			i(124496),	-- Felslate Deposit Sample
 			i(124497),	-- Felslate Seam Sample
@@ -847,35 +847,35 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(124501),	-- Ore-Choked Heart
 			i(124500),	-- Severed Arm
 			i(124492),	-- Torn Journal Page
-			i(151862, {["timeline"] = {ADDED_7_3_0}}),	-- Unusable Empyrium Core
+			i(151862, {timeline = {ADDED_7_3_0}}),	-- Unusable Empyrium Core
 			-- Not Ore --
 			--[[	No need to list Tradegoods w/ many other sources
-			i(151718, {["timeline"] = {ADDED_7_3_0}}),	-- Argulite
-			i(151720, {["timeline"] = {ADDED_7_3_0}}),	-- Chemirine
-			i(151722, {["timeline"] = {ADDED_7_3_0}}),	-- Florid Malachite
-			i(151721, {["timeline"] = {ADDED_7_3_0}}),	-- Hesselian
-			i(151579, {["timeline"] = {ADDED_7_3_0}}),	-- Labradorite
-			i(151719, {["timeline"] = {ADDED_7_3_0}}),	-- Lightsphene
+			i(151718, {timeline = {ADDED_7_3_0}}),	-- Argulite
+			i(151720, {timeline = {ADDED_7_3_0}}),	-- Chemirine
+			i(151722, {timeline = {ADDED_7_3_0}}),	-- Florid Malachite
+			i(151721, {timeline = {ADDED_7_3_0}}),	-- Hesselian
+			i(151579, {timeline = {ADDED_7_3_0}}),	-- Labradorite
+			i(151719, {timeline = {ADDED_7_3_0}}),	-- Lightsphene
 			--]]
 		}),
 	}),
 	prof(SKINNING, {
 		filter(BATTLE_PETS, {
 			i(153057, {	-- Fossorial Bile Larva (PET!)
-				["description"] = "This can be obtained from any skinnable Argus mob.",
-				["timeline"] = { ADDED_7_3_0 },
+				description = "This can be obtained from any skinnable Argus mob.",
+				timeline = { ADDED_7_3_0 },
 			}),
 		}),
 		n(DISCOVERY, {
 			r(195125, {	-- Skinning (Legion)
-				["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
-				["collectible"] = false,
+				timeline = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+				collectible = false,
 			}),
 			r(194174),	-- Skinning Journal
-			applyclassicphase(BFA_PHASE_ONE, r(265867, {["timeline"] = {ADDED_8_0_1}})),	-- Skinning (Legion)
+			applyclassicphase(BFA_PHASE_ONE, r(265867, {timeline = {ADDED_8_0_1}})),	-- Skinning (Legion)
 		}),
 		header(HEADERS.Spell, 8613, {	-- Skinning
-			i(151566, {["timeline"] = {ADDED_7_3_0}}),	-- Fiendish Leather
+			i(151566, {timeline = {ADDED_7_3_0}}),	-- Fiendish Leather
 			i(124115),	-- Stormscale
 			i(124113),	-- Stonehide Leather
 		}),
@@ -885,7 +885,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 	}),
 	prof(TAILORING, {
 		n(ARMOR, {
-			i(146666, {["timeline"] = {ADDED_7_2_0}}),	-- Celumbra, the Night's Dichotomy
+			i(146666, {timeline = {ADDED_7_2_0}}),	-- Celumbra, the Night's Dichotomy
 			i(127002),	-- Imbued Silkweave Bracers
 			i(127001),	-- Imbued Silkweave Cinch
 			i(127019),	-- Imbued Silkweave Cover
@@ -898,7 +898,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(126995),	-- Imbued Silkweave Robe
 			i(127033),	-- Imbued Silkweave Shade
 			i(126996),	-- Imbued Silkweave Slippers
-			i(151571, {["timeline"] = {ADDED_7_3_0}}),	-- Lightweave Breeches
+			i(151571, {timeline = {ADDED_7_3_0}}),	-- Lightweave Breeches
 			i(126994),	-- Silkweave Bracers
 			i(126993),	-- Silkweave Cinch
 			i(127016),	-- Silkweave Cover
@@ -913,13 +913,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(127031),	-- Silkweave Shade
 		}),
 		filter(BAGS, {
-			i(142075, {["timeline"] = {ADDED_7_1_0}}),	-- Imbued Silkweave Bag
+			i(142075, {timeline = {ADDED_7_1_0}}),	-- Imbued Silkweave Bag
 			i(127035),	-- Silkweave Satchel
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(258557),	-- Beloved Raptor Plushie (DECOR!)
 			i(247920),	-- Circular Shal'dorei Rug (DECOR!)
-			i(282158, { ["timeline"] = { ADDED_12_1_5 } }),	-- Decorative Lightweave Bolt (DECOR!)
+			i(282158, { timeline = { ADDED_12_1_5 } }),	-- Decorative Lightweave Bolt (DECOR!)
 			i(248010),	-- Shal'dorei Open-Air Tent (DECOR!)
 		})),
 		filter(MISC, {

@@ -4,13 +4,13 @@
 
 -- #if ANYCLASSIC
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_THREE, {
-	n(DEFENSE_PROTOCOL_BETA, bubbleDownSelf({ ["timeline"] = { ADDED_3_4_2 } }, {
-		["lvl"] = 80,
-		["groups"] = {
+	n(DEFENSE_PROTOCOL_BETA, bubbleDownSelf({ timeline = { ADDED_3_4_2 } }, {
+		lvl = 80,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(18614, {	-- Defense Protocol Beta: Terminated (A)
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						18593,	-- Defense Protocol Beta: Ahn'kahet: The Old Kingdom
 						18592,	-- Defense Protocol Beta: Azjol-Nerub
 						18594,	-- Defense Protocol Beta: Drak'Tharon Keep
@@ -25,11 +25,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						18590,	-- Defense Protocol Beta: Utgarde Keep
 						18600,	-- Defense Protocol Beta: Utgarde Pinnacle
 					}},
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(18688, {	-- Defense Protocol Beta: Terminated (H)
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						18593,	-- Defense Protocol Beta: Ahn'kahet: The Old Kingdom
 						18592,	-- Defense Protocol Beta: Azjol-Nerub
 						18594,	-- Defense Protocol Beta: Drak'Tharon Keep
@@ -44,11 +44,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						18590,	-- Defense Protocol Beta: Utgarde Keep
 						18600,	-- Defense Protocol Beta: Utgarde Pinnacle
 					}},
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
+				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
 					412991, 424196,	-- Arcane Rune Buffs
 					413169, 424203,	-- Blood Rune Buffs
 					412770, 424194,	-- Frost Rune Buffs
@@ -57,8 +57,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					412470, 424201,	-- Shadow Rune Buffs
 					413078, 424205	-- Titan Rune Buffs
 				),
-				["description"] = "Defeating the final boss encounter on Defense Protocol Beta will reward 1 Sidereal Essence and can also drop T8 tokens.",
-				["maps"] = {
+				description = "Defeating the final boss encounter on Defense Protocol Beta will reward 1 Sidereal Essence and can also drop T8 tokens.",
+				maps = {
 					AHNKAHET_THE_OLD_KINGDOM,
 					AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3,
 					DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2,
@@ -73,7 +73,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3,
 					UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2,
 				},
-				["crs"] = {
+				crs = {
 					29311,	-- Herald Volazj [Ahn'kahet: The Old Kingdom]
 					29120,	-- Anub'arak [Azjol-Nerub]
 					26632,	-- The Prophet Tharon'ja [Drak'Tharon Keep]
@@ -88,7 +88,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					23954,	-- Ingvar the Plunderer [Utgarde Keep]
 					26861,	-- King Ymiron [Utgarde Pinnacle]
 				},
-				["groups"] = {
+				groups = {
 					currency(SIDEREAL_ESSENCE),
 					i(45647),	-- Helm of the Wayward Conqueror
 					i(45648),	-- Helm of the Wayward Protector
@@ -109,13 +109,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 			}),
 			n(VENDORS, {
 				n(207128, {	-- Animated Constellation <Sidereal Essence Exchange>
-					["aqd"] = {
-						["coord"] = { 38.0, 56.6, NORTHREND_DALARAN },
+					aqd = {
+						coord = { 38.0, 56.6, NORTHREND_DALARAN },
 					},
-					["hqd"] = {
-						["coord"] = { 66.4, 24.6, NORTHREND_DALARAN },
+					hqd = {
+						coord = { 66.4, 24.6, NORTHREND_DALARAN },
 					},
-					["groups"] = {
+					groups = {
 						siderealessence(3, i(47556)),	-- Crusader Orb
 						siderealessence(38, i(45868)),	-- Aesir's Edge
 						siderealessence(38, i(46035)),	-- Aesuga, Hand of the Ardent Champion
@@ -174,7 +174,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						siderealessence(25, i(45449)),	-- The Masticator
 						siderealessence(38, i(46033)),	-- Tortured Earth
 						siderealessence(15, i(45296, {	-- Twirling Blades
-							["timeline"] = { ADDED_3_4_2, REMOVED_5_0_4 },
+							timeline = { ADDED_3_4_2, REMOVED_5_0_4 },
 						})),
 						siderealessence(25, i(46036)),	-- Void Sabre
 						siderealessence(15, i(45447)),	-- Watchful Eye of Fate

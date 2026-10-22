@@ -5,7 +5,7 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(COMMON_VENDOR_ITEMS, {
 		i(160484, {	-- "Aurora Borealis"
-			["crs"] = {
+			crs = {
 				138221,	-- "Nasty" Buck
 				142188,	-- Allison Weber
 				126600,	-- Arthur Seville
@@ -13,7 +13,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				137411,	-- Joseph Stephens
 				138905,	-- Rusty Blade Waitress
 			},
-			["coords"] = {
+			coords = {
 				{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
 				{ 74.25, 17.76, BORALUS },	-- Allison Weber
 				{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
@@ -23,14 +23,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(163103, {	-- Admiralty-Issued Grog
-			["crs"] = {
+			crs = {
 				134729,	-- Crimper Mirjam
 				143246,	-- Garrett Elmendorf
 				137040,	-- Linda Deepwater
 				129044,	-- Martha Mae
 				142189,	-- Ruddy the Rat
 			},
-			["coords"] = {
+			coords = {
 				{ 54.99, 43.63, BORALUS },	-- Crimper Mirjam
 				{ 75.44, 18.61, BORALUS },	-- Garrett Elmendorf
 				{ 75.37, 14.48, BORALUS },	-- Harold Atkey
@@ -40,15 +40,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(163639, {	-- Arathor Single Cask
-			["crs"] = {
+			crs = {
 				143487,	-- Nicolas Moal
 			},
-			["coords"] = {
+			coords = {
 				{ 58.17, 70.32, BORALUS },	-- Nicolas Moal
 			},
 		}),
 		i(159850, {	-- Bitter Darkroot Vodka
-			["crs"] = {
+			crs = {
 				142188,	-- Allison Weber
 				126600,	-- Arthur Seville
 				144115,	-- Diana Seafinch
@@ -59,7 +59,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				129044,	-- Martha Mae
 				135153,	-- Wesley Rockhold
 			},
-			["coords"] = {
+			coords = {
 				{ 74.25, 17.76, BORALUS },	-- Allison Weber
 				{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
 				{ 66.28, 61.58, BORALUS },	-- Diana Seafinch
@@ -72,7 +72,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(159848, {	-- Blacktooth Bloodwine
-			["crs"] = {
+			crs = {
 				142188,	-- Allison Weber
 				126600,	-- Arthur Seville
 				139638,	-- Barkeep Cotner
@@ -83,7 +83,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				137040,	-- Linda Deepwater
 				129044,	-- Martha Mae
 			},
-			["coords"] = {
+			coords = {
 				{ 74.25, 17.76, BORALUS },	-- Allison Weber
 				{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
 				{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
@@ -96,7 +96,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(159845, {	-- Brennadam Apple Brandy
-			["crs"] = {
+			crs = {
 				138221,	-- "Nasty" Buck
 				142188,	-- Allison Weber
 				126600,	-- Arthur Seville
@@ -105,7 +105,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				138905,	-- Rusty Blade Waitress
 				136459,	-- Terry Rigglesmith
 			},
-			["coords"] = {
+			coords = {
 				{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
 				{ 74.25, 17.76, BORALUS },	-- Allison Weber
 				{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
@@ -117,21 +117,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(163638, {	-- Corlain Estate 12 Year
-			["crs"] = {
+			crs = {
 				143487,	-- Nicolas Moal
 			},
-			["coords"] = {
+			coords = {
 				{ 58.17, 70.32, BORALUS },	-- Nicolas Moal
 			},
 		}),
 		i(163522, {	-- Dark and Stormy
-			["crs"] = {
+			crs = {
 				137411,	-- Joseph Stephens
 				129376,	-- Lenne
 				141853,	-- Rebecca Barnes
 				138905,	-- Rusty Blade Waitress
 			},
-			["coords"] = {
+			coords = {
 				{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
 				{ 47.04, 91.55, DAZARALOR },	-- Lenne
 				{ 41.22, 50.21, STORMSONG_VALLEY },	-- Rebecca Barnes
@@ -139,7 +139,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(163019, {	-- Drop Anchor Dunkel
-			["crs"] = {
+			crs = {
 				142764,	-- "Fairplay" JJ
 				142760,	-- Barserver Aspen
 				142767,	-- Barserver Donlyuk
@@ -156,7 +156,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				135153,	-- Wesley Rockhold
 				131781,	-- Zuaba Sonja
 			},
-			["coords"] = {
+			coords = {
 				{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
 				{ 54.71, 16.29, BORALUS },	-- Barserver Aspen
 				{ 54.41, 16.43, BORALUS },	-- Barserver Donlyuk
@@ -175,15 +175,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(158927, {	-- Foaming Turtle Broth
-			["crs"] = {
+			crs = {
 				135600,	-- Emma Haribull
 			},
-			["coords"] = {
+			coords = {
 				{ 44.47, 54.21, STORMSONG_VALLEY },	-- Emma Haribull
 			},
 		}),
 		i(162026, {	-- Hook Point Porter
-			["crs"] = {
+			crs = {
 				142764,	-- "Fairplay" JJ
 				142760,	-- Barserver Aspen
 				142767,	-- Barserver Donlyuk
@@ -201,7 +201,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				143244,	-- Victor Esquivias
 				135153,	-- Wesley Rockhold
 			},
-			["coords"] = {
+			coords = {
 				{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
 				{ 54.71, 16.29, BORALUS },	-- Barserver Aspen
 				{ 54.41, 16.43, BORALUS },	-- Barserver Donlyuk
@@ -221,7 +221,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(159849, {	-- Hook Point Schnapps
-			["crs"] = {
+			crs = {
 				142188,	-- Allison Weber
 				126600,	-- Arthur Seville
 				139113,	-- Bored Barkeep
@@ -233,7 +233,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				143244,	-- Victor Esquivias
 				135153,	-- Wesley Rockhold
 			},
-			["coords"] = {
+			coords = {
 				{ 74.25, 17.76, BORALUS },	-- Allison Weber
 				{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville / Sarella Griffin
 				{ 53.99, 75.22, BORALUS },	-- Bored Barkeep
@@ -246,7 +246,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(163548, {	-- Kul Tiran Tripel
-			["crs"] = {
+			crs = {
 				139638,	-- Barkeep Cotner
 				139113,	-- Bored Barkeep
 				123639,	-- Harold Atkey
@@ -254,7 +254,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				126601,	-- Sarella Griffin
 				143244,	-- Victor Esquivias
 			},
-			["coords"] = {
+			coords = {
 				{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
 				{ 53.99, 75.22, BORALUS },	-- Bored Barkeep
 				{ 75.37, 14.48, BORALUS },	-- Harold Atkey
@@ -264,17 +264,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(161153, {	-- Long Forgotten Rum
-			-- ["provider"] = { "n", 140055 },	-- First Mate Grogtok	-- Why is this here...
-			["crs"] = {
+			-- provider = { "n", 140055 },	-- First Mate Grogtok	-- Why is this here...
+			crs = {
 				137040,	-- Linda Deepwater
 			},
-			["coords"] = {
+			coords = {
 				{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
 				{ 49.07, 57.22, STORMSONG_VALLEY },	-- Long Forgotten Rum
 			},
 		}),
 		i(159847, {	-- Mildenhall Mead
-			["crs"] = {
+			crs = {
 				138221,	-- "Nasty" Buck
 				126600,	-- Arthur Seville
 				133214,	-- Dandy Jones
@@ -289,7 +289,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				138905,	-- Rusty Blade Waitress
 				136465,	-- Tom Fishbury
 			},
-			["coords"] = {
+			coords = {
 				{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
 				{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
 				{ 66.27, 24.29, TIRAGARDE_SOUND },	-- Dandy Jones
@@ -306,7 +306,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(162560, {	-- Patina Pale Ale
-			["crs"] = {
+			crs = {
 				142764,	-- "Fairplay" JJ
 				142760,	-- Barserver Aspen
 				142767,	-- Barserver Donlyuk
@@ -318,7 +318,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				142759,	-- Monica Winters
 				142189,	-- Ruddy the Rat
 			},
-			["coords"] = {
+			coords = {
 				{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
 				{ 54.71, 16.29, BORALUS },	-- Barserver Aspen
 				{ 54.41, 16.43, BORALUS },	-- Barserver Donlyuk
@@ -331,7 +331,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(163018, {	-- Pontoon Pilsner
-			["crs"] = {
+			crs = {
 				142764,	-- "Fairplay" JJ
 				142760,	-- Barserver Aspen
 				142767,	-- Barserver Donlyuk
@@ -346,7 +346,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				143244,	-- Victor Esquivias
 				131781,	-- Zuaba Sonja
 			},
-			["coords"] = {
+			coords = {
 				{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
 				{ 54.71, 16.29, BORALUS },	-- Barserver Aspen
 				{ 54.41, 16.43, BORALUS },	-- Barserver Donlyuk
@@ -362,15 +362,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(163651, {	-- Sausage Martini
-			["crs"] = {
+			crs = {
 				139638,	-- Barkeep Cotner
 			},
-			["coords"] = {
+			coords = {
 				{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
 			},
 		}),
 		i(163094, {	-- Snowberry Berliner
-			["crs"] = {
+			crs = {
 				142764,	-- "Fairplay" JJ
 				139638,	-- Barkeep Cotner
 				142760,	-- Barserver Aspen
@@ -382,7 +382,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				142759,	-- Monica Winters
 				142189,	-- Ruddy the Rat
 			},
-			["coords"] = {
+			coords = {
 				{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
 				{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
 				{ 54.71, 16.29, BORALUS },	-- Barserver Aspen
@@ -396,20 +396,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(163549, {	-- Thornspeaker Moonshine
-			["crs"] = {
+			crs = {
 				142188,	-- Allison Weber
 				148048,	-- Brigade Member
 				137411,	-- Joseph Stephens
 				137040,	-- Linda Deepwater
 			},
-			["coords"] = {
+			coords = {
 				{ 74.25, 17.76, BORALUS },	-- Allison Weber
 				{ 47.61, 47.36, BORALUS },	-- Joespeh Stephens
 				{ 21.51, 43.59, DRUSTVAR },	-- Linda Deepwater
 			},
 		}),
 		i(163098, {	-- Tradewinds Kolsch
-			["crs"] = {
+			crs = {
 				142764,	-- "Fairplay" JJ
 				142760,	-- Barserver Aspen
 				142767,	-- Barserver Donlyuk
@@ -422,7 +422,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				126601,	-- Sarella Griffin
 				143244,	-- Victor Esquivias
 			},
-			["coords"] = {
+			coords = {
 				{ 53.09, 16.67, BORALUS },	-- "Fairplay" JJ
 				{ 54.71, 16.29, BORALUS },	-- Barserver Aspen
 				{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner
@@ -438,7 +438,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		}),
 		i(159846, {	-- Whitegrove Pale Ale
-			["crs"] = {
+			crs = {
 				138221,	-- "Nasty" Buck
 				126600,	-- Arthur Seville
 				139638,	-- Barkeep Cotner
@@ -454,7 +454,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				142189,	-- Ruddy the Rat
 				135153,	-- Wesley Rockhold
 			},
-			["coords"] = {
+			coords = {
 				{ 58.58, 70.31, STORMSONG_VALLEY },	-- "Nasty" Buck
 				{ 49.73, 25.22, TIRAGARDE_SOUND },	-- Arthur Seville
 				{ 21.04, 66.14, DRUSTVAR },	-- Barkeep Cotner

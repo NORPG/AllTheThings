@@ -2,147 +2,147 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_3_2_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_THREE, bubbleDown({ timeline = { ADDED_3_2_0 } }, {
 	inst(757, {	-- Trial of the Crusader
-		["mapID"] = TRIAL_OF_THE_CRUSADER,
-		["coord"] = { 75.0, 21.8, ICECROWN },	-- Trial of the Crusader (Argent Tournament Grounds)
-		["maps"] = { 173 },
+		mapID = TRIAL_OF_THE_CRUSADER,
+		coord = { 75.0, 21.8, ICECROWN },	-- Trial of the Crusader (Argent Tournament Grounds)
+		maps = { 173 },
 		-- #if AFTER CATA
-		["sharedLockout"] = 1,
+		sharedLockout = 1,
 		-- #endif
-		["isRaid"] = true,
-		["lvl"] = 80,
-		["groups"] = {
+		isRaid = true,
+		lvl = 80,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(3917, {	-- Call of the Crusade (10 player)
 					crit(13326, {	-- Northrend Beasts
-						["_encounter"] = { 1618, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+						_encounter = { 1618, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					crit(13327, {	-- Lord Jaraxxus
-						["_encounter"] = { 1619, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+						_encounter = { 1619, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- Blizzaaaaard why do you waste my time like this?
 					crit(13328, {	-- Champions of the Alliance
-						["_encounter"] = { 1620, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+						_encounter = { 1620, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					crit(13328, {	-- Champions of the Horde
-						["_encounter"] = { 1621, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+						_encounter = { 1621, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					crit(13329, {	-- Twin Val'kyr
-						["_encounter"] = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+						_encounter = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					crit(13308, {	-- Anub'arak
-						["_encounter"] = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+						_encounter = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					-- #else
 					crit(12236, {	-- Champions of the Alliance
-						["_encounter"] = { 1620, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+						_encounter = { 1620, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					crit(12236, {	-- Champions of the Horde
-						["_encounter"] = { 1621, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+						_encounter = { 1621, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					crit(12240, {	-- Twin Val'kyr
-						["_encounter"] = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+						_encounter = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					crit(12244, {	-- Anub'arak
-						["_encounter"] = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+						_encounter = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 					}),
 					-- #endif
 				}),
 				ach(3918, {	-- Call of the Grand Crusade (10 player)
 					crit(12229, {	-- Northrend Beasts
-						["_encounter"] = { 1618, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+						_encounter = { 1618, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 					}),
 					crit(12233, {	-- Lord Jaraxxus
-						["_encounter"] = { 1619, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+						_encounter = { 1619, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 					}),
 					crit(12237, {	-- Champions of the Alliance
-						["_encounter"] = { 1620, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+						_encounter = { 1620, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 					}),
 					crit(12237, {	-- Champions of the Horde
-						["_encounter"] = { 1621, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+						_encounter = { 1621, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 					}),
 					crit(12241, {	-- Twin Val'kyr
-						["_encounter"] = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+						_encounter = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 					}),
 					crit(12245, {	-- Anub'arak
-						["_encounter"] = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
+						_encounter = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC },
 					}),
 				}),
 				ach(3916, {	-- Call of the Crusade (25 player)
 					-- #if ANYCLASSIC
 					crit(13346, {	-- Northrend Beasts
-						["_encounter"] = { 1618, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+						_encounter = { 1618, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					-- #else
 					crit(12230, {	-- Northrend Beasts
-						["_encounter"] = { 1618, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+						_encounter = { 1618, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					-- #endif
 					crit(13347, {	-- Lord Jaraxxus
-						["_encounter"] = { 1619, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+						_encounter = { 1619, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					crit(13348, {	-- Champions of the Alliance
-						["_encounter"] = { 1620, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+						_encounter = { 1620, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					crit(13348, {	-- Champions of the Horde
-						["_encounter"] = { 1621, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+						_encounter = { 1621, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					crit(13349, {	-- Twin Val'kyr
-						["_encounter"] = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+						_encounter = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					crit(13346, {	-- Anub'arak
-						["_encounter"] = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+						_encounter = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					-- #else
 					crit(12242, {	-- Twin Val'kyr
-						["_encounter"] = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+						_encounter = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					crit(12246, {	-- Anub'arak
-						["_encounter"] = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+						_encounter = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 					}),
 					-- #endif
 				}),
 				ach(3812, {	-- Call of the Grand Crusade (25 player)
 					crit(12231, {	-- Northrend Beasts
-						["_encounter"] = { 1618, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
+						_encounter = { 1618, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 					}),
 					crit(12235, {	-- Lord Jaraxxus
-						["_encounter"] = { 1619, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
+						_encounter = { 1619, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 					}),
 					crit(12239, {	-- Champions of the Alliance
-						["_encounter"] = { 1620, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
+						_encounter = { 1620, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 					}),
 					crit(12239, {	-- Champions of the Horde
-						["_encounter"] = { 1621, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
+						_encounter = { 1621, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 					}),
 					crit(12243, {	-- Twin Val'kyr
-						["_encounter"] = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
+						_encounter = { 1622, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 					}),
 					crit(12247, {	-- Anub'arak
-						["_encounter"] = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
+						_encounter = { 1623, DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC },
 					}),
 				}),
-				ach(11752, {["timeline"] = {ADDED_7_2_0}}),	-- Style of the Crusader (Trial of the Crusader)
+				ach(11752, {timeline = {ADDED_7_2_0}}),	-- Style of the Crusader (Trial of the Crusader)
 				ach(4078, {	-- Realm First! Grand Crusader
-					["timeline"] = { ADDED_3_2_0, REMOVED_3_2_2 },
-					["groups"] = {
+					timeline = { ADDED_3_2_0, REMOVED_3_2_2 },
+					groups = {
 						title(135, {	-- Grand Crusader <Name>
-							["timeline"] = { ADDED_3_2_0, REMOVED_3_2_2 },
+							timeline = { ADDED_3_2_0, REMOVED_3_2_2 },
 						}),
 					},
 				}),
 			}),
 			n(VENDORS, {
 				n(35579, {	-- Aspirant Forudir <Triumphant Armor Vendor>
-					["coord"] = { 75.4, 21.6, ICECROWN },
+					coord = { 75.4, 21.6, ICECROWN },
 					-- #if AFTER LEGION
-					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r",
+					description = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r",
 					-- #endif
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Wrynn's Battlegear (658)
 							-- DPS
@@ -304,12 +304,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				n(35580, {	-- Aspirant Naradiel <Triumphant Armor Vendor>
-					["coord"] = { 75.4, 22.0, ICECROWN },
+					coord = { 75.4, 22.0, ICECROWN },
 					-- #if AFTER LEGION
-					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
+					description = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
 					-- #endif
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Hellscream's Battlegear (657)
 							-- DPS
@@ -470,16 +470,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				n(35576, {	-- Champion Faesrol <Triumphant Armor Vendor>
-					["coord"] = { 75.2, 22.0, ICECROWN },
+					coord = { 75.2, 22.0, ICECROWN },
 					-- #if AFTER LEGION
-					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
+					description = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
 					-- #endif
-					["races"] = HORDE_ONLY,
-					["groups"] = bubbleDown({ ["timeline"] = { ADDED_3_2_0, REMOVED_4_0_3 } }, {
+					races = HORDE_ONLY,
+					groups = bubbleDown({ timeline = { ADDED_3_2_0, REMOVED_4_0_3 } }, {
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Hellscream's Battlegear (657)
-							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
-							["groups"] = {
+							cost = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
+							groups = {
 								-- DPS
 
 
@@ -499,8 +499,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(PALADIN, {	-- Liadrin's Plate (707)
-							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
-							["groups"] = {
+							cost = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
+							groups = {
 								-- DPS
 
 
@@ -527,8 +527,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(HUNTER, {	-- Windrunner's Pursuit (738)
-							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
-							["groups"] = {
+							cost = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
+							groups = {
 								i(48267),	-- Windrunner's Headpiece of Triumph
 								i(48269),	-- Windrunner's Spaulders of Triumph
 								i(48265),	-- Windrunner's Tunic of Triumph
@@ -537,8 +537,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(ROGUE, {		-- Garona's Battlegear (691)
-							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
-							["groups"] = {
+							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							groups = {
 								i(48235),	-- Garona's Helmet of Triumph
 								i(48237),	-- Garona's Pauldrons of Triumph
 								i(48233),	-- Garona's Breastplate of Triumph
@@ -547,8 +547,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(PRIEST, {	-- Zabra's Regalia (350)
-							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
-							["groups"] = {
+							cost = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
+							groups = {
 								-- DPS
 
 
@@ -567,8 +567,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(SHAMAN, {	-- Thrall's Garb (641)
-							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
-							["groups"] = {
+							cost = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
+							groups = {
 								-- Elemental
 
 
@@ -595,8 +595,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(MAGE, {		-- Sunstrider's Regalia (723)
-							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
-							["groups"] = {
+							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							groups = {
 								i(47764),	-- Sunstrider's Hood of Triumph
 								i(47767),	-- Sunstrider's Shoulderpads of Triumph
 								i(47766),	-- Sunstrider's Robe of Triumph
@@ -605,8 +605,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(WARLOCK, {	-- Gul'dan's Regalia (675)
-							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
-							["groups"] = {
+							cost = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
+							groups = {
 								i(47796),	-- Gul'dan's Hood of Triumph
 								i(47793),	-- Gul'dan's Shoulderpads of Triumph
 								i(47794),	-- Gul'dan's Robe of Triumph
@@ -615,8 +615,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(DRUID, {		-- Runetotem's Battlegear (826)
-							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
-							["groups"] = {
+							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							groups = {
 								-- Boomkin
 
 
@@ -643,8 +643,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(DEATHKNIGHT, {	-- Koltira's Battlegear (841)
-							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
-							["groups"] = {
+							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							groups = {
 								-- DPS
 
 								-- Tank
@@ -664,16 +664,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					}),
 				}),
 				n(35575, {	-- Champion Isimode <Triumphant Armor Vendor>
-					["coord"] = { 75.2, 21.6, ICECROWN },
+					coord = { 75.2, 21.6, ICECROWN },
 					-- #if AFTER LEGION
-					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r",
+					description = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r",
 					-- #endif
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = bubbleDown({ ["timeline"] = { ADDED_3_2_0, REMOVED_4_0_3 } }, {
+					races = ALLIANCE_ONLY,
+					groups = bubbleDown({ timeline = { ADDED_3_2_0, REMOVED_4_0_3 } }, {
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Wrynn's Battlegear (658)
-							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
-							["groups"] = {
+							cost = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
+							groups = {
 								-- DPS
 
 
@@ -693,8 +693,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(PALADIN, {	-- Turalyon's Garb (706)
-							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
-							["groups"] = {
+							cost = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
+							groups = {
 								-- DPS
 
 
@@ -721,8 +721,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(HUNTER, {	-- Windrunner's Battlegear (739)
-							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
-							["groups"] = {
+							cost = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
+							groups = {
 								i(48262),	-- Windrunner's Headpiece of Triumph
 								i(48260),	-- Windrunner's Spaulders of Triumph
 								i(48264),	-- Windrunner's Tunic of Triumph
@@ -731,8 +731,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(ROGUE, {		-- VanCleef's Battlegear (690)
-							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
-							["groups"] = {
+							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							groups = {
 								i(48230),	-- VanCleef's Helmet of Triumph
 								i(48228),	-- VanCleef's Pauldrons of Triumph
 								i(48232),	-- VanCleef's Breastplate of Triumph
@@ -741,8 +741,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(PRIEST, {	-- Velen's Regalia (349)
-							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
-							["groups"] = {
+							cost = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
+							groups = {
 								-- DPS
 
 
@@ -761,8 +761,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(SHAMAN, {	-- Nobundo's Plate (640)
-							["cost"] = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
-							["groups"] = {
+							cost = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
+							groups = {
 								-- Elemental
 
 
@@ -790,8 +790,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(MAGE, {		-- Khadgar's Regalia (722)
-							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
-							["groups"] = {
+							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							groups = {
 								i(47761),	-- Khadgar's Hood of Triumph
 								i(47758),	-- Khadgar's Shoulderpads of Triumph
 								i(47759),	-- Khadgar's Robe of Triumph
@@ -800,8 +800,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(WARLOCK, {	-- Kel'Thuzad's Regalia (674)
-							["cost"] = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
-							["groups"] = {
+							cost = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
+							groups = {
 								i(47788),	-- Kel'Thuzad's Gloves of Triumph
 								i(47789),	-- Kel'Thuzad's Hood of Triumph
 								i(47790),	-- Kel'Thuzad's Leggings of Triumph
@@ -810,8 +810,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(DRUID, {		-- Malfurion's Battlegear (825)
-							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
-							["groups"] = {
+							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							groups = {
 								-- Boomkin
 
 
@@ -838,8 +838,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(DEATHKNIGHT, {	-- Thassarian's Battlegear (842)
-							["cost"] = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
-							["groups"] = {
+							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
+							groups = {
 								-- DPS
 
 								-- Tank
@@ -858,14 +858,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					}),
 				}),
 				n(35578, {	-- Valiant Bressia <Triumphant Armor Vendor>
-					["coord"] = { 75.4, 22.0, ICECROWN },
+					coord = { 75.4, 22.0, ICECROWN },
 					-- #if AFTER LEGION
-					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
+					description = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r",
 					-- #endif
-					["races"] = HORDE_ONLY,
-					["groups"] = bubbleDownFiltered(
+					races = HORDE_ONLY,
+					groups = bubbleDownFiltered(
 						{
-							["cost"] = { { "i", 47242, 1 } },	-- Trophy of the Crusade
+							cost = { { "i", 47242, 1 } },	-- Trophy of the Crusade
 						},FILTERFUNC_itemID,{
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Hellscream's Battlegear (657)
@@ -1027,14 +1027,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					}),
 				}),
 				n(35577, {	-- Valiant Laradia <Triumphant Armor Vendor>
-					["coord"] = { 75.4, 21.6, ICECROWN },
+					coord = { 75.4, 21.6, ICECROWN },
 					-- #if AFTER LEGION
-					["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r",
+					description = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r",
 					-- #endif
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = bubbleDownFiltered(
+					races = ALLIANCE_ONLY,
+					groups = bubbleDownFiltered(
 						{
-							["cost"] = { { "i", 47242, 1 } },	-- Trophy of the Crusade
+							cost = { { "i", 47242, 1 } },	-- Trophy of the Crusade
 						},FILTERFUNC_itemID,{
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Wrynn's Battlegear (658)
@@ -1197,7 +1197,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
-				["crs"] = {
+				crs = {
 					34796,	-- Gormok
 					35144,	-- Acidmaw
 					34799,	-- Dreadscale
@@ -1235,138 +1235,138 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					34496,	-- Eydis Darkbane
 					34564,	-- Anub'arak
 				},
-				["description"] = "These drop on all difficulties other than 10 Man Normal.",
-				["groups"] = {
+				description = "These drop on all difficulties other than 10 Man Normal.",
+				groups = {
 					-- #if BEFORE 4.0.1
 					currency(301),	-- Emblem of Triumph
 					-- #endif
 					i(47654, {	-- Pattern: Bejeweled Wizard's Bracers [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47639, {	-- Pattern: Bejeweled Wizard's Bracers [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47629, {	-- Pattern: Black Chitin Bracers [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47646, {	-- Pattern: Black Chitin Bracers [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47635, {	-- Pattern: Bracers of Swift Death [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47647, {	-- Pattern: Bracers of Swift Death [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47631, {	-- Pattern: Crusader's Dragonscale Bracers [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47648, {	-- Pattern: Crusader's Dragonscale Bracers [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47630, {	-- Pattern: Crusader's Dragonscale Breastplate [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47649, {	-- Pattern: Crusader's Dragonscale Breastplate [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47628, {	-- Pattern: Ensorcelled Nerubian Breastplate [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47650, {	-- Pattern: Ensorcelled Nerubian Breastplate [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47634, {	-- Pattern: Knightbane Carapace [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47651, {	-- Pattern: Knightbane Carapace [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47632, {	-- Pattern: Lunar Eclipse Robes [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47652, {	-- Pattern: Lunar Eclipse Robes [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47655, {	-- Pattern: Merlin's Robe [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47638, {	-- Pattern: Merlin's Robe [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47633, {	-- Pattern: Moonshadow Armguards [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47653, {	-- Pattern: Moonshadow Armguards [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47656, {	-- Pattern: Royal Moonshroud Bracers [H] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47637, {	-- Pattern: Royal Moonshroud Bracers [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47657, {	-- Pattern: Royal Moonshroud Robe [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47636, {	-- Pattern: Royal Moonshroud Robe [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47622, {	-- Plans: Breastplate of the White Knight [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47640, {	-- Plans: Breastplate of the White Knight [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47623, {	-- Plans: Saronite Swordbreakers [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47641, {	-- Plans: Saronite Swordbreakers [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47627, {	-- Plans: Sunforged Bracers [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47642, {	-- Plans: Sunforged Bracers [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47626, {	-- Plans: Sunforged Breastplate [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47643, {	-- Plans: Sunforged Breastplate [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47624, {	-- Plans: Titanium Razorplate [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47644, {	-- Plans: Titanium Razorplate [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47625, {	-- Plans: Titanium Spikeguards [A] (RECIPE!)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(47645, {	-- Plans: Titanium Spikeguards [H] (RECIPE!)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(47556),	-- Crusader Orb
 				},
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				e(1618, {	-- Northrend Beasts
-					["crs"] = {
+					crs = {
 						34797,	-- Icehowl
 						34796,	-- Gormok
 						35144,	-- Acidmaw
 						34799,	-- Dreadscale
 					},
-					["groups"] = {
+					groups = {
 						ach(3936),	-- Not One, But Two Jormungars (10 player)
 						ach(3797),	-- Upper Back Pain (10 player)
 						i(142083, {	-- Dreadmaw (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						i(142084, {	-- Snobold Runt (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						a(i(47612)),	-- Rod of Imprisoned Souls
 						h(i(47856)),	-- Scepter of Imprisoned Souls
@@ -1395,8 +1395,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1619, {	-- Lord Jaraxxus
-					["crs"] = { 34780 },	-- Lord Jaraxxus
-					["groups"] = {
+					crs = { 34780 },	-- Lord Jaraxxus
+					groups = {
 						ach(3996),	-- Three Sixty Pain Spike (10 player)
 						a(i(47676)),	-- Dirk of the Night Watch
 						h(i(47871)),	-- Orcish Deathblade
@@ -1427,8 +1427,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1620, {	-- Champions of the Alliance
-					["races"] = HORDE_ONLY,
-					["crs"] = {
+					races = HORDE_ONLY,
+					crs = {
 						34467,	-- Alyssia Moonstalker
 						34466,	-- Anthar Forgemender
 						34471,	-- Baelnor Lightbearer
@@ -1444,7 +1444,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						34461,	-- Tyrius Duskblade
 						34465,	-- Velanaa
 					},
-					["groups"] = {
+					groups = {
 						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(47874),	-- Sunreaver Disciple's Blade
 						i(47876),	-- Sunreaver Champion's Faceplate
@@ -1459,8 +1459,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1621, {	-- Champions of the Horde
-					["races"] = ALLIANCE_ONLY,
-					["crs"] = {
+					races = ALLIANCE_ONLY,
+					crs = {
 						34451,	-- Birana Stormhoof
 						34455,	-- Broln Stouthorn
 						34447,	-- Caiphus the Stern
@@ -1476,7 +1476,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						34444,	-- Thrakgar
 						34441,	-- Vivienne Blackwhisper
 					},
-					["groups"] = {
+					groups = {
 						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(47724),	-- Blade of the Silver Disciple
 						i(47717),	-- Faceplate of the Silver Champion
@@ -1491,11 +1491,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1622, {	-- Twin Val'kyr
-					["crs"] = {
+					crs = {
 						34496,	-- Eydis Darkbane
 						34497,	-- Fjola Lightbane
 					},
-					["groups"] = {
+					groups = {
 						ach(3799),	-- Salt and Pepper (10 player)
 						h(i(47884)),	-- Edge of Agony
 						a(i(47743)),	-- Enlightenment
@@ -1526,11 +1526,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1623, {	-- Anub'arak
-					["crs"] = { 34564 },	-- Anub'arak
-					["groups"] = {
+					crs = { 34564 },	-- Anub'arak
+					groups = {
 						ach(3800),	-- The Traitor King (10 player)
 						i(142085, {	-- Nerubian Swarmer (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						h(i(47911)),	-- Anguish
 						a(i(47815)),	-- Cold Convergence
@@ -1573,20 +1573,20 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC, {
 				e(1618, {	-- Northrend Beasts
-					["crs"] = {
+					crs = {
 						34797,	-- Icehowl
 						34796,	-- Gormok
 						35144,	-- Acidmaw
 						34799,	-- Dreadscale
 					},
-					["groups"] = {
+					groups = {
 						ach(3936),	-- Not One, But Two Jormungars (10 player)
 						ach(3797),	-- Upper Back Pain (10 player)
 						i(142083, {	-- Dreadmaw (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						i(142084, {	-- Snobold Runt (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						a(i(47922)),	-- Rod of Imprisoned Souls
 						h(i(47995)),	-- Scepter of Imprisoned Souls
@@ -1615,8 +1615,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1619, {	-- Lord Jaraxxus
-					["crs"] = { 34780 },	-- Lord Jaraxxus
-					["groups"] = {
+					crs = { 34780 },	-- Lord Jaraxxus
+					groups = {
 						ach(3996),	-- Three Sixty Pain Spike (10 player)
 						a(i(47938)),	-- Dirk of the Night Watch
 						h(i(48010)),	-- Orcish Deathblade
@@ -1647,8 +1647,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1620, {	-- Champions of the Alliance
-					["races"] = HORDE_ONLY,
-					["crs"] = {
+					races = HORDE_ONLY,
+					crs = {
 						34467,	-- Alyssia Moonstalker
 						34466,	-- Anthar Forgemender
 						34471,	-- Baelnor Lightbearer
@@ -1664,7 +1664,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						34461,	-- Tyrius Duskblade
 						34465,	-- Velanaa
 					},
-					["groups"] = {
+					groups = {
 						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(48013),	-- Sunreaver Disciple's Blade
 						i(48015),	-- Sunreaver Champion's Faceplate
@@ -1679,8 +1679,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1621, {	-- Champions of the Horde
-					["races"] = ALLIANCE_ONLY,
-					["crs"] = {
+					races = ALLIANCE_ONLY,
+					crs = {
 						34451,	-- Birana Stormhoof
 						34455,	-- Broln Stouthorn
 						34447,	-- Caiphus the Stern
@@ -1696,7 +1696,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						34444,	-- Thrakgar
 						34441,	-- Vivienne Blackwhisper
 					},
-					["groups"] = {
+					groups = {
 						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(47941),	-- Blade of the Silver Disciple
 						i(47943),	-- Faceplate of the Silver Champion
@@ -1711,11 +1711,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1622, {	-- Twin Val'kyr
-					["crs"] = {
+					crs = {
 						34496,	-- Eydis Darkbane
 						34497,	-- Fjola Lightbane
 					},
-					["groups"] = {
+					groups = {
 						ach(3799),	-- Salt and Pepper (10 player)
 						h(i(48023)),	-- Edge of Agony
 						a(i(47960)),	-- Enlightenment
@@ -1746,14 +1746,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1623, {	-- Anub'arak
-					["crs"] = { 34564 },	-- Anub'arak
-					["groups"] = {
+					crs = { 34564 },	-- Anub'arak
+					groups = {
 						ach(5021, {	-- Call of the Crusade - Guild Edition
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						ach(3800),	-- The Traitor King (10 player)
 						i(142085, {	-- Nerubian Swarmer (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						h(i(48056)),	-- Anguish
 						a(i(47968)),	-- Cold Convergence
@@ -1793,8 +1793,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						h(i(48053)),	-- Sunwalker Legguards
 					},
 				}),
-				o(195665, bubbleDown({ ["timeline"] = { ADDED_3_2_0, REMOVED_4_0_3 } }, {	-- Argent Crusade Tribute Chest
-					["description"] = "This chest appears after the defeat of Anub'arak in successful Tribute runs in the Trial of the Crusader.",
+				o(195665, bubbleDown({ timeline = { ADDED_3_2_0, REMOVED_4_0_3 } }, {	-- Argent Crusade Tribute Chest
+					description = "This chest appears after the defeat of Anub'arak in successful Tribute runs in the Trial of the Crusader.",
 					--[[
 						Alliance	Description	Horde
 					1-24 Attempts
@@ -1818,7 +1818,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						Drape of Bitter Incantation	Back, Caster	Drape of the Sunreavers
 						Shawl of Fervent Crusader	Back, Caster	Shawl of the Devout Crusader
 					]]--
-					["groups"] = {
+					groups = {
 						ach(4080, {	-- A Tribute to Dedicated Insanity
 							title(136),	-- the Argent Defender
 						}),
@@ -1863,20 +1863,20 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					i(47242),	-- Trophy of the Crusade
 				}),
 				e(1618, {	-- Northrend Beasts
-					["crs"] = {
+					crs = {
 						34797,	-- Icehowl
 						34796,	-- Gormok
 						35144,	-- Acidmaw
 						34799,	-- Dreadscale
 					},
-					["groups"] = {
+					groups = {
 						ach(3937),	-- Not One, But Two Jormungars (25 player)
 						ach(3813),	-- Upper Back Pain (25 player)
 						i(142083, {	-- Dreadmaw (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						i(142084, {	-- Snobold Runt (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						h(i(47261)),	-- Barb of Tarasque
 						a(i(46979)),	-- Blade of Tarasque
@@ -1911,8 +1911,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1619, {	-- Lord Jaraxxus
-					["crs"] = { 34780 },	-- Lord Jaraxxus
-					["groups"] = {
+					crs = { 34780 },	-- Lord Jaraxxus
+					groups = {
 						ach(3997),	-- Three Sixty Pain Spike (25 player)
 						h(i(47266)),	-- Blood Fury
 						a(i(46996)),	-- Lionhead Slasher
@@ -1947,8 +1947,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1620, {	-- Champions of the Alliance
-					["races"] = HORDE_ONLY,
-					["crs"] = {
+					races = HORDE_ONLY,
+					crs = {
 						34467,	-- Alyssia Moonstalker
 						34466,	-- Anthar Forgemender
 						34471,	-- Baelnor Lightbearer
@@ -1964,9 +1964,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						34461,	-- Tyrius Duskblade
 						34465,	-- Velanaa
 					},
-					["groups"] = {
+					groups = {
 						ach(3814, {	-- Resilience Will Fix It (25 player)
-							["timeline"] = { DELETED_4_0_3 },
+							timeline = { DELETED_4_0_3 },
 						}),
 						i(47285),	-- Dual-Blade Butcher
 						i(47287),	-- Bastion of Resolve
@@ -1986,8 +1986,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1621, {	-- Champions of the Horde
-					["races"] = ALLIANCE_ONLY,
-					["crs"] = {
+					races = ALLIANCE_ONLY,
+					crs = {
 						34451,	-- Birana Stormhoof
 						34455,	-- Broln Stouthorn
 						34447,	-- Caiphus the Stern
@@ -2003,9 +2003,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						34444,	-- Thrakgar
 						34441,	-- Vivienne Blackwhisper
 					},
-					["groups"] = {
+					groups = {
 						ach(3814, {	-- Resilience Will Fix It (25 player)
-							["timeline"] = { DELETED_4_0_3 },
+							timeline = { DELETED_4_0_3 },
 						}),
 						i(47069),	-- Justicebringer
 						i(47079),	-- Bastion of Purity
@@ -2025,11 +2025,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1622, {	-- Twin Val'kyr
-					["crs"] = {
+					crs = {
 						34496,	-- Eydis Darkbane
 						34497,	-- Fjola Lightbane
 					},
-					["groups"] = {
+					groups = {
 						ach(3815),	-- Salt and Pepper (25 player)
 						a(i(47114)),	-- Lupine Longstaff
 						h(i(47302)),	-- Twin's Pact
@@ -2064,11 +2064,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1623, {	-- Anub'arak
-					["crs"] = { 34564 },	-- Anub'arak
-					["groups"] = {
+					crs = { 34564 },	-- Anub'arak
+					groups = {
 						ach(3816),	-- The Traitor King (25 player)
 						i(142085, {	-- Nerubian Swarmer (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						a(i(47233)),	-- Archon Glaive
 						h(i(47329)),	-- Hellion Glaive
@@ -2118,20 +2118,20 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					i(47242),	-- Trophy of the Crusade
 				}),
 				e(1618, {	-- Northrend Beasts
-					["crs"] = {
+					crs = {
 						34797,	-- Icehowl
 						34796,	-- Gormok
 						35144,	-- Acidmaw
 						34799,	-- Dreadscale
 					},
-					["groups"] = {
+					groups = {
 						ach(3937),	-- Not One, But Two Jormungars (25 player)
 						ach(3813),	-- Upper Back Pain (25 player)
 						i(142083, {	-- Dreadmaw (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						i(142084, {	-- Snobold Runt (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						h(i(47422)),	-- Barb of Tarasque
 						a(i(46980)),	-- Blade of Tarasque
@@ -2166,8 +2166,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1619, {	-- Lord Jaraxxus
-					["crs"] = { 34780 },	-- Lord Jaraxxus
-					["groups"] = {
+					crs = { 34780 },	-- Lord Jaraxxus
+					groups = {
 						ach(3997),	-- Three Sixty Pain Spike (25 player)
 						h(i(47427)),	-- Blood Fury
 						a(i(47001)),	-- Lionhead Slasher
@@ -2202,8 +2202,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1620, {	-- Champions of the Alliance
-					["races"] = HORDE_ONLY,
-					["crs"] = {
+					races = HORDE_ONLY,
+					crs = {
 						34467,	-- Alyssia Moonstalker
 						34466,	-- Anthar Forgemender
 						34471,	-- Baelnor Lightbearer
@@ -2219,7 +2219,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						34461,	-- Tyrius Duskblade
 						34465,	-- Velanaa
 					},
-					["groups"] = {
+					groups = {
 						i(47446),	-- Dual-Blade Butcher
 						i(47448),	-- Bastion of Resolve
 						i(47452),	-- Shroud of Displacement
@@ -2238,8 +2238,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1621, {	-- Champions of the Horde
-					["races"] = ALLIANCE_ONLY,
-					["crs"] = {
+					races = ALLIANCE_ONLY,
+					crs = {
 						34451,	-- Birana Stormhoof
 						34455,	-- Broln Stouthorn
 						34447,	-- Caiphus the Stern
@@ -2255,7 +2255,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						34444,	-- Thrakgar
 						34441,	-- Vivienne Blackwhisper
 					},
-					["groups"] = {
+					groups = {
 						i(47078),	-- Justicebringer
 						i(47085),	-- Bastion of Purity
 						i(47095),	-- Cloak of Displacement
@@ -2274,11 +2274,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1622, {	-- Twin Val'kyr
-					["crs"] = {
+					crs = {
 						34496,	-- Eydis Darkbane
 						34497,	-- Fjola Lightbane
 					},
-					["groups"] = {
+					groups = {
 						ach(3815),	-- Salt and Pepper (25 player)
 						h(i(47463)),	-- Twin's Pact
 						a(i(47130)),	-- Lupine Longstaff
@@ -2313,14 +2313,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1623, {	-- Anub'arak
-					["crs"] = { 34564 },	-- Anub'arak
-					["groups"] = {
+					crs = { 34564 },	-- Anub'arak
+					groups = {
 						ach(5021, {	-- Call of the Crusade - Guild Edition
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						ach(3816),	-- The Traitor King (25 player)
 						i(142085, {	-- Nerubian Swarmer (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						a(i(47239)),	-- Archon Glaive
 						h(i(47491)),	-- Hellion Glaive
@@ -2364,8 +2364,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						a(i(47188)),	-- Reign of the Unliving
 					},
 				}),
-				o(195665, bubbleDown({ ["timeline"] = { ADDED_3_2_0, REMOVED_4_0_3 } }, {	-- Argent Crusade Tribute Chest
-					["description"] = "This chest appears after the defeat of Anub'arak in successful Tribute runs in the Trial of the Crusader.",
+				o(195665, bubbleDown({ timeline = { ADDED_3_2_0, REMOVED_4_0_3 } }, {	-- Argent Crusade Tribute Chest
+					description = "This chest appears after the defeat of Anub'arak in successful Tribute runs in the Trial of the Crusader.",
 					--[[
 						Alliance	Description	Horde
 					1-24 Attempts
@@ -2387,7 +2387,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						Varian's Furor	Back, DPS	Garrosh's Rage
 						Vereesa's Dexterity	Back, DPS	Sylvanas' Cunning
 					]]--
-					["groups"] = {
+					groups = {
 						i(47557),	-- Regalia of the Grand Conqueror
 						i(47558),	-- Regalia of the Grand Protector
 						i(47559),	-- Regalia of the Grand Vanquisher

@@ -2,16 +2,16 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	m(BASTION, {
 		n(ZONE_DROPS, {
 			currency(MEDALLION_OF_SERVICE, {
-				["customCollect"] = "SL_COV_KYR",
-				["description"] = "One of the best spots to farm those is in the northwest of Bastion around the World Boss. In the area there are 4 repeatable treasure chests, all of which contain 1 Medallion & can be looted without any daily CD. \n\nCan also drop from any Forsworn enemy.",
+				customCollect = "SL_COV_KYR",
+				description = "One of the best spots to farm those is in the northwest of Bastion around the World Boss. In the area there are 4 repeatable treasure chests, all of which contain 1 Medallion & can be looted without any daily CD. \n\nCan also drop from any Forsworn enemy.",
 			}),
 			i(184397, {	-- Lost Featherling (PET!)
-				["customCollect"] = "SL_COV_KYR",
-				["crs"] = {
+				customCollect = "SL_COV_KYR",
+				crs = {
 					156559,	-- Ardent Warrior
 					157212,	-- Assuming Scholar
 					157054,	-- Fallacious Aspirant
@@ -54,7 +54,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			i(176987),	-- Ossein Scale Belt
 			i(176799),	-- Reverent Dagger
 			i(178915, {	-- Ripe Purian
-				["description"] = "Can be looted from objects scattered around the zone. Used to open Silver Strongboxes and the Steward's Golden Chest.",
+				description = "Can be looted from objects scattered around the zone. Used to open Silver Strongboxes and the Steward's Golden Chest.",
 			}),
 			i(176797),	-- Ritual Bell
 			i(176791),	-- Steelscale Bracers

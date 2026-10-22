@@ -4,38 +4,38 @@
 
 root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.WOD, {
-		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
+		n(GARRISONS, sharedData({maps = { LUNARFALL, FROSTWALL } },	{
 			n(BUILDINGS, {
 				garrisonBuilding(141, {	-- Salvage Yard (rank 1: 52, rank 2: 140, rank 3: 141)
 					n(ACHIEVEMENTS, {
 						ach(9468, {		-- Salvaging Pays Off
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["groups"] = { i(111977) },	-- Salvage Yard, Level 3 [Blueprints]
+							description = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							groups = { i(111977) },	-- Salvage Yard, Level 3 [Blueprints]
 						}),
 					}),
 					n(QUESTS, {
 						q(37086, {	-- Salvaging the Situation
-							["qg"] = 77378,	-- Hennick Helmsley
-							["races"] = ALLIANCE_ONLY,
-							["coords"] = {
+							qg = 77378,	-- Hennick Helmsley
+							races = ALLIANCE_ONLY,
+							coords = {
 								{ 46.4, 59.4, LUNARFALL },
 								{ 50.4, 57.4, LUNARFALL },
 								{ 51.4, 63.2, LUNARFALL },
 							},
-							["groups"] = {
+							groups = {
 								i(118471),	-- Salvaged Parts (QI!)
 								i(118473),	-- Small Sack of Salvaged Goods (QI!)
 							},
 						}),
 						q(37045, {	-- Salvaging the Situation
-							["qg"] = 79857,	-- Lumba the Crusher
-							["races"] = HORDE_ONLY,
-							["coords"] = {
+							qg = 79857,	-- Lumba the Crusher
+							races = HORDE_ONLY,
+							coords = {
 								{ 48.0, 32.4, FROSTWALL },
 								{ 53.0, 41.4, FROSTWALL },
 								{ 53.8, 36.4, FROSTWALL },
 							},
-							["groups"] = {
+							groups = {
 								i(118471),	-- Salvaged Parts (QI!)
 								i(118473),	-- Small Sack of Salvaged Goods (QI!)
 							},
@@ -43,8 +43,8 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					i(139594),	-- Salvage Crate
 					i(114120, {	-- Big Crate of Salvage
-						["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
-						["groups"] = sharedData({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 } },{
+						timeline = { ADDED_6_0_2, REMOVED_7_0_3 },
+						groups = sharedData({ timeline = { ADDED_6_0_2, REMOVED_7_0_3 } },{
 							-- Only adding items where Salvage Crates were realistically the only source
 							i(36533),	-- Adorned Broadsword
 							i(36603),	-- Archaic Longspear
@@ -99,7 +99,7 @@ root(ROOTS.ExpansionFeatures,
 							i(36491),	-- Serrated Maul
 							i(36659),	-- Shivery Wand
 							i(120952, {	-- Slarkhide
-								["timeline"] = { ADDED_6_1_0, REMOVED_7_0_3 },
+								timeline = { ADDED_6_1_0, REMOVED_7_0_3 },
 							}),
 							i(55316),	-- Sorrowmurk Cloak
 							i(55379),	-- Sorrowmurk Crystal

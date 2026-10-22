@@ -5,18 +5,18 @@
 root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 	n(SEASON_FIERCE, bubbleDownSelf({
 		-- Not the Best Timelining.. /Braghe
-		["timeline"] = { ADDED_7_3_0, REMOVED_7_3_2, ADDED_8_0_1_LAUNCH },
+		timeline = { ADDED_7_3_0, REMOVED_7_3_2, ADDED_8_0_1_LAUNCH },
 	}, {
-		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_3_0, REMOVED_7_3_2 } }, {
+		n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 } }, {
 			ach(12032, {	-- Fierce  Combatant [A]
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
 			ach(12031, {	-- Fierce  Combatant [H]
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				races = HORDE_ONLY,
+				groups = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
@@ -28,89 +28,89 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 				i(141847),	-- Fierce Gladiator's Storm Dragon (MOUNT!)
 			}),
 			ach(13450, {	-- Fierce Gladiator's Storm Dragon
-				["provider"] = { "i", 141847 },	-- Fierce Gladiator's Storm Dragon (MOUNT!)
-				["filterID"] = MOUNTS,
+				provider = { "i", 141847 },	-- Fierce Gladiator's Storm Dragon (MOUNT!)
+				filterID = MOUNTS,
 			}),
 			ach(12010, {	-- Fierce Gladiator: Legion Season 5
 				title(363),	-- Fierce Gladiator <Name>
 			}),
 			-- RBG
 			ach(12040, {	-- Soldier of the Alliance: Legion Season 5
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(12044, {	-- Soldier of the Horde: Legion Season 5
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(12039, {	-- Defender of the Alliance: Legion Season 5
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(12043, {	-- Defender of the Horde: Legion Season 5
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(12038, {	-- Guardian of the Alliance: Legion Season 5
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(12042, {	-- Guardian of the Horde: Legion Season 5
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(12037, {	-- Hero of the Alliance: Fierce
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(12041, {	-- Hero of the Horde: Fierce
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			-- Fashion
 			ach(12021, {	-- Claws Out
-				["timeline"] = { ADDED_7_3_0, REMOVED_7_3_2, ADDED_8_0_1_LAUNCH },
+				timeline = { ADDED_7_3_0, REMOVED_7_3_2, ADDED_8_0_1_LAUNCH },
 			}),
 		})),
 		n(PVP_COMBATANT, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH }, races = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
-					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 29.6, 75.0, LEGION_DALARAN },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(150252, {	-- Ensemble: Fierce Combatant's Dreadplate Armor [A]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(150255, {	-- Ensemble: Fierce Combatant's Felskin Armor [A]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(150250, {	-- Ensemble: Fierce Combatant's Dragonhide Armor [A]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(150264, {	-- Ensemble: Fierce Combatant's Chain Armor [A]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(150271, {	-- Ensemble: Fierce Combatant's Silk Armor [A]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(150259, {	-- Ensemble: Fierce Combatant's Ironskin Armor [A]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(150268, {	-- Ensemble: Fierce Combatant's Scaled Armor [A]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(150263, {	-- Ensemble: Fierce Combatant's Satin Armor [A]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(150260, {	-- Ensemble: Fierce Combatant's Leather Armor [A]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(150249, {	-- Ensemble: Fierce Combatant's Ringmail Armor [A]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(150257, {	-- Ensemble: Fierce Combatant's Felweave Armor [A]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(150267, {	-- Ensemble: Fierce Combatant's Plate Armor [A]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0, REMOVED_7_3_2 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(149505),	-- Fierce Combatant's Dreadcloak [A]
@@ -267,52 +267,52 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(149718),	-- Fierce Combatant's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH }, races = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
-					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 56.8, 27.8, LEGION_DALARAN },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(150253, {	-- Ensemble: Fierce Combatant's Dreadplate Armor [H]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(150254, {	-- Ensemble: Fierce Combatant's Felskin Armor [H]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(150251, {	-- Ensemble: Fierce Combatant's Dragonhide Armor [H]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(150265, {	-- Ensemble: Fierce Combatant's Chain Armor [H]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(150270, {	-- Ensemble: Fierce Combatant's Silk Armor [H]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(150258, {	-- Ensemble: Fierce Combatant's Ironskin Armor [H]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(150269, {	-- Ensemble: Fierce Combatant's Scaled Armor [H]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(150262, {	-- Ensemble: Fierce Combatant's Satin Armor [H]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(150261, {	-- Ensemble: Fierce Combatant's Leather Armor [H]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(150248, {	-- Ensemble: Fierce Combatant's Ringmail Armor [H]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(150256, {	-- Ensemble: Fierce Combatant's Felweave Armor [H]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(150266, {	-- Ensemble: Fierce Combatant's Plate Armor [H]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0, REMOVED_7_3_2 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(149506),	-- Fierce Combatant's Dreadcloak [H]
@@ -469,7 +469,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(149719),	-- Fierce Combatant's Insignia of Victory [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0, REMOVED_7_3_2 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 } }, {
 				filter(RELICS_F, {
 					i(150282),	-- Alliance of Convenience
 					i(150351),	-- Battering Tempest
@@ -505,52 +505,52 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_GLADIATOR, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH }, races = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
-					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 29.6, 75.0, LEGION_DALARAN },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(149483, {	-- Ensemble: Fierce Gladiator's Dreadplate Armor [A]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(149484, {	-- Ensemble: Fierce Gladiator's Felskin Armor [A]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(149480, {	-- Ensemble: Fierce Gladiator's Dragonhide Armor [A]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(149479, {	-- Ensemble: Fierce Gladiator's Chain Armor [A]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(149501, {	-- Ensemble: Fierce Gladiator's Silk Armor [A]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(149489, {	-- Ensemble: Fierce Gladiator's Ironskin Armor [A]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(149498, {	-- Ensemble: Fierce Gladiator's Scaled Armor [A]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(149496, {	-- Ensemble: Fierce Gladiator's Satin Armor [A]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(149490, {	-- Ensemble: Fierce Gladiator's Leather Armor [A]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(149494, {	-- Ensemble: Fierce Gladiator's Ringmail Armor [A]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(149486, {	-- Ensemble: Fierce Gladiator's Felweave Armor [A]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(149493, {	-- Ensemble: Fierce Gladiator's Plate Armor [A]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0, REMOVED_7_3_2 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(147909),	-- Fierce Gladiator's Dreadcloak [A]
@@ -707,52 +707,52 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(148121),	-- Fierce Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH }, races = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
-					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 56.8, 27.8, LEGION_DALARAN },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(149482, {	-- Ensemble: Fierce Gladiator's Dreadplate Armor [H]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(149485, {	-- Ensemble: Fierce Gladiator's Felskin Armor [H]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(149481, {	-- Ensemble: Fierce Gladiator's Dragonhide Armor [H]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(149478, {	-- Ensemble: Fierce Gladiator's Chain Armor [H]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(149500, {	-- Ensemble: Fierce Gladiator's Silk Armor [H]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(149488, {	-- Ensemble: Fierce Gladiator's Ironskin Armor [H]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(149499, {	-- Ensemble: Fierce Gladiator's Scaled Armor [H]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(149497, {	-- Ensemble: Fierce Gladiator's Satin Armor [H]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(149491, {	-- Ensemble: Fierce Gladiator's Leather Armor [H]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(149495, {	-- Ensemble: Fierce Gladiator's Ringmail Armor [H]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(149487, {	-- Ensemble: Fierce Gladiator's Felweave Armor [H]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(149492, {	-- Ensemble: Fierce Gladiator's Plate Armor [H]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0, REMOVED_7_3_2 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(147910),	-- Fierce Gladiator's Dreadcloak [H]
@@ -911,79 +911,79 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_ELITE, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
-					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["u"] = ELITE_PVP_REQUIREMENT,
+					coord = { 29.6, 74.8, LEGION_DALARAN },
+					groups = sharedData({
+						u = ELITE_PVP_REQUIREMENT,
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
-							["sourceAchievements"] = { 12045 },	-- Gladiator: Legion Season 5
-							["cost"] = { { "i", MOH, 12 } },
+							sourceAchievements = { 12045 },	-- Gladiator: Legion Season 5
+							cost = { { "i", MOH, 12 } },
 						}),
 						i(149445, {	-- Fierce Gladiator's Cloak [A]
-							["sourceAchievements"] = { 12090 },	-- Fierce Elite
-							["cost"] = { { "i", MOH, 50 } },
+							sourceAchievements = { 12090 },	-- Fierce Elite
+							cost = { { "i", MOH, 50 } },
 						}),
 						i(149443, {	-- Fierce Gladiator's Tabard [A]
-							["sourceAchievements"] = { 12090 },	-- Fierce Elite
-							["cost"] = { { "i", MOH, 50 } },
+							sourceAchievements = { 12090 },	-- Fierce Elite
+							cost = { { "i", MOH, 50 } },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH }, races = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
-					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["sourceAchievements"] = {
+					coord = { 29.6, 74.8, LEGION_DALARAN },
+					groups = sharedData({
+						sourceAchievements = {
 							12090,	-- Fierce Elite
 							12135,	-- Dominant Elite
 							12198,	-- Demonic Elite
 						},
-						["cost"] = { { "i", MOH, 12 } },
-						["u"] = ELITE_PVP_REQUIREMENT,
+						cost = { { "i", MOH, 12 } },
+						u = ELITE_PVP_REQUIREMENT,
 					}, {
 						iensemble(149458, {	-- Ensemble: Elite Fierce Gladiator's Dreadplate Armor [A]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(149460, {	-- Ensemble: Elite Fierce Gladiator's Felskin Armor [A]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(149456, {	-- Ensemble: Elite Fierce Gladiator's Dragonhide Armor [A]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(149454, {	-- Ensemble: Elite Fierce Gladiator's Chain Armor [A]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(149477, {	-- Ensemble: Elite Fierce Gladiator's Silk Armor [A]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(149465, {	-- Ensemble: Elite Fierce Gladiator's Ironskin Armor [A]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(149475, {	-- Ensemble: Elite Fierce Gladiator's Scaled Armor [A]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(149473, {	-- Ensemble: Elite Fierce Gladiator's Satin Armor [A]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(149467, {	-- Ensemble: Elite Fierce Gladiator's Leather Armor [A]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(149470, {	-- Ensemble: Elite Fierce Gladiator's Ringmail Armor [A]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(149462, {	-- Ensemble: Elite Fierce Gladiator's Felweave Armor [A]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(149469, {	-- Ensemble: Elite Fierce Gladiator's Plate Armor [A]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0, REMOVED_7_3_2 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(148155),	-- Fierce Gladiator's Dreadcloak [A]
@@ -1140,79 +1140,79 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(148367),	-- Fierce Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
-					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["u"] = ELITE_PVP_REQUIREMENT,
+					coord = { 57.0, 27.8, LEGION_DALARAN },
+					groups = sharedData({
+						u = ELITE_PVP_REQUIREMENT,
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
-							["sourceAchievements"] = { 12045 },	-- Gladiator: Legion Season 5
-							["cost"] = { { "i", MOH, 12 } },
+							sourceAchievements = { 12045 },	-- Gladiator: Legion Season 5
+							cost = { { "i", MOH, 12 } },
 						}),
 						i(149444, {	-- Fierce Gladiator's Cloak [H]
-							["sourceAchievements"] = { 12090 },	-- Fierce Elite
-							["cost"] = { { "i", MOH, 50 } },
+							sourceAchievements = { 12090 },	-- Fierce Elite
+							cost = { { "i", MOH, 50 } },
 						}),
 						i(149442, {	-- Fierce Gladiator's Tabard [H]
-							["sourceAchievements"] = { 12090 },	-- Fierce Elite
-							["cost"] = { { "i", MOH, 50 } },
+							sourceAchievements = { 12090 },	-- Fierce Elite
+							cost = { { "i", MOH, 50 } },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH }, races = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
-					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["sourceAchievements"] = {
+					coord = { 57.0, 27.8, LEGION_DALARAN },
+					groups = sharedData({
+						sourceAchievements = {
 							12090,	-- Fierce Elite
 							12135,	-- Dominant Elite
 							12198,	-- Demonic Elite
 						},
-						["cost"] = { { "i", MOH, 12 } },
-						["u"] = ELITE_PVP_REQUIREMENT,
+						cost = { { "i", MOH, 12 } },
+						u = ELITE_PVP_REQUIREMENT,
 					}, {
 						iensemble(149459, {	-- Ensemble: Elite Fierce Gladiator's Dreadplate Armor [H]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(149461, {	-- Ensemble: Elite Fierce Gladiator's Felskin Armor [H]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(149457, {	-- Ensemble: Elite Fierce Gladiator's Dragonhide Armor [H]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(149455, {	-- Ensemble: Elite Fierce Gladiator's Chain Armor [H]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(149476, {	-- Ensemble: Elite Fierce Gladiator's Silk Armor [H]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(149464, {	-- Ensemble: Elite Fierce Gladiator's Ironskin Armor [H]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(149474, {	-- Ensemble: Elite Fierce Gladiator's Scaled Armor [H]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(149472, {	-- Ensemble: Elite Fierce Gladiator's Satin Armor [H]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(149466, {	-- Ensemble: Elite Fierce Gladiator's Leather Armor [H]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(149471, {	-- Ensemble: Elite Fierce Gladiator's Ringmail Armor [H]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(149463, {	-- Ensemble: Elite Fierce Gladiator's Felweave Armor [H]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(149468, {	-- Ensemble: Elite Fierce Gladiator's Plate Armor [H]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0, REMOVED_7_3_2 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(148156),	-- Fierce Gladiator's Dreadcloak [H]

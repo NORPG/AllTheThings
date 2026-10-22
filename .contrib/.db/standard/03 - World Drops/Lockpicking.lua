@@ -3,11 +3,11 @@
 -----------------------------------------------------
 root(ROOTS.WorldDrops, {
 	header(HEADERS.Spell, 1810, {	-- Lockpicking
-		["description"] = "These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",
-		["groups"] = {
+		description = "These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",
+		groups = {
 			i(169475, {	-- Barnacled Lockbox
-				["timeline"] = { ADDED_8_2_0 },
-				["sym"] = { {
+				timeline = { ADDED_8_2_0 },
+				sym = { {
 					"select", "itemID",
 					-- Last Updated: 2022-05-02, Crieve. 45 items total, no exclusives.
 					-- Weapons
@@ -64,16 +64,16 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(16882, {	-- Battered Junkbox
-				["timeline"] = { ADDED_1_11_1 },
-				["groups"] = {
+				timeline = { ADDED_1_11_1 },
+				groups = {
 					i(4446),	-- Blackvenom Blade
 					i(2567),	-- Evocator's Blade
 					i(5756),	-- Sliverblade
 					i(4454, {	-- Talon of Vultros
-						["timeline"] = { ADDED_7_2_5 },	-- Unclear when exactly. Going with the big return of items in 7.2.5
+						timeline = { ADDED_7_2_5 },	-- Unclear when exactly. Going with the big return of items in 7.2.5
 					}),
 				},
-				["sym"] = { {
+				sym = { {
 					"select", "itemID",
 					11968,	-- Amber Hoop
 					4999,	-- Azora's Will
@@ -106,32 +106,32 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(5760, {	-- Eternium Lockbox
-				["sym"] = { {
+				sym = { {
 					"select", "itemID",
 					12058,	-- Demonic Bone Ring
 				}},
 			}),
 			i(63349, {	-- Flame-Scarred Junkbox
-				["timeline"] = { ADDED_4_0_1 },
-				["groups"] = {
+				timeline = { ADDED_4_0_1 },
+				groups = {
 					i(68161),	-- Krol Decapitator
 					-- #if BEFORE MOP
 					i(68162, {	-- Spinerender
-						["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 					}),
 					-- #endif
 					i(68163),	-- The Twilight Blade
 				},
 			}),
 			i(43622, {	-- Froststeel Lockbox
-				["timeline"] = { ADDED_3_0_2 },
+				timeline = { ADDED_3_0_2 },
 			}),
 			i(88567, {	-- Ghost Iron Lockbox
-				["timeline"] = { ADDED_5_0_4 },
+				timeline = { ADDED_5_0_4 },
 			}),
 			i(4633),	-- Heavy Bronze Lockbox
 			i(16885, {	-- Heavy Junkbox
-				["sym"] = { {
+				sym = { {
 					"select", "itemID",
 					1728,	-- Teebu's Blazing Longsword [Discord Confirmation - Luce]
 					16215,	-- Formula: Enchant Boots Greater Stamina (RECIPE!)
@@ -175,7 +175,7 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(4634,	{	-- Iron Lockbox
-				["sym"] = { {
+				sym = { {
 					"select", "itemID",
 					11164,	-- Formula: Enchant Weapon - Lesser Beastslayer (RECIPE!)
 					7449,	-- Pattern: Dusky Leather Leggings (RECIPE!)
@@ -196,21 +196,21 @@ root(ROOTS.WorldDrops, {
 					4414,	-- Schematic: Portable Bronze Mortar (RECIPE!)
 					13063,	-- Starfaller
 				}},
-				["groups"] = {
+				groups = {
 					i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
-						["timeline"] = { ADDED_10_1_7 },
+						timeline = { ADDED_10_1_7 },
 					}),
 				},
 			}),
 			i(31952, {	-- Khorium Lockbox
-				["timeline"] = { ADDED_2_0_3 },
+				timeline = { ADDED_2_0_3 },
 			}),
 			i(188787, {	-- Locked Broker Luggage
-				["timeline"] = { ADDED_9_2_0 },
+				timeline = { ADDED_9_2_0 },
 			}),
 			i(186160, {	-- Locked Artifact Case
-				["timeline"] = { ADDED_9_1_0 },
-				["sym"] = { {
+				timeline = { ADDED_9_1_0 },
+				sym = { {
 					"select", "itemID",
 					-- Last Updated: 2022-05-02, Crieve. 28 items total, no exclusives.
 					-- This is the style I'd like to see used for all lockboxes. Exclusives should be listed in the lockboxes themselves and non-exclusive items should be linked with a symlink.
@@ -255,48 +255,48 @@ root(ROOTS.WorldDrops, {
 			}),
 			i(5758,	{	-- Mithril Lockbox
 				i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
-					["timeline"] = { ADDED_10_1_7 },
+					timeline = { ADDED_10_1_7 },
 				}),
 			}),
 			i(4632, {	-- Ornate Bronze Lockbox
 				i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
-					["timeline"] = { ADDED_10_1_7 },
+					timeline = { ADDED_10_1_7 },
 				}),
 			}),
 			i(180532, {	-- Oxxein Lockbox
-				["timeline"] = { ADDED_9_0_2_LAUNCH },
+				timeline = { ADDED_9_0_2_LAUNCH },
 			}),
 			i(180522, {	-- Phaedrum Lockbox
-				["timeline"] = { ADDED_9_0_2_LAUNCH },
+				timeline = { ADDED_9_0_2_LAUNCH },
 			}),
 			i(43575, {	-- Reinforced Junkbox
-				["timeline"] = { ADDED_3_0_2 },
-				["groups"] = {
+				timeline = { ADDED_3_0_2 },
+				groups = {
 					i(43611, {	-- Krol Cleaver
-						["timeline"] = { ADDED_3_0_2 },
+						timeline = { ADDED_3_0_2 },
 					}),
 					i(43612, {	-- Spineslicer
-						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+						timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
 					}),
 					i(43613, {	-- The Dusk Blade
-						["timeline"] = { ADDED_3_0_2 },
+						timeline = { ADDED_3_0_2 },
 					}),
 					i(2892, {	-- Empty Poison Vial
-						["timeline"] = { ADDED_5_0_4 },
+						timeline = { ADDED_5_0_4 },
 					}),
 					i(6947, {	-- Empty Poison Vial
-						["timeline"] = { ADDED_5_0_4 },
+						timeline = { ADDED_5_0_4 },
 					}),
 					i(5237, {	-- Empty Poison Vial
-						["timeline"] = { ADDED_5_0_4 },
+						timeline = { ADDED_5_0_4 },
 					}),
 					i(10918, {	-- Empty Poison Vial
-						["timeline"] = { ADDED_5_0_4 },
+						timeline = { ADDED_5_0_4 },
 					}),
 				},
 			}),
 			i(4638, {	-- Reinforced Steel Lockbox
-				["sym"] = { {
+				sym = { {
 					"select", "itemID",
 					-- #if AFTER TBC
 					21947,	-- Design: Gem Studded Band (RECIPE!)
@@ -322,20 +322,20 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(190954, {	-- Serevite Lockbox
-				["timeline"] = { ADDED_10_0_2_LAUNCH },
-				-- ["sym"] = {{"select","itemID",
+				timeline = { ADDED_10_0_2_LAUNCH },
+				-- sym = {{"select","itemID",
 				-- 	-- add notable Item IDs here, uncomment if adding any id's
 				-- 	-- 12345,	-- Item name
 				-- }},
 				-- do not list raw content unless lockbox is only confirmed source
-				-- ["groups"] = {
+				-- groups = {
 				-- },
 			}),
 			i(180533, {	-- Solenium Lockbox
-				["timeline"] = { ADDED_9_0_2_LAUNCH },
+				timeline = { ADDED_9_0_2_LAUNCH },
 			}),
 			i(4637, {	-- Steel Lockbox
-				["sym"] = { {
+				sym = { {
 					"select", "itemID",
 					11204,	-- Formula: Enchant Bracer - Greater Versatility / CLASSIC: Formula: Enchant Bracer - Greater Versatility (RECIPE!)
 					11202,	-- Formula: Enchant Shield - Stamina (RECIPE!)
@@ -356,7 +356,7 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(4636, {	-- Strong Iron Lockbox
-				["sym"] = { {
+				sym = { {
 					"select", "itemID",
 					11167,	-- Formula: Enchant Boots - Lesser Versatility / CLASSIC: Formula: Enchant Boots - Lesser Spirit (RECIPE!)
 					11165,	-- Formula: Enchant Weapon - Lesser Elemental Slayer (RECIPE!)
@@ -378,15 +378,15 @@ root(ROOTS.WorldDrops, {
 					10606,	-- Schematic: Parachute Cloak (RECIPE!)
 					4414	-- Schematic: Portable Bronze Mortar (RECIPE!)
 				}},
-				["groups"] = {
+				groups = {
 					i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
-						["timeline"] = { ADDED_10_1_7 },
+						timeline = { ADDED_10_1_7 },
 					}),
 				},
 			}),
 			i(29569, {	-- Strong Junkbox
-				["timeline"] = { ADDED_2_0_3 },
-				["sym"] = { {
+				timeline = { ADDED_2_0_3 },
+				sym = { {
 					"select", "itemID",
 					4354,	-- Pattern: Rich Purple Silk Shirt (RECIPE!) [Discord Confirmation - Luce]
 					12002,	-- Formula: Enchant Bracer Superior Stamina (RECIPE!)
@@ -405,16 +405,16 @@ root(ROOTS.WorldDrops, {
 					12027	-- Vermilion Necklace
 				}},
 				-- #if BEFORE MOP
-				["groups"] = {
+				groups = {
 					-- CRIEVE NOTE: This is the ONLY valid source, please don't remove.
 					i(34622, {	-- Spinesever
-						["timeline"] = { ADDED_2_3_0, REMOVED_5_0_4 },
+						timeline = { ADDED_2_3_0, REMOVED_5_0_4 },
 					}),
 				},
 				-- #endif
 			}),
 			i(16884, {	-- Sturdy Junkbox
-				["sym"] = { {
+				sym = { {
 					"select", "itemID",
 					11974,	-- Aquamarine Ring
 					12043,	-- Desert Choker
@@ -453,12 +453,12 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(179311, {	-- Synvir Lockbox
-				["timeline"] = { ADDED_9_0_2_LAUNCH },
+				timeline = { ADDED_9_0_2_LAUNCH },
 			}),
 			i(5759),	-- Thorium Lockbox
 			i(116920, {	-- True Steel Lockbox
-				["timeline"] = { ADDED_6_0_2 },
-				["sym"] = { {
+				timeline = { ADDED_6_0_2 },
+				sym = { {
 					"select", "itemID",
 					-- n(WEAPONS, {
 					116721,	-- Ancestral Branch
@@ -571,8 +571,8 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(88165, {	-- Vine-Cracked Junkbox
-				["timeline"] = { ADDED_5_0_4 },
-				["groups"] = {
+				timeline = { ADDED_5_0_4 },
+				groups = {
 					i(88150),	-- Krol Scimitar
 					i(88149),	-- The Gloaming Blade
 				},

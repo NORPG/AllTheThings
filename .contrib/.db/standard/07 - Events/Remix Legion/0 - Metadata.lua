@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
-	["timeline"] = { ADDED_11_2_5, REMOVED_LEGION_REMIX_END },
+	timeline = { ADDED_11_2_5, REMOVED_LEGION_REMIX_END },
 	--[[
 	Legion Remix phases open every two or three weeks starting from 7 October 2025 to 19 January 2026:
 	Phase 1 ( 7 Oct): Skies of Fire (7.0) — Open world, Withered Army Training, launch dungeons, Emerald Nightmare and Trial of Valor raids

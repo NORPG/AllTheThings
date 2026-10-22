@@ -23,37 +23,37 @@ end]];
 
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.MOP, { applyclassicphase(MOP_PHASE_ONE, n(THERAMORES_FALL, bubbleDownSelf({
 	-- #if BEFORE WOD
-	["OnUpdate"] = OnUpdateForTheramoresFall,
+	OnUpdate = OnUpdateForTheramoresFall,
 	-- #endif
 }, {
-	["timeline"] = { ADDED_5_0_4, REMOVED_5_1_0 },
-	["maps"] = { 483 },	-- Theramore's Fall
-	["lvl"] = lvlsquish(85, 85, 32),
-	["groups"] = {
+	timeline = { ADDED_5_0_4, REMOVED_5_1_0 },
+	maps = { 483 },	-- Theramore's Fall
+	lvl = lvlsquish(85, 85, 32),
+	groups = {
 		n(ACHIEVEMENTS, {
 			ach(7467, {	-- Theramore's Fall (A)
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(7468, {	-- Theramore's Fall (H)
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 		}),
 		n(SCENARIO_COMPLETION, {
 			-- #if BEFORE 6.0.2
 			i(89205, {	-- Mini Mana Bomb Toy (TOY!)
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			-- #endif
 			i(90041, {	-- Spoils of Theramore
-				["description"] = "This was a reward for completing the Theramore's Fall scenario during the Mists of Pandaria pre-patch.",
-				["groups"] = {
+				description = "This was a reward for completing the Theramore's Fall scenario during the Mists of Pandaria pre-patch.",
+				groups = {
 					-- #if BEFORE 6.0.2
 					-- This was added to the Lunar Festival with 6.0.2
 					a(i(89999, {	-- Everlasting Alliance Firework (TOY!)
-						["timeline"] = { ADDED_5_0_4 },
+						timeline = { ADDED_5_0_4 },
 					})),
 					h(i(90000, {	-- Everlasting Horde Firework (TOY!)
-						["timeline"] = { ADDED_5_0_4 },
+						timeline = { ADDED_5_0_4 },
 					})),
 					-- #endif
 					i(90017),	-- Theramore Arcanist's Hat
@@ -80,24 +80,24 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.MOP, { appl
 			}),
 			-- #if BEFORE 6.0.2
 			i(89196, {	-- Theramore Tabard
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			-- #endif
 		}),
 		-- #if AFTER 6.0.2
 		n(VENDORS, {
 			n(63546, {	-- Zidormi
-				["description"] = "Sells the following items if you completed the level 85 version of the Theramore's Fall Scenario on your current character during the Pre-Launch of MOP.",
-				["coord"] = { 55.8, 49.6, DUSTWALLOW_MARSH },
-				["timeline"] = { ADDED_5_0_4 },
-				["groups"] = {
+				description = "Sells the following items if you completed the level 85 version of the Theramore's Fall Scenario on your current character during the Pre-Launch of MOP.",
+				coord = { 55.8, 49.6, DUSTWALLOW_MARSH },
+				timeline = { ADDED_5_0_4 },
+				groups = {
 					i(89196, {	-- Theramore Tabard
-						["OnUpdate"] = OnUpdateForTheramoresFall,
-						["races"] = ALLIANCE_ONLY,
+						OnUpdate = OnUpdateForTheramoresFall,
+						races = ALLIANCE_ONLY,
 					}),
 					i(89205, {	-- Mini Mana Bomb Toy (TOY!)
-						["OnUpdate"] = OnUpdateForTheramoresFall,
-						["races"] = HORDE_ONLY,
+						OnUpdate = OnUpdateForTheramoresFall,
+						races = HORDE_ONLY,
 					}),
 				},
 			}),

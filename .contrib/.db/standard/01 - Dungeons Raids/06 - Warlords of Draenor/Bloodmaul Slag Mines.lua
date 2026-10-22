@@ -46,12 +46,12 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, BossWithHeader =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.BossWithHeader
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	inst(385, {	-- Bloodmaul Slag Mines
-		["mapID"] = 573,
-		["coord"] = { 49.93, 24.8, FROSTFIRE_RIDGE },
-		["lvl"] = 90,
-		["groups"] = {
+		mapID = 573,
+		coord = { 49.93, 24.8, FROSTFIRE_RIDGE },
+		lvl = 90,
+		groups = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(CRUSHTO),
 				BossOnly(MAGMOLATUS),
@@ -62,37 +62,37 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC).AddGroups({
 				Boss(CRUSHTO, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, WRIST, LEGS),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, WRIST, LEGS),
 				}),
 				Boss(MAGMOLATUS, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, CHEST, HANDS),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, CHEST, HANDS),
 				}),
 				Boss(ROLTALL, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, BACK, FEET),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, BACK, FEET),
 				}),
 				Boss(GUGROKK, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, HEAD, SHOULDER, FINGER),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, HEAD, SHOULDER, FINGER),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 				BossWithHeader(CRUSHTO, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, WRIST, LEGS),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, WRIST, LEGS),
 				}),
 				BossWithHeader(MAGMOLATUS, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, CHEST, HANDS),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, CHEST, HANDS),
 				}),
 				BossWithHeader(ROLTALL, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, BACK, FEET),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, BACK, FEET),
 				}),
 				BossWithHeader(GUGROKK, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, HEAD, SHOULDER, FINGER),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, HEAD, SHOULDER, FINGER),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(CRUSHTO),
 				n(75242, {	-- Croman (The Barbarian)
-					["description"] = "Click on this manly dude and have him follow you to Magmolatus and allow him to retrieve his weapon. (He has to hit the boss at least one time.)\n\nAfter he has reclaimed his weapon, bring him to the final boss and allow him to hit that boss as well before killing the boss. Croman must still be alive at the end of the dungeon.",
-					["groups"] = {
+					description = "Click on this manly dude and have him follow you to Magmolatus and allow him to retrieve his weapon. (He has to hit the boss at least one time.)\n\nAfter he has reclaimed his weapon, bring him to the final boss and allow him to hit that boss as well before killing the boss. Croman must still be alive at the end of the dungeon.",
+					groups = {
 						ach(9005, {	-- Come With Me If You Want to Live
 							follower(177),	-- Croman
 						}),
@@ -100,7 +100,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				BossOnly(MAGMOLATUS, {
 					ach(8993, {	-- A Gift of Earth and Fire
-						["crs"] = {
+						crs = {
 							74571,	-- Calamity <Servant of the Flame>
 							74570,	-- Ruination <Servant of the Earth>
 						},
@@ -111,23 +111,23 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					ach(9046),	-- Heroic: Bloodmaul Slag Mines
 					ach(9369),	-- Heroic: Bloodmaul Slag Mines Guild Run
 					ach(9008, {	-- Is Draenor on Fire?
-						["crs"] = { 74927 },	-- Unstable Slag
+						crs = { 74927 },	-- Unstable Slag
 					}),
 					un(REMOVED_FROM_GAME, i(113682)),	-- Core of Flame
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
 				Boss(CRUSHTO, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, WRIST, LEGS),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, WRIST, LEGS),
 				}),
 				Boss(MAGMOLATUS, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, CHEST, HANDS),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, CHEST, HANDS),
 				}),
 				Boss(ROLTALL, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, BACK, FEET),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, BACK, FEET),
 				}),
 				Boss(GUGROKK, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, HEAD, SHOULDER, FINGER),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, HEAD, SHOULDER, FINGER),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
@@ -142,7 +142,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(385, {
 		q(34533),	-- Bloodmaul Slag Mines Challenge Mode - Bronze Addition (Nth)
 		q(34525),	-- Bloodmaul Slag Mines Challenge Mode - Consolation (Nth)

@@ -2,11 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-	n(COMMON_BOSS_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+	n(COMMON_BOSS_DROPS, bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {
 		i(234425, {	-- Forgotten Folio
-			["description"] = "Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes.",
-			["sym"] = {{"select","itemID",
+			description = "Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes.",
+			sym = {{"select","itemID",
 				223141,	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)
 				223142,	-- Formula: Enchant Ring - Cursed Mastery (RECIPE!)
 				223143,	-- Formula: Enchant Ring - Cursed Versatility (RECIPE!)
@@ -27,7 +27,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 	})),
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_TEMPERED, bubbleDownSelf({
-			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART }
+			timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART }
 		},{
 			ach(20523),	-- The War Within Keystone Explorer: Season One
 			ach(20524, {	-- The War Within Keystone Conqueror: Season One
@@ -38,10 +38,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 			ach(20526),	-- The War Within Keystone Hero: Season One
 			ach(20589, {	-- Tempered Hero: The War Within Season 1
-				["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
-				["groups"] = {
+				timeline = { ADDED_11_0_2, REMOVED_11_1_0 },
+				groups = {
 					title(548, {	-- <Name> the Tempered Hero
-						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+						timeline = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 				},
 			}),
@@ -59,10 +59,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 			ach(20587, {	-- Keystone Hero: Siege of Boralus
 				spell(445418, {	-- Path of the Besieged Harbor [A]
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				spell(464256, {	-- Path of the Besieged Harbor [H]
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 			}),
 			ach(20585, {	-- Keystone Hero: The Dawnbreaker
@@ -76,7 +76,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 		})),
 		header(HEADERS.Achievement, SEASON_ENTERPRISING, bubbleDownSelf({
-			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 }
+			timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 }
 		},{
 			ach(40949),	-- The War Within Keystone Explorer: Season Two
 			ach(40950, {	-- The War Within Keystone Conqueror: Season Two
@@ -109,10 +109,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 			ach(40965, {	-- Keystone Hero: The MOTHERLODE!!
 				spell(467553, {	-- Path of the Azerite Refinery [A]
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				spell(467555, {	-- Path of the Azerite Refinery [H]
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 			}),
 			ach(20579, {	-- Keystone Hero: The Rookery
@@ -122,71 +122,71 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				spell(354467),	-- Path of the Undefeated
 			}),
 			ach(42144, {	-- The Enterprising Damage Dealer (automated)
-				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
+				timeline = { ADDED_11_1_5, REMOVED_11_2_0 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
 			}),
 			ach(42148, {	-- The Enterprising Dungeon Master
-				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
+				timeline = { ADDED_11_1_5, REMOVED_11_2_0 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
 				-- Meta achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					42144,	-- The Enterprising Damage Dealer
 					42141,	-- The Enterprising Healer
 					42139,	-- The Enterprising Tank
 				}},
-				["groups"] = {
+				groups = {
 					title(636),	-- <Name> the Triple Threat
 				},
 			}),
 			ach(42141, {	-- The Enterprising Healer (automated)
-				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
+				timeline = { ADDED_11_1_5, REMOVED_11_2_0 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
 			}),
 			ach(42139, {	-- The Enterprising Tank (automated)
-				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
+				timeline = { ADDED_11_1_5, REMOVED_11_2_0 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
 			}),
 			ach(41724, {	-- The War Within Season 2: Resilient Keystone 12 (automated)
-				["collectible"] = false,
+				collectible = false,
 			}),
 			ach(41726, {	-- The War Within Season 2: Resilient Keystone 13 (automated)
-				["collectible"] = false,
+				collectible = false,
 			}),
 			ach(41727, {	-- The War Within Season 2: Resilient Keystone 14 (automated)
-				["collectible"] = false,
+				collectible = false,
 			}),
 			ach(41728, {	-- The War Within Season 2: Resilient Keystone 15 (automated)
-				["collectible"] = false,
+				collectible = false,
 			}),
 			ach(41729, {	-- The War Within Season 2: Resilient Keystone 16 (automated)
-				["collectible"] = false,
+				collectible = false,
 			}),
 			ach(41730, {	-- The War Within Season 2: Resilient Keystone 17 (automated)
-				["collectible"] = false,
+				collectible = false,
 			}),
 			ach(41731, {	-- The War Within Season 2: Resilient Keystone 18 (automated)
-				["collectible"] = false,
+				collectible = false,
 			}),
 			ach(41732, {	-- The War Within Season 2: Resilient Keystone 19 (automated)
-				["collectible"] = false,
+				collectible = false,
 			}),
 			ach(41733, {	-- The War Within Season 2: Resilient Keystone 20 (automated)
-				["collectible"] = false,
+				collectible = false,
 			}),
 			ach(41734, {	-- The War Within Season 2: Resilient Keystone 21 (automated)
-				["collectible"] = false,
+				collectible = false,
 			}),
 			ach(41735, {	-- The War Within Season 2: Resilient Keystone 22 (automated)
-				["collectible"] = false,
+				collectible = false,
 			}),
 			ach(41736, {	-- The War Within Season 2: Resilient Keystone 23 (automated)
-				["collectible"] = false,
+				collectible = false,
 			}),
 			ach(41737, {	-- The War Within Season 2: Resilient Keystone 24 (automated)
-				["collectible"] = false,
+				collectible = false,
 			}),
 			ach(41738, {	-- The War Within Season 2: Resilient Keystone 25 (automated)
-				["collectible"] = false,
+				collectible = false,
 			}),
 		})),
 		header(HEADERS.Achievement, SEASON_UNBOUND, bubbleDownSelf({
-			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH }
+			timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH }
 		},{
 			ach(42169),	-- The War Within Keystone Explorer: Season Three
 			ach(42170, {	-- The War Within Keystone Conqueror: Season Three
@@ -200,10 +200,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				i(247822),	-- Scarlet Void Flyer (MOUNT!)
 			}),
 			ach(42174, {	-- Unbound Hero: The War Within Season Three
-				["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
-				["groups"] = {
+				timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+				groups = {
 					title(637, {	-- <Name> the Unbound Hero
-						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+						timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 					}),
 				},
 			}),
@@ -231,107 +231,107 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				spell(445414),	-- Path of the Arathi Flagship
 			}),
 			ach(61876, {	-- The Unbound Damage Dealer (automated)
-				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },	-- Added October 24th (hotfixed)
+				timeline = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },	-- Added October 24th (hotfixed)
 			}),
 			ach(61877, {	-- The Unbound Dungeon Master
-				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },	-- Added October 24th (hotfixed)
+				timeline = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },	-- Added October 24th (hotfixed)
 				-- Meta achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					61876,	-- The Unbound Damage Dealer
 					61875,	-- The Unbound Healer
 					61874,	-- The Unbound Tank
 				}},
-				["groups"] = {
+				groups = {
 					title(636),	-- <Name> the Triple Threat
 				},
 			}),
 			ach(61875, {	-- The Unbound Healer (automated)
-				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },	-- Added October 24th (hotfixed)
+				timeline = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },	-- Added October 24th (hotfixed)
 			}),
 			ach(61874, {	-- The Unbound Tank (automated)
-				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },	-- Added October 24th (hotfixed)
+				timeline = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },	-- Added October 24th (hotfixed)
 			}),
 			-- Using ["_noautomation"] for all to reduce numbers a bit.
 			-- Have to see what Blizzard does with those kind of achievements	-- Goldenshacal 20th August 2025
 			ach(42149, {	-- The War Within Season 3: Resilient Keystone 12
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42150, {	-- The War Within Season 3: Resilient Keystone 13
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42151, {	-- The War Within Season 3: Resilient Keystone 14
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42152, {	-- The War Within Season 3: Resilient Keystone 15
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42153, {	-- The War Within Season 3: Resilient Keystone 16
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42154, {	-- The War Within Season 3: Resilient Keystone 17
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42155, {	-- The War Within Season 3: Resilient Keystone 18
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42156, {	-- The War Within Season 3: Resilient Keystone 19
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42157, {	-- The War Within Season 3: Resilient Keystone 20
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42158, {	-- The War Within Season 3: Resilient Keystone 21
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42159, {	-- The War Within Season 3: Resilient Keystone 22
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42160, {	-- The War Within Season 3: Resilient Keystone 23
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42161, {	-- The War Within Season 3: Resilient Keystone 24
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42162, {	-- The War Within Season 3: Resilient Keystone 25
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42802, {	-- The War Within Season 3: Resilient Keystone 26
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42803, {	-- The War Within Season 3: Resilient Keystone 27
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42804, {	-- The War Within Season 3: Resilient Keystone 28
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42805, {	-- The War Within Season 3: Resilient Keystone 29
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 			ach(42806, {	-- The War Within Season 3: Resilient Keystone 30
-				["_noautomation"] = true,
+				_noautomation = true,
 			}),
 		})),
 		n(QUESTS, {
 			q(87327, {	-- A Challenger's Resilience
-				["description"] = "Granted automatically once you have completed each seasonal dungeon in time on at least +12 difficulty.\n\nCan be completed each season.",
-				["qgs"] = {
+				description = "Granted automatically once you have completed each seasonal dungeon in time on at least +12 difficulty.\n\nCan be completed each season.",
+				qgs = {
 					197711,	-- Lindormi
 					197915,	-- Lindormi
 				},
-				["coords"] = {
+				coords = {
 					{ 53.9, 39.0, DORNOGAL },
 					-- #if AFTER MID
 					{ 42.1, 58.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 					-- #endif
 				},
-				["timeline"] = { ADDED_11_1_0_SEASONSTART },
-				["isYearly"] = true,	-- can be completed once per season
+				timeline = { ADDED_11_1_0_SEASONSTART },
+				isYearly = true,	-- can be completed once per season
 			}),
 		}),
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
 	n(MYTHIC_PLUS, {
 		q(85469),	-- First weekly completion of an 8+ Mythic Dungeon
 	}),

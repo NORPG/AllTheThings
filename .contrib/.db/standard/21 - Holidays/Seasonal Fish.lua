@@ -26,7 +26,7 @@ root(ROOTS.Holidays, {
 			tw = "季節性魚類：夏日鱸魚",
 		},
 	}), {
-		["maps"] = {
+		maps = {
 			-- #if AFTER CATA
 			BLASTED_LANDS,
 			SWAMP_OF_SORROWS,
@@ -38,9 +38,9 @@ root(ROOTS.Holidays, {
 			STRANGLETHORN_VALE,
 			-- #endif
 		},
-		["groups"] = {
+		groups = {
 			i(13756, {	-- Raw Summer Bass
-				["description"] =
+				description =
 					-- #if AFTER CATA
 					"Can be caught in open sea water in Blasted Lands and Swamp of Sorrows from 20th March to 22nd September.",
 					-- #else
@@ -72,7 +72,7 @@ root(ROOTS.Holidays, {
 			tw = "季節性魚類：冬魷魚",
 		},
 	}), {
-		["maps"] = {
+		maps = {
 			-- #if AFTER CATA
 			BLASTED_LANDS,
 			SWAMP_OF_SORROWS,
@@ -84,9 +84,9 @@ root(ROOTS.Holidays, {
 			STRANGLETHORN_VALE,
 			-- #endif
 		},
-		["groups"] = {
+		groups = {
 			i(13755, {	-- Winter Squid
-				["description"] =
+				description =
 					-- #if AFTER CATA
 					"Can be caught in open sea water in Blasted Lands and Swamp of Sorrows from 23nd September to 20th March.",
 					-- #else

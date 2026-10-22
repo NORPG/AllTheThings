@@ -5,12 +5,12 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(ISLAND_EXPEDITIONS, {
 		n(SCENARIO_COMPLETION, {
-			["description"] = "These are the random rewards you can receive by completing an Island Expedition or by purchasing the salvage boxes from vendors. It is estimated that winning will give you a higher chance to receive a reward.\n\nIf you receive something not listed here, please screenshot and submit it to our Discord.",
-			["groups"] = bubbleDown({["modID"] = 0}, {
+			description = "These are the random rewards you can receive by completing an Island Expedition or by purchasing the salvage boxes from vendors. It is estimated that winning will give you a higher chance to receive a reward.\n\nIf you receive something not listed here, please screenshot and submit it to our Discord.",
+			groups = bubbleDown({modID = 0}, {
 				i(173950, {	-- Crestfall Salvage
-					["modID"] = 14,
-					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["groups"] = {
+					modID = 14,
+					sym = {{"sub","common_island_expedition_salvage"}},
+					groups = {
 						n(HEAD, {
 							i(164367),	-- Plundered Blue Captain's Hat
 							i(164368),	-- Plundered Crimson Captain's Hat
@@ -44,7 +44,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						filter(BATTLE_PETS, {
 							i(163798),	-- Captain Nibs (PET!)
 							i(169205, {	-- Ghostly Whelpling (PET!)
-								["timeline"] = { ADDED_8_2_0 },
+								timeline = { ADDED_8_2_0 },
 							}),
 							i(163804),	-- Kindleweb Spiderling (PET!)
 							i(163800),	-- Poro (PET!)
@@ -63,9 +63,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					},
 				}),
 				i(173949, {	-- Dread Chain Salvage
-					["modID"] = 14,
-					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["groups"] = {
+					modID = 14,
+					sym = {{"sub","common_island_expedition_salvage"}},
+					groups = {
 						n(ARMOR, {
 							i(164508),	-- Frostwind Cowl
 							i(164513),	-- Frostwind Mantle
@@ -117,9 +117,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					},
 				}),
 				i(173988, {	-- Havenswood Salvage
-					["modID"] = 14,
-					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["groups"] = {
+					modID = 14,
+					sym = {{"sub","common_island_expedition_salvage"}},
+					groups = {
 						n(ARMOR, {
 							i(166828),	-- Dark Animator's Cowl
 							i(166825),	-- Dark Animator's Mantle
@@ -151,10 +151,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						filter(BATTLE_PETS, {
 							i(163804),	-- Kindleweb Spiderling (PET!)
 							i(166494, {	-- Lord Woofington (PET!)
-								["timeline"] = { ADDED_8_1_0 },
+								timeline = { ADDED_8_1_0 },
 							}),
 							i(166488, {	-- Rotting Ghoul (PET!)
-								["timeline"] = { ADDED_8_1_0 },
+								timeline = { ADDED_8_1_0 },
 							}),
 							i(163808),	-- Sandshell Chitterer (PET!)
 							i(163797),	-- Scuttle (PET!)
@@ -169,9 +169,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					},
 				}),
 				i(173989, {	-- Jorundall Salvage
-					["modID"] = 14,
-					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["groups"] = {
+					modID = 14,
+					sym = {{"sub","common_island_expedition_salvage"}},
+					groups = {
 						n(ARMOR, {
 							i(164534),	-- Bloodwake Helmet
 							i(164536),	-- Bloodwake Spaulders
@@ -208,7 +208,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							i(163808),	-- Sandshell Chitterer (PET!)
 							i(163797),	-- Scuttle (PET!)
 							i(166499, {	-- Thunderscale Whelpling (PET!)
-								["timeline"] = { ADDED_8_1_0 },
+								timeline = { ADDED_8_1_0 },
 							}),
 							i(163807),	-- Tinder Pup (PET!)
 						}),
@@ -229,9 +229,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					},
 				}),
 				i(173991, {	-- Rotting Mire Salvage
-					["modID"] = 14,
-					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["groups"] = {
+					modID = 14,
+					sym = {{"sub","common_island_expedition_salvage"}},
+					groups = {
 						n(HEAD, {
 							i(164367),	-- Plundered Blue Captain's Hat
 							i(164368),	-- Plundered Crimson Captain's Hat
@@ -280,9 +280,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					},
 				}),
 				i(173992, {	-- Skittering Hollow Salvage
-					["modID"] = 14,
-					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["groups"] = {
+					modID = 14,
+					sym = {{"sub","common_island_expedition_salvage"}},
+					groups = {
 						n(ARMOR, {
 							i(164476),	-- Spider Acolyte's Cowl
 							i(164481),	-- Spider Acolyte's Amice
@@ -301,7 +301,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						filter(BATTLE_PETS, {
 							i(163808),	-- Sandshell Chitterer (PET!)
 							i(166488, {	-- Rotting Ghoul (PET!)
-								["timeline"] = { ADDED_8_1_0 },
+								timeline = { ADDED_8_1_0 },
 							}),
 							i(163824),	-- Voru'kar Leecher (PET!)
 						}),
@@ -312,9 +312,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					},
 				}),
 				i(173993, {	-- Snowblossom Salvage
-					["modID"] = 14,
-					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["groups"] = {
+					modID = 14,
+					sym = {{"sub","common_island_expedition_salvage"}},
+					groups = {
 						n(ARMOR, {
 							i(164452),	-- Swarmfury Crown
 							i(164457),	-- Swarmfury Amice
@@ -340,7 +340,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						}),
 						filter(BATTLE_PETS, {
 							i(169322, {	-- Adventurous Hopling (PET!)
-								["timeline"] = { ADDED_8_2_0 },
+								timeline = { ADDED_8_2_0 },
 							}),
 							i(163802),	-- Inky (PET!)
 							i(163804),	-- Kindleweb Spiderling (PET!)
@@ -369,9 +369,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					},
 				}),
 				i(173990, {	-- Molten Cay Salvage
-					["modID"] = 14,
-					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["groups"] = {
+					modID = 14,
+					sym = {{"sub","common_island_expedition_salvage"}},
+					groups = {
 						n(ARMOR, {
 							i(164526),	-- Rattling Bone Mask
 							i(164528),	-- Rattling Bone Spaulders
@@ -432,9 +432,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					},
 				}),
 				i(173994, {	-- Un'gol Ruins Salvage
-					["modID"] = 14,
-					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["groups"] = {
+					modID = 14,
+					sym = {{"sub","common_island_expedition_salvage"}},
+					groups = {
 						n(ARMOR, {
 							i(164495),	-- Headshrinker's Cowl
 							i(164497),	-- Headshrinker's Shoulders
@@ -471,9 +471,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					},
 				}),
 				i(173996, {	-- Verdant Wilds Salvage
-					["modID"] = 14,
-					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["groups"] = {
+					modID = 14,
+					sym = {{"sub","common_island_expedition_salvage"}},
+					groups = {
 						n(ARMOR, {
 							i(164391),	-- Feralbark Cover
 							i(164393),	-- Feralbark Shoulders
@@ -510,9 +510,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					},
 				}),
 				i(173997, {	-- Whispering Reef Salvage
-					["modID"] = 14,
-					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["groups"] = {
+					modID = 14,
+					sym = {{"sub","common_island_expedition_salvage"}},
+					groups = {
 						n(ARMOR, {
 							i(164471),	-- Mrrglurggl Helm
 							i(164473),	-- Mrrglurggl Spaulders
@@ -545,9 +545,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					},
 				}),
 				i(173987, {	-- Elemental Salvage
-					["modID"] = 14,
-					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["groups"] = {
+					modID = 14,
+					sym = {{"sub","common_island_expedition_salvage"}},
+					groups = {
 						n(ARMOR, {
 							i(164559),	-- Firekin Headgear
 							i(164561),	-- Firekin Amice
@@ -603,9 +603,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					},
 				}),
 				i(173995, {	-- Venture Co 'Salvage'
-					["modID"] = 14,
-					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["groups"] = {
+					modID = 14,
+					sym = {{"sub","common_island_expedition_salvage"}},
+					groups = {
 						n(ARMOR, {
 							i(164399),	-- Dragonrider's Helmet
 							i(164401),	-- Dragonrider's Spaulders
@@ -643,58 +643,58 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				}),
 				filter(MISC, {
 					i(163611, {	-- Seafarer's Coin Pouch
-						["description"] = "Contains roughly 1-4 dubloons, more if you have the research.",
-						["groups"] = {
+						description = "Contains roughly 1-4 dubloons, more if you have the research.",
+						groups = {
 							currency(1710),	-- Seafarer's Dubloon
 						},
 					}),
 					i(163612, {	-- Wayfinder's Satchel
-						["description"] = "Contains roughly 5-8 dubloons, more if you have the research.",
-						["groups"] = {
+						description = "Contains roughly 5-8 dubloons, more if you have the research.",
+						groups = {
 							currency(1710),	-- Seafarer's Dubloon
 						},
 					}),
 					i(163613, {	-- Sack of Plunder
-						["description"] = "Contains roughly 9-12 dubloons, more if you have the research.",
-						["groups"] = {
+						description = "Contains roughly 9-12 dubloons, more if you have the research.",
+						groups = {
 							currency(1710),	-- Seafarer's Dubloon
 						},
 					}),
 					i(163217, {	-- Azeroth's Tear [Both]
-						["description"] = "|CFFFF0000Turn in to Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
+						description = "|CFFFF0000Turn in to Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
 					}),
 					i(163616, {	-- Dented Coin (A)
-						["description"] = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
+						description = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
 					}),
 					i(163614, {	-- Exotic Spices (A)
-						["description"] = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
+						description = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
 					}),
 					i(173947, {	-- Glittering Abyssal Conch (A)
-						["timeline"] = { ADDED_8_3_0 },
+						timeline = { ADDED_8_3_0 },
 					}),
 					i(173948, {	-- Glittering Abyssal Conch (H)
-						["timeline"] = { ADDED_8_3_0 },
+						timeline = { ADDED_8_3_0 },
 					}),
 					i(163619, {	-- Golden Beetle (H)
-						["description"] = "|CFFFF0000Turn in to Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
+						description = "|CFFFF0000Turn in to Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
 					}),
 					i(163620, {	-- Island Flotsam (H)
-						["description"] = "|CFFFF0000Turn in to Jani in Dazar'alor for Zandalari Empire rep.|r",
+						description = "|CFFFF0000Turn in to Jani in Dazar'alor for Zandalari Empire rep.|r",
 					}),
 					i(163615, {	-- Lost Sea Scroll (A)
-						["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
+						description = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
 					}),
 					i(163617, {	-- Rusted Alliance Insignia (A)
-						["description"] = "|CFFFF0000Turn in to Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
+						description = "|CFFFF0000Turn in to Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
 					}),
 					i(163621, {	-- Rusted Horde Insignia (H)
-						["description"] = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
+						description = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
 					}),
 					i(163618, {	-- Shimmering Shell (H)
-						["description"] = "|CFFFF0000Turn in to Hoarder Jena in Vol'dun for Voldunai rep.|r",
+						description = "|CFFFF0000Turn in to Hoarder Jena in Vol'dun for Voldunai rep.|r",
 					}),
 					i(166501, {	-- Soggy Page
-						["description"] = "|CFFFF0000Turn in to Collector Kojo in Stormsong Valley (Alliance) or Zuldazar (Horde) for Tortollan Seekers rep.|r",
+						description = "|CFFFF0000Turn in to Collector Kojo in Stormsong Valley (Alliance) or Zuldazar (Horde) for Tortollan Seekers rep.|r",
 					}),
 					i(173736),	-- Layered Information Kernel of E-steam
 					i(174521),	-- Transferable Kernel of E-steam
@@ -716,11 +716,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					i(163477),	-- Unscarred Black Scale
 					i(163479),	-- Venture Co. Business Plan
 					i(163484, {	-- Vorus'arak's Carapace
-						["cr"] = 139889,	-- Vorus'arak
+						cr = 139889,	-- Vorus'arak
 					}),
 					i(163488),	-- Weathered Pamphlet
 					i(163487, {	-- Wriggling Mass
-						["description"] = "Can be turned in at old or new Silithus.",
+						description = "Can be turned in at old or new Silithus.",
 					}),
 				}),
 				filter(MOUNTS, {
@@ -728,28 +728,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				}),
 				filter(BATTLE_PETS, {
 					i(166486, {	-- Baby Stonehide (PET!)
-						["timeline"] = { ADDED_8_1_0 },
+						timeline = { ADDED_8_1_0 },
 					}),
 					i(163818),	-- Bloodstone Tunneler (PET!)
 					i(163805),	-- Craghoof Kid [Verdant Wilds / Molten Cay] (PET!)
 					i(163809),	-- Deathsting Scorpid [Molten Cay] (PET!)
 					i(163806),	-- False Knucklebump [Molten Cay] (PET!)
 					i(166493, {	-- Firesting Buzzer (PET!)
-						["timeline"] = { ADDED_8_1_0 },
+						timeline = { ADDED_8_1_0 },
 					}),
 					i(166487, {	-- Leatherwing Screecher (PET!)
-						["timeline"] = { ADDED_8_1_0 },
+						timeline = { ADDED_8_1_0 },
 					}),
 					i(163815),	-- Littlehoof (PET!)
 					i(163820),	-- Muskflank Calfling (PET!)
 					i(166489, {	-- Needleback Pup (PET!)
-						["timeline"] = { ADDED_8_1_0 },
+						timeline = { ADDED_8_1_0 },
 					}),
 					i(166498, {	-- Scritches (PET!)
-						["timeline"] = { ADDED_8_1_0 },
+						timeline = { ADDED_8_1_0 },
 					}),
 					i(166492, {	-- Shadefeather Hatchling (PET!)
-						["timeline"] = { ADDED_8_1_0 },
+						timeline = { ADDED_8_1_0 },
 					}),
 					i(163816),	-- Snapper (PET!)
 					i(163819),	-- Snort (PET!)
@@ -757,7 +757,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					i(163817),	-- Sunscale Hatchling [Skittering Hallow] (PET!)
 					i(163810),	-- Thistlebrush Bud [Molten Cay] (PET!)
 					i(166495, {	-- Tonguelasher (PET!)
-						["timeline"] = { ADDED_8_1_0 },
+						timeline = { ADDED_8_1_0 },
 					}),
 				}),
 				n(WEAPONS, {

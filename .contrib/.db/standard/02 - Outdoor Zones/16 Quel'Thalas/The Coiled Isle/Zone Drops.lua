@@ -11,8 +11,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			-- QSs
 			i(268953, {	-- Familiar Amani Headdress (QS!)
-				["cr"] = 260724,	-- Serpentine Lurker
-				["coords"] = {
+				cr = 260724,	-- Serpentine Lurker
+				coords = {
 					{ 53.0, 44.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 53.8, 42.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 53.8, 42.7, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -21,8 +21,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			i(268951, {	-- Familiar Threshadon Tooth Necklace (QS!)
-				["cr"] = 260724,	-- Serpentine Lurker
-				["coords"] = {
+				cr = 260724,	-- Serpentine Lurker
+				coords = {
 					{ 53.0, 44.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 53.8, 42.3, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 53.8, 42.7, MAP.MIDNIGHT.THE_COILED_ISLE },

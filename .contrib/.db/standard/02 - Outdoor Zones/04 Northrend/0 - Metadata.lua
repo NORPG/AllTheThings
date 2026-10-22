@@ -4,76 +4,76 @@
 
 root(ROOTS.Zones, {
 	applyclassicphase(WRATH_PHASE_ONE, m(NORTHREND, {
-		["lore"] = "Northrend is the northern, icy continent of the world of Azeroth, and the source of the evil Scourge. It is also the home of Icecrown Citadel, the seat of the malevolent Lich King.",
-		["icon"] = 236812,
-		["isContinent"] = true,
-		["timeline"] = { ADDED_3_0_2 },	-- NOTE: This is the base patch for all of the content on this continent and does not need to be added to everything within it.
-		["groups"] = {
+		lore = "Northrend is the northern, icy continent of the world of Azeroth, and the source of the evil Scourge. It is also the home of Icecrown Citadel, the seat of the malevolent Lich King.",
+		icon = 236812,
+		isContinent = true,
+		timeline = { ADDED_3_0_2 },	-- NOTE: This is the base patch for all of the content on this continent and does not need to be added to everything within it.
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(2257),	-- Frostbitten
 				applyclassicphase(WRATH_PHASE_ONE, ach(41, {	-- Loremaster of Northrend (A) (automated)
 					-- #if BEFORE 5.0.4
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 					-- #endif
 				})),
 				-- #if BEFORE 5.0.4
 				ach(1360, {	-- Loremaster of Northrend (H) (automated)
-					["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
-					["races"] = HORDE_ONLY,
+					timeline = { ADDED_3_0_2, DELETED_5_0_4 },
+					races = HORDE_ONLY,
 				}),
 				-- #endif
 				achpart(2256, 2257),	-- Northern Exposure (automated)
 				applyclassicphase(WRATH_PHASE_ONE, ach(45, {	-- Northrend Explorer [7.0.3] / Explore Northrend (automated)
-					["groups"] = {
+					groups = {
 						i(43348),	-- Tabard of the Explorer
 					},
 				})),
-				petbattle(ach(6588, { ["timeline"] = { ADDED_5_0_4 } })),	-- Northrend Safari (automated)
-				petbattle(ach(6615, { ["timeline"] = { ADDED_5_0_4 } })),	-- Northrend Tamer (automated)
+				petbattle(ach(6588, { timeline = { ADDED_5_0_4 } })),	-- Northrend Safari (automated)
+				petbattle(ach(6615, { timeline = { ADDED_5_0_4 } })),	-- Northrend Tamer (automated)
 				petbattle(ach(6605, {	-- Taming Northrend (automated)
-					["timeline"] = { ADDED_5_0_4 },
+					timeline = { ADDED_5_0_4 },
 				})),
 				ach(2557, {	-- To All The Squirrels Who Shared My Life
 					-- #if ANYCLASSIC
 					crit(9299, {	-- Arctic Hare (Dragonblight, Zul'Drak, Borean Tundra)
-						["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, ZULDRAK },
-						["crs"] = { 29328 },	-- Arctic Hare
+						maps = { BOREAN_TUNDRA, DRAGONBLIGHT, ZULDRAK },
+						crs = { 29328 },	-- Arctic Hare
 					}),
 					crit(9300, {	-- Borean Marmot (Borean Tundra)
-						["maps"] = { BOREAN_TUNDRA },
-						["crs"] = { 31685 },	-- Borean Marmot
+						maps = { BOREAN_TUNDRA },
+						crs = { 31685 },	-- Borean Marmot
 					}),
 					-- #else
 					crit(21293, {	-- Arctic Hare (Dragonblight, Zul'Drak, Borean Tundra)
-						["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, ZULDRAK },
-						["provider"] = { "n", 29328 },	-- Arctic Hare
+						maps = { BOREAN_TUNDRA, DRAGONBLIGHT, ZULDRAK },
+						provider = { "n", 29328 },	-- Arctic Hare
 					}),
 					crit(21294, {	-- Borean Marmot (Borean Tundra)
-						["maps"] = { BOREAN_TUNDRA },
-						["provider"] = { "n", 31685 },	-- Borean Marmot
+						maps = { BOREAN_TUNDRA },
+						provider = { "n", 31685 },	-- Borean Marmot
 					}),
 					-- #endif
 					crit(9301, {	-- Fjord Penguin (Howling Fjord)
-						["maps"] = { HOWLING_FJORD },
-						["crs"] = { 28407 },	-- Fjord Penguin
+						maps = { HOWLING_FJORD },
+						crs = { 28407 },	-- Fjord Penguin
 					}),
 					crit(9302, {	-- Fjord Turkey (Howling Fjord)
-						["maps"] = { HOWLING_FJORD },
-						["crs"] = { 24746 },	-- Fjord Turkey
+						maps = { HOWLING_FJORD },
+						crs = { 24746 },	-- Fjord Turkey
 					}),
 					crit(9303, {	-- Glacier Penguin (Icecrown)
-						["maps"] = { ICECROWN },
-						["crs"] = { 32498 },	-- Glacier Penguin
+						maps = { ICECROWN },
+						crs = { 32498 },	-- Glacier Penguin
 					}),
 					-- #if ANYCLASSIC
 					crit(9304, {	-- Grizzly Squirrel (Grizzly Hills, Twilight Highlands)
-						["maps"] = {
+						maps = {
 							GRIZZLY_HILLS,
 							-- #if AFTER CATA
 							TWILIGHT_HIGHLANDS,
 							-- #endif
 						},
-						["crs"] = {
+						crs = {
 							31889,	-- Grizzly Squirrel
 							-- #if AFTER CATA
 							62818,	-- Grizzly Squirrel
@@ -82,13 +82,13 @@ root(ROOTS.Zones, {
 					}),
 					-- #else
 					crit(21295, {	-- Grizzly Squirrel (Grizzly Hills, Twilight Highlands)
-						["maps"] = {
+						maps = {
 							GRIZZLY_HILLS,
 							-- #if AFTER CATA
 							TWILIGHT_HIGHLANDS,
 							-- #endif
 						},
-						["providers"] = {
+						providers = {
 							{ "n", 31889 },	-- Grizzly Squirrel
 							-- #if AFTER CATA
 							{ "n", 62818 },	-- Grizzly Squirrel
@@ -98,54 +98,54 @@ root(ROOTS.Zones, {
 					-- #endif
 					-- #if BEFORE CATA
 					crit(3753, {	-- Hare (Durotar)
-						["maps"] = { DUROTAR },
-						["crs"] = { 5951 },	-- Hare
+						maps = { DUROTAR },
+						crs = { 5951 },	-- Hare
 					}),
 					-- #endif
 					-- #if ANYCLASSIC
 					crit(9305, {	-- Huge Toad (Hillsbrad Foothills, Twilight Highlands, Zul'Drak, Swamp of Sorrows)
-						["maps"] = { HILLSBRAD_FOOTHILLS, SWAMP_OF_SORROWS, ZULDRAK },
-						["crs"] = { 6653 },	-- Huge Toad
+						maps = { HILLSBRAD_FOOTHILLS, SWAMP_OF_SORROWS, ZULDRAK },
+						crs = { 6653 },	-- Huge Toad
 					}),
 					crit(9306, {	-- Lava Crab (Searing Gorge, Burning Steppes)
-						["maps"] = { SEARING_GORGE, BURNING_STEPPES },
-						["crs"] = { 9700 },	-- Lava Crab
+						maps = { SEARING_GORGE, BURNING_STEPPES },
+						crs = { 9700 },	-- Lava Crab
 					}),
 					crit(9307, {	-- Mountain Skunk (Stonetalon Mountains, Grizzly Hills, Winterspring, Howling Fjord)
-						["maps"] = { GRIZZLY_HILLS, HOWLING_FJORD, STONETALON_MOUNTAINS, WINTERSPRING },
-						["crs"] = { 31890 },	-- Mountain Skunk
+						maps = { GRIZZLY_HILLS, HOWLING_FJORD, STONETALON_MOUNTAINS, WINTERSPRING },
+						crs = { 31890 },	-- Mountain Skunk
 					}),
 					-- #else
 					crit(21296, {	-- Huge Toad (Hillsbrad Foothills, Twilight Highlands, Zul'Drak, Swamp of Sorrows)
-						["maps"] = { HILLSBRAD_FOOTHILLS, SWAMP_OF_SORROWS, ZULDRAK },
-						["provider"] = { "n", 6653 },	-- Huge Toad
+						maps = { HILLSBRAD_FOOTHILLS, SWAMP_OF_SORROWS, ZULDRAK },
+						provider = { "n", 6653 },	-- Huge Toad
 					}),
 					crit(21297, {	-- Lava Crab (Searing Gorge, Burning Steppes)
-						["maps"] = { SEARING_GORGE, BURNING_STEPPES },
-						["provider"] = { "n", 9700 },	-- Lava Crab
+						maps = { SEARING_GORGE, BURNING_STEPPES },
+						provider = { "n", 9700 },	-- Lava Crab
 					}),
 					crit(21298, {	-- Mountain Skunk (Stonetalon Mountains, Grizzly Hills, Winterspring, Howling Fjord)
-						["maps"] = { GRIZZLY_HILLS, HOWLING_FJORD, STONETALON_MOUNTAINS, WINTERSPRING },
-						["provider"] = { "n", 31890 },	-- Mountain Skunk
+						maps = { GRIZZLY_HILLS, HOWLING_FJORD, STONETALON_MOUNTAINS, WINTERSPRING },
+						provider = { "n", 31890 },	-- Mountain Skunk
 					}),
 					-- #endif
 					crit(9308, {	-- Scalawag Frog (Howling Fjord)
-						["maps"] = { HOWLING_FJORD },
-						["crs"] = { 26503 },	-- Scalawag Frog
+						maps = { HOWLING_FJORD },
+						crs = { 26503 },	-- Scalawag Frog
 					}),
 					crit(9309, {	-- Sholazar Tickbird (Sholazar Basin)
-						["maps"] = { SHOLAZAR_BASIN },
-						["crs"] = { 28093 },	-- Sholazar Tickbird
+						maps = { SHOLAZAR_BASIN },
+						crs = { 28093 },	-- Sholazar Tickbird
 					}),
 					-- #if ANYCLASSIC
 					crit(9310, {	-- Tundra Penguin (Borean Tundra)
-						["maps"] = { BOREAN_TUNDRA },
-						["crs"] = { 28440 },	-- Tundra Penguin
+						maps = { BOREAN_TUNDRA },
+						crs = { 28440 },	-- Tundra Penguin
 					}),
 					-- #else
 					crit(21299, {	-- Tundra Penguin (Borean Tundra)
-						["maps"] = { BOREAN_TUNDRA },
-						["provider"] = { "n", 28440 },	-- Tundra Penguin
+						maps = { BOREAN_TUNDRA },
+						provider = { "n", 28440 },	-- Tundra Penguin
 					}),
 					-- #endif
 				}),
@@ -153,8 +153,8 @@ root(ROOTS.Zones, {
 			-- #if AFTER 5.3.0
 			battlepets({
 				pet(1238, {	-- Unborn Val'kyr (PET!)
-					["description"] = "This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.",
-					["coords"] = {
+					description = "This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.",
+					coords = {
 						{ 47.7, 7.65, BOREAN_TUNDRA },	-- Northwest of Bor'Gorok Outpost
 						{ 32.85, 60.25, BOREAN_TUNDRA },	-- South of Garrosh's Landing
 						{ 80.9, 48.4, BOREAN_TUNDRA },	-- The Frozen Reach, southwest of Death's Stand
@@ -182,7 +182,7 @@ root(ROOTS.Zones, {
 						{ 24.35, 64.0, ZULDRAK },	-- The Dead Fields, just west of Crusader Forward Camp
 						-- Not confirmed: { 75.1, 23.1, ZULDRAK },	-- Just south of Gundrak dungeon's northwestern entrance
 					},
-					["timeline"] = { ADDED_5_3_0 },
+					timeline = { ADDED_5_3_0 },
 				}),
 			}),
 			-- #endif

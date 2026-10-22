@@ -2,12 +2,12 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
 	m(MECHAGON, {
 		n(ZONE_DROPS, {
 			i(168491, {	-- Blueprint: Personal Time Displacer
-				["description"] = "Drops from normal mobs during the |cFFFFD700The Other Place|r quest.",
-				["crs"] = {
+				description = "Drops from normal mobs during the |cFFFFD700The Other Place|r quest.",
+				crs = {
 					153991,	-- Clockwork Giant
 				},
 			}),

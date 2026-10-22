@@ -4,10 +4,10 @@
 
 local MageTowerFilter
 -- #if BEFORE BFA
-MageTowerFilter = {["u"] = 41};
+MageTowerFilter = {u = 41};
 -- #else
 MageTowerFilter =
-{["timeline"] = {
+{timeline = {
 	ADDED_7_2_0,
 	REMOVED_8_0_1,
 }};
@@ -18,10 +18,10 @@ local honorLevel50 = {};
 local honorLevel80 = {};
 root(ROOTS.PVP, {
 	n(PVP_HONOR, {
-		ach(12894, { ["groups"] = honorLevel10 }),	-- Honor Level 10
-		ach(12902, { ["groups"] = honorLevel30 }),	-- Honor Level 30
-		ach(12904, { ["groups"] = honorLevel50 }),	-- Honor Level 50
-		ach(12907, { ["groups"] = honorLevel80 }),	-- Honor Level 80
+		ach(12894, { groups = honorLevel10 }),	-- Honor Level 10
+		ach(12902, { groups = honorLevel30 }),	-- Honor Level 30
+		ach(12904, { groups = honorLevel50 }),	-- Honor Level 50
+		ach(12907, { groups = honorLevel80 }),	-- Honor Level 80
 	}),
 });
 local thisSideUpAch = {};
@@ -34,11 +34,11 @@ table.insert(prestige, {});
 table.insert(prestige, {});
 local cl = function(classID, t)
 	local c = oldcl(classID, t);
-	table.insert(honorLevel10, oldcl(classID, { ["groups"] = prestige[1] }));
-	table.insert(honorLevel30, oldcl(classID, { ["groups"] = prestige[2] }));
-	table.insert(honorLevel50, oldcl(classID, { ["groups"] = prestige[3] }));
-	table.insert(honorLevel80, oldcl(classID, { ["groups"] = prestige[4] }));
-	table.insert(thisSideUpAch, oldcl(classID, { ["groups"] = thisSideUp }));
+	table.insert(honorLevel10, oldcl(classID, { groups = prestige[1] }));
+	table.insert(honorLevel30, oldcl(classID, { groups = prestige[2] }));
+	table.insert(honorLevel50, oldcl(classID, { groups = prestige[3] }));
+	table.insert(honorLevel80, oldcl(classID, { groups = prestige[4] }));
+	table.insert(thisSideUpAch, oldcl(classID, { groups = thisSideUp }));
 	thisSideUp = {};
 	prestige = {};
 	table.insert(prestige, {});
@@ -198,14 +198,14 @@ end
 root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.LEGION, {
 		n(ARTIFACTS, {
-			["description"] = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",
-			["ItemAppearanceModifierID"] = 9,
-			["timeline"] = { ADDED_7_0_3 },
-			["groups"] = {
+			description = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",
+			ItemAppearanceModifierID = 9,
+			timeline = { ADDED_7_0_3 },
+			groups = {
 				cl(WARRIOR, {
 					i(128910, {	-- Strom'kar, the Warbreaker
-						["ItemAppearanceModifierID"] = 0,
-						["groups"] = {
+						ItemAppearanceModifierID = 0,
+						groups = {
 							BaseAppearance(1257950, {
 								artifact(295),	-- Standard
 								artifact(791),	-- Recover one of the Pillars
@@ -287,7 +287,7 @@ root(ROOTS.ExpansionFeatures,
 							artifact(963),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(134553, bubbleDown({ ["isOffHand"] = 1 }, {	-- Warswords of the Valarjar [Off Hand]
+					i(134553, bubbleDown({ isOffHand = 1 }, {	-- Warswords of the Valarjar [Off Hand]
 						BaseAppearance(1278409, {
 							artifact(296),	-- Standard
 							artifact(654),	-- Recover one of the Pillars
@@ -330,7 +330,7 @@ root(ROOTS.ExpansionFeatures,
 							artifact(963),	-- Kill 1,000 Players Hidden
 						}),
 					})),
-					i(128289, bubbleDown({ ["isOffHand"] = 1 }, {	-- Scale of the Earth-Warder
+					i(128289, bubbleDown({ isOffHand = 1 }, {	-- Scale of the Earth-Warder
 						BaseAppearance(1139451, {
 							artifact(66),	-- Standard
 							artifact(147),	-- Recover one of the Pillars
@@ -484,7 +484,7 @@ root(ROOTS.ExpansionFeatures,
 							artifact(980),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(128866, bubbleDown({ ["isOffHand"] = 1 }, {	-- Truthguard
+					i(128866, bubbleDown({ isOffHand = 1 }, {	-- Truthguard
 						BaseAppearance(1272527, {
 							artifact(291),	-- Standard
 							artifact(704),	-- Recover one of the Pillars
@@ -671,7 +671,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						HiddenAppearance(1257963, {
 							artifact(473, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139557 },	-- Last Breath of the Forest
+								provider = { "i", 139557 },	-- Last Breath of the Forest
 							}),
 							artifact(483),	-- Complete 30 Legion Dungeons Hidden
 							artifact(484),	-- Complete 200 WQ Hidden
@@ -713,14 +713,14 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						HiddenAppearance(1267044, {
 							artifact(611, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139570 },	-- The Cypher of Broken Bone
+								provider = { "i", 139570 },	-- The Cypher of Broken Bone
 							}),
 							artifact(610),	-- Complete 30 Legion Dungeons Hidden
 							artifact(609),	-- Complete 200 WQ Hidden
 							artifact(612),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(128869, bubbleDown({ ["isOffHand"] = 1 }, {	-- The Kingslayers [Off Hand]
+					i(128869, bubbleDown({ isOffHand = 1 }, {	-- The Kingslayers [Off Hand]
 						BaseAppearance(1259291, {
 							artifact(228),	-- Standard
 							artifact(115),	-- Recover one of the Pillars
@@ -753,7 +753,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						HiddenAppearance(1267044, {
 							artifact(611, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139570 },	-- The Cypher of Broken Bone
+								provider = { "i", 139570 },	-- The Cypher of Broken Bone
 							}),
 							artifact(610),	-- Complete 30 Legion Dungeons Hidden
 							artifact(609),	-- Complete 200 WQ Hidden
@@ -798,7 +798,7 @@ root(ROOTS.ExpansionFeatures,
 							artifact(884),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(134552, bubbleDown({ ["isOffHand"] = 1 }, {	-- The Dreadblades [Off Hand]
+					i(134552, bubbleDown({ isOffHand = 1 }, {	-- The Dreadblades [Off Hand]
 						BaseAppearance(1267793, {
 							artifact(692),	-- Standard
 							artifact(693),	-- Recover one of the Pillars
@@ -874,7 +874,7 @@ root(ROOTS.ExpansionFeatures,
 							artifact(892),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(128479, bubbleDown({ ["isOffHand"] = 1 }, {	-- Fangs of the Devourer [Off Hand]
+					i(128479, bubbleDown({ isOffHand = 1 }, {	-- Fangs of the Devourer [Off Hand]
 						BaseAppearance(1120132, {
 							artifact(67),	-- Standard
 							artifact(68),	-- Recover one of the Pillars
@@ -1027,14 +1027,14 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						HiddenAppearance(1345184, {
 							artifact(950, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139569 },	-- Claw of N'Zoth
+								provider = { "i", 139569 },	-- Claw of N'Zoth
 							}),
 							artifact(949),	-- Complete 30 Legion Dungeons Hidden
 							artifact(951),	-- Complete 200 WQ Hidden
 							artifact(952),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(133958, bubbleDown({ ["isOffHand"] = 1 }, {	-- Secrets of the Void
+					i(133958, bubbleDown({ isOffHand = 1 }, {	-- Secrets of the Void
 						BaseAppearance(1336578, {
 							artifact(119),	-- Standard
 							artifact(245),	-- Recover one of the Pillars
@@ -1067,7 +1067,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						HiddenAppearance(1353054, {
 							artifact(950, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139569 },	-- Claw of N'Zoth
+								provider = { "i", 139569 },	-- Claw of N'Zoth
 							}),
 							artifact(949),	-- Complete 30 Legion Dungeons Hidden
 							artifact(951),	-- Complete 200 WQ Hidden
@@ -1077,8 +1077,8 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				cl(DEATHKNIGHT, {
 					i(128402, {	-- Maw of the Damned
-						["ItemAppearanceModifierID"] = 0,
-						["groups"] = {
+						ItemAppearanceModifierID = 0,
+						groups = {
 							BaseAppearance(1121487, {
 								artifact(107),	-- Standard
 								artifact(355),	-- Recover one of the Pillars
@@ -1150,14 +1150,14 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						HiddenAppearance(1324431, {
 							artifact(870, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139547 },	-- Runes of the Darkening
+								provider = { "i", 139547 },	-- Runes of the Darkening
 							}),
 							artifact(869),	-- Complete 30 Legion Dungeons Hidden
 							artifact(871),	-- Complete 200 WQ Hidden
 							artifact(872),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(128293, bubbleDown({ ["isOffHand"] = 1 }, {	-- Blades of the Fallen Prince [Off Hand]
+					i(128293, bubbleDown({ isOffHand = 1 }, {	-- Blades of the Fallen Prince [Off Hand]
 						BaseAppearance(1125285, {
 							artifact(111),	-- Standard
 							artifact(374),	-- Recover one of the Pillars
@@ -1190,7 +1190,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						HiddenAppearance(1324431, {
 							artifact(870, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139547 },	-- Runes of the Darkening
+								provider = { "i", 139547 },	-- Runes of the Darkening
 							}),
 							artifact(869),	-- Complete 30 Legion Dungeons Hidden
 							artifact(871),	-- Complete 200 WQ Hidden
@@ -1270,14 +1270,14 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						HiddenAppearance(1345185, {
 							artifact(880, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139573, }	-- The Warmace of Shirvallah (Shaman Artifact)
+								provider = { "i", 139573, }	-- The Warmace of Shirvallah (Shaman Artifact)
 							}),
 							artifact(878),	-- Complete 30 Legion Dungeons Hidden
 							artifact(879),	-- Complete 200 WQ Hidden
 							artifact(877),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(128873, bubbleDown({ ["isOffHand"] = 1 }, {	-- Fury of the Stonemother
+					i(128873, bubbleDown({ isOffHand = 1 }, {	-- Fury of the Stonemother
 						BaseAppearance(1282282, {
 							artifact(117),	-- Standard
 							artifact(297),	-- Recover one of the Pillars
@@ -1310,7 +1310,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						HiddenAppearance(1397641, {
 							artifact(880, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139573, }	-- The Warmace of Shirvallah (Shaman Artifact)
+								provider = { "i", 139573, }	-- The Warmace of Shirvallah (Shaman Artifact)
 							}),
 							artifact(878),	-- Complete 30 Legion Dungeons Hidden
 							artifact(879),	-- Complete 200 WQ Hidden
@@ -1350,16 +1350,16 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						HiddenAppearance(1350105, {
 							artifact(900, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139572 },	-- Lost Codex of the Amani
+								provider = { "i", 139572 },	-- Lost Codex of the Amani
 							}),
 							artifact(898),	-- Complete 30 Legion Dungeons Hidden
 							artifact(899),	-- Complete 200 WQ Hidden
 							artifact(897),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(128936, bubbleDown({ ["isOffHand"] = 1 }, {	-- The Highkeeper's Ward
-						["ItemAppearanceModifierID"] = 0,
-						["groups"] = {
+					i(128936, bubbleDown({ isOffHand = 1 }, {	-- The Highkeeper's Ward
+						ItemAppearanceModifierID = 0,
+						groups = {
 							BaseAppearance(1308430, {
 								artifact(113),	-- Standard
 								artifact(673),	-- Recover one of the Pillars
@@ -1392,7 +1392,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							HiddenAppearance(1369316, {
 								artifact(900, {	-- Find Hidden Artifact Skin
-									["provider"] = { "i", 139572 },	-- Lost Codex of the Amani
+									provider = { "i", 139572 },	-- Lost Codex of the Amani
 								}),
 								artifact(898),	-- Complete 30 Legion Dungeons Hidden
 								artifact(899),	-- Complete 200 WQ Hidden
@@ -1433,14 +1433,14 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						HiddenAppearance(1324976, {
 							artifact(926, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139574 },	-- Coil of the Drowned Queen
+								provider = { "i", 139574 },	-- Coil of the Drowned Queen
 							}),
 							artifact(925),	-- Complete 30 Legion Dungeons Hidden
 							artifact(927),	-- Complete 200 WQ Hidden
 							artifact(928),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(128934, bubbleDown({ ["isOffHand"] = 1 }, {	-- Shield of the Sea Queen
+					i(128934, bubbleDown({ isOffHand = 1 }, {	-- Shield of the Sea Queen
 						BaseAppearance(1261435, {
 							artifact(116),	-- Standard
 							artifact(772),	-- Recover one of the Pillars
@@ -1473,7 +1473,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						HiddenAppearance(1378882, {
 							artifact(926, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139574 },	-- Coil of the Drowned Queen
+								provider = { "i", 139574 },	-- Coil of the Drowned Queen
 							}),
 							artifact(925),	-- Complete 30 Legion Dungeons Hidden
 							artifact(927),	-- Complete 200 WQ Hidden
@@ -1558,7 +1558,7 @@ root(ROOTS.ExpansionFeatures,
 							artifact(896),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(133959, bubbleDown({ ["isOffHand"] = 1 }, {	-- Heart of the Phoenix
+					i(133959, bubbleDown({ isOffHand = 1 }, {	-- Heart of the Phoenix
 						BaseAppearance(1336583, {
 							artifact(124),	-- Standard
 							artifact(490),	-- Recover one of the Pillars
@@ -1713,8 +1713,8 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					}),
 					i(128943, {	-- Skull of the Man'ari
-						["ItemAppearanceModifierID"] = 0,
-						["groups"] = {
+						ItemAppearanceModifierID = 0,
+						groups = {
 							BaseAppearance(1307173, {
 								artifact(811),	-- Standard
 								artifact(810),	-- Recover one of the Pillars
@@ -1753,7 +1753,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 						},
 					}),
-					i(137246, bubbleDown({ ["isOffHand"] = 1 }, {	-- Spine of Thal'kiel
+					i(137246, bubbleDown({ isOffHand = 1 }, {	-- Spine of Thal'kiel
 						BaseAppearance(1385667, {
 							artifact(811),	-- Standard
 							artifact(810),	-- Recover one of the Pillars
@@ -1826,7 +1826,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						HiddenAppearance(1242280, {
 							artifact(519, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139562 },	-- Breath of the Undying Serpent
+								provider = { "i", 139562 },	-- Breath of the Undying Serpent
 							}),
 							artifact(518),	-- Complete 30 Legion Dungeons Hidden
 							artifact(507),	-- Complete 200 WQ Hidden
@@ -1909,7 +1909,7 @@ root(ROOTS.ExpansionFeatures,
 							artifact(542),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(133948, bubbleDown({ ["isOffHand"] = 1 }, {	-- Fists of the Heavens [Off Hand]
+					i(133948, bubbleDown({ isOffHand = 1 }, {	-- Fists of the Heavens [Off Hand]
 						BaseAppearance(1282595, {
 							artifact(290),	-- Standard
 							artifact(528),	-- Recover one of the Pillars
@@ -2033,29 +2033,29 @@ root(ROOTS.ExpansionFeatures,
 						-- https://www.wowhead.com/acquiring-fangs-of-ashamane-feral-druid-artifact
 						BaseAppearance(1278111, {
 							artifact(426, {	-- Standard Troll
-								["races"] = { TROLL, ZANDALARI },
-								["displayID"] = 66779,	-- Rainbow Druid Form
+								races = { TROLL, ZANDALARI },
+								displayID = 66779,	-- Rainbow Druid Form
 							}),
 							artifact(427, {	-- Standard Tauren
-								["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
-								["displayID"] = 66777,	-- Brown Druid Form
+								races = { TAUREN, HIGHMOUNTAIN_TAUREN },
+								displayID = 66777,	-- Brown Druid Form
 							}),
 							artifact(428, {	-- Standard Worgen / Kultiran
-								["races"] = { WORGEN, KULTIRAN },
-								["displayID"] = 66778,	-- Light Brown Form
+								races = { WORGEN, KULTIRAN },
+								displayID = 66778,	-- Light Brown Form
 							}),
 							artifact(430, {	-- Standard Night Elf
-								["races"] = { NIGHTELF },
-								["displayID"] = 66780,	-- Purple Druid Form
+								races = { NIGHTELF },
+								displayID = 66780,	-- Purple Druid Form
 							}),
 							artifact(287, {	-- Recover one of the Pillars
-								["displayID"] = 66775,	-- Black Druid Form
+								displayID = 66775,	-- Black Druid Form
 							}),
 							artifact(429, {	-- Recover Light's Heart
-								["displayID"] = 66776,	-- Blue Druid Form
+								displayID = 66776,	-- Blue Druid Form
 							}),
 							artifact(431, {	-- Complete first major Order Hall campaign
-								["displayID"] = 66781,	-- White Druid Form
+								displayID = 66781,	-- White Druid Form
 							}),
 						}),
 						ClassHallAppearance(1278111, {
@@ -2089,32 +2089,32 @@ root(ROOTS.ExpansionFeatures,
 							artifact(833),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(128859, bubbleDown({ ["isOffHand"] = 1 }, {	-- Fangs of Ashamane [Off Hand]
+					i(128859, bubbleDown({ isOffHand = 1 }, {	-- Fangs of Ashamane [Off Hand]
 						BaseAppearance(1278111, {
 							artifact(426, {	-- Standard Troll
-								["races"] = { TROLL, ZANDALARI },
-								["displayID"] = 66779,	-- Rainbow Druid Form
+								races = { TROLL, ZANDALARI },
+								displayID = 66779,	-- Rainbow Druid Form
 							}),
 							artifact(427, {	-- Standard Tauren
-								["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
-								["displayID"] = 66777,	-- Brown Druid Form
+								races = { TAUREN, HIGHMOUNTAIN_TAUREN },
+								displayID = 66777,	-- Brown Druid Form
 							}),
 							artifact(428, {	-- Standard Worgen / Kultiran
-								["races"] = { WORGEN, KULTIRAN },
-								["displayID"] = 66778,	-- Light Brown Form
+								races = { WORGEN, KULTIRAN },
+								displayID = 66778,	-- Light Brown Form
 							}),
 							artifact(430, {	-- Standard Night Elf
-								["races"] = { NIGHTELF },
-								["displayID"] = 66780,	-- Purple Druid Form
+								races = { NIGHTELF },
+								displayID = 66780,	-- Purple Druid Form
 							}),
 							artifact(287, {	-- Recover one of the Pillars
-								["displayID"] = 66775,	-- Black Druid Form
+								displayID = 66775,	-- Black Druid Form
 							}),
 							artifact(429, {	-- Recover Light's Heart
-								["displayID"] = 66776,	-- Blue Druid Form
+								displayID = 66776,	-- Blue Druid Form
 							}),
 							artifact(431, {	-- Complete first major Order Hall campaign
-								["displayID"] = 66781,	-- White Druid Form
+								displayID = 66781,	-- White Druid Form
 							}),
 						}),
 						ClassHallAppearance(1278111, {
@@ -2151,16 +2151,16 @@ root(ROOTS.ExpansionFeatures,
 					i(128821, {	-- Claws of Ursoc [Main Hand]
 						BaseAppearance(1129695, {
 							artifact(121, {	-- Standard Night Elf
-								["races"] = { NIGHTELF },
+								races = { NIGHTELF },
 							}),
 							artifact(264, {	-- Standard Tauren
-								["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
+								races = { TAUREN, HIGHMOUNTAIN_TAUREN },
 							}),
 							artifact(265, {	-- Standard Troll
-								["races"] = { TROLL, ZANDALARI },
+								races = { TROLL, ZANDALARI },
 							}),
 							artifact(266, {	-- Standard Worgen / Kultiran
-								["races"] = { WORGEN, KULTIRAN },
+								races = { WORGEN, KULTIRAN },
 							}),
 							artifact(267),	-- Recover one of the Pillars
 							artifact(268),	-- Recover Light's Heart
@@ -2192,26 +2192,26 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						HiddenAppearance(1129695, {
 							artifact(283, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139553 },	-- Mark of the Glade Guardian
+								provider = { "i", 139553 },	-- Mark of the Glade Guardian
 							}),
 							artifact(273),	-- Complete 30 Legion Dungeons Hidden
 							artifact(284),	-- Complete 200 WQ Hidden
 							artifact(285),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(128822, bubbleDown({ ["isOffHand"] = 1 }, {	-- Claws of Ursoc [Offhand]
+					i(128822, bubbleDown({ isOffHand = 1 }, {	-- Claws of Ursoc [Offhand]
 						BaseAppearance(1129695, {
 							artifact(121, {	-- Standard Night Elf
-								["races"] = { NIGHTELF },
+								races = { NIGHTELF },
 							}),
 							artifact(264, {	-- Standard Tauren
-								["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
+								races = { TAUREN, HIGHMOUNTAIN_TAUREN },
 							}),
 							artifact(265, {	-- Standard Troll
-								["races"] = { TROLL, ZANDALARI },
+								races = { TROLL, ZANDALARI },
 							}),
 							artifact(266, {	-- Standard Worgen / Kultiran
-								["races"] = { WORGEN, KULTIRAN },
+								races = { WORGEN, KULTIRAN },
 							}),
 							artifact(267),	-- Recover one of the Pillars
 							artifact(268),	-- Recover Light's Heart
@@ -2243,7 +2243,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						HiddenAppearance(1129695, {
 							artifact(283, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139553 },	-- Mark of the Glade Guardian
+								provider = { "i", 139553 },	-- Mark of the Glade Guardian
 							}),
 							artifact(273),	-- Complete 30 Legion Dungeons Hidden
 							artifact(284),	-- Complete 200 WQ Hidden
@@ -2290,7 +2290,7 @@ root(ROOTS.ExpansionFeatures,
 							artifact(984),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(127830, bubbleDown({ ["isOffHand"] = 1 }, {	-- Twinblades of the Deceiver [Off Hand]
+					i(127830, bubbleDown({ isOffHand = 1 }, {	-- Twinblades of the Deceiver [Off Hand]
 						BaseAppearance(1117778, {
 							artifact(26),	-- Standard
 							artifact(25),	-- Recover one of the Pillars
@@ -2366,7 +2366,7 @@ root(ROOTS.ExpansionFeatures,
 							artifact(573),	-- Kill 1,000 Players Hidden
 						}),
 					}),
-					i(128831, bubbleDown({ ["isOffHand"] = 1 }, {	-- Aldrachi Warblades [Off Hand]
+					i(128831, bubbleDown({ isOffHand = 1 }, {	-- Aldrachi Warblades [Off Hand]
 						BaseAppearance(1309072, {
 							artifact(554),	-- Standard
 							artifact(555),	-- Recover one of the Pillars
@@ -2410,16 +2410,16 @@ root(ROOTS.ExpansionFeatures,
 						-- Note for future: These don't load a SourceID via GetSourceID()...
 						-- so they can be applied manually
 						artifact(841, {	-- Base Skin
-							["sourceQuest"] = 41010,	-- Fish Frenzy
-							["sourceID"] = 76909,
+							sourceQuest = 41010,	-- Fish Frenzy
+							sourceID = 76909,
 						}),
 						artifact(988, {	-- Fisherfriend of the Isles
-							["provider"] = { "i", 152583 },	-- Underlight Emerald
-							["sourceID"] = 82962,
+							provider = { "i", 152583 },	-- Underlight Emerald
+							sourceID = 82962,
 						}),
 						artifact(989, {	-- Fisherfriend of the Isles
-							["provider"] = { "i", 152583 },	-- Underlight Emerald
-							["sourceID"] = 82963,
+							provider = { "i", 152583 },	-- Underlight Emerald
+							sourceID = 82963,
 						}),
 					}),
 				}),
@@ -2428,9 +2428,9 @@ root(ROOTS.ExpansionFeatures,
 	})
 );
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
 	n(ARTIFACTS, {
-		cl(DEATHKNIGHT, bubbleDownSelf({ ["classes"] = { DEATHKNIGHT } }, {
+		cl(DEATHKNIGHT, bubbleDownSelf({ classes = { DEATHKNIGHT } }, {
 			q(40722),	-- Blood Chosen - Blood Artifact chosen first
 			q(40723),	-- Frost Chosen - Frost Artifact chosen first
 			q(40724),	-- Unholy Chosen - Unholy Artifact chosen first
@@ -2444,7 +2444,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(43647),	-- Hidden Appearance Unlocked - Frost Death Knight
 			q(43648),	-- Hidden Appearance Unlocked - Unholy Death Knight
 		})),
-		cl(DEMONHUNTER, bubbleDownSelf({ ["classes"] = { DEMONHUNTER } }, {
+		cl(DEMONHUNTER, bubbleDownSelf({ classes = { DEMONHUNTER } }, {
 			-- Demon Hunter	-- TODO -Darkal
 			-- 5 IDs, I can't find the pattern -Darkal
 			q(40817),	-- Twinblades of the Deceiver Chosen - Havoc Artifact chosen first
@@ -2457,7 +2457,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(43649),	-- Hidden Appearance Unlocked - Havoc Demon Hunter
 			q(43650),	-- Hidden Appearance Unlocked - Vengeance Demon Hunter
 		})),
-		cl(DRUID, bubbleDownSelf({ ["classes"] = { DRUID } }, {
+		cl(DRUID, bubbleDownSelf({ classes = { DRUID } }, {
 			q(40701),	-- Feral Chosen - Feral Artifact chosen first
 			q(40702),	-- Guardian Chosen - Guardian Artifact chosen first
 			q(40703),	-- Restoration Chosen - Restoration Artifact chosen first
@@ -2479,7 +2479,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(43653),	-- Hidden Appearance Unlocked - Guardian Druid
 			q(43654),	-- Hidden Appearance Unlocked - Restoration Druid
 		})),
-		cl(HUNTER, bubbleDownSelf({ ["classes"] = { HUNTER } }, {
+		cl(HUNTER, bubbleDownSelf({ classes = { HUNTER } }, {
 			q(40619),	-- Survival Chosen - Survival Artifact chosen first
 			q(40620),	-- Marksmanship Chosen - Marksmanship Artifact chosen first
 			q(40621),	-- Beast Mastery Chosen - Beast Mastery Artifact chosen first
@@ -2493,7 +2493,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(43656),	-- Hidden Appearance Unlocked - Marksmanship Hunter
 			q(43657),	-- Hidden Appearance Unlocked - Survival Hunter
 		})),
-		cl(MAGE, bubbleDownSelf({ ["classes"] = { MAGE } }, {
+		cl(MAGE, bubbleDownSelf({ classes = { MAGE } }, {
 			q(41079),	-- Arcane Chosen - Arcane Artifact chosen first
 			q(41080),	-- Fire Chosen - Fire Artifact chosen first
 			q(41081),	-- Frost Chosen - Frost Artifact chosen first
@@ -2507,7 +2507,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(43659),	-- Hidden Appearance Unlocked - Fire Mage
 			q(43660),	-- Hidden Appearance Unlocked - Frost Mage
 		})),
-		cl(MONK, bubbleDownSelf({ ["classes"] = { MONK } }, {
+		cl(MONK, bubbleDownSelf({ classes = { MONK } }, {
 			q(40638),	-- Windwalker Chosen - Windwalker Artifact chosen first
 			q(40639),	-- Mistweaver Chosen - Mistweaver Artifact chosen first
 			q(40640),	-- Brewmaster Chosen - Brewmaster Artifact chosen first
@@ -2521,7 +2521,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(43662),	-- Hidden Appearance Unlocked - Mistweaver Monk
 			q(43663),	-- Hidden Appearance Unlocked - Windwalker Monk
 		})),
-		cl(PALADIN, bubbleDownSelf({ ["classes"] = { PALADIN } }, {
+		cl(PALADIN, bubbleDownSelf({ classes = { PALADIN } }, {
 			q(40409),	-- Ashbringer Chosen - Retribution Artifact chosen first
 			q(40410),	-- Silver Hand Chosen - Holy Artifact chosen first
 			q(40411),	-- Truthguard Chosen - Protection Artifact chosen first
@@ -2538,7 +2538,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(43665),	-- Hidden Appearance Unlocked - Protection Paladin
 			q(43666),	-- Hidden Appearance Unlocked - Retribution Paladin
 		})),
-		cl(PRIEST, bubbleDownSelf({ ["classes"] = { PRIEST } }, {
+		cl(PRIEST, bubbleDownSelf({ classes = { PRIEST } }, {
 			q(40707),	-- Shadow Chosen - Shadow Artifact chosen first
 			q(40708),	-- Holy Chosen - Holy Artifact chosen first
 			q(40709),	-- Discipline Chosen - Discipline Artifact chosen first
@@ -2552,7 +2552,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(43668),	-- Hidden Appearance Unlocked - Holy Priest
 			q(43669),	-- Hidden Appearance Unlocked - Shadow Priest
 		})),
-		cl(ROGUE, bubbleDownSelf({ ["classes"] = { ROGUE } }, {
+		cl(ROGUE, bubbleDownSelf({ classes = { ROGUE } }, {
 			q(40842),	-- Kingslayers Chosen - Assassination Artifact chosen first
 			q(40843),	-- Dreadblades Chosen - Outlaw Artifact chosen first
 			q(40844),	-- Fangs of the Devourer Chosen - Subtlety Artifact chosen first
@@ -2566,7 +2566,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(43671),	-- Hidden Appearance Unlocked - Outlaw Rogue
 			q(43672),	-- Hidden Appearance Unlocked - Subtlety Rogue
 		})),
-		cl(SHAMAN, bubbleDownSelf({ ["classes"] = { SHAMAN } }, {
+		cl(SHAMAN, bubbleDownSelf({ classes = { SHAMAN } }, {
 			q(41328),	-- Enhancement Artifact Chosen - Enhancement Artifact chosen first
 			q(41329),	-- Elemental Artifact Chosen - Elemental Artifact chosen first
 			q(41330),	-- Restoration Artifact Chosen - Restoration Artifact chosen first
@@ -2580,7 +2580,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(43947),	-- Elemental Chosen
 			q(43948),	-- Restoration Chosen - reported as third
 		})),
-		cl(WARRIOR, bubbleDownSelf({ ["classes"] = { WARRIOR } }, {
+		cl(WARRIOR, bubbleDownSelf({ classes = { WARRIOR } }, {
 			q(40580),	-- Protection Chosen - Protection Artifact chosen first
 			q(40581),	-- Fury Chosen - Fury Artifact chosen first
 			q(40582),	-- Arms Chosen - Arms Artifact chosen first
@@ -2594,7 +2594,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(43680),	-- Hidden Appearance Unlocked - Fury Warrior
 			q(43681),	-- Hidden Appearance Unlocked - Protection Warrior
 		})),
-		cl(WARLOCK, bubbleDownSelf({ ["classes"] = { WARLOCK } }, {
+		cl(WARLOCK, bubbleDownSelf({ classes = { WARLOCK } }, {
 			q(40686),	-- Affliction Chosen - Affliction Artifact chosen first
 			q(40687),	-- Destruction Chosen - Destruction Artifact chosen first
 			q(40688),	-- Demonology Chosen - Demonology Artifact chosen first
@@ -2622,10 +2622,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 })));
 -- Fill certain Artifacts into the Arch Achievement which is needed to earn them
 -- TODO: note about what is necessary to unlock the Artifacts once achievement is gained
-root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ ["requireSkill"] = ARCHAEOLOGY }, {
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAEOLOGY }, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
-			ach(10602, {["groups"] = thisSideUpAch}),	-- This Side Up
+			ach(10602, {groups = thisSideUpAch}),	-- This Side Up
 		}),
 	})),
 })));

@@ -5,12 +5,12 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	header(HEADERS.Quest, 89476, {	-- Infinite Research
 		n(QUESTS, sharedData({
-			["qgs"] = {
+			qgs = {
 				241748,	-- Eternus
 				249256,	-- Pile of Chronoqueries
 			},
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-			["isRepeatable"] = true,
+			coord = { 45.7, 68.5, BROKEN_ISLES },
+			isRepeatable = true,
 		}, {
 			q(91445),	-- Infinite Research: Advanced Combat Studies, Comprehensive
 			q(91447),	-- Infinite Research: Advanced Combat Studies, Demonology
@@ -128,7 +128,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			i(239224),	-- Cache of Infinite Treasure
 			i(254579),	-- Epoch Resonance
 			i(249400, {	-- Stack of Chronoqueries
-				["sourceQuest"] = 91846,	-- Infinite Research Promotion: Principal Chronoquery Investigator
+				sourceQuest = 91846,	-- Infinite Research Promotion: Principal Chronoquery Investigator
 			}),
 		}),
 	}),
@@ -190,76 +190,76 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			i(245553),	-- Heroic Cache of Infinite Treasure
 		}),
 		q(89404, {	-- Time Crisis
-			["qg"] = 241140,	-- Moratari
-			["coord"] = { 72.4, 46.0, LEGION_DALARAN },
+			qg = 241140,	-- Moratari
+			coord = { 72.4, 46.0, LEGION_DALARAN },
 		}),
 		q(89405, {	-- Mean Streets of Dalaran
-			["sourceQuest"] =  89404,	-- Time Crisis
-			["qg"] = 241740,	-- Archmage Khadgar <Mirror Image>
-			["coord"] = { 67.6, 42.5, LEGION_DALARAN },
+			sourceQuest =  89404,	-- Time Crisis
+			qg = 241740,	-- Archmage Khadgar <Mirror Image>
+			coord = { 67.6, 42.5, LEGION_DALARAN },
 		}),
 		q(89406, {	-- Seal and Protect
-			["sourceQuest"] = 89405,	-- Mean Streets of Dalaran
-			["qg"] = 241743,	-- Archmage Khadgar
-			["coord"] = { 49.3, 47.6, LEGION_DALARAN },
+			sourceQuest = 89405,	-- Mean Streets of Dalaran
+			qg = 241743,	-- Archmage Khadgar
+			coord = { 49.3, 47.6, LEGION_DALARAN },
 		}),
 		q(89407, {	-- Thrift
-			["sourceQuest"] = 89406,	-- Seal and Protect
-			["qg"] = 241744,	-- Momentus
-			["coord"] = { 42.8, 27.8, LEGION_DALARAN },
-			["groups"] = {
+			sourceQuest = 89406,	-- Seal and Protect
+			qg = 241744,	-- Momentus
+			coord = { 42.8, 27.8, LEGION_DALARAN },
+			groups = {
 				o(527833, {	-- Archeology Chest
-					["coord"] = { 40.9, 24.0, LEGION_DALARAN },
-					["groups"] = { i(243607) },	-- Dusty Stone Tablet (QI!)
+					coord = { 40.9, 24.0, LEGION_DALARAN },
+					groups = { i(243607) },	-- Dusty Stone Tablet (QI!)
 				}),
 				o(529397, {	-- Curio Lockbox
-					["coord"] = { 38.8, 39.9, LEGION_DALARAN },
-					["groups"] = { i(243601) },	-- Curious Curio (QI!)
+					coord = { 38.8, 39.9, LEGION_DALARAN },
+					groups = { i(243601) },	-- Curious Curio (QI!)
 				}),
 				o(529396, {	-- Weapon Crate
-					["coord"] = { 46.1, 25.4, LEGION_DALARAN },
-					["groups"] = { i(243604) },	-- Bent and Battered Blade (QI!)
+					coord = { 46.1, 25.4, LEGION_DALARAN },
+					groups = { i(243604) },	-- Bent and Battered Blade (QI!)
 				}),
 			},
 		}),
 		q(89408, {	-- Threadbare
-			["sourceQuest"] = 89406,	-- Seal and Protect
-			["qg"] = 241744,	-- Momentus
-			["coord"] = { 42.8, 27.8, LEGION_DALARAN },
+			sourceQuest = 89406,	-- Seal and Protect
+			qg = 241744,	-- Momentus
+			coord = { 42.8, 27.8, LEGION_DALARAN },
 		}),
 		q(89409, {	-- Infinite Bronze
-			["sourceQuests"] = {
+			sourceQuests = {
 				89407,	-- Thrift
 				89408,	-- Threadbare
 			},
-			["qg"] = 241744,	-- Momentus
-			["coord"] = { 42.8, 27.8, LEGION_DALARAN },
+			qg = 241744,	-- Momentus
+			coord = { 42.8, 27.8, LEGION_DALARAN },
 		}),
 		q(90659, {	-- Something Borrowed
-			["description"] = "You can get one Artifact Weapon of your choice (based on your specialization). Others can be obtained through Order Hall Campaign.",
-			["sourceQuest"] = 89409,	-- Infinite Bronze
-			["qg"] = 241744,	-- Momentus
-			["coord"] = { 42.8, 27.8, LEGION_DALARAN },
-			["groups"] = sharedData({
-				["ItemAppearanceModifierID"] = 9,
+			description = "You can get one Artifact Weapon of your choice (based on your specialization). Others can be obtained through Order Hall Campaign.",
+			sourceQuest = 89409,	-- Infinite Bronze
+			qg = 241744,	-- Momentus
+			coord = { 42.8, 27.8, LEGION_DALARAN },
+			groups = sharedData({
+				ItemAppearanceModifierID = 9,
 			}, {
 				cl(DEATHKNIGHT, {
 					i(242563),	-- Apocalypse
 					i(242559),	-- Blades of the Fallen Prince [Main hand]
 					i(242560),	-- Blades of the Fallen Prince [Off hand]
-					i(242562, {["ItemAppearanceModifierID"] = 0}),	-- Maw of the Damned
+					i(242562, {ItemAppearanceModifierID = 0}),	-- Maw of the Damned
 				}),
 				cl(DEMONHUNTER, {
 					i(242577),	-- Aldrachi Warblades [Main hand]
 					i(242576),	-- Aldrachi Warblades [Off hand]
 					i(242556),	-- Twinblades of the Deceiver [Main hand]
-					i(242557, {["collectible"] = false }),	-- Twinblades of the Deceiver [Off hand]
+					i(242557, {collectible = false }),	-- Twinblades of the Deceiver [Off hand]
 				}),
 				cl(DRUID, {
 					i(242569),	-- Claws of Ursoc [Main hand]
-					i(242570, {["collectible"] = false }),	-- Claws of Ursoc [Off hand]
+					i(242570, {collectible = false }),	-- Claws of Ursoc [Off hand]
 					i(242580),	-- Fangs of Ashamane [Main hand]
-					i(242579, {["collectible"] = false }),	-- Fangs of Ashamane [Off hand]
+					i(242579, {collectible = false }),	-- Fangs of Ashamane [Off hand]
 					i(242561),	-- G'Hanir, the Mother Tree
 					i(242578),	-- Scythe of Elune
 				}),
@@ -278,7 +278,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(242596),	-- Fu Zan, the Wanderer's Companion
 					i(242595),	-- Sheilun, Staff of the Mists
 					i(242597),	-- Fists of the Heavens [Main hand]
-					i(242601, {["collectible"] = false }),	-- Fists of the Heavens [Off hand]
+					i(242601, {collectible = false }),	-- Fists of the Heavens [Off hand]
 				}),
 				cl(PALADIN, {
 					i(242555),	-- Ashbringer
@@ -294,11 +294,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				}),
 				cl(ROGUE, {
 					i(242564),	-- Fangs of the Devourer [Main hand]
-					i(242565, {["collectible"] = false }),	-- Fangs of the Devourer [Off hand]
+					i(242565, {collectible = false }),	-- Fangs of the Devourer [Off hand]
 					i(242588),	-- The Dreadblades [Main hand]
-					i(242604, {["collectible"] = false }),	-- The Dreadblades [Off hand]
+					i(242604, {collectible = false }),	-- The Dreadblades [Off hand]
 					i(242587),	-- The Kingslayers [Main hand]
-					i(242586, {["collectible"] = false }),	-- The Kingslayers [Off hand]
+					i(242586, {collectible = false }),	-- The Kingslayers [Off hand]
 				}),
 				cl(SHAMAN, {
 					i(242567),	-- Doomhammer
@@ -306,83 +306,83 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(242591),	-- Sharas'dal, Scepter of Tides
 					i(242592),	-- Shield of the Sea Queen
 					i(242593),	-- The Fist of Ra-den
-					i(242594, {["ItemAppearanceModifierID"] = 0}),	-- The Highkeeper's Ward
+					i(242594, {ItemAppearanceModifierID = 0}),	-- The Highkeeper's Ward
 				}),
 				cl(WARLOCK, {
 					i(242599),	-- Ulthalesh, the Deadwind Harvester
 					i(242598),	-- Scepter of Sargeras
-					i(242600, {["ItemAppearanceModifierID"] = 0}),	-- Skull of the Man'ari
+					i(242600, {ItemAppearanceModifierID = 0}),	-- Skull of the Man'ari
 					i(242605),	-- Spine of Thal'kiel
 				}),
 				cl(WARRIOR, {
 					i(237749),	-- Scale of the Earth-Warder
 					i(237748),	-- Scaleshard
-					i(236772, {["ItemAppearanceModifierID"] = 0}),	-- Strom'kar, the Warbreaker
+					i(236772, {ItemAppearanceModifierID = 0}),	-- Strom'kar, the Warbreaker
 					i(237746),	-- Warswords of the Valarjar [Main hand]
-					i(237747, {["collectible"] = false }),	-- Warswords of the Valarjar [Off hand]
+					i(237747, {collectible = false }),	-- Warswords of the Valarjar [Off hand]
 				}),
 			}),
 		}),
 		q(90901, {	-- As A Matter of Artifact
-			["sourceQuest"] = 90659,	-- Something Borrowed
-			["qg"] = 241744,	-- Momentus
-			["coord"] = { 42.8, 27.8, LEGION_DALARAN },
+			sourceQuest = 90659,	-- Something Borrowed
+			qg = 241744,	-- Momentus
+			coord = { 42.8, 27.8, LEGION_DALARAN },
 		}),
 		q(89412, {	-- Get Plenty of Exorcise
-			["sourceQuest"] = 90659,	-- Something Borrowed
-			["qg"] = 241744,	-- Momentus
-			["coord"] = { 42.8, 27.8, LEGION_DALARAN },
+			sourceQuest = 90659,	-- Something Borrowed
+			qg = 241744,	-- Momentus
+			coord = { 42.8, 27.8, LEGION_DALARAN },
 		}),
 		q(89411, {	-- Scavenger Hunting
-			["sourceQuest"] = 90659,	-- Something Borrowed
-			["qg"] = 241745,	-- Erus
-			["coord"] = { 42.3, 27.2, LEGION_DALARAN },
-			["groups"] = { i(241211) },	-- Legion Armor Scraps (QI!)
+			sourceQuest = 90659,	-- Something Borrowed
+			qg = 241745,	-- Erus
+			coord = { 42.3, 27.2, LEGION_DALARAN },
+			groups = { i(241211) },	-- Legion Armor Scraps (QI!)
 		}),
 		q(89413, {	-- Obliterate, Then Iterate
-			["sourceQuest"] = 89411,	-- Scavenger Hunting
-			["qg"] = 241745,	-- Erus
-			["coord"] = { 42.3, 27.2, LEGION_DALARAN },
-			["groups"] = { i(251901) },	-- Legion Armor Scraps (PQI!)
+			sourceQuest = 89411,	-- Scavenger Hunting
+			qg = 241745,	-- Erus
+			coord = { 42.3, 27.2, LEGION_DALARAN },
+			groups = { i(251901) },	-- Legion Armor Scraps (PQI!)
 		}),
 		q(89414, {	-- Not A Memento Too Soon
-			["sourceQuest"] = 89413,	-- Obliterate, Then Iterate
-			["qg"] = 241744,	-- Momentus
-			["coord"] = { 42.8, 27.8, LEGION_DALARAN },
+			sourceQuest = 89413,	-- Obliterate, Then Iterate
+			qg = 241744,	-- Momentus
+			coord = { 42.8, 27.8, LEGION_DALARAN },
 		}),
 		q(89415, {	-- Storm the Citadel
-			["sourceQuest"] = 89414,	-- Not A Memento Too Soon
-			["qg"] = 241743,	-- Archmage Khadgar
-			["coord"] = { 49.3, 47.6, LEGION_DALARAN },
+			sourceQuest = 89414,	-- Not A Memento Too Soon
+			qg = 241743,	-- Archmage Khadgar
+			coord = { 49.3, 47.6, LEGION_DALARAN },
 		}),
 		q(89416, {	-- Eternal Gratitude
-			["sourceQuest"] = 89415,	-- Storm the Citadel
-			["qg"] = 241140,	-- Moratari
-			["coords"] = {
+			sourceQuest = 89415,	-- Storm the Citadel
+			qg = 241140,	-- Moratari
+			coords = {
 				{ 51.2, 48.2, LEGION_DALARAN },
 				{ 72.4, 46.0, LEGION_DALARAN },
 			},
 		}),
 		------ Stay awhile and listen ------
 		-- hqt(???, {	-- Stay awhile and listen: Eternus
-		-- 	["name"] = "Stay awhile and listen: Eternus",
-		-- 	["description"] = "Dialogue becomes available after you accept 'Eternal Gratitude' (89416).",
-		-- 	["sourceQuest"] = 89415,	-- Storm the Citadel
-		-- 	["qg"] = 241748,	-- Eternus
-		-- 	["coord"] = { 45.7, 68.5, BROKEN_ISLES },
+		-- 	name = "Stay awhile and listen: Eternus",
+		-- 	description = "Dialogue becomes available after you accept 'Eternal Gratitude' (89416).",
+		-- 	sourceQuest = 89415,	-- Storm the Citadel
+		-- 	qg = 241748,	-- Eternus
+		-- 	coord = { 45.7, 68.5, BROKEN_ISLES },
 		-- }),
 		--
 		q(89417, {	-- Infinite Meetings
-			["sourceQuest"] = 89416,	-- Eternal Gratitude
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-			["groups"] = { i(254320) },	-- Elixir of Remembered Sight
+			sourceQuest = 89416,	-- Eternal Gratitude
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
+			groups = { i(254320) },	-- Elixir of Remembered Sight
 		}),
 		q(91955, {	-- Just Between Us
-			["sourceQuest"] = 89416,	-- Eternal Gratitude
-			["qg"] = 241142,	-- Momentus
-			["coord"] = { 45.8, 68.0, BROKEN_ISLES },
-			["groups"] = {
+			sourceQuest = 89416,	-- Eternal Gratitude
+			qg = 241142,	-- Momentus
+			coord = { 45.8, 68.0, BROKEN_ISLES },
+			groups = {
 				i(242617, {	-- Curious Simulacrum (QI!)
 					i(247808),	-- Bronze Simulacrum (QS!)
 				}),
@@ -394,182 +394,182 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 		}),
 		q(92688, {	-- Bronze Simulacrum
-			["provider"] = { "i", 247808 },	-- Bronze Simulacrum (QS!)
+			provider = { "i", 247808 },	-- Bronze Simulacrum (QS!)
 		}),
 		q(89418, {	-- A Fixed Point in Time
-			["sourceQuest"] = 89417,	-- Infinite Meetings
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
+			sourceQuest = 89417,	-- Infinite Meetings
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
 		}),
 		q(90995, {	-- The Future of The Fel Hammer
-			["sourceQuest"] = 89418,	-- A Fixed Point in Time
-			["qg"] = 243948,	-- Moratari
-			["coord"] = { 72.1, 41.7, LEGION_DALARAN },
-			["classes"] = { DEMONHUNTER },
+			sourceQuest = 89418,	-- A Fixed Point in Time
+			qg = 243948,	-- Moratari
+			coord = { 72.1, 41.7, LEGION_DALARAN },
+			classes = { DEMONHUNTER },
 		}),
 		q(90754, {	-- Skyriding
-			["sourceQuest"] = 89418,	-- A Fixed Point in Time
-			["qg"] = 243948,	-- Moratari
-			["coord"] = { 72.1, 41.7, LEGION_DALARAN },
+			sourceQuest = 89418,	-- A Fixed Point in Time
+			qg = 243948,	-- Moratari
+			coord = { 72.1, 41.7, LEGION_DALARAN },
 		}),
 		q(80013, {	-- How to Glide with Your Dragon
-			["sourceQuest"] = 90754,	-- Skyriding
-			["qg"] = 218469,	-- Lord Andestrasz
-			["coord"] = { 65.3, 37.2, THE_JADE_FOREST },
-			["groups"] = { i(216712) },	-- Bronze Timepiece (PQI!)
+			sourceQuest = 90754,	-- Skyriding
+			qg = 218469,	-- Lord Andestrasz
+			coord = { 65.3, 37.2, THE_JADE_FOREST },
+			groups = { i(216712) },	-- Bronze Timepiece (PQI!)
 		}),
 		q(80015, {	-- How to Dive with Your Dragon
-			["sourceQuest"] = 80013,	-- How to Glide with Your Dragon
-			["qg"] = 218469,	-- Lord Andestrasz
-			["coord"] = { 65.3, 37.2, THE_JADE_FOREST },
-			["groups"] = { i(216712) },	-- Bronze Timepiece (PQI!)
+			sourceQuest = 80013,	-- How to Glide with Your Dragon
+			qg = 218469,	-- Lord Andestrasz
+			coord = { 65.3, 37.2, THE_JADE_FOREST },
+			groups = { i(216712) },	-- Bronze Timepiece (PQI!)
 		}),
 		q(80016, {	-- The Need For Higher Velocities
-			["sourceQuest"] = 80015,	-- How to Dive with Your Dragon
-			["qg"] = 218469,	-- Lord Andestrasz
-			["coord"] = { 65.3, 37.2, THE_JADE_FOREST },
-			["groups"] = { i(216712) },	-- Bronze Timepiece (PQI!)
+			sourceQuest = 80015,	-- How to Dive with Your Dragon
+			qg = 218469,	-- Lord Andestrasz
+			coord = { 65.3, 37.2, THE_JADE_FOREST },
+			groups = { i(216712) },	-- Bronze Timepiece (PQI!)
 		}),
 		q(80017, {	-- The Need For Higher Altitudes
-			["sourceQuest"] = 80016,	-- The Need For Higher Velocities
-			["qg"] = 218469,	-- Lord Andestrasz
-			["coord"] = { 65.3, 37.2, THE_JADE_FOREST },
-			["groups"] = { i(216712) },	-- Bronze Timepiece (PQI!)
+			sourceQuest = 80016,	-- The Need For Higher Velocities
+			qg = 218469,	-- Lord Andestrasz
+			coord = { 65.3, 37.2, THE_JADE_FOREST },
+			groups = { i(216712) },	-- Bronze Timepiece (PQI!)
 		}),
 		q(80018, {	-- Fashionable Flying
-			["sourceQuest"] = 80017,	-- The Need For Higher Altitudes
-			["qg"] = 218469,	-- Lord Andestrasz
-			["coord"] = { 65.3, 37.2, THE_JADE_FOREST },
+			sourceQuest = 80017,	-- The Need For Higher Altitudes
+			qg = 218469,	-- Lord Andestrasz
+			coord = { 65.3, 37.2, THE_JADE_FOREST },
 		}),
 		q(90755, {	-- Time Flies
-			["sourceQuest"] = 80018,	-- Fashionable Flying
-			["qg"] = 218469,	-- Lord Andestrasz
-			["coord"] = { 65.3, 37.2, THE_JADE_FOREST },
+			sourceQuest = 80018,	-- Fashionable Flying
+			qg = 218469,	-- Lord Andestrasz
+			coord = { 65.3, 37.2, THE_JADE_FOREST },
 		}),
 		q(91437, {	-- Call for Participants
-			["description"] = "Quest pops-up into your log when you visit Bazaar after completing 'Time Flies'.",
-			["sourceQuest"] = 90755,	-- Time Flies
-			["repeatable"] = true,
+			description = "Quest pops-up into your log when you visit Bazaar after completing 'Time Flies'.",
+			sourceQuest = 90755,	-- Time Flies
+			repeatable = true,
 		}),
 		q(91639, {	-- Embrace Your Own Legend
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
 		}),
 		q(91721, {	-- Surpass Your Own Legend
-			["sourceQuest"] = 91639,	-- Embrace Your Own Legend
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
+			sourceQuest = 91639,	-- Embrace Your Own Legend
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
 		}),
 		q(92430, {	-- Embracing the Infinite Chaos
-			["description"] = "Quest pops-up when you hit Level 25.",
-			["lockCriteria"] = { 1, "questID", 91061 },	-- Infinite Chaos
-			["isBreadcrumb"] = true,
-			["lvl"] = 25,
+			description = "Quest pops-up when you hit Level 25.",
+			lockCriteria = { 1, "questID", 91061 },	-- Infinite Chaos
+			isBreadcrumb = true,
+			lvl = 25,
 		}),
 		q(91061, {	-- Infinite Chaos
-			["description"] = "Quest becomes available after you enable 'Heroic World Tier'.",
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-			["groups"] = { i(246808) },	-- Experiment Instructions (PQI!)
+			description = "Quest becomes available after you enable 'Heroic World Tier'.",
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
+			groups = { i(246808) },	-- Experiment Instructions (PQI!)
 		}),
 		q(90892, {	-- Clearing the Skies: A Fel of a Time
-			["description"] = "Quest pops-up when you fly through first 'Mote of Bronze'.",
+			description = "Quest pops-up when you fly through first 'Mote of Bronze'.",
 		}),
 		q(92563, {	-- Awoken by Accessory
-			["description"] = "Quest pops-up when you obtain and equip your first jewelry (Trinket, Ring, Necklace).",
+			description = "Quest pops-up when you obtain and equip your first jewelry (Trinket, Ring, Necklace).",
 		}),
 		q(91613, {	-- Infinite Research Promotion: Timely Assistant
-			["description"] = "Quest becomes available after you complete 5 'Infinite Research' quests.",
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
+			description = "Quest becomes available after you complete 5 'Infinite Research' quests.",
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
 		}),
 		q(92855, {	-- Make Haste, Not Waste
-			["description"] = "Grants a random piece of jewelry.",
-			["qg"] = 241189,	-- Lidamorrutu
-			["coord"] = { 45.9, 68.0, BROKEN_ISLES },
-			["isDaily"] = true,
+			description = "Grants a random piece of jewelry.",
+			qg = 241189,	-- Lidamorrutu
+			coord = { 45.9, 68.0, BROKEN_ISLES },
+			isDaily = true,
 		}),
 		q(93112, {	-- Infinite Research: Special Assignment, Fel Skies
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-			["lvl"] = 20,
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
+			lvl = 20,
 		}),
 		q(91844, {	-- Infinite Research Promotion: Honorary Chronographer
-			["description"] = "Quest becomes available after you complete 20 'Infinite Research' quests.",
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-			["lvl"] = 25,
+			description = "Quest becomes available after you complete 20 'Infinite Research' quests.",
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
+			lvl = 25,
 		}),
 		q(93113, {	-- Infinite Research: Special Assignment, Rare Dare
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-			["lvl"] = 30,
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
+			lvl = 30,
 		}),
 		q(93055, {	-- Extracurriculars
-			["qg"] = 243853,	-- Moratari
-			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
-			["lvl"] = 30,
+			qg = 243853,	-- Moratari
+			coord = { 45.6, 67.7, BROKEN_ISLES },
+			lvl = 30,
 		}),
 		q(91631, {	-- Epoch Progress
-			["qg"] = 243853,	-- Moratari
-			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
-			["lvl"] = 40,
+			qg = 243853,	-- Moratari
+			coord = { 45.6, 67.7, BROKEN_ISLES },
+			lvl = 40,
 		}),
 		q(93114, {	-- Infinite Research: Special Assignment, Sampling the World
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-			["lvl"] = 40,
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
+			lvl = 40,
 		}),
 		q(93116, {	-- Infinite Research: Special Assignment, Here to Slay
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-			["lvl"] = 50,
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
+			lvl = 50,
 		}),
 		q(93056, {	-- A Lesson in Alacrity
-			["qg"] = 243853,	-- Moratari
-			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
-			["lvl"] = 60,
+			qg = 243853,	-- Moratari
+			coord = { 45.6, 67.7, BROKEN_ISLES },
+			lvl = 60,
 		}),
 		q(93117, {	-- Infinite Research: Special Assignment, Boss Rush
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-			["lvl"] = 60,
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
+			lvl = 60,
 		}),
 		q(93118, {	-- Infinite Research: Special Assignment, Power Overwhelming
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-			["lvl"] = 70,
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
+			lvl = 70,
 		}),
 		q(93120, {	-- Infinite Research: Special Assignment, A World to Explore
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-			["lvl"] = 80,
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
+			lvl = 80,
 		}),
 		q(91632, {	-- The End of an Epoch Journey
-			["qg"] = 243853,	-- Moratari
-			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
-			["lvl"] = 80,
+			qg = 243853,	-- Moratari
+			coord = { 45.6, 67.7, BROKEN_ISLES },
+			lvl = 80,
 		}),
 		q(91845, {	-- Infinite Research Promotion: Senior Executive Chronographer
-			["description"] = "Quest becomes available after you complete 50 'Infinite Research' quests.",
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-			["lvl"] = 80,
+			description = "Quest becomes available after you complete 50 'Infinite Research' quests.",
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
+			lvl = 80,
 		}),
 		q(91722, {	-- Shape a New Legend
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-			["lvl"] = 80,
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
+			lvl = 80,
 		}),
 		q(91846, {	-- Infinite Research Promotion: Principal Chronoquery Investigator
-			["description"] = "Quest becomes available after you complete 150 'Infinite Research' quests.",
-			["qg"] = 241748,	-- Eternus
-			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-			["lvl"] = 80,
+			description = "Quest becomes available after you complete 150 'Infinite Research' quests.",
+			qg = 241748,	-- Eternus
+			coord = { 45.7, 68.5, BROKEN_ISLES },
+			lvl = 80,
 		}),
 		-- Infinite Epilogues
 		q(91522, {	-- Order from Chaos
-			["sourceQuests"] = {
+			sourceQuests = {
 				45354,	-- Dispersion of the Discs (Mage)
 				46792,	-- Gathering of the Storms (Shaman)
 				46089,	-- Hiding In Plain Sight [A] (Rogue)
@@ -584,43 +584,43 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				46334,	-- To Fel and Back (Demon Hunter)
 				46319,	-- You Can't Take the Sky from Me (Druid)
 			},
-			["sourceQuestNumRequired"] = 1,
-			["qg"] = 243853,	-- Moratari
-			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
-			["lvl"] = 80,
+			sourceQuestNumRequired = 1,
+			qg = 243853,	-- Moratari
+			coord = { 45.6, 67.7, BROKEN_ISLES },
+			lvl = 80,
 		}),
 		q(91728, {	-- Suramar Liberated
-			["sourceQuest"] = 44719,	-- Breaching the Sanctum (Exo Note: Unconfirmed)
-			["qg"] = 243853,	-- Moratari
-			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
-			["lvl"] = 80,
+			sourceQuest = 44719,	-- Breaching the Sanctum (Exo Note: Unconfirmed)
+			qg = 243853,	-- Moratari
+			coord = { 45.6, 67.7, BROKEN_ISLES },
+			lvl = 80,
 		}),
 		q(91729, {	-- Armies Gathered
-			["sourceQuest"] = 46246,	-- Strike Them Down (Exo Note: Unconfirmed)
-			["qg"] = 243853,	-- Moratari
-			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
-			["lvl"] = 80,
+			sourceQuest = 46246,	-- Strike Them Down (Exo Note: Unconfirmed)
+			qg = 243853,	-- Moratari
+			coord = { 45.6, 67.7, BROKEN_ISLES },
+			lvl = 80,
 		}),
 		q(91730, {	-- Azeroth Saved
-			["sourceQuest"] = 49015,	-- Antorus, the Burning Throne: The Death of a Titan (Exo Note: Unconfirmed)
-			["qg"] = 243853,	-- Moratari
-			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
-			["lvl"] = 80,
+			sourceQuest = 49015,	-- Antorus, the Burning Throne: The Death of a Titan (Exo Note: Unconfirmed)
+			qg = 243853,	-- Moratari
+			coord = { 45.6, 67.7, BROKEN_ISLES },
+			lvl = 80,
 		}),
 		-- Phase 5: Infinite Echoes
 		q(91821, {	-- Out of Time
-			--["sourceQuest"] = XXXXX,
-			["qg"] = 243853,	-- Moratari
-			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
-			["lvl"] = 80,
-			["timeline"] = { ADDED_11_2_7 },
+			--sourceQuest = XXXXX,
+			qg = 243853,	-- Moratari
+			coord = { 45.6, 67.7, BROKEN_ISLES },
+			lvl = 80,
+			timeline = { ADDED_11_2_7 },
 		}),
 		q(91757, {	-- Until Our Next Hello
-			--["sourceQuest"] = XXXXX,
-			["qg"] = 243853,	-- Moratari
-			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
-			["lvl"] = 80,
-			["timeline"] = { ADDED_11_2_7 },
+			--sourceQuest = XXXXX,
+			qg = 243853,	-- Moratari
+			coord = { 45.6, 67.7, BROKEN_ISLES },
+			lvl = 80,
+			timeline = { ADDED_11_2_7 },
 		}),
 	}),
 })))

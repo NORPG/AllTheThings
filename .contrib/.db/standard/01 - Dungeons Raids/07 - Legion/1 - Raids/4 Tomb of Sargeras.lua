@@ -280,14 +280,14 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 InstanceHelper.LFRQueueNPC = {
-	["cr"] = 111246,	-- Archmage Timear
-	["coord"] = { 63.7, 55.0, LEGION_DALARAN },
+	cr = 111246,	-- Archmage Timear
+	coord = { 63.7, 55.0, LEGION_DALARAN },
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_2_0 } }, {
 	inst(875, {	-- Tomb of Sargeras
-		["coord"] = { 64.3, 21.0, BROKEN_SHORE },
-		["maps"] = {
+		coord = { 64.3, 21.0, BROKEN_SHORE },
+		maps = {
 			645,
 			850,
 			851,
@@ -297,48 +297,48 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			855,
 			856,
 		},
-		["isRaid"] = true,
-		["lvl"] = 110,
-		["groups"] = {
+		isRaid = true,
+		lvl = 110,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(11787, {	-- The Gates of Hell
 					crit(36469, {	-- Goroth
-						["_encounter"] = { GOROTH, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { GOROTH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(36470, {	-- Harjatan
-						["_encounter"] = { HARJATAN, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { HARJATAN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(36471, {	-- Mistress Sassz'ine
-						["_encounter"] = { SASSZINE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SASSZINE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(11788, {	-- Wailing Halls
 					crit(36472, {	-- Demonic Inquisition
-						["_encounter"] = { INQUISITION, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { INQUISITION, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(36473, {	-- Sisters of the Moon
-						["_encounter"] = { SISTERS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SISTERS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(36474, {	-- The Desolate Host
-						["_encounter"] = { DESOLATE_HOST, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { DESOLATE_HOST, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(11789, {	-- Chamber of the Avatar
 					crit(36475, {	-- Maiden of Vigilance
-						["_encounter"] = { MAIDEN, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { MAIDEN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(36476, {	-- Fallen Avatar
-						["_encounter"] = { AVATAR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { AVATAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(11790, {	-- Deceiver's Fall
 					crit(36477, {	-- Kil'jaeden
-						["_encounter"] = { KILJAEDEN, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { KILJAEDEN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(11763, {	-- Glory of the Tomb Raider
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						11724,	-- Fel Turkey!
 						11696,	-- Grin and Bear It
 						11683,	-- Bingo!
@@ -349,57 +349,57 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						11770,	-- Dark Souls
 						11699,	-- Grand Fin-ale
 					}},
-					["groups"] = {
+					groups = {
 						title(362, {	-- <Name> the Tomb Raider
-							["style"] = 3,
+							style = 3,
 						}),
 						i(101426),	-- Micronax (PET!)
 					},
 				}),
-				ach(11760, {["timeline"] = {ADDED_7_2_0}}),	-- Retro Trend (Tomb of Sargeras)
+				ach(11760, {timeline = {ADDED_7_2_0}}),	-- Retro Trend (Tomb of Sargeras)
 				ach(42031, {	-- Tomb of Sargeras (automated)
-					["timeline"] = { ADDED_11_1_7 },
+					timeline = { ADDED_11_1_7 },
 				}),
 				ach(11782),	-- Tomb of Sargeras Guild Run
 			}),
 			n(WORLD_QUESTS, {
 				q(46503, {	-- Tomb of Sargeras: A Lesson in Pain
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(46508, {	-- Tomb of Sargeras: Azshara's Reach
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(46504, {	-- Tomb of Sargeras: Crushing Depths
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(46502, {	-- Tomb of Sargeras: Hand of the Legion
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(46500, {	-- Tomb of Sargeras: Legend of the Deep
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(46506, {	-- Tomb of Sargeras: Life After Death
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(46505, {	-- Tomb of Sargeras: Lost But Not Forgotten
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(46507, {	-- Tomb of Sargeras: The Dread Stalker
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 			}),
-			n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+			n(SPECIAL, bubbleDownSelf({ timeline = { ADDED_10_2_5 } }, {
 				n(118930, {	-- Ixallon the Soulbreaker
 					i(212779, {	-- Grimoire of the Bloodrage Tyrant (CI!)
-						["description"] = "Drops from the last Mob before Kil'Jaeden.\nQueue for Deceiver's Fall in Dalaran for very quick access to him.",
+						description = "Drops from the last Mob before Kil'Jaeden.\nQueue for Deceiver's Fall in Dalaran for very quick access to him.",
 					}),
 				}),
 			})),
@@ -416,7 +416,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				BossOnly(SASSZINE, {
 					i(143643),	-- Abyss Worm (MOUNT!)
 					i(213016, {	-- Grimoire of the Abyssal Darkglare (CI!)
-						["timeline"] = { ADDED_10_2_5 },
+						timeline = { ADDED_10_2_5 },
 					}),
 					i(146985),	-- Shroud of the Drowned Adherent
 				}),
@@ -430,7 +430,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				BossOnly(KILJAEDEN, {
 					i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
-						["timeline"] = { ADDED_7_2_5 },
+						timeline = { ADDED_7_2_5 },
 					}),
 					i(146412),	-- Vantus Rune Technique: Tomb of Sargeras [Rank 2]
 				}),
@@ -464,13 +464,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				BossOnly(HARJATAN, {
 					ach(11699, {	-- Grand Fin-ale
-						["crs"] = { 121071 },	-- Elder Murk-Eye
-						["groups"] = { i(258223, { ["timeline"] = { ADDED_12_0_0 } })},	-- Murloc's Wind Chimes (DECOR!)
+						crs = { 121071 },	-- Elder Murk-Eye
+						groups = { i(258223, { timeline = { ADDED_12_0_0 } })},	-- Murloc's Wind Chimes (DECOR!)
 					}),
 				}),
 				BossOnly(SISTERS, {
 					ach(11773, {	-- Wax On, Wax Off
-						["crs"] = { 121498 },	-- Twilight Soul
+						crs = { 121498 },	-- Twilight Soul
 					}),
 				}),
 				BossOnly(SASSZINE, {
@@ -487,20 +487,20 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				BossOnly(KILJAEDEN, {
 					ach(11770, {	-- Dark Souls
-						["crs"] = { 121193 },	-- Shadowsoul
+						crs = { 121193 },	-- Shadowsoul
 					}),
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(47725, {	-- Tomb of Sargeras: Aegwynn's Path (Normal)
-						["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
-						["altQuests"] = {
+						description = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						altQuests = {
 							47726,	-- Tomb of Sargeras: Aegwynn's Path (Heroic)
 							47727,	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
 						},
-						["qg"] = 119723,	-- Image of Aegwynn
-						["qi"] = 151248,	-- Fragment of the Guardian's Seal (QI!)
+						qg = 119723,	-- Image of Aegwynn
+						qi = 151248,	-- Fragment of the Guardian's Seal (QI!)
 					}),
 				}),
 				ZoneDrops({}),
@@ -517,17 +517,17 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(KILJAEDEN, {
 					ach(11874, {	-- Ahead of the Curve: Kil'jaeden
-						["timeline"] = { REMOVED_7_3_0 },
+						timeline = { REMOVED_7_3_0 },
 					}),
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
 					q(47726, {	-- Tomb of Sargeras: Aegwynn's Path (Heroic)
-						["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
-						["altQuests"] = { 47727 },	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
-						["qg"] = 119723,	-- Image of Aegwynn
-						["qi"] = 151249,	-- Fragment of the Guardian's Seal (QI!)
+						description = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						altQuests = { 47727 },	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
+						qg = 119723,	-- Image of Aegwynn
+						qi = 151249,	-- Fragment of the Guardian's Seal (QI!)
 					}),
 				}),
 				ZoneDrops({}),
@@ -544,10 +544,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(47727, {	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
-						["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Mythic difficulty each week.\n",
-						["altQuests"] = { 47727 },	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
-						["qg"] = 119723,	-- Image of Aegwynn
-						["qi"] = 151250,	-- Fragment of the Guardian's Seal (QI!)
+						description = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Mythic difficulty each week.\n",
+						altQuests = { 47727 },	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
+						qg = 119723,	-- Image of Aegwynn
+						qi = 151250,	-- Fragment of the Guardian's Seal (QI!)
 					}),
 				}),
 				ZoneDrops({}),
@@ -577,7 +577,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				Boss(KILJAEDEN, {
 					ach(11875, {	-- Cutting Edge: Kil'jaeden
-						["timeline"] = { REMOVED_7_3_0 },
+						timeline = { REMOVED_7_3_0 },
 					}),
 					ach(11781, {	-- Mythic: Kil'jaeden
 						title(357),	-- <Name> the Darkener
@@ -590,7 +590,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
 	inst(875, {
 		q(48064),	-- Goroth Intro - first time cinematic prior to Goroth
 		q(48643),	-- Goroth

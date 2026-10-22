@@ -3,27 +3,27 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(255, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {	-- The Black Morass
-		["lore"] = "The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",
+	inst(255, bubbleDownSelf({ timeline = { ADDED_2_0_3 } }, {	-- The Black Morass
+		lore = "The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",
 		-- #if BEFORE MOP
-		["zoneTextAreaID"] = 2366,	-- The Black Morass
+		zoneTextAreaID = 2366,	-- The Black Morass
 		-- #endif
-		["mapID"] = CAVERNS_OF_TIME_BLACK_MORASS,
-		["coord"] = { 37.2, 83.3, CAVERNS_OF_TIME },
+		mapID = CAVERNS_OF_TIME_BLACK_MORASS,
+		coord = { 37.2, 83.3, CAVERNS_OF_TIME },
 		-- #if BEFORE 4.2.0
-		["description"] = "You must have obtained the quest \"The Black Morass\" in order to enter.",
-		["sourceQuest"] = 10296,	-- The Black Morass
+		description = "You must have obtained the quest \"The Black Morass\" in order to enter.",
+		sourceQuest = 10296,	-- The Black Morass
 		-- #endif
-		["lvl"] = lvlsquish(65, 65, 25),
-		["groups"] = {
+		lvl = lvlsquish(65, 65, 25),
+		groups = {
 			n(QUESTS, {
 				q(10298, {	-- Hero of the Brood
-					["sourceQuest"] = 10297,	-- The Opening of the Dark Portal
-					["qg"] = 20201,	-- Sa'at
-					["timeline"] = { REMOVED_4_3_0 },
-					["lvl"] = lvlsquish(66, 66, 25),
+					sourceQuest = 10297,	-- The Opening of the Dark Portal
+					qg = 20201,	-- Sa'at
+					timeline = { REMOVED_4_3_0 },
+					lvl = lvlsquish(66, 66, 25),
 					-- #if BEFORE 4.3.0.14732
-					["groups"] = {
+					groups = {
 						i(29320),	-- Band of the Guardian
 						i(29322),	-- Keeper's Ring of Piety
 						i(29321),	-- Time-Bending Gem
@@ -32,69 +32,69 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					-- #endif
 				}),
 				q(9837, {	-- Return to Khadgar
-					["sourceQuest"] = 9836,	-- The Master's Touch
-					["qg"] = 15608,	-- Medivh
-					["coord"] = { 48.8, 71.8, CAVERNS_OF_TIME_BLACK_MORASS },
-					["timeline"] = { REMOVED_7_1_0 },
-					["maps"] = { SHATTRATH_CITY },
-					["lvl"] = lvlsquish(69, 69, 30),
-					["groups"] = {
+					sourceQuest = 9836,	-- The Master's Touch
+					qg = 15608,	-- Medivh
+					coord = { 48.8, 71.8, CAVERNS_OF_TIME_BLACK_MORASS },
+					timeline = { REMOVED_7_1_0 },
+					maps = { SHATTRATH_CITY },
+					lvl = lvlsquish(69, 69, 30),
+					groups = {
 						i(24490, {	-- The Master's Key
-							["timeline"] = { ADDED_2_0_3, DELETED_4_2_0 },
+							timeline = { ADDED_2_0_3, DELETED_4_2_0 },
 						}),
 					},
 				}),
 				q(10296, {	-- The Black Morass
 					-- #if BEFORE 4.3.0.14732
-					["sourceQuest"] = 10285,	-- Return to Andormu
+					sourceQuest = 10285,	-- Return to Andormu
 					-- #endif
-					["qg"] = 20130,	-- Andormu
-					["coord"] = { 41.6, 38.5, CAVERNS_OF_TIME },
-					["lvl"] = lvlsquish(66, 66, 25),
+					qg = 20130,	-- Andormu
+					coord = { 41.6, 38.5, CAVERNS_OF_TIME },
+					lvl = lvlsquish(66, 66, 25),
 				}),
 				q(9836, {	-- The Master's Touch
-					["sourceQuest"] = 9832,	-- The Second and Third Fragments
-					["qg"] = 18166,	-- Khadgar <Sons of Lothar>
-					["qi"] = 24489,	-- Restored Apprentice's Key
-					["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
-					["timeline"] = { REMOVED_7_1_0 },
-					["lvl"] = lvlsquish(69, 69, 30),
+					sourceQuest = 9832,	-- The Second and Third Fragments
+					qg = 18166,	-- Khadgar <Sons of Lothar>
+					qi = 24489,	-- Restored Apprentice's Key
+					coord = { 54.8, 44.3, SHATTRATH_CITY },
+					timeline = { REMOVED_7_1_0 },
+					lvl = lvlsquish(69, 69, 30),
 				}),
 				q(10297, {	-- The Opening of the Dark Portal
 					-- #if ANYCLASSIC
-					["sourceQuest"] = 10296,	-- The Black Morass
+					sourceQuest = 10296,	-- The Black Morass
 					-- #endif
-					["qg"] = 20201,	-- Sa'at
-					["lvl"] = lvlsquish(66, 66, 25),
+					qg = 20201,	-- Sa'at
+					lvl = lvlsquish(66, 66, 25),
 					-- TODO Confirm if required in classic
-					["groups"] = {
+					groups = {
 						objective(1, {	-- The Dark Portal Opened
-							["provider"] = { "i", 24289 },	-- Chrono-beacon
+							provider = { "i", 24289 },	-- Chrono-beacon
 						}),
 						i(29320, {	-- Band of the Guardian
-							["timeline"] = { ADDED_4_3_0 },
+							timeline = { ADDED_4_3_0 },
 						}),
 						i(29322, {	-- Keeper's Ring of Piety
-							["timeline"] = { ADDED_4_3_0 },
+							timeline = { ADDED_4_3_0 },
 						}),
 						i(29321, {	-- Time-Bending Gem
-							["timeline"] = { ADDED_4_3_0 },
+							timeline = { ADDED_4_3_0 },
 						}),
 						i(29323, {	-- Andormu's Tear
-							["timeline"] = { ADDED_4_3_0 },
+							timeline = { ADDED_4_3_0 },
 						}),
 					},
 				}),
 			}),
 			n(ZONE_DROPS, {
 				i(31753, {	-- Essence of Infinity
-					["crs"] = {
+					crs = {
 						21104,	-- Rift Keeper
 						17839,	-- Rift Lord
 					},
 				}),
 				i(25730, {	-- Pattern: Stylin' Jungle Hat (RECIPE!)
-					["crs"] = {
+					crs = {
 						21104,	-- Rift Keeper
 						17839,	-- Rift Lord
 					},
@@ -102,8 +102,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(552, {	-- Chrono Lord Deja
-					["creatureID"] = 17879,
-					["groups"] = {
+					creatureID = 17879,
+					groups = {
 						i(27987),	-- Melmorta's Twilight Longbow
 						i(27993),	-- Mask of Inner Fire
 						i(27994),	-- Mantle of Three Terrors
@@ -115,13 +115,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						-- #endif
 						i(27996),	-- Ring of Spiritual Precision
 						i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 					},
 				}),
 				e(553, {	-- Temporus
-					["creatureID"] = 17880,
-					["groups"] = {
+					creatureID = 17880,
+					groups = {
 						i(28033),	-- Epoch-Mender
 						i(28184),	-- Millennium Blade
 						-- #if AFTER 7.3.5
@@ -137,8 +137,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				e(554, {	-- Aeonus
-					["creatureID"] = 17881,
-					["groups"] = {
+					creatureID = 17881,
+					groups = {
 						ach(655),	-- Opening of the Dark Portal
 						i(28188),	-- Bloodfire Greatstaff
 						i(28189),	-- Latro's Shifting Sword
@@ -168,24 +168,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
-				["description"] = "You need to have a key to the instance and the quest \"The Black Morass\" in order to access this mode.",
-				["cost"] = {
+				description = "You need to have a key to the instance and the quest \"The Black Morass\" in order to access this mode.",
+				cost = {
 					-- #if CLASSIC_ANNIVERSARY
 					{ "i", 265849, 1 },	-- Communal Key of Time
 					-- #endif
 					{ "i", 30635, 1 },	-- Key of Time
 				},
-				["sourceQuest"] = 10296,	-- The Black Morass
+				sourceQuest = 10296,	-- The Black Morass
 				-- #endif
-				["lvl"] = lvlsquish(70, 70, 30),
-				["groups"] = {
+				lvl = lvlsquish(70, 70, 30),
+				groups = {
 					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
+						crs = {
 							17879,	-- Chrono Lord Deja
 							17880,	-- Temporus
 							17881,	-- Aeonus
 						},
-						["groups"] = {
+						groups = {
 							-- #if BEFORE CATA
 							BADGE_OF_JUSTICE(1),
 							-- #endif
@@ -195,8 +195,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					e(552, {	-- Chrono Lord Deja
-						["creatureID"] = 17879,
-						["groups"] = {
+						creatureID = 17879,
+						groups = {
 							i(27987),	-- Melmorta's Twilight Longbow
 							i(27993),	-- Mask of Inner Fire
 							i(27994),	-- Mantle of Three Terrors
@@ -208,13 +208,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #endif
 							i(27996),	-- Ring of Spiritual Precision
 							i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
 					e(553, {	-- Temporus
-						["creatureID"] = 17880,
-						["groups"] = {
+						creatureID = 17880,
+						groups = {
 							i(28033),	-- Epoch-Mender
 							i(28184),	-- Millennium Blade
 							-- #if AFTER 7.3.5
@@ -230,11 +230,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					e(554, {	-- Aeonus
-						["creatureID"] = 17881,
-						["groups"] = {
+						creatureID = 17881,
+						groups = {
 							ach(676),	-- Heroic: Opening of the Dark Portal
 							ach(5076, {	-- Heroic: Opening of the Dark Portal Guild Run
-								["timeline"] = { ADDED_4_0_3 },
+								timeline = { ADDED_4_0_3 },
 							}),
 							i(28188),	-- Bloodfire Greatstaff
 							i(28189),	-- Latro's Shifting Sword
@@ -271,12 +271,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
+	expansion(EXPANSION.TBC, bubbleDownSelf({ timeline = { ADDED_2_0_3 } }, {
 		inst(255, {
 			q(10737),	-- The Master's Touch Quest Completion Credit?
 		}),
 	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+	expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 		inst(255, {
 			q(35521),	-- The Black Morass Reward Quest - Normal completion
 			q(35522),	-- The Black Morass Reward Quest - Heroic completion

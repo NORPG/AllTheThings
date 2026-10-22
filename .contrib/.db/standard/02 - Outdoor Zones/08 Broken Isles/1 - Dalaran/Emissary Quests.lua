@@ -7,9 +7,9 @@ root(ROOTS.Zones, {
 		m(LEGION_DALARAN, {
 			n(EMISSARY_QUESTS, {
 				q(43179, {	-- The Kirin Tor of Dalaran
-					["provider"] = { "n", 32725 },	-- Warmage Silva
-					["isWorldQuest"] = true,
-					["groups"] = {
+					provider = { "n", 32725 },	-- Warmage Silva
+					isWorldQuest = true,
+					groups = {
 						i(147410),	-- Greater Court of Farondis Insignia
 						i(147411),	-- Greater Dreamweaver Insignia
 						i(147412),	-- Greater Highmountain Insignia
@@ -23,29 +23,29 @@ root(ROOTS.Zones, {
 							i(141592),	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!)
 							i(141349),	-- Strange Humming Crystal
 							i(151462, {	-- Spoiled Sample (QS!)
-								["timeline"] = { ADDED_7_2_5, REMOVED_8_0_1 },
+								timeline = { ADDED_7_2_5, REMOVED_8_0_1 },
 							}),
 						}),
 						un(REMOVED_FROM_GAME, i(154909, {	-- Kirin Tor Chest
-							["sym"] = {
+							sym = {
 								{"select", "itemID", 157828},	-- Kirin Tor Chest
 								{"pop"},
 							},
 						})),
 						un(REMOVED_FROM_GAME, i(151470, {	-- Kirin Tor Chest
-							["sym"] = {
+							sym = {
 								{"select", "itemID", 157828},	-- Kirin Tor Chest
 								{"pop"},
 							},
 						})),
 						un(REMOVED_FROM_GAME, i(146753, {	-- Kirin Tor Chest
-							["sym"] = {
+							sym = {
 								{"select", "itemID", 157828},	-- Kirin Tor Chest
 								{"pop"},
 							},
 						})),
 						un(REMOVED_FROM_GAME, i(141350, {	-- Kirin Tor Chest
-							["sym"] = {
+							sym = {
 								{"select", "itemID", 157828},	-- Kirin Tor Chest
 								{"pop"},
 							},

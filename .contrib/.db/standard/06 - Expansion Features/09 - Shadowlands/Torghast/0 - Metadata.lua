@@ -2,11 +2,11 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	m(TORGHAST, {
-		["coord"] = { 48.2, 39.4, THE_MAW },	-- Torghast Portal
-		["icon"] = 3642306,
-		["maps"] = {
+		coord = { 48.2, 39.4, THE_MAW },	-- Torghast Portal
+		icon = 3642306,
+		maps = {
 			-- Tracking which mapID is which Zone name might not be necessary for Layer/Floor since they seem to be repeated within the Named 'Tower'
 			-- #IF AFTER 9.1.0
 			1962,	-- Adamant Vaults

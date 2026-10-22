@@ -17,7 +17,7 @@ end
 
 -- Can be used when a common Tier structure exists. Builds the typical Class header for use within a Difficulty/Catalyst/Vendor
 local CLASS_TIER_HELPER = function(classID, tierStructure, difficultyID)
-	local class = cl(classID, { ["groups"] = clone(tierStructure[classID]) })
+	local class = cl(classID, { groups = clone(tierStructure[classID]) })
 	local tierSym = tierStructure.SYM_TIER
 	if tierSym then
 		class.sym = tierSym(classID, difficultyID)

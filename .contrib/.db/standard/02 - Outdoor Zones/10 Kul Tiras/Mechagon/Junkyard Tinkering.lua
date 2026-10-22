@@ -2,12 +2,12 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
 	m(MECHAGON, {
-		prof(JUNKYARD_TINKERING, bubbleDownSelf({ ["requireSkill"] = JUNKYARD_TINKERING }, {
-			["cr"] = 150359,	-- Pascal-K1N6
-			["coord"] = { 71.4, 32.3, MECHAGON },
-			["groups"] = {
+		prof(JUNKYARD_TINKERING, bubbleDownSelf({ requireSkill = JUNKYARD_TINKERING }, {
+			cr = 150359,	-- Pascal-K1N6
+			coord = { 71.4, 32.3, MECHAGON },
+			groups = {
 				n(CRAFTABLES, {
 					i(167064),	-- 500S-Cybergenic Powercore
 					i(169874),	-- Annoy-o-Tron Gang
@@ -61,22 +61,22 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(167870),	-- G99.99 Landshark
 					i(168832),	-- Galvanic Oscillator
 					i(246596, {	-- Gnomish Fence (DECOR!)
-						["timeline"] = { ADDED_11_2_7 },
+						timeline = { ADDED_11_2_7 },
 					}),
 					i(246595, {	-- Gnomish Fencepost (DECOR!)
-						["timeline"] = { ADDED_11_2_7 },
+						timeline = { ADDED_11_2_7 },
 					}),
 					i(169648),	-- Green Spraybot
 					i(168907),	-- Holographic Digitalization Hearthstone (TOY!)
 					i(167649),	-- Hundred-Fathom Lure
 					i(246485, {	-- Mechagnome Sustenance Distributor (DECOR!)
-						["timeline"] = { ADDED_11_2_7 },
+						timeline = { ADDED_11_2_7 },
 					}),
 					i(246606, {	-- Mechagon Armory Rack (DECOR!)
-						["timeline"] = { ADDED_11_2_7 },
+						timeline = { ADDED_11_2_7 },
 					}),
 					i(246482, {	-- Mechanical Gnomish Lamppost (DECOR!)
-						["timeline"] = { ADDED_11_2_7 },
+						timeline = { ADDED_11_2_7 },
 					}),
 					i(167751),	-- X-995 Mechanocat (MOUNT!)
 					i(167071),	-- Mechano-Treat
@@ -84,7 +84,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(169647),	-- Orange Spraybot
 					i(168843),	-- Perfectly Timed Differential
 					i(246597, {	-- Perpetual Motion Crate (DECOR!)
-						["timeline"] = { ADDED_11_2_7 },
+						timeline = { ADDED_11_2_7 },
 					}),
 					i(169114),	-- Personal Time Displacer
 					i(168483),	-- Protocol Transference Device
@@ -105,7 +105,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(167062),	-- Vaultbot Key
 				}),
 				filter(RECIPES, {
-					r(291598, {["u"]=TRAINING}),	-- 500S-Cybergenic Powercore
+					r(291598, {u=TRAINING}),	-- 500S-Cybergenic Powercore
 					r(300274),	-- Annoy-o-Tron Gang
 					r(300272),	-- Anti-Gravity Pack
 					r(299864),	-- Advanced Adventurer Augment
@@ -123,37 +123,37 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					r(299952),	-- Extraordinary Adventurer Augment
 					r(294420),	-- G99.99 Landshark
 					r(300278),	-- Galvanic Oscillator
-					r(1243780, {["timeline"]={ADDED_11_2_7}}),	-- Gnomish Fence
-					r(1243783, {["timeline"]={ADDED_11_2_7}}),	-- Gnomish Fencepost
+					r(1243780, {timeline={ADDED_11_2_7}}),	-- Gnomish Fence
+					r(1243783, {timeline={ADDED_11_2_7}}),	-- Gnomish Fencepost
 					r(300267),	-- Green Spraybot
 					r(299411),	-- Holographic Digitalization Hearthstone
 					r(293394),	-- Hundred-Fathom Lure
-					r(1243803, {["timeline"]={ADDED_11_2_7}}),	-- Mechagnome Sustenance Distributor
-					r(1243801, {["timeline"]={ADDED_11_2_7}}),	-- Mechagon Armory Rack
-					r(1243788, {["timeline"]={ADDED_11_2_7}}),	-- Mechanical Gnomish Lamppost
-					r(294193, {["u"]=TRAINING}),	-- Mechanocat Laser Pointer
+					r(1243803, {timeline={ADDED_11_2_7}}),	-- Mechagnome Sustenance Distributor
+					r(1243801, {timeline={ADDED_11_2_7}}),	-- Mechagon Armory Rack
+					r(1243788, {timeline={ADDED_11_2_7}}),	-- Mechanical Gnomish Lamppost
+					r(294193, {u=TRAINING}),	-- Mechanocat Laser Pointer
 					r(291869),	-- Mechano-Treat
 					r(300270),	-- Microbot XD
 					r(300266),	-- Orange Spraybot
-					r(300271, {["u"]=TRAINING}),	-- Perfectly Timed Differential
-					r(1243793, {["timeline"]={ADDED_11_2_7}}),	-- Perpetual Motion Crate
+					r(300271, {u=TRAINING}),	-- Perfectly Timed Differential
+					r(1243793, {timeline={ADDED_11_2_7}}),	-- Perpetual Motion Crate
 					r(300265),	-- Personal Time Displacer
 					r(298134),	-- Protocol Transference Device
 					r(300277),	-- Re-Procedurally Generated Punchcard
-					r(291789, {["u"]=TRAINING}),	-- Rustbolt Gramophone
-					r(295288, {["u"]=TRAINING}),	-- Rustbolt Kegerator
+					r(291789, {u=TRAINING}),	-- Rustbolt Gramophone
+					r(295288, {u=TRAINING}),	-- Rustbolt Kegerator
 					r(300273),	-- Rustbolt Pocket Turret
 					r(298140),	-- Rustbolt Requisitions
 					r(298138),	-- Rustbolt Resistance Insignia
 					r(300291),	-- S.P.A.R.E. Crate
-					r(303000, {["u"]=TRAINING}),	-- Sapphronetta Flivvers Action Figure
+					r(303000, {u=TRAINING}),	-- Sapphronetta Flivvers Action Figure
 					r(295290),	-- Scrap Grenade
 					r(291524),	-- Scrap Trap
-					r(300122, {["u"]=TRAINING}),	-- Scrapmaster's Blowtorch
+					r(300122, {u=TRAINING}),	-- Scrapmaster's Blowtorch
 					r(298141, {	-- Subroutine: Optimization (Might not be collectible)
-						["description"] = "Only available when wearing Pocket-Sized Computation Device with Remote Circuit Bypasser socketed.",
-						["u"]=TRAINING,
-						["providers"] = {
+						description = "Only available when wearing Pocket-Sized Computation Device with Remote Circuit Bypasser socketed.",
+						u=TRAINING,
+						providers = {
 							{ "i", 168435 },	-- Remote Circuit Bypasser
 							{ "i", 167555 },	-- Pocket-Sized Computation Device
 						},
@@ -164,12 +164,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				}),
 				n(QUESTS, {
 					q(55534, {	-- Rustbolt Gramophone
-						["provider"] = { "i", 167069 },	-- Rustbolt Gramophone
-						["coord"] = { 71.4, 32.6, MECHAGON },
+						provider = { "i", 167069 },	-- Rustbolt Gramophone
+						coord = { 71.4, 32.6, MECHAGON },
 					}),
 					q(55535, {	-- The Tipsy Tinkerer
-						["provider"] = { "i", 168047 },	-- Rustbolt Kegerator
-						["coord"] = { 71.4, 32.6, MECHAGON },
+						provider = { "i", 168047 },	-- Rustbolt Kegerator
+						coord = { 71.4, 32.6, MECHAGON },
 					}),
 				}),
 			},

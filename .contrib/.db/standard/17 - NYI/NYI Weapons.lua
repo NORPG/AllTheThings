@@ -282,7 +282,7 @@ root(ROOTS.NeverImplemented, {
 		filter(PROFESSION_EQUIPMENT, {
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, patch(0,0,1), {
-					i(199898, {["sourceID"] = 182324 }),	-- Iskaara Fishing Pole
+					i(199898, {sourceID = 182324 }),	-- Iskaara Fishing Pole
 				}),
 			}),
 		}),
@@ -461,8 +461,8 @@ root(ROOTS.NeverImplemented, {
 					i(189334),	-- 10.0 Zone Uncommon Template <Descriptor> Offhand
 					i(201249),	-- Dreamfire Imbued Drakehorn
 				}),
-				expansion(EXPANSION.DF, patch(0,7), bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
-					i(203798, {["sourceID"] = 185364 }),	-- Copy Jin'do's Bag of Whammies
+				expansion(EXPANSION.DF, patch(0,7), bubbleDown({ timeline = { CREATED_10_0_7 } }, {
+					i(203798, {sourceID = 185364 }),	-- Copy Jin'do's Bag of Whammies
 				})),
 			}),
 		}),
@@ -540,7 +540,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 
 				-- 10.1.0
-				expansion(EXPANSION.DF, patch(1,0), bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+				expansion(EXPANSION.DF, patch(1,0), bubbleDown({ timeline = { CREATED_10_1_0 } }, {
 					i(204638),	-- Sunder Wing
 				})),
 			}),
@@ -637,7 +637,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 
 				-- 10.1.5
-				expansion(EXPANSION.DF, patch(1,5), bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+				expansion(EXPANSION.DF, patch(1,5), bubbleDown({ timeline = { CREATED_10_1_5 } }, {
 					i(208001),	-- Timewalker's Cudgel
 				})),
 			}),
@@ -721,15 +721,15 @@ root(ROOTS.NeverImplemented, {
 				}),
 
 				-- 10.1.5
-				expansion(EXPANSION.DF, patch(1,5), bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+				expansion(EXPANSION.DF, patch(1,5), bubbleDown({ timeline = { CREATED_10_1_5 } }, {
 					i(207044),	-- <DNT> Lo'Gosh Offhand Weapon
 					i(207045),	-- <DNT> Lo'Gosh Mainhand Weapon
 				})),
 
 				-- 10.1.7
-				expansion(EXPANSION.DF, patch(1,7), bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
-					i(208987, {["sourceID"] = 190169}),	-- The Horseman's Sinister Slicer [Hallow's End]
-					i(209022, {["sourceID"] = 190171}),	-- The Horseman's Sinister Slicer [Hallow's End]
+				expansion(EXPANSION.DF, patch(1,7), bubbleDown({ timeline = { CREATED_10_1_7 } }, {
+					i(208987, {sourceID = 190169}),	-- The Horseman's Sinister Slicer [Hallow's End]
+					i(209022, {sourceID = 190171}),	-- The Horseman's Sinister Slicer [Hallow's End]
 				})),
 			}),
 		}),
@@ -1344,7 +1344,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 
 				-- 10.1.5
-				expansion(EXPANSION.DF, patch(1,5), bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+				expansion(EXPANSION.DF, patch(1,5), bubbleDown({ timeline = { CREATED_10_1_5 } }, {
 					i(206931),	-- Truesilver Champion
 				})),
 			}),
@@ -1382,16 +1382,16 @@ root(ROOTS.NeverImplemented, {
 				-- 10.0.0
 				expansion(EXPANSION.DF, patch(0,0,1), {
 					i(189702),	-- 10.0 Dungeon Template - Wand - RangedRight
-					i(199932, {["sourceID"] = 182327 }),	-- 10.0 Enchanting - Weapon - Wand 1
-					i(199933, {["sourceID"] = 182328 }),	-- 10.0 Enchanting - Weapon - Wand 2
+					i(199932, {sourceID = 182327 }),	-- 10.0 Enchanting - Weapon - Wand 1
+					i(199933, {sourceID = 182328 }),	-- 10.0 Enchanting - Weapon - Wand 2
 					i(189140),	-- 10.0 QRP Template <Descriptor> Wand
 					i(189359),	-- 10.0 Zone Uncommon Template <Descriptor> Wand
 					i(201246),	-- Coiled Green Draketail
-					i(201775, {["sourceID"] = 183900 }),	-- Crimson Aspirant's Wand
+					i(201775, {sourceID = 183900 }),	-- Crimson Aspirant's Wand
 				}),
 
 				-- 10.1.5
-				expansion(EXPANSION.DF, patch(1,5), bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+				expansion(EXPANSION.DF, patch(1,5), bubbleDown({ timeline = { CREATED_10_1_5 } }, {
 					i(207984),	-- Chroniton Wand
 				})),
 			}),
@@ -1441,7 +1441,7 @@ root(ROOTS.NeverImplemented, {
 		i(188099),	-- [PH] Copy Vault Patroller's Staff
 		-- 9.2.5
 		i(168895),	-- Mel'nalore, Javelin of Suramar (Readded back now? Suppose to be drop in Eternal Palace? /Queen Azshara)
-		i(192441, {["sourceID"] = 180385 }),	-- Rhapsodic Pulverizer
+		i(192441, {sourceID = 180385 }),	-- Rhapsodic Pulverizer
 		--
 		i(25497),	-- Broken Balanced Stone Dirk
 		i(28261),	-- Video Invis Broken Fitz's Throwing Axe
@@ -1455,11 +1455,11 @@ root(ROOTS.NeverImplemented, {
 		i(178673),	-- Sinful Aspirant's Weapon - Offhand
 		filter(BOWS, {
 			-- Load In Game
-			i(165266, {["sourceID"] = 101572 }),	-- Fallback Weapon - Bow
-			i(167144, {["sourceID"] = 103291 }),	-- QA Combat Test Hunter Bow
-			i(182563, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Bow
+			i(165266, {sourceID = 101572 }),	-- Fallback Weapon - Bow
+			i(167144, {sourceID = 103291 }),	-- QA Combat Test Hunter Bow
+			i(182563, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon Bow
 			i(182563, {	-- NPE Weapon Bow
-				["bonusID"] = 6895,
+				bonusID = 6895,
 			}),
 			-- ItemID/Retrieving
 			i(108783),	-- 7.0 PH Weapon - Bow Agi
@@ -1468,14 +1468,14 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(CROSSBOWS, {
 			-- Load In Game
-			i(165267, {["sourceID"] = 101573 }),	-- Fallback Weapon - Crossbow
+			i(165267, {sourceID = 101573 }),	-- Fallback Weapon - Crossbow
 			-- ItemID/Retrieving
 			i(108784),	-- 7.0 PH Weapon - Crossbow Agi
 		}),
 		filter(DAGGERS, {
 			-- Load In Game
-			i(182564, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Dagger AGI
-			i(182573, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Dagger AGI 2
+			i(182564, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon Dagger AGI
+			i(182573, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon Dagger AGI 2
 			-- ItemID/Retrieving
 			i(108785),	-- 7.0 PH Weapon - 1H Dagger Agi
 			i(108786),	-- 7.0 PH Weapon - 1H Dagger Int
@@ -1507,7 +1507,7 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(GUNS, {
 			-- Load In Game
-			i(165270, {["sourceID"] = 101575 }),	-- Fallback Weapon - Gun
+			i(165270, {sourceID = 101575 }),	-- Fallback Weapon - Gun
 			-- ItemID/Retrieving
 			i(108790),	-- 7.0 PH Weapon - Gun Agi
 			i(109491),	-- 6.0 QA Combat Test Hunter Gun
@@ -1527,10 +1527,10 @@ root(ROOTS.NeverImplemented, {
 			-- Load In Game
 			i(80983),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
 			i(117010),	-- Forester's Axe	(Never added in Game)
-			i(164967, {["sourceID"] = 101181 }),	-- Steelforged Axe (CREATURE USE - TIER 2 VISUAL ONLY)
-			i(165264, {["sourceID"] = 101570 }),	-- Fallback Weapon - 1H Axe
-			i(182562, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 1H Axe AGI
-			i(182577, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 1H Axe AGI 2
+			i(164967, {sourceID = 101181 }),	-- Steelforged Axe (CREATURE USE - TIER 2 VISUAL ONLY)
+			i(165264, {sourceID = 101570 }),	-- Fallback Weapon - 1H Axe
+			i(182562, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon 1H Axe AGI
+			i(182577, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon 1H Axe AGI 2
 			-- ItemID/Retrieving
 			i(49456),	-- Will of the Earth
 			i(108779),	-- 7.0 PH Weapon - 1H Axe Agi
@@ -1544,7 +1544,7 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(ONE_HANDED_MACES, {
 			-- Load In Game
-			i(182578, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 1H Mace AGI
+			i(182578, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon 1H Mace AGI
 			-- ItemID/Retrieving
 			i(108791),	-- 7.0 PH Weapon - 1H Mace Agi
 			i(108792),	-- 7.0 PH Weapon - 1H Mace Str
@@ -1563,11 +1563,11 @@ root(ROOTS.NeverImplemented, {
 			-- Load In Game
 			i(137225),	-- Thunderfury, Blessed Blade of the Windseeker (mog testing)
 			i(162447),	-- Marrow Render
-			i(165273, {["sourceID"] = 101578 }),	-- Fallback Weapon - 1H Sword
-			i(167143, {["sourceID"] = 103290 }),	-- QA Combat Test 1h Sword
-			i(182567, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 1H Sword AGI
-			i(182574, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 1H Sword AGI 2
-			i(182575, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 1H Sword AGI 3
+			i(165273, {sourceID = 101578 }),	-- Fallback Weapon - 1H Sword
+			i(167143, {sourceID = 103290 }),	-- QA Combat Test 1h Sword
+			i(182567, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon 1H Sword AGI
+			i(182574, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon 1H Sword AGI 2
+			i(182575, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon 1H Sword AGI 3
 			-- ItemID/Retrieving
 			i(43922),	-- Honed Lightblade
 			i(47846),	-- Cruel Barb (Glow, Purple - Low)
@@ -1587,7 +1587,7 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(POLEARMS, {
 			-- Load In Game
-			i(165271, {["sourceID"] = 101576 }),	-- Fallback Weapon - Polearm
+			i(165271, {sourceID = 101576 }),	-- Fallback Weapon - Polearm
 			-- ItemID/Retrieving
 			i(54965),	-- Stormwind Spear
 			i(108797),	-- 7.0 PH Weapon - 2H Polearm Agi
@@ -1647,10 +1647,10 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(SHIELDS, {
 			-- Load In Game
-			i(165276, {["sourceID"] = 101581 }),	-- Fallback Weapon - Shield
-			i(167140, {["sourceID"] = 103287 }),	-- QA Combat Test  Shield 1
-			i(182570, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Shield
-			i(182576, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Shield 2
+			i(165276, {sourceID = 101581 }),	-- Fallback Weapon - Shield
+			i(167140, {sourceID = 103287 }),	-- QA Combat Test  Shield 1
+			i(182570, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon Shield
+			i(182576, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon Shield 2
 			-- ItemID/Retrieving
 			i(60220),	-- Theodore's Heirloom Buckler
 			i(108808),	-- 7.0 PH Shield - Shield Str
@@ -1664,8 +1664,8 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(STAVES, {
 			-- Load In Game
-			i(182566, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Staff AGI
-			i(182572, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Staff INT
+			i(182566, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon Staff AGI
+			i(182572, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon Staff INT
 			i(180491),	-- Wingdancer's Spire
 			-- ItemID/Retrieving
 
@@ -1698,9 +1698,9 @@ root(ROOTS.NeverImplemented, {
 			i(69916),	-- Trollbane (Daakara)
 			i(80980),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 			i(80984),	-- Expropriator's Greataxe
-			i(165265, {["sourceID"] = 101571 }),	-- Fallback Weapon - 2H Axe
-			i(167142, {["sourceID"] = 103289 }),	-- QA Combat Test 2H Axe
-			i(182568, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 2H Axe STR
+			i(165265, {sourceID = 101571 }),	-- Fallback Weapon - 2H Axe
+			i(167142, {sourceID = 103289 }),	-- QA Combat Test 2H Axe
+			i(182568, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon 2H Axe STR
 			-- ItemID/Retrieving
 			i(23420),	-- Engraved Axe
 			i(38244),	-- Valorous Exterminator (Never added)
@@ -1711,11 +1711,11 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(TWO_HANDED_MACES, {
 			-- Load In Game
-			i(165263, {["sourceID"] = 101569 }),	-- Fallback Weapon - 2H Mace
+			i(165263, {sourceID = 101569 }),	-- Fallback Weapon - 2H Mace
 			i(169818),	-- Quilboar Club
-			i(182565, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 2H Mace STR
-			i(182569, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 2H Sword STR
-			i(182579, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 2H Sword STR 2
+			i(182565, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon 2H Mace STR
+			i(182569, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon 2H Sword STR
+			i(182579, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon 2H Sword STR 2
 			-- ItemID/Retrieving
 			i(108794),	-- 7.0 PH Weapon - 2H Mace Agi
 			i(108795),	-- 7.0 PH Weapon - 2H Mace Str
@@ -1728,7 +1728,7 @@ root(ROOTS.NeverImplemented, {
 			i(33475),	-- Frostmourne
 			i(56702),	-- Saw Blade (never made it to live)
 			i(81703),	-- Glorenzelg, High-Blade of the Silver Hand, added in 5.0.1 ??
-			i(165274, {["sourceID"] = 101579 }),	-- Fallback Weapon - 2H Sword
+			i(165274, {sourceID = 101579 }),	-- Fallback Weapon - 2H Sword
 			i(182337),	-- Unholy Weapon
 			-- ItemID/Retrieving
 			i(23432),	-- Engraved Greatsword
@@ -1757,7 +1757,7 @@ root(ROOTS.NeverImplemented, {
 		filter(WARGLAIVES, {
 			-- Load In Game
 			i(151138),	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
-			i(182571, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Warglaive AGI
+			i(182571, { ItemAppearanceModifierID = 153 }),	-- NPE Weapon Warglaive AGI
 			-- ItemID/Retrieving
 			i(165682),	-- Fallback Weapon - Warglaives
 		}),
@@ -1769,26 +1769,26 @@ root(ROOTS.NeverImplemented, {
 	}),
 	n(WEAPONS, {
 		-- 10.1.5
-		expansion(EXPANSION.DF, patch(1,5), bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, patch(1,5), bubbleDown({ timeline = { CREATED_10_1_5 } }, {
 			i(208003),	-- 10.1.5 Time Rifts - Bronze Weapons - Capture Media
 			i(208002),	-- 10.1.5 Time Rifts - Infinite Weapons - Capture Media
 		})),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), bubbleDown({ timeline = { CREATED_10_2_0 } }, {
 			i(207025),	-- <Placeholder> Fyrakk Axe - Shadowflame
 			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
 			i(211260),	-- Crimson Gladiator's Spear
 		})),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), bubbleDown({ timeline = { CREATED_10_2_5 } }, {
 			i(211162),	-- Klaxxi Longsword
 			i(210533),	-- Timerunning Staff
 		})),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, patch(2,7), bubbleDown({ ["timeline"] = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), bubbleDown({ timeline = { CREATED_10_2_7 } }, {
 			i(215699),	-- Grand Imperial Rifle
 			i(215566),	-- Jinyu Blade
 			i(215568),	-- Jinyu Dagger
@@ -1812,7 +1812,7 @@ root(ROOTS.NeverImplemented, {
 		})),
 
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
 			-- Reported in Discord
 			i(225862),	-- Forged Gladiator's Greatstaff
 			-- Leave this for Darkal //Braghe
@@ -1921,9 +1921,9 @@ root(ROOTS.NeverImplemented, {
 			i(218236),	-- 11.0 Leveling Quest Template - Polearms - Str
 			i(218237),	-- 11.0 Leveling Quest Template - Staff - Int
 			i(218238),	-- 11.0 Leveling Quest Template - Warglaive - Agi
-			i(224467, {["sourceID"] = 220382}),	-- Forgotten Axe
+			i(224467, {sourceID = 220382}),	-- Forgotten Axe
 			i(225873),	-- Forged Gladiator's Sword
-			i(225349, {["sourceID"] = 220997}),	-- Kaheti Confiscated Borers
+			i(225349, {sourceID = 220997}),	-- Kaheti Confiscated Borers
 
 			-- Fist
 			i(223585),	-- Algari Bladefist
@@ -1935,12 +1935,12 @@ root(ROOTS.NeverImplemented, {
 		})),
 
 		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,02), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,02), bubbleDownSelf({ timeline = { CREATED_11_0_2 } }, {
 			i(222905),	-- Faerin's Shield
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ timeline = { CREATED_11_0_5 } }, {
 			i(225667),	-- Ambassador Flamelash's Trident
 			i(231490),	-- Arbiter's Blade
 			i(232267),	-- Creche-Guard's Axe
@@ -1958,12 +1958,12 @@ root(ROOTS.NeverImplemented, {
 		})),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ timeline = { CREATED_11_0_7 } }, {
 			i(232946),	-- Verus
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
 			i(230796),	-- [11.1 PVP] Gladiator's Placeholder <TEMPLATE> (bow)
 			i(230797),	-- [11.1 PVP] Gladiator's Placeholder <TEMPLATE> (2h axe)
 			i(230798),	-- [11.1 PVP] Gladiator's Placeholder <TEMPLATE> (2h mace)
@@ -1993,12 +1993,12 @@ root(ROOTS.NeverImplemented, {
 		})),
 
 		-- 11.1.5
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
-			i(242318, {["sourceID"] = 290177}),	-- Wooden Orgrimmar Shield
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_5 } }, {
+			i(242318, {sourceID = 290177}),	-- Wooden Orgrimmar Shield
 		})),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
 			i(230814),	-- [11.2 PVP] Gladiator's Axe <TEMPLATE>
 			i(230822),	-- [11.2 PVP] Gladiator's Battlestaff <TEMPLATE>
 			i(230829),	-- [11.2 PVP] Gladiator's Bow <TEMPLATE>
@@ -2030,9 +2030,9 @@ root(ROOTS.NeverImplemented, {
 		})),
 
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
 			-- Blizzard decided to make another copy of random WoD NYI sourceIDs again in 12.0.0
-			expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
 				itemsource(301399),	-- Chakram-Breaker Greatsword
 				itemsource(301401),	-- Spire of the Furious Construct
 				itemsource(301404),	-- Beakbreaker Scimitar
@@ -2083,9 +2083,9 @@ root(ROOTS.NeverImplemented, {
 		})),
 
 		-- 12.0.5
-		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
+		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ timeline = { CREATED_12_0_5 } }, {
 			-- Blizzard decided to make another copy of random WoD NYI sourceIDs again in 12.0.5
-			expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
+			expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { CREATED_12_0_5 } }, {
 				itemsource(65277),	-- Blackhand Forgehammer
 				itemsource(65223),	-- Dagger of Enfeeblement
 				itemsource(65280),	-- Dagger of the Shattered Crucible
@@ -2126,14 +2126,14 @@ root(ROOTS.NeverImplemented, {
 			}),
 
 			-- 2.0.1
-			expansion(EXPANSION.TBC, patch(0,1), bubbleDown({ ["timeline"] = { CREATED_2_0_1 } }, {
+			expansion(EXPANSION.TBC, patch(0,1), bubbleDown({ timeline = { CREATED_2_0_1 } }, {
 				-- #if BEFORE 4.0.1
 				i(30491),	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
 				-- #endif
 			})),
 
 			-- 2.4.2
-			expansion(EXPANSION.TBC, patch(4,2), bubbleDown({ ["timeline"] = { CREATED_2_4_2 } }, {
+			expansion(EXPANSION.TBC, patch(4,2), bubbleDown({ timeline = { CREATED_2_4_2 } }, {
 				-- #if BEFORE 3.0.2
 				i(38579),	-- Venomous Tome
 				-- #endif
@@ -2158,7 +2158,7 @@ root(ROOTS.NeverImplemented, {
 			}),
 
 			-- 3.0.2
-			expansion(EXPANSION.WRATH, patch(0,2), bubbleDown({ ["timeline"] = { CREATED_3_0_2 } }, {
+			expansion(EXPANSION.WRATH, patch(0,2), bubbleDown({ timeline = { CREATED_3_0_2 } }, {
 				-- #if BEFORE 6.2.0
 				i(44191),	-- Ice-Rimed Chopper
 				-- #endif
@@ -2343,7 +2343,7 @@ root(ROOTS.NeverImplemented, {
 		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.0.2
-			expansion(EXPANSION.WOD, patch(0,2), bubbleDown({ ["timeline"] = { CREATED_6_0_2 } }, {
+			expansion(EXPANSION.WOD, patch(0,2), bubbleDown({ timeline = { CREATED_6_0_2 } }, {
 				i(120272),	-- High Warlord's Razor
 				i(120273),	-- High Warlord's Razor
 			})),
@@ -2367,10 +2367,10 @@ root(ROOTS.NeverImplemented, {
 			i(150613),	-- Survivalist's Hunting Spear
 			i(146304),	-- Fel Titan Hammer
 			i(147374, {	-- Wooden Toy Shield [Alliance]
-				["timeline"] = { CREATED_7_3_0 },
+				timeline = { CREATED_7_3_0 },
 			}),
 			i(147377, {	-- Wooden Toy Shield [Horde]
-				["timeline"] = { CREATED_7_3_0 },
+				timeline = { CREATED_7_3_0 },
 			}),
 		}),
 		expansion(EXPANSION.BFA, {
@@ -2424,7 +2424,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 			i(167998, {	-- Dark Iron Tankard
-				["timeline"] = { CREATED_8_1_5 },
+				timeline = { CREATED_8_1_5 },
 			}),
 			i(159538),	-- Coldscale Cudgel
 			i(159498),	-- Coldscale Pistol

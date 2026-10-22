@@ -2,10 +2,10 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 	m(VALSHARAH, {
 		n(WORLD_QUESTS, sharedData({
-			["isWorldQuest"] = true,
+			isWorldQuest = true,
 		}, {
 			q(45924),	-- Abyssal Monstrosity (Invasion WQ)
 			q(45922),	-- Agmozuul (Invasion wq)
@@ -19,31 +19,31 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(41955),	-- Bloodline of Stone
 			q(42075),	-- Botanical Backlash
 			q(41484, {	-- Brimstone Destroyer
-				["requireSkill"] = MINING,
-				["sym"] = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
+				requireSkill = MINING,
+				sym = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
 			}),
 			q(41486, {	-- Brimstone Destroyer
-				["requireSkill"] = MINING,
-				["sym"] = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
+				requireSkill = MINING,
+				sym = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
 			}),
 			q(41487, {	-- Brimstone Destroyer
-				["requireSkill"] = MINING,
-				["sym"] = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
+				requireSkill = MINING,
+				sym = SYM.LEGION.LEGION_MINING_INFERNAL_BRIMSTONE_R3,	-- Infernal Brimstone [Rank 3]
 			}),
 			q(41336, {	-- Bristly Musken Hide
-				["requireSkill"] = SKINNING,
+				requireSkill = SKINNING,
 			}),
 			q(41273, {	-- Buoy Fishing
-				["requireSkill"] = FISHING,
+				requireSkill = FISHING,
 			}),
 			q(41532, {	-- Bushy Dreamleaf
-				["requireSkill"] = HERBALISM,
-				["groups"] = {
+				requireSkill = HERBALISM,
+				groups = {
 					i(140956),	-- Bushy Dreamleaf (QI!)
 				},
 			}),
 			q(42174, {	-- Champions of Elune
-				["maps"] = { 697 },	-- Azshara (scenario version)
+				maps = { 697 },	-- Azshara (scenario version)
 			}),
 			q(43738),	-- Coastal Gloom
 			q(43344),	-- DANGER: Aodh Witherpetal (rare wq)
@@ -58,46 +58,46 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(43101),	-- DANGER: Witchdoctor Grgl-Brgl (rare wq)
 			q(41995),	-- Dark Corruption
 			petbattle(q(41860, {	-- Dealing with Satyrs
-				["coord"] = { 63.6, 60.6, VALSHARAH }
+				coord = { 63.6, 60.6, VALSHARAH }
 			})),
 			q(44884),	-- Defense of Emerald Bay (Invasion WQ)
 			q(41291, {	-- Dreamleaf Cluster
-				["requireSkill"] = HERBALISM,
+				requireSkill = HERBALISM,
 			}),
 			q(41546, {	-- Dreamleaf Cluster
-				["requireSkill"] = HERBALISM,
+				requireSkill = HERBALISM,
 			}),
 			q(41295, {	-- Dreamleaf-Covered Ancient
-				["requireSkill"] = HERBALISM,
+				requireSkill = HERBALISM,
 			}),
 			q(46763),	-- Drol'maz (Invasion WQ)
 			q(43756),	-- Enigmatic
 			q(41439, {	-- Exquisite Leystone Deposits
-				["requireSkill"] = MINING,
+				requireSkill = MINING,
 			}),
 			q(41567, {	-- Felhide
-				["requireSkill"] = SKINNING,
+				requireSkill = SKINNING,
 			}),
 			q(41565, {	-- Felhide
-				["requireSkill"] = SKINNING,
+				requireSkill = SKINNING,
 			}),
 			q(41566, {	-- Felhide
-				["requireSkill"] = SKINNING,
+				requireSkill = SKINNING,
 			}),
 			q(41516, {	-- Felwort
-				["requireSkill"] = HERBALISM,
+				requireSkill = HERBALISM,
 			}),
 			q(41517, {	-- Felwort
-				["requireSkill"] = HERBALISM,
+				requireSkill = HERBALISM,
 			}),
 			q(41518, {	-- Felwort
-				["requireSkill"] = HERBALISM,
+				requireSkill = HERBALISM,
 			}),
 			q(41294, {	-- Flourishing Dreamleaf
-				["requireSkill"] = HERBALISM,
+				requireSkill = HERBALISM,
 			}),
 			q(41533, {	-- Fragrant Dreamleaf
-				["requireSkill"] = HERBALISM,
+				requireSkill = HERBALISM,
 			}),
 			q(45928),	-- Gelthrak (Invasion wq)
 			q(45923),	-- Gloth (Invasion wq)
@@ -105,64 +105,64 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(43332),	-- Grell in a Handbasket
 			q(42124),	-- Hags and Hexes
 			q(41458, {	-- Hardened Leystone Outcropping
-				["requireSkill"] = MINING,
+				requireSkill = MINING,
 			}),
 			q(41612, {	-- Huge Mossgill Perch
-				["requireSkill"] = FISHING,
-				["groups"] = { i(134568) },	-- Huge Mossgill Perch (QI!)
+				requireSkill = FISHING,
+				groups = { i(134568) },	-- Huge Mossgill Perch (QI!)
 			}),
 			q(41613, {	-- Huge Mossgill Perch
-				["requireSkill"] = FISHING,
-				["groups"] = { i(134568) },	-- Huge Mossgill Perch (QI!)
+				requireSkill = FISHING,
+				groups = { i(134568) },	-- Huge Mossgill Perch (QI!)
 			}),
 			q(41270, {	-- Huge Mossgill Perch
-				["requireSkill"] = FISHING,
-				["groups"] = { i(134568) },	-- Huge Mossgill Perch (QI!)
+				requireSkill = FISHING,
+				groups = { i(134568) },	-- Huge Mossgill Perch (QI!)
 			}),
 			q(45804),	-- Impvasion! (Invasion wq)
 			q(42028),	-- Into the Nightmare
 			q(41271, {	-- Into the Whirlpool
-				["requireSkill"] = FISHING,
-				["groups"] = {
+				requireSkill = FISHING,
+				groups = {
 					i(139279),	-- Albino Barracuda (QI!)
 				},
 			}),
 			q(41531, {	-- Iridescent Dreamleaf
-				["requireSkill"] = HERBALISM,
+				requireSkill = HERBALISM,
 			}),
 			q(42150),	-- Kal'delar Naga Incursion
 			q(42094),	-- Keepers of the Dream
 			q(43753),	-- Ley Race
 			q(41503, {	-- Leystone Basilisks
-				["requireSkill"] = MINING,
+				requireSkill = MINING,
 			}),
 			q(41504, {	-- Leystone Basilisks
-				["requireSkill"] = MINING,
+				requireSkill = MINING,
 			}),
 			q(41502, {	-- Leystone Basilisks
-				["requireSkill"] = MINING,
+				requireSkill = MINING,
 			}),
 			q(45047),	-- Like the Wind
 			q(41530, {	-- Lively Dreamleaf
-				["requireSkill"] = HERBALISM,
+				requireSkill = HERBALISM,
 			}),
 			q(41601, {	-- Lively Mossgill Perch
-				["requireSkill"] = FISHING,
+				requireSkill = FISHING,
 			}),
 			q(41600, {	-- Lively Mossgill Perch
-				["requireSkill"] = FISHING,
+				requireSkill = FISHING,
 			}),
 			q(41269, {	-- Lively Mosgill Perch
-				["requireSkill"] = FISHING,
+				requireSkill = FISHING,
 			}),
 			q(44011),	-- Lost Wisp
 			q(41965),	-- Lunarwing Liberation
 			q(41440, {	-- Magnificent Leystone Deposits
-				["requireSkill"] = MINING,
+				requireSkill = MINING,
 			}),
 			petbattle(q(41861)),	-- Meet The Maw
 			q(41334, {	-- Musky Bear Hide
-				["requireSkill"] = SKINNING,
+				requireSkill = SKINNING,
 			}),
 			q(45925),	-- Nez'val (Invasion wq)
 			petbattle(q(41862)),	-- Only Pets Can Prevent Forest Fires
@@ -170,24 +170,24 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(41956),	-- Petrified Acolytes
 			q(41964),	-- Poisoned Waters
 			q(41337, {	-- Pristine Stag Hide
-				["requireSkill"] = SKINNING,
+				requireSkill = SKINNING,
 			}),
 			q(43336),	-- Purge of the Nightmare
 			q(41457, {	-- Radiant Leystone Outcropping
-				["requireSkill"] = MINING,
+				requireSkill = MINING,
 			}),
 			q(43324),	-- Rage of the Owlbeasts
 			q(44730),	-- Ravaged Dreams (Invasion WQ)
 			q(41496, {	-- Raw Leystone Seams
-				["requireSkill"] = MINING,
+				requireSkill = MINING,
 			}),
 			q(41333, {	-- Rugged Wolf Hide
-				["requireSkill"] = SKINNING,
+				requireSkill = SKINNING,
 			}),
 			q(43709),	-- Seal Clubbing
 			q(42076, {	-- Shadowfen Village
 				o(249393, {	-- Mistfall Cache
-					["coords"] = {
+					coords = {
 						{ 64.8, 51.3, VALSHARAH },
 						{ 65.8, 53.8, VALSHARAH },
 						{ 65.9, 51.0, VALSHARAH },
@@ -195,25 +195,25 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 						{ 67.1, 50.4, VALSHARAH },
 						{ 67.2, 53.5, VALSHARAH },
 					},
-					["groups"] = { i(136785) },	-- Shadowfen Valuables (QI!)
+					groups = { i(136785) },	-- Shadowfen Valuables (QI!)
 				}),
 			}),
 			q(44895),	-- Sharptalon Swarm!
 			q(41553, {	-- Slab of Bacon
-				["requireSkill"] = COOKING,
-				["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
+				requireSkill = COOKING,
+				groups = { i(135511) },	-- Thick Slab of Bacon (QI!)
 			}),
 			q(41554, {	-- Slab of Bacon
-				["requireSkill"] = COOKING,
-				["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
+				requireSkill = COOKING,
+				groups = { i(135511) },	-- Thick Slab of Bacon (QI!)
 			}),
 			q(41260, {	-- Slab of Bacon
-				["requireSkill"] = COOKING,
-				["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
+				requireSkill = COOKING,
+				groups = { i(135511) },	-- Thick Slab of Bacon (QI!)
 			}),
 			petbattle(q(41855)),	-- Stand Up to Bullies
 			q(41441, {	-- Superior Leystone Deposits
-				["requireSkill"] = MINING,
+				requireSkill = MINING,
 			}),
 			q(41293),	-- Supplies Needed: Dreamleaf
 			q(41316),	-- Supplies Needed: Leystone
@@ -229,15 +229,15 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			petbattle(q(40279, {	-- Training with Durian
 				-- #IF BEFORE 10.2.5
 				-- Not sure when they fixed this but you can repeat the battle now :D
-				["description"] = "This World Quest only allows ONE completed pet battle per character per day, contrary to every other Legion Pet Battle World Quest.",
+				description = "This World Quest only allows ONE completed pet battle per character per day, contrary to every other Legion Pet Battle World Quest.",
 				-- #ENDIF
-				["coord"] = { 46.4, 36.9, VALSHARAH },
+				coord = { 46.4, 36.9, VALSHARAH },
 			})),
 			q(41992),	-- Twisted Ash
 			q(46766),	-- Ulgthax (Invasion wq)
 			q(41664, {	-- Vantus Rune Work Order: Dragons of Nightmare
-				["requireSkill"] = INSCRIPTION,
-				["groups"] = {
+				requireSkill = INSCRIPTION,
+				groups = {
 					i(137770),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 3] (RECIPE!)
 				},
 			}),
@@ -261,75 +261,75 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(43459),	-- WANTED: Thondrax
 			q(43633),	-- WANTED: Thondrax (rare wq)
 			q(43248, {	-- Warden Tower Assault: Darkfollow's Spire [A]
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			q(43247, {	-- Warden Tower Assault: Darkfollow's Spire (H)
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			q(43183, {	-- Warden Tower Assault: Starstalker's Point [A]
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			q(42070, {	-- Warden Tower Assault: Starstalker's Point (H)
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			q(43784),	-- What a Nightmare
 			q(43759),	-- Where's the Reef?
 			q(43758),	-- Wherever I May Gloam
 			petbattle(q(42190)),	-- Wildlife Conservationist
 			q(41652, {	-- Work Order: Deep Amber Loop
-				["requireSkill"] = JEWELCRAFTING,
-				["groups"] = {
+				requireSkill = JEWELCRAFTING,
+				groups = {
 					i(137838),	-- Design: Deep Amber Loop [Rank 3] (RECIPE!)
 				},
 			}),
 			q(41292, {	-- Work Order: Dreamleaf
-				["requireSkill"] = HERBALISM,
+				requireSkill = HERBALISM,
 			}),
 			q(41312, {	-- Work Order: Leystone
-				["requireSkill"] = MINING,
+				requireSkill = MINING,
 			}),
 			q(41634, {	-- Work Order: Leystone Armguards
-				["provider"] = { "n", 106901 },	-- Sylvia Hartshorn
-				["requireSkill"] = BLACKSMITHING,
-				["isWorldQuest"] = true,
-				["lvl"] = 110,
-				["groups"] = {
+				provider = { "n", 106901 },	-- Sylvia Hartshorn
+				requireSkill = BLACKSMITHING,
+				isWorldQuest = true,
+				lvl = 110,
+				groups = {
 					i(123936),	-- Plans: Leystone Armguards [Rank 3] (RECIPE!)
 				},
 			}),
 			q(41272, {	-- Work Order: Mossgill Perch
-				["requireSkill"] = FISHING,
+				requireSkill = FISHING,
 			}),
 			q(41676, {	-- Work Order: Pump-Action Bandage Gun
-				["requireSkill"] = ENGINEERING,
-				["groups"] = {
+				requireSkill = ENGINEERING,
+				groups = {
 					i(137721),	-- Schematic: Pump-Action Bandage Gun [Rank 3] (RECIPE!)
 				},
 			}),
 			q(41646, {	-- Work Order: Silkweave Gloves
-				["requireSkill"] = TAILORING,
-				["groups"] = {
+				requireSkill = TAILORING,
+				groups = {
 					i(138012),	-- Pattern: Silkweave Gloves [Rank 3] (RECIPE!)
 				},
 			}),
 			q(41338, {	-- Work Order: Stonehide Leather
-				["requireSkill"] = SKINNING,
+				requireSkill = SKINNING,
 			}),
 			q(41658, {	-- Work Order: Sylvan Elixirs
-				["requireSkill"] = ALCHEMY,
-				["groups"] = {
+				requireSkill = ALCHEMY,
+				groups = {
 					i(127921),	-- Recipe: Sylvan Elixir [Rank 2] (RECIPE!)
 				},
 			}),
 			q(41640, {	-- Work Order: Warhide Mask
-				["requireSkill"] = LEATHERWORKING,
-				["groups"] = {
+				requireSkill = LEATHERWORKING,
+				groups = {
 					i(137878),	-- Pattern: Warhide Mask [Rank 3] (RECIPE!)
 				},
 			}),
 			q(41670, {	-- Work Order: Word of Agility
-				["requireSkill"] = ENCHANTING,
-				["groups"] = {
+				requireSkill = ENCHANTING,
+				groups = {
 					i(128605),	-- Formula: Enchant Cloak - Word of Agility [Rank 3] (RECIPE!)
 				},
 			}),
@@ -339,7 +339,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
 			n(WORLD_QUESTS, {

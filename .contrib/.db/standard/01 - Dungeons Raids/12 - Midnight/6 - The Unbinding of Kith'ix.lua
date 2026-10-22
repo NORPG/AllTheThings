@@ -43,19 +43,19 @@ InstanceHelper.UpgradeMapping = {
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1324, {	-- The Unbinding of Kith'ix
-		["coord"] = { 73.3, 8.6, MAP.MIDNIGHT.VAULTS_UNDERBELLY },
-		["maps"] = {
+		coord = { 73.3, 8.6, MAP.MIDNIGHT.VAULTS_UNDERBELLY },
+		maps = {
 			2669,	-- The Unbinding of Kith'ix
 			2670,	-- The Tomb of Ula'tek
 		},
-		["isRaid"] = true,
-		["timeline"] = { ADDED_12_1_5 },
-		["groups"] = {
+		isRaid = true,
+		timeline = { ADDED_12_1_5 },
+		groups = {
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				BossOnly(KITHIX, {
 					ach(63692),	-- Kith'ix
 					i(281213),	-- Kith'ix's Seal (DECOR!)
-					i(286019, { ["timeline"] = { REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Kith'ix
+					i(286019, { timeline = { REMOVED_12_2_0 } }),	-- Nebulous Voidcache: Kith'ix
 					i(281615),	-- Shadeweaver's Hearthstone (TOY!)
 				}),
 			}),
@@ -85,7 +85,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					ach(63694),	-- Mythic: Kith'ix
 					ach(64169),	-- Mythic: Kith'ix Guild Run
 					i(284159, {	-- Libram of the Matriarch (TOY!)
-						i(284160, { ["classes"] = { PALADIN } }),	-- Glyph of the Matriarch's Wings
+						i(284160, { classes = { PALADIN } }),	-- Glyph of the Matriarch's Wings
 					}),
 				}),
 			}),
@@ -95,8 +95,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 
 --root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 --	inst(1324, {	-- The Unbinding of Kith'ix
---		["timeline"] = { ADDED_12_1_5 },
---		["groups"] = {
+--		timeline = { ADDED_12_1_5 },
+--		groups = {
 --		},
 --	}),
 --}))

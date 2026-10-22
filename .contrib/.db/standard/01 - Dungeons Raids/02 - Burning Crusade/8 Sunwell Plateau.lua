@@ -2,27 +2,27 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE, bubbleDown({ ["timeline"] = { ADDED_2_4_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE, bubbleDown({ timeline = { ADDED_2_4_0 } }, {
 	inst(752, {	-- Sunwell Plateau
-		["lore"] = "Nearly seven thousand years ago, the Highborne were exiled from Kalimdor for refusing to give up arcane magic. Led by Dath'Remar Sunstrider, these elves founded their own kingdom of Quel'Thalas. For millennia the mystical pool of energy known as the Sunwell fueled the potent magic of the exiled high elves. Now, the remnants of this ancient fountain have become the Burning Legion's latest target as the demons prepare to summon their commander, Kil'jaeden, with the Sunwell's energy.",
+		lore = "Nearly seven thousand years ago, the Highborne were exiled from Kalimdor for refusing to give up arcane magic. Led by Dath'Remar Sunstrider, these elves founded their own kingdom of Quel'Thalas. For millennia the mystical pool of energy known as the Sunwell fueled the potent magic of the exiled high elves. Now, the remnants of this ancient fountain have become the Burning Legion's latest target as the demons prepare to summon their commander, Kil'jaeden, with the Sunwell's energy.",
 		-- #if BEFORE WRATH
-		["zoneTextAreaID"] = 4075,	-- Sunwell Plateau
+		zoneTextAreaID = 4075,	-- Sunwell Plateau
 		-- #endif
-		["coord"] = { 44.28, 45.71, ISLE_OF_QUELDANAS },	-- Sunwell Plateau, Isle of Quel'Danas
-		["maps"] = {
+		coord = { 44.28, 45.71, ISLE_OF_QUELDANAS },	-- Sunwell Plateau, Isle of Quel'Danas
+		maps = {
 			SUNWELL_PLATEAU,
 			336,	-- Shrine of the Eclipse
 		},
-		["sharedLockout"] = 1,
-		["isRaid"] = true,
-		["lvl"] = lvlsquish(68, 68, 30),	-- Level 68s could zone in without any attunements. TODO: Check this.
-		["groups"] = {
+		sharedLockout = 1,
+		isRaid = true,
+		lvl = lvlsquish(68, 68, 30),	-- Level 68s could zone in without any attunements. TODO: Check this.
+		groups = {
 			n(ACHIEVEMENTS, {
-				ach(11749, {["timeline"] = {ADDED_7_2_0}}),	-- Suns Out, Thori'dals Out (Sunwell Plateau)
+				ach(11749, {timeline = {ADDED_7_2_0}}),	-- Suns Out, Thori'dals Out (Sunwell Plateau)
 			}),
 			n(ZONE_DROPS, bubbleDown({
 			-- #if AFTER DF
-				["_drop"] = { "classes", "c" },
+				_drop = { "classes", "c" },
 			-- #endif
 			},{
 				i(35202),	-- Design: Amulet of Flowing Life (RECIPE!)
@@ -61,7 +61,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				i(35273),	-- Study of Advanced Smelting (RECIPE!)
 				-- #if BEFORE MOP
 				i(34349, {	-- Blade of Life's Inevitability
-					["timeline"] = { REMOVED_5_0_4 },
+					timeline = { REMOVED_5_0_4 },
 				}),
 				-- #endif
 				i(34350),	-- Gauntlets of the Ancient Shadowmoon
@@ -80,7 +80,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 			})),
 			n(COMMON_BOSS_DROPS, {
 				i(34664, {	-- Sunmote
-					["crs"] = {
+					crs = {
 						24850,	-- Kalecgos
 						24892,	-- Sathrovarr the Corruptor
 						24882,	-- Brutalus
@@ -94,19 +94,19 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				}),
 			}),
 			e(1591, {	-- Kalecgos
-				["crs"] = {
+				crs = {
 					24850,	-- Kalecgos
 					24892,	-- Sathrovarr the Corruptor
 				},
-				["groups"] = {
+				groups = {
 					i(34848, {	-- Bracers of the Forgotten Conqueror
-						["classes"] = { PALADIN, PRIEST, WARLOCK },
+						classes = { PALADIN, PRIEST, WARLOCK },
 					}),
 					i(34851, {	-- Bracers of the Forgotten Protector
-						["classes"] = { WARRIOR, HUNTER, SHAMAN },
+						classes = { WARRIOR, HUNTER, SHAMAN },
 					}),
 					i(34852, {	-- Bracers of the Forgotten Vanquisher
-						["classes"] = { ROGUE, MAGE, DRUID },
+						classes = { ROGUE, MAGE, DRUID },
 					}),
 					i(34164),	-- Dragonscale-Encrusted Longblade
 					i(34165),	-- Fang of Kalecgos
@@ -118,19 +118,19 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				},
 			}),
 			e(1592, {	-- Brutallus
-				["creatureID"] = 24882,
-				["groups"] = {
+				creatureID = 24882,
+				groups = {
 					i(122113, {	-- Sunblade Micro-Defender (PET!)
-						["timeline"] = { ADDED_6_1_0 },
+						timeline = { ADDED_6_1_0 },
 					}),
 					i(34853, {	-- Belt of the Forgotten Conqueror
-						["classes"] = { PALADIN, PRIEST, WARLOCK },
+						classes = { PALADIN, PRIEST, WARLOCK },
 					}),
 					i(34854, {	-- Belt of the Forgotten Protector
-						["classes"] = { WARRIOR, HUNTER, SHAMAN },
+						classes = { WARRIOR, HUNTER, SHAMAN },
 					}),
 					i(34855, {	-- Belt of the Forgotten Vanquisher
-						["classes"] = { ROGUE, MAGE, DRUID },
+						classes = { ROGUE, MAGE, DRUID },
 					}),
 					i(34176),	-- Reign of Misery
 					i(34179),	-- Heart of the Pit
@@ -141,16 +141,16 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				},
 			}),
 			e(1593, {	-- Felmyst
-				["creatureID"] = 25038,
-				["groups"] = {
+				creatureID = 25038,
+				groups = {
 					i(34856, {	-- Boots of the Forgotten Conqueror
-						["classes"] = { PALADIN, PRIEST, WARLOCK },
+						classes = { PALADIN, PRIEST, WARLOCK },
 					}),
 					i(34857, {	-- Boots of the Forgotten Protector
-						["classes"] = { WARRIOR, HUNTER, SHAMAN },
+						classes = { WARRIOR, HUNTER, SHAMAN },
 					}),
 					i(34858, {	-- Boots of the Forgotten Vanquisher
-						["classes"] = { ROGUE, MAGE, DRUID },
+						classes = { ROGUE, MAGE, DRUID },
 					}),
 					i(34182),	-- Grand Magister's Staff of Torrents
 					i(34185),	-- Sword Breaker's Bulwark
@@ -161,40 +161,40 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				},
 			}),
 			e(1594, {	-- The Eredar Twins
-				["crs"] = {
+				crs = {
 					25165,	-- Sacrolash
 					25166,	-- Alythess
 				},
-				["groups"] = {
+				groups = {
 					i(122115, {	-- Wretched Servant (PET!)
-						["timeline"] = { ADDED_6_1_0 },
+						timeline = { ADDED_6_1_0 },
 					}),
 					i(34853, {	-- Belt of the Forgotten Conqueror
-						["classes"] = { PALADIN, PRIEST, WARLOCK },
+						classes = { PALADIN, PRIEST, WARLOCK },
 					}),
 					i(34854, {	-- Belt of the Forgotten Protector
-						["classes"] = { WARRIOR, HUNTER, SHAMAN },
+						classes = { WARRIOR, HUNTER, SHAMAN },
 					}),
 					i(34855, {	-- Belt of the Forgotten Vanquisher
-						["classes"] = { ROGUE, MAGE, DRUID },
+						classes = { ROGUE, MAGE, DRUID },
 					}),
 					i(34856, {	-- Boots of the Forgotten Conqueror
-						["classes"] = { PALADIN, PRIEST, WARLOCK },
+						classes = { PALADIN, PRIEST, WARLOCK },
 					}),
 					i(34857, {	-- Boots of the Forgotten Protector
-						["classes"] = { WARRIOR, HUNTER, SHAMAN },
+						classes = { WARRIOR, HUNTER, SHAMAN },
 					}),
 					i(34858, {	-- Boots of the Forgotten Vanquisher
-						["classes"] = { ROGUE, MAGE, DRUID },
+						classes = { ROGUE, MAGE, DRUID },
 					}),
 					i(34848, {	-- Bracers of the Forgotten Conqueror
-						["classes"] = { PALADIN, PRIEST, WARLOCK },
+						classes = { PALADIN, PRIEST, WARLOCK },
 					}),
 					i(34851, {	-- Bracers of the Forgotten Protector
-						["classes"] = { WARRIOR, HUNTER, SHAMAN },
+						classes = { WARRIOR, HUNTER, SHAMAN },
 					}),
 					i(34852, {	-- Bracers of the Forgotten Vanquisher
-						["classes"] = { ROGUE, MAGE, DRUID },
+						classes = { ROGUE, MAGE, DRUID },
 					}),
 					i(34198),	-- Stanchion of Primal Intellect
 					i(34199),	-- Archon's Gavel
@@ -220,16 +220,16 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				},
 			}),
 			e(1595, {	-- M'uru
-				["crs"] = {
+				crs = {
 					25840,	-- Entropius
 					25741,	-- M'uru
 				},
-				["groups"] = {
+				groups = {
 					ig(175160, {	-- Holy Relic (RI!)
-						["timeline"] = { ADDED_8_3_0 },
+						timeline = { ADDED_8_3_0 },
 					}),
 					i(122114, {	-- Chaos Pup (PET!)
-						["timeline"] = { ADDED_6_1_0 },
+						timeline = { ADDED_6_1_0 },
 					}),
 					i(34214),	-- Muramasa
 					i(34231),	-- Aegis of Angelic Fortune
@@ -255,21 +255,21 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				},
 			}),
 			e(1596, {	-- Kil'jaeden
-				["creatureID"] = 25315,
-				["groups"] = {
+				creatureID = 25315,
+				groups = {
 					ach(698, {	-- Sunwell Plateau
 						-- #if NOT ANYCLASSIC
 						-- CRIEVE NOTE: This achievement can be earned ahead of time by having an item from KJ in your bags.
-						["timeline"] = { ADDED_3_0_2 },
+						timeline = { ADDED_3_0_2 },
 						-- #endif
 					}),
 					ach(5092, {	-- Sunwell Plateau Guild Run
-						["timeline"] = { ADDED_4_0_3 },
+						timeline = { ADDED_4_0_3 },
 					}),
 					ach(725, {	-- Thori'dal, the Stars' Fury
-						["provider"] = { "i", 34334 },	-- Thori'dal, the Stars' Fury
-						["lore"] = "You must equip the bow to earn this achievement.",
-						["classes"] = { WARRIOR, ROGUE, HUNTER },
+						provider = { "i", 34334 },	-- Thori'dal, the Stars' Fury
+						lore = "You must equip the bow to earn this achievement.",
+						classes = { WARRIOR, ROGUE, HUNTER },
 					}),
 					i(34334),	-- Thori'dal, the Stars' Fury (LEGENDARY!)
 					i(34247),	-- Apolyon, the Soul-Render

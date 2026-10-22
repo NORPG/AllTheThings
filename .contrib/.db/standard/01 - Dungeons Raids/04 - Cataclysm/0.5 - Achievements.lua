@@ -5,7 +5,7 @@
 root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
 	n(ACHIEVEMENTS, {
 		ach(4844, {	-- Cataclysm Dungeon Hero
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				5060,	-- Heroic: Blackrock Caverns
 				5061,	-- Heroic: Throne of the Tides
 				5063,	-- Heroic: The Stonecore
@@ -18,7 +18,7 @@ root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA
 			}},
 		}),
 		ach(5506, {	-- Defender of a Shattered World
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				5060,	-- Heroic: Blackrock Caverns
 				5061,	-- Heroic: Throne of the Tides
 				5063,	-- Heroic: The Stonecore
@@ -32,12 +32,12 @@ root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA
 				4851,	-- Throne of the Four Winds
 				4850,	-- The Bastion of Twilight
 			}},
-			["groups"] = {
+			groups = {
 				title(185),	-- <Name>, Defender of a Shattered World
 			},
 		}),
 		ach(4845, {	-- Glory of the Cataclysm Hero
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				4844,	-- Cataclysm Dungeon Hero
 				5281,	-- Crushing Bones and Cracking Skulls
 				5282,	-- Arrested Development
@@ -69,12 +69,12 @@ root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA
 				5505,	-- Bullet Time
 				5298,	-- Don't Need to Break Eggs to Make an Omelet
 			}},
-			["groups"] = {
+			groups = {
 				i(62900),	-- Volcanic Stone Drake (MOUNT!)
 			},
 		}),
 		ach(4853, {	-- Glory of the Cataclysm Raider
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				5094,	-- Heroic: Magmaw
 				5107,	-- Heroic: Omnotron Defense System
 				5108,	-- Heroic: Maloriak
@@ -100,13 +100,13 @@ root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA
 				5304,	-- Stay Chill
 				5305,	-- Four Play
 			}},
-			["groups"] = {
+			groups = {
 				i(62901),	-- Drake of the East Wind (MOUNT!)
 			},
 		}),
 		ach(12079, {	-- Raiding with Leashes V: Cuteaclysm
-			["timeline"] = { ADDED_7_3_0 },
-			["groups"] = {
+			timeline = { ADDED_7_3_0 },
+			groups = {
 				i(152963),	-- Amalgam of Destruction (PET!)
 			},
 		}),

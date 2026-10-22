@@ -99,7 +99,7 @@ local EndeavorVendorCoords = {
 local i_DecorCoupons = function(itemID, couponCost)
 	return
 	i(itemID, {
-		["cost"] = {{ "c", COMMUNITY_COUPONS, couponCost }},
+		cost = {{ "c", COMMUNITY_COUPONS, couponCost }},
 	})
 end
 -- hopefully temporary until we find another way to hook type 276 assets to NPCs or whatever
@@ -115,15 +115,15 @@ local function criteria_asset_276_sequence(min, t)
 end
 
 root(ROOTS.Housing, n(ENDEAVOR, {
-	["timeline"] = { ADDED_12_0_0 },
-	["groups"] = {
+	timeline = { ADDED_12_0_0 },
+	groups = {
 		n(REWARDS, {
 			currency(COMMUNITY_COUPONS),
 		}),
-		n(AMANI_ENDEAVOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+		n(AMANI_ENDEAVOR, bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {
 			n(260485, {	-- Griftah <Endeavor Trader>
-				["coords"] = EndeavorVendorCoords,
-				["groups"] = {
+				coords = EndeavorVendorCoords,
+				groups = {
 					i_DecorCoupons(263708, 15),	-- Amani Anvil (DECOR!)
 					i_DecorCoupons(274527, 2),	-- Amani Building Peg (DECOR!)
 					i_DecorCoupons(274518, 20),	-- Amani Decorative Plinth (DECOR!)
@@ -131,8 +131,8 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					i_DecorCoupons(255649, 15),	-- Amani Water Well (DECOR!)
 					i_DecorCoupons(263317, 10),	-- Amani Wicker Crate (DECOR!)
 					i(269029, {	-- Bag of Totally Legitimate Amani Goods
-						["cost"] = { { "i", 269994, 1 } },	-- 1x Griftah's Token of Appreciation
-						["groups"] = {
+						cost = { { "i", 269994, 1 } },	-- 1x Griftah's Token of Appreciation
+						groups = {
 							i(268976),	-- "Aromatic" Bottle
 							i(269019),	-- Amani Construction Hammer
 							i(268975),	-- Amani War Axe
@@ -158,11 +158,11 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				},
 			}),
 			n(267870, {	-- Unquestionably Griftah <Not Actually Griftah>
-				["coords"] = {
+				coords = {
 					{ 62.4, 79.2, FOUNDERS_POINT },
 					{ 40.2, 73.0, RAZORWIND_SHORES },
 				},
-				["groups"] = {
+				groups = {
 					i_DecorCoupons(244344, 10),	-- Griftah's Mystical Polter-Urn
 					i_DecorCoupons(263875, 10),	-- Griftah's Resizing Hex-Skull
 					i_DecorCoupons(276312, 10),	-- Griftah's Torch of Rotation
@@ -170,32 +170,32 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				},
 			}),
 			n(QUESTS, sharedData({
-				["isWeekly"] = true,
+				isWeekly = true,
 			}, {
 				q(95336, {	-- Frenzied Fossicking
-					["qg"] = 263442,	-- Tol'anja
-					["coords"] = {
+					qg = 263442,	-- Tol'anja
+					coords = {
 						{ 52.7, 38.4, FOUNDERS_POINT },
 						{ 54.2, 56.8, RAZORWIND_SHORES },
 					},
 				}),
 				q(95768, {	-- My Stuff's Better Than Your Stuff
-					["qgs"] = {
+					qgs = {
 						262669,	-- Garben Rockfist
 						262240,	-- Arnold Guyvere
 					},
-					["coords"] = {
+					coords = {
 						{ 53.0, 37.5, FOUNDERS_POINT },
 						{ 54.4, 56.0, RAZORWIND_SHORES },
 					},
 				}),
 				q(95673, {	-- Suspicious Scare-gull
-					["qg"] = 262234,	-- Calada
-					["coords"] = {
+					qg = 262234,	-- Calada
+					coords = {
 						{ 52.5, 38.6, FOUNDERS_POINT },
 						{ 54.3, 57.1, RAZORWIND_SHORES },
 					},
-					["groups"] = {
+					groups = {
 						o(642704, {	-- Seagull Feather
 							i(270210),	-- Bird Feathers (QI!)
 						}),
@@ -208,8 +208,8 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 		})),
 		n(DRACONIC_ENDEAVOR, {
 			n(250820, {	-- Hordranin <Endeavor Trader>
-				["coords"] = EndeavorVendorCoords,
-				["groups"] = {
+				coords = EndeavorVendorCoords,
+				groups = {
 					i_DecorCoupons(250704, 15),	-- Ancient Weyrn Device
 					i_DecorCoupons(250702, 5),	-- Artisan's Measuring Scales
 					i_DecorCoupons(250699, 10),	-- Dark Talon Pennant
@@ -226,26 +226,26 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 			}),
 			-- Weekly Quests
 			n(QUESTS, sharedData({
-				["isWeekly"] = true,
+				isWeekly = true,
 			}, {
 				q(92429, {	-- Alternative Skinning
-					["qgs"] = {
+					qgs = {
 						251056,	-- Gerath
 						254255,	-- Hera Fer
 					},
-					["coords"] = {
+					coords = {
 						{ 52.9, 39.1, FOUNDERS_POINT },
 						{ 54.2, 56.1, RAZORWIND_SHORES },
 					},
-					["groups"] = { i(251632) },	-- Biological Vacuum (QI!)
+					groups = { i(251632) },	-- Biological Vacuum (QI!)
 				}),
 				q(92417, {	-- Farm to Table
-					["qg"] = 250970,	-- Yolan Hidor
-					["coords"] = {
+					qg = 250970,	-- Yolan Hidor
+					coords = {
 						{ 53.2, 38.0, FOUNDERS_POINT },
 						{ 54.9, 57.3, RAZORWIND_SHORES },
 					},
-					["groups"] = {
+					groups = {
 						i(257886),	-- Ripe Apple (QI!)
 						i(257889),	-- Ripe Carrot (QI!)
 						o(610259, {	-- Ripe Grapes
@@ -259,28 +259,28 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					},
 				}),
 				q(92402, {	-- Magical Touch
-					["qg"] = 254536,	-- Gelen Jord
-					["coords"] = {
+					qg = 254536,	-- Gelen Jord
+					coords = {
 						{ 52.1, 38.1, FOUNDERS_POINT },
 						-- { X, Y, RAZORWIND_SHORES },
 					},
-					["qi"] = 251492,	-- Slightly Magical Crystal Locator (QI!)
-					["groups"] = {
+					qi = 251492,	-- Slightly Magical Crystal Locator (QI!)
+					groups = {
 						o(572561, {	-- Crystal
 							i(251273),	-- Slightly Magical Crystal (QI!)
 						}),
 					},
 				}),
 				q(92443, {	-- Reverse Herb Farming
-					["qg"] = 254255,	-- Hera Fer
-					["coords"] = {
+					qg = 254255,	-- Hera Fer
+					coords = {
 						{ 52.9, 37.6, FOUNDERS_POINT },
 						{ 54.2, 56.1, RAZORWIND_SHORES },
 					},
 				}),
 				q(92445, {	-- Smelting for Two
-					["qg"] = 251185,	-- Jaren Holdart
-					["coords"] = {
+					qg = 251185,	-- Jaren Holdart
+					coords = {
 						{ 52.5, 38.4, FOUNDERS_POINT },
 						{ 54.1, 57.0, RAZORWIND_SHORES },
 					},
@@ -316,8 +316,8 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 		}),
 		n(GRUMMLE_ENDEAVOR, {
 			n(249684, {	-- Brother Dovetail <Endeavor Trader>
-				["coords"] = EndeavorVendorCoords,
-				["groups"] = {
+				coords = EndeavorVendorCoords,
+				groups = {
 					i_DecorCoupons(251474, 5),	-- Ceramic Kafa Mug (DECOR!)
 					i_DecorCoupons(251473, 5),	-- Commander's Kafa Mug (DECOR!)
 					i_DecorCoupons(252041, 15),	-- Dalaran Espresso Machine (DECOR!)
@@ -343,8 +343,8 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 		}),
 		n(KARESHI_ENDEAVOR, {
 			n(252605, {	-- Aeeshna <Endeavor Trader>
-				["coords"] = EndeavorVendorCoords,
-				["groups"] = {
+				coords = EndeavorVendorCoords,
+				groups = {
 					i_DecorCoupons(262664, 5),	-- Complete Guide to K'areshi Wrappings, Vol. 11 (DECOR!)
 					i_DecorCoupons(263048, 15),	-- Consortium Energy Banner (DECOR!)
 					i_DecorCoupons(263043, 10),	-- Consortium Energy Barrel (DECOR!)
@@ -360,13 +360,13 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				},
 			}),
 		}),
-		n(KOBOLD_ENDEAVOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+		n(KOBOLD_ENDEAVOR, bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {
 			n(271173, {	-- Timicky <Endeavor Vendor>
-				["coords"] = {	-- Kobold Endeavor Vendors seem to have different coords than the others
+				coords = {	-- Kobold Endeavor Vendors seem to have different coords than the others
 					-- FOUNDERS_POINT
 					{ 54.9, 57.3, RAZORWIND_SHORES },
 				},
-				["groups"] = {
+				groups = {
 					i_DecorCoupons(280267, 30),	-- Bold Kobold Kabin (DECOR!)
 					i_DecorCoupons(280263, 20),	-- Candle Cage (DECOR!)
 					i_DecorCoupons(280513, 20),	-- Color-Curious Candle (DECOR!)
@@ -391,10 +391,10 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				}),
 			}),
 		})),
-		n(MARUUKAI_ENDEAVOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+		n(MARUUKAI_ENDEAVOR, bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {
 			n(265551, {	-- Roshai Lightstep <Endeavor Trader>
-				["coords"] = EndeavorVendorCoords,
-				["groups"] = {
+				coords = EndeavorVendorCoords,
+				groups = {
 					i_DecorCoupons(276663, 10),	-- Bakar's Napping Rug (DECOR!)
 					i_DecorCoupons(276675, 5),	-- Bakar's Dinner (DECOR!)
 					i_DecorCoupons(276654, 5),	-- Bakar's Favorite Ball (DECOR!)
@@ -413,7 +413,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				},
 			}),
 			--n(QUESTS, sharedData({
-			--	["isWeekly"] = true,
+			--	isWeekly = true,
 			--}, {
 			--})),
 			filter(MISC, {
@@ -422,8 +422,8 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 		})),
 		n(MECHAGNOME_ENDEAVOR, {
 			n(248525, {	-- Pascal-K1N6 <Endeavor Trader>
-				["coords"] = EndeavorVendorCoords,
-				["groups"] = {
+				coords = EndeavorVendorCoords,
+				groups = {
 					i_DecorCoupons(254406, 2),	-- Mechanical Gauge (DECOR!)
 					i_DecorCoupons(254407, 2),	-- Dual Mechanical Gauge (DECOR!)
 					i_DecorCoupons(254408, 2),	-- Lively Pistons (DECOR!)
@@ -446,8 +446,8 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 		}),
 		n(NIFFEN_ENDEAVOR, {
 			n(257897, {	-- Harlowe Marl <Endeavor Trader>
-				["coords"] = EndeavorVendorCoords,
-				["groups"] = {
+				coords = EndeavorVendorCoords,
+				groups = {
 					i_DecorCoupons(264920, 5),	-- Gooey Niffen Jar
 					i_DecorCoupons(265032, 5),	-- Hearty Niffen Grub
 					i_DecorCoupons(264917, 5),	-- Ceramic Loamm Bowl
@@ -469,9 +469,9 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 		}),
 		n(SINDOREI_ENDEAVOR, {
 			n(252917, {	-- Hesta Forlath <Endeavor Trader>
-				["coords"] = EndeavorVendorCoords,
-				["timeline"] = { ADDED_12_0_1_LAUNCH },
-				["groups"] = {
+				coords = EndeavorVendorCoords,
+				timeline = { ADDED_12_0_1_LAUNCH },
+				groups = {
 					i_DecorCoupons(253601, 5),	-- 590 Quel'Lithien Red (DECOR!)
 					i_DecorCoupons(253523, 5),	-- Astalor's Hookah (DECOR!)
 					i_DecorCoupons(253600, 5),	-- Eversong Crystal Glass (DECOR!)
@@ -486,229 +486,229 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					i_DecorCoupons(253599, 15),	-- Artisanal Display Tent (DECOR!)
 					-- Reach the fourth milestone of the endeavor
 					i(253802, {	-- Deed of Patronage
-						["description"] = "Once you've purchased this item, you can talk to Hesta Forlath in Midnight Silvermoon City (/att n:252916) to purchase paintings.\n\nYou can safely delete this item.",
-						["cost"] = { { "c", COMMUNITY_COUPONS, 30 } },
+						description = "Once you've purchased this item, you can talk to Hesta Forlath in Midnight Silvermoon City (/att n:252916) to purchase paintings.\n\nYou can safely delete this item.",
+						cost = { { "c", COMMUNITY_COUPONS, 30 } },
 					}),
 				},
 			}),
 			-- Weekly Quests
 			n(QUESTS, sharedData({
-				["isWeekly"] = true,
+				isWeekly = true,
 			}, {
 				q(92608, {	-- Landscape Photography
-					["qg"] = 252717,	-- Corlen Hordralin
-					["coords"] = {
+					qg = 252717,	-- Corlen Hordralin
+					coords = {
 						{ 53.0, 37.2, FOUNDERS_POINT },	-- Founder's Point
 						{ 53.8, 55.6, RAZORWIND_SHORES },	-- Razorwind Shores
 					},
-					["groups"] = { i(253316) },	-- Scoped Max Falcon Stealth Dragon 90 (PQI!)
+					groups = { i(253316) },	-- Scoped Max Falcon Stealth Dragon 90 (PQI!)
 				}),
 			})),
 		}),
-		n(TORTOLLAN_ENDEAVOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+		n(TORTOLLAN_ENDEAVOR, bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {
 			n(ACHIEVEMENTS, {
 				ach(63605, {	-- Souvenir Seeker, Founder's Point (Automated)
-					["description"] = "There are 60 'hidden' Souvenirs that you must find in your neighborhood. You can find them yourself or you can ask 'Taggi' to activate minimap locations of the Souvenirs already found by your neighbors.",
-					["cr"] = 272031,	-- Taggi <Chief Hider>
-					["coord"] = { 52.0, 38.2, FOUNDERS_POINT },
+					description = "There are 60 'hidden' Souvenirs that you must find in your neighborhood. You can find them yourself or you can ask 'Taggi' to activate minimap locations of the Souvenirs already found by your neighbors.",
+					cr = 272031,	-- Taggi <Chief Hider>
+					coord = { 52.0, 38.2, FOUNDERS_POINT },
 				}),
 				ach(63441, {	-- Souvenir Seeker, Razorwind Shores (Automated)
-					["description"] = "There are 60 'hidden' Souvenirs that you must find in your neighborhood. You can find them yourself or you can ask 'Taggi' to activate minimap locations of the Souvenirs already found by your neighbors.",
-					["cr"] = 272031,	-- Taggi <Chief Hider>
-					["coord"] = { 54.6, 57.7, RAZORWIND_SHORES },
+					description = "There are 60 'hidden' Souvenirs that you must find in your neighborhood. You can find them yourself or you can ask 'Taggi' to activate minimap locations of the Souvenirs already found by your neighbors.",
+					cr = 272031,	-- Taggi <Chief Hider>
+					coord = { 54.6, 57.7, RAZORWIND_SHORES },
 				}),
 				ach(63606, {	-- Superlative Souvenir Seeker
-					["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
+					maps = { FOUNDERS_POINT, RAZORWIND_SHORES },
 				}),
 			}),
 			header(HEADERS.Achievement, 63605, {	-- Souvenir Seeker, Founder's Point
-				["sharedDescription"] = "Can only interact with the Souvenirs if your own House is in the Neighborhood where this Endeavor is active.",
+				sharedDescription = "Can only interact with the Souvenirs if your own House is in the Neighborhood where this Endeavor is active.",
 			}),
 			header(HEADERS.Achievement, 63441, {	-- Souvenir Seeker, Razorwind Shores
-				["sharedDescription"] = "Can only interact with the Souvenirs if your own House is in the Neighborhood where this Endeavor is active.",
+				sharedDescription = "Can only interact with the Souvenirs if your own House is in the Neighborhood where this Endeavor is active.",
 			}),
 			header(HEADERS.Achievement, 63605,
 			criteria_asset_276_sequence(368, {	-- Souvenir Seeker, Founder's Point
 				-- NOTE: This ties achCriteria to the coordinates. The Number next to the NPC Name is the number of the criterion. Automation works.
 				n(266674, {	-- Secret Souvenir (1)
-					["coord"] = { 52.7, 38.7, FOUNDERS_POINT },
+					coord = { 52.7, 38.7, FOUNDERS_POINT },
 				}),
 				n(266675, {	-- Secret Souvenir (2)
-					["coord"] = { 53.2, 40.2, FOUNDERS_POINT },
+					coord = { 53.2, 40.2, FOUNDERS_POINT },
 				}),
 				n(266676, {	-- Secret Souvenir (3)
-					["coord"] = { 53.8, 41.7, FOUNDERS_POINT },
+					coord = { 53.8, 41.7, FOUNDERS_POINT },
 				}),
 				n(266677, {	-- Secret Souvenir (4)
-					["coord"] = { 56.0, 41.2, FOUNDERS_POINT },
+					coord = { 56.0, 41.2, FOUNDERS_POINT },
 				}),
 				n(266678, {	-- Secret Souvenir (5)
-					["coord"] = { 57.2, 45.3, FOUNDERS_POINT },
+					coord = { 57.2, 45.3, FOUNDERS_POINT },
 				}),
 				n(266679, {	-- Secret Souvenir (6)
-					["coord"] = { 52.1, 32.9, FOUNDERS_POINT },
+					coord = { 52.1, 32.9, FOUNDERS_POINT },
 				}),
 				n(266680, {	-- Secret Souvenir (7)
-					["coord"] = { 58.0, 26.9, FOUNDERS_POINT },
+					coord = { 58.0, 26.9, FOUNDERS_POINT },
 				}),
 				n(266681, {	-- Secret Souvenir (8)
-					["coord"] = { 54.4, 27.4, FOUNDERS_POINT },
+					coord = { 54.4, 27.4, FOUNDERS_POINT },
 				}),
 				n(266682, {	-- Secret Souvenir (9)
-					["coord"] = { 49.2, 27.1, FOUNDERS_POINT },
+					coord = { 49.2, 27.1, FOUNDERS_POINT },
 				}),
 				n(266683, {	-- Secret Souvenir (10)
-					["coord"] = { 59.3, 44.9, FOUNDERS_POINT },
+					coord = { 59.3, 44.9, FOUNDERS_POINT },
 				}),
 				n(266684, {	-- Secret Souvenir (11)
-					["coord"] = { 64.3, 36.5, FOUNDERS_POINT },
+					coord = { 64.3, 36.5, FOUNDERS_POINT },
 				}),
 				n(266685, {	-- Secret Souvenir (12)
-					["coord"] = { 63.6, 41.7, FOUNDERS_POINT },
+					coord = { 63.6, 41.7, FOUNDERS_POINT },
 				}),
 				n(266686, {	-- Secret Souvenir (13)
-					["coord"] = { 64.4, 51.1, FOUNDERS_POINT },
+					coord = { 64.4, 51.1, FOUNDERS_POINT },
 				}),
 				n(266687, {	-- Secret Souvenir (14)
-					["description"] = "In an underwater cave.",
-					["coords"] = {
+					description = "In an underwater cave.",
+					coords = {
 						{ 64.6, 57.6, FOUNDERS_POINT },	-- Cave Entrance
 						{ 67.3, 57.7, FOUNDERS_POINT },	-- Secret Souvenir
 					},
 				}),
 				n(266688, {	-- Secret Souvenir (15)
-					["coord"] = { 59.9, 62.5, FOUNDERS_POINT },
+					coord = { 59.9, 62.5, FOUNDERS_POINT },
 				}),
 				n(266689, {	-- Secret Souvenir (16)
-					["coord"] = { 55.9, 57.1, FOUNDERS_POINT },
+					coord = { 55.9, 57.1, FOUNDERS_POINT },
 				}),
 				n(266690, {	-- Secret Souvenir (17)
-					["coord"] = { 58.3, 65.2, FOUNDERS_POINT },
+					coord = { 58.3, 65.2, FOUNDERS_POINT },
 				}),
 				n(266691, {	-- Secret Souvenir (18)
-					["coord"] = { 54.2, 64.7, FOUNDERS_POINT },
+					coord = { 54.2, 64.7, FOUNDERS_POINT },
 				}),
 				n(266692, {	-- Secret Souvenir (19)
-					["coord"] = { 47.9, 55.4, FOUNDERS_POINT },
+					coord = { 47.9, 55.4, FOUNDERS_POINT },
 				}),
 				n(266693, {	-- Secret Souvenir (20)
-					["coord"] = { 47.3, 61.8, FOUNDERS_POINT },
+					coord = { 47.3, 61.8, FOUNDERS_POINT },
 				}),
 				n(266694, {	-- Secret Souvenir (21)
-					["description"] = "The only way to get this Souvenir is to be extremely precise in your 'landing' on the plank JUST above it or switching your Flight Style.",
-					["coord"] = { 46.7, 59.0, FOUNDERS_POINT },
+					description = "The only way to get this Souvenir is to be extremely precise in your 'landing' on the plank JUST above it or switching your Flight Style.",
+					coord = { 46.7, 59.0, FOUNDERS_POINT },
 				}),
 				n(266695, {	-- Secret Souvenir (22)
-					["coord"] = { 39.5, 60.0, FOUNDERS_POINT },
+					coord = { 39.5, 60.0, FOUNDERS_POINT },
 				}),
 				n(266696, {	-- Secret Souvenir (23)
-					["coord"] = { 38.0, 64.1, FOUNDERS_POINT },
+					coord = { 38.0, 64.1, FOUNDERS_POINT },
 				}),
 				n(266697, {	-- Secret Souvenir (24)
-					["coord"] = { 34.7, 72.2, FOUNDERS_POINT },
+					coord = { 34.7, 72.2, FOUNDERS_POINT },
 				}),
 				n(266698, {	-- Secret Souvenir (25)
-					["coord"] = { 37.7, 57.0, FOUNDERS_POINT },
+					coord = { 37.7, 57.0, FOUNDERS_POINT },
 				}),
 				n(266699, {	-- Secret Souvenir (26)
-					["description"] = "Pop the Balloon inside the Toy Vendor's Shop.",
-					["coord"] = { 42.1, 43.0, FOUNDERS_POINT },
-					["cr"] = 270647,	-- Balloon
+					description = "Pop the Balloon inside the Toy Vendor's Shop.",
+					coord = { 42.1, 43.0, FOUNDERS_POINT },
+					cr = 270647,	-- Balloon
 				}),
 				n(266700, {	-- Secret Souvenir (27)
-					["coord"] = { 44.4, 29.5, FOUNDERS_POINT },
+					coord = { 44.4, 29.5, FOUNDERS_POINT },
 				}),
 				n(266701, {	-- Secret Souvenir (28)
-					["coord"] = { 39.3, 30.1, FOUNDERS_POINT },
+					coord = { 39.3, 30.1, FOUNDERS_POINT },
 				}),
 				n(266702, {	-- Secret Souvenir (29)
-					["coord"] = { 40.5, 25.5, FOUNDERS_POINT },
+					coord = { 40.5, 25.5, FOUNDERS_POINT },
 				}),
 				n(266703, {	-- Secret Souvenir (30)
-					["coord"] = { 41.9, 29.8, FOUNDERS_POINT },
+					coord = { 41.9, 29.8, FOUNDERS_POINT },
 				}),
 				n(266704, {	-- Secret Souvenir (31)
-					["coord"] = { 32.2, 38.7, FOUNDERS_POINT },
+					coord = { 32.2, 38.7, FOUNDERS_POINT },
 				}),
 				n(266705, {	-- Secret Souvenir (32)
-					["coord"] = { 28.3, 47.3, FOUNDERS_POINT },
+					coord = { 28.3, 47.3, FOUNDERS_POINT },
 				}),
 				n(266706, {	-- Secret Souvenir (33)
-					["coord"] = { 37.0, 45.3, FOUNDERS_POINT },
+					coord = { 37.0, 45.3, FOUNDERS_POINT },
 				}),
 				n(266707, {	-- Secret Souvenir (34)
-					["coord"] = { 35.6, 49.5, FOUNDERS_POINT },
+					coord = { 35.6, 49.5, FOUNDERS_POINT },
 				}),
 				n(266708, {	-- Secret Souvenir (35)
-					["coord"] = { 34.5, 60.6, FOUNDERS_POINT },
+					coord = { 34.5, 60.6, FOUNDERS_POINT },
 				}),
 				n(266709, {	-- Secret Souvenir (36)
-					["coord"] = { 32.8, 70.9, FOUNDERS_POINT },
+					coord = { 32.8, 70.9, FOUNDERS_POINT },
 				}),
 				n(266710, {	-- Secret Souvenir (37)
-					["coord"] = { 45.3, 64.4, FOUNDERS_POINT },
+					coord = { 45.3, 64.4, FOUNDERS_POINT },
 				}),
 				n(266711, {	-- Secret Souvenir (38)
-					["coord"] = { 49.2, 71.7, FOUNDERS_POINT },
+					coord = { 49.2, 71.7, FOUNDERS_POINT },
 				}),
 				n(266712, {	-- Secret Souvenir (39)
-					["coord"] = { 55.4, 75.1, FOUNDERS_POINT },
+					coord = { 55.4, 75.1, FOUNDERS_POINT },
 				}),
 				n(266713, {	-- Secret Souvenir (40)
-					["coord"] = { 62.1, 81.3, FOUNDERS_POINT },
+					coord = { 62.1, 81.3, FOUNDERS_POINT },
 				}),
 				n(266714, {	-- Secret Souvenir (41)
-					["coord"] = { 75.2, 83.5, FOUNDERS_POINT },
+					coord = { 75.2, 83.5, FOUNDERS_POINT },
 				}),
 				n(266715, {	-- Secret Souvenir (42)
-					["coord"] = { 61.3, 66.2, FOUNDERS_POINT },
+					coord = { 61.3, 66.2, FOUNDERS_POINT },
 				}),
 				n(266716, {	-- Secret Souvenir (43)
-					["coord"] = { 59.6, 50.6, FOUNDERS_POINT },
+					coord = { 59.6, 50.6, FOUNDERS_POINT },
 				}),
 				n(266717, {	-- Secret Souvenir (44)
-					["coord"] = { 56.7, 20.8, FOUNDERS_POINT },
+					coord = { 56.7, 20.8, FOUNDERS_POINT },
 				}),
 				n(266718, {	-- Secret Souvenir (45)
-					["coord"] = { 44.7, 17.2, FOUNDERS_POINT },
+					coord = { 44.7, 17.2, FOUNDERS_POINT },
 				}),
 				n(266719, {	-- Secret Souvenir (46)
-					["coord"] = { 31.7, 8.2, FOUNDERS_POINT },
+					coord = { 31.7, 8.2, FOUNDERS_POINT },
 				}),
 				n(266720, {	-- Secret Souvenir (47)
-					["coord"] = { 7.3, 37.6, FOUNDERS_POINT },
+					coord = { 7.3, 37.6, FOUNDERS_POINT },
 				}),
 				n(266721, {	-- Secret Souvenir (48)
-					["coord"] = { 43.4, 55.4, FOUNDERS_POINT },
+					coord = { 43.4, 55.4, FOUNDERS_POINT },
 				}),
 				n(266722, {	-- Secret Souvenir (49)
-					["coord"] = { 72.8, 35.3, FOUNDERS_POINT },
+					coord = { 72.8, 35.3, FOUNDERS_POINT },
 				}),
 				n(266723, {	-- Secret Souvenir (50)
-					["coord"] = { 57.1, 38.8, FOUNDERS_POINT },
+					coord = { 57.1, 38.8, FOUNDERS_POINT },
 				}),
 				n(266724, {	-- Secret Souvenir (51)
-					["description"] = "This Souvenir will appear at the Waterfall at Stoneveli Ridge and will flow down with the water. It will despawn once it washes ashore and a Tortollan kid takes it.",
-					["coords"] = {
+					description = "This Souvenir will appear at the Waterfall at Stoneveli Ridge and will flow down with the water. It will despawn once it washes ashore and a Tortollan kid takes it.",
+					coords = {
 						{ 61.9, 43.9, FOUNDERS_POINT },	-- Waterfall, Start point
 						{ 55.3, 50.3, FOUNDERS_POINT },	-- Bridge, Mid point
 						{ 45.5, 64.6, FOUNDERS_POINT },	-- Shore, End point
 					},
 				}),
 				n(266725, {	-- Secret Souvenir (52)
-					["description"] = "This Souvenir requires usage of a water-based AoE spell, such as Druid's Efflorescence, Shaman's Surging Totem or Mage's Blizzard, on the 'Suspiciously Dry Soil'.",	-- This is bull$#!+
-					["cr"] = 272966,	-- Suspiciously Dry Soil
-					["coord"] = { 39.1, 31.3, FOUNDERS_POINT },
+					description = "This Souvenir requires usage of a water-based AoE spell, such as Druid's Efflorescence, Shaman's Surging Totem or Mage's Blizzard, on the 'Suspiciously Dry Soil'.",	-- This is bull$#!+
+					cr = 272966,	-- Suspiciously Dry Soil
+					coord = { 39.1, 31.3, FOUNDERS_POINT },
 				}),
 				n(266726, {	-- Secret Souvenir (53)
-					["description"] = "This Souvenir can be found in the back of Kirt's Public Carriage.",
-					["cr"] = 242053,	-- Public Carriage
-					["maps"] = { FOUNDERS_POINT },
+					description = "This Souvenir can be found in the back of Kirt's Public Carriage.",
+					cr = 242053,	-- Public Carriage
+					maps = { FOUNDERS_POINT },
 				}),
 				n(266727, {	-- Secret Souvenir (54)
-					["description"] = "On a turtle who may waddle around a bit...",
-					["cr"] = 270576,
-					["coords"] = {
+					description = "On a turtle who may waddle around a bit...",
+					cr = 270576,
+					coords = {
 						{ 48.0, 53.8, FOUNDERS_POINT },
 						{ 48.2, 57.8, FOUNDERS_POINT },
 						{ 52.6, 61.6, FOUNDERS_POINT },
@@ -717,197 +717,197 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					},
 				}),
 				n(266728, {	-- Secret Souvenir (55)
-					["description"] = "Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geyser will spit out the Souvenir... Eventually...",
-					["coord"] = { 36.8, 46.8, FOUNDERS_POINT },
+					description = "Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geyser will spit out the Souvenir... Eventually...",
+					coord = { 36.8, 46.8, FOUNDERS_POINT },
 				}),
 				n(266729, {	-- Secret Souvenir (56)
-					["description"] = "This Souvenir can be found flying around the neighborhood on the back of a Kite. Crash into the Kite with your Flying Mount to force it to land on the ground.",
-					["cr"] = 270577,	-- Seeker's Kite
-					["maps"] = { FOUNDERS_POINT },
+					description = "This Souvenir can be found flying around the neighborhood on the back of a Kite. Crash into the Kite with your Flying Mount to force it to land on the ground.",
+					cr = 270577,	-- Seeker's Kite
+					maps = { FOUNDERS_POINT },
 				}),
 				n(266730, {	-- Secret Souvenir (57)
-					["coord"] = { 62.1, 82.2, FOUNDERS_POINT },
+					coord = { 62.1, 82.2, FOUNDERS_POINT },
 				}),
 				n(266731, {	-- Secret Souvenir (58)
-					["description"] = "Read 'Scroll of the Salty Souvenir: East' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
-					["cost"] = { { "i", 276747, 1 } },	-- Scroll of the Salty Souvenir: East
-					["coords"] = { 77.5, 54.0, FOUNDERS_POINT },
+					description = "Read 'Scroll of the Salty Souvenir: East' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+					cost = { { "i", 276747, 1 } },	-- Scroll of the Salty Souvenir: East
+					coords = { 77.5, 54.0, FOUNDERS_POINT },
 				}),
 				n(266732, {	-- Secret Souvenir (59)
-					["description"] = "Read 'Scroll of the Salty Souvenir: West' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
-					["cost"] = { { "i", 276748, 1 } },	-- Scroll of the Salty Souvenir: West
-					["coord"] = { 19.6, 42.6, FOUNDERS_POINT },
+					description = "Read 'Scroll of the Salty Souvenir: West' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+					cost = { { "i", 276748, 1 } },	-- Scroll of the Salty Souvenir: West
+					coord = { 19.6, 42.6, FOUNDERS_POINT },
 				}),
 				n(266734, {	-- Secret Souvenir (60)
-					["description"] = "Read 'Scroll of the Salty Souvenir: South' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
-					["cost"] = { { "i", 276749, 1 } },	-- Scroll of the Salty Souvenir: South
-					["coords"] = { 55.8, 85.1, FOUNDERS_POINT },
+					description = "Read 'Scroll of the Salty Souvenir: South' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+					cost = { { "i", 276749, 1 } },	-- Scroll of the Salty Souvenir: South
+					coords = { 55.8, 85.1, FOUNDERS_POINT },
 				}),
 			})),
 			header(HEADERS.Achievement, 63441,
 			criteria_asset_276_sequence(308, {	-- Souvenir Seeker, Razorwind Shores
 				-- NOTE: This ties achCriteria to the coordinates. The Number next to the NPC Name is the number of the criterion. Automation works.
 				n(266613, {	-- Secret Souvenir (1)
-					["coord"] = { 54.2, 56.9, RAZORWIND_SHORES },
+					coord = { 54.2, 56.9, RAZORWIND_SHORES },
 				}),
 				n(266614, {	-- Secret Souvenir (2)
-					["coord"] = { 54.8, 57.5, RAZORWIND_SHORES },
+					coord = { 54.8, 57.5, RAZORWIND_SHORES },
 				}),
 				n(266615, {	-- Secret Souvenir (3)
-					["coord"] = { 53.3, 56.6, RAZORWIND_SHORES },
+					coord = { 53.3, 56.6, RAZORWIND_SHORES },
 				}),
 				n(266616, {	-- Secret Souvenir (4)
-					["coord"] = { 52.7, 52.7, RAZORWIND_SHORES },
+					coord = { 52.7, 52.7, RAZORWIND_SHORES },
 				}),
 				n(266617, {	-- Secret Souvenir (5)
-					["coord"] = { 53.8, 49.0, RAZORWIND_SHORES },
+					coord = { 53.8, 49.0, RAZORWIND_SHORES },
 				}),
 				n(266618, {	-- Secret Souvenir (6)
-					["coord"] = { 58.5, 49.5, RAZORWIND_SHORES },
+					coord = { 58.5, 49.5, RAZORWIND_SHORES },
 				}),
 				n(266619, {	-- Secret Souvenir (7)
-					["coord"] = { 51.5, 58.7, RAZORWIND_SHORES },
+					coord = { 51.5, 58.7, RAZORWIND_SHORES },
 				}),
 				n(266620, {	-- Secret Souvenir (8)
-					["coord"] = { 63.6, 44.2, RAZORWIND_SHORES },
+					coord = { 63.6, 44.2, RAZORWIND_SHORES },
 				}),
 				n(266621, {	-- Secret Souvenir (9)
-					["coord"] = { 62.4, 52.1, RAZORWIND_SHORES },
+					coord = { 62.4, 52.1, RAZORWIND_SHORES },
 				}),
 				n(266622, {	-- Secret Souvenir (10)
-					["coord"] = { 64.3, 58.3, RAZORWIND_SHORES },
+					coord = { 64.3, 58.3, RAZORWIND_SHORES },
 				}),
 				n(266623, {	-- Secret Souvenir (11)
-					["coord"] = { 69.0, 76.0, RAZORWIND_SHORES },
+					coord = { 69.0, 76.0, RAZORWIND_SHORES },
 				}),
 				n(266624, {	-- Secret Souvenir (12)
-					["description"] = "Read the scroll to learn how operate the ladders. When you approach the ladders, you will get an 'Extra Action Button'. Use it.",
-					["provider"] = { "o", 656134 },	-- No Wrong Rung: A Quick Start Guide to Laddering
-					["coord"] = { 62.2, 90.2, RAZORWIND_SHORES },
+					description = "Read the scroll to learn how operate the ladders. When you approach the ladders, you will get an 'Extra Action Button'. Use it.",
+					provider = { "o", 656134 },	-- No Wrong Rung: A Quick Start Guide to Laddering
+					coord = { 62.2, 90.2, RAZORWIND_SHORES },
 				}),
 				n(266625, {	-- Secret Souvenir (13)
-					["coord"] = { 61.5, 89.9, RAZORWIND_SHORES },
+					coord = { 61.5, 89.9, RAZORWIND_SHORES },
 				}),
 				n(266626, {	-- Secret Souvenir (14)
-					["description"] = "Souvenir is hidden inside Shark's mount.",
-					["coord"] = { 54.5, 81.6, RAZORWIND_SHORES },
+					description = "Souvenir is hidden inside Shark's mount.",
+					coord = { 54.5, 81.6, RAZORWIND_SHORES },
 				}),
 				n(266627, {	-- Secret Souvenir (15)
-					["coord"] = { 52.1, 72.4, RAZORWIND_SHORES },
+					coord = { 52.1, 72.4, RAZORWIND_SHORES },
 				}),
 				n(266628, {	-- Secret Souvenir (16)
-					["coord"] = { 51.1, 69.5, RAZORWIND_SHORES },
+					coord = { 51.1, 69.5, RAZORWIND_SHORES },
 				}),
 				n(266629, {	-- Secret Souvenir (17)
-					["coord"] = { 52.6, 64.4, RAZORWIND_SHORES },
+					coord = { 52.6, 64.4, RAZORWIND_SHORES },
 				}),
 				n(266630, {	-- Secret Souvenir (18)
-					["coord"] = { 44.6, 54.5, RAZORWIND_SHORES },
+					coord = { 44.6, 54.5, RAZORWIND_SHORES },
 				}),
 				n(266631, {	-- Secret Souvenir (19)
-					["coord"] = { 43.7, 50.7, RAZORWIND_SHORES },
+					coord = { 43.7, 50.7, RAZORWIND_SHORES },
 				}),
 				n(266632, {	-- Secret Souvenir (20)
-					["description"] = "Inside the cave, behind the waterfall.",
-					["coords"] = {
+					description = "Inside the cave, behind the waterfall.",
+					coords = {
 						{ 39.9, 57.9, RAZORWIND_SHORES },	-- Cave Entrance
 						{ 39.3, 57.8, RAZORWIND_SHORES },	-- Secret Souvenir
 					},
 				}),
 				n(266633, {	-- Secret Souvenir (21)
-					["coord"] = { 41.6, 66.9, RAZORWIND_SHORES },
+					coord = { 41.6, 66.9, RAZORWIND_SHORES },
 				}),
 				n(266634, {	-- Secret Souvenir (22)
-					["coord"] = { 42.7, 69.9, RAZORWIND_SHORES },
+					coord = { 42.7, 69.9, RAZORWIND_SHORES },
 				}),
 				n(266635, {	-- Secret Souvenir (23)
-					["coord"] = { 44.8, 66.1, RAZORWIND_SHORES },
+					coord = { 44.8, 66.1, RAZORWIND_SHORES },
 				}),
 				n(266636, {	-- Secret Souvenir (24)
-					["coord"] = { 46.7, 75.3, RAZORWIND_SHORES },
+					coord = { 46.7, 75.3, RAZORWIND_SHORES },
 				}),
 				n(266637, {	-- Secret Souvenir (25)
-					["coord"] = { 40.8, 78.6, RAZORWIND_SHORES },
+					coord = { 40.8, 78.6, RAZORWIND_SHORES },
 				}),
 				n(266638, {	-- Secret Souvenir (26)
-					["coord"] = { 38.7, 80.3, RAZORWIND_SHORES },
+					coord = { 38.7, 80.3, RAZORWIND_SHORES },
 				}),
 				n(266639, {	-- Secret Souvenir (27)
-					["coord"] = { 44.0, 87.3, RAZORWIND_SHORES },
+					coord = { 44.0, 87.3, RAZORWIND_SHORES },
 				}),
 				n(266640, {	-- Secret Souvenir (28)
-					["coord"] = { 51.1, 89.9, RAZORWIND_SHORES },
+					coord = { 51.1, 89.9, RAZORWIND_SHORES },
 				}),
 				n(266641, {	-- Secret Souvenir (29)
-					["description"] = "Inside the house, op top of the shelf left of the entrance.",
-					["coord"] = { 64.1, 69.5, RAZORWIND_SHORES },
+					description = "Inside the house, op top of the shelf left of the entrance.",
+					coord = { 64.1, 69.5, RAZORWIND_SHORES },
 				}),
 				n(266642, {	-- Secret Souvenir (30)
-					["coord"] = { 62.1, 63.3, RAZORWIND_SHORES },
+					coord = { 62.1, 63.3, RAZORWIND_SHORES },
 				}),
 				n(266643, {	-- Secret Souvenir (31)
-					["coord"] = { 59.7, 64.7, RAZORWIND_SHORES },
+					coord = { 59.7, 64.7, RAZORWIND_SHORES },
 				}),
 				n(266644, {	-- Secret Souvenir (32)
-					["coord"] = { 58.0, 63.6, RAZORWIND_SHORES },
+					coord = { 58.0, 63.6, RAZORWIND_SHORES },
 				}),
 				n(266645, {	-- Secret Souvenir (33)
-					["coord"] = { 57.9, 69.8, RAZORWIND_SHORES },
+					coord = { 57.9, 69.8, RAZORWIND_SHORES },
 				}),
 				n(266646, {	-- Secret Souvenir (34)
-					["coord"] = { 50.5, 62.6, RAZORWIND_SHORES },
+					coord = { 50.5, 62.6, RAZORWIND_SHORES },
 				}),
 				n(266647, {	-- Secret Souvenir (35)
-					["coord"] = { 51.0, 65.0, RAZORWIND_SHORES },
+					coord = { 51.0, 65.0, RAZORWIND_SHORES },
 				}),
 				n(266648, {	-- Secret Souvenir (36)
-					["coord"] = { 47.6, 62.2, RAZORWIND_SHORES },
+					coord = { 47.6, 62.2, RAZORWIND_SHORES },
 				}),
 				n(266649, {	-- Secret Souvenir (37)
-					["coord"] = { 48.4, 61.8, RAZORWIND_SHORES },
+					coord = { 48.4, 61.8, RAZORWIND_SHORES },
 				}),
 				n(266650, {	-- Secret Souvenir (38)
-					["coord"] = { 48.2, 58.5, RAZORWIND_SHORES },
+					coord = { 48.2, 58.5, RAZORWIND_SHORES },
 				}),
 				n(266651, {	-- Secret Souvenir (39)
-					["coord"] = { 48.7, 54.1, RAZORWIND_SHORES },
+					coord = { 48.7, 54.1, RAZORWIND_SHORES },
 				}),
 				n(266652, {	-- Secret Souvenir (40)
-					["coord"] = { 55.9, 50.5, RAZORWIND_SHORES },
+					coord = { 55.9, 50.5, RAZORWIND_SHORES },
 				}),
 				n(266653, {	-- Secret Souvenir (41)
-					["coord"] = { 56.4, 48.4, RAZORWIND_SHORES },
+					coord = { 56.4, 48.4, RAZORWIND_SHORES },
 				}),
 				n(266654, {	-- Secret Souvenir (42)
-					["coord"] = { 55.5, 60.8, RAZORWIND_SHORES },
+					coord = { 55.5, 60.8, RAZORWIND_SHORES },
 				}),
 				n(266655, {	-- Secret Souvenir (43)
-					["coord"] = { 57.2, 58.1, RAZORWIND_SHORES },
+					coord = { 57.2, 58.1, RAZORWIND_SHORES },
 				}),
 				n(266656, {	-- Secret Souvenir (44)
-					["coord"] = { 79.9, 40.5, RAZORWIND_SHORES },
+					coord = { 79.9, 40.5, RAZORWIND_SHORES },
 				}),
 				n(266657, {	-- Secret Souvenir (45)
-					["coord"] = { 41.9, 24.5, RAZORWIND_SHORES },
+					coord = { 41.9, 24.5, RAZORWIND_SHORES },
 				}),
 				n(266658, {	-- Secret Souvenir (46)
-					["coord"] = { 22.9, 42.6, RAZORWIND_SHORES },
+					coord = { 22.9, 42.6, RAZORWIND_SHORES },
 				}),
 				n(266659, {	-- Secret Souvenir (47)
-					["coord"] = { 75.5, 88.7, RAZORWIND_SHORES },
+					coord = { 75.5, 88.7, RAZORWIND_SHORES },
 				}),
 				n(266660, {	-- Secret Souvenir (48)
-					["coord"] = { 58.8, 55.4, RAZORWIND_SHORES },
+					coord = { 58.8, 55.4, RAZORWIND_SHORES },
 				}),
 				n(266661, {	-- Secret Souvenir (49)
-					["coord"] = { 51.5, 54.0, RAZORWIND_SHORES },
+					coord = { 51.5, 54.0, RAZORWIND_SHORES },
 				}),
 				n(266662, {	-- Secret Souvenir (50)
-					["coord"] = { 53.5, 54.5, RAZORWIND_SHORES },
+					coord = { 53.5, 54.5, RAZORWIND_SHORES },
 				}),
 				n(266663, {	-- Secret Souvenir (51)
-					["description"] = "This Souvenir will appear at the Waterfall at Stoneveli Ridge and will flow down with the water. It will despawn once it washes ashore and a Tortollan kid takes it.",
-					["coords"] = {
+					description = "This Souvenir will appear at the Waterfall at Stoneveli Ridge and will flow down with the water. It will despawn once it washes ashore and a Tortollan kid takes it.",
+					coords = {
 						{ 54.9, 42.8, RAZORWIND_SHORES },	-- Waterfall, Start point
 						{ 56.0, 51.1, RAZORWIND_SHORES },	-- Waterfall, 2/4 point
 						{ 62.4, 57.5, RAZORWIND_SHORES },	-- Bridge, 3/4 point
@@ -915,65 +915,65 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					},
 				}),
 				n(266664, {	-- Secret Souvenir (52)
-					["description"] = "This Souvenir requires usage of a water-based AoE spell, such as Druid's Efflorescence, Shaman's Surging Totem or Mage's Blizzard, on the 'Suspiciously Dry Soil'.",	-- This is bull$#!+
-					["cr"] = 272966,	-- Suspiciously Dry Soil
-					["coord"] = { 47.2, 59.7, RAZORWIND_SHORES },
+					description = "This Souvenir requires usage of a water-based AoE spell, such as Druid's Efflorescence, Shaman's Surging Totem or Mage's Blizzard, on the 'Suspiciously Dry Soil'.",	-- This is bull$#!+
+					cr = 272966,	-- Suspiciously Dry Soil
+					coord = { 47.2, 59.7, RAZORWIND_SHORES },
 				}),
 				n(266665, {	-- Secret Souvenir (53)
-					["description"] = "This Souvenir can be found in the back of Communal Cart.",
-					["cr"] = 256645,	-- Communal Cart
-					["maps"] = { RAZORWIND_SHORES },
+					description = "This Souvenir can be found in the back of Communal Cart.",
+					cr = 256645,	-- Communal Cart
+					maps = { RAZORWIND_SHORES },
 				}),
 				n(266666, {	-- Secret Souvenir (54)
-					["description"] = "On a turtle who may waddle around a bit...",
-					["coords"] = { 67.8, 55.5, RAZORWIND_SHORES },
+					description = "On a turtle who may waddle around a bit...",
+					coords = { 67.8, 55.5, RAZORWIND_SHORES },
 				}),
 				n(266667, {	-- Secret Souvenir (55)
-					["description"] = "Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geyser will spit out the Souvenir... Eventually...",
-					["coord"] = { 52.6, 73.1, RAZORWIND_SHORES },
+					description = "Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geyser will spit out the Souvenir... Eventually...",
+					coord = { 52.6, 73.1, RAZORWIND_SHORES },
 				}),
 				n(266668, {	-- Secret Souvenir (56)
-					["description"] = "This Souvenir can be found flying around the neighborhood on the back of a Kite. Crash into the Kite with your Flying Mount to force it to land on the ground.",
-					["cr"] = 267939,	-- Seeker's Kite
-					["maps"] = { RAZORWIND_SHORES },
+					description = "This Souvenir can be found flying around the neighborhood on the back of a Kite. Crash into the Kite with your Flying Mount to force it to land on the ground.",
+					cr = 267939,	-- Seeker's Kite
+					maps = { RAZORWIND_SHORES },
 				}),
 				n(266669, {	-- Secret Souvenir (57)
-					["description"] = "Under the bartender, in the body of the ship.",
-					["coord"] = { 39.2, 73.8, RAZORWIND_SHORES },
+					description = "Under the bartender, in the body of the ship.",
+					coord = { 39.2, 73.8, RAZORWIND_SHORES },
 				}),
 				n(266670, {	-- Secret Souvenir (58)
-					["description"] = "Read 'Scroll of the Salty Souvenir: East' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
-					["cost"] = { { "i", 276747, 1 } },	-- Scroll of the Salty Souvenir: East
-					["coords"] = { 75.2, 48.4, RAZORWIND_SHORES },
+					description = "Read 'Scroll of the Salty Souvenir: East' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+					cost = { { "i", 276747, 1 } },	-- Scroll of the Salty Souvenir: East
+					coords = { 75.2, 48.4, RAZORWIND_SHORES },
 				}),
 				n(266671, {	-- Secret Souvenir (59)
-					["description"] = "Read 'Scroll of the Salty Souvenir: West' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
-					["cost"] = { { "i", 276748, 1 } },	-- Scroll of the Salty Souvenir: West
-					["coord"] = { 26.3, 33.3, RAZORWIND_SHORES },
+					description = "Read 'Scroll of the Salty Souvenir: West' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+					cost = { { "i", 276748, 1 } },	-- Scroll of the Salty Souvenir: West
+					coord = { 26.3, 33.3, RAZORWIND_SHORES },
 				}),
 				n(266672, {	-- Secret Souvenir (60)
-					["description"] = "Read 'Scroll of the Salty Souvenir: South' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
-					["cost"] = { { "i", 276749, 1 } },	-- Scroll of the Salty Souvenir: South
-					["coords"] = { 56.1, 95.0, RAZORWIND_SHORES },
+					description = "Read 'Scroll of the Salty Souvenir: South' at this location. You can buy the scroll from Rada at the center of your Neighborhood.",
+					cost = { { "i", 276749, 1 } },	-- Scroll of the Salty Souvenir: South
+					coords = { 56.1, 95.0, RAZORWIND_SHORES },
 				}),
 			})),
 			n(VENDORS, {
 				n(268115, {	-- Ataru <Inspirational Scroll Merchant>
-					["coords"] = {
+					coords = {
 						{ 52.8, 37.5, FOUNDERS_POINT },
 						{ 54.0, 56.0, RAZORWIND_SHORES },
 					},
-					["groups"] = {
+					groups = {
 						i_DecorCoupons(276628, 1),	-- Scroll of Deep Breath
 						i_DecorCoupons(276629, 1),	-- Scroll of the Sailfish
 					},
 				}),
 				n(268116, {	-- Mota <Unique Antiques>
-					["coords"] = {
+					coords = {
 						{ 53.0, 37.5, FOUNDERS_POINT },
 						{ 54.2, 55.9, RAZORWIND_SHORES },
 					},
-					["groups"] = {	-- Exo Note: Junk items. I don't know whether or not these have any use. If not, probably better to just move to Uncollectible
+					groups = {	-- Exo Note: Junk items. I don't know whether or not these have any use. If not, probably better to just move to Uncollectible
 						i(276621),	-- Antique Shield
 						i(276617),	-- Fancy Oar
 						i(276619),	-- Mysterious Corked Bottle
@@ -982,11 +982,11 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					},
 				}),
 				n(268110, {	-- Rada <Scroll Vendor>
-					["coords"] = {
+					coords = {
 						{ 52.9, 39.0, FOUNDERS_POINT },
 						{ 54.2, 57.9, RAZORWIND_SHORES },
 					},
-					["groups"] = {
+					groups = {
 						i(245606),	-- Blank Scroll
 						i(234973),	-- Pearlshell Scroll Case
 						i(276747),	-- Scroll of the Salty Souvenir: East
@@ -997,11 +997,11 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					},
 				}),
 				n(268107, {	-- Roga <Travel Guide>
-					["coords"] = {
+					coords = {
 						{ 52.9, 39.0, FOUNDERS_POINT },
 						{ 54.4, 56.0, RAZORWIND_SHORES },
 					},
-					["groups"] = {	-- Exo Note: Alcohol. Probably move to Uncollectible?
+					groups = {	-- Exo Note: Alcohol. Probably move to Uncollectible?
 						i(276615),	-- Half-shell Highball
 						i(276616),	-- Pineapple Sundown
 						i(276613),	-- Sparkling LaKoi
@@ -1009,19 +1009,19 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					},
 				}),
 				n(268106, {	-- Taifa <Endeavor Trader>
-					["coords"] = {
+					coords = {
 						{ 53.2, 38.3, FOUNDERS_POINT },
 						{ 54.4, 56.0, RAZORWIND_SHORES },
 					},
-					["groups"] = {
+					groups = {
 						i_DecorCoupons(280236, 30),	-- Ancient Memories of the Sea (DECOR!)
 						i_DecorCoupons(280227, 25),	-- Apothecary's Tortollan Display Rack (DECOR!)
 						i(280846, {	-- Beguiling Memories of the Sea (DECOR!)
-							["sourceAchievements"] = {
+							sourceAchievements = {
 								63605,	-- Souvenir Seeker, Founder's Point
 								63441,	-- Souvenir Seeker, Razorwind Shores
 							},
-							["cost"] = { { "c", COMMUNITY_COUPONS, 30 } },
+							cost = { { "c", COMMUNITY_COUPONS, 30 } },
 						}),
 						i_DecorCoupons(280223, 25),	-- Collector's Tortollan Display Rack (DECOR!)
 						i_DecorCoupons(280240, 20),	-- Compact Cookfire (DECOR!)
@@ -1039,18 +1039,18 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				}),
 			}),
 			n(QUESTS, sharedData({
-				["isWeekly"] = true,
+				isWeekly = true,
 			}, {
 				q(97521, {	-- A A Turtle Bade It to the Water
-					["qg"] = 268107,	-- Roga
-					["coords"] = {
+					qg = 268107,	-- Roga
+					coords = {
 						{ 52.9, 39.0, FOUNDERS_POINT },
 						{ 54.4, 56.0, RAZORWIND_SHORES },
 					},
 				}),
 				q(96960, {	-- Watering Hole
-					["qg"] = 257168,	-- Throska
-					["coords"] = {
+					qg = 257168,	-- Throska
+					coords = {
 						{ 62.2, 82.2, FOUNDERS_POINT },
 						{ 39.1, 74.1, RAZORWIND_SHORES },
 					},
@@ -1061,7 +1061,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_0 } }, {
 		n(ENDEAVOR, {
 			n(QUESTS, {
 				q(94450),	-- Twenty Five Percent Completed

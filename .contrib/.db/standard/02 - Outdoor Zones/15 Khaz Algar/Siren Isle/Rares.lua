@@ -5,10 +5,10 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(RARES, sharedData({
-			["isDaily"] = true,
+			isDaily = true,
 		}, {
 			n(COMMON_BOSS_DROPS, {
-				["crs"] = {
+				crs = {
 					230137,	-- Asbjorn the Bloodsoaked
 					228154,	-- Bloodbrine
 					231356,	-- Brinebough
@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					231353,	-- Tempest Talon
 					231357,	-- Zek'ul the Shipbreaker
 				},
-				["groups"] = {
+				groups = {
 					filter(CLOAKS, {
 						i(229019),	-- Earthen Deckhand's Cape
 						i(229027),	-- Earthen Islander's Shawl
@@ -123,55 +123,55 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			}),
 			-- NON STORM PHASE RARES
 			n(228154, {	-- Bloodbrine
-				["coord"] = { 36.0, 72.1, SIREN_ISLE },
-				["questID"] = 84795,
+				coord = { 36.0, 72.1, SIREN_ISLE },
+				questID = 84795,
 			}),
 			n(228601, {	-- Ghostmaker
-				["coord"] = { 52.0, 32.3, SIREN_ISLE },
-				["questID"] = 84801,
+				coord = { 52.0, 32.3, SIREN_ISLE },
+				questID = 84801,
 			}),
 			n(228201, {	-- Gravesludge
-				["description"] = "Available during The Drain objective",
-				["coord"] = { 55.6, 27.0, SIREN_ISLE },
-				["questID"] = 85937,
+				description = "Available during The Drain objective",
+				coord = { 55.6, 27.0, SIREN_ISLE },
+				questID = 85937,
 			}),
 			n(228155, {	-- Grimgull
-				["coord"] = { 37.2, 21.8, SIREN_ISLE },
-				["questID"] = 84796,
+				coord = { 37.2, 21.8, SIREN_ISLE },
+				questID = 84796,
 			}),
 			n(228159, {	-- Gunnlod the Sea-Drinker
-				["description"] = "In non-Storm phase of the Vault.",
-				["coord"] = { 66.5, 55.9, 2375 },
-				["questID"] = 84797,
-				["groups"] = {
+				description = "In non-Storm phase of the Vault.",
+				coord = { 66.5, 55.9, 2375 },
+				questID = 84797,
+				groups = {
 					i(235017),	-- Glittering Vault Shard (TOY!)
 				},
 			}),
 			n(229982, {	-- Nerathor
-				["description"] = "Available during The Drowned Lair objective",
-				["coord"] = { 27.3, 65.5, SIREN_ISLE },
-				["questID"] = 85938,
+				description = "Available during The Drowned Lair objective",
+				coord = { 27.3, 65.5, SIREN_ISLE },
+				questID = 85938,
 			}),
 			n(227550, {	-- Shardsong
-				["description"] = "In non-Storm phase of the Vault.",
-				["coord"] = { 28.1, 24.9, 2375 },
-				["questID"] = 86779,
-				["groups"] = {
+				description = "In non-Storm phase of the Vault.",
+				coord = { 28.1, 24.9, 2375 },
+				questID = 86779,
+				groups = {
 					i(235017),	-- Glittering Vault Shard (TOY!)
 				},
 			}),
 			n(231090, {	-- Snacker
-				["coord"] = { 67.8, 20.7, SIREN_ISLE },
-				["questID"] = 86933,
+				coord = { 67.8, 20.7, SIREN_ISLE },
+				questID = 86933,
 			}),
 			n(229992, {	-- Stalagnarok
-				["description"] = "Available during Shuddering Hollow objective",
-				["coord"] = { 67.8, 20.7, SIREN_ISLE },
-				["questID"] = 85437,
+				description = "Available during Shuddering Hollow objective",
+				coord = { 67.8, 20.7, SIREN_ISLE },
+				questID = 85437,
 			}),
 			n(228151, {	-- Wreckwater
-				["coord"] = { 46.7, 78.4, SIREN_ISLE },
-				["questID"] = 84794,
+				coord = { 46.7, 78.4, SIREN_ISLE },
+				questID = 84794,
 			}),
 		})),
 	}),
@@ -179,7 +179,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(SIREN_ISLE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+		m(SIREN_ISLE, bubbleDownSelf({ timeline = { ADDED_11_0_7 } }, {
 			n(RARES, {
 				-- Need more data / confirmation, current data is mess
 				-- after kill Bloodbrine (228154) - 84795 (on re-kill), 84871 (one of it is i(229172),	-- Earthen Deckhand's Halberd drop?)

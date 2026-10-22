@@ -3,10 +3,10 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
-	n(REWARDS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+	n(REWARDS, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
 		filter(CONSUMABLES, {
-			["description"] = "These are commonly sold by PVP Vendors and can also be acquired from reward crates.",
-			["groups"] = {
+			description = "These are commonly sold by PVP Vendors and can also be acquired from reward crates.",
+			groups = {
 				i(138478),	-- Feast of Ribs
 				i(138727),	-- Potion of Defiance
 				i(138729),	-- Potion of Heightened Senses
@@ -17,14 +17,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			},
 		}),
 		i(135539, {	-- Crate of Battlefield Goods 10-59	-- 9.0+
-			["description"] =
+			description =
 				-- #if BEFORE 11.2.5
 				"Rewarded for winning a random battleground below max level.",
 				-- #else
 				"Rewarded for winning a random battleground or randomly granted in a loss below max level.",
 				-- #endif
-		--	["lvl"] = { 10, 59 },
-			["groups"] = {
+		--	lvl = { 10, 59 },
+			groups = {
 				i(134643),	-- Auxiliary's Cuffs*
 				i(134642),	-- Auxiliary's Leggings*
 				i(134640),	-- Auxiliary's Robe
@@ -84,19 +84,19 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				i(134688),	-- Recruit's Slicer*
 				i(134691),	-- Recruit's Badge*
 				i(273831, {	-- Recruit's Signet
-					["timeline"] = { ADDED_12_0_1 },
+					timeline = { ADDED_12_0_1 },
 				}),
 				i(273833, {	-- Recruit's Band
-					["timeline"] = { ADDED_12_0_1 },
+					timeline = { ADDED_12_0_1 },
 				}),
 				i(273834, {	-- Recruit's Ring
-					["timeline"] = { ADDED_12_0_1 },
+					timeline = { ADDED_12_0_1 },
 				}),
 			},
 		}),
-		i(135540, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Crate of Battlefield Goods 40-59 before 9.0
-			["description"] = "Rewarded for winning a random battleground in the level 40-59 range before 9.0.",
-			["groups"] = {
+		i(135540, bubbleDownSelf({ timeline = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Crate of Battlefield Goods 40-59 before 9.0
+			description = "Rewarded for winning a random battleground in the level 40-59 range before 9.0.",
+			groups = {
 				i(134672),	-- Auxiliary's Amice
 				i(134670),	-- Auxiliary's Cowl
 				i(134669),	-- Auxiliary's Handwraps
@@ -127,9 +127,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				i(134691),	-- Recruit's Badge*
 			},
 		})),
-		i(135541, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Crusader's Crate of Battlefield Goods 60-69 before 9.0
-			["description"] = "Rewarded for winning a random battleground in the level 60-69 range before 9.0.",
-			["groups"] = {
+		i(135541, bubbleDownSelf({ timeline = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Crusader's Crate of Battlefield Goods 60-69 before 9.0
+			description = "Rewarded for winning a random battleground in the level 60-69 range before 9.0.",
+			groups = {
 				i(134584),	-- Inciter's Cord
 				i(134585),	-- Inciter's Cuffs
 				i(134583),	-- Inciter's Treads
@@ -155,9 +155,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				i(134590),	-- Vanguard Baton of Light
 			},
 		})),
-		i(135542, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Icy Crate of Battlefield Goods 70-79 before 9.0
-			["description"] = "Rewarded for winning a random battleground in the level 70-79 range before 9.0.",
-			["groups"] = {
+		i(135542, bubbleDownSelf({ timeline = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Icy Crate of Battlefield Goods 70-79 before 9.0
+			description = "Rewarded for winning a random battleground in the level 70-79 range before 9.0.",
+			groups = {
 				i(134724),	-- Icyweave Amice*
 				i(134722),	-- Icyweave Robes*
 				i(134723),	-- Icyweave Gloves*
@@ -189,12 +189,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				i(134743),	-- Cold-Touched Accolade*
 			},
 		})),
-		i(135543, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Rival's Crate of Battlefield Goods 80-89 before 9.0; splitting this box into two categories, loot table varies with level
-			["description"] = "Rewarded for winning a random battleground in the level 80-89 range before 9.0.",
-			["groups"] = {
+		i(135543, bubbleDownSelf({ timeline = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Rival's Crate of Battlefield Goods 80-89 before 9.0; splitting this box into two categories, loot table varies with level
+			description = "Rewarded for winning a random battleground in the level 80-89 range before 9.0.",
+			groups = {
 				n(LEVEL_RANGE_80_84, {
-					["description"] = "Rewarded for winning a random battleground in the level 80-84 range before 9.0.",
-					["groups"] = {
+					description = "Rewarded for winning a random battleground in the level 80-84 range before 9.0.",
+					groups = {
 						i(134616),	-- Inflammatory Cord*
 						i(134615),	-- Inflammatory Hood*
 						i(134614),	-- Inflammatory Treads*
@@ -223,8 +223,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				n(LEVEL_RANGE_85_89, {
-					["description"] = "Rewarded for winning a random battleground in the level 85-89 range before 9.0.",
-					["groups"] = {
+					description = "Rewarded for winning a random battleground in the level 85-89 range before 9.0.",
+					groups = {
 						i(134754),	-- Veiled Cuffs*
 						i(134752),	-- Veiled Leggings*
 						i(134753),	-- Veiled Mantle*
@@ -257,9 +257,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 			},
 		})),
-		i(135545, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Savage Crate of Battlefield Goods 90-99 before 9.0
-			["description"] = "Rewarded for winning a random battleground in the level 90-99 range before 9.0.",
-			["groups"] = {
+		i(135545, bubbleDownSelf({ timeline = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Savage Crate of Battlefield Goods 90-99 before 9.0
+			description = "Rewarded for winning a random battleground in the level 90-99 range before 9.0.",
+			groups = {
 				i(134787),	-- Entrenched Cowl*
 				i(134786),	-- Entrenched Handwraps*
 				i(134784),	-- Entrenched Raiment*
@@ -292,9 +292,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				i(134777),	-- Seasoned Accolade*
 			},
 		})),
-		container(135546, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Fel-Touched Crate of Battlefield Goods 100-109 before 9.0 / Ashran
-			["description"] = "Rewarded for winning a random battleground in the level 100-109 range before 9.0, or Ashran quests.",
-			["groups"] = {
+		container(135546, bubbleDownSelf({ timeline = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Fel-Touched Crate of Battlefield Goods 100-109 before 9.0 / Ashran
+			description = "Rewarded for winning a random battleground in the level 100-109 range before 9.0, or Ashran quests.",
+			groups = {
 				i(135578),	-- Battle Touched Banner
 				i(135568),	-- Battle Touched Blood of the Fallen
 				i(135574),	-- Battle Touched Blossom
@@ -329,46 +329,46 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			},
 		})),
 		i(165714, {	-- Gold Strongbox - Win (A)
-			["timeline"] = { ADDED_8_1_0 },
-			["races"] = ALLIANCE_ONLY,
+			timeline = { ADDED_8_1_0 },
+			races = ALLIANCE_ONLY,
 		}),
 		i(165711, {	-- Gold Strongbox - Win (H)
-			["timeline"] = { ADDED_8_1_0 },
-			["races"] = HORDE_ONLY,
+			timeline = { ADDED_8_1_0 },
+			races = HORDE_ONLY,
 		}),
 		i(203724, {	-- Field Medic's Hazard Payout
-			["timeline"] = { ADDED_10_0_7 },
-			["groups"] = {
+			timeline = { ADDED_10_0_7 },
+			groups = {
 				i(208567, {	-- Cracked Medal of Conquest
-					["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
+					timeline = { ADDED_10_1_5, REMOVED_10_2_0 },
 				}),
 				i(212554, {	-- Cracked Medal of Conquest
-					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+					timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 				}),
 				i(211773, {	-- Cracked Medal of Conquest
-					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				}),
 			},
 		}),
 		i(224557, {	-- Field Medic's Hazard Payout
-			["timeline"] = { ADDED_11_0_2 },
-			["groups"] = {
+			timeline = { ADDED_11_0_2 },
+			groups = {
 				i(225493, {	-- Cracked Medal of Conquest
-					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+					timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 				}),
 				i(232790, {	-- Cracked Medal of Conquest
-					["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+					timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 				}),
 				i(232791, {	-- Cracked Medal of Conquest
-					["timeline"] = { ADDED_11_2_0_SEASONSTART },
+					timeline = { ADDED_11_2_0_SEASONSTART },
 				}),
 			},
 		}),
 		i(258620, {	-- Field Medic's Hazard Payout
-			["timeline"] = { ADDED_12_0_1_SEASONSTART },
-			["groups"] = {
+			timeline = { ADDED_12_0_1_SEASONSTART },
+			groups = {
 				i(258622, {	-- Medal of Conquest
-					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+					timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 				}),
 			},
 		}),

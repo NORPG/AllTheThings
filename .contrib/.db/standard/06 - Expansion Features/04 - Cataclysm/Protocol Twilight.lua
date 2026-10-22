@@ -143,17 +143,17 @@ local HOUR_OF_TWILIGHT_DUNGEON_LAST_BOSSES = {
 	54969,	-- Mannoroth
 }
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, {
-	n(PROTOCOL_TWILIGHT, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 } }, {
-		["lvl"] = 85,
-		["groups"] = {
+	n(PROTOCOL_TWILIGHT, bubbleDownSelf({ timeline = { ADDED_4_3_0 } }, {
+		lvl = 85,
+		groups = {
 			n(COMMON_BOSS_DROPS, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
+				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
 					1224923	-- Twilight's Madness
 				),
-				["description"] = "The following can drop from the final boss of any heroic dungeon on Protocol Twilight difficulty.",
-				["maps"] = PROTOCOL_MAPS,
-				["crs"] = PROTOCOL_LAST_BOSSES,
-				["groups"] = {
+				description = "The following can drop from the final boss of any heroic dungeon on Protocol Twilight difficulty.",
+				maps = PROTOCOL_MAPS,
+				crs = PROTOCOL_LAST_BOSSES,
+				groups = {
 					i(78869),	-- Crown of the Corrupted Conqueror
 					i(78870),	-- Crown of the Corrupted Protector
 					i(78868),	-- Crown of the Corrupted Vanquisher
@@ -172,48 +172,48 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				},
 			}),
 			n(DROPS, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
+				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
 					1224923	-- Twilight's Madness
 				),
-				["description"] = "The following can drop from specific final bosses in heroic dungeons on Protocol Twilight difficulty or from the new End Time, Hour of Twilight, or Well of Eternity heroic dungeons.",
-				["maps"] = HOUR_OF_TWILIGHT_DUNGEON_MAPS,	-- End Time, Hour of Twilight, Well of Eternity
-				["crs"] = HOUR_OF_TWILIGHT_DUNGEON_LAST_BOSSES,
-				["groups"] = {
+				description = "The following can drop from specific final bosses in heroic dungeons on Protocol Twilight difficulty or from the new End Time, Hour of Twilight, or Well of Eternity heroic dungeons.",
+				maps = HOUR_OF_TWILIGHT_DUNGEON_MAPS,	-- End Time, Hour of Twilight, Well of Eternity
+				crs = HOUR_OF_TWILIGHT_DUNGEON_LAST_BOSSES,
+				groups = {
 					-- Weapons
 					i(78482, {	-- Kiril, Fury of Beasts
-						["maps"] = { 283, 284 },	-- Blackrock Caverns
-						["crs"] = { 39705 },	-- Ascendent Lord Obsidius
+						maps = { 283, 284 },	-- Blackrock Caverns
+						crs = { 39705 },	-- Ascendent Lord Obsidius
 					}),
 					i(78487, {	-- Gurthalak, Voice of the Deeps
-						["maps"] = { 324 },	-- The Stonecore
-						["crs"] = { 42333 },	-- High Priestess Azil
+						maps = { 324 },	-- The Stonecore
+						crs = { 42333 },	-- High Priestess Azil
 					}),
 					i(78486, {	-- Ti'tahk, the Steps of Time
-						["maps"] = { 322, 323 },	-- Throne of the Tides
-						["crs"] = { 44566 },	-- Ozumat
+						maps = { 322, 323 },	-- Throne of the Tides
+						crs = { 44566 },	-- Ozumat
 					}),
 					i(78480, {	-- Vishanka, Jaws of the Earth
-						["maps"] = { 297, 298, 299 },	-- Halls of Origination
-						["crs"] = { 39378 },	-- Rajh, Construct of Sun
+						maps = { 297, 298, 299 },	-- Halls of Origination
+						crs = { 39378 },	-- Rajh, Construct of Sun
 					}),
 					i(78485, {	-- Maw of the Dragonlord
-						["maps"] = { 325 },	-- The Vortex Pinnacle
-						["crs"] = { 43875 },	-- Asaad, Caliph of Zephyrs
+						maps = { 325 },	-- The Vortex Pinnacle
+						crs = { 43875 },	-- Asaad, Caliph of Zephyrs
 					}),
 					i(78484, {	-- Rathrak, the Poisonous Mind
-						["maps"] = { 293 },	-- Grim Batol
-						["crs"] = { 40484 },	-- Erudax
+						maps = { 293 },	-- Grim Batol
+						crs = { 40484 },	-- Erudax
 					}),
 					i(78483, {	-- Blade of the Unmaker
-						["maps"] = { DEADMINES, 292 },	-- Deadmines
-						["crs"] = { 49541 },	-- Vanessa VanCleef
+						maps = { DEADMINES, 292 },	-- Deadmines
+						crs = { 49541 },	-- Vanessa VanCleef
 					}),
 					i(78481, {	-- No'Kaled, the Elements of Death
-						["maps"] = { 277 },	-- Lost City of the Tol'vir
-						["crs"] = { 44819 },	-- Siamat
+						maps = { 277 },	-- Lost City of the Tol'vir
+						crs = { 44819 },	-- Siamat
 					}),
 					i(78488, {	-- Souldrinker
-						["maps"] = {	-- Shadowfang Keep
+						maps = {	-- Shadowfang Keep
 							SHADOWFANG_KEEP,
 							SHADOWFANG_KEEP_LEVEL2,
 							SHADOWFANG_KEEP_LEVEL3,
@@ -222,24 +222,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 							SHADOWFANG_KEEP_LEVEL6,
 							SHADOWFANG_KEEP_LEVEL7,
 						},
-						["crs"] = { 46964 },	-- Lord Godfrey
+						crs = { 46964 },	-- Lord Godfrey
 					}),
 					-- Necks
 					i(78382, {	-- Petrified Fungal Heart
-						["maps"] = { 277 },	-- Lost City of the Tol'vir
-						["crs"] = { 44819 },	-- Siamat
+						maps = { 277 },	-- Lost City of the Tol'vir
+						crs = { 44819 },	-- Siamat
 					}),
 					-- Rings
 					i(78440, {	-- Curled Twilight Claw
-						["maps"] = { DEADMINES, 292 },	-- Deadmines
-						["crs"] = { 49541 },	-- Vanessa VanCleef
+						maps = { DEADMINES, 292 },	-- Deadmines
+						crs = { 49541 },	-- Vanessa VanCleef
 					}),
 					i(78427, {	-- Ring of the Raven
-						["maps"] = { 324 },	-- The Stonecore
-						["crs"] = { 42333 },	-- High Priestess Azil
+						maps = { 324 },	-- The Stonecore
+						crs = { 42333 },	-- High Priestess Azil
 					}),
 					i(78421, {	-- Signet of Grasping Mouths
-						["maps"] = {	-- Shadowfang Keep
+						maps = {	-- Shadowfang Keep
 							SHADOWFANG_KEEP,
 							SHADOWFANG_KEEP_LEVEL2,
 							SHADOWFANG_KEEP_LEVEL3,
@@ -248,52 +248,52 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 							SHADOWFANG_KEEP_LEVEL6,
 							SHADOWFANG_KEEP_LEVEL7,
 						},
-						["crs"] = { 46964 },	-- Lord Godfrey
+						crs = { 46964 },	-- Lord Godfrey
 					}),
 					-- Trinkets
 					i(77977, {	-- Eye of Unmaking
-						["maps"] = { 322, 323 },	-- Throne of the Tides
-						["crs"] = { 44566 },	-- Ozumat
+						maps = { 322, 323 },	-- Throne of the Tides
+						crs = { 44566 },	-- Ozumat
 					}),
 					i(77976, {	-- Heart of Unliving
-						["maps"] = { 297, 298, 299 },	-- Halls of Origination
-						["crs"] = { 39378 },	-- Rajh, Construct of Sun
+						maps = { 297, 298, 299 },	-- Halls of Origination
+						crs = { 39378 },	-- Rajh, Construct of Sun
 					}),
 					i(77978, {	-- Resolve of Undying
-						["maps"] = { 293 },	-- Grim Batol
-						["crs"] = { 40484 },	-- Erudax
+						maps = { 293 },	-- Grim Batol
+						crs = { 40484 },	-- Erudax
 					}),
 					i(77975, {	-- Will of Unbinding
-						["maps"] = { 283, 284 },	-- Blackrock Caverns
-						["crs"] = { 39705 },	-- Ascendent Lord Obsidius
+						maps = { 283, 284 },	-- Blackrock Caverns
+						crs = { 39705 },	-- Ascendent Lord Obsidius
 					}),
 					i(77974, {	-- Wrath of Unchaining
-						["maps"] = { 325 },	-- The Vortex Pinnacle
-						["crs"] = { 43875 },	-- Asaad, Caliph of Zephyrs
+						maps = { 325 },	-- The Vortex Pinnacle
+						crs = { 43875 },	-- Asaad, Caliph of Zephyrs
 					}),
 				},
 			}),
 			n(REWARDS, {
 				currency(OBSIDIAN_FRAGMENT, {
-					["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
+					OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
 						1224923	-- Twilight's Madness
 					),
-					["description"] = "Two Obsidian Fragments drop per boss in Protocol Twilight and the final boss of each dungeon will drop an extra three Obsidian Fragments if players have defeated all of the other bosses in the dungeon.",
-					["maps"] = PROTOCOL_MAPS,
-					["crs"] = PROTOCOL_BOSSES,
+					description = "Two Obsidian Fragments drop per boss in Protocol Twilight and the final boss of each dungeon will drop an extra three Obsidian Fragments if players have defeated all of the other bosses in the dungeon.",
+					maps = PROTOCOL_MAPS,
+					crs = PROTOCOL_BOSSES,
 				}),
 			}),
 			n(VENDORS, {
 				n(OBSIDIAN_FRAGMENT_EXCHANGE_VENDOR, {	-- Zarstrasza <Obsidian Fragment Exchange>
-					["aqd"] = {
-						["qg"] = 241468,	-- Zarstrasza <Obsidian Fragment Exchange>
-						["coord"] = { 79.4, 71.6, STORMWIND_CITY },
+					aqd = {
+						qg = 241468,	-- Zarstrasza <Obsidian Fragment Exchange>
+						coord = { 79.4, 71.6, STORMWIND_CITY },
 					},
-					["hqd"] = {
-						["qg"] = 241467,	-- Sylstrasza <Obsidian Fragment Exchange>
-						["coord"] = { 47.2, 70.1, ORGRIMMAR },
+					hqd = {
+						qg = 241467,	-- Sylstrasza <Obsidian Fragment Exchange>
+						coord = { 47.2, 70.1, ORGRIMMAR },
 					},
-					["groups"] = {
+					groups = {
 						-- Dragon Soul LFR Gear
 						-- Tier Tokens
 						frags(55, i(78869)),	-- Crown of the Corrupted Conqueror
@@ -341,7 +341,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						frags(45, i(78458)),	-- Timepiece of the Bronze Flight
 						frags(70, i(78399)),	-- Finger of Zon'ozz
 						frags(25, i(78374, {	-- Razor Saronite Chip
-							["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+							timeline = { ADDED_4_3_0, REMOVED_5_0_4 },
 						})),
 						-- Plate
 						frags(45, i(78470)),	-- Backbreaker Spaulders
@@ -419,7 +419,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						-- 	The satchel also contains a chance to drop one the following mounts:
 						-- 		Flametalon of Alysrazor
 						filter(MOUNTS, {
-							["providers"] = {
+							providers = {
 								{ "i", 239111 },	-- Satchel of the Flickering Cowl (Cloth)
 								{ "i", 239220 },	-- Satchel of the Flickering Shoulderpads (Leather)
 								{ "i", 239112 },	-- Satchel of the Flickering Shoulders (Mail)
@@ -427,7 +427,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 								{ "i", 239114 },	-- Satchel of the Flickering Handguards (Plate)
 							},
 							description = "The randomized satchels whose loot originates from Heroic Firelands all have a chance to contain one of the following mounts.",
-							["groups"] = {
+							groups = {
 								i(71665),	-- Flametalon of Alysrazor (MOUNT!)
 								-- CRIEVE NOTE: Since the Pureblood Fire Hawk isn't on the vendor directly, it's been speculated to appear from this satchel instead.
 								i(69224),	-- Pureblood Fire Hawk (MOUNT!) [Smoldering Egg of Millagazor]

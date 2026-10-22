@@ -67,13 +67,13 @@ local mapped = function(t)
 	end
 	return t
 end
-root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
 		ach(63434, {	-- Buddy System VII: Valeera
-			["timeline"] = { ADDED_12_1_0 },
+			timeline = { ADDED_12_1_0 },
 		}),
 		ach(63435, {	-- Buddy System VIII: Valeera
-			["timeline"] = { ADDED_12_1_0 },
+			timeline = { ADDED_12_1_0 },
 		}),
 		ach(61722),	-- Curio Enthusiast: Midnight
 		ach(61723),	-- Curio Fanatic: Midnight
@@ -86,423 +86,423 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			i(257199),	-- Giganto Manis (MOUNT!)
 		}),
 		ach(61720, {	-- Midnight Delver
-			["maps"] = ALL_REGULAR_DELVES_MID,
-			["sym"] = {{"meta_achievement",
+			maps = ALL_REGULAR_DELVES_MID,
+			sym = {{"meta_achievement",
 				61711,	-- Midnight Delver Damage Dealer
 				61714,	-- Midnight Delver Healer
 				61717,	-- Midnight Delver Tank
 			}},
 		}),
 		ach(61721, {	-- Midnight Delver II
-			["maps"] = ALL_REGULAR_DELVES_MID,
-			["sym"] = {{"meta_achievement",
+			maps = ALL_REGULAR_DELVES_MID,
+			sym = {{"meta_achievement",
 				61712,	-- Midnight Delver Damage Dealer II
 				61715,	-- Midnight Delver Healer II
 				61718,	-- Midnight Delver Tank II
 			}},
-			["groups"] = { i(FINERY_FUNDS) },
+			groups = { i(FINERY_FUNDS) },
 		}),
 		ach(62206, {	-- Midnight Delver III
-			["maps"] = ALL_REGULAR_DELVES_MID,
-			["sym"] = {{"meta_achievement",
+			maps = ALL_REGULAR_DELVES_MID,
+			sym = {{"meta_achievement",
 				61713,	-- Midnight Delver Damage Dealer III
 				61716,	-- Midnight Delver Healer III
 				61719,	-- Midnight Delver Tank III
 			}},
 		}),
 		ach(61711, {	-- Midnight Delver Damage Dealer
-			["groups"] = {
+			groups = {
 				crit(110876, {	-- Atal'Aman
-					["maps"] = { ATAL_AMAN },
+					maps = { ATAL_AMAN },
 				}),
 				crit(110891, {	-- Collegiate Calamity
-					["maps"] = { COLLEGIATE_CALAMITY },
+					maps = { COLLEGIATE_CALAMITY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115836, {	-- Gnarldor Isle
-					["maps"] = { GNARLDOR_ISLE },
+					maps = { GNARLDOR_ISLE },
 				}),
 				-- #endif
 				crit(110889, {	-- Parhelion Plaza
-					["maps"] = { PARHELION_PLAZA },
+					maps = { PARHELION_PLAZA },
 				}),
 				crit(110886, {	-- Shadowguard Point
-					["maps"] = { SHADOWGUARD_POINT },
+					maps = { SHADOWGUARD_POINT },
 				}),
 				crit(110892, {	-- Sunkiller Sanctum
-					["maps"] = { SUNKILLER_SANCTUM },
+					maps = { SUNKILLER_SANCTUM },
 				}),
 				crit(110890, {	-- The Darkway
-					["maps"] = { THE_DARKWAY },
+					maps = { THE_DARKWAY },
 				}),
 				crit(110888, {	-- The Grudge Pit
-					["maps"] = { THE_GRUDGE_PIT },
+					maps = { THE_GRUDGE_PIT },
 				}),
 				crit(110893, {	-- The Gulf of Memory
-					["maps"] = { THE_GULF_OF_MEMORY },
+					maps = { THE_GULF_OF_MEMORY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115848, {	-- The Ring of Glory
-					["maps"] = { THE_RING_OF_GLORY },
+					maps = { THE_RING_OF_GLORY },
 				}),
 				-- #endif
 				crit(110887, {	-- The Shadow Enclave
-					["maps"] = { THE_SHADOW_ENCLAVE },
+					maps = { THE_SHADOW_ENCLAVE },
 				}),
 				crit(110894, {	-- Twilight Crypts
-					["maps"] = { TWILIGHT_CRYPTS },
+					maps = { TWILIGHT_CRYPTS },
 				}),
 			},
 		}),
 		ach(61712, {	-- Midnight Delver Damage Dealer II
-			["groups"] = {
+			groups = {
 				crit(110897, {	-- Atal'Aman
-					["maps"] = { ATAL_AMAN },
+					maps = { ATAL_AMAN },
 				}),
 				crit(110901, {	-- Collegiate Calamity
-					["maps"] = { COLLEGIATE_CALAMITY },
+					maps = { COLLEGIATE_CALAMITY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115840, {	-- Gnarldor Isle
-					["maps"] = { GNARLDOR_ISLE },
+					maps = { GNARLDOR_ISLE },
 				}),
 				-- #endif
 				crit(110899, {	-- Parhelion Plaza
-					["maps"] = { PARHELION_PLAZA },
+					maps = { PARHELION_PLAZA },
 				}),
 				crit(110895, {	-- Shadowguard Point
-					["maps"] = { SHADOWGUARD_POINT },
+					maps = { SHADOWGUARD_POINT },
 				}),
 				crit(110902, {	-- Sunkiller Sanctum
-					["maps"] = { SUNKILLER_SANCTUM },
+					maps = { SUNKILLER_SANCTUM },
 				}),
 				crit(110900, {	-- The Darkway
-					["maps"] = { THE_DARKWAY },
+					maps = { THE_DARKWAY },
 				}),
 				crit(110898, {	-- The Grudge Pit
-					["maps"] = { THE_GRUDGE_PIT },
+					maps = { THE_GRUDGE_PIT },
 				}),
 				crit(110903, {	-- The Gulf of Memory
-					["maps"] = { THE_GULF_OF_MEMORY },
+					maps = { THE_GULF_OF_MEMORY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115852, {	-- The Ring of Glory
-					["maps"] = { THE_RING_OF_GLORY },
+					maps = { THE_RING_OF_GLORY },
 				}),
 				-- #endif
 				crit(110896, {	-- The Shadow Enclave
-					["maps"] = { THE_SHADOW_ENCLAVE },
+					maps = { THE_SHADOW_ENCLAVE },
 				}),
 				crit(110904, {	-- Twilight Crypts
-					["maps"] = { TWILIGHT_CRYPTS },
+					maps = { TWILIGHT_CRYPTS },
 				}),
 			},
 		}),
 		ach(61713, {	-- Midnight Delver Damage Dealer III
-			["groups"] = {
+			groups = {
 				crit(110908, {	-- Atal'Aman
-					["maps"] = { ATAL_AMAN },
+					maps = { ATAL_AMAN },
 				}),
 				crit(110912, {	-- Collegiate Calamity
-					["maps"] = { COLLEGIATE_CALAMITY },
+					maps = { COLLEGIATE_CALAMITY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115844, {	-- Gnarldor Isle
-					["maps"] = { GNARLDOR_ISLE },
+					maps = { GNARLDOR_ISLE },
 				}),
 				-- #endif
 				crit(110910, {	-- Parhelion Plaza
-					["maps"] = { PARHELION_PLAZA },
+					maps = { PARHELION_PLAZA },
 				}),
 				crit(110905, {	-- Shadowguard Point
-					["maps"] = { SHADOWGUARD_POINT },
+					maps = { SHADOWGUARD_POINT },
 				}),
 				crit(110913, {	-- Sunkiller Sanctum
-					["maps"] = { SUNKILLER_SANCTUM },
+					maps = { SUNKILLER_SANCTUM },
 				}),
 				crit(110911, {	-- The Darkway
-					["maps"] = { THE_DARKWAY },
+					maps = { THE_DARKWAY },
 				}),
 				crit(110909, {	-- The Grudge Pit
-					["maps"] = { THE_GRUDGE_PIT },
+					maps = { THE_GRUDGE_PIT },
 				}),
 				crit(110914, {	-- The Gulf of Memory
-					["maps"] = { THE_GULF_OF_MEMORY },
+					maps = { THE_GULF_OF_MEMORY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115856, {	-- The Ring of Glory
-					["maps"] = { THE_RING_OF_GLORY },
+					maps = { THE_RING_OF_GLORY },
 				}),
 				-- #endif
 				crit(110906, {	-- The Shadow Enclave
-					["maps"] = { THE_SHADOW_ENCLAVE },
+					maps = { THE_SHADOW_ENCLAVE },
 				}),
 				crit(110915, {	-- Twilight Crypts
-					["maps"] = { TWILIGHT_CRYPTS },
+					maps = { TWILIGHT_CRYPTS },
 				}),
 			},
 		}),
 		ach(61714, {	-- Midnight Delver Healer
-			["groups"] = {
+			groups = {
 				crit(110918, {	-- Atal'Aman
-					["maps"] = { ATAL_AMAN },
+					maps = { ATAL_AMAN },
 				}),
 				crit(110922, {	-- Collegiate Calamity
-					["maps"] = { COLLEGIATE_CALAMITY },
+					maps = { COLLEGIATE_CALAMITY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115837, {	-- Gnarldor Isle
-					["maps"] = { GNARLDOR_ISLE },
+					maps = { GNARLDOR_ISLE },
 				}),
 				-- #endif
 				crit(110920, {	-- Parhelion Plaza
-					["maps"] = { PARHELION_PLAZA },
+					maps = { PARHELION_PLAZA },
 				}),
 				crit(110916, {	-- Shadowguard Point
-					["maps"] = { SHADOWGUARD_POINT },
+					maps = { SHADOWGUARD_POINT },
 				}),
 				crit(110923, {	-- Sunkiller Sanctum
-					["maps"] = { SUNKILLER_SANCTUM },
+					maps = { SUNKILLER_SANCTUM },
 				}),
 				crit(110921, {	-- The Darkway
-					["maps"] = { THE_DARKWAY },
+					maps = { THE_DARKWAY },
 				}),
 				crit(110919, {	-- The Grudge Pit
-					["maps"] = { THE_GRUDGE_PIT },
+					maps = { THE_GRUDGE_PIT },
 				}),
 				crit(110924, {	-- The Gulf of Memory
-					["maps"] = { THE_GULF_OF_MEMORY },
+					maps = { THE_GULF_OF_MEMORY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115849, {	-- The Ring of Glory
-					["maps"] = { THE_RING_OF_GLORY },
+					maps = { THE_RING_OF_GLORY },
 				}),
 				-- #endif
 				crit(110917, {	-- The Shadow Enclave
-					["maps"] = { THE_SHADOW_ENCLAVE },
+					maps = { THE_SHADOW_ENCLAVE },
 				}),
 				crit(110925, {	-- Twilight Crypts
-					["maps"] = { TWILIGHT_CRYPTS },
+					maps = { TWILIGHT_CRYPTS },
 				}),
 			},
 		}),
 		ach(61715, {	-- Midnight Delver Healer II
-			["groups"] = {
+			groups = {
 				crit(110928, {	-- Atal'Aman
-					["maps"] = { ATAL_AMAN },
+					maps = { ATAL_AMAN },
 				}),
 				crit(110932, {	-- Collegiate Calamity
-					["maps"] = { COLLEGIATE_CALAMITY },
+					maps = { COLLEGIATE_CALAMITY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115841, {	-- Gnarldor Isle
-					["maps"] = { GNARLDOR_ISLE },
+					maps = { GNARLDOR_ISLE },
 				}),
 				-- #endif
 				crit(110930, {	-- Parhelion Plaza
-					["maps"] = { PARHELION_PLAZA },
+					maps = { PARHELION_PLAZA },
 				}),
 				crit(110926, {	-- Shadowguard Point
-					["maps"] = { SHADOWGUARD_POINT },
+					maps = { SHADOWGUARD_POINT },
 				}),
 				crit(110933, {	-- Sunkiller Sanctum
-					["maps"] = { SUNKILLER_SANCTUM },
+					maps = { SUNKILLER_SANCTUM },
 				}),
 				crit(110931, {	-- The Darkway
-					["maps"] = { THE_DARKWAY },
+					maps = { THE_DARKWAY },
 				}),
 				crit(110929, {	-- The Grudge Pit
-					["maps"] = { THE_GRUDGE_PIT },
+					maps = { THE_GRUDGE_PIT },
 				}),
 				crit(110934, {	-- The Gulf of Memory
-					["maps"] = { THE_GULF_OF_MEMORY },
+					maps = { THE_GULF_OF_MEMORY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115853, {	-- The Ring of Glory
-					["maps"] = { THE_RING_OF_GLORY },
+					maps = { THE_RING_OF_GLORY },
 				}),
 				-- #endif
 				crit(110927, {	-- The Shadow Enclave
-					["maps"] = { THE_SHADOW_ENCLAVE },
+					maps = { THE_SHADOW_ENCLAVE },
 				}),
 				crit(110935, {	-- Twilight Crypts
-					["maps"] = { TWILIGHT_CRYPTS },
+					maps = { TWILIGHT_CRYPTS },
 				}),
 			},
 		}),
 		ach(61716, {	-- Midnight Delver Healer III
-			["groups"] = {
+			groups = {
 				crit(110938, {	-- Atal'Aman
-					["maps"] = { ATAL_AMAN },
+					maps = { ATAL_AMAN },
 				}),
 				crit(110942, {	-- Collegiate Calamity
-					["maps"] = { COLLEGIATE_CALAMITY },
+					maps = { COLLEGIATE_CALAMITY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115845, {	-- Gnarldor Isle
-					["maps"] = { GNARLDOR_ISLE },
+					maps = { GNARLDOR_ISLE },
 				}),
 				-- #endif
 				crit(110940, {	-- Parhelion Plaza
-					["maps"] = { PARHELION_PLAZA },
+					maps = { PARHELION_PLAZA },
 				}),
 				crit(110936, {	-- Shadowguard Point
-					["maps"] = { SHADOWGUARD_POINT },
+					maps = { SHADOWGUARD_POINT },
 				}),
 				crit(110943, {	-- Sunkiller Sanctum
-					["maps"] = { SUNKILLER_SANCTUM },
+					maps = { SUNKILLER_SANCTUM },
 				}),
 				crit(110941, {	-- The Darkway
-					["maps"] = { THE_DARKWAY },
+					maps = { THE_DARKWAY },
 				}),
 				crit(110939, {	-- The Grudge Pit
-					["maps"] = { THE_GRUDGE_PIT },
+					maps = { THE_GRUDGE_PIT },
 				}),
 				crit(110944, {	-- The Gulf of Memory
-					["maps"] = { THE_GULF_OF_MEMORY },
+					maps = { THE_GULF_OF_MEMORY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115857, {	-- The Ring of Glory
-					["maps"] = { THE_RING_OF_GLORY },
+					maps = { THE_RING_OF_GLORY },
 				}),
 				-- #endif
 				crit(110937, {	-- The Shadow Enclave
-					["maps"] = { THE_SHADOW_ENCLAVE },
+					maps = { THE_SHADOW_ENCLAVE },
 				}),
 				crit(110945, {	-- Twilight Crypts
-					["maps"] = { TWILIGHT_CRYPTS },
+					maps = { TWILIGHT_CRYPTS },
 				}),
 			},
 		}),
 		ach(61717, {	-- Midnight Delver Tank
-			["groups"] = {
+			groups = {
 				crit(110948, {	-- Atal'Aman
-					["maps"] = { ATAL_AMAN },
+					maps = { ATAL_AMAN },
 				}),
 				crit(110952, {	-- Collegiate Calamity
-					["maps"] = { COLLEGIATE_CALAMITY },
+					maps = { COLLEGIATE_CALAMITY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115838, {	-- Gnarldor Isle
-					["maps"] = { GNARLDOR_ISLE },
+					maps = { GNARLDOR_ISLE },
 				}),
 				-- #endif
 				crit(110950, {	-- Parhelion Plaza
-					["maps"] = { PARHELION_PLAZA },
+					maps = { PARHELION_PLAZA },
 				}),
 				crit(110946, {	-- Shadowguard Point
-					["maps"] = { SHADOWGUARD_POINT },
+					maps = { SHADOWGUARD_POINT },
 				}),
 				crit(110953, {	-- Sunkiller Sanctum
-					["maps"] = { SUNKILLER_SANCTUM },
+					maps = { SUNKILLER_SANCTUM },
 				}),
 				crit(110951, {	-- The Darkway
-					["maps"] = { THE_DARKWAY },
+					maps = { THE_DARKWAY },
 				}),
 				crit(110949, {	-- The Grudge Pit
-					["maps"] = { THE_GRUDGE_PIT },
+					maps = { THE_GRUDGE_PIT },
 				}),
 				crit(110954, {	-- The Gulf of Memory
-					["maps"] = { THE_GULF_OF_MEMORY },
+					maps = { THE_GULF_OF_MEMORY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115850, {	-- The Ring of Glory
-					["maps"] = { THE_RING_OF_GLORY },
+					maps = { THE_RING_OF_GLORY },
 				}),
 				-- #endif
 				crit(110947, {	-- The Shadow Enclave
-					["maps"] = { THE_SHADOW_ENCLAVE },
+					maps = { THE_SHADOW_ENCLAVE },
 				}),
 				crit(110955, {	-- Twilight Crypts
-					["maps"] = { TWILIGHT_CRYPTS },
+					maps = { TWILIGHT_CRYPTS },
 				}),
 			},
 		}),
 		ach(61718, {	-- Midnight Delver Tank II
-			["groups"] = {
+			groups = {
 				crit(110958, {	-- Atal'Aman
-					["maps"] = { ATAL_AMAN },
+					maps = { ATAL_AMAN },
 				}),
 				crit(110962, {	-- Collegiate Calamity
-					["maps"] = { COLLEGIATE_CALAMITY },
+					maps = { COLLEGIATE_CALAMITY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115842, {	-- Gnarldor Isle
-					["maps"] = { GNARLDOR_ISLE },
+					maps = { GNARLDOR_ISLE },
 				}),
 				-- #endif
 				crit(110960, {	-- Parhelion Plaza
-					["maps"] = { PARHELION_PLAZA },
+					maps = { PARHELION_PLAZA },
 				}),
 				crit(110956, {	-- Shadowguard Point
-					["maps"] = { SHADOWGUARD_POINT },
+					maps = { SHADOWGUARD_POINT },
 				}),
 				crit(110963, {	-- Sunkiller Sanctum
-					["maps"] = { SUNKILLER_SANCTUM },
+					maps = { SUNKILLER_SANCTUM },
 				}),
 				crit(110961, {	-- The Darkway
-					["maps"] = { THE_DARKWAY },
+					maps = { THE_DARKWAY },
 				}),
 				crit(110959, {	-- The Grudge Pit
-					["maps"] = { THE_GRUDGE_PIT },
+					maps = { THE_GRUDGE_PIT },
 				}),
 				crit(110964, {	-- The Gulf of Memory
-					["maps"] = { THE_GULF_OF_MEMORY },
+					maps = { THE_GULF_OF_MEMORY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115854, {	-- The Ring of Glory
-					["maps"] = { THE_RING_OF_GLORY },
+					maps = { THE_RING_OF_GLORY },
 				}),
 				-- #endif
 				crit(110957, {	-- The Shadow Enclave
-					["maps"] = { THE_SHADOW_ENCLAVE },
+					maps = { THE_SHADOW_ENCLAVE },
 				}),
 				crit(110965, {	-- Twilight Crypts
-					["maps"] = { TWILIGHT_CRYPTS },
+					maps = { TWILIGHT_CRYPTS },
 				}),
 			},
 		}),
 		ach(61719, {	-- Midnight Delver Tank III
-			["groups"] = {
+			groups = {
 				crit(110968, {	-- Atal'Aman
-					["maps"] = { ATAL_AMAN },
+					maps = { ATAL_AMAN },
 				}),
 				crit(110972, {	-- Collegiate Calamity
-					["maps"] = { COLLEGIATE_CALAMITY },
+					maps = { COLLEGIATE_CALAMITY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115846, {	-- Gnarldor Isle
-					["maps"] = { GNARLDOR_ISLE },
+					maps = { GNARLDOR_ISLE },
 				}),
 				-- #endif
 				crit(110970, {	-- Parhelion Plaza
-					["maps"] = { PARHELION_PLAZA },
+					maps = { PARHELION_PLAZA },
 				}),
 				crit(110966, {	-- Shadowguard Point
-					["maps"] = { SHADOWGUARD_POINT },
+					maps = { SHADOWGUARD_POINT },
 				}),
 				crit(110973, {	-- Sunkiller Sanctum
-					["maps"] = { SUNKILLER_SANCTUM },
+					maps = { SUNKILLER_SANCTUM },
 				}),
 				crit(110971, {	-- The Darkway
-					["maps"] = { THE_DARKWAY },
+					maps = { THE_DARKWAY },
 				}),
 				crit(110969, {	-- The Grudge Pit
-					["maps"] = { THE_GRUDGE_PIT },
+					maps = { THE_GRUDGE_PIT },
 				}),
 				crit(110974, {	-- The Gulf of Memory
-					["maps"] = { THE_GULF_OF_MEMORY },
+					maps = { THE_GULF_OF_MEMORY },
 				}),
 				-- #if AFTER 12.1.0
 				crit(115858, {	-- The Ring of Glory
-					["maps"] = { THE_RING_OF_GLORY },
+					maps = { THE_RING_OF_GLORY },
 				}),
 				-- #endif
 				crit(110967, {	-- The Shadow Enclave
-					["maps"] = { THE_SHADOW_ENCLAVE },
+					maps = { THE_SHADOW_ENCLAVE },
 				}),
 				crit(110975, {	-- Twilight Crypts
-					["maps"] = { TWILIGHT_CRYPTS },
+					maps = { TWILIGHT_CRYPTS },
 				}),
 			},
 		}),
@@ -514,11 +514,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			title(691),	-- Treasure Seeker <Name>
 		}),
 	}),
-	n(DELVE_COMPLETION, {["symselector"]=SymSelector.MID_DelveCompletion}),
+	n(DELVE_COMPLETION, {symselector=SymSelector.MID_DelveCompletion}),
 	mapped(n(DELVE_COMPLETION, {
 		filter(BATTLE_PETS, {
 			i(262395, {	-- Hexed Bunny (PET!)
-				["providers"] = {
+				providers = {
 					{ "o", 584518 },	-- Bountiful Heavy Trunk
 					{ "o", 584515 },	-- Bountiful Heavy Trunk
 					{ "o", 584508 },	-- Nemesis Strongbox
@@ -527,7 +527,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				},
 			}),
 			i(262396, {	-- Lost Star (PET!)
-				["providers"] = {
+				providers = {
 					{ "o", 584518 },	-- Bountiful Heavy Trunk
 					{ "o", 584515 },	-- Bountiful Heavy Trunk
 					{ "o", 584508 },	-- Nemesis Strongbox
@@ -537,7 +537,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				},
 			}),
 			i(262392, {	-- Nibblesworth (PET!)
-				["providers"] = {
+				providers = {
 					{ "o", 584518 },	-- Bountiful Heavy Trunk
 					{ "o", 584515 },	-- Bountiful Heavy Trunk
 					{ "o", 584508 },	-- Nemesis Strongbox
@@ -547,19 +547,19 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				},
 			}),
 			i(262343, {	-- Treja'saka (PET!)
-				["providers"] = {
+				providers = {
 					{ "o", 584514 },	-- Bountiful Coffer
 					{ "o", 581922 },	-- Hidden Trove
 				},
 			}),
 			i(262342, {	-- Spormilian (PET!)
-				["providers"] = {
+				providers = {
 					{ "o", 584515 },	-- Bountiful Heavy Trunk
 					{ "o", 584508 },	-- Nemesis Strongbox
 				},
 			}),
 			i(262394, {	-- Ziorg'pharon (PET!)
-				["providers"] = {
+				providers = {
 					{ "o", 584518 },	-- Bountiful Heavy Trunk
 					{ "o", 584515 },	-- Bountiful Heavy Trunk
 					{ "o", 584512 },	-- Nemesis Strongbox
@@ -591,7 +591,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			i(257381),	-- Player Experience (Rare)
 			i(257379),	-- Player Experience (Epic)
 			i(268297, {	-- Rattling Bag o' Gold
-				["providers"] = {
+				providers = {
 					{ "o", 584518 },	-- Bountiful Heavy Trunk
 					{ "o", 584515 },	-- Bountiful Heavy Trunk
 					{ "o", 584517 },	-- Heavy Trunk
@@ -605,18 +605,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			i(265714),	-- Trovehunter's Bounty
 			-- Items and different things
 			i(262586, {	-- Primeval Arcane Remnant (QI!/QS!)
-				["providers"] = {
+				providers = {
 					{ "o", 623258 },	-- Pilfered Trunk
 					{ "o", 584517 },	-- Heavy Trunk
 					{ "o", 584515 },	-- Bountiful Heavy Trunk
 				},
 			}),
 			currency(2803, {	-- Undercoin
-				["timeline"] = { REMOVED_13_0_0 },
+				timeline = { REMOVED_13_0_0 },
 			}),
 		}),
 		filter(RECIPES, {
-			["providers"] = {
+			providers = {
 				-- no Wowhead data to confirm these in Delves, only a few confirmed drops by word of mouth
 				-- added based on respective Item tooltips of what can contain Recipes in Delve UI
 				{ "o", 584518 },	-- Bountiful Heavy Trunk
@@ -629,8 +629,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				{ "o", 689304 },	-- Ancestral Bounty
 				-- #endif
 			},
-			["groups"] = {
-				i(273067, { ["timeline"] = { ADDED_12_1_5 } }),	-- Design: Polished Ammolite (RECIPE!)
+			groups = {
+				i(273067, { timeline = { ADDED_12_1_5 } }),	-- Design: Polished Ammolite (RECIPE!)
 				i(259366),	-- Design: Replica Haranir Mural (RECIPE!)
 				i(256718),	-- Design: Stabilizing Gemstone Bandolier (RECIPE!)
 				i(256747),	-- Formula: Enchant Boots - Shaladrassil's Roots (RECIPE!)
@@ -648,11 +648,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				i(256650),	-- Pattern: World Tender's Rootslippers (RECIPE!)
 				i(247425),	-- Recipe: Riftstone (RECIPE!)
 				i(247423),	-- Recipe: Silvermoon Spire Fountain (RECIPE!)
-				i(273064, { ["timeline"] = { ADDED_12_1_5 } }),	-- Schematic: Coiled Snake-Eye (RECIPE!)
+				i(273064, { timeline = { ADDED_12_1_5 } }),	-- Schematic: Coiled Snake-Eye (RECIPE!)
 			},
 		}),
 		filter(COSMETIC, {
-			["providers"] = {
+			providers = {
 				{ "o", 623259 },	-- Pilfered Trunk
 				{ "o", 623258 },	-- Pilfered Trunk
 				{ "o", 584518 },	-- Bountiful Heavy Trunk
@@ -664,10 +664,10 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				{ "o", 584508 },	-- Nemesis Strongbox
 				{ "o", 584509 },	-- Nemesis Strongbox
 			},
-			["groups"] = {
+			groups = {
 				i(262983),	-- Archival Magnimace (COSMETIC!)
 				i(264852),	-- Bladed Twilight Spaulder (COSMETIC!)
-				i(276164, { ["timeline"] = { ADDED_12_1_0 } }),	-- Corroded Patagia (COSMETIC!)
+				i(276164, { timeline = { ADDED_12_1_0 } }),	-- Corroded Patagia (COSMETIC!)
 				i(264847),	-- Dozing Vinepouch (COSMETIC!)
 				i(262992),	-- Myth Maker's Brush (COSMETIC!)
 				i(262970),	-- Ominous Tome (COSMETIC!)
@@ -683,7 +683,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		n(DECOR, {
-			["providers"] = {
+			providers = {
 				{ "o", 584518 },	-- Bountiful Heavy Trunk
 				{ "o", 584515 },	-- Bountiful Heavy Trunk
 				{ "o", 584517 },	-- Heavy Trunk
@@ -695,8 +695,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				{ "o", 623259 },	-- Pilfered Trunk
 				{ "o", 623258 },	-- Pilfered Trunk
 			},
-			["groups"] = {
-				i(267080, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Blueflame Chandelier (DECOR!)
+			groups = {
+				i(267080, {timeline = { ADDED_12_1_0 }}),	-- Amani Blueflame Chandelier (DECOR!)
 				i(264329),	-- Amani Dining Table (DECOR!)
 				i(264330),	-- Amani Hanging Brazier (DECOR!)
 				i(267009),	-- Amani Training Dummy (DECOR!)
@@ -706,74 +706,74 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				i(263036),	-- Hanging Dawnflower (DECOR!)
 				i(263042),	-- Rootlight Lamppost (DECOR!)
 				i(263233),	-- Sin'dorei Spinning Library (DECOR!)
-				i(248963, {["timeline"] = { ADDED_12_1_0 }}),	-- Spirit-Touched Amani Mask (DECOR!)
-				i(275855, {["timeline"] = { ADDED_12_1_0 }}),	-- Zul'Aman Swamp Palm Sprout (DECOR!)
+				i(248963, {timeline = { ADDED_12_1_0 }}),	-- Spirit-Touched Amani Mask (DECOR!)
+				i(275855, {timeline = { ADDED_12_1_0 }}),	-- Zul'Aman Swamp Palm Sprout (DECOR!)
 			},
 		}),
 		n(TREASURES, {
 			-- Currently ATT tooltips cannot distinguish one object from the other due to identical name
 			-- Distinguishing by color may be possible for some of the 'special' objects, but would need to be determined how to do it
 			o(584514, {	-- Bountiful Coffer
-				["provider"] = { "i", 254250 },	-- Bountiful Coffer
-				["cost"] = {{"c",RESTORED_COFFER_KEY,1}},	-- 1x Restored Coffer Key
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
-				["groups"] = {
+				provider = { "i", 254250 },	-- Bountiful Coffer
+				cost = {{"c",RESTORED_COFFER_KEY,1}},	-- 1x Restored Coffer Key
+				VerifyLoot = {"armor","weapon","miscellaneous"},
+				groups = {
 					i(273000),	-- Corrosive Soul
 				},
 			}),
 			o(623258, {	-- Pilfered Trunk
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				VerifyLoot = {"armor","weapon","miscellaneous"},
 			}),
 			o(584517, {	-- Heavy Trunk
-				["provider"] = { "i", 257386 },	-- Heavy Trunk
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				provider = { "i", 257386 },	-- Heavy Trunk
+				VerifyLoot = {"armor","weapon","miscellaneous"},
 			}),
 			o(584515, {	-- Bountiful Heavy Trunk
-				["provider"] = { "i", 257387 },	-- Bountiful Heavy Trunk
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				provider = { "i", 257387 },	-- Bountiful Heavy Trunk
+				VerifyLoot = {"armor","weapon","miscellaneous"},
 			}),
 			o(658087, {	-- Abundantly Bountiful Heavy Trunk
-				-- ["provider"] = { "n", DUNDUN_NPC },	-- Dundun
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
-				["timeline"] = { ADDED_12_1_0 },
-				["groups"] = { i(254983) },	-- Assassin's Subtle Tea
+				-- provider = { "n", DUNDUN_NPC },	-- Dundun
+				VerifyLoot = {"armor","weapon","miscellaneous"},
+				timeline = { ADDED_12_1_0 },
+				groups = { i(254983) },	-- Assassin's Subtle Tea
 			}),
 			o(623259, {	-- Pilfered Trunk
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				VerifyLoot = {"armor","weapon","miscellaneous"},
 			}),
 			o(584519, {	-- Heavy Trunk
-				["provider"] = { "i", 257386 },	-- Heavy Trunk
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				provider = { "i", 257386 },	-- Heavy Trunk
+				VerifyLoot = {"armor","weapon","miscellaneous"},
 			}),
 			o(584518, {	-- Bountiful Heavy Trunk
-				["provider"] = { "i", 257387 },	-- Bountiful Heavy Trunk
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
-				["groups"] = {
+				provider = { "i", 257387 },	-- Bountiful Heavy Trunk
+				VerifyLoot = {"armor","weapon","miscellaneous"},
+				groups = {
 					i(262390),	-- Sporbie (PET!)
 				},
 			}),
 			o(658088, {	-- Abundantly Bountiful Heavy Trunk
-				-- ["provider"] = { "n", DUNDUN_NPC },	-- Dundun
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
-				["timeline"] = { ADDED_12_1_0 },
-				["groups"] = { i(254983) },	-- Assassin's Subtle Tea
+				-- provider = { "n", DUNDUN_NPC },	-- Dundun
+				VerifyLoot = {"armor","weapon","miscellaneous"},
+				timeline = { ADDED_12_1_0 },
+				groups = { i(254983) },	-- Assassin's Subtle Tea
 			}),
 			o(584504, {	-- Sanctified Spoils
-				["provider"] = { "n", 256593 },	-- Sanctified Banner
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
-				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
-				["groups"] = { i(254983) },	-- Assassin's Subtle Tea
+				provider = { "n", 256593 },	-- Sanctified Banner
+				VerifyLoot = {"armor","weapon","miscellaneous"},
+				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				groups = { i(254983) },	-- Assassin's Subtle Tea
 			}),
 			o(584503, {	-- Grand Sanctified Spoils
-				["description"] = "Requires Delver's Journey Rank 3 to spawn. When you zone in to a Delve, you may get a message that 'A Sanctified Banner has spawned'. You then need to find the banner (It looks like a Light-themed flagpole, a little taller than your character and slightly glowing), click it and then finish the Delve for an extra chest/goodies.\n\nWhen activating the banner, an elite mob can spawn. If it does, then you will get a Grand Sanctified Spoil instead of a regular one.",
-				["provider"] = { "n", 256593 },	-- Sanctified Banner
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
-				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
-				["sym"] = {{"select","itemID",
+				description = "Requires Delver's Journey Rank 3 to spawn. When you zone in to a Delve, you may get a message that 'A Sanctified Banner has spawned'. You then need to find the banner (It looks like a Light-themed flagpole, a little taller than your character and slightly glowing), click it and then finish the Delve for an extra chest/goodies.\n\nWhen activating the banner, an elite mob can spawn. If it does, then you will get a Grand Sanctified Spoil instead of a regular one.",
+				provider = { "n", 256593 },	-- Sanctified Banner
+				VerifyLoot = {"armor","weapon","miscellaneous"},
+				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				sym = {{"select","itemID",
 					264971,	-- Annihilation Rod (COSMETIC!)
 					264970,	-- Oblivion's Edge (COSMETIC!)
 				}},
-				["groups"] = {
+				groups = {
 					i(265368),	-- Twilight Destroyer (COSMETIC!)
 					i(265366),	-- Twilight Executioner (COSMETIC!)
 					i(265367),	-- Twilight Fang (COSMETIC!)
@@ -781,33 +781,33 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 				},
 			}),
 			o(584512, {	-- Nemesis Strongbox (Poor)
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				VerifyLoot = {"armor","weapon","miscellaneous"},
 			}),
 			o(584511, {	-- Nemesis Strongbox (Uncommon)
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				VerifyLoot = {"armor","weapon","miscellaneous"},
 			}),
 			o(584509, {	-- Nemesis Strongbox (Rare)
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
+				VerifyLoot = {"armor","weapon","miscellaneous"},
 			}),
 			o(584508, {	-- Nemesis Strongbox (Epic)
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
-				["groups"] = {
+				VerifyLoot = {"armor","weapon","miscellaneous"},
+				groups = {
 					i(254869),	-- Chunk of Companion Experience (Epic)
 					i(265366),	-- Twilight Executioner (COSMETIC!)
 				},
 			}),
 			o(581922, {	-- Hidden Trove
-				["VerifyLoot"] = {"armor","weapon","miscellaneous"},
-				["providers"] = {
+				VerifyLoot = {"armor","weapon","miscellaneous"},
+				providers = {
 					{ "i", 252415 },	-- Trovehunter's Bounty
 					{ "i", 265714 },	-- Trovehunter's Bounty (Delve UI)
 				},
 			}),
 			o(506498, {	-- Gilded Stash
-				["timeline"] = { ADDED_12_0_1_SEASONSTART },
+				timeline = { ADDED_12_0_1_SEASONSTART },
 			}),
 			o(658855, {	-- Abundant Spoils
-				["timeline"] = { ADDED_12_1_0 },
+				timeline = { ADDED_12_1_0 },
 				-- contains a user-chosen option based on Dundun dialog (Decor/Marl/Undercoin/XP) so no reason to list specifically
 			}),
 		}),
@@ -866,61 +866,61 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 		hqt(92791),	-- Level 43
 		hqt(92792),	-- Level 44
 		hqt(92793),	-- Level 45
-		hqt(92794, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 46
-		hqt(92795, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 47
-		hqt(92796, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 48
-		hqt(92797, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 49
-		hqt(92798, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 50
-		hqt(92799, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 51
-		hqt(92800, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 52
-		hqt(92801, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 53
-		hqt(92803, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 54
-		hqt(92804, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 55
-		hqt(92805, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 56
-		hqt(92806, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 57
-		hqt(92807, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 58
-		hqt(92808, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 59
-		hqt(92809, { ["timeline"] = { ADDED_12_0_1_SEASONSTART } }),	-- Level 60
-		hqt(95856, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 61
-		hqt(95857, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 62
-		hqt(95858, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 63
-		hqt(95859, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 64
-		hqt(95860, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 65
-		hqt(95861, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 66
-		hqt(95862, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 67
-		hqt(95863, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 68
-		hqt(95864, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 69
-		hqt(95865, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 70
-		hqt(95866, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 71
-		hqt(95867, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 72
-		hqt(95868, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 73
-		hqt(95869, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 74
-		hqt(95870, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 75
-		hqt(95871, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 76
-		hqt(95872, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 77
-		hqt(95873, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 78
-		hqt(95874, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 79
-		hqt(95875, { ["timeline"] = { ADDED_12_1_0 } }),	-- Level 80
+		hqt(92794, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Level 46
+		hqt(92795, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Level 47
+		hqt(92796, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Level 48
+		hqt(92797, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Level 49
+		hqt(92798, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Level 50
+		hqt(92799, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Level 51
+		hqt(92800, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Level 52
+		hqt(92801, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Level 53
+		hqt(92803, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Level 54
+		hqt(92804, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Level 55
+		hqt(92805, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Level 56
+		hqt(92806, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Level 57
+		hqt(92807, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Level 58
+		hqt(92808, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Level 59
+		hqt(92809, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Level 60
+		hqt(95856, { timeline = { ADDED_12_1_0 } }),	-- Level 61
+		hqt(95857, { timeline = { ADDED_12_1_0 } }),	-- Level 62
+		hqt(95858, { timeline = { ADDED_12_1_0 } }),	-- Level 63
+		hqt(95859, { timeline = { ADDED_12_1_0 } }),	-- Level 64
+		hqt(95860, { timeline = { ADDED_12_1_0 } }),	-- Level 65
+		hqt(95861, { timeline = { ADDED_12_1_0 } }),	-- Level 66
+		hqt(95862, { timeline = { ADDED_12_1_0 } }),	-- Level 67
+		hqt(95863, { timeline = { ADDED_12_1_0 } }),	-- Level 68
+		hqt(95864, { timeline = { ADDED_12_1_0 } }),	-- Level 69
+		hqt(95865, { timeline = { ADDED_12_1_0 } }),	-- Level 70
+		hqt(95866, { timeline = { ADDED_12_1_0 } }),	-- Level 71
+		hqt(95867, { timeline = { ADDED_12_1_0 } }),	-- Level 72
+		hqt(95868, { timeline = { ADDED_12_1_0 } }),	-- Level 73
+		hqt(95869, { timeline = { ADDED_12_1_0 } }),	-- Level 74
+		hqt(95870, { timeline = { ADDED_12_1_0 } }),	-- Level 75
+		hqt(95871, { timeline = { ADDED_12_1_0 } }),	-- Level 76
+		hqt(95872, { timeline = { ADDED_12_1_0 } }),	-- Level 77
+		hqt(95873, { timeline = { ADDED_12_1_0 } }),	-- Level 78
+		hqt(95874, { timeline = { ADDED_12_1_0 } }),	-- Level 79
+		hqt(95875, { timeline = { ADDED_12_1_0 } }),	-- Level 80
 	}),
 	n(MAILBOX, {
 		i(258738, {	-- A Cordial Invitation (QS!)
-			["description"] = "Mailed to you after your first death in a delve.",
+			description = "Mailed to you after your first death in a delve.",
 		}),
 	}),
 	n(QUESTS, {
 		q(93784, {	-- A Gnawing Void of Curiosity
-			["provider"] = { "i", 262586 },	-- Primeval Arcane Remnant (QI!/QS!)
-			["isWeekly"] = true,
+			provider = { "i", 262586 },	-- Primeval Arcane Remnant (QI!/QS!)
+			isWeekly = true,
 		}),
 		q(93453, {	-- A Grave Concern
-			["providers"] = {
+			providers = {
 				{ "i", 258738 },	-- A Cordial Invitation (QI!/QS!)
 				{ "n", 254616 },	-- Nelthius Shadestone <Master Engraver>
 			},
-			["coord"] = { 52.7, 77.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-			["groups"] = {
+			coord = { 52.7, 77.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+			groups = {
 				i(262966, {	-- Budget Friendly (CI!)
-					["timeline"] = { REMOVED_12_1_0 },	-- The cosmetic remains, but the item was removed and its HQT can no longer be completed
+					timeline = { REMOVED_12_1_0 },	-- The cosmetic remains, but the item was removed and its HQT can no longer be completed
 				}),
 			},
 		}),
@@ -935,20 +935,20 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 	}),
 	n(SPECIAL, {
 		o(609862, {	-- Lordaeron's Loss (Gravestone)
-			["lore"] = "Died in Lordaeron or Undercity.",	-- This is visible only AFTER the acquisition.
-			["coord"] = { 52.6, 77.3, MAP.MIDNIGHT.SILVERMOON_CITY },
-			["maps"] = { TIRISFAL_GLADES },
-			["timeline"] = { ADDED_12_1_0 },
-			["groups"] = {
+			lore = "Died in Lordaeron or Undercity.",	-- This is visible only AFTER the acquisition.
+			coord = { 52.6, 77.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+			maps = { TIRISFAL_GLADES },
+			timeline = { ADDED_12_1_0 },
+			groups = {
 				ach(61456, {	-- Die in Lordaeron or Undercity (Hidden Achievement Trigger)
-					["description"] = "Acquisition of the Gravestone is locked behind a Hidden Achievement that will not show in your Achievement UI.\n\nYou need to go to the present phase of Lordearon and kill your character while within the confines of the City.\n\nDo a force refresh after killing your character. If this entry disappears, go back to Silvermoon City and apply the Gravestone.",
+					description = "Acquisition of the Gravestone is locked behind a Hidden Achievement that will not show in your Achievement UI.\n\nYou need to go to the present phase of Lordearon and kill your character while within the confines of the City.\n\nDo a force refresh after killing your character. If this entry disappears, go back to Silvermoon City and apply the Gravestone.",
 				}),
 			},
 		}),
 	}),
 	mapped(n(SPECIAL, {
 		n(256593, {	-- Sanctified Banner
-			["coords"] = {
+			coords = {
 				-- Atal'Aman
 				{ 40.57, 57.84, ATAL_AMAN },
 				{ 57.38, 83.09, ATAL_AMAN },
@@ -993,9 +993,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 	})),
 	mapped(n(TREASURES, {
 		o(584752, {	-- Mislaid Curiosity
-			["description"] = "Contains Chunk of Companion Experience tokens.",
-			["timeline"] = { ADDED_12_0_1_LAUNCH },
-			["groups"] = {
+			description = "Contains Chunk of Companion Experience tokens.",
+			timeline = { ADDED_12_0_1_LAUNCH },
+			groups = {
 				-- Let's figure out if there will be some pre-seasonal IDs for experience / different per season stuff
 				-- Alpha items (NYI?)
 				--i(249028),	-- Perfectly Preserved Kaja'Classic Original Taste
@@ -1022,199 +1022,199 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 	})),
 	n(VENDORS, {
 		n(242398, {	-- Naleidea Rivergleam
-			["coord"] = { 52.8, 77.9, MAP.MIDNIGHT.SILVERMOON_CITY },
-			["groups"] = {
+			coord = { 52.8, 77.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+			groups = {
 				-- TODO: Some items looks like seasoned (e.g. keys, bags, but sorted them out later on if needed)
 				-- TODO: not sorted via name but as listed order in vendor
 				filter(BATTLE_PETS, {
 					i(262393, {	-- Kreepah'zoyd (PET!)
-						["cost"] = { { "c", UNDERCOIN, 10000 } },
+						cost = { { "c", UNDERCOIN, 10000 } },
 					}),
 				}),
 				filter(COSMETIC, {
 					iensemble(263577, {	-- Arsenal: Rootlands Weaponry
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", UNDERCOIN, 5000 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", UNDERCOIN, 5000 } },
 					}),
 					iensemble(263575, {	-- Ensemble: Elder Moss Outfit
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", UNDERCOIN, 5000 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", UNDERCOIN, 5000 } },
 					}),
 					iensemble(263574, {	-- Ensemble: Osseoclad's Wear (COSMETIC!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", UNDERCOIN, 5000 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", UNDERCOIN, 5000 } },
 					}),
 					iensemble(263576, {	-- Ensemble: Rampant Thorn Armor
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", UNDERCOIN, 5000 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", UNDERCOIN, 5000 } },
 					}),
 					iensemble(263520, {	-- Ensemble: Sprawling Garb (COSMETIC!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", UNDERCOIN, 5000 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", UNDERCOIN, 5000 } },
 					}),
 					i(264849, {	-- Dewy Vinepouch (COSMETIC!)
-						["cost"] = { { "c", UNDERCOIN, 2500 } },
+						cost = { { "c", UNDERCOIN, 2500 } },
 					}),
 					-- #if BEFORE 12.1.0
 					i(262989, {	-- Focusight Relic Mace (COSMETIC!)
-						["cost"] = { { "c", UNDERCOIN, 2500 } },
+						cost = { { "c", UNDERCOIN, 2500 } },
 					}),
 					-- #endif
 					i(264853, {	-- Gilded Twilight Spaulder (COSMETIC!)
-						["cost"] = { { "c", UNDERCOIN, 2500 } },
+						cost = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(284055, {	-- Hexbinder's Spaulders (COSMETIC!)
-						["timeline"] = { ADDED_12_1_5 },
-						["cost"] = { { "c", UNDERCOIN, 2500 } },
+						timeline = { ADDED_12_1_5 },
+						cost = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(276165, {	-- Ophidian Patagia (COSMETIC!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", UNDERCOIN, 2500 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", UNDERCOIN, 2500 } },
 					}),
 					-- #if BEFORE 12.1.0
 					i(262984, {	-- Reliquary Expedition Bag (COSMETIC!)
-						["cost"] = { { "c", UNDERCOIN, 2500 } },
+						cost = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(262973, {	-- Reliquary Expedition Notes (COSMETIC!)
-						["cost"] = { { "c", UNDERCOIN, 2500 } },
+						cost = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(262990, {	-- Sin'dorei Arcane Manuscript (COSMETIC!)
-						["cost"] = { { "c", UNDERCOIN, 2500 } },
+						cost = { { "c", UNDERCOIN, 2500 } },
 					}),
 					-- #endif
 					i(284056, {	-- Spirit Effigy (COSMETIC!)
-						["timeline"] = { ADDED_12_1_5 },
-						["cost"] = { { "c", UNDERCOIN, 2500 } },
+						timeline = { ADDED_12_1_5 },
+						cost = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(264860, {	-- Twilight Magus's Cowl (COSMETIC!)
-						["cost"] = { { "c", UNDERCOIN, 2500 } },
+						cost = { { "c", UNDERCOIN, 2500 } },
 					}),
 					i(264856, {	-- Vilebranch Lifeseer (COSMETIC!)
-						["cost"] = { { "c", UNDERCOIN, 2000 } },
+						cost = { { "c", UNDERCOIN, 2000 } },
 					}),
 				}),
 				n(DECOR, {
 					i(284355, {	-- Amani Hex Candle (DECOR!)
-						["timeline"] = { ADDED_12_1_5 },
-						["cost"] = { { "c", UNDERCOIN, 150 } },
+						timeline = { ADDED_12_1_5 },
+						cost = { { "c", UNDERCOIN, 150 } },
 					}),
 					i(252043, {	-- Amani Horn Beaker (DECOR!)
-						["timeline"] = { ADDED_12_1_5 },
-						["cost"] = { { "c", UNDERCOIN, 150 } },
+						timeline = { ADDED_12_1_5 },
+						cost = { { "c", UNDERCOIN, 150 } },
 					}),
 					i(284353, {	-- Amani Open Fire Grill (DECOR!)
-						["timeline"] = { ADDED_12_1_5 },
-						["cost"] = { { "c", UNDERCOIN, 500 } },
+						timeline = { ADDED_12_1_5 },
+						cost = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(244346, {	-- Broken Amani Ritual Urn (DECOR!)
-						["timeline"] = { ADDED_12_1_5 },
-						["cost"] = { { "c", UNDERCOIN, 150 } },
+						timeline = { ADDED_12_1_5 },
+						cost = { { "c", UNDERCOIN, 150 } },
 					}),
 					i(244348, {	-- Cracked Amani Funerary Urn (DECOR!)
-						["timeline"] = { ADDED_12_1_5 },
-						["cost"] = { { "c", UNDERCOIN, 150 } },
+						timeline = { ADDED_12_1_5 },
+						cost = { { "c", UNDERCOIN, 150 } },
 					}),
 					i(264485, {	-- Green Amani Tapestry (DECOR!)
-						["timeline"] = { ADDED_12_1_5 },
-						["cost"] = { { "c", UNDERCOIN, 500 } },
+						timeline = { ADDED_12_1_5 },
+						cost = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(246779, {	-- Hanging Mana Brazier (DECOR!)
-						["cost"] = { { "c", UNDERCOIN, 500 } },
+						cost = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(250770, {	-- Silvermoon Privacy Screen (DECOR!)
-						["cost"] = { { "c", UNDERCOIN, 500 } },
+						cost = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(284362, {	-- Tusked Amani Canoe (DECOR!)
-						["timeline"] = { ADDED_12_1_5 },
-						["cost"] = { { "c", UNDERCOIN, 1000 } },
+						timeline = { ADDED_12_1_5 },
+						cost = { { "c", UNDERCOIN, 1000 } },
 					}),
 					i(264719, {	-- Worn Amani Oar (DECOR!)
-						["timeline"] = { ADDED_12_1_5 },
-						["cost"] = { { "c", UNDERCOIN, 150 } },
+						timeline = { ADDED_12_1_5 },
+						cost = { { "c", UNDERCOIN, 150 } },
 					}),
 					i(275853, {	-- Zul'Aman Burning Pinecone (DECOR!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", UNDERCOIN, 500 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", UNDERCOIN, 500 } },
 					}),
 					i(275857, {	-- Zul'Aman Creeping Pangoroot (DECOR!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", UNDERCOIN, 500 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", UNDERCOIN, 500 } },
 					}),
 				}),
 				filter(MISC, {
 					i(280458, {	-- Delver's Corroded Pouch of Undercoin
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "i", 273000, 1 } },	-- 1x Corrosive Soul
-						["groups"] = { currency(UNDERCOIN) },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "i", 273000, 1 } },	-- 1x Corrosive Soul
+						groups = { currency(UNDERCOIN) },
 					}),
 					i(264652, {	-- Delver's Pouch of Voidlight Marl
-						["cost"] = { { "c", UNDERCOIN, 2000 } },
+						cost = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(244193, {	-- L00T RAID-R Mini
-						["cost"] = { { "c", UNDERCOIN, 1000 } },
+						cost = { { "c", UNDERCOIN, 1000 } },
 					}),
 					-- #if BEFORE 12.1.0
 					i(262963, {	-- Pious Memorial (CI!)
-						["cost"] = { { "c", UNDERCOIN, 2000 } },
+						cost = { { "c", UNDERCOIN, 2000 } },
 					}),
 					-- #endif
 					i(263188, {	-- Restored Coffer Key
-						["cost"] = { { "c", UNDERCOIN, 2000 } },
+						cost = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(263191, {	-- Restored Coffer Key
-						["cost"] = { { "c", UNDERCOIN, 2000 } },
+						cost = { { "c", UNDERCOIN, 2000 } },
 					}),
 					i(233061, {	-- Rock-in-a-Bottle
-						["cost"] = { { "c", UNDERCOIN, 250 } },
+						cost = { { "c", UNDERCOIN, 250 } },
 					}),
 					i(275910, {	-- Scalebound Herald's Flute
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", UNDERCOIN, 5000 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", UNDERCOIN, 5000 } },
 					}),
 					-- #if AFTER 12.1.0
 					i(262951, {	-- Sin'dorei Gravestone (CI!)
-						["cost"] = { { "c", UNDERCOIN, 2000 } },
+						cost = { { "c", UNDERCOIN, 2000 } },
 					}),
 					-- #endif
 					i(248755, {	-- Star-in-a-Jar
-						["cost"] = { { "c", UNDERCOIN, 250 } },
+						cost = { { "c", UNDERCOIN, 250 } },
 					}),
 					i(279289, {	-- Well Urned Rest (CI!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", UNDERCOIN, 2000 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", UNDERCOIN, 2000 } },
 					}),
 				}),
 				filter(MOUNTS, {
 					i(262502, {	-- Elven Arcane Guardian (MOUNT!)
-						["cost"] = { { "c", UNDERCOIN, 10000 } },
+						cost = { { "c", UNDERCOIN, 10000 } },
 					}),
 				}),
 				filter(TOYS, {
 					-- #if BEFORE 12.1.0
 					i(262431, {	-- Bouncy Mushroom (TOY!)
-						["cost"] = { { "c", UNDERCOIN, 5000 } },
+						cost = { { "c", UNDERCOIN, 5000 } },
 					}),
 					-- #endif
 					i(267291, {	-- Coffer Key Glue (TOY!)
-						["cost"] = { { "c", UNDERCOIN, 250 } },
+						cost = { { "c", UNDERCOIN, 250 } },
 					}),
 					-- #if AFTER 12.1.0
 					i(265100, {	-- Corewarden's Hearthstone (TOY!)
-						["cost"] = { { "c", UNDERCOIN, 10000 } },
+						cost = { { "c", UNDERCOIN, 10000 } },
 					}),
 					i(264414, {	-- Midnight Delver's Flare Gun (TOY!)
-						["cost"] = { { "c", UNDERCOIN, 5000 } },
+						cost = { { "c", UNDERCOIN, 5000 } },
 					}),
 					-- #endif
 				}),
 			},
 		}),
 		n(242399, {	-- Telemancer Astrandis
-			["coord"] = { 52.5, 78.9, MAP.MIDNIGHT.SILVERMOON_CITY },
-			["groups"] = {
+			coord = { 52.5, 78.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+			groups = {
 				n(DECOR, {
 					i(264175, {	-- Amani Strongbox (DECOR!)
-						["cost"] = {
+						cost = {
 							-- #if AFTER 12.1.0
 							{ "c", VOIDLIGHT_MARL, 500 },
 							-- #else
@@ -1223,11 +1223,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 						},
 					}),
 					i(267207, {	-- Amani Territorial Totem (DECOR!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", VOIDLIGHT_MARL, 250 } },
 					}),
 					i(264170, {	-- Ancient Kaldorei Coffer (DECOR!)
-						["cost"] = {
+						cost = {
 							-- #if AFTER 12.1.0
 							{ "c", VOIDLIGHT_MARL, 500 },
 							-- #else
@@ -1236,7 +1236,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 						},
 					}),
 					i(264007, {	-- Corewarden's Spoils (DECOR!)
-						["cost"] = {
+						cost = {
 							-- #if AFTER 12.1.0
 							{ "c", VOIDLIGHT_MARL, 500 },
 							-- #else
@@ -1245,7 +1245,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 						},
 					}),
 					i(263995, {	-- Delver's Bountiful Coffer (DECOR!)
-						["cost"] = {
+						cost = {
 							-- #if AFTER 12.1.0
 							{ "c", VOIDLIGHT_MARL, 500 },
 							-- #else
@@ -1254,11 +1254,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 						},
 					}),
 					i(265386, {	-- Fortified Amani Awning (DECOR!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", VOIDLIGHT_MARL, 250 } },
 					}),
 					i(263994, {	-- Fungal Chest (DECOR!)
-						["cost"] = {
+						cost = {
 							-- #if AFTER 12.1.0
 							{ "c", VOIDLIGHT_MARL, 500 },
 							-- #else
@@ -1267,7 +1267,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 						},
 					}),
 					i(264008, {	-- Root-Wrapped Reliquary (DECOR!)
-						["cost"] = {
+						cost = {
 							-- #if AFTER 12.1.0
 							{ "c", VOIDLIGHT_MARL, 500 },
 							-- #else
@@ -1276,7 +1276,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 						},
 					}),
 					i(263996, {	-- Twilight Tabernacle (DECOR!)
-						["cost"] = {
+						cost = {
 							-- #if AFTER 12.1.0
 							{ "c", VOIDLIGHT_MARL, 500 },
 							-- #else
@@ -1285,84 +1285,84 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 						},
 					}),
 					i(272360, {	-- Ula'tek Ritual Stone (DECOR!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", VOIDLIGHT_MARL, 250 } },
 					}),
 					i(265033, {	-- Zul'Aman Brazier Post (DECOR!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", VOIDLIGHT_MARL, 250 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", VOIDLIGHT_MARL, 250 } },
 					}),
 				}),
 				-- #if AFTER 12.1.0
 				filter(COSMETIC, {
 					i(262984, {	-- Reliquary Expedition Bag (COSMETIC!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 3250 } },
+						cost = { { "c", VOIDLIGHT_MARL, 3250 } },
 					}),
 					i(262989, {	-- Focusight Relic Mace (COSMETIC!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 3250 } },
+						cost = { { "c", VOIDLIGHT_MARL, 3250 } },
 					}),
 					i(262973, {	-- Reliquary Expedition Notes (COSMETIC!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 2600 } },
+						cost = { { "c", VOIDLIGHT_MARL, 2600 } },
 					}),
 					i(262990, {	-- Sin'dorei Arcane Manuscript (COSMETIC!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 2600 } },
+						cost = { { "c", VOIDLIGHT_MARL, 2600 } },
 					}),
 				}),
 				-- #endif
 				filter(MISC, {
 					i(276536, {	-- Corrosive Reticule
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", VOIDLIGHT_MARL, 10 } },
 					}),
 					i(275936, {	-- Delve-O-Bot 7001: Midnight Software Update Chip (CI!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", VOIDLIGHT_MARL, 10 } },
 					}),
 					i(286558, {	-- Delve-O-Bot 7001: The Labyrinth of Kindo'jan Software Update Chip (CI!)
-						["timeline"] = { ADDED_12_1_5 },
-						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+						timeline = { ADDED_12_1_5 },
+						cost = { { "c", VOIDLIGHT_MARL, 10 } },
 					}),
 					i(275986, {	-- Delver's Cosmetic Surprise Bag (CI!)
-						["timeline"] = { ADDED_12_1_0 },
+						timeline = { ADDED_12_1_0 },
 					}),
 					-- #if AFTER 12.1.0
 					i(262963, {	-- Pious Memorial (CI!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 2000 } },
+						cost = { { "c", VOIDLIGHT_MARL, 2000 } },
 					}),
 					-- #endif
 				}),
 				filter(MOUNTS, {
 					i(276162, {	-- Corroded Soul Crusher (MOUNT!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", VOIDLIGHT_MARL, 10 } },
 					}),
 				}),
 				filter(TOYS, {
 					-- #if AFTER 12.1.0
 					i(262431, {	-- Bouncy Mushroom (TOY!)
-						["cost"] = { { "c", VOIDLIGHT_MARL, 5000 } },
+						cost = { { "c", VOIDLIGHT_MARL, 5000 } },
 					}),
 					-- #endif
 					i(276189, {	-- Effigy of Dundun (TOY!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = { { "c", VOIDLIGHT_MARL, 10 } },
+						timeline = { ADDED_12_1_0 },
+						cost = { { "c", VOIDLIGHT_MARL, 10 } },
 					}),
 				}),
 			},
 		}),
 	}),
 	m(ATAL_AMAN, {
-		["icon"] = 7389674,
-		["coord"] = { 63.8, 80.3, MAP.MIDNIGHT.EVERSONG_WOODS },
-		["groups"] = {
+		icon = 7389674,
+		coord = { 63.8, 80.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(61863),	-- Atal'Aman Discoveries
 				ach(61729),	-- Atal'Aman Stories
 			}),
 			n(QUESTS, {
 				q(93409, {	-- Delver's Call: Atal'Aman
-					["provider"] = { "n", 254726 },	-- Fallen Amani Scout
-					["coords"] = {
+					provider = { "n", 254726 },	-- Fallen Amani Scout
+					coords = {
 						{ 24.9, 43.3, ATAL_AMAN },
 						{ 39.8, 38.4, MAP.MIDNIGHT.ZULAMAN },
 					},
@@ -1370,37 +1370,37 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(617852, {	-- Sturdy Chest
-					["coord"] = { 53.1, 57.9, ATAL_AMAN },
-					["questID"] = 94000,
+					coord = { 53.1, 57.9, ATAL_AMAN },
+					questID = 94000,
 				}),
 				o(618270, {	-- Sturdy Chest
-					["coord"] = { 48.3, 50.5, ATAL_AMAN },
-					["questID"] = 94014,
-					["groups"] = { i(252265) },	-- Hexed Potatoad Mucus (TOY!)
+					coord = { 48.3, 50.5, ATAL_AMAN },
+					questID = 94014,
+					groups = { i(252265) },	-- Hexed Potatoad Mucus (TOY!)
 				}),
 				o(618290, {	-- Sturdy Chest
-					["coord"] = { 53.1, 65.3, ATAL_AMAN },
-					["questID"] = 94038,
+					coord = { 53.1, 65.3, ATAL_AMAN },
+					questID = 94038,
 				}),
 			}),
 		},
 	}),
 	m(COLLEGIATE_CALAMITY, {
-		["icon"] = 7137586,
-		["coord"] = { 40.5, 53.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-		["maps"] = {
+		icon = 7137586,
+		coord = { 40.5, 53.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+		maps = {
 			2577,	-- Thalassian Library
 			2578,	-- Thalassian University
 		},
-		["groups"] = {
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(61894),	-- Collegiate Calamity Discoveries
 				ach(61726),	-- Collegiate Calamity Stories
 			}),
 			n(QUESTS, {
 				q(93384, {	-- Delver's Call: Collegiate Calamity
-					["provider"] = { "o", 612038 },	-- Agitated Tome
-					["coords"] = {
+					provider = { "o", 612038 },	-- Agitated Tome
+					coords = {
 						{ 41.6, 61.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 						{ 59.5, 60.1, 2577 },	-- Thalassian Library
 					},
@@ -1408,25 +1408,25 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(618274, {	-- Sturdy Chest
-					["coord"] = { 31.0, 12.5, COLLEGIATE_CALAMITY },
-					["questID"] = 94018,
+					coord = { 31.0, 12.5, COLLEGIATE_CALAMITY },
+					questID = 94018,
 				}),
 				o(618285, {	-- Sturdy Chest
-					["coord"] = { 81.3, 32.0, COLLEGIATE_CALAMITY },	-- TODO: could be off
-					["questID"] = 94029,
+					coord = { 81.3, 32.0, COLLEGIATE_CALAMITY },	-- TODO: could be off
+					questID = 94029,
 				}),
 				o(618286, {	-- Sturdy Chest
-					["coord"] = { 29.3, 54.7, COLLEGIATE_CALAMITY },
-					["questID"] = 94030,
+					coord = { 29.3, 54.7, COLLEGIATE_CALAMITY },
+					questID = 94030,
 				}),
 			}),
 		},
 	}),
 	m(GNARLDOR_ISLE, {
-		["icon"] = 2065590,
-		["coord"] = { 64.4, 77.8, MAP.MIDNIGHT.THE_COILED_ISLE },
-		["timeline"] = { ADDED_12_1_0 },
-		["groups"] = {
+		icon = 2065590,
+		coord = { 64.4, 77.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+		timeline = { ADDED_12_1_0 },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(63170),	-- Gnarldor Isle Discoveries
 				ach(63437),	-- Gnarldor Isle Stories
@@ -1445,33 +1445,33 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(655978, {	-- Sturdy Chest
-					["coord"] = { 60.4, 68.2, GNARLDOR_ISLE },
-					["questID"] = 96802,
-					["groups"] = { i(262496) },	-- Delver's Arcane Golem (MOUNT!)
+					coord = { 60.4, 68.2, GNARLDOR_ISLE },
+					questID = 96802,
+					groups = { i(262496) },	-- Delver's Arcane Golem (MOUNT!)
 				}),
 				o(655980, {	-- Sturdy Chest
-					["coord"] = { 52.4, 40.9, GNARLDOR_ISLE },
-					["questID"] = 96804,
+					coord = { 52.4, 40.9, GNARLDOR_ISLE },
+					questID = 96804,
 				}),
 				o(655981, {	-- Sturdy Chest
-					["coord"] = { 28.7, 41.7, GNARLDOR_ISLE },
-					["questID"] = 96805,
+					coord = { 28.7, 41.7, GNARLDOR_ISLE },
+					questID = 96805,
 				}),
 			}),
 		},
 	}),
 	m(PARHELION_PLAZA, {
-		["icon"] = 252996,
-		["coord"] = { 47.5, 41.4, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
-		["groups"] = {
+		icon = 252996,
+		coord = { 47.5, 41.4, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(61893),	-- Parhelion Plaza Discoveries
 				ach(61725),	-- Parhelion Plaza Stories
 			}),
 			n(QUESTS, {
 				q(93386, {	-- Delver's Call: Parhelion Plaza
-					["provider"] = { "o", 612894 },	-- Parhelion Plaza
-					["coords"] = {
+					provider = { "o", 612894 },	-- Parhelion Plaza
+					coords = {
 						{ 52.3, 77.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 						{ 74.5, 28.0, PARHELION_PLAZA },
 					},
@@ -1479,90 +1479,90 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(618275, {	-- Sturdy Chest
-					["coord"] = { 9.7, 50.3, PARHELION_PLAZA },
-					["questID"] = 94019,
+					coord = { 9.7, 50.3, PARHELION_PLAZA },
+					questID = 94019,
 				}),
 				o(618113, {	-- Sturdy Chest
-					["coord"] = { 23.4, 59.3, PARHELION_PLAZA },
-					["questID"] = 94015,
-					["groups"] = { i(262964) },	-- Death's Hope (CI!)
+					coord = { 23.4, 59.3, PARHELION_PLAZA },
+					questID = 94015,
+					groups = { i(262964) },	-- Death's Hope (CI!)
 				}),
 				o(618287, {	-- Sturdy Chest
-					["coord"] = { 40.9, 86.8, PARHELION_PLAZA },
-					["questID"] = 94033,
+					coord = { 40.9, 86.8, PARHELION_PLAZA },
+					questID = 94033,
 				}),
 			}),
 		},
 	}),
 	m(SHADOWGUARD_POINT, {
-		["icon"] = 6999168,
-		["coord"] = { 37.3, 48.3, MAP.MIDNIGHT.VOIDSTORM },
-		["groups"] = {
+		icon = 6999168,
+		coord = { 37.3, 48.3, MAP.MIDNIGHT.VOIDSTORM },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(61900),	-- Shadowguard Point Discoveries
 				ach(61733),	-- Shadowguard Point Stories
 			}),
 			n(QUESTS, {
 				q(93428, {	-- Delver's Call: Shadowguard Point
-					["provider"] = { "o", 612364 },	-- Shadowguard Point (TODO: missing open world objectID)
-					["coords"] = {
+					provider = { "o", 612364 },	-- Shadowguard Point (TODO: missing open world objectID)
+					coords = {
 						{ 47.6, 79.3, SHADOWGUARD_POINT },
 						{ 37.6, 51.9, MAP.MIDNIGHT.VOIDSTORM },
 					},
 				}),
 				filter(MISC, {
 					o(570235, {	-- Worm Bait
-						["coord"] = { 51.5, 56.9, SHADOWGUARD_POINT },
-						["groups"] = { i(250096) },	-- Worm Bait (QI!)
+						coord = { 51.5, 56.9, SHADOWGUARD_POINT },
+						groups = { i(250096) },	-- Worm Bait (QI!)
 					}),
 				}),
 			}),
 			n(TREASURES, {
 				o(618273, {	-- Sturdy Chest
-					["coord"] = { 41.8, 53.7, SHADOWGUARD_POINT },
-					["questID"] = 94017,
-					["groups"] = {
+					coord = { 41.8, 53.7, SHADOWGUARD_POINT },
+					questID = 94017,
+					groups = {
 						i(245526),	-- Bloodmarked Phasebound Visor (COSMETIC!)
 					},
 				}),
 				o(618281, {	-- Sturdy Chest
-					["coord"] = { 58.2, 41.5, SHADOWGUARD_POINT },
-					["questID"] = 94025,
+					coord = { 58.2, 41.5, SHADOWGUARD_POINT },
+					questID = 94025,
 				}),
 				o(618295, {	-- Sturdy Chest
-					["coord"] = { 58.6, 60.4, SHADOWGUARD_POINT },
-					["questID"] = 94044,
+					coord = { 58.6, 60.4, SHADOWGUARD_POINT },
+					questID = 94044,
 				}),
 			}),
 		},
 	}),
 	m(SUNKILLER_SANCTUM, {
-		["icon"] = 7137506,
-		["coord"] = { 54.8, 47.0, MAP.MIDNIGHT.VOIDSTORM },
-		["maps"] = { 2571 },	-- Lower Sanctum
-		["groups"] = {
+		icon = 7137506,
+		coord = { 54.8, 47.0, MAP.MIDNIGHT.VOIDSTORM },
+		maps = { 2571 },	-- Lower Sanctum
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(61899),	-- Sunkiller Sanctum Discoveries
 				ach(61732),	-- Sunkiller Sanctum Stories
 			}),
 			n(FLIGHT_PATHS, {
 				fp(3169, {	-- Base Node
-					--["coord"] = {},	-- TODO: Add coord
+					--coord = {},	-- TODO: Add coord
 				}),
 				fp(3172, {	-- Exposed Vein
-					--["coord"] = {},	-- TODO: Add coord
+					--coord = {},	-- TODO: Add coord
 				}),
 				fp(3173, {	-- Focal Point
-					--["coord"] = {},	-- TODO: Add coord
+					--coord = {},	-- TODO: Add coord
 				}),
 				fp(3174, {	-- Forge of Secrets
-					--["coord"] = {},	-- TODO: Add coord
+					--coord = {},	-- TODO: Add coord
 				}),
 			}),
 			n(QUESTS, {
 				q(93427, {	-- Delver's Call: Sunkiller Sanctum
-					["provider"] = { "o", 612354 },	-- Sunkiller Sanctum
-					["coords"] = {
+					provider = { "o", 612354 },	-- Sunkiller Sanctum
+					coords = {
 						{ 42.7, 70.8, MAP.MIDNIGHT.VOIDSTORM },
 						{ 63.4, 34.8, SUNKILLER_SANCTUM },
 					},
@@ -1570,32 +1570,32 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(618280, {	-- Sturdy Chest
-					["coord"] = { 60.1, 40.8, 2571 },
-					["questID"] = 94024,
+					coord = { 60.1, 40.8, 2571 },
+					questID = 94024,
 				}),
 				o(618294, {	-- Sturdy Chest
-					["coord"] = { 49.7, 50.6, 2571 },
-					["questID"] = 94043,
+					coord = { 49.7, 50.6, 2571 },
+					questID = 94043,
 				}),
 				o(618293, {	-- Sturdy Chest
-					["coord"] = { 38.1, 49.0, SUNKILLER_SANCTUM },
-					["questID"] = 94042,
+					coord = { 38.1, 49.0, SUNKILLER_SANCTUM },
+					questID = 94042,
 				}),
 			}),
 		},
 	}),
 	m(THE_DARKWAY, {
-		["icon"] = 132299,
-		["coord"] = { 39.3, 31.7, MAP.MIDNIGHT.SILVERMOON_CITY },
-		["groups"] = {
+		icon = 132299,
+		coord = { 39.3, 31.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(61895),	-- The Darkway Discoveries
 				ach(61728),	-- The Darkway Stories
 			}),
 			n(QUESTS, {
 				q(93385, {	-- Delver's Call: The Darkway
-					["provider"] = { "o", 612039 },	-- The Darkway
-					["coords"] = {
+					provider = { "o", 612039 },	-- The Darkway
+					coords = {
 						{ 52.1, 78.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 						{ 49.1, 18.6, THE_DARKWAY },
 					},
@@ -1603,33 +1603,33 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(618283, {	-- Sturdy Chest
-					["coord"] = { 53.0, 43.1, THE_DARKWAY },
-					["questID"] = 94026,
+					coord = { 53.0, 43.1, THE_DARKWAY },
+					questID = 94026,
 				}),
 				o(618284, {	-- Sturdy Chest
-					["coord"] = { 41.6, 48.2, THE_DARKWAY },
-					["questID"] = 94027,
+					coord = { 41.6, 48.2, THE_DARKWAY },
+					questID = 94027,
 				}),
 				o(618296, {	-- Sturdy Chest
-					["coord"] = { 45.6, 45.4, THE_DARKWAY },
-					["questID"] = 94045,
+					coord = { 45.6, 45.4, THE_DARKWAY },
+					questID = 94045,
 				}),
 			}),
 		},
 	}),
 	m(THE_GULF_OF_MEMORY, {
-		["icon"] = 7355375,
-		["coord"] = { 36.6, 49.1, MAP.MIDNIGHT.HARANDAR },
-		["maps"] = { 2575 },	-- Lower Rootway
-		["groups"] = {
+		icon = 7355375,
+		coord = { 36.6, 49.1, MAP.MIDNIGHT.HARANDAR },
+		maps = { 2575 },	-- Lower Rootway
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(61898),	-- The Gulf of Memory Discoveries
 				ach(61731),	-- The Gulf of Memory Stories
 			}),
 			n(QUESTS, {
 				q(93416, {	-- Delver's Call: The Gulf of Memory
-					["provider"] = { "o", 612259 },	-- The Gulf of Memory
-					["coords"] = {
+					provider = { "o", 612259 },	-- The Gulf of Memory
+					coords = {
 						{ 50.8, 17.8, THE_GULF_OF_MEMORY },
 						{ 51.3, 16.6, THE_GULF_OF_MEMORY },
 						{ 52.9, 51.7, MAP.MIDNIGHT.HARANDAR },
@@ -1638,30 +1638,30 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(618278, {	-- Sturdy Chest
-					["coord"] = { 54.3, 25.2, THE_GULF_OF_MEMORY },
-					["questID"] = 94023,
+					coord = { 54.3, 25.2, THE_GULF_OF_MEMORY },
+					questID = 94023,
 				}),
 				o(618292, {	-- Sturdy Chest
-					["coord"] = { 55.5, 26.2, THE_GULF_OF_MEMORY },
-					["questID"] = 94041,
+					coord = { 55.5, 26.2, THE_GULF_OF_MEMORY },
+					questID = 94041,
 				}),
 				o(618272, {	-- Sturdy Chest
-					["coord"] = { 39.8, 26.6, THE_GULF_OF_MEMORY },
-					["questID"] = 94016,
-					["groups"] = { i(264805) },	-- Brann-O-Vision 3000 (TOY!)
+					coord = { 39.8, 26.6, THE_GULF_OF_MEMORY },
+					questID = 94016,
+					groups = { i(264805) },	-- Brann-O-Vision 3000 (TOY!)
 				}),
 			}),
 			n(ZONE_DROPS, {
 				i(255826, {	-- Mysterious Skyshards
-					["sourceQuest"] = 90474,	-- The Legend of Aln'sharan
+					sourceQuest = 90474,	-- The Legend of Aln'sharan
 				}),
 			}),
 		},
 	}),
 	m(THE_GRUDGE_PIT, {
-		["icon"] = 5789324,
-		["coord"] = { 71.0, 65.6, MAP.MIDNIGHT.HARANDAR },
-		["groups"] = {
+		icon = 5789324,
+		coord = { 71.0, 65.6, MAP.MIDNIGHT.HARANDAR },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(61897),	-- The Grudge Pit Discoveries
 				ach(61724),	-- The Grudge Pit Stories
@@ -1675,8 +1675,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			n(QUESTS, {
 				q(93421, {	-- Delver's Call: The Grudge Pit
-					["provider"] = { "o", 612264 },	-- The Grudge Pit
-					["coords"] = {
+					provider = { "o", 612264 },	-- The Grudge Pit
+					coords = {
 						{ 39.2, 42.9, THE_GRUDGE_PIT },
 						{ 71.2, 52.1, MAP.MIDNIGHT.HARANDAR },
 					},
@@ -1684,62 +1684,62 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(618291, {	-- Sturdy Chest
-					["coord"] = { 37.6, 27.6, THE_GRUDGE_PIT },
-					["questID"] = 94039,
+					coord = { 37.6, 27.6, THE_GRUDGE_PIT },
+					questID = 94039,
 				}),
 				o(618279, {	-- Sturdy Chest
-					["coord"] = { 69.9, 31.6, THE_GRUDGE_PIT },
-					["questID"] = 94022,
+					coord = { 69.9, 31.6, THE_GRUDGE_PIT },
+					questID = 94022,
 				}),
 				o(618277, {	-- Sturdy Chest
-					["coord"] = { 67.6, 59.5, THE_GRUDGE_PIT },
-					["questID"] = 94021,
+					coord = { 67.6, 59.5, THE_GRUDGE_PIT },
+					questID = 94021,
 				}),
 			}),
 			n(ZONE_DROPS, {
 				i(255826, {	-- Mysterious Skyshards
-					["sourceQuest"] = 90474,	-- The Legend of Aln'sharan
+					sourceQuest = 90474,	-- The Legend of Aln'sharan
 				}),
 			}),
 		},
 	}),
 	m(THE_RING_OF_GLORY, {
-		["icon"] = 7876617,
-		["coord"] = { 71.2, 56.5, MAP.MIDNIGHT.THE_COILED_ISLE },
-		["timeline"] = { ADDED_12_1_0 },
-		["groups"] = {
+		icon = 7876617,
+		coord = { 71.2, 56.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+		timeline = { ADDED_12_1_0 },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(63171),	-- The Ring of Glory Discoveries
 				ach(63436),	-- The Ring of Glory Stories
 			}),
 			n(TREASURES, {
 				o(655979, {	-- Sturdy Chest
-					["coord"] = { 25.2, 73.7, THE_RING_OF_GLORY },
-					["questID"] = 96803,
+					coord = { 25.2, 73.7, THE_RING_OF_GLORY },
+					questID = 96803,
 				}),
 				o(655982, {	-- Sturdy Chest
-					["coord"] = { 48.6, 94.9, THE_RING_OF_GLORY },
-					["questID"] = 96806,
+					coord = { 48.6, 94.9, THE_RING_OF_GLORY },
+					questID = 96806,
 				}),
 				o(655983, {	-- Sturdy Chest
-					["coord"] = { 44.1, 22.7, THE_RING_OF_GLORY },
-					["questID"] = 96807,
+					coord = { 44.1, 22.7, THE_RING_OF_GLORY },
+					questID = 96807,
 				}),
 			}),
 		},
 	}),
 	m(THE_SHADOW_ENCLAVE, {
-		["icon"] = 132291,
-		["coord"] = { 45.4, 85.9, MAP.MIDNIGHT.EVERSONG_WOODS },
-		["groups"] = {
+		icon = 132291,
+		coord = { 45.4, 85.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(61892),	-- The Shadow Enclave Discoveries
 				ach(61727),	-- The Shadow Enclave Stories
 			}),
 			n(QUESTS, {
 				q(93372, {	-- Delver's Call: Shadow Enclave
-					["provider"] = { "o", 611933 },	-- The Shadow Enclave
-					["coords"] = {
+					provider = { "o", 611933 },	-- The Shadow Enclave
+					coords = {
 						{ 29.2, 73.6, THE_SHADOW_ENCLAVE },
 						{ 50.8, 40.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 					},
@@ -1760,54 +1760,54 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 			}),
 			n(TREASURES, {
 				o(618111, {	-- Sturdy Chest
-					["coord"] = { 54.7, 48.5, THE_SHADOW_ENCLAVE },
-					["questID"] = 94002,
+					coord = { 54.7, 48.5, THE_SHADOW_ENCLAVE },
+					questID = 94002,
 				}),
 				o(617855, {	-- Sturdy Chest
-					["coord"] = { 54.7, 85.0, THE_SHADOW_ENCLAVE },
-					["questID"] = 94001,
+					coord = { 54.7, 85.0, THE_SHADOW_ENCLAVE },
+					questID = 94001,
 				}),
 				o(618112, {	-- Sturdy Chest
-					["coord"] = { 56.0, 34.6, THE_SHADOW_ENCLAVE },
-					["questID"] = 94028,
+					coord = { 56.0, 34.6, THE_SHADOW_ENCLAVE },
+					questID = 94028,
 				}),
 			}),
 		},
 	}),
 	m(TWILIGHT_CRYPTS, {
-		["icon"] = 1373907,
-		["coord"] = { 25.4, 84.0, MAP.MIDNIGHT.ZULAMAN },
-		["maps"] = { 2504 },	-- Twilight Crypts
-		["groups"] = {
+		icon = 1373907,
+		coord = { 25.4, 84.0, MAP.MIDNIGHT.ZULAMAN },
+		maps = { 2504 },	-- Twilight Crypts
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(61896),	-- Twilight Crypts Discoveries
 				ach(61730),	-- Twilight Crypts Stories
 			}),
 			n(QUESTS, {
 				q(93410, {	-- Delver's Call: Twilight Crypts
-					["provider"] = { "o", 612242 },	-- Twilight Crypts
-					["coords"] = {
+					provider = { "o", 612242 },	-- Twilight Crypts
+					coords = {
 						{ 47.2, 39.6, TWILIGHT_CRYPTS },
 						{ 48.2, 38.1, TWILIGHT_CRYPTS },
 						{ 43.7, 67.3, MAP.MIDNIGHT.ZULAMAN },
 					},
 				}),
 				q(94909, {	-- Blessings of Pestilence (TODO: unsure if it exist only here)
-					["qs"] = 266438,	-- Idol of Pestilence (QS!)
+					qs = 266438,	-- Idol of Pestilence (QS!)
 				}),
 			}),
 			n(TREASURES, {
 				o(618289, {	-- Sturdy Chest
-					["coord"] = { 46.9, 49.9, 2504 },
-					["questID"] = 94037,
+					coord = { 46.9, 49.9, 2504 },
+					questID = 94037,
 				}),
 				o(618276, {	-- Sturdy Chest
-					["coord"] = { 57.5, 84.5, 2504 },
-					["questID"] = 94020,
+					coord = { 57.5, 84.5, 2504 },
+					questID = 94020,
 				}),
 				o(618288, {	-- Sturdy Chest
-					["coord"] = { 21.7, 36.2, 2504 },
-					["questID"] = 94034,
+					coord = { 21.7, 36.2, 2504 },
+					questID = 94034,
 				}),
 			}),
 			n(REWARDS, {
@@ -1818,9 +1818,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ ["timeline"] = { ADDE
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	n(DELVES, bubbleDownFiltered({ ["timeline"] = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_questID,{
+	n(DELVES, bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_questID,{
 		n(BOUNTIFUL, sharedData({
-			["isDaily"] = true,
+			isDaily = true,
 		}, {
 			q(91188, name(HEADERS.Map, ATAL_AMAN)),	-- Atal'Aman
 			q(91186, name(HEADERS.Map, COLLEGIATE_CALAMITY)),	-- Collegiate Calamity
@@ -1840,9 +1840,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	n(DELVES, bubbleDownFiltered({ ["timeline"] = { ADDED_12_1_0 } },FILTERFUNC_questID,{
+	n(DELVES, bubbleDownFiltered({ timeline = { ADDED_12_1_0 } },FILTERFUNC_questID,{
 		n(BOUNTIFUL, sharedData({
-			["isDaily"] = true,
+			isDaily = true,
 		}, {
 			q(95715, name(HEADERS.Map, GNARLDOR_ISLE)),	-- Gnarldor Isle
 			q(95716, name(HEADERS.Map, THE_RING_OF_GLORY)),	-- The Ring of Glory

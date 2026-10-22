@@ -5,7 +5,7 @@
 root(ROOTS.NeverImplemented, n(DECOR, {
 	expansion(EXPANSION.TWW, {
 		-- 11.2.7
-		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
 			i(238862),	-- [DNT] Cenarion Round Rug - do not use - new asset (DECOR!)
 			i(248941),	-- [DNT] Dreadscar Battle Planning Map - do not use - new asset (DECOR!)
 			i(247743),	-- [DNT] Hanging Paper Lanterns - do not use - duplicate (DECOR!)
@@ -236,7 +236,7 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
 			i(264270),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Ritual_Tome_Bloodknight01_Open.m2 (DECOR!)
 			i(259217),	-- Ambient Aethercharged Crystal (DECOR!)
 			i(250869),	-- Crimson Crystal Core (DECOR!)
@@ -595,7 +595,7 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 		})),
 
 		-- 12.0.1
-		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_1 } }, {
+		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ timeline = { CREATED_12_0_1 } }, {
 			i(259354),	-- Brown Paper Sack (DECOR!)
 			i(265031),	-- Consortium Translocation Portal (DECOR!)
 			i(253497),	-- Embroidered Sunfury Chair (DECOR!)
@@ -610,7 +610,7 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 		})),
 
 		-- 12.0.5
-		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
+		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ timeline = { CREATED_12_0_5 } }, {
 			i(245301),	-- Algari Lettuce Plant (DECOR!)
 			i(271163),	-- Blazing Guardian's Rug (DECOR!)
 			i(271173),	-- Blazing Guardian's Table (DECOR!)

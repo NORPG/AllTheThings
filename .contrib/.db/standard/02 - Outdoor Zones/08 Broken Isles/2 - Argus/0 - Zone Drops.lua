@@ -7,8 +7,8 @@ root(ROOTS.Zones, {
 		m(ARGUS, {
 			n(ZONE_DROPS, {
 				i(153191, {-- Cracked Fel-Spotted Egg
-					["provider"] = { "i", 153190 },	-- Fel-Spotted Egg
-					["groups"] = {
+					provider = { "i", 153190 },	-- Fel-Spotted Egg
+					groups = {
 						i(152843),	-- Darkspore Mana Ray (MOUNT!)
 						i(152841),	-- Felglow Mana Ray (MOUNT!)
 						i(152840),	-- Scintillating Mana Ray (MOUNT!)

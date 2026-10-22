@@ -52,12 +52,12 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, BossWithHeader =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.BossWithHeader
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	inst(559, {	-- Upper Blackrock Spire
-		["coord"] = { 78.94, 33.62, BLACKROCK_MOUNTAIN },
-		["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },
-		["lvl"] = 100,
-		["groups"] = {
+		coord = { 78.94, 33.62, BLACKROCK_MOUNTAIN },
+		maps = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },
+		lvl = 100,
+		groups = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(OREBENDER, {
 					i(118719),	-- Petrified Willow
@@ -83,34 +83,34 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(118739),	-- Draconian Doomshield
 					i(110013),	-- Emberscale Talisman
 					i(245435, {	-- Horde Battle Emblem (DECOR!)
-						["timeline"] = { ADDED_11_2_7 },
+						timeline = { ADDED_11_2_7 },
 					}),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC).AddGroups({
 				Boss(OREBENDER, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[OREBENDER])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[OREBENDER])),
 				}),
 				Boss(KYRAK, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[KYRAK])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[KYRAK])),
 				}),
 				Boss(THARBECK, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[THARBECK])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[THARBECK])),
 				}),
 				n(77927, {	-- Son of the Beast
 					i(120340),	-- Son of the Beast's Bloody Paw
 				}),
 				Boss(RAGEWING, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[RAGEWING])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[RAGEWING])),
 				}),
 				Boss(ZAELA, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[ZAELA])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[ZAELA])),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 				BossWithHeader(OREBENDER, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[OREBENDER])),
-					["groups"] = {
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[OREBENDER])),
+					groups = {
 						-- [Only available during pre WoD level 90 version]
 						un(REMOVED_FROM_GAME, i(118743)),	-- Band of Desolation
 						un(REMOVED_FROM_GAME, i(118742)),	-- Burning Band
@@ -121,8 +121,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				BossWithHeader(KYRAK, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[KYRAK])),
-					["groups"] = {
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[KYRAK])),
+					groups = {
 						-- [Only available during pre WoD level 90 version]
 						un(REMOVED_FROM_GAME, i(118748)),	-- Fallbrush Gauntlets
 						un(REMOVED_FROM_GAME, i(118756)),	-- Pip's Shanker
@@ -132,8 +132,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				BossWithHeader(THARBECK, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[THARBECK])),
-					["groups"] = {
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[THARBECK])),
+					groups = {
 						-- [Only available during pre WoD level 90 version]
 						un(REMOVED_FROM_GAME, i(118752)),	-- Bloodmoon Tunic
 						un(REMOVED_FROM_GAME, i(118751)),	-- Nightbrace Chestguard
@@ -149,15 +149,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					}),
 				}),
 				BossWithHeader(RAGEWING, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[RAGEWING])),
-					["groups"] = {
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[RAGEWING])),
+					groups = {
 						-- [Only available during pre WoD level 90 version]
 						-- No items?
 					},
 				}),
 				BossWithHeader(ZAELA, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[ZAELA])),
-					["groups"] = {
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[ZAELA])),
+					groups = {
 						-- [Only available during pre WoD level 90 version]
 						-- No items?
 					},
@@ -166,11 +166,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
 				n(ACHIEVEMENTS, {
 					ach(9058, {	-- Leeeeeeeeeeeeeroy...?
-						["crs"] = { 77075 },	-- Leeroy Jenkins
-						["groups"] = {
+						crs = { 77075 },	-- Leeroy Jenkins
+						groups = {
 							follower(178),	-- Leeroy Jenkins
 							title(110, {	-- Jenkins
-								["style"] = 2,
+								style = 2,
 							}),
 						},
 					}),
@@ -181,8 +181,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(KYRAK, {
 				}),
 				n(77081, {	-- The Lanticore
-					["description"] = "This rare spawns to the right of Kyrak, the second boss.",
-					["groups"] = {
+					description = "This rare spawns to the right of Kyrak, the second boss.",
+					groups = {
 						i(117528),	-- Lanticore Spawnling (PET!)
 					},
 				}),
@@ -193,7 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				BossOnly(ZAELA, {
 					ach(9057, {	-- Dragonmaw? More Like Dragonfall!
-						["crs"] = { 82428 },	-- Emberscale Ironflight
+						crs = { 82428 },	-- Emberscale Ironflight
 					}),
 					ach(9055),	-- Heroic: Upper Blackrock Spire
 					ach(9376),	-- Heroic: Upper Blackrock Spire Guild Run
@@ -201,22 +201,22 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
 				Boss(OREBENDER, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[OREBENDER])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[OREBENDER])),
 				}),
 				Boss(KYRAK, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[KYRAK])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[KYRAK])),
 				}),
 				Boss(THARBECK, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[THARBECK])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[THARBECK])),
 				}),
 				n(77927, {	-- Son of the Beast
 					i(120340),	-- Son of the Beast's Bloody Paw
 				}),
 				Boss(RAGEWING, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[RAGEWING])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[RAGEWING])),
 				}),
 				Boss(ZAELA, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[ZAELA])),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[ZAELA])),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
@@ -232,7 +232,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(559, {
 		q(36865),	-- UBRS Event Dungeon Reward Quest
 		q(34554),	-- Upper Blackrock Spire Challenge Mode - Bronze Addition (Nth)

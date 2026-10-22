@@ -4,13 +4,13 @@
 
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(275, {	-- Battle for Gilneas
-		["icon"] = 462671,
-		["timeline"] = { ADDED_4_0_3_LAUNCH },
-		["groups"] = {
+		icon = 462671,
+		timeline = { ADDED_4_0_3_LAUNCH },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(5258, {	-- Master of the Battle for Gilneas
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						5246,	-- Battle for Gilneas Veteran
 						5247,	-- Battle for Gilneas Perfection
 						5248,	-- Bustin' Caps to Make It Haps
@@ -27,15 +27,15 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					}},
 				}),
 				ach(5245, {	-- Battle for Gilneas Victory
-					["rank"] = 1,
-					["groups"] = {
+					rank = 1,
+					groups = {
 						i(256896, {	-- Smoke Lamppost (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
+							timeline = { ADDED_11_2_7 },
 						}),
 					},
 				}),
 				ach(5246, {	-- Battle for Gilneas Veteran
-					["rank"] = 100,
+					rank = 100,
 				}),
 				ach(5247),	-- Battle for Gilneas Perfection
 				ach(5248),	-- Bustin' Caps to Make It Haps

@@ -8,9 +8,9 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(ARGUS, {
 			m(THE_VINDICAAR_ANTORAN_WASTES_UPPER, {
-				["icon"] = 1586383,
-				["lore"] = "For untold millennia, the Army of the Light waged war against the Burning Legion throughout the Twisting Nether. The draenei most committed to their long crusade would undergo a ritual to become Lightforged, infusing their bodies with the very essence of the Holy Light. After finally achieving victory on Argus, the Lightforged draenei have undertaken a new mission: protecting Azeroth from rising threats and helping the Alliance push back against Horde aggression.",
-				["maps"] = {
+				icon = 1586383,
+				lore = "For untold millennia, the Army of the Light waged war against the Burning Legion throughout the Twisting Nether. The draenei most committed to their long crusade would undergo a ritual to become Lightforged, infusing their bodies with the very essence of the Holy Light. After finally achieving victory on Argus, the Lightforged draenei have undertaken a new mission: protecting Azeroth from rising threats and helping the Alliance push back against Horde aggression.",
+				maps = {
 					THE_VINDICAAR_KROKUUN_UPPER,
 					THE_VINDICAAR_KROKUUN_LOWER,
 					THE_VINDICAAR_EREDATH_UPPER,
@@ -21,15 +21,15 @@ root(ROOTS.Zones, {
 					940,	-- Upper Deck [The Vindicaar: LFD]
 					941,	-- Lower Deck [The Vindicaar: LFD]
 				},
-				["isRaid"] = true,
-				["groups"] = {
+				isRaid = true,
+				groups = {
 					n(EMISSARY_QUESTS, {
 						q(48642, {	-- Argussian Reach
-							["provider"] = { "n", 127151 },	-- Toraan the Revered
-							["isWorldQuest"] = true,
-							["groups"] = {
+							provider = { "n", 127151 },	-- Toraan the Revered
+							isWorldQuest = true,
+							groups = {
 								i(157831, {	-- Scuffed Krokul Cache
-									["sym"] = {{"select","itemID",
+									sym = {{"select","itemID",
 										152740,	-- Unsullied Cloak
 										152738,	-- Unsullied Cloth Cap
 										152734,	-- Unsullied Cloth Mantle
@@ -70,25 +70,25 @@ root(ROOTS.Zones, {
 									}},
 								}),
 								i(152650, {	-- Scuffed Krokul Cache
-									["u"] = REMOVED_FROM_GAME,
-									["sym"] = {{"select","itemID",
+									u = REMOVED_FROM_GAME,
+									sym = {{"select","itemID",
 										157831,	-- Scuffed Krokul Cache
 									}},
 								}),
 								i(154911, {	-- Scuffed Krokul Cache
-									["u"] = REMOVED_FROM_GAME,
-									["sym"] = {{"select","itemID",
+									u = REMOVED_FROM_GAME,
+									sym = {{"select","itemID",
 										157831,	-- Scuffed Krokul Cache
 									}},
 								}),
 							},
 						}),
 						q(48639, {	-- Army of the Light
-							["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
-							["isWorldQuest"] = true,
-							["groups"] = {
+							provider = { "n", 127120 },	-- Vindicator Jaelaana
+							isWorldQuest = true,
+							groups = {
 								i(157829, {	-- Gilded Trunk
-									["sym"] = {{"select","itemID",
+									sym = {{"select","itemID",
 										152740,	-- Unsullied Cloak
 										152738,	-- Unsullied Cloth Cap
 										152734,	-- Unsullied Cloth Mantle
@@ -129,32 +129,32 @@ root(ROOTS.Zones, {
 									}},
 								}),
 								i(154912, {	-- Gilded Trunk
-									["u"] = REMOVED_FROM_GAME,
-									["sym"] = {{"select","itemID",
+									u = REMOVED_FROM_GAME,
+									sym = {{"select","itemID",
 										157829,	-- Gilded Trunk
 									}},
 								}),
 								i(152652, {	-- Gilded Trunk
-									["u"] = REMOVED_FROM_GAME,
-									["sym"] = {{"select","itemID",
+									u = REMOVED_FROM_GAME,
+									sym = {{"select","itemID",
 										157829,	-- Gilded Trunk
 									}},
 								}),
 							},
 						}),
-						q(48976, bubbleDownSelf({ ["minReputation"] = { FACTION_ARGUSSIAN_REACH, EXALTED }}, {	-- Supplies From the Argussian Reach
-							["provider"] = { "n", 127151 },	-- Toraan the Revered
-							["repeatable"] = true,
-							["groups"] = {
+						q(48976, bubbleDownSelf({ minReputation = { FACTION_ARGUSSIAN_REACH, EXALTED }}, {	-- Supplies From the Argussian Reach
+							provider = { "n", 127151 },	-- Toraan the Revered
+							repeatable = true,
+							groups = {
 								i(152922, {	-- Brittle Krokul Chest
 									i(153127),	-- Cube of Discovery
 								}),
 							},
 						})),
-						q(48977, bubbleDownSelf({ ["minReputation"] = { FACTION_ARMY_OF_THE_LIGHT, EXALTED }}, {	-- Supplies From the Army of the Light
-							["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
-							["repeatable"] = true,
-							["groups"] = {
+						q(48977, bubbleDownSelf({ minReputation = { FACTION_ARMY_OF_THE_LIGHT, EXALTED }}, {	-- Supplies From the Army of the Light
+							provider = { "n", 127120 },	-- Vindicator Jaelaana
+							repeatable = true,
+							groups = {
 								i(152923, {	-- Gleaming Footlocker
 									i(153044),	-- Avenging Felcrusher (MOUNT!)
 									i(153043),	-- Blessed Felcrusher (MOUNT!)
@@ -166,155 +166,155 @@ root(ROOTS.Zones, {
 					}),
 					n(FLIGHT_PATHS, {
 						fp(1994, {	-- Vindicaar, Antoran Wastes
-							["creatureID"] = 125514,	-- Navigation Console
-							["coord"] = { 32.3, 56.4, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
+							creatureID = 125514,	-- Navigation Console
+							coord = { 32.3, 56.4, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
 						}),
 						fp(1944, {	-- Vindicaar, Krokuun
-							["creatureID"] = 123139,	-- Navigation Console
-							["coord"] = { 42.5, 22.8, THE_VINDICAAR_KROKUUN_UPPER },
+							creatureID = 123139,	-- Navigation Console
+							coord = { 42.5, 22.8, THE_VINDICAAR_KROKUUN_UPPER },
 						}),
 						fp(1977, {	-- Vindicaar, Eredath
-							["creatureID"] = 125461,	-- Navigation Console
-							["coord"] = { 62.7, 49.1, THE_VINDICAAR_EREDATH_UPPER },
+							creatureID = 125461,	-- Navigation Console
+							coord = { 62.7, 49.1, THE_VINDICAAR_EREDATH_UPPER },
 						}),
 					}),
 					n(QUESTS, {
 						q(48081, {	-- A Floating Ruin
-							["sourceQuests"] = { 47994 },	-- Forming a Bond
-							["provider"] = { "n", 126307 },	-- Prophet Velen
-							["coord"] = { 41.3, 24.9, THE_VINDICAAR_KROKUUN_UPPER },
+							sourceQuests = { 47994 },	-- Forming a Bond
+							provider = { "n", 126307 },	-- Prophet Velen
+							coord = { 41.3, 24.9, THE_VINDICAAR_KROKUUN_UPPER },
 						}),
 						q(46938, {	-- Alone in the Abyss
-							["sourceQuests"] = { 48440 },	-- Into the Night
-							["provider"] = { "n", 126307 },	-- Prophet Velen
-							["coord"] = { 41.1, 24.3, THE_VINDICAAR_KROKUUN_UPPER },
-							["lvl"] = 110,
+							sourceQuests = { 48440 },	-- Into the Night
+							provider = { "n", 126307 },	-- Prophet Velen
+							coord = { 41.1, 24.3, THE_VINDICAAR_KROKUUN_UPPER },
+							lvl = 110,
 						}),
 						q(48500, {	-- A Moment of Respite
-							["sourceQuests"] = { 46843 },	-- Return to the Vindicaar
-							["provider"] = { "n", 126307 },	-- Prophet Velen
-							["coord"] = { 40.9, 24.7, THE_VINDICAAR_KROKUUN_UPPER },
+							sourceQuests = { 46843 },	-- Return to the Vindicaar
+							provider = { "n", 126307 },	-- Prophet Velen
+							coord = { 40.9, 24.7, THE_VINDICAAR_KROKUUN_UPPER },
 						}),
 						q(48559, {	-- An Offering of Light
-							["sourceQuests"] = { 49143 },	-- Essence of the Light Mother
-							["provider"] = { "n", 126307 },	-- Prophet Velen
-							["coord"] = { 46.0, 36.7, THE_VINDICAAR_KROKUUN_UPPER },
-							["qi"] = 152593,	-- Essence of Light (QI!)
+							sourceQuests = { 49143 },	-- Essence of the Light Mother
+							provider = { "n", 126307 },	-- Prophet Velen
+							coord = { 46.0, 36.7, THE_VINDICAAR_KROKUUN_UPPER },
+							qi = 152593,	-- Essence of Light (QI!)
 						}),
 						q(48560, {	-- An Offering of Shadow
-							["sourceQuests"] = { 47220 },	-- A Beacon in the Dark
-							["qgs"] = {
+							sourceQuests = { 47220 },	-- A Beacon in the Dark
+							qgs = {
 								120533,	-- Prophet Velen
 								128722,	-- Prophet Velen
 							},
-							["coords"] = {
+							coords = {
 								{ 40.7, 24.2, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 46.6, 23.1, THE_VINDICAAR_EREDATH_UPPER },
 								{ 52.0, 51.2, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 53.1, 48.8, THE_VINDICAAR_EREDATH_UPPER },
 							},
-							["qi"] = 152594,	-- Essence of Shadow (QI!)
+							qi = 152594,	-- Essence of Shadow (QI!)
 						}),
 						q(49143, {	-- Essence of the Light Mother
-							["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
-							["provider"] = { "n", 126307 },	-- Prophet Velen
-							["coord"] = { 45.9, 34.0, THE_VINDICAAR_KROKUUN_UPPER },
-							["groups"] = {
+							sourceQuests = { 47743 },	-- The Child of Light and Shadow
+							provider = { "n", 126307 },	-- Prophet Velen
+							coord = { 45.9, 34.0, THE_VINDICAAR_KROKUUN_UPPER },
+							groups = {
 								o(277348, {	-- Vestige of Light
-									["coord"] = { 50.2, 46.2, THE_VINDICAAR_KROKUUN_UPPER },
-									["groups"] = { i(153125) },	-- Vestige of Light (QI!)
+									coord = { 50.2, 46.2, THE_VINDICAAR_KROKUUN_UPPER },
+									groups = { i(153125) },	-- Vestige of Light (QI!)
 								}),
 							},
 						}),
 						q(47134, {	-- Foiling the Legion's Jailbreak
-							["sourceQuests"] = { 47104 },	-- Imprisoned Inquisitor
-							["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
-							["coord"] = { 43.2, 25.5, THE_VINDICAAR_KROKUUN_UPPER },
-							["maps"] = {
+							sourceQuests = { 47104 },	-- Imprisoned Inquisitor
+							provider = { "n", 121263 },	-- Grand Artificer Romuul
+							coord = { 43.2, 25.5, THE_VINDICAAR_KROKUUN_UPPER },
+							maps = {
 								889,	-- Arcatraz
 								890,	-- Arcatraz
 							},
 						}),
 						q(47994, {	-- Forming a Bond
-							["sourceQuests"] = { 47993 },	-- Lord of the Spire
-							["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
-							["coord"] = { 43.2, 25.5, THE_VINDICAAR_KROKUUN_UPPER },
+							sourceQuests = { 47993 },	-- Lord of the Spire
+							provider = { "n", 121263 },	-- Grand Artificer Romuul
+							coord = { 43.2, 25.5, THE_VINDICAAR_KROKUUN_UPPER },
 						}),
 						q(48799, {	-- Fuel of a Doomed World
-							["sourceQuests"] = {
+							sourceQuests = {
 								47473,	-- Sizing Up the Opposition (Light's Purchase)
 								48929,	-- Sizing Up the Opposition (The Veiled Den)
 							},
-							["qgs"] = {
+							qgs = {
 								124312,	-- High Exarch Turalyon @ Krokuun
 								126954,	-- High Exarch Turalyon @ Antoran Wastes
 							},
-							["coords"] = {
+							coords = {
 								{ 59.1, 20.2, EREDATH },
 								{ 33.5, 58.3, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 								{ 33.5, 58.3, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
 								{ 45.8, 23.9, THE_VINDICAAR_EREDATH_UPPER },
 								{ 39.4, 25.1, THE_VINDICAAR_KROKUUN_UPPER },
 							},
-							["isWeekly"] = true,
-							["qi"] = 153014,	-- Pristine Argunite (QI!)
+							isWeekly = true,
+							qi = 153014,	-- Pristine Argunite (QI!)
 						}),
 						q(48636, {	-- Fueling the Antoran Campaign
-							["sourceQuests"] = { 48912 },	-- Supplying the Antoran Campaign
-							["qgs"] = {
+							sourceQuests = { 48912 },	-- Supplying the Antoran Campaign
+							qgs = {
 								124312,	-- High Exarch Turalyon
 								126954,	-- High Exarch Turalyon
 							},
-							["coords"] = {
+							coords = {
 								{ 33.5, 58.3, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 								{ 39.8, 25.7, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 45.8, 24.9, THE_VINDICAAR_EREDATH_UPPER },
 							},
-							["cost"] = { { "c", ORDER_RESOURCES, 900 } },
-							["repeatable"] = true,
-							["groups"] = {
+							cost = { { "c", ORDER_RESOURCES, 900 } },
+							repeatable = true,
+							groups = {
 								i(152097, {	-- Lightforged Bulwark
 									follower(1059, {	-- Lightforged Bulwark (Temporary Troop)
-										["collectible"] = false,
-										["u"] = UNLEARNABLE,
+										collectible = false,
+										u = UNLEARNABLE,
 									}),
 									follower(1060, {	-- Lightforged Bulwark (Temporary Troop)
-										["collectible"] = false,
-										["u"] = UNLEARNABLE,
+										collectible = false,
+										u = UNLEARNABLE,
 									}),
 								}),
 							},
 						}),
 						q(47431, {	-- Gathering Light
-							["sourceQuests"] = { 48500 },	-- A Moment of Respite
-							["provider"] = { "n", 122378 },	-- High Exarch Turalyon
-							["coord"] = { 42.9, 26.4, THE_VINDICAAR_KROKUUN_UPPER },
+							sourceQuests = { 48500 },	-- A Moment of Respite
+							provider = { "n", 122378 },	-- High Exarch Turalyon
+							coord = { 42.9, 26.4, THE_VINDICAAR_KROKUUN_UPPER },
 						}),
 						q(49293, {	-- Invasion Onslaught
-							["sourceQuests"] = { 48605 },	-- Commander's Downfall
-							["qgs"] = {
+							sourceQuests = { 48605 },	-- Commander's Downfall
+							qgs = {
 								120978,	-- Illidan Stormrage
 								126408,	-- Illidan Stormrage
 								127051,	-- Illidan Stormrage
 								127057,	-- Illidan Stormrage
 							},
-							["coords"] = {
+							coords = {
 								{ 30.3, 60.1, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 								{ 32.8, 59.4, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
 								{ 40.1, 21.3, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 47.3, 19.8, THE_VINDICAAR_EREDATH_UPPER },
 								{ 68.8, 26.1, ANTORAN_WASTES },
 							},
-							["isWeekly"] = true,
+							isWeekly = true,
 						}),
 						q(48513, {	-- Invasion Point Offensive
-							["sourceQuests"] = { 48440 },	-- Into the Night
-							["qgs"] = {
+							sourceQuests = { 48440 },	-- Into the Night
+							qgs = {
 								120978,	-- Illidan Stormrage
 								126408,	-- Illidan Stormrage
 								127057,	-- Illidan Stormrage
 							},
-							["coords"] = {
+							coords = {
 								{ 31.4, 59.1, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 								{ 46.8, 20.5, THE_VINDICAAR_EREDATH_UPPER },
 								{ 40.2, 21.4, THE_VINDICAAR_KROKUUN_UPPER },
@@ -322,22 +322,22 @@ root(ROOTS.Zones, {
 							-- might unlock differently/have different SQ(s) on main character vs alts.
 						}),
 						q(47182, {	-- Long Overdue
-							["sourceQuests"] = { 47134 },	-- Foiling the Legion's Jailbreak
-							["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
-							["coord"] = { 43.3, 23.2, THE_VINDICAAR_KROKUUN_UPPER },
-							["lvl"] = 45,
-							["qi"] = 147906,	-- Fel Heart of Argus (QI!)
+							sourceQuests = { 47134 },	-- Foiling the Legion's Jailbreak
+							provider = { "n", 121263 },	-- Grand Artificer Romuul
+							coord = { 43.3, 23.2, THE_VINDICAAR_KROKUUN_UPPER },
+							lvl = 45,
+							qi = 147906,	-- Fel Heart of Argus (QI!)
 						}),
 						q(46815, {	-- Eredath, Jewel of Argus
-							["sourceQuests"] = { 48081 },	-- A Floating Ruin
-							["provider"] = { "n", 128725 },	-- Prophet Velen
-							["coords"] = { 47.4, 24.5, THE_VINDICAAR_EREDATH_UPPER },
+							sourceQuests = { 48081 },	-- A Floating Ruin
+							provider = { "n", 128725 },	-- Prophet Velen
+							coords = { 47.4, 24.5, THE_VINDICAAR_EREDATH_UPPER },
 						}),
 						q(48201, {	-- Reinforce Light's Purchase
-							["sourceQuests"] = { 48200 },	-- Securing a Foothold
-							["altQuests"] = { 48202 },	-- Reinforce the Veiled Den — you get one of two quests depending on which camp is up at the time
-							["provider"] = { "n", 126954 },	-- High Exarch Turalyon
-							["coords"] = {
+							sourceQuests = { 48200 },	-- Securing a Foothold
+							altQuests = { 48202 },	-- Reinforce the Veiled Den — you get one of two quests depending on which camp is up at the time
+							provider = { "n", 126954 },	-- High Exarch Turalyon
+							coords = {
 								{ 33.5, 57.8, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
 								{ 33.6, 58.3, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 								{ 34.4, 57.2, THE_VINDICAAR_KROKUUN_UPPER },
@@ -345,77 +345,77 @@ root(ROOTS.Zones, {
 							},
 						}),
 						q(48202, {	-- Reinforce the Veiled Den
-							["sourceQuests"] = { 48200 },	-- Securing a Foothold
-							["altQuests"] = { 48201 },	-- Reinforce Light's Purchase — you get one of two quests depending on which camp is up at the time
-							["provider"] = { "n", 126954 },	-- High Exarch Turalyon
-							["coords"] = {
+							sourceQuests = { 48200 },	-- Securing a Foothold
+							altQuests = { 48201 },	-- Reinforce Light's Purchase — you get one of two quests depending on which camp is up at the time
+							provider = { "n", 126954 },	-- High Exarch Turalyon
+							coords = {
 								{ 33.7, 58.2, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 								{ 34.2, 56.8, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
 								{ 34.4, 57.2, THE_VINDICAAR_KROKUUN_UPPER },
 							},
 						}),
 						q(47654, {	-- Seat of the Triumvirate: The Crest of Knowledge
-							["sourceQuests"] = { 47220 },	-- A Beacon in the Dark
-							["qgs"] = {
+							sourceQuests = { 47220 },	-- A Beacon in the Dark
+							qgs = {
 								120533,	-- Prophet Velen
 								126950,	-- Prophet Velen
 								128722,	-- Prophet Velen
 							},
-							["coords"] = {
+							coords = {
 								{ 50.7, 51.2, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 53.1, 48.8, THE_VINDICAAR_EREDATH_UPPER },
 							},
-							["qi"] = 151090,	-- The Crest of Knowledge (QI!)
-							["groups"] = { i(282148, { ["timeline"] = { ADDED_12_1_5 } }) },	-- Replica Crown of the Triumvirate (DECOR!)
+							qi = 151090,	-- The Crest of Knowledge (QI!)
+							groups = { i(282148, { timeline = { ADDED_12_1_5 } }) },	-- Replica Crown of the Triumvirate (DECOR!)
 						}),
 						q(48200, {	-- Securing a Foothold
-							["sourceQuests"] = { 48199 },	-- The Burning Heart
-							["provider"] = { "n", 126954 },	-- High Exarch Turalyon
-							["coords"] = {
+							sourceQuests = { 48199 },	-- The Burning Heart
+							provider = { "n", 126954 },	-- High Exarch Turalyon
+							coords = {
 								{ 33.5, 57.9, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 								{ 34.4, 57.2, THE_VINDICAAR_KROKUUN_UPPER },
 							},
 						}),
 						q(47892, {	-- Storming the Citadel
-							["sourceQuests"] = { 47891 },	-- Dire News
-							["provider"] = { "n", 124312 },	-- High Exarch Turalyon
-							["coord"] = { 40.1, 25.6, THE_VINDICAAR_KROKUUN_UPPER },
+							sourceQuests = { 47891 },	-- Dire News
+							provider = { "n", 124312 },	-- High Exarch Turalyon
+							coord = { 40.1, 25.6, THE_VINDICAAR_KROKUUN_UPPER },
 						}),
 						q(48912, {	-- Supplying the Antoran Campaign
-							["sourceQuests"] = { 48448 },	-- Hindering the Legion War Machine
-							["qgs"] = {
+							sourceQuests = { 48448 },	-- Hindering the Legion War Machine
+							qgs = {
 								124312,	-- High Exarch Turalyon @ Eredath & Krokuun
 								126954,	-- High Exarch Turalyon @ Antoran Wastes
 							},
-							["coords"] = {
+							coords = {
 								{ 33.5, 58.2, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
 								{ 45.9, 23.9, THE_VINDICAAR_EREDATH_UPPER },
 								{ 39.2, 24.8, THE_VINDICAAR_KROKUUN_UPPER },
 							},
-							["cost"] = { { "c", ORDER_RESOURCES, 150 } },
-							["isWeekly"] = true,
-							["groups"] = {
+							cost = { { "c", ORDER_RESOURCES, 150 } },
+							isWeekly = true,
+							groups = {
 								i(152097, {	-- Lightforged Bulwark
 									follower(1059, {	-- Lightforged Bulwark (Temporary Troop)
-										["collectible"] = false,
-										["u"] = UNLEARNABLE,
+										collectible = false,
+										u = UNLEARNABLE,
 									}),
 									follower(1060, {	-- Lightforged Bulwark (Temporary Troop)
-										["collectible"] = false,
-										["u"] = UNLEARNABLE,
+										collectible = false,
+										u = UNLEARNABLE,
 									}),
 								}),
 							},
 						}),
 						q(48199, {	-- The Burning Heart
-							["sourceQuests"] = { 48559 },	-- An Offering of Light
-							["provider"] = { "n", 126307 },	-- Prophet Velen
-							["coord"] = { 40.1, 25.2, THE_VINDICAAR_KROKUUN_UPPER },
+							sourceQuests = { 48559 },	-- An Offering of Light
+							provider = { "n", 126307 },	-- Prophet Velen
+							coord = { 40.1, 25.2, THE_VINDICAAR_KROKUUN_UPPER },
 						}),
 						q(49014, {	-- The Burning Throne
-							["sourceQuests"] = { 48559 },	-- An Offering of Light
-							["provider"] = { "n", 124312 },	-- High Exarch Turalyon
-							["coords"] = {
+							sourceQuests = { 48559 },	-- An Offering of Light
+							provider = { "n", 124312 },	-- High Exarch Turalyon
+							coords = {
 								{ 59.1, 20.2, EREDATH },
 								{ 46.2, 23.5, THE_VINDICAAR_EREDATH_UPPER },
 								{ 51.0, 23.4, THE_VINDICAAR_EREDATH_UPPER },
@@ -424,61 +424,61 @@ root(ROOTS.Zones, {
 							},
 						}),
 						q(48203, {	-- The Burning Throne
-							["sourceQuests"] = { 47654 },	-- Seat of the Triumvirate: The Crest of Knowledge
-							["provider"] = { "n", 124312 },	-- High Exarch Turalyon
-							["coord"] = { 40.1, 25.2, THE_VINDICAAR_KROKUUN_UPPER },
+							sourceQuests = { 47654 },	-- Seat of the Triumvirate: The Crest of Knowledge
+							provider = { "n", 124312 },	-- High Exarch Turalyon
+							coord = { 40.1, 25.2, THE_VINDICAAR_KROKUUN_UPPER },
 						}),
 						q(47743, {	-- The Child of Light and Shadow
-							["sourceQuests"] = { 47653 },	-- Light's Return
-							["provider"] = { "n", 122378 },	-- High Exarch Turalyon
-							["coord"] = { 42.9, 26.5, THE_VINDICAAR_KROKUUN_UPPER },
+							sourceQuests = { 47653 },	-- Light's Return
+							provider = { "n", 122378 },	-- High Exarch Turalyon
+							coord = { 42.9, 26.5, THE_VINDICAAR_KROKUUN_UPPER },
 						}),
 						q(49224, {	-- The Netherlight Crucible
-							["sourceQuests"] = { 48560 },	-- An Offering of Shadow
-							["provider"] = { "n", 126389 },	-- Artificer Shela'na
-							["coord"] = { 58.8, 69.4, THE_VINDICAAR_KROKUUN_LOWER },
-							["u"] = REMOVED_FROM_GAME,	-- removed in BFA 8.0.1
+							sourceQuests = { 48560 },	-- An Offering of Shadow
+							provider = { "n", 126389 },	-- Artificer Shela'na
+							coord = { 58.8, 69.4, THE_VINDICAAR_KROKUUN_LOWER },
+							u = REMOVED_FROM_GAME,	-- removed in BFA 8.0.1
 						}),
 						q(49445, {	-- The Prime Exchange
-							["sourceQuests"] = { 48440 },	-- Into the Night
-							["provider"] = { "n", 129674 },	-- Maras
-							["coord"] = { 40.4, 64.7, THE_VINDICAAR_KROKUUN_LOWER },
+							sourceQuests = { 48440 },	-- Into the Night
+							provider = { "n", 129674 },	-- Maras
+							coord = { 40.4, 64.7, THE_VINDICAAR_KROKUUN_LOWER },
 						}),
 						q(47238, {	-- The Seat of the Triumvirate
-							["sourceQuests"] = { 47416 },	-- Shadow of the Triumvirate
-							["provider"] = { "n", 128735 },	-- Prophet Velen
-							["coord"] = { 57.8, 61.5, THE_VINDICAAR_EREDATH_UPPER },
+							sourceQuests = { 47416 },	-- Shadow of the Triumvirate
+							provider = { "n", 128735 },	-- Prophet Velen
+							coord = { 57.8, 61.5, THE_VINDICAAR_EREDATH_UPPER },
 						}),
 						q(47889, {	-- The Speaker Calls
-							["sourceQuests"] = {
+							sourceQuests = {
 								47473,	-- Sizing Up the Opposition (Light's Purchase)
 								48929,	-- Sizing Up the Opposition (The Veiled Den)
 							},
-							["qgs"] = {
+							qgs = {
 								124312,	-- High Exarch Turalyon
 								126954,	-- High Exarch Turalyon
 							},
-							["coords"] = {
+							coords = {
 								{ 33.6, 58.0, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 								{ 34.1, 57.1, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 39.6, 24.9, THE_VINDICAAR_KROKUUN_UPPER },
 							},
 						}),
 						q(48273, {	-- The Speaker Listens
-							["sourceQuests"] = { 48560 },	-- An Offering of Shadow
-							["provider"] = { "n", 124312 },	-- High Exarch Turalyon
-							["coords"] = {
+							sourceQuests = { 48560 },	-- An Offering of Shadow
+							provider = { "n", 124312 },	-- High Exarch Turalyon
+							coords = {
 								{ 40.9, 24.3, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 46.7, 25.0, THE_VINDICAAR_EREDATH_UPPER },
 							},
 						}),
 						q(48277, {	-- The Speaker Seeks
-							["sourceQuests"] = { 48272 },	-- Visions of Fear
-							["qgs"] = {
+							sourceQuests = { 48272 },	-- Visions of Fear
+							qgs = {
 								124312,	-- High Exarch Turalyon
 								126954,	-- High Exarch Turalyon
 							},
-							["coords"] = {
+							coords = {
 								{ 33.5, 58.3, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 								{ 33.9, 58.0, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
 								{ 45.9, 24.1, THE_VINDICAAR_EREDATH_UPPER },
@@ -486,90 +486,90 @@ root(ROOTS.Zones, {
 							},
 						}),
 						q(47287, {	-- The Vindicaar Matrix Core
-							["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
-							["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
-							["coords"] = {
+							sourceQuests = { 47743 },	-- The Child of Light and Shadow
+							provider = { "n", 121263 },	-- Grand Artificer Romuul
+							coords = {
 								{ 43.7, 29.2, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 49.4, 23.6, THE_VINDICAAR_EREDATH_UPPER },
 							},
 						}),
 						q(48344, {	-- We Have a Problem
-							["sourceQuests"] = { 48461 },	-- Where They Least Expect It
-							["qgs"] = {
+							sourceQuests = { 48461 },	-- Where They Least Expect It
+							qgs = {
 								124312,	-- High Exarch Turalyon
 								126954,	-- High Exarch Turalyon
 							},
-							["coords"] = {
+							coords = {
 								{ 33.4, 57.6, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 								{ 50.9, 23.1, THE_VINDICAAR_EREDATH_UPPER },
 								{ 44.9, 24.0, THE_VINDICAAR_KROKUUN_UPPER },
 							},
 						}),
 						q(48461, {	-- Where They Least Expect It
-							["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
-							["provider"] = { "n", 126408 },	-- Illidan Stormrage
-							["coords"] = {
+							sourceQuests = { 48107 },	-- The Sigil of Awakening
+							provider = { "n", 126408 },	-- Illidan Stormrage
+							coords = {
 								{ 46.7, 21.0, THE_VINDICAAR_EREDATH_UPPER },
 								{ 47.0, 21.7, THE_VINDICAAR_KROKUUN_UPPER },
 							},
 						}),
 						q(40761, {	-- Whispers from Oronaar
-							["sourceQuests"] = { 47238 },	-- The Seat of the Triumvirate
-							["provider"] = { "n", 121230 },	-- Alleria Windrunner
-							["coord"] = { 58.2, 61.1, THE_VINDICAAR_EREDATH_UPPER },
+							sourceQuests = { 47238 },	-- The Seat of the Triumvirate
+							provider = { "n", 121230 },	-- Alleria Windrunner
+							coord = { 58.2, 61.1, THE_VINDICAAR_EREDATH_UPPER },
 						}),
 					}),
 					n(VENDORS, {
 						n(127518, {	-- Adjutant Vortus <Decor Specialist>
-							["coords"] = {
+							coords = {
 								{ 32.2, 66.6, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 34.9, 57.5, THE_VINDICAAR_EREDATH_UPPER },
 								{ 56.3, 77.1, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 							},
-							["groups"] = sharedData({
-								["timeline"] = { ADDED_12_1_5 },
+							groups = sharedData({
+								timeline = { ADDED_12_1_5 },
 							}, {
 								i(282154, {	-- Amethyst Argunite Crystal (DECOR!)
-									["cost"] = { { "c", ORDER_RESOURCES, 150 } },
+									cost = { { "c", ORDER_RESOURCES, 150 } },
 								}),
 								i(282138, {	-- Carved Argunite Supply (DECOR!)
-									["cost"] = { { "c", ORDER_RESOURCES, 150 } },
+									cost = { { "c", ORDER_RESOURCES, 150 } },
 								}),
 								i(282152, {	-- Celadon Argunite Crystal (DECOR!)
-									["cost"] = { { "c", ORDER_RESOURCES, 150 } },
+									cost = { { "c", ORDER_RESOURCES, 150 } },
 								}),
 								i(282162, {	-- Ceremonial Lightforged Standard (DECOR!)
-									["cost"] = {
+									cost = {
 										{ "g", 10000000 },	-- 1000g
 										{ "c", ORDER_RESOURCES, 500 },
 									},
 								}),
 								i(282024, {	-- Decorative Lightforged Holo-Screen (DECOR!)
-									["cost"] = { { "c", ORDER_RESOURCES, 200 } },
+									cost = { { "c", ORDER_RESOURCES, 200 } },
 								}),
 								i(282150, {	-- Golden Argunite Crystal (DECOR!)
-									["cost"] = { { "c", ORDER_RESOURCES, 150 } },
+									cost = { { "c", ORDER_RESOURCES, 150 } },
 								}),
 								i(282115, {	-- Lightforged Holo-Barricade (DECOR!)
-									["cost"] = { { "c", ORDER_RESOURCES, 200 } },
+									cost = { { "c", ORDER_RESOURCES, 200 } },
 								}),
 								i(282117, {	-- Lightforged Holo-Parapet (DECOR!)
-									["cost"] = { { "c", ORDER_RESOURCES, 200 } },
+									cost = { { "c", ORDER_RESOURCES, 200 } },
 								}),
 								i(282119, {	-- Lightforged Holo-Shield (DECOR!)
-									["cost"] = { { "c", ORDER_RESOURCES, 200 } },
+									cost = { { "c", ORDER_RESOURCES, 200 } },
 								}),
 								i(282113, {	-- Lightforged Holo-Tower (DECOR!)
-									["cost"] = { { "c", ORDER_RESOURCES, 200 } },
+									cost = { { "c", ORDER_RESOURCES, 200 } },
 								}),
 								i(282136, {	-- Raw Argunite Supply (DECOR!)
-									["cost"] = { { "c", ORDER_RESOURCES, 150 } },
+									cost = { { "c", ORDER_RESOURCES, 150 } },
 								}),
 								i(282148, {	-- Replica Crown of the Triumvirate (DECOR!)
-									["cost"] = { { "c", ORDER_RESOURCES, 500 } },
+									cost = { { "c", ORDER_RESOURCES, 500 } },
 								}),
 								i(281682, {	-- Shielded Lightforged Pylon (DECOR!)
-									["cost"] = {
+									cost = {
 										{ "g", 7000000 },	-- 700g
 										{ "c", ORDER_RESOURCES, 900 },
 									},
@@ -577,14 +577,14 @@ root(ROOTS.Zones, {
 							}),
 						}),
 						n(129674, {	-- Maras <Primal Sargerite Trader>
-							["coords"] = {
+							coords = {
 								{ 57.0, 66.0, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
 								{ 42.0, 58.6, THE_VINDICAAR_EREDATH_LOWER },
 								{ 40.6, 65.6, THE_VINDICAAR_KROKUUN_LOWER },
 							},
-							["groups"] = appendAllGroups(
+							groups = appendAllGroups(
 								sharedData({
-									["cost"] = { { "i", 151568, 1 } },	-- Primal Sargerite
+									cost = { { "i", 151568, 1 } },	-- Primal Sargerite
 								},{
 									i(151565),	-- Astral Glory
 									i(151564),	-- Empyrium
@@ -592,7 +592,7 @@ root(ROOTS.Zones, {
 									i(151567),	-- Lightweave Cloth
 								}),
 								sharedData({
-									["cost"] = { { "i", 151568, 10 } },	-- Primal Sargerite
+									cost = { { "i", 151568, 10 } },	-- Primal Sargerite
 								},{
 									i(151718),	-- Argulite
 									i(151720),	-- Chemirine
@@ -603,65 +603,65 @@ root(ROOTS.Zones, {
 								})),
 						}),
 						n(127120, {	-- Vindicator Jaelaana <Army of the Light Emissary>
-							["coords"] = {
+							coords = {
 								{ 44.8, 75.0, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 44.6, 67.0, THE_VINDICAAR_EREDATH_UPPER },
 								{ 63.0, 63.6, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 							},
-							["groups"] = bubbleDownClassicRep(FACTION_ARMY_OF_THE_LIGHT, {
+							groups = bubbleDownClassicRep(FACTION_ARMY_OF_THE_LIGHT, {
 								{		-- Neutral
 									i(282134, {	-- Argunite Crystal Storage (DECOR!)
-										["timeline"] = { ADDED_12_1_5 },
-										["cost"] = {
+										timeline = { ADDED_12_1_5 },
+										cost = {
 											{ "g", 7000000 },	-- 700g
 											{ "c", ORDER_RESOURCES, 300 },
 										},
 									}),
 									i(282128, {	-- Argunite Sconce (DECOR!)
-										["timeline"] = { ADDED_12_1_5 },
-										["cost"] = {
+										timeline = { ADDED_12_1_5 },
+										cost = {
 											{ "g", 5000000 },	-- 500g
 											{ "c", ORDER_RESOURCES, 250 },
 										},
 									}),
 									i(282122, {	-- Gilded Stonework Altar (DECOR!)
-										["timeline"] = { ADDED_12_1_5 },
-										["cost"] = {
+										timeline = { ADDED_12_1_5 },
+										cost = {
 											{ "g", 10000000 },	-- 1000g
 											{ "c", ORDER_RESOURCES, 500 },
 										},
 									}),
 									i(282142, {	-- Gleaming Lightforged Grindstone (DECOR!)
-										["timeline"] = { ADDED_12_1_5 },
-										["cost"] = {
+										timeline = { ADDED_12_1_5 },
+										cost = {
 											{ "g", 5000000 },	-- 500g
 											{ "c", ORDER_RESOURCES, 250 },
 										},
 									}),
 									i(282111, {	-- Hanging Lightforged Standard (DECOR!)
-										["timeline"] = { ADDED_12_1_5 },
-										["cost"] = {
+										timeline = { ADDED_12_1_5 },
+										cost = {
 											{ "g", 10000000 },	-- 1000g
 											{ "c", ORDER_RESOURCES, 500 },
 										},
 									}),
 									i(282146, {	-- Lightforged Control Console (DECOR!)
-										["timeline"] = { ADDED_12_1_5 },
-										["cost"] = {
+										timeline = { ADDED_12_1_5 },
+										cost = {
 											{ "g", 7000000 },	-- 700g
 											{ "c", ORDER_RESOURCES, 300 },
 										},
 									}),
 									i(282156, {	-- Reinforced Empyrium Tile (DECOR!)
-										["timeline"] = { ADDED_12_1_5 },
-										["cost"] = {
+										timeline = { ADDED_12_1_5 },
+										cost = {
 											{ "g", 3000000 },	-- 300g
 											{ "c", ORDER_RESOURCES, 200 },
 										},
 									}),
 									i(282130, {	-- Standing Argunite Lamp (DECOR!)
-										["timeline"] = { ADDED_12_1_5 },
-										["cost"] = {
+										timeline = { ADDED_12_1_5 },
+										cost = {
 											{ "g", 3000000 },	-- 300g
 											{ "c", ORDER_RESOURCES, 200 },
 										},
@@ -685,26 +685,26 @@ root(ROOTS.Zones, {
 									i(152399),	-- Army of the Light Tabard
 									i(153023),	-- Lightforged Augment Rune
 									i(152788, {	-- Lightforged Warframe (MOUNT!)
-										["cost"] = 5000000000,	-- 500,000g
+										cost = 5000000000,	-- 500,000g
 									}),
 								},
 							}),
 						}),
 						n(127151, {	-- Toraan the Revered <Argussian Reach Emissary>
-							["coords"] = {
+							coords = {
 								{ 67.6, 55.8, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 66.2, 57.8, THE_VINDICAAR_EREDATH_UPPER },
 								{ 56.6, 30.2, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 							},
-							["groups"] = bubbleDownClassicRep(FACTION_ARGUSSIAN_REACH, {
+							groups = bubbleDownClassicRep(FACTION_ARGUSSIAN_REACH, {
 								{		-- Neutral
 									i(245422, {	-- Draenic Bookcase (DECOR!)
-										["timeline"] = { ADDED_11_2_7 },
-										["cost"] = 2400000,	-- 240g
+										timeline = { ADDED_11_2_7 },
+										cost = 2400000,	-- 240g
 									}),
 									i(251480, {	-- Draenic Wooden Wall Shelf (DECOR!)
-										["timeline"] = { ADDED_11_2_7 },
-										["cost"] = 6400000,	-- 640g
+										timeline = { ADDED_11_2_7 },
+										cost = 6400000,	-- 640g
 									}),
 								}, {	-- Friendly
 									i(152658),	-- Formula: Chaos Shatter (RECIPE!)
@@ -731,35 +731,35 @@ root(ROOTS.Zones, {
 							}),
 						}),
 						n(121589, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
-							["coords"] = {
+							coords = {
 								{ 46.4, 71.8, THE_VINDICAAR_KROKUUN_UPPER },
 								{ 46.1, 65.9, THE_VINDICAAR_EREDATH_UPPER },
 								{ 61.6, 59.1, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 							},
-							["groups"] = sharedData({
-								["cost"] = { { "c", VEILED_ARGUNITE, 650 } },
+							groups = sharedData({
+								cost = { { "c", VEILED_ARGUNITE, 650 } },
 							}, {
 								i(153211, {	-- Relinquished Hood
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished", {"INVTYPE_HEAD"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 									},
 								}),
 								i(153213, {	-- Relinquished Necklace
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished", {"INVTYPE_NECK"} },	-- Necks Only!
 									},
 								}),
 								i(153215, {	-- Relinquished Spaulders
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished", {"INVTYPE_SHOULDER"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 									},
 								}),
 								i(153209, {	-- Relinquished Cloak
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished", {"INVTYPE_CLOAK"}, 3 },	-- Cloak Only!
 									},
-									["groups"] = sharedData({
-										["modID"] = 43,	-- Relinquished modID
+									groups = sharedData({
+										modID = 43,	-- Relinquished modID
 									}, {
 										i(152778),	-- Conservatory Ward's Drape (Confirmed in Errors 18 Jan 2022)
 										i(146793),	-- Man'ari Magus Drape (reported in #errors on 20201113)
@@ -768,37 +768,37 @@ root(ROOTS.Zones, {
 									}),
 								}),
 								i(153208, {	-- Relinquished Chestguard
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished", {"INVTYPE_CHEST","INVTYPE_ROBE"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 									},
 								}),
 								i(153206, {	-- Relinquished Bracers
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished", {"INVTYPE_WRIST"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 									},
 								}),
 								i(153210, {	-- Relinquished Gauntlets
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished", {"INVTYPE_HAND"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 									},
 								}),
 								i(153205, {	-- Relinquished Girdle
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished", {"INVTYPE_WAIST"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 									},
 								}),
 								i(153212, {	-- Relinquished Leggings
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished", {"INVTYPE_LEGS"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 									},
 								}),
 								i(153207, {	-- Relinquished Treads
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished", {"INVTYPE_FEET"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 									},
 								}),
 								i(153214, {	-- Relinquished Ring
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished", {"INVTYPE_FINGER"} },	-- Rings Only!
 										{"select", "mapID", BROKEN_ISLES},
 										{"find", "headerID", FINGER},	-- Select only the Finger Headers
@@ -806,10 +806,10 @@ root(ROOTS.Zones, {
 									},
 								}),
 								i(153216, {	-- Relinquished Trinket
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished", {"INVTYPE_TRINKET"} },	-- Trinkets Only!
 									},
-									["groups"] = {
+									groups = {
 										-- This is the only source of these items
 										i(136736),	-- Badge of the Wardens
 										i(134322),	-- Drained Mana Crystal
@@ -817,56 +817,56 @@ root(ROOTS.Zones, {
 									},
 								}),
 								i(153059, {	-- Relinquished Arcane Relic
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished_relic", "ARCANE" },	-- Arcane Relics Only!
 									},
 								}),
 								i(153060, {	-- Relinquished Blood Relic
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished_relic", "BLOOD" },	-- Blood Relics Only!
 									},
 								}),
 								i(153061, {	-- Relinquished Fel Relic
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished_relic", "FEL" },	-- Fel Relics Only!
 									},
-									["groups"] = {
+									groups = {
 										-- This is the only source of this item
 										i(153454),	-- Alliance of Convenience
 									},
 								}),
 								i(153062, {	-- Relinquished Fire Relic
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished_relic", "FIRE" },	-- Fire Relics Only!
 									},
 								}),
 								i(153063, {	-- Relinquished Frost Relic
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished_relic", "FROST" },	-- Frost Relics Only!
 									},
 								}),
 								i(153064, {	-- Relinquished Holy Relic
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished_relic", "HOLY" },	-- Holy Relics Only!
 									},
 								}),
 								i(153065, {	-- Relinquished Iron Relic
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished_relic", "IRON" },	-- Iron Relics Only!
 									},
 								}),
 								i(153066, {	-- Relinquished Life Relic
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished_relic", "LIFE" },	-- Life Relics Only!
 									},
 								}),
 								i(153067, {	-- Relinquished Shadow Relic
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished_relic", "SHADOW" },	-- Shadow Relics Only!
 									},
 								}),
 								i(153068, {	-- Relinquished Storm Relic
-									["sym"] = {
+									sym = {
 										{"sub", "legion_relinquished_relic", "WIND" },	-- Storm Relics Only!
 									},
 								}),
@@ -879,7 +879,7 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {
 	m(BROKEN_ISLES, {
 		m(ARGUS, {
 			m(THE_VINDICAAR_ANTORAN_WASTES_UPPER, {

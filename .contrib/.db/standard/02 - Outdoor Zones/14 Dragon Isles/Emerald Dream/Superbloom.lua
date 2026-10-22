@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
 		header(HEADERS.Quest, 78319, {	-- The Superbloom
 			n(ACHIEVEMENTS, {
@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				ach(19310, {	-- Fruit of the Bloom
 					-- need to revise this... there are other Dreamfruit which don't provide these powers :weary:
 					-- would need coords accurately for them to match properly
-					-- ["provider"] = { "o", 410267 },	-- Dreamfruit (there's multiple ID's but we only care about the name)
+					-- provider = { "o", 410267 },	-- Dreamfruit (there's multiple ID's but we only care about the name)
 					-- Parser handles the criteria
 					-- crit(62910),	-- Basket of Explosive Acorns
 					-- crit(62911),	-- Bubble Blowgun
@@ -38,13 +38,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(QUESTS, {
 				q(78319, {	-- The Superbloom
-					["qg"] = 208474,	-- Clarelle
-					["coords"] = {
+					qg = 208474,	-- Clarelle
+					coords = {
 						{ 44.6, 72.0, EMERALD_DREAM },
 						{ 51.4, 59.6, EMERALD_DREAM },
 					},
-					["isWeekly"] = true,
-					["groups"] = {
+					isWeekly = true,
+					groups = {
 						i(211389, {	-- Cache of Overblooming Treasures
 							i(211416),	-- Dream Wardens Insignia [Epic 1k BoA]
 							i(211417),	-- Dream Wardens Insignia [Epic 1k]
@@ -129,10 +129,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 			}),
 			n(207554, {		-- Verlann Timbercrush
-				["description"] = "Spawns at the end of the Superbloom Event.\nThe Event always starts on the hour.",
-				["coord"] = { 43.8, 71.8, EMERALD_DREAM },
-				["isWeekly"] = true,
-				["groups"] = {
+				description = "Spawns at the end of the Superbloom Event.\nThe Event always starts on the hour.",
+				coord = { 43.8, 71.8, EMERALD_DREAM },
+				isWeekly = true,
+				groups = {
 					-- Cosmetic
 					i(210663),	-- Circlet of the Mother Tree
 					i(210666),	-- Crest of the Seething Flamekeeper
@@ -150,11 +150,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(REWARDS, {
 				i(211414, {	-- Blossoming Dreamtrove
-					["description"] = "Granted for achieving 8000 points during the Superbloom Event.\nThe Event always starts on the hour.",
+					description = "Granted for achieving 8000 points during the Superbloom Event.\nThe Event always starts on the hour.",
 				}),
 				i(211413, {	-- Budding Dreamtrove
-					["description"] = "Granted for achieving 5333 or more points during the Superbloom Event.\nThe Event always starts on the hour.",
-					["groups"] = {
+					description = "Granted for achieving 5333 or more points during the Superbloom Event.\nThe Event always starts on the hour.",
+					groups = {
 						i(207762),	-- Grotto Netherwing Drake: Chin Spike (MM!)
 						i(207774),	-- Grotto Netherwing Drake: Finned Jaw (MM!)
 						i(207763),	-- Grotto Netherwing Drake: Single Horned Crest (MM!)
@@ -166,14 +166,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 				i(211411, {	-- Sprouting Dreamtrove
-					["description"] = "Granted for achieving 2600 or more points during the Superbloom Event.\nThe Event always starts on the hour.",
+					description = "Granted for achieving 2600 or more points during the Superbloom Event.\nThe Event always starts on the hour.",
 				}),
 			}),
 		}),
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
 	m(DRAGON_ISLES, {
 		m(EMERALD_DREAM, {
 			header(HEADERS.Quest, 78203, {	-- Superbloom
@@ -181,7 +181,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				--
 				q(78553),	-- pop if you loot any seed from Veriann Timbercrush (daily/weekly?)
 				-- q(78554),	-- on 2nd kill with rare state of event - was looted small dreamseed
-				q(79082, {["repeatable"]=true}),	-- 'The Superbloom Event'
+				q(79082, {repeatable=true}),	-- 'The Superbloom Event'
 				q(78866),	-- 'Superbloom: Step 2 Right Path'
 				q(78867),	-- 'Superbloom: Step 3 Right Path'
 				q(78868),	-- 'Superbloom: Step 4 Right Path'

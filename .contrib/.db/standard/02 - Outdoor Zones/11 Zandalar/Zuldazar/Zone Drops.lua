@@ -2,16 +2,16 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 	m(ZULDAZAR, {
 		n(ZONE_DROPS, {
-			["maps"] = {	-- Note!! We can list this in these two zones due to them dropping here. If we add more to Zuldazar then we'll look into adjusting this.
+			maps = {	-- Note!! We can list this in these two zones due to them dropping here. If we add more to Zuldazar then we'll look into adjusting this.
 				NAZMIR,
 				VOLDUN,
 			},
-			["groups"] = {
+			groups = {
 				i(157782, {	-- Pterrordax Egg
-					["crs"] = {
+					crs = {
 						126618,	-- Bloodrage Pterrordax
 						125207,	-- Peering Shrieker
 						126702,	-- Primal Skyterror
@@ -59,21 +59,21 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			i(160123),	-- Direbone Frill Legplates
 			i(160125),	-- Direbone Frill Stompers
 			i(157794, {	-- Feathered Viper Scale
-				["sourceQuests"] = {
+				sourceQuests = {
 					51145,	-- Curse of Jani (A)
 					47442,	-- Curse of Jani (H)
 				},
-				["crs"] = {
+				crs = {
 					132410,	-- Feathered Viper
 					132409,	-- Feathered Viper
 				},
 			}),
 			i(156963, {	-- Golden Ravasaur Egg
-				["sourceQuests"] = {
+				sourceQuests = {
 					51145,	-- Curse of Jani (A)
 					47442,	-- Curse of Jani (H)
 				},
-				["crs"] = {
+				crs = {
 					131560,	-- Feral Ravasaur
 					122504,	-- Savagemane Ravasaur
 					148871,	-- Voidcrafted Ravasaur

@@ -4,59 +4,59 @@
 
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
-		m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
+		m(ARGUS, bubbleDown({ timeline = { ADDED_7_3_0 } }, {
 			m(KROKUUN, {
 				n(TREASURES, {
 					o(276490, {	-- Krokul Emergency Cache
-						["questID"] = 48884,
-						["description"] = "You will need |cFFFFD700Lightforged Warframe|r to unblock the rocks.",
-						["coord"] = { 50.7, 75.3, KROKUUN },
-						["groups"] = {
+						questID = 48884,
+						description = "You will need |cFFFFD700Lightforged Warframe|r to unblock the rocks.",
+						coord = { 50.7, 75.3, KROKUUN },
+						groups = {
 							i(153304),	-- Oronaar Miner's Dredger
 						},
 					}),
 					o(276489, {	-- Legion Tower Chest
-						["questID"] = 48885,
-						["description"] = "You will need |cFFFFD700Light's Judgement|r to unblock the rocks.",
-						["coord"] = { 62.8, 37.6, KROKUUN },
+						questID = 48885,
+						description = "You will need |cFFFFD700Light's Judgement|r to unblock the rocks.",
+						coord = { 62.8, 37.6, KROKUUN },
 					}),
 					o(277343, {	-- Long-Lost Augari Treasure
-						["questID"] = 49154,
-						["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
-						["coord"] = { 75.1, 69.8, KROKUUN },
-						["groups"] = {
+						questID = 49154,
+						description = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
+						coord = { 75.1, 69.8, KROKUUN },
+						groups = {
 							i(153284),	-- Augari Wakener's Treads
 						},
 					}),
 					o(276491, {	-- Lost Krokul Chest
-						["questID"] = 48886,
-						["description"] = "You will need |cFFFFD700Light's Judgement|r to unblock the rocks.",
-						["coord"] = { 48.5, 58.9, KROKUUN },
+						questID = 48886,
+						description = "You will need |cFFFFD700Light's Judgement|r to unblock the rocks.",
+						coord = { 48.5, 58.9, KROKUUN },
 					}),
 					o(277344, {	-- Precious Augari Keepsakes
-						["questID"] = 49156,
-						["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
-						["coord"] = { 55.9, 74.2, KROKUUN },
-						["groups"] = {
+						questID = 49156,
+						description = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
+						coord = { 55.9, 74.2, KROKUUN },
+						groups = {
 							i(153283),	-- Augari Wakener's Vestments
 						},
 					}),
 					o_repeated({	-- Eredar War Supplies
-						["sym"] = {
+						sym = {
 							{"select","mapID",KROKUUN},	-- get Krokuun
 							{"find","headerID",SPECIAL},	-- get Special
 							{"find","filterID",PLATE},{"pop"},	-- get Plate
 						},
-						["groups"] = appendAllGroups({	-- Shared Rewards
+						groups = appendAllGroups({	-- Shared Rewards
 							i(152857),	-- Chipped Man'ari Blade
-							i(282164, { ["timeline"] = { ADDED_12_1_5 } }),	-- Eredath Worktable (DECOR!)
+							i(282164, { timeline = { ADDED_12_1_5 } }),	-- Eredath Worktable (DECOR!)
 						},
 						sharedData({	-- Common Objects
-							["isDaily"] = true,
+							isDaily = true,
 						}, {
 							o(271849, {	-- Eredar War Supplies (very small circular spawn area west and a little south of Krokul Hovel (near Talestra the Vile)
-								["questID"] = 47753,
-								["coords"] = {
+								questID = 47753,
+								coords = {
 									{ 52.7, 76.0, KROKUUN },
 									{ 53.1, 73.1, KROKUUN },
 									{ 56.8, 72.2, KROKUUN },
@@ -69,8 +69,8 @@ root(ROOTS.Zones, {
 								},
 							}),
 							o(271850, {	-- Eredar War Supplies (south central/east and south of Shattered Fields beacon)
-								["questID"] = 47997,
-								["coords"] = {
+								questID = 47997,
+								coords = {
 									{ 40.6, 75.5, KROKUUN },
 									{ 42.7, 75.5, KROKUUN },
 									{ 41.1, 79.9, KROKUUN },
@@ -92,8 +92,8 @@ root(ROOTS.Zones, {
 								},
 							}),
 							o(272455, {	-- Eredar War Supplies (central, around Annihilan Pits)
-								["questID"] = 47752,
-								["coords"] = {
+								questID = 47752,
+								coords = {
 									{ 49.6, 58.8, KROKUUN },
 									{ 52.0, 59.6, KROKUUN },
 									{ 56.6, 58.5, KROKUUN },
@@ -107,8 +107,8 @@ root(ROOTS.Zones, {
 								},
 							}),
 							o(272456, {	-- Eredar War Supplies (north)
-								["questID"] = 47999,
-								["coords"] = {
+								questID = 47999,
+								coords = {
 									{ 43.3, 36.3, KROKUUN },
 									{ 47.7, 28.9, KROKUUN },
 									{ 48.6, 31.0, KROKUUN },
@@ -140,8 +140,8 @@ root(ROOTS.Zones, {
 								},
 							}),
 							o(272770, {	-- Eredar War Supplies (southwest, in/around the Xenedar)
-								["questID"] = 48336,
-								["coords"] = {
+								questID = 48336,
+								coords = {
 									{ 26.1, 68.1, KROKUUN },
 									{ 27.2, 66.8, KROKUUN },
 									{ 28.6, 70.4, KROKUUN },
@@ -163,8 +163,8 @@ root(ROOTS.Zones, {
 								},
 							}),
 							o(272771, {	-- Eredar War Supplies (scattered around center and northeast)
-								["questID"] = 48339,
-								["coords"] = {
+								questID = 48339,
+								coords = {
 									{ 46.1, 40.7, KROKUUN },
 									{ 44.9, 43.5, KROKUUN },
 									{ 47.6, 42.0, KROKUUN },
@@ -193,8 +193,8 @@ root(ROOTS.Zones, {
 								},
 							}),
 							o(273222, {	-- Eredar War Supplies (southeast)
-								["questID"] = 48000,
-								["coords"] = {
+								questID = 48000,
+								coords = {
 									{ 63.0, 68.2, KROKUUN },
 									{ 67.9, 71.5, KROKUUN },
 									{ 69.2, 84.1, KROKUUN },
@@ -220,7 +220,7 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {
 	m(BROKEN_ISLES, {
 		m(ARGUS, {
 			m(KROKUUN, {

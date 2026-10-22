@@ -23,45 +23,45 @@ local COSMETIC_AND_LEVELING_BOX_SYM = {
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	n(LINGERING_SHADOWS, {
-		["timeline"] = { ADDED_12_0_5 },
-		["groups"] = {
+		timeline = { ADDED_12_0_5 },
+		groups = {
 			n(VOID_ASSAULTS, {
-				["maps"] = {
+				maps = {
 					MAP.MIDNIGHT.EVERSONG_WOODS,
 					MAP.MIDNIGHT.ZULAMAN,
 				},
-				["groups"] = {
+				groups = {
 					n(ACHIEVEMENTS, {	-- Achievements do not reward Mounts and Pets. They unlock the ability for you to buy them from the vendor.
 						ach(62574),	-- Accolade to Rest
 						ach(62573),	-- Air Traffic Controller
 						ach(62572),	-- Battery Bombardment
 						ach(62518),	-- Cosmic Exterminator
 						ach(62570, {	-- Cosmic Slayer
-							["crs"] = {
+							crs = {
 								252609,	-- Void-Corrupted Dart Frog
 								256589,	-- Void-Corrupted Matriarch
 								263912,	-- Void-Corrupted Springclaw Patriarch
 							},
 						}),
 						ach(62571, {	-- Everybody Gets One
-							["crs"] = {
+							crs = {
 								264269,	-- Brilliant Hawkstrider
 								264270,	-- Gloombelly Toad
 							},
 						}),
 						ach(63325, {	-- Omnium Folio Studies
-							["timeline"] = { ADDED_12_0_7 },
-							["maps"] = {
+							timeline = { ADDED_12_0_7 },
+							maps = {
 								MAP.MIDNIGHT.EVERSONG_WOODS,
 								MAP.MIDNIGHT.ISLE_OF_QUELDANAS,
 								MAP.MIDNIGHT.SILVERMOON_CITY,
 							},
-							["groups"] = { i(276083) },	-- Sunstrider Omnium Simulacrum (DECOR!)
+							groups = { i(276083) },	-- Sunstrider Omnium Simulacrum (DECOR!)
 						}),
 						ach(62513),	-- Outstanding in the Field
 						ach(64290, {	-- The Power of Stories
-							["timeline"] = { ADDED_12_1_7 },
-							["maps"] = {
+							timeline = { ADDED_12_1_7 },
+							maps = {
 								MAP.MIDNIGHT.EVERSONG_WOODS,
 								MAP.MIDNIGHT.ISLE_OF_QUELDANAS,
 								MAP.MIDNIGHT.SILVERMOON_CITY,
@@ -69,34 +69,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						ach(62569),	-- Traces in the Dark
 						ach(62606, {	-- The Sunstrider Omnium
-							["timeline"] = { ADDED_12_0_7 },
-							["maps"] = {
+							timeline = { ADDED_12_0_7 },
+							maps = {
 								MAP.MIDNIGHT.EVERSONG_WOODS,
 								MAP.MIDNIGHT.ISLE_OF_QUELDANAS,
 								MAP.MIDNIGHT.SILVERMOON_CITY,
 							},
 						}),
 						ach(62498, {	-- Void Assault: Eversong
-							["maps"] = { MAP.MIDNIGHT.EVERSONG_WOODS },
+							maps = { MAP.MIDNIGHT.EVERSONG_WOODS },
 						}),
 						ach(62499, {	-- Void Assault: Zul'Aman
-							["maps"] = { MAP.MIDNIGHT.ZULAMAN },
+							maps = { MAP.MIDNIGHT.ZULAMAN },
 						}),
 						ach(62509, {	-- Void Bane: Eversong
-							["maps"] = { MAP.MIDNIGHT.EVERSONG_WOODS },
+							maps = { MAP.MIDNIGHT.EVERSONG_WOODS },
 						}),
 						ach(62512, {	-- Void Bane: Zul'Aman
-							["maps"] = { MAP.MIDNIGHT.ZULAMAN },
+							maps = { MAP.MIDNIGHT.ZULAMAN },
 						}),
 						ach(62508, {	-- Void Eradicator: Eversong
-							["maps"] = { MAP.MIDNIGHT.EVERSONG_WOODS },
+							maps = { MAP.MIDNIGHT.EVERSONG_WOODS },
 						}),
 						ach(62511, {	-- Void Eradicator: Zul'Aman
-							["maps"] = { MAP.MIDNIGHT.ZULAMAN },
+							maps = { MAP.MIDNIGHT.ZULAMAN },
 						}),
 						ach(62563, {	-- Void Response Team
 							-- Meta Achievement
-							["sym"] = {{"meta_achievement",
+							sym = {{"meta_achievement",
 								62518,	-- Cosmic Exterminator
 								62513,	-- Outstanding in the Field
 								62498,	-- Void Assault: Eversong
@@ -107,10 +107,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						}),
 						ach(62568),	-- Void Shmoid
 						ach(62507, {	-- Void Smasher: Eversong
-							["maps"] = { MAP.MIDNIGHT.EVERSONG_WOODS },
+							maps = { MAP.MIDNIGHT.EVERSONG_WOODS },
 						}),
 						ach(62510, {	-- Void Smasher: Zul'Aman
-							["maps"] = { MAP.MIDNIGHT.ZULAMAN },
+							maps = { MAP.MIDNIGHT.ZULAMAN },
 						}),
 					}),
 					n(DROPS, {
@@ -123,10 +123,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					n(EVENT_COMPLETION, {
 						filter(BATTLE_PETS, {
 							i(270990, {	-- Curious Lynx Kitten (PET!)
-								["description"] = "This pet can drop only during Void Assault in Eversong Woods.",
+								description = "This pet can drop only during Void Assault in Eversong Woods.",
 							}),
 							i(270988, {	-- Wriggling Capybara (PET!)
-								["description"] = "This pet can drop only during Void Assault in Zul'Aman.",
+								description = "This pet can drop only during Void Assault in Zul'Aman.",
 							}),
 						}),
 						-- Nearly all cosmetics are added to vendor with 12.0.7.
@@ -279,38 +279,38 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(DARK_PARTICLE),
 						-- Boxes given to Max Level Characters
 						i(270933, {	-- Bulging Field Pouch
-							["sym"] = COSMETIC_BOX_SYM,
+							sym = COSMETIC_BOX_SYM,
 						}),
 						i(270244),	-- Field Pouch
 						i(270247, {	-- Field Satchel
-							["sym"] = {
+							sym = {
 								{ "select", "itemID", 270990 },{ "finalize" },	-- Curious Lynx Kitten (PET!)
 								{ "select", "itemID", 270988 },{ "finalize" },	-- Wriggling Capybara (PET!)
 								unpack(COSMETIC_BOX_SYM),
 							},
 						}),
 						i(270932, {	-- Wriggling Field Pouch
-							["sym"] = { { "select", "itemID",
+							sym = { { "select", "itemID",
 								270990,	-- Curious Lynx Kitten (PET!)
 								270988,	-- Wriggling Capybara (PET!)
 							}},
 						}),
 						-- Boxes given to Leveling Characters
 						i(271222, {	-- Bulging Recruit's Field Pouch
-							["description"] = "Earned with characters under level 90.",
-							["sym"] = COSMETIC_AND_LEVELING_BOX_SYM,
+							description = "Earned with characters under level 90.",
+							sym = COSMETIC_AND_LEVELING_BOX_SYM,
 						}),
 						i(270934, {	-- Recruit's Field Pouch
-							["description"] = "Earned with characters under level 90.",
-							["sym"] = LEVELING_BOX_SYM,
+							description = "Earned with characters under level 90.",
+							sym = LEVELING_BOX_SYM,
 						}),
 						i(270987, {	-- Recruit's Field Satchel
-							["description"] = "Earned with characters under level 90.",
-							["sym"] = LEVELING_BOX_SYM,
+							description = "Earned with characters under level 90.",
+							sym = LEVELING_BOX_SYM,
 						}),
 						i(271221, {	-- Wriggling Recruit's Field Pouch
-							["description"] = "Earned with characters under level 90.",
-							["sym"] = {
+							description = "Earned with characters under level 90.",
+							sym = {
 								{ "select", "itemID", 270990 },{ "finalize" },	-- Curious Lynx Kitten (PET!)
 								{ "select", "itemID", 270988 },{ "finalize" },	-- Wriggling Capybara (PET!)
 								unpack(LEVELING_BOX_SYM),
@@ -319,82 +319,82 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					}),
 					n(QUESTS, {
 						q(94380, {	-- Ranger Captain's Summons
-							["qg"] = 257459,	-- Farstrider Scout
-							["coord"] = { 49.4, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
-							["isBreadcrumb"] = true,
+							qg = 257459,	-- Farstrider Scout
+							coord = { 49.4, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+							isBreadcrumb = true,
 						}),
 						q(96080, {	-- Void Strike
-							["sourceQuest"] = 94380,	-- Ranger Captain's Summons
-							["qg"] = 257411,	-- Ranger Captain Lilatha
-							["coord"] = { 48.1, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
-							["groups"] = {
+							sourceQuest = 94380,	-- Ranger Captain's Summons
+							qg = 257411,	-- Ranger Captain Lilatha
+							coord = { 48.1, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+							groups = {
 								-- Box given to Max Level Characters
 								i(264914),	-- Ranger's Cache
 								-- Box given to Leveling Characters
 								i(272125, {	-- Recruit's Cache
-									["sym"] = LEVELING_BOX_SYM,
+									sym = LEVELING_BOX_SYM,
 								}),
 							},
 						}),
 						q(94381, {	-- Outfitting and Allies
-							["sourceQuest"] = 96080,	-- Void Strike
-							["qg"] = 257411,	-- Ranger Captain Lilatha
-							["coord"] = { 48.1, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+							sourceQuest = 96080,	-- Void Strike
+							qg = 257411,	-- Ranger Captain Lilatha
+							coord = { 48.1, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 						}),
 						q(94383, {	-- Ritual Interest
-							["description"] = "Becomes available after accepting 'Outfitting and Allies' (94381).",
-							["sourceQuest"] = 96080,	-- Void Strike
-							["qg"] = 257415,	-- Kul'amara the Fierce
-							["coord"] = { 48.1, 49.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+							description = "Becomes available after accepting 'Outfitting and Allies' (94381).",
+							sourceQuest = 96080,	-- Void Strike
+							qg = 257415,	-- Kul'amara the Fierce
+							coord = { 48.1, 49.9, MAP.MIDNIGHT.SILVERMOON_CITY },
 							-- This quest unlocks the 'Ritual Sites' faction
 						}),
 						-- Repeatable Quests, Assaults are weekly per zone. 1 week is in Eversong, 1 week is in Zul'Aman
 						q(94385, {	-- Void Assaults: Eversong Woods
-							["sourceQuest"] = 94381,	-- Outfitting and Allies
-							["qg"] = 257411,	-- Ranger Captain Lilatha
-							["coord"] = { 48.1, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
-							["isWeekly"] = true,
-							["groups"] = {
+							sourceQuest = 94381,	-- Outfitting and Allies
+							qg = 257411,	-- Ranger Captain Lilatha
+							coord = { 48.1, 49.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+							isWeekly = true,
+							groups = {
 								-- Box given to Max Level Characters
 								i(264914),	-- Ranger's Cache
 								-- Box given to Leveling Characters
 								i(272125, {	-- Recruit's Cache
-									["sym"] = LEVELING_BOX_SYM,
+									sym = LEVELING_BOX_SYM,
 								}),
 							},
 						}),
 						q(94386, {	-- Void Assaults: Zul'Aman
-							["sourceQuest"] = 94381,	-- Outfitting and Allies
-							["qg"] = 257415,	-- Kul'amara the Fierce
-							["coord"] = { 48.1, 49.9, MAP.MIDNIGHT.SILVERMOON_CITY },
-							["isWeekly"] = true,
-							["groups"] = {
+							sourceQuest = 94381,	-- Outfitting and Allies
+							qg = 257415,	-- Kul'amara the Fierce
+							coord = { 48.1, 49.9, MAP.MIDNIGHT.SILVERMOON_CITY },
+							isWeekly = true,
+							groups = {
 								-- Box given to Max Level Characters
 								i(264914),	-- Ranger's Cache
 								-- Box given to Leveling Characters
 								i(272125, {	-- Recruit's Cache
-									["sym"] = LEVELING_BOX_SYM,
+									sym = LEVELING_BOX_SYM,
 								}),
 							},
 						}),
 						header(HEADERS.Achievement, 62569, {	-- Traces in the Dark
 							q(94920, {	-- Hal'hadar Battery Core
-								["provider"] = { "i", 266448 },	-- Hal'hadar Battery Core (QS!)
+								provider = { "i", 266448 },	-- Hal'hadar Battery Core (QS!)
 							}),
 							q(95071, {	-- Enchanted Naga Scroll
-								["provider"] = { "i", 268809 },	-- Enchanted Naga Scroll (QS!)
+								provider = { "i", 268809 },	-- Enchanted Naga Scroll (QS!)
 							}),
 							q(95070, {	-- Permafrosted Keystone
-								["provider"] = { "i", 268808 },	-- Permafrosted Keystone (QS!)
+								provider = { "i", 268808 },	-- Permafrosted Keystone (QS!)
 							}),
 							q(95069, {	-- Torn Twilight Missive
-								["provider"] = { "i", 268807 },	-- Torn Twilight Missive (QS!)
+								provider = { "i", 268807 },	-- Torn Twilight Missive (QS!)
 							}),
 						}),
-						header(HEADERS.Achievement, 62606, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {	-- The Sunstrider Omnium
+						header(HEADERS.Achievement, 62606, bubbleDownSelf({ timeline = { ADDED_12_0_7 } }, {	-- The Sunstrider Omnium
 							q(96223, {	-- The Magister's Call
-								["qg"] = 265903,	-- Magister's Missive
-								["coords"] = {
+								qg = 265903,	-- Magister's Missive
+								coords = {
 									{ 38.6, 59.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 									{ 40.2, 72.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 									{ 47.6, 80.8, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -403,148 +403,148 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								},
 							}),
 							q(96224, {	-- The Magisters' Conundrum
-								["sourceQuest"] = 96223,	-- The Magister's Call
-								["qg"] = 264063,	-- Magister Umbric
-								["races"] = ALLIANCE_ONLY,
-								["coord"] = { 38.9, 48.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+								sourceQuest = 96223,	-- The Magister's Call
+								qg = 264063,	-- Magister Umbric
+								races = ALLIANCE_ONLY,
+								coord = { 38.9, 48.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 							}),
 							q(96225, {	-- The Magisters' Conundrum
-								["sourceQuest"] = 96223,	-- The Magister's Call
-								["qg"] = 264064,	-- Grand Magister Rommath
-								["races"] = HORDE_ONLY,
-								["coord"] = { 38.9, 48.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+								sourceQuest = 96223,	-- The Magister's Call
+								qg = 264064,	-- Grand Magister Rommath
+								races = HORDE_ONLY,
+								coord = { 38.9, 48.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 							}),
 							q(96227, {	-- Lycaneum Chaos
-								["sourceQuests"] = {
+								sourceQuests = {
 									96224,	-- The Magisters' Conundrum [A]
 									96225,	-- The Magisters' Conundrum [H]
 								},
-								["qg"] = 264066,	-- Grand Magister Rommath
-								["coord"] = { 63.2, 16.5, 2649 },	-- The Lycaneum, Magister's Terrace
+								qg = 264066,	-- Grand Magister Rommath
+								coord = { 63.2, 16.5, 2649 },	-- The Lycaneum, Magister's Terrace
 							}),
 							q(96226, {	-- Omnium Anomalies
-								["sourceQuests"] = {
+								sourceQuests = {
 									96224,	-- The Magisters' Conundrum [A]
 									96225,	-- The Magisters' Conundrum [H]
 								},
-								["qg"] = 264065,	-- Magister Umbric
-								["coord"] = { 61.8, 15.0, 2649 },	-- The Lycaneum, Magister's Terrace
+								qg = 264065,	-- Magister Umbric
+								coord = { 61.8, 15.0, 2649 },	-- The Lycaneum, Magister's Terrace
 							}),
 							q(96228, {	-- The Shadowed Spire
-								["sourceQuests"] = {
+								sourceQuests = {
 									96227,	-- Lycaneum Chaos
 									96226,	-- Omnium Anomalies
 								},
-								["qg"] = 264065,	-- Magister Umbric
-								["coord"] = { 61.6, 14.9, 2649 },	-- The Lycaneum, Magister's Terrace
+								qg = 264065,	-- Magister Umbric
+								coord = { 61.6, 14.9, 2649 },	-- The Lycaneum, Magister's Terrace
 							}),
 							q(96230, {	-- Unravelling the Wards
-								["sourceQuests"] = {
+								sourceQuests = {
 									96227,	-- Lycaneum Chaos
 									96226,	-- Omnium Anomalies
 								},
-								["qg"] = 264066,	-- Grand Magister Rommath
-								["coords"] = {
+								qg = 264066,	-- Grand Magister Rommath
+								coords = {
 									{ 63.6, 14.0, 2649 },	-- The Lycaneum, Magister's Terrace
 									{ 63.6, 16.3, 2649 },	-- The Lycaneum, Magister's Terrace
 								},
 							}),
 							q(96231, {	-- Unravelling the Wards
-								["sourceQuest"] = 96230,	-- Unravelling the Wards
-								["qg"] = 264945,	-- Grand Magister Rommath
-								["coord"] = { 58.9, 57.3, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
-								["groups"] = { i(274261) },	-- Grand Magister's Key-Cipher (QI!)
+								sourceQuest = 96230,	-- Unravelling the Wards
+								qg = 264945,	-- Grand Magister Rommath
+								coord = { 58.9, 57.3, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+								groups = { i(274261) },	-- Grand Magister's Key-Cipher (QI!)
 							}),
 							q(96229, {	-- The Void Reveals
-								["sourceQuest"] = 96228,	-- The Shadowed Spire
-								["qg"] = 264067,	-- Magister Umbric
-								["coord"] = { 62.6, 63.1, MAP.MIDNIGHT.EVERSONG_WOODS },
-								["groups"] = { i(274036) },	-- Void Magicule (QI!)
+								sourceQuest = 96228,	-- The Shadowed Spire
+								qg = 264067,	-- Magister Umbric
+								coord = { 62.6, 63.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+								groups = { i(274036) },	-- Void Magicule (QI!)
 							}),
 							q(96232, {	-- Return to the Omnium
-								["sourceQuests"] = {
+								sourceQuests = {
 									96229,	-- The Void Reveals
 									96231,	-- Unravelling the Wards
 								},
-								["qgs"] = {
+								qgs = {
 									264787,	-- Magister Umbric
 									269814,	-- Magister Umbric
 								},
-								["altQuests"] = { 96238 },	-- Return to the Omnium
-								["coord"] = { 62.5, 62.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+								altQuests = { 96238 },	-- Return to the Omnium
+								coord = { 62.5, 62.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 							}),
 							q(96238, {	-- Return to the Omnium
-								["sourceQuests"] = {
+								sourceQuests = {
 									96229,	-- The Void Reveals
 									96231,	-- Unravelling the Wards
 								},
-								["qg"] = 264944,	-- Grand Magister Rommath
-								["altQuests"] = { 96232 },	-- Return to the Omnium
-								["coord"] = { 59.0, 59.3, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+								qg = 264944,	-- Grand Magister Rommath
+								altQuests = { 96232 },	-- Return to the Omnium
+								coord = { 59.0, 59.3, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 							}),
 							q(96233, {	-- The Omnium Reawakens
-								["sourceQuests"] = {
+								sourceQuests = {
 									96227,	-- Lycaneum Chaos
 									96226,	-- Omnium Anomalies
 								},
-								["qg"] = 264066,	-- Grand Magister Rommath
-								["coord"] = { 63.4, 16.4, 2649 },	-- The Lycaneum, Magister's Terrace
+								qg = 264066,	-- Grand Magister Rommath
+								coord = { 63.4, 16.4, 2649 },	-- The Lycaneum, Magister's Terrace
 							}),
 						})),
-						header(HEADERS.Achievement, 63325, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {	-- Omnium Folio Studies
+						header(HEADERS.Achievement, 63325, bubbleDownSelf({ timeline = { ADDED_12_0_7 } }, {	-- Omnium Folio Studies
 							q(96410, {	-- Seeking Knowledge: The Omnium Folio
-								["sourceQuest"] = 96233,	-- The Omnium Reawakens
-								["qg"] = 264069,	-- Magister Umbric
-								["coord"] = { 60.4, 10.4, 2649 },	-- The Lycaneum, Magister's Terrace
+								sourceQuest = 96233,	-- The Omnium Reawakens
+								qg = 264069,	-- Magister Umbric
+								coord = { 60.4, 10.4, 2649 },	-- The Lycaneum, Magister's Terrace
 							}),
 							q(96831, {	-- Magister's Summons
-								["sourceQuest"] = 96410,	-- Seeking Knowledge: The Omnium Folio
-								["description"] = "You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",	-- Or will it pop-up on first log-in when eligible?
-								["qg"] = 265903,	-- Magister's Missive
-								["coords"] = {
+								sourceQuest = 96410,	-- Seeking Knowledge: The Omnium Folio
+								description = "You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",	-- Or will it pop-up on first log-in when eligible?
+								qg = 265903,	-- Magister's Missive
+								coords = {
 									{ 38.6, 59.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 									{ 40.2, 72.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 									{ 47.8, 51.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 									{ 50.8, 73.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 								},
-								["isBreadcrumb"] = true,
-								["isWeekly"] = true,	-- Unflags at first relog. This is a breadcrumb for all the 'Seeking Knowledge Week X of 5' quests.	-- Exo
+								isBreadcrumb = true,
+								isWeekly = true,	-- Unflags at first relog. This is a breadcrumb for all the 'Seeking Knowledge Week X of 5' quests.	-- Exo
 							}),
 							q(96441, {	-- Seeking Knowledge Week 2 of 5: Ritualized Arcana
-								["sourceQuests"] = {
+								sourceQuests = {
 									96831,	-- Magister's Summons
 									96410,	-- Seeking Knowledge: The Omnium Folio
 								},
-								["qg"] = 264069,	-- Magister Umbric
-								["coord"] = { 60.4, 10.4, 2649 },	-- The Lycaneum, Magister's Terrace
-								["qi"] = 274576,	-- Ritualized Arcana (QI!)
+								qg = 264069,	-- Magister Umbric
+								coord = { 60.4, 10.4, 2649 },	-- The Lycaneum, Magister's Terrace
+								qi = 274576,	-- Ritualized Arcana (QI!)
 							}),
 							------ Stay awhile and listen ------
 							hqt(97139, {	-- Stay awhile and listen: Grand Magister Rommath
-								["name"] = "Stay awhile and listen: Grand Magister Rommath",
-								["description"] = "Dialogue becomes available after completing 'Seeking Knowledge Week 2 of 5: Ritualized Arcana' (96441).",
-								["sourceQuest"] = 96441,	-- Seeking Knowledge Week 2 of 5: Ritualized Arcana
-								["qg"] = 264070,	-- Grand Magister Rommath
-								["coord"] = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
+								name = "Stay awhile and listen: Grand Magister Rommath",
+								description = "Dialogue becomes available after completing 'Seeking Knowledge Week 2 of 5: Ritualized Arcana' (96441).",
+								sourceQuest = 96441,	-- Seeking Knowledge Week 2 of 5: Ritualized Arcana
+								qg = 264070,	-- Grand Magister Rommath
+								coord = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
 							}),
 							--
 							q(96442, {	-- Seeking Knowledge Week 3 of 5: Leyline Assaults
-								["sourceQuests"] = {
+								sourceQuests = {
 									96831,	-- Magister's Summons
 									96441,	-- Seeking Knowledge Week 2 of 5: Ritualized Arcana
 								},
-								["qg"] = 264070,	-- Grand Magister Rommath
-								["coord"] = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
-								["qi"] = 274577,	-- Dark-Ley Coalescence (QI!)
+								qg = 264070,	-- Grand Magister Rommath
+								coord = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
+								qi = 274577,	-- Dark-Ley Coalescence (QI!)
 							}),
 							q(96443, {	-- Seeking Knowledge Week 4 of 5: Magical Primessence
-								["sourceQuests"] = {
+								sourceQuests = {
 									96831,	-- Magister's Summons
 									96442,	-- Seeking Knowledge Week 3 of 5: Leyline Assaults
 								},
-								["qg"] = 264070,	-- Grand Magister Rommath
-								["coord"] = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
-								["qis"] = {
+								qg = 264070,	-- Grand Magister Rommath
+								coord = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
+								qis = {
 									274583,	-- Primessence of Arcane (QI!)
 									274585,	-- Primessence of Death (QI!)
 									274580,	-- Primessence of Fel (QI!)
@@ -554,13 +554,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								},
 							}),
 							q(96444, {	-- Seeking Knowledge Week 5 of 5: Off-World Magic
-								["sourceQuests"] = {
+								sourceQuests = {
 									96831,	-- Magister's Summons
 									96443,	-- Seeking Knowledge Week 4 of 5: Magical Primessence
 								},
-								["qg"] = 264069,	-- Magister Umbric
-								["coord"] = { 60.5, 11.4, 2649 },	-- The Lycaneum, Magister's Terrace
-								["qis"] = {
+								qg = 264069,	-- Magister Umbric
+								coord = { 60.5, 11.4, 2649 },	-- The Lycaneum, Magister's Terrace
+								qis = {
 									274640,	-- Arcfluxion Hydrospore (QI!)
 									274620,	-- Singularian Cryocore (QI!)
 								},
@@ -575,14 +575,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(VOID_ASSAULTS, {
-		["timeline"] = { ADDED_12_0_5 },
-		["groups"] = {
+		timeline = { ADDED_12_0_5 },
+		groups = {
 			n(QUESTS, {
-				q(92589, {["isRepeatable"] = true,}),	-- <DNT> Last Scenario Step Quest, Triggers after completing any Void Strike
-				q(94456, {["isRepeatable"] = true,}),	-- <DNT> Last Scenario Step Quest, Triggers after completing a Void Incursion
-				q(96100, {["timeline"] = { ADDED_12_0_7 }}),	-- Triggered when accepting "Seeking Knowledge: The Omnium Folio' (96410)
-				q(97491, {["timeline"] = { ADDED_12_0_7 }, ["isRepeatable"] = true}),	-- <DNT> Early Scenario Steps Quest, Triggers after completing phase 1 of any Void Strike
-				q(97492, {["timeline"] = { ADDED_12_0_7 }, ["isRepeatable"] = true}),	-- <DNT> Early Scenario Steps Quest, Triggers after completing phase 1 of Void Incursion
+				q(92589, {isRepeatable = true,}),	-- <DNT> Last Scenario Step Quest, Triggers after completing any Void Strike
+				q(94456, {isRepeatable = true,}),	-- <DNT> Last Scenario Step Quest, Triggers after completing a Void Incursion
+				q(96100, {timeline = { ADDED_12_0_7 }}),	-- Triggered when accepting "Seeking Knowledge: The Omnium Folio' (96410)
+				q(97491, {timeline = { ADDED_12_0_7 }, isRepeatable = true}),	-- <DNT> Early Scenario Steps Quest, Triggers after completing phase 1 of any Void Strike
+				q(97492, {timeline = { ADDED_12_0_7 }, isRepeatable = true}),	-- <DNT> Early Scenario Steps Quest, Triggers after completing phase 1 of Void Incursion
 			}),
 		},
 	}),

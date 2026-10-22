@@ -3,69 +3,69 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(257, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {	-- The Botanica
-		["lore"] = "Since Kael'thas and his blood elves seized Tempest Keep from the naaru they have had quite the time to investigate and find a usage for the technology in it. The Botanica appears to be the satellite chosen especially for this purpose. Here, blood elf scientists carry out experiments on the flora in Outland, how naaru technology can be used to create and manipulate living beings, and how all this can grant the blood elves new powers. It seems, however, that the results were not quite as expected, and thus some of the experiments have gotten out of control...",
+	inst(257, bubbleDownSelf({ timeline = { ADDED_2_0_3 } }, {	-- The Botanica
+		lore = "Since Kael'thas and his blood elves seized Tempest Keep from the naaru they have had quite the time to investigate and find a usage for the technology in it. The Botanica appears to be the satellite chosen especially for this purpose. Here, blood elf scientists carry out experiments on the flora in Outland, how naaru technology can be used to create and manipulate living beings, and how all this can grant the blood elves new powers. It seems, however, that the results were not quite as expected, and thus some of the experiments have gotten out of control...",
 		-- #if BEFORE MOP
-		["zoneTextAreaID"] = 3847,	-- The Botanica
+		zoneTextAreaID = 3847,	-- The Botanica
 		-- #endif
-		["mapID"] = TEMPEST_KEEP_BOTANICA,
-		["coord"] = { 71.74, 54.95, NETHERSTORM },	-- The Botanica, Netherstorm
-		["lvl"] = lvlsquish(65, 65, 20),
-		["groups"] = {
+		mapID = TEMPEST_KEEP_BOTANICA,
+		coord = { 71.74, 54.95, NETHERSTORM },	-- The Botanica, Netherstorm
+		lvl = lvlsquish(65, 65, 20),
+		groups = {
 			n(QUESTS, {
 				q(29669, {	-- A Most Somber Task
-					["sourceQuest"] = 29667,	-- Culling the Herd
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(67, 67, 20),
-					["groups"] = {
+					sourceQuest = 29667,	-- Culling the Herd
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(67, 67, 20),
+					groups = {
 						objective(1, {	-- Warp Splinter slain
-							["provider"] = { "n", 17977 },	-- Warp Splinter
+							provider = { "n", 17977 },	-- Warp Splinter
 						}),
 					},
 				}),
 				q(10257, {	-- Capturing the Keystone
-					["sourceQuest"] = 10256,	-- Finding the Keymaster
-					["qg"] = 19481,	-- Archmage Vargoth
-					["coord"] = { 58.3, 86.4, NETHERSTORM },
-					["lvl"] = lvlsquish(67, 67, 25),
-					["groups"] = {
+					sourceQuest = 10256,	-- Finding the Keymaster
+					qg = 19481,	-- Archmage Vargoth
+					coord = { 58.3, 86.4, NETHERSTORM },
+					lvl = lvlsquish(67, 67, 25),
+					groups = {
 						objective(1, {	-- 0/1 The Keystone
-							["provider"] = { "i", 28769 },	-- The Keystone
+							provider = { "i", 28769 },	-- The Keystone
 						}),
 					},
 				}),
 				q(29667, {	-- Culling the Herd
-					["sourceQuest"] = 29660,	-- Saving the Botanica
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(67, 67, 20),
-					["groups"] = {
+					sourceQuest = 29660,	-- Saving the Botanica
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(67, 67, 20),
+					groups = {
 						objective(1, {	-- 0/6 Mutate Fleshlasher slain
-							["provider"] = { "n", 19598 },	-- Mutate Fleshlasher
+							provider = { "n", 19598 },	-- Mutate Fleshlasher
 						}),
 						objective(2, {	-- 0/6 Mutate Fear-Shrieker slain
-							["provider"] = { "n", 19513 },	-- Mutate Fear-Shrieker
+							provider = { "n", 19513 },	-- Mutate Fear-Shrieker
 						}),
 						objective(3, {	-- 0/6 Mutate Horror slain
-							["provider"] = { "n", 19865 },	-- Mutate Horror
+							provider = { "n", 19865 },	-- Mutate Horror
 						}),
 						objective(4, {	-- 0/1 Rapidly Evolving Frond
-							["provider"] = { "i", 72706 },	-- Rapidly Evolving Frond
+							provider = { "i", 72706 },	-- Rapidly Evolving Frond
 						}),
 					},
 				}),
 				q(29660, {	-- Saving the Botanica
-					["description"] = "Automatically provided upon starting the instance.",
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(67, 67, 20),
-					["groups"] = {
+					description = "Automatically provided upon starting the instance.",
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(67, 67, 20),
+					groups = {
 						objective(1, {	-- Commander Sarannis slain
-							["provider"] = { "n", 17976 },	-- Commander Sarannis
+							provider = { "n", 17976 },	-- Commander Sarannis
 						}),
 						objective(2, {	-- High Botanist Freywinn slain
-							["provider"] = { "n", 17975 },	-- High Botanist Freywinn
+							provider = { "n", 17975 },	-- High Botanist Freywinn
 						}),
 						objective(3, {	-- Thorngrin the Tender slain
-							["provider"] = { "n", 17978 },	-- Thorngrin the Tender
+							provider = { "n", 17978 },	-- Thorngrin the Tender
 						}),
 					},
 				}),
@@ -74,13 +74,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				i(32902),	-- Bottled Nethergon Energy
 				i(32905),	-- Bottled Nethergon Vapor
 				i(24172, {	-- Design: Coronet of Verdant Flame (RECIPE!)
-					["cr"] = 18422,	-- Sunseeker Botanist
+					cr = 18422,	-- Sunseeker Botanist
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(558, {	-- Commander Sarannis
-					["creatureID"] = 17976,
-					["groups"] = {
+					creatureID = 17976,
+					groups = {
 						i(28304),	-- Prismatic Mittens of Mending
 						i(28311),	-- Revenger
 						i(28301),	-- Sarannis' Mystic Sheen
@@ -91,15 +91,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						-- #endif
 						-- #if BEFORE MOP
 						i(28296, {	-- Libram of the Lightbringer
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 						i(28769),	-- The Keystone
 					},
 				}),
 				e(559, {	-- High Botanist Freywinn
-					["creatureID"] = 17975,
-					["groups"] = {
+					creatureID = 17975,
+					groups = {
 						i(28316),	-- Aegis of the Sunbird
 						-- #if AFTER 7.3.5
 						i(28228),	-- Beast Lord Cuirass (7.3.5 - Moved from Warp Splinter)
@@ -115,8 +115,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				e(560, {	-- Thorngrin the Tender
-					["creatureID"] = 17978,
-					["groups"] = {
+					creatureID = 17978,
+					groups = {
 						i(28327),	-- Arcane Netherband
 						i(28325),	-- Dreamer's Dragonstaff
 						i(28324),	-- Gauntlets of Cruel Intention
@@ -126,8 +126,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				e(561, {	-- Laj
-					["creatureID"] = 17980,
-					["groups"] = {
+					creatureID = 17980,
+					groups = {
 						i(28339),	-- Boots of the Shifting Sands
 						i(28338),	-- Devil-Stitched Leggings
 						i(28340),	-- Mantle of Autumn
@@ -137,13 +137,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(28349),	-- Tidefury Helm (7.3.5 - Moved from Warp Splinter)
 						-- #endif
 						i(72706, {	-- Rapidly Evolving Frond
-							["timeline"] = { ADDED_4_3_0 },
+							timeline = { ADDED_4_3_0 },
 						}),
 					},
 				}),
 				e(562, {	-- Warp Splinter
-					["creatureID"] = 17977,
-					["groups"] = {
+					creatureID = 17977,
+					groups = {
 						ach(659),	-- The Botanica
 						i(28370),	-- Bangle of Endless Blessings
 						-- #if BEFORE 7.3.5
@@ -179,25 +179,25 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
-				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["cost"] = {
+				description = "You need to have a key to the instance in order to access this mode.",
+				cost = {
 					-- #if CLASSIC_ANNIVERSARY
 					{ "i", 265847, 1 },	-- Communal Warpforged Key
 					-- #endif
 					{ "i", 30634, 1 },	-- Warpforged Key
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 70, 30),
-				["groups"] = {
+				lvl = lvlsquish(70, 70, 30),
+				groups = {
 					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
+						crs = {
 							17976,	-- Commander Sarannis
 							17975,	-- High Botanist Freywinn
 							17978,	-- Thorngrin the Tender
 							17980,	-- Laj
 							17977,	-- Warp Splinter
 						},
-						["groups"] = {
+						groups = {
 							-- #if BEFORE CATA
 							BADGE_OF_JUSTICE(1),
 							-- #endif
@@ -207,8 +207,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					e(558, {	-- Commander Sarannis
-						["creatureID"] = 17976,
-						["groups"] = {
+						creatureID = 17976,
+						groups = {
 							i(28304),	-- Prismatic Mittens of Mending
 							i(28311),	-- Revenger
 							i(28301),	-- Sarannis' Mystic Sheen
@@ -219,15 +219,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #endif
 							-- #if BEFORE MOP
 							i(28296, {	-- Libram of the Lightbringer
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(28769),	-- The Keystone
 						},
 					}),
 					e(559, {	-- High Botanist Freywinn
-						["creatureID"] = 17975,
-						["groups"] = {
+						creatureID = 17975,
+						groups = {
 							i(28316),	-- Aegis of the Sunbird
 							-- #if AFTER 7.3.5
 							i(28228),	-- Beast Lord Cuirass (7.3.5 - Moved from Warp Splinter)
@@ -243,8 +243,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					e(560, {	-- Thorngrin the Tender
-						["creatureID"] = 17978,
-						["groups"] = {
+						creatureID = 17978,
+						groups = {
 							i(28327),	-- Arcane Netherband
 							i(28325),	-- Dreamer's Dragonstaff
 							i(28324),	-- Gauntlets of Cruel Intention
@@ -254,8 +254,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					e(561, {	-- Laj
-						["creatureID"] = 17980,
-						["groups"] = {
+						creatureID = 17980,
+						groups = {
 							i(28339),	-- Boots of the Shifting Sands
 							i(28338),	-- Devil-Stitched Leggings
 							i(28340),	-- Mantle of Autumn
@@ -265,16 +265,16 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(28349),	-- Tidefury Helm (7.3.5 - Moved from Warp Splinter)
 							-- #endif
 							i(72706, {	-- Rapidly Evolving Frond
-								["timeline"] = { ADDED_4_3_0 },
+								timeline = { ADDED_4_3_0 },
 							}),
 						},
 					}),
 					e(562, {	-- Warp Splinter
-						["creatureID"] = 17977,
-						["groups"] = {
+						creatureID = 17977,
+						groups = {
 							ach(680),	-- Heroic: The Botanica
 							ach(5080, {	-- Heroic: The Botanica Guild Run
-								["timeline"] = { ADDED_4_0_3 },
+								timeline = { ADDED_4_0_3 },
 							}),
 							i(28370),	-- Bangle of Endless Blessings
 							-- #if BEFORE 7.3.5
@@ -313,7 +313,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(257, {
 		q(35525),	-- The Botanica Reward Quest - Normal completion
 		q(35526),	-- The Botanica Reward Quest - Heroic completion

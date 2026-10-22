@@ -12,7 +12,7 @@ FOLLOWERS = createHeader({
 
 n_TrainingFollowers = function(t)
 	return n(FOLLOWERS, bubbleDown({
-		-- ["collectible"] = false,	-- no real reason to explicitly make these uncollectible since they're unlearnable anyway
-		["u"] = UNLEARNABLE,	-- Temporary troops
+		-- collectible = false,	-- no real reason to explicitly make these uncollectible since they're unlearnable anyway
+		u = UNLEARNABLE,	-- Temporary troops
 	},t))
 end

@@ -2,54 +2,54 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 	m(DRUSTVAR, {
 		n(ZONE_DROPS, {
 			i(160027, {	-- Ashenwood Relic (QS!)
-				["coord"] = { 26.0, 41.0, DRUSTVAR },
-				["crs"] = {
+				coord = { 26.0, 41.0, DRUSTVAR },
+				crs = {
 					135902,	-- Bloodbough Fungalmancer
 					135901,	-- Bloodbough Funggarian
 				},
 			}),
 			i(158918, {	-- Bilgewater Patented Flamethrower (QS!)
-				["coord"] = { 38.4, 36.6, DRUSTVAR },
-				["cr"] = 135541,	-- Bilgewater Incinerator
+				coord = { 38.4, 36.6, DRUSTVAR },
+				cr = 135541,	-- Bilgewater Incinerator
 			}),
 			n(137468, {	-- Gorging Raven
-				["description"] = "Coords represent relative bounds of the area.",
-				["coords"] = {
+				description = "Coords represent relative bounds of the area.",
+				coords = {
 					{ 25.8, 19.8, DRUSTVAR },
 					{ 24.2, 30.4, DRUSTVAR },
 					{ 26.6, 29.2, DRUSTVAR },
 					{ 30.0, 22.6, DRUSTVAR },
 					{ 30.2, 29.0, DRUSTVAR },
 				},
-				["groups"] = {
+				groups = {
 					i(163710),	-- Merchant's Key
 				},
 			}),
 			i(168126, {	-- Grasping Wicker Arm
-				["requireSkill"] = ENCHANTING,
-				["crs"] = {
+				requireSkill = ENCHANTING,
+				crs = {
 					138244,	-- Briarwood Bulwark
 					133118,	-- Gnarled Hulk
 					137133,	-- Wicker Golem
 				},
 			}),
 			i(156517, {	-- Hastily Drawn Map (QS!)
-				["coord"] = { 39.2, 50.4, DRUSTVAR },
-				["crs"] = {
+				coord = { 39.2, 50.4, DRUSTVAR },
+				crs = {
 					129575,	-- Corlain Refugee
 					129641,	-- Corlain Refugee
 				},
 			}),
 			i(159748, {	-- Rune-Etched Bone (QS!)
-				["coord"] = { 44.8, 32.6, DRUSTVAR },	-- General area where Awakened Dead can be found
-				["cr"] = 136490,	-- Awakened Dead
+				coord = { 44.8, 32.6, DRUSTVAR },	-- General area where Awakened Dead can be found
+				cr = 136490,	-- Awakened Dead
 			}),
 			i(163574, {	-- Terrified Pack Mule (MOUNT!)
-				["crs"] = {
+				crs = {
 					133892,	-- Hexthralled Crossbowman
 					131534,	-- Hexthralled Guardsman
 					131530,	-- Hexthralled Guardsman

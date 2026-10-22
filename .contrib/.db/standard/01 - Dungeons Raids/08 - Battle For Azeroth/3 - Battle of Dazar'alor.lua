@@ -2,13 +2,13 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8_1_0 } }, {
 	inst(1176, {	-- Battle of Dazar'alor
-		["coords"] = {
+		coords = {
 			{ 70.5, 35.3, BORALUS },	-- Alliance
 			{ 38.8, 2.40, DAZARALOR },	-- Horde
 		},
-		["maps"] = {
+		maps = {
 			1352,	-- Port of Zandalar
 			1357,	-- The Zocalo
 			1353,	-- Halls of Opulence
@@ -18,13 +18,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			1364,	-- The Great Sea
 			1367,	-- Boralus
 		},
-		["isRaid"] = true,
-		["groups"] = {
+		isRaid = true,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(40961, {	-- Batle of Dazar'alor
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						13290,	-- Death's Bargain
 						13289,	-- Defense of Dazar'alor
 						13287,	-- Empire's Fall
@@ -35,7 +35,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				ach(13385),	-- Daz'aling Attire
 				ach(13315, {	-- Glory of the Dazar'alor Raider
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						13316,	-- Can I Get a Hek Hek Hek Yeah?
 						13325,	-- Walk the Dinosaur
 						13345,	-- Praise the Sunflower
@@ -46,7 +46,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						13430,	-- De Lurker Be'loa
 						13425,	-- We Got Spirit, How About You?
 					}},
-					["groups"] = {
+					groups = {
 						i(166539),	-- Dazar'alor Windreaver (MOUNT!)
 					},
 				}),
@@ -67,102 +67,102 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 3] (RECIPE!)
 			}),
 			d(DIFFICULTY.RAID.MULTI.ALL, {	-- Queue NPC
-				["crs"] = {
+				crs = {
 					177193,	-- Kiku
 					177208,	-- Eppu
 				},
-				["coords"] = {
+				coords = {
 					{ 74.0, 13.4, BORALUS },	-- Kiku
 					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 				},
 			}),
 			d(DIFFICULTY.RAID.MULTI.ALL, {
 				-- e(2344, {	-- Champion of the Light	-- 2333 Horde
-				-- 	["crs"] = {
+				-- 	crs = {
 				-- 		144683,	-- Ra'wani Kanae (A)
 				-- 		144680,	-- Frida Ironbellows (H)
 				-- 	},
-				-- 	["groups"] = {
+				-- 	groups = {
 				-- 	},
 				-- }),
 				-- e(2323, {	-- Jadefire Masters	-- 2341 Horde
-				-- 	["crs"] = {
+				-- 	crs = {
 				-- 		144692,	-- Anathos Firecaller (A)
 				-- 		144691,	-- Ma'ra Grimfang (A)
 				-- 		144693,	-- Manceroy Flamefist (H)
 				-- 		144690,	-- Mestrah <The Illuminated> (H)
 				-- 	},
-				-- 	["groups"] = {
+				-- 	groups = {
 				-- 	},
 				-- }),
 				-- e(2340, {	-- Grong, the Revenant	-- 2325 Horde
-				-- 	["crs"] = {
+				-- 	crs = {
 				-- 		144638,	-- Grong the Revenant (A)
 				-- 		148117,	-- Grong the Revenant (H)
 				-- 	},
-				-- 	["groups"] = {
+				-- 	groups = {
 				-- 	},
 				-- }),
 				-- e(2342, {	-- Opulence
-				-- 	["crs"] = {
+				-- 	crs = {
 				-- 		145261,	-- Opulence
 				-- 		145274,	-- Yalat's Bulwark
 				-- 		145273,	-- The Hand of In'zashi
 				-- 	},
-				-- 	["groups"] = {
+				-- 	groups = {
 				-- 	},
 				-- }),
 				e(2330, {	-- Loa Council / Conclave of the Chosen
-					["crs"] = {
+					crs = {
 						144941,	-- Akunda's Aspect
 						144767,	-- Gonk's Aspect
 						144963,	-- Kimbul's Aspect
 						144747,	-- Pa'ku's Aspect
 					},
-					["groups"] = {
+					groups = {
 						i(165846),	-- Child of Pa'ku (PET!)
 						i(165847),	-- Thunder Lizard Runt (PET!)
 					},
 				}),
 				e(2335, {	-- King Rastakhan
-					["crs"] = {
+					crs = {
 						145644,	-- Bwonsamdi
 						145616,	-- King Rastakhan
 						146492,	-- Phantom of Rage
 						146322,	-- Siegebreaker Roka
 					},
-					["groups"] = {
+					groups = {
 						i(165696),	-- Formula: Enchanted Tiki Mask (RECIPE!)
 						ig(168129),	-- Essence of the Troll Dynasty
 					},
 				}),
 				e(2334, {	-- High Tinker Mekkatorque
-					["crs"] = { 144796 },	-- High Tinker Mekkatorque
-					["groups"] = {
+					crs = { 144796 },	-- High Tinker Mekkatorque
+					groups = {
 						i(166276),	-- Schematic: Unstable Temporal Time Shifter (RECIPE!)
 					},
 				}),
 				-- e(2337, cr(146256, {	-- Stormwall Blockade / Laminaria
-				-- 	["crs"] = {
+				-- 	crs = {
 				-- 		146253,	-- Brother Joseph
 				-- 		146251,	-- Sister Katherine
 				-- 	},
-				-- 	["groups"] = {
+				-- 	groups = {
 				-- 	},
 				-- })),
 				e(2343, {	-- Lady Jaina Proudmoore
-					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
-					["groups"] = {
+					crs = { 146409 },	-- Lady Jaina Proudmoore
+					groups = {
 						i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
 					},
 				}),
 			}),
 			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
-				["crs"] = {
+				crs = {
 					177193,	-- Kiku
 					177208,	-- Eppu
 				},
-				["coords"] = {
+				coords = {
 					{ 74.0, 13.4, BORALUS },	-- Kiku
 					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 				},
@@ -181,18 +181,18 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				header(HEADERS.LFGDungeonByFaction, 1945.1948, {	-- Siege of Dazar'alor (A) / Defense of Dazar'alor (H)
 					e(2344, {	-- Champion of the Light	-- 2333 Horde
-						["crs"] = {
+						crs = {
 							144683,	-- Ra'wani Kanae (A)
 							144680,	-- Frida Ironbellows (H)
 						},
-						["groups"] = {
+						groups = {
 							crit(43867, {	-- Champion of the Light (A)
-								["races"] = ALLIANCE_ONLY,
-								["achievementID"] = 13286,	-- Siege of Dazar'alor
+								races = ALLIANCE_ONLY,
+								achievementID = 13286,	-- Siege of Dazar'alor
 							}),
 							crit(43867, {	-- Champion of the Light (H)
-								["races"] = HORDE_ONLY,
-								["achievementID"] = 13289,	-- Defense of Dazar'alor
+								races = HORDE_ONLY,
+								achievementID = 13289,	-- Defense of Dazar'alor
 							}),
 							i(165586),	-- Dawnbreaker
 							i(165919),	-- Desecrated Blade of the Disciples
@@ -210,20 +210,20 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2323, {	-- Jadefire Masters	-- 2341 Horde
-						["crs"] = {
+						crs = {
 							144692,	-- Anathos Firecaller (A)
 							144691,	-- Ma'ra Grimfang (A)
 							144693,	-- Manceroy Flamefist (H)
 							144690,	-- Mestrah <The Illuminated> (H)
 						},
-						["groups"] = {
+						groups = {
 							crit(43884, {	-- Jadefire Masters (A)
-								["races"] = ALLIANCE_ONLY,
-								["achievementID"] = 13286,	-- Siege of Dazar'alor
+								races = ALLIANCE_ONLY,
+								achievementID = 13286,	-- Siege of Dazar'alor
 							}),
 							crit(43876, {	-- Jadefire Masters (H)
-								["races"] = HORDE_ONLY,
-								["achievementID"] = 13289,	-- Defense of Dazar'alor
+								races = HORDE_ONLY,
+								achievementID = 13289,	-- Defense of Dazar'alor
 							}),
 							i(165587),	-- Phoenixfire Staff
 							i(165500),	-- Blazewing Hood
@@ -241,19 +241,19 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2340, {	-- Grong, the Revenant	-- 2325 Horde
-						["crs"] = {
+						crs = {
 							144637,	-- Grong (H)
 							144638,	-- Grong the Revenant (A)
 							148117,	-- Grong the Revenant (H)
 						},
-						["groups"] = {
+						groups = {
 							crit(43868, {	-- Grong, the Revenant (A)
-								["races"] = ALLIANCE_ONLY,
-								["achievementID"] = 13286,	-- Siege of Dazar'alor
+								races = ALLIANCE_ONLY,
+								achievementID = 13286,	-- Siege of Dazar'alor
 							}),
 							crit(43875, {	-- Grong, the Revenant (H)
-								["races"] = HORDE_ONLY,
-								["achievementID"] = 13289,	-- Defense of Dazar'alor
+								races = HORDE_ONLY,
+								achievementID = 13289,	-- Defense of Dazar'alor
 							}),
 							i(165589),	-- Hornridged Crusher
 							i(165920),	-- Apetagonizer's Claw
@@ -274,19 +274,19 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				header(HEADERS.LFGDungeonByFaction, 1946.1949, {	-- Empire's Fall (A) / Death's Bargain (H)
 					e(2342, {	-- Opulence
-						["crs"] = {
+						crs = {
 							145261,	-- Opulence
 							145274,	-- Yalat's Bulwark
 							145273,	-- The Hand of In'zashi
 						},
-						["groups"] = {
+						groups = {
 							crit(43869, {	-- Opulence (A)
-								["races"] = ALLIANCE_ONLY,
-								["achievementID"] = 13287,	-- Empire's Fall
+								races = ALLIANCE_ONLY,
+								achievementID = 13287,	-- Empire's Fall
 							}),
 							crit(43869, {	-- Opulence (H)
-								["races"] = HORDE_ONLY,
-								["achievementID"] = 13290,	-- Death's Bargain
+								races = HORDE_ONLY,
+								achievementID = 13290,	-- Death's Bargain
 							}),
 							i(165591),	-- Bloodtooth, the Soulfeaster
 							i(165592),	-- Goblet of Glittering Favor
@@ -305,20 +305,20 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2330, {	-- Loa Council / Conclave of the Chosen
-						["crs"] = {
+						crs = {
 							144941,	-- Akunda's Aspect
 							144767,	-- Gonk's Aspect
 							144963,	-- Kimbul's Aspect
 							144747,	-- Pa'ku's Aspect
 						},
-						["groups"] = {
+						groups = {
 							crit(43870, {	-- Loa Council/Conclave of the Chosen (A)
-								["races"] = ALLIANCE_ONLY,
-								["achievementID"] = 13287,	-- Empire's Fall
+								races = ALLIANCE_ONLY,
+								achievementID = 13287,	-- Empire's Fall
 							}),
 							crit(43870, {	-- Loa Council/Conclave of the Chosen (H)
-								["races"] = HORDE_ONLY,
-								["achievementID"] = 13290,	-- Death's Bargain
+								races = HORDE_ONLY,
+								achievementID = 13290,	-- Death's Bargain
 							}),
 							i(165594),	-- Akunda's Shocksplitter
 							i(165595),	-- Blade of Encroaching Death
@@ -336,20 +336,20 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2335, {	-- King Rastakhan
-						["crs"] = {
+						crs = {
 							145644,	-- Bwonsamdi
 							145616,	-- King Rastakhan
 							146492,	-- Phantom of Rage
 							146322,	-- Siegebreaker Roka
 						},
-						["groups"] = {
+						groups = {
 							crit(43871, {	-- King Rastakhan (A)
-								["races"] = ALLIANCE_ONLY,
-								["achievementID"] = 13287,	-- Empire's Fall
+								races = ALLIANCE_ONLY,
+								achievementID = 13287,	-- Empire's Fall
 							}),
 							crit(43871, {	-- King Rastakhan (H)
-								["races"] = HORDE_ONLY,
-								["achievementID"] = 13290,	-- Death's Bargain
+								races = HORDE_ONLY,
+								achievementID = 13290,	-- Death's Bargain
 							}),
 							i(165597),	-- Deathspeaker Spire
 							i(165596),	-- Last Fang of Rezan
@@ -367,15 +367,15 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				header(HEADERS.LFGDungeonByFaction, 1947.1950, {	-- Might of the Alliance (A) / Victory or Death (H)
 					e(2334, {	-- High Tinker Mekkatorque
-						["crs"] = { 144796 },	-- High Tinker Mekkatorque
-						["groups"] = {
+						crs = { 144796 },	-- High Tinker Mekkatorque
+						groups = {
 							crit(43872, {	-- High Tinker Mekkatorque (A)
-								["races"] = ALLIANCE_ONLY,
-								["achievementID"] = 13288,	-- Might of the Alliance
+								races = ALLIANCE_ONLY,
+								achievementID = 13288,	-- Might of the Alliance
 							}),
 							crit(43872, {	-- High Tinker Mekkatorque (H)
-								["races"] = HORDE_ONLY,
-								["achievementID"] = 13291,	-- Victory of Death
+								races = HORDE_ONLY,
+								achievementID = 13291,	-- Victory of Death
 							}),
 							i(165598),	-- Servo-Claw Smasher
 							i(165600),	-- Twin-Pipe Buster Cannon
@@ -391,18 +391,18 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2337, cr(146256, {	-- Stormwall Blockade / Laminaria
-						["crs"] = {
+						crs = {
 							146253,	-- Brother Joseph
 							146251,	-- Sister Katherine
 						},
-						["groups"] = {
+						groups = {
 							crit(43873, {	-- Stormwall Blockade (A)
-								["races"] = ALLIANCE_ONLY,
-								["achievementID"] = 13288,	-- Might of the Alliance
+								races = ALLIANCE_ONLY,
+								achievementID = 13288,	-- Might of the Alliance
 							}),
 							crit(43873, {	-- Stormwall Blockade (H)
-								["races"] = HORDE_ONLY,
-								["achievementID"] = 13291,	-- Victory of Death
+								races = HORDE_ONLY,
+								achievementID = 13291,	-- Victory of Death
 							}),
 							i(165602),	-- Crash of Tides
 							i(165590),	-- Docksplitter Siege Hook
@@ -420,15 +420,15 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					})),
 					e(2343, {	-- Lady Jaina Proudmoore
-						["crs"] = { 146409 },	-- Lady Jaina Proudmoore
-						["groups"] = {
+						crs = { 146409 },	-- Lady Jaina Proudmoore
+						groups = {
 							crit(43874, {	-- Jaina Proudmoore (A)
-								["races"] = ALLIANCE_ONLY,
-								["achievementID"] = 13288,	-- Might of the Alliance
+								races = ALLIANCE_ONLY,
+								achievementID = 13288,	-- Might of the Alliance
 							}),
 							crit(43874, {	-- Jaina Proudmoore (H)
-								["races"] = HORDE_ONLY,
-								["achievementID"] = 13291,	-- Victory of Death
+								races = HORDE_ONLY,
+								achievementID = 13291,	-- Victory of Death
 							}),
 							i(166518),	-- G.M.O.D. (MOUNT!  Moved from High Tinker Mekkatorque in 2.26.19 hotfix, change to LFR only)
 							i(165604),	-- Daelin Proudmoore's Saber
@@ -449,85 +449,85 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.RAID.MULTI.NORMAL_PLUS, {
 				e(2344, {	-- Champion of the Light	-- 2333 Horde
-					["crs"] = {
+					crs = {
 						144683,	-- Ra'wani Kanae (A)
 						144680,	-- Frida Ironbellows (H)
 					},
-					["groups"] = {
+					groups = {
 						ach(13316),	-- Can I Get a Hek Hek Hek Yeah?
 					},
 				}),
 				e(2323, {	-- Jadefire Masters	-- 2341 Horde
-					["crs"] = {
+					crs = {
 						144692,	-- Anathos Firecaller (A)
 						144691,	-- Ma'ra Grimfang (A)
 						144693,	-- Manceroy Flamefist (H)
 						144690,	-- Mestrah <The Illuminated> (H)
 					},
-					["groups"] = {
+					groups = {
 						ach(13431),	-- Hidden Dragon
 					},
 				}),
 				e(2340, {	-- Grong, the Revenant	-- 2325 Horde
-					["crs"] = {
+					crs = {
 						144638,	-- Grong the Revenant (A)
 						148117,	-- Grong the Revenant (H)
 					},
-					["groups"] = {
+					groups = {
 						ach(13383),	-- Barrel of Monkeys
 					},
 				}),
 				e(2342, {	-- Opulence
-					["crs"] = {
+					crs = {
 						145261,	-- Opulence
 						145274,	-- Yalat's Bulwark
 						145273,	-- The Hand of In'zashi
 					},
-					["groups"] = {
+					groups = {
 						ach(13345),	-- Praise the Sunflower
 					},
 				}),
 				e(2330, {	-- Loa Council / Conclave of the Chosen
-					["crs"] = {
+					crs = {
 						144941,	-- Akunda's Aspect
 						144767,	-- Gonk's Aspect
 						144963,	-- Kimbul's Aspect
 						144747,	-- Pa'ku's Aspect
 					},
-					["groups"] = {
+					groups = {
 						ach(13325),	-- Walk the Dinosaur
 					},
 				}),
 				e(2335, {	-- King Rastakhan
-					["crs"] = {
+					crs = {
 						145644,	-- Bwonsamdi
 						145616,	-- King Rastakhan
 						146492,	-- Phantom of Rage
 						146322,	-- Siegebreaker Roka
 					},
-					["groups"] = {
+					groups = {
 						ach(13425),	-- We Got Spirit, How About You?
 					},
 				}),
 				e(2334, {	-- High Tinker Mekkatorque
-					["crs"] = { 144796 },	-- High Tinker Mekkatorque
-					["groups"] = {
+					crs = { 144796 },	-- High Tinker Mekkatorque
+					groups = {
 						ach(13401),	-- I Got Next!
 						i(166518),	-- G.M.O.D. (MOUNT!)
 					},
 				}),
 				e(2337, cr(146256, {	-- Stormwall Blockade / Laminaria
-					["crs"] = {
+					crs = {
 						146253,	-- Brother Joseph
 						146251,	-- Sister Katherine
 					},
-					["groups"] = {
+					groups = {
 						ach(13430),	-- De Lurker Be'loa
 					},
 				})),
 				e(2343, {	-- Lady Jaina Proudmoore
-					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
-					["groups"] = {
+					crs = { 146409 },	-- Lady Jaina Proudmoore
+					groups = {
 						ach(13410),	-- Snow Fun Allowed
 					},
 				}),
@@ -545,11 +545,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					i(165925),	-- Drape of Valiant Defense
 				}),
 				e(2344, {	-- Champion of the Light	-- 2333 Horde
-					["crs"] = {
+					crs = {
 						144683,	-- Ra'wani Kanae (A)
 						144680,	-- Frida Ironbellows (H)
 					},
-					["groups"] = {
+					groups = {
 						i(165586),	-- Dawnbreaker
 						i(165919),	-- Desecrated Blade of the Disciples
 						i(165584),	-- Sunburst Crest
@@ -566,13 +566,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2323, {	-- Jadefire Masters	-- 2341 Horde
-					["crs"] = {
+					crs = {
 						144692,	-- Anathos Firecaller (A)
 						144691,	-- Ma'ra Grimfang (A)
 						144693,	-- Manceroy Flamefist (H)
 						144690,	-- Mestrah <The Illuminated> (H)
 					},
-					["groups"] = {
+					groups = {
 						i(165587),	-- Phoenixfire Staff
 						i(165500),	-- Blazewing Hood
 						i(165548),	-- Helm of Tempered Jade
@@ -589,11 +589,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2340, {	-- Grong, the Revenant	-- 2325 Horde
-					["crs"] = {
+					crs = {
 						144638,	-- Grong the Revenant (A)
 						148117,	-- Grong the Revenant (H)
 					},
-					["groups"] = {
+					groups = {
 						i(165589),	-- Hornridged Crusher
 						i(165920),	-- Apetagonizer's Claw
 						i(165588),	-- Bonelash Paw
@@ -611,12 +611,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2342, {	-- Opulence
-					["crs"] = {
+					crs = {
 						145261,	-- Opulence
 						145274,	-- Yalat's Bulwark
 						145273,	-- The Hand of In'zashi
 					},
-					["groups"] = {
+					groups = {
 						i(165591),	-- Bloodtooth, the Soulfeaster
 						i(165592),	-- Goblet of Glittering Favor
 						i(165593),	-- Greed's Folly
@@ -634,13 +634,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2330, {	-- Loa Council / Conclave of the Chosen
-					["crs"] = {
+					crs = {
 						144941,	-- Akunda's Aspect
 						144767,	-- Gonk's Aspect
 						144963,	-- Kimbul's Aspect
 						144747,	-- Pa'ku's Aspect
 					},
-					["groups"] = {
+					groups = {
 						i(165594),	-- Akunda's Shocksplitter
 						i(165595),	-- Blade of Encroaching Death
 						i(165599),	-- Pterrorwing Longbow
@@ -657,13 +657,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2335, {	-- King Rastakhan
-					["crs"] = {
+					crs = {
 						145644,	-- Bwonsamdi
 						145616,	-- King Rastakhan
 						146492,	-- Phantom of Rage
 						146322,	-- Siegebreaker Roka
 					},
-					["groups"] = {
+					groups = {
 						i(165597),	-- Deathspeaker Spire
 						i(165596),	-- Last Fang of Rezan
 						i(165537),	-- Mantle of the Soulbinder's Caress
@@ -678,8 +678,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2334, {	-- High Tinker Mekkatorque
-					["crs"] = { 144796 },	-- High Tinker Mekkatorque
-					["groups"] = {
+					crs = { 144796 },	-- High Tinker Mekkatorque
+					groups = {
 						i(165598),	-- Servo-Claw Smasher
 						i(165600),	-- Twin-Pipe Buster Cannon
 						i(165543),	-- Target-Tracking Headgear
@@ -694,11 +694,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2337, cr(146256, {	-- Stormwall Blockade / Laminaria
-					["crs"] = {
+					crs = {
 						146253,	-- Brother Joseph
 						146251,	-- Sister Katherine
 					},
-					["groups"] = {
+					groups = {
 						i(165602),	-- Crash of Tides
 						i(165590),	-- Docksplitter Siege Hook
 						i(165601),	-- Storm-Toothed Kasuyu
@@ -715,8 +715,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				})),
 				e(2343, {	-- Lady Jaina Proudmoore
-					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
-					["groups"] = {
+					crs = { 146409 },	-- Lady Jaina Proudmoore
+					groups = {
 						i(165604),	-- Daelin Proudmoore's Saber
 						i(165583),	-- Fogbreaker, Light of the Sea
 						i(165823),	-- Glaciercrest Helm
@@ -745,11 +745,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					i(165925),	-- Drape of Valiant Defense
 				}),
 				e(2344, {	-- Champion of the Light	-- 2333 Horde
-					["crs"] = {
+					crs = {
 						144683,	-- Ra'wani Kanae (A)
 						144680,	-- Frida Ironbellows (H)
 					},
-					["groups"] = {
+					groups = {
 						i(165586),	-- Dawnbreaker
 						i(165919),	-- Desecrated Blade of the Disciples
 						i(165584),	-- Sunburst Crest
@@ -766,13 +766,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2323, {	-- Jadefire Masters	-- 2341 Horde
-					["crs"] = {
+					crs = {
 						144692,	-- Anathos Firecaller (A)
 						144691,	-- Ma'ra Grimfang (A)
 						144693,	-- Manceroy Flamefist (H)
 						144690,	-- Mestrah <The Illuminated> (H)
 					},
-					["groups"] = {
+					groups = {
 						i(165587),	-- Phoenixfire Staff
 						i(165500),	-- Blazewing Hood
 						i(165548),	-- Helm of Tempered Jade
@@ -789,11 +789,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2340, {	-- Grong, the Revenant	-- 2325 Horde
-					["crs"] = {
+					crs = {
 						144638,	-- Grong the Revenant (A)
 						148117,	-- Grong the Revenant (H)
 					},
-					["groups"] = {
+					groups = {
 						i(165589),	-- Hornridged Crusher
 						i(165920),	-- Apetagonizer's Claw
 						i(165588),	-- Bonelash Paw
@@ -811,12 +811,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2342, {	-- Opulence
-					["crs"] = {
+					crs = {
 						145261,	-- Opulence
 						145274,	-- Yalat's Bulwark
 						145273,	-- The Hand of In'zashi
 					},
-					["groups"] = {
+					groups = {
 						i(165591),	-- Bloodtooth, the Soulfeaster
 						i(165592),	-- Goblet of Glittering Favor
 						i(165593),	-- Greed's Folly
@@ -834,13 +834,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2330, {	-- Loa Council / Conclave of the Chosen
-					["crs"] = {
+					crs = {
 						144941,	-- Akunda's Aspect
 						144767,	-- Gonk's Aspect
 						144963,	-- Kimbul's Aspect
 						144747,	-- Pa'ku's Aspect
 					},
-					["groups"] = {
+					groups = {
 						i(165594),	-- Akunda's Shocksplitter
 						i(165595),	-- Blade of Encroaching Death
 						i(165599),	-- Pterrorwing Longbow
@@ -857,13 +857,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2335, {	-- King Rastakhan
-					["crs"] = {
+					crs = {
 						145644,	-- Bwonsamdi
 						145616,	-- King Rastakhan
 						146492,	-- Phantom of Rage
 						146322,	-- Siegebreaker Roka
 					},
-					["groups"] = {
+					groups = {
 						i(165597),	-- Deathspeaker Spire
 						i(165596),	-- Last Fang of Rezan
 						i(165537),	-- Mantle of the Soulbinder's Caress
@@ -878,8 +878,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2334, {	-- High Tinker Mekkatorque
-					["crs"] = { 144796 },	-- High Tinker Mekkatorque
-					["groups"] = {
+					crs = { 144796 },	-- High Tinker Mekkatorque
+					groups = {
 						i(165598),	-- Servo-Claw Smasher
 						i(165600),	-- Twin-Pipe Buster Cannon
 						i(165543),	-- Target-Tracking Headgear
@@ -894,11 +894,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2337, cr(146256, {	-- Stormwall Blockade / Laminaria
-					["crs"] = {
+					crs = {
 						146253,	-- Brother Joseph
 						146251,	-- Sister Katherine
 					},
-					["groups"] = {
+					groups = {
 						i(165602),	-- Crash of Tides
 						i(165590),	-- Docksplitter Siege Hook
 						i(165601),	-- Storm-Toothed Kasuyu
@@ -915,10 +915,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				})),
 				e(2343, {	-- Lady Jaina Proudmoore
-					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
-					["groups"] = {
+					crs = { 146409 },	-- Lady Jaina Proudmoore
+					groups = {
 						ach(13322, {	-- Ahead of the Curve: Lady Jaina Proudmoore
-							["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 },
+							timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
 						}),
 						i(165604),	-- Daelin Proudmoore's Saber
 						i(165583),	-- Fogbreaker, Light of the Sea
@@ -948,11 +948,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					i(165925),	-- Drape of Valiant Defense
 				}),
 				e(2344, {	-- Champion of the Light	-- 2333 Horde
-					["crs"] = {
+					crs = {
 						144683,	-- Ra'wani Kanae (A)
 						144680,	-- Frida Ironbellows (H)
 					},
-					["groups"] = {
+					groups = {
 						ach(13292),	-- Mythic: Champion of the Light
 						i(165586),	-- Dawnbreaker
 						i(165919),	-- Desecrated Blade of the Disciples
@@ -970,18 +970,18 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2323, {	-- Jadefire Masters	-- 2341 Horde
-					["crs"] = {
+					crs = {
 						144692,	-- Anathos Firecaller (A)
 						144691,	-- Ma'ra Grimfang (A)
 						144693,	-- Manceroy Flamefist (H)
 						144690,	-- Mestrah <The Illuminated> (H)
 					},
-					["groups"] = {
+					groups = {
 						ach(13298, {	-- Mythic: Jadefire Masters (A)
-							["races"] = ALLIANCE_ONLY,
+							races = ALLIANCE_ONLY,
 						}),
 						ach(13295, {	-- Mythic: Jadefire Masters (H)
-							["races"] = HORDE_ONLY,
+							races = HORDE_ONLY,
 						}),
 						i(165587),	-- Phoenixfire Staff
 						i(165500),	-- Blazewing Hood
@@ -999,11 +999,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2340, {	-- Grong, the Revenant	-- 2325 Horde
-					["crs"] = {
+					crs = {
 						144638,	-- Grong the Revenant (A)
 						148117,	-- Grong the Revenant (H)
 					},
-					["groups"] = {
+					groups = {
 						ach(13293),	-- Mythic: Grong
 						i(165589),	-- Hornridged Crusher
 						i(165920),	-- Apetagonizer's Claw
@@ -1022,12 +1022,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2342, {	-- Opulence
-					["crs"] = {
+					crs = {
 						145261,	-- Opulence
 						145274,	-- Yalat's Bulwark
 						145273,	-- The Hand of In'zashi
 					},
-					["groups"] = {
+					groups = {
 						ach(13299),	-- Mythic: Opulence
 						i(165591),	-- Bloodtooth, the Soulfeaster
 						i(165592),	-- Goblet of Glittering Favor
@@ -1046,13 +1046,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2330, {	-- Loa Council / Conclave of the Chosen
-					["crs"] = {
+					crs = {
 						144941,	-- Akunda's Aspect
 						144767,	-- Gonk's Aspect
 						144963,	-- Kimbul's Aspect
 						144747,	-- Pa'ku's Aspect
 					},
-					["groups"] = {
+					groups = {
 						ach(13300),	-- Mythic: Conclave of the Chosen
 						i(165848),	-- Spawn of Krag'wa (PET!)
 						i(165594),	-- Akunda's Shocksplitter
@@ -1071,13 +1071,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2335, {	-- King Rastakhan
-					["crs"] = {
+					crs = {
 						145644,	-- Bwonsamdi
 						145616,	-- King Rastakhan
 						146492,	-- Phantom of Rage
 						146322,	-- Siegebreaker Roka
 					},
-					["groups"] = {
+					groups = {
 						ach(13311),	-- Mythic: King Rastakhan
 						i(165597),	-- Deathspeaker Spire
 						i(165596),	-- Last Fang of Rezan
@@ -1093,8 +1093,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2334, {	-- High Tinker Mekkatorque
-					["crs"] = { 144796 },	-- High Tinker Mekkatorque
-					["groups"] = {
+					crs = { 144796 },	-- High Tinker Mekkatorque
+					groups = {
 						ach(13312),	-- Mythic: Mekkatorque
 						i(165598),	-- Servo-Claw Smasher
 						i(165600),	-- Twin-Pipe Buster Cannon
@@ -1110,11 +1110,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2337, cr(146256, {	-- Stormwall Blockade / Laminaria
-					["crs"] = {
+					crs = {
 						146253,	-- Brother Joseph
 						146251,	-- Sister Katherine
 					},
-					["groups"] = {
+					groups = {
 						ach(13313),	-- Mythic: Stormwall Blockade
 						i(165602),	-- Crash of Tides
 						i(165590),	-- Docksplitter Siege Hook
@@ -1132,24 +1132,24 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				})),
 				e(2343, {	-- Lady Jaina Proudmoore
-					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
-					["groups"] = {
+					crs = { 146409 },	-- Lady Jaina Proudmoore
+					groups = {
 						ach(13314, {	-- Mythic: Lady Jaina Proudmoore
 							title(386),	-- <Name>, Hero of Dazar'alor
 						}),
 						ach(13321),	-- Mythic: Lady Jaina Proudmoore Guild Run
 						ach(13323, {	-- Cutting Edge: Lady Jaina Proudmoore
-							["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 },
+							timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
 						}),
-						ach(13326, bubbleDownSelf({["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Alliance)
-							["races"] = ALLIANCE_ONLY,
-							["groups"] = {
+						ach(13326, bubbleDownSelf({timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Alliance)
+							races = ALLIANCE_ONLY,
+							groups = {
 								title(384),	-- <Name>, Famed Conqueror of Dazar'alor
 							},
 						})),
-						ach(13327, bubbleDownSelf({["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Horde)
-							["races"] = HORDE_ONLY,
-							["groups"] = {
+						ach(13327, bubbleDownSelf({timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Horde)
+							races = HORDE_ONLY,
+							groups = {
 								title(385),	-- <Name>, Famed Defender of Dazar'alor
 							},
 						})),
@@ -1173,7 +1173,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {
 	inst(1176, {	-- Battle of Dazar'alor
 		q(55026),	-- Killing Opulence (H)
 		q(55027),	-- Killing Opulence (M)

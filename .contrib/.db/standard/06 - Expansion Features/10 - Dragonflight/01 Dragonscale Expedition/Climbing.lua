@@ -10,9 +10,9 @@ local CLIMBING = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_DRAGONSCALE_EXPEDITION, {
-		n(CLIMBING, bubbleDownSelf({ ["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 6 } }, {
+		n(CLIMBING, bubbleDownSelf({ minReputation = { FACTION_DRAGONSCALE_EXPEDITION, 6 } }, {
 			n(ACHIEVEMENTS, {
 				ach(16625),	-- Belay On!
 				ach(16588),	-- How Did These Get Here?
@@ -24,41 +24,41 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(QUESTS, {
 				------ RENOWN 6 ------
 				q(69855, {	-- A Climber's Calling
-					["description"] = "Spawns Anywhere on Dragon Isles.",
-					["provider"] = { "n", 196643 },	-- Doc Nanners
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					description = "Spawns Anywhere on Dragon Isles.",
+					provider = { "n", 196643 },	-- Doc Nanners
+					maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(72524, {	-- Basic Climbing Gear
-					["sourceQuests"] = { 69855 },	-- A Climber's Calling
-					["provider"] = { "n", 187700 },	-- Pathfinder Jab
-					["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
+					sourceQuests = { 69855 },	-- A Climber's Calling
+					provider = { "n", 187700 },	-- Pathfinder Jab
+					coord = { 47.3, 83.4, THE_WAKING_SHORES },
 				}),
 				q(66351, {	-- Smoke Over the Mountain
-					["sourceQuests"] = { 72524 },	-- Basic Climbing Gear
-					["provider"] = { "n", 187700 },	-- Pathfinder Jab
-					["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
+					sourceQuests = { 72524 },	-- Basic Climbing Gear
+					provider = { "n", 187700 },	-- Pathfinder Jab
+					coord = { 47.3, 83.4, THE_WAKING_SHORES },
 				}),
 				q(65421, {	-- Climb Every Mountain
-					["sourceQuests"] = { 66351 },	-- Smoke Over the Mountain
-					["provider"] = { "n", 181039 },	-- Rocky Dustbeard
-					["coord"] = { 62.4, 50.5, THE_WAKING_SHORES },
-					["groups"] = {
+					sourceQuests = { 66351 },	-- Smoke Over the Mountain
+					provider = { "n", 181039 },	-- Rocky Dustbeard
+					coord = { 62.4, 50.5, THE_WAKING_SHORES },
+					groups = {
 						ach(16624),	-- Which Knot Was It Again?
 						i(191138),	-- Clinging Gustbloom Sample (QI!)
 					},
 				}),
 			}),
-			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
+			n(WORLD_QUESTS, sharedData({ isWorldQuest = true }, {
 					-- The Waking Shores --
 				q(66070, {	-- Brightblade's Bones
-					["coord"] = { 22.0, 95.1, THE_WAKING_SHORES },
-					["groups"] = {
+					coord = { 22.0, 95.1, THE_WAKING_SHORES },
+					groups = {
 						n(187077, {	-- Cymre Brightblade
-							["description"] = "Only available when world quest is active.",
-							["coord"] = { 22.8, 95.0, THE_WAKING_SHORES },
-							["groups"] = {
+							description = "Only available when world quest is active.",
+							coord = { 22.8, 95.0, THE_WAKING_SHORES },
+							groups = {
 								i(202085, {	-- Bugbiter Tortoise (PET!)
-									["cost"] = {
+									cost = {
 										{ "i", 202084, 1 },	-- 1x Eroded Fossil
 										{ "i", 202082, 1 },	-- 1x Petrified Dragon Egg
 									},
@@ -69,47 +69,47 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(64768, {	-- Lightsprocket's Artifact Hunt
-					["coord"] = { 48.7, 36.8, THE_WAKING_SHORES },
+					coord = { 48.7, 36.8, THE_WAKING_SHORES },
 				}),
 				q(70651, {	-- Stolen Luggage
-					["coord"] = { 61.6, 49.5, THE_WAKING_SHORES },
+					coord = { 61.6, 49.5, THE_WAKING_SHORES },
 				}),
 
 					-- Ohn'ahran Plains --
 				q(70655, {	-- Leaves from the Vine
-					["coord"] = { 82.9, 31.8, OHNAHRAN_PLAINS },
+					coord = { 82.9, 31.8, OHNAHRAN_PLAINS },
 				}),
 				q(70652, {	-- Take One Down, Pass It Around
-					["coord"] = { 24.5, 34.7, OHNAHRAN_PLAINS }
+					coord = { 24.5, 34.7, OHNAHRAN_PLAINS }
 				}),
 
 					-- The Azure Span --
 				q(70662, {	-- A Bone to Pickaxe
-					["coord"] = { 27.7, 44.1, THE_AZURE_SPAN },
+					coord = { 27.7, 44.1, THE_AZURE_SPAN },
 				}),
 				q(70658, {	-- Artifact or Fiction
-					["coord"] = { 71.5, 22.2, THE_AZURE_SPAN },
+					coord = { 71.5, 22.2, THE_AZURE_SPAN },
 				}),
 				q(70653, {	-- Cold Hard Science
-					["coord"] = { 47.9, 39.1, THE_AZURE_SPAN },
+					coord = { 47.9, 39.1, THE_AZURE_SPAN },
 				}),
 
 					-- Thaldraszus --
 				q(70661, {	-- Supplies on High
-					["coord"] = { 44.6, 50.1, THALDRASZUS },
+					coord = { 44.6, 50.1, THALDRASZUS },
 				}),
 				q(70654, {	-- Are You Kitten Me?
-					["coord"] = { 59.0, 76.8, THALDRASZUS },
+					coord = { 59.0, 76.8, THALDRASZUS },
 				}),
 				q(70656, {	-- Not Mushroom For Error
-					["coord"] = { 56.7, 35.3, THALDRASZUS },
+					coord = { 56.7, 35.3, THALDRASZUS },
 				}),
 			})),
 		})),
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_DRAGONSCALE_EXPEDITION, {
 		n(CLIMBING, {
 			q(72560),	-- Triggered after completing Climb Every Mountain (questID 65421)

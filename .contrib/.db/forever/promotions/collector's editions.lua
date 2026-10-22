@@ -1,10 +1,10 @@
 ---------------------------------------------------
 --     P R O M O T I O N S   M O D U L E     --
 ---------------------------------------------------
-root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY }, {
+root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, {
 	n(WORLD_OF_WARCRAFT_FOREVER_COLLECTORS, {
-		["description"] = "These rewards are available to anyone who purchased a World of Warcraft: Forever Skyborne Heroic Pack, Skyborne Epic Pack or Warcraft Forever Collection.",
-		["groups"] = {
+		description = "These rewards are available to anyone who purchased a World of Warcraft: Forever Skyborne Heroic Pack, Skyborne Epic Pack or Warcraft Forever Collection.",
+		groups = {
 			n(HEROIC_EDITION, {	-- Skyborne Heroic Pack
 				-- TODO: Skyborne Race + Zephras Isle Starting Experience
 				i(280544),	-- Cerulean Prideclaw (MOUNT!)

@@ -2,28 +2,28 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART } }, {
 	n(ACHIEVEMENTS, {
 		-- Season 1
 		ach(61809, {	-- Adventurer of the Dawn
-			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		}),
 		ach(42767, {	-- Veteran of the Dawn
-			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		}),
 		ach(42768, {	-- Champion of the Dawn
-			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		}),
 		ach(42769, {	-- Hero of the Dawn
-			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		}),
 		ach(42770, {	-- Myth of the Dawn
-			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		}),
 		ach(61519, {	-- Midnight Season 1: Catalyst Unbound
-			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		}),
-		achraw(61490, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }, }, {	-- Midnight Season 1: Champion of the Dawn
+		achraw(61490, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }, }, {	-- Midnight Season 1: Champion of the Dawn
 			crit(108731),	-- Attained 1600+ Rated PVP rating
 			crit(109029),	-- Attained 2000+ Mythic Plus rating
 			crit(109881),	-- Defeated Midnight Falls in March on Quel'Danas on Heroic or Mythic difficulty
@@ -31,7 +31,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 		})),
 		ach(61858, {	-- Light of the Party (automated)
 			iensemble(265071, {	-- Gleaming Sunmote (CI!)
-				--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(249967),	-- Relentless Rider's Chain
 						i(249970),	-- Relentless Rider's Crown
@@ -89,7 +89,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 						i(249952),	-- Night Ender's Tusks
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(249967),	-- Relentless Rider's Chain
 						i(249970),	-- Relentless Rider's Crown
@@ -147,7 +147,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 						i(249952),	-- Night Ender's Tusks
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(249967),	-- Relentless Rider's Chain
 						i(249970),	-- Relentless Rider's Crown
@@ -205,7 +205,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 						i(249952),	-- Night Ender's Tusks
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					cl(DEATHKNIGHT, {
 						i(249967),	-- Relentless Rider's Chain
 						i(249970),	-- Relentless Rider's Crown
@@ -263,7 +263,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 						i(249952),	-- Night Ender's Tusks
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(255562),	-- Galactic Gladiator's Plate Greatbelt
 						i(255556),	-- Galactic Gladiator's Plate Helmet
@@ -321,7 +321,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 						i(255599),	-- Galactic Gladiator's Plate Pauldrons
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(255562),	-- Galactic Gladiator's Plate Greatbelt
 						i(255556),	-- Galactic Gladiator's Plate Helmet
@@ -383,28 +383,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 		}),
 		-- Season 2
 		ach(62410, {	-- Adventurer of the Mist
-			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+			timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 		}),
 		ach(62411, {	-- Veteran of the Mist
-			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+			timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 		}),
 		ach(62412, {	-- Champion of the Mist
-			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+			timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 		}),
 		ach(62414, {	-- Hero of the Mist
-			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+			timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 		}),
 		ach(62416, {	-- Myth of the Mist
-			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+			timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 		}),
 		ach(62871, {	-- Midnight Season 2: Catalyst Unbound
-			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
+			timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 		}),
 		ach(62872, {	-- Midnight Season 2: Serpent Scion
-			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
-			["groups"] = { i(274707) },	-- Crystallized Venomblight Manaflux
+			timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
+			groups = { i(274707) },	-- Crystallized Venomblight Manaflux
 		}),
-		ach(63473, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 }, }, {	-- Sssensational!
+		ach(63473, bubbleDownSelf({ timeline = { ADDED_12_1_0 }, }, {	-- Sssensational!
 			iensemble(279997),	-- Insidious Venomstone (CI!)
 		})),
 	}),

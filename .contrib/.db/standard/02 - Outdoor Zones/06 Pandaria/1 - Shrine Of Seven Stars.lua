@@ -4,80 +4,80 @@
 
 root(ROOTS.Zones, m(PANDARIA, {
 	m(SHRINE_OF_SEVEN_STARS, {	-- Shrine of Seven Stars
-		["lore"] = "The Shrine of Seven Stars is an ancient mogu structure located south of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. It has been claimed by the Alliance and serves as the main hub of the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.",
-		["isRaid"] = true,
-		["races"] = ALLIANCE_ONLY,
-		["icon"] = 462673,
-		["maps"] = { SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },	-- The Imperial Exchange
-		["lvl"] = 78,
-		["groups"] = {
+		lore = "The Shrine of Seven Stars is an ancient mogu structure located south of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. It has been claimed by the Alliance and serves as the main hub of the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.",
+		isRaid = true,
+		races = ALLIANCE_ONLY,
+		icon = 462673,
+		maps = { SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },	-- The Imperial Exchange
+		lvl = 78,
+		groups = {
 			n(QUESTS, sharedData({
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			},{
 				q(32007, {	-- A Worthy Challenge: Darkmaster Gandling
-					["qg"] = 64028,	-- Challenger Soong <Challenge Dungeons>
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+					qg = 64028,	-- Challenger Soong <Challenge Dungeons>
+					timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+					isDaily = true,
+					_drop = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32005, {	-- A Worthy Challenge: Durand
-					["qg"] = 64028,	-- Challenger Soong <Challenge Dungeons>
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+					qg = 64028,	-- Challenger Soong <Challenge Dungeons>
+					timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+					isDaily = true,
+					_drop = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32006, {	-- A Worthy Challenge: Flameweaver Koegler
-					["qg"] = 64028,	-- Challenger Soong <Challenge Dungeons>
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+					qg = 64028,	-- Challenger Soong <Challenge Dungeons>
+					timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+					isDaily = true,
+					_drop = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32003, {	-- A Worthy Challenge: Raigonn
-					["qg"] = 64028,	-- Challenger Soong <Challenge Dungeons>
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+					qg = 64028,	-- Challenger Soong <Challenge Dungeons>
+					timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+					isDaily = true,
+					_drop = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(31998, {	-- A Worthy Challenge: Sha of Doubt
-					["qg"] = 64028,	-- Challenger Soong <Challenge Dungeons>
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+					qg = 64028,	-- Challenger Soong <Challenge Dungeons>
+					timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+					isDaily = true,
+					_drop = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32001, {	-- A Worthy Challenge: Sha of Hatred
-					["qg"] = 64028,	-- Challenger Soong <Challenge Dungeons>
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+					qg = 64028,	-- Challenger Soong <Challenge Dungeons>
+					timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+					isDaily = true,
+					_drop = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32004, {	-- A Worthy Challenge: Wing Leader Ner'onok
-					["qg"] = 64028,	-- Challenger Soong <Challenge Dungeons>
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+					qg = 64028,	-- Challenger Soong <Challenge Dungeons>
+					timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+					isDaily = true,
+					_drop = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32002, {	-- A Worthy Challenge: Xin the Weaponmaster
-					["qg"] = 64028,	-- Challenger Soong <Challenge Dungeons>
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+					qg = 64028,	-- Challenger Soong <Challenge Dungeons>
+					timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+					isDaily = true,
+					_drop = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32000, {	-- A Worthy Challenge: Yan-zhu the Uncasked
-					["qg"] = 64028,	-- Challenger Soong <Challenge Dungeons>
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
+					qg = 64028,	-- Challenger Soong <Challenge Dungeons>
+					timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+					isDaily = true,
+					_drop = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(33248, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {	-- Proving Grounds
-					["qg"] = 64101,	-- Taijin the Cyclone
-					["coord"] = { 47.23, 49.71, SHRINE_OF_SEVEN_STARS },
-					["timeline"] = { ADDED_5_4_0 },
+					qg = 64101,	-- Taijin the Cyclone
+					coord = { 47.23, 49.71, SHRINE_OF_SEVEN_STARS },
+					timeline = { ADDED_5_4_0 },
 				})),
 				q(32683, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {	-- So You Want to Be a Blacksmith...
-					["qg"] = 64085,	-- Cullen Hammerbrow
-					["coord"] = { 71.27, 50.52, SHRINE_OF_SEVEN_STARS },
-					["timeline"] = { ADDED_5_2_0, REMOVED_8_0_1 },	-- no longer available due to the profession level changes
-					["requireSkill"] = BLACKSMITHING,
+					qg = 64085,	-- Cullen Hammerbrow
+					coord = { 71.27, 50.52, SHRINE_OF_SEVEN_STARS },
+					timeline = { ADDED_5_2_0, REMOVED_8_0_1 },	-- no longer available due to the profession level changes
+					requireSkill = BLACKSMITHING,
 				})),
 				--[[
 				q(31390, {	-- The Klaxxi
@@ -89,16 +89,16 @@ root(ROOTS.Zones, m(PANDARIA, {
 				]]--
 			})),
 			n(VENDORS, sharedData({
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			},{
 				n(64085, {	-- Cullen Hammerbrow <Blacksmithing Supplies>
-					["coord"] = { 71.2, 50.5, SHRINE_OF_SEVEN_STARS },
-					["groups"] = COMMON_MOP_BLACKSMITHING_RECIPES,
+					coord = { 71.2, 50.5, SHRINE_OF_SEVEN_STARS },
+					groups = COMMON_MOP_BLACKSMITHING_RECIPES,
 				}),
 				--[[	-- ToDo: ADD Challenge Mode Recolors
 				n(64084, {	-- Jojo <Cooking Supplies>
-					["coord"] = { 63.0, 26.8, SHRINE_OF_SEVEN_STARS },
-					["groups"] = {
+					coord = { 63.0, 26.8, SHRINE_OF_SEVEN_STARS },
+					groups = {
 						i(265322, {	-- Cache of the Azure Challenger
 							i(265329),	-- Azure Bracers of the Golden King
 							i(265321),	-- Azure Chestplate of the Golden King
@@ -123,17 +123,17 @@ root(ROOTS.Zones, m(PANDARIA, {
 					},
 				}),--]]
 				n(64084, {	-- Jojo <Cooking Supplies>
-					["coord"] = { 63.0, 26.8, SHRINE_OF_SEVEN_STARS },
-					["groups"] = {
+					coord = { 63.0, 26.8, SHRINE_OF_SEVEN_STARS },
+					groups = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
 				n(66678, {	-- Krystel <Spirit of Harmony Vendor>
-					["coord"] = { 84.6, 60.4, VALE_OF_ETERNAL_BLOSSOMS },
-					["races"] = IGNORED_VALUE,	-- technically available both factions
-					["groups"] = sharedData({
-						["cost"] = { { "i", 76061, 1 } },	-- Spirit of Harmony
+					coord = { 84.6, 60.4, VALE_OF_ETERNAL_BLOSSOMS },
+					races = IGNORED_VALUE,	-- technically available both factions
+					groups = sharedData({
+						cost = { { "i", 76061, 1 } },	-- Spirit of Harmony
 					}, {
 						i(72094),	-- Black Trillium Ore
 						i(74247),	-- Ethereal Shard
@@ -152,10 +152,10 @@ root(ROOTS.Zones, m(PANDARIA, {
 					}),
 				}),
 				n(64052, {	-- Raishen the Needle <Tailoring Supplies>
-					["requireSkill"] = TAILORING,
-					["coord"] = { 64.7, 44.1, SHRINE_OF_SEVEN_STARS },
-					["groups"] = sharedData({
-						["cost"] = { { "i", 76061, 1 } },	-- Spirit of Harmony
+					requireSkill = TAILORING,
+					coord = { 64.7, 44.1, SHRINE_OF_SEVEN_STARS },
+					groups = sharedData({
+						cost = { { "i", 76061, 1 } },	-- Spirit of Harmony
 					}, {
 						i(86361),	-- Pattern: Contender's Satin Amice (RECIPE!)
 						i(86367),	-- Pattern: Contender's Satin Belt (RECIPE!)
@@ -176,15 +176,15 @@ root(ROOTS.Zones, m(PANDARIA, {
 					}),
 				}),
 				n(64096, {	-- Serenka <First Aid Supplies>
-					["coord"] = { 47.2, 61.2, SHRINE_OF_SEVEN_STARS },
-					["groups"] = {
+					coord = { 47.2, 61.2, SHRINE_OF_SEVEN_STARS },
+					groups = {
 						i(44694),	-- Antiseptic-Soaked Dressing
 						i(44693),	-- Wound Dressing
 					},
 				}),
 				n(64094, {	-- Tanner Pang <Leatherworking & Skinning Supplies>
-					["coord"] = { 75.6, 50.2, SHRINE_OF_SEVEN_STARS },
-					["groups"] = COMMON_MOP_LEATHERWORKING_RECIPES,
+					coord = { 75.6, 50.2, SHRINE_OF_SEVEN_STARS },
+					groups = COMMON_MOP_LEATHERWORKING_RECIPES,
 				}),
 			})),
 		},

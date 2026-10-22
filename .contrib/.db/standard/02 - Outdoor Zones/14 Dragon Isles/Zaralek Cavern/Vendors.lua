@@ -5,12 +5,12 @@
 local COVETED_BAUBLE = 204727;
 local UNEARTHED_FRAGRANT_COIN = 204715;
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(VENDORS, {
 			n(203301, {	-- Bottles <Food and Drink>
-				["coord"] = {  58.1, 55.1, ZARALEK_CAVERN },
-				["groups"] = {
+				coord = {  58.1, 55.1, ZARALEK_CAVERN },
+				groups = {
 					i(205417),	-- Fungishine
 				},
 			}),
@@ -19,16 +19,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				i(205793),	-- Skitter Souf-fly
 			}),
 			n(201004, {	-- Explorer Bezzert <Intrepid Pet Trainer>
-				["coord"] = { 52.4, 66.0, ZARALEK_CAVERN },
-				["groups"] = {
+				coord = { 52.4, 66.0, ZARALEK_CAVERN },
+				groups = {
 					i(205052, {	-- Miloh (PET!)
-						["cost"] = { { "i", POLISHED_PET_CHARM, 2500 } },
+						cost = { { "i", POLISHED_PET_CHARM, 2500 } },
 					}),
 				},
 			}),
 			n(203293, {	-- Floressa <Innkeeper>
-				["coord"] = { 56.2, 56.3, ZARALEK_CAVERN },
-				["groups"] = {
+				coord = { 56.2, 56.3, ZARALEK_CAVERN },
+				groups = {
 					i(204729),	-- Freshly Squeezed Mosswater
 					i(204730),	-- Grub Grub
 					i(204791),	-- Squishy Snack
@@ -36,17 +36,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			n(204860, {	-- Lyssa
-				["coord"] = { 56.8, 56.4, ZARALEK_CAVERN },
-				["groups"] = {
+				coord = { 56.8, 56.4, ZARALEK_CAVERN },
+				groups = {
 					i(204728),	-- Friendship Censer
 					i(205936),	-- New Niffen No-Sniffin' Tonic (TOY!)
 				},
 			}),
-			n(205676, bubbleDown({ ["timeline"] = { REMOVED_11_0_0 } }, {	-- Norzko the Proud
-				["coord"] = { 52.0, 25.6, ZARALEK_CAVERN },
-				["groups"] = bubbleDownFiltered({
-					["cost"] = { { "i", 204843, 1 } },	-- Draconic Mark of Mastery
-					["bonusID"] = 7532,
+			n(205676, bubbleDown({ timeline = { REMOVED_11_0_0 } }, {	-- Norzko the Proud
+				coord = { 52.0, 25.6, ZARALEK_CAVERN },
+				groups = bubbleDownFiltered({
+					cost = { { "i", 204843, 1 } },	-- Draconic Mark of Mastery
+					bonusID = 7532,
 				},FILTERFUNC_itemID,{
 					cl(DEATHKNIGHT, {
 						i(205810),	-- Lingering Phantom's Dreadhorns
@@ -142,21 +142,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 			})),
 			n(203615, {	-- Saccratros
-				["coord"] = { 55.9, 55.4, ZARALEK_CAVERN },
-				["groups"] = {
+				coord = { 55.9, 55.4, ZARALEK_CAVERN },
+				groups = {
 					i(205118, {	-- Diamondshell (PET!)
-						["cost"] = { { "i", COVETED_BAUBLE, 50 } },
+						cost = { { "i", COVETED_BAUBLE, 50 } },
 					}),
 					i(205197, {	-- Igneous Shalewing (MOUNT!)
-						["cost"] = { { "i", COVETED_BAUBLE, 400 } },
+						cost = { { "i", COVETED_BAUBLE, 400 } },
 					}),
 					i(191838, {	-- Subterranean Magmammoth (MOUNT!)
-						["cost"] = { { "i", COVETED_BAUBLE, 100 } },
+						cost = { { "i", COVETED_BAUBLE, 100 } },
 					}),
 				},
 			}),
 			n(204371, {	-- Sniktak <Enterprising Mycologist>
-				["groups"] = {
+				groups = {
 					i(205696),	-- Amethyst Deceiver Mushroom
 					i(205417),	-- Fungishine
 					i(205693),	-- Latticed Stinkhorn
@@ -164,62 +164,62 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			n(203602, {	-- Spinsoa
-				["coord"] = { 55.9, 55.5, ZARALEK_CAVERN },
-				["groups"] = {
+				coord = { 55.9, 55.5, ZARALEK_CAVERN },
+				groups = {
 					i(204726, {	-- Drake's Bountiful Chest
-						["questID"] = 75329,
-						["isWeekly"] = true,
-						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 15 } },
-						["groups"] = {
+						questID = 75329,
+						isWeekly = true,
+						cost = { { "i", UNEARTHED_FRAGRANT_COIN, 15 } },
+						groups = {
 							i(204076),	-- Drake's Shadowflame Crest Fragment x15
 						}
 					}),
 					i(204725, {	-- Drake's Hefty Chest
-						["questID"] = 75328,
-						["isWeekly"] = true,
-						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 10 } },
-						["groups"] = {
+						questID = 75328,
+						isWeekly = true,
+						cost = { { "i", UNEARTHED_FRAGRANT_COIN, 10 } },
+						groups = {
 							i(204076),	-- Drake's Shadowflame Crest Fragment x10
 						}
 					}),
 					i(204724, {	-- Drake's Small Chest
-						["questID"] = 75327,
-						["isWeekly"] = true,
-						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 5 } },
-						["groups"] = {
+						questID = 75327,
+						isWeekly = true,
+						cost = { { "i", UNEARTHED_FRAGRANT_COIN, 5 } },
+						groups = {
 							i(204076),	-- Drake's Shadowflame Crest Fragment x5
 						}
 					}),
 					i(204722, {	-- Whelpling's Bountiful Chest
-						["questID"] = 75323,
-						["isWeekly"] = true,
-						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 10 } },
-						["groups"] = {
+						questID = 75323,
+						isWeekly = true,
+						cost = { { "i", UNEARTHED_FRAGRANT_COIN, 10 } },
+						groups = {
 							i(204075),	-- Whelpling's Shadowflame Crest Fragment x15
 						}
 					}),
 					i(204723, {	-- Whelpling's Hefty Chest
-						["questID"] = 75324,
-						["isWeekly"] = true,
-						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 4 } },
-						["groups"] = {
+						questID = 75324,
+						isWeekly = true,
+						cost = { { "i", UNEARTHED_FRAGRANT_COIN, 4 } },
+						groups = {
 							i(204075),	-- Whelpling's Shadowflame Crest Fragment x10
 						}
 					}),
 					i(204721, {	-- Whelpling's Small Chest
-						["questID"] = 75306,
-						["isWeekly"] = true,
-						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 2 } },
-						["groups"] = {
+						questID = 75306,
+						isWeekly = true,
+						cost = { { "i", UNEARTHED_FRAGRANT_COIN, 2 } },
+						groups = {
 							i(204075),	-- Whelpling's Shadowflame Crest Fragment x5
 						}
 					}),
 					i(COVETED_BAUBLE, {
-						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 1 } },
+						cost = { { "i", UNEARTHED_FRAGRANT_COIN, 1 } },
 					}),
 					i(206270, {	-- Volcanic Equipment Chest
-						["cost"] = { { "c", 2245, 250 } },
-						["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
+						cost = { { "c", 2245, 250 } },
+						timeline = { ADDED_10_1_5, REMOVED_10_2_0 },
 					}),
 				},
 			}),

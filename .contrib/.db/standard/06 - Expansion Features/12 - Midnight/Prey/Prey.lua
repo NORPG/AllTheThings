@@ -33,35 +33,35 @@ local TrapNPCs = {	-- probably a ton of these, it seems unique per target & diff
 	247082,	-- Twilight Trap
 }
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 	n(PREY, {
 		n(ACHIEVEMENTS, {
 			ach(62403),	-- 'Tis But A Scratch
 			ach(63452, {	-- Fangs for the Memories
-				["timeline"] = { ADDED_12_1_0 },
-				["groups"] = { i(278372) },	-- Preyhunter's Fanged Effigy (DECOR!)
+				timeline = { ADDED_12_1_0 },
+				groups = { i(278372) },	-- Preyhunter's Fanged Effigy (DECOR!)
 			}),
 			ach(62383),	-- Gotta Hunt Them All
 			ach(62142),	-- I Didn't Hear No Bell
 			pvp(ach(62136)),	-- I'm Good At What I Do
 			ach(62137),	-- I'm Not Trapped In Here With You
 			ach(63644, {	-- Kill Me Now
-				["timeline"] = { ADDED_12_1_0 },
+				timeline = { ADDED_12_1_0 },
 			}),
 			ach(62140),	-- Kitchen Nightmare
 			ach(63457, {	-- Let Sleeping Skulls Lie
-				["timeline"] = { ADDED_12_1_0 },
+				timeline = { ADDED_12_1_0 },
 			}),
 			ach(62141),	-- Look, I'm Just Trying To Fish Here
 			ach(62139),	-- Midnight Hunter
 			ach(62135),	-- Now It's A Party
 			ach(63453, {	-- One, Two, Ral'kala's Coming for You (1/50)
-				["timeline"] = { ADDED_12_1_0 },
-				["groups"] = { i(278380) },	-- Preyhunter's Terror Bust (DECOR!)
+				timeline = { ADDED_12_1_0 },
+				groups = { i(278380) },	-- Preyhunter's Terror Bust (DECOR!)
 			}),
 			ach(63454, {	-- Nine, Ten, Never Sleep Again (50/50)
-				["timeline"] = { ADDED_12_1_0 },
-				["groups"] = { i(278376) },	-- Preyhunter's Terror Effigy (DECOR!)
+				timeline = { ADDED_12_1_0 },
+				groups = { i(278376) },	-- Preyhunter's Terror Effigy (DECOR!)
 			}),
 			ach(62154, {	-- Prey: A Different Kind of Void (Hard)
 				i(265798),	-- Preyseeker's Ren'dorei Bust (DECOR!)
@@ -106,7 +106,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				i(265690),	-- Preyseeker's Knight-Errant Effigy (DECOR!)
 			}),
 			ach(63415, {	-- Prey: Coiled Nightmares
-				["timeline"] = { ADDED_12_1_0 },
+				timeline = { ADDED_12_1_0 },
 			}),
 			ach(62162, {	-- Prey: Dominating the Void (Hard)
 				i(265704),	-- Preyseeker's Executor Bust (DECOR!)
@@ -171,186 +171,186 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				title(755),	-- Preyseeker <Name>
 			}),
 			ach(63642, {	-- Sashay Away
-				["timeline"] = { ADDED_12_1_0 },
+				timeline = { ADDED_12_1_0 },
 			}),
 			ach(63451, {	-- Scales for Days
-				["timeline"] = { ADDED_12_1_0 },
-				["groups"] = { i(278369) },	-- Preyhunter's Scaled Effigy (DECOR!)
+				timeline = { ADDED_12_1_0 },
+				groups = { i(278369) },	-- Preyhunter's Scaled Effigy (DECOR!)
 			}),
 			ach(63416, {	-- That's a Wrap
-				["timeline"] = { ADDED_12_1_0 },
+				timeline = { ADDED_12_1_0 },
 			}),
 			ach(62134),	-- The Deadliest of Prey
-			ach(62143, {["crs"]=TrapNPCs}),	-- Trapped In The Middle With You
+			ach(62143, {crs=TrapNPCs}),	-- Trapped In The Middle With You
 			ach(62138),	-- You're Trapped In Here With Me
 			ach(63643, {	-- You Guys, Again?
-				["cr"] = 261796,	-- Pack Scout
-				["timeline"] = { ADDED_12_1_0 },
+				cr = 261796,	-- Pack Scout
+				timeline = { ADDED_12_1_0 },
 			}),
 		}),
 		n(EVENT_COMPLETION, {symselector=SymSelector.MIDNIGHT_PREY_EVENT_COMPLETION}),
 		n(EVENT_COMPLETION, {
 			filter(MISC, {
 				i(269005),	-- Preyseeker's Glinting Coin Pouch
-				i(255825, {["crs"]=TrapNPCs}),	-- Disarmed Trap
+				i(255825, {crs=TrapNPCs}),	-- Disarmed Trap
 			}),
 			filter(REAGENTS, {
 				i(251283),	-- Tormented Tantalum
 			}),
-			i(273000, { ["timeline"] = { ADDED_12_1_0 } }),	-- Corrosive Soul
+			i(273000, { timeline = { ADDED_12_1_0 } }),	-- Corrosive Soul
 			i(269006),	-- Preyseeker's Gleaming Coin Pouch
 			i(269007),	-- Preyseeker's Glittering Coin Pouch
-			i(279574, { ["timeline"] = { ADDED_12_1_0 } }),	-- Preyhunter's Hero Chest
+			i(279574, { timeline = { ADDED_12_1_0 } }),	-- Preyhunter's Hero Chest
 		}),
 		n(QUESTS, {
 			q(95114, {	-- Prey: A Crimson Summons
-				--["sourceQuests"] = { ??? },	-- ??
-				["provider"] = { "n", 259865 },	-- Image of Astalor Bloodsworn
-				["coords"] = {
+				--sourceQuests = { ??? },	-- ??
+				provider = { "n", 259865 },	-- Image of Astalor Bloodsworn
+				coords = {
 					{ 47.6, 71.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 					{ 51.6, 70.1, MAP.MIDNIGHT.VOIDSTORM },
 				},
-				["isBreadcrumb"] = true,
-				["lvl"] = 90,
+				isBreadcrumb = true,
+				lvl = 90,
 			}),
 			q(92926, {	-- Astalor's Initiative
-				["sourceQuests"] = { 95114 },	-- Prey: A Crimson Summons
-				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
-				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				sourceQuests = { 95114 },	-- Prey: A Crimson Summons
+				provider = { "n", 246231 },	-- Astalor Bloodsworn
+				coord = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			q(92945, {	-- The Power of Anguish
-				["sourceQuests"] = { 92926 },	-- Astalor's Initiative
-				["provider"] = { "n", 253513 },	-- Astalor Bloodsworn
-				["coord"] = { 42.8, 10.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+				sourceQuests = { 92926 },	-- Astalor's Initiative
+				provider = { "n", 253513 },	-- Astalor Bloodsworn
+				coord = { 42.8, 10.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			q(93043, {	-- When Predator Becomes Prey
-				["sourceQuests"] = { 92945 },	-- The Power of Anguish
-				["provider"] = { "n", 253513 },	-- Astalor Bloodsworn
-				["coord"] = { 42.8, 10.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+				sourceQuests = { 92945 },	-- The Power of Anguish
+				provider = { "n", 253513 },	-- Astalor Bloodsworn
+				coord = { 42.8, 10.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			q(93086, {	-- To the Sanctum!
-				["sourceQuests"] = { 93043 },	-- When Predator Becomes Prey
-				["provider"] = { "n", 253513 },	-- Astalor Bloodsworn
-				["coord"] = { 42.8, 10.3, MAP.MIDNIGHT.EVERSONG_WOODS },
+				sourceQuests = { 93043 },	-- When Predator Becomes Prey
+				provider = { "n", 253513 },	-- Astalor Bloodsworn
+				coord = { 42.8, 10.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			q(92177, {	-- One Hero's Prey
-				["sourceQuests"] = { 93086 },	-- To the Sanctum! (TODO: unsure if it is still same quest chain, but up after this quest)
-				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
-				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				sourceQuests = { 93086 },	-- To the Sanctum! (TODO: unsure if it is still same quest chain, but up after this quest)
+				provider = { "n", 246231 },	-- Astalor Bloodsworn
+				coord = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			q(92178, {	-- Practical Magic
-				["sourceQuests"] = { 92177 },	-- One Hero's Prey
-				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
-				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
+				sourceQuests = { 92177 },	-- One Hero's Prey
+				provider = { "n", 246231 },	-- Astalor Bloodsworn
+				coord = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				groups = {
 					i(264513),	-- Crystalline Vessel (QI!)
 					--spell(1270744),	-- Prey: Hard Difficulty
 				},
 			}),
 			-- Renown 3 (but it "technically" just one big chain but unsure if there will be kind of rep boost and it could be skipped, gonna figure out)
 			q(92179, {	-- Dark Mending
-				["sourceQuests"] = { 92178 },	-- Practical Magic
-				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
-				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				sourceQuests = { 92178 },	-- Practical Magic
+				provider = { "n", 246231 },	-- Astalor Bloodsworn
+				coord = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			q(92180, {	-- Precious Jewels
-				["sourceQuests"] = { 92179 },	-- Dark Mending
-				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
-				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
+				sourceQuests = { 92179 },	-- Dark Mending
+				provider = { "n", 246231 },	-- Astalor Bloodsworn
+				coord = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				groups = {
 					i(258023),	-- Skilled Preyseeker's Knapsack (COSMETIC!)
 				},
 			}),
 			-- Renown 4 / Nightmare mode
 			q(92181, {	-- Garden Variety Sacrifices
-				["sourceQuests"] = { 92180 },	-- Precious Jewels
-				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
-				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				sourceQuests = { 92180 },	-- Precious Jewels
+				provider = { "n", 246231 },	-- Astalor Bloodsworn
+				coord = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			q(92182, {	-- The Sheep or the Wolf
-				["sourceQuests"] = { 92181 },	-- Garden Variety Sacrifices
-				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
-				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				sourceQuests = { 92181 },	-- Garden Variety Sacrifices
+				provider = { "n", 246231 },	-- Astalor Bloodsworn
+				coord = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			-- Weekly, up after r4 chain
 			q(94446, {	-- A Nightmarish Task
-				["sourceQuests"] = { 92182 },	-- The Sheep or the Wolf
+				sourceQuests = { 92182 },	-- The Sheep or the Wolf
 				-- #if AFTER 12.0.5
-				["sourceQuestNumRequired"] = 0,
+				sourceQuestNumRequired = 0,
 				-- #endif
-				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
-				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["isWeekly"] = true,
-				["groups"] = {
-					i(253342, { ["timeline"] = { REMOVED_12_1_0 } }),	-- Beacon of Hope
-					i(275910, { ["timeline"] = { ADDED_12_1_0 } }),	-- Scalebound Herald's Flute
+				provider = { "n", 246231 },	-- Astalor Bloodsworn
+				coord = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				isWeekly = true,
+				groups = {
+					i(253342, { timeline = { REMOVED_12_1_0 } }),	-- Beacon of Hope
+					i(275910, { timeline = { ADDED_12_1_0 } }),	-- Scalebound Herald's Flute
 				},
 			}),
 			q(91277, {	-- Preferential Killing
-				["provider"] = { "n", 246231 },	-- Astalor Bloodsworn
-				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["minReputation"] = { 2764, 10 },	-- Prey Season 1, 10
-				["isWeekly"] = true,
+				provider = { "n", 246231 },	-- Astalor Bloodsworn
+				coord = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				minReputation = { 2764, 10 },	-- Prey Season 1, 10
+				isWeekly = true,
 			}),
 			-- Season 2
 			q(96004, {	-- Prey: A Slithering Threat
-				--["sourceQuests"] = { ??? },	-- ??
-				["qg"] = 246231,	-- Astalor Bloodsworn
-				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["timeline"] = { ADDED_12_1_0 },
+				--sourceQuests = { ??? },	-- ??
+				qg = 246231,	-- Astalor Bloodsworn
+				coord = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96466, {	-- Prey: Anguish Island
-				["sourceQuests"] = { 96004 },	-- Prey: A Slithering Threat
-				["qg"] = 246231,	-- Astalor Bloodsworn
-				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["timeline"] = { ADDED_12_1_0 },
+				sourceQuests = { 96004 },	-- Prey: A Slithering Threat
+				qg = 246231,	-- Astalor Bloodsworn
+				coord = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96474, {	-- Prey: Something for Astalor
-				["sourceQuests"] = { 96466 },	-- Prey: Anguish Island
-				["qg"] = 265267,	-- Sanctum Attendant Ethrandil
-				["coord"] = { 58.2, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				sourceQuests = { 96466 },	-- Prey: Anguish Island
+				qg = 265267,	-- Sanctum Attendant Ethrandil
+				coord = { 58.2, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96525, {	-- Prey: Out of Our Depth
-				["sourceQuests"] = { 96474 },	-- Prey: Something for Astalor
-				["qg"] = 265267,	-- Sanctum Attendant Ethrandil
-				["coord"] = { 58.2, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				sourceQuests = { 96474 },	-- Prey: Something for Astalor
+				qg = 265267,	-- Sanctum Attendant Ethrandil
+				coord = { 58.2, 48.7, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96503, {	-- Prey: A Ghostly Nightmare
-				["sourceQuests"] = { 96525 },	-- Prey: Out of Our Depth
-				["qg"] = 246231,	-- Astalor Bloodsworn
-				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["timeline"] = { ADDED_12_1_0 },
+				sourceQuests = { 96525 },	-- Prey: Out of Our Depth
+				qg = 246231,	-- Astalor Bloodsworn
+				coord = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96532, {	-- Prey: Attending the Attendant
-				["sourceQuests"] = { 96525 },	-- Prey: Out of Our Depth
-				["qg"] = 246231,	-- Astalor Bloodsworn
-				["coord"] = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["timeline"] = { ADDED_12_1_0 },
+				sourceQuests = { 96525 },	-- Prey: Out of Our Depth
+				qg = 246231,	-- Astalor Bloodsworn
+				coord = { 56.7, 65.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96528, {	-- Prey: Anguish from Beyond
-				["sourceQuests"] = { 96532 },	-- Prey: Attending the Attendant
-				["qg"] = 265529,	-- Sanctum Attendant Ethrandil
-				["coord"] = { 57.0, 33.3, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["isDaily"] = true,
-				["timeline"] = { ADDED_12_1_0 },
-				["groups"] = { i(274422) },	-- 100x Ossified Relic
+				sourceQuests = { 96532 },	-- Prey: Attending the Attendant
+				qg = 265529,	-- Sanctum Attendant Ethrandil
+				coord = { 57.0, 33.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+				isDaily = true,
+				timeline = { ADDED_12_1_0 },
+				groups = { i(274422) },	-- 100x Ossified Relic
 			}),
 		}),
 		n(QUESTS, sharedData({
-			["provider"] = { "n", 245824 },	-- Hunt Table
-			["coord"] = { 56.8, 65.3, MAP.MIDNIGHT.SILVERMOON_CITY },
-			["maxReputation"] = {
+			provider = { "n", 245824 },	-- Hunt Table
+			coord = { 56.8, 65.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+			maxReputation = {
 				-- #if AFTER 12.1.0
 				2808, 10,	-- Prey Season 2, 10
 				-- #else
 				2764, 10,	-- Prey Season 1, 10
 				-- #endif
 			},
-			["isWeekly"] = true,
+			isWeekly = true,
 		}, {
-			q(95023, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey: Batani the Scaled (Nightmare)
+			q(95023, { timeline = { ADDED_12_1_0 } }),	-- Prey: Batani the Scaled (Nightmare)
 			q(91114),	-- Prey: Consul Nebulor (Normal)
 			q(91245),	-- Prey: Consul Nebulor (Hard)
 			q(91259),	-- Prey: Consul Nebulor (Nightmare)
@@ -375,15 +375,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			q(91116),	-- Prey: Imperator Enigmalia (Normal)
 			q(91247),	-- Prey: Imperator Enigmalia (Hard)
 			q(91261),	-- Prey: Imperator Enigmalia (Nightmare)
-			q(95021, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey: Janoa the Fang (Nightmare)
+			q(95021, { timeline = { ADDED_12_1_0 } }),	-- Prey: Janoa the Fang (Nightmare)
 			q(91103),	-- Prey: Jo'zolo the Breaker (Normal)
 			q(91226),	-- Prey: Jo'zolo the Breaker (Hard)
 			q(91227),	-- Prey: Jo'zolo the Breaker (Nightmare)
-			q(95024, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey: Kadani the Claw (Nightmare)
+			q(95024, { timeline = { ADDED_12_1_0 } }),	-- Prey: Kadani the Claw (Nightmare)
 			q(91117),	-- Prey: Knight-Errant Bloodshatter (Normal)
 			q(91248),	-- Prey: Knight-Errant Bloodshatter (Hard)
 			q(91262),	-- Prey: Knight-Errant Bloodshatter (Nightmare)
-			q(95022, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey: Kursak the Coiled
+			q(95022, { timeline = { ADDED_12_1_0 } }),	-- Prey: Kursak the Coiled
 			q(91098),	-- Prey: L-N-0R the Recycler (Normal)
 			q(91216),	-- Prey: L-N-0R the Recycler (Hard)
 			q(91217),	-- Prey: L-N-0R the Recycler (Nightmare)
@@ -446,18 +446,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			q(91229),	-- Prey: Zadu, Fist of Nalorakk (Nightmare)
 		})),
 		n(258928, {	-- Ral'kala <Terror of the Isle>
-			["description"] = "Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, activated by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",
-			["coords"] = {
+			description = "Repeatable special Prey Mob on The Coiled Isle.\nSpawned as a public event by burning 98x Ossified Relic at a Haunted Brazier. Has Delayed Demise (immune 15s on spawn), keep attacking or he despawns and the Relics are lost.\n\nRequires Preyhunter's Journey Rank 1 unlocked and Prey: Curse of the Isle, activated by Astalor Bloodsworn, npc 266481.\nTo see/fight him and to get loot you must personally burn at least 1x Ossified Relic at the brazier.",
+			coords = {
 				{ 29.5, 64.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 				{ 52.9, 42.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 				{ 68.4, 45.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 			},
-			["questID"] = 98551,
-			["isWeekly"] = true,
-			["crs"] = { 265151 },	-- Haunted Brazier
-			["cost"] = { { "i", 274422, 1 } },	-- Ossified Relic
-			["timeline"] = { ADDED_12_1_0 },
-			["groups"] = {
+			questID = 98551,
+			isWeekly = true,
+			crs = { 265151 },	-- Haunted Brazier
+			cost = { { "i", 274422, 1 } },	-- Ossified Relic
+			timeline = { ADDED_12_1_0 },
+			groups = {
 				i(263874),	-- Emerald-Encrusted Amani Ritual Skull (DECOR!)
 				i(275659),	-- Hexflame Reaver (MOUNT!)
 				i(278154),	-- Hooked Net Trap (DECOR!)
@@ -472,8 +472,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 		}),
 		n(VENDORS, {
 			n(258181, {	-- Construct Ali'a <Decor Specialist>
-				["coord"] = { 55.8, 66.0, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
+				coord = { 55.8, 66.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				groups = {
 					n(DECOR, {
 						-- Season 1 Rewards
 						anguish(400, i(265794)),	-- Preyseeker's Plinth (DECOR!)
@@ -509,28 +509,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 						anguish(400, i(265706)),	-- Preyseeker's Wretched Bust (DECOR!)
 						anguish(600, i(265691)),	-- Preyseeker's Wretched Effigy (DECOR!)
 						-- Season 2 Rewards
-						anguish(100, i(278123, { ["timeline"] = { ADDED_12_1_0 } })),	-- Sturdy Silvermoon Crate Lid (DECOR!)
-						anguish(100, i(278126, { ["timeline"] = { ADDED_12_1_0 } })),	-- Mysterious Sin'dorei Candlestick (DECOR!)
-						anguish(100, i(278130, { ["timeline"] = { ADDED_12_1_0 } })),	-- Gilded Silvermoon Compass (DECOR!)
-						anguish(100, i(278134, { ["timeline"] = { ADDED_12_1_0 } })),	-- Sturdy Silvermoon Crate (DECOR!)
-						anguish(200, i(250870, { ["timeline"] = { ADDED_12_1_0 } })),	-- Crimson Crystal Fragment (DECOR!)
-						anguish(200, i(253449, { ["timeline"] = { ADDED_12_1_0 } })),	-- Bound Silvermoon Drapes (DECOR!)
-						anguish(200, i(278145, { ["timeline"] = { ADDED_12_1_0 } })),	-- Stonecarved Sin'dorei Jar (DECOR!)
-						anguish(100, i(278148, { ["timeline"] = { ADDED_12_1_0 } })),	-- Adorned Sin'dorei Satchel (DECOR!)
-						anguish(350, i(278151, { ["timeline"] = { ADDED_12_1_0 } })),	-- Blood Knight's Decorative Shield (DECOR!)
-						anguish(350, i(250868, { ["timeline"] = { ADDED_12_1_0 } })),	-- Crimson Crystal Column (DECOR!)
-						anguish(600, i(278369, { ["timeline"] = { ADDED_12_1_0 } })),	-- Preyhunter's Scaled Effigy (DECOR!)
-						anguish(600, i(278372, { ["timeline"] = { ADDED_12_1_0 } })),	-- Preyhunter's Fanged Effigy (DECOR!)
-						anguish(400, i(278380, { ["timeline"] = { ADDED_12_1_0 } })),	-- Preyhunter's Terror Bust (DECOR!)
-						anguish(600, i(278376, { ["timeline"] = { ADDED_12_1_0 } })),	-- Preyhunter's Terror Effigy (DECOR!)
+						anguish(100, i(278123, { timeline = { ADDED_12_1_0 } })),	-- Sturdy Silvermoon Crate Lid (DECOR!)
+						anguish(100, i(278126, { timeline = { ADDED_12_1_0 } })),	-- Mysterious Sin'dorei Candlestick (DECOR!)
+						anguish(100, i(278130, { timeline = { ADDED_12_1_0 } })),	-- Gilded Silvermoon Compass (DECOR!)
+						anguish(100, i(278134, { timeline = { ADDED_12_1_0 } })),	-- Sturdy Silvermoon Crate (DECOR!)
+						anguish(200, i(250870, { timeline = { ADDED_12_1_0 } })),	-- Crimson Crystal Fragment (DECOR!)
+						anguish(200, i(253449, { timeline = { ADDED_12_1_0 } })),	-- Bound Silvermoon Drapes (DECOR!)
+						anguish(200, i(278145, { timeline = { ADDED_12_1_0 } })),	-- Stonecarved Sin'dorei Jar (DECOR!)
+						anguish(100, i(278148, { timeline = { ADDED_12_1_0 } })),	-- Adorned Sin'dorei Satchel (DECOR!)
+						anguish(350, i(278151, { timeline = { ADDED_12_1_0 } })),	-- Blood Knight's Decorative Shield (DECOR!)
+						anguish(350, i(250868, { timeline = { ADDED_12_1_0 } })),	-- Crimson Crystal Column (DECOR!)
+						anguish(600, i(278369, { timeline = { ADDED_12_1_0 } })),	-- Preyhunter's Scaled Effigy (DECOR!)
+						anguish(600, i(278372, { timeline = { ADDED_12_1_0 } })),	-- Preyhunter's Fanged Effigy (DECOR!)
+						anguish(400, i(278380, { timeline = { ADDED_12_1_0 } })),	-- Preyhunter's Terror Bust (DECOR!)
+						anguish(600, i(278376, { timeline = { ADDED_12_1_0 } })),	-- Preyhunter's Terror Effigy (DECOR!)
 					}),
 				},
 			}),
 			-- #if AFTER 12.1.0
 			n(259939, {	-- Construct E'nui <Rewards>
-				["coord"] = { 56.9, 67.0, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["timeline"] = { ADDED_12_1_0 },
-				["groups"] = {
+				coord = { 56.9, 67.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				timeline = { ADDED_12_1_0 },
+				groups = {
 					anguish(1200, i(259991)),	-- Lil' Preyseeker (PET!)
 					anguish(800, i(264434)),	-- Voldy (PET!)
 					anguish(2000, i(257191)),	-- Preyseeker's Hubris (MOUNT!)
@@ -548,25 +548,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					anguish(800, i(263933)),	-- Preyseeker's Hearthstone (TOY!)
 					anguish(600, i(264666)),	-- Rod of Exanguishation (TOY!)
 					i(256754, {	-- Formula: Enchant Shoulders - Nature's Embrace (RECIPE!)
-						["cost"] = {
+						cost = {
 							{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
 					i(256756, {	-- Formula: Enchant Boots - Farstrider's Hunt (RECIPE!)
-						["cost"] = {
+						cost = {
 							{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
 					i(267399, {	-- Technique: Sturdy Ren'dorei Cask (RECIPE!)
-						["cost"] = {
+						cost = {
 							{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
 					i(267400, {	-- Technique: Wild Hanging Scroll (RECIPE!)
-						["cost"] = {
+						cost = {
 							{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
@@ -575,45 +575,45 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 			-- #endif
 			n(252956, {	-- Construct V'anore <Rewards>
-				["coord"] = { 55.7, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
+				coord = { 55.7, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+				groups = {
 					-- #IF AFTER 12.1.0
 					-- Season 2 Rewards
-					anguish(800, i(276229, { ["timeline"] = { ADDED_12_1_0 } })),	-- Preyhunter's Trophy Stand (TOY!)
-					anguish(600, i(276258, { ["timeline"] = { ADDED_12_1_0 } })),	-- Companion Command Crystal (TOY!)
+					anguish(800, i(276229, { timeline = { ADDED_12_1_0 } })),	-- Preyhunter's Trophy Stand (TOY!)
+					anguish(600, i(276258, { timeline = { ADDED_12_1_0 } })),	-- Companion Command Crystal (TOY!)
 					i(275312, {	-- Formula: Furious Tiki Mask (RECIPE!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = {
+						timeline = { ADDED_12_1_0 },
+						cost = {
 							{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
 					i(273061, {	-- Plans: Hunter's Ritual Stone (RECIPE!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = {
+						timeline = { ADDED_12_1_0 },
+						cost = {
 							{ "c", ARTISAN_MOXIE.BLACKSMITHING, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
 					i(275275, {	-- Recipe: Concocted Poisonous Residue (RECIPE!)
-						["timeline"] = { ADDED_12_1_0 },
-						["cost"] = {
+						timeline = { ADDED_12_1_0 },
+						cost = {
 							{ "c", ARTISAN_MOXIE.ALCHEMY, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
-					anguish(500, i(258029, { ["timeline"] = { ADDED_12_1_0 } })),	-- Vaunted Preyhunter's Plumed Helm (COSMETIC!)
-					anguish(500, i(258027, { ["timeline"] = { ADDED_12_1_0 } })),	-- Vaunted Preyhunter's Shoulder-Spikes (COSMETIC!)
-					anguish(500, i(258031, { ["timeline"] = { ADDED_12_1_0 } })),	-- Vaunted Preyhunter's Knapsack (COSMETIC!)
-					anguish(1600, iensemble(278101, { ["timeline"] = { ADDED_12_1_0 } })),	-- Ensemble: Preyhunter's Polished Armor
-					anguish(1600, iensemble(278103, { ["timeline"] = { ADDED_12_1_0 } })),	-- Ensemble: Preyhunter's Rugged Armor
-					anguish(1600, iensemble(278104, { ["timeline"] = { ADDED_12_1_0 } })),	-- Ensemble: Preyhunter's Sleek Armor
-					anguish(1600, iensemble(278105, { ["timeline"] = { ADDED_12_1_0 } })),	-- Ensemble: Preyhunter's Refined Armor
-					anguish(1600, iensemble(278261, { ["timeline"] = { ADDED_12_1_0 } })),	-- Arsenal: Preyhunter's Lost Armaments
-					anguish(1200, i(275704, { ["timeline"] = { ADDED_12_1_0 } })),	-- Preyhunter's Riftbreaker (PET!)
-					anguish(1200, i(275702, { ["timeline"] = { ADDED_12_1_0 } })),	-- Preyhunter's Prismguard (PET!)
-					anguish(1000, i(279092, { ["timeline"] = { ADDED_12_1_0 } })),	-- Anguish-Touched Pouch
-					anguish(2250, i(275660, { ["timeline"] = { ADDED_12_1_0 } })),	-- Preyhunter's Courser (MOUNT!)
+					anguish(500, i(258029, { timeline = { ADDED_12_1_0 } })),	-- Vaunted Preyhunter's Plumed Helm (COSMETIC!)
+					anguish(500, i(258027, { timeline = { ADDED_12_1_0 } })),	-- Vaunted Preyhunter's Shoulder-Spikes (COSMETIC!)
+					anguish(500, i(258031, { timeline = { ADDED_12_1_0 } })),	-- Vaunted Preyhunter's Knapsack (COSMETIC!)
+					anguish(1600, iensemble(278101, { timeline = { ADDED_12_1_0 } })),	-- Ensemble: Preyhunter's Polished Armor
+					anguish(1600, iensemble(278103, { timeline = { ADDED_12_1_0 } })),	-- Ensemble: Preyhunter's Rugged Armor
+					anguish(1600, iensemble(278104, { timeline = { ADDED_12_1_0 } })),	-- Ensemble: Preyhunter's Sleek Armor
+					anguish(1600, iensemble(278105, { timeline = { ADDED_12_1_0 } })),	-- Ensemble: Preyhunter's Refined Armor
+					anguish(1600, iensemble(278261, { timeline = { ADDED_12_1_0 } })),	-- Arsenal: Preyhunter's Lost Armaments
+					anguish(1200, i(275704, { timeline = { ADDED_12_1_0 } })),	-- Preyhunter's Riftbreaker (PET!)
+					anguish(1200, i(275702, { timeline = { ADDED_12_1_0 } })),	-- Preyhunter's Prismguard (PET!)
+					anguish(1000, i(279092, { timeline = { ADDED_12_1_0 } })),	-- Anguish-Touched Pouch
+					anguish(2250, i(275660, { timeline = { ADDED_12_1_0 } })),	-- Preyhunter's Courser (MOUNT!)
 					-- #else
 					-- Season 1 Rewards. Moved to Construct E'nui at the start of Season 2
 					anguish(1200, i(259991)),	-- Lil' Preyseeker (PET!)
@@ -632,25 +632,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 					anguish(800, i(263933)),	-- Preyseeker's Hearthstone (TOY!)
 					anguish(600, i(264666)),	-- Rod of Exanguishation (TOY!)
 					i(256754, {	-- Formula: Enchant Shoulders - Nature's Embrace (RECIPE!)
-						["cost"] = {
+						cost = {
 							{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
 					i(256756, {	-- Formula: Enchant Boots - Farstrider's Hunt (RECIPE!)
-						["cost"] = {
+						cost = {
 							{ "c", ARTISAN_MOXIE.ENCHANTING, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
 					i(267399, {	-- Technique: Sturdy Ren'dorei Cask (RECIPE!)
-						["cost"] = {
+						cost = {
 							{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
 					}),
 					i(267400, {	-- Technique: Wild Hanging Scroll (RECIPE!)
-						["cost"] = {
+						cost = {
 							{ "c", ARTISAN_MOXIE.INSCRIPTION, 150 },
 							{ "c", 3392, 500 },	-- Remnant of Anguish
 						},
@@ -660,106 +660,106 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 			}),
 		}),
 		n(WORLD_QUESTS, sharedData({
-			["isWorldQuest"] = true,
+			isWorldQuest = true,
 		}, {
 			-- Season 1
 			q(91601, {	-- Prey: Apex Predator
-				["coord"] = { 42.7, 56.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+				coord = { 42.7, 56.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			q(91602, {	-- Prey: Apex Predator (TODO: (un)flagged after filling up bar in Zul'Aman zone)
-				--["coord"] = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
+				--coord = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			q(91604, {	-- Prey: Apex Predator (TODO: fired after filling up progress during hard mode in Zul'Aman)
-				--["coord"] = { X, Y, MAP.MIDNIGHT.ZULAMAN },
+				--coord = { X, Y, MAP.MIDNIGHT.ZULAMAN },
 			}),
 			q(91207, {	-- Prey: Apex Predator (TODO: probably could be wrongly flagged after fill up bar during hard mode)
-				["coord"] = { 42.7, 56.0, MAP.MIDNIGHT.EVERSONG_WOODS },
+				coord = { 42.7, 56.0, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			q(91523, {	-- Prey: Concealed Threat (TODO: (un)flagged after picked up Deliah Gloomsong (Hard))
-				["coord"] = { 33.3, 45.5, MAP.MIDNIGHT.VOIDSTORM },
+				coord = { 33.3, 45.5, MAP.MIDNIGHT.VOIDSTORM },
 			}),
 			q(91590, {	-- Prey: Concealed Threat
-				["coord"] = { 38.8, 70.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+				coord = { 38.8, 70.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			q(91591, {	-- Prey: Concealed Threat (TODO: probably could be wrongly flagged after fill up bar during hard mode)
-				["coord"] = { 38.8, 70.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+				coord = { 38.8, 70.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			q(91592, {	-- Prey: Concealed Threat (TODO: probably could be wrongly flagged after fill up bar during nightmare mode)
-				["coord"] = { 38.8, 70.5, MAP.MIDNIGHT.EVERSONG_WOODS },
+				coord = { 38.8, 70.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			q(91458, {	-- Prey: Endurance Hunter (TODO: fired after filling up progress during normal mode)
-				--["coord"] = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
+				--coord = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			q(91594, {	-- Prey: Endurance Hunter
-				["coord"] = { 60.1, 71.7, MAP.MIDNIGHT.EVERSONG_WOODS },
+				coord = { 60.1, 71.7, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			q(91595, {	-- Prey: Endurance Hunter (TODO: rng marked completed while was gathering ore/herb)
-				["coord"] = { 41.2, 30.0, MAP.MIDNIGHT.ZULAMAN },
+				coord = { 41.2, 30.0, MAP.MIDNIGHT.ZULAMAN },
 			}),
 			q(91596, {	-- Prey: Endurance Hunter (TODO: (un)flagged after picked up L-N-0R the Recycler (Hard))
-				--["coord"] = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
+				--coord = { X, Y, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			-- Season 2
 			q(95974, {	-- Prey: Abandoned Camp
-				["coord"] = { 54.2, 43.2, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				coord = { 54.2, 43.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			-- Exo Note: Following trigger on Quest Accept/Completion/Abandonment. I don't know which one is an actual World Quest (such as 95974) or HQTs or what ever
 			q(96596, {	-- Prey: Abandoned Camp
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				--coord = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96597, {	-- Prey: Abandoned Camp
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				--coord = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96598, {	-- Prey: Abandoned Camp
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				--coord = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96599, {	-- Prey: Abandoned Camp
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				--coord = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(95942, {	-- Prey: Venom Ambush
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				--coord = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96588, {	-- Prey: Venom Ambush
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				--coord = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96589, {	-- Prey: Venom Ambush
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				--coord = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96590, {	-- Prey: Venom Ambush
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				--coord = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96591, {	-- Prey: Venom Ambush
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				--coord = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(95989, {	-- Prey: Venomblade Burrows
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				--coord = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96592, {	-- Prey: Venomblade Burrows
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				--coord = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96593, {	-- Prey: Venomblade Burrows
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				--coord = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96594, {	-- Prey: Venomblade Burrows
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				--coord = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 			q(96595, {	-- Prey: Venomblade Burrows
-				--["coord"] = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
-				["timeline"] = { ADDED_12_1_0 },
+				--coord = { X, Y, MAP.MIDNIGHT.THE_COILED_ISLE },
+				timeline = { ADDED_12_1_0 },
 			}),
 		})),
 	}),
@@ -769,7 +769,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(PREY, {
 		-- Weekly
 		n(QUESTS, sharedData({
-			["isWeekly"] = true,
+			isWeekly = true,
 		},{
 			q(93872),	-- Prey completed, 1st per week
 			q(93873),	-- Prey completed, 2nd per week
@@ -805,8 +805,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--q(95539),	-- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
 			q(91414),	-- Flags and unflags after accepting and completing Random Prey contracts
 			q(91415),	-- After choosing a Preference Killing
-			q(98337, { ["timeline"] = { ADDED_12_1_0 } }),	-- First Prey completed in MID:S2
-			q(98456, name(HEADERS.Item, 274422, { ["timeline"] = { ADDED_12_1_0 } })),	-- Appears to be looting a specific Ossified relic object @ 58.4, 48.9 on Coiled Isle
+			q(98337, { timeline = { ADDED_12_1_0 } }),	-- First Prey completed in MID:S2
+			q(98456, name(HEADERS.Item, 274422, { timeline = { ADDED_12_1_0 } })),	-- Appears to be looting a specific Ossified relic object @ 58.4, 48.9 on Coiled Isle
 			-- Renown levels, per character when unlocked?
 			-- q(98507, name(HEADERS.Faction, 2808, {isWeekly=true})),	-- ?? Renown 2, weekly assumed. possibly daily?
 			-- q(98508, name(HEADERS.Faction, 2808, {isWeekly=true})),	-- ?? Renown 3, weekly assumed. possibly daily?

@@ -24,10 +24,10 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 	inst(1299, {	-- Windrunner Spire
-		["coord"] = { 35.5, 78.8, MAP.MIDNIGHT.EVERSONG_WOODS },
-		["maps"] = {
+		coord = { 35.5, 78.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+		maps = {
 			2492,	-- The Promenade
 			2493,	-- Veressa's Repose - Upper
 			2494,	-- Veressa's Repose - Lower
@@ -36,12 +36,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			2498,	-- Windrunner Vault
 			2499,	-- The Pinnacle
 		},
-		["groups"] = {
+		groups = {
 			n(QUESTS, {
 				q(93850, {	-- Windrunner Spire: Haunting Melodies
-					["sourceQuests"] = { 86745 },	--	Silvermoon Must Know
-					["provider"] = { "n", 256875 },	-- Restless Spirit
-					["coord"] = { 35.5, 79.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+					sourceQuests = { 86745 },	--	Silvermoon Must Know
+					provider = { "n", 256875 },	-- Restless Spirit
+					coord = { 35.5, 79.1, MAP.MIDNIGHT.EVERSONG_WOODS },
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
@@ -85,16 +85,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
-				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
-				["groups"] = {
+				timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
+				groups = {
 					BossOnly(HEART, {	-- The Restless Heart
 						ach(41288),	-- Heroic: Windrunner Spire
 					}),
 				},
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
-				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
-				["groups"] = {
+				timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
+				groups = {
 					BossOnly(HEART, {	-- The Restless Heart
 						ach(41291),	-- Mythic: Windrunner Spire
 						ach(61621),	-- Mythic: Windrunner Spire Guild Run

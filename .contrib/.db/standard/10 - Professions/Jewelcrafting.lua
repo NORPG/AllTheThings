@@ -2,59 +2,59 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 -- #if AFTER TBC
-root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = JEWELCRAFTING }, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWELCRAFTING }, {
+	n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 		ach(18880),	-- Generations of Gemstones I
 		ach(18889),	-- Generations of Gemstones II
 		ach(18890),	-- Generations of Gemstones III
 		ach(18891),	-- Generations of Gemstones IV
 		ach(18897, {	-- Can't Crush These
 			crit(61640, {	-- Shipment: Blood Jade Amulet
-				["_quests"] = { 12958 },	-- Shipment: Blood Jade Amulet
+				_quests = { 12958 },	-- Shipment: Blood Jade Amulet
 			}),
 			crit(61641, {	-- Shipment: Glowing Ivory Figurine
-				["_quests"] = { 12959 },	-- Shipment: Glowing Ivory Figurine
+				_quests = { 12959 },	-- Shipment: Glowing Ivory Figurine
 			}),
 			crit(61642, {	-- Shipment: Wicked Sun Brooch
-				["_quests"] = { 12960 },	-- Shipment: Wicked Sun Brooch
+				_quests = { 12960 },	-- Shipment: Wicked Sun Brooch
 			}),
 			crit(61643, {	-- Shipment: Intricate Bone Figurine
-				["_quests"] = { 12961 },	-- Shipment: Intricate Bone Figurine
+				_quests = { 12961 },	-- Shipment: Intricate Bone Figurine
 			}),
 			crit(61644, {	-- Shipment: Bright Armor Relic
-				["_quests"] = { 12962 },	-- Shipment: Bright Armor Relic
+				_quests = { 12962 },	-- Shipment: Bright Armor Relic
 			}),
 			crit(61645, {	-- Shipment: Shifting Sun Curio
-				["_quests"] = { 12963 },	-- Shipment: Shifting Sun Curio
+				_quests = { 12963 },	-- Shipment: Shifting Sun Curio
 			}),
 			-- these remaining criteria are generated from DB data in Retail
 			-- #IF ANYCLASSIC
 			crit(61646, {	-- Nibbler! No!
-				["_quests"] = {
+				_quests = {
 					25105,	-- Nibbler! No! [A]
 					25158 ,	-- Nibbler! No! [H]
 				},
 			}),
 			crit(61648, {	-- A Present for Lila
-				["_quests"] = {
+				_quests = {
 					25154,	-- A Present for Lila [A]
 					25160 ,	-- A Present for Lila [H]
 				},
 			}),
 			crit(61650, {	-- Ogrezonians in the Mood
-				["_quests"] = {
+				_quests = {
 					25155,	-- Ogrezonians in the Mood [A]
 					25161 ,	-- Ogrezonians in the Mood [H]
 				},
 			}),
 			crit(61652, {	-- Elemental Goo
-				["_quests"] = {
+				_quests = {
 					25156,	-- Elemental Goo [A]
 					25162 ,	-- Elemental Goo [H]
 				},
 			}),
 			crit(149174, {	-- The Latest Fashion!
-				["_quests"] = {
+				_quests = {
 					25157,	-- The Latest Fashion! [A]
 					25159 ,	-- The Latest Fashion! [H]
 				},
@@ -65,178 +65,178 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		ach(18893),	-- Plentiful Prospects
 		ach(18727),	-- Rave Leader
 	})),
-	expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+	expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_4_0_3_LAUNCH } }, {
 		n(QUESTS, {
 			q(28778, {	-- Broken Boar Figurine
-				["provider"] = { "i", 65895 },	-- Figurine - King of Boars
+				provider = { "i", 65895 },	-- Figurine - King of Boars
 				-- #if BEFORE 10.2.
-				["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+				classes = { DEATHKNIGHT, PALADIN, WARRIOR },
 				-- #endif
-				["groups"] = {
+				groups = {
 					i(52351),	-- Figurine - King of Boars
 				},
 			}),
 			q(28776, {	-- Broken Earthen Figurine
-				["provider"] = { "i", 65897 },	-- Figurine - Earthen Guardian
+				provider = { "i", 65897 },	-- Figurine - Earthen Guardian
 				-- #if BEFORE 10.2.
-				["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR, DRUID, DEMONHUNTER, MONK },
+				classes = { DEATHKNIGHT, PALADIN, WARRIOR, DRUID, DEMONHUNTER, MONK },
 				-- #endif
-				["groups"] = {
+				groups = {
 					i(52352),	-- Figurine - Earthen Guardian
 				},
 			}),
 			q(28777, {	-- Broken Owl Figurine
-				["provider"] = { "i", 65894 },	-- Figurine - Dream Owl
+				provider = { "i", 65894 },	-- Figurine - Dream Owl
 				-- #if BEFORE 10.2.
-				["classes"] = { PALADIN, SHAMAN, DRUID, MONK, PRIEST },
+				classes = { PALADIN, SHAMAN, DRUID, MONK, PRIEST },
 				-- #endif
-				["groups"] = {
+				groups = {
 					i(52354),	-- Figurine - Dream Owl
 				},
 			}),
 			q(25047, {	-- Broken Panther Figurine
-				["provider"] = { "i", 52197 },	-- Figurine - Demon Panther
+				provider = { "i", 52197 },	-- Figurine - Demon Panther
 				-- #if BEFORE 10.2.
-				["classes"] = { HUNTER, SHAMAN, MONK, DEMONHUNTER, DRUID, ROGUE },
+				classes = { HUNTER, SHAMAN, MONK, DEMONHUNTER, DRUID, ROGUE },
 				-- #endif
-				["groups"] = {
+				groups = {
 					i(52199),	-- Figurine - Demon Panther
 				},
 			}),
 			q(28775, {	-- Broken Serpent Figurine
-				["provider"] = { "i", 65896 },	-- Figurine - Jeweled Serpent
+				provider = { "i", 65896 },	-- Figurine - Jeweled Serpent
 				-- #if BEFORE 10.2.
-				["classes"] = { SHAMAN, DRUID, MONK, PALADIN, PRIEST, MAGE, WARLOCK },
+				classes = { SHAMAN, DRUID, MONK, PALADIN, PRIEST, MAGE, WARLOCK },
 				-- #endif
-				["groups"] = {
+				groups = {
 					i(52353),	-- Figurine - Jeweled Serpent
 				},
 			}),
 		}),
 	}))),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 		q(40523, {	-- Facet-nating Friends
-			["provider"] = { "n", 93526 },	-- Tiffany Cartier
-			["coord"] = { 40.3, 34.7, LEGION_DALARAN },
-			["groups"] = {
+			provider = { "n", 93526 },	-- Tiffany Cartier
+			coord = { 40.3, 34.7, LEGION_DALARAN },
+			groups = {
 				r(195116, {	-- Jewelcrafting (Legion Master)
-					["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
-					["collectible"] = false,
+					timeline = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+					collectible = false,
 				}),
-				applyclassicphase(BFA_PHASE_ONE, r(264546, {["timeline"] = {ADDED_8_0_1}})),	-- Legion Jewelcrafting
-				applyclassicphase(DF_PHASE_ONE, r(382975, {["timeline"] = {ADDED_8_0_1}})),	-- Legion Jewelcrafting
+				applyclassicphase(BFA_PHASE_ONE, r(264546, {timeline = {ADDED_8_0_1}})),	-- Legion Jewelcrafting
+				applyclassicphase(DF_PHASE_ONE, r(382975, {timeline = {ADDED_8_0_1}})),	-- Legion Jewelcrafting
 			},
 		}),
 		q(40529, {	-- Truly Outrageous
-			["sourceQuests"] = { 40523 },	-- Facet-nating Friends
-			["provider"] = { "n", 93526 },	-- Tiffany Cartier
-			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-			["cost"] = {{"i", 129100, 5}},	-- 5x Gem Chip
-			["groups"] = {
+			sourceQuests = { 40523 },	-- Facet-nating Friends
+			provider = { "n", 93526 },	-- Tiffany Cartier
+			coord = { 40.2, 34.6, LEGION_DALARAN },
+			cost = {{"i", 129100, 5}},	-- 5x Gem Chip
+			groups = {
 				r(195850),	-- Versatile Skystone
 			},
 		}),
 		q(40530, {	-- An Eye for Detail
-			["sourceQuests"] = { 40529 },	-- Truly Outrageous
-			["provider"] = { "n", 93526 },	-- Tiffany Cartier
-			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+			sourceQuests = { 40529 },	-- Truly Outrageous
+			provider = { "n", 93526 },	-- Tiffany Cartier
+			coord = { 40.2, 34.6, LEGION_DALARAN },
 		}),
 		q(40531, {	-- Swift Vengeance
-			["sourceQuests"] = { 40530 },	-- An Eye for Detail
-			["provider"] = { "n", 93526 },	-- Tiffany Cartier
-			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-			["groups"] = {
+			sourceQuests = { 40530 },	-- An Eye for Detail
+			provider = { "n", 93526 },	-- Tiffany Cartier
+			coord = { 40.2, 34.6, LEGION_DALARAN },
+			groups = {
 				i(132259),	-- Bag of Real Jewels (QI!)
 			},
 		}),
 		q(40532, {	-- Making the Cut (Deadly Deep Amber)
-			["sourceQuest"] = 40531,	-- Swift Vengeance
-			["provider"] = { "n", 93526 },	-- Tiffany Cartier
-			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-			["groups"] = {
+			sourceQuest = 40531,	-- Swift Vengeance
+			provider = { "n", 93526 },	-- Tiffany Cartier
+			coord = { 40.2, 34.6, LEGION_DALARAN },
+			groups = {
 				recipe(195848),	-- Deadly Deep Amber
 				i(132265),	-- Crude Deadly Deep Amber (QI!)
 			},
 		}),
 		q(40534, {	-- Making the Cut (Masterful Queen's Opal)
-			["sourceQuest"] = 40531,	-- Swift Vengeance
-			["provider"] = { "n", 93526 },	-- Tiffany Cartier
-			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-			["groups"] = {
+			sourceQuest = 40531,	-- Swift Vengeance
+			provider = { "n", 93526 },	-- Tiffany Cartier
+			coord = { 40.2, 34.6, LEGION_DALARAN },
+			groups = {
 				recipe(195851),	-- Masterful Queen's Opal
 				i(132267),	-- Crude Masterful Queen's Opal (QI!)
 			},
 		}),
 		q(40533, {	-- Making the Cut (Quick Azsunite)
-			["sourceQuest"] = 40531,	-- Swift Vengeance
-			["provider"] = { "n", 93526 },	-- Tiffany Cartier
-			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-			["groups"] = {
+			sourceQuest = 40531,	-- Swift Vengeance
+			provider = { "n", 93526 },	-- Tiffany Cartier
+			coord = { 40.2, 34.6, LEGION_DALARAN },
+			groups = {
 				recipe(195849),	-- Quick Azsunite
 				i(132266),	-- Crude Quick Azsunite (QI!)
 			},
 		}),
 		q(40524, {	-- A Familiar Ring to It
-			["sourceQuest"] = 40523,	-- Facet-nating Friends
-			["provider"] = { "n", 93527 },	-- Timothy Jones
-			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+			sourceQuest = 40523,	-- Facet-nating Friends
+			provider = { "n", 93527 },	-- Timothy Jones
+			coord = { 40.2, 34.6, LEGION_DALARAN },
 		}),
 		q(40525, {	-- Getting the Band Back Together
-			["sourceQuest"] = 40524,	-- A Familiar Ring to It
-			["provider"] = { "n", 100538 },	-- Timothy Jones
-			["coord"] = { 46.6, 41.4, AZSUNA },
-			["groups"] = {
+			sourceQuest = 40524,	-- A Familiar Ring to It
+			provider = { "n", 100538 },	-- Timothy Jones
+			coord = { 46.6, 41.4, AZSUNA },
+			groups = {
 				i(132368),	-- First Piece of the Band of Farondis (QI!)
 				i(132875),	-- Second Piece of the Band of Farondis (QI!)
 				i(132876),	-- Third Piece of the Band of Farondis (QI!)
 			},
 		}),
 		q(42214, {	-- Knocked for a Loop
-			["sourceQuest"] = 40524,	-- A Familiar Ring to It
-			["provider"] = { "n", 100538 },	-- Timothy Jones
-			["coord"] = { 46.6, 41.4, AZSUNA },
-			["groups"] = {
+			sourceQuest = 40524,	-- A Familiar Ring to It
+			provider = { "n", 100538 },	-- Timothy Jones
+			coord = { 46.6, 41.4, AZSUNA },
+			groups = {
 				i(132370),	-- Salteye Bangle
 			},
 		}),
 		q(40528, {	-- Finishing Touches (Azsunite Loop)
-			["sourceQuests"] = {
+			sourceQuests = {
 				42214,	-- Knocked for a Loop
 				40525,	-- Getting the Band Back Together
 			},
-			["provider"] = { "n", 100538 },	-- Timothy Jones
-			["coord"] = { 46.6, 41.4, AZSUNA },
-			["groups"] = {
+			provider = { "n", 100538 },	-- Timothy Jones
+			coord = { 46.6, 41.4, AZSUNA },
+			groups = {
 				i(137215),	-- Cut Azsunite (QI!)
 				r(195858),	-- Azsunite Loop [Rank 1] (RECIPE!)
 			},
 		}),
 		q(40526, {	-- Finishing Touches (Skystone Loop)
-			["sourceQuests"] = {
+			sourceQuests = {
 				42214,	-- Knocked for a Loop
 				40525,	-- Getting the Band Back Together
 			},
-			["provider"] = { "n", 100538 },	-- Timothy Jones
-			["coord"] = { 46.6, 41.4, AZSUNA },
-			["groups"] = {
+			provider = { "n", 100538 },	-- Timothy Jones
+			coord = { 46.6, 41.4, AZSUNA },
+			groups = {
 				i(137212),	-- Cut Skystone (QI!)
 				r(195857),	-- Skystone Loop [Rank 1] (RECIPE!)
 			},
 		}),
 		q(40527, {	-- Finishing Touches (Deep Amber Loop)
-			["sourceQuests"] = {
+			sourceQuests = {
 				42214,	-- Knocked for a Loop
 				40525,	-- Getting the Band Back Together
 			},
-			["provider"] = { "n", 100538 },	-- Timothy Jones
-			["coord"] = { 46.6, 41.4, AZSUNA },
-			["groups"] = {
+			provider = { "n", 100538 },	-- Timothy Jones
+			coord = { 46.6, 41.4, AZSUNA },
+			groups = {
 				i(137214),	-- Cut Deep Amber (QI!)
 				r(195856),	-- Deep Amber Loop [Rank 1] (RECIPE!)
 			},
 		}),
 		q(40535, {	-- Raising the Drogbar
-			["sourceQuests"] = {
+			sourceQuests = {
 				40532,	-- Making the Cut (Deadly Deep Amber)
 				40534,	-- Making the Cut (Masterful Queen's Opal)
 				40533,	-- Making the Cut (Quick Azsunite)
@@ -244,35 +244,35 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				40526,	-- Finishing Touches (Skystone Loop)
 				40528,	-- Finishing Touches (Azsunite Loop)
 			},
-			["provider"] = { "n", 93526 },	-- Tiffany Cartier
-			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-			["groups"] = {
+			provider = { "n", 93526 },	-- Tiffany Cartier
+			coord = { 40.2, 34.6, LEGION_DALARAN },
+			groups = {
 				i(132446),	-- Jabrul's Jewels
 			},
 		}),
 		q(40536, {	-- Bruls Before Jewels
-			["sourceQuest"] = 40535,	-- Raising the Drogbar
-			["provider"] = { "n", 100776 },	-- Jabrul <Jewelcrafting Master>
-			["coord"] = { 45.3, 73.3, VALSHARAH },
-			["groups"] = {
+			sourceQuest = 40535,	-- Raising the Drogbar
+			provider = { "n", 100776 },	-- Jabrul <Jewelcrafting Master>
+			coord = { 45.3, 73.3, VALSHARAH },
+			groups = {
 				i(132469),	-- Design: Azsunite Pendant [Rank 1]
 				i(132468),	-- Design: Deep Amber Pendant [Rank 1]
 				i(132467),	-- Design: Skystone Pendant [Rank 1]
 			},
 		}),
 		q(40538, {	-- Lapidary Lessons
-			["sourceQuests"] = { 40536 },	-- Bruls Before Jewels
-			["provider"] = { "n", 93526 },	-- Tiffany Cartier
-			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
-			["groups"] = {
+			sourceQuests = { 40536 },	-- Bruls Before Jewels
+			provider = { "n", 93526 },	-- Tiffany Cartier
+			coord = { 40.2, 34.6, LEGION_DALARAN },
+			groups = {
 				r(195854),	-- Versatile Maelstrom Sapphire (RECIPE!)
 			},
 		}),
 		q(40539, {	-- Hidden Intentions
-			["sourceQuests"] = { 40536 },	-- Bruls Before Jewels
-			["provider"] = { "n", 100939 },	-- Clive Cozen
-			["coord"] = { 38.3, 36.2, LEGION_DALARAN },
-			["groups"] = {
+			sourceQuests = { 40536 },	-- Bruls Before Jewels
+			provider = { "n", 100939 },	-- Clive Cozen
+			coord = { 38.3, 36.2, LEGION_DALARAN },
+			groups = {
 				r(195881),	-- Jeweled Lockpick (RECIPE!)
 				i(137624),	-- Black Market Diamond (QI!)
 				i(137625),	-- Diamond Lockpicks (QI!)
@@ -280,77 +280,77 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		}),
 		q(40540, {	-- Come at Me, Brul
-			["sourceQuests"] = { 40538 },	-- Lapidary Lessons
-			["provider"] = { "n", 93526 },	-- Tiffany Cartier
-			["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+			sourceQuests = { 40538 },	-- Lapidary Lessons
+			provider = { "n", 93526 },	-- Tiffany Cartier
+			coord = { 40.2, 34.6, LEGION_DALARAN },
 		}),
 		q(40541, {	-- The Charge Within
-			["sourceQuests"] = { 40540 },	-- Come at Me, Brul
-			["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
-			["coord"] = { 42.2, 35.0, STORMHEIM },
-			["groups"] = {
+			sourceQuests = { 40540 },	-- Come at Me, Brul
+			provider = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+			coord = { 42.2, 35.0, STORMHEIM },
+			groups = {
 				i(132760),	-- Conducting Jewel (QI!)
 			},
 		}),
 		q(40546, {	-- Mysteries of Nature
-			["sourceQuests"] = { 40541 },	-- The Charge Within
-			["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
-			["coord"] = { 42.2, 35.0, STORMHEIM },
-			["groups"] = {
+			sourceQuests = { 40541 },	-- The Charge Within
+			provider = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+			coord = { 42.2, 35.0, STORMHEIM },
+			groups = {
 				r(195883),	-- Chatterstone
 				i(132820),	-- Dragon Glass (QI!)
 			},
 		}),
 		q(40542, {	-- Eyes of Nashal (Deadly Eye of Prophecy)
-			["sourceQuests"] = { 40546 },	-- Mysteries of Nature
-			["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
-			["coord"] = { 42.2, 35.0, STORMHEIM },
-			["groups"] = {
+			sourceQuests = { 40546 },	-- Mysteries of Nature
+			provider = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+			coord = { 42.2, 35.0, STORMHEIM },
+			groups = {
 				r(195852),	-- Deadly Eye of Prophecy
 				i(132767),	-- Eye of Nashal (QI!)
 			},
 		}),
 		q(40543, {	-- Eyes of Nashal (Quick Dawnlight)
-			["sourceQuests"] = { 40546 },	-- Mysteries of Nature
-			["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
-			["coord"] = { 42.2, 35.0, STORMHEIM },
-			["groups"] = {
+			sourceQuests = { 40546 },	-- Mysteries of Nature
+			provider = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+			coord = { 42.2, 35.0, STORMHEIM },
+			groups = {
 				r(195853),	-- Quick Dawnlight
 				i(132768),	-- Eye of Nashal (QI!)
 			},
 		}),
 		q(40544, {	-- Eyes of Nashal (Masterful Shadowruby)
-			["sourceQuests"] = { 40546 },	-- Mysteries of Nature
-			["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
-			["coord"] = { 42.2, 35.0, STORMHEIM },
-			["groups"] = {
+			sourceQuests = { 40546 },	-- Mysteries of Nature
+			provider = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
+			coord = { 42.2, 35.0, STORMHEIM },
+			groups = {
 				r(195855),	-- Masterful Shadowruby
 				i(132769),	-- Eye of Nashal (QI!)
 			},
 		}),
 		q(40556, {	-- Jabrul Needs You
-			["sourceQuests"] = {
+			sourceQuests = {
 				40542,	-- Eyes of Nashal
 				40543,	-- Eyes of Nashal
 				40544,	-- Eyes of Nashal
 			},
-			["provider"] = { "o", 246250 },	-- Letter From Jabrul
-			["coord"] = { 40.0, 35.3, LEGION_DALARAN },
-			["isBreadcrumb"] = true,
+			provider = { "o", 246250 },	-- Letter From Jabrul
+			coord = { 40.0, 35.3, LEGION_DALARAN },
+			isBreadcrumb = true,
 		}),
 		q(40547, {	-- To Dalaran, With Love
-			["sourceQuests"] = { 40556 },	-- Jabrul Needs You
-			["provider"] = { "n", 100521 },	-- Jabrul
-			["coord"] = { 56.4, 59.6, AZSUNA },
-			["groups"] = {
+			sourceQuests = { 40556 },	-- Jabrul Needs You
+			provider = { "n", 100521 },	-- Jabrul
+			coord = { 56.4, 59.6, AZSUNA },
+			groups = {
 				i(132823),	-- Wooden Plank
 			},
 		}),
 		q(40558, {	-- Socket to Me
-			["sourceQuests"] = { 40547 },	-- To Dalaran, With Love
-			["provider"] = { "o", 246154 },	-- Broken Toy Box
-			["coord"] = { 40.0, 35.3, LEGION_DALARAN },
-			["groups"] = {
+			sourceQuests = { 40547 },	-- To Dalaran, With Love
+			provider = { "o", 246154 },	-- Broken Toy Box
+			coord = { 40.0, 35.3, LEGION_DALARAN },
+			groups = {
 				r(195882),	-- JewelCraft
 				i(132839),	-- Crystal Core (QI!)
 				i(132841),	-- Crystal Heart (QI!)
@@ -363,44 +363,44 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		}),
 		q(40559, {	-- Black Rook Hold: The Raven's Wisdom
-			["sourceQuests"] = { 40558 },	-- Socket to Me
-			["provider"] = { "n", 93527 },	-- Timothy Jones
-			["coord"] = { 39.8, 35.0, LEGION_DALARAN },
-			["maps"] = { 751, 752, 753, 754, 755, 756 },	-- The Black Rook Hold
-			["groups"] = {
+			sourceQuests = { 40558 },	-- Socket to Me
+			provider = { "n", 93527 },	-- Timothy Jones
+			coord = { 39.8, 35.0, LEGION_DALARAN },
+			maps = { 751, 752, 753, 754, 755, 756 },	-- The Black Rook Hold
+			groups = {
 				r(195864),	-- Dawnlight Band [Rank 1] (RECIPE!)
 				i(132859),	-- Delayeth's Journal: The Jewels of the Isles (QI!)
 			},
 		}),
 		q(40561, {	-- Halls of Valor: Jewel of the Heavens
-			["sourceQuests"] = { 40558 },	-- Socket to Me
-			["provider"] = { "n", 93527 },	-- Timothy Jones
-			["coord"] = { 39.8, 35.0, LEGION_DALARAN },
-			["maps"] = { 703, 704, 705 },	-- Halls of Valor
-			["groups"] = {
+			sourceQuests = { 40558 },	-- Socket to Me
+			provider = { "n", 93527 },	-- Timothy Jones
+			coord = { 39.8, 35.0, LEGION_DALARAN },
+			maps = { 703, 704, 705 },	-- Halls of Valor
+			groups = {
 				r(195863),	-- Maelstrom Band [Rank 1] (RECIPE!)
 				i(132866),	-- Thrymja, Ring of the Gods (QI!)
 			},
 		}),
 		q(40560, {	-- Maw of Souls: Spiriting Away
-			["sourceQuests"] = { 40558 },	-- Socket to Me
-			["provider"] = { "n", 93527 },	-- Timothy Jones
-			["coord"] = { 39.8, 35.0, LEGION_DALARAN },
-			["maps"] = { 706, 707, 708 },	-- Maw of Souls
-			["groups"] = {
+			sourceQuests = { 40558 },	-- Socket to Me
+			provider = { "n", 93527 },	-- Timothy Jones
+			coord = { 39.8, 35.0, LEGION_DALARAN },
+			maps = { 706, 707, 708 },	-- Maw of Souls
+			groups = {
 				r(195862),	-- Prophetic Band [Rank 1] (RECIPE!)
 				i(132862),	-- Ring of the Fallen (QI!)
 			},
 		}),
 		q(40562, {	-- A Personal Touch
-			["sourceQuests"] = {
+			sourceQuests = {
 				40559,	-- Black Rook Hold: The Raven's Wisdom
 				40561,	-- Halls of Valor: Jewel of the Heavens
 				40560,	-- Maw of Souls: Spiriting Away
 			},
-			["provider"] = { "n", 93543 },	-- Sminx Glasseye
-			["coord"] = { 39.8, 35.0, LEGION_DALARAN },
-			["groups"] = {
+			provider = { "n", 93543 },	-- Sminx Glasseye
+			coord = { 39.8, 35.0, LEGION_DALARAN },
+			groups = {
 				r(195873),	-- Ancient Maelstrom Amulet [Rank 1] (RECIPE!)
 				r(195866),	-- Blessed Dawnlight Medallion [Rank 1] (RECIPE!)
 				r(195876),	-- Grim Furystone Gorget [Rank 1] (RECIPE!)
@@ -420,11 +420,11 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		}),
 		------ 7.3.0 ------
 		q(48075, {	-- A Colorful Key
-			["sourceQuests"] = { 46941 },	-- The Path Forward
-			["provider"] = { "n", 125343 },	-- Vorel
-			["coord"] = { 44.5, 73.4, THE_VINDICAAR_KROKUUN_UPPER },
-			["timeline"] = { ADDED_7_3_0 },
-			["groups"] = {
+			sourceQuests = { 46941 },	-- The Path Forward
+			provider = { "n", 125343 },	-- Vorel
+			coord = { 44.5, 73.4, THE_VINDICAAR_KROKUUN_UPPER },
+			timeline = { ADDED_7_3_0 },
+			groups = {
 				r(247771),	-- Deadly Deep Chemirine
 				r(247772),	-- Quick Lightsphene
 				r(247773),	-- Masterful Argulite
@@ -433,19 +433,19 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		}),
 		q(48076, {	-- A Crowning Achievement
-			["sourceQuests"] = { 48075 },	-- A Colorful Key
-			["provider"] = { "n", 125343 },	-- Vorel
-			["coord"] = { 44.5, 73.6, THE_VINDICAAR_KROKUUN_UPPER },
-			["timeline"] = { ADDED_7_3_0 },
-			["groups"] = {
+			sourceQuests = { 48075 },	-- A Colorful Key
+			provider = { "n", 125343 },	-- Vorel
+			coord = { 44.5, 73.6, THE_VINDICAAR_KROKUUN_UPPER },
+			timeline = { ADDED_7_3_0 },
+			groups = {
 				i(151724),	-- Design: Empyrial Cosmic Crown [Rank 1] (RECIPE!)
 				i(151727),	-- Design: Empyrial Deep Crown [Rank 1] (RECIPE!)
 				i(151730),	-- Design: Empyrial Elemental Crown [Rank 1] (RECIPE!)
 				i(151733),	-- Design: Empyrial Titan Crown [Rank 1] (RECIPE!)
-				r(248937, {["u"]=TRAINING}),	-- Empyrial Circlet
-				r(248940, {["u"]=TRAINING}),	-- Empyrial Crown
-				r(248939, {["u"]=TRAINING}),	-- Empyrial Florid Malachite Setting
-				r(248938, {["u"]=TRAINING}),	-- Empyrial Hesselian Setting
+				r(248937, {u=TRAINING}),	-- Empyrial Circlet
+				r(248940, {u=TRAINING}),	-- Empyrial Crown
+				r(248939, {u=TRAINING}),	-- Empyrial Florid Malachite Setting
+				r(248938, {u=TRAINING}),	-- Empyrial Hesselian Setting
 				i(151931),	-- Empyrial Circlet (QI!)
 				i(151878),	-- Empyrial Crown (QI!)
 				i(151933),	-- Empyrial Florid Malachite Setting (QI!)
@@ -454,47 +454,47 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		}),
 	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18773, {	-- Jewelhammer's Focus
-				["provider"] = { "i", 153716 },	-- Jewelhammer's Focus
+				provider = { "i", 153716 },	-- Jewelhammer's Focus
 			}),
 		})),
 		n(QUESTS, {
 			q(54479, {	-- Jeweled Designs [A]
-				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
-				["coord"] = { 75.2, 9.9, BORALUS },
-				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },
-				["races"] = ALLIANCE_ONLY,
+				provider = { "n", 130368 },	-- Samuel D. Colton III
+				coord = { 75.2, 9.9, BORALUS },
+				timeline = { ADDED_8_1_0, REMOVED_9_0_1 },
+				races = ALLIANCE_ONLY,
 			}),
 			q(54480, {	-- Jeweled Designs [H]
-				["provider"] = { "n", 122695 },	-- Seshuli
-				["coord"] = { 47.1, 37.9, DAZARALOR },
-				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },
-				["races"] = HORDE_ONLY,
+				provider = { "n", 122695 },	-- Seshuli
+				coord = { 47.1, 37.9, DAZARALOR },
+				timeline = { ADDED_8_1_0, REMOVED_9_0_1 },
+				races = HORDE_ONLY,
 			}),
 			-- Tools of Trade Questline
 			q(49570, {	-- A Rocky Start [A]
-				["description"] = "This quest chain requires 150 in Kul Tiran Jewelcrafting.",
-				["provider"] = { "o", 278570 },	-- Ancient Journal
-				["coord"] = { 75.0, 10.2, BORALUS },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = ALLIANCE_ONLY,
+				description = "This quest chain requires 150 in Kul Tiran Jewelcrafting.",
+				provider = { "o", 278570 },	-- Ancient Journal
+				coord = { 75.0, 10.2, BORALUS },
+				timeline = { ADDED_8_1_5 },
+				races = ALLIANCE_ONLY,
 			}),
 			q(49585, {	-- A Rocky Start [H]
-				["description"] = "This quest chain requires 150 in Zandalari Jewelcrafting.",
-				["provider"] = { "o", 278570 },	-- Ancient Journal
-				["coord"] = { 46.9, 38.0, DAZARALOR },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = HORDE_ONLY,
+				description = "This quest chain requires 150 in Zandalari Jewelcrafting.",
+				provider = { "o", 278570 },	-- Ancient Journal
+				coord = { 46.9, 38.0, DAZARALOR },
+				timeline = { ADDED_8_1_5 },
+				races = HORDE_ONLY,
 			}),
 			q(49571, {	-- Digging Through the Past [A]
-				["sourceQuests"] = { 49570 },	-- A Rocky Start [A]
-				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
-				["coord"] = { 73.4, 6.3, BORALUS },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				sourceQuests = { 49570 },	-- A Rocky Start [A]
+				provider = { "n", 130399 },	-- Zooey Inksprocket
+				coord = { 73.4, 6.3, BORALUS },
+				timeline = { ADDED_8_1_5 },
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(155678),	-- Ancient Journal Transcription (QI!)
 					i(155587),	-- Primordial Races: Runes and Writings (QI!)
 					i(155588),	-- Scrolls of the Stonefather (QI!)
@@ -502,12 +502,12 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			q(49586, {	-- Digging Through the Past [H]
-				["sourceQuests"] = { 49585 },	-- A Rocky Start [H]
-				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
-				["coord"] = { 42.3, 39.7, DAZARALOR },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				sourceQuests = { 49585 },	-- A Rocky Start [H]
+				provider = { "n", 130901 },	-- Chronicler Grazzul
+				coord = { 42.3, 39.7, DAZARALOR },
+				timeline = { ADDED_8_1_5 },
+				races = HORDE_ONLY,
+				groups = {
 					i(155678),	-- Ancient Journal Transcription (QI!)
 					i(155587),	-- Primordial Races: Runes and Writings (QI!)
 					i(155588),	-- Scrolls of the Stonefather (QI!)
@@ -515,185 +515,185 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			q(49574, {	-- The Shrine of Storms
-				["sourceQuests"] = { 49571 },	-- Digging Through the Past [A]
-				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
-				["coord"] = { 75.2, 9.9, BORALUS },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = ALLIANCE_ONLY,
+				sourceQuests = { 49571 },	-- Digging Through the Past [A]
+				provider = { "n", 130368 },	-- Samuel D. Colton III
+				coord = { 75.2, 9.9, BORALUS },
+				timeline = { ADDED_8_1_5 },
+				races = ALLIANCE_ONLY,
 			}),
 			q(49589, {	-- The Shrine of the Dawning
-				["sourceQuests"] = { 49586 },	-- Digging Through the Past [H]
-				["provider"] = { "n", 122695 },	-- Seshuli
-				["coord"] = { 47.1, 37.9, DAZARALOR },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = HORDE_ONLY,
+				sourceQuests = { 49586 },	-- Digging Through the Past [H]
+				provider = { "n", 122695 },	-- Seshuli
+				coord = { 47.1, 37.9, DAZARALOR },
+				timeline = { ADDED_8_1_5 },
+				races = HORDE_ONLY,
 			}),
 			q(49577, {	-- Cracking the Surface [A]
-				["sourceQuests"] = { 49574 },	-- The Shrine of Storms
-				["provider"] = { "n", 150898 },	-- Shrine of Storms
-				["coord"] = { 60.7, 58.5, STORMSONG_VALLEY },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = ALLIANCE_ONLY,
-				["modelScale"] = 2,
-				["groups"] = {
+				sourceQuests = { 49574 },	-- The Shrine of Storms
+				provider = { "n", 150898 },	-- Shrine of Storms
+				coord = { 60.7, 58.5, STORMSONG_VALLEY },
+				timeline = { ADDED_8_1_5 },
+				races = ALLIANCE_ONLY,
+				modelScale = 2,
+				groups = {
 					i(155590),	-- Shard of Golden Beryl (QI!)
 				},
 			}),
 			q(49583, {	-- Out With the Old [H]
-				["sourceQuests"] = { 49589 },	-- The Shrine of the Dawning
-				["provider"] = { "n", 150897 },	-- Shrine of the Dawning
-				["coord"] = { 61.4, 37.2, NAZMIR },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = HORDE_ONLY,
-				["modelScale"] = 2,
+				sourceQuests = { 49589 },	-- The Shrine of the Dawning
+				provider = { "n", 150897 },	-- Shrine of the Dawning
+				coord = { 61.4, 37.2, NAZMIR },
+				timeline = { ADDED_8_1_5 },
+				races = HORDE_ONLY,
+				modelScale = 2,
 			}),
 			q(55585, {	-- A Promising Beginning [A]
-				["sourceQuests"] = { 49577 },	-- Cracking the Surface [A]
-				["provider"] = { "n", 152489 },	-- Shrine of Storms
-				["coord"] = { 60.7, 58.5, STORMSONG_VALLEY },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = ALLIANCE_ONLY,
-				["modelScale"] = 2,
+				sourceQuests = { 49577 },	-- Cracking the Surface [A]
+				provider = { "n", 152489 },	-- Shrine of Storms
+				coord = { 60.7, 58.5, STORMSONG_VALLEY },
+				timeline = { ADDED_8_1_5 },
+				races = ALLIANCE_ONLY,
+				modelScale = 2,
 			}),
 			q(55592, {	-- A Promising Beginning [H]
-				["sourceQuests"] = { 49583 },	-- Out With the Old [H]
-				["provider"] = { "n", 152490 },	-- Shrine of the Dawning
-				["coord"] = { 61.4, 37.2, NAZMIR },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = HORDE_ONLY,
-				["modelScale"] = 2,
+				sourceQuests = { 49583 },	-- Out With the Old [H]
+				provider = { "n", 152490 },	-- Shrine of the Dawning
+				coord = { 61.4, 37.2, NAZMIR },
+				timeline = { ADDED_8_1_5 },
+				races = HORDE_ONLY,
+				modelScale = 2,
 			}),
 			q(49572, {	-- The Shrine of the Sea
-				["sourceQuests"] = { 55585 },	-- A Promising Beginning [A]
-				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
-				["coord"] = { 75.2, 9.9, BORALUS },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = ALLIANCE_ONLY,
+				sourceQuests = { 55585 },	-- A Promising Beginning [A]
+				provider = { "n", 130368 },	-- Samuel D. Colton III
+				coord = { 75.2, 9.9, BORALUS },
+				timeline = { ADDED_8_1_5 },
+				races = ALLIANCE_ONLY,
 			}),
 			q(49587, {	-- The Shrine of Nature
-				["sourceQuests"] = { 55592 },	-- A Promising Beginning [H]
-				["provider"] = { "n", 122695 },	-- Seshuli
-				["coord"] = { 47.1, 37.9, DAZARALOR },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = HORDE_ONLY,
+				sourceQuests = { 55592 },	-- A Promising Beginning [H]
+				provider = { "n", 122695 },	-- Seshuli
+				coord = { 47.1, 37.9, DAZARALOR },
+				timeline = { ADDED_8_1_5 },
+				races = HORDE_ONLY,
 			}),
 			q(49575, {	-- Tol Dagor: Jewel of the Tides
-				["sourceQuests"] = { 49572 },	-- The Shrine of the Sea
-				["provider"] = { "n", 150893 },	-- Shrine of the Sea
-				["coord"] = { 46.4, 23.5, TIRAGARDE_SOUND },
-				["timeline"] = { ADDED_8_1_5 },
-				["maps"] = { 974, 975, 976, 977, 978, 979, 980 },	-- Tol Dagor
-				["races"] = ALLIANCE_ONLY,
-				["modelScale"] = 2,
-				["groups"] = {
+				sourceQuests = { 49572 },	-- The Shrine of the Sea
+				provider = { "n", 150893 },	-- Shrine of the Sea
+				coord = { 46.4, 23.5, TIRAGARDE_SOUND },
+				timeline = { ADDED_8_1_5 },
+				maps = { 974, 975, 976, 977, 978, 979, 980 },	-- Tol Dagor
+				races = ALLIANCE_ONLY,
+				modelScale = 2,
+				groups = {
 					i(155648),	-- Jewel of the Tides (QI!)
 				},
 			}),
 			q(49582, {	-- Atal'Dazar: Not All That Glitters...
-				["sourceQuests"] = { 49587 },	-- The Shrine of Nature
-				["provider"] = { "n", 150894 },	-- Shrine of Nature
-				["coord"] = { 43.2, 64.3, ZULDAZAR },
-				["timeline"] = { ADDED_8_1_5 },
-				["maps"] = { 934, 935 },	-- Atal'Dazar
-				["races"] = HORDE_ONLY,
-				["modelScale"] = 2,
-				["groups"] = {
+				sourceQuests = { 49587 },	-- The Shrine of Nature
+				provider = { "n", 150894 },	-- Shrine of Nature
+				coord = { 43.2, 64.3, ZULDAZAR },
+				timeline = { ADDED_8_1_5 },
+				maps = { 934, 935 },	-- Atal'Dazar
+				races = HORDE_ONLY,
+				modelScale = 2,
+				groups = {
 					i(155666),	-- Eye of Dazar (QI!)
 				},
 			}),
 			q(55590, {	-- Setting Things Right [A]
-				["sourceQuests"] = { 49575 },	-- Tol Dagor: Jewel of the Tides
-				["provider"] = { "n", 152495 },	-- Shrine of the Sea
-				["coord"] = { 46.4, 23.5, TIRAGARDE_SOUND },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = ALLIANCE_ONLY,
-				["modelScale"] = 2,
+				sourceQuests = { 49575 },	-- Tol Dagor: Jewel of the Tides
+				provider = { "n", 152495 },	-- Shrine of the Sea
+				coord = { 46.4, 23.5, TIRAGARDE_SOUND },
+				timeline = { ADDED_8_1_5 },
+				races = ALLIANCE_ONLY,
+				modelScale = 2,
 			}),
 			q(55596, {	-- Setting Things Right [H]
-				["sourceQuests"] = { 49582 },	-- Atal'Dazar: Not All That Glitters...
-				["provider"] = { "n", 152496 },	-- Shrine of Nature
-				["coord"] = { 43.2, 64.3, ZULDAZAR },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = HORDE_ONLY,
-				["modelScale"] = 2,
+				sourceQuests = { 49582 },	-- Atal'Dazar: Not All That Glitters...
+				provider = { "n", 152496 },	-- Shrine of Nature
+				coord = { 43.2, 64.3, ZULDAZAR },
+				timeline = { ADDED_8_1_5 },
+				races = HORDE_ONLY,
+				modelScale = 2,
 			}),
 			q(49573, {	-- The Shrine of the Eventide
-				["sourceQuests"] = { 55585 },	-- A Promising Beginning [A]
-				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
-				["coord"] = { 75.2, 9.9, BORALUS },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = ALLIANCE_ONLY,
+				sourceQuests = { 55585 },	-- A Promising Beginning [A]
+				provider = { "n", 130368 },	-- Samuel D. Colton III
+				coord = { 75.2, 9.9, BORALUS },
+				timeline = { ADDED_8_1_5 },
+				races = ALLIANCE_ONLY,
 			}),
 			q(49588, {	-- The Shrine of the Sands
-				["sourceQuests"] = { 55592 },	-- A Promising Beginning
-				["provider"] = { "n", 122695 },	-- Seshuli
-				["coord"] = { 47.1, 37.9, DAZARALOR },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = HORDE_ONLY,
+				sourceQuests = { 55592 },	-- A Promising Beginning
+				provider = { "n", 122695 },	-- Seshuli
+				coord = { 47.1, 37.9, DAZARALOR },
+				timeline = { ADDED_8_1_5 },
+				races = HORDE_ONLY,
 			}),
 			q(49576, {	-- High Prospects
-				["sourceQuests"] = { 49573 },	-- The Shrine of the Eventide
-				["provider"] = { "n", 150896 },	-- Shrine of the Eventide
-				["coord"] = { 34.1, 35.5, DRUSTVAR },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = ALLIANCE_ONLY,
-				["modelScale"] = 2,
-				["groups"] = {
+				sourceQuests = { 49573 },	-- The Shrine of the Eventide
+				provider = { "n", 150896 },	-- Shrine of the Eventide
+				coord = { 34.1, 35.5, DRUSTVAR },
+				timeline = { ADDED_8_1_5 },
+				races = ALLIANCE_ONLY,
+				modelScale = 2,
+				groups = {
 					i(155661),	-- Pristine Kubiline Shards (QI!)
 					i(155830),	-- Runic Core (QI!)
 				},
 			}),
 			q(49581, {	-- Sun-Speckled Dunes
-				["sourceQuests"] = { 49588 },	-- The Shrine of the Sands
-				["provider"] = { "n", 150895 },	-- Shrine of the Sands
-				["coord"] = { 44.2, 38.0, VOLDUN },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = HORDE_ONLY,
-				["modelScale"] = 2,
-				["groups"] = {
+				sourceQuests = { 49588 },	-- The Shrine of the Sands
+				provider = { "n", 150895 },	-- Shrine of the Sands
+				coord = { 44.2, 38.0, VOLDUN },
+				timeline = { ADDED_8_1_5 },
+				races = HORDE_ONLY,
+				modelScale = 2,
+				groups = {
 					i(155664),	-- Polished Fire Spinel (QI!)
 					i(155665),	-- Rough Fire Spinel (QI!)
 				},
 			}),
 			q(55586, {	-- Polished Up [A]
-				["sourceQuests"] = { 49576 },	-- High Prospects
-				["provider"] = { "n", 152497 },	-- Shrine of the Eventide
-				["coord"] = { 34.1, 35.5, DRUSTVAR },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = ALLIANCE_ONLY,
-				["modelScale"] = 2,
+				sourceQuests = { 49576 },	-- High Prospects
+				provider = { "n", 152497 },	-- Shrine of the Eventide
+				coord = { 34.1, 35.5, DRUSTVAR },
+				timeline = { ADDED_8_1_5 },
+				races = ALLIANCE_ONLY,
+				modelScale = 2,
 			}),
 			q(55594, {	-- Polished Up [H]
-				["sourceQuests"] = { 49581 },	-- Sun-Speckled Dunes
-				["provider"] = { "n", 152493 },	-- Shrine of the Sands
-				["coord"] = { 44.2, 38.0, VOLDUN },
-				["timeline"] = { ADDED_8_1_5 },
-				["races"] = HORDE_ONLY,
-				["modelScale"] = 2,
+				sourceQuests = { 49581 },	-- Sun-Speckled Dunes
+				provider = { "n", 152493 },	-- Shrine of the Sands
+				coord = { 44.2, 38.0, VOLDUN },
+				timeline = { ADDED_8_1_5 },
+				races = HORDE_ONLY,
+				modelScale = 2,
 			}),
-			q(49584, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Missing Chapter [A]
-				["sourceQuests"] = {
+			q(49584, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- The Missing Chapter [A]
+				sourceQuests = {
 					55586,	-- Polished Up [A]
 					55590,	-- Setting Things Right [A]
 				},
-				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
-				["coord"] = { 75.2, 9.9, BORALUS },
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				provider = { "n", 130368 },	-- Samuel D. Colton III
+				coord = { 75.2, 9.9, BORALUS },
+				races = ALLIANCE_ONLY,
+				groups = {
 					r(256703),	-- Jewelhammer's Focus
 					i(155668),	-- The Missing Chapter (QI!)
 					i(155669),	-- Transcribed Final Chapter (QI!)
 				},
 			})),
-			q(49599, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Missing Chapter [H]
-				["sourceQuests"] = {
+			q(49599, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- The Missing Chapter [H]
+				sourceQuests = {
 					55594,	-- Polished Up [H]
 					55596,	-- Setting Things Right [H]
 				},
-				["provider"] = { "n", 122695 },	-- Seshuli
-				["coord"] = { 47.1, 37.9, DAZARALOR },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				provider = { "n", 122695 },	-- Seshuli
+				coord = { 47.1, 37.9, DAZARALOR },
+				races = HORDE_ONLY,
+				groups = {
 					r(256703),	-- Jewelhammer's Focus
 					i(155668),	-- The Missing Chapter (QI!)
 					i(155669),	-- Transcribed Final Chapter (QI!)
@@ -701,9 +701,9 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			})),
 		}),
 	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING, 1 }}
+			cost = {{ "c", PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING, 1 }}
 		},{
 			pn(28659),	-- Air
 			pn(81118),	-- Brilliant Baubling
@@ -725,23 +725,23 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			pn(28728),	-- Setting
 			pn(28722),	-- Stone
 		})),
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18941, {	-- Dazzling Dragons
 			-- #if BEFORE 10.2.0
 				crit(61906, {	-- Jeweled Ruby Whelpling
-					["provider"] = { "i", 193887 },	-- Jeweled Ruby Whelpling
+					provider = { "i", 193887 },	-- Jeweled Ruby Whelpling
 				}),
 				crit(61909, {	-- Jeweled Emerald Whelpling
-					["provider"] = { "i", 193888 },	-- Jeweled Emerald Whelpling
+					provider = { "i", 193888 },	-- Jeweled Emerald Whelpling
 				}),
 				crit(61911, {	-- Jeweled Sapphire Whelpling
-					["provider"] = { "i", 193886 },	-- Jeweled Sapphire Whelpling
+					provider = { "i", 193886 },	-- Jeweled Sapphire Whelpling
 				}),
 				crit(61912, {	-- Jeweled Onyx Whelpling
-					["provider"] = { "i", 193889 },	-- Jeweled Onyx Whelpling
+					provider = { "i", 193889 },	-- Jeweled Onyx Whelpling
 				}),
 				crit(61913, {	-- Jeweled Amber Whelpling
-					["provider"] = { "i", 193885 },	-- Jeweled Amber Whelpling
+					provider = { "i", 193885 },	-- Jeweled Amber Whelpling
 				}),
 			-- #else
 				-- automated properly
@@ -750,154 +750,154 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 		n(QUESTS, {
 			q(70365, {	-- To the Dragon Isles: Jewelcrafting
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",
-				["provider"] = { "n", 192121 },	-- Falron Greygold
-				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1,
+				description = "This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",
+				provider = { "n", 192121 },	-- Falron Greygold
+				coord = { 25.4, 54.2, THE_WAKING_SHORES },
+				lockCriteria = { 1,
 					"spellID", 366250,	-- Dragon Isles Jewelcrafting
 					"questID", 72247,	-- Dragon Isles Jewelcrafting
 				},
 			}),
 			q(72247, {	-- To the Dragon Isles: Jewelcrafting
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",
-				["provider"] = { "n", 198398 },	-- Misty Catseye
-				["coord"] = { 76.2, 33.6, THE_WAKING_SHORES },
-				["lockCriteria"] = { 1,
+				description = "This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",
+				provider = { "n", 198398 },	-- Misty Catseye
+				coord = { 76.2, 33.6, THE_WAKING_SHORES },
+				lockCriteria = { 1,
 					"spellID", 366250,	-- Dragon Isles Jewelcrafting
 					"questID", 70365,	-- Dragon Isles Jewelcrafting
 				},
 			}),
 			q(70032, {	-- Artisan's Supply: Jeweler's Specs
-				["qgs"] = {
+				qgs = {
 					192121,	-- Falron Greygold
 					190103,	-- Uluami
 				},
-				["coords"] = {
+				coords = {
 					{ 25.4, 54.2, THE_WAKING_SHORES },
 					{ 65.3, 25.3, OHNAHRAN_PLAINS },
 				},
-				["cost"] = {{ "i", 193037, 1 }},	-- Sundered Onyx Loupe
-				["_drop"] = { "g" },
+				cost = {{ "i", 193037, 1 }},	-- Sundered Onyx Loupe
+				_drop = { "g" },
 			}),
 			q(70255, {	-- Hidden Profession Master Jewelcrafting
-				["name"] = "Hidden Profession Master: Jewelcrafting",
-				["provider"] = { "n", 194841 },	-- Pluutar
-				["coord"] = { 46.2, 40.8, THE_AZURE_SPAN },
+				name = "Hidden Profession Master: Jewelcrafting",
+				provider = { "n", 194841 },	-- Pluutar
+				coord = { 46.2, 40.8, THE_AZURE_SPAN },
 			}),
 			q(70189, {	-- Specialized Secrets: Jewelcrafting
-				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
-				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
-				["cost"] = {{ "i", 191784, 1 }},	-- Dragon Shard of Knowledge
-				["isRepeatable"] = true,
-				["groups"] = {
+				sourceQuests = { 69979 },	-- A Worthy Hunt
+				provider = { "n", 193110 },	-- Khadin
+				coord = { 51.8, 33.0, OHNAHRAN_PLAINS },
+				cost = {{ "i", 191784, 1 }},	-- Dragon Shard of Knowledge
+				isRepeatable = true,
+				groups = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
 		}),
 		n(QUESTS, sharedData({
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["isWeekly"] = true,
-			["groups"] = {
+			maxReputation = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
+			isWeekly = true,
+			groups = {
 				i(198612),	-- Jeweler's Cuts
 			},
 		},{
 			-- Requires 25 Skill
 			q(66950, {	-- Heart of a Giant
-				["description"] = "Requires 25 Skill.",
-				["provider"] = { "n", 191004 },	-- Temnaayu
-				["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				["groups"] = {
+				description = "Requires 25 Skill.",
+				provider = { "n", 191004 },	-- Temnaayu
+				coord = { 36.8, 62.4, VALDRAKKEN },
+				groups = {
 					i(194449),	-- Giant Core (QI!)
 				},
 			}),
 			q(72428, {	-- Hornswog Hoarders
-				["description"] = "Requires 25 Skill.",
-				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
-				["coord"] = { 36.8, 62.8, VALDRAKKEN },
-				["groups"] = {
+				description = "Requires 25 Skill.",
+				provider = { "n", 191001 },	-- Gnoklin Quirkcoil
+				coord = { 36.8, 62.8, VALDRAKKEN },
+				groups = {
 					i(201829),	-- Pungent Gem (QI!)
 				},
 			}),
 			q(70593, {	-- Jewelcrafting Services Requested
-				["description"] = "Requires 25 Skill.",
-				["provider"] = { "n", 194026 },	-- Azley
-				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+				description = "Requires 25 Skill.",
+				provider = { "n", 194026 },	-- Azley
+				coord = { 35.6, 58.8, VALDRAKKEN },
 			}),
 			q(66516, {	-- Mundane Gems, I Think not!
-				["description"] = "Requires 25 Skill.",
-				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
-				["coord"] = { 36.8, 62.8, VALDRAKKEN },
-				["groups"] = {
+				description = "Requires 25 Skill.",
+				provider = { "n", 191001 },	-- Gnoklin Quirkcoil
+				coord = { 36.8, 62.8, VALDRAKKEN },
+				groups = {
 					i(192125),	-- 'Mundane' Gem (QI!)
 				},
 			}),
 			q(66949, {	-- Trinket Bandits
-				["description"] = "Requires 25 Skill.",
-				["provider"] = { "n", 191004 },	-- Temnaayu
-				["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				["groups"] = {
+				description = "Requires 25 Skill.",
+				provider = { "n", 191004 },	-- Temnaayu
+				coord = { 36.8, 62.4, VALDRAKKEN },
+				groups = {
 					i(194443),	-- Stolen Trinket (QI!)
 				},
 			}),
 
 			-- Requires 45 Skill
 			q(70565, {	-- Separation by Saturation
-				["description"] = "Requires 45 Skill.",
-				["provider"] = { "n", 190094 },	-- Tuluradormi
-				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+				description = "Requires 45 Skill.",
+				provider = { "n", 190094 },	-- Tuluradormi
+				coord = { 40.6, 61.2, VALDRAKKEN },
 			}),
 			q(70564, {	-- Spectacular
-				["description"] = "Requires 45 Skill.",
-				["provider"] = { "n", 190094 },	-- Tuluradormi
-				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+				description = "Requires 45 Skill.",
+				provider = { "n", 190094 },	-- Tuluradormi
+				coord = { 40.6, 61.2, VALDRAKKEN },
 			}),
 			q(70563, {	-- The Exhibition
-				["description"] = "Requires 45 Skill.",
-				["provider"] = { "n", 190094 },	-- Tuluradormi
-				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+				description = "Requires 45 Skill.",
+				provider = { "n", 190094 },	-- Tuluradormi
+				coord = { 40.6, 61.2, VALDRAKKEN },
 			}),
 			q(70562, {	-- The Plumbers, Mason
-				["description"] = "Requires 45 Skill.",
-				["provider"] = { "n", 190094 },	-- Tuluradormi
-				["coord"] = { 40.6, 61.2, VALDRAKKEN },
+				description = "Requires 45 Skill.",
+				provider = { "n", 190094 },	-- Tuluradormi
+				coord = { 40.6, 61.2, VALDRAKKEN },
 			}),
 
 			-- Requires ?? Skill - Patch 10.1.0.
 			q(75362, {	-- Cephalo-Crystalization
-				["provider"] = { "n", 203516 },	-- Kayann
-				["coord"] = { 36.5, 62.5, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_0 },
-				["groups"] = {
+				provider = { "n", 203516 },	-- Kayann
+				coord = { 36.5, 62.5, VALDRAKKEN },
+				timeline = { ADDED_10_1_0 },
+				groups = {
 					i(204794),	-- Whelkshell Crystals (QI!)
 				},
 			}),
 			q(75602, {	-- Chips off the Old Crystal Block
-				["provider"] = { "n", 203516 },	-- Kayann
-				["coord"] = { 36.5, 62.5, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_0 },
+				provider = { "n", 203516 },	-- Kayann
+				coord = { 36.5, 62.5, VALDRAKKEN },
+				timeline = { ADDED_10_1_0 },
 			}),
 			-- Patch 10.2.0
 			q(77892, {	-- Pearls Of Great Value
-				["provider"] = { "n", 210162 },	-- Magnolia Oaken
-				["coord"] = { 36.8, 63.1, VALDRAKKEN },
-				["timeline"] = { ADDED_10_2_0 },
-				["groups"] = {
+				provider = { "n", 210162 },	-- Magnolia Oaken
+				coord = { 36.8, 63.1, VALDRAKKEN },
+				timeline = { ADDED_10_2_0 },
+				groups = {
 					o(408070, {	-- Sandsparkle Clam
 						i(208927),	-- Sandsparkle Pearl (QI!)
 					}),
 				},
 			}),
 			q(77912, {	-- Unmodern Jewelry
-				["provider"] = { "n", 210162 },	-- Magnolia Oaken
-				["coord"] = { 36.8, 63.1, VALDRAKKEN },
-				["timeline"] = { ADDED_10_2_0 },
-				["groups"] = { i(208928) },	-- Zaqali Adornments (QI!)
+				provider = { "n", 210162 },	-- Magnolia Oaken
+				coord = { 36.8, 63.1, VALDRAKKEN },
+				timeline = { ADDED_10_2_0 },
+				groups = { i(208928) },	-- Zaqali Adornments (QI!)
 			}),
 		})),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{ "c", PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING, 1 }} }, {
+			description = "These are learned by specialization.",
+			groups = sharedData({ cost = {{ "c", PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING, 1 }} }, {
 				r(374483),	-- Blotting Sand
 				r(374442),	-- Crafty Alexstraszite
 				r(374450),	-- Crafty Ysemerald
@@ -930,144 +930,144 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		}),
 		n(TREASURES, {
-			o(401299, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Broken Barter Boulder
-				["coord"] = { 54.4, 32.5, ZARALEK_CAVERN },
-				["questID"] = 75654,
-				["groups"] = {
+			o(401299, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Broken Barter Boulder
+				coord = { 54.4, 32.5, ZARALEK_CAVERN },
+				questID = 75654,
+				groups = {
 					i(205219),	-- Broken Barter Boulder
 				},
 			})),
 			o(380591, {	-- Closely Guarded Shiny
-				["questID"] = 70292,
-				["coord"] = { 50.4, 45.1, THE_WAKING_SHORES },
-				["groups"] = {
+				questID = 70292,
+				coord = { 50.4, 45.1, THE_WAKING_SHORES },
+				groups = {
 					i(198687),	-- Closely Guarded Shiny
 				},
 			}),
-			o(410484, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Coalesced Dreamstone
-				["coord"] = { 58.9, 53.8, EMERALD_DREAM },
-				["questID"] = 78285,
-				["groups"] = {
+			o(410484, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Coalesced Dreamstone
+				coord = { 58.9, 53.8, EMERALD_DREAM },
+				questID = 78285,
+				groups = {
 					i(210202),	-- Coalesced Dreamstone
 				},
 			})),
 			o(380569, {	-- Crystalline Overgrowth
-				["questID"] = 70277,
-				["coord"] = { 45.01, 61.3, THE_AZURE_SPAN },
-				["groups"] = {
+				questID = 70277,
+				coord = { 45.01, 61.3, THE_AZURE_SPAN },
+				groups = {
 					i(198664),	-- Crystalline Overgrowth
 				},
 			}),
 			o(380585, {	-- Erupted Alexstraszite Cluster
-				["questID"] = 70285,
-				["coord"] = { 59.8, 65.2, THALDRASZUS },
-				["groups"] = {
+				questID = 70285,
+				coord = { 59.8, 65.2, THALDRASZUS },
+				groups = {
 					i(198682),	-- Alexstraszite Cluster
 				},
 			}),
 			o(380548, {	-- Forgotten Jewelry Box
-				["questID"] = 70263,
-				["coord"] = { 61.8, 13.0, OHNAHRAN_PLAINS },
-				["groups"] = {
+				questID = 70263,
+				coord = { 61.8, 13.0, OHNAHRAN_PLAINS },
+				groups = {
 					i(198657),	-- Forgotten Jewelry Box
 					i(198660),	-- Fragmented Key
 				},
 			}),
-			o(401292, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Gently Jostled Jewels
-				["coord"] = { 34.5, 45.5, ZARALEK_CAVERN },
-				["questID"] = 75653,
-				["groups"] = {
+			o(401292, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Gently Jostled Jewels
+				coord = { 34.5, 45.5, ZARALEK_CAVERN },
+				questID = 75653,
+				groups = {
 					i(205216),	-- Gently Jostled Jewels
 				},
 			})),
 			o(380556, {	-- Harmonic Chest
-				["description"] = "Click the key next to the chest, then click the three crystals in the same lake. Return to the chest to collect the treasure.",
-				["questID"] = 70271,
-				["coord"] = { 44.6, 61.2, THE_AZURE_SPAN },
-				["groups"] = {
+				description = "Click the key next to the chest, then click the three crystals in the same lake. Return to the chest to collect the treasure.",
+				questID = 70271,
+				coord = { 44.6, 61.2, THE_AZURE_SPAN },
+				groups = {
 					i(201016),	-- Harmonic Crystal Harmonizer
 				},
 			}),
 			o(380822, {	-- Igneous Gem
-				["description"] = "Click the three crystals on the nearby small islands (quickly), then return to collect the treasure.",
-				["questID"] = 70273,
-				["coord"] = { 33.9, 63.7, THE_WAKING_SHORES },
-				["groups"] = {
+				description = "Click the three crystals on the nearby small islands (quickly), then return to collect the treasure.",
+				questID = 70273,
+				coord = { 33.9, 63.7, THE_WAKING_SHORES },
+				groups = {
 					i(201017),	-- Igneous Gem
 				},
 			}),
 			o(384318, {	-- Inconspicuous Bookmark
-				["coord"] = { 58.5, 36.7, THALDRASZUS },
-				["questID"] = 72356,
-				["groups"] = {
+				coord = { 58.5, 36.7, THALDRASZUS },
+				questID = 72356,
+				groups = {
 					i(194654),	-- Design: Convergent Prism (RECIPE!)
 				}
 			}),
 			o(380577, {	-- Lofty Malygite
-				["questID"] = 70282,
-				["coord"] = { 25.2, 34.8, OHNAHRAN_PLAINS },
-				["groups"] = {
+				questID = 70282,
+				coord = { 25.2, 34.8, OHNAHRAN_PLAINS },
+				groups = {
 					i(198670),	-- Lofty Malygite
 				},
 			}),
 			o(380545, {	-- Painter's Pretty Jewel
-				["questID"] = 70261,
-				["coord"] = { 56.9, 43.6, THALDRASZUS },
-				["groups"] = {
+				questID = 70261,
+				coord = { 56.9, 43.6, THALDRASZUS },
+				groups = {
 					i(198656),	-- Painter's Pretty Jewel
 				},
 			}),
-			o(410475, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Petrified Hope
-				["coord"] = { 33.2, 46.5, EMERALD_DREAM },
-				["questID"] = 78282,
-				["groups"] = {
+			o(410475, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Petrified Hope
+				coord = { 33.2, 46.5, EMERALD_DREAM },
+				questID = 78282,
+				groups = {
 					i(210200),	-- Petrified Hope
 				},
 			})),
-			o(401241, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Snubbed Snail Shells
-				["coord"] = { 40.4, 80.7, ZARALEK_CAVERN },
-				["questID"] = 75652,
-				["groups"] = {
+			o(401241, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Snubbed Snail Shells
+				coord = { 40.4, 80.7, ZARALEK_CAVERN },
+				questID = 75652,
+				groups = {
 					i(205214),	-- Snubbed Snail Shells
 				},
 			})),
-			o(410479, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Unpolished Blemish
-				["coord"] = { 43.4, 33.3, EMERALD_DREAM },
-				["questID"] = 78283,
-				["groups"] = {
+			o(410479, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Unpolished Blemish
+				coord = { 43.4, 33.3, EMERALD_DREAM },
+				questID = 78283,
+				groups = {
 					i(210201),	-- Handful of Tiny Pebbles
 				},
 			})),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
-			["isWeekly"] = true,
-			["groups"] = {
+			isWeekly = true,
+			groups = {
 				currency(PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING),
 			},
 		},{
 			i(198612),	-- Jeweler's Cuts
 			q(74112, {	-- DF Inscription Order: Jewelcrafting
-				["name"] = "DF Inscription Order: Jewelcrafting",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
+				name = "DF Inscription Order: Jewelcrafting",
+				description = "Requires a crafting order from Inscription.",
+				provider = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
 			}),
 			q(66388, {	-- DF Weekly Jewelcrafting Knowledgepoint #1
-				["name"] = "DF Jewelcrafting Treasure #1",
-				["provider"] = { "i", 193909 },	-- Ancient Gem Fragments
+				name = "DF Jewelcrafting Treasure #1",
+				provider = { "i", 193909 },	-- Ancient Gem Fragments
 			}),
 			q(66389, {	-- DF Weekly Jewelcrafting Knowledgepoint #2
-				["name"] = "DF Jewelcrafting Treasure #2",
-				["provider"] = { "i", 193907 },	-- Chipped Tyrstone
+				name = "DF Jewelcrafting Treasure #2",
+				provider = { "i", 193907 },	-- Chipped Tyrstone
 			}),
 			q(70521, {	-- DF Weekly Jewelcrafting Knowledgepoint #3
-				["name"] = "DF Jewelcrafting Drop #1: Well Dressed",
-				["description"] = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the spot(s) we found best.",
-				["provider"] = { "i", 198974 },	-- Elegantly Engraved Embellishment
-				["coords"] = {
+				name = "DF Jewelcrafting Drop #1: Well Dressed",
+				description = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the spot(s) we found best.",
+				provider = { "i", 198974 },	-- Elegantly Engraved Embellishment
+				coords = {
 					{ 46.8, 59.6, THALDRASZUS },
 					{ 45.8 ,58.2, THALDRASZUS },
 				},
-				["crs"] = {
+				crs = {
 					195215,	-- Rebel Bruiser
 					195062,	-- Rebel Incinerator
 					195063,	-- Rebel Conjurer
@@ -1075,26 +1075,26 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			q(70520, {	-- DF Weekly Jewelcrafting Knowledgepoint #4
-				["name"] = "DF Jewelcrafting Drop #2: Earth Elemental",
-				["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
-				["provider"] = { "i", 198973 },	-- Incandescent Curio
-				["coords"] = {
+				name = "DF Jewelcrafting Drop #2: Earth Elemental",
+				description = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
+				provider = { "i", 198973 },	-- Incandescent Curio
+				coords = {
 					{ 50.6, 57.6, THALDRASZUS },
 					{ 48.8, 60.6, THALDRASZUS },
 					{ 47.8, 35.6, THE_WAKING_SHORES },
 					{ 50.6, 33.2, THE_WAKING_SHORES },
 					{ 53.6, 31.0, THE_WAKING_SHORES },
 				},
-				["crs"] = {
+				crs = {
 					194212,	-- Unleashed Rubble
 					194517,	-- Crushing Elemental
 				},
 			}),
 		})),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING, 1 }}
+			cost = {{ "c", PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING, 1 }}
 		},{
 			pn(98244),	-- Amulets
 			pn(101953),	-- Artisan's Accessories
@@ -1128,18 +1128,18 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 		n(QUESTS, {
 			q(84130, {	-- Jewelcrafting Services Requested
-				["sourceQuests"] = { 84279 },	-- Crafting Orders: Jewelcrafting
-				["provider"] = { "n", 228177 },	-- Kala Clayhoof
-				["coord"] = { 59.2, 55.2, DORNOGAL },
-				["isWeekly"] = true,
-				["groups"] = {
+				sourceQuests = { 84279 },	-- Crafting Orders: Jewelcrafting
+				provider = { "n", 228177 },	-- Kala Clayhoof
+				coord = { 59.2, 55.2, DORNOGAL },
+				isWeekly = true,
+				groups = {
 					i(228777),	-- Algari Jewelcrafter's Notebook
 				},
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{"c", PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING, 1}} }, {
+			description = "These are learned by specialization.",
+			groups = sharedData({ cost = {{"c", PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING, 1}} }, {
 				r(435338),	-- Algari Emerald Prism
 				r(435369),	-- Algari Onyx Prism
 				r(435339),	-- Algari Ruby Prism
@@ -1164,85 +1164,85 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		}),
 		n(TREASURES, {
 			o(455973, {	-- Arathi Sizing Gauges
-				["coord"] = { 47.3, 60.6, HALLOWFALL },
-				["questID"] = 83894,
-				["groups"] = {
+				coord = { 47.3, 60.6, HALLOWFALL },
+				questID = 83894,
+				groups = {
 					i(226320),	-- Arathi Sizing Gauges
 				},
 			}),
 			o(455975, {	-- Carved Stone File
-				["coord"] = { 48.5, 35.2, THE_RINGING_DEEPS },
-				["questID"] = 83892,
-				["groups"] = {
+				coord = { 48.5, 35.2, THE_RINGING_DEEPS },
+				questID = 83892,
+				groups = {
 					i(226318),	-- Carved Stone File
 				},
 			}),
 			o(455976, {	-- Earthen Gem Pliers
-				["coord"] = { 34.9, 52.3, DORNOGAL },
-				["questID"] = 83891,
-				["groups"] = {
+				coord = { 34.9, 52.3, DORNOGAL },
+				questID = 83891,
+				groups = {
 					i(226317),	-- Earthen Gem Pliers
 				},
 			}),
 			o(455977, {	-- Gentle Jewel Hammer
-				["coord"] = { 63.5, 66.8, ISLE_OF_DORN },
-				["questID"] = 83890,
-				["groups"] = {
+				coord = { 63.5, 66.8, ISLE_OF_DORN },
+				questID = 83890,
+				groups = {
 					i(226316),	-- Gentle Jewel Hammer
 				},
 			}),
 			o(455974, {	-- Jeweler's Delicate Drill
-				["coord"] = { 57.0, 54.6, THE_RINGING_DEEPS },
-				["questID"] = 83893,
-				["groups"] = {
+				coord = { 57.0, 54.6, THE_RINGING_DEEPS },
+				questID = 83893,
+				groups = {
 					i(226319),	-- Jeweler's Delicate Drill
 				},
 			}),
 			o(455972, {	-- Librarian's Magnifiers
-				["coord"] = { 44.7, 50.9, HALLOWFALL },
-				["questID"] = 83895,
-				["groups"] = {
+				coord = { 44.7, 50.9, HALLOWFALL },
+				questID = 83895,
+				groups = {
 					i(226321),	-- Librarian's Magnifiers
 				},
 			}),
 			o(455970, {	-- Nerubian Bench Blocks
-				["coord"] = { 56.1, 58.6, AZJ_KAHET },
-				["questID"] = 83897,
-				["groups"] = {
+				coord = { 56.1, 58.6, AZJ_KAHET },
+				questID = 83897,
+				groups = {
 					i(226323),	-- Nerubian Bench Blocks
 				},
 			}),
 			o(455971, {	-- Ritual Caster's Crystal
-				["coord"] = { 47.7, 19.4, NERUBAR },
-				["questID"] = 83896,
-				["groups"] = {
+				coord = { 47.7, 19.4, NERUBAR },
+				questID = 83896,
+				groups = {
 					i(226322),	-- Ritual Caster's Crystal
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
-			["isWeekly"] = true,
-			["groups"] = {
+			isWeekly = true,
+			groups = {
 				currency(PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING),
 			},
 		},{
 			i(228777),	-- Algari Jewelcrafter's Notebook
 			q(83731, {	-- TWW Inscription Order: Jewelcrafting
-				["name"] = "TWW Inscription Order: Jewelcrafting",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 222551 },	-- Algari Treatise on Jewelcrafting
+				name = "TWW Inscription Order: Jewelcrafting",
+				description = "Requires a crafting order from Inscription.",
+				provider = { "i", 222551 },	-- Algari Treatise on Jewelcrafting
 			}),
 			q(83265, {	-- TWW Weekly Jewelcrafting Knowledgepoint #1
-				["name"] = "TWW Weekly Jewelcrafting Treasure #1",
-				["provider"] = { "i", 225224 },	-- Diaphanous Gem Shards
+				name = "TWW Weekly Jewelcrafting Treasure #1",
+				provider = { "i", 225224 },	-- Diaphanous Gem Shards
 			}),
 			q(83266, {	-- TWW Weekly Jewelcrafting Knowledgepoint #2
-				["name"] = "TWW Weekly Jewelcrafting Treasure #2",
-				["provider"] = { "i", 225225 },	-- Deepstone Fragment
+				name = "TWW Weekly Jewelcrafting Treasure #2",
+				provider = { "i", 225225 },	-- Deepstone Fragment
 			}),
 		})),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(42789, {	-- Jewelcrafting at Midnight
 				i(264005),	-- Midnight Jewelcrafter's Shop Sign (DECOR!)
@@ -1250,17 +1250,17 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			ach(62236),	-- Jewelcrafting-on-Demand
 			ach(62244, {	-- Dedicated to the Craft: Jewelcrafting
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					42789,	-- Jewelcrafting at Midnight
 					62236,	-- Jewelcrafting-on-Demand
 				}},
-				["groups"] = {
+				groups = {
 					title(746),	-- Thalassian Jewelcrafter <Name>
 				},
 			}),
 		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
-			["cost"] = {{ "c", PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING, 1 }}
+			cost = {{ "c", PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING, 1 }}
 		},{
 			pn(107059),	-- Alluring Accessories
 			pn(106891),	-- Austere Amethyst
@@ -1300,24 +1300,24 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 		n(QUESTS, {
 			q(93694, {	-- Jewelcrafting Services Requested
-				["sourceQuests"] = { 93729 },	-- Crafting Orders: Jewelcrafting
-				["qgs"] = {
+				sourceQuests = { 93729 },	-- Crafting Orders: Jewelcrafting
+				qgs = {
 					243345,	-- Amin <Jewelcrafting Trainer>
 					243283,	-- Captain Flaresworn <Requisitions Officer>
 				},
-				["coords"] = {
+				coords = {
 					{ 45.0, 55.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 					{ 48.2, 55.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 				},
-				["isWeekly"] = true,
-				["groups"] = {
+				isWeekly = true,
+				groups = {
 					i(263458),	-- Thalassian Jewelcrafter's Notebook
 				},
 			}),
 		}),
 		filter(RECIPES, {
-			["description"] = "These are learned by specialization.",
-			["groups"] = sharedData({ ["cost"] = {{"c", PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING, 1}} }, {
+			description = "These are learned by specialization.",
+			groups = sharedData({ cost = {{"c", PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING, 1}} }, {
 				r(1230482),	-- Amani Lapis Prism
 				r(1230459),	-- Flawless Deadly Amethyst
 				r(1230451),	-- Flawless Deadly Lapis
@@ -1340,88 +1340,88 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		}),
 		n(TREASURES, {
 			o(525927, {	-- Dual-Function Magnifiers
-				["coord"] = { 28.6, 46.5, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["questID"] = 89124,
-				["groups"] = {
+				coord = { 28.6, 46.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+				questID = 89124,
+				groups = {
 					i(238582),	-- Dual-Function Magnifiers
 				},
 			}),
 			o(525923, {	-- Ethereal Gem Pliers
-				["coord"] = { 54.2, 51.2, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-				["questID"] = 89128,
-				["groups"] = {
+				coord = { 54.2, 51.2, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				questID = 89128,
+				groups = {
 					i(238586),	-- Ethereal Gem Pliers
 				},
 			}),
 			o(525926, {	-- Poorly Rounded Vial
-				["coord"] = { 56.6, 40.9, MAP.MIDNIGHT.EVERSONG_WOODS },
-				["questID"] = 89125,
-				["groups"] = {
+				coord = { 56.6, 40.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+				questID = 89125,
+				groups = {
 					i(238583),	-- Poorly Rounded Vial
 				},
 			}),
 			o(525925, {	-- Shattered Glass
-				["coord"] = { 62.7, 53.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-				["questID"] = 89126,
-				["groups"] = {
+				coord = { 62.7, 53.4, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				questID = 89126,
+				groups = {
 					i(238584),	-- Shattered Glass
 				},
 			}),
 			o(525922, {	-- Sin'dorei Gem Faceters
-				["coord"] = { 39.6, 38.9, MAP.MIDNIGHT.EVERSONG_WOODS },
-				["questID"] = 89129,
-				["groups"] = {
+				coord = { 39.6, 38.9, MAP.MIDNIGHT.EVERSONG_WOODS },
+				questID = 89129,
+				groups = {
 					i(238587),	-- Sin'dorei Gem Faceters
 				},
 			}),
 			o(525929, {	-- Sin'dorei Masterwork Chisel
-				["coord"] = { 50.6, 56.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["questID"] = 89122,
-				["groups"] = {
+				coord = { 50.6, 56.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+				questID = 89122,
+				groups = {
 					i(238580),	-- Sin'dorei Masterwork Chisel
 				},
 			}),
 			o(525928, {	-- Speculative Voidstorm Crystal
-				["coord"] = { 30.5, 69.1, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
-				["questID"] = 89123,
-				["groups"] = {
+				coord = { 30.5, 69.1, MAP.MIDNIGHT.SLAYERS_RISE_OUTDOOR },
+				questID = 89123,
+				groups = {
 					i(238581),	-- Speculative Voidstorm Crystal
 				},
 			}),
 			o(525924, {	-- Vintage Soul Gem
-				["coord"] = { 55.4, 48.0, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["questID"] = 89127,
-				["groups"] = {
+				coord = { 55.4, 48.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				questID = 89127,
+				groups = {
 					i(238585),	-- Vintage Soul Gem
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
-			["isWeekly"] = true,
-			["groups"] = {
+			isWeekly = true,
+			groups = {
 				currency(PROFESSION_KNOWLEDGE.MID.JEWELCRAFTING),
 			},
 		},{
 			i(263458),	-- Thalassian Jewelcrafter's Notebook
 			q(95133, {	-- MID Inscription Order: Jewelcrafting
-				["name"] = "MID Inscription Order: Jewelcrafting",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 245760 },	-- Thalassian Treatise on Jewelcrafting
+				name = "MID Inscription Order: Jewelcrafting",
+				description = "Requires a crafting order from Inscription.",
+				provider = { "i", 245760 },	-- Thalassian Treatise on Jewelcrafting
 			}),
 			q(93539, {	-- MID Weekly Jewelcrafting Knowledgepoint #1
-				["name"] = "MID Weekly Jewelcrafting Treasure #1",
-				["provider"] = { "i", 259199 },	-- Harandar Stone Sample
+				name = "MID Weekly Jewelcrafting Treasure #1",
+				provider = { "i", 259199 },	-- Harandar Stone Sample
 			}),
 			q(93538, {	-- MID Weekly Jewelcrafting Knowledgepoint #2
-				["name"] = "MID Weekly Jewelcrafting Treasure #2",
-				["provider"] = { "i", 259198 },	-- Void-Touched Eversong Diamond Fragments
+				name = "MID Weekly Jewelcrafting Treasure #2",
+				provider = { "i", 259198 },	-- Void-Touched Eversong Diamond Fragments
 			}),
 		})),
 	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 		n(PROFESSIONS, {
 			prof(JEWELCRAFTING, {
 				q(40557),	-- FLAG: Clive Cozen Leave - Triggers after completing Hidden Intentions (40539)
@@ -1431,7 +1431,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			}),
 		}),
 	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 		n(PROFESSIONS, {
 			prof(JEWELCRAFTING, {
 				q(55631),	-- Jewelcrafting Diode shrine. harvesting gems from them triggered this quest. Nazmir location
@@ -1479,3864 +1479,3864 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 	expansion(EXPANSION.CLASSIC, {
 		filter(FINGER_F, {
 			{
-				["name"] = "Aquamarine Signet",
-				["recipeID"] = 26874
+				name = "Aquamarine Signet",
+				recipeID = 26874
 			},
 			{
-				["name"] = "Blazing Citrine Ring",
-				["timeline"] = { ADDED_2_0_1 },
-				["recipeID"] = 25617
+				name = "Blazing Citrine Ring",
+				timeline = { ADDED_2_0_1 },
+				recipeID = 25617
 			},
 			{
-				["name"] = "Braided Copper Ring",
-				["recipeID"] = 25493
+				name = "Braided Copper Ring",
+				recipeID = 25493
 			},
 			{
-				["name"] = "Bronze Band of Force",
-				["recipeID"] = 37818
+				name = "Bronze Band of Force",
+				recipeID = 37818
 			},
 			{
-				["name"] = "Citrine Ring of Rapid Healing",
-				["recipeID"] = 25621
+				name = "Citrine Ring of Rapid Healing",
+				recipeID = 25621
 			},
 			{
-				["name"] = "Diamond Focus Ring",
-				["recipeID"] = 36526
+				name = "Diamond Focus Ring",
+				recipeID = 36526
 			},
 			{
-				["name"] = "Elegant Silver Ring",
-				["recipeID"] = 25280
+				name = "Elegant Silver Ring",
+				recipeID = 25280
 			},
 			{
-				["name"] = "Emerald Lion Ring",
-				["recipeID"] = 34961
+				name = "Emerald Lion Ring",
+				recipeID = 34961
 			},
 			{
-				["name"] = "Engraved Truesilver Ring",
-				["recipeID"] = 25620
+				name = "Engraved Truesilver Ring",
+				recipeID = 25620
 			},
 			{
-				["name"] = "Gem Studded Band",
-				["recipeID"] = 26896
+				name = "Gem Studded Band",
+				recipeID = 26896
 			},
 			{
-				["name"] = "Gloom Band",
-				["recipeID"] = 25287
+				name = "Gloom Band",
+				recipeID = 25287
 			},
 			{
-				["name"] = "Glowing Thorium Band",
-				["recipeID"] = 34960
+				name = "Glowing Thorium Band",
+				recipeID = 34960
 			},
 			{
-				["name"] = "Golden Dragon Ring",
-				["recipeID"] = 25613
+				name = "Golden Dragon Ring",
+				recipeID = 25613
 			},
 			{
-				["name"] = "Golden Ring of Power",
-				["recipeID"] = 34955
+				name = "Golden Ring of Power",
+				recipeID = 34955
 			},
 			{
-				["name"] = "Heavy Copper Ring",
-				["recipeID"] = 26926
+				name = "Heavy Copper Ring",
+				recipeID = 26926
 			},
 			{
-				["name"] = "Heavy Jade Ring",
-				["recipeID"] = 36524
+				name = "Heavy Jade Ring",
+				recipeID = 36524
 			},
 			{
-				["name"] = "Heavy Silver Ring",
-				["recipeID"] = 25305
+				name = "Heavy Silver Ring",
+				recipeID = 25305
 			},
 			{
-				["name"] = "Inlaid Malachite Ring",
-				["recipeID"] = 25283
+				name = "Inlaid Malachite Ring",
+				recipeID = 25283
 			},
 			{
-				["name"] = "Onslaught Ring",
-				["recipeID"] = 26907
+				name = "Onslaught Ring",
+				recipeID = 26907
 			},
 			{
-				["name"] = "Red Ring of Destruction",
-				["recipeID"] = 36525
+				name = "Red Ring of Destruction",
+				recipeID = 36525
 			},
 			{
-				["name"] = "Ring of Bitter Shadows",
-				["recipeID"] = 26910
+				name = "Ring of Bitter Shadows",
+				recipeID = 26910
 			},
 			{
-				["name"] = "Ring of Silver Might",
-				["recipeID"] = 25317
+				name = "Ring of Silver Might",
+				recipeID = 25317
 			},
 			{
-				["name"] = "Ring of Twilight Shadows",
-				["recipeID"] = 25318
+				name = "Ring of Twilight Shadows",
+				recipeID = 25318
 			},
 			{
-				["name"] = "Sapphire Signet",
-				["recipeID"] = 26903
+				name = "Sapphire Signet",
+				recipeID = 26903
 			},
 			{
-				["name"] = "Simple Opal Ring",
-				["recipeID"] = 26902
+				name = "Simple Opal Ring",
+				recipeID = 26902
 			},
 			{
-				["name"] = "Simple Pearl Ring",
-				["recipeID"] = 25284
+				name = "Simple Pearl Ring",
+				recipeID = 25284
 			},
 			{
-				["name"] = "Solid Bronze Ring",
-				["recipeID"] = 25490
+				name = "Solid Bronze Ring",
+				recipeID = 25490
 			},
 			{
-				["name"] = "The Aquamarine Ward",
-				["recipeID"] = 26887
+				name = "The Aquamarine Ward",
+				recipeID = 26887
 			},
 			{
-				["name"] = "The Jade Eye",
-				["recipeID"] = 25619
+				name = "The Jade Eye",
+				recipeID = 25619
 			},
 			{
-				["name"] = "Tigerseye Band",
-				["recipeID"] = 32179
+				name = "Tigerseye Band",
+				recipeID = 32179
 			},
 			{
-				["name"] = "Truesilver Commander's Ring",
-				["recipeID"] = 34959
+				name = "Truesilver Commander's Ring",
+				recipeID = 34959
 			},
 			{
-				["name"] = "Truesilver Healing Ring",
-				["recipeID"] = 26885
+				name = "Truesilver Healing Ring",
+				recipeID = 26885
 			},
 			{
-				["name"] = "Wicked Moonstone Ring",
-				["recipeID"] = 25323
+				name = "Wicked Moonstone Ring",
+				recipeID = 25323
 			},
 			{
-				["name"] = "Woven Copper Ring",
-				["recipeID"] = 26925
+				name = "Woven Copper Ring",
+				recipeID = 26925
 			}
 		}),
 		filter(NECK_F, {
 			{
-				["name"] = "Amulet of the Moon",
-				["recipeID"] = 25339
+				name = "Amulet of the Moon",
+				recipeID = 25339
 			},
 			applyclassicphase(WRATH_PHASE_ONE, {
-				["name"] = "Amulet of Truesight",
-				["timeline"] = { ADDED_3_1_0 },
-				["recipeID"] = 63743
+				name = "Amulet of Truesight",
+				timeline = { ADDED_3_1_0 },
+				recipeID = 63743
 			}),
 			{
-				["name"] = "Aquamarine Pendant of the Warrior",
-				["recipeID"] = 26876
+				name = "Aquamarine Pendant of the Warrior",
+				recipeID = 26876
 			},
 			{
-				["name"] = "Barbaric Iron Collar",
-				["recipeID"] = 25498
+				name = "Barbaric Iron Collar",
+				recipeID = 25498
 			},
 			{
-				["name"] = "Brilliant Necklace",
-				["recipeID"] = 36523
+				name = "Brilliant Necklace",
+				recipeID = 36523
 			},
 			{
-				["name"] = "Bronze Torc",
-				["recipeID"] = 38175
+				name = "Bronze Torc",
+				recipeID = 38175
 			},
 			{
-				["name"] = "Citrine Pendant of Golden Healing",
-				["recipeID"] = 25622
+				name = "Citrine Pendant of Golden Healing",
+				recipeID = 25622
 			},
 			{
-				["name"] = "Heavy Golden Necklace of Battle",
-				["recipeID"] = 25320
+				name = "Heavy Golden Necklace of Battle",
+				recipeID = 25320
 			},
 			{
-				["name"] = "Jade Pendant of Blasting",
-				["recipeID"] = 25618
+				name = "Jade Pendant of Blasting",
+				recipeID = 25618
 			},
 			{
-				["name"] = "Living Emerald Pendant",
-				["recipeID"] = 26911
+				name = "Living Emerald Pendant",
+				recipeID = 26911
 			},
 			{
-				["name"] = "Malachite Pendant",
-				["recipeID"] = 32178
+				name = "Malachite Pendant",
+				recipeID = 32178
 			},
 			{
-				["name"] = "Necklace of the Diamond Tower",
-				["recipeID"] = 26915
+				name = "Necklace of the Diamond Tower",
+				recipeID = 26915
 			},
 			{
-				["name"] = "Opal Necklace of Impact",
-				["recipeID"] = 26897
+				name = "Opal Necklace of Impact",
+				recipeID = 26897
 			},
 			{
-				["name"] = "Ornate Tigerseye Necklace",
-				["recipeID"] = 26928
+				name = "Ornate Tigerseye Necklace",
+				recipeID = 26928
 			},
 			{
-				["name"] = "Pendant of the Agate Shield",
-				["recipeID"] = 25610
+				name = "Pendant of the Agate Shield",
+				recipeID = 25610
 			},
 			{
-				["name"] = "Ruby Pendant of Fire",
-				["recipeID"] = 26883
+				name = "Ruby Pendant of Fire",
+				recipeID = 26883
 			},
 			{
-				["name"] = "Sapphire Pendant of Winter Night",
-				["recipeID"] = 26908
+				name = "Sapphire Pendant of Winter Night",
+				recipeID = 26908
 			},
 			{
-				["name"] = "Thick Bronze Necklace",
-				["recipeID"] = 26927
+				name = "Thick Bronze Necklace",
+				recipeID = 26927
 			}
 		}),
 		category(168, {	-- Materials
 			{
-				["name"] = "Bronze Setting",
-				["recipeID"] = 25278
+				name = "Bronze Setting",
+				recipeID = 25278
 			},
 			{
-				["name"] = "Delicate Copper Wire",
-				["recipeID"] = 25255
+				name = "Delicate Copper Wire",
+				recipeID = 25255
 			},
 			{
-				["name"] = "Mithril Filigree",
-				["recipeID"] = 25615
+				name = "Mithril Filigree",
+				recipeID = 25615
 			},
 			{
-				["name"] = "Thorium Setting",
-				["recipeID"] = 26880
+				name = "Thorium Setting",
+				recipeID = 26880
 			}
 		}),
 		category(167, {	-- Crowns
 			{
-				["name"] = "Emerald Crown of Destruction",
-				["recipeID"] = 26906
+				name = "Emerald Crown of Destruction",
+				recipeID = 26906
 			},
 			{
-				["name"] = "Moonsoul Crown",
-				["recipeID"] = 25321
+				name = "Moonsoul Crown",
+				recipeID = 25321
 			},
 			{
-				["name"] = "Ruby Crown of Restoration",
-				["recipeID"] = 26878
+				name = "Ruby Crown of Restoration",
+				recipeID = 26878
 			}
 		}),
 		filter(TRINKET_F, {
 			{
-				["name"] = "Figurine - Black Diamond Crab",
-				["recipeID"] = 26912
+				name = "Figurine - Black Diamond Crab",
+				recipeID = 26912
 			},
 			{
-				["name"] = "Figurine - Black Pearl Panther",
-				["recipeID"] = 26875
+				name = "Figurine - Black Pearl Panther",
+				recipeID = 26875
 			},
 			{
-				["name"] = "Figurine - Dark Iron Scorpid",
-				["recipeID"] = 26914
+				name = "Figurine - Dark Iron Scorpid",
+				recipeID = 26914
 			},
 			{
-				["name"] = "Figurine - Emerald Owl",
-				["recipeID"] = 26909
+				name = "Figurine - Emerald Owl",
+				recipeID = 26909
 			},
 			{
-				["name"] = "Figurine - Golden Hare",
-				["recipeID"] = 26873
+				name = "Figurine - Golden Hare",
+				recipeID = 26873
 			},
 			{
-				["name"] = "Figurine - Jade Owl",
-				["recipeID"] = 26872
+				name = "Figurine - Jade Owl",
+				recipeID = 26872
 			},
 			{
-				["name"] = "Figurine - Ruby Serpent",
-				["recipeID"] = 26900
+				name = "Figurine - Ruby Serpent",
+				recipeID = 26900
 			},
 			{
-				["name"] = "Figurine - Truesilver Boar",
-				["recipeID"] = 26882
+				name = "Figurine - Truesilver Boar",
+				recipeID = 26882
 			},
 			{
-				["name"] = "Figurine - Truesilver Crab",
-				["recipeID"] = 26881
+				name = "Figurine - Truesilver Crab",
+				recipeID = 26881
 			}
 		}),
 		filter(FIST_WEAPONS, {
 			{
-				["name"] = "Heavy Iron Knuckles",
-				["recipeID"] = 25612
+				name = "Heavy Iron Knuckles",
+				recipeID = 25612
 			}
 		}),
 		filter(MISC, {
 			{
-				["name"] = "Coarse Stone Statue",
-				["recipeID"] = 32801
+				name = "Coarse Stone Statue",
+				recipeID = 32801
 			},
 			{
-				["name"] = "Dense Stone Statue",
-				["recipeID"] = 32809
+				name = "Dense Stone Statue",
+				recipeID = 32809
 			},
 			{
-				["name"] = "Heavy Stone Statue",
-				["recipeID"] = 32807
+				name = "Heavy Stone Statue",
+				recipeID = 32807
 			},
 			{
-				["name"] = "Rough Stone Statue",
-				["recipeID"] = 32259
+				name = "Rough Stone Statue",
+				recipeID = 32259
 			},
 			{
-				["name"] = "Solid Stone Statue",
-				["recipeID"] = 32808
+				name = "Solid Stone Statue",
+				recipeID = 32808
 			}
 		}),
 	}),
 	expansion(EXPANSION.TBC, {
 		{
-			["name"] = "Reagents",
-			["categoryID"] = 868,
-			["groups"] = {
+			name = "Reagents",
+			categoryID = 868,
+			groups = {
 				{
-					["name"] = "Mercurial Adamantite",
-					["recipeID"] = 38068
+					name = "Mercurial Adamantite",
+					recipeID = 38068
 				}
 			}
 		},
 		{
-			["name"] = "Blue Gems",
-			["categoryID"] = 857,
-			["groups"] = {
+			name = "Blue Gems",
+			categoryID = 857,
+			groups = {
 				{
-					["name"] = "Falling Star",
-					["recipeID"] = 42590
+					name = "Falling Star",
+					recipeID = 42590
 				},
 				-- #if BEFORE CATA
 				{
-					["name"] = "Lustrous Azure Moonstone",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 28957
+					name = "Lustrous Azure Moonstone",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 28957
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Lustrous Empyrean Sapphire",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39717
+					name = "Lustrous Empyrean Sapphire",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39717
 				}),
 				{
-					["name"] = "Lustrous Star of Elune",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 31094
+					name = "Lustrous Star of Elune",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 31094
 				},
 				-- #endif
 				-- #if AFTER CATA
 				{
-					["name"] = "Rigid Azure Moonstone [CATA+] / Rigid Golden Draenite [TBC]",
-					["recipeID"] = 28948
+					name = "Rigid Azure Moonstone [CATA+] / Rigid Golden Draenite [TBC]",
+					recipeID = 28948
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Rigid Empyrean Sapphire [CATA+] / Rigid Lionseye [TBC]",
-					["recipeID"] = 39721
+					name = "Rigid Empyrean Sapphire [CATA+] / Rigid Lionseye [TBC]",
+					recipeID = 39721
 				}),
 				{
-					["name"] = "Rigid Star of Elune [CATA+] / Rigid Dawnstone [TBC]",
-					["recipeID"] = 31098
+					name = "Rigid Star of Elune [CATA+] / Rigid Dawnstone [TBC]",
+					recipeID = 31098
 				},
 				-- #endif
 				{
-					["name"] = "Solid Azure Moonstone",
-					["recipeID"] = 28950
+					name = "Solid Azure Moonstone",
+					recipeID = 28950
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Solid Empyrean Sapphire",
-					["recipeID"] = 39715
+					name = "Solid Empyrean Sapphire",
+					recipeID = 39715
 				}),
 				{
-					["name"] = "Solid Star of Elune",
-					["recipeID"] = 31092
+					name = "Solid Star of Elune",
+					recipeID = 31092
 				},
 				{
-					["name"] = "Sparkling Azure Moonstone",
-					["recipeID"] = 28953
+					name = "Sparkling Azure Moonstone",
+					recipeID = 28953
 				},
 				applyclassicphase(TBC_PHASE_THREE,{
-					["name"] = "Sparkling Empyrean Sapphire",
-					["recipeID"] = 39716
+					name = "Sparkling Empyrean Sapphire",
+					recipeID = 39716
 				}),
 				{
-					["name"] = "Sparkling Star of Elune",
-					["recipeID"] = 31149
+					name = "Sparkling Star of Elune",
+					recipeID = 31149
 				},
 				{
-					["name"] = "Stormy Azure Moonstone",
-					["recipeID"] = 28955
+					name = "Stormy Azure Moonstone",
+					recipeID = 28955
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Stormy Empyrean Sapphire",
-					["recipeID"] = 39718
+					name = "Stormy Empyrean Sapphire",
+					recipeID = 39718
 				}),
 				{
-					["name"] = "Stormy Star of Elune",
-					["recipeID"] = 31095
+					name = "Stormy Star of Elune",
+					recipeID = 31095
 				}
 			}
 		},
 		{
-			["name"] = "Green Gems",
-			["categoryID"] = 858,
-			["groups"] = {
+			name = "Green Gems",
+			categoryID = 858,
+			groups = {
 				-- #if BEFORE CATA
 				{
-					["name"] = "Dazzling Deep Peridot",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-					["recipeID"] = 28924
+					name = "Dazzling Deep Peridot",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					recipeID = 28924
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Dazzling Seaspray Emerald [TBC] / Purified Shadowsong Amethyst [CATA+]",
-					["recipeID"] = 39741
+					name = "Dazzling Seaspray Emerald [TBC] / Purified Shadowsong Amethyst [CATA+]",
+					recipeID = 39741
 				}),
 				{
-					["name"] = "Dazzling Talasite [TBC] / Purified Nightseye [CATA+]",
-					["recipeID"] = 31112
+					name = "Dazzling Talasite [TBC] / Purified Nightseye [CATA+]",
+					recipeID = 31112
 				},
 				{
-					["name"] = "Enduring Deep Peridot [TBC] / Regal Deep Peridot [CATA+]",
-					["recipeID"] = 28918
+					name = "Enduring Deep Peridot [TBC] / Regal Deep Peridot [CATA+]",
+					recipeID = 28918
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Enduring Seaspray Emerald [TBC] / Regal Seaspray Emerald [CATA+]",
-					["recipeID"] = 39739
+					name = "Enduring Seaspray Emerald [TBC] / Regal Seaspray Emerald [CATA+]",
+					recipeID = 39739
 				}),
 				{
-					["name"] = "Enduring Talasite",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 31110
+					name = "Enduring Talasite",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 31110
 				},
 				-- #endif
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Forceful Seaspray Emerald",
-					["recipeID"] = 47053
+					name = "Forceful Seaspray Emerald",
+					recipeID = 47053
 				}),
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Forceful Talasite",
-					["recipeID"] = 46405
+					name = "Forceful Talasite",
+					recipeID = 46405
 				}),
 				{
-					["name"] = "Jagged Deep Peridot",
-					["recipeID"] = 28917
+					name = "Jagged Deep Peridot",
+					recipeID = 28917
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Jagged Seaspray Emerald",
-					["recipeID"] = 39742
+					name = "Jagged Seaspray Emerald",
+					recipeID = 39742
 				}),
 				{
-					["name"] = "Jagged Talasite",
-					["recipeID"] = 31113
+					name = "Jagged Talasite",
+					recipeID = 31113
 				},
 				{
-					["name"] = "Radiant Deep Peridot",
-					["recipeID"] = 28916
+					name = "Radiant Deep Peridot",
+					recipeID = 28916
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Radiant Seaspray Emerald",
-					["recipeID"] = 39740
+					name = "Radiant Seaspray Emerald",
+					recipeID = 39740
 				}),
 				{
-					["name"] = "Radiant Talasite",
-					["recipeID"] = 31111
+					name = "Radiant Talasite",
+					recipeID = 31111
 				},
 				-- #if AFTER CATA
 				{
-					["name"] = "Regal Deep Peridot [CATA+] / Enduring Deep Peridot [TBC]",
-					["recipeID"] = 28918
+					name = "Regal Deep Peridot [CATA+] / Enduring Deep Peridot [TBC]",
+					recipeID = 28918
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Regal Seaspray Emerald [CATA+] / Enduring Seaspray Emerald [TBC]",
-					["recipeID"] = 39739
+					name = "Regal Seaspray Emerald [CATA+] / Enduring Seaspray Emerald [TBC]",
+					recipeID = 39739
 				}),
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Regal Talasite [CATA+] / Regal Nightseye [TBC]",
-					["recipeID"] = 46803
+					name = "Regal Talasite [CATA+] / Regal Nightseye [TBC]",
+					recipeID = 46803
 				}),
 				-- #endif
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Steady Seaspray Emerald",
-					["recipeID"] = 47054
+					name = "Steady Seaspray Emerald",
+					recipeID = 47054
 				}),
 				{
-					["name"] = "Steady Talasite",
-					["recipeID"] = 43493
+					name = "Steady Talasite",
+					recipeID = 43493
 				}
 			}
 		},
 		{
-			["name"] = "Orange Gems",
-			["categoryID"] = 859,
-			["groups"] = {
+			name = "Orange Gems",
+			categoryID = 859,
+			groups = {
 				-- #if AFTER CATA
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, {
-					["name"] = "Deadly Flame Spessarite [CATA+] / Wicked Flame Spessarite [TBC]",
-					["recipeID"] = 39467
+					name = "Deadly Flame Spessarite [CATA+] / Wicked Flame Spessarite [TBC]",
+					recipeID = 39467
 				}),
 				{
-					["name"] = "Deadly Noble Topaz [CATA+] / Wicked Noble Topaz [TBC]",
-					["recipeID"] = 39471
+					name = "Deadly Noble Topaz [CATA+] / Wicked Noble Topaz [TBC]",
+					recipeID = 39471
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Deadly Pyrestone [CATA+] / Wicked Pyrestone [TBC]",
-					["recipeID"] = 39738
+					name = "Deadly Pyrestone [CATA+] / Wicked Pyrestone [TBC]",
+					recipeID = 39738
 				}),
 				-- #endif
 				-- #if BEFORE CATA
 				{
-					["name"] = "Glinting Flame Spessarite [TBC] / Glinting Shadow Draenite [CATA+]",
-					["recipeID"] = 28914
+					name = "Glinting Flame Spessarite [TBC] / Glinting Shadow Draenite [CATA+]",
+					recipeID = 28914
 				},
 				{
-					["name"] = "Glinting Noble Topaz [TBC] / Glinting Nightseye [CATA+]",
-					["recipeID"] = 31109
+					name = "Glinting Noble Topaz [TBC] / Glinting Nightseye [CATA+]",
+					recipeID = 31109
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Glinting Pyrestone [TBC] / Glinting Shadowsong Amethyst [CATA+]",
-					["recipeID"] = 39736
+					name = "Glinting Pyrestone [TBC] / Glinting Shadowsong Amethyst [CATA+]",
+					recipeID = 39736
 				}),
 				-- #endif
 				{
-					["name"] = "Inscribed Flame Spessarite",
-					["recipeID"] = 28910
+					name = "Inscribed Flame Spessarite",
+					recipeID = 28910
 				},
 				{
-					["name"] = "Inscribed Noble Topaz",
-					["recipeID"] = 31106
+					name = "Inscribed Noble Topaz",
+					recipeID = 31106
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Inscribed Pyrestone",
-					["recipeID"] = 39733
+					name = "Inscribed Pyrestone",
+					recipeID = 39733
 				}),
 				-- #if BEFORE CATA
 				{
-					["name"] = "Luminous Flame Spessarite [TBC] / Reckless Flame Spessarite [CATA+]",
-					["recipeID"] = 28912
+					name = "Luminous Flame Spessarite [TBC] / Reckless Flame Spessarite [CATA+]",
+					recipeID = 28912
 				},
 				{
-					["name"] = "Luminous Noble Topaz [TBC] / Reckless Noble Topaz [CATA+]",
-					["recipeID"] = 31108
+					name = "Luminous Noble Topaz [TBC] / Reckless Noble Topaz [CATA+]",
+					recipeID = 31108
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Luminous Pyrestone",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39735
+					name = "Luminous Pyrestone",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39735
 				}),
 				-- #endif
 				{
-					["name"] = "Potent Flame Spessarite",
-					["recipeID"] = 28915
+					name = "Potent Flame Spessarite",
+					recipeID = 28915
 				},
 				{
-					["name"] = "Potent Noble Topaz",
-					["recipeID"] = 31107
+					name = "Potent Noble Topaz",
+					recipeID = 31107
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Potent Pyrestone",
-					["recipeID"] = 39734
+					name = "Potent Pyrestone",
+					recipeID = 39734
 				}),
 				-- #if AFTER CATA
 				{
-					["name"] = "Reckless Flame Spessarite [CATA+] / Luminous Flame Spessarite [TBC]",
-					["recipeID"] = 28912
+					name = "Reckless Flame Spessarite [CATA+] / Luminous Flame Spessarite [TBC]",
+					recipeID = 28912
 				},
 				-- #endif
 				-- #if BEFORE CATA
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Reckless Noble Topaz",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 46404,
+					name = "Reckless Noble Topaz",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 46404,
 				}),
 				-- #endif
 				-- #if AFTER CATA
 				{
-					["name"] = "Reckless Noble Topaz [CATA+] / Luminous Noble Topaz [TBC]",
-					["recipeID"] = 31108
+					name = "Reckless Noble Topaz [CATA+] / Luminous Noble Topaz [TBC]",
+					recipeID = 31108
 				},
 				-- #endif
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Reckless Pyrestone",
-					["recipeID"] = 47055
+					name = "Reckless Pyrestone",
+					recipeID = 47055
 				}),
 				-- #if BEFORE CATA
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, {
-					["name"] = "Veiled Flame Spessarite [TBC] / Veiled Shadow Draenite [CATA+]",
-					["recipeID"] = 39466
+					name = "Veiled Flame Spessarite [TBC] / Veiled Shadow Draenite [CATA+]",
+					recipeID = 39466
 				}),
 				{
-					["name"] = "Veiled Noble Topaz [TBC] / Veiled Nightseye [CATA+]",
-					["recipeID"] = 39470
+					name = "Veiled Noble Topaz [TBC] / Veiled Nightseye [CATA+]",
+					recipeID = 39470
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Veiled Pyrestone [TBC] / Veiled Shadowsong Amethyst [CATA+]",
-					["recipeID"] = 39737
+					name = "Veiled Pyrestone [TBC] / Veiled Shadowsong Amethyst [CATA+]",
+					recipeID = 39737
 				}),
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, {
-					["name"] = "Wicked Flame Spessarite [TBC] / Deadly Flame Spessarite [CATA+]",
-					["recipeID"] = 39467
+					name = "Wicked Flame Spessarite [TBC] / Deadly Flame Spessarite [CATA+]",
+					recipeID = 39467
 				}),
 				{
-					["name"] = "Wicked Noble Topaz [TBC] / Deadly Noble Topaz [CATA+]",
-					["recipeID"] = 39471
+					name = "Wicked Noble Topaz [TBC] / Deadly Noble Topaz [CATA+]",
+					recipeID = 39471
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Wicked Pyrestone [TBC] / Deadly Pyrestone [CATA+]",
-					["recipeID"] = 39738
+					name = "Wicked Pyrestone [TBC] / Deadly Pyrestone [CATA+]",
+					recipeID = 39738
 				}),
 				-- #endif
 			}
 		},
 		{
-			["name"] = "Purple Gems",
-			["categoryID"] = 860,
-			["groups"] = {
+			name = "Purple Gems",
+			categoryID = 860,
+			groups = {
 				-- #if BEFORE CATA
 				{
-					["name"] = "Balanced Nightseye",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39463
+					name = "Balanced Nightseye",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39463
 				},
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, {
-					["name"] = "Balanced Shadow Draenite",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39455
+					name = "Balanced Shadow Draenite",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39455
 				}),
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Balanced Shadowsong Amethyst",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39729
+					name = "Balanced Shadowsong Amethyst",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39729
 				}),
 				-- #endif
 				-- #if AFTER CATA
 				{
-					["name"] = "Glinting Nightseye [CATA+] / Glinting Noble Topaz [TBC]",
-					["recipeID"] = 31109
+					name = "Glinting Nightseye [CATA+] / Glinting Noble Topaz [TBC]",
+					recipeID = 31109
 				},
 				{
-					["name"] = "Glinting Shadow Draenite [CATA+] / Glinting Flame Spessarite [TBC]",
-					["recipeID"] = 28914
+					name = "Glinting Shadow Draenite [CATA+] / Glinting Flame Spessarite [TBC]",
+					recipeID = 28914
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Glinting Shadowsong Amethyst [CATA+] / Glinting Pyrestone [TBC]",
-					["recipeID"] = 39736
+					name = "Glinting Shadowsong Amethyst [CATA+] / Glinting Pyrestone [TBC]",
+					recipeID = 39736
 				}),
 				-- #endif
 				-- #if BEFORE CATA
 				{
-					["name"] = "Glowing Nightseye [TBC] / Timeless Nightseye [CATA+]",
-					["recipeID"] = 31104
+					name = "Glowing Nightseye [TBC] / Timeless Nightseye [CATA+]",
+					recipeID = 31104
 				},
 				{
-					["name"] = "Glowing Shadow Draenite [TBC] / Timeless Shadow Draenite [CATA+]",
-					["recipeID"] = 28925
+					name = "Glowing Shadow Draenite [TBC] / Timeless Shadow Draenite [CATA+]",
+					recipeID = 28925
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Glowing Shadowsong Amethyst [TBC] / Timeless Shadowsong Amethyst [CATA+]",
-					["recipeID"] = 39731
+					name = "Glowing Shadowsong Amethyst [TBC] / Timeless Shadowsong Amethyst [CATA+]",
+					recipeID = 39731
 				}),
 				{
-					["name"] = "Infused Nightseye",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39462
+					name = "Infused Nightseye",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39462
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Infused Shadowsong Amethyst",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39730
+					name = "Infused Shadowsong Amethyst",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39730
 				}),
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, {
-					["name"] = "Infused Shadow Draenite",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39458
+					name = "Infused Shadow Draenite",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39458
 				}),
 				-- #endif
 				{
-					["name"] = "Purified Jaggal Pearl",
-					["recipeID"] = 41420
+					name = "Purified Jaggal Pearl",
+					recipeID = 41420
 				},
 				-- #if AFTER CATA
 				{
-					["name"] = "Purified Nightseye [CATA+] / Dazzling Talasite [TBC]",
-					["recipeID"] = 31112
+					name = "Purified Nightseye [CATA+] / Dazzling Talasite [TBC]",
+					recipeID = 31112
 				},
 				{
-					["name"] = "Purified Shadow Draenite [CATA+] / Royal Shadow Draenite [TBC]",
-					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-					["recipeID"] = 28927
+					name = "Purified Shadow Draenite [CATA+] / Royal Shadow Draenite [TBC]",
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					recipeID = 28927
 				},
 				-- #endif
 				{
-					["name"] = "Purified Shadow Pearl",
-					["recipeID"] = 41429
+					name = "Purified Shadow Pearl",
+					recipeID = 41429
 				},
 				-- #if BEFORE CATA
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Purified Shadowsong Amethyst",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 48789
+					name = "Purified Shadowsong Amethyst",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 48789
 				}),
 				-- #endif
 				-- #if AFTER CATA
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Purified Shadowsong Amethyst [CATA+] / Dazzling Seaspray Emerald [TBC]",
-					["recipeID"] = 39741
+					name = "Purified Shadowsong Amethyst [CATA+] / Dazzling Seaspray Emerald [TBC]",
+					recipeID = 39741
 				}),
 				-- #endif
 				-- #if BEFORE CATA
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Regal Nightseye [TBC] / Regal Talasite [CATA+]",
-					["recipeID"] = 46803
+					name = "Regal Nightseye [TBC] / Regal Talasite [CATA+]",
+					recipeID = 46803
 				}),
 				{
-					["name"] = "Royal Nightseye",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 31105
+					name = "Royal Nightseye",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 31105
 				},
 				{
-					["name"] = "Royal Shadow Draenite [TBC] / Purified Shadow Draenite [CATA+]",
-					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-					["recipeID"] = 28927
+					name = "Royal Shadow Draenite [TBC] / Purified Shadow Draenite [CATA+]",
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					recipeID = 28927
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Royal Shadowsong Amethyst",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39732
+					name = "Royal Shadowsong Amethyst",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39732
 				}),
 				-- #endif
 				{
-					["name"] = "Shifting Nightseye",
-					["recipeID"] = 31103
+					name = "Shifting Nightseye",
+					recipeID = 31103
 				},
 				{
-					["name"] = "Shifting Shadow Draenite",
-					["recipeID"] = 28933
+					name = "Shifting Shadow Draenite",
+					recipeID = 28933
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Shifting Shadowsong Amethyst",
-					["recipeID"] = 39728
+					name = "Shifting Shadowsong Amethyst",
+					recipeID = 39728
 				}),
 				{
-					["name"] = "Sovereign Nightseye",
-					["recipeID"] = 31102
+					name = "Sovereign Nightseye",
+					recipeID = 31102
 				},
 				{
-					["name"] = "Sovereign Shadow Draenite",
-					["recipeID"] = 28936
+					name = "Sovereign Shadow Draenite",
+					recipeID = 28936
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Sovereign Shadowsong Amethyst",
-					["recipeID"] = 39727
+					name = "Sovereign Shadowsong Amethyst",
+					recipeID = 39727
 				}),
 				-- #if AFTER CATA
 				{
-					["name"] = "Timeless Nightseye [CATA+] / Glowing Nightseye [TBC]",
-					["recipeID"] = 31104
+					name = "Timeless Nightseye [CATA+] / Glowing Nightseye [TBC]",
+					recipeID = 31104
 				},
 				{
-					["name"] = "Timeless Shadow Draenite [CATA+] / Glowing Shadow Draenite [TBC]",
-					["recipeID"] = 28925
+					name = "Timeless Shadow Draenite [CATA+] / Glowing Shadow Draenite [TBC]",
+					recipeID = 28925
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Timeless Shadowsong Amethyst [CATA+] / Glowing Shadowsong Amethyst [TBC]",
-					["recipeID"] = 39731
+					name = "Timeless Shadowsong Amethyst [CATA+] / Glowing Shadowsong Amethyst [TBC]",
+					recipeID = 39731
 				}),
 				{
-					["name"] = "Veiled Nightseye [CATA+] / Veiled Noble Topaz [TBC]",
-					["recipeID"] = 39470
+					name = "Veiled Nightseye [CATA+] / Veiled Noble Topaz [TBC]",
+					recipeID = 39470
 				},
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, {
-					["name"] = "Veiled Shadow Draenite [CATA+] / Veiled Flame Spessarite [TBC]",
-					["recipeID"] = 39466
+					name = "Veiled Shadow Draenite [CATA+] / Veiled Flame Spessarite [TBC]",
+					recipeID = 39466
 				}),
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Veiled Shadowsong Amethyst [CATA+] / Veiled Pyrestone [TBC]",
-					["recipeID"] = 39737
+					name = "Veiled Shadowsong Amethyst [CATA+] / Veiled Pyrestone [TBC]",
+					recipeID = 39737
 				}),
 				-- #endif
 			}
 		},
 		{
-			["name"] = "Red Gems",
-			["categoryID"] = 861,
-			["groups"] = {
+			name = "Red Gems",
+			categoryID = 861,
+			groups = {
 				{
-					["name"] = "Bold Blood Garnet",
-					["recipeID"] = 28905
+					name = "Bold Blood Garnet",
+					recipeID = 28905
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Bold Crimson Spinel",
-					["recipeID"] = 39705
+					name = "Bold Crimson Spinel",
+					recipeID = 39705
 				}),
 				{
-					["name"] = "Bold Living Ruby",
-					["recipeID"] = 31084
+					name = "Bold Living Ruby",
+					recipeID = 31084
 				},
 				-- #if BEFORE CATA
 				{
-					["name"] = "Bright Blood Garnet [TBC] / Delicate Blood Garnet [CATA+]",
-					["recipeID"] = 34590
+					name = "Bright Blood Garnet [TBC] / Delicate Blood Garnet [CATA+]",
+					recipeID = 34590
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Bright Crimson Spinel",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39712
+					name = "Bright Crimson Spinel",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39712
 				}),
 				{
-					["name"] = "Bright Living Ruby",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 31089
+					name = "Bright Living Ruby",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 31089
 				},
 				-- #endif
 				-- #if AFTER CATA
 				{
-					["name"] = "Brilliant Blood Garnet [CATA+] / Teardrop Blood Garnet [TBC]",
-					["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-					["recipeID"] = 28903
+					name = "Brilliant Blood Garnet [CATA+] / Teardrop Blood Garnet [TBC]",
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					recipeID = 28903
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Brilliant Crimson Spinel [CATA+] / Runed Crimson Spinel [TBC]",
-					["recipeID"] = 39711
+					name = "Brilliant Crimson Spinel [CATA+] / Runed Crimson Spinel [TBC]",
+					recipeID = 39711
 				}),
 				{
-					["name"] = "Brilliant Living Ruby [CATA+] / Runed Living Ruby [TBC]",
-					["recipeID"] = 31088
+					name = "Brilliant Living Ruby [CATA+] / Runed Living Ruby [TBC]",
+					recipeID = 31088
 				},
 				-- #endif
 				{
-					["name"] = "Crimson Sun",
-					["recipeID"] = 42589
+					name = "Crimson Sun",
+					recipeID = 42589
 				},
 				-- #if AFTER CATA
 				{
-					["name"] = "Delicate Blood Garnet [CATA+] / Bright Blood Garnet [TBC]",
-					["recipeID"] = 34590
+					name = "Delicate Blood Garnet [CATA+] / Bright Blood Garnet [TBC]",
+					recipeID = 34590
 				},
 				-- #else
 				{
-					["name"] = "Delicate Blood Garnet [TBC] / Removed with Cata",
-					["recipeID"] = 28907
+					name = "Delicate Blood Garnet [TBC] / Removed with Cata",
+					recipeID = 28907
 				},
 				-- #endif
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Delicate Crimson Spinel",
-					["recipeID"] = 39706
+					name = "Delicate Crimson Spinel",
+					recipeID = 39706
 				}),
 				{
-					["name"] = "Delicate Living Ruby",
-					["recipeID"] = 31085
+					name = "Delicate Living Ruby",
+					recipeID = 31085
 				},
 				{
-					["name"] = "Don Julio's Heart",
-					["recipeID"] = 42558
+					name = "Don Julio's Heart",
+					recipeID = 42558
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Flashing Crimson Spinel",
-					["recipeID"] = 39714
+					name = "Flashing Crimson Spinel",
+					recipeID = 39714
 				}),
 				{
-					["name"] = "Flashing Living Ruby",
-					["recipeID"] = 31091
+					name = "Flashing Living Ruby",
+					recipeID = 31091
 				},
 				{
-					["name"] = "Kailee's Rose",
-					["recipeID"] = 42588
+					name = "Kailee's Rose",
+					recipeID = 42588
 				},
 				-- #if BEFORE CATA
 				{
-					["name"] = "Runed Blood Garnet",	-- NOTE: Actually removed from the game completely.
-					["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 28906
+					name = "Runed Blood Garnet",	-- NOTE: Actually removed from the game completely.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 28906
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Runed Crimson Spinel [TBC] / Brilliant Crimson Spinel [CATA+]",
-					["recipeID"] = 39711
+					name = "Runed Crimson Spinel [TBC] / Brilliant Crimson Spinel [CATA+]",
+					recipeID = 39711
 				}),
 				{
-					["name"] = "Runed Living Ruby [TBC] / Brilliant Living Ruby [CATA+]",
-					["recipeID"] = 31088
+					name = "Runed Living Ruby [TBC] / Brilliant Living Ruby [CATA+]",
+					recipeID = 31088
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Subtle Crimson Spinel [TBC] / Subtle Lionseye [CATA+]",
-					["recipeID"] = 39713
+					name = "Subtle Crimson Spinel [TBC] / Subtle Lionseye [CATA+]",
+					recipeID = 39713
 				}),
 				{
-					["name"] = "Subtle Living Ruby [TBC] / Subtle Dawnstone [CATA+]",
-					["recipeID"] = 31090
+					name = "Subtle Living Ruby [TBC] / Subtle Dawnstone [CATA+]",
+					recipeID = 31090
 				},
 				{
-					["name"] = "Teardrop Blood Garnet [TBC] / Brilliant Blood Garnet [CATA+]",
-					["recipeID"] = 28903
+					name = "Teardrop Blood Garnet [TBC] / Brilliant Blood Garnet [CATA+]",
+					recipeID = 28903
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Teardrop Crimson Spinel",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39710
+					name = "Teardrop Crimson Spinel",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39710
 				}),
 				{
-					["name"] = "Teardrop Living Ruby",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 31087
+					name = "Teardrop Living Ruby",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 31087
 				},
 				-- #endif
 			}
 		},
 		{
-			["name"] = "Yellow Gems",
-			["categoryID"] = 862,
-			["groups"] = {
+			name = "Yellow Gems",
+			categoryID = 862,
+			groups = {
 				{
-					["name"] = "Blood of Amber",
-					["recipeID"] = 42592
+					name = "Blood of Amber",
+					recipeID = 42592
 				},
 				-- #if BEFORE CATA
 				{
-					["name"] = "Brilliant Dawnstone",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 31096
+					name = "Brilliant Dawnstone",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 31096
 				},
 				{
-					["name"] = "Brilliant Golden Draenite",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 28938
+					name = "Brilliant Golden Draenite",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 28938
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Brilliant Lionseye",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39719
+					name = "Brilliant Lionseye",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39719
 				}),
 				-- #endif
 				{
-					["name"] = "Facet of Eternity",
-					["recipeID"] = 42593
+					name = "Facet of Eternity",
+					recipeID = 42593
 				},
 				-- #if BEFORE CATA
 				{
-					["name"] = "Gleaming Dawnstone",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 31099
+					name = "Gleaming Dawnstone",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 31099
 				},
 				{
-					["name"] = "Gleaming Golden Draenite [TBC] / Smooth Golden Draenite [CATA+]",
-					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-					["recipeID"] = 28944
+					name = "Gleaming Golden Draenite [TBC] / Smooth Golden Draenite [CATA+]",
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					recipeID = 28944
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Gleaming Lionseye",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39722
+					name = "Gleaming Lionseye",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39722
 				}),
 				{
-					["name"] = "Great Dawnstone",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39452
+					name = "Great Dawnstone",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39452
 				},
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, {
-					["name"] = "Great Golden Draenite",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39451
+					name = "Great Golden Draenite",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39451
 				}),
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Great Lionseye",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39725
+					name = "Great Lionseye",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39725
 				}),
 				-- #endif
 				{
-					["name"] = "Mystic Dawnstone",
-					["recipeID"] = 31101
+					name = "Mystic Dawnstone",
+					recipeID = 31101
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Mystic Lionseye",
-					["recipeID"] = 39724
+					name = "Mystic Lionseye",
+					recipeID = 39724
 				}),
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Quick Dawnstone",
-					["recipeID"] = 46403
+					name = "Quick Dawnstone",
+					recipeID = 46403
 				}),
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Quick Lionseye",
-					["recipeID"] = 47056
+					name = "Quick Lionseye",
+					recipeID = 47056
 				}),
 				-- #if BEFORE CATA
 				{
-					["name"] = "Rigid Dawnstone [TBC] / Rigid Star of Elune [CATA+]",
-					["recipeID"] = 31098
+					name = "Rigid Dawnstone [TBC] / Rigid Star of Elune [CATA+]",
+					recipeID = 31098
 				},
 				{
-					["name"] = "Rigid Golden Draenite [TBC] / Rigid Azure Moonstone [CATA+]",
-					["recipeID"] = 28948
+					name = "Rigid Golden Draenite [TBC] / Rigid Azure Moonstone [CATA+]",
+					recipeID = 28948
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Rigid Lionseye [TBC] / Rigid Empyrean Sapphire [CATA+]",
-					["recipeID"] = 39721
+					name = "Rigid Lionseye [TBC] / Rigid Empyrean Sapphire [CATA+]",
+					recipeID = 39721
 				}),
 				-- #endif
 				{
-					["name"] = "Smooth Dawnstone",
-					["recipeID"] = 31097
+					name = "Smooth Dawnstone",
+					recipeID = 31097
 				},
 				-- #if BEFORE CATA
 				{
-					["name"] = "Smooth Golden Draenite",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 34069
+					name = "Smooth Golden Draenite",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 34069
 				},
 				-- #endif
 				-- #if AFTER CATA
 				{
-					["name"] = "Smooth Golden Draenite [CATA+] / Gleaming Golden Draenite [TBC]",
-					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-					["recipeID"] = 28944
+					name = "Smooth Golden Draenite [CATA+] / Gleaming Golden Draenite [TBC]",
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					recipeID = 28944
 				},
 				-- #endif
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Smooth Lionseye",
-					["recipeID"] = 39720
+					name = "Smooth Lionseye",
+					recipeID = 39720
 				}),
 				{
-					["name"] = "Stone of Blades",
-					["recipeID"] = 42591
+					name = "Stone of Blades",
+					recipeID = 42591
 				},
 				-- #if AFTER CATA
 				{
-					["name"] = "Subtle Dawnstone [CATA+] / Subtle Living Ruby [TBC]",
-					["recipeID"] = 31090
+					name = "Subtle Dawnstone [CATA+] / Subtle Living Ruby [TBC]",
+					recipeID = 31090
 				},
 				{
-					["name"] = "Subtle Golden Draenite [CATA+] / Thick Golden Draenite [TBC]",
-					["recipeID"] = 28947
+					name = "Subtle Golden Draenite [CATA+] / Thick Golden Draenite [TBC]",
+					recipeID = 28947
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Subtle Lionseye [CATA+] / Subtle Crimson Spinel [TBC]",
-					["recipeID"] = 39713
+					name = "Subtle Lionseye [CATA+] / Subtle Crimson Spinel [TBC]",
+					recipeID = 39713
 				}),
 				-- #endif
 				-- #if BEFORE CATA
 				{
-					["name"] = "Thick Dawnstone",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 31100
+					name = "Thick Dawnstone",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 31100
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
-					["name"] = "Thick Lionseye",	-- NOTE: Actually removed from the game completely.
-					["timeline"] = { REMOVED_WITH_CATA },
-					["recipeID"] = 39723
+					name = "Thick Lionseye",	-- NOTE: Actually removed from the game completely.
+					timeline = { REMOVED_WITH_CATA },
+					recipeID = 39723
 				}),
 				{
-					["name"] = "Thick Golden Draenite [TBC] / Subtle Golden Draenite [CATA+]",
-					["recipeID"] = 28947
+					name = "Thick Golden Draenite [TBC] / Subtle Golden Draenite [CATA+]",
+					recipeID = 28947
 				},
 				-- #endif
 			}
 		},
 		{
-			["name"] = "Meta Gems",
-			["categoryID"] = 863,
-			["groups"] = {
+			name = "Meta Gems",
+			categoryID = 863,
+			groups = {
 				{
-					["name"] = "Bracing Earthstorm Diamond",
-					["recipeID"] = 32867
+					name = "Bracing Earthstorm Diamond",
+					recipeID = 32867
 				},
 				{
-					["name"] = "Brutal Earthstorm Diamond",
-					["recipeID"] = 32869
+					name = "Brutal Earthstorm Diamond",
+					recipeID = 32869
 				},
 				{
-					["name"] = "Chaotic Skyfire Diamond",
-					["recipeID"] = 44794
+					name = "Chaotic Skyfire Diamond",
+					recipeID = 44794
 				},
 				{
-					["name"] = "Destructive Skyfire Diamond",
-					["recipeID"] = 32871
-				},
-				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Ember Skyfire Diamond",
-					["recipeID"] = 46601
-				}),
-				{
-					["name"] = "Enigmatic Skyfire Diamond",
-					["recipeID"] = 32874
+					name = "Destructive Skyfire Diamond",
+					recipeID = 32871
 				},
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Eternal Earthstorm Diamond",
-					["recipeID"] = 46597
+					name = "Ember Skyfire Diamond",
+					recipeID = 46601
 				}),
 				{
-					["name"] = "Insightful Earthstorm Diamond",
-					["recipeID"] = 32870
+					name = "Enigmatic Skyfire Diamond",
+					recipeID = 32874
+				},
+				applyclassicphase(TBC_PHASE_FIVE, {
+					name = "Eternal Earthstorm Diamond",
+					recipeID = 46597
+				}),
+				{
+					name = "Insightful Earthstorm Diamond",
+					recipeID = 32870
 				},
 				{
-					["name"] = "Mystical Skyfire Diamond",
-					["recipeID"] = 32872
+					name = "Mystical Skyfire Diamond",
+					recipeID = 32872
 				},
 				{
-					["name"] = "Powerful Earthstorm Diamond",
-					["recipeID"] = 32866
+					name = "Powerful Earthstorm Diamond",
+					recipeID = 32866
 				},
 				{
-					["name"] = "Relentless Earthstorm Diamond",
-					["recipeID"] = 39961
+					name = "Relentless Earthstorm Diamond",
+					recipeID = 39961
 				},
 				{
-					["name"] = "Swift Skyfire Diamond",
-					["recipeID"] = 32873
+					name = "Swift Skyfire Diamond",
+					recipeID = 32873
 				},
 				{
-					["name"] = "Tenacious Earthstorm Diamond",
-					["recipeID"] = 32868
+					name = "Tenacious Earthstorm Diamond",
+					recipeID = 32868
 				},
 				{
-					["name"] = "Thundering Skyfire Diamond",
-					["recipeID"] = 39963
+					name = "Thundering Skyfire Diamond",
+					recipeID = 39963
 				}
 			}
 		},
 		{
-			["name"] = "Necklaces",
-			["categoryID"] = 864,
-			["groups"] = {
+			name = "Necklaces",
+			categoryID = 864,
+			groups = {
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Amulet of Flowing Life",
-					["recipeID"] = 46126
+					name = "Amulet of Flowing Life",
+					recipeID = 46126
 				}),
 				{
-					["name"] = "Braided Eternium Chain",
-					["recipeID"] = 31070
+					name = "Braided Eternium Chain",
+					recipeID = 31070
 				},
 				{
-					["name"] = "Chain of the Twilight Owl",
-					["recipeID"] = 31076
+					name = "Chain of the Twilight Owl",
+					recipeID = 31076
 				},
 				{
-					["name"] = "Embrace of the Dawn",
-					["recipeID"] = 31072
+					name = "Embrace of the Dawn",
+					recipeID = 31072
 				},
 				{
-					["name"] = "Eye of the Night",
-					["recipeID"] = 31071
+					name = "Eye of the Night",
+					recipeID = 31071
 				},
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Hard Khorium Choker",
-					["recipeID"] = 46127
+					name = "Hard Khorium Choker",
+					recipeID = 46127
 				}),
 				{
-					["name"] = "Living Ruby Pendant",
-					["recipeID"] = 31068
+					name = "Living Ruby Pendant",
+					recipeID = 31068
 				},
 				applyclassicphase(TBC_PHASE_TWO, {
-					["name"] = "Necklace of the Deep",
-					["recipeID"] = 40514
+					name = "Necklace of the Deep",
+					recipeID = 40514
 				}),
 				{
-					["name"] = "Pendant of Frozen Flame",
-					["recipeID"] = 31062
+					name = "Pendant of Frozen Flame",
+					recipeID = 31062
 				},
 				{
-					["name"] = "Pendant of Shadow's End",
-					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-					["recipeID"] = 31065
+					name = "Pendant of Shadow's End",
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					recipeID = 31065
 				},
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Pendant of Sunfire",
-					["recipeID"] = 46125
+					name = "Pendant of Sunfire",
+					recipeID = 46125
 				}),
 				{
-					["name"] = "Pendant of Thawing",
-					["recipeID"] = 31063
+					name = "Pendant of Thawing",
+					recipeID = 31063
 				},
 				{
-					["name"] = "Pendant of the Null Rune",
-					["recipeID"] = 31066
+					name = "Pendant of the Null Rune",
+					recipeID = 31066
 				},
 				{
-					["name"] = "Pendant of Withering",
-					["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-					["recipeID"] = 31064
+					name = "Pendant of Withering",
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					recipeID = 31064
 				},
 				{
-					["name"] = "Thick Adamantite Necklace",
-					["recipeID"] = 31051
+					name = "Thick Adamantite Necklace",
+					recipeID = 31051
 				},
 				{
-					["name"] = "Thick Felsteel Necklace",
-					["recipeID"] = 31067
+					name = "Thick Felsteel Necklace",
+					recipeID = 31067
 				}
 			}
 		},
 		{
-			["name"] = "Rings",
-			["categoryID"] = 865,
-			["groups"] = {
+			name = "Rings",
+			categoryID = 865,
+			groups = {
 				{
-					["name"] = "Arcane Khorium Band",
-					["recipeID"] = 31057
+					name = "Arcane Khorium Band",
+					recipeID = 31057
 				},
 				{
-					["name"] = "Azure Moonstone Ring",
-					["recipeID"] = 31050
+					name = "Azure Moonstone Ring",
+					recipeID = 31050
 				},
 				{
-					["name"] = "Band of Natural Fire",
-					["recipeID"] = 26916
+					name = "Band of Natural Fire",
+					recipeID = 26916
 				},
 				{
-					["name"] = "Blazing Eternium Band",
-					["recipeID"] = 31061
+					name = "Blazing Eternium Band",
+					recipeID = 31061
 				},
 				{
-					["name"] = "Brilliant Pearl Band",
-					["recipeID"] = 41414
+					name = "Brilliant Pearl Band",
+					recipeID = 41414
 				},
 				{
-					["name"] = "Delicate Eternium Ring",
-					["recipeID"] = 31060
+					name = "Delicate Eternium Ring",
+					recipeID = 31060
 				},
 				{
-					["name"] = "Fel Iron Blood Ring",
-					["recipeID"] = 31048
+					name = "Fel Iron Blood Ring",
+					recipeID = 31048
 				},
 				{
-					["name"] = "Golden Draenite Ring",
-					["recipeID"] = 31049
-				},
-				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Hard Khorium Band",
-					["recipeID"] = 46124
-				}),
-				{
-					["name"] = "Heavy Adamantite Ring",
-					["recipeID"] = 31052
-				},
-				{
-					["name"] = "Heavy Felsteel Ring",
-					["recipeID"] = 31058
-				},
-				{
-					["name"] = "Khorium Band of Frost",
-					["recipeID"] = 31054
-				},
-				{
-					["name"] = "Khorium Band of Leaves",
-					["recipeID"] = 31056
-				},
-				{
-					["name"] = "Khorium Band of Shadows",
-					["recipeID"] = 31053
-				},
-				{
-					["name"] = "Khorium Inferno Band",
-					["recipeID"] = 31055
+					name = "Golden Draenite Ring",
+					recipeID = 31049
 				},
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Loop of Forged Power",
-					["recipeID"] = 46122
+					name = "Hard Khorium Band",
+					recipeID = 46124
 				}),
 				{
-					["name"] = "Ring of Arcane Shielding",
-					["recipeID"] = 37855
+					name = "Heavy Adamantite Ring",
+					recipeID = 31052
+				},
+				{
+					name = "Heavy Felsteel Ring",
+					recipeID = 31058
+				},
+				{
+					name = "Khorium Band of Frost",
+					recipeID = 31054
+				},
+				{
+					name = "Khorium Band of Leaves",
+					recipeID = 31056
+				},
+				{
+					name = "Khorium Band of Shadows",
+					recipeID = 31053
+				},
+				{
+					name = "Khorium Inferno Band",
+					recipeID = 31055
 				},
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Ring of Flowing Life",
-					["recipeID"] = 46123
+					name = "Loop of Forged Power",
+					recipeID = 46122
 				}),
 				{
-					["name"] = "The Black Pearl",
-					["recipeID"] = 41415
+					name = "Ring of Arcane Shielding",
+					recipeID = 37855
+				},
+				applyclassicphase(TBC_PHASE_FIVE, {
+					name = "Ring of Flowing Life",
+					recipeID = 46123
+				}),
+				{
+					name = "The Black Pearl",
+					recipeID = 41415
 				},
 				{
-					["name"] = "The Frozen Eye",
-					["recipeID"] = 38503
+					name = "The Frozen Eye",
+					recipeID = 38503
 				},
 				{
-					["name"] = "The Natural Ward",
-					["recipeID"] = 38504
+					name = "The Natural Ward",
+					recipeID = 38504
 				}
 			}
 		},
 		{
-			["name"] = "Crowns",
-			["categoryID"] = 869,
-			["groups"] = {
+			name = "Crowns",
+			categoryID = 869,
+			groups = {
 				{
-					["name"] = "Circlet of Arcane Might",
-					["recipeID"] = 31078
+					name = "Circlet of Arcane Might",
+					recipeID = 31078
 				},
 				{
-					["name"] = "Coronet of Verdant Flame",
-					["recipeID"] = 31077
+					name = "Coronet of Verdant Flame",
+					recipeID = 31077
 				},
 				applyclassicphase(TBC_PHASE_TWO, {
-					["name"] = "Crown of the Sea Witch",
-					["recipeID"] = 41418
+					name = "Crown of the Sea Witch",
+					recipeID = 41418
 				}),
 			}
 		},
 		{
-			["name"] = "Trinkets",
-			["categoryID"] = 866,
-			["groups"] = {
+			name = "Trinkets",
+			categoryID = 866,
+			groups = {
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Figurine - Crimson Serpent",
-					["recipeID"] = 46777
+					name = "Figurine - Crimson Serpent",
+					recipeID = 46777
 				}),
 				{
-					["name"] = "Figurine - Dawnstone Crab",
-					["recipeID"] = 31080
+					name = "Figurine - Dawnstone Crab",
+					recipeID = 31080
 				},
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Figurine - Empyrean Tortoise",
-					["recipeID"] = 46775
+					name = "Figurine - Empyrean Tortoise",
+					recipeID = 46775
 				}),
 				{
-					["name"] = "Figurine - Felsteel Boar",
-					["recipeID"] = 31079
+					name = "Figurine - Felsteel Boar",
+					recipeID = 31079
 				},
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Figurine - Khorium Boar",
-					["recipeID"] = 46776
+					name = "Figurine - Khorium Boar",
+					recipeID = 46776
 				}),
 				{
-					["name"] = "Figurine - Living Ruby Serpent",
-					["recipeID"] = 31081
+					name = "Figurine - Living Ruby Serpent",
+					recipeID = 31081
 				},
 				{
-					["name"] = "Figurine - Nightseye Panther",
-					["recipeID"] = 31083
+					name = "Figurine - Nightseye Panther",
+					recipeID = 31083
 				},
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Figurine - Seaspray Albatross",
-					["recipeID"] = 46779
+					name = "Figurine - Seaspray Albatross",
+					recipeID = 46779
 				}),
 				applyclassicphase(TBC_PHASE_FIVE, {
-					["name"] = "Figurine - Shadowsong Panther",
-					["recipeID"] = 46778
+					name = "Figurine - Shadowsong Panther",
+					recipeID = 46778
 				}),
 				{
-					["name"] = "Figurine - Talasite Owl",
-					["recipeID"] = 31082
+					name = "Figurine - Talasite Owl",
+					recipeID = 31082
 				}
 			}
 		},
 		{
-			["name"] = "Prisms & Statues",
-			["categoryID"] = 867,
-			["groups"] = {
+			name = "Prisms & Statues",
+			categoryID = 867,
+			groups = {
 				{
-					["name"] = "Brilliant Glass",
-					["recipeID"] = 47280
+					name = "Brilliant Glass",
+					recipeID = 47280
 				},
 				applyclassicphase(WRATH_PHASE_ONE, {
-					["name"] = "Prismatic Black Diamond",
-					["timeline"] = { ADDED_3_1_0 },
-					["recipeID"] = 62941
+					name = "Prismatic Black Diamond",
+					timeline = { ADDED_3_1_0 },
+					recipeID = 62941
 				}),
 			}
 		}
 	}),
 	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, {
 		{
-			["name"] = "Blue Gems",
-			["categoryID"] = 846,
-			["groups"] = {
+			name = "Blue Gems",
+			categoryID = 846,
+			groups = {
 				-- #if BEFORE CATA
-				{ ["name"] = "Lustrous Dragon's Eye", ["recipeID"] = 56077, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Lustrous Chalcedony / Sparkling Chalcedony [CATA]", ["recipeID"] = 53941 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Lustrous Majestic Zircon", ["recipeID"] = 66500, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Lustrous Sky Sapphire / Sparkling Sky Sapphire [CATA]", ["recipeID"] = 53954 },
+				{ name = "Lustrous Dragon's Eye", recipeID = 56077, timeline = { DELETED_4_0_3 }, },
+				{ name = "Lustrous Chalcedony / Sparkling Chalcedony [CATA]", recipeID = 53941 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Lustrous Majestic Zircon", recipeID = 66500, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Lustrous Sky Sapphire / Sparkling Sky Sapphire [CATA]", recipeID = 53954 },
 				-- #endif
 				-- #if AFTER CATA
-				{ ["name"] = "Rigid Chalcedony [Blue] / Rigid Sun Crystal [WRATH - Yellow]", ["recipeID"] = 53854 },
-				{ ["name"] = "Rigid Dragon's Eye", ["recipeID"] = 56084 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Rigid Majestic Zircon [Blue] / Rigid King's Amber [WRATH - Yellow]", ["recipeID"] = 66501 }),
+				{ name = "Rigid Chalcedony [Blue] / Rigid Sun Crystal [WRATH - Yellow]", recipeID = 53854 },
+				{ name = "Rigid Dragon's Eye", recipeID = 56084 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Rigid Majestic Zircon [Blue] / Rigid King's Amber [WRATH - Yellow]", recipeID = 66501 }),
 				-- #endif
 				-- #if AFTER CATA
-				{ ["name"] = "Rigid Sky Sapphire [Blue] / Rigid Autumn's Glow [WRATH - Yellow]", ["recipeID"] = 53958 },
+				{ name = "Rigid Sky Sapphire [Blue] / Rigid Autumn's Glow [WRATH - Yellow]", recipeID = 53958 },
 				-- #endif
-				{ ["name"] = "Solid Chalcedony", ["recipeID"] = 53934 },
-				{ ["name"] = "Solid Dragon's Eye", ["recipeID"] = 56086 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Solid Majestic Zircon", ["recipeID"] = 66497 }),
-				{ ["name"] = "Solid Sky Sapphire", ["recipeID"] = 53952 },
+				{ name = "Solid Chalcedony", recipeID = 53934 },
+				{ name = "Solid Dragon's Eye", recipeID = 56086 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Solid Majestic Zircon", recipeID = 66497 }),
+				{ name = "Solid Sky Sapphire", recipeID = 53952 },
 				-- #if AFTER CATA
-				{ ["name"] = "Sparkling Chalcedony [CATA] / Lustrous Chalcedony", ["recipeID"] = 53941 },
+				{ name = "Sparkling Chalcedony [CATA] / Lustrous Chalcedony", recipeID = 53941 },
 				-- #endif
-				{ ["name"] = "Sparkling Chalcedony", ["recipeID"] = 53940, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Sparkling Dragon's Eye", ["recipeID"] = 56087 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Sparkling Majestic Zircon", ["recipeID"] = 66498 }),
+				{ name = "Sparkling Chalcedony", recipeID = 53940, timeline = { DELETED_4_0_3 }, },
+				{ name = "Sparkling Dragon's Eye", recipeID = 56087 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Sparkling Majestic Zircon", recipeID = 66498 }),
 				-- #if AFTER CATA
-				{ ["name"] = "Sparkling Sky Sapphire [CATA] / Lustrous Sky Sapphire", ["recipeID"] = 53954 },
+				{ name = "Sparkling Sky Sapphire [CATA] / Lustrous Sky Sapphire", recipeID = 53954 },
 				-- #endif
-				{ ["name"] = "Sparkling Sky Sapphire", ["recipeID"] = 53953, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Stormy Chalcedony", ["recipeID"] = 53943 },
-				{ ["name"] = "Stormy Dragon's Eye", ["recipeID"] = 56088 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Stormy Majestic Zircon", ["recipeID"] = 66499 }),
-				{ ["name"] = "Stormy Sky Sapphire", ["recipeID"] = 53955 }
+				{ name = "Sparkling Sky Sapphire", recipeID = 53953, timeline = { DELETED_4_0_3 }, },
+				{ name = "Stormy Chalcedony", recipeID = 53943 },
+				{ name = "Stormy Dragon's Eye", recipeID = 56088 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Stormy Majestic Zircon", recipeID = 66499 }),
+				{ name = "Stormy Sky Sapphire", recipeID = 53955 }
 			}
 		},
 		{
-			["name"] = "Green Gems",
-			["categoryID"] = 847,
-			["groups"] = {
-				{ ["name"] = "Dazzling Dark Jade", ["recipeID"] = 53926, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Dazzling Eye of Zul", ["recipeID"] = 66430, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Dazzling Forest Emerald", ["recipeID"] = 54007, ["timeline"] = { DELETED_4_0_3 }, },
+			name = "Green Gems",
+			categoryID = 847,
+			groups = {
+				{ name = "Dazzling Dark Jade", recipeID = 53926, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Dazzling Eye of Zul", recipeID = 66430, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Dazzling Forest Emerald", recipeID = 54007, timeline = { DELETED_4_0_3 }, },
 				-- #if BEFORE CATA
-				{ ["name"] = "Enduring Dark Jade / Regal Dark Jade [CATA]", ["recipeID"] = 53918 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Enduring Eye of Zul / Regal Eye of Zul [CATA+]", ["recipeID"] = 66338 }),
-				{ ["name"] = "Enduring Forest Emerald / Regal Forest Emerald [CATA]", ["recipeID"] = 53998 },
+				{ name = "Enduring Dark Jade / Regal Dark Jade [CATA]", recipeID = 53918 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Enduring Eye of Zul / Regal Eye of Zul [CATA+]", recipeID = 66338 }),
+				{ name = "Enduring Forest Emerald / Regal Forest Emerald [CATA]", recipeID = 53998 },
 				-- #endif
 				-- #if AFTER CATA
-				{ ["name"] = "Energized Dark Jade [CATA] / Intricate Dark Jade", ["recipeID"] = 53925 },
+				{ name = "Energized Dark Jade [CATA] / Intricate Dark Jade", recipeID = 53925 },
 				-- #endif
-				{ ["name"] = "Energized Dark Jade", ["recipeID"] = 53930, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Energized Eye of Zul", ["recipeID"] = 66442 }),
-				{ ["name"] = "Energized Forest Emerald", ["recipeID"] = 54011 },
-				{ ["name"] = "Forceful Dark Jade", ["recipeID"] = 53920 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Forceful Eye of Zul", ["recipeID"] = 66434 }),
-				{ ["name"] = "Forceful Forest Emerald", ["recipeID"] = 54001 },
+				{ name = "Energized Dark Jade", recipeID = 53930, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Energized Eye of Zul", recipeID = 66442 }),
+				{ name = "Energized Forest Emerald", recipeID = 54011 },
+				{ name = "Forceful Dark Jade", recipeID = 53920 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Forceful Eye of Zul", recipeID = 66434 }),
+				{ name = "Forceful Forest Emerald", recipeID = 54001 },
 				-- #if AFTER CATA
-				{ ["name"] = "Jagged Dark Jade [CATA - Green] / Puissant Shadow Crystal [Purple]", ["recipeID"] = 53870 },
+				{ name = "Jagged Dark Jade [CATA - Green] / Puissant Shadow Crystal [Purple]", recipeID = 53870 },
 				-- #endif
-				{ ["name"] = "Jagged Dark Jade", ["recipeID"] = 53916, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Jagged Eye of Zul", ["recipeID"] = 66431 }),
-				{ ["name"] = "Jagged Forest Emerald", ["recipeID"] = 53996 },
+				{ name = "Jagged Dark Jade", recipeID = 53916, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Jagged Eye of Zul", recipeID = 66431 }),
+				{ name = "Jagged Forest Emerald", recipeID = 53996 },
 				-- #if BEFORE CATA
-				{ ["name"] = "Intricate Dark Jade / Energized Dark Jade [CATA]", ["recipeID"] = 53925 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Intricate Eye of Zul", ["recipeID"] = 66440, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Intricate Forest Emerald", ["recipeID"] = 54006, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Lambent Dark Jade", ["recipeID"] = 53928, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Lambent Eye of Zul / Lightning Eye of Zul [CATA]", ["recipeID"] = 66439 }),
-				-- #endif
-				-- #if AFTER CATA
-				{ ["name"] = "Lightning Dark Jade [CATA] / Shining Dark Jade", ["recipeID"] = 53923 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Lightning Eye of Zul [CATA] / Lambent Eye of Zul", ["recipeID"] = 66439 }),
-				-- #endif
-				{ ["name"] = "Lightning Forest Emerald", ["recipeID"] = 54009 },
-				{ ["name"] = "Misty Dark Jade", ["recipeID"] = 53922 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Misty Eye of Zul", ["recipeID"] = 66435 }),
-				{ ["name"] = "Misty Forest Emerald", ["recipeID"] = 54003 },
-				-- #if AFTER CATA
-				{ ["name"] = "Nimble Dark Jade [CATA] / Vivid Dark Jade", ["recipeID"] = 53917 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Nimble Eye of Zul [CATA] / Vivid Eye of Zul", ["recipeID"] = 66429 }),
-				{ ["name"] = "Nimble Forest Emerald [CATA] / Vivid Forest Emerald", ["recipeID"] = 53997 },
-				-- #endif
-				{ ["name"] = "Opaque Dark Jade", ["recipeID"] = 53929, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Opaque Eye of Zul", ["recipeID"] = 66444, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Opaque Forest Emerald", ["recipeID"] = 54010, ["timeline"] = { DELETED_4_0_3 }, },
-				-- #if AFTER CATA
-				{ ["name"] = "Radiant Dark Jade [CATA] / Tense Dark Jade", ["recipeID"] = 53932 },
-				-- #endif
-				{ ["name"] = "Radiant Dark Jade", ["recipeID"] = 53931, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Radiant Eye of Zul", ["recipeID"] = 66441 }),
-				{ ["name"] = "Radiant Forest Emerald", ["recipeID"] = 54012 },
-				-- #if AFTER CATA
-				{ ["name"] = "Regal Dark Jade [CATA] / Enduring Dark Jade", ["recipeID"] = 53918 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Regal Eye of Zul [CATA+] / Enduring Eye of Zul", ["recipeID"] = 66338 }),
+				{ name = "Intricate Dark Jade / Energized Dark Jade [CATA]", recipeID = 53925 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Intricate Eye of Zul", recipeID = 66440, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Intricate Forest Emerald", recipeID = 54006, timeline = { DELETED_4_0_3 }, },
+				{ name = "Lambent Dark Jade", recipeID = 53928, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Lambent Eye of Zul / Lightning Eye of Zul [CATA]", recipeID = 66439 }),
 				-- #endif
 				-- #if AFTER CATA
-				{ ["name"] = "Regal Forest Emerald [CATA] / Enduring Forest Emerald", ["recipeID"] = 53998 },
+				{ name = "Lightning Dark Jade [CATA] / Shining Dark Jade", recipeID = 53923 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Lightning Eye of Zul [CATA] / Lambent Eye of Zul", recipeID = 66439 }),
 				-- #endif
-				-- #if BEFORE CATA
-				{ ["name"] = "Seer's Dark Jade [Green] / Purified Shadow Crystal [CATA - Purple]", ["recipeID"] = 53921 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Seer's Eye of Zul", ["recipeID"] = 66433, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Seer's Forest Emerald", ["recipeID"] = 54002, ["timeline"] = { DELETED_4_0_3 }, },
-				-- #endif
-				{ ["name"] = "Shattered Dark Jade", ["recipeID"] = 53933 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Shattered Eye of Zul", ["recipeID"] = 66443 }),
-				{ ["name"] = "Shattered Forest Emerald", ["recipeID"] = 54014 },
-				-- #if BEFORE CATA
-				{ ["name"] = "Shining Dark Jade / Lightning Dark Jade [CATA]", ["recipeID"] = 53923 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Shining Eye of Zul", ["recipeID"] = 66437, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Shining Forest Emerald", ["recipeID"] = 54004, ["timeline"] = { DELETED_4_0_3 }, },
-				-- #endif
-				{ ["name"] = "Steady Dark Jade", ["recipeID"] = 53919 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Steady Eye of Zul", ["recipeID"] = 66428 }),
-				{ ["name"] = "Steady Forest Emerald", ["recipeID"] = 54000 },
-				{ ["name"] = "Sundered Dark Jade", ["recipeID"] = 53927, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Sundered Forest Emerald", ["recipeID"] = 54008, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Sundered Eye of Zul", ["recipeID"] = 66436, ["timeline"] = { DELETED_4_0_3 }, }),
-				-- #if BEFORE CATA
-				{ ["name"] = "Tense Dark Jade / Radiant Dark Jade [CATA]", ["recipeID"] = 53932 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Tense Eye of Zul", ["recipeID"] = 66438, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Tense Forest Emerald", ["recipeID"] = 54013, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Timeless Dark Jade [Green] / Timeless Shadow Crystal [CATA - Purple]", ["recipeID"] = 53894 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Timeless Eye of Zul [Green] / Timeless Dreadstone [CATA - Purple]", ["recipeID"] = 66432 }),
-				{ ["name"] = "Timeless Forest Emerald", ["recipeID"] = 53995, ["timeline"] = { DELETED_4_0_3 }, },
-				-- #endif
-				{ ["name"] = "Turbid Dark Jade", ["recipeID"] = 53924, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Turbid Eye of Zul", ["recipeID"] = 66445 }),
-				{ ["name"] = "Turbid Forest Emerald", ["recipeID"] = 54005 },
-				-- #if BEFORE CATA
-				{ ["name"] = "Vivid Dark Jade / Nimble Dark Jade [CATA]", ["recipeID"] = 53917 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Vivid Eye of Zul / Nimble Eye of Zul [CATA]", ["recipeID"] = 66429 }),
-				{ ["name"] = "Vivid Forest Emerald / Nimble Forest Emerald [CATA]", ["recipeID"] = 53997 },
-				-- #endif
-			}
-		},
-		{
-			["name"] = "Orange Gems",
-			["categoryID"] = 848,
-			["groups"] = {
-				-- #if BEFORE CATA
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Accurate Ametrine [Orange] / Accurate Dreadstone [CATA - Purple]", ["recipeID"] = 66576 }),
-				{ ["name"] = "Accurate Huge Citrine [Orange] / Accurate Shadow Crystal [CATA - Purple]", ["recipeID"] = 53892 },
-				{ ["name"] = "Accurate Monarch Topaz [Orange] / Accurate Twilight Opal [CATA - Purple]", ["recipeID"] = 53994 },
-				-- #endif
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Champion's Ametrine", ["recipeID"] = 66579 }),
-				{ ["name"] = "Champion's Huge Citrine", ["recipeID"] = 53874 },
-				{ ["name"] = "Champion's Monarch Topaz", ["recipeID"] = 53977 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Deadly Ametrine", ["recipeID"] = 66568 }),
-				{ ["name"] = "Deadly Huge Citrine", ["recipeID"] = 53877 },
+				{ name = "Lightning Forest Emerald", recipeID = 54009 },
+				{ name = "Misty Dark Jade", recipeID = 53922 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Misty Eye of Zul", recipeID = 66435 }),
+				{ name = "Misty Forest Emerald", recipeID = 54003 },
 				-- #if AFTER CATA
-				{ ["name"] = "Deadly Monarch Topaz [CATA] / Wicked Monarch Topaz", ["recipeID"] = 53988 },
+				{ name = "Nimble Dark Jade [CATA] / Vivid Dark Jade", recipeID = 53917 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Nimble Eye of Zul [CATA] / Vivid Eye of Zul", recipeID = 66429 }),
+				{ name = "Nimble Forest Emerald [CATA] / Vivid Forest Emerald", recipeID = 53997 },
 				-- #endif
-				{ ["name"] = "Deadly Monarch Topaz", ["recipeID"] = 53979, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Deft Ametrine", ["recipeID"] = 66584 }),
-				{ ["name"] = "Deft Huge Citrine", ["recipeID"] = 53880 },
+				{ name = "Opaque Dark Jade", recipeID = 53929, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Opaque Eye of Zul", recipeID = 66444, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Opaque Forest Emerald", recipeID = 54010, timeline = { DELETED_4_0_3 }, },
 				-- #if AFTER CATA
-				{ ["name"] = "Deft Monarch Topaz [CATA] / Stark Monarch Topaz", ["recipeID"] = 53991 },
+				{ name = "Radiant Dark Jade [CATA] / Tense Dark Jade", recipeID = 53932 },
 				-- #endif
-				{ ["name"] = "Deft Monarch Topaz", ["recipeID"] = 53982, ["timeline"] = { DELETED_4_0_3 }, },
-				-- #if BEFORE CATA
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Durable Ametrine / Willful Ametrine [CATA]", ["recipeID"] = 66571 }),
-				{ ["name"] = "Durable Huge Citrine / Willful Huge Citrine [CATA]", ["recipeID"] = 53884 },
-				-- #endif
-				-- #if BEFORE CATA
-				{ ["name"] = "Durable Monarch Topaz / Willful Monarch Topaz [CATA]", ["recipeID"] = 53986 },
-				-- #endif
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Empowered Ametrine", ["recipeID"] = 66580, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Empowered Huge Citrine", ["recipeID"] = 53888, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Empowered Monarch Topaz", ["recipeID"] = 53990, ["timeline"] = { DELETED_4_0_3 }, },
-				-- #if BEFORE CATA
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Etched Ametrine [Orange] / Etched Dreadstone [CATA - Purple]", ["recipeID"] = 66572 }),
-				{ ["name"] = "Etched Huge Citrine [Orange] / Etched Shadow Crystal [CATA - Purple]", ["recipeID"] = 53873 },
-				{ ["name"] = "Etched Monarch Topaz [Orange] / Etched Twilight Opal [CATA - Purple]", ["recipeID"] = 53976 },
-				-- #endif
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Fierce Ametrine", ["recipeID"] = 66583 }),
-				{ ["name"] = "Fierce Huge Citrine", ["recipeID"] = 53876 },
-				{ ["name"] = "Fierce Monarch Topaz", ["recipeID"] = 54019 },
-				-- #if BEFORE CATA
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Glimmering Ametrine", ["recipeID"] = 66578, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Glimmering Huge Citrine / Stalwart Huge Citrine [CATA]", ["recipeID"] = 53891 },
-				{ ["name"] = "Glimmering Monarch Topaz / Stalwart Monarch Topaz [CATA]", ["recipeID"] = 53993 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Glinting Ametrine", ["recipeID"] = 66575, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Glinting Huge Citrine", ["recipeID"] = 53878, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Glinting Monarch Topaz [Orange] / Glinting Twilight Opal [CATA - Purple]", ["recipeID"] = 53980 },
-				-- #endif
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Inscribed Ametrine", ["recipeID"] = 66567 }),
-				{ ["name"] = "Inscribed Huge Citrine", ["recipeID"] = 53872 },
-				{ ["name"] = "Inscribed Monarch Topaz", ["recipeID"] = 53975 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Lucent Ametrine", ["recipeID"] = 66585 }),
-				{ ["name"] = "Lucent Huge Citrine", ["recipeID"] = 53879, },
-				{ ["name"] = "Lucent Monarch Topaz", ["recipeID"] = 53981 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Luminous Ametrine", ["recipeID"] = 66566, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Luminous Huge Citrine", ["recipeID"] = 53881, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Luminous Monarch Topaz", ["recipeID"] = 53983, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Potent Ametrine", ["recipeID"] = 66569 }),
-				{ ["name"] = "Potent Huge Citrine", ["recipeID"] = 53882 },
-				{ ["name"] = "Potent Monarch Topaz", ["recipeID"] = 53984 },
-				-- #if BEFORE CATA
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Pristine Ametrine [Orange] / Glinting Dreadstone [CATA - Purple]", ["recipeID"] = 66573 }),
-				{ ["name"] = "Pristine Huge Citrine", ["recipeID"] = 53887, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Pristine Monarch Topaz", ["recipeID"] = 53989, ["timeline"] = { DELETED_4_0_3 }, },
-				-- #endif
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Reckless Ametrine", ["recipeID"] = 66574 }),
-				{ ["name"] = "Reckless Huge Citrine", ["recipeID"] = 53885 },
-				{ ["name"] = "Reckless Monarch Topaz", ["recipeID"] = 53987 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Resolute Ametrine", ["recipeID"] = 66586 }),
-				{ ["name"] = "Resolute Huge Citrine", ["recipeID"] = 53893 },
-				{ ["name"] = "Resolute Monarch Topaz", ["recipeID"] = 54023 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Resplendent Ametrine", ["recipeID"] = 66582 }),
-				{ ["name"] = "Resplendent Huge Citrine", ["recipeID"] = 53875 },
-				{ ["name"] = "Resplendent Monarch Topaz", ["recipeID"] = 53978 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Stalwart Ametrine", ["recipeID"] = 66581 }),
-				{ ["name"] = "Stalwart Huge Citrine", ["recipeID"] = 53890, ["timeline"] = { DELETED_4_0_3 }, },
+				{ name = "Radiant Dark Jade", recipeID = 53931, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Radiant Eye of Zul", recipeID = 66441 }),
+				{ name = "Radiant Forest Emerald", recipeID = 54012 },
 				-- #if AFTER CATA
-				{ ["name"] = "Stalwart Huge Citrine [CATA] / Glimmering Huge Citrine", ["recipeID"] = 53891 },
-				{ ["name"] = "Stalwart Monarch Topaz [CATA] / Glimmering Monarch Topaz", ["recipeID"] = 53993 },
-				-- #endif
-				{ ["name"] = "Stalwart Monarch Topaz", ["recipeID"] = 53992, ["timeline"] = { DELETED_4_0_3 }, },
-				-- #if BEFORE CATA
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Stark Ametrine", ["recipeID"] = 66587, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Stark Huge Citrine", ["recipeID"] = 53889, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Stark Monarch Topaz / Deft Monarch Topaz [CATA]", ["recipeID"] = 53991 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Veiled Ametrine [Orange] / Veiled Dreadstone [CATA - Purple]", ["recipeID"] = 66570 }),
-				{ ["name"] = "Veiled Huge Citrine [Orange] / Veiled Shadow Crystal [CATA - Purple]", ["recipeID"] = 53883 },
-				{ ["name"] = "Veiled Monarch Topaz [Orange] / Veiled Twilight Opal [CATA - Purple]", ["recipeID"] = 53985 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Wicked Ametrine", ["recipeID"] = 66577, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Wicked Huge Citrine", ["recipeID"] = 53886, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Wicked Monarch Topaz / Deadly Monarch Topaz [CATA]", ["recipeID"] = 53988 },
+				{ name = "Regal Dark Jade [CATA] / Enduring Dark Jade", recipeID = 53918 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Regal Eye of Zul [CATA+] / Enduring Eye of Zul", recipeID = 66338 }),
 				-- #endif
 				-- #if AFTER CATA
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Willful Ametrine [CATA] / Durable Ametrine", ["recipeID"] = 66571 }),
-				{ ["name"] = "Willful Huge Citrine [CATA] / Durable Huge Citrine", ["recipeID"] = 53884 },
-				{ ["name"] = "Willful Monarch Topaz [CATA] / Durable Monarch Topaz", ["recipeID"] = 53986 },
+				{ name = "Regal Forest Emerald [CATA] / Enduring Forest Emerald", recipeID = 53998 },
+				-- #endif
+				-- #if BEFORE CATA
+				{ name = "Seer's Dark Jade [Green] / Purified Shadow Crystal [CATA - Purple]", recipeID = 53921 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Seer's Eye of Zul", recipeID = 66433, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Seer's Forest Emerald", recipeID = 54002, timeline = { DELETED_4_0_3 }, },
+				-- #endif
+				{ name = "Shattered Dark Jade", recipeID = 53933 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Shattered Eye of Zul", recipeID = 66443 }),
+				{ name = "Shattered Forest Emerald", recipeID = 54014 },
+				-- #if BEFORE CATA
+				{ name = "Shining Dark Jade / Lightning Dark Jade [CATA]", recipeID = 53923 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Shining Eye of Zul", recipeID = 66437, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Shining Forest Emerald", recipeID = 54004, timeline = { DELETED_4_0_3 }, },
+				-- #endif
+				{ name = "Steady Dark Jade", recipeID = 53919 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Steady Eye of Zul", recipeID = 66428 }),
+				{ name = "Steady Forest Emerald", recipeID = 54000 },
+				{ name = "Sundered Dark Jade", recipeID = 53927, timeline = { DELETED_4_0_3 }, },
+				{ name = "Sundered Forest Emerald", recipeID = 54008, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Sundered Eye of Zul", recipeID = 66436, timeline = { DELETED_4_0_3 }, }),
+				-- #if BEFORE CATA
+				{ name = "Tense Dark Jade / Radiant Dark Jade [CATA]", recipeID = 53932 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Tense Eye of Zul", recipeID = 66438, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Tense Forest Emerald", recipeID = 54013, timeline = { DELETED_4_0_3 }, },
+				{ name = "Timeless Dark Jade [Green] / Timeless Shadow Crystal [CATA - Purple]", recipeID = 53894 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Timeless Eye of Zul [Green] / Timeless Dreadstone [CATA - Purple]", recipeID = 66432 }),
+				{ name = "Timeless Forest Emerald", recipeID = 53995, timeline = { DELETED_4_0_3 }, },
+				-- #endif
+				{ name = "Turbid Dark Jade", recipeID = 53924, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Turbid Eye of Zul", recipeID = 66445 }),
+				{ name = "Turbid Forest Emerald", recipeID = 54005 },
+				-- #if BEFORE CATA
+				{ name = "Vivid Dark Jade / Nimble Dark Jade [CATA]", recipeID = 53917 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Vivid Eye of Zul / Nimble Eye of Zul [CATA]", recipeID = 66429 }),
+				{ name = "Vivid Forest Emerald / Nimble Forest Emerald [CATA]", recipeID = 53997 },
 				-- #endif
 			}
 		},
 		{
-			["name"] = "Purple Gems",
-			["categoryID"] = 849,
-			["groups"] = {
-				-- #if AFTER CATA
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Accurate Dreadstone [CATA - Purple] / Accurate Ametrine [Orange]", ["recipeID"] = 66576 }),
-				{ ["name"] = "Accurate Shadow Crystal [CATA - Purple] / Accurate Huge Citrine [Orange]", ["recipeID"] = 53892 },
-				{ ["name"] = "Accurate Twilight Opal [CATA - Purple] / Accurate Monarch Topaz [Orange]", ["recipeID"] = 53994 },
+			name = "Orange Gems",
+			categoryID = 848,
+			groups = {
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Accurate Ametrine [Orange] / Accurate Dreadstone [CATA - Purple]", recipeID = 66576 }),
+				{ name = "Accurate Huge Citrine [Orange] / Accurate Shadow Crystal [CATA - Purple]", recipeID = 53892 },
+				{ name = "Accurate Monarch Topaz [Orange] / Accurate Twilight Opal [CATA - Purple]", recipeID = 53994 },
 				-- #endif
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Balanced Dreadstone", ["recipeID"] = 66553, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Balanced Shadow Crystal", ["recipeID"] = 53866, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Balanced Twilight Opal", ["recipeID"] = 53969, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Defender's Dreadstone", ["recipeID"] = 66560 }),
-				{ ["name"] = "Defender's Shadow Crystal", ["recipeID"] = 53869 },
-				{ ["name"] = "Defender's Twilight Opal", ["recipeID"] = 53972 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Champion's Ametrine", recipeID = 66579 }),
+				{ name = "Champion's Huge Citrine", recipeID = 53874 },
+				{ name = "Champion's Monarch Topaz", recipeID = 53977 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Deadly Ametrine", recipeID = 66568 }),
+				{ name = "Deadly Huge Citrine", recipeID = 53877 },
 				-- #if AFTER CATA
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Etched Dreadstone [CATA - Purple] / Etched Ametrine [Orange]", ["recipeID"] = 66572 }),
-				{ ["name"] = "Etched Shadow Crystal [CATA - Purple] / Etched Huge Citrine [Orange]", ["recipeID"] = 53873 },
-				{ ["name"] = "Etched Twilight Opal [CATA - Purple] / Etched Monarch Topaz [Orange]", ["recipeID"] = 53976 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Glinting Dreadstone [CATA - Purple] / Pristine Ametrine [Orange]", ["recipeID"] = 66573 }),
-				{ ["name"] = "Glinting Shadow Crystal [CATA] / Tenuous Shadow Crystal", ["recipeID"] = 53861 },
-				{ ["name"] = "Glinting Twilight Opal [CATA - Purple] / Glinting Monarch Topaz [Orange]", ["recipeID"] = 53980 },
+				{ name = "Deadly Monarch Topaz [CATA] / Wicked Monarch Topaz", recipeID = 53988 },
+				-- #endif
+				{ name = "Deadly Monarch Topaz", recipeID = 53979, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Deft Ametrine", recipeID = 66584 }),
+				{ name = "Deft Huge Citrine", recipeID = 53880 },
+				-- #if AFTER CATA
+				{ name = "Deft Monarch Topaz [CATA] / Stark Monarch Topaz", recipeID = 53991 },
+				-- #endif
+				{ name = "Deft Monarch Topaz", recipeID = 53982, timeline = { DELETED_4_0_3 }, },
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Durable Ametrine / Willful Ametrine [CATA]", recipeID = 66571 }),
+				{ name = "Durable Huge Citrine / Willful Huge Citrine [CATA]", recipeID = 53884 },
 				-- #endif
 				-- #if BEFORE CATA
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Glowing Dreadstone", ["recipeID"] = 66555, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Glowing Shadow Crystal", ["recipeID"] = 53862, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Glowing Twilight Opal / Timeless Twilight Opal [CATA]", ["recipeID"] = 53965 },
+				{ name = "Durable Monarch Topaz / Willful Monarch Topaz [CATA]", recipeID = 53986 },
 				-- #endif
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Guardian's Dreadstone", ["recipeID"] = 66561 }),
-				{ ["name"] = "Guardian's Shadow Crystal", ["recipeID"] = 53871 },
-				{ ["name"] = "Guardian's Twilight Opal", ["recipeID"] = 53974 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Infused Dreadstone", ["recipeID"] = 66564, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Infused Shadow Crystal", ["recipeID"] = 53867, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Infused Twilight Opal", ["recipeID"] = 53970, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Mysterious Dreadstone", ["recipeID"] = 66562 }),
-				{ ["name"] = "Mysterious Shadow Crystal", ["recipeID"] = 53865 },
-				{ ["name"] = "Mysterious Twilight Opal", ["recipeID"] = 53968 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Puissant Dreadstone", ["recipeID"] = 66563, ["timeline"] = { DELETED_4_0_3 }, }),
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Empowered Ametrine", recipeID = 66580, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Empowered Huge Citrine", recipeID = 53888, timeline = { DELETED_4_0_3 }, },
+				{ name = "Empowered Monarch Topaz", recipeID = 53990, timeline = { DELETED_4_0_3 }, },
 				-- #if BEFORE CATA
-				{ ["name"] = "Puissant Shadow Crystal [Purple] / Jagged Dark Jade [CATA - Green]", ["recipeID"] = 53870 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Etched Ametrine [Orange] / Etched Dreadstone [CATA - Purple]", recipeID = 66572 }),
+				{ name = "Etched Huge Citrine [Orange] / Etched Shadow Crystal [CATA - Purple]", recipeID = 53873 },
+				{ name = "Etched Monarch Topaz [Orange] / Etched Twilight Opal [CATA - Purple]", recipeID = 53976 },
 				-- #endif
-				{ ["name"] = "Puissant Twilight Opal", ["recipeID"] = 53973, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Purified Dreadstone", ["recipeID"] = 66556 }),
-				-- #if AFTER CATA
-				{ ["name"] = "Purified Shadow Crystal [CATA - Purple] / Seer's Dark Jade [Green]", ["recipeID"] = 53921 },
-				-- #endif
-				{ ["name"] = "Purified Shadow Crystal", ["recipeID"] = 53863, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Purified Twilight Opal", ["recipeID"] = 53966 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Regal Dreadstone", ["recipeID"] = 66559, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Regal Shadow Crystal", ["recipeID"] = 53868, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Regal Twilight Opal", ["recipeID"] = 53971, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Royal Dreadstone", ["recipeID"] = 66558, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Royal Shadow Crystal", ["recipeID"] = 53864, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Royal Twilight Opal", ["recipeID"] = 53967, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Shifting Dreadstone", ["recipeID"] = 66557 }),
-				{ ["name"] = "Shifting Shadow Crystal", ["recipeID"] = 53860 },
-				{ ["name"] = "Shifting Twilight Opal", ["recipeID"] = 53963 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Sovereign Dreadstone", ["recipeID"] = 66554 }),
-				{ ["name"] = "Sovereign Shadow Crystal", ["recipeID"] = 53859 },
-				{ ["name"] = "Sovereign Twilight Opal", ["recipeID"] = 53962 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Fierce Ametrine", recipeID = 66583 }),
+				{ name = "Fierce Huge Citrine", recipeID = 53876 },
+				{ name = "Fierce Monarch Topaz", recipeID = 54019 },
 				-- #if BEFORE CATA
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Tenuous Dreadstone", ["recipeID"] = 66565, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Tenuous Shadow Crystal / Glinting Shadow Crystal [CATA]", ["recipeID"] = 53861 },
-				{ ["name"] = "Tenuous Twilight Opal", ["recipeID"] = 53964, ["timeline"] = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Glimmering Ametrine", recipeID = 66578, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Glimmering Huge Citrine / Stalwart Huge Citrine [CATA]", recipeID = 53891 },
+				{ name = "Glimmering Monarch Topaz / Stalwart Monarch Topaz [CATA]", recipeID = 53993 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Glinting Ametrine", recipeID = 66575, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Glinting Huge Citrine", recipeID = 53878, timeline = { DELETED_4_0_3 }, },
+				{ name = "Glinting Monarch Topaz [Orange] / Glinting Twilight Opal [CATA - Purple]", recipeID = 53980 },
+				-- #endif
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Inscribed Ametrine", recipeID = 66567 }),
+				{ name = "Inscribed Huge Citrine", recipeID = 53872 },
+				{ name = "Inscribed Monarch Topaz", recipeID = 53975 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Lucent Ametrine", recipeID = 66585 }),
+				{ name = "Lucent Huge Citrine", recipeID = 53879, },
+				{ name = "Lucent Monarch Topaz", recipeID = 53981 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Luminous Ametrine", recipeID = 66566, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Luminous Huge Citrine", recipeID = 53881, timeline = { DELETED_4_0_3 }, },
+				{ name = "Luminous Monarch Topaz", recipeID = 53983, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Potent Ametrine", recipeID = 66569 }),
+				{ name = "Potent Huge Citrine", recipeID = 53882 },
+				{ name = "Potent Monarch Topaz", recipeID = 53984 },
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Pristine Ametrine [Orange] / Glinting Dreadstone [CATA - Purple]", recipeID = 66573 }),
+				{ name = "Pristine Huge Citrine", recipeID = 53887, timeline = { DELETED_4_0_3 }, },
+				{ name = "Pristine Monarch Topaz", recipeID = 53989, timeline = { DELETED_4_0_3 }, },
+				-- #endif
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Reckless Ametrine", recipeID = 66574 }),
+				{ name = "Reckless Huge Citrine", recipeID = 53885 },
+				{ name = "Reckless Monarch Topaz", recipeID = 53987 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Resolute Ametrine", recipeID = 66586 }),
+				{ name = "Resolute Huge Citrine", recipeID = 53893 },
+				{ name = "Resolute Monarch Topaz", recipeID = 54023 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Resplendent Ametrine", recipeID = 66582 }),
+				{ name = "Resplendent Huge Citrine", recipeID = 53875 },
+				{ name = "Resplendent Monarch Topaz", recipeID = 53978 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Stalwart Ametrine", recipeID = 66581 }),
+				{ name = "Stalwart Huge Citrine", recipeID = 53890, timeline = { DELETED_4_0_3 }, },
+				-- #if AFTER CATA
+				{ name = "Stalwart Huge Citrine [CATA] / Glimmering Huge Citrine", recipeID = 53891 },
+				{ name = "Stalwart Monarch Topaz [CATA] / Glimmering Monarch Topaz", recipeID = 53993 },
+				-- #endif
+				{ name = "Stalwart Monarch Topaz", recipeID = 53992, timeline = { DELETED_4_0_3 }, },
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Stark Ametrine", recipeID = 66587, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Stark Huge Citrine", recipeID = 53889, timeline = { DELETED_4_0_3 }, },
+				{ name = "Stark Monarch Topaz / Deft Monarch Topaz [CATA]", recipeID = 53991 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Veiled Ametrine [Orange] / Veiled Dreadstone [CATA - Purple]", recipeID = 66570 }),
+				{ name = "Veiled Huge Citrine [Orange] / Veiled Shadow Crystal [CATA - Purple]", recipeID = 53883 },
+				{ name = "Veiled Monarch Topaz [Orange] / Veiled Twilight Opal [CATA - Purple]", recipeID = 53985 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Wicked Ametrine", recipeID = 66577, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Wicked Huge Citrine", recipeID = 53886, timeline = { DELETED_4_0_3 }, },
+				{ name = "Wicked Monarch Topaz / Deadly Monarch Topaz [CATA]", recipeID = 53988 },
 				-- #endif
 				-- #if AFTER CATA
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Timeless Dreadstone [CATA - Purple] / Timeless Eye of Zul [Green]", ["recipeID"] = 66432 }),
-				{ ["name"] = "Timeless Shadow Crystal [CATA - Purple] / Timeless Dark Jade [Green]", ["recipeID"] = 53894 },
-				{ ["name"] = "Timeless Twilight Opal [CATA] / Glowing Twilight Opal", ["recipeID"] = 53965 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Veiled Dreadstone [CATA - Purple] / Veiled Ametrine [Orange]", ["recipeID"] = 66570 }),
-				{ ["name"] = "Veiled Shadow Crystal [CATA - Purple] / Veiled Huge Citrine [Orange]", ["recipeID"] = 53883 },
-				{ ["name"] = "Veiled Twilight Opal [CATA - Purple] / Veiled Monarch Topaz [Orange]", ["recipeID"] = 53985 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Willful Ametrine [CATA] / Durable Ametrine", recipeID = 66571 }),
+				{ name = "Willful Huge Citrine [CATA] / Durable Huge Citrine", recipeID = 53884 },
+				{ name = "Willful Monarch Topaz [CATA] / Durable Monarch Topaz", recipeID = 53986 },
 				-- #endif
 			}
 		},
 		{
-			["name"] = "Red Gems",
-			["categoryID"] = 850,
-			["groups"] = {
-				{ ["name"] = "Bold Bloodstone", ["recipeID"] = 53831 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Bold Cardinal Ruby", ["recipeID"] = 66447 }),
-				{ ["name"] = "Bold Dragon's Eye", ["recipeID"] = 56049 },
-				{ ["name"] = "Bold Scarlet Ruby", ["recipeID"] = 53830 },
-				{ ["name"] = "Bright Bloodstone", ["recipeID"] = 53835, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Bright Cardinal Ruby", ["recipeID"] = 66449, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Bright Dragon's Eye", ["recipeID"] = 56054, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Bright Scarlet Ruby", ["recipeID"] = 53947, ["timeline"] = { DELETED_4_0_3 }, },
+			name = "Purple Gems",
+			categoryID = 849,
+			groups = {
 				-- #if AFTER CATA
-				{ ["name"] = "Brilliant Bloodstone [CATA - Red] / Brilliant Sun Crystal [Yellow]", ["recipeID"] = 53852 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Brilliant Cardinal Ruby [CATA] / Runed Cardinal Ruby", ["recipeID"] = 66446 }),
-				{ ["name"] = "Brilliant Dragon's Eye [CATA] / Runed Dragon's Eye", ["recipeID"] = 56053 },
-				{ ["name"] = "Brilliant Scarlet Ruby [CATA] / Runed Scarlet Ruby", ["recipeID"] = 53946 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Accurate Dreadstone [CATA - Purple] / Accurate Ametrine [Orange]", recipeID = 66576 }),
+				{ name = "Accurate Shadow Crystal [CATA - Purple] / Accurate Huge Citrine [Orange]", recipeID = 53892 },
+				{ name = "Accurate Twilight Opal [CATA - Purple] / Accurate Monarch Topaz [Orange]", recipeID = 53994 },
 				-- #endif
-				{ ["name"] = "Delicate Bloodstone", ["recipeID"] = 53832 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Delicate Cardinal Ruby", ["recipeID"] = 66448 }),
-				{ ["name"] = "Delicate Dragon's Eye", ["recipeID"] = 56052 },
-				{ ["name"] = "Delicate Scarlet Ruby", ["recipeID"] = 53945 },
-				-- #if BEFORE CATA
-				{ ["name"] = "Fractured Bloodstone [Red] / Smooth Sun Crystal [CATA - Yellow]", ["recipeID"] = 53845 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Balanced Dreadstone", recipeID = 66553, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Balanced Shadow Crystal", recipeID = 53866, timeline = { DELETED_4_0_3 }, },
+				{ name = "Balanced Twilight Opal", recipeID = 53969, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Defender's Dreadstone", recipeID = 66560 }),
+				{ name = "Defender's Shadow Crystal", recipeID = 53869 },
+				{ name = "Defender's Twilight Opal", recipeID = 53972 },
+				-- #if AFTER CATA
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Etched Dreadstone [CATA - Purple] / Etched Ametrine [Orange]", recipeID = 66572 }),
+				{ name = "Etched Shadow Crystal [CATA - Purple] / Etched Huge Citrine [Orange]", recipeID = 53873 },
+				{ name = "Etched Twilight Opal [CATA - Purple] / Etched Monarch Topaz [Orange]", recipeID = 53976 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Glinting Dreadstone [CATA - Purple] / Pristine Ametrine [Orange]", recipeID = 66573 }),
+				{ name = "Glinting Shadow Crystal [CATA] / Tenuous Shadow Crystal", recipeID = 53861 },
+				{ name = "Glinting Twilight Opal [CATA - Purple] / Glinting Monarch Topaz [Orange]", recipeID = 53980 },
 				-- #endif
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Fractured Cardinal Ruby", ["recipeID"] = 66451, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Fractured Dragon's Eye", ["recipeID"] = 56076, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Fractured Scarlet Ruby", ["recipeID"] = 53950, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Flashing Bloodstone", ["recipeID"] = 53844 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Flashing Cardinal Ruby", ["recipeID"] = 66453 }),
-				{ ["name"] = "Flashing Dragon's Eye", ["recipeID"] = 56056 },
-				{ ["name"] = "Flashing Scarlet Ruby", ["recipeID"] = 53949 },
-				{ ["name"] = "Precise Bloodstone", ["recipeID"] = 54017 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Precise Cardinal Ruby", ["recipeID"] = 66450 }),
-				{ ["name"] = "Precise Dragon's Eye", ["recipeID"] = 56081 },
-				{ ["name"] = "Precise Scarlet Ruby", ["recipeID"] = 53951 },
 				-- #if BEFORE CATA
-				{ ["name"] = "Runed Bloodstone", ["recipeID"] = 53834, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Runed Cardinal Ruby / Brilliant Cardinal Ruby [CATA]", ["recipeID"] = 66446 }),
-				{ ["name"] = "Runed Dragon's Eye / Brilliant Dragon's Eye [CATA]", ["recipeID"] = 56053 },
-				{ ["name"] = "Runed Scarlet Ruby / Brilliant Scarlet Ruby [CATA]", ["recipeID"] = 53946 },
-				{ ["name"] = "Subtle Bloodstone [Red] / Subtle Sun Crystal [CATA - Yellow]", ["recipeID"] = 53843 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Subtle Cardinal Ruby [Red] / Subtle King's Amber [CATA - Yellow]", ["recipeID"] = 66452 }),
-				{ ["name"] = "Subtle Dragon's Eye [Red] / Subtle Dragon's Eye [CATA - Yellow]", ["recipeID"] = 56055 },
-				{ ["name"] = "Subtle Scarlet Ruby [Red]/ Subtle Autumn's Glow [CATA - Yellow]", ["recipeID"] = 53948 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Glowing Dreadstone", recipeID = 66555, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Glowing Shadow Crystal", recipeID = 53862, timeline = { DELETED_4_0_3 }, },
+				{ name = "Glowing Twilight Opal / Timeless Twilight Opal [CATA]", recipeID = 53965 },
+				-- #endif
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Guardian's Dreadstone", recipeID = 66561 }),
+				{ name = "Guardian's Shadow Crystal", recipeID = 53871 },
+				{ name = "Guardian's Twilight Opal", recipeID = 53974 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Infused Dreadstone", recipeID = 66564, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Infused Shadow Crystal", recipeID = 53867, timeline = { DELETED_4_0_3 }, },
+				{ name = "Infused Twilight Opal", recipeID = 53970, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Mysterious Dreadstone", recipeID = 66562 }),
+				{ name = "Mysterious Shadow Crystal", recipeID = 53865 },
+				{ name = "Mysterious Twilight Opal", recipeID = 53968 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Puissant Dreadstone", recipeID = 66563, timeline = { DELETED_4_0_3 }, }),
+				-- #if BEFORE CATA
+				{ name = "Puissant Shadow Crystal [Purple] / Jagged Dark Jade [CATA - Green]", recipeID = 53870 },
+				-- #endif
+				{ name = "Puissant Twilight Opal", recipeID = 53973, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Purified Dreadstone", recipeID = 66556 }),
+				-- #if AFTER CATA
+				{ name = "Purified Shadow Crystal [CATA - Purple] / Seer's Dark Jade [Green]", recipeID = 53921 },
+				-- #endif
+				{ name = "Purified Shadow Crystal", recipeID = 53863, timeline = { DELETED_4_0_3 }, },
+				{ name = "Purified Twilight Opal", recipeID = 53966 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Regal Dreadstone", recipeID = 66559, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Regal Shadow Crystal", recipeID = 53868, timeline = { DELETED_4_0_3 }, },
+				{ name = "Regal Twilight Opal", recipeID = 53971, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Royal Dreadstone", recipeID = 66558, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Royal Shadow Crystal", recipeID = 53864, timeline = { DELETED_4_0_3 }, },
+				{ name = "Royal Twilight Opal", recipeID = 53967, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Shifting Dreadstone", recipeID = 66557 }),
+				{ name = "Shifting Shadow Crystal", recipeID = 53860 },
+				{ name = "Shifting Twilight Opal", recipeID = 53963 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Sovereign Dreadstone", recipeID = 66554 }),
+				{ name = "Sovereign Shadow Crystal", recipeID = 53859 },
+				{ name = "Sovereign Twilight Opal", recipeID = 53962 },
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Tenuous Dreadstone", recipeID = 66565, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Tenuous Shadow Crystal / Glinting Shadow Crystal [CATA]", recipeID = 53861 },
+				{ name = "Tenuous Twilight Opal", recipeID = 53964, timeline = { DELETED_4_0_3 }, },
+				-- #endif
+				-- #if AFTER CATA
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Timeless Dreadstone [CATA - Purple] / Timeless Eye of Zul [Green]", recipeID = 66432 }),
+				{ name = "Timeless Shadow Crystal [CATA - Purple] / Timeless Dark Jade [Green]", recipeID = 53894 },
+				{ name = "Timeless Twilight Opal [CATA] / Glowing Twilight Opal", recipeID = 53965 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Veiled Dreadstone [CATA - Purple] / Veiled Ametrine [Orange]", recipeID = 66570 }),
+				{ name = "Veiled Shadow Crystal [CATA - Purple] / Veiled Huge Citrine [Orange]", recipeID = 53883 },
+				{ name = "Veiled Twilight Opal [CATA - Purple] / Veiled Monarch Topaz [Orange]", recipeID = 53985 },
 				-- #endif
 			}
 		},
 		{
-			["name"] = "Yellow Gems",
-			["categoryID"] = 851,
-			["groups"] = {
-				-- #if BEFORE CATA
-				{ ["name"] = "Brilliant Autumn's Glow", ["recipeID"] = 53956, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Brilliant Dragon's Eye", ["recipeID"] = 56074, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Brilliant Sun Crystal [Yellow] / Brilliant Bloodstone [CATA - Red]", ["recipeID"] = 53852 },
-				{ ["name"] = "Brilliant Sun Crystal [Yellow]", ["recipeID"] = 53852, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Brilliant King's Amber", ["recipeID"] = 66503, ["timeline"] = { DELETED_4_0_3 }, }),
-				-- #endif
-				{ ["name"] = "Mystic Autumn's Glow", ["recipeID"] = 53960 },
-				{ ["name"] = "Mystic Dragon's Eye", ["recipeID"] = 56079 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Mystic King's Amber", ["recipeID"] = 66505 }),
-				{ ["name"] = "Mystic Sun Crystal", ["recipeID"] = 53857 },
-				{ ["name"] = "Quick Autumn's Glow", ["recipeID"] = 53961 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Quick Dragon's Eye", ["recipeID"] = 56083 }),
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Quick King's Amber", ["recipeID"] = 66506 }),
-				{ ["name"] = "Quick Sun Crystal", ["recipeID"] = 53856 },
-				-- #if BEFORE CATA
-				{ ["name"] = "Rigid Autumn's Glow [WRATH - Yellow] / Rigid Sky Sapphire [Blue]", ["recipeID"] = 53958 },
-				{ ["name"] = "Rigid Dragon's Eye", ["recipeID"] = 56084 },
-				-- #endif
-				-- #if BEFORE CATA
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Rigid King's Amber [WRATH - Yellow] / Rigid Majestic Zircon [Blue]", ["recipeID"] = 66501 }),
-				-- #endif
-				-- #if BEFORE CATA
-				{ ["name"] = "Rigid Sun Crystal [WRATH - Yellow] / Rigid Chalcedony [Blue]", ["recipeID"] = 53854 },
-				-- #endif
-				{ ["name"] = "Smooth Autumn's Glow", ["recipeID"] = 53957 },
-				{ ["name"] = "Smooth Dragon's Eye", ["recipeID"] = 56085 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Smooth King's Amber", ["recipeID"] = 66502 }),
-				{ ["name"] = "Smooth Sun Crystal [Yellow]", ["recipeID"] = 53853, ["timeline"] = { DELETED_4_0_3 }, },
+			name = "Red Gems",
+			categoryID = 850,
+			groups = {
+				{ name = "Bold Bloodstone", recipeID = 53831 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Bold Cardinal Ruby", recipeID = 66447 }),
+				{ name = "Bold Dragon's Eye", recipeID = 56049 },
+				{ name = "Bold Scarlet Ruby", recipeID = 53830 },
+				{ name = "Bright Bloodstone", recipeID = 53835, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Bright Cardinal Ruby", recipeID = 66449, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Bright Dragon's Eye", recipeID = 56054, timeline = { DELETED_4_0_3 }, },
+				{ name = "Bright Scarlet Ruby", recipeID = 53947, timeline = { DELETED_4_0_3 }, },
 				-- #if AFTER CATA
-				{ ["name"] = "Smooth Sun Crystal [CATA - Yellow] / Fractured Bloodstone [Red]", ["recipeID"] = 53845 },
+				{ name = "Brilliant Bloodstone [CATA - Red] / Brilliant Sun Crystal [Yellow]", recipeID = 53852 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Brilliant Cardinal Ruby [CATA] / Runed Cardinal Ruby", recipeID = 66446 }),
+				{ name = "Brilliant Dragon's Eye [CATA] / Runed Dragon's Eye", recipeID = 56053 },
+				{ name = "Brilliant Scarlet Ruby [CATA] / Runed Scarlet Ruby", recipeID = 53946 },
 				-- #endif
-				-- #if AFTER CATA
-				{ ["name"] = "Subtle Autumn's Glow [CATA - Yellow] / Subtle Scarlet Ruby [Red]", ["recipeID"] = 53948 },
-				{ ["name"] = "Subtle Dragon's Eye [CATA - Yellow] / Subtle Dragon's Eye [Red]", ["recipeID"] = 56055 },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Subtle King's Amber [CATA - Yellow] / Subtle Cardinal Ruby [Red]", ["recipeID"] = 66452 }),
-				{ ["name"] = "Subtle Sun Crystal [CATA - Yellow] / Subtle Bloodstone [Red]", ["recipeID"] = 53843 },
+				{ name = "Delicate Bloodstone", recipeID = 53832 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Delicate Cardinal Ruby", recipeID = 66448 }),
+				{ name = "Delicate Dragon's Eye", recipeID = 56052 },
+				{ name = "Delicate Scarlet Ruby", recipeID = 53945 },
+				-- #if BEFORE CATA
+				{ name = "Fractured Bloodstone [Red] / Smooth Sun Crystal [CATA - Yellow]", recipeID = 53845 },
 				-- #endif
-				{ ["name"] = "Thick Autumn's Glow", ["recipeID"] = 53959, ["timeline"] = { DELETED_4_0_3 }, },
-				{ ["name"] = "Thick Dragon's Eye", ["recipeID"] = 56089, ["timeline"] = { DELETED_4_0_3 }, },
-				applyclassicphase(WRATH_PHASE_THREE, { ["name"] = "Thick King's Amber", ["recipeID"] = 66504, ["timeline"] = { DELETED_4_0_3 }, }),
-				{ ["name"] = "Thick Sun Crystal [Yellow]", ["recipeID"] = 53855, ["timeline"] = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Fractured Cardinal Ruby", recipeID = 66451, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Fractured Dragon's Eye", recipeID = 56076, timeline = { DELETED_4_0_3 }, },
+				{ name = "Fractured Scarlet Ruby", recipeID = 53950, timeline = { DELETED_4_0_3 }, },
+				{ name = "Flashing Bloodstone", recipeID = 53844 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Flashing Cardinal Ruby", recipeID = 66453 }),
+				{ name = "Flashing Dragon's Eye", recipeID = 56056 },
+				{ name = "Flashing Scarlet Ruby", recipeID = 53949 },
+				{ name = "Precise Bloodstone", recipeID = 54017 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Precise Cardinal Ruby", recipeID = 66450 }),
+				{ name = "Precise Dragon's Eye", recipeID = 56081 },
+				{ name = "Precise Scarlet Ruby", recipeID = 53951 },
+				-- #if BEFORE CATA
+				{ name = "Runed Bloodstone", recipeID = 53834, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Runed Cardinal Ruby / Brilliant Cardinal Ruby [CATA]", recipeID = 66446 }),
+				{ name = "Runed Dragon's Eye / Brilliant Dragon's Eye [CATA]", recipeID = 56053 },
+				{ name = "Runed Scarlet Ruby / Brilliant Scarlet Ruby [CATA]", recipeID = 53946 },
+				{ name = "Subtle Bloodstone [Red] / Subtle Sun Crystal [CATA - Yellow]", recipeID = 53843 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Subtle Cardinal Ruby [Red] / Subtle King's Amber [CATA - Yellow]", recipeID = 66452 }),
+				{ name = "Subtle Dragon's Eye [Red] / Subtle Dragon's Eye [CATA - Yellow]", recipeID = 56055 },
+				{ name = "Subtle Scarlet Ruby [Red]/ Subtle Autumn's Glow [CATA - Yellow]", recipeID = 53948 },
+				-- #endif
 			}
 		},
 		{
-			["name"] = "Meta Gems",
-			["categoryID"] = 852,
-			["groups"] = {
+			name = "Yellow Gems",
+			categoryID = 851,
+			groups = {
+				-- #if BEFORE CATA
+				{ name = "Brilliant Autumn's Glow", recipeID = 53956, timeline = { DELETED_4_0_3 }, },
+				{ name = "Brilliant Dragon's Eye", recipeID = 56074, timeline = { DELETED_4_0_3 }, },
+				{ name = "Brilliant Sun Crystal [Yellow] / Brilliant Bloodstone [CATA - Red]", recipeID = 53852 },
+				{ name = "Brilliant Sun Crystal [Yellow]", recipeID = 53852, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Brilliant King's Amber", recipeID = 66503, timeline = { DELETED_4_0_3 }, }),
+				-- #endif
+				{ name = "Mystic Autumn's Glow", recipeID = 53960 },
+				{ name = "Mystic Dragon's Eye", recipeID = 56079 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Mystic King's Amber", recipeID = 66505 }),
+				{ name = "Mystic Sun Crystal", recipeID = 53857 },
+				{ name = "Quick Autumn's Glow", recipeID = 53961 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Quick Dragon's Eye", recipeID = 56083 }),
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Quick King's Amber", recipeID = 66506 }),
+				{ name = "Quick Sun Crystal", recipeID = 53856 },
+				-- #if BEFORE CATA
+				{ name = "Rigid Autumn's Glow [WRATH - Yellow] / Rigid Sky Sapphire [Blue]", recipeID = 53958 },
+				{ name = "Rigid Dragon's Eye", recipeID = 56084 },
+				-- #endif
+				-- #if BEFORE CATA
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Rigid King's Amber [WRATH - Yellow] / Rigid Majestic Zircon [Blue]", recipeID = 66501 }),
+				-- #endif
+				-- #if BEFORE CATA
+				{ name = "Rigid Sun Crystal [WRATH - Yellow] / Rigid Chalcedony [Blue]", recipeID = 53854 },
+				-- #endif
+				{ name = "Smooth Autumn's Glow", recipeID = 53957 },
+				{ name = "Smooth Dragon's Eye", recipeID = 56085 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Smooth King's Amber", recipeID = 66502 }),
+				{ name = "Smooth Sun Crystal [Yellow]", recipeID = 53853, timeline = { DELETED_4_0_3 }, },
+				-- #if AFTER CATA
+				{ name = "Smooth Sun Crystal [CATA - Yellow] / Fractured Bloodstone [Red]", recipeID = 53845 },
+				-- #endif
+				-- #if AFTER CATA
+				{ name = "Subtle Autumn's Glow [CATA - Yellow] / Subtle Scarlet Ruby [Red]", recipeID = 53948 },
+				{ name = "Subtle Dragon's Eye [CATA - Yellow] / Subtle Dragon's Eye [Red]", recipeID = 56055 },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Subtle King's Amber [CATA - Yellow] / Subtle Cardinal Ruby [Red]", recipeID = 66452 }),
+				{ name = "Subtle Sun Crystal [CATA - Yellow] / Subtle Bloodstone [Red]", recipeID = 53843 },
+				-- #endif
+				{ name = "Thick Autumn's Glow", recipeID = 53959, timeline = { DELETED_4_0_3 }, },
+				{ name = "Thick Dragon's Eye", recipeID = 56089, timeline = { DELETED_4_0_3 }, },
+				applyclassicphase(WRATH_PHASE_THREE, { name = "Thick King's Amber", recipeID = 66504, timeline = { DELETED_4_0_3 }, }),
+				{ name = "Thick Sun Crystal [Yellow]", recipeID = 53855, timeline = { DELETED_4_0_3 }, },
+			}
+		},
+		{
+			name = "Meta Gems",
+			categoryID = 852,
+			groups = {
 				{
-					["name"] = "Austere Earthsiege Diamond",
-					["recipeID"] = 55401
+					name = "Austere Earthsiege Diamond",
+					recipeID = 55401
 				},
 				{
-					["name"] = "Beaming Earthsiege Diamond",
-					["recipeID"] = 55405
+					name = "Beaming Earthsiege Diamond",
+					recipeID = 55405
 				},
 				{
-					["name"] = "Bracing Earthsiege Diamond",
-					["recipeID"] = 55397
+					name = "Bracing Earthsiege Diamond",
+					recipeID = 55397
 				},
 				{
-					["name"] = "Chaotic Skyflare Diamond",
-					["recipeID"] = 55389
+					name = "Chaotic Skyflare Diamond",
+					recipeID = 55389
 				},
 				{
-					["name"] = "Destructive Skyflare Diamond",
-					["recipeID"] = 55390
+					name = "Destructive Skyflare Diamond",
+					recipeID = 55390
 				},
 				{
-					["name"] = "Ember Skyflare Diamond",
-					["recipeID"] = 55392
+					name = "Ember Skyflare Diamond",
+					recipeID = 55392
 				},
 				{
-					["name"] = "Enigmatic Skyflare Diamond",
-					["recipeID"] = 55393
+					name = "Enigmatic Skyflare Diamond",
+					recipeID = 55393
 				},
 				{
-					["name"] = "Eternal Earthsiege Diamond",
-					["recipeID"] = 55398
+					name = "Eternal Earthsiege Diamond",
+					recipeID = 55398
 				},
 				{
-					["name"] = "Forlorn Skyflare Diamond",
-					["recipeID"] = 55387
+					name = "Forlorn Skyflare Diamond",
+					recipeID = 55387
 				},
 				{
-					["name"] = "Impassive Skyflare Diamond",
-					["recipeID"] = 55388
+					name = "Impassive Skyflare Diamond",
+					recipeID = 55388
 				},
 				{
-					["name"] = "Insightful Earthsiege Diamond",
-					["recipeID"] = 55396
+					name = "Insightful Earthsiege Diamond",
+					recipeID = 55396
 				},
 				{
-					["name"] = "Invigorating Earthsiege Diamond",
-					["recipeID"] = 55404
+					name = "Invigorating Earthsiege Diamond",
+					recipeID = 55404
 				},
 				{
-					["name"] = "Persistent Earthsiege Diamond",
-					["recipeID"] = 55402
+					name = "Persistent Earthsiege Diamond",
+					recipeID = 55402
 				},
 				{
-					["name"] = "Powerful Earthsiege Diamond",
-					["recipeID"] = 55399
+					name = "Powerful Earthsiege Diamond",
+					recipeID = 55399
 				},
 				{
-					["name"] = "Relentless Earthsiege Diamond",
-					["recipeID"] = 55400
+					name = "Relentless Earthsiege Diamond",
+					recipeID = 55400
 				},
 				{
-					["name"] = "Revitalizing Skyflare Diamond",
-					["recipeID"] = 55407
+					name = "Revitalizing Skyflare Diamond",
+					recipeID = 55407
 				},
 				{
-					["name"] = "Shielded Skyflare Diamond",
-					["recipeID"] = 55384
+					name = "Shielded Skyflare Diamond",
+					recipeID = 55384
 				},
 				{
-					["name"] = "Swift Skyflare Diamond",
-					["recipeID"] = 55394
+					name = "Swift Skyflare Diamond",
+					recipeID = 55394
 				},
 				{
-					["name"] = "Tireless Skyflare Diamond",
-					["recipeID"] = 55386
+					name = "Tireless Skyflare Diamond",
+					recipeID = 55386
 				},
 				{
-					["name"] = "Trenchant Earthsiege Diamond",
-					["recipeID"] = 55403
+					name = "Trenchant Earthsiege Diamond",
+					recipeID = 55403
 				}
 			}
 		},
 		{
-			["name"] = "Prismatic Gems",
-			["categoryID"] = 855,
-			["groups"] = {
+			name = "Prismatic Gems",
+			categoryID = 855,
+			groups = {
 				{
-					["name"] = "Enchanted Pearl",
-					["recipeID"] = 56530
+					name = "Enchanted Pearl",
+					recipeID = 56530
 				},
 				{
-					["name"] = "Enchanted Tear",
-					["recipeID"] = 56531
+					name = "Enchanted Tear",
+					recipeID = 56531
 				},
 				applyclassicphase(WRATH_PHASE_THREE, {
-					["name"] = "Nightmare Tear",
-					["recipeID"] = 68253
+					name = "Nightmare Tear",
+					recipeID = 68253
 				}),
 			}
 		},
 		{
-			["name"] = "Necklaces",
-			["categoryID"] = 853,
-			["groups"] = {
+			name = "Necklaces",
+			categoryID = 853,
+			groups = {
 				{
-					["name"] = "Blood Sun Necklace",
-					["recipeID"] = 56196
+					name = "Blood Sun Necklace",
+					recipeID = 56196
 				},
 				{
-					["name"] = "Crystal Chalcedony Amulet",
-					["recipeID"] = 58142
+					name = "Crystal Chalcedony Amulet",
+					recipeID = 58142
 				},
 				{
-					["name"] = "Crystal Citrine Necklace",
-					["recipeID"] = 58141
+					name = "Crystal Citrine Necklace",
+					recipeID = 58141
 				},
 				{
-					["name"] = "Emerald Choker",
-					["recipeID"] = 64725
+					name = "Emerald Choker",
+					recipeID = 64725
 				},
 				{
-					["name"] = "Jade Dagger Pendant",
-					["recipeID"] = 56195
+					name = "Jade Dagger Pendant",
+					recipeID = 56195
 				},
 				{
-					["name"] = "Sky Sapphire Amulet",
-					["recipeID"] = 64726
+					name = "Sky Sapphire Amulet",
+					recipeID = 64726
 				},
 				{
-					["name"] = "Titanium Earthguard Chain",
-					["recipeID"] = 56500
+					name = "Titanium Earthguard Chain",
+					recipeID = 56500
 				},
 				{
-					["name"] = "Titanium Impact Choker",
-					["recipeID"] = 56499
+					name = "Titanium Impact Choker",
+					recipeID = 56499
 				},
 				{
-					["name"] = "Titanium Spellshock Necklace",
-					["recipeID"] = 56501
+					name = "Titanium Spellshock Necklace",
+					recipeID = 56501
 				}
 			}
 		},
 		{
-			["name"] = "Rings",
-			["categoryID"] = 854,
-			["groups"] = {
+			name = "Rings",
+			categoryID = 854,
+			groups = {
 				{
-					["name"] = "Bloodstone Band",
-					["recipeID"] = 56193
+					name = "Bloodstone Band",
+					recipeID = 56193
 				},
 				{
-					["name"] = "Dream Signet",
-					["recipeID"] = 56197
+					name = "Dream Signet",
+					recipeID = 56197
 				},
 				{
-					["name"] = "Earthshadow Ring",
-					["recipeID"] = 58143
+					name = "Earthshadow Ring",
+					recipeID = 58143
 				},
 				{
-					["name"] = "Jade Ring of Slaying",
-					["recipeID"] = 58144
+					name = "Jade Ring of Slaying",
+					recipeID = 58144
 				},
 				{
-					["name"] = "Ring of Earthen Might",
-					["recipeID"] = 58147
+					name = "Ring of Earthen Might",
+					recipeID = 58147
 				},
 				{
-					["name"] = "Ring of Northern Tears",
-					["recipeID"] = 58150
+					name = "Ring of Northern Tears",
+					recipeID = 58150
 				},
 				{
-					["name"] = "Ring of Scarlet Shadows",
-					["recipeID"] = 58148
+					name = "Ring of Scarlet Shadows",
+					recipeID = 58148
 				},
 				{
-					["name"] = "Runed Mana Band",
-					["recipeID"] = 64727
+					name = "Runed Mana Band",
+					recipeID = 64727
 				},
 				{
-					["name"] = "Savage Titanium Band",
-					["recipeID"] = 58507
+					name = "Savage Titanium Band",
+					recipeID = 58507
 				},
 				{
-					["name"] = "Savage Titanium Ring",
-					["recipeID"] = 58492
+					name = "Savage Titanium Ring",
+					recipeID = 58492
 				},
 				{
-					["name"] = "Scarlet Signet",
-					["recipeID"] = 64728
+					name = "Scarlet Signet",
+					recipeID = 64728
 				},
 				{
-					["name"] = "Shadowmight Ring",
-					["recipeID"] = 58146
+					name = "Shadowmight Ring",
+					recipeID = 58146
 				},
 				{
-					["name"] = "Stoneguard Band",
-					["recipeID"] = 58145
+					name = "Stoneguard Band",
+					recipeID = 58145
 				},
 				{
-					["name"] = "Sun Rock Ring",
-					["recipeID"] = 56194
+					name = "Sun Rock Ring",
+					recipeID = 56194
 				},
 				{
-					["name"] = "Thundering Skyflare Diamond",
-					["recipeID"] = 55395
+					name = "Thundering Skyflare Diamond",
+					recipeID = 55395
 				},
 				{
-					["name"] = "Titanium Earthguard Ring",
-					["recipeID"] = 56497
+					name = "Titanium Earthguard Ring",
+					recipeID = 56497
 				},
 				{
-					["name"] = "Titanium Frostguard Ring",
-					["recipeID"] = 58954
+					name = "Titanium Frostguard Ring",
+					recipeID = 58954
 				},
 				{
-					["name"] = "Titanium Impact Band",
-					["recipeID"] = 56496
+					name = "Titanium Impact Band",
+					recipeID = 56496
 				},
 				{
-					["name"] = "Titanium Spellshock Ring",
-					["recipeID"] = 56498
+					name = "Titanium Spellshock Ring",
+					recipeID = 56498
 				},
 				{
-					["name"] = "Windfire Band",
-					["recipeID"] = 58149
+					name = "Windfire Band",
+					recipeID = 58149
 				}
 			}
 		},
 		{
-			["name"] = "Pets and Projects",
-			["categoryID"] = 856,
-			["groups"] = {
+			name = "Pets and Projects",
+			categoryID = 856,
+			groups = {
 				{
-					["name"] = "Dark Jade Focusing Lens",
-					["recipeID"] = 56205
+					name = "Dark Jade Focusing Lens",
+					recipeID = 56205
 				},
 				{
-					["name"] = "Figurine - Emerald Boar",
-					["recipeID"] = 56203
+					name = "Figurine - Emerald Boar",
+					recipeID = 56203
 				},
 				{
-					["name"] = "Figurine - Monarch Crab",
-					["recipeID"] = 59759
+					name = "Figurine - Monarch Crab",
+					recipeID = 59759
 				},
 				{
-					["name"] = "Figurine - Ruby Hare",
-					["recipeID"] = 56199
+					name = "Figurine - Ruby Hare",
+					recipeID = 56199
 				},
 				{
-					["name"] = "Figurine - Sapphire Owl",
-					["recipeID"] = 56202
+					name = "Figurine - Sapphire Owl",
+					recipeID = 56202
 				},
 				{
-					["name"] = "Figurine - Twilight Serpent",
-					["recipeID"] = 56201
+					name = "Figurine - Twilight Serpent",
+					recipeID = 56201
 				},
 				{
-					["name"] = "Icy Prism",
-					["recipeID"] = 62242
+					name = "Icy Prism",
+					recipeID = 62242
 				},
 				{
-					["name"] = "Shadow Crystal Focusing Lens",
-					["recipeID"] = 56206
+					name = "Shadow Crystal Focusing Lens",
+					recipeID = 56206
 				},
 				{
-					["name"] = "Shadow Jade Focusing Lens",
-					["recipeID"] = 56208
+					name = "Shadow Jade Focusing Lens",
+					recipeID = 56208
 				}
 			}
 		}
 	})),
 	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
 		{
-			["name"] = "Blue Gems",
-			["categoryID"] = 834,
-			["groups"] = {
+			name = "Blue Gems",
+			categoryID = 834,
+			groups = {
 				{
-					["name"] = "Rigid Chimera's Eye",
-					["recipeID"] = 73404
+					name = "Rigid Chimera's Eye",
+					recipeID = 73404
 				},
 				{
-					["name"] = "Rigid Deepholm Iolite",
-					["recipeID"] = 101735
+					name = "Rigid Deepholm Iolite",
+					recipeID = 101735
 				},
 				{
-					["name"] = "Rigid Ocean Sapphire",
-					["recipeID"] = 73344
+					name = "Rigid Ocean Sapphire",
+					recipeID = 73344
 				},
 				{
-					["name"] = "Rigid Zephyrite",
-					["recipeID"] = 73230
+					name = "Rigid Zephyrite",
+					recipeID = 73230
 				},
 				{
-					["name"] = "Solid Chimera's Eye",
-					["recipeID"] = 73401
+					name = "Solid Chimera's Eye",
+					recipeID = 73401
 				},
 				{
-					["name"] = "Solid Deepholm Iolite",
-					["recipeID"] = 101742
+					name = "Solid Deepholm Iolite",
+					recipeID = 101742
 				},
 				{
-					["name"] = "Solid Ocean Sapphire",
-					["recipeID"] = 73340
+					name = "Solid Ocean Sapphire",
+					recipeID = 73340
 				},
 				{
-					["name"] = "Solid Zephyrite",
-					["recipeID"] = 73227
+					name = "Solid Zephyrite",
+					recipeID = 73227
 				},
 				{
-					["name"] = "Sparkling Chimera's Eye",
-					["recipeID"] = 73402
+					name = "Sparkling Chimera's Eye",
+					recipeID = 73402
 				},
 				{
-					["name"] = "Sparkling Deepholm Iolite",
-					["recipeID"] = 101741
+					name = "Sparkling Deepholm Iolite",
+					recipeID = 101741
 				},
 				{
-					["name"] = "Sparkling Ocean Sapphire",
-					["recipeID"] = 73341
+					name = "Sparkling Ocean Sapphire",
+					recipeID = 73341
 				},
 				{
-					["name"] = "Sparkling Zephyrite",
-					["recipeID"] = 73228
+					name = "Sparkling Zephyrite",
+					recipeID = 73228
 				},
 				{
-					["name"] = "Stormy Chimera's Eye",
-					["recipeID"] = 73403
+					name = "Stormy Chimera's Eye",
+					recipeID = 73403
 				},
 				{
-					["name"] = "Stormy Deepholm Iolite",
-					["recipeID"] = 101740
+					name = "Stormy Deepholm Iolite",
+					recipeID = 101740
 				},
 				{
-					["name"] = "Stormy Ocean Sapphire",
-					["recipeID"] = 73343
+					name = "Stormy Ocean Sapphire",
+					recipeID = 73343
 				},
 				{
-					["name"] = "Stormy Zephyrite",
-					["recipeID"] = 73229
+					name = "Stormy Zephyrite",
+					recipeID = 73229
 				}
 			}
 		},
 		{
-			["name"] = "Green Gems",
-			["categoryID"] = 835,
-			["groups"] = {
+			name = "Green Gems",
+			categoryID = 835,
+			groups = {
 				{
-					["name"] = "Balanced Elven Peridot",
-					["recipeID"] = 101749
+					name = "Balanced Elven Peridot",
+					recipeID = 101749
 				},
 				{
-					["name"] = "Energized Elven Peridot",
-					["recipeID"] = 101754
+					name = "Energized Elven Peridot",
+					recipeID = 101754
 				},
 				{
-					["name"] = "Forceful Dream Emerald",
-					["recipeID"] = 73380
+					name = "Forceful Dream Emerald",
+					recipeID = 73380
 				},
 				{
-					["name"] = "Forceful Elven Peridot",
-					["recipeID"] = 101757
+					name = "Forceful Elven Peridot",
+					recipeID = 101757
 				},
 				{
-					["name"] = "Forceful Jasper",
-					["recipeID"] = 73277
+					name = "Forceful Jasper",
+					recipeID = 73277
 				},
 				{
-					["name"] = "Infused Elven Peridot",
-					["recipeID"] = 101747
+					name = "Infused Elven Peridot",
+					recipeID = 101747
 				},
 				{
-					["name"] = "Jagged Dream Emerald",
-					["recipeID"] = 73377
+					name = "Jagged Dream Emerald",
+					recipeID = 73377
 				},
 				{
-					["name"] = "Jagged Elven Peridot",
-					["recipeID"] = 101755
+					name = "Jagged Elven Peridot",
+					recipeID = 101755
 				},
 				{
-					["name"] = "Jagged Jasper",
-					["recipeID"] = 73274
+					name = "Jagged Jasper",
+					recipeID = 73274
 				},
 				{
-					["name"] = "Lightning Dream Emerald",
-					["recipeID"] = 73381
+					name = "Lightning Dream Emerald",
+					recipeID = 73381
 				},
 				{
-					["name"] = "Lightning Elven Peridot",
-					["recipeID"] = 101745
+					name = "Lightning Elven Peridot",
+					recipeID = 101745
 				},
 				{
-					["name"] = "Lightning Jasper",
-					["recipeID"] = 73278
+					name = "Lightning Jasper",
+					recipeID = 73278
 				},
 				{
-					["name"] = "Misty Elven Peridot",
-					["recipeID"] = 101743
+					name = "Misty Elven Peridot",
+					recipeID = 101743
 				},
 				{
-					["name"] = "Nimble Dream Emerald",
-					["recipeID"] = 73376
+					name = "Nimble Dream Emerald",
+					recipeID = 73376
 				},
 				{
-					["name"] = "Nimble Elven Peridot",
-					["recipeID"] = 101758
+					name = "Nimble Elven Peridot",
+					recipeID = 101758
 				},
 				{
-					["name"] = "Nimble Jasper",
-					["recipeID"] = 73273
+					name = "Nimble Jasper",
+					recipeID = 73273
 				},
 				{
-					["name"] = "Piercing Dream Emerald",
-					["recipeID"] = 73378
+					name = "Piercing Dream Emerald",
+					recipeID = 73378
 				},
 				{
-					["name"] = "Piercing Elven Peridot",
-					["recipeID"] = 101744
+					name = "Piercing Elven Peridot",
+					recipeID = 101744
 				},
 				{
-					["name"] = "Piercing Jasper",
-					["recipeID"] = 73275
+					name = "Piercing Jasper",
+					recipeID = 73275
 				},
 				{
-					["name"] = "Puissant Dream Emerald",
-					["recipeID"] = 73382
+					name = "Puissant Dream Emerald",
+					recipeID = 73382
 				},
 				{
-					["name"] = "Puissant Elven Peridot",
-					["recipeID"] = 101759
+					name = "Puissant Elven Peridot",
+					recipeID = 101759
 				},
 				{
-					["name"] = "Puissant Jasper",
-					["recipeID"] = 73279
+					name = "Puissant Jasper",
+					recipeID = 73279
 				},
 				{
-					["name"] = "Radiant Elven Peridot",
-					["recipeID"] = 101752
+					name = "Radiant Elven Peridot",
+					recipeID = 101752
 				},
 				{
-					["name"] = "Regal Dream Emerald",
-					["recipeID"] = 73375
+					name = "Regal Dream Emerald",
+					recipeID = 73375
 				},
 				{
-					["name"] = "Regal Elven Peridot",
-					["recipeID"] = 101756
+					name = "Regal Elven Peridot",
+					recipeID = 101756
 				},
 				{
-					["name"] = "Regal Jasper",
-					["recipeID"] = 73272
+					name = "Regal Jasper",
+					recipeID = 73272
 				},
 				{
-					["name"] = "Sensei's Dream Emerald",
-					["recipeID"] = 73384
+					name = "Sensei's Dream Emerald",
+					recipeID = 73384
 				},
 				{
-					["name"] = "Sensei's Elven Peridot",
-					["recipeID"] = 101746
+					name = "Sensei's Elven Peridot",
+					recipeID = 101746
 				},
 				{
-					["name"] = "Sensei's Jasper",
-					["recipeID"] = 73281
+					name = "Sensei's Jasper",
+					recipeID = 73281
 				},
 				{
-					["name"] = "Shattered Elven Peridot",
-					["recipeID"] = 101753
+					name = "Shattered Elven Peridot",
+					recipeID = 101753
 				},
 				{
-					["name"] = "Steady Dream Emerald",
-					["recipeID"] = 73379
+					name = "Steady Dream Emerald",
+					recipeID = 73379
 				},
 				{
-					["name"] = "Steady Elven Peridot",
-					["recipeID"] = 101760
+					name = "Steady Elven Peridot",
+					recipeID = 101760
 				},
 				{
-					["name"] = "Steady Jasper",
-					["recipeID"] = 73276
+					name = "Steady Jasper",
+					recipeID = 73276
 				},
 				{
-					["name"] = "Turbid Elven Peridot",
-					["recipeID"] = 101751
+					name = "Turbid Elven Peridot",
+					recipeID = 101751
 				},
 				{
-					["name"] = "Vivid Dream Emerald",
-					["recipeID"] = 96226
+					name = "Vivid Dream Emerald",
+					recipeID = 96226
 				},
 				{
-					["name"] = "Vivid Elven Peridot",
-					["recipeID"] = 101750
+					name = "Vivid Elven Peridot",
+					recipeID = 101750
 				},
 				{
-					["name"] = "Zen Dream Emerald",
-					["recipeID"] = 73383
+					name = "Zen Dream Emerald",
+					recipeID = 73383
 				},
 				{
-					["name"] = "Zen Elven Peridot",
-					["recipeID"] = 101748
+					name = "Zen Elven Peridot",
+					recipeID = 101748
 				},
 				{
-					["name"] = "Zen Jasper",
-					["recipeID"] = 73280
+					name = "Zen Jasper",
+					recipeID = 73280
 				}
 			}
 		},
 		{
-			["name"] = "Orange Gems",
-			["categoryID"] = 836,
-			["groups"] = {
+			name = "Orange Gems",
+			categoryID = 836,
+			groups = {
 				{
-					["name"] = "Adept Ember Topaz",
-					["recipeID"] = 73371
+					name = "Adept Ember Topaz",
+					recipeID = 73371
 				},
 				{
-					["name"] = "Adept Hessonite",
-					["recipeID"] = 73268
+					name = "Adept Hessonite",
+					recipeID = 73268
 				},
 				{
-					["name"] = "Adept Lava Coral",
-					["recipeID"] = 101773
+					name = "Adept Lava Coral",
+					recipeID = 101773
 				},
 				{
-					["name"] = "Artful Ember Topaz",
-					["recipeID"] = 73373
+					name = "Artful Ember Topaz",
+					recipeID = 73373
 				},
 				{
-					["name"] = "Artful Hessonite",
-					["recipeID"] = 73270
+					name = "Artful Hessonite",
+					recipeID = 73270
 				},
 				{
-					["name"] = "Artful Lava Coral",
-					["recipeID"] = 101775
+					name = "Artful Lava Coral",
+					recipeID = 101775
 				},
 				{
-					["name"] = "Champion's Lava Coral",
-					["recipeID"] = 101768
+					name = "Champion's Lava Coral",
+					recipeID = 101768
 				},
 				{
-					["name"] = "Crafty Lava Coral",
-					["recipeID"] = 101762
+					name = "Crafty Lava Coral",
+					recipeID = 101762
 				},
 				{
-					["name"] = "Deadly Ember Topaz",
-					["recipeID"] = 73365
+					name = "Deadly Ember Topaz",
+					recipeID = 73365
 				},
 				{
-					["name"] = "Deadly Hessonite",
-					["recipeID"] = 73262
+					name = "Deadly Hessonite",
+					recipeID = 73262
 				},
 				{
-					["name"] = "Deadly Lava Coral",
-					["recipeID"] = 101761
+					name = "Deadly Lava Coral",
+					recipeID = 101761
 				},
 				{
-					["name"] = "Deft Ember Topaz",
-					["recipeID"] = 73368
+					name = "Deft Ember Topaz",
+					recipeID = 73368
 				},
 				{
-					["name"] = "Deft Hessonite",
-					["recipeID"] = 73265
+					name = "Deft Hessonite",
+					recipeID = 73265
 				},
 				{
-					["name"] = "Deft Lava Coral",
-					["recipeID"] = 101769
+					name = "Deft Lava Coral",
+					recipeID = 101769
 				},
 				{
-					["name"] = "Fierce Ember Topaz",
-					["recipeID"] = 73367
+					name = "Fierce Ember Topaz",
+					recipeID = 73367
 				},
 				{
-					["name"] = "Fierce Hessonite",
-					["recipeID"] = 73264
+					name = "Fierce Hessonite",
+					recipeID = 73264
 				},
 				{
-					["name"] = "Fierce Lava Coral",
-					["recipeID"] = 101772
+					name = "Fierce Lava Coral",
+					recipeID = 101772
 				},
 				{
-					["name"] = "Fine Ember Topaz",
-					["recipeID"] = 73372
+					name = "Fine Ember Topaz",
+					recipeID = 73372
 				},
 				{
-					["name"] = "Fine Hessonite",
-					["recipeID"] = 73269
+					name = "Fine Hessonite",
+					recipeID = 73269
 				},
 				{
-					["name"] = "Fine Lava Coral",
-					["recipeID"] = 101776
+					name = "Fine Lava Coral",
+					recipeID = 101776
 				},
 				{
-					["name"] = "Inscribed Ember Topaz",
-					["recipeID"] = 73364
+					name = "Inscribed Ember Topaz",
+					recipeID = 73364
 				},
 				{
-					["name"] = "Inscribed Hessonite",
-					["recipeID"] = 73260
+					name = "Inscribed Hessonite",
+					recipeID = 73260
 				},
 				{
-					["name"] = "Inscribed Lava Coral",
-					["recipeID"] = 101764
+					name = "Inscribed Lava Coral",
+					recipeID = 101764
 				},
 				{
-					["name"] = "Keen Ember Topaz",
-					["recipeID"] = 73374
+					name = "Keen Ember Topaz",
+					recipeID = 73374
 				},
 				{
-					["name"] = "Keen Hessonite",
-					["recipeID"] = 73271
+					name = "Keen Hessonite",
+					recipeID = 73271
 				},
 				{
-					["name"] = "Keen Lava Coral",
-					["recipeID"] = 101774
+					name = "Keen Lava Coral",
+					recipeID = 101774
 				},
 				{
-					["name"] = "Lucent Ember Topaz",
-					["recipeID"] = 95755
+					name = "Lucent Ember Topaz",
+					recipeID = 95755
 				},
 				{
-					["name"] = "Lucent Lava Coral",
-					["recipeID"] = 101778
+					name = "Lucent Lava Coral",
+					recipeID = 101778
 				},
 				{
-					["name"] = "Polished Ember Topaz",
-					["recipeID"] = 73361
+					name = "Polished Ember Topaz",
+					recipeID = 73361
 				},
 				{
-					["name"] = "Polished Hessonite",
-					["recipeID"] = 73258
+					name = "Polished Hessonite",
+					recipeID = 73258
 				},
 				{
-					["name"] = "Polished Lava Coral",
-					["recipeID"] = 101765
+					name = "Polished Lava Coral",
+					recipeID = 101765
 				},
 				{
-					["name"] = "Potent Ember Topaz",
-					["recipeID"] = 73366
+					name = "Potent Ember Topaz",
+					recipeID = 73366
 				},
 				{
-					["name"] = "Potent Hessonite",
-					["recipeID"] = 73263
+					name = "Potent Hessonite",
+					recipeID = 73263
 				},
 				{
-					["name"] = "Potent Lava Coral",
-					["recipeID"] = 101763
+					name = "Potent Lava Coral",
+					recipeID = 101763
 				},
 				{
-					["name"] = "Reckless Ember Topaz",
-					["recipeID"] = 73369
+					name = "Reckless Ember Topaz",
+					recipeID = 73369
 				},
 				{
-					["name"] = "Reckless Hessonite",
-					["recipeID"] = 73266
+					name = "Reckless Hessonite",
+					recipeID = 73266
 				},
 				{
-					["name"] = "Reckless Lava Coral",
-					["recipeID"] = 101771
+					name = "Reckless Lava Coral",
+					recipeID = 101771
 				},
 				{
-					["name"] = "Resolute Ember Topaz",
-					["recipeID"] = 73362
+					name = "Resolute Ember Topaz",
+					recipeID = 73362
 				},
 				{
-					["name"] = "Resolute Hessonite",
-					["recipeID"] = 73259,
-					["timeline"] = { CREATED_4_0_3 },
+					name = "Resolute Hessonite",
+					recipeID = 73259,
+					timeline = { CREATED_4_0_3 },
 				},
 				{
-					["name"] = "Resolute Lava Coral",
-					["recipeID"] = 101766
+					name = "Resolute Lava Coral",
+					recipeID = 101766
 				},
 				{
-					["name"] = "Resplendent Ember Topaz",
-					["recipeID"] = 95756
+					name = "Resplendent Ember Topaz",
+					recipeID = 95756
 				},
 				{
-					["name"] = "Resplendent Lava Coral",
-					["recipeID"] = 101782
+					name = "Resplendent Lava Coral",
+					recipeID = 101782
 				},
 				{
-					["name"] = "Skillful Ember Topaz",
-					["recipeID"] = 73370
+					name = "Skillful Ember Topaz",
+					recipeID = 73370
 				},
 				{
-					["name"] = "Skillful Hessonite",
-					["recipeID"] = 73267
+					name = "Skillful Hessonite",
+					recipeID = 73267
 				},
 				{
-					["name"] = "Skillful Lava Coral",
-					["recipeID"] = 101777
+					name = "Skillful Lava Coral",
+					recipeID = 101777
 				},
 				{
-					["name"] = "Splendid Lava Coral",
-					["recipeID"] = 101781
+					name = "Splendid Lava Coral",
+					recipeID = 101781
 				},
 				{
-					["name"] = "Stalwart Lava Coral",
-					["recipeID"] = 101767
+					name = "Stalwart Lava Coral",
+					recipeID = 101767
 				},
 				{
-					["name"] = "Tenuous Lava Coral",
-					["recipeID"] = 101779
+					name = "Tenuous Lava Coral",
+					recipeID = 101779
 				},
 				{
-					["name"] = "Wicked Lava Coral",
-					["recipeID"] = 101770
+					name = "Wicked Lava Coral",
+					recipeID = 101770
 				},
 				{
-					["name"] = "Willful Ember Topaz",
-					["recipeID"] = 95754
+					name = "Willful Ember Topaz",
+					recipeID = 95754
 				},
 				{
-					["name"] = "Willful Lava Coral",
-					["recipeID"] = 101780
+					name = "Willful Lava Coral",
+					recipeID = 101780
 				}
 			}
 		},
 		{
-			["name"] = "Purple Gems",
-			["categoryID"] = 837,
-			["groups"] = {
+			name = "Purple Gems",
+			categoryID = 837,
+			groups = {
 				{
-					["name"] = "Accurate Demonseye",
-					["recipeID"] = 73360
+					name = "Accurate Demonseye",
+					recipeID = 73360
 				},
 				{
-					["name"] = "Accurate Nightstone",
-					["recipeID"] = 73250
+					name = "Accurate Nightstone",
+					recipeID = 73250
 				},
 				{
-					["name"] = "Accurate Shadow Spinel",
-					["recipeID"] = 101784
+					name = "Accurate Shadow Spinel",
+					recipeID = 101784
 				},
 				{
-					["name"] = "Defender's Demonseye",
-					["recipeID"] = 73352
+					name = "Defender's Demonseye",
+					recipeID = 73352
 				},
 				{
-					["name"] = "Defender's Nightstone",
-					["recipeID"] = 73242
+					name = "Defender's Nightstone",
+					recipeID = 73242
 				},
 				{
-					["name"] = "Defender's Shadow Spinel",
-					["recipeID"] = 101793
+					name = "Defender's Shadow Spinel",
+					recipeID = 101793
 				},
 				{
-					["name"] = "Etched Demonseye",
-					["recipeID"] = 73356
+					name = "Etched Demonseye",
+					recipeID = 73356
 				},
 				{
-					["name"] = "Etched Nightstone",
-					["recipeID"] = 73246
+					name = "Etched Nightstone",
+					recipeID = 73246
 				},
 				{
-					["name"] = "Etched Shadow Spinel",
-					["recipeID"] = 101787
+					name = "Etched Shadow Spinel",
+					recipeID = 101787
 				},
 				{
-					["name"] = "Glinting Demonseye",
-					["recipeID"] = 73357
+					name = "Glinting Demonseye",
+					recipeID = 73357
 				},
 				{
-					["name"] = "Glinting Nightstone",
-					["recipeID"] = 73247
+					name = "Glinting Nightstone",
+					recipeID = 73247
 				},
 				{
-					["name"] = "Glinting Shadow Spinel",
-					["recipeID"] = 101783
+					name = "Glinting Shadow Spinel",
+					recipeID = 101783
 				},
 				{
-					["name"] = "Guardian's Demonseye",
-					["recipeID"] = 73354
+					name = "Guardian's Demonseye",
+					recipeID = 73354
 				},
 				{
-					["name"] = "Guardian's Nightstone",
-					["recipeID"] = 73244
+					name = "Guardian's Nightstone",
+					recipeID = 73244
 				},
 				{
-					["name"] = "Guardian's Shadow Spinel",
-					["recipeID"] = 101791
+					name = "Guardian's Shadow Spinel",
+					recipeID = 101791
 				},
 				{
-					["name"] = "Mysterious Shadow Spinel",
-					["recipeID"] = 101788
+					name = "Mysterious Shadow Spinel",
+					recipeID = 101788
 				},
 				{
-					["name"] = "Purified Demonseye",
-					["recipeID"] = 73355
+					name = "Purified Demonseye",
+					recipeID = 73355
 				},
 				{
-					["name"] = "Purified Nightstone",
-					["recipeID"] = 73245
+					name = "Purified Nightstone",
+					recipeID = 73245
 				},
 				{
-					["name"] = "Purified Shadow Spinel",
-					["recipeID"] = 101789
+					name = "Purified Shadow Spinel",
+					recipeID = 101789
 				},
 				{
-					["name"] = "Retaliating Demonseye",
-					["recipeID"] = 73358
+					name = "Retaliating Demonseye",
+					recipeID = 73358
 				},
 				{
-					["name"] = "Retaliating Nightstone",
-					["recipeID"] = 73248
+					name = "Retaliating Nightstone",
+					recipeID = 73248
 				},
 				{
-					["name"] = "Retaliating Shadow Spinel",
-					["recipeID"] = 101786
+					name = "Retaliating Shadow Spinel",
+					recipeID = 101786
 				},
 				{
-					["name"] = "Shifting Demonseye",
-					["recipeID"] = 73351
+					name = "Shifting Demonseye",
+					recipeID = 73351
 				},
 				{
-					["name"] = "Shifting Nightstone",
-					["recipeID"] = 73241
+					name = "Shifting Nightstone",
+					recipeID = 73241
 				},
 				{
-					["name"] = "Shifting Shadow Spinel",
-					["recipeID"] = 101790
+					name = "Shifting Shadow Spinel",
+					recipeID = 101790
 				},
 				{
-					["name"] = "Sovereign Demonseye",
-					["recipeID"] = 73350
+					name = "Sovereign Demonseye",
+					recipeID = 73350
 				},
 				{
-					["name"] = "Sovereign Nightstone",
-					["recipeID"] = 73240
+					name = "Sovereign Nightstone",
+					recipeID = 73240
 				},
 				{
-					["name"] = "Sovereign Shadow Spinel",
-					["recipeID"] = 101794
+					name = "Sovereign Shadow Spinel",
+					recipeID = 101794
 				},
 				{
-					["name"] = "Timeless Demonseye",
-					["recipeID"] = 73353
+					name = "Timeless Demonseye",
+					recipeID = 73353
 				},
 				{
-					["name"] = "Timeless Nightstone",
-					["recipeID"] = 73243
+					name = "Timeless Nightstone",
+					recipeID = 73243
 				},
 				{
-					["name"] = "Timeless Shadow Spinel",
-					["recipeID"] = 101792
+					name = "Timeless Shadow Spinel",
+					recipeID = 101792
 				},
 				{
-					["name"] = "Veiled Demonseye",
-					["recipeID"] = 73359
+					name = "Veiled Demonseye",
+					recipeID = 73359
 				},
 				{
-					["name"] = "Veiled Nightstone",
-					["recipeID"] = 73249
+					name = "Veiled Nightstone",
+					recipeID = 73249
 				},
 				{
-					["name"] = "Veiled Shadow Spinel",
-					["recipeID"] = 101785
+					name = "Veiled Shadow Spinel",
+					recipeID = 101785
 				}
 			}
 		},
 		{
-			["name"] = "Red Gems",
-			["categoryID"] = 838,
-			["groups"] = {
+			name = "Red Gems",
+			categoryID = 838,
+			groups = {
 				{
-					["name"] = "Bold Carnelian",
-					["recipeID"] = 73222
+					name = "Bold Carnelian",
+					recipeID = 73222
 				},
 				{
-					["name"] = "Bold Chimera's Eye",
-					["recipeID"] = 73396
+					name = "Bold Chimera's Eye",
+					recipeID = 73396
 				},
 				{
-					["name"] = "Bold Inferno Ruby",
-					["recipeID"] = 73335
+					name = "Bold Inferno Ruby",
+					recipeID = 73335
 				},
 				{
-					["name"] = "Bold Queen's Garnet",
-					["recipeID"] = 101799
+					name = "Bold Queen's Garnet",
+					recipeID = 101799
 				},
 				{
-					["name"] = "Brilliant Carnelian",
-					["recipeID"] = 73225
+					name = "Brilliant Carnelian",
+					recipeID = 73225
 				},
 				{
-					["name"] = "Brilliant Chimera's Eye",
-					["recipeID"] = 73399
+					name = "Brilliant Chimera's Eye",
+					recipeID = 73399
 				},
 				{
-					["name"] = "Brilliant Inferno Ruby",
-					["recipeID"] = 73338
+					name = "Brilliant Inferno Ruby",
+					recipeID = 73338
 				},
 				{
-					["name"] = "Brilliant Queen's Garnet",
-					["recipeID"] = 101797
+					name = "Brilliant Queen's Garnet",
+					recipeID = 101797
 				},
 				{
-					["name"] = "Delicate Carnelian",
-					["recipeID"] = 73223
+					name = "Delicate Carnelian",
+					recipeID = 73223
 				},
 				{
-					["name"] = "Delicate Chimera's Eye",
-					["recipeID"] = 73397
+					name = "Delicate Chimera's Eye",
+					recipeID = 73397
 				},
 				{
-					["name"] = "Delicate Inferno Ruby",
-					["recipeID"] = 73336
+					name = "Delicate Inferno Ruby",
+					recipeID = 73336
 				},
 				{
-					["name"] = "Delicate Queen's Garnet",
-					["recipeID"] = 101795
+					name = "Delicate Queen's Garnet",
+					recipeID = 101795
 				},
 				{
-					["name"] = "Flashing Carnelian",
-					["recipeID"] = 73224
+					name = "Flashing Carnelian",
+					recipeID = 73224
 				},
 				{
-					["name"] = "Flashing Chimera's Eye",
-					["recipeID"] = 73398
+					name = "Flashing Chimera's Eye",
+					recipeID = 73398
 				},
 				{
-					["name"] = "Flashing Inferno Ruby",
-					["recipeID"] = 73337
+					name = "Flashing Inferno Ruby",
+					recipeID = 73337
 				},
 				{
-					["name"] = "Flashing Queen's Garnet",
-					["recipeID"] = 101798
+					name = "Flashing Queen's Garnet",
+					recipeID = 101798
 				},
 				{
-					["name"] = "Precise Carnelian",
-					["recipeID"] = 73226
+					name = "Precise Carnelian",
+					recipeID = 73226
 				},
 				{
-					["name"] = "Precise Chimera's Eye",
-					["recipeID"] = 73400
+					name = "Precise Chimera's Eye",
+					recipeID = 73400
 				},
 				{
-					["name"] = "Precise Inferno Ruby",
-					["recipeID"] = 73339
+					name = "Precise Inferno Ruby",
+					recipeID = 73339
 				},
 				{
-					["name"] = "Precise Queen's Garnet",
-					["recipeID"] = 101796
+					name = "Precise Queen's Garnet",
+					recipeID = 101796
 				}
 			}
 		},
 		{
-			["name"] = "Yellow Gems",
-			["categoryID"] = 839,
-			["groups"] = {
+			name = "Yellow Gems",
+			categoryID = 839,
+			groups = {
 				{
-					["name"] = "Fractured Alicite",
-					["recipeID"] = 73239
+					name = "Fractured Alicite",
+					recipeID = 73239
 				},
 				{
-					["name"] = "Fractured Amberjewel",
-					["recipeID"] = 73349
+					name = "Fractured Amberjewel",
+					recipeID = 73349
 				},
 				{
-					["name"] = "Fractured Chimera's Eye",
-					["recipeID"] = 73409
+					name = "Fractured Chimera's Eye",
+					recipeID = 73409
 				},
 				{
-					["name"] = "Fractured Lightstone",
-					["recipeID"] = 101803
+					name = "Fractured Lightstone",
+					recipeID = 101803
 				},
 				{
-					["name"] = "Mystic Alicite",
-					["recipeID"] = 73233,
-					["timeline"] = { CREATED_4_0_3 },
+					name = "Mystic Alicite",
+					recipeID = 73233,
+					timeline = { CREATED_4_0_3 },
 				},
 				{
-					["name"] = "Mystic Amberjewel",
-					["recipeID"] = 73347
+					name = "Mystic Amberjewel",
+					recipeID = 73347
 				},
 				{
-					["name"] = "Mystic Chimera's Eye",
-					["recipeID"] = 73407
+					name = "Mystic Chimera's Eye",
+					recipeID = 73407
 				},
 				{
-					["name"] = "Mystic Lightstone",
-					["recipeID"] = 101804
+					name = "Mystic Lightstone",
+					recipeID = 101804
 				},
 				{
-					["name"] = "Quick Alicite",
-					["recipeID"] = 73234
+					name = "Quick Alicite",
+					recipeID = 73234
 				},
 				{
-					["name"] = "Quick Amberjewel",
-					["recipeID"] = 73348
+					name = "Quick Amberjewel",
+					recipeID = 73348
 				},
 				{
-					["name"] = "Quick Chimera's Eye",
-					["recipeID"] = 73408
+					name = "Quick Chimera's Eye",
+					recipeID = 73408
 				},
 				{
-					["name"] = "Quick Lightstone",
-					["recipeID"] = 101802
+					name = "Quick Lightstone",
+					recipeID = 101802
 				},
 				{
-					["name"] = "Smooth Alicite",
-					["recipeID"] = 73232
+					name = "Smooth Alicite",
+					recipeID = 73232
 				},
 				{
-					["name"] = "Smooth Amberjewel",
-					["recipeID"] = 73346
+					name = "Smooth Amberjewel",
+					recipeID = 73346
 				},
 				{
-					["name"] = "Smooth Chimera's Eye",
-					["recipeID"] = 73406
+					name = "Smooth Chimera's Eye",
+					recipeID = 73406
 				},
 				{
-					["name"] = "Smooth Lightstone",
-					["recipeID"] = 101800
+					name = "Smooth Lightstone",
+					recipeID = 101800
 				},
 				{
-					["name"] = "Subtle Alicite",
-					["recipeID"] = 73231
+					name = "Subtle Alicite",
+					recipeID = 73231
 				},
 				{
-					["name"] = "Subtle Amberjewel",
-					["recipeID"] = 73345
+					name = "Subtle Amberjewel",
+					recipeID = 73345
 				},
 				{
-					["name"] = "Subtle Chimera's Eye",
-					["recipeID"] = 73405
+					name = "Subtle Chimera's Eye",
+					recipeID = 73405
 				},
 				{
-					["name"] = "Subtle Lightstone",
-					["recipeID"] = 101801
+					name = "Subtle Lightstone",
+					recipeID = 101801
 				}
 			}
 		},
 		{
-			["name"] = "Meta Gems",
-			["categoryID"] = 840,
-			["groups"] = {
+			name = "Meta Gems",
+			categoryID = 840,
+			groups = {
 				{
-					["name"] = "Agile Shadowspirit Diamond",
-					["recipeID"] = 96255
+					name = "Agile Shadowspirit Diamond",
+					recipeID = 96255
 				},
 				{
-					["name"] = "Austere Shadowspirit Diamond",
-					["recipeID"] = 73468
+					name = "Austere Shadowspirit Diamond",
+					recipeID = 73468
 				},
 				{
-					["name"] = "Bracing Shadowspirit Diamond",
-					["recipeID"] = 73466
+					name = "Bracing Shadowspirit Diamond",
+					recipeID = 73466
 				},
 				{
-					["name"] = "Burning Shadowspirit Diamond",
-					["recipeID"] = 96257
+					name = "Burning Shadowspirit Diamond",
+					recipeID = 96257
 				},
 				{
-					["name"] = "Chaotic Shadowspirit Diamond",
-					["recipeID"] = 73465
+					name = "Chaotic Shadowspirit Diamond",
+					recipeID = 73465
 				},
 				{
-					["name"] = "Destructive Shadowspirit Diamond",
-					["recipeID"] = 73472
+					name = "Destructive Shadowspirit Diamond",
+					recipeID = 73472
 				},
 				{
-					["name"] = "Effulgent Shadowspirit Diamond",
-					["recipeID"] = 73469
+					name = "Effulgent Shadowspirit Diamond",
+					recipeID = 73469
 				},
 				{
-					["name"] = "Ember Shadowspirit Diamond",
-					["recipeID"] = 73470
+					name = "Ember Shadowspirit Diamond",
+					recipeID = 73470
 				},
 				{
-					["name"] = "Enigmatic Shadowspirit Diamond",
-					["recipeID"] = 73474
+					name = "Enigmatic Shadowspirit Diamond",
+					recipeID = 73474
 				},
 				{
-					["name"] = "Eternal Shadowspirit Diamond",
-					["recipeID"] = 73467
+					name = "Eternal Shadowspirit Diamond",
+					recipeID = 73467
 				},
 				{
-					["name"] = "Fleet Shadowspirit Diamond",
-					["recipeID"] = 73464
+					name = "Fleet Shadowspirit Diamond",
+					recipeID = 73464
 				},
 				{
-					["name"] = "Forlorn Shadowspirit Diamond",
-					["recipeID"] = 73476
+					name = "Forlorn Shadowspirit Diamond",
+					recipeID = 73476
 				},
 				{
-					["name"] = "Impassive Shadowspirit Diamond",
-					["recipeID"] = 73475
+					name = "Impassive Shadowspirit Diamond",
+					recipeID = 73475
 				},
 				{
-					["name"] = "Powerful Shadowspirit Diamond",
-					["recipeID"] = 73473
+					name = "Powerful Shadowspirit Diamond",
+					recipeID = 73473
 				},
 				{
-					["name"] = "Reverberating Shadowspirit Diamond",
-					["recipeID"] = 96256
+					name = "Reverberating Shadowspirit Diamond",
+					recipeID = 96256
 				},
 				{
-					["name"] = "Revitalizing Shadowspirit Diamond",
-					["recipeID"] = 73471
+					name = "Revitalizing Shadowspirit Diamond",
+					recipeID = 73471
 				}
 			}
 		},
 		{
-			["name"] = "Necklaces",
-			["categoryID"] = 841,
-			["groups"] = {
+			name = "Necklaces",
+			categoryID = 841,
+			groups = {
 				{
-					["name"] = "Alicite Pendant",
-					["recipeID"] = 73496
+					name = "Alicite Pendant",
+					recipeID = 73496
 				},
 				-- #if ANYCLASSIC
 				firelands({
-					["name"] = "Bloodthirsty Amberjewel Pendant",
-					["recipeID"] = 1216321
+					name = "Bloodthirsty Amberjewel Pendant",
+					recipeID = 1216321
 				}),
 				firelands({
-					["name"] = "Bloodthirsty Ruby Choker",
-					["recipeID"] = 1216331
+					name = "Bloodthirsty Ruby Choker",
+					recipeID = 1216331
 				}),
 				firelands({
-					["name"] = "Bloodthirsty Sapphire Necklace",
-					["recipeID"] = 1216330
+					name = "Bloodthirsty Sapphire Necklace",
+					recipeID = 1216330
 				}),
 				-- #endif
 				{
-					["name"] = "Brazen Elementium Medallion",
-					["recipeID"] = 73521
+					name = "Brazen Elementium Medallion",
+					recipeID = 73521
 				},
 				{
-					["name"] = "Elementium Guardian",
-					["recipeID"] = 73506
+					name = "Elementium Guardian",
+					recipeID = 73506
 				},
 				{
-					["name"] = "Entwined Elementium Choker",
-					["recipeID"] = 73504
+					name = "Entwined Elementium Choker",
+					recipeID = 73504
 				},
 				{
-					["name"] = "Eye of Many Deaths",
-					["recipeID"] = 73505
+					name = "Eye of Many Deaths",
+					recipeID = 73505
 				},
 				{
-					["name"] = "Nightstone Choker",
-					["recipeID"] = 73497
+					name = "Nightstone Choker",
+					recipeID = 73497
 				},
 				-- #if ANYCLASSIC
 				--[[
 				dragonsoul({
-					["name"] = "Vicious Amberjewel Pendant",
-					["recipeID"] = 99543	-- TODO: Get the spellID after Dragon Soul is launched.
+					name = "Vicious Amberjewel Pendant",
+					recipeID = 99543	-- TODO: Get the spellID after Dragon Soul is launched.
 				}),
 				dragonsoul({
-					["name"] = "Vicious Ruby Choker",
-					["recipeID"] = 99544	-- TODO: Get the spellID after Dragon Soul is launched.
+					name = "Vicious Ruby Choker",
+					recipeID = 99544	-- TODO: Get the spellID after Dragon Soul is launched.
 				}),
 				dragonsoul({
-					["name"] = "Vicious Sapphire Necklace",
-					["recipeID"] = 99542	-- TODO: Get the spellID after Dragon Soul is launched.
+					name = "Vicious Sapphire Necklace",
+					recipeID = 99542	-- TODO: Get the spellID after Dragon Soul is launched.
 				}),
 				--]]
 				-- #endif
 				bloodied({
-					["name"] = "Vicious Amberjewel Pendant",
-					["recipeID"] = 99543
+					name = "Vicious Amberjewel Pendant",
+					recipeID = 99543
 				}),
 				bloodied({
-					["name"] = "Vicious Ruby Choker",
-					["recipeID"] = 99544
+					name = "Vicious Ruby Choker",
+					recipeID = 99544
 				}),
 				bloodied({
-					["name"] = "Vicious Sapphire Necklace",
-					["recipeID"] = 99542
+					name = "Vicious Sapphire Necklace",
+					recipeID = 99542
 				}),
 			}
 		},
 		{
-			["name"] = "Rings",
-			["categoryID"] = 842,
-			["groups"] = {
+			name = "Rings",
+			categoryID = 842,
+			groups = {
 				{
-					["name"] = "Band of Blades",
-					["recipeID"] = 73498
+					name = "Band of Blades",
+					recipeID = 73498
 				},
 				-- #if ANYCLASSIC
 				firelands({
-					["name"] = "Bloodthirsty Amberjewel Band",
-					["recipeID"] = 1216328
+					name = "Bloodthirsty Amberjewel Band",
+					recipeID = 1216328
 				}),
 				firelands({
-					["name"] = "Bloodthirsty Ruby Signet",
-					["recipeID"] = 1216329
+					name = "Bloodthirsty Ruby Signet",
+					recipeID = 1216329
 				}),
 				firelands({
-					["name"] = "Bloodthirsty Sapphire Ring",
-					["recipeID"] = 1216323
+					name = "Bloodthirsty Sapphire Ring",
+					recipeID = 1216323
 				}),
 				-- #endif
 				{
-					["name"] = "Elementium Destroyer's Ring",
-					["recipeID"] = 73520
+					name = "Elementium Destroyer's Ring",
+					recipeID = 73520
 				},
 				{
-					["name"] = "Elementium Moebius Band",
-					["recipeID"] = 73503
+					name = "Elementium Moebius Band",
+					recipeID = 73503
 				},
 				{
-					["name"] = "Hessonite Band",
-					["recipeID"] = 73495
+					name = "Hessonite Band",
+					recipeID = 73495
 				},
 				{
-					["name"] = "Jasper Ring",
-					["recipeID"] = 73494
+					name = "Jasper Ring",
+					recipeID = 73494
 				},
 				{
-					["name"] = "Punisher's Band",
-					["recipeID"] = 98921
+					name = "Punisher's Band",
+					recipeID = 98921
 				},
 				{
-					["name"] = "Ring of Warring Elements",
-					["recipeID"] = 73502
+					name = "Ring of Warring Elements",
+					recipeID = 73502
 				},
 				-- #if ANYCLASSIC
 				--[[
 				dragonsoul({
-					["name"] = "Vicious Amberjewel Band",
-					["recipeID"] = 99540	-- TODO: Get the spellID after Dragon Soul is launched.
+					name = "Vicious Amberjewel Band",
+					recipeID = 99540	-- TODO: Get the spellID after Dragon Soul is launched.
 				}),
 				dragonsoul({
-					["name"] = "Vicious Ruby Signet",
-					["recipeID"] = 99541	-- TODO: Get the spellID after Dragon Soul is launched.
+					name = "Vicious Ruby Signet",
+					recipeID = 99541	-- TODO: Get the spellID after Dragon Soul is launched.
 				}),
 				dragonsoul({
-					["name"] = "Vicious Sapphire Ring",
-					["recipeID"] = 99539	-- TODO: Get the spellID after Dragon Soul is launched.
+					name = "Vicious Sapphire Ring",
+					recipeID = 99539	-- TODO: Get the spellID after Dragon Soul is launched.
 				}),
 				]]--
 				-- #endif
 				bloodied({
-					["name"] = "Vicious Amberjewel Band",
-					["recipeID"] = 99540
+					name = "Vicious Amberjewel Band",
+					recipeID = 99540
 				}),
 				bloodied({
-					["name"] = "Vicious Ruby Signet",
-					["recipeID"] = 99541
+					name = "Vicious Ruby Signet",
+					recipeID = 99541
 				}),
 				bloodied({
-					["name"] = "Vicious Sapphire Ring",
-					["recipeID"] = 99539
+					name = "Vicious Sapphire Ring",
+					recipeID = 99539
 				}),
 			}
 		},
 		{
-			["name"] = "Crowns",
-			["categoryID"] = 843,
-			["groups"] = {
+			name = "Crowns",
+			categoryID = 843,
+			groups = {
 				{
-					["name"] = "Jeweler's Amber Monocle",
-					["recipeID"] = 73627
+					name = "Jeweler's Amber Monocle",
+					recipeID = 73627
 				},
 				{
-					["name"] = "Jeweler's Ruby Monocle",
-					["recipeID"] = 73625
+					name = "Jeweler's Ruby Monocle",
+					recipeID = 73625
 				},
 				{
-					["name"] = "Jeweler's Sapphire Monocle",
-					["recipeID"] = 73626
+					name = "Jeweler's Sapphire Monocle",
+					recipeID = 73626
 				},
 				{
-					["name"] = "Rhinestone Sunglasses",
-					["recipeID"] = 73623
+					name = "Rhinestone Sunglasses",
+					recipeID = 73623
 				}
 			}
 		},
 		{
-			["name"] = "Fist Weapons",
-			["categoryID"] = 844,
-			["groups"] = {
+			name = "Fist Weapons",
+			categoryID = 844,
+			groups = {
 				{
-					["name"] = "Carnelian Spikes",
-					["recipeID"] = 73620
+					name = "Carnelian Spikes",
+					recipeID = 73620
 				},
 				{
-					["name"] = "The Perforator",
-					["recipeID"] = 73621
+					name = "The Perforator",
+					recipeID = 73621
 				}
 			}
 		},
 		{
-			["name"] = "Toys & Prisms",
-			["categoryID"] = 845,
-			["groups"] = {
+			name = "Toys & Prisms",
+			categoryID = 845,
+			groups = {
 				{
-					["name"] = "Fire Prism",
-					["recipeID"] = 73478
+					name = "Fire Prism",
+					recipeID = 73478
 				},
 				{
-					["name"] = "Stardust",
-					["recipeID"] = 73622
+					name = "Stardust",
+					recipeID = 73622
 				}
 			}
 		}
 	})),
 	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, {
 		{
-			["name"] = "Research",
-			["categoryID"] = 831,
-			["groups"] = {
+			name = "Research",
+			categoryID = 831,
+			groups = {
 				{
-					["name"] = "Imperial Amethyst",
-					["recipeID"] = 131691
+					name = "Imperial Amethyst",
+					recipeID = 131691
 				},
 				{
-					["name"] = "Primordial Ruby",
-					["recipeID"] = 131686
+					name = "Primordial Ruby",
+					recipeID = 131686
 				},
 				{
-					["name"] = "River's Heart",
-					["recipeID"] = 131593
+					name = "River's Heart",
+					recipeID = 131593
 				},
 				{
-					["name"] = "Secrets of the Stone",
-					["recipeID"] = 131759
+					name = "Secrets of the Stone",
+					recipeID = 131759
 				},
 				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
-					["name"] = "Serpent's Heart",
-					["recipeID"] = 140050
+					name = "Serpent's Heart",
+					recipeID = 140050
 				}),
 				{
-					["name"] = "Sun's Radiance",
-					["recipeID"] = 131695
+					name = "Sun's Radiance",
+					recipeID = 131695
 				},
 				{
-					["name"] = "Vermilion Onyx",
-					["recipeID"] = 131690
+					name = "Vermilion Onyx",
+					recipeID = 131690
 				},
 				{
-					["name"] = "Wild Jade",
-					["recipeID"] = 131688
+					name = "Wild Jade",
+					recipeID = 131688
 				}
 			}
 		},
 		{
-			["name"] = "Blue Gems",
-			["categoryID"] = 821,
-			["groups"] = {
+			name = "Blue Gems",
+			categoryID = 821,
+			groups = {
 				{
-					["name"] = "Rigid Lapis Lazuli",
-					["recipeID"] = 107617
+					name = "Rigid Lapis Lazuli",
+					recipeID = 107617
 				},
 				{
-					["name"] = "Rigid River's Heart",
-					["recipeID"] = 106947
+					name = "Rigid River's Heart",
+					recipeID = 106947
 				},
 				{
-					["name"] = "Solid Lapis Lazuli",
-					["recipeID"] = 107619
+					name = "Solid Lapis Lazuli",
+					recipeID = 107619
 				},
 				{
-					["name"] = "Solid River's Heart",
-					["recipeID"] = 106950
+					name = "Solid River's Heart",
+					recipeID = 106950
 				},
 				{
-					["name"] = "Sparkling Lapis Lazuli",
-					["recipeID"] = 107620
+					name = "Sparkling Lapis Lazuli",
+					recipeID = 107620
 				},
 				{
-					["name"] = "Sparkling River's Heart",
-					["recipeID"] = 106949
+					name = "Sparkling River's Heart",
+					recipeID = 106949
 				},
 				{
-					["name"] = "Stormy Lapis Lazuli",
-					["recipeID"] = 107621
+					name = "Stormy Lapis Lazuli",
+					recipeID = 107621
 				},
 				{
-					["name"] = "Stormy River's Heart",
-					["recipeID"] = 106948
+					name = "Stormy River's Heart",
+					recipeID = 106948
 				}
 			}
 		},
 		{
-			["name"] = "Green Gems",
-			["categoryID"] = 822,
-			["groups"] = {
+			name = "Green Gems",
+			categoryID = 822,
+			groups = {
 				{
-					["name"] = "Balanced Alexandrite",
-					["recipeID"] = 107598
+					name = "Balanced Alexandrite",
+					recipeID = 107598
 				},
 				{
-					["name"] = "Balanced Wild Jade",
-					["recipeID"] = 106960
+					name = "Balanced Wild Jade",
+					recipeID = 106960
 				},
 				{
-					["name"] = "Effulgent Alexandrite",
-					["recipeID"] = 107599
+					name = "Effulgent Alexandrite",
+					recipeID = 107599
 				},
 				{
-					["name"] = "Effulgent Wild Jade",
-					["recipeID"] = 106957
+					name = "Effulgent Wild Jade",
+					recipeID = 106957
 				},
 				{
-					["name"] = "Energized Alexandrite",
-					["recipeID"] = 107600
+					name = "Energized Alexandrite",
+					recipeID = 107600
 				},
 				{
-					["name"] = "Energized Wild Jade",
-					["recipeID"] = 107737
+					name = "Energized Wild Jade",
+					recipeID = 107737
 				},
 				{
-					["name"] = "Forceful Alexandrite",
-					["recipeID"] = 107601
+					name = "Forceful Alexandrite",
+					recipeID = 107601
 				},
 				{
-					["name"] = "Forceful Wild Jade",
-					["recipeID"] = 107738
+					name = "Forceful Wild Jade",
+					recipeID = 107738
 				},
 				{
-					["name"] = "Jagged Alexandrite",
-					["recipeID"] = 107602
+					name = "Jagged Alexandrite",
+					recipeID = 107602
 				},
 				{
-					["name"] = "Jagged Wild Jade",
-					["recipeID"] = 107739
+					name = "Jagged Wild Jade",
+					recipeID = 107739
 				},
 				{
-					["name"] = "Lightning Alexandrite",
-					["recipeID"] = 107604
+					name = "Lightning Alexandrite",
+					recipeID = 107604
 				},
 				{
-					["name"] = "Lightning Wild Jade",
-					["recipeID"] = 106955
+					name = "Lightning Wild Jade",
+					recipeID = 106955
 				},
 				{
-					["name"] = "Misty Alexandrite",
-					["recipeID"] = 107605
+					name = "Misty Alexandrite",
+					recipeID = 107605
 				},
 				{
-					["name"] = "Misty Wild Jade",
-					["recipeID"] = 106953
+					name = "Misty Wild Jade",
+					recipeID = 106953
 				},
 				{
-					["name"] = "Nimble Alexandrite",
-					["recipeID"] = 107606
+					name = "Nimble Alexandrite",
+					recipeID = 107606
 				},
 				{
-					["name"] = "Nimble Wild Jade",
-					["recipeID"] = 107740
+					name = "Nimble Wild Jade",
+					recipeID = 107740
 				},
 				{
-					["name"] = "Piercing Alexandrite",
-					["recipeID"] = 107607
+					name = "Piercing Alexandrite",
+					recipeID = 107607
 				},
 				{
-					["name"] = "Piercing Wild Jade",
-					["recipeID"] = 106954
+					name = "Piercing Wild Jade",
+					recipeID = 106954
 				},
 				{
-					["name"] = "Puissant Alexandrite",
-					["recipeID"] = 107608
+					name = "Puissant Alexandrite",
+					recipeID = 107608
 				},
 				{
-					["name"] = "Puissant Wild Jade",
-					["recipeID"] = 107742
+					name = "Puissant Wild Jade",
+					recipeID = 107742
 				},
 				{
-					["name"] = "Radiant Alexandrite",
-					["recipeID"] = 107609
+					name = "Radiant Alexandrite",
+					recipeID = 107609
 				},
 				{
-					["name"] = "Radiant Wild Jade",
-					["recipeID"] = 107743
+					name = "Radiant Wild Jade",
+					recipeID = 107743
 				},
 				{
-					["name"] = "Regal Alexandrite",
-					["recipeID"] = 107610
+					name = "Regal Alexandrite",
+					recipeID = 107610
 				},
 				{
-					["name"] = "Regal Wild Jade",
-					["recipeID"] = 107744
+					name = "Regal Wild Jade",
+					recipeID = 107744
 				},
 				{
-					["name"] = "Sensei's Alexandrite",
-					["recipeID"] = 107611
+					name = "Sensei's Alexandrite",
+					recipeID = 107611
 				},
 				{
-					["name"] = "Sensei's Wild Jade",
-					["recipeID"] = 106956
+					name = "Sensei's Wild Jade",
+					recipeID = 106956
 				},
 				{
-					["name"] = "Shattered Alexandrite",
-					["recipeID"] = 107612
+					name = "Shattered Alexandrite",
+					recipeID = 107612
 				},
 				{
-					["name"] = "Shattered Wild Jade",
-					["recipeID"] = 107745
+					name = "Shattered Wild Jade",
+					recipeID = 107745
 				},
 				{
-					["name"] = "Steady Alexandrite",
-					["recipeID"] = 107613
+					name = "Steady Alexandrite",
+					recipeID = 107613
 				},
 				{
-					["name"] = "Steady Wild Jade",
-					["recipeID"] = 107746
+					name = "Steady Wild Jade",
+					recipeID = 107746
 				},
 				{
-					["name"] = "Turbid Alexandrite",
-					["recipeID"] = 107614
+					name = "Turbid Alexandrite",
+					recipeID = 107614
 				},
 				{
-					["name"] = "Turbid Wild Jade",
-					["recipeID"] = 106962
+					name = "Turbid Wild Jade",
+					recipeID = 106962
 				},
 				{
-					["name"] = "Vivid Alexandrite",
-					["recipeID"] = 107615
+					name = "Vivid Alexandrite",
+					recipeID = 107615
 				},
 				{
-					["name"] = "Vivid Wild Jade",
-					["recipeID"] = 106961
+					name = "Vivid Wild Jade",
+					recipeID = 106961
 				},
 				{
-					["name"] = "Zen Alexandrite",
-					["recipeID"] = 107616
+					name = "Zen Alexandrite",
+					recipeID = 107616
 				},
 				{
-					["name"] = "Zen Wild Jade",
-					["recipeID"] = 106958
+					name = "Zen Wild Jade",
+					recipeID = 106958
 				}
 			}
 		},
 		{
-			["name"] = "Orange Gems",
-			["categoryID"] = 823,
-			["groups"] = {
+			name = "Orange Gems",
+			categoryID = 823,
+			groups = {
 				{
-					["name"] = "Adept Tiger Opal",
-					["recipeID"] = 107645
+					name = "Adept Tiger Opal",
+					recipeID = 107645
 				},
 				{
-					["name"] = "Adept Vermilion Onyx",
-					["recipeID"] = 107715
+					name = "Adept Vermilion Onyx",
+					recipeID = 107715
 				},
 				{
-					["name"] = "Artful Tiger Opal",
-					["recipeID"] = 107646
+					name = "Artful Tiger Opal",
+					recipeID = 107646
 				},
 				{
-					["name"] = "Artful Vermilion Onyx",
-					["recipeID"] = 107716
+					name = "Artful Vermilion Onyx",
+					recipeID = 107716
 				},
 				{
-					["name"] = "Champion's Tiger Opal",
-					["recipeID"] = 107647
+					name = "Champion's Tiger Opal",
+					recipeID = 107647
 				},
 				{
-					["name"] = "Champion's Vermilion Onyx",
-					["recipeID"] = 107717
+					name = "Champion's Vermilion Onyx",
+					recipeID = 107717
 				},
 				{
-					["name"] = "Crafty Tiger Opal",
-					["recipeID"] = 107648
+					name = "Crafty Tiger Opal",
+					recipeID = 107648
 				},
 				{
-					["name"] = "Crafty Vermilion Onyx",
-					["recipeID"] = 107718
+					name = "Crafty Vermilion Onyx",
+					recipeID = 107718
 				},
 				{
-					["name"] = "Deadly Tiger Opal",
-					["recipeID"] = 107649
+					name = "Deadly Tiger Opal",
+					recipeID = 107649
 				},
 				{
-					["name"] = "Deadly Vermilion Onyx",
-					["recipeID"] = 107719
+					name = "Deadly Vermilion Onyx",
+					recipeID = 107719
 				},
 				{
-					["name"] = "Deft Tiger Opal",
-					["recipeID"] = 107650
+					name = "Deft Tiger Opal",
+					recipeID = 107650
 				},
 				{
-					["name"] = "Deft Vermilion Onyx",
-					["recipeID"] = 107720
+					name = "Deft Vermilion Onyx",
+					recipeID = 107720
 				},
 				{
-					["name"] = "Fierce Tiger Opal",
-					["recipeID"] = 107651
+					name = "Fierce Tiger Opal",
+					recipeID = 107651
 				},
 				{
-					["name"] = "Fierce Vermilion Onyx",
-					["recipeID"] = 107721
+					name = "Fierce Vermilion Onyx",
+					recipeID = 107721
 				},
 				{
-					["name"] = "Fine Tiger Opal",
-					["recipeID"] = 107652
+					name = "Fine Tiger Opal",
+					recipeID = 107652
 				},
 				{
-					["name"] = "Fine Vermilion Onyx",
-					["recipeID"] = 107722
+					name = "Fine Vermilion Onyx",
+					recipeID = 107722
 				},
 				{
-					["name"] = "Inscribed Tiger Opal",
-					["recipeID"] = 107653
+					name = "Inscribed Tiger Opal",
+					recipeID = 107653
 				},
 				{
-					["name"] = "Inscribed Vermilion Onyx",
-					["recipeID"] = 107723
+					name = "Inscribed Vermilion Onyx",
+					recipeID = 107723
 				},
 				{
-					["name"] = "Keen Tiger Opal",
-					["recipeID"] = 107654
+					name = "Keen Tiger Opal",
+					recipeID = 107654
 				},
 				{
-					["name"] = "Keen Vermilion Onyx",
-					["recipeID"] = 107724
+					name = "Keen Vermilion Onyx",
+					recipeID = 107724
 				},
 				{
-					["name"] = "Lucent Tiger Opal",
-					["recipeID"] = 107655
+					name = "Lucent Tiger Opal",
+					recipeID = 107655
 				},
 				{
-					["name"] = "Lucent Vermilion Onyx",
-					["recipeID"] = 107725
+					name = "Lucent Vermilion Onyx",
+					recipeID = 107725
 				},
 				{
-					["name"] = "Polished Tiger Opal",
-					["recipeID"] = 107656
+					name = "Polished Tiger Opal",
+					recipeID = 107656
 				},
 				{
-					["name"] = "Polished Vermilion Onyx",
-					["recipeID"] = 107726
+					name = "Polished Vermilion Onyx",
+					recipeID = 107726
 				},
 				{
-					["name"] = "Potent Tiger Opal",
-					["recipeID"] = 107657
+					name = "Potent Tiger Opal",
+					recipeID = 107657
 				},
 				{
-					["name"] = "Potent Vermilion Onyx",
-					["recipeID"] = 107727
+					name = "Potent Vermilion Onyx",
+					recipeID = 107727
 				},
 				{
-					["name"] = "Reckless Tiger Opal",
-					["recipeID"] = 107658
+					name = "Reckless Tiger Opal",
+					recipeID = 107658
 				},
 				{
-					["name"] = "Reckless Vermilion Onyx",
-					["recipeID"] = 107728
+					name = "Reckless Vermilion Onyx",
+					recipeID = 107728
 				},
 				{
-					["name"] = "Resolute Tiger Opal",
-					["recipeID"] = 107659
+					name = "Resolute Tiger Opal",
+					recipeID = 107659
 				},
 				{
-					["name"] = "Resolute Vermilion Onyx",
-					["recipeID"] = 107729
+					name = "Resolute Vermilion Onyx",
+					recipeID = 107729
 				},
 				{
-					["name"] = "Resplendent Tiger Opal",
-					["recipeID"] = 107660
+					name = "Resplendent Tiger Opal",
+					recipeID = 107660
 				},
 				{
-					["name"] = "Resplendent Vermilion Onyx",
-					["recipeID"] = 107730
+					name = "Resplendent Vermilion Onyx",
+					recipeID = 107730
 				},
 				{
-					["name"] = "Skillful Tiger Opal",
-					["recipeID"] = 107661
+					name = "Skillful Tiger Opal",
+					recipeID = 107661
 				},
 				{
-					["name"] = "Skillful Vermilion Onyx",
-					["recipeID"] = 107731
+					name = "Skillful Vermilion Onyx",
+					recipeID = 107731
 				},
 				{
-					["name"] = "Splendid Tiger Opal",
-					["recipeID"] = 107662
+					name = "Splendid Tiger Opal",
+					recipeID = 107662
 				},
 				{
-					["name"] = "Splendid Vermilion Onyx",
-					["recipeID"] = 107732
+					name = "Splendid Vermilion Onyx",
+					recipeID = 107732
 				},
 				{
-					["name"] = "Stalwart Tiger Opal",
-					["recipeID"] = 107663
+					name = "Stalwart Tiger Opal",
+					recipeID = 107663
 				},
 				{
-					["name"] = "Stalwart Vermilion Onyx",
-					["recipeID"] = 107733
+					name = "Stalwart Vermilion Onyx",
+					recipeID = 107733
 				},
 				{
-					["name"] = "Tenuous Tiger Opal",
-					["recipeID"] = 107665
+					name = "Tenuous Tiger Opal",
+					recipeID = 107665
 				},
 				{
-					["name"] = "Tenuous Vermilion Onyx",
-					["recipeID"] = 107734
+					name = "Tenuous Vermilion Onyx",
+					recipeID = 107734
 				},
 				{
-					["name"] = "Wicked Tiger Opal",
-					["recipeID"] = 107666
+					name = "Wicked Tiger Opal",
+					recipeID = 107666
 				},
 				{
-					["name"] = "Wicked Vermilion Onyx",
-					["recipeID"] = 107735
+					name = "Wicked Vermilion Onyx",
+					recipeID = 107735
 				},
 				{
-					["name"] = "Willful Tiger Opal",
-					["recipeID"] = 107667
+					name = "Willful Tiger Opal",
+					recipeID = 107667
 				},
 				{
-					["name"] = "Willful Vermilion Onyx",
-					["recipeID"] = 107736
+					name = "Willful Vermilion Onyx",
+					recipeID = 107736
 				}
 			}
 		},
 		{
-			["name"] = "Purple Gems",
-			["categoryID"] = 824,
-			["groups"] = {
+			name = "Purple Gems",
+			categoryID = 824,
+			groups = {
 				{
-					["name"] = "Accurate Imperial Amethyst",
-					["recipeID"] = 107693
+					name = "Accurate Imperial Amethyst",
+					recipeID = 107693
 				},
 				{
-					["name"] = "Accurate Roguestone",
-					["recipeID"] = 107627
+					name = "Accurate Roguestone",
+					recipeID = 107627
 				},
 				{
-					["name"] = "Assassin's Imperial Amethyst",
-					["recipeID"] = 130657
+					name = "Assassin's Imperial Amethyst",
+					recipeID = 130657
 				},
 				{
-					["name"] = "Assassin's Roguestone",
-					["recipeID"] = 130656
+					name = "Assassin's Roguestone",
+					recipeID = 130656
 				},
 				{
-					["name"] = "Defender's Imperial Amethyst",
-					["recipeID"] = 107694
+					name = "Defender's Imperial Amethyst",
+					recipeID = 107694
 				},
 				{
-					["name"] = "Defender's Roguestone",
-					["recipeID"] = 107628
+					name = "Defender's Roguestone",
+					recipeID = 107628
 				},
 				{
-					["name"] = "Etched Imperial Amethyst",
-					["recipeID"] = 107695
+					name = "Etched Imperial Amethyst",
+					recipeID = 107695
 				},
 				{
-					["name"] = "Etched Roguestone",
-					["recipeID"] = 107630
+					name = "Etched Roguestone",
+					recipeID = 107630
 				},
 				{
-					["name"] = "Glinting Imperial Amethyst",
-					["recipeID"] = 107696
+					name = "Glinting Imperial Amethyst",
+					recipeID = 107696
 				},
 				{
-					["name"] = "Glinting Roguestone",
-					["recipeID"] = 107631
+					name = "Glinting Roguestone",
+					recipeID = 107631
 				},
 				{
-					["name"] = "Guardian's Imperial Amethyst",
-					["recipeID"] = 107697
+					name = "Guardian's Imperial Amethyst",
+					recipeID = 107697
 				},
 				{
-					["name"] = "Guardian's Roguestone",
-					["recipeID"] = 107632
+					name = "Guardian's Roguestone",
+					recipeID = 107632
 				},
 				{
-					["name"] = "Mysterious Imperial Amethyst",
-					["recipeID"] = 107698
+					name = "Mysterious Imperial Amethyst",
+					recipeID = 107698
 				},
 				{
-					["name"] = "Mysterious Roguestone",
-					["recipeID"] = 107633
+					name = "Mysterious Roguestone",
+					recipeID = 107633
 				},
 				{
-					["name"] = "Purified Imperial Amethyst",
-					["recipeID"] = 107699
+					name = "Purified Imperial Amethyst",
+					recipeID = 107699
 				},
 				{
-					["name"] = "Purified Roguestone",
-					["recipeID"] = 107634
+					name = "Purified Roguestone",
+					recipeID = 107634
 				},
 				{
-					["name"] = "Retaliating Imperial Amethyst",
-					["recipeID"] = 107700
+					name = "Retaliating Imperial Amethyst",
+					recipeID = 107700
 				},
 				{
-					["name"] = "Retaliating Roguestone",
-					["recipeID"] = 107635
+					name = "Retaliating Roguestone",
+					recipeID = 107635
 				},
 				{
-					["name"] = "Shifting Imperial Amethyst",
-					["recipeID"] = 107701
+					name = "Shifting Imperial Amethyst",
+					recipeID = 107701
 				},
 				{
-					["name"] = "Shifting Roguestone",
-					["recipeID"] = 107636
+					name = "Shifting Roguestone",
+					recipeID = 107636
 				},
 				{
-					["name"] = "Sovereign Imperial Amethyst",
-					["recipeID"] = 107702
+					name = "Sovereign Imperial Amethyst",
+					recipeID = 107702
 				},
 				{
-					["name"] = "Sovereign Roguestone",
-					["recipeID"] = 107637
+					name = "Sovereign Roguestone",
+					recipeID = 107637
 				},
 				{
-					["name"] = "Tense Imperial Amethyst",
-					["recipeID"] = 130658
+					name = "Tense Imperial Amethyst",
+					recipeID = 130658
 				},
 				{
-					["name"] = "Tense Roguestone",
-					["recipeID"] = 130655
+					name = "Tense Roguestone",
+					recipeID = 130655
 				},
 				{
-					["name"] = "Timeless Imperial Amethyst",
-					["recipeID"] = 107703
+					name = "Timeless Imperial Amethyst",
+					recipeID = 107703
 				},
 				{
-					["name"] = "Timeless Roguestone",
-					["recipeID"] = 107638
+					name = "Timeless Roguestone",
+					recipeID = 107638
 				},
 				{
-					["name"] = "Veiled Imperial Amethyst",
-					["recipeID"] = 107704
+					name = "Veiled Imperial Amethyst",
+					recipeID = 107704
 				},
 				{
-					["name"] = "Veiled Roguestone",
-					["recipeID"] = 107639
+					name = "Veiled Roguestone",
+					recipeID = 107639
 				}
 			}
 		},
 		{
-			["name"] = "Red Gems",
-			["categoryID"] = 825,
-			["groups"] = {
+			name = "Red Gems",
+			categoryID = 825,
+			groups = {
 				{
-					["name"] = "Bold Pandarian Garnet",
-					["recipeID"] = 107622
+					name = "Bold Pandarian Garnet",
+					recipeID = 107622
 				},
 				{
-					["name"] = "Bold Primordial Ruby",
-					["recipeID"] = 107705
+					name = "Bold Primordial Ruby",
+					recipeID = 107705
 				},
 				{
-					["name"] = "Brilliant Pandarian Garnet",
-					["recipeID"] = 107623
+					name = "Brilliant Pandarian Garnet",
+					recipeID = 107623
 				},
 				{
-					["name"] = "Brilliant Primordial Ruby",
-					["recipeID"] = 107706
+					name = "Brilliant Primordial Ruby",
+					recipeID = 107706
 				},
 				{
-					["name"] = "Delicate Pandarian Garnet",
-					["recipeID"] = 107624
+					name = "Delicate Pandarian Garnet",
+					recipeID = 107624
 				},
 				{
-					["name"] = "Delicate Primordial Ruby",
-					["recipeID"] = 107707
+					name = "Delicate Primordial Ruby",
+					recipeID = 107707
 				},
 				{
-					["name"] = "Flashing Pandarian Garnet",
-					["recipeID"] = 107625
+					name = "Flashing Pandarian Garnet",
+					recipeID = 107625
 				},
 				{
-					["name"] = "Flashing Primordial Ruby",
-					["recipeID"] = 107708
+					name = "Flashing Primordial Ruby",
+					recipeID = 107708
 				},
 				{
-					["name"] = "Precise Pandarian Garnet",
-					["recipeID"] = 107626
+					name = "Precise Pandarian Garnet",
+					recipeID = 107626
 				},
 				{
-					["name"] = "Precise Primordial Ruby",
-					["recipeID"] = 107709
+					name = "Precise Primordial Ruby",
+					recipeID = 107709
 				},
 			}
 		},
 		{
-			["name"] = "Yellow Gems",
-			["categoryID"] = 833,
-			["groups"] = {
+			name = "Yellow Gems",
+			categoryID = 833,
+			groups = {
 				{
-					["name"] = "Fractured Sun's Radiance",
-					["recipeID"] = 107710
+					name = "Fractured Sun's Radiance",
+					recipeID = 107710
 				},
 				{
-					["name"] = "Fractured Sunstone",
-					["recipeID"] = 107640
+					name = "Fractured Sunstone",
+					recipeID = 107640
 				},
 				{
-					["name"] = "Mystic Sun's Radiance",
-					["recipeID"] = 107711
+					name = "Mystic Sun's Radiance",
+					recipeID = 107711
 				},
 				{
-					["name"] = "Mystic Sunstone",
-					["recipeID"] = 107641
+					name = "Mystic Sunstone",
+					recipeID = 107641
 				},
 				{
-					["name"] = "Quick Sun's Radiance",
-					["recipeID"] = 107712
+					name = "Quick Sun's Radiance",
+					recipeID = 107712
 				},
 				{
-					["name"] = "Quick Sunstone",
-					["recipeID"] = 107642
+					name = "Quick Sunstone",
+					recipeID = 107642
 				},
 				{
-					["name"] = "Smooth Sun's Radiance",
-					["recipeID"] = 107713
+					name = "Smooth Sun's Radiance",
+					recipeID = 107713
 				},
 				{
-					["name"] = "Smooth Sunstone",
-					["recipeID"] = 107643
+					name = "Smooth Sunstone",
+					recipeID = 107643
 				},
 				{
-					["name"] = "Subtle Sun's Radiance",
-					["recipeID"] = 107714
+					name = "Subtle Sun's Radiance",
+					recipeID = 107714
 				},
 				{
-					["name"] = "Subtle Sunstone",
-					["recipeID"] = 107644
+					name = "Subtle Sunstone",
+					recipeID = 107644
 				}
 			}
 		},
 		{
-			["name"] = "Meta Gems",
-			["categoryID"] = 827,
-			["groups"] = {
+			name = "Meta Gems",
+			categoryID = 827,
+			groups = {
 				{
-					["name"] = "Agile Primal Diamond",
-					["recipeID"] = 107753
+					name = "Agile Primal Diamond",
+					recipeID = 107753
 				},
 				{
-					["name"] = "Austere Primal Diamond",
-					["recipeID"] = 107754
+					name = "Austere Primal Diamond",
+					recipeID = 107754
 				},
 				{
-					["name"] = "Burning Primal Diamond",
-					["recipeID"] = 107756
+					name = "Burning Primal Diamond",
+					recipeID = 107756
 				},
 				{
-					["name"] = "Destructive Primal Diamond",
-					["recipeID"] = 107757
+					name = "Destructive Primal Diamond",
+					recipeID = 107757
 				},
 				{
-					["name"] = "Effulgent Primal Diamond",
-					["recipeID"] = 107758
+					name = "Effulgent Primal Diamond",
+					recipeID = 107758
 				},
 				{
-					["name"] = "Ember Primal Diamond",
-					["recipeID"] = 107759
+					name = "Ember Primal Diamond",
+					recipeID = 107759
 				},
 				{
-					["name"] = "Enigmatic Primal Diamond",
-					["recipeID"] = 107760
+					name = "Enigmatic Primal Diamond",
+					recipeID = 107760
 				},
 				{
-					["name"] = "Eternal Primal Diamond",
-					["recipeID"] = 107762
+					name = "Eternal Primal Diamond",
+					recipeID = 107762
 				},
 				{
-					["name"] = "Fleet Primal Diamond",
-					["recipeID"] = 107763
+					name = "Fleet Primal Diamond",
+					recipeID = 107763
 				},
 				{
-					["name"] = "Forlorn Primal Diamond",
-					["recipeID"] = 107764
+					name = "Forlorn Primal Diamond",
+					recipeID = 107764
 				},
 				{
-					["name"] = "Impassive Primal Diamond",
-					["recipeID"] = 107765
+					name = "Impassive Primal Diamond",
+					recipeID = 107765
 				},
 				{
-					["name"] = "Powerful Primal Diamond",
-					["recipeID"] = 107766
+					name = "Powerful Primal Diamond",
+					recipeID = 107766
 				},
 				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
-					["name"] = "Primal Diamond",
-					["recipeID"] = 140060
+					name = "Primal Diamond",
+					recipeID = 140060
 				}),
 				{
-					["name"] = "Reverberating Primal Diamond",
-					["recipeID"] = 107767
+					name = "Reverberating Primal Diamond",
+					recipeID = 107767
 				},
 				{
-					["name"] = "Revitalizing Primal Diamond",
-					["recipeID"] = 107768
+					name = "Revitalizing Primal Diamond",
+					recipeID = 107768
 				}
 			}
 		},
 		{
-			["name"] = "Necklaces",
-			["categoryID"] = 828,
-			["groups"] = {
+			name = "Necklaces",
+			categoryID = 828,
+			groups = {
 				{
-					["name"] = "Golembreaker Amulet",
-					["recipeID"] = 122670
+					name = "Golembreaker Amulet",
+					recipeID = 122670
 				},
 				{
-					["name"] = "Reflection of the Sea",
-					["recipeID"] = 122669
+					name = "Reflection of the Sea",
+					recipeID = 122669
 				},
 				{
-					["name"] = "Shadowfire Necklace",
-					["recipeID"] = 122662
+					name = "Shadowfire Necklace",
+					recipeID = 122662
 				},
 				{
-					["name"] = "Skymage Circle",
-					["recipeID"] = 122672
+					name = "Skymage Circle",
+					recipeID = 122672
 				},
 				{
-					["name"] = "Tiger Opal Pendant",
-					["recipeID"] = 122673
+					name = "Tiger Opal Pendant",
+					recipeID = 122673
 				},
 				{
-					["name"] = "Widow Chain",
-					["recipeID"] = 122671
+					name = "Widow Chain",
+					recipeID = 122671
 				}
 			}
 		},
 		{
-			["name"] = "Rings",
-			["categoryID"] = 829,
-			["groups"] = {
+			name = "Rings",
+			categoryID = 829,
+			groups = {
 				{
-					["name"] = "Band of Blood",
-					["recipeID"] = 122668
+					name = "Band of Blood",
+					recipeID = 122668
 				},
 				{
-					["name"] = "Heart of the Earth",
-					["recipeID"] = 122664
+					name = "Heart of the Earth",
+					recipeID = 122664
 				},
 				{
-					["name"] = "Lionsfall Ring",
-					["recipeID"] = 122667
+					name = "Lionsfall Ring",
+					recipeID = 122667
 				},
 				{
-					["name"] = "Lord's Signet",
-					["recipeID"] = 122666
+					name = "Lord's Signet",
+					recipeID = 122666
 				},
 				{
-					["name"] = "Ornate Band",
-					["recipeID"] = 122661
+					name = "Ornate Band",
+					recipeID = 122661
 				},
 				{
-					["name"] = "Roguestone Shadowband",
-					["recipeID"] = 122665
+					name = "Roguestone Shadowband",
+					recipeID = 122665
 				}
 			}
 		},
 		{
-			["name"] = "Mounts",
-			["categoryID"] = 830,
-			["groups"] = {
+			name = "Mounts",
+			categoryID = 830,
+			groups = {
 				{
-					["name"] = "Jade Panther",
-					["recipeID"] = 121844
+					name = "Jade Panther",
+					recipeID = 121844
 				},
 				{
-					["name"] = "Jeweled Onyx Panther",
-					["recipeID"] = 120045
+					name = "Jeweled Onyx Panther",
+					recipeID = 120045
 				},
 				{
-					["name"] = "Ruby Panther",
-					["recipeID"] = 121841
+					name = "Ruby Panther",
+					recipeID = 121841
 				},
 				{
-					["name"] = "Sapphire Panther",
-					["recipeID"] = 121842
+					name = "Sapphire Panther",
+					recipeID = 121842
 				},
 				{
-					["name"] = "Sunstone Panther",
-					["recipeID"] = 121843
+					name = "Sunstone Panther",
+					recipeID = 121843
 				}
 			}
 		},
 		{
-			["name"] = "Toys & Pets",
-			["categoryID"] = 832,
-			["groups"] = {
+			name = "Toys & Pets",
+			categoryID = 832,
+			groups = {
 				{
-					["name"] = "Jade Owl",
-					["recipeID"] = 131897
+					name = "Jade Owl",
+					recipeID = 131897
 				},
 				{
-					["name"] = "Sapphire Cub",
-					["recipeID"] = 131898
+					name = "Sapphire Cub",
+					recipeID = 131898
 				},
 				{
-					["name"] = "Scrying Roguestone",
-					["recipeID"] = 122663
+					name = "Scrying Roguestone",
+					recipeID = 122663
 				}
 			}
 		}
@@ -5375,7 +5375,7 @@ cacheRecipes(_.Professions);
 
 -- Jewelcrafting Item Recipe Database
 local itemrecipe = function(name, itemID, spellID, spellIDAfterCata, timeline)
-	local o = { ["itemID"] = itemID, ["spellID"] = spellID, ["requireSkill"] = JEWELCRAFTING, ["f"] = RECIPES };
+	local o = { itemID = itemID, spellID = spellID, requireSkill = JEWELCRAFTING, f = RECIPES };
 	if spellIDAfterCata then
 		if type(spellIDAfterCata) == "number" then
 			-- #if AFTER CATA

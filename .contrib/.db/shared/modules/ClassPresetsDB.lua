@@ -2,7 +2,7 @@
 --   P R E S E T S   M O D U L E   --
 -------------------------------------
 local Presets = {
-	["DEATHKNIGHT"] = {
+	DEATHKNIGHT = {
 		[PLATE] = true,
 		[ONE_HANDED_AXES] = true,
 		[TWO_HANDED_AXES] = true,
@@ -12,14 +12,14 @@ local Presets = {
 		[TWO_HANDED_SWORDS] = true,
 		[POLEARMS] = true,
 	},
-	["DEMONHUNTER"] = {
+	DEMONHUNTER = {
 		[LEATHER] = true,
 		[ONE_HANDED_AXES] = true,
 		[ONE_HANDED_SWORDS] = true,
 		[FIST_WEAPONS] = true,
 		[WARGLAIVES] = true,
 	},
-	["DRUID"] = {
+	DRUID = {
 		[LEATHER] = true,
 		[DAGGERS] = true,
 		[ONE_HANDED_MACES] = true,
@@ -28,7 +28,7 @@ local Presets = {
 		[POLEARMS] = true,
 		[FIST_WEAPONS] = true,
 	},
-	["EVOKER"] = {
+	EVOKER = {
 		[MAIL] = true,
 		[DAGGERS] = true,
 		[ONE_HANDED_AXES] = true,
@@ -40,7 +40,7 @@ local Presets = {
 		[STAVES] = true,
 		[FIST_WEAPONS] = true,
 	},
-	["HUNTER"] = {
+	HUNTER = {
 		[MAIL] = true,
 		[DAGGERS] = true,
 		[ONE_HANDED_AXES] = true,
@@ -54,14 +54,14 @@ local Presets = {
 		[CROSSBOWS] = true,
 		[FIST_WEAPONS] = true,
 	},
-	["MAGE"] = {
+	MAGE = {
 		[CLOTH] = true,
 		[DAGGERS] = true,
 		[ONE_HANDED_SWORDS] = true,
 		[STAVES] = true,
 		[WANDS] = true,
 	},
-	["MONK"] = {
+	MONK = {
 		[LEATHER] = true,
 		[ONE_HANDED_AXES] = true,
 		[ONE_HANDED_MACES] = true,
@@ -70,7 +70,7 @@ local Presets = {
 		[POLEARMS] = true,
 		[FIST_WEAPONS] = true,
 	},
-	["PALADIN"] = {
+	PALADIN = {
 		[PLATE] = true,
 		[SHIELDS] = true,
 		[ONE_HANDED_AXES] = true,
@@ -81,14 +81,14 @@ local Presets = {
 		[TWO_HANDED_SWORDS] = true,
 		[POLEARMS] = true,
 	},
-	["PRIEST"] = {
+	PRIEST = {
 		[CLOTH] = true,
 		[DAGGERS] = true,
 		[ONE_HANDED_MACES] = true,
 		[STAVES] = true,
 		[WANDS] = true,
 	},
-	["ROGUE"] = {
+	ROGUE = {
 		[LEATHER] = true,
 		[DAGGERS] = true,
 		-- #if AFTER 3.2.0
@@ -101,7 +101,7 @@ local Presets = {
 		[CROSSBOWS] = true,
 		[FIST_WEAPONS] = true,
 	},
-	["SHAMAN"] = {
+	SHAMAN = {
 		[MAIL] = true,
 		[SHIELDS] = true,
 		[FIST_WEAPONS] = true,
@@ -112,14 +112,14 @@ local Presets = {
 		[TWO_HANDED_MACES] = true,
 		[STAVES] = true,
 	},
-	["WARLOCK"] = {
+	WARLOCK = {
 		[CLOTH] = true,
 		[DAGGERS] = true,
 		[ONE_HANDED_SWORDS] = true,
 		[WANDS] = true,
 		[STAVES] = true,
 	},
-	["WARRIOR"] = {
+	WARRIOR = {
 		[PLATE] = true,
 		[SHIELDS] = true,
 		[DAGGERS] = true,

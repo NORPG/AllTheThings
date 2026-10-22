@@ -3,8 +3,8 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
-	m(TORGHAST, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
-		n(NIGHT_FAE,  bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
+	m(TORGHAST, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
+		n(NIGHT_FAE,  bubbleDown({ customCollect = "SL_COV_NFA" }, {
 			n(SOULSHAPES, {
 				n(185453, {	-- Lost Soul
 					i(189977),	-- Bat Soul

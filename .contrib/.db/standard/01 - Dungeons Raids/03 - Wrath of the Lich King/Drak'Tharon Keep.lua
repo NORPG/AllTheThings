@@ -21,114 +21,114 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty, CommonBossDrops =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
 	inst(273, {	-- Drak'Tharon Keep
-		["mapID"] = DRAKTHARON_KEEP,
-		["coord"] = { 28.6, 86.9, ZULDRAK },
-		["maps"] = { DRAKTHARON_KEEP_FLOOR2 },
-		["lvl"] = lvlsquish(69, 69, 15),
-		["groups"] = {
+		mapID = DRAKTHARON_KEEP,
+		coord = { 28.6, 86.9, ZULDRAK },
+		maps = { DRAKTHARON_KEEP_FLOOR2 },
+		lvl = lvlsquish(69, 69, 15),
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(482, {	-- Drak'Tharon Keep
 					-- #if AFTER 7.3.5
 					crit(5443, {	-- Trollgore
-						["_encounter"] = { TROLLGORE, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { TROLLGORE, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(5444, {	-- Novos the Summoner
-						["_encounter"] = { NOVOS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { NOVOS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(5445, {	-- King Dred
-						["_encounter"] = { KING_DRED, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { KING_DRED, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(9098, {	-- The Prophet Tharon'ja
-						["_encounter"] = { THARONJA, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { THARONJA, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					-- #else
 					crit(5443, {	-- Trollgore
-						["_encounter"] = { TROLLGORE, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { TROLLGORE, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5444, {	-- Novos the Summoner
-						["_encounter"] = { NOVOS, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { NOVOS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5445, {	-- King Dred
-						["_encounter"] = { KING_DRED, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { KING_DRED, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(9098, {	-- The Prophet Tharon'ja
-						["_encounter"] = { THARONJA, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { THARONJA, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17292, {	-- Defense Protocol Alpha: Drak'Tharon Keep
 					crit(57735, {	-- Trollgore
-						["_encounter"] = { TROLLGORE, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { TROLLGORE, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57736, {	-- Novos the Summoner
-						["_encounter"] = { NOVOS, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { NOVOS, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57737, {	-- King Dred
-						["_encounter"] = { KING_DRED, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { KING_DRED, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57738, {	-- The Prophet Tharon'ja
-						["_encounter"] = { THARONJA, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { THARONJA, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18594, {	-- Defense Protocol Beta: Drak'Tharon Keep
 					crit(60587, {	-- Trollgore
-						["_encounter"] = { TROLLGORE, DEFENSE_PROTOCOL_BETA },
+						_encounter = { TROLLGORE, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60588, {	-- Novos the Summoner
-						["_encounter"] = { NOVOS, DEFENSE_PROTOCOL_BETA },
+						_encounter = { NOVOS, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60589, {	-- King Dred
-						["_encounter"] = { KING_DRED, DEFENSE_PROTOCOL_BETA },
+						_encounter = { KING_DRED, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60590, {	-- The Prophet Tharon'ja
-						["_encounter"] = { THARONJA, DEFENSE_PROTOCOL_BETA },
+						_encounter = { THARONJA, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19431, {	-- Defense Protocol Gamma: Drak'Tharon Keep
 					crit(63334, {	-- Trollgore
-						["_encounter"] = { TROLLGORE, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { TROLLGORE, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63335, {	-- Novos the Summoner
-						["_encounter"] = { NOVOS, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { NOVOS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63336, {	-- King Dred
-						["_encounter"] = { KING_DRED, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { KING_DRED, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63337, {	-- The Prophet Tharon'ja
-						["_encounter"] = { THARONJA, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { THARONJA, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
 				ach(493, {	-- Heroic: Drak'Tharon Keep
 					crit(6813, {	-- Trollgore
-						["_encounter"] = { TROLLGORE, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { TROLLGORE, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6814, {	-- Novos the Summoner
-						["_encounter"] = { NOVOS, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { NOVOS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6815, {	-- King Dred
-						["_encounter"] = { KING_DRED, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { KING_DRED, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(9261, {	-- The Prophet Tharon'ja
-						["_encounter"] = { THARONJA, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { THARONJA, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
 			n(QUESTS, {
 				q(12238, {	-- Cleansing Drak'Tharon
-					["sourceQuest"] = 12068,	-- Voices From the Dust
+					sourceQuest = 12068,	-- Voices From the Dust
 					-- #if AFTER 4.3.0.14890
-					["altQuests"] = { 30120 },	-- Cleansing Drak'Tharon
+					altQuests = { 30120 },	-- Cleansing Drak'Tharon
 					-- #endif
-					["qg"] = 26787,	-- Image of Drakuru
-					["qi"] = 35797,	-- Drakuru's Elixir
-					["coord"] = { 71.7, 26.1, GRIZZLY_HILLS },
-					["cost"] = { { "i", 38303, 5 } },	-- Enduring Mojo
-					["lvl"] = lvlsquish(73, 73, 15),
-					["groups"] = {
+					qg = 26787,	-- Image of Drakuru
+					qi = 35797,	-- Drakuru's Elixir
+					coord = { 71.7, 26.1, GRIZZLY_HILLS },
+					cost = { { "i", 38303, 5 } },	-- Enduring Mojo
+					lvl = lvlsquish(73, 73, 15),
+					groups = {
 						i(40755),	-- Enticing Sabatons
 						i(40757),	-- Shackles of Dark Whispers
 						i(40756),	-- Shoulders of the Seducer
@@ -136,13 +136,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(30120, {	-- Cleansing Drak'Tharon
-					["altQuests"] = { 12238 },	-- Cleansing Drak'Tharon
-					["qg"] = 58149,	-- Image of Drakuru
-					["qi"] = 35797,	-- Drakuru's Elixir
-					["timeline"] = { ADDED_4_3_0 },
-					["cost"] = { { "i", 38303, 5 } },	-- Enduring Mojo
-					["lvl"] = lvlsquish(73, 73, 15),
-					["groups"] = {
+					altQuests = { 12238 },	-- Cleansing Drak'Tharon
+					qg = 58149,	-- Image of Drakuru
+					qi = 35797,	-- Drakuru's Elixir
+					timeline = { ADDED_4_3_0 },
+					cost = { { "i", 38303, 5 } },	-- Enduring Mojo
+					lvl = lvlsquish(73, 73, 15),
+					groups = {
 						i(40755),	-- Enticing Sabatons
 						i(40757),	-- Shackles of Dark Whispers
 						i(40756),	-- Shoulders of the Seducer
@@ -151,20 +151,20 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(13129, {	-- Head Games
 					-- #if BEFORE 4.3.0.15005
-					["sourceQuest"] = 12037,	-- Search and Rescue
+					sourceQuest = 12037,	-- Search and Rescue
 					-- #endif
-					["qgs"] = {
+					qgs = {
 						-- #if AFTER 4.3.0.15005
 						55677,	-- Kurzel
 						-- #endif
 						26664,	-- Kurzel
 					},
-					["lvl"] = lvlsquish(72, 72, 15),
-					["groups"] = {
+					lvl = lvlsquish(72, 72, 15),
+					groups = {
 						objective(1, {	-- 0/1 Ichor-Stained Cloth
-							["provider"] = { "i", 43215 },	-- Ichor-Stained Cloth
-							["cost"] = { { "i", 43214, 1 } },	-- Kurzel's Blouse Scrap
-							["cr"] = 26631,	-- Novos the Summoner
+							provider = { "i", 43215 },	-- Ichor-Stained Cloth
+							cost = { { "i", 43214, 1 } },	-- Kurzel's Blouse Scrap
+							cr = 26631,	-- Novos the Summoner
 						}),
 						i(44368),	-- Accused Wristguards
 						i(44369),	-- Disavowed Bracers
@@ -173,16 +173,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(29828, {	-- What the Scourge Dred
-					["qgs"] = {
+					qgs = {
 						26664,	-- Kurzel
 						29828,	-- Kurzel
 					},
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(72, 72, 15),
-					["groups"] = {
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(72, 72, 15),
+					groups = {
 						objective(1, {	-- 0/1 King Dred's Tooth
-							["provider"] = { "i", 74755 },	-- King Dred's Tooth
-							["cr"] = 27483,	-- King Dred
+							provider = { "i", 74755 },	-- King Dred's Tooth
+							cr = 27483,	-- King Dred
 						}),
 					},
 				}),
@@ -194,7 +194,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(35639),	-- Brighthelm of Guarding
 					i(35640),	-- Darkweb Bindings
 					i(38303, {	-- Enduring Mojo
-						["crs"] = {
+						crs = {
 							27431,	-- Drakkari Commander
 							26620,	-- Drakkari Guardian
 							26639,	-- Drakkari Shaman
@@ -219,12 +219,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(37721),	-- Cursed Lich Blade
 					i(40490),	-- Necromantic Wristguards
 					i(35632),	-- Robes of Novos
-					i(157558, { ["timeline"] = { ADDED_7_3_5 } }),	-- Shoddily Stitched Shoulderguards
+					i(157558, { timeline = { ADDED_7_3_5 } }),	-- Shoddily Stitched Shoulderguards
 					i(35630),	-- Summoner's Stone Gavel
 					i(37718),	-- Temple Crystal Fragment
 				}),
 				BossOnly(KING_DRED, {
-					i(157561, { ["timeline"] = { ADDED_7_3_5 } }),	-- Dino-Toothed Waistguard
+					i(157561, { timeline = { ADDED_7_3_5 } }),	-- Dino-Toothed Waistguard
 					i(37724),	-- Handler's Arm Strap
 					i(37723),	-- Incisor Fragment
 					i(37726),	-- King Dred's Helm
@@ -249,9 +249,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
 				CommonBossDrops({
-					currency(101, { ["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
+					currency(101, { timeline = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
 				}),
 				BossOnly(TROLLGORE, {
 					ach(2151),	-- Consumption Junction
@@ -263,11 +263,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					ach(2039),	-- Better Off Dred
 				}),
 				BossOnly(THARONJA, {
-					i(43670, { ["timeline"] = { REMOVED_4_0_1 } }),	-- Prophet's Enchanted Tiki (QI!)
+					i(43670, { timeline = { REMOVED_4_0_1 } }),	-- Prophet's Enchanted Tiki (QI!)
 					--
-					ach(5099, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Drak'Tharon Keep Guild Run
+					ach(5099, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Drak'Tharon Keep Guild Run
 					i(41795, {	-- Design: Timeless Twilight Opal [CATA+] / Design: Timeless Forest Emerald (RECIPE!)
-						["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3 },
+						timeline = { ADDED_3_0_3, REMOVED_4_0_3 },
 					}),
 				}),
 			}),
@@ -275,7 +275,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
 				n(ZONE_DROPS, {
 					i(38303, {	-- Enduring Mojo
-						["crs"] = {
+						crs = {
 							27431,	-- Drakkari Commander
 							26620,	-- Drakkari Guardian
 							26639,	-- Drakkari Shaman
@@ -310,14 +310,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(35636),	-- Tharon'ja's Aegis
 				}),
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
 				n(ZONE_DROPS, {
 					i(37800),	-- Aviary Guardsman's Hauberk
 					i(37799),	-- Reanimator's Cloak
 					i(37801),	-- Waistguard of the Risen Knight
 				}),
 				CommonBossDrops({
-					currency(101, { ["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
+					currency(101, { timeline = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
 				}),
 				BossOnly(TROLLGORE, {
 					ach(2151),	-- Consumption Junction
@@ -341,11 +341,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(37725),	-- Savage Wound Wrap
 				}),
 				BossOnly(THARONJA, {
-					i(43670, { ["timeline"] = { REMOVED_4_0_1 } }),	-- Prophet's Enchanted Tiki (QI!)
+					i(43670, { timeline = { REMOVED_4_0_1 } }),	-- Prophet's Enchanted Tiki (QI!)
 					--
-					ach(5099, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Drak'Tharon Keep Guild Run
+					ach(5099, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Drak'Tharon Keep Guild Run
 					i(41795, {	-- Design: Timeless Twilight Opal [CATA+] / Design: Timeless Forest Emerald (RECIPE!)
-						["timeline"] = { ADDED_3_0_3, REMOVED_4_0_3 },
+						timeline = { ADDED_3_0_3, REMOVED_4_0_3 },
 					}),
 					i(37784),	-- Keystone Great-Ring
 					i(37791),	-- Leggings of the Winged Serpent
@@ -360,9 +360,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 			-- #if ANYCLASSIC
 			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394438, 413169, 424203),
-				["lvl"] = lvlsquish(80, 80, 30),
-				["groups"] = {
+				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394438, 413169, 424203),
+				lvl = lvlsquish(80, 80, 30),
+				groups = {
 					BossOnly(TROLLGORE, {
 						i(39241),	-- Dark Shroud of the Scourge
 						i(39245),	-- Demise
@@ -386,9 +386,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				},
 			})),
 			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(413169, 424203),
-				["lvl"] = lvlsquish(80, 80, 30),
-				["groups"] = {
+				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(413169, 424203),
+				lvl = lvlsquish(80, 80, 30),
+				groups = {
 					BossOnly(TROLLGORE, {
 						i(45698),	-- Sabatons of the Iron Watcher
 						i(45697),	-- Shoulderguards of the Solemn Watch
@@ -409,9 +409,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				},
 			})),
 			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424203),
-				["lvl"] = lvlsquish(80, 80, 30),
-				["groups"] = {
+				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424203),
+				lvl = lvlsquish(80, 80, 30),
+				groups = {
 					BossOnly(TROLLGORE),
 					BossOnly(NOVOS),
 					BossOnly(KING_DRED),
@@ -423,7 +423,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(273, {
 		q(35483),	-- Drak'Tharon Keep Reward Quest - Normal completion
 		q(35484),	-- Drak'Tharon Keep Reward Quest - Heroic completion

@@ -45,12 +45,12 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, BossWithHeader =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.BossWithHeader
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	inst(547, {	-- Auchindoun
-		["mapID"] = 593,
-		["coord"] = { 46.27, 73.92, TALADOR },
-		["lvl"] = 94,
-		["groups"] = {
+		mapID = 593,
+		coord = { 46.27, 73.92, TALADOR },
+		lvl = 94,
+		groups = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(VIGILANT),
 				BossOnly(SOULBINDER),
@@ -58,43 +58,43 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(TERONGOR, {
 					ach(9039),	-- Auchindoun
 					i(251331, {	-- Draenic Ottoman (DECOR!)
-						["timeline"] = { ADDED_11_2_7 },
+						timeline = { ADDED_11_2_7 },
 					}),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC).AddGroups({
 				Boss(VIGILANT, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, WAIST, FINGER),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, WAIST, FINGER),
 				}),
 				Boss(SOULBINDER, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, CHEST, NECK),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, CHEST, NECK),
 				}),
 				Boss(AZZAKEL, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, WRIST, HANDS),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, WRIST, HANDS),
 				}),
 				Boss(TERONGOR, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, BACK, LEGS, FEET),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, BACK, LEGS, FEET),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 				BossWithHeader(VIGILANT, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, WAIST, FINGER),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, WAIST, FINGER),
 				}),
 				BossWithHeader(SOULBINDER, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, CHEST, NECK),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, CHEST, NECK),
 				}),
 				BossWithHeader(AZZAKEL, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, WRIST, HANDS),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, WRIST, HANDS),
 				}),
 				BossWithHeader(TERONGOR, HEADER_WARFORGED, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, BACK, LEGS, FEET),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, BACK, LEGS, FEET),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(VIGILANT),
 				BossOnly(SOULBINDER, {
 					ach(9023, {	-- ...They All Fall Down
-						["crs"] = { 76283 },	-- Malefic Defender
+						crs = { 76283 },	-- Malefic Defender
 					}),
 				}),
 				BossOnly(AZZAKEL, {
@@ -109,16 +109,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
 				Boss(VIGILANT, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, WAIST, FINGER),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, WAIST, FINGER),
 				}),
 				Boss(SOULBINDER, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, CHEST, NECK),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, CHEST, NECK),
 				}),
 				Boss(AZZAKEL, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, WRIST, HANDS),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, WRIST, HANDS),
 				}),
 				Boss(TERONGOR, {
-					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, BACK, LEGS, FEET),
+					sym = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, BACK, LEGS, FEET),
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
@@ -133,7 +133,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(547, {
 		q(35960),	-- Auchindoun Reward Quest
 		q(34539),	-- Draenor Challenge Mode - Bronze Addition (Nth)

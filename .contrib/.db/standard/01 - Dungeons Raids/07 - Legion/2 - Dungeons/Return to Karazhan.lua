@@ -2,139 +2,139 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_1_0 } }, {
 	inst(860, {	-- Return to Karazhan
-		["coord"] = { 46.7, 70.1, DEADWIND_PASS },
-		["maps"] = {
+		coord = { 46.7, 70.1, DEADWIND_PASS },
+		maps = {
 			815, 816, 817, 818, 819, 820, 821, 822,	-- Upper
 			809, 810, 811, 812, 813, 814,	-- Lower
 		},
-		["lvl"] = 110,
-		["groups"] = {
+		lvl = 110,
+		groups = {
 			n(QUESTS, {
 				q(44684, {	-- Corruption Runs Deep
-					["qg"] = 114631,	-- Archmage Karlain
-					["coord"] = { 46.9, 75.3, DEADWIND_PASS },
-					["groups"] = { i(141878) },	-- Arcane-Infused Vial (PQI!)
+					qg = 114631,	-- Archmage Karlain
+					coord = { 46.9, 75.3, DEADWIND_PASS },
+					groups = { i(141878) },	-- Arcane-Infused Vial (PQI!)
 				}),
 				q(44764, {	-- Demon in Disguise
-					["sourceQuest"] = 44686,	-- Thought Collection
-					["qg"] = 114631,	-- Archmage Karlain <Kirin Tor>
-					["coord"] = { 46.9, 75.3, DEADWIND_PASS },
-					["lvl"] = 110,
+					sourceQuest = 44686,	-- Thought Collection
+					qg = 114631,	-- Archmage Karlain <Kirin Tor>
+					coord = { 46.9, 75.3, DEADWIND_PASS },
+					lvl = 110,
 				}),
 				q(44557, {	-- Finite Numbers
-					["qg"] = 114310,	-- Archmage Khadgar
-					["coord"] = { 47.0, 75.2, DEADWIND_PASS },
-					["lvl"] = 110,
+					qg = 114310,	-- Archmage Khadgar
+					coord = { 47.0, 75.2, DEADWIND_PASS },
+					lvl = 110,
 				}),
 				q(44734, {	-- Fragments of the Past
-					["sourceQuest"] = 44733,	-- The Power of Corruption
-					["qg"] = 114310,	-- Archmage Khadgar
-					["coord"] = { 47.0, 75.2, DEADWIND_PASS },
-					["lvl"] = 110,
-					["groups"] = { i(142460) },	-- Violet Seal of the Archmage
+					sourceQuest = 44733,	-- The Power of Corruption
+					qg = 114310,	-- Archmage Khadgar
+					coord = { 47.0, 75.2, DEADWIND_PASS },
+					lvl = 110,
+					groups = { i(142460) },	-- Violet Seal of the Archmage
 				}),
 				q(44683, {	-- Holding the Lines
-					["qg"] = 114310,	-- Archmage Khadgar
-					["coord"] = { 47.0, 75.2, DEADWIND_PASS },
-					["lvl"] = 110,
+					qg = 114310,	-- Archmage Khadgar
+					coord = { 47.0, 75.2, DEADWIND_PASS },
+					lvl = 110,
 				}),
 				q(45296, {	-- No Bones About It
-					["description"] = "You must complete the full quest chain before the quest item will drop from the boss.",
-					["sourceQuest"] = 45295,	-- Return to Karazhan: Clearing Out the Cobwebs
-					["provider"] = { "i", 143556 },	-- Charred Bone Fragments
-					["groups"] = { i(142469) },	-- Violet Seal of the Grand Magus
+					description = "You must complete the full quest chain before the quest item will drop from the boss.",
+					sourceQuest = 45295,	-- Return to Karazhan: Clearing Out the Cobwebs
+					provider = { "i", 143556 },	-- Charred Bone Fragments
+					groups = { i(142469) },	-- Violet Seal of the Grand Magus
 				}),
 				q(44685, {	-- Reclaiming the Ramparts
-					["sourceQuests"] = {
+					sourceQuests = {
 						44684,	-- Corruption Runs Deep
 						44557,	-- Finite Numbers
 						44683,	-- Holding the Lines
 					},
-					["qg"] = 114310,	-- Archmage Khadgar
-					["coord"] = { 47.0, 75.2, DEADWIND_PASS },
-					["lvl"] = 110,
-					["qi"] = 142213,	-- Empowered Arcane Ward (QI!)
+					qg = 114310,	-- Archmage Khadgar
+					coord = { 47.0, 75.2, DEADWIND_PASS },
+					lvl = 110,
+					qi = 142213,	-- Empowered Arcane Ward (QI!)
 				}),
 				q(44556, {	-- Return to Karazhan
-					["qg"] = 90417,	-- Archmage Khadgar
-					["coord"] = { 28.8, 48.6, LEGION_DALARAN },
-					["timeline"] = { ADDED_7_1_0, REMOVED_7_3_0 },
-					["lvl"] = 110,
+					qg = 90417,	-- Archmage Khadgar
+					coord = { 28.8, 48.6, LEGION_DALARAN },
+					timeline = { ADDED_7_1_0, REMOVED_7_3_0 },
+					lvl = 110,
 				}),
 				q(45291, {	-- Return to Karazhan: Book Wyrms
-					["sourceQuests"] = {
+					sourceQuests = {
 						44734,	-- Fragments of the Past
 						44735,	-- Return to Karazhan: In the Eye of the Beholder
 					},
-					["qg"] = 18255,	-- Mage Darius
-					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
-					["lvl"] = 110,
+					qg = 18255,	-- Mage Darius
+					coord = { 47.3, 75.0, DEADWIND_PASS },
+					lvl = 110,
 				}),
 				q(45295, {	-- Return to Karazhan: Clearing Out the Cobwebs
-					["sourceQuest"] = 45294,	-- Return to Karazhan: High Stress Hiatus
-					["qg"] = 18255,	-- Mage Darius
-					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
-					["lvl"] = 110,
+					sourceQuest = 45294,	-- Return to Karazhan: High Stress Hiatus
+					qg = 18255,	-- Mage Darius
+					coord = { 47.3, 75.0, DEADWIND_PASS },
+					lvl = 110,
 				}),
 				q(45294, {	-- Return to Karazhan: High Stress Hiatus
-					["sourceQuest"] = 45293,	-- Return to Karazhan: New Shoes
-					["qg"] = 18255,	-- Mage Darius
-					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
-					["lvl"] = 110,
-					["groups"] = { i(142468) },	-- Violet Seal of the Archmage
+					sourceQuest = 45293,	-- Return to Karazhan: New Shoes
+					qg = 18255,	-- Mage Darius
+					coord = { 47.3, 75.0, DEADWIND_PASS },
+					lvl = 110,
+					groups = { i(142468) },	-- Violet Seal of the Archmage
 				}),
 				q(44735, {	-- Return to Karazhan: In the Eye of the Beholder
-					["sourceQuest"] = 44733,	-- The Power of Corruption
-					["qg"] = 114310,	-- Archmage Khadgar
-					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
-					["lvl"] = 110,
+					sourceQuest = 44733,	-- The Power of Corruption
+					qg = 114310,	-- Archmage Khadgar
+					coord = { 47.3, 75.0, DEADWIND_PASS },
+					lvl = 110,
 				}),
 				q(44803, {	-- Return to Karazhan: Master of the House
-					["provider"] = { "i", 142246 },	-- Broken Pocket Watch
-					["qis"] = {
+					provider = { "i", 142246 },	-- Broken Pocket Watch
+					qis = {
 						142248,	-- Exquisitely Stinky Cheese (QI!)
 						142249,	-- Falanaar Fine Vintage (QI!)
 						142275,	-- Master's Bell (QI!)
 					},
 				}),
 				q(45293, {	-- Return to Karazhan: New Shoes
-					["sourceQuest"] = 45292,	-- Return to Karazhan: Rebooting the Cleaner
-					["qg"] = 18255,	-- Mage Darius
-					["lvl"] = 110,
+					sourceQuest = 45292,	-- Return to Karazhan: Rebooting the Cleaner
+					qg = 18255,	-- Mage Darius
+					lvl = 110,
 				}),
 				q(45292, {	-- Return to Karazhan: Rebooting the Cleaner
-					["sourceQuest"] = 45291,	-- Return to Karazhan: Book Wyrms
-					["qg"] = 18255,	-- Mage Darius
-					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
-					["lvl"] = 110,
-					["groups"] = { i(142461) },	-- Violet Seal of the Archmage
+					sourceQuest = 45291,	-- Return to Karazhan: Book Wyrms
+					qg = 18255,	-- Mage Darius
+					coord = { 47.3, 75.0, DEADWIND_PASS },
+					lvl = 110,
+					groups = { i(142461) },	-- Violet Seal of the Archmage
 				}),
 				q(44733, {	-- The Power of Corruption
-					["sourceQuest"] = 44764,	-- Demon in Disguise
-					["qg"] = 114310,	-- Archmage Khadgar
-					["coord"] = { 46.9, 75.2, DEADWIND_PASS },
-					["lvl"] = 110,
-					["qi"] = 142208,	-- Essence of Wyrmtongue (QI!)
+					sourceQuest = 44764,	-- Demon in Disguise
+					qg = 114310,	-- Archmage Khadgar
+					coord = { 46.9, 75.2, DEADWIND_PASS },
+					lvl = 110,
+					qi = 142208,	-- Essence of Wyrmtongue (QI!)
 				}),
 				q(44686, {	-- Thought Collection
-					["sourceQuests"] = {
+					sourceQuests = {
 						44684,	-- Corruption Runs Deep
 						44557,	-- Finite Numbers
 						44683,	-- Holding the Lines
 					},
-					["qg"] = 114631,	-- Archmage Karlain <Kirin Tor>
-					["coord"] = { 46.9, 75.3, DEADWIND_PASS },
-					["lvl"] = 110,
+					qg = 114631,	-- Archmage Karlain <Kirin Tor>
+					coord = { 46.9, 75.3, DEADWIND_PASS },
+					lvl = 110,
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
-				["groups"] = {
+				groups = {
 					i(143615),	-- Technique: Glyph of Crackling Ox Lightning (RECIPE!)
 					i(143616),	-- Technique: Glyph of the Trusted Steed (RECIPE!)
 				},
-				["crs"] = {
+				crs = {
 					114284,	-- Opera Hall: Wikket
 					114261,	-- Opera Hall: Westfall Story
 					114330,	-- Opera Hall: Beautiful Beast — Babblet
@@ -152,22 +152,22 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			}),
 			n(TREASURES, {
 				i(208048, {	-- Ritual of the Voidmaw Felhunter (CI!)
-					["description"] = "Located by a bookshelf on the second floor of the library in Legion Karazhan, after killing Mana Devourer.",
-					["provider"] = { "o", 405286 },	-- Torn Page
-					["timeline"] = { ADDED_10_1_5 },
+					description = "Located by a bookshelf on the second floor of the library in Legion Karazhan, after killing Mana Devourer.",
+					provider = { "o", 405286 },	-- Torn Page
+					timeline = { ADDED_10_1_5 },
 				}),
 			}),
 			n(VENDORS, {
 				n(114815, {	-- Koren
-					["description"] = "This vendor is located in the Livery Stables.",
-					["groups"] = {
+					description = "This vendor is located in the Livery Stables.",
+					groups = {
 						i(31395),	-- Plans: Iceguard Helm (RECIPE!)
 						i(31393),	-- Plans: Iceguard Breastplate (RECIPE!)
 						i(31394),	-- Plans: Iceguard Leggings (RECIPE!)
 					},
 				}),
 			}),
-			n(ZONE_DROPS, sharedData({ ["crs"] = {
+			n(ZONE_DROPS, sharedData({ crs = {
 				115401,	-- Bishop
 				115402,	-- Bishop
 				115388,	-- King
@@ -189,39 +189,39 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			})),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(1837, {	-- Moroes
-					["creatureID"] = 114312,	-- Moroes
-					["groups"] = {
+					creatureID = 114312,	-- Moroes
+					groups = {
 						i(138797),	-- Illusion: Mongoose (ILLUSION!)
 						i(142246, {	-- Broken Pocket Watch
-							["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
+							description = "This is a rare drop that eventually leads to adding Moroes as a follower.",
 						}),
 					},
 				}),
 				e(1817, {	-- Shade of Medivh
-					["creatureID"] = 114350,	-- Shade of Medivh
-					["groups"] = { i(138798) },	-- Illusion: Sunfire (ILLUSION!)
+					creatureID = 114350,	-- Shade of Medivh
+					groups = { i(138798) },	-- Illusion: Sunfire (ILLUSION!)
 				}),
 				e(1838, {	-- Viz'aduum the Watcher
-					["creatureID"] = 114790,	-- Viz'aduum the Watcher
-					["groups"] = {
+					creatureID = 114790,	-- Viz'aduum the Watcher
+					groups = {
 						ach(11929),	-- Heroic: Return to Karazhan
 						i(213017, {	-- Grimoire of the Riftsmolder Darkglare (CI!)
-							["timeline"] = { ADDED_10_2_5 },
+							timeline = { ADDED_10_2_5 },
 						}),
 						i(246865, {	-- Tome of Reliquary Insights (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
+							timeline = { ADDED_11_2_7 },
 						}),
 					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(1820, {	-- Opera Hall: Wikket
-					["crs"] = {
+					crs = {
 						114339,	-- Barnes <The Stage Manager>
 						114284,	-- Elfyra
 						114251,	-- Galindre
 					},
-					["groups"] = {
+					groups = {
 						i(142298),	-- Astonishingly Scarlet Slippers
 						i(142204),	-- Boots of False Promise
 						i(142300),	-- Greaves of Miraculous Magnificence
@@ -236,12 +236,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1826, {	-- Opera Hall: Westfall Story
-					["crs"] = {
+					crs = {
 						114339,	-- Barnes <The Stage Manager>
 						114260,	-- Mrrgria
 						114261,	-- Toe Knee
 					},
-					["groups"] = {
+					groups = {
 						i(142302),	-- Armguards of Burning Passion
 						i(142146),	-- Blackfin Wristband
 						i(142154),	-- Bracelets of the Sorrowful Bridge
@@ -254,14 +254,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1827, {	-- Opera Hall: Beautiful Beast
-					["crs"] = {
+					crs = {
 						114339,	-- Barnes <The Stage Manager>
 						114328,	-- Coggleston
 						114330,	-- Babblet
 						114329,	-- Luminore
 						114522,	-- Mrs. Cauldrons
 					},
-					["groups"] = {
+					groups = {
 						i(142196),	-- Cinch of Improbable Desire
 						i(142206),	-- Cloak of Sweltering Flame
 						i(142197),	-- Legguards of Imprisonment
@@ -274,8 +274,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1825, {	-- Maiden of Virtue
-					["creatureID"] = 113971,	-- Maiden of Virtue
-					["groups"] = {
+					creatureID = 113971,	-- Maiden of Virtue
+					groups = {
 						i(142138),	-- Confiscated Manacle
 						i(142153),	-- Cord of the Penitent
 						i(142170),	-- Drape of Shame
@@ -287,11 +287,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1835, {	-- Attumen the Huntsman
-					["crs"] = {
+					crs = {
 						114262,	-- Attumen the Huntsman
 						114264,	-- Midnight
 					},
-					["groups"] = {
+					groups = {
 						i(142140),	-- Calliard's Galoshes
 						i(142174),	-- Choker of Barbed Reins
 						i(142126),	-- Helm of Phantasmal Scars
@@ -304,8 +304,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1837, {	-- Moroes
-					["creatureID"] = 114312,	-- Moroes
-					["groups"] = {
+					creatureID = 114312,	-- Moroes
+					groups = {
 						i(142159),	-- Bloodstained Handkerchief
 						i(142123),	-- Breastplate of Obligation
 						i(142134),	-- Castellan's Blinders
@@ -317,8 +317,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1836, {	-- The Curator
-					["creatureID"] = 114247,	-- The Curator
-					["groups"] = {
+					creatureID = 114247,	-- The Curator
+					groups = {
 						i(142130),	-- Bite-Marked Wristplates
 						i(142141),	-- Custodian's Soothing Touch
 						i(142165),	-- Deteriorated Construct Core
@@ -332,8 +332,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1817, {	-- Shade of Medivh
-					["creatureID"] = 114350,	-- Shade of Medivh
-					["groups"] = {
+					creatureID = 114350,	-- Shade of Medivh
+					groups = {
 						i(142207),	-- Amulet of the Last Guardian
 						i(142157),	-- Aran's Relaxing Ruby
 						i(142131),	-- Frozen-Link Chestguard
@@ -346,8 +346,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1818, {	-- Mana Devourer
-					["creatureID"] = 114252,	-- Mana Devourer
-					["groups"] = {
+					creatureID = 114252,	-- Mana Devourer
+					groups = {
 						i(142162),	-- Fluctuating Energy
 						i(142150),	-- Hood of Uncanny Perspectives
 						i(142135),	-- Legguards of Countless Hours
@@ -360,8 +360,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1838, {	-- Viz'aduum the Watcher
-					["creatureID"] = 114790,	-- Viz'aduum the Watcher
-					["groups"] = {
+					creatureID = 114790,	-- Viz'aduum the Watcher
+					groups = {
 						i(142167),	-- Eye of Command
 						i(142132),	-- Doomstride Footguards
 						i(142151),	-- Leggings of Countless Worlds
@@ -376,55 +376,55 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				n(ACHIEVEMENTS, {
 					ach(11433, {	-- Burn After Reading
-						["providers"] = {
+						providers = {
 							{ "o", 265597 },	-- Sealed Tome
 							{ "o", 265599 },	-- Sealed Tome
 							{ "o", 265600 },	-- Sealed Tome
 							{ "o", 265602 },	-- Sealed Tome
 						},
-						["groups"] = {
+						groups = {
 							crit(34852, {	-- Legacy of the Mountain King
-								["provider"] = { "i", 142049 },	-- Legacy of the Mountain King
+								provider = { "i", 142049 },	-- Legacy of the Mountain King
 							}),
 							crit(34853, {	-- Redemption of the Fallen
-								["provider"] = { "i", 142052 },	-- Redemption of the Fallen
+								provider = { "i", 142052 },	-- Redemption of the Fallen
 							}),
 							crit(34854, {	-- Torment of the Worgen
-								["provider"] = { "i", 142051 },	-- Torment of the Worgen
+								provider = { "i", 142051 },	-- Torment of the Worgen
 							}),
 							crit(34855, {	-- Wrath of the Titans
-								["provider"] = { "i", 142073 },	-- Wrath of the Titans
+								provider = { "i", 142073 },	-- Wrath of the Titans
 							}),
 						},
 					}),
 					ach(11430, {	-- One Night in Karazhan
-						["description"] = "1. Go to Opera and complete the encounter. Click the fragment in the audience.\n\n2. Head towards Maiden. Click the fragment in the room just before the boss.\n\n3. Go to Moroes and complete the encounter. Click the fragment behind the table. Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room (the far top-right corner of Servant's Quarters) and click the fragment.\n\n5. Go to Curator, complete the encounter, and click the fragment.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
-						["crs"] = {
+						description = "1. Go to Opera and complete the encounter. Click the fragment in the audience.\n\n2. Head towards Maiden. Click the fragment in the room just before the boss.\n\n3. Go to Moroes and complete the encounter. Click the fragment behind the table. Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room (the far top-right corner of Servant's Quarters) and click the fragment.\n\n5. Go to Curator, complete the encounter, and click the fragment.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
+						crs = {
 							115038,	-- Image of Medivh
 							115013,	-- Soul Fragment
 						},
 					}),
 					ach(11335, {	-- Season Tickets
 						crit(34615, {	-- Beautiful Beast
-							["_encounter"] = { 1827, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 1827, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(34614, {	-- Westfall Story
-							["_encounter"] = { 1826, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 1826, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 						crit(34613, {	-- Wikket
-							["_encounter"] = { 1820, DIFFICULTY.DUNGEON.MYTHIC },
+							_encounter = { 1820, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
 					}),
 				}),
 				e(1827, {	-- Opera Hall: Beautiful Beast
-					["crs"] = {
+					crs = {
 						114339,	-- Barnes <The Stage Manager>
 						114328,	-- Coggleston
 						114330,	-- Babblet
 						114329,	-- Luminore
 						114522,	-- Mrs. Cauldrons
 					},
-					["groups"] = {
+					groups = {
 						i(142196),	-- Cinch of Improbable Desire
 						i(142206),	-- Cloak of Sweltering Flame
 						i(142197),	-- Legguards of Imprisonment
@@ -437,12 +437,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1826, {	-- Opera Hall: Westfall Story
-					["crs"] = {
+					crs = {
 						114339,	-- Barnes <The Stage Manager>
 						114260,	-- Mrrgria
 						114261,	-- Toe Knee
 					},
-					["groups"] = {
+					groups = {
 						i(142302),	-- Armguards of Burning Passion
 						i(142146),	-- Blackfin Wristband
 						i(142154),	-- Bracelets of the Sorrowful Bridge
@@ -455,12 +455,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1820, {	-- Opera Hall: Wikket
-					["crs"] = {
+					crs = {
 						114339,	-- Barnes <The Stage Manager>
 						114284,	-- Elfyra
 						114251,	-- Galindre
 					},
-					["groups"] = {
+					groups = {
 						i(142298),	-- Astonishingly Scarlet Slippers
 						i(142204),	-- Boots of False Promise
 						i(142300),	-- Greaves of Miraculous Magnificence
@@ -475,8 +475,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1825, {	-- Maiden of Virtue
-					["creatureID"] = 113971,	-- Maiden of Virtue
-					["groups"] = {
+					creatureID = 113971,	-- Maiden of Virtue
+					groups = {
 						i(142138),	-- Confiscated Manacle
 						i(142153),	-- Cord of the Penitent
 						i(142170),	-- Drape of Shame
@@ -488,11 +488,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1835, {	-- Attumen the Huntsman
-					["crs"] = {
+					crs = {
 						114262,	-- Attumen the Huntsman
 						114264,	-- Midnight
 					},
-					["groups"] = {
+					groups = {
 						i(142236),	-- Midnight (MOUNT!)
 						i(142140),	-- Calliard's Galoshes
 						i(142174),	-- Choker of Barbed Reins
@@ -506,8 +506,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1837, {	-- Moroes
-					["creatureID"] = 114312,	-- Moroes
-					["groups"] = {
+					creatureID = 114312,	-- Moroes
+					groups = {
 						ach(11338),	-- Dine and Bash
 						i(142159),	-- Bloodstained Handkerchief
 						i(142123),	-- Breastplate of Obligation
@@ -520,12 +520,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				n(114895, {	-- Nightbane
-					["description"] = "In order to summon Nightbane, you must find Soul Fragments scattered throughout Karazhan.\n\n1. Go to Opera and complete the encounter. Click the fragment in the audience.\n\n2. Head towards Maiden. Click the fragment in the room just before the boss.\n\n3. Go to Moroes and complete the encounter. Click the fragment behind the table. Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room (the far top-right corner of Servant's Quarters) and click the fragment.\n\n5. Go to Curator, complete the encounter, and click the fragment.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
-					["cr"] = 115038,	-- Image of Medivh
-					["groups"] = {
+					description = "In order to summon Nightbane, you must find Soul Fragments scattered throughout Karazhan.\n\n1. Go to Opera and complete the encounter. Click the fragment in the audience.\n\n2. Head towards Maiden. Click the fragment in the room just before the boss.\n\n3. Go to Moroes and complete the encounter. Click the fragment behind the table. Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room (the far top-right corner of Servant's Quarters) and click the fragment.\n\n5. Go to Curator, complete the encounter, and click the fragment.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
+					cr = 115038,	-- Image of Medivh
+					groups = {
 						i(142552),	-- Smoldering Ember Wyrm (MOUNT!)
 						i(143556, {	-- Charred Bone Fragments
-							["description"] = "You must complete the full quest chain before this will drop from the boss.",
+							description = "You must complete the full quest chain before this will drop from the boss.",
 						}),
 						i(142303),	-- Chestplate of Impenetrable Darkness
 						i(142203),	-- Harness of Smoldering Betrayal
@@ -545,8 +545,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1836, {	-- The Curator
-					["creatureID"] = 114247,	-- The Curator
-					["groups"] = {
+					creatureID = 114247,	-- The Curator
+					groups = {
 						i(142130),	-- Bite-Marked Wristplates
 						i(142141),	-- Custodian's Soothing Touch
 						i(142165),	-- Deteriorated Construct Core
@@ -560,8 +560,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1817, {	-- Shade of Medivh
-					["creatureID"] = 114350,	-- Shade of Medivh
-					["groups"] = {
+					creatureID = 114350,	-- Shade of Medivh
+					groups = {
 						ach(11432),	-- Scared Straight
 						i(142207),	-- Amulet of the Last Guardian
 						i(142157),	-- Aran's Relaxing Ruby
@@ -575,10 +575,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1818, {	-- Mana Devourer
-					["creatureID"] = 114252,	-- Mana Devourer
-					["groups"] = {
+					creatureID = 114252,	-- Mana Devourer
+					groups = {
 						ach(11431, {	-- The Rat Pack
-							["crs"] = { 116802 },	-- Rodent of Usual Size
+							crs = { 116802 },	-- Rodent of Usual Size
 						}),
 						i(142162),	-- Fluctuating Energy
 						i(142150),	-- Hood of Uncanny Perspectives
@@ -592,8 +592,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				e(1838, {	-- Viz'aduum the Watcher
-					["creatureID"] = 114790,	-- Viz'aduum the Watcher
-					["groups"] = {
+					creatureID = 114790,	-- Viz'aduum the Watcher
+					groups = {
 						ach(11429),	-- Mythic: Return to Karazhan
 						ach(11428),	-- Return to Karazhan Guild Run
 						i(142167),	-- Eye of Command
@@ -611,7 +611,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_1_0 } }, {
 	inst(860, {
 		q(45393),	-- Moroes cutscene
 		q(45394),	-- Maiden of Virtue Kill

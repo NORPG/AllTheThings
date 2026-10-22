@@ -2,58 +2,58 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 	inst(767, {	-- Neltharion's Lair
-		["mapID"] = 731,
-		["coord"] = { 49.5, 68.5, HIGHMOUNTAIN },
-		["lvl"] = 98,
-		["groups"] = {
+		mapID = 731,
+		coord = { 49.5, 68.5, HIGHMOUNTAIN },
+		lvl = 98,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(10996, {	-- Got to Ketchum All
-					["description"] = "As soon as you jump into the hole at the start of the dungeon, follow the cliff's path near |cFFFFD700Spiritwalker Ebonhorn|r to a hidden grotto and buy a |cFFFFD700Ketchum Tablet|r from the |cFFFFD700Mushroom Merchant|r.",
-					["crs"] = { 111746	},	-- Mushroom Merchant
-					["provider"] = { "i", 140212 },	-- Ketchum Tablet
-					["groups"] = {
+					description = "As soon as you jump into the hole at the start of the dungeon, follow the cliff's path near |cFFFFD700Spiritwalker Ebonhorn|r to a hidden grotto and buy a |cFFFFD700Ketchum Tablet|r from the |cFFFFD700Mushroom Merchant|r.",
+					crs = { 111746	},	-- Mushroom Merchant
+					provider = { "i", 140212 },	-- Ketchum Tablet
+					groups = {
 						crit(31787, {	-- Sparky's imprint collected
-							["provider"] = { "n", 111882 },	-- Sparky
-							["description"] = "Dive right where the barrel ride ends and find a pathway to a somewhat hidden cave where the snail is located at.",
+							provider = { "n", 111882 },	-- Sparky
+							description = "Dive right where the barrel ride ends and find a pathway to a somewhat hidden cave where the snail is located at.",
 						}),
 						crit(31790, {	-- Turbax's imprint collected
-							["provider"] = { "n", 105742 },	-- Turbax
-							["description"] = "Racing around a stone pillar after killing Ularogg Cragshaper.",
+							provider = { "n", 105742 },	-- Turbax
+							description = "Racing around a stone pillar after killing Ularogg Cragshaper.",
 						}),
 						crit(31791, {	-- Whipsnap's imprint collected
-							["provider"] = { "n", 105743 },	-- Whipsnap
-							["description"] = "Racing around a stone pillar after killing Ularogg Cragshaper.",
+							provider = { "n", 105743 },	-- Whipsnap
+							description = "Racing around a stone pillar after killing Ularogg Cragshaper.",
 						}),
 						crit(31792, {	-- Blaze's imprint collected
-							["provider"] = { "n", 105744 },	-- Blaze
-							["description"] = "Racing around a stone pillar after killing Ularogg Cragshaper.",
+							provider = { "n", 105744 },	-- Blaze
+							description = "Racing around a stone pillar after killing Ularogg Cragshaper.",
 						}),
 						crit(31793, {	-- Slinky's imprint collected
-							["provider"] = { "n", 111861 },	-- Slinky
-							["description"] = "Follow the long westward path before Ularogg Cragshaper to a cave. He is usually along the cave's back wall.",
+							provider = { "n", 111861 },	-- Slinky
+							description = "Follow the long westward path before Ularogg Cragshaper to a cave. He is usually along the cave's back wall.",
 						}),
 						crit(31794, {	-- Sticky's imprint collected
-							["provider"] = { "n", 111864 },	-- Sticky
-							["description"] = "Directly after the previous 3 snails. Go into the water with the basalisks and go along the river to the back where there is a cave and more basalisks. Kill all of them and have some one use an ability on Sticky. He is up on top of the cave just chilling out. Once someone attacks him he falls down and you can smack him and claim your achievement.",
+							provider = { "n", 111864 },	-- Sticky
+							description = "Directly after the previous 3 snails. Go into the water with the basalisks and go along the river to the back where there is a cave and more basalisks. Kill all of them and have some one use an ability on Sticky. He is up on top of the cave just chilling out. Once someone attacks him he falls down and you can smack him and claim your achievement.",
 						}),
 						crit(32888, {	-- Scaly's Imprint Collected
-							["provider"] = { "n", 113204 },	-- Scaly
-							["description"] = "After first boss Rokmora, before entering a barrel, use the macro: /tar Scaly and then apply a target icon to him. It sits on a Mushroom on the left river bank and while riding in the barrel, you need to throw the fish at it while riding the barrel to make it fall into the water and come along with you.",
+							provider = { "n", 113204 },	-- Scaly
+							description = "After first boss Rokmora, before entering a barrel, use the macro: /tar Scaly and then apply a target icon to him. It sits on a Mushroom on the left river bank and while riding in the barrel, you need to throw the fish at it while riding the barrel to make it fall into the water and come along with you.",
 						}),
 						i(256913, {	-- Tauren Jeweler's Roller (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
+							timeline = { ADDED_11_2_7 },
 						}),
 					},
 				}),
 			}),
 			n(QUESTS, {
 				q(42454, {	-- The Hammer of Khaz'goroth
-					["sourceQuest"] = 39781,	-- Neltharion's Lair: Death to the Underking
-					["provider"] = { "o", 250548 },	-- Hammer of Khaz'goroth
-					["qi"] = 137649,	-- The Hammer of Khaz'goroth (QI!)
-					["groups"] = {
+					sourceQuest = 39781,	-- Neltharion's Lair: Death to the Underking
+					provider = { "o", 250548 },	-- Hammer of Khaz'goroth
+					qi = 137649,	-- The Hammer of Khaz'goroth (QI!)
+					groups = {
 						i(141010),	-- Earthguard Gauntlets
 						i(141009),	-- Earthguard Gloves
 						i(141008),	-- Earthguard Grips
@@ -68,35 +68,35 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			}),
 			n(WORLD_QUESTS, {
 				q(41866, {	-- Neltharion's Lair: Blighted Bat
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(41864, {	-- Neltharion's Lair: Crystalline Crusher
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(41865, {	-- Neltharion's Lair: Mother of Stone
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(41211, {	-- Neltharion's Lair: Neltharion's Treasure
-					["isWorldQuest"] = true,
+					isWorldQuest = true,
 				}),
 				q(41857, {	-- Neltharion's Lair: Stonedark Slaves
-					["isWorldQuest"] = true,
+					isWorldQuest = true,
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				cr(91003, e(1662, {	-- Rokmora
 					i(205973, {	-- Rod of Crystalline Energies
-						["timeline"] = { ADDED_11_0_2 },
+						timeline = { ADDED_11_0_2 },
 					}),
 				})),
 				cr(91004, e(1665, {	-- Ularogg Cragshaper
 				})),
 				cr(91005, e(1673, {	-- Naraxas
 					i(205974, {	-- Monstrous Gluttony
-						["timeline"] = { ADDED_11_0_2 },
+						timeline = { ADDED_11_0_2 },
 					}),
 				})),
 				cr(91007, e(1687, {	-- Dargrul
@@ -104,14 +104,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
 					i(137912),	-- Pattern: Battlebound Treads [Rank 3] (RECIPE!)
 					i(205975, {	-- Hate-Sculpted Magma
-						["timeline"] = { ADDED_11_0_2 },
+						timeline = { ADDED_11_0_2 },
 					}),
 					i(245451, {	-- Thunder Totem Brazier (DECOR!)
-						["timeline"] = { ADDED_11_2_7 },
+						timeline = { ADDED_11_2_7 },
 					}),
 				})),
 			}),
-			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
+			n(MYTHIC_PLUS, sharedDataSelf({ timeline = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 				i(205975),	-- Hate-Sculpted Magma
 				i(205974),	-- Monstrous Gluttony
 				i(205973),	-- Rod of Crystalline Energies
@@ -184,8 +184,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				})),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["lvl"] = 110,
-				["groups"] = {
+				lvl = 110,
+				groups = {
 					cr(91003, e(1662, {	-- Rokmora
 						i(134481),	-- Boulderbuckle Strap
 						i(137337),	-- Deepfurrow Bracers
@@ -246,9 +246,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				["ItemAppearanceModifierID"] = 0,
-				["lvl"] = 110,
-				["groups"] = {
+				ItemAppearanceModifierID = 0,
+				lvl = 110,
+				groups = {
 					cr(91003, e(1662, {	-- Rokmora
 						i(134481),	-- Boulderbuckle Strap
 						i(137337),	-- Deepfurrow Bracers
@@ -279,7 +279,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					})),
 					cr(91005, e(1673, {	-- Naraxas
 						ach(10875, {	-- Can't Eat Just One
-							["crs"] = { 101075 },	-- Wormspeaker Devout
+							crs = { 101075 },	-- Wormspeaker Devout
 						}),
 						i(134524),	-- Band of the Wyrm Matron
 						i(137348),	-- Gauntlets of Innumerable Barbs

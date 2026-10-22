@@ -22,28 +22,28 @@ local CHETT = createHeader({
 
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
-		n(CHETT, bubbleDownSelf({ ["minReputation"] = { FACTION_CARTELS_OF_UNDERMINE, 13 } }, {
-			["description"] = "Once per week you can interact with the C.H.E.T.T. machine to receive a weekly set of tasks with rewards for completing each one. You can turn in a completed list to C.H.E.T.T. for some valorstones or to your cartel's quartermaster for 500 rep.",
-			["groups"] = {
+		n(CHETT, bubbleDownSelf({ minReputation = { FACTION_CARTELS_OF_UNDERMINE, 13 } }, {
+			description = "Once per week you can interact with the C.H.E.T.T. machine to receive a weekly set of tasks with rewards for completing each one. You can turn in a completed list to C.H.E.T.T. for some valorstones or to your cartel's quartermaster for 500 rep.",
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(41626),	-- C.H.E.T.T. a Look
 					ach(41627),	-- C.H.E.T.T.ing it Twice
 					ach(41629, {	-- C.H.E.T.T.mate
-						["description"] = "Turning in a completed list for a Finders Fee will |cffff0000NOT|r give achievement credit.",
-						["groups"] = {
+						description = "Turning in a completed list for a Finders Fee will |cffff0000NOT|r give achievement credit.",
+						groups = {
 							title(616),	-- Part-Timer <Name>
 						},
 					}),
 					ach(41630, {	-- "Employee" of the Month
-						["description"] = "Rumored to be obtainable by turning in the most Chett Cards on a single Character in a month.\nOnly 1 Person per Region can get it.\nExpect minimum 150+ Card Turn-in's.",
-						["groups"] = {
+						description = "Rumored to be obtainable by turning in the most Chett Cards on a single Character in a month.\nOnly 1 Person per Region can get it.\nExpect minimum 150+ Card Turn-in's.",
+						groups = {
 							title(617, {	-- <Name>, "Employee" of the Month
-								["collectible"] = false,	-- You only keep it for a few days
+								collectible = false,	-- You only keep it for a few days
 							}),
 						},
 					}),
 				}),
-				n(QUESTS, sharedData({["isWeekly"]=true,}, {
+				n(QUESTS, sharedData({isWeekly=true,}, {
 					q(87303),	-- Clean the Sidestreets
 					q(87305),	-- Desire to D.R.I.V.E.
 					q(87307),	-- Garbage Day
@@ -60,20 +60,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				})),
 				n(REWARDS, {
 					i(235053, {	-- Completed C.H.E.T.T. List
-						["cost"] = { { "i", 236682, 1 } },	-- C.H.E.T.T. List
+						cost = { { "i", 236682, 1 } },	-- C.H.E.T.T. List
 					}),
 				}),
 				n(VENDORS, {
 					n(238029, {	-- C.H.E.T.T.
-						["coord"] = { 43.4, 50.5, UNDERMINE },
-						["groups"] = {
+						coord = { 43.4, 50.5, UNDERMINE },
+						groups = {
 							i(236682, {	-- C.H.E.T.T. List
-								["description"] = "Talk to C.H.E.T.T. to be granted one for free, or turn in 40 C.H.E.T.T. cards to earn more after your first.",
-								["cost"] = { { "i", 236668, 40 } },	-- C.H.E.T.T. Card
+								description = "Talk to C.H.E.T.T. to be granted one for free, or turn in 40 C.H.E.T.T. cards to earn more after your first.",
+								cost = { { "i", 236668, 40 } },	-- C.H.E.T.T. Card
 							}),
 							i(237900, {	-- C.H.E.T.T. Pack (COSMETIC!)
-								["sourceAchievement"] = 41629,	-- C.H.E.T.T.mate
-								["cost"] = { { "c", RESONANCE_CRYSTALS, 1000 } },
+								sourceAchievement = 41629,	-- C.H.E.T.T.mate
+								cost = { { "c", RESONANCE_CRYSTALS, 1000 } },
 							}),
 						},
 					}),
@@ -85,10 +85,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(UNDERMINE, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+		m(UNDERMINE, bubbleDownSelf({ timeline = { ADDED_11_1_0 } }, {
 			header(HEADERS.Faction, FACTION_CARTELS_OF_UNDERMINE, {
 				n(CHETT, {
-					q(87296, name(HEADERS.Item, 235053, { ["isWeekly"] = true })),	-- Free C.H.E.T.T. List acquired (spellID 1219077)
+					q(87296, name(HEADERS.Item, 235053, { isWeekly = true })),	-- Free C.H.E.T.T. List acquired (spellID 1219077)
 				}),
 			}),
 		})),

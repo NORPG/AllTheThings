@@ -3,48 +3,48 @@
 -------------------------------------------------------------------
 
 local WISPS_OF_MEMORY = i(186472, {	-- Wisps of Memory
-	["description"] = "Rewarded at 52, 67 and 76 Renown.",
+	description = "Rewarded at 52, 67 and 76 Renown.",
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(RENOWN, {
-			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
-			["groups"] = {
+			description = "These are rewards automatically granted by reaching a specific level of Renown.",
+			groups = {
 				i(186580, {	-- A Tiny Sinstone (Pepe!)
-					["description"] = "Requires Renown 56.",
-					["timeline"] = { ADDED_9_1_0 },
+					description = "Requires Renown 56.",
+					timeline = { ADDED_9_1_0 },
 				}),
 				i(182332, {	-- Gravestone Battle Gargon (MOUNT!)
-					["description"] = "Requires Renown 39.",
+					description = "Requires Renown 39.",
 				}),
 				i(186476, {	-- Sinfall Gravewing (MOUNT!)
-					["description"] = "Requires Renown 45.",
+					description = "Requires Renown 45.",
 				}),
 				--[[
 				title_gendered(429, 430, {	-- Count / Countess
-					["description"] = "Requires Renown 40.",
+					description = "Requires Renown 40.",
 				}),
 				]]--
 				title_male(429, {	-- Count <Name>
-					["description"] = "Requires Renown 40.",
+					description = "Requires Renown 40.",
 				}),
 				title_female(430, {	-- Countess <Name>
-					["description"] = "Requires Renown 40.",
+					description = "Requires Renown 40.",
 				}),
 				title(444, {	-- Sin Eater
-					["description"] = "Requires Renown 80.",
+					description = "Requires Renown 80.",
 				}),
 				iensemble(186507, {	-- Harvester's Court Attire
-					["description"] = "Requires Renown 60.",
+					description = "Requires Renown 60.",
 				}),
 				i(188003, {	-- Crate of Revendreth Reserve
-					["description"] = "Rewarded at 15 and 24 Renown.",
+					description = "Rewarded at 15 and 24 Renown.",
 				}),
 				WISPS_OF_MEMORY,
 				SL_Legendaries({
-					["description"] = "Requires Renown 48.",
-					["groups"] = {
+					description = "Requires Renown 48.",
+					groups = {
 						i(186567),	-- Memory of Insatiable Hunger
 						i(187105),	-- Memory of the Agonizing Gaze
 						i(186609),	-- Memory of Sinful Hysteria
@@ -66,8 +66,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 
 WISPS_OF_MEMORY.customCollect = nil;
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-	n(VENTHYR, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH } }, {
+	n(VENTHYR, bubbleDown({ customCollect = "SL_COV_VEN" }, {
 		n(RENOWN, {
 			q(62750),	-- hitting Renown 19
 			q(62751),	-- hitting Renown 35

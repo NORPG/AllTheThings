@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.WorldDrops, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	i(201470),	-- Story of a Memorable Victory
 	n(ARMOR, {
 		i(199019),	-- Aerodynamic Cape
@@ -76,15 +76,15 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADD
 		i(188732),	-- Timeworn Chain Vest
 	}),
 	n(PROFESSIONS, {
-		prof(ALCHEMY, sharedData({ ["requireSkill"] = ALCHEMY, },{
+		prof(ALCHEMY, sharedData({ requireSkill = ALCHEMY, },{
 			i(198963),	-- Decaying Phlegm
 			i(198964),	-- Elementious Splinter
 		})),
-		prof(BLACKSMITHING, sharedData({ ["requireSkill"] = BLACKSMITHING, },{
+		prof(BLACKSMITHING, sharedData({ requireSkill = BLACKSMITHING, },{
 			i(198966),	-- Molten Globule
 			i(198965),	-- Primeval Earth Fragment
 		})),
-		prof(ENCHANTING, sharedData({ ["requireSkill"] = ENCHANTING, },{
+		prof(ENCHANTING, sharedData({ requireSkill = ENCHANTING, },{
 			i(198968),	-- Primalist Charm
 			i(198967),	-- Primordial Aether
 
@@ -98,23 +98,23 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADD
 			i(200942),	-- Vibrant Emulsion
 			i(200943),	-- Whispering Band
 		})),
-		prof(ENGINEERING, sharedData({ ["requireSkill"] = ENGINEERING, },{
+		prof(ENGINEERING, sharedData({ requireSkill = ENGINEERING, },{
 			i(198969),	-- Keeper's Mark
 			i(198970),	-- Infitely Attachable Pair o' Docks
 		})),
-		prof(INSCRIPTION, sharedData({ ["requireSkill"] = INSCRIPTION, },{
+		prof(INSCRIPTION, sharedData({ requireSkill = INSCRIPTION, },{
 			i(198972),	-- Draconic Glamour
 			i(198971),	-- Curious Djaradin Rune
 		})),
-		prof(JEWELCRAFTING, sharedData({ ["requireSkill"] = JEWELCRAFTING, },{
+		prof(JEWELCRAFTING, sharedData({ requireSkill = JEWELCRAFTING, },{
 			i(198974),	-- Elegantly Engraved Embellishment
 			i(198973),	-- Incandescent Curio
 		})),
-		prof(LEATHERWORKING, sharedData({ ["requireSkill"] = LEATHERWORKING, },{
+		prof(LEATHERWORKING, sharedData({ requireSkill = LEATHERWORKING, },{
 			i(198976),	-- Exceedingly Soft Skin
 			i(198975),	-- Ossified Hide
 		})),
-		prof(TAILORING, sharedData({ ["requireSkill"] = TAILORING, },{
+		prof(TAILORING, sharedData({ requireSkill = TAILORING, },{
 			i(198978),	-- Stupidly Effective Stitchery
 			i(198977),	-- Ohn'ahran Weave
 		})),
@@ -166,13 +166,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADD
 		--
 		i(192615),	-- Fluorescent Fluid
 		i(192658, {	-- High-Fiber Leaf
-			["crs"] = {
+			crs = {
 				194588,	-- Giant Lasher
 				187545,	-- Vigorous Lasher
 				190198,	-- Vigorous Lasher
 				187546,	-- Sprouting Lasher
 			},
-			["coords"] = {
+			coords = {
 				{ 29.7, 52.6, OHNAHRAN_PLAINS },
 			},
 		}),
@@ -180,19 +180,19 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADD
 	}),
 	filter(RECIPES, {
 		i(194298, {	-- Pattern: Forlorn Funeral Pall (RECIPE!)
-			["description"] = "Drops from Decaying World Creatures.",
+			description = "Drops from Decaying World Creatures.",
 		}),
 		i(194267),	-- Pattern: Shimmering Embroidery Thread (RECIPE!)
 		i(194486),	-- Plans: Shield of the Hearth (RECIPE!)
 		i(191580, {	-- Recipe: Transmute: Awakened Earth (RECIPE!)
-			["description"] = "Drops from Earthen World Creatures.",
+			description = "Drops from Earthen World Creatures.",
 		}),
 		i(191578, {	-- Recipe: Transmute: Awakened Fire (RECIPE!)
-			["description"] = "Drops from Fiery World Creatures.",
+			description = "Drops from Fiery World Creatures.",
 		}),
 		i(198876),	-- Technique: Weathered Explorer's Stave (RECIPE!)
 		i(207461, {	-- Schematic: Portable Party Platter (RECIPE!)
-			["description"] = "You must be a mage or get one to help you. The mage character needs to have DF cooking and a rare quality Chef's Splendid Rolling Pin equipped with the special tooltip \"Whenever you gain Well Fed, you conjure a DF Dessert from among the recipes you have learned.\" and at least 1 DF dessert recipe learned. The engineer needs DF engineering skill leveled to 50, 1 Light Parchment and 1 Engineer's Ink. If the engineer is close enough to the mage when they get the Well Fed buff, the engineer will get the recipe.",
+			description = "You must be a mage or get one to help you. The mage character needs to have DF cooking and a rare quality Chef's Splendid Rolling Pin equipped with the special tooltip \"Whenever you gain Well Fed, you conjure a DF Dessert from among the recipes you have learned.\" and at least 1 DF dessert recipe learned. The engineer needs DF engineering skill leveled to 50, 1 Light Parchment and 1 Engineer's Ink. If the engineer is close enough to the mage when they get the Well Fed buff, the engineer will get the recipe.",
 		}),
 	}),
 	n(WEAPONS, {symselector=SymSelector.DRAGONFLIGHT_WORLDDROP_WEAPONS}),

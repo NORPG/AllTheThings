@@ -8,7 +8,7 @@ root(ROOTS.Zones, {
 			n(FACTIONS, {
 				faction(FACTION_HIGHMOUNTAIN_TRIBE),	-- Highmountain Tribe
 				faction(FACTION_TALONS_VENGENCE, {	-- Talon's Vengeance
-					["timeline"] = { ADDED_7_1_0 },
+					timeline = { ADDED_7_1_0 },
 				}),
 			}),
 		}),

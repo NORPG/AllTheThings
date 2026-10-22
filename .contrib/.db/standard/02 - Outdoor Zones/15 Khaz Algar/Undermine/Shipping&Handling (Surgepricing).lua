@@ -24,32 +24,32 @@ local SHIPPING_AND_HANDLING = createHeader({
 root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(SHIPPING_AND_HANDLING, {
-			["description"] = "Complete 10 jobs in a row without canceling your streak to earn a reward. Additionally, every hour at the half-hour mark (or xx:30), a Surge Pricing event will start.\nFor 10 minutes, completing Shipping and Handling tasks will count towards an objective bar that will show up on top of your screen.\nThis will count Shipping and Handling tasks completed by everyone in Undermine.\nDuring Surge Pricing, Shipping and Handling completions give you double rewards.",
-			["groups"] = {
+			description = "Complete 10 jobs in a row without canceling your streak to earn a reward. Additionally, every hour at the half-hour mark (or xx:30), a Surge Pricing event will start.\nFor 10 minutes, completing Shipping and Handling tasks will count towards an objective bar that will show up on top of your screen.\nThis will count Shipping and Handling tasks completed by everyone in Undermine.\nDuring Surge Pricing, Shipping and Handling completions give you double rewards.",
+			groups = {
 				filter(MISC, {
 					i(225415, {	-- Caddy Caller
-						["provider"] = { "n", 227210 },	-- Nanny Talullah <Shipping and Handling>
+						provider = { "n", 227210 },	-- Nanny Talullah <Shipping and Handling>
 					}),
 				}),
 				n(QUESTS, {
 					q(86775, {	-- Urge to Surge
-						["provider"] = { "n", 231409 },	-- Smaks Topskimmer
-						["coord"] = { 43.8, 50.8, UNDERMINE },
-						["isWeekly"] = true,
-						["groups"] = {
+						provider = { "n", 231409 },	-- Smaks Topskimmer
+						coord = { 43.8, 50.8, UNDERMINE },
+						isWeekly = true,
+						groups = {
 							i(238208, {	-- Nanny's Surge Dividends (S2)
-								["sym"] = {{"select","itemID",235639},{"pop"}},	-- Seasoned Adventurer's Cache [Undermine Zone Rewards content]
-								["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0_SEASONSTART },
+								sym = {{"select","itemID",235639},{"pop"}},	-- Seasoned Adventurer's Cache [Undermine Zone Rewards content]
+								timeline = { ADDED_11_1_0, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(250764, {	-- Nanny's Surge Dividends (S3)
-								["sym"] = {{"select","itemID",235639},{"pop"}},	-- Seasoned Adventurer's Cache [Undermine Zone Rewards content]
-								["timeline"] = { ADDED_11_2_0 },
+								sym = {{"select","itemID",235639},{"pop"}},	-- Seasoned Adventurer's Cache [Undermine Zone Rewards content]
+								timeline = { ADDED_11_2_0 },
 							}),
 						},
 					}),
 				}),
 				n(QUESTS, sharedData({
-					["repeatable"]=true,
+					repeatable=true,
 				}, {
 					q(85888),	-- Artistic License
 					q(87588),	-- Bash that Trash
@@ -100,12 +100,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						i(231556),	-- Breakneck Cabbie's Coat
 					}),
 					n(DECOR, sharedDataSelf({
-						["timeline"] = { ADDED_11_2_7 },
+						timeline = { ADDED_11_2_7 },
 					}, {
 						i(245320),	-- Very Reliable Undermine Lamppost (DECOR!)
 					})),
 					n(ARMOR, {
-						["groups"] = {
+						groups = {
 							filter(BACK_F, {
 								i(237123),	-- Descaled Capelet
 								i(237126),	-- Laundered Cape
@@ -146,13 +146,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(UNDERMINE, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+		m(UNDERMINE, bubbleDownSelf({ timeline = { ADDED_11_1_0 } }, {
 			n(SHIPPING_AND_HANDLING, {
 				n(EVENT_COMPLETION, {
-					q(86299, { ["name"] = "Looted Breakneck Cabbie's Coat" }),	-- Looted Breakneck Cabbie's Coat
-					q(86300, { ["name"] = "Looted Violet Goblin Shredder" }),	-- Looted Violet Goblin Shredder
-					q(86302, { ["name"] = "Looted Mutt" }),	-- Looted Mutt
-					q(86303, { ["name"] = "Looted Personal-Use Sapper" }),	-- Looted Personal-Use Sapper
+					q(86299, { name = "Looted Breakneck Cabbie's Coat" }),	-- Looted Breakneck Cabbie's Coat
+					q(86300, { name = "Looted Violet Goblin Shredder" }),	-- Looted Violet Goblin Shredder
+					q(86302, { name = "Looted Mutt" }),	-- Looted Mutt
+					q(86303, { name = "Looted Personal-Use Sapper" }),	-- Looted Personal-Use Sapper
 				}),
 			}),
 		})),

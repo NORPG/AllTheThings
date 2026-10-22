@@ -2,16 +2,16 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	n(COVENANT_SANCTUMS, {
-		["description"] = "These rewards are shared across Covenants.",
-		["groups"] = {
+		description = "These rewards are shared across Covenants.",
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(14835),	-- A Resolute Bond
 				ach(14636),	-- Adventurer in Chief
 				ach(14843),	-- Adventures: Harmony of Purpose
 				ach(14844, {	-- Adventures: Into the Breach
-					["sym"] = {{ "achievement_criteria" }},
+					sym = {{ "achievement_criteria" }},
 				}),
 				ach(14845),	-- Adventures: A Step in the Right Direction
 				ach(14846),	-- Adventures: Leaves in the Forest
@@ -22,33 +22,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				ach(14839),	-- Bound to Adventure
 				ach(14834),	-- Bound with Purpose
 				ach(14627, {	-- Choosing Your Purpose
-					["maps"] = { ORIBOS },
-					["sourceQuests"] = {
+					maps = { ORIBOS },
+					sourceQuests = {
 						57878,	-- Choosing Your Purpose (original playthrough version
 						62000,	-- Choosing Your Purpose (Threads of Fate)
 					},
 				}),
 				ach(14790, {	-- Covenant Campaign
-					["sourceQuests"] = {
+					sourceQuests = {
 						62557,	-- Our Realm Reclaimed
 						62406,	-- Staff of the Primus
 						60108,	-- Drust and Ashes
 						58407,	-- The Medallion of Dominion
 					},
-					["sourceQuestNumRequired"] = 1,
+					sourceQuestNumRequired = 1,
 				}),
-				ach(15647, sharedDataSelf({ ["timeline"] = { ADDED_9_2_5 } }, {	-- Dead Men Tell Some Tales
+				ach(15647, sharedDataSelf({ timeline = { ADDED_9_2_5 } }, {	-- Dead Men Tell Some Tales
 					crit(48005, {	-- Kyrian Campaign
-						["sourceQuests"] = { 62557 },	-- Our Realm Reclaimed
+						sourceQuests = { 62557 },	-- Our Realm Reclaimed
 					}),
 					crit(48146, {	-- Necrolords Campaign
-						["sourceQuests"] = { 62406 },	-- Staff of the Primus
+						sourceQuests = { 62406 },	-- Staff of the Primus
 					}),
 					crit(48530, {	-- Night Fae Campaign
-						["sourceQuests"] = { 60108 },	-- Drust and Ashes
+						sourceQuests = { 60108 },	-- Drust and Ashes
 					}),
 					crit(46963, {	-- Venthyr Campaign
-						["sourceQuests"] = { 58407 },	-- The Medallion of Dominion
+						sourceQuests = { 58407 },	-- The Medallion of Dominion
 					}),
 				})),
 				ach(14628),	-- The Road to Renown
@@ -56,10 +56,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				ach(14630),	-- Becoming a Hero
 				ach(14631),	-- Champion of the Covenant
 				ach(15241, {	-- Renowned
-					["timeline"] = { ADDED_9_1_5 },
+					timeline = { ADDED_9_1_5 },
 				}),
 				ach(15646, {	-- Re-Re-Re-Renowned
-					["timeline"] = { ADDED_9_2_5 },
+					timeline = { ADDED_9_2_5 },
 				}),
 				ach(14632),	-- Conducting Anima
 				ach(14639),	-- Dedication to the Restoration
@@ -70,9 +70,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				ach(15024),	-- Denying the Drought
 				ach(15025),	-- Sanctum Superior
 				ach(15649, {	-- Shadowlands Dilettante
-					["timeline"] = { ADDED_9_2_5},
+					timeline = { ADDED_9_2_5},
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {
+					sym = {
 						{"meta_achievement",
 							14502,	-- Pursuing Loyalty
 							14723,	-- Be Our Guest
@@ -86,49 +86,49 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				ach(14637),	-- Your Covenant's Flavor
 			}),
 			n(ADVENTURES, {
-				["crs"] = {
+				crs = {
 					154527,	-- Command Table [Kyrian]
 					175136,	-- Command Table [Necrolord]
 					172400,	-- Command Table [Night Fae]
 					166143,	-- Command Table [Venthyr]
 				},
-				["groups"] = {
+				groups = {
 					i(178040, {	-- Condensed Stygia
 						currency(1767),	-- Stygia
 					}),
 					-- Follower XP Items
 					i(187413, {	-- Crystalline Memory Repository
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_1_5 },
+						timeline = { ADDED_9_1_0, REMOVED_9_1_5 },
 					}),
 					i(188655, {	-- Crystalline Memory Repository
-						["timeline"] = { ADDED_9_1_0 },
+						timeline = { ADDED_9_1_0 },
 					}),
 					i(187414, {	-- Fractal Thoughtbinder
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_1_5 },
+						timeline = { ADDED_9_1_0, REMOVED_9_1_5 },
 					}),
 					i(188656, {	-- Fractal Thoughtbinder
-						["timeline"] = { ADDED_9_1_5 },
+						timeline = { ADDED_9_1_5 },
 					}),
 					i(187415, {	-- Mind-Expanding Prism
-						["timeline"] = { ADDED_9_1_0, REMOVED_9_1_5 },
+						timeline = { ADDED_9_1_0, REMOVED_9_1_5 },
 					}),
 					i(188657, {	-- Mind-Expanding Prism
-						["timeline"] = { ADDED_9_1_5 },
+						timeline = { ADDED_9_1_5 },
 					}),
 					i(188650, {	-- Grimoire of Knowledge
-						["timeline"] = { ADDED_9_1_5 },
+						timeline = { ADDED_9_1_5 },
 					}),
 					i(188651, {	-- Grimoire of Knowledge (Drops from the early Campaign Missions) [Night Fae as noticed]
-						["timeline"] = { ADDED_9_1_5 },
+						timeline = { ADDED_9_1_5 },
 					}),
 					i(188652, {	-- Grimoire of Knowledge (Drops from the Campaign Missions) [Night Fae as noticed]
-						["timeline"] = { ADDED_9_1_5 },
+						timeline = { ADDED_9_1_5 },
 					}),
 					i(188653, {	-- Grimoire of Knowledge (Drops from the Campaign Missions) [Night Fae as noticed]
-						["timeline"] = { ADDED_9_1_5 },
+						timeline = { ADDED_9_1_5 },
 					}),
 					i(188654, {	-- Grimoire of Knowledge (Drops from the Campaign Missions) [Night Fae as noticed]
-						["timeline"] = { ADDED_9_1_5 },
+						timeline = { ADDED_9_1_5 },
 					}),
 					-- Mounts
 					i(183617),	-- Chittering Animite (MOUNT!)
@@ -152,16 +152,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					i(184636),	-- Adventurer's Skinning Cache
 					i(184630),	-- Adventurer's Tailoring Cache
 					i(187573, {	-- Broker's Enchanting Mote of Potentiation
-						["timeline"] = { ADDED_9_1_0 },
+						timeline = { ADDED_9_1_0 },
 					}),
 					i(187572, {	-- Broker's Herbalism Mote of Potentiation
-						["timeline"] = { ADDED_9_1_0 },
+						timeline = { ADDED_9_1_0 },
 					}),
 					i(187569, {	-- Broker's Tailoring Mote of Potentiation
-						["timeline"] = { ADDED_9_1_0 },
+						timeline = { ADDED_9_1_0 },
 					}),
 					i(187574, {	-- Broker's Overflowing Bucket
-						["timeline"] = { ADDED_9_1_0 },
+						timeline = { ADDED_9_1_0 },
 					}),
 					i(184643),	-- Champion's Enchanting Cache
 					i(184632),	-- Champion's Fish Cache
@@ -178,30 +178,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					i(184645),	-- Hero's Skinning Cache
 					i(184644),	-- Hero's Tailoring Cache
 					i(187575, {	-- Korthian Fishing Cache
-						["timeline"] = { ADDED_9_1_0 },
+						timeline = { ADDED_9_1_0 },
 					}),
 					i(187577, {	-- Korthian Meat Cache
-						["timeline"] = { ADDED_9_1_0 },
+						timeline = { ADDED_9_1_0 },
 					}),
 					i(187576, {	-- Korthian Skinning Cache
-						["timeline"] = { ADDED_9_1_0 },
+						timeline = { ADDED_9_1_0 },
 					}),
 					i(181468),	-- Veiled Augment Rune
 					-- Gear
 					i(185942),	-- Sinheart Choker
 					i(187821, {	-- Bar-Fusan's Hackblade
-						["sourceQuests"] = { 64963 },	-- A Defector's Request
-						["description"] = "Can only spawn after completing the quest |cFFFFD700A Defector's Request'(64963)|r.",
+						sourceQuests = { 64963 },	-- A Defector's Request
+						description = "Can only spawn after completing the quest |cFFFFD700A Defector's Request'(64963)|r.",
 					}),
 					i(190178, {	-- Pouch of Protogenic Provisions
-						["timeline"] = { ADDED_9_2_0 },
+						timeline = { ADDED_9_2_0 },
 					}),
 				},
 			}),
 			n(COVENANT_CALLINGS, {
 				n(175390, {	-- Dirty Glinting Object
-					["description"] = "Can appear when on certain Training callings. Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
-					["crs"] = {
+					description = "Can appear when on certain Training callings. Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
+					crs = {
 						-- Confirmed Follower ID's which will drop the loot objects
 						170035,	-- Deos [Kyrian]
 						170016,	-- Dregs [Necrolord]
@@ -214,7 +214,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						-- 170044,	-- Nandor [Venthyr]
 						-- 170039,	-- Popo [Kyrian]
 					},
-					["groups"] = {
+					groups = {
 						i(184507),	-- Lucy (PET!)
 						i(184505),	-- "Adorable Ascended" Costume
 						i(184506),	-- "Flying Faerie" Costume
@@ -228,7 +228,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					},
 				}),
 				n(COMMON_BOX_DROPS, {	-- Common Box Drops
-					["providers"] = {
+					providers = {
 						{"i", 181475},	-- Bounty of the Grovewardens
 						{"i", 181476},	-- Tribute of the Wild Hunt
 						{"i", 181732},	-- Tribute of the Ambitious
@@ -238,7 +238,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						{"i", 181556},	-- Tribute of the Court
 						{"i", 181557},	-- Favor of the Court
 					},
-					["groups"] = {
+					groups = {
 						i(187880),	-- Goat Soul
 						i(187862),	-- Snake Soul
 					},
@@ -247,32 +247,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			-- Covenant-Specific Box Rewards
 			n(COVENANT_CALLINGS, {
 				n(NIGHT_FAE, {
-					["providers"] = {
+					providers = {
 						{"i", 181475},	-- Bounty of the Grovewardens
 						{"i", 181476},	-- Tribute of the Wild Hunt
 					},
-					["groups"] = {
+					groups = {
 						i(187840, {	-- Sparkle Wings (TOY!)
-							["timeline"] = { ADDED_9_1_5 },
+							timeline = { ADDED_9_1_5 },
 						}),
 						i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
-							["timeline"] = { ADDED_9_2_0 },
+							timeline = { ADDED_9_2_0 },
 						}),
 					},
 				}),
 				n(NECROLORD, {
-					["providers"] = {
+					providers = {
 						{"i", 181732},	-- Tribute of the Ambitious
 						{"i", 181733},	-- Tribute of the Duty-Bound
 					},
-					["groups"] = {
+					groups = {
 						i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
-							["timeline"] = { ADDED_9_1_5 },
+							timeline = { ADDED_9_1_5 },
 						}),
 						i(184159),	-- Necroray Egg
 						i(184158, {	-- Oozing Necroray Egg
-							["provider"] = { "i", 184159 },	-- Necroray Egg
-							["groups"] = {
+							provider = { "i", 184159 },	-- Necroray Egg
+							groups = {
 								i(184160),	-- Bulbous Necroray (MOUNT!)
 								i(184161),	-- Infested Necroray (MOUNT!)
 								i(184162),	-- Pestilent Necroray (MOUNT!)
@@ -281,26 +281,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					},
 				}),
 				n(KYRIAN, {
-					["providers"] = {
+					providers = {
 						{"i", 181372},	-- Tribute of the Ascended
 						{"i", 181741},	-- Tribute of the Paragon
 					},
-					["groups"] = {
+					groups = {
 						i(187419, {	-- Steward's First Feather (TOY!)
-							["timeline"] = { ADDED_9_1_5 },
+							timeline = { ADDED_9_1_5 },
 						}),
 					},
 				}),
 				n(VENTHYR, {
-					["providers"] = {
+					providers = {
 						{"i", 181556},	-- Tribute of the Court
 						{"i", 181557},	-- Favor of the Court
 					},
-					["groups"] = {
+					groups = {
 						i(180248),	-- Ambassador's Reserve (Ember Court Bonus Time)
 						i(176850),	-- Blank Invitation
 						i(187512, {	-- Tome of Small Sins (TOY!)
-							["timeline"] = { ADDED_9_1_5 },
+							timeline = { ADDED_9_1_5 },
 						}),
 					},
 				}),
@@ -312,30 +312,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			n(COVENANT_CALLINGS, {
 				-- Rare Quality Calling Rewards / Zone
 				i(181475, {	-- Bounty of the Grovewardens / Ardenweald
-					["description"] = "Rewarded by completing a Calling based in Ardenweald.",
+					description = "Rewarded by completing a Calling based in Ardenweald.",
 				}),
 				i(181556, {	-- Tribute of the Court / Revendreth
-					["description"] = "Rewarded by completing a Calling based in Revendreth.",
+					description = "Rewarded by completing a Calling based in Revendreth.",
 				}),
 				i(181732, {	-- Tribute of the Ambitious / Maldraxxus
-					["description"] = "Rewarded by completing a Calling based in Maldraxxus.",
+					description = "Rewarded by completing a Calling based in Maldraxxus.",
 				}),
 				i(181372, {	-- Tribute of the Ascended / Bastion
-					["description"] = "Rewarded by completing a Calling based in Bastion.",
+					description = "Rewarded by completing a Calling based in Bastion.",
 				}),
 
 				-- Epic Quality Challenges Rewards / Zone
 				i(181476, {	-- Tribute of the Wild Hunt / Ardenweald
-					["description"] = "Rewarded by completing a 'Challenges' Calling based in Ardenweald.",
+					description = "Rewarded by completing a 'Challenges' Calling based in Ardenweald.",
 				}),
 				i(181557, {	-- Favor of the Court / Revendreth
-					["description"] = "Rewarded by completing a 'Challenges' Calling based in Revendreth.",
+					description = "Rewarded by completing a 'Challenges' Calling based in Revendreth.",
 				}),
 				i(181733, {	-- Tribute of the Duty-Bound / Maldraxxus
-					["description"] = "Rewarded by completing a 'Challenges' Calling based in Maldraxxus.",
+					description = "Rewarded by completing a 'Challenges' Calling based in Maldraxxus.",
 				}),
 				i(181741, {	-- Tribute of the Paragon / Bastion
-					["description"] = "Rewarded by completing a 'Challenges' Calling based in Bastion.",
+					description = "Rewarded by completing a 'Challenges' Calling based in Bastion.",
 				}),
 			}),
 			--]]
@@ -359,7 +359,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	n(COVENANT_SANCTUMS, {
 		n(ADVENTURES, {
 			-- Completing mi(2174), "Tutorial: Dispose of the Detritus"
@@ -511,11 +511,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			q(63220),	-- generic quest for hitting Renown 10 (any covenant) - WQ reward upgrade #1
 			q(63221),	-- generic quest for hitting Renown 19 (any covenant) - WQ reward upgrade #2
 			q(63350),	-- generic quest for hitting Renown 29 (any covenant) - WQ reward upgrade #3
-			q(64082, {["timeline"] = {ADDED_9_1_0}}),	-- Renown 73 (WQ Reward increase)
-			q(64069, {["timeline"] = {ADDED_9_1_0}}),	-- Renown 75 (WQ Reward increase)
-			q(64067, {["timeline"] = {ADDED_9_1_0}}),	-- generic quest for hitting Renown 46 (any covenant) - WQ reward upgrade #4
-			q(64073, {["timeline"] = {ADDED_9_1_0}}),	-- generic quest for hitting Renown 47 (any covenant)
-			q(64068, {["timeline"] = {ADDED_9_1_0}}),	-- generic quest for hitting Renown 61 (any covenant)
+			q(64082, {timeline = {ADDED_9_1_0}}),	-- Renown 73 (WQ Reward increase)
+			q(64069, {timeline = {ADDED_9_1_0}}),	-- Renown 75 (WQ Reward increase)
+			q(64067, {timeline = {ADDED_9_1_0}}),	-- generic quest for hitting Renown 46 (any covenant) - WQ reward upgrade #4
+			q(64073, {timeline = {ADDED_9_1_0}}),	-- generic quest for hitting Renown 47 (any covenant)
+			q(64068, {timeline = {ADDED_9_1_0}}),	-- generic quest for hitting Renown 61 (any covenant)
 		}),
 		n(QUESTS, {
 			-- Skip covenant sanctum intro quests

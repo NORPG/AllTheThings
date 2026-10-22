@@ -4,9 +4,9 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	n(SHOWDOWN, {
-		["timeline"] = { ADDED_12_0_7 },
-		["groups"] = sharedData({
-			["maps"] = {
+		timeline = { ADDED_12_0_7 },
+		groups = sharedData({
+			maps = {
 				NAIGTAL,
 				VAL,
 			},

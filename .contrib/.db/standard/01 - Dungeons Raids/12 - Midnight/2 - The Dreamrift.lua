@@ -66,15 +66,15 @@ InstanceHelper.UpgradeMapping = {
 	-- #ENDIF
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART } }, {
 	inst(1314, {	-- The Dreamrift
-		["coord"] = { 61.0, 64.2, MAP.MIDNIGHT.HARANDAR },
-		["maps"] = {
+		coord = { 61.0, 64.2, MAP.MIDNIGHT.HARANDAR },
+		maps = {
 			2531,	-- The Dreamrift
 			2532,	-- Den of the Undreamt
 		},
-		["isRaid"] = true,
-		["groups"] = {
+		isRaid = true,
+		groups = {
 			n(ACHIEVEMENTS, {
 				-- Myrhial Check Automation
 				ach(61843),	-- Quel'Dressed
@@ -85,7 +85,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 
 					}),
 				}),
-				n(REWARDS, sharedDataSelf({["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}, {
+				n(REWARDS, sharedDataSelf({timeline = { ADDED_12_0_5, REMOVED_12_1_0 }}, {
 					i(268650, {	-- Ascendant Voidshard
 						i(268552),	-- Ascendant Voidcore
 					}),
@@ -95,16 +95,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					ach(61612),	-- Chimaerus the Undreamt God Guild Run
 					i(256750),	-- Formula: Enchant Weapon - Worldsoul Cradle (RECIPE!)
 					i(256656),	-- Pattern: World Tender's Barkclasp (RECIPE!)
-					i(267645, { ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Dreamrift Vanquisher's Argent Trophy (DECOR!)
+					i(267645, { timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Dreamrift Vanquisher's Argent Trophy (DECOR!)
 					i(264246),	-- Eerie Iridescent Riftshroom (DECOR!)
-					i(268464, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Chimaerus the Undreamt God
+					i(268464, {timeline = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Chimaerus the Undreamt God
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
 				--ZoneDrops({}),
 				CommonBossDrops({
 					currency(VETERAN_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+						timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 3126, {	-- The Dreamrift
@@ -119,7 +119,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CHAMPION_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+						timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -128,15 +128,15 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(CHIMAERUS, {
 					ach(61488),	-- Heroic: Chimaerus, the Undreamt God
-					ach(61491, { ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Chimaerus, the Undreamt God
+					ach(61491, { timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Chimaerus, the Undreamt God
 					ach(61613),	-- Heroic: Chimaerus the Undreamt God Guild Run
-					i(265950, { ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Dreamrift Vanquisher's Aureate Trophy (DECOR!)
+					i(265950, { timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Dreamrift Vanquisher's Aureate Trophy (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(HERO_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+						timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -145,7 +145,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(MYTH_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+						timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -153,12 +153,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					ach(61489, {	-- Mythic: Chimaerus, the Undreamt God
 						title(679),	-- Dream-Eater <Name>
 					}),
-					ach(61492, {["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- Cutting Edge: Chimaerus, the Undreamt God
-					ach(61493, applyDataSelf({["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {	-- Hall of Fame: Chimaerus, the Undreamt God
+					ach(61492, {timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- Cutting Edge: Chimaerus, the Undreamt God
+					ach(61493, applyDataSelf({timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {	-- Hall of Fame: Chimaerus, the Undreamt God
 						title(668),	-- <Name>, Famed Slayer of the Undreamt
 					})),
 					ach(61614),	-- Mythic: Chimaerus the Undreamt God Guild Run
-					i(266886, { ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Dreamrift Vanquisher's Gleaming Trophy (DECOR!)
+					i(266886, { timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Dreamrift Vanquisher's Gleaming Trophy (DECOR!)
 				}),
 			}),
 		},
@@ -167,8 +167,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1314, {	-- The Dreamrift
-		["timeline"] = { ADDED_12_0_1_SEASONSTART },
-		["groups"] = {
+		timeline = { ADDED_12_0_1_SEASONSTART },
+		groups = {
 			q(95541),	-- First kill of Chimaerus the Undreamt God Normal
 			q(95542),	-- First kill of Chimaerus the Undreamt God Heroic
 			q(95543),	-- First kill of Chimaerus the Undreamt God Mythic

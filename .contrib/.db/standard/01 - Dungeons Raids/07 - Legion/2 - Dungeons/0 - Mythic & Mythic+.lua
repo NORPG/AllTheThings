@@ -6,16 +6,16 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	n(MYTHIC_PLUS, {
 		n(ACHIEVEMENTS, {
 			ach(11224, {	-- Realm First! Legion Keystone Master
-				["u"] = REMOVED_FROM_GAME,
+				u = REMOVED_FROM_GAME,
 			}),
 			ach(11181, {	-- Legion Keymaster
-				["timeline"] = {
+				timeline = {
 					ADDED_7_0_3_LAUNCH,
 					REMOVED_8_0_1,
 					ADDED_11_2_5,
 					REMOVED_LEGION_REMIX_END,
 				},
-				["groups"] = {
+				groups = {
 					crit(32353),	-- Eye of Azshara
 					crit(32359),	-- Darkheart Thicket
 					crit(32360),	-- Neltharion's Lair

@@ -185,161 +185,161 @@ InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDro
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	n(RAIDS, {
 		inst(946, {	-- Antorus, the Burning Throne
-			["coord"] = { 54.9, 62.3, ANTORAN_WASTES },
-			["maps"] = { 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920 },
-			["isRaid"] = true,
-			["groups"] = {
+			coord = { 54.9, 62.3, ANTORAN_WASTES },
+			maps = { 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920 },
+			isRaid = true,
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(42554, {	-- Raid Finder: Antorus the Burning Throne
 						crit(108543, {	-- Garothi Worldbreaker
-							["_encounter"] = { WORLDBREAKER, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { WORLDBREAKER, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108542, {	-- Hounds of Sargeras
-							["_encounter"] = { FELHOUNDS, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { FELHOUNDS, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108541, {	-- Antoran High Command
-							["_encounter"] = { HIGH_COMMAND, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { HIGH_COMMAND, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108539, {	-- Eonar
-							["_encounter"] = { EONAR, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { EONAR, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108540, {	-- Portal Keeper Hasabel
-							["_encounter"] = { HASABEL, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { HASABEL, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108538, {	-- Imonar the Soulhunter
-							["_encounter"] = { IMONAR, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { IMONAR, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108537, {	-- Kin'garoth
-							["_encounter"] = { KINGAROTH, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { KINGAROTH, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108536, {	-- Varimathras
-							["_encounter"] = { VARIMATHRAS, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { VARIMATHRAS, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108535, {	-- The Coven of Shivarra
-							["_encounter"] = { COVEN, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { COVEN, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108534, {	-- Aggramar
-							["_encounter"] = { AGGRAMAR, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { AGGRAMAR, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108567, {	-- Argus the Unmaker
-							["_encounter"] = { ARGUS, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { ARGUS, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 					}),
 					ach(60875),	-- Antorus the Burning Throne (automated)
 					ach(60871, {	-- Light's Breach
 						crit(107182, {	-- Garothi Worldbreaker
-							["_encounter"] = { WORLDBREAKER, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { WORLDBREAKER, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(107183, {	-- Hounds of Sargeras
-							["_encounter"] = { FELHOUNDS, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { FELHOUNDS, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(107184, {	-- Antoran High Command
-							["_encounter"] = { HIGH_COMMAND, DIFFICULTY.RAID.MULTI.ALL},
+							_encounter = { HIGH_COMMAND, DIFFICULTY.RAID.MULTI.ALL},
 						}),
 					}),
 					ach(60872, {	-- Forbidden Descent
 						crit(107186, {	-- Eonar
-							["_encounter"] = { EONAR, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { EONAR, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(107185, {	-- Portal Keeper Hasabel
-							["_encounter"] = { HASABEL, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { HASABEL, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(107187, {	-- Imonar the Soulhunter
-							["_encounter"] = { IMONAR, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { IMONAR, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 					}),
 					ach(60873, {	-- Hope's End
 						crit(107188, {	-- Kin'garoth
-							["_encounter"] = { KINGAROTH, DIFFICULTY.RAID.MULTI.ALL},
+							_encounter = { KINGAROTH, DIFFICULTY.RAID.MULTI.ALL},
 						}),
 						crit(107189, {	-- Varimathras
-							["_encounter"] = { VARIMATHRAS, DIFFICULTY.RAID.MULTI.ALL},
+							_encounter = { VARIMATHRAS, DIFFICULTY.RAID.MULTI.ALL},
 						}),
 						crit(107190, {	-- The Coven of Shivarra
-							["_encounter"] = { COVEN, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { COVEN, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 					}),
 					ach(60874, {	-- Seat of the Pantheon
 						crit(107191, {	-- Aggramar
-							["_encounter"] = { AGGRAMAR, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { AGGRAMAR, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(106082, {	-- Argus the Unmaker
-							["_encounter"] = { ARGUS, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { ARGUS, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 					}),
 					ach(42664, {	-- Heroic: Antorus the Burning Throne
 						crit(108460, {	-- Garothi Worldbreaker
-							["_encounter"] = { WORLDBREAKER, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { WORLDBREAKER, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108469, {	-- Hounds of Sargeras
-							["_encounter"] = { FELHOUNDS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { FELHOUNDS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108468, {	-- Antoran High Command
-							["_encounter"] = { HIGH_COMMAND, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { HIGH_COMMAND, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108466, {	-- Eonar
-							["_encounter"] = { EONAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { EONAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108467, {	-- Portal Keeper Hasabel
-							["_encounter"] = { HASABEL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { HASABEL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108465, {	-- Imonar the Soulhunter
-							["_encounter"] = { IMONAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { IMONAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108464, {	-- Kin'garoth
-							["_encounter"] = { KINGAROTH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { KINGAROTH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108463, {	-- Varimathras
-							["_encounter"] = { VARIMATHRAS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { VARIMATHRAS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108462, {	-- The Coven of Shivarra
-							["_encounter"] = { COVEN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { COVEN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108461, {	-- Aggramar
-							["_encounter"] = { AGGRAMAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { AGGRAMAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108493, {	-- Argus the Unmaker
-							["_encounter"] = { ARGUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { ARGUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 					}),
 					ach(42583, {	-- Mythic: Antorus the Burning Throne
 						iensemble(253201),	-- Felscorned Scythe of the Unmaker
 						crit(108506, {	-- Garothi Worldbreaker
-							["_encounter"] = { WORLDBREAKER, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { WORLDBREAKER, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108505, {	-- Hounds of Sargeras
-							["_encounter"] = { FELHOUNDS, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { FELHOUNDS, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108504, {	-- Antoran High Command
-							["_encounter"] = { HIGH_COMMAND, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { HIGH_COMMAND, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108502, {	-- Eonar
-							["_encounter"] = { EONAR, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { EONAR, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108503, {	-- Portal Keeper Hasabel
-							["_encounter"] = { HASABEL, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { HASABEL, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108501, {	-- Imonar the Soulhunter
-							["_encounter"] = { IMONAR, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { IMONAR, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108500, {	-- Kin'garoth
-							["_encounter"] = { KINGAROTH, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { KINGAROTH, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108499, {	-- Varimathras
-							["_encounter"] = { VARIMATHRAS, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { VARIMATHRAS, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108498, {	-- The Coven of Shivarra
-							["_encounter"] = { COVEN, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { COVEN, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108497, {	-- Aggramar
-							["_encounter"] = { AGGRAMAR, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { AGGRAMAR, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108530, {	-- Argus the Unmaker
-							["_encounter"] = { ARGUS, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { ARGUS, DIFFICULTY.RAID.MYTHIC },
 						}),
 					}),
 				}),
-				n(RAID_GEAR_CONVERSION, bubbleDown({ ["modID"] = 4 }, {
+				n(RAID_GEAR_CONVERSION, bubbleDown({ modID = 4 }, {
 					filter(CLOAKS, {
 						-- Regular items
 						-- No cloaks were made for Remix here

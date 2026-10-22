@@ -2,7 +2,7 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	m(THE_MAW, {
 		n(ZONE_DROPS, {
 			i(180802),	-- Chaotic Runes (QI!)
@@ -10,20 +10,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			i(175769),	-- Constellan Writ
 			i(180808),	-- Discarded Torments (QI!)
 			i(182771, {	-- Flickering Eviscerator
-				["crs"] = { 170694 },	-- Spectral Assassin
+				crs = { 170694 },	-- Spectral Assassin
 			}),
 			i(186564, {	-- Golden Eye (PET!)
-				["timeline"] = { ADDED_9_1_0 },
-				["crs"] = { 177132 },	-- Helsworn Soulseeker
+				timeline = { ADDED_9_1_0 },
+				crs = { 177132 },	-- Helsworn Soulseeker
 			}),
 			i(186559, {	-- Grappling Gauntlet (PET!)
-				["description"] = "Available in The Maw, Korthia, Zereth Mortis.",
-				["timeline"] = { ADDED_9_1_0 },
-				["maps"] = {
+				description = "Available in The Maw, Korthia, Zereth Mortis.",
+				timeline = { ADDED_9_1_0 },
+				maps = {
 					KORTHIA,
 					ZERETH_MORTIS
 				},
-				["crs"] = {	-- 142 NPCs listed on Wowhead... just listing a few of the more common
+				crs = {	-- 142 NPCs listed on Wowhead... just listing a few of the more common
 					182284,	-- Dreadsworn Guard
 					173138,	-- Mawsworn Outrider
 					177292,	-- Mawsworn Mutilator
@@ -35,8 +35,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			i(187275, {	-- Helsworn Battle Plans (QI!)
-				["timeline"] = { ADDED_9_1_0 },
-				["crs"] = {
+				timeline = { ADDED_9_1_0 },
+				crs = {
 					177413,	-- Avowed Soulbreaker
 					177418,	-- Chained Bonesculpter
 					177135,	-- Helsworn Beastlord
@@ -54,21 +54,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			i(183058),	-- Indecipherable Map (QI!)
 			i(187253, {	-- Maw Guard's Spiked Spaulders
-				["timeline"] = { ADDED_9_1_0 },
-				["crs"] = { 167322 },	-- Mawsworn Shackler
+				timeline = { ADDED_9_1_0 },
+				crs = { 167322 },	-- Mawsworn Shackler
 			}),
 			i(180799),	-- Mawsworn Patrol Map (QI!)
 			i(183059, {	-- Mawsworn Shackles
-				["crs"] = { 167322, 176198 },	-- Mawsworn Shackler
+				crs = { 167322, 176198 },	-- Mawsworn Shackler
 			}),
 			i(180803),	-- Puzzling Cryptogram (QI!)
 			i(187252, {	-- Ritualist's Spiked Mantle
-				["timeline"] = { ADDED_9_1_0 },
-				["crs"] = { 168977 },	-- Mawsworn Thaumaturge
+				timeline = { ADDED_9_1_0 },
+				crs = { 168977 },	-- Mawsworn Thaumaturge
 			}),
 			i(186727, {	-- Seal Breaker Key
-				["timeline"] = { ADDED_9_1_0 },
-				["crs"] = { 177134 },	-- Maldraxxi Defector
+				timeline = { ADDED_9_1_0 },
+				crs = { 177134 },	-- Maldraxxi Defector
 			}),
 			i(180806),	-- Shadebound Testimonial (QI!)
 			i(178044),	-- Shifting Cryptogram (QI!)
@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	m(SHADOWLANDS, {
 		m(THE_MAW, {
 			n(ZONE_DROPS, {

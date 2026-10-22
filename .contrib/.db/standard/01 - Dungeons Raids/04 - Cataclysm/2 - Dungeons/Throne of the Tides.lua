@@ -2,58 +2,58 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_0_3 }, {
 	applyclassicphase(CATA_PHASE_ONE, inst(65, {	-- Throne of the Tides
-		["mapID"] = 322,
-		["coord"] = { 71.00, 29.00, VASHJIR_ABYSSAL_DEPTHS },	-- Abyssal Depths, Vashj'ir
-		["maps"] = { 323 },
-		["groups"] = {
+		mapID = 322,
+		coord = { 71.00, 29.00, VASHJIR_ABYSSAL_DEPTHS },	-- Abyssal Depths, Vashj'ir
+		maps = { 323 },
+		groups = {
 			n(QUESTS, sharedData({
 				-- #if AFTER 6.0.3
-				["description"] = "Be careful not to oneshot the boss, otherwise you might not be able to turn in the quest.",
+				description = "Be careful not to oneshot the boss, otherwise you might not be able to turn in the quest.",
 				-- #endif
-				["groups"] = {
+				groups = {
 					i(65654),	-- Belt of a Thousand Deaths
 					i(65655),	-- Leggings of Opportune Strikes
 					i(65656),	-- Sea Witch Charm
 				},
 			}, {
 				q(28834, {	-- Rescue the Earthspeaker!
-					["qg"] = 50270,	-- Captain Taylor
-					["races"] = ALLIANCE_ONLY,
+					qg = 50270,	-- Captain Taylor
+					races = ALLIANCE_ONLY,
 				}),
 				q(28833, {	-- Rescue the Earthspeaker!
-					["qg"] = 50272,	-- Legionnaire Nazgrim
-					["races"] = HORDE_ONLY,
+					qg = 50272,	-- Legionnaire Nazgrim
+					races = HORDE_ONLY,
 				}),
 			})),
 			n(QUESTS, {
 				q(28836, {	-- Sins of the Sea Witch
-					["qg"] = 50270,	-- Captain Taylor
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					qg = 50270,	-- Captain Taylor
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(65657),	-- Deepmist Robes
 						i(65659),	-- Kelp Forest Vest
 						i(65658),	-- Stonespeaker's Belt
 					},
 				}),
 				q(28843, {	-- Sins of the Sea Witch
-					["qg"] = 50272,	-- Legionnaire Nazgrim
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					qg = 50272,	-- Legionnaire Nazgrim
+					races = HORDE_ONLY,
+					groups = {
 						i(65657),	-- Deepmist Robes
 						i(65659),	-- Kelp Forest Vest
 						i(65658),	-- Stonespeaker's Belt
 					},
 				}),
 				q(28798, {	-- Waters of Elune
-					["provider"] = { "o", 207406 },	-- Strange Fountain
-					["requireSkill"] = ARCHAEOLOGY,
-					["isRepeatable"] = true,
+					provider = { "o", 207406 },	-- Strange Fountain
+					requireSkill = ARCHAEOLOGY,
+					isRepeatable = true,
 				}),
 			}),
 			n(ZONE_DROPS, {
-				["crs"] = {
+				crs = {
 					40936,	-- Faceless Watcher
 					40943,	-- Gilgoblin Aquamage
 					40935,	-- Gilgoblin Hunter
@@ -65,16 +65,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					40634,	-- Naz'jar Tempest Witch
 					40925,	-- Tainted Sentry
 				},
-				["groups"] = {
+				groups = {
 					i(55260),	-- Alpheus Legguards
 					i(55262),	-- Barnacle Pendant
 					i(55261),	-- Ring of the Great Whale
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = REMOVED_7_3_5 }, {
 				e(101, {	-- Lady Naz'jar
-					["crs"] = { 40586 },	-- Lady Naz'jar
-					["groups"] = {
+					crs = { 40586 },	-- Lady Naz'jar
+					groups = {
 						i(55198),	-- Aurelian Mitre
 						i(55201),	-- Entwined Nereis
 						i(55203),	-- Lightning Whelk Axe
@@ -83,8 +83,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				e(102, {	-- Commander Ulthok
-					["crs"] = { 40765 },	-- Commander Ulthok
-					["groups"] = {
+					crs = { 40765 },	-- Commander Ulthok
+					groups = {
 						i(55204),	-- Caridean Epaulets
 						i(55228),	-- Cerith Spire Staff
 						i(55205),	-- Chromis Chestpiece
@@ -93,22 +93,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				e(103, {	-- Mindbender Ghur'sha
-					["crs"] = { 40788 },	-- Mindbender Ghur'sha
-					["groups"] = {
+					crs = { 40788 },	-- Mindbender Ghur'sha
+					groups = {
 						i(55229),	-- Anomuran Helm
 						i(55236),	-- Anthia's Ring
 						i(55235),	-- Decapod Slippers
 						i(55237),	-- Porcelain Crab
 						-- #if BEFORE MOP
 						i(55248, {	-- Conch of Thundering Waves
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 					},
 				}),
 				e(104, {	-- Ozumat
-					["crs"] = { 44566 },	-- Ozumat
-					["groups"] = {
+					crs = { 44566 },	-- Ozumat
+					groups = {
 						-- #if BEFORE 7.3.5
 						ach(4839),	-- Throne of the Tides
 						-- #endif
@@ -128,8 +128,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			-- #if BEFORE 7.3.5
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(101, {	-- Lady Naz'jar
-					["crs"] = { 40586 },	-- Lady Naz'jar
-					["groups"] = {
+					crs = { 40586 },	-- Lady Naz'jar
+					groups = {
 						ach(5285),	-- Old Faithful
 						i(56269),	-- Aurelian Mitre
 						i(56270),	-- Entwined Nereis
@@ -139,8 +139,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				e(102, {	-- Commander Ulthok
-					["crs"] = { 40765 },	-- Commander Ulthok
-					["groups"] = {
+					crs = { 40765 },	-- Commander Ulthok
+					groups = {
 					i(56273),	-- Caridean Epaulets
 					i(56271),	-- Cerith Spire Staff
 					i(56274),	-- Chromis Chestpiece
@@ -149,22 +149,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				e(103, {	-- Mindbender Ghur'sha
-					["crs"] = { 40788 },	-- Mindbender Ghur'sha
-					["groups"] = {
+					crs = { 40788 },	-- Mindbender Ghur'sha
+					groups = {
 						i(56278),	-- Anomuran Helm
 						i(56276),	-- Anthia's Ring
 						i(56277),	-- Decapod Slippers
 						i(56280),	-- Porcelain Crab
 						-- #if BEFORE MOP
 						i(56279, {	-- Conch of Thundering Waves
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 					},
 				}),
 				e(104, {	-- Ozumat
-					["crs"] = { 44566 },	-- Ozumat
-					["groups"] = {
+					crs = { 44566 },	-- Ozumat
+					groups = {
 						ach(5061),	-- Heroic: Throne of the Tides
 						ach(5135),	-- Heroic: Throne of the Tides Guild Run
 						ach(5286),	-- Prince of Tides
@@ -184,24 +184,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			-- #else
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				e(101, {	-- Lady Naz'jar
-					["crs"] = { 40586 },	-- Lady Naz'jar
-					["groups"] = {
+					crs = { 40586 },	-- Lady Naz'jar
+					groups = {
 						i(56269),	-- Aurelian Mitre
 						i(56270),	-- Entwined Nereis
 						i(157588, {	-- Ironshell Pendant
-							["timeline"] = { ADDED_7_3_5 },
+							timeline = { ADDED_7_3_5 },
 						}),
 						i(56266),	-- Lightning Whelk Axe
 						i(157587, {	-- Old One Eye's Cowl
-							["timeline"] = { ADDED_7_3_5 },
+							timeline = { ADDED_7_3_5 },
 						}),
 						i(56267),	-- Periwinkle Cloak
 						i(56268),	-- Wrasse Handwraps
 					},
 				}),
 				e(102, {	-- Commander Ulthok
-					["crs"] = { 40765 },	-- Commander Ulthok
-					["groups"] = {
+					crs = { 40765 },	-- Commander Ulthok
+					groups = {
 						i(56273),	-- Caridean Epaulets
 						i(56271),	-- Cerith Spire Staff
 						i(56274),	-- Chromis Chestpiece
@@ -210,20 +210,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				e(103, {	-- Mindbender Ghur'sha
-					["crs"] = { 40788 },	-- Mindbender Ghur'sha
-					["groups"] = {
+					crs = { 40788 },	-- Mindbender Ghur'sha
+					groups = {
 						i(56278),	-- Anomuran Helm
 						i(56276),	-- Anthia's Ring
 						i(56277),	-- Decapod Slippers
 						i(56280),	-- Porcelain Crab
 						i(157586, {	-- Stonespeaker's Spare Cinch
-							["timeline"] = { ADDED_7_3_5 },
+							timeline = { ADDED_7_3_5 },
 						}),
 					},
 				}),
 				e(104, {	-- Ozumat
-					["crs"] = { 44566 },	-- Ozumat
-					["groups"] = {
+					crs = { 44566 },	-- Ozumat
+					groups = {
 						ach(4839),	-- Throne of the Tides
 						i(56291),	-- Abalone Plate Armor
 						i(56289),	-- Bioluminescent Lamp
@@ -232,7 +232,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56282),	-- Nautilus Ring
 						i(56288),	-- Pipefish Cord
 						i(157589, {	-- Salty Shell-Studded Girdle
-							["timeline"] = { ADDED_7_3_5 },
+							timeline = { ADDED_7_3_5 },
 						}),
 						i(56290),	-- Sea Star
 						i(56283),	-- Triton Legplates
@@ -243,20 +243,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(101, {	-- Lady Naz'jar
-					["crs"] = { 40586 },	-- Lady Naz'jar
-					["groups"] = {
+					crs = { 40586 },	-- Lady Naz'jar
+					groups = {
 						ach(5285, {	-- Old Faithful
-							["timeline"] = { ADDED_4_0_3, REMOVED_10_2_0 },
+							timeline = { ADDED_4_0_3, REMOVED_10_2_0 },
 						}),
 					},
 				}),
 				e(104, {	-- Ozumat
-					["crs"] = { 44566 },	-- Ozumat
-					["groups"] = {
+					crs = { 44566 },	-- Ozumat
+					groups = {
 						ach(5061),	-- Heroic: Throne of the Tides
 						ach(5135),	-- Heroic: Throne of the Tides Guild Run
 						ach(5286, {	-- Prince of Tides
-							["timeline"] = { ADDED_4_0_3, REMOVED_10_2_0 },
+							timeline = { ADDED_4_0_3, REMOVED_10_2_0 },
 						}),
 					},
 				}),
@@ -264,11 +264,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			-- #endif
 			-- #if ANYCLASSIC
 			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(PROTOCOL_INFERNO, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(470595),
-				["groups"] = {
+				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(470595),
+				groups = {
 					e(104, {	-- Ozumat
-						["crs"] = { 44566 },	-- Ozumat
-						["groups"] = {
+						crs = { 44566 },	-- Ozumat
+						groups = {
 							ach(41140),	-- Protocol Inferno: Throne of the Tides
 						},
 					}),
@@ -279,7 +279,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(65, {
 		q(35363),	-- Throne of the Tides Reward Quest - Normal completion
 		q(35365),	-- Throne of the Tides Reward Quest - Heroic completion / Timewalking completion

@@ -2,86 +2,86 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
 	m(KORTHIA, {
 		n(ZONE_DROPS, {
-			n(QUESTS, sharedData({ ["isDaily"] = true }, {
+			n(QUESTS, sharedData({ isDaily = true }, {
 				hqt(64433, {	-- 30 Relic Fragments
-					["name"] = "30 Relic Fragments",
-					["crs"] = {
+					name = "30 Relic Fragments",
+					crs = {
 						179823,	-- Relic Gatherer
 						179565,	-- Relic Gorger
 					},
 				}),
 				hqt(64434, {	-- 20 Relic Fragments
-					["name"] = "20 Relic Fragments",
-					["crs"] = {
+					name = "20 Relic Fragments",
+					crs = {
 						179823,	-- Relic Gatherer
 						179565,	-- Relic Gorger
 					},
 				}),
 				hqt(64435, {	-- 15 Relic Fragments
-					["name"] = "15 Relic Fragments",
-					["crs"] = {
+					name = "15 Relic Fragments",
+					crs = {
 						179823,	-- Relic Gatherer
 						179565,	-- Relic Gorger
 					},
 				}),
 				hqt(64436, {	-- 5 Relic Fragments
-					["name"] = "5 Relic Fragments",
-					["crs"] = {
+					name = "5 Relic Fragments",
+					crs = {
 						179823,	-- Relic Gatherer
 						179565,	-- Relic Gorger
 					},
 				}),
 				hqt(64341, {	-- Bonus Relic Loot #1
-					["name"] = "Bonus Relic Loot #1",
+					name = "Bonus Relic Loot #1",
 				}),
 				hqt(64342, {	-- Bonus Relic Loot #2
-					["name"] = "Bonus Relic Loot #2",
+					name = "Bonus Relic Loot #2",
 				}),
 				hqt(64343, {	-- Bonus Relic Loot #3
-					["name"] = "Bonus Relic Loot #3",
+					name = "Bonus Relic Loot #3",
 				}),
 				hqt(64344, {	-- Bonus Relic Loot #4
-					["name"] = "Bonus Relic Loot #4",
+					name = "Bonus Relic Loot #4",
 				}),
 				hqt(64747, {	-- Bonus Relic Loot #5
-					["name"] = "Bonus Relic Loot #5",
+					name = "Bonus Relic Loot #5",
 				}),
 				hqt(64748, {	-- Bonus Relic Loot #6
-					["name"] = "Bonus Relic Loot #6",
+					name = "Bonus Relic Loot #6",
 				}),
 				hqt(64749, {	-- Bonus Relic Loot #7
-					["name"] = "Bonus Relic Loot #7",
+					name = "Bonus Relic Loot #7",
 				}),
 				hqt(64750, {	-- Bonus Relic Loot #8
-					["name"] = "Bonus Relic Loot #8",
+					name = "Bonus Relic Loot #8",
 				}),
 				hqt(64751, {	-- Bonus Relic Loot #9
-					["name"] = "Bonus Relic Loot #9",
+					name = "Bonus Relic Loot #9",
 				}),
 				hqt(64752, {	-- Bonus Relic Loot #10
-					["name"] = "Bonus Relic Loot #10",
+					name = "Bonus Relic Loot #10",
 				}),
 				hqt(64753, {	-- Bonus Relic Loot #11
-					["name"] = "Bonus Relic Loot #11",
+					name = "Bonus Relic Loot #11",
 				}),
 				hqt(64754, {	-- Bonus Relic Loot #12
-					["name"] = "Bonus Relic Loot #12",
+					name = "Bonus Relic Loot #12",
 				}),
 				hqt(64755, {	-- Bonus Relic Loot #13
-					["name"] = "Bonus Relic Loot #13",
+					name = "Bonus Relic Loot #13",
 				}),
 				hqt(64756, {	-- Bonus Relic Loot #14
-					["name"] = "Bonus Relic Loot #14",
+					name = "Bonus Relic Loot #14",
 				}),
 				hqt(64757, {	-- Bonus Relic Loot #15
-					["name"] = "Bonus Relic Loot #15",
+					name = "Bonus Relic Loot #15",
 				}),
 			})),
 			i(187054, {	-- Lost Razorwing Egg
-				["crs"] = {
+				crs = {
 					177295,	-- Colossal Worldeater
 					177913,	-- Hungering Behemoth
 					179472,	-- Konthrogz the Obliterator
@@ -93,21 +93,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					180032,	-- Wild Worldcracker
 					179859,	-- Xyraxz the Unknowable
 				},
-				["groups"] = {
+				groups = {
 					hqt(64280, {	-- Daily Drop #1
-						["name"] = "Daily Drop #1",
-						["isDaily"] = true,
+						name = "Daily Drop #1",
+						isDaily = true,
 					}),
 					hqt(64281, {	-- Daily Drop #2	-- probably collecting the mount, will confirm if no one else does prior
-						["name"] = "Daily Drop #2",
-						["isDaily"] = true,
+						name = "Daily Drop #2",
+						isDaily = true,
 					}),
 				},
 			}),
 		-- Quest Items
 			i(185740, {	-- Head of Azodius (QI!)
-				["coord"] = { 56.4, 17.2, KORTHIA },
-				["crs"] = { 177243 },	-- Azodius
+				coord = { 56.4, 17.2, KORTHIA },
+				crs = { 177243 },	-- Azodius
 			}),
 			i(185915),	-- Korthian Artifact (QI!)
 			i(187177),	-- Researching Korthian Relics (QI!)
@@ -200,7 +200,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(ZONE_DROPS, {

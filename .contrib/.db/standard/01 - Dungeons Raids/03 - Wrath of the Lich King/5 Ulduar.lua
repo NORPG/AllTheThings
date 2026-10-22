@@ -10,38 +10,38 @@ local revampAch = function(id, t)
 end
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_TWO, {
-	inst(759, bubbleDownSelf({ ["timeline"] = { ADDED_3_1_0 } }, {	-- Ulduar
-		["mapID"] = ULDUAR,
-		["coord"] = { 41.5, 17.9, THE_STORM_PEAKS },
-		["maps"] = { 148, 149, 150, 151, 152 },
+	inst(759, bubbleDownSelf({ timeline = { ADDED_3_1_0 } }, {	-- Ulduar
+		mapID = ULDUAR,
+		coord = { 41.5, 17.9, THE_STORM_PEAKS },
+		maps = { 148, 149, 150, 151, 152 },
 		-- #if NOT ANYCLASSIC
-		["sharedLockout"] = 1,
+		sharedLockout = 1,
 		-- #endif
-		["isRaid"] = true,
-		["lvl"] = lvlsquish(80, 80, 30),
-		["groups"] = {
+		isRaid = true,
+		lvl = lvlsquish(80, 80, 30),
+		groups = {
 			applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO,
 			header(HEADERS.Item, 46017, {	-- Val'anyr, Hammer of Ancient Kings
-				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
-				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
-				["isRaid"] = true,
-				["groups"] = {
+				description = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
+				classes = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
+				isRaid = true,
+				groups = {
 					ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
-						["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
-						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
+						provider = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
+						classes = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
 					}),
 					q(13622, {	-- Ancient History
-						["provider"] = { "i", 45039 },	-- Shattered Fragments of Val'anyr
-						["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
+						provider = { "i", 45039 },	-- Shattered Fragments of Val'anyr
+						cost = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
 					}),
 					q(13629, {	-- Val'anyr, Hammer of Ancient Kings
-						["sourceQuest"] = 13622,	-- Ancient History
-						["provider"] = { "o", 194555 },	-- Archivum Console
-						["groups"] = {
+						sourceQuest = 13622,	-- Ancient History
+						provider = { "o", 194555 },	-- Archivum Console
+						groups = {
 							objective(1, {	-- 0/1 Reforged Hammer of Ancient Kings
-								["provider"] = { "i", 45897 },	-- Reforged Hammer of Ancient Kings
-								["cost"] = { { "i", 45896, 1 } },	-- Unbound Fragments of Val'anyr
-								["cr"] = 33288,	-- Yogg-Saron
+								provider = { "i", 45897 },	-- Reforged Hammer of Ancient Kings
+								cost = { { "i", 45896, 1 } },	-- Unbound Fragments of Val'anyr
+								cr = 33288,	-- Yogg-Saron
 							}),
 							i(46017)	-- Val'anyr, Hammer of Ancient Kings
 						},
@@ -51,9 +51,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			-- #if AFTER 7.3.5.25727
 			n(ACHIEVEMENTS, {
 				ach(12401, {	-- Glory of the Ulduar Raider
-					["timeline"] = { ADDED_7_3_5 },
+					timeline = { ADDED_7_3_5 },
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						12320,	-- Orbit-uary
 						12325,	-- Stokin' the Furnace
 						12322,	-- Iron Dwarf, Medium Rare
@@ -68,15 +68,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						12373,	-- I Love the Smell of Saronite in the Morning
 						12387,	-- One Light in the Darkness
 					}},
-					["groups"] = {
+					groups = {
 						i(45802),	-- Rusted Proto-Drake (MOUNT!)
 						i(45801),	-- Ironbound Proto-Drake (MOUNT!)
 					},
 				}),
 				ach(12311, {	-- The Secrets of Ulduar
-					["timeline"] = { ADDED_7_3_5 },
+					timeline = { ADDED_7_3_5 },
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						12297,	-- The Siege of Ulduar
 						12302,	-- The Antechamber of Ulduar
 						12309,	-- The Keepers of Ulduar
@@ -84,88 +84,88 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					}},
 				}),
 				ach(12297, {	-- The Siege of Ulduar
-					["timeline"] = { ADDED_7_3_5 },
-					["groups"] = {
+					timeline = { ADDED_7_3_5 },
+					groups = {
 						crit(39267, {	-- Flame Leviathan
-							["timeline"] = { ADDED_7_3_5 },
-							["_npcs"] = { 33113 },
+							timeline = { ADDED_7_3_5 },
+							_npcs = { 33113 },
 						}),
 						crit(39268, {	-- Razorscale
-							["timeline"] = { ADDED_7_3_5 },
-							["_npcs"] = { 33186 },
+							timeline = { ADDED_7_3_5 },
+							_npcs = { 33186 },
 						}),
 						crit(39270, {	-- Ignis the Furnace Master
-							["timeline"] = { ADDED_7_3_5 },
-							["_npcs"] = { 33118 },
+							timeline = { ADDED_7_3_5 },
+							_npcs = { 33118 },
 						}),
 						crit(39269, {	-- XT-002 Deconstructor
-							["timeline"] = { ADDED_7_3_5 },
-							["_npcs"] = { 33293 },
+							timeline = { ADDED_7_3_5 },
+							_npcs = { 33293 },
 						}),
 					},
 				}),
 				ach(12302, {	-- The Antechamber of Ulduar
-					["timeline"] = { ADDED_7_3_5 },
-					["groups"] = {
+					timeline = { ADDED_7_3_5 },
+					groups = {
 						crit(39285, {	-- Assembly of Iron
-							["timeline"] = { ADDED_7_3_5 },
-							["_npcs"] = { 32867 },
+							timeline = { ADDED_7_3_5 },
+							_npcs = { 32867 },
 						}),
 						crit(39287, {	-- Kologarn
-							["timeline"] = { ADDED_7_3_5 },
-							["_npcs"] = { 32930 },
+							timeline = { ADDED_7_3_5 },
+							_npcs = { 32930 },
 						}),
 						crit(39286, {	-- Auriaya
-							["timeline"] = { ADDED_7_3_5 },
-							["_npcs"] = { 33515 },
+							timeline = { ADDED_7_3_5 },
+							_npcs = { 33515 },
 						}),
 					},
 				}),
 				ach(12309, {	-- The Keepers of Ulduar
-					["timeline"] = { ADDED_7_3_5 },
-					["groups"] = {
+					timeline = { ADDED_7_3_5 },
+					groups = {
 						crit(39289, {	-- Hodir
-							["timeline"] = { ADDED_7_3_5 },
-							["_npcs"] = { 32845 },
+							timeline = { ADDED_7_3_5 },
+							_npcs = { 32845 },
 						}),
 						crit(39291, {	-- Thorim
-							["timeline"] = { ADDED_7_3_5 },
-							["_npcs"] = { 32865 },
+							timeline = { ADDED_7_3_5 },
+							_npcs = { 32865 },
 						}),
 						crit(39292, {	-- Freya
-							["timeline"] = { ADDED_7_3_5 },
-							["_npcs"] = { 32906 },
+							timeline = { ADDED_7_3_5 },
+							_npcs = { 32906 },
 						}),
 						crit(39293, {	-- Mimiron
-							["timeline"] = { ADDED_7_3_5 },
-							["_npcs"] = { 33350 },
+							timeline = { ADDED_7_3_5 },
+							_npcs = { 33350 },
 						}),
 					},
 				}),
 				ach(12310, {	-- The Descent into Madness
-					["timeline"] = { ADDED_7_3_5 },
-					["groups"] = {
+					timeline = { ADDED_7_3_5 },
+					groups = {
 						crit(39294, {	-- General Vezax
-							["timeline"] = { ADDED_7_3_5 },
-							["_npcs"] = { 33271 },
+							timeline = { ADDED_7_3_5 },
+							_npcs = { 33271 },
 						}),
 						crit(39295, {	-- Yogg-Saron
-							["timeline"] = { ADDED_7_3_5 },
-							["_npcs"] = { 33288 },
+							timeline = { ADDED_7_3_5 },
+							_npcs = { 33288 },
 						}),
 					},
 				}),
 				ach(12312, {	-- Dwarfageddon
-					["timeline"] = { ADDED_7_3_5 },
-					["crs"] = {
+					timeline = { ADDED_7_3_5 },
+					crs = {
 						33236,	-- Steelforged Defender
 						33572,	-- Steelforged Defender
 					},
 				}),
 				ach(12360, {	-- Lumberjacked
-					["description"] = "Must be killed before killing Freya or they will despawn.",
-					["timeline"] = { ADDED_7_3_5 },
-					["providers"] = {
+					description = "Must be killed before killing Freya or they will despawn.",
+					timeline = { ADDED_7_3_5 },
+					providers = {
 						{ "n", 32915 },	-- Elder Brightleaf
 						{ "n", 32913 },	-- Elder Ironbranch
 						{ "n", 32914 },	-- Elder Stonebark
@@ -174,7 +174,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				ach(11751),	-- Mogg-Saron
 			}),
 			n(COMMON_BOSS_DROPS, {
-				["crs"] = {
+				crs = {
 					33113,	-- Flame Leviathan
 					33118,	-- Ignis the Furnace Master
 					33186,	-- Razorscale
@@ -192,7 +192,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					33271,	-- General Vezax
 					33288,	-- Yogg-Saron
 				},
-				["groups"] = {
+				groups = {
 					-- #if BEFORE 4.0.1
 					currency(221),	-- Emblem of Conquest
 					-- #endif
@@ -202,15 +202,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			}),
 			-- #endif
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
-				["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
-				["lvl"] = lvlsquish(80, 80, 30),
-				["groups"] = {
+				timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
+				lvl = lvlsquish(80, 80, 30),
+				groups = {
 					-- #if AFTER 7.3.5.25727
 					n(ACHIEVEMENTS, {
 						ach(2957, {	-- Glory of the Ulduar Raider (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
-							["sym"] = {{"meta_achievement",
+							sym = {{"meta_achievement",
 								3056,	-- Orbit-uary (10 player)
 								2930,	-- Stokin' the Furnace (10 player)
 								2923,	-- Iron Dwarf, Medium Rare (10 player)
@@ -225,7 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								3181,	-- I Love the Smell of Saronite in the Morning (10 player)
 								3158,	-- One Light in the Darkness (10 player)
 							}},
-							["groups"] = { i(45802) },	-- Rusted Proto-Drake (MOUNT!)
+							groups = { i(45802) },	-- Rusted Proto-Drake (MOUNT!)
 						}),
 						revampAch(2919),	-- A Quick Shave (10 player)
 						revampAch(3159),	-- Alone in the Darkness (10 player)
@@ -235,7 +235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2945),	-- But I'm On Your Side (10 player)
 						revampAch(2947),	-- Can't Do That While Stunned (10 player)
 						ach(2903, bubbleDownSelf({	-- Champion of Ulduar
-							["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
+							timeline = { ADDED_3_1_0, REMOVED_4_0_1 },
 						},{
 							title(127),	-- <Name>, Champion of Ulduar
 						})),
@@ -251,7 +251,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2982),	-- Getting Back to Nature (10 player)
 						revampAch(2967),	-- Getting Cold in Here (10 player)
 						ach(3004, {	-- He Feeds On Your Tears (10 player)
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 						revampAch(3012),	-- He's Not Getting Any Older (10 player)
 						revampAch(3058),	-- Heartbreaker (10 player)
@@ -272,7 +272,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(3179),	-- Knock, Knock, Knock on Wood (10 player)
 						revampAch(3176),	-- Lose Your Illusion (10 player)
 						revampAch(2979),	-- Lumberjacked (10 player)
-						ach(11751, {["timeline"] = {ADDED_7_2_0}}),	-- Mogg-Saron (Ulduar)
+						ach(11751, {timeline = {ADDED_7_2_0}}),	-- Mogg-Saron (Ulduar)
 						revampAch(2937),	-- Must Deconstruct Faster (10 player)
 						revampAch(2931),	-- Nerf Engineering (10 player)
 						revampAch(2934),	-- Nerf Gravity Bombs (10 player)
@@ -298,9 +298,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2892),	-- The Descent into Madness (10 player)
 						revampAch(2890),	-- The Keepers of Ulduar (10 player)
 						ach(2894, {	-- The Secrets of Ulduar (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
-							["sym"] = {{"meta_achievement",
+							sym = {{"meta_achievement",
 								2886,	-- The Siege of Ulduar (10 player)
 								2888,	-- The Antechamber of Ulduar (10 player)
 								2890,	-- The Keepers of Ulduar (10 player)
@@ -317,9 +317,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					-- #else
 					n(ACHIEVEMENTS, {
 						ach(2957, {	-- Glory of the Ulduar Raider (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
-							["sym"] = {{"meta_achievement",
+							sym = {{"meta_achievement",
 								3056,	-- Orbit-uary (10 player)
 								2930,	-- Stokin' the Furnace (10 player)
 								2923,	-- Iron Dwarf, Medium Rare (10 player)
@@ -334,17 +334,17 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								3181,	-- I Love the Smell of Saronite in the Morning (10 player)
 								3158,	-- One Light in the Darkness (10 player)
 							}},
-							["groups"] = { i(45802) },	-- Rusted Proto-Drake (MOUNT!)
+							groups = { i(45802) },	-- Rusted Proto-Drake (MOUNT!)
 						}),
 						ach(2903, bubbleDownSelf({	-- Champion of Ulduar
-							["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
+							timeline = { ADDED_3_1_0, REMOVED_4_0_1 },
 						},{
 							title(127),	-- <Name>, Champion of Ulduar
 						})),
 						ach(2894, {	-- The Secrets of Ulduar (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
-							["sym"] = {{"meta_achievement",
+							sym = {{"meta_achievement",
 								2886,	-- The Siege of Ulduar (10 player)
 								2888,	-- The Antechamber of Ulduar (10 player)
 								2890,	-- The Keepers of Ulduar (10 player)
@@ -352,109 +352,109 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}},
 						}),
 						ach(2888, {	-- The Antechamber of Ulduar (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
-							["groups"] = {
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
+							groups = {
 								crit(10580, {	-- Assembly of Iron
-									["_encounter"] = { 1641, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+									_encounter = { 1641, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(9992, {	-- Auriaya
-									["_encounter"] = { 1643, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+									_encounter = { 1643, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(9978, {	-- Kologarn
-									["_encounter"] = { 1642, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+									_encounter = { 1642, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 							},
 						}),
 						ach(2892, {	-- The Descent into Madness (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
-							["groups"] = {
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
+							groups = {
 								crit(9948, {	-- General Vezax
-									["_encounter"] = { 1648, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+									_encounter = { 1648, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(5643, {	-- Yogg-Saron
-									["_encounter"] = { 1649, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+									_encounter = { 1649, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 							},
 						}),
 						ach(2890, {	-- The Keepers of Ulduar (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
-							["groups"] = {
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
+							groups = {
 								crit(10560, {	-- Hodir
-									["_encounter"] = { 1644, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+									_encounter = { 1644, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(10558, {	-- Thorim
-									["_encounter"] = { 1645, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+									_encounter = { 1645, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(10559, {	-- Freya
-									["_encounter"] = { 1646, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+									_encounter = { 1646, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(9947, {	-- Mimiron
-									["_encounter"] = { 1647, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+									_encounter = { 1647, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 							},
 						}),
 						ach(2886, {	-- The Siege of Ulduar (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
-							["groups"] = {
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
+							groups = {
 								crit(9968, {	-- Flame Leviathan
-									["_encounter"] = { 1637, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+									_encounter = { 1637, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(9970, {	-- Razorscale
-									["_encounter"] = { 1639, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+									_encounter = { 1639, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(9972, {	-- Ignis the Furnace Master
-									["_encounter"] = { 1638, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+									_encounter = { 1638, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 								crit(9974, {	-- XT-002 Deconstructor
-									["_encounter"] = { 1640, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
+									_encounter = { 1640, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
 								}),
 							},
 						}),
 						ach(3097, {	-- Dwarfageddon (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
-							["crs"] = {
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
+							crs = {
 								33236,	-- Steelforged Defender
 								33572,	-- Steelforged Defender
 							},
 						}),
 						ach(2979, {	-- Lumberjacked (10 player)
-							["providers"] = {
+							providers = {
 								{ "n", 32915 },	-- Elder Brightleaf
 								{ "n", 32913 },	-- Elder Ironbranch
 								{ "n", 32914 },	-- Elder Stonebark
 							},
-							["description"] = "Must be killed before killing Freya or they will despawn.",
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
+							description = "Must be killed before killing Freya or they will despawn.",
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
 						}),
 					}),
 					n(QUESTS, {
 						q(13614, {	-- Algalon
-							["sourceQuests"] = {
+							sourceQuests = {
 								13606,	-- Freya's Sigil
 								13609,	-- Hodir's Sigil
 								13611,	-- Mimiron's Sigil
 								13610,	-- Thorim's Sigil
 							},
-							["qg"] = 33957,	-- Prospector Loren
-							["qg"] = 33957,	-- Prospector Loren
-							["qi"] = 45791,	-- Sigils of the Watchers
-							["timeline"] = { REMOVED_7_3_5 },
-							["groups"] = {
+							qg = 33957,	-- Prospector Loren
+							qg = 33957,	-- Prospector Loren
+							qi = 45791,	-- Sigils of the Watchers
+							timeline = { REMOVED_7_3_5 },
+							groups = {
 								i(45796, {	-- Celestial Planetarium Key
-									["timeline"] = { REMOVED_4_2_0 },
+									timeline = { REMOVED_4_2_0 },
 								}),
 								i(45875, {	-- Sack of Ulduar Spoils
-									["sym"] = { { "select", "itemID", 45087 } },	-- Runed Orb
+									sym = { { "select", "itemID", 45087 } },	-- Runed Orb
 								}),
 							},
 						}),
 						q(13631, {	-- All Is Well That Ends Well
-							["providers"] = {
+							providers = {
 								{ "i", 46052 },	-- Reply-Code Alpha
 								{ "n", 16128 },	-- Rhonin <Leader of the Kirin Tor>
 							},
-							["maps"] = { NORTHREND_DALARAN },
-							["groups"] = {
+							maps = { NORTHREND_DALARAN },
+							groups = {
 								i(46320),	-- Drape of the Skyherald
 								i(46321),	-- Sunglimmer Drape
 								i(46322),	-- Brann's Sealing Ring
@@ -462,54 +462,54 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						q(13604, {	-- Archivum Data Disc
-							["provider"] = { "i", 45506 },	-- Archivum Data Disc
+							provider = { "i", 45506 },	-- Archivum Data Disc
 						}),
 						q(13606, {	-- Freya's Sigil
-							["sourceQuest"] = 13607,	-- The Celestial Planetarium
-							["qg"] = 33957,	-- Prospector Loren
-							["timeline"] = { REMOVED_7_3_5 },
-							["groups"] = {
+							sourceQuest = 13607,	-- The Celestial Planetarium
+							qg = 33957,	-- Prospector Loren
+							timeline = { REMOVED_7_3_5 },
+							groups = {
 								objective(1, {	-- 0/1 Freya's Sigil
-									["provider"] = { "i", 45788 },	-- Freya's Sigil
-									["cr"] = 32906,	-- Freya
+									provider = { "i", 45788 },	-- Freya's Sigil
+									cr = 32906,	-- Freya
 								}),
 							},
 						}),
 						q(13609, {	-- Hodir's Sigil
-							["sourceQuest"] = 13607,	-- The Celestial Planetarium
-							["qg"] = 33957,	-- Prospector Loren
-							["timeline"] = { REMOVED_7_3_5 },
-							["groups"] = {
+							sourceQuest = 13607,	-- The Celestial Planetarium
+							qg = 33957,	-- Prospector Loren
+							timeline = { REMOVED_7_3_5 },
+							groups = {
 								objective(1, {	-- 0/1 Hodir's Sigil
-									["provider"] = { "i", 45786 },	-- Hodir's Sigil
-									["cr"] = 32845,	-- Hodir
+									provider = { "i", 45786 },	-- Hodir's Sigil
+									cr = 32845,	-- Hodir
 								}),
 							},
 						}),
 						q(13611, {	-- Mimiron's Sigil
-							["sourceQuest"] = 13607,	-- The Celestial Planetarium
-							["qg"] = 33957,	-- Prospector Loren
-							["timeline"] = { REMOVED_7_3_5 },
-							["groups"] = {
+							sourceQuest = 13607,	-- The Celestial Planetarium
+							qg = 33957,	-- Prospector Loren
+							timeline = { REMOVED_7_3_5 },
+							groups = {
 								objective(1, {	-- 0/1 Mimiron's Sigil
-									["provider"] = { "i", 45787 },	-- Mimiron's Sigil
-									["cr"] = 33350,	-- Mimiron
+									provider = { "i", 45787 },	-- Mimiron's Sigil
+									cr = 33350,	-- Mimiron
 								}),
 							},
 						}),
 						q(13607, {	-- The Celestial Planetarium
-							["sourceQuest"] = 13604,	-- Archivum Data Disc
-							["qg"] = 33957,	-- Prospector Loren
-							["timeline"] = { REMOVED_7_3_5 },
+							sourceQuest = 13604,	-- Archivum Data Disc
+							qg = 33957,	-- Prospector Loren
+							timeline = { REMOVED_7_3_5 },
 						}),
 						q(13610, {	-- Thorim's Sigil
-							["sourceQuest"] = 13607,	-- The Celestial Planetarium
-							["qg"] = 33957,	-- Prospector Loren
-							["timeline"] = { REMOVED_7_3_5 },
-							["groups"] = {
+							sourceQuest = 13607,	-- The Celestial Planetarium
+							qg = 33957,	-- Prospector Loren
+							timeline = { REMOVED_7_3_5 },
+							groups = {
 								objective(1, {	-- 0/1 Thorim's Sigil
-									["provider"] = { "i", 45784 },	-- Thorim's Sigil
-									["cr"] = 32865,	-- Thorim
+									provider = { "i", 45784 },	-- Thorim's Sigil
+									cr = 32865,	-- Thorim
 								}),
 							},
 						}),
@@ -528,15 +528,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						i(46346),	-- Boots of Unsettled Prey
 					}),
 					e(1637, {	-- Flame Leviathan
-						["creatureID"] = 33113,	-- Flame Leviathan
-						["groups"] = {
+						creatureID = 33113,	-- Flame Leviathan
+						groups = {
 							revampAch(3056, {	-- Orbit-uary (10 player)
 								i(45300),	-- Mantle of Fiery Vengeance
 								i(45293),	-- Handguards of Potent Cures
 								i(45295),	-- Gilded Steel Legplates
 								i(45297),	-- Shimmering Seal
 								i(45296, {	-- Twirling Blades (10 Man)
-									["timeline"] = { REMOVED_5_0_4 },
+									timeline = { REMOVED_5_0_4 },
 								}),
 							}),
 							revampAch(2915),	-- Nuked from Orbit (10 player)
@@ -564,13 +564,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1638, {	-- Ignis the Furnace Master
-						["creatureID"] = 33118,	-- Ignis the Furnace Master
-						["groups"] = {
+						creatureID = 33118,	-- Ignis the Furnace Master
+						groups = {
 							revampAch(2927),	-- Hot Pocket (10 player)
 							revampAch(2925),	-- Shattered (10 player)
 							revampAch(2930),	-- Stokin' the Furnace (10 player)
 							i(142086, {	-- Magma Rageling (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(45311),	-- Relentless Edge
 							i(45309),	-- Rifle of the Platinum Guard
@@ -585,12 +585,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1639, {	-- Razorscale
-						["creatureID"] = 33186,	-- Razorscale
-						["groups"] = {
+						creatureID = 33186,	-- Razorscale
+						groups = {
 							revampAch(2919),	-- A Quick Shave (10 player)
 							revampAch(2923),	-- Iron Dwarf, Medium Rare (10 player)
 							i(142087, {	-- Ironbound Proto-Whelp (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(45298),	-- Razorscale Talon
 							i(45299),	-- Dragonsteel Faceplate
@@ -605,8 +605,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1640, {	-- XT-002 Deconstructor
-						["creatureID"] = 33293,	-- XT-002 Deconstructor
-						["groups"] = {
+						creatureID = 33293,	-- XT-002 Deconstructor
+						groups = {
 							revampAch(3058, {	-- Heartbreaker (10 player)
 								i(45868),	-- Aesir's Edge
 								i(45870),	-- Magnetized Projectile Emitter
@@ -616,11 +616,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}),
 							revampAch(2937),	-- Must Deconstruct Faster (10 player)
 							revampAch(2931, {	-- Nerf Engineering (10 player)
-								["cr"] = 33343,	-- XS-013 Scrapbot
+								cr = 33343,	-- XS-013 Scrapbot
 							}),
 							revampAch(2934),	-- Nerf Gravity Bombs (10 player)
 							revampAch(2933, {	-- Nerf Scrapbots (10 player)
-								["crs"] = {
+								crs = {
 									33346,	-- XE-321 Boombot
 									33343,	-- XS-013 Scrapbot
 								},
@@ -638,11 +638,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1650, {	-- Algalon the Observer
-						["creatureID"] = 32871,	-- Algalon the Observer
-						["groups"] = {
+						creatureID = 32871,	-- Algalon the Observer
+						groups = {
 							-- #if ANYCLASSIC
 							ach(17341, {	-- Cutting Edge: Ulduar
-								["OnUpdate"] = [[function(t)
+								OnUpdate = [[function(t)
 									if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
 										t.u = ]] .. REMOVED_FROM_GAME .. [[;
 										t.rwp = nil;
@@ -654,28 +654,28 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}),
 							-- #endif
 							ach(3004, {	-- He Feeds On Your Tears (10 player)
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 							}),
 							revampAch(3036, {	-- Observed (10 player)
 								title(129),	-- Starcaller <Name>
 							}),
 							ach(5020, {	-- Observed - Guild Edition
-								["timeline"] = { ADDED_4_0_3 },
+								timeline = { ADDED_4_0_3 },
 							}),
 							revampAch(3003, {	-- Supermassive (10 player)
 								crit(10780),	-- Close 3 Black Holes within 10 seconds
 								crit(10781),	-- Defeat Algalon the Observer
 							}),
 							ach(3316, {	-- Herald of the Titans
-								["description"] = "While your current character may now be too high level to earn it, it's good for players to know it exist.",
+								description = "While your current character may now be too high level to earn it, it's good for players to know it exist.",
 								-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
-								["lockCriteria"] =
+								lockCriteria =
 									-- #if AFTER SL
 									{ 1, "lvl", 31 },
 									-- #else
 									{ 1, "lvl", 80 },
 									-- #endif
-								["groups"] = { title(131) },	-- <Name>, Herald of the Titans
+								groups = { title(131) },	-- <Name>, Herald of the Titans
 							}),
 							i(46052),	-- Reply-Code Alpha
 							i(46047),	-- Pendant of the Somber Witness
@@ -696,15 +696,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1641, {	-- Assembly of Iron
-						["crs"] = {
+						crs = {
 							32867,	-- Steelbreaker
 							32927,	-- Runemaster Molgeim
 							32857,	-- Stormcaller Brundir
 						},
-						["groups"] = {
+						groups = {
 							revampAch(2945, {	-- But I'm On Your Side (10 player)
-								["provider"] = { "i", 43499 },	-- Iron Boot Flask
-								["description"] = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
+								provider = { "i", 43499 },	-- Iron Boot Flask
+								description = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
 							}),
 							revampAch(2947),	-- Can't Do That While Stunned (10 player)
 							revampAch(2939),	-- I Choose You, Runemaster Molgeim (10 player)
@@ -718,7 +718,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}),
 							revampAch(2940),	-- I Choose You, Stormcaller Brundir (10 player)
 							i(142088, {	-- Runeforged Servitor (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(45331),	-- Rune-Etched Nightblade
 							i(45332),	-- Stormtip
@@ -733,8 +733,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1642, {	-- Kologarn
-						["creatureID"] = 32930,	-- Kologarn
-						["groups"] = {
+						creatureID = 32930,	-- Kologarn
+						groups = {
 							revampAch(2953),	-- Disarmed (10 player)
 							revampAch(2955),	-- If Looks Could Kill (10 player)
 							revampAch(2959),	-- Rubble and Roll (10 player)
@@ -752,14 +752,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1643, {	-- Auriaya
-						["creatureID"] = 33515,	-- Auriaya
-						["groups"] = {
+						creatureID = 33515,	-- Auriaya
+						groups = {
 							revampAch(3006),	-- Crazy Cat Lady (10 player)
 							revampAch(3076, {	-- Nine Lives (10 player)
-								["cr"] = 34035,	-- Feral Defender
+								cr = 34035,	-- Feral Defender
 							}),
 							i(142089, {	-- Sanctum Cub (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(45713),	-- Nurturing Touch
 							i(45707),	-- Shieldwall of the Breaker
@@ -774,8 +774,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1644, {	-- Hodir
-						["creatureID"] = 32845,	-- Hodir
-						["groups"] = {
+						creatureID = 32845,	-- Hodir
+						groups = {
 							revampAch(2961),	-- Cheese the Freeze (10 player)
 							revampAch(2967),	-- Getting Cold in Here (10 player)
 							revampAch(3182, {	-- I Could Say That This Cache Was Rare (10 player)
@@ -789,10 +789,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							revampAch(2963),	-- I Have the Coolest Friends (10 player)
 							revampAch(2969),	-- Staying Buffed All Winter (10 player)
 							i(142090, {	-- Winter Rageling (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							}),
 							i(45650),	-- Leggings of the Wayward Conqueror
 							i(45651),	-- Leggings of the Wayward Protector
@@ -805,8 +805,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1645, {	-- Thorim
-						["creatureID"] = 32865,	-- Thorim
-						["groups"] = {
+						creatureID = 32865,	-- Thorim
+						groups = {
 							revampAch(2971),	-- Don't Stand in the Lightning (10 player)
 							revampAch(2973, {	-- I'll Take You All On (10 player)
 								crit(10558),	-- Defeat Thorim
@@ -824,7 +824,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							revampAch(2977),	-- Siffed (10 player)
 							revampAch(2975),	-- Who Needs Bloodlust? (10 player)
 							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							}),
 							i(45659),	-- Spaulders of the Wayward Conqueror
 							i(45660),	-- Spaulders of the Wayward Protector
@@ -837,8 +837,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1646, {	-- Freya
-						["creatureID"] = 32906,	-- Freya
-						["groups"] = {
+						creatureID = 32906,	-- Freya
+						groups = {
 							revampAch(2980),	-- Con-speed-atory (10 player)
 							revampAch(2985),	-- Deforestation (10 player)
 							revampAch(2982),	-- Getting Back to Nature (10 player)
@@ -853,10 +853,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								i(45788),	-- Freya's Sigil
 							}),
 							i(142091, {	-- Snaplasher (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							}),
 							i(45644),	-- Gloves of the Wayward Conqueror
 							i(45645),	-- Gloves of the Wayward Protector
@@ -867,18 +867,18 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45940),	-- Tunic of the Limber Stalker
 							i(45936),	-- Legplates of Fluorishing Resolve
 							i(46110, {	-- Alchemist's Cache
-								["requireSkill"] = ALCHEMY,
+								requireSkill = ALCHEMY,
 							}),
 						},
 					}),
 					e(1647, {	-- Mimiron
-						["crs"] = {
+						crs = {
 							33350,	-- Mimiron
 							33432,	-- Leviathan Mk II
 							33651,	-- VX-001
 							33670,	-- Aerial Command Unit
 						},
-						["groups"] = {
+						groups = {
 							revampAch(3180, {	-- Firefighter (10 player)
 								i(45990),	-- Fusion Blade
 								i(45993),	-- Mimiron's Flight Goggles
@@ -888,7 +888,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								i(45787),	-- Mimiron's Sigil
 							}),
 							revampAch(3138, {	-- Not-So-Friendly Fire (10 player)
-								["cr"] = 34057,	-- Assault Bot
+								cr = 34057,	-- Assault Bot
 							}),
 							revampAch(2989, {	-- Set Up Us the Bomb (10 player)
 								crit(10543),	-- A Proximity Mine
@@ -896,10 +896,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								crit(10545),	-- A Bomb Bot
 							}),
 							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							}),
 							i(142092, {	-- G0-R41-0N Ultratonk (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(45647),	-- Helm of the Wayward Conqueror
 							i(45648),	-- Helm of the Wayward Protector
@@ -910,13 +910,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45976),	-- Static Charge Handwraps
 							i(45975),	-- Cable of the Metrognome
 							i(140782, {	-- Neural Net Detangler
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							}),
 						},
 					}),
 					e(1648, {	-- General Vezax
-						["creatureID"] = 33271,	-- General Vezax
-						["groups"] = {
+						creatureID = 33271,	-- General Vezax
+						groups = {
 							revampAch(3181, {	-- I Love the Smell of Saronite in the Morning (10 player)
 								i(46033),	-- Tortured Earth
 								i(46035),	-- Aesuga, Hand of the Argent Champion
@@ -939,11 +939,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1649, {	-- Yogg-Saron
-						["creatureID"] = 33288,	-- Yogg-Saron
-						["groups"] = {
+						creatureID = 33288,	-- Yogg-Saron
+						groups = {
 							-- #if ANYCLASSIC
 							ach(17340, {	-- Ahead of the Curve: Yogg-Saron
-								["OnUpdate"] = [[function(t)
+								OnUpdate = [[function(t)
 									if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
 										t.u = ]] .. REMOVED_FROM_GAME .. [[;
 										t.rwp = nil;
@@ -958,7 +958,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								i(46312),	-- Vanquished Clutches of Yogg-Saron
 							}),
 							ach(5019, {	-- Alone in the Darkness - Guild Edition
-								["timeline"] = { ADDED_4_0_3 },
+								timeline = { ADDED_4_0_3 },
 							}),
 							revampAch(3158, {	-- One Light in the Darkness (10 player)
 								i(46067),	-- Hammer of Crushing Whispers
@@ -977,15 +977,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								crit(10326),	-- The Tortured Champion
 							}),
 							revampAch(3009, {	-- Kiss and Make Up (10 player)
-								["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
-								["crs"] = { 33134 },	-- Sara
+								description = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
+								crs = { 33134 },	-- Sara
 							}),
 							revampAch(3014),	-- They're Coming Out of the Walls (10 player)
 							i(138801, {	-- Illusion: Blood Draining (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							}),
 							i(142093, {	-- Creeping Tentacle (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(45635),	-- Chestguard of the Wayward Conqueror
 							i(45636),	-- Chestguard of the Wayward Protector
@@ -1006,15 +1006,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				},
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
-				["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
-				["lvl"] = lvlsquish(80, 80, 30),
-				["groups"] = {
+				timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
+				lvl = lvlsquish(80, 80, 30),
+				groups = {
 					-- #if AFTER 7.3.5.25727
 					n(ACHIEVEMENTS, {
 						ach(2958, {	-- Glory of the Ulduar Raider (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
-							["sym"] = {{"meta_achievement",
+							sym = {{"meta_achievement",
 								3057,	-- Orbit-uary (25 player)
 								2929,	-- Stokin' the Furnace (25 player)
 								2924,	-- Iron Dwarf, Medium Rare (25 player)
@@ -1029,7 +1029,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								3188,	-- I Love the Smell of Saronite in the Morning (25 player)
 								3163,	-- One Light in the Darkness (25 player)
 							}},
-							["groups"] = { i(45801) },	-- Ironbound Proto-Drake (MOUNT!)
+							groups = { i(45801) },	-- Ironbound Proto-Drake (MOUNT!)
 						}),
 						revampAch(2921),	-- A Quick Shave (25 player)
 						revampAch(3164),	-- Alone in the Darkness (25 player)
@@ -1041,7 +1041,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2962),	-- Cheese the Freeze (25 player)
 						revampAch(2981),	-- Con-speed-atory (25 player)
 						ach(2904, bubbleDownSelf({	-- Conqueror of Ulduar
-							["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
+							timeline = { ADDED_3_1_0, REMOVED_4_0_1 },
 						},{
 							title(126),	-- <Name>, Conqueror of Ulduar
 						})),
@@ -1055,7 +1055,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2983),	-- Getting Back to Nature (25 player)
 						revampAch(2968),	-- Getting Cold in Here (25 player)
 						ach(3005, {	-- He Feeds On Your Tears (25 player)
-							["timeline"] = { REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 						revampAch(3013),	-- He's Not Getting Any Older (25 player)
 						revampAch(3059),	-- Heartbreaker (25 player)
@@ -1101,9 +1101,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2893),	-- The Descent into Madness (25 player)
 						revampAch(2891),	-- The Keepers of Ulduar (25 player)
 						ach(2895, {	-- The Secrets of Ulduar (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
-							["sym"] = {{"meta_achievement",
+							sym = {{"meta_achievement",
 								2887,	-- The Siege of Ulduar (25 player)
 								2889,	-- The Antechamber of Ulduar (25 player)
 								2891,	-- The Keepers of Ulduar (25 player)
@@ -1117,18 +1117,18 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2976),	-- Who Needs Bloodlust? (25 player)
 						revampAch(2952),	-- With Open Arms (25 player)
 						ach(3259, {	-- Realm First! Celestial Defender
-							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-							["groups"] = {
+							timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
+							groups = {
 								title(125, {	-- <Name> the Celestial Defender
-									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+									timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
 								}),
 							},
 						}),
 						ach(3117, {	-- Realm First! Death's Demise
-							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-							["groups"] = {
+							timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
+							groups = {
 								title(124, {	-- <Name>, Death's Demise
-									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+									timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
 								}),
 							},
 						}),
@@ -1136,9 +1136,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					-- #else
 					n(ACHIEVEMENTS, {
 						ach(2958, {	-- Glory of the Ulduar Raider (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
-							["sym"] = {{"meta_achievement",
+							sym = {{"meta_achievement",
 								3057,	-- Orbit-uary (25 player)
 								2929,	-- Stokin' the Furnace (25 player)
 								2924,	-- Iron Dwarf, Medium Rare (25 player)
@@ -1153,17 +1153,17 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								3188,	-- I Love the Smell of Saronite in the Morning (25 player)
 								3163,	-- One Light in the Darkness (25 player)
 							}},
-							["groups"] = { i(45801) },	-- Ironbound Proto-Drake (MOUNT!)
+							groups = { i(45801) },	-- Ironbound Proto-Drake (MOUNT!)
 						}),
 						ach(2904, bubbleDownSelf({	-- Conqueror of Ulduar
-							["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
+							timeline = { ADDED_3_1_0, REMOVED_4_0_1 },
 						},{
 							title(126),	-- <Name>, Conqueror of Ulduar
 						})),
 						ach(2895, {	-- The Secrets of Ulduar (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
-							["sym"] = {{"meta_achievement",
+							sym = {{"meta_achievement",
 								2887,	-- The Siege of Ulduar (25 player)
 								2889,	-- The Antechamber of Ulduar (25 player)
 								2891,	-- The Keepers of Ulduar (25 player)
@@ -1171,120 +1171,120 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}},
 						}),
 						ach(2889, {	-- The Antechamber of Ulduar (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
-							["groups"] = {
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
+							groups = {
 								crit(10581, {	-- Assembly of Iron
-									["_encounter"] = { 1641, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+									_encounter = { 1641, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(9966, {	-- Auriaya
-									["_encounter"] = { 1643, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+									_encounter = { 1643, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(9979, {	-- Kologarn
-									["_encounter"] = { 1642, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+									_encounter = { 1642, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 							},
 						}),
 						ach(2893, {	-- The Descent into Madness (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
-							["groups"] = {
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
+							groups = {
 								crit(9964, {	-- General Vezax
-									["_encounter"] = { 1648, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+									_encounter = { 1648, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(9967, {	-- Yogg-Saron
-									["_encounter"] = { 1649, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+									_encounter = { 1649, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 							},
 						}),
 						ach(2891, {	-- The Keepers of Ulduar (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
-							["groups"] = {
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
+							groups = {
 								crit(10562, {	-- Hodir
-									["_encounter"] = { 1644, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+									_encounter = { 1644, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(10561, {	-- Thorim
-									["_encounter"] = { 1645, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+									_encounter = { 1645, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(10563, {	-- Freya
-									["_encounter"] = { 1646, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+									_encounter = { 1646, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(9963, {	-- Mimiron
-									["_encounter"] = { 1647, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+									_encounter = { 1647, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 							},
 						}),
 						ach(2887, {	-- The Siege of Ulduar (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
-							["groups"] = {
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
+							groups = {
 								crit(9969, {	-- Flame Leviathan
-									["_encounter"] = { 1637, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+									_encounter = { 1637, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(9955, {	-- Razorscale
-									["_encounter"] = { 1639, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+									_encounter = { 1639, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(9956, {	-- Ignis the Furnace Master
-									["_encounter"] = { 1638, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+									_encounter = { 1638, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 								crit(9957, {	-- XT-002 Deconstructor
-									["_encounter"] = { 1640, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
+									_encounter = { 1640, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
 								}),
 							},
 						}),
 						ach(3098, {	-- Dwarfageddon (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
-							["crs"] = {
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
+							crs = {
 								33236,	-- Steelforged Defender
 								33572,	-- Steelforged Defender
 							},
 						}),
 						ach(3118, {	-- Lumberjacked (25 player)
-							["providers"] = {
+							providers = {
 								{ "n", 32915 },	-- Elder Brightleaf
 								{ "n", 32913 },	-- Elder Ironbranch
 								{ "n", 32914 },	-- Elder Stonebark
 							},
-							["description"] = "Must be killed before killing Freya or they will despawn.",
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
+							description = "Must be killed before killing Freya or they will despawn.",
+							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
 						}),
 						ach(3259, {	-- Realm First! Celestial Defender
-							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-							["groups"] = {
+							timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
+							groups = {
 								title(125, {	-- <Name> the Celestial Defender
-									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+									timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
 								}),
 							},
 						}),
 						ach(3117, {	-- Realm First! Death's Demise
-							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-							["groups"] = {
+							timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
+							groups = {
 								title(124, {	-- <Name>, Death's Demise
-									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+									timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
 								}),
 							},
 						}),
 					}),
 					applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, n(QUALITY_LEGENDARY, {
-						["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses in 25-Man Ulduar. Hard modes have higher drop chances.",
-						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
-						["title"] = "Val'anyr, Hammer of Ancient Kings",
-						["icon"] = 253399,
-						["isRaid"] = true,
-						["groups"] = {
+						description = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses in 25-Man Ulduar. Hard modes have higher drop chances.",
+						classes = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
+						title = "Val'anyr, Hammer of Ancient Kings",
+						icon = 253399,
+						isRaid = true,
+						groups = {
 							ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
-								["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
-								["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
+								provider = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
+								classes = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
 							}),
 							q(13622, {	-- Ancient History
-								["provider"] = { "i", 45039 },	-- Shattered Fragments of Val'anyr
-								["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
+								provider = { "i", 45039 },	-- Shattered Fragments of Val'anyr
+								cost = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
 							}),
 							q(13629, {	-- Val'anyr, Hammer of Ancient Kings
-								["sourceQuest"] = 13622,	-- Ancient History
-								["provider"] = { "o", 194555 },	-- Archivum Console
-								["groups"] = {
+								sourceQuest = 13622,	-- Ancient History
+								provider = { "o", 194555 },	-- Archivum Console
+								groups = {
 									objective(1, {	-- 0/1 Reforged Hammer of Ancient Kings
-										["provider"] = { "i", 45897 },	-- Reforged Hammer of Ancient Kings
-										["cost"] = { { "i", 45896, 1 } },	-- Unbound Fragments of Val'anyr
-										["cr"] = 33288,	-- Yogg-Saron
+										provider = { "i", 45897 },	-- Reforged Hammer of Ancient Kings
+										cost = { { "i", 45896, 1 } },	-- Unbound Fragments of Val'anyr
+										cr = 33288,	-- Yogg-Saron
 									}),
 									i(46017)	-- Val'anyr, Hammer of Ancient Kings
 								},
@@ -1293,18 +1293,18 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					})),
 					n(QUESTS, {
 						q(13818, {	-- Heroic: Algalon
-							["sourceQuests"] = {
+							sourceQuests = {
 								13821,	-- Heroic: Freya's Sigil
 								13822,	-- Heroic: Hodir's Sigil
 								13824,	-- Heroic: Mimiron's Sigil
 								13823,	-- Heroic: Thorim's Sigil
 							},
-							["qg"] = 33957,	-- Prospector Loren
-							["qi"] = 45855,	-- Sigils of the Watchers
-							["groups"] = {
+							qg = 33957,	-- Prospector Loren
+							qi = 45855,	-- Sigils of the Watchers
+							groups = {
 								i(45798),	-- Heroic Celestial Planetarium Key
 								i(45878, {	-- Large Sack of Ulduar Spoils
-									["sym"] = {
+									sym = {
 										{ "selectparent", 3 },	-- Select the difficulty header.
 										{ "pop" },	-- Get the Rewards.
 										{ "where", "headerID", COMMON_BOSS_DROPS },	-- Select the "Common Boss Drops" header.
@@ -1315,12 +1315,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						q(13819, {	-- Heroic: All Is Well That Ends Well
-							["providers"] = {
+							providers = {
 								{ "i", 46053 },	-- Reply-Code Alpha
 								{ "n", 16128 },	-- Rhonin <Leader of the Kirin Tor>
 							},
-							["maps"] = { NORTHREND_DALARAN },
-							["groups"] = {
+							maps = { NORTHREND_DALARAN },
+							groups = {
 								i(45588),	-- Drape of the Skyborn
 								i(45618),	-- Sunglimmer Cloak
 								i(45608),	-- Brann's Signet Ring
@@ -1328,49 +1328,49 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						q(13817, {	-- Heroic: Archivum Data Disc
-							["provider"] = { "i", 45857 },	-- Heroic: Archivum Data Disc
+							provider = { "i", 45857 },	-- Heroic: Archivum Data Disc
 						}),
 						q(13821, {	-- Heroic: Freya's Sigil
-							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-							["qg"] = 33957,	-- Prospector Loren
-							["groups"] = {
+							sourceQuest = 13816,	-- Heroic: The Celestial Planetarium
+							qg = 33957,	-- Prospector Loren
+							groups = {
 								objective(1, {	-- 0/1 Freya's Sigil
-									["provider"] = { "i", 45814 },	-- Freya's Sigil
-									["cr"] = 32906,	-- Freya
+									provider = { "i", 45814 },	-- Freya's Sigil
+									cr = 32906,	-- Freya
 								}),
 							},
 						}),
 						q(13822, {	-- Heroic: Hodir's Sigil
-							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-							["qg"] = 33957,	-- Prospector Loren
-							["groups"] = {
+							sourceQuest = 13816,	-- Heroic: The Celestial Planetarium
+							qg = 33957,	-- Prospector Loren
+							groups = {
 								objective(1, {	-- 0/1 Hodir's Sigil
-									["provider"] = { "i", 45815 },	-- Hodir's Sigil
-									["cr"] = 32845,	-- Hodir
+									provider = { "i", 45815 },	-- Hodir's Sigil
+									cr = 32845,	-- Hodir
 								}),
 							},
 						}),
 						q(13824, {	-- Heroic: Mimiron's Sigil
-							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-							["qg"] = 33957,	-- Prospector Loren
-							["groups"] = {
+							sourceQuest = 13816,	-- Heroic: The Celestial Planetarium
+							qg = 33957,	-- Prospector Loren
+							groups = {
 								objective(1, {	-- 0/1 Mimiron's Sigil
-									["provider"] = { "i", 45816 },	-- Mimiron's Sigil
-									["cr"] = 33350,	-- Mimiron
+									provider = { "i", 45816 },	-- Mimiron's Sigil
+									cr = 33350,	-- Mimiron
 								}),
 							},
 						}),
 						q(13816, {	-- Heroic: The Celestial Planetarium
-							["sourceQuest"] = 13817,	-- Heroic: Archivum Data Disc
-							["qg"] = 33957,	-- Prospector Loren
+							sourceQuest = 13817,	-- Heroic: Archivum Data Disc
+							qg = 33957,	-- Prospector Loren
 						}),
 						q(13823, {	-- Heroic: Thorim's Sigil
-							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-							["qg"] = 33957,	-- Prospector Loren
-							["groups"] = {
+							sourceQuest = 13816,	-- Heroic: The Celestial Planetarium
+							qg = 33957,	-- Prospector Loren
+							groups = {
 								objective(1, {	-- 0/1 Thorim's Sigil
-									["provider"] = { "i", 45817 },	-- Thorim's Sigil
-									["cr"] = 32865,	-- Thorim
+									provider = { "i", 45817 },	-- Thorim's Sigil
+									cr = 32865,	-- Thorim
 								}),
 							},
 						}),
@@ -1388,11 +1388,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						i(45542),	-- Greaves of the Stonewarder
 						i(45540),	-- Bladebearer's Signet
 						i(46138, {	-- Idol of the Flourishing Life
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 					}),
 					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
+						crs = {
 							33113,	-- Flame Leviathan
 							33118,	-- Ignis the Furnace Master
 							33186,	-- Razorscale
@@ -1410,10 +1410,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							33271,	-- General Vezax
 							33288,	-- Yogg-Saron
 						},
-						["groups"] = {
+						groups = {
 							applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, i(45038)),	-- Fragment of Val'anyr
 							i(45087, {	-- Runed Orb
-								["description"] = "Can also drop from defeating 10-Man Hard Mode bosses.",
+								description = "Can also drop from defeating 10-Man Hard Mode bosses.",
 							}),
 							i(46027),	-- Formula: Enchant Weapon - Blade Ward (RECIPE!)
 							i(46348),	-- Formula: Enchant Weapon - Blood Draining (RECIPE!)
@@ -1438,8 +1438,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1637, {	-- Flame Leviathan
-						["creatureID"] = 33113,	-- Flame Leviathan
-						["groups"] = {
+						creatureID = 33113,	-- Flame Leviathan
+						groups = {
 							revampAch(3057, {	-- Orbit-uary (25 player)
 								i(45132),	-- Golden Saronite Dragon
 								i(45133),	-- Pendant of Fiery Havoc
@@ -1473,21 +1473,21 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45106),	-- Strength of the Automaton
 							i(45112),	-- The Leviathan's Coil
 							i(45086, {	-- Rising Sun (25 Man)
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 							i(45114, {	-- Steamcaller's Totem
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
 					e(1638, {	-- Ignis the Furnace Master
-						["creatureID"] = 33118,	-- Ignis the Furnace Master
-						["groups"] = {
+						creatureID = 33118,	-- Ignis the Furnace Master
+						groups = {
 							revampAch(2928),	-- Hot Pocket (25 player)
 							revampAch(2926),	-- Shattered (25 player)
 							revampAch(2929),	-- Stokin' the Furnace (25 player)
 							i(142086, {	-- Magma Rageling (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(45171),	-- Intensity
 							i(45165),	-- Worldcarver
@@ -1504,17 +1504,17 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45168),	-- Pyrelight Circle
 							i(45158),	-- Heart of Iron
 							i(45169, {	-- Totem of the Dancing Flame
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
 					e(1639, {	-- Razorscale
-						["creatureID"] = 33186,	-- Razorscale
-						["groups"] = {
+						creatureID = 33186,	-- Razorscale
+						groups = {
 							revampAch(2921),	-- A Quick Shave (25 player)
 							revampAch(2924),	-- Iron Dwarf, Medium Rare (25 player)
 							i(142087, {	-- Ironbound Proto-Whelp (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(45147),	-- Guiding Star
 							i(45142),	-- Remorse
@@ -1530,16 +1530,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45143),	-- Saronite Mesh Legguards
 							i(45148),	-- Living Flame
 							i(45510, {	-- Libram of Discord
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 							i(45144, {	-- Sigil of Deflection
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
 					e(1640, {	-- XT-002 Deconstructor
-						["creatureID"] = 33293,	-- XT-002 Deconstructor
-						["groups"] = {
+						creatureID = 33293,	-- XT-002 Deconstructor
+						groups = {
 							revampAch(3059, {	-- Heartbreaker (25 player)
 								i(45442),	-- Sorthalis, Hammer of the Watchers
 								i(45443),	-- Charm of Meticulous Timing
@@ -1549,11 +1549,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}),
 							revampAch(2938),	-- Must Deconstruct Faster (25 player)
 							revampAch(2932, {	-- Nerf Engineering (25 player)
-								["cr"] = 33343,	-- XS-013 Scrapbot
+								cr = 33343,	-- XS-013 Scrapbot
 							}),
 							revampAch(2936),	-- Nerf Gravity Bombs (25 player)
 							revampAch(2935, {	-- Nerf Scrapbots (25 player)
-								["crs"] = {
+								crs = {
 									33346,	-- XE-321 Boombot
 									33343,	-- XS-013 Scrapbot
 								},
@@ -1572,19 +1572,19 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45250),	-- Crazed Construct Ring
 							i(45247),	-- Signet of the Earthshaker
 							i(45254, {	-- Sigil of the Vengeful Heart
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 							i(45255, {	-- Thunderfall Totem
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
 					e(1650, {	-- Algalon the Observer
-						["creatureID"] = 32871,	-- Algalon the Observer
-						["groups"] = {
+						creatureID = 32871,	-- Algalon the Observer
+						groups = {
 							-- #if ANYCLASSIC
 							ach(17341, {	-- Cutting Edge: Ulduar
-								["OnUpdate"] = [[function(t)
+								OnUpdate = [[function(t)
 									if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
 										t.u = ]] .. REMOVED_FROM_GAME .. [[;
 										t.rwp = nil;
@@ -1596,13 +1596,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}),
 							-- #endif
 							ach(3005, {	-- He Feeds On Your Tears (25 player)
-								["timeline"] = { REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 							}),
 							revampAch(3037, {	-- Observed (25 player)
 								title(130),	-- the Astral Walker
 							}),
 							ach(5020, {	-- Observed - Guild Edition
-								["timeline"] = { ADDED_4_0_3 },
+								timeline = { ADDED_4_0_3 },
 							}),
 							revampAch(3002, {	-- Supermassive (25 player)
 								crit(10782),	-- Close 3 Black Holes within 10 seconds
@@ -1628,15 +1628,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1641, {	-- Assembly of Iron
-						["crs"] = {
+						crs = {
 							32867,	-- Steelbreaker
 							32927,	-- Runemaster Molgeim
 							32857,	-- Stormcaller Brundir
 						},
-						["groups"] = {
+						groups = {
 							revampAch(2946, {	-- But I'm On Your Side (25 player)
-								["provider"] = { "i", 43499 },	-- Iron Boot Flask
-								["description"] = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
+								provider = { "i", 43499 },	-- Iron Boot Flask
+								description = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
 							}),
 							revampAch(2948),	-- Can't Do That While Stunned (25 player)
 							revampAch(2942),	-- I Choose You, Runemaster Molgeim (25 player)
@@ -1651,7 +1651,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}),
 							revampAch(2943),	-- I Choose You, Stormcaller Brundir (25 player)
 							i(142088, {	-- Runeforged Servitor (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(45234),	-- Rapture
 							i(45233),	-- Stormrune Edge
@@ -1671,8 +1671,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1642, {	-- Kologarn
-						["creatureID"] = 32930,	-- Kologarn
-						["groups"] = {
+						creatureID = 32930,	-- Kologarn
+						groups = {
 							revampAch(2954),	-- Disarmed (25 player)
 							revampAch(2956),	-- If Looks Could Kill (25 player)
 							revampAch(2960),	-- Rubble and Roll (25 player)
@@ -1692,19 +1692,19 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45267),	-- Saronite Plated Legguards
 							i(45263),	-- Wrathstone
 							i(45270, {	-- Idol of the Crying Wind
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
 					e(1643, {	-- Auriaya
-						["creatureID"] = 33515,	-- Auriaya
-						["groups"] = {
+						creatureID = 33515,	-- Auriaya
+						groups = {
 							revampAch(3007),	-- Crazy Cat Lady (25 player)
 							revampAch(3077, {	-- Nine Lives (25 player)
-								["cr"] = 34035,	-- Feral Defender
+								cr = 34035,	-- Feral Defender
 							}),
 							i(142089, {	-- Sanctum Cub (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(45437),	-- Runescribed Blade
 							i(45315),	-- Stonerender
@@ -1721,13 +1721,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45326),	-- Platinum Band of the Aesir
 							i(45438),	-- Ring of the Faithful Servant
 							i(45436, {	-- Libram of the Resolute
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
 					e(1644, {	-- Hodir
-						["creatureID"] = 32845,	-- Hodir
-						["groups"] = {
+						creatureID = 32845,	-- Hodir
+						groups = {
 							revampAch(2962),	-- Cheese the Freeze (25 player)
 							revampAch(2968),	-- Getting Cold in Here (25 player)
 							revampAch(3184, {	-- I Could Say That This Cache Was Rare (25 player)
@@ -1742,10 +1742,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							revampAch(2965),	-- I Have the Coolest Friends (25 player)
 							revampAch(2970),	-- Staying Buffed All Winter (25 player)
 							i(142090, {	-- Winter Rageling (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							}),
 							i(45632),	-- Breastplate of the Wayward Conqueror
 							i(45633),	-- Breastplate of the Wayward Protector
@@ -1758,8 +1758,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1645, {	-- Thorim
-						["creatureID"] = 32865,	-- Thorim
-						["groups"] = {
+						creatureID = 32865,	-- Thorim
+						groups = {
 							revampAch(2972),	-- Don't Stand in the Lightning (25 player)
 							revampAch(2974, {	-- I'll Take You All On (25 player)
 								crit(39291),	-- Defeat Thorim
@@ -1778,7 +1778,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							revampAch(2978),	-- Siffed (25 player)
 							revampAch(2976),	-- Who Needs Bloodlust? (25 player)
 							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							}),
 							i(45638),	-- Crown of the Wayward Conqueror
 							i(45639),	-- Crown of the Wayward Protector
@@ -1791,8 +1791,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					e(1646, {	-- Freya
-						["creatureID"] = 32906,	-- Freya
-						["groups"] = {
+						creatureID = 32906,	-- Freya
+						groups = {
 							revampAch(2981),	-- Con-speed-atory (25 player)
 							revampAch(2984),	-- Deforestation (25 player)
 							revampAch(2983),	-- Getting Back to Nature (25 player)
@@ -1808,10 +1808,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								i(45814),	-- Freya's Sigil
 							}),
 							i(142091, {	-- Snaplasher (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							}),
 							i(45653),	-- Legplates of the Wayward Conqueror
 							i(45654),	-- Legplates of the Wayward Protector
@@ -1822,18 +1822,18 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45482),	-- Leggings of the Lifetender
 							i(45483),	-- Boots of the Servant
 							i(46110, {	-- Alchemist's Cache
-								["requireSkill"] = ALCHEMY,
+								requireSkill = ALCHEMY,
 							}),
 						},
 					}),
 					e(1647, {	-- Mimiron
-						["crs"] = {
+						crs = {
 							33350,	-- Mimiron
 							33432,	-- Leviathan Mk II
 							33651,	-- VX-001
 							33670,	-- Aerial Command Unit
 						},
-						["groups"] = {
+						groups = {
 							revampAch(3189, {	-- Firefighter (25 player)
 								i(45494),	-- Delirium's Touch
 								i(45620),	-- Starshard Edge
@@ -1844,7 +1844,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								i(45816),	-- Mimiron's Sigil
 							}),
 							revampAch(2995, {	-- Not-So-Friendly Fire (25 player)
-								["cr"] = 34057,	-- Assault Bot
+								cr = 34057,	-- Assault Bot
 							}),
 							revampAch(3237, {	-- Set Up Us the Bomb (25 player)
 								crit(10546),	-- A Proximity Mine
@@ -1852,10 +1852,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								crit(10548),	-- A Bomb Bot
 							}),
 							i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							}),
 							i(142092, {	-- G0-R41-0N Ultratonk (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(45641),	-- Gauntlets of the Wayward Conqueror
 							i(45642),	-- Gauntlets of the Wayward Protector
@@ -1866,13 +1866,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45491),	-- Waistguard of the Creator
 							i(45490),	-- Pandora's Plea
 							i(140782, {	-- Neural Net Detangler
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							}),
 						},
 					}),
 					e(1648, {	-- General Vezax
-						["creatureID"] = 33271,	-- General Vezax
-						["groups"] = {
+						creatureID = 33271,	-- General Vezax
+						groups = {
 							revampAch(3188, {	-- I Love the Smell of Saronite in the Morning (25 player)
 								i(45516),	-- Voidrethar, Dark Blade of Oblivion
 								i(45517),	-- Pendulum of Infinity
@@ -1895,19 +1895,19 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45515),	-- Ring of the Vacant Eye
 							i(45507),	-- The General's Heart
 							i(45509, {	-- Idol of the Corruptor
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 							i(45145, {	-- Libram of the Sacred Shield
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
 					e(1649, {	-- Yogg-Saron
-						["creatureID"] = 33288,	-- Yogg-Saron
-						["groups"] = {
+						creatureID = 33288,	-- Yogg-Saron
+						groups = {
 							-- #if ANYCLASSIC
 							ach(17340, {	-- Ahead of the Curve: Yogg-Saron
-								["OnUpdate"] = [[function(t)
+								OnUpdate = [[function(t)
 									if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
 										t.u = ]] .. REMOVED_FROM_GAME .. [[;
 										t.rwp = nil;
@@ -1920,13 +1920,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							-- #endif
 							revampAch(3164, {	-- Alone in the Darkness (25 player)
 								ach(4626, {	-- And I'll Form the Head!
-									["provider"] = { "i", 45693 },	-- Mimiron's Head
-									["filterID"] = MOUNTS,
+									provider = { "i", 45693 },	-- Mimiron's Head
+									filterID = MOUNTS,
 								}),
 								i(45693),	-- Mimiron's Head (MOUNT!)
 							}),
 							ach(5019, {	-- Alone in the Darkness - Guild Edition
-								["timeline"] = { ADDED_4_0_3 },
+								timeline = { ADDED_4_0_3 },
 							}),
 							revampAch(3163, {	-- One Light in the Darkness (25 player)
 								i(45533),	-- Dark Edge of Depravity
@@ -1945,15 +1945,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								crit(10323),	-- The Tortured Champion
 							}),
 							revampAch(3011, {	-- Kiss and Make Up (25 player)
-								["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
-								["cr"] = 33134,	-- Sara
+								description = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
+								cr = 33134,	-- Sara
 							}),
 							revampAch(3017),	-- They're Coming Out of the Walls (25 player)
 							i(138801, {	-- Illusion: Blood Draining (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							}),
 							i(142093, {	-- Creeping Tentacle (PET!)
-								["timeline"] = { ADDED_7_1_0 },
+								timeline = { ADDED_7_1_0 },
 							}),
 							i(45656),	-- Mantle of the Wayward Conqueror
 							i(45657),	-- Mantle of the Wayward Protector
@@ -1977,32 +1977,32 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			d(DIFFICULTY.RAID.NORMAL, {
 				n(QUESTS, {
 					q(13614, {	-- Algalon
-						["sourceQuests"] = {
+						sourceQuests = {
 							13606,	-- Freya's Sigil
 							13609,	-- Hodir's Sigil
 							13611,	-- Mimiron's Sigil
 							13610,	-- Thorim's Sigil
 						},
-						["qg"] = 33957,	-- Prospector Loren
-						["qg"] = 33957,	-- Prospector Loren
-						["qi"] = 45791,	-- Sigils of the Watchers
-						["timeline"] = { REMOVED_7_3_5 },
-						["groups"] = {
+						qg = 33957,	-- Prospector Loren
+						qg = 33957,	-- Prospector Loren
+						qi = 45791,	-- Sigils of the Watchers
+						timeline = { REMOVED_7_3_5 },
+						groups = {
 							i(45796, {	-- Celestial Planetarium Key
-								["timeline"] = { REMOVED_4_2_0 },
+								timeline = { REMOVED_4_2_0 },
 							}),
 							i(45875, {	-- Sack of Ulduar Spoils
-								["sym"] = { { "select", "itemID", 45087 } },	-- Runed Orb
+								sym = { { "select", "itemID", 45087 } },	-- Runed Orb
 							}),
 						},
 					}),
 					q(13631, {	-- All Is Well That Ends Well
-						["providers"] = {
+						providers = {
 							{ "i", 46052 },	-- Reply-Code Alpha
 							{ "n", 16128 },	-- Rhonin <Leader of the Kirin Tor>
 						},
-						["maps"] = { NORTHREND_DALARAN },
-						["groups"] = {
+						maps = { NORTHREND_DALARAN },
+						groups = {
 							i(46320),	-- Drape of the Skyherald
 							i(46321),	-- Sunglimmer Drape
 							i(46322),	-- Brann's Sealing Ring
@@ -2010,71 +2010,71 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					q(13604, {	-- Archivum Data Disc
-						["provider"] = { "i", 45506 },	-- Archivum Data Disc
+						provider = { "i", 45506 },	-- Archivum Data Disc
 					}),
 					q(13606, {	-- Freya's Sigil
-						["sourceQuest"] = 13607,	-- The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
-						["timeline"] = { REMOVED_7_3_5 },
-						["groups"] = {
+						sourceQuest = 13607,	-- The Celestial Planetarium
+						qg = 33957,	-- Prospector Loren
+						timeline = { REMOVED_7_3_5 },
+						groups = {
 							objective(1, {	-- 0/1 Freya's Sigil
-								["provider"] = { "i", 45788 },	-- Freya's Sigil
-								["cr"] = 32906,	-- Freya
+								provider = { "i", 45788 },	-- Freya's Sigil
+								cr = 32906,	-- Freya
 							}),
 						},
 					}),
 					q(13609, {	-- Hodir's Sigil
-						["sourceQuest"] = 13607,	-- The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
-						["timeline"] = { REMOVED_7_3_5 },
-						["groups"] = {
+						sourceQuest = 13607,	-- The Celestial Planetarium
+						qg = 33957,	-- Prospector Loren
+						timeline = { REMOVED_7_3_5 },
+						groups = {
 							objective(1, {	-- 0/1 Hodir's Sigil
-								["provider"] = { "i", 45786 },	-- Hodir's Sigil
-								["cr"] = 32845,	-- Hodir
+								provider = { "i", 45786 },	-- Hodir's Sigil
+								cr = 32845,	-- Hodir
 							}),
 						},
 					}),
 					q(13611, {	-- Mimiron's Sigil
-						["sourceQuest"] = 13607,	-- The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
-						["timeline"] = { REMOVED_7_3_5 },
-						["groups"] = {
+						sourceQuest = 13607,	-- The Celestial Planetarium
+						qg = 33957,	-- Prospector Loren
+						timeline = { REMOVED_7_3_5 },
+						groups = {
 							objective(1, {	-- 0/1 Mimiron's Sigil
-								["provider"] = { "i", 45787 },	-- Mimiron's Sigil
-								["cr"] = 33350,	-- Mimiron
+								provider = { "i", 45787 },	-- Mimiron's Sigil
+								cr = 33350,	-- Mimiron
 							}),
 						},
 					}),
 					q(13607, {	-- The Celestial Planetarium
-						["sourceQuest"] = 13604,	-- Archivum Data Disc
-						["qg"] = 33957,	-- Prospector Loren
-						["timeline"] = { REMOVED_7_3_5 },
+						sourceQuest = 13604,	-- Archivum Data Disc
+						qg = 33957,	-- Prospector Loren
+						timeline = { REMOVED_7_3_5 },
 					}),
 					q(13610, {	-- Thorim's Sigil
-						["sourceQuest"] = 13607,	-- The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
-						["timeline"] = { REMOVED_7_3_5 },
-						["groups"] = {
+						sourceQuest = 13607,	-- The Celestial Planetarium
+						qg = 33957,	-- Prospector Loren
+						timeline = { REMOVED_7_3_5 },
+						groups = {
 							objective(1, {	-- 0/1 Thorim's Sigil
-								["provider"] = { "i", 45784 },	-- Thorim's Sigil
-								["cr"] = 32865,	-- Thorim
+								provider = { "i", 45784 },	-- Thorim's Sigil
+								cr = 32865,	-- Thorim
 							}),
 						},
 					}),
 
 					q(13818, {	-- Heroic: Algalon
-						["sourceQuests"] = {
+						sourceQuests = {
 							13821,	-- Heroic: Freya's Sigil
 							13822,	-- Heroic: Hodir's Sigil
 							13824,	-- Heroic: Mimiron's Sigil
 							13823,	-- Heroic: Thorim's Sigil
 						},
-						["qg"] = 33957,	-- Prospector Loren
-						["qi"] = 45855,	-- Sigils of the Watchers
-						["groups"] = {
+						qg = 33957,	-- Prospector Loren
+						qi = 45855,	-- Sigils of the Watchers
+						groups = {
 							i(45798),	-- Heroic Celestial Planetarium Key
 							i(45878, {	-- Large Sack of Ulduar Spoils
-								["sym"] = {
+								sym = {
 									{ "select", "instanceID", 759 },	-- Ulduar
 									{ "find", "difficultyID", DIFFICULTY.RAID.NORMAL },	-- Normal Raid
 									{ "find", "headerID", COMMON_BOSS_DROPS },	-- Select the "Common Boss Drops" header.
@@ -2085,12 +2085,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					q(13819, {	-- Heroic: All Is Well That Ends Well
-						["providers"] = {
+						providers = {
 							{ "i", 46053 },	-- Reply-Code Alpha
 							{ "n", 16128 },	-- Rhonin <Leader of the Kirin Tor>
 						},
-						["maps"] = { NORTHREND_DALARAN },
-						["groups"] = {
+						maps = { NORTHREND_DALARAN },
+						groups = {
 							i(45588),	-- Drape of the Skyborn
 							i(45618),	-- Sunglimmer Cloak
 							i(45608),	-- Brann's Signet Ring
@@ -2098,49 +2098,49 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					q(13817, {	-- Heroic: Archivum Data Disc
-						["provider"] = { "i", 45857 },	-- Heroic: Archivum Data Disc
+						provider = { "i", 45857 },	-- Heroic: Archivum Data Disc
 					}),
 					q(13821, {	-- Heroic: Freya's Sigil
-						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
-						["groups"] = {
+						sourceQuest = 13816,	-- Heroic: The Celestial Planetarium
+						qg = 33957,	-- Prospector Loren
+						groups = {
 							objective(1, {	-- 0/1 Freya's Sigil
-								["provider"] = { "i", 45814 },	-- Freya's Sigil
-								["cr"] = 32906,	-- Freya
+								provider = { "i", 45814 },	-- Freya's Sigil
+								cr = 32906,	-- Freya
 							}),
 						},
 					}),
 					q(13822, {	-- Heroic: Hodir's Sigil
-						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
-						["groups"] = {
+						sourceQuest = 13816,	-- Heroic: The Celestial Planetarium
+						qg = 33957,	-- Prospector Loren
+						groups = {
 							objective(1, {	-- 0/1 Hodir's Sigil
-								["provider"] = { "i", 45815 },	-- Hodir's Sigil
-								["cr"] = 32845,	-- Hodir
+								provider = { "i", 45815 },	-- Hodir's Sigil
+								cr = 32845,	-- Hodir
 							}),
 						},
 					}),
 					q(13824, {	-- Heroic: Mimiron's Sigil
-						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
-						["groups"] = {
+						sourceQuest = 13816,	-- Heroic: The Celestial Planetarium
+						qg = 33957,	-- Prospector Loren
+						groups = {
 							objective(1, {	-- 0/1 Mimiron's Sigil
-								["provider"] = { "i", 45816 },	-- Mimiron's Sigil
-								["cr"] = 33350,	-- Mimiron
+								provider = { "i", 45816 },	-- Mimiron's Sigil
+								cr = 33350,	-- Mimiron
 							}),
 						},
 					}),
 					q(13816, {	-- Heroic: The Celestial Planetarium
-						["sourceQuest"] = 13817,	-- Heroic: Archivum Data Disc
-						["qg"] = 33957,	-- Prospector Loren
+						sourceQuest = 13817,	-- Heroic: Archivum Data Disc
+						qg = 33957,	-- Prospector Loren
 					}),
 					q(13823, {	-- Heroic: Thorim's Sigil
-						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
-						["groups"] = {
+						sourceQuest = 13816,	-- Heroic: The Celestial Planetarium
+						qg = 33957,	-- Prospector Loren
+						groups = {
 							objective(1, {	-- 0/1 Thorim's Sigil
-								["provider"] = { "i", 45817 },	-- Thorim's Sigil
-								["cr"] = 32865,	-- Thorim
+								provider = { "i", 45817 },	-- Thorim's Sigil
+								cr = 32865,	-- Thorim
 							}),
 						},
 					}),
@@ -2169,11 +2169,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					i(45542),	-- Greaves of the Stonewarder
 					i(45540),	-- Bladebearer's Signet
 					i(46138, {	-- Idol of the Flourishing Life
-						["timeline"] = { REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 				}),
 				n(COMMON_BOSS_DROPS, {
-					["crs"] = {
+					crs = {
 						33113,	-- Flame Leviathan
 						33118,	-- Ignis the Furnace Master
 						33293,	-- XT-002 Deconstructor
@@ -2190,7 +2190,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						33271,	-- General Vezax
 						33288,	-- Yogg-Saron
 					},
-					["groups"] = {
+					groups = {
 						i(45087),	-- Runed Orb
 						i(46027),	-- Formula: Enchant Weapon - Blade Ward (RECIPE!)
 						i(46348),	-- Formula: Enchant Weapon - Blood Draining (RECIPE!)
@@ -2215,8 +2215,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1637, {	-- Flame Leviathan
-					["creatureID"] = 33113,	-- Flame Leviathan
-					["groups"] = {
+					creatureID = 33113,	-- Flame Leviathan
+					groups = {
 						ach(12320, {	-- Orbit-uary
 							i(45132),	-- Golden Saronite Dragon
 							i(45133),	-- Pendant of Fiery Havoc
@@ -2228,7 +2228,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45135),	-- Boots of Fiery Resolution
 							i(45297),	-- Shimmering Seal
 							i(45296, {	-- Twirling Blades (10 Man, iLvl 232)
-								["timeline"] = { REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 						}),
 						ach(12319),	-- Nuked from Orbit
@@ -2266,21 +2266,21 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						i(45292),	-- Energy Siphon
 						i(45286),	-- Pyrite Infuser
 						i(45086, {	-- Rising Sun (25 Man)
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						i(45114, {	-- Steamcaller's Totem
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 					},
 				}),
 				e(1638, {	-- Ignis the Furnace Master
-					["creatureID"] = 33118,	-- Ignis the Furnace Master
-					["groups"] = {
+					creatureID = 33118,	-- Ignis the Furnace Master
+					groups = {
 						ach(12324),	-- Hot Pocket
 						ach(12323),	-- Shattered
 						ach(12325),	-- Stokin' the Furnace
 						i(142086, {	-- Magma Rageling (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						i(45171),	-- Intensity
 						i(45311),	-- Relentless Edge
@@ -2307,17 +2307,17 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						i(45313),	-- Furnace Stone
 						i(45158),	-- Heart of Iron
 						i(45169, {	-- Totem of the Dancing Flame
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 					},
 				}),
 				e(1639, {	-- Razorscale
-					["creatureID"] = 33186,	-- Razorscale
-					["groups"] = {
+					creatureID = 33186,	-- Razorscale
+					groups = {
 						ach(12321),	-- A Quick Shave
 						ach(12322),	-- Iron Dwarf, Medium Rare
 						i(142087, {	-- Ironbound Proto-Whelp (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						i(45147),	-- Guiding Star
 						i(45298),	-- Razorscale Talon
@@ -2343,16 +2343,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						i(45308),	-- Eye of the Broodmother
 						i(45148),	-- Living Flame
 						i(45510, {	-- Libram of Discord
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						i(45144, {	-- Sigil of Deflection
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 					},
 				}),
 				e(1640, {	-- XT-002 Deconstructor
-					["creatureID"] = 33293,	-- XT-002 Deconstructor
-					["groups"] = {
+					creatureID = 33293,	-- XT-002 Deconstructor
+					groups = {
 						ach(12330, {	-- Heartbreaker
 							i(45868),	-- Aesir's Edge
 							i(45442),	-- Sorthalis, Hammer of the Watchers
@@ -2393,19 +2393,19 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						i(45675),	-- Power Enhancing Loop
 						i(45247),	-- Signet of the Earthshaker
 						i(45254, {	-- Sigil of the Vengeful Heart
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						i(45255, {	-- Thunderfall Totem
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 					},
 				}),
 				e(1650, {	-- Algalon the Observer
-					["creatureID"] = 32871,	-- Algalon the Observer
-					["groups"] = {
+					creatureID = 32871,	-- Algalon the Observer
+					groups = {
 						-- #if ANYCLASSIC
 						ach(17341, {	-- Cutting Edge: Ulduar
-							["OnUpdate"] = [[function(t)
+							OnUpdate = [[function(t)
 								if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
 									t.u = ]] .. REMOVED_FROM_GAME .. [[;
 									t.rwp = nil;
@@ -2417,8 +2417,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						}),
 						-- #endif
 						ach(5020, {	-- Observed - Guild Edition
-							["timeline"] = { ADDED_4_0_3 },
-							["collectible"] = false,
+							timeline = { ADDED_4_0_3 },
+							collectible = false,
 						}),
 						ach(12399, {	-- Observed
 							title(129),	-- Starcaller
@@ -2432,15 +2432,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
 							-- #if AFTER SL
 							-- character above 30 without account-wide achievements shouldn't see forever-incomplete achievement
-							["OnUpdate"] = [[function(t) if _.Level > 30 and not _.Settings.AccountWide.Achievements then t.collectible = false; end end]],
+							OnUpdate = [[function(t) if _.Level > 30 and not _.Settings.AccountWide.Achievements then t.collectible = false; end end]],
 							-- #endif
-							["lockCriteria"] =
+							lockCriteria =
 								-- #if AFTER SL
 								{ 1, "lvl", 31 },
 								-- #else
 								{ 1, "lvl", 80 },
 								-- #endif
-							["groups"] = { title(131) },	-- <Name>, Herald of the Titans
+							groups = { title(131) },	-- <Name>, Herald of the Titans
 						}),
 						i(46052),	-- Reply-Code Alpha
 						i(46053),	-- Reply-Code Alpha
@@ -2478,15 +2478,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1641, {	-- Assembly of Iron
-					["crs"] = {
+					crs = {
 						32867,	-- Steelbreaker
 						32927,	-- Runemaster Molgeim
 						32857,	-- Stormcaller Brundir
 					},
-					["groups"] = {
+					groups = {
 						ach(12335, {	-- But I'm On Your Side!
-							["description"] = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
-							["provider"] = { "i", 43499 },	-- Iron Boot Flask
+							description = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
+							provider = { "i", 43499 },	-- Iron Boot Flask
 						}),
 						ach(12336),	-- Can't Do That While Stunned
 						ach(12332),	-- I Choose You, Runemaster Molgeim
@@ -2507,7 +2507,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						}),
 						ach(12333),	-- I Choose You, Stormcaller Brundir
 						i(142088, {	-- Runeforged Servitor (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						i(45234),	-- Rapture
 						i(45233),	-- Stormrune Edge
@@ -2537,8 +2537,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1642, {	-- Kologarn
-					["creatureID"] = 32930,	-- Kologarn
-					["groups"] = {
+					creatureID = 32930,	-- Kologarn
+					groups = {
 						ach(12338),	-- Disarmed
 						ach(12339),	-- If Looks Could Kill
 						ach(12340),	-- Rubble and Roll
@@ -2568,17 +2568,17 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						i(45703),	-- Spark of Hope
 						i(45263),	-- Wrathstone
 						i(45270, {	-- Idol of the Crying Wind
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 					},
 				}),
 				e(1643, {	-- Auriaya
-					["creatureID"] = 33515,	-- Auriaya
-					["groups"] = {
+					creatureID = 33515,	-- Auriaya
+					groups = {
 						ach(12341),	-- Crazy Cat Lady
 						ach(12342),	-- Nine Lives
 						i(142089, {	-- Sanctum Cub (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						i(45437),	-- Runescribed Blade
 						i(45315),	-- Stonerender
@@ -2605,37 +2605,37 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						i(45438),	-- Ring of the Faithful Servant
 						i(45866),	-- Elemental Focus Stone
 						i(45436, {	-- Libram of the Resolute
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 					},
 				}),
 				e(1644, {	-- Hodir
-					["creatureID"] = 32845,	-- Hodir
-					["groups"] = {
+					creatureID = 32845,	-- Hodir
+					groups = {
 						ach(12343),	-- Cheese the Freeze
 						ach(12345),	-- Getting Cold in Here
 						ach(12347, {	-- I Could Say That This Cache Was Rare
-							i(45886, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Icecore Staff
-							i(45457, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Staff of Endless Winter
-							i(45612, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Constellus
-							i(45876, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Shiver
-							i(45887, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Ice Layered Barrier
-							i(45877, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- The Boreal Guard
-							i(45459, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Frigid Strength of Hodir
-							i(45461, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Drape of Icy Intent
-							i(45460, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Bindings of Winter Gale
-							i(45888, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Bitter Cold Armguards
-							i(45462, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Gloves of the Frozen Glade
+							i(45886, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Icecore Staff
+							i(45457, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Staff of Endless Winter
+							i(45612, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Constellus
+							i(45876, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Shiver
+							i(45887, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Ice Layered Barrier
+							i(45877, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- The Boreal Guard
+							i(45459, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Frigid Strength of Hodir
+							i(45461, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Drape of Icy Intent
+							i(45460, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Bindings of Winter Gale
+							i(45888, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Bitter Cold Armguards
+							i(45462, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Gloves of the Frozen Glade
 							i(45786),	-- Hodir's Sigil
 							i(45815),	-- Hodir's Sigil
 						}),
 						ach(12344),	-- I Have the Coolest Friends
 						ach(12346),	-- Staying Buffed All Winter
 						i(142090, {	-- Winter Rageling (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
+							timeline = { ADDED_7_0_3 },
 						}),
 						i(45632),	-- Breastplate of the Wayward Conqueror
 						i(45633),	-- Breastplate of the Wayward Protector
@@ -2656,8 +2656,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1645, {	-- Thorim
-					["creatureID"] = 32865,	-- Thorim
-					["groups"] = {
+					creatureID = 32865,	-- Thorim
+					groups = {
 						ach(12348),	-- Don't Stand in the Lightning
 						ach(12349, {	-- I'll Take You All On
 							crit(39291),	-- Defeat Thorim
@@ -2665,15 +2665,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							crit(39439),	-- Participate in slaying Ancient Rune Giant
 						}),
 						ach(12352, {	-- Lose Your Illusion
-							i(45930, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Combatant's Bootblade
-							i(45570, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Skyforge Crossbow
-							i(45470, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Wisdom's Hold
-							i(45472, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Warhelm of the Champion
-							i(45933, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Pendant of the Shallow Grave
-							i(45474, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Pauldrons of the Combatant
-							i(45473, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Embrace of the Gladiator
-							i(45928, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Gauntlets of the Thunder Lord
-							i(45471, {["timeline"] = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Fate's Clutch
+							i(45930, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Combatant's Bootblade
+							i(45570, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Skyforge Crossbow
+							i(45470, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Wisdom's Hold
+							i(45472, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Warhelm of the Champion
+							i(45933, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Pendant of the Shallow Grave
+							i(45474, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Pauldrons of the Combatant
+							i(45473, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Embrace of the Gladiator
+							i(45928, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Gauntlets of the Thunder Lord
+							i(45471, {timeline = {REMOVED_7_3_5, ADDED_10_2_5}}),	-- Fate's Clutch
 							i(45931),	-- Mjolnir Runestone
 							i(45929),	-- Sif's Remembrance
 							i(45784),	-- Thorim's Sigil
@@ -2682,7 +2682,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(12351),	-- Siffed
 						ach(12350),	-- Who Needs Bloodlust?
 						i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
+							timeline = { ADDED_7_0_3 },
 						}),
 						i(45638),	-- Crown of the Wayward Conqueror
 						i(45639),	-- Crown of the Wayward Protector
@@ -2703,33 +2703,33 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					},
 				}),
 				e(1646, {	-- Freya
-					["creatureID"] = 32906,	-- Freya
-					["groups"] = {
+					creatureID = 32906,	-- Freya
+					groups = {
 						ach(12361),	-- Con-speed-atory
 						ach(12362),	-- Deforestation
 						ach(12363),	-- Getting Back to Nature
 						ach(12364),	-- Knock on Wood
 						ach(12365),	-- Knock, Knock on Wood
 						ach(12366, {	-- Knock, Knock, Knock on Wood
-							i(45613, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Dreambinder
-							i(45484, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Bladetwister
-							i(45947, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Serilas, Blood Blade of Invar One-Arm
-							i(45294, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Petrified Ivy Sprig
-							i(45485, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Bronze Pendant of the Vanir
-							i(45945, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Seed of Budding Carnage
-							i(45486, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Drape of the Sullen Goddess
-							i(45943, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Gloves of Whispering Winds
-							i(45487, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Handguards of Revitalization
-							i(45488, { ["timeline"] = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Leggings of the Enslaved Idol
+							i(45613, { timeline = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Dreambinder
+							i(45484, { timeline = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Bladetwister
+							i(45947, { timeline = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Serilas, Blood Blade of Invar One-Arm
+							i(45294, { timeline = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Petrified Ivy Sprig
+							i(45485, { timeline = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Bronze Pendant of the Vanir
+							i(45945, { timeline = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Seed of Budding Carnage
+							i(45486, { timeline = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Drape of the Sullen Goddess
+							i(45943, { timeline = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Gloves of Whispering Winds
+							i(45487, { timeline = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Handguards of Revitalization
+							i(45488, { timeline = { REMOVED_7_3_5, ADDED_10_2_5 } }),	-- Leggings of the Enslaved Idol
 							i(45946),	-- Fire Orchid Signet
 							i(45788),	-- Freya's Sigil
 							i(45814),	-- Freya's Sigil
 						}),
 						i(142091, {	-- Snaplasher (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
+							timeline = { ADDED_7_0_3 },
 						}),
 						i(45644),	-- Gloves of the Wayward Conqueror
 						i(45645),	-- Gloves of the Wayward Protector
@@ -2748,18 +2748,18 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						i(45936),	-- Legplates of Fluorishing Resolve
 						i(45483),	-- Boots of the Servant
 						i(46110, {	-- Alchemist's Cache
-							["requireSkill"] = ALCHEMY,
+							requireSkill = ALCHEMY,
 						}),
 					},
 				}),
 				e(1647, {	-- Mimiron
-					["crs"] = {
+					crs = {
 						33350,	-- Mimiron
 						33432,	-- Leviathan Mk II
 						33651,	-- VX-001
 						33670,	-- Aerial Command Unit
 					},
-					["groups"] = {
+					groups = {
 						ach(12369, {	-- Firefighter
 							i(45494),	-- Delirium's Touch
 							i(45990),	-- Fusion Blade
@@ -2782,10 +2782,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							crit(39480),	-- A Bomb Bot
 						}),
 						i(138800, {	-- Illusion: Blade Ward (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
+							timeline = { ADDED_7_0_3 },
 						}),
 						i(142092, {	-- G0-R41-0N Ultratonk (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						i(45641),	-- Gauntlets of the Wayward Conqueror
 						i(45642),	-- Gauntlets of the Wayward Protector
@@ -2804,13 +2804,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						i(45491),	-- Waistguard of the Creator
 						i(45490),	-- Pandora's Plea
 						i(140782, {	-- Neural Net Detangler
-							["timeline"] = { ADDED_7_0_3 },
+							timeline = { ADDED_7_0_3 },
 						}),
 					},
 				}),
 				e(1648, {	-- General Vezax
-					["creatureID"] = 33271,	-- General Vezax
-					["groups"] = {
+					creatureID = 33271,	-- General Vezax
+					groups = {
 						ach(12373, {	-- I Love the Smell of Saronite in the Morning
 							i(46033),	-- Tortured Earth
 							i(45516),	-- Voidrethar, Dark Blade of Oblivion
@@ -2848,19 +2848,19 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						i(45515),	-- Ring of the Vacant Eye
 						i(45507),	-- The General's Heart
 						i(45509, {	-- Idol of the Corruptor
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						i(45145, {	-- Libram of the Sacred Shield
-							["timeline"] = { REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 					},
 				}),
 				e(1649, {	-- Yogg-Saron
-					["creatureID"] = 33288,	-- Yogg-Saron
-					["groups"] = {
+					creatureID = 33288,	-- Yogg-Saron
+					groups = {
 						-- #if ANYCLASSIC
 						ach(17340, {	-- Ahead of the Curve: Yogg-Saron
-							["OnUpdate"] = [[function(t)
+							OnUpdate = [[function(t)
 								if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) then
 									t.u = ]] .. REMOVED_FROM_GAME .. [[;
 									t.rwp = nil;
@@ -2876,10 +2876,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(46312),	-- Vanquished Clutches of Yogg-Saron
 						}),
 						ach(5019, {	-- Alone in the Darkness - Guild Edition
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						ach(4626, {	-- And I'll Form the Head!
-							["provider"] = { "i", 45693 },	-- Mimiron's Head
+							provider = { "i", 45693 },	-- Mimiron's Head
 						}),
 						ach(12387, {	-- One Light in the Darkness
 							i(45533),	-- Dark Edge of Depravity
@@ -2903,15 +2903,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							crit(39514),	-- The Tortured Champion
 						}),
 						ach(12384, {	-- Kiss and Make Up
-							["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
-							["crs"] = { 33134 },	-- Sara
+							description = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
+							crs = { 33134 },	-- Sara
 						}),
 						ach(12397),	-- They're Coming Out of the Walls
 						i(138801, {	-- Illusion: Blood Draining (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
+							timeline = { ADDED_7_0_3 },
 						}),
 						i(142093, {	-- Creeping Tentacle (PET!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						i(45635),	-- Chestguard of the Wayward Conqueror
 						i(45636),	-- Chestguard of the Wayward Protector

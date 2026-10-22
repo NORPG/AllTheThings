@@ -2,17 +2,17 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 	m(DRUSTVAR, {
 		n(EMISSARY_QUESTS, {
 			q(50600, {	-- Order of Embers
-				["provider"] = { "n", 135815 },	-- Quartermaster Alcorn
-				["races"] = ALLIANCE_ONLY,
-				["isWorldQuest"] = true,
-				["lvl"] = 120,
-				["groups"] = {
+				provider = { "n", 135815 },	-- Quartermaster Alcorn
+				races = ALLIANCE_ONLY,
+				isWorldQuest = true,
+				lvl = 120,
+				groups = {
 					i(165870, {	-- Order of Embers Equipment Cache
-						["sym"] = {
+						sym = {
 							{"select", "mapID", DRUSTVAR},
 							{"find", "headerID", ZONE_REWARDS },
 							{"extract", "itemID" },	-- Select the Items.
@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(165867, {	-- Kul Tiran Weapons Cache
-						["sym"] = {
+						sym = {
 							{"select", "mapID", KUL_TIRAS},
 							{"find", "headerID", ZONE_REWARDS },
 							{"extract", "itemID" },	-- Select the Items.
@@ -28,17 +28,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(163857, {	-- Azerite Armor Cache
-						["sym"] = {
+						sym = {
 							{"sub", "bfa_azerite_armor_chest" },
 						},
 					}),
 				},
 			}),
-			q(54456, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_ORDER_OF_EMBERS, EXALTED } }, {	-- Supplies from the Order of Embers
-				["provider"] = { "n", 135815 },	-- Quartermaster Alcorn
-				["races"] = ALLIANCE_ONLY,
-				["repeatable"] = true,
-				["groups"] = {
+			q(54456, bubbleDownSelf({ timeline = { ADDED_8_1_0 }, minReputation = { FACTION_ORDER_OF_EMBERS, EXALTED } }, {	-- Supplies from the Order of Embers
+				provider = { "n", 135815 },	-- Quartermaster Alcorn
+				races = ALLIANCE_ONLY,
+				repeatable = true,
+				groups = {
 					i(166297, {	-- Order of Embers Supplies
 						i(166808),	-- Bewitching Tea Set (TOY!)
 						i(166718),	-- Cobalt Raven (PET!)
@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 	m(KUL_TIRAS, {
 		m(DRUSTVAR, {
 			n(FACTIONS, {

@@ -95,12 +95,12 @@ local function HEADER_FINGER(g)
 	})
 end
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	n(COMMON_DUNGEON_DROPS, {
-		["description"] = "The following items can be obtained in the mentioned dungeons.",
-		["groups"] = {
+		description = "The following items can be obtained in the mentioned dungeons.",
+		groups = {
 			i(141643, {	-- Technique: Codex of the Clear Mind (RECIPE!)
-				["maps"] = { WOD_MAP.AUCH, WOD_MAP.BSM, WOD_MAP.RAIL, WOD_MAP.DOCKS, WOD_MAP.SBG, WOD_MAP.SKY, WOD_MAP.BLOOM, WOD_MAP.UBRS },
+				maps = { WOD_MAP.AUCH, WOD_MAP.BSM, WOD_MAP.RAIL, WOD_MAP.DOCKS, WOD_MAP.SBG, WOD_MAP.SKY, WOD_MAP.BLOOM, WOD_MAP.UBRS },
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC, {
 				HEADER_HANDS({
@@ -873,8 +873,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				n(TRINKET, {
-					["maps"] = { WOD_MAP.AUCH, WOD_MAP.BSM, WOD_MAP.RAIL, WOD_MAP.DOCKS, WOD_MAP.SBG, WOD_MAP.SKY, WOD_MAP.BLOOM, WOD_MAP.UBRS },
-					["groups"] = sharedData({["timeline"] = { ADDED_6_2_3, REMOVED_7_0_3_LAUNCH }},{
+					maps = { WOD_MAP.AUCH, WOD_MAP.BSM, WOD_MAP.RAIL, WOD_MAP.DOCKS, WOD_MAP.SBG, WOD_MAP.SKY, WOD_MAP.BLOOM, WOD_MAP.UBRS },
+					groups = sharedData({timeline = { ADDED_6_2_3, REMOVED_7_0_3_LAUNCH }},{
 						i(133595),	-- Gronntooth War Horn
 						i(133585),	-- Judgment of the Naaru
 						i(133596),	-- Orb of Voidsight

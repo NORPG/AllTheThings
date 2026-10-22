@@ -2,22 +2,22 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
 	inst(1269, {	-- The Stonevault
-		["coord"] = { 46.8, 8.5, THE_RINGING_DEEPS },
-		["maps"] = { 2341 },	-- The Stonevault
-		["groups"] = {
+		coord = { 46.8, 8.5, THE_RINGING_DEEPS },
+		maps = { 2341 },	-- The Stonevault
+		groups = {
 			n(QUESTS, {
 				q(83108, {	-- Daily Diagnostics
-					["sourceQuests"] = { 79354 },	-- The Machine Speakers
-					["provider"] = { "n", 225533 },	-- Therkan
-					["coord"] = { 47.3, 31.6, THE_RINGING_DEEPS },
+					sourceQuests = { 79354 },	-- The Machine Speakers
+					provider = { "n", 225533 },	-- Therkan
+					coord = { 47.3, 31.6, THE_RINGING_DEEPS },
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2572, {	-- E.D.N.A.
-					["crs"] = { 210108 },	-- E.D.N.A
-					["groups"] = {
+					crs = { 210108 },	-- E.D.N.A
+					groups = {
 						i(221074),	-- Augmented Refractor Cannon
 						i(221073),	-- Earthen Nullification Aegis
 						i(221078),	-- Endoskeletal Polecrank
@@ -28,8 +28,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					},
 				}),
 				e(2579, {	-- Skarmorak
-					["crs"] = { 210156 },	-- Skarmorak
-					["groups"] = {
+					crs = { 210156 },	-- Skarmorak
+					groups = {
 						i(221080),	-- Corpseleecher Grips
 						i(221079),	-- Crystal-Fissure Girdle
 						i(221081),	-- Guise of the Construct
@@ -40,11 +40,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					},
 				}),
 				e(2590, {	-- Master Machinists Brokk and Dorlita
-					["crs"] = {
+					crs = {
 						213217,	-- Speaker Brokk
 						213216,	-- Speaker Dorlita
 					},
-					["groups"] = {
+					groups = {
 						i(221088),	-- Anvilhide Cape
 						i(221087),	-- Dorlita's Safety Belt
 						i(221086),	-- Machinist's Searing Handguards
@@ -54,8 +54,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					},
 				}),
 				e(2582, {	-- Void Speaker Eirich
-					["crs"] = { 213119 },	-- High Speaker Eirich
-					["groups"] = {
+					crs = { 213119 },	-- High Speaker Eirich
+					groups = {
 						ach(40643),	-- The Stonevault
 						i(221091),	-- Cutting-Edge Sermon
 						i(221093),	-- Deeply Corrupted Coil [Only Available as Warbound]
@@ -70,18 +70,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2582, {	-- Void Speaker Eirich
-					["crs"] = { 213119 },	-- High Speaker Eirich
-					["groups"] = {
+					crs = { 213119 },	-- High Speaker Eirich
+					groups = {
 						ach(40644),	-- Heroic: The Stonevault
 					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2582, {	-- Void Speaker Eirich
-					["crs"] = { 213119 },	-- High Speaker Eirich
-					["groups"] = {
+					crs = { 213119 },	-- High Speaker Eirich
+					groups = {
 						ach(40648),	-- Mythic: The Stonevault
-						ach(61602, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: The Stonevault Guild Run
+						ach(61602, {timeline = { ADDED_12_0_0 }}),	-- Mythic: The Stonevault Guild Run
 						i(226683),	-- Malfunctioning Mechsuit (QS!)
 					},
 				}),

@@ -1,25 +1,25 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	i(173381),	-- Crafter's Mark I
 	i(173382),	-- Crafter's Mark II
-	i(173383, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark III
-	i(187741, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark IV
-	i(173384, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark of the Chained Isle
-	i(187742, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark of the First Ones
+	i(173383, {timeline = {ADDED_9_1_0}}),	-- Crafter's Mark III
+	i(187741, {timeline = {ADDED_9_2_0}}),	-- Crafter's Mark IV
+	i(173384, {timeline = {ADDED_9_1_0}}),	-- Crafter's Mark of the Chained Isle
+	i(187742, {timeline = {ADDED_9_2_0}}),	-- Crafter's Mark of the First Ones
 	i(183942),	-- Novice Crafter's Mark
-	i(185960, {["timeline"] = {ADDED_9_1_0}}),	-- Vestige of Origins
-	i(187784, {["timeline"] = {ADDED_9_2_0}}),	-- Vestige of the Eternal
-	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+	i(185960, {timeline = {ADDED_9_1_0}}),	-- Vestige of Origins
+	i(187784, {timeline = {ADDED_9_2_0}}),	-- Vestige of the Eternal
+	n(DECOR, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
 		o_repeated({	-- Arden Lumber
-			["maps"] = {
+			maps = {
 				ARDENWEALD,
 				BASTION,
 				MALDRAXXUS,
 				REVENDRETH,
 			},
-			["groups"] = {
+			groups = {
 				-- Objects
 				o(554661),	-- [Ardenweald]
 				o(553616),	-- [Bastion]
@@ -32,7 +32,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 	})),
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
-			i(187802, {["timeline"] = {ADDED_9_2_0}}),	-- Cosmic Healing Potion
+			i(187802, {timeline = {ADDED_9_2_0}}),	-- Cosmic Healing Potion
 			i(171286),	-- Embalmer's Oil
 			i(171284, {	-- Eternal Cauldron
 				i(171280),	-- Eternal Flask
@@ -65,18 +65,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		filter(COSMETIC, {
 			i(180751),	-- Red Noggin Candle
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(257051),	-- Sintallow Candles (DECOR!)
 			i(257050),	-- Veil-Secured Animacone (DECOR!)
-			i(284552, { ["timeline"] = { ADDED_12_1_5 } }),	-- Venthyr Alchemy Rack (DECOR!)
+			i(284552, { timeline = { ADDED_12_1_5 } }),	-- Venthyr Alchemy Rack (DECOR!)
 		})),
-		filter(MISC, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
+		filter(MISC, sharedDataSelf({ timeline = { ADDED_9_1_0 } }, {
 			i(186697),	-- Blossom Burst
 			i(186701),	-- Glory Burst
-			i(187827, {["timeline"] = {ADDED_9_2_0}}),	-- Infusion: Corpse Purification
+			i(187827, {timeline = {ADDED_9_2_0}}),	-- Infusion: Corpse Purification
 			i(186700),	-- Marrow Burst
 			i(186694),	-- Shaded Bag of Ore
-			i(187850, {["timeline"] = {ADDED_9_2_0}}),	-- Sustaining Armor Polish
+			i(187850, {timeline = {ADDED_9_2_0}}),	-- Sustaining Armor Polish
 			i(186698),	-- Torch Burst
 			i(186699),	-- Widow Burst
 		})),
@@ -97,76 +97,76 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 	prof(BLACKSMITHING, {
 		n(DISCOVERY, {
 			r(332006, {	-- Shadowghast Armguards [Rank 2] (RECIPE!)
-				["provider"] = { "s", 307705 },	-- Shadowghast Armguards [Rank 1]
+				provider = { "s", 307705 },	-- Shadowghast Armguards [Rank 1]
 			}),
 			r(332041, {	-- Shadowghast Armguards [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332006 },	-- Shadowghast Armguards [Rank 2]
+				provider = { "s", 332006 },	-- Shadowghast Armguards [Rank 2]
 			}),
 			r(338976, {	-- Shadowghast Armguards [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332041 },	-- Shadowghast Armguards [Rank 3]
+				provider = { "s", 332041 },	-- Shadowghast Armguards [Rank 3]
 			}),
 			r(332013, {	-- Shadowghast Breastplate [Rank 2] (RECIPE!)
-				["provider"] = { "s", 307712 },	-- Shadowghast Breastplate [Rank 1]
+				provider = { "s", 307712 },	-- Shadowghast Breastplate [Rank 1]
 			}),
 			r(332048, {	-- Shadowghast Breastplate [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332013 },	-- Shadowghast Breastplate [Rank 2]
+				provider = { "s", 332013 },	-- Shadowghast Breastplate [Rank 2]
 			}),
 			r(338968, {	-- Shadowghast Breastplate [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332048 },	-- Shadowghast Breastplate [Rank 3]
+				provider = { "s", 332048 },	-- Shadowghast Breastplate [Rank 3]
 			}),
 			r(332011, {	-- Shadowghast Gauntlets [Rank 2] (RECIPE!)
-				["provider"] = { "s", 307710 },	-- Shadowghast Gauntlets [Rank 1]
+				provider = { "s", 307710 },	-- Shadowghast Gauntlets [Rank 1]
 			}),
 			r(332046, {	-- Shadowghast Gauntlets [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332011 },	-- Shadowghast Gauntlets [Rank 2]
+				provider = { "s", 332011 },	-- Shadowghast Gauntlets [Rank 2]
 			}),
 			r(338970, {	-- Shadowghast Gauntlets [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332046 },	-- Shadowghast Gauntlets [Rank 3]
+				provider = { "s", 332046 },	-- Shadowghast Gauntlets [Rank 3]
 			}),
 			r(332009, {	-- Shadowghast Greaves [Rank 2] (RECIPE!)
-				["provider"] = { "s", 307708 },	-- Shadowghast Greaves [Rank 1]
+				provider = { "s", 307708 },	-- Shadowghast Greaves [Rank 1]
 			}),
 			r(332044, {	-- Shadowghast Greaves [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332009 },	-- Shadowghast Greaves [Rank 2]
+				provider = { "s", 332009 },	-- Shadowghast Greaves [Rank 2]
 			}),
 			r(338972, {	-- Shadowghast Greaves [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332044 },	-- Shadowghast Greaves [Rank 3]
+				provider = { "s", 332044 },	-- Shadowghast Greaves [Rank 3]
 			}),
 			r(332010, {	-- Shadowghast Helm [Rank 2] (RECIPE!)
-				["provider"] = { "s", 307709 },	-- Shadowghast Helm [Rank 1]
+				provider = { "s", 307709 },	-- Shadowghast Helm [Rank 1]
 			}),
 			r(332045, {	-- Shadowghast Helm [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332010 },	-- Shadowghast Helm [Rank 2]
+				provider = { "s", 332010 },	-- Shadowghast Helm [Rank 2]
 			}),
 			r(338971, {	-- Shadowghast Helm [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332045 },	-- Shadowghast Helm [Rank 3]
+				provider = { "s", 332045 },	-- Shadowghast Helm [Rank 3]
 			}),
 			r(332008, {	-- Shadowghast Pauldrons [Rank 2] (RECIPE!)
-				["provider"] = { "s", 307707 },	-- Shadowghast Pauldrons [Rank 1]
+				provider = { "s", 307707 },	-- Shadowghast Pauldrons [Rank 1]
 			}),
 			r(332043, {	-- Shadowghast Pauldrons [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332008 },	-- Shadowghast Pauldrons [Rank 2]
+				provider = { "s", 332008 },	-- Shadowghast Pauldrons [Rank 2]
 			}),
 			r(338974, {	-- Shadowghast Pauldrons [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332043 },	-- Shadowghast Pauldrons [Rank 3]
+				provider = { "s", 332043 },	-- Shadowghast Pauldrons [Rank 3]
 			}),
 			r(332012, {	-- Shadowghast Sabatons [Rank 2] (RECIPE!)
-				["provider"] = { "s", 307711 },	-- Shadowghast Sabatons [Rank 1]
+				provider = { "s", 307711 },	-- Shadowghast Sabatons [Rank 1]
 			}),
 			r(332047, {	-- Shadowghast Sabatons [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332012 },	-- Shadowghast Sabatons [Rank 2]
+				provider = { "s", 332012 },	-- Shadowghast Sabatons [Rank 2]
 			}),
 			r(338969, {	-- Shadowghast Sabatons [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332047 },	-- Shadowghast Sabatons [Rank 3]
+				provider = { "s", 332047 },	-- Shadowghast Sabatons [Rank 3]
 			}),
 			r(332007, {	-- Shadowghast Waistguard [Rank 2] (RECIPE!)
-				["provider"] = { "s", 307706 },	-- Shadowghast Waistguard [Rank 1]
+				provider = { "s", 307706 },	-- Shadowghast Waistguard [Rank 1]
 			}),
 			r(332042, {	-- Shadowghast Waistguard [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332007 },	-- Shadowghast Waistguard [Rank 2]
+				provider = { "s", 332007 },	-- Shadowghast Waistguard [Rank 2]
 			}),
 			r(338975, {	-- Shadowghast Waistguard [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332042 },	-- Shadowghast Waistguard [Rank 3]
+				provider = { "s", 332042 },	-- Shadowghast Waistguard [Rank 3]
 			}),
 		}),
 		n(ARMOR, {
@@ -195,8 +195,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(171443),	-- Shadowsteel Sabatons
 			i(171448),	-- Shadowsteel Waistguard
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
-			i(283260, { ["timeline"] = { ADDED_12_1_5 } }),	-- Anima-Powered Anvil (DECOR!)
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
+			i(283260, { timeline = { ADDED_12_1_5 } }),	-- Anima-Powered Anvil (DECOR!)
 			i(257048),	-- Aspirant's Meditation Pool (DECOR!)
 			i(257049),	-- Bejeweled Venthyr Chalice (DECOR!)
 		})),
@@ -225,22 +225,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(COOKING, {
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(246705),	-- Caramel Mint Noodle Dish (DECOR!)
 		})),
 		i(172069),	-- Banana Beef Pudding
 		i(172046),	-- Biscuits and Caviar
-		i(186725, {["timeline"] = {ADDED_9_1_0}}),	-- Bonemeal Bread
+		i(186725, {timeline = {ADDED_9_1_0}}),	-- Bonemeal Bread
 		i(172040),	-- Butterscotch Marinated Ribs
 		i(172047),	-- Candied Amberjack Cakes
 		i(172044),	-- Cinnamon Bonefish Stew
-		i(187648, {["timeline"] = {ADDED_9_2_0}}),	-- Empty Kettle of Stone Soup
+		i(187648, {timeline = {ADDED_9_2_0}}),	-- Empty Kettle of Stone Soup
 		i(172043),	-- Feast of Gluttonous Hedonism
 		i(172063),	-- Fried Bonefish
 		i(172049),	-- Iridescent Ravioli with Apple Sauce
 		i(172048),	-- Meaty Apple Dumplings
 		i(172068),	-- Pickled Meat Smoothie
-		i(186726, {["timeline"] = {ADDED_9_1_0}}),	-- Porous Rock Candy
+		i(186726, {timeline = {ADDED_9_1_0}}),	-- Porous Rock Candy
 		i(172061),	-- Seraph Tenders
 		i(172062),	-- Smothered Shank
 		i(172041),	-- Spinefin Souffle and Fries
@@ -248,7 +248,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		i(172042),	-- Surprisingly Palatable Feast
 		i(172050),	-- Sweet Silvergill Sausages
 		i(172045),	-- Tenebrous Crown Roast Aspic
-		i(186704, {["timeline"] = {ADDED_9_1_0}}),	-- Twilight Tea
+		i(186704, {timeline = {ADDED_9_1_0}}),	-- Twilight Tea
 	}),
 	prof(ENCHANTING, {
 		header(HEADERS.Spell, 324750, {	-- Disenchant
@@ -285,11 +285,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(172363),	-- Enchant Ring - Tenet of Mastery
 			i(172364),	-- Enchant Ring - Tenet of Versatility
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(258237),	-- Ardenweald Lamppost (DECOR!)
 			i(257098),	-- Venthyr Anima Bottle (DECOR!)
 		})),
-		filter(MISC, sharedDataSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
+		filter(MISC, sharedDataSelf({ timeline = { ADDED_9_2_0 } }, {
 			i(187825),	-- Cosmic Protoweave
 			i(187823),	-- Magically Regulated Automa Core
 		})),
@@ -298,7 +298,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(172438),	-- Enchanted Heavy Callous Hide
 			i(172439),	-- Enchanted Lightless Silk
 		}),
-		filter(TOYS, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
+		filter(TOYS, sharedDataSelf({ timeline = { ADDED_9_1_0 } }, {
 			i(186973),	-- Anima-ted Leash (TOY!)
 		})),
 		n(WEAPON_ENCHANTMENTS, {
@@ -322,7 +322,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		filter(BATTLE_PETS, {
 			i(180208),	-- PHA7-YNX (PET!)
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(258252),	-- Cartel Xy Capture Crate (DECOR!)
 			i(258240),	-- Kyrian Anima Barrel (DECOR!)
 		})),
@@ -330,7 +330,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(172915),	-- 50UL-TR4P
 			i(172902),	-- Bomb Bola Launcher
 			i(184308),	-- Disposable Spectrophasic Reanimator
-			i(187836, {["timeline"] = {ADDED_9_2_0}}),	-- Erratic Genesis Matrix
+			i(187836, {timeline = {ADDED_9_2_0}}),	-- Erratic Genesis Matrix
 			i(172914),	-- Gravimetric Scrambler Cannon
 			i(172934),	-- Handful of Laestrite Bolts
 			i(172921),	-- Infra-green Reflex Sight
@@ -339,7 +339,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(172903),	-- Nutcracker Grenade
 			i(172920),	-- Optical Target Embiggener
 			i(172935),	-- Porous Polishing Abrasive
-			i(187831, {["timeline"] = {ADDED_9_2_0}}),	-- Pure-Air Sail Extensions
+			i(187831, {timeline = {ADDED_9_2_0}}),	-- Pure-Air Sail Extensions
 			i(172904),	-- Shadow Land Mine
 			i(172937),	-- Wormfed Gear Assembly
 		}),
@@ -352,26 +352,26 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 	}),
 	prof(FISHING, {
 		i(187877, {	-- Frog Soul
-			["description"] = "Fish anywhere in the Shadowlands to receive this soul.",
-			["customCollect"] = { "SL_COV_NFA" },	-- Night Fae
-			["maps"] = {
+			description = "Fish anywhere in the Shadowlands to receive this soul.",
+			customCollect = { "SL_COV_NFA" },	-- Night Fae
+			maps = {
 				ARDENWEALD,
 				BASTION,
 				REVENDRETH,
 				MALDRAXXUS,
 			},
-			["timeline"] = { ADDED_9_1_5 },
+			timeline = { ADDED_9_1_5 },
 		}),
 		i(173037),	-- Elysian Thade
 		i(173033),	-- Iridescent Amberjack
 		i(173032),	-- Lost Sole
 		i(173035),	-- Pocked Bonefish
-		i(187702, {["timeline"] = {ADDED_9_2_0}}),	-- Precursor Placoderm
+		i(187702, {timeline = {ADDED_9_2_0}}),	-- Precursor Placoderm
 		i(173034),	-- Silvergill Pike
 		i(173036),	-- Spinefin Piranha
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "Can be fished from schools.",
+				description = "Can be fished from schools.",
 			}),
 		}),
 	}),
@@ -379,7 +379,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		header(HEADERS.Spell, 2366, {	-- Herb Gathering
 			i(169701),	-- Death Blossom
 			i(169700),	-- Death Blossom Petal
-			i(187699, {["timeline"] = {ADDED_9_2_0}}),	-- First Flower
+			i(187699, {timeline = {ADDED_9_2_0}}),	-- First Flower
 			i(168589),	-- Marrowroot
 			i(168591),	-- Marrowroot Petal
 			i(171315),	-- Nightshade
@@ -401,20 +401,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		filter(COSMETIC, {
 			i(180755),	-- Fae Revel Masque
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(258245),	-- Ardenweald Hanging Baskets (DECOR!)
 			i(258235),	-- Aspiring Soul's Chair (DECOR!)
 			i(258244),	-- Broker's Hex Table (DECOR!)
 			i(258250),	-- Cartel Ta Bookcase (DECOR!)
-			i(283301, { ["timeline"] = { ADDED_12_1_5 } }),	-- Fae Moonbough Scroll (DECOR!)
+			i(283301, { timeline = { ADDED_12_1_5 } }),	-- Fae Moonbough Scroll (DECOR!)
 			i(258242),	-- Hollow Night Fae Shrine (DECOR!)
 			i(258247),	-- Large Revendreth Storage Crate (DECOR!)
-			i(284504, { ["timeline"] = { ADDED_12_1_5 } }),	-- Levitating Lich Library (DECOR!)
+			i(284504, { timeline = { ADDED_12_1_5 } }),	-- Levitating Lich Library (DECOR!)
 			i(258239),	-- Tome of Maldraxxian Rituals (DECOR!)
 		})),
-		filter(GLYPHS, sharedDataSelf({ ["timeline"] = { ADDED_9_1_5 } }, {
-			i(190378, {["timeline"] = {ADDED_9_2_0}}),	-- Glyph of the Spectral Lupine
-			i(190380, {["timeline"] = {ADDED_9_2_0}}),	-- Glyph of the Spectral Vulpine
+		filter(GLYPHS, sharedDataSelf({ timeline = { ADDED_9_1_5 } }, {
+			i(190378, {timeline = {ADDED_9_2_0}}),	-- Glyph of the Spectral Lupine
+			i(190380, {timeline = {ADDED_9_2_0}}),	-- Glyph of the Spectral Vulpine
 			i(188164),	-- Glyph of the Wild Mushroom
 			i(187887),	-- Mark of the Gloomstalker Dredbat (CI!)
 			i(187934),	-- Mark of the Midnight Runestag (CI!)
@@ -426,8 +426,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		filter(MISC, {
 			i(173048),	-- Codex of the Still Mind
 			i(173062),	-- Contract: Court of Harvesters
-			i(186522, {["timeline"] = {ADDED_9_1_0}}),	-- Contract: Death's Advance
-			i(187796, {["timeline"] = {ADDED_9_2_0}}),	-- Contract: The Enlightened
+			i(186522, {timeline = {ADDED_9_1_0}}),	-- Contract: Death's Advance
+			i(187796, {timeline = {ADDED_9_2_0}}),	-- Contract: The Enlightened
 			i(173051),	-- Contract: The Ascended
 			i(175924),	-- Contract: The Undying Army
 			i(173053),	-- Contract: The Wild Hunt
@@ -437,8 +437,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(173163),	-- Missive of Versatility
 			i(173049),	-- Tome of the Still Mind
 			i(173067),	-- Vantus Rune: Castle Nathria
-			i(186662, {["timeline"] = {ADDED_9_1_0}}),	-- Vantus Rune: Sanctum of Domination
-			i(187805, {["timeline"] = {ADDED_9_2_0}}),	-- Vantus Rune: Sepulcher of the First Ones
+			i(186662, {timeline = {ADDED_9_1_0}}),	-- Vantus Rune: Sanctum of Domination
+			i(187805, {timeline = {ADDED_9_2_0}}),	-- Vantus Rune: Sepulcher of the First Ones
 			i(173065),	-- Writ of Grave Robbing
 		}),
 		filter(REAGENTS, {
@@ -506,29 +506,29 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		}),
 		n(DISCOVERY, {
 			r(332040, {	-- Shadowghast Necklace [Rank 2]
-				["provider"] = { "s", 327921 },	-- Shadowghast Necklace [Rank 1]
+				provider = { "s", 327921 },	-- Shadowghast Necklace [Rank 1]
 			}),
 			r(332075, {	-- Shadowghast Necklace [Rank 3]
-				["provider"] = { "s", 332040 },	-- Shadowghast Necklace [Rank 2]
+				provider = { "s", 332040 },	-- Shadowghast Necklace [Rank 2]
 			}),
 			r(338977, {	-- Shadowghast Necklace [Rank 4]
-				["provider"] = { "s", 332075 },	-- Shadowghast Necklace [Rank 3]
+				provider = { "s", 332075 },	-- Shadowghast Necklace [Rank 3]
 			}),
 			r(332039, {	-- Shadowghast Ring [Rank 2]
-				["provider"] = { "s", 327920 },	-- Shadowghast Ring [Rank 1]
+				provider = { "s", 327920 },	-- Shadowghast Ring [Rank 1]
 			}),
 			r(332074, {	-- Shadowghast Ring [Rank 3]
-				["provider"] = { "s", 332039 },	-- Shadowghast Ring [Rank 2]
+				provider = { "s", 332039 },	-- Shadowghast Ring [Rank 2]
 			}),
 			r(338978, {	-- Shadowghast Ring [Rank 4]
-				["provider"] = { "s", 332074 },	-- Shadowghast Ring [Rank 3]
+				provider = { "s", 332074 },	-- Shadowghast Ring [Rank 3]
 			}),
 		}),
 		filter(COSMETIC, {
 			i(180760),	-- Crown of the Righteous
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
-			i(282126, { ["timeline"] = { ADDED_12_1_5 } }),	-- Hanging Argunite Lamp (DECOR!)
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
+			i(282126, { timeline = { ADDED_12_1_5 } }),	-- Hanging Argunite Lamp (DECOR!)
 			i(262663),	-- Kyrian Floating Lamp (DECOR!)
 			i(260699),	-- Maldraxxian Runic Tablet (DECOR!)
 		})),
@@ -567,157 +567,157 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(173144),	-- Versatile Solenium Necklace
 		}),
 		filter(MISC, {
-			i(187829, {["timeline"] = {ADDED_9_2_0}}),	-- Aealic Harmonizing Stone
-			i(187849, {["timeline"] = {ADDED_9_2_0}}),	-- Devourer Essence Stone
-			i(186981, {["timeline"] = {ADDED_9_1_0}}),	-- Porous Stone Statue
-			i(186982, {["timeline"] = {ADDED_9_1_0}}),	-- Shaded Stone Statue
+			i(187829, {timeline = {ADDED_9_2_0}}),	-- Aealic Harmonizing Stone
+			i(187849, {timeline = {ADDED_9_2_0}}),	-- Devourer Essence Stone
+			i(186981, {timeline = {ADDED_9_1_0}}),	-- Porous Stone Statue
+			i(186982, {timeline = {ADDED_9_1_0}}),	-- Shaded Stone Statue
 		}),
 	}),
 	prof(LEATHERWORKING, {
 		n(DISCOVERY, {
 			r(332029, {	-- Boneshatter Armguards [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309213 },	-- Boneshatter Armguards [Rank 1]
+				provider = { "s", 309213 },	-- Boneshatter Armguards [Rank 1]
 			}),
 			r(332064, {	-- Boneshatter Armguards [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332029 },	-- Boneshatter Armguards [Rank 2]
+				provider = { "s", 332029 },	-- Boneshatter Armguards [Rank 2]
 			}),
 			r(338994, {	-- Boneshatter Armguards [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332064 },	-- Boneshatter Armguards [Rank 3]
+				provider = { "s", 332064 },	-- Boneshatter Armguards [Rank 3]
 			}),
 			r(332024, {	-- Boneshatter Gauntlets [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309208 },	-- Boneshatter Gauntlets [Rank 1]
+				provider = { "s", 309208 },	-- Boneshatter Gauntlets [Rank 1]
 			}),
 			r(332059, {	-- Boneshatter Gauntlets [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332024 },	-- Boneshatter Gauntlets [Rank 2]
+				provider = { "s", 332024 },	-- Boneshatter Gauntlets [Rank 2]
 			}),
 			r(338989, {	-- Boneshatter Gauntlets [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332059 },	-- Boneshatter Gauntlets [Rank 3]
+				provider = { "s", 332059 },	-- Boneshatter Gauntlets [Rank 3]
 			}),
 			r(332026, {	-- Boneshatter Greaves [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309210 },	-- Boneshatter Greaves [Rank 1]
+				provider = { "s", 309210 },	-- Boneshatter Greaves [Rank 1]
 			}),
 			r(332061, {	-- Boneshatter Greaves [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332026 },	-- Boneshatter Greaves [Rank 2]
+				provider = { "s", 332026 },	-- Boneshatter Greaves [Rank 2]
 			}),
 			r(338991, {	-- Boneshatter Greaves [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332061 },	-- Boneshatter Greaves [Rank 3]
+				provider = { "s", 332061 },	-- Boneshatter Greaves [Rank 3]
 			}),
 			r(332025, {	-- Boneshatter Helm [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309209 },	-- Boneshatter Helm [Rank 1]
+				provider = { "s", 309209 },	-- Boneshatter Helm [Rank 1]
 			}),
 			r(332060, {	-- Boneshatter Helm [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332025 },	-- Boneshatter Helm [Rank 2]
+				provider = { "s", 332025 },	-- Boneshatter Helm [Rank 2]
 			}),
 			r(338990, {	-- Boneshatter Helm [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332060 },	-- Boneshatter Helm [Rank 3]
+				provider = { "s", 332060 },	-- Boneshatter Helm [Rank 3]
 			}),
 			r(332027, {	-- Boneshatter Pauldrons [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309211 },	-- Boneshatter Pauldrons [Rank 1]
+				provider = { "s", 309211 },	-- Boneshatter Pauldrons [Rank 1]
 			}),
 			r(332062, {	-- Boneshatter Pauldrons [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332027 },	-- Boneshatter Pauldrons [Rank 2]
+				provider = { "s", 332027 },	-- Boneshatter Pauldrons [Rank 2]
 			}),
 			r(338992, {	-- Boneshatter Pauldrons [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332062 },	-- Boneshatter Pauldrons [Rank 3]
+				provider = { "s", 332062 },	-- Boneshatter Pauldrons [Rank 3]
 			}),
 			r(332022, {	-- Boneshatter Treads [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309206 },	-- Boneshatter Treads [Rank 1]
+				provider = { "s", 309206 },	-- Boneshatter Treads [Rank 1]
 			}),
 			r(332057, {	-- Boneshatter Treads [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332022 },	-- Boneshatter Treads [Rank 2]
+				provider = { "s", 332022 },	-- Boneshatter Treads [Rank 2]
 			}),
 			r(338988, {	-- Boneshatter Treads [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332057 },	-- Boneshatter Treads [Rank 3]
+				provider = { "s", 332057 },	-- Boneshatter Treads [Rank 3]
 			}),
 			r(332023, {	-- Boneshatter Vest [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309207 },	-- Boneshatter Vest [Rank 1]
+				provider = { "s", 309207 },	-- Boneshatter Vest [Rank 1]
 			}),
 			r(332058, {	-- Boneshatter Vest [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332023 },	-- Boneshatter Vest [Rank 2]
+				provider = { "s", 332023 },	-- Boneshatter Vest [Rank 2]
 			}),
 			r(338987, {	-- Boneshatter Vest [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332058 },	-- Boneshatter Vest [Rank 3]
+				provider = { "s", 332058 },	-- Boneshatter Vest [Rank 3]
 			}),
 			r(332028, {	-- Boneshatter Waistguard [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309212 },	-- Boneshatter Waistguard [Rank 1]
+				provider = { "s", 309212 },	-- Boneshatter Waistguard [Rank 1]
 			}),
 			r(332063, {	-- Boneshatter Waistguard [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332028 },	-- Boneshatter Waistguard [Rank 2]
+				provider = { "s", 332028 },	-- Boneshatter Waistguard [Rank 2]
 			}),
 			r(338993, {	-- Boneshatter Waistguard [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332063 },	-- Boneshatter Waistguard [Rank 3]
+				provider = { "s", 332063 },	-- Boneshatter Waistguard [Rank 3]
 			}),
 			r(332021, {	-- Umbrahide Armguards [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309205 },	-- Umbrahide Armguards [Rank 1]
+				provider = { "s", 309205 },	-- Umbrahide Armguards [Rank 1]
 			}),
 			r(332056, {	-- Umbrahide Armguards [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332021 },	-- Umbrahide Armguards [Rank 2]
+				provider = { "s", 332021 },	-- Umbrahide Armguards [Rank 2]
 			}),
 			r(338986, {	-- Umbrahide Armguards [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332056 },	-- Umbrahide Armguards [Rank 3]
+				provider = { "s", 332056 },	-- Umbrahide Armguards [Rank 3]
 			}),
 			r(332016, {	-- Umbrahide Gauntlets [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309200 },	-- Umbrahide Gauntlets [Rank 1]
+				provider = { "s", 309200 },	-- Umbrahide Gauntlets [Rank 1]
 			}),
 			r(332051, {	-- Umbrahide Gauntlets [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332016 },	-- Umbrahide Gauntlets [Rank 2]
+				provider = { "s", 332016 },	-- Umbrahide Gauntlets [Rank 2]
 			}),
 			r(338981, {	-- Umbrahide Gauntlets [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332051 },	-- Umbrahide Gauntlets [Rank 3]
+				provider = { "s", 332051 },	-- Umbrahide Gauntlets [Rank 3]
 			}),
 			r(332017, {	-- Umbrahide Helm [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309201 },	-- Umbrahide Helm [Rank 1]
+				provider = { "s", 309201 },	-- Umbrahide Helm [Rank 1]
 			}),
 			r(332052, {	-- Umbrahide Helm [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332017 },	-- Umbrahide Helm [Rank 2]
+				provider = { "s", 332017 },	-- Umbrahide Helm [Rank 2]
 			}),
 			r(338982, {	-- Umbrahide Helm [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332052 },	-- Umbrahide Helm [Rank 3]
+				provider = { "s", 332052 },	-- Umbrahide Helm [Rank 3]
 			}),
 			r(332018, {	-- Umbrahide Leggings [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309202 },	-- Umbrahide Leggings [Rank 1]
+				provider = { "s", 309202 },	-- Umbrahide Leggings [Rank 1]
 			}),
 			r(332053, {	-- Umbrahide Leggings [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332018 },	-- Umbrahide Leggings [Rank 2]
+				provider = { "s", 332018 },	-- Umbrahide Leggings [Rank 2]
 			}),
 			r(338983, {	-- Umbrahide Leggings [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332053 },	-- Umbrahide Leggings [Rank 3]
+				provider = { "s", 332053 },	-- Umbrahide Leggings [Rank 3]
 			}),
 			r(332019, {	-- Umbrahide Pauldrons [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309203 },	-- Umbrahide Pauldrons [Rank 1]
+				provider = { "s", 309203 },	-- Umbrahide Pauldrons [Rank 1]
 			}),
 			r(332054, {	-- Umbrahide Pauldrons [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332019 },	-- Umbrahide Pauldrons [Rank 2]
+				provider = { "s", 332019 },	-- Umbrahide Pauldrons [Rank 2]
 			}),
 			r(338984, {	-- Umbrahide Pauldrons [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332054 },	-- Umbrahide Pauldrons [Rank 3]
+				provider = { "s", 332054 },	-- Umbrahide Pauldrons [Rank 3]
 			}),
 			r(332014, {	-- Umbrahide Treads [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309198 },	-- Umbrahide Treads [Rank 1]
+				provider = { "s", 309198 },	-- Umbrahide Treads [Rank 1]
 			}),
 			r(332049, {	-- Umbrahide Treads [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332014 },	-- Umbrahide Treads [Rank 2]
+				provider = { "s", 332014 },	-- Umbrahide Treads [Rank 2]
 			}),
 			r(338980, {	-- Umbrahide Treads [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332049 },	-- Umbrahide Treads [Rank 3]
+				provider = { "s", 332049 },	-- Umbrahide Treads [Rank 3]
 			}),
 			r(332015, {	-- Umbrahide Vest [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309199 },	-- Umbrahide Vest [Rank 1]
+				provider = { "s", 309199 },	-- Umbrahide Vest [Rank 1]
 			}),
 			r(332050, {	-- Umbrahide Vest [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332015 },	-- Umbrahide Vest [Rank 2]
+				provider = { "s", 332015 },	-- Umbrahide Vest [Rank 2]
 			}),
 			r(338979, {	-- Umbrahide Vest [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332050 },	-- Umbrahide Vest [Rank 3]
+				provider = { "s", 332050 },	-- Umbrahide Vest [Rank 3]
 			}),
 			r(332020, {	-- Umbrahide Waistguard [Rank 2] (RECIPE!)
-				["provider"] = { "s", 309204 },	-- Umbrahide Waistguard [Rank 1]
+				provider = { "s", 309204 },	-- Umbrahide Waistguard [Rank 1]
 			}),
 			r(332055, {	-- Umbrahide Waistguard [Rank 3] (RECIPE!)
-				["provider"] = { "s", 332020 },	-- Umbrahide Waistguard [Rank 2]
+				provider = { "s", 332020 },	-- Umbrahide Waistguard [Rank 2]
 			}),
 			r(338985, {	-- Umbrahide Waistguard [Rank 4] (RECIPE!)
-				["provider"] = { "s", 332055 },	-- Umbrahide Waistguard [Rank 3]
+				provider = { "s", 332055 },	-- Umbrahide Waistguard [Rank 3]
 			}),
 		}),
 		n(ARMOR, {
@@ -774,7 +774,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 				i(172264),	-- Shadowscale Waistguard
 			}),
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(258238),	-- Maldraxxian Crate (DECOR!)
 			i(258248),	-- Margrave's Stitched Leather Rug (DECOR!)
 		})),
@@ -789,7 +789,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(172097),	-- Heavy Callous Hide
 			i(172096),	-- Heavy Desolate Leather
 		}),
-		filter(TOYS, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
+		filter(TOYS, sharedDataSelf({ timeline = { ADDED_9_1_0 } }, {
 			i(186985),	-- Elusive Pet Treat (TOY!)
 			i(186702),	-- Pallid Bone Flute (TOY!)
 			i(186686),	-- Pallid Oracle Bones (TOY!)
@@ -812,7 +812,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(171837),	-- Phaedrum Nugget
 			i(171831),	-- Phaedrum Ore
 			i(171840),	-- Porous Stone
-			i(187700, {["timeline"] = {ADDED_9_2_0}}),	-- Progenium Ore
+			i(187700, {timeline = {ADDED_9_2_0}}),	-- Progenium Ore
 			i(171841),	-- Shaded Stone
 			i(171838),	-- Sinvyr Nugget
 			i(171832),	-- Sinvyr Ore
@@ -830,91 +830,91 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(172097),	-- Heavy Callous Hide
 			i(172096),	-- Heavy Desolate Leather
 			i(172092),	-- Pallid Bone
-			i(187701, {["timeline"] = {ADDED_9_2_0}}),	-- Protogenic Pelt
+			i(187701, {timeline = {ADDED_9_2_0}}),	-- Protogenic Pelt
 		}),
 	}),
 	prof(TAILORING, {
 		n(DISCOVERY, {
 			r(332037, {	-- Grim-Veiled Belt [Rank 2]
-				["provider"] = { "s", 310885 },	-- Grim-Veiled Belt [Rank 1]
+				provider = { "s", 310885 },	-- Grim-Veiled Belt [Rank 1]
 			}),
 			r(332072, {	-- Grim-Veiled Belt [Rank 3]
-				["provider"] = { "s", 332037 },	-- Grim-Veiled Belt [Rank 2]
+				provider = { "s", 332037 },	-- Grim-Veiled Belt [Rank 2]
 			}),
 			r(339003, {	-- Grim-Veiled Belt [Rank 4]
-				["provider"] = { "s", 332072 },	-- Grim-Veiled Belt [Rank 3]
+				provider = { "s", 332072 },	-- Grim-Veiled Belt [Rank 3]
 			}),
 			r(332038, {	-- Grim-Veiled Bracers [Rank 2]
-				["provider"] = { "s", 310886 },	-- Grim-Veiled Bracers [Rank 1]
+				provider = { "s", 310886 },	-- Grim-Veiled Bracers [Rank 1]
 			}),
 			r(332073, {	-- Grim-Veiled Bracers [Rank 3]
-				["provider"] = { "s", 332038 },	-- Grim-Veiled Bracers [Rank 2]
+				provider = { "s", 332038 },	-- Grim-Veiled Bracers [Rank 2]
 			}),
 			r(339004, {	-- Grim-Veiled Bracers [Rank 4]
-				["provider"] = { "s", 332073 },	-- Grim-Veiled Bracers [Rank 3]
+				provider = { "s", 332073 },	-- Grim-Veiled Bracers [Rank 3]
 			}),
 			r(332032, {	-- Grim-Veiled Cape [Rank 2]
-				["provider"] = { "s", 310880 },	-- Grim-Veiled Cape [Rank 1]
+				provider = { "s", 310880 },	-- Grim-Veiled Cape [Rank 1]
 			}),
 			r(332067, {	-- Grim-Veiled Cape [Rank 3]
-				["provider"] = { "s", 332032 },	-- Grim-Veiled Cape [Rank 2]
+				provider = { "s", 332032 },	-- Grim-Veiled Cape [Rank 2]
 			}),
 			r(338995, {	-- Grim-Veiled Cape [Rank 4]
-				["provider"] = { "s", 332067 },	-- Grim-Veiled Cape [Rank 3]
+				provider = { "s", 332067 },	-- Grim-Veiled Cape [Rank 3]
 			}),
 			r(332034, {	-- Grim-Veiled Hood [Rank 2]
-				["provider"] = { "s", 310882 },	-- Grim-Veiled Hood [Rank 1]
+				provider = { "s", 310882 },	-- Grim-Veiled Hood [Rank 1]
 			}),
 			r(332069, {	-- Grim-Veiled Hood [Rank 3]
-				["provider"] = { "s", 332034 },	-- Grim-Veiled Hood [Rank 2]
+				provider = { "s", 332034 },	-- Grim-Veiled Hood [Rank 2]
 			}),
 			r(339000, {	-- Grim-Veiled Hood [Rank 4]
-				["provider"] = { "s", 332069 },	-- Grim-Veiled Hood [Rank 3]
+				provider = { "s", 332069 },	-- Grim-Veiled Hood [Rank 3]
 			}),
 			r(332033, {	-- Grim-Veiled Mittens [Rank 2]
-				["provider"] = { "s", 310881 },	-- Grim-Veiled Mittens [Rank 1]
+				provider = { "s", 310881 },	-- Grim-Veiled Mittens [Rank 1]
 			}),
 			r(332068, {	-- Grim-Veiled Mittens [Rank 3]
-				["provider"] = { "s", 332033 },	-- Grim-Veiled Mittens [Rank 2]
+				provider = { "s", 332033 },	-- Grim-Veiled Mittens [Rank 2]
 			}),
 			r(338998, {	-- Grim-Veiled Mittens [Rank 4]
-				["provider"] = { "s", 332068 },	-- Grim-Veiled Mittens [Rank 3]
+				provider = { "s", 332068 },	-- Grim-Veiled Mittens [Rank 3]
 			}),
 			r(332035, {	-- Grim-Veiled Pants [Rank 2]
-				["provider"] = { "s", 310883 },	-- Grim-Veiled Pants [Rank 1]
+				provider = { "s", 310883 },	-- Grim-Veiled Pants [Rank 1]
 			}),
 			r(332070, {	-- Grim-Veiled Pants [Rank 3]
-				["provider"] = { "s", 332035 },	-- Grim-Veiled Pants [Rank 2]
+				provider = { "s", 332035 },	-- Grim-Veiled Pants [Rank 2]
 			}),
 			r(339001, {	-- Grim-Veiled Pants [Rank 4]
-				["provider"] = { "s", 332070 },	-- Grim-Veiled Pants [Rank 3]
+				provider = { "s", 332070 },	-- Grim-Veiled Pants [Rank 3]
 			}),
 			r(332031, {	-- Grim-Veiled Robe [Rank 2]
-				["provider"] = { "s", 310879 },	-- Grim-Veiled Robe [Rank 1]
+				provider = { "s", 310879 },	-- Grim-Veiled Robe [Rank 1]
 			}),
 			r(332066, {	-- Grim-Veiled Robe [Rank 3]
-				["provider"] = { "s", 332031 },	-- Grim-Veiled Robe [Rank 2]
+				provider = { "s", 332031 },	-- Grim-Veiled Robe [Rank 2]
 			}),
 			r(338996, {	-- Grim-Veiled Robe [Rank 4]
-				["provider"] = { "s", 332066 },	-- Grim-Veiled Robe [Rank 3]
+				provider = { "s", 332066 },	-- Grim-Veiled Robe [Rank 3]
 			}),
 			r(332030, {	-- Grim-Veiled Sandals [Rank 2]
-				["provider"] = { "s", 310878 },	-- Grim-Veiled Sandals [Rank 1]
+				provider = { "s", 310878 },	-- Grim-Veiled Sandals [Rank 1]
 			}),
 			r(332065, {	-- Grim-Veiled Sandals [Rank 3]
-				["provider"] = { "s", 332030 },	-- Grim-Veiled Sandals [Rank 2]
+				provider = { "s", 332030 },	-- Grim-Veiled Sandals [Rank 2]
 			}),
 			r(338997, {	-- Grim-Veiled Sandals [Rank 4]
-				["provider"] = { "s", 332065 },	-- Grim-Veiled Sandals [Rank 3]
+				provider = { "s", 332065 },	-- Grim-Veiled Sandals [Rank 3]
 			}),
 			r(332036, {	-- Grim-Veiled Spaulders [Rank 2]
-				["provider"] = { "s", 310884 },	-- Grim-Veiled Spaulders [Rank 1]
+				provider = { "s", 310884 },	-- Grim-Veiled Spaulders [Rank 1]
 			}),
 			r(332071, {	-- Grim-Veiled Spaulders [Rank 3]
-				["provider"] = { "s", 332036 },	-- Grim-Veiled Spaulders [Rank 2]
+				provider = { "s", 332036 },	-- Grim-Veiled Spaulders [Rank 2]
 			}),
 			r(339002, {	-- Grim-Veiled Spaulders [Rank 4]
-				["provider"] = { "s", 332071 },	-- Grim-Veiled Spaulders [Rank 3]
+				provider = { "s", 332071 },	-- Grim-Veiled Spaulders [Rank 3]
 			}),
 		}),
 		n(ARMOR, {
@@ -949,7 +949,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 		filter(COSMETIC, {
 			i(180752),	-- Pink Party Hat
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(264678),	-- Aspirant's Ringed Banner (DECOR!)
 			i(264713),	-- Heart of the Forest Banner (DECOR!)
 			i(258561),	-- Kyrian Aspirant's Rolled Cushion (DECOR!)
@@ -959,7 +959,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = {
 			i(184480),	-- Lightless Silk Pouch
 			i(184479),	-- Shrouded Cloth Bag
 			i(173192),	-- Shrouded Cloth Bandage
-			i(186975, {["timeline"] = {ADDED_9_1_0}}),	-- Shrouded Hand Towel
+			i(186975, {timeline = {ADDED_9_1_0}}),	-- Shrouded Hand Towel
 		}),
 	}),
 })));

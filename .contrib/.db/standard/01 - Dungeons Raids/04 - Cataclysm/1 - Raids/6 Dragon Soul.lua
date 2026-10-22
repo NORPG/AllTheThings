@@ -3,13 +3,13 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, inst(187, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {	-- Dragon Soul
-		["mapID"] = 409,	-- Wyrmrest Temple [Starting Area]
-		["coords"] = {
+	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, inst(187, bubbleDownSelf({ timeline = { ADDED_4_3_0 }, }, {	-- Dragon Soul
+		mapID = 409,	-- Wyrmrest Temple [Starting Area]
+		coords = {
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 			{ 61.9, 27.2, CAVERNS_OF_TIME },	-- actual raid entrance
 		},
-		["maps"] = {
+		maps = {
 			412,	-- Dragon Soul: Eye of Eternity
 			415,	-- Dragon Soul: The Maelstrom
 			410,
@@ -17,129 +17,129 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			413,
 			414,
 		},
-		["sharedLockout"] = 1,
-		["isRaid"] = true,
-		["lvl"] = 85,
-		["groups"] = {
+		sharedLockout = 1,
+		isRaid = true,
+		lvl = 85,
+		groups = {
 			header(HEADERS.Achievement, 6181,	-- Fangs of the Father
-			bubbleDownSelf({ ["classes"] = { ROGUE } }, {
-				["isRaid"] = true,
-				["lvl"] = 85,
-				["groups"] = {
+			bubbleDownSelf({ classes = { ROGUE } }, {
+				isRaid = true,
+				lvl = 85,
+				groups = {
 					q(29802, {	-- A Hidden Message
-						["description"] = "Yes, you actually have to pay the 10 000 gold to progress on this questline.",
-						["sourceQuest"] = 29801,	-- Proving Your Worth
-						["qg"] = 55476,	-- Lord Afrasastrasz
-						["coord"] = { 50.2, 59.6, 409 },	-- Dragon Soul
-						["cost"] = { { "i", 74752, 1 } },	-- Solved Cipher
-						["groups"] = {
+						description = "Yes, you actually have to pay the 10 000 gold to progress on this questline.",
+						sourceQuest = 29801,	-- Proving Your Worth
+						qg = 55476,	-- Lord Afrasastrasz
+						coord = { 50.2, 59.6, 409 },	-- Dragon Soul
+						cost = { { "i", 74752, 1 } },	-- Solved Cipher
+						groups = {
 							i(74749, {	-- Charging Decoder Ring
-								["description"] = "Just log out for 12 hours. Read a book or something!",
-								["qgs"] = {
+								description = "Just log out for 12 hours. Read a book or something!",
+								qgs = {
 									57801,	-- Thaumaturge Altha
 									57800,	-- Thaumaturge Rafir
 								},
-								["coords"] = {
+								coords = {
 									{ 57.6, 65.6, ORGRIMMAR },	-- Thaumaturge Altha
 									{ 50.6, 61.0, STORMWIND_CITY },	-- Thaumaturge Rafir
 								},
-								["cost"] = {
+								cost = {
 									{ "g", 100000000 },	-- 10k gold
 									{ "i", 74246, 1 },	-- Cryptomancer's Decoder Ring
 								},
-								["groups"] = {
+								groups = {
 									i(74748),	-- Charged Decoder Ring
 								},
 							}),
 							i(74750, {	-- Singed Cipher
-								["qg"] = 55488,	-- Corastrasza
-								["coord"] = { 29.0, 25.0, TWILIGHT_HIGHLANDS },
-								["cost"] = { { "i", 74748, 1 } },	-- Charged Decoder Ring
-								["groups"] = {
+								qg = 55488,	-- Corastrasza
+								coord = { 29.0, 25.0, TWILIGHT_HIGHLANDS },
+								cost = { { "i", 74748, 1 } },	-- Charged Decoder Ring
+								groups = {
 									i(74752),	-- Solved Cipher
 								},
 							}),
 						},
 					}),
 					q(30093, {	-- Assassinate Creed
-						["sourceQuest"] = 30092,	-- Our Man in Gilneas
-						["qg"] = 57770,	-- Zazzo Twinklefingers
-						["coord"] = { 70.0, 40.8, RUINS_OF_GILNEAS },
-						["cr"] = 57802,	-- Lord Hiram Creed <Warlord of the Blackhowl>
+						sourceQuest = 30092,	-- Our Man in Gilneas
+						qg = 57770,	-- Zazzo Twinklefingers
+						coord = { 70.0, 40.8, RUINS_OF_GILNEAS },
+						cr = 57802,	-- Lord Hiram Creed <Warlord of the Blackhowl>
 					}),
 					q(30109, {	-- Blood of the Betrayer
-						["sourceQuest"] = 30108,	-- Our Man in Karazhan
-						["qg"] = 57770,	-- Zazzo Twinklefingers
-						["coord"] = { 52.6, 77.6, DEADWIND_PASS },
-						["groups"] = {
+						sourceQuest = 30108,	-- Our Man in Karazhan
+						qg = 57770,	-- Zazzo Twinklefingers
+						coord = { 52.6, 77.6, DEADWIND_PASS },
+						groups = {
 							objective(1, {	-- 0/1 Vial of Black Dragonsblood
-								["provider"] = { "i", 77954 },	-- Vial of Black Dragonsblood
-								["coord"] = { 54.0, 91.4, DEADWIND_PASS },
-								["cr"] = 57910,	-- Nalice <Leader of the Blackwyrm Cult>
+								provider = { "i", 77954 },	-- Vial of Black Dragonsblood
+								coord = { 54.0, 91.4, DEADWIND_PASS },
+								cr = 57910,	-- Nalice <Leader of the Blackwyrm Cult>
 							}),
 						},
 					}),
 					q(30107, {	-- Cluster Clutch
-						["sourceQuest"] = 30106,	-- The Deed is Done
-						["qg"] = 57777,	-- Wrathion <The Black Prince>
-						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
-						["cost"] = { { "i", 77951, 333 } },	-- Shadowy Gem
+						sourceQuest = 30106,	-- The Deed is Done
+						qg = 57777,	-- Wrathion <The Black Prince>
+						coord = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
+						cost = { { "i", 77951, 333 } },	-- Shadowy Gem
 					}),
 					q(30092, {	-- Our Man in Gilneas
-						["sourceQuest"] = 29847,	-- To Catch a Thief
-						["qg"] = 57777,	-- Wrathion <The Black Prince>
-						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
+						sourceQuest = 29847,	-- To Catch a Thief
+						qg = 57777,	-- Wrathion <The Black Prince>
+						coord = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
 					}),
 					q(30108, {	-- Our Man in Karazhan
-						["sourceQuest"] = 30107,	-- Cluster Clutch
-						["qg"] = 57777,	-- Wrathion <The Black Prince>
-						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
+						sourceQuest = 30107,	-- Cluster Clutch
+						qg = 57777,	-- Wrathion <The Black Prince>
+						coord = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
 					}),
 					q(30118, {	-- Patricide
-						["sourceQuest"] = 30116,	-- Sharpening Your Fangs
-						["qg"] = 57777,	-- Wrathion <The Black Prince>
-						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
-						["groups"] = {
+						sourceQuest = 30116,	-- Sharpening Your Fangs
+						qg = 57777,	-- Wrathion <The Black Prince>
+						coord = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
+						groups = {
 							ach(6181),	-- Fangs of the Father
 							i(77949),	-- Golad, Twilight of Aspects
 							i(77950),	-- Tiriosh, Nightmare of Ages
 						},
 					}),
 					q(29801, {	-- Proving Your Worth
-						["qg"] = 55476,	-- Lord Afrasastrasz
-						["coord"] = { 50.2, 59.6, 409 },	-- Dragon Soul
+						qg = 55476,	-- Lord Afrasastrasz
+						coord = { 50.2, 59.6, 409 },	-- Dragon Soul
 					}),
 					q(30116, {	-- Sharpening Your Fangs
-						["description"] = "This quest requires you to turn in 60 unopened Elementium Gem Clusters.",
-						["sourceQuest"] = 30113,	-- Victory in the Depths
-						["qg"] = 57777,	-- Wrathion <The Black Prince>
-						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
-						["cost"] = { { "i", 77952, 60 } },	-- Elementium Gem Cluster
+						description = "This quest requires you to turn in 60 unopened Elementium Gem Clusters.",
+						sourceQuest = 30113,	-- Victory in the Depths
+						qg = 57777,	-- Wrathion <The Black Prince>
+						coord = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
+						cost = { { "i", 77952, 60 } },	-- Elementium Gem Cluster
 					}),
 					q(30106, {	-- The Deed is Done
-						["sourceQuest"] = 30093,	-- Assassinate Creed
-						["qg"] = 57770,	-- Zazzo Twinklefingers
-						["coord"] = { 70.0, 40.8, RUINS_OF_GILNEAS },
-						["groups"] = {
+						sourceQuest = 30093,	-- Assassinate Creed
+						qg = 57770,	-- Zazzo Twinklefingers
+						coord = { 70.0, 40.8, RUINS_OF_GILNEAS },
+						groups = {
 							i(77945),	-- Fear
 							i(77946),	-- Vengeance
 						},
 					}),
 					q(29847, {	-- To Catch a Thief
-						["sourceQuest"] = 29934,	-- To Ravenholdt
-						["qg"] = 56375,	-- Mostrasz
-						["coord"] = { 67.8, 45.2, HILLSBRAD_FOOTHILLS },
+						sourceQuest = 29934,	-- To Ravenholdt
+						qg = 56375,	-- Mostrasz
+						coord = { 67.8, 45.2, HILLSBRAD_FOOTHILLS },
 					}),
 					q(29934, {	-- To Ravenholdt
-						["sourceQuest"] = 29802,	-- A Hidden Message
-						["qg"] = 55488,	-- Corastrasza
-						["coord"] = { 29.0, 25.0, TWILIGHT_HIGHLANDS },
+						sourceQuest = 29802,	-- A Hidden Message
+						qg = 55488,	-- Corastrasza
+						coord = { 29.0, 25.0, TWILIGHT_HIGHLANDS },
 					}),
 					q(30113, {	-- Victory in the Depths
-						["sourceQuest"] = 30109,	-- Blood of the Betrayer
-						["qg"] = 57770,	-- Zazzo Twinklefingers
-						["coord"] = { 52.6, 77.6, DEADWIND_PASS },
-						["groups"] = {
+						sourceQuest = 30109,	-- Blood of the Betrayer
+						qg = 57770,	-- Zazzo Twinklefingers
+						coord = { 52.6, 77.6, DEADWIND_PASS },
+						groups = {
 							i(77947),	-- The Sleeper
 							i(77948),	-- The Dreamer
 						},
@@ -149,34 +149,34 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			n(ACHIEVEMENTS, {
 				ach(6106, {	-- Siege of Wyrmrest Temple
 					crit(18445, {	-- Morchok
-						["_encounter"] = { 311, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+						_encounter = { 311, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 					crit(18446, {	-- Warlord Zon'ozz
-						["_encounter"] = { 324, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+						_encounter = { 324, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 					crit(18447, {	-- Yor'sahj the Unsleeping
-						["_encounter"] = { 325, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+						_encounter = { 325, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 					crit(18448, {	-- Hagara the Stormbinder
-						["_encounter"] = { 317, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+						_encounter = { 317, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 				}),
 				ach(6107, {	-- Fall of Deathwing
 					crit(18449, {	-- Ultraxion
-						["_encounter"] = { 331, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+						_encounter = { 331, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 					crit(18450, {	-- Warmaster Blackhorn
-						["_encounter"] = { 332, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+						_encounter = { 332, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 					crit(18451, {	-- Spine of Deathwing
-						["_encounter"] = { 318, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+						_encounter = { 318, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 					crit(18452, {	-- Madness of Deathwing
-						["_encounter"] = { 333, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
+						_encounter = { 333, DIFFICULTY.LEGACY_RAID.MULTI.ALL },
 					}),
 				}),
 				ach(6169, {	-- Glory of the Dragon Soul Raider
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						6109,	-- Heroic: Morchok
 						6110,	-- Heroic: Warlord Zon'ozz
 						6111,	-- Heroic: Yor'sahj the Unsleeping
@@ -191,15 +191,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						6133,	-- Maybe He'll Get Dizzy...
 						6180,	-- Chromatic Champion
 					}},
-					["groups"] = {
+					groups = {
 						i(77068),	-- Twilight Harbinger (MOUNT!)
 					},
 				}),
-				ach(11756, {["timeline"] = {ADDED_7_2_0}}),	-- Wardrobe of the Old Gods (Dragon Soul)
+				ach(11756, {timeline = {ADDED_7_2_0}}),	-- Wardrobe of the Old Gods (Dragon Soul)
 				ach(6123),	-- Dragon Soul Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {
-				["crs"] = {
+				crs = {
 					55265,	-- Morchok
 					55308,	-- Warlord Zon'ozz
 					55312,	-- Yor'sahj the Unsleeping
@@ -207,18 +207,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					55294,	-- Ultraxion
 					56427,	-- Warmaster Blackhorn
 				},
-				["groups"] = {
+				groups = {
 					currency(614, {	-- Mote of Darkness
-						["description"] = "Used to buy uncut gems contained in Crystalline Geode from vendor Dasnurimi in Wyrmrest Temple.",
+						description = "Used to buy uncut gems contained in Crystalline Geode from vendor Dasnurimi in Wyrmrest Temple.",
 					}),
 				},
 			}),
 			n(VENDORS, {
 				n(58153, {	-- Dasnurimi <Geologist & Conservator>
 					i(78890, {	-- Crystalline Geode
-						["description"] = "Contains random uncut Cataclysm gems.",
-						["cost"] = { { "c", 614, 1 } },	-- Mote of Darkness
-						["groups"] = {
+						description = "Contains random uncut Cataclysm gems.",
+						cost = { { "c", 614, 1 } },	-- Mote of Darkness
+						groups = {
 							i(71807),	-- Deepholm Iolite
 							i(71810),	-- Elven Peridot
 							i(71808),	-- Lava Coral
@@ -228,7 +228,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					i(78891, {	-- Elementium-coated Geode
-						["cost"] = { { "c", 615, 1 } },	-- Essence of Corrupted Deathwing
+						cost = { { "c", 615, 1 } },	-- Essence of Corrupted Deathwing
 					}),
 				}),
 			}),
@@ -241,7 +241,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				})),
 				cr(55312, e(325, {	-- Yor'sahj the Unsleeping
 					-- i(152979, {	-- Faceless Mindlasher (PET!)
-					-- 	["timeline"] = { ADDED_7_3_0 },
+					-- 	timeline = { ADDED_7_3_0 },
 					-- }),
 				})),
 				cr(55689, e(317, {	-- Hagara the Stormbinder
@@ -255,22 +255,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				})),
 				cr(53879, e(318, {	-- Spine of Deathwing
 					-- i(152980, {	-- Corrupted Blood (PET!)
-					-- 	["timeline"] = { ADDED_7_3_0 },
+					-- 	timeline = { ADDED_7_3_0 },
 					-- }),
 					-- i(122198, {	-- Music Roll: The Shattering [Note: Crieve got on stream]
-					-- 	["timeline"] = { ADDED_6_1_0 },
+					-- 	timeline = { ADDED_6_1_0 },
 					-- }),
 				})),
 				cr(56173, e(333, {	-- Madness of Deathwing
 					-- i(152981, {	-- Unstable Tendril (PET!)
-					-- 	["timeline"] = { ADDED_7_3_0 },
+					-- 	timeline = { ADDED_7_3_0 },
 					-- }),
 					-- i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
-					-- 	["timeline"] = { ADDED_6_1_0 },
+					-- 	timeline = { ADDED_6_1_0 },
 					-- }),
 					-- #if AFTER 9.1.5
 					currency(615, {	-- Essence of Corrupted Deathwing
-						["description"] = "Used to buy random epic uncut gems contained in Elementium-Coated Geode from vendor Dasnurimi in Wyrmrest Temple.",
+						description = "Used to buy random epic uncut gems contained in Elementium-Coated Geode from vendor Dasnurimi in Wyrmrest Temple.",
 					}),
 					-- #endif
 				})),
@@ -278,14 +278,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			-- #if NOT ANYCLASSIC
 			d(DIFFICULTY.LEGACY_RAID.FINDER, {
 				-- #if AFTER 6.0.1.18322
-				["crs"] = { 80675 },	-- Auridormi <Raid Finder Guardian>
-				["coord"] = { 63.0, 27.6, CAVERNS_OF_TIME },
+				crs = { 80675 },	-- Auridormi <Raid Finder Guardian>
+				coord = { 63.0, 27.6, CAVERNS_OF_TIME },
 				-- #endif
-				["ignoreBonus"] = true,
-				["groups"] =
+				ignoreBonus = true,
+				groups =
 				{
 					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
+						crs = {
 							55265,	-- Morchok
 							55308,	-- Warlord Zon'ozz
 							55312,	-- Yor'sahj the Unsleeping
@@ -293,7 +293,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							55294,	-- Ultraxion
 							56427,	-- Warmaster Blackhorn
 						},
-						["groups"] = {
+						groups = {
 							i(78869),	-- Crown of the Corrupted Conqueror
 							i(78870),	-- Crown of the Corrupted Protector
 							i(78868),	-- Crown of the Corrupted Vanquisher
@@ -302,7 +302,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(78874),	-- Shoulders of the Corrupted Vanquisher
 							i(78863, {	-- Chest of the Corrupted Conqueror
 								-- #if AFTER LEGION
-								["description"] = "Paladin Completionists will want to take this item to the vendor to get the specific item they want. Right-clicking can award the Holy piece regardless of your spec.",
+								description = "Paladin Completionists will want to take this item to the vendor to get the specific item they want. Right-clicking can award the Holy piece regardless of your spec.",
 								-- #endif
 							}),
 							i(78864),	-- Chest of the Corrupted Protector
@@ -341,7 +341,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(78386),	-- Pillarfoot Greaves
 							-- #if BEFORE MOP
 							i(78374, {	-- Razor Saronite Chip
-								["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+								timeline = { ADDED_4_3_0, REMOVED_5_0_4 },
 							}),
 							-- #endif
 						})),
@@ -365,7 +365,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(77971),	-- Insignia of the Corrupted Mind
 							i(77970),	-- Soulshifter Vortex
 							i(152979, {	-- Faceless Mindlasher (PET!)
-								["timeline"] = { ADDED_7_3_0 },
+								timeline = { ADDED_7_3_0 },
 							}),
 						})),
 						cr(55689, e(317, {	-- Hagara the Stormbinder
@@ -414,10 +414,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(77975),	-- Will of Unbinding
 							i(77974),	-- Wrath of Unchaining
 							i(152980, {	-- Corrupted Blood (PET!)
-								["timeline"] = { ADDED_7_3_0 },
+								timeline = { ADDED_7_3_0 },
 							}),
 							i(122198, {	-- Music Roll: The Shattering [Note: Crieve got on stream]
-								["timeline"] = { ADDED_6_1_0 },
+								timeline = { ADDED_6_1_0 },
 							}),
 						})),
 						cr(56173, e(333, {	-- Madness of Deathwing
@@ -431,13 +431,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(78486),	-- Ti'tahk, the Steps of Time
 							i(78480),	-- Vishanka, Jaws of the Earth
 							i(89810, {	-- Bounty of a Sundered Land
-								["timeline"] = { ADDED_5_0_4 },
+								timeline = { ADDED_5_0_4 },
 							}),
 							i(152981, {	-- Unstable Tendril (PET!)
-								["timeline"] = { ADDED_7_3_0 },
+								timeline = { ADDED_7_3_0 },
 							}),
 							i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
-								["timeline"] = { ADDED_6_1_0 },
+								timeline = { ADDED_6_1_0 },
 							}),
 						})),
 					}),
@@ -446,10 +446,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			}),
 			-- #endif
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {
-				["ignoreBonus"] = true,
-				["groups"] = {
+				ignoreBonus = true,
+				groups = {
 					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
+						crs = {
 							55265,	-- Morchok
 							55308,	-- Warlord Zon'ozz
 							55312,	-- Yor'sahj the Unsleeping
@@ -457,9 +457,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							55294,	-- Ultraxion
 							56427,	-- Warmaster Blackthorn
 						},
-						["groups"] = {
+						groups = {
 							i(71998, {	-- Essence of Destruction
-								["description"] = "Drops commonly from Dragon Soul bosses.",
+								description = "Drops commonly from Dragon Soul bosses.",
 							}),
 							i(77952, {	-- Elementium Gem Cluster
 								i(77951),	-- Shadowy Gem
@@ -492,34 +492,34 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					cr(55308, e(324, {	-- Warlord Zon'ozz
 						ach(6128, {	-- Ping Pong Champion
 							-- #if AFTER 6.0.3
-							["description"] = "Can be soloed without a pet to hold the boss, the ball occasionally has an immune phase where it can pass through the boss without losing the strike.",
+							description = "Can be soloed without a pet to hold the boss, the ball occasionally has an immune phase where it can pass through the boss without losing the strike.",
 							-- #endif
 						}),
 					})),
 					cr(55312, e(325, {	-- Yor'sahj the Unsleeping
 						ach(6129, {	-- Taste the Rainbow!
-							["description"] = "The oozes you need for the achievement spawn through the boss fight. Four colours will spawn each time, and the remaining oozes become immune when the first is killed. This is fine, just make sure two of the remaining oozes match a criterion.",
-							["groups"] = {
+							description = "The oozes you need for the achievement spawn through the boss fight. Four colours will spawn each time, and the remaining oozes become immune when the first is killed. This is fine, just make sure two of the remaining oozes match a criterion.",
+							groups = {
 								crit(18495, {	-- Black and Yellow
-									["crs"] = {
+									crs = {
 										55867,	-- Dark Globule <Blood of Shu'ma>
 										55864,	-- Glowing Globule <Blood of Shu'ma>
 									},
 								}),
 								crit(18496, {	-- Red and Green
-									["crs"] = {
+									crs = {
 										55865,	-- Crimson Globule <Blood of Shu'ma>
 										55862,	-- Acidic Globule <Blood of Shu'ma>
 									},
 								}),
 								crit(18497, {	-- Black and Blue
-									["crs"] = {
+									crs = {
 										55867,	-- Dark Globule <Blood of Shu'ma>
 										55866,	-- Cobalt Globule <Blood of Shu'ma>
 									},
 								}),
 								crit(18498, {	-- Purple and Yellow
-									["crs"] = {
+									crs = {
 										55863,	-- Shadowed Globule <Blood of Shu'ma>
 										55864,	-- Glowing Globule <Blood of Shu'ma>
 									},
@@ -527,18 +527,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							},
 						}),
 						i(152979, {	-- Faceless Mindlasher (PET!)
-							["timeline"] = { ADDED_7_3_0 },
+							timeline = { ADDED_7_3_0 },
 						}),
 					})),
 					cr(55689, e(317, {	-- Hagara the Stormbinder
 						ach(6175, {	-- Holding Hands
 							-- #if AFTER 6.0.3
-							["description"] = "Can be soloed with a pet or with help from another player. Requires 10 player mode. Get Hagara down to past 85% health, and kill the elemental spawn near a totem to charge it.\n\n|CFFFF0000Do not try to this in 25 player mode, you will get stuck unless you have a handful of other players with you!|r",
+							description = "Can be soloed with a pet or with help from another player. Requires 10 player mode. Get Hagara down to past 85% health, and kill the elemental spawn near a totem to charge it.\n\n|CFFFF0000Do not try to this in 25 player mode, you will get stuck unless you have a handful of other players with you!|r",
 							-- #endif
 						}),
 						i(74246, {	-- Cryptomancer's Decoder Ring
-							["description"] = "You need to pickpocket this from the boss.",
-							["b"] = 1,	-- BoP
+							description = "You need to pickpocket this from the boss.",
+							b = 1,	-- BoP
 						}),
 					})),
 					cr(55294, e(331, {	-- Ultraxion
@@ -548,34 +548,34 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					cr(56427, e(332, {	-- Warmaster Blackthorn
 						ach(6105, {	-- Deck Defender
 						-- #if AFTER 6.0.3
-						["description"] = "Kill the Twilight Assault Drakes fast and soak any Twilight Barrage.\nUse a macro like:\n/tar Twilight Assault Drake\n/cast (whatever instant ranged ability you have)",
+						description = "Kill the Twilight Assault Drakes fast and soak any Twilight Barrage.\nUse a macro like:\n/tar Twilight Assault Drake\n/cast (whatever instant ranged ability you have)",
 						-- #endif
 						}),
 					})),
 					cr(53879, e(318, {	-- Spine of Deathwing
 						ach(6133),	-- Maybe He'll Get Dizzy...
 						i(152980, {	-- Corrupted Blood (PET!)
-							["timeline"] = { ADDED_7_3_0 },
+							timeline = { ADDED_7_3_0 },
 						}),
 						i(122198, {	-- Music Roll: The Shattering [Note: Crieve got on stream]
-							["timeline"] = { ADDED_6_1_0 },
+							timeline = { ADDED_6_1_0 },
 						}),
 					})),
 					cr(56173, e(333, {	-- Madness of Deathwing
 						ach(6180, {	-- Chromatic Champion
-							["description"] = "Facing inwards towards the Maelstrom, The aspects will be positioned on the following platforms when the event starts:\nYsera on the start platform.\nKalecgos on the right.\nNozdormu on the left.\nAlexstrasza on the far left.\nYou can get a movement buff prior to event start by moving between the platforms, which helps to reach Alexstrasza in time. Make sure the aspect is properly assaulted to get credit.",
-							["groups"] = {
+							description = "Facing inwards towards the Maelstrom, The aspects will be positioned on the following platforms when the event starts:\nYsera on the start platform.\nKalecgos on the right.\nNozdormu on the left.\nAlexstrasza on the far left.\nYou can get a movement buff prior to event start by moving between the platforms, which helps to reach Alexstrasza in time. Make sure the aspect is properly assaulted to get credit.",
+							groups = {
 								crit(18658, {	-- Alexstrasza Assaulted First
-									["provider"] = { "n", 56099 },	-- Alexstrasza
+									provider = { "n", 56099 },	-- Alexstrasza
 								}),
 								crit(18659, {	-- Kalecgos Assaulted First
-									["provider"] = { "n", 56101 },	-- Kalecgos
+									provider = { "n", 56101 },	-- Kalecgos
 								}),
 								crit(18660, {	-- Nozdormu Assaulted First
-									["provider"] = { "n", 56102 },	-- Nozdormu
+									provider = { "n", 56102 },	-- Nozdormu
 								}),
 								crit(18661, {	-- Ysera Assaulted First
-									["provider"] = { "n", 56100 },	-- Ysera
+									provider = { "n", 56100 },	-- Ysera
 								}),
 							},
 						}),
@@ -585,24 +585,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(77067),	-- Blazing Drake (MOUNT!)
 						i(78352),	-- Fragment of Deathwing's Jaw
 						i(152981, {	-- Unstable Tendril (PET!)
-							["timeline"] = { ADDED_7_3_0 },
+							timeline = { ADDED_7_3_0 },
 						}),
 						i(122198, {	-- Music Roll: The Shattering [Confirmed in #errors]
-							["timeline"] = { ADDED_6_1_0 },
+							timeline = { ADDED_6_1_0 },
 						}),
 						-- #if BEFORE 9.1.5
 						currency(615, {	-- Essence of Corrupted Deathwing
-							["description"] = "Used to buy random epic uncut gems contained in Elementium-Coated Geode from vendor Dasnurimi in Wyrmrest Temple.",
+							description = "Used to buy random epic uncut gems contained in Elementium-Coated Geode from vendor Dasnurimi in Wyrmrest Temple.",
 						}),
 						-- #endif
 					})),
 				},
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
-				["ignoreBonus"] = true,
-				["groups"] = {
+				ignoreBonus = true,
+				groups = {
 					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
+						crs = {
 							55265,	-- Morchok
 							55308,	-- Warlord Zon'ozz
 							55312,	-- Yor'sahj the Unsleeping
@@ -610,7 +610,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							55294,	-- Ultraxion
 							56427,	-- Warmaster Blackthorn
 						},
-						["groups"] = {
+						groups = {
 							i(77230),	-- Breathstealer Band
 							i(77232),	-- Hardheart Ring
 							i(77228),	-- Infinite Loop
@@ -655,7 +655,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(77265),	-- Pillarfoot Greaves
 						-- #if BEFORE MOP
 						i(77213, {	-- Razor Saronite Chip
-							["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+							timeline = { ADDED_4_3_0, REMOVED_5_0_4 },
 						}),
 						-- #endif
 					})),
@@ -752,10 +752,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
-				["ignoreBonus"] = true,
-				["groups"] = {
+				ignoreBonus = true,
+				groups = {
 					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
+						crs = {
 							55265,	-- Morchok
 							55308,	-- Warlord Zon'ozz
 							55312,	-- Yor'sahj the Unsleeping
@@ -763,7 +763,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							55294,	-- Ultraxion
 							56427,	-- Warmaster Blackthorn
 						},
-						["groups"] = {
+						groups = {
 							i(78492),	-- Breathstealer Band
 							i(78493),	-- Hardheart Ring
 							i(78490),	-- Infinite Loop
@@ -777,7 +777,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					n(ZONE_DROPS, {
-						["groups"] = {
+						groups = {
 							i(78886),	-- Belt of Ghostly Graces
 							i(78885),	-- Dragoncarver Belt
 							i(77938),	-- Dragonfire Orb
@@ -807,7 +807,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(78361),	-- Pillarfoot Greaves
 						-- #if BEFORE MOP
 						i(78369, {	-- Razor Saronite Chip
-							["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+							timeline = { ADDED_4_3_0, REMOVED_5_0_4 },
 						}),
 						-- #endif
 					})),
@@ -916,14 +916,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 			n(VENDORS, {
-				n(188112,  bubbleDownSelf({["timeline"] = { ADDED_9_2_5 }}, {	-- Motion Sick Peon <Junior Accessibility Advocate>
+				n(188112,  bubbleDownSelf({timeline = { ADDED_9_2_5 }}, {	-- Motion Sick Peon <Junior Accessibility Advocate>
 					i(191734),	-- Motion Sick Peon's Magical Elixir
 				})),
 			}),
 			-- Misc descriptions
 			n(53879, {	-- Spine of Deathwing
-				["sharedDescription"] = "For the encounter Spine of Deathwing:\n\nKill the Corruption tentacles on Deathwing's back and stay in its place to be secured by Grasping Tendrils during Deathwing's rolls. The objective is to allow Hideous Amalgamations to consume Corrupted Blood, and kill them when facing the forward armour plating on Deathwing's back. Then kill the revealed Burning Tendon, move forward and repeat the process.",
-				["groups"] = {
+				sharedDescription = "For the encounter Spine of Deathwing:\n\nKill the Corruption tentacles on Deathwing's back and stay in its place to be secured by Grasping Tendrils during Deathwing's rolls. The objective is to allow Hideous Amalgamations to consume Corrupted Blood, and kill them when facing the forward armour plating on Deathwing's back. Then kill the revealed Burning Tendon, move forward and repeat the process.",
+				groups = {
 					n(55891),	-- Ka'anu Reevs
 					n(55870),	-- Sky Captain Swayze
 				},

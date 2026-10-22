@@ -2,15 +2,15 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_ISKAARA_TUSKARR, {
-		q(70893, bubbleDownSelf({ ["minReputation"] = { FACTION_ISKAARA_TUSKARR, 3 } }, {	-- Community Feast
-			["provider"] = { "n", 196620 },	-- Pleeqi
-			["coord"] = { 13.5, 48.5, THE_AZURE_SPAN },
-			["isWeekly"] = true,
-			["groups"] = {
+		q(70893, bubbleDownSelf({ minReputation = { FACTION_ISKAARA_TUSKARR, 3 } }, {	-- Community Feast
+			provider = { "n", 196620 },	-- Pleeqi
+			coord = { 13.5, 48.5, THE_AZURE_SPAN },
+			isWeekly = true,
+			groups = {
 				i(200095, {	-- Supply-Laden Soup Pot
-					["sym"] = {
+					sym = {
 						{"select", "mapID",
 							DRAGON_ISLES,
 							THE_WAKING_SHORES,
@@ -23,10 +23,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						{"pop"},
 						SYM.SUB.INVTYPE_ALL_SLOTS,
 					},
-					["groups"] = {
+					groups = {
 						i(200652),	-- Alchemical Flavor Pocket
 						i(215362, {	-- Cache of Storms
-							["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+							timeline = { ADDED_10_2_6_SEASON_FOUR },
 						}),
 						i(198131),	-- Recipe: Gral's Devotion (RECIPE!)
 						i(198129),	-- Recipe: Gral's Reverence (RECIPE!)
@@ -40,10 +40,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				n(RARES, {
 					n(197557, {	-- Bisquius <The Feast Beast>
-						["coord"] = { 13.6, 48.6, THE_AZURE_SPAN },
-						["questID"] = 74097,
-						["isDaily"] = true,
-						["groups"] = {
+						coord = { 13.6, 48.6, THE_AZURE_SPAN },
+						questID = 74097,
+						isDaily = true,
+						groups = {
 							ach(16444, {	-- Leftovers' Revenge
 								i(200882),	-- Big Kinook's Spare Ladle
 							}),
@@ -98,7 +98,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	header(HEADERS.Faction, FACTION_ISKAARA_TUSKARR, {
 		header(HEADERS.Quest, 70893, {	-- Community Feast
 			q(70925),	-- triggers repeatedly during 'Community Feast' (70925) to show in objective pane

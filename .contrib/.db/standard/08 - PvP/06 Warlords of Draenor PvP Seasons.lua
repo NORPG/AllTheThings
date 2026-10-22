@@ -10,123 +10,123 @@ root(ROOTS.PVP, {
 	-- 10000 Items.
 	pvp(expansion(EXPANSION.WOD, {
 		n(SEASON_PRIMAL, bubbleDownSelf({
-			["timeline"] = { ADDED_6_0_3_LAUNCH },
+			timeline = { ADDED_6_0_3_LAUNCH },
 		}, {
 			un(REMOVED_FROM_GAME, i(111600)),	-- Bronze Strongbox
 			un(REMOVED_FROM_GAME, i(111599)),	-- Silver Strongbox
 			un(REMOVED_FROM_GAME, i(111598)),	-- Gold Strongbox
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_6_0_3, REMOVED_6_2_0 }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_6_0_3, REMOVED_6_2_0 }, }, {
 				ach(9242),	-- Challenger: Warlords of Draenor Season 1
 				ach(9996, {	-- Defender of the Alliance: Warlords of Draenor Season 1
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						title(310, {	-- <Name> Defender of the Alliance
-							["races"] = ALLIANCE_ONLY,
+							races = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(10001, {	-- Defender of the Horde: Warlords of Draenor Season 1
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						title(313, {	-- <Name> Defender of the Horde
-							["races"] = HORDE_ONLY,
+							races = HORDE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(9240, {	-- Duelist: Warlords of Draenor Season 1
 					elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-						["timeline"] = { ADDED_7_3_2 },
+						timeline = { ADDED_7_3_2 },
 					})),
 				}),
 				ach(9239, {	-- Gladiator: Warlords of Draenor Season 1
 					i(128277),	-- Primal Gladiator's Felblood Gronnling
 				}),
 				ach(9997, {	-- Guardian of the Alliance: Warlords of Draenor Season 1
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						title(309, {	-- <Name> Guardian of the Alliance
-							["races"] = ALLIANCE_ONLY,
+							races = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(10000, {	-- Guardian of the Horde: Warlords of Draenor Season 1
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						title(312, {	-- <Name> Guardian of the Horde
-							["races"] = HORDE_ONLY,
+							races = HORDE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(9230, {	-- Hero of the Alliance: Primal
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["timeline"] = { ADDED_7_3_2 },
+							timeline = { ADDED_7_3_2 },
 						})),
 					},
 				}),
 				ach(9231, {	-- Hero of the Horde: Primal
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["timeline"] = { ADDED_7_3_2 },
+							timeline = { ADDED_7_3_2 },
 						})),
 					},
 				}),
 				ach(9238, {	-- Primal Combatant (Alliance) Warlords of Draenor Season 1
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(9236, {	-- Primal Combatant (Horde) Warlords of Draenor Season 1
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 				ach(9232, {	-- Primal Gladiator: Warlords of Draenor Season 1
 					title(308),	-- Primal Gladiator <Name>
 				}),
 				ach(9229, {	-- Primal Gladiator's Felblood Gronnling
-					["provider"] = { "i", 128277 },	-- Primal Gladiator's Felblood Gronnling
-					["filterID"] = MOUNTS,
+					provider = { "i", 128277 },	-- Primal Gladiator's Felblood Gronnling
+					filterID = MOUNTS,
 				}),
 				ach(9241),	-- Rival: Warlords of Draenor Season 1
 				ach(9995, {	-- Soldier of the Alliance: Warlords of Draenor Season 1
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						title(311, {	-- <Name> Soldier of the Alliance
-							["races"] = ALLIANCE_ONLY,
+							races = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(9998, {	-- Soldier of the Horde: Warlords of Draenor Season 1
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						title(314, {	-- <Name> Soldier of the Horde
-							["races"] = HORDE_ONLY,
+							races = HORDE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
-				ach(11629, {["timeline"] = {ADDED_7_2_0}}),	-- Untamed Beauty (PvP Season 16)
+				ach(11629, {timeline = {ADDED_7_2_0}}),	-- Untamed Beauty (PvP Season 16)
 			})),
 			n(PVP_ASPIRANT, {
 				n(FACTION_HEADER_ALLIANCE, {
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						cl(DEATHKNIGHT, {
 							un(REMOVED_FROM_GAME, i(115197)),	-- Primal Aspirant's Dreadplate Chestpiece (A)
 							un(REMOVED_FROM_GAME, i(115198)),	-- Primal Aspirant's Dreadplate Gauntlets (A)
@@ -246,8 +246,8 @@ root(ROOTS.PVP, {
 					},
 				}),
 				n(FACTION_HEADER_HORDE, {
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						cl(DEATHKNIGHT, {
 							un(REMOVED_FROM_GAME, i(119974)),	-- Primal Aspirant's Dreadplate Chestpiece (H)
 							un(REMOVED_FROM_GAME, i(119975)),	-- Primal Aspirant's Dreadplate Gauntlets (H)
@@ -369,14 +369,14 @@ root(ROOTS.PVP, {
 			}),
 			n(PVP_COMBATANT, {
 				n(FACTION_HEADER_ALLIANCE, {
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						n(86175, {	-- Bregg Coppercast <Primal Combatant>
-							["coord"] = { 56.2, 20.0, STORMSHIELD },
-							["groups"] = {
+							coord = { 56.2, 20.0, STORMSHIELD },
+							groups = {
 								n(WEAPONS, {
 									moh(80, iensemble(138625, {	-- Arsenal: Primal Combatant's Weapons (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(115083)),	-- Primal Combatant's Barrier (A)
 									moh(5, i(120066)),	-- Primal Combatant's Baton of Light (A)
@@ -408,7 +408,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DEATHKNIGHT, {
 									moh(12, iensemble(138613, {	-- Ensemble: Primal Combatant's Dreadplate Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(115049)),	-- Primal Combatant's Dreadplate Chestpiece (A)
 									moh(2, i(115050)),	-- Primal Combatant's Dreadplate Gauntlets (A)
@@ -418,7 +418,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DRUID, {
 									moh(12, iensemble(138617, {	-- Ensemble: Primal Combatant's Dragonhide Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(115054)),	-- Primal Combatant's Dragonhide Gloves (A)
 									moh(3, i(115055)),	-- Primal Combatant's Dragonhide Helm (A)
@@ -428,7 +428,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(HUNTER, {
 									moh(12, iensemble(138579, {	-- Ensemble: Primal Combatant's Chain Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(115059)),	-- Primal Combatant's Chain Armor (A)
 									moh(2, i(115060)),	-- Primal Combatant's Chain Gauntlets (A)
@@ -438,7 +438,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MAGE, {
 									moh(12, iensemble(138581, {	-- Ensemble: Primal Combatant's Silk Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(115094)),	-- Primal Combatant's Silk Amice (A)
 									moh(3, i(115091)),	-- Primal Combatant's Silk Cowl (A)
@@ -448,7 +448,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MONK, {
 									moh(12, iensemble(138619, {	-- Ensemble: Primal Combatant's Ironskin Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(115101)),	-- Primal Combatant's Ironskin Gloves (A)
 									moh(3, i(115102)),	-- Primal Combatant's Ironskin Helm (A)
@@ -458,7 +458,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PALADIN, {
 									moh(12, iensemble(138615, {	-- Ensemble: Primal Combatant's Scaled Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(115106)),	-- Primal Combatant's Scaled Chestpiece (A)
 									moh(2, i(115107)),	-- Primal Combatant's Scaled Gauntlets (A)
@@ -468,7 +468,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PRIEST, {
 									moh(12, iensemble(138583, {	-- Ensemble: Primal Combatant's Satin Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(115117)),	-- Primal Combatant's Satin Gloves (A)
 									moh(3, i(115118)),	-- Primal Combatant's Satin Hood (A)
@@ -478,7 +478,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(ROGUE, {
 									moh(12, iensemble(138621, {	-- Ensemble: Primal Combatant's Leather Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(115123)),	-- Primal Combatant's Leather Gloves (A)
 									moh(3, i(115124)),	-- Primal Combatant's Leather Helm (A)
@@ -488,7 +488,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(SHAMAN, {
 									moh(12, iensemble(138577, {	-- Ensemble: Primal Combatant's Ringmail Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(115127)),	-- Primal Combatant's Ringmail Armor (A)
 									moh(2, i(115128)),	-- Primal Combatant's Ringmail Gauntlets (A)
@@ -498,7 +498,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARLOCK, {
 									moh(12, iensemble(138585, {	-- Ensemble: Primal Combatant's Felweave Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(115165)),	-- Primal Combatant's Felweave Amice (A)
 									moh(3, i(115162)),	-- Primal Combatant's Felweave Cowl (A)
@@ -508,7 +508,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARRIOR, {
 									moh(12, iensemble(138611, {	-- Ensemble: Primal Combatant's Plate Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(115166)),	-- Primal Combatant's Plate Chestpiece (A)
 									moh(2, i(115167)),	-- Primal Combatant's Plate Gauntlets (A)
@@ -630,14 +630,14 @@ root(ROOTS.PVP, {
 					},
 				}),
 				n(FACTION_HEADER_HORDE, {
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						n(87774, {	-- Stone Guard Brokefist <Primal Combatant>
-							["coord"] = { 48.3, 57.5, WARSPEAR },
-							["groups"] = {
+							coord = { 48.3, 57.5, WARSPEAR },
+							groups = {
 								n(WEAPONS, {
 									moh(80, iensemble(138626, {	-- Arsenal: Primal Combatant's Weapons (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(119866)),	-- Primal Combatant's Barrier (H)
 									moh(5, i(115067)),	-- Primal Combatant's Baton of Light (H)
@@ -871,14 +871,14 @@ root(ROOTS.PVP, {
 			}),
 			n(PVP_GLADIATOR, {
 				n(FACTION_HEADER_ALLIANCE, {
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						n(86176, {	-- Ingrid Blackingot <Primal Gladiator>
-							["coord"] = { 55.0, 19.4, STORMSHIELD },
-							["groups"] = {
+							coord = { 55.0, 19.4, STORMSHIELD },
+							groups = {
 								n(WEAPONS, {
 									moh(80, iensemble(138631, {	-- Arsenal: Primal Gladiator's Weapons
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(5, i(115594)),	-- Primal Gladiator's Cleaver
 									moh(5, i(115595)),	-- Primal Gladiator's Shanker
@@ -910,7 +910,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DEATHKNIGHT, {
 									moh(12, iensemble(138557, {	-- Ensemble: Primal Gladiator's Dreadplate Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(115629)),	-- Primal Gladiator's Dreadplate Chestpiece
 									moh(2, i(115630)),	-- Primal Gladiator's Dreadplate Gauntlets
@@ -920,7 +920,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DRUID, {
 									moh(12, iensemble(138565, {	-- Ensemble: Primal Gladiator's Dragonhide Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(115634)),	-- Primal Gladiator's Dragonhide Gloves (A)
 									moh(3, i(115635)),	-- Primal Gladiator's Dragonhide Helm (A)
@@ -930,7 +930,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(HUNTER, {
 									moh(12, iensemble(138563, {	-- Ensemble: Primal Gladiator's Chain Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(115639)),	-- Primal Gladiator's Chain Armor
 									moh(2, i(115640)),	-- Primal Gladiator's Chain Gauntlets
@@ -940,7 +940,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MAGE, {
 									moh(12, iensemble(138571, {	-- Ensemble: Primal Gladiator's Silk Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(115677)),	-- Primal Gladiator's Silk Handguards
 									moh(3, i(115678)),	-- Primal Gladiator's Silk Cowl
@@ -950,7 +950,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MONK, {
 									moh(12, iensemble(138567, {	-- Ensemble: Primal Gladiator's Ironskin Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(115691)),	-- Primal Gladiator's Ironskin Gloves
 									moh(3, i(115692)),	-- Primal Gladiator's Ironskin Helm
@@ -960,7 +960,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PALADIN, {
 									moh(12, iensemble(138559, {	-- Ensemble: Primal Gladiator's Scaled Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(115696)),	-- Primal Gladiator's Scaled Chestpiece
 									moh(2, i(115697)),	-- Primal Gladiator's Scaled Gauntlets
@@ -970,7 +970,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PRIEST, {
 									moh(12, iensemble(138573, {	-- Ensemble: Primal Gladiator's Satin Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(115710)),	-- Primal Gladiator's Satin Gloves
 									moh(3, i(115711)),	-- Primal Gladiator's Satin Hood
@@ -980,7 +980,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(ROGUE, {
 									moh(12, iensemble(138569, {	-- Ensemble: Primal Gladiator's Leather Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(115715)),	-- Primal Gladiator's Leather Tunic
 									moh(2, i(115716)),	-- Primal Gladiator's Leather Gloves
@@ -990,7 +990,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(SHAMAN, {
 									moh(12, iensemble(138561, {	-- Ensemble: Primal Gladiator's Ringmail Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(115720)),	-- Primal Gladiator's Ringmail Armor
 									moh(2, i(115721)),	-- Primal Gladiator's Ringmail Gauntlets
@@ -1000,7 +1000,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARLOCK, {
 									moh(12, iensemble(138575, {	-- Ensemble: Primal Gladiator's Felweave Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(115761)),	-- Primal Gladiator's Felweave Handguards
 									moh(3, i(115762)),	-- Primal Gladiator's Felweave Cowl
@@ -1010,7 +1010,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARRIOR, {
 									moh(12, iensemble(138555, {	-- Ensemble: Primal Gladiator's Plate Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(115766)),	-- Primal Gladiator's Plate Chestpiece
 									moh(2, i(115767)),	-- Primal Gladiator's Plate Gauntlets
@@ -1167,14 +1167,14 @@ root(ROOTS.PVP, {
 					},
 				}),
 				n(FACTION_HEADER_HORDE, {
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						n(88569, {	-- Blood Guard Axelash <Primal Gladiator>
-							["coord"] = { 48.5, 57.6, WARSPEAR },
-							["groups"] = {
+							coord = { 48.5, 57.6, WARSPEAR },
+							groups = {
 								n(WEAPONS, {
 									moh(80, iensemble(138632, {	-- Arsenal: Primal Gladiator's Weapons
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(5, i(111067)),	-- Primal Gladiator's Cleaver
 									moh(5, i(111068)),	-- Primal Gladiator's Shanker
@@ -1206,7 +1206,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DEATHKNIGHT, {
 									moh(12, iensemble(138558, {	-- Ensemble: Primal Gladiator's Dreadplate Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(111102)),	-- Primal Gladiator's Dreadplate Chestpiece
 									moh(2, i(111103)),	-- Primal Gladiator's Dreadplate Gauntlets
@@ -1216,7 +1216,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DRUID, {
 									moh(12, iensemble(138566, {	-- Ensemble: Primal Gladiator's Dragonhide Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(111107)),	-- Primal Gladiator's Dragonhide Gloves
 									moh(3, i(111108)),	-- Primal Gladiator's Dragonhide Helm
@@ -1226,7 +1226,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(HUNTER, {
 									moh(12, iensemble(138564, {	-- Ensemble: Primal Gladiator's Chain Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(111112)),	-- Primal Gladiator's Chain Armor
 									moh(2, i(111113)),	-- Primal Gladiator's Chain Gauntlets
@@ -1236,7 +1236,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MAGE, {
 									moh(12, iensemble(138572, {	-- Ensemble: Primal Gladiator's Silk Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(111150)),	-- Primal Gladiator's Silk Handguards
 									moh(3, i(111151)),	-- Primal Gladiator's Silk Cowl
@@ -1246,7 +1246,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MONK, {
 									moh(12, iensemble(138568, {	-- Ensemble: Primal Gladiator's Ironskin Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(111164)),	-- Primal Gladiator's Ironskin Gloves
 									moh(3, i(111165)),	-- Primal Gladiator's Ironskin Helm
@@ -1256,7 +1256,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PALADIN, {
 									moh(12, iensemble(138560, {	-- Ensemble: Primal Gladiator's Scaled Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(111169)),	-- Primal Gladiator's Scaled Chestpiece
 									moh(2, i(111170)),	-- Primal Gladiator's Scaled Gauntlets
@@ -1266,7 +1266,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PRIEST, {
 									moh(12, iensemble(138574, {	-- Ensemble: Primal Gladiator's Satin Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(111183)),	-- Primal Gladiator's Satin Gloves
 									moh(3, i(111184)),	-- Primal Gladiator's Satin Hood
@@ -1276,7 +1276,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(ROGUE, {
 									moh(12, iensemble(138570, {	-- Ensemble: Primal Gladiator's Leather Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(111188)),	-- Primal Gladiator's Leather Tunic
 									moh(2, i(111189)),	-- Primal Gladiator's Leather Gloves
@@ -1286,7 +1286,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(SHAMAN, {
 									moh(12, iensemble(138562, {	-- Ensemble: Primal Gladiator's Ringmail Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(111193)),	-- Primal Gladiator's Ringmail Armor
 									moh(2, i(111194)),	-- Primal Gladiator's Ringmail Gauntlets
@@ -1296,7 +1296,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARLOCK, {
 									moh(12, iensemble(138576, {	-- Ensemble: Primal Gladiator's Felweave Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(111234)),	-- Primal Gladiator's Felweave Handguards
 									moh(3, i(111235)),	-- Primal Gladiator's Felweave Cowl
@@ -1306,7 +1306,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARRIOR, {
 									moh(12, iensemble(138556, {	-- Ensemble: Primal Gladiator's Plate Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(111239)),	-- Primal Gladiator's Plate Chestpiece
 									moh(2, i(111240)),	-- Primal Gladiator's Plate Gauntlets
@@ -1647,123 +1647,123 @@ root(ROOTS.PVP, {
 			}),
 		})),
 		n(SEASON_WILD, bubbleDownSelf({
-			["timeline"] = { ADDED_6_2_0 },
+			timeline = { ADDED_6_2_0 },
 		}, {
 			un(REMOVED_FROM_GAME, i(120356)),	-- Bronze Strongbox
 			un(REMOVED_FROM_GAME, i(120355)),	-- Silver Strongbox
 			un(REMOVED_FROM_GAME, i(120354)),	-- Gold Strongbox
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_6_2_0, REMOVED_6_2_2 }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_6_2_0, REMOVED_6_2_2 }, }, {
 				ach(10101),	-- Challenger: Warlords of Draenor Season 2
 				ach(10106, {	-- Defender of the Alliance: Warlords of Draenor Season 2
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						title(310, {	-- <Name> Defender of the Alliance
-							["races"] = ALLIANCE_ONLY,
+							races = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(10107, {	-- Defender of the Horde: Warlords of Draenor Season 2
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						title(313, {	-- <Name> Defender of the Horde
-							["races"] = HORDE_ONLY,
+							races = HORDE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(10099, {	-- Duelist: Warlords of Draenor Season 2
 					elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-						["timeline"] = { ADDED_7_3_2 },
+						timeline = { ADDED_7_3_2 },
 					})),
 				}),
 				ach(10098, {	-- Gladiator: Warlords of Draenor Season 2
 					i(128281),	-- Wild Gladiator's Felblood Gronnling
 				}),
 				ach(10108, {	-- Guardian of the Alliance: Warlords of Draenor Season 2
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						title(309, {	-- <Name> Guardian of the Alliance
-							["races"] = ALLIANCE_ONLY,
+							races = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(10109, {	-- Guardian of the Horde: Warlords of Draenor Season 2
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						title(312, {	-- <Name> Guardian of the Horde
-							["races"] = HORDE_ONLY,
+							races = HORDE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(10102, {	-- Hero of the Alliance: Wild
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["timeline"] = { ADDED_7_3_2 },
+							timeline = { ADDED_7_3_2 },
 						})),
 					},
 				}),
 				ach(10103, {	-- Hero of the Horde: Wild
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["timeline"] = { ADDED_7_3_2 },
+							timeline = { ADDED_7_3_2 },
 						})),
 					},
 				}),
 				ach(10100),	-- Rival: Warlords of Draenor Season 2
 				ach(10104, {	-- Soldier of the Alliance: Warlords of Draenor Season 2
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						title(311, {	-- <Name> Soldier of the Alliance
-							["races"] = ALLIANCE_ONLY,
+							races = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(10105, {	-- Soldier of the Horde: Warlords of Draenor Season 2
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						title(314, {	-- <Name> Soldier of the Horde
-							["races"] = HORDE_ONLY,
+							races = HORDE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(10093, {	-- Wild Combatant (Alliance) Warlords of Draenor Season 2
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(10092, {	-- Wild Combatant (Horde) Warlords of Draenor Season 2
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 				ach(10096, {	-- Wild Gladiator: Warlords of Draenor Season 2
 					title(315),	-- Wild Gladiator <Name>
 				}),
 				ach(10137, {	-- Wild Gladiator's Felblood Gronnling
-					["provider"] = { "i", 128281 },	-- Wild Gladiator's Felblood Gronnling
-					["filterID"] = MOUNTS,
+					provider = { "i", 128281 },	-- Wild Gladiator's Felblood Gronnling
+					filterID = MOUNTS,
 				}),
-				ach(11721, {["timeline"] = {ADDED_7_2_0}}),	-- Wild Style (PvP Season 17)
+				ach(11721, {timeline = {ADDED_7_2_0}}),	-- Wild Style (PvP Season 17)
 			})),
 			n(PVP_ASPIRANT, {
 				n(FACTION_HEADER_ALLIANCE, {
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						cl(DEATHKNIGHT, {
 							un(REMOVED_FROM_GAME, i(125070)),	-- Wild Aspirant's Dreadplate Chestpiece (A)
 							un(REMOVED_FROM_GAME, i(125071)),	-- Wild Aspirant's Dreadplate Gauntlets (A)
@@ -1895,8 +1895,8 @@ root(ROOTS.PVP, {
 					},
 				}),
 				n(FACTION_HEADER_HORDE, {
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						cl(DEATHKNIGHT, {
 							un(REMOVED_FROM_GAME, i(125547)),	-- Wild Aspirant's Dreadplate Chestpiece (H)
 							un(REMOVED_FROM_GAME, i(125548)),	-- Wild Aspirant's Dreadplate Gauntlets (H)
@@ -2030,14 +2030,14 @@ root(ROOTS.PVP, {
 			}),
 			n(PVP_COMBATANT, {
 				n(FACTION_HEADER_ALLIANCE, {
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						n(93906, {	-- Slugg Spinbolt <Wild Combatant>
-							["coord"] = { 54.6, 17.6, STORMSHIELD },
-							["groups"] = {
+							coord = { 54.6, 17.6, STORMSHIELD },
+							groups = {
 								n(WEAPONS, {
 									moh(80, iensemble(138630, {	-- Arsenal: Wild Combatant's Weapons (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(124951)),	-- Wild Combatant's Barrier (A)
 									moh(5, i(124931)),	-- Wild Combatant's Baton of Light (A)
@@ -2072,7 +2072,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DEATHKNIGHT, {
 									moh(12, iensemble(138601, {	-- Ensemble: Wild Combatant's Dreadplate Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(124913)),	-- Wild Combatant's Dreadplate Chestpiece (A)
 									moh(2, i(124914)),	-- Wild Combatant's Dreadplate Gauntlets (A)
@@ -2082,7 +2082,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DRUID, {
 									moh(12, iensemble(138605, {	-- Ensemble: Wild Combatant's Dragonhide Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(124918)),	-- Wild Combatant's Dragonhide Gloves (A)
 									moh(3, i(124919)),	-- Wild Combatant's Dragonhide Helm (A)
@@ -2092,7 +2092,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(HUNTER, {
 									moh(12, iensemble(138547, {	-- Ensemble: Wild Combatant's Chain Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(124923)),	-- Wild Combatant's Chain Armor (A)
 									moh(2, i(124924)),	-- Wild Combatant's Chain Gauntlets (A)
@@ -2102,7 +2102,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MAGE, {
 									moh(12, iensemble(138549, {	-- Ensemble: Wild Combatant's Silk Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(124967)),	-- Wild Combatant's Silk Amice (A)
 									moh(3, i(124964)),	-- Wild Combatant's Silk Cowl (A)
@@ -2112,7 +2112,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MONK, {
 									moh(12, iensemble(138607, {	-- Ensemble: Wild Combatant's Ironskin Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(124979)),	-- Wild Combatant's Ironskin Gloves (A)
 									moh(3, i(124980)),	-- Wild Combatant's Ironskin Helm (A)
@@ -2122,7 +2122,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PALADIN, {
 									moh(12, iensemble(138603, {	-- Ensemble: Wild Combatant's Scaled Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(124984)),	-- Wild Combatant's Scaled Chestpiece (A)
 									moh(2, i(124985)),	-- Wild Combatant's Scaled Gauntlets (A)
@@ -2132,7 +2132,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PRIEST, {
 									moh(12, iensemble(138551, {	-- Ensemble: Wild Combatant's Satin Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125000)),	-- Wild Combatant's Satin Gloves (A)
 									moh(3, i(125001)),	-- Wild Combatant's Satin Hood (A)
@@ -2142,7 +2142,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(ROGUE, {
 									moh(12, iensemble(138609, {	-- Ensemble: Wild Combatant's Leather Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125006)),	-- Wild Combatant's Leather Gloves (A)
 									moh(3, i(125007)),	-- Wild Combatant's Leather Helm (A)
@@ -2152,7 +2152,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(SHAMAN, {
 									moh(12, iensemble(138545, {	-- Ensemble: Wild Combatant's Ringmail Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125010)),	-- Wild Combatant's Ringmail Armor (A)
 									moh(2, i(125011)),	-- Wild Combatant's Ringmail Gauntlets (A)
@@ -2162,7 +2162,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARLOCK, {
 									moh(12, iensemble(138553, {	-- Ensemble: Wild Combatant's Felweave Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125057)),	-- Wild Combatant's Felweave Amice (A)
 									moh(3, i(125054)),	-- Wild Combatant's Felweave Cowl (A)
@@ -2172,7 +2172,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARRIOR, {
 									moh(12, iensemble(138599, {	-- Ensemble: Wild Combatant's Plate Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125058)),	-- Wild Combatant's Plate Chestpiece (A)
 									moh(2, i(125059)),	-- Wild Combatant's Plate Gauntlets (A)
@@ -2345,14 +2345,14 @@ root(ROOTS.PVP, {
 					},
 				}),
 				n(FACTION_HEADER_HORDE, {
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						n(93908, {	-- Fobbly Kickfix <Wild Combatant>
-							["coord"] = { 49.1, 56.4, WARSPEAR },
-							["groups"] = {
+							coord = { 49.1, 56.4, WARSPEAR },
+							groups = {
 								n(WEAPONS, {
 									moh(80, iensemble(138629, {	-- Arsenal: Wild Combatant's Weapons (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125428)),	-- Wild Combatant's Barrier (H)
 									moh(5, i(125408)),	-- Wild Combatant's Baton of Light (H)
@@ -2387,7 +2387,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DEATHKNIGHT, {
 									moh(12, iensemble(138602, {	-- Ensemble: Wild Combatant's Dreadplate Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125390)),	-- Wild Combatant's Dreadplate Chestpiece (H)
 									moh(2, i(125391)),	-- Wild Combatant's Dreadplate Gauntlets (H)
@@ -2397,7 +2397,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DRUID, {
 									moh(12, iensemble(138606, {	-- Ensemble: Wild Combatant's Dragonhide Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125395)),	-- Wild Combatant's Dragonhide Gloves (H)
 									moh(3, i(125396)),	-- Wild Combatant's Dragonhide Helm (H)
@@ -2407,7 +2407,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(HUNTER, {
 									moh(12, iensemble(138548, {	-- Ensemble: Wild Combatant's Chain Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125400)),	-- Wild Combatant's Chain Armor (H)
 									moh(2, i(125401)),	-- Wild Combatant's Chain Gauntlets (H)
@@ -2417,7 +2417,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MAGE, {
 									moh(12, iensemble(138550, {	-- Ensemble: Wild Combatant's Silk Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125444)),	-- Wild Combatant's Silk Amice (H)
 									moh(3, i(125441)),	-- Wild Combatant's Silk Cowl (H)
@@ -2427,7 +2427,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MONK, {
 									moh(12, iensemble(138608, {	-- Ensemble: Wild Combatant's Ironskin Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125456)),	-- Wild Combatant's Ironskin Gloves (H)
 									moh(3, i(125457)),	-- Wild Combatant's Ironskin Helm (H)
@@ -2437,7 +2437,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PALADIN, {
 									moh(12, iensemble(138604, {	-- Ensemble: Wild Combatant's Scaled Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125461)),	-- Wild Combatant's Scaled Chestpiece (H)
 									moh(2, i(125462)),	-- Wild Combatant's Scaled Gauntlets (H)
@@ -2447,7 +2447,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PRIEST, {
 									moh(12, iensemble(138552, {	-- Ensemble: Wild Combatant's Satin Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125477)),	-- Wild Combatant's Satin Gloves (H)
 									moh(3, i(125478)),	-- Wild Combatant's Satin Hood (H)
@@ -2457,7 +2457,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(ROGUE, {
 									moh(12, iensemble(138610, {	-- Ensemble: Wild Combatant's Leather Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125483)),	-- Wild Combatant's Leather Gloves (H)
 									moh(3, i(125484)),	-- Wild Combatant's Leather Helm (H)
@@ -2467,7 +2467,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(SHAMAN, {
 									moh(12, iensemble(138546, {	-- Ensemble: Wild Combatant's Ringmail Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125487)),	-- Wild Combatant's Ringmail Armor (H)
 									moh(2, i(125488)),	-- Wild Combatant's Ringmail Gauntlets (H)
@@ -2477,7 +2477,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARLOCK, {
 									moh(12, iensemble(138554, {	-- Ensemble: Wild Combatant's Felweave Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125534)),	-- Wild Combatant's Felweave Amice (H)
 									moh(3, i(125531)),	-- Wild Combatant's Felweave Cowl (H)
@@ -2487,7 +2487,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARRIOR, {
 									moh(12, iensemble(138600, {	-- Ensemble: Wild Combatant's Plate Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125535)),	-- Wild Combatant's Plate Chestpiece (H)
 									moh(2, i(125536)),	-- Wild Combatant's Plate Gauntlets (H)
@@ -2662,15 +2662,15 @@ root(ROOTS.PVP, {
 			}),
 			n(PVP_GLADIATOR, {
 				n(FACTION_HEADER_ALLIANCE, {
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						n(93907, {	-- Amelia Clarke <Wild Gladiator>
-							["coord"] = { 54.8, 17.0, STORMSHIELD },
-							["races"] = ALLIANCE_ONLY,
-							["groups"] = {
+							coord = { 54.8, 17.0, STORMSHIELD },
+							races = ALLIANCE_ONLY,
+							groups = {
 								n(WEAPONS, {
 									moh(80, iensemble(138633, {	-- Arsenal: Wild Gladiator's Weapons (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(5, i(124675)),	-- Wild Gladiator's Cleaver
 									moh(5, i(124676)),	-- Wild Gladiator's Shanker
@@ -2705,7 +2705,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DEATHKNIGHT, {
 									moh(12, iensemble(138515, {	-- Ensemble: Wild Gladiator's Dreadplate Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(124711)),	-- Wild Gladiator's Dreadplate Chestpiece (A)
 									moh(2, i(124712)),	-- Wild Gladiator's Dreadplate Gauntlets (A)
@@ -2715,7 +2715,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DRUID, {
 									moh(12, iensemble(138523, {	-- Ensemble: Wild Gladiator's Dragonhide Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(124716)),	-- Wild Gladiator's Dragonhide Gloves (A)
 									moh(3, i(124717)),	-- Wild Gladiator's Dragonhide Helm (A)
@@ -2725,7 +2725,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(HUNTER, {
 									moh(12, iensemble(138521, {	-- Ensemble: Wild Gladiator's Chain Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(124721)),	-- Wild Gladiator's Chain Armor (A)
 									moh(2, i(124722)),	-- Wild Gladiator's Chain Gauntlets (A)
@@ -2735,7 +2735,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MAGE, {
 									moh(12, iensemble(138529, {	-- Ensemble: Wild Gladiator's Silk Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(124773)),	-- Wild Gladiator's Silk Amice (A)
 									moh(3, i(124770)),	-- Wild Gladiator's Silk Cowl (A)
@@ -2745,7 +2745,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MONK, {
 									moh(12, iensemble(138525, {	-- Ensemble: Wild Gladiator's Ironskin Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(124793)),	-- Wild Gladiator's Ironskin Gloves (A)
 									moh(3, i(124794)),	-- Wild Gladiator's Ironskin Helm (A)
@@ -2755,7 +2755,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PALADIN, {
 									moh(12, iensemble(138517, {	-- Ensemble: Wild Gladiator's Scaled Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(124798)),	-- Wild Gladiator's Scaled Chestpiece (A)
 									moh(2, i(124799)),	-- Wild Gladiator's Scaled Gauntlets (A)
@@ -2765,7 +2765,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PRIEST, {
 									moh(12, iensemble(138531, {	-- Ensemble: Wild Gladiator's Satin Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(124822)),	-- Wild Gladiator's Satin Gloves (A)
 									moh(3, i(124823)),	-- Wild Gladiator's Satin Hood (A)
@@ -2775,7 +2775,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(ROGUE, {
 									moh(12, iensemble(138527, {	-- Ensemble: Wild Gladiator's Leather Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(124828)),	-- Wild Gladiator's Leather Gloves (A)
 									moh(3, i(124829)),	-- Wild Gladiator's Leather Helm (A)
@@ -2785,7 +2785,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(SHAMAN, {
 									moh(12, iensemble(138519, {	-- Ensemble: Wild Gladiator's Ringmail Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(124832)),	-- Wild Gladiator's Ringmail Armor (A)
 									moh(2, i(124833)),	-- Wild Gladiator's Ringmail Gauntlets (A)
@@ -2796,7 +2796,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARLOCK, {
 									moh(12, iensemble(138533, {	-- Ensemble: Wild Gladiator's Felweave Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(124879)),	-- Wild Gladiator's Felweave Amice (A)
 									moh(3, i(124876)),	-- Wild Gladiator's Felweave Cowl (A)
@@ -2806,7 +2806,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARRIOR, {
 									moh(12, iensemble(138513, {	-- Ensemble: Wild Gladiator's Plate Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(124880)),	-- Wild Gladiator's Plate Chestpiece (A)
 									moh(2, i(124881)),	-- Wild Gladiator's Plate Gauntlets (A)
@@ -2965,14 +2965,14 @@ root(ROOTS.PVP, {
 					},
 				}),
 				n(FACTION_HEADER_HORDE, {
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						n(93909, {	-- Cladd Dawnstrider <Wild Gladiator>
-							["coord"] = { 49.3, 56.7, WARSPEAR },
-							["groups"] = {
+							coord = { 49.3, 56.7, WARSPEAR },
+							groups = {
 								n(WEAPONS, {
 									moh(80, iensemble(138634, {	-- Arsenal: Wild Gladiator's Weapons (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125228)),	-- Wild Gladiator's Barrier (H)
 									moh(5, i(125208)),	-- Wild Gladiator's Baton of Light (H)
@@ -3007,7 +3007,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DEATHKNIGHT, {
 									moh(12, iensemble(138516, {	-- Ensemble: Wild Gladiator's Dreadplate Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125190)),	-- Wild Gladiator's Dreadplate Chestpiece (H)
 									moh(2, i(125191)),	-- Wild Gladiator's Dreadplate Gauntlets (H)
@@ -3017,7 +3017,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DRUID, {
 									moh(12, iensemble(138524, {	-- Ensemble: Wild Gladiator's Dragonhide Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125195)),	-- Wild Gladiator's Dragonhide Gloves (H)
 									moh(3, i(125196)),	-- Wild Gladiator's Dragonhide Helm (H)
@@ -3027,7 +3027,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(HUNTER, {
 									moh(12, iensemble(138522, {	-- Ensemble: Wild Gladiator's Chain Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125200)),	-- Wild Gladiator's Chain Armor (H)
 									moh(2, i(125201)),	-- Wild Gladiator's Chain Gauntlets (H)
@@ -3037,7 +3037,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MAGE, {
 									moh(12, iensemble(138530, {	-- Ensemble: Wild Gladiator's Silk Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125252)),	-- Wild Gladiator's Silk Amice (H)
 									moh(3, i(125249)),	-- Wild Gladiator's Silk Cowl (H)
@@ -3047,7 +3047,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MONK, {
 									moh(12, iensemble(138526, {	-- Ensemble: Wild Gladiator's Ironskin Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125272)),	-- Wild Gladiator's Ironskin Gloves (H)
 									moh(3, i(125273)),	-- Wild Gladiator's Ironskin Helm (H)
@@ -3057,7 +3057,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PALADIN, {
 									moh(12, iensemble(138518, {	-- Ensemble: Wild Gladiator's Scaled Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125277)),	-- Wild Gladiator's Scaled Chestpiece (H)
 									moh(2, i(125278)),	-- Wild Gladiator's Scaled Gauntlets (H)
@@ -3067,7 +3067,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PRIEST, {
 									moh(12, iensemble(138532, {	-- Ensemble: Wild Gladiator's Satin Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125301)),	-- Wild Gladiator's Satin Gloves (H)
 									moh(3, i(125302)),	-- Wild Gladiator's Satin Hood (H)
@@ -3077,7 +3077,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(ROGUE, {
 									moh(12, iensemble(138528, {	-- Ensemble: Wild Gladiator's Leather Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125307)),	-- Wild Gladiator's Leather Gloves (H)
 									moh(3, i(125308)),	-- Wild Gladiator's Leather Helm (H)
@@ -3087,7 +3087,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(SHAMAN, {
 									moh(12, iensemble(138520, {	-- Ensemble: Wild Gladiator's Ringmail Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125311)),	-- Wild Gladiator's Ringmail Armor (H)
 									moh(2, i(125312)),	-- Wild Gladiator's Ringmail Gauntlets (H)
@@ -3097,7 +3097,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARLOCK, {
 									moh(12, iensemble(138534, {	-- Ensemble: Wild Gladiator's Felweave Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125356)),	-- Wild Gladiator's Felweave Amice (H)
 									moh(3, i(125353)),	-- Wild Gladiator's Felweave Cowl (H)
@@ -3107,7 +3107,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARRIOR, {
 									moh(12, iensemble(138514, {	-- Ensemble: Wild Gladiator's Plate Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125357)),	-- Wild Gladiator's Plate Chestpiece (H)
 									moh(2, i(125358)),	-- Wild Gladiator's Plate Gauntlets (H)
@@ -3454,123 +3454,123 @@ root(ROOTS.PVP, {
 			}),
 		})),
 		n(SEASON_WARMONGERING, bubbleDownSelf({
-			["timeline"] = { ADDED_6_2_2 },
+			timeline = { ADDED_6_2_2 },
 		}, {
 			un(REMOVED_FROM_GAME, i(120356)),	-- Bronze Strongbox
 			un(REMOVED_FROM_GAME, i(120355)),	-- Silver Strongbox
 			un(REMOVED_FROM_GAME, i(120354)),	-- Gold Strongbox
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_6_2_2, REMOVED_7_0_3 }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_6_2_2, REMOVED_7_0_3 }, }, {
 				ach(10113),	-- Challenger: Warlords of Draenor Season 3
 				ach(10118, {	-- Defender of the Alliance: Warlords of Draenor Season 3
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						title(310, {	-- <Name> Defender of the Alliance
-							["races"] = ALLIANCE_ONLY,
+							races = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(10119, {	-- Defender of the Horde: Warlords of Draenor Season 3
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						title(313, {	-- <Name> Defender of the Horde
-							["races"] = HORDE_ONLY,
+							races = HORDE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(10111, {	-- Duelist: Warlords of Draenor Season 3
 					elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-						["timeline"] = { ADDED_7_3_2 },
+						timeline = { ADDED_7_3_2 },
 					})),
 				}),
 				ach(10110, {	-- Gladiator: Warlords of Draenor Season 3
 					i(128282),	-- Warmongering Gladiator's Felblood Gronnling (MOUNT!)
 				}),
 				ach(10116, {	-- Guardian of the Alliance: Warlords of Draenor Season 3
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						title(309, {	-- <Name> Guardian of the Alliance
-							["races"] = ALLIANCE_ONLY,
+							races = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(10117, {	-- Guardian of the Horde: Warlords of Draenor Season 3
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						title(312, {	-- <Name> Guardian of the Horde
-							["races"] = HORDE_ONLY,
+							races = HORDE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(10114, {	-- Hero of the Alliance: Warmongering
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["timeline"] = { ADDED_7_3_2 },
+							timeline = { ADDED_7_3_2 },
 						})),
 					},
 				}),
 				ach(10115, {	-- Hero of the Horde: Warmongering
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["timeline"] = { ADDED_7_3_2 },
+							timeline = { ADDED_7_3_2 },
 						})),
 					},
 				}),
 				ach(10112),	-- Rival: Warlords of Draenor Season 3
 				ach(10120, {	-- Soldier of the Alliance: Warlords of Draenor Season 3
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						title(311, {	-- <Name> Soldier of the Alliance
-							["races"] = ALLIANCE_ONLY,
+							races = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(10121, {	-- Soldier of the Horde: Warlords of Draenor Season 3
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						title(314, {	-- <Name> Soldier of the Horde
-							["races"] = HORDE_ONLY,
+							races = HORDE_ONLY,
 							-- #if AFTER 8.0.1
-							["collectible"] = false,	-- Blizzard....
+							collectible = false,	-- Blizzard....
 							-- #endif
 						}),
 					},
 				}),
 				ach(10095, {	-- Warmongering Combatant (Alliance) Warlords of Draenor Season 3
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(10094, {	-- Warmongering Combatant (Horde) Warlords of Draenor Season 3
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 				ach(10097, {	-- Warmongering Gladiator: Warlords of Draenor Season 3
 					title(316),	-- Warmongering Gladiator <Name>
 				}),
 				ach(10146, {	-- Wild Gladiator's Felblood Gronnling
-					["provider"] = { "i", 128282 },	-- Wild Gladiator's Felblood Gronnling
-					["filterID"] = MOUNTS,
+					provider = { "i", 128282 },	-- Wild Gladiator's Felblood Gronnling
+					filterID = MOUNTS,
 				}),
-				ach(11722, {["timeline"] = {ADDED_7_2_0}}),	-- War-Mog-ering (PvP Season 18)
+				ach(11722, {timeline = {ADDED_7_2_0}}),	-- War-Mog-ering (PvP Season 18)
 			})),
 			n(PVP_ASPIRANT, {
 				n(FACTION_HEADER_ALLIANCE, {
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						cl(DEATHKNIGHT, {
 							i(126184),	-- Warmongering Aspirant's Dreadplate Chestpiece (A)
 							i(126185),	-- Warmongering Aspirant's Dreadplate Gauntlets (A)
@@ -3702,8 +3702,8 @@ root(ROOTS.PVP, {
 					},
 				}),
 				n(FACTION_HEADER_HORDE, {
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						cl(DEATHKNIGHT, {
 							i(126661),	-- Warmongering Aspirant's Dreadplate Chestpiece (H)
 							i(126662),	-- Warmongering Aspirant's Dreadplate Gauntlets (H)
@@ -3837,15 +3837,15 @@ root(ROOTS.PVP, {
 			}),
 			n(PVP_COMBATANT, {
 				n(FACTION_HEADER_ALLIANCE, {
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						n(93915, {	-- Li "Crunchpaw" Tsang <Warmongering Combatant>
-							["races"] = ALLIANCE_ONLY,
-							["coord"] = { 54.8, 18.8, STORMSHIELD },
-							["groups"] = {
+							races = ALLIANCE_ONLY,
+							coord = { 54.8, 18.8, STORMSHIELD },
+							groups = {
 								n(WEAPONS, {
 									moh(80, iensemble(138628, {	-- Arsenal: Warmongering Combatant's Weapons (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126065)),	-- Warmongering Combatant's Barrier (A)
 									moh(5, i(126045)),	-- Warmongering Combatant's Baton of Light (A)
@@ -3880,7 +3880,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DEATHKNIGHT, {
 									moh(12, iensemble(138589, {	-- Ensemble: Warmongering Combatant's Dreadplate Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126027)),	-- Warmongering Combatant's Dreadplate Chestpiece (A)
 									moh(2, i(126028)),	-- Warmongering Combatant's Dreadplate Gauntlets (A)
@@ -3890,7 +3890,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DRUID, {
 									moh(12, iensemble(138593, {	-- Ensemble: Warmongering Combatant's Dragonhide Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126032)),	-- Warmongering Combatant's Dragonhide Gloves (A)
 									moh(3, i(126033)),	-- Warmongering Combatant's Dragonhide Helm (A)
@@ -3900,7 +3900,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(HUNTER, {
 									moh(12, iensemble(138537, {	-- Ensemble: Warmongering Combatant's Chain Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126037)),	-- Warmongering Combatant's Chain Armor (A)
 									moh(2, i(126038)),	-- Warmongering Combatant's Chain Gauntlets (A)
@@ -3910,7 +3910,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MAGE, {
 									moh(12, iensemble(138539, {	-- Ensemble: Warmongering Combatant's Silk Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126081)),	-- Warmongering Combatant's Silk Amice (A)
 									moh(2, i(126078)),	-- Warmongering Combatant's Silk Cowl (A)
@@ -3920,7 +3920,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MONK, {
 									moh(12, iensemble(138595, {	-- Ensemble: Warmongering Combatant's Ironskin Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126093)),	-- Warmongering Combatant's Ironskin Gloves (A)
 									moh(3, i(126094)),	-- Warmongering Combatant's Ironskin Helm (A)
@@ -3930,7 +3930,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PALADIN, {
 									moh(12, iensemble(138591, {	-- Ensemble: Warmongering Combatant's Scaled Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126098)),	-- Warmongering Combatant's Scaled Chestpiece (A)
 									moh(2, i(126099)),	-- Warmongering Combatant's Scaled Gauntlets (A)
@@ -3940,7 +3940,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PRIEST, {
 									moh(12, iensemble(138541, {	-- Ensemble: Warmongering Combatant's Satin Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126114)),	-- Warmongering Combatant's Satin Gloves (A)
 									moh(3, i(126115)),	-- Warmongering Combatant's Satin Hood (A)
@@ -3950,7 +3950,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(ROGUE, {
 									moh(12, iensemble(138597, {	-- Ensemble: Warmongering Combatant's Leather Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126120)),	-- Warmongering Combatant's Leather Gloves (A)
 									moh(3, i(126121)),	-- Warmongering Combatant's Leather Helm (A)
@@ -3960,7 +3960,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(SHAMAN, {
 									moh(12, iensemble(138535, {	-- Ensemble: Warmongering Combatant's Ringmail Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126124)),	-- Warmongering Combatant's Ringmail Armor (A)
 									moh(2, i(126128)),	-- Warmongering Combatant's Ringmail Spaulders (A)
@@ -3970,7 +3970,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARLOCK, {
 									moh(12, iensemble(138543, {	-- Ensemble: Warmongering Combatant's Felweave Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126171)),	-- Warmongering Combatant's Felweave Amice (A)
 									moh(2, i(126168)),	-- Warmongering Combatant's Felweave Cowl (A)
@@ -3980,7 +3980,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARRIOR, {
 									moh(12, iensemble(138587, {	-- Ensemble: Warmongering Combatant's Plate Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126172)),	-- Warmongering Combatant's Plate Chestpiece (A)
 									moh(2, i(126173)),	-- Warmongering Combatant's Plate Gauntlets (A)
@@ -4158,14 +4158,14 @@ root(ROOTS.PVP, {
 					},
 				}),
 				n(FACTION_HEADER_HORDE, {
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						n(93916, {	-- Tae'loxe Soulshrivel <Warmongering Combatant>
-							["coord"] = { 49.2, 57.1, WARSPEAR },
-							["groups"] = {
+							coord = { 49.2, 57.1, WARSPEAR },
+							groups = {
 								n(WEAPONS, {
 									moh(80, iensemble(138627, {	-- Arsenal: Warmongering Combatant's Weapons (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126542)),	-- Warmongering Combatant's Barrier (H)
 									moh(5, i(126522)),	-- Warmongering Combatant's Baton of Light (H)
@@ -4200,7 +4200,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DEATHKNIGHT, {
 									moh(12, iensemble(138590, {	-- Ensemble: Warmongering Combatant's Dreadplate Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126504)),	-- Warmongering Combatant's Dreadplate Chestpiece (H)
 									moh(2, i(126505)),	-- Warmongering Combatant's Dreadplate Gauntlets (H)
@@ -4210,7 +4210,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DRUID, {
 									moh(12, iensemble(138594, {	-- Ensemble: Warmongering Combatant's Dragonhide Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126509)),	-- Warmongering Combatant's Dragonhide Gloves (H)
 									moh(3, i(126510)),	-- Warmongering Combatant's Dragonhide Helm (H)
@@ -4220,7 +4220,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(HUNTER, {
 									moh(12, iensemble(138538, {	-- Ensemble: Warmongering Combatant's Chain Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126514)),	-- Warmongering Combatant's Chain Armor (H)
 									moh(2, i(126515)),	-- Warmongering Combatant's Chain Gauntlets (H)
@@ -4230,7 +4230,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MAGE, {
 									moh(12, iensemble(138540, {	-- Ensemble: Warmongering Combatant's Silk Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126558)),	-- Warmongering Combatant's Silk Amice (H)
 									moh(3, i(126555)),	-- Warmongering Combatant's Silk Cowl (H)
@@ -4240,7 +4240,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MONK, {
 									moh(12, iensemble(138596, {	-- Ensemble: Warmongering Combatant's Ironskin Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126570)),	-- Warmongering Combatant's Ironskin Gloves (H)
 									moh(3, i(126571)),	-- Warmongering Combatant's Ironskin Helm (H)
@@ -4250,7 +4250,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PALADIN, {
 									moh(12, iensemble(138592, {	-- Ensemble: Warmongering Combatant's Scaled Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126575)),	-- Warmongering Combatant's Scaled Chestpiece (H)
 									moh(2, i(126576)),	-- Warmongering Combatant's Scaled Gauntlets (H)
@@ -4260,7 +4260,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PRIEST, {
 									moh(12, iensemble(138542, {	-- Ensemble: Warmongering Combatant's Satin Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126591)),	-- Warmongering Combatant's Satin Gloves (H)
 									moh(3, i(126592)),	-- Warmongering Combatant's Satin Hood (H)
@@ -4270,7 +4270,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(ROGUE, {
 									moh(12, iensemble(138598, {	-- Ensemble: Warmongering Combatant's Leather Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126597)),	-- Warmongering Combatant's Leather Gloves (H)
 									moh(3, i(126598)),	-- Warmongering Combatant's Leather Helm (H)
@@ -4280,7 +4280,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(SHAMAN, {
 									moh(12, iensemble(138536, {	-- Ensemble: Warmongering Combatant's Ringmail Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126601)),	-- Warmongering Combatant's Ringmail Armor (H)
 									moh(2, i(126602)),	-- Warmongering Combatant's Ringmail Gauntlets (H)
@@ -4290,7 +4290,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARLOCK, {
 									moh(12, iensemble(138544, {	-- Ensemble: Warmongering Combatant's Felweave Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126648)),	-- Warmongering Combatant's Felweave Amice (H)
 									moh(3, i(126645)),	-- Warmongering Combatant's Felweave Cowl (H)
@@ -4300,7 +4300,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARRIOR, {
 									moh(12, iensemble(138588, {	-- Ensemble: Warmongering Combatant's Plate Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126649)),	-- Warmongering Combatant's Plate Chestpiece (H)
 									moh(2, i(126650)),	-- Warmongering Combatant's Plate Gauntlets (H)
@@ -4480,21 +4480,21 @@ root(ROOTS.PVP, {
 			}),
 			n(PVP_GLADIATOR, {
 				n(FACTION_HEADER_ALLIANCE, {
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						n(93914, {	-- Holly McTilla <Warmongering Gladiator>
-							["coord"] = { 54.8, 18.8, STORMSHIELD },
-							["races"] = ALLIANCE_ONLY,
-							["groups"] = {
+							coord = { 54.8, 18.8, STORMSHIELD },
+							races = ALLIANCE_ONLY,
+							groups = {
 								moh(100, i(116776, {	-- Pale Thorngrazer (MOUNT!)
-									["cost"] = { { "g", 50000000 } },	-- 5,000g
+									cost = { { "g", 50000000 } },	-- 5,000g
 								})),
 								elitepvp(moh(10, i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-									["timeline"] = { ADDED_6_0_2 },
+									timeline = { ADDED_6_0_2 },
 								}))),
 								n(WEAPONS, {
 									moh(80, iensemble(138635, {	-- Arsenal: Warmongering Gladiator's Weapons (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125863)),	-- Warmongering Gladiator's Barrier (A)
 									moh(5, i(125843)),	-- Warmongering Gladiator's Baton of Light (A)
@@ -4528,7 +4528,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DEATHKNIGHT, {
 									moh(12, iensemble(138493, {	-- Ensemble: Warmongering Gladiator's Dreadplate Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125825)),	-- Warmongering Gladiator's Dreadplate Chestpiece (A)
 									moh(2, i(125826)),	-- Warmongering Gladiator's Dreadplate Gauntlets (A)
@@ -4538,7 +4538,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DRUID, {
 									moh(12, iensemble(138501, {	-- Ensemble: Warmongering Gladiator's Dragonhide Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125830)),	-- Warmongering Gladiator's Dragonhide Gloves (A)
 									moh(3, i(125831)),	-- Warmongering Gladiator's Dragonhide Helm (A)
@@ -4548,7 +4548,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(HUNTER, {
 									moh(12, iensemble(138499, {	-- Ensemble: Warmongering Gladiator's Chain Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125835)),	-- Warmongering Gladiator's Chain Armor (A)
 									moh(2, i(125836)),	-- Warmongering Gladiator's Chain Gauntlets (A)
@@ -4558,7 +4558,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MAGE, {
 									moh(12, iensemble(138507, {	-- Ensemble: Warmongering Gladiator's Silk Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125887)),	-- Warmongering Gladiator's Silk Amice (A)
 									moh(2, i(125884)),	-- Warmongering Gladiator's Silk Cowl (A)
@@ -4568,7 +4568,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MONK, {
 									moh(12, iensemble(138503, {	-- Ensemble: Warmongering Gladiator's Ironskin Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125907)),	-- Warmongering Gladiator's Ironskin Gloves (A)
 									moh(3, i(125908)),	-- Warmongering Gladiator's Ironskin Helm (A)
@@ -4578,7 +4578,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PALADIN, {
 									moh(12, iensemble(138495, {	-- Ensemble: Warmongering Gladiator's Scaled Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125912)),	-- Warmongering Gladiator's Scaled Chestpiece (A)
 									moh(2, i(125913)),	-- Warmongering Gladiator's Scaled Gauntlets (A)
@@ -4588,7 +4588,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PRIEST, {
 									moh(12, iensemble(138509, {	-- Ensemble: Warmongering Gladiator's Satin Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125936)),	-- Warmongering Gladiator's Satin Gloves (A)
 									moh(3, i(125937)),	-- Warmongering Gladiator's Satin Hood (A)
@@ -4598,7 +4598,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(ROGUE, {
 									moh(12, iensemble(138505, {	-- Ensemble: Warmongering Gladiator's Leather Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(125942)),	-- Warmongering Gladiator's Leather Gloves (A)
 									moh(3, i(125943)),	-- Warmongering Gladiator's Leather Helm (A)
@@ -4608,7 +4608,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(SHAMAN, {
 									moh(12, iensemble(138497, {	-- Ensemble: Warmongering Gladiator's Ringmail Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125946)),	-- Warmongering Gladiator's Ringmail Armor (A)
 									moh(2, i(125947)),	-- Warmongering Gladiator's Ringmail Gauntlets (A)
@@ -4618,7 +4618,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARLOCK, {
 									moh(12, iensemble(138511, {	-- Ensemble: Warmongering Gladiator's Felweave Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125993)),	-- Warmongering Gladiator's Felweave Amice (A)
 									moh(2, i(125990)),	-- Warmongering Gladiator's Felweave Cowl (A)
@@ -4628,7 +4628,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARRIOR, {
 									moh(12, iensemble(138491, {	-- Ensemble: Warmongering Gladiator's Plate Armor (A)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(125994)),	-- Warmongering Gladiator's Plate Chestpiece (A)
 									moh(2, i(125995)),	-- Warmongering Gladiator's Plate Gauntlets (A)
@@ -4792,15 +4792,15 @@ root(ROOTS.PVP, {
 					},
 				}),
 				n(FACTION_HEADER_HORDE, {
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						n(93917, {	-- Malukah Lightsong <Warmongering Gladiator>
-							["coord"] = { 48.9, 57.3, WARSPEAR },
-							["races"] = HORDE_ONLY,
-							["groups"] = {
+							coord = { 48.9, 57.3, WARSPEAR },
+							races = HORDE_ONLY,
+							groups = {
 								n(WEAPONS, {
 									moh(80, iensemble(138636, {	-- Arsenal: Warmongering Gladiator's Weapons (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126342)),	-- Warmongering Gladiator's Barrier (H)
 									moh(5, i(126322)),	-- Warmongering Gladiator's Baton of Light (H)
@@ -4834,7 +4834,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DEATHKNIGHT, {
 									moh(12, iensemble(138494, {	-- Ensemble: Warmongering Gladiator's Dreadplate Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126306)),	-- Warmongering Gladiator's Dreadplate Helm (H)
 									moh(2, i(126308)),	-- Warmongering Gladiator's Dreadplate Shoulders (H)
@@ -4844,7 +4844,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(DRUID, {
 									moh(12, iensemble(138502, {	-- Ensemble: Warmongering Gladiator's Dragonhide Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126309)),	-- Warmongering Gladiator's Dragonhide Gloves (H)
 									moh(3, i(126310)),	-- Warmongering Gladiator's Dragonhide Helm (H)
@@ -4854,7 +4854,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(HUNTER, {
 									moh(12, iensemble(138500, {	-- Ensemble: Warmongering Gladiator's Chain Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126314)),	-- Warmongering Gladiator's Chain Armor (H)
 									moh(2, i(126315)),	-- Warmongering Gladiator's Chain Gauntlets (H)
@@ -4864,7 +4864,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MAGE, {
 									moh(12, iensemble(138508, {	-- Ensemble: Warmongering Gladiator's Silk Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126366)),	-- Warmongering Gladiator's Silk Amice (H)
 									moh(3, i(126363)),	-- Warmongering Gladiator's Silk Cowl (H)
@@ -4874,7 +4874,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(MONK, {
 									moh(12, iensemble(138504, {	-- Ensemble: Warmongering Gladiator's Ironskin Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126386)),	-- Warmongering Gladiator's Ironskin Gloves (H)
 									moh(3, i(126387)),	-- Warmongering Gladiator's Ironskin Helm (H)
@@ -4884,7 +4884,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PALADIN, {
 									moh(12, iensemble(138496, {	-- Ensemble: Warmongering Gladiator's Scaled Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126391)),	-- Warmongering Gladiator's Scaled Chestpiece (H)
 									moh(2, i(126392)),	-- Warmongering Gladiator's Scaled Gauntlets (H)
@@ -4894,7 +4894,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(PRIEST, {
 									moh(12, iensemble(138510, {	-- Ensemble: Warmongering Gladiator's Satin Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126415)),	-- Warmongering Gladiator's Satin Gloves (H)
 									moh(3, i(126416)),	-- Warmongering Gladiator's Satin Hood (H)
@@ -4904,7 +4904,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(ROGUE, {
 									moh(12, iensemble(138506, {	-- Ensemble: Warmongering Gladiator's Leather Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(2, i(126421)),	-- Warmongering Gladiator's Leather Gloves (H)
 									moh(3, i(126422)),	-- Warmongering Gladiator's Leather Helm (H)
@@ -4914,7 +4914,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(SHAMAN, {
 									moh(12, iensemble(138498, {	-- Ensemble: Warmongering Gladiator's Ringmail Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126425)),	-- Warmongering Gladiator's Ringmail Armor (H)
 									moh(2, i(126426)),	-- Warmongering Gladiator's Ringmail Gauntlets (H)
@@ -4924,7 +4924,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARLOCK, {
 									moh(12, iensemble(138512, {	-- Ensemble: Warmongering Gladiator's Felweave Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126470)),	-- Warmongering Gladiator's Felweave Amice (H)
 									moh(2, i(126467)),	-- Warmongering Gladiator's Felweave Cowl (H)
@@ -4934,7 +4934,7 @@ root(ROOTS.PVP, {
 								}),
 								cl(WARRIOR, {
 									moh(12, iensemble(138492, {	-- Ensemble: Warmongering Gladiator's Plate Armor (H)
-										["timeline"] = { ADDED_7_0_3 },
+										timeline = { ADDED_7_0_3 },
 									})),
 									moh(3, i(126471)),	-- Warmongering Gladiator's Plate Chestpiece (H)
 									moh(2, i(126472)),	-- Warmongering Gladiator's Plate Gauntlets (H)
@@ -5047,10 +5047,10 @@ root(ROOTS.PVP, {
 									moh(2, i(126401)),	-- Warmongering Gladiator's Warboots of Victory (H)
 								}),
 								moh(100, i(116775, {	-- Breezestrider Stallion (MOUNT!)
-									["cost"] = { { "g", 50000000 } },	-- 5,000g
+									cost = { { "g", 50000000 } },	-- 5,000g
 								})),
 								elitepvp(moh(10, i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-									["timeline"] = { ADDED_6_0_2 },
+									timeline = { ADDED_6_0_2 },
 								}))),
 							},
 						}),
@@ -5294,7 +5294,7 @@ root(ROOTS.PVP, {
 	})),
 });
 
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
+-- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
 -- 	n(PVP, {
 -- 		-- PvP Ensembles
 -- 		q(42975),	-- Wild Combatant's Chain Armor (Hunter - Alliance)

@@ -4,9 +4,9 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 	n(KYRIAN, {
-		["timeline"] = { ADDED_9_0_2_LAUNCH },
-		["customCollect"] = "SL_COV_KYR",
-		["maps"] = {
+		timeline = { ADDED_9_0_2_LAUNCH },
+		customCollect = "SL_COV_KYR",
+		maps = {
 			ARCHONS_RISE,
 			SANCTUM_OF_BINDING,
 		},

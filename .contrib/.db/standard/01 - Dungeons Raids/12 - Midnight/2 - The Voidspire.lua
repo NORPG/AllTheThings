@@ -285,79 +285,79 @@ InstanceHelper.ExtraLoots = {
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART } }, {
 	inst(1307, {	-- The Voidspire
-		["coord"] = { 45.4, 64.0, MAP.MIDNIGHT.VOIDSTORM },
-		["maps"] = {
+		coord = { 45.4, 64.0, MAP.MIDNIGHT.VOIDSTORM },
+		maps = {
 			2529,	-- Voidspire
 			2530,	-- Crown of the Cosmos
 		},
-		["isRaid"] = true,
-		["groups"] = {
+		isRaid = true,
+		groups = {
 			n(ACHIEVEMENTS, {
 				-- Myrhial Check Automation
 				ach(61635, {	-- Voidspire: Weapons of the Void
 					crit(109375, {	-- Imperator Averzian
-						["_encounter"] = { AVERZIAN, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { AVERZIAN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(109376, {	-- Vorasius
-						["_encounter"] = { VORASIUS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { VORASIUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(109377, {	-- Fallen-King Salhadaar
-						["_encounter"] = { SALHADAAR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SALHADAAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(61636, {	-- Voidspire: Fanatics of the Light
 					crit(109378, {	-- Vaelgor & Ezzorak
-						["_encounter"] = { EZZORAK_VAELGOR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { EZZORAK_VAELGOR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(109379, {	-- Lightblinded Vanguard
-						["_encounter"] = { VANGUARD, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { VANGUARD, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(61637, {	-- Voidspire: Crown of the Cosmos
 					crit(109380, {	-- Crown of the Cosmos
-						["_encounter"] = { COSMOS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { COSMOS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(61366, {	-- The Voidspire
 					crit(109375, {	-- Imperator Averzian
-						["_encounter"] = { AVERZIAN, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { AVERZIAN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(109376, {	-- Vorasius
-						["_encounter"] = { VORASIUS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { VORASIUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(109377, {	-- Fallen-King Salhadaar
-						["_encounter"] = { SALHADAAR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SALHADAAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(109378, {	-- Vaelgor & Ezzorak
-						["_encounter"] = { EZZORAK_VAELGOR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { EZZORAK_VAELGOR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(109379, {	-- Lightblinded Vanguard
-						["_encounter"] = { VANGUARD, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { VANGUARD, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(109380, {	-- Crown of the Cosmos
-						["_encounter"] = { COSMOS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { COSMOS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(61368, {	-- Heroic: The Voidspire
 					crit(109071, {	-- Imperator Averzian
-						["_encounter"] = { AVERZIAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { AVERZIAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(109075, {	-- Vorasius
-						["_encounter"] = { VORASIUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { VORASIUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(109078, {	-- Fallen-King Salhadaar
-						["_encounter"] = { SALHADAAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { SALHADAAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(109082, {	-- Vaelgor & Ezzorak
-						["_encounter"] = { EZZORAK_VAELGOR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { EZZORAK_VAELGOR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(109085, {	-- Lightblinded Vanguard
-						["_encounter"] = { VANGUARD, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { VANGUARD, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(109090, {	-- Crown of the Cosmos
-						["_encounter"] = { COSMOS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { COSMOS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				}),
 				ach(61370),	-- Mythic: The Voidspire (automated)
@@ -367,21 +367,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				ach(61607),	-- Heroic: The Voidspire Guild Run
 			}),
 			o(532226, {	-- The Catalyst
-				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
-				["coord"] = { 40.3, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["modelScale"] = 4,
-				["catalystID"] = 12,	-- ItemBonus.Value_0 MID:S1
-				["groups"] = {
-					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups(
+				description = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
+				coord = { 40.3, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+				modelScale = 4,
+				catalystID = 12,	-- ItemBonus.Value_0 MID:S1
+				groups = {
+					Difficulty(DIFFICULTY.RAID.LFR, {upgradeTrackID=UPGRADETRACKS.VETERAN}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(THE_VOIDSPIRE_TIER, DIFFICULTY.RAID.LFR)
 					),
-					Difficulty(DIFFICULTY.RAID.NORMAL, {["upgradeTrackID"]=UPGRADETRACKS.CHAMPION}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.NORMAL, {upgradeTrackID=UPGRADETRACKS.CHAMPION}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(THE_VOIDSPIRE_TIER, DIFFICULTY.RAID.NORMAL)
 					),
-					Difficulty(DIFFICULTY.RAID.HEROIC, {["upgradeTrackID"]=UPGRADETRACKS.HERO}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.HEROIC, {upgradeTrackID=UPGRADETRACKS.HERO}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(THE_VOIDSPIRE_TIER, DIFFICULTY.RAID.HEROIC)
 					),
-					Difficulty(DIFFICULTY.RAID.MYTHIC, {["upgradeTrackID"]=UPGRADETRACKS.MYTH}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.MYTHIC, {upgradeTrackID=UPGRADETRACKS.MYTH}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(THE_VOIDSPIRE_TIER, DIFFICULTY.RAID.MYTHIC)
 					),
 				},
@@ -392,19 +392,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 
 					}),
 				}),
-				n(REWARDS, sharedDataSelf({["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}, {
+				n(REWARDS, sharedDataSelf({timeline = { ADDED_12_0_5, REMOVED_12_1_0 }}, {
 					i(268650, {	-- Ascendant Voidshard
 						i(268552),	-- Ascendant Voidcore
 					}),
 				})),
 				BossOnly(AVERZIAN, {
 					i(264497),	-- Imperator's Torment Crystal (DECOR!)
-					i(268459, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Imperator Averzian
+					i(268459, {timeline = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Imperator Averzian
 				}),
 				BossOnly(VORASIUS, {
 					i(258522),	-- Plans: Bloomforged Greataxe (RECIPE!)
 					i(264498),	-- Voltaic Trigore Egg (DECOR!)
-					i(268460, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Vorasius
+					i(268460, {timeline = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Vorasius
 				}),
 				n(240864, {	-- Blinky
 					i(268274),	-- Blinky's Collar
@@ -413,29 +413,29 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					i(264672),	-- Cosmic Ritual Stone (TOY!)
 					i(258123),	-- Pattern: Sunfire Silk Spellthread (RECIPE!)
 					i(264494),	-- Banded Domanaar Storage Crate (DECOR!)
-					i(268461, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Fallen-King Salhadaar
+					i(268461, {timeline = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Fallen-King Salhadaar
 				}),
 				BossOnly(EZZORAK_VAELGOR, {
 					i(258521),	-- Plans: Blood Knight's Impetus (RECIPE!)
 					i(264491),	-- Voidbound Holding Cell (DECOR!)
-					i(268462, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Vaelgor & Ezzorak
+					i(268462, {timeline = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Vaelgor & Ezzorak
 				}),
 				BossOnly(VANGUARD, {
 					i(258517),	-- Plans: Knight-Commander's Palisade (RECIPE!)
 					i(262957),	-- Tattered Vanguard Banner (DECOR!)
-					i(268463, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Lightblinded Vanguard
+					i(268463, {timeline = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Lightblinded Vanguard
 				}),
 				BossOnly(COSMOS, {
 					i(269269),	-- Devouring Ritual Spire (DECOR!)
-					i(268049, { ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Voidspire Vanquisher's Argent Trophy (DECOR!)
-					i(267488, {["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Crown of the Cosmos
+					i(268049, { timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Voidspire Vanquisher's Argent Trophy (DECOR!)
+					i(267488, {timeline = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Crown of the Cosmos
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
 				ZoneDrops({}),
 				CommonBossDrops({
 					currency(VETERAN_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+						timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 3156, {	-- Weapons of the Void
@@ -474,13 +474,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CHAMPION_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+						timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				n(QUESTS, {
 					q(94475, {	-- The Voidspire: Flicker in the Hollow [N]
-						["qg"] = 241076,	-- Riftblade Maella
-						["groups"] = { i(265014) },	-- Echo of Radiance (QI!)
+						qg = 241076,	-- Riftblade Maella
+						groups = { i(265014) },	-- Echo of Radiance (QI!)
 					}),
 				}),
 				ZoneDrops({}),
@@ -498,20 +498,20 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(EZZORAK_VAELGOR),
 				BossOnly(VANGUARD),
 				BossOnly(COSMOS, {
-					ach(61624, { ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Crown of the Cosmos
-					i(265951, { ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Voidspire Vanquisher's Aureate Trophy (DECOR!)
+					ach(61624, { timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Crown of the Cosmos
+					i(265951, { timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Voidspire Vanquisher's Aureate Trophy (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(HERO_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+						timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				n(QUESTS, {
 					q(94476, {	-- The Voidspire: Flicker in the Hollow [H]
-						["qg"] = 241076,	-- Riftblade Maella
-						["groups"] = { i(265015) },	-- Echo of Radiance (QI!)
+						qg = 241076,	-- Riftblade Maella
+						groups = { i(265015) },	-- Echo of Radiance (QI!)
 					}),
 				}),
 				ZoneDrops({}),
@@ -525,20 +525,20 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(MYTH_DAWNCREST, {
-						["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+						timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 					}),
 				}),
 				n(QUESTS, {
 					q(94477, {	-- The Voidspire: Flicker in the Hollow [M]
-						["qg"] = 241076,	-- Riftblade Maella
-						["groups"] = { i(265016) },	-- Echo of Radiance (QI!)
+						qg = 241076,	-- Riftblade Maella
+						groups = { i(265016) },	-- Echo of Radiance (QI!)
 					}),
 				}),
 				ZoneDrops({}),
 				n(ZONE_DROPS, sharedData({	-- First 2 weeks BoP version drops
-					["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_0_1_SEASONSTART },
-					["bonusID"] = 6897,
-					["modID"] = 0,
+					timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_0_1_SEASONSTART },
+					bonusID = 6897,
+					modID = 0,
 				},{
 					i(260376),	-- Breastplate of the Final Defense [BoP]
 					i(260377),	-- Fading Dawn Sabatons [BoP]
@@ -568,12 +568,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 					ach(61377, {	-- Mythic: Crown of the Cosmos
 						title(690),	-- Spirebane <Name>
 					}),
-					ach(61625, {["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- Cutting Edge: Crown of the Cosmos
-					ach(61622, applyDataSelf({["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {	-- Hall of Fame: Crown of the Cosmos
+					ach(61625, {timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- Cutting Edge: Crown of the Cosmos
+					ach(61622, applyDataSelf({timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {	-- Hall of Fame: Crown of the Cosmos
 						title(676),	-- <Name>, Famed Slayer of the Voidspire
 					})),
 					ach(61608),	-- Mythic: Crown of the Cosmos Guild Run
-					i(266887, {["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- Voidspire Vanquisher's Gleaming Trophy (DECOR!)
+					i(266887, {timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- Voidspire Vanquisher's Gleaming Trophy (DECOR!)
 				}),
 			}),
 		},
@@ -582,16 +582,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1307, {	-- The Voidspire
-		["timeline"] = { ADDED_12_0_1_SEASONSTART },
-		["groups"] = {
+		timeline = { ADDED_12_0_1_SEASONSTART },
+		groups = {
 			q(95535),	-- First kill of Crown of the Cosmos Normal
 			q(95536),	-- First kill of Crown of the Cosmos Heroic
 			q(95537),	-- First kill of Crown of the Cosmos Mythic
 		},
 	}),
 	inst(1307, bubbleDown({	-- The Voidspire
-		["timeline"] = { ADDED_12_0_1_SEASONSTART },
-		["isWeekly"] = true,
+		timeline = { ADDED_12_0_1_SEASONSTART },
+		isWeekly = true,
 	},{
 		-- LFR
 		q(93980, name(HEADERS.NPC, 252066)),	-- Gladius Slauros

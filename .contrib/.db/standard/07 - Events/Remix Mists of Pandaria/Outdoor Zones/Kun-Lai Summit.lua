@@ -2,58 +2,58 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(KUN_LAI_SUMMIT, {
-		["icon"] = 617832,
-		["groups"] = {
+		icon = 617832,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(19887, {	-- Campaign: Kun-Lai Summit [A]
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(19888, {	-- Campaign: Kun-Lai Summit [H]
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 				ach(19996),	-- Elusive Foes: Kun-Lai Summit
 				ach(20029),	-- Explore Kun-Lai Summit (automated)
 				ach(19980, {	-- Hidden Treasures: Kun-Lai Summit
 					crit(65484, {	-- Hozen Treasure Cache
-						["_quests"] = { 31414 },
+						_quests = { 31414 },
 					}),
 					crit(65485, {	-- Stolen Sprite Treasure
-						["_quests"] = { 31415 },
+						_quests = { 31415 },
 					}),
 					crit(65486, {	-- Statue of Xuen
-						["_quests"] = { 31416 },
+						_quests = { 31416 },
 					}),
 					crit(65487, {	-- Lost Adventurer's Belongings
-						["_quests"] = { 31418 },
+						_quests = { 31418 },
 					}),
 					crit(65488, {	-- Rikktik's Tick Remover
-						["_quests"] = { 31419 },
+						_quests = { 31419 },
 					}),
 					crit(65489, {	-- Ancient Mogu Tablet
-						["_quests"] = { 31420 },
+						_quests = { 31420 },
 					}),
 					crit(65490, {	-- Terracotta Head
-						["_quests"] = { 31422 },
+						_quests = { 31422 },
 					}),
 				}),
 				ach(19875, {	-- Kun-Lai Summit
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						-- 19887,	-- Campaign: Kun-Lai Summit [A]
 						-- 19888,	-- Campaign: Kun-Lai Summit [H]
 						20011,	-- Looking For Group: Kun-Lai Summit
 						19965,	-- Tour Kun-Lai Summit
 					}},
-					["groups"] = {
+					groups = {
 						i(218247),	-- Chen Stormstout's Hat
 						i(218248),	-- Chen Stormstout's Hat
 					},
 				}),
 				ach(20011, {	-- Looking For Group: Kun-Lai Summit
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19926,	-- Brewmoon Festival
 						19927,	-- Arena of Annihilation
 						19928,	-- Crypt of Forgotten Kings
@@ -64,7 +64,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				ach(19965, {	-- Tour Kun-Lai Summit
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19996,	-- Elusive Foes: Kun-Lai Summit
 						20029,	-- Explore Kun-Lai Summit
 						19980,	-- Hidden Treasures: Kun-Lai Summit
@@ -73,16 +73,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(QUESTS, {
 				q(80431, {	-- Aid the August Celestials
-					["provider"] = { "n", 60968 },	-- Xuen
-					["coords"] = {
+					provider = { "n", 60968 },	-- Xuen
+					coords = {
 						{ 67.2, 56.0, KUN_LAI_SUMMIT },
 						{ 70.4, 51.2, KUN_LAI_SUMMIT },
 						{ 71.6, 45.0, KUN_LAI_SUMMIT },
 						{ 66.4, 46.4, KUN_LAI_SUMMIT },
 						{ 68.6, 44.4, KUN_LAI_SUMMIT },
 					},
-					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
-					["repeatable"] = true,
+					cost = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					repeatable = true,
 				}),
 			}),
 			n(ZONE_REWARDS, {

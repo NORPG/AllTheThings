@@ -4,8 +4,8 @@
 
 root(ROOTS.Instances, {
 	n(MYTHIC_PLUS, {
-		["timeline"] = { ADDED_12_0_1 },
-		["groups"] = {
+		timeline = { ADDED_12_0_1 },
+		groups = {
 			cnONLY(filter(TITLES, {
 				-- https://www.wowhead.com/news/chinese-community-earns-exclusive-titles-through-mythic-mentorship-380999
 				cnONLY(title(756)),	-- Volunteer <Name>						// 10 Dungeons
@@ -16,12 +16,12 @@ root(ROOTS.Instances, {
 			})),
 			n(VENDORS, {
 				n(197711, {	-- Lindormi <Mythic Keystones>
-					["coord"] = { 42.1, 58.8, MAP.MIDNIGHT.SILVERMOON_CITY },
-					["timeline"] = { ADDED_12_0_1 },
-					["groups"] = {
+					coord = { 42.1, 58.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+					timeline = { ADDED_12_0_1 },
+					groups = {
 						filter(MOUNTS, bubbleDownFiltered({
-							["cost"] = { { "i", 275436, 1 } },	-- Timelost Saddle
-							["timeline"] = { ADDED_12_0_5 },
+							cost = { { "i", 275436, 1 } },	-- Timelost Saddle
+							timeline = { ADDED_12_0_5 },
 						},FILTERFUNC_itemID,{
 							-- 'Keystone Master', and 'Keystone Legend' Mounts from previous seasons
 							i(174836),	-- Awakened Mindborer (MOUNT!) [BFA KSM S4]

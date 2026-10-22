@@ -36,21 +36,21 @@ local function dragonsoul(t)
 	return applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, t);
 end
 
-root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ONE, timelineSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
-	i(180055, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I
-	i(180057, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II
-	i(180058, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III
-	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
-	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
-	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ONE, timelineSelf({ timeline = { ADDED_4_0_3_LAUNCH } }, {
+	i(180055, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I
+	i(180057, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II
+	i(180058, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III
+	i(180059, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV
+	i(180060, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V
+	n(DECOR, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
 		o_repeated({	-- Ashwood Lumber
-			["maps"] = {
+			maps = {
 				MOUNT_HYJAL,
 				RUINS_OF_GILNEAS,
 				TWILIGHT_HIGHLANDS,
 				ULDUM,
 			},
-			["groups"] = {
+			groups = {
 				-- Objects
 				o(578160),	-- [Mount Hyjal]
 				o(573547),	-- [Ruins of Gilneas]
@@ -74,7 +74,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(58092),	-- Elixir of the Cobra
 			i(58148),	-- Elixir of the Master
 			i(58089),	-- Elixir of the Naga
-			i(58149, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Flask of Enhancement
+			i(58149, {timeline = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Flask of Enhancement
 			i(67438),	-- Flask of Flowing Water
 			i(58085),	-- Flask of Steelskin
 			i(58086),	-- Flask of the Draconic Mind
@@ -92,20 +92,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(58145),	-- Potion of the Tol'vir
 			i(58488, {	-- Potion of Treasure Finding
 				-- #if AFTER 6.0.3
-				["description"] = "Treasures from Cataclysm dungeons have been nerfed. Still viable farming mobs in raids and the open world.",
+				description = "Treasures from Cataclysm dungeons have been nerfed. Still viable farming mobs in raids and the open world.",
 				-- #endif
-				["groups"] = { i(67539) },	-- Tiny Treasure Chest
+				groups = { i(67539) },	-- Tiny Treasure Chest
 			}),
 			i(58143),	-- Prismatic Elixir
 			i(58091),	-- Volcanic Potion
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(245517),	-- Gilnean Cauldron (DECOR!)
 			i(257694),	-- Gilnean Green Potion (DECOR!)
 		})),
 		filter(MOUNTS, {
 			ach(5749, {	-- Vial of the Sands
-				["provider"] = { "i", 65891 },	-- Vial of the Sands
+				provider = { "i", 65891 },	-- Vial of the Sands
 			}),
 			i(65891),	-- Sandstone Drake (MOUNT!)
 		}),
@@ -114,11 +114,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(51950),	-- Pyrium Bar
 			i(52303),	-- Shadowspirit Diamond
 			i(58480, {	-- Truegold
-				["description"] = "Crafted through Transmutation.",
+				description = "Crafted through Transmutation.",
 			}),
 		}),
 		filter(REAGENTS, sharedData({
-			["sharedDescription"] = "This reagent is most reliably obtained through Transmutation.",
+			sharedDescription = "This reagent is most reliably obtained through Transmutation.",
 		}, {
 			i(52195),	-- Amberjewel
 			i(52194),	-- Demonseye
@@ -129,39 +129,39 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		})),
 		filter(TRINKET_F, {
 			i(58483),	-- Lifebound Alchemist Stone
-			i(68776, {["timeline"] = {ADDED_4_0_6}}),	-- Quicksilver Alchemist Stone
-			i(68777, {["timeline"] = {ADDED_4_0_6}}),	-- Vibrant Alchemist Stone
-			i(68775, {["timeline"] = {ADDED_4_0_6}}),	-- Volatile Alchemist Stone
+			i(68776, {timeline = {ADDED_4_0_6}}),	-- Quicksilver Alchemist Stone
+			i(68777, {timeline = {ADDED_4_0_6}}),	-- Vibrant Alchemist Stone
+			i(68775, {timeline = {ADDED_4_0_6}}),	-- Volatile Alchemist Stone
 		}),
 	}),
 	prof(ARCHAEOLOGY, {
 		i(64397),	-- Tol'vir Hieroglyphic
 		header(HEADERS.Currency, ARCH_CURRENCY_TOLVIR, {
-			["provider"] = { "o", 207190 },	-- Tol'vir Archaeology Find
-			["maps"] = { ULDUM },
-			["groups"] = {
+			provider = { "o", 207190 },	-- Tol'vir Archaeology Find
+			maps = { ULDUM },
+			groups = {
 				i(64657, {	-- Canopic Jar
 					i(67538),	-- Recipe: Vial of the Sands (RECIPE!)
 				}),
-				i(64652, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Castle of Sand
-				i(64653, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Cat Statue with Emerald Eyes
-				i(60847, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Crawling Claw (PET!)
+				i(64652, {cost={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Castle of Sand
+				i(64653, {cost={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Cat Statue with Emerald Eyes
+				i(60847, {cost={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Crawling Claw (PET!)
 				applyclassicphase(MOP_PHASE_ESCALATION, i(97986, {	-- Digmaster's Earthblade (QI!)
-					["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+					timeline = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 					-- Wouter NOTE: in MoP Classic, this started dropping in Phase 2 (Landfall) already
 					-- #if BEFORE 5.5.3
-					["description"] = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
+					description = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
 					-- #endif
 				})),
-				i(64656, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Engraved Scimitar Hilt
-				i(64881, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Pendant of the Scarab Storm (TOY!)
-				i(64904, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Ring of the Boy Emperor
-				i(64885, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Scimitar of the Sirocco
-				i(64658, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Sketch of a Desert Palace
-				i(64654, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Soapstone Scarab Necklace
-				i(64880, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Staff of Ammunae
-				i(64655, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Tiny Oasis Mosaic
-				i(64883, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Ultramarine Qiraji Battle Tank (MOUNT!)
+				i(64656, {cost={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Engraved Scimitar Hilt
+				i(64881, {cost={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Pendant of the Scarab Storm (TOY!)
+				i(64904, {cost={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Ring of the Boy Emperor
+				i(64885, {cost={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Scimitar of the Sirocco
+				i(64658, {cost={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Sketch of a Desert Palace
+				i(64654, {cost={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Soapstone Scarab Necklace
+				i(64880, {cost={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Staff of Ammunae
+				i(64655, {cost={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Tiny Oasis Mosaic
+				i(64883, {cost={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Ultramarine Qiraji Battle Tank (MOUNT!)
 			},
 		}),
 	}),
@@ -258,14 +258,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			dragonsoul(i(75119)),	-- Vicious Pyrium Shoulders
 			firelands(i(69946)),	-- Warboots of Mighty Lords
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(257042),	-- Gilnean Pitchfork (DECOR!)
 			i(257409),	-- Standing Smoke Lamp (DECOR!)
 		})),
 		filter(MISC, {
 			i(55054),	-- Ebonsteel Belt Buckle
 			i(65365),	-- Folded Obsidium
-			i(65358, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Elementium Rod
+			i(65358, {timeline = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Elementium Rod
 			i(55055),	-- Elementium Shield Spike
 			i(55053),	-- Obsidium Skeleton Key
 			i(55056),	-- Pyrium Shield Spike
@@ -301,13 +301,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 	}),
 	prof(COOKING, {
 		n(COMMON_VENDOR_ITEMS, sharedData({	-- Experimental
-			["coords"] = {
+			coords = {
 				{ 76.27, 52.64, TWILIGHT_HIGHLANDS },	-- Dragonmaw Port
 				{ 79.37, 78.53, TWILIGHT_HIGHLANDS },	-- Highbank
 				{ 50.21, 38.36, ULDUM },	-- Mar'at
 			},
-			["description"] = "Coordinates are for select vendors.",
-			["providers"] = {
+			description = "Coordinates are for select vendors.",
+			providers = {
 				{ "n", 49688 },	-- Innkeeper Francis <Innkeeper>
 				{ "n", 49519 },	-- Lizzy "Lemons"
 				{ "n", 48861 },	-- Umi <Produce>
@@ -321,7 +321,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		i(62670),	-- Beer-Basted Crocolisk
 		i(62668),	-- Blackbelly Sushi
 		i(62676),	-- Blackened Surprise
-		i(62289, {["description"] = "This recipe is rewarded from the Guild Cooking achievement 'Set the Oven to Cataclysmic'."}),	-- Broiled Dragon Feast
+		i(62289, {description = "This recipe is rewarded from the Guild Cooking achievement 'Set the Oven to Cataclysmic'."}),	-- Broiled Dragon Feast
 		i(62655),	-- Broiled Mountain Trout
 		i(62680),	-- Chocolate Cookie
 		i(62664),	-- Crocolisk Au Gratin
@@ -340,8 +340,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		i(62667),	-- Mushroom Sauce Mudfish
 		i(62660),	-- Pickled Guppy
 		i(62653),	-- Salted Eye
-		i(68687, {["timeline"] = {ADDED_4_0_6}}),	-- Scalding Murglesnout
-		i(62290, {["description"] = "This recipe is rewarded from the Guild Fishing achievement 'That's a Lot of Bait'."}),	-- Seafood Magnifique Feast
+		i(68687, {timeline = {ADDED_4_0_6}}),	-- Scalding Murglesnout
+		i(62290, {description = "This recipe is rewarded from the Guild Fishing achievement 'That's a Lot of Bait'."}),	-- Seafood Magnifique Feast
 		i(62652),	-- Seasoned Crab
 		i(62671),	-- Severed Sagefish Head
 		i(62669),	-- Skewered Eel
@@ -356,46 +356,46 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			-- Dust:
 			i(52555, {	-- Hypnotic Dust
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm gear.",
+				description = "Obtained from disenchanting uncommon (green) quality Cataclysm gear.",
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm garments, amulets, rings, shields and off-hand frills within the ilvl bracket 272-312.",
+				description = "Obtained from disenchanting uncommon (green) quality Cataclysm garments, amulets, rings, shields and off-hand frills within the ilvl bracket 272-312.",
 				-- #endif
 			}),
 			-- Essences:
 			i(52719, {	-- Greater Celestial Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm gear.",
+				description = "Obtained from disenchanting uncommon (green) quality Cataclysm gear.",
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 306-318, except shields and off-hand frills.",
+				description = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 306-318, except shields and off-hand frills.",
 				-- #endif
 			}),
 			i(52718, {	-- Lesser Celestial Essence
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm gear.",
+				description = "Obtained from disenchanting uncommon (green) quality Cataclysm gear.",
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 272-305, except shields and off-hand frills.",
+				description = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 272-305, except shields and off-hand frills.",
 				-- #endif
 			}),
 			-- Shards and crystals:
 			i(52721, {	-- Heavenly Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting rare (blue) quality Cataclysm gear.",
+				description = "Obtained from disenchanting rare (blue) quality Cataclysm gear.",
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 318-346.",
+				description = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 318-346.",
 				-- #endif
 			}),
 			i(52722, {	-- Maelstrom Crystal
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting all epic (purple) quality Cataclysm gear.",
+				description = "Obtained from disenchanting all epic (purple) quality Cataclysm gear.",
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting all epic (purple) quality Cataclysm gear within the ilvl bracket 353-410.",
+				description = "Obtained from disenchanting all epic (purple) quality Cataclysm gear within the ilvl bracket 353-410.",
 				-- #endif
 			}),
 			i(52720, {	-- Small Heavenly Shard
 				-- #if AFTER 9.0.1
-				["description"] = "Obtained from disenchanting rare (blue) quality Cataclysm gear.",
+				description = "Obtained from disenchanting rare (blue) quality Cataclysm gear.",
 				-- #elseif BEFORE WOD
-				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 288-316.",
+				description = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 288-316.",
 				-- #endif
 			}),
 		}),
@@ -441,11 +441,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(67274),	-- Enchanted Lantern (PET!)
 			i(67275),	-- Magic Lamp (PET!)
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(257404),	-- Pyrewood Glass Bottle (DECOR!)
 			i(257095),	-- Twilight Fire Canister (DECOR!)
 		})),
-		filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+		filter(ILLUSIONS, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
 			i(138791, {	-- Tome of Illusions: Cataclysm
 				ill(4098),	-- Windwalk (ILLUSION!)
 				ill(4084),	-- Heartsong (ILLUSION!)
@@ -458,7 +458,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			}),
 		})),
 		filter(MISC, {
-			i(52723, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Runed Elementium Rod
+			i(52723, {timeline = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Runed Elementium Rod
 		}),
 		n(WEAPON_ENCHANTMENTS, {
 			i(52768),	-- Enchant Off-Hand - Superior Intellect
@@ -482,21 +482,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 		-- #endif
 		prof(GNOMISH_ENGINEERING, {
-			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
-			["groups"] = {
+			description = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
+			groups = {
 				filter(BATTLE_PETS, {
 					i(60216),	-- De-Weaponized Mechanical Companion (PET!)
 				}),
 				filter(TOYS, {
 					i(40727, {	-- Gnomish Gravity Well (TOY!)
-						["requireSkill"] = GNOMISH_ENGINEERING,
+						requireSkill = GNOMISH_ENGINEERING,
 					}),
 				}),
 			},
 		}),
 		prof(GOBLIN_ENGINEERING, {
-			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
-			["groups"] = {
+			description = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
+			groups = {
 				filter(BATTLE_PETS, {
 					i(59597),	-- Personal World Destroyer (PET!)
 				}),
@@ -516,30 +516,30 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(60222),	-- Authentic Jr. Engineer Goggles
 			i(59453, {	-- Camouflage Bio-Optic Killshades
 				-- #if BEFORE 7.3.0
-				["classes"] = LEATHER_CLASSES_INTELLECT,
+				classes = LEATHER_CLASSES_INTELLECT,
 				-- #endif
 			}),
 			i(59456),	-- Deadly Bio-Optic Killshades
 			i(59458, {	-- Energized Bio-Optic Killshades
 				-- #if BEFORE 7.3.0
-				["classes"] = { SHAMAN },
+				classes = { SHAMAN },
 				-- #endif
 			}),
 			i(59449),	-- Lightweight Bio-Optic Killshades
 			i(59359),	-- Reinforced Bio-Optic Killshades
 			i(59448, {	-- Specialized Bio-Optic Killshades
 				-- #if BEFORE 7.3.0
-				["classes"] = { PALADIN },
+				classes = { PALADIN },
 				-- #endif
 			}),
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(245602),	-- Gilnean Problem Solver (DECOR!)
 			i(257689),	-- Small Gilnean Windmill (DECOR!)
 		})),
 		filter(MISC, {
 			i(67494, {	-- Electrostatic Condenser
-				["collectible"] = false,
+				collectible = false,
 			}),
 			i(60217),	-- Elementium Toolbox
 			moltenfront(i(70139)),	-- Flintlocke's Woodchucker
@@ -582,49 +582,49 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 	prof(FISHING, {
 		-- Fish
 		i(53065, {	-- Albino Cavefish
-			["coords"] = {
+			coords = {
 				{ 68.3, 69.9, DEEPHOLM },	-- Lower Silvermarsh
 				{ 69.4, 68.1, DEEPHOLM },	-- Lower Silvermarsh cave entrance
 				{ 71.8, 63.1, DEEPHOLM },	-- Upper Silvermarsh
 				{ 76.8, 41.9, DEEPHOLM },	-- Crimson Expanse
 				{ 27.2, 34.8, DEEPHOLM },	-- Needlerock Chasm
 			},
-			["description"] = "Schools can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh.",
-			["_allowObjectProvider"] = true,
-			["provider"] = { "o", 202778 },	-- Albino Cavefish School
+			description = "Schools can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh.",
+			_allowObjectProvider = true,
+			provider = { "o", 202778 },	-- Albino Cavefish School
 		}),
 		i(53071, {	-- Algaefin Rockfish
 			-- Danny Donkey: Wowhead comments indicates that these possibly had dedicated schools before 4.3.0.
-			["description"] = "Can be caught on the seaside, though might be more uncommon than other saltwater fish.",
-			["maps_disp"] = {
+			description = "Can be caught on the seaside, though might be more uncommon than other saltwater fish.",
+			maps_disp = {
 				TOL_BARAD_PENINSULA,
 				TWILIGHT_HIGHLANDS,
 				VASHJIR_KELPTHAR_FOREST,
 				VASHJIR_SHIMMERING_EXPANSE,
 			},
 			-- #if AFTER 4.1.0
-			["provider"] = { "i", 69823 },	-- Gub's Catch
+			provider = { "i", 69823 },	-- Gub's Catch
 			-- #endif
 		}),
 		i(53066, {	-- Blackbelly Mudfish
-			["description"] = "Schools can be found in inland waterways.",
-			["maps_disp"] = { ULDUM },
-			["provider"] = { "o", 202779 },	-- Blackbelly Mudfish School
+			description = "Schools can be found in inland waterways.",
+			maps_disp = { ULDUM },
+			provider = { "o", 202779 },	-- Blackbelly Mudfish School
 		}),
 		i(53072, {	-- Deepsea Sagefish
 			-- #if BEFORE 4.3.0
-			["description"] = "Can be caught on the seaside.",
+			description = "Can be caught on the seaside.",
 			-- #else
-			["description"] = "Schools can be found on the seaside.",
+			description = "Schools can be found on the seaside.",
 			-- #endif
-			["maps_disp"] = {
+			maps_disp = {
 				TOL_BARAD_PENINSULA,
 				TWILIGHT_HIGHLANDS,
 				VASHJIR_KELPTHAR_FOREST,
 				VASHJIR_SHIMMERING_EXPANSE,
 			},
 			-- #if AFTER 4.1.0
-			["providers"] = {
+			providers = {
 				{ "i", 69823 },	-- Gub's Catch
 				-- #if AFTER 4.3.0
 				{ "o", 208311 },	-- Deepsea Sagefish School
@@ -633,12 +633,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			-- #endif
 		}),
 		i(53070, {	-- Fathom Eel
-			["description"] = "Schools can be found on the seaside.",
-			["maps_disp"] = {
+			description = "Schools can be found on the seaside.",
+			maps_disp = {
 				TOL_BARAD_PENINSULA,
 				ULDUM,
 			},
-			["providers"] = {
+			providers = {
 				{ "o", 202780 },	-- Fathom Eel Swarm
 				-- #if AFTER 4.1.0
 				{ "i", 69823 },	-- Gub's Catch
@@ -646,34 +646,34 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			},
 		}),
 		i(53064, {	-- Highland Guppy
-			["description"] = "Schools can be found in inland waterways.",
-			["maps_disp"] = { TWILIGHT_HIGHLANDS },
-			["provider"] = { "o", 202777 },	-- Highland Guppy School
+			description = "Schools can be found in inland waterways.",
+			maps_disp = { TWILIGHT_HIGHLANDS },
+			provider = { "o", 202777 },	-- Highland Guppy School
 		}),
 		i(53068, {	-- Lavascale Catfish
-			["description"] = "Can be caught in inland waterways.",
-			["maps_disp"] = {
+			description = "Can be caught in inland waterways.",
+			maps_disp = {
 				DEEPHOLM,
 				ULDUM,
 			},
 			-- #if AFTER 4.1.0
-			["provider"] = { "i", 69823 },	-- Gub's Catch
+			provider = { "i", 69823 },	-- Gub's Catch
 			-- #endif
 		}),
 		i(53063, {	-- Mountain Trout
-			["coords"] = {
+			coords = {
 				{ 69.6, 68.9, MOUNT_HYJAL },	-- Gates of Sothann
 				{ 29.1, 33.0, MOUNT_HYJAL },	-- Shrine of Goldrinn
 				{ 41.2, 29.8, MOUNT_HYJAL },	-- The Verdant Thicket
 				{ 52.6, 17.3, MOUNT_HYJAL },	-- Hyjal Barrow Dens (entrance)
 				{ 60.8, 25.9, MOUNT_HYJAL },	-- Nordrassil
 			},
-			["_allowObjectProvider"] = true,
-			["provider"] = { "o", 202776 },	-- Mountain Trout School
+			_allowObjectProvider = true,
+			provider = { "o", 202776 },	-- Mountain Trout School
 		}),
 		i(53069, {	-- Murglesnout
-			["description"] = "Can be caught on the seaside.",
-			["maps_disp"] = {
+			description = "Can be caught on the seaside.",
+			maps_disp = {
 				TOL_BARAD_PENINSULA,
 				TWILIGHT_HIGHLANDS,
 				VASHJIR_KELPTHAR_FOREST,
@@ -682,7 +682,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 		i(46109, {	-- Sea Turtle (MOUNT!)
 			-- #if BEFORE 5.0.3
-			["maps_disp"] = {
+			maps_disp = {
 				BOREAN_TUNDRA,
 				CRYSTALSONG_FOREST,
 				DEEPHOLM,
@@ -695,7 +695,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				TWILIGHT_HIGHLANDS,
 				ULDUM,
 			},
-			["providers"] = {
+			providers = {
 				{ "o", 202778 },	-- Albino Cavefish School
 				{ "o", 202779 },	-- Blackbelly Mudfish School
 				{ "o", 192051 },	-- Borean Man O' War School
@@ -719,8 +719,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			-- #endif
 		}),
 		i(53062, {	-- Sharptooth
-			["description"] = "Can be caught in inland waterways.",
-			["maps_disp"] = {
+			description = "Can be caught in inland waterways.",
+			maps_disp = {
 				DEEPHOLM,
 				MOUNT_HYJAL,
 				TWILIGHT_HIGHLANDS,
@@ -729,34 +729,34 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 		-- #if NOT ANYCLASSIC
 		i(68050, {	-- Shatterscale Mightfish
-			["coords"] = {
+			coords = {
 				{ 52.4, 77.0, MOUNT_HYJAL },	-- The Throne of Flame
 				{ 41.0, 79.1, TWILIGHT_HIGHLANDS },	-- Cannon's Inferno
 			},
-			["description"] = "Can be caught by fishing in lava using a special lure.",
-			["provider"] = { "i", 68049 },	-- Heat-Treated Spinning Lure
+			description = "Can be caught by fishing in lava using a special lure.",
+			provider = { "i", 68049 },	-- Heat-Treated Spinning Lure
 			-- #if AFTER TWW
-			["collectible"] = false,	-- remove when Blizzard fix fish collection
+			collectible = false,	-- remove when Blizzard fix fish collection
 			-- #endif
 		}),
 		-- #endif
 		i(53067, {	-- Striped Lurker
-			["description"] = "Can be caught in inland waterways.",
-			["maps_disp"] = {
+			description = "Can be caught in inland waterways.",
+			maps_disp = {
 				MOUNT_HYJAL,
 				TWILIGHT_HIGHLANDS,
 			},
 		}),
 		-- #if NOT ANYCLASSIC
 		i(22739, {	-- Tome of Polymorph: Turtle (CI!)
-			["maps_disp"] = {
+			maps_disp = {
 				DEEPHOLM,
 				MOUNT_HYJAL,
 				TOL_BARAD_PENINSULA,
 				TWILIGHT_HIGHLANDS,
 				ULDUM,
 			},
-			["providers"] = {
+			providers = {
 				{ "o", 202778 },	-- Albino Cavefish School
 				{ "o", 202779 },	-- Blackbelly Mudfish School
 				-- #if AFTER 4.3.0
@@ -771,42 +771,42 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		-- #endif
 		-- Schools:
 		o(202778, {	-- Albino Cavefish School
-			["coords"] = {
+			coords = {
 				{ 68.3, 69.9, DEEPHOLM },	-- Lower Silvermarsh
 				{ 69.4, 68.1, DEEPHOLM },	-- Lower Silvermarsh cave entrance
 				{ 71.8, 63.1, DEEPHOLM },	-- Upper Silvermarsh
 				{ 76.8, 41.9, DEEPHOLM },	-- Crimson Expanse
 				{ 27.2, 34.8, DEEPHOLM },	-- Needlerock Chasm
 			},
-			["description"] = "Can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh.",
+			description = "Can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh.",
 		}),
 		o(202781, {	-- Algaefin Rockfish School
-			["description"] = "Please let us in the ATT-discord know if this school appears in any iterations of the game.",
-			["maps"] = { TWILIGHT_HIGHLANDS },
-			["timeline"] = { REMOVED_4_3_0 },
+			description = "Please let us in the ATT-discord know if this school appears in any iterations of the game.",
+			maps = { TWILIGHT_HIGHLANDS },
+			timeline = { REMOVED_4_3_0 },
 		}),
 		o(202779, {	-- Blackbelly Mudfish School
-			["description"] = "Can be found in inland waterways.",
-			["maps"] = { ULDUM },
+			description = "Can be found in inland waterways.",
+			maps = { ULDUM },
 		}),
 		o(208311, {	-- Deepsea Sagefish School
-			["description"] = "Can be found on the seaside.",
-			["maps"] = { TWILIGHT_HIGHLANDS },
-			["timeline"] = { ADDED_4_3_0 },
+			description = "Can be found on the seaside.",
+			maps = { TWILIGHT_HIGHLANDS },
+			timeline = { ADDED_4_3_0 },
 		}),
 		o(202780, {	-- Fathom Eel Swarm
-			["description"] = "Can be found on the seaside.",
-			["maps"] = {
+			description = "Can be found on the seaside.",
+			maps = {
 				TOL_BARAD_PENINSULA,
 				ULDUM,
 			},
 		}),
 		o(202777, {	-- Highland Guppy School
-			["description"] = "Can be found in inland waterways.",
-			["maps"] = { TWILIGHT_HIGHLANDS },
+			description = "Can be found in inland waterways.",
+			maps = { TWILIGHT_HIGHLANDS },
 		}),
 		o(202776, {	-- Mountain Trout School
-			["coords"] = {
+			coords = {
 				{ 69.6, 68.9, MOUNT_HYJAL },	-- Gates of Sothann
 				{ 29.1, 33.0, MOUNT_HYJAL },	-- Shrine of Goldrinn
 				{ 41.2, 29.8, MOUNT_HYJAL },	-- The Verdant Thicket
@@ -815,33 +815,33 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			},
 		}),
 		o(207734, {	-- Pool of Fire (Fishing school)
-			["coords"] = {
+			coords = {
 				{ 52.4, 77.0, MOUNT_HYJAL },	-- The Throne of Flame
 				{ 41.0, 79.1, TWILIGHT_HIGHLANDS },	-- Cannon's Inferno
 			},
 		}),
 		o(207724, {	-- Shipwreck Debris
-			["maps"] = { TOL_BARAD_PENINSULA },
-			["groups"] = {
+			maps = { TOL_BARAD_PENINSULA },
+			groups = {
 				i(67597),	-- Sealed Crate
 			},
 		}),
 		-- Recipe:
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "Can be fished from schools.",
+				description = "Can be fished from schools.",
 			}),
 		}),
 	}),
 	prof(HERBALISM, {
-		header(HEADERS.Spell, 2366, appendAllGroups(sharedData({ ["requireSkill"] = HERBALISM, }, {	-- Herb Gathering
+		header(HEADERS.Spell, 2366, appendAllGroups(sharedData({ requireSkill = HERBALISM, }, {	-- Herb Gathering
 			-- Nodes:
 			o(202749, {	-- Azshara's Veil
-				["description"] = "Can be found near and in waters.",
+				description = "Can be found near and in waters.",
 				-- #if BEFORE 6.0.0
-				["learnedAt"] = 425,
+				learnedAt = 425,
 				-- #endif
-				["maps"] = {
+				maps = {
 					MOUNT_HYJAL,
 					TOL_BARAD_PENINSULA,
 					VASHJIR_ABYSSAL_DEPTHS,
@@ -850,11 +850,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				},
 			}),
 			o(202747, {	-- Cinderbloom
-				["description"] = "Mount Hyjal is the better place to look for these.",
+				description = "Mount Hyjal is the better place to look for these.",
 				-- #if BEFORE 6.0.0
-				["learnedAt"] = 425,
+				learnedAt = 425,
 				-- #endif
-				["maps"] = {
+				maps = {
 					DEEPHOLM,
 					MOUNT_HYJAL,
 					TOL_BARAD,
@@ -865,34 +865,34 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			}),
 			o(202750, {	-- Heartblossom
 				-- #if BEFORE 6.0.0
-				["learnedAt"] = 475,
+				learnedAt = 475,
 				-- #endif
-				["maps"] = { DEEPHOLM },
+				maps = { DEEPHOLM },
 			}),
 			o(202748, {	-- Stormvine
-				["coords"] = {
+				coords = {
 					{ 22.7, 65.4, VASHJIR_ABYSSAL_DEPTHS },	-- Abandoned Reef
 					{ 41.0, 36.2, VASHJIR_ABYSSAL_DEPTHS },	-- The Scalding Chasm
 					{ 50.4, 35.4, VASHJIR_SHIMMERING_EXPANSE },	-- Silver Tide Trench, beneath
 					{ 38.3, 64.1, VASHJIR_SHIMMERING_EXPANSE },	-- Quel'Dormir Gardens
 				},
-				["description"] = "Can be found near the base of vegetation and structures.",
+				description = "Can be found near the base of vegetation and structures.",
 				-- #if BEFORE 6.0.0
-				["learnedAt"] = 425,
+				learnedAt = 425,
 				-- #endif
-				["maps"] = {
+				maps = {
 					MOUNT_HYJAL,
 					VASHJIR_KELPTHAR_FOREST,
 				},
 			}),
 			o(202751, {	-- Twilight Jasmine
 				-- #if BEFORE 6.0.0
-				["learnedAt"] = 525,
+				learnedAt = 525,
 				-- #endif
-				["maps"] = { TWILIGHT_HIGHLANDS },
+				maps = { TWILIGHT_HIGHLANDS },
 			}),
 			o(202752, {	-- Whiptail
-				["coords"] = {
+				coords = {
 					{ 39.8, 49.2, TOL_BARAD },	-- Croc swamp
 					{ 56.2, 22.6, ULDUM },	-- Vir'naal Oasis, northeast of Ramkahen
 					{ 49.7, 32.2, ULDUM },	-- Vir'naal Oasis, west of Ramkahen
@@ -900,29 +900,29 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 					{ 62.0, 77.9, ULDUM },	-- Vir'naal River Delta
 				},
 				-- #if BEFORE 6.0.0
-				["learnedAt"] = 500,
+				learnedAt = 500,
 				-- #endif
 			}),
 		}),
 		{	-- Herbs:
 			i(52985, {	-- Azshara's Veil
-				["description"] = "Can be found near and in waters.",
-				["maps_disp"] = {
+				description = "Can be found near and in waters.",
+				maps_disp = {
 					TOL_BARAD_PENINSULA,
 					VASHJIR_ABYSSAL_DEPTHS,
 					VASHJIR_KELPTHAR_FOREST,
 					VASHJIR_SHIMMERING_EXPANSE,
 				},
-				["provider"] = { "o", 202749 },	-- Azshara's Veil
+				provider = { "o", 202749 },	-- Azshara's Veil
 			}),
 			i(108362, {	-- Azshara's Veil Stem
-				["groups"] = { i(52985) },	-- Azshara's Veil
-				["provider"] = { "o", 202749 },	-- Azshara's Veil
-				["timeline"] = { ADDED_6_0_2 },
+				groups = { i(52985) },	-- Azshara's Veil
+				provider = { "o", 202749 },	-- Azshara's Veil
+				timeline = { ADDED_6_0_2 },
 			}),
 			i(52983, {	-- Cinderbloom
-				["description"] = "Mount Hyjal is the better place to look for these.",
-				["maps_disp"] = {
+				description = "Mount Hyjal is the better place to look for these.",
+				maps_disp = {
 					DEEPHOLM,
 					MOUNT_HYJAL,
 					TOL_BARAD,
@@ -930,24 +930,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 					TWILIGHT_HIGHLANDS,
 					ULDUM,
 				},
-				["provider"] = { "o", 202747 },	-- Cinderbloom
+				provider = { "o", 202747 },	-- Cinderbloom
 			}),
 			i(108360, {	-- Cinderbloom Petal
-				["groups"] = { i(52983) },	-- Cinderbloom
-				["provider"] = { "o", 202747 },	-- Cinderbloom
-				["timeline"] = { ADDED_6_0_2 },
+				groups = { i(52983) },	-- Cinderbloom
+				provider = { "o", 202747 },	-- Cinderbloom
+				timeline = { ADDED_6_0_2 },
 			}),
 			i(52986, {	-- Heartblossom
-				["maps_disp"] = { DEEPHOLM },
-				["provider"] = { "o", 202750 },	-- Heartblossom
+				maps_disp = { DEEPHOLM },
+				provider = { "o", 202750 },	-- Heartblossom
 			}),
 			i(108363, {	-- Heartblossom Petal
-				["groups"] = { i(52986) },	-- Heartblossom
-				["provider"] = { "o", 202750 },	-- Heartblossom
-				["timeline"] = { ADDED_6_0_2 },
+				groups = { i(52986) },	-- Heartblossom
+				provider = { "o", 202750 },	-- Heartblossom
+				timeline = { ADDED_6_0_2 },
 			}),
 			i(63122, {	-- Lifegiving Seed
-				["providers"] = {
+				providers = {
 					{ "o", 202749 },	-- Azshara's Veil
 					{ "o", 202747 },	-- Cinderbloom
 					{ "o", 202750 },	-- Heartblossom
@@ -957,28 +957,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				},
 			}),
 			i(52984, {	-- Stormvine
-				["coords"] = {
+				coords = {
 					{ 22.7, 65.4, VASHJIR_ABYSSAL_DEPTHS },	-- Abandoned Reef
 					{ 41.0, 36.2, VASHJIR_ABYSSAL_DEPTHS },	-- The Scalding Chasm
 					{ 50.4, 35.4, VASHJIR_SHIMMERING_EXPANSE },	-- Silver Tide Trench, beneath
 					{ 38.3, 64.1, VASHJIR_SHIMMERING_EXPANSE },	-- Quel'Dormir Gardens
 				},
-				["description"] = "Can be found near the base of vegetation and structures.",
-				["maps_disp"] = {
+				description = "Can be found near the base of vegetation and structures.",
+				maps_disp = {
 					MOUNT_HYJAL,
 					VASHJIR_KELPTHAR_FOREST,
 				},
-				["_allowObjectProvider"] = true,
-				["provider"] = { "o", 202748 },	-- Stormvine
+				_allowObjectProvider = true,
+				provider = { "o", 202748 },	-- Stormvine
 			}),
 			i(108361, {	-- Stormvine Stalk
-				["groups"] = { i(52984) },	-- Stormvine
-				["provider"] = { "o", 202748 },	-- Stormvine
-				["timeline"] = { ADDED_6_0_2 },
+				groups = { i(52984) },	-- Stormvine
+				provider = { "o", 202748 },	-- Stormvine
+				timeline = { ADDED_6_0_2 },
 			}),
 			i(52987, {	-- Twilight Jasmine
-				["maps_disp"] = { TWILIGHT_HIGHLANDS },
-				["providers"] = {
+				maps_disp = { TWILIGHT_HIGHLANDS },
+				providers = {
 					-- #if AFTER 4.1.0
 					{ "i", 69817 },	-- Hive Queen's Honeycomb
 					-- #endif
@@ -986,36 +986,36 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				},
 			}),
 			i(108364, {	-- Twilight Jasmine Petal
-				["groups"] = { i(52987) },	-- Twilight Jasmine
-				["provider"] = { "o", 202751 },	-- Twilight Jasmine
-				["timeline"] = { ADDED_6_0_2 },
+				groups = { i(52987) },	-- Twilight Jasmine
+				provider = { "o", 202751 },	-- Twilight Jasmine
+				timeline = { ADDED_6_0_2 },
 			}),
 			i(52988, {	-- Whiptail
-				["coords"] = {
+				coords = {
 					{ 39.8, 49.2, TOL_BARAD },	-- Croc swamp
 					{ 56.2, 22.6, ULDUM },	-- Vir'naal Oasis, northeast of Ramkahen
 					{ 49.7, 32.2, ULDUM },	-- Vir'naal Oasis, west of Ramkahen
 					{ 56.6, 48.9, ULDUM },	-- Vir'naal River
 					{ 62.0, 77.9, ULDUM },	-- Vir'naal River Delta
 				},
-				["_allowObjectProvider"] = true,
-				["provider"] = { "o", 202752 },	-- Whiptail
+				_allowObjectProvider = true,
+				provider = { "o", 202752 },	-- Whiptail
 			}),
 			i(108365, {	-- Whiptail Stem
-				["groups"] = { i(52988) },	-- Whiptail
-				["provider"] = { "o", 202752 },	-- Whiptail
-				["timeline"] = { ADDED_6_0_2 },
+				groups = { i(52988) },	-- Whiptail
+				provider = { "o", 202752 },	-- Whiptail
+				timeline = { ADDED_6_0_2 },
 			}),
 		})),
 	}),
 	prof(INSCRIPTION, {
 		-- Inks and reagents:
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			["coords"] = {
+			coords = {
 				{ 76.6, 49.4, TWILIGHT_HIGHLANDS },	-- Dragonmaw Port
 				{ 78.6, 76.2, TWILIGHT_HIGHLANDS },	-- Highbank
 			},
-			["providers"] = {
+			providers = {
 				{ "n", 49703 },	-- Casandra Downs <Alchemy & Inscription Supplies>
 				{ "n", 50248 },	-- Una Kobuna <Alchemy and Inscription Supplies>
 			},
@@ -1028,7 +1028,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		})),
 		header(HEADERS.Spell, 51005, {	-- Milling
 			i(61979, {	-- Ashen Pigment
-				["providers"] = {
+				providers = {
 					{ "o", 202749 },	-- Azshara's Veil
 					{ "o", 202747 },	-- Cinderbloom
 					{ "o", 202750 },	-- Heartblossom
@@ -1038,7 +1038,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				},
 			}),
 			i(61980, {	-- Burning Embers
-				["providers"] = {
+				providers = {
 					{ "o", 202749 },	-- Azshara's Veil
 					{ "o", 202747 },	-- Cinderbloom
 					{ "o", 202750 },	-- Heartblossom
@@ -1048,7 +1048,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				},
 			}),
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(257696),	-- Gilnean Map (DECOR!)
 			i(257695),	-- Gilnean Postbox (DECOR!)
 			i(245623),	-- Gilnean Rocking Chair (DECOR!)
@@ -1062,36 +1062,36 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		-- Non-reagent crafts:
 		i(62237, {	-- Adventurer's Journal
 			-- #if CATA
-			["description"] = "Using this item will provide you with a temporary 1-hour buff. This buff is random, and only applies if you are below level 85.\n\nLearning by Example - Quest experience increased by 10%.\nThe Great Hunt - Damage against beasts increased by 15%\nTerrain Expert - Movement speed increased by %15. This does not stack with other movement speed increasing effects.\nLiving Forever - Chance to heal yourself when dealing damage to an enemy.\nDeadly Drive - Damage against humanoids increased by 15%.\nDragonsbane - Damage against Dragonkin increased by 15%.\nMechanical Aptitude - Damage against Mechanicals increased by 15%.\nKneecapper - Damage against Giants increased by 15%.\nFire and Water - Damage against Elementals increased by 15%.\n28 Chapters Later - Damage against Undead increased by 15%.",
+			description = "Using this item will provide you with a temporary 1-hour buff. This buff is random, and only applies if you are below level 85.\n\nLearning by Example - Quest experience increased by 10%.\nThe Great Hunt - Damage against beasts increased by 15%\nTerrain Expert - Movement speed increased by %15. This does not stack with other movement speed increasing effects.\nLiving Forever - Chance to heal yourself when dealing damage to an enemy.\nDeadly Drive - Damage against humanoids increased by 15%.\nDragonsbane - Damage against Dragonkin increased by 15%.\nMechanical Aptitude - Damage against Mechanicals increased by 15%.\nKneecapper - Damage against Giants increased by 15%.\nFire and Water - Damage against Elementals increased by 15%.\n28 Chapters Later - Damage against Undead increased by 15%.",
 			-- #endif
-			["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			timeline = { ADDED_4_0_3, DELETED_5_0_4 },
 		}),
 		-- #if AFTER WOD
 		header(HEADERS.Spell, 165466, {	-- Research: Blackfallow Ink
-			r(64260, {["timeline"]={ADDED_3_1_0}}),	-- Glyph of Mutilate / Glyph of Disguise[MOP+]
-			r(64262, {["timeline"]={ADDED_3_1_0,REMOVED_7_0_3}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
+			r(64260, {timeline={ADDED_3_1_0}}),	-- Glyph of Mutilate / Glyph of Disguise[MOP+]
+			r(64262, {timeline={ADDED_3_1_0,REMOVED_7_0_3}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
 		}),
 		-- #endif
 		filter(GLYPHS, {
-			i(43390, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Drain Soul / Glyph of Soul Consumption [MOP+]
-			i(41540, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Strength of Earth Totem / Glyph of Lava Lash [3.0.3+]
-			i(43335, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of the Wild / Glyph of Charm Woodland Creature [MOP+]
-			i(45776, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage [CATA+]
+			i(43390, {timeline={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Drain Soul / Glyph of Soul Consumption [MOP+]
+			i(41540, {timeline={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Strength of Earth Totem / Glyph of Lava Lash [3.0.3+]
+			i(43335, {timeline={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of the Wild / Glyph of Charm Woodland Creature [MOP+]
+			i(45776, {timeline={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage [CATA+]
 			--
 			-- #if NOT ANYCLASSIC
 			-- Danny Donkey: These glyphs were vanilla crafts on retail until an unknown point after MoP.
-			i(45768, {["timeline"]={ ADDED_3_1_0 }}),					-- Glyph of Disguise [MOP+] / Glyph of Mutilate
-			i(43334, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of the Ursol Chameleon [MOP+] / Glyph of Challenging Roar
+			i(45768, {timeline={ ADDED_3_1_0 }}),					-- Glyph of Disguise [MOP+] / Glyph of Mutilate
+			i(43334, {timeline={ ADDED_3_0_2 }}),					-- Glyph of the Ursol Chameleon [MOP+] / Glyph of Challenging Roar
 			--
 			-- Danny Donkey: These glyphs were WotLK crafts on retail until an unknown point after MoP.
-			i(87881, {["timeline"]={ ADDED_5_0_4 }}),					-- Glyph of Crackling Tiger Lightning
-			i(42751, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of Crittermorph [MOP+] / Glyph of Molten Armour
-			i(49084, {["timeline"]={ ADDED_3_2_0 }}),					-- Glyph of Thunder Strike [MOP+] / Glyph of Command
+			i(87881, {timeline={ ADDED_5_0_4 }}),					-- Glyph of Crackling Tiger Lightning
+			i(42751, {timeline={ ADDED_3_0_2 }}),					-- Glyph of Crittermorph [MOP+] / Glyph of Molten Armour
+			i(49084, {timeline={ ADDED_3_2_0 }}),					-- Glyph of Thunder Strike [MOP+] / Glyph of Command
 			--
 			-- Danny Donkey: These glyphs were MoP crafts on retail until an unknown point after MoP.
-			i(80588, {["timeline"]={ ADDED_5_0_4 }}),					-- Glyph of Burning Anger
-			i(87392, {["timeline"]={ ADDED_5_0_4 }}),					-- Glyph of Shadowy Friends
-			i(79538, {["timeline"]={ ADDED_5_0_4 }}),					-- Glyph of the Heavens
+			i(80588, {timeline={ ADDED_5_0_4 }}),					-- Glyph of Burning Anger
+			i(87392, {timeline={ ADDED_5_0_4 }}),					-- Glyph of Shadowy Friends
+			i(79538, {timeline={ ADDED_5_0_4 }}),					-- Glyph of the Heavens
 			-- #endif
 		}),
 		filter(HELD_IN_OFF_HAND, {
@@ -1113,52 +1113,52 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		-- #if BEFORE 5.0.4
 		n(RELICS, {
 			i(62240, {	-- Etched Horn
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+				timeline = { ADDED_4_0_3, DELETED_5_0_4 },
 			}),
 			i(62241, {	-- Manual of the Planes
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+				timeline = { ADDED_4_0_3, DELETED_5_0_4 },
 			}),
 			i(62243, {	-- Notched Jawbone
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+				timeline = { ADDED_4_0_3, DELETED_5_0_4 },
 			}),
 			i(62242, {	-- Runed Dragonscale
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+				timeline = { ADDED_4_0_3, DELETED_5_0_4 },
 			}),
 			i(62245, {	-- Silver Inlaid Leaf
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+				timeline = { ADDED_4_0_3, DELETED_5_0_4 },
 			}),
 			i(62244, {	-- Tattooed Eyeball
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+				timeline = { ADDED_4_0_3, DELETED_5_0_4 },
 			}),
 			-- #if ANYCLASSIC
 			-- Blizzard did a dumb when they implemented Cata Classic
 			i(75079, {	-- Vicious Charm of Triumph
-				["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0, DELETED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_4_2_0, DELETED_5_0_4 },
 			}),
 			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(226180, {	-- Vicious Charm of Triumph
-				["timeline"] = { ADDED_4_3_0, DELETED_5_0_4 },
+				timeline = { ADDED_4_3_0, DELETED_5_0_4 },
 			})),
 			i(75066, {	-- Vicious Eyeball of Dominance
-				["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0, DELETED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_4_2_0, DELETED_5_0_4 },
 			}),
 			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(226178, {	-- Vicious Eyeball of Dominance
-				["timeline"] = { ADDED_4_3_0, DELETED_5_0_4 },
+				timeline = { ADDED_4_3_0, DELETED_5_0_4 },
 			})),
 			i(75069, {	-- Vicious Jawbone of Conquest
-				["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0, DELETED_5_0_4 },
+				timeline = { ADDED_4_0_3, REMOVED_4_2_0, DELETED_5_0_4 },
 			}),
 			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(226179, {	-- Vicious Jawbone of Conquest
-				["timeline"] = { ADDED_4_3_0, DELETED_5_0_4 },
+				timeline = { ADDED_4_3_0, DELETED_5_0_4 },
 			})),
 			-- #else
 			i(75079, {	-- Vicious Charm of Triumph
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+				timeline = { ADDED_4_0_3, DELETED_5_0_4 },
 			}),
 			i(75066, {	-- Vicious Eyeball of Dominance
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+				timeline = { ADDED_4_0_3, DELETED_5_0_4 },
 			}),
 			i(75069, {	-- Vicious Jawbone of Conquest
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+				timeline = { ADDED_4_0_3, DELETED_5_0_4 },
 			}),
 			-- #endif
 		}),
@@ -1166,16 +1166,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		-- #if AFTER 5.0.1
 		filter(STAVES, {
 			i(87565, {	-- Key to the Planes
-				["timeline"] = { ADDED_5_0_4 },
+				timeline = { ADDED_5_0_4 },
 			}),
 			i(87562, {	-- Rosethorn Staff
-				["timeline"] = { ADDED_5_0_4 },
+				timeline = { ADDED_5_0_4 },
 			}),
 			i(87566, {	-- Runed Staff
-				["timeline"] = { ADDED_5_0_4 },
+				timeline = { ADDED_5_0_4 },
 			}),
 			i(87561, {	-- Silver Inlaid Staff
-				["timeline"] = { ADDED_5_0_4 },
+				timeline = { ADDED_5_0_4 },
 			}),
 		}),
 		-- #endif
@@ -1218,8 +1218,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				i(62019),	-- Eight of Waves
 			}),
 			i(60838, {	-- Mysterious Fortune Card
-				["timeline"] = { ADDED_4_0_3 },
-				["groups"] = {
+				timeline = { ADDED_4_0_3 },
+				groups = {
 					i(60839),	-- Fortune Card
 					i(60840),	-- Fortune Card
 					i(60841),	-- Fortune Card
@@ -1302,14 +1302,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(52485),	-- Jeweler's Ruby Monocle
 			i(52486),	-- Jeweler's Sapphire Monocle
 			i(52489, {	-- Rhinestone Sunglasses
-				["timeline"] = { ADDED_4_3_0 },
+				timeline = { ADDED_4_3_0 },
 				-- #if BEFORE SL
-				["collectible"] = false,
-				["description"] = "Keep this somewhere until the appearance can be learned in Shadowlands."
+				collectible = false,
+				description = "Keep this somewhere until the appearance can be learned in Shadowlands."
 				-- #endif
 			}),
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(257406),	-- Smoke Lamp (DECOR!)
 			i(249143),	-- Smoke Sconce (DECOR!)
 		})),
@@ -1429,13 +1429,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			n(QUALITY_RARE, {
 				i(52203),	-- Accurate Demonseye
 				i(52204),	-- Adept Ember Topaz
-				i(68778, {["timeline"] = {ADDED_4_0_6}}),	-- Agile Shadowspirit Diamond
+				i(68778, {timeline = {ADDED_4_0_6}}),	-- Agile Shadowspirit Diamond
 				i(52205),	-- Artful Ember Topaz
 				i(52294),	-- Austere Shadowspirit Diamond
 				i(52206),	-- Bold Inferno Ruby
 				i(52292),	-- Bracing Shadowspirit Diamond
 				i(52207),	-- Brilliant Inferno Ruby
-				i(68780, {["timeline"] = {ADDED_4_0_6}}),	-- Burning Shadowspirit Diamond
+				i(68780, {timeline = {ADDED_4_0_6}}),	-- Burning Shadowspirit Diamond
 				i(52291),	-- Chaotic Shadowspirit Diamond
 				i(52209),	-- Deadly Ember Topaz
 				i(52210),	-- Defender's Demonseye
@@ -1477,7 +1477,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				i(52249),	-- Resolute Ember Topaz
 				i(68358),	-- Resplendent Ember Topaz
 				i(52234),	-- Retaliating Demonseye
-				i(68779, {["timeline"] = {ADDED_4_0_6}}),	-- Reverberating Shadowspirit Diamond
+				i(68779, {timeline = {ADDED_4_0_6}}),	-- Reverberating Shadowspirit Diamond
 				i(52297),	-- Revitalizing Shadowspirit Diamond
 				i(52235),	-- Rigid Ocean Sapphire
 				i(52237),	-- Sensei's Dream Emerald
@@ -1492,13 +1492,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				i(52247),	-- Subtle Amberjewel
 				i(52248),	-- Timeless Demonseye
 				i(52217),	-- Veiled Demonseye
-				i(68741, {["timeline"] = {ADDED_4_0_6}}),	-- Vivid Dream Emerald
+				i(68741, {timeline = {ADDED_4_0_6}}),	-- Vivid Dream Emerald
 				i(68356),	-- Willful Ember Topaz
 				i(52250),	-- Zen Dream Emerald
 			}),
 			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(QUALITY_EPIC, {
-				["timeline"] = { ADDED_4_3_0 },
-				["groups"] = {
+				timeline = { ADDED_4_3_0 },
+				groups = {
 					i(71863),	-- Accurate Shadow Spinel
 					i(71852),	-- Adept Lava Coral
 					i(71854),	-- Artful Lava Coral
@@ -1579,7 +1579,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(52316),	-- Hessonite Band
 			i(52306),	-- Jasper Ring
 			i(52310),	-- Jasper Ring
-			i(69852, {["timeline"] = {ADDED_4_1_0}}),	-- Punisher's Band
+			i(69852, {timeline = {ADDED_4_1_0}}),	-- Punisher's Band
 			i(52319),	-- Ring of Warring Elements
 			-- #if ANYCLASSIC
 			-- Blizzard did a dumb when they implemented Cata Classic
@@ -1597,8 +1597,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 		filter(MISC, {
 			i(52304),	-- Fire Prism
-			i(204356, {["timeline"]={ADDED_10_0_7}}),	-- Illustrious Gemdust
-			i(52490, {["timeline"]={ADDED_4_3_0}}),	-- Stardust
+			i(204356, {timeline={ADDED_10_0_7}}),	-- Illustrious Gemdust
+			i(52490, {timeline={ADDED_4_3_0}}),	-- Stardust
 		}),
 		filter(NECK_F, {
 			i(52307),	-- Alicite Pendant
@@ -1636,7 +1636,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			n(BACK, {
 				-- Crieve NOTE: These cloaks were available with Firelands. We'll see if they get removed later.
 				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(70068, {	-- Bloodthirsty Fur Cloak
-					["timeline"] = {
+					timeline = {
 						ADDED_4_2_0,
 						-- #if CATA
 						REMOVED_5_0_4,
@@ -1646,7 +1646,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 					},
 				})),
 				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(70069, {	-- Bloodthirsty Hide Cloak
-					["timeline"] = {
+					timeline = {
 						ADDED_4_2_0,
 						-- #if CATA
 						REMOVED_5_0_4,
@@ -1664,10 +1664,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				-- #if ANYCLASSIC
 				-- Blizzard did a dumb when they implemented Cata Classic, making Dragon Soul PVP cloaks available at launch
 				-- and adding new, higher ilvl, cloaks which never got added to the game
-				i(226181, { ["timeline"] = { CREATED_4_4_0 } }),	-- Vicious Fur Cloak
-				i(226183, { ["timeline"] = { CREATED_4_4_0 } }),	-- Vicious Hide Cloak
+				i(226181, { timeline = { CREATED_4_4_0 } }),	-- Vicious Fur Cloak
+				i(226183, { timeline = { CREATED_4_4_0 } }),	-- Vicious Hide Cloak
 				i(75076, {	-- Vicious Fur Cloak
-					["timeline"] = {
+					timeline = {
 						ADDED_4_0_3_LAUNCH,
 						-- #if CATA
 						REMOVED_5_0_4,
@@ -1677,7 +1677,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 					},
 				}),
 				i(75077, {	-- Vicious Hide Cloak
-					["timeline"] = {
+					timeline = {
 						ADDED_4_0_3_LAUNCH,
 						-- #if CATA
 						REMOVED_5_0_4,
@@ -1832,7 +1832,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				dragonsoul(i(75116)),	-- Vicious Dragonscale Shoulders
 			}),
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(264712),	-- Gilnean Spare Saddle (DECOR!)
 			i(264677),	-- Rolled Scarab Rug (DECOR!)
 			i(257806),	-- Scaled Twilight Mosaic (DECOR!)
@@ -1840,7 +1840,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		filter(MISC, {
 			i(56551),	-- Charscale Leg Armor
 			i(56550),	-- Dragonscale Leg Armor
-			i(71720, {["timeline"] = { ADDED_4_2_0 }}),	-- Drakehide Leg Armor
+			i(71720, {timeline = { ADDED_4_2_0 }}),	-- Drakehide Leg Armor
 			i(56517),	-- Heavy Savage Armor Kit
 			i(56516),	-- Heavy Savage Leather
 			moltenfront(i(70136)),	-- Royal Scribe's Satchel
@@ -1855,28 +1855,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		-- #if NOT ANYCLASSIC
 		filter(BATTLE_PETS, {
 			i(67282, {	-- Elementium Geode (PET!)
-				["description"] = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",
-				["maps_disp"] = {
+				description = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",
+				maps_disp = {
 					TOL_BARAD,
 					TOL_BARAD_PENINSULA,
 					TWILIGHT_HIGHLANDS,
 					ULDUM,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 202738 },	-- Elementium Vein
 					{ "o", 202741 },	-- Rich Elementium Vein
 				},
-				["requireSkill"] = MINING,
+				requireSkill = MINING,
 			}),
 		}),
 		-- #endif
-		header(HEADERS.Spell, 2575, appendAllGroups(sharedData({ ["requireSkill"] = MINING, }, {	-- Mining
+		header(HEADERS.Spell, 2575, appendAllGroups(sharedData({ requireSkill = MINING, }, {	-- Mining
 			-- Nodes
 			o(202738, {	-- Elementium Vein
 				-- #if BEFORE 6.0.0
-				["learnedAt"] = 475,
+				learnedAt = 475,
 				-- #endif
-				["maps"] = {
+				maps = {
 					TOL_BARAD,
 					TOL_BARAD_PENINSULA,
 					TWILIGHT_HIGHLANDS,
@@ -1885,9 +1885,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			}),
 			o(202736, {	-- Obsidium Deposit
 				-- #if BEFORE 6.0.0
-				["learnedAt"] = 425,
+				learnedAt = 425,
 				-- #endif
-				["maps"] = {
+				maps = {
 					DEEPHOLM,
 					MOUNT_HYJAL,
 					VASHJIR_ABYSSAL_DEPTHS,
@@ -1897,18 +1897,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			}),
 			o(202737, {	-- Pyrite Deposit
 				-- #if BEFORE 6.0.0
-				["learnedAt"] = 525,
+				learnedAt = 525,
 				-- #endif
-				["maps"] = {
+				maps = {
 					TWILIGHT_HIGHLANDS,
 					ULDUM,
 				},
 			}),
 			o(202741, {	-- Rich Elementium Vein
 				-- #if BEFORE 6.0.0
-				["learnedAt"] = 500,
+				learnedAt = 500,
 				-- #endif
-				["maps"] = {
+				maps = {
 					TOL_BARAD,
 					TOL_BARAD_PENINSULA,
 					TWILIGHT_HIGHLANDS,
@@ -1917,9 +1917,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			}),
 			o(202739, {	-- Rich Obsidium Deposit
 				-- #if BEFORE 6.0.0
-				["learnedAt"] = 450,
+				learnedAt = 450,
 				-- #endif
-				["maps"] = {
+				maps = {
 					DEEPHOLM,
 					MOUNT_HYJAL,
 					VASHJIR_ABYSSAL_DEPTHS,
@@ -1929,9 +1929,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			}),
 			o(202740, {	-- Rich Pyrite Deposit
 				-- #if BEFORE 6.0.0
-				["learnedAt"] = 525,
+				learnedAt = 525,
 				-- #endif
-				["maps"] = {
+				maps = {
 					TOL_BARAD,
 					TOL_BARAD_PENINSULA,
 				},
@@ -1939,71 +1939,71 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 		{	-- Ores
 			i(52185, {	-- Elementium Ore
-				["maps_disp"] = {
+				maps_disp = {
 					TOL_BARAD,
 					TOL_BARAD_PENINSULA,
 					TWILIGHT_HIGHLANDS,
 					ULDUM,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 202738 },	-- Elementium Vein
 					{ "o", 202741 },	-- Rich Elementium Vein
 					{ "i", 67539 },	-- Tiny Treasure Chest
 				},
 			}),
 			i(108308, {	-- Elementium Ore Nugget
-				["providers"] = {
+				providers = {
 					{ "o", 202738 },	-- Elementium Vein
 					{ "o", 202741 },	-- Rich Elementium Vein
 				},
-				["timeline"] = {ADDED_6_0_2},
-				["groups"] = {
+				timeline = {ADDED_6_0_2},
+				groups = {
 					i(52185),	-- Elementium Ore
 				},
 			}),
 			i(53038, {	-- Obsidium Ore
-				["maps_disp"] = {
+				maps_disp = {
 					DEEPHOLM,
 					MOUNT_HYJAL,
 					VASHJIR_ABYSSAL_DEPTHS,
 					VASHJIR_KELPTHAR_FOREST,
 					VASHJIR_SHIMMERING_EXPANSE,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 202736 },	-- Obsidium Deposit
 					{ "o", 202739 },	-- Rich Obsidium Deposit
 				},
 			}),
 			i(108307, {	-- Obsidium Ore Nugget
-				["providers"] = {
+				providers = {
 					{ "o", 202736 },	-- Obsidium Deposit
 					{ "o", 202739 },	-- Rich Obsidium Deposit
 				},
-				["timeline"] = {ADDED_6_0_2},
-				["groups"] = {
+				timeline = {ADDED_6_0_2},
+				groups = {
 					i(53038),	-- Obsidium Ore
 				},
 			}),
 			i(52183, {	-- Pyrite Ore
-				["maps_disp"] = {
+				maps_disp = {
 					TOL_BARAD,
 					TOL_BARAD_PENINSULA,
 					TWILIGHT_HIGHLANDS,
 					ULDUM,
 				},
-				["providers"] = {
+				providers = {
 					{ "o", 202737 },	-- Pyrite Deposit
 					{ "o", 202740 },	-- Rich Pyrite Deposit
 					{ "i", 67539 },	-- Tiny Treasure Chest
 				},
 			}),
 			i(108309, {	-- Pyrite Ore Nugget
-				["providers"] = {
+				providers = {
 					{ "o", 202737 },	-- Pyrite Deposit
 					{ "o", 202740 },	-- Rich Pyrite Deposit
 				},
-				["timeline"] = {ADDED_6_0_2},
-				["groups"] = {
+				timeline = {ADDED_6_0_2},
+				groups = {
 					i(52183),	-- Pyrite Ore
 				},
 			}),
@@ -2027,7 +2027,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 	}),
 	prof(SKINNING, {
 		-- Danny Donkey: Not much here right now, skinned mats is planned to get here soon(tm).
-		["groups"] = {
+		groups = {
 			i(67495),	-- Strange Bloated Stomach
 		},
 	}),
@@ -2101,7 +2101,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			-- #if ANYCLASSIC
 			-- Blizzard did a dumb when they implemented Cata Classic, making Dragon Soul PVP cloaks available at launch
 			-- and adding a new, higher ilvl, cloak which never got added to the game
-			i(226182, { ["timeline"] = { CREATED_4_4_0 } }),	-- Vicious Embersilk Cape
+			i(226182, { timeline = { CREATED_4_4_0 } }),	-- Vicious Embersilk Cape
 			bloodied(i(75065)),	-- Vicious Embersilk Cape
 			-- #else
 			dragonsoul(i(75065)),	-- Vicious Embersilk Cape
@@ -2134,7 +2134,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			moltenfront(i(70138)),	-- Luxurious Silk Gem Bag
 			i(54445),	-- Otherworldly Bag
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(257402),	-- "Unity of Thorns" Tapestry (DECOR!)
 			i(245618),	-- Surwich Expedition Tent (DECOR!)
 		})),

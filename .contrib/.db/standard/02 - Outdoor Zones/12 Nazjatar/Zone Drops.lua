@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
+root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {
 	n(ZONE_DROPS, {
 		-- Benthic Items
 		i(169478),	-- Benthic Bracers
@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		i(169483),	-- Benthic Treads
 		-- Other Items
 		i(170186, {	-- Abyss Pearl
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				152122,	-- Abyssal Defiler
 				153314,	-- Aldrantiss
 				153309,	-- Alzana, Arrow of Thunder
@@ -35,12 +35,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170184, {	-- Ancient Reefwalker Bark
-			["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 experience for each of your faction's bodyguards.",
+			description = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 experience for each of your faction's bodyguards.",
 		}),
 		i(169475),	-- Barnacled Lockbox
 		i(170188, {	-- Barnacled Bag of Goods
-			["description"] = "Drops very rarely from Kil'karrok Mobs.",
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			description = "Drops very rarely from Kil'karrok Mobs.",
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				145346,	-- Kil'karrok Commander
 				152413,	-- Kil'karrok Hammerclaw
 				148392,	-- Kil'karrok Makrura
@@ -51,19 +51,19 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170172, {	-- Brightspine Shell
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				152793,	-- Sea Spireshell
 			},
 		}),
 		i(167012, {	-- Brinestone Pickaxe
-			["description"] = "Drops commonly from Chitterspine Encroachers in the north north west of Nazjatar, after completing the white item version of Brinestone Pickaxe (/att quest:55531)",
-			["coord"] = { 36.8, 13.1, NAZJATAR },
-			["crs"] = {	--
+			description = "Drops commonly from Chitterspine Encroachers in the north north west of Nazjatar, after completing the white item version of Brinestone Pickaxe (/att quest:55531)",
+			coord = { 36.8, 13.1, NAZJATAR },
+			crs = {	--
 				153804,	-- Chitterspine Encroacher
 			},
 		}),
 		i(168155, {	-- Chum
-			["crs"] = {	-- drops from additional mobs. this is all > 1% on WH
+			crs = {	-- drops from additional mobs. this is all > 1% on WH
 				153310,	-- Qalina, Spear of Ice
 				153309,	-- Alzana, Arrow of Thunder
 				153314,	-- Aldrantiss
@@ -74,11 +74,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(168099, {	-- Deepcoral Pod
-			["cr"] = 152297,	-- Deepcoral Bud
+			cr = 152297,	-- Deepcoral Bud
 		}),
 		i(170167, {	-- Eel Filet
-			["description"] = "Gives 250 reputation and 50 experience for your bodyguard.",
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			description = "Gives 250 reputation and 50 experience for your bodyguard.",
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				145338,	-- Abyssal Eel
 				152554,	-- Abyssal Spawn
 				149707,	-- Coral Slitherer
@@ -88,16 +88,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170472, {	-- Encrusted Coin (possibly part of a secret?)
-			["questID"] = 57141,
-			["description"] = "This item can drop from mobs, chests, or Mardivas's Universally Lauded Tote. Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
-			["coord"] = { 38.0, 59.2, NAZJATAR },
-			["repeatable"] = true,
-			["groups"] = {
+			questID = 57141,
+			description = "This item can drop from mobs, chests, or Mardivas's Universally Lauded Tote. Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
+			coord = { 38.0, 59.2, NAZJATAR },
+			repeatable = true,
+			groups = {
 				i(170473),	-- Jingling Sack
 			},
 		}),
 		i(170177, {	-- Exposed Fish
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				153314,	-- Aldrantiss
 				153309,	-- Alzana, Arrow of Thunder
 				154182,	-- Broken Snapdragon
@@ -121,8 +121,8 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170176, {	-- Fathom Ray Wing
-			["description"] = "Gives 250 reputation and 50 experience for your bodyguard.",
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			description = "Gives 250 reputation and 50 experience for your bodyguard.",
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				150373,	-- Bloated Sky Ray
 				150467,	-- Colossal Sky Ray
 				150376,	-- Coral Skate
@@ -131,15 +131,15 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170170, {	-- Fermented Deviate Fish
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				153314,	-- Aldrantiss
 				153310,	-- Qalina, Spear of Ice
 				153313,	-- Vyz'olgo the Mind-Taker
 			},
 		}),
 		i(170171, {	-- Giant Crab Leg
-			["description"] = "Gives 250 reputation and 50 experience for your bodyguard.",
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			description = "Gives 250 reputation and 50 experience for your bodyguard.",
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				153026,	-- Braxicus
 				152462,	-- Chitterspine Ambusher
 				153967,	-- Chitterspine Ambusher
@@ -157,9 +157,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170185, {	-- Intact Naga Skeleton
-			["questID"] = 57138,
-			["repeatable"] = true,
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			questID = 57138,
+			repeatable = true,
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				145340,	-- Siltridge Hydra
 				152541,	-- Siltridge Marauder
 				152546,	-- Stonemaw Devourer
@@ -167,14 +167,14 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				152543,	-- Voidscale Hydra
 				152544,	-- Voidscale Trenchstalker
 			},
-			["groups"] = {
+			groups = {
 				-- (putting a 'g' prevents this from complaining about being a character unlock due to questID)
 				currency(1721),	-- Prismatic Manapearl
 			},
 		}),
 		i(170512),	-- Lesser Benthic Arcanocrystal
 		i(170190, {	-- Mardivas' Bag of Containing
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				148475,	-- Blackfin Seer
 				152367,	-- Bloodfin Forager
 				152274,	-- Bloodfin Murloc
@@ -184,7 +184,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				152711,	-- Necrofin Reaver
 				151534,	-- Necrofin Scavenger
 			},
-			["groups"] = {
+			groups = {
 				i(169332),	-- Strange Mineralized Water
 				i(169334),	-- Strange Oceanic Sediment
 				i(169333),	-- Strange Volcanic Rock
@@ -192,12 +192,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		}),
 		i(168161),	-- Molted Shell
 		i(170174, {	-- Muck Slime
-			["crs"] = {	-- may drop from additional mobs, or chests. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs, or chests. check back and add crs as appropriate.
 				152792,	-- Prismatic Spireshell
 			},
 		}),
 		i(170192, {	-- Mudwrap
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				153314,	-- Aldrantiss
 				150834,	-- Disturbed Algan
 				152549,	-- Lost Algan
@@ -207,14 +207,14 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170180, {	-- Razorshell
-			["crs"] = {
+			crs = {
 				145970,	-- Razorshell Turtle
 				152383,	-- Snapshell Tortoise
 			},
 		}),
 		i(170183, {	-- Reefwalker Bark
-			["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			description = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				-- there are lots of mobs that have "reefwalker" in their name	-- maybe those?  there are also elite ones, so possibly more common from them?
 				152558,	-- Barnacled Reefwalker
 				150568,	-- Deep Reefwalker
@@ -229,14 +229,14 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		}),
 		i(167077),	-- Scrying Stone
 		i(170200, {	-- Seastorm Totem
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				153314,	-- Aldrantiss
 				153309,	-- Alzana, Arrow of Thunder
 				153310,	-- Qalina, Spear of Ice
 			},
 		}),
 		i(170193, {	-- Sea Totem
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				152675,	-- Crashing Waveguard
 				152164,	-- Frenzied Elemental
 				152674,	-- Restoring Spring
@@ -248,9 +248,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170191, {	-- Skeletal Hand
-			["description"] = "Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
-			["coord"] = { 38.0, 59.2, NAZJATAR },
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			description = "Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
+			coord = { 38.0, 59.2, NAZJATAR },
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				152710,	-- Necrofin Deep Oracle
 				152709,	-- Necrofin Murloc
 				152711,	-- Necrofin Reaver
@@ -259,7 +259,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			-- didn't trigger quest completion!
 		}),
 		i(170179, {	-- Snapdragon Scent Gland
-			["crs"] = {	-- may drop from additional mobs, or chests. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs, or chests. check back and add crs as appropriate.
 				154182,	-- Broken Snapdragon
 				154756,	-- Razortooth Snapdragon
 				153959,	-- Savage Snapdragon
@@ -277,12 +277,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170194, {	-- Storm Totem
-			["crs"] = {	-- may drop from additional mobs, or chests. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs, or chests. check back and add crs as appropriate.
 				152683	-- Raging Tempest
 			},
 		}),
 		i(170181, {	-- Tidal Guard
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				153306,	-- Azsh'ari Leviathan
 				154132,	-- Tidal Cracklemaw
 				153655,	-- Tidal Guardian
@@ -290,7 +290,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170195, {	-- Voidcaster's Supply Bag
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				145326,	-- Azsh'ari Invoker
 				152918,	-- Azsh'ari Oracle
 				150508,	-- Azsh'ari Siegemistress
@@ -313,13 +313,13 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170182, {	-- Voltscale Shield
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				153306,	-- Azsh'ari Leviathan
 			},
 		}),
 		-- Toys
 		i(170476, {	-- Underlight Sealamp (TOY!)
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				153334,	-- Abyss Elemental
 				153078,	-- Hand of Azshara
 				145324,	-- Imperial Defender
@@ -328,7 +328,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		i(170199, {	-- Zanj'ir Weapon Rack (TOY!)
-			["crs"] = {	-- may drop from additional mobs. check back and add crs as appropriate.
+			crs = {	-- may drop from additional mobs. check back and add crs as appropriate.
 				153299,	-- Bonebreaker Szun
 				152962,	-- Commander Sarj'eth
 				152963,	-- Lord Ha'kass
@@ -366,7 +366,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 	}),
 	-- Gear
 	n(ZONE_DROPS, {
-		["groups"] = {
+		groups = {
 			i(170116),	-- Darkened Slicer
 			i(169402),	-- Deeptide Amice
 			i(169403),	-- Deeptide Cinch

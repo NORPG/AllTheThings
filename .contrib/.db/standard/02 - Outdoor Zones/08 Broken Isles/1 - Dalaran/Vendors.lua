@@ -16,14 +16,14 @@ root(ROOTS.Zones, {
 		m(LEGION_DALARAN, {
 			n(VENDORS, {
 				n(96778, {	-- Aemara <Bowyer>
-					["coord"] = { 60.0, 52.6, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 60.0, 52.6, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 28989},	-- Aemara <Bowyer> (Dalaran Northrend)
 					},
 				}),
 				n(96780, {	-- Aerith Primrose
-					["coord"] = { 57.2, 52.4, LEGION_DALARAN },
-					["sym"] = {{"select","itemID",
+					coord = { 57.2, 52.4, LEGION_DALARAN },
+					sym = {{"select","itemID",
 						3422,	-- Beautiful Wildflowers
 						3420,	-- Black Rose
 						3424,	-- Bouquet Of Black Roses
@@ -31,13 +31,13 @@ root(ROOTS.Zones, {
 						3419,	-- Red Rose
 						3421,	-- Simple Wildflowers
 					}},
-					["groups"] = {
+					groups = {
 						i(142498),	-- Purple Blossom
 					},
 				}),
 				n(92936, {	-- Aimee <Pie, Pastry & Cakes>
-					["coord"] = { 50.85, 29.09, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 50.85, 29.09, LEGION_DALARAN },
+					groups = {
 						i(42432),	-- Berry Pie Slice
 						i(42436),	-- Chocolate Celebration Cake
 						i(42431),	-- Dalaran Brownie
@@ -49,18 +49,18 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(93528, {	-- Angelique Butler <First Aid Supplies>
-					["coord"] = { 36.6, 37.6, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 36.6, 37.6, LEGION_DALARAN },
+					groups = {
 						i(44694),	-- Antiseptic-Soaked Dressing
 						i(44692),	-- Dalaran Nurse's Gown
 						i(44693),	-- Wound Dressing
 					},
 				}),
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
-					["races"] = HORDE_ONLY,
-					["coord"] = { 56.5, 28.1, LEGION_DALARAN },
-					["groups"] = {
-						filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
+					races = HORDE_ONLY,
+					coord = { 56.5, 28.1, LEGION_DALARAN },
+					groups = {
+						filter(RECIPES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
 							moh(3, i(137894)),	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
 							moh(3, i(137926)),	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
 							moh(3, i(137975)),	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
@@ -69,14 +69,14 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(106655, {	-- Arcanomancer Vridiel <Blacksmithing Trainer>
-					["coord"] = { 45.2, 29.1, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 45.2, 29.1, LEGION_DALARAN },
+					groups = {
 						i(154879, {	-- Awoken Titan Essence
-							["description"] = "Unless you played during Legion and have legendaries still not at their maximum iLvl, this item is completely useless.",
+							description = "Unless you played during Legion and have legendaries still not at their maximum iLvl, this item is completely useless.",
 						}),
 						i(157796, {	-- Purified Titan Essence
-							["u"] = REMOVED_FROM_GAME,
-							["sym"] = {
+							u = REMOVED_FROM_GAME,
+							sym = {
 								{ "select", "npcID", 106655 },	-- Arcanomancer Vridiel <Blacksmithing Trainer>
 								{ "pop" },	-- Discard the header and acquire the children.
 								{ "is", "itemID" },	-- Select the Items.
@@ -84,9 +84,9 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147294, {	-- Bone-Wrought Coffer of the Damned [Death Knight]
-							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
-							["_drop"] = { "spellID" },
-							["groups"] = {
+							cost = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
+							_drop = { "spellID" },
+							groups = {
 								i(132459),	-- Perseverance of the Ebon Martyr
 								i(144280),	-- Death March
 								i(132444),	-- Prydaz, Xavric's Magnum Opus
@@ -114,9 +114,9 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147301, {	-- Coffer of Twin Faiths [Priest]
-							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
-							["_drop"] = { "spellID" },
-							["groups"] = {
+							cost = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
+							_drop = { "spellID" },
+							groups = {
 								i(144244),	-- Kam Xi'raff
 								i(151787),	-- The Alabaster Lady
 								i(133971),	-- Zenk'aram, Iridi's Anadem
@@ -147,9 +147,9 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147297, {	-- Deepwood Ranger's Quiver [Hunter]
-							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
-							["_drop"] = { "spellID" },
-							["groups"] = {
+							cost = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
+							_drop = { "spellID" },
+							groups = {
 								i(137064),	-- The Shadow Hunter's Voodoo Mask
 								i(144326),	-- The Mantle of Command
 								i(151803),	-- Celerity of the Windrunnerszao
@@ -176,9 +176,9 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147295, {	-- Demonslayer's Soul-Sealed Satchel [Demon Hunter]
-							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
-							["_drop"] = { "spellID" },
-							["groups"] = {
+							cost = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
+							_drop = { "spellID" },
+							groups = {
 								i(137061),	-- Raddon's Cascading Eyes
 								i(132444),	-- Prydaz, Xavric's Magnum Opus
 								i(144279),	-- Delusions of Grandeur
@@ -202,9 +202,9 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147303, {	-- Giant Elemental's Close Stone Fist [Shaman]
-							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
-							["_drop"] = { "spellID" },
-							["groups"] = {
+							cost = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
+							_drop = { "spellID" },
+							groups = {
 								i(143732),	-- Uncertain Reminder
 								i(137074),	-- Echoes of the Great Sundering
 								i(137616),	-- Emalon's Charged Core
@@ -231,9 +231,9 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147299, {	-- Hand-Carved Jade Puzzle Box [Monk]
-							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
-							["_drop"] = { "spellID" },
-							["groups"] = {
+							cost = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
+							_drop = { "spellID" },
+							groups = {
 								i(137063),	-- Fundamental Observation
 								i(151811),	-- The Wind Blows
 								i(151788),	-- Stormstout's Last Gasp
@@ -266,9 +266,9 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147302, {	-- Hollow Skeleton Key [Rogue]
-							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
-							["_drop"] = { "spellID" },
-							["groups"] = {
+							cost = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
+							_drop = { "spellID" },
+							groups = {
 								i(151815),	-- The Empty Crown
 								i(144236),	-- Mantle of the Master Assassino
 								i(151817),	-- The Curse of Restlessness
@@ -291,9 +291,9 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147300, {	-- Light-Bound Relinquary [Paladin]
-							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
-							["_drop"] = { "spellID" },
-							["groups"] = {
+							cost = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
+							_drop = { "spellID" },
+							groups = {
 								i(137065),	-- Justice Gaze
 								i(144275),	-- Saruan's Resolve
 								i(151782),	-- The Topless Tower
@@ -322,9 +322,9 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147296, {	-- Living Root-Bound Cache [Druid]
-							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
-							["_drop"] = { "spellID" },
-							["groups"] = {
+							cost = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
+							_drop = { "spellID" },
+							groups = {
 								i(151801),	-- Behemoth Headdress
 								i(132444),	-- Prydaz, Xavric's Magnum Opus
 								i(151783),	-- Chameleon Song
@@ -360,9 +360,9 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147304, {	-- Pocket Keystone to Abandoned World [Warlock]
-							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
-							["_drop"] = { "spellID" },
-							["groups"] = {
+							cost = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
+							_drop = { "spellID" },
+							groups = {
 								i(132394),	-- Hood of Eternal Disdain
 								i(144385),	-- Wakener's Loyalty
 								i(144369),	-- Lessons of Space-Time
@@ -388,9 +388,9 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147298, {	-- Spell-Secured Pocket of Infinite Depths [Mage]
-							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
-							["_drop"] = { "spellID" },
-							["groups"] = {
+							cost = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
+							_drop = { "spellID" },
+							groups = {
 								i(132863),	-- Darckli's Dragonfire Diadem
 								i(144274),	-- Gravity Seal
 								i(151810),	-- Shattered Fragments of Sindragosa
@@ -416,9 +416,9 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(147305, {	-- Stalwart Champion's War Chest [Warrior]
-							["cost"] = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
-							["_drop"] = { "spellID" },
-							["groups"] = {
+							cost = { { "c", 1533, 1000 } },	-- 1,000x Wakening Essence
+							_drop = { "spellID" },
+							groups = {
 								i(137088),	-- Ceann-Ar Charger
 								i(151823),	-- The Great Storm's Eye
 								i(143728),	-- Timeless Stratagem
@@ -445,58 +445,58 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(96979, {	-- Bragund Brightlink <Mail Armor Merchant>
-					["coord"] = { 51.0, 73.5, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 51.0, 73.5, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 29523},	-- Bragund Brightlink <Mail Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(96479, {	-- Breanni <Pet Supplies>
-					["coord"] = { 58.3, 39.4, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 58.3, 39.4, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 28951},	-- Breanni <Pet Supplies> (Dalaran Northrend)
 					},
 				}),
 				n(97339, {	-- Cho Ironpalm <Dagger & Fist Weapon Merchant>
-					["coord"] = { 53.1, 62.8, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 53.1, 62.8, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 29499},	-- Bartram Haller <Dagger & Fist Weapon Merchant>
 					},
 				}),
 				n(96785, {	-- Christi Stockton <Wine Vendor>
-					["coord"] = { 53.8, 32.6, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 53.8, 32.6, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 32337},	-- Christi Stockton <Wine Vendor> (Dalaran Northrend)
 					},
 				}),
 				n(96484, {	-- Clockwork Assistant <Jepetto's Companion>
-					["coord"] = { 43.4, 45.7, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 43.4, 45.7, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 29716},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
 					},
 				}),
 				n(96976, {	-- Cloth Merchant <Cloth Armor Merchant>
-					["coord"] = { 37.3, 56.3, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 37.3, 56.3, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 35496},	-- Rueben Lauren <Cloth Armor Merchant>
 					},
 				}),
 				n(96812, {	-- Elizabeth Ross <Tabard Vendor>
-					["coord"] = { 50.8, 55.6, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 50.8, 55.6, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 28776},	-- Elizabeth Ross <Tabard Vendor>
 					},
 				}),
 				n(96779, {	-- Dagna Flintlock <Gunsmith>
-					["coord"] = { 59.8, 52.2, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 59.8, 52.2, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 29476},	-- Dagna Flintlock <Gunsmith> (Dalaran Northrend)
 					},
 				}),
 				n(107326, {	-- Draemus <Exotic Pet Supplier>
-					["coord"] = { 58.7, 39.3, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 58.7, 39.3, LEGION_DALARAN },
+					groups = {
 						i(136910, {	-- Alarm-o-Bot (PET!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 200 },	-- 200x Shiny Pet Charm
 								-- #else
@@ -505,7 +505,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(118599, {	-- Autumnal Sproutling (PET!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
 								-- #else
@@ -514,7 +514,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(129760, {	-- Fel Piglet (PET!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 200 },	-- 200x Shiny Pet Charm
 								-- #else
@@ -523,7 +523,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(140231, {	-- Narcissa's Mirror (TOY!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 1000 },	-- 1000x Shiny Pet Charm
 								-- #else
@@ -532,7 +532,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(129878, {	-- Nightwatch Swooper (PET!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
 								-- #else
@@ -541,7 +541,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(129798, {	-- Plump Jelly (PET!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
@@ -550,7 +550,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(140274, {	-- River Calf (PET!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
@@ -561,7 +561,7 @@ root(ROOTS.Zones, {
 						i(144346, {	-- Boon of the Zookeeper
 							i(144345, {	-- Pile of Pet Goodies
 								i(116415, {	-- Shiny Pet Charm
-									["timeline"] = { REMOVED_10_2_5 },
+									timeline = { REMOVED_10_2_5 },
 								}),
 								-- #if AFTER 10.2.5
 								i(POLISHED_PET_CHARM),	-- Polished Pet Charm
@@ -571,11 +571,11 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(98724, {	-- Giada Goldleash <Exotic Pets and Accessories>
-					["coord"] = { 58.3, 38.0, LEGION_DALARAN },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					coord = { 58.3, 38.0, LEGION_DALARAN },
+					races = HORDE_ONLY,
+					groups = {
 						i(127704, {	-- Bloodthorn Hatchling (PET!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
@@ -584,7 +584,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(127703, {	-- Dusty Sporewing (PET!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
@@ -593,7 +593,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(127701, {	-- Glowing Sporebat (PET!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
 								-- #else
@@ -602,7 +602,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(127707, {	-- Indestructible Bone (TOY!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
@@ -611,7 +611,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(127705, {	-- Lost Netherpup (PET!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 200 },	-- 200x Shiny Pet Charm
 								-- #else
@@ -620,7 +620,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(127696, {	-- Magic Pet Mirror (TOY!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 500 },	-- 500x Shiny Pet Charm
 								-- #else
@@ -629,7 +629,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(127695, {	-- Spirit Wand (TOY!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
 								-- #else
@@ -640,23 +640,23 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(252043, {	-- Halenthos Brightstride <Decor Specialist>
-					["coord"] = { 67.0, 33.6, LEGION_DALARAN },
-					["races"] = HORDE_ONLY,
-					["timeline"] = { ADDED_11_2_7 },
-					["groups"] = {
+					coord = { 67.0, 33.6, LEGION_DALARAN },
+					races = HORDE_ONLY,
+					timeline = { ADDED_11_2_7 },
+					groups = {
 						i(253251, {	-- Blightfire Candle (DECOR!)
-							["cost"] = 2000000,	-- 200g
+							cost = 2000000,	-- 200g
 						}),
 						i(245411, {	-- Dark Ship's Lantern (DECOR!)
-							["cost"] = 20000000,	-- 2,000g
+							cost = 20000000,	-- 2,000g
 						}),
 					},
 				}),
 				n(93539, {	-- Hobart Grapplehammer <Engineering Supplies>
-					["coord"] = { 38.4, 24.7, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 38.4, 24.7, LEGION_DALARAN },
+					groups = {
 						i(136630),	-- "Twirling Bottom" Repeater
-						i(144328, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {	-- Boon of the Builder
+						i(144328, bubbleDownSelf({ timeline = { ADDED_7_1_5 } }, {	-- Boon of the Builder
 							i(144330, {	-- Sprocket Container
 								i(136630),	-- "Twirling Bottom" Repeater
 								i(136632),	-- Chaos Blaster
@@ -671,62 +671,62 @@ root(ROOTS.Zones, {
 						})),
 						i(136632),	-- Chaos Blaster
 						i(139555, {	-- Designs of the Grand Architect
-							["cost"] = 80000000,	-- 8,000g
-							["groups"] = {
+							cost = 80000000,	-- 8,000g
+							groups = {
 								artifact(918),	-- Titanstrike Hunter Hidden Appearance
 							},
 						}),
 						i(136629),	-- Felgibber Shotgun
 						i(136782),	-- Fireworks Instruction Manual (CI!)
 						i(137709, {	-- Schematic: Auto-Hammer [Rank 2] (RECIPE!)
-							["sourceQuests"] = { 40858 },	-- The Missing Pieces
+							sourceQuests = { 40858 },	-- The Missing Pieces
 						}),
 						i(137705, {	-- Schematic: Deployable Bullet Dispenser [Rank 2] (RECIPE!)
-							["sourceQuests"] = { 40861 },	-- In My Sights
+							sourceQuests = { 40861 },	-- In My Sights
 						}),
 						i(133673, {	-- Schematic: Double-Barreled Cranial Cannon [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
+							sourceQuests = { 40882 },	-- Court of Stars: Revamping the Recoil
 						}),
 						i(137710, {	-- Schematic: Failure Detection Pylon [Rank 2] (RECIPE!)
-							["sourceQuests"] = { 40875 },	-- Going to Waste
+							sourceQuests = { 40875 },	-- Going to Waste
 						}),
 						i(137708, {	-- Schematic: Gunpack [Rank 2] (RECIPE!)
-							["sourceQuests"] = { 40873 },	-- Keep Yer Powder Dry
+							sourceQuests = { 40873 },	-- Keep Yer Powder Dry
 						}),
 						i(137691, {	-- Schematic: Intra-Dalaran Wormhole Generator
-							["sourceQuests"] = { 40868 },	-- Wibbly-Wobbly, Timey-Wimey
+							sourceQuests = { 40868 },	-- Wibbly-Wobbly, Timey-Wimey
 						}),
 						i(133674, {	-- Schematic: Ironsight Cranial Cannon [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
+							sourceQuests = { 40882 },	-- Court of Stars: Revamping the Recoil
 						}),
 						i(137707, {	-- Schematic: Pump-Action Bandage Gun [Rank 2] (RECIPE!)
-							["sourceQuests"] = { 40869 },	-- Fire and Forget
+							sourceQuests = { 40869 },	-- Fire and Forget
 						}),
 						i(141849, {	-- Schematic: Reaves Module: Bling Mode (RECIPE!)
-							["sourceQuests"] = { 40881 },	-- Oil Rags to Riches
+							sourceQuests = { 40881 },	-- Oil Rags to Riches
 						}),
 						i(133672, {	-- Schematic: Sawed-Off Cranial Cannon [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
+							sourceQuests = { 40882 },	-- Court of Stars: Revamping the Recoil
 						}),
 						i(133671, {	-- Schematic: Semi-Automagic Cranial Cannon [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
+							sourceQuests = { 40882 },	-- Court of Stars: Revamping the Recoil
 						}),
 						i(23817, {	-- Schematic: Titanium Toolbox (RECIPE!)
-							["isLimited"] = true,
+							isLimited = true,
 						}),
 						i(136631),	-- Surface-to-Infernal Rocket Launcher
 						i(141047),	-- Technique: Glyph of the Goblin Anti-Grav Flare (RECIPE!)
 					},
 				}),
 				n(97331, {	-- Icks <Staves>
-					["coord"] = { 49.0, 73.0, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 49.0, 73.0, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 29494},	-- Shen Kang Cheng <Staves> (Dalaran Northrend)
 					},
 				}),
 				n(93530, {	-- Ildine Sorrowspear <Enchanting Supplies>
-					["coord"] = { 38.5, 41.2, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 38.5, 41.2, LEGION_DALARAN },
+					groups = {
 						i(139494),	-- Forgotten Formulas of the Broken Isles
 						i(128591),	-- Formula: Enchant Cloak - Binding of Agility [Rank 2] (RECIPE!)
 						i(128592),	-- Formula: Enchant Cloak - Binding of Intellect [Rank 2] (RECIPE!)
@@ -746,8 +746,8 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(92184, {	-- Imindril Spearsong <Blacksmithing Vendor>
-					["coord"] = { 46.2, 27.2, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 46.2, 27.2, LEGION_DALARAN },
+					groups = {
 						i(123928),	-- Plans: Leystone Armguards [Rank 2] (RECIPE!)
 						i(123934),	-- Plans: Leystone Boots [Rank 2] (RECIPE!)
 						i(123935),	-- Plans: Leystone Breastplate [Rank 2] (RECIPE!)
@@ -759,9 +759,9 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(100500, {	-- Jabrul <Jewelcrafting Master>
-					["sourceQuests"] = { 40547 },	-- To Dalaran, With Love
-					["coord"] = { 39.6, 34.5, LEGION_DALARAN },
-					["groups"] = {
+					sourceQuests = { 40547 },	-- To Dalaran, With Love
+					coord = { 39.6, 34.5, LEGION_DALARAN },
+					groups = {
 						i(137809),	-- Design: Ancient Maelstrom Amulet [Rank 1] (RECIPE!)
 						i(137794),	-- Design: Azsunite Loop [Rank 1] (RECIPE!)
 						i(137797),	-- Design: Azsunite Pendant [Rank 1] (RECIPE!)
@@ -796,8 +796,8 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(93544, {	-- Jang Quillpaw <Inscription Supplies>
-					["coord"] = { 41.4, 36.7, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 41.4, 36.7, LEGION_DALARAN },
+					groups = {
 						i(141042),	-- Technique: Glyph of Autumnal Bloom (RECIPE!)
 						i(137733),	-- Technique: Glyph of Blackout (RECIPE!)
 						i(141030),	-- Technique: Glyph of Cracked Ice (RECIPE!)
@@ -821,30 +821,30 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(97009, {	-- Jawknee <Axe Merchant>
-					["coord"] = { 53.8, 61.6, LEGION_DALARAN },
-					["sym"] = {{"sub", "common_vendor", 29496}},	-- Kerta the Bold
+					coord = { 53.8, 61.6, LEGION_DALARAN },
+					sym = {{"sub", "common_vendor", 29496}},	-- Kerta the Bold
 				}),
 				n(96483, {	-- Jepetto Joybuzz <Toymaker>
-					["coord"] = { 43.6, 45.6, LEGION_DALARAN },
-					["timeline"] = { ADDED_7_0_3 },
-					["sym"] = {{"sub", "common_vendor", 29716}},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
-					["groups"] = {
+					coord = { 43.6, 45.6, LEGION_DALARAN },
+					timeline = { ADDED_7_0_3 },
+					sym = {{"sub", "common_vendor", 29716}},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
+					groups = {
 						i(129057),	-- Dalaran Disc (TOY!)
 						i(140309, {	-- Prismatic Bauble (TOY!)
-							["timeline"] = { ADDED_10_1_0, REMOVED_10_1_5 },	-- During June 2023
-							["cost"] = 2500000000,	-- 250,000g
+							timeline = { ADDED_10_1_0, REMOVED_10_1_5 },	-- During June 2023
+							cost = 2500000000,	-- 250,000g
 						}),
 					},
 				}),
 				n(97007, {	-- Kerta the Bold <Mace & Polearm Merchant>
-					["coord"] = { 54.4, 63.0, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 54.4, 63.0, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 29496},	-- Kerta the Bold <Axe & Polearm Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(93524, {	-- Lalla Brightweave <Tailoring Supplies>
-					["coord"] = { 36.1, 33.3, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 36.1, 33.3, LEGION_DALARAN },
+					groups = {
 						i(137965),	-- Pattern: Imbued Silkweave Bracers [Rank 2] (RECIPE!)
 						i(137967),	-- Pattern: Imbued Silkweave Epaulets [Rank 2] (RECIPE!)
 						i(137970),	-- Pattern: Imbued Silkweave Gloves [Rank 2] (RECIPE!)
@@ -863,10 +863,10 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
-					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 29.4, 75.6, LEGION_DALARAN },
-					["groups"] = {
-						filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
+					races = ALLIANCE_ONLY,
+					coord = { 29.4, 75.6, LEGION_DALARAN },
+					groups = {
+						filter(RECIPES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
 							moh(3, i(137894)),	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
 							moh(3, i(137926)),	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
 							moh(3, i(137975)),	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
@@ -875,233 +875,233 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(120906, {	-- Marshal Frazer <Gladiator Quartermaster>
-					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 33.4, 74.0, LEGION_DALARAN },
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					coord = { 33.4, 74.0, LEGION_DALARAN },
+					groups = {
 						--[[
 						currency(1356, {	-- Echoes of Battle
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
+							u = REMOVED_FROM_GAME,
+							groups = {
 								i(149424, {	-- Helm of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_HEAD"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_HEAD"),
 								}),
 								i(149427, {	-- Pauldrons of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
 								}),
 								i(149432, {	-- Cloak of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_CLOAK"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_CLOAK"),
 								}),
 								i(149425, {	-- Chest of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149431, {	-- Bracers of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_WRIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_WRIST"),
 								}),
 								i(149428, {	-- Gloves of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_HAND"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_HAND"),
 								}),
 								i(149429, {	-- Cinch of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_WAIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_WAIST"),
 								}),
 								i(149426, {	-- Leggings of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_LEGS"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_LEGS"),
 								}),
 								i(149430, {	-- Treads of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_FEET"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_FEET"),
 								}),
 								i(149406, {	-- Helm of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_HEAD"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_HEAD"),
 								}),
 								i(149409, {	-- Pauldrons of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
 								}),
 								i(149414, {	-- Cloak of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_CLOAK"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_CLOAK"),
 								}),
 								i(149407, {	-- Chest of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149413, {	-- Bracers of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_WRIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_WRIST"),
 								}),
 								i(149410, {	-- Gloves of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_HAND"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_HAND"),
 								}),
 								i(149411, {	-- Cinch of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_WAIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_WAIST"),
 								}),
 								i(149408, {	-- Leggings of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_LEGS"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_LEGS"),
 								}),
 								i(149412, {	-- Treads of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_FEET"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_FEET"),
 								}),
 								i(149388, {	-- Helm of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_HEAD"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_HEAD"),
 								}),
 								i(149391, {	-- Pauldrons of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
 								}),
 								i(149396, {	-- Cloak of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_CLOAK"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_CLOAK"),
 								}),
 								i(149389, {	-- Chest of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149395, {	-- Bracers of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_WRIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_WRIST"),
 								}),
 								i(149392, {	-- Gloves of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_HAND"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_HAND"),
 								}),
 								i(149393, {	-- Cinch of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_WAIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_WAIST"),
 								}),
 								i(149390, {	-- Leggings of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_LEGS"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_LEGS"),
 								}),
 								i(149394, {	-- Treads of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_FEET"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_FEET"),
 								}),
 							},
 						}),
 						currency(1357, {	-- Echoes of Domination
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
+							u = REMOVED_FROM_GAME,
+							groups = {
 								i(149433, {	-- Helm of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_HEAD"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_HEAD"),
 								}),
 								i(149436, {	-- Pauldrons of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_SHOULDER"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_SHOULDER"),
 								}),
 								i(149441, {	-- Cloak of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_CLOAK"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_CLOAK"),
 								}),
 								i(149434, {	-- Chest of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_CHEST", "INVTYPE_ROBE"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149440, {	-- Bracers of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_WRIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_WRIST"),
 								}),
 								i(149437, {	-- Gloves of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_HAND"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_HAND"),
 								}),
 								i(149438, {	-- Cinch of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_WAIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_WAIST"),
 								}),
 								i(149435, {	-- Leggings of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_LEGS"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_LEGS"),
 								}),
 								i(149439, {	-- Treads of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_FEET"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_FEET"),
 								}),
 								i(149415, {	-- Helm of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_HEAD"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_HEAD"),
 								}),
 								i(149418, {	-- Pauldrons of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_SHOULDER"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_SHOULDER"),
 								}),
 								i(149423, {	-- Cloak of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_CLOAK"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_CLOAK"),
 								}),
 								i(149416, {	-- Chest of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_CHEST", "INVTYPE_ROBE"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149422, {	-- Bracers of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_WRIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_WRIST"),
 								}),
 								i(149419, {	-- Gloves of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_HAND"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_HAND"),
 								}),
 								i(149420, {	-- Cinch of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_WAIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_WAIST"),
 								}),
 								i(149417, {	-- Leggings of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_LEGS"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_LEGS"),
 								}),
 								i(149421, {	-- Treads of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_FEET"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_FEET"),
 								}),
 								i(149397, {	-- Helm of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_HEAD"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_HEAD"),
 								}),
 								i(149400, {	-- Pauldrons of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_SHOULDER"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_SHOULDER"),
 								}),
 								i(149405, {	-- Cloak of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_CLOAK"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_CLOAK"),
 								}),
 								i(149398, {	-- Chest of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_CHEST", "INVTYPE_ROBE"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149404, {	-- Bracers of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_WRIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_WRIST"),
 								}),
 								i(149401, {	-- Gloves of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_HAND"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_HAND"),
 								}),
 								i(149402, {	-- Cinch of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_WAIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_WAIST"),
 								}),
 								i(149399, {	-- Leggings of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_LEGS"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_LEGS"),
 								}),
 								i(149403, {	-- Treads of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_FEET"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_FEET"),
 								}),
 							},
 						}),
@@ -1109,121 +1109,121 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(96980, {	-- Matilda Brightlink <Mail Armor Merchant>
-					["coord"] = { 51.3, 73.4, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 51.3, 73.4, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 35500},	-- Matilda Brightlink <Mail Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(92489, {	-- Mei Francis <Exotic Mounts>
-					["coord"] = { 57.3, 42.4, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 57.3, 42.4, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 32216},	-- Mei Francis <Exotic Mounts> (Dalaran Northrend)
 					},
-					["groups"] = {
-						i(224270, {["timeline"] = { ADDED_10_2_7 }}),	-- Certificate of Ownership (RECIPE!)
+					groups = {
+						i(224270, {timeline = { ADDED_10_2_7 }}),	-- Certificate of Ownership (RECIPE!)
 					},
 				}),
 				n(96987, {	-- Norvin Alderman <Cloaks>
-					["coord"] = { 36.9, 55.8, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 36.9, 55.8, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 29495},	-- Norvin Alderman <Cloaks> (Dalaran Northrend)
 					},
 				}),
 				n(97001, {	-- Orton Bennet <Offhand Offerings>
-					["coord"] = { 51.5, 55.5, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 51.5, 55.5, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 29527},	-- Orton Bennet <Offhand Offerings> (Dalaran Northrend)
 					},
 				}),
 				n(96975, {	-- Paldesse <Cloth Armor Merchant>
-					["coord"] = { 37.5, 56.1, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 37.5, 56.1, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 28995},	-- Paldesse <Cloth Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(92457, {	-- Patricia Egan <Alchemy Supplier>
-					["coord"] = { 42.2, 32.3, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 42.2, 32.3, LEGION_DALARAN },
+					groups = {
 						i(127898, {	-- Recipe: Ancient Healing Potion [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39325 },	-- Get Your Mix On
+							sourceQuests = { 39325 },	-- Get Your Mix On
 						}),
 						i(127917, {	-- Recipe: Ancient Healing Potion [Rank 2] (RECIPE!)
-							["sourceQuests"] = { 39325 },	-- Get Your Mix On
+							sourceQuests = { 39325 },	-- Get Your Mix On
 						}),
 						i(127899, {	-- Recipe: Ancient Mana Potion [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39325 },	-- Get Your Mix On
+							sourceQuests = { 39325 },	-- Get Your Mix On
 						}),
 						i(127900, {	-- Recipe: Ancient Rejuvenation Potion [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39325 },	-- Get Your Mix On
+							sourceQuests = { 39325 },	-- Get Your Mix On
 						}),
 						i(127903, {	-- Recipe: Avalanche Elixir [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39334 },	-- Thanks for Flasking
+							sourceQuests = { 39334 },	-- Thanks for Flasking
 						}),
 						i(127901, {	-- Recipe: Draught of Raw Magic [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39330 },	-- Ley Hunting
+							sourceQuests = { 39330 },	-- Ley Hunting
 						}),
 						i(127914, {	-- Recipe: Flask of Ten Thousand Scars [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39346 },	-- Testing the Calibration
+							sourceQuests = { 39346 },	-- Testing the Calibration
 						}),
 						i(127913, {	-- Recipe: Flask of the Countless Armies [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39346 },	-- Testing the Calibration
+							sourceQuests = { 39346 },	-- Testing the Calibration
 						}),
 						i(127912, {	-- Recipe: Flask of the Seventh Demon [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39346 },	-- Testing the Calibration
+							sourceQuests = { 39346 },	-- Testing the Calibration
 						}),
 						i(127911, {	-- Recipe: Flask of the Whispered Pact [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39346 },	-- Testing the Calibration
+							sourceQuests = { 39346 },	-- Testing the Calibration
 						}),
 						i(127906, {	-- Recipe: Infernal Alchemist Stone [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39341 },	-- Vault of the Wardens: Demon's Bile
+							sourceQuests = { 39341 },	-- Vault of the Wardens: Demon's Bile
 						}),
 						i(127910, {	-- Recipe: Leytorrent Potion [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39343 },	-- Vault of the Wardens: Bendy Glass Tubes
+							sourceQuests = { 39343 },	-- Vault of the Wardens: Bendy Glass Tubes
 						}),
 						i(127907, {	-- Recipe: Potion of Deadly Grace [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39343 },	-- Vault of the Wardens: Bendy Glass Tubes
+							sourceQuests = { 39343 },	-- Vault of the Wardens: Bendy Glass Tubes
 						}),
 						i(127908, {	-- Recipe: Potion of the Old War [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39343 },	-- Vault of the Wardens: Bendy Glass Tubes
+							sourceQuests = { 39343 },	-- Vault of the Wardens: Bendy Glass Tubes
 						}),
 						i(160664, {	-- Recipe: Silvery Salve (RECIPE!)
-							["timeline"] = { ADDED_8_0_1 },
+							timeline = { ADDED_8_0_1 },
 						}),
 						i(127904, {	-- Recipe: Skaggldrynk [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39336 },	-- We Need More Powder!
+							sourceQuests = { 39336 },	-- We Need More Powder!
 						}),
 						i(127905, {	-- Recipe: Skystep Potion [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39338 },	-- Return the Filter
+							sourceQuests = { 39338 },	-- Return the Filter
 						}),
 						i(127915, {	-- Recipe: Spirit Cauldron [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 42081 },	-- In With the New
+							sourceQuests = { 42081 },	-- In With the New
 						}),
 						i(127902, {	-- Recipe: Sylvan Elixir [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39332 },	-- Furbolg Firewater
+							sourceQuests = { 39332 },	-- Furbolg Firewater
 						}),
 						i(127909, {	-- Recipe: Unbending Potion [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39343 },	-- Vault of the Wardens: Bendy Glass Tubes
+							sourceQuests = { 39343 },	-- Vault of the Wardens: Bendy Glass Tubes
 						}),
 						i(128209, {	-- Recipe: Wild Transmutation [Rank 1] (RECIPE!)
-							["sourceQuests"] = { 39338 },	-- Return the Filter
+							sourceQuests = { 39338 },	-- Return the Filter
 						}),
 					},
 				}),
 				n(92195, {	-- Professor Pallin <Inscription Trainer>
-					["coord"] = { 41.5, 37.3, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 41.5, 37.3, LEGION_DALARAN },
+					groups = {
 						i(137787),	-- Technique: Songs of Battle (RECIPE!)
 					},
 				}),
 				n(96978, {	-- Rafael Langrom <Leather Armor Merchant>
-					["coord"] = { 50.8, 72.0, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 50.8, 72.0, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 35497},	-- Rafael Langrom <Leather Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(93521, {	-- Ranid Glowergold <Leatherworking & Skinning Supplies>
-					["coord"] = { 34.6, 28.6, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 34.6, 28.6, LEGION_DALARAN },
+					groups = {
 						i(137884),	-- Pattern: Dreadleather Bindings [Rank 2] (RECIPE!)
 						i(137890),	-- Pattern: Dreadleather Footpads [Rank 2] (RECIPE!)
 						i(137889),	-- Pattern: Dreadleather Gloves [Rank 2] (RECIPE!)
@@ -1232,10 +1232,10 @@ root(ROOTS.Zones, {
 						i(137887),	-- Pattern: Dreadleather Pants [Rank 2] (RECIPE!)
 						i(137886),	-- Pattern: Dreadleather Shoulderguard [Rank 2] (RECIPE!)
 						i(142407, {	-- Pattern: Drums of the Mountain [Rank 1] (RECIPE!)
-							["timeline"] = { ADDED_7_1_0 },
+							timeline = { ADDED_7_1_0 },
 						}),
 						i(141850, {	-- Pattern: Elderhorn Riding Harness (RECIPE!)
-							["description"] = "The vendor will only sell this recipe to those who have already completed the quest that rewards it. This is in case you deleted the recipe without learning it, or if you dropped Leatherworking after doing the quest and decided to relearn it later.",
+							description = "The vendor will only sell this recipe to those who have already completed the quest that rewards it. This is in case you deleted the recipe without learning it, or if you dropped Leatherworking after doing the quest and decided to relearn it later.",
 						}),
 						i(137916),	-- Pattern: Gravenscale Armbands [Rank 2] (RECIPE!)
 						i(137921),	-- Pattern: Gravenscale Grips [Rank 2] (RECIPE!)
@@ -1247,71 +1247,71 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(112716, {	-- Rasil Fireborne <Art Dealer>
-					["coord"] = { 43.1, 49.1, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 43.1, 49.1, LEGION_DALARAN },
+					groups = {
 						i(284264, {	-- "Gnoma Lisa" Painting (DECOR!)
-							["cost"] = {
+							cost = {
 								{ "c", ORDER_RESOURCES, 500 },
 								{ "g", 10000000 },	-- 1,000g
 							},
-							["timeline"] = { ADDED_12_1_5 },
+							timeline = { ADDED_12_1_5 },
 						}),
 						i(246851, {	-- "Raising Your Eyes" Painting (DECOR!)
-							["cost"] = 150000000,	-- 15,000g
-							["timeline"] = { ADDED_11_2_7 },
+							cost = 150000000,	-- 15,000g
+							timeline = { ADDED_11_2_7 },
 						}),
 					},
 				}),
 				n(97332, {	-- Richard Hatstock <Haberdasher>
-					["coord"] = { 37.2, 55.6, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 37.2, 55.6, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 29702},	-- Chameli Banaphash <Haberdasher> (Dalaran Northrend)
 					},
 				}),
 				n(97342, {	-- Salan Sunthread <Clothier>
-					["coord"] = { 37.7, 55.6, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 37.7, 55.6, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 29491},	-- Karandonna <Clothier>
 					},
 				}),
 				n(93543, {	-- Sminx Glasseye
-					["coord"] = { 39.6, 35.1, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 39.6, 35.1, LEGION_DALARAN },
+					groups = {
 						i(139599, {	-- Empowered Ring of the Kirin Tor
-							-- ["cost"] = 2500000000,	-- 250,000g
+							-- cost = 2500000000,	-- 250,000g
 						}),
 					},
 				}),
 				n(97529, {	-- The Amazing Zanzo
-					["description"] = "Wanders around the city.",
-					["groups"] = {
+					description = "Wanders around the city.",
+					groups = {
 						{
-							["recipeID"] = 28272,	-- Polymorph (Pig)
-							["classes"] = { MAGE },
+							recipeID = 28272,	-- Polymorph (Pig)
+							classes = { MAGE },
 						},
 					},
 				}),
 				n(108468, {	-- The Mad Merchant
-					["description"] = "This vendor is not always present.",
-					["coord"] = { 43.2, 46.6, LEGION_DALARAN },
-					["groups"] = {
+					description = "This vendor is not always present.",
+					coord = { 43.2, 46.6, LEGION_DALARAN },
+					groups = {
 						i(137570, {	-- Bloodfang Widow (MOUNT!)
-							["cost"] = 20000000000,	-- 2,000,000g
+							cost = 20000000000,	-- 2,000,000g
 						}),
 						i(136923, {	-- Celestial Calf (PET!)
-							["cost"] = 10000000000,	-- 1,000,000g
+							cost = 10000000000,	-- 1,000,000g
 						}),
 						i(138300, {	-- Madman's Luggage
-							["cost"] = 5000000000,	-- 500,000g
+							cost = 5000000000,	-- 500,000g
 						}),
 						i(140309, {	-- Prismatic Bauble (TOY!)
-							["cost"] = 2500000000,	-- 250,000g
+							cost = 2500000000,	-- 250,000g
 						}),
 					},
 				}),
 				n(93526, {	-- Tiffany Cartier <Jewelcrafting Supplies>
-					["coord"] = { 39.86, 34.77, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 39.86, 34.77, LEGION_DALARAN },
+					groups = {
 						i(137834),	-- Design: Ancient Maelstrom Amulet [Rank 2] (RECIPE!)
 						i(137819),	-- Design: Azsunite Loop [Rank 2] (RECIPE!)
 						i(137822),	-- Design: Azsunite Pendant [Rank 2] (RECIPE!)
@@ -1331,11 +1331,11 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(98723, {	-- Tiffy Trapspring <Exotic Pets and Accessories>
-					["coord"] = { 59.2, 39.9, LEGION_DALARAN },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					coord = { 59.2, 39.9, LEGION_DALARAN },
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(127704, {	-- Bloodthorn Hatchling (PET!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
@@ -1344,7 +1344,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(127703, {	-- Dusty Sporewing (PET!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
@@ -1353,7 +1353,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(127701, {	-- Glowing Sporebat (PET!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
 								-- #else
@@ -1362,7 +1362,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(127707, {	-- Indestructible Bone (TOY!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
@@ -1371,7 +1371,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(127705, {	-- Lost Netherpup (PET!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 200 },	-- 200x Shiny Pet Charm
 								-- #else
@@ -1380,7 +1380,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(127696, {	-- Magic Pet Mirror (TOY!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 500 },	-- 500x Shiny Pet Charm
 								-- #else
@@ -1389,7 +1389,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						i(127695, {	-- Spirit Wand (TOY!)
-							["cost"] = {
+							cost = {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
 								-- #else
@@ -1400,245 +1400,245 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(97011, {	-- Valaden Silverblade <Sword Merchant>
-					["coord"] = { 54.1, 63.2, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 54.1, 63.2, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 28991},	-- Valaden Silverblade <Sword Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(96977, {	-- Valerie Langrom <Leather Armor Merchant>
-					["coord"] = { 51.1, 72.7, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 51.1, 72.7, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 28992},	-- Valerie Langrom <Leather Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(120687, {	-- Violet Shadowmend <Gladiator Quartermaster>	-- Horde
-					["races"] = HORDE_ONLY,
-					["coord"] = { 59.6, 25.2, LEGION_DALARAN },
-					["groups"] = {
+					races = HORDE_ONLY,
+					coord = { 59.6, 25.2, LEGION_DALARAN },
+					groups = {
 						--[[
 						currency(1356, {	-- Echoes of Battle
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
+							u = REMOVED_FROM_GAME,
+							groups = {
 								i(149424, {	-- Helm of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_HEAD"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_HEAD"),
 								}),
 								i(149427, {	-- Pauldrons of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
 								}),
 								i(149432, {	-- Cloak of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_CLOAK"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_CLOAK"),
 								}),
 								i(149425, {	-- Chest of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149431, {	-- Bracers of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_WRIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_WRIST"),
 								}),
 								i(149428, {	-- Gloves of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_HAND"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_HAND"),
 								}),
 								i(149429, {	-- Cinch of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_WAIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_WAIST"),
 								}),
 								i(149426, {	-- Leggings of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_LEGS"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_LEGS"),
 								}),
 								i(149430, {	-- Treads of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_FEET"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_FEET"),
 								}),
 								i(149406, {	-- Helm of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_HEAD"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_HEAD"),
 								}),
 								i(149409, {	-- Pauldrons of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
 								}),
 								i(149414, {	-- Cloak of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_CLOAK"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_CLOAK"),
 								}),
 								i(149407, {	-- Chest of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149413, {	-- Bracers of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_WRIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_WRIST"),
 								}),
 								i(149410, {	-- Gloves of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_HAND"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_HAND"),
 								}),
 								i(149411, {	-- Cinch of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_WAIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_WAIST"),
 								}),
 								i(149408, {	-- Leggings of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_LEGS"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_LEGS"),
 								}),
 								i(149412, {	-- Treads of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_FEET"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_FEET"),
 								}),
 								i(149388, {	-- Helm of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_HEAD"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_HEAD"),
 								}),
 								i(149391, {	-- Pauldrons of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
 								}),
 								i(149396, {	-- Cloak of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_CLOAK"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_CLOAK"),
 								}),
 								i(149389, {	-- Chest of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149395, {	-- Bracers of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_WRIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_WRIST"),
 								}),
 								i(149392, {	-- Gloves of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_HAND"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_HAND"),
 								}),
 								i(149393, {	-- Cinch of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_WAIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_WAIST"),
 								}),
 								i(149390, {	-- Leggings of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_LEGS"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_LEGS"),
 								}),
 								i(149394, {	-- Treads of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_FEET"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_FEET"),
 								}),
 							},
 						}),
 						currency(1357, {	-- Echoes of Domination
-							["u"] = REMOVED_FROM_GAME,
-							["groups"] = {
+							u = REMOVED_FROM_GAME,
+							groups = {
 								i(149433, {	-- Helm of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_HEAD"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_HEAD"),
 								}),
 								i(149436, {	-- Pauldrons of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_SHOULDER"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_SHOULDER"),
 								}),
 								i(149441, {	-- Cloak of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_CLOAK"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_CLOAK"),
 								}),
 								i(149434, {	-- Chest of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_CHEST", "INVTYPE_ROBE"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149440, {	-- Bracers of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_WRIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_WRIST"),
 								}),
 								i(149437, {	-- Gloves of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_HAND"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_HAND"),
 								}),
 								i(149438, {	-- Cinch of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_WAIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_WAIST"),
 								}),
 								i(149435, {	-- Leggings of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_LEGS"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_LEGS"),
 								}),
 								i(149439, {	-- Treads of the Demonic Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_FEET"),
+									u = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
+									sym = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_FEET"),
 								}),
 								i(149415, {	-- Helm of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_HEAD"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_HEAD"),
 								}),
 								i(149418, {	-- Pauldrons of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_SHOULDER"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_SHOULDER"),
 								}),
 								i(149423, {	-- Cloak of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_CLOAK"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_CLOAK"),
 								}),
 								i(149416, {	-- Chest of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_CHEST", "INVTYPE_ROBE"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149422, {	-- Bracers of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_WRIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_WRIST"),
 								}),
 								i(149419, {	-- Gloves of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_HAND"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_HAND"),
 								}),
 								i(149420, {	-- Cinch of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_WAIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_WAIST"),
 								}),
 								i(149417, {	-- Leggings of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_LEGS"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_LEGS"),
 								}),
 								i(149421, {	-- Treads of the Dominant Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_FEET"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
+									sym = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_ELITE, "INVTYPE_FEET"),
 								}),
 								i(149397, {	-- Helm of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_HEAD"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_HEAD"),
 								}),
 								i(149400, {	-- Pauldrons of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_SHOULDER"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_SHOULDER"),
 								}),
 								i(149405, {	-- Cloak of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_CLOAK"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_CLOAK"),
 								}),
 								i(149398, {	-- Chest of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_CHEST", "INVTYPE_ROBE"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149404, {	-- Bracers of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_WRIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_WRIST"),
 								}),
 								i(149401, {	-- Gloves of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_HAND"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_HAND"),
 								}),
 								i(149402, {	-- Cinch of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_WAIST"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_WAIST"),
 								}),
 								i(149399, {	-- Leggings of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_LEGS"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_LEGS"),
 								}),
 								i(149403, {	-- Treads of the Fierce Gladiator
-									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_FEET"),
+									u = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
+									sym = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_ELITE, "INVTYPE_FEET"),
 								}),
 							},
 						}),
@@ -1646,37 +1646,37 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(97012, {	-- Wanda Chanter <Wands>
-					["coord"] = { 48.6, 73.8, LEGION_DALARAN },
-					["sym"] = {
+					coord = { 48.6, 73.8, LEGION_DALARAN },
+					sym = {
 						{"sub", "common_vendor", 28994},	-- Wanda Chanter (Dalaran Northrend)
 					},
 				}),
 				n(107109, {	-- Xur'ios <Vaultkeeper of the Void>
-					["coord"] = { 48.8, 13.5, LEGION_DALARAN },
-					["groups"] = {
+					coord = { 48.8, 13.5, LEGION_DALARAN },
+					groups = {
 						i(141713, {	-- Arcadian War Turtle (MOUNT!)
-							["cost"] = { { "c", 1275, 150 } },	-- 150x Curious Coin
+							cost = { { "c", 1275, 150 } },	-- 150x Curious Coin
 						}),
 						i(136702, {	-- Formula: Soul Fibril (RECIPE!)
-							["cost"] = { { "c", 1275, 1 } },	-- 1x Curious Coin
+							cost = { { "c", 1275, 1 } },	-- 1x Curious Coin
 						}),
 						i(141860, {	-- Ingram's Puzzle
-							["cost"] = { { "c", 1275, 50 } },	-- 50x Curious Coin
+							cost = { { "c", 1275, 50 } },	-- 50x Curious Coin
 						}),
 						i(141862, {	-- Mote of Light (TOY!)
-							["cost"] = { { "c", 1275, 50 } },	-- 50x Curious Coin
+							cost = { { "c", 1275, 50 } },	-- 50x Curious Coin
 						}),
 						i(136699, {	-- Plans: Flamespike (RECIPE!)
-							["cost"] = { { "c", 1275, 1 } },	-- 1x Curious Coin
+							cost = { { "c", 1275, 1 } },	-- 1x Curious Coin
 						}),
 						i(137935, {	-- Pattern: Leather Love Seat (RECIPE!)
-							["cost"] = { { "c", 1275, 1 } },	-- 1x Curious Coin
+							cost = { { "c", 1275, 1 } },	-- 1x Curious Coin
 						}),
 						i(137727, {	-- Schematic: Mecha-Bond Imprint Matrix (RECIPE!)
-							["cost"] = { { "c", 1275, 1 } },	-- 1x Curious Coin
+							cost = { { "c", 1275, 1 } },	-- 1x Curious Coin
 						}),
 						i(136706, {	-- Technique: Straszan Mark (RECIPE!)
-							["cost"] = { { "c", 1275, 1 } },	-- 1x Curious Coin
+							cost = { { "c", 1275, 1 } },	-- 1x Curious Coin
 						}),
 					},
 				}),

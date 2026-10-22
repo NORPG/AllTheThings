@@ -7,26 +7,26 @@
 applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	n(ACHIEVEMENTS, {
 		ach(4476, {	-- Looking For More
-			["rank"] = 10,
+			rank = 10,
 		}),
 		ach(4477, {	-- Looking For Many
-			["rank"] = 50,
-			["groups"] = {
+			rank = 50,
+			groups = {
 				title(137),	-- the Patient
 			},
 		}),
 		ach(4478, {	-- Looking For Multitudes
-			["rank"] = 100,
-			["groups"] = {
+			rank = 100,
+			groups = {
 				i(49912),	-- Perky Pug (PET!)
 			},
 		}),
 	}),
 	expansion(EXPANSION.CLASSIC, {
 		i(156683, {	-- Satchel of Helpful Goods [Level 7-50]
-			["description"] = "Rewarded for completing a random 'Classic' dungeon.",
-			["timeline"] = { ADDED_7_3_5 },
-			["groups"] = {
+			description = "Rewarded for completing a random 'Classic' dungeon.",
+			timeline = { ADDED_7_3_5 },
+			groups = {
 				i(51982),			-- Earthbound Boots				— 01/14/22
 				i(143580),			-- Earthbound Girdle			— 01/15/21
 				i(143581),			-- Earthbound Grips				— 02/06/22
@@ -44,24 +44,24 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51990),			-- Stalwart Treads				— 4/16/19
 				i(51994),			-- Tumultuous Cloak [INT]
 				i(160597, {			-- Tumultuous Cloak [AGI]		— 4/7/19
-					["timeline"] = { ADDED_8_0_1 },
+					timeline = { ADDED_8_0_1 },
 				}),
 				i(160598, {			-- Tumultuous Cloak [STR]		— 01/17/22
-					["timeline"] = { ADDED_8_0_1 },
+					timeline = { ADDED_8_0_1 },
 				}),
 				i(51996),			-- Tumultuous Necklace [INT]	— 01/16/22
 				i(160607, {			-- Tumultuous Necklace [AGI]	— 01/15/22
-					["timeline"] = { ADDED_8_0_1 },
+					timeline = { ADDED_8_0_1 },
 				}),
 				i(160608, {			-- Tumultuous Necklace [STR]	— 01/17/22
-					["timeline"] = { ADDED_8_0_1 },
+					timeline = { ADDED_8_0_1 },
 				}),
 				i(51992),			-- Tumultuous Ring [INT]		— confirmed by discord user on April 21, 2020
 				i(160601, {			-- Tumultuous Ring [AGI]		— 01/15/22
-					["timeline"] = { ADDED_8_0_1 },
+					timeline = { ADDED_8_0_1 },
 				}),
 				i(160602, {			-- Tumultuous Ring [STR]		— 01/17/22
-					["timeline"] = { ADDED_8_0_1 },
+					timeline = { ADDED_8_0_1 },
 				}),
 				i(51964),			-- Vigorous Belt				— 01/16/22
 				i(51962),			-- Vigorous Bracers				— 01/16/22
@@ -70,77 +70,77 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51963),			-- Vigorous Stompers			— 01/16/22
 			},
 		}),
-		i(51999, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 15-25
-			["description"] = "Rewarded for completing a random dungeon in the level 15-25 range.",
-			["groups"] = {
+		i(51999, bubbleDownSelf({ timeline = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 15-25
+			description = "Rewarded for completing a random dungeon in the level 15-25 range.",
+			groups = {
 				i(51994),	-- Tumultuous Cloak [INT]
 				i(143580, {	-- Earthbound Girdle
-					["timeline"] = { ADDED_7_1_0, REMOVED_7_3_5 },
+					timeline = { ADDED_7_1_0, REMOVED_7_3_5 },
 				}),
 				i(51978),	-- Earthbound Girdle
 				i(51968),	-- Enumerated Wrap
 				i(143582, {	-- Stalwart Belt
-					["timeline"] = { ADDED_7_1_0, REMOVED_7_3_5 },
+					timeline = { ADDED_7_1_0, REMOVED_7_3_5 },
 				}),
 				i(51964),	-- Vigorous Belt
 			},
 		})),
-		i(52000, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 26-35
-			["description"] = "Rewarded for completing a random dungeon in the level 26-35 range.",
-			["groups"] = {
+		i(52000, bubbleDownSelf({ timeline = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 26-35
+			description = "Rewarded for completing a random dungeon in the level 26-35 range.",
+			groups = {
 				i(51996),	-- Tumultuous Necklace
 				i(143581, {	-- Earthbound Grips
-					["timeline"] = { ADDED_7_1_0, REMOVED_7_3_5 },
+					timeline = { ADDED_7_1_0, REMOVED_7_3_5 },
 				}),
 				i(51980, {	-- Earthbound Handgrips
-					["timeline"] = { ADDED_3_3_0, REMOVED_7_1_0 },
+					timeline = { ADDED_3_3_0, REMOVED_7_1_0 },
 				}),
 				i(51973),	-- Enumerated Handwraps
 				i(51965),	-- Vigorous Handguards
 			},
 		})),
-		i(67248, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 35-39 [CATA+]
-			["description"] = "This is only rewarded for completing Maraudon - Earth Song Falls (level 36-39 range).",
-			["groups"] = {
+		i(67248, bubbleDownSelf({ timeline = { ADDED_4_0_1, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 35-39 [CATA+]
+			description = "This is only rewarded for completing Maraudon - Earth Song Falls (level 36-39 range).",
+			groups = {
 				i(51976),	-- Earthbound Shoulderguards
 				i(51974),	-- Enumerated Shoulderpads
 				i(51984, {	-- Stalwart Shoulderpads
 					-- #if BEFORE 7.3.5
-					["description"] = "These may only be available at level 40+.",
+					description = "These may only be available at level 40+.",
 					-- #endif
 				}),
 				i(51997, {	-- Stalwart Spaulders
 					-- #if BEFORE 7.3.5
-					["description"] = "These may only be available below level 40.",
+					description = "These may only be available below level 40.",
 					-- #endif
 				}),
 				i(51966, {	-- Vigorous Spaulders
 					-- #if BEFORE 7.3.5
-					["description"] = "These may only be available at level 40+.",
+					description = "These may only be available at level 40+.",
 					-- #endif
 				}),
 				i(51998, {	-- Vigorous Spaulders
 					-- #if BEFORE 7.3.5
-					["description"] = "These may only be available below level 40.",
+					description = "These may only be available below level 40.",
 					-- #endif
 				}),
 				i(143583, {	-- Stalwart Grips
 					-- #if BEFORE 7.3.5
-					["description"] = "These may only be available at level 40+.",
+					description = "These may only be available at level 40+.",
 					-- #endif
-					["timeline"] = { ADDED_7_1_0, REMOVED_7_3_5 },
+					timeline = { ADDED_7_1_0, REMOVED_7_3_5 },
 				}),
 				i(51992),	-- Tumultuous Ring
 			},
 		})),
-		i(52001, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 40-45 [36-45 in wrath]
-			["description"] =
+		i(52001, bubbleDownSelf({ timeline = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 40-45 [36-45 in wrath]
+			description =
 				-- #if AFTER CATA
 				"Rewarded for completing a random dungeon in the level 40-45 range.",
 				-- #else
 				"Rewarded for completing a random dungeon in the level 36-45 range.",
 				-- #endif
-			["groups"] = {
+			groups = {
 				i(51976),	-- Earthbound Shoulderguards
 				i(51974),	-- Enumerated Shoulderpads
 				i(51984),	-- Stalwart Shoulderpads
@@ -148,9 +148,9 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51992),	-- Tumultuous Ring
 			},
 		})),
-		i(52002, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 46-55
-			["description"] = "Rewarded for completing a random dungeon in the level 46-55 range.",
-			["groups"] = {
+		i(52002, bubbleDownSelf({ timeline = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 46-55
+			description = "Rewarded for completing a random dungeon in the level 46-55 range.",
+			groups = {
 				i(51982),	-- Earthbound Boots
 				i(51981),	-- Earthbound Wristguards
 				i(51972),	-- Enumerated Bracers
@@ -161,9 +161,9 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51963),	-- Vigorous Stompers
 			},
 		})),
-		i(52003, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 56-60
-			["description"] = "Rewarded for completing a random dungeon in the level 56-60 range.",
-			["groups"] = {
+		i(52003, bubbleDownSelf({ timeline = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 56-60
+			description = "Rewarded for completing a random dungeon in the level 56-60 range.",
+			groups = {
 				i(51993),	-- Turbulent Cloak
 				i(51977),	-- Earthbound Girdle
 				i(51971),	-- Enumerated Belt
@@ -174,14 +174,14 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	}),
 	expansion(EXPANSION.TBC, {
 		i(156682, {	-- Otherworldy Satchel of Helpful Goods
-			["description"] =
+			description =
 				-- #if AFTER 10.1.5
 				"Rewarded for completing a random 'The Burning Crusade' dungeon during leveling or respective Timewalking event.",
 				-- #else
 				"Rewarded for completing a random 'The Burning Crusade' dungeon during leveling.",
 				-- #endif
-			["timeline"] = { ADDED_7_3_5 },
-			["groups"] = {
+			timeline = { ADDED_7_3_5 },
+			groups = {
 				i(51982),	-- Earthbound Boots
 				i(51975),	-- Earthbound Shoulders		- 01/15/22
 				i(51981),	-- Earthbound Wristguards	- 01/15/22
@@ -204,30 +204,30 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51990),	-- Stalwart Treads			— 4/13/19
 				i(51993),	-- Turbulent Cloak
 				i(160599, {	-- Turbulent Cloak			- 01/15/22
-					["timeline"] = { ADDED_8_0_1 },
+					timeline = { ADDED_8_0_1 },
 				}),
 				i(160600, {	-- Turbulent Cloak			— 01/17/22
-					["timeline"] = { ADDED_8_0_1 },
+					timeline = { ADDED_8_0_1 },
 				}),
 				i(51995),	-- Turbulent Necklace		— 12/27/21
 				i(160609, {	-- Turbulent Necklace		— 01/15/22
-					["timeline"] = { ADDED_8_0_1 },
+					timeline = { ADDED_8_0_1 },
 				}),
 				i(160610, {	-- Turbulent Necklace		— 4/12/19
-					["timeline"] = { ADDED_8_0_1 },
+					timeline = { ADDED_8_0_1 },
 				}),
 				i(51991),	-- Turbulent Signet
 				i(160605, {	-- Turbulent Signet			- 01/15/22
-					["timeline"] = { ADDED_8_0_1 },
+					timeline = { ADDED_8_0_1 },
 				}),
 				i(160606, {	-- Turbulent Signet			— 4/11/19
-					["timeline"] = { ADDED_8_0_1 },
+					timeline = { ADDED_8_0_1 },
 				}),
 			},
 		}),
-		i(52004, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 60-64
-			["description"] = "Rewarded for completing a random dungeon in the level 60-64 range.",
-			["groups"] = {
+		i(52004, bubbleDownSelf({ timeline = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 60-64
+			description = "Rewarded for completing a random dungeon in the level 60-64 range.",
+			groups = {
 				i(51995),	-- Turbulent Necklace
 				i(51979),	-- Earthbound Grips
 				i(51970),	-- Enumerated Gloves
@@ -235,9 +235,9 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51960),	-- Vigorous Gloves
 			},
 		})),
-		i(52005, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 65-70
-			["description"] = "Rewarded for completing a random dungeon in the level 65-70 range.",
-			["groups"] = {
+		i(52005, bubbleDownSelf({ timeline = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 65-70
+			description = "Rewarded for completing a random dungeon in the level 65-70 range.",
+			groups = {
 				i(51991),	-- Turbulent Signet
 				i(51975),	-- Earthbound Shoulders
 				i(51969),	-- Enumerated Shoulders
@@ -249,14 +249,14 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	-- #if AFTER 6.0.1.18500
 	expansion(EXPANSION.WRATH, {
 		i(156688, {	-- Icy Satchel of Helpful Goods
-			["description"] =
+			description =
 				-- #if AFTER 10.1.5
 				"Rewarded for completing a random 'Wrath of the Lich King' dungeon during leveling or respective Timewalking event.",
 				-- #else
 				"Rewarded for completing a random 'Wrath of the Lich King' dungeon during leveling.",
 				-- #endif
-			["timeline"] = { ADDED_7_3_5 },
-			["groups"] = {
+			timeline = { ADDED_7_3_5 },
+			groups = {
 				i(113687),	-- Dark Rune Lavalliere*
 				i(113688),	-- Obsidian Citadel Necklace*
 				i(113686),	-- Nerubian Prince's Pendant			— confirmed by user on discord on April 22, 2020
@@ -281,9 +281,9 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(112360),	-- Winterfrost Leather Leggings			— confirmed by user on discord on April 22, 2020
 			},
 		}),
-		i(114634, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 } }, {	-- Icy Satchel of Helpful Goods 70-74
-			["description"] = "Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 70-74 range.",
-			["groups"] = {
+		i(114634, bubbleDownSelf({ timeline = { ADDED_6_0_2, REMOVED_7_3_5 } }, {	-- Icy Satchel of Helpful Goods 70-74
+			description = "Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 70-74 range.",
+			groups = {
 				i(112361),	-- Ice-Encrusted Plate Belt
 				i(112362),	-- Ice-Encrusted Plate Girdle
 				i(112346),	-- Ice-Encrusted Plate Headguard
@@ -307,9 +307,9 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(112359),	-- Winterfrost Leather Waders
 			},
 		})),
-		i(114641, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 } }, {	-- Icy Satchel of Helpful Goods 75-80
-			["description"] = "Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 75-80 range.",
-			["groups"] = {
+		i(114641, bubbleDownSelf({ timeline = { ADDED_6_0_2, REMOVED_7_3_5 } }, {	-- Icy Satchel of Helpful Goods 75-80
+			description = "Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 75-80 range.",
+			groups = {
 				i(113687),	-- Dark Rune Lavalliere
 				i(113686),	-- Nerubian Prince's Pendant
 				i(113688),	-- Obsidian Citadel Necklace
@@ -328,14 +328,14 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	}),
 	expansion(EXPANSION.CATA, {
 		i(156689, {	-- Scorched Satchel of Helpful Goods (30 - 50)
-			["description"] =
+			description =
 				-- #if AFTER 10.1.5
 				"Rewarded for completing a random 'Cataclysm' dungeon during leveling or respective Timewalking event.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 				-- #else
 				"Rewarded for completing a random 'Cataclysm' dungeon during leveling.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 				-- #endif
-			["timeline"] = { ADDED_7_3_5 },
-			["groups"] = {
+			timeline = { ADDED_7_3_5 },
+			groups = {
 				i(113725),	-- Molten Slagstone Ring
 				i(113726),	-- Burning Slagstone Ring
 				i(113727),	-- Smoldering Slagstone Ring	— Confirmed by milotic on GitHub on August 24, 2020
@@ -348,44 +348,44 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113786),	-- Smoldercloth Slippers*
 				i(113769),	-- Ravaged Leather Boots*		— 01/18/22
 				i(113705, {	-- Ravaged Leather Bracers*
-					["timeline"] = { REMOVED_7_3_5 },
+					timeline = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
-					["isBounty"] = true,
+					isBounty = true,
 					-- #endif
 				}),
 				i(113698, {	-- Ravaged Leather Cap*
-					["timeline"] = { REMOVED_7_3_5 },
+					timeline = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
-					["isBounty"] = true,
+					isBounty = true,
 					-- #endif
 				}),
 				i(113718),	-- Ravaged Leather Chestguard	— 03/31/24
 				i(113724),	-- Ravaged Leather Gauntlets	— 01/18/22
 				i(113700, {	-- Ravaged Leather Helm
-					["timeline"] = { REMOVED_7_3_5 },
+					timeline = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
-					["isBounty"] = true,
+					isBounty = true,
 					-- #endif
 				}),
 				i(113712),	-- Ravaged Leather Pants		— 01/18/22
 				i(113768, {	-- Ravaged Leather Slippers*
-					["timeline"] = { REMOVED_7_3_5 },
+					timeline = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
-					["isBounty"] = true,
+					isBounty = true,
 					-- #endif
 				}),
 				i(113706),	-- Ravaged Leather Wristguards*	— 01/18/22
 				i(113774, {	-- Sparkmail Boots
-					["timeline"] = { REMOVED_7_3_5 },	-- Maybe never added
+					timeline = { REMOVED_7_3_5 },	-- Maybe never added
 				}),
 				i(113703, {	-- Sparkmail Bracers
-					["timeline"] = { REMOVED_7_3_5 },	-- Maybe never added
+					timeline = { REMOVED_7_3_5 },	-- Maybe never added
 				}),
 				i(113717),	-- Sparkmail Chestguard			- Confirmed by Dani#8000 on Discord on October 20, 2020
 				i(113723),	-- Sparkmail Gauntlets			- Confirmed by Cytosine#2527 on Discord on November 16, 2020
 				i(113699),	-- Sparkmail Headguard
 				i(113697, {	-- Sparkmail Helm
-					["timeline"] = { REMOVED_7_3_5 },	-- Maybe never added
+					timeline = { REMOVED_7_3_5 },	-- Maybe never added
 				}),
 				i(113775),	-- Sparkmail Sabatons			— Confirmed by Shorty on Discord on August 20, 2020
 				i(113704),	-- Sparkmail Wristguards
@@ -394,32 +394,32 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113780),	-- Emberspark Plate Boots
 				i(113701),	-- Emberspark Plate Bracers*	— confirmed by Carbion on Discord on April 20, 2020 (blaze it)
 				i(113696, {	-- Emberspark Plate Headguard
-					["timeline"] = { REMOVED_7_3_5 },
+					timeline = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
-					["isBounty"] = true,
+					isBounty = true,
 					-- #endif
 				}),
 				i(113695),	-- Emberspark Plate Helm*		— confirmed by Carbion on Discord on April 21, 2020
 				i(113707),	-- Emberspark Plate Leggings*
 				i(113781, {	-- Emberspark Plate Sabatons*
-					["timeline"] = { REMOVED_7_3_5 },
+					timeline = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
-					["isBounty"] = true,
+					isBounty = true,
 					-- #endif
 				}),
 				i(113702, {	-- Emberspark Plate Wristguards
-					["timeline"] = { REMOVED_7_3_5 },
+					timeline = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
-					["isBounty"] = true,
+					isBounty = true,
 					-- #endif
 				}),
 				i(113719),	-- Emberspark Plate Gloves (confirmed 16.04.2019)
 			},
 		}),
 		i(114648, {	-- Scorched Satchel of Helpful Goods 80-83
-			["u"] = REMOVED_FROM_GAME,
-			["description"] = "Rewarded for completing a random 'Cataclysm' dungeon in the level 80-84 range.",
-			["groups"] = {
+			u = REMOVED_FROM_GAME,
+			description = "Rewarded for completing a random 'Cataclysm' dungeon in the level 80-84 range.",
+			groups = {
 				i(113760),	-- Smoldercloth Bracers
 				i(113759),	-- Smoldercloth Cap
 				i(113786),	-- Smoldercloth Slippers
@@ -444,9 +444,9 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		}),
 		i(114655, {	-- Scorched Satchel of Helpful Goods 84-85
-			["u"] = REMOVED_FROM_GAME,
-			["description"] = "Rewarded for completing a random 'Cataclysm' dungeon in the level 84-85 range.",
-			["groups"] = {
+			u = REMOVED_FROM_GAME,
+			description = "Rewarded for completing a random 'Cataclysm' dungeon in the level 84-85 range.",
+			groups = {
 				i(113763),	-- Smoldercloth Gloves
 				i(113761),	-- Smoldercloth Leggings
 				i(113762),	-- Smoldercloth Robe
@@ -467,14 +467,14 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	}),
 	-- #endif
 	expansion(EXPANSION.MOP, {
-		i(156698, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods
-			["description"] =
+		i(156698, bubbleDownSelf({ timeline = { ADDED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods
+			description =
 				-- #if AFTER 10.1.5
 				"Rewarded for completing a random 'Mists of Pandaria' dungeon during leveling or respective Timewalking event.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 				-- #else
 				"Rewarded for completing a random 'Mists of Pandaria' dungeon during leveling.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 				-- #endif
-			["groups"] = {
+			groups = {
 				i(113757),	-- Band of Directed Fury
 				i(113788),	-- Blossoming Belt*
 				i(113764),	-- Blossoming Cap*
@@ -515,9 +515,9 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113756),	-- Loop of Inner Clarity*	— 01/14/22
 			},
 		})),
-		i(114662, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
-			["description"] = "Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 85-89 range.",	-- Saying 89, because at level 90 you can no longer queue for this.
-			["groups"] = {
+		i(114662, bubbleDownSelf({ timeline = { ADDED_6_0_2, REMOVED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
+			description = "Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 85-89 range.",	-- Saying 89, because at level 90 you can no longer queue for this.
+			groups = {
 				i(113788),	-- Blossoming Belt
 				i(113764),	-- Blossoming Cap
 				i(113787),	-- Blossoming Slippers
@@ -542,9 +542,9 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113783),	-- Kyparite Stompers
 			},
 		})),
-		i(114669, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods 88-90
-			["description"] = "Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 88-89 range.",	-- Again, saying 89 because at level 90 you can no longer queue for this.
-			["groups"] = {
+		i(114669, bubbleDownSelf({ timeline = { ADDED_6_0_2, REMOVED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods 88-90
+			description = "Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 88-89 range.",	-- Again, saying 89 because at level 90 you can no longer queue for this.
+			groups = {
 				i(113757),	-- Band of Directed Fury
 				i(113766),	-- Blossoming Gloves
 				i(113767),	-- Blossoming Mantle
@@ -568,8 +568,8 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 		i(69903, {	-- Satchel of Exotic Mysteries
-			["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
-			["sym"] = { appendAllGroups({}, MOP_SYM_PETS, {
+			timeline = { ADDED_4_1_0, REMOVED_6_1_0 },
+			sym = { appendAllGroups({}, MOP_SYM_PETS, {
 				13335,	-- Deathcharger's Reins
 				43953,	-- Reins of the Blue Drake
 				44151,	-- Reins of the Blue Proto-Drake
@@ -580,27 +580,27 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			})},
 		}),
 		i(90818, {	-- Misty Satchel of Exotic Mysteries
-			["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
-			["sym"] = {
+			timeline = { ADDED_5_0_4, REMOVED_6_1_0 },
+			sym = {
 				{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 			},
 		}),
 	}),
 	expansion(EXPANSION.WOD, {
 		i(120334, {	-- Satchel of Cosmic Mysteries
-			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-			["sym"] = {
+			timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+			sym = {
 				{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 			},
 		}),
 		i(104260, {	-- Satchel of Savage Mysteries
-			["timeline"] = { ADDED_6_0_2, REMOVED_6_1_0 },
-			["sym"] = {
+			timeline = { ADDED_6_0_2, REMOVED_6_1_0 },
+			sym = {
 				{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 			},
 		}),
-		i(122607, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 } }, {	-- Savage Satchel of Cooperation
-			["groups"] = {
+		i(122607, bubbleDownSelf({ timeline = { ADDED_6_1_0, REMOVED_6_2_0 } }, {	-- Savage Satchel of Cooperation
+			groups = {
 				i(122633, {	-- Shared Turbulent Armament
 					i(115319),	-- Turbulent Axe
 					i(115322),	-- Turbulent Dagger
@@ -683,8 +683,8 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				}),
 			},
 		})),
-		i(128803, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 } }, {	-- Savage Satchel of Cooperation
-			["groups"] = {
+		i(128803, bubbleDownSelf({ timeline = { ADDED_6_2_0, REMOVED_7_0_3 } }, {	-- Savage Satchel of Cooperation
+			groups = {
 				i(127799, {	-- Baleful Pendant
 					i(124612),	-- Discordant Amulet
 					i(124611),	-- Discordant Collar
@@ -812,36 +812,36 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 		-- Listed under TW
 		-- i(210063, {	-- Invader's Satchel of Helpful Goods // Legion TW Daily Reward
 		i(140591, {	-- Shattered Satchel of Cooperation
-			["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 }
+			timeline = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 }
 		}),
 	}),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_1 } }, {
+	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_1 } }, {
 		q(51370, {	-- Short-Supply Reward
-			["repeatable"] = true,
-			["groups"] = {
+			repeatable = true,
+			groups = {
 				i(160054),	-- War-Torn Satchel of Cooperation
 			},
 		}),
 	})),
-	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_0 } }, {
+	expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_0 } }, {
 		i(184522),	-- Veiled Satchel of Cooperation
 	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 		i(201326, {	-- Draconic Satchel of Cooperation
 			i(201325),	-- Draconic Augment Rune
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
 		q(83023, {	-- Short-Supply Reward
-			["repeatable"] = true,
-			["groups"] = {
+			repeatable = true,
+			groups = {
 				i(224573, {	-- Crystal Satchel of Cooperation
 					i(224572),	-- Crystallized Augment Rune
 				}),
 			},
 		}),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 		i(259086, {	-- Void-Touched Satchel of Cooperation
 			i(259085),	-- Void-Touched Augment Rune
 		}),
@@ -849,13 +849,13 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0 } }, {
+	expansion(EXPANSION.WRATH, bubbleDownSelf({ timeline = { ADDED_3_3_0 } }, {
 		n(GROUP_FINDER, {
 			q(24887),	-- LFGDungeons - Burning Crusade - Normal Random - 1st
 			q(24895),	-- LFGDungeons - Burning Crusade - Normal Random - Nth
 		}),
 	})),
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
 		n(GROUP_FINDER, {
 			q(31614),	-- LFGDungeons - Mists - Heroic Random - 1st
 			q(31615),	-- LFGDungeons - Mists - Heroic Random - Nth
@@ -865,7 +865,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(33233),	-- Short-Supply Reward
 		}),
 	})),
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+	expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 		n(GROUP_FINDER, {
 			q(36145),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
 			q(36151),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
@@ -891,7 +891,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
 		}),
 	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 		n(GROUP_FINDER, {
 			q(41710),	-- Legion 110 A
 			q(41712),	-- Legion 110 A
@@ -958,7 +958,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(42560),	-- WOD 100 H
 		}),
 	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 		n(GROUP_FINDER, {
 			q(53379),	-- BFA 120 E
 			q(53380),	-- BFA 120 E
@@ -1012,7 +1012,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(52052),	-- LFGDungeons - BFA - Raid Finder - Nth
 		}),
 	})),
-	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 		n(GROUP_FINDER, {
 			q(62642),	-- LFGDungeons - SL - Heroic Random - 1st
 			q(62643),	-- LFGDungeons - SL - Heroic Random - Nth
@@ -1047,17 +1047,17 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(60038),	-- Shadowlands (60) E
 			q(60039),	-- Shadowlands (60) E
 			q(60040),	-- Shadowlands (60) E
-			q(64996, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
-			q(64997, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
-			q(64998, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
-			q(64999, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
-			q(65000, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
-			q(65001, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
-			q(65002, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
-			q(65003, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
-			q(65703, {["timeline"] = {ADDED_9_2_0}}),	-- Shadowlands (60) E
-			q(65704, {["timeline"] = {ADDED_9_2_0}}),	-- Shadowlands (60) E
-			q(65705, {["timeline"] = {ADDED_9_2_0}}),	-- Shadowlands (60) E
+			q(64996, {timeline = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(64997, {timeline = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(64998, {timeline = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(64999, {timeline = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(65000, {timeline = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(65001, {timeline = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(65002, {timeline = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(65003, {timeline = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(65703, {timeline = {ADDED_9_2_0}}),	-- Shadowlands (60) E
+			q(65704, {timeline = {ADDED_9_2_0}}),	-- Shadowlands (60) E
+			q(65705, {timeline = {ADDED_9_2_0}}),	-- Shadowlands (60) E
 			q(60014),	-- Shadowlands 60 E
 			q(60015),	-- Shadowlands 60 E
 			q(60016),	-- Shadowlands 60 E
@@ -1071,7 +1071,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(60030),	-- Shadowlands 60 E
 		}),
 	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 		n(GROUP_FINDER, {
 			q(72187),	-- LFGDungeons - DF - Heroic Random - 1st
 			q(72188),	-- LFGDungeons - DF - Heroic Random - Nth
@@ -1133,24 +1133,24 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(72816),	-- Dragonflight (70) E
 			q(72817),	-- Dragonflight (70) E
 			q(72818),	-- Dragonflight (70) E
-			q(78763, {["timeline"] = {ADDED_10_2_0}}),	-- Dragonflight (70) E
-			q(78764, {["timeline"] = {ADDED_10_2_0}}),	-- Dragonflight (70) E
-			q(78765, {["timeline"] = {ADDED_10_2_0}}),	-- Dragonflight (70) E
-			q(78766, {["timeline"] = {ADDED_10_2_0}}),	-- Dragonflight (70) E
-			q(78767, {["timeline"] = {ADDED_10_2_0}}),	-- Dragonflight (70) E
+			q(78763, {timeline = {ADDED_10_2_0}}),	-- Dragonflight (70) E
+			q(78764, {timeline = {ADDED_10_2_0}}),	-- Dragonflight (70) E
+			q(78765, {timeline = {ADDED_10_2_0}}),	-- Dragonflight (70) E
+			q(78766, {timeline = {ADDED_10_2_0}}),	-- Dragonflight (70) E
+			q(78767, {timeline = {ADDED_10_2_0}}),	-- Dragonflight (70) E
 			q(72819),	-- Shadowlands (60) E
 			q(72820),	-- Shadowlands (60) E
 			q(72821),	-- Shadowlands (60) E
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
 		n(GROUP_FINDER, {
-			q(39751, {["timeline"] = { ADDED_11_0_5 }}),	-- Classic Timewalking LFG completion
+			q(39751, {timeline = { ADDED_11_0_5 }}),	-- Classic Timewalking LFG completion
 			q(83707),	-- LFGDungeons - 11.0 The War Within - Raid Finder - 1st
 			q(83708),	-- LFGDungeons - 11.0 The War Within - Raid Finder - Nth
 			q(78169),	-- LFGDungeons - Timewalking "Heroic" Random - 1st
-			q(86493, {["timeline"] = { ADDED_11_0_7 }}),	-- LFGDungeons - Timewalking "Heroic" Random - 1st
-			q(86494, {["timeline"] = { ADDED_11_0_7 }}),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
+			q(86493, {timeline = { ADDED_11_0_7 }}),	-- LFGDungeons - Timewalking "Heroic" Random - 1st
+			q(86494, {timeline = { ADDED_11_0_7 }}),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
 			q(83021),	-- LFGDungeons - TWW - Normal Random - 1st
 			q(83022),	-- LFGDungeons - TWW - Normal Random - Nth
 			q(83027),	-- LFGDungeons - TWW - Heroic Random - 1st
@@ -1213,7 +1213,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(82625),	-- The War Within (80) E
 		}),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+	expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 		n(GROUP_FINDER, {
 			q(93522),	-- LFGDungeons - 12.x Midnight - Raid Finder - 1st
 			q(93520),	-- LFGDungeons - 12.x Midnight - Raid Finder - Nth

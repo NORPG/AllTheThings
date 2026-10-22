@@ -5,7 +5,7 @@
 
 local Items = ItemDBConditional;
 local i = function(itemID, drop)
-	local item = { ["_wipe"] = type(drop) == "table" and drop or {drop} };
+	local item = { _wipe = type(drop) == "table" and drop or {drop} };
 	Items[itemID] = item;
 	return item;
 end

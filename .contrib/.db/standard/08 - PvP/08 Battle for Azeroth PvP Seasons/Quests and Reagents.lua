@@ -2,32 +2,32 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 	n(QUESTS, sharedData({
-		["providers"] = {
+		providers = {
 			{ "n", 143560 },	-- Marshal Gabriel
 			{ "n", 143555 },	-- Xander Silberman
 		},
-		["coords"] = {
+		coords = {
 			{ 56.4, 25.8, BORALUS },
 			{ 51.6, 58.2, ZANDALAR },
 		},
-		["isWeekly"] = true,
+		isWeekly = true,
 	}, {
 		q(53457,	-- Quartermaster's Bounty
-		bubbleDownSelf({["timeline"] = { ADDED_8_0_1, REMOVED_8_2_0 }},{
+		bubbleDownSelf({timeline = { ADDED_8_0_1, REMOVED_8_2_0 }},{
 			i(163827),	-- Quartermaster's Coin (QI!)
 		})),
 		q(57274,	-- Quartermaster's Bounty
-		bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 }},{
+		bubbleDownSelf({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 			i(171198),	-- Quartermaster's Prize (QI!)
 		})),
 		q(58279,	-- Quartermaster's Bounty
-		bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 }},{
+		bubbleDownSelf({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 			i(172519),	-- Quartermaster's Note (QI!)
 		})),
 	})),
-	filter(REAGENTS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 } }, {
+	filter(REAGENTS, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 } }, {
 		i(159570),	-- Battleborn Sigil Dread Combatant
 		i(164580),	-- Battleborn Sigil Dread Challenger
 		i(164581),	-- Battleborn Sigil Dread Rival
@@ -39,7 +39,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED
 		i(164586),	-- Warlord's Trophy Dread Duelist
 		i(164587),	-- Warlord's Trophy Dread Elite
 	})),
-	filter(REAGENTS, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
+	filter(REAGENTS, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
 		i(164951),	-- Battleborn Sigil Sinister Combatant
 		i(164952),	-- Battleborn Sigil Sinister Challenger
 		i(164953),	-- Battleborn Sigil Sinister Rival
@@ -51,7 +51,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED
 		i(164958),	-- Warlord's Trophy Sinister Duelist
 		i(164959),	-- Warlord's Trophy Sinister Elite
 	})),
-	filter(REAGENTS, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
+	filter(REAGENTS, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
 		i(168316),	-- Battleborn Sigil Notorious Combatant
 		i(171090),	-- Battleborn Sigil Notorious Challenger
 		i(171091),	-- Battleborn Sigil Notorious Rival
@@ -63,7 +63,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED
 		i(171098),	-- Warlord's Trophy Notorious Duelist
 		i(171099),	-- Warlord's Trophy Notorious Elite
 	})),
-	filter(REAGENTS, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } }, {
+	filter(REAGENTS, bubbleDownSelf({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 } }, {
 		i(172890),	-- Battleborn Sigil Corrupted Combatant
 		i(172891),	-- Battleborn Sigil Corrupted Challenger
 		i(172892),	-- Battleborn Sigil Corrupted Rival

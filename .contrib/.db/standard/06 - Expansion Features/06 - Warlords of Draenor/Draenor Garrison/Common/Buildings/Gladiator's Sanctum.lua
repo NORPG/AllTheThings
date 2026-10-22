@@ -3,13 +3,13 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
-	n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
+	n(GARRISONS, sharedData({maps = { LUNARFALL, FROSTWALL } },	{
 		n(BUILDINGS, {
 			garrisonBuilding(161, pvp({	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)
 				n(ACHIEVEMENTS, {
 					ach(9495, {		-- The Bone Collector
-						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-						["groups"] = { i(111981) },	-- Gladiator's Sanctum, Level 3 [Blueprints]
+						description = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+						groups = { i(111981) },	-- Gladiator's Sanctum, Level 3 [Blueprints]
 					}),
 					ach(9725, {	-- The Last of Us
 						-- title_gendered(302, 303),	-- Lord of War / Lady of War
@@ -17,9 +17,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						title_female(303),	-- <Name>, Lady of War
 					}),
 					ach(9738, {	-- Warlord of Draenor (Alliance) achievements used instead of criteria as criteria are behaving strangely with debug mode on
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 						-- Meta Achievement
-						["sym"] = {{"meta_achievement",
+						sym = {{"meta_achievement",
 							9639,	-- Fight, Kill, Salute!
 							9522,	-- Nemesis: Troll Hunter
 							9521,	-- Nemesis: The Butcher
@@ -29,12 +29,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							9517,	-- Nemesis: Death Stalker
 							9516,	-- Nemesis: Slayer of Sin'dorei
 						}},
-						["groups"] = { title(269) },	-- <Name>, Warlord of Draenor
+						groups = { title(269) },	-- <Name>, Warlord of Draenor
 					}),
 					ach(9508, {	-- Warlord of Draenor (Horde) achievements used instead of criteria as criteria are behaving strangely with debug mode on
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 						-- Meta Achievement
-						["sym"] = {{"meta_achievement",
+						sym = {{"meta_achievement",
 							9639,	-- Fight, Kill, Salute!
 							9515,	-- Nemesis: Worgen Hunter
 							9514,	-- Nemesis: Terror of the Tushui
@@ -44,32 +44,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							9510,	-- Nemesis: Dwarfstalker
 							9509,	-- Nemesis: Draenei Destroyer
 						}},
-						["groups"] = { title(269) },	-- <Name>, Warlord of Draenor
+						groups = { title(269) },	-- <Name>, Warlord of Draenor
 					}),
 				}),
 				n(QUESTS, {
 					q(37082),	-- Call of the Gladiator
 					q(37083, {	-- Fight, Kill, Salute!
-						["sourceQuest"] = 37082,	-- Call of the Gladiator
-						["qg"] = 87311,	-- Kharg
-						["coord"] = { 33.0, 38.6, DRAENOR_NAGRAND },
-						["groups"] = {
+						sourceQuest = 37082,	-- Call of the Gladiator
+						qg = 87311,	-- Kharg
+						coord = { 33.0, 38.6, DRAENOR_NAGRAND },
+						groups = {
 							ach(9639),	-- Fight, Kill, Salute!
 							i(120142, {	-- Coliseum Champion's Spoils
 								i(119217),	-- Alliance Flag of Victory (TOY!)
 								i(119218),	-- Horde Flag of Victory (TOY!)
 							}),
 							i(119219, {	-- Warlord's Flag of Victory (TOY!)
-								["description"] = "Requires being the last player alive in the coliseum.",
+								description = "Requires being the last player alive in the coliseum.",
 							}),
 						},
 					}),
 				}),
 				-- Alliance Quests
 				n(QUESTS, bubbleDown({
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}, sharedData({
-					["qg"] = 86677,	-- Kuros
+					qg = 86677,	-- Kuros
 				},{
 					q(36957),	-- Nemesis: Becoming Death (Blood Elf)
 					q(36959),	-- Nemesis: Becoming Death (Forsaken)
@@ -79,72 +79,72 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					q(36961),	-- Nemesis: Becoming Death (Tauren)
 					q(36965),	-- Nemesis: Becoming Death (Troll)
 					q(36960, {	-- Nemesis: Death Stalker
-						["sourceQuest"] = 36959,	-- Nemesis: Becoming Death (Forsaken)
-						["groups"] = {
+						sourceQuest = 36959,	-- Nemesis: Becoming Death (Forsaken)
+						groups = {
 							ach(9517, {	-- Nemesis: Death Stalker
 								title(272),	-- the Death Stalker
 							}),
 						},
 					}),
 					q(36968, {	-- Nemesis: Huojin's Fall
-						["sourceQuest"] = 36967,	-- Nemesis: Becoming Death (Pandaren)
-						["groups"] = {
+						sourceQuest = 36967,	-- Nemesis: Becoming Death (Pandaren)
+						groups = {
 							ach(9520, {	-- Nemesis: Huojin's Fall
 								title(276),	-- , Huojin's Fall
 							}),
 						},
 					}),
 					q(36970, {	-- Nemesis: Killer of Kezan
-						["sourceQuest"] = 36969,	-- Nemesis: Becoming Death (Goblin)
-						["groups"] = {
+						sourceQuest = 36969,	-- Nemesis: Becoming Death (Goblin)
+						groups = {
 							ach(9518, {	-- Nemesis: Killer of Kezan
 								title(273),	-- , Killer of Kezan
 							}),
 						},
 					}),
 					q(36964, {	-- Nemesis: Orcslayer
-						["sourceQuest"] = 36963,	-- Nemesis: Becoming Death (Orc)
-						["groups"] = {
+						sourceQuest = 36963,	-- Nemesis: Becoming Death (Orc)
+						groups = {
 							ach(9519, {	-- Nemesis: Orcslayer
 								title(271),	-- Orcslayer
 							}),
 						},
 					}),
 					q(36958, {	-- Nemesis: Slayer of Sin'dorei
-						["sourceQuest"] = 36957,	-- Nemesis: Becoming Death (Blood Elf)
-						["groups"] = {
+						sourceQuest = 36957,	-- Nemesis: Becoming Death (Blood Elf)
+						groups = {
 							ach(9516, {	-- Nemesis: Slayer of Sin'dorei
 								title(275),	-- , Slayer of Sin'dorei
 							}),
 						},
 					}),
 					q(36962, {	-- Nemesis: The Butcher
-						["sourceQuest"] = 36961,	-- Nemesis: Becoming Death (Tauren)
-						["groups"] = {
+						sourceQuest = 36961,	-- Nemesis: Becoming Death (Tauren)
+						groups = {
 							ach(9521, {	-- Nemesis: The Butcher
 								title(270),	-- the Butcher
 							}),
 						},
 					}),
 					q(36966, {	-- Nemesis: Troll Hunter
-						["sourceQuest"] = 36965,	-- Nemesis: Becoming Death (Troll)
-						["groups"] = {
+						sourceQuest = 36965,	-- Nemesis: Becoming Death (Troll)
+						groups = {
 							ach(9522, {	-- Nemesis: Troll Hunter
 								title(274),	-- Troll Hunter
 							}),
 						},
 					}),
 					q(36955, {	-- Nemesis: Hunter - Hunted
-						["sourceQuest"] = 36876,	-- Warlord of Draenor
-						["isRepeatable"] = true,
+						sourceQuest = 36876,	-- Warlord of Draenor
+						isRepeatable = true,
 					}),
 					q(36876),	-- Warlord of Draenor
 				}))),
 				-- Horde Quests
 				n(QUESTS, bubbleDown({
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}, sharedData({
-					["qg"] = 86629,	-- Raza'kul
+					qg = 86629,	-- Raza'kul
 				},{
 					q(36929),	-- Nemesis: Becoming Death (Draenei)
 					q(36923),	-- Nemesis: Becoming Death (Dwarf)
@@ -154,64 +154,64 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					q(36933),	-- Nemesis: Becoming Death (Pandaren)
 					q(36927),	-- Nemesis: Becoming Death (Worgen)
 					q(36930, {	-- Nemesis: Draenei Destroyer
-						["sourceQuest"] = 36929,	-- Nemesis: Becoming Death (Draenei)
-						["groups"] = {
+						sourceQuest = 36929,	-- Nemesis: Becoming Death (Draenei)
+						groups = {
 							ach(9509, {	-- Nemesis: Draenei Destroyer
 								title(267),	-- , Draenei Destroyer
 							}),
 						},
 					}),
 					q(36924, {	-- Nemesis: Dwarfstalker
-						["sourceQuest"] = 36923,	-- Nemesis: Becoming Death (Dwarf)
-						["groups"] = {
+						sourceQuest = 36923,	-- Nemesis: Becoming Death (Dwarf)
+						groups = {
 							ach(9510, {	-- Nemesis: Dwarfstalker
 								title(264),	-- the Dwarfstalker
 							}),
 						},
 					}),
 					q(36926, {	-- Nemesis: Gnomebane
-						["sourceQuest"] = 36925,	-- Nemesis: Becoming Death (Gnome)
-						["groups"] = {
+						sourceQuest = 36925,	-- Nemesis: Becoming Death (Gnome)
+						groups = {
 							ach(9511, {	-- Nemesis: Gnomebane
 								title(263),	-- Gnomebane
 							}),
 						},
 					}),
 					q(36921, {	-- Nemesis: Manslayer
-						["sourceQuest"] = 36897,	-- Nemesis: Becoming Death (Human)
-						["groups"] = {
+						sourceQuest = 36897,	-- Nemesis: Becoming Death (Human)
+						groups = {
 							ach(9512, {	-- Nemesis: Manslayer
 								title(262),	-- the Manslayer
 							}),
 						},
 					}),
 					q(36932, {	-- Nemesis: Scourge of the Kaldorei
-						["sourceQuest"] = 36931,	-- Nemesis: Becoming Death (Night Elf)
-						["groups"] = {
+						sourceQuest = 36931,	-- Nemesis: Becoming Death (Night Elf)
+						groups = {
 							ach(9513, {	-- Nemesis: Scourge of the Kaldorei
 								title(266),	-- , Scourge of the Kaldorei
 							}),
 						},
 					}),
 					q(36934, {	-- Nemesis: Terror of the Tushui
-						["sourceQuest"] = 36933,	-- Nemesis: Becoming Death (Pandaren)
-						["groups"] = {
+						sourceQuest = 36933,	-- Nemesis: Becoming Death (Pandaren)
+						groups = {
 							ach(9514, {	-- Nemesis: Terror of the Tushui
 								title(268),	-- , Terror of the Tushui
 							}),
 						},
 					}),
 					q(36928, {	-- Nemesis: Worgen Hunter
-						["sourceQuest"] = 36927,	-- Nemesis: Becoming Death (Worgen)
-						["groups"] = {
+						sourceQuest = 36927,	-- Nemesis: Becoming Death (Worgen)
+						groups = {
 							ach(9515, {	-- Nemesis: Worgen Hunter
 								title(265),	-- Worgen Hunter
 							}),
 						},
 					}),
 					q(36889, {	-- Nemesis: Hunter - Hunted
-						["sourceQuest"] = 36874,	-- Warlord of Draenor
-						["isRepeatable"] = true,
+						sourceQuest = 36874,	-- Warlord of Draenor
+						isRepeatable = true,
 					}),
 					q(36874),	-- Warlord of Draenor
 				}))),
@@ -448,7 +448,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 	})),
 }));
 
-root(ROOTS.HiddenQuestTriggers,  expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers,  expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	n(GARRISONS, {
 		n(BUILDINGS, {
 			garrisonBuilding(161, pvp({	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)

@@ -4,18 +4,18 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
-	applyclassicphase(SOD_PHASE_FOUR, inst(2789, bubbleDownSelf({["timeline"] = { ADDED_1_15_3 }}, {	-- The Tainted Scar
-		["lore"] = "The Tainted Scar is a small region in the western Blasted Lands, corrupted for years by the energies of the Dark Portal. Following the Third War, it became the demonic domain of Lord Kazzak and his army until the Invasion of Outland.",
-		["zoneTextAreaID"] = 15531,	-- The Tainted Scar
-		["coord"] = { 50.0, 50.0, BLASTED_LANDS },
-		["isRaid"] = true,
-		["lvl"] = 60,
-		["groups"] = {
+	applyclassicphase(SOD_PHASE_FOUR, inst(2789, bubbleDownSelf({timeline = { ADDED_1_15_3 }}, {	-- The Tainted Scar
+		lore = "The Tainted Scar is a small region in the western Blasted Lands, corrupted for years by the energies of the Dark Portal. Following the Third War, it became the demonic domain of Lord Kazzak and his army until the Invasion of Outland.",
+		zoneTextAreaID = 15531,	-- The Tainted Scar
+		coord = { 50.0, 50.0, BLASTED_LANDS },
+		isRaid = true,
+		lvl = 60,
+		groups = {
 			n(230302, {	-- Lord Kazzak
-				["modelScale"] = 6.0,
-				["groups"] = {
+				modelScale = 6.0,
+				groups = {
 					i(18665, {	-- The Eye of Shadow
-						["classes"] = { PRIEST },
+						classes = { PRIEST },
 					}),
 					i(228356),	-- Amberseal Keeper
 					i(228397),	-- Empyrean Demolisher
@@ -31,39 +31,39 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(12397, {	-- Lord Kazzak / Highlord Kruul
-				["crs"] = { 18338 },	-- Highlord Kruul
-				["timeline"] = { REMOVED_1_15_3 },
-				["modelScale"] = 6.0,
-				["groups"] = {
+				crs = { 18338 },	-- Highlord Kruul
+				timeline = { REMOVED_1_15_3 },
+				modelScale = 6.0,
+				groups = {
 					i(17113, {	-- Amberseal Keeper
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(17112, {	-- Empyrean Demolisher
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(18546, {	-- Infernal Headcage
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(17111, {	-- Blazefury Medallion
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(18204, {	-- Eskhandar's Pelt
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(19135, {	-- Blacklight Bracer
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(18544, {	-- Doomhide Gauntlets
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(19134, {	-- Flayed Doomguard Belt
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(19133, {	-- Fel-Infused Leggings
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 					i(18543, {	-- Ring of Entropy
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 					}),
 				},
 			}),

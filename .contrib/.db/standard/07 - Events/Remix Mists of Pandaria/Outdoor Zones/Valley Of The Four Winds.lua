@@ -2,32 +2,32 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(VALLEY_OF_THE_FOUR_WINDS, {
-		["icon"] = 618317,
-		["groups"] = {
+		icon = 618317,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(19884),	-- Campaign: Valley of the Four Winds
 				ach(19994),	-- Elusive Foes: Valley of the Four Winds
 				ach(20027),	-- Explore Valley of the Four Winds (automated)
 				ach(19978, {	-- Hidden Treasures: Valley of the Four Winds
 					crit(65495, {	-- Virmen Treasure Cache
-						["_quests"] = { 31405 },
+						_quests = { 31405 },
 					}),
 					crit(65496, {	-- The Hammer of Folly
-						["_quests"] = { 31428 },
+						_quests = { 31428 },
 					}),
 				}),
 				ach(20009, {	-- Looking For Group: Valley of the Four Winds
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19896,	-- Stormstout Brewery
 						20017,	-- Salyis's Warband
 					}},
 				}),
 				ach(19963, {	-- Tour Valley of the Four Winds
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19994,	-- Elusive Foes: Valley of the Four Winds
 						20027,	-- Explore Valley of the Four Winds
 						19978,	-- Hidden Treasures: Valley of the Four Winds
@@ -35,32 +35,32 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				ach(19873, {	-- Valley of the Four Winds
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19884,	-- Campaign: Valley of the Four Winds
 						20009,	-- Looking For Group: Valley of the Four Winds
 						19963,	-- Tour Valley of the Four Winds
 					}},
-					["groups"] = {
+					groups = {
 						i(221816),	-- Halfhill Farmer's Backpack
 					},
 				}),
 			}),
 			n(QUESTS, {
 				q(81564, {	-- The Story of Noodles
-					["provider"] = { "n", 220895 },	-- Grandmaster Jakkus <Class Apparel>
-					["coord"] = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
+					provider = { "n", 220895 },	-- Grandmaster Jakkus <Class Apparel>
+					coord = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
 				}),
 				q(81587, {	-- Noodle Time: Bonus
-					["provider"] = { "n", 220895 },	-- Grandmaster Jakkus <Class Apparel>
-					["coord"] = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
-					["isDaily"] = true,
-					["_drop"] = { "g" },
+					provider = { "n", 220895 },	-- Grandmaster Jakkus <Class Apparel>
+					coord = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
+					isDaily = true,
+					_drop = { "g" },
 				}),
 				q(81565, {	-- Another Round of Noodles
-					["provider"] = { "n", 220895 },	-- Grandmaster Jakkus <Class Apparel>
-					["coord"] = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
-					["isDaily"] = true,
-					["_drop"] = { "g" },
+					provider = { "n", 220895 },	-- Grandmaster Jakkus <Class Apparel>
+					coord = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
+					isDaily = true,
+					_drop = { "g" },
 				}),
 			}),
 			n(ZONE_REWARDS, {

@@ -8,29 +8,29 @@ local THOMAS_YANCE_GROUPS = {
 };
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(251, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {	-- Old Hillsbrad Foothills
-		["lore"] = "Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",
-		["description"] = "This is an event-triggered dungeon with the following steps:\n\n1. Talk to Erozion at the beginning of the dungeon to obtain a Pack of Incendiary Bombs.\n\n2. Traverse to the internment camps in Durnholde Keep and interact with a barrel in each building to start a fire and summon the first boss Lieutenant Drake.\n\n3. Find Thrall in the basement of the keep and follow him for the remainder of the dungeon.",
+	inst(251, bubbleDownSelf({ timeline = { ADDED_2_0_3 } }, {	-- Old Hillsbrad Foothills
+		lore = "Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",
+		description = "This is an event-triggered dungeon with the following steps:\n\n1. Talk to Erozion at the beginning of the dungeon to obtain a Pack of Incendiary Bombs.\n\n2. Traverse to the internment camps in Durnholde Keep and interact with a barrel in each building to start a fire and summon the first boss Lieutenant Drake.\n\n3. Find Thrall in the basement of the keep and follow him for the remainder of the dungeon.",
 		-- #if BEFORE MOP
-		["zoneTextAreaID"] = 2367,	-- Old Hillsbrad Foothills
+		zoneTextAreaID = 2367,	-- Old Hillsbrad Foothills
 		-- #endif
-		["mapID"] = CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS,
-		["coord"] = { 26.8, 36.8, CAVERNS_OF_TIME },
-		["lvl"] = lvlsquish(63, 63, 15),
-		["groups"] = {
+		mapID = CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS,
+		coord = { 26.8, 36.8, CAVERNS_OF_TIME },
+		lvl = lvlsquish(63, 63, 15),
+		groups = {
 			n(QUESTS, {
 				q(10284, {	-- Escape from Durnholde
-					["sourceQuest"] = 10283,	-- Taretha's Diversion
-					["qg"] = 17876,	-- Thrall
-					["timeline"] = { REMOVED_4_3_0 },
-					["lvl"] = lvlsquish(66, 66, 15),
+					sourceQuest = 10283,	-- Taretha's Diversion
+					qg = 17876,	-- Thrall
+					timeline = { REMOVED_4_3_0 },
+					lvl = lvlsquish(66, 66, 15),
 				}),
 				q(29599, {	-- Escape from Durnholde
-					["sourceQuest"] = 29598,	-- Taretha's Diversion
-					["qg"] = 17876,	-- Thrall
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(64, 64, 15),
-					["groups"] = {
+					sourceQuest = 29598,	-- Taretha's Diversion
+					qg = 17876,	-- Thrall
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(64, 64, 15),
+					groups = {
 						i(29317),	-- Tempest's Touch
 						i(29318),	-- Southshore Sneakers
 						i(29319),	-- Tarren Mill Defender's Cinch
@@ -38,82 +38,82 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(12513, {	-- Nice Hat...
-					["qg"] = 28126,	-- Don Carlos
-					["coords"] = {
+					qg = 28126,	-- Don Carlos
+					coords = {
 						-- #if AFTER CATA
 						{ 50.8, 27.5, TANARIS },
 						-- #else
 						{ 53.9, 28.9, TANARIS },
 						-- #endif
 					},
-					["races"] = { HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME },
-					["lvl"] = lvlsquish(66, 66, 15),
+					races = { HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME },
+					lvl = lvlsquish(66, 66, 15),
 					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
-					["groups"] = {
+					groups = {
 						objective(1, {	-- 0/1 Don Carlos' Hat
-							["provider"] = { "i", 38329 },	-- Don Carlos' Hat
+							provider = { "i", 38329 },	-- Don Carlos' Hat
 						}),
 						i(38276),	-- Haliscan Brimmed Hat
 					},
 				}),
 				q(12515, {	-- Nice Hat...
-					["qg"] = 28126,	-- Don Carlos
-					["coords"] = {
+					qg = 28126,	-- Don Carlos
+					coords = {
 						-- #if AFTER CATA
 						{ 50.7, 27.5, TANARIS },
 						-- #else
 						{ 53.9, 28.9, TANARIS },
 						-- #endif
 					},
-					["races"] = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME, DRACTHYR_ALLIANCE, DRACTHYR_HORDE }, ALL_RACES),
-					["lvl"] = lvlsquish(66, 66, 15),
+					races = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME, DRACTHYR_ALLIANCE, DRACTHYR_HORDE }, ALL_RACES),
+					lvl = lvlsquish(66, 66, 15),
 					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
-					["groups"] = {
+					groups = {
 						objective(1, {	-- 0/1 Don Carlos' Hat
-							["provider"] = { "i", 38329 },	-- Don Carlos' Hat
+							provider = { "i", 38329 },	-- Don Carlos' Hat
 						}),
 						i(38276),	-- Haliscan Brimmed Hat
 					},
 				}),
 				q(10282, {	-- Old Hillsbrad
-					["sourceQuest"] = 10277,	-- The Caverns of Time
-					["qg"] = 20130,	-- Andormu <Keepers of Time>
-					["coords"] = {
+					sourceQuest = 10277,	-- The Caverns of Time
+					qg = 20130,	-- Andormu <Keepers of Time>
+					coords = {
 						-- #if AFTER CATA
 						{ 41.6, 38.5, CAVERNS_OF_TIME },
 						-- #else
 						{ 58.4, 54.3, TANARIS },
 						-- #endif
 					},
-					["lvl"] = lvlsquish(66, 66, 15),
+					lvl = lvlsquish(66, 66, 15),
 				}),
 				q(10283, {	-- Taretha's Diversion
-					["sourceQuest"] = 10282,	-- Old Hillsbrad
-					["qg"] = 18723,	-- Erozion
-					["timeline"] = { REMOVED_4_3_0 },
-					["lvl"] = lvlsquish(66, 66, 15),
-					["groups"] = {
+					sourceQuest = 10282,	-- Old Hillsbrad
+					qg = 18723,	-- Erozion
+					timeline = { REMOVED_4_3_0 },
+					lvl = lvlsquish(66, 66, 15),
+					groups = {
 						objective(1, {	-- Internment Lodges Set Ablaze
-							["provider"] = { "i", 25853 },	-- Pack of Incendiary Bombs
+							provider = { "i", 25853 },	-- Pack of Incendiary Bombs
 						}),
 					},
 				}),
 				q(29598, {	-- Taretha's Diversion
-					["qg"] = 18723,	-- Erozion
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(64, 64, 15),
-					["groups"] = {
+					qg = 18723,	-- Erozion
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(64, 64, 15),
+					groups = {
 						objective(1, {	-- Internment Lodges Set Ablaze
-							["provider"] = { "i", 25853 },	-- Pack of Incendiary Bombs
+							provider = { "i", 25853 },	-- Pack of Incendiary Bombs
 						}),
 					},
 				}),
 				q(10285, {	-- Return to Andormu
-					["sourceQuest"] = 10284,	-- Escape from Durnholde
-					["qg"] = 18723,	-- Erozion
-					["timeline"] = { REMOVED_4_3_0 },
-					["lvl"] = lvlsquish(66, 66, 15),
-					["groups"] = {
+					sourceQuest = 10284,	-- Escape from Durnholde
+					qg = 18723,	-- Erozion
+					timeline = { REMOVED_4_3_0 },
+					lvl = lvlsquish(66, 66, 15),
+					groups = {
 						i(29317),	-- Tempest's Touch
 						i(29318),	-- Southshore Sneakers
 						i(29319),	-- Tarren Mill Defender's Cinch
@@ -126,8 +126,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					i(22539),	-- Formula: Enchant Shield - Intellect (RECIPE!)
 				}),
 				n(20377, {	-- Barkeep Kelly <Bartender>
-					["description"] = "Can be found inside Southshore tavern.",
-					["groups"] = {
+					description = "Can be found inside Southshore tavern.",
+					groups = {
 						i(19222),	-- Cheap Beer
 						i(4600),	-- Cherry Grog
 						i(21151),	-- Rumsey Rum Black Label
@@ -137,8 +137,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				n(20378, {	-- Chef Jessen <Speciality Meat & Slop>
-					["description"] = "Can be found inside Southshore tavern.",
-					["groups"] = {
+					description = "Can be found inside Southshore tavern.",
+					groups = {
 						i(29412),	-- Jessen's Special Slop
 					},
 				}),
@@ -146,7 +146,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			n(ZONE_DROPS, {
 				i(25729, {	-- Pattern: Stylin' Adventure Hat (RECIPE!)
-					["crs"] = {
+					crs = {
 						28132,	-- Don Carlos
 						17820,	-- Durnholde Rifleman
 					},
@@ -157,14 +157,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				n(28132, {	-- Don Carlos
-					["description"] = "This is a neutral Elite Creature that wanders the road.",
-					["groups"] = {
+					description = "This is a neutral Elite Creature that wanders the road.",
+					groups = {
 						i(38329),	-- Don Carlos' Hat
 					},
 				}),
 				e(538, {	-- Lieutenant Drake
-					["creatureID"] = 17848,
-					["groups"] = {
+					creatureID = 17848,
+					groups = {
 						-- #if AFTER 7.3.5
 						i(28210),	-- Bloodskull Destroyer
 						i(28213),	-- Lordaeron Medical Guide
@@ -185,8 +185,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				e(539, {	-- Captain Skarloc
-					["creatureID"] = 17862,
-					["groups"] = {
+					creatureID = 17862,
+					groups = {
 						i(27424),	-- Amani Venom-Axe
 						-- #if AFTER 7.3.5
 						i(28216),	-- Dathrohan's Ceremonial Hammer
@@ -210,8 +210,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				e(540, {	-- Epoch Hunter
-					["creatureID"] = 18096,
-					["groups"] = {
+					creatureID = 18096,
+					groups = {
 						ach(652),	-- The Escape From Durnholde
 						-- #if AFTER 7.3.5
 						i(28222),	-- Reaver of the Infinites
@@ -250,23 +250,23 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
-				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["cost"] = {
+				description = "You need to have a key to the instance in order to access this mode.",
+				cost = {
 					-- #if CLASSIC_ANNIVERSARY
 					{ "i", 265849, 1 },	-- Communal Key of Time
 					-- #endif
 					{ "i", 30635, 1 },	-- Key of Time
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 70, 30),
-				["groups"] = {
+				lvl = lvlsquish(70, 70, 30),
+				groups = {
 					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
+						crs = {
 							17848,	-- Lieutenant Drake
 							17862,	-- Captain Skarloc
 							18096,	-- Epoch Hunter
 						},
-						["groups"] = {
+						groups = {
 							-- #if BEFORE CATA
 							BADGE_OF_JUSTICE(1),
 							-- #endif
@@ -276,20 +276,20 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					n(28132, {	-- Don Carlos
-						["description"] = "This is a neutral Elite Creature that wanders the road.",
-						["groups"] = {
+						description = "This is a neutral Elite Creature that wanders the road.",
+						groups = {
 							applyclassicphase(LEGION_PHASE_ONE, i(134019, {	-- Don Carlos' Famous Hat (TOY!)
-								["timeline"] = { ADDED_7_0_3 },
+								timeline = { ADDED_7_0_3 },
 							})),
 							i(38506, {	-- Don Carlos' Famous Hat
-								["timeline"] = { REMOVED_7_0_3 },
+								timeline = { REMOVED_7_0_3 },
 							}),
 							i(38329),	-- Don Carlos' Hat
 						},
 					}),
 					e(538, {	-- Lieutenant Drake
-						["creatureID"] = 17848,
-						["groups"] = {
+						creatureID = 17848,
+						groups = {
 							i(28210),	-- Bloodskull Destroyer
 							i(28213),	-- Lordaeron Medical Guide
 							i(28215),	-- Mok'Nathal Mask of Battle
@@ -308,8 +308,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					e(539, {	-- Captain Skarloc
-						["creatureID"] = 17862,
-						["groups"] = {
+						creatureID = 17862,
+						groups = {
 							-- #if AFTER 7.3.5
 							i(27424),	-- Amani Venom-Axe
 							-- #endif
@@ -333,11 +333,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					e(540, {	-- Epoch Hunter
-						["creatureID"] = 18096,
-						["groups"] = {
+						creatureID = 18096,
+						groups = {
 							ach(673),	-- Heroic: The Escape From Durnholde
 							ach(5073, {	-- Heroic: The Escape From Durnholde Guild Run
-								["timeline"] = { ADDED_4_0_3 },
+								timeline = { ADDED_4_0_3 },
 							}),
 							i(28222),	-- Reaver of the Infinites
 							-- #if AFTER 7.3.5
@@ -388,7 +388,7 @@ for i,o in ipairs({
 	i(6097),	-- Acolyte's Shirt
 }) do table.insert(THOMAS_YANCE_GROUPS, o); end
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(251, {
 		q(35542),	-- Old Hillsbrad Foothills Reward Quest - Normal completion
 		q(35543),	-- Old Hillsbrad Foothills Reward Quest - Heroic completion

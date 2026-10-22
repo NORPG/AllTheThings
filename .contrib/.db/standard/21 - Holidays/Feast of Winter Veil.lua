@@ -43,163 +43,163 @@ BAINE_BLOODHOOF_CRITERIA_UID = 12661;
 -- WoWHead doesn't list specific colors on all of the vendors, but if you visit on the opposite faction, they sell both. It's based on the character's faction. Putting this in here in case its different and we need two separate distinctions.
 local HOLIDAY_VENDOR_GROUPS_GREEN = {
 	i(34261, {	-- Pattern: Green Winter Clothes (RECIPE!)
-		["timeline"] = { ADDED_2_3_0 },
+		timeline = { ADDED_2_3_0 },
 	}),
 }
 local HOLIDAY_VENDOR_GROUPS_RED = {
 	i(34319, {	-- Pattern: Red Winter Clothes (RECIPE!)
-		["timeline"] = { ADDED_2_3_0 },
+		timeline = { ADDED_2_3_0 },
 	}),
 };
 local STOLEN_PRESENT_GROUPS = {
 	-- Battle Pets/Companions
 	i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
-		["timeline"] = { ADDED_3_3_3 },
+		timeline = { ADDED_3_3_3 },
 	}),
 	i(34425, {	-- Clockwork Rocket Bot (PET!)
-		["timeline"] = { ADDED_2_3_0 },
+		timeline = { ADDED_2_3_0 },
 	}),
 	i(73797, {	-- Lumpy (PET!)
-		["timeline"] = { ADDED_4_3_0 },
+		timeline = { ADDED_4_3_0 },
 	}),
 	i(104317, {	-- Rotten Little Helper (PET!)
-		["timeline"] = { ADDED_5_4_0 },
+		timeline = { ADDED_5_4_0 },
 	}),
 	i(178533, {	-- Jingles (PET!)
-		["timeline"] = { ADDED_9_0_1 },
+		timeline = { ADDED_9_0_1 },
 	}),
 	i(232531, {	-- Grunch
-		["timeline"] = { ADDED_11_0_7 },
+		timeline = { ADDED_11_0_7 },
 	}),
 	-- Toys
 	i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
 	i(108632, {	-- Crashin' Thrashin' Flamer Controller (TOY!)
-		["timeline"] = { ADDED_6_2_2 },
+		timeline = { ADDED_6_2_2 },
 	}),
 	i(104318, {	-- Crashin' Thrashin' Flyer Controller (TOY!)
-		["timeline"] = { ADDED_5_4_0 },
+		timeline = { ADDED_5_4_0 },
 	}),
 	i(172223, {	-- Crashin' Thrashin' Battleship (TOY!)
-		["timeline"] = { ADDED_8_2_5 },
-		["races"] = ALLIANCE_ONLY,
+		timeline = { ADDED_8_2_5 },
+		races = ALLIANCE_ONLY,
 	}),
 	i(172222, {	-- Crashin' Thrashin' Juggernaught (TOY!)
-		["timeline"] = { ADDED_8_2_5 },
-		["races"] = HORDE_ONLY,
+		timeline = { ADDED_8_2_5 },
+		races = HORDE_ONLY,
 	}),
 	i(37710),	-- Crashin' Thrashin' Racer Controller (TOY!)
 	i(116763, {	-- Crashin' Thrashin' Shredder Controller (TOY!)
-		["timeline"] = { ADDED_6_0_2 },
+		timeline = { ADDED_6_0_2 },
 	}),
 	i(139337, {	-- Disposable Winter Veil Suits (TOY!)
-		["timeline"] = { ADDED_7_0_3 },
+		timeline = { ADDED_7_0_3 },
 	}),
 	i(128636, {	-- Endothermic Blaster (TOY!)
-		["timeline"] = { ADDED_7_0_3 },
+		timeline = { ADDED_7_0_3 },
 	}),
 	i(191925, {	-- Falling Star Flinger (TOY!)
-		["timeline"] = { ADDED_10_2_0 },
+		timeline = { ADDED_10_2_0 },
 	}),
 	i(191937, {	-- Falling Star Catcher (TOY!)
-		["timeline"] = { ADDED_10_2_0 },
+		timeline = { ADDED_10_2_0 },
 	}),
 	i(209859, {	-- Festive Trans-Dimensional Bird Whistle (TOY!)
-		["timeline"] = { ADDED_10_2_0 },
+		timeline = { ADDED_10_2_0 },
 	}),
 	i(116692, {	-- Fuzzy Green Lounge Cushion (TOY!)
-		["timeline"] = { ADDED_6_0_2 },
+		timeline = { ADDED_6_0_2 },
 	}),
 	i(162973, {	-- Greatfather Winter's Hearthstone (TOY!)
-		["timeline"] = { ADDED_8_1_0 },	-- 8.0.1 it was added in the Gift, so will say 8.1 for this source
+		timeline = { ADDED_8_1_0 },	-- 8.0.1 it was added in the Gift, so will say 8.1 for this source
 	}),
 	i(151343, {	-- Hearthstation (A) (TOY!)
-		["timeline"] = { ADDED_8_2_5 },
-		["races"] = ALLIANCE_ONLY,
+		timeline = { ADDED_8_2_5 },
+		races = ALLIANCE_ONLY,
 	}),
 	i(151344, {	-- Hearthstation (H) (TOY!)
-		["timeline"] = { ADDED_8_2_5 },
-		["races"] = HORDE_ONLY,
+		timeline = { ADDED_8_2_5 },
+		races = HORDE_ONLY,
 	}),
 	i(208825, {	-- Junior Timekeeper's Racing Belt (TOY!)
-		["timeline"] = { ADDED_11_0_7 },
+		timeline = { ADDED_11_0_7 },
 	}),
 	i(46709),	-- MiniZep Controller (TOY!)
 	i(116689, {	-- Pineapple Lounge Cushion (TOY!)
-		["timeline"] = { ADDED_6_0_2 },
+		timeline = { ADDED_6_0_2 },
 	}),
 	i(128776, {	-- Red Wooden Sled (TOY!)
-		["timeline"] = { ADDED_6_2_2 },
+		timeline = { ADDED_6_2_2 },
 	}),
 	i(187422, {	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
-		["timeline"] = { ADDED_10_0_2 },
+		timeline = { ADDED_10_0_2 },
 	}),
 	i(116690, {	-- Safarai Lounge Cushion (TOY!)
-		["timeline"] = { ADDED_6_0_2 },
+		timeline = { ADDED_6_0_2 },
 	}),
 	i(116456, {	-- Scroll of Storytelling (TOY!)
-		["timeline"] = { ADDED_6_0_2 },
+		timeline = { ADDED_6_0_2 },
 	}),
 	i(90888, {	-- Special Edition Foot Ball (TOY!)
-		["timeline"] = { ADDED_6_2_3 },
+		timeline = { ADDED_6_2_3 },
 	}),
 	i(90883, {	-- The Pigskin (TOY!)
-		["timeline"] = { ADDED_6_2_3 },
+		timeline = { ADDED_6_2_3 },
 	}),
 	i(54438),	-- Tiny Blue Ragdoll (TOY!)
 	i(54437),	-- Tiny Green Ragdoll (TOY!)
 	i(162643, {	-- Toy Armor Set [A] (TOY!)
-		["timeline"] = { ADDED_9_1_5 },
-		["races"] = ALLIANCE_ONLY,
+		timeline = { ADDED_9_1_5 },
+		races = ALLIANCE_ONLY,
 	}),
 	i(162642, {	-- Toy Armor Set [H] (TOY!)
-		["timeline"] = { ADDED_9_1_5 },
-		["races"] = HORDE_ONLY,
+		timeline = { ADDED_9_1_5 },
+		races = HORDE_ONLY,
 	}),
 	i(44606),	-- Toy Train Set (TOY!)
 	i(151349, {	-- Toy Weapon Set [A] (TOY!)
-		["timeline"] = { ADDED_7_3_0 },
-		["races"] = ALLIANCE_ONLY,
+		timeline = { ADDED_7_3_0 },
+		races = ALLIANCE_ONLY,
 	}),
 	i(151348, {	-- Toy Weapon Set [H] (TOY!)
-		["timeline"] = { ADDED_7_3_0 },
-		["races"] = HORDE_ONLY,
+		timeline = { ADDED_7_3_0 },
+		races = HORDE_ONLY,
 	}),
 	i(172219, {	-- Wild Holly (TOY!)
-		["timeline"] = { ADDED_8_2_5 },
+		timeline = { ADDED_8_2_5 },
 	}),
 	i(45057),	-- Wind-Up Train Wrecker (TOY!)
 	i(188680, {	-- Winter Veil Chorus Book (TOY!)
-		["timeline"] = { ADDED_9_1_5 },
+		timeline = { ADDED_9_1_5 },
 	}),
 	i(210656, {	-- Winter Veil Socks (TOY!)
-		["timeline"] = { ADDED_11_0_7 },
+		timeline = { ADDED_11_0_7 },
 	}),
 	i(178530, {	-- Wreath-A-Rang (TOY!)
-		["timeline"] = { ADDED_9_1_5 },
+		timeline = { ADDED_9_1_5 },
 	}),
 	i(116691, {	-- Zhevra Lounge Cusion (TOY!)
-		["timeline"] = { ADDED_6_0_2 },
+		timeline = { ADDED_6_0_2 },
 	}),
 	-- Mount Mods
 	i(210432, {	-- Highland Drake: Winter Veil Armor (MM!)
-		["timeline"] = { ADDED_10_2_0 },
+		timeline = { ADDED_10_2_0 },
 	}),
 	-- Illusions
 	i(128649, {	-- Illusion: Winter's Grasp (ILLUSION!)
-		["timeline"] = { ADDED_6_2_2 },
+		timeline = { ADDED_6_2_2 },
 	}),
 	i(118572, {	-- Illusion: Flames of Ragnaros (ILLUSION!)
-		["timeline"] = { ADDED_6_0_2 },
+		timeline = { ADDED_6_0_2 },
 	}),
 	-- Appearances
 	i(143898, {	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
-		["timeline"] = { ADDED_7_1_0 },
+		timeline = { ADDED_7_1_0 },
 	}),
 	i(117371, {	-- Miniature Winter Veil Tree (Level 1-110)
-		["timeline"] = { ADDED_6_0_2, REMOVED_7_1_0 },
+		timeline = { ADDED_6_0_2, REMOVED_7_1_0 },
 	}),
 	i(93625, {	-- Miniature Winter Veil Tree (Level 90)
-		["timeline"] = {
+		timeline = {
 			ADDED_5_1_0,
 			-- #if ANYCLASSIC
 			REMOVED_5_5_4,
@@ -209,30 +209,30 @@ local STOLEN_PRESENT_GROUPS = {
 	}),
 	-- #if ANYCLASSIC
 	i(268556, {	-- Miniature Winter Veil Tree (Level 90 - 502 ilvl)
-		["timeline"] = { ADDED_5_5_4, REMOVED_6_0_2 },
+		timeline = { ADDED_5_5_4, REMOVED_6_0_2 },
 	}),
 	-- #endif
 	i(66540, {	-- Miniature Winter Veil Tree (Level 85)
-		["timeline"] = { ADDED_4_3_0, REMOVED_5_1_0 },
+		timeline = { ADDED_4_3_0, REMOVED_5_1_0 },
 	}),
 	-- Trinkets
 	i(151351, {	-- Glowing Gift
-		["timeline"] = { ADDED_7_3_0 },
+		timeline = { ADDED_7_3_0 },
 	}),
 	-- Misc:
 	i(46725),	-- Red Rider Air Rifle
 	i(219291, {	-- Puntable Baby Greench (CI!)
-		["timeline"] = { ADDED_11_0_7 },
+		timeline = { ADDED_11_0_7 },
 	}),
 	i(219255, {	-- Puntable Rotten Little Helper (CI!)
-		["timeline"] = { ADDED_11_0_7 },
+		timeline = { ADDED_11_0_7 },
 	}),
 };
 
 root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
 	n(ACHIEVEMENTS, {
 		ach(1692, {	-- Merrymaker (A)
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				273,			-- On Metzen!
 				252,			-- With a Little Helper from My Friends
 				1255,			-- Scrooge (A)
@@ -245,14 +245,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				1689,			-- He Knows If You've Been Naughty
 				1690,			-- A Frosty Shake
 			}},
-			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
-			["races"] = ALLIANCE_ONLY,
-			["groups"] = {
+			timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
+			races = ALLIANCE_ONLY,
+			groups = {
 				title(102),				-- Merrymaker
 			},
 		}),
 		ach(1691, {	-- Merrymaker (H) / Merrymaker [MOP+]
-			["sym"] = {{"meta_achievement",
+			sym = {{"meta_achievement",
 				273,			-- On Metzen!
 				252,			-- With a Little Helper from My Friends
 				-- #if AFTER MOP
@@ -271,16 +271,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				1689,			-- He Knows If You've Been Naughty
 				1690,			-- A Frosty Shake
 			}},
-			["timeline"] = { ADDED_3_0_2 },
+			timeline = { ADDED_3_0_2 },
 			-- #if BEFORE MOP
-			["races"] = HORDE_ONLY,
+			races = HORDE_ONLY,
 			-- #endif
-			["groups"] = {
+			groups = {
 				title(102),				-- Merrymaker
 			},
 		}),
 		ach(277, {	-- 'Tis the Season
-			["providers"] = {
+			providers = {
 				{ "i", 21215 },	-- Graccu's Mince Meat Fruitcake
 				{ "i", 21525 },	-- Green Winter Hat
 				{ "i", 21524 },	-- Red Winter Hat
@@ -294,46 +294,46 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 34086 },	-- Winter Boots
 				-- #endif
 			},
-			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { NORTHREND_DALARAN },
+			timeline = { ADDED_3_0_2 },
+			maps = { NORTHREND_DALARAN },
 		}),
 		ach(5853, {	-- A-Caroling We Will Go (A)
-			["providers"] = {
+			providers = {
 				-- #if AFTER 9.1.5
 				{ "i", 188680 },	-- Winter Veil Chorus Book
 				-- #else
 				{ "i", 70923 },	-- Gaudy Winter Veil Sweater
 				-- #endif
 			},
-			["timeline"] = { ADDED_4_3_0 },
-			["sym"] = {{ "achievement_criteria" }},
-			["maps"] = { ORGRIMMAR, SILVERMOON_CITY, THUNDER_BLUFF, UNDERCITY },
-			["races"] = ALLIANCE_ONLY,
+			timeline = { ADDED_4_3_0 },
+			sym = {{ "achievement_criteria" }},
+			maps = { ORGRIMMAR, SILVERMOON_CITY, THUNDER_BLUFF, UNDERCITY },
+			races = ALLIANCE_ONLY,
 		}),
 		ach(5854, {	-- A-Caroling We Will Go (H)
-			["providers"] = {
+			providers = {
 				-- #if AFTER 9.1.5
 				{ "i", 188680 },	-- Winter Veil Chorus Book
 				-- #else
 				{ "i", 70923 },	-- Gaudy Winter Veil Sweater
 				-- #endif
 			},
-			["timeline"] = { ADDED_4_3_0 },
-			["sym"] = {{ "achievement_criteria" }},
-			["maps"] = { DARNASSUS, THE_EXODAR, IRONFORGE, STORMWIND_CITY },
-			["races"] = HORDE_ONLY,
+			timeline = { ADDED_4_3_0 },
+			sym = {{ "achievement_criteria" }},
+			maps = { DARNASSUS, THE_EXODAR, IRONFORGE, STORMWIND_CITY },
+			races = HORDE_ONLY,
 		}),
 		ach(1690, {	-- A Frosty Shake
-			["providers"] = {
+			providers = {
 				{ "i", 17712 },	-- Winter Veil Disguise Kit
 				{ "i", 17202 },	-- Snowball
 			},
-			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { NORTHREND_DALARAN },
+			timeline = { ADDED_3_0_2 },
+			maps = { NORTHREND_DALARAN },
 		}),
-		ach(4436, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- BB King (A)
-			["provider"] = { "i", 46725 },	-- Red Rider Air Rifle
-			["maps"] = {
+		ach(4436, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- BB King (A)
+			provider = { "i", 46725 },	-- Red Rider Air Rifle
+			maps = {
 				ORGRIMMAR,
 				SILVERMOON_CITY,
 				UNDERCITY,
@@ -341,13 +341,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				THUNDER_BLUFF,
 				-- #endif
 			},
-			["races"] = ALLIANCE_ONLY,
-			["groups"] = {
+			races = ALLIANCE_ONLY,
+			groups = {
 				crit(LORTHEMAR_THERON_CRITERIA_UID, {	-- Lor'themar Theron
-					["provider"] = { "n", 16802 },	-- Lor'themar Theron
+					provider = { "n", 16802 },	-- Lor'themar Theron
 				}),
 				crit(LADY_SYLVANAS_WINDRUNNER_CRITERIA_UID, {	-- Lady Sylvanas Windrunner
-					["provider"] = { "n", 10181 },	-- Lady Sylvanas Windrunner
+					provider = { "n", 10181 },	-- Lady Sylvanas Windrunner
 				}),
 
 				-- THUNDER BLUFF LEADER HISTORY
@@ -356,11 +356,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #if AFTER 4.0.3
 				-- Patch 4.0.3a (2010-11-23): Cairne Bloodhoof changed to Baine Bloodhoof;
 				crit(BAINE_BLOODHOOF_CRITERIA_UID, {	-- Baine Bloodhoof <High Chieftain>
-					["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
+					provider = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
 				}),
 				-- #else
 				crit(BAINE_BLOODHOOF_CRITERIA_UID, {	-- Cairne Bloodhoof <High Chieftain>
-					["provider"] = { "n", 3057 },	-- Cairne Bloodhoof <High Chieftain>
+					provider = { "n", 3057 },	-- Cairne Bloodhoof <High Chieftain>
 				}),
 				-- #endif
 				-- #endif
@@ -369,36 +369,36 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #if AFTER 8.2.5
 				-- Patch 8.2.5 (2019-09-24): Eitrigg has replaced High Overlord Saurfang.
 				crit(35832, {	-- Eitrigg
-					["provider"] = { "n", 126066 },	-- Eitrigg
+					provider = { "n", 126066 },	-- Eitrigg
 				}),
 				-- #elseif AFTER 7.0.1
 				-- Legion Hotfix (2016-12-16): High Overlord Saurfang has replaced Vol'jin from the criteria.
 				crit(12659, {	-- High Overlord Saurfang
-					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
+					provider = { "n", 14720 },	-- High Overlord Saurfang
 				}),
 				-- #elseif AFTER 6.0.2
 				-- Patch 6.0.2 (2014-10-14): Garrosh Hellscream changed to Vol'jin to reflect post-Siege of Orgrimmar events.
 				crit(12659, {	-- Vol'jin
-					["provider"] = { "n", 10540 },	-- Vol'jin
+					provider = { "n", 10540 },	-- Vol'jin
 				}),
 				-- #elseif AFTER 4.0.3
 				-- Patch 4.0.3a (2010-11-23): Thrall changed to Garrosh Hellscream; Vol'jin removed.
 				crit(12658, {	-- Garrosh Hellscream <Warchief>
-					["provider"] = { "n", 39605 },	-- Garrosh Hellscream <Warchief>
+					provider = { "n", 39605 },	-- Garrosh Hellscream <Warchief>
 				}),
 				-- #else
 				crit(12658, {	-- Thrall <Warchief>
-					["provider"] = { "n", 4949 },	-- Thrall <Warchief>
+					provider = { "n", 4949 },	-- Thrall <Warchief>
 				}),
 				crit(12659, {	-- Vol'jin
-					["provider"] = { "n", 10540 },	-- Vol'jin
+					provider = { "n", 10540 },	-- Vol'jin
 				}),
 				-- #endif
 			},
 		})),
-		ach(4437, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- BB King (H)
-			["provider"] = { "i", 46725 },	-- Red Rider Air Rifle
-			["maps"] = {
+		ach(4437, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- BB King (H)
+			provider = { "i", 46725 },	-- Red Rider Air Rifle
+			maps = {
 				THE_EXODAR,
 				DARNASSUS,
 				IRONFORGE,
@@ -406,13 +406,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				STORMWIND_CITY,
 				-- #endif
 			},
-			["races"] = HORDE_ONLY,
-			["groups"] = {
+			races = HORDE_ONLY,
+			groups = {
 				crit(TYRANDE_WHISPERWIND_CRITERIA_UID, {	-- Tyrande Whisperwind
-					["provider"] = { "n", 7999 },	-- Tyrande Whisperwind
+					provider = { "n", 7999 },	-- Tyrande Whisperwind
 				}),
 				crit(PROPHET_VELEN_CRITERIA_UID, {	-- Prophet Velen
-					["provider"] = { "n", 17468 },	-- Prophet Velen
+					provider = { "n", 17468 },	-- Prophet Velen
 				}),
 
 				-- IRONFORGE FACTION LEADER HISTORY
@@ -421,14 +421,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- King Magni Bronzebeard changed to Muradin Bronzebeard;
 				-- High Tinker Mekkatorque removed.
 				crit(12664, {	-- Muradin Bronzebeard
-					["provider"] = { "n", 42928 },	-- Muradin Bronzebeard
+					provider = { "n", 42928 },	-- Muradin Bronzebeard
 				}),
 				-- #else
 				crit(12665, {	-- High Tinker Mekkatorque
-					["provider"] = { "n", 7937 },	-- High Tinker Mekkatorque
+					provider = { "n", 7937 },	-- High Tinker Mekkatorque
 				}),
 				crit(12664, {	-- King Magni Bronzebeard
-					["provider"] = { "n", 2784 },	-- King Magni Bronzebeard
+					provider = { "n", 2784 },	-- King Magni Bronzebeard
 				}),
 				-- #endif
 
@@ -438,40 +438,40 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #if AFTER 7.0.1
 				-- Legion Hotfix (2016-12-16): Anduin Wrynn replaced King Varian Wrynn from the criteria.
 				crit(12663, {	-- Anduin Wrynn <King of Stormwind>
-					["provider"] = { "n", 107574 },	-- Anduin Wrynn <King of Stormwind>
+					provider = { "n", 107574 },	-- Anduin Wrynn <King of Stormwind>
 				}),
 				-- #else
 				crit(12663, {	-- King Varian Wrynn
-					["provider"] = { "n", 29611 },	-- King Varian Wrynn
+					provider = { "n", 29611 },	-- King Varian Wrynn
 				}),
 				-- #endif
 				-- #endif
 			},
 		})),
 		ach(1295, {	-- Crashin' & Thrashin'
-			["providers"] = {
+			providers = {
 				{ "i", 37710 },	-- Crashin' Thrashin' Racer Controller
 				{ "i", 54343 },	-- Blue Crashin' Thrashin' Racer Controller
 			},
-			["timeline"] = { ADDED_3_0_2 },
+			timeline = { ADDED_3_0_2 },
 		}),
 		ach(1282, {	-- Fa-la-la-la-Ogri'la
-			["providers"] = {
+			providers = {
 				{ "i", 21212 },	-- Fresh Holly
 				{ "i", 21213 },	-- Preserved Holly
 				{ "n", 23120 },	-- Sky Sergeant Vanderlip
 			},
-			["sourceQuest"] = 11023,	-- Bomb them again!
-			["timeline"] = { ADDED_3_0_2 },
-			["coord"] = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
-			["_noautomation"] = true,
+			sourceQuest = 11023,	-- Bomb them again!
+			timeline = { ADDED_3_0_2 },
+			coord = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
+			_noautomation = true,
 		}),
 		ach(1689, {	-- He Knows If You've Been Naughty
-			["timeline"] = { ADDED_3_0_2 },
+			timeline = { ADDED_3_0_2 },
 		}),
-		ach(1686, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Holiday Bromance (A)
-			["provider"] = { "i", 21519 },	-- Mistletoe
-			["maps"] = {
+		ach(1686, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- Holiday Bromance (A)
+			provider = { "i", 21519 },	-- Mistletoe
+			maps = {
 				-- #if AFTER CATA
 				NORTHERN_STRANGLETHORN,
 				-- #else
@@ -482,11 +482,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				DUSTWALLOW_MARSH,
 				STORMWIND_CITY
 			},
-			["races"] = ALLIANCE_ONLY,
-			["groups"] = {
+			races = ALLIANCE_ONLY,
+			groups = {
 				crit(6228, {	-- Brother Nimetz in Stranglethorn Vale
-					["provider"] = { "n", 739 },	-- Brother Nimetz
-					["coords"] = {
+					provider = { "n", 739 },	-- Brother Nimetz
+					coords = {
 						-- #if AFTER CATA
 						{ 47.3, 11.1, NORTHERN_STRANGLETHORN },
 						-- #else
@@ -495,8 +495,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					},
 				}),
 				crit(6229, {	-- Brother Wilhelm in Goldshire
-					["provider"] = { "n", 927 },	-- Brother Wilhelm
-					["coords"] = {
+					provider = { "n", 927 },	-- Brother Wilhelm
+					coords = {
 						-- #if AFTER CATA
 						{ 41.0, 65.8, ELWYNN_FOREST },
 						-- #else
@@ -505,11 +505,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					},
 				}),
 				crit(6231, {	-- Brother Karman in Theramore
-					["provider"] = { "n", 8140 },	-- Brother Karman
+					provider = { "n", 8140 },	-- Brother Karman
 					-- #if AFTER MOP
-					["description"] = "If Theramore is phased, talk to Zidormi to the west of the city.",
+					description = "If Theramore is phased, talk to Zidormi to the west of the city.",
 					-- #endif
-					["coords"] = {
+					coords = {
 						-- #if AFTER CATA
 						{ 67.4, 47.2, DUSTWALLOW_MARSH },
 						-- #else
@@ -518,8 +518,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					},
 				}),
 				crit(6230, {	-- Brother Kristoff in Stormwind
-					["provider"] = { "n", 1444 },	-- Brother Kristoff
-					["coords"] = {
+					provider = { "n", 1444 },	-- Brother Kristoff
+					coords = {
 						-- #if AFTER LEGION
 						{ 54.6, 53.8, STORMWIND_CITY },
 						-- #else
@@ -528,8 +528,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					},
 				}),
 				crit(6232, {	-- Brother Joshua in Stormwind
-					["provider"] = { "n", 5489 },	-- Brother Joshua
-					["coords"] = {
+					provider = { "n", 5489 },	-- Brother Joshua
+					coords = {
 						-- #if AFTER LEGION
 						{ 49.6, 45.2, STORMWIND_CITY },
 						-- #else
@@ -538,8 +538,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					},
 				}),
 				crit(6233, {	-- Brother Crowley in Stormwind
-					["provider"] = { "n", 12336 },	-- Brother Crowley
-					["coords"] = {
+					provider = { "n", 12336 },	-- Brother Crowley
+					coords = {
 						-- #if AFTER LEGION
 						{ 52.2, 43.8, STORMWIND_CITY },
 						-- #else
@@ -548,8 +548,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					},
 				}),
 				crit(6234, {	-- Brother Cassius in Stormwind
-					["provider"] = { "n", 1351 },	-- Brother Cassius
-					["coords"] = {
+					provider = { "n", 1351 },	-- Brother Cassius
+					coords = {
 						-- #if AFTER LEGION
 						{ 52.2, 45.6, STORMWIND_CITY },
 						-- #else
@@ -558,8 +558,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					},
 				}),
 				crit(6235, {	-- Brother Benjamin in Stormwind
-					["provider"] = { "n", 5484 },	-- Brother Benjamin
-					["coords"] = {
+					provider = { "n", 5484 },	-- Brother Benjamin
+					coords = {
 						-- #if AFTER LEGION
 						{ 51.6, 46.4, STORMWIND_CITY },
 						-- #else
@@ -569,66 +569,66 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 				-- #if BEFORE CATA
 				crit(6236, {	-- Brother Anton in Nijel's Point
-					["provider"] = { "n", 1182 },	-- Brother Anton
-					["coord"] = { 66.5, 7.9, DESOLACE },
-					["timeline"] = { REMOVED_4_0_3 },
+					provider = { "n", 1182 },	-- Brother Anton
+					coord = { 66.5, 7.9, DESOLACE },
+					timeline = { REMOVED_4_0_3 },
 				}),
 				-- #endif
 			},
 		})),
-		ach(1685, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Holiday Bromance (H)
-			["provider"] = { "i", 21519 },	-- Mistletoe
-			["maps"] = { UNDERCITY, BOREAN_TUNDRA, ICECROWN },
-			["races"] = HORDE_ONLY,
-			["groups"] = {
+		ach(1685, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- Holiday Bromance (H)
+			provider = { "i", 21519 },	-- Mistletoe
+			maps = { UNDERCITY, BOREAN_TUNDRA, ICECROWN },
+			races = HORDE_ONLY,
+			groups = {
 				crit(6225, {	-- Brother Malach in the Undercity
-					["provider"] = { "n", 5661 },	-- Brother Malach
-					["coord"] = { 51.6, 22.6, UNDERCITY },
+					provider = { "n", 5661 },	-- Brother Malach
+					coord = { 51.6, 22.6, UNDERCITY },
 				}),
 				crit(6226, {	-- Durkot Wolfbrother in Warsong Hold
-					["provider"] = { "n", 26044 },	-- Durkot Wolfbrother
-					["coord"] = { 40.2, 55.0, BOREAN_TUNDRA },
+					provider = { "n", 26044 },	-- Durkot Wolfbrother
+					coord = { 40.2, 55.0, BOREAN_TUNDRA },
 				}),
 				crit(6662, {	-- Brother Keltan in Icecrown
-					["provider"] = { "n", 31261 },	-- Brother Keltan
-					["description"] = "Located on the horde gunship in the air.",
-					["coord"] = { 69.4, 42.4, ICECROWN },
+					provider = { "n", 31261 },	-- Brother Keltan
+					description = "Located on the horde gunship in the air.",
+					coord = { 69.4, 42.4, ICECROWN },
 				}),
 			},
 		})),
 		ach(10353, {	-- Iron Armada
-			["timeline"] = { ADDED_6_2_2 },
-			["groups"] = {
+			timeline = { ADDED_6_2_2 },
+			groups = {
 				crit(28989, {	-- Crashin' Thrashin' Cannon
-					["provider"] = { "i", 108633 },	-- Crashin' Thrashin' Cannon
+					provider = { "i", 108633 },	-- Crashin' Thrashin' Cannon
 				}),
 				crit(28924, {	-- Crashin' Thrashin' Flamer
-					["provider"] = { "i", 108632 },	-- Crashin' Thrashin' Flamer Controller
+					provider = { "i", 108632 },	-- Crashin' Thrashin' Flamer Controller
 				}),
 				crit(28987, {	-- Crashin' Thrashin' Killdozer
-					["provider"] = { "i", 108635 },	-- Crashin' Thrashin' Killdozer
+					provider = { "i", 108635 },	-- Crashin' Thrashin' Killdozer
 				}),
 				crit(28988, {	-- Crashin' Thrashin' Mortar
-					["provider"] = { "i", 108634 },	-- Crashin' Thrashin' Mortar
+					provider = { "i", 108634 },	-- Crashin' Thrashin' Mortar
 				}),
 				crit(28990, {	-- Crashin' Thrashin' Roller
-					["provider"] = { "i", 108631 },	-- Crashin' Thrashin' Roller
+					provider = { "i", 108631 },	-- Crashin' Thrashin' Roller
 				}),
 			},
 		}),
 		ach(1687, {	-- Let It Snow
-			["provider"] = { "i", 34191 },	-- Handful of Snowflakes
-			["timeline"] = { ADDED_3_0_2 },
-			["sym"] = {{ "achievement_criteria" }},
+			provider = { "i", 34191 },	-- Handful of Snowflakes
+			timeline = { ADDED_3_0_2 },
+			sym = {{ "achievement_criteria" }},
 		}),
 		ach(62502, {	-- Master of Merry Mayhem
-			["maps"] = { FOUNDERS_POINT, RAZORWIND_SHORES },
-			["timeline"] = { ADDED_12_1_5 },
+			maps = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			timeline = { ADDED_12_1_5 },
 		}),
 		ach(273, {	-- On Metzen!
-			["provider"] = { "n", 15664 },	-- Metzen the Reindeer
-			["timeline"] = { ADDED_3_0_2 },
-			["sourceQuests"] = {
+			provider = { "n", 15664 },	-- Metzen the Reindeer
+			timeline = { ADDED_3_0_2 },
+			sourceQuests = {
 				-- #if AFTER 4.3.0
 				7043,	-- You're a Mean One... [A]
 				6983,	-- You're a Mean One... [H]
@@ -637,7 +637,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				8746,	-- Metzen the Reindeer (Horde)
 				-- #endif
 			},
-			["maps"] = {
+			maps = {
 				-- #if AFTER CATA
 				HILLSBRAD_FOOTHILLS,
 				-- #else
@@ -648,7 +648,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		ach(1255, {	-- Scrooge (A)
-			["providers"] = {
+			providers = {
 				{ "i", 17202 },	-- Snowball
 				-- #if AFTER 4.0.3
 				{ "n", 42928 },	-- Muradin Bronzebeard
@@ -656,13 +656,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "n", 2784 },	-- King Magni Bronzebeard
 				-- #endif
 			},
-			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { IRONFORGE },
-			["races"] = ALLIANCE_ONLY,
-			["_noautomation"] = true,
+			timeline = { ADDED_3_0_2 },
+			maps = { IRONFORGE },
+			races = ALLIANCE_ONLY,
+			_noautomation = true,
 		}),
 		ach(259, {	-- Scrooge (H)
-			["providers"] = {
+			providers = {
 				{ "i", 17202 },	-- Snowball
 				-- #if AFTER 4.0.3
 				{ "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
@@ -670,63 +670,63 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "n", 3057 },	-- Cairne Bloodhoof <High Chieftain>
 				-- #endif
 			},
-			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = {
+			timeline = { ADDED_3_0_2 },
+			maps = {
 				-- #if AFTER 9.0.1
 				ORIBOS,
 				-- #endif
 				THUNDER_BLUFF,
 			},
-			["races"] = HORDE_ONLY,
-			["_noautomation"] = true,
+			races = HORDE_ONLY,
+			_noautomation = true,
 		}),
 		ach(279, {	-- Simply Abominable
-			["sourceQuests"] = {
+			sourceQuests = {
 				7045,	-- A Smokywood Pastures' Thank You! (Alliance)
 				6984,	-- A Smokywood Pastures' Thank You! (Horde)
 			},
-			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = {
+			timeline = { ADDED_3_0_2 },
+			maps = {
 				IRONFORGE,
 				ORGRIMMAR,
 			},
 		}),
 		ach(8699, {	-- The Danger Zone
-			["provider"] = { "i", 104318 },	-- Crashin' Thrashin' Flyer Controller
-			["timeline"] = { ADDED_5_4_0 },
+			provider = { "i", 104318 },	-- Crashin' Thrashin' Flyer Controller
+			timeline = { ADDED_5_4_0 },
 		}),
-		ach(1688, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- The Winter Veil Gourmet
-			["requireSkill"] = COOKING,
-			["groups"] = {
+		ach(1688, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- The Winter Veil Gourmet
+			requireSkill = COOKING,
+			groups = {
 				crit(6247, {	-- Gingerbread Cookie
 					-- #if ANYCLASSIC
-					["provider"] = { "i", 17197 },	-- Gingerbread Cookie
+					provider = { "i", 17197 },	-- Gingerbread Cookie
 					-- #endif
 				}),
 				crit(6249, {	-- Hot Apple Cider
 					-- #if ANYCLASSIC
-					["provider"] = { "i", 34411 },	-- Hot Apple Cider
+					provider = { "i", 34411 },	-- Hot Apple Cider
 					-- #endif
 				}),
 				crit(6248, {	-- Winter Veil Egg Nog
 					-- #if ANYCLASSIC
-					["provider"] = { "i", 17198 },	-- Winter Veil Egg Nog
+					provider = { "i", 17198 },	-- Winter Veil Egg Nog
 					-- #endif
 				}),
 			},
 		})),
 		pvp(ach(252, {	-- With a Little Helper from My Friends
-			["provider"] = { "o", 180796 },	-- PX-238 Winter Wondervolt
-			["timeline"] = { ADDED_3_0_2 },
-			["_noautomation"] = true,
+			provider = { "o", 180796 },	-- PX-238 Winter Wondervolt
+			timeline = { ADDED_3_0_2 },
+			_noautomation = true,
 		})),
 		ach(1705, {	-- Clockwork Rocket Bot (2007)
-			["provider"] = { "i", 34425 },	-- Clockwork Rocket Bot
-			["timeline"] = { ADDED_2_3_0 },
+			provider = { "i", 34425 },	-- Clockwork Rocket Bot
+			timeline = { ADDED_2_3_0 },
 		}),
 		ach(1706, {	-- Crashin' Thrashin' Racer (2008)
-			["provider"] = { "i", 37710 },	-- Crashin' Thrashin' Racer Controller
-			["timeline"] = {
+			provider = { "i", 37710 },	-- Crashin' Thrashin' Racer Controller
+			timeline = {
 				-- #if ANYCLASSIC
 				CREATED_2_4_3, REMOVED_3_3_0,
 				-- #else
@@ -735,127 +735,127 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		ach(6059, {	-- Red Rider Air Rifle (2009)
-			["provider"] = { "i", 46725 },	-- Red Rider Air Rifle
-			["timeline"] = { ADDED_4_3_0 },
+			provider = { "i", 46725 },	-- Red Rider Air Rifle
+			timeline = { ADDED_4_3_0 },
 		}),
 		ach(6060, {	-- MiniZep Controller (2010)
-			["provider"] = { "i", 46709 },	-- MiniZep Controller
-			["timeline"] = { ADDED_4_3_0, REMOVED_4_3_0, ADDED_6_2_3 },
+			provider = { "i", 46709 },	-- MiniZep Controller
+			timeline = { ADDED_4_3_0, REMOVED_4_3_0, ADDED_6_2_3 },
 		}),
 		ach(6061, {	-- Gaudy Winter Veil Sweater (2011)
-			["provider"] = { "i", 70923 },	-- Gaudy Winter Veil Sweater
-			["timeline"] = { ADDED_4_3_0 },
+			provider = { "i", 70923 },	-- Gaudy Winter Veil Sweater
+			timeline = { ADDED_4_3_0 },
 		}),
 		ach(7852, {	-- They're Both Footballs? (2012)
 			-- #if AFTER 6.0.0
-			["description"] =
+			description =
 				-- #if AFTER 11.0.7
 				"If you have obtained both items but you didn't earn the achievement, try throwing both balls to a friend.",
 				-- #else
 				"If you have obtained both items but you didn't earn the achievement, try throwing both balls to a friend.\n\nIf you learned the toys on 2 different characters, the achievement can't be completed",
 				-- #endif
 			-- #endif
-			["_doautomation"] = true,
-			["providers"] = {
+			_doautomation = true,
+			providers = {
 				{ "i", 90888 },	-- Special Edition Foot Ball (TOY!)
 				{ "i", 90883 },	-- The Pigskin (TOY!)
 			},
-			["timeline"] = { ADDED_5_1_0 },
+			timeline = { ADDED_5_1_0 },
 		}),
 		ach(8698, {	-- Crashin' Thrashin' Flyer (2013)
-			["provider"] = { "i", 104318 },	-- Crashin' Thrashin' Flyer Controller (TOY!)
-			["timeline"] = { ADDED_5_4_0 },
+			provider = { "i", 104318 },	-- Crashin' Thrashin' Flyer Controller (TOY!)
+			timeline = { ADDED_5_4_0 },
 		}),
 		ach(9915, {	-- Crashin' Thrashin' Shredder (2014)
-			["provider"] = { "i", 116763 },	-- Crashin' Thrashin' Shredder Controller (TOY!)
-			["timeline"] = { ADDED_6_1_0 },
+			provider = { "i", 116763 },	-- Crashin' Thrashin' Shredder Controller (TOY!)
+			timeline = { ADDED_6_1_0 },
 		}),
 		ach(10337, {	-- Crashin' Thrashin' Flamer (2015)
-			["provider"] = { "i", 108632 },	-- Crashin' Thrashin' Flamer Controller (TOY!)
-			["timeline"] = { ADDED_6_2_2 },
+			provider = { "i", 108632 },	-- Crashin' Thrashin' Flamer Controller (TOY!)
+			timeline = { ADDED_6_2_2 },
 		}),
 		ach(10751, {	-- Brr... It's Cold in Here (2016)
-			["provider"] = { "i", 128636 },	-- Endothermic Blaster (TOY!)
-			["timeline"] = { ADDED_7_0_3 },
+			provider = { "i", 128636 },	-- Endothermic Blaster (TOY!)
+			timeline = { ADDED_7_0_3 },
 		}),
 		ach(11913, {	-- Don't Play With That In The House (2017)
-			["providers"] = {
+			providers = {
 				{ "i", 151349 },	-- Toy Weapon Set [A] (TOY!)
 				{ "i", 151348 },	-- Toy Weapon Set [H] (TOY!)
 			},
-			["timeline"] = { ADDED_7_3_0 },
+			timeline = { ADDED_7_3_0 },
 		}),
 		ach(12850, {	-- At Least You're Being Careful (2018)
-			["providers"] = {
+			providers = {
 				{ "i", 162643 },	-- Toy Armor Set [A] (TOY!)
 				{ "i", 162642 },	-- Toy Armor Set [H] (TOY!)
 			},
-			["timeline"] = { ADDED_8_0_1 },
+			timeline = { ADDED_8_0_1 },
 		}),
 		ach(13927, {	-- Crashin' Splashin' (2019)
-			["providers"] = {
+			providers = {
 				{ "i", 172223 },	-- Crashin' Thrashin' Battleship (TOY!)
 				{ "i", 172222 },	-- Crashin' Thrashin' Juggernaught (TOY!)
 			},
-			["timeline"] = { ADDED_8_2_5 },
+			timeline = { ADDED_8_2_5 },
 		}),
 		ach(14931, {	-- Flying Festivities (2020)
-			["provider"] = { "i", 178530 },	-- Wreath-A-Rang (TOY!)
-			["timeline"] = { ADDED_9_0_5 },
+			provider = { "i", 178530 },	-- Wreath-A-Rang (TOY!)
+			timeline = { ADDED_9_0_5 },
 		}),
 		ach(15313, {	-- Rockin' Rollin' Racer (2021)
-			["providers"] = {
+			providers = {
 				{ "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
 				{ "i", 187560 },	-- Rockin' Rollin' Racer Pack (CI!)
 			},
-			["timeline"] = { ADDED_9_1_5 },
+			timeline = { ADDED_9_1_5 },
 		}),
 		ach(15181, {	-- Rock n' Roll (2021)
-			["provider"] = { "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
-			["timeline"] = { ADDED_9_1_5 },
+			provider = { "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
+			timeline = { ADDED_9_1_5 },
 		}),
 		ach(15645, {	-- To Catch Falling Stars (2022)
-			["provider"] = { "i", 191937 },	-- Falling Star Catcher (TOY!)
-			["timeline"] = { ADDED_10_0_2_LAUNCH },
+			provider = { "i", 191937 },	-- Falling Star Catcher (TOY!)
+			timeline = { ADDED_10_0_2_LAUNCH },
 		}),
 		ach(15653, {	-- The More You Know* (2022)
-			["provider"] = { "i", 191937 },	-- Falling Star Catcher (TOY!)
-			["timeline"] = { ADDED_10_0_2_LAUNCH },
+			provider = { "i", 191937 },	-- Falling Star Catcher (TOY!)
+			timeline = { ADDED_10_0_2_LAUNCH },
 		}),
 		ach(19077, {	-- Catch Me If You Can! (2023)
-			["provider"] = { "i", 208825 },	-- Junior Timekeeper's Racing Belt (TOY!)
-			["timeline"] = { ADDED_10_2_0 },
+			provider = { "i", 208825 },	-- Junior Timekeeper's Racing Belt (TOY!)
+			timeline = { ADDED_10_2_0 },
 		}),
 		ach(19130, {	-- Junior Racing Champion (2023)
-			["provider"] = { "i", 208825 },	-- Junior Timekeeper's Racing Belt (TOY!)
-			["timeline"] = { ADDED_10_2_0 },
+			provider = { "i", 208825 },	-- Junior Timekeeper's Racing Belt (TOY!)
+			timeline = { ADDED_10_2_0 },
 		}),
 		ach(20511, {	-- Gotta Punt em' All (2024)
-			["provider"] = { "i", 218310 },	-- Box of Puntables (TOY!)
-			["timeline"] = { ADDED_11_0_7 },
+			provider = { "i", 218310 },	-- Box of Puntables (TOY!)
+			timeline = { ADDED_11_0_7 },
 		}),
 		ach(20510, {	-- What Could it be? (2024)
-			["provider"] = { "i", 218310 },	-- Box of Puntables (TOY!)
-			["timeline"] = { ADDED_11_0_7 },
+			provider = { "i", 218310 },	-- Box of Puntables (TOY!)
+			timeline = { ADDED_11_0_7 },
 		}),
 		ach(42192, {	-- Snowball Fight (2025)
-			["provider"] = { "i", 243304 },	-- Jubilant Snowman Costume (TOY!)
-			["timeline"] = { ADDED_11_2_7 },
+			provider = { "i", 243304 },	-- Jubilant Snowman Costume (TOY!)
+			timeline = { ADDED_11_2_7 },
 		}),
 		ach(64174, {	-- Bow Go
-			--["provider"] = { "i", 286660 },	-- Throw Bow (TOY!)
-			["timeline"] = { ADDED_12_1_7 },
+			--provider = { "i", 286660 },	-- Throw Bow (TOY!)
+			timeline = { ADDED_12_1_7 },
 		}),
 		ach(64175, {	-- Let's Put A Bow On It
-			["timeline"] = { ADDED_12_1_7 },
+			timeline = { ADDED_12_1_7 },
 		}),
 	}),
 	-- #if AFTER 7.3.0.24727
 	filter(BATTLE_PETS, {
 		petbattle(pet(2114, {	-- Globe Yeti (PET!)
-			["description"] = "This pet spawns inside the globe located in Orgrimmar or Ironforge, and since 2019 its spawn rate has been greatly increased. Only one yeti is up at a time. When it spawns it will be a Level 1-3 Yeti by itself so be prepared. If you have a hard time competing with others for the pet you can make a macro that does the following:\n\n|cFFFFFFFF/tar globe yeti|r\n\n Spam this macro along with an |cFFFFFFFFInteract With Target|r key bind.\n\nYou can also try doing it while in War Mode since there are usually less people.",
-			["timeline"] = { ADDED_7_3_0 },
-			["maps"] = {
+			description = "This pet spawns inside the globe located in Orgrimmar or Ironforge, and since 2019 its spawn rate has been greatly increased. Only one yeti is up at a time. When it spawns it will be a Level 1-3 Yeti by itself so be prepared. If you have a hard time competing with others for the pet you can make a macro that does the following:\n\n|cFFFFFFFF/tar globe yeti|r\n\n Spam this macro along with an |cFFFFFFFFInteract With Target|r key bind.\n\nYou can also try doing it while in War Mode since there are usually less people.",
+			timeline = { ADDED_7_3_0 },
+			maps = {
 				ORGRIMMAR,
 				IRONFORGE,
 			},
@@ -865,7 +865,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 	n(COMMON_BOSS_DROPS, {
 		-- #if AFTER LEGION
 		i(139300, {	-- Finely-Tailored Green Holiday Hat
-			["maps"] = {
+			maps = {
 				909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920,	-- Antorus
 				751, 752, 753, 754, 755, 756,	-- Black Rook Hold
 				713,	-- Eye of Azshara
@@ -881,7 +881,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				1512, 1513, 1514, 1515, 1516, 1517, 1518, 1519, 1520,	-- The Eternal Palace
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				125075,	-- Varimathras
 				98696,	-- Illysanna Ravencrest
 				91797,	-- King Deepbeard
@@ -893,7 +893,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		i(139299, {	-- Finely-Tailored Red Holiday Hat
-			["maps"] = {
+			maps = {
 				764, 765, 766, 767, 768, 769, 770, 771, 772,	-- Nighthold
 				761, 763,	-- Court of Stars
 				903,	-- The Seat of the Triumvirate
@@ -911,7 +911,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				936,	-- Freehold
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				101002,	-- Krosus
 				104217,	-- Talixae Flamewreath
 				122316,	-- Saprish
@@ -924,7 +924,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 		-- #endif
 		i(21525, {	-- Green Winter Hat
-			["maps"] = {
+			maps = {
 				-- #if AFTER SL
 				-- Castle Nathria
 				1735,	-- The Grand Walk
@@ -974,7 +974,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				-- #if AFTER SL
 				166969,	-- Baroness Frieda
 				-- #endif
@@ -1008,7 +1008,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		i(21524, {	-- Red Winter Hat
-			["maps"] = {
+			maps = {
 				-- #if AFTER SL
 				-- Castle Nathria
 				1735,	-- The Grand Walk
@@ -1059,7 +1059,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				-- #if AFTER SL
 				166969,	-- Baroness Frieda
 				167406,	-- Sire Denathrius
@@ -1097,44 +1097,44 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 	}),
 	n(MAILBOX, {
-		["description"] =
+		description =
 			-- #if AFTER TBC
 			"These recipes are mailed to characters with the corresponding profession(s) at the start of the event. They can also be purchased from several seasonal vendors.",
 			-- #else
 			"These recipes are mailed to characters with the corresponding profession(s) at the start of the event.",
 			-- #endif
-		["groups"] = {
+		groups = {
 			-- #if AFTER TBC
 			i(34261, {	-- Pattern: Green Winter Clothes (RECIPE!)
-				["description"] =
+				description =
 					-- #if AFTER TBC
 					"Horde Tailors receive this pattern in the mail, but Alliance Tailors can learn it from the Neutral holiday vendor in Shattrath.",
 					-- #else
 					"Horde Tailors receive this pattern in the mail, but Alliance Tailors that are adventurous can learn it from the Neutral holiday vendor in Orgrimmar.",
 					-- #endif
-				["timeline"] = { ADDED_2_3_0 },
+				timeline = { ADDED_2_3_0 },
 			}),
 			i(34319, {	-- Pattern: Red Winter Clothes (RECIPE!)
-				["description"] =
+				description =
 					-- #if AFTER TBC
 					"Alliance Tailors receive this pattern in the mail, but Horde Tailors can learn it from the Neutral holiday vendor in Shattrath.",
 					-- #else
 					"Alliance Tailors receive this pattern in the mail, but Horde Tailors that are adventurous can learn it from the Neutral holiday vendor in Stormwind.",
 					-- #endif
-				["timeline"] = { ADDED_2_3_0 },
+				timeline = { ADDED_2_3_0 },
 			}),
 			i(34262, {	-- Pattern: Winter Boots (RECIPE!)
-				["timeline"] = { ADDED_2_3_0 },
+				timeline = { ADDED_2_3_0 },
 			}),
 			i(34413, {	-- Recipe: Hot Apple Cider (RECIPE!)
-				["timeline"] = { ADDED_2_3_0 },
+				timeline = { ADDED_2_3_0 },
 			}),
 			-- #else
 			i(17724),	-- Pattern: Green Holiday Shirt (RECIPE!)
 			-- #endif
 			i(17712, {	-- Winter Veil Disguise Kit (TOY!)
-				["description"] = "Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",
-				["sourceQuests"] = {
+				description = "Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",
+				sourceQuests = {
 					7045,	-- A Smokywood Pastures Thank You! (Alliance)
 					6984,	-- A Smokywood Pastures Thank You! (Horde)
 				},
@@ -1143,296 +1143,296 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 	}),
 	n(QUESTS, {
 		q(8744, {	-- A Carefully Wrapped Present
-			["providers"] = {
+			providers = {
 				{ "o", 180743 },	-- Carefully Wrapped Present
 				{ "i", 21191 },	-- Carefully Wrapped Present
 			},
-			["coords"] = {
+			coords = {
 				{ 33.5, 66.5, IRONFORGE },
 				{ 49.5, 78.5, ORGRIMMAR },
 			},
-			["timeline"] = { ADDED_1_2_0 },
-			["isYearly"] = true,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_1_2_0 },
+			isYearly = true,
+			_drop = { "g" },
+			groups = {
 				i(116451, {	-- Warm Blue Woolen Socks
-					["timeline"] = { ADDED_6_0_2 },
+					timeline = { ADDED_6_0_2 },
 				}),
 				i(116450, {	-- Warm Green Woolen Socks
-					["timeline"] = { ADDED_6_0_2 },
+					timeline = { ADDED_6_0_2 },
 				}),
 				i(116448, {	-- Warm Red Woolen Socks
-					["timeline"] = { ADDED_6_0_2 },
+					timeline = { ADDED_6_0_2 },
 				}),
 				i(128650, {	-- "Merry Munchkin" Costume
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 				i(21254),	-- Winter Veil Cookie
 			},
 		}),
 		q(8803, {	-- A Festive Gift
-			["providers"] = {
+			providers = {
 				{ "o", 180793 },	-- Festive Gift
 				{ "i", 21363 },	-- Festive Gift
 			},
-			["coords"] = {
+			coords = {
 				{ 33.6, 66.1, IRONFORGE },
 				{ 49.6, 77.7, ORGRIMMAR },
 			},
-			["timeline"] = { ADDED_1_2_0 },
-			["isYearly"] = true,
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = { i(21328) },	-- Wand of Holiday Cheer
+			timeline = { ADDED_1_2_0 },
+			isYearly = true,
+			lvl = 10,
+			_drop = { "g" },
+			groups = { i(21328) },	-- Wand of Holiday Cheer
 		}),
 		q(8768, {	-- A Gaily Wrapped Present
-			["providers"] = {
+			providers = {
 				{ "o", 180747 },	-- Gaily Wrapped Present
 				{ "i", 21310 },	-- Gaily Wrapped Present
 			},
-			["coords"] = {
+			coords = {
 				{ 33.6, 66.3, IRONFORGE },
 				{ 49.6, 78.2, ORGRIMMAR },
 			},
-			["timeline"] = { ADDED_1_2_0 },
-			["isYearly"] = true,
-			["lvl"] = 20,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_1_2_0 },
+			isYearly = true,
+			lvl = 20,
+			_drop = { "g" },
+			groups = {
 				i(21301, {	-- Father Winter's Helper (PET!)
-					["timeline"] = { ADDED_1_8_4 },
+					timeline = { ADDED_1_8_4 },
 				}),
 				i(21308, {	-- Winter Reindeer (PET!)
-					["timeline"] = { ADDED_1_8_4 },
+					timeline = { ADDED_1_8_4 },
 				}),
 				i(21305, {	-- Winter's Little Helper (PET!)
-					["timeline"] = { ADDED_1_8_4 },
+					timeline = { ADDED_1_8_4 },
 				}),
 				i(21309, {	-- Tiny Snowman (PET!)
-					["timeline"] = { ADDED_1_8_4 },
+					timeline = { ADDED_1_8_4 },
 				}),
 			},
 		}),
 		q(8767, {	-- A Gently Shaken Gift [Non-Spell Casters Only] (Before 2015)
-			["description"] = "Given prior to 2015 exclusively to non-spell casters.",
-			["providers"] = {
+			description = "Given prior to 2015 exclusively to non-spell casters.",
+			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 21270 },	-- Gently Shaken Gift
 			},
-			["timeline"] = { ADDED_1_8_4, REMOVED_6_2_3 },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["classes"] = exclude({ PRIEST, MAGE, WARLOCK, SHAMAN, DRUID }, ALL_CLASSES),
-			["isYearly"] = true,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_1_8_4, REMOVED_6_2_3 },
+			maps = { IRONFORGE, ORGRIMMAR },
+			classes = exclude({ PRIEST, MAGE, WARLOCK, SHAMAN, DRUID }, ALL_CLASSES),
+			isYearly = true,
+			_drop = { "g" },
+			groups = {
 				-- #if BEFORE 6.2.2
 				i(116692, {	-- Fuzzy Green Lounge Cushion (TOY!)
-					["timeline"] = { ADDED_6_0_2 },
+					timeline = { ADDED_6_0_2 },
 				}),
 				i(116689, {	-- Pineapple Lounge Cushion (TOY!)
-					["timeline"] = { ADDED_6_0_2 },
+					timeline = { ADDED_6_0_2 },
 				}),
 				i(116690, {	-- Safarai Lounge Cushion (TOY!)
-					["timeline"] = { ADDED_6_0_2 },
+					timeline = { ADDED_6_0_2 },
 				}),
 				i(116691, {	-- Zhevra Lounge Cusion (TOY!)
-					["timeline"] = { ADDED_6_0_2 },
+					timeline = { ADDED_6_0_2 },
 				}),
 				-- #endif
 				i(21235, {	-- Winter Veil Roast
-					["timeline"] = { REMOVED_6_2_3 },
+					timeline = { REMOVED_6_2_3 },
 				}),
 			},
 		}),
 		q(8788, {	-- A Gently Shaken Gift [Spell Casters Only] (Before 2015)
-			["description"] = "Given prior to 2015 exclusively to spell casters.",
-			["providers"] = {
+			description = "Given prior to 2015 exclusively to spell casters.",
+			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 21271 },	-- Gently Shaken Gift
 			},
-			["timeline"] = { ADDED_1_8_4, REMOVED_6_2_3 },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["classes"] = { PRIEST, MAGE, WARLOCK, SHAMAN, DRUID },
-			["isYearly"] = true,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_1_8_4, REMOVED_6_2_3 },
+			maps = { IRONFORGE, ORGRIMMAR },
+			classes = { PRIEST, MAGE, WARLOCK, SHAMAN, DRUID },
+			isYearly = true,
+			_drop = { "g" },
+			groups = {
 				-- #if BEFORE 6.2.2
 				i(116692, {	-- Fuzzy Green Lounge Cushion (TOY!)
-					["timeline"] = { ADDED_6_0_2 },
+					timeline = { ADDED_6_0_2 },
 				}),
 				i(116689, {	-- Pineapple Lounge Cushion (TOY!)
-					["timeline"] = { ADDED_6_0_2 },
+					timeline = { ADDED_6_0_2 },
 				}),
 				i(116690, {	-- Safarai Lounge Cushion (TOY!)
-					["timeline"] = { ADDED_6_0_2 },
+					timeline = { ADDED_6_0_2 },
 				}),
 				i(116691, {	-- Zhevra Lounge Cusion (TOY!)
-					["timeline"] = { ADDED_6_0_2 },
+					timeline = { ADDED_6_0_2 },
 				}),
 				-- #endif
 				i(21241, {	-- Winter Veil Eggnog
-					["timeline"] = { REMOVED_6_2_3 },
+					timeline = { REMOVED_6_2_3 },
 				}),
 			},
 		}),
 		q(39658, {	-- A Gently Shaken Gift (2015)
-			["description"] = "Gift from 2015.",
-			["providers"] = {
+			description = "Gift from 2015.",
+			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 128652 },	-- Gently Shaken Gift
 			},
-			["timeline"] = { ADDED_6_2_2, REMOVED_7_0_3 },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_6_2_2, REMOVED_7_0_3 },
+			maps = { IRONFORGE, ORGRIMMAR },
+			_drop = { "g" },
+			groups = {
 				i(128776, {	-- Red Wooden Sled (TOY!)
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 				i(128768, {	-- Candy Cane
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 			},
 		}),
 		q(43364, {	-- A Gently Shaken Gift (2016)
-			["description"] = "Gift from 2016.",
-			["providers"] = {
+			description = "Gift from 2016.",
+			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 139343 },	-- Gently Shaken Gift
 			},
-			["timeline"] = { ADDED_7_0_3, REMOVED_7_3_5 },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_7_0_3, REMOVED_7_3_5 },
+			maps = { IRONFORGE, ORGRIMMAR },
+			_drop = { "g" },
+			groups = {
 				i(139337, {	-- Disposable Winter Veil Suits (TOY!)
-					["timeline"] = { ADDED_7_0_3 },
+					timeline = { ADDED_7_0_3 },
 				}),
 				i(128768, {	-- Candy Cane
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 			},
 		}),
 		q(50420, {	-- A Gently Shaken Gift (2017)
-			["description"] = "Gift from 2017. You will receive only one faction's Hearthstation. In order to obtain the opposite faction's, you will need to have a character on that side open this gift.",
-			["providers"] = {
+			description = "Gift from 2017. You will receive only one faction's Hearthstation. In order to obtain the opposite faction's, you will need to have a character on that side open this gift.",
+			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 151345 },	-- Gently Shaken Gift
 			},
-			["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_7_3_5, REMOVED_8_0_1 },
+			maps = { IRONFORGE, ORGRIMMAR },
+			_drop = { "g" },
+			groups = {
 				i(151343, {	-- Hearthstation (A) (TOY!)
-					["timeline"] = { ADDED_7_3_5 },
-					["races"] = ALLIANCE_ONLY,
+					timeline = { ADDED_7_3_5 },
+					races = ALLIANCE_ONLY,
 				}),
 				i(151344, {	-- Hearthstation (H) (TOY!)
-					["timeline"] = { ADDED_7_3_5 },
-					["races"] = HORDE_ONLY,
+					timeline = { ADDED_7_3_5 },
+					races = HORDE_ONLY,
 				}),
 				i(128768, {	-- Candy Cane
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 			},
 		}),
 		q(53011, {	-- A Gently Shaken Gift (2018)
-			["description"] = "Gift from 2018.",
-			["providers"] = {
+			description = "Gift from 2018.",
+			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 162974 },	-- Gently Shaken Gift
 			},
-			["timeline"] = { ADDED_8_0_1, REMOVED_8_2_5 },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_8_0_1, REMOVED_8_2_5 },
+			maps = { IRONFORGE, ORGRIMMAR },
+			_drop = { "g" },
+			groups = {
 				i(162973, {	-- Greatfather Winter's Hearthstone (TOY!)
-					["timeline"] = { ADDED_8_0_1 },
+					timeline = { ADDED_8_0_1 },
 				}),
 				i(128768, {	-- Candy Cane
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 			},
 		}),
 		q(57643, {	-- A Gently Shaken Gift (2019)
-			["description"] = "Gift from 2019.",
-			["providers"] = {
+			description = "Gift from 2019.",
+			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 172225 },	-- Gently Shaken Gift
 			},
-			["timeline"] = { ADDED_8_2_5, REMOVED_9_0_1 },	-- Should have been removed earlier?
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_8_2_5, REMOVED_9_0_1 },	-- Should have been removed earlier?
+			maps = { IRONFORGE, ORGRIMMAR },
+			_drop = { "g" },
+			groups = {
 				i(172219, {	-- Wild Holly (TOY!)
-					["timeline"] = { ADDED_8_2_5 },
+					timeline = { ADDED_8_2_5 },
 				}),
 				i(128768, {	-- Candy Cane
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 			},
 		}),
-		q(60238, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1, REMOVED_9_0_2 } }, {	-- A Gently Shaken Gift (2020)
-			["description"] = "Gift from 2020.",
-			["providers"] = {
+		q(60238, bubbleDownSelf({ timeline = { ADDED_9_0_1, REMOVED_9_0_2 } }, {	-- A Gently Shaken Gift (2020)
+			description = "Gift from 2020.",
+			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 178529 },	-- Gently Shaken Gift
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
-			["groups"] = {
+			maps = { IRONFORGE, ORGRIMMAR },
+			_drop = { "g" },
+			groups = {
 				i(178530),	-- Wreath-A-Rang (TOY!)
 				i(128768, {	-- Candy Cane
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 			},
 		})),
-		q(64581, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, REMOVED_9_1_5 } }, {	-- A Gently Shaken Gift (2021)
-			["description"] = "Gift from 2021.",
-			["providers"] = {
+		q(64581, bubbleDownSelf({ timeline = { ADDED_9_1_5, REMOVED_9_1_5 } }, {	-- A Gently Shaken Gift (2021)
+			description = "Gift from 2021.",
+			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 187520 },	-- Gently Shaken Gift
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
-			["groups"] = {
+			maps = { IRONFORGE, ORGRIMMAR },
+			_drop = { "g" },
+			groups = {
 				i(187422),	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
 				i(128768, {	-- Candy Cane
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 			},
 		})),
-		q(66508, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH } }, {	-- A Gently Shaken Gift (2022)
-			["description"] = "Gift from 2022.",
-			["providers"] = {
+		q(66508, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH } }, {	-- A Gently Shaken Gift (2022)
+			description = "Gift from 2022.",
+			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 192093 },	-- Gently Shaken Gift
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
-			["groups"] = {
+			maps = { IRONFORGE, ORGRIMMAR },
+			_drop = { "g" },
+			groups = {
 				i(191925),	-- Falling Star Flinger (TOY!)
 			},
 		})),
-		q(78504, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 } }, {	-- A Gently Shaken Gift (2023)
-			["description"] = "Gift from 2023.",
-			["providers"] = {
+		q(78504, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_0 } }, {	-- A Gently Shaken Gift (2023)
+			description = "Gift from 2023.",
+			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 210657 },	-- Gently Shaken Gift
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
-			["groups"] = {
+			maps = { IRONFORGE, ORGRIMMAR },
+			_drop = { "g" },
+			groups = {
 				i(210656),	-- Winter Veil Socks (TOY!)
 			},
 		})),
-		q(80684, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7, REMOVED_11_0_7 } }, {	-- A Gently Shaken Gift (2024)
-			["description"] = "Gift from 2024.",
-			["providers"] = {
+		q(80684, bubbleDownSelf({ timeline = { ADDED_11_0_7, REMOVED_11_0_7 } }, {	-- A Gently Shaken Gift (2024)
+			description = "Gift from 2024.",
+			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 218309 },	-- Gently Shaken Gift
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
-			["groups"] = {
+			maps = { IRONFORGE, ORGRIMMAR },
+			_drop = { "g" },
+			groups = {
 				i(218308, {	-- Winter Veil Cracker (TOY!)
 					i(233013),	-- Coal Cookie
 					i(234126),	-- Icicle Cupcake
@@ -1442,33 +1442,33 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 			},
 		})),
-		q(91041, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7, "removed 11.2.7.64978" } }, {	-- A Gently Shaken Gift (2025)
-			["description"] = "Gift from 2025.",
-			["providers"] = {
+		q(91041, bubbleDownSelf({ timeline = { ADDED_11_0_7, "removed 11.2.7.64978" } }, {	-- A Gently Shaken Gift (2025)
+			description = "Gift from 2025.",
+			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 244906 },	-- Gently Shaken Gift
 			},
-			["coords"] = {
+			coords = {
 				{ 33.4, 65.6, IRONFORGE },
 				{ 49.5, 78.7, ORGRIMMAR },
 			},
-			["_drop"] = { "g" },
-			["groups"] = { i(245580) },	-- Rolling Snowball (TOY!)
+			_drop = { "g" },
+			groups = { i(245580) },	-- Rolling Snowball (TOY!)
 		})),
 		q(8769, {	-- A Ticking Present
-			["providers"] = {
+			providers = {
 				{ "o", 180748 },	-- Ticking Present
 				{ "i", 21327 },	-- Ticking Present
 			},
-			["coords"] = {
+			coords = {
 				{ 33.6, 66.5, IRONFORGE },
 				{ 49.5, 78.7, ORGRIMMAR },
 			},
-			["timeline"] = { ADDED_1_8_4 },
-			["isYearly"] = true,
-			["lvl"] = 40,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_1_8_4 },
+			isYearly = true,
+			lvl = 40,
+			_drop = { "g" },
+			groups = {
 				i(17725),	-- Formula: Enchant Weapon - Winter's Might (RECIPE!)
 				i(17722),	-- Pattern: Gloves of the Greatfather (RECIPE!)
 				i(17724),	-- Pattern: Green Holiday Shirt (RECIPE!)
@@ -1480,44 +1480,44 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		{	-- A Smokywood Pastures' Thank You!
-			["allianceQuestData"] = q(7045, {	-- A Smokywood Pastures' Thank You! (Alliance)
-				["sourceQuest"] = 7043,	-- You're a Mean One... (Alliance)
-				["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
-				["coords"] = {
+			allianceQuestData = q(7045, {	-- A Smokywood Pastures' Thank You! (Alliance)
+				sourceQuest = 7043,	-- You're a Mean One... (Alliance)
+				qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
+				coords = {
 					-- #if AFTER CATA
 					{ 33.2, 67.8, IRONFORGE },
 					-- #else
 					{ 33.4, 67.0, IRONFORGE },
 					-- #endif
 				},
-				["timeline"] = { ADDED_1_2_0 },
-				["races"] = ALLIANCE_ONLY,
-				["lvl"] = lvlsquish(30, 30, 10),
+				timeline = { ADDED_1_2_0 },
+				races = ALLIANCE_ONLY,
+				lvl = lvlsquish(30, 30, 10),
 			}),
-			["hordeQuestData"] = q(6984, {	-- A Smokywood Pastures' Thank You! (Horde)
-				["sourceQuest"] = 6983,	-- You're a Mean One... (Horde)
-				["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
-				["coords"] = {
+			hordeQuestData = q(6984, {	-- A Smokywood Pastures' Thank You! (Horde)
+				sourceQuest = 6983,	-- You're a Mean One... (Horde)
+				qg = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
+				coords = {
 					-- #if AFTER CATA
 					{ 52.4, 77.0, ORGRIMMAR },
 					-- #else
 					{ 53.2, 66.6, ORGRIMMAR },
 					-- #endif
 				},
-				["timeline"] = { ADDED_1_2_0 },
-				["races"] = HORDE_ONLY,
-				["lvl"] = lvlsquish(30, 30, 10),
+				timeline = { ADDED_1_2_0 },
+				races = HORDE_ONLY,
+				lvl = lvlsquish(30, 30, 10),
 			}),
-			["isYearly"] = true,
-			["groups"] = {
+			isYearly = true,
+			groups = {
 				i(17726, {	-- Smokywood Pastures Special Gift
 					i(17725),	-- Formula: Enchant Weapon - Winter's Might (RECIPE!)
 					-- #if AFTER 6.2.2
 					i(128649, {	-- Illusion: Winter's Grasp (ILLUSION!)
-						["timeline"] = { ADDED_6_2_2 },
+						timeline = { ADDED_6_2_2 },
 					}),
 					i(118572, {	-- Illusion: Flames of Ragnaros (ILLUSION!)
-						["timeline"] = { ADDED_6_0_2 },
+						timeline = { ADDED_6_0_2 },
 					}),
 					-- #endif
 					i(17722),	-- Pattern: Gloves of the Greatfather (RECIPE!)
@@ -1529,40 +1529,40 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		},
 		q(11528, {	-- A Winter Veil Gift (2007)
-			["description"] = "Gift from 2007.",
-			["providers"] = {
+			description = "Gift from 2007.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 34426 },	-- Winter Veil Gift
 			},
-			["timeline"] = {
+			timeline = {
 				-- #if ANYCLASSIC
 				ADDED_2_3_0, REMOVED_3_0_2,
 				-- #else
 				ADDED_2_3_0, REMOVED_2_4_3,
 				-- #endif
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(34425, {	-- Clockwork Rocket Bot (PET!)
-					["timeline"] = { ADDED_2_3_0 },
+					timeline = { ADDED_2_3_0 },
 				}),
 			},
 		}),
 		q(13203, {	-- A Winter Veil Gift (2008)
-			["description"] = "Gift from 2008.",
-			["providers"] = {
+			description = "Gift from 2008.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 43504 },	-- Winter Veil Gift
 			},
-			["timeline"] = { ADDED_2_4_3, REMOVED_3_3_0 },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_2_4_3, REMOVED_3_3_0 },
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(37710, {	-- Crashin' Thrashin' Racer Controller (TOY!)
-					["timeline"] = {
+					timeline = {
 						-- #if ANYCLASSIC
 						CREATED_2_4_3, ADDED_3_0_2,
 						-- #else
@@ -1573,297 +1573,297 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(13966, {	-- A Winter Veil Gift (2009)
-			["description"] = "Gift from 2009.",
-			["providers"] = {
+			description = "Gift from 2009.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 46740 },	-- Winter Veil Gift
 			},
-			["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3_LAUNCH },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["groups"] = {
+			timeline = { ADDED_3_3_0, REMOVED_4_0_3_LAUNCH },
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			groups = {
 				i(46725, {	-- Red Rider Air Rifle
-					["timeline"] = { ADDED_3_3_0 },
+					timeline = { ADDED_3_3_0 },
 				}),
 			},
 		}),
 		q(28878, {	-- A Winter Veil Gift (2010)
-			["description"] = "Gift from 2010.",
-			["providers"] = {
+			description = "Gift from 2010.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 67443 },	-- Winter Veil Gift
 			},
-			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_4_2_0 },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_4_0_3_LAUNCH, REMOVED_4_2_0 },
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(46709, {	-- MiniZep Controller (TOY!)
-					["timeline"] = { ADDED_4_0_3_LAUNCH },
+					timeline = { ADDED_4_0_3_LAUNCH },
 				}),
 			},
 		}),
 		q(29385, {	-- A Winter Veil Gift (2011)
-			["description"] = "Gift from 2011.",
-			["providers"] = {
+			description = "Gift from 2011.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 70938 },	-- Winter Veil Gift
 			},
-			["timeline"] = { ADDED_4_2_0, REMOVED_5_1_0 },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_4_2_0, REMOVED_5_1_0 },
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(70923, {	-- Gaudy Winter Veil Sweater
-					["timeline"] = { ADDED_4_2_0 },
+					timeline = { ADDED_4_2_0 },
 				}),
 			},
 		}),
 		q(32106, {	-- A Winter Veil Gift (2012)
-			["description"] = "Gift from 2012.",
-			["providers"] = {
+			description = "Gift from 2012.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 90892 },	-- Winter Veil Gift
 			},
-			["timeline"] = { ADDED_5_1_0, REMOVED_5_4_0 },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_5_1_0, REMOVED_5_4_0 },
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(90888, {	-- Special Edition Foot Ball (TOY!)
-					["timeline"] = { ADDED_5_1_0 },
+					timeline = { ADDED_5_1_0 },
 				}),
 				i(90883, {	-- The Pigskin (TOY!)
-					["timeline"] = { ADDED_5_1_0 },
+					timeline = { ADDED_5_1_0 },
 				}),
 			},
 		}),
 		q(33252, {	-- A Winter Veil Gift (2013)
-			["description"] = "Gift from 2013.",
-			["providers"] = {
+			description = "Gift from 2013.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 104319 },	-- Winter Veil Gift
 			},
-			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(104318, {	-- Crashin' Thrashin' Flyer Controller (TOY!)
-					["timeline"] = { ADDED_5_4_0 },
+					timeline = { ADDED_5_4_0 },
 				}),
 			},
 		}),
 		q(36617, {	-- A Winter Veil Gift (2014)
-			["description"] = "Gift from 2014.",
-			["providers"] = {
+			description = "Gift from 2014.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 116761 },	-- Winter Veil Gift
 			},
-			["timeline"] = { ADDED_6_0_2, REMOVED_6_2_2 },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_6_0_2, REMOVED_6_2_2 },
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(116763, {	-- Crashin' Thrashin' Shredder Controller (TOY!)
-					["timeline"] = { ADDED_6_0_2 },
+					timeline = { ADDED_6_0_2 },
 				}),
 			},
 		}),
 		q(39659, {	-- A Winter Veil Gift (2015)
-			["description"] = "Gift from 2015.",
-			["providers"] = {
+			description = "Gift from 2015.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 128653 },	-- Winter Veil Gift
 			},
-			["timeline"] = { ADDED_6_2_2, REMOVED_7_0_3 },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_6_2_2, REMOVED_7_0_3 },
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(108632, {	-- Crashin' Thrashin' Flamer Controller (TOY!)
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 			},
 		}),
 		q(43363, {	-- A Winter Veil Gift (2016)
-			["description"] = "Gift from 2016.",
-			["providers"] = {
+			description = "Gift from 2016.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 139341 },	-- Winter Veil Gift
 			},
-			["timeline"] = { ADDED_7_0_3, REMOVED_7_3_0 },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_7_0_3, REMOVED_7_3_0 },
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(128636, {	-- Endothermic Blaster (TOY!)
-					["timeline"] = { ADDED_7_0_3 },
+					timeline = { ADDED_7_0_3 },
 				}),
 			},
 		}),
 		q(47751, {	-- A Winter Veil Gift (2017)
-			["description"] = "Gift from 2017. You will receive only one factions Toy Weapon Set. In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-			["providers"] = {
+			description = "Gift from 2017. You will receive only one factions Toy Weapon Set. In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 151350 },	-- Winter Veil Gift
 			},
-			["timeline"] = { ADDED_7_3_0, REMOVED_8_0_1_LAUNCH },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_7_3_0, REMOVED_8_0_1_LAUNCH },
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(151349, {	-- Toy Weapon Set [A] (TOY!)
-					["timeline"] = { ADDED_7_3_0 },
-					["races"] = ALLIANCE_ONLY,
+					timeline = { ADDED_7_3_0 },
+					races = ALLIANCE_ONLY,
 				}),
 				i(151348, {	-- Toy Weapon Set [H] (TOY!)
-					["timeline"] = { ADDED_7_3_0 },
-					["races"] = HORDE_ONLY,
+					timeline = { ADDED_7_3_0 },
+					races = HORDE_ONLY,
 				}),
 			},
 		}),
 		q(52965, {	-- A Winter Veil Gift (2018)
-			["description"] = "Gift from 2018. You will receive only one factions Toy Armor Set  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-			["providers"] = {
+			description = "Gift from 2018. You will receive only one factions Toy Armor Set  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 162644 },	-- Winter Veil Gift
 			},
-			["timeline"] = { ADDED_8_0_1, REMOVED_8_2_5 },
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_8_0_1, REMOVED_8_2_5 },
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(162643, {	-- Toy Armor Set [A] (TOY!)
-					["timeline"] = { ADDED_8_0_1 },
-					["races"] = ALLIANCE_ONLY,
+					timeline = { ADDED_8_0_1 },
+					races = ALLIANCE_ONLY,
 				}),
 				i(162642, {	-- Toy Armor Set [H] (TOY!)
-					["timeline"] = { ADDED_8_0_1 },
-					["races"] = HORDE_ONLY,
+					timeline = { ADDED_8_0_1 },
+					races = HORDE_ONLY,
 				}),
 			},
 		}),
 		q(57642, {	-- A Winter Veil Gift (2019)
-			["description"] = "Gift from 2019.",
-			["providers"] = {
+			description = "Gift from 2019.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 172224 },	-- Winter Veil Gift
 			},
-			["timeline"] = { ADDED_8_2_5, REMOVED_9_0_1 },	-- Should have been removed earlier?
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			timeline = { ADDED_8_2_5, REMOVED_9_0_1 },	-- Should have been removed earlier?
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(172223, {	-- Crashin' Thrashin' Battleship (TOY!)
-					["timeline"] = { ADDED_8_2_5 },
-					["races"] = ALLIANCE_ONLY,
+					timeline = { ADDED_8_2_5 },
+					races = ALLIANCE_ONLY,
 				}),
 				i(172222, {	-- Crashin' Thrashin' Juggernaught (TOY!)
-					["timeline"] = { ADDED_8_2_5 },
-					["races"] = HORDE_ONLY,
+					timeline = { ADDED_8_2_5 },
+					races = HORDE_ONLY,
 				}),
 			},
 		}),
-		q(60239, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1, REMOVED_9_0_2 } }, {	-- A Winter Veil Gift (2020)
-			["description"] = "Gift from 2020.",
-			["providers"] = {
+		q(60239, bubbleDownSelf({ timeline = { ADDED_9_0_1, REMOVED_9_0_2 } }, {	-- A Winter Veil Gift (2020)
+			description = "Gift from 2020.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 178528 },	-- Winter Veil Gift
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(178533),	-- Jingles (PET!)
 			},
 		})),
-		q(64639, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5, REMOVED_9_1_5 } }, {	-- A Winter Veil Gift (2021)
-			["description"] = "Gift from 2021.",
-			["providers"] = {
+		q(64639, bubbleDownSelf({ timeline = { ADDED_9_1_5, REMOVED_9_1_5 } }, {	-- A Winter Veil Gift (2021)
+			description = "Gift from 2021.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 187561 },	-- Winter Veil Gift
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(187560),	-- Rockin' Rollin' Racer Pack (CI!)
 			},
 		})),
-		q(66507, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH } }, {	-- A Winter Veil Gift (2022)
-			["description"] = "Gift from 2022.",
-			["providers"] = {
+		q(66507, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH } }, {	-- A Winter Veil Gift (2022)
+			description = "Gift from 2022.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 192094 },	-- Winter Veil Gift
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(191937),	-- Falling Star Catcher (TOY!)
 			},
 		})),
-		q(78131, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 } }, {	-- A Winter Veil Gift (2023)
-			["description"] = "Gift from 2023.",
-			["providers"] = {
+		q(78131, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_0 } }, {	-- A Winter Veil Gift (2023)
+			description = "Gift from 2023.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 209871 },	-- Winter Veil Gift
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(208825),	-- Junior Timekeeper's Racing Belt (TOY!)
 			},
 		})),
-		q(80685, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7, REMOVED_11_0_7 } }, {	-- A Winter Veil Gift (2024)
-			["description"] = "Gift from 2024.",
-			["providers"] = {
+		q(80685, bubbleDownSelf({ timeline = { ADDED_11_0_7, REMOVED_11_0_7 } }, {	-- A Winter Veil Gift (2024)
+			description = "Gift from 2024.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 218311 },	-- Winter Veil Gift
 			},
-			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			maps = { IRONFORGE, ORGRIMMAR },
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(218310),	-- Box of Puntables (TOY!)
 				i(232653),	-- Portentous Present (PET!)
 			},
 		})),
-		q(91042, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7, "removed 11.2.7.64978" } }, {	-- A Winter Veil Gift (2025)
-			["description"] = "Gift from 2025.",
-			["providers"] = {
+		q(91042, bubbleDownSelf({ timeline = { ADDED_11_2_7, "removed 11.2.7.64978" } }, {	-- A Winter Veil Gift (2025)
+			description = "Gift from 2025.",
+			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 244908 },	-- Winter Veil Gift
 			},
-			["coords"] = {
+			coords = {
 				{ 33.5, 66.5, IRONFORGE },
 				{ 49.8, 77.9, ORGRIMMAR },
 			},
-			["lvl"] = 10,
-			["_drop"] = { "g" },
-			["groups"] = {
+			lvl = 10,
+			_drop = { "g" },
+			groups = {
 				i(243304),	-- Jubilant Snowman Costume (TOY!)
 				i(245544),	-- Tiny Snow Buddy (PET!)
 			},
 		})),
 		q(7022, {	-- Greatfather Winter is Here! (Alliance)
-			["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
-			["coords"] = {
+			qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
+			coords = {
 				-- #if AFTER CATA
 				{ 33.2, 67.8, IRONFORGE },
 				-- #else
 				{ 33.4, 67.0, IRONFORGE },
 				-- #endif
 			},
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_1_2_0 },
-			["isYearly"] = true,
-			["lvl"] = 10,
+			races = ALLIANCE_ONLY,
+			timeline = { ADDED_1_2_0 },
+			isYearly = true,
+			lvl = 10,
 		}),
 		q(7023, {	-- Greatfather Winter is Here! (Alliance)
-			["qgs"] = {
+			qgs = {
 				13435,	-- Khole Jinglepocket
 				-- #if AFTER TBC
 				23010,	-- Wolgren Jinglepocket
@@ -1872,7 +1872,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				96304,	-- Tradurjo Jinglepocket
 				-- #endif
 			},
-			["coords"] = {
+			coords = {
 				-- #if AFTER WOD
 				{ 41.8, 47.2, LUNARFALL },
 				-- #elseif AFTER WRATH
@@ -1883,125 +1883,125 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 55.0, 59.2, STORMWIND_CITY },
 				-- #endif
 			},
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_1_2_0 },
-			["isYearly"] = true,
-			["lvl"] = 10,
+			races = ALLIANCE_ONLY,
+			timeline = { ADDED_1_2_0 },
+			isYearly = true,
+			lvl = 10,
 		}),
 		q(6961, {	-- Great-father Winter is Here! (Horde)
-			["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
-			["coords"] = {
+			qg = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
+			coords = {
 				-- #if AFTER CATA
 				{ 52.4, 77.0, ORGRIMMAR },
 				-- #else
 				{ 53.2, 66.6, ORGRIMMAR },
 				-- #endif
 			},
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_1_2_0 },
-			["isYearly"] = true,
-			["lvl"] = 10,
+			races = HORDE_ONLY,
+			timeline = { ADDED_1_2_0 },
+			isYearly = true,
+			lvl = 10,
 		}),
 		q(7021, {	-- Great-father Winter is Here! (Horde)
-			["qg"] = 13431,	-- Whulwert Copperpinch <Smokywood Pastures>
-			["coords"] = {
+			qg = 13431,	-- Whulwert Copperpinch <Smokywood Pastures>
+			coords = {
 				-- #if AFTER CATA
 				{ 42.4, 55.6, THUNDER_BLUFF },
 				-- #else
 				{ 43.8, 58.6, THUNDER_BLUFF },
 				-- #endif
 			},
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_1_2_0 },
-			["isYearly"] = true,
-			["lvl"] = 10,
+			races = HORDE_ONLY,
+			timeline = { ADDED_1_2_0 },
+			isYearly = true,
+			lvl = 10,
 		}),
 		q(7024, {	-- Great-father Winter is Here! (Horde)
-			["qg"] = 13429,	-- Nardstrum Copperpinch <Smokywood Pastures>
-			["coords"] = {
+			qg = 13429,	-- Nardstrum Copperpinch <Smokywood Pastures>
+			coords = {
 				-- #if AFTER CATA
 				{ 67.8, 38.8, UNDERCITY },
 				-- #else
 				{ 68.0, 39.0, UNDERCITY },
 				-- #endif
 			},
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_1_2_0 },
-			["isYearly"] = true,
-			["lvl"] = 10,
+			races = HORDE_ONLY,
+			timeline = { ADDED_1_2_0 },
+			isYearly = true,
+			lvl = 10,
 		}),
 		q(39651, {	-- Grumpus
-			["qgs"] = {
+			qgs = {
 				96451,	-- Almie [A]
 				96735,	-- Pizzle [H]
 			},
-			["coords"] = {
+			coords = {
 				{ 47.4, 37.6, FROSTWALL },
 				{ 44.0, 51.6, LUNARFALL },
 			},
-			["timeline"] = { ADDED_6_2_2 },
-			["maps"] = { FROSTFIRE_RIDGE },
-			["isDaily"] = true,
-			["lvl"] = lvlsquish(90, 90, 40),
-			["groups"] = {
+			timeline = { ADDED_6_2_2 },
+			maps = { FROSTFIRE_RIDGE },
+			isDaily = true,
+			lvl = lvlsquish(90, 90, 40),
+			groups = {
 				objective(1, {	-- Grumpus slain
-					["provider"] = { "n", 96448 },	-- Grumpus
-					["coord"] = { 45.6, 28.6, FROSTFIRE_RIDGE },
+					provider = { "n", 96448 },	-- Grumpus
+					coord = { 45.6, 28.6, FROSTFIRE_RIDGE },
 				}),
 				i(128659, {	-- Merry Supplies
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 			},
 		}),
 		q(39649, {	-- Menacing Grumplings
-			["qgs"] = {
+			qgs = {
 				96451,	-- Almie [A]
 				96735,	-- Pizzle [H]
 			},
-			["coords"] = {
+			coords = {
 				{ 47.4, 37.6, FROSTWALL },
 				{ 44.0, 51.6, LUNARFALL },
 			},
-			["timeline"] = { ADDED_6_2_2 },
-			["maps"] = { FROSTFIRE_RIDGE },
-			["isDaily"] = true,
-			["lvl"] = lvlsquish(90, 90, 40),
-			["groups"] = {
+			timeline = { ADDED_6_2_2 },
+			maps = { FROSTFIRE_RIDGE },
+			isDaily = true,
+			lvl = lvlsquish(90, 90, 40),
+			groups = {
 				objective(1, {	-- 0/8 Grumplings slain
-					["provider"] = { "n", 96449 },	-- Grumpling
+					provider = { "n", 96449 },	-- Grumpling
 				}),
 				i(128659, {	-- Merry Supplies
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 				i(128632, {	-- Savage Snowball
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 			},
 		}),
 		q(8762, {	-- Metzen the Reindeer (Alliance)
-			["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
-			["coords"] = {
+			qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
+			coords = {
 				-- #if AFTER CATA
 				{ 33.2, 67.8, IRONFORGE },
 				-- #else
 				{ 33.4, 67.0, IRONFORGE },
 				-- #endif
 			},
-			["timeline"] = { ADDED_1_8_4, REMOVED_4_3_0 },
-			["maps"] = { SEARING_GORGE, TANARIS },
-			["races"] = ALLIANCE_ONLY,
-			["isYearly"] = true,
-			["lvl"] = 40,
-			["groups"] = {
+			timeline = { ADDED_1_8_4, REMOVED_4_3_0 },
+			maps = { SEARING_GORGE, TANARIS },
+			races = ALLIANCE_ONLY,
+			isYearly = true,
+			lvl = 40,
+			groups = {
 				objective(1, {	-- Find Metzen the Reindeer and rescue him
-					["provider"] = { "n", 15664 },	-- Metzen the Reindeer
-					["coords"] = {
+					provider = { "n", 15664 },	-- Metzen the Reindeer
+					coords = {
 						{ 68.6, 34.4, SEARING_GORGE },
 						{ 73.2, 48.0, TANARIS },
 					},
 				}),
 				objective(2, {	-- 0/1 Pouch of Raindeer Dust
-					["provider"] = { "i", 21211 },	-- Pouch of Raindeer Dust
+					provider = { "i", 21211 },	-- Pouch of Raindeer Dust
 				}),
 				i(21315, {	-- Smokywood Satchel
 					i(21314),	-- Metzen's Letters and Notes
@@ -2011,29 +2011,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(8746, {	-- Metzen the Reindeer (Horde)
-			["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
-			["coords"] = {
+			qg = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
+			coords = {
 				-- #if AFTER CATA
 				{ 52.4, 77.0, ORGRIMMAR },
 				-- #else
 				{ 53.2, 66.6, ORGRIMMAR },
 				-- #endif
 			},
-			["timeline"] = { ADDED_1_8_4, REMOVED_4_3_0 },
-			["maps"] = { SEARING_GORGE, TANARIS },
-			["races"] = HORDE_ONLY,
-			["isYearly"] = true,
-			["lvl"] = 40,
-			["groups"] = {
+			timeline = { ADDED_1_8_4, REMOVED_4_3_0 },
+			maps = { SEARING_GORGE, TANARIS },
+			races = HORDE_ONLY,
+			isYearly = true,
+			lvl = 40,
+			groups = {
 				objective(1, {	-- Find Metzen the Reindeer and rescue him
-					["provider"] = { "n", 15664 },	-- Metzen the Reindeer
-					["coords"] = {
+					provider = { "n", 15664 },	-- Metzen the Reindeer
+					coords = {
 						{ 68.6, 34.4, SEARING_GORGE },
 						{ 73.2, 48.0, TANARIS },
 					},
 				}),
 				objective(2, {	-- 0/1 Pouch of Raindeer Dust
-					["provider"] = { "i", 21211 },	-- Pouch of Raindeer Dust
+					provider = { "i", 21211 },	-- Pouch of Raindeer Dust
 				}),
 				i(21315, {	-- Smokywood Satchel
 					i(21314),	-- Metzen's Letters and Notes
@@ -2043,9 +2043,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		}),
 		q(8860, {	-- New Year Celebrations! (Alliance)
-			["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
-			["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
-			["maps"] = {
+			description = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
+			qg = 15732,	-- Wonderform Operator <Smokywood Pastures>
+			maps = {
 				-- #if AFTER WRATH
 				NORTHREND_DALARAN,
 				-- #endif
@@ -2062,21 +2062,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				TIRISFAL_GLADES,
 				WETLANDS,
 			},
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_1_8_4 },
+			races = ALLIANCE_ONLY,
+			timeline = { ADDED_1_8_4 },
 			-- #if BEFORE CATA
-			["isYearly"] = true,	-- NOTE: We actually don't know which expansion this changed to be a one time quest, but it eventually does. Keep a close eye on this for future expansions of WoW Classic.
+			isYearly = true,	-- NOTE: We actually don't know which expansion this changed to be a one time quest, but it eventually does. Keep a close eye on this for future expansions of WoW Classic.
 			-- #endif
-			["groups"] = {
+			groups = {
 				objective(1, {	-- 0/1 Smokywood Supplies
-					["provider"] = { "i", 21545 },	-- Smokywood Supplies
+					provider = { "i", 21545 },	-- Smokywood Supplies
 				}),
 			},
 		}),
 		q(8861, {	-- New Year Celebrations! (Horde)
-			["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
-			["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
-			["maps"] = {
+			description = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
+			qg = 15732,	-- Wonderform Operator <Smokywood Pastures>
+			maps = {
 				-- #if AFTER WRATH
 				NORTHREND_DALARAN,
 				-- #endif
@@ -2093,158 +2093,158 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				TIRISFAL_GLADES,
 				WETLANDS,
 			},
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_1_8_4 },
+			races = HORDE_ONLY,
+			timeline = { ADDED_1_8_4 },
 			-- #if BEFORE CATA
-			["isYearly"] = true,	-- NOTE: We actually don't know which expansion this changed to be a one time quest, but it eventually does. Keep a close eye on this for future expansions of WoW Classic.
+			isYearly = true,	-- NOTE: We actually don't know which expansion this changed to be a one time quest, but it eventually does. Keep a close eye on this for future expansions of WoW Classic.
 			-- #endif
-			["groups"] = {
+			groups = {
 				objective(1, {	-- 0/1 Smokywood Supplies
-					["provider"] = { "i", 21545 },	-- Smokywood Supplies
+					provider = { "i", 21545 },	-- Smokywood Supplies
 				}),
 			},
 		}),
 		q(7042, {	-- Stolen Winter Veil Treats (Alliance)
-			["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
-			["coords"] = {
+			qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
+			coords = {
 				-- #if AFTER CATA
 				{ 33.2, 67.8, IRONFORGE },
 				-- #else
 				{ 33.4, 67.0, IRONFORGE },
 				-- #endif
 			},
-			["timeline"] = { ADDED_1_2_0, REMOVED_4_0_3 },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
-			["maps"] = { ALTERAC_MOUNTAINS },
-			["races"] = ALLIANCE_ONLY,
-			["isYearly"] = true,
-			["lvl"] = 30,
+			timeline = { ADDED_1_2_0, REMOVED_4_0_3 },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
+			maps = { ALTERAC_MOUNTAINS },
+			races = ALLIANCE_ONLY,
+			isYearly = true,
+			lvl = 30,
 		}),
 		q(6963, {	-- Stolen Winter Veil Treats (Horde)
-			["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
-			["coords"] = {
+			qg = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
+			coords = {
 				-- #if AFTER CATA
 				{ 52.4, 77.0, ORGRIMMAR },
 				-- #else
 				{ 53.2, 66.6, ORGRIMMAR },
 				-- #endif
 			},
-			["timeline"] = { ADDED_1_2_0, REMOVED_4_0_3 },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
-			["maps"] = { ALTERAC_MOUNTAINS },
-			["races"] = HORDE_ONLY,
-			["isYearly"] = true,
-			["lvl"] = 30,
+			timeline = { ADDED_1_2_0, REMOVED_4_0_3 },	-- No longer in Retail, and seems to have disappeared after 4.0.3 based on Wowhead evidence
+			maps = { ALTERAC_MOUNTAINS },
+			races = HORDE_ONLY,
+			isYearly = true,
+			lvl = 30,
 		}),
 		q(7063, {	-- The Feast of Winter Veil (Alliance)
-			["sourceQuest"] = 7062,	-- The Reason for the Season (Alliance)
-			["qg"] = 2916,	-- Historian Karnik
-			["qi"] = 17735,	-- The Feast of Winter Veil (QI!)
-			["coord"] = { 77.2, 11.8, IRONFORGE },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_1_2_0 },
-			["isYearly"] = true,
-			["lvl"] = 10,
+			sourceQuest = 7062,	-- The Reason for the Season (Alliance)
+			qg = 2916,	-- Historian Karnik
+			qi = 17735,	-- The Feast of Winter Veil (QI!)
+			coord = { 77.2, 11.8, IRONFORGE },
+			races = ALLIANCE_ONLY,
+			timeline = { ADDED_1_2_0 },
+			isYearly = true,
+			lvl = 10,
 		}),
 		q(7061, {	-- The Feast of Winter Veil (Horde)
-			["sourceQuest"] = 6964,	-- The Reason for the Season (Horde)
-			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
-			["qi"] = 17735,	-- The Feast of Winter Veil (QI!)
-			["coord"] = { 38.6, 36.2, ORGRIMMAR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_1_2_0 },
-			["isYearly"] = true,
-			["lvl"] = 10,
+			sourceQuest = 6964,	-- The Reason for the Season (Horde)
+			qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
+			qi = 17735,	-- The Feast of Winter Veil (QI!)
+			coord = { 38.6, 36.2, ORGRIMMAR },
+			races = HORDE_ONLY,
+			timeline = { ADDED_1_2_0 },
+			isYearly = true,
+			lvl = 10,
 		}),
 		q(8763, {	-- The Hero of the Day (Alliance)
-			["description"] = 'Requires Cooking Skill Level 300',
-			["sourceQuest"] = 8762,	-- Metzen the Reindeer (Alliance)
-			["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
-			["coords"] = {
+			description = 'Requires Cooking Skill Level 300',
+			sourceQuest = 8762,	-- Metzen the Reindeer (Alliance)
+			qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
+			coords = {
 				-- #if AFTER CATA
 				{ 33.2, 67.8, IRONFORGE },
 				-- #else
 				{ 33.4, 67.0, IRONFORGE },
 				-- #endif
 			},
-			["timeline"] = { ADDED_1_8_4, REMOVED_4_3_0 },
-			["cost"] = {
+			timeline = { ADDED_1_8_4, REMOVED_4_3_0 },
+			cost = {
 				{ "i", 8150, 1 },	-- Deeprock Salt
 				{ "g", 50000 },	-- 5g
 			},
-			["requireSkill"] = COOKING,
-			["races"] = ALLIANCE_ONLY,
-			["isYearly"] = true,
-			["lvl"] = 40,
-			["groups"] = { i(21213) },	-- Preserved Holly
+			requireSkill = COOKING,
+			races = ALLIANCE_ONLY,
+			isYearly = true,
+			lvl = 40,
+			groups = { i(21213) },	-- Preserved Holly
 		}),
 		q(8799, {	-- The Hero of the Day (Horde)
-			["description"] = 'Requires Cooking Skill Level 300',
-			["sourceQuest"] = 8746,	-- Metzen the Reindeer (Horde)
-			["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
-			["coords"] = {
+			description = 'Requires Cooking Skill Level 300',
+			sourceQuest = 8746,	-- Metzen the Reindeer (Horde)
+			qg = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
+			coords = {
 				-- #if AFTER CATA
 				{ 52.4, 77.0, ORGRIMMAR },
 				-- #else
 				{ 53.2, 66.6, ORGRIMMAR },
 				-- #endif
 			},
-			["timeline"] = { ADDED_1_8_4, REMOVED_4_3_0 },
-			["cost"] = {
+			timeline = { ADDED_1_8_4, REMOVED_4_3_0 },
+			cost = {
 				{ "i", 8150, 1 },	-- Deeprock Salt
 				{ "g", 50000 },	-- 5g
 			},
-			["requireSkill"] = COOKING,
-			["races"] = HORDE_ONLY,
-			["isYearly"] = true,
-			["lvl"] = 40,
-			["groups"] = { i(21213) },	-- Preserved Holly
+			requireSkill = COOKING,
+			races = HORDE_ONLY,
+			isYearly = true,
+			lvl = 40,
+			groups = { i(21213) },	-- Preserved Holly
 		}),
 		q(7062, {	-- The Reason for the Season (Alliance)
-			["qg"] = 1365,	-- Goli Krumn
-			["coord"] = { 30.2, 59.8, IRONFORGE },
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_1_2_0 },
-			["isYearly"] = true,
-			["lvl"] = 10,
-			["groups"] = { i(17735)	},	-- The Feast of Winter Veil (QI!)
+			qg = 1365,	-- Goli Krumn
+			coord = { 30.2, 59.8, IRONFORGE },
+			races = ALLIANCE_ONLY,
+			timeline = { ADDED_1_2_0 },
+			isYearly = true,
+			lvl = 10,
+			groups = { i(17735)	},	-- The Feast of Winter Veil (QI!)
 		}),
 		q(6964, {	-- The Reason for the Season (Horde)
-			["qg"] = 9550,	-- Furmund
-			["coord"] = { 51.0, 71.1, ORGRIMMAR },
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_1_2_0 },
-			["isYearly"] = true,
-			["lvl"] = 10,
-			["groups"] = { i(17735)	},	-- The Feast of Winter Veil (QI!)
+			qg = 9550,	-- Furmund
+			coord = { 51.0, 71.1, ORGRIMMAR },
+			races = HORDE_ONLY,
+			timeline = { ADDED_1_2_0 },
+			isYearly = true,
+			lvl = 10,
+			groups = { i(17735)	},	-- The Feast of Winter Veil (QI!)
 		}),
 		{	-- Treats for Greatfather Winter
-			["allianceQuestData"] = q(7025, {	-- Treats for Greatfather Winter (Alliance)
-				-- ["sourceQuests"] = {	-- Reported Not Required Discord 2022/2023
+			allianceQuestData = q(7025, {	-- Treats for Greatfather Winter (Alliance)
+				-- sourceQuests = {	-- Reported Not Required Discord 2022/2023
 				-- 	7022,	-- Greatfather Winter is Here! (Alliance)
 				-- 	7023,	-- Greatfather Winter is Here! (Alliance)
 				-- },
-				["qg"] = 13444,	-- Greatfather Winter
-				["coord"] = { 33.2, 65.8, IRONFORGE },
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_1_2_0 },
+				qg = 13444,	-- Greatfather Winter
+				coord = { 33.2, 65.8, IRONFORGE },
+				races = ALLIANCE_ONLY,
+				timeline = { ADDED_1_2_0 },
 			}),
-			["hordeQuestData"] = q(6962, {	-- Treats for Great-father Winter (Horde)
-				-- ["sourceQuests"] = {	-- Reported Not Required Discord 2022/2023
+			hordeQuestData = q(6962, {	-- Treats for Great-father Winter (Horde)
+				-- sourceQuests = {	-- Reported Not Required Discord 2022/2023
 				-- 	6961,	-- Great-father Winter is Here! (Horde)
 				-- 	7021,	-- Great-father Winter is Here! (Horde)
 				-- 	7024,	-- Great-father Winter is Here! (Horde)
 				-- },
-				["qg"] = 13445,	-- Great-father Winter
-				["coord"] = { 49.9, 78.4, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_1_2_0 },
+				qg = 13445,	-- Great-father Winter
+				coord = { 49.9, 78.4, ORGRIMMAR },
+				races = HORDE_ONLY,
+				timeline = { ADDED_1_2_0 },
 			}),
-			["cost"] = {
+			cost = {
 				{ "i", 17197, 5 },	-- Gingerbread Cookie
 				{ "i", 1179, 1 },	-- Ice Cold Milk
 			},
-			["isYearly"] = true,
-			["lvl"] = 10,
-			["groups"] = {
+			isYearly = true,
+			lvl = 10,
+			groups = {
 				i(17727, {	-- Smokywood Pastures Gift Pack
 					-- #if BEFORE 6.2.2.20395
 					i(2996),	-- Bolt of Linen Cloth
@@ -2253,17 +2253,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					i(785),	-- Mageroyal
 					-- #else
 					i(128647, {	-- Fizzy Apple Cider
-						["timeline"] = { ADDED_6_2_2 },
+						timeline = { ADDED_6_2_2 },
 					}),
 					-- #endif
 				}),
 				i(17685, {	-- Smokywood Pastures Sampler
 					i(17404),	-- Blended Bean Brew
 					i(17344, {	-- Candy Cane
-						["timeline"] = { REMOVED_6_2_2 },
+						timeline = { REMOVED_6_2_2 },
 					}),
 					i(128768, {	-- Candy Cane
-						["timeline"] = { ADDED_6_2_2 },
+						timeline = { ADDED_6_2_2 },
 					}),
 					i(17407),	-- Graccu's Homemade Meat Pie
 					i(21215),	-- Graccu's Mince Meat Fruitcake
@@ -2272,56 +2272,56 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 		},
 		q(39668, {	-- What Horrible Presents
-			["qgs"] = {
+			qgs = {
 				96451,	-- Almie [A]
 				96735,	-- Pizzle [H]
 			},
-			["coords"] = {
+			coords = {
 				{ 47.4, 37.6, FROSTWALL },
 				{ 44.0, 51.6, LUNARFALL },
 			},
-			["timeline"] = { ADDED_6_2_2 },
-			["maps"] = { FROSTFIRE_RIDGE },
-			["isDaily"] = true,
-			["lvl"] = lvlsquish(90, 90, 40),
-			["groups"] = {
+			timeline = { ADDED_6_2_2 },
+			maps = { FROSTFIRE_RIDGE },
+			isDaily = true,
+			lvl = lvlsquish(90, 90, 40),
+			groups = {
 				objective(1, {	-- 0/5 Unusual gifts destroyed
-					["providers"] = {
+					providers = {
 						{ "n", 96487 },	-- Unusual Gift
 						{ "i", 128675 },	-- Spirit Bomb
 					},
 				}),
 				i(128659, {	-- Merry Supplies
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 			},
 		}),
 		q(39648, {	-- Where Are the Children?
-			["qgs"] = {
+			qgs = {
 				96451,	-- Almie [A]
 				96735,	-- Pizzle [H]
 			},
-			["coords"] = {
+			coords = {
 				{ 47.4, 37.6, FROSTWALL },
 				{ 44.0, 51.6, LUNARFALL },
 			},
-			["timeline"] = { ADDED_6_2_2 },
-			["maps"] = { FROSTFIRE_RIDGE },
-			["isDaily"] = true,
-			["lvl"] = lvlsquish(90, 90, 40),
-			["groups"] = {
+			timeline = { ADDED_6_2_2 },
+			maps = { FROSTFIRE_RIDGE },
+			isDaily = true,
+			lvl = lvlsquish(90, 90, 40),
+			groups = {
 				objective(1, {	-- 0/6 Children rescued
-					["provider"] = { "n", 96454 },	-- Draenei Child
+					provider = { "n", 96454 },	-- Draenei Child
 				}),
 				i(128659, {	-- Merry Supplies
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 			},
 		}),
 		q(8827,{	-- Winter's Presents [A]
-			["description"] = "This quest becomes available after the 25th.",
-			["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
-			["maps"] = {
+			description = "This quest becomes available after the 25th.",
+			qg = 15732,	-- Wonderform Operator <Smokywood Pastures>
+			maps = {
 				-- #if AFTER WRATH
 				NORTHREND_DALARAN,
 				-- #endif
@@ -2338,14 +2338,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				TIRISFAL_GLADES,
 				WETLANDS,
 			},
-			["races"] = ALLIANCE_ONLY,
-			["timeline"] = { ADDED_1_2_0 },
-			["isYearly"] = true,
+			races = ALLIANCE_ONLY,
+			timeline = { ADDED_1_2_0 },
+			isYearly = true,
 		}),
 		q(8828, {	-- Winter's Presents [H]
-			["description"] = "This quest becomes available after the 25th.",
-			["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
-			["maps"] = {
+			description = "This quest becomes available after the 25th.",
+			qg = 15732,	-- Wonderform Operator <Smokywood Pastures>
+			maps = {
 				-- #if AFTER WRATH
 				NORTHREND_DALARAN,
 				-- #endif
@@ -2362,102 +2362,102 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				TIRISFAL_GLADES,
 				WETLANDS,
 			},
-			["races"] = HORDE_ONLY,
-			["timeline"] = { ADDED_1_2_0 },
-			["isYearly"] = true,
+			races = HORDE_ONLY,
+			timeline = { ADDED_1_2_0 },
+			isYearly = true,
 		}),
 		q(81560, {	-- Winter's Presents
-			["qgs"] = {
+			qgs = {
 				220307,	-- Holiday Enthusiast
 				220865,	-- Holiday Enthusiast
 				220870,	-- Holiday Enthusiast
 			},
-			["coords"] = {
+			coords = {
 				{ 46.0, 55.1, DORNOGAL },
 				{ 56.9, 28.7, DORNOGAL },
 				{ 55.6, 61.2, DORNOGAL },
 			},
-			["timeline"] = { ADDED_11_0_7 },
-			["races"] = ALLIANCE_ONLY,
-			["isYearly"] = true,
+			timeline = { ADDED_11_0_7 },
+			races = ALLIANCE_ONLY,
+			isYearly = true,
 		}),
 		q(81561, {	-- Winter's Presents
-			["qgs"] = {
+			qgs = {
 				220307,	-- Holiday Enthusiast
 				220865,	-- Holiday Enthusiast
 				220870,	-- Holiday Enthusiast
 			},
-			["coords"] = {
+			coords = {
 				{ 46.0, 55.1, DORNOGAL },
 				{ 56.9, 28.7, DORNOGAL },
 				{ 55.6, 61.2, DORNOGAL },
 			},
-			["timeline"] = { ADDED_11_0_7 },
-			["races"] = HORDE_ONLY,
-			["isYearly"] = true,
+			timeline = { ADDED_11_0_7 },
+			races = HORDE_ONLY,
+			isYearly = true,
 		}),
 		{	-- You're a Mean One...
-			["allianceQuestData"] = q(7043, {	-- You're a Mean One... [A]
-				["sourceQuest"] = 7042,	-- Stolen Winter Veil Treats (Alliance)
+			allianceQuestData = q(7043, {	-- You're a Mean One... [A]
+				sourceQuest = 7042,	-- Stolen Winter Veil Treats (Alliance)
 				-- #if AFTER CATA
-				["qgs"] = {
+				qgs = {
 					13433,	-- Wulmort Jinglepocket (Alliance)
 					13636,	-- Strange Snowman
 				},
-				["coords"] = {
+				coords = {
 					{ 33.2, 67.8, IRONFORGE },	-- Wulmort Jinglepocket (Alliance)
 					{ 42.4, 41.0, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
 				},
 				-- #else
-				["maps"] = { IRONFORGE },
+				maps = { IRONFORGE },
 				-- #endif
-				["timeline"] = { ADDED_1_2_0 },
+				timeline = { ADDED_1_2_0 },
 			}),
-			["hordeQuestData"] = q(6983, {	-- You're a Mean One... [H]
-				["sourceQuest"] = 6963,	-- Stolen Winter Veil Treats (Horde)
+			hordeQuestData = q(6983, {	-- You're a Mean One... [H]
+				sourceQuest = 6963,	-- Stolen Winter Veil Treats (Horde)
 				-- #if AFTER CATA
-				["qgs"] = {
+				qgs = {
 					13418,	-- Kaymard Copperpinch (Horde)
 					13636,	-- Strange Snowman
 				},
-				["coords"] = {
+				coords = {
 					{ 52.4, 77.0, ORGRIMMAR },	-- Kaymard Copperpinch (Horde)
 					{ 42.4, 41.0, HILLSBRAD_FOOTHILLS },	-- Strange Snowman
 				},
 				-- #else
-				["maps"] = { ORGRIMMAR },
+				maps = { ORGRIMMAR },
 				-- #endif
-				["timeline"] = { ADDED_1_2_0 },
+				timeline = { ADDED_1_2_0 },
 			}),
 			-- #if AFTER CATA
-			["isDaily"] = true,
+			isDaily = true,
 			-- #else
-			["qg"] = 13636,	-- Strange Snowman
-			["coord"] = { 35.4, 72.6, ALTERAC_MOUNTAINS },
-			["isYearly"] = true,
+			qg = 13636,	-- Strange Snowman
+			coord = { 35.4, 72.6, ALTERAC_MOUNTAINS },
+			isYearly = true,
 			-- #endif
-			["lvl"] = 30,
-			["groups"] = {
+			lvl = 30,
+			groups = {
 				objective(1, {	-- 0/1 Stolen Treats
-					["provider"] = { "i", 17662 },	-- Stolen Treats
-					["cr"] = 13602,	-- The Abominable Greench
+					provider = { "i", 17662 },	-- Stolen Treats
+					cr = 13602,	-- The Abominable Greench
 				}),
 				o(209497, {
-					["coords"] = {
+					coords = {
 						{ 43.4, 38.8, HILLSBRAD_FOOTHILLS },
 						{ 43.5, 38.4, HILLSBRAD_FOOTHILLS },
 						{ 43.7, 38.8, HILLSBRAD_FOOTHILLS },
 						{ 45.3, 40.3, HILLSBRAD_FOOTHILLS },
 					},
-					["timeline"] = { ADDED_4_3_0 },
-					["groups"] = {
+					timeline = { ADDED_4_3_0 },
+					groups = {
 						i(17662),	-- Stolen Treats
 					},
 				}),
 				i(149503, {	-- Stolen Gift
-					["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items thus it is not worth farming.",
-					["timeline"] = { ADDED_7_2_5, REMOVED_11_0_5 },	-- Danny Donkey: Stolen Present (116762) is rewarded in it's place with TWW, making it unobtainable.
-					["lvl"] = {
+					description = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items thus it is not worth farming.",
+					timeline = { ADDED_7_2_5, REMOVED_11_0_5 },	-- Danny Donkey: Stolen Present (116762) is rewarded in it's place with TWW, making it unobtainable.
+					lvl = {
 						-- #if AFTER SL
 						30, 59,
 						-- #elseif AFTER BFA
@@ -2467,7 +2467,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 						-- #endif
 					},
 					-- #if BEFORE TWW
-					["groups"] = {
+					groups = {
 						i(21215),	-- Graccu's Mince Meat Fruitcake
 						-- #if AFTER 3.0.2.8962
 						i(44481),	-- Grindgear Toy Gorilla
@@ -2486,30 +2486,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					-- #endif
 				}),
 				i(93626, {	-- Stolen Present
-					["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+					timeline = { ADDED_5_1_0, REMOVED_6_0_2 },
 					-- #if BEFORE 6.0.2
-					["groups"] = STOLEN_PRESENT_GROUPS,
+					groups = STOLEN_PRESENT_GROUPS,
 					-- #endif
 				}),
 				i(73792, {	-- Stolen Present
-					["timeline"] = { ADDED_4_3_0, REMOVED_5_1_0 },
+					timeline = { ADDED_4_3_0, REMOVED_5_1_0 },
 					-- #if BEFORE 5.1.0
-					["groups"] = STOLEN_PRESENT_GROUPS,
+					groups = STOLEN_PRESENT_GROUPS,
 					-- #endif
 				}),
 				i(116762, {	-- Stolen Present
-					["timeline"] = { ADDED_6_0_2 },
+					timeline = { ADDED_6_0_2 },
 					-- #if AFTER TWW
-					["description"] = "This gift is granted to any characters completing the daily quest, which requires lvl 30.",
+					description = "This gift is granted to any characters completing the daily quest, which requires lvl 30.",
 					-- #endif
-					["lvl"] = {
+					lvl = {
 						-- #if AFTER TWW
 						30, 80,	-- Danny Donkey: Replaces Stolen Gift (149503) for the bracket 30-59.
 						-- #else
 						50,
 						-- #endif
 					},
-					["groups"] = STOLEN_PRESENT_GROUPS,
+					groups = STOLEN_PRESENT_GROUPS,
 				}),
 			},
 		},
@@ -2517,62 +2517,62 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 	-- #if AFTER 8.3.0
 	n(TREASURES, {
 		o(180746, {	-- Gently Shaken Gift
-			["coords"] = {
+			coords = {
 				{ 33.5, 66.5, IRONFORGE },
 				{ 49.9, 78.5, ORGRIMMAR },
 			},
-			["groups"] = {
+			groups = {
 				i(178529, {	-- Gently Shaken Gift
-					["timeline"] = { ADDED_9_0_1 },
+					timeline = { ADDED_9_0_1 },
 				}),
 				i(187520, {	-- Gently Shaken Gift
-					["timeline"] = { ADDED_9_1_5 },
+					timeline = { ADDED_9_1_5 },
 				}),
 				i(192093, {	-- Gently Shaken Gift
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
+					timeline = { ADDED_10_0_2_LAUNCH },
 				}),
 				i(210657, {	-- Gently Shaken Gift
-					["timeline"] = { ADDED_10_2_0 },
+					timeline = { ADDED_10_2_0 },
 				}),
 				i(218309, {	-- Gently Shaken Gift
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(244906, {	-- Gently Shaken Gift
-					["timeline"] = { ADDED_11_2_7 },
+					timeline = { ADDED_11_2_7 },
 				}),
 			},
 		}),
 		o(341827, {	-- Greatfeather Pepe
-			["coords"] = {
+			coords = {
 				{ 33.9, 68.1, IRONFORGE },
 				{ 52.9, 77.4, ORGRIMMAR },
 			},
-			["timeline"] = { CREATED_8_3_0, ADDED_9_0_1 },
-			["groups"] = { i(174865) },	-- A Tiny Winter Hat (Pepe!)
+			timeline = { CREATED_8_3_0, ADDED_9_0_1 },
+			groups = { i(174865) },	-- A Tiny Winter Hat (Pepe!)
 		}),
 		o(187236, {	-- Winter Veil Gift
-			["coords"] = {
+			coords = {
 				{ 33.5, 66.5, IRONFORGE },
 				{ 49.9, 78.5, ORGRIMMAR },
 			},
-			["groups"] = {
+			groups = {
 				i(178528, {	-- Winter Veil Gift
-					["timeline"] = { ADDED_9_0_1 },
+					timeline = { ADDED_9_0_1 },
 				}),
 				i(187561, {	-- Winter Veil Gift
-					["timeline"] = { ADDED_9_1_5 },
+					timeline = { ADDED_9_1_5 },
 				}),
 				i(192094, {	-- Winter Veil Gift
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
+					timeline = { ADDED_10_0_2_LAUNCH },
 				}),
 				i(209871, {	-- Winter Veil Gift
-					["timeline"] = { ADDED_10_2_0 },
+					timeline = { ADDED_10_2_0 },
 				}),
 				i(218311, {	-- Winter Veil Gift
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(244908, {	-- Winter Veil Gift
-					["timeline"] = { ADDED_11_2_7 },
+					timeline = { ADDED_11_2_7 },
 				}),
 			},
 		}),
@@ -2580,8 +2580,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 	-- #endif
 	n(VENDORS, {
 		n(COMMON_VENDOR_ITEMS, {
-			["description"] = "These items can be found on any of the holiday vendors.",
-			["crs"] = {
+			description = "These items can be found on any of the holiday vendors.",
+			crs = {
 				13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				13420,	-- Penney Copperpinch <Smokywood Pastures>
 				-- #if AFTER 2.3.0.7561
@@ -2595,7 +2595,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				96304,	-- Tradurjo Jinglepocket <Smokywood Pastures>
 				-- #endif
 			},
-			["maps"] = {
+			maps = {
 				IRONFORGE,
 				ORGRIMMAR,
 				-- #if AFTER 2.3.0.7561
@@ -2610,26 +2610,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				FROSTWALL,
 				-- #endif
 			},
-			["groups"] = {
+			groups = {
 				i(34262, {	-- Pattern: Winter Boots (RECIPE!)
-					["timeline"] = { ADDED_2_3_0 },
+					timeline = { ADDED_2_3_0 },
 				}),
 				-- #if BEFORE 5.4.1
 				i(17201),	-- Recipe: Egg Nog / Recipe: Winter Veil Egg Nog[5.4.1+] (RECIPE!)
 				-- #endif
 				i(17200),	-- Recipe: Gingerbread Cookie (RECIPE!)
 				i(34413, {	-- Recipe: Hot Apple Cider (RECIPE!)
-					["timeline"] = { ADDED_2_3_0 },
+					timeline = { ADDED_2_3_0 },
 				}),
 				-- #if AFTER 5.4.1
 				i(17201),	-- Recipe: Winter Veil Egg Nog[5.4.1+] / Recipe: Egg Nog (RECIPE!)
 				-- #endif
 				i(188680, {	-- Winter Veil Chorus Book (TOY!)
-					["timeline"] = { ADDED_9_1_5 },
+					timeline = { ADDED_9_1_5 },
 				}),
 				-- #if AFTER 5.1.0
 				i(70923, {	-- Gaudy Winter Veil Sweater
-					["timeline"] = { ADDED_4_2_0 },
+					timeline = { ADDED_4_2_0 },
 				}),
 				-- #endif
 				i(17303),	-- Blue Ribboned Wrapping Paper
@@ -2641,185 +2641,185 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(17194),	-- Holiday Spices
 				i(17196),	-- Holiday Spirits
 				i(34412, {	-- Sparkling Apple Cider
-					["timeline"] = { ADDED_2_3_0 },
+					timeline = { ADDED_2_3_0 },
 				}),
 				i(234407, {	-- Festive Green Holiday Boots
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234407, {	-- Festive Green Holiday Boots
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234398, {	-- Festive Green Holiday Belt
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234401, {	-- Festive Green Holiday Coat
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234403, {	-- Festive Green Holiday Pants
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234405, {	-- Festive Green Holiday Shorts
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234596, {	-- Festive Green Holiday Sweater
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234597, {	-- Festive Green Holiday Shirt
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234593, {	-- Festive Green Holiday Vest
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234406, {	-- Festive Red Holiday Boots
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234399, {	-- Festive Red Holiday Belt
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234400, {	-- Festive Red Holiday Coat
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234402, {	-- Festive Red Holiday Pants
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234404, {	-- Festive Red Holiday Shorts
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234595, {	-- Festive Red Holiday Sweater
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234598, {	-- Festive Red Holiday Shirt
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 				i(234594, {	-- Festive Red Holiday Vest
-					["timeline"] = { ADDED_11_0_7 },
+					timeline = { ADDED_11_0_7 },
 				}),
 			},
 		}),
 		n(23064, {	-- Eebee Jinglepocket <Smokywood Pastures>
-			["coord"] = { 51.3, 29.7, SHATTRATH_CITY },
-			["timeline"] = { ADDED_2_3_0 },
+			coord = { 51.3, 29.7, SHATTRATH_CITY },
+			timeline = { ADDED_2_3_0 },
 			-- #if AFTER CATA
-			["groups"] = HOLIDAY_VENDOR_GROUPS_GREEN,
+			groups = HOLIDAY_VENDOR_GROUPS_GREEN,
 			-- #endif
 		}),
 		n(96362, {	-- Izzy Hollyfizzle <Events Coordinator>
-			["timeline"] = { ADDED_6_2_2 },
-			["coords"] = {
+			timeline = { ADDED_6_2_2 },
+			coords = {
 				{ 47.3, 38.4, FROSTWALL },
 				{ 44.2, 51.0, LUNARFALL },
 			},
-			["groups"] = {
+			groups = {
 				i(108635, {	-- Crashin' Thrashin' Killdozer Controller (TOY!)
-					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
-					["timeline"] = { ADDED_6_0_2 },
+					cost = { { "i", 128659, 5 } },	-- 5x Merry Supplies
+					timeline = { ADDED_6_0_2 },
 				}),
 				i(128665, {	-- Ball of Tangled Lights (CI!)
-					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
-					["timeline"] = { ADDED_6_2_2 },
+					cost = { { "i", 128659, 5 } },	-- 5x Merry Supplies
+					timeline = { ADDED_6_2_2 },
 				}),
 				i(128668, {	-- Festive Outfits
-					["description"] = "This becomes un-saved if you remove the decorations even though the decorations remain unlocked.",
-					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
-					["timeline"] = { ADDED_6_2_2 },
-					["questID"] = 39671,	-- apparently repeatable if you remove the festive decorations... or might be the wrong QuestID for the unlock specifically
-					["repeatable"] = true,
+					description = "This becomes un-saved if you remove the decorations even though the decorations remain unlocked.",
+					cost = { { "i", 128659, 5 } },	-- 5x Merry Supplies
+					timeline = { ADDED_6_2_2 },
+					questID = 39671,	-- apparently repeatable if you remove the festive decorations... or might be the wrong QuestID for the unlock specifically
+					repeatable = true,
 				}),
 				i(128666, {	-- Imported Trees (CI!)
-					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
-					["timeline"] = { ADDED_6_2_2 },
+					cost = { { "i", 128659, 5 } },	-- 5x Merry Supplies
+					timeline = { ADDED_6_2_2 },
 				}),
 				i(128667, {	-- Little Helpers (CI!)
-					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
-					["timeline"] = { ADDED_6_2_2 },
+					cost = { { "i", 128659, 5 } },	-- 5x Merry Supplies
+					timeline = { ADDED_6_2_2 },
 				}),
 				i(128669, {	-- Old Box of Decorations (CI!)
-					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
-					["timeline"] = { ADDED_6_2_2 },
+					cost = { { "i", 128659, 5 } },	-- 5x Merry Supplies
+					timeline = { ADDED_6_2_2 },
 				}),
 				i(128670, {	-- Savage Gift
-					["cost"] = { { "i", 128659, 5 } },	-- 5x Merry Supplies
-					["timeline"] = { ADDED_6_2_2 },
-					["groups"] = {
+					cost = { { "i", 128659, 5 } },	-- 5x Merry Supplies
+					timeline = { ADDED_6_2_2 },
+					groups = {
 						-- #if BEFORE 7.3.2
 						i(128312, {	-- Elixir of the Rapid Mind
-							["timeline"] = { ADDED_6_2_0 },
+							timeline = { ADDED_6_2_0 },
 						}),
 						-- #endif
 						i(128314, {	-- Frozen Arms of a Hero
-							["timeline"] = { ADDED_6_2_0 },
+							timeline = { ADDED_6_2_0 },
 						}),
 						i(128315, {	-- Medallion of the Legion
-							["timeline"] = { ADDED_6_2_0 },
+							timeline = { ADDED_6_2_0 },
 						}),
 						i(128671, {	-- Minion of Grumpus (MOUNT!)
-							["timeline"] = { ADDED_6_2_2 },
+							timeline = { ADDED_6_2_2 },
 						}),
 					},
 				}),
 			},
 		}),
 		n(13435, {	-- Khole Jinglepocket <Smokywood Pastures>
-			["coords"] = {
+			coords = {
 				-- #if AFTER WRATH
 				{ 62.8, 70.2, STORMWIND_CITY },
 				-- #else
 				{ 55.0, 59.6, STORMWIND_CITY },
 				-- #endif
 			},
-			["groups"] = HOLIDAY_VENDOR_GROUPS_RED,
+			groups = HOLIDAY_VENDOR_GROUPS_RED,
 		}),
 		n(13429, {	-- Nardstrum Copperpinch <Smokywood Pastures>
-			["coord"] = { 68.4, 39.8, UNDERCITY },
-			["groups"] = HOLIDAY_VENDOR_GROUPS_GREEN,
+			coord = { 68.4, 39.8, UNDERCITY },
+			groups = HOLIDAY_VENDOR_GROUPS_GREEN,
 		}),
 		n(13420, {	-- Penney Copperpinch <Smokywood Pastures>
-			["coords"] = {
+			coords = {
 				-- #if AFTER CATA
 				{ 52.6, 77.6, ORGRIMMAR },
 				-- #else
 				{ 53.0, 66.0, ORGRIMMAR },
 				-- #endif
 			},
-			["groups"] = HOLIDAY_VENDOR_GROUPS_GREEN,
+			groups = HOLIDAY_VENDOR_GROUPS_GREEN,
 		}),
 		n(13432, {	-- Seersa Jinglepocket <Smokywood Pastures>
-			["coords"] = {
+			coords = {
 				-- #if AFTER CATA
 				{ 42.6, 56.0, THUNDER_BLUFF },
 				-- #else
 				{ 43.8, 59.2, THUNDER_BLUFF },
 				-- #endif
 			},
-			["groups"] = HOLIDAY_VENDOR_GROUPS_GREEN,
+			groups = HOLIDAY_VENDOR_GROUPS_GREEN,
 		}),
 		n(96304, {	-- Tradurjo Jinglepocket <Smokywood Pastures>
-			["coords"] = {
+			coords = {
 				{ 43.0, 46.6, LUNARFALL },
 				{ 52.0, 33.2, FROSTWALL },
 			},
-			["timeline"] = { ADDED_6_2_2 },
-			["groups"] = HOLIDAY_VENDOR_GROUPS_RED,
+			timeline = { ADDED_6_2_2 },
+			groups = HOLIDAY_VENDOR_GROUPS_RED,
 		}),
 		n(23010, {	-- Wolgren Jinglepocket <Smokywood Pastures>
-			["coord"] = { 56.2, 49.6, THE_EXODAR },
-			["timeline"] = { ADDED_2_3_0 },
-			["groups"] = HOLIDAY_VENDOR_GROUPS_RED,
+			coord = { 56.2, 49.6, THE_EXODAR },
+			timeline = { ADDED_2_3_0 },
+			groups = HOLIDAY_VENDOR_GROUPS_RED,
 		}),
 		n(13433, {	-- Wulmort Jinglepocket <Smokywood Pastures>
-			["coords"] = {
+			coords = {
 				-- #if AFTER CATA
 				{ 33.2, 67.8, IRONFORGE },
 				-- #else
 				{ 33.4, 67.0, IRONFORGE },
 				-- #endif
 			},
-			["groups"] = HOLIDAY_VENDOR_GROUPS_RED,
+			groups = HOLIDAY_VENDOR_GROUPS_RED,
 		}),
 	}),
 	n(15760, {	-- Winter Reveler
-		["description"] = "Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",
-		["crs"] = {
+		description = "Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",
+		crs = {
 			-- #if AFTER TBC
 			22998,	-- Blood Elf Female Winter Reveler
 			22999,	-- Blood Elf Male Winter Reveler
@@ -2851,15 +2851,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			15788,	-- Undead Female Winter Reveler
 			15790,	-- Undead Male Winter Reveler
 		},
-		["groups"] = {
+		groups = {
 			i(21212, {	-- Fresh Holly
-				["timeline"] = { ADDED_1_8_4 },
+				timeline = { ADDED_1_8_4 },
 			}),
 			i(34191, {	-- Handful of Snowflakes
-				["timeline"] = { ADDED_2_3_0 },
+				timeline = { ADDED_2_3_0 },
 			}),
 			i(21519, {	-- Mistletoe
-				["timeline"] = { ADDED_1_2_0 },
+				timeline = { ADDED_1_2_0 },
 			}),
 		},
 	}),
@@ -2868,8 +2868,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			i(17202),	-- Snowball
 		}),
 		o(243911, {	-- Snow Mound
-			["timeline"] = { ADDED_6_2_2 },
-			["coords"] = {
+			timeline = { ADDED_6_2_2 },
+			coords = {
 				{ 42.8, 27.3, FROSTFIRE_RIDGE },
 				{ 43.2, 27.8, FROSTFIRE_RIDGE },
 				{ 43.9, 28.0, FROSTFIRE_RIDGE },
@@ -2884,17 +2884,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 47.4, 28.2, FROSTFIRE_RIDGE },
 				{ 47.6, 27.6, FROSTFIRE_RIDGE },
 			},
-			["groups"] = {
+			groups = {
 				i(128770, {	-- Grumpling (PET!)
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 				i(35557),	-- Huge Snowball
 				i(128632, {	-- Savage Snowball
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 				i(17202),	-- Snowball
 				i(128648, {	-- Yellow Snowball
-					["timeline"] = { ADDED_6_2_2 },
+					timeline = { ADDED_6_2_2 },
 				}),
 			},
 		}),
@@ -2902,20 +2902,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_1_0 } }, {
 		applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
 			q(45766, {	-- finding Greatfather Winter in Highmountain (npc ID 104710)
-				["isYearly"] = true,
+				isYearly = true,
 			}),
 		})),
 	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
 		applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
 			q(78130),	-- Looting Festive Trans-Dimensional Bird Whistle [209859]
 			q(78445),	-- Looting Highland Drake: Winter Veil Armor [210432]
 		})),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_7 } }, {
 		applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
 			q(86440),	-- Stolen Present Daily / Scroll of Storytelling id 116456 (already known) / daily bonus?
 			q(86441),	-- Bronze Celebration Token Winter Veil tracker

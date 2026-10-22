@@ -2,16 +2,16 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(VALE_OF_ETERNAL_BLOSSOMS, {
-		["icon"] = 618798,
-		["groups"] = {
+		icon = 618798,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(20069),	-- Elusive Foes: Vale of Eternal Blossoms (automated)
 				ach(19916),	-- Golden Lotus
 				ach(20014, {	-- Looking For Group: Vale of Eternal Blossoms
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19904,	-- Mogu'shan Palace
 						19906,	-- Scarlet Halls
 						19908,	-- Scarlet Monastery
@@ -22,34 +22,34 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				ach(19913),	-- The August Celestials
 				ach(19876, {	-- Vale of Eternal Blossoms
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						20069,	-- Elusive Foes: Vale of Eternal Blossoms
 						19916,	-- Golden Lotus
 						20014,	-- Looking For Group: Vale of Eternal Blossoms
 						19913,	-- The August Celestials
 					}},
-					["groups"] = {
+					groups = {
 						i(220768),	-- Astral Emperor's Serpent (MOUNT!)
 					},
 				}),
 			}),
 			n(QUESTS, {
 				q(80310, {	-- Setting Sun Garrison
-					["qgs"] = {
+					qgs = {
 						64031,	-- Xari the Kind [A]
 						64007,	-- Weng the Merciful [H]
 					},
-					["coords"] = {
+					coords = {
 						{ 84.2, 62.4, VALE_OF_ETERNAL_BLOSSOMS },
 						{ 63.0, 22.2, VALE_OF_ETERNAL_BLOSSOMS },
 					},
-					["isDaily"] = true,
+					isDaily = true,
 				}),
 				q(80427, {	-- Aid the Golden Lotus
-					["provider"] = { "n", 58919 },	-- Anji Autumnlight
-					["coord"] = { 21.3, 71.7, VALE_OF_ETERNAL_BLOSSOMS },
-					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
-					["repeatable"] = true,
+					provider = { "n", 58919 },	-- Anji Autumnlight
+					coord = { 21.3, 71.7, VALE_OF_ETERNAL_BLOSSOMS },
+					cost = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					repeatable = true,
 				}),
 			}),
 			n(ZONE_REWARDS, {

@@ -2,20 +2,20 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(DREAD_WASTES, {
-		["icon"] = 624970,
-		["groups"] = {
+		icon = 624970,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(19890),	-- Campaign: Dread Wastes (automated)
 				ach(19878, {	-- Dread Wastes
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19890,	-- Campaign: Dread Wastes
 						19915,	-- The Klaxxi
 						19967,	-- Tour Dread Wastes
 					}},
-					["groups"] = {
+					groups = {
 						i(220765),	-- Sha Corruption (ILLUSION!)
 					},
 				}),
@@ -23,7 +23,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				ach(20031),	-- Explore Dread Wastes (automated)
 				ach(19967, {	-- Tour Dread Wastes
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19998,	-- Elusive Foes: Dread Wastes
 						20031,	-- Explore Dread Wastes
 					}},
@@ -38,10 +38,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(QUESTS, {
 				q(80320, {	-- Aid the Klaxxi
-					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
-					["coord"] = { 54.9, 35.8, DREAD_WASTES },
-					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
-					["repeatable"] = true,
+					provider = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
+					coord = { 54.9, 35.8, DREAD_WASTES },
+					cost = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					repeatable = true,
 				}),
 			}),
 			n(ZONE_REWARDS, {

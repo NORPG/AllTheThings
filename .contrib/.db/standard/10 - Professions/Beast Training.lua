@@ -1,53 +1,53 @@
 -- See Reference: https://www.wow-petopia.com/classic_bc/abilities.php
 -- #if BEFORE 3.0.2
 profession(261, {	-- Beast Training
-	["description"] = "Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",
-	["timeline"] = { REMOVED_3_0_2 },
-	["classes"] = { HUNTER },
-	["lvl"] = 10,
-	["groups"] = bubbleDown({ ["_drop"] = { "requireSkill" } }, {
+	description = "Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",
+	timeline = { REMOVED_3_0_2 },
+	classes = { HUNTER },
+	lvl = 10,
+	groups = bubbleDown({ _drop = { "requireSkill" } }, {
 		{
-			["recipeID"] = 24493,	-- Arcane Resistance [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 20,
+			recipeID = 24493,	-- Arcane Resistance [Rank 1]
+			rank = 1,
+			lvl = 20,
 		},
 		{
-			["recipeID"] = 24497,	-- Arcane Resistance [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 30,
+			recipeID = 24497,	-- Arcane Resistance [Rank 2]
+			rank = 2,
+			lvl = 30,
 		},
 		{
-			["recipeID"] = 24500,	-- Arcane Resistance [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 40,
+			recipeID = 24500,	-- Arcane Resistance [Rank 3]
+			rank = 3,
+			lvl = 40,
 		},
 		{
-			["recipeID"] = 24501,	-- Arcane Resistance [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 50,
+			recipeID = 24501,	-- Arcane Resistance [Rank 4]
+			rank = 4,
+			lvl = 50,
 		},
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 27350,	-- Arcane Resistance [Rank 5]
-			["rank"] = 5,
-			["lvl"] = 60,
+			recipeID = 27350,	-- Arcane Resistance [Rank 5]
+			rank = 5,
+			lvl = 60,
 		}),
 		
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 35699,	-- Avoidance [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 30,
+			recipeID = 35699,	-- Avoidance [Rank 1]
+			rank = 1,
+			lvl = 30,
 		}),
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 35700,	-- Avoidance [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 60,
+			recipeID = 35700,	-- Avoidance [Rank 2]
+			rank = 2,
+			lvl = 60,
 		}),
 		
 		{
-			["recipeID"] = 17253,	-- Bite [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 10,
-			["crs"] = {
+			recipeID = 17253,	-- Bite [Rank 1]
+			rank = 1,
+			lvl = 10,
+			crs = {
 				1509,	-- Ragged Scavenger (Wolf, 2-3, Tirisfal Glades)
 				1505,	-- Night Web Spider (Spider, 3-4, Tirisfal Glades)
 				2958,	-- Prairie Wolf (Wolf, 5-6, Mulgore)
@@ -63,10 +63,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 17255,	-- Bite [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 10,
-			["crs"] = {
+			recipeID = 17255,	-- Bite [Rank 2]
+			rank = 2,
+			lvl = 10,
+			crs = {
 				1133,	-- Starving Winter Wolf (Wolf, 8-9, Dun Morogh)
 				2000,	-- Webwood Silkspinner (Spider, 8-9, Teldrassil)
 				118,	-- Prowler (Wolf, 9-10, Elwynn Forest)
@@ -88,10 +88,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 17256,	-- Bite [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 16,
-			["crs"] = {
+			recipeID = 17256,	-- Bite [Rank 3]
+			rank = 3,
+			lvl = 16,
+			crs = {
 				1923,	-- Bloodsnout Worg (Wolf, 16-17, Silverpine Forest)
 				4005,	-- Deepmoss Creeper (Spider, 16-17, Stonetalon Mountains)
 				-- #if AFTER TBC
@@ -115,10 +115,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 17257,	-- Bite [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 24,
-			["crs"] = {
+			recipeID = 17257,	-- Bite [Rank 4]
+			rank = 4,
+			lvl = 24,
+			crs = {
 				628,	-- Black Ravager (Wolf, 24-25, Duskwood)
 				1112,	-- Leech Widow (Spider, 24, Wetlands)
 				2349,	-- Giant Moss Creeper (Spider, 24-25, Hillsbrad Foothills)
@@ -135,10 +135,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 17258,	-- Bite [Rank 5]
-			["rank"] = 5,
-			["lvl"] = 32,
-			["crs"] = {
+			recipeID = 17258,	-- Bite [Rank 5]
+			rank = 5,
+			lvl = 32,
+			crs = {
 				2563,	-- Plains Creeper (Spider, 32-33, Arathi Highlands)
 				4143,	-- Sparkleshell Snapper (Turtle, 34-35, Thousand Needles)
 				-- #if BEFORE TBC
@@ -162,10 +162,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 17259,	-- Bite [Rank 6]
-			["rank"] = 6,
-			["lvl"] = 38,
-			["crs"] = {
+			recipeID = 17259,	-- Bite [Rank 6]
+			rank = 6,
+			lvl = 38,
+			crs = {
 				-- #if BEFORE TBC
 				2753,	-- Barnabus (Wolf, 38, Badlands)
 				-- #endif
@@ -184,10 +184,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 17260,	-- Bite [Rank 7]
-			["rank"] = 7,
-			["lvl"] = 48,
-			["crs"] = {
+			recipeID = 17260,	-- Bite [Rank 7]
+			rank = 7,
+			lvl = 48,
+			crs = {
 				8277,	-- Rekk'tilac (Spider, 48, Searing Gorge)
 				2505,	-- Saltwater Snapjaw (Turtle, 49-50, The Hinterlands)
 				2681,	-- Vilebranch Raiding Wolf (Wolf, 50-51, The Hinterlands)
@@ -203,10 +203,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 17261,	-- Bite [Rank 8]
-			["rank"] = 8,
-			["lvl"] = 56,
-			["crs"] = {
+			recipeID = 17261,	-- Bite [Rank 8]
+			rank = 8,
+			lvl = 56,
+			crs = {
 				9696,	-- Bloodaxe Worg (Wolf, 56-57, Blackrock Spire)
 				-- #if AFTER TBC
 				11370,	-- Razzashi Broodwidow (Spider, 61, Zul'Gurub (Raid))
@@ -217,10 +217,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 27348,	-- Bite [Rank 9]
-			["rank"] = 9,
-			["lvl"] = 64,
-			["crs"] = {
+			recipeID = 27348,	-- Bite [Rank 9]
+			rank = 9,
+			lvl = 64,
+			crs = {
 				18467,	-- Dreadfang Widow (Spider, 64-65, Terokkar Forest)
 				21956,	-- Rema (Wolf, 66, Blade's Edge Mountains)
 				20634,	-- Scythetooth Raptor (Raptor, 68-69, Netherstorm)
@@ -228,10 +228,10 @@ profession(261, {	-- Beast Training
 		}),
 
 		{
-			["recipeID"] = 7371,	-- Charge [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 10,
-			["crs"] = {
+			recipeID = 7371,	-- Charge [Rank 1]
+			rank = 1,
+			lvl = 10,
+			crs = {
 				1984,	-- Young Thistle Boar (Boar, 1-2, Teldrassil)
 				3098,	-- Mottled Boar (Boar, 1-2, Durotar)
 				1985,	-- Thistle Boar (Boar, 2-3, Teldrassil)
@@ -254,10 +254,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 26177,	-- Charge [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 12,
-			["crs"] = {
+			recipeID = 26177,	-- Charge [Rank 2]
+			rank = 2,
+			lvl = 12,
+			crs = {
 				454,	-- Young Goretusk (Boar, 12-13, Westfall)
 				157,	-- Goretusk (Boar, 14-15, Westfall)
 				1191,	-- Mangy Mountain Boar (Boar, 14-15, Loch Modan)
@@ -266,10 +266,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 26178,	-- Charge [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 24,
-			["crs"] = {
+			recipeID = 26178,	-- Charge [Rank 3]
+			rank = 3,
+			lvl = 24,
+			crs = {
 				345,	-- Bellygrub (Boar, 24, Redridge Mountains)
 				4511,	-- Agam'ar (Boar, 24-25, Razorfen Kraul)
 				4514,	-- Raging Agam'ar (Boar, 25-26, Razorfen Kraul)
@@ -277,34 +277,34 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 26179,	-- Charge [Rank 4]
-			["timeline"] = { CREATED_1_0_1 },
-			["rank"] = 4,
-			["lvl"] = 36,
+			recipeID = 26179,	-- Charge [Rank 4]
+			timeline = { CREATED_1_0_1 },
+			rank = 4,
+			lvl = 36,
 		},
 		{
-			["recipeID"] = 26201,	-- Charge [Rank 5]
-			["rank"] = 5,
-			["lvl"] = 48,
-			["crs"] = {
+			recipeID = 26201,	-- Charge [Rank 5]
+			rank = 5,
+			lvl = 48,
+			crs = {
 				5992,	-- Ashmane Boar (Boar, 48-49, Blasted Lands)
 				8303,	-- Grunter (Boar, 50, Blasted Lands)
 			},
 		},
 		{
-			["recipeID"] = 27685,	-- Charge [Rank 6]
-			["rank"] = 6,
-			["lvl"] = 60,
-			["crs"] = {
+			recipeID = 27685,	-- Charge [Rank 6]
+			rank = 6,
+			lvl = 60,
+			crs = {
 				16117,	-- Plagued Swine (Boar, 60, Eastern Plaguelands)
 			},
 		},
 
 		{
-			["recipeID"] = 16827,	-- Claw [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 10,
-			["crs"] = {
+			recipeID = 16827,	-- Claw [Rank 1]
+			rank = 1,
+			lvl = 10,
+			crs = {
 				3124,	-- Scorpid Worker (Scorpid, 3, Durotar)
 				3281,	-- Sarkoth (Scorpid, 4, Durotar)
 				3106,	-- Pygmy Surf Crawler (Crab, 5-6, Durotar)
@@ -313,10 +313,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 16828,	-- Claw [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 10,
-			["crs"] = {
+			recipeID = 16828,	-- Claw [Rank 2]
+			rank = 2,
+			lvl = 10,
+			crs = {
 				-- #if AFTER TBC
 				15652,	-- Elder Springpaw (Cat, 8-9, Eversong Woods)
 				-- #endif
@@ -336,10 +336,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 16829,	-- Claw [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 16,
-			["crs"] = {
+			recipeID = 16829,	-- Claw [Rank 3]
+			rank = 3,
+			lvl = 16,
+			crs = {
 				-- #if AFTER TBC
 				16349,	-- Ghostclaw Ravager (Cat, 16-17, Ghostlands)
 				-- #endif
@@ -356,10 +356,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 16830,	-- Claw [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 25,
-			["crs"] = {
+			recipeID = 16830,	-- Claw [Rank 4]
+			rank = 4,
+			lvl = 25,
+			crs = {
 				3810,	-- Elder Ashenvale Bear (Bear, 25-26, Ashenvale)
 				4823,	-- Barbed Crustacean (Crab, 25-26, Blackfathom Deeps)
 				4696,	-- Scorpashi Snapper (Scorpid, 30-31, Desolace)
@@ -367,20 +367,20 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 16831,	-- Claw [Rank 5]
-			["rank"] = 5,
-			["lvl"] = 34,
-			["crs"] = {
+			recipeID = 16831,	-- Claw [Rank 5]
+			rank = 5,
+			lvl = 34,
+			crs = {
 				4697,	-- Scorpashi Lasher (Scorpid, 34-35, Desolace)
 				5937,	-- Vile Sting (Scorpid, 35, Thousand Needles)
 				7022,	-- Venomlash Scorpid (Scorpid, 39-40, Uldaman)
 			},
 		},
 		{
-			["recipeID"] = 16832,	-- Claw [Rank 6]
-			["rank"] = 6,
-			["lvl"] = 40,
-			["crs"] = {
+			recipeID = 16832,	-- Claw [Rank 6]
+			rank = 6,
+			lvl = 40,
+			crs = {
 				5422,	-- Scorpid Hunter (Scorpid, 40-41, Tanaris)
 				922,	-- Silt Crawler (Crab, 40-41, Swamp of Sorrows)
 				5268,	-- Ironfur Bear (Bear, 41-42, Feralas)
@@ -390,10 +390,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 3010,	-- Claw [Rank 7]
-			["rank"] = 7,
-			["lvl"] = 48,
-			["crs"] = {
+			recipeID = 3010,	-- Claw [Rank 7]
+			rank = 7,
+			lvl = 48,
+			crs = {
 				5274,	-- Ironfur Patriarch (Bear, 48-49, Feralas)
 				8958,	-- Angerclaw Mauler (Bear, 49-50, Felwood)
 				14344,	-- Mongress (Bear, 50, Felwood)
@@ -407,10 +407,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 3009,	-- Claw [Rank 8]
-			["rank"] = 8,
-			["lvl"] = 57,
-			["crs"] = {
+			recipeID = 3009,	-- Claw [Rank 8]
+			rank = 8,
+			lvl = 57,
+			crs = {
 				7456,	-- Winterspring Screecher (Owl, 57-59, Winterspring)
 				7445,	-- Elder Shardtooth (Bear, 57-58, Winterspring)
 				-- #if AFTER TBC
@@ -420,10 +420,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 27347,	-- Claw [Rank 9]
-			["rank"] = 9,
-			["lvl"] = 64,
-			["crs"] = {
+			recipeID = 27347,	-- Claw [Rank 9]
+			rank = 9,
+			lvl = 64,
+			crs = {
 				22100,	-- Scorpid Bonecrawler (Scorpid, 64-65, Terokkar Forest)
 				18220,	-- Ravenous Windroc (Owl, 65-66, Nagrand)
 				22265,	-- Shadowwing Owl (Owl, 66-67, Shadowmoon Valley)
@@ -434,16 +434,16 @@ profession(261, {	-- Beast Training
 		}),
 		
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 25076,	-- Cobra Reflexes [Rank 1]
-			["lvl"] = 30,
-			["cr"] = 731,	-- King Bangalash (Cat, 43, Stranglethorn Vale)
+			recipeID = 25076,	-- Cobra Reflexes [Rank 1]
+			lvl = 30,
+			cr = 731,	-- King Bangalash (Cat, 43, Stranglethorn Vale)
 		}),
 		
 		{
-			["recipeID"] = 1742,	-- Cower [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 10,
-			["crs"] = {
+			recipeID = 1742,	-- Cower [Rank 1]
+			rank = 1,
+			lvl = 10,
+			crs = {
 				1199,	-- Juvenile Snow Leopard (Cat, 5-6, Dun Morogh)
 				2042,	-- Nightsaber (Cat, 5-6, Teldrassil)
 				1553,	-- Greater Duskbat (Bat, 6-7, Tirisfal Glades)
@@ -457,10 +457,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 1753,	-- Cower [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 15,
-			["crs"] = {
+			recipeID = 1753,	-- Cower [Rank 2]
+			rank = 2,
+			lvl = 15,
+			crs = {
 				3241,	-- Savannah Patriarch (Cat, 15-16, The Barrens)
 				3245,	-- Ornery Plainstrider (Tallstrider, 16-17, The Barrens)
 				2323,	-- Giant Foreststrider (Tallstrider, 17-19, Darkshore)
@@ -470,10 +470,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 1754,	-- Cower [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 25,
-			["crs"] = {
+			recipeID = 1754,	-- Cower [Rank 3]
+			rank = 3,
+			lvl = 25,
+			crs = {
 				4126,	-- Crag Stalker (Cat, 25-26, Thousand Needles)
 				2385,	-- Feral Mountain Lion (Cat, 27-28, Hillsbrad Foothills)
 				681,	-- Young Stranglethorn Tiger (Cat, 30-31, Stranglethorn Vale)
@@ -484,20 +484,20 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 1755,	-- Cower [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 36,
-			["crs"] = {
+			recipeID = 1755,	-- Cower [Rank 4]
+			rank = 4,
+			lvl = 36,
+			crs = {
 				2731,	-- Ridge Stalker (Cat, 36-37, Badlands)
 				4861,	-- Shrike Bat (Bat, 38-39, Uldaman)
 				2732,	-- Ridge Huntress (Cat, 38-39, Badlands)
 			},
 		},
 		{
-			["recipeID"] = 1756,	-- Cower [Rank 5]
-			["rank"] = 5,
-			["lvl"] = 50,
-			["crs"] = {
+			recipeID = 1756,	-- Cower [Rank 5]
+			rank = 5,
+			lvl = 50,
+			crs = {
 				2522,	-- Jaguero Stalker (Cat, 50, Stranglethorn Vale)
 				-- #if AFTER TBC
 				8927,	-- Dark Screecher (Bat, 50-52, Blackrock Depths (Dungeon))
@@ -507,19 +507,19 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 16697,	-- Cower [Rank 6]
-			["rank"] = 6,
-			["lvl"] = 55,
-			["crs"] = {
+			recipeID = 16697,	-- Cower [Rank 6]
+			rank = 6,
+			lvl = 55,
+			crs = {
 				7430,	-- Frostsaber Cub (Cat, 55-56, Winterspring)
 				8602,	-- Monstrous Plaguebat (Bat, 56-58, Eastern Plaguelands)
 			},
 		},
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 27346,	-- Cower [Rank 7]
-			["rank"] = 7,
-			["lvl"] = 65,
-			["crs"] = {
+			recipeID = 27346,	-- Cower [Rank 7]
+			rank = 7,
+			lvl = 65,
+			crs = {
 				21022,	-- Grovestalker Lynx (Cat, 65-66, Blade's Edge Mountains)
 				20671,	-- Ripfang Lynx (Cat, 68-69, Netherstorm)
 				22807,	-- Lost Torranche (Tallstrider, 70, Terokkar Forest)
@@ -527,10 +527,10 @@ profession(261, {	-- Beast Training
 		}),
 
 		{
-			["recipeID"] = 23099,	-- Dash [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 32,
-			["crs"] = {
+			recipeID = 23099,	-- Dash [Rank 1]
+			rank = 1,
+			lvl = 32,
+			crs = {
 				976,	-- Kurzen War Tiger (Cat, 32-33, Stranglethorn Vale)
 				682,	-- Stranglethorn Tiger (Cat, 32-33, Stranglethorn Vale)
 				4304,	-- Scarlet Tracking Hound (Hyena, 33-34, Scarlet Monastery)
@@ -546,10 +546,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 23109,	-- Dash [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 40,
-			["crs"] = {
+			recipeID = 23109,	-- Dash [Rank 2]
+			rank = 2,
+			lvl = 40,
+			crs = {
 				5286,	-- Longtooth Runner (Wolf, 40-41, Feralas)
 				2734,	-- Ridge Stalker Patriarch (Cat, 40-41, Badlands)
 				728,	-- Bhag'thera (Cat, 40, Stranglethorn Vale)
@@ -567,10 +567,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 23110,	-- Dash [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 50,
-			["crs"] = {
+			recipeID = 23110,	-- Dash [Rank 3]
+			rank = 3,
+			lvl = 50,
+			crs = {
 				2681,	-- Vilebranch Raiding Wolf (Wolf, 50-51, The Hinterlands)
 				8303,	-- Grunter (Boar, 50, Blasted Lands)
 				8300,	-- Ravage (Hyena, 51, Blasted Lands)
@@ -591,10 +591,10 @@ profession(261, {	-- Beast Training
 		},
 
 		{
-			["recipeID"] = 23145,	-- Dive [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 30,
-			["crs"] = {
+			recipeID = 23145,	-- Dive [Rank 1]
+			rank = 1,
+			lvl = 30,
+			crs = {
 				-- #if AFTER TBC
 				4425,	-- Blind Hunter (Bat, 27, Razorfen Kraul (Dungeon))
 				4346,	-- Noxious Flayer (Wind Serpent, 35-36, Dustwallow Marsh)
@@ -612,10 +612,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 23147,	-- Dive [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 41,
-			["crs"] = {
+			recipeID = 23147,	-- Dive [Rank 2]
+			rank = 2,
+			lvl = 41,
+			crs = {
 				5307,	-- Vale Screecher (Wind Serpent, 41-43, Feralas)
 				5428,	-- Roc (Carrion Bird, 42-43, Tanaris)
 				5429,	-- Fire Roc (Carrion Bird, 43-45, Tanaris)
@@ -627,10 +627,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 23148,	-- Dive [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 50,
-			["crs"] = {
+			recipeID = 23148,	-- Dive [Rank 3]
+			rank = 3,
+			lvl = 50,
+			crs = {
 				8927,	-- Dark Screecher (Bat, 50-52, Blackrock Depths)
 				1809,	-- Carrion Vulture (Carrion Bird, 50-52, Western Plaguelands)
 				7099,	-- Ironbeak Hunter (Owl, 50-51, Felwood)
@@ -654,19 +654,19 @@ profession(261, {	-- Beast Training
 		},
 		
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 34890,	-- Fire Breath [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 1,
-			["crs"] = {
+			recipeID = 34890,	-- Fire Breath [Rank 1]
+			rank = 1,
+			lvl = 1,
+			crs = {
 				15649,	-- Feral Dragonhawk Hatchling (Dragonhawk, 5-6, Eversong Woods)
 				15650,	-- Crazed Dragonhawk (Dragonhawk, 7-8, Eversong Woods)
 			},
 		}),
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 35324,	-- Fire Breath [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 60,
-			["crs"] = {
+			recipeID = 35324,	-- Fire Breath [Rank 2]
+			rank = 2,
+			lvl = 60,
+			crs = {
 				27946,	-- Silvermoon Dragonhawk (Dragonhawk, 65, Eversong Woods; Ghostlands)
 				20502,	-- Eclipsion Dragonhawk (Dragonhawk, 67-68, Shadowmoon Valley)
 				18155,	-- Bloodfalcon (Dragonhawk, 69-70, The Botanica (Dungeon))
@@ -675,63 +675,63 @@ profession(261, {	-- Beast Training
 		}),
 
 		{
-			["recipeID"] = 23992,	-- Fire Resistance [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 20,
+			recipeID = 23992,	-- Fire Resistance [Rank 1]
+			rank = 1,
+			lvl = 20,
 		},
 		{
-			["recipeID"] = 24439,	-- Fire Resistance [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 30,
+			recipeID = 24439,	-- Fire Resistance [Rank 2]
+			rank = 2,
+			lvl = 30,
 		},
 		{
-			["recipeID"] = 24444,	-- Fire Resistance [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 40,
+			recipeID = 24444,	-- Fire Resistance [Rank 3]
+			rank = 3,
+			lvl = 40,
 		},
 		{
-			["recipeID"] = 24445,	-- Fire Resistance [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 50,
+			recipeID = 24445,	-- Fire Resistance [Rank 4]
+			rank = 4,
+			lvl = 50,
 		},
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 27351,	-- Fire Resistance [Rank 5]
-			["cr"] = 21864,	-- Scorchshell Pincer (Scorpid, 68-69, Shadowmoon Valley)
-			["rank"] = 5,
-			["lvl"] = 60,
+			recipeID = 27351,	-- Fire Resistance [Rank 5]
+			cr = 21864,	-- Scorchshell Pincer (Scorpid, 68-69, Shadowmoon Valley)
+			rank = 5,
+			lvl = 60,
 		}),
 		
 		{
-			["recipeID"] = 24446,	-- Frost Resistance [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 20,
+			recipeID = 24446,	-- Frost Resistance [Rank 1]
+			rank = 1,
+			lvl = 20,
 		},
 		{
-			["recipeID"] = 24447,	-- Frost Resistance [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 30,
+			recipeID = 24447,	-- Frost Resistance [Rank 2]
+			rank = 2,
+			lvl = 30,
 		},
 		{
-			["recipeID"] = 24448,	-- Frost Resistance [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 40,
+			recipeID = 24448,	-- Frost Resistance [Rank 3]
+			rank = 3,
+			lvl = 40,
 		},
 		{
-			["recipeID"] = 24449,	-- Frost Resistance [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 50,
+			recipeID = 24449,	-- Frost Resistance [Rank 4]
+			rank = 4,
+			lvl = 50,
 		},
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 27352,	-- Frost Resistance [Rank 5]
-			["rank"] = 5,
-			["lvl"] = 60,
+			recipeID = 27352,	-- Frost Resistance [Rank 5]
+			rank = 5,
+			lvl = 60,
 		}),
 
 		{
-			["recipeID"] = 24604,	-- Furious Howl [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 10,
-			["crs"] = {
+			recipeID = 24604,	-- Furious Howl [Rank 1]
+			rank = 1,
+			lvl = 10,
+			crs = {
 				-- #if BEFORE TBC
 				2960,	-- Prairie Wolf Alpha (Wolf, 9-10, Mulgore)
 				-- #endif
@@ -741,10 +741,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24605,	-- Furious Howl [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 25,
-			["crs"] = {
+			recipeID = 24605,	-- Furious Howl [Rank 2]
+			rank = 2,
+			lvl = 25,
+			crs = {
 				1258,	-- Black Ravager Mastiff (Wolf, 25-26, Duskwood)
 				3825,	-- Ghostpaw Alpha (Wolf, 27-28, Ashenvale)
 				2729,	-- Elder Crag Coyote (Wolf, 39-40, Badlands)
@@ -755,10 +755,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24603,	-- Furious Howl [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 40,
-			["crs"] = {
+			recipeID = 24603,	-- Furious Howl [Rank 3]
+			rank = 3,
+			lvl = 40,
+			crs = {
 				5286,	-- Longtooth Runner (Wolf, 40-41, Feralas)
 				5356,	-- Snarler (Wolf, 42, Feralas)
 				-- #if AFTER TBC
@@ -770,10 +770,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24597,	-- Furious Howl [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 56,
-			["crs"] = {
+			recipeID = 24597,	-- Furious Howl [Rank 4]
+			rank = 4,
+			lvl = 56,
+			crs = {
 				9696,	-- Bloodaxe Worg (Wolf, 56-57, Blackrock Spire)
 				-- #if AFTER TBC
 				18476,	-- Timber Worg (Wolf, 62-63, Terokkar Forest)
@@ -786,10 +786,10 @@ profession(261, {	-- Beast Training
 		},
 		
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 35299,	-- Gore [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 1,
-			["crs"] = {
+			recipeID = 35299,	-- Gore [Rank 1]
+			rank = 1,
+			lvl = 1,
+			crs = {
 				1985,	-- Thistle Boar (Boar, 2-3, Teldrassil)
 				2966,	-- Battleboar (Boar, 3-4, Mulgore)
 				2954,	-- Bristleback Battleboar (Boar, 4-5, Mulgore)
@@ -799,10 +799,10 @@ profession(261, {	-- Beast Training
 			},
 		}),
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 35300,	-- Gore [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 8,
-			["crs"] = {
+			recipeID = 35300,	-- Gore [Rank 2]
+			rank = 2,
+			lvl = 8,
+			crs = {
 				3100,	-- Elder Mottled Boar (Boar, 8-9, Durotar)
 				17199,	-- Ravager Specimen (Ravager, 9-10, Azuremyst Isle)
 				3225,	-- Corrupted Mottled Boar (Boar, 10-11, Durotar)
@@ -811,50 +811,50 @@ profession(261, {	-- Beast Training
 			},
 		}),
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 35302,	-- Gore [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 16,
-			["crs"] = {
+			recipeID = 35302,	-- Gore [Rank 3]
+			rank = 3,
+			lvl = 16,
+			crs = {
 				17527,	-- Enraged Ravager (Ravager, 16-17, Bloodmyst Isle)
 				1192,	-- Elder Mountain Boar (Boar, 16-17, Loch Modan)
 				547,	-- Great Goretusk (Boar, 16-17, Redridge Mountains; Westfall)
 			},
 		}),
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 35303,	-- Gore [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 24,
-			["crs"] = {
+			recipeID = 35303,	-- Gore [Rank 4]
+			rank = 4,
+			lvl = 24,
+			crs = {
 				345,	-- Bellygrub (Boar, 24, Redridge Mountains)
 			},
 		}),
 		-- #if AFTER TBC
 		applyclassicphase(TBC_PHASE_ONE, {	-- No known training sources.
-			["recipeID"] = 35304,	-- Gore [Rank 5]
-			["timeline"] = { CREATED_2_0_1 },
-			["rank"] = 5,
-			["lvl"] = 32,
+			recipeID = 35304,	-- Gore [Rank 5]
+			timeline = { CREATED_2_0_1 },
+			rank = 5,
+			lvl = 32,
 		}),
 		applyclassicphase(TBC_PHASE_ONE, {	-- No known training sources.
-			["recipeID"] = 35305,	-- Gore [Rank 6]
-			["timeline"] = { CREATED_2_0_1 },
-			["rank"] = 6,
-			["lvl"] = 40,
+			recipeID = 35305,	-- Gore [Rank 6]
+			timeline = { CREATED_2_0_1 },
+			rank = 6,
+			lvl = 40,
 		}),
 		-- #endif
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 35306,	-- Gore [Rank 7]
-			["rank"] = 7,
-			["lvl"] = 48,
-			["crs"] = {
+			recipeID = 35306,	-- Gore [Rank 7]
+			rank = 7,
+			lvl = 48,
+			crs = {
 				5992,	-- Ashmane Boar (Boar, 48-49, Blasted Lands)
 			},
 		}),
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 35307,	-- Gore [Rank 8]
-			["rank"] = 8,
-			["lvl"] = 56,
-			["crs"] = {
+			recipeID = 35307,	-- Gore [Rank 8]
+			rank = 8,
+			lvl = 56,
+			crs = {
 				16117,	-- Plagued Swine (Boar, 60, Eastern Plaguelands)
 				19189,	-- Quillfang Skitterer (Ravager, 61-62, Hellfire Peninsula)
 				19349,	-- Thornfang Ravager (Ravager, 62-63, Hellfire Peninsula)
@@ -862,129 +862,129 @@ profession(261, {	-- Beast Training
 			},
 		}),
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 35308,	-- Gore [Rank 9]
-			["rank"] = 9,
-			["lvl"] = 63,
-			["crs"] = {
+			recipeID = 35308,	-- Gore [Rank 9]
+			rank = 9,
+			lvl = 63,
+			crs = {
 				22123,	-- Rip-Blade Ravager (Ravager, 63, Blade's Edge Mountains)
 			},
 		}),
 
 		{
-			["recipeID"] = 4187,	-- Great Stamina [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 10,
+			recipeID = 4187,	-- Great Stamina [Rank 1]
+			rank = 1,
+			lvl = 10,
 		},
 		{
-			["recipeID"] = 4188,	-- Great Stamina [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 12,
+			recipeID = 4188,	-- Great Stamina [Rank 2]
+			rank = 2,
+			lvl = 12,
 		},
 		{
-			["recipeID"] = 4189,	-- Great Stamina [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 18,
+			recipeID = 4189,	-- Great Stamina [Rank 3]
+			rank = 3,
+			lvl = 18,
 		},
 		{
-			["recipeID"] = 4190,	-- Great Stamina [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 24,
+			recipeID = 4190,	-- Great Stamina [Rank 4]
+			rank = 4,
+			lvl = 24,
 		},
 		{
-			["recipeID"] = 4191,	-- Great Stamina [Rank 5]
-			["rank"] = 5,
-			["lvl"] = 30,
+			recipeID = 4191,	-- Great Stamina [Rank 5]
+			rank = 5,
+			lvl = 30,
 		},
 		{
-			["recipeID"] = 4192,	-- Great Stamina [Rank 6]
-			["rank"] = 6,
-			["lvl"] = 36,
+			recipeID = 4192,	-- Great Stamina [Rank 6]
+			rank = 6,
+			lvl = 36,
 		},
 		{
-			["recipeID"] = 4193,	-- Great Stamina [Rank 7]
-			["rank"] = 7,
-			["lvl"] = 42,
+			recipeID = 4193,	-- Great Stamina [Rank 7]
+			rank = 7,
+			lvl = 42,
 		},
 		{
-			["recipeID"] = 4194,	-- Great Stamina [Rank 8]
-			["rank"] = 8,
-			["lvl"] = 48,
+			recipeID = 4194,	-- Great Stamina [Rank 8]
+			rank = 8,
+			lvl = 48,
 		},
 		{
-			["recipeID"] = 5041,	-- Great Stamina [Rank 9]
-			["rank"] = 9,
-			["lvl"] = 54,
+			recipeID = 5041,	-- Great Stamina [Rank 9]
+			rank = 9,
+			lvl = 54,
 		},
 		{
-			["recipeID"] = 5042,	-- Great Stamina [Rank 10]
-			["rank"] = 10,
-			["lvl"] = 60,
+			recipeID = 5042,	-- Great Stamina [Rank 10]
+			rank = 10,
+			lvl = 60,
 		},
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 27364,	-- Great Stamina [Rank 11]
-			["rank"] = 11,
-			["lvl"] = 70,
+			recipeID = 27364,	-- Great Stamina [Rank 11]
+			rank = 11,
+			lvl = 70,
 		}),
 		
 		{
-			["recipeID"] = 2649,	-- Growl [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 10,
+			recipeID = 2649,	-- Growl [Rank 1]
+			rank = 1,
+			lvl = 10,
 		},
 		{
-			["recipeID"] = 14916,	-- Growl [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 10,
+			recipeID = 14916,	-- Growl [Rank 2]
+			rank = 2,
+			lvl = 10,
 		},
 		{
-			["recipeID"] = 14917,	-- Growl [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 20,
+			recipeID = 14917,	-- Growl [Rank 3]
+			rank = 3,
+			lvl = 20,
 		},
 		{
-			["recipeID"] = 14918,	-- Growl [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 30,
+			recipeID = 14918,	-- Growl [Rank 4]
+			rank = 4,
+			lvl = 30,
 		},
 		{
-			["recipeID"] = 14919,	-- Growl [Rank 5]
-			["rank"] = 5,
-			["lvl"] = 40,
+			recipeID = 14919,	-- Growl [Rank 5]
+			rank = 5,
+			lvl = 40,
 		},
 		{
-			["recipeID"] = 14920,	-- Growl [Rank 6]
-			["rank"] = 6,
-			["lvl"] = 50,
+			recipeID = 14920,	-- Growl [Rank 6]
+			rank = 6,
+			lvl = 50,
 		},
 		{
-			["recipeID"] = 14921,	-- Growl [Rank 7]
-			["rank"] = 7,
-			["lvl"] = 60,
+			recipeID = 14921,	-- Growl [Rank 7]
+			rank = 7,
+			lvl = 60,
 		},
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 27047,	-- Growl [Rank 8]
-			["rank"] = 8,
-			["lvl"] = 70,
+			recipeID = 27047,	-- Growl [Rank 8]
+			rank = 8,
+			lvl = 70,
 		}),
 		
 		{
-			["recipeID"] = 24844,	-- Lightning Breath [Rank 1]
-			["timeline"] = { CREATED_1_0_1, ADDED_2_0_1 },
+			recipeID = 24844,	-- Lightning Breath [Rank 1]
+			timeline = { CREATED_1_0_1, ADDED_2_0_1 },
 			-- #if AFTER TBC
-			["crs"] = {
+			crs = {
 				20797,	-- Deviate Coiler Hatchling (Wind Serpent, 11, The Barrens)
 			},
 			-- #else
 			-- No known training sources. :(
 			-- #endif
-			["rank"] = 1,
-			["lvl"] = 10,
+			rank = 1,
+			lvl = 10,
 		},
 		{
-			["recipeID"] = 25008,	-- Lightning Breath [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 15,
-			["crs"] = {
+			recipeID = 25008,	-- Lightning Breath [Rank 2]
+			rank = 2,
+			lvl = 15,
+			crs = {
 				3630,	-- Deviate Coiler (Wind Serpent, 15-16, The Wailing Caverns)
 				3631,	-- Deviate Stinglash (Wind Serpent, 16-17, The Wailing Caverns)
 				3247,	-- Thunderhawk Hatchling (Wind Serpent, 18-20, The Barrens)
@@ -995,10 +995,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 25009,	-- Lightning Breath [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 25,
-			["crs"] = {
+			recipeID = 25009,	-- Lightning Breath [Rank 3]
+			rank = 3,
+			lvl = 25,
+			crs = {
 				4117,	-- Cloud Serpent (Wind Serpent, 25-26, Thousand Needles)
 				3472,	-- Washte Pawne (Wind Serpent, 25, The Barrens)
 				4118,	-- Venomous Cloud Serpent (Wind Serpent, 26-28, Thousand Needles)
@@ -1006,10 +1006,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 25010,	-- Lightning Breath [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 41,
-			["crs"] = {
+			recipeID = 25010,	-- Lightning Breath [Rank 4]
+			rank = 4,
+			lvl = 41,
+			crs = {
 				-- #if AFTER TBC
 				4347,	-- Noxious Reaver (Wind Serpent, 37-38, Dustwallow Marsh)
 				4348,	-- Noxious Shredder (Wind Serpent, 38-39, Dustwallow Marsh)
@@ -1019,10 +1019,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 25011,	-- Lightning Breath [Rank 5]
-			["rank"] = 5,
-			["lvl"] = 49,
-			["crs"] = {
+			recipeID = 25011,	-- Lightning Breath [Rank 5]
+			rank = 5,
+			lvl = 49,
+			crs = {
 				8336,	-- Hakkari Sapper (Wind Serpent, 49-50, The Temple of Atal'Hakkar)
 				5291,	-- Hakkari Frostwing (Wind Serpent, 49-50, The Temple of Atal'Hakkar)
 				5349,	-- Arash-ethis (Wind Serpent, 49, Feralas)
@@ -1030,10 +1030,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		applyclassicphase(PHASE_FOUR, {
-			["recipeID"] = 25012,	-- Lightning Breath [Rank 6]
-			["rank"] = 6,
-			["lvl"] = 60,
-			["crs"] = {
+			recipeID = 25012,	-- Lightning Breath [Rank 6]
+			rank = 6,
+			lvl = 60,
+			crs = {
 				11357,	-- Son of Hakkar (Wind Serpent, 60, Zul'Gurub)
 				-- #if AFTER TBC
 				11359,	-- Soulflayer (Wind Serpent, 61, Zul'Gurub (Raid))
@@ -1046,117 +1046,117 @@ profession(261, {	-- Beast Training
 		}),
 
 		{
-			["recipeID"] = 24545,	-- Natural Armor [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 10,
+			recipeID = 24545,	-- Natural Armor [Rank 1]
+			rank = 1,
+			lvl = 10,
 		},
 		{
-			["recipeID"] = 24549,	-- Natural Armor [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 12,
+			recipeID = 24549,	-- Natural Armor [Rank 2]
+			rank = 2,
+			lvl = 12,
 		},
 		{
-			["recipeID"] = 24550,	-- Natural Armor [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 18,
+			recipeID = 24550,	-- Natural Armor [Rank 3]
+			rank = 3,
+			lvl = 18,
 		},
 		{
-			["recipeID"] = 24551,	-- Natural Armor [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 24,
+			recipeID = 24551,	-- Natural Armor [Rank 4]
+			rank = 4,
+			lvl = 24,
 		},
 		{
-			["recipeID"] = 24552,	-- Natural Armor [Rank 5]
-			["rank"] = 5,
-			["lvl"] = 30,
+			recipeID = 24552,	-- Natural Armor [Rank 5]
+			rank = 5,
+			lvl = 30,
 		},
 		{
-			["recipeID"] = 24553,	-- Natural Armor [Rank 6]
-			["rank"] = 6,
-			["lvl"] = 36,
+			recipeID = 24553,	-- Natural Armor [Rank 6]
+			rank = 6,
+			lvl = 36,
 		},
 		{
-			["recipeID"] = 24554,	-- Natural Armor [Rank 7]
-			["rank"] = 7,
-			["lvl"] = 42,
+			recipeID = 24554,	-- Natural Armor [Rank 7]
+			rank = 7,
+			lvl = 42,
 		},
 		{
-			["recipeID"] = 24555,	-- Natural Armor [Rank 8]
-			["rank"] = 8,
-			["lvl"] = 48,
+			recipeID = 24555,	-- Natural Armor [Rank 8]
+			rank = 8,
+			lvl = 48,
 		},
 		{
-			["recipeID"] = 24629,	-- Natural Armor [Rank 9]
-			["rank"] = 9,
-			["lvl"] = 54,
+			recipeID = 24629,	-- Natural Armor [Rank 9]
+			rank = 9,
+			lvl = 54,
 		},
 		{
-			["recipeID"] = 24630,	-- Natural Armor [Rank 10]
+			recipeID = 24630,	-- Natural Armor [Rank 10]
 			-- #if AFTER TBC
-			["crs"] = {
+			crs = {
 				22100,	-- Scorpid Bonecrawler (Scorpid, 64-65, Terokkar Forest)
 			},
 			-- #endif
-			["rank"] = 10,
-			["lvl"] = 60,
+			rank = 10,
+			lvl = 60,
 		},
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 27362,	-- Natural Armor [Rank 11]
-			["rank"] = 11,
-			["lvl"] = 70,
+			recipeID = 27362,	-- Natural Armor [Rank 11]
+			rank = 11,
+			lvl = 70,
 		}),
 		
 		{
-			["recipeID"] = 24492,	-- Nature Resistance [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 20,
+			recipeID = 24492,	-- Nature Resistance [Rank 1]
+			rank = 1,
+			lvl = 20,
 		},
 		{
-			["recipeID"] = 24502,	-- Nature Resistance [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 30,
+			recipeID = 24502,	-- Nature Resistance [Rank 2]
+			rank = 2,
+			lvl = 30,
 		},
 		{
-			["recipeID"] = 24503,	-- Nature Resistance [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 40,
+			recipeID = 24503,	-- Nature Resistance [Rank 3]
+			rank = 3,
+			lvl = 40,
 		},
 		{
-			["recipeID"] = 24504,	-- Nature Resistance [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 50,
+			recipeID = 24504,	-- Nature Resistance [Rank 4]
+			rank = 4,
+			lvl = 50,
 		},
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 27354,	-- Nature Resistance [Rank 5]
-			["rank"] = 5,
-			["lvl"] = 60,
+			recipeID = 27354,	-- Nature Resistance [Rank 5]
+			rank = 5,
+			lvl = 60,
 		}),
 		
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 35388,	-- Poison Spit [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 15,
-			["crs"] = {
+			recipeID = 35388,	-- Poison Spit [Rank 1]
+			rank = 1,
+			lvl = 15,
+			crs = {
 				5048,	-- Deviate Adder (Serpent, 18-19, Wailing Caverns (Dungeon))
 				5755,	-- Deviate Viper (Serpent, 19-20, Wailing Caverns (Dungeon))
 				5762,	-- Deviate Moccasin (Serpent, 20-21, Wailing Caverns (Dungeon))
 			},
 		}),
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 35390,	-- Poison Spit [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 45,
-			["crs"] = {
+			recipeID = 35390,	-- Poison Spit [Rank 2]
+			rank = 2,
+			lvl = 45,
+			crs = {
 				7268,	-- Sandfury Guardian (Serpent, 45-46, Zul'Farrak (Dungeon))
 				5224,	-- Murk Slitherer (Serpent, 45-46, Swamp of Sorrows)
 				5225,	-- Murk Spitter (Serpent, 46-47, Swamp of Sorrows)
 			},
 		}),
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 35391,	-- Poison Spit [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 60,
-			["crs"] = {
+			recipeID = 35391,	-- Poison Spit [Rank 3]
+			rank = 3,
+			lvl = 60,
+			crs = {
 				11373,	-- Razzashi Cobra (Serpent, 60, Zul'Gurub (Raid))
 				11372,	-- Razzashi Adder (Serpent, 60, Zul'Gurub (Raid))
 				19784,	-- Coilskar Cobra (Serpent, 68, Shadowmoon Valley)
@@ -1164,10 +1164,10 @@ profession(261, {	-- Beast Training
 		}),
 		
 		{
-			["recipeID"] = 24450,	-- Prowl [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 32,
-			["crs"] = {
+			recipeID = 24450,	-- Prowl [Rank 1]
+			rank = 1,
+			lvl = 32,
+			crs = {
 				2406,	-- Mountain Lion (Cat, 32-33, Alterac Mountains)
 				2731,	-- Ridge Stalker (Cat, 36-37, Badlands)
 				684,	-- Shadowmaw Panther (Cat, 37-38, Stranglethorn Vale)
@@ -1175,19 +1175,19 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24452,	-- Prowl [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 40,
-			["crs"] = {
+			recipeID = 24452,	-- Prowl [Rank 2]
+			rank = 2,
+			lvl = 40,
+			crs = {
 				2734,	-- Ridge Stalker Patriarch (Cat, 40-41, Badlands)
 				1713,	-- Elder Shadowmaw Panther (Cat, 42-43, Stranglethorn Vale)
 			},
 		},
 		{
-			["recipeID"] = 24453,	-- Prowl [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 50,
-			["crs"] = {
+			recipeID = 24453,	-- Prowl [Rank 3]
+			rank = 3,
+			lvl = 50,
+			crs = {
 				2522,	-- Jaguero Stalker (Cat, 50, Stranglethorn Vale)
 				7432,	-- Frostsaber Stalker (Cat, 59-60, Winterspring)
 				-- #if AFTER TBC
@@ -1197,10 +1197,10 @@ profession(261, {	-- Beast Training
 		},
 		
 		{
-			["recipeID"] = 24640,	-- Scorpid Poison [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 10,
-			["crs"] = {
+			recipeID = 24640,	-- Scorpid Poison [Rank 1]
+			rank = 1,
+			lvl = 10,
+			crs = {
 				3127,	-- Venomtail Scorpid (Scorpid, 9-10, Durotar)
 				3226,	-- Corrupted Scorpid (Scorpid, 10-11, Durotar)
 				5823,	-- Death Flayer (Scorpid, 11, Durotar)
@@ -1209,10 +1209,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24583,	-- Scorpid Poison [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 30,
-			["crs"] = {
+			recipeID = 24583,	-- Scorpid Poison [Rank 2]
+			rank = 2,
+			lvl = 30,
+			crs = {
 				4696,	-- Scorpashi Snapper (Scorpid, 30-31, Desolace)
 				4140,	-- Scorpid Reaver (Scorpid, 31-32, Thousand Needles)
 				4139,	-- Scorpid Terror (Scorpid, 33-34, Thousand Needles)
@@ -1225,10 +1225,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24586,	-- Scorpid Poison [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 40,
-			["crs"] = {
+			recipeID = 24586,	-- Scorpid Poison [Rank 3]
+			rank = 3,
+			lvl = 40,
+			crs = {
 				5422,	-- Scorpid Hunter (Scorpid, 40-41, Tanaris)
 				7405,	-- Deadly Cleft Scorpid (Scorpid, 42-43, Uldaman)
 				5423,	-- Scorpid Tail Lasher (Scorpid, 43-44, Tanaris)
@@ -1244,10 +1244,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24587,	-- Scorpid Poison [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 56,
-			["crs"] = {
+			recipeID = 24587,	-- Scorpid Poison [Rank 4]
+			rank = 4,
+			lvl = 56,
+			crs = {
 				14476,	-- Krellack (Scorpid, 56, Silithus)
 				11736,	-- Stonelash Pincer (Scorpid, 56-57, Silithus)
 				9698,	-- Firetail Scorpid (Scorpid, 56-57, Burning Steppes)
@@ -1255,48 +1255,48 @@ profession(261, {	-- Beast Training
 			},
 		},
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 27361,	-- Scorpid Poison [Rank 5]
-			["rank"] = 5,
-			["lvl"] = 64,
-			["crs"] = {
+			recipeID = 27361,	-- Scorpid Poison [Rank 5]
+			rank = 5,
+			lvl = 64,
+			crs = {
 				22100,	-- Scorpid Bonecrawler (Scorpid, 64-65, Terokkar Forest)
 				21864,	-- Scorchshell Pincer (Scorpid, 68-69, Shadowmoon Valley)
 			},
 		}),
 		
 		{
-			["recipeID"] = 24423,	-- Screech [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 16,
-			["crs"] = {
+			recipeID = 24423,	-- Screech [Rank 1]
+			rank = 1,
+			lvl = 16,
+			crs = {
 				154,	-- Greater Fleshripper (Carrion Bird, 16-17, Westfall)
 			},
 		},
 		{
-			["recipeID"] = 24577,	-- Screech [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 32,
-			["crs"] = {
+			recipeID = 24577,	-- Screech [Rank 2]
+			rank = 2,
+			lvl = 32,
+			crs = {
 				4158,	-- Salt Flats Vulture (Carrion Bird, 32-34, Thousand Needles)
 				4861,	-- Shrike Bat (Bat, 38-39, Uldaman)
 				4694,	-- Dread Ripper (Carrion Bird, 39-40, Desolace)
 			},
 		},
 		{
-			["recipeID"] = 24578,	-- Screech [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 48,
-			["crs"] = {
+			recipeID = 24578,	-- Screech [Rank 3]
+			rank = 3,
+			lvl = 48,
+			crs = {
 				7097,	-- Ironbeak Owl (Owl, 48-49, Felwood)
 				1809,	-- Carrion Vulture (Carrion Bird, 50-52, Western Plaguelands)
 				8927,	-- Dark Screecher (Bat, 50-52, Blackrock Depths)
 			},
 		},
 		{
-			["recipeID"] = 24579,	-- Screech [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 56,
-			["crs"] = {
+			recipeID = 24579,	-- Screech [Rank 4]
+			rank = 4,
+			lvl = 56,
+			crs = {
 				8602,	-- Monstrous Plaguebat (Bat, 56-58, Eastern Plaguelands)
 				7456,	-- Winterspring Screecher (Owl, 57-59, Winterspring)
 				-- #if AFTER TBC
@@ -1305,10 +1305,10 @@ profession(261, {	-- Beast Training
 			},
 		},
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 27349,	-- Screech [Rank 5]
-			["rank"] = 5,
-			["lvl"] = 64,
-			["crs"] = {
+			recipeID = 27349,	-- Screech [Rank 5]
+			rank = 5,
+			lvl = 64,
+			crs = {
 				17129,	-- Greater Windroc (Owl, 66-67, Nagrand)
 				19055,	-- Windroc Matriarch (Owl, 66, Nagrand)
 				18257,	-- Gutripper (Owl, 67, Nagrand)
@@ -1317,36 +1317,36 @@ profession(261, {	-- Beast Training
 		}),
 		
 		{
-			["recipeID"] = 24488,	-- Shadow Resistance [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 20,
+			recipeID = 24488,	-- Shadow Resistance [Rank 1]
+			rank = 1,
+			lvl = 20,
 		},
 		{
-			["recipeID"] = 24505,	-- Shadow Resistance [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 30,
+			recipeID = 24505,	-- Shadow Resistance [Rank 2]
+			rank = 2,
+			lvl = 30,
 		},
 		{
-			["recipeID"] = 24506,	-- Shadow Resistance [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 40,
+			recipeID = 24506,	-- Shadow Resistance [Rank 3]
+			rank = 3,
+			lvl = 40,
 		},
 		{
-			["recipeID"] = 24507,	-- Shadow Resistance [Rank 4]
-			["rank"] = 4,
-			["lvl"] = 50,
+			recipeID = 24507,	-- Shadow Resistance [Rank 4]
+			rank = 4,
+			lvl = 50,
 		},
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 27353,	-- Shadow Resistance [Rank 5]
-			["rank"] = 5,
-			["lvl"] = 60,
+			recipeID = 27353,	-- Shadow Resistance [Rank 5]
+			rank = 5,
+			lvl = 60,
 		}),
 		
 		{
-			["recipeID"] = 26064,	-- Shell Shield [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 20,
-			["crs"] = {
+			recipeID = 26064,	-- Shell Shield [Rank 1]
+			rank = 1,
+			lvl = 20,
+			crs = {
 				3653,	-- Kresh (Turtle, 20, The Wailing Caverns)
 				4824,	-- Aku'mai Fisher (Turtle, 23-24, Blackfathom Deeps)
 				4887,	-- Ghamoo-ra (Turtle, 25, Blackfathom Deeps)
@@ -1360,51 +1360,51 @@ profession(261, {	-- Beast Training
 		},
 		
 		{
-			["recipeID"] = 26090,	-- Thunderstomp [Rank 1]
-			["rank"] = 1,
-			["lvl"] = 32,
-			["crs"] = {
+			recipeID = 26090,	-- Thunderstomp [Rank 1]
+			rank = 1,
+			lvl = 32,
+			crs = {
 				1108,	-- Mistvale Gorilla (Gorilla, 32-33, Stranglethorn Vale)
 				1114,	-- Jungle Thunderer (Gorilla, 37-38, Stranglethorn Vale)
 			},
 		},
 		{
-			["recipeID"] = 26187,	-- Thunderstomp [Rank 2]
-			["rank"] = 2,
-			["lvl"] = 40,
-			["crs"] = {
+			recipeID = 26187,	-- Thunderstomp [Rank 2]
+			rank = 2,
+			lvl = 40,
+			crs = {
 				1557,	-- Elder Mistvale Gorilla (Gorilla, 40-41, Stranglethorn Vale)
 				5262,	-- Groddoc Thunderer (Gorilla, 49-50, Feralas)
 			},
 		},
 		{
-			["recipeID"] = 26188,	-- Thunderstomp [Rank 3]
-			["rank"] = 3,
-			["lvl"] = 52,
-			["crs"] = {
+			recipeID = 26188,	-- Thunderstomp [Rank 3]
+			rank = 3,
+			lvl = 52,
+			crs = {
 				6516,	-- Un'Goro Thunderer (Gorilla, 52-53, Un'Goro Crater)
 				9622,	-- U'cha (Gorilla, 55, Un'Goro Crater)
 			},
 		},
 		-- #if AFTER TBC
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 27063,	-- Thunderstomp [Rank 4]
-			["description"] = "No known sources, contact Crieve if you find one!",
-			["timeline"] = { CREATED_2_0_1 },
-			["rank"] = 4,
-			["lvl"] = 60,
+			recipeID = 27063,	-- Thunderstomp [Rank 4]
+			description = "No known sources, contact Crieve if you find one!",
+			timeline = { CREATED_2_0_1 },
+			rank = 4,
+			lvl = 60,
 		}),
 		-- #endif
 		
 		applyclassicphase(TBC_PHASE_ONE, {
-			["recipeID"] = 35348,	-- Warp
-			["crs"] = {
+			recipeID = 35348,	-- Warp
+			crs = {
 				18464,	-- Warp Stalker (Warp Stalker, 63-64, Terokkar Forest)
 				18465,	-- Warp Hunter (Warp Stalker, 64-65, Terokkar Forest)
 				18884,	-- Warp Chaser (Warp Stalker, 67-68, Netherstorm)
 				23219,	-- Blackwind Warp Chaser (Warp Stalker, 69-70, Terokkar Forest)
 			},
-			["lvl"] = 60,
+			lvl = 60,
 		}),
 	}),
 });

@@ -15,37 +15,37 @@ end]];
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(VALLEY_OF_THE_FOUR_WINDS, {
-			["lore"] = "Valley of the Four Winds is a tranquil plain of lush farmland, bordered by dense mysterious jungles along the south and impassible mountains to the north. The valley is considered the breadbasket of Pandaria, but the year's harvest is in jeopardy and a terrible malaise has overcome the pandaren that live along the coast. The valley is also the home of the legendary Stormstout Brewery, where Chen Stormstout and his niece Li Li hope to journey to discover the whereabouts of their long-lost ancestors.",
-			["icon"] = 618317,
-			["maps"] = { VALLEY_OF_THE_FOUR_WINDS_CAVERN_OF_ENDLESS_ECHOES },
-			["groups"] = {
+			lore = "Valley of the Four Winds is a tranquil plain of lush farmland, bordered by dense mysterious jungles along the south and impassible mountains to the north. The valley is considered the breadbasket of Pandaria, but the year's harvest is in jeopardy and a terrible malaise has overcome the pandaren that live along the coast. The valley is also the home of the legendary Stormstout Brewery, where Chen Stormstout and his niece Li Li hope to journey to discover the whereabouts of their long-lost ancestors.",
+			icon = 618317,
+			maps = { VALLEY_OF_THE_FOUR_WINDS_CAVERN_OF_ENDLESS_ECHOES },
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(6969),	-- Explore Valley of the Four Winds
 					ach(6301),	-- Rally the Valley
 				}),
 				battlepets({
 					pet(706, {	-- Bandicoon (PET!)
-						["description"] = "Can be found all over the zone.",
+						description = "Can be found all over the zone.",
 					}),
 					pet(707, {	-- Bandicoon Kit (PET!)
-						["description"] = "Respawns after some minutes as long as their Bandicoon parent is still alive. Can be found all over the zone, and common as secondary pets.",
+						description = "Respawns after some minutes as long as their Bandicoon parent is still alive. Can be found all over the zone, and common as secondary pets.",
 					}),
 					pet(708, {	-- Malayan Quillrat (PET!)
-						["description"] = "Can be found almost everywhere in Valley of the Four Winds.",
+						description = "Can be found almost everywhere in Valley of the Four Winds.",
 					}),
 					pet(709, {	-- Malayan Quillrat Pup (PET!)
-						["description"] = "Respawns after some minutes as long as their Malayan Quillrat parent is still alive. Can be found all over the zone, and common as secondary pets.",
+						description = "Respawns after some minutes as long as their Malayan Quillrat parent is still alive. Can be found all over the zone, and common as secondary pets.",
 					}),
 					pet(710, {	-- Marsh Fiddler (PET!)
-						["description"] = "Can be found all over The Heartland.",
-						["coord"] = { 41.6, 45.2, VALLEY_OF_THE_FOUR_WINDS },	-- The Heartland
+						description = "Can be found all over The Heartland.",
+						coord = { 41.6, 45.2, VALLEY_OF_THE_FOUR_WINDS },	-- The Heartland
 					}),
 					pet(677, {	-- Shy Bandicoon (PET!)
-						["description"] = "Can be found through Paoquan Hollow and the foothills south of Singing Marshes, but will never appear as secondary pets!",
-						["coord"] = { 17.8, 42.8, VALLEY_OF_THE_FOUR_WINDS },	-- Paoquan Hollow
+						description = "Can be found through Paoquan Hollow and the foothills south of Singing Marshes, but will never appear as secondary pets!",
+						coord = { 17.8, 42.8, VALLEY_OF_THE_FOUR_WINDS },	-- Paoquan Hollow
 					}),
 					pet(713, {	-- Softshell Snapling (PET!)
-						["description"] = "Can be found by bodies of water.",
+						description = "Can be found by bodies of water.",
 					}),
 				}),
 				explorationHeader({
@@ -91,38 +91,38 @@ root(ROOTS.Zones, {
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1052, {	-- Grassy Cline, Valley of the Four Winds
-						["cr"] = 62658,	-- Kim of the Mountain Winds <Flight Master>
-						["coord"] = { 70.8, 24.2, VALLEY_OF_THE_FOUR_WINDS },
+						cr = 62658,	-- Kim of the Mountain Winds <Flight Master>
+						coord = { 70.8, 24.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					fp(985, {	-- Halfhill, Valley of the Four Winds
-						["cr"] = 60231,	-- Wing Nga <Flight Master>
-						["coord"] = { 56.4, 50.2, VALLEY_OF_THE_FOUR_WINDS },
+						cr = 60231,	-- Wing Nga <Flight Master>
+						coord = { 56.4, 50.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					fp(984, {	-- Pang's Stead, Valley of the Four Winds
-						["cr"] = 60230,	-- Princeton <Balloon Boy>
-						["coord"] = { 84.6, 21.0, VALLEY_OF_THE_FOUR_WINDS },
+						cr = 60230,	-- Princeton <Balloon Boy>
+						coord = { 84.6, 21.0, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					fp(989, {	-- Stoneplow, Valley of the Four Winds
-						["cr"] = 58843,	-- "Dragonwing" Dan <Flight Master>
-						["coord"] = { 20.2, 58.6, VALLEY_OF_THE_FOUR_WINDS },
+						cr = 58843,	-- "Dragonwing" Dan <Flight Master>
+						coord = { 20.2, 58.6, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					fp(1115, {	-- The Lion's Redoubt, Dread Wastes
-						["cr"] = 65865,	-- Tiper Windman <Flight Master>
-						["coord"] = { 12.0, 32.8, VALLEY_OF_THE_FOUR_WINDS },
-						["races"] = ALLIANCE_ONLY,
+						cr = 65865,	-- Tiper Windman <Flight Master>
+						coord = { 12.0, 32.8, VALLEY_OF_THE_FOUR_WINDS },
+						races = ALLIANCE_ONLY,
 					}),
 				}),
 				petbattles({
 					n(66734, {	-- Farmer Nishi <Grand Master Pet Tamer>
-						["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
-						["timeline"] = { ADDED_5_0_4 },
-						["petBattleLvl"] = 25,
-						["groups"] = {
+						coord = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
+						timeline = { ADDED_5_0_4 },
+						petBattleLvl = 25,
+						groups = {
 							q(31955, {	-- Grand Master Nishi
-								["sourceAchievement"] = 6606,	-- Taming Pandaria
-								["timeline"] = { ADDED_5_0_4 },
-								["isDaily"] = true,
-								["groups"] = {
+								sourceAchievement = 6606,	-- Taming Pandaria
+								timeline = { ADDED_5_0_4 },
+								isDaily = true,
+								groups = {
 									i(89125),	-- Sack of Pet Supplies
 								},
 							}),
@@ -132,184 +132,184 @@ root(ROOTS.Zones, {
 				n(PROFESSIONS, {
 					prof(COOKING, {
 						n(58713, {	-- Anthea Ironpaw <Master of the Wok>
-							["coord"] = { 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-							["groups"] = WAY_OF_THE_WOK,
+							coord = { 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
+							groups = WAY_OF_THE_WOK,
 						}),
 						n(58717, {	-- Bobo Ironpaw <Master of the Brew>
-							["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-							["groups"] = WAY_OF_THE_BREW,
+							coord = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+							groups = WAY_OF_THE_BREW,
 						}),
 						n(58716, {	-- Jian Ironpaw <Master of the Oven>
-							["coord"] = { 53.2, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-							["groups"] = WAY_OF_THE_OVEN,
+							coord = { 53.2, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+							groups = WAY_OF_THE_OVEN,
 						}),
 						n(58712, {	-- Kol Ironpaw <Master of the Grill>
-							["coord"] = { 53.0, 51.4, VALLEY_OF_THE_FOUR_WINDS },
-							["groups"] = WAY_OF_THE_GRILL,
+							coord = { 53.0, 51.4, VALLEY_OF_THE_FOUR_WINDS },
+							groups = WAY_OF_THE_GRILL,
 						}),
 						n(58714, {	-- Mei Mei Ironpaw <Master of the Pot>
-							["coord"] = { 52.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-							["groups"] = WAY_OF_THE_POT,
+							coord = { 52.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+							groups = WAY_OF_THE_POT,
 						}),
 						n(64231, {	-- Sungshin Ironpaw <Guide to the Ways>
-							["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-							["groups"] = MOP_COOKING,
+							coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+							groups = MOP_COOKING,
 						}),
 						n(58715, {	-- Yan Ironpaw <Master of the Steamer>
-							["coord"] = { 52.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-							["groups"] = WAY_OF_THE_STEAMER,
+							coord = { 52.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+							groups = WAY_OF_THE_STEAMER,
 						}),
 					}),
 					prof(ENGINEERING, {
 						n(55143, {	-- Sally Fizzlefury <Engineering Trainer>
-							["coord"] = { 16.0, 83.0, VALLEY_OF_THE_FOUR_WINDS },
-							["groups"] = MOP_ENGINEERING
+							coord = { 16.0, 83.0, VALLEY_OF_THE_FOUR_WINDS },
+							groups = MOP_ENGINEERING
 						}),
 					}),
 					prof(FISHING, {
 						n(70398, {	-- Ben of the Booming Voice <Fishing Trainer>
-							["description"] = "Ben of the Booming Voice is a pandaren fishing trainer located on the bank of the Gilding Stream in the Valley of the Four Winds. When asked, he tells where fish are swarming in Pandaria that day. Wherever fish are swarming, there are a large number of fishing pools containing the type of fish Ben specifies.",
-							["coord"] = { 58.8, 47.0, VALLEY_OF_THE_FOUR_WINDS },
-							["timeline"] = { ADDED_5_2_0 },
+							description = "Ben of the Booming Voice is a pandaren fishing trainer located on the bank of the Gilding Stream in the Valley of the Four Winds. When asked, he tells where fish are swarming in Pandaria that day. Wherever fish are swarming, there are a large number of fishing pools containing the type of fish Ben specifies.",
+							coord = { 58.8, 47.0, VALLEY_OF_THE_FOUR_WINDS },
+							timeline = { ADDED_5_2_0 },
 						}),
 					}),
 					prof(HERBALISM, {
 						n(65877, {	-- Han Flowerbloom <Herbalism Trainer>
-							["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-							["groups"] = MOP_HERBALISM,
+							coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+							groups = MOP_HERBALISM,
 						}),
 					}),
 					prof(TAILORING, {
 						n(57405, {	-- Silkmaster Tsai <"The Tailor of Pandaria">
-							["coord"] = { 62.6, 59.6, VALLEY_OF_THE_FOUR_WINDS },
-							["groups"] = MOP_TAILORING,
+							coord = { 62.6, 59.6, VALLEY_OF_THE_FOUR_WINDS },
+							groups = MOP_TAILORING,
 						}),
 					}),
 				}),
 				n(QUESTS, {
 					prof(COOKING, {
-						["requireSkill"] = COOKING,
-						["groups"] = {
+						requireSkill = COOKING,
+						groups = {
 							q(30329, {	-- Cindergut Peppers
-								["qg"] = 58713,	-- Anthea Ironpaw
-								["coord"] = { 52.7, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-								["isDaily"] = true,
-								["groups"] = {
+								qg = 58713,	-- Anthea Ironpaw
+								coord = { 52.7, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+								isDaily = true,
+								groups = {
 									i(79864),	-- Cindergut Pepper (QI!)
 								},
 							}),
 							q(31486, {	-- Everything I Know About Cooking (A)
-								["qgs"] = {
+								qgs = {
 									56707,	-- Chin
 									62872,	-- Cranfur the Noodler
 								},
-								["coords"] = {
+								coords = {
 									{ 46.2, 45.4, THE_JADE_FOREST },	-- Chin
 									{ 53.5, 76.4, KRASARANG_WILDS },	-- Cranfur the Noodler
 								},
 								-- this had SQs listed, but it was available to me on an alliance character that had done 0 quests in jade forest, not even the intro, so i think it was an oversight.
-								["groups"] = {
+								groups = {
 									i(86392),	-- Letter to Sungshin Ironpaw (QI!)
 								},
 							}),
 							q(31279, {	-- Everything I Know About Cooking (H)
-								["qgs"] = {
+								qgs = {
 									62322,	-- Graceful Swan
 									59405,	-- Li Goldendraft
 									65528,	-- Nan Thunderfoot
 								},
-								["coords"] = {
+								coords = {
 									{ 48.1, 34.5, THE_JADE_FOREST },	-- Graceful Swan
 									{ 83.6, 20.2, VALLEY_OF_THE_FOUR_WINDS },	-- Nan Thunderfoot
 									{ 64.2, 61.3, KUN_LAI_SUMMIT },	-- Li Goldendraft
 								},
-								["groups"] = {
+								groups = {
 									i(86392),	-- Letter to Sungshin Ironpaw (QI!)
 								},
 							}),
 							q(30332, {	-- Fatty Goatsteak
-								["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-								["qg"] = 58712,	-- Kol Ironpaw
-								["coord"] = { 53.0, 51.3, VALLEY_OF_THE_FOUR_WINDS },
-								["isDaily"] = true,
-								["groups"] = {
+								sourceQuest = 30257,	-- Learn and Grow V: Halfhill Market
+								qg = 58712,	-- Kol Ironpaw
+								coord = { 53.0, 51.3, VALLEY_OF_THE_FOUR_WINDS },
+								isDaily = true,
+								groups = {
 									i(79867),	-- Fatty Goatsteak (QI!)
 								},
 							}),
 							q(33146, {	-- Noodle Time
-								["qg"] = 64231,	-- Sungshin Ironpaw
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-								["isDaily"] = true,
+								qg = 64231,	-- Sungshin Ironpaw
+								coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+								isDaily = true,
 							}),
 							q(33358, {	-- Noodle Time: Bonus
-								["qg"] = 64231,	-- Sungshin Ironpaw
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-								["isDaily"] = true,
+								qg = 64231,	-- Sungshin Ironpaw
+								coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+								isDaily = true,
 							}),
 							q(31535, {	-- Replenishing the Pantry
-								["sourceQuest"] = 31536,	-- Preserving Freshness
-								["qg"] = 64395,	-- Nam Ironpaw
-								["coord"] = { 53.5, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-								["repeatable"] = true,
-								["groups"] = {
+								sourceQuest = 31536,	-- Preserving Freshness
+								qg = 64395,	-- Nam Ironpaw
+								coord = { 53.5, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+								repeatable = true,
+								groups = {
 									i(87557),	-- Bundle of Groceries (QI!)
 								},
 							}),
 							q(30331, {	-- The Mile-High Grub
-								["qg"] = 58714,	-- Mei Mei Ironpaw
-								["coord"] = { 52.5, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-								["isDaily"] = true,
-								["groups"] = {
+								qg = 58714,	-- Mei Mei Ironpaw
+								coord = { 52.5, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+								isDaily = true,
+								groups = {
 									i(79895),	-- Master's Pot (QI!)
 									i(79894),	-- Mushan Tail Stew (QI!)
 								},
 							}),
 							q(30328, {	-- The Thousand-Year Dumpling
-								["qg"] = 58715,	-- Yan Ironpaw
-								["coord"] = { 52.6, 51.7, VALLEY_OF_THE_FOUR_WINDS },
-								["isDaily"] = true,
-								["groups"] = {
+								qg = 58715,	-- Yan Ironpaw
+								coord = { 52.6, 51.7, VALLEY_OF_THE_FOUR_WINDS },
+								isDaily = true,
+								groups = {
 									i(80133),	-- Preserved Vegetables (QI!)
 								},
 							}),
 							q(30330, {	-- The Truffle Shuffle
-								["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-								["qg"] = 58716,	-- Jian Ironpaw
-								["coord"] = { 53.4, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-								["isDaily"] = true,
-								["groups"] = {
+								sourceQuest = 30257,	-- Learn and Grow V: Halfhill Market
+								qg = 58716,	-- Jian Ironpaw
+								coord = { 53.4, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+								isDaily = true,
+								groups = {
 									i(79833),	-- Shadelight Truffle (QI!)
 									i(80127),	-- Shadelight Truffle Spores (QI!)
 								},
 							}),
 							q(31521, {	-- To Be a Master
-								["description"] = "Becomes available on reaching max Pandaria cooking, but you must master all 6 Pandaren cooking ways for this quest to be completed.",
-								["sourceAchievement"] = 7306,	-- Master of Pandaren Cooking
-								["qg"] = 64231,	-- Sungshin Ironpaw
-								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+								description = "Becomes available on reaching max Pandaria cooking, but you must master all 6 Pandaren cooking ways for this quest to be completed.",
+								sourceAchievement = 7306,	-- Master of Pandaren Cooking
+								qg = 64231,	-- Sungshin Ironpaw
+								coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 							}),
 						},
 					}),
 					q(30275, {	-- A Crocolisk Tale
-						["description"] = "Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",
-						["provider"] = { "i", 79238 },	-- Enormous Crocolisk Tail
-						["coord"] = { 57.7, 25.9, VALLEY_OF_THE_FOUR_WINDS },
-						["crs"] = {
+						description = "Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",
+						provider = { "i", 79238 },	-- Enormous Crocolisk Tail
+						coord = { 57.7, 25.9, VALLEY_OF_THE_FOUR_WINDS },
+						crs = {
 							58754,	-- Manglemaw
 							58755,	-- Manglemaw's Mother
 						},
-						["groups"] = {
+						groups = {
 							i(79237),	-- Enormous Crocolisk Tail (QI!)
 						},
 					}),
 					q(29918, {	-- A Lesson in Bravery
-						["sourceQuests"] = {
+						sourceQuests = {
 							29917,	-- Lupello
 							29916,	-- Piercing Talons and Slavering Jaws
 						},
-						["qg"] = 56312,	-- Shang Thunderfoot
-						["coord"] = { 78.2, 32.8, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						qg = 56312,	-- Shang Thunderfoot
+						coord = { 78.2, 32.8, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(75208),	-- Rancher's Lariat (QI!)
 							i(81824),	-- Hawk Feather Band
 							i(81825),	-- Lariat Loop
@@ -319,29 +319,29 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29915, {	-- A Neighbor's Duty
-						["sourceQuests"] = {
+						sourceQuests = {
 							29914,	-- Back to the Sty
 							29913,	-- The Meat They'll Eat
 						},
-						["qg"] = 56205,	-- Liang Thunderfoot
-						["coord"] = { 75.2, 24.1, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						qg = 56205,	-- Liang Thunderfoot
+						coord = { 75.2, 24.1, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(76100),	-- Wayward Lamb (QI!)
 						},
 					}),
 					q(29877, {	-- A Poor Grasp of the Basics
-						["sourceQuest"] = 29907,	-- Chen and Li Li
-						["qg"] = 56440,	-- Muno the Farmhand
-						["coord"] = { 82.7, 21.2, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29907,	-- Chen and Li Li
+						qg = 56440,	-- Muno the Farmhand
+						coord = { 82.7, 21.2, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(88371),	-- Watermelon Bomb
 						},
 					}),
 					q(29908, {	-- A Seemingly Endless Nuisance
-						["sourceQuest"] = 29907,	-- Chen and Li Li
-						["qg"] = 56204,	-- Pang Thunderfoot
-						["coord"] = { 83.7, 21.1, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29907,	-- Chen and Li Li
+						qg = 56204,	-- Pang Thunderfoot
+						coord = { 83.7, 21.1, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(81769),	-- Silkmaster's Satin Leggings
 							i(81770),	-- Sunsoaked Legguards
 							i(81771),	-- Huangtze Scale Leggings
@@ -354,10 +354,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29988, {	-- A Taste For Eggs
-						["sourceQuest"] = 29987,	-- Unyielding Fists: Trial of Wood
-						["qg"] = 56714,	-- Master Bruised Paw
-						["coord"] = { 18.3, 31.3, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29987,	-- Unyielding Fists: Trial of Wood
+						qg = 56714,	-- Master Bruised Paw
+						coord = { 18.3, 31.3, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							o(209953, {	-- Emperor Tern Egg
 								i(76501),	-- Emperor Tern Egg (QI!)
 							}),
@@ -370,46 +370,46 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29577, {	-- Ashyo's Vision
-						["sourceQuest"] = 29871,	-- Clever Ashyo
-						["qg"] = 56113,	-- Clever Ashyo
-						["coord"] = { 61.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 29871,	-- Clever Ashyo
+						qg = 56113,	-- Clever Ashyo
+						coord = { 61.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29914, {	-- Back to the Sty
-						["sourceQuest"] = 29912,	-- The Fabular Miss Fanny
-						["qg"] = 56205,	-- Liang Thunderfoot
-						["coord"] = { 75.2, 24.0, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29912,	-- The Fabular Miss Fanny
+						qg = 56205,	-- Liang Thunderfoot
+						coord = { 75.2, 24.0, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(75271),	-- Jian (QI!)
 							i(75272),	-- Ling (QI!)
 							i(75273),	-- Smelly (QI!)
 						},
 					}),
 					q(30172, {	-- Barreling Along
-						["sourceQuest"] = 30051,	-- The Great Water Hunt
-						["qgs"] = {
+						sourceQuest = 30051,	-- The Great Water Hunt
+						qgs = {
 							56474,	-- Mudmug
 							58785,
 						},
 					}),
 					q(30077, {	-- Barrels, Man
-						["sourceQuest"] = 30074,	-- Knocking on the Door
-						["qg"] = 56138,	-- Li Li
-						["coord"] = { 32.3, 68.5, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 30074,	-- Knocking on the Door
+						qg = 56138,	-- Li Li
+						coord = { 32.3, 68.5, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29757, {	-- Bottletoads
-						["qg"] = 56773,	-- Yan
-						["coord"] = { 60.6, 33.7, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						qg = 56773,	-- Yan
+						coord = { 60.6, 33.7, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(76727),	-- Slimy Bottle (QI!)
 						},
 					}),
 					q(29952, {	-- Broken Dreams
-						["sourceQuest"] = 29950,	-- Li Li's Day Off
-						["qg"] = 56133,	-- Chen Stormstout
-						["coord"] = { 68.8, 43.4, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 29950,	-- Li Li's Day Off
+						qg = 56133,	-- Chen Stormstout
+						coord = { 68.8, 43.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29907, {	-- Chen and Li Li
-						["sourceQuests"] = {
+						sourceQuests = {
 							32018,	-- His Name Was... Stormstout
 							32019,	-- They Call Him... Stormstout
 							-- #if AFTER 6.2.0
@@ -420,31 +420,31 @@ root(ROOTS.Zones, {
 							49557,	-- Hero's Call: Valley of the Four Winds!
 							-- #endif
 						},
-						["qg"] = 56133,	-- Chen Stormstout
-						["coord"] = { 86.0, 22.2, VALLEY_OF_THE_FOUR_WINDS },
+						qg = 56133,	-- Chen Stormstout
+						coord = { 86.0, 22.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30046, {	-- Chen's Resolution
-						["sourceQuests"] = {
+						sourceQuests = {
 							-- TODO: may also require #29910, Rampaging Rodents (not required for 2 criteria prior to this, but i did it prior to Muddy Water when Broken Dreams alone didn't trigger the availability of Chen's Resolution)
 							29952,	-- Broken Dreams
 							29951,	-- Muddy Water
 						},
-						["qg"] = 56133,	-- Chen Stormstout
-						["coord"] = { 68.9, 43.4, VALLEY_OF_THE_FOUR_WINDS },
+						qg = 56133,	-- Chen Stormstout
+						coord = { 68.9, 43.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(32045, {	-- Children of the Water
-						["qg"] = 64315,	-- Stonecarver Mac
-						["coord"] = { 55.1, 47.4, VALLEY_OF_THE_FOUR_WINDS },
+						qg = 64315,	-- Stonecarver Mac
+						coord = { 55.1, 47.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30078, {	-- Cleaning House
-						["sourceQuests"] = {
+						sourceQuests = {
 							30077,	-- Barrels, Man
 							30075,	-- Clear the Way
 							30076,	-- The Fanciest Water
 						},
-						["qg"] = 56133,	-- Chen Stormstout
-						["coord"] = { 83.6, 21.5, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						qg = 56133,	-- Chen Stormstout
+						coord = { 83.6, 21.5, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(81742),	-- Silkmaster's Satin Hood
 							i(81743),	-- Sunsoaked Helm
 							i(81744),	-- Huangtze Scale Helm
@@ -457,10 +457,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30075, {	-- Clear the Way
-						["sourceQuest"] = 30074,	-- Knocking on the Door
-						["qg"] = 56133,	-- Chen Stormstout
-						["coord"] = { 32.1, 68.3, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 30074,	-- Knocking on the Door
+						qg = 56133,	-- Chen Stormstout
+						coord = { 32.1, 68.3, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(81834),	-- Silkspawn Wing
 							i(81835),	-- Plainshawk Feather
 							i(81836),	-- Lucky "Rabbit's" Foot
@@ -469,36 +469,36 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29871, {	-- Clever Ashyo
-						["qg"] = 56110,	-- Xiao
-						["coord"] = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
+						qg = 56110,	-- Xiao
+						coord = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29947, {	-- Crouching Carrot, Hidden Turnip
-						["sourceQuest"] = 29945,	-- Yellow and Red Make Orange
-						["qg"] = 56138,	-- Li Li
-						["coord"] = { 68.9, 43.3, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29945,	-- Yellow and Red Make Orange
+						qg = 56138,	-- Li Li
+						coord = { 68.9, 43.3, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(76370),	-- Orange-Painted Turnip (QI!)
 							i(88376),	-- Orange Painted Turnip (TOY!)
 						},
 					}),
 					q(30049, {	-- Doesn't Hold Water
-						["sourceQuest"] = 30046,	-- Chen's Resolution
-						["qg"] = 56133,	-- Chen Stormstout
-						["coord"] = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 30046,	-- Chen's Resolution
+						qg = 56133,	-- Chen Stormstout
+						coord = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30054, {	-- Enough is Ookin' Enough
-						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
-						["sourceQuest"] = 30046,	-- Chen's Resolution
-						["qg"] = 57401,	-- Mung-Mung
-						["coord"] = { 44.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						description = "Only available as part of the \"Hop Hunting\" quest.",
+						sourceQuest = 30046,	-- Chen's Resolution
+						qg = 57401,	-- Mung-Mung
+						coord = { 44.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(77379),	-- Virmen Tooth (QI!)
 						},
 					}),
 					q(29982, {	-- Evacuation Orders
-						["qg"] = 56720,	-- Loon Mai
-						["coord"] = { 19.5, 56.9, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						qg = 56720,	-- Loon Mai
+						coord = { 19.5, 56.9, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(88027),	-- Silkmaster's Satin Pauldrons
 							i(88026),	-- Sunsoaked Pauldron
 							i(88025),	-- Huangtze Scale Pauldrons
@@ -511,10 +511,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29986, {	-- Fog Wards
-						["sourceQuest"] = 29984,	-- Unyielding Fists: Trial of Bamboo
-						["qg"] = 56714,	-- Master Bruised Paw
-						["coord"] = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29984,	-- Unyielding Fists: Trial of Bamboo
+						qg = 56714,	-- Master Bruised Paw
+						coord = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(81814),	-- Necklace of Three Sins
 							i(81815),	-- Jhuuroon's Collar
 							i(81816),	-- Necklace of Relative Peace
@@ -523,21 +523,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30182, {	-- Fox Mastery
-						["sourceQuest"] = 30183,	-- Stalker Mastery
-						["qg"] = 63822,	-- Tani
-						["coord"] = { 16.2, 82.5, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 30183,	-- Stalker Mastery
+						qg = 63822,	-- Tani
+						coord = { 16.2, 82.5, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(32035, {	-- Got Silk?
-						["qg"] = 59585,	-- Lolo Lio
-						["coord"] = { 55.6, 52.1, VALLEY_OF_THE_FOUR_WINDS },
-						["isBreadcrumb"] = true,
+						qg = 59585,	-- Lolo Lio
+						coord = { 55.6, 52.1, VALLEY_OF_THE_FOUR_WINDS },
+						isBreadcrumb = true,
 					}),
 					q(30050, {	-- Gardener Fran and the Watering Can
-						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
-						["sourceQuest"] = 30046,	-- Chen's Resolution
-						["qg"] = 62377,	-- Gardener Fran
-						["coord"] = { 48.3, 33.4, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						description = "Only available as part of the \"Hop Hunting\" quest.",
+						sourceQuest = 30046,	-- Chen's Resolution
+						qg = 62377,	-- Gardener Fran
+						coord = { 48.3, 33.4, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(77281),	-- Fran's Watering Can (QI!)
 							i(81844),	-- Gardener's Sickle
 							i(81845),	-- Gardener's Wand
@@ -552,14 +552,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30028, {	-- Grain Recovery
-						["sourceQuests"] = {
+						sourceQuests = {
 							30030,	-- Out of Sprite
 							30031,	-- Taste Test
 							30029,	-- Wee Little Shenanigans
 						},
-						["qg"] = 57211,	-- Grainlord Kai
-						["coord"] = { 52.7, 62.9, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						qg = 57211,	-- Grainlord Kai
+						coord = { 52.7, 62.9, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							o_repeated({
 								i(77033),	-- Sack of Grain (QI!)
 								o(210001),	-- Stolen Malt Sack
@@ -568,127 +568,127 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29919, {	-- Great Minds Drink Alike
-						["sourceQuest"] = 29918,	-- A Lesson in Bravery
-						["qg"] = 56133,	-- Chen Stormsout
-						["coord"] = { 75.3, 35.5, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 29918,	-- A Lesson in Bravery
+						qg = 56133,	-- Chen Stormsout
+						coord = { 75.3, 35.5, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29758, {	-- Guess Whose Back
-						["provider"] = { "i", 83767 },	-- Krosh's Back
-						["coord"] = { 64.5, 25.7, VALLEY_OF_THE_FOUR_WINDS },
-						["crs"] = { 56833 },	-- Krosh
+						provider = { "i", 83767 },	-- Krosh's Back
+						coord = { 64.5, 25.7, VALLEY_OF_THE_FOUR_WINDS },
+						crs = { 56833 },	-- Krosh
 					}),
 					heroscall(q(49557, {	-- Hero's Call: Valley of the Four Winds!
-						["timeline"] = { ADDED_7_3_5 },
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
-						["lvl"] = 81,
+						timeline = { ADDED_7_3_5 },
+						races = ALLIANCE_ONLY,
+						isBreadcrumb = true,
+						lvl = 81,
 					})),
 					q(32018, {	-- His Name Was... Stormstout
-						["qg"] = 56774,	-- Bolo
-						["coord"] = { 45.7, 43.9, THE_JADE_FOREST },
-						["isBreadcrumb"] = true,
+						qg = 56774,	-- Bolo
+						coord = { 45.7, 43.9, THE_JADE_FOREST },
+						isBreadcrumb = true,
 					}),
 					q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
-						["description"] = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
-						["timeline"] = { ADDED_6_2_0 },
-						["isBreadcrumb"] = true,
-						["lvl"] = 15,
+						description = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
+						timeline = { ADDED_6_2_0 },
+						isBreadcrumb = true,
+						lvl = 15,
 					}),
 					q(30053, {	-- Hop Hunting
-						["sourceQuest"] = 30046,	-- Chen's Resolution
-						["qg"] = 56133,	-- Chen Stormstout
-						["coord"] = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 30046,	-- Chen's Resolution
+						qg = 56133,	-- Chen Stormstout
+						coord = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30653, {	-- It Does You No Good In The Keg
-						["sourceQuest"] = 29990,	-- Training and Discipline
-						["qg"] = 56474,	-- Mudmug
-						["coord"] = { 18.1, 55.7, VALLEY_OF_THE_FOUR_WINDS },
-						["races"] = HORDE_ONLY,
+						sourceQuest = 29990,	-- Training and Discipline
+						qg = 56474,	-- Mudmug
+						coord = { 18.1, 55.7, VALLEY_OF_THE_FOUR_WINDS },
+						races = HORDE_ONLY,
 					}),
 					q(30624, {	-- It Does You No Good In The Keg
-						["sourceQuest"] = 29990,	-- Training and Discipline
-						["qg"] = 56474,	-- Mudmug
-						["coord"] = { 18.1, 55.7, VALLEY_OF_THE_FOUR_WINDS },
-						["races"] = ALLIANCE_ONLY,
+						sourceQuest = 29990,	-- Training and Discipline
+						qg = 56474,	-- Mudmug
+						coord = { 18.1, 55.7, VALLEY_OF_THE_FOUR_WINDS },
+						races = ALLIANCE_ONLY,
 					}),
 					q(29874, {	-- Kang Bramblestaff (A)
-						["qg"] = 56110,	-- Xiao
-						["coord"] = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
+						qg = 56110,	-- Xiao
+						coord = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
+						races = ALLIANCE_ONLY,
+						isBreadcrumb = true,
 					}),
 					q(29875, {	-- Kang Bramblestaff (H)
-						["qg"] = 56110,	-- Xiao
-						["coord"] = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
+						qg = 56110,	-- Xiao
+						coord = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
+						races = HORDE_ONLY,
+						isBreadcrumb = true,
 					}),
 					q(29873, {	-- Ken-Ken
-						["description"] = "This quest is not obtainable while having Hero's Call:-/Warchief's Command: Karasang Wilds! in the quest log. However, it can be picked up after completing said quest.",
-						["qg"] = 56110,	-- Xiao
-						["coord"] = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
-						["isBreadcrumb"] = true,
+						description = "This quest is not obtainable while having Hero's Call:-/Warchief's Command: Karasang Wilds! in the quest log. However, it can be picked up after completing said quest.",
+						qg = 56110,	-- Xiao
+						coord = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
+						isBreadcrumb = true,
 					}),
 					q(30074, {	-- Knocking on the Door
-						["sourceQuest"] = 30073,	-- The Emperor
-						["qg"] = 56133,	-- Chen Stormstout
+						sourceQuest = 30073,	-- The Emperor
+						qg = 56133,	-- Chen Stormstout
 					}),
 					q(29944, {	-- Leaders Among Breeders
-						["sourceQuest"] = 29919,	-- Great Minds Drink Alike
-						["qg"] = 56133,	-- Chen Stormstout
-						["coord"] = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29919,	-- Great Minds Drink Alike
+						qg = 56133,	-- Chen Stormstout
+						coord = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(88375),	-- Turnip Punching Bag (TOY!)
 						},
 					}),
 					q(29949, {	-- Legacy
-						["sourceQuests"] = {
+						sourceQuests = {
 							29947,	-- Crouching Carrot, Hidden Turnip
 							29946,	-- The Warren-Mother
 							29948,	-- Thieves to the Core
 						},
-						["qg"] = 56133,	-- Chen Stormstout
-						["coord"] = { 68.9, 43.1, VALLEY_OF_THE_FOUR_WINDS },
+						qg = 56133,	-- Chen Stormstout
+						coord = { 68.9, 43.1, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30048, {	-- Li Li and the Grain
-						["sourceQuest"] = 30046,	-- Chen's Resolution
-						["qg"] = 56133,	-- Chen Stormstout
-						["coord"] = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 30046,	-- Chen's Resolution
+						qg = 56133,	-- Chen Stormstout
+						coord = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29950, {	-- Li Li's Day Off
-						["sourceQuest"] = 29949,	-- Legacy
-						["qg"] = 56138,	-- Li Li
-						["coord"] = { 68.8, 43.4, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29949,	-- Legacy
+						qg = 56138,	-- Li Li
+						coord = { 68.8, 43.4, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(76350),	-- Li Li's Wishing-Stone (QI!)
 						},
 					}),
 					q(29872, {	-- Lin Tenderpaw
-						["qg"] = 56110,	-- Xiao
-						["coord"] = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
-						["isBreadcrumb"] = true,
+						qg = 56110,	-- Xiao
+						coord = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
+						isBreadcrumb = true,
 					}),
 					q(29909, {	-- Low Turnip Turnout
-						["sourceQuests"] = {
+						sourceQuests = {
 							29877,	-- A Poor Grasp of the Basics
 							29908,	-- A Seemingly Endless Nuisance
 						},
-						["qg"] = 56204,	-- Pang Thunderfoot
-						["coord"] = { 83.7, 21.0, VALLEY_OF_THE_FOUR_WINDS },
+						qg = 56204,	-- Pang Thunderfoot
+						coord = { 83.7, 21.0, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29917, {	-- Lupello
-						["sourceQuest"] = 29915,	-- A Neighbor's Duty
-						["qg"] = 56208,	-- Francis the Shepherd Boy
-						["coord"] = { 78.2, 32.9, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 29915,	-- A Neighbor's Duty
+						qg = 56208,	-- Francis the Shepherd Boy
+						coord = { 78.2, 32.9, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30058, {	-- Mothallus!
-						["sourceQuests"] = {
+						sourceQuests = {
 							30059,	-- The Moth Rebellion
 							30072,	-- Where Silk Comes From
 						},
-						["qg"] = 57407,	-- Master Goh
-						["coord"] = { 63.6, 58.5, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						qg = 57407,	-- Master Goh
+						coord = { 63.6, 58.5, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(88034),	-- Sunsoaked Vest
 							i(88033),	-- Huangtze Scale Vest
 							i(88032),	-- Paoquan Vest
@@ -699,10 +699,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29951, {	-- Muddy Water
-						["sourceQuest"] = 29949,	-- Legacy
-						["qg"] = 56474,	-- Mudmug
-						["coord"] = { 68.7, 43.1, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29949,	-- Legacy
+						qg = 56474,	-- Mudmug
+						coord = { 68.7, 43.1, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(76362),	-- Mudmug's Vial (QI!)
 							o(209921, {	-- Muddy Water
 								i(76356),	-- Stoppered Vial of Muddy Water (QI!)
@@ -719,14 +719,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30181, {	-- Mushan Mastery
-						["qg"] = 58422,	-- Hemet Nesingwary Jr.
-						["coord"] = { 16.1, 82.6, VALLEY_OF_THE_FOUR_WINDS },
+						qg = 58422,	-- Hemet Nesingwary Jr.
+						coord = { 16.1, 82.6, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30184, {	-- Mushan Mastery: Darkhide
-						["sourceQuest"] = 30181,	-- Mushan Mastery
-						["qg"] = 58421,	-- Hemet Nesingwary
-						["coord"] = { 16.0, 82.5, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 30181,	-- Mushan Mastery
+						qg = 58421,	-- Hemet Nesingwary
+						coord = { 16.0, 82.5, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(79058),	-- Darkhide's Head (QI!)
 							i(81854),	-- Mushan Chopper
 							i(81855),	-- Darkhide Blade
@@ -739,23 +739,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(32685, {	-- No Fishing Pole Necessary!
-						["qg"] = 70398,	-- Ben of the Booming Voice
-						["coord"] = { 58.9, 46.9, VALLEY_OF_THE_FOUR_WINDS },
-						["timeline"] = { ADDED_5_2_0 },
-						["requireSkill"] = FISHING,
-						["groups"] = {
+						qg = 70398,	-- Ben of the Booming Voice
+						coord = { 58.9, 46.9, VALLEY_OF_THE_FOUR_WINDS },
+						timeline = { ADDED_5_2_0 },
+						requireSkill = FISHING,
+						groups = {
 							i(74866),	-- Golden Carp
 						},
 					})),
 					q(30030, {	-- Out of Sprite
-						["sourceQuest"] = 30048,	-- Li Li and the Grain
-						["qg"] = 57209,	-- Grainer Pan
+						sourceQuest = 30048,	-- Li Li and the Grain
+						qg = 57209,	-- Grainer Pan
 					}),
 					q(30186, {	-- Parental Mastery
-						["sourceQuest"] = 30185,	-- Tortoise Mastery
-						["qg"] = 58422,	-- Hemet Nesingwary Jr.
-						["coord"] = { 19.9, 75.6, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 30185,	-- Tortoise Mastery
+						qg = 58422,	-- Hemet Nesingwary Jr.
+						coord = { 19.9, 75.6, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(81819),	-- Band of the Big Thing o' the Deep
 							i(81820),	-- Band of the Dance Ritual
 							i(81821),	-- Nesingwary's Signet
@@ -764,36 +764,36 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29916, {	-- Piercing Talons and Slavering Jaws
-						["sourceQuest"] = 29915,	-- A Neighbor's Duty
-						["qg"] = 56208,	-- Francis the Shepherd Boy
-						["coord"] = { 78.2, 32.9, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 29915,	-- A Neighbor's Duty
+						qg = 56208,	-- Francis the Shepherd Boy
+						coord = { 78.2, 32.9, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29911, {	-- Practically Perfect Produce
-						["sourceQuest"] = 29940,	-- Taking a Crop
-						["qg"] = 56207,	-- Ang Thunderfoot
-						["coord"] = { 81.4, 24.9, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29940,	-- Taking a Crop
+						qg = 56207,	-- Ang Thunderfoot
+						coord = { 81.4, 24.9, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(76110),	-- Crate of Fresh Produce (QI!)
 						},
 					}),
 					q(29910, {	-- Rampaging Rodents
-						["sourceQuest"] = 29909,	-- Low Turnip Turnout
-						["qg"] = 56465,	-- Ana Thunderfoot
-						["coord"] = { 82.6, 26.2, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29909,	-- Low Turnip Turnout
+						qg = 56465,	-- Ana Thunderfoot
+						coord = { 82.6, 26.2, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(88370),	-- Puntable Marmot (TOY!)
 						},
 					}),
 					q(30626, {	-- Retreat!
-						["sourceQuest"] = 30625,	-- Students No More
-						["qg"] = 57198,	-- Guard Captain Oakenshield
-						["coord"] = { 11.6, 49.5, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 30625,	-- Students No More
+						qg = 57198,	-- Guard Captain Oakenshield
+						coord = { 11.6, 49.5, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30057, {	-- Seeing Orange
-						["sourceQuest"] = 30056,	-- The Farmer's Daughter
-						["qg"] = 57408,	-- Mina Mudclaw
-						["coord"] = { 41.3, 38.2, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 30056,	-- The Farmer's Daughter
+						qg = 57408,	-- Mina Mudclaw
+						coord = { 41.3, 38.2, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(81751),	-- Silkmaster's Satin Mantle
 							i(81752),	-- Sunsoaked Spaulder
 							i(81753),	-- Huangtze Scale Spaulders
@@ -806,9 +806,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29600, {	-- Snap Judgment
-						["qg"] = 56802,	-- Zhang Yue
-						["coord"] = { 59.8, 27.8, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						qg = 56802,	-- Zhang Yue
+						coord = { 59.8, 27.8, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(81805),	-- Silkmaster's Satin Cuffs
 							i(81806),	-- Sunsoaked Bindings
 							i(81807),	-- Huangtze Scale Armbands
@@ -821,9 +821,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30183, {	-- Stalker Mastery
-						["qg"] = 63822,	-- Tani
-						["coord"] = { 16.2, 82.5, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						qg = 63822,	-- Tani
+						coord = { 16.2, 82.5, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(84320),	-- Hemet's Satin Leggings
 							i(84321),	-- Hemet's Hide Legguards
 							i(84322),	-- Hemet's Ringmail Leggings
@@ -836,28 +836,28 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(32038, {	-- Stag Mastery
-						["sourceQuests"] = {
+						sourceQuests = {
 							30181,	-- Mushan Mastery
 							30183,	-- Stalker Mastery
 						},
-						["qg"] = 58434,	-- Matt "Lucky" Gotcher
-						["coord"] = { 15.9, 82.2, VALLEY_OF_THE_FOUR_WINDS },
+						qg = 58434,	-- Matt "Lucky" Gotcher
+						coord = { 15.9, 82.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29981, {	-- Stemming the Swarm
-						["sourceQuest"] = 29872,	-- Lin Tenderpaw
-						["qg"] = 56111,	-- Lin Tenderpaw
-						["coord"] = { 19.9, 56.9, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 29872,	-- Lin Tenderpaw
+						qg = 56111,	-- Lin Tenderpaw
+						coord = { 19.9, 56.9, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30117, {	-- Stoneplow Thirsts
-						["sourceQuest"] = 30078,	-- Cleaning House
-						["qg"] = 61026,	-- Emmi
-						["coord"] = { 36.2, 68.4, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 30078,	-- Cleaning House
+						qg = 61026,	-- Emmi
+						coord = { 36.2, 68.4, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(81393),	-- Chen's Full Keg (QI!)
 						},
 					}),
 					q(30055, {	-- Stormstout's Hops
-						["sourceQuests"] = {
+						sourceQuests = {
 							30054,	-- Enough is Ookin' Enough
 							30050,	-- Gardener Fran and the Watering Can
 							30052,	-- Weed War
@@ -865,20 +865,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30625, {	-- Students No More
-						["sourceQuests"] = {
+						sourceQuests = {
 							30624,	-- It Does You No Good In The Keg (A)
 							30653,	-- It Does You No Good In The Keg (H)
 							30623,	-- The Mantidote
 							30622,	-- The Swarm Begins
 						},
-						["qg"] = 57198,	-- Guard Captain Oakenshield
-						["coord"] = { 11.6, 49.5, VALLEY_OF_THE_FOUR_WINDS },
+						qg = 57198,	-- Guard Captain Oakenshield
+						coord = { 11.6, 49.5, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29940, {	-- Taking a Crop
-						["sourceQuest"] = 29909,	-- Low Turnip Turnout
-						["qg"] = 56207,	-- Ang Thunderfoot
-						["coord"] = { 81.4, 24.9, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29909,	-- Low Turnip Turnout
+						qg = 56207,	-- Ang Thunderfoot
+						coord = { 81.4, 24.9, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							o(209891, {	-- Stolen Turnip
 								i(76297),	-- Stolen Turnip (QI!)
 							}),
@@ -897,39 +897,39 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30031, {	-- Taste Test
-						["sourceQuest"] = 30048,	-- Li Li and the Grain
-						["qg"] = 56138,	-- Li Li
-						["coord"] = { 52.7, 62.8, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 30048,	-- Li Li and the Grain
+						qg = 56138,	-- Li Li
+						coord = { 52.7, 62.8, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29992, {	-- Tenderpaw By Name, Tender Paw By Reputation
-						["sourceQuest"] = 29984,	-- Unyielding Fists: Trial of Bamboo
-						["qg"] = 56111,	-- Lin Tenderpaw
-						["coord"] = { 18.1, 31.1, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29984,	-- Unyielding Fists: Trial of Bamboo
+						qg = 56111,	-- Lin Tenderpaw
+						coord = { 18.1, 31.1, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							o(209952, {	-- Jademoon
 								i(76499),	-- Jademoon Leaf (QI!)
 							}),
 						},
 					}),
 					q(30047, {	-- The Chen Taste Test
-						["sourceQuest"] = 30032,	-- The Quest for Better Barley
-						["qg"] = 56138,	-- Li Li
-						["coord"] = { 52.7, 62.8, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 30032,	-- The Quest for Better Barley
+						qg = 56138,	-- Li Li
+						coord = { 52.7, 62.8, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30073, {	-- The Emperor
-						["sourceQuests"] = {
+						sourceQuests = {
 							30172,	-- Barreling Along
 							30055,	-- Stormstout's Hops
 							30047,	-- The Chen Taste Test
 						},
-						["qg"] = 56133,	-- Chen Stormstout
-						["coord"] = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },
+						qg = 56133,	-- Chen Stormstout
+						coord = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29912, {	-- The Fabulous Miss Fanny
-						["sourceQuest"] = 29911,	-- Practically Perfect Produce
-						["qg"] = 56204,	-- Pang Thunderfoot
-						["coord"] = { 83.7, 21.0, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29911,	-- Practically Perfect Produce
+						qg = 56204,	-- Pang Thunderfoot
+						coord = { 83.7, 21.0, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							o(209844, {	-- Ang's Giant Pink Turnip
 								i(75259),	-- Ang's Giant Pink Turnip (QI!)
 							}),
@@ -942,30 +942,30 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30076, {	-- The Fanciest Water
-						["sourceQuest"] = 30074,	-- Knocking on the Door
-						["qg"] = 56474,	-- Mudmug
-						["coord"] = { 32.3, 68.3, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 30074,	-- Knocking on the Door
+						qg = 56474,	-- Mudmug
+						coord = { 32.3, 68.3, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(77471),	-- Spritewater Essence (QI!)
 						},
 					}),
 					q(30056, {	-- The Farmer's Daughter
-						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
-						["sourceQuest"] = 30046,	-- Chen's Resolution
-						["qg"] = 62385,	-- Den Mudclaw
-						["coord"] = { 44.3, 34.2, VALLEY_OF_THE_FOUR_WINDS },
+						description = "Only available as part of the \"Hop Hunting\" quest.",
+						sourceQuest = 30046,	-- Chen's Resolution
+						qg = 62385,	-- Den Mudclaw
+						coord = { 44.3, 34.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29581, {	-- The Golden Dream
-						["sourceQuest"] = 29577,	-- Ashyo's Vision
-						["qg"] = 56802,	-- Zhang Yue
-						["groups"] = {
+						sourceQuest = 29577,	-- Ashyo's Vision
+						qg = 56802,	-- Zhang Yue
+						groups = {
 							i(76973),	-- Sprig of Dreamleaf (QI!)
 						},
 					}),
 					q(30628, {	-- The Gratitude of Stoneplow
-						["sourceQuest"] = 30627,	-- The Gratitude of Stoneplow
-						["qg"] = 56720,	-- Loon Mai
-						["groups"] = {
+						sourceQuest = 30627,	-- The Gratitude of Stoneplow
+						qg = 56720,	-- Loon Mai
+						groups = {
 							i(81476),	-- Nayeli Treads
 							i(81477),	-- Mortbreath Footguards
 							i(81478),	-- Deepwild Sabatons
@@ -978,9 +978,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30051, {	-- The Great Water Hunt
-						["sourceQuest"] = 30049,	-- Doesn't Hold Water
-						["qg"] = 56474,	-- Mudmug
-						["groups"] = {
+						sourceQuest = 30049,	-- Doesn't Hold Water
+						qg = 56474,	-- Mudmug
+						groups = {
 							i(81839),	-- Embrace of Trees
 							i(81840),	-- Dustback Cloak
 							i(81841),	-- Tawnyhide Cape
@@ -989,30 +989,30 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29983, {	-- The Hidden Master
-						["sourceQuests"] = {
+						sourceQuests = {
 							29981,	-- Stemming the Swarm
 							29982,	-- Evacuation Orders
 						},
-						["qg"] = 56720,	-- Loon Mai
-						["coord"] = { 19.6, 56.8, VALLEY_OF_THE_FOUR_WINDS },
+						qg = 56720,	-- Loon Mai
+						coord = { 19.6, 56.8, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30623, {	-- The Mantidote
-						["sourceQuests"] = {
+						sourceQuests = {
 							29990,	-- Training and Discipline
 							30360,	-- Warn Stoneplow (A)
 							30241,	-- Warn Stoneplow (H)
 						},
-						["qg"] = 59855,	-- Mei Barrelbottom
-						["coord"] = { 18.0, 56.5, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						qg = 59855,	-- Mei Barrelbottom
+						coord = { 18.0, 56.5, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(80337),	-- Ken-Ken's Mask (QI!)
 						},
 					}),
 					q(29913, {	-- The Meat They'll Eat
-						["sourceQuest"] = 29912,	-- The Fabular Miss Fanny
-						["qg"] = 56205,	-- Liang Thunderfoot
-						["coord"] = { 75.2, 24.0, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29912,	-- The Fabular Miss Fanny
+						qg = 56205,	-- Liang Thunderfoot
+						coord = { 75.2, 24.0, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(75275),	-- Mushan Shoulder Steak (QI!)
 							i(75276),	-- Turtle Meat Scrap (QI!)
 							i(88018),	-- Thunderfoot Heavy Cap
@@ -1027,18 +1027,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30059, {	-- The Moth Rebellion
-						["qg"] = 57424,	-- Journeyman Chu
-						["coord"] = { 63.5, 58.4, VALLEY_OF_THE_FOUR_WINDS },
+						qg = 57424,	-- Journeyman Chu
+						coord = { 63.5, 58.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30032, {	-- The Quest for Better Barley
-						["sourceQuests"] = {
+						sourceQuests = {
 							30029,	-- Wee Little Shenanigans
 							30030,	-- Out of Sprite
 							30031,	-- Taste Test
 						},
-						["qg"] = 57211,	-- Grainlord Kai
-						["coord"] = { 52.7, 63.0, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						qg = 57211,	-- Grainlord Kai
+						coord = { 52.7, 63.0, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(77034),	-- Malted Cave Barley (QI!)
 							i(81787),	-- Silkmaster's Satin Cord
 							i(81788),	-- Sunsoaked Belt
@@ -1052,24 +1052,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30627, {	-- The Savior of Stoneplow
-						["sourceQuest"] = 30626,	-- Retreat!
-						["qg"] = 59856,	-- Master Bruised Paw
-						["coord"] = { 17.9, 55.7, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 30626,	-- Retreat!
+						qg = 59856,	-- Master Bruised Paw
+						coord = { 17.9, 55.7, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							ach(7502),	-- Savior of Stoneplow
 						},
 					}),
 					q(30086, {	-- The Search for the Hidden Master
-						["sourceQuests"] = {
+						sourceQuests = {
 							29877,	-- A Poor Grasp of the Basics
 							29908,	-- A Seemingly Endless Nuisance
 						},
-						["qg"] = 56110,	-- Xiao
-						["coord"] = { 84.0, 21.2, VALLEY_OF_THE_FOUR_WINDS },
-						["isBreadcrumb"] = true,
+						qg = 56110,	-- Xiao
+						coord = { 84.0, 21.2, VALLEY_OF_THE_FOUR_WINDS },
+						isBreadcrumb = true,
 					}),
 					q(30622, {	-- The Swarm Begins
-						["sourceQuests"] = {
+						sourceQuests = {
 							30376,	-- Hope Springs Eternal (breadcrumb, neutral)
 							30360,	-- Warn Stoneplow (breadcrumb, A)
 							30241,	-- Warn Stoneplow (breadcrumb, H)
@@ -1077,66 +1077,66 @@ root(ROOTS.Zones, {
 							30117,	-- Stoneplow Thirsts
 							29990,	-- Training and Discipline
 						},
-						["qg"] = 56720,	-- Loon Mai
-						["coord"] = { 19.5, 56.9, VALLEY_OF_THE_FOUR_WINDS },
+						qg = 56720,	-- Loon Mai
+						coord = { 19.5, 56.9, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29946, {	-- The Warren-Mother
-						["sourceQuest"] = 29944,	-- Leaders Among Breeders
-						["qg"] = 56133,	-- Chen Stormstout
-						["coord"] = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 29944,	-- Leaders Among Breeders
+						qg = 56133,	-- Chen Stormstout
+						coord = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(32019, {	-- They Call Him... Stormstout
-						["description"] = "Only available before completion of |cFFFFD700The Jade Serpent|r.",
-						["qg"] = 56782,	-- Elder Sage Rain-Zhu
-						["coord"] = { 58.1, 58.6, THE_JADE_FOREST },
-						["isBreadcrumb"] = true,
+						description = "Only available before completion of |cFFFFD700The Jade Serpent|r.",
+						qg = 56782,	-- Elder Sage Rain-Zhu
+						coord = { 58.1, 58.6, THE_JADE_FOREST },
+						isBreadcrumb = true,
 					}),
 					q(29985, {	-- They Will Be Mist
-						["sourceQuest"] = 29984,	-- Unyielding Fists: Trial of Bamboo
-						["qg"] = 56714,	-- Master Bruised Paw
-						["coord"] = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 29984,	-- Unyielding Fists: Trial of Bamboo
+						qg = 56714,	-- Master Bruised Paw
+						coord = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29948, {	-- Thieves to the Core
-						["sourceQuests"] = {
+						sourceQuests = {
 							29944,	-- Leaders Among Breeders
 							29945,	-- Yellow and Red Make Orange
 						},
-						["qg"] = 56474,	-- Mudmug
-						["coord"] = { 68.7, 43.2, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						qg = 56474,	-- Mudmug
+						coord = { 68.7, 43.2, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							o(211696, {	-- Stolen Sack of Hops
 								i(76337),	-- Stolen Sack of Hops (QI!)
 							}),
 						},
 					}),
 					q(30185, {	-- Tortoise Mastery
-						["sourceQuests"] = {
+						sourceQuests = {
 							30182,	-- Fox Mastery
 							30184,	-- Mushan Mastery: Darkhide
 							32038,	-- Stag Mastery
 						},
-						["qg"] = 58422,	-- Hemet Nesingwary Jr.
-						["coord"] = { 16.1, 82.6, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						qg = 58422,	-- Hemet Nesingwary Jr.
+						coord = { 16.1, 82.6, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(79059),	-- Intact Tortoise Shell (QI!)
 						},
 					}),
 					q(29990, {	-- Training and Discipline
-						["description"] = "This quest ends your adventure in this zone for now, and you are required to complete the Karasang Wilds storyline in order to unlock the last part of the story.",
-						["sourceQuest"] = 29989,	-- Unyielding Fists: Trial of Stone
-						["qg"] = 56111,	-- Lin Tenderpaw
-						["coord"] = { 18.1, 31.0, VALLEY_OF_THE_FOUR_WINDS },
+						description = "This quest ends your adventure in this zone for now, and you are required to complete the Karasang Wilds storyline in order to unlock the last part of the story.",
+						sourceQuest = 29989,	-- Unyielding Fists: Trial of Stone
+						qg = 56111,	-- Lin Tenderpaw
+						coord = { 18.1, 31.0, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29984, {	-- Unyielding Fists: Trial of Bamboo
-						["sourceQuest"] = 29983,	-- The Hidden Master
-						["qg"] = 56714,	-- Master Bruised Paw
-						["coord"] = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
+						sourceQuest = 29983,	-- The Hidden Master
+						qg = 56714,	-- Master Bruised Paw
+						coord = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29989, {	-- Unyielding Fists: Trial of Stone
-						["sourceQuest"] = 29988,	-- A Taste For Eggs
-						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.2)
-						["coord"] = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29988,	-- A Taste For Eggs
+						qg = 56714,	-- Master Bruised Paw (18.3,31.2)
+						coord = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(81760),	-- Silkmaster's Satin Robe
 							i(81761),	-- Sunsoaked Breastplate
 							i(81762),	-- Huangtze Scale Armor
@@ -1149,33 +1149,33 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29987, {	-- Unyielding Fists: Trial of Wood
-						["sourceQuests"] = {
+						sourceQuests = {
 							29986,	-- Fog Wards
 							29992,	-- Tenderpaw By Name, Tender Paw By Reputation
 							29985,	-- They Will Be Mist
 						},
-						["qg"] = 56714,	-- Master Bruised Paw
-						["coord"] = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
+						qg = 56714,	-- Master Bruised Paw
+						coord = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					warchiefscommand(q(49539, {	-- Warchief's Command: Valley of the Four Winds!
-						["timeline"] = { ADDED_7_3_5 },
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
-						["lvl"] = 81,
+						timeline = { ADDED_7_3_5 },
+						races = HORDE_ONLY,
+						isBreadcrumb = true,
+						lvl = 81,
 					})),
 					q(30267, {	-- Watery Woes
-						["qg"] = 58736,	-- Gladecaster Lang
-						["coord"] = { 61.0, 32.9, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						qg = 58736,	-- Gladecaster Lang
+						coord = { 61.0, 32.9, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(79197),	-- Glade Glimmer (QI!)
 							i(79198),	-- Spindly Bloodfeather (QI!)
 						},
 					}),
 					q(30029, {	-- Wee Little Shenanigans
-						["sourceQuest"] = 30048,	-- Li Li and the Grain
-						["qg"] = 57211,	-- Grainlord Kai
-						["coord"] = { 52.7, 63.0, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 30048,	-- Li Li and the Grain
+						qg = 57211,	-- Grainlord Kai
+						coord = { 52.7, 63.0, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(84333),	-- Grainlord's Amulet
 							i(84332),	-- Grainlord's Pendant
 							i(84331),	-- Grainlord's Necklace
@@ -1184,25 +1184,25 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30052, {	-- Weed War
-						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
-						["sourceQuest"] = 30046,	-- Chen's Resolution
-						["qg"] = 57385,	-- Gai Lan
-						["coord"] = { 38.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						description = "Only available as part of the \"Hop Hunting\" quest.",
+						sourceQuest = 30046,	-- Chen's Resolution
+						qg = 57385,	-- Gai Lan
+						coord = { 38.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							objective(1, {	-- 0/100 Weeds pulled
-								["providers"] = {
+								providers = {
 									{ "n", 57308 },	-- Nasty Weed
 									{ "n", 57306 },	-- Ugly Weed
 								},
-								["coord"] = { 38.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+								coord = { 38.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 							}),
 						},
 					}),
 					q(30072, {	-- Where Silk Comes From
-						["sourceQuest"] = 32035,	-- Got Silk?
-						["qg"] = 57405,	-- Silkmaster Tsai
-						["coord"] = { 62.7, 59.7, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 32035,	-- Got Silk?
+						qg = 57405,	-- Silkmaster Tsai
+						coord = { 62.7, 59.7, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(77455),	-- Mulberry Leaves (QI!)
 							i(77456),	-- Raw Silk (QI!)
 							i(84343),	-- Silkmaster's Cloak
@@ -1213,10 +1213,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29945, {	-- Yellow and Red Make Orange
-						["sourceQuest"] = 29919,	-- Great Minds Drink Alike
-						["qg"] = 56138,	-- Li Li
-						["coord"] = { 68.9, 43.3, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						sourceQuest = 29919,	-- Great Minds Drink Alike
+						qg = 56138,	-- Li Li
+						coord = { 68.9, 43.3, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							o(209907, {	-- Meadow Marigold
 								i(76334),	-- Meadow Marigold (QI!)
 							}),
@@ -1225,19 +1225,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(32684, {	-- You Want Fish?
-						["sourceQuest"] = 31281,	-- So You Want to be a Chef...
-						["qg"] = 64231,	-- Sungshin Ironpaw
-						["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-						["timeline"] = { ADDED_5_2_0 },
-						["requireSkill"] = FISHING,
-						["groups"] = {
+						sourceQuest = 31281,	-- So You Want to be a Chef...
+						qg = 64231,	-- Sungshin Ironpaw
+						coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+						timeline = { ADDED_5_2_0 },
+						requireSkill = FISHING,
+						groups = {
 							i(74866),	-- Golden Carp
 						},
 					})),
 				}),
 				n(RARES, {
 					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
+						crs = {
 							51059,	-- Blackhoof
 							50828,	-- Bonobos
 							50351,	-- Jonn-Dar
@@ -1247,7 +1247,7 @@ root(ROOTS.Zones, {
 							50766,	-- Sele'na
 							50339,	-- Sulik'shor
 						},
-						["groups"] = {
+						groups = {
 							i(87595),	-- Gloves of Burrow Spelunking
 							i(87597),	-- Gloves of Congealed Mist
 							i(87602),	-- Grain Warden's Gauntlets
@@ -1261,91 +1261,91 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(51059, {	-- Blackhoof
-						["coords"] = {
+						coords = {
 							{ 39.6, 57.6, VALLEY_OF_THE_FOUR_WINDS },
 							{ 32.8, 62.8, VALLEY_OF_THE_FOUR_WINDS },
 						},
-						["groups"] = {
+						groups = {
 							i(86565),	-- Battle Horn (TOY!)
 						},
 					}),
 					n(50828, {	-- Bonobos
-						["coords"] = {
+						coords = {
 							{ 15.6, 32.2, VALLEY_OF_THE_FOUR_WINDS },
 							{ 19.0, 35.8, VALLEY_OF_THE_FOUR_WINDS },
 							{ 14.0, 38.2, VALLEY_OF_THE_FOUR_WINDS },
 							{ 16.6, 41.0, VALLEY_OF_THE_FOUR_WINDS },
 						},
-						["groups"] = {
+						groups = {
 							i(86591),	-- Magic Banana (TOY!)
 						},
 					}),
 					n(50351, {	-- Jonn-Dar
-						["coord"] = { 18.6, 77.6, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						coord = { 18.6, 77.6, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(86572),	-- Terracotta Fragment
 						},
 					}),
 					n(50364, {	-- Nal'lak the Ripper
-						["coords"] = {
+						coords = {
 							{ 10.8, 49.0, VALLEY_OF_THE_FOUR_WINDS },
 							{ 9.20, 59.8, VALLEY_OF_THE_FOUR_WINDS },
 						},
-						["groups"] = {
+						groups = {
 							i(86576),	-- Dynasty of Steel
 						},
 					}),
 					n(50811, {	-- Nasra Spothide
-						["coord"] = { 88.6, 18.0, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						coord = { 88.6, 18.0, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(86587),	-- Seed of Tranquil Growth
 						},
 					}),
 					n(50783, {	-- Salyin Warscout
-						["coords"] = {
+						coords = {
 							{ 67.6, 59.6, VALLEY_OF_THE_FOUR_WINDS },
 							{ 75.8, 46.8, VALLEY_OF_THE_FOUR_WINDS },
 						},
-						["groups"] = {
+						groups = {
 							i(86583),	-- Salyin Battle Banner (TOY!)
 						},
 					}),
 					n(50766, {	-- Sele'na
-						["coords"] = {
+						coords = {
 							{ 52.8, 28.6, VALLEY_OF_THE_FOUR_WINDS },
 							{ 60.2, 39.2, VALLEY_OF_THE_FOUR_WINDS },
 						},
-						["groups"] = {
+						groups = {
 							i(86580),	-- Wilted Lilypad
 						},
 					}),
 					n(50339, {	-- Sulik'shor
-						["coord"] = { 37.0, 25.6, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						coord = { 37.0, 25.6, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(86569),	-- Crystal of Insanity
 						},
 					}),
 				}),
 				n(TREASURES, {
 					o(213460, {	-- A Most Famous Bill of Sale
-						["coord"] = { 55.0, 47.3, VALLEY_OF_THE_FOUR_WINDS },
+						coord = { 55.0, 47.3, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					o(214340, {	-- Boat-Building Instructions
-						["questID"] = 31869,
-						["coord"] = { 92.2, 39.2, VALLEY_OF_THE_FOUR_WINDS },
+						questID = 31869,
+						coord = { 92.2, 39.2, VALLEY_OF_THE_FOUR_WINDS },
 						-- #if ANYCLASSIC
-						["description"] = "While it exists in the game, it currently cannot be looted as of the Landfall patch (5.5.1). Please fix! :(",
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_5_1 },
-						["isBounty"] = true,
+						description = "While it exists in the game, it currently cannot be looted as of the Landfall patch (5.5.1). Please fix! :(",
+						timeline = { ADDED_5_0_4, REMOVED_5_5_1 },
+						isBounty = true,
 						-- #endif
-						["groups"] = {
+						groups = {
 							i(87524),	-- Boat-Building Instructions
 						},
 					}),
 					o(213649, {	-- Cache of Pilfered Goods
-						["coord"] = { 43.61, 37.48, VALLEY_OF_THE_FOUR_WINDS },
-						["questID"] = 31406,
-						["groups"] = {
+						coord = { 43.61, 37.48, VALLEY_OF_THE_FOUR_WINDS },
+						questID = 31406,
+						groups = {
 							i(86110),	-- Stolen Necklace of Precision
 							i(86111),	-- Stolen Necklace of Accuracy
 							i(86112),	-- Stolen Amulet of Wisdom
@@ -1354,82 +1354,82 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(215785, {	-- Embracing the Passions
-						["coord"] = { 83.22, 21.16, VALLEY_OF_THE_FOUR_WINDS },
+						coord = { 83.22, 21.16, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					n(64191, {	-- Ghostly Pandaren Craftsman
-						["coord"] = { 45.4, 38.2, VALLEY_OF_THE_FOUR_WINDS },
-						["questID"] = 31292,
-						["groups"] = {
+						coord = { 45.4, 38.2, VALLEY_OF_THE_FOUR_WINDS },
+						questID = 31292,
+						groups = {
 							i(86079),	-- Ancient Pandaren Woodcutter
 						},
 					}),
 					n(64004, {	-- Ghostly Pandaren Fisherman
-						["coord"] = { 46.8, 24.6, VALLEY_OF_THE_FOUR_WINDS },
-						["description"] = "Speak with the Ghostly Pandaren Fisherman to get the toy.",
-						["questID"] = 31284,
-						["groups"] = {
+						coord = { 46.8, 24.6, VALLEY_OF_THE_FOUR_WINDS },
+						description = "Speak with the Ghostly Pandaren Fisherman to get the toy.",
+						questID = 31284,
+						groups = {
 							i(85973),	-- Ancient Pandaren Fishing Charm (TOY!)
 						},
 					}),
 					o(226956, {	-- Mysterious Fruit Pile
-						["coord"] = { 52.1, 64.0, VALLEY_OF_THE_FOUR_WINDS },
-						["timeline"] = { ADDED_6_2_3 },
-						["questID"] = 37246,
-						["groups"] = {
+						coord = { 52.1, 64.0, VALLEY_OF_THE_FOUR_WINDS },
+						timeline = { ADDED_6_2_3 },
+						questID = 37246,
+						groups = {
 							i(110505, {	-- Mesmerizing Fruit Hat [Not a toy, but should be.]
-								["timeline"] = { ADDED_6_2_3 },
+								timeline = { ADDED_6_2_3 },
 							}),
 						},
 					}),
 					o(213413, {	-- Pandaren Fighting Tactics
-						["coord"] = { 18.8, 31.8, VALLEY_OF_THE_FOUR_WINDS },
+						coord = { 18.8, 31.8, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					o(213749, {	-- Staff of the Hidden Master
-						["coords"] = {
+						coords = {
 							{ 15.4, 29.1, VALLEY_OF_THE_FOUR_WINDS },
 							{ 17.5, 35.7, VALLEY_OF_THE_FOUR_WINDS },
 							{ 19.1, 37.9, VALLEY_OF_THE_FOUR_WINDS },
 							{ 15.0, 33.7, VALLEY_OF_THE_FOUR_WINDS },
 							{ 19.0, 42.5, VALLEY_OF_THE_FOUR_WINDS },
 						},
-						["questID"] = 31407,
-						["groups"] = {
+						questID = 31407,
+						groups = {
 							i(86218),	-- Staff of the Hidden Master
 						},
 					}),
 					o(213459, {	-- The Birthplace of Liu Lang
-						["coord"] = { 20.3, 55.9, VALLEY_OF_THE_FOUR_WINDS },
+						coord = { 20.3, 55.9, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					o(213461, {	-- The Wandering Widow
-						["coord"] = { 34.6, 64.0, VALLEY_OF_THE_FOUR_WINDS },
+						coord = { 34.6, 64.0, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					o(213650, {	-- Virmen Treasure Cache
-						["description"] = "Has a respawn timer of approx 7 minutes.",
-						["questID"] = 31405,
-						["coords"] = {
+						description = "Has a respawn timer of approx 7 minutes.",
+						questID = 31405,
+						coords = {
 							{ 23.2, 30.8, VALLEY_OF_THE_FOUR_WINDS },
 							{ 23.8, 28.4, VALLEY_OF_THE_FOUR_WINDS },
 						},
 					}),
 					o(215780, {	-- Waterspeakers
-						["coord"] = { 61.52, 34.88, VALLEY_OF_THE_FOUR_WINDS },
+						coord = { 61.52, 34.88, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 				}),
 				n(VENDORS, {
 					n(70101, {	-- Armsmaster Holinka >S13</Tyrannical Elite
-						["races"] = ALLIANCE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
+						races = ALLIANCE_ONLY,
+						u = REMOVED_FROM_GAME,
+						groups = {
 						},
 					}),
 					n(75694, {	-- Armsmaster Holinka <Tyrannical Gladiator>
-						["coord"] = { 12.0, 34.0, VALLEY_OF_THE_FOUR_WINDS },
-						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_6_0_2 },
-						["groups"] = {
+						coord = { 12.0, 34.0, VALLEY_OF_THE_FOUR_WINDS },
+						races = ALLIANCE_ONLY,
+						timeline = { ADDED_6_0_2 },
+						groups = {
 							n(WEAPONS, {
 								moh(80, iensemble(144246, {	-- Arsenal: Tyrannical Gladiator's Weapons (A)
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(99794)),	-- Tyrannical Gladiator's Barrier
 								moh(5, i(99796)),	-- Tyrannical Gladiator's Battle Staff
@@ -1457,7 +1457,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(DEATHKNIGHT, {
 								moh(12, iensemble(138683, {	-- Ensemble: Tyrannical Gladiator's Dreadplate Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(99806)),	-- Tyrannical Gladiator's Dreadplate Chestpiece
 								moh(2, i(99807)),	-- Tyrannical Gladiator's Dreadplate Gauntlets
@@ -1467,7 +1467,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(DRUID, {
 								moh(12, iensemble(138691, {	-- Ensemble: Tyrannical Gladiator's Dragonhide Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(99811)),	-- Tyrannical Gladiator's Dragonhide Gloves
 								moh(3, i(99812)),	-- Tyrannical Gladiator's Dragonhide Helm
@@ -1487,7 +1487,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(HUNTER, {
 								moh(12, iensemble(138689, {	-- Ensemble: Tyrannical Gladiator's Chain Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(99847)),	-- Tyrannical Gladiator's Chain Armor
 								moh(2, i(99848)),	-- Tyrannical Gladiator's Chain Gauntlets
@@ -1497,7 +1497,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(MAGE, {
 								moh(12, iensemble(138697, {	-- Ensemble: Tyrannical Gladiator's Silk Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(99856)),	-- Tyrannical Gladiator's Silk Amice
 								moh(3, i(99853)),	-- Tyrannical Gladiator's Silk Cowl
@@ -1507,7 +1507,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(MONK, {
 								moh(12, iensemble(138693, {	-- Ensemble: Tyrannical Gladiator's Ironskin Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(99865)),	-- Tyrannical Gladiator's Copperskin Gloves
 								moh(3, i(99866)),	-- Tyrannical Gladiator's Copperskin Helm
@@ -1522,7 +1522,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(PALADIN, {
 								moh(12, iensemble(138685, {	-- Ensemble: Tyrannical Gladiator's Scaled Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(99881)),	-- Tyrannical Gladiator's Ornamented Chestguard
 								moh(2, i(99882)),	-- Tyrannical Gladiator's Ornamented Gloves
@@ -1537,7 +1537,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(PRIEST, {
 								moh(12, iensemble(138699, {	-- Ensemble: Tyrannical Gladiator's Satin Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(99893)),	-- Tyrannical Gladiator's Mooncloth Gloves
 								moh(3, i(99894)),	-- Tyrannical Gladiator's Mooncloth Helm
@@ -1552,7 +1552,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(ROGUE, {
 								moh(12, iensemble(138695, {	-- Ensemble: Tyrannical Gladiator's Leather Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(99907)),	-- Tyrannical Gladiator's Leather Gloves
 								moh(3, i(99908)),	-- Tyrannical Gladiator's Leather Helm
@@ -1562,7 +1562,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(SHAMAN, {
 								moh(12, iensemble(138687, {	-- Ensemble: Tyrannical Gladiator's Ringmail Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(99921)),	-- Tyrannical Gladiator's Linked Armor
 								moh(2, i(99922)),	-- Tyrannical Gladiator's Linked Gauntlets
@@ -1582,7 +1582,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(WARLOCK, {
 								moh(12, iensemble(138701, {	-- Ensemble: Tyrannical Gladiator's Felweave Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(99956)),	-- Tyrannical Gladiator's Felweave Amice
 								moh(3, i(99953)),	-- Tyrannical Gladiator's Felweave Cowl
@@ -1592,7 +1592,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(WARRIOR, {
 								moh(12, iensemble(138681, {	-- Ensemble: Tyrannical Gladiator's Plate Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(99957)),	-- Tyrannical Gladiator's Plate Chestpiece
 								moh(2, i(99958)),	-- Tyrannical Gladiator's Plate Gauntlets
@@ -1663,21 +1663,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(61215, {	-- Claretta <Adventuring Supplies>
-						["coord"] = { 84.8, 21.6, VALLEY_OF_THE_FOUR_WINDS },
-						["sym"] = {{"select","npcID",56705},{"pop"}},	-- Singegruff <Adventuring Supplies>
+						coord = { 84.8, 21.6, VALLEY_OF_THE_FOUR_WINDS },
+						sym = {{"select","npcID",56705},{"pop"}},	-- Singegruff <Adventuring Supplies>
 					}),
 					n(65514, {	-- Ethan Natice <Glorious Conquest Quartermaster>
 						-- Wouter NOTE: Blizzard added these NPCs to the Gate of the Setting Sun because they couldn't figure out how to make phasing work at their original location
 						-- #if ANYCLASSIC
-						["coords"] = {
+						coords = {
 							{ 7.3, 65.0, VALE_OF_ETERNAL_BLOSSOMS },
 						},
 						-- #endif
-						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+						races = ALLIANCE_ONLY,
+						timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
 						-- #if BEFORE WOD
-						["OnUpdate"] = SEASON_MALEVOLENT_ONUPDATE,
-						["sym"] = {
+						OnUpdate = SEASON_MALEVOLENT_ONUPDATE,
+						sym = {
 							{"sub", "pvp_gear_base", EXPANSION.MOP, SEASON_MALEVOLENT, PVP_ELITE },
 							{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 							{"pop"},	-- Discard the Set header and acquire the children.
@@ -1685,19 +1685,19 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					n(69968, {	-- Ethan Natice (Removed Season 14 Conquest Gear Vendor)
-						["races"] = ALLIANCE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
+						races = ALLIANCE_ONLY,
+						u = REMOVED_FROM_GAME,
+						groups = {
 						},
 					}),
 					n(75692, {	-- Ethan Natice <Grievous Gladiator>
-						["coord"] = { 12.0, 34.2, VALLEY_OF_THE_FOUR_WINDS },
-						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_6_0_2 },
-						["groups"] = {
+						coord = { 12.0, 34.2, VALLEY_OF_THE_FOUR_WINDS },
+						races = ALLIANCE_ONLY,
+						timeline = { ADDED_6_0_2 },
+						groups = {
 							n(WEAPONS, {
 								moh(80, iensemble(144252, {	-- Arsenal: Grievous Gladiator's Weapons (A)
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(103167)),	-- Grievous Gladiator's Barrier
 								moh(5, i(103310)),	-- Grievous Gladiator's Baton of Light
@@ -1728,7 +1728,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(DEATHKNIGHT, {
 								moh(12, iensemble(138661, {	-- Ensemble: Grievous Gladiator's Dreadplate Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(103179)),	-- Grievous Gladiator's Dreadplate Chestpiece
 								moh(2, i(103180)),	-- Grievous Gladiator's Dreadplate Gauntlets
@@ -1738,7 +1738,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(DRUID, {
 								moh(12, iensemble(138669, {	-- Ensemble: Grievous Gladiator's Dragonhide Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(103184)),	-- Grievous Gladiator's Dragonhide Gloves
 								moh(3, i(103185)),	-- Grievous Gladiator's Dragonhide Helm
@@ -1758,7 +1758,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(HUNTER, {
 								moh(12, iensemble(138667, {	-- Ensemble: Grievous Gladiator's Chain Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(103219)),	-- Grievous Gladiator's Chain Armor
 								moh(2, i(103220)),	-- Grievous Gladiator's Chain Gauntlets
@@ -1768,7 +1768,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(MAGE, {
 								moh(12, iensemble(138675, {	-- Ensemble: Grievous Gladiator's Silk Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(103228)),	-- Grievous Gladiator's Silk Amice
 								moh(3, i(103225)),	-- Grievous Gladiator's Silk Cowl
@@ -1778,7 +1778,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(MONK, {
 								moh(12, iensemble(138671, {	-- Ensemble: Grievous Gladiator's Ironskin Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(103237)),	-- Grievous Gladiator's Copperskin Gloves
 								moh(3, i(103238)),	-- Grievous Gladiator's Copperskin Helm
@@ -1793,7 +1793,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(PALADIN, {
 								moh(12, iensemble(138663, {	-- Ensemble: Grievous Gladiator's Scaled Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(103253)),	-- Grievous Gladiator's Ornamented Chestguard
 								moh(2, i(103254)),	-- Grievous Gladiator's Ornamented Gloves
@@ -1808,7 +1808,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(PRIEST, {
 								moh(12, iensemble(138677, {	-- Ensemble: Grievous Gladiator's Satin Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(103265)),	-- Grievous Gladiator's Mooncloth Gloves
 								moh(3, i(103266)),	-- Grievous Gladiator's Mooncloth Helm
@@ -1823,7 +1823,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(ROGUE, {
 								moh(12, iensemble(138673, {	-- Ensemble: Grievous Gladiator's Leather Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(103279)),	-- Grievous Gladiator's Leather Gloves
 								moh(3, i(103280)),	-- Grievous Gladiator's Leather Helm
@@ -1833,7 +1833,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(SHAMAN, {
 								moh(12, iensemble(138665, {	-- Ensemble: Grievous Gladiator's Ringmail Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(103293)),	-- Grievous Gladiator's Linked Armor
 								moh(2, i(103294)),	-- Grievous Gladiator's Linked Gauntlets
@@ -1853,7 +1853,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(WARLOCK, {
 								moh(12, iensemble(138679, {	-- Ensemble: Grievous Gladiator's Felweave Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(103327)),	-- Grievous Gladiator's Felweave Amice
 								moh(3, i(103324)),	-- Grievous Gladiator's Felweave Cowl
@@ -1863,7 +1863,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(WARRIOR, {
 								moh(12, iensemble(138659, {	-- Ensemble: Grievous Gladiator's Plate Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(103328)),	-- Grievous Gladiator's Plate Chestpiece
 								moh(2, i(103329)),	-- Grievous Gladiator's Plate Gauntlets
@@ -1934,28 +1934,28 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(73147, {	-- Ethan Natice Season 15 Elite (5.4.7 Elite and removed Version)
-						["races"] = ALLIANCE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
-						["groups"] = {
+						races = ALLIANCE_ONLY,
+						u = REMOVED_FROM_GAME,
+						groups = {
 						},
 					}),
 					n(65166, {	-- Hayden Christophen <Honor Quartermaster>
 						-- Wouter NOTE: Blizzard added these NPCs to the Gate of the Setting Sun because they couldn't figure out how to make phasing work at their original location
 						-- #if ANYCLASSIC
-						["coords"] = {
+						coords = {
 							{ 7.1, 65.0, VALE_OF_ETERNAL_BLOSSOMS },
 						},
 						-- #endif
-						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+						races = ALLIANCE_ONLY,
+						timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
 						-- #if BEFORE WOD
-						["OnUpdate"] = SEASON_MALEVOLENT_ONUPDATE,
-						["sym"] = {
+						OnUpdate = SEASON_MALEVOLENT_ONUPDATE,
+						sym = {
 							{"sub", "pvp_gear_base", EXPANSION.MOP, SEASON_MALEVOLENT, PVP_HONOR },
 							{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 							{"pop"},	-- Discard the Set header and acquire the children.
 						},
-						["groups"] = {
+						groups = {
 							-- #if ANYCLASSIC
 							i(254315),	-- Formula: Enchant Weapon - Tyranny
 							-- #endif
@@ -1963,17 +1963,17 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					n(73143, {	-- Hayden Christophen <Honor Quartermaster> Old Grievous Vendor (neck, etc)
-						["races"] = ALLIANCE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
+						races = ALLIANCE_ONLY,
+						u = REMOVED_FROM_GAME,
 					}),
 					n(75691, {	-- Hayden Christophen <Dreadful Gladiator>
-						["coord"] = { 12.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
-						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_6_0_2 },
-						["groups"] = {
+						coord = { 12.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
+						races = ALLIANCE_ONLY,
+						timeline = { ADDED_6_0_2 },
+						groups = {
 							cl(DEATHKNIGHT, {
 								moh(12, iensemble(138715, {	-- Ensemble: Dreadful Gladiator's Dreadplate Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(84372)),	-- Dreadful Gladiator's Dreadplate Chestpiece
 								moh(2, i(84373)),	-- Dreadful Gladiator's Dreadplate Gauntlets
@@ -1983,7 +1983,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(DRUID, {
 								moh(12, iensemble(138719, {	-- Ensemble: Dreadful Gladiator's Dragonhide Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(84377)),	-- Dreadful Gladiator's Dragonhide Gloves
 								moh(3, i(84378)),	-- Dreadful Gladiator's Dragonhide Helm
@@ -2003,7 +2003,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(HUNTER, {
 								moh(12, iensemble(138718, {	-- Ensemble: Dreadful Gladiator's Chain Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(84408)),	-- Dreadful Gladiator's Chain Armor
 								moh(2, i(84409)),	-- Dreadful Gladiator's Chain Gauntlets
@@ -2013,7 +2013,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(MAGE, {
 								moh(12, iensemble(138722, {	-- Ensemble: Dreadful Gladiator's Silk Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(84417)),	-- Dreadful Gladiator's Silk Amice
 								moh(3, i(84414)),	-- Dreadful Gladiator's Silk Cowl
@@ -2023,7 +2023,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(MONK, {
 								moh(12, iensemble(138720, {	-- Ensemble: Dreadful Gladiator's Ironskin Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(84548)),	-- Dreadful Gladiator's Copperskin Gloves
 								moh(3, i(84549)),	-- Dreadful Gladiator's Copperskin Helm
@@ -2038,7 +2038,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(PALADIN, {
 								moh(12, iensemble(138716, {	-- Ensemble: Dreadful Gladiator's Scaled Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(84429)),	-- Dreadful Gladiator's Ornamented Chestguard
 								moh(2, i(84430)),	-- Dreadful Gladiator's Ornamented Gloves
@@ -2053,7 +2053,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(PRIEST, {
 								moh(12, iensemble(138723, {	-- Ensemble: Dreadful Gladiator's Satin Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(84440)),	-- Dreadful Gladiator's Mooncloth Gloves
 								moh(3, i(84441)),	-- Dreadful Gladiator's Mooncloth Helm
@@ -2068,7 +2068,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(ROGUE, {
 								moh(12, iensemble(138721, {	-- Ensemble: Dreadful Gladiator's Leather Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(84463)),	-- Dreadful Gladiator's Leather Gloves
 								moh(3, i(84464)),	-- Dreadful Gladiator's Leather Helm
@@ -2078,7 +2078,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(SHAMAN, {
 								moh(12, iensemble(138717, {	-- Ensemble: Dreadful Gladiator's Ringmail Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(84477)),	-- Dreadful Gladiator's Linked Armor
 								moh(2, i(84478)),	-- Dreadful Gladiator's Linked Gauntlets
@@ -2098,7 +2098,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(WARLOCK, {
 								moh(12, iensemble(138724, {	-- Ensemble: Dreadful Gladiator's Felweave Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(84503)),	-- Dreadful Gladiator's Felweave Amice
 								moh(3, i(84500)),	-- Dreadful Gladiator's Felweave Cowl
@@ -2108,7 +2108,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(WARRIOR, {
 								moh(12, iensemble(138714, {	-- Ensemble: Dreadful Gladiator's Plate Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(84504)),	-- Dreadful Gladiator's Plate Chestpiece
 								moh(2, i(84505)),	-- Dreadful Gladiator's Plate Gauntlets
@@ -2181,15 +2181,15 @@ root(ROOTS.Zones, {
 					n(65167, {	-- Lucan Malory <Conquest Quartermaster>
 						-- Wouter NOTE: Blizzard added these NPCs to the Gate of the Setting Sun because they couldn't figure out how to make phasing work at their original location
 						-- #if ANYCLASSIC
-						["coords"] = {
+						coords = {
 							{ 7.6, 64.8, VALE_OF_ETERNAL_BLOSSOMS },
 						},
 						-- #endif
-						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+						races = ALLIANCE_ONLY,
+						timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
 						-- #if BEFORE WOD
-						["OnUpdate"] = SEASON_MALEVOLENT_ONUPDATE,
-						["sym"] = {
+						OnUpdate = SEASON_MALEVOLENT_ONUPDATE,
+						sym = {
 							{"sub", "pvp_gear_base", EXPANSION.MOP, SEASON_MALEVOLENT, PVP_GLADIATOR },
 							{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 							{"pop"},	-- Discard the Set header and acquire the children.
@@ -2197,13 +2197,13 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					n(75689, {	-- Lucan Malory Season 12: Malevolent Gladiator Vendor. Items are tagged as Season 13
-						["coord"] = { 12.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
-						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_6_0_2 },
-						["groups"] = {
+						coord = { 12.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
+						races = ALLIANCE_ONLY,
+						timeline = { ADDED_6_0_2 },
+						groups = {
 							n(WEAPONS, {
 								moh(80, iensemble(144243, {	-- Arsenal: Malevolent Gladiator's Weapons
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								-- S12 Tag
 								un(REMOVED_FROM_GAME, i(84911)),	-- Malevolent Gladiator's Barrier
@@ -2262,7 +2262,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(DEATHKNIGHT, {
 								moh(12, iensemble(138704, {	-- Ensemble: Malevolent Gladiator's Dreadplate Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								i(84795),	-- Malevolent Gladiator's Dreadplate Chestpiece
 								i(84835),	-- Malevolent Gladiator's Dreadplate Gauntlets
@@ -2277,7 +2277,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(DRUID, {
 								moh(12, iensemble(138708, {	-- Ensemble: Malevolent Gladiator's Dragonhide Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								i(84832),	-- Malevolent Gladiator's Dragonhide Gloves
 								i(84852),	-- Malevolent Gladiator's Dragonhide Helm
@@ -2312,7 +2312,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(HUNTER, {
 								moh(12, iensemble(138707, {	-- Ensemble: Malevolent Gladiator's Chain Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								i(84796),	-- Malevolent Gladiator's Chain Armor
 								i(84841),	-- Malevolent Gladiator's Chain Gauntlets
@@ -2327,7 +2327,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(MAGE, {
 								moh(12, iensemble(138711, {	-- Ensemble: Malevolent Gladiator's Silk Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								i(84917),	-- Malevolent Gladiator's Silk Amice
 								i(84855),	-- Malevolent Gladiator's Silk Cowl
@@ -2342,7 +2342,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(MONK, {
 								moh(12, iensemble(138709, {	-- Ensemble: Malevolent Gladiator's Ironskin Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								i(84836),	-- Malevolent Gladiator's Copperskin Gloves
 								i(84854),	-- Malevolent Gladiator's Copperskin Helm
@@ -2367,7 +2367,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(PALADIN, {
 								moh(12, iensemble(138705, {	-- Ensemble: Malevolent Gladiator's Scaled Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								i(84793),	-- Malevolent Gladiator's Ornamented Chestguard
 								i(84831),	-- Malevolent Gladiator's Ornamented Gloves
@@ -2392,7 +2392,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(PRIEST, {
 								moh(12, iensemble(138712, {	-- Ensemble: Malevolent Gladiator's Satin Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								i(84846),	-- Malevolent Gladiator's Mooncloth Gloves
 								i(84863),	-- Malevolent Gladiator's Mooncloth Helm
@@ -2417,7 +2417,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(ROGUE, {
 								moh(12, iensemble(138710, {	-- Ensemble: Malevolent Gladiator's Leather Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								i(84830),	-- Malevolent Gladiator's Leather Gloves
 								i(84848),	-- Malevolent Gladiator's Leather Helm
@@ -2432,7 +2432,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(SHAMAN, {
 								moh(12, iensemble(138706, {	-- Ensemble: Malevolent Gladiator's Ringmail Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								i(84799),	-- Malevolent Gladiator's Linked Armor
 								i(84844),	-- Malevolent Gladiator's Linked Gauntlets
@@ -2467,7 +2467,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(WARLOCK, {
 								moh(12, iensemble(138713, {	-- Ensemble: Malevolent Gladiator's Felweave Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								i(84923),	-- Malevolent Gladiator's Felweave Amice
 								i(84859),	-- Malevolent Gladiator's Felweave Cowl
@@ -2482,7 +2482,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(WARRIOR, {
 								moh(12, iensemble(138703, {	-- Ensemble: Malevolent Gladiator's Plate Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								i(84797),	-- Malevolent Gladiator's Plate Chestpiece
 								i(84840),	-- Malevolent Gladiator's Plate Gauntlets
@@ -2558,67 +2558,67 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(64395, {	-- Nam Ironpaw <Stockmaster>
-						["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(74853, {	-- 100 Year Soy Sauce
-								["cost"] = { { "c", 402, 1 } },	-- 1x Ironpaw Token
+								cost = { { "c", 402, 1 } },	-- 1x Ironpaw Token
 							}),
 							i(86468, {	-- Apron
-								["sourceQuest"] = 31820,	-- A Present for Teacher (Nomi)
-								["cost"] = { { "c", 402, 50 } },	-- 50x Ironpaw Token
+								sourceQuest = 31820,	-- A Present for Teacher (Nomi)
+								cost = { { "c", 402, 50 } },	-- 50x Ironpaw Token
 							}),
 							i(86425, {	-- Cooking School Bell
-								["sourceQuest"] = 31521,	-- To Be a Master
-								["cost"] = { { "c", 402, 50 } },	-- 50x Ironpaw Token
+								sourceQuest = 31521,	-- To Be a Master
+								cost = { { "c", 402, 50 } },	-- 50x Ironpaw Token
 							}),
 							i(88801, {	-- Flippable Table (TOY!)
-								["cost"] = { { "c", 402, 40 } },	-- 40x Ironpaw Token
+								cost = { { "c", 402, 40 } },	-- 40x Ironpaw Token
 							}),
 							i(86559, {	-- Frying Pan
-								["cost"] = { { "c", 402, 50 } },	-- 50x Ironpaw Token
+								cost = { { "c", 402, 50 } },	-- 50x Ironpaw Token
 							}),
 							i(92748, {	-- Portable Refrigerator
-								["cost"] = { { "c", 402, 10 } },	-- 10x Ironpaw Token
+								cost = { { "c", 402, 10 } },	-- 10x Ironpaw Token
 							}),
 							i(75017, {	-- Recipe: Great Pandaren Banquet (RECIPE!)
-								["sourceAchievement"] = 7306,	-- Master of Pandaren Cooking
-								["cost"] = { { "c", 402, 10 } },	-- 10x Ironpaw Token
+								sourceAchievement = 7306,	-- Master of Pandaren Cooking
+								cost = { { "c", 402, 10 } },	-- 10x Ironpaw Token
 							}),
 							i(75013, {	-- Recipe: Pandaren Banquet (RECIPE!)
-								["sourceAchievement"] = 7306,	-- Master of Pandaren Cooking
-								["cost"] = { { "c", 402, 10 } },	-- 10x Ironpaw Token
+								sourceAchievement = 7306,	-- Master of Pandaren Cooking
+								cost = { { "c", 402, 10 } },	-- 10x Ironpaw Token
 							}),
 							i(86558, {	-- Rolling Pin
-								["cost"] = { { "c", 402, 50 } },	-- 50x Ironpaw Token
+								cost = { { "c", 402, 50 } },	-- 50x Ironpaw Token
 							}),
 						},
 					}),
 					n(64465, {	-- Noodles <Cooking Supplies>
-						["coord"] = { 52.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						coord = { 52.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						},
 					}),
 					n(55143, {	-- Sally Fizzlefury <Engineering Trainer>
-						["coord"] = { 16.0, 83.0, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
+						coord = { 16.0, 83.0, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
 							i(88802, {	-- Foxicopter Controller (TOY!)
-								["cost"] = 10000000,	-- 1,000g
+								cost = 10000000,	-- 1,000g
 							}),
 							i(91904, {	-- Stackable Stag (TOY!)
-								["cost"] = 10000000,	-- 1,000g
+								cost = 10000000,	-- 1,000g
 							}),
 						},
 					}),
 					n(78456, {	-- Starlight Sinclair <Prideful Gladiator>
-						["coord"] = { 12.0, 34.0, VALLEY_OF_THE_FOUR_WINDS },
-						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_6_0_2 },
-						["groups"] = {
+						coord = { 12.0, 34.0, VALLEY_OF_THE_FOUR_WINDS },
+						races = ALLIANCE_ONLY,
+						timeline = { ADDED_6_0_2 },
+						groups = {
 							n(WEAPONS, {
 								moh(80, iensemble(144248, {	-- Arsenal: Prideful Gladiator's Weapons (A)
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(102785)),	-- Prideful Gladiator's Barrier
 								moh(5, i(102596)),	-- Prideful Gladiator's Baton of Light
@@ -2649,7 +2649,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(DEATHKNIGHT, {
 								moh(12, iensemble(138639, {	-- Ensemble: Prideful Gladiator's Dreadplate Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(102676)),	-- Prideful Gladiator's Dreadplate Chestpiece
 								moh(2, i(102650)),	-- Prideful Gladiator's Dreadplate Gauntlets
@@ -2659,7 +2659,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(DRUID, {
 								moh(12, iensemble(138647, {	-- Ensemble: Prideful Gladiator's Dragonhide Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(102739)),	-- Prideful Gladiator's Dragonhide Gloves
 								moh(3, i(102653)),	-- Prideful Gladiator's Dragonhide Helm
@@ -2679,7 +2679,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(HUNTER, {
 								moh(12, iensemble(138645, {	-- Ensemble: Prideful Gladiator's Chain Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(102689)),	-- Prideful Gladiator's Chain Armor
 								moh(2, i(102737)),	-- Prideful Gladiator's Chain Gauntlets
@@ -2689,7 +2689,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(MAGE, {
 								moh(12, iensemble(138653, {	-- Ensemble: Prideful Gladiator's Silk Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(102673)),	-- Prideful Gladiator's Silk Amice
 								moh(3, i(102667)),	-- Prideful Gladiator's Silk Cowl
@@ -2699,7 +2699,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(MONK, {
 								moh(12, iensemble(138649, {	-- Ensemble: Prideful Gladiator's Ironskin Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(102627)),	-- Prideful Gladiator's Copperskin Gloves
 								moh(3, i(102628)),	-- Prideful Gladiator's Copperskin Helm
@@ -2714,7 +2714,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(PALADIN, {
 								moh(12, iensemble(138641, {	-- Ensemble: Prideful Gladiator's Scaled Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(102632)),	-- Prideful Gladiator's Ornamented Chestguard
 								moh(2, i(102722)),	-- Prideful Gladiator's Ornamented Gloves
@@ -2729,7 +2729,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(PRIEST, {
 								moh(12, iensemble(138655, {	-- Ensemble: Prideful Gladiator's Satin Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(102615)),	-- Prideful Gladiator's Mooncloth Gloves
 								moh(3, i(102703)),	-- Prideful Gladiator's Mooncloth Helm
@@ -2744,7 +2744,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(ROGUE, {
 								moh(12, iensemble(138651, {	-- Ensemble: Prideful Gladiator's Leather Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(102727)),	-- Prideful Gladiator's Leather Gloves
 								moh(3, i(102731)),	-- Prideful Gladiator's Leather Helm
@@ -2754,7 +2754,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(SHAMAN, {
 								moh(12, iensemble(138643, {	-- Ensemble: Prideful Gladiator's Ringmail Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(102759)),	-- Prideful Gladiator's Linked Armor
 								moh(2, i(102742)),	-- Prideful Gladiator's Linked Gauntlets
@@ -2774,7 +2774,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(WARLOCK, {
 								moh(12, iensemble(138657, {	-- Ensemble: Prideful Gladiator's Felweave Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(2, i(102682)),	-- Prideful Gladiator's Felweave Amice
 								moh(3, i(102726)),	-- Prideful Gladiator's Felweave Cowl
@@ -2784,7 +2784,7 @@ root(ROOTS.Zones, {
 							}),
 							cl(WARRIOR, {
 								moh(12, iensemble(138637, {	-- Ensemble: Prideful Gladiator's Plate Armor
-									["timeline"] = { ADDED_7_1_5 },
+									timeline = { ADDED_7_1_5 },
 								})),
 								moh(3, i(102728)),	-- Prideful Gladiator's Plate Chestpiece
 								moh(2, i(102618)),	-- Prideful Gladiator's Plate Gauntlets
@@ -2859,16 +2859,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(59583, {	-- Trader Jambeezi <Adventuring Supplies>
-						["coords"] = {
+						coords = {
 							{ 56.2, 47.0, VALLEY_OF_THE_FOUR_WINDS },
 							{ 55.6, 49.8, VALLEY_OF_THE_FOUR_WINDS },
 						},
-						["sym"] = {{"select","npcID",56705},{"pop"}},	-- Singegruff <Adventuring Supplies>
+						sym = {{"select","npcID",56705},{"pop"}},	-- Singegruff <Adventuring Supplies>
 					}),
 				}),
 				n(ZONE_DROPS, {
 					i(74842, {	-- Mogu Pumpkin
-						["description"] = "Drops from Virmen.",
+						description = "Drops from Virmen.",
 					}),
 				}),
 			},
@@ -2876,7 +2876,7 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
 	m(PANDARIA, {
 		m(VALLEY_OF_THE_FOUR_WINDS, {
 			n(QUESTS, {

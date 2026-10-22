@@ -200,18 +200,18 @@ local CELESTIAL_TOKENS = {
 };
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, {
-	n(CELESTIAL_DUNGEON_DIFFICULTY, bubbleDownSelf({ ["timeline"] = { ADDED_5_5_0 } }, {
-		["lvl"] = 90,
-		["groups"] = {
+	n(CELESTIAL_DUNGEON_DIFFICULTY, bubbleDownSelf({ timeline = { ADDED_5_5_0 } }, {
+		lvl = 90,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(60901),	-- Pandaria Celestial Hero (automated)
 			}),
 			n(COMMON_BOSS_DROPS, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
-				["description"] = "The following can drop from the final boss of any Celestial dungeon.",
-				["maps"] = CELESTIAL_DUNGEON_MAPS,
-				["crs"] = CELESTIAL_DUNGEON_LAST_BOSSES,
-				["groups"] = appendGroups(
+				OnInit = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
+				description = "The following can drop from the final boss of any Celestial dungeon.",
+				maps = CELESTIAL_DUNGEON_MAPS,
+				crs = CELESTIAL_DUNGEON_LAST_BOSSES,
+				groups = appendGroups(
 					-- #if BEFORE 5.5.3
 					-- Season 1 (Terrace / HoF / MV)
 					applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, {	-- Tier Tokens (Terrace)
@@ -276,10 +276,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 			}),
 			-- Alliance Dailies
 			n(QUESTS, sharedData({
-				["qg"] = 64028,	-- Challenger Soong <Challenge Dungeons> (Alliance)
-				["races"] = ALLIANCE_ONLY,
-				["isDaily"] = true,
-				["groups"] = {
+				qg = 64028,	-- Challenger Soong <Challenge Dungeons> (Alliance)
+				races = ALLIANCE_ONLY,
+				isDaily = true,
+				groups = {
 					-- #if AFTER 5.5.5
 					applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, currency(AUGUST_STONE_CLUSTER)),
 					-- #endif
@@ -301,10 +301,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 			})),
 			-- Horde Dailies
 			n(QUESTS, sharedData({
-				["qg"] = 63994,	-- Challenger Wuli <Challenge Dungeons> (Horde)
-				["races"] = HORDE_ONLY,
-				["isDaily"] = true,
-				["groups"] = {
+				qg = 63994,	-- Challenger Wuli <Challenge Dungeons> (Horde)
+				races = HORDE_ONLY,
+				isDaily = true,
+				groups = {
 					-- #if AFTER 5.5.5
 					applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, currency(AUGUST_STONE_CLUSTER)),
 					-- #endif
@@ -327,60 +327,60 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 			n(REWARDS, {
 				-- #if AFTER 5.5.5
 				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, currency(AUGUST_STONE_CLUSTER, {
-					["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
-					["description"] = "Two tokens drop per boss in Celestial and the final boss of each dungeon will drop an extra three tokens if players have defeated all of the other bosses in the dungeon.",
-					["maps"] = CELESTIAL_DUNGEON_MAPS,
-					["crs"] = CELESTIAL_DUNGEON_BOSSES,
+					OnInit = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
+					description = "Two tokens drop per boss in Celestial and the final boss of each dungeon will drop an extra three tokens if players have defeated all of the other bosses in the dungeon.",
+					maps = CELESTIAL_DUNGEON_MAPS,
+					crs = CELESTIAL_DUNGEON_BOSSES,
 				})),
 				-- #elseif AFTER 5.5.3
 				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, currency(AUGUST_STONE_SHARD, {
-					["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
-					["description"] = "Two tokens drop per boss in Celestial and the final boss of each dungeon will drop an extra three tokens if players have defeated all of the other bosses in the dungeon.",
-					["maps"] = CELESTIAL_DUNGEON_MAPS,
-					["crs"] = CELESTIAL_DUNGEON_BOSSES,
+					OnInit = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
+					description = "Two tokens drop per boss in Celestial and the final boss of each dungeon will drop an extra three tokens if players have defeated all of the other bosses in the dungeon.",
+					maps = CELESTIAL_DUNGEON_MAPS,
+					crs = CELESTIAL_DUNGEON_BOSSES,
 				})),
 				-- #else
 				currency(AUGUST_STONE_FRAGMENT, {
-					["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
-					["description"] = "Two tokens drop per boss in Celestial and the final boss of each dungeon will drop an extra three tokens if players have defeated all of the other bosses in the dungeon.",
-					["maps"] = CELESTIAL_DUNGEON_MAPS,
-					["crs"] = CELESTIAL_DUNGEON_BOSSES,
+					OnInit = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
+					description = "Two tokens drop per boss in Celestial and the final boss of each dungeon will drop an extra three tokens if players have defeated all of the other bosses in the dungeon.",
+					maps = CELESTIAL_DUNGEON_MAPS,
+					crs = CELESTIAL_DUNGEON_BOSSES,
 				}),
 				-- #endif
 				i(87208, {	-- Sigil of Power
-					["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
+					OnInit = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
 					-- #if BEFORE 5.5.3
-					["description"] = "This can drop from any \"physical\" last boss of a Celestial dungeon.",
-					["maps"] = CELESTIAL_DUNGEON_MAPS_SIGIL_OF_POWER,
-					["crs"] = CELESTIAL_DUNGEON_LAST_BOSSES_SIGIL_OF_POWER,
+					description = "This can drop from any \"physical\" last boss of a Celestial dungeon.",
+					maps = CELESTIAL_DUNGEON_MAPS_SIGIL_OF_POWER,
+					crs = CELESTIAL_DUNGEON_LAST_BOSSES_SIGIL_OF_POWER,
 					-- #else
-					["description"] = "This can drop from any last boss of a Celestial dungeon.",
-					["maps"] = CELESTIAL_DUNGEON_MAPS,
-					["crs"] = CELESTIAL_DUNGEON_LAST_BOSSES,
+					description = "This can drop from any last boss of a Celestial dungeon.",
+					maps = CELESTIAL_DUNGEON_MAPS,
+					crs = CELESTIAL_DUNGEON_LAST_BOSSES,
 					-- #endif
 				}),
 				i(87209, {	-- Sigil of Wisdom
-					["OnInit"] = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
+					OnInit = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
 					-- #if BEFORE 5.5.3
-					["description"] = "This can drop from any \"magical\" last boss of a Celestial dungeon.",
-					["maps"] = CELESTIAL_DUNGEON_MAPS_SIGIL_OF_WISDOM,
-					["crs"] = CELESTIAL_DUNGEON_LAST_BOSSES_SIGIL_OF_WISDOM,
+					description = "This can drop from any \"magical\" last boss of a Celestial dungeon.",
+					maps = CELESTIAL_DUNGEON_MAPS_SIGIL_OF_WISDOM,
+					crs = CELESTIAL_DUNGEON_LAST_BOSSES_SIGIL_OF_WISDOM,
 					-- #else
-					["description"] = "This can drop from any last boss of a Celestial dungeon.",
-					["maps"] = CELESTIAL_DUNGEON_MAPS,
-					["crs"] = CELESTIAL_DUNGEON_LAST_BOSSES,
+					description = "This can drop from any last boss of a Celestial dungeon.",
+					maps = CELESTIAL_DUNGEON_MAPS,
+					crs = CELESTIAL_DUNGEON_LAST_BOSSES,
 					-- #endif
 				}),
 			}),
 			n(VENDORS, {
 				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, {
-					["aqd"] = n(74020, {	-- Welbiz Cheerwhistle <Raid Finder Vendor> [A]
-						["coord"] = { 41.0, 42.5, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
+					aqd = n(74020, {	-- Welbiz Cheerwhistle <Raid Finder Vendor> [A]
+						coord = { 41.0, 42.5, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
 					}),
-					["hqd"] = n(73674, {	-- Blizzix Sparkshiv <Raid Finder Vendor> [H]
-						["coord"] = { 42.9, 74.7, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+					hqd = n(73674, {	-- Blizzix Sparkshiv <Raid Finder Vendor> [H]
+						coord = { 42.9, 74.7, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					}),
-					["groups"] = {
+					groups = {
 						cl(WARRIOR, {
 							-- DPS
 							tokencost(CELESTIAL_TOKENS.SEASON3.PROTECTOR.HELM, i(99046)),	-- Helmet of the Prehistoric Marauder
@@ -569,8 +569,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					},
 				}),
 				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, n(70346, {	-- Ao Pye <Shado-Pan Assault Quartermaster>
-					["coord"] = { 38.0, 64.6, TOWNLONG_STEPPES },
-					["groups"] = {
+					coord = { 38.0, 64.6, TOWNLONG_STEPPES },
+					groups = {
 						cl(WARRIOR, {
 							-- DPS
 							tokencost(CELESTIAL_TOKENS.SEASON2.PROTECTOR.HELM, i(95986)),	-- Helmet of the Last Mogu
@@ -742,8 +742,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					},
 				})),
 				applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, n(64606, {	-- Commander Oxheart <Valor Quartermaster>
-					["coord"] = { 37.8, 64.6, TOWNLONG_STEPPES },
-					["groups"] = {
+					coord = { 37.8, 64.6, TOWNLONG_STEPPES },
+					groups = {
 						cl(WARRIOR, {
 							-- DPS
 							tokencost(CELESTIAL_TOKENS.SEASON1.PROTECTOR.HELM, i(86673)),	-- Helmet of Resounding Rings
@@ -915,15 +915,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					},
 				})),
 				n(248108, {	-- Avatar of the August Celestials <August Stone Fragment Exchange>
-					["aqd"] = {
-						["coord"] = { 41.4, 46.3, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
-						["maps"] = { SHRINE_OF_SEVEN_STARS },
+					aqd = {
+						coord = { 41.4, 46.3, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
+						maps = { SHRINE_OF_SEVEN_STARS },
 					},
-					["hqd"] = {
-						["coord"] = { 42.5, 76.6, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
-						["maps"] = { SHRINE_OF_TWO_MOONS },
+					hqd = {
+						coord = { 42.5, 76.6, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+						maps = { SHRINE_OF_TWO_MOONS },
 					},
-					["groups"] = appendGroups(
+					groups = appendGroups(
 					applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, {	-- Tier Tokens (Terrace)
 						frags(60, i(CELESTIAL_TOKENS.SEASON1.CONQUEROR.HELM)),
 						frags(60, i(CELESTIAL_TOKENS.SEASON1.PROTECTOR.HELM)),
@@ -1342,16 +1342,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					}),
 				}),
 				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, n(258121,	-- Sendala the Timeless <August Stone Shard Exchange>
-					bubbleDownSelf({ ["timeline"] = { ADDED_5_5_3 } }, {
-					["aqd"] = {
-						["coord"] = { 42.6, 50.2, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
-						["maps"] = { SHRINE_OF_SEVEN_STARS },
+					bubbleDownSelf({ timeline = { ADDED_5_5_3 } }, {
+					aqd = {
+						coord = { 42.6, 50.2, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
+						maps = { SHRINE_OF_SEVEN_STARS },
 					},
-					["hqd"] = {
-						["coord"] = { 42.6, 84.4, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
-						["maps"] = { SHRINE_OF_TWO_MOONS },
+					hqd = {
+						coord = { 42.6, 84.4, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+						maps = { SHRINE_OF_TWO_MOONS },
 					},
-					["groups"] = appendGroups(
+					groups = appendGroups(
 					{	-- Tier Tokens
 						shards(60, i(CELESTIAL_TOKENS.SEASON2.CONQUEROR.HELM)),
 						shards(50, i(CELESTIAL_TOKENS.SEASON2.CONQUEROR.SHOULDERS)),
@@ -1723,16 +1723,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 					}),
 				}))),
 				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, n(267317,	-- Celestial Harbinger <August Stone Cluster Exchange>
-					bubbleDownSelf({ ["timeline"] = { ADDED_5_5_4 } }, {
-					["aqd"] = {
-						["coord"] = { 49.4, 75.2, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
-						["maps"] = { SHRINE_OF_SEVEN_STARS, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
+					bubbleDownSelf({ timeline = { ADDED_5_5_4 } }, {
+					aqd = {
+						coord = { 49.4, 75.2, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
+						maps = { SHRINE_OF_SEVEN_STARS, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
 					},
-					["hqd"] = {
-						["coord"] = { 43.8, 42.4, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
-						["maps"] = { SHRINE_OF_TWO_MOONS, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+					hqd = {
+						coord = { 43.8, 42.4, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+						maps = { SHRINE_OF_TWO_MOONS, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					},
-					["groups"] = appendGroups(
+					groups = appendGroups(
 					{	-- Tier Tokens
 						clusters(60, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.HELM)),
 						clusters(50, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.SHOULDERS)),

@@ -273,7 +273,7 @@ if CombineSeasonalLoot then
 						i(168972),	-- Pyroclastic Greatboots
 						i(168971),	-- Swift Pneumatic Grips
 						i(199921, {	-- Trashmaster's Mantle
-							["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+							timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 						}),
 					},
 					-- Items that Blizzard switched from the default appearances for this difficulty
@@ -305,7 +305,7 @@ if CombineSeasonalLoot then
 						up = 35,	-- Upgrades to the modID 35 version
 					},{
 						BackwardsHeroTrackItem(i(235810, {	-- Circuit-Linked Chainmail
-							["timeline"]={ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART},
+							timeline={ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART},
 						})),
 						i(168989),	-- Hyperthread Wristwraps
 						i(168980),	-- Gauntlets of Absolute Authority
@@ -350,7 +350,7 @@ if CombineSeasonalLoot then
 						i(168972),	-- Pyroclastic Greatboots
 						i(168971),	-- Swift Pneumatic Grips
 						i(199921, {	-- Trashmaster's Mantle
-							["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+							timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 						}),
 					},
 					-- Items that Blizzard switched from the default appearances for this difficulty
@@ -380,7 +380,7 @@ if CombineSeasonalLoot then
 						modID = 35,
 					},{
 						BackwardsHeroTrackItem(i(235810, {	-- Circuit-Linked Chainmail
-							["timeline"]={ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART},
+							timeline={ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART},
 						})),
 						i(168989),	-- Hyperthread Wristwraps
 						i(168980),	-- Gauntlets of Absolute Authority
@@ -408,8 +408,8 @@ if CombineSeasonalLoot then
 		}),
 		-- Apparently the old versions of these helms ARE available during the season... but only from the Great Vault (confirmed)
 		header(HEADERS.Object, 446366, {	-- The Great Vault
-			["sharedDescription"] = "Only available from the Great Vault during the Season. It is expected (though not confirmed) that the original Source will be available again after the start of the next Season.",
-			["groups"] = {
+			sharedDescription = "Only available from the Great Vault during the Season. It is expected (though not confirmed) that the original Source will be available again after the start of the next Season.",
+			groups = {
 				i(169003),	-- Apogee Inventor's Goggles
 				i(169006),	-- Inventor's Ingenious Trifocals
 				i(169005),	-- Mekgineer's Mindbending Headgear
@@ -427,7 +427,7 @@ else
 					}),
 					Boss(KUJO, {
 						i(199921, {	-- Trashmaster's Mantle
-							["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+							timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 						}),
 					}),
 					Boss(MACHINIST, {
@@ -442,7 +442,7 @@ else
 				}),
 				Boss(KUJO, {
 					i(199921, {	-- Trashmaster's Mantle
-						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+						timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 						ItemAppearanceModifierID = 3,
 					}),
 				}),
@@ -484,8 +484,8 @@ appendAllGroups(SeasonDifficultyGroups, {
 			BossOnly(KUJO, {
 				-- Not entirely sure how this version is obtainable if at all during Seasons... so we will assume it isn't and see if any report
 				i(168970, {	-- Trashmaster's Mantle
-					["description"] = "Equipping this cloak gives you a temporary Trashmaster title. To get a permanent character-specific Trashmaster title, take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
-					["timeline"] = TIMELINE_UNAVAILABLE_MYTHICPLUS,
+					description = "Equipping this cloak gives you a temporary Trashmaster title. To get a permanent character-specific Trashmaster title, take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
+					timeline = TIMELINE_UNAVAILABLE_MYTHICPLUS,
 				}),
 			}),
 			-- Azerite from Heroic doesn't exist during the Season
@@ -512,8 +512,8 @@ appendAllGroups(SeasonDifficultyGroups, {
 				BossOnly(KUJO, {
 					-- Not entirely sure how this version is obtainable if at all during Seasons... so we will assume it isn't and see if any report
 					i(168970, {	-- Trashmaster's Mantle
-						["description"] = "Equipping this cloak gives you a temporary Trashmaster title. To get a permanent character-specific Trashmaster title, take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
-						["timeline"] = TIMELINE_UNAVAILABLE_MYTHICPLUS,
+						description = "Equipping this cloak gives you a temporary Trashmaster title. To get a permanent character-specific Trashmaster title, take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
+						timeline = TIMELINE_UNAVAILABLE_MYTHICPLUS,
 					}),
 				}),
 				-- Azerite from Mythic doesn't exist during the Season
@@ -527,7 +527,7 @@ appendAllGroups(SeasonDifficultyGroups, {
 local INSTANCE_GROUPS = {
 	n(AZERITE_ESSENCES, {
 		i(168844, {	-- Perfection-Enhancing Gearbox (Rank 3)
-			["cost"] = { { "i", 169774, 4 } },	-- 4x Progression Sprocket
+			cost = { { "i", 169774, 4 } },	-- 4x Progression Sprocket
 		}),
 	}),
 	petbattle(filter(BATTLE_PETS, {
@@ -596,7 +596,7 @@ local INSTANCE_GROUPS = {
 				i(169172),	-- Blueprint: Perfectly Timed Differential
 				i(168671),	-- Electromagnetic Resistors
 				i(255672, {	-- Gnomish Tesla Tower (DECOR!)
-					["timeline"] = { ADDED_11_2_7 },
+					timeline = { ADDED_11_2_7 },
 				}),
 				i(168747),	-- Performant Adaptable Logic Board
 				i(168749),	-- Performant Effective Logic Board
@@ -651,11 +651,11 @@ local INSTANCE_GROUPS = {
 	}),
 	Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
 		ach(13789, {	-- Hertz Locker
-			["description"] = "After completing the achievement, speak to Prince Erazmin on Mechagon Island to get the essence. You must already have the Rank 3 version.",
-			["u"] = REMOVED_FROM_GAME,
-			["groups"] = {
+			description = "After completing the achievement, speak to Prince Erazmin on Mechagon Island to get the essence. You must already have the Rank 3 version.",
+			u = REMOVED_FROM_GAME,
+			groups = {
 				i(168845, {	-- Mecha-Perfection Turbo (Rank 4)
-					["u"] = REMOVED_FROM_GAME,
+					u = REMOVED_FROM_GAME,
 				}),
 			},
 		}),
@@ -680,7 +680,7 @@ local INSTANCE_GROUPS = {
 			BossOnly(TUSSLETONKS, {
 				ach(13723, {	-- M.C., Hammered
 					i(246479, {	-- Gnomish T.O.O.L.B.O.X. (DECOR!)
-						["timeline"] = { ADDED_11_2_7 },
+						timeline = { ADDED_11_2_7 },
 					}),
 				}),
 			}),
@@ -711,15 +711,15 @@ appendAllGroups(INSTANCE_GROUPS, SeasonDifficultyGroups)
 
 root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1178, {	-- Operation: Mechagon
-		["coord"] = { 73.1, 36.3, MECHAGON },
-		["timeline"] = {ADDED_8_2_0},
-		["maps"] = {
+		coord = { 73.1, 36.3, MECHAGON },
+		timeline = {ADDED_8_2_0},
+		maps = {
 			1490,	-- Mechagon Island
 			1491,	-- The Robodrome
 			1493,	-- Waste Pipes
 			1494,	-- The Under Junk
 			1497,	-- Mechagon City
 		},
-		["groups"] = INSTANCE_GROUPS
+		groups = INSTANCE_GROUPS
 	}),
 }))

@@ -7,98 +7,98 @@
 -- 	[MPLUS] = { 574411 },	-- Challenger's Cache
 -- }
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ ["timeline"] = { ADDED_3_3_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ timeline = { ADDED_3_3_0 } }, {
 	inst(278, {	-- Pit of Saron
-		["mapID"] = PIT_OF_SARON,
-		["coord"] = { 52.3, 89.3, ICECROWN },
-		["lvl"] = lvlsquish(78, 78, 25),
-		["groups"] = {
+		mapID = PIT_OF_SARON,
+		coord = { 52.3, 89.3, ICECROWN },
+		lvl = lvlsquish(78, 78, 25),
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(4517, {	-- The Pit of Saron
 					crit(13317, {	-- Forgemaster Garfrost
-						["_encounter"] = { 608, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { 608, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13318, {	-- Ick and Krick
-						["_encounter"] = { 609, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { 609, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(13319, {	-- Scourgelord Tyrannus and Rimefang
-						["_encounter"] = { 610, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { 610, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 				}),
 				ach(4520, {	-- Heroic: The Pit of Saron
 					crit(13182, {	-- Forgemaster Garfrost
-						["_encounter"] = { 608, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { 608, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(13173, {	-- Ick and Krick
-						["_encounter"] = { 609, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { 609, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(13175, {	-- Scourgelord Tyrannus and Rimefang
-						["_encounter"] = { 610, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { 610, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
 			n(QUESTS, {
 				q(24710, {	-- Deliverance from the Pit (A)
-					["sourceQuest"] = 24498,	-- The Path to the Citadel (A)
-					["qg"] = 37591,	-- Martin Victus
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(78, 78, 25),
-					["groups"] = {
+					sourceQuest = 24498,	-- The Path to the Citadel (A)
+					qg = 37591,	-- Martin Victus
+					races = ALLIANCE_ONLY,
+					lvl = lvlsquish(78, 78, 25),
+					groups = {
 						objective(1, {	-- 0/1 Scourgelord Tyrannus slain
-							["provider"] = { "n", 36658 },	-- Scourgelord Tyrannus
+							provider = { "n", 36658 },	-- Scourgelord Tyrannus
 						}),
 					},
 				}),
 				q(24712, {	-- Deliverance from the Pit (H)
-					["sourceQuest"] = 24507,	-- The Path to the Citadel (H)
-					["qg"] = 24712,	-- Gorkun Ironskull
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(78, 78, 25),
-					["groups"] = {
+					sourceQuest = 24507,	-- The Path to the Citadel (H)
+					qg = 24712,	-- Gorkun Ironskull
+					races = HORDE_ONLY,
+					lvl = lvlsquish(78, 78, 25),
+					groups = {
 						objective(1, {	-- 0/1 Scourgelord Tyrannus slain
-							["provider"] = { "n", 36658 },	-- Scourgelord Tyrannus
+							provider = { "n", 36658 },	-- Scourgelord Tyrannus
 						}),
 					},
 				}),
 				q(24711, {	-- Frostmourne (A)
-					["sourceQuest"] = 24710,	-- Deliverance from the Pit (A)
-					["qg"] = 38188,	-- Lady Jaina Proudmoore
-					["maps"] = { HALLS_OF_REFLECTION },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(78, 78, 25),
+					sourceQuest = 24710,	-- Deliverance from the Pit (A)
+					qg = 38188,	-- Lady Jaina Proudmoore
+					maps = { HALLS_OF_REFLECTION },
+					races = ALLIANCE_ONLY,
+					lvl = lvlsquish(78, 78, 25),
 				}),
 				q(24713, {	-- Frostmourne (H)
-					["sourceQuest"] = 24712,	-- Deliverance from the Pit (H)
-					["qg"] = 38189,	-- Lady Sylvanas Windrunner <Banshee Queen>
-					["maps"] = { HALLS_OF_REFLECTION },
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(78, 78, 25),
+					sourceQuest = 24712,	-- Deliverance from the Pit (H)
+					qg = 38189,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					maps = { HALLS_OF_REFLECTION },
+					races = HORDE_ONLY,
+					lvl = lvlsquish(78, 78, 25),
 				}),
 				q(24498, {	-- The Path to the Citadel (A)
-					["sourceQuest"] = 24683,	-- The Pit of Saron (A)
-					["qg"] = 36993,	-- Lady Jaina Proudmoore
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(78, 78, 25),
-					["groups"] = {
+					sourceQuest = 24683,	-- The Pit of Saron (A)
+					qg = 36993,	-- Lady Jaina Proudmoore
+					races = ALLIANCE_ONLY,
+					lvl = lvlsquish(78, 78, 25),
+					groups = {
 						objective(1, {	-- 0/15 Alliance Slave freed
-							["provider"] = { "n", 36764 },	-- Alliance Slave
+							provider = { "n", 36764 },	-- Alliance Slave
 						}),
 						objective(2, {	-- 0/1 Forgemaster Garfrost slain
-							["provider"] = { "n", 36494 },	-- Forgemaster Garfrost
+							provider = { "n", 36494 },	-- Forgemaster Garfrost
 						}),
 					},
 				}),
 				q(24507, {	-- The Path to the Citadel (H)
-					["sourceQuest"] = 24682,	-- The Pit of Saron (H)
-					["qg"] = 36990,	-- Lady Sylvanas Windrunner <Banshee Queen>
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(78, 78, 25),
-					["groups"] = {
+					sourceQuest = 24682,	-- The Pit of Saron (H)
+					qg = 36990,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					races = HORDE_ONLY,
+					lvl = lvlsquish(78, 78, 25),
+					groups = {
 						objective(1, {	-- 0/15 Horde Slave freed
-							["provider"] = { "n", 36770 },	-- Horde Slave
+							provider = { "n", 36770 },	-- Horde Slave
 						}),
 						objective(2, {	-- 0/1 Forgemaster Garfrost slain
-							["provider"] = { "n", 36494 },	-- Forgemaster Garfrost
+							provider = { "n", 36494 },	-- Forgemaster Garfrost
 						}),
 					},
 				}),
@@ -106,7 +106,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			-- #if ANYCLASSIC
 			n(ZONE_DROPS, {
 				i(49718, {	-- Infused Saronite Bar
-					["provider"] = { "o", 201592 },	-- Infused Saronite Bars
+					provider = { "o", 201592 },	-- Infused Saronite Bars
 				}),
 			}),
 			-- #endif
@@ -118,8 +118,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					i(49853),	-- Titanium Links of Lore
 				}),
 				e(608, {	-- Forgemaster Garfrost
-					["creatureID"] = 36494,	-- Forgemaster Garfrost
-					["groups"] = {
+					creatureID = 36494,	-- Forgemaster Garfrost
+					groups = {
 						i(49802),	-- Garfrost's Two-Ton Hammer
 						i(49801),	-- Unspeakable Secret
 						-- #if AFTER 7.3.5
@@ -141,8 +141,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					},
 				}),
 				e(609, {	-- Ick and Krick
-					["creatureID"] = 36476,	-- Ick <Krick's Minion>
-					["groups"] = {
+					creatureID = 36476,	-- Ick <Krick's Minion>
+					groups = {
 						i(49807),	-- Krick's Beetle Stabber
 						-- #if AFTER 7.3.5
 						i(50262),	-- Felglacier Bolter (7.3.5 - Used to be only Heroic Mode)
@@ -166,9 +166,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					},
 				}),
 				e(610, {	-- Scourgelord Tyrannus
-					["creatureID"] = 36658,	-- Scourgelord Tyrannus
-					["groups"] = {
-						i(267007, {["timeline"] = { ADDED_12_0_0 }}),	-- Eye of Acherus (DECOR!)
+					creatureID = 36658,	-- Scourgelord Tyrannus
+					groups = {
+						i(267007, {timeline = { ADDED_12_0_0 }}),	-- Eye of Acherus (DECOR!)
 						-- #if AFTER 7.3.5
 						i(50273),	-- Engraved Gargoyle Femur (7.3.5 - Used to be only Heroic Mode)
 						i(50267),	-- Tyrannical Beheader (7.3.5 - Used to be only Heroic Mode)
@@ -205,11 +205,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["lvl"] = lvlsquish(80, 80, 30),
-				["groups"] = {
+				lvl = lvlsquish(80, 80, 30),
+				groups = {
 					n(ACHIEVEMENTS, {
 						ach(4525, {	-- Don't Look Up
-							["timeline"] = { ADDED_3_3_0, REMOVED_12_0_1_LAUNCH },
+							timeline = { ADDED_3_3_0, REMOVED_12_0_1_LAUNCH },
 						}),
 					}),
 					n(ZONE_DROPS, {
@@ -220,10 +220,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						i(50319),	-- Unsharpened Ice Razor
 					}),
 					e(608, {	-- Forgemaster Garfrost
-						["creatureID"] = 36494,	-- Forgemaster Garfrost
-						["groups"] = {
+						creatureID = 36494,	-- Forgemaster Garfrost
+						groups = {
 							ach(4524, {	-- Doesn't Go to Eleven
-								["timeline"] = { ADDED_3_3_0, REMOVED_12_0_1_LAUNCH },
+								timeline = { ADDED_3_3_0, REMOVED_12_0_1_LAUNCH },
 							}),
 							-- #if AFTER 7.3.5
 							i(49802),	-- Garfrost's Two-Ton Hammer (7.3.5 - Used to be only Normal Mode)
@@ -248,8 +248,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						},
 					}),
 					e(609, {	-- Ick and Krick
-						["creatureID"] = 36476,	-- Ick <Krick's Minion>
-						["groups"] = {
+						creatureID = 36476,	-- Ick <Krick's Minion>
+						groups = {
 							-- #if AFTER 7.3.5
 							i(49807),	-- Krick's Beetle Stabber (7.3.5 - Used to be only Normal Mode)
 							-- #endif
@@ -273,13 +273,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						},
 					}),
 					e(610, {	-- Scourgelord Tyrannus
-						["creatureID"] = 36658,	-- Scourgelord Tyrannus
-						["groups"] = {
+						creatureID = 36658,	-- Scourgelord Tyrannus
+						groups = {
 							ach(5113, {	-- Heroic: The Pit of Saron Guild Run
-								["timeline"] = { ADDED_4_0_3 },
+								timeline = { ADDED_4_0_3 },
 							}),
-							i(267007, {["timeline"] = { ADDED_12_0_0 }}),	-- Eye of Acherus (DECOR!)
-							i(252421, {["timeline"] = { ADDED_12_0_1_LAUNCH }}),	-- Rotting Globule
+							i(267007, {timeline = { ADDED_12_0_0 }}),	-- Eye of Acherus (DECOR!)
+							i(252421, {timeline = { ADDED_12_0_1_LAUNCH }}),	-- Rotting Globule
 							i(50273),	-- Engraved Gargoyle Femur
 							i(50267),	-- Tyrannical Beheader
 							i(50268),	-- Rimefang's Claw
@@ -318,7 +318,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(278, {
 		q(35438),	-- Pit of Saron Reward Quest - Normal completion
 		q(35440),	-- Pit of Saron Reward Quest - Heroic completion

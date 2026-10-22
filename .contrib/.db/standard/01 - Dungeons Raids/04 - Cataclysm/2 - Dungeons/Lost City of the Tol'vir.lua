@@ -2,45 +2,45 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_0_3 }, {
 	applyclassicphase(CATA_PHASE_ONE, inst(69, {	-- Lost City of the Tol'vir
-		["mapID"] = 277,
-		["coord"] = { 60.53, 64.29, ULDUM },	-- Lost City of Tol'vir
-		["groups"] = {
+		mapID = 277,
+		coord = { 60.53, 64.29, ULDUM },	-- Lost City of Tol'vir
+		groups = {
 			n(QUESTS, {
 				q(28870, {	-- Return to the Lost City
-					["sourceQuest"] = 28520,	-- The Fall of Neferset City
-					["qg"] = 47684,	-- King Phaoris
-					["coord"] = { 54.9, 32.7, ULDUM },
-					["isBreadcrumb"] = true,
+					sourceQuest = 28520,	-- The Fall of Neferset City
+					qg = 47684,	-- King Phaoris
+					coord = { 54.9, 32.7, ULDUM },
+					isBreadcrumb = true,
 				}),
 				q(28781, {	-- Targets of Opportunity
-					["sourceQuest"] = 28870,	-- Return to the Lost City
-					["qg"] = 50038,	-- Captain Hadan
-					["groups"] = {
+					sourceQuest = 28870,	-- Return to the Lost City
+					qg = 50038,	-- Captain Hadan
+					groups = {
 						i(66905),	-- Clandestine Spaulders
 						i(66906),	-- Bracers of the Lost City
 						i(66907),	-- Captain Hadan's Pauldrons
 					},
 				}),
 				q(28783, {	-- The Source of Their Power
-					["sourceQuest"] = 28870,	-- Return to the Lost City
-					["qg"] = 50038,	-- Captain Hadan
-					["groups"] = {
+					sourceQuest = 28870,	-- Return to the Lost City
+					qg = 50038,	-- Captain Hadan
+					groups = {
 						i(66910),	-- Blight-Lifter's Mantle
 						i(66908),	-- Treads of the Neferset
 						i(66909),	-- Ramkahen Front Boots
 					},
 				}),
 				q(28801, {	-- Tol'vir Hieroglyphics
-					["provider"] = { "o", 207409 },	-- Tol'vir Grave
-					["requireSkill"] = ARCHAEOLOGY,
-					["isRepeatable"] = true,
+					provider = { "o", 207409 },	-- Tol'vir Grave
+					requireSkill = ARCHAEOLOGY,
+					isRepeatable = true,
 				}),
 			}),
 			n(ZONE_DROPS, {
 				i(55881, {	-- Impetuous Query
-					["crs"] = {
+					crs = {
 						45007,	-- Enslaved Bandit
 						45001,	-- Enslaved Bandit
 						44982,	-- Neferset Darkcaster
@@ -61,7 +61,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				i(55884, {	-- Mirage Ring
-					["crs"] = {
+					crs = {
 						45007,	-- Enslaved Bandit
 						45001,	-- Enslaved Bandit
 						44982,	-- Neferset Darkcaster
@@ -82,7 +82,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				i(55882, {	-- Oasis Bracers
-					["crs"] = {
+					crs = {
 						45007,	-- Enslaved Bandit
 						45001,	-- Enslaved Bandit
 						44982,	-- Neferset Darkcaster
@@ -103,10 +103,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = REMOVED_7_3_5 }, {
 				e(117, {	-- General Husam
-					["crs"] = { 44577 },	-- General Husam
-					["groups"] = {
+					crs = { 44577 },	-- General Husam
+					groups = {
 						i(55856),	-- Greaves of Wu the Elder
 						i(55857),	-- Ionic Gloves
 						i(55858),	-- Kaleti Cloak
@@ -115,8 +115,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				e(118, {	-- Lockmaw
-					["crs"] = { 43614 },	-- Lockmaw
-					["groups"] = {
+					crs = { 43614 },	-- Lockmaw
+					groups = {
 						i(55870),	-- Barim's Main Gauche
 						i(55863),	-- Ring of the Darkest Day
 						i(55866),	-- Sand Silk Wristband
@@ -125,8 +125,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				e(119, {	-- High Prophet Barim
-					["crs"] = { 43612 },	-- High Prophet Barim
-					["groups"] = {
+					crs = { 43612 },	-- High Prophet Barim
+					groups = {
 						i(55861),	-- Balkar's Waders
 						i(55862),	-- Greaves of Wu the Younger
 						i(55868),	-- Heart of Solace
@@ -135,8 +135,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				e(122, {	-- Siamat
-					["crs"] = { 44819 },	-- Siamat
-					["groups"] = {
+					crs = { 44819 },	-- Siamat
+					groups = {
 						-- #if BEFORE 7.3.5
 						ach(4848),	-- Lost City of the Tol'vir
 						-- #endif
@@ -156,8 +156,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			-- #if BEFORE 7.3.5
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(117, {	-- General Husam
-					["crs"] = { 44577 },	-- General Husam
-					["groups"] = {
+					crs = { 44577 },	-- General Husam
+					groups = {
 						i(56381),	-- Greaves of Wu the Elder
 						i(56383),	-- Ionic Gloves
 						i(56379),	-- Kaleki Cloak
@@ -166,11 +166,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				e(118, {	-- Lockmaw
-					["crs"] = {
+					crs = {
 						43614,	-- Lockmaw
 						49045,	-- Augh
 					},
-					["groups"] = {
+					groups = {
 						ach(5291),	-- Acrocalypse Now
 						i(56390),	-- Barim's Main Gauche
 						i(56388),	-- Ring of the Darkest Day
@@ -180,8 +180,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				e(119, {	-- High Prophet Barim
-					["crs"] = { 43612 },	-- High Prophet Barim
-					["groups"] = {
+					crs = { 43612 },	-- High Prophet Barim
+					groups = {
 						ach(5290),	-- Kill It With Fire!
 						i(56386),	-- Balkar's Waders
 						i(56387),	-- Greaves of Wu the Younger
@@ -191,8 +191,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				e(122, {	-- Siamat
-					["crs"] = { 44819 },	-- Siamat
-					["groups"] = {
+					crs = { 44819 },	-- Siamat
+					groups = {
 						ach(5292),	-- Headed South
 						ach(5066),	-- Heroic: Lost City of the Tol'vir
 						ach(5140),	-- Heroic: Lost City of the Tol'vir Guild Run
@@ -212,21 +212,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			-- #else
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				e(117, {	-- General Husam
-					["crs"] = { 44577 },	-- General Husam
-					["groups"] = {
+					crs = { 44577 },	-- General Husam
+					groups = {
 						i(56381),	-- Greaves of Wu the Elder
 						i(56383),	-- Ionic Gloves
 						i(56379),	-- Kaleki Cloak
 						i(157600, {	-- Necklace of Rumbling Earth
-							["timeline"] = { ADDED_7_3_5 },
+							timeline = { ADDED_7_3_5 },
 						}),
 						i(56382),	-- Siliza's Spear
 						i(56380),	-- Spirit Creeper Ring
 					},
 				}),
 				e(118, {	-- Lockmaw
-					["crs"] = { 43614 },	-- Lockmaw
-					["groups"] = {
+					crs = { 43614 },	-- Lockmaw
+					groups = {
 						i(56386),	-- Balkar's Waders
 						i(56387),	-- Greaves of Wu the Younger
 						i(56384),	-- Resonant Kris
@@ -235,8 +235,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				e(119, {	-- High Prophet Barim
-					["crs"] = { 43612 },	-- High Prophet Barim
-					["groups"] = {
+					crs = { 43612 },	-- High Prophet Barim
+					groups = {
 						i(56390),	-- Barim's Main Gauche
 						i(56393),	-- Heart of Solace
 						i(56389),	-- Sand Silk Wristband
@@ -245,8 +245,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				e(122, {	-- Siamat
-					["crs"] = { 44819 },	-- Siamat
-					["groups"] = {
+					crs = { 44819 },	-- Siamat
+					groups = {
 						ach(4848),	-- Lost City of the Tol'vir
 						i(56395),	-- Crafty's Gaiters
 						i(56403),	-- Evelyn's Belt
@@ -256,7 +256,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56399),	-- Mantle of Master Cho
 						i(56398),	-- Ring of Three Lights
 						i(157599, {	-- Sceptre of Swirling Winds
-							["timeline"] = { ADDED_7_3_5 },
+							timeline = { ADDED_7_3_5 },
 						}),
 						i(56400),	-- Sorrowsong
 						i(56394),	-- Tia's Grace
@@ -266,23 +266,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(118, {	-- Lockmaw
-					["crs"] = {
+					crs = {
 						43614,	-- Lockmaw
 						49045,	-- Augh
 					},
-					["groups"] = {
+					groups = {
 						ach(5291),	-- Acrocalypse Now
 					},
 				}),
 				e(119, {	-- High Prophet Barim
-					["crs"] = { 43612 },	-- High Prophet Barim
-					["groups"] = {
+					crs = { 43612 },	-- High Prophet Barim
+					groups = {
 						ach(5290),	-- Kill It With Fire!
 					},
 				}),
 				e(122, {	-- Siamat
-					["crs"] = { 44819 },	-- Siamat
-					["groups"] = {
+					crs = { 44819 },	-- Siamat
+					groups = {
 						ach(5292),	-- Headed South
 						ach(5066),	-- Heroic: Lost City of the Tol'vir
 						ach(5140),	-- Heroic: Lost City of the Tol'vir Guild Run
@@ -292,11 +292,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			-- #endif
 			-- #if ANYCLASSIC
 			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(PROTOCOL_INFERNO, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(470595),
-				["groups"] = {
+				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(470595),
+				groups = {
 					e(122, {	-- Siamat
-						["crs"] = { 44819 },	-- Siamat
-						["groups"] = {
+						crs = { 44819 },	-- Siamat
+						groups = {
 							ach(41145),	-- Protocol Inferno: Lost City of the Tol'vir
 						},
 					}),
@@ -307,7 +307,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(69, {
 		q(35413),	-- Lost City of the Tol'vir Reward Quest
 		q(35414),	-- Lost City of the Tol'vir Reward Quest

@@ -30,42 +30,42 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			i(240691),	-- Nar'thalas Graduate's Sabatons
 		}),
 		n(REWARDS, {
-			["description"] = "These items are equipped on your character or in the box you get when you make a new character during Legion Remix.",
-			["groups"] = {
+			description = "These items are equipped on your character or in the box you get when you make a new character during Legion Remix.",
+			groups = {
 				i(243373),	-- Timerunner's Weaponry
 				filter(BOWS, {
 					i(243369, {	-- Timerunner's Bow
-						["classes"] = { HUNTER },
+						classes = { HUNTER },
 					}),
 				}),
 				filter(DAGGERS, {
 					i(243368, {	-- Timerunner's Dagger
-						["classes"] = { ROGUE },
+						classes = { ROGUE },
 					}),
 				}),
 				filter(ONE_HANDED_MACES, {
 					i(243372, {	-- Timerunner's Mace
-						["classes"] = { DEMONHUNTER, DRUID, MONK, PALADIN, PRIEST, ROGUE, SHAMAN, WARRIOR },
+						classes = { DEMONHUNTER, DRUID, MONK, PALADIN, PRIEST, ROGUE, SHAMAN, WARRIOR },
 					}),
 				}),
 				filter(ONE_HANDED_SWORDS, {
 					i(243371, {	-- Timerunner's Sword
-						["classes"] = { DEMONHUNTER, DEATHKNIGHT, MAGE, MONK, PALADIN, ROGUE, WARRIOR, WARLOCK },
+						classes = { DEMONHUNTER, DEATHKNIGHT, MAGE, MONK, PALADIN, ROGUE, WARRIOR, WARLOCK },
 					}),
 				}),
 				filter(SHIELDS, {
 					i(243367, {	-- Timerunner's Shield
-						["classes"] = { PALADIN, SHAMAN, WARRIOR },
+						classes = { PALADIN, SHAMAN, WARRIOR },
 					}),
 				}),
 				filter(STAVES, {
 					i(243366, {	-- Timerunner's Staff
-						["classes"] = { DRUID, HUNTER, MAGE, MONK, PRIEST, SHAMAN, WARRIOR, WARLOCK },
+						classes = { DRUID, HUNTER, MAGE, MONK, PRIEST, SHAMAN, WARRIOR, WARLOCK },
 					}),
 				}),
 				filter(TWO_HANDED_SWORDS, {
 					i(243370, {	-- Timerunner's Greatsword
-						["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+						classes = { DEATHKNIGHT, PALADIN, WARRIOR },
 					}),
 				}),
 			},
@@ -75,8 +75,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
-		["timeline"] = { ADDED_11_2_5, REMOVED_LEGION_REMIX_END },
-		["groups"] = {
+		timeline = { ADDED_11_2_5, REMOVED_LEGION_REMIX_END },
+		groups = {
 			q(90686),	-- First Memento looted
 			q(90703, name(HEADERS.Spell,1232807)),	-- Unraveling Sands, Triggered upon accepting 'Obliterate, Then Iterate' (89413)
 			q(90864, name(HEADERS.Achievement,42313)),	-- Remixing Time, Triggered when completing Introductory quest-chain
@@ -101,9 +101,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(93155),	-- Triggered after killing 50 Empowered Enemies and obtaining achievement 'Legionslayer III'
 			q(91851),	-- Triggered after completing 10 WQs in Heroic World Tier and obtaining achievement 'Heroic Broken Isles World Quests I'
 			q(93243),	-- Triggered after completing 'Flow of the Nightmare' (q:43241) bonus objective in Val'sharah
-			q(93195, { ["isDaily"] = true }),	-- Triggered after Flamescale rare 1st kill of the day
+			q(93195, { isDaily = true }),	-- Triggered after Flamescale rare 1st kill of the day
 			-- HQTs triggered in M+
-			q(94420, { ["isDaily"] = true }),	-- Triggered after First M+ of each day
+			q(94420, { isDaily = true }),	-- Triggered after First M+ of each day
 			q(94421),	-- Triggered after First M+ 10 completed
 			q(94422),	-- Triggered after First M+ 30 completed
 		},

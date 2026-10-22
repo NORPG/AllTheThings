@@ -2,7 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3 } }, {
+root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6_0_3 } }, {
 	n(SETS, {
 		i(106390),	-- Bladespire Breastplate
 		i(106391),	-- Bladespire Gauntlets
@@ -544,7 +544,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { AD
 			i(122240, {	-- Footwraps of the Frostweaver
 				-- #if BEFORE 10.0.1
 				-- CRIEVE NOTE: This might have changed with Dragonflight rather than 10.1.7, which is when it was reported to us to be BOE.
-				["description"] = "Yes, they're a world drop, and yes, they're BoP. We're as perplexed as you are.",
+				description = "Yes, they're a world drop, and yes, they're BoP. We're as perplexed as you are.",
 				-- #endif
 			}),
 			i(106354),	-- Grime-Fouled Mail Boots
@@ -878,9 +878,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { AD
 	}),
 	filter(RECIPES, {
 		q(36239, {	-- A Mysterious Satchel
-			["description"] = "This item can drop from any Draenor mob.",
-			["provider"] = { "i", 114984 },	-- Mysterious Satchel
-			["maps"] = {
+			description = "This item can drop from any Draenor mob.",
+			provider = { "i", 114984 },	-- Mysterious Satchel
+			maps = {
 				FROSTFIRE_RIDGE,
 				GORGROND,
 				DRAENOR_NAGRAND,
@@ -888,14 +888,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { AD
 				SPIRES_OF_ARAK,
 				TALADOR,
 			},
-			["requireSkill"] = INSCRIPTION,
-			["races"] = ALLIANCE_ONLY,
-			["lvl"] = 90,
+			requireSkill = INSCRIPTION,
+			races = ALLIANCE_ONLY,
+			lvl = 90,
 		}),
 		q(36435, {	-- Unintelligible Intelligence
-			["description"] = "This item can drop from any Draenor mob.",
-			["provider"] = { "i", 115593 },	-- Illegible Sootstained Notes
-			["maps"] = {
+			description = "This item can drop from any Draenor mob.",
+			provider = { "i", 115593 },	-- Illegible Sootstained Notes
+			maps = {
 				FROSTFIRE_RIDGE,
 				GORGROND,
 				DRAENOR_NAGRAND,
@@ -903,9 +903,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { AD
 				SPIRES_OF_ARAK,
 				TALADOR,
 			},
-			["requireSkill"] = INSCRIPTION,
-			["races"] = HORDE_ONLY,
-			["lvl"] = 90,
+			requireSkill = INSCRIPTION,
+			races = HORDE_ONLY,
+			lvl = 90,
 		}),
 		i(116438),	-- Burned-Out Hand Cannon
 		i(114972),	-- Cryptic Tome of Tailoring

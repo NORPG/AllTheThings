@@ -6,141 +6,141 @@ local SymRaidVault = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1200,DiffID,ClassID}};
 end
 local function bo(questID, isWeekly)
-    return { ["questID"] = questID, ["isWeekly"] = isWeekly };
+    return { questID = questID, isWeekly = isWeekly };
 end
 
 local ELEMENTAL_OVERFLOW = 2118;
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	n(PRIMAL_STORMS, {
-		["maps"] = { VALDRAKKEN },
-		["groups"] = {
+		maps = { VALDRAKKEN },
+		groups = {
 			-- Storm-type based Achievement headers
 			n(ACHIEVEMENTS, {
 				n(FIRESTORMS, {
 					ach(16487, {	-- Firestorms in Thaldraszus
-						["maps"] = { THALDRASZUS },
+						maps = { THALDRASZUS },
 					}),
 					ach(16482, {	-- Firestorms in The Azure Span
-						["maps"] = { THE_AZURE_SPAN },
+						maps = { THE_AZURE_SPAN },
 					}),
 					ach(16478, {	-- Firestorms in The Ohn'ahran Plains
-						["maps"] = { OHNAHRAN_PLAINS },
+						maps = { OHNAHRAN_PLAINS },
 					}),
 					ach(16466, {	-- Firestorms in The Waking Shores
-						["maps"] = { THE_WAKING_SHORES },
+						maps = { THE_WAKING_SHORES },
 					}),
 				}),
 				n(SANDSTORMS, {
 					ach(16486, {	-- Sandstorms in Thaldraszus
-						["maps"] = { THALDRASZUS },
+						maps = { THALDRASZUS },
 					}),
 					ach(16481, {	-- Sandstorms in The Azure Span
-						["maps"] = { THE_AZURE_SPAN },
+						maps = { THE_AZURE_SPAN },
 					}),
 					ach(16477, {	-- Sandstorms in The Ohn'ahran Plains
-						["maps"] = { OHNAHRAN_PLAINS },
+						maps = { OHNAHRAN_PLAINS },
 					}),
 					ach(16465, {	-- Sandstorms in The Waking Shores
-						["maps"] = { THE_WAKING_SHORES },
+						maps = { THE_WAKING_SHORES },
 					}),
 				}),
 				n(SNOWSTORMS, {
 					ach(16488, {	-- Snowstorms in Thaldraszus
-						["maps"] = { THALDRASZUS },
+						maps = { THALDRASZUS },
 					}),
 					ach(16483, {	-- Snowstorms in The Azure Span
-						["maps"] = { THE_AZURE_SPAN },
+						maps = { THE_AZURE_SPAN },
 					}),
 					ach(16479, {	-- Snowstorms in The Ohn'ahran Plains
-						["maps"] = { OHNAHRAN_PLAINS },
+						maps = { OHNAHRAN_PLAINS },
 					}),
 					ach(16467, {	-- Snowstorms in The Waking Shores
-						["maps"] = { THE_WAKING_SHORES },
+						maps = { THE_WAKING_SHORES },
 					}),
 				}),
 				n(THUNDERSTORMS, {
 					ach(16485, {	-- Thunderstorms in Thaldraszus
-						["maps"] = { THALDRASZUS },
+						maps = { THALDRASZUS },
 					}),
 					ach(16480, {	-- Thunderstorms in The Azure Span
-						["maps"] = { THE_AZURE_SPAN },
+						maps = { THE_AZURE_SPAN },
 					}),
 					ach(16475, {	-- Thunderstorms in The Ohn'ahran Plains
-						["maps"] = { OHNAHRAN_PLAINS },
+						maps = { OHNAHRAN_PLAINS },
 					}),
 					ach(16463, {	-- Thunderstorms in The Waking Shores
-						["maps"] = { THE_WAKING_SHORES },
+						maps = { THE_WAKING_SHORES },
 					}),
 				}),
 			}),
 			n(ACHIEVEMENTS, {
 				ach(16489, {	-- Chasing Storms in Thaldraszus
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						16487,	-- Firestorms in Thaldraszus
 						16486,	-- Sandstorms in Thaldraszus
 						16488,	-- Snowstorms in Thaldraszus
 						16485,	-- Thunderstorms in Thaldraszus
 					}},
-					["maps"] = { THALDRASZUS },
+					maps = { THALDRASZUS },
 				}),
 				ach(16484, {	-- Chasing Storms in The Azure Span
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						16482,	-- Firestorms in The Azure Span
 						16481,	-- Sandstorms in The Azure Span
 						16483,	-- Snowstorms in The Azure Span
 						16480,	-- Thunderstorms in The Azure Span
 					}},
-					["maps"] = { THE_AZURE_SPAN },
+					maps = { THE_AZURE_SPAN },
 				}),
 				ach(16476, {	-- Chasing Storms in The Ohn'ahran Plains
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						16478,	-- Firestorms in The Ohn'ahran Plains
 						16477,	-- Sandstorms in The Ohn'ahran Plains
 						16479,	-- Snowstorms in The Ohn'ahran Plains
 						16475,	-- Thunderstorms in The Ohn'ahran Plains
 					}},
-					["maps"] = { OHNAHRAN_PLAINS },
+					maps = { OHNAHRAN_PLAINS },
 				}),
 				ach(16468, {	-- Chasing Storms in The Waking Shores
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						16466,	-- Firestorms in The Waking Shores
 						16465,	-- Sandstorms in The Waking Shores
 						16467,	-- Snowstorms in The Waking Shores
 						16463,	-- Thunderstorms in The Waking Shores
 					}},
-					["maps"] = { THE_WAKING_SHORES },
+					maps = { THE_WAKING_SHORES },
 				}),
 				ach(16498, {	-- Elemental Overflow
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				ach(16499, {	-- Elemental Overflowing
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				ach(16500, {	-- Elemental Overload
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				ach(16492, {	-- Into the Storm
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						16500,	-- Elemental Overload
 						16490,	-- Storm Chaser
 						16461,	-- Stormed Off
 						16502,	-- Storming the Runway
 					}},
-					["groups"] = {
+					groups = {
 						i(192774, {	-- Coralscale Salamanther (MOUNT!)
-							["timeline"] = { ADDED_10_2_6 },
+							timeline = { ADDED_10_2_6 },
 						}),
 					},
 				}),
 				ach(16490, {	-- Storm Chaser
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						16489,	-- Chasing Storms in Thaldraszus
 						16484,	-- Chasing Storms in The Azure Span
 						16476,	-- Chasing Storms in Ohn'ahran Plains
@@ -148,69 +148,69 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}},
 				}),
 				ach(16461, {	-- Stormed Off
-					["groups"] = {
+					groups = {
 						crit(55461, {
-							["_npcs"] = { 193648 },	-- Infernum
+							_npcs = { 193648 },	-- Infernum
 						}),
 						crit(55462, {
-							["_npcs"] = { 193645 },	-- Crystalus
+							_npcs = { 193645 },	-- Crystalus
 						}),
 						crit(55463, {
-							["_npcs"] = { 193644 },	-- Bouldron
+							_npcs = { 193644 },	-- Bouldron
 						}),
 						crit(55464, {
-							["_npcs"] = { 193647 },	-- Karantun
+							_npcs = { 193647 },	-- Karantun
 						}),
 						crit(55465, {
-							["_npcs"] = { 193686 },	-- Neela Firebane
+							_npcs = { 193686 },	-- Neela Firebane
 						}),
 						crit(55466, {
-							["_npcs"] = { 193682 },	-- Rouen Icewind
+							_npcs = { 193682 },	-- Rouen Icewind
 						}),
 						crit(55467, {
-							["_npcs"] = { 193680 },	-- Zurgaz Corebreaker
+							_npcs = { 193680 },	-- Zurgaz Corebreaker
 						}),
 						crit(55468, {
-							["_npcs"] = { 193684 },	-- Pipspark Thundersnap
+							_npcs = { 193684 },	-- Pipspark Thundersnap
 						}),
 						crit(55469, {
-							["_npcs"] = { 193652 },	-- Grizzlerock
+							_npcs = { 193652 },	-- Grizzlerock
 						}),
 						crit(55470, {
-							["_npcs"] = { 193674 },	-- Voraazka
+							_npcs = { 193674 },	-- Voraazka
 						}),
 						crit(55471, {
-							["_npcs"] = { 193675 },	-- Kain Firebrand
+							_npcs = { 193675 },	-- Kain Firebrand
 						}),
 						crit(55472, {
-							["_npcs"] = { 193677 },	-- Maeleera <First Iceblade>
+							_npcs = { 193677 },	-- Maeleera <First Iceblade>
 						}),
 						crit(55473, {
-							["_npcs"] = { 193678 },	-- Fieraan <Second Iceblade>
+							_npcs = { 193678 },	-- Fieraan <Second Iceblade>
 						}),
 						crit(55474, {
-							["_npcs"] = { 193679 },	-- Leerain <Third Iceblade>
+							_npcs = { 193679 },	-- Leerain <Third Iceblade>
 						}),
 						crit(55475, {
-							["_npcs"] = { 193653 },	-- Gaelzion <Progeny of Air>
+							_npcs = { 193653 },	-- Gaelzion <Progeny of Air>
 						}),
 						crit(55476, {
-							["_npcs"] = { 193654 },	-- Gravlion <Progeny of Earth>
+							_npcs = { 193654 },	-- Gravlion <Progeny of Earth>
 						}),
 						crit(55477, {
-							["_npcs"] = { 193650 },	-- Emblazion <Progeny of Fire>
+							_npcs = { 193650 },	-- Emblazion <Progeny of Fire>
 						}),
 						crit(55478, {
-							["_npcs"] = { 193655 },	-- Frozion <Progeny of Water>
+							_npcs = { 193655 },	-- Frozion <Progeny of Water>
 						}),
 					},
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				ach(16502),	-- Storming the Runway
 			}),
 			n(COMMON_BOSS_DROPS, {
-				["description"] = "These drops appear to be available from any Rare (Primal or not) which spawns within an area affected by a Primal Storm.",
-				["crs"] = {
+				description = "These drops appear to be available from any Rare (Primal or not) which spawns within an area affected by a Primal Storm.",
+				crs = {
 					193644,	-- Bouldron
 					193645,	-- Crystalus
 					193650,	-- Emblazion <Progeny of Fire>
@@ -230,13 +230,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					193674,	-- Voraazka
 					193680,	-- Zurgaz Corebreaker
 				},
-				["maps"] = {
+				maps = {
 					OHNAHRAN_PLAINS,
 					THALDRASZUS,
 					THE_AZURE_SPAN,
 					THE_WAKING_SHORES,
 				},
-				["groups"] = {
+				groups = {
 					i(194641),	-- Design: Elemental Lariat (RECIPE!)
 					i(200199),	-- Elements' Burden
 					i(200294),	-- Primal Chain Hauberk
@@ -249,15 +249,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			n(HEIRLOOMS, {
-				["maps"] = {
+				maps = {
 					OHNAHRAN_PLAINS,
 					THALDRASZUS,
 					THE_AZURE_SPAN,
 					THE_WAKING_SHORES,
 				},
-				["groups"] = {
+				groups = {
 					i(199686, {	-- Unstable Elemental Confluence
-						["cost"] = {
+						cost = {
 							{ "i", 199837, 1 },	-- 1x Dimmed Primeval Earth
 							{ "i", 199836, 1 },	-- 1x Dimmed Primeval Fire
 							{ "i", 199838, 1 },	-- 1x Dimmed Primeval Storm
@@ -268,7 +268,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 			petbattle(filter(BATTLE_PETS, {
 				pet(3384, {	-- Storm-Touched Bluefeather (PET!)
-					["maps"] = {
+					maps = {
 						THALDRASZUS,
 						-- #IF BEFORE 10.2.6
 						-- Blizzard removed from spawning inside the sub-zone
@@ -278,17 +278,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				pet(3354, {	-- Storm-Touched Ottuk (PET!)
-					["maps"] = { THE_AZURE_SPAN },
+					maps = { THE_AZURE_SPAN },
 				}),
 				pet(3385, {	-- Storm-Touched Stomper (PET!)
-					["maps"] = { THE_WAKING_SHORES },
+					maps = { THE_WAKING_SHORES },
 				}),
 				pet(3329, {	-- Storm-Touched Timbertooth (PET!)
-					["maps"] = { OHNAHRAN_PLAINS },
+					maps = { OHNAHRAN_PLAINS },
 				}),
 			})),
 			n(RARES, sharedData({
-				["coords"] = {
+				coords = {
 					-- possible Primal Storm spawn locations
 					{ 26.8, 75.4, THE_WAKING_SHORES },
 					{ 29.6, 53.8, THE_WAKING_SHORES },
@@ -305,10 +305,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			},{
 				n(FIRESTORMS, sharedData({
-					["isDaily"] = true,
+					isDaily = true,
 				},{
 					n(COMMON_BOSS_DROPS, sharedData({
-						["crs"] = {
+						crs = {
 							193650,	-- Emblazion <Progeny of Fire>
 							193648,	-- Infernum
 							193675,	-- Kain Firebrand
@@ -318,39 +318,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
 					})),
 					n(193650, {	-- Emblazion <Progeny of Fire>
-						["questID"] = 73991,
-						["groups"] = {
+						questID = 73991,
+						groups = {
 							bo(69955, true),
 							i(200307),	-- Viciously Hooked Cleaver
 						},
 					}),
 					n(193648, {	-- Infernum
-						["questID"] = 74005,
-						["groups"] = {
+						questID = 74005,
+						groups = {
 							bo(69954, true),
 							i(200150),	-- Infernum's Furnace
 						},
 					}),
 					n(193675, {	-- Kain Firebrand
-						["questID"] = 74006,
-						["groups"] = {
+						questID = 74006,
+						groups = {
 							bo(69970, true),
 							i(200155),	-- Haphazardly Welded Protector
 						},
 					}),
 					n(193686, {	-- Neela Firebane
-						["questID"] = 74016,
-						["groups"] = {
+						questID = 74016,
+						groups = {
 							bo(69975, true),
 							i(200181),	-- Blade of Blazing Torment
 						},
 					}),
 				})),
 				n(SANDSTORMS, sharedData({
-					["isDaily"] = true,
+					isDaily = true,
 				},{
 					n(COMMON_BOSS_DROPS, sharedData({
-						["crs"] = {
+						crs = {
 							193644,	-- Bouldron
 							193654,	-- Gravlion <Progeny of Earth>
 							193652,	-- Grizzlerock
@@ -360,37 +360,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
 					})),
 					n(193644, {	-- Bouldron
-						["questID"] = 73986,
-						["groups"] = {
+						questID = 73986,
+						groups = {
 							bo(69951, true),
 							i(200231),	-- Flaming Stonescale Bulwark
 						},
 					}),
 					n(193654, {	-- Gravlion <Progeny of Earth>
-						["questID"] = 73998,
-						["groups"] = {
+						questID = 73998,
+						groups = {
 							bo(69960, true),
 						},
 					}),
 					n(193652, {	-- Grizzlerock
-						["questID"] = 73999,
-						["groups"] = {
+						questID = 73999,
+						groups = {
 							bo(69956, true),
 							i(200145),	-- Hilted Monolith
 						},
 					}),
 					n(193680, {	-- Zurgaz Corebreaker
-						["questID"] = 74039,
-						["groups"] = {
+						questID = 74039,
+						groups = {
 							bo(69972, true),
 						},
 					}),
 				})),
 				n(SNOWSTORMS, sharedData({
-					["isDaily"] = true,
+					isDaily = true,
 				},{
 					n(COMMON_BOSS_DROPS, sharedData({
-						["crs"] = {
+						crs = {
 							193645,	-- Crystalus
 							193655,	-- Frozion <Progeny of Water>
 							193677,	-- Maeleera <First Iceblade>
@@ -400,27 +400,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
 					})),
 					n(193645, {	-- Crystalus
-						["questID"] = 73989,
-						["groups"] = {
+						questID = 73989,
+						groups = {
 							bo(69952, true),
 							i(200301),	-- Reclaimed Tuskarr Harpoon
 						},
 					}),
 					n(193655, {	-- Frozion <Progeny of Water>
-						["questID"] = 73993,
-						["groups"] = {
+						questID = 73993,
+						groups = {
 							bo(69961, true),
 							i(200311),	-- Bonespike Mallet
 						},
 					}),
 					-- Iceblade Trio
 					n(193677, {	-- Maeleera <First Iceblade>
-						["crs"] = {
+						crs = {
 							193678,	-- Fieraan <Second Iceblade>
 							193679,	-- Leerain <Third Iceblade>
 						},
-						["questID"] = 74009,
-						["groups"] = {
+						questID = 74009,
+						groups = {
 							bo(69971, true),
 							i(200250),	-- Frost Tipped Glaive
 						},
@@ -432,17 +432,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- questID shared with Maeleera/Fieraan, don't duplicate
 					}),
 					n(193682, {	-- Rouen Icewind
-						["questID"] = 74027,
-						["groups"] = {
+						questID = 74027,
+						groups = {
 							bo(69973, true),
 						},
 					}),
 				})),
 				n(THUNDERSTORMS, sharedData({
-					["isDaily"] = true,
+					isDaily = true,
 				},{
 					n(COMMON_BOSS_DROPS, sharedData({
-						["crs"] = {
+						crs = {
 							193653,	-- Gaelzion <Progeny of Air>
 							193647,	-- Karantun
 							193684,	-- Pipspark Thundersnap
@@ -453,29 +453,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
 					})),
 					n(193653, {	-- Gaelzion <Progeny of Air>
-						["questID"] = 73995,
-						["groups"] = {
+						questID = 73995,
+						groups = {
 							bo(69959, true),
 							i(200180),	-- Crystallized Lightning Staff
 						},
 					}),
 					n(193647, {	-- Karantun
-						["questID"] = 74007,
-						["groups"] = {
+						questID = 74007,
+						groups = {
 							bo(69953, true),
 							i(200170),	-- Stormbringer Bow
 						},
 					}),
 					n(193684, {	-- Pipspark Thundersnap
-						["questID"] = 74022,
-						["groups"] = {
+						questID = 74022,
+						groups = {
 							bo(69974, true),
 							i(200741),	-- Pipspark's Prestigious Pendant of Protection
 						},
 					}),
 					n(193674, {	-- Voraazka
-						["questID"] = 74038,
-						["groups"] = {
+						questID = 74038,
+						groups = {
 							bo(69969, true),
 							i(200136),	-- Monsoonic Armguards
 						},
@@ -484,69 +484,69 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			})),
 			n(QUESTS, {
 				q(72686, {	-- Storm Surge
-					["provider"] = { "n", 196598 },	-- Rethelshi
-					["coord"] = { 38.2, 37.0, VALDRAKKEN },
-					["isWeekly"] = true,
-					["groups"] = {
+					provider = { "n", 196598 },	-- Rethelshi
+					coord = { 38.2, 37.0, VALDRAKKEN },
+					isWeekly = true,
+					groups = {
 						currency(2122),	-- Storm Sigil
 					},
 				}),
 				q(71242, {	-- Supporting the Storm Researchers
-					["qs"] = 200675,	-- Elemental Overflow Cluster (QS!)
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					qs = 200675,	-- Elemental Overflow Cluster (QS!)
+					maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(70753, {	-- Dissipating the Air Primalists
-					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
-					["qs"] = 199749,	-- Primal Air Core (QS!)
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-					["isWeekly"] = true,
-					["groups"] = {
+					sourceQuest = 71242,	-- Supporting the Storm Researchers
+					qs = 199749,	-- Primal Air Core (QS!)
+					maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					isWeekly = true,
+					groups = {
 						currency(2122),	-- Storm Sigil
 					},
 				}),
 				q(70754, {	-- Extinguishing the Fire Primalists
-					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
-					["qs"] = 199750,	-- Primal Fire Core (QS!)
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-					["isWeekly"] = true,
-					["groups"] = {
+					sourceQuest = 71242,	-- Supporting the Storm Researchers
+					qs = 199750,	-- Primal Fire Core (QS!)
+					maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					isWeekly = true,
+					groups = {
 						currency(2122),	-- Storm Sigil
 					},
 				}),
 				q(70723, {	-- Shattering the Earth Primalists
-					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
-					["qs"] = 199691,	-- Primal Earth Core (QS!)
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-					["isWeekly"] = true,
-					["groups"] = {
+					sourceQuest = 71242,	-- Supporting the Storm Researchers
+					qs = 199691,	-- Primal Earth Core (QS!)
+					maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					isWeekly = true,
+					groups = {
 						currency(2122),	-- Storm Sigil
 					},
 				}),
 				q(70752, {	-- Vaporizing the Water Primalists
-					["sourceQuest"] = 71242,	-- Supporting the Storm Researchers
-					["qs"] = 199748,	-- Primal Water Core (QS!)
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-					["isWeekly"] = true,
-					["groups"] = {
+					sourceQuest = 71242,	-- Supporting the Storm Researchers
+					qs = 199748,	-- Primal Water Core (QS!)
+					maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+					isWeekly = true,
+					groups = {
 						currency(2122),	-- Storm Sigil
 					},
 				}),
 			}),
 			n(REWARDS, {
-				["maps"] = {
+				maps = {
 					OHNAHRAN_PLAINS,
 					THALDRASZUS,
 					THE_AZURE_SPAN,
 					THE_WAKING_SHORES,
 				},
 				-- #if after 10.0.7
-				["sym"] = {
+				sym = {
 					{"select","mapID",THE_FORBIDDEN_REACH},{"pop"},
 					{"where","headerID",ZONE_REWARDS},{"pop"},
 					{"exclude","itemID",202196},	-- Zskera Vault Key
 				},
 				-- #endif
-				["groups"] = {
+				groups = {
 						i(200183),	-- Echo of the Cave (PET!)
 						i(200260),	-- Echo of the Depths (PET!)
 						i(200263),	-- Echo of the Heights (PET!)
@@ -569,16 +569,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			-- #if AFTER TWW
 			--[[ technically primal storm mobs can also drop primal gear which can be upgraded to s1 tier set, but can farm them on forbidden reach. Way more rares & not time based. Uncommented Catalyst ~Goldenshacal 1st Sep 2024
 			o(382621, {	-- Revival Catalyst Console
-				["description"] = "The Revival Catalyst is a system that allows you convert Primalist Items from Primal Storm Events or a Normal Mode Non-set items from the Vault of the Incarnates Raid into your class' Normal Transmog Set.\n\nIf you upgrade your Primal Storm Item to 3/3 Upgrades, you will instead unlock your classes' Heroic Vault of the Incarnes Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
-				["coord"] = { 60.6, 53.8, THALDRASZUS },
-				["modelScale"] = 4,
-				["groups"] = bubbleDown({ ["modID"] = 4 }, {
+				description = "The Revival Catalyst is a system that allows you convert Primalist Items from Primal Storm Events or a Normal Mode Non-set items from the Vault of the Incarnates Raid into your class' Normal Transmog Set.\n\nIf you upgrade your Primal Storm Item to 3/3 Upgrades, you will instead unlock your classes' Heroic Vault of the Incarnes Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+				coord = { 60.6, 53.8, THALDRASZUS },
+				modelScale = 4,
+				groups = bubbleDown({ modID = 4 }, {
 					d(DIFFICULTY.RAID.NORMAL, {
-						["description"] = "",
-						["groups"] = bubbleDown({ ["modID"] = 3 }, {
+						description = "",
+						groups = bubbleDown({ modID = 3 }, {
 							cl(DEATHKNIGHT, {
-								["sym"] = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.NORMAL),
-								["groups"] = {
+								sym = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.NORMAL),
+								groups = {
 									i(200413),	-- Drape of the Haunted Frostbrood
 									i(200411),	-- Girdle of the Haunted Frostbrood
 									i(200406),	-- Sabatons of the Haunted Frostbrood
@@ -586,8 +586,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(DEMONHUNTER, {
-								["sym"] = SymRaidVault(DEMONHUNTER, DIFFICULTY.RAID.NORMAL),
-								["groups"] = {
+								sym = SymRaidVault(DEMONHUNTER, DIFFICULTY.RAID.NORMAL),
+								groups = {
 									i(200343),	-- Skybound Avenger's Boots
 									i(200350),	-- Skybound Avenger's Cape
 									i(200348),	-- Skybound Avenger's Waistwrap
@@ -595,8 +595,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(DRUID, {
-								["sym"] = SymRaidVault(DRUID, DIFFICULTY.RAID.NORMAL),
-								["groups"] = {
+								sym = SymRaidVault(DRUID, DIFFICULTY.RAID.NORMAL),
+								groups = {
 									i(200358),	-- Lost Landcaller's Bindings
 									i(200359),	-- Lost Landcaller's Laena
 									i(200352),	-- Lost Landcaller's Moccasins
@@ -604,8 +604,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(EVOKER, {
-								["sym"] = SymRaidVault(EVOKER, DIFFICULTY.RAID.NORMAL),
-								["groups"] = {
+								sym = SymRaidVault(EVOKER, DIFFICULTY.RAID.NORMAL),
+								groups = {
 									i(200385),	-- Bracers of the Awakened
 									i(200384),	-- Chain of the Awakened
 									i(200386),	-- Shroud of the Awakened
@@ -613,8 +613,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(HUNTER, {
-								["sym"] = SymRaidVault(HUNTER, DIFFICULTY.RAID.NORMAL),
-								["groups"] = {
+								sym = SymRaidVault(HUNTER, DIFFICULTY.RAID.NORMAL),
+								groups = {
 									i(200393),	-- Stormwing Harrier's Belt
 									i(200395),	-- Stormwing Harrier's Plumage
 									i(200388),	-- Stormwing Harrier's Sabatons
@@ -622,8 +622,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(MAGE, {
-								["sym"] = SymRaidVault(MAGE, DIFFICULTY.RAID.NORMAL),
-								["groups"] = {
+								sym = SymRaidVault(MAGE, DIFFICULTY.RAID.NORMAL),
+								groups = {
 									i(200323),	-- Crystal Scholar's Cape
 									i(200321),	-- Crystal Scholar's Cinch
 									i(200322),	-- Crystal Scholar's Cuffs
@@ -631,8 +631,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(MONK, {
-								["sym"] = SymRaidVault(MONK, DIFFICULTY.RAID.NORMAL),
-								["groups"] = {
+								sym = SymRaidVault(MONK, DIFFICULTY.RAID.NORMAL),
+								groups = {
 									i(200367),	-- Cuffs of the Waking Fist
 									i(200368),	-- Drape of the Waking Fist
 									i(200361),	-- Gaiters of the Waking Fist
@@ -640,8 +640,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(PALADIN, {
-								["sym"] = SymRaidVault(PALADIN, DIFFICULTY.RAID.NORMAL),
-								["groups"] = {
+								sym = SymRaidVault(PALADIN, DIFFICULTY.RAID.NORMAL),
+								groups = {
 									i(200421),	-- Virtuous Silver Bracers
 									i(200422),	-- Virtuous Silver Cloak
 									i(200420),	-- Virtuous Silver Faulds
@@ -649,8 +649,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(PRIEST, {
-								["sym"] = SymRaidVault(PRIEST, DIFFICULTY.RAID.NORMAL),
-								["groups"] = {
+								sym = SymRaidVault(PRIEST, DIFFICULTY.RAID.NORMAL),
+								groups = {
 									i(200332),	-- Draconic Hierophant's Drape
 									i(200330),	-- Draconic Hierophant's Sash
 									i(200325),	-- Draconic Hierophant's Slippers
@@ -658,8 +658,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(ROGUE, {
-								["sym"] = SymRaidVault(ROGUE, DIFFICULTY.RAID.NORMAL),
-								["groups"] = {
+								sym = SymRaidVault(ROGUE, DIFFICULTY.RAID.NORMAL),
+								groups = {
 									i(200377),	-- Vault Delver's Camouflage
 									i(200370),	-- Vault Delver's Shinguards
 									i(200376),	-- Vault Delver's Sweatbands
@@ -667,8 +667,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(SHAMAN, {
-								["sym"] = SymRaidVault(SHAMAN, DIFFICULTY.RAID.NORMAL),
-								["groups"] = {
+								sym = SymRaidVault(SHAMAN, DIFFICULTY.RAID.NORMAL),
+								groups = {
 									i(200403),	-- Cuffs of Infused Earth
 									i(200402),	-- Faulds of Infused Earth
 									i(200404),	-- Greatcloak of Infused Earth
@@ -676,8 +676,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(WARLOCK, {
-								["sym"] = SymRaidVault(WARLOCK, DIFFICULTY.RAID.NORMAL),
-								["groups"] = {
+								sym = SymRaidVault(WARLOCK, DIFFICULTY.RAID.NORMAL),
+								groups = {
 									i(200339),	-- Scalesworn Cultist's Girdle
 									i(200341),	-- Scalesworn Cultist's Runedrape
 									i(200334),	-- Scalesworn Cultist's Sandals
@@ -685,8 +685,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(WARRIOR, {
-								["sym"] = SymRaidVault(WARRIOR, DIFFICULTY.RAID.NORMAL),
-								["groups"] = {
+								sym = SymRaidVault(WARRIOR, DIFFICULTY.RAID.NORMAL),
+								groups = {
 									i(200424),	-- Boots of the Walking Mountain
 									i(200430),	-- Bracers of the Walking Mountain
 									i(200429),	-- Core of the Walking Mountain
@@ -696,11 +696,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}),
 					d(DIFFICULTY.RAID.HEROIC, {
-						["description"] = "",
-						["groups"] = bubbleDown({ ["bonusID"] = 1 }, {
+						description = "",
+						groups = bubbleDown({ bonusID = 1 }, {
 							cl(DEATHKNIGHT, {
-								["sym"] = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.HEROIC),
-								["groups"] = {
+								sym = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.HEROIC),
+								groups = {
 									i(200413),	-- Drape of the Haunted Frostbrood
 									i(200411),	-- Girdle of the Haunted Frostbrood
 									i(200406),	-- Sabatons of the Haunted Frostbrood
@@ -708,8 +708,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(DEMONHUNTER, {
-								["sym"] = SymRaidVault(DEMONHUNTER, DIFFICULTY.RAID.HEROIC),
-								["groups"] = {
+								sym = SymRaidVault(DEMONHUNTER, DIFFICULTY.RAID.HEROIC),
+								groups = {
 									i(200343),	-- Skybound Avenger's Boots
 									i(200350),	-- Skybound Avenger's Cape
 									i(200348),	-- Skybound Avenger's Waistwrap
@@ -717,8 +717,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(DRUID, {
-								["sym"] = SymRaidVault(DRUID, DIFFICULTY.RAID.HEROIC),
-								["groups"] = {
+								sym = SymRaidVault(DRUID, DIFFICULTY.RAID.HEROIC),
+								groups = {
 									i(200358),	-- Lost Landcaller's Bindings
 									i(200359),	-- Lost Landcaller's Laena
 									i(200352),	-- Lost Landcaller's Moccasins
@@ -726,8 +726,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(EVOKER, {
-								["sym"] = SymRaidVault(EVOKER, DIFFICULTY.RAID.HEROIC),
-								["groups"] = {
+								sym = SymRaidVault(EVOKER, DIFFICULTY.RAID.HEROIC),
+								groups = {
 									i(200385),	-- Bracers of the Awakened
 									i(200384),	-- Chain of the Awakened
 									i(200386),	-- Shroud of the Awakened
@@ -735,8 +735,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(HUNTER, {
-								["sym"] = SymRaidVault(HUNTER, DIFFICULTY.RAID.HEROIC),
-								["groups"] = {
+								sym = SymRaidVault(HUNTER, DIFFICULTY.RAID.HEROIC),
+								groups = {
 									i(200393),	-- Stormwing Harrier's Belt
 									i(200395),	-- Stormwing Harrier's Plumage
 									i(200388),	-- Stormwing Harrier's Sabatons
@@ -744,8 +744,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(MAGE, {
-								["sym"] = SymRaidVault(MAGE, DIFFICULTY.RAID.HEROIC),
-								["groups"] = {
+								sym = SymRaidVault(MAGE, DIFFICULTY.RAID.HEROIC),
+								groups = {
 									i(200323),	-- Crystal Scholar's Cape
 									i(200321),	-- Crystal Scholar's Cinch
 									i(200322),	-- Crystal Scholar's Cuffs
@@ -753,8 +753,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(MONK, {
-								["sym"] = SymRaidVault(MONK, DIFFICULTY.RAID.HEROIC),
-								["groups"] = {
+								sym = SymRaidVault(MONK, DIFFICULTY.RAID.HEROIC),
+								groups = {
 									i(200367),	-- Cuffs of the Waking Fist
 									i(200368),	-- Drape of the Waking Fist
 									i(200361),	-- Gaiters of the Waking Fist
@@ -762,8 +762,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(PALADIN, {
-								["sym"] = SymRaidVault(PALADIN, DIFFICULTY.RAID.HEROIC),
-								["groups"] = {
+								sym = SymRaidVault(PALADIN, DIFFICULTY.RAID.HEROIC),
+								groups = {
 									i(200421),	-- Virtuous Silver Bracers
 									i(200422),	-- Virtuous Silver Cloak
 									i(200420),	-- Virtuous Silver Faulds
@@ -771,8 +771,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(PRIEST, {
-								["sym"] = SymRaidVault(PRIEST, DIFFICULTY.RAID.HEROIC),
-								["groups"] = {
+								sym = SymRaidVault(PRIEST, DIFFICULTY.RAID.HEROIC),
+								groups = {
 									i(200332),	-- Draconic Hierophant's Drape
 									i(200330),	-- Draconic Hierophant's Sash
 									i(200325),	-- Draconic Hierophant's Slippers
@@ -780,8 +780,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(ROGUE, {
-								["sym"] = SymRaidVault(ROGUE, DIFFICULTY.RAID.HEROIC),
-								["groups"] = {
+								sym = SymRaidVault(ROGUE, DIFFICULTY.RAID.HEROIC),
+								groups = {
 									i(200377),	-- Vault Delver's Camouflage
 									i(200370),	-- Vault Delver's Shinguards
 									i(200376),	-- Vault Delver's Sweatbands
@@ -789,8 +789,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(SHAMAN, {
-								["sym"] = SymRaidVault(SHAMAN, DIFFICULTY.RAID.HEROIC),
-								["groups"] = {
+								sym = SymRaidVault(SHAMAN, DIFFICULTY.RAID.HEROIC),
+								groups = {
 									i(200403),	-- Cuffs of Infused Earth
 									i(200402),	-- Faulds of Infused Earth
 									i(200404),	-- Greatcloak of Infused Earth
@@ -798,8 +798,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(WARLOCK, {
-								["sym"] = SymRaidVault(WARLOCK, DIFFICULTY.RAID.HEROIC),
-								["groups"] = {
+								sym = SymRaidVault(WARLOCK, DIFFICULTY.RAID.HEROIC),
+								groups = {
 									i(200339),	-- Scalesworn Cultist's Girdle
 									i(200341),	-- Scalesworn Cultist's Runedrape
 									i(200334),	-- Scalesworn Cultist's Sandals
@@ -807,8 +807,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							cl(WARRIOR, {
-								["sym"] = SymRaidVault(WARRIOR, DIFFICULTY.RAID.HEROIC),
-								["groups"] = {
+								sym = SymRaidVault(WARRIOR, DIFFICULTY.RAID.HEROIC),
+								groups = {
 									i(200424),	-- Boots of the Walking Mountain
 									i(200430),	-- Bracers of the Walking Mountain
 									i(200429),	-- Core of the Walking Mountain
@@ -822,10 +822,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			--]]
 			-- #endif
 			n(UPGRADE, {	-- Upgrade
-				["groups"] = bubbleDownFiltered({
-					["cost"] = { { "i", 204276, 1 } },	-- Untapped Forbidden Knowledge
-					["modID"] = 14,
-					["bonusID"] = 9344,
+				groups = bubbleDownFiltered({
+					cost = { { "i", 204276, 1 } },	-- Untapped Forbidden Knowledge
+					modID = 14,
+					bonusID = 9344,
 				},FILTERFUNC_itemID,{
 					n(BACK, {
 						i(199450),	-- Cape of Raging Tempests
@@ -901,216 +901,216 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 			n(VENDORS, {
 				n(196516, {	-- Mythressa
-					["coords"] = {
+					coords = {
 						{ 38.1, 37.7, VALDRAKKEN },
 						{ 35.7, 59.8, THE_FORBIDDEN_REACH },
 					},
-					["groups"] = {
+					groups = {
 						n(BACK, {
 							iupgrade(199450, 14, 9344, {	-- Cape of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 200 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 200 } },
 							}),
 							iupgrade(199451, 14, 9344, {	-- Cloak of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 200 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 200 } },
 							}),
 							iupgrade(199452, 14, 9344, {	-- Shroud of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 200 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 200 } },
 							}),
 							iupgrade(199449, 14, 9344, {	-- Wrap of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 200 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 200 } },
 							}),
 						}),
 						filter(CLOTH, {
 							iupgrade(199418, 14, 9344, {	-- Boots of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 350 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 350 } },
 							}),
 							iupgrade(199422, 14, 9344, {	-- Cord of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 200 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 200 } },
 							}),
 							iupgrade(199423, 14, 9344, {	-- Cuffs of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 200 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 200 } },
 							}),
 							iupgrade(199419, 14, 9344, {	-- Gloves of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 350 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 350 } },
 							}),
 							iupgrade(199420, 14, 9344, {	-- Hood of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199421, 14, 9344, {	-- Leggings of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199424, 14, 9344, {	-- Shoulderpads of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 350 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 350 } },
 							}),
 							iupgrade(199417, 14, 9344, {	-- Vestment of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 						}),
 						filter(LEATHER, {
 							iupgrade(199430, 14, 9344, {	-- Bindings of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 200 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 200 } },
 							}),
 							iupgrade(199428, 14, 9344, {	-- Breeches of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199427, 14, 9344, {	-- Cowl of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199432, 14, 9344, {	-- Epaulets of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 350 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 350 } },
 							}),
 							iupgrade(199426, 14, 9344, {	-- Handguards of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 350 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 350 } },
 							}),
 							iupgrade(199429, 14, 9344, {	-- Sash of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 200 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 200 } },
 							}),
 							iupgrade(199431, 14, 9344, {	-- Vest of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199425, 14, 9344, {	-- Waders of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 350 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 350 } },
 							}),
 						}),
 						filter(MAIL, {
 							iupgrade(199448, 14, 9344, {	-- Bracers of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 200 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 200 } },
 							}),
 							iupgrade(199441, 14, 9344, {	-- Chestguard of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199447, 14, 9344, {	-- Cinch of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 200 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 200 } },
 							}),
 							iupgrade(199444, 14, 9344, {	-- Coif of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199445, 14, 9344, {	-- Greaves of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199443, 14, 9344, {	-- Grips of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 350 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 350 } },
 							}),
 							iupgrade(199446, 14, 9344, {	-- Shoulderguards of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 350 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 350 } },
 							}),
 							iupgrade(199442, 14, 9344, {	-- Striders of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 350 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 350 } },
 							}),
 						}),
 						filter(PLATE, {
 							iupgrade(199440, 14, 9344, {	-- Armplates of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 200 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 200 } },
 							}),
 							iupgrade(199434, 14, 9344, {	-- Breastplate of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199436, 14, 9344, {	-- Gauntlets of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 350 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 350 } },
 							}),
 							iupgrade(199439, 14, 9344, {	-- Girdle of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 200 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 200 } },
 							}),
 							iupgrade(199433, 14, 9344, {	-- Helm of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199437, 14, 9344, {	-- Legguards of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199438, 14, 9344, {	-- Mantle of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 350 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 350 } },
 							}),
 							iupgrade(199435, 14, 9344, {	-- Sabatons of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 350 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 350 } },
 							}),
 						}),
 						n(WEAPONS, {
 							iupgrade(199314, 14, 9344, {	-- Broadsword of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 800 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 800 } },
 							}),
 							iupgrade(199319, 14, 9344, {	-- Bulwark of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 300 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 300 } },
 							}),
 							iupgrade(199304, 14, 9344, {	-- Cleaver of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 400 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 400 } },
 							}),
 							iupgrade(199324, 14, 9344, {	-- Crusher of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 400 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 400 } },
 							}),
 							iupgrade(199318, 14, 9344, {	-- Cudgel of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 400 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 400 } },
 							}),
 							iupgrade(199309, 14, 9344, {	-- Dagger of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199308, 14, 9344, {	-- Glaive of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 400 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 400 } },
 							}),
 							iupgrade(199315, 14, 9344, {	-- Greatsword of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 800 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 800 } },
 							}),
 							iupgrade(199306, 14, 9344, {	-- Hacker of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 400 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 400 } },
 							}),
 							iupgrade(199305, 14, 9344, {	-- Hatchet of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199307, 14, 9344, {	-- Heartseeker of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 800 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 800 } },
 							}),
 							iupgrade(199311, 14, 9344, {	-- Horn of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 300 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 300 } },
 							}),
 							iupgrade(199320, 14, 9344, {	-- Impaler of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 800 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 800 } },
 							}),
 							iupgrade(199321, 14, 9344, {	-- Javelin of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 800 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 800 } },
 							}),
 							iupgrade(199325, 14, 9344, {	-- Mace of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199323, 14, 9344, {	-- Mallet of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 400 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 400 } },
 							}),
 							iupgrade(199317, 14, 9344, {	-- Maul of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 400 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 400 } },
 							}),
 							iupgrade(199313, 14, 9344, {	-- Pole of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 800 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 800 } },
 							}),
 							iupgrade(199322, 14, 9344, {	-- Rod of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199316, 14, 9344, {	-- Scepter of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 500 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 500 } },
 							}),
 							iupgrade(199310, 14, 9344, {	-- Shiv of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 400 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 400 } },
 							}),
 							iupgrade(199312, 14, 9344, {	-- Staff of Raging Tempests
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 800 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 800 } },
 							}),
 						}),
 						filter(MOUNTS, {
 							i(192775, {	-- Stormhide Salamanther (MOUNT!)
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 2000 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 2000 } },
 							}),
 						}),
 						filter(BATTLE_PETS, {
 							i(200173, {	-- Ghostflame (PET!)
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 1000 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 1000 } },
 							}),
 							i(200114, {	-- Stormie (PET!)
-								["cost"] = { { "c", ELEMENTAL_OVERFLOW, 1000 } },
+								cost = { { "c", ELEMENTAL_OVERFLOW, 1000 } },
 							}),
 						}),
 					},
 				}),
 				-- #IF BEFORE 10.0.5
 				n(196598, {	-- Rethelshi
-					["coord"] = { 38.4, 36.8, VALDRAKKEN },
-					["sym"] = {
+					coord = { 38.4, 36.8, VALDRAKKEN },
+					sym = {
 						{"select", "npcID", 196516 },	-- Select Mythressa
 						{"pop"},
 						{"not", "itemID", 192775 },	-- Not Stormhide Salamanther (MOUNT!)

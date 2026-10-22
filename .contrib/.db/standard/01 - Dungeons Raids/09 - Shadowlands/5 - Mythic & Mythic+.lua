@@ -2,22 +2,22 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-	d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
+	d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 		ig(182173),	-- Hyena Soul
 	})),
 	n(MYTHIC_PLUS, {
 		ig(182173, {	-- Hyena Soul
-			["timeline"] = { ADDED_9_0_2, REMOVED_10_0_2_LAUNCH },
+			timeline = { ADDED_9_0_2, REMOVED_10_0_2_LAUNCH },
 		}),
 		header(HEADERS.Achievement, SEASON_PROUD, bubbleDownSelf({
-			["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 },
+			timeline = { ADDED_9_0_2, REMOVED_9_1_0 },
 		}, {
 			ach(14662,	{	-- Realm First! Shadowlands Keystone Master
-				["u"] = REMOVED_FROM_GAME,
+				u = REMOVED_FROM_GAME,
 			}),
 			ach(14938, {	-- Shadowlands Keystone Explorer: Season One
-				["timeline"] = { ADDED_9_0_5, REMOVED_9_1_0 },
+				timeline = { ADDED_9_0_5, REMOVED_9_1_0 },
 			}),
 			ach(14531, {	-- Shadowlands Keystone Conqueror: Season One
 				title(431),	-- <Name> the Proud
@@ -27,7 +27,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 		})),
 		header(HEADERS.Achievement, SEASON_TORMENTED, bubbleDownSelf({
-			["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
+			timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
 		}, {
 			ach(15073),	-- Shadowlands Keystone Explorer: Season Two
 			ach(15077, {	-- Shadowlands Keystone Conqueror: Season Two
@@ -66,7 +66,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 		})),
 		header(HEADERS.Achievement, SEASON_CRYPTIC, bubbleDownSelf({
-			["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
+			timeline = { ADDED_9_2_0, REMOVED_9_2_5 },
 		}, {
 			ach(15496),	-- Shadowlands Keystone Explorer: Season Three
 			ach(15498, {	-- Shadowlands Keystone Conqueror: Season Three
@@ -111,7 +111,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 		})),
 		header(HEADERS.Achievement, SEASON_SHROUDED, bubbleDownSelf({
-			["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 },
+			timeline = { ADDED_9_2_5, REMOVED_10_0_0 },
 		}, {
 			ach(15688),	-- Shadowlands Keystone Explorer: Season Four
 			ach(15689, {	-- Shadowlands Keystone Conqueror: Season Four
@@ -136,9 +136,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				crit(53625),	-- Operation: Mechagon - Workshop
 			}),
 			ach(15692, {	-- Keystone Hero: Return to Karazhan
-				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
-				["maps"] = { 809 },	-- Return to Karazhan
-				["groups"] = {
+				timeline = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				maps = { 809 },	-- Return to Karazhan
+				groups = {
 					spell(373262),	-- Path of the Fallen Guardian
 					crit(53622),	-- Return to Karazhan: Lower
 					crit(53623),	-- Return to Karazhan: Upper

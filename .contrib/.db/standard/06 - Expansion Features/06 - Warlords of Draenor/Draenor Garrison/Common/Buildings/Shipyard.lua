@@ -4,11 +4,11 @@
 
 root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.WOD, {
-		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
+		n(GARRISONS, sharedData({maps = { LUNARFALL, FROSTWALL } },	{
 			n(BUILDINGS, {
 				garrisonBuilding(207, {	-- Shipyard (rank 1: 205, rank 2: 206, rank 3: 207)
-					["maps"] = { FROSTFIRE_RIDGE, DRAENOR_SHADOWMOON_VALLEY },
-					["groups"] = {
+					maps = { FROSTFIRE_RIDGE, DRAENOR_SHADOWMOON_VALLEY },
+					groups = {
 						n(ACHIEVEMENTS, {
 							ach(10165, {	-- Ironsides
 								crit(28520),	-- Destroyer
@@ -150,179 +150,179 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(QUESTS, {
 							q(39278, {	-- The Missing Manifest
-								["provider"] = { "i", 127989 },	-- Waterlogged Manifest
-								["groups"] = {
+								provider = { "i", 127989 },	-- Waterlogged Manifest
+								groups = {
 									o(243345, {	-- Black Market Chest
-										["coord"] = { 59.5, 1.2, DRAENOR_NAGRAND },
-										["groups"] = { i(128027) },	-- Black Market Shipment (QI!)
+										coord = { 59.5, 1.2, DRAENOR_NAGRAND },
+										groups = { i(128027) },	-- Black Market Shipment (QI!)
 									}),
 								},
 							}),
 							q(39665, {	-- A True Naval Commander
-								["sourceQuest"] = 39666,	-- Equipping Our Fleet
-								["qg"] = 93812,	-- Salty Jorren <Naval Equipment Specialist>
-								["coord"] = { 28.6, 10.8, DRAENOR_SHADOWMOON_VALLEY },
-								["races"] = ALLIANCE_ONLY,
+								sourceQuest = 39666,	-- Equipping Our Fleet
+								qg = 93812,	-- Salty Jorren <Naval Equipment Specialist>
+								coord = { 28.6, 10.8, DRAENOR_SHADOWMOON_VALLEY },
+								races = ALLIANCE_ONLY,
 							}),
 							q(39676, {	-- A True Naval Commander
-								["sourceQuest"] = 39675,	-- Equipping Our Fleet
-								["qg"] = 94801,	-- Kronk Rustspark <Naval Equipment Specialist>
-								["coord"] = { 40.0, 72.2, FROSTFIRE_RIDGE },
-								["races"] = HORDE_ONLY,
+								sourceQuest = 39675,	-- Equipping Our Fleet
+								qg = 94801,	-- Kronk Rustspark <Naval Equipment Specialist>
+								coord = { 40.0, 72.2, FROSTFIRE_RIDGE },
+								races = HORDE_ONLY,
 							}),
 							q(39404, {	-- Destroying the Competition
-								["sourceQuest"] = 39056,	-- Naval Commander
-								["qg"] = 93822,	-- Merreck Vonder
-								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
-								["races"] = ALLIANCE_ONLY,
+								sourceQuest = 39056,	-- Naval Commander
+								qg = 93822,	-- Merreck Vonder
+								coord = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
+								races = ALLIANCE_ONLY,
 							}),
 							q(39401, {	-- Destroying the Competition
-								["sourceQuest"] = 39243,	-- Naval Commander
-								["qg"] = 94789,	-- Rolosh Wavechaser
-								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
-								["races"] = HORDE_ONLY,
+								sourceQuest = 39243,	-- Naval Commander
+								qg = 94789,	-- Rolosh Wavechaser
+								coord = { 41.6, 72.3, FROSTFIRE_RIDGE },
+								races = HORDE_ONLY,
 							}),
 							q(39666, {	-- Equipping Our Fleet
-								["sourceQuest"] = 39655,	-- If At First You Fail, Try Again!
-								["qg"] = 93822,	-- Merreck Vonder
-								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
-								["races"] = ALLIANCE_ONLY,
+								sourceQuest = 39655,	-- If At First You Fail, Try Again!
+								qg = 93822,	-- Merreck Vonder
+								coord = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
+								races = ALLIANCE_ONLY,
 							}),
 							q(39675, {	-- Equipping Our Fleet
-								["sourceQuest"] = 39674,	-- If At First You Fail, Try Again!
-								["qg"] = 94789,	-- Rolosh Wavechaser
-								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
-								["races"] = HORDE_ONLY,
+								sourceQuest = 39674,	-- If At First You Fail, Try Again!
+								qg = 94789,	-- Rolosh Wavechaser
+								coord = { 41.6, 72.3, FROSTFIRE_RIDGE },
+								races = HORDE_ONLY,
 							}),
 							q(39601, {	-- I Sunk Your Battleship
-								["sourceQuest"] = 39665,	-- A True Naval Commander
-								["qg"] = 93822,	-- Merreck Vonder
-								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
-								["races"] = ALLIANCE_ONLY,
+								sourceQuest = 39665,	-- A True Naval Commander
+								qg = 93822,	-- Merreck Vonder
+								coord = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
+								races = ALLIANCE_ONLY,
 							}),
 							q(39604, {	-- I Sunk Your Battleship
-								["sourceQuest"] = 39676,	-- A True Naval Commander
-								["qg"] = 94789,	-- Rolosh Wavechaser
-								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
-								["races"] = HORDE_ONLY,
+								sourceQuest = 39676,	-- A True Naval Commander
+								qg = 94789,	-- Rolosh Wavechaser
+								coord = { 41.6, 72.3, FROSTFIRE_RIDGE },
+								races = HORDE_ONLY,
 							}),
 							q(39655, {	-- If At First You Fail, Try Again!
-								["sourceQuest"] = 39404,	-- Destroying the Competition
-								["qg"] = 93822,	-- Merreck Vonder
-								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
-								["races"] = ALLIANCE_ONLY,
+								sourceQuest = 39404,	-- Destroying the Competition
+								qg = 93822,	-- Merreck Vonder
+								coord = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
+								races = ALLIANCE_ONLY,
 							}),
 							q(39674, {	-- If At First You Fail, Try Again!
-								["sourceQuest"] = 39401,	-- Destroying the Competition
-								["qg"] = 94789,	-- Rolosh Wavechaser
-								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
-								["races"] = HORDE_ONLY,
+								sourceQuest = 39401,	-- Destroying the Competition
+								qg = 94789,	-- Rolosh Wavechaser
+								coord = { 41.6, 72.3, FROSTFIRE_RIDGE },
+								races = HORDE_ONLY,
 							}),
 							q(39082, {	-- Let's Get To Work
-								["sourceQuest"] = 38259,	-- All Hands on Deck
-								["qg"] = 93822,	-- Merreck Vonder
-								["coord"] = { 28.1, 10.6, DRAENOR_SHADOWMOON_VALLEY },
-								["races"] = ALLIANCE_ONLY,
+								sourceQuest = 38259,	-- All Hands on Deck
+								qg = 93822,	-- Merreck Vonder
+								coord = { 28.1, 10.6, DRAENOR_SHADOWMOON_VALLEY },
+								races = ALLIANCE_ONLY,
 							}),
 							q(39236, {	-- Let's Get To Work
-								["sourceQuest"] = 38259,	-- All Hands on Deck
-								["qg"] = 94789,	-- Rolosh Wavechaser
-								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
-								["races"] = HORDE_ONLY,
+								sourceQuest = 38259,	-- All Hands on Deck
+								qg = 94789,	-- Rolosh Wavechaser
+								coord = { 41.6, 72.3, FROSTFIRE_RIDGE },
+								races = HORDE_ONLY,
 							}),
 							q(39056, {	-- Naval Commander
-								["sourceQuest"] = 39422,	-- Shipyard Report
-								["qg"] = 93822,	-- Merreck Vonder
-								["coord"] = { 28.2, 10.6, DRAENOR_SHADOWMOON_VALLEY },
-								["races"] = ALLIANCE_ONLY,
+								sourceQuest = 39422,	-- Shipyard Report
+								qg = 93822,	-- Merreck Vonder
+								coord = { 28.2, 10.6, DRAENOR_SHADOWMOON_VALLEY },
+								races = ALLIANCE_ONLY,
 							}),
 							q(39243, {	-- Naval Commander
-								["sourceQuest"] = 39423,	-- Shipyard Report
-								["qg"] = 94789,	-- Rolosh Wavechaser
-								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
-								["races"] = HORDE_ONLY,
+								sourceQuest = 39423,	-- Shipyard Report
+								qg = 94789,	-- Rolosh Wavechaser
+								coord = { 41.6, 72.3, FROSTFIRE_RIDGE },
+								races = HORDE_ONLY,
 							}),
 							q(39068, {	-- Naval Domination
-								["sourceQuest"] = 39067,	-- Upgrading The Fleet
-								["qg"] = 93822,	-- Merreck Vonder
-								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
-								["races"] = ALLIANCE_ONLY,
+								sourceQuest = 39067,	-- Upgrading The Fleet
+								qg = 93822,	-- Merreck Vonder
+								coord = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
+								races = ALLIANCE_ONLY,
 							}),
 							q(39246, {	-- Naval Domination
-								["sourceQuest"] = 39245,	-- Upgrading The Fleet
-								["qg"] = 94789,	-- Rolosh Wavechaser
-								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
-								["races"] = HORDE_ONLY,
+								sourceQuest = 39245,	-- Upgrading The Fleet
+								qg = 94789,	-- Rolosh Wavechaser
+								coord = { 41.6, 72.3, FROSTFIRE_RIDGE },
+								races = HORDE_ONLY,
 							}),
 							q(39055, {	-- Ship Shape
-								["sourceQuest"] = 39276,	-- Strange Tools
-								["qg"] = 95002,	-- Yanas Seastrike
-								["coord"] = { 29.8, 10.6, DRAENOR_SHADOWMOON_VALLEY },
-								["races"] = ALLIANCE_ONLY,
+								sourceQuest = 39276,	-- Strange Tools
+								qg = 95002,	-- Yanas Seastrike
+								coord = { 29.8, 10.6, DRAENOR_SHADOWMOON_VALLEY },
+								races = ALLIANCE_ONLY,
 							}),
 							q(39242, {	-- Ship Shape
-								["sourceQuest"] = 39241,	-- Shipbuilding
-								["qg"] = 94429,	-- Solog Roark
-								["coord"] = { 40.8, 70.2, FROSTFIRE_RIDGE },
-								["races"] = HORDE_ONLY,
+								sourceQuest = 39241,	-- Shipbuilding
+								qg = 94429,	-- Solog Roark
+								coord = { 40.8, 70.2, FROSTFIRE_RIDGE },
+								races = HORDE_ONLY,
 							}),
 							q(39054, {	-- Shipbuilding
-								["sourceQuest"] = 39082,	-- Let's Get To Work
-								["qg"] = 94429,	-- Solog Roark
-								["coord"] = { 29.7, 10.6, DRAENOR_SHADOWMOON_VALLEY },
-								["races"] = ALLIANCE_ONLY,
-								["groups"] = { i(127268) },	-- Ship Blueprint: Transport
+								sourceQuest = 39082,	-- Let's Get To Work
+								qg = 94429,	-- Solog Roark
+								coord = { 29.7, 10.6, DRAENOR_SHADOWMOON_VALLEY },
+								races = ALLIANCE_ONLY,
+								groups = { i(127268) },	-- Ship Blueprint: Transport
 							}),
 							q(39241, {	-- Shipbuilding
-								["sourceQuest"] = 39236,	-- Let's Get To Work
-								["qg"] = 94429,	-- Solog Roark
-								["coord"] = { 40.8, 70.2, FROSTFIRE_RIDGE },
-								["races"] = HORDE_ONLY,
-								["groups"] = { i(127268) },	-- Ship Blueprint: Transport
+								sourceQuest = 39236,	-- Let's Get To Work
+								qg = 94429,	-- Solog Roark
+								coord = { 40.8, 70.2, FROSTFIRE_RIDGE },
+								races = HORDE_ONLY,
+								groups = { i(127268) },	-- Ship Blueprint: Transport
 							}),
 							q(39276, {	-- Strange Tools
-								["sourceQuest"] = 39054,	-- Shipbuilding
-								["qg"] = 94429,	-- Solog Roark
-								["coord"] = { 29.7, 10.6, DRAENOR_SHADOWMOON_VALLEY },
-								["races"] = ALLIANCE_ONLY,
+								sourceQuest = 39054,	-- Shipbuilding
+								qg = 94429,	-- Solog Roark
+								coord = { 29.7, 10.6, DRAENOR_SHADOWMOON_VALLEY },
+								races = ALLIANCE_ONLY,
 							}),
 							q(38435, {	-- The Invasion of Tanaan
-								["sourceQuest"] = 39055,	-- Ship Shape
-								["qg"] = 95002,	-- Yanas Seastrike
-								["coord"] = { 29.8, 10.6, DRAENOR_SHADOWMOON_VALLEY },
-								["races"] = ALLIANCE_ONLY,
+								sourceQuest = 39055,	-- Ship Shape
+								qg = 95002,	-- Yanas Seastrike
+								coord = { 29.8, 10.6, DRAENOR_SHADOWMOON_VALLEY },
+								races = ALLIANCE_ONLY,
 							}),
 							q(37889, {	-- The Invasion of Tanaan
-								["sourceQuest"] = 39242,	-- Ship Shape
-								["qg"] = 94429,	-- Solog Roark
-								["coord"] = { 40.8, 70.2, FROSTFIRE_RIDGE },
-								["races"] = HORDE_ONLY,
+								sourceQuest = 39242,	-- Ship Shape
+								qg = 94429,	-- Solog Roark
+								coord = { 40.8, 70.2, FROSTFIRE_RIDGE },
+								races = HORDE_ONLY,
 							}),
 							q(39067, {	-- Upgrading The Fleet
-								["sourceQuest"] = 39665,	-- A True Naval Commander
-								["qg"] = 93822,	-- Merreck Vonder
-								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
-								["races"] = ALLIANCE_ONLY,
+								sourceQuest = 39665,	-- A True Naval Commander
+								qg = 93822,	-- Merreck Vonder
+								coord = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
+								races = ALLIANCE_ONLY,
 							}),
 							q(39245, {	-- Upgrading The Fleet
-								["sourceQuest"] = 39676,	-- A True Naval Commander
-								["qg"] = 94789,	-- Rolosh Wavechaser
-								["coord"] = { 42.1, 71.0, FROSTFIRE_RIDGE },
-								["races"] = HORDE_ONLY,
+								sourceQuest = 39676,	-- A True Naval Commander
+								qg = 94789,	-- Rolosh Wavechaser
+								coord = { 42.1, 71.0, FROSTFIRE_RIDGE },
+								races = HORDE_ONLY,
 							}),
 						}),
 						n(VENDORS, {
 							n(94801, {	-- Kronk Rustspark <Naval Equipment Specialist>
-								["coord"] = { 40.0, 72.2, FROSTFIRE_RIDGE },
-								["races"] = HORDE_ONLY,
-								["groups"] = sharedData({
-									["cost"] = { { "c", GARRISON_RESOURCES, 500 } },
+								coord = { 40.0, 72.2, FROSTFIRE_RIDGE },
+								races = HORDE_ONLY,
+								groups = sharedData({
+									cost = { { "c", GARRISON_RESOURCES, 500 } },
 								}, {
 									i(125787),	-- Bilge Pump
 									i(127882),	-- Blast Furnace
 									i(127884),	-- Felsmoke Launcher
 									i(127895, {	-- Ghostly Spyglass
-										["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
+										cost = { { "c", GARRISON_RESOURCES, 1000 } },
 									}),
 									i(127881),	-- Gyroscopic Internal Stabilizer
 									i(127662),	-- High Intensity Fog Lights
@@ -334,16 +334,16 @@ root(ROOTS.ExpansionFeatures,
 								}),
 							}),
 							n(93812, {	-- Salty Jorren <Naval Equipment Specialist>
-								["coord"] = { 28.6, 10.8, DRAENOR_SHADOWMOON_VALLEY },
-								["races"] = ALLIANCE_ONLY,
-								["groups"] = sharedData({
-									["cost"] = { { "c", GARRISON_RESOURCES, 500 } },
+								coord = { 28.6, 10.8, DRAENOR_SHADOWMOON_VALLEY },
+								races = ALLIANCE_ONLY,
+								groups = sharedData({
+									cost = { { "c", GARRISON_RESOURCES, 500 } },
 								}, {
 									i(125787),	-- Bilge Pump
 									i(127882),	-- Blast Furnace
 									i(127884),	-- Felsmoke Launcher
 									i(127895, {	-- Ghostly Spyglass
-										["cost"] = { { "c", GARRISON_RESOURCES, 1000 } },
+										cost = { { "c", GARRISON_RESOURCES, 1000 } },
 									}),
 									i(127881),	-- Gyroscopic Internal Stabilizer
 									i(127662),	-- High Intensity Fog Lights
@@ -362,7 +362,7 @@ root(ROOTS.ExpansionFeatures,
 	})
 );
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_2_0 } }, {
 	n(GARRISONS, {
 		n(BUILDINGS, {	-- Buildings
 			garrisonBuilding(207, {	-- Shipyard

@@ -5,13 +5,13 @@
 root(ROOTS.HiddenCurrencyTriggers, {
 	expansion(EXPANSION.DF, {
 		-- 10.2.6
-		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
+		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ timeline = { ADDED_10_2_6 } }, {
 			currency(3010),	-- 10.2.6 Rewards - Personal Tracker - S4 Dinar Drops (Hidden)
 			currency(3011),	-- Plunder
 		})),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ timeline = { ADDED_10_2_7 } }, {
 			currency(2853),	-- 10.2.7 Timewalking Season - Artifact - Cloak - Primary
 			currency(2854),	-- 10.2.7 Timewalking Season - Artifact - Cloak - Stamina
 			currency(2855),	-- 10.2.7 Timewalking Season - Artifact - Cloak - Critical Strike
@@ -42,7 +42,7 @@ root(ROOTS.HiddenCurrencyTriggers, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
 			currency(3002),	-- The Weaver's Commendation
 			currency(3003),	-- The General's Commendation
 			currency(3004),	-- The Vizier's Commendation
@@ -114,14 +114,14 @@ root(ROOTS.HiddenCurrencyTriggers, {
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {
 			currency(3144),	-- 11.0.5 20th Anniversary - Tracker
 			currency(3145),	-- 11.0.5 20th Anniversary - Tracker
 			currency(3146),	-- 11.0.5 20th Anniversary - Tracker
 		})),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ timeline = { ADDED_11_0_7 } }, {
 			currency(3139),	-- Plunder
 			currency(3180),	-- Weekly Limit Test Currency
 		})),

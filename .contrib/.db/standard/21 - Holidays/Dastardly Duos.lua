@@ -34,27 +34,27 @@ DASTARDLY_DUOS = createHeader({
 	},
 });
 
-root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" } }, {
+root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ timeline = { ADDED_11_1_5, "removed 11.1.7.61967" } }, {
 	n(DASTARDLY_DUOS, {
-		["maps"] = { 2447 },	-- Dastardly Duos
-		["groups"] = {
+		maps = { 2447 },	-- Dastardly Duos
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(41995, {	-- Boot Hill
-					["description"] = "Die 30 times within one match solo or collectively as a group THEN complete the fight and loot the prize chest. The arena will fill with 15 gravestones to the left and right of the entrance to count your progress.",
+					description = "Die 30 times within one match solo or collectively as a group THEN complete the fight and loot the prize chest. The arena will fill with 15 gravestones to the left and right of the entrance to count your progress.",
 				}),
 				ach(42002, {	-- Bullhorn of Plenty
-					["cost"] = { { "i",  237774, 5 } },	-- 5x Bullhorn of Calling
+					cost = { { "i",  237774, 5 } },	-- 5x Bullhorn of Calling
 				}),
 				ach(42003, {	-- Bullhorn of More Plenty
-					["cost"] = { { "i",  237774, 10 } },	-- 10x Bullhorn of Calling
+					cost = { { "i",  237774, 10 } },	-- 10x Bullhorn of Calling
 				}),
 				ach(42004, {	-- Bullhorn of Most Plenty
-					["cost"] = { { "i",  237774, 15 } },	-- 15x Bullhorn of Calling
+					cost = { { "i",  237774, 15 } },	-- 15x Bullhorn of Calling
 				}),
 				ach(41905),	-- Center of Attention
 				ach(41706, {	-- Dastardly Duos Weekly High Score
 					-- TODO: Does parser know what to do with 21 (Designer Value{`Uses Record ID})?
-					["sym"] = {{ "achievement_criteria"}},
+					sym = {{ "achievement_criteria"}},
 				}),
 				ach(41707),	-- Dastardly Devices
 				ach(41948),	-- Defeat the Dastardlies (automated)
@@ -75,73 +75,73 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 			}),
 			n(QUESTS, {
 				q(86491, {	-- Dastardly Duos! It's on!
-					["provider"] = { "i", 234449 },	-- Dastardly Invitation
+					provider = { "i", 234449 },	-- Dastardly Invitation
 				}),
 				q(86503, {	-- Who are the Dastardly Duos?
-					["sourceQuests"] = { 86491 },	-- Dastardly Invitation
-					["provider"] = { "n", 234296 },	-- Vinnie Sweets
-					["coords"] = {
+					sourceQuests = { 86491 },	-- Dastardly Invitation
+					provider = { "n", 234296 },	-- Vinnie Sweets
+					coords = {
 						{ 52.8, 51.6, ISLE_OF_DORN },	-- Khaz Algar
 						-- { x, y, ORGRIMMAR },	-- Orgrimmar
 						{ 68.2, 79.0, STORMWIND_CITY },	-- Stormwind
 					},
-					["groups"] = {
+					groups = {
 						i(239440),	-- Dastardly Prize Purse
 						-- TODO: if you wanna - you can symlink all bags with rewards
 					},
 				}),
 				q(87550, {	-- Week 2: We're Really Taking Off
-					["sourceQuests"] = { 86503 },	-- Who are the Dastardly Duos?
-					["provider"] = { "n", 234296 },	-- Vinnie Sweets
-					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
-					["groups"] = {
+					sourceQuests = { 86503 },	-- Who are the Dastardly Duos?
+					provider = { "n", 234296 },	-- Vinnie Sweets
+					coord = { 52.8, 51.6, ISLE_OF_DORN },
+					groups = {
 						i(239440),	-- Dastardly Prize Purse
 					},
 				}),
 				q(87551, {	-- Week 3: Spread the Word
-					["sourceQuests"] = { 87550 },	-- Week 2: We're Really Taking Off
-					["provider"] = { "n", 234296 },	-- Vinnie Sweets
-					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
-					["groups"] = {
+					sourceQuests = { 87550 },	-- Week 2: We're Really Taking Off
+					provider = { "n", 234296 },	-- Vinnie Sweets
+					coord = { 52.8, 51.6, ISLE_OF_DORN },
+					groups = {
 						i(239440),	-- Dastardly Prize Purse
 					},
 				}),
 				q(87552, {	-- Week 4: They've Heard of You
-					["sourceQuests"] = { 87551 },	-- Week 3: Spread the Word
-					["provider"] = { "n", 234296 },	-- Vinnie Sweets
-					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
-					["groups"] = {
+					sourceQuests = { 87551 },	-- Week 3: Spread the Word
+					provider = { "n", 234296 },	-- Vinnie Sweets
+					coord = { 52.8, 51.6, ISLE_OF_DORN },
+					groups = {
 						i(239440),	-- Dastardly Prize Purse
 						spell(1227074),	-- Winner's Podium: Average Item Level
 						-- spell(1227073),	-- Winner's Podium, High Score
 					},
 				}),
 				q(87553, {	-- Week 5: Another Amazing Week!
-					["sourceQuests"] = { 87552 },	-- Week 4: They've Heard of You
-					["provider"] = { "n", 234296 },	-- Vinnie Sweets
-					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
-					["groups"] = {
+					sourceQuests = { 87552 },	-- Week 4: They've Heard of You
+					provider = { "n", 234296 },	-- Vinnie Sweets
+					coord = { 52.8, 51.6, ISLE_OF_DORN },
+					groups = {
 						i(239440),	-- Dastardly Prize Purse
 					},
 				}),
 				q(87554, {	-- Week 6: It's the Finale!
-					["sourceQuests"] = { 87553 },	-- Week 5: Another Amazing Week!
-					["provider"] = { "n", 234296 },	-- Vinnie Sweets
-					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
-					["groups"] = {
+					sourceQuests = { 87553 },	-- Week 5: Another Amazing Week!
+					provider = { "n", 234296 },	-- Vinnie Sweets
+					coord = { 52.8, 51.6, ISLE_OF_DORN },
+					groups = {
 						i(239440),	-- Dastardly Prize Purse
 					},
 				}),
 				-- unsorted due to ptr things, sourceQuest is speculated
 				q(90701, {	-- Cowardly Cheery Bombs
-					["sourceQuests"] = { 86503 },	-- Who are the Dastardly Duos?
-					["provider"] = { "n", 234297 },	-- Wodin the Troll Servant
-					["coords"] = {
+					sourceQuests = { 86503 },	-- Who are the Dastardly Duos?
+					provider = { "n", 234297 },	-- Wodin the Troll Servant
+					coords = {
 						{ 52.8, 51.6, ISLE_OF_DORN },	-- Khaz Algar
 						-- { x, y, ORGRIMMAR },	-- Orgrimmar
 						{ 68.2, 79.0, STORMWIND_CITY },	-- Stormwind
 					},
-					["groups"] = {
+					groups = {
 						i(239440),	-- Dastardly Prize Purse
 					},
 				}),
@@ -154,8 +154,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					i(237384),	-- Master Key
 				}),
 				o(524391, {	-- Prize Chest
-					["coord"] = { 51.0, 42.0, 2447 },	-- Dastardly Duos
-					["sym"] = {{"select","itemID",
+					coord = { 51.0, 42.0, 2447 },	-- Dastardly Duos
+					sym = {{"select","itemID",
 						238984,	-- Baroness Silverlaine's Locket (Shadowfang Keep)
 						88343,	-- Bone Golem Boots (Scholomance)
 						238978,	-- Burden of Lost Humanity (Shadowfang Keep)
@@ -180,7 +180,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						238938,	-- Vest of the Curious Visitor (Deadmines)
 						27450,	-- Wild Stalker Boots (Hellfire Ramparts)
 					}},
-					["groups"] = {
+					groups = {
 						-- Unconfirmed to drop from dungeon bosses, move to symlink once proven
 						i(239008),	-- Moonchild Leggings (Blood Furnace)
 						-- also seems like contain some TW loot from certain bosses (list of them in achievement 41948) that already exist
@@ -228,48 +228,48 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 			}),
 			n(VENDORS, {
 				n(234297, {	-- Wodin the Troll-Servant
-					["coords"] = {
+					coords = {
 						{ 52.7, 51.3, ISLE_OF_DORN },
 						{ 50.0, 92.4, ORGRIMMAR },
 						{ 67.2, 81.0, STORMWIND_CITY },
 					},
-					["groups"] = {
+					groups = {
 						i(239442, {	-- Black Dastardly Epaulet
-							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
+							cost = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239503, {	-- Blue Dastardly Epaule
-							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
+							cost = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239007, {	-- Dastardly Banner (TOY!)
-							["sourceQuest"] = 86503,	-- Who are the Dastardly Duos?
-							["cost"] = { { "c", RESONANCE_CRYSTALS, 100 } },
+							sourceQuest = 86503,	-- Who are the Dastardly Duos?
+							cost = { { "c", RESONANCE_CRYSTALS, 100 } },
 						}),
 						i(238624, {	-- Dastardly Pinchzapper
-							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
+							cost = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239504, {	-- Green Dastardly Epaulet
-							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
+							cost = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239019, {	-- Mean-Ball Bed (TOY!)
-							["sourceQuest"] = 87551,	-- Week 3: Spread the Word
-							["cost"] = { { "c", RESONANCE_CRYSTALS, 100 } },
+							sourceQuest = 87551,	-- Week 3: Spread the Word
+							cost = { { "c", RESONANCE_CRYSTALS, 100 } },
 						}),
 						i(239505, {	-- Purple Dastardly Epaulet
-							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
+							cost = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239506, {	-- Red Dastardly Epaulet
-							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
+							cost = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239020, {	-- Tyrannotort's Treat (MOUNT!)
-							["sourceQuest"] = 87552,	-- Week 4: They've Heard of You
-							["cost"] = { { "c", RESONANCE_CRYSTALS, 100 } },
+							sourceQuest = 87552,	-- Week 4: They've Heard of You
+							cost = { { "c", RESONANCE_CRYSTALS, 100 } },
 						}),
 						i(239018, {	-- Winner's Podium (TOY!)
-							["sourceQuest"] = 87550,	-- Week 2: We're Really Taking Off
-							["cost"] = { { "c", RESONANCE_CRYSTALS, 100 } },
+							sourceQuest = 87550,	-- Week 2: We're Really Taking Off
+							cost = { { "c", RESONANCE_CRYSTALS, 100 } },
 						}),
 						i(239507, {	-- Yellow Dastardly Epaulet
-							["cost"] = { { "c", RESONANCE_CRYSTALS, 500 } },
+							cost = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 					},
 				}),
@@ -279,7 +279,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_1_5 } }, {
 		n(DASTARDLY_DUOS, {
 			-- In order to clear a bit messup and to sort out more clearly on live
 			-- Week 1:

@@ -4,13 +4,13 @@
 
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(417, {	-- Temple of Kotmogu
-		["icon"] = 623704,
-		["timeline"] = { ADDED_5_0_4 },
-		["groups"] = {
+		icon = 623704,
+		timeline = { ADDED_5_0_4 },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(6981, {	-- Master of Temple of Kotmogu
 					-- Meta Achievement should symlink the contained Achievements from Source
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						6882,	-- Temple of Kotmogu Veteran
 						6947,	-- Four Square
 						6950,	-- Powerball
@@ -20,20 +20,20 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						6972,	-- What is Best in Life?
 						6980,	-- Temple of Kotmogu All-Star
 					}},
-					["groups"] = {
+					groups = {
 						i(247741, {	-- Kotmogu Orb of Power (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
+							timeline = { ADDED_11_2_7 },
 						}),
 						i(247740, {	-- Kotmogu Pedestal (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
+							timeline = { ADDED_11_2_7 },
 						}),
 					},
 				}),
 				ach(6740, {	-- Temple of Kotmogu Victory
-					["rank"] = 1,
+					rank = 1,
 				}),
 				ach(6882, {	-- Temple of Kotmogu Veteran
-					["rank"] = 100,
+					rank = 100,
 				}),
 				ach(6947, {	-- Four Square
 					crit(20064),	-- Cyan Orb

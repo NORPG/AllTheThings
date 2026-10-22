@@ -1,5 +1,5 @@
 TIER_NINE_GROUPS = {
-	["DEATHKNIGHT_A"] = {
+	DEATHKNIGHT_A = {
 		-- Alliance
 		-- DPS
 		emot(50, a(i(48472))),	-- Thassarian's Helmet of Conquest
@@ -15,7 +15,7 @@ TIER_NINE_GROUPS = {
 		emot(50, a(i(48531))),	-- Thassarian's Chestguard of Conquest
 		emot(50, a(i(48533))),	-- Thassarian's Legguards of Conquest
 	},
-	["DEATHKNIGHT_H"] = {
+	DEATHKNIGHT_H = {
 		-- DPS
 		emot(50, h(i(48503))),	-- Koltira's Helmet of Conquest
 		emot(30, h(i(48505))),	-- Koltira's Shoulderplates of Conquest
@@ -30,7 +30,7 @@ TIER_NINE_GROUPS = {
 		emot(50, h(i(48558))),	-- Koltira's Chestguard of Conquest
 		emot(50, h(i(48561))),	-- Koltira's Legguards of Conquest
 	},
-	["DRUID"] = {
+	DRUID = {
 		-- Alliance
 		-- Boomkin
 		emot(50, a(i(48158))),	-- Malfurion's Cover of Conquest
@@ -75,7 +75,7 @@ TIER_NINE_GROUPS = {
 		emot(50, h(i(48156))),	-- Runetotem's Robe of Conquest
 		emot(50, h(i(48155))),	-- Runetotem's Leggings of Conquest
 	},
-	["HUNTER"] = {
+	HUNTER = {
 		emot(50, a(i(48250))),	-- Windrunner's Headpiece of Conquest (A)
 		emot(30, a(i(48253))),	-- Windrunner's Spaulders of Conquest (A)
 		emot(30, a(i(48254))),	-- Windrunner's Handguards of Conquest (A)
@@ -88,7 +88,7 @@ TIER_NINE_GROUPS = {
 		emot(50, h(i(48275))),	-- Windrunner's Tunic of Conquest (H)
 		emot(50, h(i(48278))),	-- Windrunner's Legguards of Conquest (H)
 	},
-	["MAGE"] = {
+	MAGE = {
 		emot(50, a(i(47748))),	-- Khadgar's Hood of Conquest
 		emot(30, a(i(47751))),	-- Khadgar's Shoulderpads of Conquest
 		emot(30, a(i(47752))),	-- Khadgar's Gauntlets of Conquest
@@ -101,7 +101,7 @@ TIER_NINE_GROUPS = {
 		emot(50, h(i(47776))),	-- Sunstrider's Robe of Conquest
 		emot(50, h(i(47775))),	-- Sunstrider's Leggings of Conquest
 	},
-	["PALADIN_A"] = {
+	PALADIN_A = {
 		-- Holy
 		emot(50, a(i(48564))),	-- Turalyon's Headpiece of Conquest
 		emot(30, a(i(48572))),	-- Turalyon's Spaulders of Conquest
@@ -123,7 +123,7 @@ TIER_NINE_GROUPS = {
 		emot(50, a(i(48602))),	-- Turalyon's Battleplate of Conquest
 		emot(50, a(i(48605))),	-- Turalyon's Legplates of Conquest
 	},
-	["PALADIN_H"] = {
+	PALADIN_H = {
 		-- Holy
 		emot(50, h(i(48597))),	-- Liadrin's Headpiece of Conquest
 		emot(30, h(i(48595))),	-- Liadrin's Spaulders of Conquest
@@ -145,7 +145,7 @@ TIER_NINE_GROUPS = {
 		emot(50, h(i(48631))),	-- Liadrin's Battleplate of Conquest
 		emot(50, h(i(48628))),	-- Liadrin's Legplates of Conquest
 	},
-	["PRIEST"] = {
+	PRIEST = {
 		-- Alliance
 		-- Holy/Disc
 		emot(50, a(i(47914))),	-- Velen's Cowl of Conquest
@@ -176,7 +176,7 @@ TIER_NINE_GROUPS = {
 		emot(50, h(i(48100))),	-- Zabra's Raiments of Conquest
 		emot(50, h(i(48099))),	-- Zabra's Pants of Conquest
 	},
-	["ROGUE"] = {
+	ROGUE = {
 		emot(50, h(i(48245))),	-- Garona's Helmet of Conquest
 		emot(30, h(i(48247))),	-- Garona's Pauldrons of Conquest
 		emot(30, h(i(48244))),	-- Garona's Gauntlets of Conquest
@@ -189,7 +189,7 @@ TIER_NINE_GROUPS = {
 		emot(50, a(i(48219))),	-- VanCleef's Breastplate of Conquest
 		emot(50, a(i(48220))),	-- VanCleef's Legplates of Conquest
 	},
-	["SHAMAN"] = {
+	SHAMAN = {
 		-- Alliance
 		-- Elemental
 		emot(50, a(i(48313))),	-- Nobundo's Helm of Conquest
@@ -234,7 +234,7 @@ TIER_NINE_GROUPS = {
 		emot(50, h(i(48295))),	-- Thrall's Tunic of Conquest
 		emot(50, h(i(48298))),	-- Thrall's Legguards of Conquest
 	},
-	["WARLOCK"] = {
+	WARLOCK = {
 		emot(50, h(i(47801))),	-- Gul'dan's Hood of Conquest
 		emot(30, h(i(47798))),	-- Gul'dan's Shoulderpads of Conquest
 		emot(30, h(i(47802))),	-- Gul'dan's Gloves of Conquest
@@ -247,7 +247,7 @@ TIER_NINE_GROUPS = {
 		emot(50, a(i(47786))),	-- Kel'Thuzad's Robe of Conquest
 		emot(50, a(i(47785))),	-- Kel'Thuzad's Leggings of Conquest
 	},
-	["WARRIOR_A"] = {
+	WARRIOR_A = {
 		-- Arms/Fury
 		emot(50, a(i(48371))),	-- Wrynn's Helmet of Conquest
 		emot(30, a(i(48374))),	-- Wrynn's Shoulderplates of Conquest
@@ -262,7 +262,7 @@ TIER_NINE_GROUPS = {
 		emot(50, a(i(48436))),	-- Wrynn's Breastplate of Conquest
 		emot(50, a(i(48445))),	-- Wrynn's Legguards of Conquest
 	},
-	["WARRIOR_H"] = {
+	WARRIOR_H = {
 		-- Arms/Fury
 		emot(50, h(i(48388))),	-- Hellscream's Helmet of Conquest
 		emot(30, h(i(48390))),	-- Hellscream's Shoulderplates of Conquest

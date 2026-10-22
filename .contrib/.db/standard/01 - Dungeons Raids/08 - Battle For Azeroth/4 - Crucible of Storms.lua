@@ -46,33 +46,33 @@ local Boss, BossOnly, Difficulty, CommonBossDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
 
 InstanceHelper.LFRQueueNPC = {
-	["crs"] = {
+	crs = {
 		177193,	-- Kiku
 		177208,	-- Eppu
 	},
-	["coords"] = {
+	coords = {
 		{ 74.0, 13.4, BORALUS },	-- Kiku
 		{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8_1_0 } }, {
 	inst(1177, {	-- Crucible of Storms
-		["coord"] = { 83.8, 47.0, STORMSONG_VALLEY },
-		["maps"] = {
+		coord = { 83.8, 47.0, STORMSONG_VALLEY },
+		maps = {
 			1345,	-- Shrine of Shadows
 			1346,	-- Tendril of Corruption
 		},
-		["isRaid"] = true,
-		["lvl"] = { 50 },
-		["groups"] = {
+		isRaid = true,
+		lvl = { 50 },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(13414, {	-- Crucible of Storms
 					crit(44051, {	-- The Restless Cabal
-						["_encounter"] = { CABAL, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { CABAL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(44052, {	-- Uu'nat, Harbinger of the Void
-						["_encounter"] = { UUNAT, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { UUNAT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(13420),	-- Crucible of Storms Guild Run
@@ -84,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					i(165737),	-- Vantus Rune Technique: Crucible of Storms [Rank 3] (RECIPE!)
 				}),
 				BossOnly(CABAL, {
-					i(267008, { ["timeline"] = { ADDED_12_0_0 } }),	-- Crucible Votive Rack (DECOR!)
+					i(267008, { timeline = { ADDED_12_0_0 } }),	-- Crucible Votive Rack (DECOR!)
 				}),
 				BossOnly(UUNAT, {
 					i(167864),	-- Trident of Deep Ocean
@@ -111,7 +111,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(UUNAT, {
 					ach(13418, {	-- Ahead of the Curve: Uu'nat, Harbinger of the Void
-						["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 },
+						timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
 					}),
 				}),
 			}),
@@ -127,15 +127,15 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					ach(13417),	-- Mythic: Uu'nat, Harbinger of the Void
 					ach(13421),	-- Mythic: Uu'nat, Harbinger of the Void Guild Run
 					ach(13419, {	-- Cutting Edge: Uu'nat, Harbinger of the Void
-						["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 },
+						timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
 					}),
-					ach(13423, bubbleDownSelf({["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (A)
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = { title(400) },	-- <Name>, Famed Slayer of the Harbinger
+					ach(13423, bubbleDownSelf({timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (A)
+						races = ALLIANCE_ONLY,
+						groups = { title(400) },	-- <Name>, Famed Slayer of the Harbinger
 					})),
-					ach(13424, bubbleDownSelf({["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (H)
-						["races"] = HORDE_ONLY,
-						["groups"] = { title(400) },	-- <Name>, Famed Slayer of the Harbinger
+					ach(13424, bubbleDownSelf({timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (H)
+						races = HORDE_ONLY,
+						groups = { title(400) },	-- <Name>, Famed Slayer of the Harbinger
 					})),
 				}),
 			}),

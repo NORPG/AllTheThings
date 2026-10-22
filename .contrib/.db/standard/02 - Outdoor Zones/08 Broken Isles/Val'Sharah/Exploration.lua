@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 	m(VALSHARAH, {
 		explorationHeader({
 			exploration(7804),	-- Andu'talah
@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			visit_exploration(7876,{coord={66.6,36.0,VALSHARAH}}),	-- Cavern of the Keeper
 			exploration(8320, {	-- Darkfollow's Spire
 				-- CRIEVE NOTE: I was initially able to collect this, but if you collect Bradensbrook, it gets masked behind it.
-				["collectible"] = false,
+				collectible = false,
 			}),
 			visit_exploration(7669,{coord={65.9,56.2,VALSHARAH}}),	-- Darkgrove Cavern
 			exploration(7702),	-- Dreadroot
@@ -23,7 +23,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			exploration(8332),	-- Emerald Bay
 			exploration(8323, {	-- Field of Dreamers
 				-- CRIEVE NOTE: I was initially able to collect this, but if you collect Bradensbrook, it gets masked behind it.
-				["collectible"] = false,
+				collectible = false,
 			}),
 			exploration(7667),	-- Garden of the Moon
 			visit_exploration(7657,{coord={68.0,44.8,VALSHARAH}}),	-- Glittering Falls
@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			visit_exploration(7677,{coord={52.4,58.0,VALSHARAH}}),	-- Temple of Elune
 			exploration(7572, {	-- Thas'talah
 				-- CRIEVE NOTE: I was initially able to collect this, but if you collect Bradensbrook, it gets masked behind it.
-				["collectible"] = false,
+				collectible = false,
 			}),
 			visit_exploration(7668,{coord={42.6,70.2,VALSHARAH}}),	-- Thas'talah Basin
 			exploration(7913),	-- The Crescent Vale

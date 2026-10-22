@@ -22,112 +22,112 @@ local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE, {
-	inst(249, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Magisters' Terrace
-		["lore"] = "Situated on a ridge in northeastern Quel'Danas, Magisters' Terrace serves as a convenient base for Kael'thas and his underlings as they assist the proceedings in the Sunwell Plateau. Kael'thas stands poised to desecrate the ancient lands of his people with an incomparable evil. Should he succeed, the Legion's darkness will rapidly spread to all corners of Azeroth, extinguishing everything in its path.",
+	inst(249, bubbleDownSelf({ timeline = { ADDED_2_4_0 } }, {	-- Magisters' Terrace
+		lore = "Situated on a ridge in northeastern Quel'Danas, Magisters' Terrace serves as a convenient base for Kael'thas and his underlings as they assist the proceedings in the Sunwell Plateau. Kael'thas stands poised to desecrate the ancient lands of his people with an incomparable evil. Should he succeed, the Legion's darkness will rapidly spread to all corners of Azeroth, extinguishing everything in its path.",
 		-- #if BEFORE MOP
-		["zoneTextAreaID"] = 4095,	-- Magisters' Terrace
+		zoneTextAreaID = 4095,	-- Magisters' Terrace
 		-- #endif
-		["coord"] = { 61.23, 30.94, ISLE_OF_QUELDANAS },	-- Magister's Terrace, Isle of Quel'Danas
-		["maps"] = {
+		coord = { 61.23, 30.94, ISLE_OF_QUELDANAS },	-- Magister's Terrace, Isle of Quel'Danas
+		maps = {
 			MAGISTERS_TERRACE,	-- Grand Magister's Asylum
 			349,	-- Observation Grounds
 		},
-		["lvl"] = lvlsquish(65, 65, 25),
-		["groups"] = {
+		lvl = lvlsquish(65, 65, 25),
+		groups = {
 			n(QUESTS, {
 				q(29686, {	-- A Radical Notion
-					["qg"] = 55007,	-- Exarch Larethor
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(68, 68, 25),
-					["groups"] = {
+					qg = 55007,	-- Exarch Larethor
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(68, 68, 25),
+					groups = {
 						objective(1, {	-- 0/1 Volatile Essence
-							["provider"] = { "i", 73084 },	-- Volatile Essence
+							provider = { "i", 73084 },	-- Volatile Essence
 						}),
 					},
 				}),
 				q(11492, {	-- Hard to Kill
-					["sourceQuest"] = 11490,	-- The Scryer's Scryer
-					["qg"] = 24848,	-- Kalecgos
-					["timeline"] = { REMOVED_4_3_0 },
-					["lvl"] = lvlsquish(70, 70, 25),
-					["groups"] = {
+					sourceQuest = 11490,	-- The Scryer's Scryer
+					qg = 24848,	-- Kalecgos
+					timeline = { REMOVED_4_3_0 },
+					lvl = lvlsquish(70, 70, 25),
+					groups = {
 						objective(1, {	-- 0/1 Head of Kael'thas
-							["provider"] = { "i", 34157 },	-- Head of Kael'thas
+							provider = { "i", 34157 },	-- Head of Kael'thas
 						}),
 						i(35487),	-- Delicate Crimson Spinel
 						i(35488),	-- Brilliant Crimson Spinel
 					},
 				}),
 				q(29685, {	-- Hard to Kill
-					["sourceQuest"] = 11490,	-- The Scryer's Scryer
-					["qg"] = 24848,	-- Kalecgos
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(68, 68, 25),
-					["groups"] = {
+					sourceQuest = 11490,	-- The Scryer's Scryer
+					qg = 24848,	-- Kalecgos
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(68, 68, 25),
+					groups = {
 						objective(1, {	-- 0/1 Head of Kael'thas
-							["provider"] = { "i", 34157 },	-- Head of Kael'thas
+							provider = { "i", 34157 },	-- Head of Kael'thas
 						}),
 						i(35487),	-- Delicate Crimson Spinel
 						i(35488),	-- Brilliant Crimson Spinel
 					},
 				}),
 				q(11488, {	-- Magisters' Terrace
-					["sourceQuests"] = {
+					sourceQuests = {
 						11481,	-- Crisis at the Sunwell
 						11482,	-- Duty Calls
 					},
-					["qg"] = 24813,	-- Exarch Larethor
-					["coord"] = { 47.4, 30.7, ISLE_OF_QUELDANAS },
-					["timeline"] = { REMOVED_4_3_0 },
-					["lvl"] = lvlsquish(70, 70, 25),
+					qg = 24813,	-- Exarch Larethor
+					coord = { 47.4, 30.7, ISLE_OF_QUELDANAS },
+					timeline = { REMOVED_4_3_0 },
+					lvl = lvlsquish(70, 70, 25),
 				}),
 				q(29682, {	-- Magisters' Terrace
-					["sourceQuests"] = {
+					sourceQuests = {
 						11481,	-- Crisis at the Sunwell
 						11482,	-- Duty Calls
 					},
-					["qg"] = 24967,	-- Captain Theris Dawnhearth
-					["coord"] = { 47.4, 30.4, ISLE_OF_QUELDANAS },
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(68, 68, 25),
+					qg = 24967,	-- Captain Theris Dawnhearth
+					coord = { 47.4, 30.4, ISLE_OF_QUELDANAS },
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(68, 68, 25),
 				}),
 				q(29684, {	-- Severed Communications
-					["sourceQuest"] = 29682,	-- Magisters' Terrace
-					["qg"] = 55007,	-- Exarch Larethor
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(68, 68, 25),
+					sourceQuest = 29682,	-- Magisters' Terrace
+					qg = 55007,	-- Exarch Larethor
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(68, 68, 25),
 				}),
 				q(11490, {	-- The Scryer's Scryer
-					["sourceQuests"] = {
+					sourceQuests = {
 						-- #if AFTER 4.3.0
 						29684,	-- Severed Communications
 						-- #else
 						11488,	-- Magisters' Terrace
 						-- #endif
 					},
-					["lvl"] =
+					lvl =
 						-- #if AFTER 4.3.0
 						lvlsquish(68, 68, 25),
 						-- #else
 						lvlsquish(70, 70, 25),
 						-- #endif
-					["qg"] = 24822,	-- Tyrith
-					["groups"] = {
+					qg = 24822,	-- Tyrith
+					groups = {
 						objective(1, {	-- Scrying Orb Activated
-							["provider"] = { "o", 189292 },	-- Scrying Orb
+							provider = { "o", 189292 },	-- Scrying Orb
 						}),
 					},
 				}),
 				q(29687, {	-- Twisted Associations
-					["qg"] = 55007,	-- Exarch Larethor
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(68, 68, 25),
-					["groups"] = {
+					qg = 55007,	-- Exarch Larethor
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(68, 68, 25),
+					groups = {
 						objective(1, {	-- Selin Fireheart slain
-							["provider"] = { "n", 24723 },	-- Selin Fireheart
+							provider = { "n", 24723 },	-- Selin Fireheart
 						}),
 						objective(2, {	-- Priestess Delrissa slain
-							["provider"] = { "n", 24560 },	-- Priestess Delrissa
+							provider = { "n", 24560 },	-- Priestess Delrissa
 						}),
 					},
 				}),
@@ -178,7 +178,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					filter(RECIPES, {
 						i(35305),	-- Design: Brilliant Living Ruby (RECIPE!) [BoP]
 						i(35306, {	-- Design: Delicate Living Ruby (RECIPE!) [BoP]
-							["timeline"] = { ADDED_2_4_0, REMOVED_4_0_3 },
+							timeline = { ADDED_2_4_0, REMOVED_4_0_3 },
 						}),
 						i(35307),	-- Design: Rigid Star of Elune (RECIPE!) [BoP]
 						i(35304),	-- Design: Solid Star of Elune (RECIPE!) [BoP]
@@ -225,13 +225,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 				BossOnly(DELRISSA, {
-					i(34783, { ["timeline"] = { REMOVED_5_0_4 } }),	-- Nightstrike
+					i(34783, { timeline = { REMOVED_5_0_4 } }),	-- Nightstrike
 				}),
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(70, 70, 30) }).AddGroups({
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(70, 70, 30) }).AddGroups({
 				n(COMMON_BOSS_DROPS, {
 					i(35275, {	-- Orb of Sin'dorei (TOY!)
-						["crs"] = {
+						crs = {
 							24723,	-- Selin Fireheart
 							24744,	-- Vexallus
 							24560,	-- Priestess Delrissa
@@ -240,16 +240,16 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					}),
 				}),
 				BossOnly(DELRISSA, {
-					i(34603, { ["timeline"] = { REMOVED_5_0_4 } }),	-- Distracting Blades
+					i(34603, { timeline = { REMOVED_5_0_4 } }),	-- Distracting Blades
 				}),
 				BossOnly(KAEL, {
 					i(34160),	-- The Signet Ring of Prince Kael'thas (QI!)
 					--
 					ach(682),	-- Heroic: Magister's Terrace
-					ach(5082, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Magister's Terrace Guild Run
+					ach(5082, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Magister's Terrace Guild Run
 					ach(884, {	-- Swift White Hawkstrider
-						["provider"] = { "i", 35513 },	-- Swift White Hawkstrider
-						["filterID"] = MOUNTS,
+						provider = { "i", 35513 },	-- Swift White Hawkstrider
+						filterID = MOUNTS,
 					}),
 					i(35513),	-- Swift White Hawkstrider (MOUNT!)
 				}),
@@ -269,7 +269,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					filter(RECIPES, {
 						-- #if BEFORE CATA
 						i(35306, {	-- Design: Bright Living Ruby (RECIPE!) [BoP]
-							["timeline"] = { ADDED_2_4_0, REMOVED_4_0_3 },
+							timeline = { ADDED_2_4_0, REMOVED_4_0_3 },
 						}),
 						i(35307),	-- Design: Rigid Dawnstone (RECIPE!) [BoP]
 						i(35305),	-- Design: Runed Living Ruby (RECIPE!) [BoP]
@@ -277,7 +277,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 						-- #else
 						i(35305),	-- Design: Brilliant Living Ruby (RECIPE!) [BoP]
 						i(35306, {	-- Design: Delicate Living Ruby (RECIPE!) [BoP]
-							["timeline"] = { ADDED_2_4_0, REMOVED_4_0_3 },
+							timeline = { ADDED_2_4_0, REMOVED_4_0_3 },
 						}),
 						i(35307),	-- Design: Rigid Star of Elune (RECIPE!) [BoP]
 						i(35304),	-- Design: Solid Star of Elune (RECIPE!) [BoP]
@@ -323,7 +323,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					i(34792),	-- Cloak of the Betrayed
 					i(34788),	-- Duskhallow Mantle
 					i(34791),	-- Gauntlets of the Tranquil Waves
-					i(34783, { ["timeline"] = { REMOVED_5_0_4 } }),	-- Nightstrike
+					i(34783, { timeline = { REMOVED_5_0_4 } }),	-- Nightstrike
 				}),
 				BossOnly(KAEL, {
 					ach(661),	-- Magister's Terrace
@@ -343,13 +343,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC, {
-				["description"] = "You must completed the 'Hard to Kill' quest chain on Normal Mode before Heroic Mode becomes available.",
-				["sourceQuest"] = 11492,	-- Hard to Kill
-				["lvl"] = lvlsquish(70, 70, 30),
+				description = "You must completed the 'Hard to Kill' quest chain on Normal Mode before Heroic Mode becomes available.",
+				sourceQuest = 11492,	-- Hard to Kill
+				lvl = lvlsquish(70, 70, 30),
 			}).AddGroups({
 				n(COMMON_BOSS_DROPS, {
 					i(35275, {	-- Orb of Sin'dorei (TOY!)
-						["crs"] = {
+						crs = {
 							24723,	-- Selin Fireheart
 							24744,	-- Vexallus
 							24560,	-- Priestess Delrissa
@@ -358,7 +358,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					}),
 				}),
 				BossOnly(SELIN, {
-					i(34603, { ["timeline"] = { REMOVED_5_0_4 } }),	-- Distracting Blades
+					i(34603, { timeline = { REMOVED_5_0_4 } }),	-- Distracting Blades
 					i(34602),	-- Eversong Bracers
 					i(34604),	-- Jaded Crystal Dagger
 					i(34601),	-- Shoulderplates of Everlasting Pain
@@ -379,10 +379,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					i(34160),	-- The Signet Ring of Prince Kael'thas (QI!)
 					--
 					ach(682),	-- Heroic: Magister's Terrace
-					ach(5082, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Magister's Terrace Guild Run
+					ach(5082, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Magister's Terrace Guild Run
 					ach(884, {	-- Swift White Hawkstrider
-						["provider"] = { "i", 35513 },	-- Swift White Hawkstrider
-						["filterID"] = MOUNTS,
+						provider = { "i", 35513 },	-- Swift White Hawkstrider
+						filterID = MOUNTS,
 					}),
 					i(34616),	-- Breeching Comet
 					i(34611),	-- Cudgel of Consecration
@@ -400,7 +400,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(249, {
 		q(35531),	-- Magisters' Terrace Reward Quest - Normal completion
 		q(35532),	-- Magisters' Terrace Reward Quest - Heroic completion

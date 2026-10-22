@@ -7,8 +7,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(ZONE_REWARDS, {
 			filter(REAGENTS, {
 				o(656135, {	-- Slumbering Starfish
-					["description"] = "Can be found in waters, and around coastal areas of The Coiled Isle.",
-					["groups"] = {
+					description = "Can be found in waters, and around coastal areas of The Coiled Isle.",
+					groups = {
 						i(274596),	-- Beached Asteroid
 						i(274597),	-- Bulbous Benthos
 					},
@@ -108,8 +108,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			--
 			i(271424, {	-- Diver's Key Fragment
-				["cr"] = 263081,	-- Glittering Grouper Brinetail
-				["coords"] = {
+				cr = 263081,	-- Glittering Grouper Brinetail
+				coords = {
 					{ 61.2, 14.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 63.6, 13.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 65.4, 5.6, MAP.MIDNIGHT.THE_COILED_ISLE },
@@ -117,8 +117,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				},
 			}),
 			i(282183, {	-- Fabled Coiled Isle Veteran's Cache (Season 2)
-				["timeline"] = { ADDED_12_1_0 },
-				--["sym"] = SYM.MIDNIGHT.THE_COILED_ISLE_ZONE_REWARDS,
+				timeline = { ADDED_12_1_0 },
+				--sym = SYM.MIDNIGHT.THE_COILED_ISLE_ZONE_REWARDS,
 			}),
 		}),
 	}),

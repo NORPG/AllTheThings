@@ -2,19 +2,19 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	m(REVENDRETH, {
 		n(ZONE_REWARDS, {
-			["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
-			["groups"] = {
+			description = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
+			groups = {
 				i(182728),	-- A Crate of Sinvyr Ore
 				i(182727),	-- A Leaking Package
 				i(173718),	-- Bottle of Redelav Wine
 				i(173715),	-- Dredger's Toolkit
 				i(173720),	-- Glittering Primrose Necklace
 				i(182704, {	-- Green Muck Dye
-					["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Muck Pool: Banewood area (|cFFFFFFFF53.8, 72.3|r). It's easiest to find when the |cFFFFD700Dirty Job: Demolition Detail|r WQ is up, but there may be leftover Bonemauler mobs after the WQ has ended.",
-					["crs"] = {
+					description = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Muck Pool: Banewood area (|cFFFFFFFF53.8, 72.3|r). It's easiest to find when the |cFFFFD700Dirty Job: Demolition Detail|r WQ is up, but there may be leftover Bonemauler mobs after the WQ has ended.",
+					crs = {
 						157695,	-- Lurking Bonemauler
 						172888,	-- Lurking Alpha
 						172715,	-- Muckpool Investigator
@@ -32,8 +32,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				i(173707),	-- Soul Hunter's Blade
 				i(173705),	-- The Venthyr Diaries
 				i(173709, {	-- Vial of Dredger Muck
-					["description"] = "Drops from Dredger mobs and can be found in Revendreth treasure chests.",
-					["crs"] = {
+					description = "Drops from Dredger mobs and can be found in Revendreth treasure chests.",
+					crs = {
 						160846,	-- Beleaguered Excavator
 						161490,	-- Blackbale Flunky
 						161258,	-- Chalice Dredger
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				i(181184),	-- Soulstalker Helm
 				i(181186),	-- Stalker Wight's Sash
 				i(185854, {	-- Stone-Etched Shawl
-					["timeline"] = { ADDED_9_1_0 },
+					timeline = { ADDED_9_1_0 },
 				}),
 				i(181198),	-- Stone-Infused Sabatons
 				i(181201),	-- Stonewing Mantle

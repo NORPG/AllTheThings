@@ -5,20 +5,20 @@
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, m(ISLE_OF_THUNDER, {
-			["lore"] = "The Isle of Thunder is an island found northwest of Kun-Lai Summit and Townlong Steppes. Members of the newly-formed Kirin Tor Offensive and the Sunreaver Onslaught are facing off to lay claim to the isle before the other faction does. Members of the Shado-Pan Assault are united in their singular drive to take down Lei Shen at his seat of power, the Throne of Thunder, once and for all.",
-			["timeline"] = { ADDED_5_2_0 },
-			["icon"] = 136014,
-			["maps"] = {
+			lore = "The Isle of Thunder is an island found northwest of Kun-Lai Summit and Townlong Steppes. Members of the newly-formed Kirin Tor Offensive and the Sunreaver Onslaught are facing off to lay claim to the isle before the other faction does. Members of the Shado-Pan Assault are united in their singular drive to take down Lei Shen at his seat of power, the Throne of Thunder, once and for all.",
+			timeline = { ADDED_5_2_0 },
+			icon = 136014,
+			maps = {
 				505,	-- Lightning Vein Mine
 				506,	-- The Swollen Vault
 				516,	-- Scenario [Phase 1]
 				517,	-- Lightning Vein Mine
 			},
-			["groups"] = {
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(8121, {	-- Stormbreaker
 						-- Meta Achievement
-						["sym"] = {{"meta_achievement",
+						sym = {{"meta_achievement",
 							8112,	-- Blue Response
 							8118,	-- Boop
 							8120,	-- Direhorn in a China Shop
@@ -35,7 +35,7 @@ root(ROOTS.Zones, {
 							8108,	-- When in Ihgaluk, Do as the Skumblade Do
 							8116,	-- You Made Me Bleed My Own Blood
 						}},
-						["groups"] = { title(221) },	-- the Stormbreaker
+						groups = { title(221) },	-- the Stormbreaker
 					}),
 					ach(8112),	-- Blue Response
 					ach(8118),	-- Boop
@@ -76,9 +76,9 @@ root(ROOTS.Zones, {
 					achpart(8109, 8110),	-- The Mogu Below-gu
 					ach(8110),	-- These Mogu Have Gotta Go-gu (automated)
 					ach(8111, {	-- This Isn't Even My Final Form
-						["description"] = "Kill Drakkari God-Hulk patrolling on foot path near coord, then drink a Zandalari Potion nearby.",
-						["coord"] = { 36.6, 70.2, ISLE_OF_THUNDER },
-						["providers"] = {
+						description = "Kill Drakkari God-Hulk patrolling on foot path near coord, then drink a Zandalari Potion nearby.",
+						coord = { 36.6, 70.2, ISLE_OF_THUNDER },
+						providers = {
 							{ "n", 69200 },	-- Drakkari God-Hulk
 							{ "o", 218059 },	-- Zandalari Potion
 						},
@@ -91,42 +91,42 @@ root(ROOTS.Zones, {
 						crit(22835),	-- Sacrificed Kroshik
 					}),
 					ach(8116, {	-- You Made Me Bleed My Own Blood
-						["provider"] = { "n", 69435 },	-- Fleshcrafter Hoku
+						provider = { "n", 69435 },	-- Fleshcrafter Hoku
 					}),
 					ach(8212),	-- Zandalari Library Card
 				}),
 				petbattle(filter(BATTLE_PETS, {
 					pet(1181),	-- Elder Python (PET!)
 					pet(1179, {	-- Electrified Razortooth (PET!)
-						["coord"] = { 40.0, 59.2, ISLE_OF_THUNDER },
+						coord = { 40.0, 59.2, ISLE_OF_THUNDER },
 					}),
 					pet(1182),	-- Swamp Croaker (PET!)
 					pet(1175),	-- Thundertail Flapper (PET!)
 				})),
 				n(FACTIONS, {
 					faction(FACTION_KIRIN_TOR_OFFENSIVE, {	-- Kirin Tor Offensive
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						races = ALLIANCE_ONLY,
+						groups = {
 							n(ACHIEVEMENTS, {
 								ach(8208, {		-- Kirin Tor Offensive
-									["races"] = ALLIANCE_ONLY,
+									races = ALLIANCE_ONLY,
 								}),
 							}),
 							n(68000, {	-- Hiren Loresong <Kirin Tor Offensive Quartermaster>
-								["coord"] = { 64.6, 74.6, ISLE_OF_THUNDER },
-								["races"] = ALLIANCE_ONLY,
-								["groups"] = bubbleDownClassicRep(FACTION_KIRIN_TOR_OFFENSIVE, {
+								coord = { 64.6, 74.6, ISLE_OF_THUNDER },
+								races = ALLIANCE_ONLY,
+								groups = bubbleDownClassicRep(FACTION_KIRIN_TOR_OFFENSIVE, {
 									{		-- Neutral
 										i(97191),	-- Ancient Overlord's Onyx Band
 										i(97189),	-- Ancient Primalist's Seal
 										i(80433),	-- Blood Spirit
 										i(97207),	-- Cloak of the Immortal Guardian
 										i(95490, {	-- Greater Kirin Tor Offensive Insignia
-											["cost"] = { { "i", 95491, 10 } },	-- Tattered Historical Parchments
+											cost = { { "i", 95491, 10 } },	-- Tattered Historical Parchments
 										}),
 										i(95567),	-- Kirin Tor Beacon (TOY!)
 										i(95489, {	-- Kirin Tor Offensive Insignia
-											["cost"] = { { "i", 95491, 1 } },	-- Tattered Historical Parchments
+											cost = { { "i", 95491, 1 } },	-- Tattered Historical Parchments
 										}),
 										i(97187),	-- Refurbished Band of Jin
 										i(97190),	-- Refurbished Seal of Jin
@@ -159,59 +159,59 @@ root(ROOTS.Zones, {
 										i(95591),	-- Kirin Tor Offensive Tabard
 										i(95056),	-- Polymorphic Key
 										i(95564, {	-- Reins of the Golden Primal Direhorn (MOUNT!)
-											["cost"] = 30000000,	-- 3,000g
+											cost = 30000000,	-- 3,000g
 										}),
 									},
 								}),
 							}),
 							n(QUESTS, sharedData({
-								["races"] = ALLIANCE_ONLY,
+								races = ALLIANCE_ONLY,
 							},{
 								q(32655),	-- A Bold Idea
 								q(32706, {	-- Allies in the Shadows
-									["sourceQuest"] = 32681,	-- The Storm Gathers
-									["qgs"] = {
+									sourceQuest = 32681,	-- The Storm Gathers
+									qgs = {
 										67992,	-- Lady Jaina Proudmoore <Leader of the Kirin Tor>
 										70370,	-- Lady Jaina Proudmoore <Leader of the Kirin Tor>
 									},
-									["coord"] = { 34.7, 89.5, ISLE_OF_THUNDER },
+									coord = { 34.7, 89.5, ISLE_OF_THUNDER },
 								}),
 								q(32599, {	-- Securing A Future
-									["qg"] = 67992,	-- Lady Jaina Proudmoore
-									["minReputation"] = { FACTION_KIRIN_TOR_OFFENSIVE, EXALTED },	-- Kirin Tor Offensive
-									["groups"] = {
+									qg = 67992,	-- Lady Jaina Proudmoore
+									minReputation = { FACTION_KIRIN_TOR_OFFENSIVE, EXALTED },	-- Kirin Tor Offensive
+									groups = {
 										i(95589),	-- Glorious Standard of the Kirin Tor Offensive (TOY!)
 									},
 								}),
 								q(32549, {	-- Skin of the Saurok (A)
-									["qg"] = 69678,	-- Image of Archmage Vargoth
-									["coord"] = { 55.6, 74.4, ISLE_OF_THUNDER },
+									qg = 69678,	-- Image of Archmage Vargoth
+									coord = { 55.6, 74.4, ISLE_OF_THUNDER },
 								}),
 								q(32654, {	-- Tear Down This Wall! (A)
-									["qg"] = 67992,	-- Lady Jaina Proudmoore
-									["coord"] = { 63.3, 72.3, ISLE_OF_THUNDER },
+									qg = 67992,	-- Lady Jaina Proudmoore
+									coord = { 63.3, 72.3, ISLE_OF_THUNDER },
 								}),
 								q(32644, {	-- The Assault on Shaol'mara
-									["qgs"] = {
+									qgs = {
 										67992,	-- Lady Jaina Proudmoore <Leader of the Kirin Tor>
 										70370,	-- Lady Jaina Proudmoore <Leader of the Kirin Tor>
 									},
-									["coord"] = { 34.7, 89.5, ISLE_OF_THUNDER },
+									coord = { 34.7, 89.5, ISLE_OF_THUNDER },
 								}),
 								q(32656),	-- The Fall of Shan Bu (A)
 								q(32652),	-- To the Skies! (A)
 							})),
 							-- Weekly
 							n(QUESTS, sharedData({
-								["isWeekly"] = true,
-								["races"] = ALLIANCE_ONLY,
+								isWeekly = true,
+								races = ALLIANCE_ONLY,
 							},{
 								q(32640),	-- Champions of the Thunder King (A)
 							})),
 							-- Daily
 							n(QUESTS, sharedData({
-								["isDaily"] = true,
-								["races"] = ALLIANCE_ONLY,
+								isDaily = true,
+								races = ALLIANCE_ONLY,
 							},{
 								q(32571),	-- A Wing to Fly On (A)
 								q(32558),	-- All In the Family
@@ -239,12 +239,12 @@ root(ROOTS.Zones, {
 								q(32559),	-- Even Giants Fall
 								q(32607),	-- Extended Shore Leave (A)
 								q(32724, {	-- Forge Ahead! (A)
-									["classes"] = { PALADIN, WARLOCK },
-									["races"] = { DRAENEI, WORGEN },
+									classes = { PALADIN, WARLOCK },
+									races = { DRAENEI, WORGEN },
 								}),
 								q(32587, {	-- Forge Ahead! (A)
 								-- possibly races other than Draenei / Worgen and classes other than Paladin and Warlock?
-									["groups"] = {
+									groups = {
 										i(93731),	-- Mogu Codex Fragment (QI!)
 									},
 								}),
@@ -267,12 +267,12 @@ root(ROOTS.Zones, {
 								q(32568),	-- No Time To Rest (A)
 								q(32301),	-- Old Enemies (A)
 								q(32588, {	-- On Her Magic-ey Secret Service (A)
-									["groups"] = {
+									groups = {
 										i(93761),	-- Arcane Emancipator (QI!)
 									},
 								}),
 								q(32557, {	-- Out of Enemy Hands (A)
-									["groups"] = {
+									groups = {
 										o_repeated({
 											i(93736),	-- Loa-Infused Blade (QI!)
 											o(218055),	-- Loa-Infused Blade
@@ -284,7 +284,7 @@ root(ROOTS.Zones, {
 								q(32541),	-- Preventing a Future Threat (A)
 								q(32544),	-- Pterrible Ptorment (A)
 								q(32608, {	-- Raiding the Vault (A)
-									["groups"] = {
+									groups = {
 										i(95374),	-- Hoard-Keeper's Key (QI!)
 										o(218853, {	-- Stormy Chest
 											i(95372),	-- Choker of Storms (QI!)
@@ -318,24 +318,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					faction(FACTION_SUNREAVER_ONSLAUGHT, {	-- Sunreaver Onslaught
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						races = HORDE_ONLY,
+						groups = {
 							n(ACHIEVEMENTS, {
 								ach(8209, {		-- Sunreaver Onslaught
-									["races"] = HORDE_ONLY,
+									races = HORDE_ONLY,
 								}),
 							}),
 							n(67672, {	-- Vasarin Redmorn <Sunreaver Onslaught Quartermaster>
-								["coord"] = { 33.4, 32.4, ISLE_OF_THUNDER },
-								["races"] = HORDE_ONLY,
-								["groups"] = bubbleDownClassicRep(FACTION_SUNREAVER_ONSLAUGHT, {
+								coord = { 33.4, 32.4, ISLE_OF_THUNDER },
+								races = HORDE_ONLY,
+								groups = bubbleDownClassicRep(FACTION_SUNREAVER_ONSLAUGHT, {
 									{		-- Neutral
 										i(97196),	-- Ancient Overlord's Onyx Band
 										i(97194),	-- Ancient Primalist's Seal
 										i(80433),	-- Blood Spirit
 										i(97212),	-- Cloak of the Immortal Guardian
 										i(95488, {	-- Greater Sunreaver Onslaught Insignia
-											["cost"] = { { "i", 95491, 10 } },	-- Tattered Historical Parchments
+											cost = { { "i", 95491, 10 } },	-- Tattered Historical Parchments
 										}),
 										i(97192),	-- Refurbished Band of Jin
 										i(97195),	-- Refurbished Seal of Jin
@@ -345,7 +345,7 @@ root(ROOTS.Zones, {
 										i(97209),	-- Static-Collecting Cloak
 										i(95568),	-- Sunreaver Beacon (TOY!)
 										i(95487, {	-- Sunreaver Onslaught Insignia
-											["cost"] = { { "i", 95491, 1 } },	-- Tattered Historical Parchments
+											cost = { { "i", 95491, 1 } },	-- Tattered Historical Parchments
 										}),
 										i(97208),	-- Thunder-Chaser Cloak
 									}, {	-- Friendly
@@ -370,7 +370,7 @@ root(ROOTS.Zones, {
 										i(98559),	-- Empty Supply Crate
 										i(97155),	-- Polymorphic Key
 										i(95565, {	-- Reins of the Crimson Primal Direhorn (MOUNT!)
-											["cost"] = 30000000,	-- 3,000g
+											cost = 30000000,	-- 3,000g
 										}),
 										i(98562),	-- Sunreaver Bounty
 										i(95592),	-- Sunreaver Onslaught Tabard
@@ -378,68 +378,68 @@ root(ROOTS.Zones, {
 								}),
 							}),
 							n(QUESTS, sharedData({
-								["races"] = HORDE_ONLY,
+								races = HORDE_ONLY,
 							},{
 								q(32709, {	-- Allies in the Shadows
-									["sourceQuest"] = 32680,	-- The Storm Gathers
-									["qgs"] = {
+									sourceQuest = 32680,	-- The Storm Gathers
+									qgs = {
 										67990,	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
 										70371,	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
 									},
 								}),
 								q(32589, {	-- Life Blood (H)
-									["qg"] = 67990,	-- Lor'themar Theron
-									["coord"] = { 32.6, 35.5, ISLE_OF_THUNDER },
-									["minReputation"] = { FACTION_SUNREAVER_ONSLAUGHT, EXALTED },	-- Sunreaver Onslaught
-									["groups"] = {
+									qg = 67990,	-- Lor'themar Theron
+									coord = { 32.6, 35.5, ISLE_OF_THUNDER },
+									minReputation = { FACTION_SUNREAVER_ONSLAUGHT, EXALTED },	-- Sunreaver Onslaught
+									groups = {
 										i(95590),	-- Glorious Standard of the Sunreaver Onslaught (TOY!)
 									},
 								}),
 								q(32507, {	-- Skin of the Saurok (H)
-									["qg"] = 69433,	-- Magistrix Saia
-									["coord"] = { 46.9, 66.8, ISLE_OF_THUNDER },
+									qg = 69433,	-- Magistrix Saia
+									coord = { 46.9, 66.8, ISLE_OF_THUNDER },
 								}),
 								q(32276, {	-- Tear Down This Wall! (H)
-									["groups"] = {
+									groups = {
 										objective(1, {	-- Obtain Heavy Explosives
-											["providers"] = {
+											providers = {
 												{ "o", 218196 },	-- Heavy Explosives
 												{ "i", 93962 },	-- Heavy Explosives
 											},
-											["coord"] = { 48.4, 51.0, ISLE_OF_THUNDER },
+											coord = { 48.4, 51.0, ISLE_OF_THUNDER },
 										}),
 									},
 								}),
 								q(32212),	-- The Assault on Zeb'tula (H)
 								q(32277),	-- To the Skies! (H)
 								q(32278, {	-- Decisive Action (H)
-									["sourceQuest"] = 32277,	-- To the Skies (H)
-									["qg"] = 7029,	-- Taoshi
-									["coord"] = { 32.8, 32.6, ISLE_OF_THUNDER },
-									["groups"] = {
+									sourceQuest = 32277,	-- To the Skies (H)
+									qg = 7029,	-- Taoshi
+									coord = { 32.8, 32.6, ISLE_OF_THUNDER },
+									groups = {
 										i(94918),	-- Gatekeeper's Orb (QI!)
 									},
 								}),
 								q(32279, {	-- The Fall of Shan Bu (H)
-									["sourceQuest"] = 32278,	-- Decisive Action (H)
-									["qg"] = 6799,	-- Lor'themar Theron
-									["coord"] = { 32.5, 35.5, ISLE_OF_THUNDER },
+									sourceQuest = 32278,	-- Decisive Action (H)
+									qg = 6799,	-- Lor'themar Theron
+									coord = { 32.5, 35.5, ISLE_OF_THUNDER },
 								}),
 							})),
 							-- Weekly
 							n(QUESTS, sharedData({
-								["isWeekly"] = true,
-								["races"] = HORDE_ONLY,
+								isWeekly = true,
+								races = HORDE_ONLY,
 							},{
 								q(32641, {	-- Champions of the Thunder King (H)
-									["qg"] = 70160,	-- Taran Zhu
-									["coord"] = { 51.4, 46.1, ISLE_OF_THUNDER },
+									qg = 70160,	-- Taran Zhu
+									coord = { 51.4, 46.1, ISLE_OF_THUNDER },
 								}),
 							})),
 							-- Daily
 							n(QUESTS, sharedData({
-								["isDaily"] = true,
-								["races"] = HORDE_ONLY,
+								isDaily = true,
+								races = HORDE_ONLY,
 							},{
 								-- TODO: anyone care to fill out more information on these? haha.
 								q(32506),	-- A Wing to Fly On (H)
@@ -455,8 +455,8 @@ root(ROOTS.Zones, {
 								q(32200),	-- Dangers of Za'Tual (H)
 								q(32217),	-- Dark Offerings (H)
 								q(32255, {	-- De-Constructed (H)
-									["qg"] = 67660,	-- Archmage Aethas Sunreaver
-									["coord"] = { 46.8, 66.9, ISLE_OF_THUNDER },
+									qg = 67660,	-- Archmage Aethas Sunreaver
+									coord = { 46.8, 66.9, ISLE_OF_THUNDER },
 								}),
 								q(32302),	-- Deconstruction (H)
 								q(32298),	-- Dino Might (H)
@@ -468,16 +468,16 @@ root(ROOTS.Zones, {
 								q(32287),	-- Enemies Beneath the Tower (H)
 								q(32676),	-- Extended Shore Leave (H)
 								q(32722, {	-- Forge Ahead! (H)
-									["races"] = { BLOODELF, ORC, UNDEAD },
+									races = { BLOODELF, ORC, UNDEAD },
 								}),
 								q(32292, {	-- Forge Ahead! (H)
-									["sourceQuests"] = {
+									sourceQuests = {
 										32208,	-- Maximum Capacitor
 										32209,	-- Save Our Scouts! (H)
 									},
-									["sourceQuestNumRequired"] = 1,
+									sourceQuestNumRequired = 1,
 									-- possibly Horde races other than Blood Elf, Orc, and Undead? Vupera
-									["groups"] = {
+									groups = {
 										i(93731),	-- Mogu Codex Fragment (QI!)
 									},
 								}),
@@ -486,8 +486,8 @@ root(ROOTS.Zones, {
 								q(32215),	-- Heinous Sacrifice (H)
 								q(32304),	-- High Recognition (H)
 								q(32730, {	-- Ihgaluk Crag (H)
-									["qg"] = 67663,	-- Magister Hathorel
-									["coord"] = { 32.4, 35.2, ISLE_OF_THUNDER },
+									qg = 67663,	-- Magister Hathorel
+									coord = { 32.4, 35.2, ISLE_OF_THUNDER },
 								}),
 								q(32562),	-- Imposing Threat (H)
 								q(32522),	-- Imposing Threat (H)
@@ -495,8 +495,8 @@ root(ROOTS.Zones, {
 								q(32299),	-- Just Some Light Clean-Up Work (H)
 								q(32234),	-- Knowledge Is Power (H)
 								q(32491, {	-- Left To Rot (H)
-									["qg"] = 69371,	-- Amalia Penshire
-									["coord"] = { 47.0, 66.7, ISLE_OF_THUNDER },
+									qg = 69371,	-- Amalia Penshire
+									coord = { 47.0, 66.7, ISLE_OF_THUNDER },
 								}),
 								q(32283),	-- Loa-saur (H)
 								q(32303),	-- Made for War (H)
@@ -506,7 +506,7 @@ root(ROOTS.Zones, {
 								q(32213),	-- Old Enemies (H)
 								q(32305),	-- Overpowered (H)
 								q(32494, {	-- Power Play (H)
-									["groups"] = {
+									groups = {
 										i(93733),	-- Mask of the Spirit-Caller (QI!)
 										i(93734),	-- Mask of the Dark Mystic (QI!)
 									},
@@ -514,8 +514,8 @@ root(ROOTS.Zones, {
 								q(32227),	-- Preventing a Future Threat (H)
 								q(32216),	-- Pterrible Ptorment (H)
 								q(32677, {	-- Raiding the Vault (H)
-									["sourceQuest"] = 32292,	-- Forge Ahead (H)
-									["groups"] = {
+									sourceQuest = 32292,	-- Forge Ahead (H)
+									groups = {
 										i(95374),	-- Hoard-Keeper's Key (QI!)
 										o(218853, {	-- Stormy Chest
 											i(95372),	-- Choker of Storms (QI!)
@@ -526,8 +526,8 @@ root(ROOTS.Zones, {
 								q(32224),	-- Rise No More! (H)
 								q(32207),	-- Saur Loser (H)
 								q(32209, {	-- Save Our Scouts! (H)
-									["qg"] = 67986,	-- Magister Edien Sunhollow
-									["groups"] = {
+									qg = 67986,	-- Magister Edien Sunhollow
+									groups = {
 										i(93761),	-- Arcane Emancipator (QI!)
 									},
 								}),
@@ -545,23 +545,23 @@ root(ROOTS.Zones, {
 								q(32728),	-- The Court of Bones (H)
 								q(32489),	-- The Creeping Carpet of Ihgaluk (H)
 								q(32274, {	-- The Residents of Ihgaluk (H)
-									["qg"] = 69425,	-- Sunwalker Dezco
-									["coord"] = { 46.7, 66.7, ISLE_OF_THUNDER },
+									qg = 69425,	-- Sunwalker Dezco
+									coord = { 46.7, 66.7, ISLE_OF_THUNDER },
 								}),
 								q(32228, {	-- The Shuddering Moor (H)
-									["qg"] = 67673,	-- Girana the Blooded
-									["coord"] = { 32.4, 35.2, ISLE_OF_THUNDER },
+									qg = 67673,	-- Girana the Blooded
+									coord = { 32.4, 35.2, ISLE_OF_THUNDER },
 								}),
 								q(32204, {	-- The Skumblade Threat (H)
-									["qg"] = 67660,	-- Archmage Aethas Sunreaver
-									["coord"] = { 46.8, 66.9, ISLE_OF_THUNDER },
+									qg = 67660,	-- Archmage Aethas Sunreaver
+									coord = { 46.8, 66.9, ISLE_OF_THUNDER },
 								}),
 								q(32285),	-- The Sleepless Legion (H)
 								q(32230),	-- The Zandalari Colossus (H)
 								q(32493),	-- They All Fall Down
 								q(32206),	-- This Just Won't Do
 								q(32233, {	-- Very Disarming
-									["groups"] = {
+									groups = {
 										o_repeated({
 											i(93736),	-- Loa-Infused Blade (QI!)
 											o(218055),	-- Loa-Infused Blade
@@ -578,10 +578,10 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(32621, {	-- Lightning Steel
-						["provider"] = { "i", 94721 },	-- Strange Metal Ingot
-						["coord"] = { 57.6, 33.8, ISLE_OF_THUNDER },
-						["requireSkill"] = BLACKSMITHING,
-						["groups"] = {
+						provider = { "i", 94721 },	-- Strange Metal Ingot
+						coord = { 57.6, 33.8, ISLE_OF_THUNDER },
+						requireSkill = BLACKSMITHING,
+						groups = {
 							i(94553, {	-- Notes on Lightning Steel
 								i(94568),	-- Plans: Drakefist Hammer, Reborn (RECIPE!)
 								i(94572),	-- Plans: Fireguard, Reborn (RECIPE!)
@@ -594,93 +594,93 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(32707, {	-- Secrets in the Isle of Thunder
-						["sourceQuests"] = {
+						sourceQuests = {
 							32709,	-- Allies in the Shadows [Horde]
 							32706,	-- Allies in the Shadows [Alliance]
 						},
-						["qg"] = 70160,	-- Taran Zhu <Lord of the Shado-Pan>
-						["coord"] = { 51.4, 46.0, ISLE_OF_THUNDER },
+						qg = 70160,	-- Taran Zhu <Lord of the Shado-Pan>
+						coord = { 51.4, 46.0, ISLE_OF_THUNDER },
 					}),
 					q(32708, {	-- Setting the Trap
-						["qg"] = 70160,	-- Taran Zhu <Lord of the Shado-Pan>
-						["coord"] = { 51.4, 46.0, ISLE_OF_THUNDER },
+						qg = 70160,	-- Taran Zhu <Lord of the Shado-Pan>
+						coord = { 51.4, 46.0, ISLE_OF_THUNDER },
 					}),
 					q(32505, {	-- The Crumbled Chamberlain
-						["provider"] = { "o", 218072 },	-- Head of the Chamberlain
-						["isWeekly"] = true,
-						["groups"] = {
+						provider = { "o", 218072 },	-- Head of the Chamberlain
+						isWeekly = true,
+						groups = {
 							ach(8105),	-- The Crumble Bundle
 							i(94221),	-- Shan'ze Ritual Stone
 						},
 					}),
 					q(32296, {	-- Treasures of the Thunder King
-						["qg"] = 70316,	-- Taoshi
-						["coord"] = { 51.5, 46.0, ISLE_OF_THUNDER },
-						["cost"] = { { "i", 94222, 1 } },	-- 1x Key to the Palace of Lei Shen
-						["maps"] = { 518 },	-- Thunder King's Citadel
-						["isWeekly"] = true,
-						["_drop"] = { "g" },	-- unnecessary API data
-						["groups"] = {
+						qg = 70316,	-- Taoshi
+						coord = { 51.5, 46.0, ISLE_OF_THUNDER },
+						cost = { { "i", 94222, 1 } },	-- 1x Key to the Palace of Lei Shen
+						maps = { 518 },	-- Thunder King's Citadel
+						isWeekly = true,
+						_drop = { "g" },	-- unnecessary API data
+						groups = {
 							ach(8106, {	-- In the Hall of the Thunder King
 								crit(22910, {	-- Obtain a Handful of Stolen Gems from the Treasure Saurok
-									["provider"] = { "i", 95342 },	-- Handful of Stolen Gems
+									provider = { "i", 95342 },	-- Handful of Stolen Gems
 								}),
 								crit(23207, {	-- Loot 10 Golden Treasure Chests in one run
-									["_objects"] = { 218772 },	-- Golden Treasure Chest
+									_objects = { 218772 },	-- Golden Treasure Chest
 								}),
 								crit(22981),	-- Slay God-Hulk Gulkan
 								crit(22980, {	-- Reach Tenwu of the Red Smoke
-									["_npcs"] = { 70321 },	-- Tenwu of the Red Smoke
+									_npcs = { 70321 },	-- Tenwu of the Red Smoke
 								}),
 							}),
 							n(70400, {	-- God-Hulk Gulkan
-								["coord"] = { 53.6, 19.2, 518 },	-- Thunder King's Citadel
-								["groups"] = {
+								coord = { 53.6, 19.2, 518 },	-- Thunder King's Citadel
+								groups = {
 									i(95497, {	-- Burial Trove Key
-										["description"] = "You are given one key for turning in the quest itself and then can find these contained within the chests scattered about within the citadel.",
+										description = "You are given one key for turning in the quest itself and then can find these contained within the chests scattered about within the citadel.",
 									}),
 									i(95491),	-- Tattered Historical Parchments
 								},
 							}),
 							n(70321, {	-- Tenwu of the Red Smoke
-								["description"] = "Talking to Tenwu of the Red Smoke will end your timed run with the bonus of an extra Burial Trove Key.",
-								["coord"] = { 52.6, 10.2, 518 },	-- Thunder King's Citadel
+								description = "Talking to Tenwu of the Red Smoke will end your timed run with the bonus of an extra Burial Trove Key.",
+								coord = { 52.6, 10.2, 518 },	-- Thunder King's Citadel
 							}),
 							n(TREASURES, {
 								o(218772, {	-- Golden Treasure Chest
-									["coords"] = {
+									coords = {
 										{ 26.7, 45.7, 518 },	-- Thunder King's Citadel
 										{ 30.6, 58.1, 518 },	-- Thunder King's Citadel
 										{ 33.2, 17.5, 518 },	-- Thunder King's Citadel
 									},
-									["groups"] = {
+									groups = {
 										i(94221),	-- Shan'ze Ritual Stone
 										i(95497),	-- Burial Trove Key
 										i(95491),	-- Tattered Historical Parchments
 									},
 								}),
 								o(218757, {	-- Mogu Treasure Chest
-									["coords"] = {
+									coords = {
 										{ 26.7, 45.7, 518 },	-- Thunder King's Citadel
 										{ 30.6, 58.1, 518 },	-- Thunder King's Citadel
 										{ 33.2, 17.5, 518 },	-- Thunder King's Citadel
 									},
-									["groups"] = {
+									groups = {
 										i(94221),	-- Shan'ze Ritual Stone
 										i(95497),	-- Burial Trove Key
 										i(95491),	-- Tattered Historical Parchments
 									},
 								}),
 								o(218949, {	-- Lei Shen's Burial Trove
-									["coord"] = { 46.6, 78.2, 518 },	-- Thunder King's Citadel
-									["cost"] = { { "i", 95497, 1 } },	-- Burial Trove Key
-									["groups"] = {
+									coord = { 46.6, 78.2, 518 },	-- Thunder King's Citadel
+									cost = { { "i", 95497, 1 } },	-- Burial Trove Key
+									groups = {
 										i(95496),	-- Shado-Pan Assault Insignia
 										i(94221),	-- Shan'ze Ritual Stone
 										i(95491),	-- Tattered Historical Parchments
 										i(139571, {	-- Tome of Otherworldly Venoms
-											["timeline"] = { ADDED_7_0_3 },
-											["groups"] = {
+											timeline = { ADDED_7_0_3 },
+											groups = {
 												artifact(891),	-- Fangs of the Devourer [Main Hand]
 												-- artifact(891),	-- Fangs of the Devourer [Off-Hand]
 											},
@@ -712,8 +712,8 @@ root(ROOTS.Zones, {
 								}),
 							}),
 							n(ZONE_DROPS, {
-								["cr"] = 70414,	-- Skumblade Pillager
-								["groups"] = {
+								cr = 70414,	-- Skumblade Pillager
+								groups = {
 									i(95497),	-- Burial Trove Key
 									i(95491),	-- Tattered Historical Parchments
 									i(95342),	-- Handful of Stolen Gems
@@ -726,26 +726,26 @@ root(ROOTS.Zones, {
 					-- Specific Rare Drops
 					n(COMMON_BOSS_DROPS, {
 						i(94566, {	-- Fortuitous Coffer
-							["crs"] = {
+							crs = {
 								69809,	-- Forgemaster Deng
 								69800,	-- Haqin of the Hundred Spears
 								69961,	-- Sparkmancer Vu
 							},
-							["sym"] = {{"select","itemID",
+							sym = {{"select","itemID",
 								95409,	-- Iron-Bound Zandalari Journal
 								95410,	-- Blood-Spattered Zandalari Journal
 								95411,	-- Torn Zandalari Journal
 								95412,	-- Frayed Zandalari Journal
 								95408,	-- Waterlogged Zandalari Journal
 							}},
-							["groups"] = {
+							groups = {
 								currency(697),	-- Elder Charm of Good Fortune
 							},
 						}),
 					}),
 					-- Rare Drops
 					n(COMMON_BOSS_DROPS, sharedData({
-						["crs"] = {
+						crs = {
 							70000,	-- Al'tabim the All-Seeing
 							70001,	-- Backbreaker Uru
 							69999,	-- God-Hulk Ramuk
@@ -762,277 +762,277 @@ root(ROOTS.Zones, {
 						i(94130),	-- Incantation of Haqin
 						i(95350),	-- Incantation of Vu
 						i(94221, {	-- Shan'ze Ritual Stone
-							["description"] = "You will need 3 stones to summon special rares at their specific spawn points.",
+							description = "You will need 3 stones to summon special rares at their specific spawn points.",
 						}),
 						i(97268, {	-- Tome of Valor
-							["timeline"] = { ADDED_5_2_0, REMOVED_5_3_0 },
+							timeline = { ADDED_5_2_0, REMOVED_5_3_0 },
 						}),
 						-- TODO: maybe make it more clear this is a 'looted' trigger via built-in handling?
 						header(HEADERS.Item, 94221, {	-- Shan'ze Ritual Stone [looted]
-							["description"] = "Whether this will be lootable from Rares.",
-							["questID"] = 32610,
-							["isDaily"] = true,
+							description = "Whether this will be lootable from Rares.",
+							questID = 32610,
+							isDaily = true,
 						}),
 					})),
 					n(70000, {	-- Al'tabim the All-Seeing
-						["isWeekly"] = true,
-						["coord"] = { 44.7, 29.8, ISLE_OF_THUNDER },
-						["groups"] = {
+						isWeekly = true,
+						coord = { 44.7, 29.8, ISLE_OF_THUNDER },
+						groups = {
 							crit(22826, {	-- Al'tabim the All-Seeing
-								["achievementID"] = 8103,	-- Champions of Lei Shen
+								achievementID = 8103,	-- Champions of Lei Shen
 							}),
 						},
 					}),
 					n(70001, {	-- Backbreaker Uru
-						["isWeekly"] = true,
-						["coords"] = {
+						isWeekly = true,
+						coords = {
 							{ 48.0, 25.5, ISLE_OF_THUNDER },
 							{ 42.9, 36.3, 505 },
 						},
-						["groups"] = {
+						groups = {
 							crit(22827, {	-- Backbreaker Uru
-								["achievementID"] = 8103,	-- Champions of Lei Shen
+								achievementID = 8103,	-- Champions of Lei Shen
 							}),
 						},
 					}),
 					n(69809, {	-- Forgemaster Deng
-						["cost"] = { { "i", 94233, 1 } },	-- 1x Incantation of Deng
+						cost = { { "i", 94233, 1 } },	-- 1x Incantation of Deng
 					}),
 					n(69999, {	-- God-Hulk Ramuk
-						["isWeekly"] = true,
-						["coord"] = { 61.4, 49.5, ISLE_OF_THUNDER },
-						["groups"] = {
+						isWeekly = true,
+						coord = { 61.4, 49.5, ISLE_OF_THUNDER },
+						groups = {
 							crit(22825, {	-- God-Hulk Ramuk
-								["achievementID"] = 8103,	-- Champions of Lei Shen
+								achievementID = 8103,	-- Champions of Lei Shen
 							}),
 						},
 					}),
 					n(69998, {	-- Goda
-						["isWeekly"] = true,
-						["coord"] = { 53.7, 53.1, ISLE_OF_THUNDER },
-						["groups"] = {
+						isWeekly = true,
+						coord = { 53.7, 53.1, ISLE_OF_THUNDER },
+						groups = {
 							crit(22824, {	-- Goda
-								["achievementID"] = 8103,	-- Champions of Lei Shen
+								achievementID = 8103,	-- Champions of Lei Shen
 							}),
 						},
 					}),
 					n(69800, {	-- Haqin of the Hundred Spears
-						["cost"] = { { "i", 94130, 1 } },	-- 1x Incantation of Haqin
+						cost = { { "i", 94130, 1 } },	-- 1x Incantation of Haqin
 					}),
 					n(50358, {	-- Haywire Sunreaver Construct
-						["isWeekly"] = true,
-						["coords"] = {
+						isWeekly = true,
+						coords = {
 							{ 48.4, 86.4, ISLE_OF_THUNDER },
 							{ 50.2, 90.8, ISLE_OF_THUNDER },
 						},
-						["groups"] = {
+						groups = {
 							crit(22820, {	-- Haywire Sunreaver Construct
-								["achievementID"] = 8103,	-- Champions of Lei Shen
+								achievementID = 8103,	-- Champions of Lei Shen
 							}),
 							i(94124),	-- Sunreaver Micro-Sentry (PET!)
 						},
 					}),
 					n(69461, {	-- Itoka <Master of the Forge>
-						-- ["questID"] = ,
-						["coord"] = { 57.6, 33.8, ISLE_OF_THUNDER },
-						["groups"] = {
+						-- questID = ,
+						coord = { 57.6, 33.8, ISLE_OF_THUNDER },
+						groups = {
 							i(94721),	-- Strange Metal Ingot
 						},
 					}),
 					n(69996, {	-- Ku'lai the Skyclaw
-						["isWeekly"] = true,
-						["coords"] = {
+						isWeekly = true,
+						coords = {
 							{ 33.0, 81.0, ISLE_OF_THUNDER },
 							{ 37.6, 82.6, ISLE_OF_THUNDER },
 						},
-						["groups"] = {
+						groups = {
 							crit(22822, {	-- Ku'lai the Skyclaw
-								["achievementID"] = 8103,	-- Champions of Lei Shen
+								achievementID = 8103,	-- Champions of Lei Shen
 							}),
 						},
 					}),
 					n(70002, {	-- Lu-Ban
-						["isWeekly"] = true,
-						["coord"] = { 54.3, 35.4, ISLE_OF_THUNDER },
-						["groups"] = {
+						isWeekly = true,
+						coord = { 54.3, 35.4, ISLE_OF_THUNDER },
+						groups = {
 							crit(22825, {	-- Lu-Ban
-								["achievementID"] = 8103,	-- Champions of Lei Shen
+								achievementID = 8103,	-- Champions of Lei Shen
 							}),
 						},
 					}),
 					n(70003, {	-- Molthor
-						["isWeekly"] = true,
-						["coords"] = {
+						isWeekly = true,
+						coords = {
 							{ 63.5, 49.2, ISLE_OF_THUNDER },
 							{ 39.0, 37.2, 506 },
 						},
-						["groups"] = {
+						groups = {
 							crit(22829, {	-- Molthor
-								["achievementID"] = 8103,	-- Champions of Lei Shen
+								achievementID = 8103,	-- Champions of Lei Shen
 							}),
 						},
 					}),
 					n(69664, {	-- Mumta
-						["isWeekly"] = true,
-						["coord"] = { 35.10, 62.45, ISLE_OF_THUNDER },
-						["groups"] = {
+						isWeekly = true,
+						coord = { 35.10, 62.45, ISLE_OF_THUNDER },
+						groups = {
 							crit(22821, {	-- Mumta
-								["achievementID"] = 8103,	-- Champions of Lei Shen
+								achievementID = 8103,	-- Champions of Lei Shen
 							}),
 						},
 					}),
 					n(69997, {	-- Progenitus
-						["isWeekly"] = true,
-						["coords"] = {
+						isWeekly = true,
+						coords = {
 							{ 51.31, 71.19, ISLE_OF_THUNDER },	-- Spawn
 							{ 50.49, 74.96, ISLE_OF_THUNDER },	-- Path Start
 						},
-						["groups"] = {
+						groups = {
 							crit(22823, {	-- Progenitus
-								["achievementID"] = 8103,	-- Champions of Lei Shen
+								achievementID = 8103,	-- Champions of Lei Shen
 							}),
 						},
 					}),
 					n(70530, {	-- Ra'sha <Tender of Sacrifices>
-						["coord"] = { 39.41, 81.60, ISLE_OF_THUNDER },
-						["groups"] = {
+						coord = { 39.41, 81.60, ISLE_OF_THUNDER },
+						groups = {
 							i(95566),	-- Ra'sha's Sacrificial Dagger
 							i(94158, {	-- Big Bag of Zandalari Supplies
-								["description"] = "Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",
-								["sym"] = {{"select","itemID",87218},{"groupfill"}},	-- Big Bag of Arms
+								description = "Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",
+								sym = {{"select","itemID",87218},{"groupfill"}},	-- Big Bag of Arms
 							}),
 							i(94159, {	-- Small Bag of Zandalari Supplies
-								["description"] = "Can contain all sorts of herbs, ore, and cloth.",
+								description = "Can contain all sorts of herbs, ore, and cloth.",
 							}),
 						},
 					}),
 					n(69961, {	-- Sparkmancer Vu
-						["cost"] = { { "i", 95350, 1 } },	-- 1x Incantation of Vu
+						cost = { { "i", 95350, 1 } },	-- 1x Incantation of Vu
 					}),
 				}),
 				n(RARES, sharedData({
-					["cost"] = { { "i", 94221, 3 } },	-- 3x Shan'ze Ritual Stone
+					cost = { { "i", 94221, 3 } },	-- 3x Shan'ze Ritual Stone
 				},{
 					n(69767, {	-- Ancient Mogu Guardian
-						["coord"] = { 53.13, 47.07, ISLE_OF_THUNDER },
-						["crs"] = { 70197 },	-- Lightning Ritual Stone
-						["groups"] = {
+						coord = { 53.13, 47.07, ISLE_OF_THUNDER },
+						crs = { 70197 },	-- Lightning Ritual Stone
+						groups = {
 							i(94826),	-- Mogu Sportsman's Bow
 						},
 					}),
 					n(69396, {	-- Cera
-						["coords"] = {
+						coords = {
 							{ 33.18, 45.58, ISLE_OF_THUNDER },
 							{ 57.84, 79.17, ISLE_OF_THUNDER },
 						},
-						["crs"] = {
+						crs = {
 							70614,	-- Primal Ritual Stone
 							70199,	-- Primal Ritual Stone
 						},
-						["groups"] = {
+						groups = {
 							i(94706),	-- Cera's Impalers
 						},
 					}),
 					n(69341, {	-- Echo of Kros
-						["coord"] = { 55.1, 87.7, ISLE_OF_THUNDER },
-						["crs"] = { 70203 },	-- Spirit Ritual Stone
-						["groups"] = {
+						coord = { 55.1, 87.7, ISLE_OF_THUNDER },
+						crs = { 70203 },	-- Spirit Ritual Stone
+						groups = {
 							i(94708),	-- Saurok Ritualist's Sacrificial Dagger
 						},
 					}),
 					n(69339, {	-- Electromancer Ju'le
-						["crs"] = { 69770 },	-- Lightning Ritual Stone
-						["coord"] = { 44.4, 61.0, ISLE_OF_THUNDER },
-						["groups"] = {
+						crs = { 69770 },	-- Lightning Ritual Stone
+						coord = { 44.4, 61.0, ISLE_OF_THUNDER },
+						groups = {
 							i(94825),	-- Lightning Snare
 						},
 					}),
 					n(69347, {	-- Incomplete Drakkari Colossus
-						["coord"] = { 49.9, 20.6, ISLE_OF_THUNDER },
-						["crs"] = { 70200 },	-- Primal Ritual Stone
-						["groups"] = {
+						coord = { 49.9, 20.6, ISLE_OF_THUNDER },
+						crs = { 70200 },	-- Primal Ritual Stone
+						groups = {
 							i(94823),	-- Drakkari Decapitator
 						},
 					}),
 					n(69633, {	-- Kor'dok
-						["coord"] = { 30.71, 58.56, ISLE_OF_THUNDER },
-						["crs"] = {
+						coord = { 30.71, 58.56, ISLE_OF_THUNDER },
+						crs = {
 							69644,	-- Tinzo the Emberkeeper
 							70204,	-- Spiritual Ritual Stone
 						},
-						["groups"] = {
+						groups = {
 							i(94720),	-- Vengeance of Kor'dok
 						},
 					}),
 					n(69749, {	-- Qi'nor
-						["coord"] = { 48.0, 25.9, ISLE_OF_THUNDER },
-						["crs"] = { 70196 },	-- Lightning Ritual Stone
-						["groups"] = {
+						coord = { 48.0, 25.9, ISLE_OF_THUNDER },
+						crs = { 70196 },	-- Lightning Ritual Stone
+						groups = {
 							i(94824),	-- Gaze of Qi'nor
 						},
 					}),
 					n(69471, {	-- Spirit of Warlord Teng
-						["description"] = "Located underneath the building.",
-						["coord"] = { 35.6, 63.8, ISLE_OF_THUNDER },
-						["crs"] = { 70201 },	-- Spiritual Ritual Stone
-						["groups"] = {
+						description = "Located underneath the building.",
+						coord = { 35.6, 63.8, ISLE_OF_THUNDER },
+						crs = { 70201 },	-- Spiritual Ritual Stone
+						groups = {
 							i(94707),	-- Teng's Reach
 						},
 					}),
 					n(70080, {	-- Windweaver Akil'amon
-						["coord"] = { 68.9, 39.2, ISLE_OF_THUNDER },
-						["crs"] = { 70198 },	-- Primal Ritual Stone
-						["groups"] = {
+						coord = { 68.9, 39.2, ISLE_OF_THUNDER },
+						crs = { 70198 },	-- Primal Ritual Stone
+						groups = {
 							i(94709),	-- Talonblade of Akil'amon
 						},
 					}),
 				})),
 				n(TREASURES, {
 					o(218438, {	-- Age of a Hundred Kings
-						["coord"] = { 62.5, 37.8, ISLE_OF_THUNDER },
+						coord = { 62.5, 37.8, ISLE_OF_THUNDER },
 					}),
 					o(218435, {	-- Agents of Order
-						["coord"] = { 35.8, 54.7, ISLE_OF_THUNDER },
+						coord = { 35.8, 54.7, ISLE_OF_THUNDER },
 					}),
 					o(218427, {	-- Coming of Age
-						["coord"] = { 35.4, 70.2, ISLE_OF_THUNDER },
+						coord = { 35.4, 70.2, ISLE_OF_THUNDER },
 					}),
 					o(218428, {	-- For Council and King
-						["coord"] = { 66.0, 44.7, ISLE_OF_THUNDER },
+						coord = { 66.0, 44.7, ISLE_OF_THUNDER },
 					}),
 					o(218431, {	-- Lei Shen
-						["coord"] = { 40.2, 40.7, ISLE_OF_THUNDER },
+						coord = { 40.2, 40.7, ISLE_OF_THUNDER },
 					}),
 					o(218429, {	-- Shadows of the Loa
-						["coord"] = { 36.3, 70.1, ISLE_OF_THUNDER },
+						coord = { 36.3, 70.1, ISLE_OF_THUNDER },
 					}),
 					o(218436, {	-- Shadow, Storm, and Stone
-						["coord"] = { 59.3, 26.3, ISLE_OF_THUNDER },
+						coord = { 59.3, 26.3, ISLE_OF_THUNDER },
 					}),
 					o(218437, {	-- The Curse and the Silence
-						["coord"] = { 49.9, 20.4, ISLE_OF_THUNDER },
+						coord = { 49.9, 20.4, ISLE_OF_THUNDER },
 					}),
 					o(218430, {	-- The Dark Prophet Zul
-						["coord"] = { 52.6, 41.4, ISLE_OF_THUNDER },
+						coord = { 52.6, 41.4, ISLE_OF_THUNDER },
 					}),
 					o(218434, {	-- The Pandaren Problem
-						["coord"] = { 60.7, 68.8, ISLE_OF_THUNDER },
+						coord = { 60.7, 68.8, ISLE_OF_THUNDER },
 					}),
 					o(218432, {	-- The Sacred Mount
-						["coord"] = { 47.1, 59.9, ISLE_OF_THUNDER },
+						coord = { 47.1, 59.9, ISLE_OF_THUNDER },
 					}),
 					o(218433, {	-- Unity at a Price
-						["coord"] = { 34.9, 65.6, ISLE_OF_THUNDER },
+						coord = { 34.9, 65.6, ISLE_OF_THUNDER },
 					}),
 				}),
 				n(VENDORS, {
 					n(70535, {	-- Teng of the Flying Daggers <Shado-Pan Assault Quartermaster>
-						["coord"] = { 51.6, 46.6, ISLE_OF_THUNDER },
-						["sym"] = {{"sub","common_vendor",70346}},	-- Ao Pye <Shado-Pan Assault Quartermaster>
+						coord = { 51.6, 46.6, ISLE_OF_THUNDER },
+						sym = {{"sub","common_vendor",70346}},	-- Ao Pye <Shado-Pan Assault Quartermaster>
 					}),
 				}),
 				n(ZONE_DROPS, {
-					["maps"] = {
+					maps = {
 						-- Throne of Thunder Maps
 						508,	-- Overgrown Statuary
 						509,	-- Royal Amphitheater
@@ -1044,7 +1044,7 @@ root(ROOTS.Zones, {
 						515,	-- Hidden Cell
 						ISLE_OF_GIANTS,
 					},
-					["groups"] = {
+					groups = {
 						i(94056),	-- Battered Saurscale Belt
 						i(94057),	-- Battered Saurscale Boots
 						i(94055),	-- Battered Saurscale Bracers
@@ -1140,15 +1140,15 @@ root(ROOTS.Zones, {
 					i(95412),	-- Frayed Zandalari Journal
 					i(95408),	-- Waterlogged Zandalari Journal
 					i(97961, {	-- Filthling (PET!)
-						["timeline"] = { ADDED_5_3_0 },
-						["crs"] = { 69251 },	-- Quivering Filth
+						timeline = { ADDED_5_3_0 },
+						crs = { 69251 },	-- Quivering Filth
 					}),
 				}),
 			},
 		})),
 	}),
 });
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {
 	m(PANDARIA, {
 		m(ISLE_OF_THUNDER, {
 			n(FACTIONS, {
@@ -1192,7 +1192,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 			}),
 			n(ZONE_DROPS, {
 				q(32626),	-- Loot Room Key Tracking Quest — triggers when looting "Key to the Palace of Lei Shen"
-				q(32611, {["isWeekly"]=true}),	-- Rare Drop Tracking Quest — tracks whether you have looted an Incantation for this week
+				q(32611, {isWeekly=true}),	-- Rare Drop Tracking Quest — tracks whether you have looted an Incantation for this week
 			}),
 		}),
 	}),

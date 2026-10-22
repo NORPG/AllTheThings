@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldDrops, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.WorldDrops, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
 	n(SETS, {
 		i(82139),	-- Brewer's Cord
 		i(82140),	-- Brewer's Cowl
@@ -580,13 +580,13 @@ root(ROOTS.WorldDrops, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP,
 	}),
 	filter(RECIPES, {
 		prof(BLACKSMITHING, {
-			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100865, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Plans: Balanced Trillium Ingot and Its Uses (RECIPE!)
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100865, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {	-- Plans: Balanced Trillium Ingot and Its Uses (RECIPE!)
 				r(146921),	-- Accelerated Balanced Trillium Ingot (RECIPE!)
 				r(143255),	-- Balanced Trillium Ingot (RECIPE!)
 			})))),
 		}),
 		prof(ENGINEERING, {
-			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100910, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Schematic: Chief Engineer Jard's Journal
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100910, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {	-- Schematic: Chief Engineer Jard's Journal
 				r(139197),	-- Advanced Refrigeration Unit
 				r(139176),	-- Jard's Peculiar Energy Source
 				r(139196),	-- Pierre
@@ -594,79 +594,79 @@ root(ROOTS.WorldDrops, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP,
 				r(139192),	-- Sky Golem
 			})))),
 			applyclassicphase(MOP_PHASE_ESCALATION, TempForceMisc(i(94847, {	-- Schematic: Chief Engineer Jard's Journal
-				["timeline"] = { CREATED_5_2_0, ADDED_5_3_0, REMOVED_5_4_0 },
-				["_drop"] = { "g" },
+				timeline = { CREATED_5_2_0, ADDED_5_3_0, REMOVED_5_4_0 },
+				_drop = { "g" },
 			}))),
 			applyclassicphase(MOP_PHASE_ESCALATION, q(32630, {	-- Chief Engineer Jard's Journal
-				["provider"] = { "i", 94847 },	-- Schematic: Chief Engineer Jard's Journal
-				["timeline"] = { CREATED_5_2_0, ADDED_5_3_0, REMOVED_5_4_0 },
-				["_drop"] = { "g" },
+				provider = { "i", 94847 },	-- Schematic: Chief Engineer Jard's Journal
+				timeline = { CREATED_5_2_0, ADDED_5_3_0, REMOVED_5_4_0 },
+				_drop = { "g" },
 			})),
 		}),
-		prof(INSCRIPTION, sharedData({ ["timeline"] = { ADDED_5_4_0 } }, {
+		prof(INSCRIPTION, sharedData({ timeline = { ADDED_5_4_0 } }, {
 			i(102534),	-- Technique: Crafted Malevolent Gladiator's Medallion of Tenacity
 			i(104228),	-- Technique: Glyph of Angels
 			i(104240, {	-- Technique: Glyph of Astral Fixation
-				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
+				timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
 			i(104212, {	-- Technique: Glyph of Divine Shield
-				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
+				timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
 			i(104239, {	-- Technique: Glyph of Elemental Familiars
-				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
+				timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
 			i(104281, {	-- Technique: Glyph of Enduring Deceit
-				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
+				timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
 			i(104215, {	-- Technique: Glyph of Eternal Earth
-				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
 			}),
 			i(104226, {	-- Technique: Glyph of Exorcist
-				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
+				timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
 			i(104211, {	-- Technique: Glyph of Festering Blood
-				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
 			}),
 			i(104237, {	-- Technique: Glyph of Flaming Serpent
-				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
+				timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
 			i(104213, {	-- Technique: Glyph of Hand of Sacrifice
-				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
+				timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
 			i(104233, {	-- Technique: Glyph of Improved Distraction
-				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
+				timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
 			i(104220, {	-- Technique: Glyph of Long Winter
-				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
 			}),
 			i(104214, {	-- Technique: Glyph of Purging
-				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
+				timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
 			i(104234),	-- Technique: Glyph of Spirit Raptors
 			i(104236, {	-- Technique: Glyph of Spirit Wolf
-				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
+				timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
 			i(104221, {	-- Technique: Glyph of Sprouting Mushroom
-				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
+				timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
 			i(104197, {	-- Technique: Glyph of Swift Death
-				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
+				timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
 			i(104218, {	-- Technique: Glyph of the Executor
-				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
 			}),
 			i(104238, {	-- Technique: Glyph of the Compy
 				-- #if BEFORE LEGION
-				["description"] = "Drops off high level mobs in Pandaria instances and Timeless Isle.",
+				description = "Drops off high level mobs in Pandaria instances and Timeless Isle.",
 				-- #endif
-				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
+				timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
 			i(104242, {	-- Technique: Glyph of the Raging Whirlwind
-				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
+				timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
 			i(104229),	-- Technique: Glyph of the Sha
 			i(104243, {	-- Technique: Glyph of the Subtle Defender
-				["timeline"] = { ADDED_5_4_0, REMOVED_7_0_3 },
+				timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
 			}),
 			i(104223),	-- Technique: Glyph of (the) Unbound Elemental
 		})),
@@ -683,32 +683,32 @@ root(ROOTS.WorldDrops, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP,
 			i(83862),	-- Design: Forlorn Primal Diamond (RECIPE!)
 			i(83872),	-- Design: Impassive Primal Diamond (RECIPE!)
 			i(83901),	-- Design: Powerful Primal Diamond (RECIPE!)
-			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(95471, {["timeline"] = { ADDED_5_2_0 } })),	-- Design: Primal Diamond (RECIPE!)
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(95471, {timeline = { ADDED_5_2_0 } })),	-- Design: Primal Diamond (RECIPE!)
 			i(83925),	-- Design: Reverberating Primal Diamond (RECIPE!)
 			i(83926),	-- Design: Revitalizing Primal Diamond (RECIPE!)
-			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(95470, {["timeline"] = { ADDED_5_2_0 } })),	-- Design: Serpent's Heart (RECIPE!)
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(95470, {timeline = { ADDED_5_2_0 } })),	-- Design: Serpent's Heart (RECIPE!)
 		}),
 		prof(LEATHERWORKING, {
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(102513, {	-- Pattern: Drums of Rage (RECIPE!)
-				["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
-				["timeline"] = { ADDED_5_4_0 },
+				description = "Requires maxed Pandaria leatherworking skill to drop.",
+				timeline = { ADDED_5_4_0 },
 			})),
-			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100864, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pattern: Hardened Magnificent Hide and Its Uses (RECIPE!)
-				["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
-				["groups"] = {
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100864, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {	-- Pattern: Hardened Magnificent Hide and Its Uses (RECIPE!)
+				description = "Requires maxed Pandaria leatherworking skill to drop.",
+				groups = {
 					r(146923),	-- Accelerated Hardened Magnificent Hide (RECIPE!)
 					r(142976),	-- Hardened Magnificent Hide (RECIPE!)
 				},
 			})))),
 			i(95467, {	-- Pattern: Magnificence of Leather (RECIPE!)
-				["timeline"] = { ADDED_5_2_0 },
+				timeline = { ADDED_5_2_0 },
 			}),
 			i(95468, {	-- Pattern: Magnificence of Scales (RECIPE!)
-				["timeline"] = { ADDED_5_2_0 },
+				timeline = { ADDED_5_2_0 },
 			}),
 		}),
 		prof(TAILORING, {
-			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100863, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pattern: Celestial Cloth and Its Uses
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100863, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {	-- Pattern: Celestial Cloth and Its Uses
 				r(146925),	-- Accelerated Celestial Cloth (RECIPE!)
 				r(143011),	-- Celestial Cloth (RECIPE!)
 			})))),
@@ -718,17 +718,17 @@ root(ROOTS.WorldDrops, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP,
 		currency(738),	-- Lesser Charm of Good Fortune
 		i(89112),	-- Mote of Harmony
 		i(74849, {	-- Pink Turnip
-			["description"] = "Pink Turnip drops off any Yaungol in Pandaria. Located mostly in Kun-Lai Summit and Townlong Steppes.",
+			description = "Pink Turnip drops off any Yaungol in Pandaria. Located mostly in Kun-Lai Summit and Townlong Steppes.",
 		}),
 		i(76061),	-- Spirit of Harmony
 		i(74844, {	-- Red Blossom Leek
-			["description"] = "Drops from Jinyu, Sprites or Zandalari. Located in almost every zone.",
+			description = "Drops from Jinyu, Sprites or Zandalari. Located in almost every zone.",
 		}),
 		currency(395, {	-- Justice Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+			timeline = { ADDED_4_0_3, REMOVED_6_0_2 },
 		}),
 		currency(396, {	-- Valor Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+			timeline = { ADDED_4_0_3, REMOVED_6_0_2 },
 		}),
 	}),
 }))));

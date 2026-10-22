@@ -3,5 +3,5 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, {
-	["timeline"] = { ADDED_5_0_4 },
+	timeline = { ADDED_5_0_4 },
 })));

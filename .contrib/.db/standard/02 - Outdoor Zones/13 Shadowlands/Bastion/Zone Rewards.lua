@@ -2,11 +2,11 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	m(BASTION, {
 		n(ZONE_REWARDS, {
-			["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
-			["groups"] = {
+			description = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
+			groups = {
 				i(181721),	-- Ascendant Valor Signet
 				i(181603),	-- Forgehand's Chain
 				i(181591),	-- Forgehand's Chainmail
@@ -20,10 +20,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				i(181630),	-- Honortoll Spear
 				i(184840),	-- Hymnal of the Path
 				i(184842, {	-- Instructor's Divine Bell
-					["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_2_0 },
+					timeline = { ADDED_9_0_2_LAUNCH, REMOVED_9_2_0 },
 				}),
 				i(190641, {	-- Instructor's Divine Bell
-					["timeline"] = { ADDED_9_2_0 },
+					timeline = { ADDED_9_2_0 },
 				}),
 				i(181627),	-- Lifepath Crossbow
 				i(181637),	-- Lifepath Hammer

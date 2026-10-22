@@ -3,5 +3,5 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
-	["timeline"] = { ADDED_10_0_2 },
+	timeline = { ADDED_10_0_2 },
 }));

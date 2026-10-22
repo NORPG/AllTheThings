@@ -4,82 +4,82 @@
 
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 	expansion(EXPANSION.LEGION, {
-		["lvl"] = 98,
-		["forcetimeline"] = { ADDED_7_0_3, REMOVED_7_0_3 },
-		["groups"] = {
+		lvl = 98,
+		forcetimeline = { ADDED_7_0_3, REMOVED_7_0_3 },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(11201, {		-- Defender of Azeroth: Legion Invasions
-					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
+					timeline = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
 				}),
 				ach(11065, {		-- It All Makes Sense Now
-					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
+					timeline = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
 				}),
 				ach(11200, {		-- Stand Against the Legion
-					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
+					timeline = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
 				}),
 			}),
 			n(MAILBOX, {
-				["description"] = "These items came automatically in the mail box (sometimes even pre-equipped), once the pre-expansion patch launched due to class & ability changes.",
-				["groups"] = {
+				description = "These items came automatically in the mail box (sometimes even pre-equipped), once the pre-expansion patch launched due to class & ability changes.",
+				groups = {
 					i(140694, {	-- Brewmasher's Staff
-						["description"] = "Given to Monks.",
+						description = "Given to Monks.",
 					}),
 					i(140715, {	-- Frost-Etched Runeblade
-						["description"] = "Given to Death Knights.",
+						description = "Given to Death Knights.",
 					}),
 					i(140716, {	-- Guardian's Oaken Spear
-						["modID"] = 1,
-						["description"] = "Given to Druids.",
+						modID = 1,
+						description = "Given to Druids.",
 					}),
 					i(140716, {	-- Guardian's Oaken Spear
-						["modID"] = 3,
-						["description"] = "Given to Druids.",
+						modID = 3,
+						description = "Given to Druids.",
 					}),
 					i(140716, {	-- Guardian's Oaken Spear
-						["modID"] = 5,
-						["description"] = "Given to Druids.",
+						modID = 5,
+						description = "Given to Druids.",
 					}),
 					i(140716, {	-- Guardian's Oaken Spear
-						["modID"] = 6,
-						["description"] = "Given to Druids.",
+						modID = 6,
+						description = "Given to Druids.",
 					}),
 					i(140712, {	-- Greataxe of Fury
-						["description"] = "Given to Warriors.",
+						description = "Given to Warriors.",
 					}),
 					i(140689, {	-- Pike of Feral Rage
-						["modID"] = 1,
-						["description"] = "Given to Druids.",
+						modID = 1,
+						description = "Given to Druids.",
 					}),
 					i(140689, {	-- Pike of Feral Rage
-						["modID"] = 3,
-						["description"] = "Given to Druids.",
+						modID = 3,
+						description = "Given to Druids.",
 					}),
 					i(140689, {	-- Pike of Feral Rage
-						["modID"] = 5,
-						["description"] = "Given to Druids.",
+						modID = 5,
+						description = "Given to Druids.",
 					}),
 					i(140689, {	-- Pike of Feral Rage
-						["modID"] = 6,
-						["description"] = "Given to Druids.",
+						modID = 6,
+						description = "Given to Druids.",
 					}),
 					i(140718, {	-- Survivalist's Hunting Spear
-						["modID"] = 1,
-						["description"] = "Given to Hunters.",
+						modID = 1,
+						description = "Given to Hunters.",
 					}),
 					i(140718, {	-- Survivalist's Hunting Spear
-						["modID"] = 3,
-						["description"] = "Given to Hunters.",
+						modID = 3,
+						description = "Given to Hunters.",
 					}),
 					i(140718, {	-- Survivalist's Hunting Spear
-						["modID"] = 5,
-						["description"] = "Given to Hunters.",
+						modID = 5,
+						description = "Given to Hunters.",
 					}),
 					i(140718, {	-- Survivalist's Hunting Spear
-						["modID"] = 6,
-						["description"] = "Given to Hunters.",
+						modID = 6,
+						description = "Given to Hunters.",
 					}),
 					i(140696, {	-- Sword of the Singing Wind
-						["description"] = "Given to Monks.",
+						description = "Given to Monks.",
 					}),
 				},
 			}),
@@ -147,91 +147,91 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				}),
 			}),
 			i(139049, {	-- Large Legion Chest
-				["sym"] = {{"select", "itemID",139048},{"pop"}},	-- Small Legion Chest
+				sym = {{"select", "itemID",139048},{"pop"}},	-- Small Legion Chest
 			}),
 			n(QUESTS, {
 				-- Weren't all repeatable quests just HQTs? - Darkal
-				q(43298, { ["isRepeatable"] = true, }),	-- Defend (Azshara)
-				q(43291, { ["isRepeatable"] = true, }),	-- Defend (Dun Morogh)
-				q(43296, { ["isRepeatable"] = true, }),	-- Defend (Hillsbrad Foothills)
-				q(43289, { ["isRepeatable"] = true, }),	-- Defend (Northern Barrens)
-				q(43293, { ["isRepeatable"] = true, }),	-- Defend (Tanaris)
-				q(43287, { ["isRepeatable"] = true, }),	-- Defend (Westfall)
-				q(43299, { ["isRepeatable"] = true, }),	-- Demon Commander (Azshara)
-				q(43283, { ["isRepeatable"] = true, }),	-- Demon Commander (Dun Morogh)
-				q(43286, { ["isRepeatable"] = true, }),	-- Demon Commander (Hillsbrad Foothills)
-				-- q(xxxxx, { ["isRepeatable"] = true, }),	Demon Commander (Northern Barrens) - try to find ID
-				q(43243, { ["isRepeatable"] = true, }),	-- Demon Commander (Tanaris)
-				q(43242, { ["isRepeatable"] = true, }),	-- Demon Commander (Westfall)
+				q(43298, { isRepeatable = true, }),	-- Defend (Azshara)
+				q(43291, { isRepeatable = true, }),	-- Defend (Dun Morogh)
+				q(43296, { isRepeatable = true, }),	-- Defend (Hillsbrad Foothills)
+				q(43289, { isRepeatable = true, }),	-- Defend (Northern Barrens)
+				q(43293, { isRepeatable = true, }),	-- Defend (Tanaris)
+				q(43287, { isRepeatable = true, }),	-- Defend (Westfall)
+				q(43299, { isRepeatable = true, }),	-- Demon Commander (Azshara)
+				q(43283, { isRepeatable = true, }),	-- Demon Commander (Dun Morogh)
+				q(43286, { isRepeatable = true, }),	-- Demon Commander (Hillsbrad Foothills)
+				-- q(xxxxx, { isRepeatable = true, }),	Demon Commander (Northern Barrens) - try to find ID
+				q(43243, { isRepeatable = true, }),	-- Demon Commander (Tanaris)
+				q(43242, { isRepeatable = true, }),	-- Demon Commander (Westfall)
 				q(44184, {	-- In the Blink of an Eye
 					-- #if AFTER SL
-					["description"] = "This is available to players choosing the Legion Timeline during Chromie Time.",
-					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3, ADDED_9_0_1 },
+					description = "This is available to players choosing the Legion Timeline during Chromie Time.",
+					timeline = { ADDED_7_0_3, REMOVED_7_0_3, ADDED_9_0_1 },
 					-- TODO: confirm if this can somehow be picked up via Party Sync
-					["DisablePartySync"] = false,	-- false = "hasn't been verified yet"
+					DisablePartySync = false,	-- false = "hasn't been verified yet"
 					-- #endif
-					["sourceQuests"] = {
+					sourceQuests = {
 						44500,	-- Author! Author!
 						43926,	-- Legion: The Legion Returns
 					},
-					["sourceQuestNumRequired"] = 1,
-					["qg"] = 114562,	-- Khadgar's Upgraded Servant
-					["groups"] = {
+					sourceQuestNumRequired = 1,
+					qg = 114562,	-- Khadgar's Upgraded Servant
+					groups = {
 						i(140192),	-- Dalaran Heartstone (TOY!)
 						i(143780),	-- Tome of the Tranquil Mind
 					},
 				}),
-				q(42804, { ["isRepeatable"] = true, }),	-- Invasion: Azshara
-				q(43301, { ["isRepeatable"] = true, }),	-- Invasion: Azshara
-				q(43284, { ["isRepeatable"] = true, }),	-- Invasion: Dun Morogh
-				q(42803, { ["isRepeatable"] = true, }),	-- Invasion: Dun Morogh
-				q(43285, { ["isRepeatable"] = true, }),	-- Invasion: Hillsbrad Foothills
-				q(42805, { ["isRepeatable"] = true, }),	-- Invasion: Hillsbrad Foothills
-				q(43282, { ["isRepeatable"] = true, }),	-- Invasion: Northern Barrens
-				q(42236, { ["isRepeatable"] = true, }),	-- Invasion: Northern Barrens
-				q(43244, { ["isRepeatable"] = true, }),	-- Invasion: Tanaris
-				q(42237, { ["isRepeatable"] = true, }),	-- Invasion: Tanaris
-				q(43245, { ["isRepeatable"] = true, }),	-- Invasion: Westfall
-				q(42235, { ["isRepeatable"] = true, }),	-- Invasion: Westfall
+				q(42804, { isRepeatable = true, }),	-- Invasion: Azshara
+				q(43301, { isRepeatable = true, }),	-- Invasion: Azshara
+				q(43284, { isRepeatable = true, }),	-- Invasion: Dun Morogh
+				q(42803, { isRepeatable = true, }),	-- Invasion: Dun Morogh
+				q(43285, { isRepeatable = true, }),	-- Invasion: Hillsbrad Foothills
+				q(42805, { isRepeatable = true, }),	-- Invasion: Hillsbrad Foothills
+				q(43282, { isRepeatable = true, }),	-- Invasion: Northern Barrens
+				q(42236, { isRepeatable = true, }),	-- Invasion: Northern Barrens
+				q(43244, { isRepeatable = true, }),	-- Invasion: Tanaris
+				q(42237, { isRepeatable = true, }),	-- Invasion: Tanaris
+				q(43245, { isRepeatable = true, }),	-- Invasion: Westfall
+				q(42235, { isRepeatable = true, }),	-- Invasion: Westfall
 				q(40661, {	-- Protect the Home Front (A)
-					["qg"] = 101004,	-- Elerion Bladedancer
-					["coord"] = { 40.4, 77.8, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
+					qg = 101004,	-- Elerion Bladedancer
+					coord = { 40.4, 77.8, STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
 				}),
 				q(44092, {	-- Protect the Home Front (H)
-					["qg"] = 95234,	-- Elthyn Da'rai
-					["coord"] = { 52.6, 56.2, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
+					qg = 95234,	-- Elthyn Da'rai
+					coord = { 52.6, 56.2, ORGRIMMAR },
+					races = HORDE_ONLY,
 				}),
-				q(43300, { ["isRepeatable"] = true, }),	-- Repel (Azshara)
-				q(43292, { ["isRepeatable"] = true, }),	-- Repel (Dun Morogh)
-				q(43297, { ["isRepeatable"] = true, }),	-- Repel (Hillsbrad Foothills)
-				q(43290, { ["isRepeatable"] = true, }),	-- Repel (Northern Barrens)
-				q(43294, { ["isRepeatable"] = true, }),	-- Repel (Tanaris)
-				q(43288, { ["isRepeatable"] = true, }),	-- Repel (Westfall)
+				q(43300, { isRepeatable = true, }),	-- Repel (Azshara)
+				q(43292, { isRepeatable = true, }),	-- Repel (Dun Morogh)
+				q(43297, { isRepeatable = true, }),	-- Repel (Hillsbrad Foothills)
+				q(43290, { isRepeatable = true, }),	-- Repel (Northern Barrens)
+				q(43294, { isRepeatable = true, }),	-- Repel (Tanaris)
+				q(43288, { isRepeatable = true, }),	-- Repel (Westfall)
 			}),
 			n(RARES, {
 				n(112527, {	-- Doomsayer
-					["description"] = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.",
-					["groups"] = {
+					description = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.",
+					groups = {
 						i(140363),	-- Pocket Fel Spreader (TOY!)
 					},
 				}),
 				n(112198, {	-- Doomsayer
-					["description"] = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.\n",
-					["groups"] = {
+					description = "This Toy, Pocket Fel Spreader is available EXCLUSIVELY during the Legion pre-expansion event. It is obtained by using any ability or item that allows you to detect demons, and then speaking to a Doomsayer. \nWhen using any such ability or item, the Doomsayer will sometimes have the dialogue option \"There's something not quite right about you...\". Selecting this option, when visible, will change the Doomsayer into a Dread Infiltrator, which can be killed and looted to obtain this Toy. Note that the Toy is NOT a guaranteed drop, but has a roughly 25% drop rate.\n",
+					groups = {
 						i(140363),	-- Pocket Fel Spreader (TOY!)
 					},
 				}),
 			}),
 			n(VENDORS, {
 				n(109912, {	-- Captive Wyrmtongue <Reluctant 'Quartermaster'>
-					["coords"] = {
+					coords = {
 						{ 52.6, 57.6, ORGRIMMAR },
 						{ 41.2, 78.8, STORMWIND_CITY },
 					},
-					["timeline"] = { ADDED_7_0_3 },
-					["groups"] = {
+					timeline = { ADDED_7_0_3 },
+					groups = {
 						i(136924),	-- Felbat Pup (PET!)
 						i(141604),	-- Glaive of the Fallen
 						i(142526),	-- Glaive of the Fallen (this 2nd version was seen in game Oct 2020)
@@ -252,8 +252,8 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			}),
 			n(ZONE_DROPS, {
 				n(112315, {	-- Dread Infiltrator
-					["description"] = "Players with some sort of Sense Demons ability could get this mob to spawn from Doomsayers.",
-					["groups"] = {
+					description = "Players with some sort of Sense Demons ability could get this mob to spawn from Doomsayers.",
+					groups = {
 						i(140363),	-- Pocket Fel Spreader (TOY!)
 					},
 				}),

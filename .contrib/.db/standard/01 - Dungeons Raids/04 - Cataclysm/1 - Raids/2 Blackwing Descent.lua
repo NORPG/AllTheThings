@@ -3,35 +3,35 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_ONE, inst(73, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {	-- Blackwing Descent
-		["coord"] = { 47.54, 68.93, EASTERN_KINGDOMS },	-- Blackwing Descent (This is the metamap it uses, don't change!)
-		["maps"] = {
+	applyclassicphase(CATA_PHASE_ONE, inst(73, bubbleDownSelf({ timeline = { ADDED_4_0_3 }, }, {	-- Blackwing Descent
+		coord = { 47.54, 68.93, EASTERN_KINGDOMS },	-- Blackwing Descent (This is the metamap it uses, don't change!)
+		maps = {
 			285,	-- Blackwing Descent (The Broken Hall)
 			286,	-- Blackwing Descent (Vault of the Shadowflame)
 		},
-		["sharedLockout"] = 1,
-		["isRaid"] = true,
-		["lvl"] = 85,
-		["groups"] = {
+		sharedLockout = 1,
+		isRaid = true,
+		lvl = 85,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(4842, {	-- Blackwing Descent
 					crit(13537, {
-						["_encounter"] = { 170, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },	-- Magmaw
+						_encounter = { 170, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },	-- Magmaw
 					}),
 					crit(13538, {
-						["_encounter"] = { 169, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },	-- Omnotron Defense System
+						_encounter = { 169, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },	-- Omnotron Defense System
 					}),
 					crit(13539, {
-						["_encounter"] = { 173, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },	-- Maloriak
+						_encounter = { 173, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },	-- Maloriak
 					}),
 					crit(13541, {
-						["_encounter"] = { 171, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },	-- Atramedes
+						_encounter = { 171, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },	-- Atramedes
 					}),
 					crit(13540, {
-						["_encounter"] = { 172, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },	-- Chimaeron
+						_encounter = { 172, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },	-- Chimaeron
 					}),
 					crit(13542, {
-						["_encounter"] = { 174, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },	-- Nefarian's End
+						_encounter = { 174, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },	-- Nefarian's End
 					}),
 				}),
 				ach(4985),	-- Blackwing Descent Guild Run
@@ -52,14 +52,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {
 				e(170, {	-- Magmaw
-					["creatureID"] = 41570,
-					["groups"] = {
+					creatureID = 41570,
+					groups = {
 						ach(5306),	-- Parasite Evening
 					},
 				}),
 				e(169, {	-- Omnotron Defense System
-					["creatureID"] = 42179,
-					["groups"] = {
+					creatureID = 42179,
+					groups = {
 						ach(5307, {	-- Achieve-a-tron
 							crit(15651),	-- No player hit by Static Shock
 							crit(15652),	-- No player hit by Poison Bomb
@@ -67,54 +67,54 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							crit(15654),	-- No more than one player hit by each Flamethrower
 						}),
 						i(152966, {	-- Tinytron (PET!)
-							["timeline"] = { ADDED_7_3_0 },
+							timeline = { ADDED_7_3_0 },
 						}),
 					},
 				}),
 				e(173, {	-- Maloriak
-					["creatureID"] = 41378,
-					["groups"] = {
+					creatureID = 41378,
+					groups = {
 						ach(5310),	-- Aberrant Behavior
 						title(147, {	-- <Name>, Slayer of Stupid, Incompetent and Disappointing Minions
-							["collectible"] = false,
+							collectible = false,
 						}),
 						i(152967, {	-- Discarded Experiment (PET!)
-							["timeline"] = { ADDED_7_3_0 },
+							timeline = { ADDED_7_3_0 },
 						}),
 					},
 				}),
 				e(171, {	-- Atramedes
-					["creatureID"] = 41442,
-					["groups"] = {
+					creatureID = 41442,
+					groups = {
 						ach(5308),	-- Silence is Golden
 					},
 				}),
 				e(172, {	-- Chimaeron
-					["creatureID"] = 43296,
-					["groups"] = {
+					creatureID = 43296,
+					groups = {
 						ach(5309),	-- Full of Sound and Fury
 					},
 				}),
 				e(174, {	-- Nefarian's End
-					["creatureID"] = 41376,
-					["groups"] = {
+					creatureID = 41376,
+					groups = {
 						ach(4849),	-- Keeping it in the Family
 						i(138802, {	-- Illusion: Power Torrent (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
+							timeline = { ADDED_7_0_3 },
 						}),
 						i(152968, {	-- Rattlejaw (PET!)
-							["timeline"] = { ADDED_7_3_0 },
+							timeline = { ADDED_7_3_0 },
 						}),
 						i(122195, {	-- Music Roll: Legends of Azeroth
-							["timeline"] = { ADDED_6_1_0 },
+							timeline = { ADDED_6_1_0 },
 						}),
 					},
 				}),
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 				e(170, {	-- Magmaw
-					["creatureID"] = 41570,
-					["groups"] = {
+					creatureID = 41570,
+					groups = {
 						i(59492),	-- Akirus the Worm-Breaker
 						i(59341),	-- Incineratus
 						i(59333),	-- Lava Spine
@@ -130,8 +130,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(169, {	-- Omnotron Defense System
-					["creatureID"] = 42179,
-					["groups"] = {
+					creatureID = 42179,
+					groups = {
 						i(59122),	-- Organic Lifeform Inverter
 						i(59219),	-- Power Generator Hood
 						i(59218),	-- Passive Resistor Spaulders
@@ -147,8 +147,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(173, {	-- Maloriak
-					["creatureID"] = 41378,
-					["groups"] = {
+					creatureID = 41378,
+					groups = {
 						i(59347),	-- Mace of Acrid Death
 						i(59344),	-- Dragon Bone Warhelm
 						i(59348),	-- Cloak of Biting Chill
@@ -164,8 +164,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(171, {	-- Atramedes
-					["creatureID"] = 41442,
-					["groups"] = {
+					creatureID = 41442,
+					groups = {
 						i(59320),	-- Themios the Darkbringer
 						i(59327),	-- Kingdom's Heart
 						i(59312),	-- Helm of the Blind Seer
@@ -181,8 +181,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(172, {	-- Chimaeron
-					["creatureID"] = 43296,
-					["groups"] = {
+					creatureID = 43296,
+					groups = {
 						i(59314),	-- Pip's Solution Agitator
 						i(59311),	-- Burden of Mortality
 						i(59310),	-- Chaos Beast Bracers
@@ -198,16 +198,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(174, {	-- Nefarian's End
-					["creatureID"] = 41376,
-					["groups"] = {
+					creatureID = 41376,
+					groups = {
 						i(63683, {	-- Helm of the Forlorn Conqueror
-							["sym"] = SYMLINKS.TIER_ELEVEN.CONQ.HEAD,
+							sym = SYMLINKS.TIER_ELEVEN.CONQ.HEAD,
 						}),
 						i(63684, {	-- Helm of the Forlorn Protector
-							["sym"] = SYMLINKS.TIER_ELEVEN.PROT.HEAD,
+							sym = SYMLINKS.TIER_ELEVEN.PROT.HEAD,
 						}),
 						i(63682, {	-- Helm of the Forlorn Vanquisher
-							["sym"] = SYMLINKS.TIER_ELEVEN.VANQ.HEAD,
+							sym = SYMLINKS.TIER_ELEVEN.VANQ.HEAD,
 						}),
 						i(63679),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
 						i(59459),	-- Andoros, Fist of the Dragon King
@@ -227,8 +227,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
 				e(170, {	-- Magmaw
-					["creatureID"] = 41570,
-					["groups"] = {
+					creatureID = 41570,
+					groups = {
 						ach(5094),	-- Heroic: Magmaw
 						i(67429),	-- Gauntlets of the Forlorn Conqueror
 						i(67430),	-- Gauntlets of the Forlorn Protector
@@ -248,8 +248,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(169, {	-- Omnotron Defense System
-					["creatureID"] = 42179,
-					["groups"] = {
+					creatureID = 42179,
+					groups = {
 						ach(5107),	-- Heroic: Omnotron Defense System
 						i(65081),	-- Organic Lifeform Inverter
 						i(65077),	-- Power Generator Hood
@@ -266,8 +266,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(173, {	-- Maloriak
-					["creatureID"] = 41378,
-					["groups"] = {
+					creatureID = 41378,
+					groups = {
 						ach(5108),	-- Heroic: Maloriak
 						i(67428),	-- Leggings of the Forlorn Conqueror
 						i(67427),	-- Leggings of the Forlorn Protector
@@ -287,8 +287,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(171, {	-- Atramedes
-					["creatureID"] = 41442,
-					["groups"] = {
+					creatureID = 41442,
+					groups = {
 						ach(5109),	-- Heroic: Atramedes
 						i(65058),	-- Themios the Darkbringer
 						i(65052),	-- Kingdom's Heart
@@ -305,8 +305,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(172, {	-- Chimaeron
-					["creatureID"] = 43296,
-					["groups"] = {
+					creatureID = 43296,
+					groups = {
 						ach(5115),	-- Heroic: Chimaeron
 						i(65064),	-- Pip's Solution Agitator
 						i(65067),	-- Burden of Mortality
@@ -323,8 +323,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 				e(174, {	-- Nefarian's End
-					["creatureID"] = 41376,
-					["groups"] = {
+					creatureID = 41376,
+					groups = {
 						ach(5116, {	-- Heroic: Nefarian
 							title(187),	-- , Blackwing's Bane
 						}),

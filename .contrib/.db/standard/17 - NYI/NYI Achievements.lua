@@ -392,7 +392,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
 			ach(11234),	-- Class Hall Champions recruited
 			ach(11235),	-- Class Hall Troops recruited
 			ach(11236),	-- Class Hall Missions completed
@@ -400,22 +400,22 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
+		expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ timeline = { CREATED_7_2_0 } }, {
 			ach(11339),	-- Legion's Bane
 		})),
 
 		-- 7.3.0
-		expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
+		expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ timeline = { CREATED_7_3_0 } }, {
 			ach(12107),	-- Season 3v3 victories on your current faction
 		})),
 
 		-- 7.3.2
-		expansion(EXPANSION.LEGION, patch(3,2), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_2 } }, {
+		expansion(EXPANSION.LEGION, patch(3,2), bubbleDownSelf({ timeline = { CREATED_7_3_2 } }, {
 			ach(12138),	-- Fierce Gladiator's Storm Dragon
 		})),
 
 		-- 7.3.5
-		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_5 } }, {
+		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ timeline = { CREATED_7_3_5 } }, {
 			ach(12216),	-- Prestige 26
 			ach(12217),	-- Prestige 27
 			ach(12218),	-- Prestige 28
@@ -424,7 +424,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
 			ach(12598),	-- <Hidden> Kul Tiras Continent Achievement
 			ach(12554),	-- <Hidden> Lordaeron Scenario Launch
 			ach(12920),	-- A Tiny Heart
@@ -449,7 +449,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = { CREATED_8_1_0 } }, {
 			ach(13318),	-- 100 Exalted Reputations
 			ach(13415),	-- Heroic: Crucible of Storms
 			ach(13432),	-- Mythic: Jadefire Masters
@@ -459,13 +459,13 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_8_1_5 } }, {
+		expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ timeline = { CREATED_8_1_5 } }, {
 			ach(13540),	-- Deaths from Battle for Wintergrasp
 			ach(13195),	-- Rumble Club
 		})),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
 			ach(13721),	-- Diligent Ally
 			ach(13471),	-- Diversed Investments
 			ach(13515),	-- Freedom Run
@@ -473,7 +473,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 
 		-- 8.3.0
-		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
+		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_8_3_0 } }, {
 			ach(14025),	-- <new achievement>
 			ach(14116),	-- All Bridges Burned
 			ach(14121),	-- Daring Defender
@@ -496,7 +496,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
 			ach(14529),	-- <Hidden> Shadowlands Alt - Trigger Alt Progression
 			ach(14300),	-- Ardenweald Achieved \\ [PH] Ardenweald Zone Achievement
 			ach(14299),	-- Bastion Bested \\ [PH] Bastion Zone Achievement
@@ -566,50 +566,50 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 
 		-- 9.0.2
-		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
+		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ timeline = { CREATED_9_0_2 } }, {
 			ach(14838),	-- Champion of Connection
 		})),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ timeline = { CREATED_9_1_0 } }, {
 			ach(15074),	-- <Hidden> Razorwing Eggs Returned
 		})),
 
 		-- 9.1.5
-		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
+		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ timeline = { CREATED_9_1_5 } }, {
 			ach(15326),	-- [DNT] Rating Test Achievement
 		})),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
+		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ timeline = { CREATED_9_2_0 } }, {
 			ach(15219),	-- Automa
 			ach(15557),	-- Murkastrasza
 		})),
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
 			ach(15517),	-- Solo Shuffle rounds participated in
 			ach(15516),	-- Solo Shuffle rounds won
 			ach(15798),	-- Winding Slitherdrake
 		})),
 
 		-- 10.0.2
-		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
+		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ timeline = { CREATED_10_0_2 } }, {
 			ach(16794),	-- Dragon Isles Crafting Order Apprentice
 			ach(16795),	-- Dragon Isles Crafting Order Journeyman
 			ach(16800),	-- Dragon Isles Crafting Order Master
 		})),
 
 		-- 10.0.5
-		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
+		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ timeline = { CREATED_10_0_5 } }, {
 			ach(17316),	-- Dragon Isles Crafting Order Apprentice
 			ach(17317),	-- Dragon Isles Crafting Order Journeyman
 			ach(17318),	-- Dragon Isles Crafting Order Master
 		})),
 
 		-- 10.0.7
-		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ timeline = { CREATED_10_0_7 } }, {
 			ach(17500),	-- Renowned Tribal Leatherworker
 			ach(17501),	-- Renowned Mooncloth Tailor
 			ach(17502),	-- Renowned Spellfire Tailor
@@ -621,7 +621,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 
 		-- 10.1.7
-		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ timeline = { CREATED_10_1_7 } }, {
 			ach(6313),	-- [DNT] UTILITY: Promotion - China (Cenarion Hatchling)
 			ach(9030),	-- Login Tracking Achievement [SERVER ONLY]
 			ach(10705),	-- HS Achievement Fixup
@@ -633,19 +633,19 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ timeline = { CREATED_10_2_5 } }, {
 			ach(19696),	-- Hearthstone Anniversary Mail
 		})),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ timeline = { CREATED_10_2_7 } }, {
 			ach(40227),	-- Realm First! Mythic Garrosh
 			ach(40226),	-- Realm First! Timerunner
 		})),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
 			ach(40305),	-- Allied Races: Earthen (Hidden Character Achievement)
 			ach(40306),	-- Allied Races: Earthen
 			ach(40509),	-- Awakening The Machine: Wave 10
@@ -668,30 +668,30 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,07), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,07), bubbleDownSelf({ timeline = { CREATED_11_0_7 } }, {
 			ach(41219),	-- Explore Siren Isle
 		})),
 
 		-- 11.1.5
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_5 } }, {
 			ach(41700),	-- Dastardly Duos Weekly Wins
 			ach(15558),	-- Survey Bot (Added in 11.1.5.60008, removed in 11.1.5.60067)
 		})),
 
 		-- 11.1.7
-		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ timeline = { CREATED_11_1_7 } }, {
 			ach(42028),	-- Ashes to Ashes
 		})),
 
 		-- 11.2.7
-		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
 			ach(51753),	-- Azsuna Matata
 			ach(40887),	-- Fox Friends
 		})),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
 			ach(62215),	-- Abyss Anglers: Heavy Harpoon Cannon
 			ach(62216),	-- Abyss Anglers: Hollowcore Harpoon Turret
 			ach(42575),	-- Elusive Foes: Antoran Wastes

@@ -11,97 +11,97 @@ local MIKAI_DEATHSCYTHE = i(179534);
 local DREAMERS_MENDING = i(182455);
 local MURMURS_IN_THE_DARK = i(182454);
 local SILKY_SHIMMERMOTH = i(180748, {	-- Silky Shimmermoth (MOUNT!)
-	["description"] = "Available to purchase after defeating every rare at Star Lake Amphitheater",
-	["cost"] = { { "c", ANIMA, 5000 } },
+	description = "Available to purchase after defeating every rare at Star Lake Amphitheater",
+	cost = { { "c", ANIMA, 5000 } },
 });
 local GREATAXE_OF_UNRELENTING_PURSUIT = i(180154);
 local STAR_LAKE_AMPHITHEATER = n(STAR_LAKE_AMPHITHEATER,   {
-	["description"] = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else. Only one mob is summonable per day.",
-	["questID"] = 61633,
-	["isDaily"] = true,
-	["coord"] = { 41.5, 44.8, ARDENWEALD },
-	["icon"] = 1354190,
-	["crs"] = { 171743 },	-- Dapperdew
-	["groups"] = {
+	description = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else. Only one mob is summonable per day.",
+	questID = 61633,
+	isDaily = true,
+	coord = { 41.5, 44.8, ARDENWEALD },
+	icon = 1354190,
+	crs = { 171743 },	-- Dapperdew
+	groups = {
 		n(166135, {	-- Astra, As Azshara <An Infamous Queen>
-			["questID"] = 61201,
-			["isDaily"] = true,
-			["groups"] = {GLIMMERLIGHT_STAFF},
+			questID = 61201,
+			isDaily = true,
+			groups = {GLIMMERLIGHT_STAFF},
 		}),
 		n(166145, {	-- Dreamweaver, As N'Zoth <An Eldritch Abomination>
-			["questID"] = 61206,
-			["isDaily"] = true,
-			["groups"] = {TWILIGHT_BLOOM},
+			questID = 61206,
+			isDaily = true,
+			groups = {TWILIGHT_BLOOM},
 		}),
 		n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
-			["questID"] = 61205,
-			["isDaily"] = true,
-			["groups"] = {EVERCHILL_BRAMBLES},
+			questID = 61205,
+			isDaily = true,
+			groups = {EVERCHILL_BRAMBLES},
 		}),
 		n(166139, {	-- Glimmerdust, As Kil'jaeden <of The Burning Legion>
-			["questID"] = 61203,
-			["isDaily"] = true,
-			["groups"] = {GLIMMERDUSTS_GRAND_DESIGN},
+			questID = 61203,
+			isDaily = true,
+			groups = {GLIMMERDUSTS_GRAND_DESIGN},
 		}),
 		n(166138, {	-- Mi'kai, As Argus, the Unmaker <A Corrupted World Soul>
-			["isDaily"] = true,
-			["questID"] = 61202,
-			["groups"] = {MIKAI_DEATHSCYTHE},
+			isDaily = true,
+			questID = 61202,
+			groups = {MIKAI_DEATHSCYTHE},
 		}),
 		n(166146, {	-- Niya, As Xavius <Some Kind of Evil Sylvar>
-			["questID"] = 61207,
-			["isDaily"] = true,
-			["groups"] = {DREAMERS_MENDING},
+			questID = 61207,
+			isDaily = true,
+			groups = {DREAMERS_MENDING},
 		}),
 		n(166140, {	-- Senthii, As Gul'dan <From an Alternate Timeline>
-			["questID"] = 61204,
-			["isDaily"] = true,
-			["groups"] = {MURMURS_IN_THE_DARK},
+			questID = 61204,
+			isDaily = true,
+			groups = {MURMURS_IN_THE_DARK},
 		}),
 		n(163714, {	-- Master Clerk Salorn <Tickets and Patron Rewards>
-			["coord"] = { 43.0, 47.0, ARDENWEALD },
-			["groups"] = {SILKY_SHIMMERMOTH},	-- (MOUNT!)
+			coord = { 43.0, 47.0, ARDENWEALD },
+			groups = {SILKY_SHIMMERMOTH},	-- (MOUNT!)
 		}),
 	},
 });
 local VALFIR = n(168647, {	-- Valfir the Unrelenting
-	["description"] = "Requires a member of the |cFFA330C9Night Fae Covenant|r to channel anima to Tirna Scithe. Afterwards, you can loot the Animaseed Light at the boss to remove its veil.",
-	["questID"] = 61632,
-	["isDaily"] = true,
-	["coord"] = { 30.0, 55.0, ARDENWEALD },
-	["groups"] = {
+	description = "Requires a member of the |cFFA330C9Night Fae Covenant|r to channel anima to Tirna Scithe. Afterwards, you can loot the Animaseed Light at the boss to remove its veil.",
+	questID = 61632,
+	isDaily = true,
+	coord = { 30.0, 55.0, ARDENWEALD },
+	groups = {
 		i(180730),	-- Wild Glimmerfur Prowler (MOUNT!)
 		GREATAXE_OF_UNRELENTING_PURSUIT,
 		i(182176),	-- Shadowstalker Soul
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = 3641394,
-			["groups"] = {
+			icon = 3641394,
+			groups = {
 				n(ANIMA_CONDUCTOR, {
-					["icon"] = 3854013,
-					["groups"] = sharedData({ ["icon"] = 3854013 }, {
+					icon = 3854013,
+					groups = sharedData({ icon = 3854013 }, {
 						n(REWARDS, {
-							["groups"] = {
+							groups = {
 								currency(GRATEFUL, {
-									["customCollect"] = IGNORED_VALUE,
-									["description"] = "Grateful Offerings can be collected once you have unlocked the Anima Conductor in for your covenant.\n Once unlocked, you can loot them from Covenant Callings (higher Conductor => more Offerings), Patterns Within Patterns Weekly Quest in Zereth Morthis and from special rares & treasures, based on the channeling of your Anima Conductor.",
+									customCollect = IGNORED_VALUE,
+									description = "Grateful Offerings can be collected once you have unlocked the Anima Conductor in for your covenant.\n Once unlocked, you can loot them from Covenant Callings (higher Conductor => more Offerings), Patterns Within Patterns Weekly Quest in Zereth Morthis and from special rares & treasures, based on the channeling of your Anima Conductor.",
 								}),
 							},
 						}),
 						n(TIER_ONE, {
 							n(QUESTS, {
 								q(63067, {	-- Root Restoration
-									["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-									["coord"] = { 39.6, 55.0, THE_ROOTS },
+									provider = { "n", 165702 },	-- Zayhad, The Builder
+									coord = { 39.6, 55.0, THE_ROOTS },
 								}),
 								q(60723, {	-- The Roots Thirst
-									["sourceQuests"] = { 63067 },	-- Root Restoration
-									["provider"] = { "n", 167196 },	-- Sesselie
-									["coord"] = { 50.1, 63.7, THE_ROOTS },
+									sourceQuests = { 63067 },	-- Root Restoration
+									provider = { "n", 167196 },	-- Sesselie
+									coord = { 50.1, 63.7, THE_ROOTS },
 								}),
 							}),
 							n(RARES, {
@@ -109,15 +109,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							}),
 							n(TREASURES, {
 								o(356820, {	-- Large Lunarlight Pod
-									["description"] = "Requires channeling the Anima Conductor to Glitterfall Basin. To unlock the chest, run over 5 nearby Lunarlight Buds.",
-									["isDaily"] = true,
-									["questID"] = 61691,
-									["coord"] = { 51.7, 32.3, ARDENWEALD },
-									["groups"] = {
+									description = "Requires channeling the Anima Conductor to Glitterfall Basin. To unlock the chest, run over 5 nearby Lunarlight Buds.",
+									isDaily = true,
+									questID = 61691,
+									coord = { 51.7, 32.3, ARDENWEALD },
+									groups = {
 										n(173005,{	-- Lunarlight Bud
-											["questID"] = 61696,
-											["isDaily"] = true,
-											["coords"] = {
+											questID = 61696,
+											isDaily = true,
+											coords = {
 												{ 52.3, 32.4, ARDENWEALD },
 												{ 52.5, 33.4, ARDENWEALD },
 												{ 52.5, 33.7, ARDENWEALD },
@@ -125,9 +125,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											},
 										}),
 										n(173006,{	-- Lunarlight Bud
-											["questID"] = 61695,
-											["isDaily"] = true,
-											["coords"] = {
+											questID = 61695,
+											isDaily = true,
+											coords = {
 												{ 51.8, 32.4, ARDENWEALD },
 												{ 51.9, 31.5, ARDENWEALD },
 												{ 52.0, 30.9, ARDENWEALD },
@@ -136,9 +136,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											},
 										}),
 										n(173008,{	-- Lunarlight Bud
-											["questID"] = 61694,
-											["isDaily"] = true,
-											["coords"] = {
+											questID = 61694,
+											isDaily = true,
+											coords = {
 												{ 51.0, 34.4, ARDENWEALD },
 												{ 51.4, 33.3, ARDENWEALD },
 												{ 51.5, 34.1, ARDENWEALD },
@@ -146,9 +146,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											},
 										}),
 										n(173009,{	-- Lunarlight Bud
-											["questID"] = 61693,
-											["isDaily"] = true,
-											["coords"] = {
+											questID = 61693,
+											isDaily = true,
+											coords = {
 												{ 50.0, 33.3, ARDENWEALD },
 												{ 50.4, 33.0, ARDENWEALD },
 												{ 50.6, 33.6, ARDENWEALD },
@@ -156,9 +156,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											},
 										}),
 										n(173010,{	-- Lunarlight Bud
-											["questID"] = 61692,
-											["isDaily"] = true,
-											["coords"] = {
+											questID = 61692,
+											isDaily = true,
+											coords = {
 												{ 49.9, 32.1, ARDENWEALD },
 												{ 50.1, 32.3, ARDENWEALD },
 												{ 50.2, 31.6, ARDENWEALD },
@@ -171,65 +171,65 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							}),
 						}),
 						n(TIER_TWO, {
-							n(QUESTS, sharedData({ ["coord"] = { 59.7, 52.8, ARDENWEALD }, ["isDaily"] = true }, {
+							n(QUESTS, sharedData({ coord = { 59.7, 52.8, ARDENWEALD }, isDaily = true }, {
 								q(62160, {	-- A Bundle of Lilies
-									["provider"] = { "n", 173277 },	-- Teendynneetll
-									["groups"] = {
+									provider = { "n", 173277 },	-- Teendynneetll
+									groups = {
 										i(182659),	-- Night Lilly (QI!)
 									},
 								}),
 								q(62224, {	-- A Thread of Hope
-									["provider"] = { "n", 173277 },	-- Teendynneetll
-									["groups"] = {
+									provider = { "n", 173277 },	-- Teendynneetll
+									groups = {
 										i(183041),	-- Anima-Infused Silk (QI!)
 									},
 								}),
 								q(62188, {	-- Catch A Star
-									["provider"] = { "n", 173277 },	-- Teendynneetll
+									provider = { "n", 173277 },	-- Teendynneetll
 								}),
 								q(61875, {	-- Doing the Dew
-									["provider"] = { "n", 173277 },	-- Teendynneetll
-									["groups"] = {
+									provider = { "n", 173277 },	-- Teendynneetll
+									groups = {
 										i(182333),	-- Thistledrop Dew (QI!)
 									},
 								}),
 								q(61950, {	-- Hunting the Wilds
-									["provider"] = { "n", 173282 },	-- Guardian Dazzlewing
-									["groups"] = {
+									provider = { "n", 173282 },	-- Guardian Dazzlewing
+									groups = {
 										i(182387),	-- Feral Anima (QI!)
 									},
 								}),
 								q(61968, {	-- Just Wing It
-									["provider"] = { "n", 173282 },	-- Guardian Dazzlewing
-									["groups"] = {
+									provider = { "n", 173282 },	-- Guardian Dazzlewing
+									groups = {
 										i(182450),	-- Perfect Ardenmoth Wing Scale (QI!)
 									},
 								}),
 								q(62081, {	-- Return Those Animacones!
-									["provider"] = { "n", 173282 },	-- Guardian Dazzlewing
-									["groups"] = {
+									provider = { "n", 173282 },	-- Guardian Dazzlewing
+									groups = {
 										i(182619),	-- Looted Animacone (QI!)
 									},
 								}),
 								q(62155, {	-- Runestone Roundup
-									["provider"] = { "n", 173282 },	-- Guardian Dazzlewing
-									["groups"] = {
+									provider = { "n", 173282 },	-- Guardian Dazzlewing
+									groups = {
 										i(182647),	-- Runestone Spike (QI!)
 									},
 								}),
 								q(62057, {	-- Those Who Hunger
-									["provider"] = { "n", 173282 },	-- Guardian Dazzlewing
+									provider = { "n", 173282 },	-- Guardian Dazzlewing
 								}),
 								q(61985, {	-- Wake the Sleepers
-									["provider"] = { "n", 173277 },	-- Teendynneetll
+									provider = { "n", 173277 },	-- Teendynneetll
 								}),
 							})),
-							n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
+							n(WORLD_QUESTS, sharedData({ isWorldQuest = true }, {
 								q(62068, {	-- Gormling Piper: Crumbled Ridge
 									i(182611),	-- Fae Flute (QI!)
 								}),
 								q(61394, {	-- Gormling Piper: Tranquil Pools
-									["groups"] = {
+									groups = {
 										i(181284),	-- Gormling in a Bag (QI!)
 									},
 								}),
@@ -258,8 +258,8 @@ for _,t in ipairs({STAR_LAKE_AMPHITHEATER, VALFIR,GRATEFUL_CURRENCY,GLIMMERLIGHT
 	t.customCollect = nil;
 end
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-	n(NIGHT_FAE,  bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH } }, {
+	n(NIGHT_FAE,  bubbleDown({ customCollect = "SL_COV_NFA" }, {
 		n(SANCTUM_UPGRADES, {
 			n(ANIMA_CONDUCTOR, {
 				q(61168),	-- triggered when obtaining trickers moves from conductor lvl 3 enchantments

@@ -24,15 +24,15 @@ InstanceHelper.BossOnly, InstanceHelper.Difficulty
 -- 	[MPLUS] = { 574409 },	-- Challenger's Cache
 -- }
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 	inst(1316, {	-- Nexus-Point Xenas
-		["coord"] = { 64.4, 61.8, MAP.MIDNIGHT.VOIDSTORM },
-		["maps"] = { 2556 },	-- Nexus-Point Xenas
-		["groups"] = {
+		coord = { 64.4, 61.8, MAP.MIDNIGHT.VOIDSTORM },
+		maps = { 2556 },	-- Nexus-Point Xenas
+		groups = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				ach(61585, {	-- You Conduit!
-					["description"] = "In Kasreth's wing of the dungeon are 5 Corespark Conduits. As a group, stand on all 5 at the same time for a few seconds to spawn a cage holding Gortham. The conduits hurt.",
-					["groups"] = {
+					description = "In Kasreth's wing of the dungeon are 5 Corespark Conduits. As a group, stand on all 5 at the same time for a few seconds to spawn a cage holding Gortham. The conduits hurt.",
+					groups = {
 						o(619736, {	-- Netherstorm Structural Cage
 							i(262774),	-- Gortham (PET!)
 						}),
@@ -69,16 +69,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
-				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
-				["groups"] = {
+				timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
+				groups = {
 					BossOnly(LOTHRAXION, {
 						ach(61646),	-- Heroic: Nexus-Point Xenas
 					}),
 				},
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
-				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
-				["groups"] = {
+				timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
+				groups = {
 					BossOnly(LOTHRAXION, {
 						ach(61647),	-- Mythic: Nexus-Point Xenas
 						ach(61618),	-- Mythic: Nexus-Point Xenas Guild Run

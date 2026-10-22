@@ -205,7 +205,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 
 		-- 2.0.3
-		expansion(EXPANSION.TBC, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_2_0_3 } }, {
+		expansion(EXPANSION.TBC, patch(0,3), bubbleDownSelf({ timeline = { CREATED_2_0_3 } }, {
 			filter(MAIL, {
 				i(38388),	-- Cap of the North
 				i(38389),	-- Comfy Raccoonskin Hat
@@ -218,7 +218,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 2.3.0
-		expansion(EXPANSION.TBC, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_3_0 } }, {
+		expansion(EXPANSION.TBC, patch(3,0), bubbleDownSelf({ timeline = { CREATED_2_3_0 } }, {
 			filter(FINGER_F, {
 				i(33959),	-- Ring of Ghoulish Delight
 				i(33958),	-- The Horseman's Signet Ring
@@ -293,7 +293,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 
 		-- 3.0.1
-		expansion(EXPANSION.WRATH, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+		expansion(EXPANSION.WRATH, patch(0,1), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
 			filter(CLOTH, {
 				i(37210),	-- Seafarer Cinch
 				i(37225),	-- Sweltering Sandals
@@ -322,7 +322,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 3.0.2
-		expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+		expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
 			filter(CLOTH, {
 				i(43878),	-- Mantle of Unholy Power
 				i(44743),	-- Cultist Acolyte's Hood
@@ -334,7 +334,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 3.1.0
-		expansion(EXPANSION.WRATH, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_3_1_0 } }, {
+		expansion(EXPANSION.WRATH, patch(1,0), bubbleDownSelf({ timeline = { CREATED_3_1_0 } }, {
 			filter(CLOTH, {
 				i(45629),	-- Shadoweave Belt
 			}),
@@ -345,14 +345,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 3.2.0
-		expansion(EXPANSION.WRATH, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_3_2_0 } }, {
+		expansion(EXPANSION.WRATH, patch(2,0), bubbleDownSelf({ timeline = { CREATED_3_2_0 } }, {
 			filter(CLOTH, {
 				i(47103),	-- Rotting Handwraps
 			}),
 		})),
 
 		-- 3.3.0
-		expansion(EXPANSION.WRATH, patch(3,3), bubbleDownSelf({ ["timeline"] = { CREATED_3_3_0 } }, {
+		expansion(EXPANSION.WRATH, patch(3,3), bubbleDownSelf({ timeline = { CREATED_3_3_0 } }, {
 			filter(NECK_F, {
 				i(49312),	-- Purified Onyxia Blood Talisman
 				i(49314),	-- Sparkling Onyxia Tooth Pendant
@@ -361,7 +361,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 
 		-- 3.4.2
 		-- #if ANYCLASSIC
-		expansion(EXPANSION.WRATH, patch(4,2), bubbleDownSelf({ ["timeline"] = { CREATED_3_4_2 } }, {
+		expansion(EXPANSION.WRATH, patch(4,2), bubbleDownSelf({ timeline = { CREATED_3_4_2 } }, {
 			filter(BACK_F, {
 				i(206707),	-- Fleece Cloak
 				i(206728),	-- Fleece Cloak
@@ -511,14 +511,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 
 		-- 4.0.1
-		expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
+		expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_4_0_1 } }, {
 			filter(MAIL, {
 				i(44428),	-- Dark Frostscale Chestpiece
 			}),
 		})),
 
 		-- 4.0.3
-		expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+		expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ timeline = { CREATED_4_0_3 } }, {
 			cl(ROGUE, {
 				i(54692),	-- Armor of Thero-Shan
 				i(59600),	-- Phosphora Fedora
@@ -775,7 +775,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 4.2.0
-		expansion(EXPANSION.CATA, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_4_2_0 } }, {
+		expansion(EXPANSION.CATA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_4_2_0 } }, {
 			filter(LEATHER, {
 				i(71569),	-- Flamebinder Bracers
 				i(71394),	-- Flamebinding Girdle
@@ -801,7 +801,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 4.3.0
-		expansion(EXPANSION.CATA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
+		expansion(EXPANSION.CATA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_4_3_0 } }, {
 			-- #if ANYCLASSIC
 			filter(BACK_F, {
 				i(73315),	-- Ebonsoul Cloak of Battle
@@ -956,7 +956,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.0.1
-		expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+		expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
 			filter(BACK_F, {
 				i(79790),	-- QA Combat Test Agility DPS Cloak 3
 				i(79791),	-- QA Combat Test Healer Cloak 2
@@ -1773,7 +1773,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 5.0.3
-		expansion(EXPANSION.MOP, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+		expansion(EXPANSION.MOP, patch(0,3), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
 			filter(CLOTH, {
 				i(89381),	-- Art Template Cloth Belt - Cloth_Reputation_C_01 - Black
 				i(89382),	-- Art Template Cloth Boot - Cloth_Reputation_C_01 - Black
@@ -1833,7 +1833,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 5.0.4
-		expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+		expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
 			filter(CLOTH, {
 				i(90698),	-- Art Template Cloth - Robe_CharCreate_Warlock_B_01 Hand
 				i(90699),	-- Art Template Cloth - Robe_CharCreate_Warlock_B_01 Robe
@@ -1850,7 +1850,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 5.1.0
-		expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_1_0 } }, {
+		expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ timeline = { CREATED_5_1_0 } }, {
 			filter(CLOTH, {
 				i(91944),	-- Art Template Cloth Belt - Cloth_PVPPriest_F_01 - Alliance
 				i(91945),	-- Art Template Cloth Boot - Cloth_PVPPriest_F_01 - Alliance
@@ -1990,7 +1990,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 5.2.0
-		expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
+		expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ timeline = { CREATED_5_2_0 } }, {
 			filter(CLOTH, {
 				i(93782),	-- Art Template Cloth Belt - Cloth_RaidWarlock_M_01 - Purple
 				i(93783),	-- Art Template Cloth Boot - Cloth_RaidWarlock_M_01 - Purple
@@ -2088,7 +2088,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 5.3.0
-		expansion(EXPANSION.MOP, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_3_0 } }, {
+		expansion(EXPANSION.MOP, patch(3,0), bubbleDownSelf({ timeline = { CREATED_5_3_0 } }, {
 			filter(BACK_F, {
 				i(97518),	-- Dreadful Gladiator's Drape of Prowess
 				i(97836),	-- Malevolent Gladiator's Drape of Prowess
@@ -2166,7 +2166,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 5.4.0
-		expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
+		expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ timeline = { CREATED_5_4_0 } }, {
 			filter(CLOTH, {
 				i(101408),	-- Art Template Cloth Belt - RaidMage_N_01 - Blue
 				i(101409),	-- Art Template Cloth Boot - RaidMage_N_01 - Blue
@@ -2348,7 +2348,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 
 		-- 6.0.1
-		expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+		expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
 			filter(BACK_F, {
 				i(114421),	-- Arrowleaf Longcloak
 				i(114301),	-- Axebreak Darkcloak
@@ -2617,7 +2617,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 6.0.2
-		expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+		expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
 			filter(CLOTH, {
 				i(116001),	-- Cord of Skulls
 			}),
@@ -2655,7 +2655,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 6.0.3
-		expansion(EXPANSION.WOD, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_3 } }, {
+		expansion(EXPANSION.WOD, patch(0,3), bubbleDownSelf({ timeline = { CREATED_6_0_3 } }, {
 			filter(CLOTH, {
 				-- Does Not Load In Game --
 				i(120318),	-- Sol-Shaper's Sandals
@@ -2675,7 +2675,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
 			cl(ROGUE, {
 				i(130327),	-- Artful Britches
 			}),
@@ -2720,7 +2720,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			filter(PLATE, {
 				-- #if BEFORE 11.2.5
 				-- It was added into Legion: Remix Ensembles
-				i(139603, {["bonusID"] = 1}),	-- Vault Patroller's Warboots
+				i(139603, {bonusID = 1}),	-- Vault Patroller's Warboots
 				-- #endif
 			}),
 			n(RELICS, {
@@ -2735,7 +2735,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 7.1.0
-		expansion(EXPANSION.LEGION, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_7_1_0 } }, {
+		expansion(EXPANSION.LEGION, patch(1,0), bubbleDownSelf({ timeline = { CREATED_7_1_0 } }, {
 			filter(BACK_F, {
 				i(134693),	-- Enveloping Cape
 				i(134699),	-- Enveloping Drape
@@ -2755,14 +2755,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 7.1.5
-		expansion(EXPANSION.LEGION, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_7_1_5 } }, {
+		expansion(EXPANSION.LEGION, patch(1,5), bubbleDownSelf({ timeline = { CREATED_7_1_5 } }, {
 			filter(FINGER_F, {
 				i(144455),	-- Rating Min Item Level Reward
 			}),
 		})),
 
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
+		expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ timeline = { CREATED_7_2_0 } }, {
 			filter(LEATHER, {
 				i(147036),	-- Fel-Stippled Legguards
 			}),
@@ -2782,7 +2782,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 7.2.5
-		expansion(EXPANSION.LEGION, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_7_2_5 } }, {
+		expansion(EXPANSION.LEGION, patch(2,5), bubbleDownSelf({ timeline = { CREATED_7_2_5 } }, {
 			filter(BACK_F, {
 				i(150489),	-- Shroud of Forgiveness
 				i(150714),	-- Travel-Worn Shawl
@@ -2805,7 +2805,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 7.3.0
-		expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
+		expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ timeline = { CREATED_7_3_0 } }, {
 			filter(CLOTH, {
 				i(153289),	-- Eredar Priestess' Tunic
 			}),
@@ -2827,7 +2827,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 7.3.5
-		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_5 } }, {
+		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ timeline = { CREATED_7_3_5 } }, {
 			filter(BACK_F, {
 				i(157751),	-- Drape of New Beginnings
 			}),
@@ -3012,14 +3012,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(154873),	-- Heartsbane Cuffs
 			}),
 			expansion(EXPANSION.BFA, patch(2,0), {
-				i(167111, {["sourceID"] = 103263 }),	-- QA Combat Test Caster Belt 1
-				i(167112, {["sourceID"] = 103264 }),	-- QA Combat Test Caster Robes 1
-				i(167113, {["sourceID"] = 103265 }),	-- QA Combat Test Caster Shoulders 1
-				i(167114, {["sourceID"] = 103266 }),	-- QA Combat Test Caster Gloves 1
-				i(167115, {["sourceID"] = 103267 }),	-- QA Combat Test Caster Helm 1
-				i(167116, {["sourceID"] = 103268 }),	-- QA Combat Test Caster Legs 1
-				i(167117, {["sourceID"] = 103269 }),	-- QA Combat Test Caster Boots
-				i(167118, {["sourceID"] = 103270 }),	-- QA Combat Test Caster Bracer 1
+				i(167111, {sourceID = 103263 }),	-- QA Combat Test Caster Belt 1
+				i(167112, {sourceID = 103264 }),	-- QA Combat Test Caster Robes 1
+				i(167113, {sourceID = 103265 }),	-- QA Combat Test Caster Shoulders 1
+				i(167114, {sourceID = 103266 }),	-- QA Combat Test Caster Gloves 1
+				i(167115, {sourceID = 103267 }),	-- QA Combat Test Caster Helm 1
+				i(167116, {sourceID = 103268 }),	-- QA Combat Test Caster Legs 1
+				i(167117, {sourceID = 103269 }),	-- QA Combat Test Caster Boots
+				i(167118, {sourceID = 103270 }),	-- QA Combat Test Caster Bracer 1
 			}),
 			expansion(EXPANSION.BFA, patch(3,0), {
 				i(170909),	-- Felsoul Cord
@@ -3081,14 +3081,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(159213),	-- Eventide Leggings
 			}),
 			expansion(EXPANSION.BFA, patch(2,0), {
-				i(167119, {["sourceID"] = 103271 }),	-- QA Combat Test Mail Helm
-				i(167120, {["sourceID"] = 103272 }),	-- QA Combat Test Mail Legs 1
-				i(167121, {["sourceID"] = 103273 }),	-- QA Combat Test Mail Bracer 1
-				i(167122, {["sourceID"] = 103274 }),	-- QA Combat Test Mail Belt 1
-				i(167123, {["sourceID"] = 103275 }),	-- QA Combat Test Mail Chest 1
-				i(167124, {["sourceID"] = 103276 }),	-- QA Combat Test Mail Gloves 1
-				i(167125, {["sourceID"] = 103277 }),	-- QA Combat Test Mail Shoulders 1
-				i(167126, {["sourceID"] = 103278 }),	-- QA Combat Test Mail Boots 1
+				i(167119, {sourceID = 103271 }),	-- QA Combat Test Mail Helm
+				i(167120, {sourceID = 103272 }),	-- QA Combat Test Mail Legs 1
+				i(167121, {sourceID = 103273 }),	-- QA Combat Test Mail Bracer 1
+				i(167122, {sourceID = 103274 }),	-- QA Combat Test Mail Belt 1
+				i(167123, {sourceID = 103275 }),	-- QA Combat Test Mail Chest 1
+				i(167124, {sourceID = 103276 }),	-- QA Combat Test Mail Gloves 1
+				i(167125, {sourceID = 103277 }),	-- QA Combat Test Mail Shoulders 1
+				i(167126, {sourceID = 103278 }),	-- QA Combat Test Mail Boots 1
 			}),
 		}),
 		filter(PLATE, {
@@ -3105,14 +3105,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(159197),	-- Brineworks Stompers
 			}),
 			expansion(EXPANSION.BFA, patch(2,0), {
-				i(167127, {["sourceID"] = 103279 }),	-- QA Combat Test Plate Bracer 1
-				i(167128, {["sourceID"] = 103280 }),	-- QA Combat Test Plate Chest 1
-				i(167129, {["sourceID"] = 103281 }),	-- QA Combat Test Plate Shoulders 1
-				i(167130, {["sourceID"] = 103282 }),	-- QA Combat Test Plate Gloves 1
-				i(167131, {["sourceID"] = 103283 }),	-- QA Combat Test Plate Belt 1
-				i(167132, {["sourceID"] = 103284 }),	-- QA Combat Test Plate Helm 1
-				i(167133, {["sourceID"] = 103285 }),	-- QA Combat Test Plate Legs 1
-				i(167134, {["sourceID"] = 103286 }),	-- QA Combat Test Plate Boots
+				i(167127, {sourceID = 103279 }),	-- QA Combat Test Plate Bracer 1
+				i(167128, {sourceID = 103280 }),	-- QA Combat Test Plate Chest 1
+				i(167129, {sourceID = 103281 }),	-- QA Combat Test Plate Shoulders 1
+				i(167130, {sourceID = 103282 }),	-- QA Combat Test Plate Gloves 1
+				i(167131, {sourceID = 103283 }),	-- QA Combat Test Plate Belt 1
+				i(167132, {sourceID = 103284 }),	-- QA Combat Test Plate Helm 1
+				i(167133, {sourceID = 103285 }),	-- QA Combat Test Plate Legs 1
+				i(167134, {sourceID = 103286 }),	-- QA Combat Test Plate Boots
 			}),
 		}),
 		filter(NECK_F, {
@@ -3240,14 +3240,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(179595),	-- Drust Mask
 			}),
 			expansion(EXPANSION.SL, patch(2,0), {
-				i(188065, {["sourceID"] = 165453}),	-- Choral Bands
-				i(188064, {["sourceID"] = 165452}),	-- Choral Belt
-				i(188063, {["sourceID"] = 165451}),	-- Choral Breeches
-				i(188062, {["sourceID"] = 165450}),	-- Choral Cowl
-				i(188061, {["sourceID"] = 165449}),	-- Choral Gloves
-				i(188066, {["sourceID"] = 165454}),	-- Choral Mantle
-				i(188060, {["sourceID"] = 165448}),	-- Choral Shoes
-				i(188059, {["sourceID"] = 165447}),	-- Choral Tunic
+				i(188065, {sourceID = 165453}),	-- Choral Bands
+				i(188064, {sourceID = 165452}),	-- Choral Belt
+				i(188063, {sourceID = 165451}),	-- Choral Breeches
+				i(188062, {sourceID = 165450}),	-- Choral Cowl
+				i(188061, {sourceID = 165449}),	-- Choral Gloves
+				i(188066, {sourceID = 165454}),	-- Choral Mantle
+				i(188060, {sourceID = 165448}),	-- Choral Shoes
+				i(188059, {sourceID = 165447}),	-- Choral Tunic
 				i(188110),	-- Cypher Attunement Chestpiece
 				i(188109),	-- Cypher Attunement Feet
 				i(188116),	-- Cypher Attunement Hands
@@ -3256,22 +3256,22 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(188107),	-- Cypher Attunement Shoulder
 				i(188108),	-- Cypher Attunement Waist
 				i(188113),	-- Cypher Attunement Wrist
-				i(190244, {["sourceID"] = 168348}),	-- Enlightened Researcher's Boots
-				i(190279, {["sourceID"] = 168383}),	-- Enlightened Researcher's Breeches
-				i(190248, {["sourceID"] = 168352}),	-- Enlightened Researcher's Cord
-				i(190245, {["sourceID"] = 168349}),	-- Enlightened Researcher's Grips
-				i(190277, {["sourceID"] = 168381}),	-- Enlightened Researcher's Handwraps
-				i(190247, {["sourceID"] = 168351}),	-- Enlightened Researcher's Leggings
-				i(190282, {["sourceID"] = 168386}),	-- Enlightened Researcher's Mantle
-				i(190246, {["sourceID"] = 168350}),	-- Enlightened Researcher's Mask
-				i(190275, {["sourceID"] = 168379}),	-- Enlightened Researcher's Raiment
-				i(190280, {["sourceID"] = 168384}),	-- Enlightened Researcher's Sash
-				i(190274, {["sourceID"] = 168378}),	-- Enlightened Researcher's Shawl
-				i(190276, {["sourceID"] = 168380}),	-- Enlightened Researcher's Treads
-				i(190243, {["sourceID"] = 168347}),	-- Enlightened Researcher's Tunic
-				i(190278, {["sourceID"] = 168382}),	-- Enlightened Researcher's Visage
-				i(190281, {["sourceID"] = 168385}),	-- Enlightened Researcher's Wraps
-				i(190249, {["sourceID"] = 168353}),	-- Enlightened Researcher's Wristbands
+				i(190244, {sourceID = 168348}),	-- Enlightened Researcher's Boots
+				i(190279, {sourceID = 168383}),	-- Enlightened Researcher's Breeches
+				i(190248, {sourceID = 168352}),	-- Enlightened Researcher's Cord
+				i(190245, {sourceID = 168349}),	-- Enlightened Researcher's Grips
+				i(190277, {sourceID = 168381}),	-- Enlightened Researcher's Handwraps
+				i(190247, {sourceID = 168351}),	-- Enlightened Researcher's Leggings
+				i(190282, {sourceID = 168386}),	-- Enlightened Researcher's Mantle
+				i(190246, {sourceID = 168350}),	-- Enlightened Researcher's Mask
+				i(190275, {sourceID = 168379}),	-- Enlightened Researcher's Raiment
+				i(190280, {sourceID = 168384}),	-- Enlightened Researcher's Sash
+				i(190274, {sourceID = 168378}),	-- Enlightened Researcher's Shawl
+				i(190276, {sourceID = 168380}),	-- Enlightened Researcher's Treads
+				i(190243, {sourceID = 168347}),	-- Enlightened Researcher's Tunic
+				i(190278, {sourceID = 168382}),	-- Enlightened Researcher's Visage
+				i(190281, {sourceID = 168385}),	-- Enlightened Researcher's Wraps
+				i(190249, {sourceID = 168353}),	-- Enlightened Researcher's Wristbands
 			}),
 			expansion(EXPANSION.SL, patch(2,5), {
 				i(191425),	-- Choral Amice
@@ -3305,38 +3305,38 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(188190),	-- Shoulderpads of the Primordial
 				i(188188),	-- Worldbinder Tricorne
 				--
-				i(188069, {["sourceID"] = 165457}),	-- Staccato Cap
-				i(188069, {["sourceID"] = 168477}),	-- Staccato Cap
-				i(188072, {["sourceID"] = 165460}),	-- Staccato Bracers
-				i(188072, {["sourceID"] = 168480}),	-- Staccato Bracers
-				i(188090, {["sourceID"] = 165478}),	-- Staccato Pauldrons
-				i(188090, {["sourceID"] = 168482}),	-- Staccato Pauldrons
-				i(188068, {["sourceID"] = 165456}),	-- Staccato Bands
-				i(188068, {["sourceID"] = 168476}),	-- Staccato Bands
-				i(188089, {["sourceID"] = 165477}),	-- Staccato Jerkin
-				i(188089, {["sourceID"] = 168481}),	-- Staccato Jerkin
-				i(188071, {["sourceID"] = 165459}),	-- Staccato Waistband
-				i(188071, {["sourceID"] = 168479}),	-- Staccato Waistband
-				i(188067, {["sourceID"] = 165455}),	-- Staccato Treads
-				i(188067, {["sourceID"] = 168475}),	-- Staccato Treads
-				i(188070, {["sourceID"] = 165458}),	-- Staccato Pants
-				i(188070, {["sourceID"] = 168478}),	-- Staccato Pants
-				i(190254, {["sourceID"] = 168358}),	-- Unbound Explorer's Belt
-				i(190255, {["sourceID"] = 168359}),	-- Unbound Explorer's Bindings
-				i(190288, {["sourceID"] = 168392}),	-- Unbound Explorer's Bracers
-				i(190272, {["sourceID"] = 168376}),	-- Unbound Explorer's Chestguard
-				i(190285, {["sourceID"] = 168389}),	-- Unbound Explorer's Cowl
-				i(190306, {["sourceID"] = 168410}),	-- Unbound Explorer's Epaulets
-				i(190250, {["sourceID"] = 168354}),	-- Unbound Explorer's Footpads
-				i(190284, {["sourceID"] = 168388}),	-- Unbound Explorer's Gloves
-				i(190251, {["sourceID"] = 168355}),	-- Unbound Explorer's Handlers
-				i(190252, {["sourceID"] = 168356}),	-- Unbound Explorer's Headgear
-				i(190305, {["sourceID"] = 168409}),	-- Unbound Explorer's Jerkin
-				i(190253, {["sourceID"] = 168357}),	-- Unbound Explorer's Legguards
-				i(190273, {["sourceID"] = 168377}),	-- Unbound Explorer's Shoulderguards
-				i(190283, {["sourceID"] = 168387}),	-- Unbound Explorer's Striders
-				i(190286, {["sourceID"] = 168390}),	-- Unbound Explorer's Trousers
-				i(190287, {["sourceID"] = 168391}),	-- Unbound Explorer's Waistwrap
+				i(188069, {sourceID = 165457}),	-- Staccato Cap
+				i(188069, {sourceID = 168477}),	-- Staccato Cap
+				i(188072, {sourceID = 165460}),	-- Staccato Bracers
+				i(188072, {sourceID = 168480}),	-- Staccato Bracers
+				i(188090, {sourceID = 165478}),	-- Staccato Pauldrons
+				i(188090, {sourceID = 168482}),	-- Staccato Pauldrons
+				i(188068, {sourceID = 165456}),	-- Staccato Bands
+				i(188068, {sourceID = 168476}),	-- Staccato Bands
+				i(188089, {sourceID = 165477}),	-- Staccato Jerkin
+				i(188089, {sourceID = 168481}),	-- Staccato Jerkin
+				i(188071, {sourceID = 165459}),	-- Staccato Waistband
+				i(188071, {sourceID = 168479}),	-- Staccato Waistband
+				i(188067, {sourceID = 165455}),	-- Staccato Treads
+				i(188067, {sourceID = 168475}),	-- Staccato Treads
+				i(188070, {sourceID = 165458}),	-- Staccato Pants
+				i(188070, {sourceID = 168478}),	-- Staccato Pants
+				i(190254, {sourceID = 168358}),	-- Unbound Explorer's Belt
+				i(190255, {sourceID = 168359}),	-- Unbound Explorer's Bindings
+				i(190288, {sourceID = 168392}),	-- Unbound Explorer's Bracers
+				i(190272, {sourceID = 168376}),	-- Unbound Explorer's Chestguard
+				i(190285, {sourceID = 168389}),	-- Unbound Explorer's Cowl
+				i(190306, {sourceID = 168410}),	-- Unbound Explorer's Epaulets
+				i(190250, {sourceID = 168354}),	-- Unbound Explorer's Footpads
+				i(190284, {sourceID = 168388}),	-- Unbound Explorer's Gloves
+				i(190251, {sourceID = 168355}),	-- Unbound Explorer's Handlers
+				i(190252, {sourceID = 168356}),	-- Unbound Explorer's Headgear
+				i(190305, {sourceID = 168409}),	-- Unbound Explorer's Jerkin
+				i(190253, {sourceID = 168357}),	-- Unbound Explorer's Legguards
+				i(190273, {sourceID = 168377}),	-- Unbound Explorer's Shoulderguards
+				i(190283, {sourceID = 168387}),	-- Unbound Explorer's Striders
+				i(190286, {sourceID = 168390}),	-- Unbound Explorer's Trousers
+				i(190287, {sourceID = 168391}),	-- Unbound Explorer's Waistwrap
 			}),
 		}),
 		filter(MAIL, {
@@ -3354,38 +3354,38 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(178304),	-- unused
 			}),
 			expansion(EXPANSION.SL, patch(2,0), {
-				i(188079, {["sourceID"] = 165467}),	-- Anthemic Clasp
-				i(188079, {["sourceID"] = 168497}),	-- Anthemic Clasp
-				i(188075, {["sourceID"] = 165463}),	-- Anthemic Grasps
-				i(188075, {["sourceID"] = 168493}),	-- Anthemic Grasps
-				i(188074, {["sourceID"] = 165462}),	-- Anthemic Boots
-				i(188074, {["sourceID"] = 168492}),	-- Anthemic Boots
-				i(188073, {["sourceID"] = 165461}),	-- Anthemic Hauberk
-				i(188073, {["sourceID"] = 168491}),	-- Anthemic Hauberk
-				i(188076, {["sourceID"] = 165464}),	-- Anthemic Helm
-				i(188076, {["sourceID"] = 168494}),	-- Anthemic Helm
-				i(188077, {["sourceID"] = 165465}),	-- Anthemic Cuisses
-				i(188077, {["sourceID"] = 168495}),	-- Anthemic Cuisses
-				i(188078, {["sourceID"] = 165466}),	-- Anthemic Pauldrons
-				i(188078, {["sourceID"] = 168496}),	-- Anthemic Pauldrons
-				i(188080, {["sourceID"] = 165468}),	-- Anthemic Wristlinks
-				i(188080, {["sourceID"] = 168498}),	-- Anthemic Wristlinks
-				i(190295, {["sourceID"] = 168399}),	-- Transcendent Vagabond's Chain
-				i(190263, {["sourceID"] = 168367}),	-- Transcendent Vagabond's Clasps
-				i(190259, {["sourceID"] = 168363}),	-- Transcendent Vagabond's Coif
-				i(190289, {["sourceID"] = 168393}),	-- Transcendent Vagabond's Cuirass
-				i(190257, {["sourceID"] = 168361}),	-- Transcendent Vagabond's Footguards
-				i(190293, {["sourceID"] = 168397}),	-- Transcendent Vagabond's Greaves
-				i(190291, {["sourceID"] = 168395}),	-- Transcendent Vagabond's Grips
-				i(190258, {["sourceID"] = 168362}),	-- Transcendent Vagabond's Handguards
-				i(190292, {["sourceID"] = 168396}),	-- Transcendent Vagabond's Helm
-				i(190260, {["sourceID"] = 168364}),	-- Transcendent Vagabond's Pants
-				i(190256, {["sourceID"] = 168360}),	-- Transcendent Vagabond's Scales
-				i(190261, {["sourceID"] = 168365}),	-- Transcendent Vagabond's Shoulderpads
-				i(190294, {["sourceID"] = 168398}),	-- Transcendent Vagabond's Spaulders
-				i(190290, {["sourceID"] = 168394}),	-- Transcendent Vagabond's Striders
-				i(190262, {["sourceID"] = 168366}),	-- Transcendent Vagabond's Waistguard
-				i(190296, {["sourceID"] = 168400}),	-- Transcendent Vagabond's Wristguards
+				i(188079, {sourceID = 165467}),	-- Anthemic Clasp
+				i(188079, {sourceID = 168497}),	-- Anthemic Clasp
+				i(188075, {sourceID = 165463}),	-- Anthemic Grasps
+				i(188075, {sourceID = 168493}),	-- Anthemic Grasps
+				i(188074, {sourceID = 165462}),	-- Anthemic Boots
+				i(188074, {sourceID = 168492}),	-- Anthemic Boots
+				i(188073, {sourceID = 165461}),	-- Anthemic Hauberk
+				i(188073, {sourceID = 168491}),	-- Anthemic Hauberk
+				i(188076, {sourceID = 165464}),	-- Anthemic Helm
+				i(188076, {sourceID = 168494}),	-- Anthemic Helm
+				i(188077, {sourceID = 165465}),	-- Anthemic Cuisses
+				i(188077, {sourceID = 168495}),	-- Anthemic Cuisses
+				i(188078, {sourceID = 165466}),	-- Anthemic Pauldrons
+				i(188078, {sourceID = 168496}),	-- Anthemic Pauldrons
+				i(188080, {sourceID = 165468}),	-- Anthemic Wristlinks
+				i(188080, {sourceID = 168498}),	-- Anthemic Wristlinks
+				i(190295, {sourceID = 168399}),	-- Transcendent Vagabond's Chain
+				i(190263, {sourceID = 168367}),	-- Transcendent Vagabond's Clasps
+				i(190259, {sourceID = 168363}),	-- Transcendent Vagabond's Coif
+				i(190289, {sourceID = 168393}),	-- Transcendent Vagabond's Cuirass
+				i(190257, {sourceID = 168361}),	-- Transcendent Vagabond's Footguards
+				i(190293, {sourceID = 168397}),	-- Transcendent Vagabond's Greaves
+				i(190291, {sourceID = 168395}),	-- Transcendent Vagabond's Grips
+				i(190258, {sourceID = 168362}),	-- Transcendent Vagabond's Handguards
+				i(190292, {sourceID = 168396}),	-- Transcendent Vagabond's Helm
+				i(190260, {sourceID = 168364}),	-- Transcendent Vagabond's Pants
+				i(190256, {sourceID = 168360}),	-- Transcendent Vagabond's Scales
+				i(190261, {sourceID = 168365}),	-- Transcendent Vagabond's Shoulderpads
+				i(190294, {sourceID = 168398}),	-- Transcendent Vagabond's Spaulders
+				i(190290, {sourceID = 168394}),	-- Transcendent Vagabond's Striders
+				i(190262, {sourceID = 168366}),	-- Transcendent Vagabond's Waistguard
+				i(190296, {sourceID = 168400}),	-- Transcendent Vagabond's Wristguards
 			}),
 		}),
 		filter(PLATE, {
@@ -3401,345 +3401,345 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			expansion(EXPANSION.SL, patch(2,0), {
 				i(190623),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Shoulders
-				i(188082, {["sourceID"] = 165470}),	-- Harmonium Armor
-				i(188082, {["sourceID"] = 168458}),	-- Harmonium Armor
-				i(188087, {["sourceID"] = 165475}),	-- Harmonium Belt
-				i(188087, {["sourceID"] = 168463}),	-- Harmonium Belt
-				i(188088, {["sourceID"] = 165476}),	-- Harmonium Binders
-				i(188088, {["sourceID"] = 168464}),	-- Harmonium Binders
-				i(188083, {["sourceID"] = 165471}),	-- Harmonium Boots
-				i(188083, {["sourceID"] = 168459}),	-- Harmonium Boots
-				i(188084, {["sourceID"] = 165472}),	-- Harmonium Grips
-				i(188084, {["sourceID"] = 168460}),	-- Harmonium Grips
-				i(188085, {["sourceID"] = 165473}),	-- Harmonium Pillars
-				i(188085, {["sourceID"] = 168461}),	-- Harmonium Pillars
-				i(188086, {["sourceID"] = 165474}),	-- Harmonium Shoulderplates
-				i(188086, {["sourceID"] = 168462}),	-- Harmonium Shoulderplates
-				i(188081, {["sourceID"] = 165469}),	-- Harmonium Visor
-				i(188081, {["sourceID"] = 168457}),	-- Harmonium Visor
-				i(190298, {["sourceID"] = 168402}),	-- Eternal Warder's Breastplate
-				i(190303, {["sourceID"] = 168407}),	-- Eternal Warder's Buckle
-				i(190265, {["sourceID"] = 168369}),	-- Eternal Warder's Chestplate
-				i(190300, {["sourceID"] = 168404}),	-- Eternal Warder's Crushers
-				i(190268, {["sourceID"] = 168372}),	-- Eternal Warder's Cuisses
-				i(190297, {["sourceID"] = 168401}),	-- Eternal Warder's Faceplate
-				i(190267, {["sourceID"] = 168371}),	-- Eternal Warder's Gauntlets
-				i(190270, {["sourceID"] = 168374}),	-- Eternal Warder's Girdle
-				i(190299, {["sourceID"] = 168403}),	-- Eternal Warder's Greaves
-				i(190301, {["sourceID"] = 168405}),	-- Eternal Warder's Legplates
-				i(190269, {["sourceID"] = 168373}),	-- Eternal Warder's Pauldrons
-				i(190266, {["sourceID"] = 168370}),	-- Eternal Warder's Sabatons
-				i(190302, {["sourceID"] = 168406}),	-- Eternal Warder's Shoulderplates
-				i(190271, {["sourceID"] = 168375}),	-- Eternal Warder's Vambraces
-				i(190264, {["sourceID"] = 168368}),	-- Eternal Warder's Visor
-				i(190304, {["sourceID"] = 168408}),	-- Eternal Warder's Wristplates
+				i(188082, {sourceID = 165470}),	-- Harmonium Armor
+				i(188082, {sourceID = 168458}),	-- Harmonium Armor
+				i(188087, {sourceID = 165475}),	-- Harmonium Belt
+				i(188087, {sourceID = 168463}),	-- Harmonium Belt
+				i(188088, {sourceID = 165476}),	-- Harmonium Binders
+				i(188088, {sourceID = 168464}),	-- Harmonium Binders
+				i(188083, {sourceID = 165471}),	-- Harmonium Boots
+				i(188083, {sourceID = 168459}),	-- Harmonium Boots
+				i(188084, {sourceID = 165472}),	-- Harmonium Grips
+				i(188084, {sourceID = 168460}),	-- Harmonium Grips
+				i(188085, {sourceID = 165473}),	-- Harmonium Pillars
+				i(188085, {sourceID = 168461}),	-- Harmonium Pillars
+				i(188086, {sourceID = 165474}),	-- Harmonium Shoulderplates
+				i(188086, {sourceID = 168462}),	-- Harmonium Shoulderplates
+				i(188081, {sourceID = 165469}),	-- Harmonium Visor
+				i(188081, {sourceID = 168457}),	-- Harmonium Visor
+				i(190298, {sourceID = 168402}),	-- Eternal Warder's Breastplate
+				i(190303, {sourceID = 168407}),	-- Eternal Warder's Buckle
+				i(190265, {sourceID = 168369}),	-- Eternal Warder's Chestplate
+				i(190300, {sourceID = 168404}),	-- Eternal Warder's Crushers
+				i(190268, {sourceID = 168372}),	-- Eternal Warder's Cuisses
+				i(190297, {sourceID = 168401}),	-- Eternal Warder's Faceplate
+				i(190267, {sourceID = 168371}),	-- Eternal Warder's Gauntlets
+				i(190270, {sourceID = 168374}),	-- Eternal Warder's Girdle
+				i(190299, {sourceID = 168403}),	-- Eternal Warder's Greaves
+				i(190301, {sourceID = 168405}),	-- Eternal Warder's Legplates
+				i(190269, {sourceID = 168373}),	-- Eternal Warder's Pauldrons
+				i(190266, {sourceID = 168370}),	-- Eternal Warder's Sabatons
+				i(190302, {sourceID = 168406}),	-- Eternal Warder's Shoulderplates
+				i(190271, {sourceID = 168375}),	-- Eternal Warder's Vambraces
+				i(190264, {sourceID = 168368}),	-- Eternal Warder's Visor
+				i(190304, {sourceID = 168408}),	-- Eternal Warder's Wristplates
 			}),
 		}),
 		n(LEGENDARIES, {
 			-- Stupid Things?
 			-- LFR
 			i(190467, {	-- Girdle of Unity DK
-				["bonusID"] = 6896
+				bonusID = 6896
 			}),
 			i(190467, {	-- Girdle of Unity DK
-				["modID"] = 4
+				modID = 4
 			}),
 			i(190465, {	-- Cinch of Unity Druid
-				["bonusID"] = 6896
+				bonusID = 6896
 			}),
 			i(190465, {	-- Cinch of Unity Druid
-				["modID"] = 4
+				modID = 4
 			}),
 			i(190472, {	-- Cinch of Unity Monk
-				["bonusID"] = 6896
+				bonusID = 6896
 			}),
 			i(190472, {	-- Cinch of Unity Monk
-				["modID"] = 4
+				modID = 4
 			}),
 			i(190468, {	-- Cord of Unity Priest
-				["bonusID"] = 6897
+				bonusID = 6897
 			}),
 			i(190468, {	-- Cord of Unity Priest
-				["modID"] = 4
+				modID = 4
 			}),
 			i(190471, {	-- Cinch of Unity Rogue
-				["bonusID"] = 6896
+				bonusID = 6896
 			}),
 			i(190471, {	-- Cinch of Unity Rogue
-				["modID"] = 4
+				modID = 4
 			}),
 			i(190473, {	-- Clasp of Unity Shaman
-				["bonusID"] = 6898
+				bonusID = 6898
 			}),
 			i(190473, {	-- Clasp of Unity Shaman
-				["modID"] = 4
+				modID = 4
 			}),
 			i(190469, {	-- Cord of Unity Warlock
-				["bonusID"] = 6896
+				bonusID = 6896
 			}),
 			i(190469, {	-- Cord of Unity Warlock
-				["modID"] = 4
+				modID = 4
 			}),
 			i(190475, {	-- Girdle of Unity Warrior
-				["bonusID"] = 6896
+				bonusID = 6896
 			}),
 			i(190475, {	-- Girdle of Unity Warrior
-				["modID"] = 4
+				modID = 4
 			}),
 			-- LFR Alt
 			i(190470, {	-- Cinch of Unity DH
-				["bonusID"] = 6896
+				bonusID = 6896
 			}),
 			i(190470, {	-- Cinch of Unity DH
-				["modID"] = 4
+				modID = 4
 			}),
 			i(190466, {	-- Clasp of Unity Hunter
-				["bonusID"] = 6896
+				bonusID = 6896
 			}),
 			i(190466, {	-- Clasp of Unity Hunter
-				["modID"] = 4
+				modID = 4
 			}),
 			i(190474, {	-- Girdle of Unity Pala
-				["modID"] = 4
+				modID = 4
 			}),
 			i(190474, {	-- Girdle of Unity Pala
-				["bonusID"] = 6896
+				bonusID = 6896
 			}),
 			i(190468, {	-- Cord of Unity Priest
-				["bonusID"] = 6896
+				bonusID = 6896
 			}),
 			i(190464, {	-- Cord of Unity Mage
-				["bonusID"] = 6896
+				bonusID = 6896
 			}),
 			-- Normal
 			i(190467, {	-- Girdle of Unity DK
-				["bonusID"] = 8107
+				bonusID = 8107
 			}),
 			i(190470, {	-- Cinch of Unity DH
-				["bonusID"] = 8107
+				bonusID = 8107
 			}),
 			i(190465, {	-- Cinch of Unity Druid
-				["bonusID"] = 8107
+				bonusID = 8107
 			}),
 			i(190466, {	-- Clasp of Unity Hunter
-				["bonusID"] = 8107
+				bonusID = 8107
 			}),
 			i(190464, {	-- Cord of Unity Mage
-				["bonusID"] = 8107
+				bonusID = 8107
 			}),
 			i(190472, {	-- Cinch of Unity Monk
-				["bonusID"] = 8107
+				bonusID = 8107
 			}),
 			i(190474, {	-- Girdle of Unity Pala
-				["bonusID"] = 8107
+				bonusID = 8107
 			}),
 			i(190468, {	-- Cord of Unity Priest
-				["bonusID"] = 8107
+				bonusID = 8107
 			}),
 			i(190473, {	-- Clasp of Unity Shaman
-				["bonusID"] = 6895
+				bonusID = 6895
 			}),
 			i(190469, {	-- Cord of Unity Warlock
-				["bonusID"] = 8107
+				bonusID = 8107
 			}),
 			i(190475, {	-- Girdle of Unity Warrior
-				["bonusID"] = 8107
+				bonusID = 8107
 			}),
 			-- Normal Alt
 			i(190471, {	-- Cinch of Unity Rogue
-				["bonusID"] = 8107
+				bonusID = 8107
 			}),
 			i(190471, {	-- Cinch of Unity Rogue
-				["modID"] = 2
+				modID = 2
 			}),
 			i(190473, {	-- Clasp of Unity Shaman
-				["bonusID"] = 8107
+				bonusID = 8107
 			}),
 			i(190473, {	-- Clasp of Unity Shaman
-				["modID"] = 2
+				modID = 2
 			}),
 			-- Heroic
 			i(190467, {	-- Girdle of Unity DK
-				["bonusID"] = 6898
+				bonusID = 6898
 			}),
 			i(190467, {	-- Girdle of Unity DK
-				["modID"] = 2
+				modID = 2
 			}),
 			i(190470, {	-- Cinch of Unity DH
-				["bonusID"] = 6898
+				bonusID = 6898
 			}),
 			i(190470, {	-- Cinch of Unity DH
-				["modID"] = 2
+				modID = 2
 			}),
 			i(190465, {	-- Cinch of Unity Druid
-				["bonusID"] = 6898
+				bonusID = 6898
 			}),
 			i(190465, {	-- Cinch of Unity Druid
-				["modID"] = 2
+				modID = 2
 			}),
 			i(190466, {	-- Clasp of Unity Hunter
-				["bonusID"] = 6898
+				bonusID = 6898
 			}),
 			i(190466, {	-- Clasp of Unity Hunter
-				["modID"] = 2
+				modID = 2
 			}),
 			i(190464, {	-- Cord of Unity Mage
-				["bonusID"] = 6898
+				bonusID = 6898
 			}),
 			i(190464, {	-- Cord of Unity Mage
-				["modID"] = 2
+				modID = 2
 			}),
 			i(190472, {	-- Cinch of Unity Monk
-				["bonusID"] = 6898
+				bonusID = 6898
 			}),
 			i(190472, {	-- Cinch of Unity Monk
-				["modID"] = 2
+				modID = 2
 			}),
 			i(190474, {	-- Girdle of Unity Pala
-				["bonusID"] = 6898
+				bonusID = 6898
 			}),
 			i(190474, {	-- Girdle of Unity Pala
-				["modID"] = 2
+				modID = 2
 			}),
 			i(190468, {	-- Cord of Unity Priest
-				["bonusID"] = 6898
+				bonusID = 6898
 			}),
 			i(190468, {	-- Cord of Unity Priest
-				["modID"] = 2
+				modID = 2
 			}),
 			i(190471, {	-- Cinch of Unity Rogue
-				["bonusID"] = 6898
+				bonusID = 6898
 			}),
 			i(190471, {	-- Cinch of Unity Rogue
-				["modID"] = 6
+				modID = 6
 			}),
 			i(190469, {	-- Cord of Unity Warlock
-				["bonusID"] = 6898
+				bonusID = 6898
 			}),
 			i(190469, {	-- Cord of Unity Warlock
-				["modID"] = 2
+				modID = 2
 			}),
 			i(190475, {	-- Girdle of Unity Warrior
-				["bonusID"] = 6898
+				bonusID = 6898
 			}),
 			i(190475, {	-- Girdle of Unity Warrior
-				["modID"] = 2
+				modID = 2
 			}),
 			-- Mythic
 			i(190467, {	-- Girdle of Unity DK
-				["bonusID"] = 6897
+				bonusID = 6897
 			}),
 			i(190467, {	-- Girdle of Unity DK
-				["modID"] = 6
+				modID = 6
 			}),
 			i(190470, {	-- Cinch of Unity DH
-				["bonusID"] = 6897
+				bonusID = 6897
 			}),
 			i(190470, {	-- Cinch of Unity DH
-				["modID"] = 6
+				modID = 6
 			}),
 			i(190465, {	-- Cinch of Unity Druid
-				["bonusID"] = 6897
+				bonusID = 6897
 			}),
 			i(190465, {	-- Cinch of Unity Druid
-				["modID"] = 6
+				modID = 6
 			}),
 			i(190466, {	-- Clasp of Unity Hunter
-				["bonusID"] = 6897
+				bonusID = 6897
 			}),
 			i(190466, {	-- Clasp of Unity Hunter
-				["modID"] = 6
+				modID = 6
 			}),
 			i(190464, {	-- Cord of Unity Mage
-				["bonusID"] = 6897
+				bonusID = 6897
 			}),
 			i(190464, {	-- Cord of Unity Mage
-				["modID"] = 6
+				modID = 6
 			}),
 			i(190464, {	-- Cord of Unity Mage
-				["bonusID"] = 6895
+				bonusID = 6895
 			}),
 			i(190464, {	-- Cord of Unity Mage
-				["modID"] = 4
+				modID = 4
 			}),
 			i(190472, {	-- Cinch of Unity Monk
-				["bonusID"] = 6897
+				bonusID = 6897
 			}),
 			i(190472, {	-- Cinch of Unity Monk
-				["modID"] = 6
+				modID = 6
 			}),
 			i(190474, {	-- Girdle of Unity Pala
-				["bonusID"] = 6897
+				bonusID = 6897
 			}),
 			i(190474, {	-- Girdle of Unity Pala
-				["modID"] = 6
+				modID = 6
 			}),
 			i(190468, {	-- Cord of Unity Priest
-				["bonusID"] = 6897
+				bonusID = 6897
 			}),
 			i(190468, {	-- Cord of Unity Priest
-				["modID"] = 6
+				modID = 6
 			}),
 			i(190471, {	-- Cinch of Unity Rogue
-				["bonusID"] = 6897
+				bonusID = 6897
 			}),
 			i(190471, {	-- Cinch of Unity Rogue
-				["bonusID"] = 6898
+				bonusID = 6898
 			}),
 			i(190473, {	-- Clasp of Unity Shaman
-				["bonusID"] = 6897
+				bonusID = 6897
 			}),
 			i(190473, {	-- Clasp of Unity Shaman
-				["modID"] = 6
+				modID = 6
 			}),
 			i(190469, {	-- Cord of Unity Warlock
-				["bonusID"] = 6897
+				bonusID = 6897
 			}),
 			i(190469, {	-- Cord of Unity Warlock
-				["modID"] = 6
+				modID = 6
 			}),
 			i(190475, {	-- Girdle of Unity Warrior
-				["bonusID"] = 6897
+				bonusID = 6897
 			}),
 			i(190475, {	-- Girdle of Unity Warrior
-				["modID"] = 6
+				modID = 6
 			}),
 			-- PvP
 			i(190467, {	-- Girdle of Unity DK
-				["bonusID"] = 6895
+				bonusID = 6895
 			}),
 			i(190470, {	-- Cinch of Unity DH
-				["bonusID"] = 6895
+				bonusID = 6895
 			}),
 			i(190465, {	-- Cinch of Unity Druid
-				["bonusID"] = 6895
+				bonusID = 6895
 			}),
 			i(190466, {	-- Clasp of Unity Hunter
-				["bonusID"] = 6895
+				bonusID = 6895
 			}),
 			i(190464, {	-- Cord of Unity Mage
-				["bonusID"] = 6895
+				bonusID = 6895
 			}),
 			i(190472, {	-- Cinch of Unity Monk
-				["bonusID"] = 6895
+				bonusID = 6895
 			}),
 			i(190474, {	-- Girdle of Unity Pala
-				["bonusID"] = 6895
+				bonusID = 6895
 			}),
 			i(190468, {	-- Cord of Unity Priest
-				["bonusID"] = 6895
+				bonusID = 6895
 			}),
 			i(190471, {	-- Cinch of Unity Rogue
-				["bonusID"] = 6895
+				bonusID = 6895
 			}),
 			i(190473, {	-- Clasp of Unity Shaman
-				["bonusID"] = 6894
+				bonusID = 6894
 			}),
 			i(190469, {	-- Cord of Unity Warlock
-				["bonusID"] = 6895
+				bonusID = 6895
 			}),
 			i(190475, {	-- Girdle of Unity Warrior
-				["bonusID"] = 6895
+				bonusID = 6895
 			}),
 		}),
 		filter(NECK_F, {
@@ -3817,7 +3817,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 		}),
 		-- 9.1.0
-		expansion(EXPANSION.SL, patch(1,0), bubbleDown({ ["timeline"] = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, patch(1,0), bubbleDown({ timeline = { CREATED_9_1_0 } }, {
 			n(WORLD_BOSSES, {
 				filter(CLOTH, {
 					itemsource(145873),	-- Sorrowful Trousers
@@ -3896,7 +3896,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDown({ timeline = { CREATED_10_0_0 } }, {
 			filter(BACK_F, {
 				i(189669),	-- 10.0 Dungeon Template - Generic - Cloak
 				i(189061),	-- 10.0 End Game Template <Descriptor> Shawl
@@ -3904,9 +3904,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(189102),	-- 10.0 QRP Template <Descriptor> Cloak
 				i(189101),	-- 10.0 QRP Template <Descriptor> Shroud
 				i(189622),	-- 10.0 Raid Template - Generic - Cloak
-				i(189622, {["sourceID"] = 167643 }),	-- 10.0 Raid Template - Generic - Cloak
-				i(189622, {["sourceID"] = 167644 }),	-- 10.0 Raid Template - Generic - Cloak
-				i(189622, {["sourceID"] = 167645 }),	-- 10.0 Raid Template - Generic - Cloak
+				i(189622, {sourceID = 167643 }),	-- 10.0 Raid Template - Generic - Cloak
+				i(189622, {sourceID = 167644 }),	-- 10.0 Raid Template - Generic - Cloak
+				i(189622, {sourceID = 167645 }),	-- 10.0 Raid Template - Generic - Cloak
 				i(189006),	-- 10.0 Zone Uncommon Template <Descriptor> Cape
 				i(200710),	-- Ashjra'kamas
 				i(200708),	-- Polymorphic Cloak of Absorption
@@ -3937,37 +3937,37 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(189064),	-- 10.0 QRP Template <Descriptor> Vestments
 				i(189087),	-- 10.0 QRP Template <Descriptor> Wraps
 				i(189595),	-- 10.0 Raid Template - Cloth - Chest
-				i(189595, {["sourceID"] = 167535 }),	-- 10.0 Raid Template - Cloth - Chest
-				i(189595, {["sourceID"] = 167536 }),	-- 10.0 Raid Template - Cloth - Chest
-				i(189595, {["sourceID"] = 167537 }),	-- 10.0 Raid Template - Cloth - Chest
+				i(189595, {sourceID = 167535 }),	-- 10.0 Raid Template - Cloth - Chest
+				i(189595, {sourceID = 167536 }),	-- 10.0 Raid Template - Cloth - Chest
+				i(189595, {sourceID = 167537 }),	-- 10.0 Raid Template - Cloth - Chest
 				i(189592),	-- 10.0 Raid Template - Cloth - Feet
-				i(189592, {["sourceID"] = 167523 }),	-- 10.0 Raid Template - Cloth - Feet
-				i(189592, {["sourceID"] = 167524 }),	-- 10.0 Raid Template - Cloth - Feet
-				i(189592, {["sourceID"] = 167525 }),	-- 10.0 Raid Template - Cloth - Feet
+				i(189592, {sourceID = 167523 }),	-- 10.0 Raid Template - Cloth - Feet
+				i(189592, {sourceID = 167524 }),	-- 10.0 Raid Template - Cloth - Feet
+				i(189592, {sourceID = 167525 }),	-- 10.0 Raid Template - Cloth - Feet
 				i(189617),	-- 10.0 Raid Template - Cloth - Hand
-				i(189617, {["sourceID"] = 167623 }),	-- 10.0 Raid Template - Cloth - Hand
-				i(189617, {["sourceID"] = 167624 }),	-- 10.0 Raid Template - Cloth - Hand
-				i(189617, {["sourceID"] = 167625 }),	-- 10.0 Raid Template - Cloth - Hand
+				i(189617, {sourceID = 167623 }),	-- 10.0 Raid Template - Cloth - Hand
+				i(189617, {sourceID = 167624 }),	-- 10.0 Raid Template - Cloth - Hand
+				i(189617, {sourceID = 167625 }),	-- 10.0 Raid Template - Cloth - Hand
 				i(189616),	-- 10.0 Raid Template - Cloth - Head
-				i(189616, {["sourceID"] = 167619 }),	-- 10.0 Raid Template - Cloth - Head
-				i(189616, {["sourceID"] = 167620 }),	-- 10.0 Raid Template - Cloth - Head
-				i(189616, {["sourceID"] = 167621 }),	-- 10.0 Raid Template - Cloth - Head
+				i(189616, {sourceID = 167619 }),	-- 10.0 Raid Template - Cloth - Head
+				i(189616, {sourceID = 167620 }),	-- 10.0 Raid Template - Cloth - Head
+				i(189616, {sourceID = 167621 }),	-- 10.0 Raid Template - Cloth - Head
 				i(189610),	-- 10.0 Raid Template - Cloth - Legs
-				i(189610, {["sourceID"] = 167595 }),	-- 10.0 Raid Template - Cloth - Legs
-				i(189610, {["sourceID"] = 167596 }),	-- 10.0 Raid Template - Cloth - Legs
-				i(189610, {["sourceID"] = 167597 }),	-- 10.0 Raid Template - Cloth - Legs
+				i(189610, {sourceID = 167595 }),	-- 10.0 Raid Template - Cloth - Legs
+				i(189610, {sourceID = 167596 }),	-- 10.0 Raid Template - Cloth - Legs
+				i(189610, {sourceID = 167597 }),	-- 10.0 Raid Template - Cloth - Legs
 				i(189615),	-- 10.0 Raid Template - Cloth - Shoulder
-				i(189615, {["sourceID"] = 167615 }),	-- 10.0 Raid Template - Cloth - Shoulder
-				i(189615, {["sourceID"] = 167616 }),	-- 10.0 Raid Template - Cloth - Shoulder
-				i(189615, {["sourceID"] = 167617 }),	-- 10.0 Raid Template - Cloth - Shoulder
+				i(189615, {sourceID = 167615 }),	-- 10.0 Raid Template - Cloth - Shoulder
+				i(189615, {sourceID = 167616 }),	-- 10.0 Raid Template - Cloth - Shoulder
+				i(189615, {sourceID = 167617 }),	-- 10.0 Raid Template - Cloth - Shoulder
 				i(189606),	-- 10.0 Raid Template - Cloth - Waist
-				i(189606, {["sourceID"] = 167579 }),	-- 10.0 Raid Template - Cloth - Waist
-				i(189606, {["sourceID"] = 167580 }),	-- 10.0 Raid Template - Cloth - Waist
-				i(189606, {["sourceID"] = 167581 }),	-- 10.0 Raid Template - Cloth - Waist
+				i(189606, {sourceID = 167579 }),	-- 10.0 Raid Template - Cloth - Waist
+				i(189606, {sourceID = 167580 }),	-- 10.0 Raid Template - Cloth - Waist
+				i(189606, {sourceID = 167581 }),	-- 10.0 Raid Template - Cloth - Waist
 				i(189602),	-- 10.0 Raid Template - Cloth - Wrist
-				i(189602, {["sourceID"] = 167563 }),	-- 10.0 Raid Template - Cloth - Wrist
-				i(189602, {["sourceID"] = 167564 }),	-- 10.0 Raid Template - Cloth - Wrist
-				i(189602, {["sourceID"] = 167565 }),	-- 10.0 Raid Template - Cloth - Wrist
+				i(189602, {sourceID = 167563 }),	-- 10.0 Raid Template - Cloth - Wrist
+				i(189602, {sourceID = 167564 }),	-- 10.0 Raid Template - Cloth - Wrist
+				i(189602, {sourceID = 167565 }),	-- 10.0 Raid Template - Cloth - Wrist
 				i(188965),	-- 10.0 Zone Uncommon Template <Descriptor> Cord
 				i(188962),	-- 10.0 Zone Uncommon Template <Descriptor> Handwraps
 				i(188963),	-- 10.0 Zone Uncommon Template <Descriptor> Hood
@@ -4022,37 +4022,37 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(189079),	-- 10.0 QRP Template <Descriptor> Spaulders
 				i(189067),	-- 10.0 QRP Template <Descriptor> Vest
 				i(189609),	-- 10.0 Raid Template - Leather - Chest
-				i(189609, {["sourceID"] = 167591 }),	-- 10.0 Raid Template - Leather - Chest
-				i(189609, {["sourceID"] = 167592 }),	-- 10.0 Raid Template - Leather - Chest
-				i(189609, {["sourceID"] = 167593 }),	-- 10.0 Raid Template - Leather - Chest
+				i(189609, {sourceID = 167591 }),	-- 10.0 Raid Template - Leather - Chest
+				i(189609, {sourceID = 167592 }),	-- 10.0 Raid Template - Leather - Chest
+				i(189609, {sourceID = 167593 }),	-- 10.0 Raid Template - Leather - Chest
 				i(189621),	-- 10.0 Raid Template - Leather - Feet
-				i(189621, {["sourceID"] = 167639 }),	-- 10.0 Raid Template - Leather - Feet
-				i(189621, {["sourceID"] = 167640 }),	-- 10.0 Raid Template - Leather - Feet
-				i(189621, {["sourceID"] = 167641 }),	-- 10.0 Raid Template - Leather - Feet
+				i(189621, {sourceID = 167639 }),	-- 10.0 Raid Template - Leather - Feet
+				i(189621, {sourceID = 167640 }),	-- 10.0 Raid Template - Leather - Feet
+				i(189621, {sourceID = 167641 }),	-- 10.0 Raid Template - Leather - Feet
 				i(189608),	-- 10.0 Raid Template - Leather - Hand
-				i(189608, {["sourceID"] = 167587 }),	-- 10.0 Raid Template - Leather - Hand
-				i(189608, {["sourceID"] = 167588 }),	-- 10.0 Raid Template - Leather - Hand
-				i(189608, {["sourceID"] = 167589 }),	-- 10.0 Raid Template - Leather - Hand
+				i(189608, {sourceID = 167587 }),	-- 10.0 Raid Template - Leather - Hand
+				i(189608, {sourceID = 167588 }),	-- 10.0 Raid Template - Leather - Hand
+				i(189608, {sourceID = 167589 }),	-- 10.0 Raid Template - Leather - Hand
 				i(189593),	-- 10.0 Raid Template - Leather - Head
-				i(189593, {["sourceID"] = 167527 }),	-- 10.0 Raid Template - Leather - Head
-				i(189593, {["sourceID"] = 167528 }),	-- 10.0 Raid Template - Leather - Head
-				i(189593, {["sourceID"] = 167529 }),	-- 10.0 Raid Template - Leather - Head
+				i(189593, {sourceID = 167527 }),	-- 10.0 Raid Template - Leather - Head
+				i(189593, {sourceID = 167528 }),	-- 10.0 Raid Template - Leather - Head
+				i(189593, {sourceID = 167529 }),	-- 10.0 Raid Template - Leather - Head
 				i(189599),	-- 10.0 Raid Template - Leather - Legs
-				i(189599, {["sourceID"] = 167551 }),	-- 10.0 Raid Template - Leather - Legs
-				i(189599, {["sourceID"] = 167552 }),	-- 10.0 Raid Template - Leather - Legs
-				i(189599, {["sourceID"] = 167553 }),	-- 10.0 Raid Template - Leather - Legs
+				i(189599, {sourceID = 167551 }),	-- 10.0 Raid Template - Leather - Legs
+				i(189599, {sourceID = 167552 }),	-- 10.0 Raid Template - Leather - Legs
+				i(189599, {sourceID = 167553 }),	-- 10.0 Raid Template - Leather - Legs
 				i(189620),	-- 10.0 Raid Template - Leather - Shoulder
-				i(189620, {["sourceID"] = 167635 }),	-- 10.0 Raid Template - Leather - Shoulder
-				i(189620, {["sourceID"] = 167636 }),	-- 10.0 Raid Template - Leather - Shoulder
-				i(189620, {["sourceID"] = 167637 }),	-- 10.0 Raid Template - Leather - Shoulder
+				i(189620, {sourceID = 167635 }),	-- 10.0 Raid Template - Leather - Shoulder
+				i(189620, {sourceID = 167636 }),	-- 10.0 Raid Template - Leather - Shoulder
+				i(189620, {sourceID = 167637 }),	-- 10.0 Raid Template - Leather - Shoulder
 				i(189601),	-- 10.0 Raid Template - Leather - Waist
-				i(189601, {["sourceID"] = 167559 }),	-- 10.0 Raid Template - Leather - Waist
-				i(189601, {["sourceID"] = 167560 }),	-- 10.0 Raid Template - Leather - Waist
-				i(189601, {["sourceID"] = 167561 }),	-- 10.0 Raid Template - Leather - Waist
+				i(189601, {sourceID = 167559 }),	-- 10.0 Raid Template - Leather - Waist
+				i(189601, {sourceID = 167560 }),	-- 10.0 Raid Template - Leather - Waist
+				i(189601, {sourceID = 167561 }),	-- 10.0 Raid Template - Leather - Waist
 				i(189614),	-- 10.0 Raid Template - Leather - Wrist
-				i(189614, {["sourceID"] = 167611 }),	-- 10.0 Raid Template - Leather - Wrist
-				i(189614, {["sourceID"] = 167612 }),	-- 10.0 Raid Template - Leather - Wrist
-				i(189614, {["sourceID"] = 167613 }),	-- 10.0 Raid Template - Leather - Wrist
+				i(189614, {sourceID = 167611 }),	-- 10.0 Raid Template - Leather - Wrist
+				i(189614, {sourceID = 167612 }),	-- 10.0 Raid Template - Leather - Wrist
+				i(189614, {sourceID = 167613 }),	-- 10.0 Raid Template - Leather - Wrist
 				i(188971),	-- 10.0 Zone Uncommon Template <Descriptor> Belt
 				i(188972),	-- 10.0 Zone Uncommon Template <Descriptor> Bindings
 				i(188970),	-- 10.0 Zone Uncommon Template <Descriptor> Breeches
@@ -4066,35 +4066,35 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				cl(EVOKER, {
 					-- LFR
 					i(199551, {	-- Clasp of Unity Evoker
-						["bonusID"] = 6898
+						bonusID = 6898
 					}),
 					i(199551, {	-- Clasp of Unity Evoker
-						["modID"] = 4
+						modID = 4
 					}),
 					-- Normal
 					i(199551, {	-- Clasp of Unity Evoker
-						["bonusID"] = 6895
+						bonusID = 6895
 					}),
 					-- Heroic
 					i(199551, {	-- Clasp of Unity Evoker
-						["bonusID"] = 8107
+						bonusID = 8107
 					}),
 					i(199551, {	-- Clasp of Unity Evoker
-						["modID"] = 2
+						modID = 2
 					}),
 					-- Mythic
 					i(199551, {	-- Clasp of Unity Evoker
-						["bonusID"] = 6897
+						bonusID = 6897
 					}),
 					i(199551, {	-- Clasp of Unity Evoker
-						["modID"] = 6
+						modID = 6
 					}),
 					-- PvP
 					i(199551, {	-- Clasp of Unity Evoker
-						["bonusID"] = 6896
+						bonusID = 6896
 					}),
 					i(199551, {	-- Clasp of Unity Evoker
-						["bonusID"] = 6894
+						bonusID = 6894
 					}),
 				}),
 			}),
@@ -4124,37 +4124,37 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(189077),	-- 10.0 QRP Template <Descriptor> Leggings
 				i(189082),	-- 10.0 QRP Template <Descriptor> Monnion
 				i(189597),	-- 10.0 Raid Template - Mail - Chest
-				i(189597, {["sourceID"] = 167543 }),	-- 10.0 Raid Template - Mail - Chest
-				i(189597, {["sourceID"] = 167544 }),	-- 10.0 Raid Template - Mail - Chest
-				i(189597, {["sourceID"] = 167545 }),	-- 10.0 Raid Template - Mail - Chest
+				i(189597, {sourceID = 167543 }),	-- 10.0 Raid Template - Mail - Chest
+				i(189597, {sourceID = 167544 }),	-- 10.0 Raid Template - Mail - Chest
+				i(189597, {sourceID = 167545 }),	-- 10.0 Raid Template - Mail - Chest
 				i(189607),	-- 10.0 Raid Template - Mail - Feet
-				i(189607, {["sourceID"] = 167583 }),	-- 10.0 Raid Template - Mail - Feet
-				i(189607, {["sourceID"] = 167584 }),	-- 10.0 Raid Template - Mail - Feet
-				i(189607, {["sourceID"] = 167585 }),	-- 10.0 Raid Template - Mail - Feet
+				i(189607, {sourceID = 167583 }),	-- 10.0 Raid Template - Mail - Feet
+				i(189607, {sourceID = 167584 }),	-- 10.0 Raid Template - Mail - Feet
+				i(189607, {sourceID = 167585 }),	-- 10.0 Raid Template - Mail - Feet
 				i(189612),	-- 10.0 Raid Template - Mail - Hand
-				i(189612, {["sourceID"] = 167603 }),	-- 10.0 Raid Template - Mail - Hand
-				i(189612, {["sourceID"] = 167604 }),	-- 10.0 Raid Template - Mail - Hand
-				i(189612, {["sourceID"] = 167605 }),	-- 10.0 Raid Template - Mail - Hand
+				i(189612, {sourceID = 167603 }),	-- 10.0 Raid Template - Mail - Hand
+				i(189612, {sourceID = 167604 }),	-- 10.0 Raid Template - Mail - Hand
+				i(189612, {sourceID = 167605 }),	-- 10.0 Raid Template - Mail - Hand
 				i(189604),	-- 10.0 Raid Template - Mail - Head
-				i(189604, {["sourceID"] = 167571 }),	-- 10.0 Raid Template - Mail - Head
-				i(189604, {["sourceID"] = 167572 }),	-- 10.0 Raid Template - Mail - Head
-				i(189604, {["sourceID"] = 167573 }),	-- 10.0 Raid Template - Mail - Head
+				i(189604, {sourceID = 167571 }),	-- 10.0 Raid Template - Mail - Head
+				i(189604, {sourceID = 167572 }),	-- 10.0 Raid Template - Mail - Head
+				i(189604, {sourceID = 167573 }),	-- 10.0 Raid Template - Mail - Head
 				i(189611),	-- 10.0 Raid Template - Mail - Legs
-				i(189611, {["sourceID"] = 167599 }),	-- 10.0 Raid Template - Mail - Legs
-				i(189611, {["sourceID"] = 167600 }),	-- 10.0 Raid Template - Mail - Legs
-				i(189611, {["sourceID"] = 167601 }),	-- 10.0 Raid Template - Mail - Legs
+				i(189611, {sourceID = 167599 }),	-- 10.0 Raid Template - Mail - Legs
+				i(189611, {sourceID = 167600 }),	-- 10.0 Raid Template - Mail - Legs
+				i(189611, {sourceID = 167601 }),	-- 10.0 Raid Template - Mail - Legs
 				i(189605),	-- 10.0 Raid Template - Mail - Shoulder
-				i(189605, {["sourceID"] = 167575 }),	-- 10.0 Raid Template - Mail - Shoulder
-				i(189605, {["sourceID"] = 167576 }),	-- 10.0 Raid Template - Mail - Shoulder
-				i(189605, {["sourceID"] = 167577 }),	-- 10.0 Raid Template - Mail - Shoulder
+				i(189605, {sourceID = 167575 }),	-- 10.0 Raid Template - Mail - Shoulder
+				i(189605, {sourceID = 167576 }),	-- 10.0 Raid Template - Mail - Shoulder
+				i(189605, {sourceID = 167577 }),	-- 10.0 Raid Template - Mail - Shoulder
 				i(189590),	-- 10.0 Raid Template - Mail - Waist
-				i(189590, {["sourceID"] = 167515 }),	-- 10.0 Raid Template - Mail - Waist
-				i(189590, {["sourceID"] = 167516 }),	-- 10.0 Raid Template - Mail - Waist
-				i(189590, {["sourceID"] = 167517 }),	-- 10.0 Raid Template - Mail - Waist
+				i(189590, {sourceID = 167515 }),	-- 10.0 Raid Template - Mail - Waist
+				i(189590, {sourceID = 167516 }),	-- 10.0 Raid Template - Mail - Waist
+				i(189590, {sourceID = 167517 }),	-- 10.0 Raid Template - Mail - Waist
 				i(189591),	-- 10.0 Raid Template - Mail - Wrist
-				i(189591, {["sourceID"] = 167519 }),	-- 10.0 Raid Template - Mail - Wrist
-				i(189591, {["sourceID"] = 167520 }),	-- 10.0 Raid Template - Mail - Wrist
-				i(189591, {["sourceID"] = 167521 }),	-- 10.0 Raid Template - Mail - Wrist
+				i(189591, {sourceID = 167519 }),	-- 10.0 Raid Template - Mail - Wrist
+				i(189591, {sourceID = 167520 }),	-- 10.0 Raid Template - Mail - Wrist
+				i(189591, {sourceID = 167521 }),	-- 10.0 Raid Template - Mail - Wrist
 				i(188980),	-- 10.0 Zone Uncommon Template <Descriptor> Bracers
 				i(188973),	-- 10.0 Zone Uncommon Template <Descriptor> Chainmail
 				i(188979),	-- 10.0 Zone Uncommon Template <Descriptor> Cinch
@@ -4201,70 +4201,70 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(189063),	-- 10.0 QRP Template <Descriptor> Sabatons
 				i(189080),	-- 10.0 QRP Template <Descriptor> Spaulders
 				i(189088),	-- 10.0 QRP Template <Descriptor> Vambraces
-				i(197916, {["sourceID"] = 181351 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
-				i(197916, {["sourceID"] = 181373 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
-				i(197916, {["sourceID"] = 181374 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
-				i(197916, {["sourceID"] = 181375 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
-				i(197912, {["sourceID"] = 181347 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
-				i(197912, {["sourceID"] = 181361 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
-				i(197912, {["sourceID"] = 181362 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
-				i(197912, {["sourceID"] = 181363 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
-				i(197915, {["sourceID"] = 181350 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
-				i(197915, {["sourceID"] = 181370 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
-				i(197915, {["sourceID"] = 181371 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
-				i(197915, {["sourceID"] = 181372 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
-				i(197914, {["sourceID"] = 181349 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
-				i(197914, {["sourceID"] = 181367 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
-				i(197914, {["sourceID"] = 181368 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
-				i(197914, {["sourceID"] = 181369 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
-				i(197913, {["sourceID"] = 181348 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
-				i(197913, {["sourceID"] = 181364 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
-				i(197913, {["sourceID"] = 181365 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
-				i(197913, {["sourceID"] = 181366 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
-				i(197911, {["sourceID"] = 181346 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
-				i(197911, {["sourceID"] = 181358 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
-				i(197911, {["sourceID"] = 181359 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
-				i(197911, {["sourceID"] = 181360 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
-				i(197910, {["sourceID"] = 181345 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
-				i(197910, {["sourceID"] = 181355 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
-				i(197910, {["sourceID"] = 181356 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
-				i(197910, {["sourceID"] = 181357 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
-				i(197917, {["sourceID"] = 181352 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
-				i(197917, {["sourceID"] = 181376 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
-				i(197917, {["sourceID"] = 181377 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
-				i(197917, {["sourceID"] = 181378 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
+				i(197916, {sourceID = 181351 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
+				i(197916, {sourceID = 181373 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
+				i(197916, {sourceID = 181374 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
+				i(197916, {sourceID = 181375 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Belt
+				i(197912, {sourceID = 181347 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
+				i(197912, {sourceID = 181361 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
+				i(197912, {sourceID = 181362 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
+				i(197912, {sourceID = 181363 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Chest
+				i(197915, {sourceID = 181350 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
+				i(197915, {sourceID = 181370 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
+				i(197915, {sourceID = 181371 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
+				i(197915, {sourceID = 181372 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Feet
+				i(197914, {sourceID = 181349 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
+				i(197914, {sourceID = 181367 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
+				i(197914, {sourceID = 181368 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
+				i(197914, {sourceID = 181369 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Hands
+				i(197913, {sourceID = 181348 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
+				i(197913, {sourceID = 181364 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
+				i(197913, {sourceID = 181365 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
+				i(197913, {sourceID = 181366 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Helm
+				i(197911, {sourceID = 181346 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
+				i(197911, {sourceID = 181358 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
+				i(197911, {sourceID = 181359 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
+				i(197911, {sourceID = 181360 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Legs
+				i(197910, {sourceID = 181345 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
+				i(197910, {sourceID = 181355 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
+				i(197910, {sourceID = 181356 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
+				i(197910, {sourceID = 181357 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Shoulder
+				i(197917, {sourceID = 181352 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
+				i(197917, {sourceID = 181376 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
+				i(197917, {sourceID = 181377 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
+				i(197917, {sourceID = 181378 }),	-- 10.0 Raid - Vault of the Incarnates - DK Set - Armor - Plate Wrist
 				i(189596),	-- 10.0 Raid Template - Plate - Chest
-				i(189596, {["sourceID"] = 167539 }),	-- 10.0 Raid Template - Plate - Chest
-				i(189596, {["sourceID"] = 167540 }),	-- 10.0 Raid Template - Plate - Chest
-				i(189596, {["sourceID"] = 167541 }),	-- 10.0 Raid Template - Plate - Chest
+				i(189596, {sourceID = 167539 }),	-- 10.0 Raid Template - Plate - Chest
+				i(189596, {sourceID = 167540 }),	-- 10.0 Raid Template - Plate - Chest
+				i(189596, {sourceID = 167541 }),	-- 10.0 Raid Template - Plate - Chest
 				i(189619),	-- 10.0 Raid Template - Plate - Feet
-				i(189619, {["sourceID"] = 167631 }),	-- 10.0 Raid Template - Plate - Feet
-				i(189619, {["sourceID"] = 167632 }),	-- 10.0 Raid Template - Plate - Feet
-				i(189619, {["sourceID"] = 167633 }),	-- 10.0 Raid Template - Plate - Feet
+				i(189619, {sourceID = 167631 }),	-- 10.0 Raid Template - Plate - Feet
+				i(189619, {sourceID = 167632 }),	-- 10.0 Raid Template - Plate - Feet
+				i(189619, {sourceID = 167633 }),	-- 10.0 Raid Template - Plate - Feet
 				i(189594),	-- 10.0 Raid Template - Plate - Hand
-				i(189594, {["sourceID"] = 167531 }),	-- 10.0 Raid Template - Plate - Hand
-				i(189594, {["sourceID"] = 167532 }),	-- 10.0 Raid Template - Plate - Hand
-				i(189594, {["sourceID"] = 167533 }),	-- 10.0 Raid Template - Plate - Hand
+				i(189594, {sourceID = 167531 }),	-- 10.0 Raid Template - Plate - Hand
+				i(189594, {sourceID = 167532 }),	-- 10.0 Raid Template - Plate - Hand
+				i(189594, {sourceID = 167533 }),	-- 10.0 Raid Template - Plate - Hand
 				i(189603),	-- 10.0 Raid Template - Plate - Head
-				i(189603, {["sourceID"] = 167567 }),	-- 10.0 Raid Template - Plate - Head
-				i(189603, {["sourceID"] = 167568 }),	-- 10.0 Raid Template - Plate - Head
-				i(189603, {["sourceID"] = 167569 }),	-- 10.0 Raid Template - Plate - Head
+				i(189603, {sourceID = 167567 }),	-- 10.0 Raid Template - Plate - Head
+				i(189603, {sourceID = 167568 }),	-- 10.0 Raid Template - Plate - Head
+				i(189603, {sourceID = 167569 }),	-- 10.0 Raid Template - Plate - Head
 				i(189598),	-- 10.0 Raid Template - Plate - Legs
-				i(189598, {["sourceID"] = 167547 }),	-- 10.0 Raid Template - Plate - Legs
-				i(189598, {["sourceID"] = 167548 }),	-- 10.0 Raid Template - Plate - Legs
-				i(189598, {["sourceID"] = 167549 }),	-- 10.0 Raid Template - Plate - Legs
+				i(189598, {sourceID = 167547 }),	-- 10.0 Raid Template - Plate - Legs
+				i(189598, {sourceID = 167548 }),	-- 10.0 Raid Template - Plate - Legs
+				i(189598, {sourceID = 167549 }),	-- 10.0 Raid Template - Plate - Legs
 				i(189600),	-- 10.0 Raid Template - Plate - Shoulder
-				i(189600, {["sourceID"] = 167555 }),	-- 10.0 Raid Template - Plate - Shoulder
-				i(189600, {["sourceID"] = 167556 }),	-- 10.0 Raid Template - Plate - Shoulder
-				i(189600, {["sourceID"] = 167557 }),	-- 10.0 Raid Template - Plate - Shoulder
+				i(189600, {sourceID = 167555 }),	-- 10.0 Raid Template - Plate - Shoulder
+				i(189600, {sourceID = 167556 }),	-- 10.0 Raid Template - Plate - Shoulder
+				i(189600, {sourceID = 167557 }),	-- 10.0 Raid Template - Plate - Shoulder
 				i(189618),	-- 10.0 Raid Template - Plate - Waist
-				i(189618, {["sourceID"] = 167627 }),	-- 10.0 Raid Template - Plate - Waist
-				i(189618, {["sourceID"] = 167628 }),	-- 10.0 Raid Template - Plate - Waist
-				i(189618, {["sourceID"] = 167629 }),	-- 10.0 Raid Template - Plate - Waist
+				i(189618, {sourceID = 167627 }),	-- 10.0 Raid Template - Plate - Waist
+				i(189618, {sourceID = 167628 }),	-- 10.0 Raid Template - Plate - Waist
+				i(189618, {sourceID = 167629 }),	-- 10.0 Raid Template - Plate - Waist
 				i(189613),	-- 10.0 Raid Template - Plate - Wrist
-				i(189613, {["sourceID"] = 167607 }),	-- 10.0 Raid Template - Plate - Wrist
-				i(189613, {["sourceID"] = 167608 }),	-- 10.0 Raid Template - Plate - Wrist
-				i(189613, {["sourceID"] = 167609 }),	-- 10.0 Raid Template - Plate - Wrist
+				i(189613, {sourceID = 167607 }),	-- 10.0 Raid Template - Plate - Wrist
+				i(189613, {sourceID = 167608 }),	-- 10.0 Raid Template - Plate - Wrist
+				i(189613, {sourceID = 167609 }),	-- 10.0 Raid Template - Plate - Wrist
 				i(188988),	-- 10.0 Zone Uncommon Template <Descriptor> Armplates
 				i(188982),	-- 10.0 Zone Uncommon Template <Descriptor> Breastplate
 				i(188987),	-- 10.0 Zone Uncommon Template <Descriptor> Cincture
@@ -4278,9 +4278,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(195467),	-- zzOld(DNT) Test Belt of Molten Metallic Awesomeness
 			}),
 			filter(TABARDS, {
-				i(191271, {["sourceID"] = 169644 }),	-- Black Smith's Tabard
+				i(191271, {sourceID = 169644 }),	-- Black Smith's Tabard
 				i(194676),	-- Emboldened Dracthyr's Tabard
-				i(194676, {["sourceID"] = 181042 }),	-- Emboldened Dracthyr's Tabard
+				i(194676, {sourceID = 181042 }),	-- Emboldened Dracthyr's Tabard
 			}),
 			filter(TRINKET_F, {
 				i(189666),	-- 10.0 Dungeon Template - Generic - Trinket
@@ -4309,14 +4309,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(198435),	-- zzOldDarkmoon Deckbox: Watcher
 			}),
 			n(WAIST, {
-				i(198681, {["sourceID"] = 181765 }),	-- Luke Test Belt [DNT]
+				i(198681, {sourceID = 181765 }),	-- Luke Test Belt [DNT]
 			}),
 		})),
 
 		-- 10.0.2
-		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
+		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ timeline = { CREATED_10_0_2 } }, {
 			header(HEADERS.LFGDungeon, 2390, {	-- Vault of the Incarnates
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 451 }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 451 }, {
 					filter(CLOTH, {
 						i(202147),	-- Primal Seeker's Leggings [BoP]
 						i(202143),	-- Woven Stone Bracelets [BoP]
@@ -4358,7 +4358,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(202149),	-- Primalist Warden's Bracers [BoP]
 					}),
 				}),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 1 }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 1 }, {
 					filter(CLOTH, {
 						i(202147),	-- Primal Seeker's Leggings [BoP]
 						i(202143),	-- Woven Stone Bracelets [BoP]
@@ -4379,7 +4379,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(202149),	-- Primalist Warden's Bracers [BoP]
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 450 }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 450 }, {
 
 				})),
 				-- Extra
@@ -4389,7 +4389,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 10.0.7
-		expansion(EXPANSION.DF, patch(0,7), bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
+		expansion(EXPANSION.DF, patch(0,7), bubbleDown({ timeline = { CREATED_10_0_7 } }, {
 			filter(TRINKET_F, {
 				i(204192),	-- Ascendancy
 				i(203680),	-- Totem Toss
@@ -4397,16 +4397,16 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, patch(1,0), bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), bubbleDown({ timeline = { CREATED_10_1_0 } }, {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible
 				filter(CLOAKS, {
-					i(204087, {["sourceID"] = 185425 }),	-- 10.1 Cloak Test Item
-					i(202648, {["sourceID"] = 184582 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - CLOAK 2
-					i(202666, {["sourceID"] = 184595 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - CLOAK 3
+					i(204087, {sourceID = 185425 }),	-- 10.1 Cloak Test Item
+					i(202648, {sourceID = 184582 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - CLOAK 2
+					i(202666, {sourceID = 184595 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - CLOAK 3
 				}),
 				filter(CLOTH, {
-					i(202651, {["sourceID"] = 184583 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Cloth - FEET 2
-					i(202653, {["sourceID"] = 184585 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Cloth - WRIST 2
+					i(202651, {sourceID = 184583 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Cloth - FEET 2
+					i(202653, {sourceID = 184585 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Cloth - WRIST 2
 					itemsource(185571),	-- Bands of Purified Purpose
 					itemsource(186478),	-- Bands of Purified Purpose
 					itemsource(186480),	-- Bands of Purified Purpose
@@ -4419,9 +4419,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					i(202665),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - FINGER 3
 				}),
 				filter(LEATHER, {
-					i(202654, {["sourceID"] = 184586 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - FEET 2
-					i(202581, {["sourceID"] = 184554 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 1
-					i(202656, {["sourceID"] = 184588 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 2
+					i(202654, {sourceID = 184586 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - FEET 2
+					i(202581, {sourceID = 184554 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 1
+					i(202656, {sourceID = 184588 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Leather - WRIST 2
 					itemsource(185574),	-- Laboratory Assistant's Abductors
 					itemsource(186632),	-- Laboratory Assistant's Abductors
 					itemsource(186634),	-- Laboratory Assistant's Abductors
@@ -4430,8 +4430,8 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					itemsource(186649),	-- Mantle of Sunless Kindling
 				}),
 				filter(MAIL, {
-					i(202657, {["sourceID"] = 184589 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - FEET 2
-					i(202658, {["sourceID"] = 184590 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - WAIST 2
+					i(202657, {sourceID = 184589 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - FEET 2
+					i(202658, {sourceID = 184590 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Mail - WAIST 2
 					itemsource(186544),	-- Faulds of Failed Experiments
 					itemsource(186546),	-- Faulds of Failed Experiments
 					itemsource(185579),	-- Faulds of Failed Experiments
@@ -4444,9 +4444,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					i(202664),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - NECK 3
 				}),
 				filter(PLATE, {
-					i(202660, {["sourceID"] = 184592 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - FEET 2
-					i(202661, {["sourceID"] = 184593 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WAIST 2
-					i(202662, {["sourceID"] = 184594 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WRIST 2
+					i(202660, {sourceID = 184592 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - FEET 2
+					i(202661, {sourceID = 184593 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WAIST 2
+					i(202662, {sourceID = 184594 }),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Armor - Plate - WRIST 2
 					itemsource(185585),	-- Devoted Warden's Gaze
 					itemsource(186695),	-- Devoted Warden's Gaze
 					itemsource(186697),	-- Devoted Warden's Gaze
@@ -4458,10 +4458,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					i(202609),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - Trinket - INT
 					i(202611),	-- 10.1 Raid - Black Dragon Labs - Boss <#> - <Boss Name> - Accessory - Trinket - Physical DPS
 					i(204064),	-- PH 10.1 Raid - Black Dragon Labs - Boss 9 - Sarkareth - Accessory - Trinket - Omni
-					i(202608, {["sourceID"] = 184581 }),	-- Power-Draining Spire [This was a Trinket]
-					i(202608, {["sourceID"] = 185531 }),	-- Power-Draining Spire [This was a Trinket]
-					i(202608, {["sourceID"] = 185532 }),	-- Power-Draining Spire [This was a Trinket]
-					i(202608, {["sourceID"] = 185533 }),	-- Power-Draining Spire [This was a Trinket]
+					i(202608, {sourceID = 184581 }),	-- Power-Draining Spire [This was a Trinket]
+					i(202608, {sourceID = 185531 }),	-- Power-Draining Spire [This was a Trinket]
+					i(202608, {sourceID = 185532 }),	-- Power-Draining Spire [This was a Trinket]
+					i(202608, {sourceID = 185533 }),	-- Power-Draining Spire [This was a Trinket]
 				}),
 			}),
 			n(WORLD_BOSSES, {
@@ -4484,7 +4484,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, patch(1,5), bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, patch(1,5), bubbleDown({ timeline = { CREATED_10_1_5 } }, {
 			filter(FINGER_F, {
 				i(208988),	-- Band of the Petrified Pumpkin [Hallow's End]
 				i(208991),	-- Seal of Ghoulish Glee [Hallow's End]
@@ -4492,15 +4492,15 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(208989),	-- Wicked Witch's Signet [Hallow's End]
 			}),
 			filter(PLATE, {
-				i(208986, {["sourceID"] = 190168}),	-- The Horseman's Horrific Hood [Hallow's End]
-				i(209023, {["sourceID"] = 190172}),	-- The Horseman's Horrific Hood [Hallow's End]
+				i(208986, {sourceID = 190168}),	-- The Horseman's Horrific Hood [Hallow's End]
+				i(209023, {sourceID = 190172}),	-- The Horseman's Horrific Hood [Hallow's End]
 			}),
 		})),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), bubbleDown({ timeline = { CREATED_10_2_0 } }, {
 			header(HEADERS.LFGDungeon, 2502, {	-- Amirdrassil, the Dream's Hope
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					filter(CLOTH, {
 						i(207124),	-- Blooming Redeemer's Sash
 						i(207118),	-- Elder's Volcanic Wrap
@@ -4564,7 +4564,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(207161),	-- Mantle of Blazing Sacrifice
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					filter(CLOTH, {
 						i(207124),	-- Blooming Redeemer's Sash
 						i(207118),	-- Elder's Volcanic Wrap
@@ -4628,7 +4628,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(207161),	-- Mantle of Blazing Sacrifice
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					filter(CLOTH, {
 						i(207124),	-- Blooming Redeemer's Sash
 						i(207118),	-- Elder's Volcanic Wrap
@@ -4692,7 +4692,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(207161),	-- Mantle of Blazing Sacrifice
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					filter(CLOTH, {
 						i(207124),	-- Blooming Redeemer's Sash
 						i(207118),	-- Elder's Volcanic Wrap
@@ -4757,11 +4757,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					}),
 				})),
 				filter(CLOTH, {
-					i(210544, {["bonusID"] = 6897, ["modID"] = 0 }),	-- Whispering Fanged Cord
-					i(210545, {["bonusID"] = 6897, ["modID"] = 0 }),	-- Lost Scholar's Temporal Shoulderdials
+					i(210544, {bonusID = 6897, modID = 0 }),	-- Whispering Fanged Cord
+					i(210545, {bonusID = 6897, modID = 0 }),	-- Lost Scholar's Temporal Shoulderdials
 				}),
 				filter(LEATHER, {
-					i(210540, {["bonusID"] = 6897, ["modID"] = 0 }),	-- Visage of the Devouring Flame
+					i(210540, {bonusID = 6897, modID = 0 }),	-- Visage of the Devouring Flame
 					itemsource(192432),	-- Robes of the Ashen Grove
 					itemsource(192433),	-- Robes of the Ashen Grove
 					itemsource(192434),	-- Robes of the Ashen Grove
@@ -4772,44 +4772,44 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					itemsource(192439),	-- Robes of the Ashen Grove
 				}),
 				filter(PLATE, {
-					i(210541, {["bonusID"] = 6897, ["modID"] = 0 }),	-- Mask of the Unbidden Grim
+					i(210541, {bonusID = 6897, modID = 0 }),	-- Mask of the Unbidden Grim
 				}),
 			}),
 			n(SEASON_VERDANT, {
 				n(PVP_GLADIATOR, {
 					filter(MAIL, {
-						i(207142, { ["bonusID"] = 6898 }),	-- Ancient Haubark
-						i(207142, { ["bonusID"] = 7479 }),	-- Ancient Haubark
-						i(207137, { ["bonusID"] = 6898 }),	-- Flameseer's Winged Grasps
-						i(207137, { ["bonusID"] = 7479 }),	-- Flameseer's Winged Grasps
-						i(208428, { ["bonusID"] = 6898 }),	-- Mantle of Slumbering Sands
-						i(208428, { ["bonusID"] = 7479 }),	-- Mantle of Slumbering Sands
-						i(207143, { ["bonusID"] = 6898 }),	-- Twisted Flamecuffs
-						i(207143, { ["bonusID"] = 7479 }),	-- Twisted Flamecuffs
+						i(207142, { bonusID = 6898 }),	-- Ancient Haubark
+						i(207142, { bonusID = 7479 }),	-- Ancient Haubark
+						i(207137, { bonusID = 6898 }),	-- Flameseer's Winged Grasps
+						i(207137, { bonusID = 7479 }),	-- Flameseer's Winged Grasps
+						i(208428, { bonusID = 6898 }),	-- Mantle of Slumbering Sands
+						i(208428, { bonusID = 7479 }),	-- Mantle of Slumbering Sands
+						i(207143, { bonusID = 6898 }),	-- Twisted Flamecuffs
+						i(207143, { bonusID = 7479 }),	-- Twisted Flamecuffs
 					}),
 					filter(PLATE, {
-						i(208427, { ["bonusID"] = 6898 }),	-- Insurgent Flame Warboots
-						i(208427, { ["bonusID"] = 7479 }),	-- Insurgent Flame Warboots
-						i(208426, { ["bonusID"] = 6898 }),	-- Mask of the Unbidden Grim
-						i(208426, { ["bonusID"] = 7479 }),	-- Mask of the Unbidden Grim
+						i(208427, { bonusID = 6898 }),	-- Insurgent Flame Warboots
+						i(208427, { bonusID = 7479 }),	-- Insurgent Flame Warboots
+						i(208426, { bonusID = 6898 }),	-- Mask of the Unbidden Grim
+						i(208426, { bonusID = 7479 }),	-- Mask of the Unbidden Grim
 					}),
 				}),
 				n(PVP_ELITE, {
 					filter(MAIL, {
-						i(207142, { ["bonusID"] = 7532 }),	-- Ancient Haubark
-						i(207142, { ["bonusID"] = 8107 }),	-- Ancient Haubark
-						i(207137, { ["bonusID"] = 7532 }),	-- Flameseer's Winged Grasps
-						i(207137, { ["bonusID"] = 8107 }),	-- Flameseer's Winged Grasps
-						i(208428, { ["bonusID"] = 7532 }),	-- Mantle of Slumbering Sands
-						i(208428, { ["bonusID"] = 8107 }),	-- Mantle of Slumbering Sands
-						i(207143, { ["bonusID"] = 7532 }),	-- Twisted Flamecuffs
-						i(207143, { ["bonusID"] = 8107 }),	-- Twisted Flamecuffs
+						i(207142, { bonusID = 7532 }),	-- Ancient Haubark
+						i(207142, { bonusID = 8107 }),	-- Ancient Haubark
+						i(207137, { bonusID = 7532 }),	-- Flameseer's Winged Grasps
+						i(207137, { bonusID = 8107 }),	-- Flameseer's Winged Grasps
+						i(208428, { bonusID = 7532 }),	-- Mantle of Slumbering Sands
+						i(208428, { bonusID = 8107 }),	-- Mantle of Slumbering Sands
+						i(207143, { bonusID = 7532 }),	-- Twisted Flamecuffs
+						i(207143, { bonusID = 8107 }),	-- Twisted Flamecuffs
 					}),
 					filter(PLATE, {
-						i(208427, { ["bonusID"] = 7532 }),	-- Insurgent Flame Warboots
-						i(208427, { ["bonusID"] = 8107 }),	-- Insurgent Flame Warboots
-						i(208426, { ["bonusID"] = 7532 }),	-- Mask of the Unbidden Grim
-						i(208426, { ["bonusID"] = 8107 }),	-- Mask of the Unbidden Grim
+						i(208427, { bonusID = 7532 }),	-- Insurgent Flame Warboots
+						i(208427, { bonusID = 8107 }),	-- Insurgent Flame Warboots
+						i(208426, { bonusID = 7532 }),	-- Mask of the Unbidden Grim
+						i(208426, { bonusID = 8107 }),	-- Mask of the Unbidden Grim
 					}),
 				}),
 			}),
@@ -4824,7 +4824,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), bubbleDown({ timeline = { CREATED_10_2_5 } }, {
 			filter(CLOAKS, {
 				i(210525),	-- Timerunner's Cloak
 			}),
@@ -4859,15 +4859,15 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, patch(2,7), bubbleDown({ ["timeline"] = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), bubbleDown({ timeline = { CREATED_10_2_7 } }, {
 			filter(CLOTH, {
 				i(225064),	-- Breezebinder's Shirt
 				i(220970),	-- Mindbender Shirt
 				i(220971),	-- Mistwalker's Shirt
 				i(220969),	-- Passionsilk Vests
-				i(215074, {["sourceID"] = 196710 }),	-- REUSE
-				i(215085, {["sourceID"] = 196721 }),	-- REUSE
-				i(215092, {["sourceID"] = 196728 }),	-- REUSE
+				i(215074, {sourceID = 196710 }),	-- REUSE
+				i(215085, {sourceID = 196721 }),	-- REUSE
+				i(215092, {sourceID = 196728 }),	-- REUSE
 				i(220968),	-- Scrollkeeper Shirt
 				i(220972),	-- Shaded Wood Vest
 				i(220967),	-- Spirit-Waker Shirt
@@ -4882,7 +4882,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
 			-- TODO: Sort this /Darkal
 			i(211620),	-- 11.0 Dungeon Template - Plate - Feet
 			i(211621),	-- 11.0 Dungeon Template - Cloth - Robe
@@ -5088,8 +5088,8 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			i(224095),	-- Anglin' Art's Treads
 			i(224096),	-- Anglin' Art's Sandals
 			i(224097),	-- Lucky Fishing Hat
-			i(224170, {["sourceID"] = 220286}),	-- Wildercloth Fishing Cap
-			i(224171, {["sourceID"] = 220287}),	-- Master's Wildercloth Fishing Cap
+			i(224170, {sourceID = 220286}),	-- Wildercloth Fishing Cap
+			i(224171, {sourceID = 220287}),	-- Master's Wildercloth Fishing Cap
 			i(225509),	-- [PH] Armor Vestment
 			i(225510),	-- [PH] Armor Sandals
 			i(225511),	-- [PH] Armor Handwraps
@@ -5118,7 +5118,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			i(223458),	-- [PH] 11.0 - Belt
 
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					filter(CLOTH, {
 						i(212430),	-- Shattered Eye Cincture
 						i(212434),	-- Voidspoken Sarong
@@ -5164,9 +5164,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 451, ["modID"] = 0, ["sourceID"] = 221717 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 451, ["modID"] = 0, ["sourceID"] = 221713 }),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["modID"] = 4, ["sourceID"] = 221287 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {bonusID = 451, modID = 0, sourceID = 221717 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {bonusID = 451, modID = 0, sourceID = 221713 }),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {bonusID = 0, modID = 4, sourceID = 221287 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -5182,7 +5182,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225727),	-- Captured Earthen's Ironhorns
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					filter(CLOTH, {
 						i(212430),	-- Shattered Eye Cincture
 						i(212434),	-- Voidspoken Sarong
@@ -5228,9 +5228,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["modID"] = 0, ["sourceID"] = 221716 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["modID"] = 0, ["sourceID"] = 221712 }),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["modID"] = 0, ["sourceID"] = 221286 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {bonusID = 0, modID = 0, sourceID = 221716 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {bonusID = 0, modID = 0, sourceID = 221712 }),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {bonusID = 0, modID = 0, sourceID = 221286 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -5246,7 +5246,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225727),	-- Captured Earthen's Ironhorns
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					filter(CLOTH, {
 						i(212430),	-- Shattered Eye Cincture
 						i(212434),	-- Voidspoken Sarong
@@ -5292,7 +5292,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225726, {["bonusID"] = 0, ["modID"] = 5, ["sourceID"] = 221288 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225726, {bonusID = 0, modID = 5, sourceID = 221288 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -5308,7 +5308,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225727),	-- Captured Earthen's Ironhorns
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					filter(CLOTH, {
 						i(212430),	-- Shattered Eye Cincture
 						i(212434),	-- Voidspoken Sarong
@@ -5354,11 +5354,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["modID"] = 163, ["sourceID"] = 221718 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225737, {["bonusID"] = 450, ["modID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["modID"] = 163, ["sourceID"] = 221714 }),	-- 11.0 Raid Template - Plate - Head
-						i(225736, {["bonusID"] = 450, ["modID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["modID"] = 6, ["sourceID"] = 221289 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {bonusID = 0, modID = 163, sourceID = 221718 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225737, {bonusID = 450, modID = 0 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {bonusID = 0, modID = 163, sourceID = 221714 }),	-- 11.0 Raid Template - Plate - Head
+						i(225736, {bonusID = 450, modID = 0 }),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {bonusID = 0, modID = 6, sourceID = 221289 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -5388,7 +5388,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				}),
 			}),
 			filter(CLOTH, {
-				i(225730, {["bonusID"] = 6894 }),	-- Stone Gaze Ceinture
+				i(225730, {bonusID = 6894 }),	-- Stone Gaze Ceinture
 			}),
 			filter(NECK_F, {
 				i(226695),	-- Cunning Advisor's Favor
@@ -5415,7 +5415,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ timeline = { CREATED_11_0_2 } }, {
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
 				filter(MAIL, {
 					itemsource(225006),	-- Liquified Defector's Leggings
@@ -5425,7 +5425,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ timeline = { CREATED_11_0_5 } }, {
 			filter(CLOTH, {
 				i(227585),	-- Guardian Serpent Handwraps
 				i(227584),	-- Guardian Serpent Legwraps
@@ -5487,7 +5487,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ timeline = { CREATED_11_0_7 } }, {
 			filter(BACK_F, {
 				i(231751),	-- Earthen Backpack
 			}),
@@ -5497,13 +5497,13 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
 			filter(CLOTH, {
-				i(235720, {["sourceID"] = 267067 }),	-- Guardian Serpent Cowl
-				i(235736, {["sourceID"] = 267083 }),	-- Guardian Serpent Crown
-				i(235737, {["sourceID"] = 267084 }),	-- Guardian Serpent Leggings
-				i(235738, {["sourceID"] = 267085 }),	-- Guardian Serpent Pants
-				i(235753, {["sourceID"] = 267100 }),	-- Raiment of the Chromatic Hydra
+				i(235720, {sourceID = 267067 }),	-- Guardian Serpent Cowl
+				i(235736, {sourceID = 267083 }),	-- Guardian Serpent Crown
+				i(235737, {sourceID = 267084 }),	-- Guardian Serpent Leggings
+				i(235738, {sourceID = 267085 }),	-- Guardian Serpent Pants
+				i(235753, {sourceID = 267100 }),	-- Raiment of the Chromatic Hydra
 			}),
 			n(HEAD, {
 				i(235219),	-- Fireworks Hat
@@ -5518,7 +5518,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(232547),	-- Omega Strike Force
 			}),
 			header(HEADERS.LFGDungeon, 2779, {	-- Liberation of Undermine
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					filter(CLOTH, {
 						i(228871),	-- Cleanup Crew's Wastemask
 						i(232655),	-- Vatwork Janitor's Wasteband
@@ -5579,7 +5579,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(228887),	-- Cutthroat Competition Stompers
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					filter(CLOTH, {
 						i(228871),	-- Cleanup Crew's Wastemask
 						i(232655),	-- Vatwork Janitor's Wasteband
@@ -5640,7 +5640,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(228887),	-- Cutthroat Competition Stompers
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					filter(CLOTH, {
 						i(228871),	-- Cleanup Crew's Wastemask
 						i(232655),	-- Vatwork Janitor's Wasteband
@@ -5701,7 +5701,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(228887),	-- Cutthroat Competition Stompers
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					filter(CLOTH, {
 						i(228871),	-- Cleanup Crew's Wastemask
 						i(232655),	-- Vatwork Janitor's Wasteband
@@ -5766,76 +5766,76 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 11.1.5
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
-			i(232352, {["sourceID"] = 230225}),	-- Ashjra'kamas, Shroud of Resolve
-			i(232352, {["sourceID"] = 230226}),	-- Ashjra'kamas, Shroud of Resolve
-			i(232352, {["sourceID"] = 230227}),	-- Ashjra'kamas, Shroud of Resolve
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_5 } }, {
+			i(232352, {sourceID = 230225}),	-- Ashjra'kamas, Shroud of Resolve
+			i(232352, {sourceID = 230226}),	-- Ashjra'kamas, Shroud of Resolve
+			i(232352, {sourceID = 230227}),	-- Ashjra'kamas, Shroud of Resolve
 			i(238934),	-- Boots of the Darkwalker
 		})),
 
 		-- 11.1.7
-		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ timeline = { CREATED_11_1_7 } }, {
 			filter(CLOTH, {
-				i(239023, {["modID"] = 2}),	-- Amice of the Returned
-				i(239023, {["modID"] = 23}),	-- Amice of the Returned
-				i(239038, {["modID"] = 2}),	-- Mantle of Void-Touched Waters
-				i(239038, {["modID"] = 23}),	-- Mantle of Void-Touched Waters
-				i(239056, {["modID"] = 2}),	-- Ruffled Poet Blouse
-				i(239056, {["modID"] = 23}),	-- Ruffled Poet Blouse
-				i(239071, {["modID"] = 2}),	-- Secret Spinner's Miter
-				i(239071, {["modID"] = 23}),	-- Secret Spinner's Miter
-				i(239053, {["modID"] = 2}),	-- Smartly Plumed Cap
-				i(239053, {["modID"] = 23}),	-- Smartly Plumed Cap
-				i(239024, {["modID"] = 2}),	-- Soulfuel Headdress
-				i(239024, {["modID"] = 23}),	-- Soulfuel Headdress
-				i(239039, {["modID"] = 2}),	-- Stormlurker's Cowl
-				i(239039, {["modID"] = 23}),	-- Stormlurker's Cowl
+				i(239023, {modID = 2}),	-- Amice of the Returned
+				i(239023, {modID = 23}),	-- Amice of the Returned
+				i(239038, {modID = 2}),	-- Mantle of Void-Touched Waters
+				i(239038, {modID = 23}),	-- Mantle of Void-Touched Waters
+				i(239056, {modID = 2}),	-- Ruffled Poet Blouse
+				i(239056, {modID = 23}),	-- Ruffled Poet Blouse
+				i(239071, {modID = 2}),	-- Secret Spinner's Miter
+				i(239071, {modID = 23}),	-- Secret Spinner's Miter
+				i(239053, {modID = 2}),	-- Smartly Plumed Cap
+				i(239053, {modID = 23}),	-- Smartly Plumed Cap
+				i(239024, {modID = 2}),	-- Soulfuel Headdress
+				i(239024, {modID = 23}),	-- Soulfuel Headdress
+				i(239039, {modID = 2}),	-- Stormlurker's Cowl
+				i(239039, {modID = 23}),	-- Stormlurker's Cowl
 			}),
 			filter(LEATHER, {
-				i(239040, {["modID"] = 2}),	-- Cowl of Fluid Machinations
-				i(239040, {["modID"] = 23}),	-- Cowl of Fluid Machinations
-				i(239057, {["modID"] = 2}),	-- Gold-Tasseled Epaulets
-				i(239057, {["modID"] = 23}),	-- Gold-Tasseled Epaulets
-				i(239026, {["modID"] = 2}),	-- Gorak Tul's Mantle
-				i(239026, {["modID"] = 23}),	-- Gorak Tul's Mantle
-				i(239055, {["modID"] = 2}),	-- Irontide Captain's Hat
-				i(239055, {["modID"] = 23}),	-- Irontide Captain's Hat
-				i(239072, {["modID"] = 2}),	-- Loa Betrayer's Vestments
-				i(239072, {["modID"] = 23}),	-- Loa Betrayer's Vestments
-				i(239070, {["modID"] = 2}),	-- Mantle of Fastidious Machinations
-				i(239070, {["modID"] = 23}),	-- Mantle of Fastidious Machinations
-				i(239025, {["modID"] = 2}),	-- Raiment of the Blighted Tribe
-				i(239025, {["modID"] = 23}),	-- Raiment of the Blighted Tribe
-				i(239068, {["modID"] = 2}),	-- Spymaster's Wrap
-				i(239068, {["modID"] = 23}),	-- Spymaster's Wrap
-				i(239041, {["modID"] = 2}),	-- Tentacle-Laced Spaulders
-				i(239041, {["modID"] = 23}),	-- Tentacle-Laced Spaulders
+				i(239040, {modID = 2}),	-- Cowl of Fluid Machinations
+				i(239040, {modID = 23}),	-- Cowl of Fluid Machinations
+				i(239057, {modID = 2}),	-- Gold-Tasseled Epaulets
+				i(239057, {modID = 23}),	-- Gold-Tasseled Epaulets
+				i(239026, {modID = 2}),	-- Gorak Tul's Mantle
+				i(239026, {modID = 23}),	-- Gorak Tul's Mantle
+				i(239055, {modID = 2}),	-- Irontide Captain's Hat
+				i(239055, {modID = 23}),	-- Irontide Captain's Hat
+				i(239072, {modID = 2}),	-- Loa Betrayer's Vestments
+				i(239072, {modID = 23}),	-- Loa Betrayer's Vestments
+				i(239070, {modID = 2}),	-- Mantle of Fastidious Machinations
+				i(239070, {modID = 23}),	-- Mantle of Fastidious Machinations
+				i(239025, {modID = 2}),	-- Raiment of the Blighted Tribe
+				i(239025, {modID = 23}),	-- Raiment of the Blighted Tribe
+				i(239068, {modID = 2}),	-- Spymaster's Wrap
+				i(239068, {modID = 23}),	-- Spymaster's Wrap
+				i(239041, {modID = 2}),	-- Tentacle-Laced Spaulders
+				i(239041, {modID = 23}),	-- Tentacle-Laced Spaulders
 			}),
 			filter(MAIL, {
-				i(239073, {["modID"] = 2}),	-- Coif of the Court Spider
-				i(239073, {["modID"] = 23}),	-- Coif of the Court Spider
-				i(239027, {["modID"] = 2}),	-- Deathslaver's Hauberk
-				i(239027, {["modID"] = 23}),	-- Deathslaver's Hauberk
-				i(239042, {["modID"] = 2}),	-- Hauberk of Sunken Despair
-				i(239042, {["modID"] = 23}),	-- Hauberk of Sunken Despair
-				i(239028, {["modID"] = 2}),	-- Soulscarred Headgear
-				i(239028, {["modID"] = 23}),	-- Soulscarred Headgear
-				i(239054, {["modID"] = 2}),	-- Sweete's Jeweled Headgear
-				i(239054, {["modID"] = 23}),	-- Sweete's Jeweled Headgear
+				i(239073, {modID = 2}),	-- Coif of the Court Spider
+				i(239073, {modID = 23}),	-- Coif of the Court Spider
+				i(239027, {modID = 2}),	-- Deathslaver's Hauberk
+				i(239027, {modID = 23}),	-- Deathslaver's Hauberk
+				i(239042, {modID = 2}),	-- Hauberk of Sunken Despair
+				i(239042, {modID = 23}),	-- Hauberk of Sunken Despair
+				i(239028, {modID = 2}),	-- Soulscarred Headgear
+				i(239028, {modID = 23}),	-- Soulscarred Headgear
+				i(239054, {modID = 2}),	-- Sweete's Jeweled Headgear
+				i(239054, {modID = 23}),	-- Sweete's Jeweled Headgear
 			}),
 			filter(PLATE, {
-				i(239029, {["modID"] = 2}),	-- Breastplate of the Vengeful
-				i(239029, {["modID"] = 23}),	-- Breastplate of the Vengeful
-				i(239043, {["modID"] = 2}),	-- Chestguard of the Deep Denizen
-				i(239043, {["modID"] = 23}),	-- Chestguard of the Deep Denizen
-				i(239044, {["modID"] = 2}),	-- Helm of Abyssal Malevolence
-				i(239044, {["modID"] = 23}),	-- Helm of Abyssal Malevolence
-				i(239030, {["modID"] = 2}),	-- Pauldrons of the Horned Horror
-				i(239030, {["modID"] = 23}),	-- Pauldrons of the Horned Horror
-				i(239052, {["modID"] = 2}),	-- Sea-Brawler's Greathelm
-				i(239052, {["modID"] = 23}),	-- Sea-Brawler's Greathelm
-				i(239069, {["modID"] = 2}),	-- Soulspun Casque
-				i(239069, {["modID"] = 23}),	-- Soulspun Casque
+				i(239029, {modID = 2}),	-- Breastplate of the Vengeful
+				i(239029, {modID = 23}),	-- Breastplate of the Vengeful
+				i(239043, {modID = 2}),	-- Chestguard of the Deep Denizen
+				i(239043, {modID = 23}),	-- Chestguard of the Deep Denizen
+				i(239044, {modID = 2}),	-- Helm of Abyssal Malevolence
+				i(239044, {modID = 23}),	-- Helm of Abyssal Malevolence
+				i(239030, {modID = 2}),	-- Pauldrons of the Horned Horror
+				i(239030, {modID = 23}),	-- Pauldrons of the Horned Horror
+				i(239052, {modID = 2}),	-- Sea-Brawler's Greathelm
+				i(239052, {modID = 23}),	-- Sea-Brawler's Greathelm
+				i(239069, {modID = 2}),	-- Soulspun Casque
+				i(239069, {modID = 23}),	-- Soulspun Casque
 			}),
 			filter(FINGER_F, {
 				i(246757),	-- Miniature Roulette Wheel
@@ -5857,14 +5857,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
 			filter(LEATHER, {
 				i(241240),	-- Type II Bomber Jacket
-				i(241240, {["modID"] = 23 }),	-- Type II Bomber Jacket
+				i(241240, {modID = 23 }),	-- Type II Bomber Jacket
 			}),
 			filter(MAIL, {
 				i(241239),	-- Epaulets of Arcing Power
-				i(241239, {["modID"] = 23 }),	-- Epaulets of Arcing Power
+				i(241239, {modID = 23 }),	-- Epaulets of Arcing Power
 			}),
 			filter(CLOAKS, {
 				i(237521),	-- Hemet's Cloak
@@ -5872,15 +5872,15 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			n(HEAD, {
 				i(243344),	-- Chef's Hat
-				i(237520, {["sourceID"] = 285331 }),	-- Hemet's Hood
+				i(237520, {sourceID = 285331 }),	-- Hemet's Hood
 			}),
 			filter(TABARDS, {
 				i(231636),	-- zzOld
 			}),
 			header(HEADERS.LFGDungeon, 2805, {	-- Manaforge Omega
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					filter(CLOTH, {
-						i(238029, {["bonusID"] = 0, ["modID"] = 4}),	-- 11.2 Raid - Cloth - Waist
+						i(238029, {bonusID = 0, modID = 4}),	-- 11.2 Raid - Cloth - Waist
 						i(237549),	-- Bloodwrath's Gnarled Claws
 						i(237558),	-- Conjoined Glass Bracers
 						i(237538),	-- Forgeweaver's Journal Holster
@@ -5945,9 +5945,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(237561),	-- Yoke of Enveloping Hatred
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					filter(CLOTH, {
-						i(238029, {["bonusID"] = 0, }),	-- 11.2 Raid - Cloth - Waist
+						i(238029, {bonusID = 0, }),	-- 11.2 Raid - Cloth - Waist
 						i(237549),	-- Bloodwrath's Gnarled Claws
 						i(237558),	-- Conjoined Glass Bracers
 						i(237538),	-- Forgeweaver's Journal Holster
@@ -6012,9 +6012,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(237561),	-- Yoke of Enveloping Hatred
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					filter(CLOTH, {
-						i(238029, {["bonusID"] = 0, ["modID"] = 5}),	-- 11.2 Raid - Cloth - Waist
+						i(238029, {bonusID = 0, modID = 5}),	-- 11.2 Raid - Cloth - Waist
 						i(237549),	-- Bloodwrath's Gnarled Claws
 						i(237558),	-- Conjoined Glass Bracers
 						i(237538),	-- Forgeweaver's Journal Holster
@@ -6079,9 +6079,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(237561),	-- Yoke of Enveloping Hatred
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					filter(CLOTH, {
-						i(238029, {["bonusID"] = 0, ["modID"] = 6}),	-- 11.2 Raid - Cloth - Waist
+						i(238029, {bonusID = 0, modID = 6}),	-- 11.2 Raid - Cloth - Waist
 						i(237549),	-- Bloodwrath's Gnarled Claws
 						i(237558),	-- Conjoined Glass Bracers
 						i(237538),	-- Forgeweaver's Journal Holster
@@ -6150,7 +6150,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 11.2.5
-		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_5 } }, {
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ timeline = { CREATED_11_2_5 } }, {
 			header(HEADERS.LFGDungeon, 2831, {	-- The Emerald Nightmare
 				d(DIFFICULTY.RAID.LFR, {
 					filter(MAIL, {
@@ -6342,15 +6342,15 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 11.2.7
-		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
 			i(254332),	-- Garden Tender's Shawl
 		})),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
 			header(HEADERS.LFGDungeon, 3095, {	-- March on Quel'Danas
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					filter(CLOTH, {
 						i(249328),	-- Echoing Void Mantle
 						i(249912),	-- Robes of Endless Oblivion
@@ -6370,7 +6370,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(249915),	-- Extinction Guards
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					filter(CLOTH, {
 						i(249328),	-- Echoing Void Mantle
 						i(249912),	-- Robes of Endless Oblivion
@@ -6390,7 +6390,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(249915),	-- Extinction Guards
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					filter(CLOTH, {
 						i(249328),	-- Echoing Void Mantle
 						i(249912),	-- Robes of Endless Oblivion
@@ -6410,7 +6410,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(249915),	-- Extinction Guards
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					filter(CLOTH, {
 						i(249328),	-- Echoing Void Mantle
 						i(249912),	-- Robes of Endless Oblivion
@@ -6432,7 +6432,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				})),
 			}),
 			header(HEADERS.LFGDungeon, 3165, {	-- The Dreamrift
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					filter(CLOTH, {
 						i(249373),	-- Dream-Scorched Striders
 					}),
@@ -6446,7 +6446,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(249381),	-- Greaves of the Unformed
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					filter(CLOTH, {
 						i(249373),	-- Dream-Scorched Striders
 					}),
@@ -6460,7 +6460,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(249381),	-- Greaves of the Unformed
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					filter(CLOTH, {
 						i(249373),	-- Dream-Scorched Striders
 					}),
@@ -6474,7 +6474,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(249381),	-- Greaves of the Unformed
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					filter(CLOTH, {
 						i(249373),	-- Dream-Scorched Striders
 					}),
@@ -6490,7 +6490,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				})),
 			}),
 			header(HEADERS.LFGDungeon, 3094, {	-- The Voidspire
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					filter(CLOTH, {
 						i(249308),	-- Despotic Raiment
 						i(249319),	-- Endless March Waistwrap
@@ -6538,7 +6538,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(249309),	-- Sunbound Breastplate
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					filter(CLOTH, {
 						i(249308),	-- Despotic Raiment
 						i(249319),	-- Endless March Waistwrap
@@ -6586,7 +6586,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(249309),	-- Sunbound Breastplate
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					filter(CLOTH, {
 						i(249308),	-- Despotic Raiment
 						i(249319),	-- Endless March Waistwrap
@@ -6634,7 +6634,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(249309),	-- Sunbound Breastplate
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					filter(CLOTH, {
 						i(249308),	-- Despotic Raiment
 						i(249319),	-- Endless March Waistwrap
@@ -6698,7 +6698,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				}),
 			}),
 			-- Blizzard decided to make another copy of random WoD NYI sourceIDs again in 12.0.0
-			expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+			expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
 				itemsource(301480),	-- Legwraps of Swirling Light
 				itemsource(301483),	-- Rigid Scale Greatcloak
 				itemsource(301486),	-- Sharpeye Chestguard
@@ -6806,7 +6806,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 12.0.1
-		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_1 } }, {
+		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ timeline = { CREATED_12_0_1 } }, {
 			header(HEADERS.LFGDungeon, 3094, {	-- The Voidspire
 				filter(BACK_F, {
 					itemsource(307647),	-- Draconic Nullcape
@@ -6837,9 +6837,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 12.0.5
-		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
+		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ timeline = { CREATED_12_0_5 } }, {
 			header(HEADERS.LFGDungeon, 3214, {	-- Sporefall
-				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					filter(CLOTH, {
 						i(268282),	-- Luxurious Loamstriders
 						i(268284),	-- Mycomancer's Rot Robes
@@ -6857,7 +6857,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(268285),	-- Putrid Tender's Battleplate
 					}),
 				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 					filter(CLOTH, {
 						i(268282),	-- Luxurious Loamstriders
 						i(268284),	-- Mycomancer's Rot Robes
@@ -6875,7 +6875,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(268285),	-- Putrid Tender's Battleplate
 					}),
 				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 					filter(CLOTH, {
 						i(268282),	-- Luxurious Loamstriders
 						i(268284),	-- Mycomancer's Rot Robes
@@ -6893,7 +6893,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(268285),	-- Putrid Tender's Battleplate
 					}),
 				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 					filter(CLOTH, {
 						i(268282),	-- Luxurious Loamstriders
 						i(268284),	-- Mycomancer's Rot Robes
@@ -6914,36 +6914,36 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			n(WORLD_BOSSES, {
 				filter(CLOTH, {
-					i(275224, {["modID"] = 4 }),	-- Mertei's Adjutant Leggings
-					i(275224, {["bonusID"] = 6894 }),	-- Mertei's Adjutant Leggings
-					i(275224, {["bonusID"] = 6895 }),	-- Mertei's Adjutant Leggings
-					i(275224, {["bonusID"] = 6896 }),	-- Mertei's Adjutant Leggings
-					i(275224, {["bonusID"] = 6897 }),	-- Mertei's Adjutant Leggings
+					i(275224, {modID = 4 }),	-- Mertei's Adjutant Leggings
+					i(275224, {bonusID = 6894 }),	-- Mertei's Adjutant Leggings
+					i(275224, {bonusID = 6895 }),	-- Mertei's Adjutant Leggings
+					i(275224, {bonusID = 6896 }),	-- Mertei's Adjutant Leggings
+					i(275224, {bonusID = 6897 }),	-- Mertei's Adjutant Leggings
 				}),
 				filter(LEATHER, {
-					i(275225, {["modID"] = 4 }),	-- Toxic Voidscythe Spaulders
-					i(275225, {["bonusID"] = 6894 }),	-- Toxic Voidscythe Spaulders
-					i(275225, {["bonusID"] = 6895 }),	-- Toxic Voidscythe Spaulders
-					i(275225, {["bonusID"] = 6896 }),	-- Toxic Voidscythe Spaulders
-					i(275225, {["bonusID"] = 6897 }),	-- Toxic Voidscythe Spaulders
+					i(275225, {modID = 4 }),	-- Toxic Voidscythe Spaulders
+					i(275225, {bonusID = 6894 }),	-- Toxic Voidscythe Spaulders
+					i(275225, {bonusID = 6895 }),	-- Toxic Voidscythe Spaulders
+					i(275225, {bonusID = 6896 }),	-- Toxic Voidscythe Spaulders
+					i(275225, {bonusID = 6897 }),	-- Toxic Voidscythe Spaulders
 				}),
 				filter(MAIL, {
-					i(275226, {["modID"] = 4 }),	-- Shredclaw Handler's Grips
-					i(275226, {["bonusID"] = 6894 }),	-- Shredclaw Handler's Grips
-					i(275226, {["bonusID"] = 6895 }),	-- Shredclaw Handler's Grips
-					i(275226, {["bonusID"] = 6896 }),	-- Shredclaw Handler's Grips
-					i(275226, {["bonusID"] = 6897 }),	-- Shredclaw Handler's Grips
+					i(275226, {modID = 4 }),	-- Shredclaw Handler's Grips
+					i(275226, {bonusID = 6894 }),	-- Shredclaw Handler's Grips
+					i(275226, {bonusID = 6895 }),	-- Shredclaw Handler's Grips
+					i(275226, {bonusID = 6896 }),	-- Shredclaw Handler's Grips
+					i(275226, {bonusID = 6897 }),	-- Shredclaw Handler's Grips
 				}),
 				filter(PLATE, {
-					i(275227, {["modID"] = 4 }),	-- Leth'ir's Dress Sabatons
-					i(275227, {["bonusID"] = 6894 }),	-- Leth'ir's Dress Sabatons
-					i(275227, {["bonusID"] = 6895 }),	-- Leth'ir's Dress Sabatons
-					i(275227, {["bonusID"] = 6896 }),	-- Leth'ir's Dress Sabatons
-					i(275227, {["bonusID"] = 6897 }),	-- Leth'ir's Dress Sabatons
+					i(275227, {modID = 4 }),	-- Leth'ir's Dress Sabatons
+					i(275227, {bonusID = 6894 }),	-- Leth'ir's Dress Sabatons
+					i(275227, {bonusID = 6895 }),	-- Leth'ir's Dress Sabatons
+					i(275227, {bonusID = 6896 }),	-- Leth'ir's Dress Sabatons
+					i(275227, {bonusID = 6897 }),	-- Leth'ir's Dress Sabatons
 				}),
 			}),
 			-- Blizzard decided to make another copy of random WoD NYI sourceIDs again in 12.0.5
-			expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { CREATED_12_0_5 } }, {
+			expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { CREATED_12_0_5 } }, {
 				itemsource(64383),	-- Belt of Singing Hooves
 				itemsource(64882),	-- Bonebreaker Boots
 				itemsource(64389),	-- Chain of Natural Fury
@@ -7062,64 +7062,64 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				itemsource(67800),	-- Witherleaf Chestguard
 			})),
 			filter(CLOAKS, {
-				i(276799, {["modID"] = 4 }),	-- Riftstalker's Shade Cloak
-				i(276799, {["modID"] = 5 }),	-- Riftstalker's Shade Cloak
+				i(276799, {modID = 4 }),	-- Riftstalker's Shade Cloak
+				i(276799, {modID = 5 }),	-- Riftstalker's Shade Cloak
 			}),
 			filter(CLOTH, {
-				i(276794, {["modID"] = 4 }),	-- Archmage's Cord of Light
-				i(276794, {["modID"] = 5 }),	-- Archmage's Cord of Light
-				i(276794, {["bonusID"] = 6894 }),	-- Archmage's Cord of Light
-				i(276794, {["bonusID"] = 6895 }),	-- Archmage's Cord of Light
-				i(276794, {["bonusID"] = 6896 }),	-- Archmage's Cord of Light
-				i(276794, {["bonusID"] = 6897 }),	-- Archmage's Cord of Light
-				i(276788, {["modID"] = 4 }),	-- Kifaan's Spare Bindings
-				i(276788, {["modID"] = 5 }),	-- Kifaan's Spare Bindings
-				i(276788, {["bonusID"] = 6894 }),	-- Kifaan's Spare Bindings
-				i(276788, {["bonusID"] = 6895 }),	-- Kifaan's Spare Bindings
-				i(276788, {["bonusID"] = 6896 }),	-- Kifaan's Spare Bindings
-				i(276788, {["bonusID"] = 6897 }),	-- Kifaan's Spare Bindings
+				i(276794, {modID = 4 }),	-- Archmage's Cord of Light
+				i(276794, {modID = 5 }),	-- Archmage's Cord of Light
+				i(276794, {bonusID = 6894 }),	-- Archmage's Cord of Light
+				i(276794, {bonusID = 6895 }),	-- Archmage's Cord of Light
+				i(276794, {bonusID = 6896 }),	-- Archmage's Cord of Light
+				i(276794, {bonusID = 6897 }),	-- Archmage's Cord of Light
+				i(276788, {modID = 4 }),	-- Kifaan's Spare Bindings
+				i(276788, {modID = 5 }),	-- Kifaan's Spare Bindings
+				i(276788, {bonusID = 6894 }),	-- Kifaan's Spare Bindings
+				i(276788, {bonusID = 6895 }),	-- Kifaan's Spare Bindings
+				i(276788, {bonusID = 6896 }),	-- Kifaan's Spare Bindings
+				i(276788, {bonusID = 6897 }),	-- Kifaan's Spare Bindings
 			}),
 			filter(LEATHER, {
-				i(276792, {["modID"] = 4 }),	-- Belt of the Illidari Vanguard
-				i(276792, {["modID"] = 5 }),	-- Belt of the Illidari Vanguard
-				i(276792, {["bonusID"] = 6894 }),	-- Belt of the Illidari Vanguard
-				i(276792, {["bonusID"] = 6895 }),	-- Belt of the Illidari Vanguard
-				i(276792, {["bonusID"] = 6896 }),	-- Belt of the Illidari Vanguard
-				i(276792, {["bonusID"] = 6897 }),	-- Belt of the Illidari Vanguard
-				i(276790, {["modID"] = 4 }),	-- Runed Illidari Wraps
-				i(276790, {["modID"] = 5 }),	-- Runed Illidari Wraps
-				i(276790, {["bonusID"] = 6894 }),	-- Runed Illidari Wraps
-				i(276790, {["bonusID"] = 6895 }),	-- Runed Illidari Wraps
-				i(276790, {["bonusID"] = 6896 }),	-- Runed Illidari Wraps
-				i(276790, {["bonusID"] = 6897 }),	-- Runed Illidari Wraps
+				i(276792, {modID = 4 }),	-- Belt of the Illidari Vanguard
+				i(276792, {modID = 5 }),	-- Belt of the Illidari Vanguard
+				i(276792, {bonusID = 6894 }),	-- Belt of the Illidari Vanguard
+				i(276792, {bonusID = 6895 }),	-- Belt of the Illidari Vanguard
+				i(276792, {bonusID = 6896 }),	-- Belt of the Illidari Vanguard
+				i(276792, {bonusID = 6897 }),	-- Belt of the Illidari Vanguard
+				i(276790, {modID = 4 }),	-- Runed Illidari Wraps
+				i(276790, {modID = 5 }),	-- Runed Illidari Wraps
+				i(276790, {bonusID = 6894 }),	-- Runed Illidari Wraps
+				i(276790, {bonusID = 6895 }),	-- Runed Illidari Wraps
+				i(276790, {bonusID = 6896 }),	-- Runed Illidari Wraps
+				i(276790, {bonusID = 6897 }),	-- Runed Illidari Wraps
 			}),
 			filter(MAIL, {
-				i(276793, {["modID"] = 4 }),	-- Longshot's Fletched Girdle
-				i(276793, {["modID"] = 5 }),	-- Longshot's Fletched Girdle
-				i(276793, {["bonusID"] = 6894 }),	-- Longshot's Fletched Girdle
-				i(276793, {["bonusID"] = 6895 }),	-- Longshot's Fletched Girdle
-				i(276793, {["bonusID"] = 6896 }),	-- Longshot's Fletched Girdle
-				i(276793, {["bonusID"] = 6897 }),	-- Longshot's Fletched Girdle
-				i(276787, {["modID"] = 4 }),	-- Reinforced Expedition Bands
-				i(276787, {["modID"] = 5 }),	-- Reinforced Expedition Bands
-				i(276787, {["bonusID"] = 6894 }),	-- Reinforced Expedition Bands
-				i(276787, {["bonusID"] = 6895 }),	-- Reinforced Expedition Bands
-				i(276787, {["bonusID"] = 6896 }),	-- Reinforced Expedition Bands
-				i(276787, {["bonusID"] = 6897 }),	-- Reinforced Expedition Bands
+				i(276793, {modID = 4 }),	-- Longshot's Fletched Girdle
+				i(276793, {modID = 5 }),	-- Longshot's Fletched Girdle
+				i(276793, {bonusID = 6894 }),	-- Longshot's Fletched Girdle
+				i(276793, {bonusID = 6895 }),	-- Longshot's Fletched Girdle
+				i(276793, {bonusID = 6896 }),	-- Longshot's Fletched Girdle
+				i(276793, {bonusID = 6897 }),	-- Longshot's Fletched Girdle
+				i(276787, {modID = 4 }),	-- Reinforced Expedition Bands
+				i(276787, {modID = 5 }),	-- Reinforced Expedition Bands
+				i(276787, {bonusID = 6894 }),	-- Reinforced Expedition Bands
+				i(276787, {bonusID = 6895 }),	-- Reinforced Expedition Bands
+				i(276787, {bonusID = 6896 }),	-- Reinforced Expedition Bands
+				i(276787, {bonusID = 6897 }),	-- Reinforced Expedition Bands
 			}),
 			filter(PLATE, {
-				i(276789, {["modID"] = 4 }),	-- Lightveil Watcher's Vambraces
-				i(276789, {["modID"] = 5 }),	-- Lightveil Watcher's Vambraces
-				i(276789, {["bonusID"] = 6894 }),	-- Lightveil Watcher's Vambraces
-				i(276789, {["bonusID"] = 6895 }),	-- Lightveil Watcher's Vambraces
-				i(276789, {["bonusID"] = 6896 }),	-- Lightveil Watcher's Vambraces
-				i(276789, {["bonusID"] = 6897 }),	-- Lightveil Watcher's Vambraces
-				i(276791, {["modID"] = 4 }),	-- Tala'saan's Training Belt
-				i(276791, {["modID"] = 5 }),	-- Tala'saan's Training Belt
-				i(276791, {["bonusID"] = 6894 }),	-- Tala'saan's Training Belt
-				i(276791, {["bonusID"] = 6895 }),	-- Tala'saan's Training Belt
-				i(276791, {["bonusID"] = 6896 }),	-- Tala'saan's Training Belt
-				i(276791, {["bonusID"] = 6897 }),	-- Tala'saan's Training Belt
+				i(276789, {modID = 4 }),	-- Lightveil Watcher's Vambraces
+				i(276789, {modID = 5 }),	-- Lightveil Watcher's Vambraces
+				i(276789, {bonusID = 6894 }),	-- Lightveil Watcher's Vambraces
+				i(276789, {bonusID = 6895 }),	-- Lightveil Watcher's Vambraces
+				i(276789, {bonusID = 6896 }),	-- Lightveil Watcher's Vambraces
+				i(276789, {bonusID = 6897 }),	-- Lightveil Watcher's Vambraces
+				i(276791, {modID = 4 }),	-- Tala'saan's Training Belt
+				i(276791, {modID = 5 }),	-- Tala'saan's Training Belt
+				i(276791, {bonusID = 6894 }),	-- Tala'saan's Training Belt
+				i(276791, {bonusID = 6895 }),	-- Tala'saan's Training Belt
+				i(276791, {bonusID = 6896 }),	-- Tala'saan's Training Belt
+				i(276791, {bonusID = 6897 }),	-- Tala'saan's Training Belt
 			}),
 		})),
 	}),

@@ -7,162 +7,162 @@ local STYGIA = 1767;
 local SOUL_ASH = 1828;
 local SOUL_CINDERS = 1906;
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
 	m(KORTHIA, {
 		n(VENDORS, {
 			n(178257, {	-- Archivist Roh-Suir
-				["coord"] = { 61.6, 21.7, KORTHIA },
-				["groups"] = bubbleDownRep(FACTION_THE_ARCHIVISTS_CODEX, {
+				coord = { 61.6, 21.7, KORTHIA },
+				groups = bubbleDownRep(FACTION_THE_ARCHIVISTS_CODEX, {
 					{		-- Tier 1
 						i(187508, {	-- Trained Gromit Carrier
-							["cost"] = { { "c", CATALOGED_RESEARCH, 35 } },
+							cost = { { "c", CATALOGED_RESEARCH, 35 } },
 						}),
 					}, {	-- Tier 2
 						i(187612, {	-- Key of Flowing Waters
-							["cost"] = { { "c", CATALOGED_RESEARCH, 25 } },
+							cost = { { "c", CATALOGED_RESEARCH, 25 } },
 						}),
 						i(187614, {	-- Key of Many Thoughts
-							["cost"] = { { "c", CATALOGED_RESEARCH, 25 } },
+							cost = { { "c", CATALOGED_RESEARCH, 25 } },
 						}),
 						i(187613, {	-- Key of the Inner Chambers
-							["cost"] = { { "c", CATALOGED_RESEARCH, 25 } },
+							cost = { { "c", CATALOGED_RESEARCH, 25 } },
 						}),
 						i(186984, {	-- Korthite Crystal Key
-							["cost"] = { { "c", CATALOGED_RESEARCH, 25 } },
+							cost = { { "c", CATALOGED_RESEARCH, 25 } },
 						}),
 						i(186714, {	-- Research Report: All-Seeing Crystal (CI!)
-							["cost"] = { { "c", CATALOGED_RESEARCH, 100 } },
+							cost = { { "c", CATALOGED_RESEARCH, 100 } },
 						}),
 						i(187145, {	-- Treatise: Recognizing Stygia and its Uses (CI!)
-							["cost"] = { { "c", CATALOGED_RESEARCH, 800 } },
+							cost = { { "c", CATALOGED_RESEARCH, 800 } },
 						}),
 					}, {	-- Tier 3
 						ChronicleOfLostMemories({	-- Chronicle of Lost Memories
-							["cost"] = { { "c", CATALOGED_RESEARCH, 1500 } },
-							["description"] = "|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",
-							["_drop"] = { "customCollect" },	-- this is Covenant tagged in various other locations
+							cost = { { "c", CATALOGED_RESEARCH, 1500 } },
+							description = "|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",
+							_drop = { "customCollect" },	-- this is Covenant tagged in various other locations
 						}),
 						i(186718, {	-- Teleporter Repair Kit
-							["cost"] = { { "c", CATALOGED_RESEARCH, 50 } },
+							cost = { { "c", CATALOGED_RESEARCH, 50 } },
 						}),
 					}, {	-- Tier 4
 						i(186470, {	-- Recipe: Crafter's Mark of the Chained Isle (RECIPE!)
-							["cost"] = { { "c", CATALOGED_RESEARCH, 2500 } },
-							["groups"] = {
+							cost = { { "c", CATALOGED_RESEARCH, 2500 } },
+							groups = {
 								r(343676, {	-- Crafter's Mark of the Chained Isle (RECIPE!)
-									["requireSkill"] = ALCHEMY,
+									requireSkill = ALCHEMY,
 								}),
 								r(343188, {	-- Crafter's Mark of the Chained Isle (RECIPE!)
-									["requireSkill"] = BLACKSMITHING,
+									requireSkill = BLACKSMITHING,
 								}),
 								r(343103, {	-- Crafter's Mark of the Chained Isle (RECIPE!)
-									["requireSkill"] = ENGINEERING,
+									requireSkill = ENGINEERING,
 								}),
 								r(343694, {	-- Crafter's Mark of the Chained Isle (RECIPE!)
-									["requireSkill"] = JEWELCRAFTING,
+									requireSkill = JEWELCRAFTING,
 								}),
 								r(343189, {	-- Crafter's Mark of the Chained Isle (RECIPE!)
-									["requireSkill"] = LEATHERWORKING,
+									requireSkill = LEATHERWORKING,
 								}),
 								r(343200, {	-- Crafter's Mark of the Chained Isle (RECIPE!)
-									["requireSkill"] = TAILORING,
+									requireSkill = TAILORING,
 								}),
 							},
 						}),
 						i(186991, {	-- Recipe: Transmute: Stones to Ore (RECIPE!)
-							["cost"] = { { "c", CATALOGED_RESEARCH, 2000 } },
+							cost = { { "c", CATALOGED_RESEARCH, 2000 } },
 						}),
 						i(186731, {	-- Repaired Riftkey
-							["cost"] = { { "c", CATALOGED_RESEARCH, 100 } },
+							cost = { { "c", CATALOGED_RESEARCH, 100 } },
 						}),
 						i(187706, {	-- Treatise: Bonds of Stygia in Mortals (CI!)
-							["cost"] = { { "c", CATALOGED_RESEARCH, 1000 } },
+							cost = { { "c", CATALOGED_RESEARCH, 1000 } },
 						}),
 					}, {	-- Tier 5
 						i(187409, {	-- Cloak of the Korthian Scholar
-							["cost"] = { { "c", CATALOGED_RESEARCH, 500 } },
+							cost = { { "c", CATALOGED_RESEARCH, 500 } },
 						}),
 						i(186716, {	-- Research Report: Ancient Shrines (CI!)
-							["cost"] = { { "c", CATALOGED_RESEARCH, 1000 } },
+							cost = { { "c", CATALOGED_RESEARCH, 1000 } },
 						}),
 						i(186722, {	-- Treatise: The Study of Anima and Harnessing Every Drop (CI!)
-							["cost"] = { { "c", CATALOGED_RESEARCH, 1500 } },
+							cost = { { "c", CATALOGED_RESEARCH, 1500 } },
 						}),
 					}, {	-- Tier 6
 						i(187134, {	-- Alloy-Warping Facetor
-							["timeline"] = { REMOVED_9_2_0 },
-							["cost"] = { { "c", CATALOGED_RESEARCH, 5000 } },
+							timeline = { REMOVED_9_2_0 },
+							cost = { { "c", CATALOGED_RESEARCH, 5000 } },
 						}),
 						i(187535, {	-- Attendant Scholar's Waistcord
-							["cost"] = { { "c", CATALOGED_RESEARCH, 4000 } },
+							cost = { { "c", CATALOGED_RESEARCH, 4000 } },
 						}),
 						i(187148, {	-- Death-Bound Shard
-							["cost"] = { { "c", CATALOGED_RESEARCH, 3000 } },
+							cost = { { "c", CATALOGED_RESEARCH, 3000 } },
 						}),
 						i(187534, {	-- Korthite Crystal Waistguard
-							["cost"] = { { "c", CATALOGED_RESEARCH, 4000 } },
+							cost = { { "c", CATALOGED_RESEARCH, 4000 } },
 						}),
 						i(187536, {	-- Prototype Guardian Grips
-							["cost"] = { { "c", CATALOGED_RESEARCH, 4000 } },
+							cost = { { "c", CATALOGED_RESEARCH, 4000 } },
 						}),
 						i(186717, {	-- Research Report: Adaptive Alloys (CI!)
-							["cost"] = { { "c", CATALOGED_RESEARCH, 4000 } },
+							cost = { { "c", CATALOGED_RESEARCH, 4000 } },
 						}),
 						i(187138, {	-- Research Report: First Alloys (CI!)
-							["cost"] = { { "c", CATALOGED_RESEARCH, 8000 } },
+							cost = { { "c", CATALOGED_RESEARCH, 8000 } },
 						}),
 						i(187136, {	-- Research Report: Relic Examination Techniques (CI!)
-							["cost"] = { { "c", CATALOGED_RESEARCH, 2500 } },
+							cost = { { "c", CATALOGED_RESEARCH, 2500 } },
 						}),
 						i(186648, {	-- Soaring Razorwing (MOUNT!)
-							["cost"] = { { "c", CATALOGED_RESEARCH, 5000 } },
+							cost = { { "c", CATALOGED_RESEARCH, 5000 } },
 						}),
 						i(187537, {	-- Subtle Mortality Manipulators
-							["cost"] = { { "c", CATALOGED_RESEARCH, 4000 } },
+							cost = { { "c", CATALOGED_RESEARCH, 4000 } },
 						}),
 						i(186721, {	-- Treatise: Relics Abound in the Shadowlands (CI!)
-							["cost"] = { { "c", CATALOGED_RESEARCH, 2000 } },
+							cost = { { "c", CATALOGED_RESEARCH, 2000 } },
 						}),
 					},
 				}),
 			}),
 			n(179214, {	-- Bonesmith Heirmir
-				["coord"] = { 63.5, 25.3, KORTHIA },
-				["crs"] = { 180700 },	-- Vision of Bonesmith Heirmir
-				["groups"] = {
+				coord = { 63.5, 25.3, KORTHIA },
+				crs = { 180700 },	-- Vision of Bonesmith Heirmir
+				groups = {
 					i(187077, {	-- Packaged Soul Ash
-						["cost"] = { { "c", SOUL_ASH, 300 } },
+						cost = { { "c", SOUL_ASH, 300 } },
 					}),
 					i(191031, {	-- Packaged Soul Cinders
-						["timeline"] = { ADDED_9_2_0 },
-						["cost"] = { { "c", SOUL_CINDERS, 300 } },
+						timeline = { ADDED_9_2_0 },
+						cost = { { "c", SOUL_CINDERS, 300 } },
 					}),
 					i(187532, {	-- Soulfire Chisel
-						["cost"] = { { "c", STYGIA, 2500 } },
+						cost = { { "c", STYGIA, 2500 } },
 					}),
 					i(187134, {	-- Alloy-Warping Facetor
-						["cost"] = { { "c", SOUL_CINDERS, 1000 } },
+						cost = { { "c", SOUL_CINDERS, 1000 } },
 					}),
-					ChronicleOfLostMemories({["cost"] = { { "c", SOUL_CINDERS, 400 } }})	-- Chronicle of Lost Memories
+					ChronicleOfLostMemories({cost = { { "c", SOUL_CINDERS, 400 } }})	-- Chronicle of Lost Memories
 				},
 			}),
 			n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>
-				["coord"] = { 63.5, 23.3, KORTHIA },
-				["groups"] = bubbleDownClassicRep(FACTION_DEATHS_ADVANCE, {
+				coord = { 63.5, 23.3, KORTHIA },
+				groups = bubbleDownClassicRep(FACTION_DEATHS_ADVANCE, {
 					{		-- Neutral
 					}, {	-- Friendly
 						i(188156, {	-- Korthian Accessory
-							["timeline"] = { ADDED_9_1_5 },
-							["cost"] = { { "c", STYGIA, 750 } },
-							["sym"] = {
+							timeline = { ADDED_9_1_5 },
+							cost = { { "c", STYGIA, 750 } },
+							sym = {
 								{"sub", "korthian_armaments", "INVTYPE_FINGER" },
 								{"sub", "korthian_armaments", "INVTYPE_TRINKET" },
 							},
 						}),
 						i(187187, {	-- Korthian Armaments
-							["description"] = "These items can also drop from War Chests awarded by Covenant Assaults, the Death's Advance War Chest, and occasionally from Korthian dailies.\n\nKorthian Armaments also have a chance to drop from Korthia rares and treasures.",
-							["cost"] = { { "c", STYGIA, 1000 } },
-							["groups"] = {
+							description = "These items can also drop from War Chests awarded by Covenant Assaults, the Death's Advance War Chest, and occasionally from Korthian dailies.\n\nKorthian Armaments also have a chance to drop from Korthia rares and treasures.",
+							cost = { { "c", STYGIA, 1000 } },
+							groups = {
 								n(WEAPONS, {
 									i(185889),	-- Gromit Tendon Longbow
 									i(186762),	-- Korthian Anima Slicer
@@ -282,73 +282,73 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							},
 						}),
 						i(188161, {	-- Korthian Belt
-							["timeline"] = { ADDED_9_1_5 },
-							["cost"] = { { "c", STYGIA, 750 } },
-							["sym"] = {
+							timeline = { ADDED_9_1_5 },
+							cost = { { "c", STYGIA, 750 } },
+							sym = {
 								{"sub", "korthian_armaments", "INVTYPE_WAIST" },
 							},
 						}),
 						i(188155, {	-- Korthian Boots
-							["timeline"] = { ADDED_9_1_5 },
-							["cost"] = { { "c", STYGIA, 1000 } },
-							["sym"] = {
+							timeline = { ADDED_9_1_5 },
+							cost = { { "c", STYGIA, 1000 } },
+							sym = {
 								{"sub", "korthian_armaments", "INVTYPE_FEET" },
 							},
 						}),
 						i(188163, {	-- Korthian Bracers
-							["timeline"] = { ADDED_9_1_5 },
-							["cost"] = { { "c", STYGIA, 750 } },
-							["sym"] = {
+							timeline = { ADDED_9_1_5 },
+							cost = { { "c", STYGIA, 750 } },
+							sym = {
 								{"sub", "korthian_armaments", "INVTYPE_WRIST" },
 							},
 						}),
 						i(188154, {	-- Korthian Chestpiece
-							["timeline"] = { ADDED_9_1_5 },
-							["cost"] = { { "c", STYGIA, 1250 } },
-							["sym"] = {
+							timeline = { ADDED_9_1_5 },
+							cost = { { "c", STYGIA, 1250 } },
+							sym = {
 								{"sub", "korthian_armaments", "INVTYPE_CHEST" },
 								{"sub", "korthian_armaments", "INVTYPE_ROBE" },
 							},
 						}),
 						i(188153, {	-- Korthian Cloak
-							["timeline"] = { ADDED_9_1_5 },
-							["cost"] = { { "c", STYGIA, 750 } },
-							["sym"] = {
+							timeline = { ADDED_9_1_5 },
+							cost = { { "c", STYGIA, 750 } },
+							sym = {
 								{"sub", "korthian_armaments", "INVTYPE_CLOAK" },
 							},
 						}),
 						i(188157, {	-- Korthian Gloves
-							["timeline"] = { ADDED_9_1_5 },
-							["cost"] = { { "c", STYGIA, 1000 } },
-							["sym"] = {
+							timeline = { ADDED_9_1_5 },
+							cost = { { "c", STYGIA, 1000 } },
+							sym = {
 								{"sub", "korthian_armaments", "INVTYPE_HAND" },
 							},
 						}),
 						i(188158, {	-- Korthian Helm
-							["timeline"] = { ADDED_9_1_5 },
-							["cost"] = { { "c", STYGIA, 1250 } },
-							["sym"] = {
+							timeline = { ADDED_9_1_5 },
+							cost = { { "c", STYGIA, 1250 } },
+							sym = {
 								{"sub", "korthian_armaments", "INVTYPE_HEAD" },
 							},
 						}),
 						i(188159, {	-- Korthian Legguards
-							["timeline"] = { ADDED_9_1_5 },
-							["cost"] = { { "c", STYGIA, 1250 } },
-							["sym"] = {
+							timeline = { ADDED_9_1_5 },
+							cost = { { "c", STYGIA, 1250 } },
+							sym = {
 								{"sub", "korthian_armaments", "INVTYPE_LEGS" },
 							},
 						}),
 						i(188160, {	-- Korthian Shoulders
-							["timeline"] = { ADDED_9_1_5 },
-							["cost"] = { { "c", STYGIA, 1000 } },
-							["sym"] = {
+							timeline = { ADDED_9_1_5 },
+							cost = { { "c", STYGIA, 1000 } },
+							sym = {
 								{"sub", "korthian_armaments", "INVTYPE_SHOULDER" },
 							},
 						}),
 						i(188162, {	-- Korthian Weaponry
-							["timeline"] = { ADDED_9_1_5 },
-							["cost"] = { { "c", STYGIA, 1500 } },
-							["sym"] = {
+							timeline = { ADDED_9_1_5 },
+							cost = { { "c", STYGIA, 1500 } },
+							sym = {
 								{"select", "itemID", 187187 },	-- Korthian Armaments
 								{"pop"},							-- Discard Header (includes symlink of the item)
 								{"where", "headerID", WEAPONS },	-- Weapons only
@@ -356,115 +356,115 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							},
 						}),
 						i(186453, {	-- Vault Anima Tracker (CI!)
-							["cost"] = { { "c", STYGIA, 1000 } },
+							cost = { { "c", STYGIA, 1000 } },
 						}),
 					}, {	-- Honored
 						i(187541, {	-- Chain of Encircling Death
-							["cost"] = { { "c", STYGIA, 2000 } },
+							cost = { { "c", STYGIA, 2000 } },
 						}),
 						i(187540, {	-- Cincture of Enveloping Death
-							["cost"] = { { "c", STYGIA, 2000 } },
+							cost = { { "c", STYGIA, 2000 } },
 						}),
 						i(186543, {	-- Domestic Aunian (PET!)
-							["cost"] = {
+							cost = {
 								{ "i", POLISHED_PET_CHARM, 50 },
 								{ "c", STYGIA, 1500 },
 							},
 						}),
 						i(187539, {	-- Gauntlets of Death's Guardian
-							["cost"] = { { "c", STYGIA, 2000 } },
+							cost = { { "c", STYGIA, 2000 } },
 						}),
 						i(187538, {	-- Gloves of Advancing Death
-							["cost"] = { { "c", STYGIA, 2000 } },
+							cost = { { "c", STYGIA, 2000 } },
 						}),
 						i(187411, {	-- Mantle of Death's Advance
-							["cost"] = { { "c", STYGIA, 500 } },
+							cost = { { "c", STYGIA, 500 } },
 						}),
 						i(186598, {	-- Recipe: Crafter's Mark III (RECIPE!)
-							["cost"] = { { "c", STYGIA, 2000 } },
-							["groups"] = {
+							cost = { { "c", STYGIA, 2000 } },
+							groups = {
 								r(343677, {	-- Crafter's Mark III (RECIPE!)
-									["requireSkill"] = ALCHEMY,
+									requireSkill = ALCHEMY,
 								}),
 								r(343186, {	-- Crafter's Mark III (RECIPE!)
-									["requireSkill"] = BLACKSMITHING,
+									requireSkill = BLACKSMITHING,
 								}),
 								r(343102, {	-- Crafter's Mark III (RECIPE!)
-									["requireSkill"] = ENGINEERING,
+									requireSkill = ENGINEERING,
 								}),
 								r(343695, {	-- Crafter's Mark III (RECIPE!)
-									["requireSkill"] = JEWELCRAFTING,
+									requireSkill = JEWELCRAFTING,
 								}),
 								r(343192, {	-- Crafter's Mark III (RECIPE!)
-									["requireSkill"] = LEATHERWORKING,
+									requireSkill = LEATHERWORKING,
 								}),
 								r(343201, {	-- Crafter's Mark III (RECIPE!)
-									["requireSkill"] = TAILORING,
+									requireSkill = TAILORING,
 								}),
 							},
 						}),
 						i(187218, {	-- Tome of Origins (RECIPE!)
-							["cost"] = { { "c", STYGIA, 2000 } },
-							["groups"] = {
+							cost = { { "c", STYGIA, 2000 } },
+							groups = {
 								r(352439, {	-- Vestige of Origins (RECIPE!)
-									["requireSkill"] = BLACKSMITHING,
+									requireSkill = BLACKSMITHING,
 								}),
 								r(352443, {	-- Vestige of Origins (RECIPE!)
-									["requireSkill"] = JEWELCRAFTING,
+									requireSkill = JEWELCRAFTING,
 								}),
 								r(352444, {	-- Vestige of Origins (RECIPE!)
-									["requireSkill"] = LEATHERWORKING,
+									requireSkill = LEATHERWORKING,
 								}),
 								r(352445, {	-- Vestige of Origins (RECIPE!)
-									["requireSkill"] = TAILORING,
+									requireSkill = TAILORING,
 								}),
 							},
 						}),
 					}, {	-- Revered
 						i(186647, {	-- Amber Shardhide (MOUNT!)
-							["cost"] = { { "c", STYGIA, 5000 } },
+							cost = { { "c", STYGIA, 5000 } },
 						}),
 						i(186724, {	-- Technique: Contract: Death's Advance (RECIPE!)
-							["cost"] = { { "c", STYGIA, 2500 } },
+							cost = { { "c", STYGIA, 2500 } },
 						}),
 					}, {	-- Exalted
-						n(KYRIAN, sharedData({["customCollect"] = { "SL_COV_KYR" }},{
+						n(KYRIAN, sharedData({customCollect = { "SL_COV_KYR" }},{
 							i(186480, {	-- Battle-Hardened Aquilon (MOUNT!)
-								["cost"] = { { "c", STYGIA, 1000 } },
+								cost = { { "c", STYGIA, 1000 } },
 							}),
 							iensemble(186517, {	-- Ensemble: Battlefield Messenger's Regalia
-								["cost"] = { { "c", STYGIA, 6000 } },
+								cost = { { "c", STYGIA, 6000 } },
 							}),
 						})),
-						n(NECROLORD, sharedData({["customCollect"] = { "SL_COV_NEC" }},{
+						n(NECROLORD, sharedData({customCollect = { "SL_COV_NEC" }},{
 							i(186490, {	-- Battlefield Swarmer Harness (MOUNT!)
-								["cost"] = { { "c", STYGIA, 1000 } },
+								cost = { { "c", STYGIA, 1000 } },
 							}),
 							iensemble(186504, {	-- Ensemble: Frontline Necromancer's Vestments
-								["cost"] = { { "c", STYGIA, 6000 } },
+								cost = { { "c", STYGIA, 6000 } },
 							}),
 						})),
-						n(NIGHT_FAE, sharedData({["customCollect"] = { "SL_COV_NFA" }},{
+						n(NIGHT_FAE, sharedData({customCollect = { "SL_COV_NFA" }},{
 							iensemble(186499, {	-- Ensemble: Garb of Fall's Promise
-								["cost"] = { { "c", STYGIA, 6000 } },
+								cost = { { "c", STYGIA, 6000 } },
 							}),
 							i(186495, {	-- Winter Wilderling (MOUNT!)
-								["cost"] = { { "c", STYGIA, 1000 } },
+								cost = { { "c", STYGIA, 1000 } },
 							}),
 						})),
-						n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }},{
+						n(VENTHYR, sharedData({customCollect = { "SL_COV_VEN" }},{
 							iensemble(186511, {	-- Ensemble: Renathal's Battlefield Attire
-								["cost"] = { { "c", STYGIA, 6000 } },
+								cost = { { "c", STYGIA, 6000 } },
 							}),
 							iensemble(186512, {	-- Ensemble: Renathal's Field Inquisitor's Vestments
-								["cost"] = { { "c", STYGIA, 6000 } },
+								cost = { { "c", STYGIA, 6000 } },
 							}),
 							i(186477, {	-- Pale Gravewing (MOUNT!)
-								["cost"] = { { "c", STYGIA, 1000 } },
+								cost = { { "c", STYGIA, 1000 } },
 							}),
 						})),
 						i(186997, {	-- Death's Advance Tabard
-							["cost"] = { { "c", STYGIA, 3000 } },
+							cost = { { "c", STYGIA, 3000 } },
 						}),
 					},
 				}),

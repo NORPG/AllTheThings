@@ -33,13 +33,13 @@ local REMOVED_WITH_ESCALATION_ONUPDATE = [[function(t)
 end]];
 -- #endif
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
 	applyclassicphase(MOP_PHASE_ONE, n(SCENARIOS, {
 		-- #if AFTER 6.0.1
-		["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
+		crs = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 		-- #endif
-		["lvl"] = lvlsquish(90, 90, 35),
-		["groups"] = {
+		lvl = lvlsquish(90, 90, 35),
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(7385, {	-- Pub Crawl (automated)
 					i(87528),	-- Honorary Brewmaster Keg (TOY!)
@@ -55,38 +55,38 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			-- Scenario Maps
 			m(447, {	-- A Brewing Storm
 				-- #if AFTER 6.0.1
-				["crs"] = { 78777 },	-- Lorewalker Shin <Heroic Scenario Storyteller>
+				crs = { 78777 },	-- Lorewalker Shin <Heroic Scenario Storyteller>
 				-- #endif
-				["groups"] = {
+				groups = {
 					n(ACHIEVEMENTS, {
 						ach(7252),	-- A Brewing Storm
 						ach(7257),	-- Don't Shake the Keg
 						applyclassicphase(MOP_PHASE_ESCALATION, ach(8310, {	-- Heroic: A Brewing Storm
-							["timeline"] = { ADDED_5_3_0 },
+							timeline = { ADDED_5_3_0 },
 						})),
 						ach(7261),	-- The Perfect Pour
 						ach(7258),	-- Party of Six
 						crit(21499, {	-- A Brewing Storm
-							["achievementID"] = 6874,	-- Scenaturday (A)
-							["races"] = ALLIANCE_ONLY,
+							achievementID = 6874,	-- Scenaturday (A)
+							races = ALLIANCE_ONLY,
 						}),
 						crit(21499, {	-- A Brewing Storm
-							["achievementID"] = 7509,	-- Scenaturday (H)
-							["races"] = HORDE_ONLY,
+							achievementID = 7509,	-- Scenaturday (H)
+							races = HORDE_ONLY,
 						}),
 					}),
 					n(QUESTS, {
 						q(30567, {	-- Blanche's Boomer Brew
-							["qg"] = 59569,	-- Brewmaster Blanche
-							["coord"] = { 38.8, 31.1, THE_JADE_FOREST },
-							["lvl"] = lvlsquish(90, 90, 35),
+							qg = 59569,	-- Brewmaster Blanche
+							coord = { 38.8, 31.1, THE_JADE_FOREST },
+							lvl = lvlsquish(90, 90, 35),
 						}),
 						q(30442, {	-- Blanche's Boomer Brew
-							["qg"] = 59569,	-- Brewmaster Blanche
-							["coord"] = { 38.0, 30.0, THE_JADE_FOREST },
-							["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-							["isDaily"] = true,
-							["lvl"] = lvlsquish(90, 90, 35),
+							qg = 59569,	-- Brewmaster Blanche
+							coord = { 38.0, 30.0, THE_JADE_FOREST },
+							timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+							isDaily = true,
+							lvl = lvlsquish(90, 90, 35),
 						}),
 					}),
 				},
@@ -111,20 +111,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						crit(20433),	-- Kill Satay Byu
 					}),
 					crit(21504, {	-- Arena of Annihilation
-						["achievementID"] = 6874,	-- Scenaturday (A)
-						["races"] = ALLIANCE_ONLY,
+						achievementID = 6874,	-- Scenaturday (A)
+						races = ALLIANCE_ONLY,
 					}),
 					crit(21504, {	-- Arena of Annihilation
-						["achievementID"] = 7509,	-- Scenaturday (H)
-						["races"] = HORDE_ONLY,
+						achievementID = 7509,	-- Scenaturday (H)
+						races = HORDE_ONLY,
 					}),
 				}),
 				n(QUESTS, {
 					q(31207, {	-- The Arena of Annihilation
-						["qg"] = 63315,	-- Gurgthock
-						["coord"] = { 68.6, 48.3, KUN_LAI_SUMMIT },
-						["lvl"] = 90,
-						["groups"] = {
+						qg = 63315,	-- Gurgthock
+						coord = { 68.6, 48.3, KUN_LAI_SUMMIT },
+						lvl = 90,
+						groups = {
 							i(90466),	-- Maki's Mashing Mace
 							i(90465),	-- Scar-Shell's Scintillating Staff
 							i(90464),	-- Satay's Stabbing Sword
@@ -138,8 +138,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				}),
 			}),
 			applyclassicphase(MOP_PHASE_ONE, m(451, {	-- Assault on Zan'vess
-				["timeline"] = { ADDED_5_1_0 },
-				["groups"] = {
+				timeline = { ADDED_5_1_0 },
+				groups = {
 					n(ACHIEVEMENTS, {
 						ach(8016),	-- Assault on Zan'vess
 						ach(8017),	-- For the Swarm
@@ -147,11 +147,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				},
 			})),
 			applyclassicphase(MOP_PHASE_ESCALATION, m(524, {	-- Battle on the High Seas
-				["timeline"] = { ADDED_5_3_0 },
+				timeline = { ADDED_5_3_0 },
 				-- #if AFTER 6.0.1
-				["crs"] = { 78777 },	-- Lorewalker Shin <Heroic Scenario Storyteller>
+				crs = { 78777 },	-- Lorewalker Shin <Heroic Scenario Storyteller>
 				-- #endif
-				["groups"] = {
+				groups = {
 					n(ACHIEVEMENTS, {
 						a(ach(8314)),	-- Battle on the High Seas (A)
 						h(ach(8315)),	-- Battle on the High Seas (H)
@@ -165,79 +165,79 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				n(ACHIEVEMENTS, {
 					ach(6931, {	-- Binan Village All-Star
 						crit(21330, {	-- Briaw Shan
-							["provider"] = { "n", 63922 },	-- Briaw Shan <Champion Brew Tosser>
-							["coord"] = { 44.6, 65.8, 452 },
+							provider = { "n", 63922 },	-- Briaw Shan <Champion Brew Tosser>
+							coord = { 44.6, 65.8, 452 },
 						}),
 						crit(21331, {	-- Barrel of Fireworks
-							["provider"] = { "n", 63940 },	-- Fireworks Barrel
-							["coords"] = {
+							provider = { "n", 63940 },	-- Fireworks Barrel
+							coords = {
 								{ 37.8, 67.6, 452 },
 								{ 44.0, 63.0, 452 },
 								{ 44.2, 79.6, 452 },
 							},
 						}),
 						crit(21335, {	-- Vale Marksman
-							["provider"] = { "n", 63952 },	-- Vale Marksman
-							["coords"] = {
+							provider = { "n", 63952 },	-- Vale Marksman
+							coords = {
 								{ 41.8, 58.4, 452 },
 								{ 42.0, 72.4, 452 },
 								{ 38.2, 73.0, 452 },
 							},
 						}),
 						crit(21332, {	-- Krasarang Wild Brew
-							["provider"] = { "n", 63929 },	-- Krasarang Wild Brew
-							["coords"] = {
+							provider = { "n", 63929 },	-- Krasarang Wild Brew
+							coords = {
 								{ 37.6, 66.6, 452 },
 								{ 44.0, 62.8, 452 },
 								{ 44.6, 80.0, 452 },
 							},
 						}),
 						crit(21334, {	-- Tian Disciple
-							["provider"] = { "n", 63946 },	-- Tian Disciple
-							["coords"] = {
+							provider = { "n", 63946 },	-- Tian Disciple
+							coords = {
 								{ 37.6, 66.4, 452 },
 								{ 41.6, 61.0, 452 },
 								{ 43.6, 76.6, 452 },
 							},
 						}),
 						crit(21333, {	-- Derpa Derpa
-							["provider"] = { "n", 64017 },	-- Derpa Derpa
-							["coord"] = { 43.8, 68.6, 452 },
+							provider = { "n", 64017 },	-- Derpa Derpa
+							coord = { 43.8, 68.6, 452 },
 						}),
 					}),
 					ach(6923),	-- Brewmoon Festival
 					ach(6930),	-- Yaungolian Barbecue
 					crit(21502, {	-- Brewmoon Festival
-						["achievementID"] = 6874,	-- Scenaturday (A)
-						["races"] = ALLIANCE_ONLY,
+						achievementID = 6874,	-- Scenaturday (A)
+						races = ALLIANCE_ONLY,
 					}),
 					crit(21502, {	-- Brewmoon Festival
-						["achievementID"] = 7509,	-- Scenaturday (H)
-						["races"] = HORDE_ONLY,
+						achievementID = 7509,	-- Scenaturday (H)
+						races = HORDE_ONLY,
 					}),
 				}),
 				n(QUESTS, {
 					q(31611, {	-- The Kun-Lai Kicker
-						["description"] = "If you don't see questgiver in The Veiled Stair, look in the Binan Village to the north.",
-						["qg"] = 63367,	-- Brewmaster Boof
-						["coords"] = {
+						description = "If you don't see questgiver in The Veiled Stair, look in the Binan Village to the north.",
+						qg = 63367,	-- Brewmaster Boof
+						coords = {
 							{ 72.6, 93.0, KUN_LAI_SUMMIT },
 							{ 51.0, 43.73, THE_VEILED_STAIR },
 						},
-						["lvl"] = lvlsquish(90, 90, 20),
+						lvl = lvlsquish(90, 90, 20),
 					}),
 				}),
 			}),
 			applyclassicphase(MOP_PHASE_ESCALATION, m(523, {	-- Blood in the Snow
-				["timeline"] = { ADDED_5_3_0 },
+				timeline = { ADDED_5_3_0 },
 				-- #if AFTER 6.0.1
-				["crs"] = { 78777 },	-- Lorewalker Shin <Heroic Scenario Storyteller>
+				crs = { 78777 },	-- Lorewalker Shin <Heroic Scenario Storyteller>
 				-- #endif
-				["groups"] = {
+				groups = {
 					n(ACHIEVEMENTS, {
 						ach(8316, {	-- Blood in the Snow
 							i(256425, {	-- Shadowforge Stone Chair (DECOR!)
-								["timeline"] = { ADDED_11_2_7 },
+								timeline = { ADDED_11_2_7 },
 							}),
 						}),
 						ach(8329),	-- Heed the Weed
@@ -247,36 +247,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				},
 			})),
 			m(481, {	-- Crypt of Forgotten Kings
-				["maps"] = { 482 },	-- Crypt of Forgotten Kings
+				maps = { 482 },	-- Crypt of Forgotten Kings
 				-- #if AFTER 6.0.1
-				["crs"] = { 78777 },	-- Lorewalker Shin <Heroic Scenario Storyteller>
+				crs = { 78777 },	-- Lorewalker Shin <Heroic Scenario Storyteller>
 				-- #endif
-				["groups"] = {
+				groups = {
 					n(ACHIEVEMENTS, {
 						ach(7522),	-- Crypt of Forgotten Kings
 						ach(7276),	-- Fancy Footwork
 						ach(8368, {	-- Fight Anger with Anger
-							["timeline"] = { ADDED_5_3_0 },	-- CRIEVE NOTE: This was added in 5.3.0, but doable during Phase one of Classic. No Phase requirement required
+							timeline = { ADDED_5_3_0 },	-- CRIEVE NOTE: This was added in 5.3.0, but doable during Phase one of Classic. No Phase requirement required
 						}),
 						applyclassicphase(MOP_PHASE_ESCALATION, ach(8311, {	-- Heroic: Crypt of Forgotten Kings
-							["timeline"] = { ADDED_5_3_0 },
+							timeline = { ADDED_5_3_0 },
 						})),
 						ach(7275),	-- It's a Trap!
 						crit(21503, {	-- Crypt of Forgotten Kings
-							["achievementID"] = 6874,	-- Scenaturday (A)
-							["races"] = ALLIANCE_ONLY,
+							achievementID = 6874,	-- Scenaturday (A)
+							races = ALLIANCE_ONLY,
 						}),
 						crit(21503, {	-- Crypt of Forgotten Kings
-							["achievementID"] = 7509,	-- Scenaturday (H)
-							["races"] = HORDE_ONLY,
+							achievementID = 7509,	-- Scenaturday (H)
+							races = HORDE_ONLY,
 						}),
 					}),
 				},
 			}),
 			applyclassicphase(MOP_PHASE_LANDFALL, m(488, {	-- Dagger in the Dark
-				["maps"] = { 489 },	-- Dagger in the Dark
-				["timeline"] = { ADDED_5_1_0 },
-				["groups"] = {
+				maps = { 489 },	-- Dagger in the Dark
+				timeline = { ADDED_5_1_0 },
+				groups = {
 					n(ACHIEVEMENTS, {
 						ach(8009),	-- Dagger in the Dark
 						ach(7987),	-- No Egg Left Behind
@@ -286,9 +286,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				},
 			})),
 			applyclassicphase(MOP_PHASE_LANDFALL, m(498, {	-- Domination Point / Lion's Landing
-				["timeline"] = { ADDED_5_1_0 },
-				["maps"] = { 486 },	-- Lion's Landing
-				["groups"] = {
+				timeline = { ADDED_5_1_0 },
+				maps = { 486 },	-- Lion's Landing
+				groups = {
 					n(ACHIEVEMENTS, {
 						h(ach(8013)),	-- Domination Point
 						a(ach(8010)),	-- Lion's Landing
@@ -316,12 +316,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				},
 			})),
 			applyclassicphase(MOP_PHASE_ESCALATION, m(520, {	-- Dark Heart of Pandaria
-				["maps"] = { 521 },	-- Dark Heart of Pandaria
+				maps = { 521 },	-- Dark Heart of Pandaria
 				-- #if AFTER 6.0.1
-				["crs"] = { 78777 },	-- Lorewalker Shin <Heroic Scenario Storyteller>
+				crs = { 78777 },	-- Lorewalker Shin <Heroic Scenario Storyteller>
 				-- #endif
-				["timeline"] = { ADDED_5_3_0 },
-				["groups"] = {
+				timeline = { ADDED_5_3_0 },
+				groups = {
 					n(ACHIEVEMENTS, {
 						ach(8319),	-- Accelerated Archaeology
 						ach(8317),	-- Dark Heart of Pandaria
@@ -335,28 +335,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					ach(7267),	-- Perfect Delivery
 					ach(7266),	-- Save it for Later
 					crit(21500, {	-- Greenstone Village
-						["achievementID"] = 6874,	-- Scenaturday (A)
-						["races"] = ALLIANCE_ONLY,
+						achievementID = 6874,	-- Scenaturday (A)
+						races = ALLIANCE_ONLY,
 					}),
 					crit(21500, {	-- Greenstone Village
-						["achievementID"] = 7509,	-- Scenaturday (H)
-						["races"] = HORDE_ONLY,
+						achievementID = 7509,	-- Scenaturday (H)
+						races = HORDE_ONLY,
 					}),
 				}),
 				n(QUESTS, {
 					q(31613, {	-- Volatile Greenstone Brew
-						["qg"] = 62321,	-- Brewmaster Tzu
-						["coord"] = { 47.4, 37.0, THE_JADE_FOREST },
-						["lvl"] = lvlsquish(90, 90, 35),
+						qg = 62321,	-- Brewmaster Tzu
+						coord = { 47.4, 37.0, THE_JADE_FOREST },
+						lvl = lvlsquish(90, 90, 35),
 					}),
 				}),
 			}),
 			applyclassicphase(MOP_PHASE_ESCALATION, m(522, {	-- The Secrets of Ragefire
 				-- #if AFTER 6.0.1
-				["crs"] = { 78777 },	-- Lorewalker Shin <Heroic Scenario Storyteller>
+				crs = { 78777 },	-- Lorewalker Shin <Heroic Scenario Storyteller>
 				-- #endif
-				["timeline"] = { ADDED_5_3_0 },
-				["groups"] = {
+				timeline = { ADDED_5_3_0 },
+				groups = {
 					n(ACHIEVEMENTS, {
 						ach(8327),	-- Heroic: The Secrets of Ragefire
 						ach(8295),	-- The Few, the Proud, the Gob Squad
@@ -365,9 +365,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				},
 			})),
 			n(THERAMORES_FALL, {
-				["maps"] = { 416 },	-- Theramore's Fall scenario map is named Dustwallow Marsh
-				["groups"] = {
-					n(ACHIEVEMENTS, bubbleDown({ ["lvl"] = lvlsquish(90, 90, 35) }, {
+				maps = { 416 },	-- Theramore's Fall scenario map is named Dustwallow Marsh
+				groups = {
+					n(ACHIEVEMENTS, bubbleDown({ lvl = lvlsquish(90, 90, 35) }, {
 						a(ach(7526)),	-- Kite Flight (A)
 						h(ach(7529)),	-- Kite Fight (H)
 						a(ach(7527)),	-- No Tank You (A)
@@ -375,12 +375,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						a(ach(7523)),	-- Theramore's Fall (A)
 						h(ach(7524)),	-- Theramore's Fall (H)
 						crit(21023, {	-- Theramore's Fall
-							["achievementID"] = 6874,	-- Scenaturday (A)
-							["races"] = ALLIANCE_ONLY,
+							achievementID = 6874,	-- Scenaturday (A)
+							races = ALLIANCE_ONLY,
 						}),
 						crit(21506, {	-- Theramore's Fall
-							["achievementID"] = 7509,	-- Scenaturday (H)
-							["races"] = HORDE_ONLY,
+							achievementID = 7509,	-- Scenaturday (H)
+							races = HORDE_ONLY,
 						}),
 					})),
 				},
@@ -393,20 +393,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					ach(7232),	-- The Keg Runner
 					ach(7249),	-- Unga Ingoo
 					crit(21501, {	-- Unga Ingoo
-						["achievementID"] = 6874,	-- Scenaturday (A)
-						["races"] = ALLIANCE_ONLY,
+						achievementID = 6874,	-- Scenaturday (A)
+						races = ALLIANCE_ONLY,
 					}),
 					crit(21501, {	-- Unga Ingoo
-						["achievementID"] = 7509,	-- Scenaturday (H)
-						["races"] = HORDE_ONLY,
+						achievementID = 7509,	-- Scenaturday (H)
+						races = HORDE_ONLY,
 					}),
 				}),
 				n(QUESTS, {
 					q(31058, {	-- The Funky Monkey Brew
-						["qg"] = 65289,	-- Brewmaster Bo
-						["coord"] = { 54.4, 75.2, KRASARANG_WILDS },
-						["maps"] = { 450 },	-- Unga Ingoo
-						["lvl"] = lvlsquish(90, 90, 35),
+						qg = 65289,	-- Brewmaster Bo
+						coord = { 54.4, 75.2, KRASARANG_WILDS },
+						maps = { 450 },	-- Unga Ingoo
+						lvl = lvlsquish(90, 90, 35),
 					}),
 				}),
 				n(TREASURES, {
@@ -415,17 +415,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			}),
 			n(REWARDS, {
 				-- #if AFTER 6.0.1
-				["description"] = "Mini Guide to farm both boxes:\nStep 1: Create a class-trial character.\nStep 2: Enter the portal room to travel to Jade Forest & fly to the Vale of Eternal Blossoms capital.\nStep 3: Pick up the Quest 'Heroic Deeds' in the middle of the capital.\nStep 4: Fly to the Seat of Knowledge and pick up the quest 'The King and the Council'.\nStep 5: Complete the 'Blood in the Snow' scenario on heroic.\nStep 6: Turn in the quest 'The King and the Council' and pick up the follow-up quest 'The Warchief and the Darkness'.\nStep 7: Complete the \"Dark heart of Pandaria\" scenario on either normal or heroic.\nStep 8: Turn in all quests, open all the boxes, logout & delete the trial character. Repeat Step 1-8.\nYou can create 4 trial characters per hour and 12 per week (based on realtime).\nBonus: The Trial Char can also be used to kill the World Boss on the Timless Isle. Talk to Chromie at the Seat Entrance for a free teleport.",
+				description = "Mini Guide to farm both boxes:\nStep 1: Create a class-trial character.\nStep 2: Enter the portal room to travel to Jade Forest & fly to the Vale of Eternal Blossoms capital.\nStep 3: Pick up the Quest 'Heroic Deeds' in the middle of the capital.\nStep 4: Fly to the Seat of Knowledge and pick up the quest 'The King and the Council'.\nStep 5: Complete the 'Blood in the Snow' scenario on heroic.\nStep 6: Turn in the quest 'The King and the Council' and pick up the follow-up quest 'The Warchief and the Darkness'.\nStep 7: Complete the \"Dark heart of Pandaria\" scenario on either normal or heroic.\nStep 8: Turn in all quests, open all the boxes, logout & delete the trial character. Repeat Step 1-8.\nYou can create 4 trial characters per hour and 12 per week (based on realtime).\nBonus: The Trial Char can also be used to kill the World Boss on the Timless Isle. Talk to Chromie at the Seat Entrance for a free teleport.",
 				-- #endif
-				["groups"] = {
+				groups = {
 					-- #if MOP
 					applyclassicphase(MOP_PHASE_ONE, container(89613, {	-- Cache of Treasures
-						["description"] = "Rewarded for completing a random scenario.",
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_1_0 },
+						description = "Rewarded for completing a random scenario.",
+						timeline = { ADDED_5_0_4, REMOVED_5_1_0 },
 						-- #if ANYCLASSIC
-						["OnUpdate"] = REMOVED_WITH_LANDFALL_ONUPDATE,
+						OnUpdate = REMOVED_WITH_LANDFALL_ONUPDATE,
 						-- #endif
-						["groups"] = {
+						groups = {
 							n(BACK, {
 								i(89503),	-- Greenstone Drape
 								i(89501),	-- Brewmoon Cloak
@@ -527,11 +527,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						},
 					})),
 					applyclassicphase(MOP_PHASE_LANDFALL, container(92813, {	-- Greater Cache of Treasures
-						["timeline"] = { ADDED_5_1_0, REMOVED_5_3_0 },
+						timeline = { ADDED_5_1_0, REMOVED_5_3_0 },
 						-- #if ANYCLASSIC
-						["OnUpdate"] = REMOVED_WITH_ESCALATION_ONUPDATE,
+						OnUpdate = REMOVED_WITH_ESCALATION_ONUPDATE,
 						-- #endif
-						["groups"] = {
+						groups = {
 							n(BACK, {
 								i(92881),	-- Bladesnap Drape
 								i(89503),	-- Greenstone Drape
@@ -540,14 +540,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(89501),	-- Brewmoon Cloak
 								i(92879),	-- Bubblebrew Cloak
 								i(93067, {	-- Firebinder Cloak						— 2019-03-05//
-									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0	-- Gold 8th May 2025
-									-- ["description"] = "Extremely Rare",
+									timeline = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0	-- Gold 8th May 2025
+									-- description = "Extremely Rare",
 								}),
 								i(89500),	-- Fireheart Cloak
 								i(92878),	-- Lavasoul Cloak
 								i(93113, {	-- Lightning Rod Drape					— 2022-03-24
-									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0	-- Gold 8th May 2025
-									-- ["description"] = "Extremely Rare",
+									timeline = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0	-- Gold 8th May 2025
+									-- description = "Extremely Rare",
 								}),
 								i(89502),	-- Stormbound Cloak
 								i(92880),	-- Stormcrier Cloak
@@ -829,29 +829,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					})),
 					-- #endif
 					applyclassicphase(MOP_PHASE_ESCALATION, container(98133, {	-- Greater Cache of Treasures
-						["description"] = "Rewarded for completing |cFFFFD700The King and the Council|r and |cFFFFD700The Warchief and the Darkness|r quests.",
+						description = "Rewarded for completing |cFFFFD700The King and the Council|r and |cFFFFD700The Warchief and the Darkness|r quests.",
 						-- #if AFTER WOD
-						["providers"] = {
+						providers = {
 							{ "i", 92813 },	-- Greater Cache of Treasures
 							{ "i", 89613 },	-- Cache of Treasures
 						},
 						-- #endif
-						["timeline"] = { ADDED_5_3_0 },
+						timeline = { ADDED_5_3_0 },
 						-- no longer available to queue random scenarios post 9.0 squish
-						["groups"] = {
+						groups = {
 							n(QUESTS, {
 								i(97979, {	-- The Bear and the Lady Fair (QI!)
-									["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+									timeline = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 									-- Wouter NOTE: in MoP Classic, this started dropping in Phase 2 (Landfall) already
 									-- #if BEFORE 5.5.3
-									["description"] = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
+									description = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
 									-- #endif
 								}),
 								i(97982, {	-- Vial of Reddish Ooze (QI!)
-									["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+									timeline = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
 									-- Wouter NOTE: in MoP Classic, this started dropping in Phase 2 (Landfall) already
 									-- #if BEFORE 5.5.3
-									["description"] = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
+									description = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
 									-- #endif
 								}),
 							}),
@@ -863,14 +863,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(89501),	-- Brewmoon Cloak
 								i(92879),	-- Bubblebrew Cloak
 								i(93067, {	-- Firebinder Cloak						— 2019-03-05//
-									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0	-- Gold 8th May 2025
-									-- ["description"] = "Extremely Rare",
+									timeline = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0	-- Gold 8th May 2025
+									-- description = "Extremely Rare",
 								}),
 								i(89500),	-- Fireheart Cloak
 								i(92878),	-- Lavasoul Cloak
 								i(93113, {	-- Lightning Rod Drape					— 2022-03-24
-									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0	-- Gold 8th May 2025
-									-- ["description"] = "Extremely Rare",
+									timeline = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0	-- Gold 8th May 2025
+									-- description = "Extremely Rare",
 								}),
 								i(89502),	-- Stormbound Cloak
 								i(92880),	-- Stormcrier Cloak
@@ -1151,10 +1151,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						},
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, container(98546, {	-- Bulging Heroic Cache of Treasures
-						["description"] = "Rewarded for completing |cFFFFD700Heroic Deeds|r quest.",
-						["timeline"] = { ADDED_5_3_0 },
+						description = "Rewarded for completing |cFFFFD700Heroic Deeds|r quest.",
+						timeline = { ADDED_5_3_0 },
 						-- no longer available to queue random scenarios post 9.0 squish
-						["groups"] = {
+						groups = {
 							n(BACK, {
 								i(98237),	-- Doubtcrusher Drape
 								i(98226),	-- Heartlander's Cloak
@@ -1308,28 +1308,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			}),
 			n(SCENARIO_COMPLETION, {
 				applyclassicphase(MOP_PHASE_ONE, i(89613, {	-- Cache of Treasures [Looks like this was deprecated in favor of #92813)
-					["timeline"] = { ADDED_5_0_4, REMOVED_5_1_0 },
+					timeline = { ADDED_5_0_4, REMOVED_5_1_0 },
 					-- #if ANYCLASSIC
-					["OnUpdate"] = REMOVED_WITH_LANDFALL_ONUPDATE,
+					OnUpdate = REMOVED_WITH_LANDFALL_ONUPDATE,
 					-- #endif
 				})),
 				applyclassicphase(MOP_PHASE_LANDFALL, i(92813, {	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133)
-					["timeline"] = { ADDED_5_1_0, REMOVED_5_3_0 },
+					timeline = { ADDED_5_1_0, REMOVED_5_3_0 },
 					-- #if ANYCLASSIC
-					["OnUpdate"] = REMOVED_WITH_ESCALATION_ONUPDATE,
+					OnUpdate = REMOVED_WITH_ESCALATION_ONUPDATE,
 					-- #endif
 				})),
 				applyclassicphase(MOP_PHASE_ESCALATION, i(98133, {	-- Greater Cache of Treasures
-					["timeline"] = { ADDED_5_3_0, REMOVED_9_0_1 },
+					timeline = { ADDED_5_3_0, REMOVED_9_0_1 },
 					-- no longer available to queue random scenarios post 9.0 squish
 				})),
 				applyclassicphase(MOP_PHASE_ESCALATION, i(98134, {	-- Heroic Cache of Treasures
-					["timeline"] = { ADDED_5_3_0, REMOVED_9_0_1 },
-					["sym"] = {{"select","itemID",98546},{"groupfill"}},
+					timeline = { ADDED_5_3_0, REMOVED_9_0_1 },
+					sym = {{"select","itemID",98546},{"groupfill"}},
 					-- no longer available to queue random scenarios post 9.0 squish
 				})),
 			}),
-			filter(TITLES, sharedData({ ["collectible"] = false }, {
+			filter(TITLES, sharedData({ collectible = false }, {
 				title(224),	-- Gob Squad Recruit <Name>
 				title(226),	-- Gob Squad Commando <Name>
 			})),
@@ -1337,9 +1337,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_3_0 } }, {
 	n(SCENARIOS, {
-		q(31987, { ["timeline"] = { ADDED_5_0_4 } }),	-- LFGDungeons - Theramore Launch Event
+		q(31987, { timeline = { ADDED_5_0_4 } }),	-- LFGDungeons - Theramore Launch Event
 		q(32817),	-- Complete "Loyalty" Scenario - triggers when turning in "The King and the Council"
 		q(32818),	-- Complete "The Dark Heart of Pandaria" Scenario - triggers when turning in "The Warchief and the Darkness"
 		q(32898),	-- Daily Scenario Random (1st) (Mists)

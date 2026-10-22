@@ -4,10 +4,10 @@
 
 root(ROOTS.Zones, m(KALIMDOR, {
 	n(ACHIEVEMENTS, {
-		header(HEADERS.Achievement, 61051, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {	-- Family Battler of Kalimdor
+		header(HEADERS.Achievement, 61051, bubbleDownSelf({ timeline = { ADDED_12_0_0 } }, {	-- Family Battler of Kalimdor
 			petbattle(ach(61051, {	-- Family Battler of Kalimdor (automated)
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					61041,	-- Aquatic Battler of Kalimdor
 					61042,	-- Beast Battler of Kalimdor
 					61043,	-- Critter Battler of Kalimdor
@@ -19,8 +19,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					61049,	-- Mechanical Battler of Kalimdor
 					61050,	-- Undead Battler of Kalimdor
 				}},
-				["timeline"] = { ADDED_12_0_0 },
-				["groups"] = { i(258737) },	-- Moon Darter (PET!)
+				timeline = { ADDED_12_0_0 },
+				groups = { i(258737) },	-- Moon Darter (PET!)
 			})),
 			petbattle(ach(61041)),	-- Aquatic Battler of Kalimdor
 			petbattle(ach(61042)),	-- Beast Battler of Kalimdor

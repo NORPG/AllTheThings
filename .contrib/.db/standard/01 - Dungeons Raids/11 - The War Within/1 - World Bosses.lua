@@ -87,22 +87,22 @@ InstanceHelper.Boss, InstanceHelper.BossWorldQuest
 
 InstanceHelper.Coords = EncounterCoords
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
 	n(WORLD_BOSSES, {
-		["isRaid"] = true,
-		["groups"] = bubbleDownFiltered({
-			["isRaid"] = true,
-			["isWeekly"] = true,
+		isRaid = true,
+		groups = bubbleDownFiltered({
+			isRaid = true,
+			isWeekly = true,
 		},FILTERFUNC_questIDORencounterID,{
 			n(COMMON_BOSS_DROPS, {
-				["crs"] = appendAllGroups(
+				crs = appendAllGroups(
 					nil,
 					EncounterToCRS[AOH],
 					EncounterToCRS[KORDAC],
 					EncounterToCRS[ORTA],
 					EncounterToCRS[SHURRAI]
 				),
-				["groups"] = {
+				groups = {
 					i(225733),	-- Abyssal Tendril Tights
 					i(225745),	-- Crystal Star Cuisses
 					i(225732),	-- Deep Dweller's Tabi
@@ -114,40 +114,40 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				},
 			}),
 			Boss(ORTA, {	-- Orta <The Broken Mountain>
-				["questID"] = 83468,
+				questID = 83468,
 			}),
 			BossWorldQuest(ORTA, 81624),	-- Orta, the Broken Mountain (WQ)
 			Boss(AOH, {	-- Aggregation of Horrors
-				["questID"] = 83466,
+				questID = 83466,
 			}),
 			BossWorldQuest(AOH, 82653),	-- Aggregation of Horrors (WQ)
 			Boss(KORDAC, {	-- Kordac <Dormant Protector>
-				-- ["questID"] = xx,
+				-- questID = xx,
 			}),
 			BossWorldQuest(KORDAC, 81630),	-- Activation Protocol (WQ)
 			Boss(SHURRAI, {	-- Shurrai <Atrocity of the Undersea>
-				["questID"] = 83467,
+				questID = 83467,
 			}),
 			BossWorldQuest(SHURRAI, 81653),	-- Shurrai, Atrocity of the Undersea (WQ)
 			Boss(GOBFATHER, {	-- The Gobfather <Demodome Champion>
-				["questID"] = 85089,
-				["timeline"] = { ADDED_11_1_0_SEASONSTART },
+				questID = 85089,
+				timeline = { ADDED_11_1_0_SEASONSTART },
 			}),
 			BossWorldQuest(GOBFATHER, 85088, {	-- The Main Event (WQ)
-				["timeline"] = { ADDED_11_1_0_SEASONSTART },
+				timeline = { ADDED_11_1_0_SEASONSTART },
 			}),
 			Boss(RESHANOR, {	-- Reshanor <The Untethered>
-				["questID"] = 87352,
-				["timeline"] = { ADDED_11_2_0 },
+				questID = 87352,
+				timeline = { ADDED_11_2_0 },
 			}),
 			BossWorldQuest(RESHANOR, 87354, {	-- Reshanor, the Untethered (WQ)
-				["timeline"] = { ADDED_11_2_0 },
+				timeline = { ADDED_11_2_0 },
 			}),
 		}),
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_1_0_SEASONSTART } }, {
 	n(WORLD_BOSSES, {
 		q(89401),	-- First weekly Gobfather account kill for warbound loot
 		q(90783),	-- First weekly Reshanor account kill for warbound loot

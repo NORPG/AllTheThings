@@ -2,14 +2,14 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {
+root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_2_0_SEASONSTART } }, {
 	n(SEASON_ASTRAL, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 			ach(41048, {	-- Astral Weapons of Conquest
 				i(232616, {	-- Astral Gladiator's Coin Pouch
 					i(232600, {	-- Astral Gladiator's Weapon Token
 						--[[ Might need another sym
-						["sym"] = {
+						sym = {
 							{"select", "npcID", 219222 },	-- Lalandi <Conquest Quartermaster>
 							{"pop"},
 							{"where", "headerID", WEAPONS},
@@ -20,12 +20,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 			ach(42042, {	-- Astral Combatant
-				["races"] = ALLIANCE_ONLY,
-				["collectible"] = false,
+				races = ALLIANCE_ONLY,
+				collectible = false,
 			}),
 			ach(42043, {	-- Astral Combatant
-				["races"] = HORDE_ONLY,
-				["collectible"] = false,
+				races = HORDE_ONLY,
+				collectible = false,
 			}),
 			ach(42036, {	-- Astral Gladiator: The War Within Season 3
 				title(633),	-- Astral Gladiator <Name>
@@ -50,22 +50,22 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			}),
 			-- RBG
 			ach(42035, {	-- Astral Marshal: The War Within Season 3
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				races = ALLIANCE_ONLY,
+				groups = {
 					title(635),	-- Astral Marshal <Name>
 				},
 			}),
 			ach(42034, {	-- Astral Warlord: The War Within Season 3
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				races = HORDE_ONLY,
+				groups = {
 					title(632),	-- Astral Warlord <Name>
 				},
 			}),
 			ach(42038, {	-- Hero of the Alliance: Astral
-				["races"]= ALLIANCE_ONLY,
+				races= ALLIANCE_ONLY,
 			}),
 			ach(42037, {	-- Hero of the Horde: Astral
-				["races"]= HORDE_ONLY,
+				races= HORDE_ONLY,
 			}),
 			ach(42024, {	-- Strategist: The War Within Season 3
 				i(242636),	-- Astral Legend's Pennant (TOY!)
@@ -75,26 +75,26 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				i(242636),	-- Astral Legend's Pennant (TOY!)
 			}),
 			ach(42044, {	-- Battle Mender: The War Within Season 3
-				["classes"] = HEALERS,
+				classes = HEALERS,
 			}),
 			ach(42033, {	-- Astral Legend: The War Within Season 3
 				title(634),	-- Astral Legend <Name>
 			}),
 			-- Fashion
-			ach(42800, { ["timeline"] = { ADDED_11_2_0_SEASONSTART } }),	-- Astral Attire
+			ach(42800, { timeline = { ADDED_11_2_0_SEASONSTART } }),	-- Astral Attire
 		})),
-		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
+		filter(MOUNTS, bubbleDownSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 			i(243157, {	-- Vicious Void Creeper [A] (MOUNT!)
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			i(243159, {	-- Vicious Void Creeper [H] (MOUNT!)
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 		})),
 		n(PVP_WARMODE, {
 			n(219213, {	-- Gilderann <War Mode Quartermaster>
-				["coord"] = { 55.2, 76.8, DORNOGAL },
-				["groups"] = sharedData({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+				coord = { 55.2, 76.8, DORNOGAL },
+				groups = sharedData({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 					-- #if AFTER MID
 					moh(80, iensemble(251247)),	-- Arsenal: Astral Warmonger's Weapons
 					moh(12, iensemble(251243)),	-- Ensemble: Astral Warmonger's Cloth Armor
@@ -102,13 +102,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					moh(12, iensemble(251245)),	-- Ensemble: Astral Warmonger's Mail Armor
 					moh(12, iensemble(251246)),	-- Ensemble: Astral Warmonger's Plate Armor
 					-- #endif
-					filter(BACK_F, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
+					filter(BACK_F, sharedDataSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 						bloody(525, i(230695)),	-- Astral Warmonger's Cape
 						bloody(525, i(230697)),	-- Astral Warmonger's Cloak
 						bloody(525, i(230698)),	-- Astral Warmonger's Drape
 						bloody(525, i(230696)),	-- Astral Warmonger's Shawl
 					})),
-					filter(CLOTH, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
+					filter(CLOTH, sharedDataSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 						bloody(525, i(230669)),	-- Astral Warmonger's Bindings
 						bloody(700, i(230668)),	-- Astral Warmonger's Cord
 						bloody(875, i(230663)),	-- Astral Warmonger's Garb
@@ -118,7 +118,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(230667)),	-- Astral Warmonger's Pants
 						bloody(700, i(230664)),	-- Astral Warmonger's Slippers
 					})),
-					filter(LEATHER, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
+					filter(LEATHER, sharedDataSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 						bloody(700, i(230675)),	-- Astral Warmonger's Belt
 						bloody(700, i(230671)),	-- Astral Warmonger's Boots
 						bloody(875, i(230674)),	-- Astral Warmonger's Breeches
@@ -128,7 +128,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(700, i(230678)),	-- Astral Warmonger's Shoulderguard
 						bloody(525, i(230676)),	-- Astral Warmonger's Wraps
 					})),
-					filter(MAIL, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
+					filter(MAIL, sharedDataSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 						bloody(525, i(230694)),	-- Astral Warmonger's Armguards
 						bloody(875, i(230687)),	-- Astral Warmonger's Chestguard
 						bloody(700, i(230693)),	-- Astral Warmonger's Cinch
@@ -138,7 +138,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(875, i(230690)),	-- Astral Warmonger's Helm
 						bloody(875, i(230691)),	-- Astral Warmonger's Leggings
 					})),
-					filter(PLATE, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
+					filter(PLATE, sharedDataSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 						bloody(525, i(230686)),	-- Astral Warmonger's Bracers
 						bloody(700, i(230685)),	-- Astral Warmonger's Clasp
 						bloody(875, i(230680)),	-- Astral Warmonger's Cuirass
@@ -148,7 +148,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(700, i(230681)),	-- Astral Warmonger's Sabatons
 						bloody(700, i(230684)),	-- Astral Warmonger's Spaulders
 					})),
-					n(WEAPONS, sharedDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
+					n(WEAPONS, sharedDataSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 						bloody(525, i(230712)),	-- Astral Warmonger's Aegis
 						bloody(875, i(230699)),	-- Astral Warmonger's Battleaxe
 						bloody(1750, i(230706)),	-- Astral Warmonger's Battlestaff
@@ -175,11 +175,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 		}),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH, ADDED_12_0_1_LAUNCH } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH, ADDED_12_0_1_LAUNCH } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
-				["coord"] = { 55.0, 76.5, DORNOGAL },
-				["groups"] = sharedData({
-					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				coord = { 55.0, 76.5, DORNOGAL },
+				groups = sharedData({
+					timeline = { ADDED_12_0_1_LAUNCH },
 				}, {
 					moh(80, iensemble(232870)),	-- Arsenal: Astral Aspirant's Weapons
 					moh(12, iensemble(232808)),	-- Ensemble: Astral Aspirant's Cloth Armor
@@ -189,9 +189,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 			n(219217, {	-- Velerd <Honor Quartermaster>
-				["coord"] = { 55.0, 76.5, DORNOGAL },
-				["groups"] = bubbleDownFiltered({
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+				coord = { 55.0, 76.5, DORNOGAL },
+				groups = bubbleDownFiltered({
+					timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 				},FILTERFUNC_itemID,{
 					filter(BACK_F, {
 						honor(525, i(230365)),	-- Astral Aspirant's Cape
@@ -310,63 +310,63 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH, ADDED_12_0_1_LAUNCH } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH, ADDED_12_0_1_LAUNCH } }, {
 			n(219222, {	-- Lalandi <Conquest Quartermaster>
-				["coord"] = { 55.1, 76.2, DORNOGAL },
-				["ItemAppearanceModifierID"] = 159,
-				["groups"] = sharedData({
-					["cost"] = { { "i", MOH, 12 } },
-					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				coord = { 55.1, 76.2, DORNOGAL },
+				ItemAppearanceModifierID = 159,
+				groups = sharedData({
+					cost = { { "i", MOH, 12 } },
+					timeline = { ADDED_12_0_1_LAUNCH },
 				}, {
 					iensemble(232871, {	-- Arsenal: Astral Gladiator's Weapons
-						["cost"] = { { "i", MOH, 80 } },
+						cost = { { "i", MOH, 80 } },
 					}),
 					iensemble(232812, {	-- Ensemble: Astral Gladiator's Death Knight Armor
-						["classes"] = { DEATHKNIGHT },
+						classes = { DEATHKNIGHT },
 					}),
 					iensemble(232813, {	-- Ensemble: Astral Gladiator's Demon Hunter Armor
-						["classes"] = { DEMONHUNTER },
+						classes = { DEMONHUNTER },
 					}),
 					iensemble(232814, {	-- Ensemble: Astral Gladiator's Druid Armor
-						["classes"] = { DRUID },
+						classes = { DRUID },
 					}),
 					iensemble(232815, {	-- Ensemble: Astral Gladiator's Evoker Armor
-						["classes"] = { EVOKER },
+						classes = { EVOKER },
 					}),
 					iensemble(232816, {	-- Ensemble: Astral Gladiator's Hunter Armor
-						["classes"] = { HUNTER },
+						classes = { HUNTER },
 					}),
 					iensemble(232817, {	-- Ensemble: Astral Gladiator's Mage Armor
-						["classes"] = { MAGE },
+						classes = { MAGE },
 					}),
 					iensemble(232818, {	-- Ensemble: Astral Gladiator's Monk Armor
-						["classes"] = { MONK },
+						classes = { MONK },
 					}),
 					iensemble(232819, {	-- Ensemble: Astral Gladiator's Paladin Armor
-						["classes"] = { PALADIN },
+						classes = { PALADIN },
 					}),
 					iensemble(232820, {	-- Ensemble: Astral Gladiator's Priest Armor
-						["classes"] = { PRIEST },
+						classes = { PRIEST },
 					}),
 					iensemble(232821, {	-- Ensemble: Astral Gladiator's Rogue Armor
-						["classes"] = { ROGUE },
+						classes = { ROGUE },
 					}),
 					iensemble(232822, {	-- Ensemble: Astral Gladiator's Shaman Armor
-						["classes"] = { SHAMAN },
+						classes = { SHAMAN },
 					}),
 					iensemble(232823, {	-- Ensemble: Astral Gladiator's Warlock Armor
-						["classes"] = { WARLOCK },
+						classes = { WARLOCK },
 					}),
 					iensemble(232824, {	-- Ensemble: Astral Gladiator's Warrior Armor
-						["classes"] = { WARRIOR },
+						classes = { WARRIOR },
 					}),
 				}),
 			}),
 			n(219222, {	-- Lalandi <Conquest Quartermaster>
-				["coord"] = { 55.1, 76.2, DORNOGAL },
-				["ItemAppearanceModifierID"] = 159,
-				["groups"] = bubbleDownFiltered({
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+				coord = { 55.1, 76.2, DORNOGAL },
+				ItemAppearanceModifierID = 159,
+				groups = bubbleDownFiltered({
+					timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 				},FILTERFUNC_itemID,{
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
@@ -650,12 +650,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					}),
 					filter(MISC, {
 						i(254308, {	-- Conqueror's Astral Lacquer
-							["cost"] = { { "c", CONQUEST, 700 } },
-							["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },
+							cost = { { "c", CONQUEST, 700 } },
+							timeline = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },
 						}),
 						i(254307, {	-- Conqueror's Astral Varnish
-							["cost"] = { { "c", CONQUEST, 875 } },
-							["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },
+							cost = { { "c", CONQUEST, 875 } },
+							timeline = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },
 						}),
 					}),
 					filter(NECK_F, {
@@ -695,15 +695,15 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						conquest(525, i(230657)),	-- Astral Gladiator's Bulwark
 					}),
 					i(230722, {	-- Astral Equipment Chest
-						["timeline"] = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },
+						timeline = { ADDED_11_2_5, REMOVED_12_0_1_LAUNCH },
 					}),
 				}),
 			}),
-			o(456208, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {	-- The Catalyst
-				["coord"] = { 50.0, 54.2, DORNOGAL },
-				["modelScale"] = 4,
-				["catalystID"] = 11,	-- ItemBonus.Value_0 TWW:S3
-				["groups"] = bubbleDown({ ["modID"] = 14 }, {
+			o(456208, bubbleDownSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {	-- The Catalyst
+				coord = { 50.0, 54.2, DORNOGAL },
+				modelScale = 4,
+				catalystID = 11,	-- ItemBonus.Value_0 TWW:S3
+				groups = bubbleDown({ modID = 14 }, {
 					cl(DEATHKNIGHT, {
 						i(237623),	-- Hollow Sentinel's Wingdrape
 						i(237624),	-- Hollow Sentinel's Stonecuffs
@@ -851,8 +851,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			})),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH, ADDED_12_0_1_LAUNCH }, ["bonusID"] = 7532 }, {
-			n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
+		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH, ADDED_12_0_1_LAUNCH }, bonusID = 7532 }, {
+			n(CLASSES, bubbleDownSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 				cl(DEATHKNIGHT, {
 					i(230591),	-- Astral Gladiator's Cloak
 					i(230575),	-- Astral Gladiator's Chestguard
@@ -998,63 +998,63 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			})),
 			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
-				["coord"] = { 59.8, 69.3, DORNOGAL },
-				["groups"] = sharedData({
-					["cost"] = { { "i", MOH, 12 } },
-					["u"] = ELITE_PVP_REQUIREMENT,
-					["timeline"] = { ADDED_12_0_1_LAUNCH },
+				coord = { 59.8, 69.3, DORNOGAL },
+				groups = sharedData({
+					cost = { { "i", MOH, 12 } },
+					u = ELITE_PVP_REQUIREMENT,
+					timeline = { ADDED_12_0_1_LAUNCH },
 				}, {
 					iensemble(232872, {	-- Arsenal: Elite Astral Gladiator's Weapons
-						["cost"] = { { "i", MOH, 80 } },
+						cost = { { "i", MOH, 80 } },
 					}),
 					iensemble(232825, {	-- Ensemble: Elite Astral Gladiator's Death Knight Armor
-						["classes"] = { DEATHKNIGHT },
+						classes = { DEATHKNIGHT },
 					}),
 					iensemble(232826, {	-- Ensemble: Elite Astral Gladiator's Demon Hunter Armor
-						["classes"] = { DEMONHUNTER },
+						classes = { DEMONHUNTER },
 					}),
 					iensemble(232827, {	-- Ensemble: Elite Astral Gladiator's Druid Armor
-						["classes"] = { DRUID },
+						classes = { DRUID },
 					}),
 					iensemble(232828, {	-- Ensemble: Elite Astral Gladiator's Evoker Armor
-						["classes"] = { EVOKER },
+						classes = { EVOKER },
 					}),
 					iensemble(232829, {	-- Ensemble: Elite Astral Gladiator's Hunter Armor
-						["classes"] = { HUNTER },
+						classes = { HUNTER },
 					}),
 					iensemble(232830, {	-- Ensemble: Elite Astral Gladiator's Mage Armor
-						["classes"] = { MAGE },
+						classes = { MAGE },
 					}),
 					iensemble(232831, {	-- Ensemble: Elite Astral Gladiator's Monk Armor
-						["classes"] = { MONK },
+						classes = { MONK },
 					}),
 					iensemble(232832, {	-- Ensemble: Elite Astral Gladiator's Paladin Armor
-						["classes"] = { PALADIN },
+						classes = { PALADIN },
 					}),
 					iensemble(232833, {	-- Ensemble: Elite Astral Gladiator's Priest Armor
-						["classes"] = { PRIEST },
+						classes = { PRIEST },
 					}),
 					iensemble(232834, {	-- Ensemble: Elite Astral Gladiator's Rogue Armor
-						["classes"] = { ROGUE },
+						classes = { ROGUE },
 					}),
 					iensemble(232835, {	-- Ensemble: Elite Astral Gladiator's Shaman Armor
-						["classes"] = { SHAMAN },
+						classes = { SHAMAN },
 					}),
 					iensemble(232836, {	-- Ensemble: Elite Astral Gladiator's Warlock Armor
-						["classes"] = { WARLOCK },
+						classes = { WARLOCK },
 					}),
 					iensemble(232837, {	-- Ensemble: Elite Astral Gladiator's Warrior Armor
-						["classes"] = { WARRIOR },
+						classes = { WARRIOR },
 					}),
 				}),
 			}),
 			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
-				["coord"] = { 59.8, 69.3, DORNOGAL },
-				["groups"] = bubbleDownFiltered({
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+				coord = { 59.8, 69.3, DORNOGAL },
+				groups = bubbleDownFiltered({
+					timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 				},FILTERFUNC_itemID,{
 					honor(100, i(232908, {	-- Astral Gladiator's Tabard
-						["sourceAchievements"] = { 41027 },	-- Elite: The War Within Season 3
+						sourceAchievements = { 41027 },	-- Elite: The War Within Season 3
 					})),
 					moh(5, i(248364)),	-- Astral Gladiator's Axe
 					moh(10, i(248349)),	-- Astral Gladiator's Battlestaff
@@ -1079,8 +1079,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 		})),
 		n(REWARDS, {
 			i(230284, {	-- Artisan's Consortium Pamphlet (QS!/QI!)
-				["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
-				["description"] = "Rewarded within the first few wins in queued PvP Content.",
+				timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+				description = "Rewarded within the first few wins in queued PvP Content.",
 			}),
 		}),
 	}),

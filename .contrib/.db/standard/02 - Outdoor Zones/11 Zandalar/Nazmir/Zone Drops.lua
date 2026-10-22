@@ -2,12 +2,12 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 	m(NAZMIR, {
 		n(ZONE_DROPS, {
 			-- Note: Don't sort these. They get listed by Weapons -> Cloth -> Leather -> Mail -> Plate
 			i(163575, {	-- Leaping Veinseeker (MOUNT!)
-				["crs"] = {
+				crs = {
 					136293,	-- Blood Troll Berserker
 					120607,	-- Blood Troll Brutalizer
 					126888,	-- Blood Witch Vashera
@@ -62,32 +62,32 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			i(154810),	-- Torgashell Legguards
 			i(154812),	-- Torgashell Warboots
 			i(157802, {	-- Nazwathan Relic
-				["sourceQuests"] = {
+				sourceQuests = {
 					51145,	-- Curse of Jani (A)
 					47442,	-- Curse of Jani (H)
 				},
-				["crs"] = {
+				crs = {
 					131157,	-- Nazwathan Blood Bender
 					131155,	-- Nazwathan Guardian
 					131156,	-- Nazwathan Hulk
 				},
 			}),
 			i(157801, {	-- Snapjaw Tail
-				["sourceQuests"] = {
+				sourceQuests = {
 					51145,	-- Curse of Jani (A)
 					47442,	-- Curse of Jani (H)
 				},
-				["crs"] = {
+				crs = {
 					126723,	-- Primal Snapjaw
 					120588,	-- Rivermarsh Snapjaw
 				},
 			}),
 			i(157797, {	-- Vilescale Pearl
-				["sourceQuests"] = {
+				sourceQuests = {
 					51145,	-- Curse of Jani (A)
 					47442,	-- Curse of Jani (H)
 				},
-				["crs"] = {
+				crs = {
 					125328,	-- Priestess Zaldraxia
 					125393,	-- Vilescale Guardian
 					125392,	-- Vilescale Mana Taster

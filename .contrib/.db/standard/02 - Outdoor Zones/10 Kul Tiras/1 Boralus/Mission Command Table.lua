@@ -2,37 +2,37 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 	m(BORALUS, {
 		n(138704, bubbleDownSelf({	-- Mission Command Table
-			["races"] = ALLIANCE_ONLY,
+			races = ALLIANCE_ONLY,
 		},{
-			["modelScale"] = 2,
-			["groups"] = {
+			modelScale = 2,
+			groups = {
 				ach(12898, {	-- Azeroth at War: After Lordaron
-					["_doautomation"] = true,
+					_doautomation = true,
 				}),
 				ach(12899, {	-- Azeroth at War: Kalimdor on Fire
-					["_doautomation"] = true,
+					_doautomation = true,
 				}),
 				ach(12896, {	-- Azeroth at War: The Barrens
-					["_doautomation"] = true,
+					_doautomation = true,
 				}),
-				i(POLISHED_PET_CHARM, {["races"]=IGNORED_VALUE}),	-- Polished Pet Charm
-				i(149503, {["races"]=IGNORED_VALUE}),	-- Stolen Gift
+				i(POLISHED_PET_CHARM, {races=IGNORED_VALUE}),	-- Polished Pet Charm
+				i(149503, {races=IGNORED_VALUE}),	-- Stolen Gift
 				mission(2078),	-- Azeroth Bleeds
 				mission(2087),	-- Explore the Roost
 				mission(1877, {	-- The Shadow War
 					i(160982),	-- Recruitment Orders
 				}),
-				mission(2121, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- A Shady Character
-					["provider"] = { "i", 165944 },	-- A Shady Message [A]
-					["groups"] = {
+				mission(2121, bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {	-- A Shady Character
+					provider = { "i", 165944 },	-- A Shady Message [A]
+					groups = {
 						i(165945),	-- Investigation Results
 						q(54424, {	-- A Shady Character
-							["pb"] = true,
-							["pvp"] = true,
-							["groups"] = {
+							pb = true,
+							pvp = true,
+							groups = {
 								i(165946),	-- Token of Shadiness (QI!)
 							},
 						}),
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(KUL_TIRAS, {
 		m(BORALUS, {
 			n(138704, {

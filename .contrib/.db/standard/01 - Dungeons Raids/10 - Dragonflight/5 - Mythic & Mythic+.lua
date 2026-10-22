@@ -2,66 +2,66 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	n(MYTHIC_PLUS, {
 		i(201471),	-- Story of a Spectacular Victory
 		i(200686, {	-- Primal Focus
 			-- #if BEFORE 10.1
-			["description"] = "Drops in M+ 11-15",
+			description = "Drops in M+ 11-15",
 			-- #endif
-			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+			timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 		}),
 		i(190455, {	-- Concentrated Primal Focus
 			-- #if BEFORE 10.1
-			["description"] = "Drops in M+ 16+",
+			description = "Drops in M+ 16+",
 			-- #endif
-			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+			timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 		}),
 		i(204075, {	-- Whelping's Shadowflame Crest Fragment
-			["description"] = "Drops in M+ 0-5",
-			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+			description = "Drops in M+ 0-5",
+			timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
 		}),
 		i(204076, {	-- Drake's Shadowflame Crest Fragment
-			["description"] = "Drops in M+ 6-10",
-			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+			description = "Drops in M+ 6-10",
+			timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
 		}),
 		i(204077, {	-- Wyrm's Shadowflame Crest Fragment
-			["description"] = "Drops in M+ 11-15",
-			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+			description = "Drops in M+ 11-15",
+			timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
 		}),
 		i(204078, {	-- Aspect's Shadowflame Crest Fragment
-			["description"] = "Drops in M+ 16+",
-			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+			description = "Drops in M+ 16+",
+			timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
 		}),
 		currency(WHELPLINGS_DREAMING_CREST, {
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+			timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 		}),
 		currency(DRAKES_DREAMING_CREST, {
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+			timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 		}),
 		currency(WYRMS_DREAMING_CREST, {
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+			timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 		}),
 		currency(ASPECTS_DREAMING_CREST, {
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+			timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 		}),
 		currency(WHELPLINGS_AWAKENED_CREST, {
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+			timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 		}),
 		currency(DRAKES_AWAKENED_CREST, {
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+			timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 		}),
 		currency(WYRMS_AWAKENED_CREST, {
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+			timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 		}),
 		currency(ASPECTS_AWAKENED_CREST, {
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+			timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
 		}),
 		header(HEADERS.Achievement, SEASON_THUNDERING, bubbleDownSelf({
-			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }
+			timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }
 		},{
 			ach(16801, {	-- Realm First! Dragonflight Keystone Hero
-				["u"] = REMOVED_FROM_GAME,
+				u = REMOVED_FROM_GAME,
 			}),
 			ach(16647),	-- Dragonflight Keystone Explorer: Season One
 			ach(16648, {	-- Dragonflight Keystone Conqueror: Season One
@@ -78,14 +78,14 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				spell(393273),	-- Path of the Draconic Diploma
 			}),
 			ach(16658, {	-- Keystone Hero: Court of Stars
-				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
-				["maps"] = { 761 },	-- Court of Stars
-				["groups"] = { spell(393766) },	-- Path of the Grand Magistrix
+				timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				maps = { 761 },	-- Court of Stars
+				groups = { spell(393766) },	-- Path of the Grand Magistrix
 			}),
 			ach(16659, {	-- Keystone Hero: Halls of Valor
-				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
-				["maps"] = { 703 },	-- Halls of Valor
-				["groups"] = { spell(393764) },	-- Path of Proven Worth
+				timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				maps = { 703 },	-- Halls of Valor
+				groups = { spell(393764) },	-- Path of Proven Worth
 			}),
 			ach(16640, {	-- Keystone Hero: Ruby Life Pools
 				spell(393256),	-- Path of the Clutch Defender
@@ -104,7 +104,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 		})),
 		header(HEADERS.Achievement, SEASON_SMOLDERING, bubbleDownSelf({
-			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+			timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
 		},{
 			ach(17842),	-- Dragonflight Keystone Explorer: Season Two
 			ach(17843, {	-- Dragonflight Keystone Conqueror: Season Two
@@ -128,9 +128,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				spell(393283),	-- Path of the Titanic Reservoir
 			}),
 			ach(17850, {	-- Keystone Hero: Neltharion's Lair
-				["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
-				["maps"] = { 731 },	-- Neltharion's Lair
-				["groups"] = { spell(410078) },	-- Path of the Earth-Warder
+				timeline = { ADDED_10_1_0, REMOVED_10_2_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				maps = { 731 },	-- Neltharion's Lair
+				groups = { spell(410078) },	-- Path of the Earth-Warder
 			}),
 			ach(16644, {	-- Keystone Hero: Neltharus
 				spell(393276),	-- Path of the Obsidian Hoard
@@ -146,7 +146,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 		})),
 		header(HEADERS.Achievement, SEASON_DREAMING, bubbleDownSelf({
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+			timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 		},{
 			ach(19009),	-- Dragonflight Keystone Explorer: Season Three
 			ach(19010, {	-- Dragonflight Keystone Conqueror: Season Three
@@ -163,14 +163,14 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				spell(424187),	-- Path of the Golden Tomb
 			}),
 			ach(19084, {	-- Keystone Hero: Black Rook Hold
-				["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
-				["maps"] = { 751 },	-- Black Rook Hold
-				["groups"] = { spell(424153) },	-- Path of Ancient Horrors
+				timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				maps = { 751 },	-- Black Rook Hold
+				groups = { spell(424153) },	-- Path of Ancient Horrors
 			}),
 			ach(19085, {	-- Keystone Hero: Darkheart Thicket
-				["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
-				["maps"] = { 733 },	-- Darkheart Thicket
-				["groups"] = { spell(424163) },	-- Path of the Nightmare Lord
+				timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				maps = { 733 },	-- Darkheart Thicket
+				groups = { spell(424163) },	-- Path of the Nightmare Lord
 			}),
 			ach(19088, {	-- Keystone Hero: Dawn of the Infinite
 				spell(424197),	-- Path of Twisted Time
@@ -188,7 +188,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 		})),
 		header(HEADERS.Achievement, SEASON_DRACONIC_PVE, bubbleDownSelf({
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+			timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 		},{
 			ach(19780),	-- Dragonflight Keystone Explorer: Season Four
 			ach(19781, {	-- Dragonflight Keystone Conqueror: Season Four
@@ -198,7 +198,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				i(213438),	-- Infinite Armoredon (MOUNT!)
 			}),
 			ach(19783),	-- Dragonflight Keystone Hero: Season Four
-			ach(19785, bubbleDownSelf({ ["timeline"] = { REMOVED_11_0_0 } }, {	-- Draconic Hero: Dragonflight Season 4
+			ach(19785, bubbleDownSelf({ timeline = { REMOVED_11_0_0 } }, {	-- Draconic Hero: Dragonflight Season 4
 				title(538),	-- <Name> the Draconic Hero
 			})),
 			ach(16643, {	-- Keystone Hero: Algeth'ar Academy

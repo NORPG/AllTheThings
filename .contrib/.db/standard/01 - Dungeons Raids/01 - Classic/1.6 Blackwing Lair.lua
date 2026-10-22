@@ -4,7 +4,7 @@
 
 local SOD_REMOVED_1_15_4 = {
 	-- #if SEASON_OF_DISCOVERY
-	["timeline"] = { REMOVED_1_15_4 },
+	timeline = { REMOVED_1_15_4 },
 	-- #endif
 };
 -- #if SEASON_OF_DISCOVERY
@@ -42,41 +42,41 @@ local TOKENS = {
 };
 -- #endif
 
-root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_1_6_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE, bubbleDown({ timeline = { ADDED_1_6_0 } }, {
 	inst(742, {	-- Blackwing Lair
-		["lore"] = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
+		lore = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
 		-- #if BEFORE WRATH
-		["zoneTextAreaID"] = 2677,	-- Blackwing Lair
+		zoneTextAreaID = 2677,	-- Blackwing Lair
 		-- #endif
 		-- #if BEFORE WOD
-		["sourceQuest"] = 7761,	-- Blackhand's Command
+		sourceQuest = 7761,	-- Blackhand's Command
 		-- #endif
-		["provider"] = { "o", 179879 },	-- Orb of Command
-		["mapID"] = BLACKWING_LAIR,
-		["coord"] = { 64.2, 71.0, BLACKROCK_MOUNTAIN },
-		["maps"] = { BLACKWING_LAIR_LEVEL2, BLACKWING_LAIR_LEVEL3, BLACKWING_LAIR_LEVEL4 },
-		["sharedLockout"] = 1,
-		["isRaid"] = true,
-		["lvl"] = lvlsquish(50, 50, 25),
-		["groups"] = {
+		provider = { "o", 179879 },	-- Orb of Command
+		mapID = BLACKWING_LAIR,
+		coord = { 64.2, 71.0, BLACKROCK_MOUNTAIN },
+		maps = { BLACKWING_LAIR_LEVEL2, BLACKWING_LAIR_LEVEL3, BLACKWING_LAIR_LEVEL4 },
+		sharedLockout = 1,
+		isRaid = true,
+		lvl = lvlsquish(50, 50, 25),
+		groups = {
 			-- #if AFTER 7.2.0
 			n(ACHIEVEMENTS, {
-				ach(11742, {["timeline"] = {ADDED_7_2_0}}),	-- Dress in Lairs (Blackwing Lair)
+				ach(11742, {timeline = {ADDED_7_2_0}}),	-- Dress in Lairs (Blackwing Lair)
 			}),
 			-- #endif
 			n(QUESTS,
 			-- #if SEASON_OF_DISCOVERY
-			bubbleDown({ ["timeline"] = { REMOVED_1_15_4 } },
+			bubbleDown({ timeline = { REMOVED_1_15_4 } },
 			-- #endif
 			{
 				q(7781, {	-- The Lord of Blackrock [A] (1/2)
-					["provider"] = { "i", 19003 },	-- Head of Nefarian
-					["maps"] = { STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
+					provider = { "i", 19003 },	-- Head of Nefarian
+					maps = { STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
 				}),
 				q(7782, {	-- The Lord of Blackrock [A] (2/2)
-					["sourceQuest"] = 7781,	-- The Lord of Blackrock [A]
-					["qgs"] = {
+					sourceQuest = 7781,	-- The Lord of Blackrock [A]
+					qgs = {
 						-- #if AFTER LEGION
 						107574,	-- Anduin Wrynn
 						1750,	-- Grand Admiral Jes-Tereth
@@ -86,7 +86,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						1748,	-- Highlord Bolvar Fordragon
 						-- #endif
 					},
-					["coords"] = {
+					coords = {
 						-- #if AFTER LEGION
 						{ 85.6, 31.8, STORMWIND_CITY },	-- Anduin Wrynn <King of Stormwind>
 						{ 85.8, 32.4, STORMWIND_CITY },	-- Grand Admiral Jes-Tereth
@@ -96,21 +96,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						{ 78.0, 18.0, STORMWIND_CITY },	-- Highlord Bolvar Fordragon
 						-- #endif
 					},
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					races = ALLIANCE_ONLY,
+					groups = {
 						i(19366),	-- Master Dragonslayer's Orb
 						i(19383),	-- Master Dragonslayer's Medallion
 						i(19384),	-- Master Dragonslayer's Ring
 					},
 				}),
 				q(7783, {	-- The Lord of Blackrock [H] (1/2)
-					["provider"] = { "i", 19002 },	-- Head of Nefarian
-					["maps"] = { ORGRIMMAR },
-					["races"] = HORDE_ONLY,
+					provider = { "i", 19002 },	-- Head of Nefarian
+					maps = { ORGRIMMAR },
+					races = HORDE_ONLY,
 				}),
 				q(7784, {	-- The Lord of Blackrock [H] (2/2)
-					["sourceQuest"] = 7783,	-- The Lord of Blackrock [H]
-					["qgs"] = {
+					sourceQuest = 7783,	-- The Lord of Blackrock [H]
+					qgs = {
 						-- #if AFTER BFA
 						3144,	-- Eitrigg
 						-- #elseif AFTER LEGION
@@ -123,7 +123,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						4949,	-- Thrall <Warchief>
 						-- #endif
 					},
-					["coords"] = {
+					coords = {
 						-- #if AFTER BFA
 						{ 49.0, 72.8, ORGRIMMAR },	-- Eitrigg
 						-- #elseif AFTER CATA
@@ -132,8 +132,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						{ 32.0, 37.8, ORGRIMMAR },	-- Thrall <Warchief>
 						-- #endif
 					},
-					["races"] = HORDE_ONLY,
-					["groups"] = {
+					races = HORDE_ONLY,
+					groups = {
 						i(19383),	-- Master Dragonslayer's Medallion
 						i(19366),	-- Master Dragonslayer's Orb
 						i(19384),	-- Master Dragonslayer's Ring
@@ -150,30 +150,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			-- #endif
 			n(TREASURES, {
 				applyclassicphase(PHASE_FIVE, o(180667, {	-- Draconic for Dummies
-					["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
-					["description"] = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
-					["coord"] = { 32.0, 42.9, BLACKWING_LAIR },
-					["groups"] = {
+					timeline = { ADDED_1_9_0, REMOVED_4_0_3 },
+					description = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
+					coord = { 32.0, 42.9, BLACKWING_LAIR },
+					groups = {
 						i(21109),	-- Draconic for Dummies [Chapter VII]
 					},
 				})),
 			}),
 			n(ZONE_DROPS, {
 				i(18562, {	-- Elementium Ingot
-					["crs"] = {
+					crs = {
 						13996,	-- Blackwing Technician
 						14401,	-- Master Elemental Shaper Krixix
 					},
 				}),
 				i(19434, {	-- Band of Dark Dominion
-					["crs"] = {
+					crs = {
 						12457,	-- Blackwing Spellbinder
 						12459,	-- Blackwing Warlock
 						12461,	-- Death Talon Overseer
 					},
 				}),
 				i(19437, {	-- Boots of Pure Thought
-					["crs"] = {
+					crs = {
 						12467,	-- Death Talon Captain
 						12463,	-- Death Talon Flamescale
 						12464,	-- Death Talon Seether
@@ -181,7 +181,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				i(19436, {	-- Cloak of Draconic Might
-					["crs"] = {
+					crs = {
 						12467,	-- Death Talon Captain
 						12463,	-- Death Talon Flamescale
 						12464,	-- Death Talon Seether
@@ -189,17 +189,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				i(19362, {	-- Doom's Edge
-					["crs"] = {
+					crs = {
 						12457,	-- Blackwing Spellbinder
 						12459,	-- Blackwing Warlock
 						12461,	-- Death Talon Overseer
 					},
 				}),
 				i(19354, {	-- Draconic Avenger
-					["cr"] = 12460,	-- Death Talon Wyrmguard
+					cr = 12460,	-- Death Talon Wyrmguard
 				}),
 				i(19358, {	-- Draconic Maul
-					["crs"] = {
+					crs = {
 						12467,	-- Death Talon Captain
 						12463,	-- Death Talon Flamescale
 						12464,	-- Death Talon Seether
@@ -207,25 +207,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				i(19435, {	-- Essence Gatherer
-					["crs"] = {
+					crs = {
 						12457,	-- Blackwing Spellbinder
 						12459,	-- Blackwing Warlock
 						12461,	-- Death Talon Overseer
 					},
 				}),
 				i(19439, {	-- Interlaced Shadow Jerkin
-					["cr"] = 12460,	-- Death Talon Wyrmguard
+					cr = 12460,	-- Death Talon Wyrmguard
 				}),
 				i(19438, {	-- Ringo's Blizzard Boots
-					["cr"] = 12460,	-- Death Talon Wyrmguard
+					cr = 12460,	-- Death Talon Wyrmguard
 				}),
 				i(19183),	-- Hourglass Sand
 			}),
 			e(1529, {	-- Razorgore the Untamed
-				["creatureID"] = 12435,
-				["groups"] = {
+				creatureID = 12435,
+				groups = {
 					i(93036, {	-- Untamed Hatchling (PET!)
-						["timeline"] = { ADDED_5_1_0 },
+						timeline = { ADDED_5_1_0 },
 					}),
 					i(19334),	-- The Untamed Blade
 					i(19335),	-- Spineshatter
@@ -245,8 +245,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				},
 			}),
 			e(1530, {	-- Vaelastrasz the Corrupt
-				["creatureID"] = 13020,
-				["groups"] = {
+				creatureID = 13020,
+				groups = {
 					i(19346),	-- Dragonfang Blade
 					i(19348),	-- Red Dragonscale Protector
 					i(19372),	-- Helm of Endless Rage
@@ -265,10 +265,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				},
 			}),
 			e(1531, {	-- Broodlord Lashlayer
-				["creatureID"] = 12017,
-				["groups"] = {
+				creatureID = 12017,
+				groups = {
 					i(93037, {	-- Death Talon Whelpguard (PET!)
-						["timeline"] = { ADDED_5_1_0 },
+						timeline = { ADDED_5_1_0 },
 					}),
 					i(19351),	-- Maladath, Runed Blade of the Black Flight
 					i(19350),	-- Heartstriker
@@ -288,8 +288,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				},
 			}),
 			e(1532, {	-- Firemaw
-				["creatureID"] = 11983,
-				["groups"] = {
+				creatureID = 11983,
+				groups = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19355),	-- Shadow Wing Focus Staff
 					i(19365),	-- Claw of the Black Drake
@@ -317,15 +317,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			}),
 			n(14401, {	-- Master Elemental Shaper Krixix
 				-- #if BEFORE WRATH
-				["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
-				["groups"] = { r(22967) },	-- Smelt Elementium
+				description = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
+				groups = { r(22967) },	-- Smelt Elementium
 				-- #else
 				i(44956),	-- Goblin's Guide to Elementium (RECIPE!)
 				-- #endif
 			}),
 			e(1533, {	-- Ebonroc
-				["creatureID"] = 14601,
-				["groups"] = {
+				creatureID = 14601,
+				groups = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19355),	-- Shadow Wing Focus Staff
 					i(19368),	-- Dragonbreath Hand Cannon
@@ -350,8 +350,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				},
 			}),
 			e(1534, {	-- Flamegor
-				["creatureID"] = 11981,
-				["groups"] = {
+				creatureID = 11981,
+				groups = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19357),	-- Herald of Woe
 					i(19355),	-- Shadow Wing Focus Staff
@@ -376,10 +376,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				},
 			}),
 			e(1535, {	-- Chromaggus
-				["creatureID"] = 14020,
-				["groups"] = {
+				creatureID = 14020,
+				groups = {
 					i(93038, {	-- Chrominius (PET!)
-						["timeline"] = { ADDED_5_1_0 },
+						timeline = { ADDED_5_1_0 },
 					}),
 					i(19352),	-- Chromatically Tempered Sword
 					i(19347),	-- Claw of Chromaggus
@@ -406,36 +406,36 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					-- #if AFTER WOD
 					prof(SKINNING, {
 						i(12607, {	-- Brilliant Chromatic Scale
-							["description"] = "Can only be obtained from Chromaggus.",
+							description = "Can only be obtained from Chromaggus.",
 						}),
 					}),
 					-- #endif
 				},
 			}),
 			e(1536, {	-- Nefarian
-				["crs"] = {
+				crs = {
 					11583,	-- Nefarian
 					10162,	-- Lord Victor Nefarius
 				},
-				["groups"] = {
+				groups = {
 					ach(685),	-- Blackwing Lair
 					ach(5057, {	-- Blackwing Lair Guild Run
-						["timeline"] = { ADDED_4_0_3 },
+						timeline = { ADDED_4_0_3 },
 					}),
 					-- #if ANYCLASSIC
 					ach(15333, {	-- Survivor of the Shadow Flame (Season of Mastery)
-						["timeline"] = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
+						timeline = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
 					}),
 					-- #endif
 					i(19003, {	-- Head of Nefarian (A)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					i(19002, {	-- Head of Nefarian (H)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 					i(170511, {	-- Head of Nefarian (Paladin, for Artifact appearance)
-						["timeline"] = { ADDED_8_2_0 },
-						["classes"] = { PALADIN },
+						timeline = { ADDED_8_2_0 },
+						classes = { PALADIN },
 					}),
 					i(19364),	-- Ashkandi, Greatsword of the Brotherhood
 					i(19356),	-- Staff of the Shadow Flame
@@ -479,8 +479,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			})),
-			applyclassicphase(SOD_PHASE_FIVE, d(DIFFICULTY.SOD.PLAYER20, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_4 }, }, {
-				n(QUESTS, applyclassicphase(SOD_PHASE_FIVE, bubbleDown({ ["timeline"] = { ADDED_1_15_4 }, }, {
+			applyclassicphase(SOD_PHASE_FIVE, d(DIFFICULTY.SOD.PLAYER20, bubbleDownSelf({ timeline = { ADDED_1_15_4 }, }, {
+				n(QUESTS, applyclassicphase(SOD_PHASE_FIVE, bubbleDown({ timeline = { ADDED_1_15_4 }, }, {
 					cl(DRUID, {
 
 					}),
@@ -504,150 +504,150 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					}),
 					cl(WARLOCK, {
 						q(85505, {	-- Soul of Devouring
-							["sourceQuest"] = 85486,	-- Soul of Enthralling
-							["qg"] = 232802,	-- Doan Karhan
-							["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-							["groups"] = {
+							sourceQuest = 85486,	-- Soul of Enthralling
+							qg = 232802,	-- Doan Karhan
+							coord = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+							groups = {
 								objective(1, {	-- Find Felhunter Area
-									["provider"] = { "i", 231837 },	-- Shadow Carving
-									["coord"] = { 53.8, 51.6, EASTERN_PLAGUELANDS },
-									["cr"] = 232903,	-- Shadowmage <Cult of the Damned>
+									provider = { "i", 231837 },	-- Shadow Carving
+									coord = { 53.8, 51.6, EASTERN_PLAGUELANDS },
+									cr = 232903,	-- Shadowmage <Cult of the Damned>
 								}),
 								i(231796, {	-- Depleted Scythe of Chaos (Devouring)
-									["description"] = "Use Drail Soul on the Ravenous Felhound once you've summoned it using the Shadow Carving.",
-									["coord"] = { 53.8, 51.6, EASTERN_PLAGUELANDS },
-									["cost"] = {
+									description = "Use Drail Soul on the Ravenous Felhound once you've summoned it using the Shadow Carving.",
+									coord = { 53.8, 51.6, EASTERN_PLAGUELANDS },
+									cost = {
 										{ "i", 231799, 1 },	-- Soul of Devouring
 										{ "i", 231795, 1 },	-- Depleted Scythe of Chaos (Enthralling)
 									},
-									["cr"] = 232896,	-- Ravenous Felhound
+									cr = 232896,	-- Ravenous Felhound
 								}),
 							},
 						}),
 						q(85486, {	-- Soul of Enthralling
-							["sourceQuest"] = 85485,	-- Soul of the Void
-							["qg"] = 232802,	-- Doan Karhan
-							["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-							["groups"] = {
+							sourceQuest = 85485,	-- Soul of the Void
+							qg = 232802,	-- Doan Karhan
+							coord = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+							groups = {
 								objective(1, {	-- Use Glowing Scroll of Spatial Mending on Fel Portal
-									["provider"] = { "i", 231836 },	-- Glowing Scroll of Spatial Mending
-									["coord"] = { 32.6, 30.9, EASTERN_PLAGUELANDS },
-									["cr"] = 232900,	-- Cursed Mage
+									provider = { "i", 231836 },	-- Glowing Scroll of Spatial Mending
+									coord = { 32.6, 30.9, EASTERN_PLAGUELANDS },
+									cr = 232900,	-- Cursed Mage
 								}),
 								i(231795, {	-- Depleted Scythe of Chaos (Enthralling)
-									["description"] = "Use Drail Soul on the Fel Interloper once you've summoned it using the scroll of spatial mending.",
-									["coord"] = { 32.6, 30.9, EASTERN_PLAGUELANDS },
-									["cost"] = {
+									description = "Use Drail Soul on the Fel Interloper once you've summoned it using the scroll of spatial mending.",
+									coord = { 32.6, 30.9, EASTERN_PLAGUELANDS },
+									cost = {
 										{ "i", 231798, 1 },	-- Soul of Enthralling
 										{ "i", 231794, 1 },	-- Depleted Scythe of Chaos (Void)
 									},
-									["cr"] = 230146,	-- Fel Interloper
+									cr = 230146,	-- Fel Interloper
 								}),
 							},
 						}),
 						q(85468, {	-- Soul of Mischief
-							["sourceQuest"] = 85112,	-- The Depleted Scythe
-							["qg"] = 6247,	-- Doan Karhan
-							["coord"] = { 49.2, 57.2, THE_BARRENS },
-							["maps"] = { EASTERN_PLAGUELANDS },
-							["groups"] = {
+							sourceQuest = 85112,	-- The Depleted Scythe
+							qg = 6247,	-- Doan Karhan
+							coord = { 49.2, 57.2, THE_BARRENS },
+							maps = { EASTERN_PLAGUELANDS },
+							groups = {
 								objective(1, {	-- 0/5 Suspicious Supplies placed
-									["provider"] = { "i", 231732 },	-- Suspicious Supplies
+									provider = { "i", 231732 },	-- Suspicious Supplies
 								}),
 								i(231793, {	-- Depleted Scythe of Chaos (Mischief)
-									["description"] = "Use Drail Soul on Xirath once you've completed his task to receive this.",
-									["coord"] = { 69.6, 32.0, EASTERN_PLAGUELANDS },
-									["cost"] = {
+									description = "Use Drail Soul on Xirath once you've completed his task to receive this.",
+									coord = { 69.6, 32.0, EASTERN_PLAGUELANDS },
+									cost = {
 										{ "i", 231792, 1 },	-- Soul of Mischief
 										{ "i", 231722, 1 },	-- Depleted Scythe of Chaos
 									},
-									["cr"] = 232731,	-- Xirath <Manathirst Imp>
+									cr = 232731,	-- Xirath <Manathirst Imp>
 								}),
 							},
 						}),
 						q(85485, {	-- Soul of the Void
-							["sourceQuest"] = 85468,	-- Soul of Mischief
-							["qg"] = 232802,	-- Doan Karhan
-							["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-							["groups"] = {
+							sourceQuest = 85468,	-- Soul of Mischief
+							qg = 232802,	-- Doan Karhan
+							coord = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+							groups = {
 								i(231794, {	-- Depleted Scythe of Chaos (Void)
-									["description"] = "Use Drail Soul on the Voidwalker once you've used a Major Spellstone, Shadow Ward, and then Sacrifice to summon it.",
-									["coord"] = { 59.0, 67.0, EASTERN_PLAGUELANDS },
-									["cost"] = {
+									description = "Use Drail Soul on the Voidwalker once you've used a Major Spellstone, Shadow Ward, and then Sacrifice to summon it.",
+									coord = { 59.0, 67.0, EASTERN_PLAGUELANDS },
+									cost = {
 										{ "i", 231797, 1 },	-- Soul of the Void
 										{ "i", 231793, 1 },	-- Depleted Scythe of Chaos (Mischief)
 									},
-									["cr"] = 232875,	-- Abandoned Voidwalker
+									cr = 232875,	-- Abandoned Voidwalker
 								}),
 							},
 						}),
 						q(85112, {	-- The Depleted Scythe
-							["providers"] = {
+							providers = {
 								{ "i", 231722 },	-- Depleted Scythe of Chaos
 								{ "n",   6247 },	-- Doan Karhan
 							},
-							["coord"] = { 49.2, 57.2, THE_BARRENS },
+							coord = { 49.2, 57.2, THE_BARRENS },
 						}),
 						q(85506, {	-- The Final Test
-							["sourceQuest"] = 85505,	-- Soul of Devouring
-							["qg"] = 232802,	-- Doan Karhan
-							["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-							["maps"] = { ASHENVALE },
-							["groups"] = {
+							sourceQuest = 85505,	-- Soul of Devouring
+							qg = 232802,	-- Doan Karhan
+							coord = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+							maps = { ASHENVALE },
+							groups = {
 								objective(1, {	-- Speak to Doan Karhan
-									["provider"] = { "n", 232924 },	-- Doan Karhan
-									["coord"] = { 84.8, 70.6, ASHENVALE },
+									provider = { "n", 232924 },	-- Doan Karhan
+									coord = { 84.8, 70.6, ASHENVALE },
 								}),
 								n(232886, {	-- Des'Altek
-									["description"] = "Summon and defeat Des'Altek within Demon Fall Canyon to receive the soul.",
-									["cost"] = {
+									description = "Summon and defeat Des'Altek within Demon Fall Canyon to receive the soul.",
+									cost = {
 										{ "i", 231800, 1 },	-- Soul of Des'Altek
 										{ "i", 231796, 1 },	-- Depleted Scythe of Chaos (Devouring)
 									},
-									["groups"] = { i(229910) },	-- Scythe of Chaos
+									groups = { i(229910) },	-- Scythe of Chaos
 								}),
 							},
 						}),
 					}),
 					cl(WARRIOR, {
 						q(85446, {	-- Scale of the Dragon Lord
-							["qg"] = 232596,	-- Riosus
-							["coord"] = { 74.2, 70.0, WETLANDS },
-							["groups"] = {
+							qg = 232596,	-- Riosus
+							coord = { 74.2, 70.0, WETLANDS },
+							groups = {
 								objective(1, {	--	Bathe the Dragonscale in Shadowflame
-									["provider"] = { "i", 232414 },	-- Dragontooth Blade
-									["cr"] = 11583,	-- Shadowmage <Cult of the Damned>
+									provider = { "i", 232414 },	-- Dragontooth Blade
+									cr = 11583,	-- Shadowmage <Cult of the Damned>
 								}),
 							},
 						}),
 					}),
 					q(7781, {	-- The Lord of Blackrock [A] (1/2)
-						["provider"] = { "i", 19003 },	-- Head of Nefarian
-						["maps"] = { STORMWIND_CITY },
-						["races"] = ALLIANCE_ONLY,
+						provider = { "i", 19003 },	-- Head of Nefarian
+						maps = { STORMWIND_CITY },
+						races = ALLIANCE_ONLY,
 					}),
 					q(85643, {	-- The Lord of Blackrock [A] (2/2)
-						["sourceQuest"] = 7781,	-- The Lord of Blackrock [A]
-						["qg"] = 1748,	-- Highlord Bolvar Fordragon
-						["coord"] = { 78.0, 18.0, STORMWIND_CITY },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						sourceQuest = 7781,	-- The Lord of Blackrock [A]
+						qg = 1748,	-- Highlord Bolvar Fordragon
+						coord = { 78.0, 18.0, STORMWIND_CITY },
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(230840),	-- Master Dragonslayer's Medallion
 							i(230841),	-- Master Dragonslayer's Orb
 							i(230839),	-- Master Dragonslayer's Ring
 						},
 					}),
 					q(7783, {	-- The Lord of Blackrock [H] (1/2)
-						["provider"] = { "i", 19002 },	-- Head of Nefarian
-						["maps"] = { ORGRIMMAR },
-						["races"] = HORDE_ONLY,
+						provider = { "i", 19002 },	-- Head of Nefarian
+						maps = { ORGRIMMAR },
+						races = HORDE_ONLY,
 					}),
 					q(85644, {	-- The Lord of Blackrock [H] (2/2)
-						["sourceQuest"] = 7783,	-- The Lord of Blackrock [H]
-						["qg"] = 4949,	-- Thrall <Warchief>
-						["coord"] = { 32.0, 37.8, ORGRIMMAR },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						sourceQuest = 7783,	-- The Lord of Blackrock [H]
+						qg = 4949,	-- Thrall <Warchief>
+						coord = { 32.0, 37.8, ORGRIMMAR },
+						races = HORDE_ONLY,
+						groups = {
 							i(230840),	-- Master Dragonslayer's Medallion
 							i(230841),	-- Master Dragonslayer's Orb
 							i(230839),	-- Master Dragonslayer's Ring
@@ -656,7 +656,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				}))),
 				n(ZONE_DROPS, {
 					i(18562, {	-- Elementium Ingot
-						["crs"] = {
+						crs = {
 							13996,	-- Blackwing Technician
 							14401,	-- Master Elemental Shaper Krixix
 						},
@@ -664,8 +664,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					i(19183),	-- Hourglass Sand
 				}),
 				n(231711, {	-- Victor Nefriendius
-					["description"] = "Located inside BWL. You can speak to him at the start of the raid to activate a number of trials. Each trial up to 3 will award additional loot. You'll want to activate the weekly trial in addition to 2 others for the best loot opportunity after your raid defeats Nefarian.",
-					["groups"] = {
+					description = "Located inside BWL. You can speak to him at the start of the raid to activate a number of trials. Each trial up to 3 will award additional loot. You'll want to activate the weekly trial in addition to 2 others for the best loot opportunity after your raid defeats Nefarian.",
+					groups = {
 						cl(DRUID, {
 							-- DPS (Agility)
 							tokencost(TOKENS.PRIMEVAL.HELM, i(231257)),	-- Stormrage Cowl
@@ -908,8 +908,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				e(1529, {	-- Razorgore the Untamed
-					["creatureID"] = 12435,
-					["groups"] = {
+					creatureID = 12435,
+					groups = {
 						i(231722),	-- Depleted Scythe of Chaos
 						i(229352),	-- Intelligence Findings
 						i(231729),	-- Ancient Gloves
@@ -924,8 +924,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				e(1530, {	-- Vaelastrasz the Corrupt
-					["creatureID"] = 13020,
-					["groups"] = {
+					creatureID = 13020,
+					groups = {
 						i(230904),	-- Scroll: SEENECS FO RIEF
 						i(231378),	-- Shimmering Golden Disk
 						i(231727),	-- Ancient Leggings
@@ -946,8 +946,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				e(1531, {	-- Broodlord Lashlayer
-					["creatureID"] = 12017,
-					["groups"] = {
+					creatureID = 12017,
+					groups = {
 						i(20383),	-- Head of the Broodlord Lashlayer
 						i(231452),	-- Blood of the Lightbringer
 						i(231995),	-- Hardened Elementium Slag
@@ -964,8 +964,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				e(1532, {	-- Firemaw
-					["creatureID"] = 11983,
-					["groups"] = {
+					creatureID = 11983,
+					groups = {
 						i(231727),	-- Ancient Leggings
 						i(231710),	-- Draconian Leggings
 						i(231718),	-- Primeval Leggings
@@ -989,12 +989,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				n(14401, {	-- Master Elemental Shaper Krixix
-					["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
-					["groups"] = { r(22967) },	-- Smelt Elementium
+					description = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
+					groups = { r(22967) },	-- Smelt Elementium
 				}),
 				e(1533, {	-- Ebonroc
-					["creatureID"] = 14601,
-					["groups"] = {
+					creatureID = 14601,
+					groups = {
 						i(231728),	-- Ancient Helm
 						i(231711),	-- Draconian Hood
 						i(231719),	-- Primeval Helm
@@ -1007,8 +1007,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				e(1534, {	-- Flamegor
-					["creatureID"] = 11981,
-					["groups"] = {
+					creatureID = 11981,
+					groups = {
 						i(230844),	-- Draconic Maul
 						i(230737),	-- Dragon's Touch
 						i(230847),	-- Essence Gatherer
@@ -1027,8 +1027,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				e(1535, {	-- Chromaggus
-					["creatureID"] = 14020,
-					["groups"] = {
+					creatureID = 14020,
+					groups = {
 						i(231814),	-- Chromatic Heart
 						i(229906),	-- Tarnished Bronze Scale
 						i(231726),	-- Ancient Shoulderpads
@@ -1050,11 +1050,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				e(1536, {	-- Nefarian
-					["crs"] = {
+					crs = {
 						11583,	-- Nefarian
 						10162,	-- Lord Victor Nefarius
 					},
-					["groups"] = {
+					groups = {
 						i(21138),	-- Red Scepter Shard
 						i(19003),	-- Head of Nefarian (A)
 						i(19002),	-- Head of Nefarian (H)
@@ -1096,21 +1096,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					},
 				}),
 				o(495577, {	-- Chromatic Stash
-					["description"] = "Appears after defeating Nefarian with one trial active.\n\nContains one of the class trinkets plus two additional pieces of loot from bosses in Blackwing Lair.",
+					description = "Appears after defeating Nefarian with one trial active.\n\nContains one of the class trinkets plus two additional pieces of loot from bosses in Blackwing Lair.",
 				}),
 				o(495578, {	-- Chromatic Supplies
-					["description"] = "Appears after defeating Nefarian with two trials active. It replaces the Chromatic Stash.\n\nContains one of the class trinkets plus four additional pieces of loot from bosses in Blackwing Lair.",
+					description = "Appears after defeating Nefarian with two trials active. It replaces the Chromatic Stash.\n\nContains one of the class trinkets plus four additional pieces of loot from bosses in Blackwing Lair.",
 				}),
 				o(495503, {	-- Chromatic Hoard
-					["description"] = "Appears after defeating Nefarian with three trials active. It replaces the Chromatic Supplies.\n\nContains one of the class trinkets plus five additional pieces of loot from bosses in Blackwing Lair.\n\nWeapons found in this chest will have a unique \"Shadowflame\" visual effect.",
-					["sym"] = {{ "select", "objectID", 495500 }, {"pop"}},
+					description = "Appears after defeating Nefarian with three trials active. It replaces the Chromatic Supplies.\n\nContains one of the class trinkets plus five additional pieces of loot from bosses in Blackwing Lair.\n\nWeapons found in this chest will have a unique \"Shadowflame\" visual effect.",
+					sym = {{ "select", "objectID", 495500 }, {"pop"}},
 				}),
 				o(495505, {	-- Favored Riches
-					["description"] = "Appears in Blackwing Lair after defeating Nefarian with the weekly trial active.\n\nContains two pieces of loot from bosses in Blackwing Lair.",
+					description = "Appears in Blackwing Lair after defeating Nefarian with the weekly trial active.\n\nContains two pieces of loot from bosses in Blackwing Lair.",
 				}),
 				o(495500, {	-- Shadowflame Cache
-					["description"] = "Appears after defeating Nefarian with three trials active, including the weekly trial alongside the two chests.\n\nContains 3-5 Elementium Ore and four other items. Weapons found in this chest will have a unique \"Shadowflame\" visual effect.",
-					["groups"] = {
+					description = "Appears after defeating Nefarian with three trials active, including the weekly trial alongside the two chests.\n\nContains 3-5 Elementium Ore and four other items. Weapons found in this chest will have a unique \"Shadowflame\" visual effect.",
+					groups = {
 						i(232550),	-- Ashkandi, Greatsword of the Brotherhood [Shadowflame]
 						i(232606),	-- Ashjre'thul, Crossbow of Smiting [Shadowflame]
 						i(232558),	-- Chromatically Tempered Sword [Shadowflame]

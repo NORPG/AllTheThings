@@ -2,10 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 	n(COMMON_DUNGEON_DROPS, {
 		i(141591, {	-- Technique: Codex of the Tranquil Mind [Rank 2] (RECIPE!)
-			["crs"] = {
+			crs = {
 				102387,	-- Sael'orn
 				102446,	-- Fel Lord Betrug
 				98970,	-- Dantalionax
@@ -31,9 +31,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			},
 		}),
 		i(141592, {	-- Technique: Codex of the Tranquil Mind (Rank 3) (RECIPE!)
-			["description"] = "Supposedly able to drop from any Legion Dungeon final boss while on Heroic/Mythic, but only certain ones have been confirmed recently as indicated by the Creatures tagged on this Item.",
+			description = "Supposedly able to drop from any Legion Dungeon final boss while on Heroic/Mythic, but only certain ones have been confirmed recently as indicated by the Creatures tagged on this Item.",
 		-- [commenting out on dungeon bosses as it has only been seen on emissary chests post-Legion]
-			["crs"] = {
+			crs = {
 				102387,	-- Sael'orn confirmed 2022-04-18
 				102446,	-- Fel Lord Betrug confirmed 2022-04-18
 				114895,	-- Nightbane confirmed 01.10.2021

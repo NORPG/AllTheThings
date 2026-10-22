@@ -19,55 +19,55 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_2_0_3 } }, {
 	inst(248, {	-- Hellfire Ramparts
-		["lore"] = "Hellfire Ramparts make up the first wing of Hellfire Citadel. The citadel itself sits in the center of the zone, in the middle of a broken-up wall that divided the zone before the conflict began. The Ramparts takes place atop this wall along the sides of the citadel.",
+		lore = "Hellfire Ramparts make up the first wing of Hellfire Citadel. The citadel itself sits in the center of the zone, in the middle of a broken-up wall that divided the zone before the conflict began. The Ramparts takes place atop this wall along the sides of the citadel.",
 		-- #if BEFORE MOP
-		["zoneTextAreaID"] = 3562,	-- Hellfire Ramparts
+		zoneTextAreaID = 3562,	-- Hellfire Ramparts
 		-- #endif
-		["mapID"] = HELLFIRE_CITADEL_RAMPARTS,
-		["coord"] = { 47.65, 53.57, HELLFIRE_PENINSULA },	-- Hellfire Ramparts, Hellfire Peninsula
-		["lvl"] = lvlsquish(57, 57, 10),
-		["groups"] = {
+		mapID = HELLFIRE_CITADEL_RAMPARTS,
+		coord = { 47.65, 53.57, HELLFIRE_PENINSULA },	-- Hellfire Ramparts, Hellfire Peninsula
+		lvl = lvlsquish(57, 57, 10),
+		groups = {
 			n(QUESTS, {
 				{	-- Dark Tidings
-					["allianceQuestData"] = q(9587, {	-- Dark Tidings (A)
-						["provider"] = { "i", 23890 },	-- Ominous Letter
+					allianceQuestData = q(9587, {	-- Dark Tidings (A)
+						provider = { "i", 23890 },	-- Ominous Letter
 					}),
-					["hordeQuestData"] = q(9588, {	-- Dark Tidings (H)
-						["provider"] = { "i", 23892 },	-- Ominous Letter
+					hordeQuestData = q(9588, {	-- Dark Tidings (H)
+						provider = { "i", 23892 },	-- Ominous Letter
 					}),
-					["timeline"] = { REMOVED_4_3_0 },
-					["maps"] = { HELLFIRE_PENINSULA },
-					["lvl"] = lvlsquish(59, 59, 10),
+					timeline = { REMOVED_4_3_0 },
+					maps = { HELLFIRE_PENINSULA },
+					lvl = lvlsquish(59, 59, 10),
 				},
 				{	-- Demons in the Citadel
-					["allianceQuestData"] = q(29529, {	-- Demons in the Citadel (A)
-						["qg"] = 54603,	-- Advance Scout Chadwick
+					allianceQuestData = q(29529, {	-- Demons in the Citadel (A)
+						qg = 54603,	-- Advance Scout Chadwick
 					}),
-					["hordeQuestData"] = q(29530, {	-- Demons in the Citadel (H)
-						["qg"] = 54606,	-- Stone Guard Stok'ton
+					hordeQuestData = q(29530, {	-- Demons in the Citadel (H)
+						qg = 54606,	-- Stone Guard Stok'ton
 					}),
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(57, 57, 10),
-					["groups"] = {
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(57, 57, 10),
+					groups = {
 						objective(1, {	-- 0/1 Omor's Hoof
-							["provider"] = { "i", 23886 },	-- Omor's Hoof
+							provider = { "i", 23886 },	-- Omor's Hoof
 						}),
 					},
 				},
 				{	-- Hitting Them Where It Hurts
-					["allianceQuestData"] = q(29594, {	-- Hitting Them Where It Hurts (A)
-						["qg"] = 54603,	-- Advance Scout Chadwick
+					allianceQuestData = q(29594, {	-- Hitting Them Where It Hurts (A)
+						qg = 54603,	-- Advance Scout Chadwick
 					}),
-					["hordeQuestData"] = q(29593, {	-- Hitting Them Where It Hurts (H)
-						["qg"] = 54606,	-- Stone Guard Stok'ton
+					hordeQuestData = q(29593, {	-- Hitting Them Where It Hurts (H)
+						qg = 54606,	-- Stone Guard Stok'ton
 					}),
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(57, 57, 10),
-					["groups"] = {
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(57, 57, 10),
+					groups = {
 						objective(1, {	-- 0/3 Hellfire Supplies
-							["providers"] = {
+							providers = {
 								{ "i",  72160 },	-- Hellfire Supplies
 								{ "o", 209347 },	-- Hellfire Supplies
 								{ "o", 209348 },	-- Hellfire Supplies
@@ -76,32 +76,32 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				},
 				{	-- Invading the Citadel
-					["allianceQuestData"] = q(29543, {	-- Invading the Citadel (A)
-						["qg"] = 19309,	-- Sergeant Altumus
-						["coord"] = { 61.6, 60.7, HELLFIRE_PENINSULA },
+					allianceQuestData = q(29543, {	-- Invading the Citadel (A)
+						qg = 19309,	-- Sergeant Altumus
+						coord = { 61.6, 60.7, HELLFIRE_PENINSULA },
 					}),
-					["hordeQuestData"] = q(29542, {	-- Invading the Citadel (H)
-						["qg"] = 19256,	-- Sergeant Shatterskull
-						["coord"] = { 58.0, 41.2, HELLFIRE_PENINSULA },
+					hordeQuestData = q(29542, {	-- Invading the Citadel (H)
+						qg = 19256,	-- Sergeant Shatterskull
+						coord = { 58.0, 41.2, HELLFIRE_PENINSULA },
 					}),
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(59, 59, 10),
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(59, 59, 10),
 				},
 				{	-- War on the Ramparts
-					["allianceQuestData"] = q(29528, {	-- War on the Ramparts (A)
-						["qg"] = 54603,	-- Advance Scout Chadwick
+					allianceQuestData = q(29528, {	-- War on the Ramparts (A)
+						qg = 54603,	-- Advance Scout Chadwick
 					}),
-					["hordeQuestData"] = q(29527, {	-- War on the Ramparts (H)
-						["qg"] = 54606,	-- Stone Guard Stok'ton
+					hordeQuestData = q(29527, {	-- War on the Ramparts (H)
+						qg = 54606,	-- Stone Guard Stok'ton
 					}),
-					["timeline"] = { ADDED_4_3_0 },
-					["lvl"] = lvlsquish(57, 57, 10),
-					["groups"] = {
+					timeline = { ADDED_4_3_0 },
+					lvl = lvlsquish(57, 57, 10),
+					groups = {
 						objective(1, {	-- 0/1 Gargolmar's Hand
-							["provider"] = { "i", 23881 },	-- Gargolmar's Hand
+							provider = { "i", 23881 },	-- Gargolmar's Hand
 						}),
 						objective(2, {	-- 0/1 Nazan's Head
-							["provider"] = { "i", 23901 },	-- Nazan's Head
+							provider = { "i", 23901 },	-- Nazan's Head
 						}),
 						i(25715),	-- Jade Warrior Pauldrons
 						i(25718),	-- Mantle of Magical Might
@@ -110,27 +110,27 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				},
 				{	-- Weaken the Ramparts
-					["allianceQuestData"] = q(9575, {	-- Weaken the Ramparts (A)
-						["sourceQuest"] = 10142,	-- The Path of Anguish
-						["qg"] = 17557,	-- Lieutenant Chadwick
-						["coord"] = { 56.7, 66.3, HELLFIRE_PENINSULA },
+					allianceQuestData = q(9575, {	-- Weaken the Ramparts (A)
+						sourceQuest = 10142,	-- The Path of Anguish
+						qg = 17557,	-- Lieutenant Chadwick
+						coord = { 56.7, 66.3, HELLFIRE_PENINSULA },
 					}),
-					["hordeQuestData"] = q(9572, {	-- Weaken the Ramparts (H)
-						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
-						["qg"] = 17493,	-- Stone Guard Stok'ton
-						["coord"] = { 55.2, 36.0, HELLFIRE_PENINSULA },
+					hordeQuestData = q(9572, {	-- Weaken the Ramparts (H)
+						sourceQuest = 10124,	-- Forward Base: Reaver's Fall
+						qg = 17493,	-- Stone Guard Stok'ton
+						coord = { 55.2, 36.0, HELLFIRE_PENINSULA },
 					}),
-					["timeline"] = { REMOVED_4_3_0 },
-					["lvl"] = lvlsquish(59, 59, 10),
-					["groups"] = {
+					timeline = { REMOVED_4_3_0 },
+					lvl = lvlsquish(59, 59, 10),
+					groups = {
 						objective(1, {	-- 0/1 Gargolmar's Hand
-							["provider"] = { "i", 23881 },	-- Gargolmar's Hand
+							provider = { "i", 23881 },	-- Gargolmar's Hand
 						}),
 						objective(2, {	-- 0/1 Omor's Hoof
-							["provider"] = { "i", 23886 },	-- Omor's Hoof
+							provider = { "i", 23886 },	-- Omor's Hoof
 						}),
 						objective(3, {	-- 0/1 Nazan's Head
-							["provider"] = { "i", 23901 },	-- Nazan's Head
+							provider = { "i", 23901 },	-- Nazan's Head
 						}),
 						i(25716),	-- Handguards of Precision
 						i(25715),	-- Jade Warrior Pauldrons
@@ -186,9 +186,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					i(23901),	-- Nazan's Head (QI!)
 				}),
 				o(185168, {	-- Reinforced Fel Iron Chest
-					["description"] = "Available after defeating both Vazruden the Herald and Nazan.",
-					["crs"] = { 17307, 17536 },	-- Vazruden and Nazan
-					["groups"] = {
+					description = "Available after defeating both Vazruden the Herald and Nazan.",
+					crs = { 17307, 17536 },	-- Vazruden and Nazan
+					groups = {
 						i(27453),	-- Averinn's Ring of Slaying
 						i(24045),	-- Band of Renewal
 						i(27461),	-- Chestguard of the Prowler
@@ -218,14 +218,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(70, 70, 30) }).AddGroups({
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(70, 70, 30) }).AddGroups({
 				n(COMMON_BOSS_DROPS, {
-					["crs"] = {
+					crs = {
 						17306,	-- Watchkeeper Gargolmar
 						17308,	-- Omor the Unscarred
 						17307,	-- Vazruden the Herald
 					},
-					["groups"] = {
+					groups = {
 						i(30593),	-- Potent Fire Opal
 						i(30594),	-- Regal Chrysoprase
 						i(30592),	-- Steady Chrysoprase
@@ -233,21 +233,21 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				ach(667, {	-- Heroic: Hellfire Ramparts
 					crit(3705, {	-- Omor the Unscarred
-						["_encounter"] = { OMOR, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { OMOR, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(3816, {	-- Vazruden
-						["_encounter"] = { VAZRUDEN, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { VAZRUDEN, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
-				ach(5067, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Hellfire Ramparts Guild Run
+				ach(5067, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Hellfire Ramparts Guild Run
 				BossOnly(OMOR, {
 					applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 				}),
 				BossOnly(VAZRUDEN),
 				n(17536, {	-- Nazan
 					crit(3706, {	-- Nazan
-						["achievementID"] = 667,
-						["timeline"] = { ADDED_3_0_2 },
+						achievementID = 667,
+						timeline = { ADDED_3_0_2 },
 					}),
 					i(33833),	-- Nazan's Riding Crop (QI!)
 				}),
@@ -286,9 +286,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					h(i(23892)),	-- Ominous Letter [Horde]
 				}),
 				o(185168, {	-- Reinforced Fel Iron Chest
-					["description"] = "Available after defeating both Vazruden the Herald and Nazan.",
-					["crs"] = { 17307, 17536 },	-- Vazruden and Nazan
-					["groups"] = {
+					description = "Available after defeating both Vazruden the Herald and Nazan.",
+					crs = { 17307, 17536 },	-- Vazruden and Nazan
+					groups = {
 						i(24045),	-- Band of Renewal
 						i(24044),	-- Hellreaver
 						i(24064),	-- Ironsole Clompers
@@ -304,17 +304,17 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
-				["description"] = "You need to have a key to the instance in order to access this mode.",
-				["aqd"] = {
-					["cost"] = {
+				description = "You need to have a key to the instance in order to access this mode.",
+				aqd = {
+					cost = {
 						{ "i", 30622, 1 },    -- Flamewrought Key [A]
 						-- #if CLASSIC_ANNIVERSARY
 						{ "i", 265830, 1 },    -- Communal Flamewrought Key [A]
 						-- #endif
 					},
 				},
-				["hqd"] = {
-					["cost"] = {
+				hqd = {
+					cost = {
 						{ "i", 30637, 1 },    -- Flamewrought Key [H]
 						-- #if CLASSIC_ANNIVERSARY
 						{ "i", 265826, 1 },    -- Communal Flamewrought Key [H]
@@ -322,15 +322,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				},
 				-- #endif
-				["lvl"] = lvlsquish(70, 70, 30),
+				lvl = lvlsquish(70, 70, 30),
 			}).AddGroups({
 				n(COMMON_BOSS_DROPS, {
-					["crs"] = {
+					crs = {
 						17306,	-- Watchkeeper Gargolmar
 						17308,	-- Omor the Unscarred
 						17307,	-- Vazruden the Herald
 					},
-					["groups"] = {
+					groups = {
 						-- #if BEFORE CATA
 						BADGE_OF_JUSTICE(1),
 						-- #endif
@@ -341,13 +341,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				ach(667, {	-- Heroic: Hellfire Ramparts
 					crit(3705, {	-- Omor the Unscarred
-						["_encounter"] = { OMOR, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { OMOR, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(3816, {	-- Vazruden
-						["_encounter"] = { VAZRUDEN, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { VAZRUDEN, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
-				ach(5067, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Hellfire Ramparts Guild Run
+				ach(5067, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Hellfire Ramparts Guild Run
 				BossOnly(GARGOLMAR, {
 					i(27449),	-- Blood Knight Defender
 					i(27451),	-- Boots of the Darkwalker
@@ -373,15 +373,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				BossOnly(VAZRUDEN),
 				n(17536, {	-- Nazan
 					crit(3706, {	-- Nazan
-						["achievementID"] = 667,
-						["timeline"] = { ADDED_3_0_2 },
+						achievementID = 667,
+						timeline = { ADDED_3_0_2 },
 					}),
 					i(33833),	-- Nazan's Riding Crop (QI!)
 				}),
 				o(185168, {	-- Reinforced Fel Iron Chest
-					["description"] = "Available after defeating both Vazruden the Herald and Nazan.",
-					["crs"] = { 17307, 17536 },	-- Vazruden and Nazan
-					["groups"] = {
+					description = "Available after defeating both Vazruden the Herald and Nazan.",
+					crs = { 17307, 17536 },	-- Vazruden and Nazan
+					groups = {
 						i(27453),	-- Averinn's Ring of Slaying
 						i(27461),	-- Chestguard of the Prowler
 						i(29346),	-- Feltooth Eviscerator
@@ -404,7 +404,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(248, {
 		q(35572),	-- Hellfire Ramparts Reward Quest - Normal completion
 		q(35573),	-- Hellfire Ramparts Reward Quest - Heroic completion

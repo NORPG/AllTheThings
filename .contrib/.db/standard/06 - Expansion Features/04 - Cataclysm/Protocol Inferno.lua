@@ -79,13 +79,13 @@ local PROTOCOL_BOSSES = {
 	44566,	-- Ozumat
 }
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
-	n(PROTOCOL_INFERNO, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {
-		["lvl"] = 85,
-		["groups"] = {
+	n(PROTOCOL_INFERNO, bubbleDownSelf({ timeline = { ADDED_4_2_0 } }, {
+		lvl = 85,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(41148, {	-- Protocol Inferno: Terminated
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						41146,	-- Protocol Inferno: Deadmines
 						41147,	-- Protocol Inferno: Shadowfang Keep
 						41139,	-- Protocol Inferno: Blackrock Caverns
@@ -101,25 +101,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 			n(REWARDS, {
 				-- CRIEVE NOTE: This doesn't drop on Protocol Twilight mode.
 				currency(FISSURE_STONE_FRAGMENT, {
-					["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
+					OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
 						470595	-- Fury of the Firelord [Protocol Inferno buff]
 					),
-					["description"] = "Two Fissure Stone Fragments drop per boss in Protocol Inferno and the final boss of each dungeon will drop an extra three Fissure Stone Fragments if players have defeated all of the other bosses in the dungeon.",
-					["maps"] = PROTOCOL_MAPS,
-					["crs"] = PROTOCOL_BOSSES,
+					description = "Two Fissure Stone Fragments drop per boss in Protocol Inferno and the final boss of each dungeon will drop an extra three Fissure Stone Fragments if players have defeated all of the other bosses in the dungeon.",
+					maps = PROTOCOL_MAPS,
+					crs = PROTOCOL_BOSSES,
 				}),
 			}),
 			n(VENDORS, {
 				n(234135, {	-- Kyanite Stonetender <Fissure Stone Fragment Exchange>
-					["aqd"] = {
-						["coord"] = { 78.9 , 71.3, STORMWIND_CITY },
+					aqd = {
+						coord = { 78.9 , 71.3, STORMWIND_CITY },
 					},
-					["hqd"] = {
-						["coord"] = { 48.6, 71.4, ORGRIMMAR },
+					hqd = {
+						coord = { 48.6, 71.4, ORGRIMMAR },
 					},
-					["groups"] = {
+					groups = {
 						filter(MOUNTS, {
-							["providers"] = {
+							providers = {
 								-- Neck
 								{ "i", 232948 },	-- Satchel of the Cloudburst Necklace
 								{ "i", 232956 },	-- Satchel of the Mistral Pendant
@@ -157,7 +157,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 								{ "i", 232961 },	-- Satchel of the Planetary Band
 							},
 							description = "The randomized satchels whose loot originates from Heroic Throne of the Four Winds all have a chance to contain one of the following mounts.",
-							["groups"] = {
+							groups = {
 								i(63040),	-- Reins of the Drake of the North Wind
 								i(63043),	-- Reins of the Vitreous Stone Drake
 								i(63041),	-- Reins of the Drake of the South Wind
@@ -228,38 +228,38 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						frags(50, i(65018)),	-- Shadow of Dread
 						-- Plate Armor
 						frags(12, i(232963, {	-- Satchel of the Sky Strider Belt
-							["classes"] = PLATE_CLASSES,
-							["groups"] = {
+							classes = PLATE_CLASSES,
+							groups = {
 								i(65369),	-- Sky Strider Belt
 							},
 						})),
 						frags(21, i(232964, {	-- Satchel of the Sky Strider Greaves
-							["classes"] = PLATE_CLASSES,
-							["groups"] = {
+							classes = PLATE_CLASSES,
+							groups = {
 								i(65379),	-- Sky Strider Greaves
 							},
 						})),
 						frags(12, i(232969, {	-- Satchel of the Tempest Keeper Belt
-							["classes"] = PLATE_CLASSES,
-							["groups"] = {
+							classes = PLATE_CLASSES,
+							groups = {
 								i(65375),	-- Tempest Keeper Belt
 							},
 						})),
 						frags(21, i(232970, {	-- Satchel of the Tempest Keeper Leggings
-							["classes"] = PLATE_CLASSES,
-							["groups"] = {
+							classes = PLATE_CLASSES,
+							groups = {
 								i(65385),	-- Tempest Keeper Leggings
 							},
 						})),
 						frags(12, i(232971, {	-- Satchel of the Thunder Wall Belt
-							["classes"] = PLATE_CLASSES,
-							["groups"] = {
+							classes = PLATE_CLASSES,
+							groups = {
 								i(65370),	-- Thunder Wall Belt
 							},
 						})),
 						frags(21, i(232972, {	-- Satchel of the Thunder Wall Greaves
-							["classes"] = PLATE_CLASSES,
-							["groups"] = {
+							classes = PLATE_CLASSES,
+							groups = {
 								i(65380),	-- Thunder Wall Greaves
 							},
 						})),
@@ -273,26 +273,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						frags(80, i(60229)),	-- War-Torn Crushers
 						-- Mail Armor
 						frags(12, i(232952, {	-- Satchel of the Lightning Well Belt
-							["classes"] = MAIL_CLASSES,
-							["groups"] = {
+							classes = MAIL_CLASSES,
+							groups = {
 								i(65377),	-- Lightning Well Belt
 							},
 						})),
 						frags(21, i(232953, {	-- Satchel of the Lightning Well Legguards
-							["classes"] = MAIL_CLASSES,
-							["groups"] = {
+							classes = MAIL_CLASSES,
+							groups = {
 								i(65386),	-- Lightning Well Legguards
 							},
 						})),
 						frags(12, i(232967, {	-- Satchel of the Star Chaser Belt
-							["classes"] = MAIL_CLASSES,
-							["groups"] = {
+							classes = MAIL_CLASSES,
+							groups = {
 								i(65368),	-- Star Chaser Belt
 							},
 						})),
 						frags(21, i(232968, {	-- Satchel of the Star Chaser Legguards
-							["classes"] = MAIL_CLASSES,
-							["groups"] = {
+							classes = MAIL_CLASSES,
+							groups = {
 								i(65378),	-- Star Chaser Legguards
 							},
 						})),
@@ -303,26 +303,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						frags(80, i(60235)),	-- Boots of Az'galada
 						-- Leather Armor
 						frags(12, i(232950, {	-- Satchel of the Gale Rouser Belt
-							["classes"] = LEATHER_CLASSES,
-							["groups"] = {
+							classes = LEATHER_CLASSES,
+							groups = {
 								i(65374),	-- Gale Rouser Belt
 							},
 						})),
 						frags(21, i(232951, {	-- Satchel of the Gale Rouser Leggings
-							["classes"] = LEATHER_CLASSES,
-							["groups"] = {
+							classes = LEATHER_CLASSES,
+							groups = {
 								i(65384),	-- Gale Rouser Leggings
 							},
 						})),
 						frags(12, i(232973, {	-- Satchel of the Wind Stalker Belt
-							["classes"] = LEATHER_CLASSES,
-							["groups"] = {
+							classes = LEATHER_CLASSES,
+							groups = {
 								i(65371),	-- Wind Stalker Belt
 							},
 						})),
 						frags(21, i(232974, {	-- Satchel of the Wind Stalker Leggings
-							["classes"] = LEATHER_CLASSES,
-							["groups"] = {
+							classes = LEATHER_CLASSES,
+							groups = {
 								i(65381),	-- Wind Stalker Leggings
 							},
 						})),
@@ -333,14 +333,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						frags(80, i(60236)),	-- Nightmare Rider's Boots
 						-- Cloth Armor
 						frags(12, i(232965, {	-- Satchel of the Soul Breath Belt
-							["classes"] = CLOTH_CLASSES,
-							["groups"] = {
+							classes = CLOTH_CLASSES,
+							groups = {
 								i(65376),	-- Soul Breath Belt
 							},
 						})),
 						frags(21, i(232966, {	-- Satchel of the Soul Breath Leggings
-							["classes"] = CLOTH_CLASSES,
-							["groups"] = {
+							classes = CLOTH_CLASSES,
+							groups = {
 								i(65383),	-- Soul Breath Leggings
 							},
 						})),

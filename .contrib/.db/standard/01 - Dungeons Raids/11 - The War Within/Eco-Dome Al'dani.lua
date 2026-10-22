@@ -24,11 +24,11 @@ InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
 root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 	inst(1303, {	-- Eco-Dome Al'dani
-		["lore"] = "The eco-domes represent the best hope of restoring life to K'aresh. Eco-Dome Al'dani was built on the bones of one of the most sacred sites on K'aresh. A Wastelander invasion has ripped open the dome, exposing it to destruction. Ve'nari has called for help to keep all those resources from being wasted, and K'aresh's greatest hope from being destroyed.",
-		["coord"] = { 43.8, 4.9, KARESH_TAZAVESH },
-		["timeline"] = { ADDED_11_2_0 },
-		["maps"] = { 2449 },	-- Eco-Dome Al'dani
-		["groups"] = {
+		lore = "The eco-domes represent the best hope of restoring life to K'aresh. Eco-Dome Al'dani was built on the bones of one of the most sacred sites on K'aresh. A Wastelander invasion has ripped open the dome, exposing it to destruction. Ve'nari has called for help to keep all those resources from being wasted, and K'aresh's greatest hope from being destroyed.",
+		coord = { 43.8, 4.9, KARESH_TAZAVESH },
+		timeline = { ADDED_11_2_0 },
+		maps = { 2449 },	-- Eco-Dome Al'dani
+		groups = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(AZHICCAR, {
 					i(242468),	-- Al'dani Attendant's Gauze
@@ -68,7 +68,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
 				BossOnly(SOULSCRIBE, {
 					ach(42782),	-- Mythic: Eco-Dome Al'dani
-					ach(61604, {["timeline"] = { ADDED_12_0_0 }}),	-- Mythic: Eco-Dome Al'dani Guild Run
+					ach(61604, {timeline = { ADDED_12_0_0 }}),	-- Mythic: Eco-Dome Al'dani Guild Run
 				}),
 			}),
 		},

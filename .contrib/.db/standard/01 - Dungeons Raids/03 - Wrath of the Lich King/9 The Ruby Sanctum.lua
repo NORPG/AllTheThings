@@ -2,56 +2,56 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDown({ ["timeline"] = { ADDED_3_3_5 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDown({ timeline = { ADDED_3_3_5 } }, {
 	inst(761, {	-- The Ruby Sanctum
-		["mapID"] = THE_RUBY_SANCTUM,
-		["coord"] = { 61.2, 52.7, DRAGONBLIGHT },
+		mapID = THE_RUBY_SANCTUM,
+		coord = { 61.2, 52.7, DRAGONBLIGHT },
 		-- #if AFTER CATA
-		["sharedLockout"] = 1,
+		sharedLockout = 1,
 		-- #endif
-		["isRaid"] = true,
-		["lvl"] = 80,
-		["groups"] = {
+		isRaid = true,
+		lvl = 80,
+		groups = {
 			n(QUESTS, {
 				q(26013, {	-- Assault on the Sanctum
-					["sourceQuest"] = 26012,	-- Trouble at Wyrmrest
-					["qg"] = 27990,	-- Krasus <Consort of the Queen>
-					["coord"] = { 59.7, 54.6, DRAGONBLIGHT },
+					sourceQuest = 26012,	-- Trouble at Wyrmrest
+					qg = 27990,	-- Krasus <Consort of the Queen>
+					coord = { 59.7, 54.6, DRAGONBLIGHT },
 				}),
 				q(26034, {	-- The Twilight Destroyer
-					["sourceQuest"] = 26013,	-- Assault on the Sanctum
-					["qg"] = 40429,	-- Sanctum Guardian Xerestrasza
-					["groups"] = {
+					sourceQuest = 26013,	-- Assault on the Sanctum
+					qg = 40429,	-- Sanctum Guardian Xerestrasza
+					groups = {
 						objective(1, {	-- 0/1 Halion slain
-							["provider"] = { "n", 39863 },	-- Halion
+							provider = { "n", 39863 },	-- Halion
 						}),
 					},
 				}),
 				q(26012, {	-- Trouble at Wyrmrest
-					["description"] = "You need to have cleared the first four bosses in Icecrown Citadel before this quest will be available to you.",
-					["sourceAchievements"] = {
+					description = "You need to have cleared the first four bosses in Icecrown Citadel before this quest will be available to you.",
+					sourceAchievements = {
 						4531,	-- Storming the Citadel (10 Player)
 						4604,	-- Storming the Citadel (25 Player)
 					},
-					["qg"] = 16128,	-- Rhonin
-					["coord"] = { 30.6, 48.6, NORTHREND_DALARAN },
-					["maps"] = { DRAGONBLIGHT },
-					["isBreadcrumb"] = true,
+					qg = 16128,	-- Rhonin
+					coord = { 30.6, 48.6, NORTHREND_DALARAN },
+					maps = { DRAGONBLIGHT },
+					isBreadcrumb = true,
 				}),
 			}),
 			n(39751, {	-- Baltharus the Warborn
-				["description"] = "Must be killed before you can fight General Zarithrian or talk to the quest giver.",
+				description = "Must be killed before you can fight General Zarithrian or talk to the quest giver.",
 			}),
 			n(39747, {	-- Saviana Ragefire
-				["description"] = "Must be killed before you can fight General Zarithrian."
+				description = "Must be killed before you can fight General Zarithrian."
 			}),
 			n(39746, {	-- General Zarithrian
-				["description"] = "Must be killed before you can fight Halion."
+				description = "Must be killed before you can fight Halion."
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				e(1652, {	-- Halion
-					["creatureID"] = 39863,	-- Halion
-					["groups"] = {
+					creatureID = 39863,	-- Halion
+					groups = {
 						ach(4817),	-- The Twilight Destroyer (10 player)
 						i(53103),	-- Baltharus' Gift
 						i(53113),	-- Twilight Scale Shoulders			//** Confirmed Drop 4/19/19
@@ -70,11 +70,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC, {
 				e(1652, {	-- Halion
-					["creatureID"] = 39863,	-- Halion
-					["groups"] = {
+					creatureID = 39863,	-- Halion
+					groups = {
 						ach(4818),	-- Heroic: The Twilight Destroyer (10 player)
 						ach(5022, {	-- The Twilight Destroyer - Guild Edition
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(54557),	-- Baltharus' Gift					//** Confirmed Drop 4/19/19
 						i(54566),	-- Twilight Scale Shoulders			//** Confirmed Drop 4/19/19
@@ -93,8 +93,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
 				e(1652, {	-- Halion
-					["creatureID"] = 39863,	-- Halion
-					["groups"] = {
+					creatureID = 39863,	-- Halion
+					groups = {
 						ach(4815),	-- The Twilight Destroyer (25 player)
 						i(53132),	-- Penumbra Pendant
 						i(53489),	-- Cloak of Burning Dusk			//** Confirmed Drop 4/19/19
@@ -117,11 +117,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC, {
 				e(1652, {	-- Halion
-					["creatureID"] = 39863,	-- Halion
-					["groups"] = {
+					creatureID = 39863,	-- Halion
+					groups = {
 						ach(4816),	-- Heroic: The Twilight Destroyer (25 player)
 						ach(5022, {	-- The Twilight Destroyer - Guild Edition
-							["timeline"] = { ADDED_4_0_3 },
+							timeline = { ADDED_4_0_3 },
 						}),
 						i(54581),	-- Penumbra Pendant
 						i(54583),	-- Cloak of Burning Dusk			//** Confirmed Drop 4/19/19

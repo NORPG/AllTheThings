@@ -75,13 +75,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15309),	-- Feral Cloak
 		i(12979),	-- Firebane Cloak
 		i(2652, {	-- Flimsy Chain Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+			timeline = { REMOVED_4_0_3 },	-- estimated removal time
 		}),
 		i(4710),	-- Forest Cloak
 		i(15632),	-- Formidable Cape
 		i(9812),	-- Fortified Cloak
 		i(1376, {	-- Frayed Cloak
-			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+			timeline = { REMOVED_4_0_3, ADDED_8_0_1 },
 		}),
 		i(14270),	-- Gaea's Cloak
 		i(14219),	-- Geomancer's Cloak
@@ -106,25 +106,25 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(4689),	-- Hunting Cloak
 		i(9890),	-- Huntsman's Cape
 		i(68762, {	-- Imbued Cadet Cloak
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68748, {	-- Imbued Disciple's Cloak
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68759, {	-- Imbued Gypsy Cloak
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68743, {	-- Imbued Infantry Cloak
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68744, {	-- Imbued Pioneer Cloak
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68746, {	-- Imbued Primal Cape
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68756, {	-- Imbued Simple Cape
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(15661),	-- Impenetrable Cloak
 		i(6432),	-- Imperial Cloak
@@ -145,13 +145,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14781),	-- Khan's Cloak
 		i(7460),	-- Knight's Cloak
 		i(1741, {	-- Laced Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+			timeline = { REMOVED_4_0_3 },	-- estimated removal time
 		}),
 		i(4706),	-- Lambent Scale Cloak
 		i(3995),	-- Laminated Scale Cloak
 		i(1749),	-- Linked Chain Cloak
 		i(2644, {	-- Loose Chain Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+			timeline = { REMOVED_4_0_3 },	-- estimated removal time
 		}),
 		i(10079),	-- Lord's Cape
 		i(14251),	-- Lunar Cloak
@@ -179,7 +179,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(4003),	-- Overlinked Chain Cloak
 		i(14161),	-- Pagan Cape
 		i(1790, {	-- Patched Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+			timeline = { REMOVED_4_0_3 },	-- estimated removal time
 		}),
 		i(1429),	-- Patchwork Cloak
 		i(15340),	-- Pathfinder Cloak
@@ -195,7 +195,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14791),	-- Protector Cape
 		i(15382),	-- Rageclaw Cloak
 		i(1372, {	-- Ragged Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+			timeline = { REMOVED_4_0_3 },	-- estimated removal time
 		}),
 		i(9786),	-- Raider's Cloak
 		i(14188),	-- Raincaller Cloak
@@ -228,9 +228,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(9745),	-- Simple Cape
 		i(22782, {	-- Sin'dorei Cloak of Warding
 			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+			description = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { CREATED_4_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
+			timeline = { CREATED_4_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		i(14752),	-- Slayer's Cape
 		i(3972),	-- Smooth Cloak
@@ -265,7 +265,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14602),	-- Warden's Cloak
 		i(9959),	-- Warmonger's Cloak
 		i(1505, {	-- Warped Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+			timeline = { REMOVED_4_0_3 },	-- estimated removal time
 		}),
 		i(4658),	-- Warrior's Cloak
 		i(14813),	-- Warstrike Cape
@@ -276,10 +276,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(13121),	-- Wing of the Whelpling
 		i(15371),	-- Wolf Rider's Cloak
 		i(1733, {	-- Worn Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+			timeline = { REMOVED_4_0_3 },	-- estimated removal time
 		}),
 		i(1421, {	-- Worn Hide Cloak
-			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+			timeline = { REMOVED_4_0_3 },	-- estimated removal time
 		}),
 		i(15333),	-- Wrangler's Cloak
 	}),
@@ -533,22 +533,22 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3075),	-- Eye of Flame
 		i(9433),	-- Forgotten Wraps
 		i(3363, {	-- Frayed Belt
-			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+			timeline = { REMOVED_4_0_3, ADDED_8_0_1 },
 		}),
 		i(3365, {	-- Frayed Bracers
-			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+			timeline = { REMOVED_4_0_3, ADDED_8_0_1 },
 		}),
 		i(1377, {	-- Frayed Gloves
-			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+			timeline = { REMOVED_4_0_3, ADDED_8_0_1 },
 		}),
 		i(1378, {	-- Frayed Pants
-			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+			timeline = { REMOVED_4_0_3, ADDED_8_0_1 },
 		}),
 		i(1380, {	-- Frayed Robe
-			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+			timeline = { REMOVED_4_0_3, ADDED_8_0_1 },
 		}),
 		i(1374, {	-- Frayed Shoes
-			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+			timeline = { REMOVED_4_0_3, ADDED_8_0_1 },
 		}),
 		i(13100),	-- Furen's Boots
 		i(14273),	-- Gaea's Amice
@@ -625,16 +625,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3798),	-- Interlaced Shoulderpads
 		i(3799),	-- Interlaced Vest
 		i(68754, {	-- Imbued Disciple's Boots
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68749, {	-- Imbued Disciple's Bracers
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68755, {	-- Imbued Disciple's Gloves
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68747, {	-- Imbued Disciple's Sash
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(8246),	-- Imperial Red Boots
 		i(8247),	-- Imperial Red Bracers
@@ -1162,19 +1162,19 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(9893),	-- Huntsman's Leggings
 		i(9894),	-- Huntsman's Shoulders
 		i(68750, {	-- Imbued Pioneer Belt
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68758, {	-- Imbued Pioneer Boots
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68751, {	-- Imbued Pioneer Bracers
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68757, {	-- Imbued Pioneer Gloves
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68745, {	-- Imbued Primal Belt
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(4738),	-- Imperial Leather Belt
 		i(6431),	-- Imperial Leather Boots
@@ -1395,9 +1395,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15128),	-- Robust Tunic
 		i(5968, {	-- Rugged Boots
 			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+			description = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { CREATED_1_12_1, ADDED_6_0_2, REMOVED_7_0_3 },
+			timeline = { CREATED_1_12_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		i(13111),	-- Sandals of the Insurgent
 		i(14553),	-- Sash of Mercy
@@ -1592,10 +1592,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3281),	-- Battle Chain Gloves
 		i(3282),	-- Battle Chain Pants
 		i(3283, {	-- Battle Chain Tunic
-			["timeline"] = { REMOVED_6_1_0 },
+			timeline = { REMOVED_6_1_0 },
 		}),
 		i(120950, {	-- Battle Chain Vest
-			["timeline"] = { ADDED_6_1_0 },
+			timeline = { ADDED_6_1_0 },
 		}),
 		i(13126),	-- Battlecaller Gauntlets
 		i(6592),	-- Battleforge Armor
@@ -1642,10 +1642,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3304),	-- Brackwater Gauntlets
 		i(4681),	-- Brackwater Girdle
 		i(3305, {	-- Brackwater Leggings
-			["timeline"] = { REMOVED_6_1_0 },
+			timeline = { REMOVED_6_1_0 },
 		}),
 		i(120954, {	-- Brackwater Legguards
-			["timeline"] = { ADDED_6_1_0 },
+			timeline = { ADDED_6_1_0 },
 		}),
 		i(3306),	-- Brackwater Vest
 		i(9926),	-- Brigade Boots
@@ -1665,9 +1665,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(2989),	-- Burnished Tunic
 		i(54784, {	-- Burnished Tunic
 			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+			description = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { CREATED_4_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
+			timeline = { CREATED_4_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		i(9758),	-- Cadet Belt
 		i(9759),	-- Cadet Boots
@@ -1735,9 +1735,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(13123),	-- Dreamwalker Armor
 		i(2016, {	-- Dusty Chain Armor
 			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+			description = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { CREATED_1_12_1, ADDED_6_0_2, REMOVED_7_0_3 },
+			timeline = { CREATED_1_12_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		i(2649),	-- Flimsy Chain Belt
 		i(2650),	-- Flimsy Chain Boots
@@ -1814,9 +1814,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15628),	-- Gryphon Mail Pauldrons
 		i(2273, {	-- Guerrilla Armor
 			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
+			description = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { CREATED_1_12_1, ADDED_6_0_2, REMOVED_7_0_3 },
+			timeline = { CREATED_1_12_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		i(2245),	-- Helm of Narv
 		i(8308),	-- Hero's Band
@@ -1837,16 +1837,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14749),	-- Hulking Spaulders
 		i(1981),	-- Icemail Jerkin
 		i(68752, {	-- Imbued Infantry Belt
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68761, {	-- Imbued Infantry Boots
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68753, {	-- Imbued Infantry Bracers
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(68760, {	-- Imbued Infantry Gauntlets
-			["timeline"] = { ADDED_4_0_6 },
+			timeline = { ADDED_4_0_6 },
 		}),
 		i(15663),	-- Impenetrable Belt
 		i(15659),	-- Impenetrable Bindings
@@ -2038,7 +2038,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14788),	-- Protector Armguards
 		i(14789, {	-- Protector Breastplate
 			-- #if AFTER 9.2.0
-			["description"] = "Is currently bugged and cannot be sold to vendor.",
+			description = "Is currently bugged and cannot be sold to vendor.",
 			-- #endif
 		}),
 		i(14792),	-- Protector Gauntlets
@@ -2151,10 +2151,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(4678),	-- Veteran Girdle
 		i(2980),	-- Veteran Gloves
 		i(2978, {	-- Veteran Leggings [CRIEVE NOTE: This might be in a similar situation to the two other mail items that were swapped out.]
-			["timeline"] = { REMOVED_6_1_0 },	-- Likely unobtainable since adding of Vetaran Legguards
+			timeline = { REMOVED_6_1_0 },	-- Likely unobtainable since adding of Vetaran Legguards
 		}),
 		i(120953, {	-- Veteran Legguards
-			["timeline"] = { ADDED_6_1_0 },
+			timeline = { ADDED_6_1_0 },
 		}),
 		i(14722),	-- War Paint Anklewraps
 		i(14723),	-- War Paint Bindings
@@ -2658,7 +2658,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(727),	-- Notched Shortsword
 			i(15210),	-- Raider Shortsword
 			i(9718, {	-- Reforged Blade of Heroes
-				["cost"] = {
+				cost = {
 					{ "i", 9719, 1 },	-- Broken Blade of Heroes
 					{ "i", 7068, 2 },	-- Elemental Fire
 					{ "i", 3486, 2 },	-- Heavy Grinding Stone
@@ -2690,7 +2690,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(15253),	-- Beheading Blade
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, i(227691, {	-- Blade of Hanna
-				["timeline"] = { CREATED_1_15_3 },
+				timeline = { CREATED_1_15_3 },
 			})),
 			-- #endif
 			i(2801),	-- Blade of Hanna
@@ -3048,7 +3048,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15592),	-- Steadfast Buckler
 		-- #if BEFORE 8.2.0
 		i(7188, {	-- Stormwind Guard Shield
-			["timeline"] = { CREATED_1_12_1, ADDED_8_2_0 },
+			timeline = { CREATED_1_12_1, ADDED_8_2_0 },
 		}),
 		-- #endif
 		i(14852),	-- Sunscale Shield
@@ -3183,9 +3183,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(12034),	-- Marble Necklace
 		i(5004, {	-- Mark of the Kirin Tor
 			-- #if AFTER 6.0.1
-			["description"] = "Dropped from Crate of Salvage during Warlords of Draenor.",
+			description = "Dropped from Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { CREATED_1_11_1, ADDED_6_0_2, REMOVED_7_0_3 },
+			timeline = { CREATED_1_11_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		i(12042),	-- Marsh Chain
 		i(13091),	-- Medallion of Grand Marshal Morris
@@ -3193,7 +3193,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(12035),	-- Obsidian Pendant
 		i(12032),	-- Onyx Choker
 		i(4614, {	-- Pendant of Myzrael
-			["timeline"] = { REMOVED_4_0_3 },
+			timeline = { REMOVED_4_0_3 },
 		}),
 		i(12048),	-- Prismatic Pendant
 		i(12026),	-- Quicksilver Pendant
@@ -3296,9 +3296,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7734),	-- Six Demon Bag
 		i(14557, {	-- The Lion Horn of Stormwind
 			-- #if WOD
-			["description"] = "Drops from Big Crate of Salvage.",
+			description = "Drops from Big Crate of Salvage.",
 			-- #endif
-			["timeline"] = { REMOVED_7_0_3 },
+			timeline = { REMOVED_7_0_3 },
 		}),
 		i(11302),	-- Uther's Strength
 	}),
@@ -3326,111 +3326,111 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 	filter(MISC, {
 		-- #if BEFORE 5.0.4
 		applyclassicphase(PHASE_FIVE_RECIPES, i(23197, {	-- Idol of the Moon [Phase 5/6]
-			["timeline"] = { REMOVED_5_0_4 },
+			timeline = { REMOVED_5_0_4 },
 		})),
 		-- #endif
 		-- #if AFTER 9.1.0
 		i(3670, {	-- Large Slimy Bone
-			["description"] = "Drops from Slimes in Classic zones.",
+			description = "Drops from Slimes in Classic zones.",
 		}),
 		-- #endif
 		i(11733, {	-- Libram of Constitution
 			-- #if AFTER CATA
-			["description"] = "This item is now completely worthless.",
+			description = "This item is now completely worthless.",
 			-- #endif
 		}),
 		-- #if BEFORE 5.0.4
 		applyclassicphase(PHASE_FIVE_RECIPES, i(23203, {	-- Libram of Fervor [Phase 5/6]
-			["timeline"] = { REMOVED_5_0_4 },
+			timeline = { REMOVED_5_0_4 },
 		})),
 		-- #endif
 		i(11736, {	-- Libram of Resilience
 			-- #if AFTER CATA
-			["description"] = "This item is now completely worthless.",
+			description = "This item is now completely worthless.",
 			-- #endif
 		}),
 		i(11732, {	-- Libram of Rumination
 			-- #if AFTER CATA
-			["description"] = "This item is now completely worthless.",
+			description = "This item is now completely worthless.",
 			-- #endif
 		}),
 		i(11734, {	-- Libram of Tenacity
 			-- #if AFTER CATA
-			["description"] = "This item is now completely worthless.",
+			description = "This item is now completely worthless.",
 			-- #endif
 		}),
 		i(11737, {	-- Libram of Voracity
 			-- #if AFTER CATA
-			["description"] = "This item is now completely worthless.",
+			description = "This item is now completely worthless.",
 			-- #endif
 		}),
 		-- #if AFTER 9.1.0
 		i(3300, {	-- Rabbit's Foot
-			["description"] = "Drops from wolves or dogs in vanilla zones.",
+			description = "Drops from wolves or dogs in vanilla zones.",
 		}),
 		i(11406, {	-- Rotting Bear Carcass
-			["description"] = "Drops from bears in vanilla zones and the dungeon Old Hillsbrad Foothills.",
+			description = "Drops from bears in vanilla zones and the dungeon Old Hillsbrad Foothills.",
 		}),
 		-- #endif
 		-- #if SEASON_OF_DISCOVERY
 		applyclassicphase(SOD_PHASE_ONE, i(211786, {	-- Scroll: CHAP BALK WELLES
-			["description"] = "'Black Sheep Wall'",
-			["classes"] = { MAGE },
+			description = "'Black Sheep Wall'",
+			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211785, {	-- Scroll: CWAL
-			["description"] = "'Claw'",
-			["classes"] = { MAGE },
+			description = "'Claw'",
+			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211780, {	-- Scroll: KWYJIBO
-			["description"] = "This might just be a Simpsons quote.",
-			["classes"] = { MAGE },
+			description = "This might just be a Simpsons quote.",
+			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211787, {	-- Scroll: LOWER PING WHOMEVER
-			["description"] = "'Overwhelming Power'",
-			["classes"] = { MAGE },
+			description = "'Overwhelming Power'",
+			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211854, {	-- Scroll: OMIT KESA
-			["description"] = "'Time Soak'",
-			["classes"] = { MAGE },
+			description = "'Time Soak'",
+			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211855, {	-- Scroll: STHENIC LUNATE
-			["description"] = "'Ancient Hustle'",
-			["classes"] = { MAGE },
+			description = "'Ancient Hustle'",
+			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211853, {	-- Scroll: VOCE WELL
-			["description"] = "'Cow Level'",
-			["classes"] = { MAGE },
+			description = "'Cow Level'",
+			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211784, {	-- Scroll: WUBBA WUBBA
-			["description"] = "This might just be a Pee Wee Herman quote.",
-			["classes"] = { MAGE },
+			description = "This might just be a Pee Wee Herman quote.",
+			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_TWO, i(213545, {	-- PEATCHY ATTAX
-			["classes"] = { MAGE },
+			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_TWO, i(213546, {	-- Scroll: SHOOBEEDOOP
-			["classes"] = { MAGE },
+			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_TWO, i(213547, {	-- Scroll: THAW WORDS
-			["classes"] = { MAGE },
+			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_TWO, i(213544, {	-- Scroll: TOPAZ YORAK
-			["classes"] = { MAGE },
+			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_TWO, i(213543, {	-- Scroll: UPDOG
-			["classes"] = { MAGE },
+			classes = { MAGE },
 		})),
 		-- #endif
 		-- #if BEFORE 5.0.4
 		applyclassicphase(PHASE_FIVE_RECIPES, i(23199, {	-- Totem of the Storm [Phase 5/6]
-			["timeline"] = { REMOVED_5_0_4 },
+			timeline = { REMOVED_5_0_4 },
 		})),
 		-- #endif
 	}),
 	filter(PROFESSION_EQUIPMENT, {
 		i(1819, {	-- Gouging Pick
 			-- #IF BEFORE 12.0.5
-			["collectible"] = false,
+			collectible = false,
 			-- #ENDIF
 		}),
 	}),
@@ -3511,7 +3511,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 	filter(RECIPES, {
 		prof(ALCHEMY, {
 			i(6454, {	-- Manual: Strong Anti-Venom (RECIPE!)
-				["timeline"] = { ADDED_8_0_1 },
+				timeline = { ADDED_8_0_1 },
 			}),
 			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility (RECIPE!)
 			i(9297),	-- Recipe: Elixir of Dream Vision (RECIPE!)
@@ -3527,17 +3527,17 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(13518),	-- Recipe: Flask of Petrification / Recipe: Potion of Petrification [3.2.0+] (RECIPE!)
 			-- #endif
 			i(13493, {	-- Recipe: Greater Arcane Elixir (RECIPE!)
-				["timeline"] = { REMOVED_3_0_2 },
+				timeline = { REMOVED_3_0_2 },
 			}),
 			i(13490),	-- Recipe: Greater Stoneshield Potion (RECIPE!)
 			i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
 			i(3395),	-- Recipe: Limited Invulnerability Potion (RECIPE!)
 			i(9293, {	-- Recipe: Magic Resistance Potion (RECIPE!)
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(3831),	-- Recipe: Major Troll's Blood Elixir[Wrath+] / Mighty Troll's Blood Potion  (RECIPE!)
 			i(3393, {	-- Recipe: Minor Magic Resistance Potion (RECIPE!)
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			-- #if AFTER TBC
 			i(3394),	-- Recipe: Potion of Curing [TBC+] / Recipe: Elixir of Poison Resistance (RECIPE!)
@@ -3546,7 +3546,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(13518),	-- Recipe: Potion of Petrification [3.2.0+] / Recipe: Flask of Petrification (RECIPE!)
 			-- #endif
 			i(13492, {	-- Recipe: Purification Potion (RECIPE!)
-				["timeline"] = { REMOVED_2_0_1 },
+				timeline = { REMOVED_2_0_1 },
 			}),
 			i(2555),	-- Recipe: Swiftness Potion (RECIPE!)
 			i(13489),	-- Recipe: Transmute Earth to Life (RECIPE!)
@@ -3556,10 +3556,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 4.0.3
 			i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 				-- #if AFTER 10.1.7
-				["description"] = "Can drop from any troll in zones such as Arathi Highlands, Dun Morogh, Stranglethorn, Silithus, The Hinterlands & Zul Gurub. Inside Zul Gurub is a great spot.",
-				["maps"] = { ARATHI_HIGHLANDS, DUN_MOROGH, NORTHERN_STRANGLETHORN, SILITHUS, THE_CAPE_OF_STRANGLETHORN, THE_HINTERLANDS, ZULGURUB },
+				description = "Can drop from any troll in zones such as Arathi Highlands, Dun Morogh, Stranglethorn, Silithus, The Hinterlands & Zul Gurub. Inside Zul Gurub is a great spot.",
+				maps = { ARATHI_HIGHLANDS, DUN_MOROGH, NORTHERN_STRANGLETHORN, SILITHUS, THE_CAPE_OF_STRANGLETHORN, THE_HINTERLANDS, ZULGURUB },
 				-- #endif
-				["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+				timeline = { REMOVED_4_0_1, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 			}),
 			-- #endif
 		}),
@@ -3567,7 +3567,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
 			i(3609),	-- Plans: Copper Chain Vest (RECIPE!)
 			i(12698, {	-- Plans: Dawnbringer Shoulders (RECIPE!)
-				["timeline"] = {
+				timeline = {
 					-- #if SEASON_OF_DISCOVERY
 					ADDED_1_15_3,
 					-- #else
@@ -3582,36 +3582,36 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(3867),	-- Plans: Golden Iron Destroyer (RECIPE!)
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(217276, {	-- Plans: Golden Scale Boots (RECIPE!)
-				["timeline"] = { ADDED_1_15_1 },
+				timeline = { ADDED_1_15_1 },
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(217278, {	-- Plans: Golden Scale Cuirass (RECIPE!)
-				["timeline"] = { ADDED_1_15_1 },
+				timeline = { ADDED_1_15_1 },
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(217286, {	-- Plans: Golden Scale Leggings (RECIPE!)
-				["timeline"] = { ADDED_1_15_1 },
+				timeline = { ADDED_1_15_1 },
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(217284, {	-- Plans: Golden Scale Shoulders (RECIPE!)
-				["timeline"] = { ADDED_1_15_1 },
+				timeline = { ADDED_1_15_1 },
 			})),
 			-- #endif
 			i(3875, {	-- Plans: Golden Scale Boots (RECIPE!)
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_1 },
+				timeline = { REMOVED_1_15_1 },
 				-- #endif
 			}),
 			i(3873, {	-- Plans: Golden Scale Cuirass (RECIPE!)
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_1 },
+				timeline = { REMOVED_1_15_1 },
 				-- #endif
 			}),
 			i(3872, {	-- Plans: Golden Scale Leggings (RECIPE!)
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_1 },
+				timeline = { REMOVED_1_15_1 },
 				-- #endif
 			}),
 			i(3871, {	-- Plans: Golden Scale Shoulders (RECIPE!)
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_1 },
+				timeline = { REMOVED_1_15_1 },
 				-- #endif
 			}),
 			i(3611),	-- Plans: Green Iron Boots (RECIPE!)
@@ -3622,13 +3622,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(12716),	-- Plans: Helm of the Great Chief (RECIPE!)
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, i(228312, {	-- Plans: Invincible Mail (RECIPE!)
-				["timeline"] = { ADDED_1_15_3 },
+				timeline = { ADDED_1_15_3 },
 			})),
 			-- #endif
 			i(12728, {	-- Plans: Invulnerable Mail (RECIPE!)
 				-- #if SEASON_OF_DISCOVERY
 				-- CRIEVE NOTE: This item still drops apparently, I got this on my paladin.
-				-- ["timeline"] = { REMOVED_1_15_3 },
+				-- timeline = { REMOVED_1_15_3 },
 				-- #endif
 			}),
 			i(5543),	-- Plans: Iridescent Hammer (RECIPE!)
@@ -3658,20 +3658,20 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(2882),	-- Plans: Silvered Bronze Shoulders (RECIPE!)
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, i(227905, {	-- Plans: Skyrider's Masterwork Stormhammer (RECIPE!)
-				["timeline"] = { ADDED_1_15_3 },
+				timeline = { ADDED_1_15_3 },
 			})),
 			-- #endif
 			i(6046),	-- Plans: Steel Weapon Chain (RECIPE!)
 			i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
 			i(12703, {	-- Plans: Storm Gauntlets (RECIPE!)
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { REMOVED_1_15_3 },
+				timeline = { REMOVED_1_15_3 },
 				-- #endif
 			}),
 			i(12720),	-- Plans: Stronghold Gauntlets (RECIPE!)
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, i(228313, {	-- Plans: Tempest Gauntlets (RECIPE!)
-				["timeline"] = { ADDED_1_15_3 },
+				timeline = { ADDED_1_15_3 },
 			})),
 			-- #endif
 			i(12682),	-- Plans: Thorium Armor (RECIPE!)
@@ -3684,7 +3684,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_FIVE, i(22388)),	-- Plans: Titanic Leggings (RECIPE!)
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, i(228314, {	-- Plans: Warcrest of the Great Chief (RECIPE!)
-				["timeline"] = { ADDED_1_15_3 },
+				timeline = { ADDED_1_15_3 },
 			})),
 			-- #endif
 			i(12711),	-- Plans: Whitesoul Helm (RECIPE!)
@@ -3694,7 +3694,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		prof(ENCHANTING, {
 			i(11038),	-- Formula: Enchant 2H Weapon - Lesser Versatility / CLASSIC: Formula: Enchant 2H Weapon - Lesser Spirit (RECIPE!)
 			i(16245, {	-- Formula: Enchant Boots - Greater Agility (RECIPE!)
-				["timeline"] = { REMOVED_2_3_0 },	-- Learned at trainer
+				timeline = { REMOVED_2_3_0 },	-- Learned at trainer
 			}),
 			i(16215),	-- Formula: Enchant Boots - Greater Stamina (RECIPE!)
 			i(11167),	-- Formula: Enchant Boots - Lesser Versatility / CLASSIC: Formula: Enchant Boots - Lesser Spirit (RECIPE!)
@@ -3724,12 +3724,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(16253),	-- Formula: Enchant Chest - Greater Stats (RECIPE!)
 			i(6342),	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
 			i(11098, {	-- Formula: Enchant Cloak - Lesser Shadow Resistance (RECIPE!)
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(11039),	-- Formula: Enchant Cloak - Minor Agility (RECIPE!)
 			i(11226),	-- Formula: Enchant Gloves - Riding Skill (RECIPE!)
 			i(11224, {	-- Formula: Enchant Shield - Frost Resistance (RECIPE!)
-				["timeline"] = { REMOVED_5_0_4 },
+				timeline = { REMOVED_5_0_4 },
 			}),
 			i(11168),	-- Formula: Enchant Shield - Lesser Parry / CLASSIC: Formula: Enchant Shield - Lesser Block (RECIPE!)
 			i(11081),	-- Formula: Enchant Shield - Lesser Protection (RECIPE!)
@@ -3756,21 +3756,21 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(4409),	-- Schematic: Small Seaforium Charge (RECIPE!)
 			i(10608),	-- Schematic: Sniper Scope (RECIPE!)
 			i(10605, {	-- Schematic: Spellpower Goggles Xtreme (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(16043, {	-- Schematic: Thorium Rifle (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(16051, {	-- Schematic: Thorium Shells (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3, REMOVED_4_0_1 },	-- Taught by trainer
+				timeline = { REMOVED_2_0_3, REMOVED_4_0_1 },	-- Taught by trainer
 			}),
 		}),
 		prof(FIRST_AID, {
 			i(6454, {	-- Manual: Strong Anti-Venom (RECIPE!)
-				["timeline"] = { REMOVED_8_0_1 },
+				timeline = { REMOVED_8_0_1 },
 			}),
 		}),
-		applyclassicphase(TBC_PHASE_ONE, prof(JEWELCRAFTING, sharedDataSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
+		applyclassicphase(TBC_PHASE_ONE, prof(JEWELCRAFTING, sharedDataSelf({ timeline = { ADDED_2_0_5 } }, {
 			i(20976),	-- Design: Citrine Pendant of Golden Healing (RECIPE!)
 			i(21953),	-- Design: Emerald Owl (RECIPE!)
 			i(21947),	-- Design: Gem Studded Band (RECIPE!)
@@ -3811,20 +3811,20 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7363),	-- Pattern: Pilferer's Gloves (RECIPE!)
 			i(7288),	-- Pattern: Rugged Leather Pants (RECIPE!)
 			i(15745, {	-- Pattern: Runic Leather Belt (RECIPE!)
-				["timeline"] = { REMOVED_5_0_4 },	-- Taught by trainer
+				timeline = { REMOVED_5_0_4 },	-- Taught by trainer
 			}),
 			i(15731, {	-- Pattern: Runic Leather Gauntlets (RECIPE!)
-				["timeline"] = { REMOVED_5_0_4 },	-- Taught by trainer
+				timeline = { REMOVED_5_0_4 },	-- Taught by trainer
 			}),
 			i(15765, {	-- Pattern: Runic Leather Pants (RECIPE!)
-				["timeline"] = { REMOVED_5_0_4 },	-- Taught by trainer
+				timeline = { REMOVED_5_0_4 },	-- Taught by trainer
 			}),
 			i(7453),	-- Pattern: Swift Boots (RECIPE!)
 			i(8385),	-- Pattern: Turtle Scale Gloves (RECIPE!)
 			i(15742),	-- Pattern: Warbear Harness (RECIPE!)
 			i(2407),	-- Pattern: White Leather Jerkin (RECIPE!)
 			i(15757, {	-- Pattern: Wicked Leather Pants (RECIPE!)
-				["timeline"] = { REMOVED_5_0_4 },	-- Taught by trainer
+				timeline = { REMOVED_5_0_4 },	-- Taught by trainer
 			}),
 		}),
 		prof(TAILORING, {
@@ -3832,56 +3832,56 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(217254)),	-- Pattern: Boots of the Enchanter (RECIPE!)
 			i(4352, {	-- Pattern: Boots of the Enchanter (RECIPE!)
-				["timeline"] = { REMOVED_1_15_1 },
+				timeline = { REMOVED_1_15_1 },
 			}),
 			-- #else
 			i(4352),	-- Pattern: Boots of the Enchanter (RECIPE!)
 			-- #endif
 			i(14510),	-- Pattern: Bottomless Bag (RECIPE!)
 			i(14484, {	-- Pattern: Brightcloth Cloak (RECIPE!)
-				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
 			i(14479, {	-- Pattern: Brightcloth Gloves (RECIPE!)
-				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
 			i(14494),	-- Pattern: Brightcloth Pants (RECIPE!)
 			i(14478, {	-- Pattern: Brightcloth Robe (RECIPE!)
-				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
 			i(10316),	-- Pattern: Colorful Kilt (RECIPE!)
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217251, {["timeline"] = {ADDED_1_15_1}})),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
-			i(7084, {["timeline"] = {REMOVED_1_15_1}}),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
+			applyclassicphase(SOD_PHASE_TWO, i(217251, {timeline = {ADDED_1_15_1}})),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
+			i(7084, {timeline = {REMOVED_1_15_1}}),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
 			-- #else
 			i(7084),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217249, {["timeline"] = {ADDED_1_15_1}})),	-- Pattern: Earthen Silk Belt (RECIPE!)
-			i(7086, {["timeline"] = {REMOVED_1_15_1}}),	-- Pattern: Earthen Silk Belt (RECIPE!)
+			applyclassicphase(SOD_PHASE_TWO, i(217249, {timeline = {ADDED_1_15_1}})),	-- Pattern: Earthen Silk Belt (RECIPE!)
+			i(7086, {timeline = {REMOVED_1_15_1}}),	-- Pattern: Earthen Silk Belt (RECIPE!)
 			-- #else
 			i(7086),	-- Pattern: Earthen Silk Belt (RECIPE!)
 			-- #endif
 			i(14492, {	-- Pattern: Felcloth Boots (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14496, {	-- Pattern: Felcloth Hood (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14506, {	-- Pattern: Felcloth Robe (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14508, {	-- Pattern: Felcloth Shoulders (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14474, {	-- Pattern: Frostweave Gloves (RECIPE!)
-				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
 			i(14489, {	-- Pattern: Frostweave Pants (RECIPE!)
-				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
 			i(14467),	-- Pattern: Frostweave Robe (RECIPE!)
 			i(14466, {	-- Pattern: Frostweave Tunic (RECIPE!)
-				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
 			i(14511),	-- Pattern: Gloves of Spell Mastery (RECIPE!)
 			i(2601),	-- Pattern: Gray Woolen Robe (RECIPE!)
@@ -3891,7 +3891,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7092),	-- Pattern: Hands of Darkness (RECIPE!)
 			i(4346),	-- Pattern: Heavy Woolen Cloak (RECIPE!)
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(228318, {["timeline"] = {ADDED_1_15_3}})),	-- Pattern: Incandescent Mooncloth Leggings (RECIPE!)
+			applyclassicphase(SOD_PHASE_FOUR, i(228318, {timeline = {ADDED_1_15_3}})),	-- Pattern: Incandescent Mooncloth Leggings (RECIPE!)
 			-- #endif
 			i(14499),	-- Pattern: Mooncloth Bag (RECIPE!)
 			i(14509),	-- Pattern: Mooncloth Circlet (RECIPE!)
@@ -3911,16 +3911,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(4347),	-- Pattern: Reinforced Woolen Shoulders (RECIPE!)
 			i(4354),	-- Pattern: Rich Purple Silk Shirt (RECIPE!)
 			i(14498, {	-- Pattern: Runecloth Headband (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14491, {	-- Pattern: Runecloth Pants (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14504, {	-- Pattern: Runecloth Shoulders (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14470, {	-- Pattern: Runecloth Tunic (RECIPE!)
-				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
+				timeline = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(4351),	-- Pattern: Shadow Hood (RECIPE!)
 			i(4353),	-- Pattern: Spider Belt (RECIPE!)
@@ -3933,73 +3933,73 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		cl(DRUID, {
 			{
-				["itemID"] = 17682,	-- Book: Gift of the Wild
-				["spellID"] = 21849,	-- Gift of the Wild
-				["rank"] = 1,
+				itemID = 17682,	-- Book: Gift of the Wild
+				spellID = 21849,	-- Gift of the Wild
+				rank = 1,
 				-- #if AFTER CATA
-				["collectible"] = false,
+				collectible = false,
 				-- #endif
 			},
 			{
-				["itemID"] = 17683,	-- Book: Gift of the Wild II
-				["spellID"] = 21850,	-- Gift of the Wild II
-				["rank"] = 2,
+				itemID = 17683,	-- Book: Gift of the Wild II
+				spellID = 21850,	-- Gift of the Wild II
+				rank = 2,
 				-- #if AFTER CATA
-				["collectible"] = false,
+				collectible = false,
 				-- #endif
 			},
 		}),
 		cl(MAGE, {
 			{
-				["itemID"] = 18600,	-- Tome of Arcane Brilliance
-				["spellID"] = 23028,	-- Arcane Brilliance
-				["rank"] = 1,
+				itemID = 18600,	-- Tome of Arcane Brilliance
+				spellID = 23028,	-- Arcane Brilliance
+				rank = 1,
 				-- #if AFTER CATA
-				["collectible"] = false,
+				collectible = false,
 				-- #endif
 			},
 			applyclassicphase(PHASE_SIX_CLASS_BOOKS, {
-				["itemID"] = 22890,	-- Tome of Frost Ward V [Phase 6]
-				["spellID"] = 28609,	-- Frost Ward V
-				["rank"] = 5,
+				itemID = 22890,	-- Tome of Frost Ward V [Phase 6]
+				spellID = 28609,	-- Frost Ward V
+				rank = 5,
 				-- #if AFTER CATA
-				["collectible"] = false,
+				collectible = false,
 				-- #endif
 			}),
 		}),
 		cl(PRIEST, {
 			{
-				["itemID"] = 17413,	-- Codex: Prayer of Fortitude
-				["spellID"] = 21562,	-- Prayer of Fortitude
-				["rank"] = 1,
+				itemID = 17413,	-- Codex: Prayer of Fortitude
+				spellID = 21562,	-- Prayer of Fortitude
+				rank = 1,
 				-- #if AFTER CATA
-				["collectible"] = false,
+				collectible = false,
 				-- #endif
 			},
 			{
-				["itemID"] = 17414,	-- Codex: Prayer of Fortitude II
-				["spellID"] = 21564,	-- Prayer of Fortitude II
-				["rank"] = 2,
+				itemID = 17414,	-- Codex: Prayer of Fortitude II
+				spellID = 21564,	-- Prayer of Fortitude II
+				rank = 2,
 				-- #if AFTER CATA
-				["collectible"] = false,
+				collectible = false,
 				-- #endif
 			},
 			applyclassicphase(PHASE_FIVE_RECIPES, {
-				["itemID"] = 22393,	-- Codex: Prayer of Shadow Protection [Phase 5]
-				["spellID"] = 27683,	-- Prayer of Shadow Protection
-				["rank"] = 1,
+				itemID = 22393,	-- Codex: Prayer of Shadow Protection [Phase 5]
+				spellID = 27683,	-- Prayer of Shadow Protection
+				rank = 1,
 				-- #if AFTER CATA
-				["collectible"] = false,
+				collectible = false,
 				-- #endif
 			}),
 		}),
 		cl(WARLOCK, {
 			applyclassicphase(PHASE_SIX_CLASS_BOOKS, {
-				["itemID"] = 22891,	-- Grimoire of Shadow Ward IV [Phase 6]
-				["spellID"] = 28610,	-- Shadow Ward IV
-				["rank"] = 4,
+				itemID = 22891,	-- Grimoire of Shadow Ward IV [Phase 6]
+				spellID = 28610,	-- Shadow Ward IV
+				rank = 4,
 				-- #if AFTER CATA
-				["collectible"] = false,
+				collectible = false,
 				-- #endif
 			}),
 		}),
@@ -4017,7 +4017,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- Cloth:
 		i(14256, {	-- Felcloth
 			-- #if AFTER CATA
-			["coords"] = {
+			coords = {
 				{ 52.0, 70.15, WINTERSPRING },	-- Xorothian Imps (Mazthoril)
 				{ 52.3, 75.70, WINTERSPRING },	-- Xorothian Satyrs (Mazthoril)
 				{ 52.75, 64.65, WINTERSPRING },	-- Xorothian Eredar (Mazthoril)
@@ -4027,7 +4027,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 33.4, 46.8, BLASTED_LANDS },	-- The Tainted Scar
 				{ 45.9, 46.8, BLASTED_LANDS },	-- The Dark Portal, west of
 			},
-			["crs"] = {
+			crs = {
 				50315,	-- Xorothian Eredar
 				50321,	-- Xorothian Imp
 				50318,	-- Xorothian Satyr
@@ -4039,8 +4039,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				6011,	-- Felguard Sentry
 			},
 			-- #endif
-			["description"] = "Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",
-			["maps"] = {
+			description = "Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",
+			maps = {
 				DIRE_MAUL_WARPWOOD_QUARTER,
 				-- #if BEFORE CATA
 				FELWOOD,
@@ -4048,8 +4048,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(2589, {	-- Linen Cloth
-			["description"] = "Linen Cloth drops commonly from any humanoid and undead creatures within the given zones.",
-			["maps"] = {
+			description = "Linen Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			maps = {
 				DUN_MOROGH,
 				DUROTAR,
 				ELWYNN_FOREST,
@@ -4062,8 +4062,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(4338, {	-- Mageweave Cloth
-			["description"] = "Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",
-			["maps"] = {
+			description = "Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			maps = {
 				BADLANDS,
 				BURNING_STEPPES,
 				DIRE_MAUL_GORDOK_COMMONS,
@@ -4074,8 +4074,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(14047, {	-- Runecloth
-			["description"] = "Runecloth drops commonly from any humanoid and undead creatures within the given zones.",
-			["maps"] = {
+			description = "Runecloth drops commonly from any humanoid and undead creatures within the given zones.",
+			maps = {
 				BLACKROCK_DEPTHS,
 				BLASTED_LANDS,
 				-- #if BEFORE 6.0.1
@@ -4088,8 +4088,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(4306, {	-- Silk Cloth
-			["description"] = "Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",
-			["maps"] = {
+			description = "Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			maps = {
 				ARATHI_HIGHLANDS,
 				DESOLACE,
 				DIRE_MAUL_GORDOK_COMMONS,
@@ -4101,8 +4101,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(2592, {	-- Wool Cloth
-			["description"] = "Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",
-			["maps"] = {
+			description = "Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			maps = {
 				ASHENVALE,
 				BLACKFATHOM_DEEPS,
 				DUSKWOOD,
@@ -4112,13 +4112,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		-- Silk:
 		i(14227, {	-- Ironweb Spider Silk
-			["description"] =
+			description =
 				-- #if AFTER CATA
 				"Drops from spiders in Lower Blackrock Spire.",
 				-- #else
 				"Drops from spiders in the level bracket 45-60.",
 				-- #endif
-			["crs"] = {
+			crs = {
 				-- #if AFTER CATA
 				10376,	-- Crystal Fang
 				10596,	-- Mother Smolderweb
@@ -4132,7 +4132,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				1822,	-- Venom Mist Lurker
 				-- #endif
 			},
-			["maps"] = {
+			maps = {
 				-- #if AFTER CATA
 				LBRS_SKITTERWEB_TUNNELS,
 				-- #else
@@ -4143,34 +4143,34 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(10285, {	-- Shadow Silk
 			-- #if AFTER BFA
-			["crs"] = {
+			crs = {
 				5856,	-- Glassweb Spider
 				5858,	-- Greater Lava Spider
 				5857,	-- Searing Lava Spider
 			},
-			["description"] = "Drops from spiders in Searing Gorge.",
-			["maps"] = { SEARING_GORGE },
+			description = "Drops from spiders in Searing Gorge.",
+			maps = { SEARING_GORGE },
 			-- #elseif AFTER 4.0.3
-			["crs"] = {
+			crs = {
 				5856,	-- Glassweb Spider
 				1824,	-- Plague Lurker
 				5857,	-- Searing Lava Spider
 				1822,	-- Venom Mist Lurker
 			},
-			["description"] = "Drops from spiders in higher level vanilla zones.",
+			description = "Drops from spiders in higher level vanilla zones.",
 			-- #else
-			["crs"] = {
+			crs = {
 				1821,	-- Carrion Lurker
 				5856,	-- Glassweb Spider
 				1824,	-- Plague Lurker
 				5857,	-- Searing Lava Spider
 				1822,	-- Venom Mist Lurker
 			},
-			["description"] = "Drops from spiders in the level bracket 45-60.",
+			description = "Drops from spiders in the level bracket 45-60.",
 			-- #endif
 		}),
 		i(3182, {	-- Spider's Silk
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from spiders in previously lower intermediate level vanilla zones, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
 				-- #elseif AFTER 4.0.3
@@ -4178,8 +4178,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #else
 				"Drops from spiders in the level bracket 16-36, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
 				-- #endif
-			["maps"] = { ASHENVALE, },
-			["crs"] = {
+			maps = { ASHENVALE, },
+			crs = {
 				3821,	-- Wildthorn Lurker
 				3819,	-- Wildthorn Stalker
 				3820,	-- Wildthorn Venomspitter
@@ -4187,7 +4187,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(4337, {	-- Thick Spider's Silk
 			-- Danny Donkey: Anyclassic here points to sources nerfed at an unknown point between MoP and TWW.
-			["crs"] = {
+			crs = {
 				-- #if AFTER 4.0.3
 				-- #else
 				1821,	-- Carrion Lurker
@@ -4209,8 +4209,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				1822,	-- Venom Mist Lurker
 				-- #endif
 			},
-			["description"] = "Drops from spiders in the level bracket 32-60.",
-			["maps"] = {
+			description = "Drops from spiders in the level bracket 32-60.",
+			maps = {
 				DUSTWALLOW_MARSH,
 				-- #if BEFORE CATA
 				SEARING_GORGE,
@@ -4225,7 +4225,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- Elemental reagents:
 			-- Air:
 		i(7069, {	-- Elemental Air
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 52.0, 50.0, ARATHI_HIGHLANDS },	-- Circle of Outer Binding
 				{ 30.0, 78.0, DESOLACE },	-- Sar'theris Strand, east of
@@ -4247,7 +4247,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				{ 44.9, 44.8, TANARIS },	-- Abyssal Sands
 			},
-			["crs"] = {
+			crs = {
 				11745,	-- Cyclone Warrior
 				11744,	-- Dust Stormer
 				8667,	-- Gusting Vortex
@@ -4262,7 +4262,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(7081, {	-- Breath of Wind
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 32.0, 72.0, TANARIS },	-- Southwestern Tanaris
 				{ 46.0, 72.0, TANARIS },	-- Southern Tanaris
@@ -4277,7 +4277,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				{ 44.9, 44.8, TANARIS },	-- Abyssal Sands
 			},
-			["crs"] = {
+			crs = {
 				11745,	-- Cyclone Warrior
 				11744,	-- Dust Stormer
 				8667,	-- Gusting Vortex
@@ -4292,11 +4292,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			-- #if AFTER 4.0.3
-			["description"] = "Silithus is the best place to farm these in terms of mob density and drop rate.",
+			description = "Silithus is the best place to farm these in terms of mob density and drop rate.",
 			-- #endif
 		}),
 		i(7082, {	-- Essence of Air
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 32.0, 16.0, SILITHUS },	-- The Crystal Vale, east of
 				{ 29.0, 25.0, SILITHUS },	-- The Crystal Vale, southeast of
@@ -4306,7 +4306,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 27.9, 25.5, SILITHUS },	-- The Crystal Vale, south of
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				11745,	-- Cyclone Warrior
 				11744,	-- Dust Stormer
 				-- #if BEFORE 4.0.3
@@ -4320,13 +4320,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			-- #if AFTER TBC
-			["description"] = "If there is competition about spawns in Silithus, Nagrand is the second best option where air elementals can be found almost everywhere.",
-			["maps"] = { NAGRAND },
+			description = "If there is competition about spawns in Silithus, Nagrand is the second best option where air elementals can be found almost everywhere.",
+			maps = { NAGRAND },
 			-- #endif
 		}),
 			-- Earth:
 		i(7067, {	-- Elemental Earth
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 36.0, 57.0, ARATHI_HIGHLANDS },	-- Circle of Inner Binding
 				{ 54.0, 82.0, BADLANDS },	-- Eastern shelf, southside
@@ -4350,7 +4350,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 62.3, 46.8, BURNING_STEPPES },	-- Valley of Ashes
 				{ 31.4, 14.0, SILITHUS },	-- The Crystal Vale
 			},
-			["crs"] = {
+			crs = {
 				11747,	-- Desert Rager
 				11746,	-- Desert Rumbler
 				7032,	-- Greater Obsidian Elemental
@@ -4371,12 +4371,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				41993,	-- Raging Earth Elemental
 				-- #endif
 			},
-			["maps"] = {
+			maps = {
 				MOLTEN_CORE,
 			},
 		}),
 		i(7075, {	-- Core of Earth
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 65.0, 27.0, BURNING_STEPPES },	-- Flame Crest
 				{ 37.0, 60.0, BURNING_STEPPES },	-- Black Tooth Hovel, west of
@@ -4391,7 +4391,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 62.3, 46.8, BURNING_STEPPES },	-- Valley of Ashes
 				{ 31.4, 14.0, SILITHUS },	-- The Crystal Vale
 			},
-			["crs"] = {
+			crs = {
 				11747,	-- Desert Rager
 				11746,	-- Desert Rumbler
 				7032,	-- Greater Obsidian Elemental
@@ -4406,12 +4406,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				92,	-- Rock Elemental
 				-- #endif
 			},
-			["maps"] = {
+			maps = {
 				MOLTEN_CORE,
 			},
 		}),
 		i(7076, {	-- Essence of Earth
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 65.0, 27.0, BURNING_STEPPES },	-- Flame Crest
 				{ 37.0, 60.0, BURNING_STEPPES },	-- Black Tooth Hovel, west of
@@ -4423,7 +4423,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 62.3, 46.8, BURNING_STEPPES },	-- Valley of Ashes
 				{ 31.4, 14.0, SILITHUS },	-- The Crystal Vale
 			},
-			["crs"] = {
+			crs = {
 				11747,	-- Desert Rager
 				11746,	-- Desert Rumbler
 				7032,	-- Greater Obsidian Elemental
@@ -4435,17 +4435,17 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				48960,	-- Frostshard Rumbler
 				-- #endif
 			},
-			["maps"] = {
+			maps = {
 				MOLTEN_CORE,
 			},
-			["providers"] = {
+			providers = {
 				{ "o", 181069 },	-- Large Obsidian Chunk
 				{ "o", 181068 },	-- Small Obsidian Chunk
 			},
 		}),
 			-- Fire:
 		i(7068, {	-- Elemental Fire
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 25.0, 30.0, ARATHI_HIGHLANDS },	-- Circle of West Binding
 				{ 34.0, 64.0, STONETALON_MOUNTAINS },	-- The Charred Vale
@@ -4455,7 +4455,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
 				{ 51.7, 50.7, UNGORO_CRATER },	-- Fire Plum Ridge
 			},
-			["crs"] = {
+			crs = {
 				5850,	-- Blazing Elemental
 				2760,	-- Burning Exile
 				9879,	-- Entropic Horror
@@ -4469,18 +4469,18 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				4036,	-- Rogue Flame Spirit
 				-- #endif
 			},
-			["maps"] = {
+			maps = {
 				BLACKROCK_DEPTHS,
 				MOLTEN_CORE,
 				SEARING_GORGE,
 			},
 		}),
 		i(7077, {	-- Hearth of Fire
-			["coords"] = {
+			coords = {
 				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
 				{ 51.7, 50.7, UNGORO_CRATER },	-- Fire Plum Ridge
 			},
-			["crs"] = {
+			crs = {
 				5850,	-- Blazing Elemental
 				9879,	-- Entropic Horror
 				5852,	-- Inferno Elemental
@@ -4490,20 +4490,20 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				9878,	-- Entropic Beast
 				-- #endif
 			},
-			["maps"] = {
+			maps = {
 				BLACKROCK_DEPTHS,
 				MOLTEN_CORE,
 				SEARING_GORGE,
 			},
 		}),
 		i(7078, {	-- Essence of Fire
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
 				-- #endif
 				{ 51.7, 50.7, UNGORO_CRATER },	-- Fire Plum Ridge
 			},
-			["crs"] = {
+			crs = {
 				6521,	-- Living Blaze
 				6520,	-- Scorching Elemental
 				-- #if BEFORE 4.0.3
@@ -4511,14 +4511,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				9879,	-- Entropic Horror
 				-- #endif
 			},
-			["maps"] = {
+			maps = {
 				BLACKROCK_DEPTHS,
 				MOLTEN_CORE,
 			},
 		}),
 			-- Life:
 		i(10286, {	-- Heart of the Wild
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
 				{ 64.0, 36.0, WESTERN_PLAGUELANDS },	-- The Weeping Cave
@@ -4533,7 +4533,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 55.3, 21.6, UNGORO_CRATER },	-- Lakkari Tar Pits
 				{ 69.5, 36.7, UNGORO_CRATER },	-- The Roiling Gardens
 			},
-			["crs"] = {
+			crs = {
 				6510,	-- Bloodpetal Flayer
 				6509,	-- Bloodpetal Lasher
 				6511,	-- Bloodpetal Thresher
@@ -4558,7 +4558,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				49217,	-- Wintervine Lasher
 				-- #endif
 			},
-			["maps"] = {
+			maps = {
 				DIRE_MAUL,
 				MARAUDON,
 				-- #if BEFORE 4.0.3
@@ -4567,7 +4567,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(12803, {	-- Living Essence
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
 				{ 64.0, 36.0, WESTERN_PLAGUELANDS },	-- The Weeping Cave
@@ -4582,7 +4582,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				{ 55.3, 21.6, UNGORO_CRATER },	-- Lakkari Tar Pits
 			},
-			["crs"] = {
+			crs = {
 				7139,	-- Irontree Stomper
 				6517,	-- Tar Beast
 				6527,	-- Tar Creeper
@@ -4607,20 +4607,20 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				49217,	-- Wintervine Lasher
 				-- #endif
 			},
-			["maps"] = {
+			maps = {
 				DIRE_MAUL,
 			},
 		}),
 			-- Undeath:
 		i(7972, {	-- Ichor of Undeath
 			-- #if BEFORE 4.0.3
-			["coords"] = {
+			coords = {
 				{ 16.0, 70.0, AZSHARA },	-- Talrendis Point, northeast of
 				{ 37.0, 54.0, AZSHARA },	-- Ruins of Eldarath
 				{ 46.0, 70.0, DEADWIND_PASS },	-- Around Karazhan
 				{ 53.0, 42.0, WINTERSPRING },	-- Lake Kel'Theril
 			},
-			["crs"] = {
+			crs = {
 				7524,	-- Anghuished Highborne
 				12378,	-- Damned Soul
 				6116,	-- Highborne Apparition
@@ -4633,13 +4633,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				12377,	-- Wailing Spectre
 			},
 			-- #endif
-			["description"] =
+			description =
 				-- #if AFTER 4.0.3
 				"Open world sources have been heavily nerfed, and this reagent will only reliably drop from Undead creatures in the given instances.",
 				-- #else
 				"Drops from Undead creatures in the given zones.",
 				-- #endif
-			["maps"] = {
+			maps = {
 				-- #if BEFORE 4.0.3
 				EASTERN_PLAGUELANDS,
 				WESTERN_PLAGUELANDS,
@@ -4652,22 +4652,22 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(12808, {	-- Essence of Undeath
-			["description"] =
+			description =
 				-- #if AFTER 4.0.3
 				"Drops from Undead creatures in the given zones.",
 				-- #else
 				"Drops from Undead creatures in the given instances.",
 				-- #endif
 			-- #if AFTER 4.0.3
-			["coord"] = { 53.0, 42.0, WINTERSPRING },	-- Lake Kel'Theril
-			["crs"] = {
+			coord = { 53.0, 42.0, WINTERSPRING },	-- Lake Kel'Theril
+			crs = {
 				7524,	-- Anguished Highborne
 				7523,	-- Suffering Highborne
 				48665,	-- Wretched Spectre
 				48664,	-- Wretched Spirit
 			},
 			-- #endif
-			["maps"] = {
+			maps = {
 				-- #if BEFORE WRATH
 				NAXXRAMAS,
 				-- #elseif AFTER 4.0.3
@@ -4682,7 +4682,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 			-- Water:
 		i(7070, {	-- Elemental Water
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 66.0, 29.0, ARATHI_HIGHLANDS },	-- Circle of East Binding
 				{ 51.0, 50.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
@@ -4704,7 +4704,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 38.5, 35.4, FERALAS },	-- The Forgotten Coast, north
 				{ 46.9, 55.9, FERALAS },	-- The Forgotten Coast, south
 			},
-			["crs"] = {
+			crs = {
 				3917,	-- Befouled Water Elemental
 				8521,	-- Blighted Horror
 				8519,	-- Blighted Surge
@@ -4725,7 +4725,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(7079, {	-- Globe of Water
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 51.0, 50.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
 				{ 62.0, 81.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
@@ -4744,7 +4744,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 38.5, 35.4, FERALAS },	-- The Forgotten Coast, north
 				{ 46.9, 55.9, FERALAS },	-- The Forgotten Coast, south
 			},
-			["crs"] = {
+			crs = {
 				8521,	-- Blighted Horror
 				8519,	-- Blighted Surge
 				8522,	-- Plague Monstrosity
@@ -4763,7 +4763,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(7080, {	-- Essence of Water
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 51.0, 50.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
 				{ 62.0, 81.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
@@ -4780,7 +4780,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 60.0, 85.1, WINTERSPRING },	-- Frostwhisper Gorge
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				8521,	-- Blighted Horror
 				8519,	-- Blighted Surge
 				8522,	-- Plague Monstrosity
@@ -4801,11 +4801,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- Clams:
 		i(7973, {	-- Big-mouth Clam
 			-- #if AFTER 4.0.3
-			["coords"] = {
+			coords = {
 				{ 66.0, 70.0, BLASTED_LANDS },	-- The Red Reaches
 			},
 			-- #endif
-			["maps"] = {
+			maps = {
 				-- #if BEFORE 4.0.3
 				AZSHARA,
 				DUSTWALLOW_MARSH,
@@ -4818,7 +4818,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				TANARIS,
 				THE_HINTERLANDS,
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the listed zones.",
 				-- #elseif AFTER 4.0.3
@@ -4826,7 +4826,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #else
 				"Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 40-60.",
 				-- #endif
-			["groups"] = {
+			groups = {
 				i(7974),	-- Zesty Clam Meat
 				i(7971),	-- Black Pearl
 				i(13926),	-- Golden Pearl
@@ -4838,14 +4838,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		--[[
 		o(2744),	-- Giant Clam (with Giant Clam Meat, found in STV)
 		o(19017, {	-- Giant Clam (with Clam Meat, found in Bloodmyst Isle and Ghostlands)
-			["description"] = "Can be found in the sea.",
-			["groups"] = {
+			description = "Can be found in the sea.",
+			groups = {
 				i(5503),	-- Clam Meat
 				i(5498),	-- Small Lustrous Pearl
 			},
 		}),
 		o(19018, {	-- Giant Clam (with Tangy Clam Meat, found in BfD)
-			["groups"] = {
+			groups = {
 				i(2143),	-- Cuirboulli Boots (confirmed - Danny Donkey)
 				i(5500),	-- Iridescent Pearl
 				i(5504),	-- Tangy Clam Meat
@@ -4853,7 +4853,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		]]--
 		i(5523, {	-- Small Barnacled Clam
-			["maps"] = {
+			maps = {
 				-- #if BEFORE 4.0.3
 				THE_BARRENS,
 				-- #else
@@ -4875,7 +4875,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				GHOSTLANDS,
 				-- #endif
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the listed zones.",
 				-- #elseif AFTER 4.0.3
@@ -4883,13 +4883,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #else
 				"Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 10-20.",
 				-- #endif
-			["groups"] = {
+			groups = {
 				i(5503),	-- Clam Meat
 				i(5498),	-- Small Lustrous Pearl
 			},
 		}),
 		i(5524, {	-- Thick-Shelled Clam
-			["maps"] = {
+			maps = {
 				-- #if AFTER 4.0.3
 				ASHENVALE,
 				DARKSHORE,
@@ -4899,13 +4899,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				HILLSBRAD_FOOTHILLS,
 				WETLANDS,
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the listed zones.",
 				-- #else
 				"Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 20-30.",
 				-- #endif
-			["groups"] = {
+			groups = {
 				i(5500),	-- Iridescent Pearl
 				i(5504),	-- Tangy Clam Meat
 				i(5498),	-- Small Lustrous Pearl
@@ -4913,17 +4913,17 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		-- Cooking:
 		i(35562, {	-- Bear Flank
-			["coords"] = {
+			coords = {
 				{ 39.0, 45.2, FELWOOD },	-- Shatter Scale Vale, west of
 				{ 43.5, 63.0, FELWOOD },	-- Wildhearth Point, west of
 				{ 46.1, 83.0, FELWOOD },	-- Dreadwood Village, north of
 				{ 54.1, 86.7, FELWOOD },	-- Morlos'Aran, west of (by Ashenvale border)
 			},
-			["crs"] = {
+			crs = {
 				8956,	-- Angerclaw Bear
 				8958,	-- Angerclaw Mauler
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from bears in previously highlevel vanilla zones like Angerclaw bears in Felwood.",
 				-- #elseif AFTER 4.0.3
@@ -4931,10 +4931,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #else
 				"Drops from bears in the level bracket 45-60 like Angerclaw bears in Felwood.",
 				-- #endif
-			["timeline"] = { ADDED_2_4_0 },
+			timeline = { ADDED_2_4_0 },
 		}),
 		i(3173, {	-- Bear Meat
-			["coords"] = {
+			coords = {
 				{ 73.7, 44.8, LOCH_MODAN },	-- Eastside bear valley
 				{ 35.4, 38.5, LOCH_MODAN },	-- Thelsamar, north of
 				-- #if BEFORE 4.0.3
@@ -4942,7 +4942,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 29.2, 53.0, LOCH_MODAN },
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				1186,	-- Black Bear/Elder Black bear
 				1225,	-- Ol' Sooty
 				-- #if BEFORE 4.0.3
@@ -4955,7 +4955,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				44638,	-- Hill grizzly
 				-- #endif
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from bears in previously lower level vanilla zones like bears in Loch Modan.",
 				-- #elseif AFTER 4.0.3
@@ -4965,17 +4965,17 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(3730, {	-- Big Bear Meat
-			["coords"] = {
+			coords = {
 				{ 39.5, 63.6, ASHENVALE },	-- Talondeep Vale
 				{ 67.5, 62.2, ASHENVALE },	-- The Shady Nook, east of
 			},
-			["crs"] = {
+			crs = {
 				-- #if BEFORE 4.0.3
 				3809,	-- Ashenvale Bear
 				-- #endif
 				3810,	-- Elder Ashenvale Bear
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from bears in previously lower intermediate level vanilla zones like Elder bears in Ashenvale.",
 				-- #elseif AFTER 4.0.3
@@ -4985,14 +4985,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(2677, {	-- Boar Ribs
-			["coords"] = {
+			coords = {
 				{ 55.0, 27.3, WESTFALL },	-- Saldean's Farm
 			},
-			["crs"] = {
+			crs = {
 				157,	-- Goretusk
 				454,	-- Young Goretusk
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from boars in previously lower level vanilla zones like Goretusks in Westfall.",
 				-- #elseif AFTER 4.0.3
@@ -5002,18 +5002,18 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(3404, {	-- Buzzard Wing
-			["coords"] = {
+			coords = {
 				{ 47.1, 42.0, TANARIS },	-- Northern Abyssal Sands
 				{ 36.5, 61.2, TANARIS },	-- Southern Abyssal Sands
 			},
-			["crs"] = {
+			crs = {
 				5429,	-- Fire Roc
 				-- #if BEFORE 4.0.3
 				5428,	-- Roc
 				-- #endif
 				5430,	-- Searing Roc
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from carrion birds in previously higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
 				-- #elseif AFTER 4.0.3
@@ -5023,7 +5023,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(769, {	-- Chunk of Boar Meat
-			["coords"] = {
+			coords = {
 				{ 46.6, 59.8, DUN_MOROGH },
 				{ 53.6, 59.6, DUROTAR },
 				{ 41.6, 88.0, ELWYNN_FOREST },	-- The Maclyre Vineyards
@@ -5036,7 +5036,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 56.3, 35.8, LOCH_MODAN },
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				1125,	-- Crag Boar
 				3099,	-- Dire Mottled Boar
 				3100,	-- Elder Mottled Boar
@@ -5064,7 +5064,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				208638,	-- Fyodi
 				-- #endif
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from boars in previously entry- and low level vanilla zones like Goretusks in Westfall.",
 				-- #elseif AFTER 4.0.3
@@ -5075,14 +5075,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		-- i(5503),	-- Clam Meat > Properly sourced under Giant Clam listed above.
 		i(2675, {	-- Crawler Claw
-			["maps"] = {
+			maps = {
 				ASHENVALE,
 				-- #if BEFORE 4.0.3
 				DARKSHORE,
 				-- #endif
 				WESTFALL,
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from crawlers in previously lower level vanilla zones like crawlers throughout the shoreline in Ashenvale and Westfall.",
 				-- #elseif AFTER 4.0.3
@@ -5092,14 +5092,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(2674, {	-- Crawler Meat
-			["maps"] = {
+			maps = {
 				ASHENVALE,
 				-- #if BEFORE 4.0.3
 				DARKSHORE,
 				-- #endif
 				WESTFALL,
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from crawlers in previously lower level vanilla zones like crawlers throughout the shoreline in Ashenvale and Westfall.",
 				-- #elseif AFTER 4.0.3
@@ -5110,8 +5110,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		-- #if BEFORE CATA
 		i(1081, {	-- Crisp Spider Meat
-			["timeline"] = { REMOVED_4_0_3 },
-			["maps"] = {
+			timeline = { REMOVED_4_0_3 },
+			maps = {
 				ARATHI_HIGHLANDS,
 				ASHENVALE,
 				DUSKWOOD,
@@ -5122,7 +5122,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				STONETALON_MOUNTAINS,
 				WETLANDS,
 			},
-			["crs"] = {
+			crs = {
 				2565,	-- Giant Plains Creeper
 				2563,	-- Plains Creeper
 				3821,	-- Wildthorn Lurker
@@ -5152,9 +5152,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		-- #endif
 		i(2924, {	-- Crocolisk Meat
-			["coord"] = { 54.3, 57.8, LOCH_MODAN },	-- The Loch (southern isle)
-			["cr"] = 1693,	-- Loch Crocolisk
-			["description"] =
+			coord = { 54.3, 57.8, LOCH_MODAN },	-- The Loch (southern isle)
+			cr = 1693,	-- Loch Crocolisk
+			description =
 				-- #if AFTER BFA
 				"Drops from crocolisks in previously lower level vanilla zones like crocolisks in Loch Modan.",
 				-- #elseif AFTER 4.0.3
@@ -5164,16 +5164,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(22644, {	-- Crunchy Spider Leg
-			["coords"] = {
+			coords = {
 				{ 86.0, 54.0, DUSKWOOD },	-- By spider cave east of Darkshire
 				{ 77.0, 60.0, DUSKWOOD },	-- Windmill crossroad
 				{ 64.0, 20.1, DUSKWOOD },	-- The Darkened Bank, east.
 			},
-			["crs"] = {
+			crs = {
 				930,	-- Black Widow Hatchling
 				217,	-- Venom Web Spider
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from spiders in previously lower intermediate level vanilla zones like spiders in Duskwood.",
 				-- #elseif AFTER 4.0.3
@@ -5181,21 +5181,21 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #else
 				"Drops from spiders in the level bracket 10-35 like spiders in Duskwood.",
 				-- #endif
-			["timeline"] = { ADDED_2_0_1 },
+			timeline = { ADDED_2_0_1 },
 		}),
 		i(12207, {	-- Giant Egg
-			["coords"] = {
+			coords = {
 				{ 47.1, 42.0, TANARIS },	-- Northern Abyssal Sands
 				{ 36.5, 61.2, TANARIS },	-- Southern Abyssal Sands
 			},
-			["crs"] = {
+			crs = {
 				5429,	-- Fire Roc
 				-- #if BEFORE 4.0.3
 				5428,	-- Roc
 				-- #endif
 				5430,	-- Searing Roc
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from birds and owlbeasts in previously higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
 				-- #elseif AFTER 4.0.3
@@ -5205,16 +5205,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(2251, {	-- Gooey Spider Leg
-			["coords"] = {
+			coords = {
 				{ 86.0, 54.0, DUSKWOOD },	-- By spider cave east of Darkshire
 				{ 77.0, 60.0, DUSKWOOD },	-- Windmill crossroad
 				{ 64.0, 20.1, DUSKWOOD },	-- The Darkened Bank, east.
 			},
-			["crs"] = {
+			crs = {
 				930,	-- Black Widow Hatchling
 				217,	-- Venom Web Spider
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from spiders in previously intermediate level vanilla zones like spiders in Duskwood.",
 				-- #elseif AFTER 4.0.3
@@ -5224,13 +5224,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(723, {	-- Goretusk Liver
-			["coords"] = {
+			coords = {
 				{ 55.0, 27.3, WESTFALL },	-- Saldean's Farm
 				-- #if BEFORE 4.0.3
 				{ 32.2, 71.0, REDRIDGE_MOUNTAINS },
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				-- #if BEFORE 4.0.3
 				345,	-- Bellygrub
 				547,	-- Great Goretusk
@@ -5240,7 +5240,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				157,	-- Goretusk
 				454,	-- Young Goretusk
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from boars in previously lower level vanilla zones like Goretusks in Westfall.",
 				-- #elseif AFTER 4.0.3
@@ -5250,15 +5250,15 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(12204, {	-- Heavy Kodo Meat
-			["coords"] = {
+			coords = {
 				{ 52.0, 59.0, DESOLACE },	-- Kodo Graveyard
 			},
-			["crs"] = {
+			crs = {
 				4700,	-- Aged Kodo
 				4702,	-- Ancient Kodo
 				4701,	-- Dying Kodo
 			},
-			["description"] =
+			description =
 				-- #if AFTER 4.0.3
 				"Drops from kodos in Desolace as well as other vanilla zones.",
 				-- #else
@@ -5266,13 +5266,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(5467, {	-- Kodo Meat
-			["maps"] = {
+			maps = {
 				MULGORE,
 				-- #if BEFORE 4.0.3
 				THE_BARRENS,
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				3236,	-- Barrens Kodo
 				2973,	-- Kodo Bull
 				2972,	-- Kodo Calf
@@ -5284,7 +5284,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				3237,	-- Wooly Kodo
 				-- #endif
 			},
-			["description"] =
+			description =
 				-- #if AFTER 4.0.3
 				"Most viably obtained from kodos in Mulgore.",
 				-- #else
@@ -5292,10 +5292,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(1015, {	-- Lean Wolf Flank
-			["coords"] = {
+			coords = {
 				{ 64.0, 20.1, DUSKWOOD },	-- The Darkened Bank, east.
 			},
-			["crs"] = {
+			crs = {
 				-- #if AFTER 4.0.3
 				43704,	-- Dire Wolf
 				-- #else
@@ -5303,7 +5303,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				213,	-- Starving Dire Wolf
 				-- #endif
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from wolves in previously lower intermediate level vanilla zones like Dire wolves in Duskwood.",
 				-- #elseif AFTER 4.0.3
@@ -5313,7 +5313,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(3731, {	-- Lion Meat
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 41.5, 37.5, HILLSBRAD_FOOTHILLS },	-- Hillsbrad Fields, east of
 				{ 50.0, 31.3, HILLSBRAD_FOOTHILLS },	-- Darrow Hill
@@ -5322,13 +5322,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 49.0, 56.3, HILLSBRAD_FOOTHILLS },	-- Darrow Hill
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				2385,	-- Foothill Stalker
 				-- #if BEFORE 4.0.3
 				2384,	-- Starving Mountain Lion
 				-- #endif
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from lions in previously lower intermediate level vanilla zones like lions in Hillsbrad Foothills.",
 				-- #elseif AFTER 4.0.3
@@ -5338,28 +5338,28 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(27668, {	-- Lynx Meat
-			["maps"] = {
+			maps = {
 				EVERSONG_WOODS,
 				GHOSTLANDS,
 			},
-			["crs"] = {
+			crs = {
 				15652,	-- Elder Springpaw
 				16348,	-- Ghostclaw Lynx
 				16349,	-- Ghostclaw Ravager
 				15651,	-- Springpaw Stalker
 				16347,	-- Starving Ghostclaw
 			},
-			["description"] = "Only drops from lynxes in Eversong Forest (except Sunstrider Isle) and Ghostlands.",
-			["timeline"] = { ADDED_2_0_1 },
+			description = "Only drops from lynxes in Eversong Forest (except Sunstrider Isle) and Ghostlands.",
+			timeline = { ADDED_2_0_1 },
 		}),
 		i(12223, {	-- Meaty Bat Wing
-			["maps"] = {
+			maps = {
 				-- #if AFTER TBC
 				GHOSTLANDS,
 				-- #endif
 				TIRISFAL_GLADES,
 			},
-			["crs"] = {
+			crs = {
 				1553,	-- Greater Duskbat
 				1554,	-- Vampiric Duskbat
 				-- #if AFTER TBC
@@ -5368,7 +5368,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				16354,	-- Vampiric Mistbat
 				-- #endif
 			},
-			["description"] =
+			description =
 				-- #if AFTER TBC
 				"Only drops from bats in Ghostlands and Tirisfal Glades.",
 				-- #else
@@ -5376,10 +5376,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(1468, {	-- Murloc Fin
-			["coords"] = {
+			coords = {
 				{ 15.1, 39.3, WETLANDS },	-- Bluegill Marsh
 			},
-			["crs"] = {
+			crs = {
 				-- #if BEFORE 4.0.3
 				1026,	-- Bluegill Forager
 				1028,	-- Bluegill Muckdweller
@@ -5395,7 +5395,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				42110,	-- Bluegill Puddlejumper
 				-- #endif
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from murlocs in previously lower intermediate level vanilla zones like Bluegill murlocs in Wetlands.",
 				-- #elseif AFTER 4.0.3
@@ -5405,7 +5405,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(12037, {	-- Mystery Meat
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 35.0, 8.0, STRANGLETHORN_VALE },	-- Nesingwary's Expedition, north of.
 				{ 40.0, 22.0, STRANGLETHORN_VALE },	-- Lake Nazieriti, south end.
@@ -5414,7 +5414,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 50.9, 40.6, NORTHERN_STRANGLETHORN },	-- Lake Nazieriti, south end.
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				2635,	-- Elder Snapjaw Crocolisk
 				1150,	-- River Crocolisk
 				-- #if BEFORE 4.0.3
@@ -5422,7 +5422,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				1152,	-- Snapjaw Crocolisk
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from a diverse selection of creatures ranging from hyenas to scorpids in previously higher intermediate to highlevel vanilla zones like Crocolisks in Stranglethorn.",
 				-- #elseif AFTER 4.0.3
@@ -5432,7 +5432,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(3685, {	-- Raptor Egg
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 32.0, 40.0, STRANGLETHORN_VALE },	-- Gurubashi Arena, nortwest of.
 				{ 32.0, 23.0, STRANGLETHORN_VALE },	-- Grom'gol Base Camp, north of.
@@ -5441,11 +5441,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 39.0, 42.9, NORTHERN_STRANGLETHORN },	-- Grom'gol Base Camp, north of.
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				687,	-- Jungle Stalker
 				686,	-- Lashtail Raptor
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from raptors in previously intermediate level vanilla zones like raptors in Stranglethorn Vale.",
 				-- #elseif AFTER 4.0.3
@@ -5455,7 +5455,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(12184, {	-- Raptor Flesh
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 32.0, 40.0, STRANGLETHORN_VALE },	-- Gurubashi Arena, nortwest of.
 				{ 32.0, 23.0, STRANGLETHORN_VALE },	-- Grom'gol Base Camp, north of.
@@ -5464,11 +5464,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 39.0, 42.9, NORTHERN_STRANGLETHORN },	-- Grom'gol Base Camp, north of.
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				687,	-- Jungle Stalker
 				686,	-- Lashtail Raptor
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from raptors in previously higher intermediate to highlevel vanilla zones like raptors in Stranglethorn Vale.",
 				-- #elseif AFTER 4.0.3
@@ -5478,15 +5478,15 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(12203, {	-- Red Wolf Meat
-			["coords"] = {
+			coords = {
 				{ 54.1, 86.7, FELWOOD },	-- Morlos'Aran, west of (by Ashenvale border).
 				{ 45.2, 69.0, FELWOOD },	-- Ruins of Constellas, east of.
 			},
-			["crs"] = {
+			crs = {
 				8960,	-- Felpaw Scavenger
 				8959,	-- Felpaw Wolf
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from wolves in previously higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",
 				-- #elseif AFTER 4.0.3
@@ -5497,7 +5497,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(6889, {	-- Small Egg
 			-- #if BEFORE 4.0.3
-			["coords"] = {
+			coords = {
 				{ 44.0, 48.0, DARKSHORE },
 				{ 76.6, 68.2, LOCH_MODAN },
 				{ 40.6, 59.0, MULGORE },
@@ -5507,12 +5507,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 			-- #endif
 			-- #if AFTER TBC
-			["maps"] = {
+			maps = {
 				AZUREMYST_ISLE,
 				EVERSONG_WOODS,
 			},
 			-- #endif
-			["crs"] = {
+			crs = {
 				-- #if BEFORE 4.0.3
 				154,	-- Greater Fleshripper
 				199,	-- Young Fleshripper
@@ -5543,7 +5543,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				17372,	-- Timberstrider Fledgling
 				-- #endif
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from birds, owlkin and striders in previously entry- and lower level vanilla zones, which can be found all over Azuremyst Isle and Eversong Woods except Ammen Vale and Sunstrider Isle.",
 				-- #elseif AFTER 4.0.3
@@ -5553,9 +5553,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(5465, {	-- Small Spider Leg
-			["coord"] = { 35.7, 13.7, SILVERPINE_FOREST },	-- The Skittering Dark
-			["maps"] = { TELDRASSIL },
-			["crs"] = {
+			coord = { 35.7, 13.7, SILVERPINE_FOREST },	-- The Skittering Dark
+			maps = { TELDRASSIL },
+			crs = {
 				2001,	-- Giant Webwood Spider
 				12433,	-- Krethis Shadowspinner
 				7319,	-- Lady Sathrah
@@ -5565,7 +5565,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				2000,	-- Webwood Silkspinner
 				1999,	-- Webwood Venomfang
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from spiders in previously entry- and lower level vanilla zones like spiders in Silverpine Forest and Teldrassil.",
 				-- #elseif AFTER 4.0.3
@@ -5576,59 +5576,59 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(5468, {	-- Soft Frenzy Flesh
 			-- #if BEFORE 4.0.3
-			["coords"] = {
+			coords = {
 				{ 40.0, 20.0, DARKSHORE },
 				{ 33.0, 70.0, DARKSHORE },
 			},
 			-- #endif
-			["crs"] = {
+			crs = {
 				-- #if BEFORE 4.0.3
 				2174,	-- Coastal Frenzy
 				-- #endif
 				6033,	-- Lake Frenzy
 				2173,	-- Reef Frenzy
 			},
-			["description"] = "Drops from frenzies found in bodies of water.",
-			["maps"] = { SILVERPINE_FOREST },
+			description = "Drops from frenzies found in bodies of water.",
+			maps = { SILVERPINE_FOREST },
 		}),
 		i(67229, {	-- Stag Flank
-			["coords"] = {
+			coords = {
 				{ 45.2, 40.8, DARKSHORE },	-- Withering Thicket
 				{ 47.4, 29.5, DARKSHORE },	-- Maw of the Void, west of
 				{ 26.2, 72.8, AZSHARA },	-- Mountainfoot Strip Mine, southeast of
 			},
-			["crs"] = {
+			crs = {
 				37786,	-- Brown Stag
 				33311,	-- Darkshore Stag
 				35096,	-- Weakened Mosshoof Stag
 			},
-			["description"] = "Only drops from the given stags. Brown Stags can only be found in phased Gilneas for fresh Worgen characters.",
-			["timeline"] = { ADDED_4_0_3 },	-- Danny Conkey: At earliest, possibly added in a later patch.
+			description = "Only drops from the given stags. Brown Stags can only be found in phased Gilneas for fresh Worgen characters.",
+			timeline = { ADDED_4_0_3 },	-- Danny Conkey: At earliest, possibly added in a later patch.
 		}),
 		i(5471, {	-- Stag Meat
-			["coords"] = {
+			coords = {
 				{ 19.7, 29.9, ASHENVALE },	-- West way road cross
 				{ 39.5, 63.6, ASHENVALE },	-- Talondeep Vale
 				{ 69.9, 62.7, ASHENVALE },	-- Splintertree Post, west of
 			},
-			["crs"] = {
+			crs = {
 				3818,	-- Elder Shadowhorn Stag
 				3817,	-- Shadowhorn Stag
 				3816,	-- Wild Buck
 			},
-			["description"] = "Drops from stags in Ashenvale as well as some other vanilla zones.",
+			description = "Drops from stags in Ashenvale as well as some other vanilla zones.",
 		}),
 		i(5469, {	-- Strider Meat
 			-- #if AFTER 4.0.3
-			["coords"] = {
+			coords = {
 				{ 34.6, 44.6, DUROTAR },	-- Southfury riverside
 				{ 69.5, 55.9, NORTHERN_BARRENS },	-- Southfury southern riverside
 				{ 64.8, 41.1, NORTHERN_BARRENS },	-- Southfury northern riverside
 			},
 			-- #else
-			["maps"] = { DARKSHORE },
+			maps = { DARKSHORE },
 			-- #endif
-			["crs"] = {
+			crs = {
 				-- #if BEFORE 4.0.3
 				2322,	-- Foreststrider
 				2323,	-- Giant Foreststrider
@@ -5641,7 +5641,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				3245,	-- Ornery Plainstrider
 				2172,	-- Strider Clutchmother
 			},
-			["description"] =
+			description =
 				-- #if AFTER 4.0.3
 				"The only viable source is striders by River Southfury dividing Durotar and Northern Barrens.",
 				-- #else
@@ -5649,11 +5649,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(2672, {	-- Stringy Wolf Meat
-			["maps"] = {
+			maps = {
 				ELWYNN_FOREST,
 				MULGORE,
 			},
-			["crs"] = {
+			crs = {
 				3056,	-- Ghost Howl
 				1922,	-- Grey Forest Wolf
 				525,	-- Mangy Wolf
@@ -5662,7 +5662,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				2960,	-- Prairie Wolf Alpha
 				118,	-- Prowler
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from wolves in previously entry- and lower level vanilla zones like wolves in Elwynn Forest and Mulgore.",
 				-- #elseif AFTER 4.0.3
@@ -5673,15 +5673,15 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		-- i(5504),	-- Tangy Clam Meat > Properly sourced under Giant Clam listed above.
 		i(12206, {	-- Tender Crab Meat
-			["coords"] = {
+			coords = {
 				{ 81.9, 11.5, SWAMP_OF_SORROWS },	-- Bogpaddle, east of.
 				{ 88.6, 22.9, SWAMP_OF_SORROWS },	-- Misty Reed Strand, by Giblin settlement.
 			},
-			["crs"] = {
+			crs = {
 				1088,	-- Monstrous Crawler
 				922,	-- Silt Crawler
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from crawlers in previously higher intermediate level vanilla zones like Crawlers in Swamp of Sorrows.",
 				-- #elseif AFTER 4.0.3
@@ -5691,7 +5691,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(3667, {	-- Tender Crocolisk Meat
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 35.0, 8.0, STRANGLETHORN_VALE },	-- Nesingwary's Expedition, north of.
 				{ 40.0, 22.0, STRANGLETHORN_VALE },	-- Lake Nazieriti, south end.
@@ -5700,7 +5700,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 50.9, 40.6, NORTHERN_STRANGLETHORN },	-- Lake Nazieriti, south end.
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				2635,	-- Elder Snapjaw Crocolisk
 				1150,	-- River Crocolisk
 				-- #if BEFORE 4.0.3
@@ -5708,7 +5708,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				1152,	-- Snapjaw Crocolisk
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from crocolisks in previously intermediate level vanilla zones like Crocolisks in Stranglethorn.",
 				-- #elseif AFTER 4.0.3
@@ -5718,15 +5718,15 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(12208, {	-- Tender Wolf Meat
-			["coords"] = {
+			coords = {
 				{ 54.1, 86.7, FELWOOD },	-- Morlos'Aran, west of (by Ashenvale border).
 				{ 45.2, 69.0, FELWOOD },	-- Ruins of Constellas, east of.
 			},
-			["crs"] = {
+			crs = {
 				8960,	-- Felpaw Scavenger
 				8959,	-- Felpaw Wolf
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from wolves in previously higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",
 				-- #elseif AFTER 4.0.3
@@ -5736,15 +5736,15 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(5470, {	-- Thunder Lizard Tail
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 47.0, 48.0, THE_BARRENS },	-- Taurajo, north of.
 				-- #else
 				{ 43.7, 55.3, SOUTHERN_BARRENS },	-- Taurajo, south of.
 				-- #endif
 			},
-			["cr"] = 3240,	-- Stormsnout
-			["description"] =
+			cr = 3240,	-- Stormsnout
+			description =
 				-- #if AFTER BFA
 				"Drops from lizards in previously lower intermediate level vanilla zones like Stormsnouts in The Barrens.",
 				-- #elseif AFTER 4.0.3
@@ -5754,7 +5754,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(12202, {	-- Tiger Meat
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 46.0, 12.0, STRANGLETHORN_VALE },	-- Venture Co. Base Camp, northeast of.
 				{ 33.0, 18.0, STRANGLETHORN_VALE },	-- Tkashi Ruins, southwest of.
@@ -5763,11 +5763,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 38.3, 32.2, NORTHERN_STRANGLETHORN },	-- Tkashi Ruins, southwest of.
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				1085,	-- Elder Stranglethorn Tiger
 				682,	-- Stranglethorn Tiger
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from tigers in previously higher intermediate to highlevel vanilla zones like tigers in Stranglethorn Vale.",
 				-- #elseif AFTER 4.0.3
@@ -5777,12 +5777,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(3712, {	-- Turtle Meat
-			["coords"] = {
+			coords = {
 				{ 62.5, 33.8, DUSTWALLOW_MARSH },	-- Southern Dreadmurk Shore
 				{ 61.5, 8.3, DUSTWALLOW_MARSH },	-- Outer Dreadmurk Shore (between murloc isles)
 			},
-			["cr"] = 4397,	-- Mudrock Spikeshell
-			["description"] =
+			cr = 4397,	-- Mudrock Spikeshell
+			description =
 				-- #if AFTER BFA
 				"Drops from turtles in previously higher intermediate to highlevel vanilla zones like Mudrock turtles in Dustwallow Marsh.",
 				-- #elseif AFTER 4.0.3
@@ -5792,11 +5792,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 		}),
 		i(12205, {	-- White Spider Meat
-			["coords"] = {
+			coords = {
 				{ 55.2, 54.8, DUSTWALLOW_MARSH },	-- Beezil's Wreck, northeast of
 				{ 34.1, 22.5, DUSTWALLOW_MARSH },	-- Darkmist Cavern
 			},
-			["crs"] = {
+			crs = {
 				-- #if BEFORE 4.0.3
 				4377,	-- Darkmist Lurker
 				-- #endif
@@ -5805,7 +5805,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				4376,	-- Darkmist Spider
 				4415,	-- Giant Darkfang Spiders
 			},
-			["description"] =
+			description =
 				-- #if AFTER BFA
 				"Drops from spiders in previously higher intermediate to highlevel vanilla zones like spiders in Dustwallow Marsh.",
 				-- #elseif AFTER 4.0.3
@@ -5826,15 +5826,15 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- ______________________________________
 		--
 		-- Other reagents:
-		i(11754, {["maps"] = { BLACKROCK_DEPTHS }, }),	-- Black Diamond
+		i(11754, {maps = { BLACKROCK_DEPTHS }, }),	-- Black Diamond
 		-- #if AFTER MOP
 		-- Danny Donkey: Dark Rune was only obtainable from Scholomance prior to MoP. With it's revamp Dark Runes became a zone drop from given mobs in Eastern Plaguelands. With the return of old Scholomance in 10.1.5, that is again a source for Dark Runes.
 		i(20520, {	-- Dark Rune
-			["coords"] = {
+			coords = {
 				{ 55.1, 62.2, EASTERN_PLAGUELANDS },	-- Corin's Crossing
 				{ 62.4, 76.0, EASTERN_PLAGUELANDS },	-- Death Cultist Base Camp
 			},
-			["crs"] = {
+			crs = {
 				8551,	-- Dark Summoner
 				8548,	-- Vile Tutor
 			},
@@ -5842,13 +5842,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		i(7191),	-- Fused Wiring
 		i(19441, {	-- Huge Venom Sac
-			["description"] =
+			description =
 				-- #if AFTER 4.0.3
 				"Cataclysm messed up with the drop sources for Huge Venom Sac, and the only reliable sources are scorpids and spiders in Ruins of Ahn'Qiraj and Naxxramas.",
 				-- #else
 				"Can drop from scorpids and spiders in the level bracket 50-60, and are most abundant in Burning Steppes and Silithus. Spiders and scorpids often share a spawn with other beasts, so kill the hound or whatever if you cannot find scorpids and spiders.",
 				-- #endif
-			["maps"] = {
+			maps = {
 				-- #if AFTER 4.0.3
 				NAXXRAMAS,
 				RUINS_OF_AHNQIRAJ,
@@ -5859,30 +5859,30 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(8168, {	-- Jet Black Feather
-			["coords"] = {
+			coords = {
 				{ 58.0, 20.0, BLASTED_LANDS },
 				{ 60.0, 27.0, BLASTED_LANDS },
 				{ 55.0, 35.0, BLASTED_LANDS },
 				{ 60.0, 38.0, BLASTED_LANDS },
 				{ 55.0, 44.0, BLASTED_LANDS },
 			},
-			["crs"] = {
+			crs = {
 				5982,	-- Black Slayer
 				8299,	-- Spiteflayer
 			},
-			["timeline"] = { REMOVED_4_0_3 },
+			timeline = { REMOVED_4_0_3 },
 		}),
 		i(5637, {	-- Large Fang
-			["description"] =
+			description =
 				-- #if AFTER 4.0.3
 				"Cataclysm messed up with the drop sources for Large Fangs. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
 				-- #else
 				"Drops from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats ranging from level 25 to 40.",
 				-- #endif
 			-- #if AFTER 4.0.3
-			["coord"] = { 50.0, 70.0, ARATHI_HIGHLANDS },
+			coord = { 50.0, 70.0, ARATHI_HIGHLANDS },
 			-- #else
-			["maps"] = {
+			maps = {
 				ASHENVALE,
 				BADLANDS,
 				DESOLACE,
@@ -5904,34 +5904,34 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 			-- #endif
 			-- #if AFTER 4.0.3
-			["cr"] = 2561,	-- Highland Fleshstalker
+			cr = 2561,	-- Highland Fleshstalker
 			-- #endif
 		}),
 		i(1288, {	-- Large Venom Sac
 			-- #if BEFORE 4.0.3
-			["description"] = "Can drop from spiders in the level bracket 20-35, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
-			["maps"] = {
+			description = "Can drop from spiders in the level bracket 20-35, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
+			maps = {
 				ASHENVALE,
 				DUSKWOOD,
 			},
 			-- #elseif AFTER BFA
-			["description"] = "Can drop from spiders in most vanilla zones, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
-			["maps"] = {
+			description = "Can drop from spiders in most vanilla zones, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
+			maps = {
 				ASHENVALE,
 				DUSKWOOD,
 			},
 			-- #else
-			["coords"] = {
+			coords = {
 				{ 86.0, 54.0, DUSKWOOD },	-- By spider cave east of Darkshire
 				{ 77.0, 60.0, DUSKWOOD },	-- Windmill crossroad
 			},
-			["cr"] = 930,	-- Black Widow Hatchling
+			cr = 930,	-- Black Widow Hatchling
 			-- #endif
 		}),
 		i(17056, {	-- Light Feather
 			-- #if BEFORE 4.0.3
-			["coord"] = { 44.0, 48.0, DARKSHORE },
-			["crs"] = {
+			coord = { 44.0, 48.0, DARKSHORE },
+			crs = {
 				10158,	-- Moonkin
 				10157,	-- Moonkin Oracle
 				10160,	-- Raging Moonkin
@@ -5939,18 +5939,18 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 			-- #endif
 			-- #if AFTER 4.0.3
-			["description"] = "Can drop from all birds, harpies, owlkin and striders on Kalimdor, Eastern Kingdoms, Outland and Northrend.",
+			description = "Can drop from all birds, harpies, owlkin and striders on Kalimdor, Eastern Kingdoms, Outland and Northrend.",
 			-- #else
-			["description"] = "Drops from birds, harpies, owlkin and striders in the level bracket 10-30 like Moonkin in Darkshore.",
+			description = "Drops from birds, harpies, owlkin and striders in the level bracket 10-30 like Moonkin in Darkshore.",
 			-- #endif
 		}),
 		i(4589, {	-- Long Elegant Feather
-			["coords"] = {
+			coords = {
 				{ 20.0, 57.0, AZSHARA },
 				{ 56.0, 62.8, FERALAS },
 				{ 84.0, 34.0, HILLSBRAD_FOOTHILLS },
 			},
-			["crs"] = {
+			crs = {
 				5300,	-- Frayfeather Hippogryph
 				6375,	-- Thunderhead Hippogryph
 				2474,	-- Kurdros
@@ -5961,68 +5961,68 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				2658,	-- Razorbeak Gryphon
 				2651,	-- Witherbark Hideskinner
 			},
-			["description"] = "Alliance players can disregard The Hinterlands due to most mob sources being friendly.",
-			["maps"] = { THE_HINTERLANDS },
-			["timeline"] = { REMOVED_4_0_3 },
+			description = "Alliance players can disregard The Hinterlands due to most mob sources being friendly.",
+			maps = { THE_HINTERLANDS },
+			timeline = { REMOVED_4_0_3 },
 		}),
 		i(5116, {	-- Long Tail Feather
-			["coords"] = {
+			coords = {
 				{ 32.4, 66.0, STONETALON_MOUNTAINS },
 				{ 79.0, 77.0, THOUSAND_NEEDLES },
 			},
-			["description"] = "Drops from birds and harpies in the given zones.",
-			["maps"] = {
+			description = "Drops from birds and harpies in the given zones.",
+			maps = {
 				ARATHI_HIGHLANDS,
 				BADLANDS,
 				DESOLACE,
 			},
-			["timeline"] = { REMOVED_4_0_3 },
+			timeline = { REMOVED_4_0_3 },
 		}),
 		i(7072, {	-- Naga Scale
 			-- #if BEFORE 4.0.3
-			["description"] = "Drops from nagas ranging from level 28 to 40, though the droprate is low.",
-			["maps"] = {
+			description = "Drops from nagas ranging from level 28 to 40, though the droprate is low.",
+			maps = {
 				ARATHI_HIGHLANDS,
 				DESOLACE,
 				HILLSBRAD_FOOTHILLS,
 			},
 			-- #else
-			["coord"] = { 29.0, 11.0, DESOLACE },
-			["cr"] = 4719,	-- Slitherblade Sea Witch
-			["description"] = "Cataclysm messed up with the drop sources for Naga Scale. Slitherblade Sea Witches seems to be the most reliable source. Consider farming this on a character that are more capable to farm in water.",
+			coord = { 29.0, 11.0, DESOLACE },
+			cr = 4719,	-- Slitherblade Sea Witch
+			description = "Cataclysm messed up with the drop sources for Naga Scale. Slitherblade Sea Witches seems to be the most reliable source. Consider farming this on a character that are more capable to farm in water.",
 			-- #endif
 		}),
 		i(12804, {	-- Powerful Mojo
 			-- #if BEFORE 4.0.3
-			["coord"] = { 72.0, 15.0, EASTERN_PLAGUELANDS },	-- Zul'mashar
+			coord = { 72.0, 15.0, EASTERN_PLAGUELANDS },	-- Zul'mashar
 			-- #endif
-			["description"] = "Can drop from trolls.",
-			["maps"] = {
+			description = "Can drop from trolls.",
+			maps = {
 				LBRS_TAZZALOR,
 				ZULGURUB,
 			},
 		}),
 		i(18335, {	-- Pristine Black Diamond
-			["description"] = "Can drop from ANY content intended for level-capped vanilla players, whether it be Dire Maul, Stratholme, Scholomance, or the raids. This is a rare item, farming it requires luck.",
+			description = "Can drop from ANY content intended for level-capped vanilla players, whether it be Dire Maul, Stratholme, Scholomance, or the raids. This is a rare item, farming it requires luck.",
 		}),
 		i(4461, {	-- Raptor Hide
 			-- #if BEFORE 4.0.3
-			["description"] = "Drops from raptors ranging from level 30 to 40.",
-			["maps"] = {
+			description = "Drops from raptors ranging from level 30 to 40.",
+			maps = {
 				ARATHI_HIGHLANDS,
 				DUSTWALLOW_MARSH,
 				STRANGLETHORN_VALE,
 			},
 			-- #else
-			["coord"] = { 50.0, 70.0, ARATHI_HIGHLANDS },
-			["cr"] = 2561,	-- Highland Fleshstalker
-			["description"] = "Cataclysm messed up with the drop sources for Raptor Hides. Supposed to drop from all raptors within a given level range. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
+			coord = { 50.0, 70.0, ARATHI_HIGHLANDS },
+			cr = 2561,	-- Highland Fleshstalker
+			description = "Cataclysm messed up with the drop sources for Raptor Hides. Supposed to drop from all raptors within a given level range. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
 			-- #endif
 		}),
 		i(5635, {	-- Sharp Claw
 			-- #if BEFORE 4.0.3
-			["description"] = "Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",
-			["maps"] = {
+			description = "Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",
+			maps = {
 				ASHENVALE,
 				DARKSHORE,
 				DUSKWOOD,
@@ -6044,27 +6044,27 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 			-- #else
-			["coords"] = {
+			coords = {
 				{ 27.0, 60.0, GHOSTLANDS },
 				{ 50.0, 60.0, GHOSTLANDS },
 				{ 70.0, 38.0, GHOSTLANDS },
 			},
-			["crs"] = {
+			crs = {
 				16348,	-- Ghostclaw Lynx
 				16349,	-- Ghostclaw Ravager
 				16347,	-- Starving Ghostclaw
 			},
-			["description"] = "Cataclysm messed up with the drop sources for Sharp Claws. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Ghostclaw lynxs in Ghostland seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents!",
+			description = "Cataclysm messed up with the drop sources for Sharp Claws. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Ghostclaw lynxs in Ghostland seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents!",
 			-- #endif
 		}),
 		i(5784, {	-- Slimy Murloc Scale
 			-- #if AFTER 4.0.3
-			["description"] = "Drops from murlocs Blackfathom Deeps.",
-			["maps"] = { BLACKFATHOM_DEEPS },
+			description = "Drops from murlocs Blackfathom Deeps.",
+			maps = { BLACKFATHOM_DEEPS },
 			-- #else
-			["description"] = "Drops from murlocs in the level bracket 15-25 like Bluegill murlocs in Wetlands.",
-			["coord"] = { 15.1, 39.3, WETLANDS },	-- Bluegill Marsh
-			["crs"] = {
+			description = "Drops from murlocs in the level bracket 15-25 like Bluegill murlocs in Wetlands.",
+			coord = { 15.1, 39.3, WETLANDS },	-- Bluegill Marsh
+			crs = {
 				1026,	-- Bluegill Forager
 				1028,	-- Bluegill Muckdweller
 				1024,	-- Bluegill Murloc
@@ -6077,11 +6077,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(4402, {	-- Small Flame Sac
 			-- #if AFTER 4.0.3
-			["cr"] = 14398,	-- Eldreth Darter
-			["description"] = "Cataclysm messed up with the drop sources for Small Flame Sacs. Supposed to drop from small dragonkin like darters and whelps. Eldreth Darters in The Capital Gardens in Dire Maul seems to be the most reliable source.",
-			["maps"] = { DIRE_MAUL },
+			cr = 14398,	-- Eldreth Darter
+			description = "Cataclysm messed up with the drop sources for Small Flame Sacs. Supposed to drop from small dragonkin like darters and whelps. Eldreth Darters in The Capital Gardens in Dire Maul seems to be the most reliable source.",
+			maps = { DIRE_MAUL },
 			-- #else
-			["coords"] = {
+			coords = {
 				{ 81.0, 48.0, BADLANDS },
 				{ 45.0, 68.0, DUSTWALLOW_MARSH },
 				{ 46.0, 24.0, FERALAS },
@@ -6089,28 +6089,28 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 15.0, 61.0, SWAMP_OF_SORROWS },
 				{ 62.0, 42.0, WETLANDS },
 			},
-			["description"] = "Drops from small dragonkin like darters and whelps.",
+			description = "Drops from small dragonkin like darters and whelps.",
 			-- #endif
 		}),
 		i(1475, {	-- Small Venom Sac
 			-- #if BEFORE 4.0.3
-			["description"] = "Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
-			["maps"] = {
+			description = "Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
+			maps = {
 				LOCH_MODAN,
 				STONETALON_MOUNTAINS,
 			},
 			-- #else
-			["coord"] = { 18.8, 35.8, BLOODMYST_ISLE },
-			["crs"] = {
+			coord = { 18.8, 35.8, BLOODMYST_ISLE },
+			crs = {
 				17523,	-- Myst Leecher
 				17522,	-- Myst Spinner
 				17683,	-- Zarakh
 			},
-			["description"] = "Cataclysm messed up with the drop sources for Small Venom Sac, and unfortunately for Horde players the only reliable farming spot is on Bloodmyst Isle.",
+			description = "Cataclysm messed up with the drop sources for Small Venom Sac, and unfortunately for Horde players the only reliable farming spot is on Bloodmyst Isle.",
 			-- #endif
 		}),
 		i(3174, {	-- Spider Ichor
-			["maps"] = {
+			maps = {
 				ASHENVALE,
 				DUSKWOOD,
 				LOCH_MODAN,
@@ -6119,7 +6119,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				STONETALON_MOUNTAINS,
 				WETLANDS,
 			},
-			["crs"] = {
+			crs = {
 				3821,	-- Wildthorn Lurker
 				3820,	-- Wildthorn Venomspitter
 				3819,	-- Wildthorn Stalker
@@ -6156,16 +6156,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- Danny Donkey:	Blizzard devs fucked around with this reagent during retail Cataclysm which lead to it periodically only becoming obtainable from the rare Scargil in Hillsbrad and random mobs in Dustwallow.
 			-- 					At an unknown point got it added to Bluegill murlocs in Wetlands, as well as possibly dropping in StV and DwM. Seems like Cata Classic carried on without affecting this drop.
 			-- #if NOT ANYCLASSIC
-			["coord"] = { 15.1, 39.3, WETLANDS },	-- Bluegill Marsh
-			["crs"] = {
+			coord = { 15.1, 39.3, WETLANDS },	-- Bluegill Marsh
+			crs = {
 				42111,	-- Bluegill Forager
 				41425,	-- Bluegill Murloc
 				41426,	-- Bluegill Oracle
 				42110,	-- Bluegill Puddlejumper
 			},
-			["description"] = "Drops from Bluegill murlocs in Wetlands.",
+			description = "Drops from Bluegill murlocs in Wetlands.",
 			-- #elseif ANYCLASSIC
-			["maps"] = {
+			maps = {
 				-- #if AFTER MOP
 				VASHJIR,
 				VASHJIR_ABYSSAL_DEPTHS,
@@ -6179,7 +6179,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				STRANGLETHORN_VALE,
 				-- #endif
 			},
-			["crs"] = {
+			crs = {
 				-- Wouter NOTE: listed most common sources for each Murloc tribe which has >10% drop chance, otherwise this would become pretty bloated
 				-- #if AFTER MOP
 				41017,	-- Gilblin Collector
@@ -6206,7 +6206,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 		}),
 		i(9260, {	-- Volatile Rum
-			["coords"] = {
+			coords = {
 				-- #if BEFORE 4.0.3
 				{ 54.0, 93.0, TANARIS },	-- Land's End Beach
 				-- #else
@@ -6215,7 +6215,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				{ 74.0, 47.0, TANARIS },	-- Lost Rigger Cove
 			},
-			["crs"] = {
+			crs = {
 				-- #if BEFORE 4.0.3
 				7857,	-- Southsea Dock Worker
 				7856,	-- Southsea Frebooter
@@ -6238,13 +6238,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(8153, {	-- Wildvine
 			-- #if BEFORE 4.0.3
-			["description"] = "Drops from trolls ranging from level 40 to 50.",
-			["maps"] = {
+			description = "Drops from trolls ranging from level 40 to 50.",
+			maps = {
 				STRANGLETHORN_VALE,
 				THE_HINTERLANDS,
 			},
 			-- #else
-			["description"] = "Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source.",
+			description = "Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source.",
 			-- #endif
 		}),
 	}),

@@ -2,29 +2,29 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {
 	n(COMMON_BOSS_DROPS, {
 		d(DIFFICULTY.RAID.HEROIC, {
 			i(191910, {	-- Confounding Antique Cypher
-				["description"] = "Drops from Fated Heroic Shadowlands Raid bosses.",
+				description = "Drops from Fated Heroic Shadowlands Raid bosses.",
 			}),
 			i(191911, {	-- Cosmic Creation Impetus
-				["cost"] = { { "i", 191910, 20 } },	-- 20x Confounding Antique Cypher
+				cost = { { "i", 191910, 20 } },	-- 20x Confounding Antique Cypher
 			}),
 		}),
 		d(DIFFICULTY.RAID.MYTHIC, {
 			i(191926, {	-- Confounding Ancient Cypher
-				["description"] = "Drops from Fated Mythic Shadowlands Raid bosses.",
+				description = "Drops from Fated Mythic Shadowlands Raid bosses.",
 			}),
 			i(191927, {	-- Sacred Creation Impetus
-				["cost"] = { { "i", 191926, 20 } },	-- 20x Confounding Ancient Cypher
+				cost = { { "i", 191926, 20 } },	-- 20x Confounding Ancient Cypher
 			}),
 		}),
 	}),
 	n(QUESTS, {
 		q(66648, {	-- Crossing Fate
-			["description"] = "Auto-accepted by entering any 'Fated' Shadowlands Raid.",
-			["maps"] = {
+			description = "Auto-accepted by entering any 'Fated' Shadowlands Raid.",
+			maps = {
 				-- Castle Nathria
 				1735,	-- The Grand Walk
 				1744,	-- The Purloined Stores
@@ -50,15 +50,15 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				2052,	-- The Grand Design
 				2061,	-- Ephemeral Plains
 			},
-			["groups"] = {
+			groups = {
 				i(192466, {	-- Puzzling Cartel Dinar
-					["bonusID"] = 3407,	-- "Priceless"
+					bonusID = 3407,	-- "Priceless"
 				}),
 			},
 		}),
 		q(66649, {	-- Turning the Wheel
-			["sourceQuest"] = 66648,	-- Crossing Fate
-			["maps"] = {
+			sourceQuest = 66648,	-- Crossing Fate
+			maps = {
 				-- Castle Nathria
 				1735,	-- The Grand Walk
 				1744,	-- The Purloined Stores
@@ -84,15 +84,15 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				2052,	-- The Grand Design
 				2061,	-- Ephemeral Plains
 			},
-			["groups"] = {
+			groups = {
 				i(192466, {	-- Puzzling Cartel Dinar
-					["bonusID"] = 3407,	-- "Priceless"
+					bonusID = 3407,	-- "Priceless"
 				}),
 			},
 		}),
 		q(66650, {	-- Fate's Finale
-			["sourceQuest"] = 66649,	-- Turning the Wheel
-			["maps"] = {
+			sourceQuest = 66649,	-- Turning the Wheel
+			maps = {
 				-- Castle Nathria
 				1735,	-- The Grand Walk
 				1744,	-- The Purloined Stores
@@ -118,15 +118,15 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				2052,	-- The Grand Design
 				2061,	-- Ephemeral Plains
 			},
-			["groups"] = {
+			groups = {
 				i(192466, {	-- Puzzling Cartel Dinar
-					["bonusID"] = 3407,	-- "Priceless"
+					bonusID = 3407,	-- "Priceless"
 				}),
 			},
 		}),
 		q(66696, {	-- Tempting Fate: Fate of the Shadowlands
-			["timeline"] = { CREATED_9_2_7, ADDED_10_0_0, REMOVED_10_0_2_LAUNCH },
-			["maps"] = {
+			timeline = { CREATED_9_2_7, ADDED_10_0_0, REMOVED_10_0_2_LAUNCH },
+			maps = {
 				-- Castle Nathria
 				1735,	-- The Grand Walk
 				1744,	-- The Purloined Stores
@@ -152,7 +152,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				2052,	-- The Grand Design
 				2061,	-- Ephemeral Plains
 			},
-			["isWorldQuest"] = true,
+			isWorldQuest = true,
 		}),
 	}),
 })));

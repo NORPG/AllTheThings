@@ -2,16 +2,16 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	n(SEASON_CRIMSON, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 			ach(15943, {	-- Crimson Combatant [A]
-				["races"] = ALLIANCE_ONLY,
-				["collectible"] = false,
+				races = ALLIANCE_ONLY,
+				collectible = false,
 			}),
 			ach(15942, {	-- Crimson Combatant [H]
-				["races"] = HORDE_ONLY,
-				["collectible"] = false,
+				races = HORDE_ONLY,
+				collectible = false,
 			}),
 			ach(15960),	-- Combatant I: Dragonflight Season 1
 			ach(15961),	-- Combatant II: Dragonflight Season 1
@@ -20,8 +20,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			ach(15952),	-- Rival I: Dragonflight Season 1
 			ach(15953),	-- Rival II: Dragonflight Season 1
 			ach(15954, {	-- Duelist: Dragonflight Season 1
-				ill(6786, {["timeline"] = { ADDED_10_0_7, REMOVED_10_1_0 }}),	-- Primal Storm (ILLUSION!)
-				i(202089, {["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 }}),	-- Crimson Gladiator's Prestigious Cloak
+				ill(6786, {timeline = { ADDED_10_0_7, REMOVED_10_1_0 }}),	-- Primal Storm (ILLUSION!)
+				i(202089, {timeline = { ADDED_10_0_5, REMOVED_10_1_0 }}),	-- Crimson Gladiator's Prestigious Cloak
 			}),
 			ach(15984),	-- Elite: Dragonflight Season 1
 			ach(15957, {	-- Gladiator: Dragonflight Season 1
@@ -34,35 +34,35 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			-- RBG
 			ach(15959, {	-- Hero of the Alliance: Crimson
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(15958, {	-- Hero of the Horde: Crimson
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			-- Solo
 			ach(17339, {	-- Crimson Legend: Dragonflight Season 1
 				i(206343, {		-- Crimson Legend's Pennant (TOY!)
-					["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 },
+					timeline = { ADDED_10_1_0, REMOVED_10_1_0 },
 				}),
 			}),
 			ach(16734, {	-- Crimson Soloist: Dragonflight Season 1
 				title(482),	-- Crimson Soloist <Name>
 			}),
 			-- Fashion
-			ach(16764, { ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_11_0_5 } }),	-- Crimson Carpet Fashion
+			ach(16764, { timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_11_0_5 } }),	-- Crimson Carpet Fashion
 		})),
-		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
+		filter(MOUNTS, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 			i(201789, {	-- Vicious Sabertooth [A] (MOUNT!)
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			i(201788, {	-- Vicious Sabertooth [H] (MOUNT!)
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 		})),
 		n(PVP_WARMODE, {
 			n(197553, {	-- Fieldmaster Emberath
-				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["groups"] = sharedData({ ["timeline"] = { ADDED_10_2_0 } }, {
+				coord = { 43.1, 42.4, VALDRAKKEN },
+				groups = sharedData({ timeline = { ADDED_10_2_0 } }, {
 					-- #if AFTER TWW
 					moh(5, iensemble(211148)),	-- Arsenal: Drakebreaker's Axe
 					moh(5, iensemble(211144)),	-- Arsenal: Drakebreaker's Club
@@ -81,13 +81,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					moh(12, iensemble(211135)),	-- Ensemble: Drakebreaker's Mail Armor
 					moh(12, iensemble(211100)),	-- Ensemble: Drakebreaker's Plate Armor
 					-- #endif
-					filter(BACK_F, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
+					filter(BACK_F, sharedDataSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 						bloody(200, i(198960)),	-- Drakebreaker's Cape
 						bloody(200, i(198961)),	-- Drakebreaker's Cloak
 						bloody(200, i(198962)),	-- Drakebreaker's Shroud
 						bloody(200, i(198959)),	-- Drakebreaker's Wrap
 					})),
-					filter(CLOTH, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
+					filter(CLOTH, sharedDataSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 						bloody(350, i(198566)),	-- Drakebreaker's Boots
 						bloody(200, i(198570)),	-- Drakebreaker's Cord
 						bloody(200, i(198571)),	-- Drakebreaker's Cuffs
@@ -97,7 +97,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						bloody(350, i(198572)),	-- Drakebreaker's Shoulderpads
 						bloody(500, i(198565)),	-- Drakebreaker's Vestment
 					})),
-					filter(LEATHER, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
+					filter(LEATHER, sharedDataSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 						bloody(200, i(198578)),	-- Drakebreaker's Bindings
 						bloody(500, i(198576)),	-- Drakebreaker's Breeches
 						bloody(500, i(198575)),	-- Drakebreaker's Cowl
@@ -107,7 +107,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						bloody(500, i(198579)),	-- Drakebreaker's Vest
 						bloody(350, i(198573)),	-- Drakebreaker's Waders
 					})),
-					filter(MAIL, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
+					filter(MAIL, sharedDataSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 						bloody(200, i(198596)),	-- Drakebreaker's Bracers
 						bloody(500, i(198589)),	-- Drakebreaker's Chestguard
 						bloody(200, i(198595)),	-- Drakebreaker's Cinch
@@ -117,7 +117,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						bloody(350, i(198594)),	-- Drakebreaker's Shoulderguards
 						bloody(350, i(198590)),	-- Drakebreaker's Striders
 					})),
-					filter(PLATE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
+					filter(PLATE, sharedData({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 						bloody(200, i(198588)),	-- Drakebreaker's Armplates
 						bloody(500, i(198582)),	-- Drakebreaker's Breastplate
 						bloody(350, i(198584)),	-- Drakebreaker's Gauntlets
@@ -127,7 +127,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						bloody(350, i(198586)),	-- Drakebreaker's Mantle
 						bloody(350, i(198583)),	-- Drakebreaker's Sabatons
 					})),
-					n(WEAPONS, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
+					n(WEAPONS, sharedDataSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 						bloody(800, i(199084)),	-- Drakebreaker's Broadsword
 						bloody(400, i(199089)),	-- Drakebreaker's Bulwark
 						bloody(400, i(199070)),	-- Drakebreaker's Cleaver
@@ -153,9 +153,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					})),
 				}),
 			}),
-			n(213989, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Warkeeper Gresh
-				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["groups"] = {
+			n(213989, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Warkeeper Gresh
+				coord = { 43.1, 42.4, VALDRAKKEN },
+				groups = {
 					-- #if BEFORE TWW
 					bloody(500, iensemble(211148)),	-- Arsenal: Drakebreaker's Axe
 					bloody(500, iensemble(211144)),	-- Arsenal: Drakebreaker's Club
@@ -177,34 +177,34 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			})),
 		}),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_11_0_5 } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_11_0_5 } }, {
 			n(199601, {	-- Seltherex
-				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["groups"] = sharedData({
-					["cost"] = { { "i", MOH, 12 } },
-					["timeline"] = { ADDED_11_0_5 },
+				coord = { 44.7, 37.0, VALDRAKKEN },
+				groups = sharedData({
+					cost = { { "i", MOH, 12 } },
+					timeline = { ADDED_11_0_5 },
 				}, {
 					iensemble(230899, {	-- Arsenal: Crimson Aspirant's Weapons
-						["cost"] = { { "i", MOH, 80 } },
+						cost = { { "i", MOH, 80 } },
 					}),
 					iensemble(230869, {	-- Ensemble: Crimson Aspirant's Cloth Armor
-						["classes"] = CLOTH_CLASSES,
+						classes = CLOTH_CLASSES,
 					}),
 					iensemble(230870, {	-- Ensemble: Crimson Aspirant's Leather Armor
-						["classes"] = LEATHER_CLASSES,
+						classes = LEATHER_CLASSES,
 					}),
 					iensemble(230871, {	-- Ensemble: Crimson Aspirant's Mail Armor
-						["classes"] = MAIL_CLASSES,
+						classes = MAIL_CLASSES,
 					}),
 					iensemble(230872, {	-- Ensemble: Crimson Aspirant's Plate Armor
-						["classes"] = PLATE_CLASSES,
+						classes = PLATE_CLASSES,
 					}),
 				}),
 			}),
 			n(199601, {	-- Seltherex
-				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["groups"] = bubbleDownFiltered({
-					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+				coord = { 44.7, 37.0, VALDRAKKEN },
+				groups = bubbleDownFiltered({
+					timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 				},FILTERFUNC_itemID,{
 					filter(BACK_F, {
 						honor(525, i(201752)),	-- Crimson Aspirant's Cape
@@ -324,63 +324,63 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_11_0_5 } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_11_0_5 } }, {
 			n(199599, {	-- Calderax
-				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["ItemAppearanceModifierID"] = 159,
-				["groups"] = sharedData({
-					["cost"] = { { "i", MOH, 12 } },
-					["timeline"] = { ADDED_11_0_5 },
+				coord = { 44.3, 36.6, VALDRAKKEN },
+				ItemAppearanceModifierID = 159,
+				groups = sharedData({
+					cost = { { "i", MOH, 12 } },
+					timeline = { ADDED_11_0_5 },
 				}, {
 					iensemble(230900, {	-- Arsenal: Crimson Gladiator's Weapons
-						["cost"] = { { "i", MOH, 80 } },
+						cost = { { "i", MOH, 80 } },
 					}),
 					iensemble(230873, {	-- Ensemble: Crimson Gladiator's Death Knight Armor
-						["classes"] = { DEATHKNIGHT },
+						classes = { DEATHKNIGHT },
 					}),
 					iensemble(230874, {	-- Ensemble: Crimson Gladiator's Demon Hunter Armor
-						["classes"] = { DEMONHUNTER },
+						classes = { DEMONHUNTER },
 					}),
 					iensemble(230875, {	-- Ensemble: Crimson Gladiator's Druid Armor
-						["classes"] = { DRUID },
+						classes = { DRUID },
 					}),
 					iensemble(230876, {	-- Ensemble: Crimson Gladiator's Evoker Armor
-						["classes"] = { EVOKER },
+						classes = { EVOKER },
 					}),
 					iensemble(230877, {	-- Ensemble: Crimson Gladiator's Hunter Armor
-						["classes"] = { HUNTER },
+						classes = { HUNTER },
 					}),
 					iensemble(230878, {	-- Ensemble: Crimson Gladiator's Mage Armor
-						["classes"] = { MAGE },
+						classes = { MAGE },
 					}),
 					iensemble(230879, {	-- Ensemble: Crimson Gladiator's Monk Armor
-						["classes"] = { MONK },
+						classes = { MONK },
 					}),
 					iensemble(230880, {	-- Ensemble: Crimson Gladiator's Paladin Armor
-						["classes"] = { PALADIN },
+						classes = { PALADIN },
 					}),
 					iensemble(230881, {	-- Ensemble: Crimson Gladiator's Priest Armor
-						["classes"] = { PRIEST },
+						classes = { PRIEST },
 					}),
 					iensemble(230882, {	-- Ensemble: Crimson Gladiator's Rogue Armor
-						["classes"] = { ROGUE },
+						classes = { ROGUE },
 					}),
 					iensemble(230883, {	-- Ensemble: Crimson Gladiator's Shaman Armor
-						["classes"] = { SHAMAN },
+						classes = { SHAMAN },
 					}),
 					iensemble(230884, {	-- Ensemble: Crimson Gladiator's Warlock Armor
-						["classes"] = { WARLOCK },
+						classes = { WARLOCK },
 					}),
 					iensemble(230885, {	-- Ensemble: Crimson Gladiator's Warrior Armor
-						["classes"] = { WARRIOR },
+						classes = { WARRIOR },
 					}),
 				}),
 			}),
 			n(199599, {	-- Calderax
-				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["ItemAppearanceModifierID"] = 159,
-				["groups"] = bubbleDownFiltered({
-					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+				coord = { 44.3, 36.6, VALDRAKKEN },
+				ItemAppearanceModifierID = 159,
+				groups = bubbleDownFiltered({
+					timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 				},FILTERFUNC_itemID,{
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
@@ -695,7 +695,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }, ["bonusID"] = 7532 }, {
+		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }, bonusID = 7532 }, {
 			n(CLASSES, {
 				cl(DEATHKNIGHT, {
 					i(201911),	-- Crimson Gladiator's Cloak
@@ -989,12 +989,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				i(201811),	-- Crimson Gladiator's Sigil of Adaptation
 			}),
 			n(199720, {	-- Glamora
-				["coord"] = { 45.9, 38.7, VALDRAKKEN },
-				["groups"] = {
+				coord = { 45.9, 38.7, VALDRAKKEN },
+				groups = {
 					honor(100, i(202090, {	-- Crimson Gladiator's Tabard
-						["sourceAchievements"] = { 15984 },	-- Elite: Dragonflight Season 1
-						["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },
-						["bonusID"] = 0,
+						sourceAchievements = { 15984 },	-- Elite: Dragonflight Season 1
+						timeline = { ADDED_10_0_5, REMOVED_10_1_0 },
+						bonusID = 0,
 					})),
 					moh(5, i(202129)),	-- Crimson Gladiator's Barrier
 					moh(5, i(202133)),	-- Crimson Gladiator's Blade
@@ -1017,54 +1017,54 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			}),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {
 			n(199720, {	-- Glamora
-				["coord"] = { 45.9, 38.7, VALDRAKKEN },
-				["groups"] = sharedData({
-					["cost"] = { { "i", MOH, 12 } },
-					["u"] = ELITE_PVP_REQUIREMENT,
+				coord = { 45.9, 38.7, VALDRAKKEN },
+				groups = sharedData({
+					cost = { { "i", MOH, 12 } },
+					u = ELITE_PVP_REQUIREMENT,
 				}, {
 					iensemble(230901, {	-- Arsenal: Elite Crimson Gladiator's Weapons
-						["cost"] = { { "i", MOH, 80 } },
+						cost = { { "i", MOH, 80 } },
 					}),
 					iensemble(230886, {	-- Ensemble: Elite Crimson Gladiator's Death Knight Armor
-						["classes"] = { DEATHKNIGHT },
+						classes = { DEATHKNIGHT },
 					}),
 					iensemble(230887, {	-- Ensemble: Elite Crimson Gladiator's Demon Hunter Armor
-						["classes"] = { DEMONHUNTER },
+						classes = { DEMONHUNTER },
 					}),
 					iensemble(230888, {	-- Ensemble: Elite Crimson Gladiator's Druid Armor
-						["classes"] = { DRUID },
+						classes = { DRUID },
 					}),
 					iensemble(230889, {	-- Ensemble: Elite Crimson Gladiator's Evoker Armor
-						["classes"] = { EVOKER },
+						classes = { EVOKER },
 					}),
 					iensemble(230890, {	-- Ensemble: Elite Crimson Gladiator's Hunter Armor
-						["classes"] = { HUNTER },
+						classes = { HUNTER },
 					}),
 					iensemble(230891, {	-- Ensemble: Elite Crimson Gladiator's Mage Armor
-						["classes"] = { MAGE },
+						classes = { MAGE },
 					}),
 					iensemble(230892, {	-- Ensemble: Elite Crimson Gladiator's Monk Armor
-						["classes"] = { MONK },
+						classes = { MONK },
 					}),
 					iensemble(230893, {	-- Ensemble: Elite Crimson Gladiator's Paladin Armor
-						["classes"] = { PALADIN },
+						classes = { PALADIN },
 					}),
 					iensemble(230894, {	-- Ensemble: Elite Crimson Gladiator's Priest Armor
-						["classes"] = { PRIEST },
+						classes = { PRIEST },
 					}),
 					iensemble(230895, {	-- Ensemble: Elite Crimson Gladiator's Rogue Armor
-						["classes"] = { ROGUE },
+						classes = { ROGUE },
 					}),
 					iensemble(230896, {	-- Ensemble: Elite Crimson Gladiator's Shaman Armor
-						["classes"] = { SHAMAN },
+						classes = { SHAMAN },
 					}),
 					iensemble(230897, {	-- Ensemble: Elite Crimson Gladiator's Warlock Armor
-						["classes"] = { WARLOCK },
+						classes = { WARLOCK },
 					}),
 					iensemble(230898, {	-- Ensemble: Elite Crimson Gladiator's Warrior Armor
-						["classes"] = { WARRIOR },
+						classes = { WARRIOR },
 					}),
 				}),
 			}),
@@ -1072,10 +1072,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		filter(RECIPES, {
 			-- #if AFTER 10.1.0
 			n(196661, {	-- Korganar Smolderforge
-				["coord"] = { 43.6, 42.7, VALDRAKKEN },
-				["timeline"] = { ADDED_10_1_0 },
-				["groups"] = sharedData({
-					["cost"] = { { "i", MOH, 3 } },
+				coord = { 43.6, 42.7, VALDRAKKEN },
+				timeline = { ADDED_10_1_0 },
+				groups = sharedData({
+					cost = { { "i", MOH, 3 } },
 				}, {
 			-- #endif
 					i(194637),	-- Design: Crimson Combatant's Jeweled Amulet (RECIPE!)
@@ -1121,10 +1121,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			-- #endif
 			n(197553, {	-- Fieldmaster Emberath
-				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["groups"] = sharedData({
-					["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
-					["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },
+				coord = { 43.1, 42.4, VALDRAKKEN },
+				groups = sharedData({
+					cost = { { "i", 190450, 3 } },	-- 3x Awakened Ire
+					timeline = { ADDED_10_0_5, REMOVED_10_1_0 },
 				}, {
 					i(203380),	-- Technique: Crimson Combatant's Emblem (RECIPE!)
 					i(203379),	-- Technique: Crimson Combatant's Insignia of Alacrity (RECIPE!)

@@ -2,22 +2,22 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_3_0 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_3_0 }, {
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, inst(185, {	-- Well of Eternity
-		["mapID"] = 398,
-		["coords"] = {
+		mapID = 398,
+		coords = {
 			{ 22.9, 64.4, CAVERNS_OF_TIME },	-- dungeon entrance
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 		},
-		["groups"] = {
+		groups = {
 			n(QUESTS, {
 				q(30104, {	-- Documenting the Timeways
-					["sourceQuests"] = {
+					sourceQuests = {
 						30097,	-- Archival Purposes
 						30096,	-- Murozond
 					},
-					["qg"] = 57864,	-- Alurmi
-					["groups"] = {
+					qg = 57864,	-- Alurmi
+					groups = {
 						i(72880),	-- Alurmi's Ring
 						i(72881),	-- Treads of the Past
 						i(72882),	-- Chronicler's Chestguard
@@ -25,18 +25,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(30099, {	-- In Unending Numbers
-					["sourceQuest"] = 30098,	-- The Well of Eternity
-					["qg"] = 55624,	-- Nozdormu
+					sourceQuest = 30098,	-- The Well of Eternity
+					qg = 55624,	-- Nozdormu
 				}),
 				q(30102, {	-- The Hour of Twilight
-					["sourceQuest"] = 30101,	-- The Path of the Dragon Soul
-					["qg"] = 57913,	-- Chromie
-					["isBreadcrumb"] = true,
+					sourceQuest = 30101,	-- The Path of the Dragon Soul
+					qg = 57913,	-- Chromie
+					isBreadcrumb = true,
 				}),
 				q(30101, {	-- The Path of the Dragon Soul
-					["sourceQuest"] = 30100,	-- The Vainglorious
-					["qg"] = 55624,	-- Nozdormu
-					["groups"] = {
+					sourceQuest = 30100,	-- The Vainglorious
+					qg = 55624,	-- Nozdormu
+					groups = {
 						i(72876),	-- Ironfeather Longbow
 						i(72877),	-- Chain of the Demon Hunter
 						i(72878),	-- Demonic Skull
@@ -44,13 +44,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(30100, {	-- The Vainglorious
-					["sourceQuest"] = 30099,	-- In Unending Numbers
-					["qg"] = 55624,	-- Nozdormu
+					sourceQuest = 30099,	-- In Unending Numbers
+					qg = 55624,	-- Nozdormu
 				}),
 			}),
 			n(ZONE_DROPS, {
 				i(76158, {	-- Courtier's Slippers
-					["crs"] = {
+					crs = {
 						55654,	-- Corrupted Arcanist
 						55656,	-- Dreadlord Defender
 						56579,	-- Enchanted Highmistress
@@ -64,7 +64,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				i(76157, {	-- Waterworn Handguards
-					["crs"] = {
+					crs = {
 						55654,	-- Corrupted Arcanist
 						55656,	-- Dreadlord Defender
 						56579,	-- Enchanted Highmistress
@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				i(76159, {	-- Legion Bindings
-					["crs"] = {
+					crs = {
 						55654,	-- Corrupted Arcanist
 						55656,	-- Dreadlord Defender
 						56579,	-- Enchanted Highmistress
@@ -92,10 +92,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, sharedData({ ["modID"] = 0, }, {
+			d(DIFFICULTY.DUNGEON.HEROIC, sharedData({ modID = 0, }, {
 				e(290, {	-- Peroth'arn
-					["crs"] = { 55085 },	-- Peroth'arn
-					["groups"] = {
+					crs = { 55085 },	-- Peroth'arn
+					groups = {
 						ach(6127),	-- Lazy Eye
 						i(72827),	-- Gavel of Peroth'arn
 						i(72832),	-- Girdle of the Queen's Champion
@@ -106,8 +106,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				e(291, {	-- Queen Azshara
-					["crs"] = { 54853 },	-- Queen Azshara
-					["groups"] = {
+					crs = { 54853 },	-- Queen Azshara
+					groups = {
 						i(72834),	-- Breastplate of the Queen's Guard
 						i(72838),	-- Cloak of the Royal Protector
 						i(72835),	-- Puppeteer's Pantaloons
@@ -117,8 +117,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				e(292, {	-- Mannoroth
-					["crs"] = { 54969 },	-- Mannoroth
-					["groups"] = {
+					crs = { 54969 },	-- Mannoroth
+					groups = {
 						ach(6070),	-- That's Not Canon!
 						ach(6118),	-- Heroic: Well of Eternity
 						ach(6121),	-- Heroic: Well of Eternity Guild Run
@@ -138,8 +138,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 			})),
 			n(55500, {	-- Illidan Stormrage
-				["sharedDescription"] = "|CFFFF0000Listen to Illidan, these mobs do have lethal abilities!|r",
-				["groups"] = {
+				sharedDescription = "|CFFFF0000Listen to Illidan, these mobs do have lethal abilities!|r",
+				groups = {
 					n(54927),	-- Guardian Demon
 					n(54500),	-- Legion Demon
 				},
@@ -148,7 +148,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(185, {
 		q(35435),	-- Well of Eternity Reward Quest - Heroic completion
 	}),

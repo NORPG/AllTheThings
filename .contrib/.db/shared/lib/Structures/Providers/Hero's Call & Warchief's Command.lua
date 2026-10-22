@@ -275,31 +275,31 @@ HEROS_CALL_BOARD_SYMLINK = {{ "select", "questID", unpack(ALL_HEROS_CALL_QUESTS)
 local HEROS_CALL_BOARDS = {
 	-- #if AFTER 4.0.1
 	[DARNASSUS] = o(207321, {	-- Hero's Call Board
-		["coords"] = {
+		coords = {
 			{ 29.6, 48.4, DARNASSUS },
 			{ 39.6, 11.6, DARNASSUS },
 			{ 45.0, 50.5, DARNASSUS },
 		},
-		["timeline"] = { ADDED_4_0_1 },
-		["races"] = ALLIANCE_ONLY,
+		timeline = { ADDED_4_0_1 },
+		races = ALLIANCE_ONLY,
 	}),
 	[IRONFORGE] = o(207320, {	-- Hero's Call Board
-		["coords"] = {
+		coords = {
 			{ 26.5, 70.2, IRONFORGE },
 			{ 62.4, 30.5, IRONFORGE },
 		},
-		["timeline"] = { ADDED_4_0_1 },
-		["races"] = ALLIANCE_ONLY,
+		timeline = { ADDED_4_0_1 },
+		races = ALLIANCE_ONLY,
 	}),
 	[NORTHREND_DALARAN] = o(208316, {	-- Hero's Call Board
-		["coords"] = {
+		coords = {
 			{ 25.9, 43.1, NORTHREND_DALARAN },
 			{ 47.8, 41.2, NORTHREND_DALARAN },
 			{ 37.8, 63.8, NORTHREND_DALARAN },
 		},
-		["timeline"] = { ADDED_4_0_1 },
-		["races"] = ALLIANCE_ONLY,
-		["availableQuests"] = {
+		timeline = { ADDED_4_0_1 },
+		races = ALLIANCE_ONLY,
+		availableQuests = {
 			-------------------------------------------------
 			-- Crieve (Human Warrior) - Level 67 - 2024-05-13
 			-- Dragonflight - this character has a lot of quest completion
@@ -391,8 +391,8 @@ local HEROS_CALL_BOARDS = {
 		},
 	}),
 	[STORMWIND_CITY] = o(206111, {	-- Hero's Call Board
-		["provider"] = { "o", 206294 },	-- Hero's Call Board
-		["coords"] = {
+		provider = { "o", 206294 },	-- Hero's Call Board
+		coords = {
 			-- Locations for 206111
 			{ 26.1, 38.3, STORMWIND_CITY },
 			{ 43.1, 73.7, STORMWIND_CITY },
@@ -401,9 +401,9 @@ local HEROS_CALL_BOARDS = {
 			{ 62.5, 30.0, STORMWIND_CITY },
 			{ 43.0, 71.9, STORMWIND_CITY },
 		},
-		["timeline"] = { ADDED_4_0_1 },
-		["races"] = ALLIANCE_ONLY,
-		["availableQuests"] = {
+		timeline = { ADDED_4_0_1 },
+		races = ALLIANCE_ONLY,
+		availableQuests = {
 			-------------------------------------------------
 			-- Crieve (Human Warrior) - Level 67 - 2024-05-13
 			-------------------------------------------------
@@ -433,9 +433,9 @@ local HEROS_CALL_BOARDS = {
 		},
 	}),
 	[THE_EXODAR] = o(207322, {	-- Hero's Call Board
-		["coord"] = { 55.5, 47.9, THE_EXODAR },
-		["timeline"] = { ADDED_4_0_1 },
-		["races"] = ALLIANCE_ONLY,
+		coord = { 55.5, 47.9, THE_EXODAR },
+		timeline = { ADDED_4_0_1 },
+		races = ALLIANCE_ONLY,
 	}),
 	-- #endif
 };
@@ -568,24 +568,24 @@ WARCHIEFS_COMMAND_BOARD_SYMLINK = {{ "select", "questID", unpack(ALL_WARCHIEFS_C
 local WARCHIEFS_COMMAND_BOARDS = {
 	-- #if AFTER 4.0.1
 	[HILLSBRAD_FOOTHILLS] = o(207279, {	-- Warchief's Command Board
-		["coords"] = {
+		coords = {
 			{ 56.6, 47.0, HILLSBRAD_FOOTHILLS },
 			{ 59.9, 63.5, HILLSBRAD_FOOTHILLS },
 		},
-		["timeline"] = { ADDED_4_0_1 },
-		["races"] = HORDE_ONLY,
+		timeline = { ADDED_4_0_1 },
+		races = HORDE_ONLY,
 	}),
 	[NORTHREND_DALARAN] = o(208317, {	-- Warchief's Command Board
-		["coords"] = {
+		coords = {
 			{ 48.7, 39.6, NORTHREND_DALARAN },
 			{ 59.2, 27.4, NORTHREND_DALARAN },
 		},
-		["timeline"] = { ADDED_4_0_1 },
-		["races"] = HORDE_ONLY,
+		timeline = { ADDED_4_0_1 },
+		races = HORDE_ONLY,
 	}),
 	[ORGRIMMAR] = o(206109, {	-- Warchief's Command Board
-		["provider"] = { "o", 206116 },	-- Warchief's Command Board
-		["coords"] = {
+		provider = { "o", 206116 },	-- Warchief's Command Board
+		coords = {
 			-- Locations for 206109
 			{ 49.8, 76.4, ORGRIMMAR },
 			{ 58.3, 45.7, ORGRIMMAR },
@@ -595,27 +595,27 @@ local WARCHIEFS_COMMAND_BOARDS = {
 			{ 59.0, 44.4, ORGRIMMAR },
 			{ 66.7, 49.5, ORGRIMMAR },
 		},
-		["timeline"] = { ADDED_4_0_1 },
-		["races"] = HORDE_ONLY,
+		timeline = { ADDED_4_0_1 },
+		races = HORDE_ONLY,
 	}),
 	[SILVERMOON_CITY] = o(207325, {	-- Warchief's Command Board
-		["coord"] = { 62.5, 60.5, SILVERMOON_CITY },
-		["timeline"] = { ADDED_4_0_1 },
-		["races"] = HORDE_ONLY,
+		coord = { 62.5, 60.5, SILVERMOON_CITY },
+		timeline = { ADDED_4_0_1 },
+		races = HORDE_ONLY,
 	}),
 	[THUNDER_BLUFF] = o(207323, {	-- Warchief's Command Board
-		["coord"] = { 42.6, 57.4, THUNDER_BLUFF },
-		["timeline"] = { ADDED_4_0_1 },
-		["races"] = HORDE_ONLY,
+		coord = { 42.6, 57.4, THUNDER_BLUFF },
+		timeline = { ADDED_4_0_1 },
+		races = HORDE_ONLY,
 	}),
 	[UNDERCITY] = o(207324, {	-- Warchief's Command Board
-		["coords"] = {
+		coords = {
 			{ 44.0, 35.4, UNDERCITY },
 			{ 66.5, 49.8, UNDERCITY },
 			{ 61.8, 75.6, UNDERCITY },
 		},
-		["timeline"] = { ADDED_4_0_1 },
-		["races"] = HORDE_ONLY,
+		timeline = { ADDED_4_0_1 },
+		races = HORDE_ONLY,
 	}),
 	-- #endif
 };

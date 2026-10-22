@@ -6,8 +6,8 @@
 -- Wouter NOTE: level 80 boosts became available in Classic shortly after the launch of Icecrown Citadel, with the Blazing Heroic Pack for Cata
 root(ROOTS.Character, n(CLASS_TRIAL, {
 	-- Wouter NOTE: these are 187 boosted items made for Classic, they eventually got replaced in Cata by the 232 gear that was originally from Scroll of Resurrection
-	expansion(EXPANSION.CATA, bubbleDown({ ["u"] = REAL_MONEY, ["timeline"] = { ADDED_3_4_3, REMOVED_4_4_0 } }, {
-		["groups"] = {
+	expansion(EXPANSION.CATA, bubbleDown({ u = REAL_MONEY, timeline = { ADDED_3_4_3, REMOVED_4_4_0 } }, {
+		groups = {
 			cl(DRUID, {
 				i(209529),	-- Secondhand Crown
 				i(209530),	-- Secondhand Crown
@@ -27,13 +27,13 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				i(209658),	-- Secondhand Boots
 				-- #if BEFORE MOP
 				i(209814, {	-- Secondhand Idol of Life
-					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+					timeline = { ADDED_3_4_3, REMOVED_5_0_4 },
 				}),
 				i(209813, {	-- Secondhand Idol of the Wild
-					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+					timeline = { ADDED_3_4_3, REMOVED_5_0_4 },
 				}),
 				i(209809, {	-- Secondhand Idol of Wrath
-					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+					timeline = { ADDED_3_4_3, REMOVED_5_0_4 },
 				}),
 				-- #endif
 			}),
@@ -78,13 +78,13 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				i(209661),	-- Secondhand Plate Greaves
 				-- #if BEFORE MOP
 				i(209807, {	-- Secondhand Book of Healing
-					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+					timeline = { ADDED_3_4_3, REMOVED_5_0_4 },
 				}),
 				i(209810, {	-- Secondhand Book of Protection
-					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+					timeline = { ADDED_3_4_3, REMOVED_5_0_4 },
 				}),
 				i(209808, {	-- Secondhand Book of Righteousness
-					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+					timeline = { ADDED_3_4_3, REMOVED_5_0_4 },
 				}),
 				-- #endif
 			}),
@@ -132,13 +132,13 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				i(209660),	-- Secondhand Boots
 				-- #if BEFORE MOP
 				i(209815, {	-- Secondhand Totem of Lightning
-					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+					timeline = { ADDED_3_4_3, REMOVED_5_0_4 },
 				}),
 				i(209811, {	-- Secondhand Totem of Restoration
-					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+					timeline = { ADDED_3_4_3, REMOVED_5_0_4 },
 				}),
 				i(209812, {	-- Secondhand Totem of the Storm
-					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+					timeline = { ADDED_3_4_3, REMOVED_5_0_4 },
 				}),
 				-- #endif
 			}),
@@ -192,8 +192,8 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 			i(209696),	-- Secondhand Stone of Wisdom
 		},
 	})),
-	expansion(EXPANSION.CATA, bubbleDown({ ["u"] = REAL_MONEY, ["timeline"] = { ADDED_4_4_0, REMOVED_4_4_2 } }, {
-		["groups"] = {
+	expansion(EXPANSION.CATA, bubbleDown({ u = REAL_MONEY, timeline = { ADDED_4_4_0, REMOVED_4_4_2 } }, {
+		groups = {
 			cl(DRUID, {
 				i(73012),	-- Wildsoul Spear
 				i(73011),	-- Wildsoul Staff
@@ -242,13 +242,13 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				i(73126),	-- Wildsoul Stone of Wisdom
 				-- #if BEFORE MOP
 				i(73339, {	-- Wildsoul Idol of Destruction
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 				}),
 				i(73338, {	-- Wildsoul Idol of Rage
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 				}),
 				i(73337, {	-- Wildsoul Idol of Wisdom
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 				}),
 				-- #endif
 			}),
@@ -338,13 +338,13 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				i(73064),	-- Zealous Stone of Wisdom
 				-- #if BEFORE MOP
 				i(73354, {	-- Zealous Libram of Battle
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 				}),
 				i(73355, {	-- Zealous Libram of Stoicism
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 				}),
 				i(73356, {	-- Zealous Libram of Wisdom
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 				}),
 				-- #endif
 			}),
@@ -401,7 +401,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				i(73121),	-- Shadowstalking Stone of Rage
 				-- #if BEFORE MOP
 				i(73357, {	-- Shadowstalking Knives
-					["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+					timeline = { ADDED_4_3_0, REMOVED_5_0_4 },
 				}),
 				-- #endif
 			}),
@@ -455,13 +455,13 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				i(73145),	-- Stormbinder Stone of Wisdom
 				-- #if BEFORE MOP
 				i(73340, {	-- Stormbinder Totem of Destruction
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 				}),
 				i(73342, {	-- Stormbinder Totem of Rage
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 				}),
 				i(73341, {	-- Stormbinder Totem of Wisdom
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 				}),
 				-- #endif
 			}),
@@ -518,10 +518,10 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				i(73164),	-- Valiant Stone of Battle
 				-- #if BEFORE MOP
 				i(73358, {	-- Valiant Knives of Battle
-					["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+					timeline = { ADDED_4_3_0, REMOVED_5_0_4 },
 				}),
 				i(73359, {	-- Valiant Knives of Stoicism
-					["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+					timeline = { ADDED_4_3_0, REMOVED_5_0_4 },
 				}),
 				-- #endif
 			}),

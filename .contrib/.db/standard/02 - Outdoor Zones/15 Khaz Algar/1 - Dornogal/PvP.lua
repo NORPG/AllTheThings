@@ -7,42 +7,42 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		pvp(n(PVP, {
 			n(QUESTS, {
 				q(83489, {	-- Gathering All Gladiators!
-					["provider"] = { "i", 225772 },	-- Artisan's Consortium Advertisement
-					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
-					["groups"] = {
+					provider = { "i", 225772 },	-- Artisan's Consortium Advertisement
+					timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+					groups = {
 						i(210233, {	-- Forged Gladiator's Heraldry
-							["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+							timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 						}),
 					},
 				}),
 				q(84925, {	-- Rallying All Rapscallions!
-					["provider"] = { "i", 229401 },	-- Artisan's Consortium Pamphlet
-					["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
-					["groups"] = {
+					provider = { "i", 229401 },	-- Artisan's Consortium Pamphlet
+					timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+					groups = {
 						i(229390, {	-- Prized Gladiator's Heraldry
-							["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+							timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 						}),
 					},
 				}),
 				q(85229, {	-- Rallying All Rapscallions!
-					["provider"] = { "i", 230284 },	-- Artisan's Consortium Pamphlet
-					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
-					["groups"] = {
+					provider = { "i", 230284 },	-- Artisan's Consortium Pamphlet
+					timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+					groups = {
 						i(230287, {	-- Astral Gladiator's Heraldry x9
-							["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+							timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 						}),
 					},
 				}),
 				q(83711, {	-- Weapons of Conquest
-					["provider"] = { "n", 219222 },	-- Lalandi <Conquest Quartermaster>
-					["coord"] = { 55.0, 76.1, DORNOGAL },
-					["timeline"] = { ADDED_11_0_2, REMOVED_11_0_2 }
+					provider = { "n", 219222 },	-- Lalandi <Conquest Quartermaster>
+					coord = { 55.0, 76.1, DORNOGAL },
+					timeline = { ADDED_11_0_2, REMOVED_11_0_2 }
 				}),
 			}),
 			n(QUESTS, sharedData({
-				["provider"] = { "n", 219260 },	-- Ruffious
-				["coord"] = { 58.9, 75.3, DORNOGAL },
-				["isWeekly"] = true,
+				provider = { "n", 219260 },	-- Ruffious
+				coord = { 58.9, 75.3, DORNOGAL },
+				isWeekly = true,
 			}, {
 				q(80188),	-- Preserving in Arenas
 				q(80184),	-- Preserving in Battle
@@ -51,48 +51,48 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(80185),	-- Preserving Solo
 				q(80189),	-- Preserving Teamwork
 				q(81796, {	-- Sparks of War: Azj-Kahet
-					["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0 },
-					["qi"] = 219934,	-- Spark of War (QI!)
+					timeline = { ADDED_11_0_2, REMOVED_12_0_0 },
+					qi = 219934,	-- Spark of War (QI!)
 				}),
 				q(81795, {	-- Sparks of War: Hallowfall
-					["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0 },
-					["qi"] = 219934,	-- Spark of War (QI!)
+					timeline = { ADDED_11_0_2, REMOVED_12_0_0 },
+					qi = 219934,	-- Spark of War (QI!)
 				}),
 				q(81793, {	-- Sparks of War: Isle of Dorn
-					["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0 },
-					["qi"] = 219934,	-- Spark of War (QI!)
+					timeline = { ADDED_11_0_2, REMOVED_12_0_0 },
+					qi = 219934,	-- Spark of War (QI!)
 				}),
 				q(81794, {	-- Sparks of War: The Ringing Deeps
-					["timeline"] = { ADDED_11_0_2, REMOVED_12_0_0 },
-					["qi"] = 219934,	-- Spark of War (QI!)
+					timeline = { ADDED_11_0_2, REMOVED_12_0_0 },
+					qi = 219934,	-- Spark of War (QI!)
 				}),
 				q(86853, {	-- Sparks of War: Undermine
-					["timeline"] = { ADDED_11_1_0, REMOVED_12_0_0 },
+					timeline = { ADDED_11_1_0, REMOVED_12_0_0 },
 				}),
 				q(90781, {	-- Sparks of War: K'aresh
-					["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+					timeline = { ADDED_11_2_0, REMOVED_12_0_0 },
 				}),
 				a(q(84687, {	-- Against Overwhelming Odds [A]
-					["timeline"] = { ADDED_12_0_0 },
+					timeline = { ADDED_12_0_0 },
 				})),
 				h(q(84688, {	-- Against Overwhelming Odds [H]
-					["timeline"] = { ADDED_12_0_0 },
+					timeline = { ADDED_12_0_0 },
 				})),
 			})),
 			n(VENDORS, {
 				n(219213, {	-- Gilderann <War Mode Quartermaster>
-					["coord"] = { 55.2, 76.8, DORNOGAL },
-					["groups"] = {
+					coord = { 55.2, 76.8, DORNOGAL },
+					groups = {
 						i(225969, {	-- Forged Flag of Victory (TOY!)
-							["timeline"] = { ADDED_12_0_0 },
-							["cost"] = {{"c",BLOODY_TOKENS,1500}},	-- 1500 Bloody Tokens
+							timeline = { ADDED_12_0_0 },
+							cost = {{"c",BLOODY_TOKENS,1500}},	-- 1500 Bloody Tokens
 						}),
 					},
 				}),
 				n(219215, {	-- Hotharn <Competitor's Recipes>
-					["coord"] = { 55.5, 77.1, DORNOGAL },
-					["groups"] = sharedData({
-						["cost"] = { { "c", HONOR, 7500 } },
+					coord = { 55.5, 77.1, DORNOGAL },
+					groups = sharedData({
+						cost = { { "c", HONOR, 7500 } },
 					}, {
 						filter(RECIPES, {
 							i(225433),	-- Design: Algari Competitor's Amulet (RECIPE!)
@@ -163,75 +163,75 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						--
 						filter(MISC, {
 							i(213778, {	-- Forged Jeweler's Setting
-								["cost"] = {
+								cost = {
 									{ "i", 215236, 3 },	-- Vicious Bloodstone x3
 									{ "c", HONOR, 5000 },
 								},
-								["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+								timeline = { ADDED_11_0_2, REMOVED_11_1_0 },
 							}),
 							i(230425, {	-- Prized Jeweler's Setting
-								["cost"] = {
+								cost = {
 									{ "i", 215236, 3 },	-- Vicious Bloodstone x3
 									{ "c", HONOR, 5000 },
 								},
-								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+								timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(230724, {	-- Astral Jeweler's Setting
-								["cost"] = {
+								cost = {
 									{ "i", 215236, 3 },	-- Vicious Bloodstone x3
 									{ "c", HONOR, 5000 },
 								},
-								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+								timeline = { ADDED_11_2_0_SEASONSTART },
 							}),
 						}),
 						filter(REAGENTS, {
 							i(230286, {	-- Astral Aspirant's Heraldry
-								["cost"] = { { "c", HONOR, 175 } },
-								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+								cost = { { "c", HONOR, 175 } },
+								timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 							}),
 							i(230285, {	-- Astral Combatant's Heraldry
-								["cost"] = { { "c", HONOR, 350 } },
-								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+								cost = { { "c", HONOR, 350 } },
+								timeline = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(230287, {	-- Astral Gladiator's Heraldry
-								["cost"] = { { "c", CONQUEST, 175 } },
-								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+								cost = { { "c", CONQUEST, 175 } },
+								timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 							}),
 							i(210232, {	-- Forged Aspirant's Heraldry
-								["cost"] = { { "c", HONOR, 175 } },
-								["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+								cost = { { "c", HONOR, 175 } },
+								timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 							}),
 							i(210221, {	-- Forged Combatant's Heraldry
-								["cost"] = { { "c", HONOR, 350 } },
-								["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+								cost = { { "c", HONOR, 350 } },
+								timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 							}),
 							i(210233, {	-- Forged Gladiator's Heraldry
-								["cost"] = { { "c", CONQUEST, 175 } },
-								["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+								cost = { { "c", CONQUEST, 175 } },
+								timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 							}),
 							i(229389, {	-- Prized Aspirant's Heraldry
-								["cost"] = { { "c", HONOR, 175 } },
-								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+								cost = { { "c", HONOR, 175 } },
+								timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(229388, {	-- Prized Combatant's Heraldry
-								["cost"] = { { "c", HONOR, 350 } },
-								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+								cost = { { "c", HONOR, 350 } },
+								timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(229390, {	-- Prized Gladiator's Heraldry
-								["cost"] = { { "c", CONQUEST, 175 } },
-								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+								cost = { { "c", CONQUEST, 175 } },
+								timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(215236, {	-- Vicious Bloodstone
-								["cost"] = { { "c", HONOR, 2500 } },
+								cost = { { "c", HONOR, 2500 } },
 							}),
 						}),
 					}),
 				}),
 				n(219212, {	-- Maara <War Mode Supplies>
-					["coord"] = { 60.3, 70.0, DORNOGAL },
-					["groups"] = {
+					coord = { 60.3, 70.0, DORNOGAL },
+					groups = {
 						filter(MISC, sharedData({
-							["cost"] = { { "c", HONOR, 500 } },
+							cost = { { "c", HONOR, 500 } },
 						}, {
 							i(224044),	-- Devouring Residue
 							i(224048),	-- Electric Shock
@@ -246,17 +246,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					},
 				}),
 				n(219217, {	-- Velerd <Honor Quartermaster>
-					["coord"] = { 55.0, 76.5, DORNOGAL },
-					["groups"] = {
+					coord = { 55.0, 76.5, DORNOGAL },
+					groups = {
 						i(225739, {	-- Algari Distinguishment
-							["cost"] = { { "c", HONOR, 2000 } },
-							["groups"] = {
+							cost = { { "c", HONOR, 2000 } },
+							groups = {
 								i(137642),	-- Mark of Honor
 							},
 						}),
 						i(224556, {	-- Glorious Contender's Strongbox
-							["cost"] = { { "c", HONOR, 3500 } },
-							["sym"] = {
+							cost = { { "c", HONOR, 3500 } },
+							sym = {
 								{"select","npcID",219215},{"pop"},	-- select Hotharn <Competitor's Recipes>
 								{"find","filterID",RECIPES},{"pop"},	-- return recipes
 							},

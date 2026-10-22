@@ -2,34 +2,34 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 	inst(707, {	-- Vault of the Wardens
-		["coord"] = { 48.0, 82.1, AZSUNA },
-		["maps"] = { 710, 711, 712 },
-		["groups"] = {
+		coord = { 48.0, 82.1, AZSUNA },
+		maps = { 710, 711, 712 },
+		groups = {
 			n(QUESTS, {
 				q(44486, {	-- Fel-Ravaged Tome
-					["provider"] = { "o", 258979 },	-- Fel-Ravaged Tome
-					["qi"] = 141360,	-- Fel-Ravaged Tome (QI!)
-					["groups"] = {
+					provider = { "o", 258979 },	-- Fel-Ravaged Tome
+					qi = 141360,	-- Fel-Ravaged Tome (QI!)
+					groups = {
 						crit(33146, {	-- Fel-Ravaged Tome
-							["achievementID"] = 11240,	-- Harbinger
+							achievementID = 11240,	-- Harbinger
 						}),
 					},
 				}),
 			}),
 			n(WORLD_QUESTS, {
 				q(42924, {	-- Vault of the Wardens: A Grim Matter
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(42926, {	-- Vault of the Wardens: How'd He Get Up There?
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(42922, {	-- Vault of the Wardens: Startup Sequence
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
@@ -117,8 +117,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				})),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["lvl"] = 110,
-				["groups"] = {
+				lvl = 110,
+				groups = {
 					cr(95885, e(1467, {	-- Tirathon Saltheril
 						i(134369),	-- Felbat Leather Boots
 						i(137509),	-- Glaivemaster's Studded Grips
@@ -188,13 +188,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				["ItemAppearanceModifierID"] = 0,
-				["lvl"] = 110,
-				["groups"] = {
+				ItemAppearanceModifierID = 0,
+				lvl = 110,
+				groups = {
 					n(ACHIEVEMENTS, {
 						ach(10707, {	-- A Specter, Illuminated
-							["description"] = "After killing |cFFFFD700Cordana Felsong|r, take Elune's Light to the hallway connecting |cFFFFD700Glazer|r and |cFFFFD700Ash'golm|r and follow the spirit until it reaches the end of the hall. Kill the spectre that spawns, then repeat the process 2 more times.",
-							["crs"] = { 108996 },	-- Specter of Vengeance
+							description = "After killing |cFFFFD700Cordana Felsong|r, take Elune's Light to the hallway connecting |cFFFFD700Glazer|r and |cFFFFD700Ash'golm|r and follow the spirit until it reaches the end of the hall. Kill the spectre that spawns, then repeat the process 2 more times.",
+							crs = { 108996 },	-- Specter of Vengeance
 						}),
 					}),
 					cr(95885, e(1467, {	-- Tirathon Saltheril
@@ -222,7 +222,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					})),
 					cr(95886, e(1468, {	-- Ash'golm
 						ach(10679, {	-- I Ain't Even Cold
-							["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_11_2_5 },
+							timeline = { ADDED_7_0_3_LAUNCH, REMOVED_11_2_5 },
 						}),
 						i(137510),	-- Charskin Mantle
 						i(137526),	-- Crown of Ash

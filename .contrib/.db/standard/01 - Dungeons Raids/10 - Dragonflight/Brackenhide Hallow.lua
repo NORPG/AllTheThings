@@ -2,14 +2,14 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	inst(1196, {	-- Brackenhide Hollow
-		["coord"] = { 11.6, 48.8, THE_AZURE_SPAN },
-		["maps"] = {
+		coord = { 11.6, 48.8, THE_AZURE_SPAN },
+		maps = {
 			2096,	-- Brackenhide Hollow
 			2106,	-- Den of Decay
 		},
-		["groups"] = {
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(16762, {	-- The Vegetarian Diet
 					i(200631),	-- Happy Tuskarr Palooza (TOY!)
@@ -17,10 +17,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			n(QUESTS, {
 				q(66211, {	-- Brackenhide Hollow: To the Source
-					["sourceQuests"] = { 65849 },	-- To Iskaara
-					["provider"] = { "n", 186480 },	-- Brena
-					["coord"] = { 13.2, 49.6, THE_AZURE_SPAN },
-					["groups"] = {
+					sourceQuests = { 65849 },	-- To Iskaara
+					provider = { "n", 186480 },	-- Brena
+					coord = { 13.2, 49.6, THE_AZURE_SPAN },
+					groups = {
 						i(193661),	-- Blightweaver's Clutches
 						i(193671),	-- Bloodied Wedding Ring
 						i(193666),	-- Tuskarr Bone Necklace
@@ -29,12 +29,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2471, {	-- Hackclaw's War-Band
-					["crs"] = {
+					crs = {
 						186124,	-- Gashtooth
 						186122,	-- Rira Hackclaw
 						186125,	-- Tricktotem
 					},
-					["groups"] = {
+					groups = {
 						i(193674),	-- Ancestral Stone Shaper
 						i(193671),	-- Bloodied Wedding Ring
 						i(193672),	-- Frenzying Signoll Flare
@@ -43,8 +43,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2473, {	-- Treemouth
-					["crs"] = { 186120 },	-- Treemouth
-					["groups"] = {
+					crs = { 186120 },	-- Treemouth
+					groups = {
 						i(193654),	-- Ancient Rot Walkers
 						i(193657),	-- Binders of the Moldering
 						i(193658),	-- Crushing Bough of Deterioration
@@ -55,8 +55,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2472, {	-- Gutshot
-					["crs"] = { 186116 },	-- Gutshot
-					["groups"] = {
+					crs = { 186116 },	-- Gutshot
+					groups = {
 						i(193667),	-- Boastful Stalker's Epaulets
 						i(193793),	-- Ferocious Hyena Hidebinders
 						i(193670),	-- Gutshot's Trophy Hunter
@@ -65,8 +65,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				e(2474, {	-- Decatriarch Wratheye
-					["crs"] = { 186121 },	-- Decatriarch Wratheye
-					["groups"] = {
+					crs = { 186121 },	-- Decatriarch Wratheye
+					groups = {
 						ach(16255),	-- Brackenhide Hollow
 						i(193661),	-- Blight Weaver's Clutches
 						i(193665),	-- Decatriarch's Bone Pestle
@@ -81,8 +81,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2474, {	-- Decatriarch Wratheye
-					["crs"] = { 186121 },	-- Decatriarch Wratheye
-					["groups"] = {
+					crs = { 186121 },	-- Decatriarch Wratheye
+					groups = {
 						ach(16256),	-- Heroic: Brackenhide Hollow
 					},
 				}),
@@ -92,24 +92,24 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					ach(16110),	-- Subscribed to Hyena Facts
 				}),
 				e(2471, {	-- Hackclaw's War-Band
-					["crs"] = {
+					crs = {
 						186124,	-- Gashtooth
 						186122,	-- Rira Hackclaw
 						186125,	-- Tricktotem
 					},
-					["groups"] = {
+					groups = {
 						ach(16296),	-- Growlbossify
 					},
 				}),
 				e(2473, {	-- Treemouth
-					["crs"] = { 186120 },	-- Treemouth
-					["groups"] = {
+					crs = { 186120 },	-- Treemouth
+					groups = {
 						ach(16430),	-- All Bark, All Bite
 					},
 				}),
 				e(2474, {	-- Decatriarch Wratheye
-					["crs"] = { 186121 },	-- Decatriarch Wratheye
-					["groups"] = {
+					crs = { 186121 },	-- Decatriarch Wratheye
+					groups = {
 						ach(16257),	-- Mythic: Brackenhide Hollow
 						ach(17097),	-- Mythic: Brackenhide Hollow Guild Run
 						ach(16404),	-- So You Can Kill This in a Way That Matters...

@@ -1437,7 +1437,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 			-- 8.0.1.25976
 			ach(12472),	-- <Hidden> Zandalar Intro Breadcrumb Launch
 			-- 8.0.1.26287
@@ -1552,7 +1552,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {
 			-- 8.1.0.27934
 			ach(13172),	-- 8.0.1 Micro Hubs - A - Mistvine Ledge - Unlocked (KMS)
 			ach(13173),	-- 8.0.1 Micro Hubs - A - Mugamba Overlook - Unlocked (KMS)
@@ -1634,7 +1634,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
+		expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {
 			-- 8.1.5.28938
 			ach(13156),	-- Allied Races: Zandalari Troll (Hidden Character Achievement)
 			ach(13157),	-- Allied Races: Kul Tiran (Hidden Character Achievement)
@@ -1667,7 +1667,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
+		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {
 			-- 8.2.0.30080
 			ach(13544),	-- Essential Empowerment
 			ach(13552),	-- 8.2 BfA - PATCH Quest Launch
@@ -1748,7 +1748,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 8.3.0
-		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {
+		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ timeline = { ADDED_8_3_0 } }, {
 			-- 8.3.0.32044
 			ach(13207),	-- Allied Races: Vulpera (Hidden Character Achievement)
 			ach(13933),	-- Vicious Saddle (21)
@@ -1835,7 +1835,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 8.3.7
-		expansion(EXPANSION.BFA, patch(3,7), bubbleDownSelf({ ["timeline"] = { ADDED_8_3_7 } }, {
+		expansion(EXPANSION.BFA, patch(3,7), bubbleDownSelf({ timeline = { ADDED_8_3_7 } }, {
 			-- 8.3.7.34872
 			ach(14207),	-- Il'gynoth, Corruption Reborn (Raid Finder Ny'alotha, the Waking City)
 			ach(14208),	-- Il'gynoth, Corruption Reborn (Normal Ny'alotha, the Waking City)
@@ -1874,7 +1874,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { ADDED_9_0_1 } }, {
 			ach(14340),	-- The Path Towards Ascension 1
 			ach(14342),	-- The Path Towards Ascension 3
 			ach(14343),	-- The Path Towards Ascension 5
@@ -2016,7 +2016,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.0.2
-		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2 } }, {
+		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ timeline = { ADDED_9_0_2 } }, {
 			-- 9.0.2.35854
 			ach(14807),	-- <Hidden> Completed Shadowlands Story (DNT) <Account>
 			ach(14811),	-- <Hidden> Shadowlands Alt - Launch Chromie if Shadowlands in Progress (DNT)
@@ -2063,7 +2063,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.0.5
-		expansion(EXPANSION.SL, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5 } }, {
+		expansion(EXPANSION.SL, patch(0,5), bubbleDownSelf({ timeline = { ADDED_9_0_5 } }, {
 			ach(14933),	-- 9.0 - Covenant - Night Fae - Small Shape Selected
 			--
 			ach(15010),	-- Maw Tracking - Vendor - Items Unlocked - Apprehensive [DNT]
@@ -2087,7 +2087,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
+		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {
 			ach(14934),	-- 9.1 Campaign - Quest Launch \\ 9.1 Campaign - Patch Quest Launch - Intro (RMV)
 			--
 			ach(14944),	-- Torghast Tracking 9.1 - Layer 9 Unlocked - Account [DNT]
@@ -2164,7 +2164,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.1.5
-		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {
+		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ timeline = { ADDED_9_1_5 } }, {
 			ach(15395),	-- Fae's Giving [DNT]
 			ach(15242),	-- Renowned - Kyrian
 			ach(15243),	-- Renowned - Necrolords
@@ -2184,7 +2184,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
+		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ timeline = { ADDED_9_2_0 } }, {
 			ach(15559),	-- 9.2 ZM - Cypher System - Talent Unlocked - Aealic
 			ach(15560),	-- 9.2 ZM - Cypher System - Talent Unlocked - Dealic
 			ach(15561),	-- 9.2 ZM - Cypher System - Talent Unlocked - Trebalim
@@ -2276,13 +2276,13 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.2.5
-		expansion(EXPANSION.SL, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } }, {
+		expansion(EXPANSION.SL, patch(2,5), bubbleDownSelf({ timeline = { ADDED_9_2_5 } }, {
 			ach(15596),	-- Return to Lordaeron (Hidden Character Achievement)
 		})),
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { ADDED_10_0_0 } }, {
 			ach(15992),	-- <DNT> Dragonscale Expedition Rank 01
 			ach(16022),	-- <DNT> Dragonscale Expedition Rank 02
 			ach(16023),	-- <DNT> Dragonscale Expedition Rank 03
@@ -2539,7 +2539,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.0.2
-		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2 } }, {
+		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ timeline = { ADDED_10_0_2 } }, {
 			-- 10.0.2.45779
 			ach(16703),	-- 10.0 Thal - Raid Intro Quest Launch [DNT]
 			ach(16713),	-- <DNT> Wrathion - 1 - Trusted Champion
@@ -2830,7 +2830,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.0.5
-		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
+		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
 			-- 10.0.5.47871
 			ach(16735),	-- 10.0.5 Trading Post - Tutorial Quest - Objective: Tenders Claimed - JZB <DND>
 			ach(16737),	-- 10.0.5 Trading Post - Tutorial Quest - Completed (Reward for Player) - JZB <DND>
@@ -2845,7 +2845,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.0.7
-		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
 			-- 10.0.7.47910
 			ach(17306),	-- <DNT> Winterpelt Furbolg - 1 - Friendly
 			ach(17307),	-- <DNT> Winterpelt Furbolg - 1 - Honored
@@ -2865,7 +2865,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
 			-- 10.1.0.48480
 			ach(17537),	-- Dragon Chase - WS01
 			ach(17538),	-- Dragon Chase - WS02
@@ -2984,7 +2984,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
 			-- 10.1.5.49516
 			ach(17732),	-- <Hidden>10.1.5 Chromie Time - Hit 60 While In Chromie Time (copy) (copy)
 			ach(17733),	-- <Hidden> 10.1.5 Chromie Time - Hit 61 While In Chromie Time (copy) (copy)
@@ -3004,7 +3004,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.1.7
-		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			-- 10.1.7.50442
 			ach(18860),	-- <Hidden> ACCOUNT: Renown Campaign Complete - Tyr 3
 			ach(18938),	-- Seeing Red (account)
@@ -3017,7 +3017,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
 			ach(19216),	-- <DNT> Dream Wardens Rank 1 (Account)
 			ach(19217),	-- <DNT> Dream Wardens Rank 2 (Account)
 			ach(19218),	-- <DNT> Dream Wardens Rank 3 (Account)
@@ -3110,14 +3110,14 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ timeline = { ADDED_10_2_5 } }, {
 			ach(19784),	-- Hearthstone Game Wins
 			-- 10.2.5.52968
 			ach(19720),	-- Reclamation of Gilneas (Hidden Character Achievement)
 		})),
 
 		-- 10.2.6
-		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
+		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ timeline = { ADDED_10_2_6 } }, {
 			ach(19579),	-- The Awakened Aspects
 			ach(19577),	-- The Awakened Drake
 			ach(19578),	-- The Awakened Wyrm
@@ -3174,7 +3174,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ timeline = { ADDED_10_2_7 } }, {
 			-- 10.2.7.54171
 			ach(20039),	-- [DNT] Damage - Humanoid
 			ach(20046),	-- [DNT] Damage - Beast
@@ -3205,7 +3205,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { ADDED_11_0_0 } }, {
 			-- 11.0.0.54311
 			ach(19467),	-- 1st level 80 on account (DNT)
 			ach(19469),	-- 2nd level 80 on account (DNT)
@@ -3581,7 +3581,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
 			-- 11.0.2.55399
 			ach(40857),	-- Warbands: Bank Quest Unlock
 			ach(40861),	-- Mislaid Curiosities looted
@@ -3602,20 +3602,20 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {
 			-- 11.0.5.56487
 			ach(40886),	-- <Hidden> Is Dracthyr For Soar Wingman
 		})),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ timeline = { ADDED_11_0_7 } }, {
 			ach(41213),	-- Family Battler of Khaz Algar (copy)
 			ach(41218),	-- <DNT> Plunderstorm Plunder Tracker - V1.5 11.0.7 - Mainline Power
 			ach(40877),	-- <Hidden> RR - 4b
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { ADDED_11_1_0 } }, {
 			ach(40908),	-- Cage of Carnage matches
 			ach(40909),	-- Cage of Carnage victories
 			ach(41102),	-- Excavation Site 9 clears
@@ -3694,7 +3694,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 11.1.5
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { ADDED_11_1_5 } }, {
 			-- 11.1.5.59571
 			ach(41237),	-- Visions - Trait Power 1
 			ach(41238),	-- Visions - Trait Power 2
@@ -3754,16 +3754,16 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(41884),	-- Faceless Mask of Vengeance
 			ach(41885),	-- Faceless Mask of Multitudes
 			ach(41930, {	-- Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)
-				["timeline"] = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
+				timeline = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
 			}),
 			ach(41938, {	-- Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)
-				["timeline"] = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
+				timeline = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
 			}),
 			ach(41946, {	-- Greater Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)
-				["timeline"] = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
+				timeline = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
 			}),
 			ach(41947, {	-- Greater Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)
-				["timeline"] = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
+				timeline = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
 			}),
 			ach(41967),	-- Gift of the Titans Unlocked <Hidden>
 			-- 11.1.5.59651
@@ -3781,7 +3781,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 11.1.7
-		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ timeline = { ADDED_11_1_7 } }, {
 			-- 11.1.7.60520
 			ach(41757),	-- 11.1.5 Mid-Season - Weekly Wrapper - Group Content - Seasonal Raid (YGR)
 			ach(42213),	-- Console Overcharged Purchase 1
@@ -3808,7 +3808,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { ADDED_11_2_0 } }, {
 			-- 11.2.0.61476
 			ach(41633),	-- Plexus Sentinel (Raid Finder Manaforge Omega)
 			ach(41634),	-- Plexus Sentinel (Normal Manaforge Omega)
@@ -3928,7 +3928,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 11.2.5
-		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_5 } }, {
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ timeline = { ADDED_11_2_5 } }, {
 			-- 11.2.5.62554
 			ach(60936),	-- Empowered enemies killed in Heroic World Tier
 			ach(60937),	-- Deaths in Heroic World Tier
@@ -3947,7 +3947,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 11.2.7
-		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
 			-- 11.2.7.63642
 			ach(61023),	-- [DNT] Exalted with a Dracthyr Player Faction
 			ach(61553),	-- Dynamic Flight Power - Second Wind (Granted in Script 101809)
@@ -3960,7 +3960,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,0), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,0), bubbleDownSelf({ timeline = { ADDED_12_0_0 } }, {
 			ach(42322),	-- 1st level 90 on account (DNT)
 			ach(42323),	-- 2nd level 90 on account (DNT)
 			ach(42324),	-- 3rd level 90 on account (DNT)
@@ -4124,7 +4124,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 12.0.1
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 			-- 12.0.1.64889
 			ach(62292),	-- Adventurer Dawncrests earned
 			ach(62293),	-- Veteran Dawncrests earned
@@ -4159,7 +4159,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 12.0.5
-		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_5 } }, {
+		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ timeline = { ADDED_12_0_5 } }, {
 			-- 12.0.5.66330
 			ach(62519),	-- [DNT] Research Sites: Collection - Bear Pet - Tracking
 			ach(62520),	-- [DNT] Research Sites: Collection - Bear Mount - Tracking
@@ -4180,7 +4180,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 12.0.7
-		expansion(EXPANSION.MID, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {
+		expansion(EXPANSION.MID, patch(0,7), bubbleDownSelf({ timeline = { ADDED_12_0_7 } }, {
 			-- 12.0.7.67227
 			ach(62879),	-- [DNT] Moth Hunt - 1 Moths Acquired
 			ach(62857),	-- [DNT] Moth Hunt - 10 Moths Acquired
@@ -4214,7 +4214,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 12.1.0
-		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_12_1_0 } }, {
+		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {
 			-- 12.1.0.68209
 			-- Delves
 			ach(63438),	-- Gnarldor Isle clears
@@ -4272,7 +4272,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 12.1.5
-		expansion(EXPANSION.MID, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_12_1_5 } }, {
+		expansion(EXPANSION.MID, patch(1,5), bubbleDownSelf({ timeline = { ADDED_12_1_5 } }, {
 			-- 12.1.5.69594
 			-- Delves
 			ach(63730),	-- Total Kindo'jan's Labyrinth Chambers completed

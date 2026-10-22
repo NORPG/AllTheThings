@@ -27,16 +27,16 @@ InstanceHelper.BossOnly, InstanceHelper.Difficulty
 -- 	[MPLUS] = { 574410 },	-- Challenger's Cache
 -- }
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 	inst(1315, {	-- Maisara Caverns
-		["coord"] = { 44.0, 39.6, MAP.MIDNIGHT.ZULAMAN },
-		["maps"] = { 2501 },	-- Maisara Caverns
-		["groups"] = {
+		coord = { 44.0, 39.6, MAP.MIDNIGHT.ZULAMAN },
+		maps = { 2501 },	-- Maisara Caverns
+		groups = {
 			n(QUESTS, {
 				q(93575, {	-- Maisara Caverns: Maisara Hungers
-					["sourceQuests"] = { 92084 },	-- Halazzi's Guile
-					["qg"] = 244521,	-- Kul'amara the Fierce <Witherbark Tribe>
-					["coord"] = { 44.1, 34.5, MAP.MIDNIGHT.ZULAMAN },
+					sourceQuests = { 92084 },	-- Halazzi's Guile
+					qg = 244521,	-- Kul'amara the Fierce <Witherbark Tribe>
+					coord = { 44.1, 34.5, MAP.MIDNIGHT.ZULAMAN },
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
@@ -71,16 +71,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
-				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
-				["groups"] = {
+				timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
+				groups = {
 					BossOnly(RAKTUL, {
 						ach(61644),	-- Heroic: Maisara Caverns
 					}),
 				},
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
-				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
-				["groups"] = {
+				timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_1_0, ADDED_12_2_0 },
+				groups = {
 					BossOnly(RAKTUL, {
 						ach(61645),	-- Mythic: Maisara Caverns
 						ach(61616),	-- Mythic: Maisara Caverns Guild Run

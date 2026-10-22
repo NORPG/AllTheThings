@@ -5,27 +5,27 @@
 local WOD_CRAFTED_ITEM = function(id, upgradeItem)
 	return
 	i(id, {	-- Base Item 1/6
-		["bonusID"] = 525,
-		["groups"] = bubbleDown({["cost"] = upgradeItem and { { "i", upgradeItem, 1 } }},{
+		bonusID = 525,
+		groups = bubbleDown({cost = upgradeItem and { { "i", upgradeItem, 1 } }},{
 			i(id, {	-- Upgrade 1 2/6
-				["bonusID"] = 558,
-				["u"] = REMOVED_FROM_GAME,
-				["groups"] = {
+				bonusID = 558,
+				u = REMOVED_FROM_GAME,
+				groups = {
 					i(id, {	-- Upgrade 2 3/6
-						["bonusID"] = 559,
-						["u"] = REMOVED_FROM_GAME,
+						bonusID = 559,
+						u = REMOVED_FROM_GAME,
 					}),
 					i(id, {	-- Upgrade 2 4/6
-						["bonusID"] = 594,
-						["u"] = REMOVED_FROM_GAME,
+						bonusID = 594,
+						u = REMOVED_FROM_GAME,
 					}),
 					i(id, {	-- Upgrade 2 5/6
-						["bonusID"] = 619,
-						["u"] = REMOVED_FROM_GAME,
+						bonusID = 619,
+						u = REMOVED_FROM_GAME,
 					}),
 					i(id, {	-- Upgrade 2 6/6
-						["bonusID"] = 620,
-						["u"] = REMOVED_FROM_GAME,
+						bonusID = 620,
+						u = REMOVED_FROM_GAME,
 					}),
 				},
 			}),
@@ -56,23 +56,23 @@ end
 local WOD_CRAFTED_IDENTICAL_ITEM = function(id, upgradeItem)
 	return
 	i(id, {	-- Base Item 1/6
-		["bonusID"] = 525,
-		["description"] = "The upgraded versions of this Item are *still* not available, but they share the same SourceID as this base Item so they will appear as available in ATT.",
-		["groups"] = bubbleDown({["cost"] = upgradeItem and { { "i", upgradeItem, 1 } },},{
+		bonusID = 525,
+		description = "The upgraded versions of this Item are *still* not available, but they share the same SourceID as this base Item so they will appear as available in ATT.",
+		groups = bubbleDown({cost = upgradeItem and { { "i", upgradeItem, 1 } },},{
 			i(id, {	-- Upgrade 1 2/6
-				["bonusID"] = 558,
-				["groups"] = {
+				bonusID = 558,
+				groups = {
 					i(id, {	-- Upgrade 2 3/6
-						["bonusID"] = 559,
+						bonusID = 559,
 					}),
 					i(id, {	-- Upgrade 2 4/6
-						["bonusID"] = 594,
+						bonusID = 594,
 					}),
 					i(id, {	-- Upgrade 2 5/6
-						["bonusID"] = 619,
+						bonusID = 619,
 					}),
 					i(id, {	-- Upgrade 2 6/6
-						["bonusID"] = 620,
+						bonusID = 620,
 					}),
 				},
 			}),
@@ -89,29 +89,29 @@ end
 local WOD_CRAFTED_ITEM_DF_IMPRESSIVE = function(id, upgradeItem)
 	return
 	i(id, {
-		["bonusID"] = 9145,
-		["cost"] = { { "i", upgradeItem, 1 } },
+		bonusID = 9145,
+		cost = { { "i", upgradeItem, 1 } },
 	});
 end
 
 local WOD_CRAFTED_ITEM_DF_REMARKABLE = function(id, upgradeItem)
 	return
 	i(id, {
-		["bonusID"] = 9146,
-		["cost"] = { { "i", upgradeItem, 1 } },
+		bonusID = 9146,
+		cost = { { "i", upgradeItem, 1 } },
 	});
 end
 
-root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	i(180055, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I
-	i(180057, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II
-	i(180058, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III
-	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
-	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
-	n(DECOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+	i(180055, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I
+	i(180057, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II
+	i(180058, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III
+	i(180059, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV
+	i(180060, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V
+	n(DECOR, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
 		-- #if AFTER 12.0.0
 		o_repeated({	-- Shadowmoon Lumber
-			["maps"] = {
+			maps = {
 				FROSTFIRE_RIDGE,
 				GORGROND,
 				DRAENOR_NAGRAND,
@@ -122,7 +122,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				TANAAN_JUNGLE,
 				WARSPEAR,
 			},
-			["groups"] = {
+			groups = {
 				-- Objects
 				o(628951),	-- [Tanaan Jungle]
 				o(628952),	-- [Ashran/Stormshield/Warspear]
@@ -140,7 +140,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 	})),
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
-			i(116979, {["timeline"] = {ADDED_8_0_1}}),	-- Blackwater Anti-Venom
+			i(116979, {timeline = {ADDED_8_0_1}}),	-- Blackwater Anti-Venom
 			i(109145),	-- Draenic Agility Flask
 			i(109217),	-- Draenic Agility Potion
 			i(109221),	-- Draenic Channeled Mana Potion
@@ -157,16 +157,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(109220),	-- Draenic Versatility Potion
 			i(116271),	-- Draenic Water Breathing Elixir
 			i(118711),	-- Draenic Water Walking Elixir
-			i(116981, {["timeline"] = {ADDED_8_0_1}}),	-- Fire Ammonite Oil
+			i(116981, {timeline = {ADDED_8_0_1}}),	-- Fire Ammonite Oil
 			i(109153),	-- Greater Draenic Agility Flask
 			i(109155),	-- Greater Draenic Intellect Flask
 			i(109160),	-- Greater Draenic Stamina Flask
 			i(109156),	-- Greater Draenic Strength Flask
-			i(109223, {["timeline"] = {ADDED_8_0_1}}),	-- Healing Tonic
+			i(109223, {timeline = {ADDED_8_0_1}}),	-- Healing Tonic
 			i(118704),	-- Pure Rage Potion
 			i(112090),	-- Transmorphic Tincture
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(257044),	-- Orcish Felblood Cauldron (DECOR!)
 			i(244318),	-- Wine Barrel (DECOR!)
 		})),
@@ -176,21 +176,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		filter(REAGENTS, {
 			i(108996),	-- Alchemical Catalyst
 			i(109123),	-- Crescent Oil
-			i(128159, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Elemental Distillate
-			i(113264, {["timeline"] = {ADDED_6_1_0}}),	-- Sorcerous Air
-			i(113263, {["timeline"] = {ADDED_6_1_0}}),	-- Sorcerous Earth
-			i(113261, {["timeline"] = {ADDED_6_1_0}}),	-- Sorcerous Fire
-			i(113262, {["timeline"] = {ADDED_6_1_0}}),	-- Sorcerous Water
-			i(128158, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Wildswater
+			i(128159, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Elemental Distillate
+			i(113264, {timeline = {ADDED_6_1_0}}),	-- Sorcerous Air
+			i(113263, {timeline = {ADDED_6_1_0}}),	-- Sorcerous Earth
+			i(113261, {timeline = {ADDED_6_1_0}}),	-- Sorcerous Fire
+			i(113262, {timeline = {ADDED_6_1_0}}),	-- Sorcerous Water
+			i(128158, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Wildswater
 		}),
 		filter(TRINKET_F, {
 			i(109262),	-- Draenic Philosopher's Stone
-			i(122604, {["timeline"] = {ADDED_6_1_0}}),	-- Stone of Fire
-			i(122602, {["timeline"] = {ADDED_6_1_0}}),	-- Stone of the Earth
-			i(128024, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Stone of the Elements
-			i(122603, {["timeline"] = {ADDED_6_1_0}}),	-- Stone of the Waters
-			i(128023, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Stone of the Wilds
-			i(122601, {["timeline"] = {ADDED_6_1_0}}),	-- Stone of Wind
+			i(122604, {timeline = {ADDED_6_1_0}}),	-- Stone of Fire
+			i(122602, {timeline = {ADDED_6_1_0}}),	-- Stone of the Earth
+			i(128024, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Stone of the Elements
+			i(122603, {timeline = {ADDED_6_1_0}}),	-- Stone of the Waters
+			i(128023, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Stone of the Wilds
+			i(122601, {timeline = {ADDED_6_1_0}}),	-- Stone of Wind
 		}),
 	}),
 	prof(ARCHAEOLOGY, {
@@ -198,14 +198,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		i(108439),	-- Draenor Clan Orator Cane
 		i(109584),	-- Ogre Missive
 		i(87399),	-- Restored Artifact
-		header(HEADERS.Currency, ARCH_CURRENCY_ARAKKOA, sharedData({["cost"]={{"c",ARCH_CURRENCY_ARAKKOA,50}}},{	-- TODO: someone can add different fragment costs within as needed
-			["provider"] = { "o", 234105 },	-- Arakkoa Archaeology Find
-			["maps"] = {
+		header(HEADERS.Currency, ARCH_CURRENCY_ARAKKOA, sharedData({cost={{"c",ARCH_CURRENCY_ARAKKOA,50}}},{	-- TODO: someone can add different fragment costs within as needed
+			provider = { "o", 234105 },	-- Arakkoa Archaeology Find
+			maps = {
 				DRAENOR_SHADOWMOON_VALLEY,
 				SPIRES_OF_ARAK,
 				TALADOR,
 			},
-			["groups"] = {
+			groups = {
 				i(117354),	-- Ancient Nest Guardian (PET!)
 				i(114204),	-- Apexis Crystal
 				i(114205),	-- Apexis Hieroglyph
@@ -220,15 +220,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				i(114202),	-- Talonpriest Mask
 			},
 		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_DRAENORCLANS, sharedData({["cost"]={{"c",ARCH_CURRENCY_DRAENORCLANS,50}}},{	-- TODO: someone can add different fragment costs within as needed
-			["provider"] = { "o", 226521 },	-- Draenor Clans Archaeology Find
-			["maps"] = {
+		header(HEADERS.Currency, ARCH_CURRENCY_DRAENORCLANS, sharedData({cost={{"c",ARCH_CURRENCY_DRAENORCLANS,50}}},{	-- TODO: someone can add different fragment costs within as needed
+			provider = { "o", 226521 },	-- Draenor Clans Archaeology Find
+			maps = {
 				DRAENOR_SHADOWMOON_VALLEY,
 				DRAENOR_NAGRAND,
 				FROSTFIRE_RIDGE,
 				GORGROND,
 			},
-			["groups"] = {
+			groups = {
 				i(114171),	-- Ancestral Talisman
 				i(114163),	-- Barbed Fishing Hook
 				i(114157),	-- Blackrock Razor
@@ -252,16 +252,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				i(114145),	-- Wolfskin Snowshoes
 			},
 		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_OGRE, sharedData({["cost"]={{"c",ARCH_CURRENCY_OGRE,50}}},{	-- TODO: someone can add different fragment costs within as needed
-			["provider"] = { "o", 234106 },	-- Ogre Archaeology Find
-			["maps"] = {
+		header(HEADERS.Currency, ARCH_CURRENCY_OGRE, sharedData({cost={{"c",ARCH_CURRENCY_OGRE,50}}},{	-- TODO: someone can add different fragment costs within as needed
+			provider = { "o", 234106 },	-- Ogre Archaeology Find
+			maps = {
 				DRAENOR_SHADOWMOON_VALLEY,
 				DRAENOR_NAGRAND,
 				GORGROND,
 				SPIRES_OF_ARAK,
 				TALADOR,
 			},
-			["groups"] = {
+			groups = {
 				i(114191),	-- Eye of Har'gunn the Blind
 				i(114189),	-- Gladiator's Shield
 				i(114194),	-- Imperial Decree Stele
@@ -321,31 +321,31 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		filter(BATTLE_PETS, {
 			i(119328),	-- Soul of the Forge (PET!)
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(245436),	-- Blackrock Weapon Rack (DECOR!)
 			i(245600),	-- Frostwall Forge (DECOR!)
 		})),
 		filter(MISC, {
-			i(202210, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Truesteel Essence
-			i(202208, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Steelforged Essence
-			i(127713, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Steelforged Essence
-			i(127714, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Truesteel Essence
-			i(202211, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Truesteel Essence
-			i(202209, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Steelforged Essence
-			i(127731, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Steelforged Essence
-			i(127732, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Truesteel Essence
+			i(202210, {timeline = {ADDED_10_0_5}}),	-- Impressive Truesteel Essence
+			i(202208, {timeline = {ADDED_10_0_5}}),	-- Impressive Steelforged Essence
+			i(127713, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Steelforged Essence
+			i(127714, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Truesteel Essence
+			i(202211, {timeline = {ADDED_10_0_5}}),	-- Remarkable Truesteel Essence
+			i(202209, {timeline = {ADDED_10_0_5}}),	-- Remarkable Steelforged Essence
+			i(127731, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Steelforged Essence
+			i(127732, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Truesteel Essence
 			i(118720),	-- Secret of Draenor Blacksmithing
-			i(128016, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Steelforged Essence
-			i(128015, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Truesteel Essence
+			i(128016, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Steelforged Essence
+			i(128015, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Truesteel Essence
 			i(116654),	-- Truesteel Grinder
 			i(108257),	-- Truesteel Ingot
 			i(116428),	-- Truesteel Reshaper
-			i(116653, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Greater Steelforged Essence
-			i(116652, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Steelforged Essence
-			i(122538, {["timeline"] = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Steelforged Essence
-			i(116650, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Greater Truesteel Essence
-			i(116649, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Truesteel Essence
-			i(122539, {["timeline"] = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Truesteel Essence
+			i(116653, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Greater Steelforged Essence
+			i(116652, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Steelforged Essence
+			i(122538, {timeline = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Steelforged Essence
+			i(116650, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Greater Truesteel Essence
+			i(116649, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Truesteel Essence
+			i(122539, {timeline = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Truesteel Essence
 		}),
 		n(WEAPONS, {
 			-- #if BEFORE 10.0.5
@@ -383,8 +383,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 	}),
 	prof(COOKING, {
 		n(DISCOVERY, {
-			["description"] = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
-			["groups"] = {
+			description = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
+			groups = {
 				i(110684),	-- Lil' Leftovers (PET!)
 				i(118323),	-- Recipe Idea: Blackrock Barbecue (RECIPE!)
 				i(118311),	-- Recipe Idea: Blackrock Ham (RECIPE!)
@@ -408,38 +408,38 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				i(118322),	-- Recipe Idea: Talador Surf and Turf (RECIPE!)
 			},
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(245428),	-- Hungry Human's Platter (DECOR!)
 		})),
 		i(111449),	-- Blackrock Barbecue
 		i(111433),	-- Blackrock Ham
 		i(111436),	-- Braised Riverbeast
-		i(122348, {["timeline"] = {ADDED_6_1_0}}),	-- Buttered Sturgeon
+		i(122348, {timeline = {ADDED_6_1_0}}),	-- Buttered Sturgeon
 		i(111453),	-- Calamari Crepes
 		i(111438),	-- Clefthoof Sausages
 		i(111444),	-- Fat Sleeper Cakes
 		i(111457),	-- Feast of Blood
 		i(111458),	-- Feast of the Waters
-		i(128498, {["timeline"] = {ADDED_6_2_0}}),	-- Fel Eggs and Ham
+		i(128498, {timeline = {ADDED_6_2_0}}),	-- Fel Eggs and Ham
 		i(111445),	-- Fiery Calamari
 		i(111450),	-- Frosty Stew
 		i(111454),	-- Gorgrond Chowder
 		i(111441),	-- Grilled Gulper
 		i(111456),	-- Grilled Saberfish
 		i(111431),	-- Hearty Elekk Steak
-		i(122346, {["timeline"] = {ADDED_6_1_0}}),	-- Jumbo Sea Dog
+		i(122346, {timeline = {ADDED_6_1_0}}),	-- Jumbo Sea Dog
 		i(111434),	-- Pan-Seared Talbuk
-		i(122345, {["timeline"] = {ADDED_6_1_0}}),	-- Pickled Eel
+		i(122345, {timeline = {ADDED_6_1_0}}),	-- Pickled Eel
 		i(111437),	-- Rylak Crepes
 		i(111455),	-- Saberfish Broth
-		i(122344, {["timeline"] = {ADDED_6_1_0}}),	-- Salty Squid Roll
+		i(122344, {timeline = {ADDED_6_1_0}}),	-- Salty Squid Roll
 		i(111446),	-- Skulker Chowder
 		i(111452),	-- Sleeper Surprise
-		i(122343, {["timeline"] = {ADDED_6_1_0}}),	-- Sleeper Sushi
+		i(122343, {timeline = {ADDED_6_1_0}}),	-- Sleeper Sushi
 		i(111439),	-- Steamed Scorpion
 		i(111442),	-- Sturgeon Stew
 		i(111447),	-- Talador Surf and Turf
-		i(122347, {["timeline"] = {ADDED_6_1_0}}),	-- Whiptail Fillet
+		i(122347, {timeline = {ADDED_6_1_0}}),	-- Whiptail Fillet
 	}),
 	prof(ENCHANTING, {
 		header(HEADERS.Spell, 13262, {	-- Disenchant
@@ -453,39 +453,39 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(110631),	-- Enchant Cloak - Breath of Critical Strike
 			i(110632),	-- Enchant Cloak - Breath of Haste
 			i(110633),	-- Enchant Cloak - Breath of Mastery
-			i(110634, {["timeline"]={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Cloak - Breath of Multistrike
+			i(110634, {timeline={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Cloak - Breath of Multistrike
 			i(110635),	-- Enchant Cloak - Breath of Versatility
 			i(110652),	-- Enchant Cloak - Gift of Critical Strike
 			i(110653),	-- Enchant Cloak - Gift of Haste
 			i(110654),	-- Enchant Cloak - Gift of Mastery
-			i(110655, {["timeline"]={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Cloak - Gift of Multistrike
+			i(110655, {timeline={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Cloak - Gift of Multistrike
 			i(110656),	-- Enchant Cloak - Gift of Versatility
 			i(110624),	-- Enchant Neck - Breath of Critical Strike
 			i(110625),	-- Enchant Neck - Breath of Haste
 			i(110626),	-- Enchant Neck - Breath of Mastery
-			i(110627, {["timeline"]={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Neck - Breath of Multistrike
+			i(110627, {timeline={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Neck - Breath of Multistrike
 			i(110628),	-- Enchant Neck - Breath of Versatility
 			i(110645),	-- Enchant Neck - Gift of Critical Strike
 			i(110646),	-- Enchant Neck - Gift of Haste
 			i(110647),	-- Enchant Neck - Gift of Mastery
-			i(110648, {["timeline"]={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Neck - Gift of Multistrike
+			i(110648, {timeline={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Neck - Gift of Multistrike
 			i(110649),	-- Enchant Neck - Gift of Versatility
 			i(110617),	-- Enchant Ring - Breath of Critical Strike
 			i(110618),	-- Enchant Ring - Breath of Haste
 			i(110619),	-- Enchant Ring - Breath of Mastery
-			i(110620, {["timeline"]={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Ring - Breath of Multistrike
+			i(110620, {timeline={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Ring - Breath of Multistrike
 			i(110621),	-- Enchant Ring - Breath of Versatility
 			i(110638),	-- Enchant Ring - Gift of Critical Strike
 			i(110639),	-- Enchant Ring - Gift of Haste
 			i(110640),	-- Enchant Ring - Gift of Mastery
-			i(110641, {["timeline"]={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Ring - Gift of Multistrike
+			i(110641, {timeline={ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Enchant Ring - Gift of Multistrike
 			i(110642),	-- Enchant Ring - Gift of Versatility
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(245601),	-- Ancestral Signal Brazier (DECOR!)
 			i(251655),	-- Draenethyst String Lights (DECOR!)
 		})),
-		filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+		filter(ILLUSIONS, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
 			i(138795, {	-- Tome of Illusions: Draenor
 				ill(5334),	-- Mark of the Frostwolf (ILLUSION!)
 				ill(5330),	-- Mark of the Thunderlord (ILLUSION!)
@@ -525,39 +525,39 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(111402),	-- Mechanical Axebeak (PET!)
 			i(118741),	-- Mechanical Scorpid (PET!)
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(251482),	-- Draenei Stargazer's Telescope (DECOR!)
 			i(244314),	-- Frostwall Architect's Table (DECOR!)
 		})),
 		filter(MISC, {
-			i(127719, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Advanced Muzzlesprocket
+			i(127719, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Advanced Muzzlesprocket
 			i(171072),	-- Alliance Firework
-			i(127720, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Bi-Directional Fizzle Reducer
+			i(127720, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Bi-Directional Fizzle Reducer
 			i(114056),	-- Didi's Delicate Assembly
 			i(109076),	-- Goblin Glider Kit
 			i(116148),	-- Horde Firework
-			i(202212, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Linkgrease Locksprocket
-			i(202214, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive True Iron Trigger
-			i(127738, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Infrablue-Blocker Lenses
-			i(128011, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Linkgrease Locksprocke
+			i(202212, {timeline = {ADDED_10_0_5}}),	-- Impressive Linkgrease Locksprocket
+			i(202214, {timeline = {ADDED_10_0_5}}),	-- Impressive True Iron Trigger
+			i(127738, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Infrablue-Blocker Lenses
+			i(128011, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Linkgrease Locksprocke
 			i(118007),	-- Mecha-Blast Rockett
-			i(202213, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Linkgrease Locksprocket
-			i(202215, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable True Iron Trigger
+			i(202213, {timeline = {ADDED_10_0_5}}),	-- Remarkable Linkgrease Locksprocket
+			i(202215, {timeline = {ADDED_10_0_5}}),	-- Remarkable True Iron Trigger
 			i(119299),	-- Secrets of Draenor Engineering
 			i(118006),	-- Shieldtronic Shield
 			i(116149),	-- Snake Firework
 			i(109184),	-- Stealthman 54
 			i(111820),	-- Swapblaster
-			i(127737, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Taladite Firing Pin
-			i(128017, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- True Iron Trigger
+			i(127737, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Taladite Firing Pin
+			i(128017, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- True Iron Trigger
 			i(109253),	-- Ultimate Gnomish Army Knife [BoE]
 			i(114943),	-- Ultimate Gnomish Army Knife [BoP]
-			i(119823, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Blackrock Rifling
-			i(114050, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Linkgrease Locksprocket
-			i(114055, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Morden's Magnificent Contraption
-			i(122545, {["timeline"] = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Oglethorpe's Octagonal Lenses
-			i(122544, {["timeline"] = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Precision Scope Tuning Kit
-			i(119822, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable True Iron Trigger
+			i(119823, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Blackrock Rifling
+			i(114050, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Linkgrease Locksprocket
+			i(114055, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Morden's Magnificent Contraption
+			i(122545, {timeline = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Oglethorpe's Octagonal Lenses
+			i(122544, {timeline = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Precision Scope Tuning Kit
+			i(119822, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable True Iron Trigger
 		}),
 		filter(REAGENTS, {
 			i(111366),	-- Gearspring Parts
@@ -573,7 +573,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			-- #IF BEFORE 10.0.5
 			WOD_CRAFTED_ITEM(109168, 128017),	-- Shrediron's Shredder + True Iron Trigger
 			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(109168, { ["ItemAppearanceModifierID"] = 0 }),	-- Shrediron's Shredder
+			WOD_CRAFTED_ITEM_DF_BASE(109168, { ItemAppearanceModifierID = 0 }),	-- Shrediron's Shredder
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(109168, 202214),	-- Shrediron's Shredder + Impressive True Iron Trigger
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(109168, 202215),	-- Shrediron's Shredder + Remarkable True Iron Trigger
 			-- #ENDIF
@@ -613,9 +613,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		i(110289),	-- Fat Sleeper Bait
 		i(109139),	-- Fat Sleeper Flesh
 		i(116821),	-- Fat Sleeper Lunker
-		i(127991, {["timeline"] = {ADDED_6_2_0}}),	-- Felmouth Frenzy
-		i(128229, {["timeline"] = {ADDED_6_2_0}}),	-- Felmouth Frenzy Bait
-		i(127994, {["timeline"] = {ADDED_6_2_0}}),	-- Felmouth Frenzy Lunker
+		i(127991, {timeline = {ADDED_6_2_0}}),	-- Felmouth Frenzy
+		i(128229, {timeline = {ADDED_6_2_0}}),	-- Felmouth Frenzy Bait
+		i(127994, {timeline = {ADDED_6_2_0}}),	-- Felmouth Frenzy Lunker
 		i(111666),	-- Fire Ammonite
 		i(110291),	-- Fire Ammonite Bait
 		i(116819),	-- Fire Ammonite Lunker
@@ -638,7 +638,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		i(118565),	-- Savage Piranha
 		i(111665),	-- Sea Scorpion
 		i(110292),	-- Sea Scorpion Bait
-		i(122696, {["timeline"] = {ADDED_6_1_0}}),	-- Sea Scorpion Lunker
+		i(122696, {timeline = {ADDED_6_1_0}}),	-- Sea Scorpion Lunker
 		i(109142),	-- Sea Scorpion Segment
 		i(111659),	-- Small Abyssal Gulper Eel
 		i(111662),	-- Small Blackwater Whiptail
@@ -652,15 +652,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		i(118391),	-- Worm Supreme
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "Can be fished from schools.",
+				description = "Can be fished from schools.",
 			}),
 		}),
 	}),
 	prof(HERBALISM, {
 		filter(BATTLE_PETS, {
 			i(118595, {	-- Nightshade Sproutling (PET!)
-				["crs"] = { 95132 },	-- Disturbed Podling
-				["requireSkill"] = HERBALISM
+				crs = { 95132 },	-- Disturbed Podling
+				requireSkill = HERBALISM
 			}),
 		}),
 		header(HEADERS.Spell, 2366, {	-- Herb Gathering
@@ -703,7 +703,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(118601),	-- Ocean Tarot
 			i(118603),	-- Savage Tarot
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(245534),	-- Frostwall Elevated Brazier (DECOR!)
 			i(244317),	-- Orcish Banded Barrel (DECOR!)
 			i(244313),	-- Orcish Fence (DECOR!)
@@ -715,32 +715,32 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		}),
 		filter(HELD_IN_OFF_HAND, {
 			i(113270, {	-- Shadowtome
-				["timeline"] = { CREATED_9_0_1 },
-				["bonusID"] = 585,
+				timeline = { CREATED_9_0_1 },
+				bonusID = 585,
 			}),
 			-- #IF BEFORE 10.0.5
 			WOD_CRAFTED_ITEM(113270),	-- Shadowtome
 			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(113270, { ["ItemAppearanceModifierID"] = 0 }),	-- Shadowtome
+			WOD_CRAFTED_ITEM_DF_BASE(113270, { ItemAppearanceModifierID = 0 }),	-- Shadowtome
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(113270, 202220),	-- Shadowtome + Impressive Weapon Crystal
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(113270, 202221),	-- Shadowtome + Remarkable Weapon Crystal
 			-- #ENDIF
 		}),
 		filter(STAVES, {
 			i(113134, {	-- Crystalfire Spellstaff
-				["timeline"] = { CREATED_9_0_1 },
-				["bonusID"] = 585,
+				timeline = { CREATED_9_0_1 },
+				bonusID = 585,
 			}),
 			i(111526, {	-- Etched-Blade Warstaff
-				["timeline"] = { CREATED_9_0_1 },
-				["bonusID"] = 585,
+				timeline = { CREATED_9_0_1 },
+				bonusID = 585,
 			}),
 			-- #IF BEFORE 10.0.5
 			WOD_CRAFTED_ITEM(113134),	-- Crystalfire Spellstaff
 			WOD_CRAFTED_ITEM(111526),	-- Etched-Blade Warstaff
 			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(113134, { ["ItemAppearanceModifierID"] = 0 }),	-- Crystalfire Spellstaff
-			WOD_CRAFTED_ITEM_DF_BASE(111526, { ["ItemAppearanceModifierID"] = 0 }),	-- Etched-Blade Warstaff
+			WOD_CRAFTED_ITEM_DF_BASE(113134, { ItemAppearanceModifierID = 0 }),	-- Crystalfire Spellstaff
+			WOD_CRAFTED_ITEM_DF_BASE(111526, { ItemAppearanceModifierID = 0 }),	-- Etched-Blade Warstaff
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(113134, 202220),	-- Crystalfire Spellstaff+ Impressive Weapon Crystal
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(111526, 202220),	-- Etched-Blade Warstaff + Impressive Weapon Crystal
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(113134, 202221),	-- Crystalfire Spellstaff + Remarkable Weapon Crystal
@@ -749,13 +749,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		}),
 		filter(WANDS, {
 			i(113131, {	-- Warmaster's Firestick
-				["timeline"] = { CREATED_9_0_1 },
-				["bonusID"] = 585,
+				timeline = { CREATED_9_0_1 },
+				bonusID = 585,
 			}),
 			-- #IF BEFORE 10.0.5
 			WOD_CRAFTED_ITEM(113131),	-- Warmaster's Firestick
 			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(113131, { ["ItemAppearanceModifierID"] = 0 }),	-- Warmaster's Firestick
+			WOD_CRAFTED_ITEM_DF_BASE(113131, { ItemAppearanceModifierID = 0 }),	-- Warmaster's Firestick
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(113131, 202220),	-- Warmaster's Firestick + Impressive Weapon Crystal
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(113131, 202221),	-- Warmaster's Firestick + Remarkable Weapon Crystal
 			-- #ENDIF
@@ -767,8 +767,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				-- learned:
 				-- glyph of the geist
 			}),
-			i(202220, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Weapon Crystal
-			i(202221, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Weapon Crystal
+			i(202220, {timeline = {ADDED_10_0_5}}),	-- Impressive Weapon Crystal
+			i(202221, {timeline = {ADDED_10_0_5}}),	-- Remarkable Weapon Crystal
 		}),
 	}),
 	prof(JEWELCRAFTING, {
@@ -783,7 +783,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(115989),					-- Whispering Iron Band
 			WOD_CRAFTED_ITEM(115798),	-- Whispering Taladite Ring
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(251550),	-- Draenethyst Sconce (DECOR!)
 			i(251495),	-- Draenic Basin (DECOR!)
 		})),
@@ -792,32 +792,32 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(115809),	-- Greater Critical Strike Taladite
 			i(115811),	-- Greater Haste Taladite
 			i(115812),	-- Greater Mastery Taladite
-			i(115813, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Greater Multistrike Taladite
+			i(115813, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Greater Multistrike Taladite
 			i(115815),	-- Greater Stamina Taladite
 			i(115814),	-- Greater Versatility Taladite
 			i(115804),	-- Haste Taladite
-			i(127760, {["timeline"] = {ADDED_6_2_0}}),	-- Immaculate Critical Strike Taladite
-			i(127761, {["timeline"] = {ADDED_6_2_0}}),	-- Immaculate Haste Taladite
-			i(127762, {["timeline"] = {ADDED_6_2_0}}),	-- Immaculate Mastery Taladite
-			i(127763, {["timeline"] = {ADDED_6_2_0, REMOVED_7_0_3}}),	-- Immaculate Multistrike Taladite
-			i(127765, {["timeline"] = {ADDED_6_2_0}}),	-- Immaculate Stamina Taladite
-			i(127764, {["timeline"] = {ADDED_6_2_0}}),	-- Immaculate Versatility Taladite
+			i(127760, {timeline = {ADDED_6_2_0}}),	-- Immaculate Critical Strike Taladite
+			i(127761, {timeline = {ADDED_6_2_0}}),	-- Immaculate Haste Taladite
+			i(127762, {timeline = {ADDED_6_2_0}}),	-- Immaculate Mastery Taladite
+			i(127763, {timeline = {ADDED_6_2_0, REMOVED_7_0_3}}),	-- Immaculate Multistrike Taladite
+			i(127765, {timeline = {ADDED_6_2_0}}),	-- Immaculate Stamina Taladite
+			i(127764, {timeline = {ADDED_6_2_0}}),	-- Immaculate Versatility Taladite
 			i(115805),	-- Mastery Taladite
-			i(115806, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Multistrike Taladite
+			i(115806, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_7_0_3}}),	-- Multistrike Taladite
 			i(115808),	-- Stamina Taladite
 			i(115807),	-- Versatility Taladite
 		}),
 		filter(MISC, {
-			i(127716, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Taladite Amplifier
+			i(127716, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Taladite Amplifier
 			i(112498),	-- Prismatic Focusing Lens
 			i(112384),	-- Reflecting Prism
-			i(127734, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Taladite Amplifier
+			i(127734, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Taladite Amplifier
 			i(118723),	-- Secret of Draenor Jewelcrafting
-			i(128013, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Taladite Amplifier
+			i(128013, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Taladite Amplifier
 			i(115526),	-- Taladite Recrystalizer
-			i(115529, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Greater Taladite Amplifier
-			i(122541, {["timeline"] = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Taladite Amplifier
-			i(115527, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Taladite Amplifier
+			i(115529, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Greater Taladite Amplifier
+			i(122541, {timeline = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Taladite Amplifier
+			i(115527, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Taladite Amplifier
 		}),
 		filter(NECK_F, {
 			i(115990),					-- Glowing Iron Choker
@@ -928,26 +928,26 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				-- #ENDIF
 			}),
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(245432),	-- Blackrock Bunkbed (DECOR!)
 			i(244323),	-- Orcish Sleeping Cot (DECOR!)
 		})),
 		filter(MISC, {
-			i(128014, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Burnished Essence
+			i(128014, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Burnished Essence
 			i(116261),	-- Burnished Inscription Bag
 			i(110611),	-- Burnished Leather
 			i(116259),	-- Burnished Leather Bag
 			i(116260),	-- Burnished Mining Bag
 			i(120257),	-- Drums of Fury
-			i(202216, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Burnished Essence
+			i(202216, {timeline = {ADDED_10_0_5}}),	-- Impressive Burnished Essence
 			i(116170),	-- Leather Refurbishing Kit
-			i(127712, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Burnished Essence
-			i(202217, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Burnished Essence
-			i(127730, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Burnished Essence
+			i(127712, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Burnished Essence
+			i(202217, {timeline = {ADDED_10_0_5}}),	-- Remarkable Burnished Essence
+			i(127730, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Burnished Essence
 			i(118721),	-- Secret of Draenor Leatherworking
-			i(116203, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Burnished Essence
-			i(116204, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Greater Burnished Essence
-			i(122537, {["timeline"] = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Burnished Essence
+			i(116203, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Burnished Essence
+			i(116204, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Greater Burnished Essence
+			i(122537, {timeline = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Burnished Essence
 		}),
 		filter(MOUNTS, {
 			i(108883),	-- Dustmane Direwolf (MOUNT!)
@@ -956,7 +956,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 	prof(MINING, {
 		filter(BATTLE_PETS, {
 			i(118919, {	-- Ore Eater (PET!)
-				["requireSkill"] = MINING,
+				requireSkill = MINING,
 			}),
 		}),
 		header(HEADERS.Spell, 2575, {	-- Mining
@@ -1034,10 +1034,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		filter(BATTLE_PETS, {
 			i(113216),	-- Elekk Plushie (PET!)
 		}),
-		n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(251546),	-- Argussian Circular Rug (DECOR!)
 			i(258303),	-- Beloved Elekk Plushie (DECOR!)
-			i(284238, { ["timeline"] = { ADDED_12_1_5 } }),	-- Beloved Murloc Plushie (DECOR!)
+			i(284238, { timeline = { ADDED_12_1_5 } }),	-- Beloved Murloc Plushie (DECOR!)
 			i(245421),	-- Karabor Bed (DECOR!)
 		})),
 		filter(MISC, {
@@ -1053,14 +1053,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		filter(REAGENTS, {
 			i(111556),	-- Hexweave Cloth
 			i(111557),	-- Sumptuous Fur
-			i(128012, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Hexweave Essence
-			i(202218, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Hexweave Essence
-			i(127715, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Hexweave Essence
-			i(202219, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Hexweave Essence
-			i(127733, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Hexweave Essence
-			i(114838, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Greater Hexweave Essence
-			i(114837, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Hexweave Essence
-			i(122540, {["timeline"] = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Hexweave Essence
+			i(128012, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Hexweave Essence
+			i(202218, {timeline = {ADDED_10_0_5}}),	-- Impressive Hexweave Essence
+			i(127715, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Hexweave Essence
+			i(202219, {timeline = {ADDED_10_0_5}}),	-- Remarkable Hexweave Essence
+			i(127733, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Hexweave Essence
+			i(114838, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Greater Hexweave Essence
+			i(114837, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Hexweave Essence
+			i(122540, {timeline = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Hexweave Essence
 		}),
 	}),
 }))));

@@ -4,7 +4,7 @@
 root(ROOTS.NeverImplemented, n(ARTIFACTS, {
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
 			-- Some of these need to be created using the itemsource shortcut for the correct tooltip.
 			cl(DEMONHUNTER, {
 				cl(DEMONHUNTER, HAVOC, {
@@ -77,30 +77,30 @@ root(ROOTS.NeverImplemented, n(ARTIFACTS, {
 					itemsource(79403),	-- The Silver Hand
 					itemsource(79404),	-- The Silver Hand
 					i(139621),	-- The Watcher's Hammer [Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item]
-					i(128824, {["sourceID"] = 73567 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77195 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77196 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77197 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77198 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77199 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77200 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77201 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77202 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77203 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77204 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77205 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77206 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77207 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77208 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77209 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77210 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77211 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77212 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 77213 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 80692 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 80693 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 80694 }),	-- Tome of the Silver Hand
-					i(128824, {["sourceID"] = 80695 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 73567 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77195 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77196 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77197 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77198 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77199 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77200 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77201 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77202 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77203 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77204 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77205 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77206 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77207 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77208 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77209 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77210 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77211 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77212 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 77213 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 80692 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 80693 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 80694 }),	-- Tome of the Silver Hand
+					i(128824, {sourceID = 80695 }),	-- Tome of the Silver Hand
 				}),
 				cl(PALADIN, PROTECTION, {
 					itemsource(79405),	-- Truthguard
@@ -187,8 +187,8 @@ root(ROOTS.NeverImplemented, n(ARTIFACTS, {
 			}),
 			cl(WARRIOR, {
 				cl(WARRIOR, FURY, {
-					i(134548, {["sourceID"] = 77749}),	-- Helya's Wrath
-					i(134548, {["sourceID"] = 77750}),	-- Helya's Wrath
+					i(134548, {sourceID = 77749}),	-- Helya's Wrath
+					i(134548, {sourceID = 77750}),	-- Helya's Wrath
 					itemsource(77799),	-- Odyn's Fury
 					itemsource(77800),	-- Odyn's Fury
 					itemsource(77801),	-- Odyn's Fury
@@ -215,7 +215,7 @@ root(ROOTS.NeverImplemented, n(ARTIFACTS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.2.5
-		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_5 } }, {
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ timeline = { CREATED_11_2_5 } }, {
 			-- In Legion Remix, Blizzard duplicated all artifact weapons with new itemIDs and sourceIDs.
 			-- None of them (except for the base weapon) are obtainable during the Legion Remix event.
 			-- They need to be created using the itemsource shortcut for the correct tooltip.
@@ -934,30 +934,30 @@ root(ROOTS.NeverImplemented, n(ARTIFACTS, {
 					itemsource(290700),	-- The Silver Hand
 					itemsource(290701),	-- The Silver Hand
 					-- Off Hand
-					i(242572, {["sourceID"] = 290702 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290703 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290704 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290705 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290706 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290707 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290708 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290709 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290710 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290711 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290712 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290713 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290714 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290715 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290716 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290717 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290718 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290719 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290720 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290721 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290722 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290723 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290724 }),	-- Tome of the Silver Hand
-					i(242572, {["sourceID"] = 290725 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290702 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290703 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290704 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290705 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290706 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290707 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290708 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290709 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290710 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290711 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290712 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290713 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290714 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290715 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290716 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290717 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290718 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290719 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290720 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290721 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290722 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290723 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290724 }),	-- Tome of the Silver Hand
+					i(242572, {sourceID = 290725 }),	-- Tome of the Silver Hand
 				}),
 				cl(PALADIN, PROTECTION, {
 					-- Main hand

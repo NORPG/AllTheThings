@@ -5,84 +5,84 @@
 -- TODO: S2 BonusID to say "Elite" instead of "Mythic" (Maybe it's ModID3)
 root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 	n(SEASON_SINISTER, bubbleDownSelf({
-		["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0, ADDED_9_0_2_LAUNCH },
+		timeline = { ADDED_8_1_0, REMOVED_8_2_0, ADDED_9_0_2_LAUNCH },
 	}, {
-		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
+		n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
 			ach(13204),	-- Combatant: Battle for Azeroth Season 2
 			ach(13203),	-- Challenger: Battle for Azeroth Season 2
 			ach(13205),	-- Rival: Battle for Azeroth Season 2
 			ach(13209, {	-- Duelist: Battle for Azeroth Season 2
 				ill(6096),	-- Dreadflame (ILLUSION!)
 				i(165060, {	-- Sinister Gladiator's Cloak [A]
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				i(165059, {	-- Sinister Gladiator's Cloak [H]
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 			}),
 			ach(13451, {	-- Elite: Battle for Azeroth Season 2
 				i(164910, {	-- Sinister Gladiator's Tabard [A]
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				i(164909, {	-- Sinister Gladiator's Tabard [H]
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 			}),
 			ach(13212, {	-- Gladiator: Battle for Azeroth Season 2
 				i(156880),	-- Sinister Gladiator's Proto-Drake (MOUNT!)
 			}),
 			ach(13202, {	-- Sinister Gladiator's Proto-Drake (MOUNT!)
-				["provider"] = { "i", 156880 },	-- Sinister Gladiator's Proto-Drake (MOUNT!)
+				provider = { "i", 156880 },	-- Sinister Gladiator's Proto-Drake (MOUNT!)
 			}),
 			ach(13200, {	-- Sinister Gladiator: Battle for Azeroth Season 2
 				title(80),	-- Sinister Gladiator <Name>
 			}),
 			-- RBG
 			ach(13210, {	-- Hero of the Alliance: Sinister
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(13211, {	-- Hero of the Horde: Sinister
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			-- Fashion
 			ach(13433, {	-- Tall, Dark, and Sinister
-				["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0, ADDED_9_0_2_LAUNCH },
+				timeline = { ADDED_8_1_0, REMOVED_8_2_0, ADDED_9_0_2_LAUNCH },
 			}),
 		})),
-		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
+		filter(MOUNTS, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
 			i(165019, {	-- Vicious Black Warsaber [A] (MOUNT!)
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			i(165020, {	-- Vicious Black Bonesteed [H] (MOUNT!)
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 		})),
 		n(PVP_ASPIRANT, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
-					["coord"] = { 56.4, 25.8, BORALUS },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 56.4, 25.8, BORALUS },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(184672, {	-- Arsenal: Sinister Aspirant's Weapons [A]
-							["cost"] = { { "i", MOH, 80 } },
+							cost = { { "i", MOH, 80 } },
 						}),
 						iensemble(180186, {	-- Ensemble: Sinister Aspirant's Cloth Armor [A]
-							["classes"] = CLOTH_CLASSES,
+							classes = CLOTH_CLASSES,
 						}),
 						iensemble(180188, {	-- Ensemble: Sinister Aspirant's Leather Armor [A]
-							["classes"] = LEATHER_CLASSES,
+							classes = LEATHER_CLASSES,
 						}),
 						iensemble(180190, {	-- Ensemble: Sinister Aspirant's Mail Armor [A]
-							["classes"] = MAIL_CLASSES,
+							classes = MAIL_CLASSES,
 						}),
 						iensemble(180192, {	-- Ensemble: Sinister Aspirant's Plate Armor [A]
-							["classes"] = PLATE_CLASSES,
+							classes = PLATE_CLASSES,
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = ALLIANCE_ONLY }, {
 				filter(BACK_F, {
 					i(165216),	-- Sinister Aspirant's Cape [A]
 					i(165215),	-- Sinister Aspirant's Drape [A]
@@ -144,31 +144,31 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					i(165204),	-- Sinister Aspirant's Warglaive [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
-					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 51.6, 58.2, ZULDAZAR },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(184673, {	-- Arsenal: Sinister Aspirant's Weapons [H]
-							["cost"] = { { "i", MOH, 80 } },
+							cost = { { "i", MOH, 80 } },
 						}),
 						iensemble(180187, {	-- Ensemble: Sinister Aspirant's Cloth Armor [H]
-							["classes"] = CLOTH_CLASSES,
+							classes = CLOTH_CLASSES,
 						}),
 						iensemble(180189, {	-- Ensemble: Sinister Aspirant's Leather Armor [H]
-							["classes"] = LEATHER_CLASSES,
+							classes = LEATHER_CLASSES,
 						}),
 						iensemble(180191, {	-- Ensemble: Sinister Aspirant's Mail Armor [H]
-							["classes"] = MAIL_CLASSES,
+							classes = MAIL_CLASSES,
 						}),
 						iensemble(180193, {	-- Ensemble: Sinister Aspirant's Plate Armor [H]
-							["classes"] = PLATE_CLASSES,
+							classes = PLATE_CLASSES,
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = HORDE_ONLY }, {
 				filter(BACK_F, {
 					i(165212),	-- Sinister Aspirant's Cape [H]
 					i(165211),	-- Sinister Aspirant's Drape [H]
@@ -230,7 +230,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					i(165193),	-- Sinister Aspirant's Warglaive [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
 				filter(FINGER_F, {
 					i(165219),	-- Sinister Aspirant's Band
 					i(165217),	-- Sinister Aspirant's Ring
@@ -244,31 +244,31 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			})),
 		}),
 		n(PVP_GLADIATOR, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
-					["coord"] = { 56.4, 25.8, BORALUS },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 56.4, 25.8, BORALUS },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(184670, {	-- Arsenal: Sinister Gladiator's Weapons [A]
-							["cost"] = { { "i", MOH, 80 } },
+							cost = { { "i", MOH, 80 } },
 						}),
 						iensemble(184427, {	-- Ensemble: Sinister Gladiator's Cloth Armor [A]
-							["classes"] = CLOTH_CLASSES,
+							classes = CLOTH_CLASSES,
 						}),
 						iensemble(184429, {	-- Ensemble: Sinister Gladiator's Leather Armor [A]
-							["classes"] = LEATHER_CLASSES,
+							classes = LEATHER_CLASSES,
 						}),
 						iensemble(184431, {	-- Ensemble: Sinister Gladiator's Mail Armor [A]
-							["classes"] = MAIL_CLASSES,
+							classes = MAIL_CLASSES,
 						}),
 						iensemble(184433, {	-- Ensemble: Sinister Gladiator's Plate Armor [A]
-							["classes"] = PLATE_CLASSES,
+							classes = PLATE_CLASSES,
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = ALLIANCE_ONLY }, {
 				filter(BACK_F, {
 					i(165051),	-- Sinister Gladiator's Cape [A]
 					i(165050),	-- Sinister Gladiator's Drape [A]
@@ -386,31 +386,31 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					i(165039),	-- Sinister Gladiator's Warglaive [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
-					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 51.6, 58.2, ZULDAZAR },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(184671, {	-- Arsenal: Sinister Gladiator's Weapons [H]
-							["cost"] = { { "i", MOH, 80 } },
+							cost = { { "i", MOH, 80 } },
 						}),
 						iensemble(184428, {	-- Ensemble: Sinister Gladiator's Cloth Armor [H]
-							["classes"] = CLOTH_CLASSES,
+							classes = CLOTH_CLASSES,
 						}),
 						iensemble(184430, {	-- Ensemble: Sinister Gladiator's Leather Armor [H]
-							["classes"] = LEATHER_CLASSES,
+							classes = LEATHER_CLASSES,
 						}),
 						iensemble(184432, {	-- Ensemble: Sinister Gladiator's Mail Armor [H]
-							["classes"] = MAIL_CLASSES,
+							classes = MAIL_CLASSES,
 						}),
 						iensemble(184434, {	-- Ensemble: Sinister Gladiator's Plate Armor [H]
-							["classes"] = PLATE_CLASSES,
+							classes = PLATE_CLASSES,
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = HORDE_ONLY }, {
 				filter(BACK_F, {
 					i(165047),	-- Sinister Gladiator's Cape [H]
 					i(165046),	-- Sinister Gladiator's Drape [H]
@@ -528,7 +528,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					i(165028),	-- Sinister Gladiator's Warglaive [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
 				filter(FINGER_F, {
 					i(165053),	-- Sinister Gladiator's Band
 					i(165052),	-- Sinister Gladiator's Ring
@@ -544,8 +544,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				}),
 			})),
 		}),
-		n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 450, ["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY }, {
+		n(PVP_ELITE, bubbleDownSelf({ bonusID = 450, timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 				n(BACK, {
 					i(165051),	-- Sinister Gladiator's Cape [A]
 					i(165050),	-- Sinister Gladiator's Drape [A]
@@ -593,7 +593,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					i(164816),	-- Sinister Gladiator's Plate Warboots [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 				n(BACK, {
 					i(165047),	-- Sinister Gladiator's Cape [H]
 					i(165046),	-- Sinister Gladiator's Drape [H]

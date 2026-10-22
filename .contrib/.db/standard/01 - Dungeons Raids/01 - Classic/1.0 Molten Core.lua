@@ -39,71 +39,71 @@ local TOKENS = {
 
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(741, {	-- Molten Core
-		["lore"] = "The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",
+		lore = "The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",
 		-- #if BEFORE WRATH
-		["zoneTextAreaID"] = 2717,	-- Molten Core
+		zoneTextAreaID = 2717,	-- Molten Core
 		-- #endif
 		-- #if BEFORE 5.4.0
-		["sourceQuest"] = 7848,	-- Attunement to the Core
+		sourceQuest = 7848,	-- Attunement to the Core
 		-- #endif
-		["mapID"] = MOLTEN_CORE,
-		["coord"] = { 54.18, 83.25, BLACKROCK_MOUNTAIN },
-		["sharedLockout"] = 1,
-		["isRaid"] = true,
-		["cr"] = 14387,	-- Lothos Riftwalker
-		["lvl"] = lvlsquish(50, 50, 25),
-		["groups"] = {
+		mapID = MOLTEN_CORE,
+		coord = { 54.18, 83.25, BLACKROCK_MOUNTAIN },
+		sharedLockout = 1,
+		isRaid = true,
+		cr = 14387,	-- Lothos Riftwalker
+		lvl = lvlsquish(50, 50, 25),
+		groups = {
 			header(HEADERS.Item, 17182, {	-- Sulfuras, Hand of Ragnaros
-				["isRaid"] = true,
-				["groups"] = {
+				isRaid = true,
+				groups = {
 					ach(429, {	-- Sulfuras, Hand of Ragnaros
-						["provider"] = { "i",
+						provider = { "i",
 							-- #if SEASON_OF_DISCOVERY
 							227683,	-- Sulfuras, Hand of Ragnaros
 							-- #else
 							17182,	-- Sulfuras, Hand of Ragnaros (Original)
 							-- #endif
 						},
-						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
+						classes = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
 					}),
 					i(17182, {	-- Sulfuras, Hand of Ragnaros
 						-- #if SEASON_OF_DISCOVERY
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 						-- #endif
-						["cost"] = {
+						cost = {
 							{ "i", 17204, 1 },	-- Eye of Sulfuras
 							{ "i", 17193, 1 },	-- Sulfuron Hammer
 						},
-						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
+						classes = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
 					}),
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_FIVE, i(227683, {	-- Sulfuras, Hand of Ragnaros
-						["timeline"] = { ADDED_1_15_4 },
-						["cost"] = {
+						timeline = { ADDED_1_15_4 },
+						cost = {
 							{ "i", 227728, 1 },	-- Eye of Sulfuras
 							{ "i", 227684, 1 },	-- Sulfuron Hammer
 						},
-						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
+						classes = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
 					})),
 					-- #endif
 				},
 			}),
 			-- #if NOT SEASON_OF_DISCOVERY
 			header(HEADERS.Item, 19019, {	-- Thunderfury, Blessed Blade of the Windseeker
-				["isRaid"] = true,
-				["groups"] = {
+				isRaid = true,
+				groups = {
 					applyclassicphase(PHASE_THREE, n(14347, {	-- Highlord Demitrian
-						["coords"] = {
+						coords = {
 							-- #if AFTER LEGION
 							{ 29.6, 10.6, SILITHUS },
 							-- #else
 							{ 21.7, 8.6, SILITHUS },
 							-- #endif
 						},
-						["lvl"] = 60,
-						["groups"] = {
+						lvl = 60,
+						groups = {
 							i(19016, {	-- Vessel of Rebirth
-								["providers"] = {
+								providers = {
 									{ "i", 18563 },	-- Bindings of the Windseeker [Left]
 									{ "i", 18564 },	-- Bindings of the Windseeker [Right]
 								},
@@ -111,9 +111,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE, q(7785, {	-- Examine the Vessel
-						["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
-						["qs"] = 19016,	-- Vessel of Rebirth
-						["coords"] = {
+						description = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
+						qs = 19016,	-- Vessel of Rebirth
+						coords = {
 							-- #if AFTER LEGION
 							{ 29.6, 10.6, SILITHUS },
 							-- #else
@@ -123,15 +123,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #if BEFORE CATA
 						-- Completable by any class in Retail... confirm for Classic
 						-- Crieve NOTE: Even if it were... We don't want to create degenerates.
-						["classes"] = SWORD_CLASSES,
+						classes = SWORD_CLASSES,
 						-- #endif
-						["lvl"] = 60,
+						lvl = 60,
 					})),
 					applyclassicphase(PHASE_THREE, q(7786, {	-- Thunderaan the Windseeker
-						["sourceQuest"] = 7785,	-- Examine the Vessel
-						["altQuests"] = { 7521 },	-- Thunderaan the Windseeker [Original?]
-						["qg"] = 14347,	-- Highlord Demitrian
-						["coords"] = {
+						sourceQuest = 7785,	-- Examine the Vessel
+						altQuests = { 7521 },	-- Thunderaan the Windseeker [Original?]
+						qg = 14347,	-- Highlord Demitrian
+						coords = {
 							-- #if AFTER LEGION
 							{ 29.6, 10.6, SILITHUS },
 							-- #else
@@ -139,7 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							-- #endif
 						},
 						-- #if NOT OBJECTIVES
-						["cost"] = {
+						cost = {
 							{ "i", 17771, 10 },	-- Elementium Bar x10
 							{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 							{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
@@ -148,16 +148,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #if BEFORE CATA
 						-- Completable by any class in Retail... confirm for Classic
 						-- Crieve NOTE: Even if it were... We don't want to create degenerates.
-						["classes"] = SWORD_CLASSES,
+						classes = SWORD_CLASSES,
 						-- #endif
-						["lvl"] = 60,
-						["groups"] = {
+						lvl = 60,
+						groups = {
 							objective(1, {	-- 0/10 Elementium Bar
-								["provider"] = { "i", 17771 },	-- Elementium Bar
+								provider = { "i", 17771 },	-- Elementium Bar
 								-- #if SEASON_OF_DISCOVERY
 								-- #if BEFORE 1.15.4
-								["description"] = "Neither the Elementium Ore nor the recipe for smelting these bars are in the game until BWL... In the meantime, gather the required materials while things are less in demand.",
-								["cost"] = {
+								description = "Neither the Elementium Ore nor the recipe for smelting these bars are in the game until BWL... In the meantime, gather the required materials while things are less in demand.",
+								cost = {
 									{ "i", 18562,  10 },	-- Elementium Ore
 									{ "i", 12360, 100 },	-- Arcanite Bar
 									{ "i", 17010,  10 },	-- Fiery Core
@@ -167,38 +167,38 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								-- #endif
 							}),
 							objective(2, {	-- 0/1 Essence of the Firelord
-								["provider"] = { "i", 19017 },	-- Essence of the Firelord
+								provider = { "i", 19017 },	-- Essence of the Firelord
 							}),
 							objective(3, {	-- 0/1 Bindings of the Windseeker [Left]
-								["provider"] = { "i", 18563 },	-- Bindings of the Windseeker [Left]
+								provider = { "i", 18563 },	-- Bindings of the Windseeker [Left]
 							}),
 							objective(4, {	-- 0/1 Bindings of the Windseeker [Right]
-								["provider"] = { "i", 18564 },	-- Bindings of the Windseeker [Right]
+								provider = { "i", 18564 },	-- Bindings of the Windseeker [Right]
 							}),
 							n(14435, {	-- Prince Thunderaan <The Wind Seeker>
-								["description"] = "This is a 40-man raid boss.",
+								description = "This is a 40-man raid boss.",
 								-- #if BEFORE MOP
-								["modelScale"] = 20,
+								modelScale = 20,
 								-- #endif
-								["groups"] = { i(19018) },	-- Dormant Wind Kissed Blade
+								groups = { i(19018) },	-- Dormant Wind Kissed Blade
 							}),
 						},
 					})),
 					applyclassicphase(PHASE_THREE, q(7787, {	-- Rise, Thunderfury!
-						["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
-						["qg"] = 14347,	-- Highlord Demitrian
-						["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
-						["coord"] = { 21.7, 8.6, SILITHUS },
+						sourceQuest = 7786,	-- Thunderaan the Windseeker
+						qg = 14347,	-- Highlord Demitrian
+						provider = { "i", 19018 },	-- Dormant Wind Kissed Blade
+						coord = { 21.7, 8.6, SILITHUS },
 						-- #if BEFORE CATA
 						-- Completable by any class in Retail... confirm for Classic
 						-- Crieve NOTE: Even if it were... We don't want to create degenerates.
-						["classes"] = SWORD_CLASSES,
+						classes = SWORD_CLASSES,
 						-- #endif
-						["lvl"] = 60,
-						["groups"] = {
+						lvl = 60,
+						groups = {
 							ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
-								["provider"] = { "i", 19019 },	-- Thunderfury, Blessed Blade of the Windseeker
-								["classes"] = SWORD_CLASSES,
+								provider = { "i", 19019 },	-- Thunderfury, Blessed Blade of the Windseeker
+								classes = SWORD_CLASSES,
 							}),
 							i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 						},
@@ -208,43 +208,43 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			n(ACHIEVEMENTS, {
 				achWithRep(955, FACTION_HYDRAXIAN_WATERLORDS, {	-- Hydraxian Waterlords
-					["maps"] = {
+					maps = {
 						AZSHARA,
 						-- #if SEASON_OF_DISCOVERY
 						SEARING_GORGE,
 						-- #endif
 					},
 				}),
-				ach(11741, {["timeline"] = {ADDED_7_2_0}}),	-- So Hot Right Now (Molten Core)
+				ach(11741, {timeline = {ADDED_7_2_0}}),	-- So Hot Right Now (Molten Core)
 			}),
 			n(FACTIONS, {
 				faction(FACTION_HYDRAXIAN_WATERLORDS, {	-- Hydraxian Waterlords
-					["icon"] = 135861,
-					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, AZSHARA },
+					icon = 135861,
+					qg = 13278,	-- Duke Hydraxis
+					coord = { 79.2, 73.6, AZSHARA },
 					-- #if SEASON_OF_DISCOVERY
-					["maps"] = { SEARING_GORGE },
+					maps = { SEARING_GORGE },
 					-- #endif
 				}),
 			}),
 			n(QUESTS, {
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_FOUR, q(84545, bubbleDown({ ["timeline"] = { ADDED_1_15_3 } }, {	-- A Hero's Reward
-					["sourceQuest"] = 6824,	-- Hands of the Enemy
-					["providers"] = {
+				applyclassicphase(SOD_PHASE_FOUR, q(84545, bubbleDown({ timeline = { ADDED_1_15_3 } }, {	-- A Hero's Reward
+					sourceQuest = 6824,	-- Hands of the Enemy
+					providers = {
 						{ "n",  13278 },	-- Duke Hydraxis
 						{ "o", 179551 },	-- Hydraxis' Coffer
 					},
-					["coord"] = { 79.2, 73.6, AZSHARA },
-					["lvl"] = 55,
-					["groups"] = {
+					coord = { 79.2, 73.6, AZSHARA },
+					lvl = 55,
+					groups = {
 						i(227455),	-- Ocean's Breeze
 						i(227454),	-- Tidal Loop
 					},
 				}))),
 				-- #endif
 				q(7486, bubbleDown({	-- A Hero's Reward
-					["timeline"] = {
+					timeline = {
 						-- #if SEASON_OF_DISCOVERY
 						REMOVED_1_15_3,
 						-- #else
@@ -252,42 +252,42 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 				}, {
-					["providers"] = {
+					providers = {
 						{ "n",  13278 },	-- Duke Hydraxis
 						{ "o", 179551 },	-- Hydraxis' Coffer
 					},
-					["sourceQuest"] = 6824,	-- Hands of the Enemy
-					["coord"] = { 79.2, 73.6, AZSHARA },
-					["lvl"] = 55,
-					["groups"] = {
+					sourceQuest = 6824,	-- Hands of the Enemy
+					coord = { 79.2, 73.6, AZSHARA },
+					lvl = 55,
+					groups = {
 						i(18399),	-- Ocean's Breeze
 						i(18398),	-- Tidal Loop
 					},
 				})),
-				q(6823, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Agent of Hydraxis
-					["sourceQuest"] = 6822,	-- The Molten Core
-					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, AZSHARA },
-					["minReputation"] = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
-					["lvl"] = 55,
+				q(6823, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Agent of Hydraxis
+					sourceQuest = 6822,	-- The Molten Core
+					qg = 13278,	-- Duke Hydraxis
+					coord = { 79.2, 73.6, AZSHARA },
+					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
+					lvl = 55,
 				})),
-				q(7633, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- An Introduction
-					["sourceQuest"] = 7632,	-- The Ancient Leaf
-					["qg"] = 14524,	-- Vartrus the Ancient
-					["coord"] = { 47.0, 24.48, FELWOOD },
-					["classes"] = { HUNTER },
-					["lvl"] = 60,
+				q(7633, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- An Introduction
+					sourceQuest = 7632,	-- The Ancient Leaf
+					qg = 14524,	-- Vartrus the Ancient
+					coord = { 47.0, 24.48, FELWOOD },
+					classes = { HUNTER },
+					lvl = 60,
 				})),
 				q(7487, {	-- Attunement to the Core [Old]
-					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
-					["qg"] = 14387,	-- Lothos Riftwaker
-					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN },
-					["timeline"] = { ADDED_1_1_0, REMOVED_1_3_0 },
-					["maps"] = { BLACKROCK_DEPTHS },
-					["lvl"] = 55,
-					["groups"] = {
+					description = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
+					qg = 14387,	-- Lothos Riftwaker
+					coord = { 54.2, 83.3, BLACKROCK_MOUNTAIN },
+					timeline = { ADDED_1_1_0, REMOVED_1_3_0 },
+					maps = { BLACKROCK_DEPTHS },
+					lvl = 55,
+					groups = {
 						objective(1, {	-- 0/1 Core Fragment
-							["providers"] = {
+							providers = {
 								{ "o", 179553 },	-- Core Fragment
 								{ "i",  18412 },	-- Core Fragment
 							},
@@ -295,34 +295,34 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(7848, {	-- Attunement to the Core
-					["description"] =
+					description =
 						-- #if AFTER 5.4.0
 						"This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
 						-- #else
 						"Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
 						-- #endif
-					["qg"] = 14387,	-- Lothos Riftwaker
-					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN_LEVEL3 },
-					["timeline"] = { ADDED_1_3_0 },
-					["maps"] = { BLACKROCK_DEPTHS },
-					["lvl"] = 55,
-					["groups"] = {
+					qg = 14387,	-- Lothos Riftwaker
+					coord = { 54.2, 83.3, BLACKROCK_MOUNTAIN_LEVEL3 },
+					timeline = { ADDED_1_3_0 },
+					maps = { BLACKROCK_DEPTHS },
+					lvl = 55,
+					groups = {
 						objective(1, {	-- 0/1 Core Fragment
-							["providers"] = {
+							providers = {
 								{ "o", 179553 },	-- Core Fragment
 								{ "i",  18412 },	-- Core Fragment
 							},
 						}),
 					},
 				}),
-				q(6821, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Eye of the Emberseer
-					["sourceQuests"] = {
+				q(6821, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Eye of the Emberseer
+					sourceQuests = {
 						6804,	-- Poisoned Water
 						6805,	-- Stormers and Rumblers
 					},
-					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, AZSHARA },
-					["maps"] = {
+					qg = 13278,	-- Duke Hydraxis
+					coord = { 79.2, 73.6, AZSHARA },
+					maps = {
 						BLACKROCK_SPIRE,
 						LBRS_TAZZALOR,
 						LBRS_SKITTERWEB_TUNNELS,
@@ -331,44 +331,44 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
 					},
-					["lvl"] = 55,
-					["groups"] = {
+					lvl = 55,
+					groups = {
 						objective(1, {	-- 0/1 Eye of the Emberseer
-							["provider"] = { "i", 17322 },	-- Eye of the Emberseer
+							provider = { "i", 17322 },	-- Eye of the Emberseer
 						}),
 					},
 				})),
-				q(6824, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Hands of the Enemy
-					["sourceQuest"] = 6823,	-- Agent of Hydraxis
-					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, AZSHARA },
-					["lvl"] = 55,
-					["groups"] = {
+				q(6824, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Hands of the Enemy
+					sourceQuest = 6823,	-- Agent of Hydraxis
+					qg = 13278,	-- Duke Hydraxis
+					coord = { 79.2, 73.6, AZSHARA },
+					lvl = 55,
+					groups = {
 						objective(1, {	-- 0/1 Hand of Shazzrah
-							["provider"] = { "i", 17332 },	-- Hand of Shazzrah
+							provider = { "i", 17332 },	-- Hand of Shazzrah
 						}),
 						objective(2, {	-- 0/1 Hand of Lucifron
-							["provider"] = { "i", 17329 },	-- Hand of Lucifron
+							provider = { "i", 17329 },	-- Hand of Lucifron
 						}),
 						objective(3, {	-- 0/1 Hand of Gehennas
-							["provider"] = { "i", 17331 },	-- Hand of Gehennas
+							provider = { "i", 17331 },	-- Hand of Gehennas
 						}),
 						objective(4, {	-- 0/1 Hand of Sulfuron
-							["provider"] = { "i", 17330 },	-- Hand of Sulfuron
+							provider = { "i", 17330 },	-- Hand of Sulfuron
 						}),
 						ach(2496),	-- The Fifth Element
 					},
 				})),
-				q(6804, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Poisoned Water
-					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, AZSHARA },
-					["maps"] = { EASTERN_PLAGUELANDS },
-					["lvl"] = 55,
-					["groups"] = {
+				q(6804, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Poisoned Water
+					qg = 13278,	-- Duke Hydraxis
+					coord = { 79.2, 73.6, AZSHARA },
+					maps = { EASTERN_PLAGUELANDS },
+					lvl = 55,
+					groups = {
 						objective(1, {	-- 0/12 Discordant Bracers
-							["provider"] = { "i", 17309 },	-- Discordant Bracers
-							["cost"] = { { "i", 17310, 1 } },	-- Aspect of Neptulon
-							["crs"] = {
+							provider = { "i", 17309 },	-- Discordant Bracers
+							cost = { { "i", 17310, 1 } },	-- Aspect of Neptulon
+							crs = {
 								8521,	-- Blighted Horror
 								8519,	-- Blighted Surge
 								8522,	-- Plague Monstrosity
@@ -377,75 +377,75 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				q(6805, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- Stormers and Rumblers
-					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, AZSHARA },
-					["maps"] = { SILITHUS },
-					["lvl"] = 55,
-					["groups"] = {
+				q(6805, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- Stormers and Rumblers
+					qg = 13278,	-- Duke Hydraxis
+					coord = { 79.2, 73.6, AZSHARA },
+					maps = { SILITHUS },
+					lvl = 55,
+					groups = {
 						objective(1, {	-- 0/15 Dust Stormer slain
-							["provider"] = { "n", 11744 },	-- Dust Stormer
+							provider = { "n", 11744 },	-- Dust Stormer
 						}),
 						objective(2, {	-- 0/15 Desert Rumbler slain
-							["provider"] = { "n", 11746 },	-- Desert Rumbler
+							provider = { "n", 11746 },	-- Desert Rumbler
 						}),
 					},
 				})),
-				q(7632, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- The Ancient Leaf
-					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
-					["qg"] = 14524,	-- Vartrus the Ancient
-					["coord"] = { 47.0, 24.48, FELWOOD },
-					["cost"] = { { "i", 18703, 1 } },	-- Ancient Petrified Leaf
-					["classes"] = { HUNTER },
-					["lvl"] = 60,
+				q(7632, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- The Ancient Leaf
+					description = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
+					qg = 14524,	-- Vartrus the Ancient
+					coord = { 47.0, 24.48, FELWOOD },
+					cost = { { "i", 18703, 1 } },	-- Ancient Petrified Leaf
+					classes = { HUNTER },
+					lvl = 60,
 				})),
-				q(6822, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- The Molten Core
-					["sourceQuest"] = 6821,	-- Eye of the Emberseer
-					["qg"] = 13278,	-- Duke Hydraxis
-					["coord"] = { 79.2, 73.6, AZSHARA },
-					["lvl"] = 55,
-					["groups"] = {
+				q(6822, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- The Molten Core
+					sourceQuest = 6821,	-- Eye of the Emberseer
+					qg = 13278,	-- Duke Hydraxis
+					coord = { 79.2, 73.6, AZSHARA },
+					lvl = 55,
+					groups = {
 						objective(1, {	-- 0/1 Molten Giant slain
-							["provider"] = { "n", 11658 },	-- Molten Giant
+							provider = { "n", 11658 },	-- Molten Giant
 						}),
 						objective(2, {	-- 0/1 Firelord slain
-							["provider"] = { "n", 11668 },	-- Firelord
+							provider = { "n", 11668 },	-- Firelord
 						}),
 						objective(3, {	-- 0/1 Ancient Core Hound slain
-							["provider"] = { "n", 11673 },	-- Ancient Core Hound
+							provider = { "n", 11673 },	-- Ancient Core Hound
 						}),
 						objective(4, {	-- 0/1 Lava Surger slain
-							["provider"] = { "n", 12101 },	-- Lava Surger
+							provider = { "n", 12101 },	-- Lava Surger
 						}),
 					},
 				})),
 			}),
 			n(REWARDS, {
 				i(17333, {	-- Aqual Quintessence
-					["description"] = "Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",
-					["sourceQuest"] = 6824,	-- Hands of the Enemy
-					["minReputation"] = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
-					["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 },
+					description = "Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",
+					sourceQuest = 6824,	-- Hands of the Enemy
+					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
+					timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
 				}),
 				applyclassicphase(PHASE_THREE, i(22754, {	-- Eternal Quintessence
-					["description"] = "Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",
-					["sourceQuest"] = 6824,	-- Hands of the Enemy
-					["minReputation"] = { FACTION_HYDRAXIAN_WATERLORDS, REVERED },	-- Hydraxian Waterlords, Revered.
-					["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 },
+					description = "Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",
+					sourceQuest = 6824,	-- Hands of the Enemy
+					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, REVERED },	-- Hydraxian Waterlords, Revered.
+					timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
 				})),
 			}),
 			n(ZONE_DROPS, {
 				applyclassicphase(PHASE_FIVE, i(20951, {	-- Narain's Scrying Goggles
 					-- #if BEFORE CATA
-					["description"] = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
+					description = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
 					-- #endif
-					["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 },
+					timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
 				})),
 				i(17010),	-- Fiery Core
 				i(17011),	-- Lava Core
 			}),
 			n(COMMON_BOSS_DROPS, {
-				["crs"] = {
+				crs = {
 					12118,	-- Lucifron
 					11982,	-- Magmadar
 					12259,	-- Gehennas
@@ -454,7 +454,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					12056,	-- Baron Geddon
 					11988,	-- Golemagg the Incinerator
 				},
-				["groups"] = {
+				groups = {
 					i(18260),	-- Formula: Enchant Weapon - Healing Power (RECIPE!)
 					i(18259),	-- Formula: Enchant Weapon - Spellpower (RECIPE!)
 					i(18252),	-- Pattern: Core Armor Kit (RECIPE!)
@@ -465,12 +465,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(18290),	-- Schematic: Biznicks 247x128 Accurascope (RECIPE!)
 					i(18292, {	-- Schematic: Core Marksman Rifle (RECIPE!)
 						-- #if SEASON_OF_DISCOVERY
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 						-- #endif
 					}),
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_FOUR, i(228304, {	-- Schematic: Fiery Core Sharpshooter Rifle (RECIPE!)
-						["timeline"] = { ADDED_1_15_3 },
+						timeline = { ADDED_1_15_3 },
 					})),
 					-- #endif
 					i(18291),	-- Schematic: Force Reactive Disk (RECIPE!)
@@ -484,7 +484,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_1, {
 			-- #endif
 			n(ZONE_DROPS, sharedData({
-				["description"] =
+				description =
 					-- #if AFTER TWW
 					"This armour was a 'Binds when equipped' prior to TWW.",
 					-- #elseif AFTER DF
@@ -513,8 +513,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(16819),	-- Vambraces of Prophecy (Priest)
 			})),
 			e(1519, {	-- Lucifron
-				["creatureID"] = 12118,
-				["groups"] = {
+				creatureID = 12118,
+				groups = {
 					-- #if NOT SEASON_OF_DISCOVERY
 					i(17329),	-- Hand of Lucifron
 					-- #endif
@@ -537,20 +537,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(19147),	-- Ring of Spell Power
 					-- #if NOT SEASON_OF_DISCOVERY
 					i(16665, {	-- Tome of Tranquilizing Shot
-						["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 },
-						["classes"] = { HUNTER },
+						timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
+						classes = { HUNTER },
 						-- #if BEFORE WRATH
-						["recipeID"] = 19801,	-- Tranquilizing Shot
+						recipeID = 19801,	-- Tranquilizing Shot
 						-- #endif
 					}),
 					-- #endif
 				},
 			}),
 			e(1520, {	-- Magmadar
-				["creatureID"] = 11982,
-				["groups"] = {
+				creatureID = 11982,
+				groups = {
 					i(93034, {	-- Corefire Imp (PET!)
-						["timeline"] = { ADDED_5_1_0 },
+						timeline = { ADDED_5_1_0 },
 					}),
 					i(17073),	-- Earthshaker
 					i(18822),	-- Obsidian Edged Blade
@@ -576,7 +576,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(16822),	-- Nightslayer Pants (Rogue)
 					i(16814, {	-- Pants of Prophecy (Priest)
 						-- #if AFTER 7.3.5
-						["description"] = "For Blizzard to consider the Tier 1 Priest set as collected in the Transmog Preview, you need to loot these exact pants.",
+						description = "For Blizzard to consider the Tier 1 Priest set as collected in the Transmog Preview, you need to loot these exact pants.",
 						-- #endif
 					}),
 					i(18824),	-- Magma Tempered Boots
@@ -586,8 +586,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			e(1521, {	-- Gehennas
-				["creatureID"] = 12259,
-				["groups"] = {
+				creatureID = 12259,
+				groups = {
 					-- #if NOT SEASON_OF_DISCOVERY
 					i(17331),	-- Hand of Gehennas
 					-- #endif
@@ -610,11 +610,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			e(1522, {	-- Garr
-				["creatureID"] = 12057,
-				["groups"] = {
+				creatureID = 12057,
+				groups = {
 					-- #if NOT SEASON_OF_DISCOVERY
 					i(18564, {	-- Bindings of the Windseeker (Right)
-						["classes"] = ALL_CLASSES,
+						classes = ALL_CLASSES,
 					}),
 					-- #endif
 					i(18822),	-- Obsidian Edged Blade
@@ -644,11 +644,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			e(1524, {	-- Baron Geddon
-				["creatureID"] = 12056,
-				["groups"] = {
+				creatureID = 12056,
+				groups = {
 					-- #if NOT SEASON_OF_DISCOVERY
 					i(18563, {	-- Bindings of the Windseeker (Left)
-						["classes"] = ALL_CLASSES,
+						classes = ALL_CLASSES,
 					}),
 					-- #endif
 					i(18822),	-- Obsidian Edged Blade
@@ -669,14 +669,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(17110),	-- Seal of the Archmagus
 					i(18820),	-- Talisman of Ephemeral Power
 					i(17782, {	-- Talisman of Binding Shard
-						["lore"] = "According to Travis Day, this item was used by Blizzard in a test version of the Thunderfury quest line. The quest was removed and was not publicly released, but Blizzard initially forgot to remove the item from the loot table. It was only ever looted by Noktyn-Archimonde US of the guild Nurfed on March 23, 2005",
-						["timeline"] = { ADDED_1_11_1, REMOVED_1_11_2 },
+						lore = "According to Travis Day, this item was used by Blizzard in a test version of the Thunderfury quest line. The quest was removed and was not publicly released, but Blizzard initially forgot to remove the item from the loot table. It was only ever looted by Noktyn-Archimonde US of the guild Nurfed on March 23, 2005",
+						timeline = { ADDED_1_11_1, REMOVED_1_11_2 },
 					}),
 				},
 			}),
 			e(1523, {	-- Shazzrah
-				["creatureID"] = 12264,
-				["groups"] = {
+				creatureID = 12264,
+				groups = {
 					-- #if NOT SEASON_OF_DISCOVERY
 					i(17332),	-- Hand of Shazzrah
 					-- #endif
@@ -699,18 +699,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			e(1525, {	-- Sulfuron Harbinger
-				["creatureID"] = 12098,
-				["groups"] = {
+				creatureID = 12098,
+				groups = {
 					-- #if NOT SEASON_OF_DISCOVERY
 					i(17330),	-- Hand of Sulfuron
 					-- #endif
 					i(93033, {	-- Harbinger of Flame (PET!)
-						["timeline"] = { ADDED_5_1_0 },
+						timeline = { ADDED_5_1_0 },
 					}),
 					i(17074),	-- Shadowstrike
 					i(17223, {	-- Thunderstrike
-						["description"] = "Use Shadowstrike to create this item.",
-						["provider"] = { "i", 17074 },	-- Shadowstrike
+						description = "Use Shadowstrike to create this item.",
+						provider = { "i", 17074 },	-- Shadowstrike
 					}),
 					i(18878),	-- Sorcerous Dagger
 					i(17077),	-- Crimson Shocker
@@ -729,10 +729,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			e(1526, {	-- Golemagg the Incinerator
-				["creatureID"] = 11988,
-				["groups"] = {
+				creatureID = 11988,
+				groups = {
 					i(93035, {	-- Ashstone Core (PET!)
-						["timeline"] = { ADDED_5_1_0 },
+						timeline = { ADDED_5_1_0 },
 					}),
 					-- #if NOT SEASON_OF_DISCOVERY
 					i(17203),	-- Sulfuron Ingot
@@ -763,19 +763,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			e(1527, {	-- Majordomo Executus
-				["creatureID"] = 12018,
-				["provider"] = { "o", 179703 },	-- Cache of the Firelord
-				["groups"] = {
+				creatureID = 12018,
+				provider = { "o", 179703 },	-- Cache of the Firelord
+				groups = {
 					-- #if NOT SEASON_OF_DISCOVERY
 					i(18703, {	-- Ancient Petrified Leaf
-						["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 },
-						["classes"] = { HUNTER },
-						["lvl"] = 60,
+						timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
+						classes = { HUNTER },
+						lvl = 60,
 					}),
 					i(18646, {	-- The Eye of Divinity
-						["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
-						["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 },
-						["classes"] = { PRIEST },
+						description = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
+						timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
+						classes = { PRIEST },
 					}),
 					-- #endif
 					i(18803),	-- Hyperthermically Insulated Lava Dredger / Finkle's Lava Dredger
@@ -791,35 +791,35 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			e(1528, {	-- Ragnaros
-				["creatureID"] = 11502,
-				["groups"] = {
+				creatureID = 11502,
+				groups = {
 					-- #if NOT SEASON_OF_DISCOVERY
 					ach(686),	-- Molten Core
 					ach(5056, {	-- Molten Core Guild Run
-						["timeline"] = { ADDED_4_0_3 },
+						timeline = { ADDED_4_0_3 },
 					}),
 					-- #if ANYCLASSIC
 					ach(15330, {	-- Survivor of the Firelord (Season of Mastery)
-						["timeline"] = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
+						timeline = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
 					}),
 					-- #endif
 					-- #endif
 					i(17204, {	-- Eye of Sulfuras
 						-- #if SEASON_OF_DISCOVERY
-						["timeline"] = { REMOVED_1_15_3 },
+						timeline = { REMOVED_1_15_3 },
 						-- #endif
 					}),
 					i(19017, {	-- Essence of the Firelord
-						["description"] = "For this to drop, you must be on the 'Thunderaan the Windseeker' quest.",
-						["classes"] = SWORD_CLASSES,
-						["b"] = 1,
+						description = "For this to drop, you must be on the 'Thunderaan the Windseeker' quest.",
+						classes = SWORD_CLASSES,
+						b = 1,
 					}),
 					i(138018, {	-- Clothes Chest Pattern: Molten Core (RECIPE!)
-						["timeline"] = { ADDED_7_0_3 },
+						timeline = { ADDED_7_0_3 },
 					}),
 					i(138833, {	-- Illusion: Flametongue (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
-						["classes"] = { SHAMAN },
+						timeline = { ADDED_7_0_3 },
+						classes = { SHAMAN },
 					}),
 					i(17076),	-- Bonereaver's Edge
 					i(17104),	-- Spinal Reaper
@@ -844,19 +844,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(18815),	-- Essence of the Pure Flame
 					i(17082),	-- Shard of the Flame
 					i(17982, {	-- Ragnaros Core
-						["timeline"] = { ADDED_1_1_0, REMOVED_1_4_0 },
+						timeline = { ADDED_1_1_0, REMOVED_1_4_0 },
 					}),
 					applyclassicphase(PHASE_FIVE, i(21110, {	-- Draconic for Dummies [Chapter VIII]
-						["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
+						timeline = { ADDED_1_9_0, REMOVED_4_0_3 },
 					})),
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			})),
-			applyclassicphase(SOD_PHASE_FOUR, d(DIFFICULTY.SOD.PLAYER20, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_3 }, }, {
+			applyclassicphase(SOD_PHASE_FOUR, d(DIFFICULTY.SOD.PLAYER20, bubbleDownSelf({ timeline = { ADDED_1_15_3 }, }, {
 				n(13278, {	-- Duke Hydraxis
-					["coords"] = { 79.2, 73.6, AZSHARA },
-					["groups"] = {
+					coords = { 79.2, 73.6, AZSHARA },
+					groups = {
 						i(227925),	-- Beacon of Hydraxis
 						i(227915),	-- Duke's Domain
 						i(228979),	-- Enchanted Sigil: Flowing Waters
@@ -868,9 +868,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				n(227819, {	-- Duke Hydraxis
-					["provider"] = { "n", 231178 },	-- Duke Hydraxis
-					["description"] = "Speak to the Duke to Turn Up The Heat! (Or let your raid leader do that instead...)\n\nAlso sells 'Core Forged' versions of the Tier 2 gear.",
-					["groups"] = {
+					provider = { "n", 231178 },	-- Duke Hydraxis
+					description = "Speak to the Duke to Turn Up The Heat! (Or let your raid leader do that instead...)\n\nAlso sells 'Core Forged' versions of the Tier 2 gear.",
+					groups = {
 						cl(DRUID, {
 							-- DPS (Agility)
 							tokencost(TOKENS.SCORCHED_CORE.HELM, i(226659)),	-- Cenarion Horns
@@ -1114,7 +1114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				-- Tier 2 "Core Forged", added with BWL.
 				-- CRIEVE NOTE: Whatever hell the developer that created this at Blizzard came crawling out of should be sent back, please for the love of god, don't do this with Tier 3 as well.
-				n(227819, applyclassicphase(SOD_PHASE_FIVE, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_4 }, }, {	-- Duke Hydraxis
+				n(227819, applyclassicphase(SOD_PHASE_FIVE, bubbleDownSelf({ timeline = { ADDED_1_15_4 }, }, {	-- Duke Hydraxis
 					cl(DRUID, {
 						-- DPS (Agility)
 						tokencost(231257, i(232099)),	-- Stormrage Cowl
@@ -1373,10 +1373,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(228242),	-- Heavy Dark Iron Ring
 					i(228243),	-- Ring of Spell Power
 					i(16665, {	-- Tome of Tranquilizing Shot
-						["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 },
-						["classes"] = { HUNTER },
+						timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
+						classes = { HUNTER },
 						-- #if BEFORE WRATH
-						["recipeID"] = 19801,	-- Tranquilizing Shot
+						recipeID = 19801,	-- Tranquilizing Shot
 						-- #endif
 					}),
 				}),
@@ -1421,7 +1421,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(228432, {	-- Garr
 					-- #if NOT SEASON_OF_DISCOVERY
 					i(18564, {	-- Bindings of the Windseeker (Right)
-						["classes"] = ALL_CLASSES,
+						classes = ALL_CLASSES,
 					}),
 					-- #endif
 					i(227532),	-- Incandescent Hood
@@ -1448,7 +1448,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(228433, {	-- Baron Geddon
 					-- #if NOT SEASON_OF_DISCOVERY
 					i(18563, {	-- Bindings of the Windseeker (Left)
-						["classes"] = ALL_CLASSES,
+						classes = ALL_CLASSES,
 					}),
 					-- #endif
 					i(227530),	-- Incandescent Belt
@@ -1517,8 +1517,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(228128),	-- Hammer of The Black Anvil
 					i(228272),	-- Shadowstrike
 					i(228273, {	-- Thunderstrike
-						["description"] = "Use Shadowstrike to create this item.",
-						["provider"] = { "i", 228272 },	-- Shadowstrike
+						description = "Use Shadowstrike to create this item.",
+						provider = { "i", 228272 },	-- Shadowstrike
 					}),
 					i(228263),	-- Sorcerous Dagger
 					i(228262),	-- Crimson Shocker
@@ -1576,17 +1576,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(228255),	-- Talisman of Ephemeral Power
 				}),
 				n(228437, {	-- Majordomo Executus
-					["provider"] = { "o", 179703 },	-- Cache of the Firelord
-					["groups"] = {
+					provider = { "o", 179703 },	-- Cache of the Firelord
+					groups = {
 						i(18703, {	-- Ancient Petrified Leaf
-							["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 },
-							["classes"] = { HUNTER },
-							["lvl"] = 60,
+							timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
+							classes = { HUNTER },
+							lvl = 60,
 						}),
 						i(18646, {	-- The Eye of Divinity
-							["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
-							["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 },
-							["classes"] = { PRIEST },
+							description = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
+							timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
+							classes = { PRIEST },
 						}),
 						i(17203),	-- Sulfuron Ingot
 						i(227532),	-- Incandescent Hood
@@ -1671,65 +1671,65 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(228297),	-- Shard of the Flame
 				}),
 				n(227939, {	-- The Molten Core
-					["description"] = "Only available on Molten Heat difficulty.\n\nCan drop loot from any other Molten Core boss. It has no unique drops of its own.",
+					description = "Only available on Molten Heat difficulty.\n\nCan drop loot from any other Molten Core boss. It has no unique drops of its own.",
 				}),
 				spell(458843, {	-- Molten Heat [Heat Level 3]
-					["description"] = "You can opt into Heat Level 3 by speaking to Duke Hydraxis. Doing so will drop 'Molten' variants of the weapons that have a neat molten appearance despite providing no difference in quality. (Cosmetic only!)",
-					["groups"] = {
+					description = "You can opt into Heat Level 3 by speaking to Duke Hydraxis. Doing so will drop 'Molten' variants of the weapons that have a neat molten appearance despite providing no difference in quality. (Cosmetic only!)",
+					groups = {
 						i(228462, {	-- Aurastone Hammer [Molten]
-							["cr"] = 228432,	-- Garr
+							cr = 228432,	-- Garr
 						}),
 						i(228517, {	-- Azuresong Mageblade [Molten]
-							["cr"] = 228435,	-- Golemagg the Incinerator
+							cr = 228435,	-- Golemagg the Incinerator
 						}),
 						i(228461, {	-- Bonereaver's Edge [Molten]
-							["providers"] = {
+							providers = {
 								{ "n", 228437 },	-- Majordomo Executus
 								{ "o", 179703 },	-- Cache of the Firelord
 								{ "n", 228438 },	-- Ragnaros
 							},
 						}),
 						i(228506, {	-- Brutality Blade [Molten]
-							["cr"] = 228432,	-- Garr
+							cr = 228432,	-- Garr
 						}),
 						i(228701, {	-- Core Hound Tooth [Molten]
-							["providers"] = {
+							providers = {
 								{ "n", 228437 },	-- Majordomo Executus
 								{ "o", 179703 },	-- Cache of the Firelord
 							},
 						}),
 						i(228702, {	-- Drillborer Disk [Molten]
-							["cr"] = 228432,	-- Garr
+							cr = 228432,	-- Garr
 						}),
 						i(228463, {	-- Earthshaker [Molten]
-							["cr"] = 228430,	-- Magmadar
+							cr = 228430,	-- Magmadar
 						}),
 						i(229379, {	-- Eskhandar's Right Claw [Molten]
-							["cr"] = 228431,	-- Gehennas
+							cr = 228431,	-- Gehennas
 						}),
 						i(229373, {	-- Faithbringer [Molten]
-							["crs"] = {
+							crs = {
 								228432,	-- Garr
 								228433,	-- Baron Geddon
 							},
 						}),
 						i(229374, {	-- Fist of the Firesworn [Molten]
-							["crs"] = {
+							crs = {
 								228432,	-- Garr
 								228433,	-- Baron Geddon
 							},
 						}),
 						i(229372, {	-- Gutgore Ripper [Molten]
-							["cr"] = 228432,	-- Garr
+							cr = 228432,	-- Garr
 						}),
 						i(228508, {	-- Hammer of The Black Anvil [Molten]
-							["cr"] = 228436,	-- Sulfuron Harbinger
+							cr = 228436,	-- Sulfuron Harbinger
 						}),
 						i(229377, {	-- Magmadar's Left Claw [Molten]
-							["cr"] = 228430,	-- Magmadar
+							cr = 228430,	-- Magmadar
 						}),
 						i(228459, {	-- Obsidian Edged Blade [Molten]
-							["crs"] = {
+							crs = {
 								228430,	-- Magmadar
 								228432,	-- Garr
 								228433,	-- Baron Geddon
@@ -1737,13 +1737,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(228511, {	-- Perdition's Blade [Molten]
-							["cr"] = 228438,	-- Ragnaros
+							cr = 228438,	-- Ragnaros
 						}),
 						i(229380, {	-- Shadowstrike [Molten]
-							["cr"] = 228436,	-- Sulfuron Harbinger
+							cr = 228436,	-- Sulfuron Harbinger
 						}),
 						i(229376, {	-- Sorcerous Dagger [Molten]
-							["crs"] = {
+							crs = {
 								228429,	-- Lucifron
 								228434,	-- Shazzrah
 								228431,	-- Gehennas
@@ -1751,17 +1751,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						i(228460, {	-- Spinal Reaper [Molten]
-							["cr"] = 228438,	-- Ragnaros
+							cr = 228438,	-- Ragnaros
 						}),
 						i(228922, {	-- Staff of Dominance [Molten]
-							["cr"] = 228435,	-- Golemagg the Incinerator
+							cr = 228435,	-- Golemagg the Incinerator
 						}),
 						i(228519, {	-- Striker's Mark [Molten]
-							["cr"] = 228430,	-- Magmadar
+							cr = 228430,	-- Magmadar
 						}),
 						i(229381, {	-- Thunderstrike [Molten]
-							["description"] = "Use Shadowstrike to create this item.",
-							["provider"] = { "i", 229380 },	-- Shadowstrike [Molten]
+							description = "Use Shadowstrike to create this item.",
+							provider = { "i", 229380 },	-- Shadowstrike [Molten]
 						}),
 					},
 				}),

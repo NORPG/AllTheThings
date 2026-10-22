@@ -4,7 +4,7 @@
 
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
-		m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
+		m(ARGUS, bubbleDown({ timeline = { ADDED_7_3_0 } }, {
 			n(FACTIONS, {
 				faction(FACTION_ARGUSSIAN_REACH, {
 					ach(12076),	-- Protector of the Argussian Reach

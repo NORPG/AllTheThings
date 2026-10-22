@@ -21,7 +21,7 @@ local EMERALD_BOUNTY = createHeader({
 	},
 });
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
 		n(EMERALD_BOUNTY, {
 			currency(2650),	-- Emerald Dewdrop
@@ -34,59 +34,59 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(ACHIEVEMENTS, {
 				ach(19013, {	-- I Dream of Seeds
 					crit(62396, {	-- Ageless Blossom
-						["coord"] = { 59.7, 16.9, EMERALD_DREAM },
+						coord = { 59.7, 16.9, EMERALD_DREAM },
 					}),
 					crit(62041, {	-- Belligerent Begonias (n: 208617)
-						["coord"] = { 49.9, 35.4, EMERALD_DREAM },
+						coord = { 49.9, 35.4, EMERALD_DREAM },
 					}),
 					crit(62029, {	-- Chiming Foxglove (n: 208511)
-						["coord"] = { 54.6, 67.6, EMERALD_DREAM },
+						coord = { 54.6, 67.6, EMERALD_DREAM },
 					}),
 					crit(62185, {	-- Comfy Chamomile (n: 210723)
-						["coord"] = { 38.4, 59.2, EMERALD_DREAM },
+						coord = { 38.4, 59.2, EMERALD_DREAM },
 					}),
 					crit(62030, {	-- Dragon's Daffodil (n: 208556)
-						["coord"] = { 64.0, 64.8, EMERALD_DREAM },
+						coord = { 64.0, 64.8, EMERALD_DREAM },
 					}),
 					crit(62037, {	-- Dreamer's Daisy (n: 208615)
-						["coord"] = { 46.4, 40.5, EMERALD_DREAM },
+						coord = { 46.4, 40.5, EMERALD_DREAM },
 					}),
 					crit(62189, {	-- Flourishing Scurfpea (n: 210725)
-						["coord"] = { 48.7, 80.5, EMERALD_DREAM },
+						coord = { 48.7, 80.5, EMERALD_DREAM },
 					}),
 					crit(62032, {	-- Fuzzy Licorice (n: 208605)
-						["coord"] = { 63.5, 47.1, EMERALD_DREAM },
+						coord = { 63.5, 47.1, EMERALD_DREAM },
 					}),
 					crit(62036, {	-- Glade Goldenrod (n: 209880)
-						["coord"] = { 40.7, 43.5, EMERALD_DREAM },
+						coord = { 40.7, 43.5, EMERALD_DREAM },
 					}),
 					crit(62027, {	-- Lavatouched Lilies (n: 209583)
-						["coord"] = { 40.7, 24.8, EMERALD_DREAM },
+						coord = { 40.7, 24.8, EMERALD_DREAM },
 					}),
 					crit(62039, {	-- Lofty Lupin (n: 208606)
-						["coord"] = { 56.7, 44.9, EMERALD_DREAM },
+						coord = { 56.7, 44.9, EMERALD_DREAM },
 					}),
 					crit(62040, {	-- Lullaby Lavender (n: 209599)
-						["coord"] = { 56.5, 37.7, EMERALD_DREAM },
+						coord = { 56.5, 37.7, EMERALD_DREAM },
 					}),
 					crit(62186, {	-- Moon Tulip (n: 210724)
-						["coord"] = { 42.6, 74.0, EMERALD_DREAM },
+						coord = { 42.6, 74.0, EMERALD_DREAM },
 					}),
 					crit(62038, {	-- Ringing Rose (n: 208607)
-						["coord"] = { 49.2, 48.1, EMERALD_DREAM },
+						coord = { 49.2, 48.1, EMERALD_DREAM },
 					}),
 					crit(62031, {	-- Singing Weedling (n: 208563)
-						["coord"] = { 63.0, 52.8, EMERALD_DREAM },
+						coord = { 63.0, 52.8, EMERALD_DREAM },
 					}),
 					crit(62035, {	-- Viridescent Sprout (n: 208616)
-						["coord"] = { 40.0, 52.7, EMERALD_DREAM },
+						coord = { 40.0, 52.7, EMERALD_DREAM },
 					}),
 					crit(62397, {	-- Whisperbloom Sapling (n: 211059)
-						["coord"] = { 51.2, 58.7, EMERALD_DREAM },
-						["description"] = "Spawns every hour at the 50 minute mark.",
+						coord = { 51.2, 58.7, EMERALD_DREAM },
+						description = "Spawns every hour at the 50 minute mark.",
 					}),
 					crit(62028, {	-- Ysera's Clover (n: 208443)
-						["coord"] = { 59.2, 58.8, EMERALD_DREAM },
+						coord = { 59.2, 58.8, EMERALD_DREAM },
 					}),
 				}),
 				ach(19196),	-- Sowing the Seeds
@@ -97,31 +97,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(QUESTS,{
 				q(78172, {	-- Mysterious Seeds
-					-- ["sourceQuests"] = { xx },	-- xx
-					["provider"] = { "i", 210050 },	-- Mysterious Seeds
+					-- sourceQuests = { xx },	-- xx
+					provider = { "i", 210050 },	-- Mysterious Seeds
 				}),
 				q(77209, {	-- Seed Legacy
-					["sourceQuests"] = { 78172 },	-- Mysterious Seeds
-					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
-					["groups"] = {
+					sourceQuests = { 78172 },	-- Mysterious Seeds
+					provider = { "n", 211265 },	-- Sylvia Whisperbloom
+					coord = { 59.7, 16.9, EMERALD_DREAM },
+					groups = {
 						i(210014),	-- Mysterious Ageless Seeds (QI!)
 					},
 				}),
 				q(78170, {	-- Nurturing Ageless Seeds // 14.10	-- quest bugged (no quest item in loot table)
-					["sourceQuests"] = { 77209 },	-- Seed Legacy
-					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
-					["groups"] = {
+					sourceQuests = { 77209 },	-- Seed Legacy
+					provider = { "n", 211265 },	-- Sylvia Whisperbloom
+					coord = { 59.7, 16.9, EMERALD_DREAM },
+					groups = {
 						i(211406),	-- Ageless Dewdrops (QI!)
 						i(211410),	-- Bloomed Wildling Cache
 					},
 				}),
 				q(78171, {	-- Blossoms of the Past
-					["sourceQuests"] = { 78170 },	-- Nurturing Ageless Seeds
-					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
-					["groups"] = {
+					sourceQuests = { 78170 },	-- Nurturing Ageless Seeds
+					provider = { "n", 211265 },	-- Sylvia Whisperbloom
+					coord = { 59.7, 16.9, EMERALD_DREAM },
+					groups = {
 						o_repeated({
 							i(210052),	-- Ageless Blossoms (QI!)
 							o(410045),	-- Ageless Blossom
@@ -131,27 +131,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 				q(78206, {	-- Emerald Bounty
-					["sourceQuests"] = { 78171 },	-- Blossoms of the Past
-					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
-					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
+					sourceQuests = { 78171 },	-- Blossoms of the Past
+					provider = { "n", 211265 },	-- Sylvia Whisperbloom
+					coord = { 59.7, 16.9, EMERALD_DREAM },
 				}),
 				--
 				q(78821, {	-- Blooming Dreamseeds
-					-- ["sourceQuests"] = {
+					-- sourceQuests = {
 					-- 	78206,	-- Emerald Bounty (TODO: need to confirm)
 					-- 	77887,	-- 'World Quest Unlock' (spellID 421687)
 					-- },
-					-- ["sourceQuestNumRequired"] = 1
-					["provider"] = { "n", 212797 },	-- Talisa Whisperbloom
-					["coord"] = { 49.7, 62.1, EMERALD_DREAM },
-					["maxReputation"] = { FACTION_DREAM_WARDENS, 20 },
-					["isWeekly"] = true,
-					["groups"] = {
+					-- sourceQuestNumRequired = 1
+					provider = { "n", 212797 },	-- Talisa Whisperbloom
+					coord = { 49.7, 62.1, EMERALD_DREAM },
+					maxReputation = { FACTION_DREAM_WARDENS, 20 },
+					isWeekly = true,
+					groups = {
 						i(SEEDBLOOM, {
-							["description"] = "Any item bought via Seedbloom's can also be obtained randomly from The Emerald Bounty event while planting or contributing a Small Dreamseed, Plump Dreamseed, or Gigantic Dreamseed.",
+							description = "Any item bought via Seedbloom's can also be obtained randomly from The Emerald Bounty event while planting or contributing a Small Dreamseed, Plump Dreamseed, or Gigantic Dreamseed.",
 						}),
 						i(211394, {	-- Harvested Dreamseed Cache
-							["sym"] = {
+							sym = {
 								{"select", "itemID", 211389 },	-- Cache of Overblooming Treasures,
 								{"pop"},
 								{"exclude","itemID",
@@ -165,19 +165,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(RARES, {
 				n(209915, {	-- Amalgamation of Dreams
-					["providers"] = {
+					providers = {
 						{ "n", 210063 },	-- Coagulating Dreams (vignette)
 					},
-					["description"] = "Can randomly spawn near any planting spot.",
-					["questID"] = 77856,
-					["isWeekly"] = true,
+					description = "Can randomly spawn near any planting spot.",
+					questID = 77856,
+					isWeekly = true,
 				}),
 			}),
 			n(REWARDS, {
-				["groups"] = {
+				groups = {
 					i(210219, {	-- Gigantic Dreamy Bounty
-						["cost"] = { { "i", 208047, 1 } },	-- Gigantic Dreamseed
-						["sym"] = {
+						cost = { { "i", 208047, 1 } },	-- Gigantic Dreamseed
+						sym = {
 							{"select", "npcID", 211265 },	-- Sylvia Whisperbloom
 							{"pop"},
 							{"where", "filterID", MOUNTS },
@@ -187,14 +187,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					i(210218, {	-- Plump Dreamy Bounty
-						["cost"] = { { "i", 208067, 1 } },	-- Plump Dreamseed
-						["sym"] = {
+						cost = { { "i", 208067, 1 } },	-- Plump Dreamseed
+						sym = {
 							{"select", "npcID", 211265 },	-- Sylvia Whisperbloom
 							{"pop"},
 							{"where", "filterID", BATTLE_PETS },
 							{"pop"},
 						},
-						["groups"] = {
+						groups = {
 							i(210059),	-- Winter Night Dreamsaber (MOUNT!) / should be from any dreamseed (according to blue post)
 							i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!)
 							i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (MM!) / also was looted from purple
@@ -209,16 +209,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					i(210217, {	-- Small Dreamy Bounty
-						["cost"] = { { "i", 208066, 1 } },	-- Small Dreamseed
+						cost = { { "i", 208066, 1 } },	-- Small Dreamseed
 						-- Dont Think we should symlink this?
 					}),
 				},
 			}),
 			n(VENDORS, {
 				n(211265, {	-- Sylvia Whisperbloom
-					["coord"] = { 59.8, 16.9, EMERALD_DREAM },
-					["groups"] = bubbleDownFiltered({
-						["cost"] = { { "i", SEEDBLOOM, 1 } },
+					coord = { 59.8, 16.9, EMERALD_DREAM },
+					groups = bubbleDownFiltered({
+						cost = { { "i", SEEDBLOOM, 1 } },
 					},FILTERFUNC_itemID,{
 						n(BACK, {
 							i(209979),	-- Barkbloom Cloak
@@ -304,13 +304,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 				}),
 				n(212797, {	-- Talisa Whisperbloom
-					["sym"] = {{"sub","common_vendor",211265}},	-- Sylvia Whisperbloom
+					sym = {{"sub","common_vendor",211265}},	-- Sylvia Whisperbloom
 				}),
 			}),
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
 	m(DRAGON_ISLES, {
 		m(EMERALD_DREAM, {
 			n(EMERALD_BOUNTY, {

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 
 local function bo(questID, isDaily)
-    return { ["questID"] = questID, ["isDaily"] = isDaily };
+    return { questID = questID, isDaily = isDaily };
 end
 
 local ADAMANT_SCALES = 193214;
@@ -15,7 +15,7 @@ local RAINBOW_PEARL = 198397;
 local SEREVITE_ORE = 190396;
 local TALLSTRIDER_SINEW = 201404;
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
 		header(HEADERS.Faction, FACTION_COBALT_ASSEMBLY, {
 			faction(FACTION_COBALT_ASSEMBLY),
@@ -25,85 +25,85 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(QUESTS, {
 				q(71094, {	-- Help Is Our Way!
-					["sourceQuests"] = { 70550 },	-- Welcome to the Assembly
-					["provider"] = { "n", 197100 },	-- Heleth the Wise
-					["coord"] = { 46.4, 25.6, THE_AZURE_SPAN },
-					["groups"] = {
+					sourceQuests = { 70550 },	-- Welcome to the Assembly
+					provider = { "n", 197100 },	-- Heleth the Wise
+					coord = { 46.4, 25.6, THE_AZURE_SPAN },
+					groups = {
 						i(200514),	-- Salve-Soaked Bandages (QI!)
 					},
 				}),
 				q(71095, {	-- A Claw in Need
-					["sourceQuests"] = { 71094 },	-- Help Is Our Way!
-					["provider"] = { "n", 197100 },	-- Heleth the Wise
-					["coord"] = { 45.8, 25.9, THE_AZURE_SPAN },
+					sourceQuests = { 71094 },	-- Help Is Our Way!
+					provider = { "n", 197100 },	-- Heleth the Wise
+					coord = { 45.8, 25.9, THE_AZURE_SPAN },
 				}),
 				q(71096, {	-- Is A Claw Indeed
-					["sourceQuests"] = { 71095 },	-- A Claw in Need
-					["provider"] = { "n", 197201 },	-- Venderthvan
-					["coord"] = { 45.9, 25.9, THE_AZURE_SPAN },
+					sourceQuests = { 71095 },	-- A Claw in Need
+					provider = { "n", 197201 },	-- Venderthvan
+					coord = { 45.9, 25.9, THE_AZURE_SPAN },
 				}),
 				q(71097, {	-- A Helping Claw
-					["sourceQuests"] = { 71096 },	-- Is A Claw Indeed
-					["provider"] = { "n", 197201 },	-- Venderthvan
-					["coord"] = { 45.9, 25.9, THE_AZURE_SPAN },
-					["groups"] = {
+					sourceQuests = { 71096 },	-- Is A Claw Indeed
+					provider = { "n", 197201 },	-- Venderthvan
+					coord = { 45.9, 25.9, THE_AZURE_SPAN },
+					groups = {
 						i(200628),	-- Somewhat-Stabilized Arcana (TOY!)
 						i(248653, {	-- Valdrakken Stone Stool (DECOR!)
-							["timeline"] = { ADDED_11_2_7 },
+							timeline = { ADDED_11_2_7 },
 						}),
 					},
 				}),
 				q(72784, {	-- Supporting the Cobalt Assembly
-					["sourceQuests"] = {
+					sourceQuests = {
 						66340,	-- Into the Azure
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["sourceQuestNumRequired"] = 1,
-					["provider"] = { "n", 192222 },	-- Althanus
-					["coord"] = { 46.7, 40.1, THE_AZURE_SPAN },
-					["isBreadcrumb"] = true,
+					sourceQuestNumRequired = 1,
+					provider = { "n", 192222 },	-- Althanus
+					coord = { 46.7, 40.1, THE_AZURE_SPAN },
+					isBreadcrumb = true,
 				}),
 				q(70550, {	-- Welcome to the Assembly
-					["sourceQuests"] = { 72784 },	-- Supporting the Cobalt Assembly
-					["provider"] = { "n", 194680 },	-- Venthi
-					["coord"] = { 49.0, 23.1, THE_AZURE_SPAN },
+					sourceQuests = { 72784 },	-- Supporting the Cobalt Assembly
+					provider = { "n", 194680 },	-- Venthi
+					coord = { 49.0, 23.1, THE_AZURE_SPAN },
 				}),
 			}),
 			n(RARES, sharedData({
-				["isDaily"] = true,
+				isDaily = true,
 			},{
 				n(201553,	-- Grand Artificer Zeerak
-				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
-					["coord"] = { 47.5, 23.6, THE_AZURE_SPAN },
-					["questID"] = 74545,
-					["groups"] = {
+				bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+					coord = { 47.5, 23.6, THE_AZURE_SPAN },
+					questID = 74545,
+					groups = {
 						bo(74457, true),
 						i(203664),	-- Wild Magic Insulating Bands
 					},
 				})),
 				n(201561,	-- Motivator Krathos
-				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
-					["coord"] = { 43.9, 30.9, THE_AZURE_SPAN },
-					["questID"] = 74544,
-					["groups"] = {
+				bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+					coord = { 43.9, 30.9, THE_AZURE_SPAN },
+					questID = 74544,
+					groups = {
 						bo(74456, true),
 						i(203675),	-- Legplates of the Brutal Motivator
 					},
 				})),
 				n(201555,	-- Srivantor
-				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
-					["coord"] = { 47.0, 22.0, THE_AZURE_SPAN },
-					["questID"] = 74543,
-					["groups"] = {
+				bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+					coord = { 47.0, 22.0, THE_AZURE_SPAN },
+					questID = 74543,
+					groups = {
 						bo(74458, true),
 						i(203663),	-- Cinch of the Sundered Flame
 					},
 				})),
 				n(201554,	-- Unstable Arcanogolem
-				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
-					["coord"] = { 47.0, 25.3, THE_AZURE_SPAN },
-					["questID"] = 74536,
-					["groups"] = {
+				bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+					coord = { 47.0, 25.3, THE_AZURE_SPAN },
+					questID = 74536,
+					groups = {
 						bo(74455, true),
 						i(203662),	-- Arcanogolem Crystalblade
 					},
@@ -111,168 +111,168 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			n(VENDORS, {
 				n(194832, {	-- Meiz <Quartermaster>
-					["coord"] = { 49.4, 22.6, THE_AZURE_SPAN },
-					["groups"] = bubbleDownRep(FACTION_COBALT_ASSEMBLY, {
+					coord = { 49.4, 22.6, THE_AZURE_SPAN },
+					groups = bubbleDownRep(FACTION_COBALT_ASSEMBLY, {
 						{		-- Empty --
 							i(197584, {	-- Windborne Velocidrake: Finned Back (MM!)
-								["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
+								cost = { { "c", DRAGON_SUPPLIES, 50 } },
 							}),
 						}, {	-- Low --
 							i(196969, {	-- Cliffside Wylderdrake: Finned Back (MM!)
-								["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
+								cost = { { "c", DRAGON_SUPPLIES, 100 } },
 							}),
 							i(197355, {	-- Renewed Proto-Drake: Thick Spined Jaw (MM!)
-								["cost"] = { { "c", DRAGON_SUPPLIES, 100 } },
+								cost = { { "c", DRAGON_SUPPLIES, 100 } },
 							}),
 						}, {	-- Medium --
 							i(197620, {	-- Windborne Velocidrake: Beaked Snout (MM!)
-								["cost"] = { { "c", DRAGON_SUPPLIES, 200 } },
+								cost = { { "c", DRAGON_SUPPLIES, 200 } },
 							}),
 						}, {	-- High --
 							i(197018, {	-- Cliffside Wylderdrake: Finned Tail (MM!)
-								["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
+								cost = { { "c", DRAGON_SUPPLIES, 400 } },
 							}),
 							i(191834, {	-- Cobalt Guardian's Belt
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 100 },
 									{ "i", AWAKENED_FROST, 1 },
 								},
 							}),
 							i(191835, {	-- Cobalt Guardian's Bracers
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 100 },
 									{ "i", AWAKENED_FROST, 1 },
 								},
 							}),
 							i(191836, {	-- Cobalt Guardian's Cover
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 100 },
 									{ "i", AWAKENED_FROST, 1 },
 								},
 							}),
 							i(191830, {	-- Cobalt Guardian's Grips
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 100 },
 									{ "i", AWAKENED_FROST, 1 },
 								},
 							}),
 							i(191829, {	-- Cobalt Guardian's Hauberk
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 100 },
 									{ "i", AWAKENED_FROST, 1 },
 								},
 							}),
 							i(191831, {	-- Cobalt Guardian's Helm
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 100 },
 									{ "i", AWAKENED_FROST, 1 },
 								},
 							}),
 							i(191832, {	-- Cobalt Guardian's Leggings
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 100 },
 									{ "i", AWAKENED_FROST, 1 },
 								},
 							}),
 							i(191833, {	-- Cobalt Guardian's Pauldron
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 100 },
 									{ "i", AWAKENED_FROST, 1 },
 								},
 							}),
 							i(197148, {	-- Highland Drake: Vertical Finned Tail (MM!)
-								["cost"] = { { "c", DRAGON_SUPPLIES, 400 } },
+								cost = { { "c", DRAGON_SUPPLIES, 400 } },
 							}),
 						}, {	-- Maximum --
 							i(197368, {	-- Renewed Proto-Drake: Blue Hair (MM!)
-								["cost"] = { { "c", DRAGON_SUPPLIES, 600 } },
+								cost = { { "c", DRAGON_SUPPLIES, 600 } },
 							}),
 							i(199731, {	-- Cobalt Bladewing Staff
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", TALLSTRIDER_SINEW, 5 },
 									{ "i", SEREVITE_ORE, 10 },
 								},
 							}),
 							i(201371, {	-- Cobalt Defender's Shredder
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", TALLSTRIDER_SINEW, 5 },
 									{ "i", SEREVITE_ORE, 10 },
 								},
 							}),
 							i(199733, {	-- Cobalt Defender's Wingglaive
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", TALLSTRIDER_SINEW, 5 },
 									{ "i", SEREVITE_ORE, 10 },
 								},
 							}),
 							i(199737, {	-- Cobalt Dragonflame Blade
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", TALLSTRIDER_SINEW, 5 },
 									{ "i", GLIMMERING_MALYGITE_CLUSTER, 1 },
 								},
 							}),
 							i(199701, {	-- Cobalt Dragonwing Decapitator
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", RAINBOW_PEARL, 1 },
 									{ "i", ADAMANT_SCALES, 10 },
 								},
 							}),
 							i(200559, {	-- Cobalt Duelist's Saber
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", TALLSTRIDER_SINEW, 5 },
 									{ "i", DRACONIUM_ORE, 5 },
 								},
 							}),
 							i(199727, {	-- Cobalt Essence Weaver's Scepter
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", TALLSTRIDER_SINEW, 5 },
 									{ "i", SEREVITE_ORE, 10 },
 								},
 							}),
 							i(199729, {	-- Cobalt Essence Weaver's Staff
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", TALLSTRIDER_SINEW, 5 },
 									{ "i", SEREVITE_ORE, 10 },
 								},
 							}),
 							i(217891, {	-- Cobalt Guardian's Cloak
-								["timeline"] = { ADDED_10_2_7 },
-								["cost"] = {
+								timeline = { ADDED_10_2_7 },
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 100 },
 									{ "i", AWAKENED_FROST, 1 },
 								},
 							}),
 							i(199735, {	-- Cobalt Guardian's Cutlass
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", GLOWING_TITAN_ORB, 1 },
 									{ "i", SEREVITE_ORE, 10 },
 								},
 							}),
 							i(199706, {	-- Cobalt Stalker's Lancet
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", TALLSTRIDER_SINEW, 5 },
 									{ "i", SEREVITE_ORE, 10 },
 								},
 							}),
 							i(199708, {	-- Cobalt Wingguard's Polearm
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", ADAMANT_SCALES, 10 },
 									{ "i", SEREVITE_ORE, 10 },
 								},
 							}),
 							i(199703, {	-- Steadfast Cobalt Bulwark
-								["cost"] = {
+								cost = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", RAINBOW_PEARL, 1 },
 									{ "i", ADAMANT_SCALES, 10 },
@@ -282,8 +282,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				}),
 				n(196862, {	-- Steiz <Quartermaster>
-					["coord"] = { 49.4, 22.6, THE_AZURE_SPAN },
-					["sym"] = {{"select","itemID",
+					coord = { 49.4, 22.6, THE_AZURE_SPAN },
+					sym = {{"select","itemID",
 						-- Armor --
 						191833,	-- Cobalt Guardian's Pauldron
 						191832,	-- Cobalt Guardian's Leggings
@@ -307,28 +307,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						199733,	-- Cobalt Defender's Wingglaive
 						201371,	-- Cobalt Defender's Shredder
 					}},
-					["groups"] = bubbleDownRep(FACTION_COBALT_ASSEMBLY, {
+					groups = bubbleDownRep(FACTION_COBALT_ASSEMBLY, {
 						{		-- Empty --
 						}, {	-- Low --
 						}, {	-- Medium --
 							i(194265, {	-- Pattern: Blue Silken Lining (RECIPE!)
-								["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
+								cost = { { "c", DRAGON_SUPPLIES, 50 } },
 							}),
 							i(191579, {	-- Recipe: Transmute: Awakened Frost (RECIPE!)
-								["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
+								cost = { { "c", DRAGON_SUPPLIES, 50 } },
 							}),
 						}, {	-- High --
 							i(202117),	-- Assembly Preserver's Band
 							i(202119),	-- Assembly Scholar's Loop
 							i(202118),	-- Assembly Guardian's Ring
 							i(201733, {	-- Pattern: Frosted Armor Kit (RECIPE!)
-								["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
+								cost = { { "c", DRAGON_SUPPLIES, 50 } },
 							}),
 							i(194261, {	-- Pattern: Frozen Spellthread (RECIPE!)
-								["cost"] = { { "c", DRAGON_SUPPLIES, 50 } },
+								cost = { { "c", DRAGON_SUPPLIES, 50 } },
 							}),
 							i(198895, {	-- Technique: Highland Drake: Spined Crest (RECIPE!)
-								["cost"] = { { "c", DRAGON_SUPPLIES, 25 } },
+								cost = { { "c", DRAGON_SUPPLIES, 25 } },
 							}),
 						}, {	-- Maximum --
 						},

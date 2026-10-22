@@ -29,7 +29,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, patch(0,1), bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, patch(0,1), bubbleDown({ timeline = { CREATED_8_0_1 } }, {
 			-- Zone: Tiragarde Sound
 			exploration(8846),	-- Tiragarde Redoubt
 			exploration(8917),	-- Wellington
@@ -57,7 +57,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, patch(1,0), bubbleDown({ ["timeline"] = { CREATED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, patch(1,0), bubbleDown({ timeline = { CREATED_8_1_0 } }, {
 			-- Zone: Tiragarde Sound
 			exploration(10077),	-- Horde Airship
 			exploration(10262),	-- The Strider
@@ -71,7 +71,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, patch(1,5), bubbleDown({ ["timeline"] = { CREATED_8_1_5 } }, {
+		expansion(EXPANSION.BFA, patch(1,5), bubbleDown({ timeline = { CREATED_8_1_5 } }, {
 			-- Zone: Tiragarde Sound
 			exploration(10426),	-- The Swift Vengeance
 
@@ -81,7 +81,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), bubbleDown({ timeline = { CREATED_9_0_1 } }, {
 			-- Zone: Oribos
 			exploration(13612),	-- Felspinner Nest
 			exploration(13209),	-- Netherhollow
@@ -284,7 +284,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 9.0.2
-		expansion(EXPANSION.SL, patch(0,2), bubbleDown({ ["timeline"] = { CREATED_9_0_2 } }, {
+		expansion(EXPANSION.SL, patch(0,2), bubbleDown({ timeline = { CREATED_9_0_2 } }, {
 			-- Zone: Torghast, Tower of the Damned
 			exploration(13547),	-- The Runecarver's Oubliette
 			map_exploration(13546),	-- Torghast, Tower of the Damned
@@ -307,7 +307,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, patch(1,0), bubbleDown({ ["timeline"] = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, patch(1,0), bubbleDown({ timeline = { CREATED_9_1_0 } }, {
 			-- Zone: Korthia
 			exploration(13656),	-- Cave of Secrets
 			exploration(13660),	-- Cavern of Contemplation
@@ -317,7 +317,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, patch(2,0), bubbleDown({ ["timeline"] = { CREATED_9_2_0 } }, {
+		expansion(EXPANSION.SL, patch(2,0), bubbleDown({ timeline = { CREATED_9_2_0 } }, {
 			-- Zone: Zereth Mortis
 			exploration(13707),	-- Site Ka'a
 			exploration(13890),	-- Terrestial Cache [Blizzard mistyped this name. It should be "Terrestrial"]
@@ -329,7 +329,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDown({ timeline = { CREATED_10_0_0 } }, {
 			-- Zone: The Waking Shores
 			exploration(14086),	-- Ashscale Halls
 			exploration(14087),	-- Ashscale HallsS
@@ -498,7 +498,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 10.0.7
-		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ timeline = { CREATED_10_0_7 } }, {
 			-- Zone: The Forbidden Reach
 			exploration(14545),	-- Stormsunder Overlook
 			map_exploration(14433),	-- The Forbidden Reach
@@ -531,7 +531,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ timeline = { CREATED_10_1_0 } }, {
 			-- Zone: Zaralek Cavern
 			exploration(14725),	-- The Bone Gallery
 			map_exploration(14022),	-- Zaralek Cavern
@@ -571,7 +571,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ timeline = { CREATED_10_1_5 } }, {
 			-- Zone: Dragon Isles
 			map_exploration(14750),	-- Dragon Isles
 
@@ -614,7 +614,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 10.1.7
-		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ timeline = { CREATED_10_1_7 } }, {
 			-- Scenario: Reforging the Tyr's Guard
 			map_exploration(14970),	-- The Black
 
@@ -626,7 +626,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { CREATED_10_2_0 } }, {
 			-- Emerald Dream
 			exploration(15053),	-- Aviana's Perch
 			map_exploration(14529),	-- Emerald Dream
@@ -662,7 +662,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ timeline = { CREATED_10_2_5 } }, {
 			-- Unknown [Map 2666] Amirdrassil
 			map_exploration(14969),	-- Amirdrassil
 			exploration(14981),	-- Ancient Bough
@@ -695,7 +695,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 10.2.6
-		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
+		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ timeline = { CREATED_10_2_6 } }, {
 			-- Game Mode: Plunderstorm
 			exploration(14357),	-- Arathi Highlands
 			map_exploration(15058),	-- Arathi Highlands
@@ -737,14 +737,14 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ timeline = { CREATED_10_2_7 } }, {
 			-- Zone: Suramar
 			exploration(15168),	-- Botanist's Terrace
 		})),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ timeline = { CREATED_11_0_2 } }, {
 			-- Zone: Dornogal
 			-- Sub-zone:
 			map_exploration(15051),	-- Chamber of Heart
@@ -915,7 +915,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ timeline = { CREATED_11_0_5 } }, {
 			-- Zone: The Forbidden Reach [Dracthyr starting zone for all classes]
 			map_exploration(15509),	-- The Forbidden Reach
 			exploration(15510),	-- The War Creche
@@ -948,7 +948,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ timeline = { CREATED_11_0_7 } }, {
 			-- Zone: Siren Isle
 			exploration(15941),	-- Bilge Rat Corsair
 			exploration(15914),	-- Hozen's Paw
@@ -957,7 +957,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
 			-- Zone: Undermine
 			exploration(15643),	-- Airship Supply Depot
 			exploration(15465),	-- Slam Central Station
@@ -1017,7 +1017,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 11.1.5
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_5 } }, {
 			-- Revisited Horrific Visions
 			map_exploration(15946),	-- Vision of Orgrimmar
 			map_exploration(15942),	-- Vision of Stormwind
@@ -1031,7 +1031,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 11.1.7
-		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ timeline = { CREATED_11_1_7 } }, {
 			-- Lorewalking Zone: Arathi Highlands
 			map_exploration(15716),	-- Arathi Highlands
 			exploration(15735),	-- Ar'gorok
@@ -1122,7 +1122,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
 			-- Dungeon: Eco-Dome Al'dani
 			exploration(16422),	-- Al'dani Sands
 			exploration(16419),	-- Breached Dome
@@ -1147,7 +1147,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 		})),
 
 		-- 11.2.7
-		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
 			-- NYI?
 			exploration(16541),	-- 12DUR_Oasis_TEST_MCarwen
 			exploration(15529),	-- Azshara_DemoArea
@@ -1162,7 +1162,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
 			-- Zone: Silvermoon City
 			exploration(16647),	-- Den of Indulgence
 			exploration(16087),	-- Farstrider Square

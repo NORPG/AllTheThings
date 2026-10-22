@@ -2,19 +2,19 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART } }, {
+root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART } }, {
 	n(SEASON_GALACTIC, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 			ach(61443, {	-- Galactic Weapons of Conquest
 				i(255671),	-- Galactic Gladiator's Weapon Token
 			}),
 			ach(61403, {	-- Galactic Combatant
-				["races"] = ALLIANCE_ONLY,
-				["collectible"] = false,
+				races = ALLIANCE_ONLY,
+				collectible = false,
 			}),
 			ach(61405, {	-- Galactic Combatant
-				["races"] = HORDE_ONLY,
-				["collectible"] = false,
+				races = HORDE_ONLY,
+				collectible = false,
 			}),
 			ach(61181),	-- Combatant I: Midnight Season 1
 			ach(61182),	-- Combatant II: Midnight Season 1
@@ -22,10 +22,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			ach(61184),	-- Challenger II: Midnight Season 1
 			ach(61187, {	-- Duelist: Midnight Season 1
 				i(264010, {	-- Galactic Gladiator's Prestigious Cloak
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				i(260443, {	-- Galactic Gladiator's Prestigious Cloak
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 			}),
 			ach(61197),	-- Elite: Midnight Season 1
@@ -42,22 +42,22 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 			}),
 			-- RBG
 			ach(61177, {	-- Galactic Marshal: Midnight Season 1
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				races = ALLIANCE_ONLY,
+				groups = {
 					title(651),	-- Galactic Marshal <Name>
 				},
 			}),
 			ach(61178, {	-- Galactic Warlord: Midnight Season 1
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				races = HORDE_ONLY,
+				groups = {
 					title(652),	-- Galactic Warlord <Name>
 				},
 			}),
 			ach(61195, {	-- Hero of the Alliance: Galactic
-				["races"]= ALLIANCE_ONLY,
+				races= ALLIANCE_ONLY,
 			}),
 			ach(61196, {	-- Hero of the Horde: Galactic
-				["races"]= HORDE_ONLY,
+				races= HORDE_ONLY,
 			}),
 			ach(61194, {	-- Strategist: Midnight Season 1
 				i(255879),	-- Galactic Legend's Pennant (COSMETIC!)
@@ -67,26 +67,26 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				i(255879),	-- Galactic Legend's Pennant (COSMETIC!)
 			}),
 			ach(61198, {	-- Battle Mender: Midnight Season 1
-				["classes"] = HEALERS,
+				classes = HEALERS,
 			}),
 			ach(61179, {	-- Galactic Legend: Midnight Season 1
 				title(653),	-- Galactic Legend <Name>
 			}),
 			-- Fashion
-			ach(61586, { ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Galactic Gala
+			ach(61586, { timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Galactic Gala
 		})),
-		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
+		filter(MOUNTS, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 			i(257504, {	-- Vicious Snaplizard [A] (MOUNT!)
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			i(257502, {	-- Vicious Snaplizard [H] (MOUNT!)
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 		})),
-		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
+		n(PVP_WARMODE, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 			n(243224, {	-- Knight-Lord Bloodvalor <War Mode Quartermaster>
-				["coord"] = { 34.1, 81.7, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
+				coord = { 34.1, 81.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				groups = {
 					filter(BACK_F, {
 						bloody(525, i(255914)),	-- Galactic Warmonger's Cape
 						bloody(525, i(255916)),	-- Galactic Warmonger's Cloak
@@ -160,10 +160,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				},
 			}),
 		})),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 			n(243221, {	-- Captain Dawnrunner <Honor Quartermaster>
-				["coord"] = { 34.0, 81.0, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = {
+				coord = { 34.0, 81.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+				groups = {
 					filter(BACK_F, {
 						honor(525, i(255339)),	-- Galactic Aspirant's Cape
 						honor(525, i(255338)),	-- Galactic Aspirant's Cloak
@@ -282,11 +282,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				},
 			}),
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 			n(243220, {	-- Irissa Bloodstar <Conquest Quartermaster>
-				["coord"] = { 34.1, 80.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["ItemAppearanceModifierID"] = 159,
-				["groups"] = {
+				coord = { 34.1, 80.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+				ItemAppearanceModifierID = 159,
+				groups = {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(875, i(255549)),	-- Galactic Gladiator's Chestguard
@@ -569,12 +569,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 					}),
 					filter(MISC, {
 						i(267572, {	-- Conqueror's Galactic Lacquer
-							["cost"] = { { "c", CONQUEST, 700 } },
-							--["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },	-- TODO: fix timeline
+							cost = { { "c", CONQUEST, 700 } },
+							--timeline = { ADDED_12_0_5, REMOVED_12_1_0 },	-- TODO: fix timeline
 						}),
 						i(267571, {	-- Conqueror's Galactic Varnish
-							["cost"] = { { "c", CONQUEST, 875 } },
-							--["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 },	-- TODO: fix timeline
+							cost = { { "c", CONQUEST, 875 } },
+							--timeline = { ADDED_12_0_5, REMOVED_12_1_0 },	-- TODO: fix timeline
 						}),
 					}),
 					filter(NECK_F, {
@@ -614,21 +614,21 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 						conquest(525, i(255625)),	-- Galactic Gladiator's Tome
 						conquest(875, i(255620)),	-- Galactic Gladiator's Warglaive
 					}),
-					i(256553, { ["timeline"] = { ADDED_12_0_5, REMOVED_12_1_0 } }),	-- Galactic Equipment Chest
+					i(256553, { timeline = { ADDED_12_0_5, REMOVED_12_1_0 } }),	-- Galactic Equipment Chest
 				},
 			}),
 			o(532226, {	-- The Catalyst
-				["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
-				["coord"] = { 40.3, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["modelScale"] = 4,
-				["catalystID"] = 12,	-- ItemBonus.Value_0 MID:S1
-				["groups"] = bubbleDown({ ["modID"] = 14, }, {
+				description = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
+				coord = { 40.3, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+				modelScale = 4,
+				catalystID = 12,	-- ItemBonus.Value_0 MID:S1
+				groups = bubbleDown({ modID = 14, }, {
 					-- Blizzard removed all Gladiator and Elite pieces for this Catalyst version during Midnight beta.
 					-- Keep this Catalyst here in case gear can be converted into different pieces than in previous seasons.
 				}),
 			}),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }, ["bonusID"] = 7532 }, {
+		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }, bonusID = 7532 }, {
 			n(CLASSES, {
 				cl(DEATHKNIGHT, {
 					i(255549),	-- Galactic Gladiator's Chestguard
@@ -775,9 +775,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				}),
 			}),
 			n(255844, {	-- Soryn <Elite Conquest Quartermaster>
-				["coord"] = { 34.0, 80.7, MAP.MIDNIGHT.SILVERMOON_CITY },
-				["groups"] = appendGroups(sharedData({
-					["sourceAchievements"] = { 61187 },	-- Duelist: Midnight Season 1
+				coord = { 34.0, 80.7, MAP.MIDNIGHT.SILVERMOON_CITY },
+				groups = appendGroups(sharedData({
+					sourceAchievements = { 61187 },	-- Duelist: Midnight Season 1
 				}, {
 					moh(10, i(265630)),	-- Galactic Gladiator's Battlestaff
 					moh(10, i(265625)),	-- Galactic Gladiator's Blaster
@@ -799,25 +799,25 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { A
 				}), {
 					i(260441, {	-- Galactic Gladiator's Tabard
 						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
-						["races"] = HORDE_ONLY,
-						["sourceAchievements"] = { 61197 },	-- Elite: Midnight Season 1
+						races = HORDE_ONLY,
+						sourceAchievements = { 61197 },	-- Elite: Midnight Season 1
 					}),
 					i(264164, {	-- Galactic Gladiator's Tabard
 						-- Not displaying Honor Cost, reaching Elite grants you the item automatically
-						["races"] = ALLIANCE_ONLY,
-						["sourceAchievements"] = { 61197 },	-- Elite: Midnight Season 1
+						races = ALLIANCE_ONLY,
+						sourceAchievements = { 61197 },	-- Elite: Midnight Season 1
 					}),
 				}),
 			}),
 		})),
 		n(REWARDS, {
 			i(257194, {	-- Artisan's Consortium Flyer (QS!)
-				["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
-				["description"] = "Rewarded within the first few wins in queued PvP Content.",
+				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				description = "Rewarded within the first few wins in queued PvP Content.",
 			}),
 			i(271341, {	-- Galactic Voidsliver
-				["timeline"] = { ADDED_12_0_5, REMOVED_12_0_7 },
-				["groups"] = { i(271342) },	-- Galactic Void Matrix
+				timeline = { ADDED_12_0_5, REMOVED_12_0_7 },
+				groups = { i(271342) },	-- Galactic Void Matrix
 			}),
 		}),
 	}),

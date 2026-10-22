@@ -7,10 +7,10 @@ root(ROOTS.Zones, {
 		m(AZSUNA, {
 			n(ACHIEVEMENTS, {
 				ach(11261, {	-- Adventurer of Azsuna
-					["sym"] = {{ "achievement_criteria" }},
+					sym = {{ "achievement_criteria" }},
 				}),
 				ach(10763, {	-- Azsuna Matata
-					["sym"] = {{ "achievement_criteria" }},
+					sym = {{ "achievement_criteria" }},
 				}),
 				ach(10665),	-- Explore Azsuna
 				ach(10778),	-- The Nightfallen

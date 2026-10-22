@@ -260,9 +260,9 @@ local EncounterToLoot = {
 		-- Has special ItemAppearanceModifierID assignments
 		-- i(204465),	-- Voice of the Silent Star
 		i(217408, {	-- Awakened Tempostone
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
-			["sym"] = GET_SYM_DF_S4_TIER_TOKENS(),
-			["up"] = IGNORED_VALUE,
+			timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+			sym = GET_SYM_DF_S4_TIER_TOKENS(),
+			up = IGNORED_VALUE,
 		}),
 	},
 };
@@ -285,8 +285,8 @@ InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, Instanc
 
 -- #if AFTER 12.0.5
 InstanceHelper.LFRQueueNPC = {	-- Queue NPC
-	["crs"] = { 262873 },	-- Luka Ferad <Storyteller>
-	["coord"] = { 58.5, 35.4, VALDRAKKEN },
+	crs = { 262873 },	-- Luka Ferad <Storyteller>
+	coord = { 58.5, 35.4, VALDRAKKEN },
 }
 -- #endif
 
@@ -294,9 +294,9 @@ local TIMELINE_LFR = { ADDED_10_1_0, REMOVED_11_0_2, ADDED_12_0_5 }
 
 root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1208, {	-- Aberrus, the Shadowed Crucible
-		["coord"] = { 48.6, 10.2, ZARALEK_CAVERN },
-		["timeline"] = { ADDED_10_1_0 },
-		["maps"] = {
+		coord = { 48.6, 10.2, ZARALEK_CAVERN },
+		timeline = { ADDED_10_1_0 },
+		maps = {
 			2166,	-- Molten Crucible
 			2167,	-- Onyx Laboratory
 			2168,	-- Defiant Ramparts
@@ -304,73 +304,73 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			2170,	-- Edge of Oblivion
 			2211,	-- Aberrus, the Shadowed Crucible (reported in #retail-errors on 3-July-2024)
 		},
-		["isRaid"] = true,
-		["groups"] = {
+		isRaid = true,
+		groups = {
 			header(HEADERS.Item, 204177, {	-- Nasz'uro, the Unbound Legacy
 				i(204274, {	-- Ancient Memories
-					["description"] = "You need to find an Evoker who is doing this quest.",
-					["groups"] = {
+					description = "You need to find an Evoker who is doing this quest.",
+					groups = {
 						r(407161, {	-- Immaculate Coalescing Dracothyst
-							["requireSkill"] = JEWELCRAFTING,
-							["u"] = TRAINING,
+							requireSkill = JEWELCRAFTING,
+							u = TRAINING,
 						}),
 						r(407170, {	-- Inspired Order Recalibrator
-							["requireSkill"] = ENGINEERING,
-							["u"] = TRAINING,
+							requireSkill = ENGINEERING,
+							u = TRAINING,
 						}),
 						r(409224, {	-- Reclaimed Gauntlet Chassis
-							["requireSkill"] = BLACKSMITHING,
-							["u"] = TRAINING,
+							requireSkill = BLACKSMITHING,
+							u = TRAINING,
 						}),
 					},
 				}),
 				i(205257, {	-- Temporal Vestigial
-					["description"] = "May drop from open world content. World Bosses drop 10 and rares drop 3.",
+					description = "May drop from open world content. World Bosses drop 10 and rares drop 3.",
 				}),
 				n(QUESTS, bubbleDownSelf({
-					["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
-					["classes"] = { EVOKER },
+					races = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+					classes = { EVOKER },
 				}, {
 					q(74912, {	-- Neltharion's Legacy
-						["provider"] = { "i", 204255 },	-- Cracked Titan Gem
+						provider = { "i", 204255 },	-- Cracked Titan Gem
 					}),
 					q(74913, {	-- Memories of an Artifact
-						["sourceQuests"] = { 74912 },	-- Neltharion's Legacy
-						["provider"] = { "n", 187669 },	-- Nozdormu
-						["coord"] = { 60.8, 39.2, VALDRAKKEN },
+						sourceQuests = { 74912 },	-- Neltharion's Legacy
+						provider = { "n", 187669 },	-- Nozdormu
+						coord = { 60.8, 39.2, VALDRAKKEN },
 					}),
 					q(74923, {	-- It Takes a Village to Make an Artifact
-						["sourceQuests"] = { 74913 },	-- Memories of an Artifact
-						["provider"] = { "n", 187669 },	-- Nozdormu
-						["coord"] = { 60.8, 39.2, VALDRAKKEN },
-						["cost"] = {
+						sourceQuests = { 74913 },	-- Memories of an Artifact
+						provider = { "n", 187669 },	-- Nozdormu
+						coord = { 60.8, 39.2, VALDRAKKEN },
+						cost = {
 							{ "i", 204854, 1 },	-- 1x Immaculate Coalescing Dracothyst
 							{ "i", 204856, 1 },	-- 1x Inspired Order Recalibrator
 							{ "i", 204832, 1 },	-- 1x Reclaimed Gauntlet Chassis
 						},
-						["groups"] = {
+						groups = {
 							i(204274, {	-- Ancient Memories
 								i(206163),	-- Temporal Gossamer
 							}),
 						},
 					}),
 					q(76158, {	-- Temporal Gossamer
-						["sourceQuests"] = { 74913 },	-- Memories of an Artifact
-						["provider"] = { "i", 206163 },	-- Temporal Gossamer
-						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_7 },
-						["qis"] = {
+						sourceQuests = { 74913 },	-- Memories of an Artifact
+						provider = { "i", 206163 },	-- Temporal Gossamer
+						timeline = { ADDED_10_1_0, REMOVED_10_2_7 },
+						qis = {
 							206165,	-- Major Resonating Vestigial (QI!)
 							206166,	-- Strong Resonating Vestigial (QI!)
 							206164,	-- Weak Resonating Vestigial (QI!)
 						},
-						["groups"] = { i(204808) },	-- Empowered Temporal Gossamer
+						groups = { i(204808) },	-- Empowered Temporal Gossamer
 					}),
 					q(74924, {	-- Nasz'uro, the Unbound Legacy
-						["sourceQuests"] = { 74923 },	-- It Takes a Village to Make an Artifact
-						["provider"] = { "n", 187669 },	-- Nozdormu
-						["coord"] = { 60.8, 39.2, VALDRAKKEN },
-						["maps"] = { 2176 },	-- The Maelstrom
-						["groups"] = {
+						sourceQuests = { 74923 },	-- It Takes a Village to Make an Artifact
+						provider = { "n", 187669 },	-- Nozdormu
+						coord = { 60.8, 39.2, VALDRAKKEN },
+						maps = { 2176 },	-- The Maelstrom
+						groups = {
 							i(204177),	-- Nasz'uro, the Unbound Legacy
 							ach(18256),	-- Nasz'uro, the Unbound Legacy
 						},
@@ -380,100 +380,100 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			n(ACHIEVEMENTS, {
 				ach(18163, {	-- Discarded Works
 					crit(58866, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2522, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58867, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2529, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58868, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2530, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(18164, {	-- Fury of Giants
 					crit(58869, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2524, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58870, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2525, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58871, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2532, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(18165, {	-- Neltharion's Shadow
 					crit(58881, {	-- Magmorax
-						["_encounter"] = { 2527, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2527, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58882, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2523, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(18167, {	-- Edge of the Void
 					crit(58883, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2520, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(18160, {	-- Aberrus, the Shadowed Crucible
 					crit(58866, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2522, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58867, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2529, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58868, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2530, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58869, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2524, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58870, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2525, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58871, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2532, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58881, {	-- Magmorax
-						["_encounter"] = { 2527, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2527, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58882, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2523, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(58883, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { 2520, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(18161, {	-- Heroic: Aberrus, the Shadowed Crucible
 					crit(59573, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2522, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59574, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2529, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59575, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2530, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59576, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2524, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59577, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2525, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59578, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2532, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59579, {	-- Magmorax
-						["_encounter"] = { 2527, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2527, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59580, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2523, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(59581, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2520, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				}),
 				ach(18162, {	-- Mythic: Aberrus, the Shadowed Crucible
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						18151,	-- Mythic: Kazzara, the Hellforged
 						18152,	-- Mythic: The Amalgamation Chamber
 						18153,	-- Mythic: The Forgotten Experiments
@@ -487,7 +487,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				ach(18251, {	-- Glory of the Aberrus Raider
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						18229,	-- Cosplate
 						18168,	-- I'll Make My Own Shadowflame
 						18173,	-- Tabula Rasa
@@ -498,99 +498,99 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						18149,	-- Objects in Transit May Shatter
 						17877,	-- We'll Never See That Again, Surely
 					}},
-					["groups"] = {
+					groups = {
 						i(205205),	-- Shadowflame Shalewing (MOUNT!)
 					},
 				}),
 				ach(17878, {	-- Me Want Bite
-					["provider"] = { "i", 205684 },	-- Forbidden Flounder
+					provider = { "i", 205684 },	-- Forbidden Flounder
 				}),
 				-- Awakened
-				ach(19567, applyDataSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Awakened Shadows
+				ach(19567, applyDataSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Awakened Shadows
 					crit(64957, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { 2522, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64958, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { 2529, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64959, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { 2530, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64960, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { 2524, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64961, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { 2525, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64962, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { 2532, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64963, {	-- Magmorax
-						["_encounter"] = { 2527, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { 2527, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64964, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { 2523, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64965, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { 2520, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 				})),
-				ach(19568, applyDataSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Heroic: Awakened Shadows
+				ach(19568, applyDataSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Heroic: Awakened Shadows
 					crit(64966, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2522, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64967, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2529, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64968, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2530, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64969, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2524, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64970, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2525, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64971, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2532, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64972, {	-- Magmorax
-						["_encounter"] = { 2527, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2527, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64973, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2523, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64974, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { 2520, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				})),
-				ach(19569, applyDataSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mythic: Awakened Shadows
+				ach(19569, applyDataSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mythic: Awakened Shadows
 					crit(64975, {	-- Kazzara, the Hellforged
-						["_encounter"] = { 2522, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2522, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64976, {	-- The Amalgamation Chamber
-						["_encounter"] = { 2529, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2529, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64977, {	-- The Forgotten Experiments
-						["_encounter"] = { 2530, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2530, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64978, {	-- Assault of the Zaqali
-						["_encounter"] = { 2524, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2524, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64979, {	-- Rashok, the Elder
-						["_encounter"] = { 2525, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2525, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64980, {	-- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2532, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64981, {	-- Magmorax
-						["_encounter"] = { 2527, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2527, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64982, {	-- Echo of Neltharion
-						["_encounter"] = { 2523, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2523, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64983, {	-- Scalecommander Sarkareth
-						["_encounter"] = { 2520, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { 2520, DIFFICULTY.RAID.MYTHIC },
 					}),
 				})),
 				ach(17765),	-- What We Wear In The Shadowflame
@@ -602,10 +602,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			-- #if BEFORE 11.0.0
 			n(VENDORS, {
 				n(205676, {	-- Norzko the Proud
-					["coord"] = { 52.0, 25.6, ZARALEK_CAVERN },
-					["groups"] = bubbleDownFiltered({
-						["cost"] = { { "i", 204843, 1 } },	-- Draconic Mark of Mastery
-						["bonusID"] = 7532,
+					coord = { 52.0, 25.6, ZARALEK_CAVERN },
+					groups = bubbleDownFiltered({
+						cost = { { "i", 204843, 1 } },	-- Draconic Mark of Mastery
+						bonusID = 7532,
 					},FILTERFUNC_itemID,{
 						cl(DEATHKNIGHT, {
 							i(205810),	-- Lingering Phantom's Dreadhorns
@@ -704,22 +704,22 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			-- #endif
 			-- #endif
 			o(382621, {	-- Revival Catalyst Console
-				["description"] = "The Revival Catalyst is a system that lets you convert non-set items from the Aberrus Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
-				["coord"] = { 60.6, 53.8, THALDRASZUS },
-				["modelScale"] = 4,
-				["catalystID"] = 6,	-- ItemBonus.Value_0 DF:S2
-				["groups"] = {
+				description = "The Revival Catalyst is a system that lets you convert non-set items from the Aberrus Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+				coord = { 60.6, 53.8, THALDRASZUS },
+				modelScale = 4,
+				catalystID = 6,	-- ItemBonus.Value_0 DF:S2
+				groups = {
 					Difficulty(DIFFICULTY.RAID.LFR, {
-						["upgradeTrackID"]=UPGRADETRACKS.VETERAN,
-						["timeline"] = TIMELINE_LFR}).AddGroups(ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.LFR)
+						upgradeTrackID=UPGRADETRACKS.VETERAN,
+						timeline = TIMELINE_LFR}).AddGroups(ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.LFR)
 					),
-					Difficulty(DIFFICULTY.RAID.NORMAL, {["upgradeTrackID"]=UPGRADETRACKS.CHAMPION}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.NORMAL, {upgradeTrackID=UPGRADETRACKS.CHAMPION}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.NORMAL)
 					),
-					Difficulty(DIFFICULTY.RAID.HEROIC, {["upgradeTrackID"]=UPGRADETRACKS.HERO}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.HEROIC, {upgradeTrackID=UPGRADETRACKS.HERO}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.HEROIC)
 					),
-					Difficulty(DIFFICULTY.RAID.MYTHIC, {["upgradeTrackID"]=UPGRADETRACKS.MYTH}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.MYTHIC, {upgradeTrackID=UPGRADETRACKS.MYTH}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.MYTHIC)
 					),
 				},
@@ -780,11 +780,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					i(206955),	-- Highland Drake: Embodiment of the Hellforged (MM!) [LFR, Normal, Heroic]
 				}),
 			}),
-			Difficulty(DIFFICULTY.RAID.LFR, {["timeline"] = TIMELINE_LFR}).AddGroups({
+			Difficulty(DIFFICULTY.RAID.LFR, {timeline = TIMELINE_LFR}).AddGroups({
 				ZoneDrops({
 					i(204075, {	-- Whelping's Shadowflame Crest Fragment
-						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
-						["up"] = IGNORED_VALUE,
+						timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
+						up = IGNORED_VALUE,
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 2399, {	-- Discarded Works
@@ -804,8 +804,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				header(HEADERS.LFGDungeon, 2402, {	-- Edge of the Void
 					Boss(SARKARETH, {
 						i(206046, {	-- Void-Touched Curio
-							["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.LFR}},
-							["up"] = IGNORED_VALUE,
+							sym = {{"sub","instance_tier",1208,DIFFICULTY.RAID.LFR}},
+							up = IGNORED_VALUE,
 						}),
 						i(204465),	-- Voice of the Silent Star
 					}),
@@ -814,12 +814,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(KAZZARA, {
 					ach(18229, {	-- Cosplate
-						["crs"] = { 205674 },	-- Molten Vortex
+						crs = { 205674 },	-- Molten Vortex
 					}),
 				}),
 				BossOnly(AMALGAMATION, {
 					ach(18168, {	-- I'll Make My Own Shadowflame
-						["crs"] = {
+						crs = {
 							205377,	-- Forgotten Specimen Tank
 							205378,	-- Shadowflame Remnant
 						},
@@ -827,12 +827,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				BossOnly(EXPERIMENTS, {
 					ach(18173, {	-- Tabula Rasa
-						["crs"] = { 205352 },	-- Nutraal
+						crs = { 205352 },	-- Nutraal
 					}),
 				}),
 				BossOnly(ASSAULT, {
 					ach(18228, {	-- Are You Even Trying?
-						["crs"] = {
+						crs = {
 							201340,	-- Cave Rubble
 							205664,	-- Magma Slug
 							205663,	-- Rock Snail
@@ -845,22 +845,22 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				BossOnly(RASHOK, {
 					ach(18230, {	-- Whac-A-Swog
-						["crs"] = { 205630 },	-- Lost Lunker
+						crs = { 205630 },	-- Lost Lunker
 					}),
 				}),
 				BossOnly(ZSKARN, {
 					ach(18193, {	-- Eggscellent Eggsecution
-						["provider"] = { "o", 402841 },	-- Delicate Experimental Egg
+						provider = { "o", 402841 },	-- Delicate Experimental Egg
 					}),
 				}),
 				BossOnly(MAGMORAX, {
 					ach(18172, {	-- Escar-Go-Go-Go
-						["crs"] = { 205437 },	-- Spicy Lava Snail
+						crs = { 205437 },	-- Spicy Lava Snail
 					}),
 				}),
 				BossOnly(NELTHARION, {
 					ach(18149, {	-- Objects in Transit May Shatter
-						["crs"] = {
+						crs = {
 							205340,	-- Expired Experiment
 							205341,	-- Stack of Scrolls
 							205342,	-- Neverburning Ebon Candle
@@ -875,16 +875,16 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(76083, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (N)
-						["provider"] = { "n", 201574 },	-- Wrathion
-						["groups"] = {
+						provider = { "n", 201574 },	-- Wrathion
+						groups = {
 							i(205994),	-- Tome of the Earth-Warder (N)
 						},
 					}),
 				}),
 				ZoneDrops({
 					i(204076, {	-- Drake's Shadowflame Crest Fragment
-						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
-						["up"] = IGNORED_VALUE,
+						timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
+						up = IGNORED_VALUE,
 					}),
 				}),
 				Boss(KAZZARA),
@@ -897,8 +897,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				Boss(NELTHARION),
 				Boss(SARKARETH, {
 					i(206046, {	-- Void-Touched Curio
-						["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.NORMAL}},
-						["up"] = IGNORED_VALUE,
+						sym = {{"sub","instance_tier",1208,DIFFICULTY.RAID.NORMAL}},
+						up = IGNORED_VALUE,
 					}),
 					i(204465, {ItemAppearanceModifierID=1}),	-- Voice of the Silent Star
 				}),
@@ -920,16 +920,16 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
 					q(76085, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (H)
-						["provider"] = { "n", 201574 },	-- Wrathion
-						["groups"] = {
+						provider = { "n", 201574 },	-- Wrathion
+						groups = {
 							i(205996),	-- Tome of the Earth-Warder (H)
 						},
 					}),
 				}),
 				ZoneDrops({
 					i(204077, {	-- Wyrm's Shadowflame Crest Fragment
-						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
-						["up"] = IGNORED_VALUE,
+						timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
+						up = IGNORED_VALUE,
 					}),
 				}),
 				Boss(KAZZARA),
@@ -941,29 +941,29 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				Boss(MAGMORAX),
 				Boss(NELTHARION),
 				Boss(SARKARETH, {
-					ach(18253, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Ahead of the Curve: Scalecommander Sarkareth
+					ach(18253, {timeline = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Ahead of the Curve: Scalecommander Sarkareth
 					i(206046, {	-- Void-Touched Curio
-						["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.HEROIC}},
-						["up"] = IGNORED_VALUE,
+						sym = {{"sub","instance_tier",1208,DIFFICULTY.RAID.HEROIC}},
+						up = IGNORED_VALUE,
 					}),
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(76086, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (M)
-						["provider"] = { "n", 201574 },	-- Wrathion
-						["groups"] = {
+						provider = { "n", 201574 },	-- Wrathion
+						groups = {
 							i(205997),	-- Tome of the Earth-Warder
 						},
 					}),
 				}),
 				ZoneDrops({
 					i(204078, {	-- Aspect's Shadowflame Crest Fragment
-						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+						timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
 					}),
 				}),
 				n(ZONE_DROPS, sharedData({	-- First 2 weeks BoP version drops
-					["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 },
+					timeline = { ADDED_10_1_0, REMOVED_10_1_0 },
 				},{
 					i(204413),	-- Bands of Purified Purpose
 					i(204412),	-- Crucible Curator's Wingspan
@@ -1002,14 +1002,14 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					ach(18159, {	-- Mythic: Scalecommander Sarkareth
 						title(505),	-- <Name>, Heir to the Void
 					}),
-					ach(18176, applyDataSelf({["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {	-- Hall of Fame: Scalecommander Sarkareth
+					ach(18176, applyDataSelf({timeline = { ADDED_10_1_0, REMOVED_10_2_0 } }, {	-- Hall of Fame: Scalecommander Sarkareth
 						title(506),	-- <Name>, Famed Slayer of Sarkareth
 					})),
-					ach(18254, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Cutting Edge: Scalecommander Sarkareth
+					ach(18254, {timeline = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Cutting Edge: Scalecommander Sarkareth
 					ach(18179),	-- Mythic: Scalecommander Sarkareth Guild Run
 					i(205876),	-- Highland Drake: Embodiment of the Hellforged (MM!) [Mythic]
 					i(206046, {	-- Void-Touched Curio
-						["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.MYTHIC}},
+						sym = {{"sub","instance_tier",1208,DIFFICULTY.RAID.MYTHIC}},
 					}),
 				}),
 			}),
@@ -1019,8 +1019,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	inst(1208, {	-- Aberrus, the Shadowed Crucible
-		["timeline"] = { ADDED_10_1_0 },
-		["groups"] = {
+		timeline = { ADDED_10_1_0 },
+		groups = {
 			-- Normal
 			q(75732),	-- Kazzara
 			q(75733),	-- The Amalgamation Chamber

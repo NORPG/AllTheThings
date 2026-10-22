@@ -22,9 +22,9 @@ local STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER = createHeader({
 });
 
 root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER, {
-	["timeline"] = { ADDED_1_7_0 },
-	["description"] = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",
-	["maps"] = {
+	timeline = { ADDED_1_7_0 },
+	description = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",
+	maps = {
 		-- #if AFTER CATA
 		NORTHERN_STRANGLETHORN,
 		THE_CAPE_OF_STRANGLETHORN,
@@ -32,187 +32,187 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 		STRANGLETHORN_VALE,
 		-- #endif
 	},
-	["groups"] = {
+	groups = {
 		n(ACHIEVEMENTS, {
 			ach(306, {	-- Master Angler of Azeroth
 				-- #if BEFORE WRATH
-				["providers"] = {
+				providers = {
 					{ "i", 19970 },	-- Arcanite Fishing Pole
 					{ "i", 19979 },	-- Hook of the Master Angler
 				},
 				-- #endif
-				["requireSkill"] = FISHING,
+				requireSkill = FISHING,
 			}),
 		}),
 		n(QUESTS, {
 			q(8194, {	-- Apprentice Angler
-				["qg"] = 15078,	-- Jang <Fishmaster Apprentice>
-				["coords"] = {
+				qg = 15078,	-- Jang <Fishmaster Apprentice>
+				coords = {
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["cost"] = { { "i", 19807, 5 } },	-- Speckled Tastyfish
-				["requireSkill"] = FISHING,
-				["repeatable"] = true,
+				cost = { { "i", 19807, 5 } },	-- Speckled Tastyfish
+				requireSkill = FISHING,
+				repeatable = true,
 			}),
 			q(8229, {	-- Could I get a Fishing Flier?
-				["qg"] = 15119,	-- Barrus <Fishing Promoter>
-				["coord"] = { 28.2, 74.4, IRONFORGE },
-				["requireSkill"] = FISHING,
-				["races"] = ALLIANCE_ONLY,
-				["repeatable"] = true,
-				["lvl"] = lvlsquish(35, 35, 15),
-				["groups"] = {
+				qg = 15119,	-- Barrus <Fishing Promoter>
+				coord = { 28.2, 74.4, IRONFORGE },
+				requireSkill = FISHING,
+				races = ALLIANCE_ONLY,
+				repeatable = true,
+				lvl = lvlsquish(35, 35, 15),
+				groups = {
 					i(19978),	-- Fishing Tournament!
 				},
 			}),
 			q(8228, {	-- Could I get a Fishing Flier?
-				["qg"] = 15116,	-- Grinkle <Fishing Promoter>
-				["coord"] = { 52.4, 73.0, ORGRIMMAR },
-				["requireSkill"] = FISHING,
-				["races"] = HORDE_ONLY,
-				["repeatable"] = true,
-				["lvl"] = lvlsquish(35, 35, 15),
-				["groups"] = {
+				qg = 15116,	-- Grinkle <Fishing Promoter>
+				coord = { 52.4, 73.0, ORGRIMMAR },
+				requireSkill = FISHING,
+				races = HORDE_ONLY,
+				repeatable = true,
+				lvl = lvlsquish(35, 35, 15),
+				groups = {
 					i(19978),	-- Fishing Tournament!
 				},
 			}),
 			q(8193, {	-- Master Angler / Grand Prize (after 5.1.0)
-				["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
-				["coords"] = {
+				qg = 15077,	-- Riggle Bassbait <Fishmaster>
+				coords = {
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["cost"] = { { "i", 19807, 40 } },	-- Speckled Tastyfish
-				["_drop"] = { "g" },	-- API lists all quest rewards despite not being available in classic
-				["requireSkill"] = FISHING,
-				["repeatable"] = true,
-				["groups"] = {
+				cost = { { "i", 19807, 40 } },	-- Speckled Tastyfish
+				_drop = { "g" },	-- API lists all quest rewards despite not being available in classic
+				requireSkill = FISHING,
+				repeatable = true,
+				groups = {
 					i(19970),	-- Arcanite Fishing Pole
 					i(19979),	-- Hook of the Master Angler
 					i(50287, {	-- Boots of the Bay
-						["timeline"] = { ADDED_5_1_0 },
+						timeline = { ADDED_5_1_0 },
 					}),
 					i(50255, {	-- Dread Pirate Ring
-						["timeline"] = { ADDED_5_1_0, REMOVED_6_1_0 },
+						timeline = { ADDED_5_1_0, REMOVED_6_1_0 },
 					}),
 					i(122529, {	-- Dread Pirate Ring
-						["timeline"] = { ADDED_6_1_0 },
+						timeline = { ADDED_6_1_0 },
 					}),
 				},
 			}),
 			q(8225, {	-- Rare Fish - Brownell's Blue Striped Racer
-				["qg"] = 15079,	-- Fishbot 5000
-				["coords"] = {
+				qg = 15079,	-- Fishbot 5000
+				coords = {
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["cost"] = { { "i", 19803, 1 } },	-- Brownell's Blue Striped Racer
-				["requireSkill"] = FISHING,
-				["repeatable"] = true,
-				["groups"] = {
+				cost = { { "i", 19803, 1 } },	-- Brownell's Blue Striped Racer
+				requireSkill = FISHING,
+				repeatable = true,
+				groups = {
 					i(19969),	-- Nat Pagle's Extreme Anglin' Boots
 				},
 			}),
 			q(8224, {	-- Rare Fish - Dezian Angelfish
-				["qg"] = 15079,	-- Fishbot 5000
-				["coords"] = {
+				qg = 15079,	-- Fishbot 5000
+				coords = {
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["cost"] = { { "i", 19806, 1 } },	-- Dezian Angelfish
-				["requireSkill"] = FISHING,
-				["repeatable"] = true,
-				["groups"] = {
+				cost = { { "i", 19806, 1 } },	-- Dezian Angelfish
+				requireSkill = FISHING,
+				repeatable = true,
+				groups = {
 					i(19971),	-- High Test Eternium Fishing Line
 				},
 			}),
 			q(8221, {	-- Rare Fish - Keefer's Angelfish
-				["qg"] = 15079,	-- Fishbot 5000
-				["coords"] = {
+				qg = 15079,	-- Fishbot 5000
+				coords = {
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["cost"] = { { "i", 19805, 1 } },	-- Keefer's Angelfish
-				["requireSkill"] = FISHING,
-				["repeatable"] = true,
-				["groups"] = {
+				cost = { { "i", 19805, 1 } },	-- Keefer's Angelfish
+				requireSkill = FISHING,
+				repeatable = true,
+				groups = {
 					i(19972),	-- Lucky Fishing Hat
 				},
 			}),
 			-- #if AFTER 5.1.0
 			q(32435, {	-- Second Prize
-				["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
-				["coords"] = {
+				qg = 15077,	-- Riggle Bassbait <Fishmaster>
+				coords = {
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["timeline"] = { ADDED_5_1_0, REMOVED_7_1_0 },
-				["cost"] = { { "i", 19807, 40 } },	-- Speckled Tastyfish
-				["requireSkill"] = FISHING,
-				["repeatable"] = true,
-				["groups"] = {
+				timeline = { ADDED_5_1_0, REMOVED_7_1_0 },
+				cost = { { "i", 19807, 40 } },	-- Speckled Tastyfish
+				requireSkill = FISHING,
+				repeatable = true,
+				groups = {
 					i(50287, {	-- Boots of the Bay
-						["timeline"] = { ADDED_5_1_0 },
+						timeline = { ADDED_5_1_0 },
 					}),
 					i(50255, {	-- Dread Pirate Ring
-						["timeline"] = { ADDED_5_1_0, REMOVED_6_1_0 },
+						timeline = { ADDED_5_1_0, REMOVED_6_1_0 },
 					}),
 					i(122529, {	-- Dread Pirate Ring
-						["timeline"] = { ADDED_6_1_0, REMOVED_7_1_0 },
+						timeline = { ADDED_6_1_0, REMOVED_7_1_0 },
 					}),
 					i(19971),	-- High Test Eternium Fishing Line
 				},
 			}),
 			q(32436, {	-- Third Prize
-				["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
-				["coords"] = {
+				qg = 15077,	-- Riggle Bassbait <Fishmaster>
+				coords = {
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["timeline"] = { ADDED_5_1_0, REMOVED_7_1_0 },
-				["cost"] = { { "i", 19807, 40 } },	-- Speckled Tastyfish
-				["requireSkill"] = FISHING,
-				["repeatable"] = true,
-				["groups"] = {
+				timeline = { ADDED_5_1_0, REMOVED_7_1_0 },
+				cost = { { "i", 19807, 40 } },	-- Speckled Tastyfish
+				requireSkill = FISHING,
+				repeatable = true,
+				groups = {
 					i(19971),	-- High Test Eternium Fishing Line
 				},
 			}),
 			-- #endif
 			q(44765, {	-- Stranglethorn Fishing Extravaganza
-				["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
-				["coords"] = {
+				qg = 15077,	-- Riggle Bassbait <Fishmaster>
+				coords = {
 					-- #if AFTER CATA
 					{ 41.4, 73.0, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					{ 27.4, 76.9, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				["timeline"] = { ADDED_7_1_0 },
-				["requireSkill"] = FISHING,
-				["isWorldQuest"] = true,
-				["groups"] = {
+				timeline = { ADDED_7_1_0 },
+				requireSkill = FISHING,
+				isWorldQuest = true,
+				groups = {
 					i(19970),	-- Arcanite Fishing Pole
 					i(50287),	-- Boots of the Bay
 					i(122529),	-- Dread Pirate Ring
@@ -224,18 +224,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 		prof(FISHING, {
 			-- #if AFTER 5.1.0
 			n(SPECIAL, {
-				["description"] = "Tastyfish and the other special event fish can be fished up from any pool within Stranglethorn for two hours once the event has started, even if winners have been found.",
-				["providers"] = {
+				description = "Tastyfish and the other special event fish can be fished up from any pool within Stranglethorn for two hours once the event has started, even if winners have been found.",
+				providers = {
 					{ "o", 180901 },	-- Bloodsail Wreckage
 					{ "o", 216761 },	-- Mixed Ocean School
 					{ "o", 216764 },	-- Sagefish School
 				},
-				["groups"] = {
+				groups = {
 					i(19803),	-- Brownell's Blue Striped Racer
 					i(19806),	-- Dezian Queenfish
 					i(19805),	-- Keefer's Angelfish
 					i(19808, {	-- Rockhide Strongfish
-						["description"] =
+						description =
 							-- #if BEFORE LEGION
 							"Keep this in your bank until Transmog is added, otherwise you'll need to obtain it again. Fair warning!",
 							-- #elseif AFTER TWW
@@ -244,7 +244,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 							nil,
 							-- #endif
 						-- #if AFTER TWW
-						["collectible"] = false,	-- remove when Blizzard fix fish collection
+						collectible = false,	-- remove when Blizzard fix fish collection
 						-- #endif
 					}),
 					i(19807),	-- Speckled Tastyfish

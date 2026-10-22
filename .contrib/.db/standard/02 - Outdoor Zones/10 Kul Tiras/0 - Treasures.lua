@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 	m(KUL_TIRAS, {
 		n(TREASURES, {
 			o_repeated(bubbleDownFiltered({	-- Small Treasure Chest
-				["isDaily"] = true,
+				isDaily = true,
 			},FILTERFUNC_questID,{
 				-- Items
 				i(161207),	-- Admiral's Black Rum
@@ -26,89 +26,89 @@ root(ROOTS.Zones, {
 				i(163093),	-- Witch's Ritual Chalk
 				-- Objects
 				o(291225, {	-- Small Treasure Chest
-					["questID"] = 51907,
-					["coords"] = {
+					questID = 51907,
+					coords = {
 						{ 29.4, 22.6, DRUSTVAR },
 						{ 30.0, 26.9, DRUSTVAR },
 					},
 				}),
 				o(291227, {	-- Small Treasure Chest
-					["questID"] = 51911,
-					["coords"] = {
+					questID = 51911,
+					coords = {
 						{ 25.5, 40.5, DRUSTVAR },
 						{ 25.6, 36.6, DRUSTVAR },
 					},
 				}),
 				o(291217, {	-- Small Treasure Chest
-					["coords"] = {
+					coords = {
 						{ 65.1, 51.9, DRUSTVAR },
 						{ 67.6, 57.5, DRUSTVAR },
 					},
 				}),
 				o(291223, {	-- Small Treasure Chest
-					--["questID"] = 51899,
-					["coords"] = {
+					--questID = 51899,
+					coords = {
 						{ 69.6, 64.9, DRUSTVAR },
 						{ 71.6, 58.1, DRUSTVAR },
 					},
 				}),
 				o(291224, {	-- Small Treasure Chest
-					["questID"] = 51902,
-					["coords"] = {
+					questID = 51902,
+					coords = {
 						{ 31.0, 17.1, DRUSTVAR },
 						{ 33.3, 16.7, DRUSTVAR },
 					},
 				}),
 				o(291228, {	-- Small Treasure Chest
-					["questID"] = 51912,
-					["coords"] = {
+					questID = 51912,
+					coords = {
 						{ 18.5, 54.3, DRUSTVAR },
 					},
 				}),
 				o(291229, {	-- Small Treasure Chest
-					["questID"] = 51913,
-					["coords"] = {
+					questID = 51913,
+					coords = {
 						{ 32.0, 57.6, DRUSTVAR },
 					},
 				}),
 				o(291230, {	-- Small Treasure Chest
-					["questID"] = 51914,
-					["coords"] = {
+					questID = 51914,
+					coords = {
 						{ 38.1, 63.5, DRUSTVAR },
 					},
 				}),
 				o(291204, {	-- Small Treasure Chest
-					["coord"] = { 55.3, 27.1, DRUSTVAR },
+					coord = { 55.3, 27.1, DRUSTVAR },
 				}),
 				o(291201, {	-- Small Treasure Chest
-					["coord"] = { 66.1, 24.2, DRUSTVAR },
+					coord = { 66.1, 24.2, DRUSTVAR },
 				}),
 				o(287531, {	-- Small Treasure Chest
-					["questID"] = 51184,
-					["coords"] = {
+					questID = 51184,
+					coords = {
 						{ 61.3, 63.2, STORMSONG_VALLEY },
 						{ 64.9, 60.2, STORMSONG_VALLEY },
 					},
 				}),
 				o(291244, {	-- Small Treasure Chest
-					["questID"] = 51927,
-					["coords"] = {
+					questID = 51927,
+					coords = {
 						{ 69.9, 52.6, STORMSONG_VALLEY },
 						{ 70.2, 59.1, STORMSONG_VALLEY },
 						{ 70.6, 51.2, STORMSONG_VALLEY },
 					},
 				}),
 				o(291246, {	-- Small Treasure Chest
-					["questID"] = 51930,
-					["coords"] = {
+					questID = 51930,
+					coords = {
 						{ 66.1, 45.3, STORMSONG_VALLEY },
 						{ 66.8, 43.7, STORMSONG_VALLEY },
 						{ 66.9, 42.6, STORMSONG_VALLEY },
 					},
 				}),
 				o(291254, {	-- Small Treasure Chest
-					["questID"] = 51935,
-					["coords"] = {
+					questID = 51935,
+					coords = {
 						{ 59.3, 42.5, STORMSONG_VALLEY },
 						{ 59.8, 39.1, STORMSONG_VALLEY },
 						{ 62.0, 40.1, STORMSONG_VALLEY },
@@ -116,15 +116,15 @@ root(ROOTS.Zones, {
 					},
 				}),
 				o(291255, {	-- Small Treasure Chest
-					["questID"] = 51938,
-					["coords"] = {
+					questID = 51938,
+					coords = {
 						{ 74.1, 32.1, STORMSONG_VALLEY },
 						{ 76.2, 37.1, STORMSONG_VALLEY },
 					},
 				}),
 				o(291257, {	-- Small Treasure Chest
-					["questID"] = 51939,
-					["coords"] = {
+					questID = 51939,
+					coords = {
 						{ 64.4, 70.2, STORMSONG_VALLEY },
 						{ 65.9, 75.7, STORMSONG_VALLEY },
 						{ 66.4, 68.2, STORMSONG_VALLEY },
@@ -142,8 +142,8 @@ root(ROOTS.Zones, {
 					},
 				}),
 				o(291258, {	-- Small Treasure Chest
-					["questID"] = 51940,
-					["coords"] = {
+					questID = 51940,
+					coords = {
 						{ 47.7, 64.7, STORMSONG_VALLEY },
 						{ 49.8, 66.1, STORMSONG_VALLEY },
 						{ 50.4, 62.6, STORMSONG_VALLEY },
@@ -151,51 +151,51 @@ root(ROOTS.Zones, {
 					},
 				}),
 				o(291259, {	-- Small Treasure Chest
-					["questID"] = 51941,
-					["coords"] = {
+					questID = 51941,
+					coords = {
 						{ 39.0, 58.2, STORMSONG_VALLEY },
 						{ 42.0, 60.7, STORMSONG_VALLEY },
 					},
 				}),
 				o(291263, {	-- Small Treasure Chest
-					["questID"] = 51942,
-					["coords"] = {
+					questID = 51942,
+					coords = {
 						{ 51.2, 47.8, 1183 },
 						{ 57.8, 54.1, 1183 },
 					},
 				}),
 				o(291264, {	-- Small Treasure Chest
-					["questID"] = 51943,
-					["coords"] = {
+					questID = 51943,
+					coords = {
 						{ 34.3, 75.9, STORMSONG_VALLEY },
 						{ 34.1, 69.4, STORMSONG_VALLEY },
 					},
 				}),
 				o(291265, {	-- Small Treasure Chest
-					["questID"] = 51944,
-					["coords"] = {
+					questID = 51944,
+					coords = {
 						{ 26.2, 61.9, STORMSONG_VALLEY },
 						{ 31.4, 40.6, STORMSONG_VALLEY },
 						{ 32.1, 51.6, STORMSONG_VALLEY },
 					},
 				}),
 				o(291266, {	-- Small Treasure Chest
-					["questID"] = 51945,
-					["coords"] = {
+					questID = 51945,
+					coords = {
 						{ 37.9, 44.1, STORMSONG_VALLEY },
 						{ 39.0, 44.7, STORMSONG_VALLEY },
 					},
 				}),
 				o(291267, {	-- Small Treasure Chest
-					["questID"] = 51946,
-					["coords"] = {
+					questID = 51946,
+					coords = {
 						{ 57.6, 50.9, STORMSONG_VALLEY },
 						{ 60.9, 51.2, STORMSONG_VALLEY },
 					},
 				}),
 				o(273900, {	-- Small Treasure Chest
-					["questID"] = 48593,
-					["coords"] = {
+					questID = 48593,
+					coords = {
 						{ 76.8, 75.5, TIRAGARDE_SOUND },
 						{ 76.9, 75.4, TIRAGARDE_SOUND },
 						{ 77.1, 77.3, TIRAGARDE_SOUND },
@@ -213,28 +213,28 @@ root(ROOTS.Zones, {
 					},
 				}),
 				o(273910, {	-- Small Treasure Chest
-					["questID"] = 48599,
-					["coords"] = {
+					questID = 48599,
+					coords = {
 						{ 41.9, 26.5, TIRAGARDE_SOUND },
 					},
 				}),
 				o(273956, {	-- Small Treasure Chest
-					["questID"] = 48612,
-					["coords"] = {
+					questID = 48612,
+					coords = {
 						{ 59.7, 23.0, TIRAGARDE_SOUND },
 						{ 57.4, 22.2, TIRAGARDE_SOUND },
 					},
 				}),
 				o(275070, {	-- Small Treasure Chest
-					["questID"] = 48617,
-					["coords"] = {
+					questID = 48617,
+					coords = {
 						{ 56.2, 18.9, TIRAGARDE_SOUND },
 						{ 58.5, 14.6, TIRAGARDE_SOUND },
 					},
 				}),
 				o(275071, {	-- Small Treasure Chest
-					["questID"] = 48618,
-					["coords"] = {
+					questID = 48618,
+					coords = {
 						{ 87.3, 73.8, TIRAGARDE_SOUND },
 						{ 87.8, 75.9, TIRAGARDE_SOUND },
 						{ 88.0, 79.6, TIRAGARDE_SOUND },
@@ -251,17 +251,17 @@ root(ROOTS.Zones, {
 					},
 				}),
 				o(275076, {	-- Small Treasure Chest
-					["questID"] = 48621,
-					["coords"] = {
+					questID = 48621,
+					coords = {
 						{ 45.4, 22.3, TIRAGARDE_SOUND },
 						{ 47.6, 20.5, TIRAGARDE_SOUND },
 					},
 				}),
 				o(275074, {	-- Small Treasure Chest
-					["coord"] = { 72.3, 17.0, TIRAGARDE_SOUND },
+					coord = { 72.3, 17.0, TIRAGARDE_SOUND },
 				}),
 				o(273917, {	-- Small Treasure Chest
-					["coords"] = {
+					coords = {
 						{ 78.1, 49.0, TIRAGARDE_SOUND },
 						{ 78.8, 47.6, TIRAGARDE_SOUND },
 						{ 79.2, 50.4, TIRAGARDE_SOUND },
@@ -278,10 +278,10 @@ root(ROOTS.Zones, {
 					},
 				}),
 				o(273919, {	-- Small Treasure Chest
-					["coord"] = { 70.0, 57.1, TIRAGARDE_SOUND },
+					coord = { 70.0, 57.1, TIRAGARDE_SOUND },
 				}),
 				o(273902, {	-- Small Treasure Chest
-					["coords"] = {
+					coords = {
 						{ 76.3, 80.9, TIRAGARDE_SOUND },
 						{ 76.6, 81.2, TIRAGARDE_SOUND },
 						{ 76.8, 83.5, TIRAGARDE_SOUND },

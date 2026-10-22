@@ -7,8 +7,8 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 		n(WEEKLY_HOLIDAYS, {
 			n(REWARDS, {
 				i(153504, {	-- Cache of Antoran Treasures (N)
-					["timeline"] = { ADDED_7_3_2, REMOVED_8_0_1 },
-					["sym"] = {
+					timeline = { ADDED_7_3_2, REMOVED_8_0_1 },
+					sym = {
 						{"select", "instanceID", 946},			-- Antorus
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
@@ -19,8 +19,8 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					},
 				}),
 				i(153501, {	-- Cache of Antoran Treasures (HC)
-					["timeline"] = { ADDED_7_3_2, REMOVED_8_0_1 },
-					["sym"] = {
+					timeline = { ADDED_7_3_2, REMOVED_8_0_1 },
+					sym = {
 						{"select", "instanceID", 946},			-- Antorus
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
@@ -32,11 +32,11 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				}),
 			}),
 			n(QUESTS, sharedData({
-				["provider"] = { "n", 111246 },	-- Archmage Timear
-				["coord"] = { 63.6, 55.6, LEGION_DALARAN },
-				["isWeekly"] = true,
-				["u"] = REMOVED_FROM_GAME,
-				["_drop"] = { "g" },	-- Drop Trash
+				provider = { "n", 111246 },	-- Archmage Timear
+				coord = { 63.6, 55.6, LEGION_DALARAN },
+				isWeekly = true,
+				u = REMOVED_FROM_GAME,
+				_drop = { "g" },	-- Drop Trash
 			}, {
 				q(44164),					-- A Burning Path Through Time
 				pvp(q(44173)),				-- A Call to Battle

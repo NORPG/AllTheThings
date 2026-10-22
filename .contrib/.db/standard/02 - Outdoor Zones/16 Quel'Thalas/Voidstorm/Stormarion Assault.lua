@@ -30,40 +30,40 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(EVENT_COMPLETION, {
 				o(560325, {	-- Core Chest
-					["coord"] = { 26.8, 67.9, MAP.MIDNIGHT.VOIDSTORM },
-					["questID"] = 91719,
-					["isWeekly"] = true,	-- TODO: Blizzard bug, it unflagged in next event but it's not spawn chest).
+					coord = { 26.8, 67.9, MAP.MIDNIGHT.VOIDSTORM },
+					questID = 91719,
+					isWeekly = true,	-- TODO: Blizzard bug, it unflagged in next event but it's not spawn chest).
 				}),
 			}),
 			-- World Quests
 			n(QUESTS, sharedData({
-				["isWorldQuest"] = true,
-				["coord"] = { 26.8, 67.9, MAP.MIDNIGHT.VOIDSTORM },
+				isWorldQuest = true,
+				coord = { 26.8, 67.9, MAP.MIDNIGHT.VOIDSTORM },
 			},{
 				q(90962, {	-- Stormarion Assault
-					["groups"] = {
+					groups = {
 						i(269704, {	-- Victorious Stormarion Cache (Leveling)
-							["timeline"] = { ADDED_12_0_1_SEASONSTART },
-							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+							timeline = { ADDED_12_0_1_SEASONSTART },
+							sym = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 						}),
 						i(268485, {	-- Victorious Stormarion Pinnacle Cache (Pre-Season)
-							["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
-							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+							timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
+							sym = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 						}),
 						i(260940, {	-- Victorious Stormarion Pinnacle Cache (Season 1)
-							["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
-							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+							timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+							sym = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 						}),
 						i(279526, {	-- Victorious Stormarion Pinnacle Cache (Season 2)
-							["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
-							["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+							timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
+							sym = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 						}),
 					},
 				}),
 				q(94581, {	-- Stand Your Ground
-					["groups"] = {
+					groups = {
 						i(260979, {	-- Victorious Stormarion Cache
-							["timeline"] = { ADDED_12_0_1_SEASONSTART },
+							timeline = { ADDED_12_0_1_SEASONSTART },
 						}),
 					},
 				}),
@@ -72,64 +72,64 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			-- Regular Quests
 			n(QUESTS, {
 				q(92365, {	-- Creating Defenses
-					["provider"] = { "n", 248114 },	-- Null-Theorist Selune
-					["coords"] = {
+					provider = { "n", 248114 },	-- Null-Theorist Selune
+					coords = {
 						{ 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
 						{ 26.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
 					},
-					["groups"] = {
+					groups = {
 						o(571718, {	-- Selune's Stormarion Cores
-							["coord"] = { 25.8, 68.7, MAP.MIDNIGHT.VOIDSTORM },
-							["groups"] = {
+							coord = { 25.8, 68.7, MAP.MIDNIGHT.VOIDSTORM },
+							groups = {
 								i(250807),	-- Selune's Stormarion Core (QI!)
 							},
 						}),
 					},
 				}),
 				q(95175, {	-- Anchoring the Defense
-					["sourceQuests"] = { 92365 },	-- Creating Defenses
-					["provider"] = { "n", 248114 },	-- Null-Theorist Selune
-					["coord"] = { 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
+					sourceQuests = { 92365 },	-- Creating Defenses
+					provider = { "n", 248114 },	-- Null-Theorist Selune
+					coord = { 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(86810, {	-- Harvesting the Void
-					["provider"] = { "n", 248114 },	-- Null-Theorist Selune
-					["isWeekly"] = true,
-					["coord"] = { 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
+					provider = { "n", 248114 },	-- Null-Theorist Selune
+					isWeekly = true,
+					coord = { 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(91700, {	-- Darkness Unmade
-					["qg"] = 244749,	-- Xy'dax <Shadowtrade Imports>
-					["isWeekly"] = true,
-					["coord"] = { 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
+					qg = 244749,	-- Xy'dax <Shadowtrade Imports>
+					isWeekly = true,
+					coord = { 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(92407, {	-- Hidey-Hole
-					--["sourceQuests"] = { 86810 },	-- Harvesting the Void (TODO: ???)
-					["provider"] = { "n", 248114 },	-- Null-Theorist Selune
-					["isWeekly"] = true,
-					["coords"] = {
+					--sourceQuests = { 86810 },	-- Harvesting the Void (TODO: ???)
+					provider = { "n", 248114 },	-- Null-Theorist Selune
+					isWeekly = true,
+					coords = {
 						{ 26.4, 67.5, MAP.MIDNIGHT.VOIDSTORM },
 						{ 26.8, 68.0, MAP.MIDNIGHT.VOIDSTORM },
 					},
-					["qi"] = 251284,	-- Anomaly Inverter (QI!)
+					qi = 251284,	-- Anomaly Inverter (QI!)
 				}),
 				q(91928, {	-- What's For Lunch?
-					["qg"] = 244749,	-- Xy'dax <Shadowtrade Imports>
-					["coord"] = { 26.4, 67.9, MAP.MIDNIGHT.VOIDSTORM },
-					["qi"] = 248826,	-- Trigore Flank (QI!)
-					["_drop"] = { "races", "r" },	-- Blizzard bug - bad API data, marked as alliance only
+					qg = 244749,	-- Xy'dax <Shadowtrade Imports>
+					coord = { 26.4, 67.9, MAP.MIDNIGHT.VOIDSTORM },
+					qi = 248826,	-- Trigore Flank (QI!)
+					_drop = { "races", "r" },	-- Blizzard bug - bad API data, marked as alliance only
 				}),
 				q(91929, {	-- What's For Lunch?
-					["qg"] = 244749,	-- Xy'dax <Shadowtrade Imports>
-					["coord"] = { 26.4, 67.6, MAP.MIDNIGHT.VOIDSTORM },
-					["qi"] = 248905,	-- Void Malgrease (QI!)
-					["_drop"] = { "races", "r" },	-- Blizzard bug - bad API data, marked as alliance only
+					qg = 244749,	-- Xy'dax <Shadowtrade Imports>
+					coord = { 26.4, 67.6, MAP.MIDNIGHT.VOIDSTORM },
+					qi = 248905,	-- Void Malgrease (QI!)
+					_drop = { "races", "r" },	-- Blizzard bug - bad API data, marked as alliance only
 				}),
 				q(54781, {	-- What's For Lunch?
-					["qg"] = 244749,	-- Xy'dax <Shadowtrade Imports>
-					["coord"] = { 26.4, 67.6, MAP.MIDNIGHT.VOIDSTORM },
-					["qi"] = 248927,	-- Stormray Fin (QI!)
-					["groups"] = {
+					qg = 244749,	-- Xy'dax <Shadowtrade Imports>
+					coord = { 26.4, 67.6, MAP.MIDNIGHT.VOIDSTORM },
+					qi = 248927,	-- Stormray Fin (QI!)
+					groups = {
 						o(567209, {
-							["coords"] = {
+							coords = {
 								{ 24.2, 68.1, MAP.MIDNIGHT.VOIDSTORM },
 								{ 25.2, 66.0, MAP.MIDNIGHT.VOIDSTORM },
 								{ 25.2, 69.7, MAP.MIDNIGHT.VOIDSTORM },
@@ -143,22 +143,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 								{ 29.9, 68.6, MAP.MIDNIGHT.VOIDSTORM },
 								{ 30.4, 66.9, MAP.MIDNIGHT.VOIDSTORM },
 							},
-							["groups"] = { i(248929) },	-- Domanaar Snack Pack (QI!)
+							groups = { i(248929) },	-- Domanaar Snack Pack (QI!)
 						}),
 					},
-					["_drop"] = { "races" },	-- Blizzard bug - bad API data, marked as alliance only
+					_drop = { "races" },	-- Blizzard bug - bad API data, marked as alliance only
 				}),
 			}),
 			n(REWARDS, {
 				i(246951),	-- Stormarion Core
 				i(248680),	-- Unstable Focusing Crystal
 				container(260940, {	-- Victorious Stormarion Pinnacle Cache (Season 1)
-					["providers"] = {
+					providers = {
 						{ "i", 268485 },	-- Victorious Stormarion Pinnacle Cache (Pre-Season)
 						{ "i", 260979 },	-- Victorious Stormarion Cache
 					},
-					["timeline"] = { ADDED_12_0_1_SEASONSTART },
-					["groups"] = {
+					timeline = { ADDED_12_0_1_SEASONSTART },
+					groups = {
 						i(257180),	-- Reins of Contained Stormarion Defender (MOUNT!)
 						i(265030),	-- Kai (PET!)
 						i(256761),	-- Formula: Enchant Shoulders - Voidtouched (RECIPE!)
@@ -173,11 +173,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			n(TREASURES, {
 				o(566083, {	-- Stormarion Supplies
-					["description"] = "Spawns randomly around Stormarion Citadel.",
+					description = "Spawns randomly around Stormarion Citadel.",
 				}),
 				o(618828, {	-- Stormarion Fragment
-					["coord"] = { 27.1, 68.3, MAP.MIDNIGHT.VOIDSTORM },
-					["groups"] = { i(264506) },	-- Stormarion Fragment
+					coord = { 27.1, 68.3, MAP.MIDNIGHT.VOIDSTORM },
+					groups = { i(264506) },	-- Stormarion Fragment
 				}),
 			}),
 		}),

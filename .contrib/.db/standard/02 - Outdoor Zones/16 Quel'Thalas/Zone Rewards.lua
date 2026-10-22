@@ -107,16 +107,16 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 		}),
 		--
 		i(264274, {	-- Fabled Adventurer's Cache (Pre-Season)
-			["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
-			["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+			timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART },
+			sym = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 		}),
 		i(260193, {	-- Fabled Veteran's Cache (Season 1)
-			["timeline"] = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
-			["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+			timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+			sym = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 		}),
 		i(279520, {	-- Fabled Veteran's Cache (Season 2)
-			["timeline"] = { ADDED_12_1_0, REMOVED_12_2_0 },
-			["sym"] = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
+			timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
+			sym = SYM.MIDNIGHT.QUELTHALAS_ZONE_REWARDS,
 		}),
 	}),
 }));

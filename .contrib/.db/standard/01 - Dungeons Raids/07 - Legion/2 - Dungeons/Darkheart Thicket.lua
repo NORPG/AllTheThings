@@ -2,32 +2,32 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 	inst(762, {	-- Darkheart Thicket
-		["mapID"] = 733,
-		["coord"] = { 59.0, 31.3, VALSHARAH },
-		["lvl"] = 98,
-		["groups"] = {
+		mapID = 733,
+		coord = { 59.0, 31.3, VALSHARAH },
+		lvl = 98,
+		groups = {
 			n(WORLD_QUESTS, {
 				q(42745, {	-- Darkheart Thicket: A Burden to Bear
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(42743, {	-- Darkheart Thicket: Kudzilla
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(42714, {	-- Darkheart Thicket: Mythana
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(42744, {	-- Darkheart Thicket: Preserving the Preservers
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 				q(42742, {	-- Darkheart Thicket: Rage Rot
-					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					isWorldQuest = true,
+					lvl = 110,
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
@@ -37,14 +37,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				cr(103344, e(1655, {	-- Oakheart
 					i(137307),	-- Corrupted Knot
 					i(211473, {	-- Corrupted Knot
-						["timeline"] = { ADDED_11_0_2 },
+						timeline = { ADDED_11_0_2 },
 					}),
 				})),
 				cr(99192, e(1657, {	-- Shade of Xavius
 					ach(10783),	-- Darkheart Thicket
 					i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 2] (RECIPE!)
 					i(238857, {	-- Moon-Blessed Storage Crate (DECOR!)
-						["timeline"] = { ADDED_11_2_7 },
+						timeline = { ADDED_11_2_7 },
 					}),
 					i(137876),	-- Pattern: Warhide Bindings [Rank 3] (RECIPE!)
 				})),
@@ -55,7 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					i(137853),	-- Design: Sylvan Maelstrom Amulet [Rank 3] (RECIPE!)
 				})),
 			}),
-			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
+			n(MYTHIC_PLUS, sharedDataSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 				i(211473),	-- Corrupted Knot
 			})),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
@@ -120,8 +120,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				})),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["lvl"] = 110,
-				["groups"] = {
+				lvl = 110,
+				groups = {
 					cr(96512, e(1654, {	-- Archdruid Glaidalis
 						i(134487),	-- Arch-Druid's Tainted Seal
 						i(139077),	-- Bramblemail Belt
@@ -184,9 +184,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				["ItemAppearanceModifierID"] = 0,
-				["lvl"] = 110,
-				["groups"] = {
+				ItemAppearanceModifierID = 0,
+				lvl = 110,
+				groups = {
 					cr(96512, e(1654, {	-- Archdruid Glaidalis
 						i(134487),	-- Arch-Druid's Tainted Seal
 						i(139077),	-- Bramblemail Belt
@@ -216,7 +216,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					})),
 					cr(99200, e(1656, {	-- Dresaron
 						ach(10766, {	-- Egg-cellent!
-							["crs"] = { 111008 },	-- Hatespawn Abomination
+							crs = { 111008 },	-- Hatespawn Abomination
 						}),
 						i(139082),	-- Bramblemail Greaves
 						i(137311),	-- Chain of the Green Flight

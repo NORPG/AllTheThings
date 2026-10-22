@@ -472,7 +472,7 @@ struct = function(field, id, t)		-- Construct a commonly formatted object.
 		error("Don't use 'g' or 'groups' with an array of objects! Fix Group: "..field..":"..id);
 		return;
 	elseif not t.groups and t[1] then
-		t = { ["groups"] = validateGroups(t) };
+		t = { groups = validateGroups(t) };
 	elseif t.groups then
 		validateGroups(t.groups);
 	end
@@ -569,7 +569,7 @@ togroups = function(t)
 		for _,group in ipairs(t) do
 			table.insert(groups, group);
 		end
-		return { ["groups"] = groups }
+		return { groups = groups }
 	end
 	if t.g then
 		t.groups = t.g
@@ -1129,7 +1129,7 @@ end
 bubbleDownRepSkip = function(rep, group)
 	local t = {};
 	for i,groups in ipairs(group) do
-		groups = bubbleDownFiltered({["minReputation"] = {rep, i+3}},FILTERFUNC_NoheaderID,groups)
+		groups = bubbleDownFiltered({minReputation = {rep, i+3}},FILTERFUNC_NoheaderID,groups)
 		for j,o in ipairs(groups) do
 			table.insert(t, o);
 		end
@@ -1143,7 +1143,7 @@ end
 bubbleDownRep = function(rep, group)
 	local t = {};
 	for i,groups in ipairs(group) do
-		groups = bubbleDownFiltered({["minReputation"] = {rep, i}},FILTERFUNC_NoheaderID,groups)
+		groups = bubbleDownFiltered({minReputation = {rep, i}},FILTERFUNC_NoheaderID,groups)
 		for j,o in ipairs(groups) do
 			table.insert(t, o);
 		end
@@ -1164,7 +1164,7 @@ local classicRepsMap = {
 bubbleDownClassicRep = function(rep, group)
 	local t = {};
 	for i,groups in ipairs(group) do
-		groups = bubbleDownFiltered({["minReputation"] = {rep, classicRepsMap[i]}},FILTERFUNC_NoheaderID,groups)
+		groups = bubbleDownFiltered({minReputation = {rep, classicRepsMap[i]}},FILTERFUNC_NoheaderID,groups)
 		for j,o in ipairs(groups) do
 			table.insert(t, o);
 		end
@@ -1227,7 +1227,7 @@ applyevent = function(eventID, data)
 		---@diagnostic disable-next-line: undefined-global
 		print(CurrentSubFileName or CurrentFileName);
 	end
-	return bubbleDown({ ["e"] = eventID }, data);
+	return bubbleDown({ e = eventID }, data);
 end
 -- #if ANYCLASSIC
 --- Applies a Classic phase/unobtainable value to nested data for Classic builds.
@@ -1236,7 +1236,7 @@ end
 ---@return ATTObject|ATTObjectArray
 applyclassicphase = function(phase, t)
 	if t then
-		local data = { ["u"] = phase };
+		local data = { u = phase };
 		if t --[[@as ATTObject]].g or t --[[@as ATTObject]].groups then
 			applyData(data, t);
 		elseif isarray(t) then
@@ -1850,7 +1850,7 @@ end
 ---@param t ATTObject|ATTObjectArray Object or child groups whose nested content receives the Challenge Master requirement.
 ---@return ATTObject|ATTObjectArray
 challengemaster = function(t)							-- Flag all nested content to require achieving Challenge Master FoS (Realm Best times for Challenge Modes in MoP and WoD)
-	return bubbleDown({ ["cm"] = true }, t);
+	return bubbleDown({ cm = true }, t);
 end
 --- Create a CHARACTER CLASS Object without a Class Lock.
 ---@param id ClassID Character class ID.
@@ -1877,7 +1877,7 @@ crit = function(criteriaUID, t)							-- Create an Achievement Criteria Object (
 	if not t then t = {};
 	elseif not t.groups then
 		if isarray(t) then
-			t = { ["groups"] = t };
+			t = { groups = t };
 		end
 	end
 	if (t.groups or t.g) and #(t.groups or t.g) > 0 and false then
@@ -1986,8 +1986,8 @@ end
 ---@return ATTObject|ATTObjectArray
 elitepvp = function(t)									-- Flag all nested content as requiring Elite PvP gameplay
 	return bubbleDown({
-		["pvp"] = true,
-		["u"] = ELITE_PVP_REQUIREMENT,					-- CRIEVE NOTE: This currently uses the same filter as our other filters. This should probably be changed to act like the PVP filter or make "pvp" a 2 or something.
+		pvp = true,
+		u = ELITE_PVP_REQUIREMENT,					-- CRIEVE NOTE: This currently uses the same filter as our other filters. This should probably be changed to act like the PVP filter or make "pvp" a 2 or something.
 	}, t);
 end
 local PatchDecimals = 2
@@ -2533,7 +2533,7 @@ end
 ---@param t ATTObject|ATTObjectArray Object or child groups whose nested content receives the pet-battle filter.
 ---@return ATTObject|ATTObjectArray
 petbattle = function(t)									-- Pet Battle (bubbleDown pb filter)
-	return bubbleDown({ ["pb"] = true }, t);
+	return bubbleDown({ pb = true }, t);
 end
 --- Create a PROFESSION Object.
 ---@param skillID SkillID Profession or skill line ID.
@@ -2554,7 +2554,7 @@ pn = professionnode;
 ---@param t ATTObject|ATTObjectArray Object or child groups whose nested content receives the PvP requirement.
 ---@return ATTObject|ATTObjectArray
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
-	return bubbleDown({ ["pvp"] = true }, t);
+	return bubbleDown({ pvp = true }, t);
 end
 --- Create a PVP Rank Object.
 ---@param id integer Classic PvP rank ID.
@@ -2638,7 +2638,7 @@ end
 ---@param t ATTObject|ATTObjectArray Object or child groups whose nested content receives the Skyriding requirement.
 ---@return ATTObject|ATTObjectArray
 skyriding = function(t)									-- Skyriding (bubbleDown sr filter)
-	return bubbleDown({ ["sr"] = true }, t);
+	return bubbleDown({ sr = true }, t);
 end
 --- Create a SPELL Object.
 ---@param id SpellID Spell ID.
@@ -2814,7 +2814,7 @@ battlepets = function(timeline, t)						-- Creates a BATTLE_PETS header with pet
 		t = timeline;
 		timeline = { ADDED_5_0_4 };
 	end
-	return petbattle(filter(BATTLE_PETS, bubbleDownSelf({ ["timeline"] = timeline }, t)));
+	return petbattle(filter(BATTLE_PETS, bubbleDownSelf({ timeline = timeline }, t)));
 end
 --- Creates a PET_BATTLES header with pet battle filter on it. Use this with Outdoor Zones.
 ---@param timeline ATTTimelineEvent[] Patch events applied to the header and nested content; defaults to 5.0.4 in the one-argument form.
@@ -2829,7 +2829,7 @@ petbattles = function(timeline, t)						-- Creates a PET_BATTLES header with pet
 		t = timeline;
 		timeline = { ADDED_5_0_4 };
 	end
-	return petbattle(n(PET_BATTLES, bubbleDownSelf({ ["timeline"] = timeline }, t)));
+	return petbattle(n(PET_BATTLES, bubbleDownSelf({ timeline = timeline }, t)));
 end
 --- Creates a LOCKPICKING header with Rogue Class Filtering on it. Use this with Outdoor Zones.
 ---@param skipRequirement boolean|nil Whether to omit the Rogue class restriction in the two-argument form.
@@ -2907,7 +2907,7 @@ end
 ---@param includeItemToSubitem? boolean Whether to add the subitem as a child for reverse conversion.
 ---@return ATTItemObject
 convertItem = function(itemID, subItemID, subItemAmount, includeItemToSubitem)
-	return i(itemID, {["cost"]={{"i",subItemID,subItemAmount}},["groups"]=includeItemToSubitem and {i(subItemID)} or nil})
+	return i(itemID, {cost={{"i",subItemID,subItemAmount}},groups=includeItemToSubitem and {i(subItemID)} or nil})
 end
 --- Add a Creature List to an object.
 ---@generic T: ATTObject
@@ -3197,43 +3197,43 @@ end
 -- Usage: ROOTS.[Constant]
 ---@type ATTRootConstants
 ROOTS = setmetatable({
-	["AchievementDB"] = "AchievementDB",
-	["Achievements"] = "Achievements",
-	["Arcantina"] = "Arcantina",
-	["BlackMarket"] = "BlackMarket",
-	["Character"] = "Character",
-	["Craftables"] = "Craftables",
-	["Delves"] = "Delves",
-	["ExpansionFeatures"] = "ExpansionFeatures",
-	["Factions"] = "Factions",
-	["GroupFinder"] = "GroupFinder",
-	["HiddenAchievementTriggers"] = "HiddenAchievementTriggers",
-	["HiddenCurrencyTriggers"] = "HiddenCurrencyTriggers",
-	["HiddenQuestTriggers"] = "HiddenQuestTriggers",
-	["Holidays"] = "Holidays",
-	["Housing"] = "Housing",
-	["InGameShop"] = "InGameShop",
-	["Instances"] = "Instances",
-	["ItemDB"] = "ItemDB",
-	["ItemDBConditional"] = "ItemDBConditional",
-	["NeverImplemented"] = "NeverImplemented",
-	["PVP"] = "PVP",
-	["PetBattles"] = "PetBattles",
-	["Professions"] = "Professions",
-	["Promotions"] = "Promotions",
-	["RecipeDB"] = "RecipeDB",
-	["SeasonOfDiscovery"] = "SeasonOfDiscovery",
-	["Secrets"] = "Secrets",
-	["Sourceless"] = "Sourceless",
-	["Talebound"] = "Talebound",
-	["TradingPost"] = "TradingPost",
-	["Uncollectible"] = "Uncollectible",
-	["Unsorted"] = "Unsorted",
-	["WorldDrops"] = "WorldDrops",
-	["WorldEvents"] = "WorldEvents",
-	["Zones"] = "Zones",
+	AchievementDB = "AchievementDB",
+	Achievements = "Achievements",
+	Arcantina = "Arcantina",
+	BlackMarket = "BlackMarket",
+	Character = "Character",
+	Craftables = "Craftables",
+	Delves = "Delves",
+	ExpansionFeatures = "ExpansionFeatures",
+	Factions = "Factions",
+	GroupFinder = "GroupFinder",
+	HiddenAchievementTriggers = "HiddenAchievementTriggers",
+	HiddenCurrencyTriggers = "HiddenCurrencyTriggers",
+	HiddenQuestTriggers = "HiddenQuestTriggers",
+	Holidays = "Holidays",
+	Housing = "Housing",
+	InGameShop = "InGameShop",
+	Instances = "Instances",
+	ItemDB = "ItemDB",
+	ItemDBConditional = "ItemDBConditional",
+	NeverImplemented = "NeverImplemented",
+	PVP = "PVP",
+	PetBattles = "PetBattles",
+	Professions = "Professions",
+	Promotions = "Promotions",
+	RecipeDB = "RecipeDB",
+	SeasonOfDiscovery = "SeasonOfDiscovery",
+	Secrets = "Secrets",
+	Sourceless = "Sourceless",
+	Talebound = "Talebound",
+	TradingPost = "TradingPost",
+	Uncollectible = "Uncollectible",
+	Unsorted = "Unsorted",
+	WorldDrops = "WorldDrops",
+	WorldEvents = "WorldEvents",
+	Zones = "Zones",
 	--
-	["AprilFools"] = "Special_AprilFools",
+	AprilFools = "Special_AprilFools",
 }, {
 	__index = function(t, category)
 		error("Attempting to reference ROOTS." .. category .. ", which is not a valid Root Category.");
@@ -3256,7 +3256,7 @@ end
 local function __DropG(g)
 	return bubbleDownFiltered({
 		-- keep API data from populating into NYI/Hidden quests
-		["_drop"]={"g"}
+		_drop={"g"}
 	},FILTERFUNC_questID,g)
 end
 --- Preprocesses Hidden Quest Trigger data before it is attached to the root.
@@ -3358,9 +3358,9 @@ profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: 
 	local p = prof(skillID, t);
 	-- CRIEVE NOTE: I need to look back at this and see if it's necessary.
 	-- #if NOT ANYCLASSIC
-	bubbleDown({ ["requireSkill"] = skillID }, p);
+	bubbleDown({ requireSkill = skillID }, p);
 	-- #elseif FOREVER
-	bubbleDown({ ["requireSkill"] = skillID }, p);
+	bubbleDown({ requireSkill = skillID }, p);
 	-- #endif
 	root(ROOTS.Professions, p);
 	return p;

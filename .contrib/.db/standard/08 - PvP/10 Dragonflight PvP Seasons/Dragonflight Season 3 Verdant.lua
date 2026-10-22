@@ -2,16 +2,16 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
 	n(SEASON_VERDANT, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 			ach(19140, {	-- Verdant Combatant [A]
-				["races"] = ALLIANCE_ONLY,
-				["collectible"] = false,
+				races = ALLIANCE_ONLY,
+				collectible = false,
 			}),
 			ach(19141, {	-- Verdant Combatant [H]
-				["races"] = HORDE_ONLY,
-				["collectible"] = false,
+				races = HORDE_ONLY,
+				collectible = false,
 			}),
 			ach(19157),	-- Combatant I: Dragonflight Season 3
 			ach(19158),	-- Combatant II: Dragonflight Season 3
@@ -34,14 +34,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			-- RBG
 			ach(19162, {	-- Hero of the Alliance: Verdant
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(19161, {	-- Hero of the Horde: Verdant
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			-- Solo
 			ach(19443, {	-- Battle Mender: Dragonflight Season 3
-				["classes"] = HEALERS,
+				classes = HEALERS,
 			}),
 			ach(19304, {	-- Legend: Dragonflight Season 3
 				i(210497),	-- Verdant Legend's Pennant (TOY!)
@@ -50,20 +50,20 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				title(525),	-- Verdant Legend <Name>
 			}),
 			-- Fashion
-			ach(19276, { ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 } }),	-- Verdant Vogue
+			ach(19276, { timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 } }),	-- Verdant Vogue
 		})),
-		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
+		filter(MOUNTS, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 			i(210070, {	-- Vicious Moonbeast [A] (MOUNT!)
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			i(210069, {	-- Vicious Moonbeast [H] (MOUNT!)
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 		})),
 		n(PVP_WARMODE, {
 			n(197553, {	-- Fieldmaster Emberath
-				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["groups"] = sharedData({ ["timeline"] = { ADDED_11_0_0 } }, {
+				coord = { 43.1, 42.4, VALDRAKKEN },
+				groups = sharedData({ timeline = { ADDED_11_0_0 } }, {
 					moh(5, iensemble(224000)),	-- Arsenal: Hellbloom Axe
 					moh(5, iensemble(223996)),	-- Arsenal: Hellbloom Bow
 					moh(5, iensemble(224001)),	-- Arsenal: Hellbloom Branch
@@ -77,13 +77,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					moh(5, iensemble(223998)),	-- Arsenal: Hellbloom Sword
 					moh(5, iensemble(223992)),	-- Arsenal: Hellbloom Wand
 					moh(5, iensemble(223997)),	-- Arsenal: Hellbloom Warglaive
-					filter(BACK_F, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
+					filter(BACK_F, sharedData({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 						bloody(120, i(211243)),	-- Hellbloom Cape
 						bloody(120, i(211245)),	-- Hellbloom Cloak
 						bloody(120, i(211246)),	-- Hellbloom Drape
 						bloody(120, i(211244)),	-- Hellbloom Shawl
 					})),
-					filter(CLOTH, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
+					filter(CLOTH, sharedData({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 						bloody(120, i(211217)),	-- Hellbloom Bindings
 						bloody(120, i(211216)),	-- Hellbloom Cord
 						bloody(300, i(211214)),	-- Hellbloom Crown
@@ -93,7 +93,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						bloody(300, i(211215)),	-- Hellbloom Pants
 						bloody(200, i(211212)),	-- Hellbloom Slippers
 					})),
-					filter(LEATHER, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
+					filter(LEATHER, sharedData({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 						bloody(120, i(211223)),	-- Hellbloom Belt
 						bloody(200, i(211219)),	-- Hellbloom Boots
 						bloody(300, i(211222)),	-- Hellbloom Breeches
@@ -103,7 +103,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						bloody(200, i(211226)),	-- Hellbloom Shoulderguard
 						bloody(120, i(211224)),	-- Hellbloom Wraps
 					})),
-					filter(MAIL, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
+					filter(MAIL, sharedData({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 						bloody(120, i(211242)),	-- Hellbloom Armguards
 						bloody(300, i(211235)),	-- Hellbloom Chainmail
 						bloody(120, i(211241)),	-- Hellbloom Cinch
@@ -113,7 +113,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						bloody(300, i(211238)),	-- Hellbloom Helm
 						bloody(300, i(211239)),	-- Hellbloom Leggings
 					})),
-					filter(PLATE, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
+					filter(PLATE, sharedData({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 						bloody(120, i(211234)),	-- Hellbloom Bracers
 						bloody(120, i(211233)),	-- Hellbloom Clasp
 						bloody(300, i(211228)),	-- Hellbloom Cuirass
@@ -123,7 +123,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						bloody(200, i(211229)),	-- Hellbloom Sabatons
 						bloody(200, i(211232)),	-- Hellbloom Spaulders
 					})),
-					n(WEAPONS, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
+					n(WEAPONS, sharedData({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 						bloody(150, i(211194)),	-- Hellbloom Aegis
 						bloody(250, i(211179)),	-- Hellbloom Battleaxe
 						bloody(450, i(211188)),	-- Hellbloom Battlestaff
@@ -153,34 +153,34 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 		}),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 } }, {
 			n(199601, {	-- Seltherex
-				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["groups"] = sharedData({
-					["cost"] = { { "i", MOH, 12 } },
-					["timeline"] = { ADDED_11_0_5 },
+				coord = { 44.7, 37.0, VALDRAKKEN },
+				groups = sharedData({
+					cost = { { "i", MOH, 12 } },
+					timeline = { ADDED_11_0_5 },
 				}, {
 					iensemble(231150, {	-- Arsenal: Verdant Aspirant's Weapons
-						["cost"] = { { "i", MOH, 80 } },
+						cost = { { "i", MOH, 80 } },
 					}),
 					iensemble(231120, {	-- Ensemble: Verdant Aspirant's Cloth Armor
-						["classes"] = CLOTH_CLASSES,
+						classes = CLOTH_CLASSES,
 					}),
 					iensemble(231121, {	-- Ensemble: Verdant Aspirant's Leather Armor
-						["classes"] = LEATHER_CLASSES
+						classes = LEATHER_CLASSES
 					}),
 					iensemble(231122, {	-- Ensemble: Verdant Aspirant's Mail Armor
-						["classes"] = MAIL_CLASSES,
+						classes = MAIL_CLASSES,
 					}),
 					iensemble(231123, {	-- Ensemble: Verdant Aspirant's Plate Armor
-						["classes"] = PLATE_CLASSES,
+						classes = PLATE_CLASSES,
 					}),
 				}),
 			}),
 			n(199601, {	-- Seltherex
-				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["groups"] = bubbleDownFiltered({
-					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+				coord = { 44.7, 37.0, VALDRAKKEN },
+				groups = bubbleDownFiltered({
+					timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 				},FILTERFUNC_itemID,{
 					filter(BACK_F, {
 						honor(525, i(209776)),	-- Verdant Aspirant's Cape
@@ -299,63 +299,63 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 } }, {
 			n(199599, {	-- Calderax
-				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["ItemAppearanceModifierID"] = 159,
-				["groups"] = sharedData({
-					["cost"] = { { "i", MOH, 12 } },
-					["timeline"] = { ADDED_11_0_5 },
+				coord = { 44.3, 36.6, VALDRAKKEN },
+				ItemAppearanceModifierID = 159,
+				groups = sharedData({
+					cost = { { "i", MOH, 12 } },
+					timeline = { ADDED_11_0_5 },
 				}, {
 					iensemble(231151, {	-- Arsenal: Verdant Gladiator's Weapons
-						["cost"] = { { "i", MOH, 80 } },
+						cost = { { "i", MOH, 80 } },
 					}),
 					iensemble(231124, {	-- Ensemble: Verdant Gladiator's Death Knight Armor
-						["classes"] = { DEATHKNIGHT },
+						classes = { DEATHKNIGHT },
 					}),
 					iensemble(231125, {	-- Ensemble: Verdant Gladiator's Demon Hunter Armor
-						["classes"] = { DEMONHUNTER },
+						classes = { DEMONHUNTER },
 					}),
 					iensemble(231126, {	-- Ensemble: Verdant Gladiator's Druid Armor
-						["classes"] = { DRUID },
+						classes = { DRUID },
 					}),
 					iensemble(231127, {	-- Ensemble: Verdant Gladiator's Evoker Armor
-						["classes"] = { EVOKER },
+						classes = { EVOKER },
 					}),
 					iensemble(231128, {	-- Ensemble: Verdant Gladiator's Hunter Armor
-						["classes"] = { HUNTER },
+						classes = { HUNTER },
 					}),
 					iensemble(231129, {	-- Ensemble: Verdant Gladiator's Mage Armor
-						["classes"] = { MAGE },
+						classes = { MAGE },
 					}),
 					iensemble(231130, {	-- Ensemble: Verdant Gladiator's Monk Armor
-						["classes"] = { MONK },
+						classes = { MONK },
 					}),
 					iensemble(231131, {	-- Ensemble: Verdant Gladiator's Paladin Armor
-						["classes"] = { PALADIN },
+						classes = { PALADIN },
 					}),
 					iensemble(231132, {	-- Ensemble: Verdant Gladiator's Priest Armor
-						["classes"] = { PRIEST },
+						classes = { PRIEST },
 					}),
 					iensemble(231133, {	-- Ensemble: Verdant Gladiator's Rogue Armor
-						["classes"] = { ROGUE },
+						classes = { ROGUE },
 					}),
 					iensemble(231134, {	-- Ensemble: Verdant Gladiator's Shaman Armor
-						["classes"] = { SHAMAN },
+						classes = { SHAMAN },
 					}),
 					iensemble(231135, {	-- Ensemble: Verdant Gladiator's Warlock Armor
-						["classes"] = { WARLOCK },
+						classes = { WARLOCK },
 					}),
 					iensemble(231136, {	-- Ensemble: Verdant Gladiator's Warrior Armor
-						["classes"] = { WARRIOR },
+						classes = { WARRIOR },
 					}),
 				}),
 			}),
 			n(199599, {	-- Calderax
-				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["ItemAppearanceModifierID"] = 159,
-				["groups"] = bubbleDownFiltered({
-					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+				coord = { 44.3, 36.6, VALDRAKKEN },
+				ItemAppearanceModifierID = 159,
+				groups = bubbleDownFiltered({
+					timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 				},FILTERFUNC_itemID,{
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
@@ -674,7 +674,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }, ["bonusID"] = 7532 }, {
+		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }, bonusID = 7532 }, {
 			n(CLASSES, {
 				cl(DEATHKNIGHT, {
 					i(209275),	-- Verdant Gladiator's Cloak
@@ -968,11 +968,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				i(209347),	-- Verdant Gladiator's Sigil of Adaptation
 			}),
 			n(199720, {	-- Glamora
-				["coord"] = { 45.9, 38.7, VALDRAKKEN },
-				["groups"] = {
+				coord = { 45.9, 38.7, VALDRAKKEN },
+				groups = {
 					honor(100, i(209610, {	-- Verdant Gladiator's Tabard
-						["sourceAchievements"] = { 19090 },	-- Elite: Dragonflight Season 3
-						["bonusID"] = 0,
+						sourceAchievements = { 19090 },	-- Elite: Dragonflight Season 3
+						bonusID = 0,
 					})),
 					moh(5, i(210502)),	-- Verdant Gladiator's Axe
 					moh(10, i(210510)),	-- Verdant Gladiator's Axestaff
@@ -996,54 +996,54 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			}),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {
 			n(199720, {	-- Glamora
-				["coord"] = { 45.9, 38.7, VALDRAKKEN },
-				["groups"] = sharedData({
-					["cost"] = { { "i", MOH, 12 } },
-					["u"] = ELITE_PVP_REQUIREMENT,
+				coord = { 45.9, 38.7, VALDRAKKEN },
+				groups = sharedData({
+					cost = { { "i", MOH, 12 } },
+					u = ELITE_PVP_REQUIREMENT,
 				}, {
 					iensemble(231152, {	-- Arsenal: Elite Verdant Gladiator's Weapons
-						["cost"] = { { "i", MOH, 80 } },
+						cost = { { "i", MOH, 80 } },
 					}),
 					iensemble(231137, {	-- Ensemble: Elite Verdant Gladiator's Death Knight Armor
-						["classes"] = { DEATHKNIGHT },
+						classes = { DEATHKNIGHT },
 					}),
 					iensemble(231138, {	-- Ensemble: Elite Verdant Gladiator's Demon Hunter Armor
-						["classes"] = { DEMONHUNTER },
+						classes = { DEMONHUNTER },
 					}),
 					iensemble(231139, {	-- Ensemble: Elite Verdant Gladiator's Druid Armor
-						["classes"] = { DRUID },
+						classes = { DRUID },
 					}),
 					iensemble(231140, {	-- Ensemble: Elite Verdant Gladiator's Evoker Armor
-						["classes"] = { EVOKER },
+						classes = { EVOKER },
 					}),
 					iensemble(231141, {	-- Ensemble: Elite Verdant Gladiator's Hunter Armor
-						["classes"] = { HUNTER },
+						classes = { HUNTER },
 					}),
 					iensemble(231142, {	-- Ensemble: Elite Verdant Gladiator's Mage Armor
-						["classes"] = { MAGE },
+						classes = { MAGE },
 					}),
 					iensemble(231143, {	-- Ensemble: Elite Verdant Gladiator's Monk Armor
-						["classes"] = { MONK },
+						classes = { MONK },
 					}),
 					iensemble(231144, {	-- Ensemble: Elite Verdant Gladiator's Paladin Armor
-						["classes"] = { PALADIN },
+						classes = { PALADIN },
 					}),
 					iensemble(231145, {	-- Ensemble: Elite Verdant Gladiator's Priest Armor
-						["classes"] = { PRIEST },
+						classes = { PRIEST },
 					}),
 					iensemble(231146, {	-- Ensemble: Elite Verdant Gladiator's Rogue Armor
-						["classes"] = { ROGUE },
+						classes = { ROGUE },
 					}),
 					iensemble(231147, {	-- Ensemble: Elite Verdant Gladiator's Shaman Armor
-						["classes"] = { SHAMAN },
+						classes = { SHAMAN },
 					}),
 					iensemble(231148, {	-- Ensemble: Elite Verdant Gladiator's Warlock Armor
-						["classes"] = { WARLOCK },
+						classes = { WARLOCK },
 					}),
 					iensemble(231149, {	-- Ensemble: Elite Verdant Gladiator's Warrior Armor
-						["classes"] = { WARRIOR },
+						classes = { WARRIOR },
 					}),
 				}),
 			}),
@@ -1051,10 +1051,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		filter(RECIPES, {
 			-- #if AFTER 10.2.6.54358
 			n(214682, {	-- Mittzi Threadweave <Verdant Combatant Recipes>
-				["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
-				["coord"] = { 44.7, 42.7, VALDRAKKEN },
-				["groups"] = sharedData({
-					["cost"] = { { "i", MOH, 3 } },
+				timeline = { ADDED_10_2_6_SEASON_FOUR },
+				coord = { 44.7, 42.7, VALDRAKKEN },
+				groups = sharedData({
+					cost = { { "i", MOH, 3 } },
 				}, {
 			-- #endif
 					i(208289),	-- Design: Verdant Combatant's Jeweled Amulet (RECIPE!)
@@ -1104,10 +1104,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			-- #endif
 			n(197553, {	-- Fieldmaster Emberath
-				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["groups"] = sharedData({
-					["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
-					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+				coord = { 43.1, 42.4, VALDRAKKEN },
+				groups = sharedData({
+					cost = { { "i", 190450, 3 } },	-- 3x Awakened Ire
+					timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 				}, {
 					i(208312),	-- Technique: Verdant Combatant's Emblem (RECIPE!)
 					i(208311),	-- Technique: Verdant Combatant's Insignia of Alacrity (RECIPE!)

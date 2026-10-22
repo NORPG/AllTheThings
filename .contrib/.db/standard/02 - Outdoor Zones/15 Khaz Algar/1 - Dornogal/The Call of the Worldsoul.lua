@@ -6,29 +6,29 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(DORNOGAL, {
 		header(HEADERS.Quest, 82449, {	-- The Call of the Worldsoul
 			n(QUESTS, sharedData({
-				["sourceQuestNumRequired"] = 1,
-				["sourceQuests"] = {
+				sourceQuestNumRequired = 1,
+				sourceQuests = {
 					79197,	-- Surface Bound
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
 				},
-				["provider"] = { "n", 223875 },	-- Faerin Lothar
-				["coord"] = { 46.1, 49.6, DORNOGAL },
-				["isWeekly"] = true,
-				["_drop"] = { "g" },
-				["groups"] = {
+				provider = { "n", 223875 },	-- Faerin Lothar
+				coord = { 46.1, 49.6, DORNOGAL },
+				isWeekly = true,
+				_drop = { "g" },
+				groups = {
 					i(211297, {	-- Fractured Spark of Omens
-						["timeline"] = { ADDED_11_0_2, REMOVED_11_2_0}
+						timeline = { ADDED_11_0_2, REMOVED_11_2_0}
 					}),
 					i(230905, {	-- Fractured Spark of Fortunes
-						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0}
+						timeline = { ADDED_11_1_0, REMOVED_11_2_0}
 					}),
 					i(231757, {	-- Fractured Spark of Starlight
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						timeline = { ADDED_11_2_0, REMOVED_12_0_0 },
 					}),
 				},
 			}, {
 				q(89492, {	-- Dastardly Duos in the Dome!
-					["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" },
+					timeline = { ADDED_11_1_5, "removed 11.1.7.61967" },
 				}),
 				q(82449),	-- The Call of the Worldsoul
 				q(82491),	-- Worldsoul: Ara-Kara, City of Echoes [N]
@@ -45,26 +45,26 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(82498),	-- Worldsoul: Darkflame Cleft [H]
 				q(82506),	-- Worldsoul: Darkflame Cleft [M]
 				q(87419, {	-- Worldsoul: Delves
-					["timeline"] = { ADDED_11_1_0 },
+					timeline = { ADDED_11_1_0 },
 				}),
 				q(87417, {	-- Worldsoul: Dungeons
-					["timeline"] = { ADDED_11_1_0 },
+					timeline = { ADDED_11_1_0 },
 				}),
 				q(82453),	-- Worldsoul: Encore!
 				q(89514, {	-- Worldsoul: Horrific Visions Revisited
-					["timeline"] = { ADDED_11_1_5 },
+					timeline = { ADDED_11_1_5 },
 				}),
 				q(91855, {	-- Worldsoul: K'aresh World Quests
-					["timeline"] = { ADDED_11_2_0 },
+					timeline = { ADDED_11_2_0 },
 				}),
 				q(82509),	-- Worldsoul: Nerub-ar Palace [LFR]
 				q(82659),	-- Worldsoul: Nerub-ar Palace [N]
 				q(82510),	-- Worldsoul: Nerub-ar Palace [H]
 				q(89502, {	-- Worldsoul: Nightfall
-					["timeline"] = { ADDED_11_1_5 },
+					timeline = { ADDED_11_1_5 },
 				}),
 				q(91052, {	-- Worldsoul: Overcharged Delves
-					["timeline"] = { ADDED_11_1_7 },
+					timeline = { ADDED_11_1_7 },
 				}),
 				q(82490),	-- Worldsoul: Priory of the Sacred Flame [N]
 				q(82499),	-- Worldsoul: Priory of the Sacred Flame [H]
@@ -83,14 +83,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				q(82497),	-- Worldsoul: The Stonevault [H]
 				q(82505),	-- Worldsoul: The Stonevault [M]
 				q(87423, {	-- Worldsoul: Undermine Explorer
-					["timeline"] = { ADDED_11_1_0 },
+					timeline = { ADDED_11_1_0 },
 				}),
 				q(87422, {	-- Worldsoul: Undermine World Quests
-					["timeline"] = { ADDED_11_1_0 },
+					timeline = { ADDED_11_1_0 },
 				}),
 				q(82512),	-- Worldsoul: World Boss
 				q(87424, {	-- Worldsoul: World Bosses
-					["timeline"] = { ADDED_11_1_0 },
+					timeline = { ADDED_11_1_0 },
 				}),
 				q(82452),	-- Worldsoul: World Quests
 				-- Also Fired / Alex: can confirm 82484, 82513, 82514, 82515 too;

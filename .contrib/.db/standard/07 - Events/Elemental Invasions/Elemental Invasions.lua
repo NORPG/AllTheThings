@@ -28,38 +28,38 @@ local ELEMENTAL_INVASIONS = createHeader({
 
 root(ROOTS.WorldEvents, {
 	applyclassicphase(PHASE_TWO, n(ELEMENTAL_INVASIONS, {
-		["timeline"] = { ADDED_1_4_0, REMOVED_4_0_3 },
-		["lvl"] = 60,
-		["groups"] = {
+		timeline = { ADDED_1_4_0, REMOVED_4_0_3 },
+		lvl = 60,
+		groups = {
 			-- #if BEFORE 4.0.3
 			applyclassicphase(PHASE_THREE_DMF_CARDS, n(COMMON_BOSS_DROPS, {
-				["crs"] = {
+				crs = {
 					14464,	-- Avalanchion
 					14461,	-- Baron Charr
 					14457,	-- Princess Tempestria
 					14454,	-- The Windreaver
 				},
-				["timeline"] = { ADDED_1_6_0, REMOVED_4_0_3 },
-				["groups"] = { i(19268) },	-- Ace of Elementals
+				timeline = { ADDED_1_6_0, REMOVED_4_0_3 },
+				groups = { i(19268) },	-- Ace of Elementals
 			})),
 			-- #endif
 			n(14464, {	-- Avalanchion
-				["description"] = "This is only available during an Elemental Invasion.",
-				["coords"] = {
+				description = "This is only available during an Elemental Invasion.",
+				coords = {
 					{ 72.6, 20.0, AZSHARA },
 					{ 77.2, 16.6, AZSHARA },
 					{ 82.6, 21.0, AZSHARA },
 					{ 77.0, 24.2, AZSHARA },
 					{ 80.0, 24.2, AZSHARA },
 				},
-				["groups"] = {
+				groups = {
 					i(18673),	-- Avalanchion's Stony Hide
 					i(18674),	-- Hardened Stone Band
 				},
 			}),
 			n(14461, {	-- Baron Charr
-				["description"] = "This is only available during an Elemental Invasion.",
-				["coords"] = {
+				description = "This is only available during an Elemental Invasion.",
+				coords = {
 					{ 44.6, 46.0, UNGORO_CRATER },
 					{ 48.2, 41.2, UNGORO_CRATER },
 					{ 53.2, 41.8, UNGORO_CRATER },
@@ -69,15 +69,15 @@ root(ROOTS.WorldEvents, {
 					{ 51.6, 57.6, UNGORO_CRATER },
 					{ 45.4, 54.8, UNGORO_CRATER },
 				},
-				["groups"] = {
+				groups = {
 					i(18671),	-- Baron Charr's Sceptre
 					i(18672),	-- Elemental Ember
 				},
 			}),
 			n(14457, {	-- Princess Tempestria
-				["description"] = "This is only available during an Elemental Invasion.",
-				["coord"] = { 54.6, 42.6, WINTERSPRING },
-				["groups"] = {
+				description = "This is only available during an Elemental Invasion.",
+				coord = { 54.6, 42.6, WINTERSPRING },
+				groups = {
 					i(21548),	-- Pattern: Stormshroud Gloves (RECIPE!)
 					-- #if BEFORE 4.0.3
 					i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
@@ -87,14 +87,14 @@ root(ROOTS.WorldEvents, {
 				},
 			}),
 			n(14454, {	-- The Windreaver
-				["description"] = "This is only available during an Elemental Invasion.",
-				["coords"] = {
+				description = "This is only available during an Elemental Invasion.",
+				coords = {
 					{ 17.6, 27.0, SILITHUS },
 					{ 26.6, 29.6, SILITHUS },
 					{ 31.0, 23.6, SILITHUS },
 					{ 32.2, 17.2, SILITHUS },
 				},
-				["groups"] = {
+				groups = {
 					i(21548),	-- Pattern: Stormshroud Gloves (RECIPE!)
 					i(18676),	-- Sash of the Windreaver
 					i(18677),	-- Zephyr Cloak

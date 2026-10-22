@@ -4,10 +4,10 @@
 
 root(ROOTS.Zones, m(NORTHREND, {
 	n(ACHIEVEMENTS, {
-		header(HEADERS.Achievement, 60956, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {	-- Family Battler of Northrend
+		header(HEADERS.Achievement, 60956, bubbleDownSelf({ timeline = { ADDED_12_0_0 } }, {	-- Family Battler of Northrend
 			petbattle(ach(60956, {	-- Family Battler of Northrend (automated)
 				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
+				sym = {{"meta_achievement",
 					60942,	-- Aquatic Battler of Northrend
 					60951,	-- Beast Battler of Northrend
 					60943,	-- Critter Battler of Northrend
@@ -19,8 +19,8 @@ root(ROOTS.Zones, m(NORTHREND, {
 					60953,	-- Mechanical Battler of Northrend
 					60954,	-- Undead Battler of Northrend
 				}},
-				["timeline"] = { ADDED_12_0_0 },
-				["groups"] = { i(222967) },	-- Webbers (PET!)
+				timeline = { ADDED_12_0_0 },
+				groups = { i(222967) },	-- Webbers (PET!)
 			})),
 			petbattle(ach(60942)),	-- Aquatic Battler of Northrend
 			petbattle(ach(60951)),	-- Beast Battler of Northrend

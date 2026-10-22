@@ -4,94 +4,94 @@
 CLASSIC_COOKING = {
 	r(2550,	{	-- Cooking (Apprentice)
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 5,
+		lvl = 5,
 		-- #endif
-		["rank"] = 1,
+		rank = 1,
 	}),
 	r(3102,	{	-- Cooking (Journeyman)
-		["timeline"] = { REMOVED_8_0_1_LAUNCH },
+		timeline = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 10,
+		lvl = 10,
 		-- #endif
-		["rank"] = 2,
+		rank = 2,
 	}),
 	r(3413, {	-- Cooking (Expert)
-		["timeline"] = { ADDED_3_1_0, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_3_1_0, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 20,
+		lvl = 20,
 		-- #endif
-		["rank"] = 3,
+		rank = 3,
 	}),
 	r(18260, {	-- Cooking (Artisan)
-		["timeline"] = { ADDED_3_1_0, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_3_1_0, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 35,
+		lvl = 35,
 		-- #endif
-		["rank"] = 4,
+		rank = 4,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264632, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Classic Cooking
+	applyclassicphase(BFA_PHASE_ONE, r(264632, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Classic Cooking
 	r(818),	-- Cooking Fire
 	r(6499),	-- Boiled Clams
-	r(46684, {["timeline"] = {ADDED_4_1_0}}),	-- Charred Bear Kabobs
+	r(46684, {timeline = {ADDED_4_1_0}}),	-- Charred Bear Kabobs
 	r(2538),	-- Charred Wolf Meat
 	r(2541),	-- Coyote Steak
 	r(2544),	-- Crab Cake
 	r(2546),	-- Dry Pork Ribs
-	r(6415, {["timeline"] = {ADDED_4_0_3}}),	-- Fillet of Frenzy
+	r(6415, {timeline = {ADDED_4_0_3}}),	-- Fillet of Frenzy
 	r(6500),	-- Goblin Deviled Clams
-	r(18240, {["timeline"] = {ADDED_4_0_3}}),	-- Grilled Squid
+	r(18240, {timeline = {ADDED_4_0_3}}),	-- Grilled Squid
 	r(8604),	-- Herb Baked Egg
-	r(46688, {["timeline"] = {ADDED_4_1_0}}),	-- Juicy Bear Burger
-	r(6412, {["timeline"] = {ADDED_4_0_3}}),	-- Kaldorei Spider Kabob
-	r(18243, {["timeline"] = {ADDED_4_0_3}}),	-- Nightfin Soup
-	r(18244, {["timeline"] = {ADDED_4_0_3}}),	-- Poached Sunscale Salmon
+	r(46688, {timeline = {ADDED_4_1_0}}),	-- Juicy Bear Burger
+	r(6412, {timeline = {ADDED_4_0_3}}),	-- Kaldorei Spider Kabob
+	r(18243, {timeline = {ADDED_4_0_3}}),	-- Nightfin Soup
+	r(18244, {timeline = {ADDED_4_0_3}}),	-- Poached Sunscale Salmon
 	r(2540),	-- Roasted Boar Meat
-	r(3400, {["timeline"] = {ADDED_4_0_3}}),	-- Soothing Turtle Bisque
-	r(37836, {["timeline"] = {ADDED_2_0_5}}),	-- Spice Bread
+	r(3400, {timeline = {ADDED_4_0_3}}),	-- Soothing Turtle Bisque
+	r(37836, {timeline = {ADDED_2_0_5}}),	-- Spice Bread
 	r(2539),	-- Spiced Wolf Meat
 	r(21175),	-- Spider Sausage
-	r(18238, {["timeline"] = {ADDED_4_0_3}}),	-- Spotted Yellowtail
-	r(3399, {["timeline"] = {ADDED_4_0_3}}),	-- Tasty Lion Steak
-	r(93741, {["timeline"] = {ADDED_4_0_3}}),	-- Venison Jerky
+	r(18238, {timeline = {ADDED_4_0_3}}),	-- Spotted Yellowtail
+	r(3399, {timeline = {ADDED_4_0_3}}),	-- Tasty Lion Steak
+	r(93741, {timeline = {ADDED_4_0_3}}),	-- Venison Jerky
 };
-TBC_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_1_0 } }, {
+TBC_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_1_0 } }, {
 	r(33359, {	-- Cooking (Master)
-		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 50,
+		lvl = 50,
 		-- #endif
-		["rank"] = 5,
+		rank = 5,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264634, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Outland Cooking
+	applyclassicphase(BFA_PHASE_ONE, r(264634, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Outland Cooking
 	r(818),	-- Cooking Fire
-	r(42302, {["timeline"] = {ADDED_4_0_1}}),	-- Fisherman's Feast
-	r(42305, {["timeline"] = {ADDED_4_0_1}}),	-- Hot Buttered Trout
-	r(42296, {["timeline"] = {ADDED_4_0_1}}),	-- Stewed Trout
+	r(42302, {timeline = {ADDED_4_0_1}}),	-- Fisherman's Feast
+	r(42305, {timeline = {ADDED_4_0_1}}),	-- Hot Buttered Trout
+	r(42296, {timeline = {ADDED_4_0_1}}),	-- Stewed Trout
 }));
-WRATH_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {
+WRATH_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3 } }, {
 	r(51296, {	-- Cooking (Grand Master)
-		["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #else
-		["lvl"] = 65,
+		lvl = 65,
 		-- #endif
-		["rank"] = 6,
+		rank = 6,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264636, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Cooking
+	applyclassicphase(BFA_PHASE_ONE, r(264636, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Cooking
 	r(818),	-- Cooking Fire
 	r(45569),	-- Baked Manta Ray
-	r(64358, {["timeline"] = {ADDED_3_1_0}}),	-- Black Jelly
+	r(64358, {timeline = {ADDED_3_1_0}}),	-- Black Jelly
 	r(58065),	-- Dalaran Clam Chowder
 	r(45554),	-- Great Feast
 	r(45561),	-- Grilled Bonescale
@@ -107,15 +107,15 @@ WRATH_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = {
 	r(45564),	-- Smoked Salmon
 	r(45551),	-- Worm Delight
 }));
-CATA_COOKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+CATA_COOKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ timeline = { ADDED_4_0_3_LAUNCH } }, {
 	r(88053, {	-- Cooking (Illustrious)
-		["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
-		["rank"] = 7,
+		rank = 7,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264638, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Cataclysm Cooking
+	applyclassicphase(BFA_PHASE_ONE, r(264638, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Cataclysm Cooking
 	r(88006),	-- Blackened Surprise
 	r(88015),	-- Darkbrew Lager
 }));
@@ -127,7 +127,7 @@ CATA_COOKING
 -- #endif
 );
 CATA_COOKING_SUPPLIES = applyclassicphase(CATA_PHASE_ONE, sharedData({
-	["providers"] = {
+	providers = {
 		{ "n", 5160},	-- Emrul Riknussun <Cooking Supplier>
 		{ "n", 4223},	-- Fyldan <Cooking Supplies> [TBC+] / <Cooking Supplier>
 		{ "n", 49701},	-- Jon Casper <Sous Chef>
@@ -135,7 +135,7 @@ CATA_COOKING_SUPPLIES = applyclassicphase(CATA_PHASE_ONE, sharedData({
 		{ "n", 4553},	-- Ronald Burch <Cooking Supplies> [TBC+] / <Cooking Supplier>
 		{ "n", 49737},	-- Shazdar <Sous Chef>
 	},
-	["timeline"] = { ADDED_4_0_3 },
+	timeline = { ADDED_4_0_3 },
 },{
 	chefsaward(2, i(65513, {	-- Crate of Tasty Meat
 		-- i(62786),	-- Cocoa Beans
@@ -165,7 +165,7 @@ CATA_COOKING_SUPPLIES = applyclassicphase(CATA_PHASE_ONE, sharedData({
 	chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy (RECIPE!)
 	chefsaward(3, i(65410)),	-- Recipe: Salted Eye (RECIPE!)
 	chefsaward(3, i(68688, {	-- Recipe: Scalding Murglesnout (RECIPE!)
-		["timeline"] = { ADDED_4_0_6 },
+		timeline = { ADDED_4_0_6 },
 	})),
 	chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab (RECIPE!)
 	chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head (RECIPE!)
@@ -175,15 +175,15 @@ CATA_COOKING_SUPPLIES = applyclassicphase(CATA_PHASE_ONE, sharedData({
 	chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle (RECIPE!)
 	chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo (RECIPE!)
 }));
-MOP_COOKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+MOP_COOKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
 	r(104381, {	-- Cooking (Zen Master)
-		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
+		timeline = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
-		["collectible"] = false,
+		collectible = false,
 		-- #endif
-		["rank"] = 8,
+		rank = 8,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264640, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Pandaria Cooking
+	applyclassicphase(BFA_PHASE_ONE, r(264640, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Pandaria Cooking
 	r(124233),	-- Blanched Needle Mushrooms
 	r(124228),	-- Boiled Silkworm Pupa
 	r(124227),	-- Dried Needle Mushrooms
@@ -205,36 +205,36 @@ MOP_COOKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = 
 	r(125121),	-- Wildfowl Ginseng Soup
 	r(124224),	-- Yak Cheese Curds
 }));
-WAY_OF_THE_BREW = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31479 } }, {
+WAY_OF_THE_BREW = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31479 } }, {
 	r(125602),	-- Banquet of the Brew
 	r(124052),	-- Ginseng Tea
 	r(125603),	-- Great Banquet of the Brew
 	r(124053),	-- Jade Witch Brew
 	r(124054),	-- Mad Brewer's Breakfast
 }));
-WAY_OF_THE_GRILL = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31311 } }, {
+WAY_OF_THE_GRILL = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31311 } }, {
 	r(125141),	-- Banquet of the Grill
 	r(104300),	-- Black Pepper Ribs and Shrimp
 	r(104298),	-- Charbroiled Tiger Steak
 	r(104299),	-- Eternal Blossom Fish
 	r(125142),	-- Great Banquet of the Grill
 }));
-WAY_OF_THE_OVEN = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31478 } }, {
+WAY_OF_THE_OVEN = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31478 } }, {
 	r(125600),	-- Banquet of the Oven
 	r(104312),	-- Chun Tian Spring Rolls
 	r(125601),	-- Great Banquet of the Oven
 	r(104311),	-- Twin Fish Platter
 	r(104310),	-- Wildfowl Roast
 }));
-WAY_OF_THE_POT = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31472 } }, {
+WAY_OF_THE_POT = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31472 } }, {
 	r(125596),	-- Banquet of the Pot
 	r(104305),	-- Braised Turtle
 	r(125597),	-- Great Banquet of the Pot
 	r(104306),	-- Mogu Fish Stew
 	r(104307),	-- Shrimp Dumplings
 }));
-WAY_OF_THE_STEAMER = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31475 } }, {
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+WAY_OF_THE_STEAMER = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31475 } }, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1266563),	-- Mushan Dumpling Stack
 	})),
 	r(125598),	-- Banquet of the Steamer
@@ -243,40 +243,40 @@ WAY_OF_THE_STEAMER = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeli
 	r(104309),	-- Steamed Crab Surprise
 	r(104304),	-- Swirling Mist Soup
 }));
-WAY_OF_THE_WOK = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31470 } }, {
+WAY_OF_THE_WOK = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31470 } }, {
 	r(125594),	-- Banquet of the Wok
 	r(125595),	-- Great Banquet of the Wok
 	r(104301),	-- Sauteed Carrots
 	r(104303),	-- Sea Mist Rice Noodles
 	r(104302),	-- Valley Stir Fry
 }));
-DRAENOR_COOKING = applyclassicphase(WOD_PHASE_ONE, i(111387, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	["description"] = "This can drop from any Warlords of Draenor mob if you don't already have it learned.",
-	["groups"] = {
+DRAENOR_COOKING = applyclassicphase(WOD_PHASE_ONE, i(111387, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+	description = "This can drop from any Warlords of Draenor mob if you don't already have it learned.",
+	groups = {
 		r(158765, {	-- Cooking (Draenor Master)
-			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC
-			["collectible"] = false,
+			collectible = false,
 			-- #endif
-			["rank"] = 9,
+			rank = 9,
 		}),
-		applyclassicphase(BFA_PHASE_ONE, r(264642, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Draenor Cooking
+		applyclassicphase(BFA_PHASE_ONE, r(264642, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Draenor Cooking
 		r(161002),	-- Grilled Saberfish
 		r(161001),	-- Saberfish Broth
 	},
 })));
-BFA_COOKING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+BFA_COOKING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 	r(818),	-- Cooking Fire
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1260337),	-- Boralus-Style Lobster Platter
 	})),
-	r(290471, {["timeline"] = {ADDED_8_1_0}}),	-- Boralus Blood Sausage [Rank 1]
+	r(290471, {timeline = {ADDED_8_1_0}}),	-- Boralus Blood Sausage [Rank 1]
 	r(259421),	-- Bountiful Captain's Feast [Rank 1]
 	r(259418),	-- Galley Banquet [Rank 1]
 	r(259419),	-- Galley Banquet [Rank 2]
 	r(259430),	-- Grilled Catfish [Rank 1]
 	r(259431),	-- Grilled Catfish [Rank 2]
-	r(286381, {["timeline"] = {ADDED_8_1_0}}),	-- Honey Potpie
+	r(286381, {timeline = {ADDED_8_1_0}}),	-- Honey Potpie
 	r(259414),	-- Honey-Glazed Haunches [Rank 1]
 	r(259415),	-- Honey-Glazed Haunches [Rank 2]
 	r(259411),	-- Kul Tiramisu [Rank 1]
@@ -287,21 +287,21 @@ BFA_COOKING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADD
 	r(259443),	-- Mon'Dazi [Rank 2]
 	r(259424),	-- Ravenberry Tarts [Rank 1]
 	r(259425),	-- Ravenberry Tarts [Rank 2]
-	r(287108, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguinated Feast [Rank 1]
+	r(287108, {timeline = {ADDED_8_1_0}}),	-- Sanguinated Feast [Rank 1]
 	r(259439),	-- Sailor's Pie [Rank 1]
 	r(259440),	-- Sailor's Pie [Rank 2]
 	r(259433),	-- Seasoned Loins [Rank 1]
 	r(259434),	-- Seasoned Loins [Rank 2]
-	r(288030, {["timeline"] = {ADDED_8_1_0}}),	-- Seasoned Steak and Potatoes [Rank 1]
-	r(288032, {["timeline"] = {ADDED_8_1_0}}),	-- Seasoned Steak and Potatoes [Rank 2]
+	r(288030, {timeline = {ADDED_8_1_0}}),	-- Seasoned Steak and Potatoes [Rank 1]
+	r(288032, {timeline = {ADDED_8_1_0}}),	-- Seasoned Steak and Potatoes [Rank 2]
 	r(259445),	-- Spiced Snapper [Rank 1]
 	r(259446),	-- Spiced Snapper [Rank 2]
 	r(259427),	-- Swamp Fish 'n Chips [Rank 1]
 	r(259428),	-- Swamp Fish 'n Chips [Rank 2]
-	r(288027, {["timeline"] = {ADDED_8_1_0}}),	-- Wild Berry Bread [Rank 1]
-	r(288028, {["timeline"] = {ADDED_8_1_0}}),	-- Wild Berry Bread [Rank 2]
+	r(288027, {timeline = {ADDED_8_1_0}}),	-- Wild Berry Bread [Rank 1]
+	r(288028, {timeline = {ADDED_8_1_0}}),	-- Wild Berry Bread [Rank 2]
 }));
-NAZJATAR_COOKING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
+NAZJATAR_COOKING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
 	r(297084),	-- Abyssal-Fried Rissole [Rank 1]
 	r(297085),	-- Abyssal-Fried Rissole [Rank 2]
 	r(297081),	-- Baked Port Tato [Rank 1]
@@ -314,10 +314,10 @@ NAZJATAR_COOKING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] 
 	r(297078),	-- Mech-Dowel's "Big Mech" [Rank 1]
 	r(297079),	-- Mech-Dowel's "Big Mech" [Rank 2]
 }));
-SL_COOKING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_COOKING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	r(309830),	-- Shadowlands Cooking
 	r(818),	-- Cooking Fire
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1260334),	-- Caramel Mint Noodle Dish
 	})),
 	r(308415),	-- Banana Beef Pudding
@@ -337,10 +337,10 @@ SL_COOKING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED
 	r(308425),	-- Sweet Silvergill Sausages
 	r(308405),	-- Tenebrous Crown Roast Aspic
 }));
-DF_COOKING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+DF_COOKING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	r(366256),	-- Dragon Isles Cooking
 	r(818),	-- Cooking Fire
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1260333),	-- Bruffalon Rib Platter
 		r(1266555),	-- Drake Kebab Platter
 		r(1260331),	-- Valdrakken Blossomfruit Platter
@@ -359,10 +359,10 @@ DF_COOKING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED
 	r(381365),	-- Twice-Baked Potato
 	r(381381),	-- Zesty Water
 }));
-TWW_COOKING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+TWW_COOKING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
 	r(423333),	-- Khaz Algar Cooking
 	r(818),	-- Cooking Fire
-	n(DECOR, sharedDataSelf({["timeline"] = { ADDED_11_2_7 }}, {
+	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1245995),	-- Dornic Sliced Mineloaf
 		r(1245994),	-- Earthen Hospitality Cheese-Like Brick
 		r(1266541),	-- Kaheti Predator's Assortment
@@ -402,10 +402,10 @@ TWW_COOKING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(445084),	-- Unseasoned Field Steak
 	r(445094),	-- Zesty Nibblers
 });
-MID_COOKING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+MID_COOKING = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 	r(471005),	-- Midnight Cooking
 	r(818),	-- Cooking Fire
-	r(1295534, {["timeline"] = { ADDED_12_1_0 }}),	-- Amani Cornucopia
+	r(1295534, {timeline = { ADDED_12_1_0 }}),	-- Amani Cornucopia
 	r(1226183),	-- Arcano Cutlets
 	r(1226194),	-- Argentleaf Tea
 	r(1226197),	-- Azeroot Tea
@@ -432,9 +432,9 @@ MID_COOKING = bubbleDown({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
 	r(1226199),	-- Mana-Infused Stew
 	r(1265601),	-- Multicraft
 	r(1226178),	-- Null and Void Plate
-	r(1296450, {["timeline"] = { ADDED_12_1_0 }}),	-- Plant Protein
+	r(1296450, {timeline = { ADDED_12_1_0 }}),	-- Plant Protein
 	r(1226204),	-- Portable Snack
-	r(1296449, {["timeline"] = { ADDED_12_1_0 }}),	-- Practically Pork
+	r(1296449, {timeline = { ADDED_12_1_0 }}),	-- Practically Pork
 	r(1226168),	-- Quel'dorei Medley
 	r(1226203),	-- Quick Sandwich
 	r(1265693),	-- Resourcefulness

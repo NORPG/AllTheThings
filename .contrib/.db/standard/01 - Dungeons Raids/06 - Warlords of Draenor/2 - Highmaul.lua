@@ -150,45 +150,45 @@ local Boss, BossOnly, Difficulty, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.ZoneDrops
 
 InstanceHelper.LFRQueueNPC = {
-	["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
+	crs = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	inst(477, {	-- Highmaul
-		["mapID"] = 612,
-		["coord"] = { 32.9, 38.3, DRAENOR_NAGRAND },
-		["maps"] = { 610, 611, 613, 614, 615 },
-		["isRaid"] = true,
-		["lvl"] = 100,
-		["groups"] = {
+		mapID = 612,
+		coord = { 32.9, 38.3, DRAENOR_NAGRAND },
+		maps = { 610, 611, 613, 614, 615 },
+		isRaid = true,
+		lvl = 100,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(8986, {	-- The Walled City
 					crit(25010, {	-- Kargath Bladefist
-						["_encounter"] = { KARGATH, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { KARGATH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(25012, {	-- The Butcher
-						["_encounter"] = { BUTCHER, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { BUTCHER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(25016, {	-- Brackenspore
-						["_encounter"] = { BRACKENSPORE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { BRACKENSPORE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(8987, {	-- Arcane Sanctum
 					crit(25011, {	-- Tectus
-						["_encounter"] = { TECTUS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { TECTUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(25014, {	-- Twin Ogron
-						["_encounter"] = { OGRON, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { OGRON, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(25015, {	-- Ko'ragh
-						["_encounter"] = { KORAGH, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { KORAGH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(8988, {	-- Imperator's Fall
 					crit(25018, {	-- Imperator Mar'gok
 						-- CRIEVE NOTE: If we want to keep this criteria, keep the provider so it has a proper name.
-						["provider"] = { "n", 77428 },	-- Imperator Mar'gok <Sorcerer King>
-						["_encounter"] = { MARGOK, DIFFICULTY.RAID.MULTI.ALL },
+						provider = { "n", 77428 },	-- Imperator Mar'gok <Sorcerer King>
+						_encounter = { MARGOK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(9416),	-- Highmaul Guild Run
@@ -196,15 +196,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				BossOnly(KARGATH, {
 					i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
+						timeline = { ADDED_7_0_3 },
 					}),
 				}),
 				BossOnly(BUTCHER),
 				BossOnly(BRACKENSPORE),
 				BossOnly(TECTUS, {
 					i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
-						["classes"] = { SHAMAN },
+						timeline = { ADDED_7_0_3 },
+						classes = { SHAMAN },
 					}),
 				}),
 				BossOnly(OGRON),
@@ -295,12 +295,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(KARGATH, {
 					ach(8948, {	-- Flame On!
-						["crs"] = { 88123 },	-- Fire Pillar
+						crs = { 88123 },	-- Fire Pillar
 					}),
 				}),
 				BossOnly(BUTCHER, {
 					ach(8947, {	-- Hurry Up, Maggot!
-						["crs"] = { 80728 },	-- Maggot
+						crs = { 80728 },	-- Maggot
 					}),
 				}),
 				BossOnly(BRACKENSPORE, {
@@ -308,7 +308,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				BossOnly(TECTUS, {
 					ach(8974, {	-- More Like Wrecked-us
-						["crs"] = { 80557 },	-- Mote of Tectus <Mote of the Mountain>
+						crs = { 80557 },	-- Mote of Tectus <Mote of the Mountain>
 					}),
 				}),
 				BossOnly(OGRON, {
@@ -319,7 +319,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				BossOnly(MARGOK, {
 					ach(8977, {	-- Lineage of Power
-						["crs"] = { 78121 },	-- Gorian Warmage
+						crs = { 78121 },	-- Gorian Warmage
 					}),
 				}),
 			}),
@@ -346,7 +346,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(MARGOK, {
 					ach(9441, {	-- Ahead of the Curve: Imperator's Fall
-						["timeline"] = { REMOVED_6_2_0 },
+						timeline = { REMOVED_6_2_0 },
 					}),
 				}),
 			}),
@@ -372,7 +372,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				Boss(MARGOK, {
 					ach(9442, {	-- Cutting Edge: Imperator's Fall
-						["timeline"] = { REMOVED_6_2_0 },
+						timeline = { REMOVED_6_2_0 },
 					}),
 					ach(8965, {	-- Mythic: Imperator's Fall
 						title(304),	-- <Name>, Empire's Twilight

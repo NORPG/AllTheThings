@@ -21,43 +21,43 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
 	inst(279, {	-- The Culling of Stratholme
-		["mapID"] = THE_CULLING_OF_STRATHOLME,
-		["coord"] = { 56.9, 82.4, CAVERNS_OF_TIME },
-		["maps"] = { THE_CULLING_OF_STRATHOLME_FLOOR2 },
-		["lvl"] = lvlsquish(75, 75, 25),
-		["groups"] = {
+		mapID = THE_CULLING_OF_STRATHOLME,
+		coord = { 56.9, 82.4, CAVERNS_OF_TIME },
+		maps = { THE_CULLING_OF_STRATHOLME_FLOOR2 },
+		lvl = lvlsquish(75, 75, 25),
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(479, {	-- The Culling of Stratholme
 					-- #if AFTER 7.3.5
 					crit(5467, {	-- Meathook
-						["_encounter"] = { MEATHOOK, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { MEATHOOK, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(5469, {	-- Salramm the Fleshcrafter
-						["_encounter"] = { SALRAMM, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { SALRAMM, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(5468, {	-- Chrono-Lord Epoch
-						["_encounter"] = { CHRONOLORD, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+						_encounter = { CHRONOLORD, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					-- #else
 					crit(5467, {	-- Meathook
-						["_encounter"] = { MEATHOOK, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { MEATHOOK, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5469, {	-- Salramm the Fleshcrafter
-						["_encounter"] = { SALRAMM, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { SALRAMM, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					crit(5468, {	-- Chrono-Lord Epoch
-						["_encounter"] = { CHRONOLORD, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { CHRONOLORD, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(6432, {	-- Mal'Ganis
-						["_encounter"] = { MALGANIS, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { MALGANIS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #else
 					crit(6433, {	-- Mal'Ganis
-						["_encounter"] = { MALGANIS, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { MALGANIS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #endif
 					-- #endif
@@ -65,70 +65,70 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17302, {	-- Defense Protocol Alpha: The Culling of Stratholme
 					crit(57771, {	-- Meathook
-						["_encounter"] = { MEATHOOK, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { MEATHOOK, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57773, {	-- Salramm the Fleshcrafter
-						["_encounter"] = { SALRAMM, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { SALRAMM, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57772, {	-- Chrono-Lord Epoch
-						["_encounter"] = { CHRONOLORD, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { CHRONOLORD, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57770, {	-- Mal'Ganis
-						["_encounter"] = { MALGANIS, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { MALGANIS, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18601, {	-- Defense Protocol Beta: The Culling of Stratholme
 					crit(60614, {	-- Meathook
-						["_encounter"] = { MEATHOOK, DEFENSE_PROTOCOL_BETA },
+						_encounter = { MEATHOOK, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60616, {	-- Salramm the Fleshcrafter
-						["_encounter"] = { SALRAMM, DEFENSE_PROTOCOL_BETA },
+						_encounter = { SALRAMM, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60615, {	-- Chrono-Lord Epoch
-						["_encounter"] = { CHRONOLORD, DEFENSE_PROTOCOL_BETA },
+						_encounter = { CHRONOLORD, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60613, {	-- Mal'Ganis
-						["_encounter"] = { MALGANIS, DEFENSE_PROTOCOL_BETA },
+						_encounter = { MALGANIS, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19438, {	-- Defense Protocol Gamma: The Culling of Stratholme
 					crit(63375, {	-- Meathook
-						["_encounter"] = { MEATHOOK, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { MEATHOOK, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63377, {	-- Salramm the Fleshcrafter
-						["_encounter"] = { SALRAMM, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { SALRAMM, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63376, {	-- Chrono-Lord Epoch
-						["_encounter"] = { CHRONOLORD, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { CHRONOLORD, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63374, {	-- Mal'Ganis
-						["_encounter"] = { MALGANIS, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { MALGANIS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
 				ach(500, {	-- Heroic: The Culling of Stratholme
 					crit(6805, {	-- Meathook
-						["_encounter"] = { MEATHOOK, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { MEATHOOK, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6807, {	-- Salramm the Fleshcrafter
-						["_encounter"] = { SALRAMM, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { SALRAMM, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6806, {	-- Chrono-Lord Epoch
-						["_encounter"] = { CHRONOLORD, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { CHRONOLORD, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6434, {	-- Mal'Ganis
-						["_encounter"] = { MALGANIS, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { MALGANIS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
 			n(QUESTS, {
 				q(13151, {	-- A Royal Escort
-					["sourceQuest"] = 13149,	-- Dispelling Illusions
-					["qg"] = 27915,	-- Chromie
-					["lvl"] = lvlsquish(78, 78, 25),
-					["groups"] = {
+					sourceQuest = 13149,	-- Dispelling Illusions
+					qg = 27915,	-- Chromie
+					lvl = lvlsquish(78, 78, 25),
+					groups = {
 						objective(1, {	-- 0/1 Mal'Ganis Defeated
-							["provider"] = { "n", 26533 },	-- Mal'Ganis
+							provider = { "n", 26533 },	-- Mal'Ganis
 						}),
 						i(44396),	-- Gloves of the Time Guardian
 						i(44397),	-- Handwraps of Preserved History
@@ -137,19 +137,19 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(13149, {	-- Dispelling Illusions
-					["qg"] = 26527,	-- Chromie
-					["lvl"] = lvlsquish(78, 78, 25),
-					["groups"] = {
+					qg = 26527,	-- Chromie
+					lvl = lvlsquish(78, 78, 25),
+					groups = {
 						objective(1, {	-- Plagued Grain Crates Dispelled
-							["provider"] = { "i", 37888 },	-- Arcane Disruptor
+							provider = { "i", 37888 },	-- Arcane Disruptor
 						}),
 					},
 				}),
 			}),
 			n(VENDORS, {
 				n(31021, {	-- Sophie Aaren <Florist>
-					["coord"] = { 64.0, 55.2, THE_CULLING_OF_STRATHOLME_FLOOR2 },
-					["groups"] = {
+					coord = { 64.0, 55.2, THE_CULLING_OF_STRATHOLME_FLOOR2 },
+					groups = {
 						i(43327),	-- Stratholme Lily
 					},
 				}),
@@ -159,10 +159,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				n(ZONE_DROPS, {
 					i(37115),	-- Crusader's Square Pauldrons
 					i(37116),	-- Epaulets of Market Row
-					i(37699, { ["timeline"] = { CREATED_3_0_3, ADDED_7_3_5 } }),	-- Festival Lane Girdle
+					i(37699, { timeline = { CREATED_3_0_3, ADDED_7_3_5 } }),	-- Festival Lane Girdle
 					i(37117),	-- King's Square Bracers
-					i(37698, { ["timeline"] = { CREATED_3_0_3, ADDED_7_3_5 } }),	-- Spaulders of Elder's Square
-					i(37697, { ["timeline"] = { CREATED_3_0_3, ADDED_7_3_5 } }),	-- Trade District Knife
+					i(37698, { timeline = { CREATED_3_0_3, ADDED_7_3_5 } }),	-- Spaulders of Elder's Square
+					i(37697, { timeline = { CREATED_3_0_3, ADDED_7_3_5 } }),	-- Trade District Knife
 				}),
 				BossOnly(MEATHOOK, {
 					i(37680),	-- Belt of Unified Souls
@@ -177,7 +177,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				BossOnly(SALRAMM, {
 					i(37682),	-- Bindings of Dark Will
 					i(37084),	-- Flowing Cloak of Command
-					i(157563, { ["timeline"] = { ADDED_7_3_5 } }),	-- Freshly Sewn Leggings
+					i(157563, { timeline = { ADDED_7_3_5 } }),	-- Freshly Sewn Leggings
 					i(37684),	-- Forgotten Shadow Hood
 					i(37681),	-- Gavel of the Fleshcrafter
 					i(37683),	-- Necromancer's Amulet
@@ -186,16 +186,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(37095),	-- Waistband of the Thuzadin
 				}),
 				BossOnly(CHRONOLORD, {
-					i(37686, { ["timeline"] = { REMOVED_11_1_5 } }),	-- Cracked Epoch Grasps
-					i(238993, { ["timeline"] = { ADDED_11_1_5 } }),	-- Cracked Epoch Grasps
-					i(37687, { ["timeline"] = { REMOVED_11_1_5 } }),	-- Gloves of Distorted Time
-					i(238991, { ["timeline"] = { ADDED_11_1_5 } }),	-- Gloves of Distorted Time
+					i(37686, { timeline = { REMOVED_11_1_5 } }),	-- Cracked Epoch Grasps
+					i(238993, { timeline = { ADDED_11_1_5 } }),	-- Cracked Epoch Grasps
+					i(37687, { timeline = { REMOVED_11_1_5 } }),	-- Gloves of Distorted Time
+					i(238991, { timeline = { ADDED_11_1_5 } }),	-- Gloves of Distorted Time
 					i(37688),	-- Legplates of the Infinite Drakonid
-					i(37685, { ["timeline"] = { REMOVED_11_1_5 } }),	-- Mobius Band
-					i(238992, { ["timeline"] = { ADDED_11_1_5 } }),	-- Mobius Band
+					i(37685, { timeline = { REMOVED_11_1_5 } }),	-- Mobius Band
+					i(238992, { timeline = { ADDED_11_1_5 } }),	-- Mobius Band
 					i(37096),	-- Necklace of the Chrono-Lord
-					i(37096, { ["timeline"] = { REMOVED_11_1_5 } }),	-- Necklace of the Chrono-Lord
-					i(238990, { ["timeline"] = { ADDED_11_1_5 } }),	-- Necklace of the Chrono-Lord
+					i(37096, { timeline = { REMOVED_11_1_5 } }),	-- Necklace of the Chrono-Lord
+					i(238990, { timeline = { ADDED_11_1_5 } }),	-- Necklace of the Chrono-Lord
 					i(37106),	-- Ouroboros Belt
 					i(37099),	-- Sempiternal Staff
 					i(37105),	-- Treads of Altered History
@@ -222,11 +222,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
 				n(ACHIEVEMENTS, {
 					ach(1872, {	-- Zombiefest!
-						["description"] = "Gather zombies leading up to Meathook, but do not kill them.\n\nKill Meathook and wait for zombies to respawn; then gather and kill more zombies.",
-						["cr"] = 27737,	-- Risen Zombie
+						description = "Gather zombies leading up to Meathook, but do not kill them.\n\nKill Meathook and wait for zombies to respawn; then gather and kill more zombies.",
+						cr = 27737,	-- Risen Zombie
 					}),
 				}),
 				BossOnly(MEATHOOK),
@@ -237,9 +237,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(43951),	-- Bronze Drake (MOUNT!)
 				}),
 				BossOnly(MALGANIS, {
-					i(43697, { ["timeline"] = { REMOVED_4_0_1 } }),	-- Artifact from the Nathrezim Homeworld (QI!)
+					i(43697, { timeline = { REMOVED_4_0_1 } }),	-- Artifact from the Nathrezim Homeworld (QI!)
 					--
-					ach(5106, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: The Culling of Stratholme Guild Run
+					ach(5106, { timeline = { ADDED_4_0_3 } }),	-- Heroic: The Culling of Stratholme Guild Run
 				}),
 			}),
 			-- #else
@@ -257,7 +257,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(37095),	-- Waistband of the Thuzadin
 				}),
 				BossOnly(CHRONOLORD, {
-					i(37096, { ["timeline"] = { REMOVED_11_1_5 } }),	-- Necklace of the Chrono-Lord
+					i(37096, { timeline = { REMOVED_11_1_5 } }),	-- Necklace of the Chrono-Lord
 					i(37106),	-- Ouroboros Belt
 					i(37099),	-- Sempiternal Staff
 					i(37105),	-- Treads of Altered History
@@ -277,23 +277,23 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				n(ZONE_DROPS, {
 					i(37115),	-- Crusader's Square Pauldrons
 					i(37116),	-- Epaulets of Market Row
-					i(37699, { ["timeline"] = { CREATED_3_0_3, ADDED_7_3_5 } }),	-- Festival Lane Girdle
+					i(37699, { timeline = { CREATED_3_0_3, ADDED_7_3_5 } }),	-- Festival Lane Girdle
 					i(37117),	-- King's Square Bracers
-					i(37698, { ["timeline"] = { CREATED_3_0_3, ADDED_7_3_5 } }),	-- Spaulders of Elder's Square
-					i(37697, { ["timeline"] = { CREATED_3_0_3, ADDED_7_3_5 } }),	-- Trade District Knife
+					i(37698, { timeline = { CREATED_3_0_3, ADDED_7_3_5 } }),	-- Spaulders of Elder's Square
+					i(37697, { timeline = { CREATED_3_0_3, ADDED_7_3_5 } }),	-- Trade District Knife
 				}),
 			}),
-			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
 				n(ACHIEVEMENTS, {
 					ach(1872, {	-- Zombiefest!
-						["description"] = "Gather zombies leading up to Meathook, but do not kill them.\n\nKill Meathook and wait for zombies to respawn; then gather and kill more zombies.",
-						["cr"] = 27737,	-- Risen Zombie
+						description = "Gather zombies leading up to Meathook, but do not kill them.\n\nKill Meathook and wait for zombies to respawn; then gather and kill more zombies.",
+						cr = 27737,	-- Risen Zombie
 					}),
 				}),
 				-- #if BEFORE CATA
 				n(COMMON_BOSS_DROPS, {
 					currency(101, {	-- Emblem of Heroism
-						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+						timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
 					}),
 				}),
 				-- #endif
@@ -310,19 +310,19 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(37682),	-- Bindings of Dark Will
 				}),
 				BossOnly(CHRONOLORD, {
-					i(37686, { ["timeline"] = { REMOVED_11_1_5 } }),	-- Cracked Epoch Grasps
-					i(37687, { ["timeline"] = { REMOVED_11_1_5 } }),	-- Gloves of Distorted Time
+					i(37686, { timeline = { REMOVED_11_1_5 } }),	-- Cracked Epoch Grasps
+					i(37687, { timeline = { REMOVED_11_1_5 } }),	-- Gloves of Distorted Time
 					i(37688),	-- Legplates of the Infinite Drakonid
-					i(37685, { ["timeline"] = { REMOVED_11_1_5 } }),	-- Mobius Band
+					i(37685, { timeline = { REMOVED_11_1_5 } }),	-- Mobius Band
 				}),
 				n(32273, {	-- Infinite Corruptor
 					ach(1817),	-- The Culling of Time
 					i(43951),	-- Bronze Drake (MOUNT!)
 				}),
 				BossOnly(MALGANIS, {
-					i(43697, { ["timeline"] = { REMOVED_4_0_1 } }),	-- Artifact from the Nathrezim Homeworld (QI!)
+					i(43697, { timeline = { REMOVED_4_0_1 } }),	-- Artifact from the Nathrezim Homeworld (QI!)
 					--
-					ach(5106, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: The Culling of Stratholme Guild Run
+					ach(5106, { timeline = { ADDED_4_0_3 } }),	-- Heroic: The Culling of Stratholme Guild Run
 					i(37694),	-- Band of Guile
 					i(37693),	-- Greed
 					i(37695),	-- Legguards of Nature's Power
@@ -337,9 +337,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 			-- #if ANYCLASSIC
 			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394444, 412867, 424210),
-				["lvl"] = lvlsquish(80, 80, 30),
-				["groups"] = {
+				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394444, 412867, 424210),
+				lvl = lvlsquish(80, 80, 30),
+				groups = {
 					BossOnly(MEATHOOK, {
 						i(40429),	-- Crimson Steel
 						i(43988),	-- Gale-Proof Cloak
@@ -370,9 +370,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				},
 			})),
 			applyclassicphase(WRATH_PHASE_THREE, n(DEFENSE_PROTOCOL_BETA, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(412867, 424210),
-				["lvl"] = lvlsquish(80, 80, 30),
-				["groups"] = {
+				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(412867, 424210),
+				lvl = lvlsquish(80, 80, 30),
+				groups = {
 					BossOnly(MEATHOOK, {
 						i(45694),	-- Conductive Cord
 						i(46339),	-- Mimiron's Repeater
@@ -397,9 +397,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				},
 			})),
 			applyclassicphase(WRATH_PHASE_FOUR, n(DEFENSE_PROTOCOL_GAMMA, {
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424210),
-				["lvl"] = lvlsquish(80, 80, 30),
-				["groups"] = {
+				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424210),
+				lvl = lvlsquish(80, 80, 30),
+				groups = {
 					BossOnly(MEATHOOK),
 					BossOnly(SALRAMM),
 					BossOnly(CHRONOLORD),
@@ -411,7 +411,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 	inst(279, {
 		q(35472),	-- Culling of Stratholme Reward Quest - Normal completion
 		q(35474),	-- Culling of Stratholme Reward Quest - Heroic completion

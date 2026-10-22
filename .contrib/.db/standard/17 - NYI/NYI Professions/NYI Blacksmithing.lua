@@ -21,7 +21,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
 					i(41741),	-- Cobalt Rod
 				})),
 			}),
@@ -29,7 +29,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				-- 5.0.4
 				-- #if BEFORE 10.2.7
 				-- All was added into MoP: Remix Ensembles
-				expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+				expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
 					i(82918),	-- Lightsteel Belt
 					i(82917),	-- Lightsteel Boots
 					i(82913),	-- Lightsteel Breastplate
@@ -56,7 +56,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				-- #endif
 
 				-- 5.2.0
-				expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
+				expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ timeline = { CREATED_5_2_0 } }, {
 					i(93441),	-- Crafted Dreadful Gladiator's Barrier - UNUSED
 					i(93483),	-- Crafted Dreadful Gladiator's Redoubt
 					i(93614),	-- Crafted Dreadful Gladiator's Shield Wall
@@ -64,7 +64,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
 					i(108422),	-- Blackrock Crucible
 					i(107968),	-- Draenic Steel Chestplate
 					i(107976),	-- Draenic Steel Chestplate
@@ -255,7 +255,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
 					i(124434),	-- Handmade Leystone Helm
 					i(124432),	-- Leystone Dome
 					i(124431),	-- Leystone Faceguard
@@ -265,144 +265,144 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
-					i(159854, {["modID"] = 90, ["sourceID"] = 95903, ["name"] = "Honorable Combatant's Battleaxe", }),
-					i(159854, {["modID"] = 91, ["sourceID"] = 95904, ["name"] = "Honorable Combatant's Battleaxe", }),
-					i(159854, {["modID"] = 92, ["sourceID"] = 95905, ["name"] = "Honorable Combatant's Battleaxe", }),
-					i(159856, {["modID"] = 90, ["sourceID"] = 95909, ["name"] = "Honorable Combatant's Claymore", }),
-					i(159856, {["modID"] = 91, ["sourceID"] = 95910, ["name"] = "Honorable Combatant's Claymore", }),
-					i(159856, {["modID"] = 92, ["sourceID"] = 95911, ["name"] = "Honorable Combatant's Claymore", }),
-					i(159852, {["modID"] = 90, ["sourceID"] = 95897, ["name"] = "Honorable Combatant's Hatchet", }),
-					i(159852, {["modID"] = 91, ["sourceID"] = 95898, ["name"] = "Honorable Combatant's Hatchet", }),
-					i(159852, {["modID"] = 92, ["sourceID"] = 95899, ["name"] = "Honorable Combatant's Hatchet", }),
-					i(152838, {["modID"] = 90, ["sourceID"] = 90683, ["name"] = "Stormsteel Axe", }),
-					i(152838, {["modID"] = 91, ["sourceID"] = 90684, ["name"] = "Stormsteel Axe", }),
-					i(152838, {["modID"] = 92, ["sourceID"] = 90685, ["name"] = "Stormsteel Axe", }),
-					i(152836, {["modID"] = 90, ["sourceID"] = 90677, ["name"] = "Stormsteel Greatsword", }),
-					i(152836, {["modID"] = 91, ["sourceID"] = 90678, ["name"] = "Stormsteel Greatsword", }),
-					i(152836, {["modID"] = 92, ["sourceID"] = 90679, ["name"] = "Stormsteel Greatsword", }),
+				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+					i(159854, {modID = 90, sourceID = 95903, name = "Honorable Combatant's Battleaxe", }),
+					i(159854, {modID = 91, sourceID = 95904, name = "Honorable Combatant's Battleaxe", }),
+					i(159854, {modID = 92, sourceID = 95905, name = "Honorable Combatant's Battleaxe", }),
+					i(159856, {modID = 90, sourceID = 95909, name = "Honorable Combatant's Claymore", }),
+					i(159856, {modID = 91, sourceID = 95910, name = "Honorable Combatant's Claymore", }),
+					i(159856, {modID = 92, sourceID = 95911, name = "Honorable Combatant's Claymore", }),
+					i(159852, {modID = 90, sourceID = 95897, name = "Honorable Combatant's Hatchet", }),
+					i(159852, {modID = 91, sourceID = 95898, name = "Honorable Combatant's Hatchet", }),
+					i(159852, {modID = 92, sourceID = 95899, name = "Honorable Combatant's Hatchet", }),
+					i(152838, {modID = 90, sourceID = 90683, name = "Stormsteel Axe", }),
+					i(152838, {modID = 91, sourceID = 90684, name = "Stormsteel Axe", }),
+					i(152838, {modID = 92, sourceID = 90685, name = "Stormsteel Axe", }),
+					i(152836, {modID = 90, sourceID = 90677, name = "Stormsteel Greatsword", }),
+					i(152836, {modID = 91, sourceID = 90678, name = "Stormsteel Greatsword", }),
+					i(152836, {modID = 92, sourceID = 90679, name = "Stormsteel Greatsword", }),
 
 					-- sourceID without itemID due to wrong ingame tooltips
-					itemsource(97975, {["name"] = "Honorable Combatant's Aegis", }),	-- i(161892),
-					itemsource(97976, {["name"] = "Honorable Combatant's Aegis", }),	-- i(161892),
-					itemsource(97977, {["name"] = "Honorable Combatant's Aegis", }),	-- i(161892),
-					itemsource(95900, {["name"] = "Honorable Combatant's Cutlass", }),	-- i(159853),
-					itemsource(95901, {["name"] = "Honorable Combatant's Cutlass", }),	-- i(159853),
-					itemsource(95902, {["name"] = "Honorable Combatant's Cutlass", }),	-- i(159853),
-					itemsource(98013, {["name"] = "Honorable Combatant's Cutlass", }),	-- i(161920),
-					itemsource(98014, {["name"] = "Honorable Combatant's Cutlass", }),	-- i(161920),
-					itemsource(98015, {["name"] = "Honorable Combatant's Cutlass", }),	-- i(161920),
-					itemsource(95906, {["name"] = "Honorable Combatant's Deckpounder", }),	-- i(159855),
-					itemsource(95907, {["name"] = "Honorable Combatant's Deckpounder", }),	-- i(159855),
-					itemsource(95908, {["name"] = "Honorable Combatant's Deckpounder", }),	-- i(159855),
-					itemsource(98016, {["name"] = "Honorable Combatant's Deckpounder", }),	-- i(161921),
-					itemsource(98017, {["name"] = "Honorable Combatant's Deckpounder", }),	-- i(161921),
-					itemsource(98018, {["name"] = "Honorable Combatant's Deckpounder", }),	-- i(161921),
-					itemsource(95932, {["name"] = "Honorable Combatant's Plate Armguards", }),	-- i(159866),
-					itemsource(97986, {["name"] = "Honorable Combatant's Plate Armguards", }),	-- i(161897),
-					itemsource(99946, {["name"] = "Honorable Combatant's Plate Armguards", }),	-- i(161897),
-					itemsource(99947, {["name"] = "Honorable Combatant's Plate Armguards", }),	-- i(161897),
-					itemsource(100029, {["name"] = "Honorable Combatant's Plate Armguards",}),	-- i(159866),
-					itemsource(100030, {["name"] = "Honorable Combatant's Plate Armguards",}),	-- i(159866),
-					itemsource(95920, {["name"] = "Honorable Combatant's Plate Boots", }),	-- i(159860),
-					itemsource(97978, {["name"] = "Honorable Combatant's Plate Boots", }),	-- i(161893),
-					itemsource(99938, {["name"] = "Honorable Combatant's Plate Boots", }),	-- i(161893),
-					itemsource(99939, {["name"] = "Honorable Combatant's Plate Boots", }),	-- i(161893),
-					itemsource(100021, {["name"] = "Honorable Combatant's Plate Boots",}),	-- i(159860),
-					itemsource(100022, {["name"] = "Honorable Combatant's Plate Boots",}),	-- i(159860),
-					itemsource(95922, {["name"] = "Honorable Combatant's Plate Gauntlets", }),	-- i(159861),
-					itemsource(97980, {["name"] = "Honorable Combatant's Plate Gauntlets", }),	-- i(161894),
-					itemsource(99940, {["name"] = "Honorable Combatant's Plate Gauntlets", }),	-- i(161894),
-					itemsource(99941, {["name"] = "Honorable Combatant's Plate Gauntlets", }),	-- i(161894),
-					itemsource(100023, {["name"] = "Honorable Combatant's Plate Gauntlets",}),	-- i(159861),
-					itemsource(100024, {["name"] = "Honorable Combatant's Plate Gauntlets",}),	-- i(159861),
-					itemsource(95926, {["name"] = "Honorable Combatant's Plate Greaves", }),	-- i(159863),
-					itemsource(97982, {["name"] = "Honorable Combatant's Plate Greaves", }),	-- i(161895),
-					itemsource(99942, {["name"] = "Honorable Combatant's Plate Greaves", }),	-- i(161895),
-					itemsource(99943, {["name"] = "Honorable Combatant's Plate Greaves", }),	-- i(161895),
-					itemsource(100025, {["name"] = "Honorable Combatant's Plate Greaves",}),	-- i(159863),
-					itemsource(100026, {["name"] = "Honorable Combatant's Plate Greaves",}),	-- i(159863),
-					itemsource(95930, {["name"] = "Honorable Combatant's Plate Waistguard", }),	-- i(159865),
-					itemsource(97984, {["name"] = "Honorable Combatant's Plate Waistguard", }),	-- i(161896),
-					itemsource(99944, {["name"] = "Honorable Combatant's Plate Waistguard", }),	-- i(161896),
-					itemsource(99945, {["name"] = "Honorable Combatant's Plate Waistguard", }),	-- i(161896),
-					itemsource(100027, {["name"] = "Honorable Combatant's Plate Waistguard",}),	-- i(159865),
-					itemsource(100028, {["name"] = "Honorable Combatant's Plate Waistguard",}),	-- i(159865),
-					itemsource(95915, {["name"] = "Honorable Combatant's Polearm", }),	-- i(159858),
-					itemsource(95916, {["name"] = "Honorable Combatant's Polearm", }),	-- i(159858),
-					itemsource(95917, {["name"] = "Honorable Combatant's Polearm", }),	-- i(159858),
-					itemsource(98022, {["name"] = "Honorable Combatant's Polearm", }),	-- i(161923),
-					itemsource(98023, {["name"] = "Honorable Combatant's Polearm", }),	-- i(161923),
-					itemsource(98024, {["name"] = "Honorable Combatant's Polearm", }),	-- i(161923),
-					itemsource(95912, {["name"] = "Honorable Combatant's Shanker", }),	-- i(159857),
-					itemsource(95913, {["name"] = "Honorable Combatant's Shanker", }),	-- i(159857),
-					itemsource(95914, {["name"] = "Honorable Combatant's Shanker", }),	-- i(159857),
-					itemsource(98019, {["name"] = "Honorable Combatant's Shanker", }),	-- i(161922),
-					itemsource(98020, {["name"] = "Honorable Combatant's Shanker", }),	-- i(161922),
-					itemsource(98021, {["name"] = "Honorable Combatant's Shanker", }),	-- i(161922),
-					itemsource(95894, {["name"] = "Honorable Combatant's Shield", }),	-- i(159851),
-					itemsource(95895, {["name"] = "Honorable Combatant's Shield", }),	-- i(159851),
-					itemsource(95896, {["name"] = "Honorable Combatant's Shield", }),	-- i(159851),
-					itemsource(90635, {["name"] = "Monel-Hardened Armguards", }),	-- i(152809),
-					itemsource(90647, {["name"] = "Monel-Hardened Battleaxe", }),	-- i(152823),
-					itemsource(90648, {["name"] = "Monel-Hardened Battleaxe", }),	-- i(152823),
-					itemsource(90649, {["name"] = "Monel-Hardened Battleaxe", }),	-- i(152823),
-					itemsource(90629, {["name"] = "Monel-Hardened Boots", }),	-- i(152803),
-					itemsource(90628, {["name"] = "Monel-Hardened Breastplate", }),	-- i(152802),
-					itemsource(90656, {["name"] = "Monel-Hardened Claymore", }),	-- i(152828),
-					itemsource(90657, {["name"] = "Monel-Hardened Claymore", }),	-- i(152828),
-					itemsource(90658, {["name"] = "Monel-Hardened Claymore", }),	-- i(152828),
-					itemsource(90653, {["name"] = "Monel-Hardened Cutlass", }),	-- i(152827),
-					itemsource(90654, {["name"] = "Monel-Hardened Cutlass", }),	-- i(152827),
-					itemsource(90655, {["name"] = "Monel-Hardened Cutlass", }),	-- i(152827),
-					itemsource(90662, {["name"] = "Monel-Hardened Deckpounder", }),	-- i(152831),
-					itemsource(90663, {["name"] = "Monel-Hardened Deckpounder", }),	-- i(152831),
-					itemsource(90664, {["name"] = "Monel-Hardened Deckpounder", }),	-- i(152831),
-					itemsource(90630, {["name"] = "Monel-Hardened Gauntlets", }),	-- i(152804),
-					itemsource(90632, {["name"] = "Monel-Hardened Greaves", }),	-- i(152806),
-					itemsource(90644, {["name"] = "Monel-Hardened Hatchet", }),	-- i(152822),
-					itemsource(90645, {["name"] = "Monel-Hardened Hatchet", }),	-- i(152822),
-					itemsource(90646, {["name"] = "Monel-Hardened Hatchet", }),	-- i(152822),
-					itemsource(90631, {["name"] = "Monel-Hardened Helm", }),	-- i(152805),
-					itemsource(90633, {["name"] = "Monel-Hardened Pauldrons", }),	-- i(152807),
-					itemsource(90668, {["name"] = "Monel-Hardened Polearm", }),	-- i(152833),
-					itemsource(90669, {["name"] = "Monel-Hardened Polearm", }),	-- i(152833),
-					itemsource(90670, {["name"] = "Monel-Hardened Polearm", }),	-- i(152833),
-					itemsource(98004, {["name"] = "Monel-Hardened Polearm", }),	-- i(161917),
-					itemsource(98005, {["name"] = "Monel-Hardened Polearm", }),	-- i(161917),
-					itemsource(98006, {["name"] = "Monel-Hardened Polearm", }),	-- i(161917),
-					itemsource(90665, {["name"] = "Monel-Hardened Shanker", }),	-- i(152832),
-					itemsource(90666, {["name"] = "Monel-Hardened Shanker", }),	-- i(152832),
-					itemsource(90667, {["name"] = "Monel-Hardened Shanker", }),	-- i(152832),
-					itemsource(90638, {["name"] = "Monel-Hardened Shield", }),	-- i(152818),
-					itemsource(90639, {["name"] = "Monel-Hardened Shield", }),	-- i(152818),
-					itemsource(90640, {["name"] = "Monel-Hardened Shield", }),	-- i(152818),
-					itemsource(90634, {["name"] = "Monel-Hardened Waistguard", }),	-- i(152808),
-					itemsource(90674, {["name"] = "Stormsteel Dagger", }),	-- i(152835),
-					itemsource(90675, {["name"] = "Stormsteel Dagger", }),	-- i(152835),
-					itemsource(90676, {["name"] = "Stormsteel Dagger", }),	-- i(152835),
-					itemsource(98010, {["name"] = "Stormsteel Dagger", }),	-- i(161919),
-					itemsource(98011, {["name"] = "Stormsteel Dagger", }),	-- i(161919),
-					itemsource(98012, {["name"] = "Stormsteel Dagger", }),	-- i(161919),
-					itemsource(90636, {["name"] = "Stormsteel Legguards", }),	-- i(152810),
-					itemsource(90637, {["name"] = "Stormsteel Girdle", }),	-- i(152811),
-					itemsource(90641, {["name"] = "Stormsteel Shield", }),	-- i(152819),
-					itemsource(90642, {["name"] = "Stormsteel Shield", }),	-- i(152819),
-					itemsource(90643, {["name"] = "Stormsteel Shield", }),	-- i(152819),
-					itemsource(97972, {["name"] = "Stormsteel Shield", }),	-- i(161891),
-					itemsource(97973, {["name"] = "Stormsteel Shield", }),	-- i(161891),
-					itemsource(97974, {["name"] = "Stormsteel Shield", }),	-- i(161891),
-					itemsource(90671, {["name"] = "Stormsteel Spear", }),	-- i(152834),
-					itemsource(90672, {["name"] = "Stormsteel Spear", }),	-- i(152834),
-					itemsource(90673, {["name"] = "Stormsteel Spear", }),	-- i(152834),
-					itemsource(98007, {["name"] = "Stormsteel Spear", }),	-- i(161918),
-					itemsource(98008, {["name"] = "Stormsteel Spear", }),	-- i(161918),
-					itemsource(98009, {["name"] = "Stormsteel Spear", }),	-- i(161918),
+					itemsource(97975, {name = "Honorable Combatant's Aegis", }),	-- i(161892),
+					itemsource(97976, {name = "Honorable Combatant's Aegis", }),	-- i(161892),
+					itemsource(97977, {name = "Honorable Combatant's Aegis", }),	-- i(161892),
+					itemsource(95900, {name = "Honorable Combatant's Cutlass", }),	-- i(159853),
+					itemsource(95901, {name = "Honorable Combatant's Cutlass", }),	-- i(159853),
+					itemsource(95902, {name = "Honorable Combatant's Cutlass", }),	-- i(159853),
+					itemsource(98013, {name = "Honorable Combatant's Cutlass", }),	-- i(161920),
+					itemsource(98014, {name = "Honorable Combatant's Cutlass", }),	-- i(161920),
+					itemsource(98015, {name = "Honorable Combatant's Cutlass", }),	-- i(161920),
+					itemsource(95906, {name = "Honorable Combatant's Deckpounder", }),	-- i(159855),
+					itemsource(95907, {name = "Honorable Combatant's Deckpounder", }),	-- i(159855),
+					itemsource(95908, {name = "Honorable Combatant's Deckpounder", }),	-- i(159855),
+					itemsource(98016, {name = "Honorable Combatant's Deckpounder", }),	-- i(161921),
+					itemsource(98017, {name = "Honorable Combatant's Deckpounder", }),	-- i(161921),
+					itemsource(98018, {name = "Honorable Combatant's Deckpounder", }),	-- i(161921),
+					itemsource(95932, {name = "Honorable Combatant's Plate Armguards", }),	-- i(159866),
+					itemsource(97986, {name = "Honorable Combatant's Plate Armguards", }),	-- i(161897),
+					itemsource(99946, {name = "Honorable Combatant's Plate Armguards", }),	-- i(161897),
+					itemsource(99947, {name = "Honorable Combatant's Plate Armguards", }),	-- i(161897),
+					itemsource(100029, {name = "Honorable Combatant's Plate Armguards",}),	-- i(159866),
+					itemsource(100030, {name = "Honorable Combatant's Plate Armguards",}),	-- i(159866),
+					itemsource(95920, {name = "Honorable Combatant's Plate Boots", }),	-- i(159860),
+					itemsource(97978, {name = "Honorable Combatant's Plate Boots", }),	-- i(161893),
+					itemsource(99938, {name = "Honorable Combatant's Plate Boots", }),	-- i(161893),
+					itemsource(99939, {name = "Honorable Combatant's Plate Boots", }),	-- i(161893),
+					itemsource(100021, {name = "Honorable Combatant's Plate Boots",}),	-- i(159860),
+					itemsource(100022, {name = "Honorable Combatant's Plate Boots",}),	-- i(159860),
+					itemsource(95922, {name = "Honorable Combatant's Plate Gauntlets", }),	-- i(159861),
+					itemsource(97980, {name = "Honorable Combatant's Plate Gauntlets", }),	-- i(161894),
+					itemsource(99940, {name = "Honorable Combatant's Plate Gauntlets", }),	-- i(161894),
+					itemsource(99941, {name = "Honorable Combatant's Plate Gauntlets", }),	-- i(161894),
+					itemsource(100023, {name = "Honorable Combatant's Plate Gauntlets",}),	-- i(159861),
+					itemsource(100024, {name = "Honorable Combatant's Plate Gauntlets",}),	-- i(159861),
+					itemsource(95926, {name = "Honorable Combatant's Plate Greaves", }),	-- i(159863),
+					itemsource(97982, {name = "Honorable Combatant's Plate Greaves", }),	-- i(161895),
+					itemsource(99942, {name = "Honorable Combatant's Plate Greaves", }),	-- i(161895),
+					itemsource(99943, {name = "Honorable Combatant's Plate Greaves", }),	-- i(161895),
+					itemsource(100025, {name = "Honorable Combatant's Plate Greaves",}),	-- i(159863),
+					itemsource(100026, {name = "Honorable Combatant's Plate Greaves",}),	-- i(159863),
+					itemsource(95930, {name = "Honorable Combatant's Plate Waistguard", }),	-- i(159865),
+					itemsource(97984, {name = "Honorable Combatant's Plate Waistguard", }),	-- i(161896),
+					itemsource(99944, {name = "Honorable Combatant's Plate Waistguard", }),	-- i(161896),
+					itemsource(99945, {name = "Honorable Combatant's Plate Waistguard", }),	-- i(161896),
+					itemsource(100027, {name = "Honorable Combatant's Plate Waistguard",}),	-- i(159865),
+					itemsource(100028, {name = "Honorable Combatant's Plate Waistguard",}),	-- i(159865),
+					itemsource(95915, {name = "Honorable Combatant's Polearm", }),	-- i(159858),
+					itemsource(95916, {name = "Honorable Combatant's Polearm", }),	-- i(159858),
+					itemsource(95917, {name = "Honorable Combatant's Polearm", }),	-- i(159858),
+					itemsource(98022, {name = "Honorable Combatant's Polearm", }),	-- i(161923),
+					itemsource(98023, {name = "Honorable Combatant's Polearm", }),	-- i(161923),
+					itemsource(98024, {name = "Honorable Combatant's Polearm", }),	-- i(161923),
+					itemsource(95912, {name = "Honorable Combatant's Shanker", }),	-- i(159857),
+					itemsource(95913, {name = "Honorable Combatant's Shanker", }),	-- i(159857),
+					itemsource(95914, {name = "Honorable Combatant's Shanker", }),	-- i(159857),
+					itemsource(98019, {name = "Honorable Combatant's Shanker", }),	-- i(161922),
+					itemsource(98020, {name = "Honorable Combatant's Shanker", }),	-- i(161922),
+					itemsource(98021, {name = "Honorable Combatant's Shanker", }),	-- i(161922),
+					itemsource(95894, {name = "Honorable Combatant's Shield", }),	-- i(159851),
+					itemsource(95895, {name = "Honorable Combatant's Shield", }),	-- i(159851),
+					itemsource(95896, {name = "Honorable Combatant's Shield", }),	-- i(159851),
+					itemsource(90635, {name = "Monel-Hardened Armguards", }),	-- i(152809),
+					itemsource(90647, {name = "Monel-Hardened Battleaxe", }),	-- i(152823),
+					itemsource(90648, {name = "Monel-Hardened Battleaxe", }),	-- i(152823),
+					itemsource(90649, {name = "Monel-Hardened Battleaxe", }),	-- i(152823),
+					itemsource(90629, {name = "Monel-Hardened Boots", }),	-- i(152803),
+					itemsource(90628, {name = "Monel-Hardened Breastplate", }),	-- i(152802),
+					itemsource(90656, {name = "Monel-Hardened Claymore", }),	-- i(152828),
+					itemsource(90657, {name = "Monel-Hardened Claymore", }),	-- i(152828),
+					itemsource(90658, {name = "Monel-Hardened Claymore", }),	-- i(152828),
+					itemsource(90653, {name = "Monel-Hardened Cutlass", }),	-- i(152827),
+					itemsource(90654, {name = "Monel-Hardened Cutlass", }),	-- i(152827),
+					itemsource(90655, {name = "Monel-Hardened Cutlass", }),	-- i(152827),
+					itemsource(90662, {name = "Monel-Hardened Deckpounder", }),	-- i(152831),
+					itemsource(90663, {name = "Monel-Hardened Deckpounder", }),	-- i(152831),
+					itemsource(90664, {name = "Monel-Hardened Deckpounder", }),	-- i(152831),
+					itemsource(90630, {name = "Monel-Hardened Gauntlets", }),	-- i(152804),
+					itemsource(90632, {name = "Monel-Hardened Greaves", }),	-- i(152806),
+					itemsource(90644, {name = "Monel-Hardened Hatchet", }),	-- i(152822),
+					itemsource(90645, {name = "Monel-Hardened Hatchet", }),	-- i(152822),
+					itemsource(90646, {name = "Monel-Hardened Hatchet", }),	-- i(152822),
+					itemsource(90631, {name = "Monel-Hardened Helm", }),	-- i(152805),
+					itemsource(90633, {name = "Monel-Hardened Pauldrons", }),	-- i(152807),
+					itemsource(90668, {name = "Monel-Hardened Polearm", }),	-- i(152833),
+					itemsource(90669, {name = "Monel-Hardened Polearm", }),	-- i(152833),
+					itemsource(90670, {name = "Monel-Hardened Polearm", }),	-- i(152833),
+					itemsource(98004, {name = "Monel-Hardened Polearm", }),	-- i(161917),
+					itemsource(98005, {name = "Monel-Hardened Polearm", }),	-- i(161917),
+					itemsource(98006, {name = "Monel-Hardened Polearm", }),	-- i(161917),
+					itemsource(90665, {name = "Monel-Hardened Shanker", }),	-- i(152832),
+					itemsource(90666, {name = "Monel-Hardened Shanker", }),	-- i(152832),
+					itemsource(90667, {name = "Monel-Hardened Shanker", }),	-- i(152832),
+					itemsource(90638, {name = "Monel-Hardened Shield", }),	-- i(152818),
+					itemsource(90639, {name = "Monel-Hardened Shield", }),	-- i(152818),
+					itemsource(90640, {name = "Monel-Hardened Shield", }),	-- i(152818),
+					itemsource(90634, {name = "Monel-Hardened Waistguard", }),	-- i(152808),
+					itemsource(90674, {name = "Stormsteel Dagger", }),	-- i(152835),
+					itemsource(90675, {name = "Stormsteel Dagger", }),	-- i(152835),
+					itemsource(90676, {name = "Stormsteel Dagger", }),	-- i(152835),
+					itemsource(98010, {name = "Stormsteel Dagger", }),	-- i(161919),
+					itemsource(98011, {name = "Stormsteel Dagger", }),	-- i(161919),
+					itemsource(98012, {name = "Stormsteel Dagger", }),	-- i(161919),
+					itemsource(90636, {name = "Stormsteel Legguards", }),	-- i(152810),
+					itemsource(90637, {name = "Stormsteel Girdle", }),	-- i(152811),
+					itemsource(90641, {name = "Stormsteel Shield", }),	-- i(152819),
+					itemsource(90642, {name = "Stormsteel Shield", }),	-- i(152819),
+					itemsource(90643, {name = "Stormsteel Shield", }),	-- i(152819),
+					itemsource(97972, {name = "Stormsteel Shield", }),	-- i(161891),
+					itemsource(97973, {name = "Stormsteel Shield", }),	-- i(161891),
+					itemsource(97974, {name = "Stormsteel Shield", }),	-- i(161891),
+					itemsource(90671, {name = "Stormsteel Spear", }),	-- i(152834),
+					itemsource(90672, {name = "Stormsteel Spear", }),	-- i(152834),
+					itemsource(90673, {name = "Stormsteel Spear", }),	-- i(152834),
+					itemsource(98007, {name = "Stormsteel Spear", }),	-- i(161918),
+					itemsource(98008, {name = "Stormsteel Spear", }),	-- i(161918),
+					itemsource(98009, {name = "Stormsteel Spear", }),	-- i(161918),
 				})),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
 					i(171425),	-- [DNT] REUSE ME \\ Laestrite Plates \\ Blacksmithing - Modified Crafting Reagent 06
 					i(171424),	-- [DNT] REUSE ME \\ Laestrite Spikes
 					i(171426),	-- [DNT] REUSE ME \\ Blacksmithing - Modified Crafting Reagent 07
@@ -492,11 +492,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
 					i(191070),	-- Blacksmithing Gloves
 					i(191025),	-- Blacksmith Hammer - DO NOT USE
 					i(191033),	-- Blacksmith Hammer 2 - DO NOT USE
-					i(199687, {["sourceID"] = 182205 }),	-- BWU Test Hammer
+					i(199687, {sourceID = 182205 }),	-- BWU Test Hammer
 					i(191259),	-- DNT - Stonename Razorstone
 					i(191258),	-- DNT - Stonename Weightstone
 					i(191257),	-- DNT - Stonename Whetstone
@@ -508,13 +508,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.0.2
-				expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
+				expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ timeline = { CREATED_10_0_2 } }, {
 					i(191882),	-- Serevite Repair Hammer
 					i(191883),	-- Serevite Repair Hammer
 				})),
 
 				-- 10.1.0
-				expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+				expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ timeline = { CREATED_10_1_0 } }, {
 					i(205040),	-- Shadowed Belt Buckle
 					i(205041),	-- Shadowed Belt Buckle
 					i(205042),	-- Shadowed Belt Buckle
@@ -525,7 +525,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
 					i(220961),	-- Arathor Armor Patch
 					i(220962),	-- Arathor Armor Patch
 					i(220963),	-- Arathor Armor Patch
@@ -763,7 +763,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
-				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
 					i(238206),	-- [PH] Weightstone - Quality 1
 					itemsource(287161),	-- Blood-Tempered Basinet
 					itemsource(287163),	-- Blood-Tempered Bracers
@@ -785,7 +785,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 12.1.0
-				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { CREATED_12_1_0 } }, {
 					i(273056),	-- Odious Alloy+
 					i(273057),	-- Odious Alloy++
 				})),
@@ -820,7 +820,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.1.0
-				expansion(EXPANSION.TBC, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_1_0 } }, {
+				expansion(EXPANSION.TBC, patch(1,0), bubbleDownSelf({ timeline = { CREATED_2_1_0 } }, {
 					-- Without SpellID attached
 					i(35529),	-- Plans: Dawnsteel Bracers
 					i(35530),	-- Plans: Dawnsteel Shoulders
@@ -829,7 +829,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 2.4.0
-				expansion(EXPANSION.TBC, patch(4,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
+				expansion(EXPANSION.TBC, patch(4,0), bubbleDownSelf({ timeline = { CREATED_2_4_0 } }, {
 					-- Without SpellID attached
 					i(35553),	-- Plans: Hard Khorium Battlefists
 					i(35554),	-- Plans: Hard Khorium Battleplate
@@ -839,14 +839,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
 					r(55730),	-- Cobalt Rod
 					r(50465),	-- Socket One-Handed Weapon
 				})),
 			}),
 			expansion(EXPANSION.CATA, {
 				-- 4.0.1
-				expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
+				expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_4_0_1 } }, {
 					r(85531),	-- Unknown
 					-- Without SpellID attached
 					i(66095),	-- Plans: Cold-Forged Shank
@@ -886,7 +886,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.MOP, {
 				-- 5.0.4
-				expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+				expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
 					r(126867),	-- Unknown
 					r(126864),	-- Unknown
 					r(126866),	-- Unknown
@@ -944,7 +944,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
 					r(153631),	-- Draenic Steel Bulwark
 					r(153605),	-- Draenic Steel Chestplate
 					r(153629),	-- Draenic Steel Dagger
@@ -995,7 +995,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
 					r(184345),	-- Handmade Leystone Helm
 					r(184342),	-- Leystone Dome
 					r(184341),	-- Leystone Faceguard
@@ -1017,7 +1017,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 7.3.0
-				expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
+				expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ timeline = { CREATED_7_3_0 } }, {
 					-- Without SpellID attached
 					i(151711),	-- Plans: Empyrial Breastplate [Rank 1]
 					i(151709),	-- Plans: Felslate Anchor
@@ -1025,7 +1025,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
 					r(253129),	-- 9.0 Blacksmithing - Modified Crafting Reagent 02
 					r(265939),	-- 9.0 Blacksmithing - Crafted Reagent 06
 					r(265938),	-- 9.0 Blacksmithing - Crafted Reagent 05
@@ -1047,7 +1047,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
 					r(307649),	-- 9.0 Blacksmithing - Crafted Reagent 03
 					r(307650),	-- 9.0 Blacksmithing - Crafted Reagent 04
 					r(280659),	-- 9.0 Blacksmithing - Crafted Reagent 07
@@ -1134,7 +1134,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
 					r(371396),	-- Draconium Repair Hammer
 					r(382579),	-- Opening
 					r(376698),	-- Wisp of Tyr
@@ -1167,7 +1167,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
 					r(450290),	-- Core Framework
 					r(450243),	-- Echoing Impact
 					-- With SpellID attached
@@ -1248,13 +1248,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 11.2.7
-				expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_7 } }, {
+				expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
 					r(1246473),	-- [DNT] TWW Blacksmithing Decor Template
 				})),
 			}),
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
-				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_12_0_0 } }, {
+				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
 					r(1230770),	-- [DNT] 12.0 Engineering Recipe Spell Template
 					-- With SpellID attached
 					i(265538),	-- Plans: Ornate Crafter's Tongs
@@ -1263,7 +1263,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 12.1.0
-				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_12_1_0 } }, {
+				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { CREATED_12_1_0 } }, {
 					r(1291682),	-- Odious Alloy
 					r(1288608),	--
 					r(1288712),	--

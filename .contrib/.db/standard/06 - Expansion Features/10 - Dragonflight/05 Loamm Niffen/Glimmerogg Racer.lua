@@ -2,54 +2,54 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
 	header(HEADERS.Faction, FACTION_LOAMM_NIFFEN, {
-		header(HEADERS.Faction, FACTION_GLIMMEROGG_RACER, bubbleDownSelf({ ["minReputation"] = { FACTION_LOAMM_NIFFEN, 7 } }, {
+		header(HEADERS.Faction, FACTION_GLIMMEROGG_RACER, bubbleDownSelf({ minReputation = { FACTION_LOAMM_NIFFEN, 7 } }, {
 			faction(FACTION_GLIMMEROGG_RACER),
 			n(ACHIEVEMENTS, {
 				ach(17741, {	-- Slow and Steady Wins the Race
 					i(205231),	-- Roggy (PET!)
 					crit(59148, {	-- Bashful wins
-						["sourceQuests"] = { 75662 },	-- A Race To The Finish
+						sourceQuests = { 75662 },	-- A Race To The Finish
 					}),
 					crit(59149, {	-- Tricky wins
-						["sourceQuests"] = { 75706 },	-- A Race To The Finish
+						sourceQuests = { 75706 },	-- A Race To The Finish
 					}),
 					crit(59150, {	-- Brulee wins
-						["sourceQuests"] = { 75707 },	-- A Race To The Finish
+						sourceQuests = { 75707 },	-- A Race To The Finish
 					}),
 					crit(59151, {	-- Roggy wins
-						["sourceQuests"] = { 75708 },	-- A Race To The Finish
+						sourceQuests = { 75708 },	-- A Race To The Finish
 					}),
 				}),
 			}),
 			n(QUESTS, {
 				q(74787, {	-- Come Snail Away
-					["sourceQuests"] = {
+					sourceQuests = {
 						73709,	-- Favor on the Side
 						73708,	-- Pay to Play
 					},
-					["provider"] = { "n", 201752 },	-- Briggul
-					["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
-					["groups"] = {
+					provider = { "n", 201752 },	-- Briggul
+					coord = { 44.2, 80.0, ZARALEK_CAVERN },
+					groups = {
 						i(203708),	-- Conch Whistle
 					},
 				}),
 				q(75598, {	-- Snailed It
-					["provider"] = { "n", 201752 },	-- Briggul
-					["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
-					["minReputation"] = { FACTION_GLIMMEROGG_RACER, 5 },	-- Rank 5, Professional, 2800
-					["groups"] = {
+					provider = { "n", 201752 },	-- Briggul
+					coord = { 44.2, 80.0, ZARALEK_CAVERN },
+					minReputation = { FACTION_GLIMMEROGG_RACER, 5 },	-- Rank 5, Professional, 2800
+					groups = {
 						i(205155),	-- Big Slick in the City
 					},
 				}),
 			}),
 			n(QUESTS, sharedData({
-				["sourceQuests"] = { 74787 },	-- Come Snail Away
-				["provider"] = { "n", 201752 },	-- Briggul
-				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
-				["maxReputation"] = { FACTION_GLIMMEROGG_RACER, 5 },
-				["lockCriteria"] = { 1, "factionID", FACTION_GLIMMEROGG_RACER + 0.5 },	-- Rank 5, Professional, 2800
+				sourceQuests = { 74787 },	-- Come Snail Away
+				provider = { "n", 201752 },	-- Briggul
+				coord = { 44.3, 79.9, ZARALEK_CAVERN },
+				maxReputation = { FACTION_GLIMMEROGG_RACER, 5 },
+				lockCriteria = { 1, "factionID", FACTION_GLIMMEROGG_RACER + 0.5 },	-- Rank 5, Professional, 2800
 			}, {
 				q(74948),	-- Snailspiration: Amethyst Softshell
 				q(74949),	-- Snailspiration: Archetype of Vigilance
@@ -68,11 +68,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(74968),	-- Snailspiration: Zoom
 			})),
 			n(QUESTS, sharedData({
-				["sourceQuests"] = { 74787 },	-- Come Snail Away
-				["provider"] = { "n", 201752 },	-- Briggul
-				["coord"] = { 44.3, 79.9, ZARALEK_CAVERN },
-				["maxReputation"] = { FACTION_GLIMMEROGG_RACER, 5 },	-- Rank 5, Professional, 2800
-				["isDaily"] = true,
+				sourceQuests = { 74787 },	-- Come Snail Away
+				provider = { "n", 201752 },	-- Briggul
+				coord = { 44.3, 79.9, ZARALEK_CAVERN },
+				maxReputation = { FACTION_GLIMMEROGG_RACER, 5 },	-- Rank 5, Professional, 2800
+				isDaily = true,
 			}, {
 				q(74516),	-- A Snail's Pace
 				q(74517),	-- All Terrain Snail
@@ -98,43 +98,43 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			})),
 			n(QUESTS, sharedData({
-				["sourceQuests"] = {
+				sourceQuests = {
 					73711,	-- Marked Champion
 					DF_ACCOUNT_ZC_UNLOCK_QUEST,
 				},
-				["sourceQuestNumRequired"] = 1,
-				["provider"] = { "n", 201099 },	-- Gorgul
-				["coord"] = { 44.5, 80.4, ZARALEK_CAVERN },
-				["maxReputation"] = { FACTION_LOAMM_NIFFEN, 20 },
+				sourceQuestNumRequired = 1,
+				provider = { "n", 201099 },	-- Gorgul
+				coord = { 44.5, 80.4, ZARALEK_CAVERN },
+				maxReputation = { FACTION_LOAMM_NIFFEN, 20 },
 			}, {
 				q(75662, {	-- A Race To The Finish
-					["repeatable"] = true,
-					["groups"] = {
+					repeatable = true,
+					groups = {
 						i(205119),	-- Bashful (PET!)
 					},
 				}),
 				q(75707, {	-- A Race To The Finish
-					["repeatable"] = true,
-					["groups"] = {
+					repeatable = true,
+					groups = {
 						i(205123),	-- Brulee (PET!)
 					},
 				}),
 				q(75706, {	-- A Race To The Finish
-					["repeatable"] = true,
-					["groups"] = {
+					repeatable = true,
+					groups = {
 						i(205121),	-- Tricky (PET!)
 					},
 				}),
 				q(75708, {	-- A Race To The Finish (spellID 409235 & 490236)
-					["name"] = "Weekly: A Race To The Finish",
-					["isWeekly"] = true,
+					name = "Weekly: A Race To The Finish",
+					isWeekly = true,
 				}),
 			})),
 		})),
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
 	header(HEADERS.Faction, FACTION_LOAMM_NIFFEN, {
 		header(HEADERS.Faction, FACTION_GLIMMEROGG_RACER, {
 			n(QUESTS, {

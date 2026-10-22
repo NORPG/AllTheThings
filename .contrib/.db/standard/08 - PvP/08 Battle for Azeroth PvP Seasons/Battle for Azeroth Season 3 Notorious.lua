@@ -4,84 +4,84 @@
 
 root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 	n(SEASON_NOTORIOUS, bubbleDownSelf({
-		["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0, ADDED_9_0_2_LAUNCH },
+		timeline = { ADDED_8_2_0, REMOVED_8_3_0, ADDED_9_0_2_LAUNCH },
 	}, {
-		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
+		n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
 			ach(13639),	-- Combatant: Battle for Azeroth Season 3
 			ach(13634),	-- Challenger: Battle for Azeroth Season 3
 			ach(13641),	-- Rival: Battle for Azeroth Season 3
 			ach(13642, {	-- Duelist: Battle for Azeroth Season 3
 				ill(6096),	-- Dreadflame (ILLUSION!)
 				i(167382, {	-- Notorious Gladiator's Cloak [A]
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				i(167381, {	-- Notorious Gladiator's Cloak [H]
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 			}),
 			ach(13676, {	-- Elite: Battle for Azeroth Season 3
 				i(167363, {	-- Notorious Gladiator's Tabard [A]
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				i(167362, {	-- Notorious Gladiator's Tabard [H]
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 			}),
 			ach(13647, {	-- Gladiator: Battle for Azeroth Season 3
 				i(156881),	-- Notorious Gladiator's Proto-Drake (MOUNT!)
 			}),
 			ach(13632, {	-- Notorious Gladiator's Proto-Drake (MOUNT!)
-				["provider"] = { "i", 156881 },	-- Notorious Gladiator's Proto-Drake (MOUNT!)
+				provider = { "i", 156881 },	-- Notorious Gladiator's Proto-Drake (MOUNT!)
 			}),
 			ach(13630, {	-- Notorious Gladiator: Battle for Azeroth Season 3
 				title(402),	-- Notorious Gladiator <Name>
 			}),
 			-- RBG
 			ach(13643, {	-- Hero of the Alliance: Notorious
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(13644, {	-- Hero of the Horde: Notorious
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			-- Fashion
 			ach(13585, {	-- Never Lose, Never Choose To
-				["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0, ADDED_9_0_2_LAUNCH },
+				timeline = { ADDED_8_2_0, REMOVED_8_3_0, ADDED_9_0_2_LAUNCH },
 			}),
 		})),
-		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
+		filter(MOUNTS, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
 			i(163122, {	-- Vicious War Basilisk [A] (MOUNT!)
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			i(163121, {	-- Vicious War Basilisk [H] (MOUNT!)
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 		})),
 		n(PVP_ASPIRANT, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
-					["coord"] = { 56.4, 25.8, BORALUS },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 56.4, 25.8, BORALUS },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(184676, {	-- Arsenal: Notorious Aspirant's Weapons [A]
-							["cost"] = { { "i", MOH, 80 } },
+							cost = { { "i", MOH, 80 } },
 						}),
 						iensemble(180194, {	-- Ensemble: Notorious Aspirant's Cloth Armor [A]
-							["classes"] = CLOTH_CLASSES,
+							classes = CLOTH_CLASSES,
 						}),
 						iensemble(180196, {	-- Ensemble: Notorious Aspirant's Leather Armor [A]
-							["classes"] = LEATHER_CLASSES,
+							classes = LEATHER_CLASSES,
 						}),
 						iensemble(180198, {	-- Ensemble: Notorious Aspirant's Mail Armor [A]
-							["classes"] = MAIL_CLASSES,
+							classes = MAIL_CLASSES,
 						}),
 						iensemble(180200, {	-- Ensemble: Notorious Aspirant's Plate Armor [A]
-							["classes"] = PLATE_CLASSES,
+							classes = PLATE_CLASSES,
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = ALLIANCE_ONLY }, {
 				filter(BACK_F, {
 					i(167536),	-- Notorious Aspirant's Cape [A]
 					i(167535),	-- Notorious Aspirant's Drape [A]
@@ -146,31 +146,31 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					i(170080),	-- Notorious Aspirant's Warglaive [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
-					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 51.6, 58.2, ZULDAZAR },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(184677, {	-- Arsenal: Notorious Aspirant's Weapons [H]
-							["cost"] = { { "i", MOH, 80 } },
+							cost = { { "i", MOH, 80 } },
 						}),
 						iensemble(180195, {	-- Ensemble: Notorious Aspirant's Cloth Armor [H]
-							["classes"] = CLOTH_CLASSES,
+							classes = CLOTH_CLASSES,
 						}),
 						iensemble(180197, {	-- Ensemble: Notorious Aspirant's Leather Armor [H]
-							["classes"] = LEATHER_CLASSES,
+							classes = LEATHER_CLASSES,
 						}),
 						iensemble(180199, {	-- Ensemble: Notorious Aspirant's Mail Armor [H]
-							["classes"] = MAIL_CLASSES,
+							classes = MAIL_CLASSES,
 						}),
 						iensemble(180201, {	-- Ensemble: Notorious Aspirant's Plate Armor [H]
-							["classes"] = PLATE_CLASSES,
+							classes = PLATE_CLASSES,
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = HORDE_ONLY }, {
 				filter(BACK_F, {
 					i(167532),	-- Notorious Aspirant's Cape [H]
 					i(167531),	-- Notorious Aspirant's Drape [H]
@@ -235,7 +235,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					i(170082),	-- Notorious Aspirant's Warglaive [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
 				filter(FINGER_F, {
 					i(167524),	-- Notorious Aspirant's Band
 					i(167523),	-- Notorious Aspirant's Ring
@@ -249,31 +249,31 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			})),
 		}),
 		n(PVP_GLADIATOR, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
-					["coord"] = { 56.4, 25.8, BORALUS },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 56.4, 25.8, BORALUS },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(184674, {	-- Arsenal: Notorious Gladiator's Weapons [A]
-							["cost"] = { { "i", MOH, 80 } },
+							cost = { { "i", MOH, 80 } },
 						}),
 						iensemble(184436, {	-- Ensemble: Notorious Gladiator's Cloth Armor [A]
-							["classes"] = CLOTH_CLASSES,
+							classes = CLOTH_CLASSES,
 						}),
 						iensemble(184438, {	-- Ensemble: Notorious Gladiator's Leather Armor [A]
-							["classes"] = LEATHER_CLASSES,
+							classes = LEATHER_CLASSES,
 						}),
 						iensemble(184440, {	-- Ensemble: Notorious Gladiator's Mail Armor [A]
-							["classes"] = MAIL_CLASSES,
+							classes = MAIL_CLASSES,
 						}),
 						iensemble(184442, {	-- Ensemble: Notorious Gladiator's Plate Armor [A]
-							["classes"] = PLATE_CLASSES,
+							classes = PLATE_CLASSES,
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = ALLIANCE_ONLY }, {
 				filter(BACK_F, {
 					i(167373),	-- Notorious Gladiator's Cape [A]
 					i(167372),	-- Notorious Gladiator's Drape [A]
@@ -408,31 +408,31 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					i(169710),	-- Notorious Gladiator's Warglaive [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
-					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 51.6, 58.2, ZULDAZAR },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(184675, {	-- Arsenal: Notorious Gladiator's Weapons [H]
-							["cost"] = { { "i", MOH, 80 } },
+							cost = { { "i", MOH, 80 } },
 						}),
 						iensemble(184437, {	-- Ensemble: Notorious Gladiator's Cloth Armor [H]
-							["classes"] = CLOTH_CLASSES,
+							classes = CLOTH_CLASSES,
 						}),
 						iensemble(184439, {	-- Ensemble: Notorious Gladiator's Leather Armor [H]
-							["classes"] = LEATHER_CLASSES,
+							classes = LEATHER_CLASSES,
 						}),
 						iensemble(184441, {	-- Ensemble: Notorious Gladiator's Mail Armor [H]
-							["classes"] = MAIL_CLASSES,
+							classes = MAIL_CLASSES,
 						}),
 						iensemble(184443, {	-- Ensemble: Notorious Gladiator's Plate Armor [H]
-							["classes"] = PLATE_CLASSES,
+							classes = PLATE_CLASSES,
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = HORDE_ONLY }, {
 				filter(BACK_F, {
 					i(167369),	-- Notorious Gladiator's Cape [H]
 					i(167368),	-- Notorious Gladiator's Drape [H]
@@ -567,7 +567,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					i(169707),	-- Notorious Gladiator's Warglaive [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
 				filter(FINGER_F, {
 					i(167375),	-- Notorious Gladiator's Band
 					i(167374),	-- Notorious Gladiator's Ring
@@ -583,8 +583,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				}),
 			})),
 		}),
-		n(PVP_ELITE, bubbleDown({ ["bonusID"] = 5842, ["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY }, {
+		n(PVP_ELITE, bubbleDown({ bonusID = 5842, timeline = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 				n(BACK, {
 					i(167373),	-- Notorious Gladiator's Cape [A]
 					i(167372),	-- Notorious Gladiator's Drape [A]
@@ -632,7 +632,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					i(167271),	-- Notorious Gladiator's Plate Warboots [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 				n(BACK, {
 					i(167369),	-- Notorious Gladiator's Cape [H]
 					i(167368),	-- Notorious Gladiator's Drape [H]

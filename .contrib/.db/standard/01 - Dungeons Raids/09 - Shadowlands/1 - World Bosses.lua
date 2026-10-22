@@ -123,13 +123,13 @@ local Boss, BossWorldQuest, CommonBossDrops =
 InstanceHelper.Boss, InstanceHelper.BossWorldQuest, InstanceHelper.CommonBossDrops
 
 InstanceHelper.Coords = EncounterCoords
-root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
 	n(WORLD_BOSSES, {
-		["isRaid"] = true,
-		["modID"] = 14,
-		["groups"] = bubbleDownFiltered({
-			["isRaid"] = true,
-			["isWeekly"] = true,
+		isRaid = true,
+		modID = 14,
+		groups = bubbleDownFiltered({
+			isRaid = true,
+			isWeekly = true,
 		},FILTERFUNC_questIDORencounterID,{
 			CommonBossDrops({
 				i(181770),	-- Bone Marrow Hops
@@ -183,72 +183,72 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				i(187882),	-- Alpaca Soul
 			}),
 			Boss(ANTROS, {	-- Antros <Keeper of the Antecedents>
-				["questID"] = 65695,
-				["timeline"] = { ADDED_9_2_0 },
+				questID = 65695,
+				timeline = { ADDED_9_2_0 },
 			}),
 			BossWorldQuest(ANTROS, 65143, {	-- Antros (WQ)
-				["timeline"] = { ADDED_9_2_0 },
+				timeline = { ADDED_9_2_0 },
 			}),
 			BossWorldQuest(ANTROS, 66619, {	-- Antros (Fated)
-				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
-				["sym"] = {
+				timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+				sym = {
 					{"select","encounterID",ANTROS,},{"pop"},	-- Original WB
 					{"modID",89},								-- Make the Items 'Fated'
 				},
 			}),
 			Boss(MORGETH, {	-- Mor'geth <Tormentor of the Damned>
-				["questID"] = 64547,
-				["maps"] = { 1820, 1821, 1822, 1823 },	-- all maps in the Maw
-				["timeline"] = { ADDED_9_1_0 },
+				questID = 64547,
+				maps = { 1820, 1821, 1822, 1823 },	-- all maps in the Maw
+				timeline = { ADDED_9_1_0 },
 			}),
 			BossWorldQuest(MORGETH, 64531),	-- Mor'geth (WQ)
 			BossWorldQuest(MORGETH, 66618, {	-- Mor'geth (Fated)
-				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
-				["sym"] = {
+				timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+				sym = {
 					{"select","encounterID",MORGETH,},{"pop"},	-- Original WB
 					{"modID",89},								-- Make the Items 'Fated'
 				},
 			}),
 			Boss(MORTANIS, {	-- Mortanis
-				["questID"] = 62810,
+				questID = 62810,
 			}),
 			BossWorldQuest(MORTANIS, 61816),	-- Mortanis (WQ)
 			BossWorldQuest(MORTANIS, 66617, {	-- Mortanis (Fated)
-				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
-				["sym"] = {
+				timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+				sym = {
 					{"select","encounterID",MORTANIS,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
 				},
 			}),
 			Boss(NURGASH, {	-- Nurgash Muckformed
-				["questID"] = 62812,
+				questID = 62812,
 			}),
 			BossWorldQuest(NURGASH, 61814),	-- Nurgash Muckfromed (WQ)
 			BossWorldQuest(NURGASH, 66615, {	-- Nurgash Muckfromed (Fated)
-				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
-				["sym"] = {
+				timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+				sym = {
 					{"select","encounterID",NURGASH,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
 				},
 			}),
 			Boss(ORANOMONOS, {	-- Oranomonos the Everbranching
-				["questID"] = 62811,
+				questID = 62811,
 			}),
 			BossWorldQuest(ORANOMONOS, 61815),	-- Oranomonos the Everbranching (WQ)
 			BossWorldQuest(ORANOMONOS, 66616, {	-- Oranomonos the Everbranching (Fated WQ)
-				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
-				["sym"] = {
+				timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+				sym = {
 					{"select","encounterID",ORANOMONOS,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
 				},
 			}),
 			Boss(VALINOR, {	-- Valinor, the Light of Eons
-				["questID"] = 62809,
+				questID = 62809,
 			}),
 			BossWorldQuest(VALINOR, 61813),	-- Valinor, the Light of Eons (WQ)
 			BossWorldQuest(VALINOR, 66614, {	-- Valinor, the Light of Eons (Fated WQ)
-				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
-				["sym"] = {
+				timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+				sym = {
 					{"select","encounterID",VALINOR,},{"pop"},	-- Original WB
 					{"modID",89},					-- Make the Items 'Fated'
 				},

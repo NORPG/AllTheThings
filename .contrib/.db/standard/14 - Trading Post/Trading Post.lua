@@ -57,146 +57,146 @@ local FILLED_TRAVELERS_LOG = createHeader({
 	},
 });
 
-root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TRADING_POST }, {
+root(ROOTS.TradingPost, bubbleDown({ timeline = { ADDED_10_0_5 }, u = TRADING_POST }, {
 	n(ACHIEVEMENTS, {
 		ach(17334, {	-- Trading Post Enthusiast
 			iensemble(203431),	-- Ensemble: Burden of Unrelenting Justice
-			iensemble(214240, { ["timeline"] = { ADDED_10_2_5 } }),	-- Ensemble: Gleaming Burden of Unrelenting Justice
-			iensemble(214241, { ["timeline"] = { ADDED_10_2_5 } }),	-- Ensemble: Moonlit Burden of Unrelenting Justice
+			iensemble(214240, { timeline = { ADDED_10_2_5 } }),	-- Ensemble: Gleaming Burden of Unrelenting Justice
+			iensemble(214241, { timeline = { ADDED_10_2_5 } }),	-- Ensemble: Moonlit Burden of Unrelenting Justice
 		}),
 	}),
 	n(QUESTS, {
 		q(66858, {	-- Tour the Trading Post [A]
-			["maps"] = { STORMWIND_CITY },
-			["races"] = ALLIANCE_ONLY,
+			maps = { STORMWIND_CITY },
+			races = ALLIANCE_ONLY,
 		}),
 		q(66959, {	-- Tour the Trading Post [H]
-			["maps"] = { ORGRIMMAR },
-			["races"] = HORDE_ONLY,
+			maps = { ORGRIMMAR },
+			races = HORDE_ONLY,
 		}),
 		q(72681, {	-- Report to the Trading Post	-- March 2023
-			["timeline"] = { ADDED_10_0_5 },
-			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["isYearly"] = true,
+			timeline = { ADDED_10_0_5 },
+			maps = { ORGRIMMAR, STORMWIND_CITY },
+			isYearly = true,
 		}),
 		q(75833, {	-- Report to the Trading Post	-- April 2023
-			["timeline"] = { ADDED_10_0_7 },
-			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["isYearly"] = true,
+			timeline = { ADDED_10_0_7 },
+			maps = { ORGRIMMAR, STORMWIND_CITY },
+			isYearly = true,
 		}),
 		q(76159, {	-- Report to the Trading Post	-- May 2023
-			["timeline"] = { ADDED_10_0_7 },
-			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["isYearly"] = true,
+			timeline = { ADDED_10_0_7 },
+			maps = { ORGRIMMAR, STORMWIND_CITY },
+			isYearly = true,
 		}),
 		q(76103, {	-- Report to the Trading Post	-- June 2023
-			["timeline"] = { ADDED_10_1_0 },
-			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["isYearly"] = true,
+			timeline = { ADDED_10_1_0 },
+			maps = { ORGRIMMAR, STORMWIND_CITY },
+			isYearly = true,
 		}),
 		q(76104, {	-- Report to the Trading Post	-- July 2023
-			["timeline"] = { ADDED_10_1_0 },
-			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["isYearly"] = true,
+			timeline = { ADDED_10_1_0 },
+			maps = { ORGRIMMAR, STORMWIND_CITY },
+			isYearly = true,
 		}),
 		q(76105, {	-- Report to the Trading Post	-- August 2023
-			["timeline"] = { ADDED_10_1_5 },
-			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["isYearly"] = true,
+			timeline = { ADDED_10_1_5 },
+			maps = { ORGRIMMAR, STORMWIND_CITY },
+			isYearly = true,
 		}),
 		q(76106, {	-- Report to the Trading Post	-- September 2023
-			["timeline"] = { ADDED_10_1_5 },
-			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["isYearly"] = true,
+			timeline = { ADDED_10_1_5 },
+			maps = { ORGRIMMAR, STORMWIND_CITY },
+			isYearly = true,
 		}),
 		q(76107, {	-- Report to the Trading Post	-- October 2023
-			["timeline"] = { ADDED_10_1_7 },
-			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["isYearly"] = true,
+			timeline = { ADDED_10_1_7 },
+			maps = { ORGRIMMAR, STORMWIND_CITY },
+			isYearly = true,
 		}),
 		q(76108, {	-- Report to the Trading Post	-- November 2023
-			["timeline"] = { ADDED_10_1_7 },
-			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["isYearly"] = true,
+			timeline = { ADDED_10_1_7 },
+			maps = { ORGRIMMAR, STORMWIND_CITY },
+			isYearly = true,
 		}),
 		q(76112, {	-- Report to the Trading Post	-- December 2023
-			["timeline"] = { ADDED_10_2_0 },
-			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["isYearly"] = true,
+			timeline = { ADDED_10_2_0 },
+			maps = { ORGRIMMAR, STORMWIND_CITY },
+			isYearly = true,
 		}),
 		q(76113, {	-- Report to the Trading Post	-- January 2024
-			["timeline"] = { ADDED_10_2_0 },
-			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["isYearly"] = true,
+			timeline = { ADDED_10_2_0 },
+			maps = { ORGRIMMAR, STORMWIND_CITY },
+			isYearly = true,
 		}),
 		q(76114, {	-- Report to the Trading Post	-- February 2024
-			["timeline"] = { ADDED_10_2_5 },
-			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-			["isYearly"] = true,
+			timeline = { ADDED_10_2_5 },
+			maps = { ORGRIMMAR, STORMWIND_CITY },
+			isYearly = true,
 		}),
 		q(81722, {	-- Report to the Trading Post	-- August 2024
-			["timeline"] = { ADDED_11_0_2 },
-			["maps"] = { DORNOGAL },
-			["isYearly"] = true,
+			timeline = { ADDED_11_0_2 },
+			maps = { DORNOGAL },
+			isYearly = true,
 		}),
 		q(81723, {	-- Report to the Trading Post	-- September 2024
-			["timeline"] = { ADDED_11_0_2 },
-			["maps"] = { DORNOGAL },
-			["isYearly"] = true,
+			timeline = { ADDED_11_0_2 },
+			maps = { DORNOGAL },
+			isYearly = true,
 		}),
 		q(81724, {	-- Report to the Trading Post	-- October 2024
-			["timeline"] = { ADDED_11_0_2 },
-			["maps"] = { DORNOGAL },
-			["isYearly"] = true,
+			timeline = { ADDED_11_0_2 },
+			maps = { DORNOGAL },
+			isYearly = true,
 		}),
 		q(81725, {	-- Report to the Trading Post	-- November 2024
-			["timeline"] = { ADDED_11_0_5 },
-			["maps"] = { DORNOGAL },
-			["isYearly"] = true,
+			timeline = { ADDED_11_0_5 },
+			maps = { DORNOGAL },
+			isYearly = true,
 		}),
 		q(81726, {	-- Report to the Trading Post	-- December 2024
-			["timeline"] = { ADDED_11_0_5 },
-			["maps"] = { DORNOGAL },
-			["isYearly"] = true,
+			timeline = { ADDED_11_0_5 },
+			maps = { DORNOGAL },
+			isYearly = true,
 		}),
 		q(81715, {	-- Report to the Trading Post	-- January 2025
-			["timeline"] = { ADDED_11_0_7 },
-			["maps"] = { DORNOGAL },
-			["isYearly"] = true,
+			timeline = { ADDED_11_0_7 },
+			maps = { DORNOGAL },
+			isYearly = true,
 		}),
 		q(81714, {	-- Report to the Trading Post	-- February 2025
-			["timeline"] = { ADDED_11_0_7 },
-			["maps"] = { DORNOGAL },
-			["isYearly"] = true,
+			timeline = { ADDED_11_0_7 },
+			maps = { DORNOGAL },
+			isYearly = true,
 		}),
 		q(81717, {	-- Report to the Trading Post	-- March 2025
-			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = { DORNOGAL },
-			["isYearly"] = true,
+			timeline = { ADDED_11_1_0 },
+			maps = { DORNOGAL },
+			isYearly = true,
 		}),
 		q(81718, {	-- Report to the Trading Post	-- April 2025
-			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = { DORNOGAL },
-			["isYearly"] = true,
+			timeline = { ADDED_11_1_0 },
+			maps = { DORNOGAL },
+			isYearly = true,
 		}),
 		q(81719, {	-- Report to the Trading Post	-- May 2025
-			["timeline"] = { ADDED_11_1_5 },
-			["maps"] = { DORNOGAL },
-			["isYearly"] = true,
+			timeline = { ADDED_11_1_5 },
+			maps = { DORNOGAL },
+			isYearly = true,
 		}),
 		q(81720, {	-- Report to the Trading Post	-- June 2025
-			["timeline"] = { ADDED_11_1_5 },
-			["maps"] = { DORNOGAL },
-			["isYearly"] = true,
+			timeline = { ADDED_11_1_5 },
+			maps = { DORNOGAL },
+			isYearly = true,
 		}),
 		q(81721, {	-- Report to the Trading Post	-- July 2025
-			["timeline"] = { ADDED_11_1_7 },
-			["maps"] = { DORNOGAL },
-			["isYearly"] = true,
+			timeline = { ADDED_11_1_7 },
+			maps = { DORNOGAL },
+			isYearly = true,
 		}),
 	}),
 	n(YEAR2023, {
-		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_0_5 } }, {
+		n(FEBRUARY, bubbleDownSelf({ timeline = { ADDED_10_0_5, REMOVED_10_0_5 } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(190231),	-- Ash'adar, Harbinger of Dawn (MOUNT!)
 			}),
@@ -222,7 +222,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(100, i(189871)),	-- Squire's Warhammer
 			}),
 		})),
-		n(MARCH, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_0_5 } }, {
+		n(MARCH, bubbleDownSelf({ timeline = { ADDED_10_0_5, REMOVED_10_0_5 } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(190504),	-- Ensemble: Darkmoon Harlequin's Bells
 			}),
@@ -245,7 +245,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(750, i(190155)),	-- Trusty Treasure Trove
 			}),
 		})),
-		n(APRIL, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 } }, {
+		n(APRIL, bubbleDownSelf({ timeline = { ADDED_10_0_5, REMOVED_10_1_0 } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(190164),	-- Arsenal: Blades of Elune
 			}),
@@ -271,7 +271,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(100, i(189895)),	-- Watchman's Flare
 			}),
 		})),
-		n(MAY, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 } }, {
+		n(MAY, bubbleDownSelf({ timeline = { ADDED_10_1_0, REMOVED_10_1_0 } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(190613),	-- Savage Green Battle Turtle (MOUNT!)
 			}),
@@ -296,7 +296,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(100, i(190199)),	-- Well-Worn Grimskull Cinch
 			}),
 		})),
-		n(JUNE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_5 } }, {
+		n(JUNE, bubbleDownSelf({ timeline = { ADDED_10_1_0, REMOVED_10_1_5 } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(190169),	-- Quawks (MOUNT!)
 			}),
@@ -323,7 +323,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(190431)),	-- Veteran Grunt's Chopper
 			}),
 		})),
-		n(JULY, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_1_5 } }, {
+		n(JULY, bubbleDownSelf({ timeline = { ADDED_10_1_5, REMOVED_10_1_5 } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(206156),	-- Grotto Netherwing Drake (MOUNT!)
 			}),
@@ -352,7 +352,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(175, i(190557)),	-- Sinister Fel Staff
 			}),
 		})),
-		n(AUGUST, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_1_7 } }, {
+		n(AUGUST, bubbleDownSelf({ timeline = { ADDED_10_1_5, REMOVED_10_1_7 } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(190797),	-- Ensemble: Bones of the Bloodhunter
 			}),
@@ -390,7 +390,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(200, i(190143)),	-- Shard of Frozen Secrets
 			}),
 		})),
-		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, REMOVED_10_1_7 } }, {
+		n(SEPTEMBER, bubbleDownSelf({ timeline = { ADDED_10_1_7, REMOVED_10_1_7 } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(190168),	-- Crusty Crawler (MOUNT!)
 			}),
@@ -421,7 +421,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(150, i(208147)),	-- Yellow Tweed Cap
 			}),
 		})),
-		n(OCTOBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, REMOVED_10_2_0 } }, {
+		n(OCTOBER, bubbleDownSelf({ timeline = { ADDED_10_1_7, REMOVED_10_2_0 } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(208598),	-- Eve's Ghastly Rider (MOUNT!)
 			}),
@@ -461,7 +461,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(75, i(190804)),	-- Wine-Soaked Hammer
 			}),
 		})),
-		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0} }, {
+		n(NOVEMBER, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_0} }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(208943),	-- Arsenal: Cosmic Weapons Cache
 			}),
@@ -502,7 +502,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(190806)),	-- Tidecaller’s Cinch
 			}),
 		})),
-		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0} }, {
+		n(DECEMBER, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_0} }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(190925),	-- Buttercup (PET!)
 			}),
@@ -547,7 +547,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 		})),
 	}),
 	n(YEAR2024, {
-		n(JANUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_5} }, {
+		n(JANUARY, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_5} }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(211002),	-- Golden Mobile Timepiece
 			}),
@@ -583,7 +583,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(400, i(211158)),	-- Witch Doctor's Fetish Guard
 			}),
 		})),
-		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5, REMOVED_10_2_5} }, {
+		n(FEBRUARY, bubbleDownSelf({ timeline = { ADDED_10_2_5, REMOVED_10_2_5} }, {
 			-- removed 10.2.5.53495
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(212220),	-- Ensemble: Love Witch's Attire
@@ -628,7 +628,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(250, i(212380)),	-- Twilight Witch's Gothic Stave
 			}),
 		})),
-		n(MARCH, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 } }, {
+		n(MARCH, bubbleDownSelf({ timeline = { ADDED_10_2_5, REMOVED_10_2_6 } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(211432),	-- Teele (PET!)
 			}),
@@ -667,7 +667,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(200, i(190219)),	-- Virulent Gavel
 			}),
 		})),
-		n(APRIL, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6_SEASON_FOUR } }, {
+		n(APRIL, bubbleDownSelf({ timeline = { ADDED_10_2_6, REMOVED_10_2_6_SEASON_FOUR } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(210409),	-- Aura (PET!)
 			}),
@@ -716,7 +716,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(300, i(190873)),	-- Warhammer of Hubris
 			}),
 		})),
-		n(MAY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_10_2_7 } }, {	-- 10.2.7.54904
+		n(MAY, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_10_2_7 } }, {	-- 10.2.7.54904
 			n(FILLED_TRAVELERS_LOG, {
 				i(212613),	-- Wings of the Amber Monarch
 			}),
@@ -756,7 +756,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(200, i(190844)),	-- Valarjar Champion's Greatsword
 			}),
 		})),
-		n(JUNE, bubbleDownSelf({ ["timeline"] = { ADDED_MOP_REMIX, "removed 10.2.7.55261" } }, {
+		n(JUNE, bubbleDownSelf({ timeline = { ADDED_MOP_REMIX, "removed 10.2.7.55261" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(220692),	-- X-treme Water Blaster Display (TOY!)
 			}),
@@ -802,7 +802,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(330, i(220357)),	-- Water Blaster B.L.
 			}),
 		})),
-		n(JULY, bubbleDownSelf({ ["timeline"] = { "added 10.2.7.55261", "removed 11.0.0.55846" } }, {
+		n(JULY, bubbleDownSelf({ timeline = { "added 10.2.7.55261", "removed 11.0.0.55846" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(223339),	-- Trishi (PET!)
 			}),
@@ -844,7 +844,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(125, i(223190)),	-- Wand Of The Riptide
 			}),
 		})),
-		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 11.0.0.55846", "removed 11.0.2.56421" } }, {
+		n(AUGUST, bubbleDownSelf({ timeline = { "added 11.0.0.55846", "removed 11.0.2.56421" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(223409),	-- The Coward's Violet Target
 			}),
@@ -899,7 +899,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(225, i(212611)),	-- Wings of the Tourmaline Monarch
 			}),
 		})),
-		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.2.56421", "removed 11.0.2.56647" } }, {
+		n(SEPTEMBER, bubbleDownSelf({ timeline = { "added 11.0.2.56421", "removed 11.0.2.56647" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(226040),	-- Plunderlord's Golden Crocolisk (MOUNT!)
 			}),
@@ -946,7 +946,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(100, i(210854)),	-- Trader's Camo Sarong
 			}),
 		})),
-		n(OCTOBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.2.56647", "removed 11.0.5.57388" } }, {
+		n(OCTOBER, bubbleDownSelf({ timeline = { "added 11.0.2.56647", "removed 11.0.5.57388" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(187674),	-- Depthstalker (MOUNT!)
 			}),
@@ -992,7 +992,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(226384)),	-- Wand of the Bright Shadow
 			}),
 		})),
-		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.5.57388", "removed 11.0.5.57689" } }, {
+		n(NOVEMBER, bubbleDownSelf({ timeline = { "added 11.0.5.57388", "removed 11.0.5.57689" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(229059),	-- Arsenal: Crests of the Kingdom
 			}),
@@ -1049,7 +1049,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(400, i(211158)),	-- Witch Doctor's Fetish Guard
 			}),
 		})),
-		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.5.57689", "removed 11.0.7.58238" } }, {
+		n(DECEMBER, bubbleDownSelf({ timeline = { "added 11.0.5.57689", "removed 11.0.7.58238" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(223486),	-- Ensemble: Purple Snugglefin Murloc Romper
 			}),
@@ -1101,7 +1101,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 		})),
 	}),
 	n(YEAR2025, {
-		n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 11.0.7.58238", "removed 11.0.7.58867" } }, {
+		n(JANUARY, bubbleDownSelf({ timeline = { "added 11.0.7.58238", "removed 11.0.7.58867" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(233359),	-- Green Clockwork Contraptions Collection
 			}),
@@ -1115,8 +1115,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(750, i(212631)),	-- Reins of the Brilliant Sunburst Peafowl (MOUNT!)
 				traderstender(500, i(233354)),	-- Savage Alabaster Battle Turtle (MOUNT!)
 				i(112326, {	-- Warforged Nightmare (MOUNT!)
-					["cost"] = {{"c", TRADERS_TENDER, 700}},
-					["groups"] = {
+					cost = {{"c", TRADERS_TENDER, 700}},
+					groups = {
 						n(MAILBOX, {
 							i(112324),	-- Nightmarish Hitching Post (TOY!)
 						}),
@@ -1148,7 +1148,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(60, i(190818)),	-- Steamwheedle Artifact Extractor
 			}),
 		})),
-		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 11.0.7.58867", "removed 11.1.0.59466" } }, {
+		n(FEBRUARY, bubbleDownSelf({ timeline = { "added 11.0.7.58867", "removed 11.1.0.59466" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(234058),	-- Ensemble: Ornate Pink Lunar Festival Attire
 			}),
@@ -1183,17 +1183,17 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(75, i(230044)),	-- Prowler's Pink Shoulder Cape
 				i(190855, {	-- Rosy Corsage
 					-- #if BEFORE 11.1.0
-					["description"] = "This is also sold at the discount vendor, no reason to buy it from the main trading post offering."
+					description = "This is also sold at the discount vendor, no reason to buy it from the main trading post offering."
 					-- #endif
-					-- ["cost"] = {{"c", TRADERS_TENDER, 100}},
+					-- cost = {{"c", TRADERS_TENDER, 100}},
 				}),
 				traderstender(40, i(233072)),	-- Short Crimson War Skirt
 				traderstender(50, i(233074)),	-- Short Crimson War Skirt and Leg Wraps
 			}),
 			n(VENDORS, {
 				n(234747, {	-- Supplier Felina <Trading Post Outlet Completionist>
-					["coord"] = { 48.16, 51.99, DORNOGAL },
-					["groups"] = {
+					coord = { 48.16, 51.99, DORNOGAL },
+					groups = {
 						filter(BATTLE_PETS, {
 							traderstender(350, i(190925)),	-- Buttercup (PET!)
 						}),
@@ -1209,8 +1209,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 					},
 				}),
 				n(234746, {	-- Supplier Mizix <Trading Post Outlet Creatures and Toys>
-					["coord"] = { 48.07, 52.16, DORNOGAL },
-					["groups"] = {
+					coord = { 48.07, 52.16, DORNOGAL },
+					groups = {
 						filter(BATTLE_PETS, {
 							traderstender(200, i(190604)),	-- Buzzworth (PET!)
 							traderstender(200, i(190176)),	-- Drazka'zet the Wrathful (PET!)
@@ -1235,8 +1235,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 					},
 				}),
 				n(234744, {	-- Supplier Offa <Trading Post Outlet Wearables>
-					["coord"] = { 47.57, 52.76, DORNOGAL },
-					["groups"] = {
+					coord = { 47.57, 52.76, DORNOGAL },
+					groups = {
 						filter(COSMETIC, {
 							traderstender(200, i(190712)),	-- Ancestral Skychaser Totem
 							traderstender(100, i(208148)),	-- Burgundy Cap
@@ -1270,8 +1270,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 					},
 				}),
 				n(234742, {	-- Supplier Toffa <Trading Post Outlet Weapons>
-					["coord"] = { 47.79, 52.55, DORNOGAL },
-					["groups"] = {
+					coord = { 47.79, 52.55, DORNOGAL },
+					groups = {
 						filter(COSMETIC, {
 							traderstender(50, i(190832)),	-- Acolyte’s Etched Warhammer
 							traderstender(225, i(190562)),	-- Aldori War Mace
@@ -1318,7 +1318,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				}),
 			}),
 		})),
-		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 11.1.0.59466", "removed 11.1.0.60037" } }, {
+		n(MARCH, bubbleDownSelf({ timeline = { "added 11.1.0.59466", "removed 11.1.0.60037" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(235217),	-- Ensemble: Ornaments of the Pearlescent Monarch
 			}),
@@ -1342,8 +1342,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(370, iensemble(235228)),	-- Ensemble: Ornaments of the Blood Monarch
 				-- #if AFTER 12.0.5
 				traderstender(100, i(230169, {	-- Ensemble: Prowler's Deep Headgear
-					["_doautomation"] = false,	-- TODO: Ensemble has been broken for months in wago data, find missing questID and nest here or find out why this one ensemble broke
-					["groups"] = {
+					_doautomation = false,	-- TODO: Ensemble has been broken for months in wago data, find missing questID and nest here or find out why this one ensemble broke
+					groups = {
 						i(230059),	-- Prowler's Deep Cowl
 						i(230079),	-- Prowler's Deep Mask
 					},
@@ -1373,7 +1373,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(225, i(234603)),	-- Wings of the Pearlescent Monarch
 			}),
 		})),
-		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 11.1.0.60037", "removed 11.1.5.60568" } }, {
+		n(APRIL, bubbleDownSelf({ timeline = { "added 11.1.0.60037", "removed 11.1.5.60568" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(235664),	-- Ensemble: Topsy Turvy Mask Set
 			}),
@@ -1419,7 +1419,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(235031)),	-- Vigilante's Plum Mask
 			}),
 		})),
-		n(MAY, bubbleDownSelf({ ["timeline"] = { "added 11.1.5.60568", "removed 11.1.5.61122" } }, {
+		n(MAY, bubbleDownSelf({ timeline = { "added 11.1.5.60568", "removed 11.1.5.61122" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(238942)	-- Weechi (PET!)
 			}),
@@ -1476,7 +1476,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(235033)),	-- Vigilante's Violet Mask
 			}),
 		})),
-		n(JUNE, bubbleDownSelf({ ["timeline"] = { "added 11.1.5.61122", "removed 11.1.7.61609" } }, {
+		n(JUNE, bubbleDownSelf({ timeline = { "added 11.1.5.61122", "removed 11.1.7.61609" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(238967),	-- Molten Cormaera (MOUNT!)
 			}),
@@ -1517,21 +1517,21 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(245, i(237854)),	-- Voidstorm Bardiche
 			}),
 		})),
-		n(JULY, bubbleDownSelf({ ["timeline"] = { "added 11.1.7.61609", "removed 11.1.7.61967" } }, {
+		n(JULY, bubbleDownSelf({ timeline = { "added 11.1.7.61609", "removed 11.1.7.61967" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(242522, {	-- Forsaken's Grotesque Cauldron
 					-- #if BEFORE 11.2.0
-					["description"] = "Rewarded when reaching 600 points in the Travelers Log."
+					description = "Rewarded when reaching 600 points in the Travelers Log."
 					-- #endif
 				}),
 				iensemble(244225, {	-- Ensemble: Forsaken's Grotesque Collection
 					-- #if BEFORE 11.2.0
-					["description"] = "Rewarded when reaching 1000 points in the Travelers Log."
+					description = "Rewarded when reaching 1000 points in the Travelers Log."
 					-- #endif
 				}),
 				i(243594, {	-- Forsaken's Grotesque Charger (MOUNT!)
 					-- #if BEFORE 11.2.0
-					["description"] = "Rewarded when reaching 1400 points in the Travelers Log."
+					description = "Rewarded when reaching 1400 points in the Travelers Log."
 					-- #endif
 				}),
 			}),
@@ -1572,7 +1572,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(200, i(242354)),	-- Wailing Banshee's Warglaives
 			}),
 		})),
-		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 11.1.7.61967", "removed 11.2.0.62876" } }, {
+		n(AUGUST, bubbleDownSelf({ timeline = { "added 11.1.7.61967", "removed 11.2.0.62876" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(243572),	-- Grandmaster's Prophetic Board (MOUNT!)
 			}),
@@ -1617,7 +1617,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(235035)),	-- Vigilante's Snowy Mask
 			}),
 		})),
-		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.2.0.62876", "removed 11.2.0.63305" } }, {
+		n(SEPTEMBER, bubbleDownSelf({ timeline = { "added 11.2.0.62876", "removed 11.2.0.63305" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(247792),	-- High Shaman's Aerie Gryphon (MOUNT!)
 			}),
@@ -1656,7 +1656,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(200, i(211258)),	-- Wildhammer Scouts Headgear
 			}),
 		})),
-		n(OCTOBER, bubbleDownSelf({ ["timeline"] = { "added 11.2.0.63305", "removed 11.2.5.64154" } }, {
+		n(OCTOBER, bubbleDownSelf({ timeline = { "added 11.2.0.63305", "removed 11.2.5.64154" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(246921),	-- Legion Forged Elekk (MOUNT!)
 			}),
@@ -1693,7 +1693,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(235028)),	-- Vigilante's Faded Mask
 			}),
 		})),
-		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.2.5.64154", "removed 11.2.5.64502" } }, {
+		n(NOVEMBER, bubbleDownSelf({ timeline = { "added 11.2.5.64154", "removed 11.2.5.64502" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(250929),	-- Prized Turkey (MOUNT!)
 			}),
@@ -1739,7 +1739,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(95, i(251671)),	-- Wearable Copper Pot Lid
 			}),
 		})),
-		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.2.5.64502", "removed 11.2.7.64978" } }, {
+		n(DECEMBER, bubbleDownSelf({ timeline = { "added 11.2.5.64502", "removed 11.2.7.64978" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(211085),	-- Jeweled Sapphire Scarab (MOUNT!)
 			}),
@@ -1783,7 +1783,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 		})),
 	}),
 	n(YEAR2026, {
-		n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 11.2.7.64978", "removed 12.0.0.65655" } }, {
+		n(JANUARY, bubbleDownSelf({ timeline = { "added 11.2.7.64978", "removed 12.0.0.65655" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(258266),	-- Ensemble: Vengeful Regalia of the Crusader
 			}),
@@ -1819,7 +1819,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(80, i(260394)),	-- Thalassian Recruit's Bow
 			}),
 		})),
-		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 12.0.0.65655", "removed 12.0.1.66192" } }, {
+		n(FEBRUARY, bubbleDownSelf({ timeline = { "added 12.0.0.65655", "removed 12.0.1.66192" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(233237),	-- Lively Pack of Lunar Explosives
 			}),
@@ -1866,8 +1866,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 			}),
 			n(VENDORS, {
 				n(234747, {	-- Supplier Felina <Trading Post Outlet Completionist>
-					["coord"] = { 48.16, 51.99, DORNOGAL },
-					["groups"] = {
+					coord = { 48.16, 51.99, DORNOGAL },
+					groups = {
 						filter(MOUNTS, {
 							traderstender(600, i(187674)),	-- Depthstalker (MOUNT!)
 							traderstender(600, i(226040)),	-- Plunderlord's Golden Crocolisk (MOUNT!)
@@ -1891,8 +1891,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 					},
 				}),
 				n(234746, {	-- Supplier Mizix <Trading Post Outlet Creatures and Toys>
-					["coord"] = { 48.07, 52.16, DORNOGAL },
-					["groups"] = {
+					coord = { 48.07, 52.16, DORNOGAL },
+					groups = {
 						filter(MOUNTS, {
 							traderstender(500, i(192766)),	-- Amber Skitterfly (MOUNT!)
 							traderstender(500, i(190767)),	-- Armored Golden Pterrordax (MOUNT!)
@@ -1935,8 +1935,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 					},
 				}),
 				n(234744, {	-- Supplier Offa <Trading Post Outlet Wearables>
-					["coord"] = { 47.57, 52.76, DORNOGAL },
-					["groups"] = {
+					coord = { 47.57, 52.76, DORNOGAL },
+					groups = {
 						filter(COSMETIC, {
 							traderstender(200, i(225975)),	-- Alchemist's Bandolier
 							traderstender(30, i(226106)),	-- Amber Scale Treads
@@ -2026,8 +2026,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 					},
 				}),
 				n(234742, {	-- Supplier Toffa <Trading Post Outlet Weapons>
-					["coord"] = { 47.79, 52.55, DORNOGAL },
-					["groups"] = {
+					coord = { 47.79, 52.55, DORNOGAL },
+					groups = {
 						filter(COSMETIC, {
 							traderstender(60, i(226390)),	-- Aerie Battle Mace
 							traderstender(60, i(229426)),	-- Ancient Amani Longbow
@@ -2071,7 +2071,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 							traderstender(275, i(213106)),	-- Gladiator's Battered Greatsword
 							traderstender(275, i(213107, {	-- Gladiator's Ragged Greatsword // Previously NYI
 								-- #if BEFORE 12.0.1
-								["description"] = "This item is not a returning item, it has never actually been available before.",
+								description = "This item is not a returning item, it has never actually been available before.",
 								-- #endif
 							})),
 							traderstender(250, i(226428)),	-- Harvester's Claw
@@ -2139,7 +2139,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				}),
 			}),
 		})),
-		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 12.0.1.66192", "removed 12.0.1.66709" } }, {
+		n(MARCH, bubbleDownSelf({ timeline = { "added 12.0.1.66192", "removed 12.0.1.66709" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(263451),	-- Comfy Bel'ameth Flying Quilt (MOUNT!)
 			}),
@@ -2184,7 +2184,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(225, i(234602)),	-- Wings of the Blood Monarch
 			}),
 		})),
-		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 12.0.1.66709", "removed 12.0.5.67314" } }, {
+		n(APRIL, bubbleDownSelf({ timeline = { "added 12.0.1.66709", "removed 12.0.5.67314" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(235593),	-- Ensemble: Forest Dweller's Butterfly Attire
 			}),
@@ -2223,7 +2223,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(100, i(251987)),	-- Wildstalker's Hunting Quiver
 			}),
 		})),
-		n(MAY, bubbleDownSelf({ ["timeline"] = { "added 12.0.5.67314", "removed 12.0.5.67823" } }, {
+		n(MAY, bubbleDownSelf({ timeline = { "added 12.0.5.67314", "removed 12.0.5.67823" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(268445),	-- Ensemble: Pyrewood Rebel Streetwear
 			}),
@@ -2267,7 +2267,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(100, i(210856)),	-- Trader's Faded Sarong
 			}),
 		})),
-		n(JUNE, bubbleDownSelf({ ["timeline"] = { "added 12.0.5.67823", "removed 12.0.7.68367" } }, {
+		n(JUNE, bubbleDownSelf({ timeline = { "added 12.0.5.67823", "removed 12.0.7.68367" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(268876),	-- Flame-Painted Sun Roc (MOUNT!)
 			}),
@@ -2309,7 +2309,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(235036)),	-- Vigilante's Sunny Mask
 			}),
 		})),
-		n(JULY, bubbleDownSelf({ ["timeline"] = { "added 12.0.7.68367", "removed 12.0.7.68887" } }, {
+		n(JULY, bubbleDownSelf({ timeline = { "added 12.0.7.68367", "removed 12.0.7.68887" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(273651),	-- Bilgewater X-TREME Firework Rocket (MOUNT!)
 			}),
@@ -2363,7 +2363,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(150, i(242388)),	-- Wailing Banshee's Wand
 			}),
 		})),
-		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 12.0.7.68887", "removed 12.1.0.69587" } }, {
+		n(AUGUST, bubbleDownSelf({ timeline = { "added 12.0.7.68887", "removed 12.1.0.69587" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(271603),	-- Ensemble: Midnight Outlaw
 			}),
@@ -2415,7 +2415,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(235035)),	-- Vigilante's Snowy Mask
 			}),
 		})),
-		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { "added 12.1.0.69587", "removed 12.1.0.69933" } }, {
+		n(SEPTEMBER, bubbleDownSelf({ timeline = { "added 12.1.0.69587", "removed 12.1.0.69933" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(278573),	-- Crested Ember Leafmimic (MOUNT!)
 			}),
@@ -2475,8 +2475,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 			}),
 			n(VENDORS, {
 				n(268174, {	-- Supplier Filmore <Trading Post Outlet Completionist>
-					["coord"] = { 50.2, 77.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-					["groups"] = {
+					coord = { 50.2, 77.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+					groups = {
 						filter(MOUNTS, {
 							traderstender(900, i(190231)),	-- Ash'adar, Harbinger of Dawn (MOUNT!)
 							traderstender(700, i(190168)),	-- Crusty Crawler (MOUNT!)
@@ -2510,8 +2510,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 					},
 				}),
 				n(268180, {	-- Supplier Pezy <Trading Post Outlet Creatures and Toys>
-					["coord"] = { 50.9, 77.5, MAP.MIDNIGHT.SILVERMOON_CITY },
-					["groups"] = {
+					coord = { 50.9, 77.5, MAP.MIDNIGHT.SILVERMOON_CITY },
+					groups = {
 						filter(MOUNTS, {
 							traderstender(500, i(207821)),	-- Ancestral Clefthoof (MOUNT!)
 							traderstender(500, i(207964)),	-- Alabaster Stormtalon (MOUNT!)
@@ -2584,8 +2584,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 					},
 				}),
 				n(268188, {	-- Supplier Wooshy <Trading Post Outlet Weapons and Armor>
-					["coord"] = { 50.3, 77.1, MAP.MIDNIGHT.SILVERMOON_CITY },
-					["groups"] = {
+					coord = { 50.3, 77.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+					groups = {
 						traderstender(50, i(190832)),	-- Acolyte's Etched Warhammer
 						traderstender(60, i(226390)),	-- Aerie Battle Mace
 						traderstender(200, i(225975)),	-- Alchemist's Bandolier
@@ -2755,8 +2755,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 					},
 				}),
 				n(268193, {	-- Supplier Toro <Trading Post Outlet Collections>
-					["coord"] = { 50.5, 77.0, MAP.MIDNIGHT.SILVERMOON_CITY },
-					["groups"] = {
+					coord = { 50.5, 77.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+					groups = {
 						traderstender(150, i(212369)),	-- Battlefield Lover's Bow
 						traderstender(30, i(223233)),	-- Copper Diver's Belt
 						traderstender(30, i(223235)),	-- Copper Divers Boots
@@ -2849,7 +2849,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				}),
 			}),
 		})),
-		n(OCTOBER, bubbleDownSelf({ ["timeline"] = { "added 12.1.0.69933", "removed 12.1.5.99999" } }, {	-- TODO: Timeline Out correctly
+		n(OCTOBER, bubbleDownSelf({ timeline = { "added 12.1.0.69933", "removed 12.1.5.99999" } }, {	-- TODO: Timeline Out correctly
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(278609),	-- Ensemble: Thornshadow Assassin's Attire
 			}),

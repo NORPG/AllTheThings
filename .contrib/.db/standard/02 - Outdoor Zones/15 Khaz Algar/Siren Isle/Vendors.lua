@@ -6,8 +6,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(VENDORS, {
 			n(236045, {	-- Ailenda Hedgemyr
-				["coord"] = { 70.8, 40.2, SIREN_ISLE },
-				["groups"] = {
+				coord = { 70.8, 40.2, SIREN_ISLE },
+				groups = {
 					fbiron(350, i(233925)),	-- Arathi Knight's Shoulderguard
 					fbiron(350, i(233922)),	-- Arathi Knight's Headguard
 					fbiron(350, i(233924)),	-- Arathi Champion's Shoulderguard
@@ -29,8 +29,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(232295, {	-- Almyr Sunhart
-				["coord"] = { 70.6, 38.6, SIREN_ISLE },
-				["groups"] = {
+				coord = { 70.6, 38.6, SIREN_ISLE },
+				groups = {
 					i(216708);	-- Holy Candle
 					i(234287),	-- Radiant Focus
 					i(234527),	-- Sacredite's Ledger
@@ -38,39 +38,39 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(228074, {	-- Angorla
-				["coord"] = { 71.2, 44.0, SIREN_ISLE },
-				["groups"] = {
+				coord = { 71.2, 44.0, SIREN_ISLE },
+				groups = {
 					fbiron(50, i(228638, {	-- Stormbringer's Runed Citrine
-						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
+						description = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228639, {	-- Fathomdweller's Runed Citrine
-						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
+						description = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228640, {	-- Windsinger's Runed Citrine
-						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
+						description = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 				},
 			}),
 			n(231536, {	-- Apprentice Tanmar <Sacredite Gemwright>
-				["coords"] = {
+				coords = {
 					{ 72.0, 43.0, SIREN_ISLE },
 					{ 70.8, 40.6, SIREN_ISLE },
 				},
-				["groups"] = {
+				groups = {
 					fbiron(50, i(228642, {	-- Storm Sewer's Citrine
-						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
+						description = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228643, {	-- Old Salt's Bardic Citrine
-						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
+						description = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228644, {	-- Mariner's Hallowed Citrine
-						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
+						description = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 				},
 			}),
 			n(228093, {	-- Argarom
-				["coord"] = { 67.3, 41.7, SIREN_ISLE },
-				["groups"] = {
+				coord = { 67.3, 41.7, SIREN_ISLE },
+				groups = {
 					n(ARMOR, {
 						filter(CLOAKS, {
 							fbiron(105, i(229019)),	-- Earthen Deckhand's Cape
@@ -163,38 +163,38 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(228099, {	-- Blinky Greasefingers
-				["description"] = "You must have the Prismatic Snapdragon Mount before this dialog option can appear.",
-				-- ["lockCriteria"] = { 1, "questID", 86485 },	-- TODO: probably a spellID will be better?
-				["coord"] = { 69.2, 45.8, SIREN_ISLE },
-				["groups"] = {
+				description = "You must have the Prismatic Snapdragon Mount before this dialog option can appear.",
+				-- lockCriteria = { 1, "questID", 86485 },	-- TODO: probably a spellID will be better?
+				coord = { 69.2, 45.8, SIREN_ISLE },
+				groups = {
 					i(163110),	-- Fried Boar Sausage
 					i(233497),	-- Kaja'Cola-Braised Snapdragon Treat (CI!)
 				},
 			}),
 			n(231997, {	-- Didi the Wrench
-				["coord"] = { 71.2, 45.6, SIREN_ISLE },
-				["groups"] = {
+				coord = { 71.2, 45.6, SIREN_ISLE },
+				groups = {
 					fbiron(50, i(228634, {	-- Thunderlord's Crackling Citrine
-						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
+						description = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228635, {	-- Squall Sailor's Citrine
-						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
+						description = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228636, {	-- Undersea Overseer's Citrine
-						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
+						description = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
 
 				},
 			}),
 			n(228103, {	-- Flori
-				["coord"] = { 67.4, 40.0, SIREN_ISLE },
-				["groups"] = {
+				coord = { 67.4, 40.0, SIREN_ISLE },
+				groups = {
 					i(234526),	-- Archivist's Codex
 				},
 			}),
 			n(235407, {	-- Hooded Purveyor
-				["coord"] = { 67.9, 39.3, SIREN_ISLE },
-				["groups"] = {
+				coord = { 67.9, 39.3, SIREN_ISLE },
+				groups = {
 					fbiron(750, i(235015)),	-- Awakened Supply Crate (TOY!)
 					fbiron(500, i(224165)),	-- Dornogal Tabard
 					fbiron(500, i(224168)),	-- Earthen Expedition Tabard
@@ -213,20 +213,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(227814, {	-- Sally Boltwrench
-				["coord"] = { 69.0, 47.5, SIREN_ISLE },
-				["groups"] = {
+				coord = { 69.0, 47.5, SIREN_ISLE },
+				groups = {
 					fbiron(10, i(230728)),	-- Experimental Go-Pack
 				},
 			}),
 			n(228390, {	-- Snizzle Fumblecrank
-				["coord"] = { 69.0, 46.4, SIREN_ISLE },
-				["groups"] = {
+				coord = { 69.0, 46.4, SIREN_ISLE },
+				groups = {
 					i(234282),	-- Decorative Yard Flamingo (TODO: unsure at what point it pop here)
 				},
 			}),
 			n(234390, {	-- Soweezi
-				["coord"] = { 70.0, 48.4, SIREN_ISLE },
-				["groups"] = {
+				coord = { 70.0, 48.4, SIREN_ISLE },
+				groups = {
 					fbiron(2000, iensemble(234519)),	-- Ensemble: Paradise Beach Loungewear
 					fbiron(4500, iensemble(221543)),	-- Ensemble: Pink Tropical
 					fbiron(4500, iensemble(222960)),	-- Ensemble: Pink Tropical Swimwear
@@ -242,8 +242,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				},
 			}),
 			n(233259, {	-- Taljori
-				["coord"] = { 65.7, 41.7, SIREN_ISLE },
-				["groups"] = {
+				coord = { 65.7, 41.7, SIREN_ISLE },
+				groups = {
 					fbiron(350, i(233810)),	-- Barnacle Breaker's Falchion
 					fbiron(350, i(233912)),	-- Bilge Rat Pirate Hat
 					fbiron(350, i(233911)),	-- Bloodstained Rat Cap
@@ -278,13 +278,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					fbiron(350, i(233805)),	-- Vrykul Pyromancer's Wand
 					-- Gems
 					fbiron(50, i(228646, {	-- Legendary Skipper's Citrine
-						["description"] = "You may have to acquire the gem from the World Quest once before it appears on the vendor.",
+						description = "You may have to acquire the gem from the World Quest once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228647, {	-- Seabed Leviathan's Citrine
-						["description"] = "You may have to acquire the gem from the World Quest once before it appears on the vendor.",
+						description = "You may have to acquire the gem from the World Quest once before it appears on the vendor.",
 					})),
 					fbiron(50, i(228648, {	-- Roaring War-Queen's Citrine
-						["description"] = "You may have to acquire the gem from the World Quest once before it appears on the vendor.",
+						description = "You may have to acquire the gem from the World Quest once before it appears on the vendor.",
 					})),
 				},
 			}),

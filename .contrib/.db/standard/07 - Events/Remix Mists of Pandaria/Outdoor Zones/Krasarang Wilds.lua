@@ -2,118 +2,118 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(KRASARANG_WILDS, {
-		["icon"] = 623769,
-		["groups"] = {
+		icon = 623769,
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(19885),	-- Campaign: Krasarang Wilds [A] (automated)
 				ach(19886),	-- Campaign: Krasarang Wilds [H] (automated)
 				ach(19891),	-- Campaign: Landfall (automated)
 				ach(19918, {	-- Dominance Offensive [H]
-					["races"] = HORDE_ONLY,
+					races = HORDE_ONLY,
 				}),
 				ach(19995),	-- Elusive Foes: Krasarang Wilds
 				ach(19999),	-- Elusive Foes: Landfall
 				ach(20028),	-- Explore Krasarang Wilds (automated)
 				ach(19979, {		-- Hidden Treasures: Krasarang Wilds
 					crit(65483, {	-- Saurok Stone Tablet
-						["_quests"] = { 31408 },
+						_quests = { 31408 },
 					}),
 				}),
 				ach(19874, {	-- Krasarang Wilds
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19885,	-- Campaign: Krasarang Wilds [A]
 						19886,	-- Campaign: Krasarang Wilds [H]
 						19964,	-- Tour Krasarang Wilds
 					}},
-					["groups"] = {
+					groups = {
 						i(210334),	-- Chen Stormstout's Keg
 					},
 				}),
 				ach(19879, {	-- Landfall
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19891,	-- Campaign: Landfall
 						19918,	-- Dominance Offensive [H]
 						19999,	-- Elusive Foes: Landfall
 						19917,	-- Operation: Shieldwall [A]
 					}},
-					["groups"] = {
+					groups = {
 						cl(DEATHKNIGHT, {
 							iensemble(217837, {	-- Ensemble: Webbed Soulforged Exoskeleton
-								["classes"] = DEATHKNIGHT,
+								classes = DEATHKNIGHT,
 							}),
 						}),
 						cl(DEMONHUNTER, {
 							iensemble(217842, {	-- Ensemble: Aldrachi Blasphemer's Flames
-								["classes"] = DEMONHUNTER,
+								classes = DEMONHUNTER,
 							}),
 						}),
 						cl(DRUID, {
 							iensemble(217843, {	-- Ensemble: Ela'lothen's Vestment of Rebirth
-								["classes"] = DRUID,
+								classes = DRUID,
 							}),
 						}),
 						cl(EVOKER, {
 							iensemble(217835, {	-- Ensemble: Scales of the Gold Hoarder
-								["classes"] = EVOKER,
+								classes = EVOKER,
 							}),
 						}),
 						cl(HUNTER, {
 							iensemble(217834, {	-- Ensemble: Dreadsquall Hunter's Camouflage
-								["classes"] = HUNTER,
+								classes = HUNTER,
 							}),
 						}),
 						cl(MAGE, {
 							iensemble(217836, {	-- Ensemble: Sin'dorei Magister's Regalia
-								["classes"] = MAGE,
+								classes = MAGE,
 							}),
 						}),
 						cl(MONK, {
 							iensemble(217841, {	-- Ensemble: Shado-Pan Watcher Guise
-								["classes"] = MONK,
+								classes = MONK,
 							}),
 						}),
 						cl(PALADIN, {
 							iensemble(217846, {	-- Ensemble: Plate of the Holy Avenger
-								["classes"] = PALADIN,
+								classes = PALADIN,
 							}),
 						}),
 						cl(PRIEST, {
 							iensemble(217845, {	-- Ensemble: Silks of the Abyssal Cult
-								["classes"] = PRIEST,
+								classes = PRIEST,
 							}),
 						}),
 						cl(ROGUE, {
 							iensemble(217844, {	-- Ensemble: Igneous Onyx Uniform
-								["classes"] = ROGUE,
+								classes = ROGUE,
 							}),
 						}),
 						cl(SHAMAN, {
 							iensemble(217833, {	-- Ensemble: Imminence of Krag'wa's Disciple
-								["classes"] = SHAMAN,
+								classes = SHAMAN,
 							}),
 						}),
 						cl(WARLOCK, {
 							iensemble(217839, {	-- Ensemble: Jewels of Temptation's Call
-								["classes"] = WARLOCK,
+								classes = WARLOCK,
 							}),
 						}),
 						cl(WARRIOR, {
 							iensemble(217838, {	-- Ensemble: Fanatical Champion's Trophies
-								["classes"] = WARRIOR,
+								classes = WARRIOR,
 							}),
 						}),
 					},
 				}),
 				ach(19917, {	-- Operation: Shieldwall [A]
-					["races"] = ALLIANCE_ONLY,
+					races = ALLIANCE_ONLY,
 				}),
 				ach(19964, {	-- Tour Krasarang Wilds
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19995,	-- Elusive Foes: Krasarang Wilds
 						20028,	-- Explore Krasarang Wilds
 						19979,	-- Hidden Treasures: Krasarang Wilds
@@ -122,32 +122,32 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(QUESTS, {
 				q(80438, {	-- Aid the Horde [H]
-					["sourceQuest"] = 32108,	-- Domination Point [H]
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["coord"] = { 10.3, 53.7, KRASARANG_WILDS },
-					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
+					sourceQuest = 32108,	-- Domination Point [H]
+					provider = { "n", 67939 },	-- General Nazgrim
+					coord = { 10.3, 53.7, KRASARANG_WILDS },
+					cost = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					races = HORDE_ONLY,
+					repeatable = true,
 				}),
 				q(80439, {	-- Aid the Alliance [A]
-					["sourceQuest"] = 32109,	-- Lion's Landing [A]
-					["provider"] = { "n", 67940 },	-- Admiral Taylor
-					["coord"] = { 89.5, 32.5, KRASARANG_WILDS },
-					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
+					sourceQuest = 32109,	-- Lion's Landing [A]
+					provider = { "n", 67940 },	-- Admiral Taylor
+					coord = { 89.5, 32.5, KRASARANG_WILDS },
+					cost = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					races = ALLIANCE_ONLY,
+					repeatable = true,
 				}),
 				q(80433, {	-- Aid the August Celestials
-					["provider"] = { "n", 60506 },	-- Thelonius
-					["coord"] = { 31.2, 63.4, KRASARANG_WILDS },
-					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
-					["repeatable"] = true,
+					provider = { "n", 60506 },	-- Thelonius
+					coord = { 31.2, 63.4, KRASARANG_WILDS },
+					cost = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					repeatable = true,
 				}),
 				q(80444, {	-- Aid the Anglers
-					["provider"] = { "n", 63721 },	-- Nat Pagle
-					["coord"] = { 68.4, 43.4, KRASARANG_WILDS },
-					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
-					["repeatable"] = true,
+					provider = { "n", 63721 },	-- Nat Pagle
+					coord = { 68.4, 43.4, KRASARANG_WILDS },
+					cost = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					repeatable = true,
 				}),
 			}),
 			n(ZONE_REWARDS, {
@@ -239,7 +239,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 		q(81666),	-- Triggered on first completion of questID 80444 Aid the Anglers
 	})),

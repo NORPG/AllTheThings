@@ -33,21 +33,21 @@ InRetailSeason = {	-- MID S2
 }
 -- #ENDIF
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 	inst(1304, {	-- Murder Row
 		InRetailSeason=InRetailSeason,
-		["coord"] = { 56.8, 61.1, MAP.MIDNIGHT.SILVERMOON_CITY },
-		["maps"] = {
+		coord = { 56.8, 61.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+		maps = {
 			2433,	-- Murder Row
 			2434,	-- Augurs' Terrace
 			2435,	-- The Illicit Rain
 		},
-		["groups"] = {
+		groups = {
 			n(QUESTS, {
 				q(90822, {	-- Murder Row: One Fel Swoop
-					["sourceQuests"] = { 90821 },	-- Murder Row: Harbored Secrets
-					["provider"] = { "n", 245297 },	-- Belath Dawnblade
-					["coord"] = { 32.2, 26.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+					sourceQuests = { 90821 },	-- Murder Row: Harbored Secrets
+					provider = { "n", 245297 },	-- Belath Dawnblade
+					coord = { 32.2, 26.0, MAP.MIDNIGHT.SILVERMOON_CITY },
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
@@ -96,43 +96,43 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 				filter(MISC, {
 					currency(3250, {	-- Faceted Crystaline Fel
-						["description"] = "Can be found scattered throughout the Murder Row Dungeon.\nUsed for buying buffs from highlighted vendors.\nOnly 1 per player, per run can be obtained.",
+						description = "Can be found scattered throughout the Murder Row Dungeon.\nUsed for buying buffs from highlighted vendors.\nOnly 1 per player, per run can be obtained.",
 					}),
 				}),
 				n(VENDORS, {
 					n(236861, {	-- Cravitz Lorent <Shady Art Dealer>
 						i(246857, {	-- "Shu'halo Perspective" Painting (DECOR!)
-							["description"] = "|cFFE50D12WARNING! DO NOT BUY RIGHT AWAY!|r\nGet 13 different Sargle's Fortunes to drastically cut down the price.",
-							["cost"] = 9999999,	-- 999g 99s 99c
+							description = "|cFFE50D12WARNING! DO NOT BUY RIGHT AWAY!|r\nGet 13 different Sargle's Fortunes to drastically cut down the price.",
+							cost = 9999999,	-- 999g 99s 99c
 						}),
 						i(237764, {	-- Exquisite Painting
-							["cost"] = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
 						}),
 					}),
 					n(236076, {	-- Darlia <Poison Supplies>
 						i(237765, {	-- Hearthstop Blade
-							["cost"] = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
 						}),
 					}),
 					n(236078, {	-- Feranin <Exotic Goods>
 						i(260311),	-- Empty Felwyrm Core
 						i(237766, {	-- Felwyrm Egg
-							["cost"] = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
 						}),
 					}),
 					n(236080, {	-- Sleyin <Weapon Merchant>
 						i(235644, {	-- Concealed Pistol
-							["cost"] = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
 						}),
 					}),
 					n(236872, {	-- Vanaris <Gem Vendor>
 						i(237763, {	-- Felstone
-							["cost"] = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
 						}),
 					}),
 					n(236079, {	-- Vinemaster Suntouched <Wine & Spirits Vendor>
 						i(236332, {	-- Suntouched Special Reserve
-							["cost"] = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
 						}),
 					}),
 				}),
@@ -155,16 +155,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
-				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
-				["groups"] = {
+				timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
+				groups = {
 					BossOnly(LITHIEL, {
 						ach(41961),	-- Heroic: Murder Row
 					}),
 				},
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
-				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
-				["groups"] = {
+				timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
+				groups = {
 					BossOnly(LITHIEL, {
 						ach(41962),	-- Mythic: Murder Row
 						ach(61617),	-- Mythic: Murder Row Guild Run

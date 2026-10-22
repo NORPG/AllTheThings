@@ -274,8 +274,8 @@ InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, Instanc
 
 -- #if AFTER 12.0.5
 InstanceHelper.LFRQueueNPC = {	-- Queue NPC
-	["crs"] = { 262873 },	-- Luka Ferad <Storyteller>
-	["coord"] = { 58.5, 35.4, VALDRAKKEN },
+	crs = { 262873 },	-- Luka Ferad <Storyteller>
+	coord = { 58.5, 35.4, VALDRAKKEN },
 }
 -- #endif
 InstanceHelper.UpgradeMapping = {
@@ -385,9 +385,9 @@ local TIMELINE_LFR = { ADDED_10_2_0, REMOVED_11_0_2, ADDED_12_0_5 }
 
 root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1207, {	-- Amirdrassil, the Dream's Hope
-		["coord"] = { 27.3, 30.9, EMERALD_DREAM },
-		["timeline"] = { ADDED_10_2_0 },
-		["maps"] = {
+		coord = { 27.3, 30.9, EMERALD_DREAM },
+		timeline = { ADDED_10_2_0 },
+		maps = {
 			2232,	-- Wellspring Atrium
 			2233,	-- Throne of the Firelord
 			2234,	-- Amirdrassil, the Dream's Hope
@@ -398,83 +398,83 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			2244,	-- The Scorched Hall
 			2240,	-- Verdant Terrace
 		},
-		["isRaid"] = true,
-		["groups"] = {
+		isRaid = true,
+		groups = {
 			header(HEADERS.Item, 206448, {	-- Fyr'alath the Dreamrender
 				n(QUESTS, bubbleDown({
-					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+					classes = { WARRIOR, PALADIN, DEATHKNIGHT },
 				}, {
 					q(77093, {	-- The Shadowflame Axe
-						["qs"] = 207729,	-- Fyr'alath the Dreamrender (QS!)
+						qs = 207729,	-- Fyr'alath the Dreamrender (QS!)
 					}),
 					q(77191, {	-- Handling It
-						["sourceQuests"] = { 77093 },	-- The Shadowflame Axe
-						["provider"] = { "n", 206107 },	-- Eadweard Dalyngrigge
-						["coord"] = { 61.6, 31.2, THALDRASZUS },
-						["cost"] = {
+						sourceQuests = { 77093 },	-- The Shadowflame Axe
+						provider = { "n", 206107 },	-- Eadweard Dalyngrigge
+						coord = { 61.6, 31.2, THALDRASZUS },
+						cost = {
 							{ "i", 208577, 1 },	-- 1x Symbiotic Glowspore Grip
 							{ "i", 208592, 1 },	-- 1x Rune of Shadowbinding
 							{ "i", 208578, 1 },	-- 1x Concentrated Sophic Vellum
 						},
-						["qi"] = 208781,	-- Symbiotic Glowspore Grip (QI!)
+						qi = 208781,	-- Symbiotic Glowspore Grip (QI!)
 					}),
 					q(77833, {	-- Handling It: Concentrated Sophic Vellum
-						["sourceQuests"] = { 77191 },	-- Handling It
-						["provider"] = { "n", 209601 },	-- Eadweard's Notes
-						["coord"] = { 61.6, 31.2, THALDRASZUS },
+						sourceQuests = { 77191 },	-- Handling It
+						provider = { "n", 209601 },	-- Eadweard's Notes
+						coord = { 61.6, 31.2, THALDRASZUS },
 					}),
 					q(77835, {	-- Handling It: Rune of Shadowbinding
-						["sourceQuests"] = { 77191 },	-- Handling It
-						["provider"] = { "n", 209601 },	-- Eadweard's Notes
-						["coord"] = { 61.6, 31.2, THALDRASZUS },
+						sourceQuests = { 77191 },	-- Handling It
+						provider = { "n", 209601 },	-- Eadweard's Notes
+						coord = { 61.6, 31.2, THALDRASZUS },
 					}),
 					q(77791, {	-- Handling It: Symbiotic Glowspore Grip
-						["sourceQuests"] = { 77191 },	-- Handling It
-						["provider"] = { "n", 209601 },	-- Eadweard's Notes
-						["coord"] = { 61.6, 31.2, THALDRASZUS },
+						sourceQuests = { 77191 },	-- Handling It
+						provider = { "n", 209601 },	-- Eadweard's Notes
+						coord = { 61.6, 31.2, THALDRASZUS },
 					}),
 					q(78155, {	-- Handling It: Radiant Fleck of Ash
-						["sourceQuests"] = { 77833 },	-- Handling It: Concentrated Sophic Vellum
-						["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
-						["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
-						["qis"] = {
+						sourceQuests = { 77833 },	-- Handling It: Concentrated Sophic Vellum
+						provider = { "n", 194837 },	-- Shalasar Glimmerdusk
+						coord = { 62.4, 18.6, OHNAHRAN_PLAINS },
+						qis = {
 							210002,	-- Ashen Dowsing Rod (QI!)
 							210001,	-- Prototype Order Vellum (QI!)
 							208581,	-- Radiant Fleck of Ash (QI!)
 						},
 					}),
 					q(78003, {	-- Handling It: Taut Tethercoil
-						["sourceQuests"] = { 77835 },	-- Handling It: Rune of Shadowbinding
-						["provider"] = { "n", 194840 },	-- Lydiara Whisperfeather
-						["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
-						["qis"] = {
+						sourceQuests = { 77835 },	-- Handling It: Rune of Shadowbinding
+						provider = { "n", 194840 },	-- Lydiara Whisperfeather
+						coord = { 40.2, 64.4, THE_AZURE_SPAN },
+						qis = {
 							209352,	-- Prototype Binding Rune (QI!)
 							208595,	-- Taut Tethercoil (QI!)
 							209996,	-- Tethercoil Rune (QI!)
 						},
 					}),
 					q(77886, {	-- Handling It: Shadowed Dreamleaf
-						["sourceQuests"] = { 77791 },	-- Handling It: Symbiotic Glowspore Grip
-						["provider"] = { "n", 194842 },	-- Erden
-						["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
-						["qis"] = {
+						sourceQuests = { 77791 },	-- Handling It: Symbiotic Glowspore Grip
+						provider = { "n", 194842 },	-- Erden
+						coord = { 82.4, 50.6, OHNAHRAN_PLAINS },
+						qis = {
 							210009,	-- Prototype Dreamleaf Grip (QI!)
 							208593,	-- Shadowed Dreamleaf (QI!)
 							210199,	-- Tattered Dreamleaf (QI!)
 						},
 					}),
 					q(77838, {	-- Tattered Dreamleaf
-						["description"] = "Appears that ANY class can be given this quest by another player with the Tattered Dreamleaf.",
-						["sourceQuests"] = {
+						description = "Appears that ANY class can be given this quest by another player with the Tattered Dreamleaf.",
+						sourceQuests = {
 							77833,	-- Handling It: Concentrated Sophic Vellum
 							77835,	-- Handling It: Rune of Shadowbinding
 							77791,	-- Handling It: Symbiotic Glowspore Grip
 						},
-						["sourceQuestNumRequired"] = 1,
-						["qs"] = 211927,	-- Tattered Dreamleaf (QS!)
-						["provider"] = { "i", 210199 },	-- Tattered Dreamleaf
-						["classes"] = IGNORED_VALUE,	-- prevent bubbleDown... this was given to my Hunter
-						["qis"] = {
+						sourceQuestNumRequired = 1,
+						qs = 211927,	-- Tattered Dreamleaf (QS!)
+						provider = { "i", 210199 },	-- Tattered Dreamleaf
+						classes = IGNORED_VALUE,	-- prevent bubbleDown... this was given to my Hunter
+						qis = {
 							208587,	-- Budding Restoration Mote (QI!)
 							208588,	-- Burgeoning Restoration Mote (QI!)
 							208846,	-- Restored Dreamleaf (QI!)
@@ -482,12 +482,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						},
 					}),
 					q(78156, {	-- Handling It: Radiant Vellum
-						["sourceQuests"] = { 78155 },	-- Handling It: Radiant Fleck of Ash
-						["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
-						["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
-						["groups"] = {
+						sourceQuests = { 78155 },	-- Handling It: Radiant Fleck of Ash
+						provider = { "n", 194837 },	-- Shalasar Glimmerdusk
+						coord = { 62.4, 18.6, OHNAHRAN_PLAINS },
+						groups = {
 							i(210003, {	-- Shalasar's Sophic Vellum (QI!)
-								["cost"] = {
+								cost = {
 									{ "i", 190316, 100 },	-- Awakened Earth
 									{ "i", 190321, 150 },	-- Awakened Fire
 									{ "i", 190324, 50 },	-- Awakened Order
@@ -497,19 +497,19 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							}),
 							i(210011, {	-- Shalasar's Notes on Sophic Magic
 								r(422338, {	-- Shalasar's Sophic Vellum
-									["requireSkill"] = ENCHANTING,
-									["u"] = TRAINING,
+									requireSkill = ENCHANTING,
+									u = TRAINING,
 								}),
 							}),
 						},
 					}),
 					q(78153, {	-- Handling It: Prototype Rune
-						["sourceQuests"] = { 78003 },	-- Handling It: Taut Tethercoil
-						["provider"] = { "n", 194840 },	-- Lydiara Whisperfeather
-						["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
-						["groups"] = {
+						sourceQuests = { 78003 },	-- Handling It: Taut Tethercoil
+						provider = { "n", 194840 },	-- Lydiara Whisperfeather
+						coord = { 40.2, 64.4, THE_AZURE_SPAN },
+						groups = {
 							i(209998, {	-- Lydiara's Binding Rune (QI!)
-								["cost"] = {
+								cost = {
 									{ "i", 194754, 250 },	-- Cosmic Ink
 									{ "i", 209352, 1 },	-- Prototype Binding Rune
 									{ "i", 194862, 50 },	-- Runed Writhebark
@@ -518,19 +518,19 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							}),
 							i(209349, {	-- Lydiara's Notes on Rune Reagents
 								r(422337, {	-- Lydiara's Guidance
-									["requireSkill"] = INSCRIPTION,
-									["u"] = TRAINING,
+									requireSkill = INSCRIPTION,
+									u = TRAINING,
 								}),
 							}),
 						},
 					}),
 					q(78159, {	-- Handling It: Glowspore Grip
-						["sourceQuests"] = { 77886 },	-- Handling It: Shadowed Dreamleaf
-						["provider"] = { "n", 194842 },	-- Erden
-						["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
-						["groups"] = {
+						sourceQuests = { 77886 },	-- Handling It: Shadowed Dreamleaf
+						provider = { "n", 194842 },	-- Erden
+						coord = { 82.4, 50.6, OHNAHRAN_PLAINS },
+						groups = {
 							i(209351, {	-- Erden's Dreamleaf Grip (QI!)
-								["cost"] = {
+								cost = {
 									{ "i", 208212, 5 },	-- Dreaming Essence
 									{ "i", 193229, 50 },	-- Mireslush Hide
 									{ "i", 205413, 3 },	-- Obsidian Cobraskin
@@ -540,76 +540,76 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							}),
 							i(210010, {	-- Erden's Notes on Symbiotic Spores
 								r(422330, {	-- Erden's Glowspore Grip
-									["requireSkill"] = LEATHERWORKING,
-									["u"] = TRAINING,
+									requireSkill = LEATHERWORKING,
+									u = TRAINING,
 								}),
 							}),
 						},
 					}),
 					q(78002, {	-- To The Test: Concentrated Sophic Vellum
-						["sourceQuests"] = { 78156 },	-- Handling It: Radiant Vellum
-						["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
-						["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
-						["qis"] = {
+						sourceQuests = { 78156 },	-- Handling It: Radiant Vellum
+						provider = { "n", 194837 },	-- Shalasar Glimmerdusk
+						coord = { 62.4, 18.6, OHNAHRAN_PLAINS },
+						qis = {
 							210222,	-- Resolved Element (QI!)
 							210048,	-- Shalasar's Sophic Vellum (QI!)
 							210240,	-- Stabilized Element (QI!)
 						},
-						["groups"] = {
+						groups = {
 							i(211398, {	-- Attuned Sophic Vellum (QI!)
 								i(208578),	-- Concentrated Sophic Vellum (QI!)
 							}),
 						},
 					}),
 					q(78154, {	-- To the Test: Rune of Shadowbinding
-						["sourceQuests"] = { 78153 },	-- Handling It: Prototype Rune
-						["provider"] = { "n", 194840 },	-- Lydiara Whisperfeather
-						["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
-						["qi"] = 209999,	-- Lydiara's Rune of Shadowbinding (QI!)
-						["groups"] = {
+						sourceQuests = { 78153 },	-- Handling It: Prototype Rune
+						provider = { "n", 194840 },	-- Lydiara Whisperfeather
+						coord = { 40.2, 64.4, THE_AZURE_SPAN },
+						qi = 209999,	-- Lydiara's Rune of Shadowbinding (QI!)
+						groups = {
 							i(211397, {	-- Attuned Rune of Shadowbinding (QI!)
 								i(208592),	-- Rune of Shadowbinding (QI!)
 							}),
 						},
 					}),
 					q(78655, {	-- Adaptive Cooling Salve
-						["sourceQuests"] = { 78159 },	-- Handling It: Glowspore Grip
-						["provider"] = { "n", 194842 },	-- Erden
-						["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
-						["cost"] = {
+						sourceQuests = { 78159 },	-- Handling It: Glowspore Grip
+						provider = { "n", 194842 },	-- Erden
+						coord = { 82.4, 50.6, OHNAHRAN_PLAINS },
+						cost = {
 							{ "i", 190329, 5 },	-- Awakened Frost
 							{ "i", 208212, 1 },	-- Dreaming Essence
 							{ "i", 204460, 100 },	-- Zaralek Glowspores
 						},
-						["isDaily"] = true,
-						["qi"] = 210918,	-- Adaptive Cooling Salve (QI!)
+						isDaily = true,
+						qi = 210918,	-- Adaptive Cooling Salve (QI!)
 					}),
 					q(78160, {	-- To the Test: Symbiotic Glowspore Grip
-						["sourceQuests"] = { 78159 },	-- Handling It: Glowspore Grip
-						["provider"] = { "n", 194842 },	-- Erden
-						["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
-						["qis"] = {
+						sourceQuests = { 78159 },	-- Handling It: Glowspore Grip
+						provider = { "n", 194842 },	-- Erden
+						coord = { 82.4, 50.6, OHNAHRAN_PLAINS },
+						qis = {
 							210207,	-- Empowered Restorative Symbiote (QI!)
 							210012,	-- Erden's Symbiotic Glowspore Grip (QI!)
 						},
-						["groups"] = {
+						groups = {
 							i(211396, {	-- Attuned Glowspore Grip (QI!)
 								i(208577),	-- Symbiotic Glowspore Grip (QI!)
 							}),
 						},
 					}),
 					q(77192, {	-- An Axe Tempered
-						["sourceQuests"] = { 77191 },	-- Handling It
-						["provider"] = { "n", 206107 },	-- Eadweard Dalyngrigge
-						["coord"] = { 61.6, 31.2, THALDRASZUS },
+						sourceQuests = { 77191 },	-- Handling It
+						provider = { "n", 206107 },	-- Eadweard Dalyngrigge
+						coord = { 61.6, 31.2, THALDRASZUS },
 					}),
 					q(77193, {	-- The Power of Temptation
-						["sourceQuests"] = { 77192 },	-- An Axe Tempered
-						["provider"] = { "n", 208421 },	-- Wrathion
-						["coord"] = { 24.6, 60.6, THE_WAKING_SHORES },
-						-- ["maps"] = { 2211 },	-- Aberrus, the Shadowed Crucible
+						sourceQuests = { 77192 },	-- An Axe Tempered
+						provider = { "n", 208421 },	-- Wrathion
+						coord = { 24.6, 60.6, THE_WAKING_SHORES },
+						-- maps = { 2211 },	-- Aberrus, the Shadowed Crucible
 						-- It seems this subzone is still in The Waking Shores (mapID 2022)
-						["groups"] = {
+						groups = {
 							i(206448),	-- Fyr'alath the Dreamrender
 							ach(19450),	-- Fyr'alath the Dreamrender
 						},
@@ -619,100 +619,100 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			n(ACHIEVEMENTS, {
 				ach(19344, {	-- Incarnate's Wake
 					crit(63095, {	-- Gnarlroot
-						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { GNARLROOT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63096, {	-- Igira the Cruel
-						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { IGIRA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63101, {	-- Smolderon
-						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SMOLDERON, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(19345, {	-- Molten Incursion
 					crit(63097, {	-- Volcoross
-						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { VOLCOROSS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63098, {	-- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { LARODAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(19346, {	-- The Viridian Weave
 					crit(63099, {	-- Council of Dreams
-						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63100, {	-- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { NYMUE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(19347, {	-- Fate of Amirdrassil
 					crit(63102, {	-- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { TINDRAL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63103, {	-- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { FYRAKK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(19331, {	-- Amirdrassil, the Dream's Hope
 					crit(63095, {	-- Gnarlroot
-						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { GNARLROOT, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63096, {	-- Igira the Cruel
-						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { IGIRA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63097, {	-- Volcoross
-						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { VOLCOROSS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63098, {	-- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { LARODAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63099, {	-- Council of Dreams
-						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63100, {	-- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { NYMUE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63101, {	-- Smolderon
-						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { SMOLDERON, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63102, {	-- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { TINDRAL, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(63103, {	-- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.ALL },
+						_encounter = { FYRAKK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(19333, {	-- Heroic: Amirdrassil, the Dream's Hope
 					crit(63104, {	-- Gnarlroot
-						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { GNARLROOT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63105, {	-- Igira the Cruel
-						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { IGIRA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63106, {	-- Volcoross
-						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { VOLCOROSS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63107, {	-- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { LARODAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63108, {	-- Council of Dreams
-						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63109, {	-- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { NYMUE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63110, {	-- Smolderon
-						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { SMOLDERON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63111, {	-- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { TINDRAL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(63112, {	-- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { FYRAKK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				}),
 				ach(19334, {	-- Mythic: Amirdrassil, the Dream's Hope
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19335,	-- Mythic: Gnarlroot
 						19336,	-- Mythic: Igira the Cruel
 						19337,	-- Mythic: Volcoross
@@ -726,7 +726,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				ach(19349, {	-- Glory of the Dream Raider
 					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
+					sym = {{"meta_achievement",
 						19322,	-- Meaner Pastures
 						19320,	-- Cruelty Free
 						19321,	-- Swog Champion
@@ -737,96 +737,96 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						19393,	-- Whelp, I'm Lost
 						19390,	-- Memories of Teldrassil
 					}},
-					["groups"] = {
+					groups = {
 						i(210060),	-- Shadow Dusk Dreamsaber (MOUNT!)
 					},
 				}),
 				-- Awakened
-				ach(19570, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Awakened Flames
+				ach(19570, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Awakened Flames
 					crit(64986, {	-- Gnarlroot
-						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { GNARLROOT, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64987, {	-- Igira the Cruel
-						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { IGIRA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64988, {	-- Volcoross
-						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { VOLCOROSS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64989, {	-- Council of Dreams
-						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64990, {	-- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { LARODAR, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64991, {	-- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { NYMUE, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64992, {	-- Smolderon
-						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { SMOLDERON, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64993, {	-- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { TINDRAL, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64994, {	-- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						_encounter = { FYRAKK, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 				})),
-				ach(19571, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Heroic: Awakened Flames
+				ach(19571, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Heroic: Awakened Flames
 					crit(64995, {	-- Gnarlroot
-						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { GNARLROOT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64996, {	-- Igira the Cruel
-						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { IGIRA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64997, {	-- Volcoross
-						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { VOLCOROSS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64998, {	-- Council of Dreams
-						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(64999, {	-- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { LARODAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(65000, {	-- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { NYMUE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(65001, {	-- Smolderon
-						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { SMOLDERON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(65002, {	-- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { TINDRAL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 					crit(65003, {	-- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { FYRAKK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				})),
-				ach(19572, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mythic: Awakened Flames
+				ach(19572, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mythic: Awakened Flames
 					crit(65004, {	-- Gnarlroot
-						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { GNARLROOT, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65005, {	-- Igira the Cruel
-						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { IGIRA, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65006, {	-- Volcoross
-						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { VOLCOROSS, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65007, {	-- Council of Dreams
-						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65008, {	-- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { LARODAR, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65009, {	-- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { NYMUE, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65010, {	-- Smolderon
-						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { SMOLDERON, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65011, {	-- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { TINDRAL, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(65012, {	-- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MYTHIC },
+						_encounter = { FYRAKK, DIFFICULTY.RAID.MYTHIC },
 					}),
 				})),
 				ach(19442),	-- Fire Catwalk With Me
@@ -835,18 +835,18 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				ach(19388),	-- Heroic: Amirdrassil, the Dream's Hope Guild Run
 			}),
 			o(382621, {	-- Revival Catalyst Console
-				["description"] = "The Revival Catalyst is a system that lets you convert Emerald Dream's Zone Weekly Event Items (Superbloom, Dreamseeds, A Worthy Ally: Dream) & LFR Mode Non-set items from the Amirdrassil Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
-				["coord"] = { 60.6, 53.8, THALDRASZUS },
-				["modelScale"] = 4,
-				["catalystID"] = 7,	-- ItemBonus.Value_0 DF:S3
-				["groups"] = {
+				description = "The Revival Catalyst is a system that lets you convert Emerald Dream's Zone Weekly Event Items (Superbloom, Dreamseeds, A Worthy Ally: Dream) & LFR Mode Non-set items from the Amirdrassil Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+				coord = { 60.6, 53.8, THALDRASZUS },
+				modelScale = 4,
+				catalystID = 7,	-- ItemBonus.Value_0 DF:S3
+				groups = {
 					Difficulty(DIFFICULTY.RAID.LFR, {
-						["upgradeTrackID"]=UPGRADETRACKS.VETERAN,
-						["timeline"] = TIMELINE_LFR,
+						upgradeTrackID=UPGRADETRACKS.VETERAN,
+						timeline = TIMELINE_LFR,
 					}).AddGroups({
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.LFR),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.LFR),
+							groups = {
 								i(207202),	-- Graveboots of the Risen Nightmare
 								i(207197),	-- Seal of the Risen Nightmare
 								i(207195),	-- Shroud of the Risen Nightmare
@@ -854,8 +854,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.LFR),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.LFR),
+							groups = {
 								i(207259),	-- Screaming Torchfiend's Armlets
 								i(207260),	-- Screaming Torchfiend's Clasp
 								i(207265),	-- Screaming Torchfiend's Clutches
@@ -863,8 +863,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.LFR),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.LFR),
+							groups = {
 								i(207249),	-- Benevolent Embersage's Featherdrape
 								i(207256),	-- Benevolent Embersage's Lined Boots
 								i(207251),	-- Benevolent Embersage's Sagacious Sash
@@ -872,8 +872,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.LFR),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.LFR),
+							groups = {
 								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
 								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
 								i(207229),	-- Weyrnkeeper's Timeless Treads
@@ -881,8 +881,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.LFR),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.LFR),
+							groups = {
 								i(207214),	-- Blazing Dreamstalker's Bracers
 								i(207215),	-- Blazing Dreamstalker's Spined Girdle
 								i(207213),	-- Blazing Dreamstalker's Staghide
@@ -890,8 +890,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.LFR),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.LFR),
+							groups = {
 								i(207286),	-- Wayward Chronomancer's Cuffs
 								i(207285),	-- Wayward Chronomancer's Stole
 								i(207292),	-- Wayward Chronomancer's Strapped Boots
@@ -899,8 +899,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.LFR),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.LFR),
+							groups = {
 								i(207242),	-- Mystic Heron's Belt
 								i(207240),	-- Mystic Heron's Feathered Mantle
 								i(207241),	-- Mystic Heron's Fisticuffs
@@ -908,8 +908,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.LFR),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.LFR),
+							groups = {
 								i(207186),	-- Zealous Pyreknight's Banner
 								i(207193),	-- Zealous Pyreknight's Dreamstompers
 								i(207188),	-- Zealous Pyreknight's Emblem
@@ -917,8 +917,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.LFR),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.LFR),
+							groups = {
 								i(207278),	-- Cincture of Lunar Communion
 								i(207276),	-- Cloak of Lunar Communion
 								i(207283),	-- Poulaines of Lunar Communion
@@ -926,8 +926,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.LFR),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.LFR),
+							groups = {
 								i(207233),	-- Lucid Shadewalker's Baldric
 								i(207232),	-- Lucid Shadewalker's Bracers
 								i(207231),	-- Lucid Shadewalker's Cape
@@ -935,8 +935,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.LFR),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.LFR),
+							groups = {
 								i(207204),	-- Greatwolf Outcast's Chainweave
 								i(207211),	-- Greatwolf Outcast's Footpads
 								i(207206),	-- Greatwolf Outcast's Sigil Belt
@@ -944,8 +944,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.LFR),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.LFR),
+							groups = {
 								i(207268),	-- Devout Ashdevil's Bracelets
 								i(207269),	-- Devout Ashdevil's Fanged Sash
 								i(207267),	-- Devout Ashdevil's Fiendcloak
@@ -953,8 +953,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.LFR),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.LFR),
+							groups = {
 								i(207179),	-- Molten Vanguard's Chains
 								i(207184),	-- Molten Vanguard's Greatboots
 								i(207177),	-- Molten Vanguard's Manacles
@@ -962,10 +962,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 					}),
-					Difficulty(DIFFICULTY.RAID.NORMAL, {["upgradeTrackID"]=UPGRADETRACKS.CHAMPION}).AddGroups({
+					Difficulty(DIFFICULTY.RAID.NORMAL, {upgradeTrackID=UPGRADETRACKS.CHAMPION}).AddGroups({
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.NORMAL),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.NORMAL),
+							groups = {
 								i(207202),	-- Graveboots of the Risen Nightmare
 								i(207197),	-- Seal of the Risen Nightmare
 								i(207195),	-- Shroud of the Risen Nightmare
@@ -973,8 +973,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.NORMAL),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.NORMAL),
+							groups = {
 								i(207259),	-- Screaming Torchfiend's Armlets
 								i(207260),	-- Screaming Torchfiend's Clasp
 								i(207265),	-- Screaming Torchfiend's Clutches
@@ -982,8 +982,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.NORMAL),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.NORMAL),
+							groups = {
 								i(207249),	-- Benevolent Embersage's Featherdrape
 								i(207256),	-- Benevolent Embersage's Lined Boots
 								i(207251),	-- Benevolent Embersage's Sagacious Sash
@@ -991,8 +991,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.NORMAL),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.NORMAL),
+							groups = {
 								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
 								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
 								i(207229),	-- Weyrnkeeper's Timeless Treads
@@ -1000,8 +1000,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.NORMAL),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.NORMAL),
+							groups = {
 								i(207214),	-- Blazing Dreamstalker's Bracers
 								i(207215),	-- Blazing Dreamstalker's Spined Girdle
 								i(207213),	-- Blazing Dreamstalker's Staghide
@@ -1009,8 +1009,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.NORMAL),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.NORMAL),
+							groups = {
 								i(207286),	-- Wayward Chronomancer's Cuffs
 								i(207285),	-- Wayward Chronomancer's Stole
 								i(207292),	-- Wayward Chronomancer's Strapped Boots
@@ -1018,8 +1018,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.NORMAL),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.NORMAL),
+							groups = {
 								i(207242),	-- Mystic Heron's Belt
 								i(207240),	-- Mystic Heron's Feathered Mantle
 								i(207241),	-- Mystic Heron's Fisticuffs
@@ -1027,8 +1027,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.NORMAL),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.NORMAL),
+							groups = {
 								i(207186),	-- Zealous Pyreknight's Banner
 								i(207193),	-- Zealous Pyreknight's Dreamstompers
 								i(207188),	-- Zealous Pyreknight's Emblem
@@ -1036,8 +1036,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.NORMAL),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.NORMAL),
+							groups = {
 								i(207278),	-- Cincture of Lunar Communion
 								i(207276),	-- Cloak of Lunar Communion
 								i(207283),	-- Poulaines of Lunar Communion
@@ -1045,8 +1045,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.NORMAL),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.NORMAL),
+							groups = {
 								i(207233),	-- Lucid Shadewalker's Baldric
 								i(207232),	-- Lucid Shadewalker's Bracers
 								i(207231),	-- Lucid Shadewalker's Cape
@@ -1054,8 +1054,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.NORMAL),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.NORMAL),
+							groups = {
 								i(207204),	-- Greatwolf Outcast's Chainweave
 								i(207211),	-- Greatwolf Outcast's Footpads
 								i(207206),	-- Greatwolf Outcast's Sigil Belt
@@ -1063,8 +1063,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.NORMAL),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.NORMAL),
+							groups = {
 								i(207268),	-- Devout Ashdevil's Bracelets
 								i(207269),	-- Devout Ashdevil's Fanged Sash
 								i(207267),	-- Devout Ashdevil's Fiendcloak
@@ -1072,8 +1072,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.NORMAL),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.NORMAL),
+							groups = {
 								i(207179),	-- Molten Vanguard's Chains
 								i(207184),	-- Molten Vanguard's Greatboots
 								i(207177),	-- Molten Vanguard's Manacles
@@ -1081,10 +1081,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 					}),
-					Difficulty(DIFFICULTY.RAID.HEROIC, {["upgradeTrackID"]=UPGRADETRACKS.HERO}).AddGroups({
+					Difficulty(DIFFICULTY.RAID.HEROIC, {upgradeTrackID=UPGRADETRACKS.HERO}).AddGroups({
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.HEROIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.HEROIC),
+							groups = {
 								i(207202),	-- Graveboots of the Risen Nightmare
 								i(207197),	-- Seal of the Risen Nightmare
 								i(207195),	-- Shroud of the Risen Nightmare
@@ -1092,8 +1092,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.HEROIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.HEROIC),
+							groups = {
 								i(207259),	-- Screaming Torchfiend's Armlets
 								i(207260),	-- Screaming Torchfiend's Clasp
 								i(207265),	-- Screaming Torchfiend's Clutches
@@ -1101,8 +1101,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.HEROIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.HEROIC),
+							groups = {
 								i(207249),	-- Benevolent Embersage's Featherdrape
 								i(207256),	-- Benevolent Embersage's Lined Boots
 								i(207251),	-- Benevolent Embersage's Sagacious Sash
@@ -1110,8 +1110,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.HEROIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.HEROIC),
+							groups = {
 								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
 								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
 								i(207229),	-- Weyrnkeeper's Timeless Treads
@@ -1119,8 +1119,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.HEROIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.HEROIC),
+							groups = {
 								i(207214),	-- Blazing Dreamstalker's Bracers
 								i(207215),	-- Blazing Dreamstalker's Spined Girdle
 								i(207213),	-- Blazing Dreamstalker's Staghide
@@ -1128,8 +1128,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.HEROIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.HEROIC),
+							groups = {
 								i(207286),	-- Wayward Chronomancer's Cuffs
 								i(207285),	-- Wayward Chronomancer's Stole
 								i(207292),	-- Wayward Chronomancer's Strapped Boots
@@ -1137,8 +1137,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.HEROIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.HEROIC),
+							groups = {
 								i(207242),	-- Mystic Heron's Belt
 								i(207240),	-- Mystic Heron's Feathered Mantle
 								i(207241),	-- Mystic Heron's Fisticuffs
@@ -1146,8 +1146,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.HEROIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.HEROIC),
+							groups = {
 								i(207186),	-- Zealous Pyreknight's Banner
 								i(207193),	-- Zealous Pyreknight's Dreamstompers
 								i(207188),	-- Zealous Pyreknight's Emblem
@@ -1155,8 +1155,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.HEROIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.HEROIC),
+							groups = {
 								i(207278),	-- Cincture of Lunar Communion
 								i(207276),	-- Cloak of Lunar Communion
 								i(207283),	-- Poulaines of Lunar Communion
@@ -1164,8 +1164,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.HEROIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.HEROIC),
+							groups = {
 								i(207233),	-- Lucid Shadewalker's Baldric
 								i(207232),	-- Lucid Shadewalker's Bracers
 								i(207231),	-- Lucid Shadewalker's Cape
@@ -1173,8 +1173,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.HEROIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.HEROIC),
+							groups = {
 								i(207204),	-- Greatwolf Outcast's Chainweave
 								i(207211),	-- Greatwolf Outcast's Footpads
 								i(207206),	-- Greatwolf Outcast's Sigil Belt
@@ -1182,8 +1182,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.HEROIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.HEROIC),
+							groups = {
 								i(207268),	-- Devout Ashdevil's Bracelets
 								i(207269),	-- Devout Ashdevil's Fanged Sash
 								i(207267),	-- Devout Ashdevil's Fiendcloak
@@ -1191,8 +1191,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.HEROIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.HEROIC),
+							groups = {
 								i(207179),	-- Molten Vanguard's Chains
 								i(207184),	-- Molten Vanguard's Greatboots
 								i(207177),	-- Molten Vanguard's Manacles
@@ -1200,10 +1200,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 					}),
-					Difficulty(DIFFICULTY.RAID.MYTHIC, {["upgradeTrackID"]=UPGRADETRACKS.MYTH}).AddGroups({
+					Difficulty(DIFFICULTY.RAID.MYTHIC, {upgradeTrackID=UPGRADETRACKS.MYTH}).AddGroups({
 						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.MYTHIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.MYTHIC),
+							groups = {
 								i(207202),	-- Graveboots of the Risen Nightmare
 								i(207197),	-- Seal of the Risen Nightmare
 								i(207195),	-- Shroud of the Risen Nightmare
@@ -1211,8 +1211,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.MYTHIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.MYTHIC),
+							groups = {
 								i(207259),	-- Screaming Torchfiend's Armlets
 								i(207260),	-- Screaming Torchfiend's Clasp
 								i(207265),	-- Screaming Torchfiend's Clutches
@@ -1220,8 +1220,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(DRUID, {
-							["sym"] = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.MYTHIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.MYTHIC),
+							groups = {
 								i(207249),	-- Benevolent Embersage's Featherdrape
 								i(207256),	-- Benevolent Embersage's Lined Boots
 								i(207251),	-- Benevolent Embersage's Sagacious Sash
@@ -1229,8 +1229,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(EVOKER, {
-							["sym"] = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.MYTHIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.MYTHIC),
+							groups = {
 								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
 								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
 								i(207229),	-- Weyrnkeeper's Timeless Treads
@@ -1238,8 +1238,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(HUNTER, {
-							["sym"] = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.MYTHIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.MYTHIC),
+							groups = {
 								i(207214),	-- Blazing Dreamstalker's Bracers
 								i(207215),	-- Blazing Dreamstalker's Spined Girdle
 								i(207213),	-- Blazing Dreamstalker's Staghide
@@ -1247,8 +1247,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(MAGE, {
-							["sym"] = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.MYTHIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.MYTHIC),
+							groups = {
 								i(207286),	-- Wayward Chronomancer's Cuffs
 								i(207285),	-- Wayward Chronomancer's Stole
 								i(207292),	-- Wayward Chronomancer's Strapped Boots
@@ -1256,8 +1256,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(MONK, {
-							["sym"] = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.MYTHIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.MYTHIC),
+							groups = {
 								i(207242),	-- Mystic Heron's Belt
 								i(207240),	-- Mystic Heron's Feathered Mantle
 								i(207241),	-- Mystic Heron's Fisticuffs
@@ -1265,8 +1265,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(PALADIN, {
-							["sym"] = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.MYTHIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.MYTHIC),
+							groups = {
 								i(207186),	-- Zealous Pyreknight's Banner
 								i(207193),	-- Zealous Pyreknight's Dreamstompers
 								i(207188),	-- Zealous Pyreknight's Emblem
@@ -1274,8 +1274,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(PRIEST, {
-							["sym"] = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.MYTHIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.MYTHIC),
+							groups = {
 								i(207278),	-- Cincture of Lunar Communion
 								i(207276),	-- Cloak of Lunar Communion
 								i(207283),	-- Poulaines of Lunar Communion
@@ -1283,8 +1283,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(ROGUE, {
-							["sym"] = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.MYTHIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.MYTHIC),
+							groups = {
 								i(207233),	-- Lucid Shadewalker's Baldric
 								i(207232),	-- Lucid Shadewalker's Bracers
 								i(207231),	-- Lucid Shadewalker's Cape
@@ -1292,8 +1292,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(SHAMAN, {
-							["sym"] = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.MYTHIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.MYTHIC),
+							groups = {
 								i(207204),	-- Greatwolf Outcast's Chainweave
 								i(207211),	-- Greatwolf Outcast's Footpads
 								i(207206),	-- Greatwolf Outcast's Sigil Belt
@@ -1301,8 +1301,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(WARLOCK, {
-							["sym"] = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.MYTHIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.MYTHIC),
+							groups = {
 								i(207268),	-- Devout Ashdevil's Bracelets
 								i(207269),	-- Devout Ashdevil's Fanged Sash
 								i(207267),	-- Devout Ashdevil's Fiendcloak
@@ -1310,8 +1310,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							},
 						}),
 						cl(WARRIOR, {
-							["sym"] = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.MYTHIC),
-							["groups"] = {
+							sym = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.MYTHIC),
+							groups = {
 								i(207179),	-- Molten Vanguard's Chains
 								i(207184),	-- Molten Vanguard's Greatboots
 								i(207177),	-- Molten Vanguard's Manacles
@@ -1326,14 +1326,14 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			}),
 			n(SPECIAL, {
 				i(210783, {	-- Awakening Sunfish
-					["description"] = "Fish in the lava pools of the Pit of Volcoross.",
+					description = "Fish in the lava pools of the Pit of Volcoross.",
 				}),
 				i(210782, {	-- Slumbering Moonfish
-					["description"] = "Fish in the waters of the Wellspring Atrium.",
+					description = "Fish in the waters of the Wellspring Atrium.",
 				}),
 				i(210784, {	-- Xena, the Whimsical Whiskerfish
-					["description"] = "First get the Attuned Angler Buff by returning 10 Awakening Sunfish and 10 Slumbering Moonfish. Go back into the raid and fish in the biggest pool of water within the Wellspring Atrium.",
-					["cost"] = {
+					description = "First get the Attuned Angler Buff by returning 10 Awakening Sunfish and 10 Slumbering Moonfish. Go back into the raid and fish in the biggest pool of water within the Wellspring Atrium.",
+					cost = {
 						{ "i", 210783, 10 },	-- Awakening Sunfish
 						{ "i", 210782, 10 },	-- Slumbering Moonfish
 					},
@@ -1343,10 +1343,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			-- #if BEFORE 11.0.0
 			n(VENDORS, {
 				n(213285, {	-- Theozhaklos the Curious <Novice Explorer>
-					["coord"] = { 36.7, 33.3, EMERALD_DREAM },
-					["groups"] = bubbleDownFiltered({
-						["cost"] = { { "i", 210944, 1 } },	-- Emerald Mark of Mastery
-						["bonusID"] = 7532,
+					coord = { 36.7, 33.3, EMERALD_DREAM },
+					groups = bubbleDownFiltered({
+						cost = { { "i", 210944, 1 } },	-- Emerald Mark of Mastery
+						bonusID = 7532,
 					},FILTERFUNC_itemID,{
 						cl(DEATHKNIGHT, {
 							i(207203),	-- Casket of the Risen Nightmare
@@ -1450,12 +1450,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				n(QUESTS, {
 					q(78355,{	-- Essence of a Broken Dream
-						["qs"] = 210430,	-- Twisted Dreaming Essence (QS!)
+						qs = 210430,	-- Twisted Dreaming Essence (QS!)
 					}),
 					q(78421, {	-- The Power of Dreams
-						["sourceQuest"] = 78355,	-- Essence of a Broken Dream
-						["provider"] = { "n", 210039 },	-- Merithra
-						["qis"] = {
+						sourceQuest = 78355,	-- Essence of a Broken Dream
+						provider = { "n", 210039 },	-- Merithra
+						qis = {
 							210470,	-- Echoed Ephemera (QI!)
 							210472,	-- Igira's Cruel Nightmare (QI!)
 							210473,	-- Larodar's Fiery Reverie (QI!)
@@ -1464,20 +1464,20 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						},
 					}),
 					q(78429, {	-- The Power of Dreams, Awoken
-						["sourceQuest"] = 78421,	-- The Power of Dreams
-						["provider"] = { "n", 210039 },	-- Merithra
-						["groups"] = {
+						sourceQuest = 78421,	-- The Power of Dreams
+						provider = { "n", 210039 },	-- Merithra
+						groups = {
 							i(210498, {	-- Fused Essence
 								i(210494),	-- Incandescent Essence
 							}),
 						},
 					}),
 					q(78473, {	-- The Power of Dreams, Lost
-						["description"] = "This quest allows a player to recover their Incandescent Essence if it was deleted.",
-						["sourceQuest"] = 78429,	-- The Power of Dreams, Awoken
-						["provider"] = { "n", 210039 },	-- Merithra
-						["repeatable"] = true,
-						["groups"] = {
+						description = "This quest allows a player to recover their Incandescent Essence if it was deleted.",
+						sourceQuest = 78429,	-- The Power of Dreams, Awoken
+						provider = { "n", 210039 },	-- Merithra
+						repeatable = true,
+						groups = {
 							i(210494),	-- Incandescent Essence
 						},
 					}),
@@ -1533,17 +1533,17 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					i(210871),	-- Greater Ember of Fyr'alath
 					i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (MM!)
 					i(207728, {	-- Fyr'alath the Dreamrender
-						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
-						["groups"] = { i(207729) },	-- Fyr'alath the Dreamrender (QS!)
+						classes = { WARRIOR, PALADIN, DEATHKNIGHT },
+						groups = { i(207729) },	-- Fyr'alath the Dreamrender (QS!)
 					}),
 				}),
 			}),
-			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades(bubbleDown({ ["timeline"] = TIMELINE_LFR }, {
+			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades(bubbleDown({ timeline = TIMELINE_LFR }, {
 				ZoneDrops({
 				}),
 				CommonBossDrops({
 					currency(WHELPLINGS_DREAMING_CREST, {
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+						timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 				}),
 				header(HEADERS.Achievement, 19344, {	-- Incarnate's Wake
@@ -1563,8 +1563,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					Boss(TINDRAL),
 					Boss(FYRAKK, {
 						i(210947, {	-- Flame-Warped Curio
-							["sym"] = {{"sub","instance_tier",1207,DIFFICULTY.RAID.LFR}},
-							["up"] = IGNORED_VALUE,
+							sym = {{"sub","instance_tier",1207,DIFFICULTY.RAID.LFR}},
+							up = IGNORED_VALUE,
 						}),
 					}),
 				}),
@@ -1605,13 +1605,13 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(DRAKES_DREAMING_CREST, {
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+						timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 				}),
 				n(QUESTS, {
 					q(78600, {	-- Amirdrassil, the Dream's Hope: Up in Smoke (N)
-						["qg"] = 210016,	-- Tyrande Whisperwind
-						["qi"] = 210791,	-- Fragment of Emberscar (QI!)
+						qg = 210016,	-- Tyrande Whisperwind
+						qi = 210791,	-- Fragment of Emberscar (QI!)
 					}),
 				}),
 				ZoneDrops({
@@ -1626,16 +1626,16 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				Boss(TINDRAL),
 				Boss(FYRAKK, {
 					i(210947, {	-- Flame-Warped Curio
-						["sym"] = {{"sub","instance_tier",1207,DIFFICULTY.RAID.NORMAL}},
-						["up"] = IGNORED_VALUE,
+						sym = {{"sub","instance_tier",1207,DIFFICULTY.RAID.NORMAL}},
+						up = IGNORED_VALUE,
 					}),
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				n(QUESTS, {
-					q(78876, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_TWW_LAUNCH } }, {	-- A Glowing Memento
-						["qs"] = 211375,	-- Everglowing Ember (QS!)
-						["groups"] = { i(210537) },	-- Renewed Proto-Drake: Embodiment of Shadowflame (MM!)
+					q(78876, bubbleDownSelf({timeline = { ADDED_10_2_0, REMOVED_TWW_LAUNCH } }, {	-- A Glowing Memento
+						qs = 211375,	-- Everglowing Ember (QS!)
+						groups = { i(210537) },	-- Renewed Proto-Drake: Embodiment of Shadowflame (MM!)
 					})),
 				}),
 				BossOnly(GNARLROOT),
@@ -1647,20 +1647,20 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				BossOnly(SMOLDERON),
 				BossOnly(TINDRAL),
 				BossOnly(FYRAKK, {
-					ach(19350, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }}),	-- Ahead of the Curve: Fyrakk the Blazing
+					ach(19350, {timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }}),	-- Ahead of the Curve: Fyrakk the Blazing
 					i(211375),	-- Everglowing Ember (QS!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(WYRMS_DREAMING_CREST, {
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+						timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 				}),
 				n(QUESTS, {
 					q(78601, {	-- Amirdrassil, the Dream's Hope: Up in Smoke (H)
-						["qg"] = 210016,	-- Tyrande Whisperwind
-						["qi"] = 210792,	-- Fragment of Emberscar (QI!)
+						qg = 210016,	-- Tyrande Whisperwind
+						qi = 210792,	-- Fragment of Emberscar (QI!)
 					}),
 				}),
 				ZoneDrops({
@@ -1675,27 +1675,27 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				Boss(TINDRAL),
 				Boss(FYRAKK, {
 					i(210947, {	-- Flame-Warped Curio
-						["sym"] = {{"sub","instance_tier",1207,DIFFICULTY.RAID.HEROIC}},
-						["up"] = IGNORED_VALUE,
+						sym = {{"sub","instance_tier",1207,DIFFICULTY.RAID.HEROIC}},
+						up = IGNORED_VALUE,
 					}),
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(ASPECTS_DREAMING_CREST, {
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+						timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 				}),
 				n(QUESTS, {
 					q(78602, {	-- Amirdrassil, the Dream's Hope: Up in Smoke (M)
-						["qg"] = 210016,	-- Tyrande Whisperwind
-						["qi"] = 210793,	-- Fragment of Emberscar (QI!)
+						qg = 210016,	-- Tyrande Whisperwind
+						qi = 210793,	-- Fragment of Emberscar (QI!)
 					}),
 				}),
 				ZoneDrops({
 				}),
 				n(ZONE_DROPS, sharedData({	-- First 2 weeks BoP version drops
-					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 },
+					timeline = { ADDED_10_2_0, REMOVED_10_2_0 },
 				},{
 					i(210548),	-- Daydreamer's Glimmering Ring [BoP]
 					i(210542),	-- Insurgent Flame Warboots [BoP]
@@ -1735,8 +1735,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					ach(19343, {	-- Mythic: Fyrakk the Blazing
 						title(530),	-- <Name> the Blazing
 					}),
-					ach(19351, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }}),	-- Cutting Edge: Fyrakk the Blazing
-					ach(19392, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_10_2_5 } }, {	-- Hall of Fame: Fyrakk the Blazing
+					ach(19351, {timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }}),	-- Cutting Edge: Fyrakk the Blazing
+					ach(19392, bubbleDownSelf({timeline = { ADDED_10_2_0, REMOVED_10_2_5 } }, {	-- Hall of Fame: Fyrakk the Blazing
 						title(528),	-- <Name>, Famed Slayer of Fyrakk
 					})),
 					ach(19389),	-- Mythic: Fyrakk the Blazing Guild Run
@@ -1745,8 +1745,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(211314),	-- Cinder of Companionship (CI!)
 					}),
 					i(210947, {	-- Flame-Warped Curio
-						["sym"] = {{"sub","instance_tier",1207,DIFFICULTY.RAID.MYTHIC}},
-						["up"] = IGNORED_VALUE,
+						sym = {{"sub","instance_tier",1207,DIFFICULTY.RAID.MYTHIC}},
+						up = IGNORED_VALUE,
 					}),
 				}),
 			}),
@@ -1754,7 +1754,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
 	inst(1207, {	-- Amirdrassil, the Dream's Hope
 		-- Normal
 		q(78311),	-- Gnalroot

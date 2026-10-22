@@ -28,16 +28,16 @@ InRetailSeason = {	-- MID S2
 }
 -- #ENDIF
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 	inst(1311, {	-- Den of Nalorakk
 		InRetailSeason=InRetailSeason,
-		["coord"] = { 30.0, 84.5, MAP.MIDNIGHT.ZULAMAN },
-		["maps"] = {
+		coord = { 30.0, 84.5, MAP.MIDNIGHT.ZULAMAN },
+		maps = {
 			2564,	--
 			2514,	-- Dreamer's Passage
 			2513,	-- The Heart of Rage
 		},
-		["groups"] = {
+		groups = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(HOARDMONGER, {
 					i(251144),	-- Autumn's Boon Belt
@@ -76,16 +76,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
-				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
-				["groups"] = {
+				timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
+				groups = {
 					BossOnly(NALORAKK, {
 						ach(61642),	-- Heroic: Den of Nalorakk
 					}),
 				},
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC, {
-				["timeline"] = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
-				["groups"] = {
+				timeline = { ADDED_12_0_1_LAUNCH, REMOVED_12_0_1_SEASONSTART, ADDED_12_1_0 },
+				groups = {
 					BossOnly(NALORAKK, {
 						ach(61643),	-- Mythic: Den of Nalorakk
 						ach(61605),	-- Mythic: Den of Nalorakk Guild Run

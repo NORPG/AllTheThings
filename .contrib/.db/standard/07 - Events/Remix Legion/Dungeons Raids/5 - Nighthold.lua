@@ -188,46 +188,46 @@ InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDro
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	n(RAIDS, {
 		inst(786, {	-- The Nighthold
-			["coords"] = {
+			coords = {
 				{ 43.3, 62.3, SURAMAR },	-- entrance that leads underground
 				{ 44.1, 59.7, SURAMAR },	-- actual raid entrance
 			},
-			["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
-			["isRaid"] = true,
-			["groups"] = {
+			maps = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
+			isRaid = true,
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(42553, {	-- Raid Finder: The Nighthold
 						crit(108560, {	-- Skorpyron
-							["_encounter"] = { SKORPYRON, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { SKORPYRON, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108558, {	-- Chronomatic Anomaly
-							["_encounter"] = { CHRONOMATIC, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { CHRONOMATIC, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108559, {	-- Trilliax
-							["_encounter"] = { TRILLIAX, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { TRILLIAX, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108557, {	-- Spellblade Aluriel
-							["_encounter"] = { ALURIEL, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { ALURIEL, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108556, {	-- Star Augur Etraeus
-							["_encounter"] = { ETRAEUS, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { ETRAEUS, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108555, {	-- High Botanist Tel'arn
-							["_encounter"] = { TELARN, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { TELARN, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108553, {	-- Tichondrius
-							["_encounter"] = { TICHONDRIUS, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { TICHONDRIUS, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108554, {	-- Krosus
-							["_encounter"] = { KROSUS, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { KROSUS, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(108552, {	-- Grand Magistrix Elisande
-							["_encounter"] = { ELISANDE, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { ELISANDE, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 					}),
 					ach(60865, {	-- The Nighthold
 						-- Meta Achievement
-						["sym"] = {{"meta_achievement",
+						sym = {{"meta_achievement",
 							60861,	-- Arcing Aqueducts
 							60862,	-- Royal Athenaeum
 							60863,	-- Nightspire
@@ -236,101 +236,101 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					}),
 					ach(60861, {	-- Arcing Aqueducts
 						crit(107157, {	-- Skorpyron
-							["_encounter"] = { SKORPYRON, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { SKORPYRON, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(107159, {	-- Chronomatic Anomaly
-							["_encounter"] = { CHRONOMATIC, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { CHRONOMATIC, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(107158, {	-- Trilliax
-							["_encounter"] = { TRILLIAX, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { TRILLIAX, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 					}),
 					ach(60862, {	-- Royal Athenaeum
 						crit(107160, {	-- Spellblade Aluriel
-							["_encounter"] = { ALURIEL, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { ALURIEL, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(107161, {	-- Star Augur Etraeus
-							["_encounter"] = { ETRAEUS, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { ETRAEUS, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(107162, {	-- High Botanist Tel'arn
-							["_encounter"] = { TELARN, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { TELARN, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 					}),
 					ach(60863, {	-- Nightspire
 						crit(107164, {	-- Tichondrius
-							["_encounter"] = { TICHONDRIUS, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { TICHONDRIUS, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(107163, {	-- Krosus
-							["_encounter"] = { KROSUS, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { KROSUS, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 						crit(107165, {	-- Grand Magistrix Elisande
-							["_encounter"] = { ELISANDE, DIFFICULTY.RAID.MULTI.ALL },
+							_encounter = { ELISANDE, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 					}),
 					ach(60864, {	-- Betrayer's Rise
-						["_encounter"] = { GULDAN, DIFFICULTY.RAID.MULTI.ALL },
-						["provider"] = { "n", 104154 },	-- Gul'dan
+						_encounter = { GULDAN, DIFFICULTY.RAID.MULTI.ALL },
+						provider = { "n", 104154 },	-- Gul'dan
 					}),
 					ach(42543, {	-- Heroic: The Nighthold
 						crit(108486, {	-- Skorpyron
-							["_encounter"] = { SKORPYRON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { SKORPYRON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108484, {	-- Chronomatic Anomaly
-							["_encounter"] = { CHRONOMATIC, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { CHRONOMATIC, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108485, {	-- Trilliax
-							["_encounter"] = { TRILLIAX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { TRILLIAX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108483, {	-- Spellblade Aluriel
-							["_encounter"] = { ALURIEL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { ALURIEL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108482, {	-- Star Augur Etraeus
-							["_encounter"] = { ETRAEUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { ETRAEUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108481, {	-- High Botanist Tel'arn
-							["_encounter"] = { TELARN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { TELARN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108479, {	-- Tichondrius
-							["_encounter"] = { TICHONDRIUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { TICHONDRIUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108480, {	-- Krosus
-							["_encounter"] = { KROSUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { KROSUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 						crit(108478, {	-- Grand Magistrix Elisande
-							["_encounter"] = { ELISANDE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+							_encounter = { ELISANDE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 						}),
 					}),
 					ach(42544, {	-- Mythic: The Nighthold
 						crit(108523, {	-- Skorpyron
-							["_encounter"] = { SKORPYRON, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { SKORPYRON, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108521, {	-- Chronomatic Anomaly
-							["_encounter"] = { CHRONOMATIC, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { CHRONOMATIC, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108522, {	-- Trilliax
-							["_encounter"] = { TRILLIAX, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { TRILLIAX, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108520, {	-- Spellblade Aluriel
-							["_encounter"] = { ALURIEL, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { ALURIEL, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108519, {	-- Star Augur Etraeus
-							["_encounter"] = { ETRAEUS, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { ETRAEUS, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108518, {	-- High Botanist Tel'arn
-							["_encounter"] = { TELARN, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { TELARN, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108516, {	-- Tichondrius
-							["_encounter"] = { TICHONDRIUS, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { TICHONDRIUS, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108517, {	-- Krosus
-							["_encounter"] = { KROSUS, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { KROSUS, DIFFICULTY.RAID.MYTHIC },
 						}),
 						crit(108515, {	-- Grand Magistrix Elisande
-							["_encounter"] = { ELISANDE, DIFFICULTY.RAID.MYTHIC },
+							_encounter = { ELISANDE, DIFFICULTY.RAID.MYTHIC },
 						}),
 					}),
 				}),
-				n(RAID_GEAR_CONVERSION, bubbleDown({ ["modID"] = 4 }, {
+				n(RAID_GEAR_CONVERSION, bubbleDown({ modID = 4 }, {
 					filter(CLOAKS, {
 						-- Regular items
 						i_RAID_GEAR_CONVERSION(247489),	-- Aristocrat's Winter Drape

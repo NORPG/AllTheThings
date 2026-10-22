@@ -3,16 +3,16 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 	n(SEASON_COSMIC, bubbleDownSelf({
-		["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH },
+		timeline = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH },
 	}, {
-		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
+		n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 			ach(15347, {	-- Cosmic Combatant [A]
-				["races"] = ALLIANCE_ONLY,
-				["collectible"] = false,
+				races = ALLIANCE_ONLY,
+				collectible = false,
 			}),
 			ach(15346, {	-- Cosmic Combatant [H]
-				["races"] = HORDE_ONLY,
-				["collectible"] = false,
+				races = HORDE_ONLY,
+				collectible = false,
 			}),
 			ach(15348),	-- Combatant I: Shadowlands Season 3
 			ach(15380),	-- Combatant II: Shadowlands Season 3
@@ -36,51 +36,51 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			}),
 			-- RBG
 			ach(15355, {	-- Hero of the Alliance: Cosmic
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(15356, {	-- Hero of the Horde: Cosmic
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			-- Fashion
 			ach(15408, {	-- Cosmic Chic
-				["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH },
+				timeline = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH },
 			}),
 		})),
-		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
+		filter(MOUNTS, bubbleDownSelf({ timeline = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 			i(187681, {	-- Vicious War Gulper [A] (MOUNT!)
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			i(187680, {	-- Vicious War Gulper [H] (MOUNT!)
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 		})),
 		n(PVP_ASPIRANT, {
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
-				["coord"] = { 36.0, 58.6, ORIBOS },
-				["groups"] = sharedData({
-					["cost"] = { { "i", MOH, 12 } },
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
+				coord = { 36.0, 58.6, ORIBOS },
+				groups = sharedData({
+					cost = { { "i", MOH, 12 } },
+					timeline = { ADDED_10_0_2_LAUNCH },
 				}, {
 					iensemble(201875, {	-- Arsenal: Cosmic Aspirant's Weapons
-						["cost"] = { { "i", MOH, 80 } },
+						cost = { { "i", MOH, 80 } },
 					}),
 					iensemble(201844, {	-- Ensemble: Cosmic Aspirant's Cloth Armor
-						["classes"] = CLOTH_CLASSES,
+						classes = CLOTH_CLASSES,
 					}),
 					iensemble(201843, {	-- Ensemble: Cosmic Aspirant's Leather Armor
-						["classes"] = LEATHER_CLASSES,
+						classes = LEATHER_CLASSES,
 					}),
 					iensemble(201842, {	-- Ensemble: Cosmic Aspirant's Mail Armor
-						["classes"] = MAIL_CLASSES,
+						classes = MAIL_CLASSES,
 					}),
 					iensemble(201841, {	-- Ensemble: Cosmic Aspirant's Plate Armor
-						["classes"] = PLATE_CLASSES,
+						classes = PLATE_CLASSES,
 					}),
 				}),
 			}),
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
-				["coord"] = { 36.0, 58.6, ORIBOS },
-				["groups"] = bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
+				coord = { 36.0, 58.6, ORIBOS },
+				groups = bubbleDown({ timeline = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					filter(BACK_F, {
 						honor(525, i(186944)),	-- Cosmic Aspirant's Cape
 						honor(525, i(186873)),	-- Cosmic Aspirant's Cloak
@@ -202,57 +202,57 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		n(PVP_GLADIATOR, {symselector=SymSelector.SL_PVP_SEASON_COSMIC_GLADIATOR}),
 		n(PVP_GLADIATOR, {
 			n(168011, {	-- Zo'sorg <Master of Conflict>
-				["coord"] = { 35.0, 57.6, ORIBOS },
-				["ItemAppearanceModifierID"] = 159,
-				["groups"] = sharedData({
-					["cost"] = { { "i", MOH, 12 } },
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
+				coord = { 35.0, 57.6, ORIBOS },
+				ItemAppearanceModifierID = 159,
+				groups = sharedData({
+					cost = { { "i", MOH, 12 } },
+					timeline = { ADDED_10_0_2_LAUNCH },
 				}, {
 					iensemble(201873, {	-- Arsenal: Cosmic Gladiator's Weapons
-						["cost"] = { { "i", MOH, 80 } },
+						cost = { { "i", MOH, 80 } },
 					}),
 					iensemble(201856, {	-- Ensemble: Cosmic Gladiator's Death Knight Armor
-						["classes"] = { DEATHKNIGHT },
+						classes = { DEATHKNIGHT },
 					}),
 					iensemble(201855, {	-- Ensemble: Cosmic Gladiator's Demon Hunter Armor
-						["classes"] = { DEMONHUNTER },
+						classes = { DEMONHUNTER },
 					}),
 					iensemble(201854, {	-- Ensemble: Cosmic Gladiator's Druid Armor
-						["classes"] = { DRUID },
+						classes = { DRUID },
 					}),
 					iensemble(201853, {	-- Ensemble: Cosmic Gladiator's Hunter Armor
-						["classes"] = { HUNTER },
+						classes = { HUNTER },
 					}),
 					iensemble(201852, {	-- Ensemble: Cosmic Gladiator's Mage Armor
-						["classes"] = { MAGE },
+						classes = { MAGE },
 					}),
 					iensemble(201851, {	-- Ensemble: Cosmic Gladiator's Monk Armor
-						["classes"] = { MONK },
+						classes = { MONK },
 					}),
 					iensemble(201850, {	-- Ensemble: Cosmic Gladiator's Paladin Armor
-						["classes"] = { PALADIN },
+						classes = { PALADIN },
 					}),
 					iensemble(201849, {	-- Ensemble: Cosmic Gladiator's Priest Armor
-						["classes"] = { PRIEST },
+						classes = { PRIEST },
 					}),
 					iensemble(201848, {	-- Ensemble: Cosmic Gladiator's Rogue Armor
-						["classes"] = { ROGUE },
+						classes = { ROGUE },
 					}),
 					iensemble(201847, {	-- Ensemble: Cosmic Gladiator's Shaman Armor
-						["classes"] = { SHAMAN },
+						classes = { SHAMAN },
 					}),
 					iensemble(201846, {	-- Ensemble: Cosmic Gladiator's Warlock Armor
-						["classes"] = { WARLOCK },
+						classes = { WARLOCK },
 					}),
 					iensemble(201845, {	-- Ensemble: Cosmic Gladiator's Warrior Armor
-						["classes"] = { WARRIOR },
+						classes = { WARRIOR },
 					}),
 				}),
 			}),
 			n(168011, {	-- Zo'sorg <Master of Conflict>
-				["coord"] = { 35.0, 57.6, ORIBOS },
-				["ItemAppearanceModifierID"] = 159,
-				["groups"] = bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
+				coord = { 35.0, 57.6, ORIBOS },
+				ItemAppearanceModifierID = 159,
+				groups = bubbleDown({ timeline = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					filter(BACK_F, {
 						conquest(525, i(186780)),	-- Cosmic Gladiator's Cloak
 						conquest(525, i(186781)),	-- Cosmic Gladiator's Drape
@@ -380,10 +380,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					}),
 				}),
 			}),
-			n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
-				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
-				["groups"] = bubbleDownFiltered({
-					["bonusID"] = 7897,
+			n(CLASSES, bubbleDownSelf({ timeline = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
+				description = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
+				groups = bubbleDownFiltered({
+					bonusID = 7897,
 				},FILTERFUNC_itemID,{
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
@@ -520,10 +520,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				}),
 			})),
 		}),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 }, ["modID"] = 14, ["bonusID"] = 7551 }, {
+		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_9_2_0, REMOVED_9_2_5 }, modID = 14, bonusID = 7551 }, {
 			n(CLASSES,{
-				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
-				["groups"] = bubbleDown({ ["bonusID"] = 7532 }, {
+				description = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
+				groups = bubbleDown({ bonusID = 7532 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
 						i(188866),	-- Chausses of the First Eidolon

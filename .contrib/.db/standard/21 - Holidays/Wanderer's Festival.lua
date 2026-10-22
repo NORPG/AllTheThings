@@ -29,13 +29,13 @@ root(ROOTS.Holidays, {
 			cn = "该节日仅在周日晚上9点至11点举行（太平洋时间（美服）／中欧夏令时（欧服）／澳大利亚东部夏令时（大洋洲））。节日期间，水面上会出现漂浮的灯笼，熊猫人 NPC 会漫步到海滩上燃起篝火并燃放烟花。不久之后，云游节雏龙便会出现。",
 		},
 	}), {
-		["providers"] = {
+		providers = {
 			{ "o", 223184 },	-- Wanderer's Festival Announcement
 			{ "n",  73594 },	-- Wandering Herald
 		},
-		["coord"] = { 76.0, 26.8, KRASARANG_WILDS },
-		["timeline"] = { ADDED_5_0_4 },
-		["groups"] = {
+		coord = { 76.0, 26.8, KRASARANG_WILDS },
+		timeline = { ADDED_5_0_4 },
+		groups = {
 			n(ACHIEVEMENTS, {
 				ach(7518),	-- Wanderers, Dreamers, and You
 			}),
@@ -46,7 +46,7 @@ root(ROOTS.Holidays, {
 	})),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
 	m(PANDARIA, {
 		m(KRASARANG_WILDS, {
 			n(QUESTS, {

@@ -2,22 +2,22 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	m(OHNAHRAN_PLAINS, {
 		n(TREASURES, {
 			o(380860, {	-- Centaur Horn
-				["coord"] = { 73.5, 56.2, OHNAHRAN_PLAINS },
-				["questID"] = 70402,
-				["groups"] = {
+				coord = { 73.5, 56.2, OHNAHRAN_PLAINS },
+				questID = 70402,
+				groups = {
 					i(200869),	-- Ohn Lite Branded Horn (TOY!)
 				},
 			}),
 			o(381981, {	-- Chest of the Flood
-				["provider"] = { "o", 381712 },	-- Water-Bound Chest
-				["questID"] = 71033,
-				["coord"] = { 56.0, 78.7, OHNAHRAN_PLAINS },
-				["isWeekly"] = true,
-				["sym"] = {
+				provider = { "o", 381712 },	-- Water-Bound Chest
+				questID = 71033,
+				coord = { 56.0, 78.7, OHNAHRAN_PLAINS },
+				isWeekly = true,
+				sym = {
 					{"select","mapID",DRAGON_ISLES,},{"pop"},
 					{"where","headerID", ZONE_REWARDS},{"pop"},
 					SYM.SUB.INVTYPE_ALL_SLOTS,
@@ -43,8 +43,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			o(376581, {	-- Clan Chest
-				["description"] = "Does not show on minimap.\nEach 'cluster' of nearby coords has an independent spawn.\nPersists 90 sec once opened.\nRespawn: 60m",
-				["coords"] = {
+				description = "Does not show on minimap.\nEach 'cluster' of nearby coords has an independent spawn.\nPersists 90 sec once opened.\nRespawn: 60m",
+				coords = {
 					{ 25.0, 37.8, OHNAHRAN_PLAINS },
 					{ 25.3, 37.4, OHNAHRAN_PLAINS },
 					{ 31.3, 70.6, OHNAHRAN_PLAINS },
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 86.4, 50.7, OHNAHRAN_PLAINS },
 					{ 86.5, 53.2, OHNAHRAN_PLAINS },
 				},
-				["groups"] = {
+				groups = {
 					-- TODO: alt sources of various zone NPCs
 					i(201028),	-- Nokhudon Boots
 					i(201027),	-- Nokhudon Breeches
@@ -95,8 +95,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			o(378088, {	-- Crystalline Flower
-				["description"] = "You need 5 flowers, but only 2 can be up at any given time. Realmhop recommended.\n\n",
-				["coords"] = {
+				description = "You need 5 flowers, but only 2 can be up at any given time. Realmhop recommended.\n\n",
+				coords = {
 					{ 27.2, 45.6, OHNAHRAN_PLAINS },
 					{ 26.61, 48.76, OHNAHRAN_PLAINS },
 					{ 26.86, 47.33, OHNAHRAN_PLAINS },
@@ -107,32 +107,32 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 30.50, 45.96, OHNAHRAN_PLAINS },
 					{ 32.14, 46.93, OHNAHRAN_PLAINS },
 				},
-				["groups"] = {
+				groups = {
 					i(195884, {	-- Crystalline Petals
 						i(195542, {	-- Slumber Incense
 						-- Cost?
-						-- ["cost"] = { { "i", 195884, 5 } },	-- 5x Crystalline Petals
+						-- cost = { { "i", 195884, 5 } },	-- 5x Crystalline Petals
 						}),
 					}),
 				},
 			}),
 			o(380991, {	-- Dirt Mound
-				["coord"] = { 70.6, 35.4, OHNAHRAN_PLAINS },
-				["questID"] = 67950,
-				["cost"] = { { "i", 195453, 1 } },	-- 1x Ludo's Stash Map
-				["groups"] = {
+				coord = { 70.6, 35.4, OHNAHRAN_PLAINS },
+				questID = 67950,
+				cost = { { "i", 195453, 1 } },	-- 1x Ludo's Stash Map
+				groups = {
 					i(199171, {	-- Slightly Chewed Duck Egg
 						i(199172),	-- Viridescent Duck (PET!)
 					}),
 				},
 			}),
 			o(381707, {	-- Dreams in Emerald
-				["coord"] = { 32.3, 51.3, OHNAHRAN_PLAINS },
+				coord = { 32.3, 51.3, OHNAHRAN_PLAINS },
 			}),
 			o(381575, {	-- Duck Trap Kit
-				["coord"] = { 70.0, 64.0, OHNAHRAN_PLAINS },
-				["description"] = "Found only when the Aylaag Camp is in this location. Used to summon Quackers the Terrible.",
-				["groups"] = {
+				coord = { 70.0, 64.0, OHNAHRAN_PLAINS },
+				description = "Found only when the Aylaag Camp is in this location. Used to summon Quackers the Terrible.",
+				groups = {
 					i(194740, {	-- Duck Trap Kit
 						i(194712, {	-- Empty Duck Trap
 							i(194739),	-- Trapped Duck
@@ -141,31 +141,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			o(376416, {	-- Ellam's Favorite Toys
-				["coord"] = { 78.3, 29.2, OHNAHRAN_PLAINS },
-				["description"] = "Found only when Aylaag Camp is up in this area, pet Ellam until progress bar is at 100%, provides Maruuk Centaur reputation.",
+				coord = { 78.3, 29.2, OHNAHRAN_PLAINS },
+				description = "Found only when Aylaag Camp is up in this area, pet Ellam until progress bar is at 100%, provides Maruuk Centaur reputation.",
 			}),
 			o(378047, {	-- Emerald Chest
-				["coords"] = {
+				coords = {
 					{ 67.03, 43.72, OHNAHRAN_PLAINS },	-- Stone
 					{ 66.97, 50.36, OHNAHRAN_PLAINS },	-- Trasure
 				},
-				["description"] = "Combine 5 Crystalline Petals into the Slumber Incense.\nTalk to the Ancient Stone (Northern Waypoint) to gain the Lucid Dreaming Buff for 20 seconds.\nWhen under the effect of this buff you can walk on water and see colorful flowers on the river near the Ancient Stone, walking over a flower will refresh the buff.\nYou need to reach the cave at the southern Waypoint before the buff expires to open the Emerald Chest, which contains the Everliving Wooden Key.\n|cFFFFFFFFYou should be mounted for this.|r",
-				["cost"] = { { "i", 195542, 1 } },	-- 1x Slumber Incense
-				["groups"] = {
+				description = "Combine 5 Crystalline Petals into the Slumber Incense.\nTalk to the Ancient Stone (Northern Waypoint) to gain the Lucid Dreaming Buff for 20 seconds.\nWhen under the effect of this buff you can walk on water and see colorful flowers on the river near the Ancient Stone, walking over a flower will refresh the buff.\nYou need to reach the cave at the southern Waypoint before the buff expires to open the Emerald Chest, which contains the Everliving Wooden Key.\n|cFFFFFFFFYou should be mounted for this.|r",
+				cost = { { "i", 195542, 1 } },	-- 1x Slumber Incense
+				groups = {
 					i(195041),	-- Everliving Wooden Key
 				},
 			}),
 			o(380847, {	-- Emerald Gem Cluster
-				["coord"] = { 33.2, 55.3, OHNAHRAN_PLAINS },
-				["questID"] = 70391,
-				["cost"] = { { "i", 198843, 1 } },	-- 1x Emerald Gardens Explorer's Notes
-				["groups"] = {
+				coord = { 33.2, 55.3, OHNAHRAN_PLAINS },
+				questID = 70391,
+				cost = { { "i", 198843, 1 } },	-- 1x Emerald Gardens Explorer's Notes
+				groups = {
 					i(200865),	-- Glimmering Ysemerald Cluster
 					i(194648),	-- Design: Jeweled Emerald Whelpling (RECIPE!)
 				},
 			}),
 			o(377536, {	-- Enriched Soil Pile
-				["coords"] = {
+				coords = {
 					{ 49.7, 68.7, OHNAHRAN_PLAINS },
 					{ 50.5, 70.2, OHNAHRAN_PLAINS },
 					{ 52.1, 70.6, OHNAHRAN_PLAINS },
@@ -177,56 +177,56 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 54.1, 71.5, OHNAHRAN_PLAINS },
 					{ 54.6, 69.4, OHNAHRAN_PLAINS },
 				},
-				["groups"] = { i(194426) },	-- Enriched Soil
+				groups = { i(194426) },	-- Enriched Soil
 			}),
 			o(378010, {	-- Forgotten Dragon Treasure
-				["questID"] = 74399,
-				["coord"] = { 53.3, 68.9, OHNAHRAN_PLAINS },
-				["cost"] = { { "i", 195041, 1 } },	-- 1x Everliving Wooden Key
-				["groups"] = {
+				questID = 74399,
+				coord = { 53.3, 68.9, OHNAHRAN_PLAINS },
+				cost = { { "i", 195041, 1 } },	-- 1x Everliving Wooden Key
+				groups = {
 					i(197585),	-- Windborne Velocidrake: Maned Back (MM!)
 				}
 			}),
 			o(380842, {	-- Gold Coin
-				["coord"] = { 82.3, 73.4, OHNAHRAN_PLAINS },
-				["questID"] = 70379,
-				["groups"] = {
+				coord = { 82.3, 73.4, OHNAHRAN_PLAINS },
+				questID = 70379,
+				groups = {
 					i(199338),	-- Copper Coin of the Isles
 				},
 			}),
 			o(377900, {	-- Nokhud Warspear
-				["coord"] = { 32.5, 38.2, OHNAHRAN_PLAINS },
-				["questID"] = 67049,
-				["cost"] = { { "i", 194540, 1 } },	-- 1x Nokhud Armorer's Notes
-				["groups"] = {
+				coord = { 32.5, 38.2, OHNAHRAN_PLAINS },
+				questID = 67049,
+				cost = { { "i", 194540, 1 } },	-- 1x Nokhud Armorer's Notes
+				groups = {
 					i(200861),	-- Stolen Shikaar Warspear
 				},
 			}),
 			o(381708, {	-- The First Kurnal
-				["coord"] = { 67.0, 43.7, OHNAHRAN_PLAINS },
+				coord = { 67.0, 43.7, OHNAHRAN_PLAINS },
 			}),
 			o(381705, {	-- The Gnoll Wars
-				["coord"] = { 43.5, 56.5, OHNAHRAN_PLAINS },
+				coord = { 43.5, 56.5, OHNAHRAN_PLAINS },
 			}),
 			o(380859, {	-- Tuskarr Toy Boat
-				["coord"] = { 52.0, 58.3, OHNAHRAN_PLAINS },
-				["questID"] = 70400,
-				["groups"] = {
+				coord = { 52.0, 58.3, OHNAHRAN_PLAINS },
+				questID = 70400,
+				groups = {
 					i(200876),	-- Yennu's Toy Boat
 				},
 			}),
 			o(380602, {	-- Wind-Blessed Hide
-				["coord"] = { 86.2, 53.6, OHNAHRAN_PLAINS },
-				-- ["questID"] = 70300,
-				["groups"] = {
+				coord = { 86.2, 53.6, OHNAHRAN_PLAINS },
+				-- questID = 70300,
+				groups = {
 					i(198696),	-- Wind-Blessed Hide
 				}
 			}),
 			o(381709, {	-- Wind, Wood, Water
-				["coord"] = { 38.6, 66.7, OHNAHRAN_PLAINS },
+				coord = { 38.6, 66.7, OHNAHRAN_PLAINS },
 			}),
 			o(381706, {	-- Your Dreamer
-				["coord"] = { 24.7, 65.9, OHNAHRAN_PLAINS },
+				coord = { 24.7, 65.9, OHNAHRAN_PLAINS },
 			}),
 		}),
 	}),

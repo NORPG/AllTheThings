@@ -24,11 +24,11 @@ local function SelfieFilter(questID, spellID, t)
 end
 
 root(ROOTS.Secrets, n(SELFIE_FILTER, {
-	["timeline"] = { ADDED_7_3_5 },
-	["g"] = {
+	timeline = { ADDED_7_3_5 },
+	g = {
 		SelfieFilter(49762, 258803, {	-- Argus Filter
-			["cr"] = 124828,	-- Argus the Unmaker
-			["maps"] = {	-- Antorus
+			cr = 124828,	-- Argus the Unmaker
+			maps = {	-- Antorus
 				909,
 				910,
 				911,
@@ -44,16 +44,16 @@ root(ROOTS.Secrets, n(SELFIE_FILTER, {
 			},
 		}),
 		SelfieFilter(49761, 258749, {	-- Firelands Filter
-			["cr"] = 52409,	-- Ragnaros
-			["maps"] = {	-- Firelands
+			cr = 52409,	-- Ragnaros
+			maps = {	-- Firelands
 				367,
 				368,
 				369,
 			},
 		}),
 		SelfieFilter(49760, 258750, {	-- Frostmourne Filter
-			["cr"] = 36597,	-- The Lich King
-			["maps"] = {	-- Icecrown Citadel
+			cr = 36597,	-- The Lich King
+			maps = {	-- Icecrown Citadel
 				ICECROWN_CITADEL,
 				187,
 				188,
@@ -66,14 +66,14 @@ root(ROOTS.Secrets, n(SELFIE_FILTER, {
 			},
 		}),
 		SelfieFilter(49763, 258751, {	-- Sha Filter
-			["cr"] = 60999,	-- Sha of Fear
-			["maps"] = {	-- Terrace of Endless Spring
+			cr = 60999,	-- Sha of Fear
+			maps = {	-- Terrace of Endless Spring
 				456,
 			},
 		}),
 		SelfieFilter(49764, 258752, {	-- Twilight Filter
-			["cr"] = 43324,	-- Cho'gall
-			["maps"] = {	-- Bastion of Twilight
+			cr = 43324,	-- Cho'gall
+			maps = {	-- Bastion of Twilight
 				294,
 				295,
 				296,

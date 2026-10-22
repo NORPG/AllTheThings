@@ -8,45 +8,45 @@
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(KRASARANG_WILDS, {
-			["lore"] = "The Krasarang Wilds along Pandaria's southern coast conceal many ancient secrets of a lost dynasty that have drawn the attention of prophecy-seekers among the Alliance and Horde. The Wilds are also home to the vicious, domineering mogu, and a more insidious danger still: the Sha of Despair is believed to have escaped from its bindings in the Temple of the Red Crane, and stifling gloom has begun to blanket the land in its path.",
-			["icon"] = 623769,
-			["maps"] = {
+			lore = "The Krasarang Wilds along Pandaria's southern coast conceal many ancient secrets of a lost dynasty that have drawn the attention of prophecy-seekers among the Alliance and Horde. The Wilds are also home to the vicious, domineering mogu, and a more insidious danger still: the Sha of Despair is believed to have escaped from its bindings in the Temple of the Red Crane, and stifling gloom has begun to blanket the land in its path.",
+			icon = 623769,
+			maps = {
 				419,	-- Ruins of Ogudei, Alliance Excavation
 				420,	-- Ruins of Ogudei (the map is weird here, and this ID only shows up when you're headed towards the objective for Ogudei's Lieutenants. for the rest of this floor, when you hit M it registers you on the incorrect level, and displays the wrong floor on the map)
 				421,	-- Ruins of Ogudei, Reliquary Incursion
 			},
-			["groups"] = {
+			groups = {
 				n(ACHIEVEMENTS, {
 					ach(6975),	-- Explore Krasarang Wilds
 					ach(6535, {	-- Mighty Roamin' Krasaranger (Alliance)
-						["races"] = ALLIANCE_ONLY,
+						races = ALLIANCE_ONLY,
 					}),
 					ach(6536, {	-- Mighty Roamin' Krasaranger (Horde)
-						["races"] = HORDE_ONLY,
+						races = HORDE_ONLY,
 					}),
 				}),
 				battlepets({
 					pet(716, {	-- Amethyst Spiderling (PET!)
-						["description"] = "Can be found in the forests as well as secondary pets.",
+						description = "Can be found in the forests as well as secondary pets.",
 					}),
 					pet(714, {	-- Feverbite Hatchling (PET!)
-						["coord"] = { 18.4, 46.2, KRASARANG_WILDS },	-- The Forbidden Jungle, south
+						coord = { 18.4, 46.2, KRASARANG_WILDS },	-- The Forbidden Jungle, south
 					}),
 					pet(678, {	-- Jungle Grub (PET!)
-						["description"] = "Very common through the zone.",
+						description = "Very common through the zone.",
 					}),
 					pet(718, {	-- Luyu Moth (PET!)
-						["description"] = "Can be found in the forests as well as secondary pets.",
+						description = "Can be found in the forests as well as secondary pets.",
 					}),
 					pet(708),	-- Malayan Quillrat (PET!)
 					pet(722, {	-- Mei Li Sparkler (PET!)
-						["description"] = "Can spawn around Temple of the Red Crane, and uncommonly through the forests. Otherwise common as secondary pet.",
+						description = "Can spawn around Temple of the Red Crane, and uncommonly through the forests. Otherwise common as secondary pet.",
 					}),
 					pet(717, {	-- Savory Beetle (PET!)
-						["description"] = "Can be found in the forests as well as secondary pets.",
+						description = "Can be found in the forests as well as secondary pets.",
 					}),
 					pet(723, {	-- Spiny Terrapin (PET!)
-							["description"] = "Can be found by bodies of water.",
+							description = "Can be found by bodies of water.",
 					}),
 				}),
 				explorationHeader({
@@ -79,15 +79,15 @@ root(ROOTS.Zones, {
 					exploration(6019),	-- The Forbidden Jungle
 					exploration(6009, {	-- The Incursion
 						-- CRIEVE NOTE: I was initially able to collect this, but if you collect Zhu's Watch, it gets masked behind it.
-						["collectible"] = false,
+						collectible = false,
 					}),
 					exploration(6026, {	-- The Krasari Ruins
 						-- CRIEVE NOTE: I was initially able to collect this, but if you collect Zhu's Watch, it gets masked behind it.
-						["collectible"] = false,
+						collectible = false,
 					}),
 					exploration(6371, {	-- The Southern Isles
 						-- CRIEVE NOTE: I was not able to collect this at all. Might be a phasing issue.
-						["collectible"] = false,
+						collectible = false,
 					}),
 					exploration(6020),	-- The Southern Wall
 					exploration(6007),	-- Thunder Cleft
@@ -98,59 +98,59 @@ root(ROOTS.Zones, {
 				}),
 				n(FLIGHT_PATHS, {
 					fp(992, {	-- Cradle of Chi-Ji, Krasarang Wilds
-						["cr"] = 65189,	-- Feather Keeper Li <Flight Master>
-						["coord"] = { 31.2, 63.2, KRASARANG_WILDS },
+						cr = 65189,	-- Feather Keeper Li <Flight Master>
+						coord = { 31.2, 63.2, KRASARANG_WILDS },
 					}),
 					fp(990, {	-- Dawnchaser Retreat, Krasarang Wilds
-						["cr"] = 59047,	-- Munch Windhoof <Flight Master>
-						["coord"] = { 29.0, 50.4, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
+						cr = 59047,	-- Munch Windhoof <Flight Master>
+						coord = { 29.0, 50.4, KRASARANG_WILDS },
+						races = HORDE_ONLY,
 					}),
 					applyclassicphase(MOP_PHASE_LANDFALL, fp(1195, {	-- Domination Point, Krasarang Wilds
-						["cr"] = 67785,	-- Kromthar <Flight Master>
-						["coord"] = { 9.60, 52.6, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
+						cr = 67785,	-- Kromthar <Flight Master>
+						coord = { 9.60, 52.6, KRASARANG_WILDS },
+						races = HORDE_ONLY,
 					})),
 					applyclassicphase(MOP_PHASE_LANDFALL, fp(1190, {	-- Lion's Landing, Krasarang Wilds
-						["cr"] = 68226,	-- Daggin Windbeard <Flight Master>
-						["coord"] = { 88.4, 34.6, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
+						cr = 68226,	-- Daggin Windbeard <Flight Master>
+						coord = { 88.4, 34.6, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
 					})),
 					fp(993, {	-- Marista, Krasarang Wilds
-						["cr"] = 60441,	-- Nan-Po <Flight Master>
-						["coord"] = { 52.4, 76.6, KRASARANG_WILDS },
+						cr = 60441,	-- Nan-Po <Flight Master>
+						coord = { 52.4, 76.6, KRASARANG_WILDS },
 					}),
 					fp(991, {	-- Sentinel Basecamp, Krasarang Wilds
-						["cr"] = 59048,	-- Maylen Moonfeather <Flight Master>
-						["coord"] = { 25.2, 33.4, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
+						cr = 59048,	-- Maylen Moonfeather <Flight Master>
+						coord = { 25.2, 33.4, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
 					}),
 					fp(988, {	-- The Incursion, Krasarang Wilds
-						["cr"] = 59049,	-- Tylen Moonfeather <Flight Master>
-						["coord"] = { 67.6, 32.4, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
+						cr = 59049,	-- Tylen Moonfeather <Flight Master>
+						coord = { 67.6, 32.4, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
 					}),
 					fp(987, {	-- Thunder Cleft, Krasarang Wilds
-						["cr"] = 59046,	-- Lira Skysplitter <Flight Master>
-						["coord"] = { 59.2, 24.6, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
+						cr = 59046,	-- Lira Skysplitter <Flight Master>
+						coord = { 59.2, 24.6, KRASARANG_WILDS },
+						races = HORDE_ONLY,
 					}),
 					fp(986, {	-- Zhu's Watch, Krasarang Wilds
-						["cr"] = 60232,	-- Gee Hung <Flight Master>
-						["coord"] = { 76.6, 8.40, KRASARANG_WILDS },
+						cr = 60232,	-- Gee Hung <Flight Master>
+						coord = { 76.6, 8.40, KRASARANG_WILDS },
 					}),
 				}),
 				petbattles({
 					n(66733, {	-- Mo'ruk <Grand Master Pet Tamer>
-						["coord"] = { 65.0, 42.7, KRASARANG_WILDS },
-						["timeline"] = { ADDED_5_0_4 },
-						["petBattleLvl"] = 25,
-						["groups"] = {
+						coord = { 65.0, 42.7, KRASARANG_WILDS },
+						timeline = { ADDED_5_0_4 },
+						petBattleLvl = 25,
+						groups = {
 							q(31954, {	-- Grand Master Mo'ruk
-								["sourceAchievement"] = 6606,	-- Taming Pandaria
-								["timeline"] = { ADDED_5_0_4 },
-								["isDaily"] = true,
-								["groups"] = {
+								sourceAchievement = 6606,	-- Taming Pandaria
+								timeline = { ADDED_5_0_4 },
+								isDaily = true,
+								groups = {
 									i(89125),	-- Sack of Pet Supplies
 								},
 							}),
@@ -164,14 +164,14 @@ root(ROOTS.Zones, {
 					-- same as above but with "Going West" for Horde, as opposed to "Going on the Offensive" for Alliance. i picked up 30132, unsure what needs to happen to pick up 30464
 					-- ShadowBrooks	-- NOTE FOR CRIEVE see changes for 30132 and 30464
 					q(30695, {	-- Ahead on the Way
-						["sourceQuests"] = {
+						sourceQuests = {
 							30270,	-- Blinding the Riverblades
 							30268,	-- The Murksweats
 							30694,	-- Tread Lightly
 						},
-						["qg"] = 59138,	-- Koro Mistwalker
-						["coord"] = { 41.8, 29.6, KRASARANG_WILDS },
-						["groups"] = {
+						qg = 59138,	-- Koro Mistwalker
+						coord = { 41.8, 29.6, KRASARANG_WILDS },
+						groups = {
 							i(81552),	-- Red Crane Sword
 							i(81553),	-- Crane Temple Blade
 							i(81554),	-- Ward of Despair
@@ -183,10 +183,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30089, {	-- Apply Directly to the Forehead
-						["sourceQuests"] = { 30088 },	-- Why So Serious?
-						["qg"] = 56115,	-- Ken-Ken
-						["coord"] = { 80.1, 0.98, KRASARANG_WILDS },
-						["groups"] = {
+						sourceQuests = { 30088 },	-- Why So Serious?
+						qg = 56115,	-- Ken-Ken
+						coord = { 80.1, 0.98, KRASARANG_WILDS },
+						groups = {
 							i(79021),	-- Ken-Ken's Mask (QI!)
 							i(81467),	-- Nayeli Leggings
 							i(81468),	-- Mortbreath Legguards
@@ -200,13 +200,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30672, {	-- Balance
-						["sourceQuests"] = {
+						sourceQuests = {
 							30691,	-- Misery
 							30671,	-- Wisdom Has A Price
 						},
-						["qg"] = 60139,	-- Wise Ana Wu
-						["coord"] = { 47.6, 78.2, KRASARANG_WILDS },
-						["groups"] = {
+						qg = 60139,	-- Wise Ana Wu
+						coord = { 47.6, 78.2, KRASARANG_WILDS },
+						groups = {
 							i(81542),	-- Fishmonger's Blade
 							i(81543),	-- Waterkeeper's Wand
 							i(81544),	-- Marista Halberd
@@ -220,43 +220,43 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30674, {	-- Balance Without Violence
-						["description"] = "Automatically given you while moving through Nayeli Lagoon.",
-						["sourceQuests"] = {
+						description = "Automatically given you while moving through Nayeli Lagoon.",
+						sourceQuests = {
 							30691,	-- Misery
 							30671,	-- Wisdom Has A Price
 						},
-						["coord"] = { 46.9, 84.8, KRASARANG_WILDS },
+						coord = { 46.9, 84.8, KRASARANG_WILDS },
 					}),
 					q(30384, {	-- Blind Them! (A)
-						["sourceQuests"] = { 30274 },	-- The Arcanic Oubliette
-						["qg"] = 58735,	-- Lyalia
-						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
+						sourceQuests = { 30274 },	-- The Arcanic Oubliette
+						qg = 58735,	-- Lyalia
+						coord = { 70.6, 28.5, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
 					}),
 					q(30124, {	-- Blind Them! (H)
-						["sourceQuests"] = { 30179 },	-- Poisoned!
-						["qg"] = 58114,	-- Kor Bloodtust
-						["coord"] = { 62.6, 20.1, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
+						sourceQuests = { 30179 },	-- Poisoned!
+						qg = 58114,	-- Kor Bloodtust
+						coord = { 62.6, 20.1, KRASARANG_WILDS },
+						races = HORDE_ONLY,
 					}),
 					q(30270, {	-- Blinding the Riverblades
-						["sourceQuests"] = { 30269 },	-- Unsafe Passage
-						["qg"] = 59138,	-- Koro Mistwalker
-						["coord"] = { 41.8, 29.6, KRASARANG_WILDS },
+						sourceQuests = { 30269 },	-- Unsafe Passage
+						qg = 59138,	-- Koro Mistwalker
+						coord = { 41.8, 29.6, KRASARANG_WILDS },
 					}),
 					q(30084, {	-- Borderlands
-						["sourceQuests"] = { 30091 },	-- Tears of Pandaria
-						["qg"] = 57744,	-- Mei Barrelbottom
-						["coord"] = { 79.7, 1.56, KRASARANG_WILDS },
-						["groups"] = {
+						sourceQuests = { 30091 },	-- Tears of Pandaria
+						qg = 57744,	-- Mei Barrelbottom
+						coord = { 79.7, 1.56, KRASARANG_WILDS },
+						groups = {
 							i(78928),	-- Flame of Zhu's Watch (QI!)
 						},
 					}),
 					q(30668, {	-- Build Your Own Raft
-						["sourceQuests"] = { 30666 },	-- Sudden, Unexpected Crocolist Aggression
-						["qg"] = 60173,	-- Jay Cloudfall
-						["coord"] = { 51.6, 76.8, KRASARANG_WILDS },
-						["groups"] = {
+						sourceQuests = { 30666 },	-- Sudden, Unexpected Crocolist Aggression
+						qg = 60173,	-- Jay Cloudfall
+						coord = { 51.6, 76.8, KRASARANG_WILDS },
+						groups = {
 							o(211379, {	-- Spare Plank
 								i(80685),	-- Spare Plank (QI!)
 							}),
@@ -266,14 +266,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30675, {	-- Buried Hozen Treasure
-						["provider"] = { "i", 80827 },	-- Confusing Treasure Map
-						["coord"] = { 48.1, 90.8, KRASARANG_WILDS },	-- general midpoint-ish area, since the mobs are spread out around the island
-						["crs"] = {
+						provider = { "i", 80827 },	-- Confusing Treasure Map
+						coord = { 48.1, 90.8, KRASARANG_WILDS },	-- general midpoint-ish area, since the mobs are spread out around the island
+						crs = {
 							60299,	-- Unga Fish-Getter
 							60357,	-- Unga Treasure-Hider
 							60358,	-- Unga Villager
 						},
-						["groups"] = {
+						groups = {
 							o(211420, {	-- Lump of Sand
 								i(80817),	-- Buried Hozen Treasure (QI!)
 							}),
@@ -281,10 +281,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30082, {	-- Cheer Up, Yi-Mo
-						["sourceQuests"] = { 30080 },	-- Finding Yi-Mo
-						["qg"] = 58376,	-- Yi-Mo Longbrow
-						["coord"] = { 85.5, 0.74, KRASARANG_WILDS },
-						["groups"] = {
+						sourceQuests = { 30080 },	-- Finding Yi-Mo
+						qg = 58376,	-- Yi-Mo Longbrow
+						coord = { 85.5, 0.74, KRASARANG_WILDS },
+						groups = {
 							i(81440),	-- Nayeli Hood
 							i(81441),	-- Mortbreath Helm
 							i(81442),	-- Deepwild Helm
@@ -297,17 +297,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30352, {	-- Crane Mastery
-						["qg"] = 58779,	-- Daggle Bombstrider
-						["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
+						qg = 58779,	-- Daggle Bombstrider
+						coord = { 67.6, 25.6, KRASARANG_WILDS },
 					}),
 					q(30126, {	-- Crane Mastery
-						["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the version above
+						u = REMOVED_FROM_GAME,	-- triggers when turning in the version above
 					}),
 					q(31262, {	-- Crane Mastery: Needlebeak
-						["sourceQuests"] = { 30352 },	-- Crane Mastery
-						["qg"] = 58779,	-- Daggle Bombstrider
-						["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
-						["groups"] = {
+						sourceQuests = { 30352 },	-- Crane Mastery
+						qg = 58779,	-- Daggle Bombstrider
+						coord = { 67.6, 25.6, KRASARANG_WILDS },
+						groups = {
 							i(85854),	-- The Needlebeak (QI!)
 							i(88052),	-- Nayeli Waistband
 							i(88051),	-- Mortbreath Waistband
@@ -321,18 +321,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30080, {	-- Finding Yi-Mo
-						["qg"] = 57744,	-- Mei Barrelbottom
-						["coord"] = { 79.7, 1.57, KRASARANG_WILDS },
+						qg = 57744,	-- Mei Barrelbottom
+						coord = { 79.7, 1.57, KRASARANG_WILDS },
 					}),
 					q(30174, {	-- For Family
-						["sourceQuests"] = {
+						sourceQuests = {
 							30164,	-- The Stoneplow Convoy
 							30175,	-- The Mantid (H)
 						},
-						["qg"] = 58607,	-- Sunwalker Dezco
-						["coord"] = { 15.3, 36.2, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						qg = 58607,	-- Sunwalker Dezco
+						coord = { 15.3, 36.2, KRASARANG_WILDS },
+						races = HORDE_ONLY,
+						groups = {
 							i(81449),	-- Nayeli Mantle
 							i(81450),	-- Mortbreath Spaulder
 							i(81451),	-- Deepwild Pauldrons
@@ -345,56 +345,56 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30163, {	-- For the Tribe
-						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
-						["qg"] = 58114,	-- Kor Bloodtusk
-						["coord"] = { 29.0, 48.1, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
+						sourceQuests = { 30132, 30464 },	-- Going West (two versions)
+						qg = 58114,	-- Kor Bloodtusk
+						coord = { 29.0, 48.1, KRASARANG_WILDS },
+						races = HORDE_ONLY,
 					}),
 					q(30363, {	-- Going on the Offensive
-						["sourceQuests"] = { 30348 },	-- Immortality?
-						["qg"] = 58735,	-- Lyalia
-						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
+						sourceQuests = { 30348 },	-- Immortality?
+						qg = 58735,	-- Lyalia
+						coord = { 70.6, 28.5, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
 						-- does this also require "Lotus Tea" (30351) and "Threats from Dojan" (30349)?
-						["groups"] = {
+						groups = {
 							i(79332),	-- Sentinel Scout's Report (QI!)
 						},
 					}),
 					q(30465, {	-- Going on the Offensive
-						["qg"] = 58735,	-- Lyalia
-						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
+						qg = 58735,	-- Lyalia
+						coord = { 70.6, 28.5, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
 						-- does this have different SQs than the previous version?
 					}),
 					q(30132, {	-- Going West
-						["description"] = "This version is available if you have not completed the Temple of the Red Crane questline.",
-						["sourceQuests"] = { 30131 },	-- Life
-						["qg"] = 58113,	-- Sunwalker Dezco
-						["coord"] = { 63.1, 20.7, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
-						["lockCriteria"] = { 1, "questID", 30273 },	-- In the House of the Red Crane
-						["groups"] = {
+						description = "This version is available if you have not completed the Temple of the Red Crane questline.",
+						sourceQuests = { 30131 },	-- Life
+						qg = 58113,	-- Sunwalker Dezco
+						coord = { 63.1, 20.7, KRASARANG_WILDS },
+						races = HORDE_ONLY,
+						lockCriteria = { 1, "questID", 30273 },	-- In the House of the Red Crane
+						groups = {
 							i(79745),	-- Sunwalker Scout's Report (QI!)
 						},
 					}),
 					q(30464, {	-- Going West
-						["sourceQuests"] = {
+						sourceQuests = {
 							30131,	-- Life
 							30273,	-- In the House of the Red Crane
 						},
-						["qg"] = 58113,	-- Sunwalker Dezco
-						["coord"] = { 63.1, 20.7, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
+						qg = 58113,	-- Sunwalker Dezco
+						coord = { 63.1, 20.7, KRASARANG_WILDS },
+						races = HORDE_ONLY,
 					}),
 					q(30130, {	-- Herbal Remedies
-						["sourceQuests"] = {
+						sourceQuests = {
 							30123,	-- Skitterer Skew
 							30124,	-- Blind Them!
 						},
-						["qg"] = 58113,	-- Sunwalker Dezco
-						["coord"] = { 62.6, 20.0, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						qg = 58113,	-- Sunwalker Dezco
+						coord = { 62.6, 20.0, KRASARANG_WILDS },
+						races = HORDE_ONLY,
+						groups = {
 							o(210209, {	-- Imperial Lotus
 								i(78918),	-- Imperial Lotus Leaves (QI!)
 							}),
@@ -402,16 +402,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					heroscall(q(49558, {	-- Hero's Call: Krasarang Wilds!
-						["timeline"] = { ADDED_7_3_5 },
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
-						["lvl"] = 81,
+						timeline = { ADDED_7_3_5 },
+						races = ALLIANCE_ONLY,
+						isBreadcrumb = true,
+						lvl = 81,
 					})),
 					q(30376, {	-- Hope Springs Eternal
 						-- #if AFTER TWW
-						["description"] = "This quest is reportedly bugged and is not always offered. However, turning in either version of 'Warn Stoneplow' also completes this quest.",
+						description = "This quest is reportedly bugged and is not always offered. However, turning in either version of 'Warn Stoneplow' also completes this quest.",
 						-- #endif
-						["sourceQuests"] = {
+						sourceQuests = {
 							30174,	-- For Family
 							30273,	-- In the House of the Red Crane
 							30117,	-- Stoneplow Thirsts
@@ -420,29 +420,29 @@ root(ROOTS.Zones, {
 							-- 29581,	-- The Golden Dream
 							-- 29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
 						},
-						["qg"] = 59719,	-- Chi-Ji
-						["coord"] = { 41.6, 46.3, KRASARANG_WILDS },
-						["isBreadcrumb"] = true,
+						qg = 59719,	-- Chi-Ji
+						coord = { 41.6, 46.3, KRASARANG_WILDS },
+						isBreadcrumb = true,
 					}),
 					q(30348, {	-- Immortality?
-						["sourceQuests"] = {
+						sourceQuests = {
 							30347,	-- The Pools of Youth
 							30349,	-- Threat from Dojan (A)
 							30351,	-- Lotus Tea (A)
 						},
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
-						["coord"] = { 70.7, 28.4, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
+						qg = 58745,	-- Lorekeeper Vaeldrin
+						coord = { 70.7, 28.4, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
 					}),
 					q(30273, {	-- In the House of the Red Crane
-						["sourceQuests"] = {
+						sourceQuests = {
 							30695,	-- Ahead on the Way
 							30271,	-- Sha Can Awe
 							30272,	-- Striking the Rain
 						},
-						["qg"] = 59608,	-- Anduin Wrynn
+						qg = 59608,	-- Anduin Wrynn
 						-- Anduin seems to follow you constantly even if you abandon this, so coords appear to be unnecessary
-						["groups"] = {
+						groups = {
 							i(81493),	-- Dojani Girdle
 							i(81492),	-- Korjan Girdle
 							i(81491),	-- Sarjun Waistguard
@@ -455,67 +455,67 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30178, {	-- Into the Wilds
-						["sourceQuests"] = { 30090 },	-- Zhu's Despair
-						["qg"] = 57744,	-- Mei Barrelbottom
-						["coord"] = { 79.8, 1.57, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
+						sourceQuests = { 30090 },	-- Zhu's Despair
+						qg = 57744,	-- Mei Barrelbottom
+						coord = { 79.8, 1.57, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
+						isBreadcrumb = true,
 					}),
 					q(30462, {	-- Into the Wilds
-						["qg"] = 57744,	-- Mei Barrelbottom
-						["coord"] = { 79.8, 1.57, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
+						qg = 57744,	-- Mei Barrelbottom
+						coord = { 79.8, 1.57, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
+						isBreadcrumb = true,
 						-- does this have different SQs than the previous version?
 					}),
 					q(30133, {	-- Into the Wilds
-						["sourceQuests"] = { 30090 },	-- Zhu's Despair
-						["qg"] = 57744,	-- Mei Barrelbottom
-						["coord"] = { 79.8, 1.57, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
-						["groups"] = {
+						sourceQuests = { 30090 },	-- Zhu's Despair
+						qg = 57744,	-- Mei Barrelbottom
+						coord = { 79.8, 1.57, KRASARANG_WILDS },
+						races = HORDE_ONLY,
+						isBreadcrumb = true,
+						groups = {
 							i(79825),	-- Zhu's Watch Supplies (QI!)
 						},
 					}),
 					q(30461, {	-- Into the Wilds
-						["qg"] = 57744,	-- Mei Barrelbottom
-						["coord"] = { 79.8, 1.57, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
+						qg = 57744,	-- Mei Barrelbottom
+						coord = { 79.8, 1.57, KRASARANG_WILDS },
+						races = HORDE_ONLY,
+						isBreadcrumb = true,
 						-- does this have different SQs than the previous version?
 					}),
 					q(30131, {	-- Life
-						["sourceQuests"] = {
+						sourceQuests = {
 							30128,	-- The Pools of Youth
 							30130,	-- Herbal Remedies
 						},
-						["qg"] = 58113,	-- Sunwalker Dezco
-						["coord"] = { 62.6, 19.9, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
+						qg = 58113,	-- Sunwalker Dezco
+						coord = { 62.6, 19.9, KRASARANG_WILDS },
+						races = HORDE_ONLY,
 					}),
 					q(30351, {	-- Lotus Tea
-						["sourceQuests"] = {
+						sourceQuests = {
 							30384,	-- Blind Them!
 							30350,	-- Squirmy Delight
 							30344,	-- The Lost Dynasty
 						},
-						["qg"] = 56114,	-- Kang Bramblestaff
-						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						qg = 56114,	-- Kang Bramblestaff
+						coord = { 70.6, 28.5, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(78918),	-- Imperial Lotus Leaves (QI!)
 							i(88532),	-- Lotus Water
 						},
 					}),
 					q(30081, {	-- Materia Medica
-						["sourceQuests"] = {
+						sourceQuests = {
 							30079,	-- What's Eating Zhu's Watch?
 							30082,	-- Cheer Up, Yi-Mo
 						},
-						["qg"] = 56115,	-- Ken-ken
-						["coord"] = { 80.2, 1.00, KRASARANG_WILDS },
-						["groups"] = {
+						qg = 56115,	-- Ken-ken
+						coord = { 80.2, 1.00, KRASARANG_WILDS },
+						groups = {
 							o_repeated({
 								i(78877),	-- Slick Mudfish (QI!)
 								o(210184),	-- Slick Mudfish
@@ -528,47 +528,47 @@ root(ROOTS.Zones, {
 						},
 					}),
 					applyclassicphase(MOP_PHASE_LANDFALL, q(32246, {	-- Meet the Scout (A)
-						["sourceQuests"] = { 31483 },	-- Incoming...
-						["qg"] = 64610,	-- Lyalia
-						["coord"] = { 84.0, 58.7, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { ADDED_5_1_0 },
-						["races"] = ALLIANCE_ONLY,
+						sourceQuests = { 31483 },	-- Incoming...
+						qg = 64610,	-- Lyalia
+						coord = { 84.0, 58.7, VALE_OF_ETERNAL_BLOSSOMS },
+						timeline = { ADDED_5_1_0 },
+						races = ALLIANCE_ONLY,
 					})),
 					applyclassicphase(MOP_PHASE_LANDFALL, q(32249, {	-- Meet the Scout (H)
-						["sourceQuests"] = { 31483 },	-- Incoming...
-						["qg"] = 64566,	-- Sunwalker Dezco
-						["coord"] = { 62.8, 27.9, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { ADDED_5_1_0 },
-						["races"] = HORDE_ONLY,
+						sourceQuests = { 31483 },	-- Incoming...
+						qg = 64566,	-- Sunwalker Dezco
+						coord = { 62.8, 27.9, VALE_OF_ETERNAL_BLOSSOMS },
+						timeline = { ADDED_5_1_0 },
+						races = HORDE_ONLY,
 					})),
 					q(30691, {	-- Misery
-						["sourceQuests"] = { 30669 },	-- The Lorewalker on the Lake
-						["qg"] = 60139,	-- Wise Ana Wu
-						["coord"] = { 47.6, 78.1, KRASARANG_WILDS },
+						sourceQuests = { 30669 },	-- The Lorewalker on the Lake
+						qg = 60139,	-- Wise Ana Wu
+						coord = { 47.6, 78.1, KRASARANG_WILDS },
 					}),
 					q(30354, {	-- No Sister Left Behind
-						["sourceQuests"] = { 30363, 30465 },	-- Going on the Offensive
-						["qg"] = 58821,	-- Lyalia
-						["coord"] = { 24.7, 29.9, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
+						sourceQuests = { 30363, 30465 },	-- Going on the Offensive
+						qg = 58821,	-- Lyalia
+						coord = { 24.7, 29.9, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
 					}),
 					q(30667, {	-- Particular Plumage
-						["qg"] = 60182,	-- Tony Tuna
-						["coord"] = { 53.7, 74.4, KRASARANG_WILDS },
-						["groups"] = {
+						qg = 60182,	-- Tony Tuna
+						coord = { 53.7, 74.4, KRASARANG_WILDS },
+						groups = {
 							i(80677),	-- Emerald Tailfeather (QI!)
 							i(80678),	-- Crimson Tailfeather (QI!)
 							i(80679),	-- Dusky Tailfeather (QI!)
 						},
 					}),
 					q(30179, {	-- Poisoned!
-						["sourceQuests"] = {
+						sourceQuests = {
 							30121,	-- Search Party
 						},
-						["qg"] = 58160,	-- Chizen Dawnchaser
-						["coord"] = { 60.4, 25.4, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						qg = 58160,	-- Chizen Dawnchaser
+						coord = { 60.4, 25.4, KRASARANG_WILDS },
+						races = HORDE_ONLY,
+						groups = {
 							i(79252),	-- Mogu Poisoned Blade (QI!)
 							i(81522),	-- Ring of the Pools of Youth
 							i(81523),	-- Ring of Tears
@@ -578,9 +578,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30353, {	-- Profit Mastery
-						["qg"] = 58779,	-- Daggle Bombstrider
-						["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
-						["groups"] = {
+						qg = 58779,	-- Daggle Bombstrider
+						coord = { 67.6, 25.6, KRASARANG_WILDS },
+						groups = {
 							i(78914),	-- Vial of Tiger Blood (QI!)
 							i(81494),	-- Nayeli Gloves
 							i(81495),	-- Mortbreath Gloves
@@ -594,29 +594,29 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30125, {	-- Profit Mastery
-						["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the version above
+						u = REMOVED_FROM_GAME,	-- triggers when turning in the version above
 					}),
 					q(31260, {	-- Profit Mastery: Chasheen
-						["sourceQuests"] = { 30353 },	-- Profit Mastery
-						["qg"] = 58779,	-- Daggle Bombstrider
-						["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
-						["groups"] = {
+						sourceQuests = { 30353 },	-- Profit Mastery
+						qg = 58779,	-- Daggle Bombstrider
+						coord = { 67.6, 25.6, KRASARANG_WILDS },
+						groups = {
 							i(85774),	-- Ancient Tiger's Blood (QI!)
 						},
 					}),
 					q(30169, {	-- Raid Leader Slovan
-						["qg"] = 58278,	-- Tired Shushen <Waterspeaker>
-						["coord"] = { 29.7, 39.0, KRASARANG_WILDS },
-						["groups"] = {
+						qg = 58278,	-- Tired Shushen <Waterspeaker>
+						coord = { 29.7, 39.0, KRASARANG_WILDS },
+						groups = {
 							i(88387),	-- Shushen's Spittoon (TOY!)
 						},
 					}),
 					q(30355, {	-- Re-Reclaim (A)
-						["sourceQuests"] = { 30363, 30465 },	-- Going on the Offensive
-						["qg"] = 56114,	-- Kang Bramblestaff
-						["coord"] = { 25.2, 30.5, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						sourceQuests = { 30363, 30465 },	-- Going on the Offensive
+						qg = 56114,	-- Kang Bramblestaff
+						coord = { 25.2, 30.5, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(81503),	-- Nayeli Cuffs
 							i(81504),	-- Mortbreath Bindings
 							i(81505),	-- Deepwild Armguards
@@ -629,10 +629,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30230, {	-- Re-Reclaim (H)
-						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
-						["qg"] = 56112,	-- Kang Bramblestaff
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						sourceQuests = { 30132, 30464 },	-- Going West (two versions)
+						qg = 56112,	-- Kang Bramblestaff
+						races = HORDE_ONLY,
+						groups = {
 							o_repeated({
 								i(79120),	-- Mogu Artifact (QI!)
 								o(210416),	-- Mogu Artifact
@@ -651,19 +651,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30375, {	-- Sea Snakes
-						["u"] = REMOVED_FROM_GAME,	-- triggers when turning in 30268, "The Murksweats"
+						u = REMOVED_FROM_GAME,	-- triggers when turning in 30268, "The Murksweats"
 					}),
 					q(30121, {	-- Search Party
-						["qg"] = 58113,	-- Sunwalker Dezco
-						["coord"] = { 59.8, 24.6, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
+						qg = 58113,	-- Sunwalker Dezco
+						coord = { 59.8, 24.6, KRASARANG_WILDS },
+						races = HORDE_ONLY,
+						isBreadcrumb = true,
 					}),
 					q(30083, {	-- Securing the Province
-						["sourceQuests"] = { 30091 },	-- Tears of Pandaria
-						["qg"] = 57744,	-- Mei Barrelbottom
-						["coord"] = { 79.7, 1.56, KRASARANG_WILDS },
-						["groups"] = {
+						sourceQuests = { 30091 },	-- Tears of Pandaria
+						qg = 57744,	-- Mei Barrelbottom
+						coord = { 79.7, 1.56, KRASARANG_WILDS },
+						groups = {
 							i(81512),	-- Sha-Haunted Locket
 							i(81513),	-- Choker of Despair
 							i(81514),	-- Wildscale Amulet
@@ -672,91 +672,91 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30356, {	-- Sever Their Supply Line
-						["sourceQuests"] = { 30363, 30465 },	-- Going on the Offensive
-						["qg"] = 58821,	-- Lyalia
-						["coord"] = { 24.7, 29.9, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
+						sourceQuests = { 30363, 30465 },	-- Going on the Offensive
+						qg = 58821,	-- Lyalia
+						coord = { 24.7, 29.9, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
 					}),
 					q(30271, {	-- Sha Can Awe
-						["sourceQuests"] = {
+						sourceQuests = {
 							30270,	-- Blinding the Riverblades
 							30268,	-- The Murksweats
 							30694,	-- Tread Lightly
 						},
-						["qgs"] = {
+						qgs = {
 							59188,	-- Anduin Wrynn
 							59189,	-- Anduin Wrynn
 							59608,	-- Anduin Wrynn
 						},
-						["coord"] = { 41.8, 29.6, KRASARANG_WILDS },
+						coord = { 41.8, 29.6, KRASARANG_WILDS },
 					}),
 					q(30123, {	-- Skitterer Stew
-						["sourceQuests"] = { 30179 },	-- Poisoned!
-						["qg"] = 56112,	-- Kang Bramblestaff
-						["coord"] = { 62.7, 20.3, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						sourceQuests = { 30179 },	-- Poisoned!
+						qg = 56112,	-- Kang Bramblestaff
+						coord = { 62.7, 20.3, KRASARANG_WILDS },
+						races = HORDE_ONLY,
+						groups = {
 							i(78911),	-- Intact Skitterer Glands (QI!)
 						},
 					}),
 					q(30350, {	-- Squirmy Delight
-						["sourceQuests"] = { 30274 },	-- The Arcanic Oubliette
-						["qg"] = 56114,	-- Kang Bramblestaff
-						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						sourceQuests = { 30274 },	-- The Arcanic Oubliette
+						qg = 56114,	-- Kang Bramblestaff
+						coord = { 70.6, 28.5, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(78911),	-- Intact Skitterer Glands (QI!)
 							i(88388),	-- Squirmy Delight
 						},
 					}),
 					q(30272, {	-- Striking the Rain
-						["sourceQuests"] = {
+						sourceQuests = {
 							30270,	-- Blinding the Riverblades
 							30268,	-- The Murksweats
 							30694,	-- Tread Lightly
 						},
-						["qg"] = 59138,	-- Koro Mistwalker
-						["coord"] = { 41.8, 29.6, KRASARANG_WILDS },
+						qg = 59138,	-- Koro Mistwalker
+						coord = { 41.8, 29.6, KRASARANG_WILDS },
 					}),
 					q(30666, {	-- Sudden, Unexpected Crocolisk Aggression
-						["qg"] = 60173,	-- Jay Cloudfall
-						["coord"] = { 51.6, 76.8, KRASARANG_WILDS },
+						qg = 60173,	-- Jay Cloudfall
+						coord = { 51.6, 76.8, KRASARANG_WILDS },
 					}),
 					q(30091, {	-- Tears of Pandaria
-						["sourceQuests"] = { 30082 },	-- Cheer Up, Yi-Mo
-						["qg"] = 57744,	-- Mei Barrelbottom
-						["coord"] = { 79.7, 1.57, KRASARANG_WILDS },
+						sourceQuests = { 30082 },	-- Cheer Up, Yi-Mo
+						qg = 57744,	-- Mei Barrelbottom
+						coord = { 79.7, 1.57, KRASARANG_WILDS },
 					}),
 					q(30274, {	-- The Arcanic Oubliette
-						["coord"] = { 70.6, 28.4, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
+						coord = { 70.6, 28.4, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
 					}),
 					q(30229, {	-- The Greater Danger
-						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
-						["qg"] = 58114,	-- Kor Bloodtusk
-						["coord"] = { 29.0, 48.1, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
+						sourceQuests = { 30132, 30464 },	-- Going West (two versions)
+						qg = 58114,	-- Kor Bloodtusk
+						coord = { 29.0, 48.1, KRASARANG_WILDS },
+						races = HORDE_ONLY,
 					}),
 					q(30359, {	-- The Lord Reclaimer
-						["sourceQuests"] = {
+						sourceQuests = {
 							30361,	-- The Mantid
 							30357,	-- The Stoneplow Convoy
 						},
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
-						["coord"] = { 14.3, 35.7, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
+						qg = 58745,	-- Lorekeeper Vaeldrin
+						coord = { 14.3, 35.7, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
 					}),
 					q(30669, {	-- The Lorewalker on the Lake
-						["sourceQuests"] = { 30668 },	-- Build Your Own Raft
-						["qg"] = 60173,	-- Jay Cloudfall
-						["coord"] = { 51.6, 76.8, KRASARANG_WILDS },
+						sourceQuests = { 30668 },	-- Build Your Own Raft
+						qg = 60173,	-- Jay Cloudfall
+						coord = { 51.6, 76.8, KRASARANG_WILDS },
 					}),
 					q(30344, {	-- The Lost Dynasty
-						["sourceQuests"] = { 30274 },	-- The Arcanic Oubliette
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
-						["coord"] = { 50.9, 31.7, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						sourceQuests = { 30274 },	-- The Arcanic Oubliette
+						qg = 58745,	-- Lorekeeper Vaeldrin
+						coord = { 50.9, 31.7, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(79713),	-- Dynastic Tablet (QI!)
 							i(81522),	-- Ring of the Pools of Youth
 							i(81523),	-- Ring of Tears
@@ -766,15 +766,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30361, {	-- The Mantid (A)
-						["sourceQuests"] = {
+						sourceQuests = {
 							30354,	-- No Sister Left Behind
 							30355,	-- Re-Reclaim
 							30356,	-- Sever Their Supply Line
 						},
-						["qg"] = 58630,	-- Ambassador Han
-						["coord"] = { 24.9, 30.2, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						qg = 58630,	-- Ambassador Han
+						coord = { 24.9, 30.2, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(81458),	-- Nayeli Robe
 							i(81459),	-- Mortbreath Robes
 							i(81460),	-- Deepwild Armor
@@ -787,15 +787,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30175, {	-- The Mantid (H)
-						["sourceQuests"] = {
+						sourceQuests = {
 							30230,	-- Re-Reclaim
 							30229,	-- The Greater Danger
 							30163,	-- For the Tribe
 						},
-						["qg"] = 58630,	-- Ambassador Han
-						["coord"] = { 29.3, 48.4, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						qg = 58630,	-- Ambassador Han
+						coord = { 29.3, 48.4, KRASARANG_WILDS },
+						races = HORDE_ONLY,
+						groups = {
 							i(81458),	-- Nayeli Robe
 							i(81459),	-- Mortbreath Robes
 							i(81460),	-- Deepwild Armor
@@ -808,22 +808,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30129, {	-- The Mogu Agenda
-						["sourceQuests"] = {
+						sourceQuests = {
 							30123,	-- Skitterer Skew
 							30124,	-- Blind Them!
 						},
-						["qg"] = 56112,	-- Kang Bramblestaff
-						["coord"] = { 62.7, 20.1, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						qg = 56112,	-- Kang Bramblestaff
+						coord = { 62.7, 20.1, KRASARANG_WILDS },
+						races = HORDE_ONLY,
+						groups = {
 							i(78917),	-- Dojani Orders (QI!)
 						},
 					}),
 					q(30268, {	-- The Murksweats
-						["sourceQuests"] = { 30269 },	-- Unsafe Passage
-						["qg"] = 58609,	-- Anduin Wrynn
-						["coord"] = { 41.6, 30.5, KRASARANG_WILDS },
-						["groups"] = {
+						sourceQuests = { 30269 },	-- Unsafe Passage
+						qg = 58609,	-- Anduin Wrynn
+						coord = { 41.6, 30.5, KRASARANG_WILDS },
+						groups = {
 							i(79199),	-- Murkscale Head (QI!)
 							i(81517),	-- Murksweat Ward
 							i(81518),	-- Lory Feather Band
@@ -833,11 +833,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30347, {	-- The Pools of Youth (A)
-						["sourceQuests"] = { 30346 },	-- Where are the Pools
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
-						["coord"] = { 70.6, 28.4, KRASARANG_WILDS },	-- automatically offered, but this is where it's picked up if you abandon it
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						sourceQuests = { 30346 },	-- Where are the Pools
+						qg = 58745,	-- Lorekeeper Vaeldrin
+						coord = { 70.6, 28.4, KRASARANG_WILDS },	-- automatically offered, but this is where it's picked up if you abandon it
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(81537),	-- Drape of the Lagoon
 							i(81538),	-- Waterfall Drape
 							i(81539),	-- Canopy Drape
@@ -846,10 +846,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30128, {	-- The Pools of Youth (H)
-						["sourceQuests"] = { 30129 },	-- The Mogu Agenda
-						["qg"] = 58206,	-- Kang Bramblestaff
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						sourceQuests = { 30129 },	-- The Mogu Agenda
+						qg = 58206,	-- Kang Bramblestaff
+						races = HORDE_ONLY,
+						groups = {
 							o(210229, {	-- Water of Youth
 								i(78934),	-- The Water of Youth (QI!)
 							}),
@@ -861,15 +861,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30357, {	-- The Stoneplow Convoy (A)
-						["sourceQuests"] = {
+						sourceQuests = {
 							30354,	-- No Sister Left Behind
 							30355,	-- Re-Reclaim
 							30356,	-- Sever Their Supply Line
 						},
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
-						["coord"] = { 14.3, 35.7, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						qg = 58745,	-- Lorekeeper Vaeldrin
+						coord = { 14.3, 35.7, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(84291),	-- Imperial Lotus Shawl
 							i(84292),	-- Imperial Lotus Drape
 							i(84293),	-- Imperial Lotus Cape
@@ -878,24 +878,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30164, {	-- The Stoneplow Convoy (H)
-						["sourceQuests"] = {
+						sourceQuests = {
 							30163,	-- For the Tribe
 							30230,	-- Re-Reclaim
 							30229,	-- The Greater Danger
 						},
-						["qg"] = 58607,	-- Sunwalker Dezco
-						["coord"] = { 15.2, 36.1, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
+						qg = 58607,	-- Sunwalker Dezco
+						coord = { 15.2, 36.1, KRASARANG_WILDS },
+						races = HORDE_ONLY,
+						groups = {
 							i(79163),	-- Imperial Lotus Poultice (QI!)
 						},
 					}),
 					q(30445, {	-- The Waters of Youth
-						["sourceQuests"] = { 30359 },	-- The Lord Reclaimer
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
-						["coord"] = { 24.8, 29.8, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						sourceQuests = { 30359 },	-- The Lord Reclaimer
+						qg = 58745,	-- Lorekeeper Vaeldrin
+						coord = { 24.8, 29.8, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(81449),	-- Nayeli Mantle
 							i(81450),	-- Mortbreath Spaulder
 							i(81451),	-- Deepwild Pauldrons
@@ -908,9 +908,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30168, {	-- Thieving Raiders
-						["qg"] = 58278,	-- Tired Shushen
-						["coord"] = { 29.7, 39.0, KRASARANG_WILDS },
-						["groups"] = {
+						qg = 58278,	-- Tired Shushen
+						coord = { 29.7, 39.0, KRASARANG_WILDS },
+						groups = {
 							i(78958),	-- Pillaged Jinyu Loot (QI!)
 							i(81532),	-- Silkspawn Carving
 							i(81534),	-- Carp Hunter Feather
@@ -919,15 +919,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30349, {	-- Threat from Dojan (A)
-						["sourceQuests"] = {
+						sourceQuests = {
 							30384,	-- Blind Them!
 							30350,	-- Squirmy Delight
 							30344,	-- The Lost Dynasty
 						},
-						["qg"] = 58735,	-- Lyalia
-						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						qg = 58735,	-- Lyalia
+						coord = { 70.6, 28.5, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
+						groups = {
 							i(84281),	-- Bramble Locket
 							i(84282),	-- Bramble Choker
 							i(84283),	-- Bramble Necklace
@@ -936,19 +936,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30127, {	-- Threat from Dojan (H)
-						["sourceQuests"] = {
+						sourceQuests = {
 							30123,	-- Skitterer Skew
 							30124,	-- Blind Them!
 						},
-						["qg"] = 58114,	-- Kor Bloodtusk
-						["coord"] = { 62.6, 20.0, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
+						qg = 58114,	-- Kor Bloodtusk
+						coord = { 62.6, 20.0, KRASARANG_WILDS },
+						races = HORDE_ONLY,
 					}),
 					q(30694, {	-- Tread Lightly
-						["sourceQuests"] = { 30269 },	-- Unsafe Passage
-						["qg"] = 59138,	-- Koro Mistwalker
-						["coord"] = { 41.8, 29.6, KRASARANG_WILDS },
-						["groups"] = {
+						sourceQuests = { 30269 },	-- Unsafe Passage
+						qg = 59138,	-- Koro Mistwalker
+						coord = { 41.8, 29.6, KRASARANG_WILDS },
+						groups = {
 							i(80828),	-- "Scrutiny" (QI!)
 							i(84272),	-- Mistwalker Satin Leggings
 							i(84273),	-- Mistwalker Hide leggaurds
@@ -962,23 +962,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30269, {	-- Unsafe Passage
-						["sourceQuests"] = {
+						sourceQuests = {
 							-- unclear what the difference is in these. the quest text is slightly different (one version for each says "I suspect they'll know something about what happened here" and the other says "They should be told of what happened here," and one version for each provides Zhu's Watch Supplies, while the other doesn't. possibly there are different versions if you abandon/re-pick up?  completing one completed all four of these, so unless there's an issue with one version not doing the same then it should be good for all users.
 							30178,	-- Into the Wilds (A)
 							30462,	-- Into the Wilds (A)
 							30461,	-- Into the Wilds (H)
 							30133,	-- Into the Wilds (H)
 						},
-						["qg"] = 58547,	-- Koro Mistwalker
-						["coord"] = { 45.6, 39.5, KRASARANG_WILDS },
+						qg = 58547,	-- Koro Mistwalker
+						coord = { 45.6, 39.5, KRASARANG_WILDS },
 					}),
 					warchiefscommand(q(49540, {	-- Warchief's Command: Krasarang Wilds!
-						["timeline"] = { ADDED_7_3_5 },
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
+						timeline = { ADDED_7_3_5 },
+						races = HORDE_ONLY,
+						isBreadcrumb = true,
 					})),
 					q(30360, {	-- Warn Stoneplow (A)
-						["sourceQuests"] = {
+						sourceQuests = {
 							30174,	-- For Family
 							30273,	-- In the House of the Red Crane
 							30117,	-- Stoneplow Thirsts
@@ -988,13 +988,13 @@ root(ROOTS.Zones, {
 							-- 29581,	-- The Golden Dream
 							-- 29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
 						},
-						["qg"] = 58821,	-- Lyalia
-						["coord"] = { 24.7, 29.9, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
+						qg = 58821,	-- Lyalia
+						coord = { 24.7, 29.9, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
+						isBreadcrumb = true,
 					}),
 					q(30241, {	-- Warn Stoneplow (H)
-						["sourceQuests"] = {
+						sourceQuests = {
 							30174,	-- For Family
 							30273,	-- In the House of the Red Crane
 							30117,	-- Stoneplow Thirsts
@@ -1003,37 +1003,37 @@ root(ROOTS.Zones, {
 							-- 29581,	-- The Golden Dream
 							-- 29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
 						},
-						["qg"] = 58607,	-- Sunwalker Dezco
-						["coord"] = { 29.1, 48.1, KRASARANG_WILDS },
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
+						qg = 58607,	-- Sunwalker Dezco
+						coord = { 29.1, 48.1, KRASARANG_WILDS },
+						races = HORDE_ONLY,
+						isBreadcrumb = true,
 					}),
 					q(30079, {	-- What's Eating Zhu's Watch?
-						["sourceQuests"] = {
+						sourceQuests = {
 							29873,	-- Ken-Ken
 							-- #if AFTER 7.3.5
 							49540,	-- Warchief's Command: Krasarang Wilds!
 							49558,	-- Hero's Call: Krasarang Wilds!
 							-- #endif
 						},
-						["qg"] = 56115,	-- Ken-Ken
-						["coord"] = { 80.2, 1.02, KRASARANG_WILDS },
+						qg = 56115,	-- Ken-Ken
+						coord = { 80.2, 1.02, KRASARANG_WILDS },
 					}),
 					q(30346, {	-- Where are the Pools
-						["sourceQuests"] = {
+						sourceQuests = {
 							30384,	-- Blind Them!
 							30350,	-- Squirmy Delight
 							30344,	-- The Lost Dynasty
 						},
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
-						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
-						["races"] = ALLIANCE_ONLY,
+						qg = 58745,	-- Lorekeeper Vaeldrin
+						coord = { 70.6, 28.5, KRASARANG_WILDS },
+						races = ALLIANCE_ONLY,
 					}),
 					q(30088, {	-- Why So Serious?
-						["sourceQuests"] = { 30081 },	-- Materia Medica
-						["qg"] = 56115,	-- Ken-Ken
-						["coord"] = { 80.2, 0.94, KRASARANG_WILDS },
-						["groups"] = {
+						sourceQuests = { 30081 },	-- Materia Medica
+						qg = 56115,	-- Ken-Ken
+						coord = { 80.2, 0.94, KRASARANG_WILDS },
+						groups = {
 							i(78941),	-- Huge Panther Fang (QI!)
 							o(210228, {	-- Jar of Pigment
 								i(78942),	-- Jar of Pigment (QI!)
@@ -1050,10 +1050,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30671, {	-- Wisdom Has A Price
-						["sourceQuests"] = { 30669 },	-- The Lorewalker on the Lake
-						["qg"] = 60139,	-- Wise Ana Wu
-						["coord"] = { 47.6, 78.1, KRASARANG_WILDS },
-						["groups"] = {
+						sourceQuests = { 30669 },	-- The Lorewalker on the Lake
+						qg = 60139,	-- Wise Ana Wu
+						coord = { 47.6, 78.1, KRASARANG_WILDS },
+						groups = {
 							i(80810),	-- Shark Fillet (QI!)
 							i(88043),	-- Nayeli Shoes
 							i(88042),	-- Mortbreath Shoes
@@ -1067,34 +1067,34 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30090, {	-- Zhu's Despair
-						["sourceQuests"] = { 30089 },	-- Apply Directly to the Forehead
-						["qg"] = 56115,	-- Ken-Ken
-						["coord"] = { 80.2, 1.00, KRASARANG_WILDS },
-						["groups"] = {
+						sourceQuests = { 30089 },	-- Apply Directly to the Forehead
+						qg = 56115,	-- Ken-Ken
+						coord = { 80.2, 1.00, KRASARANG_WILDS },
+						groups = {
 							i(79057),	-- Ken'Ken's Mask (QI!)
 							i(88580),	-- Ken-Ken's Mask (TOY!)
 						},
 					}),
 					q(36882, {	-- The Great Angler Returns
-						["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
-						["qg"] = 63721,	-- Nat Pagle
-						["coord"] = { 68.4, 43.5, KRASARANG_WILDS },
-						["timeline"] = { ADDED_6_0_3_LAUNCH },
-						["requireSkill"] = FISHING,
-						["races"] = ALLIANCE_ONLY,
+						sourceQuests = { 36608 },	-- Finding Nat Pagle
+						qg = 63721,	-- Nat Pagle
+						coord = { 68.4, 43.5, KRASARANG_WILDS },
+						timeline = { ADDED_6_0_3_LAUNCH },
+						requireSkill = FISHING,
+						races = ALLIANCE_ONLY,
 					}),
 					q(36609, {	-- The Great Angler Returns
-						["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
-						["qg"] = 63721,	-- Nat Pagle
-						["coord"] = { 68.4, 43.5, KRASARANG_WILDS },
-						["timeline"] = { ADDED_6_0_3_LAUNCH },
-						["requireSkill"] = FISHING,
-						["races"] = HORDE_ONLY,
+						sourceQuests = { 36608 },	-- Finding Nat Pagle
+						qg = 63721,	-- Nat Pagle
+						coord = { 68.4, 43.5, KRASARANG_WILDS },
+						timeline = { ADDED_6_0_3_LAUNCH },
+						requireSkill = FISHING,
+						races = HORDE_ONLY,
 					}),
 				}),
 				n(RARES, {
 					n(COMMON_BOSS_DROPS, {
-						["crs"] = {
+						crs = {
 							50787,	-- Arness the Scale
 							50768,	-- Cournith Waterstrider
 							50331,	-- Go-Kan
@@ -1104,7 +1104,7 @@ root(ROOTS.Zones, {
 							50830,	-- Spriggin
 							50388,	-- Torik-Ethis
 						},
-						["groups"] = {
+						groups = {
 							i(87612),	-- Ancient Krasari Helm
 							i(87604),	-- Beachcomber's Hat
 							i(87609),	-- Brushstalker Helm
@@ -1118,16 +1118,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(50787, {	-- Arness the Scale
-						["coord"] = { 56.1, 47.0, KRASARANG_WILDS },	-- manually verified July 26, 2026
-						["groups"] = {
+						coord = { 56.1, 47.0, KRASARANG_WILDS },	-- manually verified July 26, 2026
+						groups = {
 							i(90723),	-- Arnness's Scaled Leggings
 						},
 					}),
 					n(66936, {	-- Clawlord Kril'mandar <The Pinch King>
-						["provider"] = { "i", 90172 },	-- Clamshell Band
-						["description"] = "Summoned with Clamshell Band, which is created by items dropping from makrura along the coast of Pandaria. Akkalou and Akkalar can be found in The Jade Forest, Damlak in Krasarang Wilds, Kishak in Kun-Lai Summit, Odd'nirok in Townlong Steppes and Clamstok in the Dread Wastes.",
-						["coord"] = { 12.6, 82.0, KRASARANG_WILDS },
-						["cost"] = {
+						provider = { "i", 90172 },	-- Clamshell Band
+						description = "Summoned with Clamshell Band, which is created by items dropping from makrura along the coast of Pandaria. Akkalou and Akkalar can be found in The Jade Forest, Damlak in Krasarang Wilds, Kishak in Kun-Lai Summit, Odd'nirok in Townlong Steppes and Clamstok in the Dread Wastes.",
+						coord = { 12.6, 82.0, KRASARANG_WILDS },
+						cost = {
 							{ "i", 90170, 1 },	-- Clamstok's Clamshell [Dread Wastes]
 							{ "i", 90169, 1 },	-- Damlak's Clamshell [Krasarang Wilds]
 							{ "i", 90168, 1 },	-- Kishak's Clamshell [Kun-Lai Summit]
@@ -1135,35 +1135,35 @@ root(ROOTS.Zones, {
 							{ "i", 90166, 1 },	-- Akkalou's Clamshell [The Jade Forest]
 							{ "i", 90171, 1 },	-- Odd'nirok's Clamshell [Townlong Steppes]
 						},
-						["groups"] = {
+						groups = {
 							i(90087, {	-- Lobstmourne
-								["description"] = "Everyone in the group that tags Clawlord will receive their own copy of this item. Bring friends to spread the fun.",
+								description = "Everyone in the group that tags Clawlord will receive their own copy of this item. Bring friends to spread the fun.",
 							}),
 						},
 					}),
 					n(50768, {	-- Cournith Waterstrider
-						["coord"] = { 30.6, 38.2, KRASARANG_WILDS },
-						["groups"] = {
+						coord = { 30.6, 38.2, KRASARANG_WILDS },
+						groups = {
 							i(90721),	-- Cournith Waterstrider's Silken Finery
 						},
 					}),
 					n(66934, {	-- Damlak <Servant of Kril'mandar>
-						["coords"] = {
+						coords = {
 							{ 40.0, 88.6, KRASARANG_WILDS },
 							{ 38.8, 87.4, KRASARANG_WILDS },
 						},
-						["groups"] = {
+						groups = {
 							i(90169),	-- Damlak's Clamshell
 						},
 					}),
 					n(50331, {	-- Go-Kan
-						["coord"] = { 39.4, 28.8, KRASARANG_WILDS },
-						["groups"] = {
+						coord = { 39.4, 28.8, KRASARANG_WILDS },
+						groups = {
 							i(90719),	-- Go-Kan's Golden Trousers
 						},
 					}),
 					n(50340, {	-- Gaarn the Toxic
-						["coords"] = {
+						coords = {
 							{ 56.2, 28.0, KRASARANG_WILDS },
 							{ 58.6, 31.4, KRASARANG_WILDS },
 							{ 58.6, 34.4, KRASARANG_WILDS },
@@ -1172,136 +1172,136 @@ root(ROOTS.Zones, {
 							{ 56.2, 38.2, KRASARANG_WILDS },
 							{ 53.6, 38.8, KRASARANG_WILDS },
 						},
-						["groups"] = {
+						groups = {
 							i(90725),	-- Gaarn's Leggings of Infestation
 						},
 					}),
 					n(50352, {	-- Qu'nas
-						["coord"] = { 67.2, 23.0, KRASARANG_WILDS },
-						["groups"] = {
+						coord = { 67.2, 23.0, KRASARANG_WILDS },
+						groups = {
 							i(90717),	-- Qu'nas' Apocryphal Legplates
 						},
 					}),
 					n(50816, {	-- Ruun Ghostpaw
-						["coords"] = {
+						coords = {
 							{ 39.4, 55.2, KRASARANG_WILDS },
 							{ 41.6, 55.2, KRASARANG_WILDS },
 							{ 40.4, 52.8, KRASARANG_WILDS },
 							{ 42.8, 52.8, KRASARANG_WILDS },
 						},
-						["groups"] = {
+						groups = {
 							i(90720),	-- Silent Leggings of the Ghostpaw
 						},
 					}),
 					n(50830, {	-- Spriggin
-						["coord"] = { 52.2, 88.8, KRASARANG_WILDS },
-						["groups"] = {
+						coord = { 52.2, 88.8, KRASARANG_WILDS },
+						groups = {
 							i(90724),	-- Spriggin's Sproggin' Leggin'
 						},
 					}),
 					n(50388, {	-- Torik-Ethis
-						["coords"] = {
+						coords = {
 							{ 14.6, 31.0, KRASARANG_WILDS },
 							{ 14.4, 35.6, KRASARANG_WILDS },
 							{ 15.6, 35.6, KRASARANG_WILDS },
 						},
-						["groups"] = {
+						groups = {
 							i(90718),	-- Torik-Ethis' Bloodied Legguards
 						},
 					}),
 				}),
 				n(TREASURES, {
 					o(214439, {	-- Barrel of Banana Infused Rum
-						["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
-						["coords"] = {
+						questID = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
+						coords = {
 							-- coords vary due to zone phasing
 							{ 52.3, 88.7, KRASARANG_WILDS },
 							{ 54.0, 88.0, KRASARANG_WILDS },
 						},
-						["groups"] = {
+						groups = {
 							i(87266),	-- Recipe: Banana-Infused Rum (RECIPE!)
 						},
 					}),
 					o(213651, {	-- Equipment Locker
-						["coord"] = { 42.3, 91.9, KRASARANG_WILDS },
-						["icon"] = 644388,
-						["questID"] = 31410,
-						["description"] = "On the bottom level of the ship. You will have to go down two sets of stairs.\nThis chest may follow the personal loot rule and be based on your current spec, NOT your Loot Spec.",
-						["groups"] = {
+						coord = { 42.3, 91.9, KRASARANG_WILDS },
+						icon = 644388,
+						questID = 31410,
+						description = "On the bottom level of the ship. You will have to go down two sets of stairs.\nThis chest may follow the personal loot rule and be based on your current spec, NOT your Loot Spec.",
+						groups = {
 							i(86122, {	-- Plankwalking Greaves
-								["description"] = "Recommended to be in a Strength DPS Spec to guarantee this item.",
+								description = "Recommended to be in a Strength DPS Spec to guarantee this item.",
 							}),
 							i(86115, {	-- Swashbuckling Boots
-								["description"] = "Recommended to be in a Leather Agility Spec (Rogue/Feral/Guardian/Brewmaster/Windwalker) to guarantee this item.",
+								description = "Recommended to be in a Leather Agility Spec (Rogue/Feral/Guardian/Brewmaster/Windwalker) to guarantee this item.",
 							}),
 							i(86117, {	-- Seafarer's Treads of Precision
-								["description"] = "Recommended to be in a Cloth DPS Spec (Mage/Warlock) to guarantee this item.",
+								description = "Recommended to be in a Cloth DPS Spec (Mage/Warlock) to guarantee this item.",
 							}),
 							i(86116, {	-- Agile Seafarer's Jackboots
-								["description"] = "Recommended to be in a Mail Agility Spec (Hunter/Enhancement) to guarantee this item.",
+								description = "Recommended to be in a Mail Agility Spec (Hunter/Enhancement) to guarantee this item.",
 							}),
 							i(86123, {	-- Seafarer's Sturdy Boots
-								["description"] = "Recommended to be in a Strength Tank Spec to guarantee this item.",
+								description = "Recommended to be in a Strength Tank Spec to guarantee this item.",
 							}),
 							i(86118, {	-- Seafaring Advisor's Slippers
-								["description"] = "Recommended to be a Priest (ingame class) to guarantee this item.",
+								description = "Recommended to be a Priest (ingame class) to guarantee this item.",
 							}),
 							i(86119, {	-- Seafarer's Boots of Meditation
-								["description"] = "Recommended to be in a Leather Intellect Spec (Mistweaver/Balance/Restoration) to guarantee this item.",
+								description = "Recommended to be in a Leather Intellect Spec (Mistweaver/Balance/Restoration) to guarantee this item.",
 							}),
 							i(86120, {	-- Seafaring Sabatons of Meditation
-								["description"] = "Recommended to be in a Mail Intellect Spec (Elemental/Restoration) to guarantee this item.",
+								description = "Recommended to be in a Mail Intellect Spec (Elemental/Restoration) to guarantee this item.",
 							}),
 							i(86121, {	-- Radiant Seafarer's Boots
-								["description"] = "Recommended to be a Paladin in Holy Spec to guarantee this item.",
+								description = "Recommended to be a Paladin in Holy Spec to guarantee this item.",
 							}),
 						},
 					}),
 					o(211993, {	-- Hozen Maturity
-						["coord"] = { 52.4, 87.6, KRASARANG_WILDS },
+						coord = { 52.4, 87.6, KRASARANG_WILDS },
 					}),
 					o(215782, {	-- Origins
-						["coord"] = { 30.6, 38.5, KRASARANG_WILDS },
+						coord = { 30.6, 38.5, KRASARANG_WILDS },
 					}),
 					o(213653, {	-- Pandaren Fishing Spear
-						["coord"] = { 50.8, 49.3, KRASARANG_WILDS },
-						["questID"] = 31409,
-						["groups"] = {
+						coord = { 50.8, 49.3, KRASARANG_WILDS },
+						questID = 31409,
+						groups = {
 							i(86124),	-- Pandaren Fishing Spear
 						},
 					}),
 					o(213407, {	-- Quan Tou Kuo the Two Fisted
-						["coord"] = { 81.4, 11.4, KRASARANG_WILDS },
+						coord = { 81.4, 11.4, KRASARANG_WILDS },
 					}),
 					o(213750, {	-- Saurok Stone Tablet
-						["questID"] = 31408,
-						["coords"] = {
+						questID = 31408,
+						coords = {
 							{ 71.0, 9.0, KRASARANG_WILDS },
 							{ 75.1, 55.1, VALLEY_OF_THE_FOUR_WINDS },
 						},
-						["description"] = "Located at the back of the cave, to the right of the junk pile.",
-						["groups"] = { i(86220) },	-- Saurok Stone Tablet
+						description = "Located at the back of the cave, to the right of the junk pile.",
+						groups = { i(86220) },	-- Saurok Stone Tablet
 					}),
 					o(214403, {	-- Stack of Papers
-						["provider"] = { "i", 87798 },	-- Stack of Papers
-						["coord"] = { 52.16, 73.42, KRASARANG_WILDS },
-						["questID"] = 31863,
+						provider = { "i", 87798 },	-- Stack of Papers
+						coord = { 52.16, 73.42, KRASARANG_WILDS },
+						questID = 31863,
 					}),
 					o(213422, {	-- The Emperor's Burden - Part 4
-						["coord"] = { 40.4, 56.6, KRASARANG_WILDS },
+						coord = { 40.4, 56.6, KRASARANG_WILDS },
 					}),
 					o(213330, {	-- The Last Stand
-						["coord"] = { 33.3, 25.0, KRASARANG_WILDS },
+						coord = { 33.3, 25.0, KRASARANG_WILDS },
 					}),
 					o(213332, {	-- The Lost Dynasty
-						["coords"] = {
+						coords = {
 							-- not sure correctness of these based on phasing maybe?
 							{ 50.90, 31.67, KRASARANG_WILDS },
 							{ 52.96, 27.42, KRASARANG_WILDS },
 						},
 					}),
 					o(215765, {	-- Waiting for the Turtle
-						["coord"] = { 72.2, 31.1, KRASARANG_WILDS },
+						coord = { 72.2, 31.1, KRASARANG_WILDS },
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1311,11 +1311,11 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
 	m(KRASARANG_WILDS, {
 		n(QUESTS, {
 			q(30087),	-- FLAG - Kung Fu Intro — triggers either when flying close to the magical barrier or after accepting The "Arcanic Oubliette" (questID 30274)
-			q(32477, { ["timeline"] = { ADDED_5_1_0 } }),	-- Tracking Event: Player is Back in Time - going back and forth in time via Taradormi
+			q(32477, { timeline = { ADDED_5_1_0 } }),	-- Tracking Event: Player is Back in Time - going back and forth in time via Taradormi
 		}),
 	}),
 })));

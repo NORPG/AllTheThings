@@ -4,18 +4,18 @@
 
 root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 	n(SEASON_CRUEL, bubbleDownSelf({
-		["timeline"] = { ADDED_7_2_0, REMOVED_7_2_5, ADDED_7_3_0 },
+		timeline = { ADDED_7_2_0, REMOVED_7_2_5, ADDED_7_3_0 },
 	}, {
-		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_2_0, REMOVED_7_2_5 } }, {
+		n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 } }, {
 			ach(11008, {	-- Cruel Combatant [A]
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = {
+				races = ALLIANCE_ONLY,
+				groups = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
 			ach(11005, {	-- Cruel Combatant [H]
-				["races"] = HORDE_ONLY,
-				["groups"] = {
+				races = HORDE_ONLY,
+				groups = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
@@ -27,89 +27,89 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 				i(141845),	-- Cruel Gladiator's Storm Dragon (MOUNT!)
 			}),
 			ach(11001, {	-- Cruel Gladiator's Storm Dragon
-				["provider"] = { "i", 141845 },	-- Cruel Gladiator's Storm Dragon (MOUNT!)
-				["filterID"] = MOUNTS,
+				provider = { "i", 141845 },	-- Cruel Gladiator's Storm Dragon (MOUNT!)
+				filterID = MOUNTS,
 			}),
 			ach(11037, {	-- Cruel Gladiator: Legion Season 3
 				title(359),	-- Cruel Gladiator <Name>
 			}),
 			-- RBG
 			ach(11049, {	-- Soldier of the Alliance: Legion Season 3
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11048, {	-- Soldier of the Horde: Legion Season 3
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(11045, {	-- Defender of the Alliance: Legion Season 3
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11044, {	-- Defender of the Horde: Legion Season 3
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(11047, {	-- Guardian of the Alliance: Legion Season 3
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11046, {	-- Guardian of the Horde: Legion Season 3
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			ach(11043, {	-- Hero of the Alliance: Cruel
-				["races"] = ALLIANCE_ONLY,
+				races = ALLIANCE_ONLY,
 			}),
 			ach(11042, {	-- Hero of the Horde: Cruel
-				["races"] = HORDE_ONLY,
+				races = HORDE_ONLY,
 			}),
 			-- Fashion
 			ach(11723, {	-- Cruel Intentions
-				["timeline"] = { ADDED_7_2_0, REMOVED_7_2_5, ADDED_7_3_0 },
+				timeline = { ADDED_7_2_0, REMOVED_7_2_5, ADDED_7_3_0 },
 			}),
 		})),
 		n(PVP_COMBATANT, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
-					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 29.6, 75.0, LEGION_DALARAN },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(147677, {	-- Ensemble: Cruel Combatant's Dreadplate Armor [A]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(147680, {	-- Ensemble: Cruel Combatant's Felskin Armor [A]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(147675, {	-- Ensemble: Cruel Combatant's Dragonhide Armor [A]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(147689, {	-- Ensemble: Cruel Combatant's Chain Armor [A]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(147696, {	-- Ensemble: Cruel Combatant's Silk Armor [A]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(147684, {	-- Ensemble: Cruel Combatant's Ironskin Armor [A]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(147693, {	-- Ensemble: Cruel Combatant's Scaled Armor [A]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(147688, {	-- Ensemble: Cruel Combatant's Satin Armor [A]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(147685, {	-- Ensemble: Cruel Combatant's Leather Armor [A]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(147674, {	-- Ensemble: Cruel Combatant's Ringmail Armor [A]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(147682, {	-- Ensemble: Cruel Combatant's Felweave Armor [A]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(147692, {	-- Ensemble: Cruel Combatant's Plate Armor [A]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0, REMOVED_7_2_5 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(145026),	-- Cruel Combatant's Dreadcloak [A]
@@ -266,52 +266,52 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(145238),	-- Cruel Combatant's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
-					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 56.8, 27.8, LEGION_DALARAN },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(147678, {	-- Ensemble: Cruel Combatant's Dreadplate Armor [H]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(147679, {	-- Ensemble: Cruel Combatant's Felskin Armor [H]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(147676, {	-- Ensemble: Cruel Combatant's Dragonhide Armor [H]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(147690, {	-- Ensemble: Cruel Combatant's Chain Armor [H]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(147695, {	-- Ensemble: Cruel Combatant's Silk Armor [H]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(147683, {	-- Ensemble: Cruel Combatant's Ironskin Armor [H]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(147694, {	-- Ensemble: Cruel Combatant's Scaled Armor [H]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(147687, {	-- Ensemble: Cruel Combatant's Satin Armor [H]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(147686, {	-- Ensemble: Cruel Combatant's Leather Armor [H]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(147673, {	-- Ensemble: Cruel Combatant's Ringmail Armor [H]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(147681, {	-- Ensemble: Cruel Combatant's Felweave Armor [H]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(147691, {	-- Ensemble: Cruel Combatant's Plate Armor [H]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0, REMOVED_7_2_5 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(145027),	-- Cruel Combatant's Dreadcloak [H]
@@ -468,7 +468,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(145239),	-- Cruel Combatant's Insignia of Victory [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0, REMOVED_7_2_5 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 } }, {
 				filter(RELICS_F, {
 					i(144512),	-- Alliance of Convenience
 					i(144531),	-- Battering Tempest
@@ -504,52 +504,52 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_GLADIATOR, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
-					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 29.6, 75.0, LEGION_DALARAN },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(147650, {	-- Ensemble: Cruel Gladiator's Dreadplate Armor [A]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(147651, {	-- Ensemble: Cruel Gladiator's Felskin Armor [A]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(147647, {	-- Ensemble: Cruel Gladiator's Dragonhide Armor [A]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(147646, {	-- Ensemble: Cruel Gladiator's Chain Armor [A]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(147668, {	-- Ensemble: Cruel Gladiator's Silk Armor [A]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(147656, {	-- Ensemble: Cruel Gladiator's Ironskin Armor [A]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(147665, {	-- Ensemble: Cruel Gladiator's Scaled Armor [A]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(147663, {	-- Ensemble: Cruel Gladiator's Satin Armor [A]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(147657, {	-- Ensemble: Cruel Gladiator's Leather Armor [A]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(147661, {	-- Ensemble: Cruel Gladiator's Ringmail Armor [A]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(147653, {	-- Ensemble: Cruel Gladiator's Felweave Armor [A]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(147660, {	-- Ensemble: Cruel Gladiator's Plate Armor [A]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0, REMOVED_7_2_5 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(144534),	-- Cruel Gladiator's Dreadcloak [A]
@@ -706,52 +706,52 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(144746),	-- Cruel Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
-					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["cost"] = { { "i", MOH, 12 } },
+					coord = { 56.8, 27.8, LEGION_DALARAN },
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
 					}, {
 						iensemble(147649, {	-- Ensemble: Cruel Gladiator's Dreadplate Armor [H]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(147652, {	-- Ensemble: Cruel Gladiator's Felskin Armor [H]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(147648, {	-- Ensemble: Cruel Gladiator's Dragonhide Armor [H]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(147645, {	-- Ensemble: Cruel Gladiator's Chain Armor [H]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(147667, {	-- Ensemble: Cruel Gladiator's Silk Armor [H]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(147655, {	-- Ensemble: Cruel Gladiator's Ironskin Armor [H]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(147666, {	-- Ensemble: Cruel Gladiator's Scaled Armor [H]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(147664, {	-- Ensemble: Cruel Gladiator's Satin Armor [H]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(147658, {	-- Ensemble: Cruel Gladiator's Leather Armor [H]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(147662, {	-- Ensemble: Cruel Gladiator's Ringmail Armor [H]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(147654, {	-- Ensemble: Cruel Gladiator's Felweave Armor [H]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(147659, {	-- Ensemble: Cruel Gladiator's Plate Armor [H]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0, REMOVED_7_2_5 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(144535),	-- Cruel Gladiator's Dreadcloak [H]
@@ -910,78 +910,78 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_ELITE, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
-					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["u"] = ELITE_PVP_REQUIREMENT,
+					coord = { 29.6, 74.8, LEGION_DALARAN },
+					groups = sharedData({
+						u = ELITE_PVP_REQUIREMENT,
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
-							["sourceAchievements"] = { 11038 },	-- Gladiator: Legion Season 3
-							["cost"] = { { "i", MOH, 12 } },
+							sourceAchievements = { 11038 },	-- Gladiator: Legion Season 3
+							cost = { { "i", MOH, 12 } },
 						}),
 						i(147360, {	-- Cruel Gladiator's Cloak [A]
-							["sourceAchievements"] = { 11697 },	-- Cruel Elite
-							["cost"] = { { "i", MOH, 50 } },
+							sourceAchievements = { 11697 },	-- Cruel Elite
+							cost = { { "i", MOH, 50 } },
 						}),
 						i(147337, {	-- Cruel Gladiator's Tabard [A]
-							["sourceAchievements"] = { 11697 },	-- Cruel Elite
-							["cost"] = { { "i", MOH, 50 } },
+							sourceAchievements = { 11697 },	-- Cruel Elite
+							cost = { { "i", MOH, 50 } },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
-					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["sourceAchievements"] = {
+					coord = { 29.6, 74.8, LEGION_DALARAN },
+					groups = sharedData({
+						sourceAchievements = {
 							11697,	-- Cruel Elite
 							11698,	-- Ferocious Elite
 						},
-						["cost"] = { { "i", MOH, 12 } },
-						["u"] = ELITE_PVP_REQUIREMENT,
+						cost = { { "i", MOH, 12 } },
+						u = ELITE_PVP_REQUIREMENT,
 					}, {
 						iensemble(147625, {	-- Ensemble: Elite Cruel Gladiator's Dreadplate Armor [A]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(147627, {	-- Ensemble: Elite Cruel Gladiator's Felskin Armor [A]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(147623, {	-- Ensemble: Elite Cruel Gladiator's Dragonhide Armor [A]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(147621, {	-- Ensemble: Elite Cruel Gladiator's Chain Armor [A]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(147644, {	-- Ensemble: Elite Cruel Gladiator's Silk Armor [A]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(147632, {	-- Ensemble: Elite Cruel Gladiator's Ironskin Armor [A]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(147642, {	-- Ensemble: Elite Cruel Gladiator's Scaled Armor [A]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(147640, {	-- Ensemble: Elite Cruel Gladiator's Satin Armor [A]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(147634, {	-- Ensemble: Elite Cruel Gladiator's Leather Armor [A]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(147637, {	-- Ensemble: Elite Cruel Gladiator's Ringmail Armor [A]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(147629, {	-- Ensemble: Elite Cruel Gladiator's Felweave Armor [A]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(147636, {	-- Ensemble: Elite Cruel Gladiator's Plate Armor [A]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0, REMOVED_7_2_5 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(144780),	-- Cruel Gladiator's Dreadcloak [A]
@@ -1138,78 +1138,78 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(144992),	-- Cruel Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
-					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["u"] = ELITE_PVP_REQUIREMENT,
+					coord = { 57.0, 27.8, LEGION_DALARAN },
+					groups = sharedData({
+						u = ELITE_PVP_REQUIREMENT,
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
-							["sourceAchievements"] = { 11038 },	-- Gladiator: Legion Season 3
-							["cost"] = { { "i", MOH, 12 } },
+							sourceAchievements = { 11038 },	-- Gladiator: Legion Season 3
+							cost = { { "i", MOH, 12 } },
 						}),
 						i(147357, {	-- Cruel Gladiator's Cloak [H]
-							["sourceAchievements"] = { 11697 },	-- Cruel Elite
-							["cost"] = { { "i", MOH, 50 } },
+							sourceAchievements = { 11697 },	-- Cruel Elite
+							cost = { { "i", MOH, 50 } },
 						}),
 						i(147336, {	-- Cruel Gladiator's Tabard [H]
-							["sourceAchievements"] = { 11697 },	-- Cruel Elite
-							["cost"] = { { "i", MOH, 50 } },
+							sourceAchievements = { 11697 },	-- Cruel Elite
+							cost = { { "i", MOH, 50 } },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
-					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["groups"] = sharedData({
-						["sourceAchievements"] = {
+					coord = { 57.0, 27.8, LEGION_DALARAN },
+					groups = sharedData({
+						sourceAchievements = {
 							11697,	-- Cruel Elite
 							11698,	-- Ferocious Elite
 						},
-						["cost"] = { { "i", MOH, 12 } },
-						["u"] = ELITE_PVP_REQUIREMENT,
+						cost = { { "i", MOH, 12 } },
+						u = ELITE_PVP_REQUIREMENT,
 					}, {
 						iensemble(147626, {	-- Ensemble: Elite Cruel Gladiator's Dreadplate Armor [H]
-							["classes"] = { DEATHKNIGHT },
+							classes = { DEATHKNIGHT },
 						}),
 						iensemble(147628, {	-- Ensemble: Elite Cruel Gladiator's Felskin Armor [H]
-							["classes"] = { DEMONHUNTER },
+							classes = { DEMONHUNTER },
 						}),
 						iensemble(147624, {	-- Ensemble: Elite Cruel Gladiator's Dragonhide Armor [H]
-							["classes"] = { DRUID },
+							classes = { DRUID },
 						}),
 						iensemble(147622, {	-- Ensemble: Elite Cruel Gladiator's Chain Armor [H]
-							["classes"] = { HUNTER },
+							classes = { HUNTER },
 						}),
 						iensemble(147643, {	-- Ensemble: Elite Cruel Gladiator's Silk Armor [H]
-							["classes"] = { MAGE },
+							classes = { MAGE },
 						}),
 						iensemble(147631, {	-- Ensemble: Elite Cruel Gladiator's Ironskin Armor [H]
-							["classes"] = { MONK },
+							classes = { MONK },
 						}),
 						iensemble(147641, {	-- Ensemble: Elite Cruel Gladiator's Scaled Armor [H]
-							["classes"] = { PALADIN },
+							classes = { PALADIN },
 						}),
 						iensemble(147639, {	-- Ensemble: Elite Cruel Gladiator's Satin Armor [H]
-							["classes"] = { PRIEST },
+							classes = { PRIEST },
 						}),
 						iensemble(147633, {	-- Ensemble: Elite Cruel Gladiator's Leather Armor [H]
-							["classes"] = { ROGUE },
+							classes = { ROGUE },
 						}),
 						iensemble(147638, {	-- Ensemble: Elite Cruel Gladiator's Ringmail Armor [H]
-							["classes"] = { SHAMAN },
+							classes = { SHAMAN },
 						}),
 						iensemble(147630, {	-- Ensemble: Elite Cruel Gladiator's Felweave Armor [H]
-							["classes"] = { WARLOCK },
+							classes = { WARLOCK },
 						}),
 						iensemble(147635, {	-- Ensemble: Elite Cruel Gladiator's Plate Armor [H]
-							["classes"] = { WARRIOR },
+							classes = { WARRIOR },
 						}),
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0, REMOVED_7_2_5 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(144781),	-- Cruel Gladiator's Dreadcloak [H]
