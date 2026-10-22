@@ -50,6 +50,12 @@ i(239694, 1229305); -- Covenant of Light
 i(239695, 1229308); -- Scarlet Steed
 -- #endif
 
+-- FOREVER --
+-- #if FOREVER
+i(280544, 1309208);	-- Cerulean Prideclaw
+i(280611, 1309405);	-- Veteran Adventurer's Loyal Companion
+-- #endif
+
 -- TBC Classic --
 i(184865, 348459);	-- Reawakened Phase-Hunter
 

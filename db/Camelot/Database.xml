@@ -8,6 +8,7 @@
 	<Script file="Categories/Instances.lua"/>
 	<Script file="Categories/NeverImplemented.lua"/>
 	<Script file="Categories/Professions.lua"/>
+	<Script file="Categories/Promotions.lua"/>
 	<Script file="Categories/PVP.lua"/>
 	<Script file="Categories/WorldDrops.lua"/>
 	<Script file="Categories/Zones.lua"/>

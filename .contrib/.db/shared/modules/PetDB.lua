@@ -1157,12 +1157,16 @@ i(282637, 5167);	-- Condor Hatchling
 i(280803, 5158);	-- Eagle Owl
 i(275682, 5075);	-- Excitable Slime
 i(280703, 5153);	-- Jungle Boa
+i(281168, 5161);	-- Mini Diablo
+i(280614, 5138);	-- Pachimari
+i(281166, 5159);	-- Panda Cub
 i(280697, 5151);	-- Plagued Cockroach
 i(277508, 5121);	-- Prairie Wolf Pup
 i(280795, 5155);	-- Red Ground Squirrel
 i(277714, 5122);	-- Spectral Bear Cub
 i(284176, 5172);	-- Tallstrider Hatchling
 i(280699, 5152);	-- Undercity Cockroach
+i(281167, 5160);	-- Zergling
 i(249897, 0);	-- Flowery Lashling Bud [TODO: Find the speciesID]
 i(249895, 0);	-- Frosty Lashling Bud [TODO: Find the speciesID]
 i(249896, 0);	-- Viridian Lashling Bud [TODO: Find the speciesID]
