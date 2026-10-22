@@ -181,7 +181,7 @@ hqt(30561)}}),
 h(-582,{e=11,g={
 h(-45,{e=11,g={
 hqt(28761,{e=11})}})}})}}),
-x(5,{awp=50004,u=52,g={
+x(5,{awp=50004,phase=52,g={
 inst(311,{savedInstanceID=1001,g={
 hqt(31636),
 hqt(31630),
@@ -414,7 +414,7 @@ hqt(31499),
 hqt(31498),
 hqt(31501),
 hqt(31500)}}),
-m(418,{maps={419,420,421},u=51,petBattleLvl=23,g={
+m(418,{maps={419,420,421},phase=51,petBattleLvl=23,g={
 h(-45,{
 hqt(30087),
 hqt(32477,{awp=50100})}),
@@ -491,7 +491,7 @@ hqt(30722)})}}),
 ah(1269,{type="fa",g={
 h(-45,{
 hqt(31652),
-hqt(30294,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,rwp=50400,u=2})})}}),
+hqt(30294,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,rwp=50400,u=2})})}}),
 ah(1272,{type="fa",g={
 ah(1277,{type="fa",g={
 hqt(31344),
@@ -542,7 +542,7 @@ cl(9,{awp=50200,g={
 h(-45,{c={9},g={
 hqt(32725,{c={9}}),
 hqt(32666,{c={9}})}})}}),
-h(-656,{awp=50100,rwp=90002,u=51,g={
+h(-656,{awp=50100,phase=51,rwp=90002,g={
 h(-45,{
 hqt(32112),
 hqt(32113),

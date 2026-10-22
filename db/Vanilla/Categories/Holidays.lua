@@ -57,7 +57,7 @@ qo(1,{coords={
 h(-37,{awp=10600,e=1,maps={1412,1429},g={
 h(-31,{e=1,g={
 faction(909,{e=1,icon=_.asset("Event_dmf"),OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo local repPerTierTurnIn=100 local tierOneMaxRep=500 if reputation<tierOneMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 1 Quests",repPerTierTurnIn,tierOneMaxRep)else	local tierTwoMaxRep=1050 if reputation<tierTwoMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 2 Quests",repPerTierTurnIn,tierTwoMaxRep)else	local tierThreeMaxRep=1700 if reputation<tierThreeMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 3 Quests",repPerTierTurnIn,tierThreeMaxRep)else	local tierFourMaxRep=2500 if reputation<tierFourMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 4 Quests",repPerTierTurnIn,tierFourMaxRep)else	local tierFiveMaxRep=5001 if reputation<tierFiveMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 5 Quests",repPerTierTurnIn,tierFiveMaxRep)end	end	end	end	end	local repPerDeckTurnIn=150 addRepInfo(tooltipInfo,reputation,"Turn in Decks.",repPerDeckTurnIn,42000)end	end,g={
-crit(8823,{achID=2336,id=8,u=13})}})}}),
+crit(8823,{achID=2336,id=8,phase=13})}})}}),
 h(-45,{e=1,g={
 q(7930,{coords={
 [1412]={{37.3,37.7}},
@@ -129,19 +129,19 @@ q(7884,{coords={
 i(19182,{b=1,e=1,f=55,q=1})}}),
 q(7907,{coords={
 [1412]={{36.4,38}},
-[1429]={{41.2,69.8}}},e=1,maxReputation={909,42000},providers={{"n",14847}},qss={19228},repeatable=1,u=13,g={
+[1429]={{41.2,69.8}}},e=1,maxReputation={909,42000},phase=13,providers={{"n",14847}},qss={19228},repeatable=1,g={
 i(19288,{b=1,e=1,f=53,lvl=60,q=4})}}),
 q(7929,{coords={
 [1412]={{36.4,38}},
-[1429]={{41.2,69.8}}},e=1,maxReputation={909,42000},providers={{"n",14847}},qss={19267},repeatable=1,u=13,g={
+[1429]={{41.2,69.8}}},e=1,maxReputation={909,42000},phase=13,providers={{"n",14847}},qss={19267},repeatable=1,g={
 i(19289,{b=1,e=1,f=53,lvl=60,q=4})}}),
 q(7927,{coords={
 [1412]={{36.4,38}},
-[1429]={{41.2,69.8}}},e=1,maxReputation={909,42000},providers={{"n",14847}},qss={19277},repeatable=1,u=13,g={
+[1429]={{41.2,69.8}}},e=1,maxReputation={909,42000},phase=13,providers={{"n",14847}},qss={19277},repeatable=1,g={
 i(19290,{b=1,e=1,f=53,lvl=60,q=4})}}),
 q(7928,{coords={
 [1412]={{36.4,38}},
-[1429]={{41.2,69.8}}},e=1,maxReputation={909,42000},providers={{"n",14847}},qss={19257},repeatable=1,u=13,g={
+[1429]={{41.2,69.8}}},e=1,maxReputation={909,42000},phase=13,providers={{"n",14847}},qss={19257},repeatable=1,g={
 i(19287,{b=1,e=1,f=53,lvl=60,q=4})}}),
 q(7903,{coords={
 [1412]={{37.5,39.6}},
@@ -308,10 +308,10 @@ i(19222,{e=1,f=55,q=1}),
 i(19221,{e=1,f=55,q=1}),
 i(19299,{e=1,f=55,lvl=15,q=1})}})}}),
 cat(3,{e=1,g={
-i(19228,{cost={{"i",19236,1},{"i",19235,1},{"i",19234,1},{"i",19233,1},{"i",19232,1},{"i",19231,1},{"i",19230,1},{"i",19227,1}},e=1,q=4,u=13}),
-i(19267,{cost={{"i",19275,1},{"i",19274,1},{"i",19273,1},{"i",19272,1},{"i",19271,1},{"i",19270,1},{"i",19269,1},{"i",19268,1}},e=1,q=4,u=13}),
-i(19277,{cost={{"i",19284,1},{"i",19283,1},{"i",19282,1},{"i",19281,1},{"i",19280,1},{"i",19279,1},{"i",19278,1},{"i",19276,1}},e=1,q=4,u=13}),
-i(19257,{cost={{"i",19265,1},{"i",19264,1},{"i",19263,1},{"i",19262,1},{"i",19261,1},{"i",19260,1},{"i",19259,1},{"i",19258,1}},e=1,q=4,u=13})}})}}),
+i(19228,{cost={{"i",19236,1},{"i",19235,1},{"i",19234,1},{"i",19233,1},{"i",19232,1},{"i",19231,1},{"i",19230,1},{"i",19227,1}},e=1,phase=13,q=4}),
+i(19267,{cost={{"i",19275,1},{"i",19274,1},{"i",19273,1},{"i",19272,1},{"i",19271,1},{"i",19270,1},{"i",19269,1},{"i",19268,1}},e=1,phase=13,q=4}),
+i(19277,{cost={{"i",19284,1},{"i",19283,1},{"i",19282,1},{"i",19281,1},{"i",19280,1},{"i",19279,1},{"i",19278,1},{"i",19276,1}},e=1,phase=13,q=4}),
+i(19257,{cost={{"i",19265,1},{"i",19264,1},{"i",19263,1},{"i",19262,1},{"i",19261,1},{"i",19260,1},{"i",19259,1},{"i",19258,1}},e=1,phase=13,q=4})}})}}),
 h(-574,{e=14,g={
 h(-19,{e=14,g={
 s(164648,21525,{b=1,crs={1853,10899,11486},e=14,f=2,loc=40,maps={234,250,251,252,253,254,255,476},q=2}),

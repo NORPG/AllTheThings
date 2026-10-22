@@ -8,7 +8,7 @@ x(1,{awp=10100,g={
 h(-12,{
 ach(1283,{awp=30002}),
 ach(1285,{awp=30002})}),
-h(-318,{c={1,2,3,4,5,7,8,9,11},rwp=40003,u=2,g={
+h(-318,{c={1,2,3,4,5,7,8,9,11},phase=15,rwp=40003,u=2,g={
 cl(11,{u=2,g={
 q(8905,{c={11},coords={
 [1455]={{43.5,52.6}}},cost={{"i",16714,1},{"g",200000}},lvl=58,maps={317,476,1452},qgs={16013},r=2,u=2,g={
@@ -426,7 +426,7 @@ qo(3,{providers={{"i",21989}},u=2}),
 qo(4,{providers={{"i",22014}},u=2})}})}})}}),
 h(-61,{isRaid=1,lvl=60,g={
 n(6109,{awp=10300,coords={
-[1447]={{53.3,80.4}}},isRaid=1,lvl=60,modelScale=6,rwp=40003,u=2,g={
+[1447]={{53.3,80.4}}},isRaid=1,lvl=60,modelScale=6,phase=12,rwp=40003,u=2,g={
 i(18704,{c={3},lvl=60,q=4,u=2}),
 s(129944,19130,{b=1,f=27,lvl=60,q=4,u=2}),
 s(129174,18202,{b=1,f=34,lvl=60,q=4,u=2}),
@@ -442,7 +442,7 @@ h(-74,{awp=10800,coords={
 [1425]={{63.3,27.8}},
 [1431]={{45.4,39.6}},
 [1440]={{94.2,35.7}},
-[1444]={{51.2,10.9}}},isRaid=1,lvl=60,rwp=40003,u=2,g={
+[1444]={{51.2,10.9}}},isRaid=1,lvl=60,phase=14,rwp=40003,u=2,g={
 h(-45,{u=2,g={
 q(8446,{lvl=60,qss={20644},u=2}),
 q(8447,{coords={
@@ -488,7 +488,7 @@ s(131133,20638,{b=1,f=6,loc=46,lvl=60,q=4,u=2}),
 s(131134,20639,{b=1,f=7,loc=46,lvl=60,q=4,u=2}),
 i(20636,{b=1,f=53,lvl=60,q=4,u=2})}})}}),
 n(12397,{awp=10300,coords={
-[1419]={{36.6,75.8}}},crs={18338},isRaid=1,lvl=60,modelScale=6,rwp=20001,u=2,g={
+[1419]={{36.6,75.8}}},crs={18338},isRaid=1,lvl=60,modelScale=6,phase=12,rwp=20001,u=2,g={
 i(18665,{c={5},f=53,lvl=60,q=4,u=2}),
 s(128765,17113,{b=1,f=28,lvl=60,q=4,u=2}),
 s(128764,17112,{b=1,f=23,lvl=60,q=4,u=2}),
@@ -507,12 +507,12 @@ ach(429,{c={1,2,6,7,11},providers={{"i",17182}}}),
 s(128780,17182,{b=1,c={1,2,6,7,11},cost={{"i",17193,1},{"i",17204,1}},f=24,lvl=60,q=5})}}),
 ah(19019,{isRaid=1,type="i",g={
 n(14347,{coords={
-[1451]={{21.7,8.6}}},lvl=60,u=13,g={
+[1451]={{21.7,8.6}}},lvl=60,phase=13,g={
 i(19016,{b=1,lvl=60,providers={{"i",18563},{"i",18564}},q=5})}}),
 q(7785,{coords={
-[1451]={{21.7,8.6}}},description="This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",lvl=60,qss={19016},u=13}),
+[1451]={{21.7,8.6}}},description="This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",lvl=60,phase=13,qss={19016}}),
 q(7786,{altQuests={7521},coords={
-[1451]={{21.7,8.6}}},lvl=60,qgs={14347},sourceQuests={7785},u=13,g={
+[1451]={{21.7,8.6}}},lvl=60,phase=13,qgs={14347},sourceQuests={7785},g={
 qo(1,{providers={{"i",17771}}}),
 qo(2,{providers={{"i",19017}}}),
 qo(3,{providers={{"i",18563}}}),
@@ -520,7 +520,7 @@ qo(4,{providers={{"i",18564}}}),
 n(14435,{description="This is a 40-man raid boss.",modelScale=20,g={
 i(19018,{b=1,lvl=60,q=5})}})}}),
 q(7787,{coords={
-[1451]={{21.7,8.6}}},lvl=60,providers={{"i",19018}},qgs={14347},sourceQuests={7786},u=13,g={
+[1451]={{21.7,8.6}}},lvl=60,phase=13,providers={{"i",19018}},qgs={14347},sourceQuests={7786},g={
 ach(428,{c={1,2,3,4,6,8,9},providers={{"i",19019}}}),
 s(129845,19019,{b=1,f=25,lvl=60,q=5})}})}}),
 h(-12,{
@@ -570,9 +570,9 @@ qo(3,{providers={{"n",11673}},u=2}),
 qo(4,{providers={{"n",12101}},u=2})}})}),
 h(-47,{
 i(17333,{awp=10001,b=1,description="Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",minReputation={749,9000},q=1,rwp=30008,sourceQuests={6824},u=2}),
-i(22754,{awp=10001,b=1,description="Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",minReputation={749,21000},q=1,rwp=30008,sourceQuests={6824},u=2})}),
+i(22754,{awp=10001,b=1,description="Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",minReputation={749,21000},phase=13,q=1,rwp=30008,sourceQuests={6824},u=2})}),
 h(-63,{
-i(20951,{awp=10001,q=1,rwp=40003,u=2}),
+i(20951,{awp=10001,phase=15,q=1,rwp=40003,u=2}),
 i(17010,{q=3}),
 i(17011,{q=3}),
 s(128485,16802,{c={8},f=4,loc=45,lvl=60,q=4}),
@@ -820,15 +820,15 @@ i(19138,{b=1,f=52,lvl=60,q=4}),
 i(18815,{b=1,f=53,lvl=60,q=4}),
 i(17082,{b=1,f=53,lvl=60,q=4}),
 i(17982,{b=1,f=52,lvl=60,q=3,rwp=10400,u=2}),
-i(21110,{awp=10900,b=1,q=4,rwp=40003,u=2})}})}}),
+i(21110,{awp=10900,b=1,phase=15,q=4,rwp=40003,u=2})}})}}),
 inst(760,{coords={
 [1445]={{52.3,76.2}}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,savedInstanceID=249,zoneTextAreaID=2159,g={
 h(-45,{
-q(24428,{awp=30300,lvl=80,maps={1453},qss={49644},r=2,u=32,g={
+q(24428,{awp=30300,lvl=80,maps={1453},phase=32,qss={49644},r=2,g={
 i(49486,{b=1,f=52,q=4}),
 i(49485,{b=1,f=51,q=4}),
 i(49487,{b=1,f=53,q=4})}}),
-q(24429,{awp=30300,lvl=80,maps={1454},qss={49643},r=1,u=32,g={
+q(24429,{awp=30300,lvl=80,maps={1454},phase=32,qss={49643},r=1,g={
 i(49486,{b=1,f=52,q=4}),
 i(49485,{b=1,f=51,q=4}),
 i(49487,{b=1,f=53,q=4})}}),
@@ -882,7 +882,7 @@ q(7495,{awp=10001,lvl=60,maps={1453},qss={18423},r=2,rwp=100000}),
 q(7490,{awp=10001,lvl=60,maps={1454},qss={18422},r=1,rwp=100000})}),
 prof(393,{
 i(15410,{q=3})}),
-d(3,{lvl=80,u=32,g={
+d(3,{lvl=80,phase=32,g={
 e(1651,{npcID=10184,g={
 ach(4403),
 ach(4402),
@@ -928,7 +928,7 @@ s(177993,49307,{b=1,f=3,lvl=80,q=4}),
 i(49309,{b=1,f=52,lvl=80,q=4}),
 i(49463,{b=1,f=53,lvl=80,q=4}),
 i(49310,{b=1,f=53,lvl=80,q=4})}})}}),
-d(4,{lvl=80,u=32,g={
+d(4,{lvl=80,phase=32,g={
 e(1651,{npcID=10184,g={
 ach(4406),
 ach(4405),
@@ -996,9 +996,9 @@ i(18205,{b=1,f=51,lvl=60,q=4}),
 s(128752,17078,{b=1,f=3,lvl=60,q=4}),
 i(18813,{b=1,f=52,lvl=60,q=4}),
 i(17064,{b=1,f=53,lvl=60,q=4}),
-i(21108,{awp=10900,b=1,q=4,rwp=40003,u=2})})}})}}),
+i(21108,{awp=10900,b=1,phase=15,q=4,rwp=40003,u=2})})}})}}),
 inst(742,{awp=10600,coords={
-[33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,maps={288,289,290},providers={{"o",179879}},savedInstanceID=469,sourceQuests={7761},u=13,g={
+[33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,maps={288,289,290},phase=13,providers={{"o",179879}},savedInstanceID=469,sourceQuests={7761},g={
 h(-45,{
 q(7781,{maps={1453},qss={19003},r=2}),
 q(7782,{coords={
@@ -1014,7 +1014,7 @@ s(130147,19366,{b=1,f=1,lvl=60,q=4}),
 i(19384,{b=1,f=52,lvl=60,q=4})}})}),
 h(-56,{
 o(180667,{awp=10900,coords={
-[287]={{32,42.9}}},description="Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",rwp=40003,u=2,g={
+[287]={{32,42.9}}},description="Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",phase=15,rwp=40003,u=2,g={
 i(21109,{awp=10600,b=1,q=4})}})}),
 h(-63,{
 i(18562,{crs={13996,14401},q=4}),
@@ -1210,7 +1210,7 @@ i(17964,{q=2}),
 i(17969,{q=2}),
 i(17963,{q=2}),
 i(17965,{q=2})}})}}),
-inst(76,{awp=10700,isRaid=1,lore="Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",lvl=58,maps={233,337},rwp=40003,savedInstanceID=859,u=2,g={
+inst(76,{awp=10700,isRaid=1,lore="Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",lvl=58,maps={233,337},phase=14,rwp=40003,savedInstanceID=859,u=2,g={
 h(-12,{u=2,g={
 ach(957,{maps={1434},minReputation={270,42000},u=2})}}),
 h(-31,{u=2,g={
@@ -1461,11 +1461,11 @@ q(8183,{description="Turning this quest in will cause a world buff to drop for t
 i(19948,{b=1,f=53,q=4,u=2}),
 i(19950,{b=1,f=53,q=4,u=2}),
 i(19949,{b=1,f=53,q=4,u=2})}}),
-q(9210,{cost={{"i",18330,1}},lvl=58,qgs={15042},repeatable=1,u=2,g={
+q(9210,{cost={{"i",18330,1}},lvl=58,phase=16,qgs={15042},repeatable=1,u=2,g={
 i(22635,{b=1,lvl=55,q=3,u=2})}}),
-q(9208,{cost={{"i",18331,1}},lvl=58,qgs={15042},repeatable=1,u=2,g={
+q(9208,{cost={{"i",18331,1}},lvl=58,phase=16,qgs={15042},repeatable=1,u=2,g={
 i(22635,{b=1,lvl=55,q=3,u=2})}}),
-q(9209,{cost={{"i",18329,1}},lvl=58,qgs={15042},repeatable=1,u=2,g={
+q(9209,{cost={{"i",18329,1}},lvl=58,phase=16,qgs={15042},repeatable=1,u=2,g={
 i(22635,{b=1,lvl=55,q=3,u=2})}}),
 q(8243,{coords={
 [1434]={{15.1,16}}},cost={{"i",19858,1}},lvl=58,minReputation={270,21000},qgs={14921},repeatable=1,u=2,g={
@@ -1478,8 +1478,8 @@ i(19858,{b=1,factionID=270,q=2,repeatable=1,u=2})}})}}),
 h(-58,{u=2,g={
 n(14921,{coords={
 [1434]={{15.1,16}}},u=2,g={
-r(25130,{b=1,itemID=20757,learnedAt=300,minReputation={270,3000},q=1,requireSkill=333,u=2}),
-r(25129,{b=1,itemID=20756,learnedAt=300,minReputation={270,9000},q=1,requireSkill=333,u=2}),
+r(25130,{b=1,itemID=20757,learnedAt=300,minReputation={270,3000},phase=15,q=1,requireSkill=333,u=2}),
+r(25129,{b=1,itemID=20756,learnedAt=300,minReputation={270,9000},phase=15,q=1,requireSkill=333,u=2}),
 r(24124,{b=1,itemID=19772,learnedAt=300,minReputation={270,21000},q=1,requireSkill=165,u=2}),
 r(24125,{b=1,itemID=19773,learnedAt=300,minReputation={270,9000},q=1,requireSkill=165,u=2}),
 r(24093,{b=1,itemID=19766,learnedAt=300,minReputation={270,3000},q=1,requireSkill=197,u=2}),
@@ -1582,7 +1582,7 @@ s(130851,20265,{b=1,f=7,loc=47,lvl=60,q=3,u=2}),
 s(130848,20262,{b=1,f=6,loc=47,lvl=60,q=3,u=2}),
 i(19920,{b=1,f=52,lvl=60,q=3,u=2})}}),
 n(14507,{u=2,g={
-i(22216,{q=1,u=2}),
+i(22216,{phase=15,q=1,u=2}),
 s(130519,19903,{b=1,f=20,lvl=60,q=4,u=2}),
 s(130516,19900,{b=1,f=22,lvl=60,q=3,u=2}),
 s(130523,19907,{b=1,f=3,lvl=60,q=3,u=2}),
@@ -1697,10 +1697,10 @@ s(130850,20264,{b=1,f=7,loc=44,lvl=60,q=4,u=2}),
 s(130843,20257,{b=1,f=6,loc=44,lvl=60,q=4,u=2}),
 s(130472,19855,{b=1,f=7,loc=46,lvl=60,q=4,u=2})}})}}),
 inst(743,{awp=10900,coords={
-[327]={{58.93,14.26}}},isLockoutShared=1,isRaid=1,lore="Deep within the deserts of Silithus lies an ancient and powerful race of beings known as the Qiraji. One thousand years ago, the Night Elves and Bronze Dragonflight combined their considerable powers to seal the Qiraji behind the scarab wall with the help of the children of some of the aspects. This is remembered as the \"War of the Shifting Sands\".\n\nRecently it was discovered that some of the Qiraji were finding ways past the wall. Anachronos, the bronze dragon, helped the adventurers of Azeroth open the Scarab Wall to prevent more incursions. The mortal races have now banded together to confront the evil Qiraji in their own land. A champion has opened the gate and the Horde and Alliance have driven the armies of the Qiraji back into the ruins in retreat. It now falls to heroes to delve into the lair of the Qiraji and put an end to their masters once and for all",lvl=50,mapID=247,savedInstanceID=509,u=15,g={
+[327]={{58.93,14.26}}},isLockoutShared=1,isRaid=1,lore="Deep within the deserts of Silithus lies an ancient and powerful race of beings known as the Qiraji. One thousand years ago, the Night Elves and Bronze Dragonflight combined their considerable powers to seal the Qiraji behind the scarab wall with the help of the children of some of the aspects. This is remembered as the \"War of the Shifting Sands\".\n\nRecently it was discovered that some of the Qiraji were finding ways past the wall. Anachronos, the bronze dragon, helped the adventurers of Azeroth open the Scarab Wall to prevent more incursions. The mortal races have now banded together to confront the evil Qiraji in their own land. A champion has opened the gate and the Horde and Alliance have driven the armies of the Qiraji back into the ruins in retreat. It now falls to heroes to delve into the lair of the Qiraji and put an end to their masters once and for all",lvl=50,mapID=247,phase=15,savedInstanceID=509,g={
 h(-31,{
 faction(609,{icon=132136,maps={1451},g={
-crit(2045,{achID=953,awp=20003,id=1,u=17})}})}),
+crit(2045,{achID=953,awp=20003,id=1,phase=17})}})}),
 h(-45,{
 cl(11,{
 q(8700,{c={11},coords={
@@ -1863,7 +1863,7 @@ i(20885,{b=1,c={1,4,5,8},crs={15341,15348,15369,15370},q=3}),
 i(20889,{b=1,c={2,3,7,9,11},crs={15341,15348,15369,15370},q=3}),
 i(20890,{b=1,c={5,8,9,11},crs={15339,15340,15369,15370},q=4}),
 i(20886,{b=1,c={1,2,3,4,7},crs={15339,15340,15369,15370},q=4}),
-i(76401,{awp=40300,b=1,crs={15339,15340,15341,15348,15369,15370},q=3,u=40})}),
+i(76401,{awp=40300,b=1,crs={15339,15340,15341,15348,15369,15370},phase=40,q=3})}),
 o(180691,{cost={{"i",76401,1}},description="These can be found along the walls of the instance and require a coffer key to open.",g={
 i(20873,{c={1,8,11},q=3}),
 i(20869,{c={2,3,7,9},q=3}),
@@ -1946,7 +1946,7 @@ s(131902,21463,{b=1,f=6,loc=45,lvl=60,q=4}),
 s(131900,21461,{b=1,f=4,loc=46,lvl=60,q=4}),
 s(131892,21453,{b=1,f=7,loc=41,lvl=60,q=4})}})}}),
 inst(744,{awp=10900,coords={
-[327]={{46.76,7.53}}},isRaid=1,lore="Dark whispers ride on the winds of Silithus desert. An old god stirs in his wretched lair and the entire world shall soon be the target of his wrath.\n\nAfter thousands of years of slumber, the old god, C'thun has awakened and is quickly regenerating his power. Once he has reached full potential nothing will be able to stop him. The dragons that so humbly sacrificed themselves so long ago to imprison C'thun are weakened or enslaved in the temple, so the charge of protecting the land falls to other heroes.\n\nHeroes must enter Temple of Ahn'Qiraj, challenge C'thun's most wicked servants, and slay a god. The road will not be easy and it is wrought with peril at every turn. Will the heroes turn back now or face C'thun in his mighty lair and put an end to him once and for all?",lvl=50,maps={319,320,321},savedInstanceID=531,u=15,g={
+[327]={{46.76,7.53}}},isRaid=1,lore="Dark whispers ride on the winds of Silithus desert. An old god stirs in his wretched lair and the entire world shall soon be the target of his wrath.\n\nAfter thousands of years of slumber, the old god, C'thun has awakened and is quickly regenerating his power. Once he has reached full potential nothing will be able to stop him. The dragons that so humbly sacrificed themselves so long ago to imprison C'thun are weakened or enslaved in the temple, so the charge of protecting the land falls to other heroes.\n\nHeroes must enter Temple of Ahn'Qiraj, challenge C'thun's most wicked servants, and slay a god. The road will not be easy and it is wrought with peril at every turn. Will the heroes turn back now or face C'thun in his mighty lair and put an end to him once and for all?",lvl=50,maps={319,320,321},phase=15,savedInstanceID=531,g={
 h(-12,{
 ach(956,{maps={75,1451},minReputation={910,42000}}),
 ach(424,{providers={{"i",21321}}})}),
@@ -2182,7 +2182,7 @@ i(21230,{b=1,lvl=60,q=1})}),
 h(-19,{
 i(21232,{b=1,crs={15275,15276,15299,15509,15510,15511,15516,15517,15543,15544},lvl=60,q=4}),
 i(21237,{b=1,crs={15275,15276,15299,15509,15510,15511,15516,15517,15543,15544},lvl=60,q=4}),
-i(76402,{awp=40300,crs={15263,15275,15276,15299,15509,15510,15511,15516,15517,15543,15544,15727},q=3,u=40}),
+i(76402,{awp=40300,crs={15263,15275,15276,15299,15509,15510,15511,15516,15517,15543,15544,15727},phase=40,q=3}),
 i(21229,{b=1,crs={15263,15275,15276,15299,15509,15510,15511,15516,15517,15543,15544},description="Drops from all bosses, can be turned in to the NPC named Kandrostrasz for reputation with the Brood of Nozdormu and Cenarion Circle. Kandrostrasz can be found with Andorgos and Vethsera inside the temple after killing The Prophet Skeram, in a chamber on the left side.",q=1})}),
 o(180690,{cost={{"i",76402,1}},g={
 i(20876,{c={1,5,8,9},q=3}),
@@ -2313,7 +2313,7 @@ crit(4011,{achID=1285,awp=30002,id=1})}),
 gach(5058,{awp=40003}),
 ach(15334,{awp=11402,rwp=11500,u=2}),
 i(21221,{b=1,lvl=60,q=4}),
-i(22734,{c={5,8,9,11},q=1,u=16}),
+i(22734,{c={5,8,9,11},phase=16,q=1}),
 i(20929,{b=1,c={1,2,3,4,7},q=4}),
 i(20933,{b=1,c={5,8,9,11},q=4}),
 s(131574,21134,{b=1,f=22,lvl=60,q=4}),
@@ -2330,7 +2330,7 @@ s(132019,21582,{b=1,f=4,loc=45,lvl=60,q=4}),
 i(21596,{b=1,f=52,lvl=60,q=4}),
 i(21579,{b=1,f=53,lvl=60,q=4})}})}}),
 inst(754,{awp=11100,isLockoutShared=1,isRaid=1,lore="An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",mapID=162,maps={163,164,165,166,167},rwp=30002,savedInstanceID=533,u=2,g={
-d(9,{lvl=60,sourceQuests={9121},u=2,g={
+d(9,{lvl=60,phase=16,sourceQuests={9121},u=2,g={
 ah(22631,{c={5,8,9,11},isRaid=1,maps={75},type="i",u=2,g={
 ach(425,{c={5,8,9,11},providers={{"i",22589},{"i",22630},{"i",22631},{"i",22632}},u=2}),
 q(9251,{c={5,8,9,11},lvl=60,maps={320},qgs={15192},sourceQuests={9250},u=2,g={
@@ -2346,8 +2346,8 @@ q(9269,{c={11},maps={317},qgs={15192},qis={22737},sourceQuests={9251},u=2,g={
 s(133031,22632,{b=1,f=28,lvl=60,q=5,u=2})}}),
 q(9250,{c={5,8,9,11},cost={{"i",22726,40}},description="Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",lvl=60,qss={22727},u=2})}}),
 h(-12,{u=2,g={
-ach(15637,{awp=11403,rwp=11500,u=2}),
-s(218316,191481,{awp=11403,b=1,description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this as well)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",f=9,q=4,rwp=11500,u=2})}}),
+ach(15637,{awp=11403,phase=1604,rwp=11500,u=2}),
+s(218316,191481,{awp=11403,b=1,description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this as well)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",f=9,phase=1604,q=4,rwp=11500,u=2})}}),
 h(-45,{u=2,g={
 cl(1,{u=2,g={
 q(9037,{coords={
@@ -3352,35 +3352,35 @@ r(22704,{description="On the floor next to Golem Lord Argelmach.",itemID=18235,l
 h(-58,{
 n(12944,{
 i(18628,{b=1,cost={{"i",17203,1}},description="With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",lvl=60,minReputation={59,0},q=4}),
-r(23799,{b=1,itemID=19444,learnedAt=290,minReputation={59,3000},q=1,requireSkill=333,u=13}),
+r(23799,{b=1,itemID=19444,learnedAt=290,minReputation={59,3000},phase=13,q=1,requireSkill=333}),
 r(20853,{b=1,itemID=17022,learnedAt=295,minReputation={59,3000},q=1,requireSkill=165}),
 r(20849,{b=1,itemID=17018,learnedAt=300,minReputation={59,3000},q=1,requireSkill=197}),
 r(20854,{b=1,itemID=17023,learnedAt=300,minReputation={59,3000},q=1,requireSkill=165}),
 r(20874,{b=1,itemID=17051,learnedAt=295,minReputation={59,3000},q=3,requireSkill=164}),
-r(25146,{b=1,itemID=20761,learnedAt=300,minReputation={59,3000},q=1,requireSkill=171,u=15}),
-r(23803,{b=1,itemID=19448,learnedAt=300,minReputation={59,9000},q=1,requireSkill=333,u=13}),
+r(25146,{b=1,itemID=20761,learnedAt=300,minReputation={59,3000},phase=15,q=1,requireSkill=171}),
+r(23803,{b=1,itemID=19448,learnedAt=300,minReputation={59,9000},phase=13,q=1,requireSkill=333}),
 r(20855,{b=1,itemID=17025,learnedAt=300,minReputation={59,9000},q=1,requireSkill=165}),
 r(20848,{b=1,itemID=17017,learnedAt=300,minReputation={59,9000},q=1,requireSkill=197}),
-r(23666,{b=1,itemID=19219,learnedAt=300,minReputation={59,9000},q=1,requireSkill=197,u=13}),
-r(23707,{b=1,itemID=19330,learnedAt=300,minReputation={59,9000},q=1,requireSkill=165,u=13}),
+r(23666,{b=1,itemID=19219,learnedAt=300,minReputation={59,9000},phase=13,q=1,requireSkill=197}),
+r(23707,{b=1,itemID=19330,learnedAt=300,minReputation={59,9000},phase=13,q=1,requireSkill=165}),
 r(20897,{b=1,itemID=17060,learnedAt=300,minReputation={59,9000},q=3,requireSkill=164}),
-r(23636,{b=1,itemID=19206,learnedAt=300,minReputation={59,9000},q=1,requireSkill=164,u=13}),
+r(23636,{b=1,itemID=19206,learnedAt=300,minReputation={59,9000},phase=13,q=1,requireSkill=164}),
 r(20890,{b=1,itemID=17059,learnedAt=300,minReputation={59,9000},q=3,requireSkill=164}),
 r(20872,{b=1,itemID=17049,learnedAt=295,minReputation={59,9000},q=3,requireSkill=164}),
-r(23804,{b=1,itemID=19449,learnedAt=300,minReputation={59,21000},q=1,requireSkill=333,u=13}),
-r(23708,{b=1,itemID=19331,learnedAt=300,minReputation={59,21000},q=1,requireSkill=165,u=13}),
-r(23709,{b=1,itemID=19332,learnedAt=300,minReputation={59,21000},q=1,requireSkill=165,u=13}),
-r(23667,{b=1,itemID=19220,learnedAt=300,minReputation={59,21000},q=1,requireSkill=197,u=13}),
-r(23710,{b=1,itemID=19333,learnedAt=300,minReputation={59,21000},q=1,requireSkill=165,u=13}),
-r(23638,{b=1,itemID=19208,learnedAt=300,minReputation={59,21000},q=1,requireSkill=164,u=13}),
-r(23639,{b=1,itemID=19209,learnedAt=300,minReputation={59,21000},q=1,requireSkill=164,u=13}),
-r(23637,{b=1,itemID=19207,learnedAt=300,minReputation={59,21000},q=1,requireSkill=164,u=13}),
+r(23804,{b=1,itemID=19449,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=333}),
+r(23708,{b=1,itemID=19331,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=165}),
+r(23709,{b=1,itemID=19332,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=165}),
+r(23667,{b=1,itemID=19220,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=197}),
+r(23710,{b=1,itemID=19333,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=165}),
+r(23638,{b=1,itemID=19208,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=164}),
+r(23639,{b=1,itemID=19209,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=164}),
+r(23637,{b=1,itemID=19207,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=164}),
 r(20876,{b=1,itemID=17052,learnedAt=300,minReputation={59,21000},q=3,requireSkill=164}),
 r(20873,{b=1,itemID=17053,learnedAt=300,minReputation={59,21000},q=3,requireSkill=164}),
-r(23652,{b=1,itemID=19211,learnedAt=300,minReputation={59,42000},q=1,requireSkill=164,u=13}),
-r(24399,{b=1,itemID=20040,learnedAt=300,minReputation={59,42000},q=1,requireSkill=164,u=14}),
-r(23650,{b=1,itemID=19210,learnedAt=300,minReputation={59,42000},q=1,requireSkill=164,u=13}),
-r(23653,{b=1,itemID=19212,learnedAt=300,minReputation={59,42000},q=1,requireSkill=164,u=13})}),
+r(23652,{b=1,itemID=19211,learnedAt=300,minReputation={59,42000},phase=13,q=1,requireSkill=164}),
+r(24399,{b=1,itemID=20040,learnedAt=300,minReputation={59,42000},phase=14,q=1,requireSkill=164}),
+r(23650,{b=1,itemID=19210,learnedAt=300,minReputation={59,42000},phase=13,q=1,requireSkill=164}),
+r(23653,{b=1,itemID=19212,learnedAt=300,minReputation={59,42000},phase=13,q=1,requireSkill=164})}),
 n(9499,{
 r(19085,{itemID=15759,learnedAt=290,q=1,requireSkill=165}),
 r(17560,{b=1,itemID=13483,learnedAt=275,q=2,requireSkill=171}),
@@ -3390,7 +3390,7 @@ r(12597,{itemID=10602,learnedAt=210,q=1,requireSkill=202})}})}),
 h(-63,{
 i(11468,{q=1}),
 i(18945,{q=1}),
-i(22528,{u=15}),
+i(22528,{phase=15}),
 i(11129,{q=1}),
 i(11269,{crs={8905,8906,8907,8908},q=1}),
 r(19107,{crs={8903},itemID=15781,learnedAt=300,q=3,requireSkill=165}),
@@ -3421,14 +3421,14 @@ i(11140,{b=1,q=1}),
 s(124361,11625,{b=1,f=1,lvl=47,q=3}),
 s(124362,11626,{b=1,f=3,lvl=47,q=3}),
 s(124360,11624,{b=1,f=4,loc=41,lvl=47,q=3}),
-s(132639,22240,{b=1,f=6,loc=47,lvl=47,q=3,u=15})}}),
+s(132639,22240,{b=1,f=6,loc=47,lvl=47,phase=15,q=3})}}),
 e(370,{npcID=9025,g={
 r(15596,{awp=30100,b=1,itemID=45050,learnedAt=265,q=2,requireSkill=333}),
 r(15596,{itemID=11813,learnedAt=265,q=2,requireSkill=333,rwp=30100,u=2}),
 s(124367,11631,{b=1,f=8,lvl=47,q=3}),
 s(124368,11632,{b=1,f=7,loc=41,lvl=47,q=3}),
-s(132633,22234,{b=1,f=4,loc=41,lvl=47,q=3,u=15}),
-i(22397,{b=1,c={7,11},lvl=47,q=3,rwp=50004,u=15})}}),
+s(132633,22234,{b=1,f=4,loc=41,lvl=47,phase=15,q=3}),
+i(22397,{b=1,c={7,11},lvl=47,phase=15,q=3,rwp=50004})}}),
 e(371,{npcID=9319,g={
 s(124364,11628,{b=1,f=32,lvl=47,q=3}),
 s(124365,11629,{b=1,f=31,lvl=47,q=3}),
@@ -3446,16 +3446,16 @@ s(124397,11679,{b=1,f=6,loc=43,lvl=47,q=3}),
 s(124413,11730,{b=1,f=6,loc=44,lvl=47,q=3}),
 s(124402,11686,{b=1,f=5,loc=45,lvl=47,q=3})}),
 n(9027,{
-s(132665,22266,{b=1,f=20,lvl=47,q=3,u=15}),
+s(132665,22266,{b=1,f=20,lvl=47,phase=15,q=3}),
 s(124409,11726,{b=1,f=6,loc=42,lvl=47,q=4}),
-s(132670,22271,{b=1,f=5,loc=46,lvl=47,q=3,u=15}),
-i(22257,{b=1,f=52,lvl=47,q=3,u=15})}),
+s(132670,22271,{b=1,f=5,loc=46,lvl=47,phase=15,q=3}),
+i(22257,{b=1,f=52,lvl=47,phase=15,q=3})}),
 n(9028,{
 r(15292,{itemID=11610,learnedAt=265,q=3,requireSkill=164}),
 s(124403,11702,{b=1,f=21,lvl=47,q=3}),
 s(124405,11722,{b=1,f=6,loc=41,lvl=47,q=3}),
 s(124404,11703,{b=1,f=7,loc=45,lvl=47,q=3}),
-s(132669,22270,{b=1,f=7,loc=47,lvl=47,q=3,u=15})}),
+s(132669,22270,{b=1,f=7,loc=47,lvl=47,phase=15,q=3})}),
 n(9032,{
 s(124371,11635,{b=1,f=20,lvl=47,q=3}),
 s(124412,11729,{b=1,f=6,loc=40,lvl=47,q=3}),
@@ -3466,7 +3466,7 @@ s(124383,11665,{b=1,f=5,loc=44,lvl=47,q=3}),
 s(124380,11662,{b=1,f=4,loc=45,lvl=47,q=3}),
 s(124411,11728,{b=1,f=6,loc=46,lvl=47,q=3}),
 i(11824,{b=1,f=52,lvl=47,q=3})}),
-n(16059,{description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",providers={{"i",21986},{"o",181074}},rwp=40003,sourceQuests={9015},u=2,u_sqs=1,g={
+n(16059,{description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",phase=15,providers={{"i",21986},{"o",181074}},rwp=40003,sourceQuests={9015},u=2,u_sqs=1,g={
 i(22047,{q=1,u=2}),
 s(132704,22305,{b=1,c={5,8,9},f=4,loc=41,lvl=56,q=3,u=2}),
 s(132716,22317,{b=1,f=34,lvl=51,q=3,u=2}),
@@ -3478,18 +3478,18 @@ s(124451,11805,{b=1,f=23,lvl=47,q=3}),
 s(124453,11807,{b=1,f=4,loc=45,lvl=47,q=3}),
 s(124448,11802,{b=1,f=7,loc=46,lvl=47,q=3})}}),
 e(374,{npcID=9017,g={
-i(21987,{q=1,u=15}),
+i(21987,{phase=15,q=1}),
 i(11126,{q=1}),
 s(124439,11766,{b=1,f=4,loc=43,lvl=52,q=3}),
 s(124437,11764,{b=1,f=5,loc=43,lvl=52,q=3}),
 s(124438,11765,{b=1,f=6,loc=43,lvl=52,q=3}),
 s(124440,11767,{b=1,f=7,loc=43,lvl=52,q=3}),
 s(124441,11768,{awp=100107,b=1,description="This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",f=4,isBounty=1,loc=43,lvl=51,q=3,rwp=20001,u=2}),
-i(19268,{q=3,u=13})}}),
+i(19268,{phase=13,q=3})}}),
 e(376,{npcID=9056,g={
 s(124486,11840,{b=1,f=10,q=1}),
 s(124485,11839,{b=1,f=4,loc=40,lvl=51,q=3}),
-s(132622,22223,{b=1,f=7,loc=40,lvl=51,q=3,u=15}),
+s(132622,22223,{b=1,f=7,loc=40,lvl=51,phase=15,q=3}),
 s(124488,11842,{b=1,f=6,loc=41,lvl=51,q=3}),
 s(124487,11841,{b=1,f=4,loc=46,lvl=51,q=3})}})}),
 h(-352,{
@@ -3502,11 +3502,11 @@ s(124428,11749,{b=1,f=6,loc=46,lvl=47,q=3})}}),
 e(375,{npcID=9041,g={
 s(124444,11784,{b=1,f=25,lvl=51,q=3}),
 s(124442,11782,{b=1,f=4,loc=41,lvl=51,q=3}),
-s(132640,22241,{b=1,f=5,loc=41,lvl=51,q=3,u=15}),
+s(132640,22241,{b=1,f=5,loc=41,lvl=51,phase=15,q=3}),
 s(124443,11783,{b=1,f=6,loc=45,lvl=51,q=3})}}),
 n(9042,{
 i(11755,{b=1,f=51,lvl=51,q=3}),
-s(132641,22242,{b=1,f=6,loc=45,lvl=51,q=3,u=15})}),
+s(132641,22242,{b=1,f=6,loc=45,lvl=51,phase=15,q=3})}),
 n(9476,{cost={{"i",11078,12}},description="Watchman Doomgrip spawns once all twelve Relic Coffers have been opened using Relic Coffer Keys that can drop from any Dark Iron mob in the instance. Upon defeating all enemies, a hidden door beneath the Dark Coffer will open allowing access to the Secret Safe as well as the Heart of the Mountain.",g={
 o(160836,{description="Relic Coffer Keys can drop from any Dark Iron mob in the instance.",g={
 i(11946,{b=1,f=51,lvl=51,q=3}),
@@ -3518,10 +3518,10 @@ i(11944)}}),
 o(165554,{description="This spawns after defeating Watchman Doomgrip.",g={
 i(11309,{q=1})}}),
 o(161495,{description="This spawns after defeating Watchman Doomgrip.",g={
-s(132655,22256,{b=1,f=4,loc=44,lvl=51,q=3,u=15}),
-s(132604,22205,{b=1,f=7,loc=43,lvl=51,q=3,u=15}),
-s(132653,22254,{b=1,f=27,lvl=51,q=3,u=15}),
-i(22255,{b=1,f=52,lvl=51,q=3,u=15})}})}}),
+s(132655,22256,{b=1,f=4,loc=44,lvl=51,phase=15,q=3}),
+s(132604,22205,{b=1,f=7,loc=43,lvl=51,phase=15,q=3}),
+s(132653,22254,{b=1,f=27,lvl=51,phase=15,q=3}),
+i(22255,{b=1,f=52,lvl=51,phase=15,q=3})}})}}),
 o(164820,{crs={9437,9438,9439,9441,9442,9443},description="Inspect the portrait in front of the coffer room. Opening it will tell you the name of the Dark Keeper you need and where he is located. Only one will spawn each reset.\n\n|cff3399ffDark Keepers:|r\n\n|cFFFFD700Dark Keeper Bethek|r spawns inside the vault room as soon as you open the portrait.\n\n|cFFFFD700Dark Keeper Ofgut|r is located in |cFFFFD700General Angerforge's|r room. When you come down the stairs and are looking straight at |cFFFFD700General Angerforge|r, you will see him located directly to the left near the crystal.\n\n|cFFFFD700Dark Keeper Pelver|r is located in |cFFFFD700The Domicile|r. For quicker access, you can take any of the mole machines and click |cFFFFD700Into the Domicile|r and he will be on top of it.\n\n|cFFFFD700Dark Keeper Uggel|r is quite a close walk; go outside the vault room and turn right to the last room. He is near the entrance where all the golems are.\n\n|cFFFFD700Dark Keeper Vorfalk|r is located at the |cFFFFD700Grim Guzzler|r. When you first enter the room after coming from the bridge, he will be located on your right side in the corner (in front of the band's playing spot).\n\n|cFFFFD700Dark Keeper Zimrel|r is located on the second floor of the |cFFFFD700Ring of Law|r. When entering this floor from the |cFFFFD700East Garrison|r (room with the Shadowforge Lock), you will go around to your right and he will be sitting in the middle of the seats.",g={
 o(160845,{cost={{"i",11197,1}},sharedDescription="Was used to turn in Librams prior to Cataclysm, is now without any purpose.",g={
 i(11752,{b=1,q=1}),
@@ -3538,7 +3538,7 @@ i(11810,{b=1,f=53,lvl=51,q=3})}}),
 e(379,{npcID=8983,g={
 i(11268,{q=1}),
 i(11465,{q=1}),
-r(26914,{awp=20005,b=1,itemID=21956,learnedAt=300,q=2,requireSkill=755,u=17}),
+r(26914,{awp=20005,b=1,itemID=21956,learnedAt=300,phase=17,q=2,requireSkill=755}),
 s(124469,11823,{b=1,f=5,loc=46,lvl=51,q=3}),
 s(124468,11822,{b=1,f=4,loc=47,lvl=51,q=3}),
 i(11669,{b=1,f=52,lvl=51,q=3}),
@@ -3548,7 +3548,7 @@ i(11312,{q=1}),
 s(129126,18044,{b=1,f=23,lvl=51,q=3}),
 s(124418,11735,{b=1,f=5,loc=40,lvl=51,q=3}),
 s(129125,18043,{b=1,f=5,loc=47,lvl=51,q=3}),
-s(132674,22275,{b=1,f=5,loc=47,lvl=51,q=3,u=15})}}),
+s(132674,22275,{b=1,f=5,loc=47,lvl=51,phase=15,q=3})}}),
 e(9543,{description="Speak to him to start the encounter.",npcID=9543,g={
 i(11313,{q=1}),
 r(15296,{itemID=11612,learnedAt=285,q=3,requireSkill=164}),
@@ -3559,15 +3559,15 @@ e(383,{npcID=9499,g={
 r(23078,{itemID=18653,learnedAt=265,q=2,requireSkill=20222}),
 s(125144,12791,{b=1,f=20,lvl=51,q=3}),
 s(125146,12793,{b=1,f=5,loc=42,lvl=51,q=3})}}),
-n(28067,{awp=20403,description="Speak to him until he passes out, a Mug will appear on the ground",u=20,g={
+n(28067,{awp=20403,description="Speak to him until he passes out, a Mug will appear on the ground",phase=20,g={
 o(190394,{
 i(38320,{b=1,f=55,q=1})})}}),
 e(381,{description="Private Rocknot must be sent into a drunken rage to aggro Phalanx.\nTo do that, give him 6 dark iron ale mugs, which can be bought from Plugger Spazzring.\nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",npcID=9502,g={
 s(124423,11744,{b=1,f=34,lvl=51,q=3}),
 s(124422,11743,{awp=100107,b=1,description="This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",f=34,isBounty=1,lvl=51,q=3,rwp=20001,u=2}),
 s(124425,11746,{b=1,f=7,loc=40,lvl=51,q=3}),
-s(132611,22212,{b=1,f=6,loc=41,lvl=51,q=3,u=15}),
-s(132603,22204,{b=1,f=5,loc=43,lvl=51,q=3,u=15}),
+s(132611,22212,{b=1,f=6,loc=41,lvl=51,phase=15,q=3}),
+s(132603,22204,{b=1,f=5,loc=43,lvl=51,phase=15,q=3}),
 s(124424,11745,{b=1,f=7,loc=44,lvl=51,q=3})}}),
 e(384,{npcID=9156,g={
 s(124455,11809,{b=1,f=29,lvl=51,q=3}),
@@ -3579,7 +3579,7 @@ n(8923,{description="This is a Rare Creature and, as such, is not always present
 s(124446,11786,{b=1,f=26,lvl=51,q=3}),
 s(124445,11785,{b=1,f=8,lvl=51,q=3}),
 s(124447,11787,{b=1,f=7,loc=47,lvl=51,q=3}),
-s(132644,22245,{b=1,f=4,loc=47,lvl=51,q=3,u=15})}}),
+s(132644,22245,{b=1,f=4,loc=47,lvl=51,phase=15,q=3})}}),
 e(385,{modelScale=3,npcID=9039,providers={{"o",169243}},g={
 s(124551,11922,{b=1,f=20,lvl=51,q=3}),
 s(124550,11921,{b=1,f=24,lvl=51,q=3}),
@@ -3590,12 +3590,12 @@ s(200999,11926,{b=1,f=6,loc=42,lvl=51,q=3}),
 s(124558,11929,{b=1,f=4,loc=46,lvl=51,q=3}),
 s(124556,11927,{b=1,f=7,loc=46,lvl=51,q=3})}}),
 e(386,{npcID=9938,g={
-s(132607,22208,{b=1,f=24,lvl=51,q=3,u=15}),
+s(132607,22208,{b=1,f=24,lvl=51,phase=15,q=3}),
 s(124564,11935,{b=1,f=1,lvl=51,q=3}),
 s(124425,11746,{b=1,f=7,loc=40,lvl=51,q=3}),
 s(132674,22275,{b=1,f=5,loc=47,lvl=51,q=3}),
-i(22400,{b=1,c={2,6},lvl=51,q=3,rwp=50004,u=15}),
-i(22395,{b=1,c={2,7,11},lvl=51,q=3,rwp=50004,u=15})}}),
+i(22400,{b=1,c={2,6},lvl=51,phase=15,q=3,rwp=50004}),
+i(22395,{b=1,c={2,7,11},lvl=51,phase=15,q=3,rwp=50004})}}),
 n(8929,{description="In order to be eligible for this loot, you need to have completed The Fate of the Kingdom or The Royal Rescue. (Removed in 4.0.3)",sourceQuests={4003,4362},g={
 s(124963,12557,{awp=80100,b=1,f=7,loc=41,lvl=51,q=3,rwp=40003,u=2}),
 s(124960,12554,{awp=70302,b=1,f=4,loc=44,lvl=51,q=3,rwp=40003,u=2}),
@@ -3612,8 +3612,8 @@ s(124557,11928,{b=1,f=1,lvl=51,q=3}),
 i(11933,{b=1,f=51,lvl=51,q=3}),
 s(201000,11930,{b=1,f=3,lvl=51,q=3}),
 s(124553,11924,{b=1,f=4,loc=42,lvl=51,q=3}),
-s(132603,22204,{b=1,f=5,loc=43,lvl=51,q=3,u=15}),
-s(132606,22207,{b=1,f=6,loc=45,lvl=51,q=3,u=15}),
+s(132603,22204,{b=1,f=5,loc=43,lvl=51,phase=15,q=3}),
+s(132606,22207,{b=1,f=6,loc=45,lvl=51,phase=15,q=3}),
 i(11934,{b=1,f=52,lvl=51,q=3}),
 i(11815,{b=1,f=53,lvl=51,q=3}),
 i(12033,{q=1})}})})}}),
@@ -3851,7 +3851,7 @@ q(5161,{coords={
 q(5162,{coords={
 [1452]={{54.4,51.2}}},lvl=57,maps={1422},qgs={10929},rwp=40003,sourceQuests={5161},u=2})}),
 h(-63,{
-i(22138,{q=1,rwp=40003,u=2}),
+i(22138,{phase=15,q=1,rwp=40003,u=2}),
 i(16786,{q=1,rwp=40003,u=2}),
 s(128390,16681,{crs={9096},f=6,loc=43,lvl=52,q=3,rwp=40003,u=2}),
 s(128389,16680,{f=6,loc=45,lvl=53,q=3,rwp=40003,u=2}),
@@ -3873,7 +3873,7 @@ r(18457,{crs={9264},itemID=14513,learnedAt=300,q=4,requireSkill=197}),
 r(19076,{crs={9259},itemID=15749,learnedAt=285,q=2,requireSkill=165}),
 r(19101,{crs={9260},itemID=15775,learnedAt=300,q=2,requireSkill=165}),
 r(17574,{crs={9262,9264},itemID=13494,learnedAt=290,q=2,requireSkill=171}),
-i(21982,{q=1,rwp=40003,u=2}),
+i(21982,{phase=15,q=1,rwp=40003,u=2}),
 i(12219,{q=1,rwp=40003,u=2})}),
 n(9257,{description="DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",g={
 i(9214,{awp=100107,b=1,c={9},f=200,lvl=50,rwp=40001,u=2}),
@@ -3923,7 +3923,7 @@ s(128385,16676,{f=6,loc=44,lvl=54,q=3,rwp=40003,u=2}),
 s(132630,22231,{b=1,f=4,loc=47,lvl=55,q=3}),
 i(28972,{awp=20001,b=1,f=36,lvl=55,q=3,rwp=50004}),
 i(13173,{awp=11101,b=1,lvl=55,q=3,rwp=20001,u=2})}}),
-n(16080,{cost={{"i",22049,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
+n(16080,{cost={{"i",22049,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",phase=15,providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
 qo(2,{providers={{"i",21984}},questID=8966,u=2}),
 qo(2,{providers={{"i",22046}},questID=8989,u=2}),
 s(132721,22322,{b=1,f=23,lvl=55,q=3,u=2}),
@@ -3952,11 +3952,11 @@ e(392,{cost={{"i",12534,1},{"i",12533,1}},description="Summonable Boss. Loot a R
 i(12712,{f=55,q=1,rwp=40003,u=2}),
 i(18784,{q=3,rwp=40001,u=2}),
 s(125563,13258,{b=1,f=5,loc=44,lvl=56,q=3}),
-s(132631,22232,{b=1,f=6,loc=45,lvl=55,q=3,u=15}),
+s(132631,22232,{b=1,f=6,loc=45,lvl=55,phase=15,q=3}),
 s(125564,13259,{b=1,f=7,loc=47,lvl=55,q=3}),
 i(13178,{b=1,f=52,lvl=55,q=3})}}),
 e(393,{npcID=9736,g={
-r(26912,{awp=20005,b=1,itemID=21955,learnedAt=300,q=2,requireSkill=755,u=17}),
+r(26912,{awp=20005,b=1,itemID=21955,learnedAt=300,phase=17,q=2,requireSkill=755}),
 r(16991,{itemID=12835,learnedAt=300,q=3,requireSkill=164}),
 p(89,{b=1,itemID=12264,npcID=10259,petTypeID=8,q=3,spellID=15999}),
 s(125558,13253,{b=1,f=4,loc=44,lvl=55,q=3}),
@@ -3964,7 +3964,7 @@ s(125557,13252,{b=1,f=5,loc=45,lvl=55,q=3}),
 i(13247,{b=1,description="Contains a random green item.",q=3,rwp=60002})}}),
 e(394,{npcID=10220,g={
 i(13212,{b=1,f=51,lvl=55,q=3}),
-s(132712,22313,{b=1,c={5,8,9},f=4,loc=43,lvl=56,q=3,u=15}),
+s(132712,22313,{b=1,c={5,8,9},f=4,loc=43,lvl=56,phase=15,q=3}),
 s(125536,13211,{b=1,f=6,loc=43,lvl=55,q=3}),
 s(125535,13210,{b=1,f=5,loc=47,lvl=55,q=3})}}),
 e(395,{description="Summoned immediately after Halycon is defeated.",npcID=10268,g={
@@ -3990,7 +3990,7 @@ s(201010,13162,{b=1,f=7,loc=44,lvl=55,q=3}),
 s(128388,16679,{b=1,f=6,loc=41,lvl=55,q=3,rwp=40003,u=2}),
 i(13143,{b=1,f=52,lvl=55,q=4}),
 i(13164,{b=1,f=53,lvl=55,q=3,rwp=40003,u=2}),
-i(22321,{b=1,f=53,lvl=55,q=3,u=15})}})}),
+i(22321,{b=1,f=53,lvl=55,phase=15,q=3})}})}),
 h(-354,{
 h(-12,{
 ach(2188,{awp=30002,providers={{"n",10161},{"o",175124}},rwp=60002,g={
@@ -3998,17 +3998,17 @@ title(110,{style=2})}})}),
 h(-63,{
 i(12607,{crs={10442,10447,10814},q=3,rwp=60002}),
 r(20030,{crs={10317},itemID=16247,learnedAt=295,q=2,requireSkill=333,rwp=60002}),
-i(24102,{c={4},crs={10318},f=200,lvl=60,rwp=40001,u=2}),
+i(24102,{c={4},crs={10318},f=200,lvl=60,phase=16,rwp=40001,u=2}),
 s(125565,13260,{f=6,loc=47,lvl=55,q=3})}),
 n(9816,{rwp=60002,g={
-i(21988,{q=1,rwp=40003,u=2}),
+i(21988,{phase=15,q=1,rwp=40003,u=2}),
 i(17322,{q=1,rwp=30008,u=2}),
 i(12929,{b=1,f=51,lvl=55,q=3}),
 s(125248,12905,{b=1,f=3,lvl=55,q=3}),
 s(125256,12927,{b=1,f=5,loc=41,lvl=55,q=3}),
 s(128381,16672,{f=6,loc=44,lvl=54,q=3,rwp=40003,u=2}),
 i(12926,{b=1,f=52,lvl=56,q=3}),
-i(23320,{c={7},f=200,lvl=60,rwp=40001,u=2})}}),
+i(23320,{c={7},f=200,lvl=60,phase=16,rwp=40001,u=2})}}),
 s(146105,13371,{b=1,description="Opening this will spawn 8 waves of drake adds in the Leeroy Jenkins room along with Solakar Flamewreath.",f=1,providers={{"o",175245}},q=3,rwp=60002}),
 n(10264,{description="This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",rwp=60002,g={
 r(23081,{itemID=18657,learnedAt=290,q=2,requireSkill=202}),
@@ -4035,7 +4035,7 @@ n(10339,{rwp=60002,g={
 r(17638,{itemID=13522,learnedAt=300,q=2,requireSkill=171,rwp=50004}),
 i(12871,{b=1,q=4}),
 s(125282,12953,{b=1,f=6,loc=40,lvl=55,q=3}),
-s(132624,22225,{b=1,f=4,loc=40,lvl=55,q=3,u=15}),
+s(132624,22225,{b=1,f=4,loc=40,lvl=55,phase=15,q=3}),
 s(125281,12952,{b=1,f=7,loc=40,lvl=55,q=3}),
 s(125289,12960,{b=1,f=5,loc=40,lvl=55,q=3}),
 s(128378,16669,{b=1,f=6,loc=41,lvl=55,q=3,rwp=40003,u=2})}}),
@@ -4052,10 +4052,10 @@ s(125265,12936,{b=1,f=7,loc=43,lvl=55,q=3}),
 s(129136,18104,{b=1,f=6,loc=45,lvl=55,q=3}),
 s(125264,12935,{b=1,f=7,loc=46,lvl=55,q=3}),
 s(129134,18102,{b=1,f=4,loc=47,lvl=55,q=3}),
-s(132646,22247,{b=1,f=4,loc=47,lvl=55,q=3,u=15}),
+s(132646,22247,{b=1,f=4,loc=47,lvl=55,phase=15,q=3}),
 i(18103,{b=1,f=52,lvl=55,q=3})}}),
 n(10430,{rwp=60002,g={
-i(24101,{c={11},f=200,lvl=60,rwp=40001,u=2}),
+i(24101,{c={11},f=200,lvl=60,phase=16,rwp=40001,u=2}),
 s(125066,12709,{b=1,f=20,lvl=55,q=3}),
 s(125298,12969,{b=1,f=24,lvl=55,q=3}),
 s(125296,12967,{b=1,f=3,lvl=55,q=3}),
@@ -4065,11 +4065,11 @@ s(125295,12966,{b=1,f=5,loc=43,lvl=55,q=3}),
 s(125292,12963,{b=1,f=5,loc=46,lvl=55,q=3}),
 s(125294,12965,{b=1,f=4,loc=46,lvl=55,q=3}),
 s(125293,12964,{b=1,f=6,loc=46,lvl=55,q=3}),
-s(132710,22311,{b=1,c={5,8,9},f=4,loc=47,lvl=56,q=3,rwp=40003,u=2}),
-i(19227,{q=3,u=13}),
+s(132710,22311,{b=1,c={5,8,9},f=4,loc=47,lvl=56,phase=15,q=3,rwp=40003,u=2}),
+i(19227,{phase=13,q=3}),
 prof(393,{
 i(12731,{q=4})})}}),
-n(16042,{cost={{"i",22056,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",providers={{"i",22057}},rwp=40003,u=2,u_providers=1,g={
+n(16042,{cost={{"i",22056,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",phase=15,providers={{"i",22057}},rwp=40003,u=2,u_providers=1,g={
 s(132735,22336,{b=1,f=8,lvl=55,q=3,u=2}),
 s(132734,22335,{b=1,f=28,lvl=55,q=3,u=2}),
 s(132701,22302,{b=1,c={5,8,9},f=4,loc=40,lvl=58,q=3,u=2}),
@@ -4085,8 +4085,8 @@ r(19054,{b=1,itemID=15730,learnedAt=300,q=3,requireSkill=165}),
 r(17635,{itemID=13519,learnedAt=300,q=2,requireSkill=171}),
 s(124981,12592,{b=1,f=26,lvl=55,q=4}),
 s(124983,12602,{b=1,f=8,lvl=55,q=3}),
-s(132652,22253,{b=1,f=1,lvl=55,q=3,u=15}),
-s(132666,22267,{b=1,f=4,loc=40,lvl=55,q=3,u=15}),
+s(132652,22253,{b=1,f=1,lvl=55,phase=15,q=3}),
+s(132666,22267,{b=1,f=4,loc=40,lvl=55,phase=15,q=3}),
 i(13141,{b=1,f=51,lvl=55,q=3}),
 s(128383,16674,{b=1,f=6,loc=42,lvl=58,q=3,rwp=40003,u=2}),
 s(128439,16730,{b=1,f=7,loc=42,lvl=58,q=3,rwp=40003,u=2}),
@@ -4097,11 +4097,11 @@ s(128397,16688,{b=1,f=4,loc=42,lvl=58,q=3,rwp=40003,u=2}),
 s(128430,16721,{b=1,f=5,loc=42,lvl=58,q=3,rwp=40003,u=2}),
 s(128375,16666,{b=1,f=6,loc=42,lvl=58,q=3,rwp=40003,u=2}),
 s(128415,16706,{b=1,f=5,loc=42,lvl=58,q=3,rwp=40003,u=2}),
-s(132668,22269,{b=1,f=3,lvl=55,q=3,u=15}),
+s(132668,22269,{b=1,f=3,lvl=55,phase=15,q=3}),
 s(125469,13142,{b=1,f=7,loc=45,lvl=55,q=3}),
 i(13098,{b=1,f=52,lvl=55,q=3}),
-i(22268,{b=1,f=53,lvl=55,q=3,u=15})}})})}}),
-inst(230,{awp=10200,lore="Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",lvl=44,maps={234,240},savedInstanceID=429,u=1101,zoneTextAreaIDs={2557,2577,3217,4992},g={
+i(22268,{b=1,f=53,lvl=55,phase=15,q=3})}})})}}),
+inst(230,{awp=10200,lore="Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",lvl=44,maps={234,240},phase=1101,savedInstanceID=429,zoneTextAreaIDs={2557,2577,3217,4992},g={
 h(-12,{
 ach(5788,{maps={236,237,238},minReputation={809,42000},rwp=40003,u=2}),
 ach(644,{maps={235,236,237,238,239},g={
@@ -4148,11 +4148,11 @@ qo(1,{providers={{"o",179544}}})}}),
 q(7481,{coords={
 [1444]={{75.3,43.8}}},lvl=54,maps={236,237,238},qgs={14373},r=1,rwp=40003,u=2,g={
 qo(1,{providers={{"o",179544}}})}}),
-q(7649,{cost={{"i",18780,1},{"i",18779,1}},maps={236,250,251,252,253,254,255},qgs={14368},requireSkill=164,rwp=40003,u=2,g={
+q(7649,{cost={{"i",18780,1},{"i",18779,1}},maps={236,250,251,252,253,254,255},phase=13,qgs={14368},requireSkill=164,rwp=40003,u=2,g={
 r(16745,{b=1,itemID=12727,learnedAt=300,q=3,requireSkill=164,u=2})}}),
-q(7650,{cost={{"i",18782,1},{"i",18781,1}},lvl=50,maps={236,317,476},qgs={14368},requireSkill=164,rwp=40003,u=2,g={
+q(7650,{cost={{"i",18782,1},{"i",18781,1}},lvl=50,maps={236,317,476},phase=13,qgs={14368},requireSkill=164,rwp=40003,u=2,g={
 r(16744,{b=1,itemID=12726,learnedAt=300,q=3,requireSkill=164,u=2})}}),
-q(7651,{cost={{"i",18784,1},{"i",18783,1}},lvl=50,maps={236,237,238,250,251,252,253,254,255,317},qgs={14368},requireSkill=164,rwp=40003,u=2,g={
+q(7651,{cost={{"i",18784,1},{"i",18783,1}},lvl=50,maps={236,237,238,250,251,252,253,254,255,317},phase=13,qgs={14368},requireSkill=164,rwp=40003,u=2,g={
 r(16742,{b=1,itemID=12725,learnedAt=300,q=3,requireSkill=164,u=2})}}),
 q(7494,{coords={
 [1453]={{54.8,62.6}},
@@ -4274,7 +4274,7 @@ i(18640,{f=55,q=1}),
 i(18333,{description="This still drops despite being completely worthless.",f=200,lvl=50,q=2}),
 i(18334,{description="This still drops despite being completely worthless.",f=200,lvl=50,q=2}),
 i(18332,{description="This still drops despite being completely worthless.",f=200,lvl=50,q=2}),
-i(21982,{q=1,rwp=40003,u=2})}}),
+i(21982,{phase=15,q=1,rwp=40003,u=2})}}),
 h(-19,{maps={235,236,237,238,239},providers={{"o",179547}},g={
 i(18357,{c={1},lvl=54,q=3,rwp=40003,u=2}),
 i(18360,{c={9},lvl=54,q=3,rwp=40003,u=2}),
@@ -4316,7 +4316,7 @@ i(18317,{b=1,f=51,lvl=36,q=3}),
 s(129253,18305,{b=1,f=6,loc=46,lvl=36,q=3}),
 s(129255,18307,{b=1,f=4,loc=47,lvl=36,q=3}),
 s(201129,18322,{b=1,f=5,loc=47,lvl=36,q=3}),
-i(19268,{q=3,u=13})}}),
+i(19268,{phase=13,q=3})}}),
 e(402,{npcID=11490,g={
 s(129271,18323,{b=1,f=32,lvl=36,q=3}),
 s(129256,18308,{b=1,f=5,loc=40,lvl=36,q=3}),
@@ -4324,7 +4324,7 @@ s(129267,18319,{b=1,f=5,loc=40,lvl=36,q=3}),
 s(129261,18313,{b=1,f=6,loc=40,lvl=36,q=3}),
 s(129254,18306,{b=1,f=4,loc=44,lvl=36,q=3})}}),
 n(11491,{description="Talk to him for him to break down the door."}),
-n(16097,{cost={{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
+n(16097,{cost={{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",phase=15,providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
 qo(2,{awp=10200,providers={{"i",21984}},questID=8967}),
 qo(2,{awp=10200,providers={{"i",22046}},questID=8990}),
 s(132714,22315,{awp=10200,b=1,f=23,lvl=56,q=3}),
@@ -4413,7 +4413,7 @@ s(129472,18527,{b=1,f=6,loc=44,lvl=44,q=3}),
 s(129469,18524,{b=1,f=6,loc=46,lvl=44,q=3}),
 s(129466,18521,{b=1,f=7,loc=47,lvl=44,q=3}),
 i(18522,{b=1,f=52,lvl=44,q=3}),
-i(19258,{q=3,u=13}),
+i(19258,{phase=13,q=3}),
 crit(18535,{achID=644,id=1})}}),
 o(179564,{description="Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.\n\nA full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",modelScale=3,providers={{"n",14353}},g={
 r(23079,{itemID=18655,learnedAt=275,q=2,requireSkill=202}),
@@ -4445,13 +4445,13 @@ r(22902,{itemID=18487,learnedAt=300,q=1,requireSkill=197})})}),
 h(-63,{
 s(201130,18339,{crs={11471,11472,11473,11475},f=3,lvl=40,q=3}),
 i(18340,{crs={11471,11472,11473,11475},f=51,lvl=44,q=3}),
-i(22224,{crs={11469,11470,11471,11472,11473,11475},q=1,u=15}),
+i(22224,{crs={11469,11470,11471,11472,11473,11475},phase=15,q=1}),
 s(129285,18337,{crs={11480,11483,11484,14399},f=4,loc=43,lvl=40,q=3}),
 i(18343,{crs={11458,11459,14303},f=52,lvl=40,q=2}),
 s(129292,18344,{crs={11458,11459,14303},f=5,loc=44,lvl=40,q=3}),
 s(129286,18338,{crs={11480,11483,11484,14399},f=27,lvl=40,q=3})}),
 e(408,{npcID=11487,g={
-r(27660,{itemID=22309,learnedAt=300,q=2,requireSkill=197,u=15}),
+r(27660,{itemID=22309,learnedAt=300,phase=15,q=2,requireSkill=197}),
 i(18397,{b=1,f=51,lvl=40,q=3}),
 s(129322,18374,{b=1,f=5,loc=41,lvl=40,q=3}),
 s(129298,18350,{b=1,f=3,lvl=40,q=3}),
@@ -4482,7 +4482,7 @@ s(129325,18377,{b=1,f=5,loc=44,lvl=40,q=3}),
 s(129339,18391,{b=1,f=5,loc=45,lvl=40,q=3}),
 s(129327,18379,{b=1,f=6,loc=47,lvl=40,q=3}),
 i(18370,{b=1,f=53,lvl=40,q=3}),
-r(31709,{c={11},itemID=24345,lvl=60,rank=4,rwp=40001,u=2}),
+r(31709,{c={11},itemID=24345,lvl=60,phase=17,rank=4,rwp=40001,u=2}),
 crit(546,{achID=644,id=1})}}),
 n(14506,{cost={{"i",18663,1},{"i",18629,1},{"i",18670,1}},description="|cff3399ffSTEP 1:|r Warlock with (Dreadsteed of Xoroth) FOS\n|cff3399ffSTEP 2:|r Warlock buys Xorothian Glyphs,  Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning Steppes - 8.2,35.8)\n|cff3399ffSTEP 3:|r Kill Immol'thar.\n|cff3399ffSTEP 4:|r Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.\n|cff3399ffSTEP 5:|r Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.\n|cff3399ffSTEP 6:|r Once creatures stop spawning, use Xorothian Glyphs to summon the dreadsteed.\n|cff3399ffSTEP 7:|r Kill Lord Hel'nurath & collect loot.",rwp=40003,sourceQuests={7631},u=2,g={
 s(129661,18757,{b=1,f=4,loc=41,lvl=57,q=3}),
@@ -5326,7 +5326,7 @@ q(28756,{awp=40003,coords={
 [1423]={{76.2,50.9}}},lvl=40,maxReputation={529,42000},qgs={49856},repeatable=1,sourceQuests={27464},g={
 qo(1,{awp=10300,providers={{"n",11622}}})}}),
 q(8259,{altQuests={8258},awp=10700,c={7},coords={
-[1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=40003,sourceQuests={7668},u=2,g={
+[1454]={{38.7,35.9}}},lvl=55,phase=14,qgs={13417},r=1,rwp=40003,sourceQuests={7668},u=2,g={
 s(130748,20134,{b=1,f=6,loc=40,q=4,u=2})}}),
 q(7666,{c={2},coords={
 [1453]={{48.6,50}}},lvl=60,qgs={928},r=2,repeatable=1,rwp=40003,sourceQuests={7647},u=2,g={
@@ -5446,7 +5446,7 @@ q(7668,{c={7},coords={
 qo(1,{awp=10300,crs={14516},providers={{"i",18880}},rwp=50004}),
 s(129711,18807,{b=1,f=6,loc=40,q=3,u=2})}}),
 q(8258,{altQuests={7668},awp=10700,c={7},coords={
-[1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=40003,sourceQuests={7667},u=2,g={
+[1454]={{38.7,35.9}}},lvl=55,phase=14,qgs={13417},r=1,rwp=40003,sourceQuests={7667},u=2,g={
 qo(1,{awp=10300,crs={14516},providers={{"i",18880}},rwp=50004}),
 s(130748,20134,{b=1,f=6,loc=40,q=4,u=2})}}),
 q(5462,{coords={
@@ -5486,7 +5486,7 @@ r(20035,{crs={10469},itemID=16255,learnedAt=300,q=2,requireSkill=333}),
 r(20032,{crs={10499},itemID=16254,learnedAt=300,q=3,requireSkill=333}),
 r(19102,{awp=11101,crs={11582},description="This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",itemID=15776,learnedAt=300,q=2,requireSkill=165,rwp=40003,u=2}),
 r(19098,{awp=11101,crs={10499},description="This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",itemID=15773,learnedAt=300,q=2,requireSkill=165,rwp=40003,u=2}),
-i(22526,{u=16}),
+i(22526,{phase=16}),
 i(12843,{awp=11101,b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=2,rwp=40003,u=2}),
 i(12841,{awp=11101,b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003,u=2}),
 i(12840,{awp=11101,b=1,description="Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003,u=2}),
@@ -5526,7 +5526,7 @@ i(13725,{q=1}),
 o(180794,{description="Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",g={
 r(26086,{learnedAt=285,requireSkill=197})}}),
 s(126546,14541,{b=1,f=26,lvl=40,q=3}),
-s(132793,22394,{b=1,f=28,lvl=40,q=3,u=15}),
+s(132793,22394,{b=1,f=28,lvl=40,phase=15,q=3}),
 s(129593,18689,{b=1,f=3,lvl=40,q=3}),
 s(128410,16701,{b=1,f=4,loc=41,lvl=55,q=3,rwp=40003,u=2}),
 s(126553,14548,{b=1,f=6,loc=41,lvl=40,q=3}),
@@ -5573,7 +5573,7 @@ s(126516,14502,{b=1,f=5,loc=45,lvl=40,q=3}),
 s(126527,14522,{b=1,f=6,loc=46,lvl=40,q=3}),
 s(129598,18694,{b=1,f=6,loc=47,lvl=40,q=3}),
 crit(548,{achID=645,awp=30002,id=1})}}),
-n(16118,{cost={{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.",providers={{"i",22057}},rwp=40003,u=2,u_providers=1,g={
+n(16118,{cost={{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.",phase=15,providers={{"i",22057}},rwp=40003,u=2,u_providers=1,g={
 s(132731,22332,{awp=10300,b=1,f=25,lvl=40,q=3}),
 s(132732,22333,{awp=10300,b=1,f=24,lvl=40,q=3}),
 s(132702,22303,{b=1,c={5,8,9},f=4,loc=46,lvl=57,q=3,u=2}),
@@ -5605,8 +5605,8 @@ s(126629,14626,{b=1,f=4,loc=42,lvl=40,q=3}),
 s(126632,14629,{b=1,f=4,loc=43,lvl=40,q=3}),
 s(126635,14632,{b=1,f=4,loc=46,lvl=40,q=3}),
 s(126634,14631,{b=1,f=4,loc=47,lvl=40,q=3}),
-i(23201,{b=1,c={2,7,11},lvl=40,q=3,u=15}),
-i(23200,{b=1,c={2,7,11},lvl=40,q=3,u=15})}}),
+i(23201,{b=1,c={2,7,11},lvl=40,phase=15,q=3}),
+i(23200,{b=1,c={2,7,11},lvl=40,phase=15,q=3})}}),
 n(10505,{awp=10300,rwp=50004,g={
 s(128419,16710,{f=5,loc=43,lvl=52,q=3,rwp=40003,u=2})}}),
 n(11261,{awp=10300,rwp=50004,g={
@@ -5639,8 +5639,8 @@ s(126098,13944,{b=1,f=5,loc=42,lvl=40,q=3}),
 s(126105,13951,{b=1,f=7,loc=43,lvl=40,q=3}),
 s(126104,13950,{b=1,description="This item seems to have disappeared in Classic. If you get this item in any game flavor, please screenshot this and send it directly to @Crieve on Discord!",f=6,loc=45,lvl=40,q=3,rwp=20001,u=2}),
 s(125677,13398,{b=1,f=5,loc=47,lvl=40,q=3}),
-i(22433,{b=1,f=52,lvl=40,q=3,u=15}),
-i(19276,{q=3,u=13}),
+i(22433,{b=1,f=52,lvl=40,phase=15,q=3}),
+i(19276,{phase=13,q=3}),
 crit(549,{achID=645,awp=30002,id=1})}})}}),
 inst(64,{coords={
 [1421]={{44.79,67.82}}},lore="During the Third War, the wizards of the Kirin Tor battled against the undead armies of the Scourge. When the wizards of Dalaran died in battle, they would rise soon after - adding their former might to the growing Scourge. Frustrated by their lack of progress (and against the advice of his peers) the Archmage, Arugal elected to summon extra-dimensional entities to bolster Dalaran's diminishing ranks. Arugal's summoning brought the ravenous worgen into the world of Azeroth. The feral wolf-men slaughtered not only the Scourge, but quickly turned on the wizards themselves. The worgen sieged the keep of the noble, Baron Silverlaine. Situated above the tiny hamlet of Pyrewood, the keep quickly fell into shadow and ruin. Driven mad with guilt, Arugal adopted the worgen as his children and retreated to the newly dubbed 'Shadowfang Keep'. It's said he still resides there, protected by his massive pet, Fenrus - and haunted by the vengeful ghost of Baron Silverlaine.",lvl=14,maps={310,311,312,313,314,315,316},savedInstanceID=33,zoneTextAreaID=209,g={
@@ -6057,7 +6057,7 @@ s(208659,63458,{b=1,f=7,loc=42,lvl=85,q=3}),
 s(208658,63457,{b=1,f=7,loc=43,lvl=85,q=3}),
 s(208664,63464,{b=1,f=7,loc=46,lvl=85,q=3}),
 i(63460,{b=1,lvl=85,q=3,rwp=50004})}})}}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_470595)(
-h(-66,{awp=40003,lvl=85,u=41,g={
+h(-66,{awp=40003,lvl=85,phase=41,g={
 e(100,{npcID=46964,g={
 ach(41147,{
 crit(71212,{achID=41148,awp=40200,id=8})})}})}}))}}),
@@ -6173,7 +6173,7 @@ h(-56,{
 o(181085,{
 i(13180,{b=1,q=1})})}),
 h(-63,{
-i(22526,{u=16}),
+i(22526,{phase=16}),
 i(12843,{b=1,q=2,rwp=40003,u=2}),
 i(12841,{b=1,q=1,rwp=40003,u=2}),
 i(12840,{b=1,q=1,rwp=40003,u=2}),
@@ -6243,12 +6243,12 @@ i(13351,{q=1,rwp=40003,u=2}),
 r(16983,{awp=30002,description="You must be a Blacksmith in order to loot this from the Plans on the floor.",itemID=12827,learnedAt=285,q=2,requireSkill=164})}}),
 e(446,{npcID=10997,g={
 r(16995,{itemID=12839,learnedAt=300,q=3,requireSkill=164}),
-s(132805,22406,{b=1,f=28,lvl=42,q=3,u=15}),
-s(132803,22404,{b=1,f=34,lvl=42,q=3,u=15}),
+s(132805,22406,{b=1,f=28,lvl=42,phase=15,q=3}),
+s(132803,22404,{b=1,f=34,lvl=42,phase=15,q=3}),
 s(125659,13380,{b=1,f=31,lvl=42,q=3}),
-s(132806,22407,{b=1,f=5,loc=40,lvl=42,q=3,u=15}),
-i(22403,{b=1,f=51,lvl=42,q=3,u=15}),
-s(132804,22405,{b=1,f=4,loc=41,lvl=42,q=3,u=15}),
+s(132806,22407,{b=1,f=5,loc=40,lvl=42,phase=15,q=3}),
+i(22403,{b=1,f=51,lvl=42,phase=15,q=3}),
+s(132804,22405,{b=1,f=4,loc=41,lvl=42,phase=15,q=3}),
 s(128417,16708,{b=1,f=5,loc=41,lvl=55,q=3,rwp=40003,u=2}),
 s(129625,18721,{b=1,f=6,loc=45,lvl=42,q=3}),
 s(125660,13381,{b=1,f=7,loc=47,lvl=42,q=3}),
@@ -6256,7 +6256,7 @@ i(13382,{b=1,f=53,lvl=42,q=3})}}),
 e(448,{npcID=10811,g={
 i(65615,{awp=40003,q=1}),
 i(14679,{q=1}),
-r(28612,{c={8},itemID=22897,lvl=60,rank=7,rwp=40001,u=2}),
+r(28612,{c={8},itemID=22897,lvl=60,phase=16,rank=7,rwp=40001,u=2}),
 s(125664,13385,{b=1,f=1,lvl=42,q=3}),
 s(125665,13386,{b=1,f=3,lvl=42,q=3}),
 s(128401,16692,{f=4,loc=44,lvl=54,q=3,rwp=40003,u=2}),
@@ -6277,7 +6277,7 @@ s(129624,18720,{b=1,f=4,loc=41,lvl=42,q=3}),
 s(125637,13358,{b=1,f=5,loc=41,lvl=42,q=3}),
 s(125648,13369,{b=1,f=4,loc=47,lvl=42,q=3}),
 s(128434,16725,{b=1,f=7,loc=47,lvl=54,q=3,rwp=40003,u=2})}}),
-n(16102,{awp=11101,cost={{"i",22051,1}},crs={16101},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits. Unfortunately, after the modifications made to the instance with 4.0.3, these drops become truly unobtainable even with the brazier.",providers={{"i",22057},{"o",181083}},rwp=40003,u=2,g={
+n(16102,{awp=11101,cost={{"i",22051,1}},crs={16101},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits. Unfortunately, after the modifications made to the instance with 4.0.3, these drops become truly unobtainable even with the brazier.",phase=15,providers={{"i",22057},{"o",181083}},rwp=40003,u=2,g={
 qo(2,{providers={{"i",21984}},questID=8968,u=2}),
 qo(2,{providers={{"i",22046}},questID=8991,u=2}),
 s(132728,22329,{b=1,f=1,lvl=58,q=3,u=2}),
@@ -6285,7 +6285,7 @@ i(22327,{b=1,f=51,lvl=58,q=3,u=2}),
 s(201213,22301,{b=1,c={5,8,9},f=4,loc=42,lvl=58,q=3,u=2}),
 s(132727,22328,{b=1,f=7,loc=46,lvl=58,q=3,u=2}),
 i(22334,{b=1,f=52,lvl=40,q=3,u=2})}}),
-n(16387,{description="Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",rwp=30002,u=2,g={
+n(16387,{description="Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",phase=16,rwp=30002,u=2,g={
 s(133135,22736,{b=1,collectible=false,f=25,lvl=60,q=5,u=2})}})}}),
 h(-366,{coords={
 [1423]={{43.76,17.52}}},mapID=318,providers={{"o",175369}},sym={{"select","instanceID",236},{"pop"},{"contains","headerID",-12,-45,-63}},g={
@@ -6344,7 +6344,7 @@ s(129631,18727,{b=1,f=4,loc=40,lvl=48,q=3}),
 s(125655,13376,{b=1,f=3,lvl=48,q=3}),
 s(201136,18726,{b=1,f=5,loc=43,lvl=48,q=3}),
 s(129626,18722,{b=1,f=7,loc=44,lvl=48,q=3}),
-i(23198,{b=1,c={7,11},lvl=48,q=3,rwp=50004,u=15})}}),
+i(23198,{b=1,c={7,11},lvl=48,phase=15,q=3,rwp=50004})}}),
 e(455,{npcID=10439,g={
 i(15880,{q=1}),
 s(125651,13372,{b=1,f=28,lvl=48,q=3}),
@@ -6360,16 +6360,16 @@ ach(729,{providers={{"i",13335}}}),
 mnt(17481,{b=1,itemID=13335,lvl=40,q=4}),
 s(125754,13505,{b=1,f=26,lvl=48,q=4}),
 s(125647,13368,{b=1,f=20,lvl=48,q=3}),
-s(132807,22408,{b=1,f=27,lvl=48,q=3,u=15}),
+s(132807,22408,{b=1,f=27,lvl=48,phase=15,q=3}),
 s(125628,13349,{b=1,f=23,lvl=48,q=3}),
 s(125640,13361,{b=1,f=25,lvl=48,q=3}),
-s(132810,22411,{b=1,f=7,loc=40,lvl=48,q=3,u=15}),
-s(132811,22412,{b=1,f=4,loc=41,lvl=48,q=3,u=15}),
+s(132810,22411,{b=1,f=7,loc=40,lvl=48,phase=15,q=3}),
+s(132811,22412,{b=1,f=4,loc=41,lvl=48,phase=15,q=3}),
 s(125619,13340,{b=1,f=3,lvl=48,q=3}),
 s(201012,13346,{b=1,f=4,loc=42,lvl=48,q=3}),
-s(132808,22409,{b=1,f=5,loc=42,lvl=48,q=3,u=15}),
+s(132808,22409,{b=1,f=5,loc=42,lvl=48,phase=15,q=3}),
 s(201011,13344,{b=1,f=6,loc=44,lvl=48,q=3}),
-s(132809,22410,{b=1,f=6,loc=44,lvl=48,q=3,u=15}),
+s(132809,22410,{b=1,f=6,loc=44,lvl=48,phase=15,q=3}),
 i(13345,{b=1,f=52,lvl=48,q=3}),
 i(66049,{awp=40003,b=1,q=3,rwp=50004}),
 i(66050,{awp=40003,b=1,q=3,rwp=50004}),
@@ -6579,7 +6579,7 @@ s(208680,63483,{b=1,f=7,loc=47,lvl=85,q=3}),
 s(209579,65178,{b=1,f=5,loc=47,lvl=85,q=3}),
 i(63487,{b=1,lvl=85,q=3,rwp=50004}),
 i(63480,{b=1,lvl=85,q=3,rwp=50004})}})}}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_470595)(
-h(-66,{awp=40003,u=41,g={
+h(-66,{awp=40003,phase=41,g={
 e(95,{npcID=49541,g={
 ach(41146,{
 crit(71209,{achID=41148,awp=40200,id=5})})}})}}))}}),
@@ -6657,7 +6657,7 @@ inst(237,{coords={
 [1435]={{76,45.2}}},lore="Over a thousand years ago, the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, attempted to bring back an ancient blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire buckled in upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows. There they erected a great temple to Hakkar - where they could prepare for his arrival into the physical world. The great dragon Aspect, Ysera, learned of the Atal'ai's plans and smashed the temple beneath the marshes. To this day, the temple's drowned ruins are guarded by the green dragons who prevent anyone from getting in or out. However, it is believed that some of the fanatical Atal'ai may have survived Ysera's wrath - and recommitted themselves to the dark service of Hakkar.",lvl=45,mapID=220,savedInstanceID=109,g={
 h(-45,{
 q(9053,{c={11},coords={
-[1449]={{71.6,76}}},lvl=50,qgs={9619},rwp=40003,sourceQuests={9051},u=2,g={
+[1449]={{71.6,76}}},lvl=50,phase=14,qgs={9619},rwp=40003,sourceQuests={9051},u=2,g={
 qo(1,{providers={{"i",22444}},u=2}),
 s(203106,53560,{b=1,f=28,q=2,u=1}),
 s(132857,22458,{b=1,f=28,q=3,u=2}),
@@ -6670,13 +6670,13 @@ q(10593,{awp=20003,c={2},coords={
 qo(1,{providers={{"i",22444}},u=2}),
 i(30696,{b=1,f=53,q=3,u=2})}}),
 q(8257,{c={5},coords={
-[1447]={{42.2,42.6}}},lvl=50,qgs={8405},rwp=40003,sourceQuests={8256},u=2,g={
+[1447]={{42.2,42.6}}},lvl=50,phase=14,qgs={8405},rwp=40003,sourceQuests={8256},u=2,g={
 qo(1,{crs={5719},providers={{"i",20025}},u=2}),
 i(19990,{b=1,f=53,q=3,u=2}),
 i(20006,{b=1,f=52,q=3,u=2}),
 s(130696,20082,{b=1,f=27,q=3,u=2})}}),
 q(8413,{c={7},coords={
-[1416]={{80.4,66.8}}},lvl=50,qgs={6176},rwp=40003,sourceQuests={8412},u=2,g={
+[1416]={{80.4,66.8}}},lvl=50,phase=14,qgs={6176},rwp=40003,sourceQuests={8412},u=2,g={
 qo(1,{providers={{"i",20606}},u=2}),
 qo(2,{providers={{"i",20607}},u=2}),
 qo(3,{providers={{"i",20608}},u=2}),
@@ -6684,7 +6684,7 @@ s(130865,20369,{b=1,f=6,loc=44,q=3,u=2}),
 i(20503,{b=1,f=53,q=3,u=2}),
 s(131051,20556,{b=1,f=28,q=3,u=2})}}),
 q(8253,{c={8},coords={
-[1447]={{29.6,40.6}}},lvl=50,qgs={8379},rwp=40003,sourceQuests={8252},u=2,g={
+[1447]={{29.6,40.6}}},lvl=50,phase=14,qgs={8379},rwp=40003,sourceQuests={8252},u=2,g={
 qo(1,{crs={5719},providers={{"i",20085}},u=2}),
 s(130649,20035,{b=1,f=20,q=3,u=2}),
 i(20036,{b=1,f=53,q=3,u=2}),
@@ -6693,7 +6693,7 @@ q(27605,{awp=40003,lvl=50,qgs={46077},sourceQuests={27915},g={
 qo(1,{providers={{"n",5709}}}),
 i(65931,{b=1,f=53,q=3})}}),
 q(8418,{c={2},coords={
-[1422]={{42.8,84}}},lvl=50,qgs={10838},r=2,rwp=40003,sourceQuests={8416},u=2,g={
+[1422]={{42.8,84}}},lvl=50,phase=14,qgs={10838},r=2,rwp=40003,sourceQuests={8416},u=2,g={
 qo(1,{providers={{"i",20606}},u=2}),
 qo(2,{providers={{"i",20607}},u=2}),
 qo(3,{providers={{"i",20608}},u=2}),
@@ -6720,7 +6720,7 @@ s(124104,11123,{b=1,f=4,loc=46,q=3,u=2})}}),
 q(27604,{awp=40003,lvl=50,qgs={46077},g={
 qo(1,{providers={{"i",6212}}})}}),
 q(8236,{c={4},coords={
-[1447]={{29.6,40.6}}},lvl=50,maps={1424},qgs={8379},rwp=40003,sourceQuests={8235},u=2,g={
+[1447]={{29.6,40.6}}},lvl=50,maps={1424},phase=14,qgs={8379},rwp=40003,sourceQuests={8235},u=2,g={
 qo(1,{crs={5719},providers={{"i",20022}},u=2}),
 s(130596,19982,{b=1,f=3,q=3,u=2}),
 s(130598,19984,{b=1,f=5,loc=40,q=3,u=2}),
@@ -6738,7 +6738,7 @@ s(123948,10749,{b=1,f=7,loc=40,q=3,u=2}),
 s(123949,10750,{b=1,f=20,q=3,u=2}),
 s(123950,10751,{b=1,f=4,loc=40,q=3,u=2})}}),
 q(8232,{c={3},coords={
-[1447]={{42.2,42.6}}},lvl=50,qgs={8405},rwp=40003,sourceQuests={8231},u=2,g={
+[1447]={{42.2,42.6}}},lvl=50,phase=14,qgs={8405},rwp=40003,sourceQuests={8231},u=2,g={
 qo(1,{crs={5719},providers={{"i",20019}},u=2}),
 i(19991,{b=1,f=53,q=3,u=2}),
 i(19992,{b=1,f=53,q=3,u=2}),
@@ -6748,7 +6748,7 @@ q(1445,{coords={
 qo(1,{providers={{"i",6181}},u=2}),
 i(1490,{b=1,f=53,q=2,u=2})}}),
 q(8422,{c={9},coords={
-[1448]={{41.6,45}}},lvl=50,qgs={14470},rwp=40003,sourceQuests={8421},u=2,g={
+[1448]={{41.6,45}}},lvl=50,phase=14,qgs={14470},rwp=40003,sourceQuests={8421},u=2,g={
 qo(1,{providers={{"i",20606}},u=2}),
 qo(2,{providers={{"i",20607}},u=2}),
 qo(3,{providers={{"i",20608}},u=2}),
@@ -6756,7 +6756,7 @@ i(20534,{b=1,f=53,q=3,u=2}),
 s(201178,20530,{b=1,f=4,loc=42,q=3,u=2}),
 s(131031,20536,{b=1,f=28,q=3,u=2})}}),
 q(8425,{c={1},coords={
-[1435]={{34.3,66.2}}},lvl=50,qgs={7572},rwp=40003,sourceQuests={8424},u=2,g={
+[1435]={{34.3,66.2}}},lvl=50,phase=14,qgs={7572},rwp=40003,sourceQuests={8424},u=2,g={
 qo(1,{providers={{"i",20606}},u=2}),
 qo(2,{providers={{"i",20607}},u=2}),
 qo(3,{providers={{"i",20608}},u=2}),
@@ -7294,7 +7294,7 @@ e(483,{npcID=7273,g={
 i(8707,{q=1}),
 s(122909,9467,{b=1,f=20,lvl=44,q=3}),
 s(122911,9469,{b=1,f=6,loc=42,lvl=44,q=3})}})}})}}),
-x(2,{awp=20003,u=17,g={
+x(2,{awp=20003,phase=17,g={
 h(-12,{
 ach(1287,{awp=30002}),
 ach(1284,{awp=30002}),
@@ -7325,7 +7325,7 @@ s(141076,30730,{f=5,loc=42,lvl=70,q=4}),
 s(141071,30725,{f=4,loc=44,lvl=70,q=4}),
 s(141073,30727,{f=4,loc=46,lvl=70,q=4})}})}}),
 inst(745,{coords={
-[1430]={{46.87,74.69}}},description="The best route for a full clear:\n1. Turn right immediately after going through the Gatehouse Door and enter the Servant's Quarters.\n2. From the western bat room goes a passage up to the Guest Chambers. Ignore the passage to the right until this section is cleared.\n3. Ignore the Opera Hall, go downstairs through the ballroom to Moroes and further through the kitchen and stables for Attumen the Huntsman. Here you will also find the practical vendor Koren (requires Honored with The Violet Eye).\n4. Back to the Gatehouse and upstairs to the Opera Hall, from here is the raid linear to last boss.",isLockoutShared=1,isRaid=1,lore="Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",lvl=68,maps={350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366},savedInstanceID=532,u=17,g={
+[1430]={{46.87,74.69}}},description="The best route for a full clear:\n1. Turn right immediately after going through the Gatehouse Door and enter the Servant's Quarters.\n2. From the western bat room goes a passage up to the Guest Chambers. Ignore the passage to the right until this section is cleared.\n3. Ignore the Opera Hall, go downstairs through the ballroom to Moroes and further through the kitchen and stables for Attumen the Huntsman. Here you will also find the practical vendor Koren (requires Honored with The Violet Eye).\n4. Back to the Gatehouse and upstairs to the Opera Hall, from here is the raid linear to last boss.",isLockoutShared=1,isRaid=1,lore="Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",lvl=68,maps={350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366},savedInstanceID=532,g={
 h(-12,{
 ach(960,{minReputation={967,42000}})}),
 h(-31,{
@@ -7677,7 +7677,7 @@ s(139111,28765,{b=1,f=3,lvl=70,q=4}),
 i(28763,{b=1,f=52,lvl=70,q=4}),
 i(28757,{b=1,f=52,lvl=70,q=4})}})}}),
 inst(746,{coords={
-[1949]={{69.31,23.67}}},isLockoutShared=1,isRaid=1,lore="When the infamous Dragon Aspect, Deathwing, discovered the Dark Portal and Draenor, he felt sure that few of Draenor's denizens would dare challenge the black dragonflight, so he scattered clutches of his eggs throughout the world.\n\nDeathwing made a serious miscalculation when he chose to leave his eggs under meager guardianship in Blade's Edge Mountains. The guardian dragons were torn from the sky by the gronn living in Blade's Edge, and the leader of the gronn, Gruul, impaled the wyrms he fought on the stone spires of the mountains.\n\nToday Gruul the Dragonkiller is worshipped as a deity by the ogres of Blade's Edge Mountains. His powerful sons ravage both the spires of their home and the plains of Nagrand. Gruul's unparalleled strength and experience in battle would pose a serious threat if he ever chose to attack Horde or Alliance forces in Outland.",lvl=68,mapID=330,savedInstanceID=565,u=17,g={
+[1949]={{69.31,23.67}}},isLockoutShared=1,isRaid=1,lore="When the infamous Dragon Aspect, Deathwing, discovered the Dark Portal and Draenor, he felt sure that few of Draenor's denizens would dare challenge the black dragonflight, so he scattered clutches of his eggs throughout the world.\n\nDeathwing made a serious miscalculation when he chose to leave his eggs under meager guardianship in Blade's Edge Mountains. The guardian dragons were torn from the sky by the gronn living in Blade's Edge, and the leader of the gronn, Gruul, impaled the wyrms he fought on the stone spires of the mountains.\n\nToday Gruul the Dragonkiller is worshipped as a deity by the ogres of Blade's Edge Mountains. His powerful sons ravage both the spires of their home and the plains of Nagrand. Gruul's unparalleled strength and experience in battle would pose a serious threat if he ever chose to attack Horde or Alliance forces in Outland.",lvl=68,mapID=330,savedInstanceID=565,g={
 e(1564,{npcID=18831,g={
 i(29763,{b=1,c={2,4,7},lvl=70,q=4}),
 i(29764,{b=1,c={1,5,11},lvl=70,q=4}),
@@ -7710,7 +7710,7 @@ i(28830,{b=1,f=53,lvl=70,q=4}),
 i(28823,{b=1,f=53,lvl=70,q=4}),
 i(31750,{q=1})}})}}),
 inst(747,{coords={
-[1944]={{47.51,52.08}}},isLockoutShared=1,isRaid=1,lore="After the Legion came to Outland, Magtheridon controlled all but small pockets of Outland. Even so, he was taken largely by surprise when Illidan and his allies conquered the Black Temple. Many believed that Magtheridon had been slain in the attack, but, when Illidan discovered that Magtheridon's blood had a transformative, corrupting effect on orcs, the beaten pit lord was dragged to Hellfire Citadel.\n\nBound by chains both physical and magical, Magtheridon survives, at the brink of death. Each day, Illidan's minions drain his tainted blood, pooling it for a purpose as malevolent as Magtheridon himself: the creation of a new army of barbaric fel orcs.",lvl=68,mapID=331,savedInstanceID=544,u=17,g={
+[1944]={{47.51,52.08}}},isLockoutShared=1,isRaid=1,lore="After the Legion came to Outland, Magtheridon controlled all but small pockets of Outland. Even so, he was taken largely by surprise when Illidan and his allies conquered the Black Temple. Many believed that Magtheridon had been slain in the attack, but, when Illidan discovered that Magtheridon's blood had a transformative, corrupting effect on orcs, the beaten pit lord was dragged to Hellfire Citadel.\n\nBound by chains both physical and magical, Magtheridon survives, at the brink of death. Each day, Illidan's minions drain his tainted blood, pooling it for a purpose as malevolent as Magtheridon himself: the creation of a new army of barbaric fel orcs.",lvl=68,mapID=331,savedInstanceID=544,g={
 h(-45,{
 q(11002,{maps={1944},qss={32385},r=2,g={
 i(28792,{b=1,f=52,q=4}),
@@ -7769,7 +7769,7 @@ i(23439,{awp=20003,q=3}),
 i(23438,{awp=20003,q=3}),
 i(23437,{awp=20003,q=3})}})}})}}),
 inst(748,{coords={
-[1946]={{50.2,41},{51.9,32.9}}},isLockoutShared=1,isRaid=1,lore="Whoever controls the water controls Outland.\n\nThese are the words of Lord Illidan Stormrage to his most trusted lieutenant, Lady Vashj. Shortly after the Third War, when Illidan requested the aid of the naga, a group of naga led by Lady Vashj answered his call. Ever since, Vashj has displayed a fierce dedication to Illidan.\n\nNow the naga witch carefully monitors Coilfang's operations from her seat of power within Serpentshrine Cavern. Far more at home here among the waters of the reservoir than locked within the cold stone walls of Black Temple, Vashj maintains a close eye on her minions and personally oversees the draining of Zangarmarsh.\n\nWhether her loyalties belong to Illidan alone, however, remains to be seen.",lvl=68,mapID=332,savedInstanceID=548,u=18,g={
+[1946]={{50.2,41},{51.9,32.9}}},isLockoutShared=1,isRaid=1,lore="Whoever controls the water controls Outland.\n\nThese are the words of Lord Illidan Stormrage to his most trusted lieutenant, Lady Vashj. Shortly after the Third War, when Illidan requested the aid of the naga, a group of naga led by Lady Vashj answered his call. Ever since, Vashj has displayed a fierce dedication to Illidan.\n\nNow the naga witch carefully monitors Coilfang's operations from her seat of power within Serpentshrine Cavern. Far more at home here among the waters of the reservoir than locked within the cold stone walls of Black Temple, Vashj maintains a close eye on her minions and personally oversees the draining of Zangarmarsh.\n\nWhether her loyalties belong to Illidan alone, however, remains to be seen.",lvl=68,mapID=332,phase=18,savedInstanceID=548,g={
 h(-45,{
 q(10944,{awp=20100,coords={
 [332]={{48,18.2}}},description="After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",maps={1948},qgs={22820},sourceQuests={10708}})}),
@@ -7816,7 +7816,7 @@ i(30629,{b=1,f=53,lvl=70,q=4}),
 i(30051,{b=1,c={2,7,11},lvl=70,q=4,rwp=50004})}}),
 e(1568,{npcID=21217,g={
 ach(144,{awp=30002,requireSkill=356,g={
-crit(5671,{achID=1516,awp=30003,id=1,u=30})}}),
+crit(5671,{achID=1516,awp=30003,id=1,phase=30})}}),
 s(140404,30058,{b=1,f=23,lvl=70,q=4}),
 i(30059,{b=1,f=51,lvl=70,q=4}),
 s(140411,30065,{b=1,f=7,loc=42,lvl=70,q=4}),
@@ -7887,7 +7887,7 @@ i(32895,{b=1,lvl=70,q=4,rwp=40003,u=2,g={
 i(32897,{q=2})}}),
 i(29906,{f=55,q=1})}})}}),
 inst(749,{coords={
-[1953]={{73.73,63.71}}},isLockoutShared=1,isRaid=1,lore="With Outland serving as the strategic battlefront in the ongoing Burning Crusade, the Naaru used Tempest Keep to reach the shattered land. However, when the Naaru set out from their stronghold, Prince Kael'thas and his blood elves quickly raided the dimensional fortress and assumed control over its satellite structures. Guided by some unknown purpose, Kael'thas manipulates the keep's otherworldly technologies, using them to harness the chaotic energies of the Netherstorm itself.",lvl=68,mapID=334,savedInstanceID=550,u=18,g={
+[1953]={{73.73,63.71}}},isLockoutShared=1,isRaid=1,lore="With Outland serving as the strategic battlefront in the ongoing Burning Crusade, the Naaru used Tempest Keep to reach the shattered land. However, when the Naaru set out from their stronghold, Prince Kael'thas and his blood elves quickly raided the dimensional fortress and assumed control over its satellite structures. Guided by some unknown purpose, Kael'thas manipulates the keep's otherworldly technologies, using them to harness the chaotic energies of the Netherstorm itself.",lvl=68,mapID=334,phase=18,savedInstanceID=550,g={
 h(-45,{
 q(11007,{qss={32405},g={
 i(30018,{b=1,f=51,q=4}),
@@ -7998,7 +7998,7 @@ i(32897,{q=2})}}),
 i(29905,{f=55,q=1})}})}}),
 inst(750,{coords={
 [75]={{36,16.1}},
-[1446]={{64.7,49.9}}},isLockoutShared=1,isRaid=1,lore="The Battle of Mount Hyjal was the final bloody conflict that concluded the Third War. The battle was the culmination of years of fighting between the various mortal forces of Azeroth and the demonic and undead armies of the Burning Legion, and saw the demons' invasion end in decisive failure.\n\nSpecifically, the event took place as part of the invasion of Kalimdor phase of the war, where Archimonde struck directly at the World Tree Nordrassil on Mount Hyjal as part of his endgame. The battle began when a mortal coalition of night elves, Alliance, and New Horde elements arrayed themselves before the World Tree to halt Archimonde's advance. Though they were unable to stand against the Legion indefinitely, they aimed to buy time for Malfurion Stormrage to prepare a proper defense.",lvl=68,mapID=329,savedInstanceID=534,u=19,zoneTextAreaID=3606,g={
+[1446]={{64.7,49.9}}},isLockoutShared=1,isRaid=1,lore="The Battle of Mount Hyjal was the final bloody conflict that concluded the Third War. The battle was the culmination of years of fighting between the various mortal forces of Azeroth and the demonic and undead armies of the Burning Legion, and saw the demons' invasion end in decisive failure.\n\nSpecifically, the event took place as part of the invasion of Kalimdor phase of the war, where Archimonde struck directly at the World Tree Nordrassil on Mount Hyjal as part of his endgame. The battle began when a mortal coalition of night elves, Alliance, and New Horde elements arrayed themselves before the World Tree to halt Archimonde's advance. Though they were unable to stand against the Legion indefinitely, they aimed to buy time for Malfurion Stormrage to prepare a proper defense.",lvl=68,mapID=329,phase=19,savedInstanceID=534,zoneTextAreaID=3606,g={
 h(-12,{
 ach(959,{maps={75},minReputation={990,42000}})}),
 h(-31,{
@@ -8096,18 +8096,18 @@ r(39716,{awp=20100,b=1,itemID=32288,learnedAt=375,minReputation={990,3000},q=4,r
 r(39716,{b=1,itemID=32287,learnedAt=375,minReputation={990,3000},q=4,requireSkill=755}),
 r(39713,{awp=20100,b=1,itemID=32294,learnedAt=375,minReputation={990,3000},q=4,requireSkill=755,rwp=40003,u=2}),
 r(39713,{b=1,itemID=32284,learnedAt=375,minReputation={990,3000},q=4,requireSkill=755}),
-r(47053,{awp=20400,b=1,itemID=35765,learnedAt=375,minReputation={990,9000},q=4,requireSkill=755,u=21}),
+r(47053,{awp=20400,b=1,itemID=35765,learnedAt=375,minReputation={990,9000},phase=21,q=4,requireSkill=755}),
 r(39736,{awp=20100,b=1,itemID=32300,learnedAt=375,minReputation={990,9000},q=4,requireSkill=755,rwp=40003,u=2}),
 r(39736,{b=1,itemID=32306,learnedAt=375,minReputation={990,9000},q=4,requireSkill=755}),
 r(39742,{b=1,itemID=32312,learnedAt=375,minReputation={990,9000},q=4,requireSkill=755}),
-r(47056,{awp=20400,b=1,itemID=35763,learnedAt=375,minReputation={990,9000},q=4,requireSkill=755,u=21}),
+r(47056,{awp=20400,b=1,itemID=35763,learnedAt=375,minReputation={990,9000},phase=21,q=4,requireSkill=755}),
 r(39734,{b=1,itemID=32304,learnedAt=375,minReputation={990,9000},q=4,requireSkill=755}),
 r(39741,{b=1,itemID=32311,learnedAt=375,minReputation={990,9000},q=4,requireSkill=755}),
 r(39740,{b=1,itemID=32310,learnedAt=375,minReputation={990,9000},q=4,requireSkill=755}),
 r(47055,{awp=20100,b=1,itemID=32305,learnedAt=375,minReputation={990,9000},q=4,requireSkill=755,rwp=40003,u=2}),
-r(47055,{awp=20400,b=1,itemID=35762,learnedAt=375,minReputation={990,9000},q=4,requireSkill=755,u=21}),
+r(47055,{awp=20400,b=1,itemID=35762,learnedAt=375,minReputation={990,9000},phase=21,q=4,requireSkill=755}),
 r(39728,{awp=20100,b=1,itemID=32299,learnedAt=375,minReputation={990,9000},q=4,requireSkill=755,rwp=40003,u=2}),
-r(47054,{awp=20400,b=1,itemID=35764,learnedAt=375,minReputation={990,9000},q=4,requireSkill=755,u=21}),
+r(47054,{awp=20400,b=1,itemID=35764,learnedAt=375,minReputation={990,9000},phase=21,q=4,requireSkill=755}),
 r(39731,{b=1,itemID=32301,learnedAt=375,minReputation={990,9000},q=4,requireSkill=755}),
 r(39741,{awp=20100,b=1,itemID=32302,learnedAt=375,minReputation={990,21000},q=4,requireSkill=755,rwp=40003,u=2}),
 r(39738,{b=1,itemID=32308,learnedAt=375,minReputation={990,21000},q=4,requireSkill=755}),
@@ -8307,7 +8307,7 @@ s(141250,30904,{b=1,f=7,loc=42,lvl=70,q=4}),
 s(141258,30912,{b=1,f=4,loc=46,lvl=70,q=4}),
 s(141249,30903,{b=1,f=7,loc=46,lvl=70,q=4})}})}}),
 inst(751,{awp=20100,coords={
-[1948]={{71,46.5}}},isRaid=1,lore="When Illidan the Betrayer fled to Outland after the Third War, he ousted the Temple's ruler - the pit lord Magtheridon - and claimed his throne as the lord of the blasted world. Following his defeat at the hands of Arthas Menethil, Illidan returned to the Black Temple where he resides to this day. Neither his activities nor mental state are known at this time. While Malfurion has stated that Illidan has become mad and delusional, believing that he killed Arthas and accomplished the mission Kil'jaeden had sent him on.\n\nDespite the bitter retribution of his enemies, Illidan has begun to tighten his grip on Outland from within the profaned sanctum, where he awaits any and all who would challenge his rule.",lvl=68,maps={339,340,341,342,343,344,345,346,759},savedInstanceID=564,u=19,g={
+[1948]={{71,46.5}}},isRaid=1,lore="When Illidan the Betrayer fled to Outland after the Third War, he ousted the Temple's ruler - the pit lord Magtheridon - and claimed his throne as the lord of the blasted world. Following his defeat at the hands of Arthas Menethil, Illidan returned to the Black Temple where he resides to this day. Neither his activities nor mental state are known at this time. While Malfurion has stated that Illidan has become mad and delusional, believing that he killed Arthas and accomplished the mission Kil'jaeden had sent him on.\n\nDespite the bitter retribution of his enemies, Illidan has begun to tighten his grip on Outland from within the profaned sanctum, where he awaits any and all who would challenge his rule.",lvl=68,maps={339,340,341,342,343,344,345,346,759},phase=19,savedInstanceID=564,g={
 h(-12,{
 ach(958,{minReputation={1012,42000}})}),
 h(-31,{
@@ -8498,9 +8498,9 @@ e(1590,{npcID=22917,g={
 ach(697,{
 crit(4021,{achID=1286,id=1})}),
 gach(5091,{awp=40003}),
-ach(426,{c={1,4,6},description="Once you have both, simply equip them for this achievement.",providers={{"i",32837},{"i",32838}},u=1902}),
-s(143181,32837,{b=1,c={1,4,6},f=25,lvl=70,q=5,u=1902}),
-s(143182,32838,{b=1,c={1,4,6},f=25,lvl=70,q=5,u=1902}),
+ach(426,{c={1,4,6},description="Once you have both, simply equip them for this achievement.",phase=1902,providers={{"i",32837},{"i",32838}}}),
+s(143181,32837,{b=1,c={1,4,6},f=25,lvl=70,phase=1902,q=5}),
+s(143182,32838,{b=1,c={1,4,6},f=25,lvl=70,phase=1902,q=5}),
 i(31089,{b=1,c={2,5,9},lvl=70,q=4}),
 i(31091,{b=1,c={1,3,7},lvl=70,q=4}),
 i(31090,{b=1,c={4,8,11},lvl=70,q=4}),
@@ -8517,7 +8517,7 @@ i(32497,{b=1,f=52,lvl=70,q=4}),
 i(32496,{b=1,f=53,lvl=70,q=4}),
 i(32483,{b=1,f=53,lvl=70,q=4})}})}}),
 inst(77,{awp=20300,coords={
-[1942]={{81.8,64.3}}},isRaid=1,lore="When the high elves were first exiled and landed in Lordaeron, they met violent clashes with the forest trolls, who viewed them as defiling their homeland. At the time of the founding of Quel'Thalas, the Amani Empire was the most powerful empire in the Eastern Kingdoms; they still held much of northern Lordaeron in their territorial grasp.\n\nEventually, the high elves joined with the humans of Arathor and defeated the forest trolls in an immense battle that signaled the end of the forest trolls' empire. The Amani would never recover enough to extend their land beyond their home province of Zul'Aman, but they continued to be an enemy of humans and elves for thousands of years.\n\nZul'jin, planning to take revenge against Quel'Thalas, saw the opportunity when most of the blood elves and Horde were busy fighting on Outland. He had his champions harness the power of the loa with the help of the cunning Hex Lord Malacrass.",lvl=68,mapID=333,rwp=40100,savedInstanceID=568,u=2,g={
+[1942]={{81.8,64.3}}},isRaid=1,lore="When the high elves were first exiled and landed in Lordaeron, they met violent clashes with the forest trolls, who viewed them as defiling their homeland. At the time of the founding of Quel'Thalas, the Amani Empire was the most powerful empire in the Eastern Kingdoms; they still held much of northern Lordaeron in their territorial grasp.\n\nEventually, the high elves joined with the humans of Arathor and defeated the forest trolls in an immense battle that signaled the end of the forest trolls' empire. The Amani would never recover enough to extend their land beyond their home province of Zul'Aman, but they continued to be an enemy of humans and elves for thousands of years.\n\nZul'jin, planning to take revenge against Quel'Thalas, saw the opportunity when most of the blood elves and Horde were busy fighting on Outland. He had his champions harness the power of the loa with the help of the cunning Hex Lord Malacrass.",lvl=68,mapID=333,phase=20,rwp=40100,savedInstanceID=568,u=2,g={
 d(1,{u=2,g={
 h(-45,{u=2,g={
 q(11165,{coords={
@@ -8647,7 +8647,7 @@ i(33830,{b=1,f=53,lvl=70,q=4,u=2}),
 i(33831,{b=1,f=53,lvl=70,q=4,u=2}),
 i(33466,{b=1,f=51,lvl=70,q=4,u=2})}})}})}}),
 inst(752,{awp=20400,coords={
-[1957]={{44.28,45.71}}},isLockoutShared=1,isRaid=1,lore="Nearly seven thousand years ago, the Highborne were exiled from Kalimdor for refusing to give up arcane magic. Led by Dath'Remar Sunstrider, these elves founded their own kingdom of Quel'Thalas. For millennia the mystical pool of energy known as the Sunwell fueled the potent magic of the exiled high elves. Now, the remnants of this ancient fountain have become the Burning Legion's latest target as the demons prepare to summon their commander, Kil'jaeden, with the Sunwell's energy.",lvl=68,maps={335,336},savedInstanceID=580,u=21,g={
+[1957]={{44.28,45.71}}},isLockoutShared=1,isRaid=1,lore="Nearly seven thousand years ago, the Highborne were exiled from Kalimdor for refusing to give up arcane magic. Led by Dath'Remar Sunstrider, these elves founded their own kingdom of Quel'Thalas. For millennia the mystical pool of energy known as the Sunwell fueled the potent magic of the exiled high elves. Now, the remnants of this ancient fountain have become the Burning Legion's latest target as the demons prepare to summon their commander, Kil'jaeden, with the Sunwell's energy.",lvl=68,maps={335,336},phase=21,savedInstanceID=580,g={
 h(-63,{
 r(46126,{itemID=35202,learnedAt=365,q=4,requireSkill=755}),
 r(46124,{b=1,itemID=35200,learnedAt=365,q=4,requireSkill=755}),
@@ -8810,7 +8810,7 @@ s(144301,34344,{b=1,f=4,loc=44,lvl=70,q=4}),
 s(144299,34342,{b=1,f=4,loc=44,lvl=70,q=4}),
 s(144300,34343,{b=1,f=6,loc=44,lvl=70,q=4})}})}}),
 inst(247,{coords={
-[1952]={{34.34,65.61}}},lore="Auchenai Crypts is the main seat of power for the Auchenai - a renegade religious sect of draenei led by the Exarch Maladaar. The crypts are populated by these draenei and the unliving creatures they have summoned. The most important remains interred within the crypt are those of D'ore, one of the naaru. D'ore perished in the collision that brought Oshu'gun (and the draenei) to Draenor. In death, D'ore entered its void stage. The dark energies exuded by this phenomenon resulted, directly or indirectly, in the evils that have since befallen the crypts.",lvl=62,maps={256,257},savedInstanceID=558,u=17,zoneTextAreaID=3790,g={
+[1952]={{34.34,65.61}}},lore="Auchenai Crypts is the main seat of power for the Auchenai - a renegade religious sect of draenei led by the Exarch Maladaar. The crypts are populated by these draenei and the unliving creatures they have summoned. The most important remains interred within the crypt are those of D'ore, one of the naaru. D'ore perished in the collision that brought Oshu'gun (and the draenei) to Draenor. In death, D'ore entered its void stage. The dark energies exuded by this phenomenon resulted, directly or indirectly, in the evils that have since befallen the crypts.",lvl=62,maps={256,257},savedInstanceID=558,zoneTextAreaID=3790,g={
 h(-45,{
 q(10167,{coords={
 [1955]={{53.9,44.8}}},lvl=66,qgs={18481},r=1,sourceQuests={10102},g={
@@ -8887,7 +8887,7 @@ s(139603,29257,{b=1,f=4,loc=45,lvl=70,q=4}),
 i(27869,{b=1,f=52,lvl=70,q=3}),
 s(138219,27872,{b=1,f=21,lvl=70,q=3}),
 s(139590,29244,{b=1,f=6,loc=45,lvl=70,q=4}),
-i(23572,{q=3,u=17}),
+i(23572,{phase=17,q=3}),
 i(33836,{q=1}),
 n(18478,{description="This mob will spawn once the Exarch reaches 25%. If you want the extra loot, the Exarch must stay alive until he spawns.",g={
 s(138225,27878,{b=1,f=3,lvl=70,q=3}),
@@ -9006,7 +9006,7 @@ s(137813,27466,{b=1,f=4,loc=40,lvl=70,q=3}),
 s(137886,27539,{b=1,f=7,loc=41,lvl=70,q=3}),
 s(201314,27465,{b=1,f=4,loc=44,lvl=70,q=3}),
 i(27464,{b=1,f=51,lvl=70,q=3}),
-i(23572,{q=3,u=17}),
+i(23572,{phase=17,q=3}),
 s(137814,27467,{b=1,f=5,loc=47,lvl=70,q=3}),
 s(137810,27463,{b=1,f=20,lvl=70,q=3}),
 s(137823,27476,{b=1,f=23,lvl=70,q=3}),
@@ -9032,7 +9032,7 @@ s(137806,27459,{b=1,f=7,loc=43,lvl=70,q=3}),
 s(137801,27454,{b=1,f=6,loc=41,lvl=70,q=3}),
 s(142423,32077,{b=1,f=6,loc=44,lvl=70,q=4})}})}})}}),
 inst(249,{awp=20400,coords={
-[1957]={{61.23,30.94}}},lore="Situated on a ridge in northeastern Quel'Danas, Magisters' Terrace serves as a convenient base for Kael'thas and his underlings as they assist the proceedings in the Sunwell Plateau. Kael'thas stands poised to desecrate the ancient lands of his people with an incomparable evil. Should he succeed, the Legion's darkness will rapidly spread to all corners of Azeroth, extinguishing everything in its path.",lvl=65,maps={348,349},savedInstanceID=585,u=21,zoneTextAreaID=4095,g={
+[1957]={{61.23,30.94}}},lore="Situated on a ridge in northeastern Quel'Danas, Magisters' Terrace serves as a convenient base for Kael'thas and his underlings as they assist the proceedings in the Sunwell Plateau. Kael'thas stands poised to desecrate the ancient lands of his people with an incomparable evil. Should he succeed, the Legion's darkness will rapidly spread to all corners of Azeroth, extinguishing everything in its path.",lvl=65,maps={348,349},phase=21,savedInstanceID=585,zoneTextAreaID=4095,g={
 h(-45,{
 q(29686,{awp=40300,lvl=68,qgs={55007},g={
 qo(1,{awp=20400,providers={{"i",73084}}})}}),
@@ -9154,7 +9154,7 @@ s(144563,34613,{b=1,f=5,loc=41,lvl=70,q=4}),
 mnt(46628,{b=1,itemID=35513,lvl=40,q=4}),
 s(144564,34614,{b=1,f=6,loc=42,lvl=70,q=4})}})}})}}),
 inst(250,{coords={
-[1952]={{39.63,57.67}}},lore="Its inhabitants are mostly ethereals opposing the Consortium. The ethereals of the Consortium cannot enter due to the anti-ethereal wards set by Nexus-Prince Shaffar; they have attempted to breach the gates with little success, but have still tested whether or not their efforts worked - often resulting in the spontaneous combustion (for lack of a better term) of the ethereal tester sent through the gate. According to the Consortium, the ethereals in the Mana-Tombs are robbing it blind and if you wish to do business with them, you'll have to aid in taking out the competition.",lvl=61,mapID=272,savedInstanceID=557,u=17,zoneTextNames={DUNGEON_FLOOR_MANATOMBS1},g={
+[1952]={{39.63,57.67}}},lore="Its inhabitants are mostly ethereals opposing the Consortium. The ethereals of the Consortium cannot enter due to the anti-ethereal wards set by Nexus-Prince Shaffar; they have attempted to breach the gates with little success, but have still tested whether or not their efforts worked - often resulting in the spontaneous combustion (for lack of a better term) of the ethereal tester sent through the gate. According to the Consortium, the ethereals in the Mana-Tombs are robbing it blind and if you wish to do business with them, you'll have to aid in taking out the competition.",lvl=61,mapID=272,savedInstanceID=557,zoneTextNames={DUNGEON_FLOOR_MANATOMBS1},g={
 h(-45,{
 q(29583,{awp=40300,coords={
 [1952]={{57.6,53.6}}},isBreadcrumb=1,lvl=64,qgs={21400},r=2}),
@@ -9283,12 +9283,12 @@ s(140881,30535,{b=1,f=5,loc=46,lvl=70,q=4}),
 s(138184,27837,{b=1,f=5,loc=46,lvl=70,q=3}),
 i(29352,{b=1,f=52,lvl=70,q=4}),
 i(27828,{b=1,f=53,lvl=70,q=3}),
-i(23572,{q=3,u=17}),
+i(23572,{phase=17,q=3}),
 i(28490,{q=1}),
 i(33835,{q=1}),
 r(28572,{b=1,itemID=22921,learnedAt=360,q=2,requireSkill=171})}})}})}}),
 inst(251,{coords={
-[75]={{26.8,36.8}}},description="This is an event-triggered dungeon with the following steps:\n\n1. Talk to Erozion at the beginning of the dungeon to obtain a Pack of Incendiary Bombs.\n\n2. Traverse to the internment camps in Durnholde Keep and interact with a barrel in each building to start a fire and summon the first boss Lieutenant Drake.\n\n3. Find Thrall in the basement of the keep and follow him for the remainder of the dungeon.",lore="Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",lvl=63,mapID=274,savedInstanceID=560,u=17,zoneTextAreaID=2367,g={
+[75]={{26.8,36.8}}},description="This is an event-triggered dungeon with the following steps:\n\n1. Talk to Erozion at the beginning of the dungeon to obtain a Pack of Incendiary Bombs.\n\n2. Traverse to the internment camps in Durnholde Keep and interact with a barrel in each building to start a fire and summon the first boss Lieutenant Drake.\n\n3. Find Thrall in the basement of the keep and follow him for the remainder of the dungeon.",lore="Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",lvl=63,mapID=274,savedInstanceID=560,zoneTextAreaID=2367,g={
 h(-45,{
 q(10284,{lvl=66,qgs={17876},rwp=40300,sourceQuests={10283},u=2}),
 q(29599,{awp=40300,lvl=64,qgs={17876},sourceQuests={29598},g={
@@ -9409,10 +9409,10 @@ i(27904,{b=1,f=52,lvl=70,q=3}),
 i(28227,{b=1,f=52,lvl=70,q=3}),
 i(28223,{b=1,f=53,lvl=70,q=3}),
 r(31078,{b=1,itemID=24173,learnedAt=370,q=4,requireSkill=755}),
-i(23572,{q=3,u=17}),
+i(23572,{phase=17,q=3}),
 i(33847,{q=1})}})}})}}),
 inst(252,{coords={
-[1952]={{44.93,65.61}}},lore="Sethekk Halls is populated by renegade arakkoa and led by the insane Talon King Ikiss. The Sethekk are renegades who broke away from Skettis at the insistence of Ikiss and Darkweaver Syth, and believe themselves to be the true servants of the mysterious master of all arakkoa. When Auchindoun exploded due to the summoning of Murmur in the Shadow Labyrinth, Ikiss and Syth led their followers to Auchindoun, believing this to be a sign of their master's return. There they remain, still searching for the master in the temple's ruins.",lvl=63,maps={258,259},savedInstanceID=556,u=17,zoneTextAreaID=3791,g={
+[1952]={{44.93,65.61}}},lore="Sethekk Halls is populated by renegade arakkoa and led by the insane Talon King Ikiss. The Sethekk are renegades who broke away from Skettis at the insistence of Ikiss and Darkweaver Syth, and believe themselves to be the true servants of the mysterious master of all arakkoa. When Auchindoun exploded due to the summoning of Murmur in the Shadow Labyrinth, Ikiss and Syth led their followers to Auchindoun, believing this to be a sign of their master's return. There they remain, still searching for the master in the temple's ruins.",lvl=63,maps={258,259},savedInstanceID=556,zoneTextAreaID=3791,g={
 h(-45,{
 q(10097,{coords={
 [1952]={{44.1,65}}},lvl=65,qgs={18933},rwp=40300,sourceQuests={10180},u=2,g={
@@ -9431,7 +9431,7 @@ i(29333,{awp=20003,b=1,f=51,q=3})}}),
 q(10180,{coords={
 [1955]={{58,15.2}}},isBreadcrumb=1,lvl=65,nextQuests={10097,10098,29605},qgs={19045}}),
 q(11011,{c={11},coords={
-[1946]={{80.2,65.2}}},lvl=70,qgs={22832},repeatable=1,rwp=40001,sourceQuests={11001},u=2,g={
+[1946]={{80.2,65.2}}},lvl=70,phase=18,qgs={22832},repeatable=1,rwp=40001,sourceQuests={11001},u=2,g={
 i(32449,{b=1,q=1})}}),
 q(29607,{awp=40300,description="Dealer Vijaad appears upon defeating Darkweaver Syth.",lvl=65,qgs={54847},g={
 qo(1,{awp=20003,crs={19428},providers={{"i",72480}}})}}),
@@ -9447,7 +9447,7 @@ s(139676,29330,{awp=20003,b=1,f=1,q=3}),
 s(139678,29332,{awp=20003,b=1,f=5,loc=40,q=3}),
 s(139675,29329,{awp=20003,b=1,f=29,q=3})}}),
 q(11001,{c={11},coords={
-[1946]={{80.2,65.2}}},lvl=70,qgs={22832},rwp=40001,sourceQuests={10994},u=2,g={
+[1946]={{80.2,65.2}}},lvl=70,phase=18,qgs={22832},rwp=40001,sourceQuests={10994},u=2,g={
 qo(1,{awp=20003,crs={23035},providers={{"i",32449}}}),
 ach(2359,{c={11},sourceQuests={11001},u=2}),
 i(32387,{b=1,c={11},q=3,u=2}),
@@ -9500,7 +9500,7 @@ i(27916,{b=1,f=36,lvl=68,q=3,rwp=50004}),
 i(27917,{b=1,c={2,6},lvl=68,q=3,rwp=50004}),
 i(25461,{q=1,rwp=70100}),
 i(27633,{q=1})}}),
-e(542,{npcID=23035,u=18,g={
+e(542,{npcID=23035,phase=18,g={
 ach(883,{providers={{"i",32768}}}),
 mnt(41252,{b=1,itemID=32768,lvl=40,q=4}),
 s(143125,32781,{b=1,f=20,lvl=70,q=3}),
@@ -9527,12 +9527,12 @@ s(138222,27875,{b=1,f=4,loc=46,lvl=70,q=3}),
 s(138185,27838,{b=1,f=4,loc=46,lvl=70,q=3}),
 s(138295,27948,{b=1,f=4,loc=46,lvl=68,q=3}),
 i(27925,{b=1,f=52,lvl=68,q=3}),
-i(23572,{q=3,u=17}),
+i(23572,{phase=17,q=3}),
 i(27632,{q=1}),
 i(33834,{q=1}),
 i(27991,{b=1,description="You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",q=1,rwp=40003,u=2})}})}})}}),
 inst(253,{coords={
-[1952]={{39.63,73.55}}},lore="Auchindoun is a former draenei holy site and Horde fortress in the middle of the Bone Wastes in Outland's Terokkar Forest. It was a hallowed ground until the Shadow Council took over, summoned an extremely powerful demon as old as time itself, and destroyed half of Terokkar Forest in the process. Different factions now vie for power in this magical spot: Ethereals suck the arcane energy from the Mana-Tombs, the Burning Legion harvests souls inside the Auchenai Crypts, arakkoa zealots work dark magic in the Sethekk Halls, and the Shadow Council plots its domination of Outland from within the Shadow Labyrinth.",lvl=65,mapID=260,savedInstanceID=555,u=17,zoneTextAreaID=3789,g={
+[1952]={{39.63,73.55}}},lore="Auchindoun is a former draenei holy site and Horde fortress in the middle of the Bone Wastes in Outland's Terokkar Forest. It was a hallowed ground until the Shadow Council took over, summoned an extremely powerful demon as old as time itself, and destroyed half of Terokkar Forest in the process. Different factions now vie for power in this magical spot: Ethereals suck the arcane energy from the Mana-Tombs, the Burning Legion harvests souls inside the Auchenai Crypts, arakkoa zealots work dark magic in the Sethekk Halls, and the Shadow Council plots its domination of Outland from within the Shadow Labyrinth.",lvl=65,mapID=260,savedInstanceID=555,zoneTextAreaID=3789,g={
 h(-45,{
 q(29645,{awp=40300,lvl=67,qgs={54890},g={
 qo(1,{awp=20003,providers={{"n",18794}}}),
@@ -9675,11 +9675,11 @@ s(138255,27908,{b=1,f=5,loc=46,lvl=70,q=3}),
 s(138256,27909,{b=1,f=6,loc=46,lvl=70,q=3}),
 s(138249,27902,{b=1,f=4,loc=47,lvl=70,q=3}),
 r(31452,{b=1,itemID=24309,learnedAt=375,q=4,requireSkill=197}),
-i(23572,{q=3,u=17}),
+i(23572,{phase=17,q=3}),
 i(33840,{q=1}),
 i(31722,{q=1})}})}})}}),
 inst(254,{coords={
-[1953]={{74.42,57.72}}},lore="The Arcatraz is a prison where the naaru jailed the most terrifying and dangerous creatures they encountered on their journeys. When Kael'thas and his followers took the Keep, he sent a warden and guards to the Arcatraz. Kael's blood elves, however, were corruptible and the prisoners have begun to break free...",lvl=65,maps={269,270,271},savedInstanceID=552,u=17,zoneTextAreaID=3846,g={
+[1953]={{74.42,57.72}}},lore="The Arcatraz is a prison where the naaru jailed the most terrifying and dangerous creatures they encountered on their journeys. When Kael'thas and his followers took the Keep, he sent a warden and guards to the Arcatraz. Kael's blood elves, however, were corruptible and the prisoners have begun to break free...",lvl=65,maps={269,270,271},savedInstanceID=552,zoneTextAreaID=3846,g={
 h(-45,{
 q(10706,{lvl=68,qgs={21962},sourceQuests={10705}}),
 q(10882,{coords={
@@ -9802,10 +9802,10 @@ s(201346,29248,{b=1,f=5,loc=47,lvl=70,q=4}),
 s(138752,28406,{b=1,f=4,loc=47,lvl=70,q=3}),
 i(28407,{b=1,f=52,lvl=70,q=3}),
 i(28418,{b=1,f=53,lvl=70,q=3}),
-i(23572,{q=3,u=17}),
+i(23572,{phase=17,q=3}),
 i(33861,{q=1})}})}})}}),
 inst(255,{coords={
-[75]={{37.2,83.3}}},lore="The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",lvl=65,mapID=273,savedInstanceID=269,u=17,zoneTextAreaID=2366,g={
+[75]={{37.2,83.3}}},lore="The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",lvl=65,mapID=273,savedInstanceID=269,zoneTextAreaID=2366,g={
 h(-45,{
 q(10298,{lvl=66,qgs={20201},rwp=40300,sourceQuests={10297},u=2}),
 q(9837,{coords={
@@ -9894,10 +9894,10 @@ s(138324,27977,{b=1,f=7,loc=46,lvl=68,q=3}),
 s(138186,27839,{b=1,f=7,loc=46,lvl=70,q=3}),
 s(138220,27873,{b=1,f=5,loc=46,lvl=70,q=3}),
 i(28190,{b=1,f=53,lvl=70,q=3}),
-i(23572,{q=3,u=17}),
+i(23572,{phase=17,q=3}),
 i(33858,{q=1})}})}})}}),
 inst(256,{coords={
-[1944]={{46.06,51.74}}},lore="The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",lvl=58,mapID=261,savedInstanceID=542,u=17,zoneTextAreaID=3713,g={
+[1944]={{46.06,51.74}}},lore="The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",lvl=58,mapID=261,savedInstanceID=542,zoneTextAreaID=3713,g={
 h(-45,{
 q(9607,{coords={
 [1944]={{56.4,66.7}}},lvl=59,qgs={17479},r=2,rwp=40300,sourceQuests={9575},u=2}),
@@ -9997,10 +9997,10 @@ s(139591,29245,{b=1,f=6,loc=47,lvl=70,q=4}),
 i(28121,{b=1,f=53,lvl=70,q=3}),
 s(137869,27522,{b=1,f=6,loc=43,lvl=70,q=3}),
 s(137841,27494,{b=1,f=6,loc=43,lvl=70,q=3}),
-i(23572,{q=3,u=17}),
+i(23572,{phase=17,q=3}),
 i(33814,{q=1})}})}})}}),
 inst(257,{coords={
-[1953]={{71.74,54.95}}},lore="Since Kael'thas and his blood elves seized Tempest Keep from the naaru they have had quite the time to investigate and find a usage for the technology in it. The Botanica appears to be the satellite chosen especially for this purpose. Here, blood elf scientists carry out experiments on the flora in Outland, how naaru technology can be used to create and manipulate living beings, and how all this can grant the blood elves new powers. It seems, however, that the results were not quite as expected, and thus some of the experiments have gotten out of control...",lvl=65,mapID=266,savedInstanceID=553,u=17,zoneTextAreaID=3847,g={
+[1953]={{71.74,54.95}}},lore="Since Kael'thas and his blood elves seized Tempest Keep from the naaru they have had quite the time to investigate and find a usage for the technology in it. The Botanica appears to be the satellite chosen especially for this purpose. Here, blood elf scientists carry out experiments on the flora in Outland, how naaru technology can be used to create and manipulate living beings, and how all this can grant the blood elves new powers. It seems, however, that the results were not quite as expected, and thus some of the experiments have gotten out of control...",lvl=65,mapID=266,savedInstanceID=553,zoneTextAreaID=3847,g={
 h(-45,{
 q(29669,{awp=40300,lvl=67,sourceQuests={29667},g={
 qo(1,{awp=20003,providers={{"n",17977}}})}}),
@@ -10122,11 +10122,11 @@ s(138691,28345,{b=1,f=20,lvl=70,q=3}),
 s(138693,28347,{b=1,f=5,loc=46,lvl=70,q=3}),
 s(138687,28341,{b=1,f=28,lvl=70,q=3}),
 r(31454,{b=1,itemID=24311,learnedAt=375,q=4,requireSkill=197}),
-i(23572,{q=3,u=17}),
+i(23572,{phase=17,q=3}),
 i(31085,{q=1}),
 i(33859,{q=1})}})}})}}),
 inst(258,{coords={
-[1953]={{70.61,69.75}}},lore="Among the satellites of Tempest Keep, the Mechanar has been chosen by Kael'thas to be a factory to create large amounts of power. Mechano-Lord Capacitus appears to be the one creating it using the naaru-technology found in Tempest Keep, and the power is stored in manacells which piles up into walls and heaps inside the satellite. The large amount of manacells are smuggled by ethereals to the Sunwell where Kael'thas plans to use them to power up the summoning of Kil'jaeden.",lvl=65,maps={267,268},savedInstanceID=554,u=17,zoneTextAreaID=3849,g={
+[1953]={{70.61,69.75}}},lore="Among the satellites of Tempest Keep, the Mechanar has been chosen by Kael'thas to be a factory to create large amounts of power. Mechano-Lord Capacitus appears to be the one creating it using the naaru-technology found in Tempest Keep, and the power is stored in manacells which piles up into walls and heaps inside the satellite. The large amount of manacells are smuggled by ethereals to the Sunwell where Kael'thas plans to use them to power up the summoning of Kil'jaeden.",lvl=65,maps={267,268},savedInstanceID=554,zoneTextAreaID=3849,g={
 h(-45,{
 q(10665,{coords={
 [1952]={{77.4,38.6}}},lvl=67,qgs={21465},sourceQuests={10664},g={
@@ -10219,11 +10219,11 @@ s(139708,29362,{b=1,f=25,lvl=70,q=4}),
 s(138550,28204,{b=1,f=5,loc=42,lvl=70,q=3}),
 s(140879,30533,{b=1,f=7,loc=46,lvl=70,q=4}),
 r(26784,{b=1,itemID=21907,learnedAt=370,q=2,requireSkill=197}),
-i(23572,{q=3,u=17}),
+i(23572,{phase=17,q=3}),
 i(31086,{q=1}),
 i(33860,{q=1})}})}})}}),
 inst(259,{coords={
-[1944]={{47.66,51.98}}},lore="For years, this gargantuan fortress was thought to be abandoned, but it's now inhabited by marauding bands of red, furious fel orcs. The presence of this new, savage breed presents something of a mystery, though what is far more disconcerting is that the numbers of these fel orcs seem to be... growing.",lvl=65,mapID=246,savedInstanceID=540,u=17,zoneTextAreaID=3714,g={
+[1944]={{47.66,51.98}}},lore="For years, this gargantuan fortress was thought to be abandoned, but it's now inhabited by marauding bands of red, furious fel orcs. The presence of this new, savage breed presents something of a mystery, though what is far more disconcerting is that the numbers of these fel orcs seem to be... growing.",lvl=65,mapID=246,savedInstanceID=540,zoneTextAreaID=3714,g={
 h(-45,{
 q(29655,{awp=40300,lvl=66,qgs={54931},r=1,g={
 qo(1,{awp=20003,providers={{"i",72597}}})}}),
@@ -10272,8 +10272,8 @@ s(136135,25788,{awp=20003,b=1,f=7,loc=44,q=3}),
 s(136138,25791,{awp=20003,b=1,f=5,loc=44,q=3}),
 s(136136,25789,{awp=20003,b=1,f=6,loc=45,q=3}),
 s(136139,25792,{awp=20003,b=1,f=4,loc=47,q=3})}}),
-q(9524,{description="This quest can only be completed on Heroic Difficulty.",lvl=70,qgs={17288},r=2,rwp=40300,u=2}),
-q(9525,{description="This quest can only be completed on Heroic Difficulty.",lvl=70,qgs={17294},r=1,rwp=40300,u=2}),
+q(9524,{description="This quest can only be completed on Heroic Difficulty.",lvl=70,phase=20,qgs={17288},r=2,rwp=40300,u=2}),
+q(9525,{description="This quest can only be completed on Heroic Difficulty.",lvl=70,phase=20,qgs={17294},r=1,rwp=40300,u=2}),
 q(29656,{awp=40300,lvl=66,qgs={54933},r=2,g={
 qo(1,{awp=20003,providers={{"i",72597}}})}}),
 q(29652,{awp=40300,lvl=66,qgs={54934},r=2,g={
@@ -10396,7 +10396,7 @@ s(137882,27535,{b=1,f=7,loc=44,lvl=70,q=3}),
 s(137884,27537,{b=1,f=4,loc=44,lvl=70,q=3}),
 s(137878,27531,{b=1,f=5,loc=44,lvl=70,q=3}),
 s(137874,27527,{b=1,f=7,loc=46,lvl=70,q=3}),
-i(23572,{q=3,u=17}),
+i(23572,{phase=17,q=3}),
 i(33815,{q=1}),
 i(23723,{q=1}),
 s(137821,27474,{b=1,f=6,loc=44,lvl=70,q=3}),
@@ -10408,7 +10408,7 @@ s(137881,27534,{b=1,f=1,lvl=70,q=3})}}),
 n(17301,{
 i(31716,{q=1})})}})}}),
 inst(260,{coords={
-[1946]={{48.95,35.84}}},lore="The Slave Pens is the place where the Naga force their Broken workers to toil for resources in the darkness in order to achieve their goal of draining the marsh completely and claiming control of its water.",lvl=59,mapID=265,savedInstanceID=547,u=17,zoneTextAreaID=3717,g={
+[1946]={{48.95,35.84}}},lore="The Slave Pens is the place where the Naga force their Broken workers to toil for resources in the darkness in order to achieve their goal of draining the marsh completely and claiming control of its water.",lvl=59,mapID=265,savedInstanceID=547,zoneTextAreaID=3717,g={
 h(-45,{
 q(29564,{awp=40300,lvl=57,qgs={54668},g={
 qo(1,{awp=20003,providers={{"n",17941}}})}}),
@@ -10514,11 +10514,11 @@ s(140884,30538,{b=1,f=5,loc=46,lvl=70,q=4}),
 s(139588,29242,{b=1,f=4,loc=47,lvl=70,q=4}),
 i(27740,{b=1,f=52,lvl=70,q=3}),
 i(27683,{b=1,f=53,lvl=70,q=3}),
-i(23572,{q=3,u=17}),
+i(23572,{phase=17,q=3}),
 i(33821,{q=1}),
 i(72119,{awp=40300,q=1})}})}})}}),
 inst(261,{coords={
-[1946]={{50.35,33.39}}},lore="The Steamvault serves as the mechanical heart of the Naga's draining operations in Zangarmarsh. The mechanisms on display within the massive cavern supply the power for the actual act of removing the marsh's water.",lvl=65,maps={263,264},savedInstanceID=545,u=17,zoneTextAreaID=3715,g={
+[1946]={{50.35,33.39}}},lore="The Steamvault serves as the mechanical heart of the Naga's draining operations in Zangarmarsh. The mechanisms on display within the massive cavern supply the power for the actual act of removing the marsh's water.",lvl=65,maps={263,264},savedInstanceID=545,zoneTextAreaID=3715,g={
 h(-45,{
 q(29613,{awp=40300,lvl=67,qgs={54848},g={
 qo(1,{awp=20003,providers={{"n",17798}}})}}),
@@ -10623,11 +10623,11 @@ s(138221,27874,{b=1,f=6,loc=46,lvl=70,q=3}),
 s(140889,30543,{b=1,f=4,loc=46,lvl=70,q=4}),
 i(27805,{b=1,f=52,lvl=70,q=3}),
 r(31456,{b=1,itemID=24313,learnedAt=375,q=4,requireSkill=197}),
-i(23572,{q=3,u=17}),
+i(23572,{phase=17,q=3}),
 i(31721,{q=1}),
 i(33827,{q=1})}})}})}}),
 inst(262,{coords={
-[1946]={{54.24,34.45}}},lore="Underbog is the 2nd 5-man instance within the Coilfang Reservoir found on the east side of the naga invested complex. The Underbog is home to the last vestiges of natural life left within Coilfang Reservoir that has not been completely stamped out by the Naga incursion. The only Naga presence in this section defends the structure they built to house their hydra god, Ghaz'an. The rest of the Underbog is a natural habitat, home to the most powerful species of animal life in Zangarmarsh.",lvl=60,mapID=262,savedInstanceID=546,u=17,zoneTextAreaID=3716,g={
+[1946]={{54.24,34.45}}},lore="Underbog is the 2nd 5-man instance within the Coilfang Reservoir found on the east side of the naga invested complex. The Underbog is home to the last vestiges of natural life left within Coilfang Reservoir that has not been completely stamped out by the Naga incursion. The only Naga presence in this section defends the structure they built to house their hydra god, Ghaz'an. The rest of the Underbog is a natural habitat, home to the most powerful species of animal life in Zangarmarsh.",lvl=60,mapID=262,savedInstanceID=546,zoneTextAreaID=3716,g={
 h(-45,{
 q(29568,{awp=40300,lvl=61,qgs={54678},g={
 qo(1,{awp=20003,providers={{"n",17770}}})}}),
@@ -10731,9 +10731,9 @@ i(32081,{b=1,f=52,lvl=70,q=4}),
 i(27780,{b=1,f=52,lvl=70,q=3}),
 i(27896,{b=1,f=53,lvl=70,q=3}),
 i(27770,{b=1,f=53,lvl=70,q=3}),
-i(23572,{q=3,u=17}),
+i(23572,{phase=17,q=3}),
 i(33826,{q=1})}})}})}})}}),
-x(3,{awp=30003,u=30,g={
+x(3,{awp=30003,phase=30,g={
 h(-12,{awp=30002,g={
 ach(1658,{
 title(97)}),
@@ -10752,8 +10752,8 @@ ach(2081,{providers={{"i",43959},{"i",44083}}}),
 mnt(61465,{b=1,itemID=43959,lvl=40,q=4,r=2}),
 mnt(61467,{b=1,itemID=44083,lvl=40,q=4,r=1})}}),
 d(3,{
-ach(4016,{awp=30200,crs={31125,33993,35013},u=32}),
-e(1599,{awp=30200,npcID=35013,u=32,g={
+ach(4016,{awp=30200,crs={31125,33993,35013},phase=32}),
+e(1599,{awp=30200,npcID=35013,phase=32,g={
 ach(3836),
 i(42037,{b=1,f=51,lvl=80,q=4}),
 i(42039,{b=1,f=51,lvl=80,q=4}),
@@ -10910,7 +10910,7 @@ s(173972,41903,{b=1,c={5,8,9},f=4,loc=47,lvl=80,q=4}),
 s(173955,41885,{b=1,c={5,8,9},f=4,loc=47,lvl=80,q=4}),
 i(42116,{b=1,f=52,lvl=80,q=4}),
 i(42117,{b=1,f=52,lvl=80,q=4})}}),
-e(1598,{awp=30100,npcID=33993,u=31,g={
+e(1598,{awp=30100,npcID=33993,phase=31,g={
 ach(3136),
 i(42030,{b=1,f=51,lvl=80,q=4}),
 i(42032,{b=1,f=51,lvl=80,q=4}),
@@ -11028,7 +11028,7 @@ s(173971,41902,{b=1,c={5,8,9},f=4,loc=47,lvl=80,q=4}),
 s(173954,41884,{b=1,c={5,8,9},f=4,loc=47,lvl=80,q=4}),
 i(42114,{b=1,f=52,lvl=80,q=4}),
 i(42115,{b=1,f=52,lvl=80,q=4})}}),
-e(1600,{awp=30302,npcID=38433,u=33,g={
+e(1600,{awp=30302,npcID=38433,phase=33,g={
 ach(4585),
 i(42044,{b=1,f=51,lvl=80,q=4}),
 i(42046,{b=1,f=51,lvl=80,q=4}),
@@ -11257,8 +11257,8 @@ s(172632,39636,{b=1,c={2},f=7,loc=46,lvl=80,q=4}),
 s(172622,39626,{b=1,c={6},f=7,loc=46,lvl=80,q=4}),
 s(172616,39620,{b=1,c={6},f=7,loc=46,lvl=80,q=4})}})}),
 d(4,{
-ach(4017,{awp=30200,crs={31125,33993,35013},u=32}),
-e(1599,{awp=30200,npcID=35013,u=32,g={
+ach(4017,{awp=30200,crs={31125,33993,35013},phase=32}),
+e(1599,{awp=30200,npcID=35013,phase=32,g={
 ach(3837),
 i(42044,{b=1,f=51,lvl=80,q=4}),
 i(42046,{b=1,f=51,lvl=80,q=4}),
@@ -11415,7 +11415,7 @@ s(173973,41904,{b=1,c={5,8,9},f=4,loc=47,lvl=80,q=4}),
 s(173956,41886,{b=1,c={5,8,9},f=4,loc=47,lvl=80,q=4}),
 i(42118,{b=1,f=52,lvl=80,q=4}),
 i(42119,{b=1,f=52,lvl=80,q=4})}}),
-e(1598,{awp=30100,npcID=33993,u=31,g={
+e(1598,{awp=30100,npcID=33993,phase=31,g={
 ach(3137),
 i(42037,{b=1,f=51,lvl=80,q=4}),
 i(42039,{b=1,f=51,lvl=80,q=4}),
@@ -11534,7 +11534,7 @@ s(173972,41903,{b=1,c={5,8,9},f=4,loc=47,lvl=80,q=4}),
 s(173955,41885,{b=1,c={5,8,9},f=4,loc=47,lvl=80,q=4}),
 i(42116,{b=1,f=52,lvl=80,q=4}),
 i(42117,{b=1,f=52,lvl=80,q=4})}}),
-e(1600,{awp=30302,npcID=38433,u=33,g={
+e(1600,{awp=30302,npcID=38433,phase=33,g={
 ach(4586),
 i(51335,{b=1,f=51,lvl=80,q=4}),
 i(51349,{b=1,f=51,lvl=80,q=4}),
@@ -11774,7 +11774,7 @@ ach(576,{sym={{"meta_achievement",562,566,568,564,572,574}}}),
 ach(2187,{rwp=40003,u=2,g={
 title(109,{u=2})}})}),
 h(-45,{
-q(13372,{lvl=78,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30100 end	end,qss={44569}})}),
+q(13372,{lvl=78,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,qss={44569}})}),
 h(-78,{
 e(1601,{lore="Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",npcID=15956,g={
 crit(5100,{achID=562}),
@@ -11837,7 +11837,7 @@ ach(572),
 ach(2146,{
 crit(7570,{achID=2137,id=9})}),
 crit(7158,{achID=578,OnUpdate=_.OnUpdateDB.DEDICATED_10M}),
-i(44569,{b=1,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30100 end	end,q=4})}}),
+i(44569,{b=1,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,q=4})}}),
 e(1615,{lore="He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",npcID=15990,g={
 ach(574),
 ach(2184,{crs={16428},g={
@@ -11918,7 +11918,7 @@ ach(2147,{
 crit(7569,{achID=2138,id=12})}),
 crit(7171,{achID=579,OnUpdate=_.OnUpdateDB.DEDICATED_25M})}}),
 e(1615,{lore="He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",npcID=15990,g={
-ach(1402,{rwp=40003,u=2,g={
+ach(1402,{phase=3001,rwp=40003,u=2,g={
 title(90,{u=2})}}),
 ach(575),
 ach(2185,{crs={16428},g={
@@ -12332,7 +12332,7 @@ inst(756,{awp=30002,coords={
 d(3,{
 h(-45,{
 q(13384,{coords={
-[115]={{59.7,54.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=30 t.rwp=30100 end	end,qgs={27990},sourceQuests={13372},g={
+[115]={{59.7,54.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,qgs={27990},sourceQuests={13372},g={
 qo(1,{providers={{"i",44650}}}),
 i(44658,{b=1,f=51,q=4}),
 i(44660,{b=1,f=51,q=4}),
@@ -12406,8 +12406,8 @@ i(40531,{b=1,f=53,lvl=80,q=4}),
 i(44651,{q=1}),
 crit(5890,{achID=1658,id=1})}})})}}),
 inst(759,{awp=30100,coords={
-[120]={{41.5,17.9}}},isRaid=1,lvl=80,mapID=147,maps={148,149,150,151,152},savedInstanceID=603,u=31,g={
-ah(46017,{c={2,5,7,11},description="Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",isRaid=1,type="i",u=3101,g={
+[120]={{41.5,17.9}}},isRaid=1,lvl=80,mapID=147,maps={148,149,150,151,152},phase=31,savedInstanceID=603,g={
+ah(46017,{c={2,5,7,11},description="Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",isRaid=1,phase=3101,type="i",g={
 ach(3142,{c={2,5,7,11},providers={{"i",46017}},sourceQuests={13629}}),
 q(13622,{cost={{"i",45038,30}},qss={45039}}),
 q(13629,{providers={{"o",194555}},sourceQuests={13622},g={
@@ -12537,7 +12537,7 @@ s(175882,45694,{b=1,f=4,loc=45,lvl=80,q=4}),
 i(45675,{b=1,f=52,lvl=80,q=4}),
 crit(9974,{achID=2886})}}),
 e(1650,{npcID=32871,g={
-ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end}),
+ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
 ach(3004,{rwp=40003,u=2}),
 ach(3036,{
 title(129)}),
@@ -12727,7 +12727,7 @@ s(176313,46346,{b=1,f=6,loc=47,lvl=80,q=4}),
 i(46010,{b=1,f=52,lvl=80,q=4}),
 crit(9948,{achID=2892})}}),
 e(1649,{npcID=33288,g={
-ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end}),
+ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
 ach(3159,{
 i(46312,{b=1,f=53,lvl=80,q=4})}),
 gach(5019,{awp=40003}),
@@ -12778,7 +12778,7 @@ ach(3259,{rwp=30200,u=2,g={
 title(125,{u=2})}}),
 ach(3117,{rwp=30200,u=2,g={
 title(124,{u=2})}})}),
-h(-220,{c={2,5,7,11},description="Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses in 25-Man Ulduar. Hard modes have higher drop chances.",icon=253399,isRaid=1,title="Val'anyr, Hammer of Ancient Kings",u=3101,g={
+h(-220,{c={2,5,7,11},description="Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses in 25-Man Ulduar. Hard modes have higher drop chances.",icon=253399,isRaid=1,phase=3101,title="Val'anyr, Hammer of Ancient Kings",g={
 ach(3142,{c={2,5,7,11},providers={{"i",46017}}}),
 q(13622,{cost={{"i",45038,30}},qss={45039}}),
 q(13629,{providers={{"o",194555}},sourceQuests={13622},g={
@@ -12817,7 +12817,7 @@ s(175806,45542,{b=1,f=7,loc=47,lvl=80,q=4}),
 i(45540,{b=1,f=52,lvl=80,q=4}),
 i(46138,{b=1,c={2,7,11},lvl=80,q=4,rwp=50004})}),
 h(-19,{crs={32845,32857,32865,32867,32871,32906,32927,32930,33113,33118,33186,33271,33288,33293,33350,33515},g={
-i(45038,{b=1,c={2,5,7,11},f=55,lvl=80,q=5,u=3101}),
+i(45038,{b=1,c={2,5,7,11},f=55,lvl=80,phase=3101,q=5}),
 i(45087,{description="Can also drop from defeating 10-Man Hard Mode bosses.",q=3}),
 r(64441,{b=1,itemID=46027,learnedAt=450,q=4,requireSkill=333}),
 r(64579,{b=1,itemID=46348,learnedAt=450,q=4,requireSkill=333}),
@@ -12939,7 +12939,7 @@ i(45254,{b=1,c={2,6},lvl=80,q=4,rwp=50004}),
 i(45255,{b=1,c={2,7,11},lvl=80,q=4,rwp=50004}),
 crit(9957,{achID=2887})}}),
 e(1650,{npcID=32871,g={
-ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end}),
+ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
 ach(3005,{rwp=40003,u=2}),
 ach(3037,{
 title(130)}),
@@ -13152,7 +13152,7 @@ i(45509,{b=1,c={7,11},lvl=80,q=4,rwp=50004}),
 i(45145,{b=1,c={2,6},lvl=80,q=4,rwp=50004}),
 crit(9964,{achID=2893})}}),
 e(1649,{npcID=33288,g={
-ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=31 t.rwp=30200 end	end}),
+ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
 ach(3164,{
 ach(4626,{providers={{"i",45693}}}),
 mnt(63796,{b=1,itemID=45693,lvl=70,q=4})}),
@@ -13188,7 +13188,7 @@ i(45530,{b=1,f=52,lvl=80,q=4}),
 i(45522,{b=1,f=53,lvl=80,q=4}),
 crit(9967,{achID=2893})}})}})}}),
 inst(757,{awp=30200,coords={
-[118]={{75,21.8}}},isLockoutShared=1,isRaid=1,lvl=80,mapID=172,maps={173},savedInstanceID=649,u=32,g={
+[118]={{75,21.8}}},isLockoutShared=1,isRaid=1,lvl=80,mapID=172,maps={173},phase=32,savedInstanceID=649,g={
 h(-12,{
 ach(3917),
 ach(3918),
@@ -14616,8 +14616,8 @@ s(176781,47526,{b=1,f=23,lvl=80,q=4,r=2,u=2}),
 s(176763,47506,{b=1,f=25,lvl=80,q=4,r=2,u=2}),
 s(176780,47525,{b=1,f=28,lvl=80,q=4,r=1,u=2})}})}})})}}),
 inst(758,{awp=30300,coords={
-[118]={{53.7,87}}},isLockoutShared=1,isRaid=1,lvl=80,mapID=186,maps={187,188,189,190,191,192,193},savedInstanceID=631,u=33,g={
-ah(49623,{c={1,2,6},description="These quests can only be completed on 25-Man Normal or Heroic difficulty.",isRaid=1,lvl=80,type="i",u=3301,g={
+[118]={{53.7,87}}},isLockoutShared=1,isRaid=1,lvl=80,mapID=186,maps={187,188,189,190,191,192,193},phase=33,savedInstanceID=631,g={
+ah(49623,{c={1,2,6},description="These quests can only be completed on 25-Man Normal or Heroic difficulty.",isRaid=1,lvl=80,phase=3301,type="i",g={
 q(24545,{maps={115},minReputation={1156,3000},qgs={37120},g={
 qo(1,{coords={
 [115]={{75.9,20.8}}},providers={{"i",49869},{"o",201937}}}),
@@ -14654,9 +14654,9 @@ toy(52253,{lvl=80,q=4})}}),
 i(51318,{b=1,description="Jaina: What's this?\nHe... he kept it.. all this time he kept it!\n<Cries> I knew!\n<Cries> I sensed a part of him still alive... trapped... struggling. Oh Arthas!\nPerhaps he might someday remember from what he once was...\nBy the Light may he at last find rest, free from the icy grip of that terrible blade!",q=4,questID=24916,g={
 toy(52251,{lvl=80,q=4})}})}})}}),
 h(-12,{
-ach(4602,{awp=30002,u=33,g={
+ach(4602,{awp=30002,phase=33,g={
 mnt(72808,{awp=30300,b=1,itemID=51954,lvl=70,q=4})}}),
-ach(4603,{awp=30002,u=33,g={
+ach(4603,{awp=30002,phase=33,g={
 mnt(72807,{awp=30300,b=1,itemID=51955,lvl=70,q=4})}}),
 ach(4532),
 ach(4608),
@@ -14762,300 +14762,300 @@ qo(1,{providers={{"n",38494}}}),
 i(52006,{b=1,q=4})}})}),
 h(-58,{
 cl(6,{crs={38316},g={
-s(179235,51312,{b=1,c={6},cost={{"i",51127,1},{"i",52028,1}},f=7,loc=40,lvl=80,q=4,u=33}),
-s(179237,51314,{b=1,c={6},cost={{"i",51125,1},{"i",52028,1}},f=7,loc=41,lvl=80,q=4,u=33}),
-s(179234,51311,{b=1,c={6},cost={{"i",51128,1},{"i",52028,1}},f=7,loc=44,lvl=80,q=4,u=33}),
-s(179233,51310,{b=1,c={6},cost={{"i",51129,1},{"i",52028,1}},f=7,loc=42,lvl=80,q=4,u=33}),
-s(179236,51313,{b=1,c={6},cost={{"i",51126,1},{"i",52028,1}},f=7,loc=46,lvl=80,q=4,u=33}),
-s(179229,51306,{b=1,c={6},cost={{"i",51133,1},{"i",52028,1}},f=7,loc=40,lvl=80,q=4,u=33}),
-s(179232,51309,{b=1,c={6},cost={{"i",51130,1},{"i",52028,1}},f=7,loc=41,lvl=80,q=4,u=33}),
-s(179230,51307,{b=1,c={6},cost={{"i",51132,1},{"i",52028,1}},f=7,loc=44,lvl=80,q=4,u=33}),
-s(179228,51305,{b=1,c={6},cost={{"i",51134,1},{"i",52028,1}},f=7,loc=42,lvl=80,q=4,u=33}),
-s(179231,51308,{b=1,c={6},cost={{"i",51131,1},{"i",52028,1}},f=7,loc=46,lvl=80,q=4,u=33}),
-s(179050,51127,{b=1,c={6},cost={{"i",50096,1},{"i",52025,1}},f=7,loc=40,lvl=80,q=4,u=33}),
-s(179048,51125,{b=1,c={6},cost={{"i",50098,1},{"i",52025,1}},f=7,loc=41,lvl=80,q=4,u=33}),
-s(179051,51128,{b=1,c={6},cost={{"i",50095,1},{"i",52025,1}},f=7,loc=44,lvl=80,q=4,u=33}),
-s(179052,51129,{b=1,c={6},cost={{"i",50094,1},{"i",52025,1}},f=7,loc=42,lvl=80,q=4,u=33}),
-s(179049,51126,{b=1,c={6},cost={{"i",50097,1},{"i",52025,1}},f=7,loc=46,lvl=80,q=4,u=33}),
-s(179056,51133,{b=1,c={6},cost={{"i",50855,1},{"i",52025,1}},f=7,loc=40,lvl=80,q=4,u=33}),
-s(179053,51130,{b=1,c={6},cost={{"i",50853,1},{"i",52025,1}},f=7,loc=41,lvl=80,q=4,u=33}),
-s(179055,51132,{b=1,c={6},cost={{"i",50856,1},{"i",52025,1}},f=7,loc=44,lvl=80,q=4,u=33}),
-s(179057,51134,{b=1,c={6},cost={{"i",50857,1},{"i",52025,1}},f=7,loc=42,lvl=80,q=4,u=33}),
-s(179054,51131,{b=1,c={6},cost={{"i",50854,1},{"i",52025,1}},f=7,loc=46,lvl=80,q=4,u=33}),
-s(178302,50096,{b=1,c={6},f=7,loc=40,lvl=80,q=4,u=33}),
-s(178304,50098,{b=1,c={6},f=7,loc=41,lvl=80,q=4,u=33}),
-s(178301,50095,{b=1,c={6},f=7,loc=44,lvl=80,q=4,u=33}),
-s(178300,50094,{b=1,c={6},f=7,loc=42,lvl=80,q=4,u=33}),
-s(178303,50097,{b=1,c={6},f=7,loc=46,lvl=80,q=4,u=33}),
-s(178786,50855,{b=1,c={6},f=7,loc=40,lvl=80,q=4,u=33}),
-s(178784,50853,{b=1,c={6},f=7,loc=41,lvl=80,q=4,u=33}),
-s(178787,50856,{b=1,c={6},f=7,loc=44,lvl=80,q=4,u=33}),
-s(178788,50857,{b=1,c={6},f=7,loc=42,lvl=80,q=4,u=33}),
-s(178785,50854,{b=1,c={6},f=7,loc=46,lvl=80,q=4,u=33})}}),
+s(179235,51312,{b=1,c={6},cost={{"i",51127,1},{"i",52028,1}},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(179237,51314,{b=1,c={6},cost={{"i",51125,1},{"i",52028,1}},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(179234,51311,{b=1,c={6},cost={{"i",51128,1},{"i",52028,1}},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(179233,51310,{b=1,c={6},cost={{"i",51129,1},{"i",52028,1}},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(179236,51313,{b=1,c={6},cost={{"i",51126,1},{"i",52028,1}},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(179229,51306,{b=1,c={6},cost={{"i",51133,1},{"i",52028,1}},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(179232,51309,{b=1,c={6},cost={{"i",51130,1},{"i",52028,1}},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(179230,51307,{b=1,c={6},cost={{"i",51132,1},{"i",52028,1}},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(179228,51305,{b=1,c={6},cost={{"i",51134,1},{"i",52028,1}},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(179231,51308,{b=1,c={6},cost={{"i",51131,1},{"i",52028,1}},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(179050,51127,{b=1,c={6},cost={{"i",50096,1},{"i",52025,1}},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(179048,51125,{b=1,c={6},cost={{"i",50098,1},{"i",52025,1}},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(179051,51128,{b=1,c={6},cost={{"i",50095,1},{"i",52025,1}},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(179052,51129,{b=1,c={6},cost={{"i",50094,1},{"i",52025,1}},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(179049,51126,{b=1,c={6},cost={{"i",50097,1},{"i",52025,1}},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(179056,51133,{b=1,c={6},cost={{"i",50855,1},{"i",52025,1}},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(179053,51130,{b=1,c={6},cost={{"i",50853,1},{"i",52025,1}},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(179055,51132,{b=1,c={6},cost={{"i",50856,1},{"i",52025,1}},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(179057,51134,{b=1,c={6},cost={{"i",50857,1},{"i",52025,1}},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(179054,51131,{b=1,c={6},cost={{"i",50854,1},{"i",52025,1}},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(178302,50096,{b=1,c={6},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(178304,50098,{b=1,c={6},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(178301,50095,{b=1,c={6},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(178300,50094,{b=1,c={6},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(178303,50097,{b=1,c={6},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(178786,50855,{b=1,c={6},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(178784,50853,{b=1,c={6},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(178787,50856,{b=1,c={6},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(178788,50857,{b=1,c={6},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(178785,50854,{b=1,c={6},f=7,loc=46,lvl=80,phase=33,q=4})}}),
 cl(11,{crs={37992,37999},g={
-s(179213,51290,{b=1,c={11},cost={{"i",51149,1},{"i",52028,1}},f=5,loc=40,lvl=80,q=4,u=33}),
-s(179215,51292,{b=1,c={11},cost={{"i",51147,1},{"i",52028,1}},f=5,loc=41,lvl=80,q=4,u=33}),
-s(179214,51291,{b=1,c={11},cost={{"i",51148,1},{"i",52028,1}},f=5,loc=44,lvl=80,q=4,u=33}),
-s(202595,51294,{b=1,c={11},cost={{"i",51145,1},{"i",52028,1}},f=5,loc=42,lvl=80,q=4,u=33}),
-s(179216,51293,{b=1,c={11},cost={{"i",51146,1},{"i",52028,1}},f=5,loc=46,lvl=80,q=4,u=33}),
-s(179219,51296,{b=1,c={11},cost={{"i",51143,1},{"i",52028,1}},f=5,loc=40,lvl=80,q=4,u=33}),
-s(179222,51299,{b=1,c={11},cost={{"i",51140,1},{"i",52028,1}},f=5,loc=41,lvl=80,q=4,u=33}),
-s(179218,51295,{b=1,c={11},cost={{"i",51144,1},{"i",52028,1}},f=5,loc=44,lvl=80,q=4,u=33}),
-s(179221,51298,{b=1,c={11},cost={{"i",51141,1},{"i",52028,1}},f=5,loc=42,lvl=80,q=4,u=33}),
-s(179220,51297,{b=1,c={11},cost={{"i",51142,1},{"i",52028,1}},f=5,loc=46,lvl=80,q=4,u=33}),
-s(179225,51302,{b=1,c={11},cost={{"i",51137,1},{"i",52028,1}},f=5,loc=40,lvl=80,q=4,u=33}),
-s(179227,51304,{b=1,c={11},cost={{"i",51135,1},{"i",52028,1}},f=5,loc=41,lvl=80,q=4,u=33}),
-s(179224,51301,{b=1,c={11},cost={{"i",51138,1},{"i",52028,1}},f=5,loc=44,lvl=80,q=4,u=33}),
-s(202596,51300,{b=1,c={11},cost={{"i",51139,1},{"i",52028,1}},f=5,loc=42,lvl=80,q=4,u=33}),
-s(179226,51303,{b=1,c={11},cost={{"i",51136,1},{"i",52028,1}},f=5,loc=46,lvl=80,q=4,u=33}),
-s(179072,51149,{b=1,c={11},cost={{"i",50821,1},{"i",52025,1}},f=5,loc=40,lvl=80,q=4,u=33}),
-s(179070,51147,{b=1,c={11},cost={{"i",50819,1},{"i",52025,1}},f=5,loc=41,lvl=80,q=4,u=33}),
-s(179071,51148,{b=1,c={11},cost={{"i",50822,1},{"i",52025,1}},f=5,loc=44,lvl=80,q=4,u=33}),
-s(179068,51145,{b=1,c={11},cost={{"i",50823,1},{"i",52025,1}},f=5,loc=42,lvl=80,q=4,u=33}),
-s(179069,51146,{b=1,c={11},cost={{"i",50820,1},{"i",52025,1}},f=5,loc=46,lvl=80,q=4,u=33}),
-s(179066,51143,{b=1,c={11},cost={{"i",50826,1},{"i",52025,1}},f=5,loc=40,lvl=80,q=4,u=33}),
-s(179063,51140,{b=1,c={11},cost={{"i",50824,1},{"i",52025,1}},f=5,loc=41,lvl=80,q=4,u=33}),
-s(179067,51144,{b=1,c={11},cost={{"i",50827,1},{"i",52025,1}},f=5,loc=44,lvl=80,q=4,u=33}),
-s(179064,51141,{b=1,c={11},cost={{"i",50828,1},{"i",52025,1}},f=5,loc=42,lvl=80,q=4,u=33}),
-s(179065,51142,{b=1,c={11},cost={{"i",50825,1},{"i",52025,1}},f=5,loc=46,lvl=80,q=4,u=33}),
-s(179060,51137,{b=1,c={11},cost={{"i",50108,1},{"i",52025,1}},f=5,loc=40,lvl=80,q=4,u=33}),
-s(179058,51135,{b=1,c={11},cost={{"i",50113,1},{"i",52025,1}},f=5,loc=41,lvl=80,q=4,u=33}),
-s(179062,51139,{b=1,c={11},cost={{"i",50106,1},{"i",52025,1}},f=5,loc=42,lvl=80,q=4,u=33}),
-s(179061,51138,{b=1,c={11},cost={{"i",50107,1},{"i",52025,1}},f=5,loc=44,lvl=80,q=4,u=33}),
-s(179059,51136,{b=1,c={11},cost={{"i",50109,1},{"i",52025,1}},f=5,loc=46,lvl=80,q=4,u=33}),
-s(178755,50821,{b=1,c={11},f=5,loc=40,lvl=80,q=4,u=33}),
-s(178753,50819,{b=1,c={11},f=5,loc=41,lvl=80,q=4,u=33}),
-s(178756,50822,{b=1,c={11},f=5,loc=44,lvl=80,q=4,u=33}),
-s(178757,50823,{b=1,c={11},f=5,loc=42,lvl=80,q=4,u=33}),
-s(178754,50820,{b=1,c={11},f=5,loc=46,lvl=80,q=4,u=33}),
-s(178760,50826,{b=1,c={11},f=5,loc=40,lvl=80,q=4,u=33}),
-s(178758,50824,{b=1,c={11},f=5,loc=41,lvl=80,q=4,u=33}),
-s(178761,50827,{b=1,c={11},f=5,loc=44,lvl=80,q=4,u=33}),
-s(178762,50828,{b=1,c={11},f=5,loc=42,lvl=80,q=4,u=33}),
-s(178759,50825,{b=1,c={11},f=5,loc=46,lvl=80,q=4,u=33}),
-s(178314,50108,{b=1,c={11},f=5,loc=40,lvl=80,q=4,u=33}),
-s(178319,50113,{b=1,c={11},f=5,loc=41,lvl=80,q=4,u=33}),
-s(178313,50107,{b=1,c={11},f=5,loc=44,lvl=80,q=4,u=33}),
-s(178312,50106,{b=1,c={11},f=5,loc=42,lvl=80,q=4,u=33}),
-s(178315,50109,{b=1,c={11},f=5,loc=46,lvl=80,q=4,u=33})}}),
+s(179213,51290,{b=1,c={11},cost={{"i",51149,1},{"i",52028,1}},f=5,loc=40,lvl=80,phase=33,q=4}),
+s(179215,51292,{b=1,c={11},cost={{"i",51147,1},{"i",52028,1}},f=5,loc=41,lvl=80,phase=33,q=4}),
+s(179214,51291,{b=1,c={11},cost={{"i",51148,1},{"i",52028,1}},f=5,loc=44,lvl=80,phase=33,q=4}),
+s(202595,51294,{b=1,c={11},cost={{"i",51145,1},{"i",52028,1}},f=5,loc=42,lvl=80,phase=33,q=4}),
+s(179216,51293,{b=1,c={11},cost={{"i",51146,1},{"i",52028,1}},f=5,loc=46,lvl=80,phase=33,q=4}),
+s(179219,51296,{b=1,c={11},cost={{"i",51143,1},{"i",52028,1}},f=5,loc=40,lvl=80,phase=33,q=4}),
+s(179222,51299,{b=1,c={11},cost={{"i",51140,1},{"i",52028,1}},f=5,loc=41,lvl=80,phase=33,q=4}),
+s(179218,51295,{b=1,c={11},cost={{"i",51144,1},{"i",52028,1}},f=5,loc=44,lvl=80,phase=33,q=4}),
+s(179221,51298,{b=1,c={11},cost={{"i",51141,1},{"i",52028,1}},f=5,loc=42,lvl=80,phase=33,q=4}),
+s(179220,51297,{b=1,c={11},cost={{"i",51142,1},{"i",52028,1}},f=5,loc=46,lvl=80,phase=33,q=4}),
+s(179225,51302,{b=1,c={11},cost={{"i",51137,1},{"i",52028,1}},f=5,loc=40,lvl=80,phase=33,q=4}),
+s(179227,51304,{b=1,c={11},cost={{"i",51135,1},{"i",52028,1}},f=5,loc=41,lvl=80,phase=33,q=4}),
+s(179224,51301,{b=1,c={11},cost={{"i",51138,1},{"i",52028,1}},f=5,loc=44,lvl=80,phase=33,q=4}),
+s(202596,51300,{b=1,c={11},cost={{"i",51139,1},{"i",52028,1}},f=5,loc=42,lvl=80,phase=33,q=4}),
+s(179226,51303,{b=1,c={11},cost={{"i",51136,1},{"i",52028,1}},f=5,loc=46,lvl=80,phase=33,q=4}),
+s(179072,51149,{b=1,c={11},cost={{"i",50821,1},{"i",52025,1}},f=5,loc=40,lvl=80,phase=33,q=4}),
+s(179070,51147,{b=1,c={11},cost={{"i",50819,1},{"i",52025,1}},f=5,loc=41,lvl=80,phase=33,q=4}),
+s(179071,51148,{b=1,c={11},cost={{"i",50822,1},{"i",52025,1}},f=5,loc=44,lvl=80,phase=33,q=4}),
+s(179068,51145,{b=1,c={11},cost={{"i",50823,1},{"i",52025,1}},f=5,loc=42,lvl=80,phase=33,q=4}),
+s(179069,51146,{b=1,c={11},cost={{"i",50820,1},{"i",52025,1}},f=5,loc=46,lvl=80,phase=33,q=4}),
+s(179066,51143,{b=1,c={11},cost={{"i",50826,1},{"i",52025,1}},f=5,loc=40,lvl=80,phase=33,q=4}),
+s(179063,51140,{b=1,c={11},cost={{"i",50824,1},{"i",52025,1}},f=5,loc=41,lvl=80,phase=33,q=4}),
+s(179067,51144,{b=1,c={11},cost={{"i",50827,1},{"i",52025,1}},f=5,loc=44,lvl=80,phase=33,q=4}),
+s(179064,51141,{b=1,c={11},cost={{"i",50828,1},{"i",52025,1}},f=5,loc=42,lvl=80,phase=33,q=4}),
+s(179065,51142,{b=1,c={11},cost={{"i",50825,1},{"i",52025,1}},f=5,loc=46,lvl=80,phase=33,q=4}),
+s(179060,51137,{b=1,c={11},cost={{"i",50108,1},{"i",52025,1}},f=5,loc=40,lvl=80,phase=33,q=4}),
+s(179058,51135,{b=1,c={11},cost={{"i",50113,1},{"i",52025,1}},f=5,loc=41,lvl=80,phase=33,q=4}),
+s(179062,51139,{b=1,c={11},cost={{"i",50106,1},{"i",52025,1}},f=5,loc=42,lvl=80,phase=33,q=4}),
+s(179061,51138,{b=1,c={11},cost={{"i",50107,1},{"i",52025,1}},f=5,loc=44,lvl=80,phase=33,q=4}),
+s(179059,51136,{b=1,c={11},cost={{"i",50109,1},{"i",52025,1}},f=5,loc=46,lvl=80,phase=33,q=4}),
+s(178755,50821,{b=1,c={11},f=5,loc=40,lvl=80,phase=33,q=4}),
+s(178753,50819,{b=1,c={11},f=5,loc=41,lvl=80,phase=33,q=4}),
+s(178756,50822,{b=1,c={11},f=5,loc=44,lvl=80,phase=33,q=4}),
+s(178757,50823,{b=1,c={11},f=5,loc=42,lvl=80,phase=33,q=4}),
+s(178754,50820,{b=1,c={11},f=5,loc=46,lvl=80,phase=33,q=4}),
+s(178760,50826,{b=1,c={11},f=5,loc=40,lvl=80,phase=33,q=4}),
+s(178758,50824,{b=1,c={11},f=5,loc=41,lvl=80,phase=33,q=4}),
+s(178761,50827,{b=1,c={11},f=5,loc=44,lvl=80,phase=33,q=4}),
+s(178762,50828,{b=1,c={11},f=5,loc=42,lvl=80,phase=33,q=4}),
+s(178759,50825,{b=1,c={11},f=5,loc=46,lvl=80,phase=33,q=4}),
+s(178314,50108,{b=1,c={11},f=5,loc=40,lvl=80,phase=33,q=4}),
+s(178319,50113,{b=1,c={11},f=5,loc=41,lvl=80,phase=33,q=4}),
+s(178313,50107,{b=1,c={11},f=5,loc=44,lvl=80,phase=33,q=4}),
+s(178312,50106,{b=1,c={11},f=5,loc=42,lvl=80,phase=33,q=4}),
+s(178315,50109,{b=1,c={11},f=5,loc=46,lvl=80,phase=33,q=4})}}),
 cl(3,{crs={37993,37998},g={
-s(179209,51286,{b=1,c={3},cost={{"i",51153,1},{"i",52029,1}},f=6,loc=40,lvl=80,q=4,u=33}),
-s(179211,51288,{b=1,c={3},cost={{"i",51151,1},{"i",52029,1}},f=6,loc=41,lvl=80,q=4,u=33}),
-s(179208,51285,{b=1,c={3},cost={{"i",51154,1},{"i",52029,1}},f=6,loc=44,lvl=80,q=4,u=33}),
-s(179212,51289,{b=1,c={3},cost={{"i",51150,1},{"i",52029,1}},f=6,loc=42,lvl=80,q=4,u=33}),
-s(179210,51287,{b=1,c={3},cost={{"i",51152,1},{"i",52029,1}},f=6,loc=46,lvl=80,q=4,u=33}),
-s(202585,51153,{b=1,c={3},cost={{"i",50115,1},{"i",52026,1}},f=6,loc=40,lvl=80,q=4,u=33}),
-s(179074,51151,{b=1,c={3},cost={{"i",50117,1},{"i",52026,1}},f=6,loc=41,lvl=80,q=4,u=33}),
-s(202586,51154,{b=1,c={3},cost={{"i",50114,1},{"i",52026,1}},f=6,loc=44,lvl=80,q=4,u=33}),
-s(179073,51150,{b=1,c={3},cost={{"i",50118,1},{"i",52026,1}},f=6,loc=42,lvl=80,q=4,u=33}),
-s(179075,51152,{b=1,c={3},cost={{"i",50116,1},{"i",52026,1}},f=6,loc=46,lvl=80,q=4,u=33}),
-s(178321,50115,{b=1,c={3},f=6,loc=40,lvl=80,q=4,u=33}),
-s(178323,50117,{b=1,c={3},f=6,loc=41,lvl=80,q=4,u=33}),
-s(178320,50114,{b=1,c={3},f=6,loc=44,lvl=80,q=4,u=33}),
-s(178324,50118,{b=1,c={3},f=6,loc=42,lvl=80,q=4,u=33}),
-s(178322,50116,{b=1,c={3},f=6,loc=46,lvl=80,q=4,u=33})}}),
+s(179209,51286,{b=1,c={3},cost={{"i",51153,1},{"i",52029,1}},f=6,loc=40,lvl=80,phase=33,q=4}),
+s(179211,51288,{b=1,c={3},cost={{"i",51151,1},{"i",52029,1}},f=6,loc=41,lvl=80,phase=33,q=4}),
+s(179208,51285,{b=1,c={3},cost={{"i",51154,1},{"i",52029,1}},f=6,loc=44,lvl=80,phase=33,q=4}),
+s(179212,51289,{b=1,c={3},cost={{"i",51150,1},{"i",52029,1}},f=6,loc=42,lvl=80,phase=33,q=4}),
+s(179210,51287,{b=1,c={3},cost={{"i",51152,1},{"i",52029,1}},f=6,loc=46,lvl=80,phase=33,q=4}),
+s(202585,51153,{b=1,c={3},cost={{"i",50115,1},{"i",52026,1}},f=6,loc=40,lvl=80,phase=33,q=4}),
+s(179074,51151,{b=1,c={3},cost={{"i",50117,1},{"i",52026,1}},f=6,loc=41,lvl=80,phase=33,q=4}),
+s(202586,51154,{b=1,c={3},cost={{"i",50114,1},{"i",52026,1}},f=6,loc=44,lvl=80,phase=33,q=4}),
+s(179073,51150,{b=1,c={3},cost={{"i",50118,1},{"i",52026,1}},f=6,loc=42,lvl=80,phase=33,q=4}),
+s(179075,51152,{b=1,c={3},cost={{"i",50116,1},{"i",52026,1}},f=6,loc=46,lvl=80,phase=33,q=4}),
+s(178321,50115,{b=1,c={3},f=6,loc=40,lvl=80,phase=33,q=4}),
+s(178323,50117,{b=1,c={3},f=6,loc=41,lvl=80,phase=33,q=4}),
+s(178320,50114,{b=1,c={3},f=6,loc=44,lvl=80,phase=33,q=4}),
+s(178324,50118,{b=1,c={3},f=6,loc=42,lvl=80,phase=33,q=4}),
+s(178322,50116,{b=1,c={3},f=6,loc=46,lvl=80,phase=33,q=4})}}),
 cl(8,{crs={38283,38284},g={
-s(179204,51281,{b=1,c={8},cost={{"i",51158,1},{"i",52028,1}},f=4,loc=40,lvl=80,q=4,u=33}),
-s(179207,51284,{b=1,c={8},cost={{"i",51155,1},{"i",52028,1}},f=4,loc=41,lvl=80,q=4,u=33}),
-s(179203,51280,{b=1,c={8},cost={{"i",51159,1},{"i",52028,1}},f=4,loc=44,lvl=80,q=4,u=33}),
-s(179206,51283,{b=1,c={8},cost={{"i",51156,1},{"i",52028,1}},f=4,loc=42,lvl=80,q=4,u=33}),
-s(179205,51282,{b=1,c={8},cost={{"i",51157,1},{"i",52028,1}},f=4,loc=46,lvl=80,q=4,u=33}),
-s(179081,51158,{b=1,c={8},cost={{"i",50276,1},{"i",52025,1}},f=4,loc=40,lvl=80,q=4,u=33}),
-s(179078,51155,{b=1,c={8},cost={{"i",50279,1},{"i",52025,1}},f=4,loc=41,lvl=80,q=4,u=33}),
-s(179082,51159,{b=1,c={8},cost={{"i",50275,1},{"i",52025,1}},f=4,loc=44,lvl=80,q=4,u=33}),
-s(179079,51156,{b=1,c={8},cost={{"i",50278,1},{"i",52025,1}},f=4,loc=42,lvl=80,q=4,u=33}),
-s(179080,51157,{b=1,c={8},cost={{"i",50277,1},{"i",52025,1}},f=4,loc=46,lvl=80,q=4,u=33}),
-s(178402,50276,{b=1,c={8},f=4,loc=40,lvl=80,q=4,u=33}),
-s(178405,50279,{b=1,c={8},f=4,loc=41,lvl=80,q=4,u=33}),
-s(178401,50275,{b=1,c={8},f=4,loc=44,lvl=80,q=4,u=33}),
-s(178404,50278,{b=1,c={8},f=4,loc=42,lvl=80,q=4,u=33}),
-s(178403,50277,{b=1,c={8},f=4,loc=46,lvl=80,q=4,u=33})}}),
+s(179204,51281,{b=1,c={8},cost={{"i",51158,1},{"i",52028,1}},f=4,loc=40,lvl=80,phase=33,q=4}),
+s(179207,51284,{b=1,c={8},cost={{"i",51155,1},{"i",52028,1}},f=4,loc=41,lvl=80,phase=33,q=4}),
+s(179203,51280,{b=1,c={8},cost={{"i",51159,1},{"i",52028,1}},f=4,loc=44,lvl=80,phase=33,q=4}),
+s(179206,51283,{b=1,c={8},cost={{"i",51156,1},{"i",52028,1}},f=4,loc=42,lvl=80,phase=33,q=4}),
+s(179205,51282,{b=1,c={8},cost={{"i",51157,1},{"i",52028,1}},f=4,loc=46,lvl=80,phase=33,q=4}),
+s(179081,51158,{b=1,c={8},cost={{"i",50276,1},{"i",52025,1}},f=4,loc=40,lvl=80,phase=33,q=4}),
+s(179078,51155,{b=1,c={8},cost={{"i",50279,1},{"i",52025,1}},f=4,loc=41,lvl=80,phase=33,q=4}),
+s(179082,51159,{b=1,c={8},cost={{"i",50275,1},{"i",52025,1}},f=4,loc=44,lvl=80,phase=33,q=4}),
+s(179079,51156,{b=1,c={8},cost={{"i",50278,1},{"i",52025,1}},f=4,loc=42,lvl=80,phase=33,q=4}),
+s(179080,51157,{b=1,c={8},cost={{"i",50277,1},{"i",52025,1}},f=4,loc=46,lvl=80,phase=33,q=4}),
+s(178402,50276,{b=1,c={8},f=4,loc=40,lvl=80,phase=33,q=4}),
+s(178405,50279,{b=1,c={8},f=4,loc=41,lvl=80,phase=33,q=4}),
+s(178401,50275,{b=1,c={8},f=4,loc=44,lvl=80,phase=33,q=4}),
+s(178404,50278,{b=1,c={8},f=4,loc=42,lvl=80,phase=33,q=4}),
+s(178403,50277,{b=1,c={8},f=4,loc=46,lvl=80,phase=33,q=4})}}),
 cl(2,{crs={37696},g={
-s(179195,51272,{b=1,c={2},cost={{"i",51167,1},{"i",52030,1}},f=7,loc=40,lvl=80,q=4,u=33}),
-s(179196,51273,{b=1,c={2},cost={{"i",51166,1},{"i",52030,1}},f=7,loc=41,lvl=80,q=4,u=33}),
-s(179193,51270,{b=1,c={2},cost={{"i",51169,1},{"i",52030,1}},f=7,loc=44,lvl=80,q=4,u=33}),
-s(202592,51274,{b=1,c={2},cost={{"i",51165,1},{"i",52030,1}},f=7,loc=42,lvl=80,q=4,u=33}),
-s(202591,51271,{b=1,c={2},cost={{"i",51168,1},{"i",52030,1}},f=7,loc=46,lvl=80,q=4,u=33}),
-s(179189,51266,{b=1,c={2},cost={{"i",51173,1},{"i",52030,1}},f=7,loc=40,lvl=80,q=4,u=33}),
-s(179192,51269,{b=1,c={2},cost={{"i",51170,1},{"i",52030,1}},f=7,loc=41,lvl=80,q=4,u=33}),
-s(179190,51267,{b=1,c={2},cost={{"i",51172,1},{"i",52030,1}},f=7,loc=44,lvl=80,q=4,u=33}),
-s(202590,51265,{b=1,c={2},cost={{"i",51174,1},{"i",52030,1}},f=7,loc=42,lvl=80,q=4,u=33}),
-s(179191,51268,{b=1,c={2},cost={{"i",51171,1},{"i",52030,1}},f=7,loc=46,lvl=80,q=4,u=33}),
-s(179200,51277,{b=1,c={2},cost={{"i",51162,1},{"i",52030,1}},f=7,loc=40,lvl=80,q=4,u=33}),
-s(179202,51279,{b=1,c={2},cost={{"i",51160,1},{"i",52030,1}},f=7,loc=41,lvl=80,q=4,u=33}),
-s(179199,51276,{b=1,c={2},cost={{"i",51163,1},{"i",52030,1}},f=7,loc=44,lvl=80,q=4,u=33}),
-s(202593,51275,{b=1,c={2},cost={{"i",51164,1},{"i",52030,1}},f=7,loc=42,lvl=80,q=4,u=33}),
-s(202594,51278,{b=1,c={2},cost={{"i",51161,1},{"i",52030,1}},f=7,loc=46,lvl=80,q=4,u=33}),
-s(179090,51167,{b=1,c={2},cost={{"i",50867,1},{"i",52027,1}},f=7,loc=40,lvl=80,q=4,u=33}),
-s(179089,51166,{b=1,c={2},cost={{"i",50865,1},{"i",52027,1}},f=7,loc=41,lvl=80,q=4,u=33}),
-s(179092,51169,{b=1,c={2},cost={{"i",50868,1},{"i",52027,1}},f=7,loc=44,lvl=80,q=4,u=33}),
-s(179091,51168,{b=1,c={2},cost={{"i",50866,1},{"i",52027,1}},f=7,loc=46,lvl=80,q=4,u=33}),
-s(179088,51165,{b=1,c={2},cost={{"i",50869,1},{"i",52027,1}},f=7,loc=42,lvl=80,q=4,u=33}),
-s(179096,51173,{b=1,c={2},cost={{"i",50862,1},{"i",52027,1}},f=7,loc=40,lvl=80,q=4,u=33}),
-s(179093,51170,{b=1,c={2},cost={{"i",50860,1},{"i",52027,1}},f=7,loc=41,lvl=80,q=4,u=33}),
-s(179095,51172,{b=1,c={2},cost={{"i",50863,1},{"i",52027,1}},f=7,loc=44,lvl=80,q=4,u=33}),
-s(179097,51174,{b=1,c={2},cost={{"i",50864,1},{"i",52027,1}},f=7,loc=42,lvl=80,q=4,u=33}),
-s(179094,51171,{b=1,c={2},cost={{"i",50861,1},{"i",52027,1}},f=7,loc=46,lvl=80,q=4,u=33}),
-s(179085,51162,{b=1,c={2},cost={{"i",50326,1},{"i",52027,1}},f=7,loc=40,lvl=80,q=4,u=33}),
-s(179083,51160,{b=1,c={2},cost={{"i",50324,1},{"i",52027,1}},f=7,loc=41,lvl=80,q=4,u=33}),
-s(179086,51163,{b=1,c={2},cost={{"i",50327,1},{"i",52027,1}},f=7,loc=44,lvl=80,q=4,u=33}),
-s(179087,51164,{b=1,c={2},cost={{"i",50328,1},{"i",52027,1}},f=7,loc=42,lvl=80,q=4,u=33}),
-s(179084,51161,{b=1,c={2},cost={{"i",50325,1},{"i",52027,1}},f=7,loc=46,lvl=80,q=4,u=33}),
-s(178798,50867,{b=1,c={2},f=7,loc=40,lvl=80,q=4,u=33}),
-s(178796,50865,{b=1,c={2},f=7,loc=41,lvl=80,q=4,u=33}),
-s(178799,50868,{b=1,c={2},f=7,loc=44,lvl=80,q=4,u=33}),
-s(178800,50869,{b=1,c={2},f=7,loc=42,lvl=80,q=4,u=33}),
-s(178797,50866,{b=1,c={2},f=7,loc=46,lvl=80,q=4,u=33}),
-s(178793,50862,{b=1,c={2},f=7,loc=40,lvl=80,q=4,u=33}),
-s(178791,50860,{b=1,c={2},f=7,loc=41,lvl=80,q=4,u=33}),
-s(178794,50863,{b=1,c={2},f=7,loc=44,lvl=80,q=4,u=33}),
-s(178795,50864,{b=1,c={2},f=7,loc=42,lvl=80,q=4,u=33}),
-s(178792,50861,{b=1,c={2},f=7,loc=46,lvl=80,q=4,u=33}),
-s(178442,50326,{b=1,c={2},f=7,loc=40,lvl=80,q=4,u=33}),
-s(178440,50324,{b=1,c={2},f=7,loc=41,lvl=80,q=4,u=33}),
-s(178443,50327,{b=1,c={2},f=7,loc=44,lvl=80,q=4,u=33}),
-s(178444,50328,{b=1,c={2},f=7,loc=42,lvl=80,q=4,u=33}),
-s(178441,50325,{b=1,c={2},f=7,loc=46,lvl=80,q=4,u=33})}}),
+s(179195,51272,{b=1,c={2},cost={{"i",51167,1},{"i",52030,1}},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(179196,51273,{b=1,c={2},cost={{"i",51166,1},{"i",52030,1}},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(179193,51270,{b=1,c={2},cost={{"i",51169,1},{"i",52030,1}},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(202592,51274,{b=1,c={2},cost={{"i",51165,1},{"i",52030,1}},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(202591,51271,{b=1,c={2},cost={{"i",51168,1},{"i",52030,1}},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(179189,51266,{b=1,c={2},cost={{"i",51173,1},{"i",52030,1}},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(179192,51269,{b=1,c={2},cost={{"i",51170,1},{"i",52030,1}},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(179190,51267,{b=1,c={2},cost={{"i",51172,1},{"i",52030,1}},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(202590,51265,{b=1,c={2},cost={{"i",51174,1},{"i",52030,1}},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(179191,51268,{b=1,c={2},cost={{"i",51171,1},{"i",52030,1}},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(179200,51277,{b=1,c={2},cost={{"i",51162,1},{"i",52030,1}},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(179202,51279,{b=1,c={2},cost={{"i",51160,1},{"i",52030,1}},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(179199,51276,{b=1,c={2},cost={{"i",51163,1},{"i",52030,1}},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(202593,51275,{b=1,c={2},cost={{"i",51164,1},{"i",52030,1}},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(202594,51278,{b=1,c={2},cost={{"i",51161,1},{"i",52030,1}},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(179090,51167,{b=1,c={2},cost={{"i",50867,1},{"i",52027,1}},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(179089,51166,{b=1,c={2},cost={{"i",50865,1},{"i",52027,1}},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(179092,51169,{b=1,c={2},cost={{"i",50868,1},{"i",52027,1}},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(179091,51168,{b=1,c={2},cost={{"i",50866,1},{"i",52027,1}},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(179088,51165,{b=1,c={2},cost={{"i",50869,1},{"i",52027,1}},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(179096,51173,{b=1,c={2},cost={{"i",50862,1},{"i",52027,1}},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(179093,51170,{b=1,c={2},cost={{"i",50860,1},{"i",52027,1}},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(179095,51172,{b=1,c={2},cost={{"i",50863,1},{"i",52027,1}},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(179097,51174,{b=1,c={2},cost={{"i",50864,1},{"i",52027,1}},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(179094,51171,{b=1,c={2},cost={{"i",50861,1},{"i",52027,1}},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(179085,51162,{b=1,c={2},cost={{"i",50326,1},{"i",52027,1}},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(179083,51160,{b=1,c={2},cost={{"i",50324,1},{"i",52027,1}},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(179086,51163,{b=1,c={2},cost={{"i",50327,1},{"i",52027,1}},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(179087,51164,{b=1,c={2},cost={{"i",50328,1},{"i",52027,1}},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(179084,51161,{b=1,c={2},cost={{"i",50325,1},{"i",52027,1}},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(178798,50867,{b=1,c={2},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(178796,50865,{b=1,c={2},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(178799,50868,{b=1,c={2},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(178800,50869,{b=1,c={2},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(178797,50866,{b=1,c={2},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(178793,50862,{b=1,c={2},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(178791,50860,{b=1,c={2},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(178794,50863,{b=1,c={2},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(178795,50864,{b=1,c={2},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(178792,50861,{b=1,c={2},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(178442,50326,{b=1,c={2},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(178440,50324,{b=1,c={2},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(178443,50327,{b=1,c={2},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(178444,50328,{b=1,c={2},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(178441,50325,{b=1,c={2},f=7,loc=46,lvl=80,phase=33,q=4})}}),
 cl(5,{crs={38054},g={
-s(179184,51261,{b=1,c={5},cost={{"i",51178,1},{"i",52030,1}},f=4,loc=40,lvl=80,q=4,u=33}),
-s(179187,51264,{b=1,c={5},cost={{"i",51175,1},{"i",52030,1}},f=4,loc=41,lvl=80,q=4,u=33}),
-s(179183,51260,{b=1,c={5},cost={{"i",51179,1},{"i",52030,1}},f=4,loc=44,lvl=80,q=4,u=33}),
-s(179186,51263,{b=1,c={5},cost={{"i",51176,1},{"i",52030,1}},f=4,loc=42,lvl=80,q=4,u=33}),
-s(202589,51262,{b=1,c={5},cost={{"i",51177,1},{"i",52030,1}},f=4,loc=46,lvl=80,q=4,u=33}),
-s(179178,51255,{b=1,c={5},cost={{"i",51184,1},{"i",52030,1}},f=4,loc=40,lvl=80,q=4,u=33}),
-s(179180,51257,{b=1,c={5},cost={{"i",51182,1},{"i",52030,1}},f=4,loc=41,lvl=80,q=4,u=33}),
-s(179179,51256,{b=1,c={5},cost={{"i",51183,1},{"i",52030,1}},f=4,loc=44,lvl=80,q=4,u=33}),
-s(179182,51259,{b=1,c={5},cost={{"i",51180,1},{"i",52030,1}},f=4,loc=42,lvl=80,q=4,u=33}),
-s(202588,51258,{b=1,c={5},cost={{"i",51181,1},{"i",52030,1}},f=4,loc=46,lvl=80,q=4,u=33}),
-s(179101,51178,{b=1,c={5},cost={{"i",50765,1},{"i",52027,1}},f=4,loc=40,lvl=80,q=4,u=33}),
-s(179098,51175,{b=1,c={5},cost={{"i",50767,1},{"i",52027,1}},f=4,loc=41,lvl=80,q=4,u=33}),
-s(179102,51179,{b=1,c={5},cost={{"i",50766,1},{"i",52027,1}},f=4,loc=44,lvl=80,q=4,u=33}),
-s(179099,51176,{b=1,c={5},cost={{"i",50768,1},{"i",52027,1}},f=4,loc=42,lvl=80,q=4,u=33}),
-s(179100,51177,{b=1,c={5},cost={{"i",50769,1},{"i",52027,1}},f=4,loc=46,lvl=80,q=4,u=33}),
-s(179107,51184,{b=1,c={5},cost={{"i",50392,1},{"i",52027,1}},f=4,loc=40,lvl=80,q=4,u=33}),
-s(179105,51182,{b=1,c={5},cost={{"i",50396,1},{"i",52027,1}},f=4,loc=41,lvl=80,q=4,u=33}),
-s(179106,51183,{b=1,c={5},cost={{"i",50391,1},{"i",52027,1}},f=4,loc=44,lvl=80,q=4,u=33}),
-s(179103,51180,{b=1,c={5},cost={{"i",50394,1},{"i",52027,1}},f=4,loc=42,lvl=80,q=4,u=33}),
-s(179104,51181,{b=1,c={5},cost={{"i",50393,1},{"i",52027,1}},f=4,loc=46,lvl=80,q=4,u=33}),
-s(178706,50765,{b=1,c={5},f=4,loc=40,lvl=80,q=4,u=33}),
-s(178708,50767,{b=1,c={5},f=4,loc=41,lvl=80,q=4,u=33}),
-s(178707,50766,{b=1,c={5},f=4,loc=44,lvl=80,q=4,u=33}),
-s(178709,50768,{b=1,c={5},f=4,loc=42,lvl=80,q=4,u=33}),
-s(202577,50769,{b=1,c={5},f=4,loc=46,lvl=80,q=4,u=33}),
-s(178453,50392,{b=1,c={5},f=4,loc=40,lvl=80,q=4,u=33}),
-s(178457,50396,{b=1,c={5},f=4,loc=41,lvl=80,q=4,u=33}),
-s(178452,50391,{b=1,c={5},f=4,loc=44,lvl=80,q=4,u=33}),
-s(178455,50394,{b=1,c={5},f=4,loc=42,lvl=80,q=4,u=33}),
-s(202568,50393,{b=1,c={5},f=4,loc=46,lvl=80,q=4,u=33})}}),
+s(179184,51261,{b=1,c={5},cost={{"i",51178,1},{"i",52030,1}},f=4,loc=40,lvl=80,phase=33,q=4}),
+s(179187,51264,{b=1,c={5},cost={{"i",51175,1},{"i",52030,1}},f=4,loc=41,lvl=80,phase=33,q=4}),
+s(179183,51260,{b=1,c={5},cost={{"i",51179,1},{"i",52030,1}},f=4,loc=44,lvl=80,phase=33,q=4}),
+s(179186,51263,{b=1,c={5},cost={{"i",51176,1},{"i",52030,1}},f=4,loc=42,lvl=80,phase=33,q=4}),
+s(202589,51262,{b=1,c={5},cost={{"i",51177,1},{"i",52030,1}},f=4,loc=46,lvl=80,phase=33,q=4}),
+s(179178,51255,{b=1,c={5},cost={{"i",51184,1},{"i",52030,1}},f=4,loc=40,lvl=80,phase=33,q=4}),
+s(179180,51257,{b=1,c={5},cost={{"i",51182,1},{"i",52030,1}},f=4,loc=41,lvl=80,phase=33,q=4}),
+s(179179,51256,{b=1,c={5},cost={{"i",51183,1},{"i",52030,1}},f=4,loc=44,lvl=80,phase=33,q=4}),
+s(179182,51259,{b=1,c={5},cost={{"i",51180,1},{"i",52030,1}},f=4,loc=42,lvl=80,phase=33,q=4}),
+s(202588,51258,{b=1,c={5},cost={{"i",51181,1},{"i",52030,1}},f=4,loc=46,lvl=80,phase=33,q=4}),
+s(179101,51178,{b=1,c={5},cost={{"i",50765,1},{"i",52027,1}},f=4,loc=40,lvl=80,phase=33,q=4}),
+s(179098,51175,{b=1,c={5},cost={{"i",50767,1},{"i",52027,1}},f=4,loc=41,lvl=80,phase=33,q=4}),
+s(179102,51179,{b=1,c={5},cost={{"i",50766,1},{"i",52027,1}},f=4,loc=44,lvl=80,phase=33,q=4}),
+s(179099,51176,{b=1,c={5},cost={{"i",50768,1},{"i",52027,1}},f=4,loc=42,lvl=80,phase=33,q=4}),
+s(179100,51177,{b=1,c={5},cost={{"i",50769,1},{"i",52027,1}},f=4,loc=46,lvl=80,phase=33,q=4}),
+s(179107,51184,{b=1,c={5},cost={{"i",50392,1},{"i",52027,1}},f=4,loc=40,lvl=80,phase=33,q=4}),
+s(179105,51182,{b=1,c={5},cost={{"i",50396,1},{"i",52027,1}},f=4,loc=41,lvl=80,phase=33,q=4}),
+s(179106,51183,{b=1,c={5},cost={{"i",50391,1},{"i",52027,1}},f=4,loc=44,lvl=80,phase=33,q=4}),
+s(179103,51180,{b=1,c={5},cost={{"i",50394,1},{"i",52027,1}},f=4,loc=42,lvl=80,phase=33,q=4}),
+s(179104,51181,{b=1,c={5},cost={{"i",50393,1},{"i",52027,1}},f=4,loc=46,lvl=80,phase=33,q=4}),
+s(178706,50765,{b=1,c={5},f=4,loc=40,lvl=80,phase=33,q=4}),
+s(178708,50767,{b=1,c={5},f=4,loc=41,lvl=80,phase=33,q=4}),
+s(178707,50766,{b=1,c={5},f=4,loc=44,lvl=80,phase=33,q=4}),
+s(178709,50768,{b=1,c={5},f=4,loc=42,lvl=80,phase=33,q=4}),
+s(202577,50769,{b=1,c={5},f=4,loc=46,lvl=80,phase=33,q=4}),
+s(178453,50392,{b=1,c={5},f=4,loc=40,lvl=80,phase=33,q=4}),
+s(178457,50396,{b=1,c={5},f=4,loc=41,lvl=80,phase=33,q=4}),
+s(178452,50391,{b=1,c={5},f=4,loc=44,lvl=80,phase=33,q=4}),
+s(178455,50394,{b=1,c={5},f=4,loc=42,lvl=80,phase=33,q=4}),
+s(202568,50393,{b=1,c={5},f=4,loc=46,lvl=80,phase=33,q=4})}}),
 cl(4,{crs={37991,37997},g={
-s(179175,51252,{b=1,c={4},cost={{"i",51187,1},{"i",52028,1}},f=5,loc=40,lvl=80,q=4,u=33}),
-s(179177,51254,{b=1,c={4},cost={{"i",51185,1},{"i",52028,1}},f=5,loc=41,lvl=80,q=4,u=33}),
-s(179174,51251,{b=1,c={4},cost={{"i",51188,1},{"i",52028,1}},f=5,loc=44,lvl=80,q=4,u=33}),
-s(179173,51250,{b=1,c={4},cost={{"i",51189,1},{"i",52028,1}},f=5,loc=42,lvl=80,q=4,u=33}),
-s(179176,51253,{b=1,c={4},cost={{"i",51186,1},{"i",52028,1}},f=5,loc=46,lvl=80,q=4,u=33}),
-s(179110,51187,{b=1,c={4},cost={{"i",50089,1},{"i",52025,1}},f=5,loc=40,lvl=80,q=4,u=33}),
-s(179108,51185,{b=1,c={4},cost={{"i",50105,1},{"i",52025,1}},f=5,loc=41,lvl=80,q=4,u=33}),
-s(179111,51188,{b=1,c={4},cost={{"i",50088,1},{"i",52025,1}},f=5,loc=44,lvl=80,q=4,u=33}),
-s(179112,51189,{b=1,c={4},cost={{"i",50087,1},{"i",52025,1}},f=5,loc=42,lvl=80,q=4,u=33}),
-s(179109,51186,{b=1,c={4},cost={{"i",50090,1},{"i",52025,1}},f=5,loc=46,lvl=80,q=4,u=33}),
-s(178298,50089,{b=1,c={4},f=5,loc=40,lvl=80,q=4,u=33}),
-s(178311,50105,{b=1,c={4},f=5,loc=41,lvl=80,q=4,u=33}),
-s(202537,50088,{b=1,c={4},f=5,loc=44,lvl=80,q=4,u=33}),
-s(202536,50087,{b=1,c={4},f=5,loc=42,lvl=80,q=4,u=33}),
-s(202538,50090,{b=1,c={4},f=5,loc=46,lvl=80,q=4,u=33})}}),
+s(179175,51252,{b=1,c={4},cost={{"i",51187,1},{"i",52028,1}},f=5,loc=40,lvl=80,phase=33,q=4}),
+s(179177,51254,{b=1,c={4},cost={{"i",51185,1},{"i",52028,1}},f=5,loc=41,lvl=80,phase=33,q=4}),
+s(179174,51251,{b=1,c={4},cost={{"i",51188,1},{"i",52028,1}},f=5,loc=44,lvl=80,phase=33,q=4}),
+s(179173,51250,{b=1,c={4},cost={{"i",51189,1},{"i",52028,1}},f=5,loc=42,lvl=80,phase=33,q=4}),
+s(179176,51253,{b=1,c={4},cost={{"i",51186,1},{"i",52028,1}},f=5,loc=46,lvl=80,phase=33,q=4}),
+s(179110,51187,{b=1,c={4},cost={{"i",50089,1},{"i",52025,1}},f=5,loc=40,lvl=80,phase=33,q=4}),
+s(179108,51185,{b=1,c={4},cost={{"i",50105,1},{"i",52025,1}},f=5,loc=41,lvl=80,phase=33,q=4}),
+s(179111,51188,{b=1,c={4},cost={{"i",50088,1},{"i",52025,1}},f=5,loc=44,lvl=80,phase=33,q=4}),
+s(179112,51189,{b=1,c={4},cost={{"i",50087,1},{"i",52025,1}},f=5,loc=42,lvl=80,phase=33,q=4}),
+s(179109,51186,{b=1,c={4},cost={{"i",50090,1},{"i",52025,1}},f=5,loc=46,lvl=80,phase=33,q=4}),
+s(178298,50089,{b=1,c={4},f=5,loc=40,lvl=80,phase=33,q=4}),
+s(178311,50105,{b=1,c={4},f=5,loc=41,lvl=80,phase=33,q=4}),
+s(202537,50088,{b=1,c={4},f=5,loc=44,lvl=80,phase=33,q=4}),
+s(202536,50087,{b=1,c={4},f=5,loc=42,lvl=80,phase=33,q=4}),
+s(202538,50090,{b=1,c={4},f=5,loc=46,lvl=80,phase=33,q=4})}}),
 cl(7,{crs={38840,38841},g={
-s(179160,51237,{b=1,c={7},cost={{"i",51202,1},{"i",52029,1}},f=6,loc=40,lvl=80,q=4,u=33}),
-s(179158,51235,{b=1,c={7},cost={{"i",51204,1},{"i",52029,1}},f=6,loc=41,lvl=80,q=4,u=33}),
-s(179161,51238,{b=1,c={7},cost={{"i",51201,1},{"i",52029,1}},f=6,loc=44,lvl=80,q=4,u=33}),
-s(179162,51239,{b=1,c={7},cost={{"i",51200,1},{"i",52029,1}},f=6,loc=42,lvl=80,q=4,u=33}),
-s(179159,51236,{b=1,c={7},cost={{"i",51203,1},{"i",52029,1}},f=6,loc=46,lvl=80,q=4,u=33}),
-s(179165,51242,{b=1,c={7},cost={{"i",51197,1},{"i",52029,1}},f=6,loc=40,lvl=80,q=4,u=33}),
-s(179163,51240,{b=1,c={7},cost={{"i",51199,1},{"i",52029,1}},f=6,loc=41,lvl=80,q=4,u=33}),
-s(179166,51243,{b=1,c={7},cost={{"i",51196,1},{"i",52029,1}},f=6,loc=44,lvl=80,q=4,u=33}),
-s(179167,51244,{b=1,c={7},cost={{"i",51195,1},{"i",52029,1}},f=6,loc=42,lvl=80,q=4,u=33}),
-s(179164,51241,{b=1,c={7},cost={{"i",51198,1},{"i",52029,1}},f=6,loc=46,lvl=80,q=4,u=33}),
-s(179170,51247,{b=1,c={7},cost={{"i",51192,1},{"i",52029,1}},f=6,loc=40,lvl=80,q=4,u=33}),
-s(179168,51245,{b=1,c={7},cost={{"i",51194,1},{"i",52029,1}},f=6,loc=41,lvl=80,q=4,u=33}),
-s(179171,51248,{b=1,c={7},cost={{"i",51191,1},{"i",52029,1}},f=6,loc=44,lvl=80,q=4,u=33}),
-s(179172,51249,{b=1,c={7},cost={{"i",51190,1},{"i",52029,1}},f=6,loc=42,lvl=80,q=4,u=33}),
-s(179169,51246,{b=1,c={7},cost={{"i",51193,1},{"i",52029,1}},f=6,loc=46,lvl=80,q=4,u=33}),
-s(179125,51202,{b=1,c={7},cost={{"i",50843,1},{"i",52026,1}},f=6,loc=40,lvl=80,q=4,u=33}),
-s(179127,51204,{b=1,c={7},cost={{"i",50845,1},{"i",52026,1}},f=6,loc=41,lvl=80,q=4,u=33}),
-s(179124,51201,{b=1,c={7},cost={{"i",50842,1},{"i",52026,1}},f=6,loc=44,lvl=80,q=4,u=33}),
-s(179123,51200,{b=1,c={7},cost={{"i",50841,1},{"i",52026,1}},f=6,loc=42,lvl=80,q=4,u=33}),
-s(179126,51203,{b=1,c={7},cost={{"i",50844,1},{"i",52026,1}},f=6,loc=46,lvl=80,q=4,u=33}),
-s(179120,51197,{b=1,c={7},cost={{"i",50832,1},{"i",52026,1}},f=6,loc=40,lvl=80,q=4,u=33}),
-s(179122,51199,{b=1,c={7},cost={{"i",50834,1},{"i",52026,1}},f=6,loc=41,lvl=80,q=4,u=33}),
-s(179119,51196,{b=1,c={7},cost={{"i",50831,1},{"i",52026,1}},f=6,loc=44,lvl=80,q=4,u=33}),
-s(179118,51195,{b=1,c={7},cost={{"i",50830,1},{"i",52026,1}},f=6,loc=42,lvl=80,q=4,u=33}),
-s(179121,51198,{b=1,c={7},cost={{"i",50833,1},{"i",52026,1}},f=6,loc=46,lvl=80,q=4,u=33}),
-s(179115,51192,{b=1,c={7},cost={{"i",50837,1},{"i",52026,1}},f=6,loc=40,lvl=80,q=4,u=33}),
-s(179117,51194,{b=1,c={7},cost={{"i",50839,1},{"i",52026,1}},f=6,loc=41,lvl=80,q=4,u=33}),
-s(179114,51191,{b=1,c={7},cost={{"i",50836,1},{"i",52026,1}},f=6,loc=44,lvl=80,q=4,u=33}),
-s(179113,51190,{b=1,c={7},cost={{"i",50835,1},{"i",52026,1}},f=6,loc=42,lvl=80,q=4,u=33}),
-s(179116,51193,{b=1,c={7},cost={{"i",50838,1},{"i",52026,1}},f=6,loc=46,lvl=80,q=4,u=33}),
-s(178776,50843,{b=1,c={7},f=6,loc=40,lvl=80,q=4,u=33}),
-s(178778,50845,{b=1,c={7},f=6,loc=41,lvl=80,q=4,u=33}),
-s(178775,50842,{b=1,c={7},f=6,loc=44,lvl=80,q=4,u=33}),
-s(178774,50841,{b=1,c={7},f=6,loc=42,lvl=80,q=4,u=33}),
-s(178777,50844,{b=1,c={7},f=6,loc=46,lvl=80,q=4,u=33}),
-s(178765,50832,{b=1,c={7},f=6,loc=40,lvl=80,q=4,u=33}),
-s(178767,50834,{b=1,c={7},f=6,loc=41,lvl=80,q=4,u=33}),
-s(178764,50831,{b=1,c={7},f=6,loc=44,lvl=80,q=4,u=33}),
-s(178763,50830,{b=1,c={7},f=6,loc=42,lvl=80,q=4,u=33}),
-s(178766,50833,{b=1,c={7},f=6,loc=46,lvl=80,q=4,u=33}),
-s(178770,50837,{b=1,c={7},f=6,loc=40,lvl=80,q=4,u=33}),
-s(178772,50839,{b=1,c={7},f=6,loc=41,lvl=80,q=4,u=33}),
-s(178769,50836,{b=1,c={7},f=6,loc=44,lvl=80,q=4,u=33}),
-s(178768,50835,{b=1,c={7},f=6,loc=42,lvl=80,q=4,u=33}),
-s(178771,50838,{b=1,c={7},f=6,loc=46,lvl=80,q=4,u=33})}}),
+s(179160,51237,{b=1,c={7},cost={{"i",51202,1},{"i",52029,1}},f=6,loc=40,lvl=80,phase=33,q=4}),
+s(179158,51235,{b=1,c={7},cost={{"i",51204,1},{"i",52029,1}},f=6,loc=41,lvl=80,phase=33,q=4}),
+s(179161,51238,{b=1,c={7},cost={{"i",51201,1},{"i",52029,1}},f=6,loc=44,lvl=80,phase=33,q=4}),
+s(179162,51239,{b=1,c={7},cost={{"i",51200,1},{"i",52029,1}},f=6,loc=42,lvl=80,phase=33,q=4}),
+s(179159,51236,{b=1,c={7},cost={{"i",51203,1},{"i",52029,1}},f=6,loc=46,lvl=80,phase=33,q=4}),
+s(179165,51242,{b=1,c={7},cost={{"i",51197,1},{"i",52029,1}},f=6,loc=40,lvl=80,phase=33,q=4}),
+s(179163,51240,{b=1,c={7},cost={{"i",51199,1},{"i",52029,1}},f=6,loc=41,lvl=80,phase=33,q=4}),
+s(179166,51243,{b=1,c={7},cost={{"i",51196,1},{"i",52029,1}},f=6,loc=44,lvl=80,phase=33,q=4}),
+s(179167,51244,{b=1,c={7},cost={{"i",51195,1},{"i",52029,1}},f=6,loc=42,lvl=80,phase=33,q=4}),
+s(179164,51241,{b=1,c={7},cost={{"i",51198,1},{"i",52029,1}},f=6,loc=46,lvl=80,phase=33,q=4}),
+s(179170,51247,{b=1,c={7},cost={{"i",51192,1},{"i",52029,1}},f=6,loc=40,lvl=80,phase=33,q=4}),
+s(179168,51245,{b=1,c={7},cost={{"i",51194,1},{"i",52029,1}},f=6,loc=41,lvl=80,phase=33,q=4}),
+s(179171,51248,{b=1,c={7},cost={{"i",51191,1},{"i",52029,1}},f=6,loc=44,lvl=80,phase=33,q=4}),
+s(179172,51249,{b=1,c={7},cost={{"i",51190,1},{"i",52029,1}},f=6,loc=42,lvl=80,phase=33,q=4}),
+s(179169,51246,{b=1,c={7},cost={{"i",51193,1},{"i",52029,1}},f=6,loc=46,lvl=80,phase=33,q=4}),
+s(179125,51202,{b=1,c={7},cost={{"i",50843,1},{"i",52026,1}},f=6,loc=40,lvl=80,phase=33,q=4}),
+s(179127,51204,{b=1,c={7},cost={{"i",50845,1},{"i",52026,1}},f=6,loc=41,lvl=80,phase=33,q=4}),
+s(179124,51201,{b=1,c={7},cost={{"i",50842,1},{"i",52026,1}},f=6,loc=44,lvl=80,phase=33,q=4}),
+s(179123,51200,{b=1,c={7},cost={{"i",50841,1},{"i",52026,1}},f=6,loc=42,lvl=80,phase=33,q=4}),
+s(179126,51203,{b=1,c={7},cost={{"i",50844,1},{"i",52026,1}},f=6,loc=46,lvl=80,phase=33,q=4}),
+s(179120,51197,{b=1,c={7},cost={{"i",50832,1},{"i",52026,1}},f=6,loc=40,lvl=80,phase=33,q=4}),
+s(179122,51199,{b=1,c={7},cost={{"i",50834,1},{"i",52026,1}},f=6,loc=41,lvl=80,phase=33,q=4}),
+s(179119,51196,{b=1,c={7},cost={{"i",50831,1},{"i",52026,1}},f=6,loc=44,lvl=80,phase=33,q=4}),
+s(179118,51195,{b=1,c={7},cost={{"i",50830,1},{"i",52026,1}},f=6,loc=42,lvl=80,phase=33,q=4}),
+s(179121,51198,{b=1,c={7},cost={{"i",50833,1},{"i",52026,1}},f=6,loc=46,lvl=80,phase=33,q=4}),
+s(179115,51192,{b=1,c={7},cost={{"i",50837,1},{"i",52026,1}},f=6,loc=40,lvl=80,phase=33,q=4}),
+s(179117,51194,{b=1,c={7},cost={{"i",50839,1},{"i",52026,1}},f=6,loc=41,lvl=80,phase=33,q=4}),
+s(179114,51191,{b=1,c={7},cost={{"i",50836,1},{"i",52026,1}},f=6,loc=44,lvl=80,phase=33,q=4}),
+s(179113,51190,{b=1,c={7},cost={{"i",50835,1},{"i",52026,1}},f=6,loc=42,lvl=80,phase=33,q=4}),
+s(179116,51193,{b=1,c={7},cost={{"i",50838,1},{"i",52026,1}},f=6,loc=46,lvl=80,phase=33,q=4}),
+s(178776,50843,{b=1,c={7},f=6,loc=40,lvl=80,phase=33,q=4}),
+s(178778,50845,{b=1,c={7},f=6,loc=41,lvl=80,phase=33,q=4}),
+s(178775,50842,{b=1,c={7},f=6,loc=44,lvl=80,phase=33,q=4}),
+s(178774,50841,{b=1,c={7},f=6,loc=42,lvl=80,phase=33,q=4}),
+s(178777,50844,{b=1,c={7},f=6,loc=46,lvl=80,phase=33,q=4}),
+s(178765,50832,{b=1,c={7},f=6,loc=40,lvl=80,phase=33,q=4}),
+s(178767,50834,{b=1,c={7},f=6,loc=41,lvl=80,phase=33,q=4}),
+s(178764,50831,{b=1,c={7},f=6,loc=44,lvl=80,phase=33,q=4}),
+s(178763,50830,{b=1,c={7},f=6,loc=42,lvl=80,phase=33,q=4}),
+s(178766,50833,{b=1,c={7},f=6,loc=46,lvl=80,phase=33,q=4}),
+s(178770,50837,{b=1,c={7},f=6,loc=40,lvl=80,phase=33,q=4}),
+s(178772,50839,{b=1,c={7},f=6,loc=41,lvl=80,phase=33,q=4}),
+s(178769,50836,{b=1,c={7},f=6,loc=44,lvl=80,phase=33,q=4}),
+s(178768,50835,{b=1,c={7},f=6,loc=42,lvl=80,phase=33,q=4}),
+s(178771,50838,{b=1,c={7},f=6,loc=46,lvl=80,phase=33,q=4})}}),
 cl(9,{crs={38181,38182},g={
-s(179154,51231,{b=1,c={9},cost={{"i",51208,1},{"i",52030,1}},f=4,loc=40,lvl=80,q=4,u=33}),
-s(179157,51234,{b=1,c={9},cost={{"i",51205,1},{"i",52030,1}},f=4,loc=41,lvl=80,q=4,u=33}),
-s(179153,51230,{b=1,c={9},cost={{"i",51209,1},{"i",52030,1}},f=4,loc=44,lvl=80,q=4,u=33}),
-s(202587,51233,{b=1,c={9},cost={{"i",51206,1},{"i",52030,1}},f=4,loc=42,lvl=80,q=4,u=33}),
-s(179155,51232,{b=1,c={9},cost={{"i",51207,1},{"i",52030,1}},f=4,loc=46,lvl=80,q=4,u=33}),
-s(179131,51208,{b=1,c={9},cost={{"i",50241,1},{"i",52027,1}},f=4,loc=40,lvl=80,q=4,u=33}),
-s(179128,51205,{b=1,c={9},cost={{"i",50244,1},{"i",52027,1}},f=4,loc=41,lvl=80,q=4,u=33}),
-s(179132,51209,{b=1,c={9},cost={{"i",50240,1},{"i",52027,1}},f=4,loc=44,lvl=80,q=4,u=33}),
-s(179129,51206,{b=1,c={9},cost={{"i",50243,1},{"i",52027,1}},f=4,loc=42,lvl=80,q=4,u=33}),
-s(179130,51207,{b=1,c={9},cost={{"i",50242,1},{"i",52027,1}},f=4,loc=46,lvl=80,q=4,u=33}),
-s(178377,50241,{b=1,c={9},f=4,loc=40,lvl=80,q=4,u=33}),
-s(178380,50244,{b=1,c={9},f=4,loc=41,lvl=80,q=4,u=33}),
-s(178376,50240,{b=1,c={9},f=4,loc=44,lvl=80,q=4,u=33}),
-s(178379,50243,{b=1,c={9},f=4,loc=42,lvl=80,q=4,u=33}),
-s(178378,50242,{b=1,c={9},f=4,loc=46,lvl=80,q=4,u=33})}}),
+s(179154,51231,{b=1,c={9},cost={{"i",51208,1},{"i",52030,1}},f=4,loc=40,lvl=80,phase=33,q=4}),
+s(179157,51234,{b=1,c={9},cost={{"i",51205,1},{"i",52030,1}},f=4,loc=41,lvl=80,phase=33,q=4}),
+s(179153,51230,{b=1,c={9},cost={{"i",51209,1},{"i",52030,1}},f=4,loc=44,lvl=80,phase=33,q=4}),
+s(202587,51233,{b=1,c={9},cost={{"i",51206,1},{"i",52030,1}},f=4,loc=42,lvl=80,phase=33,q=4}),
+s(179155,51232,{b=1,c={9},cost={{"i",51207,1},{"i",52030,1}},f=4,loc=46,lvl=80,phase=33,q=4}),
+s(179131,51208,{b=1,c={9},cost={{"i",50241,1},{"i",52027,1}},f=4,loc=40,lvl=80,phase=33,q=4}),
+s(179128,51205,{b=1,c={9},cost={{"i",50244,1},{"i",52027,1}},f=4,loc=41,lvl=80,phase=33,q=4}),
+s(179132,51209,{b=1,c={9},cost={{"i",50240,1},{"i",52027,1}},f=4,loc=44,lvl=80,phase=33,q=4}),
+s(179129,51206,{b=1,c={9},cost={{"i",50243,1},{"i",52027,1}},f=4,loc=42,lvl=80,phase=33,q=4}),
+s(179130,51207,{b=1,c={9},cost={{"i",50242,1},{"i",52027,1}},f=4,loc=46,lvl=80,phase=33,q=4}),
+s(178377,50241,{b=1,c={9},f=4,loc=40,lvl=80,phase=33,q=4}),
+s(178380,50244,{b=1,c={9},f=4,loc=41,lvl=80,phase=33,q=4}),
+s(178376,50240,{b=1,c={9},f=4,loc=44,lvl=80,phase=33,q=4}),
+s(178379,50243,{b=1,c={9},f=4,loc=42,lvl=80,phase=33,q=4}),
+s(178378,50242,{b=1,c={9},f=4,loc=46,lvl=80,phase=33,q=4})}}),
 cl(1,{crs={37688},g={
-s(179150,51227,{b=1,c={1},cost={{"i",51212,1},{"i",52029,1}},f=7,loc=40,lvl=80,q=4,u=33}),
-s(179152,51229,{b=1,c={1},cost={{"i",51210,1},{"i",52029,1}},f=7,loc=41,lvl=80,q=4,u=33}),
-s(179149,51226,{b=1,c={1},cost={{"i",51213,1},{"i",52029,1}},f=7,loc=44,lvl=80,q=4,u=33}),
-s(179148,51225,{b=1,c={1},cost={{"i",51214,1},{"i",52029,1}},f=7,loc=42,lvl=80,q=4,u=33}),
-s(179151,51228,{b=1,c={1},cost={{"i",51211,1},{"i",52029,1}},f=7,loc=46,lvl=80,q=4,u=33}),
-s(179144,51221,{b=1,c={1},cost={{"i",51218,1},{"i",52029,1}},f=7,loc=40,lvl=80,q=4,u=33}),
-s(179147,51224,{b=1,c={1},cost={{"i",51215,1},{"i",52029,1}},f=7,loc=41,lvl=80,q=4,u=33}),
-s(179145,51222,{b=1,c={1},cost={{"i",51217,1},{"i",52029,1}},f=7,loc=44,lvl=80,q=4,u=33}),
-s(179143,51220,{b=1,c={1},cost={{"i",51219,1},{"i",52029,1}},f=7,loc=42,lvl=80,q=4,u=33}),
-s(179146,51223,{b=1,c={1},cost={{"i",51216,1},{"i",52029,1}},f=7,loc=46,lvl=80,q=4,u=33}),
-s(179135,51212,{b=1,c={1},cost={{"i",50080,1},{"i",52026,1}},f=7,loc=40,lvl=80,q=4,u=33}),
-s(179133,51210,{b=1,c={1},cost={{"i",50082,1},{"i",52026,1}},f=7,loc=41,lvl=80,q=4,u=33}),
-s(179136,51213,{b=1,c={1},cost={{"i",50079,1},{"i",52026,1}},f=7,loc=44,lvl=80,q=4,u=33}),
-s(179137,51214,{b=1,c={1},cost={{"i",50078,1},{"i",52026,1}},f=7,loc=42,lvl=80,q=4,u=33}),
-s(179134,51211,{b=1,c={1},cost={{"i",50081,1},{"i",52026,1}},f=7,loc=46,lvl=80,q=4,u=33}),
-s(179141,51218,{b=1,c={1},cost={{"i",50848,1},{"i",52026,1}},f=7,loc=40,lvl=80,q=4,u=33}),
-s(179138,51215,{b=1,c={1},cost={{"i",50846,1},{"i",52026,1}},f=7,loc=41,lvl=80,q=4,u=33}),
-s(179140,51217,{b=1,c={1},cost={{"i",50849,1},{"i",52026,1}},f=7,loc=44,lvl=80,q=4,u=33}),
-s(179142,51219,{b=1,c={1},cost={{"i",50850,1},{"i",52026,1}},f=7,loc=42,lvl=80,q=4,u=33}),
-s(179139,51216,{b=1,c={1},cost={{"i",50847,1},{"i",52026,1}},f=7,loc=46,lvl=80,q=4,u=33}),
-s(178290,50080,{b=1,c={1},f=7,loc=40,lvl=80,q=4,u=33}),
-s(178292,50082,{b=1,c={1},f=7,loc=41,lvl=80,q=4,u=33}),
-s(178289,50079,{b=1,c={1},f=7,loc=44,lvl=80,q=4,u=33}),
-s(178288,50078,{b=1,c={1},f=7,loc=42,lvl=80,q=4,u=33}),
-s(178291,50081,{b=1,c={1},f=7,loc=46,lvl=80,q=4,u=33}),
-s(178781,50848,{b=1,c={1},f=7,loc=40,lvl=80,q=4,u=33}),
-s(178779,50846,{b=1,c={1},f=7,loc=41,lvl=80,q=4,u=33}),
-s(178782,50849,{b=1,c={1},f=7,loc=44,lvl=80,q=4,u=33}),
-s(178783,50850,{b=1,c={1},f=7,loc=42,lvl=80,q=4,u=33}),
-s(178780,50847,{b=1,c={1},f=7,loc=46,lvl=80,q=4,u=33})}}),
+s(179150,51227,{b=1,c={1},cost={{"i",51212,1},{"i",52029,1}},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(179152,51229,{b=1,c={1},cost={{"i",51210,1},{"i",52029,1}},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(179149,51226,{b=1,c={1},cost={{"i",51213,1},{"i",52029,1}},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(179148,51225,{b=1,c={1},cost={{"i",51214,1},{"i",52029,1}},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(179151,51228,{b=1,c={1},cost={{"i",51211,1},{"i",52029,1}},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(179144,51221,{b=1,c={1},cost={{"i",51218,1},{"i",52029,1}},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(179147,51224,{b=1,c={1},cost={{"i",51215,1},{"i",52029,1}},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(179145,51222,{b=1,c={1},cost={{"i",51217,1},{"i",52029,1}},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(179143,51220,{b=1,c={1},cost={{"i",51219,1},{"i",52029,1}},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(179146,51223,{b=1,c={1},cost={{"i",51216,1},{"i",52029,1}},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(179135,51212,{b=1,c={1},cost={{"i",50080,1},{"i",52026,1}},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(179133,51210,{b=1,c={1},cost={{"i",50082,1},{"i",52026,1}},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(179136,51213,{b=1,c={1},cost={{"i",50079,1},{"i",52026,1}},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(179137,51214,{b=1,c={1},cost={{"i",50078,1},{"i",52026,1}},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(179134,51211,{b=1,c={1},cost={{"i",50081,1},{"i",52026,1}},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(179141,51218,{b=1,c={1},cost={{"i",50848,1},{"i",52026,1}},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(179138,51215,{b=1,c={1},cost={{"i",50846,1},{"i",52026,1}},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(179140,51217,{b=1,c={1},cost={{"i",50849,1},{"i",52026,1}},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(179142,51219,{b=1,c={1},cost={{"i",50850,1},{"i",52026,1}},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(179139,51216,{b=1,c={1},cost={{"i",50847,1},{"i",52026,1}},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(178290,50080,{b=1,c={1},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(178292,50082,{b=1,c={1},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(178289,50079,{b=1,c={1},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(178288,50078,{b=1,c={1},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(178291,50081,{b=1,c={1},f=7,loc=46,lvl=80,phase=33,q=4}),
+s(178781,50848,{b=1,c={1},f=7,loc=40,lvl=80,phase=33,q=4}),
+s(178779,50846,{b=1,c={1},f=7,loc=41,lvl=80,phase=33,q=4}),
+s(178782,50849,{b=1,c={1},f=7,loc=44,lvl=80,phase=33,q=4}),
+s(178783,50850,{b=1,c={1},f=7,loc=42,lvl=80,phase=33,q=4}),
+s(178780,50847,{b=1,c={1},f=7,loc=46,lvl=80,phase=33,q=4})}}),
 n(37687,{
 r(70556,{b=1,cost={{"i",49908,1}},itemID=49959,learnedAt=450,minReputation={1156,21000},q=4,requireSkill=165}),
 r(70555,{b=1,cost={{"i",49908,1}},itemID=49958,learnedAt=450,minReputation={1156,9000},q=4,requireSkill=165}),
@@ -15078,54 +15078,54 @@ r(70563,{b=1,cost={{"i",49908,1}},itemID=49970,learnedAt=450,minReputation={1156
 r(70562,{b=1,cost={{"i",49908,1}},itemID=49969,learnedAt=450,minReputation={1156,21000},q=4,requireSkill=164}),
 r(72952,{cost={{"i",49908,1}},itemID=52022,learnedAt=450,requireSkill=20222,rwp=40001,u=2})}),
 n(38858,{sym={{"sub","pvp_gear_base",3,-254,-296},{"merge"},{"pop"},{"exclude","headerID",-96,-92,-99,-89,-102,-100,-91,-101},{"isnt","c"}},g={
-s(178923,50993,{b=1,f=6,loc=45,lvl=80,q=4,u=33}),
-s(178926,50996,{b=1,f=4,loc=45,lvl=80,q=4,u=33}),
-s(178924,50994,{b=1,f=5,loc=45,lvl=80,q=4,u=33}),
-i(50458,{b=1,c={2,7,11},lvl=80,q=4,rwp=50004,u=33}),
-s(178911,50980,{b=1,f=6,loc=44,lvl=80,q=4,u=33}),
-s(178896,50965,{b=1,f=7,loc=42,lvl=80,q=4,u=33}),
-s(178913,50982,{b=1,f=5,loc=44,lvl=80,q=4,u=33}),
-s(178899,50968,{b=1,f=7,loc=42,lvl=80,q=4,u=33}),
-s(178900,50969,{b=1,f=7,loc=42,lvl=80,q=4,u=33}),
-s(178927,50997,{b=1,f=4,loc=45,lvl=80,q=4,u=33}),
-i(50356,{b=1,f=53,lvl=80,q=4,u=33}),
-s(178482,50468,{b=1,f=3,lvl=80,q=4,u=33}),
-s(178906,50975,{b=1,f=4,loc=42,lvl=80,q=4,u=33}),
-s(178908,50977,{b=1,f=7,loc=44,lvl=80,q=4,u=33}),
-s(178907,50976,{b=1,f=7,loc=44,lvl=80,q=4,u=33}),
-s(178909,50978,{b=1,f=7,loc=44,lvl=80,q=4,u=33}),
-s(178915,50984,{b=1,f=4,loc=44,lvl=80,q=4,u=33}),
-s(178914,50983,{b=1,f=4,loc=44,lvl=80,q=4,u=33}),
-s(178912,50981,{b=1,f=5,loc=44,lvl=80,q=4,u=33}),
-i(50355,{b=1,f=53,lvl=80,q=4,u=33}),
-i(50454,{b=1,c={2,7,11},lvl=80,q=4,rwp=50004,u=33}),
-i(50456,{b=1,c={7,11},lvl=80,q=4,rwp=50004,u=33}),
-i(50457,{b=1,c={2,7,11},lvl=80,q=4,rwp=50004,u=33}),
-i(50460,{b=1,c={2,7,11},lvl=80,q=4,rwp=50004,u=33}),
-i(50461,{b=1,c={2,6},lvl=80,q=4,rwp=50004,u=33}),
-i(50455,{b=1,c={2,6},lvl=80,q=4,rwp=50004,u=33}),
-s(178919,50989,{b=1,f=7,loc=45,lvl=80,q=4,u=33}),
-s(202583,50979,{b=1,f=6,loc=44,lvl=80,q=4,u=33}),
-s(178901,50970,{b=1,f=6,loc=42,lvl=80,q=4,u=33}),
-i(50357,{b=1,f=53,lvl=80,q=4,u=33}),
-s(178902,50971,{b=1,f=6,loc=42,lvl=80,q=4,u=33}),
-s(178917,50987,{b=1,f=7,loc=45,lvl=80,q=4,u=33}),
-s(178905,50974,{b=1,f=4,loc=42,lvl=80,q=4,u=33}),
-s(178481,50467,{b=1,f=3,lvl=80,q=4,u=33}),
-i(49908,{q=3,u=33}),
-i(50358,{b=1,f=53,lvl=80,q=4,u=33}),
-s(178484,50470,{b=1,f=3,lvl=80,q=4,u=33}),
-s(178480,50466,{b=1,f=3,lvl=80,q=4,u=33}),
-s(178903,50972,{b=1,f=5,loc=42,lvl=80,q=4,u=33}),
-i(50462,{b=1,c={2,6},lvl=80,q=4,rwp=50004,u=33}),
-i(50459,{b=1,c={2,6},lvl=80,q=4,rwp=50004,u=33}),
-i(50463,{b=1,c={7,11},lvl=80,q=4,rwp=50004,u=33}),
-i(50464,{b=1,c={2,7,11},lvl=80,q=4,rwp=50004,u=33}),
-s(178925,50995,{b=1,f=5,loc=45,lvl=80,q=4,u=33}),
-s(178921,50991,{b=1,f=7,loc=45,lvl=80,q=4,u=33}),
-s(178904,50973,{b=1,f=5,loc=42,lvl=80,q=4,u=33}),
-s(178483,50469,{b=1,f=3,lvl=80,q=4,u=33}),
-s(178922,50992,{b=1,f=6,loc=45,lvl=80,q=4,u=33})}}),
+s(178923,50993,{b=1,f=6,loc=45,lvl=80,phase=33,q=4}),
+s(178926,50996,{b=1,f=4,loc=45,lvl=80,phase=33,q=4}),
+s(178924,50994,{b=1,f=5,loc=45,lvl=80,phase=33,q=4}),
+i(50458,{b=1,c={2,7,11},lvl=80,phase=33,q=4,rwp=50004}),
+s(178911,50980,{b=1,f=6,loc=44,lvl=80,phase=33,q=4}),
+s(178896,50965,{b=1,f=7,loc=42,lvl=80,phase=33,q=4}),
+s(178913,50982,{b=1,f=5,loc=44,lvl=80,phase=33,q=4}),
+s(178899,50968,{b=1,f=7,loc=42,lvl=80,phase=33,q=4}),
+s(178900,50969,{b=1,f=7,loc=42,lvl=80,phase=33,q=4}),
+s(178927,50997,{b=1,f=4,loc=45,lvl=80,phase=33,q=4}),
+i(50356,{b=1,f=53,lvl=80,phase=33,q=4}),
+s(178482,50468,{b=1,f=3,lvl=80,phase=33,q=4}),
+s(178906,50975,{b=1,f=4,loc=42,lvl=80,phase=33,q=4}),
+s(178908,50977,{b=1,f=7,loc=44,lvl=80,phase=33,q=4}),
+s(178907,50976,{b=1,f=7,loc=44,lvl=80,phase=33,q=4}),
+s(178909,50978,{b=1,f=7,loc=44,lvl=80,phase=33,q=4}),
+s(178915,50984,{b=1,f=4,loc=44,lvl=80,phase=33,q=4}),
+s(178914,50983,{b=1,f=4,loc=44,lvl=80,phase=33,q=4}),
+s(178912,50981,{b=1,f=5,loc=44,lvl=80,phase=33,q=4}),
+i(50355,{b=1,f=53,lvl=80,phase=33,q=4}),
+i(50454,{b=1,c={2,7,11},lvl=80,phase=33,q=4,rwp=50004}),
+i(50456,{b=1,c={7,11},lvl=80,phase=33,q=4,rwp=50004}),
+i(50457,{b=1,c={2,7,11},lvl=80,phase=33,q=4,rwp=50004}),
+i(50460,{b=1,c={2,7,11},lvl=80,phase=33,q=4,rwp=50004}),
+i(50461,{b=1,c={2,6},lvl=80,phase=33,q=4,rwp=50004}),
+i(50455,{b=1,c={2,6},lvl=80,phase=33,q=4,rwp=50004}),
+s(178919,50989,{b=1,f=7,loc=45,lvl=80,phase=33,q=4}),
+s(202583,50979,{b=1,f=6,loc=44,lvl=80,phase=33,q=4}),
+s(178901,50970,{b=1,f=6,loc=42,lvl=80,phase=33,q=4}),
+i(50357,{b=1,f=53,lvl=80,phase=33,q=4}),
+s(178902,50971,{b=1,f=6,loc=42,lvl=80,phase=33,q=4}),
+s(178917,50987,{b=1,f=7,loc=45,lvl=80,phase=33,q=4}),
+s(178905,50974,{b=1,f=4,loc=42,lvl=80,phase=33,q=4}),
+s(178481,50467,{b=1,f=3,lvl=80,phase=33,q=4}),
+i(49908,{phase=33,q=3}),
+i(50358,{b=1,f=53,lvl=80,phase=33,q=4}),
+s(178484,50470,{b=1,f=3,lvl=80,phase=33,q=4}),
+s(178480,50466,{b=1,f=3,lvl=80,phase=33,q=4}),
+s(178903,50972,{b=1,f=5,loc=42,lvl=80,phase=33,q=4}),
+i(50462,{b=1,c={2,6},lvl=80,phase=33,q=4,rwp=50004}),
+i(50459,{b=1,c={2,6},lvl=80,phase=33,q=4,rwp=50004}),
+i(50463,{b=1,c={7,11},lvl=80,phase=33,q=4,rwp=50004}),
+i(50464,{b=1,c={2,7,11},lvl=80,phase=33,q=4,rwp=50004}),
+s(178925,50995,{b=1,f=5,loc=45,lvl=80,phase=33,q=4}),
+s(178921,50991,{b=1,f=7,loc=45,lvl=80,phase=33,q=4}),
+s(178904,50973,{b=1,f=5,loc=42,lvl=80,phase=33,q=4}),
+s(178483,50469,{b=1,f=3,lvl=80,phase=33,q=4}),
+s(178922,50992,{b=1,f=6,loc=45,lvl=80,phase=33,q=4})}}),
 n(37936,{r=1,sym={{"select","itemID",3422,3420,3424,3423,30749,30750,3419,3421}}}),
 n(37903,{r=2,sym={{"select","itemID",30749,30750}}}),
 n(37184,{
@@ -15158,7 +15158,7 @@ ach(4531,{
 crit(12765,{achID=4532,id=1})}),
 e(1624,{npcID=36612,g={
 ach(4534,{
-crit(12917,{achID=4602,id=1,u=33})}),
+crit(12917,{achID=4602,id=1,phase=33})}),
 s(178703,50761,{b=1,f=26,lvl=80,q=4}),
 s(178701,50759,{b=1,f=21,lvl=80,q=4}),
 s(178702,50760,{b=1,f=23,lvl=80,q=4}),
@@ -15174,7 +15174,7 @@ i(50339,{b=1,f=53,lvl=80,q=4}),
 crit(12770,{achID=4531})}}),
 e(1625,{npcID=36855,g={
 ach(4535,{
-crit(12918,{achID=4602,id=1,u=33})}),
+crit(12918,{achID=4602,id=1,phase=33})}),
 s(202579,50776,{b=1,f=32,lvl=80,q=4}),
 s(178721,50781,{b=1,f=1,lvl=80,q=4}),
 s(178719,50779,{b=1,f=7,loc=40,lvl=80,q=4}),
@@ -15190,7 +15190,7 @@ i(50342,{b=1,f=53,lvl=80,q=4}),
 crit(12773,{achID=4531})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},g={
 ach(4536,{
-crit(12919,{achID=4602,id=1,u=33})}),
+crit(12919,{achID=4602,id=1,phase=33})}),
 s(178727,50787,{b=1,f=21,lvl=80,q=4}),
 s(178732,50793,{b=1,f=20,lvl=80,q=4}),
 s(178733,50794,{b=1,f=8,lvl=80,q=4}),
@@ -15206,7 +15206,7 @@ i(50340,{b=1,f=53,lvl=80,q=4}),
 crit(12771,{achID=4531})}})),
 e(1628,{npcID=37813,g={
 ach(4537,{
-crit(12920,{achID=4602,id=1,u=33})}),
+crit(12920,{achID=4602,id=1,phase=33})}),
 s(178743,50805,{b=1,f=28,lvl=80,q=4}),
 s(178737,50798,{b=1,f=22,lvl=80,q=4}),
 s(178745,50807,{b=1,f=4,loc=40,lvl=80,q=4}),
@@ -15225,7 +15225,7 @@ ach(4528,{
 crit(12767,{achID=4532,id=1})}),
 e(1629,{npcID=36626,g={
 ach(4577,{
-crit(12922,{achID=4602,id=1,u=33})}),
+crit(12922,{achID=4602,id=1,phase=33})}),
 s(178897,50966,{b=1,f=28,lvl=80,q=4}),
 s(178747,50810,{b=1,f=23,lvl=80,q=4}),
 i(50852,{b=1,f=51,lvl=80,q=4}),
@@ -15242,7 +15242,7 @@ i(50999,{b=1,f=36,lvl=80,q=4,rwp=50004}),
 crit(12759,{achID=4528})}}),
 e(1630,{npcID=36627,g={
 ach(4538,{
-crit(12921,{achID=4602,id=1,u=33})}),
+crit(12921,{achID=4602,id=1,phase=33})}),
 s(178928,50998,{b=1,f=28,lvl=80,q=4}),
 s(178932,51003,{b=1,f=34,lvl=80,q=4}),
 s(178933,51004,{b=1,f=23,lvl=80,q=4}),
@@ -15257,7 +15257,7 @@ i(51001,{b=1,f=52,lvl=80,q=4}),
 crit(12760,{achID=4528})}}),
 e(1631,{npcID=36678,g={
 ach(4578,{
-crit(12923,{achID=4602,id=1,u=33})}),
+crit(12923,{achID=4602,id=1,phase=33})}),
 s(178939,51011,{b=1,f=20,lvl=80,q=4}),
 s(178938,51010,{b=1,f=25,lvl=80,q=4}),
 s(178940,51013,{b=1,f=5,loc=40,lvl=80,q=4}),
@@ -15276,7 +15276,7 @@ ach(4529,{
 crit(12768,{achID=4532,id=1})}),
 e(1632,{crs={37970,37972,37973},g={
 ach(4582,{
-crit(12924,{achID=4602,id=1,u=33})}),
+crit(12924,{achID=4602,id=1,phase=33})}),
 s(178948,51022,{b=1,f=29,lvl=80,q=4}),
 s(178947,51021,{b=1,f=25,lvl=80,q=4}),
 s(179242,51326,{b=1,f=27,lvl=80,q=4}),
@@ -15294,7 +15294,7 @@ e(1633,{npcID=37955,g={
 ach(4539,{
 crit(12780,{achID=4539}),
 crit(13011,{achID=4539}),
-crit(12925,{achID=4602,id=1,u=33})}),
+crit(12925,{achID=4602,id=1,phase=33})}),
 s(179287,51384,{b=1,f=20,lvl=80,q=4}),
 s(179442,51553,{b=1,f=27,lvl=80,q=4}),
 s(179288,51385,{b=1,f=31,lvl=80,q=4}),
@@ -15313,7 +15313,7 @@ ach(4527,{
 crit(12766,{achID=4532,id=1})}),
 e(1634,{npcID=36789,g={
 ach(4579,{
-crit(12926,{achID=4602,id=1,u=33})}),
+crit(12926,{achID=4602,id=1,phase=33})}),
 s(179447,51562,{b=1,f=24,lvl=80,q=4}),
 s(202613,51582,{b=1,f=28,lvl=80,q=4}),
 s(179446,51561,{b=1,f=31,lvl=80,q=4}),
@@ -15329,7 +15329,7 @@ s(179451,51566,{b=1,f=6,loc=46,lvl=80,q=4}),
 crit(12757,{achID=4527})}}),
 e(1635,{npcID=36853,g={
 ach(4580,{
-crit(12927,{achID=4602,id=1,u=33})}),
+crit(12927,{achID=4602,id=1,phase=33})}),
 s(179666,51788,{b=1,f=20,lvl=80,q=4}),
 s(179662,51784,{b=1,f=34,lvl=80,q=4}),
 s(179669,51791,{b=1,f=8,lvl=80,q=4}),
@@ -15345,7 +15345,7 @@ s(179663,51785,{b=1,f=6,loc=47,lvl=80,q=4}),
 crit(12758,{achID=4527})}}),
 e(1636,{npcID=36597,g={
 ach(4601,{
-crit(12928,{achID=4602,id=1,u=33})}),
+crit(12928,{achID=4602,id=1,phase=33})}),
 ach(4581),
 ach(4530,{
 title(140),
@@ -15362,11 +15362,11 @@ s(179678,51802,{b=1,f=33,lvl=80,q=4})}})})}),
 d(5,{
 h(-368,{
 ach(4628,{
-crit(13071,{achID=4602,id=1,u=33}),
+crit(13071,{achID=4602,id=1,phase=33}),
 crit(13071,{achID=4636,id=1})}),
 e(1624,{npcID=36612,g={
 ach(4534,{
-crit(12917,{achID=4602,id=1,u=33})}),
+crit(12917,{achID=4602,id=1,phase=33})}),
 s(179790,51936,{b=1,f=26,lvl=80,q=4}),
 s(179792,51938,{b=1,f=21,lvl=80,q=4}),
 s(179791,51937,{b=1,f=23,lvl=80,q=4}),
@@ -15382,7 +15382,7 @@ i(50346,{b=1,f=53,lvl=80,q=4}),
 crit(13090,{achID=4628})}}),
 e(1625,{npcID=36855,g={
 ach(4535,{
-crit(12918,{achID=4602,id=1,u=33})}),
+crit(12918,{achID=4602,id=1,phase=33})}),
 s(179782,51927,{b=1,f=32,lvl=80,q=4}),
 s(179777,51922,{b=1,f=1,lvl=80,q=4}),
 s(179779,51924,{b=1,f=7,loc=40,lvl=80,q=4}),
@@ -15398,7 +15398,7 @@ i(50343,{b=1,f=53,lvl=80,q=4}),
 crit(13104,{achID=4628})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},g={
 ach(4536,{
-crit(12919,{achID=4602,id=1,u=33})}),
+crit(12919,{achID=4602,id=1,phase=33})}),
 s(179771,51916,{b=1,f=21,lvl=80,q=4}),
 s(179766,51910,{b=1,f=20,lvl=80,q=4}),
 s(179765,51909,{b=1,f=8,lvl=80,q=4}),
@@ -15414,7 +15414,7 @@ i(50345,{b=1,f=53,lvl=80,q=4}),
 crit(13110,{achID=4628})}})),
 e(1628,{npcID=37813,g={
 ach(4537,{
-crit(12920,{achID=4602,id=1,u=33})}),
+crit(12920,{achID=4602,id=1,phase=33})}),
 i(52027,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52026,{b=1,c={1,3,7},lvl=80,q=4}),
 i(52025,{b=1,c={4,6,8,11},lvl=80,q=4}),
@@ -15433,11 +15433,11 @@ i(51900,{b=1,f=52,lvl=80,q=4}),
 crit(13113,{achID=4628})}})}),
 h(-369,{
 ach(4629,{
-crit(13072,{achID=4602,id=1,u=33}),
+crit(13072,{achID=4602,id=1,phase=33}),
 crit(13072,{achID=4636,id=1})}),
 e(1629,{npcID=36626,g={
 ach(4577,{
-crit(12922,{achID=4602,id=1,u=33})}),
+crit(12922,{achID=4602,id=1,phase=33})}),
 s(179746,51887,{b=1,f=28,lvl=80,q=4}),
 s(179751,51893,{b=1,f=23,lvl=80,q=4}),
 i(51890,{b=1,f=51,lvl=80,q=4}),
@@ -15453,7 +15453,7 @@ i(51884,{b=1,f=52,lvl=80,q=4}),
 crit(13116,{achID=4629})}}),
 e(1630,{npcID=36627,g={
 ach(4538,{
-crit(12921,{achID=4602,id=1,u=33})}),
+crit(12921,{achID=4602,id=1,phase=33})}),
 s(179741,51881,{b=1,f=28,lvl=80,q=4}),
 s(179737,51876,{b=1,f=34,lvl=80,q=4}),
 s(179736,51875,{b=1,f=23,lvl=80,q=4}),
@@ -15469,7 +15469,7 @@ i(51880,{b=1,f=36,lvl=80,q=4,rwp=50004}),
 crit(13119,{achID=4629})}}),
 e(1631,{npcID=36678,g={
 ach(4578,{
-crit(12923,{achID=4602,id=1,u=33})}),
+crit(12923,{achID=4602,id=1,phase=33})}),
 i(52027,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52026,{b=1,c={1,3,7},lvl=80,q=4}),
 i(52025,{b=1,c={4,6,8,11},lvl=80,q=4}),
@@ -15488,11 +15488,11 @@ i(50344,{b=1,f=53,lvl=80,q=4}),
 crit(13128,{achID=4629})}})}),
 h(-370,{
 ach(4630,{
-crit(13073,{achID=4602,id=1,u=33}),
+crit(13073,{achID=4602,id=1,phase=33}),
 crit(13073,{achID=4636,id=1})}),
 e(1632,{crs={37970,37972,37973},g={
 ach(4582,{
-crit(12924,{achID=4602,id=1,u=33})}),
+crit(12924,{achID=4602,id=1,phase=33})}),
 s(179721,51857,{b=1,f=29,lvl=80,q=4}),
 s(179722,51858,{b=1,f=25,lvl=80,q=4}),
 s(179717,51852,{b=1,f=27,lvl=80,q=4}),
@@ -15510,7 +15510,7 @@ e(1633,{npcID=37955,g={
 ach(4539,{
 crit(12780,{achID=4539}),
 crit(13011,{achID=4539}),
-crit(12925,{achID=4602,id=1,u=33})}),
+crit(12925,{achID=4602,id=1,phase=33})}),
 i(52027,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52026,{b=1,c={1,3,7},lvl=80,q=4}),
 i(52025,{b=1,c={4,6,8,11},lvl=80,q=4}),
@@ -15529,11 +15529,11 @@ i(51843,{b=1,f=52,lvl=80,q=4}),
 crit(13131,{achID=4630})}})}),
 h(-371,{
 ach(4631,{
-crit(13074,{achID=4602,id=1,u=33}),
+crit(13074,{achID=4602,id=1,phase=33}),
 crit(13074,{achID=4636,id=1})}),
 e(1634,{npcID=36789,g={
 ach(4579,{
-crit(12926,{achID=4602,id=1,u=33})}),
+crit(12926,{achID=4602,id=1,phase=33})}),
 s(179701,51833,{b=1,f=24,lvl=80,q=4}),
 s(202623,51828,{b=1,f=28,lvl=80,q=4}),
 s(179702,51834,{b=1,f=31,lvl=80,q=4}),
@@ -15549,7 +15549,7 @@ s(179697,51829,{b=1,f=6,loc=46,lvl=80,q=4}),
 crit(13125,{achID=4631})}}),
 e(1635,{npcID=36853,g={
 ach(4580,{
-crit(12927,{achID=4602,id=1,u=33})}),
+crit(12927,{achID=4602,id=1,phase=33})}),
 i(52027,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52026,{b=1,c={1,3,7},lvl=80,q=4}),
 i(52025,{b=1,c={4,6,8,11},lvl=80,q=4}),
@@ -15571,7 +15571,7 @@ ach(4583,{
 title(139),
 crit(13065,{achID=4636,id=1})}),
 ach(4601,{
-crit(12928,{achID=4602,id=1,u=33})}),
+crit(12928,{achID=4602,id=1,phase=33})}),
 ach(4581),
 gach(5023,{awp=40003}),
 i(52027,{b=1,c={2,5,9},lvl=80,q=4}),
@@ -15594,7 +15594,7 @@ ach(4604,{
 crit(12956,{achID=4608,id=1})}),
 e(1624,{npcID=36612,g={
 ach(4610,{
-crit(13016,{achID=4603,id=1,u=33})}),
+crit(13016,{achID=4603,id=1,phase=33})}),
 s(178461,50415,{b=1,f=22,lvl=80,q=4}),
 s(178209,49968,{b=1,f=20,lvl=80,q=4}),
 s(178210,49976,{b=1,f=8,lvl=80,q=4}),
@@ -15613,7 +15613,7 @@ i(49967,{f=52,lvl=80,q=4}),
 crit(12945,{achID=4604})}}),
 e(1625,{npcID=36855,g={
 ach(4611,{
-crit(13017,{achID=4603,id=1,u=33})}),
+crit(13017,{achID=4603,id=1,phase=33})}),
 s(178222,49992,{b=1,f=28,lvl=80,q=4}),
 s(178215,49982,{b=1,f=20,lvl=80,q=4}),
 s(178252,50034,{b=1,f=32,lvl=80,q=4}),
@@ -15632,7 +15632,7 @@ i(49990,{b=1,f=52,lvl=80,q=4}),
 crit(12948,{achID=4604})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},g={
 ach(4612,{
-crit(13018,{achID=4603,id=1,u=33})}),
+crit(13018,{achID=4603,id=1,phase=33})}),
 s(178458,50411,{b=1,f=21,lvl=80,q=4}),
 s(178233,50006,{b=1,f=4,loc=40,lvl=80,q=4}),
 i(50005,{b=1,f=51,lvl=80,q=4}),
@@ -15651,7 +15651,7 @@ i(50352,{b=1,f=53,lvl=80,q=4}),
 crit(12947,{achID=4604})}})),
 e(1628,{npcID=37813,g={
 ach(4613,{
-crit(13019,{achID=4603,id=1,u=33})}),
+crit(13019,{achID=4603,id=1,phase=33})}),
 i(52027,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52026,{b=1,c={1,3,7},lvl=80,q=4}),
 i(52025,{b=1,c={4,6,8,11},lvl=80,q=4}),
@@ -15667,7 +15667,7 @@ crit(12959,{achID=4608,id=1})}),
 e(1629,{npcID=36626,g={
 i(50226,{b=1,c={1,2,6},description="This can drop from Festergut on 25-Man Normal or Heroic.",q=4}),
 ach(4615,{
-crit(13021,{achID=4603,id=1,u=33})}),
+crit(13021,{achID=4603,id=1,phase=33})}),
 s(202535,50040,{b=1,f=28,lvl=80,q=4}),
 s(178253,50035,{b=1,f=34,lvl=80,q=4}),
 s(178274,50060,{b=1,f=7,loc=40,lvl=80,q=4}),
@@ -15688,7 +15688,7 @@ crit(12949,{achID=4605})}}),
 e(1630,{npcID=36627,g={
 i(50231,{b=1,c={1,2,6},description="This can drop from Rotface on 25-Man Normal or Heroic.",q=4}),
 ach(4614,{
-crit(13020,{achID=4603,id=1,u=33})}),
+crit(13020,{achID=4603,id=1,phase=33})}),
 s(178240,50016,{b=1,f=20,lvl=80,q=4}),
 s(178248,50028,{b=1,f=23,lvl=80,q=4}),
 s(178251,50033,{b=1,f=27,lvl=80,q=4}),
@@ -15707,7 +15707,7 @@ i(50353,{b=1,f=53,lvl=80,q=4}),
 crit(12950,{achID=4605})}}),
 e(1631,{npcID=36678,g={
 ach(4616,{
-crit(13022,{achID=4603,id=1,u=33})}),
+crit(13022,{achID=4603,id=1,phase=33})}),
 i(52027,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52026,{b=1,c={1,3,7},lvl=80,q=4}),
 i(52025,{b=1,c={4,6,8,11},lvl=80,q=4}),
@@ -15722,7 +15722,7 @@ ach(4606,{
 crit(12960,{achID=4608,id=1})}),
 e(1632,{crs={37970,37972,37973},g={
 ach(4617,{
-crit(13023,{achID=4603,id=1,u=33})}),
+crit(13023,{achID=4603,id=1,phase=33})}),
 s(178200,49919,{b=1,f=24,lvl=80,q=4}),
 s(178342,50184,{b=1,f=34,lvl=80,q=4}),
 s(178334,50173,{b=1,f=1,lvl=80,q=4}),
@@ -15743,7 +15743,7 @@ e(1633,{npcID=37955,g={
 ach(4618,{
 crit(13012,{achID=4618}),
 crit(13013,{achID=4618}),
-crit(13024,{achID=4603,id=1,u=33})}),
+crit(13024,{achID=4603,id=1,phase=33})}),
 i(52027,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52026,{b=1,c={1,3,7},lvl=80,q=4}),
 i(52025,{b=1,c={4,6,8,11},lvl=80,q=4}),
@@ -15759,7 +15759,7 @@ ach(4607,{
 crit(12958,{achID=4608,id=1})}),
 e(1634,{npcID=36789,g={
 ach(4619,{
-crit(13025,{achID=4603,id=1,u=33})}),
+crit(13025,{achID=4603,id=1,phase=33})}),
 s(178341,50183,{b=1,f=20,lvl=80,q=4}),
 s(178485,50472,{f=27,lvl=80,q=4}),
 s(178353,50202,{b=1,f=6,loc=40,lvl=80,q=4}),
@@ -15778,7 +15778,7 @@ i(50186,{b=1,f=52,lvl=80,q=4}),
 crit(12954,{achID=4607})}}),
 e(1635,{npcID=36853,g={
 ach(4620,{
-crit(13026,{achID=4603,id=1,u=33})}),
+crit(13026,{achID=4603,id=1,phase=33})}),
 i(52027,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52026,{b=1,c={1,3,7},lvl=80,q=4}),
 i(52025,{b=1,c={4,6,8,11},lvl=80,q=4}),
@@ -15790,9 +15790,9 @@ i(50361,{b=1,f=53,lvl=80,q=4}),
 crit(12955,{achID=4607})}}),
 e(1636,{npcID=36597,g={
 ach(4621,{
-crit(13027,{achID=4603,id=1,u=33})}),
+crit(13027,{achID=4603,id=1,phase=33})}),
 ach(4622,{
-crit(13028,{achID=4603,id=1,u=33})}),
+crit(13028,{achID=4603,id=1,phase=33})}),
 ach(4597,{
 title(140),
 crit(12957,{achID=4608,id=1})}),
@@ -15813,11 +15813,11 @@ h(-19,{crs={36597,36612,36626,36627,36678,36789,36853,36855,36939,36948,37813,37
 i(50274,{b=1,q=5})}}),
 h(-368,{
 ach(4632,{
-crit(13075,{achID=4603,id=1,u=33}),
+crit(13075,{achID=4603,id=1,phase=33}),
 crit(13075,{achID=4637,id=1})}),
 e(1624,{npcID=36612,g={
 ach(4610,{
-crit(13016,{achID=4603,id=1,u=33})}),
+crit(13016,{achID=4603,id=1,phase=33})}),
 s(178663,50709,{b=1,f=22,lvl=80,q=4}),
 s(178587,50608,{b=1,f=20,lvl=80,q=4}),
 s(178592,50616,{b=1,f=8,lvl=80,q=4}),
@@ -15836,7 +15836,7 @@ i(50610,{b=1,f=52,lvl=80,q=4}),
 crit(13091,{achID=4632})}}),
 e(1625,{npcID=36855,g={
 ach(4611,{
-crit(13017,{achID=4603,id=1,u=33})}),
+crit(13017,{achID=4603,id=1,phase=33})}),
 s(178614,50648,{b=1,f=28,lvl=80,q=4}),
 s(178610,50641,{b=1,f=20,lvl=80,q=4}),
 s(178607,50638,{b=1,f=32,lvl=80,q=4}),
@@ -15855,7 +15855,7 @@ i(50644,{b=1,f=52,lvl=80,q=4}),
 crit(13106,{achID=4632})}}),(function(t)t.objectID=t.providers[_.FactionID==Enum.FlightPathFaction.Horde and 2 or 1][2] t.providers=nil return t end)(
 e(1626,{crs={36939,36948},providers={{"o",201873},{"o",202180}},g={
 ach(4612,{
-crit(13018,{achID=4603,id=1,u=33})}),
+crit(13018,{achID=4603,id=1,phase=33})}),
 s(178620,50654,{b=1,f=21,lvl=80,q=4}),
 s(178625,50661,{b=1,f=4,loc=40,lvl=80,q=4}),
 i(50658,{b=1,f=51,lvl=80,q=4}),
@@ -15874,7 +15874,7 @@ i(50349,{b=1,f=53,lvl=80,q=4}),
 crit(13111,{achID=4632})}})),
 e(1628,{npcID=37813,g={
 ach(4613,{
-crit(13019,{achID=4603,id=1,u=33})}),
+crit(13019,{achID=4603,id=1,phase=33})}),
 i(52027,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52030,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52026,{b=1,c={1,3,7},lvl=80,q=4}),
@@ -15889,12 +15889,12 @@ i(50363,{b=1,f=53,lvl=80,q=4}),
 crit(13114,{achID=4632})}})}),
 h(-369,{
 ach(4633,{
-crit(13076,{achID=4603,id=1,u=33}),
+crit(13076,{achID=4603,id=1,phase=33}),
 crit(13076,{achID=4637,id=1})}),
 e(1629,{npcID=36626,g={
 i(50226,{b=1,c={1,2,6},description="This can drop from Festergut on 25-Man Normal or Heroic.",q=4}),
 ach(4615,{
-crit(13021,{achID=4603,id=1,u=33})}),
+crit(13021,{achID=4603,id=1,phase=33})}),
 s(202573,50695,{b=1,f=28,lvl=80,q=4}),
 s(178649,50692,{b=1,f=34,lvl=80,q=4}),
 s(178656,50701,{b=1,f=7,loc=40,lvl=80,q=4}),
@@ -15915,7 +15915,7 @@ crit(13117,{achID=4633})}}),
 e(1630,{npcID=36627,g={
 i(50231,{b=1,c={1,2,6},description="This can drop from Rotface on 25-Man Normal or Heroic.",q=4}),
 ach(4614,{
-crit(13020,{achID=4603,id=1,u=33})}),
+crit(13020,{achID=4603,id=1,phase=33})}),
 s(178636,50676,{b=1,f=20,lvl=80,q=4}),
 s(178642,50685,{b=1,f=23,lvl=80,q=4}),
 s(178641,50684,{b=1,f=27,lvl=80,q=4}),
@@ -15934,7 +15934,7 @@ i(50348,{b=1,f=53,lvl=80,q=4}),
 crit(13120,{achID=4633})}}),
 e(1631,{npcID=36678,g={
 ach(4616,{
-crit(13022,{achID=4603,id=1,u=33})}),
+crit(13022,{achID=4603,id=1,phase=33})}),
 i(52027,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52030,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52026,{b=1,c={1,3,7},lvl=80,q=4}),
@@ -15949,11 +15949,11 @@ i(50706,{b=1,f=53,lvl=80,q=4}),
 crit(13129,{achID=4633})}})}),
 h(-370,{
 ach(4634,{
-crit(13077,{achID=4603,id=1,u=33}),
+crit(13077,{achID=4603,id=1,phase=33}),
 crit(13077,{achID=4637,id=1})}),
 e(1632,{crs={37970,37972,37973},g={
 ach(4617,{
-crit(13023,{achID=4603,id=1,u=33})}),
+crit(13023,{achID=4603,id=1,phase=33})}),
 s(178583,50603,{b=1,f=24,lvl=80,q=4}),
 s(178664,50710,{b=1,f=34,lvl=80,q=4}),
 s(178672,50719,{b=1,f=1,lvl=80,q=4}),
@@ -15974,7 +15974,7 @@ e(1633,{npcID=37955,g={
 ach(4618,{
 crit(13012,{achID=4618}),
 crit(13013,{achID=4618}),
-crit(13024,{achID=4603,id=1,u=33})}),
+crit(13024,{achID=4603,id=1,phase=33})}),
 i(52027,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52030,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52026,{b=1,c={1,3,7},lvl=80,q=4}),
@@ -15990,11 +15990,11 @@ i(50726,{b=1,f=53,lvl=80,q=4}),
 crit(13132,{achID=4634})}})}),
 h(-371,{
 ach(4635,{
-crit(13078,{achID=4603,id=1,u=33}),
+crit(13078,{achID=4603,id=1,phase=33}),
 crit(13078,{achID=4637,id=1})}),
 e(1634,{npcID=36789,g={
 ach(4619,{
-crit(13025,{achID=4603,id=1,u=33})}),
+crit(13025,{achID=4603,id=1,phase=33})}),
 s(178596,50621,{b=1,f=20,lvl=80,q=4}),
 s(178604,50631,{b=1,f=27,lvl=80,q=4}),
 s(178600,50626,{b=1,f=6,loc=40,lvl=80,q=4}),
@@ -16013,7 +16013,7 @@ i(50618,{b=1,f=52,lvl=80,q=4}),
 crit(13126,{achID=4635})}}),
 e(1635,{npcID=36853,g={
 ach(4620,{
-crit(13026,{achID=4603,id=1,u=33})}),
+crit(13026,{achID=4603,id=1,phase=33})}),
 i(52027,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52030,{b=1,c={2,5,9},lvl=80,q=4}),
 i(52026,{b=1,c={1,3,7},lvl=80,q=4}),
@@ -16028,9 +16028,9 @@ i(50364,{b=1,f=53,lvl=80,q=4}),
 crit(13135,{achID=4635})}}),
 e(1636,{npcID=36597,g={
 ach(4621,{
-crit(13027,{achID=4603,id=1,u=33})}),
+crit(13027,{achID=4603,id=1,phase=33})}),
 ach(4622,{
-crit(13028,{achID=4603,id=1,u=33})}),
+crit(13028,{achID=4603,id=1,phase=33})}),
 gach(5023,{awp=40003}),
 ach(4584,{
 title(138),
@@ -16053,7 +16053,7 @@ s(178687,50738,{b=1,f=23,lvl=80,q=4}),
 s(178683,50734,{b=1,f=23,lvl=80,q=4}),
 s(178682,50733,{b=1,f=33,lvl=80,q=4})}})})})}}),
 inst(761,{awp=30305,coords={
-[115]={{61.2,52.7}}},isLockoutShared=1,isRaid=1,lvl=80,mapID=200,savedInstanceID=724,u=3302,g={
+[115]={{61.2,52.7}}},isLockoutShared=1,isRaid=1,lvl=80,mapID=200,phase=3302,savedInstanceID=724,g={
 h(-45,{
 q(26013,{coords={
 [115]={{59.7,54.6}}},qgs={27990},sourceQuests={26012}}),
@@ -16139,12 +16139,12 @@ inst(271,{awp=30002,coords={
 h(-12,{
 ach(481,{
 crit(4044,{achID=1288,id=1})}),
-ach(17291,{u=31,g={
+ach(17291,{phase=31,g={
 crit(57779,{achID=17304,awp=30401,id=6})}}),
-ach(18593,{u=32,g={
+ach(18593,{phase=32,g={
 crit(60640,{achID=18614,awp=30402,id=6,r=2}),
 crit(60640,{achID=18688,awp=30402,id=6,r=1})}}),
-ach(19430,{u=33,g={
+ach(19430,{phase=33,g={
 crit(63390,{achID=19439,awp=30403,id=6,r=2}),
 crit(63390,{achID=19440,awp=30403,id=6,r=1})}}),
 ach(492,{
@@ -16245,78 +16245,78 @@ s(171532,37615,{b=1,f=32,lvl=80,q=3}),
 s(171536,37619,{b=1,f=27,lvl=80,q=4}),
 crit(5611,{achID=492,id=1}),
 crit(5611,{achID=1658,id=1})}})}}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_394437_412470_424201)(
-h(-71,{lvl=80,u=31,g={
+h(-71,{lvl=80,phase=31,g={
 e(580,{npcID=29309,g={
 s(172375,39263,{b=1,f=6,loc=46,lvl=80,q=4}),
 s(172364,39249,{b=1,f=7,loc=41,lvl=80,q=4}),
 s(172368,39255,{b=1,f=28,lvl=80,q=4}),
-crit(57731,{achID=17291,id=2,u=31})}}),
+crit(57731,{achID=17291,id=2,phase=31})}}),
 e(581,{npcID=29308,g={
 s(172362,39247,{b=1,f=5,loc=43,lvl=80,q=4}),
 s(172372,39260,{b=1,f=7,loc=40,lvl=80,q=4}),
 s(172365,39251,{b=1,f=6,loc=45,lvl=80,q=4}),
 s(172367,39254,{b=1,f=4,loc=47,lvl=80,q=4}),
-crit(57733,{achID=17291,id=4,u=31})}}),
+crit(57733,{achID=17291,id=4,phase=31})}}),
 e(583,{npcID=30258,g={
 s(172362,39247,{b=1,f=5,loc=43,lvl=80,q=4}),
 s(172372,39260,{b=1,f=7,loc=40,lvl=80,q=4}),
 s(172365,39251,{b=1,f=6,loc=45,lvl=80,q=4}),
-crit(57734,{achID=17291,id=5,u=31})}}),
+crit(57734,{achID=17291,id=5,phase=31})}}),
 e(582,{npcID=29310,g={
 i(39246,{b=1,f=51,lvl=80,q=4}),
 s(172370,39258,{b=1,f=7,loc=46,lvl=80,q=4}),
 i(39250,{b=1,f=52,lvl=80,q=4}),
 s(172363,39248,{b=1,f=6,loc=42,lvl=80,q=4}),
-crit(57732,{achID=17291,id=3,u=31})}}),
+crit(57732,{achID=17291,id=3,phase=31})}}),
 e(584,{npcID=29311,g={
 s(175100,43998,{b=1,f=6,loc=42,lvl=80,q=4}),
 s(172477,39417,{b=1,f=22,lvl=80,q=4}),
 i(40486,{b=1,f=51,lvl=80,q=4}),
-crit(57730,{achID=17291,id=1,u=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412470_424201)(
-h(-72,{lvl=80,u=32,g={
+crit(57730,{achID=17291,id=1,phase=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412470_424201)(
+h(-72,{lvl=80,phase=32,g={
 e(580,{npcID=29309,g={
 s(201870,45310,{b=1,f=7,loc=44,lvl=80,q=4}),
 s(175619,45314,{b=1,f=1,lvl=80,q=4}),
-crit(60583,{achID=18593,id=2,u=32})}}),
+crit(60583,{achID=18593,id=2,phase=32})}}),
 e(581,{npcID=29308,g={
 s(176045,46019,{b=1,f=6,loc=46,lvl=80,q=4}),
 s(175626,45321,{b=1,f=7,loc=41,lvl=80,q=4}),
-crit(60586,{achID=18593,id=4,u=32})}}),
+crit(60586,{achID=18593,id=4,phase=32})}}),
 e(583,{npcID=30258,g={
 s(175615,45309,{b=1,f=31,lvl=80,q=4}),
 s(175622,45317,{b=1,f=3,lvl=80,q=4}),
-crit(60585,{achID=18593,id=5,u=32})}}),
+crit(60585,{achID=18593,id=5,phase=32})}}),
 e(582,{npcID=29310,g={
 i(45702,{b=1,f=52,lvl=80,q=4}),
 s(175887,45701,{b=1,f=6,loc=47,lvl=80,q=4}),
-crit(60584,{achID=18593,id=3,u=32})}}),
+crit(60584,{achID=18593,id=3,phase=32})}}),
 e(584,{npcID=29311,g={
 i(45696,{b=1,f=51,lvl=80,q=4}),
 i(45699,{b=1,f=51,lvl=80,q=4}),
 s(175888,45704,{f=3,lvl=80,q=4}),
-crit(60582,{achID=18593,id=1,u=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424201)(
-h(-73,{lvl=80,u=33,g={
+crit(60582,{achID=18593,id=1,phase=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424201)(
+h(-73,{lvl=80,phase=33,g={
 e(580,{npcID=29309,g={
-crit(63330,{achID=19430,id=2,u=33})}}),
+crit(63330,{achID=19430,id=2,phase=33})}}),
 e(581,{npcID=29308,g={
-crit(63332,{achID=19430,id=4,u=33})}}),
+crit(63332,{achID=19430,id=4,phase=33})}}),
 e(583,{npcID=30258,g={
-crit(63333,{achID=19430,id=5,u=33})}}),
+crit(63333,{achID=19430,id=5,phase=33})}}),
 e(582,{npcID=29310,g={
-crit(63331,{achID=19430,id=3,u=33})}}),
+crit(63331,{achID=19430,id=3,phase=33})}}),
 e(584,{npcID=29311,g={
-crit(63329,{achID=19430,id=1,u=33})}})}}))}}),
+crit(63329,{achID=19430,id=1,phase=33})}})}}))}}),
 inst(272,{awp=30002,coords={
-[115]={{26,50.6}}},lvl=67,mapID=157,maps={158,159},savedInstanceID=601,u=30,g={
+[115]={{26,50.6}}},lvl=67,mapID=157,maps={158,159},savedInstanceID=601,g={
 h(-12,{
 ach(480,{
 crit(4043,{achID=1288,id=1})}),
-ach(17285,{u=31,g={
+ach(17285,{phase=31,g={
 crit(57778,{achID=17304,awp=30401,id=5})}}),
-ach(18592,{u=32,g={
+ach(18592,{phase=32,g={
 crit(60639,{achID=18614,awp=30402,id=5,r=2}),
 crit(60639,{achID=18688,awp=30402,id=5,r=1})}}),
-ach(19429,{u=33,g={
+ach(19429,{phase=33,g={
 crit(63389,{achID=19439,awp=30403,id=5,r=2}),
 crit(63389,{achID=19440,awp=30403,id=5,r=1})}}),
 ach(491,{
@@ -16411,55 +16411,55 @@ s(171324,37238,{b=1,f=27,lvl=80,q=4}),
 s(171328,37242,{b=1,f=4,loc=45,lvl=80,q=4}),
 crit(5610,{achID=491,id=1}),
 crit(5610,{achID=1658,id=1})}})}}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_394437_412470_424201)(
-h(-71,{lvl=80,u=31,g={
+h(-71,{lvl=80,phase=31,g={
 e(585,{npcID=28684,g={
 s(201618,39267,{b=1,f=7,loc=41,lvl=80,q=4}),
 s(172371,39259,{b=1,f=5,loc=42,lvl=80,q=4}),
 i(39257,{b=1,f=53,lvl=80,q=4}),
-crit(57699,{achID=17285,id=3,u=31})}}),
+crit(57699,{achID=17285,id=3,phase=31})}}),
 e(586,{npcID=28921,g={
 s(172374,39262,{b=1,f=7,loc=44,lvl=80,q=4}),
 s(172366,39252,{b=1,f=4,loc=43,lvl=80,q=4}),
 s(172369,39256,{b=1,f=28,lvl=80,q=4}),
 s(172373,39261,{b=1,f=7,loc=45,lvl=80,q=4}),
-crit(57697,{achID=17285,id=1,u=31})}}),
+crit(57697,{achID=17285,id=1,phase=31})}}),
 e(587,{npcID=29120,g={
 s(175097,43994,{b=1,f=7,loc=46,lvl=80,q=4}),
 s(172483,39425,{b=1,f=3,lvl=80,q=4}),
 s(172478,39419,{b=1,f=31,lvl=80,q=4}),
-crit(57698,{achID=17285,id=2,u=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412470_424201)(
-h(-72,{lvl=80,u=32,g={
+crit(57698,{achID=17285,id=2,phase=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412470_424201)(
+h(-72,{lvl=80,phase=32,g={
 e(585,{npcID=28684,g={
 s(175758,45464,{b=1,f=4,loc=40,lvl=80,q=4}),
 i(45874,{f=52,lvl=80,q=4}),
-crit(60581,{achID=18592,id=3,u=32})}}),
+crit(60581,{achID=18592,id=3,phase=32})}}),
 e(586,{npcID=28921,g={
 s(175621,45316,{f=6,loc=43,lvl=80,q=4}),
 s(175753,45458,{b=1,f=22,lvl=80,q=4}),
-crit(60579,{achID=18592,id=1,u=32})}}),
+crit(60579,{achID=18592,id=1,phase=32})}}),
 e(587,{npcID=29120,g={
 s(175623,45318,{b=1,f=3,lvl=80,q=4}),
 i(45313,{b=1,f=53,lvl=80,q=4}),
 s(175618,45312,{b=1,f=5,loc=44,lvl=80,q=4}),
-crit(60580,{achID=18592,id=2,u=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424201)(
-h(-73,{lvl=80,u=33,g={
+crit(60580,{achID=18592,id=2,phase=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424201)(
+h(-73,{lvl=80,phase=33,g={
 e(585,{npcID=28684,g={
-crit(63328,{achID=19429,id=3,u=33})}}),
+crit(63328,{achID=19429,id=3,phase=33})}}),
 e(586,{npcID=28921,g={
-crit(63326,{achID=19429,id=1,u=33})}}),
+crit(63326,{achID=19429,id=1,phase=33})}}),
 e(587,{npcID=29120,g={
-crit(63327,{achID=19429,id=2,u=33})}})}}))}}),
+crit(63327,{achID=19429,id=2,phase=33})}})}}))}}),
 inst(273,{awp=30002,coords={
 [121]={{28.6,86.9}}},lvl=69,mapID=160,maps={161},savedInstanceID=600,g={
 h(-12,{
 ach(482,{
 crit(4045,{achID=1288,id=1})}),
-ach(17292,{u=31,g={
+ach(17292,{phase=31,g={
 crit(57781,{achID=17304,awp=30401,id=8})}}),
-ach(18594,{u=32,g={
+ach(18594,{phase=32,g={
 crit(60642,{achID=18614,awp=30402,id=8,r=2}),
 crit(60642,{achID=18688,awp=30402,id=8,r=1})}}),
-ach(19431,{u=33,g={
+ach(19431,{phase=33,g={
 crit(63392,{achID=19439,awp=30403,id=8,r=2}),
 crit(63392,{achID=19440,awp=30403,id=8,r=1})}}),
 ach(493,{
@@ -16558,65 +16558,65 @@ i(37734,{b=1,f=53,lvl=80,q=3}),
 s(201574,37735,{b=1,f=7,loc=42,lvl=80,q=3}),
 crit(9261,{achID=493,id=1}),
 crit(9261,{achID=1658,id=1})}})}}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_394438_413169_424203)(
-h(-71,{lvl=80,u=31,g={
+h(-71,{lvl=80,phase=31,g={
 e(588,{npcID=26630,g={
 s(172358,39241,{b=1,f=3,lvl=80,q=4}),
 s(172361,39245,{b=1,f=24,lvl=80,q=4}),
 s(172359,39242,{b=1,f=4,loc=42,lvl=80,q=4}),
-crit(57735,{achID=17292,id=1,u=31})}}),
+crit(57735,{achID=17292,id=1,phase=31})}}),
 e(589,{npcID=26631,g={
 i(39244,{b=1,f=52,lvl=80,q=4}),
 s(172355,39237,{b=1,f=5,loc=41,lvl=80,q=4}),
 s(172354,39236,{b=1,f=6,loc=47,lvl=80,q=4}),
-crit(57736,{achID=17292,id=2,u=31})}}),
+crit(57736,{achID=17292,id=2,phase=31})}}),
 e(590,{npcID=27483,g={
 s(172356,39239,{b=1,f=7,loc=42,lvl=80,q=4}),
 s(172360,39243,{b=1,f=6,loc=44,lvl=80,q=4}),
 s(172357,39240,{b=1,f=5,loc=40,lvl=80,q=4}),
-crit(57737,{achID=17292,id=3,u=31})}}),
+crit(57737,{achID=17292,id=3,phase=31})}}),
 e(591,{npcID=26632,g={
 s(175098,43995,{b=1,f=4,loc=40,lvl=80,q=4}),
 s(172476,39416,{b=1,f=34,lvl=80,q=4}),
 s(175099,43996,{b=1,f=6,loc=47,lvl=80,q=4}),
-crit(57738,{achID=17292,id=4,u=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_413169_424203)(
-h(-72,{lvl=80,u=32,g={
+crit(57738,{achID=17292,id=4,phase=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_413169_424203)(
+h(-72,{lvl=80,phase=32,g={
 e(588,{npcID=26630,g={
 s(175885,45698,{b=1,f=7,loc=47,lvl=80,q=4}),
 s(175884,45697,{b=1,f=7,loc=41,lvl=80,q=4}),
-crit(60587,{achID=18594,id=1,u=32})}}),
+crit(60587,{achID=18594,id=1,phase=32})}}),
 e(589,{npcID=26631,g={
 s(175880,45687,{b=1,f=6,loc=40,lvl=80,q=4}),
 i(45703,{b=1,f=53,lvl=80,q=4}),
-crit(60588,{achID=18594,id=2,u=32})}}),
+crit(60588,{achID=18594,id=2,phase=32})}}),
 e(590,{npcID=27483,g={
 s(176023,45975,{f=7,loc=45,lvl=80,q=4}),
 s(175886,45700,{b=1,f=25,lvl=80,q=4}),
-crit(60589,{achID=18594,id=3,u=32})}}),
+crit(60589,{achID=18594,id=3,phase=32})}}),
 e(591,{npcID=26632,g={
 i(45303,{b=1,f=52,lvl=80,q=4}),
 s(176020,45972,{b=1,f=23,lvl=80,q=4}),
 s(176022,45974,{b=1,f=5,loc=41,lvl=80,q=4}),
-crit(60590,{achID=18594,id=4,u=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424203)(
-h(-73,{lvl=80,u=33,g={
+crit(60590,{achID=18594,id=4,phase=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424203)(
+h(-73,{lvl=80,phase=33,g={
 e(588,{npcID=26630,g={
-crit(63334,{achID=19431,id=1,u=33})}}),
+crit(63334,{achID=19431,id=1,phase=33})}}),
 e(589,{npcID=26631,g={
-crit(63335,{achID=19431,id=2,u=33})}}),
+crit(63335,{achID=19431,id=2,phase=33})}}),
 e(590,{npcID=27483,g={
-crit(63336,{achID=19431,id=3,u=33})}}),
+crit(63336,{achID=19431,id=3,phase=33})}}),
 e(591,{npcID=26632,g={
-crit(63337,{achID=19431,id=4,u=33})}})}}))}}),
+crit(63337,{achID=19431,id=4,phase=33})}})}}))}}),
 inst(274,{awp=30002,coords={
 [121]={{76.3,21.1}}},lvl=71,mapID=153,maps={154},savedInstanceID=604,g={
 h(-12,{
 ach(484,{
 crit(4047,{achID=1288,id=1})}),
-ach(17295,{u=31,g={
+ach(17295,{phase=31,g={
 crit(57782,{achID=17304,awp=30401,id=9})}}),
-ach(18596,{u=32,g={
+ach(18596,{phase=32,g={
 crit(60643,{achID=18614,awp=30402,id=9,r=2}),
 crit(60643,{achID=18688,awp=30402,id=9,r=1})}}),
-ach(19433,{u=33,g={
+ach(19433,{phase=33,g={
 crit(63393,{achID=19439,awp=30403,id=9,r=2}),
 crit(63393,{achID=19440,awp=30403,id=9,r=1})}}),
 ach(495,{
@@ -16758,77 +16758,77 @@ i(37638,{b=1,f=53,lvl=80,q=3}),
 s(171556,37643,{b=1,f=5,loc=45,lvl=80,q=4}),
 crit(5614,{achID=495,id=1}),
 crit(5614,{achID=1658,id=1})}})}}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_394438_413169_424203)(
-h(-71,{lvl=80,u=31,g={
+h(-71,{lvl=80,phase=31,g={
 e(592,{npcID=29304,g={
 i(39229,{b=1,f=53,lvl=80,q=4}),
 s(172352,39234,{b=1,f=7,loc=47,lvl=80,q=4}),
 s(172350,39230,{b=1,f=5,loc=41,lvl=80,q=4}),
-crit(57743,{achID=17295,id=1,u=31})}}),
+crit(57743,{achID=17295,id=1,phase=31})}}),
 e(593,{npcID=29307,g={
 s(172351,39233,{b=1,f=8,lvl=80,q=4}),
 s(172347,39225,{b=1,f=3,lvl=80,q=4}),
 s(172346,39224,{b=1,f=5,loc=46,lvl=80,q=4}),
-crit(57746,{achID=17295,id=4,u=31})}}),
+crit(57746,{achID=17295,id=4,phase=31})}}),
 e(594,{npcID=29305,g={
 i(39232,{b=1,f=51,lvl=80,q=4}),
 s(172349,39228,{b=1,f=7,loc=44,lvl=80,q=4}),
 s(172345,39221,{b=1,f=29,lvl=80,q=4}),
-crit(57744,{achID=17295,id=2,u=31})}}),
+crit(57744,{achID=17295,id=2,phase=31})}}),
 e(595,{npcID=29932,g={
 s(172344,39217,{b=1,f=6,loc=46,lvl=80,q=4}),
 s(172348,39226,{b=1,f=23,lvl=80,q=4}),
 i(39231,{b=1,f=52,lvl=80,q=4}),
-crit(57745,{achID=17295,id=3,u=31})}}),
+crit(57745,{achID=17295,id=3,phase=31})}}),
 e(596,{npcID=29306,g={
 i(44660,{b=1,f=51,q=4}),
 s(173092,40491,{b=1,f=25,lvl=80,q=4}),
 s(172388,39283,{f=5,loc=43,lvl=80,q=4}),
-crit(57747,{achID=17295,id=5,u=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_413169_424203)(
-h(-72,{lvl=80,u=32,g={
+crit(57747,{achID=17295,id=5,phase=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_413169_424203)(
+h(-72,{lvl=80,phase=32,g={
 e(592,{npcID=29304,g={
 s(201924,45976,{b=1,f=4,loc=44,lvl=80,q=4}),
 s(176021,45973,{b=1,f=3,lvl=80,q=4}),
-crit(60592,{achID=18596,id=1,u=32})}}),
+crit(60592,{achID=18596,id=1,phase=32})}}),
 e(593,{npcID=29307,g={
 s(175613,45306,{b=1,f=4,loc=45,lvl=80,q=4}),
 s(175609,45301,{f=6,loc=43,lvl=80,q=4}),
-crit(60595,{achID=18596,id=4,u=32})}}),
+crit(60595,{achID=18596,id=4,phase=32})}}),
 e(594,{npcID=29305,g={
 s(201869,45305,{b=1,f=7,loc=42,lvl=80,q=4}),
 s(175607,45299,{b=1,f=7,loc=40,lvl=80,q=4}),
-crit(60593,{achID=18596,id=2,u=32})}}),
+crit(60593,{achID=18596,id=2,phase=32})}}),
 e(595,{npcID=29932,g={
 i(45308,{b=1,f=53,lvl=80,q=4}),
 s(175614,45307,{b=1,f=6,loc=46,lvl=80,q=4}),
-crit(60594,{achID=18596,id=3,u=32})}}),
+crit(60594,{achID=18596,id=3,phase=32})}}),
 e(596,{npcID=29306,g={
 s(175964,45893,{b=1,f=5,loc=40,lvl=80,q=4}),
 s(175606,45298,{b=1,f=25,lvl=80,q=4}),
 s(175611,45304,{b=1,f=7,loc=45,lvl=80,q=4}),
 s(176021,45973,{b=1,f=3,lvl=80,q=4}),
-crit(60596,{achID=18596,id=5,u=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424203)(
-h(-73,{lvl=80,u=33,g={
+crit(60596,{achID=18596,id=5,phase=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424203)(
+h(-73,{lvl=80,phase=33,g={
 e(592,{npcID=29304,g={
-crit(63339,{achID=19433,id=1,u=33})}}),
+crit(63339,{achID=19433,id=1,phase=33})}}),
 e(593,{npcID=29307,g={
-crit(63342,{achID=19433,id=4,u=33})}}),
+crit(63342,{achID=19433,id=4,phase=33})}}),
 e(594,{npcID=29305,g={
-crit(63340,{achID=19433,id=2,u=33})}}),
+crit(63340,{achID=19433,id=2,phase=33})}}),
 e(595,{npcID=29932,g={
-crit(63341,{achID=19433,id=3,u=33})}}),
+crit(63341,{achID=19433,id=3,phase=33})}}),
 e(596,{npcID=29306,g={
-crit(63343,{achID=19433,id=5,u=33})}})}}))}}),
+crit(63343,{achID=19433,id=5,phase=33})}})}}))}}),
 inst(275,{awp=30002,coords={
 [120]={{38,14.7}}},lore="Upon departing Azeroth, the titans entrusted loyal protectors with safeguarding Ulduar, an enigmatic city nestled in the mountains of the Storm Peaks. Designated supreme among his brethren was the guardian known as Loken, but with the power of the titan complex in his hands, he turned to darkness and plunged the region into chaos.",lvl=75,mapID=138,maps={139},savedInstanceID=602,g={
 h(-12,{
 ach(486,{
 crit(4049,{achID=1288,id=1})}),
-ach(17299,{u=31,g={
+ach(17299,{phase=31,g={
 crit(57775,{achID=17304,awp=30401,id=2})}}),
-ach(18598,{u=32,g={
+ach(18598,{phase=32,g={
 crit(60636,{achID=18614,awp=30402,id=2,r=2}),
 crit(60636,{achID=18688,awp=30402,id=2,r=1})}}),
-ach(19435,{u=33,g={
+ach(19435,{phase=33,g={
 crit(63385,{achID=19439,awp=30403,id=2,r=2}),
 crit(63385,{achID=19440,awp=30403,id=2,r=1})}}),
 ach(497,{
@@ -16950,56 +16950,56 @@ s(171696,37849,{b=1,f=7,loc=40,lvl=80,q=3}),
 s(171701,37854,{b=1,f=4,loc=46,lvl=80,q=4}),
 crit(5616,{achID=497,id=1}),
 crit(5616,{achID=1658,id=1})}})}}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_394441_413078_424205)(
-h(-71,{lvl=80,u=31,g={
+h(-71,{lvl=80,phase=31,g={
 e(597,{npcID=28586,g={
 s(172329,39189,{b=1,f=6,loc=47,lvl=80,q=4}),
 i(39141,{b=1,f=52,lvl=80,q=4}),
 s(172332,39192,{b=1,f=4,loc=44,lvl=80,q=4}),
-crit(57761,{achID=17299,id=4,u=31})}}),
+crit(57761,{achID=17299,id=4,phase=31})}}),
 e(598,{npcID=28587,g={
 s(172328,39188,{b=1,f=7,loc=42,lvl=80,q=4}),
 s(172302,39140,{b=1,f=20,lvl=80,q=4}),
 s(172331,39191,{b=1,f=5,loc=46,lvl=80,q=4}),
-crit(57759,{achID=17299,id=2,u=31})}}),
+crit(57759,{achID=17299,id=2,phase=31})}}),
 e(599,{npcID=28546,g={
 s(172330,39190,{b=1,f=4,loc=45,lvl=80,q=4}),
 i(39146,{b=1,f=51,lvl=80,q=4}),
 s(172301,39139,{b=1,f=7,loc=47,lvl=80,q=4}),
-crit(57760,{achID=17299,id=3,u=31})}}),
+crit(57760,{achID=17299,id=3,phase=31})}}),
 e(600,{npcID=28923,g={
 s(173126,40526,{b=1,f=4,loc=42,lvl=80,q=4}),
 s(173089,40488,{b=1,f=23,lvl=80,q=4}),
 i(40426,{f=52,lvl=80,q=4}),
-crit(57756,{achID=17299,id=1,u=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_413078_424205)(
-h(-72,{lvl=80,u=32,g={
+crit(57756,{achID=17299,id=1,phase=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_413078_424205)(
+h(-72,{lvl=80,phase=32,g={
 e(597,{npcID=28586,g={
 s(176314,46347,{b=1,f=3,lvl=80,q=4}),
 s(176309,46341,{b=1,f=3,lvl=80,q=4}),
-crit(60604,{achID=18598,id=4,u=32})}}),
+crit(60604,{achID=18598,id=4,phase=32})}}),
 e(598,{npcID=28587,g={
 i(46343,{b=1,f=51,lvl=80,q=4}),
 s(176310,46342,{b=1,f=32,lvl=80,q=4}),
-crit(60602,{achID=18598,id=2,u=32})}}),
+crit(60602,{achID=18598,id=2,phase=32})}}),
 e(599,{npcID=28546,g={
 s(176311,46344,{b=1,f=4,loc=41,lvl=80,q=4}),
 s(175874,45677,{b=1,f=5,loc=41,lvl=80,q=4}),
-crit(60603,{achID=18598,id=3,u=32})}}),
+crit(60603,{achID=18598,id=3,phase=32})}}),
 e(600,{npcID=28923,g={
 s(175876,45680,{f=7,loc=43,lvl=80,q=4}),
 s(175873,45676,{b=1,f=7,loc=42,lvl=80,q=4}),
 s(176316,46350,{b=1,f=28,lvl=80,q=4}),
-crit(60601,{achID=18598,id=1,u=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424205)(
-h(-73,{lvl=80,u=33,g={
+crit(60601,{achID=18598,id=1,phase=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424205)(
+h(-73,{lvl=80,phase=33,g={
 e(597,{npcID=28586,g={
-crit(63353,{achID=19435,id=4,u=33})}}),
+crit(63353,{achID=19435,id=4,phase=33})}}),
 e(598,{npcID=28587,g={
-crit(63349,{achID=19435,id=2,u=33})}}),
+crit(63349,{achID=19435,id=2,phase=33})}}),
 e(599,{npcID=28546,g={
-crit(63350,{achID=19435,id=3,u=33})}}),
+crit(63350,{achID=19435,id=3,phase=33})}}),
 e(600,{npcID=28923,g={
-crit(63348,{achID=19435,id=1,u=33})}})}}))}}),
+crit(63348,{achID=19435,id=1,phase=33})}})}}))}}),
 inst(276,{awp=30300,coords={
-[118]={{52.3,89.3}}},lvl=78,mapID=185,savedInstanceID=668,u=33,g={
+[118]={{52.3,89.3}}},lvl=78,mapID=185,phase=33,savedInstanceID=668,g={
 h(-12,{
 ach(4518),
 ach(4521)}),
@@ -17090,12 +17090,12 @@ inst(277,{awp=30002,coords={
 h(-12,{
 ach(485,{
 crit(4048,{achID=1288,id=1})}),
-ach(17297,{u=31,g={
+ach(17297,{phase=31,g={
 crit(57774,{achID=17304,awp=30401,id=1})}}),
-ach(18597,{u=32,g={
+ach(18597,{phase=32,g={
 crit(60634,{achID=18614,awp=30402,id=1,r=2}),
 crit(60634,{achID=18688,awp=30402,id=1,r=1})}}),
-ach(19434,{u=33,g={
+ach(19434,{phase=33,g={
 crit(63384,{achID=19439,awp=30403,id=1,r=2}),
 crit(63384,{achID=19440,awp=30403,id=1,r=1})}}),
 ach(496,{
@@ -17180,56 +17180,56 @@ i(37660,{b=1,f=53,lvl=80,q=3}),
 i(37657,{b=1,f=53,lvl=80,q=3}),
 crit(5615,{achID=496,id=1}),
 crit(5615,{achID=1658,id=1})}})}}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_394441_413078_424205)(
-h(-71,{lvl=80,u=31,g={
+h(-71,{lvl=80,phase=31,g={
 e(604,{npcID=27977,g={
 s(201616,39195,{b=1,f=7,loc=43,lvl=80,q=4}),
 s(172338,39199,{b=1,f=1,lvl=80,q=4}),
 s(172337,39198,{b=1,f=7,loc=41,lvl=80,q=4}),
-crit(57749,{achID=17297,id=2,u=31})}}),
+crit(57749,{achID=17297,id=2,phase=31})}}),
 e(605,{npcID=27975,g={
 s(172342,39215,{b=1,f=5,loc=47,lvl=80,q=4}),
 s(201617,39216,{b=1,f=4,loc=45,lvl=80,q=4}),
 s(172335,39196,{b=1,f=5,loc=47,lvl=80,q=4}),
-crit(57752,{achID=17297,id=4,u=31})}}),
+crit(57752,{achID=17297,id=4,phase=31})}}),
 e(606,{npcID=28234,g={
 s(172336,39197,{b=1,f=7,loc=44,lvl=80,q=4}),
 s(172339,39200,{b=1,f=25,lvl=80,q=4}),
 i(39193,{b=1,f=52,lvl=80,q=4}),
-crit(57751,{achID=17297,id=3,u=31})}}),
+crit(57751,{achID=17297,id=3,phase=31})}}),
 e(607,{npcID=27978,g={
 i(43993,{b=1,f=52,lvl=80,q=4}),
 s(173090,40489,{b=1,f=28,lvl=80,q=4}),
 i(44659,{b=1,f=51,q=4}),
-crit(57748,{achID=17297,id=1,u=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_413078_424205)(
-h(-72,{lvl=80,u=32,g={
+crit(57748,{achID=17297,id=1,phase=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_413078_424205)(
+h(-72,{lvl=80,phase=32,g={
 e(604,{npcID=27977,g={
 s(175983,45927,{f=4,loc=44,lvl=80,q=4}),
 s(175963,45892,{b=1,f=23,lvl=80,q=4}),
-crit(60598,{achID=18597,id=2,u=32})}}),
+crit(60598,{achID=18597,id=2,phase=32})}}),
 e(605,{npcID=27975,g={
 s(175966,45895,{b=1,f=6,loc=45,lvl=80,q=4}),
 s(175610,45302,{b=1,f=5,loc=47,lvl=80,q=4}),
-crit(60600,{achID=18597,id=4,u=32})}}),
+crit(60600,{achID=18597,id=4,phase=32})}}),
 e(606,{npcID=28234,g={
 s(201964,46340,{b=1,f=7,loc=44,lvl=80,q=4}),
 s(175965,45894,{b=1,f=4,loc=46,lvl=80,q=4}),
-crit(60599,{achID=18597,id=3,u=32})}}),
+crit(60599,{achID=18597,id=3,phase=32})}}),
 e(607,{npcID=27978,g={
 s(176312,46345,{b=1,f=7,loc=43,lvl=80,q=4}),
 s(176317,46351,{b=1,f=23,lvl=80,q=4}),
 s(176313,46346,{b=1,f=6,loc=47,lvl=80,q=4}),
-crit(60597,{achID=18597,id=1,u=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424205)(
-h(-73,{lvl=80,u=33,g={
+crit(60597,{achID=18597,id=1,phase=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424205)(
+h(-73,{lvl=80,phase=33,g={
 e(604,{npcID=27977,g={
-crit(63345,{achID=19434,id=2,u=33})}}),
+crit(63345,{achID=19434,id=2,phase=33})}}),
 e(605,{npcID=27975,g={
-crit(63347,{achID=19434,id=4,u=33})}}),
+crit(63347,{achID=19434,id=4,phase=33})}}),
 e(606,{npcID=28234,g={
-crit(63346,{achID=19434,id=3,u=33})}}),
+crit(63346,{achID=19434,id=3,phase=33})}}),
 e(607,{npcID=27978,g={
-crit(63344,{achID=19434,id=1,u=33})}})}}))}}),
+crit(63344,{achID=19434,id=1,phase=33})}})}}))}}),
 inst(278,{awp=30300,coords={
-[118]={{52.3,89.3}}},lvl=78,mapID=184,savedInstanceID=658,u=33,g={
+[118]={{52.3,89.3}}},lvl=78,mapID=184,phase=33,savedInstanceID=658,g={
 h(-12,{
 ach(4517),
 ach(4520)}),
@@ -17330,12 +17330,12 @@ inst(279,{awp=30002,coords={
 h(-12,{
 ach(479,{
 crit(4042,{achID=1288,id=1})}),
-ach(17302,{u=31,g={
+ach(17302,{phase=31,g={
 crit(57783,{achID=17304,awp=30401,id=10})}}),
-ach(18601,{u=32,g={
+ach(18601,{phase=32,g={
 crit(60644,{achID=18614,awp=30402,id=10,r=2}),
 crit(60644,{achID=18688,awp=30402,id=10,r=1})}}),
-ach(19438,{u=33,g={
+ach(19438,{phase=33,g={
 crit(63394,{achID=19439,awp=30403,id=10,r=2}),
 crit(63394,{achID=19440,awp=30403,id=10,r=1})}}),
 ach(500,{
@@ -17430,22 +17430,22 @@ s(201572,37690,{b=1,f=7,loc=41,lvl=80,q=3}),
 s(174673,43085,{b=1,f=8,lvl=80,q=4}),
 crit(6434,{achID=500,id=1}),
 crit(6434,{achID=1658,id=1})}})}}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_394444_412867_424210)(
-h(-71,{lvl=80,u=31,g={
+h(-71,{lvl=80,phase=31,g={
 e(611,{npcID=26529,g={
 s(173041,40429,{b=1,f=34,lvl=80,q=4}),
 s(175093,43988,{b=1,f=3,lvl=80,q=4}),
 i(43992,{b=1,f=51,lvl=80,q=4}),
-crit(57771,{achID=17302,id=2,u=31})}}),
+crit(57771,{achID=17302,id=2,phase=31})}}),
 e(612,{npcID=26530,g={
 s(175096,43991,{b=1,f=5,loc=46,lvl=80,q=4}),
 s(201835,43989,{b=1,f=7,loc=45,lvl=80,q=4}),
 s(173040,40428,{b=1,f=7,loc=40,lvl=80,q=4}),
-crit(57773,{achID=17302,id=4,u=31})}}),
+crit(57773,{achID=17302,id=4,phase=31})}}),
 e(613,{npcID=26532,g={
 s(175095,43990,{b=1,f=5,loc=42,lvl=80,q=4}),
 i(40427,{b=1,f=51,lvl=80,q=4}),
 i(40430,{b=1,f=53,lvl=80,q=4}),
-crit(57772,{achID=17302,id=3,u=31})}}),
+crit(57772,{achID=17302,id=3,phase=31})}}),
 n(32273,{
 s(201621,39473,{b=1,f=27,lvl=80,q=4}),
 i(39470,{b=1,f=51,lvl=80,q=4}),
@@ -17456,20 +17456,20 @@ e(614,{npcID=26533,g={
 s(173082,40475,{b=1,f=8,lvl=80,q=4}),
 s(172353,39235,{f=7,loc=43,lvl=80,q=4}),
 i(44658,{b=1,f=51,q=4}),
-crit(57770,{achID=17302,id=1,u=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412867_424210)(
-h(-72,{lvl=80,u=32,g={
+crit(57770,{achID=17302,id=1,phase=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412867_424210)(
+h(-72,{lvl=80,phase=32,g={
 e(611,{npcID=26529,g={
 s(175882,45694,{b=1,f=4,loc=45,lvl=80,q=4}),
 s(176307,46339,{b=1,f=31,lvl=80,q=4}),
-crit(60614,{achID=18601,id=2,u=32})}}),
+crit(60614,{achID=18601,id=2,phase=32})}}),
 e(612,{npcID=26530,g={
 s(175875,45679,{b=1,f=6,loc=44,lvl=80,q=4}),
 s(175883,45695,{b=1,f=28,lvl=80,q=4}),
-crit(60616,{achID=18601,id=4,u=32})}}),
+crit(60616,{achID=18601,id=4,phase=32})}}),
 e(613,{npcID=26532,g={
 s(175878,45685,{b=1,f=20,lvl=80,q=4}),
 i(45675,{b=1,f=52,lvl=80,q=4}),
-crit(60615,{achID=18601,id=3,u=32})}}),
+crit(60615,{achID=18601,id=3,phase=32})}}),
 n(32273,{
 s(175877,45682,{b=1,f=8,lvl=80,q=4}),
 s(175879,45686,{b=1,f=5,loc=42,lvl=80,q=4})}),
@@ -17477,18 +17477,18 @@ e(614,{npcID=26533,g={
 s(176042,46016,{b=1,f=26,lvl=80,q=4}),
 s(176044,46018,{b=1,f=33,lvl=80,q=4}),
 s(176048,46025,{b=1,f=28,lvl=80,q=4}),
-crit(60613,{achID=18601,id=1,u=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424210)(
-h(-73,{lvl=80,u=33,g={
+crit(60613,{achID=18601,id=1,phase=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424210)(
+h(-73,{lvl=80,phase=33,g={
 e(611,{npcID=26529,g={
-crit(63375,{achID=19438,id=2,u=33})}}),
+crit(63375,{achID=19438,id=2,phase=33})}}),
 e(612,{npcID=26530,g={
-crit(63377,{achID=19438,id=4,u=33})}}),
+crit(63377,{achID=19438,id=4,phase=33})}}),
 e(613,{npcID=26532,g={
-crit(63376,{achID=19438,id=3,u=33})}}),
+crit(63376,{achID=19438,id=3,phase=33})}}),
 e(614,{npcID=26533,g={
-crit(63374,{achID=19438,id=1,u=33})}})}}))}}),
+crit(63374,{achID=19438,id=1,phase=33})}})}}))}}),
 inst(280,{awp=30300,coords={
-[118]={{52.3,89.3}}},lvl=78,mapID=183,savedInstanceID=632,u=33,g={
+[118]={{52.3,89.3}}},lvl=78,mapID=183,phase=33,savedInstanceID=632,g={
 h(-12,{
 ach(4516),
 ach(4519)}),
@@ -17572,12 +17572,12 @@ inst(281,{awp=30002,coords={
 h(-12,{
 ach(478,{
 crit(4041,{achID=1288,id=1})}),
-ach(17283,{u=31,g={
+ach(17283,{phase=31,g={
 crit(57784,{achID=17304,awp=30401,id=11})}}),
-ach(18591,{u=32,g={
+ach(18591,{phase=32,g={
 crit(60645,{achID=18614,awp=30402,id=11,r=2}),
 crit(60645,{achID=18688,awp=30402,id=11,r=1})}}),
-ach(19428,{u=33,g={
+ach(19428,{phase=33,g={
 crit(63395,{achID=19439,awp=30403,id=11,r=2}),
 crit(63395,{achID=19440,awp=30403,id=11,r=1})}}),
 ach(490,{
@@ -17679,7 +17679,7 @@ s(171270,37167,{b=1,f=6,loc=47,lvl=80,q=3}),
 i(37166,{b=1,f=53,lvl=80,q=3}),
 crit(5609,{achID=490,id=3}),
 crit(5609,{achID=1658,id=1})}})}}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_394435_412991_424196)(
-h(-71,{lvl=80,u=31,g={
+h(-71,{lvl=80,phase=31,g={
 _.ResolveQuestData({aqd=
 e(833,{npcID=26798}),hqd=
 e(617,{npcID=26796}),g={
@@ -17690,23 +17690,23 @@ e(618,{npcID=26731,g={
 s(172455,39393,{b=1,f=26,lvl=80,q=4}),
 i(39388,{b=1,f=53,lvl=80,q=4}),
 s(172459,39397,{b=1,f=6,loc=41,lvl=80,q=4}),
-crit(57690,{achID=17283,id=4,u=31})}}),
+crit(57690,{achID=17283,id=4,phase=31})}}),
 e(619,{npcID=26763,g={
 i(39407,{b=1,f=52,lvl=80,q=4}),
 s(172458,39396,{b=1,f=4,loc=42,lvl=80,q=4}),
 s(172451,39386,{b=1,f=5,loc=42,lvl=80,q=4}),
-crit(57688,{achID=17283,id=2,u=31})}}),
+crit(57688,{achID=17283,id=2,phase=31})}}),
 e(620,{npcID=26794,g={
 i(39389,{b=1,f=52,lvl=80,q=4}),
 s(172457,39395,{b=1,f=7,loc=40,lvl=80,q=4}),
 s(172454,39391,{b=1,f=6,loc=42,lvl=80,q=4}),
-crit(57687,{achID=17283,id=1,u=31})}}),
+crit(57687,{achID=17283,id=1,phase=31})}}),
 e(621,{npcID=26723,g={
 s(172403,39306,{b=1,f=7,loc=44,lvl=80,q=4}),
 s(172480,39422,{b=1,f=28,lvl=80,q=4}),
 i(44657,{b=1,f=51,q=4}),
-crit(57689,{achID=17283,id=3,u=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412991_424196)(
-h(-72,{lvl=80,u=32,g={
+crit(57689,{achID=17283,id=3,phase=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412991_424196)(
+h(-72,{lvl=80,phase=32,g={
 _.ResolveQuestData({aqd=
 e(833,{npcID=26798}),hqd=
 e(617,{npcID=26796}),g={
@@ -17715,43 +17715,43 @@ s(175894,45713,{b=1,f=27,lvl=80,q=4})}}),
 e(618,{npcID=26731,g={
 s(201922,45865,{b=1,f=4,loc=42,lvl=80,q=4}),
 s(175889,45707,{b=1,f=8,lvl=80,q=4}),
-crit(60578,{achID=18591,id=4,u=32})}}),
+crit(60578,{achID=18591,id=4,phase=32})}}),
 e(619,{npcID=26763,g={
 s(201868,45291,{f=4,loc=43,lvl=80,q=4}),
 i(45292,{b=1,f=53,lvl=80,q=4}),
-crit(60576,{achID=18591,id=2,u=32})}}),
+crit(60576,{achID=18591,id=2,phase=32})}}),
 e(620,{npcID=26794,g={
 s(175598,45287,{b=1,f=25,lvl=80,q=4}),
 s(175599,45288,{b=1,f=6,loc=42,lvl=80,q=4}),
-crit(60575,{achID=18591,id=1,u=32})}}),
+crit(60575,{achID=18591,id=1,phase=32})}}),
 e(621,{npcID=26723,g={
 s(175596,45283,{b=1,f=7,loc=43,lvl=80,q=4}),
 s(175595,45282,{b=1,f=24,lvl=80,q=4}),
 i(45286,{b=1,f=53,lvl=80,q=4}),
-crit(60577,{achID=18591,id=3,u=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424196)(
-h(-73,{lvl=80,u=33,g={
+crit(60577,{achID=18591,id=3,phase=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424196)(
+h(-73,{lvl=80,phase=33,g={
 _.ResolveQuestData({aqd=
 e(833,{npcID=26798}),hqd=
 e(617,{npcID=26796})}),
 e(618,{npcID=26731,g={
-crit(63325,{achID=19428,id=4,u=33})}}),
+crit(63325,{achID=19428,id=4,phase=33})}}),
 e(619,{npcID=26763,g={
-crit(63323,{achID=19428,id=2,u=33})}}),
+crit(63323,{achID=19428,id=2,phase=33})}}),
 e(620,{npcID=26794,g={
-crit(63322,{achID=19428,id=1,u=33})}}),
+crit(63322,{achID=19428,id=1,phase=33})}}),
 e(621,{npcID=26723,g={
-crit(63324,{achID=19428,id=3,u=33})}})}}))}}),
+crit(63324,{achID=19428,id=3,phase=33})}})}}))}}),
 inst(282,{awp=30002,coords={
 [114]={{28.1,28.1}}},lvl=77,mapID=142,maps={143,144,145,146},savedInstanceID=578,g={
 h(-12,{
 ach(487,{
 crit(4050,{achID=1288,id=1})}),
-ach(17300,{u=31,g={
+ach(17300,{phase=31,g={
 crit(57776,{achID=17304,awp=30401,id=3})}}),
-ach(18599,{u=32,g={
+ach(18599,{phase=32,g={
 crit(60637,{achID=18614,awp=30402,id=3,r=2}),
 crit(60637,{achID=18688,awp=30402,id=3,r=1})}}),
-ach(19436,{u=33,g={
+ach(19436,{phase=33,g={
 crit(63386,{achID=19439,awp=30403,id=3,r=2}),
 crit(63386,{achID=19440,awp=30403,id=3,r=1})}}),
 ach(498,{
@@ -17859,26 +17859,26 @@ s(171388,37361,{b=1,f=4,loc=43,lvl=80,q=4}),
 s(201560,37363,{b=1,f=7,loc=44,lvl=80,q=4}),
 s(171389,37362,{b=1,f=7,loc=46,lvl=80,q=4}),
 s(201556,37292,{b=1,f=7,loc=46,lvl=80,q=3}),
-i(52676,{b=1,description="This bag is only available if you queue for the instance using the Random Dungeon Finder. It will not drop in an explicitly formed group or by using the Select Instance interface.",q=2,u=33,g={
+i(52676,{b=1,description="This bag is only available if you queue for the instance using the Random Dungeon Finder. It will not drop in an explicitly formed group or by using the Select Instance interface.",phase=33,q=2,g={
 mnt(59568,{b=1,itemID=43953,lvl=70,q=4})}}),
 crit(5617,{achID=498,id=1}),
 crit(5617,{achID=1658,id=1})}})}}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_394435_412991_424196)(
-h(-71,{lvl=80,u=31,g={
+h(-71,{lvl=80,phase=31,g={
 e(622,{npcID=27654,g={
 s(172461,39399,{b=1,f=5,loc=40,lvl=80,q=4}),
 s(172465,39404,{b=1,f=3,lvl=80,q=4}),
 s(172468,39408,{b=1,f=4,loc=46,lvl=80,q=4}),
-crit(57763,{achID=17300,id=2,u=31})}}),
+crit(57763,{achID=17300,id=2,phase=31})}}),
 e(623,{npcID=27447,g={
 i(39401,{b=1,f=52,lvl=80,q=4}),
 s(172469,39409,{b=1,f=4,loc=40,lvl=80,q=4}),
 s(172466,39405,{b=1,f=6,loc=40,lvl=80,q=4}),
-crit(57765,{achID=17300,id=4,u=31})}}),
+crit(57765,{achID=17300,id=4,phase=31})}}),
 e(624,{npcID=27655,g={
 s(172464,39403,{b=1,f=7,loc=40,lvl=80,q=4}),
 s(172408,39311,{b=1,f=1,lvl=80,q=4}),
 s(172475,39415,{b=1,f=3,lvl=80,q=4}),
-crit(57762,{achID=17300,id=1,u=31})}}),
+crit(57762,{achID=17300,id=1,phase=31})}}),
 e(625,{npcID=27656,g={
 i(44658,{b=1,f=51,q=4}),
 i(44660,{b=1,f=51,q=4}),
@@ -17886,34 +17886,34 @@ i(44659,{b=1,f=51,q=4}),
 i(44657,{b=1,f=51,q=4}),
 s(173097,40497,{b=1,f=29,lvl=80,q=4}),
 s(172407,39310,{f=4,loc=41,lvl=80,q=4}),
-crit(57764,{achID=17300,id=3,u=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412991_424196)(
-h(-72,{lvl=80,u=32,g={
+crit(57764,{achID=17300,id=3,phase=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412991_424196)(
+h(-72,{lvl=80,phase=32,g={
 e(622,{npcID=27654,g={
 s(176035,45997,{b=1,f=7,loc=44,lvl=80,q=4}),
 s(176034,45996,{b=1,f=29,lvl=80,q=4}),
-crit(60606,{achID=18599,id=2,u=32})}}),
+crit(60606,{achID=18599,id=2,phase=32})}}),
 e(623,{npcID=27447,g={
 i(46015,{b=1,f=51,lvl=80,q=4}),
 s(176041,46014,{b=1,f=3,lvl=80,q=4}),
-crit(60608,{achID=18599,id=4,u=32})}}),
+crit(60608,{achID=18599,id=4,phase=32})}}),
 e(624,{npcID=27655,g={
 s(176040,46013,{b=1,f=4,loc=41,lvl=80,q=4}),
 s(176038,46011,{b=1,f=20,lvl=80,q=4}),
-crit(60605,{achID=18599,id=1,u=32})}}),
+crit(60605,{achID=18599,id=1,phase=32})}}),
 e(625,{npcID=27656,g={
 s(175952,45872,{b=1,f=32,lvl=80,q=4}),
 s(176039,46012,{b=1,f=4,loc=42,lvl=80,q=4}),
 s(175953,45873,{b=1,f=3,lvl=80,q=4}),
-crit(60607,{achID=18599,id=3,u=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424196)(
-h(-73,{lvl=80,u=33,g={
+crit(60607,{achID=18599,id=3,phase=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424196)(
+h(-73,{lvl=80,phase=33,g={
 e(622,{npcID=27654,g={
-crit(63358,{achID=19436,id=2,u=33})}}),
+crit(63358,{achID=19436,id=2,phase=33})}}),
 e(623,{npcID=27447,g={
-crit(63361,{achID=19436,id=4,u=33})}}),
+crit(63361,{achID=19436,id=4,phase=33})}}),
 e(624,{npcID=27655,g={
-crit(63356,{achID=19436,id=1,u=33})}}),
+crit(63356,{achID=19436,id=1,phase=33})}}),
 e(625,{npcID=27656,g={
-crit(63360,{achID=19436,id=3,u=33})}})}}))}}),
+crit(63360,{achID=19436,id=3,phase=33})}})}}))}}),
 inst(283,{awp=30002,coords={
 [125]={{66.6,67.9}}},description="The bosses are random on all difficulties.",lvl=75,mapID=168,savedInstanceID=608,g={
 h(-12,{
@@ -18021,7 +18021,7 @@ i(37873,{b=1,f=53,lvl=80,q=3}),
 s(171713,37875,{b=1,f=6,loc=41,lvl=80,q=3}),
 s(171715,37883,{b=1,f=28,lvl=80,q=4}),
 crit(5613,{achID=1658,id=1})}})}}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_394435_412991_424196)(
-h(-71,{lvl=80,u=31,g={
+h(-71,{lvl=80,phase=31,g={
 e(626,{npcID=29315,g={
 s(172396,39293,{b=1,f=7,loc=46,lvl=80,q=4}),
 s(172382,39275,{b=1,f=5,loc=44,lvl=80,q=4}),
@@ -18052,7 +18052,7 @@ crit(57785,{achID=17304,awp=30401,id=12})}),
 s(172479,39420,{b=1,f=20,lvl=80,q=4}),
 s(173111,40511,{b=1,f=7,loc=41,lvl=80,q=4}),
 s(172484,39426,{b=1,f=27,lvl=80,q=4})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412991_424196)(
-h(-72,{lvl=80,u=32,g={
+h(-72,{lvl=80,phase=32,g={
 h(-19,{crs={29266,29312,29313,29314,29315,29316},g={
 s(175993,45941,{b=1,f=6,loc=42,lvl=80,q=4}),
 s(175987,45935,{b=1,f=7,loc=40,lvl=80,q=4}),
@@ -18075,25 +18075,25 @@ crit(60646,{achID=18688,awp=30402,id=12,r=1})}),
 s(176037,46009,{f=5,loc=43,lvl=80,q=4}),
 i(46008,{b=1,f=51,lvl=80,q=4}),
 i(46010,{b=1,f=52,lvl=80,q=4})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424196)(
-h(-73,{lvl=80,u=33,g={
+h(-73,{lvl=80,phase=33,g={
 e(632,{npcID=31134,g={
 ach(19432,{
 crit(63396,{achID=19439,awp=30403,id=12,r=2}),
 crit(63396,{achID=19440,awp=30403,id=12,r=1})})}})}}))}}),
 inst(284,{awp=30200,coords={
-[118]={{74,20.9}}},lvl=75,mapID=171,savedInstanceID=650,u=32,g={
+[118]={{74,20.9}}},lvl=75,mapID=171,phase=32,savedInstanceID=650,g={
 h(-12,{
 ach(4296,{providers={{"s",68663}},r=2}),
 ach(4298,{providers={{"s",68663}},r=2}),
 ach(3778,{providers={{"s",68663}},r=1}),
 ach(4297,{providers={{"s",68663}},r=1}),
-ach(18677,{providers={{"s",68663}},r=2,u=32,g={
+ach(18677,{phase=32,providers={{"s",68663}},r=2,g={
 crit(60777,{achID=18614,awp=30402,id=13,r=2})}}),
-ach(18678,{providers={{"s",68663}},r=1,u=32,g={
+ach(18678,{phase=32,providers={{"s",68663}},r=1,g={
 crit(60778,{achID=18688,awp=30402,id=13,r=1})}}),
-ach(19426,{providers={{"s",68663}},r=2,u=33,g={
+ach(19426,{phase=33,providers={{"s",68663}},r=2,g={
 crit(63398,{achID=19439,awp=30403,id=13,r=2})}}),
-ach(19425,{providers={{"s",68663}},r=1,u=33,g={
+ach(19425,{phase=33,providers={{"s",68663}},r=1,g={
 crit(63401,{achID=19440,awp=30403,id=13,r=1})}})}),
 h(-45,{
 q(29851,{awp=50004,description="Blizzard broke auto complete quests, so until they fix that system, this can't be turned in.",isBounty=1,qgs={34996},u=1})}),
@@ -18228,7 +18228,7 @@ s(176805,47568,{b=1,f=31,lvl=80,q=4}),
 s(202050,47565,{b=1,f=7,loc=43,lvl=80,q=4}),
 crit(12553,{achID=4297,r=1}),
 crit(12553,{achID=4298,r=2})}})}}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_413573_424211)(
-h(-72,{lvl=80,u=32,g={
+h(-72,{lvl=80,g={
 e(634,{crs={34657,34701,34702,34703,34705,35569,35570,35571,35572,35617},g={
 s(176049,46028,{b=1,f=7,loc=40,lvl=80,q=4}),
 s(176047,46024,{b=1,f=20,lvl=80,q=4})}}),
@@ -18244,7 +18244,7 @@ s(176051,46031,{b=1,f=21,lvl=80,q=4}),
 s(176050,46030,{b=1,f=4,loc=47,lvl=80,q=4}),
 crit(60621,{achID=18677,r=2}),
 crit(60621,{achID=18678,r=1})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424211)(
-h(-73,{lvl=80,u=33,g={
+h(-73,{lvl=80,phase=33,g={
 e(637,{npcID=35451,g={
 crit(63310,{achID=19425,r=1}),
 crit(63310,{achID=19426,r=2})}})}}))}}),
@@ -18253,12 +18253,12 @@ inst(285,{awp=30002,coords={
 h(-12,{
 ach(477,{
 crit(4040,{achID=1288,id=1})}),
-ach(17213,{u=31,g={
+ach(17213,{phase=31,g={
 crit(57777,{achID=17304,awp=30401,id=4})}}),
-ach(18590,{u=32,g={
+ach(18590,{phase=32,g={
 crit(60638,{achID=18614,awp=30402,id=4,r=2}),
 crit(60638,{achID=18688,awp=30402,id=4,r=1})}}),
-ach(19427,{u=33,g={
+ach(19427,{phase=33,g={
 crit(63387,{achID=19439,awp=30403,id=4,r=2}),
 crit(63387,{achID=19440,awp=30403,id=4,r=1})}}),
 ach(489,{
@@ -18372,57 +18372,57 @@ i(37192,{b=1,f=52,lvl=80,q=4}),
 i(37186,{b=1,f=52,lvl=80,q=3}),
 crit(5608,{achID=489,id=1}),
 crit(5608,{achID=1658,id=1})}})}}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_392430_412770_424194)(
-h(-71,{lvl=80,u=31,g={
+h(-71,{lvl=80,phase=31,g={
 e(638,{npcID=23953,g={
 s(172423,39345,{b=1,f=7,loc=45,lvl=80,q=4}),
 s(172444,39379,{b=1,f=6,loc=45,lvl=80,q=4}),
 i(39392,{b=1,f=51,lvl=80,q=4}),
-crit(57666,{achID=17213,id=2,u=31})}}),
+crit(57666,{achID=17213,id=2,phase=31})}}),
 e(639,{crs={24200,24201},g={
 s(172406,39309,{b=1,f=4,loc=46,lvl=80,q=4}),
 s(172422,39344,{b=1,f=25,lvl=80,q=4}),
 s(172434,39369,{b=1,f=7,loc=47,lvl=80,q=4}),
-crit(57665,{achID=17213,id=1,u=31}),
-crit(57667,{achID=17213,id=3,u=31})}}),
+crit(57665,{achID=17213,id=1,phase=31}),
+crit(57667,{achID=17213,id=3,phase=31})}}),
 e(640,{npcID=23954,g={
 s(173119,40519,{b=1,f=5,loc=47,lvl=80,q=4}),
 i(40474,{f=52,lvl=80,q=4}),
 s(172482,39424,{b=1,f=20,lvl=80,q=4}),
-crit(57668,{achID=17213,id=4,u=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412770_424194)(
-h(-72,{lvl=80,u=32,g={
+crit(57668,{achID=17213,id=4,phase=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412770_424194)(
+h(-72,{lvl=80,phase=32,g={
 e(638,{npcID=23953,g={
 s(175635,45333,{b=1,f=6,loc=45,lvl=80,q=4}),
 s(175680,45378,{b=1,f=5,loc=47,lvl=80,q=4}),
-crit(60571,{achID=18590,id=2,u=32})}}),
+crit(60571,{achID=18590,id=2,phase=32})}}),
 e(639,{crs={24200,24201},g={
 s(175627,45322,{f=3,lvl=80,q=4}),
 s(175631,45329,{b=1,f=6,loc=40,lvl=80,q=4}),
-crit(60570,{achID=18590,id=1,u=32}),
-crit(60572,{achID=18590,id=3,u=32})}}),
+crit(60570,{achID=18590,id=1,phase=32}),
+crit(60572,{achID=18590,id=3,phase=32})}}),
 e(640,{npcID=23954,g={
 s(201871,45330,{b=1,f=7,loc=47,lvl=80,q=4}),
 i(45418,{b=1,f=52,lvl=80,q=4}),
 s(175628,45324,{b=1,f=5,loc=46,lvl=80,q=4}),
-crit(60573,{achID=18590,id=4,u=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424194)(
-h(-73,{lvl=80,u=33,g={
+crit(60573,{achID=18590,id=4,phase=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424194)(
+h(-73,{lvl=80,phase=33,g={
 e(638,{npcID=23953,g={
-crit(63319,{achID=19427,id=2,u=33})}}),
+crit(63319,{achID=19427,id=2,phase=33})}}),
 e(639,{crs={24200,24201},g={
-crit(63318,{achID=19427,id=1,u=33}),
-crit(63321,{achID=19427,id=3,u=33})}}),
+crit(63318,{achID=19427,id=1,phase=33}),
+crit(63321,{achID=19427,id=3,phase=33})}}),
 e(640,{npcID=23954,g={
-crit(63320,{achID=19427,id=4,u=33})}})}}))}}),
+crit(63320,{achID=19427,id=4,phase=33})}})}}))}}),
 inst(286,{awp=30002,coords={
 [117]={{57,47}}},lvl=75,mapID=136,maps={137},savedInstanceID=575,g={
 h(-12,{
 ach(488,{
 crit(4051,{achID=1288,id=1})}),
-ach(17301,{u=31,g={
+ach(17301,{phase=31,g={
 crit(57780,{achID=17304,awp=30401,id=7})}}),
-ach(18600,{u=32,g={
+ach(18600,{phase=32,g={
 crit(60641,{achID=18614,awp=30402,id=7,r=2}),
 crit(60641,{achID=18688,awp=30402,id=7,r=1})}}),
-ach(19437,{u=33,g={
+ach(19437,{phase=33,g={
 crit(63391,{achID=19439,awp=30403,id=7,r=2}),
 crit(63391,{achID=19440,awp=30403,id=7,r=1})}}),
 ach(499,{
@@ -18526,55 +18526,55 @@ s(171429,37407,{b=1,f=6,loc=45,lvl=80,q=4}),
 i(37390,{b=1,f=53,lvl=80,q=3}),
 crit(5618,{achID=499,id=1}),
 crit(5618,{achID=1658,id=1})}})}}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_392430_412770_424194)(
-h(-71,{lvl=80,u=31,g={
+h(-71,{lvl=80,phase=31,g={
 e(641,{npcID=26668,g={
 s(172399,39296,{b=1,f=32,lvl=80,q=4}),
 s(172405,39308,{b=1,f=5,loc=45,lvl=80,q=4}),
 s(172402,39299,{b=1,f=5,loc=44,lvl=80,q=4}),
-crit(57767,{achID=17301,id=2,u=31})}}),
+crit(57767,{achID=17301,id=2,phase=31})}}),
 e(642,{npcID=26687,g={
 s(172389,39284,{b=1,f=4,loc=41,lvl=80,q=4}),
 s(172401,39298,{b=1,f=7,loc=45,lvl=80,q=4}),
 s(172398,39295,{b=1,f=4,loc=40,lvl=80,q=4}),
-crit(57769,{achID=17301,id=4,u=31})}}),
+crit(57769,{achID=17301,id=4,phase=31})}}),
 e(643,{npcID=26693,g={
 s(172397,39294,{b=1,f=6,loc=40,lvl=80,q=4}),
 s(172400,39297,{b=1,f=3,lvl=80,q=4}),
 i(39472,{f=51,lvl=80,q=4}),
-crit(57768,{achID=17301,id=3,u=31})}}),
+crit(57768,{achID=17301,id=3,phase=31})}}),
 e(644,{npcID=26861,g={
 i(39421,{b=1,f=51,lvl=80,q=4}),
 s(172481,39423,{b=1,f=23,lvl=80,q=4}),
 s(172333,39194,{f=6,loc=44,lvl=80,q=4}),
-crit(57766,{achID=17301,id=1,u=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412770_424194)(
-h(-72,{lvl=80,u=32,g={
+crit(57766,{achID=17301,id=1,phase=31})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412770_424194)(
+h(-72,{lvl=80,phase=32,g={
 e(641,{npcID=26668,g={
 s(175633,45331,{b=1,f=25,lvl=80,q=4}),
 s(175724,45423,{b=1,f=4,loc=43,lvl=80,q=4}),
-crit(60610,{achID=18600,id=2,u=32})}}),
+crit(60610,{achID=18600,id=2,phase=32})}}),
 e(642,{npcID=26687,g={
 s(175634,45332,{b=1,f=20,lvl=80,q=4}),
 s(201919,45708,{b=1,f=7,loc=46,lvl=80,q=4}),
-crit(60612,{achID=18600,id=4,u=32})}}),
+crit(60612,{achID=18600,id=4,phase=32})}}),
 e(643,{npcID=26693,g={
 s(175946,45864,{b=1,f=5,loc=40,lvl=80,q=4}),
 s(175893,45712,{b=1,f=7,loc=42,lvl=80,q=4}),
-crit(60611,{achID=18600,id=3,u=32})}}),
+crit(60611,{achID=18600,id=3,phase=32})}}),
 e(644,{npcID=26861,g={
 s(175892,45711,{b=1,f=6,loc=41,lvl=80,q=4}),
 i(45866,{b=1,f=53,lvl=80,q=4}),
 s(175891,45709,{f=5,loc=45,lvl=80,q=4}),
-crit(60609,{achID=18600,id=1,u=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424194)(
-h(-73,{lvl=80,u=33,g={
+crit(60609,{achID=18600,id=1,phase=32})}})}})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_424194)(
+h(-73,{lvl=80,phase=33,g={
 e(641,{npcID=26668,g={
-crit(63367,{achID=19437,id=2,u=33})}}),
+crit(63367,{achID=19437,id=2,phase=33})}}),
 e(642,{npcID=26687,g={
-crit(63371,{achID=19437,id=4,u=33})}}),
+crit(63371,{achID=19437,id=4,phase=33})}}),
 e(643,{npcID=26693,g={
-crit(63369,{achID=19437,id=3,u=33})}}),
+crit(63369,{achID=19437,id=3,phase=33})}}),
 e(644,{npcID=26861,g={
-crit(63366,{achID=19437,id=1,u=33})}})}}))}})}}),
-x(4,{awp=40003,u=40,g={
+crit(63366,{achID=19437,id=1,phase=33})}})}}))}})}}),
+x(4,{awp=40003,phase=40,g={
 h(-12,{
 ach(4844,{
 crit(13554,{achID=4845,id=1})}),
@@ -18584,7 +18584,7 @@ ach(4845,{
 mnt(88331,{b=1,itemID=62900,lvl=70,q=4})}),
 ach(4853,{
 mnt(88335,{b=1,itemID=62901,lvl=70,q=4})})}),
-h(-61,{isRaid=1,lvl=85,u=40,g={
+h(-61,{isRaid=1,lvl=85,g={
 h(-19,{crs={50005,50009,50056,50061,50063,50089},g={
 s(211021,67132,{f=4,loc=44,lvl=85,q=4}),
 s(211033,67148,{f=6,loc=46,lvl=85,q=4}),
@@ -18606,33 +18606,33 @@ i(67129,{f=52,lvl=85,q=4}),
 i(67130,{f=51,lvl=85,q=4})}}),
 n(50063,{coords={
 [249]={{38,60.6}}},isRaid=1,g={
-s(212429,69877,{awp=40100,f=5,loc=45,lvl=85,q=4,u=4001}),
-s(211113,67240,{f=5,loc=45,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
+s(212429,69877,{awp=40100,f=5,loc=45,lvl=85,phase=4001,q=4}),
+s(211113,67240,{f=5,loc=45,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
 n(50056,{coords={
 [198]={{37.6,73.4},{40.4,81.8}}},isRaid=1,g={
-s(212419,69842,{awp=40100,f=7,loc=45,lvl=85,q=4,u=4001}),
-s(211108,67235,{f=7,loc=45,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
+s(212419,69842,{awp=40100,f=7,loc=45,lvl=85,phase=4001,q=4}),
+s(211108,67235,{f=7,loc=45,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
 n(50089,{coords={
 [241]={{51,7.6},{52.2,10.6},{56.6,11},{57.2,7.8},{59.8,6.8}}},isRaid=1,g={
-s(212421,69844,{awp=40100,f=20,lvl=85,q=4,u=4001}),
-s(211118,67246,{f=20,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
+s(212421,69844,{awp=40100,f=20,lvl=85,phase=4001,q=4}),
+s(211118,67246,{f=20,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
 n(50009,{coords={
 [204]={{63.4,32.6},{65.8,20.4},{71.8,18.4},{75.6,36.6},{77,25.4}}},isRaid=1,g={
-s(212420,69843,{awp=40100,f=29,lvl=85,q=4,u=4001}),
-s(211036,67153,{f=29,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
+s(212420,69843,{awp=40100,f=29,lvl=85,phase=4001,q=4}),
+s(211036,67153,{f=29,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
 n(50005,{coords={
 [204]={{39.4,71.9},{40.4,73.8},{41,76.6},{41.8,73.4},{42.2,76}},
 [205]={{38.5,67},{46.2,48.6},{57.2,80.8},{66.4,44.2}}},isRaid=1,maps={203},g={
 mnt(98718,{itemID=67151,lvl=78,q=4})}}),
 n(50061,{coords={
 [207]={{40.6,52.4},{45.4,39},{45.4,63.8},{56.6,42.6},{57.2,59}}},isRaid=1,g={
-s(212428,69876,{awp=40100,f=6,loc=44,lvl=85,q=4,u=4001}),
-s(211112,67239,{f=6,loc=44,lvl=84,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=40 t.rwp=40100 end	end,q=3,rwp=40100,u=2})}})}}),
+s(212428,69876,{awp=40100,f=6,loc=44,lvl=85,phase=4001,q=4}),
+s(211112,67239,{f=6,loc=44,lvl=84,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40100 end	end,q=3,rwp=40100,u=2})}})}}),
 inst(75,{coords={
-[2340]={{46.1,47.9}}},isLockoutShared=1,isRaid=1,lvl=85,mapID=282,savedInstanceID=757,u=40,g={
+[2340]={{46.1,47.9}}},isLockoutShared=1,isRaid=1,lvl=85,mapID=282,savedInstanceID=757,g={
 h(-12,{
-gach(5425,{u=42})}),
-e(139,{npcID=47120,u=40,g={
+gach(5425,{phase=42})}),
+e(139,{npcID=47120,g={
 ach(5416,{pvp=1,g={
 crit(15976,{achID=5489,id=1,pvp=1,r=2}),
 crit(15976,{achID=5490,id=1,pvp=1,r=1})}}),
@@ -18773,7 +18773,7 @@ i(60806,{b=1,f=53,lvl=85,q=4,r=1}),
 i(60800,{b=1,f=53,lvl=85,q=4,r=2}),
 i(60807,{b=1,f=53,lvl=85,q=4,r=1}),
 gcat(15480,{achID=5425})}}),
-e(339,{awp=40300,npcID=55869,u=42,g={
+e(339,{awp=40300,npcID=55869,phase=42,g={
 ach(6108),
 i(73493,{b=1,c={1,2,6},f=51,lvl=85,q=4}),
 i(73492,{b=1,c={1,2,6},f=51,lvl=85,q=4}),
@@ -18927,7 +18927,7 @@ i(73534,{b=1,f=53,lvl=85,q=4,r=1}),
 i(73536,{b=1,f=53,lvl=85,q=4,r=2}),
 i(73537,{b=1,f=53,lvl=85,q=4,r=1}),
 gcat(18479,{achID=5425})}}),
-e(140,{awp=40200,npcID=52363,u=41,g={
+e(140,{awp=40200,npcID=52363,phase=41,g={
 ach(6045),
 i(70382,{b=1,c={1,2,6},f=51,lvl=85,q=4}),
 i(70381,{b=1,c={1,2,6},f=51,lvl=85,q=4}),
@@ -19082,7 +19082,7 @@ i(70392,{b=1,f=53,lvl=85,q=4,r=2}),
 i(70395,{b=1,f=53,lvl=85,q=4,r=1}),
 gcat(18478,{achID=5425})}})}}),
 inst(73,{coords={
-[1415]={{47.54,68.93}}},isLockoutShared=1,isRaid=1,lvl=85,maps={285,286},savedInstanceID=669,u=40,g={
+[1415]={{47.54,68.93}}},isLockoutShared=1,isRaid=1,lvl=85,maps={285,286},savedInstanceID=669,g={
 h(-12,{
 ach(4842,{
 crit(16059,{achID=5506,id=1})}),
@@ -19318,7 +19318,7 @@ s(209458,65022,{b=1,f=7,loc=45,lvl=85,q=4}),
 s(209488,65057,{b=1,f=5,loc=45,lvl=85,q=4}),
 i(65026,{b=1,f=53,lvl=85,q=4})}})}})}}),
 inst(72,{coords={
-[241]={{34.2,77.7}}},isLockoutShared=1,isRaid=1,lvl=85,mapID=294,maps={295,296},savedInstanceID=671,u=40,g={
+[241]={{34.2,77.7}}},isLockoutShared=1,isRaid=1,lvl=85,mapID=294,maps={295,296},savedInstanceID=671,g={
 h(-12,{
 ach(4850,{
 crit(16061,{achID=5506,id=1})}),
@@ -19498,7 +19498,7 @@ s(206823,60229,{b=1,f=7,loc=47,lvl=85,q=4}),
 i(60226,{b=1,f=52,lvl=85,q=4}),
 i(60233,{b=1,f=53,lvl=85,q=4})}})}})}}),
 inst(74,{coords={
-[249]={{38.37,80.63}}},isLockoutShared=1,isRaid=1,lvl=85,mapID=328,savedInstanceID=754,u=40,g={
+[249]={{38.37,80.63}}},isLockoutShared=1,isRaid=1,lvl=85,mapID=328,savedInstanceID=754,g={
 h(-12,{
 ach(4851,{
 crit(16060,{achID=5506,id=1})}),
@@ -19602,7 +19602,7 @@ s(209757,65380,{b=1,f=7,loc=46,lvl=85,q=4}),
 s(209758,65381,{b=1,f=5,loc=46,lvl=85,q=4}),
 i(65382,{b=1,f=52,lvl=85,q=4})}})}})}}),
 inst(78,{awp=40200,coords={
-[198]={{47.3,78.1}}},isRaid=1,lvl=85,maps={367,368,369},savedInstanceID=720,u=41,g={
+[198]={{47.3,78.1}}},isRaid=1,lvl=85,maps={367,368,369},phase=41,savedInstanceID=720,g={
 ah(71086,{c={5,7,8,9,11},isRaid=1,lvl=85,type="i",g={
 q(29453,{description="This quest is auto accepted upon killing a Molten Lord.",isBreadcrumb=1,maps={1453},nextQuests={29132},qgs={53115},r=2}),
 q(29452,{description="This quest is auto accepted upon killing a Molten Lord.",isBreadcrumb=1,maps={1454},nextQuests={29129},qgs={53115},r=1}),
@@ -20064,7 +20064,7 @@ i(69110,{b=1,f=53,lvl=85,q=4}),
 i(69167,{b=1,f=53,lvl=85,q=4})}})}})}}),
 inst(187,{awp=40300,coords={
 [75]={{61.9,27.2}},
-[1446]={{64.7,49.9}}},isLockoutShared=1,isRaid=1,lvl=85,mapID=409,maps={410,411,412,413,414,415},savedInstanceID=967,u=42,g={
+[1446]={{64.7,49.9}}},isLockoutShared=1,isRaid=1,lvl=85,mapID=409,maps={410,411,412,413,414,415},phase=42,savedInstanceID=967,g={
 ah(6181,{c={4},isRaid=1,lvl=85,type="a",g={
 q(29802,{c={4},coords={
 [409]={{50.2,59.6}}},cost={{"i",74752,1}},description="Yes, you actually have to pay the 10 000 gold to progress on this questline.",qgs={55476},sourceQuests={29801},g={
@@ -20475,7 +20475,7 @@ n(53879,{sharedDescription="For the encounter Spine of Deathwing:\n\nKill the Co
 n(55891),
 n(55870)}})}}),
 inst(66,{coords={
-[34]={{71.77,52.98}}},mapID=283,maps={284},savedInstanceID=645,u=40,g={
+[34]={{71.77,52.98}}},mapID=283,maps={284},savedInstanceID=645,g={
 h(-45,{
 q(28741,{qgs={49476},sourceQuests={28738},g={
 s(210904,66886,{b=1,f=5,loc=42,q=3}),
@@ -20581,13 +20581,13 @@ s(204494,56315,{b=1,f=3,lvl=85,q=3}),
 s(204497,56321,{b=1,f=5,loc=40,lvl=85,q=3}),
 i(56320,{b=1,f=53,lvl=85,q=3}),
 i(56316,{b=1,lvl=85,q=3,rwp=50004})}})}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_470595)(
-h(-66,{u=41,g={
+h(-66,{phase=41,g={
 e(109,{npcID=39705,g={
 ach(41139,{
 crit(71205,{achID=41148,awp=40200,id=1})})}})}}))}}),
 inst(184,{awp=40300,coords={
 [75]={{57.7,30.4}},
-[1446]={{64.7,49.9}}},description="Consists of three bosses. The first boss can either be Echo of Baine in the Obsidian Dragonshrine, or Echo of Sylvanas in the Ruby Dragonshrine. The second boss is either Echo of Jaina in the Azure Dragonshrine, or Echo of Tyrande in the Emerald Dragonshrine. Murozond is always the last boss.",mapID=401,maps={402,403,404,405,406},savedInstanceID=938,u=42,g={
+[1446]={{64.7,49.9}}},description="Consists of three bosses. The first boss can either be Echo of Baine in the Obsidian Dragonshrine, or Echo of Sylvanas in the Ruby Dragonshrine. The second boss is either Echo of Jaina in the Azure Dragonshrine, or Echo of Tyrande in the Emerald Dragonshrine. Murozond is always the last boss.",mapID=401,maps={402,403,404,405,406},phase=42,savedInstanceID=938,g={
 h(-45,{
 q(30097,{qgs={57864},g={
 s(214175,72871,{b=1,f=27,lvl=85,q=4}),
@@ -20649,7 +20649,7 @@ s(214124,72817,{b=1,f=7,loc=46,lvl=85,q=4}),
 s(214131,72824,{b=1,f=5,loc=42,lvl=85,q=4}),
 s(214130,72823,{b=1,f=5,loc=40,lvl=85,q=4})}})})}}),
 inst(71,{coords={
-[241]={{19.2,54.2}}},lore="Don't be fooled by Grim Batol's humble exterior; many of this mountain fortress's desecrated chambers are buried deep in the Twilight Highlands. Once the stronghold of the Wildhammer dwarves, and later seized by orcs as a prison for Alexstrasza, the city is now in the clutches of the Twilight's Hammer cult. Heroes brave enough to infiltrate the brooding depths of the stronghold must confront Deathwing's agents to thwart the mysterious evil within.",mapID=293,savedInstanceID=670,u=40,g={
+[241]={{19.2,54.2}}},lore="Don't be fooled by Grim Batol's humble exterior; many of this mountain fortress's desecrated chambers are buried deep in the Twilight Highlands. Once the stronghold of the Wildhammer dwarves, and later seized by orcs as a prison for Alexstrasza, the city is now in the clutches of the Twilight's Hammer cult. Heroes brave enough to infiltrate the brooding depths of the stronghold must confront Deathwing's agents to thwart the mysterious evil within.",mapID=293,savedInstanceID=670,g={
 h(-45,{
 q(28854,{coords={
 [293]={{50,50}}},qgs={50387},g={
@@ -20737,12 +20737,12 @@ i(56458,{b=1,f=53,lvl=85,q=3}),
 s(204590,56461,{b=1,f=28,lvl=85,q=3}),
 s(204586,56455,{b=1,f=5,loc=42,lvl=85,q=3}),
 s(204587,56456,{b=1,f=24,lvl=85,q=3})}})}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_470595)(
-h(-66,{u=41,g={
+h(-66,{phase=41,g={
 e(131,{npcID=39625,g={
 ach(41143,{
 crit(71213,{achID=41148,awp=40200,id=9})})}})}}))}}),
 inst(70,{coords={
-[249]={{71.81,52.16}}},mapID=297,maps={298,299},savedInstanceID=644,u=40,g={
+[249]={{71.81,52.16}}},mapID=297,maps={298,299},savedInstanceID=644,g={
 h(-45,{
 q(28746,{qgs={39908},sourceQuests={28654},g={
 s(210924,66913,{b=1,f=7,loc=44,q=3}),
@@ -20869,13 +20869,13 @@ s(204568,56429,{b=1,f=5,loc=45,lvl=85,q=3}),
 i(56431,{b=1,f=53,lvl=85,q=3}),
 s(204571,56434,{b=1,f=3,lvl=85,q=3}),
 s(204569,56430,{b=1,f=25,lvl=85,q=3})}})}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_470595)(
-h(-66,{u=41,g={
+h(-66,{phase=41,g={
 e(130,{npcID=39378,g={
 ach(41144,{
 crit(71210,{achID=41148,awp=40200,id=6})})}})}}))}}),
 inst(186,{awp=40300,coords={
 [75]={{66.2,29.2}},
-[1446]={{64.7,49.9}}},mapID=399,maps={400},savedInstanceID=940,u=42,g={
+[1446]={{64.7,49.9}}},mapID=399,maps={400},phase=42,savedInstanceID=940,g={
 h(-45,{
 q(30103,{qgs={54548,54634,54972,55779},sourceQuests={30102},g={
 s(214162,72858,{b=1,f=4,loc=44,lvl=85,q=4}),
@@ -20921,7 +20921,7 @@ s(214167,72863,{b=1,f=28,lvl=85,q=4}),
 s(214170,72866,{b=1,f=25,lvl=85,q=4}),
 i(72900,{b=1,f=53,lvl=85,q=4})}})})}}),
 inst(69,{coords={
-[249]={{60.53,64.29}}},mapID=277,savedInstanceID=755,u=40,g={
+[249]={{60.53,64.29}}},mapID=277,savedInstanceID=755,g={
 h(-45,{
 q(28870,{coords={
 [249]={{54.9,32.7}}},isBreadcrumb=1,nextQuests={28781,28783},qgs={47684},sourceQuests={28520}}),
@@ -21009,12 +21009,12 @@ i(56398,{b=1,f=52,lvl=85,q=3}),
 i(56400,{b=1,f=53,lvl=85,q=3}),
 i(56394,{b=1,f=53,lvl=85,q=3}),
 s(204552,56402,{b=1,f=8,lvl=85,q=3})}})}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_470595)(
-h(-66,{u=41,g={
+h(-66,{phase=41,g={
 e(122,{npcID=44819,g={
 ach(41145,{
 crit(71207,{achID=41148,awp=40200,id=3})})}})}}))}}),
 inst(67,{coords={
-[207]={{47.5,52.05}}},mapID=324,savedInstanceID=725,u=40,g={
+[207]={{47.5,52.05}}},mapID=324,savedInstanceID=725,g={
 h(-45,{
 q(28814,{qgs={50048},sourceQuests={28815},g={
 s(210908,66892,{b=1,f=4,loc=45,q=3}),
@@ -21100,12 +21100,12 @@ s(204516,56349,{b=1,f=1,lvl=85,q=3}),
 s(204515,56348,{b=1,f=4,loc=47,lvl=85,q=3}),
 i(56351,{b=1,f=53,lvl=85,q=3}),
 i(56350,{b=1,c={2,7,11},lvl=85,q=3,rwp=50004})}})}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_470595)(
-h(-66,{u=41,g={
+h(-66,{phase=41,g={
 e(113,{npcID=42333,g={
 ach(41141,{
 crit(71208,{achID=41148,awp=40200,id=4})})}})}}))}}),
 inst(68,{coords={
-[249]={{76.76,84.44}}},mapID=325,savedInstanceID=657,u=40,g={
+[249]={{76.76,84.44}}},mapID=325,savedInstanceID=657,g={
 h(-45,{
 q(28779,{qgs={49943},sourceQuests={28845},g={
 s(210913,66898,{b=1,f=3,q=3}),
@@ -21185,12 +21185,12 @@ i(56373,{b=1,f=52,lvl=85,q=3}),
 s(204532,56371,{b=1,f=3,lvl=85,q=3}),
 s(204535,56376,{b=1,f=31,lvl=85,q=3}),
 i(56372,{b=1,lvl=85,q=3,rwp=50004})}})}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_470595)(
-h(-66,{u=41,g={
+h(-66,{phase=41,g={
 e(116,{npcID=43875,g={
 ach(41142,{
 crit(71211,{achID=41148,awp=40200,id=7})})}})}}))}}),
 inst(65,{coords={
-[204]={{71,29}}},mapID=322,maps={323},savedInstanceID=643,u=40,g={
+[204]={{71,29}}},mapID=322,maps={323},savedInstanceID=643,g={
 h(-45,{
 q(28834,{qgs={50270},r=2,g={
 s(209946,65654,{b=1,f=7,loc=45,q=3}),
@@ -21282,13 +21282,13 @@ i(56290,{b=1,f=53,lvl=85,q=3}),
 s(204473,56283,{b=1,f=7,loc=46,lvl=85,q=3}),
 s(204472,56281,{b=1,f=6,loc=42,lvl=85,q=3}),
 s(204474,56284,{b=1,f=22,lvl=85,q=3})}})}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_470595)(
-h(-66,{u=41,g={
+h(-66,{phase=41,g={
 e(104,{npcID=44566,g={
 ach(41140,{
 crit(71206,{achID=41148,awp=40200,id=2})})}})}}))}}),
 inst(185,{awp=40300,coords={
 [75]={{22.9,64.4}},
-[1446]={{64.7,49.9}}},mapID=398,savedInstanceID=939,u=42,g={
+[1446]={{64.7,49.9}}},mapID=398,phase=42,savedInstanceID=939,g={
 h(-45,{
 q(30104,{qgs={57864},sourceQuests={30096,30097},g={
 i(72880,{b=1,f=52,lvl=85,q=4}),
@@ -21343,7 +21343,7 @@ n(55500,{sharedDescription="|CFFFF0000Listen to Illidan, these mobs do have leth
 n(54927),
 n(54500)}})}}),
 inst(77,{awp=40100,coords={
-[1942]={{81.8,64.3}}},mapID=333,savedInstanceID=568,u=4001,g={
+[1942]={{81.8,64.3}}},mapID=333,phase=4001,savedInstanceID=568,g={
 d(2,{
 h(-45,{
 q(29188,{qgs={23761},u=2}),
@@ -21462,7 +21462,7 @@ s(212333,69580,{b=1,f=6,loc=40,lvl=85,q=4}),
 s(212335,69582,{b=1,f=7,loc=41,lvl=85,q=4}),
 s(212327,69574,{b=1,f=5,loc=41,lvl=85,q=4})}})})}}),
 inst(76,{awp=40100,coords={
-[1434]={{72,32.9}}},mapID=337,savedInstanceID=859,u=4001,g={
+[1434]={{72,32.9}}},mapID=337,phase=4001,savedInstanceID=859,g={
 d(2,{
 h(-12,{
 ach(5744)}),

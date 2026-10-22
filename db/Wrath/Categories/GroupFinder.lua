@@ -4,13 +4,13 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,h,i,p,s,title,x=_.CreateAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateSpecies,_.CreateItemSource,_.CreateTitle,_.CreateExpansion;
 categories.GroupFinder=
 h(-733,{SortPriority=50,g={
-h(-12,{awp=30002,u=33,g={
+h(-12,{awp=30002,phase=33,g={
 ach(4476,{rank=10}),
 ach(4477,{rank=50,g={
 title(137)}}),
 ach(4478,{rank=100,g={
 p(250,{b=1,itemID=49912,petTypeID=5,q=3,spellID=70613})}})}}),
-x(1,{awp=10100,u=33,g={
+x(1,{awp=10100,phase=33,g={
 i(51999,{awp=30300,b=1,description="Rewarded for completing a random dungeon in the level 15-25 range.",q=3,rwp=70305,g={
 s(179837,51994,{b=1,f=3,q=3}),
 s(179823,51978,{b=1,f=6,loc=45,q=3}),
@@ -42,7 +42,7 @@ s(179822,51977,{b=1,f=6,loc=45,q=3}),
 s(179816,51971,{b=1,f=4,loc=45,q=3}),
 s(179830,51985,{b=1,f=7,loc=45,q=3}),
 s(179804,51959,{b=1,f=5,loc=45,q=3})}})}}),
-x(2,{awp=20003,u=33,g={
+x(2,{awp=20003,phase=33,g={
 i(52004,{awp=30300,b=1,description="Rewarded for completing a random dungeon in the level 60-64 range.",q=3,rwp=70305,g={
 i(51995,{b=1,f=51,q=3}),
 s(179824,51979,{b=1,f=6,loc=44,q=3}),

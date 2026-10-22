@@ -6,7 +6,7 @@ local ach,ah,cl,crit,cs,e,faction,flt,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,settings,
 categories.Instances=
 h(-75,{SortPriority=1,g={
 x(1,{awp=10100,g={
-h(-318,{rwp=40003,u=15,g={
+h(-318,{phase=15,rwp=40003,g={
 cl(11,{
 q(8905,{c={11},coords={
 [1455]={{43.5,52.6}}},cost={{"i",16714,1},{"g",200000}},lvl=58,maps={317,476,1452},qgs={16013},r=2,g={
@@ -408,7 +408,7 @@ qo(3,{providers={{"i",21989}}}),
 qo(4,{providers={{"i",22014}}})}})})}}),
 h(-61,{isRaid=1,lvl=60,g={
 n(6109,{awp=10300,coords={
-[1447]={{53.3,80.4}}},isRaid=1,lvl=60,modelScale=6,rwp=40003,u=12,g={
+[1447]={{53.3,80.4}}},isRaid=1,lvl=60,modelScale=6,phase=12,rwp=40003,g={
 i(18704,{c={3},lvl=60,q=4}),
 s(163811,19130,{b=1,f=27,lvl=60,q=4}),
 s(163439,18202,{b=1,f=34,lvl=60,q=4}),
@@ -424,7 +424,7 @@ h(-74,{awp=10800,coords={
 [1425]={{63.3,27.8}},
 [1431]={{45.4,39.6}},
 [1440]={{94.2,35.7}},
-[1444]={{51.2,10.9}}},isRaid=1,lvl=60,rwp=40003,u=14,g={
+[1444]={{51.2,10.9}}},isRaid=1,lvl=60,phase=14,rwp=40003,g={
 h(-45,{
 q(8446,{lvl=60,qss={20644}}),
 q(8447,{coords={
@@ -470,7 +470,7 @@ s(164379,20638,{b=1,f=6,loc=46,lvl=60,q=4}),
 s(164380,20639,{b=1,f=7,loc=46,lvl=60,q=4}),
 i(20636,{b=1,f=53,lvl=60,q=4})}})}}),
 n(12397,{awp=10300,coords={
-[1419]={{36.6,75.8}}},crs={18338},isRaid=1,lvl=60,modelScale=6,rwp=20001,u=12,g={
+[1419]={{36.6,75.8}}},crs={18338},isRaid=1,lvl=60,modelScale=6,phase=12,rwp=20001,g={
 i(18665,{c={5},f=53,lvl=60,q=4}),
 s(163279,17113,{b=1,f=28,lvl=60,q=4}),
 s(163278,17112,{b=1,f=23,lvl=60,q=4}),
@@ -489,12 +489,12 @@ ach(429,{c={1,2,7,11},providers={{"i",17182}}}),
 s(163282,17182,{b=1,c={1,2,7,11},cost={{"i",17193,1},{"i",17204,1}},f=24,lvl=60,q=5})}}),
 ah(19019,{isRaid=1,type="i",g={
 n(14347,{coords={
-[1451]={{21.7,8.6}}},lvl=60,u=13,g={
+[1451]={{21.7,8.6}}},lvl=60,phase=13,g={
 i(19016,{b=1,lvl=60,providers={{"i",18563},{"i",18564}},q=5})}}),
 q(7785,{c={1,2,3,4,8,9},coords={
-[1451]={{21.7,8.6}}},description="This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",lvl=60,qss={19016},u=13}),
+[1451]={{21.7,8.6}}},description="This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",lvl=60,phase=13,qss={19016}}),
 q(7786,{altQuests={7521},c={1,2,3,4,8,9},coords={
-[1451]={{21.7,8.6}}},lvl=60,qgs={14347},sourceQuests={7785},u=13,g={
+[1451]={{21.7,8.6}}},lvl=60,phase=13,qgs={14347},sourceQuests={7785},g={
 qo(1,{providers={{"i",17771}}}),
 qo(2,{providers={{"i",19017}}}),
 qo(3,{providers={{"i",18563}}}),
@@ -502,7 +502,7 @@ qo(4,{providers={{"i",18564}}}),
 n(14435,{description="This is a 40-man raid boss.",modelScale=20,g={
 i(19018,{b=1,lvl=60,q=5})}})}}),
 q(7787,{c={1,2,3,4,8,9},coords={
-[1451]={{21.7,8.6}}},lvl=60,providers={{"i",19018}},qgs={14347},sourceQuests={7786},u=13,g={
+[1451]={{21.7,8.6}}},lvl=60,phase=13,providers={{"i",19018}},qgs={14347},sourceQuests={7786},g={
 ach(428,{c={1,2,3,4,8,9},providers={{"i",19019}}}),
 s(163747,19019,{b=1,f=25,lvl=60,q=5})}})}}),
 h(-12,{
@@ -552,9 +552,9 @@ qo(3,{providers={{"n",11673}}}),
 qo(4,{providers={{"n",12101}}})}})}),
 h(-47,{
 i(17333,{awp=10001,b=1,description="Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",minReputation={749,9000},q=1,rwp=30008,sourceQuests={6824}}),
-i(22754,{awp=10001,b=1,description="Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",minReputation={749,21000},q=1,rwp=30008,sourceQuests={6824},u=13})}),
+i(22754,{awp=10001,b=1,description="Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",minReputation={749,21000},phase=13,q=1,rwp=30008,sourceQuests={6824}})}),
 h(-63,{
-i(20951,{awp=10001,description="For this to drop, you must be on the Scrying Goggles? No Problem! quest.",q=1,rwp=40003,u=15}),
+i(20951,{awp=10001,description="For this to drop, you must be on the Scrying Goggles? No Problem! quest.",phase=15,q=1,rwp=40003}),
 i(17010,{q=3}),
 i(17011,{q=3}),
 s(163071,16802,{c={8},f=4,loc=45,lvl=60,q=4}),
@@ -799,7 +799,7 @@ i(19138,{b=1,f=52,lvl=60,q=4}),
 i(18815,{b=1,f=53,lvl=60,q=4}),
 i(17082,{b=1,f=53,lvl=60,q=4}),
 i(17982,{b=1,f=52,lvl=60,q=3,rwp=10400,u=2}),
-i(21110,{awp=10900,b=1,q=4,rwp=40003,u=15})}})}}),
+i(21110,{awp=10900,b=1,phase=15,q=4,rwp=40003})}})}}),
 inst(760,{coords={
 [1445]={{52.3,76.2}}},cost={{"i",16309,1}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,savedInstanceID=249,sourceQuests={6502,6602},zoneTextAreaID=2159,g={
 h(-45,{
@@ -872,9 +872,9 @@ i(18205,{awp=10001,b=1,f=51,lvl=60,q=4,rwp=100000}),
 s(163271,17078,{awp=10001,b=1,f=3,lvl=60,q=4,rwp=100000}),
 i(18813,{awp=10001,b=1,f=52,lvl=60,q=4,rwp=100000}),
 i(17064,{awp=10001,b=1,f=53,lvl=60,q=4,rwp=100000}),
-i(21108,{awp=10900,b=1,q=4,rwp=40003,u=15})})}}),
+i(21108,{awp=10900,b=1,phase=15,q=4,rwp=40003})})}}),
 inst(742,{awp=10600,coords={
-[33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,maps={288,289,290},providers={{"o",179879}},savedInstanceID=469,sourceQuests={7761},u=13,zoneTextAreaID=2677,g={
+[33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,maps={288,289,290},phase=13,providers={{"o",179879}},savedInstanceID=469,sourceQuests={7761},zoneTextAreaID=2677,g={
 h(-45,{
 q(7781,{maps={1453},qss={19003},r=2}),
 q(7782,{coords={
@@ -890,7 +890,7 @@ s(163881,19366,{b=1,f=1,lvl=60,q=4}),
 i(19384,{b=1,f=52,lvl=60,q=4})}})}),
 h(-56,{
 o(180667,{awp=10900,coords={
-[287]={{32,42.9}}},description="Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",rwp=40003,u=15,g={
+[287]={{32,42.9}}},description="Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",phase=15,rwp=40003,g={
 i(21109,{awp=10600,b=1,q=4})}})}),
 h(-63,{
 i(18562,{crs={13996,14401},q=4}),
@@ -1073,7 +1073,7 @@ i(19382,{b=1,f=52,lvl=60,q=4}),
 i(19379,{b=1,f=53,lvl=60,q=4}),
 i(17964,{q=2}),
 i(17969,{q=2})}})}}),
-inst(76,{awp=10700,isRaid=1,lore="Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",lvl=58,mapID=337,maps={233},rwp=40003,savedInstanceID=309,u=14,zoneTextAreaID=19,g={
+inst(76,{awp=10700,isRaid=1,lore="Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",lvl=58,mapID=337,maps={233},phase=14,rwp=40003,savedInstanceID=309,zoneTextAreaID=19,g={
 h(-12,{
 ach(957,{maps={1434},minReputation={270,42000}})}),
 h(-31,{
@@ -1324,11 +1324,11 @@ q(8183,{description="Turning this quest in will cause a world buff to drop for t
 i(19948,{b=1,f=53,q=4}),
 i(19950,{b=1,f=53,q=4}),
 i(19949,{b=1,f=53,q=4})}}),
-q(9210,{cost={{"i",18330,1}},lvl=58,qgs={15042},repeatable=1,u=16,g={
+q(9210,{cost={{"i",18330,1}},lvl=58,phase=16,qgs={15042},repeatable=1,g={
 i(22635,{b=1,lvl=55,q=3})}}),
-q(9208,{cost={{"i",18331,1}},lvl=58,qgs={15042},repeatable=1,u=16,g={
+q(9208,{cost={{"i",18331,1}},lvl=58,phase=16,qgs={15042},repeatable=1,g={
 i(22635,{b=1,lvl=55,q=3})}}),
-q(9209,{cost={{"i",18329,1}},lvl=58,qgs={15042},repeatable=1,u=16,g={
+q(9209,{cost={{"i",18329,1}},lvl=58,phase=16,qgs={15042},repeatable=1,g={
 i(22635,{b=1,lvl=55,q=3})}}),
 q(8243,{coords={
 [1434]={{15.1,16}}},cost={{"i",19858,1}},lvl=58,minReputation={270,21000},qgs={14921},repeatable=1,g={
@@ -1341,8 +1341,8 @@ i(19858,{b=1,factionID=270,q=2,repeatable=1})}})}),
 h(-58,{
 n(14921,{coords={
 [1434]={{15.1,16}}},g={
-r(25130,{b=1,itemID=20757,learnedAt=300,minReputation={270,3000},q=1,requireSkill=333,u=15}),
-r(25129,{b=1,itemID=20756,learnedAt=300,minReputation={270,9000},q=1,requireSkill=333,u=15}),
+r(25130,{b=1,itemID=20757,learnedAt=300,minReputation={270,3000},phase=15,q=1,requireSkill=333}),
+r(25129,{b=1,itemID=20756,learnedAt=300,minReputation={270,9000},phase=15,q=1,requireSkill=333}),
 r(24124,{b=1,itemID=19772,learnedAt=300,minReputation={270,21000},q=1,requireSkill=165}),
 r(24125,{b=1,itemID=19773,learnedAt=300,minReputation={270,9000},q=1,requireSkill=165}),
 r(24093,{b=1,itemID=19766,learnedAt=300,minReputation={270,3000},q=1,requireSkill=197}),
@@ -1446,7 +1446,7 @@ s(164266,20265,{b=1,f=7,loc=47,lvl=60,q=3}),
 s(164263,20262,{b=1,f=6,loc=47,lvl=60,q=3}),
 i(19920,{b=1,f=52,lvl=60,q=3})}),
 n(14507,{
-i(22216,{q=1,u=15}),
+i(22216,{phase=15,q=1}),
 s(164059,19903,{b=1,f=20,lvl=60,q=4}),
 s(164057,19900,{b=1,f=22,lvl=60,q=3}),
 s(164062,19907,{b=1,f=3,lvl=60,q=3}),
@@ -1560,7 +1560,7 @@ s(164265,20264,{b=1,f=7,loc=44,lvl=60,q=4}),
 s(164258,20257,{b=1,f=6,loc=44,lvl=60,q=4}),
 s(164028,19855,{b=1,f=7,loc=46,lvl=60,q=4})})}}),
 inst(743,{awp=10900,coords={
-[327]={{58.93,14.26}}},isLockoutShared=1,isRaid=1,lore="Deep within the deserts of Silithus lies an ancient and powerful race of beings known as the Qiraji. One thousand years ago, the Night Elves and Bronze Dragonflight combined their considerable powers to seal the Qiraji behind the scarab wall with the help of the children of some of the aspects. This is remembered as the \"War of the Shifting Sands\".\n\nRecently it was discovered that some of the Qiraji were finding ways past the wall. Anachronos, the bronze dragon, helped the adventurers of Azeroth open the Scarab Wall to prevent more incursions. The mortal races have now banded together to confront the evil Qiraji in their own land. A champion has opened the gate and the Horde and Alliance have driven the armies of the Qiraji back into the ruins in retreat. It now falls to heroes to delve into the lair of the Qiraji and put an end to their masters once and for all",lvl=50,mapID=247,savedInstanceID=509,u=15,zoneTextAreaID=3429,g={
+[327]={{58.93,14.26}}},isLockoutShared=1,isRaid=1,lore="Deep within the deserts of Silithus lies an ancient and powerful race of beings known as the Qiraji. One thousand years ago, the Night Elves and Bronze Dragonflight combined their considerable powers to seal the Qiraji behind the scarab wall with the help of the children of some of the aspects. This is remembered as the \"War of the Shifting Sands\".\n\nRecently it was discovered that some of the Qiraji were finding ways past the wall. Anachronos, the bronze dragon, helped the adventurers of Azeroth open the Scarab Wall to prevent more incursions. The mortal races have now banded together to confront the evil Qiraji in their own land. A champion has opened the gate and the Horde and Alliance have driven the armies of the Qiraji back into the ruins in retreat. It now falls to heroes to delve into the lair of the Qiraji and put an end to their masters once and for all",lvl=50,mapID=247,phase=15,savedInstanceID=509,zoneTextAreaID=3429,g={
 h(-31,{
 faction(609,{icon=132136,maps={1451}})}),
 h(-45,{
@@ -1816,7 +1816,7 @@ s(164605,21463,{b=1,f=6,loc=45,lvl=60,q=4}),
 s(164603,21461,{b=1,f=4,loc=46,lvl=60,q=4}),
 s(164595,21453,{b=1,f=7,loc=41,lvl=60,q=4})}})}}),
 inst(744,{awp=10900,coords={
-[327]={{46.76,7.53}}},isRaid=1,lore="Dark whispers ride on the winds of Silithus desert. An old god stirs in his wretched lair and the entire world shall soon be the target of his wrath.\n\nAfter thousands of years of slumber, the old god, C'thun has awakened and is quickly regenerating his power. Once he has reached full potential nothing will be able to stop him. The dragons that so humbly sacrificed themselves so long ago to imprison C'thun are weakened or enslaved in the temple, so the charge of protecting the land falls to other heroes.\n\nHeroes must enter Temple of Ahn'Qiraj, challenge C'thun's most wicked servants, and slay a god. The road will not be easy and it is wrought with peril at every turn. Will the heroes turn back now or face C'thun in his mighty lair and put an end to him once and for all?",lvl=50,mapID=320,maps={319,321},savedInstanceID=531,u=15,zoneTextAreaID=3428,g={
+[327]={{46.76,7.53}}},isRaid=1,lore="Dark whispers ride on the winds of Silithus desert. An old god stirs in his wretched lair and the entire world shall soon be the target of his wrath.\n\nAfter thousands of years of slumber, the old god, C'thun has awakened and is quickly regenerating his power. Once he has reached full potential nothing will be able to stop him. The dragons that so humbly sacrificed themselves so long ago to imprison C'thun are weakened or enslaved in the temple, so the charge of protecting the land falls to other heroes.\n\nHeroes must enter Temple of Ahn'Qiraj, challenge C'thun's most wicked servants, and slay a god. The road will not be easy and it is wrought with peril at every turn. Will the heroes turn back now or face C'thun in his mighty lair and put an end to him once and for all?",lvl=50,mapID=320,maps={319,321},phase=15,savedInstanceID=531,zoneTextAreaID=3428,g={
 h(-12,{
 ach(956,{maps={75,1451},minReputation={910,42000}}),
 ach(424,{providers={{"i",21321}}})}),
@@ -2181,7 +2181,7 @@ e(1551,{npcID=15727,g={
 ach(687),
 ach(15334,{awp=11402,rwp=11500,u=2}),
 i(21221,{b=1,lvl=60,q=4}),
-i(22734,{c={5,8,9,11},q=5,u=16}),
+i(22734,{c={5,8,9,11},phase=16,q=5}),
 i(20929,{b=1,c={1,2,3,4,7},q=4}),
 i(20933,{b=1,c={5,8,9,11},q=4}),
 s(164466,21134,{b=1,f=22,lvl=60,q=4}),
@@ -2197,7 +2197,7 @@ s(165054,22730,{b=1,f=4,loc=45,lvl=60,q=4}),
 s(164669,21582,{b=1,f=4,loc=45,lvl=60,q=4}),
 i(21596,{b=1,f=52,lvl=60,q=4}),
 i(21579,{b=1,f=53,lvl=60,q=4})}})}}),
-inst(754,{awp=11100,isRaid=1,lore="An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",lvl=60,mapID=162,maps={163,164,165,166,167},rwp=30002,savedInstanceID=533,sourceQuests={9121},u=16,zoneTextAreaID=3456,g={
+inst(754,{awp=11100,isRaid=1,lore="An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",lvl=60,mapID=162,maps={163,164,165,166,167},phase=16,rwp=30002,savedInstanceID=533,sourceQuests={9121},zoneTextAreaID=3456,g={
 ah(22631,{c={5,8,9,11},isRaid=1,lore="Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Buff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",maps={75},type="i",g={
 ach(425,{c={5,8,9,11},providers={{"i",22589},{"i",22630},{"i",22631},{"i",22632}}}),
 q(9251,{c={5,8,9,11},lvl=60,maps={320},qgs={15192},sourceQuests={9250},g={
@@ -2217,8 +2217,8 @@ s(165014,22632,{b=1,f=28,lvl=60,q=5}),
 crit(747,{achID=425,id=1})}}),
 q(9250,{c={5,8,9,11},cost={{"i",22726,40}},description="Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",lvl=60,qss={22727}})}}),
 h(-12,{
-ach(15637,{awp=11403,providers={{"n",15990}},rwp=11500,u=2}),
-s(169660,191481,{awp=11403,b=1,description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this as well)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",f=9,q=4,rwp=11500,u=2})}),
+ach(15637,{awp=11403,phase=1604,providers={{"n",15990}},rwp=11500,u=2}),
+s(169660,191481,{awp=11403,b=1,description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this as well)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",f=9,phase=1604,q=4,rwp=11500,u=2})}),
 h(-45,{
 cl(1,{
 q(9037,{coords={
@@ -3000,35 +3000,35 @@ r(22704,{description="On the floor next to Golem Lord Argelmach.",itemID=18235,l
 h(-58,{
 n(12944,{
 i(18628,{b=1,cost={{"i",17203,1}},description="With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",lvl=60,minReputation={59,0},q=4}),
-r(23799,{b=1,itemID=19444,learnedAt=290,minReputation={59,3000},q=1,requireSkill=333,u=13}),
+r(23799,{b=1,itemID=19444,learnedAt=290,minReputation={59,3000},phase=13,q=1,requireSkill=333}),
 r(20853,{b=1,itemID=17022,learnedAt=295,minReputation={59,3000},q=1,requireSkill=10660}),
 r(20849,{b=1,itemID=17018,learnedAt=300,minReputation={59,3000},q=1,requireSkill=197}),
 r(20854,{b=1,itemID=17023,learnedAt=300,minReputation={59,3000},q=1,requireSkill=10658}),
 r(20874,{b=1,itemID=17051,learnedAt=295,minReputation={59,3000},q=3,requireSkill=9788}),
-r(25146,{b=1,itemID=20761,learnedAt=300,minReputation={59,3000},q=1,requireSkill=171,u=15}),
-r(23803,{b=1,itemID=19448,learnedAt=300,minReputation={59,9000},q=1,requireSkill=333,u=13}),
+r(25146,{b=1,itemID=20761,learnedAt=300,minReputation={59,3000},phase=15,q=1,requireSkill=171}),
+r(23803,{b=1,itemID=19448,learnedAt=300,minReputation={59,9000},phase=13,q=1,requireSkill=333}),
 r(20855,{b=1,itemID=17025,learnedAt=300,minReputation={59,9000},q=1,requireSkill=10656}),
 r(20848,{b=1,itemID=17017,learnedAt=300,minReputation={59,9000},q=1,requireSkill=197}),
-r(23666,{b=1,itemID=19219,learnedAt=300,minReputation={59,9000},q=1,requireSkill=197,u=13}),
-r(23707,{b=1,itemID=19330,learnedAt=300,minReputation={59,9000},q=1,requireSkill=165,u=13}),
+r(23666,{b=1,itemID=19219,learnedAt=300,minReputation={59,9000},phase=13,q=1,requireSkill=197}),
+r(23707,{b=1,itemID=19330,learnedAt=300,minReputation={59,9000},phase=13,q=1,requireSkill=165}),
 r(20897,{b=1,itemID=17060,learnedAt=300,minReputation={59,9000},q=3,requireSkill=17041}),
-r(23636,{b=1,itemID=19206,learnedAt=300,minReputation={59,9000},q=1,requireSkill=9788,u=13}),
+r(23636,{b=1,itemID=19206,learnedAt=300,minReputation={59,9000},phase=13,q=1,requireSkill=9788}),
 r(20890,{b=1,itemID=17059,learnedAt=300,minReputation={59,9000},q=3,requireSkill=17039}),
 r(20872,{b=1,itemID=17049,learnedAt=295,minReputation={59,9000},q=3,requireSkill=9788}),
-r(23804,{b=1,itemID=19449,learnedAt=300,minReputation={59,21000},q=1,requireSkill=333,u=13}),
-r(23708,{b=1,itemID=19331,learnedAt=300,minReputation={59,21000},q=1,requireSkill=10656,u=13}),
-r(23709,{b=1,itemID=19332,learnedAt=300,minReputation={59,21000},q=1,requireSkill=10660,u=13}),
-r(23667,{b=1,itemID=19220,learnedAt=300,minReputation={59,21000},q=1,requireSkill=197,u=13}),
-r(23710,{b=1,itemID=19333,learnedAt=300,minReputation={59,21000},q=1,requireSkill=10658,u=13}),
-r(23638,{b=1,itemID=19208,learnedAt=300,minReputation={59,21000},q=1,requireSkill=9787,u=13}),
-r(23639,{b=1,itemID=19209,learnedAt=300,minReputation={59,21000},q=1,requireSkill=9787,u=13}),
-r(23637,{b=1,itemID=19207,learnedAt=300,minReputation={59,21000},q=1,requireSkill=9788,u=13}),
+r(23804,{b=1,itemID=19449,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=333}),
+r(23708,{b=1,itemID=19331,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=10656}),
+r(23709,{b=1,itemID=19332,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=10660}),
+r(23667,{b=1,itemID=19220,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=197}),
+r(23710,{b=1,itemID=19333,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=10658}),
+r(23638,{b=1,itemID=19208,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=9787}),
+r(23639,{b=1,itemID=19209,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=9787}),
+r(23637,{b=1,itemID=19207,learnedAt=300,minReputation={59,21000},phase=13,q=1,requireSkill=9788}),
 r(20876,{b=1,itemID=17052,learnedAt=300,minReputation={59,21000},q=3,requireSkill=9788}),
 r(20873,{b=1,itemID=17053,learnedAt=300,minReputation={59,21000},q=3,requireSkill=9788}),
-r(23652,{b=1,itemID=19211,learnedAt=300,minReputation={59,42000},q=1,requireSkill=17039,u=13}),
-r(24399,{b=1,itemID=20040,learnedAt=300,minReputation={59,42000},q=1,requireSkill=9788,u=14}),
-r(23650,{b=1,itemID=19210,learnedAt=300,minReputation={59,42000},q=1,requireSkill=17040,u=13}),
-r(23653,{b=1,itemID=19212,learnedAt=300,minReputation={59,42000},q=1,requireSkill=17041,u=13})}),
+r(23652,{b=1,itemID=19211,learnedAt=300,minReputation={59,42000},phase=13,q=1,requireSkill=17039}),
+r(24399,{b=1,itemID=20040,learnedAt=300,minReputation={59,42000},phase=14,q=1,requireSkill=9788}),
+r(23650,{b=1,itemID=19210,learnedAt=300,minReputation={59,42000},phase=13,q=1,requireSkill=17040}),
+r(23653,{b=1,itemID=19212,learnedAt=300,minReputation={59,42000},phase=13,q=1,requireSkill=17041})}),
 n(9499,{
 r(19085,{itemID=15759,learnedAt=290,q=1,requireSkill=10656}),
 r(17560,{b=1,itemID=13483,learnedAt=275,q=2,requireSkill=171}),
@@ -3036,7 +3036,7 @@ i(11325,{f=55,q=1})})}),
 h(-63,{
 i(11468,{q=1}),
 i(18945,{q=1}),
-i(22528,{q=1,u=15}),
+i(22528,{phase=15,q=1}),
 i(11129,{q=1}),
 i(11269,{crs={8905,8906,8907,8908},q=1}),
 r(19107,{crs={8903},itemID=15781,learnedAt=300,q=3,requireSkill=10656}),
@@ -3067,13 +3067,13 @@ i(11140,{b=1,q=1}),
 s(160289,11625,{b=1,f=1,lvl=48,q=3}),
 s(160290,11626,{b=1,f=3,lvl=48,q=3}),
 s(160288,11624,{b=1,f=4,loc=41,lvl=47,q=3}),
-s(164865,22240,{b=1,f=6,loc=47,lvl=48,q=3,u=15})}}),
+s(164865,22240,{b=1,f=6,loc=47,lvl=48,phase=15,q=3})}}),
 e(370,{npcID=9025,g={
 r(15596,{itemID=11813,learnedAt=265,q=2,requireSkill=333,rwp=30100}),
 s(160295,11631,{b=1,f=8,lvl=47,q=3}),
 s(160296,11632,{b=1,f=7,loc=41,lvl=47,q=3}),
-s(164864,22234,{b=1,f=4,loc=41,lvl=48,q=3,u=15}),
-i(22397,{b=1,f=54,lvl=52,q=3,rwp=50004,u=15}),
+s(164864,22234,{b=1,f=4,loc=41,lvl=48,phase=15,q=3}),
+i(22397,{b=1,f=54,lvl=52,phase=15,q=3,rwp=50004}),
 i(11630,{f=37,lvl=47,q=3,rwp=40001})}}),
 e(371,{npcID=9319,g={
 s(160292,11628,{b=1,f=32,lvl=48,q=3}),
@@ -3092,16 +3092,16 @@ s(160305,11679,{b=1,f=6,loc=43,lvl=50,q=3}),
 s(160315,11730,{b=1,f=6,loc=44,lvl=52,q=3}),
 s(160308,11686,{b=1,f=5,loc=45,lvl=50,q=3})}),
 n(9027,{
-s(164873,22266,{b=1,f=20,lvl=52,q=3,u=15}),
+s(164873,22266,{b=1,f=20,lvl=52,phase=15,q=3}),
 s(160312,11726,{b=1,f=6,loc=42,lvl=52,q=4}),
-s(164877,22271,{b=1,f=5,loc=46,lvl=52,q=3,u=15}),
-i(22257,{b=1,f=52,lvl=52,q=3,u=15})}),
+s(164877,22271,{b=1,f=5,loc=46,lvl=52,phase=15,q=3}),
+i(22257,{b=1,f=52,lvl=52,phase=15,q=3})}),
 n(9028,{
 r(15292,{itemID=11610,learnedAt=265,q=3,requireSkill=9787}),
 s(160309,11702,{b=1,f=21,lvl=50,q=3}),
 s(160311,11722,{b=1,f=6,loc=41,lvl=50,q=3}),
 s(160310,11703,{b=1,f=7,loc=45,lvl=50,q=3}),
-s(164876,22270,{b=1,f=7,loc=47,lvl=50,q=3,u=15})}),
+s(164876,22270,{b=1,f=7,loc=47,lvl=50,phase=15,q=3})}),
 n(9032,{
 s(160299,11635,{b=1,f=20,lvl=49,q=3}),
 s(160314,11729,{b=1,f=6,loc=40,lvl=52,q=3}),
@@ -3112,7 +3112,7 @@ s(160301,11665,{b=1,f=5,loc=44,lvl=49,q=3}),
 s(160300,11662,{b=1,f=4,loc=45,lvl=49,q=3}),
 s(160313,11728,{b=1,f=6,loc=46,lvl=52,q=3}),
 i(11824,{b=1,f=52,lvl=49,q=3})}),
-n(16059,{description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",providers={{"i",21986},{"o",181074}},rwp=40003,u=15,g={
+n(16059,{description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",phase=15,providers={{"i",21986},{"o",181074}},rwp=40003,g={
 i(22047,{q=1}),
 s(164893,22305,{b=1,c={5,8,9},f=4,loc=41,lvl=56,q=3}),
 s(164899,22317,{b=1,f=34,lvl=56,q=3}),
@@ -3124,18 +3124,18 @@ s(160341,11805,{b=1,f=23,lvl=51,q=3}),
 s(160342,11807,{b=1,f=4,loc=45,lvl=53,q=3}),
 s(160339,11802,{b=1,f=7,loc=46,lvl=53,q=3})}}),
 e(374,{npcID=9017,g={
-i(21987,{q=1,u=15}),
+i(21987,{phase=15,q=1}),
 i(11126,{q=1}),
 s(160330,11766,{b=1,f=4,loc=43,lvl=52,q=3}),
 s(160328,11764,{b=1,f=5,loc=43,lvl=52,q=3}),
 s(160329,11765,{b=1,f=6,loc=43,lvl=52,q=3}),
 s(160331,11767,{b=1,f=7,loc=43,lvl=52,q=3}),
 s(160332,11768,{awp=100107,b=1,f=4,loc=43,lvl=52,q=2,rwp=20001}),
-i(19268,{q=3,u=13})}}),
+i(19268,{phase=13,q=3})}}),
 e(376,{npcID=9056,g={
 s(160355,11840,{b=1,f=10,q=1}),
 s(160354,11839,{b=1,f=4,loc=40,lvl=50,q=3}),
-s(164859,22223,{b=1,f=7,loc=40,lvl=50,q=3,u=15}),
+s(164859,22223,{b=1,f=7,loc=40,lvl=50,phase=15,q=3}),
 s(160357,11842,{b=1,f=6,loc=41,lvl=50,q=3}),
 s(160356,11841,{b=1,f=4,loc=46,lvl=50,q=3})}})}),
 h(-352,{
@@ -3148,11 +3148,11 @@ s(160324,11749,{b=1,f=6,loc=46,lvl=48,q=3})}}),
 e(375,{npcID=9041,g={
 s(160335,11784,{b=1,f=25,lvl=48,q=3}),
 s(160333,11782,{b=1,f=4,loc=41,lvl=52,q=3}),
-s(164866,22241,{b=1,f=5,loc=41,lvl=52,q=3,u=15}),
+s(164866,22241,{b=1,f=5,loc=41,lvl=52,phase=15,q=3}),
 s(160334,11783,{b=1,f=6,loc=45,lvl=52,q=3})}}),
 n(9042,{
 i(11755,{b=1,f=51,lvl=51,q=3}),
-s(164867,22242,{b=1,f=6,loc=45,lvl=51,q=3,u=15})}),
+s(164867,22242,{b=1,f=6,loc=45,lvl=51,phase=15,q=3})}),
 n(9476,{cost={{"i",11078,12}},description="Watchman Doomgrip spawns once all twelve Relic Coffers have been opened using Relic Coffer Keys that can drop from any Dark Iron mob in the instance. Upon defeating all enemies, a hidden door beneath the Dark Coffer will open allowing access to the Secret Safe as well as the Heart of the Mountain.",g={
 o(160836,{description="Relic Coffer Keys can drop from any Dark Iron mob in the instance.",g={
 i(11946,{b=1,f=51,lvl=47,q=2}),
@@ -3164,10 +3164,10 @@ i(11944)}}),
 o(165554,{description="This spawns after defeating Watchman Doomgrip.",g={
 i(11309,{q=1})}}),
 o(161495,{description="This spawns after defeating Watchman Doomgrip.",g={
-s(164872,22256,{b=1,f=4,loc=44,lvl=52,q=3,u=15}),
-s(164850,22205,{b=1,f=7,loc=43,lvl=52,q=3,u=15}),
-s(164871,22254,{b=1,f=27,lvl=52,q=3,u=15}),
-i(22255,{b=1,f=52,lvl=52,q=3,u=15})}})}}),
+s(164872,22256,{b=1,f=4,loc=44,lvl=52,phase=15,q=3}),
+s(164850,22205,{b=1,f=7,loc=43,lvl=52,phase=15,q=3}),
+s(164871,22254,{b=1,f=27,lvl=52,phase=15,q=3}),
+i(22255,{b=1,f=52,lvl=52,phase=15,q=3})}})}}),
 o(164820,{crs={9437,9438,9439,9441,9442,9443},description="Inspect the portrait in front of the coffer room. Opening it will tell you the name of the Dark Keeper you need and where he is located. Only one will spawn each reset.\n\n|cff3399ffDark Keepers:|r\n\n|cFFFFD700Dark Keeper Bethek|r spawns inside the vault room as soon as you open the portrait.\n\n|cFFFFD700Dark Keeper Ofgut|r is located in |cFFFFD700General Angerforge's|r room. When you come down the stairs and are looking straight at |cFFFFD700General Angerforge|r, you will see him located directly to the left near the crystal.\n\n|cFFFFD700Dark Keeper Pelver|r is located in |cFFFFD700The Domicile|r. For quicker access, you can take any of the mole machines and click |cFFFFD700Into the Domicile|r and he will be on top of it.\n\n|cFFFFD700Dark Keeper Uggel|r is quite a close walk; go outside the vault room and turn right to the last room. He is near the entrance where all the golems are.\n\n|cFFFFD700Dark Keeper Vorfalk|r is located at the |cFFFFD700Grim Guzzler|r. When you first enter the room after coming from the bridge, he will be located on your right side in the corner (in front of the band's playing spot).\n\n|cFFFFD700Dark Keeper Zimrel|r is located on the second floor of the |cFFFFD700Ring of Law|r. When entering this floor from the |cFFFFD700East Garrison|r (room with the Shadowforge Lock), you will go around to your right and he will be sitting in the middle of the seats.",g={
 o(160845,{cost={{"i",11197,1}},sharedDescription="Is used to turn in Librams.",g={
 i(11752,{b=1,q=1}),
@@ -3193,7 +3193,7 @@ i(11312,{q=1}),
 s(163421,18044,{b=1,f=23,lvl=52,q=3}),
 s(160317,11735,{b=1,f=5,loc=40,lvl=52,q=3}),
 s(163420,18043,{b=1,f=5,loc=47,lvl=52,q=3}),
-s(164881,22275,{b=1,f=5,loc=47,lvl=52,q=3,u=15})}}),
+s(164881,22275,{b=1,f=5,loc=47,lvl=52,phase=15,q=3})}}),
 e(9543,{description="Speak to him to start the encounter.",npcID=9543,g={
 i(11313,{q=1}),
 r(15296,{itemID=11612,learnedAt=285,q=3,requireSkill=9788}),
@@ -3208,8 +3208,8 @@ e(381,{description="Private Rocknot must be sent into a drunken rage to aggro Ph
 s(160319,11744,{b=1,f=34,lvl=51,q=3}),
 s(160318,11743,{awp=100107,b=1,f=34,lvl=50,q=2,rwp=20001}),
 s(160321,11746,{b=1,f=7,loc=40,lvl=51,q=3}),
-s(164856,22212,{b=1,f=6,loc=41,lvl=51,q=3,u=15}),
-s(164849,22204,{b=1,f=5,loc=43,lvl=55,q=3,u=15}),
+s(164856,22212,{b=1,f=6,loc=41,lvl=51,phase=15,q=3}),
+s(164849,22204,{b=1,f=5,loc=43,lvl=55,phase=15,q=3}),
 s(160320,11745,{b=1,f=7,loc=44,lvl=51,q=3})}}),
 e(384,{npcID=9156,g={
 s(160344,11809,{b=1,f=29,lvl=51,q=3}),
@@ -3221,7 +3221,7 @@ n(8923,{description="This is a Rare Creature and, as such, is not always present
 s(160337,11786,{b=1,f=26,lvl=51,q=3}),
 s(160336,11785,{b=1,f=8,lvl=53,q=3}),
 s(160338,11787,{b=1,f=7,loc=47,lvl=53,q=3}),
-s(164868,22245,{b=1,f=4,loc=47,lvl=51,q=3,u=15})}}),
+s(164868,22245,{b=1,f=4,loc=47,lvl=51,phase=15,q=3})}}),
 e(385,{modelScale=3,npcID=9039,providers={{"o",169243}},g={
 s(160405,11922,{b=1,f=20,lvl=52,q=3}),
 s(160404,11921,{b=1,f=24,lvl=52,q=3}),
@@ -3232,12 +3232,12 @@ s(160409,11926,{b=1,f=6,loc=42,lvl=52,q=3}),
 s(160412,11929,{b=1,f=4,loc=46,lvl=52,q=3}),
 s(160410,11927,{b=1,f=7,loc=46,lvl=52,q=3})}}),
 e(386,{npcID=9938,g={
-s(164853,22208,{b=1,f=24,lvl=53,q=3,u=15}),
+s(164853,22208,{b=1,f=24,lvl=53,phase=15,q=3}),
 s(160416,11935,{b=1,f=1,lvl=53,q=3}),
 s(160321,11746,{b=1,f=7,loc=40,lvl=51,q=3}),
 s(164881,22275,{b=1,f=5,loc=47,lvl=52,q=3}),
-i(22400,{b=1,f=54,lvl=52,q=3,rwp=50004,u=15}),
-i(22395,{b=1,f=54,lvl=52,q=3,rwp=50004,u=15})}}),
+i(22400,{b=1,f=54,lvl=52,phase=15,q=3,rwp=50004}),
+i(22395,{b=1,f=54,lvl=52,phase=15,q=3,rwp=50004})}}),
 n(8929,{description="In order to be eligible for this loot, you need to have completed The Fate of the Kingdom or The Royal Rescue. (Removed in 4.0.3)",sourceQuests={4003,4362},g={
 s(160558,12557,{awp=80100,b=1,f=7,loc=41,lvl=54,q=3,rwp=40003}),
 s(160555,12554,{awp=70302,b=1,f=4,loc=44,lvl=54,q=3,rwp=40003}),
@@ -3252,8 +3252,8 @@ s(160411,11928,{b=1,f=1,lvl=55,q=3}),
 i(11933,{b=1,f=51,lvl=55,q=3}),
 s(160413,11930,{b=1,f=3,lvl=55,q=3}),
 s(160407,11924,{b=1,f=4,loc=42,lvl=55,q=3}),
-s(164849,22204,{b=1,f=5,loc=43,lvl=55,q=3,u=15}),
-s(164852,22207,{b=1,f=6,loc=45,lvl=55,q=3,u=15}),
+s(164849,22204,{b=1,f=5,loc=43,lvl=55,phase=15,q=3}),
+s(164852,22207,{b=1,f=6,loc=45,lvl=55,phase=15,q=3}),
 i(11934,{b=1,f=52,lvl=55,q=3}),
 i(11815,{b=1,f=53,lvl=53,q=3}),
 i(12033,{q=1})}})})}}),
@@ -3469,7 +3469,7 @@ q(5161,{coords={
 q(5162,{coords={
 [1452]={{54.4,51.2}}},lvl=57,maps={1422},qgs={10929},rwp=40003,sourceQuests={5161}})}),
 h(-63,{
-i(22138,{q=1,rwp=40003,u=15}),
+i(22138,{phase=15,q=1,rwp=40003}),
 i(16786,{q=1,rwp=40003}),
 s(162996,16681,{crs={9096},f=6,loc=43,lvl=52,q=3,rwp=40003}),
 s(162995,16680,{f=6,loc=45,lvl=53,q=3,rwp=40003}),
@@ -3491,7 +3491,7 @@ r(18457,{crs={9264},itemID=14513,learnedAt=300,q=4,requireSkill=197}),
 r(19076,{crs={9259},itemID=15749,learnedAt=285,q=2,requireSkill=10658}),
 r(19101,{crs={9260},itemID=15775,learnedAt=300,q=2,requireSkill=10658}),
 r(17574,{crs={9262,9264},itemID=13494,learnedAt=290,q=2,requireSkill=171}),
-i(21982,{crs={9196,9197,9198,9199,9200,9201,9216,9217,9218,10584},q=1,rwp=40003,u=15}),
+i(21982,{crs={9196,9197,9198,9199,9200,9201,9216,9217,9218,10584},phase=15,q=1,rwp=40003}),
 i(12219,{q=1,rwp=40003})}),
 n(9257,{description="DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",g={
 i(9214,{awp=100107,b=1,c={9},f=200,lvl=50,q=2,rwp=40001}),
@@ -3541,7 +3541,7 @@ s(160883,13179,{b=1,f=6,loc=43,lvl=55,q=3}),
 s(162991,16676,{f=6,loc=44,lvl=54,q=3,rwp=40003}),
 s(164862,22231,{b=1,f=4,loc=47,lvl=56,q=3}),
 i(13173,{awp=11101,b=1,f=36,lvl=55,q=3,rwp=20001})}}),
-n(16080,{cost={{"i",22049,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",providers={{"i",22057}},rwp=40003,u=15,g={
+n(16080,{cost={{"i",22049,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",phase=15,providers={{"i",22057}},rwp=40003,g={
 qo(2,{providers={{"i",21984}},questID=8966}),
 qo(2,{providers={{"i",22046}},questID=8989}),
 s(164902,22322,{b=1,f=23,lvl=56,q=3}),
@@ -3569,7 +3569,7 @@ e(392,{cost={{"i",12534,1},{"i",12533,1}},description="Summonable Boss. Loot a R
 i(12712,{f=55,q=1,rwp=40003}),
 i(18784,{lvl=50,q=3,rwp=40001}),
 s(160916,13258,{b=1,f=5,loc=44,lvl=56,q=3}),
-s(164863,22232,{b=1,f=6,loc=45,lvl=56,q=3,u=15}),
+s(164863,22232,{b=1,f=6,loc=45,lvl=56,phase=15,q=3}),
 s(160917,13259,{b=1,f=7,loc=47,lvl=56,q=3}),
 i(13178,{b=1,f=52,lvl=55,q=3})}}),
 e(393,{npcID=9736,g={
@@ -3579,7 +3579,7 @@ s(160910,13252,{b=1,f=5,loc=45,lvl=55,q=3}),
 i(13247,{b=1,description="Contains a random green item.",q=2,rwp=60002})}}),
 e(394,{npcID=10220,g={
 i(13212,{b=1,f=51,lvl=55,q=3}),
-s(164896,22313,{b=1,c={5,8,9},f=4,loc=43,lvl=56,q=3,u=15}),
+s(164896,22313,{b=1,c={5,8,9},f=4,loc=43,lvl=56,phase=15,q=3}),
 s(160897,13211,{b=1,f=6,loc=43,lvl=55,q=3}),
 s(160896,13210,{b=1,f=5,loc=47,lvl=55,q=3})}}),
 e(395,{description="Summoned immediately after Halycon is defeated.",npcID=10268,g={
@@ -3603,22 +3603,22 @@ s(160873,13162,{b=1,f=7,loc=44,lvl=56,q=3}),
 s(162994,16679,{b=1,f=6,loc=41,lvl=55,q=3,rwp=40003}),
 i(13143,{b=1,f=52,lvl=56,q=4}),
 i(13164,{b=1,f=53,lvl=56,q=3,rwp=40003}),
-i(22321,{b=1,f=53,lvl=56,q=3,u=15})}})}),
+i(22321,{b=1,f=53,lvl=56,phase=15,q=3})}})}),
 h(-354,{cost={{"i",12344,1}},g={
 h(-63,{
 i(12607,{crs={10442,10447,10814},q=3,rwp=60002}),
 r(20030,{crs={10317},itemID=16247,learnedAt=295,q=2,requireSkill=333,rwp=60002}),
-r(31016,{c={4},crs={10318},itemID=24102,lvl=60,q=3,rank=9,rwp=40001,u=16}),
+r(31016,{c={4},crs={10318},itemID=24102,lvl=60,phase=16,q=3,rank=9,rwp=40001}),
 s(160918,13260,{f=6,loc=47,lvl=56,q=3})}),
 n(9816,{rwp=60002,g={
-i(21988,{q=1,rwp=40003,u=15}),
+i(21988,{phase=15,q=1,rwp=40003}),
 i(17322,{q=1,rwp=30008}),
 i(12929,{b=1,f=51,lvl=56,q=3}),
 s(160682,12905,{b=1,f=3,lvl=56,q=3}),
 s(160683,12927,{b=1,f=5,loc=41,lvl=56,q=3}),
 s(162987,16672,{f=6,loc=44,lvl=54,q=3,rwp=40003}),
 i(12926,{b=1,f=52,lvl=56,q=3}),
-r(29228,{c={7},itemID=23320,lvl=60,q=3,rank=6,rwp=40001,u=16})}}),
+r(29228,{c={7},itemID=23320,lvl=60,phase=16,q=3,rank=6,rwp=40001})}}),
 s(160954,13371,{b=1,description="Opening this will spawn 8 waves of drake adds in the Leeroy Jenkins room along with Solakar Flamewreath.",f=1,providers={{"o",175245}},q=2,rwp=60002}),
 n(10264,{description="This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",rwp=60002,g={
 r(23081,{itemID=18657,learnedAt=290,q=2,requireSkill=202}),
@@ -3645,7 +3645,7 @@ n(10339,{rwp=60002,g={
 r(17638,{itemID=13522,learnedAt=300,q=2,requireSkill=171,rwp=50004}),
 i(12871,{b=1,q=4}),
 s(160702,12953,{b=1,f=6,loc=40,lvl=55,q=3}),
-s(164860,22225,{b=1,f=4,loc=40,lvl=55,q=3,u=15}),
+s(164860,22225,{b=1,f=4,loc=40,lvl=55,phase=15,q=3}),
 s(160701,12952,{b=1,f=7,loc=40,lvl=55,q=3}),
 s(160704,12960,{b=1,f=5,loc=40,lvl=55,q=3}),
 s(162984,16669,{b=1,f=6,loc=41,lvl=55,q=3,rwp=40003})}}),
@@ -3662,10 +3662,10 @@ s(160689,12936,{b=1,f=7,loc=43,lvl=58,q=3}),
 s(163428,18104,{b=1,f=6,loc=45,lvl=58,q=3}),
 s(160688,12935,{b=1,f=7,loc=46,lvl=58,q=3}),
 s(163427,18102,{b=1,f=4,loc=47,lvl=58,q=3}),
-s(164869,22247,{b=1,f=4,loc=47,lvl=58,q=3,u=15}),
+s(164869,22247,{b=1,f=4,loc=47,lvl=58,phase=15,q=3}),
 i(18103,{b=1,f=52,lvl=58,q=3})}}),
 n(10430,{rwp=60002,g={
-r(31018,{c={11},itemID=24101,lvl=60,q=3,rank=5,rwp=40001,u=16}),
+r(31018,{c={11},itemID=24101,lvl=60,phase=16,q=3,rank=5,rwp=40001}),
 s(160606,12709,{b=1,f=20,lvl=58,q=3}),
 s(160713,12969,{b=1,f=24,lvl=58,q=3}),
 s(160711,12967,{b=1,f=3,lvl=58,q=3}),
@@ -3675,11 +3675,11 @@ s(160710,12966,{b=1,f=5,loc=43,lvl=58,q=3}),
 s(160707,12963,{b=1,f=5,loc=46,lvl=58,q=3}),
 s(160709,12965,{b=1,f=4,loc=46,lvl=58,q=3}),
 s(160708,12964,{b=1,f=6,loc=46,lvl=58,q=3}),
-s(164895,22311,{b=1,c={5,8,9},f=4,loc=47,lvl=56,q=3,rwp=40003,u=15}),
-i(19227,{q=3,u=13}),
+s(164895,22311,{b=1,c={5,8,9},f=4,loc=47,lvl=56,phase=15,q=3,rwp=40003}),
+i(19227,{phase=13,q=3}),
 prof(393,{cost={{"i",19901,1},{"i",12709,1}},description="You must have 315 Skinning skill. This can only be accomplished with the Zulian Slicer or Pip's Skinner.",g={
 i(12731,{q=4})}})}}),
-n(16042,{cost={{"i",22056,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",providers={{"i",22057}},rwp=40003,u=15,g={
+n(16042,{cost={{"i",22056,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",phase=15,providers={{"i",22057}},rwp=40003,g={
 s(164910,22336,{b=1,f=8,lvl=58,q=3}),
 s(164909,22335,{b=1,f=28,lvl=58,q=3}),
 s(164890,22302,{b=1,c={5,8,9},f=4,loc=40,lvl=58,q=3}),
@@ -3695,8 +3695,8 @@ r(19054,{b=1,itemID=15730,learnedAt=300,q=3,requireSkill=10656}),
 r(17635,{itemID=13519,learnedAt=300,q=2,requireSkill=171}),
 s(160567,12592,{b=1,f=26,lvl=58,q=4}),
 s(160569,12602,{b=1,f=8,lvl=58,q=3}),
-s(164870,22253,{b=1,f=1,lvl=58,q=3,u=15}),
-s(164874,22267,{b=1,f=4,loc=40,lvl=60,q=3,u=15}),
+s(164870,22253,{b=1,f=1,lvl=58,phase=15,q=3}),
+s(164874,22267,{b=1,f=4,loc=40,lvl=60,phase=15,q=3}),
 i(13141,{b=1,f=51,lvl=58,q=3}),
 s(162989,16674,{b=1,f=6,loc=42,lvl=58,q=3,rwp=40003}),
 s(163045,16730,{b=1,f=7,loc=42,lvl=58,q=3,rwp=40003}),
@@ -3707,17 +3707,17 @@ s(163003,16688,{b=1,f=4,loc=42,lvl=58,q=3,rwp=40003}),
 s(163036,16721,{b=1,f=5,loc=42,lvl=58,q=3,rwp=40003}),
 s(162981,16666,{b=1,f=6,loc=42,lvl=58,q=3,rwp=40003}),
 s(163021,16706,{b=1,f=5,loc=42,lvl=58,q=3,rwp=40003}),
-s(164875,22269,{b=1,f=3,lvl=58,q=3,u=15}),
+s(164875,22269,{b=1,f=3,lvl=58,phase=15,q=3}),
 s(160864,13142,{b=1,f=7,loc=45,lvl=58,q=3}),
 i(13098,{b=1,f=52,lvl=58,q=3}),
-i(22268,{b=1,f=53,lvl=58,q=3,u=15})}})}})}}),
-inst(230,{awp=10200,lore="Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",lvl=44,mapID=234,maps={240},savedInstanceID=429,u=1101,zoneTextAreaIDs={2557,2577,3217},g={
+i(22268,{b=1,f=53,lvl=58,phase=15,q=3})}})}})}}),
+inst(230,{awp=10200,lore="Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",lvl=44,mapID=234,maps={240},phase=1101,savedInstanceID=429,zoneTextAreaIDs={2557,2577,3217},g={
 h(-12,{
 ach(5788,{icon=133736,maps={236,237,238},minReputation={809,42000},rwp=40003}),
 ach(644,{maps={235,236,237,238,239}})}),
 h(-31,{
 faction(809,{maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",200,42000)end	end,rwp=40003,g={
-crit(8825,{achID=2336,id=5,u=13})}}),
+crit(8825,{achID=2336,id=5,phase=13})}}),
 faction(169,{icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true})local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1})addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999)addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999)end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000)addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",150,42000)addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",50,42000)end	end})}),
 h(-45,{
 q(1193,{cost={{"i",3829,1},{"i",15994,1}},description="Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",lvl=56,maps={235},providers={{"o",179485}},repeatable=1,rwp=40003}),
@@ -3749,11 +3749,11 @@ qo(1,{providers={{"o",179544}}})}}),
 q(7481,{coords={
 [1444]={{75.3,43.8}}},lvl=54,maps={236,237,238},qgs={14373},r=1,rwp=40003,g={
 qo(1,{providers={{"o",179544}}})}}),
-q(7649,{cost={{"i",18780,1},{"i",18779,1}},maps={236,250,251,252,253,254,255},providers={{"n",14368}},qss={18769},requireSkill=9788,rwp=40003,u=13,g={
+q(7649,{cost={{"i",18780,1},{"i",18779,1}},maps={236,250,251,252,253,254,255},phase=13,providers={{"n",14368}},qss={18769},requireSkill=9788,rwp=40003,g={
 r(16745,{b=1,itemID=12727,learnedAt=300,q=3,requireSkill=9788})}}),
-q(7650,{cost={{"i",18782,1},{"i",18781,1}},lvl=50,maps={236,317,476},providers={{"n",14368}},qss={18770},requireSkill=9788,rwp=40003,u=13,g={
+q(7650,{cost={{"i",18782,1},{"i",18781,1}},lvl=50,maps={236,317,476},phase=13,providers={{"n",14368}},qss={18770},requireSkill=9788,rwp=40003,g={
 r(16744,{b=1,itemID=12726,learnedAt=300,q=3,requireSkill=9788})}}),
-q(7651,{cost={{"i",18784,1},{"i",18783,1}},lvl=50,maps={236,237,238,250,251,252,253,254,255,317},providers={{"n",14368}},qss={18771},requireSkill=9788,rwp=40003,u=13,g={
+q(7651,{cost={{"i",18784,1},{"i",18783,1}},lvl=50,maps={236,237,238,250,251,252,253,254,255,317},phase=13,providers={{"n",14368}},qss={18771},requireSkill=9788,rwp=40003,g={
 r(16742,{b=1,itemID=12725,learnedAt=300,q=3,requireSkill=9788})}}),
 q(7494,{coords={
 [1453]={{54.8,62.6}},
@@ -3828,7 +3828,7 @@ i(18640,{f=55,q=1}),
 i(18333,{f=200,lvl=50,q=2}),
 i(18334,{f=200,lvl=50,q=2}),
 i(18332,{f=200,lvl=50,q=2}),
-i(21982,{crs={11440,11441,11442,11443,11444,11445,11448,11450,14351},q=1,rwp=40003,u=15})}}),
+i(21982,{crs={11440,11441,11442,11443,11444,11445,11448,11450,14351},phase=15,q=1,rwp=40003})}}),
 h(-19,{description="The following items can drop from any boss in Dire Maul and also from Dusty Tomes on the ground.",maps={235,236,237,238,239},providers={{"o",179547}},g={
 i(18357,{c={1},lvl=54,q=3,rwp=40003}),
 i(18360,{c={9},lvl=54,q=3,rwp=40003}),
@@ -3870,7 +3870,7 @@ i(18317,{b=1,f=51,lvl=53,q=3}),
 s(163454,18305,{b=1,f=7,loc=46,lvl=53,q=2}),
 s(163456,18307,{b=1,f=4,loc=47,lvl=53,q=2}),
 s(163468,18322,{b=1,f=5,loc=47,lvl=53,q=3}),
-i(19268,{q=3,u=13})}}),
+i(19268,{phase=13,q=3})}}),
 e(402,{npcID=11490,g={
 s(163469,18323,{b=1,f=32,lvl=53,q=3}),
 s(163457,18308,{b=1,f=5,loc=40,lvl=53,q=2}),
@@ -3878,7 +3878,7 @@ s(163465,18319,{b=1,f=6,loc=40,lvl=53,q=3}),
 s(163462,18313,{b=1,f=7,loc=40,lvl=53,q=3}),
 s(163455,18306,{b=1,f=4,loc=44,lvl=53,q=2})}}),
 n(11491,{description="Talk to him for him to break down the door."}),
-n(16097,{cost={{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",providers={{"i",22057}},rwp=40003,u=15,g={
+n(16097,{cost={{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",phase=15,providers={{"i",22057}},rwp=40003,g={
 qo(2,{awp=10200,providers={{"i",21984}},questID=8967}),
 qo(2,{awp=10200,providers={{"i",22046}},questID=8990}),
 s(164898,22315,{awp=10200,b=1,f=23,lvl=56,q=3}),
@@ -3969,7 +3969,7 @@ s(163594,18527,{b=1,f=6,loc=44,lvl=58,q=3}),
 s(163591,18524,{b=1,f=6,loc=46,lvl=58,q=3}),
 s(163589,18521,{b=1,f=7,loc=47,lvl=58,q=3}),
 i(18522,{b=1,f=52,lvl=58,q=3}),
-i(19258,{q=3,u=13}),
+i(19258,{phase=13,q=3}),
 i(18780,{lvl=50,q=3,rwp=40003}),
 crit(547,{achID=644,id=1})}}),
 o(179564,{description="Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.\n\nA full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",modelScale=3,providers={{"n",14353}},g={
@@ -4002,13 +4002,13 @@ r(22902,{itemID=18487,learnedAt=300,q=1,requireSkill=197})})}),
 h(-63,{
 s(163477,18339,{crs={11471,11472,11473,11475},f=3,lvl=54,q=2}),
 i(18340,{crs={11471,11472,11473,11475},f=51,lvl=54,q=3}),
-i(22224,{crs={11469,11470,11471,11472,11473,11475},q=1,u=15}),
+i(22224,{crs={11469,11470,11471,11472,11473,11475},phase=15,q=1}),
 s(163475,18337,{crs={11480,11483,11484,14399},f=4,loc=43,lvl=54,q=2}),
 i(18343,{crs={11458,11459,14303},f=52,lvl=59,q=2}),
 s(163480,18344,{crs={11458,11459,14303},f=5,loc=44,lvl=54,q=3}),
 s(163476,18338,{crs={11480,11483,11484,14399},f=27,lvl=54,q=3})}),
 e(408,{npcID=11487,g={
-r(27660,{itemID=22309,learnedAt=300,q=2,requireSkill=197,u=15}),
+r(27660,{itemID=22309,learnedAt=300,phase=15,q=2,requireSkill=197}),
 i(18397,{b=1,f=51,lvl=56,q=3}),
 s(163495,18374,{b=1,f=5,loc=41,lvl=57,q=3}),
 s(163485,18350,{b=1,f=3,lvl=56,q=2}),
@@ -4683,7 +4683,7 @@ inst(246,{coords={
 [1422]={{69.07,72.96}}},cost={{"i",13704,1}},lore="The Scholomance is housed within a series of crypts that lie beneath the ruined keep of Caer Darrow. Once owned by the noble Barov family, Caer Darrow fell to ruin following the Second War. As the wizard Kel'thuzad enlisted followers for his Cult of the Damned he would often promise immortality in exchange for serving his Lich King. The Barov family fell to Kel'thuzad's charismatic influence and donated the keep and its crypts to the Scourge. The cultists then killed the Barovs and turned the ancient crypts into a school for necromancy known as the Scholomance. Though Kel'thuzad no longer resides in the crypts, devoted cultists and instructors still remain. The powerful lich, Ras Frostwhisper, rules over the site and guards it in the Scourge's name - while the mortal necromancer, Darkmaster Gandling, serves as the school's insidious headmaster.",lvl=55,mapID=476,maps={306,307,308,309},savedInstanceID=289,sourceQuests={5505,5511},zoneTextAreaID=2057,g={
 h(-45,{awp=10300,rwp=50004,g={
 q(8259,{altQuests={8258},awp=10700,c={7},coords={
-[1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=40003,sourceQuests={7668},u=14,g={
+[1454]={{38.7,35.9}}},lvl=55,phase=14,qgs={13417},r=1,rwp=40003,sourceQuests={7668},g={
 s(164185,20134,{b=1,f=6,loc=40,q=4})}}),
 q(7666,{c={2},coords={
 [1453]={{37.6,32.6}}},lvl=60,qgs={928},r=2,repeatable=1,rwp=40003,sourceQuests={7647},g={
@@ -4779,7 +4779,7 @@ q(7668,{c={7},coords={
 qo(1,{awp=10300,crs={14516},providers={{"i",18880}},rwp=50004}),
 s(163692,18807,{b=1,f=6,loc=40,q=3,u=2})}}),
 q(8258,{altQuests={7668},awp=10700,c={7},coords={
-[1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=40003,sourceQuests={7667},u=14,g={
+[1454]={{38.7,35.9}}},lvl=55,phase=14,qgs={13417},r=1,rwp=40003,sourceQuests={7667},g={
 qo(1,{awp=10300,crs={14516},providers={{"i",18880}},rwp=50004}),
 s(164185,20134,{b=1,f=6,loc=40,q=4})}}),
 q(5462,{coords={
@@ -4819,7 +4819,7 @@ r(20035,{crs={10469},itemID=16255,learnedAt=300,q=2,requireSkill=333}),
 r(20032,{crs={10499},itemID=16254,learnedAt=300,q=3,requireSkill=333}),
 r(19102,{awp=11101,crs={11582},itemID=15776,learnedAt=300,q=2,requireSkill=165,rwp=40003}),
 r(19098,{awp=11101,crs={10499},itemID=15773,learnedAt=300,q=2,requireSkill=165,rwp=40003}),
-i(22526,{q=1,u=16}),
+i(22526,{phase=16,q=1}),
 i(12843,{awp=11101,b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=2,rwp=40003}),
 i(12841,{awp=11101,b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
 i(12840,{awp=11101,b=1,description="Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
@@ -4859,7 +4859,7 @@ i(13725,{q=1}),
 o(180794,{description="Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",g={
 r(26086,{learnedAt=285,requireSkill=197})}}),
 s(161572,14541,{b=1,f=26,lvl=56,q=3}),
-s(164926,22394,{b=1,f=28,lvl=57,q=3,u=15}),
+s(164926,22394,{b=1,f=28,lvl=57,phase=15,q=3}),
 s(163632,18689,{b=1,f=3,lvl=57,q=3}),
 s(163016,16701,{b=1,f=4,loc=41,lvl=55,q=3,rwp=40003}),
 s(161575,14548,{b=1,f=6,loc=41,lvl=57,q=3}),
@@ -4905,7 +4905,7 @@ s(161467,14340,{b=1,f=4,loc=42,lvl=57,q=3}),
 s(161556,14502,{b=1,f=5,loc=45,lvl=57,q=3}),
 s(161558,14522,{b=1,f=6,loc=46,lvl=57,q=3}),
 s(163636,18694,{b=1,f=6,loc=47,lvl=57,q=3})}}),
-n(16118,{cost={{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.",providers={{"i",22057}},rwp=40003,u=15,g={
+n(16118,{cost={{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.",phase=15,providers={{"i",22057}},rwp=40003,g={
 s(164907,22332,{awp=10300,b=1,f=25,lvl=57,q=3}),
 s(164908,22333,{awp=10300,b=1,f=24,lvl=57,q=3}),
 s(164891,22303,{b=1,c={5,8,9},f=4,loc=46,lvl=57,q=3}),
@@ -4937,8 +4937,8 @@ s(161644,14626,{b=1,f=4,loc=42,lvl=56,q=3}),
 s(161645,14629,{b=1,f=4,loc=43,lvl=56,q=3}),
 s(161647,14632,{b=1,f=4,loc=46,lvl=56,q=3}),
 s(161646,14631,{b=1,f=4,loc=47,lvl=56,q=3}),
-i(23201,{b=1,f=54,lvl=60,q=3,u=15}),
-i(23200,{b=1,f=54,lvl=60,q=3,u=15})}}),
+i(23201,{b=1,f=54,lvl=60,phase=15,q=3}),
+i(23200,{b=1,f=54,lvl=60,phase=15,q=3})}}),
 n(10505,{awp=10300,rwp=50004,g={
 s(163025,16710,{f=5,loc=43,lvl=52,q=3,rwp=40003})}}),
 n(11261,{awp=10300,rwp=50004,g={
@@ -4971,8 +4971,8 @@ s(161189,13944,{b=1,f=5,loc=42,lvl=57,q=3}),
 s(161191,13951,{b=1,f=7,loc=43,lvl=57,q=3}),
 s(161190,13950,{b=1,description="This item seems to have disappeared in Classic. If you get this item in any game flavor, please screenshot this and send it directly to @Crieve on Discord!",f=6,loc=45,lvl=57,q=3,rwp=20001}),
 s(160977,13398,{b=1,f=5,loc=47,lvl=57,q=3}),
-i(22433,{b=1,f=52,lvl=58,q=3,u=15}),
-i(19276,{q=3,u=13})}})}}),
+i(22433,{b=1,f=52,lvl=58,phase=15,q=3}),
+i(19276,{phase=13,q=3})}})}}),
 inst(64,{coords={
 [1421]={{36.6,65.6}}},lore="During the Third War, the wizards of the Kirin Tor battled against the undead armies of the Scourge. When the wizards of Dalaran died in battle, they would rise soon after - adding their former might to the growing Scourge. Frustrated by their lack of progress (and against the advice of his peers) the Archmage, Arugal elected to summon extra-dimensional entities to bolster Dalaran's diminishing ranks. Arugal's summoning brought the ravenous worgen into the world of Azeroth. The feral wolf-men slaughtered not only the Scourge, but quickly turned on the wizards themselves. The worgen sieged the keep of the noble, Baron Silverlaine. Situated above the tiny hamlet of Pyrewood, the keep quickly fell into shadow and ruin. Driven mad with guilt, Arugal adopted the worgen as his children and retreated to the newly dubbed 'Shadowfang Keep'. It's said he still resides there, protected by his massive pet, Fenrus - and haunted by the vengeful ghost of Baron Silverlaine.",lvl=14,mapID=310,maps={311,312,313,314,315,316},savedInstanceID=33,zoneTextAreaID=209,g={
 h(-45,{
@@ -5125,7 +5125,7 @@ h(-56,{
 o(181085,{
 i(13180,{b=1,q=1})})}),
 h(-63,{
-i(22526,{q=1,u=16}),
+i(22526,{phase=16,q=1}),
 i(12843,{b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=2,rwp=40003}),
 i(12841,{b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
 i(12840,{b=1,description="Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
@@ -5202,12 +5202,12 @@ i(13351,{q=1,rwp=40003}),
 r(16983,{awp=30002,description="You must be a Blacksmith in order to loot this from the Plans on the floor.",itemID=12827,learnedAt=285,q=2,requireSkill=17040,rwp=20001})}}),
 e(446,{npcID=10997,g={
 r(16995,{itemID=12839,learnedAt=300,q=3,requireSkill=9787}),
-s(164929,22406,{b=1,f=28,lvl=56,q=3,u=15}),
-s(164927,22404,{b=1,f=34,lvl=56,q=3,u=15}),
+s(164929,22406,{b=1,f=28,lvl=56,phase=15,q=3}),
+s(164927,22404,{b=1,f=34,lvl=56,phase=15,q=3}),
 s(160961,13380,{b=1,f=31,lvl=56,q=3}),
-s(164930,22407,{b=1,f=5,loc=40,lvl=56,q=3,u=15}),
-i(22403,{b=1,f=51,lvl=56,q=3,u=15}),
-s(164928,22405,{b=1,f=4,loc=41,lvl=56,q=3,u=15}),
+s(164930,22407,{b=1,f=5,loc=40,lvl=56,phase=15,q=3}),
+i(22403,{b=1,f=51,lvl=56,phase=15,q=3}),
+s(164928,22405,{b=1,f=4,loc=41,lvl=56,phase=15,q=3}),
 s(163023,16708,{b=1,f=5,loc=41,lvl=55,q=3,rwp=40003}),
 s(163654,18721,{b=1,f=6,loc=45,lvl=56,q=3}),
 s(160962,13381,{b=1,f=7,loc=47,lvl=56,q=3}),
@@ -5215,7 +5215,7 @@ i(13382,{b=1,f=53,lvl=56,q=3}),
 i(13377,{b=1,f=37,lvl=56,q=3,rwp=40001})}}),
 e(448,{npcID=10811,g={
 i(14679,{description="Found on the wall near Archivist Galford.",q=1}),
-r(28612,{c={8},itemID=22897,lvl=60,q=3,rank=7,rwp=40001,u=16}),
+r(28612,{c={8},itemID=22897,lvl=60,phase=16,q=3,rank=7,rwp=40001}),
 s(160965,13385,{b=1,f=1,lvl=56,q=3}),
 s(160966,13386,{b=1,f=3,lvl=56,q=3}),
 s(163007,16692,{f=4,loc=44,lvl=54,q=3,rwp=40003}),
@@ -5236,7 +5236,7 @@ s(163653,18720,{b=1,f=4,loc=41,lvl=58,q=3}),
 s(160948,13358,{b=1,f=5,loc=41,lvl=58,q=3}),
 s(160953,13369,{b=1,f=4,loc=47,lvl=58,q=3}),
 s(163040,16725,{b=1,f=7,loc=47,lvl=54,q=3,rwp=40003})}}),
-n(16102,{awp=11101,cost={{"i",22051,1}},crs={16101},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits. Unfortunately, after the modifications made to the instance with 4.0.3, these drops become truly unobtainable even with the brazier.",providers={{"i",22057},{"o",181083}},rwp=40003,u=15,g={
+n(16102,{awp=11101,cost={{"i",22051,1}},crs={16101},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits. Unfortunately, after the modifications made to the instance with 4.0.3, these drops become truly unobtainable even with the brazier.",phase=15,providers={{"i",22057},{"o",181083}},rwp=40003,g={
 qo(2,{providers={{"i",21984}},questID=8968}),
 qo(2,{providers={{"i",22046}},questID=8991}),
 s(164905,22329,{b=1,f=1,lvl=58,q=3}),
@@ -5244,7 +5244,7 @@ i(22327,{b=1,f=51,lvl=58,q=3}),
 s(164889,22301,{b=1,c={5,8,9},f=4,loc=42,lvl=58,q=3}),
 s(164904,22328,{b=1,f=7,loc=46,lvl=58,q=3}),
 i(22334,{b=1,f=52,lvl=57,q=3})}}),
-n(16387,{description="Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",rwp=30002,u=16,g={
+n(16387,{description="Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",phase=16,rwp=30002,g={
 s(165056,22736,{b=1,collectible=false,description="He drops this midway through the encounter and one lucky DPS can wield this. However, it is a conjured item and will disappear after a few minutes.",f=25,lvl=60,q=5})}})}}),
 h(-366,{coords={
 [1423]={{48.18,21.9}}},cost={{"i",12382,1}},providers={{"o",175369}},g={
@@ -5302,7 +5302,7 @@ s(163658,18727,{b=1,f=4,loc=40,lvl=54,q=3}),
 s(160958,13376,{b=1,f=3,lvl=54,q=3}),
 s(163657,18726,{b=1,f=5,loc=43,lvl=54,q=3}),
 s(163655,18722,{b=1,f=7,loc=44,lvl=57,q=3}),
-i(23198,{b=1,f=54,lvl=60,q=3,rwp=50004,u=15})}}),
+i(23198,{b=1,f=54,lvl=60,phase=15,q=3,rwp=50004})}}),
 e(455,{npcID=10439,g={
 i(15880,{q=1}),
 s(160955,13372,{b=1,f=28,lvl=55,q=3}),
@@ -5318,16 +5318,16 @@ ach(729,{providers={{"i",13335}}}),
 mnt(17481,{b=1,itemID=13335,lvl=60,q=3}),
 s(160994,13505,{b=1,f=26,lvl=58,q=4}),
 s(160952,13368,{b=1,f=20,lvl=57,q=3}),
-s(164931,22408,{b=1,f=27,lvl=58,q=3,u=15}),
+s(164931,22408,{b=1,f=27,lvl=58,phase=15,q=3}),
 s(160946,13349,{b=1,f=23,lvl=58,q=3}),
 s(160951,13361,{b=1,f=25,lvl=58,q=3}),
-s(164934,22411,{b=1,f=7,loc=40,lvl=58,q=3,u=15}),
-s(164935,22412,{b=1,f=4,loc=41,lvl=58,q=3,u=15}),
+s(164934,22411,{b=1,f=7,loc=40,lvl=58,phase=15,q=3}),
+s(164935,22412,{b=1,f=4,loc=41,lvl=58,phase=15,q=3}),
 s(160941,13340,{b=1,f=3,lvl=58,q=3}),
 s(160944,13346,{b=1,f=4,loc=42,lvl=58,q=3}),
-s(164932,22409,{b=1,f=5,loc=42,lvl=58,q=3,u=15}),
+s(164932,22409,{b=1,f=5,loc=42,lvl=58,phase=15,q=3}),
 s(160943,13344,{b=1,f=6,loc=44,lvl=58,q=3}),
-s(164933,22410,{b=1,f=6,loc=44,lvl=58,q=3,u=15}),
+s(164933,22410,{b=1,f=6,loc=44,lvl=58,phase=15,q=3}),
 i(13345,{b=1,f=52,lvl=58,q=3}),
 s(162993,16678,{b=1,f=6,loc=46,lvl=56,q=3}),
 s(163009,16694,{b=1,f=4,loc=46,lvl=56,q=3}),
@@ -5494,19 +5494,19 @@ inst(237,{coords={
 [1435]={{69.2,54.8}}},lore="Over a thousand years ago, the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, attempted to bring back an ancient blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire buckled in upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows. There they erected a great temple to Hakkar - where they could prepare for his arrival into the physical world. The great dragon Aspect, Ysera, learned of the Atal'ai's plans and smashed the temple beneath the marshes. To this day, the temple's drowned ruins are guarded by the green dragons who prevent anyone from getting in or out. However, it is believed that some of the fanatical Atal'ai may have survived Ysera's wrath - and recommitted themselves to the dark service of Hakkar.",lvl=45,mapID=220,savedInstanceID=109,zoneTextAreaIDs={1417,1477},g={
 h(-45,{
 q(9053,{c={11},coords={
-[1449]={{71.6,76}}},lvl=50,qgs={9619},rwp=40003,sourceQuests={9051},u=14,g={
+[1449]={{71.6,76}}},lvl=50,phase=14,qgs={9619},rwp=40003,sourceQuests={9051},g={
 qo(1,{providers={{"i",22444}}}),
 s(164960,22458,{b=1,f=28,q=3}),
 s(164878,22272,{b=1,f=5,loc=42,q=3}),
 s(164880,22274,{b=1,f=5,loc=42,q=3})}}),
 q(8257,{c={5},coords={
-[1447]={{42.2,42.6}}},lvl=50,qgs={8405},rwp=40003,sourceQuests={8256},u=14,g={
+[1447]={{42.2,42.6}}},lvl=50,phase=14,qgs={8405},rwp=40003,sourceQuests={8256},g={
 qo(1,{crs={5719},providers={{"i",20025}}}),
 i(19990,{b=1,f=53,q=3}),
 i(20006,{b=1,f=52,q=3}),
 s(164137,20082,{b=1,f=27,q=3})}}),
 q(8413,{c={7},coords={
-[1416]={{80.4,66.8}}},lvl=50,qgs={6176},r=1,rwp=40003,sourceQuests={8412},u=14,g={
+[1416]={{80.4,66.8}}},lvl=50,phase=14,qgs={6176},r=1,rwp=40003,sourceQuests={8412},g={
 qo(1,{providers={{"i",20606}}}),
 qo(2,{providers={{"i",20607}}}),
 qo(3,{providers={{"i",20608}}}),
@@ -5514,13 +5514,13 @@ s(164275,20369,{b=1,f=6,loc=44,q=3}),
 i(20503,{b=1,f=53,q=3}),
 s(164322,20556,{b=1,f=28,q=3})}}),
 q(8253,{c={8},coords={
-[1447]={{29.6,40.6}}},lvl=50,qgs={8379},rwp=40003,sourceQuests={8252},u=14,g={
+[1447]={{29.6,40.6}}},lvl=50,phase=14,qgs={8379},rwp=40003,sourceQuests={8252},g={
 qo(1,{crs={5719},providers={{"i",20085}}}),
 s(164109,20035,{b=1,f=20,q=3}),
 i(20036,{b=1,f=53,q=3}),
 i(20037,{b=1,f=51,q=3})}}),
 q(8418,{c={2},coords={
-[1422]={{42.8,84}}},lvl=50,qgs={10838},r=2,rwp=40003,sourceQuests={8416},u=14,g={
+[1422]={{42.8,84}}},lvl=50,phase=14,qgs={10838},r=2,rwp=40003,sourceQuests={8416},g={
 qo(1,{providers={{"i",20606}}}),
 qo(2,{providers={{"i",20607}}}),
 qo(3,{providers={{"i",20608}}}),
@@ -5545,7 +5545,7 @@ qo(1,{providers={{"i",6212}}}),
 s(160220,11124,{b=1,f=6,loc=40,q=3}),
 s(160219,11123,{b=1,f=4,loc=46,q=3})}}),
 q(8236,{c={4},coords={
-[1447]={{29.6,40.6}}},lvl=50,maps={1424},qgs={8379},rwp=40003,sourceQuests={8235},u=14,g={
+[1447]={{29.6,40.6}}},lvl=50,maps={1424},phase=14,qgs={8379},rwp=40003,sourceQuests={8235},g={
 qo(1,{crs={5719},providers={{"i",20022}}}),
 s(164093,19982,{b=1,f=3,q=3}),
 s(164095,19984,{b=1,f=5,loc=40,q=3}),
@@ -5561,7 +5561,7 @@ s(160147,10749,{b=1,f=7,loc=40,q=3}),
 s(160148,10750,{b=1,f=20,q=3}),
 s(160149,10751,{b=1,f=4,loc=40,q=3})}}),
 q(8232,{c={3},coords={
-[1447]={{42.2,42.6}}},lvl=50,qgs={8405},rwp=40003,sourceQuests={8231},u=14,g={
+[1447]={{42.2,42.6}}},lvl=50,phase=14,qgs={8405},rwp=40003,sourceQuests={8231},g={
 qo(1,{crs={5719},providers={{"i",20019}}}),
 i(19991,{b=1,f=53,q=3}),
 i(19992,{b=1,f=53,q=3}),
@@ -5571,7 +5571,7 @@ q(1445,{coords={
 qo(1,{providers={{"i",6181}}}),
 i(1490,{b=1,f=53,q=2})}}),
 q(8422,{c={9},coords={
-[1448]={{41.6,45}}},lvl=50,qgs={14470},rwp=40003,sourceQuests={8421},u=14,g={
+[1448]={{41.6,45}}},lvl=50,phase=14,qgs={14470},rwp=40003,sourceQuests={8421},g={
 qo(1,{providers={{"i",20606}}}),
 qo(2,{providers={{"i",20607}}}),
 qo(3,{providers={{"i",20608}}}),
@@ -5579,7 +5579,7 @@ i(20534,{b=1,f=53,q=3}),
 s(164314,20530,{b=1,f=4,loc=42,q=3}),
 s(164315,20536,{b=1,f=28,q=3})}}),
 q(8425,{c={1},coords={
-[1435]={{34.3,66.2}}},lvl=50,qgs={7572},rwp=40003,sourceQuests={8424},u=14,g={
+[1435]={{34.3,66.2}}},lvl=50,phase=14,qgs={7572},rwp=40003,sourceQuests={8424},g={
 qo(1,{providers={{"i",20606}}}),
 qo(2,{providers={{"i",20607}}}),
 qo(3,{providers={{"i",20608}}}),

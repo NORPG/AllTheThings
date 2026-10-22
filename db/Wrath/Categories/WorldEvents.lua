@@ -6,14 +6,14 @@ categories.WorldEvents=
 h(-734,{SortPriority=75,g={
 h(-103,{
 x(2,{awp=20003,g={
-h(-482,{lvl=55,maps={1419},rwp=20505,u=2,g={
+h(-482,{lvl=55,maps={1419},phase=1701,rwp=20505,u=2,g={
 q(10259,{coords={
 [1419]={{58.25,55.05}}},lvl=55,qgs={19942},u=2,g={
 ach(2079,{providers={{"i",28788}},u=2}),
 s(139134,28788,{b=1,f=9,q=1,u=2})}})}})}}),
 x(3,{awp=30003})}),
-h(-723,{awp=10400,lvl=60,rwp=40003,u=12,g={
-h(-19,{awp=10600,crs={14454,14457,14461,14464},u=13,g={
+h(-723,{awp=10400,lvl=60,phase=12,rwp=40003,g={
+h(-19,{awp=10600,crs={14454,14457,14461,14464},phase=13,g={
 i(19268,{q=3})}}),
 n(14464,{coords={
 [1447]={{72.6,20},{77,24.2},{77.2,16.6},{80,24.2},{82.6,21}}},description="This is only available during an Elemental Invasion.",g={
@@ -34,10 +34,10 @@ n(14454,{coords={
 r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=165}),
 s(129580,18676,{f=6,loc=45,lvl=56,q=3}),
 s(129581,18677,{f=3,lvl=56,q=2})}})}}),
-h(-476,{awp=30403,e=444,rwp=40001,u=3302,g={
+h(-476,{awp=30403,e=444,phase=3302,rwp=40001,g={
 p(4532,{e=444,petTypeID=9,spellID=446916}),
 mnt(446902,{e=444})}}),
-h(-481,{maps={1454,1455},rwp=20001,u=2,g={
+h(-481,{maps={1454,1455},phase=1501,rwp=20001,u=2,g={
 h(-210,{r=2,u=2,g={
 q(8811,{coords={
 [1453]={{55.2,64.7}},
@@ -404,7 +404,7 @@ q(8793,{coords={
 q(8794,{coords={
 [1454]={{30.3,67.6}}},lvl=10,qgs={15704},r=1,u=2}),
 q(10500,{isBreadcrumb=1,lvl=10,qgs={21155},r=1,u=2})}}),
-h(-45,{u=2,g={
+h(-45,{phase=1503,u=2,g={
 q(8857,{crs={15742},lvl=51,qss={21534},u=2,g={
 i(21528,{b=1,q=2,u=2})}}),
 q(8858,{crs={15741},lvl=51,qss={21535},u=2,g={
@@ -419,7 +419,7 @@ i(21510,{b=1,description="Contains a random assortment of common, uncommon, and 
 i(21511,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 30-32.",q=1,u=2}),
 i(21512,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 40-42.",q=1,u=2}),
 i(21513,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 50-52.",q=1,u=2})}})}}),
-h(-483,{awp=10900,lvl=60,maps={75,1446},rwp=40003,u=15,g={
+h(-483,{awp=10900,lvl=60,maps={75,1446},phase=15,rwp=40003,g={
 h(-45,{
 q(8519,{coords={
 [1451]={{28.7,89.1}}},lvl=60,minReputation={910,0},providers={{"o",180633}},sourceQuests={8305}}),
@@ -428,7 +428,7 @@ q(8303,{coords={
 q(8575,{coords={
 [1447]={{57,85.6}}},lvl=60,providers={{"i",20949}},qgs={15481},sourceQuests={8555}}),
 q(8743,{coords={
-[1451]={{25.7,90.9}}},lvl=60,providers={{"o",180717}},qis={21175},sourceQuests={8742},u=1502,g={
+[1451]={{25.7,90.9}}},lvl=60,phase=1502,providers={{"o",180717}},qis={21175},sourceQuests={8742},g={
 ach(416,{sourceQuests={8743}}),
 title(33,{awp=20003}),
 mnt(26656,{b=1,itemID=21176,lvl=40,q=5})}}),
@@ -530,7 +530,7 @@ q(8286,{coords={
 [1451]={{49.5,36.4}}},description="This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",lvl=60,qgs={15180}})}),
 h(-47,{
 i(20402,{b=1,cost={{"i",20403,1}},description="A friendly player can use their Proxy of Nozdormu to grant an undeputized player Agency to collect fragments. Oh joy. Enjoy the suffering.",q=2})})}}),
-h(-484,{maps={1419,1423,1428,1446,1447,1452,1955},rwp=30003,u=2,g={
+h(-484,{maps={1419,1423,1428,1446,1447,1452,1955},phase=2108,rwp=30003,u=2,g={
 h(-12,{u=2,g={
 ach(2116,{providers={{"i",22999}},u=2})}}),
 h(-45,{u=2,g={
@@ -543,7 +543,7 @@ q(9094,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
-[1457]={{64.3,44.5}}},cost={{"i",22484,30}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[1457]={{64.3,44.5}}},cost={{"i",22484,30}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 s(133483,23084,{b=1,f=4,loc=44,q=3,u=2}),
 s(133480,23081,{b=1,f=5,loc=44,q=3,u=2}),
 s(133481,23082,{b=1,f=6,loc=44,q=3,u=2}),
@@ -552,7 +552,7 @@ q(9333,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
-[1458]={{49.9,29.4}}},cost={{"i",22484,30}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[1458]={{49.9,29.4}}},cost={{"i",22484,30}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 s(133483,23084,{b=1,f=4,loc=44,q=3,u=2}),
 s(133480,23081,{b=1,f=5,loc=44,q=3,u=2}),
 s(133481,23082,{b=1,f=6,loc=44,q=3,u=2}),
@@ -561,13 +561,13 @@ q(9318,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
-[1457]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[1457]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(23123,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(9334,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
-[1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(23123,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(12616,{awp=30002,lvl=70,maps={350},qgs={16285},u=2,g={
 i(40354,{b=1,f=53,lvl=70,q=3,u=2})}}),
@@ -575,13 +575,13 @@ q(9317,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
-[1457]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[1457]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(23122,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(9335,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
-[1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(23122,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(9292,{description="If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1453},qgs={16431},qis={22949},r=2,u=2,g={
 i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
@@ -630,25 +630,25 @@ q(9321,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
-[1457]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[1457]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(13446,{f=55,lvl=45,q=1,rwp=30003,u=2})}}),
 q(9336,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
-[1458]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[1458]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(13446,{f=55,lvl=45,q=1,rwp=30003,u=2})}}),
 q(9337,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
-[1457]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[1457]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(13444,{f=55,lvl=49,q=1,rwp=30003,u=2})}}),
 q(9320,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
-[1458]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[1458]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(13444,{f=55,lvl=49,q=1,rwp=30003,u=2})}}),
 q(9302,{lvl=45,qis={22944},qss={22973},u=2}),
 q(9299,{lvl=45,qis={22945},qss={22972},u=2}),
@@ -666,13 +666,13 @@ q(9341,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
-[1457]={{64.3,44.5}}},cost={{"i",22484,10}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[1457]={{64.3,44.5}}},cost={{"i",22484,10}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 s(133398,22999,{b=1,f=9,q=1,rwp=30003,u=2})}}),
 q(9343,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
-[1458]={{49.9,29.4}}},cost={{"i",22484,10}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[1458]={{49.9,29.4}}},cost={{"i",22484,10}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 s(133398,22999,{b=1,f=9,q=1,rwp=30003,u=2})}}),
 q(12776,{awp=30002,lvl=65,maps={1947},qgs={29087},qis={39698},races={11},sourceQuests={12777},u=2}),
 q(9247,{coords={
@@ -713,10 +713,10 @@ s(174658,43069,{awp=30002,b=1,f=7,loc=42,lvl=70,q=4,u=2}),
 s(174669,43080,{awp=30002,b=1,f=6,loc=42,lvl=70,q=4,u=2}),
 s(174661,43072,{awp=30002,b=1,f=4,loc=42,lvl=70,q=4,u=2}),
 s(174665,43076,{awp=30002,b=1,f=5,loc=42,lvl=70,q=4,u=2}),
-s(133486,23087,{b=1,f=7,loc=42,lvl=58,q=3,rwp=20001,u=2}),
-s(133487,23088,{b=1,f=6,loc=42,lvl=58,q=3,rwp=20001,u=2}),
-s(133484,23085,{b=1,f=4,loc=42,lvl=58,q=3,rwp=20001,u=2}),
-s(133488,23089,{b=1,f=5,loc=42,lvl=58,q=3,rwp=20001,u=2})}}),
+s(133486,23087,{b=1,f=7,loc=42,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
+s(133487,23088,{b=1,f=6,loc=42,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
+s(133484,23085,{b=1,f=4,loc=42,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
+s(133488,23089,{b=1,f=5,loc=42,lvl=58,phase=1601,q=3,rwp=20001,u=2})}}),
 n(28194,{awp=30002,description="Located in Karazhan.\n\nCan be found in the Guardhouse, behind a Bloodstained Door above the stables where Attumen resides, which can be accessed through the stairs after Attumen, or through the ballroom where Moroes resides.",maps={350},u=2,g={
 ach(2456,{providers={{"i",38658}},u=2}),
 p(187,{b=1,description="Drops for everyone in the raid. Get one on all of your alts!",itemID=38658,petTypeID=4,q=3,spellID=51851,u=2}),
@@ -760,10 +760,10 @@ s(174672,43083,{awp=30002,b=1,f=6,loc=46,lvl=70,q=4,u=2}),
 s(174668,43079,{awp=30002,b=1,f=5,loc=46,lvl=70,q=4,u=2}),
 s(174660,43071,{awp=30002,b=1,f=7,loc=46,lvl=70,q=4,u=2}),
 s(174664,43075,{awp=30002,b=1,f=4,loc=46,lvl=70,q=4,u=2}),
-s(133490,23091,{f=4,loc=43,lvl=58,q=3,rwp=20001,u=2}),
-s(133492,23093,{f=5,loc=43,lvl=58,q=3,rwp=20001,u=2}),
-s(133491,23092,{f=6,loc=43,lvl=58,q=3,rwp=20001,u=2}),
-s(133489,23090,{f=7,loc=43,lvl=58,q=3,rwp=20001,u=2})}}),
+s(133490,23091,{f=4,loc=43,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
+s(133492,23093,{f=5,loc=43,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
+s(133491,23092,{f=6,loc=43,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
+s(133489,23090,{f=7,loc=43,lvl=58,phase=1601,q=3,rwp=20001,u=2})}}),
 h(-47,{description="The reports are mailed to you about 48 hours after you turn in the random drop letter quests and there is one unique flavor message per letter. I'm not sure if speaking to the npcs mentioned in the responses leads to more flavor text, but someone should probably look into that.",u=2,g={
 i(23196,{b=1,crs={16434,16436},description="1 Stamina for every 2 levels for 1 Hour.\n\nAvailable after 150 Battles won.",f=55,q=1,u=2}),
 i(23194,{b=1,crs={16384,16395},description="1 Stamina for every 6 levels for 1 Hour.\n\nAvailable after 50 Battles won.",f=55,q=1,u=2}),

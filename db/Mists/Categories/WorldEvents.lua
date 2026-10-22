@@ -6,353 +6,353 @@ categories.WorldEvents=
 h(-734,{SortPriority=75,g={
 h(-103,{
 x(2,{awp=20003,g={
-h(-482,{lvl=55,maps={17},rwp=20505,u=2,g={
+h(-482,{lvl=55,maps={17},phase=1701,rwp=20505,u=2,g={
 q(10259,{coords={
 [17]={{58.25,55.05}}},lvl=55,qgs={19942},u=2,g={
 ach(2079,{providers={{"i",28788}},u=2}),
 s(139134,28788,{b=1,f=9,q=2,u=2})}})}})}}),
 x(3,{awp=30003}),
 x(4,{awp=40003,g={
-h(-474,{awp=30300,maps={84,85,87,88},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,rwp=40003,u=2,g={
-h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,u=2,g={
-ach(4887,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,u=2})}}),
-h(-45,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,u=2,g={
+h(-474,{awp=30300,maps={84,85,87,88},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,phase=3304,rwp=40003,u=2,g={
+h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,u=2,g={
+ach(4887,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,u=2})}}),
+h(-45,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,u=2,g={
 q(25351,{coords={
-[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39448},r=1,sourceQuests={25348},u=2}),
+[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39448},r=1,sourceQuests={25348},u=2}),
 q(25290,{coords={
-[84]={{75.9,44.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39508},r=2,sourceQuests={25282},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52729}},u=2}),
-s(179863,52729,{b=1,f=4,loc=42,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=1,u=2})}}),
+[84]={{75.9,44.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39508},r=2,sourceQuests={25282},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52729}},u=2}),
+s(179863,52729,{b=1,f=4,loc=42,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=1,u=2})}}),
 q(25288,{coords={
-[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39448},r=1,sourceQuests={25254},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52729}},u=2}),
-s(179863,52729,{b=1,f=4,loc=42,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=1,u=2})}}),
+[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39448},r=1,sourceQuests={25254},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52729}},u=2}),
+s(179863,52729,{b=1,f=4,loc=42,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=1,u=2})}}),
 q(25253,{coords={
-[84]={{75.9,44.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39508},r=2,u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"n",40124}},u=2}),
+[84]={{75.9,44.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39508},r=2,u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",40124}},u=2}),
 qo(2,{coords={
-[84]={{73,63}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52562}},u=2}),
+[84]={{73,63}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52562}},u=2}),
 qo(3,{coords={
-[84]={{76,59}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52563}},u=2}),
+[84]={{76,59}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52563}},u=2}),
 qo(4,{coords={
-[84]={{73,54}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52565}},u=2})}}),
+[84]={{73,54}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52565}},u=2})}}),
 q(25228,{coords={
-[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39448},r=1,u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"n",39328}},u=2}),
-qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52562}},u=2}),
-qo(3,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52563}},u=2}),
-qo(4,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52565}},u=2})}}),
+[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39448},r=1,u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39328}},u=2}),
+qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52562}},u=2}),
+qo(3,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52563}},u=2}),
+qo(4,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52565}},u=2})}}),
 q(25282,{coords={
-[84]={{75.9,44.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39508},r=2,sourceQuests={25253},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52707}},u=2})}}),
+[84]={{75.9,44.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39508},r=2,sourceQuests={25253},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52707}},u=2})}}),
 q(25254,{coords={
-[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39448},r=1,sourceQuests={25228},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52706}},u=2})}}),
+[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39448},r=1,sourceQuests={25228},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52706}},u=2})}}),
 q(25415,{coords={
-[37]={{31.3,65}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={40098},r=2,sourceQuests={25290},u=2,g={
+[37]={{31.3,65}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={40098},r=2,sourceQuests={25290},u=2,g={
 qo(1,{coords={
-[37]={{24,74}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",53048}},u=2}),
+[37]={{24,74}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",53048}},u=2}),
 qo(2,{coords={
-[84]={{69,83}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",53048}},u=2}),
+[84]={{69,83}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",53048}},u=2}),
 qo(3,{coords={
-[37]={{42,66}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",53048}},u=2})}}),
+[37]={{42,66}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",53048}},u=2})}}),
 q(25380,{coords={
-[1]={{48.2,16.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39827},r=1,sourceQuests={25288},u=2,g={
+[1]={{48.2,16.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39827},r=1,sourceQuests={25288},u=2,g={
 qo(1,{coords={
-[1]={{50.8,13.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",53048}},u=2}),
+[1]={{50.8,13.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",53048}},u=2}),
 qo(2,{coords={
-[1]={{41.5,18.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",53048}},u=2}),
+[1]={{41.5,18.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",53048}},u=2}),
 qo(3,{coords={
-[1]={{52.5,42.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",53048}},u=2})}}),
+[1]={{52.5,42.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",53048}},u=2})}}),
 q(25417,{coords={
-[37]={{31.3,65}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={40098},qis={52835},r=2,sourceQuests={25416},u=2}),
+[37]={{31.3,65}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={40098},qis={52835},r=2,sourceQuests={25416},u=2}),
 q(25347,{coords={
-[1]={{48.2,16.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39827},qis={52835},r=1,sourceQuests={25343},u=2}),
-q(27307,{isBreadcrumb=1,nextQuests={27540},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={45341,45946},r=2,u=2}),
-q(27308,{isBreadcrumb=1,nextQuests={27570},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={45341,45946},r=1,u=2}),
+[1]={{48.2,16.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39827},qis={52835},r=1,sourceQuests={25343},u=2}),
+q(27307,{isBreadcrumb=1,nextQuests={27540},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={45341,45946},r=2,u=2}),
+q(27308,{isBreadcrumb=1,nextQuests={27570},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={45341,45946},r=1,u=2}),
 q(25416,{coords={
-[37]={{31.3,65}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={40098},r=2,sourceQuests={25415},u=2,g={
+[37]={{31.3,65}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={40098},r=2,sourceQuests={25415},u=2,g={
 qo(1,{coords={
-[37]={{29.3,65.7}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52729}},u=2})}}),
+[37]={{29.3,65.7}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52729}},u=2})}}),
 q(25343,{coords={
-[1]={{48.2,16.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39827},r=1,sourceQuests={25380},u=2,g={
+[1]={{48.2,16.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39827},r=1,sourceQuests={25380},u=2,g={
 qo(1,{coords={
-[1]={{49.6,16.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52729}},u=2})}}),
+[1]={{49.6,16.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52729}},u=2})}}),
 q(25414,{coords={
-[84]={{75.9,44.2}}},maps={37},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39508},r=2,sourceQuests={25282},u=2,g={
+[84]={{75.9,44.2}}},maps={37},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39508},r=2,sourceQuests={25282},u=2,g={
 qo(1,{coords={
-[37]={{30.7,64.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52729},{"n",39967}},u=2}),
+[37]={{30.7,64.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52729},{"n",39967}},u=2}),
 qo(2,{coords={
-[37]={{31.1,67.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52729},{"n",39968}},u=2}),
+[37]={{31.1,67.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52729},{"n",39968}},u=2}),
 qo(3,{coords={
-[37]={{31.8,66.1}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52729},{"n",39969}},u=2}),
+[37]={{31.8,66.1}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52729},{"n",39969}},u=2}),
 qo(4,{coords={
-[37]={{30.3,64.35}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52729},{"n",39970}},u=2})}}),
+[37]={{30.3,64.35}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52729},{"n",39970}},u=2})}}),
 q(25293,{coords={
-[85]={{52.9,72.4}}},maps={1},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39448},r=1,sourceQuests={25254},u=2,g={
+[85]={{52.9,72.4}}},maps={1},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39448},r=1,sourceQuests={25254},u=2,g={
 qo(1,{coords={
-[1]={{48,17}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52729},{"n",39757}},u=2}),
+[1]={{48,17}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52729},{"n",39757}},u=2}),
 qo(2,{coords={
-[1]={{48,17}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52729},{"n",39758}},u=2}),
+[1]={{48,17}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52729},{"n",39758}},u=2}),
 qo(3,{coords={
-[1]={{48,16}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52729},{"n",39760}},u=2}),
+[1]={{48,16}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52729},{"n",39760}},u=2}),
 qo(4,{coords={
-[1]={{49,17}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52729},{"n",39763}},u=2})}}),
+[1]={{49,17}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52729},{"n",39763}},u=2})}}),
 q(27570,{coords={
-[85]={{52.2,73.2}}},isBreadcrumb=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39283},r=1,sourceQuests={27308},u=2}),
+[85]={{52.2,73.2}}},isBreadcrumb=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39283},r=1,sourceQuests={27308},u=2}),
 q(27540,{coords={
-[84]={{62.5,75.5}}},isBreadcrumb=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={45702},r=2,sourceQuests={27307},u=2}),
+[84]={{62.5,75.5}}},isBreadcrumb=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={45702},r=2,sourceQuests={27307},u=2}),
 q(25418,{coords={
-[84]={{75.9,44.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39508},r=2,sourceQuests={25417},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"n",40104}},u=2})}}),
+[84]={{75.9,44.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39508},r=2,sourceQuests={25417},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",40104}},u=2})}}),
 q(25348,{coords={
-[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39448},r=1,sourceQuests={25347},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"n",39852}},u=2})}}),
+[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39448},r=1,sourceQuests={25347},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39852}},u=2})}}),
 q(25425,{coords={
-[84]={{75.9,44.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39508},r=2,sourceQuests={25418},u=2}),
+[84]={{75.9,44.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39508},r=2,sourceQuests={25418},u=2}),
 q(25055,{coords={
-[87]={{30.3,60.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={45712},r=2,sourceQuests={27473},u=2,g={
-qo(1,{cost={{"i",52189,1},{"i",52272,1}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"n",39021}},u=2}),
-i(52274,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=1,u=2,g={
-i(52272,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=1,u=2}),
-i(52189,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=1,u=2})}})}}),
+[87]={{30.3,60.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={45712},r=2,sourceQuests={27473},u=2,g={
+qo(1,{cost={{"i",52189,1},{"i",52272,1}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39021}},u=2}),
+i(52274,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=1,u=2,g={
+i(52272,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=1,u=2}),
+i(52189,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=1,u=2})}})}}),
 q(25092,{coords={
-[85]={{52.2,73.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39283},r=1,u=2,g={
-qo(1,{cost={{"i",52202,1},{"i",52345,1}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"n",39047}},u=2}),
-i(52344,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=1,u=2,g={
-i(52345,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=1,u=2}),
-i(52202,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=1,u=2})}})}}),
+[85]={{52.2,73.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39283},r=1,u=2,g={
+qo(1,{cost={{"i",52202,1},{"i",52345,1}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39047}},u=2}),
+i(52344,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=1,u=2,g={
+i(52345,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=1,u=2}),
+i(52202,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=1,u=2})}})}}),
 q(25181,{coords={
-[85]={{52.2,73.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39283},r=1,u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52276},{"n",39090}},u=2})}}),
+[85]={{52.2,73.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39283},r=1,u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52276},{"n",39090}},u=2})}}),
 q(25180,{coords={
-[84]={{62.5,75.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={45702},r=2,u=2,g={
+[84]={{62.5,75.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={45702},r=2,u=2,g={
 qo(1,{coords={
-[84]={{29.6,48.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",52275},{"n",39101}},u=2})}}),
-q(27473,{isBreadcrumb=1,nextQuests={25055},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={45341,45946},r=2,u=2}),
-q(27566,{maps={107},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={45341},r=2,u=2}),
+[84]={{29.6,48.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52275},{"n",39101}},u=2})}}),
+q(27473,{isBreadcrumb=1,nextQuests={25055},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={45341,45946},r=2,u=2}),
+q(27566,{maps={107},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={45341},r=2,u=2}),
 q(27572,{coords={
-[85]={{52.2,73.2}}},maps={107},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39283},r=1,u=2}),
+[85]={{52.2,73.2}}},maps={107},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39283},r=1,u=2}),
 q(27749,{coords={
-[84]={{62.2,71.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={12481},r=2,sourceQuests={27741},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",62541},{"n",46584}},u=2}),
-qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"n",46670}},u=2})}}),
+[84]={{62.2,71.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={12481},r=2,sourceQuests={27741},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",62541},{"n",46584}},u=2}),
+qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",46670}},u=2})}}),
 q(27802,{coords={
-[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39448},r=1,sourceQuests={27801},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",62541},{"n",46816}},u=2}),
-qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"n",46827}},u=2})}}),
+[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39448},r=1,sourceQuests={27801},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",62541},{"n",46816}},u=2}),
+qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",46827}},u=2})}}),
 q(27767,{coords={
-[84]={{62.2,71.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={12481},r=2,sourceQuests={27749},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",62379},{"n",40098}},u=2})}}),
+[84]={{62.2,71.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={12481},r=2,sourceQuests={27749},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",62379},{"n",40098}},u=2})}}),
 q(27800,{coords={
-[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39448},r=1,sourceQuests={27802},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",62496},{"n",39827}},u=2})}}),
+[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39448},r=1,sourceQuests={27802},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",62496},{"n",39827}},u=2})}}),
 q(27780,{coords={
-[37]={{31.3,65}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={40098},r=2,sourceQuests={27767},u=2,g={
+[37]={{31.3,65}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={40098},r=2,sourceQuests={27767},u=2,g={
 qo(1,{coords={
-[84]={{64,29.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",62412}},u=2}),
+[84]={{64,29.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",62412}},u=2}),
 qo(2,{coords={
-[84]={{58.3,49}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",62412}},u=2}),
+[84]={{58.3,49}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",62412}},u=2}),
 qo(3,{coords={
-[84]={{38,61.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",62412}},u=2})}}),
+[84]={{38,61.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",62412}},u=2})}}),
 q(27799,{coords={
-[1]={{48.2,16.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39827},r=1,sourceQuests={27800},u=2,g={
+[1]={{48.2,16.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39827},r=1,sourceQuests={27800},u=2,g={
 qo(1,{coords={
-[85]={{57.72,47.65}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",62495}},u=2}),
+[85]={{57.72,47.65}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",62495}},u=2}),
 qo(2,{coords={
-[85]={{80.78,35.32}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",62495}},u=2}),
+[85]={{80.78,35.32}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",62495}},u=2}),
 qo(3,{coords={
-[85]={{27.63,54.73}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",62495}},u=2})}}),
+[85]={{27.63,54.73}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",62495}},u=2})}}),
 q(27741,{coords={
-[84]={{62.2,71.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={12481},r=2,u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"n",37787},{"n",39686},{"n",40125},{"n",46489}},u=2}),
-qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",62315}},u=2})}}),
+[84]={{62.2,71.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={12481},r=2,u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",37787},{"n",39686},{"n",40125},{"n",46489}},u=2}),
+qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",62315}},u=2})}}),
 q(27801,{coords={
-[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,qgs={39448},r=1,u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"n",38067},{"n",39343},{"n",39632},{"n",46491}},u=2}),
-qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,providers={{"i",62493}},u=2})}})}}),
-n(44822,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,u=2,g={
-s(179893,53496,{b=1,f=8,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-i(53499,{b=1,f=51,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-s(179894,53497,{b=1,f=3,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-s(203103,53498,{b=1,f=4,loc=42,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-s(179896,53500,{b=1,f=7,loc=42,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2})}}),
-n(41110,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,u=2,g={
-i(53502,{b=1,f=51,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-i(53503,{b=1,f=51,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-s(179898,53505,{b=1,f=7,loc=42,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-s(179897,53504,{b=1,f=5,loc=47,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-i(53501,{b=1,f=52,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2})}}),
-n(40961,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,u=2,g={
-s(179890,53491,{b=1,f=7,loc=43,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-s(179892,53494,{b=1,f=7,loc=45,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-s(179891,53493,{b=1,f=6,loc=46,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-i(53495,{b=1,f=52,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-i(53492,{b=1,f=52,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2})}}),
-n(45214,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,u=2,g={
-i(53509,{b=1,f=51,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-s(179899,53506,{b=1,f=3,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-s(179901,53508,{b=1,f=5,loc=42,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-s(179934,54592,{b=1,f=6,loc=43,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2}),
-s(179900,53507,{b=1,f=4,loc=47,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3304 t.rwp=40003 end	end,q=4,u=2})}})}}),
-h(-475,{awp=30300,maps={27,87},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,r=2,rwp=40003,u=2,g={
+[85]={{52.9,72.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39448},r=1,u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",38067},{"n",39343},{"n",39632},{"n",46491}},u=2}),
+qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",62493}},u=2})}})}}),
+n(44822,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,u=2,g={
+s(179893,53496,{b=1,f=8,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+i(53499,{b=1,f=51,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+s(179894,53497,{b=1,f=3,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+s(203103,53498,{b=1,f=4,loc=42,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+s(179896,53500,{b=1,f=7,loc=42,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2})}}),
+n(41110,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,u=2,g={
+i(53502,{b=1,f=51,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+i(53503,{b=1,f=51,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+s(179898,53505,{b=1,f=7,loc=42,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+s(179897,53504,{b=1,f=5,loc=47,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+i(53501,{b=1,f=52,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2})}}),
+n(40961,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,u=2,g={
+s(179890,53491,{b=1,f=7,loc=43,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+s(179892,53494,{b=1,f=7,loc=45,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+s(179891,53493,{b=1,f=6,loc=46,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+i(53495,{b=1,f=52,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+i(53492,{b=1,f=52,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2})}}),
+n(45214,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,u=2,g={
+i(53509,{b=1,f=51,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+s(179899,53506,{b=1,f=3,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+s(179901,53508,{b=1,f=5,loc=42,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+s(179934,54592,{b=1,f=6,loc=43,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2}),
+s(179900,53507,{b=1,f=4,loc=47,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=4,u=2})}})}}),
+h(-475,{awp=30300,maps={27,87},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,phase=3303,r=2,rwp=40003,u=2,g={
 q(25229,{coords={
-[87]={{69.2,49.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={7937},r=2,u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"i",52566},{"n",39253},{"n",39623}},r=2,u=2}),
-qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"n",39466},{"n",39624}},r=2,u=2})}}),
+[87]={{69.2,49.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={7937},r=2,u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52566},{"n",39253},{"n",39623}},r=2,u=2}),
+qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39466},{"n",39624}},r=2,u=2})}}),
 q(25199,{coords={
-[27]={{50.16,48.35}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={39675},r=2,sourceQuests={25229},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"n",39368}},r=2,u=2}),
-qo(12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"n",39368}},r=2,u=2}),
-qo(3,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"n",39368}},r=2,u=2}),
-qo(4,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"n",39368}},r=2,u=2})}}),
+[27]={{50.16,48.35}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39675},r=2,sourceQuests={25229},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39368}},r=2,u=2}),
+qo(12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39368}},r=2,u=2}),
+qo(3,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39368}},r=2,u=2}),
+qo(4,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39368}},r=2,u=2})}}),
 q(25285,{coords={
-[27]={{50.16,48.35}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={39675},r=2,sourceQuests={25199},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"n",39715}},r=2,u=2})}}),
+[27]={{50.16,48.35}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39675},r=2,sourceQuests={25199},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39715}},r=2,u=2})}}),
 q(25289,{coords={
-[27]={{50.16,48.35}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={39675},r=2,sourceQuests={25285},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"n",39716}},r=2,u=2}),
-qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"n",39716}},r=2,u=2}),
-qo(3,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"n",39716}},r=2,u=2})}}),
+[27]={{50.16,48.35}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39675},r=2,sourceQuests={25285},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39716}},r=2,u=2}),
+qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39716}},r=2,u=2}),
+qo(3,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39716}},r=2,u=2})}}),
 q(25393,{coords={
-[87]={{69.2,49.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={7937,39271},r=2,sourceQuests={25287},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"n",39799},{"n",39837},{"n",39901}},r=2,u=2}),
-ach(4786,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,r=2,u=2}),
-s(179868,53097,{b=1,f=3,lvl=75,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,q=1,r=2,u=2})}}),
+[87]={{69.2,49.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={7937,39271},r=2,sourceQuests={25287},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39799},{"n",39837},{"n",39901}},r=2,u=2}),
+ach(4786,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,r=2,u=2}),
+s(179868,53097,{b=1,f=3,lvl=75,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=1,r=2,u=2})}}),
 q(25283,{coords={
-[27]={{49.32,48.27}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={39678},r=2,sourceQuests={25212,25295},u=2,g={
+[27]={{49.32,48.27}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39678},r=2,sourceQuests={25212,25295},u=2,g={
 qo(1,{coords={
-[27]={{45.89,49.38}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"i",52709},{"n",1268}},r=2,u=2}),
+[27]={{45.89,49.38}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52709},{"n",1268}},r=2,u=2}),
 qo(2,{coords={
-[27]={{49.12,47.95}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"i",52709},{"n",7955}},r=2,u=2}),
+[27]={{49.12,47.95}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52709},{"n",7955}},r=2,u=2}),
 qo(3,{coords={
-[27]={{47.34,53.78}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"i",52709},{"n",6119}},r=2,u=2})}}),
+[27]={{47.34,53.78}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52709},{"n",6119}},r=2,u=2})}}),
 q(25295,{coords={
-[27]={{50.16,48.35}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={39675},r=2,sourceQuests={25289},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"n",39711},{"n",39717}},r=2,u=2})}}),
+[27]={{50.16,48.35}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39675},r=2,sourceQuests={25289},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39711},{"n",39717}},r=2,u=2})}}),
 q(25212,{coords={
-[27]={{50.1,47.74}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={39386},r=2,sourceQuests={25199},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"i",52541},{"n",39396}},r=2,u=2})}}),
+[27]={{50.1,47.74}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39386},r=2,sourceQuests={25199},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",52541},{"n",39396}},r=2,u=2})}}),
 q(25286,{altQuests={25500},coords={
-[27]={{49.32,48.27}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={39678},qis={52731},r=2,sourceQuests={25283},u=2}),
+[27]={{49.32,48.27}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39678},qis={52731},r=2,sourceQuests={25283},u=2}),
 q(25500,{altQuests={25286},coords={
-[27]={{49.32,48.27}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={39678},qis={52731},r=2,sourceQuests={25283},u=2,g={
-toy(54651,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,q=3,r=2,u=2})}}),
+[27]={{49.32,48.27}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39678},qis={52731},r=2,sourceQuests={25283},u=2,g={
+toy(54651,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=3,r=2,u=2})}}),
 q(25287,{coords={
-[27]={{50.16,48.35}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={39396,39675},qis={52731},r=2,sourceQuests={25500},u=2})}}),
-h(-485,{awp=30300,maps={1},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,r=1,rwp=40003,u=2,g={
+[27]={{50.16,48.35}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={39396,39675},qis={52731},r=2,sourceQuests={25500},u=2})}}),
+h(-485,{awp=30300,maps={1},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,phase=3303,r=1,rwp=40003,u=2,g={
 q(25444,{coords={
-[1]={{57.5,72.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={40184},r=1,u=2,g={
+[1]={{57.5,72.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={40184},r=1,u=2,g={
 qo(1,{coords={
-[1]={{57.6,72.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"i",53510},{"n",40176},{"n",40187},{"n",40188}},r=1,u=2})}}),
+[1]={{57.6,72.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",53510},{"n",40176},{"n",40187},{"n",40188}},r=1,u=2})}}),
 q(25480,{coords={
-[1]={{57.4,72.7}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={40391},r=1,sourceQuests={25470},u=2,g={
+[1]={{57.4,72.7}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={40391},r=1,sourceQuests={25470},u=2,g={
 qo(1,{coords={
-[1]={{57,74.14}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"n",40352}},r=1,u=2}),
-toy(54653,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,q=3,r=1,u=2})}}),
+[1]={{57,74.14}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",40352}},r=1,u=2}),
+toy(54653,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=3,r=1,u=2})}}),
 q(25446,{coords={
-[1]={{57.5,72.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={40184},r=1,sourceQuests={25444},u=2,g={
+[1]={{57.5,72.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={40184},r=1,sourceQuests={25444},u=2,g={
 qo(1,{coords={
-[1]={{57.1,75.13}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"i",53637},{"n",40204}},r=1,u=2})}}),
+[1]={{57.1,75.13}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",53637},{"n",40204}},r=1,u=2})}}),
 q(25470,{coords={
-[1]={{57.5,72.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={40184},r=1,sourceQuests={25461},u=2,g={
+[1]={{57.5,72.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={40184},r=1,sourceQuests={25461},u=2,g={
 qo(1,{coords={
-[1]={{59,82}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"n",40312}},r=1,u=2})}}),
+[1]={{59,82}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",40312}},r=1,u=2})}}),
 q(25495,{coords={
-[1]={{57.8,73}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={40204,40253},r=1,sourceQuests={25461},u=2}),
+[1]={{57.8,73}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={40204,40253},r=1,sourceQuests={25461},u=2}),
 q(25461,{coords={
-[1]={{57.8,73}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={40253},r=1,sourceQuests={25446},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"i",54215},{"n",40256},{"n",40257}},r=1,u=2}),
-qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"n",40260},{"n",40264}},r=1,u=2})}}),
+[1]={{57.8,73}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={40253},r=1,sourceQuests={25446},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"i",54215},{"n",40256},{"n",40257}},r=1,u=2}),
+qo(2,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",40260},{"n",40264}},r=1,u=2})}}),
 q(25445,{coords={
-[1]={{57.4,72.7}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,qgs={40391},r=1,sourceQuests={25495},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,providers={{"n",39647},{"n",40182},{"n",40189}},r=1,u=2}),
-ach(4790,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,r=1,u=2}),
-s(179936,54617,{b=1,f=3,lvl=75,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=3303 t.rwp=40003 end	end,q=1,r=1,u=2})}})}})}}),
+[1]={{57.4,72.7}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,qgs={40391},r=1,sourceQuests={25495},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,providers={{"n",39647},{"n",40182},{"n",40189}},r=1,u=2}),
+ach(4790,{OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,r=1,u=2}),
+s(179936,54617,{b=1,f=3,lvl=75,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40003 end	end,q=1,r=1,u=2})}})}})}}),
 x(5,{awp=50004,g={
-h(-315,{lvl=85,maps={483},OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,rwp=50100,u=2,g={
-h(-12,{OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,u=2,g={
-ach(7467,{OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,r=2,u=2}),
-ach(7468,{OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,r=1,u=2})}}),
-h(-49,{OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,u=2,g={
-toy(89205,{b=1,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,r=1,u=2}),
-i(90041,{b=1,description="This was a reward for completing the Theramore's Fall scenario during the Mists of Pandaria pre-patch.",OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,u=2,g={
-toy(89999,{b=1,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,r=2}),
-toy(90000,{b=1,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,r=1}),
-s(273967,90017,{b=1,f=4,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273968,90018,{b=1,f=4,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273969,90019,{b=1,f=4,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273970,90020,{b=1,f=5,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273971,90021,{b=1,f=5,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273972,90022,{b=1,f=6,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273973,90023,{b=1,f=6,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273974,90024,{b=1,f=7,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273975,90025,{b=1,f=7,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273976,90026,{b=1,f=7,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273977,90027,{b=1,f=29,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273978,90028,{b=1,f=21,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273979,90029,{b=1,f=31,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273980,90030,{b=1,f=25,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273981,90031,{b=1,f=28,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273982,90032,{b=1,f=22,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273983,90033,{b=1,f=20,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273984,90034,{b=1,f=28,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273985,90035,{b=1,f=25,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
-s(273986,90036,{b=1,f=8,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2})}}),
-s(273452,89196,{b=1,f=9,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=50 t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,r=2,u=2})}})}})}})}),
-h(-656,{awp=50100,lvl=90,maps={499,500,503},rwp=60002,u=51,g={
+h(-315,{lvl=85,maps={483},OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,phase=50,rwp=50100,u=2,g={
+h(-12,{OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,u=2,g={
+ach(7467,{OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,r=2,u=2}),
+ach(7468,{OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,r=1,u=2})}}),
+h(-49,{OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,u=2,g={
+toy(89205,{b=1,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,r=1,u=2}),
+i(90041,{b=1,description="This was a reward for completing the Theramore's Fall scenario during the Mists of Pandaria pre-patch.",OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,u=2,g={
+toy(89999,{b=1,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,r=2}),
+toy(90000,{b=1,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,r=1}),
+s(273967,90017,{b=1,f=4,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273968,90018,{b=1,f=4,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273969,90019,{b=1,f=4,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273970,90020,{b=1,f=5,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273971,90021,{b=1,f=5,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273972,90022,{b=1,f=6,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273973,90023,{b=1,f=6,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273974,90024,{b=1,f=7,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273975,90025,{b=1,f=7,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273976,90026,{b=1,f=7,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273977,90027,{b=1,f=29,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273978,90028,{b=1,f=21,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273979,90029,{b=1,f=31,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273980,90030,{b=1,f=25,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273981,90031,{b=1,f=28,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273982,90032,{b=1,f=22,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273983,90033,{b=1,f=20,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273984,90034,{b=1,f=28,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273985,90035,{b=1,f=25,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
+s(273986,90036,{b=1,f=8,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2})}}),
+s(273452,89196,{b=1,f=9,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,r=2,u=2})}})}})}})}),
+h(-656,{awp=50100,lvl=90,maps={499,500,503},phase=51,rwp=60002,g={
 h(-12,{
 ach(7944,{providers={{"s",136314}}}),
 ach(7941,{r=2,g={
 title(209)}}),
 ach(7942,{r=1,g={
 title(209)}}),
-ach(8339,{awp=50300,r=2,rwp=70003,u=53}),
-ach(8342,{awp=50300,r=1,rwp=70003,u=53}),
-ach(8340,{awp=50300,r=2,u=53,g={
+ach(8339,{awp=50300,phase=53,r=2}),
+ach(8342,{awp=50300,phase=53,r=1}),
+ach(8340,{awp=50300,phase=53,r=2,g={
 s(279278,98543,{b=1,f=10,q=4}),
-crit(23541,{achID=8340,id=1,providers={{"s",143344}},r=2,u=53}),
-crit(23552,{achID=8340,id=2,providers={{"s",143354}},r=2,u=53}),
-crit(23545,{achID=8340,id=3,providers={{"s",143347}},r=2,u=53}),
-crit(23546,{achID=8340,id=4,providers={{"s",143348}},r=2,u=53}),
-crit(23547,{achID=8340,id=5,providers={{"s",143349}},r=2,u=53}),
-crit(23548,{achID=8340,id=6,providers={{"s",143350}},r=2,u=53}),
-crit(23542,{achID=8340,id=7,providers={{"s",142977}},r=2,u=53}),
-crit(23549,{achID=8340,id=8,providers={{"s",143351}},r=2,u=53}),
-crit(23544,{achID=8340,id=9,providers={{"s",143346}},r=2,u=53}),
-crit(23551,{achID=8340,id=10,providers={{"s",143353}},r=2,u=53}),
-crit(23543,{achID=8340,id=11,providers={{"s",143025}},r=2,u=53}),
-crit(23550,{achID=8340,id=12,providers={{"s",143352}},r=2,u=53})}}),
-ach(8343,{awp=50300,r=1,u=53,g={
+crit(23541,{achID=8340,id=1,providers={{"s",143344}},r=2}),
+crit(23552,{achID=8340,id=2,providers={{"s",143354}},r=2}),
+crit(23545,{achID=8340,id=3,providers={{"s",143347}},r=2}),
+crit(23546,{achID=8340,id=4,providers={{"s",143348}},r=2}),
+crit(23547,{achID=8340,id=5,providers={{"s",143349}},r=2}),
+crit(23548,{achID=8340,id=6,providers={{"s",143350}},r=2}),
+crit(23542,{achID=8340,id=7,providers={{"s",142977}},r=2}),
+crit(23549,{achID=8340,id=8,providers={{"s",143351}},r=2}),
+crit(23544,{achID=8340,id=9,providers={{"s",143346}},r=2}),
+crit(23551,{achID=8340,id=10,providers={{"s",143353}},r=2}),
+crit(23543,{achID=8340,id=11,providers={{"s",143025}},r=2}),
+crit(23550,{achID=8340,id=12,providers={{"s",143352}},r=2})}}),
+ach(8343,{awp=50300,phase=53,r=1,g={
 s(279278,98543,{b=1,f=10,q=4}),
-crit(23541,{achID=8343,id=1,providers={{"s",143344}},r=1,u=53}),
-crit(23552,{achID=8343,id=2,providers={{"s",143354}},r=1,u=53}),
-crit(23545,{achID=8343,id=3,providers={{"s",143347}},r=1,u=53}),
-crit(23546,{achID=8343,id=4,providers={{"s",143348}},r=1,u=53}),
-crit(23547,{achID=8343,id=5,providers={{"s",143349}},r=1,u=53}),
-crit(23548,{achID=8343,id=6,providers={{"s",143350}},r=1,u=53}),
-crit(23542,{achID=8343,id=7,providers={{"s",142977}},r=1,u=53}),
-crit(23549,{achID=8343,id=8,providers={{"s",143351}},r=1,u=53}),
-crit(23544,{achID=8343,id=9,providers={{"s",143346}},r=1,u=53}),
-crit(23551,{achID=8343,id=10,providers={{"s",143353}},r=1,u=53}),
-crit(23543,{achID=8343,id=11,providers={{"s",143025}},r=1,u=53}),
-crit(23550,{achID=8343,id=12,providers={{"s",143352}},r=1,u=53})}}),
+crit(23541,{achID=8343,id=1,providers={{"s",143344}},r=1}),
+crit(23552,{achID=8343,id=2,providers={{"s",143354}},r=1}),
+crit(23545,{achID=8343,id=3,providers={{"s",143347}},r=1}),
+crit(23546,{achID=8343,id=4,providers={{"s",143348}},r=1}),
+crit(23547,{achID=8343,id=5,providers={{"s",143349}},r=1}),
+crit(23548,{achID=8343,id=6,providers={{"s",143350}},r=1}),
+crit(23542,{achID=8343,id=7,providers={{"s",142977}},r=1}),
+crit(23549,{achID=8343,id=8,providers={{"s",143351}},r=1}),
+crit(23544,{achID=8343,id=9,providers={{"s",143346}},r=1}),
+crit(23551,{achID=8343,id=10,providers={{"s",143353}},r=1}),
+crit(23543,{achID=8343,id=11,providers={{"s",143025}},r=1}),
+crit(23550,{achID=8343,id=12,providers={{"s",143352}},r=1})}}),
 ach(7945,{awp=50300,providers={{"s",135947}}}),
-ach(8335,{awp=50300,r=2,u=53}),
-ach(8337,{awp=50300,r=1,u=53}),
+ach(8335,{awp=50300,phase=53,r=2}),
+ach(8337,{awp=50300,phase=53,r=1}),
 ach(7943),
-ach(8336,{awp=50300,r=2,u=53}),
-ach(8338,{awp=50300,r=1,u=53}),
-ach(7946,{r=2,u=53,g={
-crit(22574,{achID=7946,id=1,providers={{"s",136155}},r=2,u=53}),
-crit(22575,{achID=7946,id=2,providers={{"s",136156}},r=2,u=53}),
-crit(22576,{achID=7946,id=3,providers={{"s",136157}},r=2,u=53}),
-crit(22577,{achID=7946,id=4,providers={{"s",136158}},r=2,u=53})}}),
-ach(8022,{r=1,u=53,g={
-crit(22574,{achID=8022,id=1,providers={{"s",136155}},r=1,u=53}),
-crit(22575,{achID=8022,id=2,providers={{"s",136156}},r=1,u=53}),
-crit(22576,{achID=8022,id=3,providers={{"s",136157}},r=1,u=53}),
-crit(22577,{achID=8022,id=4,providers={{"s",136158}},r=1,u=53})}}),
+ach(8336,{awp=50300,phase=53,r=2}),
+ach(8338,{awp=50300,phase=53,r=1}),
+ach(7946,{phase=53,r=2,g={
+crit(22574,{achID=7946,id=1,providers={{"s",136155}},r=2}),
+crit(22575,{achID=7946,id=2,providers={{"s",136156}},r=2}),
+crit(22576,{achID=7946,id=3,providers={{"s",136157}},r=2}),
+crit(22577,{achID=7946,id=4,providers={{"s",136158}},r=2})}}),
+ach(8022,{phase=53,r=1,g={
+crit(22574,{achID=8022,id=1,providers={{"s",136155}},r=1}),
+crit(22575,{achID=8022,id=2,providers={{"s",136156}},r=1}),
+crit(22576,{achID=8022,id=3,providers={{"s",136157}},r=1}),
+crit(22577,{achID=8022,id=4,providers={{"s",136158}},r=1})}}),
 ach(7949,{awp=50300,providers={{"s",136305}},r=2}),
 ach(7950,{awp=50300,providers={{"s",136305}},r=1}),
 ach(7947,{providers={{"s",136144}},r=2}),
@@ -365,167 +365,167 @@ ach(7937,{providers={{"s",134548}},r=2}),
 ach(8020,{providers={{"s",134548}},r=1})}),
 h(-16,{
 n(67262,{
-i(97983,{awp=50300,b=1,lvl=90,q=1,rwp=70003,u=53})})}),
+i(97983,{awp=50300,b=1,lvl=90,phase=53,q=1})})}),
 h(-31,{
 faction(1419,{r=2}),
 faction(1374,{r=1})}),
 h(-45,{
-q(32836,{awp=50300,qss={97978},rwp=70003,u=53,g={
-crit(23371,{achID=8339,id=1,r=2,u=53}),
-crit(23371,{achID=8342,id=1,r=1,u=53})}}),
+q(32836,{awp=50300,phase=53,qss={97978},g={
+crit(23371,{achID=8339,id=1,r=2,rwp=70003}),
+crit(23371,{achID=8342,id=1,r=1,rwp=70003})}}),
 q(32837,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752}},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
 {coords={
-[503]={{60.4,77.5}}},qgs={70751}},rwp=70003,sourceQuests={32836},u=53,g={
-qo(1,{providers={{"n",70689}}}),
-s(279115,98079,{b=1,f=10,q=3}),
-i(98099,{b=1,q=1}),
-crit(23383,{achID=8340,id=1,r=2,rwp=60002,u=53}),
-crit(23383,{achID=8343,id=1,r=1,rwp=60002,u=53})}})),
-q(32838,{awp=50300,qss={97979},rwp=70003,u=53,g={
-crit(23380,{achID=8339,id=10,r=2,u=53}),
-crit(23380,{achID=8342,id=10,r=1,u=53})}}),
+[503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32836},g={
+qo(1,{providers={{"n",70689}},rwp=70003}),
+s(279115,98079,{b=1,f=10,q=3,rwp=70003}),
+i(98099,{b=1,q=1,rwp=70003}),
+crit(23383,{achID=8340,id=1,r=2}),
+crit(23383,{achID=8343,id=1,r=1})}})),
+q(32838,{awp=50300,phase=53,qss={97979},g={
+crit(23380,{achID=8339,id=10,r=2,rwp=70003}),
+crit(23380,{achID=8342,id=10,r=1,rwp=70003})}}),
 q(32839,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752}},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
 {coords={
-[503]={{60.4,77.5}}},qgs={70751}},rwp=70003,sourceQuests={32838},u=53,g={
-qo(1,{providers={{"n",70748}}}),
-s(279116,98080,{b=1,f=10,q=3}),
-i(98102,{b=1,q=1}),
-crit(23384,{achID=8340,id=9,r=2,rwp=60002,u=53}),
-crit(23384,{achID=8343,id=9,r=1,rwp=60002,u=53})}})),
-q(32840,{awp=50300,qss={97980},rwp=70003,u=53,g={
-crit(23373,{achID=8339,id=3,r=2,u=53}),
-crit(23373,{achID=8342,id=3,r=1,u=53})}}),
+[503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32838},g={
+qo(1,{providers={{"n",70748}},rwp=70003}),
+s(279116,98080,{b=1,f=10,q=3,rwp=70003}),
+i(98102,{b=1,q=1,rwp=70003}),
+crit(23384,{achID=8340,id=9,r=2}),
+crit(23384,{achID=8343,id=9,r=1})}})),
+q(32840,{awp=50300,phase=53,qss={97980},g={
+crit(23373,{achID=8339,id=3,r=2,rwp=70003}),
+crit(23373,{achID=8342,id=3,r=1,rwp=70003})}}),
 q(32841,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752}},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
 {coords={
-[503]={{60.4,77.5}}},qgs={70751}},rwp=70003,sourceQuests={32840},u=53,g={
-qo(1,{providers={{"n",70677}}}),
-s(279117,98081,{b=1,f=10,q=3}),
-i(98099,{b=1,q=1}),
-crit(23385,{achID=8340,id=3,r=2,rwp=60002,u=53}),
-crit(23385,{achID=8343,id=3,r=1,rwp=60002,u=53})}})),
-q(32842,{awp=50300,qss={97981},rwp=70003,u=53,g={
-crit(23374,{achID=8339,id=4,r=2,u=53}),
-crit(23374,{achID=8342,id=4,r=1,u=53})}}),
+[503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32840},g={
+qo(1,{providers={{"n",70677}},rwp=70003}),
+s(279117,98081,{b=1,f=10,q=3,rwp=70003}),
+i(98099,{b=1,q=1,rwp=70003}),
+crit(23385,{achID=8340,id=3,r=2}),
+crit(23385,{achID=8343,id=3,r=1})}})),
+q(32842,{awp=50300,phase=53,qss={97981},g={
+crit(23374,{achID=8339,id=4,r=2,rwp=70003}),
+crit(23374,{achID=8342,id=4,r=1,rwp=70003})}}),
 q(32843,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752}},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
 {coords={
-[503]={{60.4,77.5}}},qgs={70751}},rwp=70003,sourceQuests={32842},u=53,g={
-qo(1,{providers={{"n",71085}}}),
-s(279119,98083,{b=1,f=10,q=3}),
-i(98100,{b=1,q=1}),
-crit(23386,{achID=8340,id=4,r=2,rwp=60002,u=53}),
-crit(23386,{achID=8343,id=4,r=1,rwp=60002,u=53})}})),
-q(32844,{awp=50300,qss={97982},rwp=70003,u=53,g={
-crit(23375,{achID=8339,id=5,r=2,u=53}),
-crit(23375,{achID=8342,id=5,r=1,u=53})}}),
+[503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32842},g={
+qo(1,{providers={{"n",71085}},rwp=70003}),
+s(279119,98083,{b=1,f=10,q=3,rwp=70003}),
+i(98100,{b=1,q=1,rwp=70003}),
+crit(23386,{achID=8340,id=4,r=2}),
+crit(23386,{achID=8343,id=4,r=1})}})),
+q(32844,{awp=50300,phase=53,qss={97982},g={
+crit(23375,{achID=8339,id=5,r=2,rwp=70003}),
+crit(23375,{achID=8342,id=5,r=1,rwp=70003})}}),
 q(32845,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752}},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
 {coords={
-[503]={{60.4,77.5}}},qgs={70751}},rwp=70003,sourceQuests={32844},u=53,g={
-qo(1,{providers={{"n",70737}}}),
-s(279120,98084,{b=1,f=10,q=3}),
-i(98100,{b=1,q=1}),
-crit(23387,{achID=8340,id=5,r=2,rwp=60002,u=53}),
-crit(23387,{achID=8343,id=5,r=1,rwp=60002,u=53})}})),
-q(32846,{awp=50300,qss={97983},rwp=70003,u=53,g={
-crit(23376,{achID=8339,id=6,r=2,u=53}),
-crit(23376,{achID=8342,id=6,r=1,u=53})}}),
+[503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32844},g={
+qo(1,{providers={{"n",70737}},rwp=70003}),
+s(279120,98084,{b=1,f=10,q=3,rwp=70003}),
+i(98100,{b=1,q=1,rwp=70003}),
+crit(23387,{achID=8340,id=5,r=2}),
+crit(23387,{achID=8343,id=5,r=1})}})),
+q(32846,{awp=50300,phase=53,qss={97983},g={
+crit(23376,{achID=8339,id=6,r=2,rwp=70003}),
+crit(23376,{achID=8342,id=6,r=1,rwp=70003})}}),
 q(32847,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752}},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
 {coords={
-[503]={{60.4,77.5}}},qgs={70751}},rwp=70003,sourceQuests={32846},u=53,g={
-qo(1,{providers={{"n",71081}}}),
-s(279121,98085,{b=1,f=10,q=3}),
-i(98101,{b=1,q=1}),
-crit(23388,{achID=8340,id=6,r=2,rwp=60002,u=53}),
-crit(23388,{achID=8343,id=6,r=1,rwp=60002,u=53})}})),
-q(32848,{awp=50300,qss={97984},rwp=70003,u=53,g={
-crit(23377,{achID=8339,id=7,r=2,u=53}),
-crit(23377,{achID=8342,id=7,r=1,u=53})}}),
+[503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32846},g={
+qo(1,{providers={{"n",71081}},rwp=70003}),
+s(279121,98085,{b=1,f=10,q=3,rwp=70003}),
+i(98101,{b=1,q=1,rwp=70003}),
+crit(23388,{achID=8340,id=6,r=2}),
+crit(23388,{achID=8343,id=6,r=1})}})),
+q(32848,{awp=50300,phase=53,qss={97984},g={
+crit(23377,{achID=8339,id=7,r=2,rwp=70003}),
+crit(23377,{achID=8342,id=7,r=1,rwp=70003})}}),
 q(32849,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752}},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
 {coords={
-[503]={{60.4,77.5}}},qgs={70751}},rwp=70003,sourceQuests={32848},u=53,g={
-qo(1,{providers={{"n",70647},{"n",70648}}}),
-s(279122,98086,{b=1,f=10,q=3}),
-i(98100,{b=1,q=1}),
-crit(23389,{achID=8340,id=7,r=2,rwp=60002,u=53}),
-crit(23389,{achID=8343,id=7,r=1,rwp=60002,u=53})}})),
-q(32850,{awp=50300,qss={97985},rwp=70003,u=53,g={
-crit(23378,{achID=8339,id=8,r=2,u=53}),
-crit(23378,{achID=8342,id=8,r=1,u=53})}}),
+[503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32848},g={
+qo(1,{providers={{"n",70647},{"n",70648}},rwp=70003}),
+s(279122,98086,{b=1,f=10,q=3,rwp=70003}),
+i(98100,{b=1,q=1,rwp=70003}),
+crit(23389,{achID=8340,id=7,r=2}),
+crit(23389,{achID=8343,id=7,r=1})}})),
+q(32850,{awp=50300,phase=53,qss={97985},g={
+crit(23378,{achID=8339,id=8,r=2,rwp=70003}),
+crit(23378,{achID=8342,id=8,r=1,rwp=70003})}}),
 q(32851,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752}},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
 {coords={
-[503]={{60.4,77.5}}},qgs={70751}},rwp=70003,sourceQuests={32850},u=53,g={
-qo(1,{providers={{"n",70740}}}),
-s(279124,98091,{b=1,f=10,q=3}),
-i(98101,{b=1,q=1}),
-crit(23390,{achID=8340,id=8,r=2,rwp=60002,u=53}),
-crit(23390,{achID=8343,id=8,r=1,rwp=60002,u=53})}})),
-q(32852,{awp=50300,qss={97986},rwp=70003,u=53,g={
-crit(23382,{achID=8339,id=11,r=2,u=53}),
-crit(23382,{achID=8342,id=11,r=1,u=53})}}),
+[503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32850},g={
+qo(1,{providers={{"n",70740}},rwp=70003}),
+s(279124,98091,{b=1,f=10,q=3,rwp=70003}),
+i(98101,{b=1,q=1,rwp=70003}),
+crit(23390,{achID=8340,id=8,r=2}),
+crit(23390,{achID=8343,id=8,r=1})}})),
+q(32852,{awp=50300,phase=53,qss={97986},g={
+crit(23382,{achID=8339,id=11,r=2,rwp=70003}),
+crit(23382,{achID=8342,id=11,r=1,rwp=70003})}}),
 q(32853,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752}},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
 {coords={
-[503]={{60.4,77.5}}},qgs={70751}},rwp=70003,sourceQuests={32852},u=53,g={
-qo(1,{providers={{"n",70616}}}),
-s(279125,98092,{b=1,f=10,q=3}),
-i(98103,{b=1,q=1}),
-crit(23391,{achID=8340,id=11,r=2,rwp=60002,u=53}),
-crit(23391,{achID=8343,id=11,r=1,rwp=60002,u=53})}})),
-q(32854,{awp=50300,qss={97987},rwp=70003,u=53,g={
-crit(23381,{achID=8339,id=12,r=2,u=53}),
-crit(23381,{achID=8342,id=12,r=1,u=53})}}),
+[503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32852},g={
+qo(1,{providers={{"n",70616}},rwp=70003}),
+s(279125,98092,{b=1,f=10,q=3,rwp=70003}),
+i(98103,{b=1,q=1,rwp=70003}),
+crit(23391,{achID=8340,id=11,r=2}),
+crit(23391,{achID=8343,id=11,r=1})}})),
+q(32854,{awp=50300,phase=53,qss={97987},g={
+crit(23381,{achID=8339,id=12,r=2,rwp=70003}),
+crit(23381,{achID=8342,id=12,r=1,rwp=70003})}}),
 q(32855,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752}},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
 {coords={
-[503]={{60.4,77.5}}},qgs={70751}},rwp=70003,sourceQuests={32854},u=53,g={
-qo(1,{providers={{"n",70794}}}),
-s(279126,98093,{b=1,f=10,q=3}),
-i(98103,{b=1,q=1}),
-crit(23392,{achID=8340,id=12,r=2,rwp=60002,u=53}),
-crit(23392,{achID=8343,id=12,r=1,rwp=60002,u=53})}})),
-q(32856,{awp=50300,qss={97988},rwp=70003,u=53,g={
-crit(23379,{achID=8339,id=9,r=2,u=53}),
-crit(23379,{achID=8342,id=9,r=1,u=53})}}),
+[503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32854},g={
+qo(1,{providers={{"n",70794}},rwp=70003}),
+s(279126,98093,{b=1,f=10,q=3,rwp=70003}),
+i(98103,{b=1,q=1,rwp=70003}),
+crit(23392,{achID=8340,id=12,r=2}),
+crit(23392,{achID=8343,id=12,r=1})}})),
+q(32856,{awp=50300,phase=53,qss={97988},g={
+crit(23379,{achID=8339,id=9,r=2,rwp=70003}),
+crit(23379,{achID=8342,id=9,r=1,rwp=70003})}}),
 q(32857,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752}},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
 {coords={
-[503]={{60.4,77.5}}},qgs={70751}},rwp=70003,sourceQuests={32856},u=53,g={
-qo(1,{providers={{"n",70749}}}),
-s(279123,98087,{b=1,f=10,q=3}),
-i(98102,{b=1,q=1}),
-crit(23393,{achID=8340,id=10,r=2,rwp=60002,u=53}),
-crit(23393,{achID=8343,id=10,r=1,rwp=60002,u=53})}})),
-q(32858,{awp=50300,qss={97990},rwp=70003,u=53,g={
-crit(23372,{achID=8339,id=2,r=2,u=53}),
-crit(23372,{achID=8342,id=2,r=1,u=53})}}),
+[503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32856},g={
+qo(1,{providers={{"n",70749}},rwp=70003}),
+s(279123,98087,{b=1,f=10,q=3,rwp=70003}),
+i(98102,{b=1,q=1,rwp=70003}),
+crit(23393,{achID=8340,id=10,r=2}),
+crit(23393,{achID=8343,id=10,r=1})}})),
+q(32858,{awp=50300,phase=53,qss={97990},g={
+crit(23372,{achID=8339,id=2,r=2,rwp=70003}),
+crit(23372,{achID=8342,id=2,r=1,rwp=70003})}}),
 q(32859,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752}},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
 {coords={
-[503]={{60.4,77.5}}},qgs={70751}},rwp=70003,sourceQuests={32858},u=53,g={
-qo(1,{providers={{"n",70666}}}),
-s(279118,98082,{b=1,f=10,q=3}),
-i(98099,{b=1,q=1}),
-crit(23394,{achID=8340,id=2,r=2,rwp=60002,u=53}),
-crit(23394,{achID=8343,id=2,r=1,rwp=60002,u=53})}}))}),
+[503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32858},g={
+qo(1,{providers={{"n",70666}},rwp=70003}),
+s(279118,98082,{b=1,f=10,q=3,rwp=70003}),
+i(98099,{b=1,q=1,rwp=70003}),
+crit(23394,{achID=8340,id=2,r=2}),
+crit(23394,{achID=8343,id=2,r=1})}}))}),
 h(-47,{
 i(92718,{b=1,description="Awarded for winning a Brawl.",f=55,q=1}),
 i(92719,{b=1,description="Awarded for winning a Random Brawl.",f=55,q=1})}),
@@ -538,7 +538,7 @@ i(97321,{awp=50300,b=1,f=55,q=1}),
 i(97445,{awp=50300,b=1,f=55,q=1}),
 i(93823,{awp=50300,b=1,f=55,q=1,g={
 n(67262,{rwp=70003,g={
-i(97983,{b=1,lvl=90,q=1,u=53})}})}}),
+i(97983,{b=1,lvl=90,phase=53,q=1})}})}}),
 i(94170,{awp=50300,b=1,f=55,q=1}),
 i(94179,{awp=50300,b=1,f=55,q=1}),
 i(94173,{awp=50300,b=1,f=55,q=1}),
@@ -548,7 +548,7 @@ i(94172,{awp=50300,b=1,f=55,q=1}),
 i(94182,{awp=50300,b=1,f=55,q=1}),
 i(94175,{awp=50300,b=1,f=55,q=1}),
 i(94164,{awp=50200,b=1,f=55,q=1}),
-i(94178,{awp=50300,b=1,f=55,q=1,rwp=90002,u=53}),
+i(94178,{awp=50300,b=1,f=55,phase=53,q=1}),
 i(94160,{awp=50300,b=1,f=55,q=1}),
 i(94168,{awp=50300,b=1,f=55,q=1}),
 i(94165,{awp=50300,b=1,f=55,q=1}),
@@ -575,7 +575,7 @@ i(97321,{awp=50300,b=1,f=55,q=1}),
 i(97445,{awp=50300,b=1,f=55,q=1}),
 i(93823,{awp=50300,b=1,f=55,q=1,g={
 n(67262,{rwp=70003,g={
-i(97983,{b=1,lvl=90,q=1,u=53})}})}}),
+i(97983,{b=1,lvl=90,phase=53,q=1})}})}}),
 i(94170,{awp=50300,b=1,f=55,q=1}),
 i(94179,{awp=50300,b=1,f=55,q=1}),
 i(94173,{awp=50300,b=1,f=55,q=1}),
@@ -585,7 +585,7 @@ i(94172,{awp=50300,b=1,f=55,q=1}),
 i(94182,{awp=50300,b=1,f=55,q=1}),
 i(94175,{awp=50300,b=1,f=55,q=1}),
 i(94164,{awp=50200,b=1,f=55,q=1}),
-i(94178,{awp=50300,b=1,f=55,q=1,rwp=90002,u=53}),
+i(94178,{awp=50300,b=1,f=55,phase=53,q=1}),
 i(94160,{awp=50300,b=1,f=55,q=1}),
 i(94168,{awp=50300,b=1,f=55,q=1}),
 i(94165,{awp=50300,b=1,f=55,q=1}),
@@ -615,47 +615,47 @@ n(70719,{awp=50300,coords={
 n(68364,{coords={
 [503]={{50.8,29.4}}},r=1,g={
 flt(100,{
-mnt(142641,{awp=50300,b=1,description="Available after reaching Rank 10.",itemID=98405,lvl=85,q=4,rwp=70105,u=53})}),
+mnt(142641,{awp=50300,b=1,description="Available after reaching Rank 10.",itemID=98405,lvl=85,phase=53,q=4,rwp=70105})}),
 flt(101,{
 p(1142,{awp=50300,b=1,description="Available after reaching Rank 4.",itemID=93025,npcID=68601,q=1,rwp=90002,spellID=135156})}),
 heir(93858,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,sourceID=276259}),
 heir(92948,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,sourceID=275683}),
-s(279121,98085,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279125,98092,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279115,98079,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279116,98080,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279124,98091,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279120,98084,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279123,98087,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279119,98083,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279126,98093,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279117,98081,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
+s(279121,98085,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279125,98092,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279115,98079,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279116,98080,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279124,98091,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279120,98084,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279123,98087,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279119,98083,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279126,98093,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279117,98081,{awp=50300,b=1,f=10,phase=53,q=3}),
 i(95050,{awp=50200,b=1,f=52,lvl=90,q=4,r=1}),
-s(279122,98086,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279118,98082,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279278,98543,{awp=50300,b=1,f=10,q=4,rwp=90002,u=53})}}),
+s(279122,98086,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279118,98082,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279278,98543,{awp=50300,b=1,f=10,phase=53,q=4})}}),
 n(68363,{coords={
 [500]={{54.3,25.2}}},r=2,g={
 flt(100,{
-mnt(142641,{awp=50300,b=1,description="Available after reaching Rank 10.",itemID=98405,lvl=85,q=4,rwp=70105,u=53})}),
+mnt(142641,{awp=50300,b=1,description="Available after reaching Rank 10.",itemID=98405,lvl=85,phase=53,q=4,rwp=70105})}),
 flt(101),
 heir(93858,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,sourceID=276259}),
 heir(92948,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,sourceID=275683}),
-s(279121,98085,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279125,98092,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279115,98079,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279116,98080,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279124,98091,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279120,98084,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279123,98087,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279119,98083,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279126,98093,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279117,98081,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
+s(279121,98085,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279125,98092,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279115,98079,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279116,98080,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279124,98091,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279120,98084,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279123,98087,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279119,98083,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279126,98093,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279117,98081,{awp=50300,b=1,f=10,phase=53,q=3}),
 i(95051,{awp=50200,b=1,f=52,lvl=90,q=4,r=2}),
-s(279122,98086,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279118,98082,{awp=50300,b=1,f=10,q=3,rwp=90002,u=53}),
-s(279278,98543,{awp=50300,b=1,f=10,q=4,rwp=90002,u=53})}})})}}),
-h(-723,{awp=10400,lvl=60,rwp=40003,u=2,g={
+s(279122,98086,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279118,98082,{awp=50300,b=1,f=10,phase=53,q=3}),
+s(279278,98543,{awp=50300,b=1,f=10,phase=53,q=4})}})})}}),
+h(-723,{awp=10400,lvl=60,phase=12,rwp=40003,u=2,g={
 n(14464,{coords={
 [76]={{72.6,20},{77,24.2},{77.2,16.6},{80,24.2},{82.6,21}}},description="This is only available during an Elemental Invasion.",u=2,g={
 s(129577,18673,{f=8,lvl=54,q=3,u=2}),
@@ -674,10 +674,10 @@ n(14454,{coords={
 r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=165,u=2}),
 s(129580,18676,{f=6,loc=45,lvl=56,q=3,u=2}),
 s(129581,18677,{f=3,lvl=56,q=2,u=2})}})}}),
-h(-476,{awp=30403,e=444,rwp=40001,u=2,g={
+h(-476,{awp=30403,e=444,phase=3302,rwp=40001,u=2,g={
 p(4532,{e=444,npcID=222858,petTypeID=9,spellID=446916,u=2}),
 mnt(446902,{b=1,e=444,itemID=265937,lvl=30,q=4,u=2})}}),
-h(-481,{maps={85,87},rwp=20001,u=2,g={
+h(-481,{maps={85,87},phase=1501,rwp=20001,u=2,g={
 h(-210,{r=2,u=2,g={
 q(8811,{coords={
 [84]={{55.2,64.7}},
@@ -1044,7 +1044,7 @@ q(8793,{coords={
 q(8794,{coords={
 [85]={{30.3,67.6}}},lvl=10,qgs={15704},r=1,u=2}),
 q(10500,{isBreadcrumb=1,lvl=10,qgs={21155},r=1,u=2})}}),
-h(-45,{u=2,g={
+h(-45,{phase=1503,u=2,g={
 q(8857,{crs={15742},lvl=51,qss={21534},u=2,g={
 i(21528,{b=1,q=2,u=2})}}),
 q(8858,{crs={15741},lvl=51,qss={21535},u=2,g={
@@ -1059,7 +1059,7 @@ i(21510,{b=1,description="Contains a random assortment of common, uncommon, and 
 i(21511,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 30-32.",q=1,u=2}),
 i(21512,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 40-42.",q=1,u=2}),
 i(21513,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 50-52.",q=1,u=2})}})}}),
-h(-483,{awp=10900,lvl=60,maps={71,75},rwp=40003,u=2,g={
+h(-483,{awp=10900,lvl=60,maps={71,75},phase=15,rwp=40003,u=2,g={
 h(-45,{u=2,g={
 q(8519,{coords={
 [81]={{28.7,89.1}}},lvl=60,minReputation={910,0},providers={{"o",180633}},sourceQuests={8305},u=2}),
@@ -1068,7 +1068,7 @@ q(8303,{coords={
 q(8575,{coords={
 [76]={{57,85.6}}},lvl=60,providers={{"i",20949}},qgs={15481},sourceQuests={8555},u=2}),
 q(8743,{coords={
-[81]={{25.7,90.9}}},lvl=60,providers={{"o",180717}},qis={21175},sourceQuests={8742},u=2,g={
+[81]={{25.7,90.9}}},lvl=60,phase=1502,providers={{"o",180717}},qis={21175},sourceQuests={8742},u=2,g={
 ach(416,{sourceQuests={8743},u=2}),
 title(33,{awp=20003,u=2}),
 mnt(26656,{b=1,itemID=21176,lvl=40,q=5,u=2})}}),
@@ -1171,7 +1171,7 @@ q(8286,{coords={
 [81]={{49.5,36.4}}},description="This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",lvl=60,qgs={15180},u=2})}}),
 h(-47,{u=2,g={
 i(20402,{b=1,cost={{"i",20403,1}},description="A friendly player can use their Proxy of Nozdormu to grant an undeputized player Agency to collect fragments. Oh joy. Enjoy the suffering.",q=2,u=2})}})}}),
-h(-484,{maps={17,23,36,71,76,83,111},rwp=30003,u=2,g={
+h(-484,{maps={17,23,36,71,76,83,111},phase=2108,rwp=30003,u=2,g={
 h(-12,{u=2,g={
 ach(2116,{providers={{"i",22999}},u=2})}}),
 h(-45,{u=2,g={
@@ -1184,7 +1184,7 @@ q(9094,{coords={
 [23]={{81,59.8}},
 [84]={{54.7,62.2}},
 [87]={{34,66.4}},
-[89]={{64.3,44.5}}},cost={{"i",22484,30}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[89]={{64.3,44.5}}},cost={{"i",22484,30}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 s(133483,23084,{b=1,f=4,loc=44,q=3,u=2}),
 s(201226,23081,{b=1,f=5,loc=44,q=3,u=2}),
 s(133481,23082,{b=1,f=6,loc=44,q=3,u=2}),
@@ -1193,7 +1193,7 @@ q(9333,{coords={
 [23]={{80.8,59.6}},
 [85]={{52.5,73.7}},
 [88]={{43.7,52.6}},
-[998]={{49.9,29.4}}},cost={{"i",22484,30}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[998]={{49.9,29.4}}},cost={{"i",22484,30}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 s(133483,23084,{b=1,f=4,loc=44,q=3,u=2}),
 s(201226,23081,{b=1,f=5,loc=44,q=3,u=2}),
 s(133481,23082,{b=1,f=6,loc=44,q=3,u=2}),
@@ -1202,13 +1202,13 @@ q(9318,{coords={
 [23]={{81,59.8}},
 [84]={{54.7,62.2}},
 [87]={{34,66.4}},
-[89]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[89]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(23123,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(9334,{coords={
 [23]={{80.8,59.6}},
 [85]={{52.5,73.7}},
 [88]={{43.7,52.6}},
-[998]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[998]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(23123,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(12616,{awp=30002,lvl=70,maps={350},qgs={16285},u=2,g={
 i(40354,{b=1,f=53,lvl=70,q=3,u=2})}}),
@@ -1216,13 +1216,13 @@ q(9317,{coords={
 [23]={{81,59.8}},
 [84]={{54.7,62.2}},
 [87]={{34,66.4}},
-[89]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[89]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(23122,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(9335,{coords={
 [23]={{80.8,59.6}},
 [85]={{52.5,73.7}},
 [88]={{43.7,52.6}},
-[998]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[998]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(23122,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
 q(9292,{description="If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={84},qgs={16431},qis={22949},r=2,u=2,g={
 i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
@@ -1271,25 +1271,25 @@ q(9321,{coords={
 [23]={{81,59.8}},
 [84]={{54.7,62.2}},
 [87]={{34,66.4}},
-[89]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[89]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(13446,{f=55,lvl=45,q=1,rwp=30003,u=2})}}),
 q(9336,{coords={
 [23]={{80.8,59.6}},
 [85]={{52.5,73.7}},
 [88]={{43.7,52.6}},
-[998]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[998]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(13446,{f=55,lvl=45,q=1,rwp=30003,u=2})}}),
 q(9337,{coords={
 [23]={{81,59.8}},
 [84]={{54.7,62.2}},
 [87]={{34,66.4}},
-[89]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[89]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(13444,{f=55,lvl=49,q=1,rwp=30003,u=2})}}),
 q(9320,{coords={
 [23]={{80.8,59.6}},
 [85]={{52.5,73.7}},
 [88]={{43.7,52.6}},
-[998]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[998]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(13444,{f=55,lvl=49,q=1,rwp=30003,u=2})}}),
 q(9302,{lvl=45,qis={22944},qss={22973},u=2}),
 q(9299,{lvl=45,qis={22945},qss={22972},u=2}),
@@ -1307,13 +1307,13 @@ q(9341,{coords={
 [23]={{81,59.8}},
 [84]={{54.7,62.2}},
 [87]={{34,66.4}},
-[89]={{64.3,44.5}}},cost={{"i",22484,10}},lvl=50,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[89]={{64.3,44.5}}},cost={{"i",22484,10}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 s(133398,22999,{b=1,f=9,q=2,rwp=30003,u=2})}}),
 q(9343,{coords={
 [23]={{80.8,59.6}},
 [85]={{52.5,73.7}},
 [88]={{43.7,52.6}},
-[998]={{49.9,29.4}}},cost={{"i",22484,10}},lvl=50,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
+[998]={{49.9,29.4}}},cost={{"i",22484,10}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 s(133398,22999,{b=1,f=9,q=2,rwp=30003,u=2})}}),
 q(12776,{awp=30002,lvl=65,maps={103},qgs={29087},qis={39698},races={11},sourceQuests={12777},u=2}),
 q(9247,{coords={
@@ -1354,10 +1354,10 @@ s(201797,43069,{awp=30002,b=1,f=7,loc=42,lvl=70,q=4,u=2}),
 s(174669,43080,{awp=30002,b=1,f=6,loc=42,lvl=70,q=4,u=2}),
 s(174661,43072,{awp=30002,b=1,f=4,loc=42,lvl=70,q=4,u=2}),
 s(174665,43076,{awp=30002,b=1,f=5,loc=42,lvl=70,q=4,u=2}),
-s(133486,23087,{b=1,f=7,loc=42,lvl=58,q=3,rwp=20001,u=2}),
-s(133487,23088,{b=1,f=6,loc=42,lvl=58,q=3,rwp=20001,u=2}),
-s(133484,23085,{b=1,f=4,loc=42,lvl=58,q=3,rwp=20001,u=2}),
-s(201227,23089,{b=1,f=5,loc=42,lvl=58,q=3,rwp=20001,u=2})}}),
+s(133486,23087,{b=1,f=7,loc=42,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
+s(133487,23088,{b=1,f=6,loc=42,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
+s(133484,23085,{b=1,f=4,loc=42,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
+s(201227,23089,{b=1,f=5,loc=42,lvl=58,phase=1601,q=3,rwp=20001,u=2})}}),
 n(28194,{awp=30002,description="Located in Karazhan.\n\nCan be found in the Guardhouse, behind a Bloodstained Door above the stables where Attumen resides, which can be accessed through the stairs after Attumen, or through the ballroom where Moroes resides.",maps={350},u=2,g={
 ach(2456,{providers={{"i",38658}},u=2}),
 p(187,{b=1,description="Drops for everyone in the raid. Get one on all of your alts!",itemID=38658,npcID=28513,q=3,spellID=51851,u=2}),
@@ -1401,10 +1401,10 @@ s(174672,43083,{awp=30002,b=1,f=6,loc=46,lvl=70,q=4,u=2}),
 s(174668,43079,{awp=30002,b=1,f=5,loc=46,lvl=70,q=4,u=2}),
 s(174660,43071,{awp=30002,b=1,f=7,loc=46,lvl=70,q=4,u=2}),
 s(174664,43075,{awp=30002,b=1,f=4,loc=46,lvl=70,q=4,u=2}),
-s(133490,23091,{f=4,loc=43,lvl=58,q=3,rwp=20001,u=2}),
-s(201228,23093,{f=5,loc=43,lvl=58,q=3,rwp=20001,u=2}),
-s(133491,23092,{f=6,loc=43,lvl=58,q=3,rwp=20001,u=2}),
-s(133489,23090,{f=7,loc=43,lvl=58,q=3,rwp=20001,u=2})}}),
+s(133490,23091,{f=4,loc=43,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
+s(201228,23093,{f=5,loc=43,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
+s(133491,23092,{f=6,loc=43,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
+s(133489,23090,{f=7,loc=43,lvl=58,phase=1601,q=3,rwp=20001,u=2})}}),
 h(-47,{description="The reports are mailed to you about 48 hours after you turn in the random drop letter quests and there is one unique flavor message per letter. I'm not sure if speaking to the npcs mentioned in the responses leads to more flavor text, but someone should probably look into that.",u=2,g={
 i(23196,{b=1,crs={16434,16436},description="1 Stamina for every 2 levels for 1 Hour.\n\nAvailable after 150 Battles won.",f=55,q=1,u=2}),
 i(23194,{b=1,crs={16384,16395},description="1 Stamina for every 6 levels for 1 Hour.\n\nAvailable after 50 Battles won.",f=55,q=1,u=2}),

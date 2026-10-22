@@ -884,7 +884,7 @@ i(22695,{b=1,f=200,minReputation={749,21000},q=1,requireSkill=165}),
 i(22694,{b=1,f=200,minReputation={529,21000},q=1,requireSkill=165}),
 i(22692,{b=1,f=200,minReputation={529,42000},q=1,requireSkill=165})})}}),
 x(2,{awp=20003,g={
-i(185922,{description="Not actually sure if this is in the game at all since the spell trained by this recipe can be learned at the trainer.",f=200,requireSkill=165,u=20}),
+i(185922,{description="Not actually sure if this is in the game at all since the spell trained by this recipe can be learned at the trainer.",f=200,phase=20,requireSkill=165}),
 x(2.04,{awp=20400,g={
 i(35528,{f=200,q=4,requireSkill=165})}})}})})}),
 prof(186,{

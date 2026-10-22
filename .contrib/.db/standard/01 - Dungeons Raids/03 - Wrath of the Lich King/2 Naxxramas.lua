@@ -518,9 +518,6 @@ local NAXX_10MAN_LOOT = d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 			}),
 			i(39261),	-- Tainted Girdle of Mending
 			i(39263, {	-- Dissevered Leggings
-				-- #if ANYCLASSIC
-				OnUpdate = [[function(t) if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_TWO .. [[) then t.u = nil; else t.u = ]] .. WRATH_PHASE_TWO .. [[; end end]],
-				-- #endif
 				-- #if BEFORE 8.0.1
 				description = "This item was originally unavailable until Patch 8.0.1, but after H+ was introduced to Wrath Classic, it was added as a boss drop from Old Kingdom.\n\nInterestingly enough, its absence triggered the creation of the addon by Crieve after failing to get this transmog to drop after many many months of unsuccessfully farming for it.",
 				-- #endif

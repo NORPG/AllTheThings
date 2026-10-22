@@ -5,7 +5,7 @@ local ach,ah,cl,crit,cs,cu,exp,faction,flt,fp,h,heir,i,m,mnt,n,o,p,prof,q,qo,r,s
 categories.ExpansionFeatures=
 h(-735,{SortPriority=35,g={
 x(2,{awp=20003,g={
-ah(1015,{awp=20100,description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",icon=132250,lvl=70,maps={104},type="fa",u=1901,g={
+ah(1015,{awp=20100,description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",icon=132250,lvl=70,maps={104},phase=1901,type="fa",g={
 h(-12,{
 ach(898,{minReputation={1015,42000}})}),
 h(-31,{
@@ -169,7 +169,7 @@ i(32724,{b=1,coords={
 [104]={{69.4,86}}},crs={23286},q=1,sym={{"select","itemID",32506,32464,32468,32470}},g={
 i(32726,{b=1,lvl=70,minReputation={1015,3000},q=1})}})})}})}}),
 x(3,{awp=30003,g={
-h(-413,{awp=30200,maps={118,170},u=31,g={
+h(-413,{awp=30200,maps={118,170},phase=31,g={
 h(-12,{
 ach(3676,{minReputation={1094,42000},r=2,sourceQuests={13702,13732,13733,13734,13735}}),
 ach(2756,{sourceQuests={13667,13668}}),
@@ -186,9 +186,9 @@ crit(10228,{achID=2836,crs={33561,33747,35328},id=9,providers={{"s",64814}}}),
 crit(10224,{achID=2836,crs={33562,33739,35330},id=3,providers={{"s",64808}}}),
 crit(9922,{achID=2836,crs={33384,33749,35327},id=11,providers={{"s",64816}}}),
 crit(9921,{achID=2836,crs={33383,33748,35325},id=10,providers={{"s",64815}}})}),
-ach(3736,{providers={{"i",47541}},u=32}),
+ach(3736,{phase=32,providers={{"i",47541}}}),
 ach(3677,{minReputation={1124,42000},r=1,sourceQuests={13736,13737,13738,13739,13740}}),
-ach(4596,{description="You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",maps={125},sourceQuests={24795,24796,24798,24799,24800,24801},u=33,g={
+ach(4596,{description="You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",maps={125},phase=33,sourceQuests={24795,24796,24798,24799,24800,24801},g={
 s(178266,50050,{b=1,f=23,lvl=80,q=4}),
 s(178267,50051,{b=1,f=23,lvl=80,q=4}),
 s(178268,50052,{b=1,f=24,lvl=80,q=4}),
@@ -384,11 +384,11 @@ q(13681,{awp=30100,coords={
 [118]={{74,24.6}}},isDaily=1,maps={120},qgs={33435},rwp=40001,sourceQuests={13820},u=2,g={
 qo(1,{awp=30200,providers={{"i",45278},{"i",45281},{"o",194461},{"o",194463}}})}}),
 q(14074,{coords={
-[118]={{76.2,19.6}}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,qgs={34880},r=2,sourceAchievements={3676},u=32,g={
+[118]={{76.2,19.6}}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,phase=32,qgs={34880},r=2,sourceAchievements={3676},g={
 qo(1,{crs={34838,34839,34965},providers={{"i",46859},{"o",195274}}}),
 cu(241)}}),
 q(14143,{coords={
-[118]={{76.1,24}}},isDaily=1,minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,qgs={34771},r=1,sourceAchievements={3677},u=32,g={
+[118]={{76.1,24}}},isDaily=1,minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,phase=32,qgs={34771},r=1,sourceAchievements={3677},g={
 qo(1,{crs={34838,34839,34965},providers={{"i",46859},{"o",195274}}}),
 cu(241)}}),
 q(13689,{coords={
@@ -609,49 +609,49 @@ q(13864,{c={6},coords={
 qo(1,{providers={{"n",34127}}}),
 i(46114,{b=1,q=1}),
 cu(241,{providers={{"i",45724}}})}}),
-q(24442,{crs={34838,34839},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qss={49676},sourceAchievements={2771,2817},u=32,g={
+q(24442,{crs={34838,34839},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,phase=32,qss={49676},sourceAchievements={2771,2817},g={
 qo(1,{coords={
 [170]={{43.9,24.5}}},providers={{"i",49678},{"o",201367}}})}}),
 q(14076,{coords={
-[118]={{76.2,19.6}}},isDaily=1,maps={120},minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,qgs={34912},r=2,sourceAchievements={3676},u=32,g={
+[118]={{76.2,19.6}}},isDaily=1,maps={120},minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,phase=32,qgs={34912},r=2,sourceAchievements={3676},g={
 qo(1,{coords={
 [120]={{43.4,59.3}}},providers={{"i",46889},{"i",46893},{"n",34920},{"o",195308}}}),
 cu(241)}}),
 q(14092,{coords={
-[118]={{76.1,24}}},isDaily=1,maps={120},minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,qgs={34914},r=1,sourceAchievements={3677},u=32,g={
+[118]={{76.1,24}}},isDaily=1,maps={120},minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,phase=32,qgs={34914},r=1,sourceAchievements={3677},g={
 qo(1,{coords={
 [120]={{43.4,59.3}}},providers={{"i",46889},{"i",46893},{"n",34920},{"o",195308}}}),
 cu(241)}}),
 q(13846,{coords={
 [118]={{69.5,22.4}}},isDaily=1,maxReputation={1106,42000},qgs={34210},sourceQuests={13702,13732,13733,13734,13735,13736,13737,13738,13739,13740}}),
 q(14105,{coords={
-[118]={{69.4,23.1}}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qgs={34882},sourceAchievements={2771,2817},u=32,g={
+[118]={{69.4,23.1}}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,phase=32,qgs={34882},sourceAchievements={2771,2817},g={
 qo(1,{coords={
 [118]={{64.2,21.6}}},providers={{"n",34808}}}),
 cu(241)}}),
 q(14101,{coords={
-[118]={{69.4,23.1}}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qgs={34882},sourceAchievements={2771,2817},u=32,g={
+[118]={{69.4,23.1}}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,phase=32,qgs={34882},sourceAchievements={2771,2817},g={
 qo(1,{coords={
 [170]={{50.4,15.6}}},providers={{"i",47006},{"n",34980}}}),
 cu(241)}}),
 q(13794,{c={1,2,3,4,5,7,8,9,10,11},coords={
 [118]={{69.6,22.8}}},isBreadcrumb=1,nextQuests={13682,13789,13790,13809,13810,13811,13861,13862},qgs={33817},sourceQuests={13702,13732,13733,13734,13735,13736,13737,13738,13739,13740}}),
 q(14108,{coords={
-[118]={{69.4,23.1}}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qgs={35094},sourceAchievements={2771,2817},u=32,g={
+[118]={{69.4,23.1}}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,phase=32,qgs={35094},sourceAchievements={2771,2817},g={
 qo(1,{providers={{"i",46954},{"n",34925}}}),
 qo(2,{providers={{"n",35092}}}),
 cu(241)}}),
 q(14090,{coords={
-[118]={{76.2,19.6}}},isDaily=1,maps={120},minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,qgs={34912},r=2,sourceAchievements={3676},u=32,g={
+[118]={{76.2,19.6}}},isDaily=1,maps={120},minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,phase=32,qgs={34912},r=2,sourceAchievements={3676},g={
 qo(1,{coords={
 [120]={{44.6,82}}},providers={{"i",46885},{"n",29618}}}),
 cu(241)}}),
 q(14141,{coords={
-[118]={{76.1,24}}},isDaily=1,maps={120},minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,qgs={34914},r=1,sourceAchievements={3677},u=32,g={
+[118]={{76.1,24}}},isDaily=1,maps={120},minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,phase=32,qgs={34914},r=1,sourceAchievements={3677},g={
 qo(1,{coords={
 [120]={{44.6,82}}},providers={{"i",46885},{"n",29618}}}),
 cu(241)}}),
-q(14095,{crs={34925},description="Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qss={46955},sourceAchievements={2771,2817},u=32}),
+q(14095,{crs={34925},description="Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,phase=32,qss={46955},sourceAchievements={2771,2817}}),
 q(13627,{awp=30100,coords={
 [118]={{74.2,24.6}}},isDaily=1,maps={127},qgs={33434},rwp=40001,sourceQuests={13820},u=2,g={
 qo(1,{awp=30200,providers={{"i",45045},{"i",45046},{"n",33308}}})}}),
@@ -698,31 +698,31 @@ qo(1,{coords={
 [118]={{73.2,19.2}}},providers={{"n",33974}}}),
 qo(2,{providers={{"n",33243}}})}}),
 q(14102,{coords={
-[118]={{69.4,23.1}}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qgs={34882},sourceAchievements={2771,2817},u=32,g={
+[118]={{69.4,23.1}}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,phase=32,qgs={34882},sourceAchievements={2771,2817},g={
 qo(1,{coords={
 [170]={{43.8,25.6}}},providers={{"i",47009},{"n",34965}}}),
 cu(241)}}),
 q(14104,{coords={
-[118]={{69.4,23.1}}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qgs={34882},sourceAchievements={2771,2817},u=32,g={
+[118]={{69.4,23.1}}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,phase=32,qgs={34882},sourceAchievements={2771,2817},g={
 qo(1,{coords={
 [170]={{58.6,31.6}}},providers={{"i",47029},{"n",35012}}}),
 cu(241)}}),
 q(14152,{coords={
-[118]={{76.2,19.6}}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,qgs={34880},r=2,sourceAchievements={3676},u=32,g={
+[118]={{76.2,19.6}}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,phase=32,qgs={34880},r=2,sourceAchievements={3676},g={
 qo(1,{providers={{"n",34947}}}),
 qo(2,{providers={{"n",34907}}}),
 cu(241)}}),
 q(14136,{coords={
-[118]={{76.1,24}}},isDaily=1,minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,qgs={34771},r=1,sourceAchievements={3677},u=32,g={
+[118]={{76.1,24}}},isDaily=1,minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,phase=32,qgs={34771},r=1,sourceAchievements={3677},g={
 qo(1,{providers={{"n",34947}}}),
 qo(2,{providers={{"n",34907}}}),
 cu(241)}}),
 q(14080,{coords={
-[118]={{76.2,19.6}}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,qgs={34880},r=2,sourceAchievements={3676},u=32,g={
+[118]={{76.2,19.6}}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,phase=32,qgs={34880},r=2,sourceAchievements={3676},g={
 qo(1,{providers={{"n",34838},{"n",34839}}}),
 cu(241)}}),
 q(14140,{coords={
-[118]={{76.1,24}}},isDaily=1,minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,qgs={34771},r=1,sourceAchievements={3677},u=32,g={
+[118]={{76.1,24}}},isDaily=1,minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,phase=32,qgs={34771},r=1,sourceAchievements={3677},g={
 qo(1,{providers={{"n",34838},{"n",34839}}}),
 cu(241)}}),
 q(13789,{c={1,2,3,4,5,7,8,9,10,11},coords={
@@ -768,7 +768,7 @@ q(13633,{coords={
 qo(1,{coords={
 [52]={{53.2,28.1}}},providers={{"i",45062},{"o",194341}}})}}),
 q(14016,{coords={
-[118]={{69.4,23}}},qgs={33417},sourceQuests={13664},u=32,g={
+[118]={{69.4,23}}},phase=32,qgs={33417},sourceQuests={13664},g={
 qo(1,{coords={
 [118]={{79.4,23.2}}},providers={{"n",35127}}})}}),
 q(13664,{coords={
@@ -776,7 +776,7 @@ q(13664,{coords={
 qo(1,{coords={
 [118]={{71.4,23.8}}},providers={{"i",45568},{"n",33785},{"n",33870}}})}}),
 q(14017,{coords={
-[118]={{69.4,23}}},qgs={33417},sourceQuests={14016},u=32,g={
+[118]={{69.4,23}}},phase=32,qgs={33417},sourceQuests={14016},g={
 qo(1,{coords={
 [118]={{61.6,22.6}}},crs={35113},providers={{"i",47048}}})}}),
 q(13663,{coords={
@@ -838,7 +838,7 @@ q(13780,{coords={
 qo(1,{providers={{"i",45003}}}),
 i(44987,{b=1,q=1})}}),
 q(14107,{coords={
-[118]={{69.4,23.1}}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,qgs={35094},sourceAchievements={2771,2817},u=32,g={
+[118]={{69.4,23.1}}},isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,phase=32,qgs={35094},sourceAchievements={2771,2817},g={
 qo(1,{providers={{"i",47033},{"i",47035},{"n",32149},{"o",195344}}})}}),
 q(13761,{coords={
 [118]={{76.4,19}}},isDaily=1,OnUpdate=_.OnUpdateDB.IsOnQuestVisibleOverride13717,qgs={33654},r=2,sourceQuests={13689,13706},g={
@@ -881,11 +881,11 @@ q(13782,{coords={
 qo(1,{crs={33285,33306,33382,33383,33384,33558,33561,33562,33564,33565},providers={{"i",45127}}}),
 i(44987,{b=1,q=1})}}),
 q(14077,{coords={
-[118]={{76.2,19.6}}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,qgs={34880},r=2,sourceAchievements={3676},u=32,g={
+[118]={{76.2,19.6}}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,phase=32,qgs={34880},r=2,sourceAchievements={3676},g={
 qo(1,{providers={{"i",46870},{"n",34852}}}),
 cu(241)}}),
 q(14144,{coords={
-[118]={{76.1,24}}},isDaily=1,minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,qgs={34771},r=1,sourceAchievements={3677},u=32,g={
+[118]={{76.1,24}}},isDaily=1,minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,phase=32,qgs={34771},r=1,sourceAchievements={3677},g={
 qo(1,{providers={{"i",46870},{"n",34852}}}),
 cu(241)}}),
 q(13795,{c={6},coords={
@@ -1055,26 +1055,26 @@ q(13710,{coords={
 [118]={{76.5,24.2}}},qgs={33373},races={2,6,8,9,10,26},sourceQuests={13691,13693,13694,13696},g={
 crit(9748,{achID=2758,id=11})}}),
 q(14112,{coords={
-[118]={{76.2,19.6}}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,qgs={34912},r=2,sourceAchievements={3676},u=32,g={
+[118]={{76.2,19.6}}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,phase=32,qgs={34912},r=2,sourceAchievements={3676},g={
 qo(1,{crs={35060,35061,35071},providers={{"i",47037}}}),
 cu(241)}}),
 q(14145,{coords={
-[118]={{76.1,24}}},isDaily=1,minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,qgs={34914},r=1,sourceAchievements={3677},u=32,g={
+[118]={{76.1,24}}},isDaily=1,minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,phase=32,qgs={34914},r=1,sourceAchievements={3677},g={
 qo(1,{crs={35060,35061,35071},providers={{"i",47037}}}),
 cu(241)}}),
 q(14096,{coords={
-[118]={{76.2,19.6}}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,qgs={34880},r=2,sourceAchievements={3676},u=32,g={
+[118]={{76.2,19.6}}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,phase=32,qgs={34880},r=2,sourceAchievements={3676},g={
 qo(1,{coords={
 [118]={{60.8,23}}},providers={{"n",34956}}}),
 qo(2,{providers={{"n",34716}}}),
 cu(241)}}),
 q(14142,{coords={
-[118]={{76.1,24}}},isDaily=1,minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,qgs={34771},r=1,sourceAchievements={3677},u=32,g={
+[118]={{76.1,24}}},isDaily=1,minReputation={1124,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SUNREAVERS_DAILY,phase=32,qgs={34771},r=1,sourceAchievements={3677},g={
 qo(1,{coords={
 [118]={{60.8,23}}},providers={{"n",34956}}}),
 qo(2,{providers={{"n",34716}}}),
 cu(241)}})}),
-ah(50379,{r=2,type="i",u=33,g={
+ah(50379,{phase=33,r=2,type="i",g={
 q(14443,{coords={
 [118]={{74.2,31.2}}},description="The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'Forge of Souls', 'Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",qss={50379},r=2}),
 q(14444,{coords={
@@ -1118,11 +1118,11 @@ q(24595,{c={5,7,11},coords={
 qo(1,{providers={{"i",49871},{"i",49879},{"o",201794}},r=2})}}),
 q(24796,{c={1,2,3,4,6,8,9,10},coords={
 [118]={{74.2,31.2}}},maps={125},qgs={36624},qis={49871},r=2,sourceQuests={24553},g={
-crit(12903,{achID=4596,id=3,u=33})}}),
+crit(12903,{achID=4596,id=3,phase=33})}}),
 q(24795,{c={5,7,11},coords={
 [118]={{74.2,31.2}}},maps={125},qgs={36624},qis={49871},r=2,sourceQuests={24595},g={
-crit(12902,{achID=4596,id=2,u=33})}})}}),
-ah(50380,{r=1,type="i",u=33,g={
+crit(12902,{achID=4596,id=2,phase=33})}})}}),
+ah(50380,{phase=33,r=1,type="i",g={
 q(24554,{coords={
 [118]={{74.2,31.2}}},description="The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'The Forge of Souls', 'The Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",qss={50380},r=1}),
 q(24555,{coords={
@@ -1172,16 +1172,16 @@ q(24596,{c={5,7,11},coords={
 qo(1,{providers={{"i",49871},{"i",49879},{"o",201794}},r=1})}}),
 q(24801,{coords={
 [118]={{74.2,31.2}}},maps={125},qgs={36642},qis={49871},races={2,5,6,8,9,26},sourceQuests={24564},g={
-crit(12907,{achID=4596,id=7,u=33})}}),
+crit(12907,{achID=4596,id=7,phase=33})}}),
 q(24799,{c={5,7,11},coords={
 [118]={{74.2,31.2}}},maps={125},qgs={36642},qis={49871},races={2,5,6,8,9,26},sourceQuests={24598},g={
-crit(12905,{achID=4596,id=5,u=33})}}),
+crit(12905,{achID=4596,id=5,phase=33})}}),
 q(24800,{c={1,2,3,4,6,8,9,10},coords={
 [118]={{74.2,31.2}}},maps={125},qgs={36642},qis={49871},races={10},sourceQuests={24594},g={
-crit(12906,{achID=4596,id=6,u=33})}}),
+crit(12906,{achID=4596,id=6,phase=33})}}),
 q(24798,{c={5,7,11},coords={
 [118]={{74.2,31.2}}},maps={125},qgs={36642},qis={49871},races={10},sourceQuests={24596},g={
-crit(12904,{achID=4596,id=4,u=33})}})}}),
+crit(12904,{achID=4596,id=4,phase=33})}})}}),
 h(-56,{
 o(194618,{coords={
 [118]={{75.9,19.8}}},r=2,g={
@@ -1196,55 +1196,55 @@ o(194622,{coords={
 i(46070,{b=1,f=2,lvl=77,q=1,r=1})}})}),
 h(-58,{
 h(-22,{
-mnt(63844,{b=1,cost={{"c",241,150}},crs={33307,33310,33553,33554,33555,33556,33557,33650,33653,33657},itemID=45725,lvl=70,q=4,u=31}),
+mnt(63844,{b=1,cost={{"c",241,150}},crs={33307,33310,33553,33554,33555,33556,33557,33650,33653,33657},itemID=45725,lvl=70,phase=31,q=4}),
 h(-210,{crs={33307,33310,33650,33653,33657},r=2,g={
-s(175495,45130,{b=1,cost={{"c",241,25}},f=31,lvl=80,q=4,r=2,u=31}),
-s(175473,45074,{b=1,cost={{"c",241,25}},f=26,lvl=80,q=4,r=2,u=31}),
-s(175477,45078,{b=1,cost={{"c",241,25}},f=20,lvl=80,q=4,r=2,u=31}),
-s(175476,45077,{b=1,cost={{"c",241,25}},f=20,lvl=80,q=4,r=2,u=31}),
-s(175494,45129,{b=1,cost={{"c",241,25}},f=25,lvl=80,q=4,r=2,u=31}),
-s(175474,45075,{b=1,cost={{"c",241,25}},f=23,lvl=80,q=4,r=2,u=31}),
-s(175493,45128,{b=1,cost={{"c",241,25}},f=28,lvl=80,q=4,r=2,u=31}),
-s(175475,45076,{b=1,cost={{"c",241,25}},f=21,lvl=80,q=4,r=2,u=31}),
-i(45155,{b=1,cost={{"c",241,10}},f=51,lvl=80,q=3,u=31}),
-i(45154,{b=1,cost={{"c",241,10}},f=51,lvl=80,q=3,u=31}),
-i(45152,{b=1,cost={{"c",241,10}},f=51,lvl=80,q=3,u=31}),
-i(45153,{b=1,cost={{"c",241,10}},f=51,lvl=80,q=3,u=31}),
-s(175533,45182,{b=1,cost={{"c",241,10}},f=7,loc=44,lvl=80,q=3,r=2,u=31}),
-s(175535,45184,{b=1,cost={{"c",241,10}},f=6,loc=45,lvl=80,q=3,r=2,u=31}),
-s(175514,45160,{b=1,cost={{"c",241,10}},f=7,loc=45,lvl=80,q=3,r=2,u=31}),
-s(175512,45156,{b=1,cost={{"c",241,10}},f=4,loc=45,lvl=80,q=3,r=2,u=31}),
-s(175532,45181,{b=1,cost={{"c",241,10}},f=5,loc=45,lvl=80,q=3,r=2,u=31}),
-s(201854,45163,{b=1,cost={{"c",241,10}},f=7,loc=47,lvl=80,q=3,r=2,u=31}),
-s(175513,45159,{b=1,cost={{"c",241,10}},f=5,loc=47,lvl=80,q=3,r=2,u=31}),
-s(175534,45183,{b=1,cost={{"c",241,10}},f=6,loc=47,lvl=80,q=3,r=2,u=31}),
-i(45131,{b=1,cost={{"c",241,10}},f=53,lvl=80,q=3,u=31})}}),
+s(175495,45130,{b=1,cost={{"c",241,25}},f=31,lvl=80,phase=31,q=4,r=2}),
+s(175473,45074,{b=1,cost={{"c",241,25}},f=26,lvl=80,phase=31,q=4,r=2}),
+s(175477,45078,{b=1,cost={{"c",241,25}},f=20,lvl=80,phase=31,q=4,r=2}),
+s(175476,45077,{b=1,cost={{"c",241,25}},f=20,lvl=80,phase=31,q=4,r=2}),
+s(175494,45129,{b=1,cost={{"c",241,25}},f=25,lvl=80,phase=31,q=4,r=2}),
+s(175474,45075,{b=1,cost={{"c",241,25}},f=23,lvl=80,phase=31,q=4,r=2}),
+s(175493,45128,{b=1,cost={{"c",241,25}},f=28,lvl=80,phase=31,q=4,r=2}),
+s(175475,45076,{b=1,cost={{"c",241,25}},f=21,lvl=80,phase=31,q=4,r=2}),
+i(45155,{b=1,cost={{"c",241,10}},f=51,lvl=80,phase=31,q=3}),
+i(45154,{b=1,cost={{"c",241,10}},f=51,lvl=80,phase=31,q=3}),
+i(45152,{b=1,cost={{"c",241,10}},f=51,lvl=80,phase=31,q=3}),
+i(45153,{b=1,cost={{"c",241,10}},f=51,lvl=80,phase=31,q=3}),
+s(175533,45182,{b=1,cost={{"c",241,10}},f=7,loc=44,lvl=80,phase=31,q=3,r=2}),
+s(175535,45184,{b=1,cost={{"c",241,10}},f=6,loc=45,lvl=80,phase=31,q=3,r=2}),
+s(175514,45160,{b=1,cost={{"c",241,10}},f=7,loc=45,lvl=80,phase=31,q=3,r=2}),
+s(175512,45156,{b=1,cost={{"c",241,10}},f=4,loc=45,lvl=80,phase=31,q=3,r=2}),
+s(175532,45181,{b=1,cost={{"c",241,10}},f=5,loc=45,lvl=80,phase=31,q=3,r=2}),
+s(201854,45163,{b=1,cost={{"c",241,10}},f=7,loc=47,lvl=80,phase=31,q=3,r=2}),
+s(175513,45159,{b=1,cost={{"c",241,10}},f=5,loc=47,lvl=80,phase=31,q=3,r=2}),
+s(175534,45183,{b=1,cost={{"c",241,10}},f=6,loc=47,lvl=80,phase=31,q=3,r=2}),
+i(45131,{b=1,cost={{"c",241,10}},f=53,lvl=80,phase=31,q=3})}}),
 h(-211,{crs={33553,33554,33555,33556,33557},r=1,g={
-s(175540,45204,{b=1,cost={{"c",241,25}},f=21,lvl=80,q=4,r=1,u=31}),
-s(175542,45208,{b=1,cost={{"c",241,25}},f=25,lvl=80,q=4,r=1,u=31}),
-s(175541,45205,{b=1,cost={{"c",241,25}},f=26,lvl=80,q=4,r=1,u=31}),
-s(175539,45203,{b=1,cost={{"c",241,25}},f=23,lvl=80,q=4,r=1,u=31}),
-s(175547,45214,{b=1,cost={{"c",241,25}},f=20,lvl=80,q=4,r=1,u=31}),
-s(175544,45210,{b=1,cost={{"c",241,25}},f=31,lvl=80,q=4,r=1,u=31}),
-s(175554,45222,{b=1,cost={{"c",241,25}},f=20,lvl=80,q=4,r=1,u=31}),
-s(175546,45212,{b=1,cost={{"c",241,25}},f=28,lvl=80,q=4,r=1,u=31}),
-i(45206,{b=1,cost={{"c",241,10}},f=51,lvl=80,q=3,u=31}),
-i(45207,{b=1,cost={{"c",241,10}},f=51,lvl=80,q=3,u=31}),
-i(45213,{b=1,cost={{"c",241,10}},f=51,lvl=80,q=3,u=31}),
-i(45223,{b=1,cost={{"c",241,10}},f=51,lvl=80,q=3,u=31}),
-s(175549,45216,{b=1,cost={{"c",241,10}},f=7,loc=44,lvl=80,q=3,r=1,u=31}),
-s(175550,45217,{b=1,cost={{"c",241,10}},f=7,loc=45,lvl=80,q=3,r=1,u=31}),
-s(175548,45215,{b=1,cost={{"c",241,10}},f=6,loc=45,lvl=80,q=3,r=1,u=31}),
-s(175543,45209,{b=1,cost={{"c",241,10}},f=4,loc=45,lvl=80,q=3,r=1,u=31}),
-s(175545,45211,{b=1,cost={{"c",241,10}},f=5,loc=45,lvl=80,q=3,r=1,u=31}),
-s(175551,45218,{b=1,cost={{"c",241,10}},f=7,loc=47,lvl=80,q=3,r=1,u=31}),
-s(175552,45220,{b=1,cost={{"c",241,10}},f=5,loc=47,lvl=80,q=3,r=1,u=31}),
-s(175553,45221,{b=1,cost={{"c",241,10}},f=6,loc=47,lvl=80,q=3,r=1,u=31}),
-i(45219,{b=1,cost={{"c",241,10}},f=53,lvl=80,q=3,u=31})}})}),
+s(175540,45204,{b=1,cost={{"c",241,25}},f=21,lvl=80,phase=31,q=4,r=1}),
+s(175542,45208,{b=1,cost={{"c",241,25}},f=25,lvl=80,phase=31,q=4,r=1}),
+s(175541,45205,{b=1,cost={{"c",241,25}},f=26,lvl=80,phase=31,q=4,r=1}),
+s(175539,45203,{b=1,cost={{"c",241,25}},f=23,lvl=80,phase=31,q=4,r=1}),
+s(175547,45214,{b=1,cost={{"c",241,25}},f=20,lvl=80,phase=31,q=4,r=1}),
+s(175544,45210,{b=1,cost={{"c",241,25}},f=31,lvl=80,phase=31,q=4,r=1}),
+s(175554,45222,{b=1,cost={{"c",241,25}},f=20,lvl=80,phase=31,q=4,r=1}),
+s(175546,45212,{b=1,cost={{"c",241,25}},f=28,lvl=80,phase=31,q=4,r=1}),
+i(45206,{b=1,cost={{"c",241,10}},f=51,lvl=80,phase=31,q=3}),
+i(45207,{b=1,cost={{"c",241,10}},f=51,lvl=80,phase=31,q=3}),
+i(45213,{b=1,cost={{"c",241,10}},f=51,lvl=80,phase=31,q=3}),
+i(45223,{b=1,cost={{"c",241,10}},f=51,lvl=80,phase=31,q=3}),
+s(175549,45216,{b=1,cost={{"c",241,10}},f=7,loc=44,lvl=80,phase=31,q=3,r=1}),
+s(175550,45217,{b=1,cost={{"c",241,10}},f=7,loc=45,lvl=80,phase=31,q=3,r=1}),
+s(175548,45215,{b=1,cost={{"c",241,10}},f=6,loc=45,lvl=80,phase=31,q=3,r=1}),
+s(175543,45209,{b=1,cost={{"c",241,10}},f=4,loc=45,lvl=80,phase=31,q=3,r=1}),
+s(175545,45211,{b=1,cost={{"c",241,10}},f=5,loc=45,lvl=80,phase=31,q=3,r=1}),
+s(175551,45218,{b=1,cost={{"c",241,10}},f=7,loc=47,lvl=80,phase=31,q=3,r=1}),
+s(175552,45220,{b=1,cost={{"c",241,10}},f=5,loc=47,lvl=80,phase=31,q=3,r=1}),
+s(175553,45221,{b=1,cost={{"c",241,10}},f=6,loc=47,lvl=80,phase=31,q=3,r=1}),
+i(45219,{b=1,cost={{"c",241,10}},f=53,lvl=80,phase=31,q=3})}})}),
 n(33602,{coords={
 [118]={{71.4,20.8}}},sym={{"sub","common_recipes_vendor",28721}}}),
 n(35573,{coords={
-[118]={{75.2,21.6}}},r=2,sym={{"sub","pvp_gear_base",3,-253,-296},{"merge"},{"exclude","itemID",146550},{"pop"},{"exclude","headerID",-101,-89,-102,-100,-91,-96,-92,-99},{"pop"},{"is","sourceID"}},u=32,g={
+[118]={{75.2,21.6}}},phase=32,r=2,sym={{"sub","pvp_gear_base",3,-253,-296},{"merge"},{"exclude","itemID",146550},{"pop"},{"exclude","headerID",-101,-89,-102,-100,-91,-96,-92,-99},{"pop"},{"is","sourceID"}},g={
 i(47732,{b=1,f=52,lvl=80,q=4}),
 i(47729,{b=1,f=52,lvl=80,q=4}),
 s(176855,47658,{b=1,f=27,lvl=80,q=4}),
@@ -1288,102 +1288,102 @@ s(201917,45673,{f=10,q=1,r=1}),
 s(201918,45674,{f=10,q=1,r=1})}}),
 n(33307,{coords={
 [118]={{76.4,19.2}}},r=2,g={
-i(45718,{b=1,cost={{"i",46114,1}},factionID=72,q=2,r=2,repeatable=1,u=31}),
+i(45718,{b=1,cost={{"i",46114,1}},factionID=72,phase=31,q=2,r=2,repeatable=1}),
 s(175831,45574,{b=1,f=9,q=2,r=2}),
-mnt(63232,{b=1,cost={{"c",241,100}},itemID=45125,lvl=40,q=4,u=31}),
-mnt(65640,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46752,lvl=40,q=4,races={1},u=31}),
-mnt(65640,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46758,lvl=40,q=4,races={3,4,7,11,22,25},rwp=70305,u=31}),
-p(209,{cost={{"c",241,40}},itemID=44974,npcID=33200,q=3,spellID=62516,u=31}),
-toy(45011,{b=1,cost={{"c",241,15}},q=1,u=31})}}),
+mnt(63232,{b=1,cost={{"c",241,100}},itemID=45125,lvl=40,phase=31,q=4}),
+mnt(65640,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46752,lvl=40,phase=31,q=4,races={1}}),
+mnt(65640,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46758,lvl=40,phase=31,q=4,races={3,4,7,11,22,25},rwp=70305}),
+p(209,{cost={{"c",241,40}},itemID=44974,npcID=33200,phase=31,q=3,spellID=62516}),
+toy(45011,{b=1,cost={{"c",241,15}},phase=31,q=1})}}),
 n(34885,{coords={
-[118]={{69.4,23.1}}},u=32,g={
-mnt(66906,{b=1,c={2},cost={{"c",241,100}},itemID=47179,lvl=40,q=4,u=32}),
-toy(46843,{b=1,cost={{"c",241,15}},q=1,u=32}),
-s(176346,46874,{b=1,cost={{"c",241,50}},f=9,q=3,u=32}),
-i(47541,{b=1,cost={{"c",241,150}},f=55,lvl=78,q=3,u=32}),
-mnt(67466,{b=1,cost={{"c",241,100}},itemID=47180,lvl=40,q=4,u=32}),
-heir(42944,{b=2,cost={{"c",241,60}},f=20,q=7,rwp=60100,sourceID=174617,u=32}),
-heir(42943,{b=2,cost={{"c",241,95}},f=22,q=7,rwp=60100,sourceID=174616,u=32}),
-heir(69893,{awp=40100,b=2,cost={{"c",241,60}},f=25,q=7,rwp=60100,sourceID=212439,u=32}),
-heir(69889,{awp=40100,b=2,cost={{"c",241,60}},f=7,loc=42,q=7,rwp=60100,sourceID=212436,u=32}),
-heir(69890,{awp=40100,b=2,cost={{"c",241,60}},f=7,loc=41,q=7,rwp=60100,sourceID=212437,u=32}),
-heir(79131,{awp=50004,b=2,cost={{"c",241,95}},f=28,q=7,rwp=60100,sourceID=267440,u=32}),
-heir(42950,{b=2,cost={{"c",241,60}},f=6,loc=41,q=7,rwp=60100,sourceID=174623,u=32}),
-heir(48677,{b=2,cost={{"c",241,60}},f=6,loc=42,q=7,rwp=60100,sourceID=202247,u=32}),
-heir(42946,{b=2,cost={{"c",241,95}},f=32,q=7,rwp=60100,sourceID=174619,u=32}),
-heir(42948,{b=2,cost={{"c",241,60}},f=23,q=7,rwp=60100,sourceID=174621,u=32}),
-heir(42947,{b=2,cost={{"c",241,95}},f=28,q=7,rwp=60100,sourceID=174620,u=32}),
-heir(42992,{b=2,cost={{"c",241,75}},q=7,rwp=60100,u=32}),
-heir(42951,{b=2,cost={{"c",241,60}},f=6,loc=41,q=7,rwp=60100,sourceID=174624,u=32}),
-heir(48683,{b=2,cost={{"c",241,60}},f=6,loc=42,q=7,rwp=60100,sourceID=177702,u=32}),
-heir(48685,{b=2,cost={{"c",241,60}},f=7,loc=42,q=7,rwp=60100,sourceID=177703,u=32}),
-heir(42949,{b=2,cost={{"c",241,60}},f=7,loc=41,q=7,rwp=60100,sourceID=174622,u=32}),
-heir(48687,{b=2,cost={{"c",241,60}},f=5,loc=42,q=7,rwp=60100,sourceID=177704,u=32}),
-heir(42984,{b=2,cost={{"c",241,60}},f=5,loc=41,q=7,rwp=60100,sourceID=174626,u=32}),
-heir(48718,{b=2,cost={{"c",241,95}},f=24,q=7,rwp=60100,sourceID=177722,u=32}),
-heir(42952,{b=2,cost={{"c",241,60}},f=5,loc=41,q=7,rwp=60100,sourceID=174625,u=32}),
-heir(48689,{b=2,cost={{"c",241,60}},f=5,loc=42,q=7,rwp=60100,sourceID=177705,u=32}),
-heir(42991,{b=2,cost={{"c",241,75}},q=7,rwp=60100,u=32}),
-heir(42985,{b=2,cost={{"c",241,60}},f=4,loc=41,q=7,rwp=60100,sourceID=174627,u=32}),
-heir(48691,{b=2,cost={{"c",241,60}},f=4,loc=42,q=7,rwp=60100,sourceID=177706,u=32}),
-heir(42945,{b=2,cost={{"c",241,60}},f=25,q=7,rwp=60100,sourceID=174618,u=32}),
-heir(48716,{b=2,cost={{"c",241,60}},f=23,q=7,rwp=60100,sourceID=177721,u=32})}}),
+[118]={{69.4,23.1}}},phase=32,g={
+mnt(66906,{b=1,c={2},cost={{"c",241,100}},itemID=47179,lvl=40,q=4}),
+toy(46843,{b=1,cost={{"c",241,15}},q=1}),
+s(176346,46874,{b=1,cost={{"c",241,50}},f=9,q=3}),
+i(47541,{b=1,cost={{"c",241,150}},f=55,lvl=78,q=3}),
+mnt(67466,{b=1,cost={{"c",241,100}},itemID=47180,lvl=40,q=4}),
+heir(42944,{b=2,cost={{"c",241,60}},f=20,q=7,rwp=60100,sourceID=174617}),
+heir(42943,{b=2,cost={{"c",241,95}},f=22,q=7,rwp=60100,sourceID=174616}),
+heir(69893,{awp=40100,b=2,cost={{"c",241,60}},f=25,q=7,rwp=60100,sourceID=212439}),
+heir(69889,{awp=40100,b=2,cost={{"c",241,60}},f=7,loc=42,q=7,rwp=60100,sourceID=212436}),
+heir(69890,{awp=40100,b=2,cost={{"c",241,60}},f=7,loc=41,q=7,rwp=60100,sourceID=212437}),
+heir(79131,{awp=50004,b=2,cost={{"c",241,95}},f=28,q=7,rwp=60100,sourceID=267440}),
+heir(42950,{b=2,cost={{"c",241,60}},f=6,loc=41,q=7,rwp=60100,sourceID=174623}),
+heir(48677,{b=2,cost={{"c",241,60}},f=6,loc=42,q=7,rwp=60100,sourceID=202247}),
+heir(42946,{b=2,cost={{"c",241,95}},f=32,q=7,rwp=60100,sourceID=174619}),
+heir(42948,{b=2,cost={{"c",241,60}},f=23,q=7,rwp=60100,sourceID=174621}),
+heir(42947,{b=2,cost={{"c",241,95}},f=28,q=7,rwp=60100,sourceID=174620}),
+heir(42992,{b=2,cost={{"c",241,75}},q=7,rwp=60100}),
+heir(42951,{b=2,cost={{"c",241,60}},f=6,loc=41,q=7,rwp=60100,sourceID=174624}),
+heir(48683,{b=2,cost={{"c",241,60}},f=6,loc=42,q=7,rwp=60100,sourceID=177702}),
+heir(48685,{b=2,cost={{"c",241,60}},f=7,loc=42,q=7,rwp=60100,sourceID=177703}),
+heir(42949,{b=2,cost={{"c",241,60}},f=7,loc=41,q=7,rwp=60100,sourceID=174622}),
+heir(48687,{b=2,cost={{"c",241,60}},f=5,loc=42,q=7,rwp=60100,sourceID=177704}),
+heir(42984,{b=2,cost={{"c",241,60}},f=5,loc=41,q=7,rwp=60100,sourceID=174626}),
+heir(48718,{b=2,cost={{"c",241,95}},f=24,q=7,rwp=60100,sourceID=177722}),
+heir(42952,{b=2,cost={{"c",241,60}},f=5,loc=41,q=7,rwp=60100,sourceID=174625}),
+heir(48689,{b=2,cost={{"c",241,60}},f=5,loc=42,q=7,rwp=60100,sourceID=177705}),
+heir(42991,{b=2,cost={{"c",241,75}},q=7,rwp=60100}),
+heir(42985,{b=2,cost={{"c",241,60}},f=4,loc=41,q=7,rwp=60100,sourceID=174627}),
+heir(48691,{b=2,cost={{"c",241,60}},f=4,loc=42,q=7,rwp=60100,sourceID=177706}),
+heir(42945,{b=2,cost={{"c",241,60}},f=25,q=7,rwp=60100,sourceID=174618}),
+heir(48716,{b=2,cost={{"c",241,60}},f=23,q=7,rwp=60100,sourceID=177721})}}),
 n(33310,{coords={
 [118]={{76.4,19.4}}},r=2,g={
-i(45717,{b=1,cost={{"i",46114,1}},factionID=47,q=2,r=2,repeatable=1,u=31}),
+i(45717,{b=1,cost={{"i",46114,1}},factionID=47,phase=31,q=2,r=2,repeatable=1}),
 s(175833,45577,{b=1,f=9,q=2,r=2}),
-mnt(63636,{b=1,cost={{"c",241,100}},itemID=45586,lvl=40,q=4,u=31}),
-mnt(65643,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46748,lvl=40,q=4,races={3},u=31}),
-mnt(65643,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46762,lvl=40,q=4,races={1,4,7,11,22,25},rwp=70305,u=31}),
-p(205,{cost={{"c",241,40}},itemID=44970,npcID=33194,q=3,spellID=62508,u=31}),
-toy(45018,{b=1,cost={{"c",241,15}},q=1,u=31})}}),
+mnt(63636,{b=1,cost={{"c",241,100}},itemID=45586,lvl=40,phase=31,q=4}),
+mnt(65643,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46748,lvl=40,phase=31,q=4,races={3}}),
+mnt(65643,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46762,lvl=40,phase=31,q=4,races={1,4,7,11,22,25},rwp=70305}),
+p(205,{cost={{"c",241,40}},itemID=44970,npcID=33194,phase=31,q=3,spellID=62508}),
+toy(45018,{b=1,cost={{"c",241,15}},phase=31,q=1})}}),
 n(33556,{coords={
 [118]={{76.2,24.4}}},r=1,g={
-i(45722,{b=1,cost={{"i",46114,1}},factionID=81,q=2,r=1,repeatable=1,u=31}),
+i(45722,{b=1,cost={{"i",46114,1}},factionID=81,phase=31,q=2,r=1,repeatable=1}),
 s(175840,45584,{b=1,f=9,q=2,r=1}),
-mnt(63641,{b=1,cost={{"c",241,100}},itemID=45592,lvl=40,q=4,u=31}),
-mnt(65641,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46750,lvl=40,q=4,races={6},u=31}),
-mnt(65641,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46755,lvl=40,minReputation={81,42000},q=4,races={2,5,8,9,10,26},rwp=70305,u=31}),
-p(210,{awp=30100,cost={{"c",241,40}},itemID=44980,npcID=33219,q=3,spellID=62542,u=31}),
-toy(45013,{b=1,cost={{"c",241,15}},q=1,u=31})}}),
+mnt(63641,{b=1,cost={{"c",241,100}},itemID=45592,lvl=40,phase=31,q=4}),
+mnt(65641,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46750,lvl=40,phase=31,q=4,races={6}}),
+mnt(65641,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46755,lvl=40,minReputation={81,42000},phase=31,q=4,races={2,5,8,9,10,26},rwp=70305}),
+p(210,{awp=30100,cost={{"c",241,40}},itemID=44980,npcID=33219,phase=31,q=3,spellID=62542}),
+toy(45013,{b=1,cost={{"c",241,15}},phase=31,q=1})}}),
 n(33555,{coords={
 [118]={{76.4,24}}},r=1,g={
-i(45723,{b=1,cost={{"i",46114,1}},factionID=68,q=2,r=1,repeatable=1,u=31}),
+i(45723,{b=1,cost={{"i",46114,1}},factionID=68,phase=31,q=2,r=1,repeatable=1}),
 s(175839,45583,{b=1,f=9,q=2,r=1}),
-mnt(63643,{b=1,cost={{"c",241,100}},itemID=45597,lvl=40,q=4,u=31}),
-mnt(65645,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46746,lvl=40,q=4,races={5},u=31}),
-mnt(65645,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46764,lvl=40,minReputation={68,42000},q=4,races={2,6,8,9,10,26},rwp=70305,u=31}),
-p(206,{cost={{"c",241,40}},itemID=44971,npcID=33197,q=3,spellID=62510,u=31}),
-toy(45016,{b=1,cost={{"c",241,15}},q=1,u=31})}}),
+mnt(63643,{b=1,cost={{"c",241,100}},itemID=45597,lvl=40,phase=31,q=4}),
+mnt(65645,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46746,lvl=40,phase=31,q=4,races={5}}),
+mnt(65645,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46764,lvl=40,minReputation={68,42000},phase=31,q=4,races={2,6,8,9,10,26},rwp=70305}),
+p(206,{cost={{"c",241,40}},itemID=44971,npcID=33197,phase=31,q=3,spellID=62510}),
+toy(45016,{b=1,cost={{"c",241,15}},phase=31,q=1})}}),
 n(33594,{coords={
 [118]={{72.2,20.8}}},g={
 r(30349,{isLimited=1,itemID=23817,learnedAt=405,q=1,requireSkill=202})}}),
 n(33553,{coords={
 [118]={{76.4,24.2}}},r=1,g={
-i(45719,{b=1,cost={{"i",46114,1}},factionID=76,q=2,r=1,repeatable=1,u=31}),
+i(45719,{b=1,cost={{"i",46114,1}},factionID=76,phase=31,q=2,r=1,repeatable=1}),
 s(175837,45581,{b=1,f=9,q=2,r=1}),
-mnt(63640,{b=1,cost={{"c",241,100}},itemID=45595,lvl=40,q=4,u=31}),
-mnt(65646,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46757,lvl=40,minReputation={76,42000},q=4,races={2},u=31}),
-mnt(65646,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46749,lvl=40,q=4,races={5,6,8,9,10,26},rwp=70305,u=31}),
-p(207,{cost={{"c",241,40}},itemID=44973,npcID=33198,q=3,spellID=62513,u=31}),
-toy(45014,{b=1,cost={{"c",241,15}},q=1,u=31})}}),
+mnt(63640,{b=1,cost={{"c",241,100}},itemID=45595,lvl=40,phase=31,q=4}),
+mnt(65646,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46757,lvl=40,minReputation={76,42000},phase=31,q=4,races={2}}),
+mnt(65646,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46749,lvl=40,phase=31,q=4,races={5,6,8,9,10,26},rwp=70305}),
+p(207,{cost={{"c",241,40}},itemID=44973,npcID=33198,phase=31,q=3,spellID=62513}),
+toy(45014,{b=1,cost={{"c",241,15}},phase=31,q=1})}}),
 n(34881,{coords={
-[118]={{76.2,19.6}}},minReputation={1094,42000},r=2,u=32,g={
-s(176332,46817,{b=1,cost={{"c",241,50}},f=9,minReputation={1094,42000},q=2,r=2,u=32}),
-mnt(66087,{b=1,cost={{"c",241,150}},itemID=46813,lvl=70,q=4,u=32}),
-mnt(66090,{b=1,cost={{"c",241,100}},itemID=46815,lvl=40,q=4,u=32}),
-p(229,{cost={{"c",241,40}},itemID=46820,npcID=34724,q=3,spellID=66096,u=32})}}),
+[118]={{76.2,19.6}}},minReputation={1094,42000},phase=32,r=2,g={
+s(176332,46817,{b=1,cost={{"c",241,50}},f=9,minReputation={1094,42000},q=2,r=2}),
+mnt(66087,{b=1,cost={{"c",241,150}},itemID=46813,lvl=70,q=4}),
+mnt(66090,{b=1,cost={{"c",241,100}},itemID=46815,lvl=40,q=4}),
+p(229,{cost={{"c",241,40}},itemID=46820,npcID=34724,q=3,spellID=66096})}}),
 n(33657,{coords={
 [118]={{76.2,19.2}}},r=2,g={
-i(45715,{b=1,cost={{"i",46114,1}},factionID=930,q=2,r=2,repeatable=1,u=31}),
+i(45715,{b=1,cost={{"i",46114,1}},factionID=930,phase=31,q=2,r=2,repeatable=1}),
 s(175836,45580,{b=1,f=9,q=2,r=2}),
-mnt(63639,{b=1,cost={{"c",241,100}},itemID=45590,lvl=40,q=4,u=31}),
-mnt(65637,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46745,lvl=40,q=4,races={11},u=31}),
-mnt(65637,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46756,lvl=40,q=4,races={1,3,4,7,22,25},rwp=70305,u=31}),
-p(212,{cost={{"c",241,40}},itemID=44984,npcID=33205,q=3,spellID=62562,u=31}),
-toy(45020,{b=1,cost={{"c",241,15}},q=1,u=31})}}),
+mnt(63639,{b=1,cost={{"c",241,100}},itemID=45590,lvl=40,phase=31,q=4}),
+mnt(65637,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46745,lvl=40,phase=31,q=4,races={11}}),
+mnt(65637,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46756,lvl=40,phase=31,q=4,races={1,3,4,7,22,25},rwp=70305}),
+p(212,{cost={{"c",241,40}},itemID=44984,npcID=33205,phase=31,q=3,spellID=62562}),
+toy(45020,{b=1,cost={{"c",241,15}},phase=31,q=1})}}),
 n(35574,{coords={
-[118]={{75.2,22}}},r=1,sym={{"sub","pvp_gear_base",3,-253,-296},{"merge"},{"pop"},{"exclude","headerID",-101,-89,-102,-100,-91,-96,-92,-99},{"pop"},{"is","sourceID"}},u=32,g={
+[118]={{75.2,22}}},phase=32,r=1,sym={{"sub","pvp_gear_base",3,-253,-296},{"merge"},{"pop"},{"exclude","headerID",-101,-89,-102,-100,-91,-96,-92,-99},{"pop"},{"is","sourceID"}},g={
 i(47732,{b=1,f=52,lvl=80,q=4}),
 i(47729,{b=1,f=52,lvl=80,q=4}),
 s(176855,47658,{b=1,f=27,lvl=80,q=4}),
@@ -1443,47 +1443,47 @@ r(45558,{b=1,cost={{"c",81,3}},itemID=43021,learnedAt=400,q=2,requireSkill=185})
 r(62350,{b=1,cost={{"c",81,3}},itemID=44954,learnedAt=400,q=2,requireSkill=185})}}),
 n(33650,{coords={
 [118]={{76.4,19.6}}},r=2,g={
-i(45716,{b=1,cost={{"i",46114,1}},factionID=54,q=2,r=2,repeatable=1,u=31}),
+i(45716,{b=1,cost={{"i",46114,1}},factionID=54,phase=31,q=2,r=2,repeatable=1}),
 s(175834,45578,{b=1,f=9,q=2,r=2}),
-mnt(63638,{b=1,cost={{"c",241,100}},itemID=45589,lvl=40,q=4,u=31}),
-mnt(65642,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46747,lvl=40,q=4,races={7},u=31}),
-mnt(65642,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46763,lvl=40,q=4,races={1,3,4,11,22,25},rwp=70305,u=31}),
-p(215,{cost={{"c",241,40}},itemID=45002,npcID=33274,q=3,spellID=62674,u=31}),
-toy(45019,{b=1,cost={{"c",241,15}},q=1,u=31})}}),
+mnt(63638,{b=1,cost={{"c",241,100}},itemID=45589,lvl=40,phase=31,q=4}),
+mnt(65642,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46747,lvl=40,phase=31,q=4,races={7}}),
+mnt(65642,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46763,lvl=40,phase=31,q=4,races={1,3,4,11,22,25},rwp=70305}),
+p(215,{cost={{"c",241,40}},itemID=45002,npcID=33274,phase=31,q=3,spellID=62674}),
+toy(45019,{b=1,cost={{"c",241,15}},phase=31,q=1})}}),
 n(33653,{coords={
 [118]={{76.2,19.2}}},r=2,g={
-i(45714,{b=1,cost={{"i",46114,1}},factionID=69,q=2,r=2,repeatable=1,u=31}),
+i(45714,{b=1,cost={{"i",46114,1}},factionID=69,phase=31,q=2,r=2,repeatable=1}),
 s(175835,45579,{b=1,f=9,q=2,r=2}),
-mnt(63637,{b=1,cost={{"c",241,100}},itemID=45591,lvl=40,q=4,u=31}),
-mnt(65638,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46744,lvl=40,q=4,races={4},u=31}),
-mnt(65638,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46759,lvl=40,q=4,races={1,3,7,11,22,25},rwp=70305,u=31}),
-p(204,{cost={{"c",241,40}},itemID=44965,npcID=33188,q=3,spellID=62491,u=31}),
-toy(45021,{b=1,cost={{"c",241,15}},q=1,u=31})}}),
+mnt(63637,{b=1,cost={{"c",241,100}},itemID=45591,lvl=40,phase=31,q=4}),
+mnt(65638,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46744,lvl=40,phase=31,q=4,races={4}}),
+mnt(65638,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46759,lvl=40,phase=31,q=4,races={1,3,7,11,22,25},rwp=70305}),
+p(204,{cost={{"c",241,40}},itemID=44965,npcID=33188,phase=31,q=3,spellID=62491}),
+toy(45021,{b=1,cost={{"c",241,15}},phase=31,q=1})}}),
 n(33554,{coords={
 [118]={{76,24.4}}},r=1,g={
-i(45720,{b=1,cost={{"i",46114,1}},factionID=530,q=2,r=1,repeatable=1,u=31}),
+i(45720,{b=1,cost={{"i",46114,1}},factionID=530,phase=31,q=2,r=1,repeatable=1}),
 s(175838,45582,{b=1,f=9,q=2,r=1}),
-mnt(63635,{b=1,cost={{"c",241,100}},itemID=45593,lvl=40,q=4,u=31}),
-mnt(65644,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46743,lvl=40,q=4,races={8},u=31}),
-mnt(65644,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46760,lvl=40,minReputation={1447,42000},q=4,races={2,5,6,9,10,26},rwp=70305,u=31}),
-p(218,{cost={{"c",241,40}},itemID=45606,npcID=33810,q=3,spellID=63712,u=31}),
-toy(45015,{b=1,cost={{"c",241,15}},q=1,u=31})}}),
+mnt(63635,{b=1,cost={{"c",241,100}},itemID=45593,lvl=40,phase=31,q=4}),
+mnt(65644,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46743,lvl=40,phase=31,q=4,races={8}}),
+mnt(65644,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46760,lvl=40,minReputation={1447,42000},phase=31,q=4,races={2,5,6,9,10,26},rwp=70305}),
+p(218,{cost={{"c",241,40}},itemID=45606,npcID=33810,phase=31,q=3,spellID=63712}),
+toy(45015,{b=1,cost={{"c",241,15}},phase=31,q=1})}}),
 n(33557,{coords={
 [118]={{76.2,23.8}}},r=1,g={
-i(45721,{b=1,cost={{"i",46114,1}},factionID=911,q=2,r=1,repeatable=1,u=31}),
+i(45721,{b=1,cost={{"i",46114,1}},factionID=911,phase=31,q=2,r=1,repeatable=1}),
 s(175841,45585,{b=1,f=9,q=2,r=1}),
-mnt(63642,{b=1,cost={{"c",241,100}},itemID=45596,lvl=40,q=4,u=31}),
-mnt(65639,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46751,lvl=40,q=4,races={10},u=31}),
-mnt(65639,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46761,lvl=40,minReputation={911,42000},q=4,races={2,5,6,8,9,26},rwp=70305,u=31}),
-p(213,{cost={{"c",241,40}},itemID=44982,npcID=33227,q=3,spellID=62564,u=31}),
-toy(45017,{b=1,cost={{"c",241,15}},q=1,u=31})}}),
+mnt(63642,{b=1,cost={{"c",241,100}},itemID=45596,lvl=40,phase=31,q=4}),
+mnt(65639,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46751,lvl=40,phase=31,q=4,races={10}}),
+mnt(65639,{b=1,cost={{"c",241,5},{"g",5000000}},itemID=46761,lvl=40,minReputation={911,42000},phase=31,q=4,races={2,5,6,8,9,26},rwp=70305}),
+p(213,{cost={{"c",241,40}},itemID=44982,npcID=33227,phase=31,q=3,spellID=62564}),
+toy(45017,{b=1,cost={{"c",241,15}},phase=31,q=1})}}),
 n(34772,{coords={
-[118]={{76.2,24}}},minReputation={1124,42000},r=1,u=32,g={
-s(176333,46818,{b=1,cost={{"c",241,50}},f=9,minReputation={1124,42000},q=2,r=1,u=32}),
-mnt(66088,{b=1,cost={{"c",241,150}},itemID=46814,lvl=70,minReputation={1124,42000},q=4,u=32}),
-mnt(66091,{b=1,cost={{"c",241,100}},itemID=46816,lvl=40,minReputation={1124,42000},q=4,u=32}),
-p(229,{cost={{"c",241,40}},itemID=46821,minReputation={1124,42000},npcID=34724,q=3,spellID=66096,u=32})}})})}}),
-h(-71,{awp=30401,lvl=80,u=31,g={
+[118]={{76.2,24}}},minReputation={1124,42000},phase=32,r=1,g={
+s(176333,46818,{b=1,cost={{"c",241,50}},f=9,minReputation={1124,42000},q=2,r=1}),
+mnt(66088,{b=1,cost={{"c",241,150}},itemID=46814,lvl=70,minReputation={1124,42000},q=4}),
+mnt(66091,{b=1,cost={{"c",241,100}},itemID=46816,lvl=40,minReputation={1124,42000},q=4}),
+p(229,{cost={{"c",241,40}},itemID=46821,minReputation={1124,42000},npcID=34724,q=3,spellID=66096})}})})}}),
+h(-71,{awp=30401,lvl=80,phase=31,g={
 h(-12,{
 ach(17304)}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_394435_412991_424196_394438_413169_424203_392430_412770_424194_394444_412867_424210_394437_412470_424201_394441_413078_424205)(
 h(-19,{crs={23954,26533,26632,26723,26861,27656,27978,28923,29120,29306,29311,31134},description="Defeating the final boss encounter on Defense Protocol Alpha will reward 1 Emblem of Conquest and can also drop T7 tokens for helm, spaulders, and leggings.",maps={129,130,131,132,133,134,135,136,137,138,139,140,142,143,144,145,146,153,154,157,158,159,160,161,168},g={
@@ -1497,7 +1497,7 @@ i(40624,{b=1,c={4,6,8,11},lvl=80,q=4}),
 i(40619,{b=1,c={2,5,9},lvl=80,q=4}),
 i(40620,{b=1,c={1,3,7},lvl=80,q=4}),
 i(40621,{b=1,c={4,6,8,11},lvl=80,q=4})}}))}}),
-h(-72,{awp=30402,lvl=80,u=32,g={
+h(-72,{awp=30402,lvl=80,phase=32,g={
 h(-12,{
 ach(18614,{r=2}),
 ach(18688,{r=1})}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_412991_424196_413169_424203_412770_424194_413573_424211_412867_424210_412470_424201_413078_424205)(
@@ -1585,7 +1585,7 @@ i(45296,{b=1,cost={{"c",2589,15}},f=36,lvl=80,q=0,rwp=50004,u=2}),
 s(176056,46036,{b=1,cost={{"c",2589,25}},f=25,lvl=80,q=4}),
 i(45447,{b=1,cost={{"c",2589,15}},f=51,lvl=80,q=4}),
 s(176064,46049,{b=1,cost={{"c",2589,32}},f=5,loc=46,lvl=80,q=4})}}))})}}),
-h(-73,{awp=30403,lvl=80,u=33,g={
+h(-73,{awp=30403,lvl=80,phase=33,g={
 h(-12,{
 ach(19439,{r=2,g={
 p(4329,{b=1,itemID=211082,npcID=213605,q=3,spellID=428053})}}),
@@ -1758,7 +1758,7 @@ s(176448,47108,{b=1,cost={{"c",2711,30}},f=7,loc=43,lvl=80,q=4,r=2}),
 s(201982,47073,{b=1,cost={{"c",2711,30}},f=6,loc=43,lvl=80,q=4,r=2}),
 s(176436,47093,{b=1,cost={{"c",2711,30}},f=7,loc=43,lvl=80,q=4,r=2})}})})}})}}),
 x(4,{awp=40003,g={
-h(-414,{awp=40200,lvl=32,u=41,g={
+h(-414,{awp=40200,lvl=32,phase=41,g={
 q(29328,{coords={
 [204]={{69.8,34.2}}},qgs={53652},sourceQuests={29336}}),
 q(29327,{coords={
@@ -1793,7 +1793,7 @@ q(29326,{coords={
 [198]={{60.6,31.4}}},qgs={54313},sourceQuests={29439,29440},g={
 n(54313,{description="Ignore Thrall if you are doing the initial quests around Nordrassil, he will become relevant later in the story."})}})}}),
 m(338,{awp=40200,coords={
-[198]={{27.5,56.3}}},description="The Molten Front is a volcanic daily quest hub added before the release of Firelands with Patch 4.2. It can be accessed via the Portal to the Firelands in Mount Hyjal. As players complete more daily quests, phasing will occur that shows how the Avengers of Hyjal are making progress against the fire elementals and agents of the Firelord.",icon=514278,lvl=85,providers={{"o",208900}},u=4002,g={
+[198]={{27.5,56.3}}},description="The Molten Front is a volcanic daily quest hub added before the release of Firelands with Patch 4.2. It can be accessed via the Portal to the Firelands in Mount Hyjal. As players complete more daily quests, phasing will occur that shows how the Avengers of Hyjal are making progress against the fire elementals and agents of the Firelord.",icon=514278,lvl=85,phase=4002,providers={{"o",208900}},g={
 h(-12,{
 ach(5879,{
 title(189)}),
@@ -2314,7 +2314,7 @@ i(70153,{b=1,cost={{"c",416,30}},factionID=81,q=2,r=1,repeatable=1}),
 i(70154,{b=1,cost={{"c",416,30}},factionID=68,q=2,r=1,repeatable=1}),
 i(71631,{b=1,cost={{"c",416,30}},description="Contains a random uncommon quality Cataclysm world drop. Also have a chance of containing the pet Searing Scorchling.",q=2,g={
 p(172,{b=1,itemID=34955,npcID=25706,q=3,spellID=45890})}})})})}}),
-h(-66,{awp=40200,lvl=85,u=41,g={
+h(-66,{awp=40200,lvl=85,phase=41,g={
 h(-12,{
 ach(41148)}),
 h(-47,{(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_470595)(
@@ -2455,7 +2455,7 @@ i(65029,{b=1,cost={{"c",3148,50}},f=53,lvl=85,q=4}),
 i(65110,{b=1,cost={{"c",3148,50}},f=53,lvl=85,q=4}),
 i(234446,{b=1,cost={{"c",3148,1}},q=4,g={
 cu(395)}})}}))})}}),
-h(-67,{awp=40300,lvl=85,u=42,g={(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_1224923)(
+h(-67,{awp=40300,lvl=85,phase=42,g={(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_1224923)(
 h(-19,{crs={39378,39705,40484,42333,43875,44566,44819,46964,49541,54432,54938,54969},description="The following can drop from the final boss of any heroic dungeon on Protocol Twilight difficulty.",maps={277,283,284,291,292,293,297,298,299,310,311,312,313,314,315,316,322,323,324,325,398,399,400,401,402,403,404,405,406},g={
 i(78869,{b=1,c={2,5,9},lvl=85,q=4}),
 i(78870,{b=1,c={1,3,7},lvl=85,q=4}),
@@ -2640,7 +2640,7 @@ i(71617,{b=1,cost={{"c",3281,60}},lvl=85,q=4}),
 cu(3148,{cost={{"c",3281,1}}}),
 i(239110,{b=1,cost={{"c",3281,1}},q=4,g={
 cu(395)}})}}))})}}),
-h(-415,{awp=40100,lvl=85,maps={50,210},u=4001,g={
+h(-415,{awp=40100,lvl=85,maps={50,210},phase=4001,g={
 h(-45,{
 q(29151,{coords={
 [210]={{55.1,42.2}}},qgs={52234},r=2,sourceQuests={29150},g={
@@ -3057,292 +3057,292 @@ i(62470,{b=1,cost={{"c",391,125}},f=53,lvl=85,minReputation={1177,42000},q=4}),
 i(62468,{b=1,cost={{"c",391,125}},f=53,lvl=85,minReputation={1177,42000},q=4})}})}),
 h(-63,{
 p(278,{b=1,crs={47676},itemID=64403,npcID=48641,q=3,spellID=90637})})}})}}),
-x(5,{awp=50004,u=50,g={
-h(-416,{awp=50300,description="During 5.3 a big battle occurred in Barrens.",maps={1,10,390},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,rwp=50400,u=2,g={
-h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2,g={
-ach(8307,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,r=1,u=2,g={
-title(228,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,r=1,u=2})}}),
-ach(8306,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,r=2,u=2,g={
-title(230,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,r=2,u=2})}})}}),
-h(-45,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2,g={
-q(32892,{isBreadcrumb=1,nextQuests={32806},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2}),
+x(5,{awp=50004,phase=50,g={
+h(-416,{awp=50300,description="During 5.3 a big battle occurred in Barrens.",maps={1,10,390},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,rwp=50400,u=2,g={
+h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2,g={
+ach(8307,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,r=1,u=2,g={
+title(228,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,r=1,u=2})}}),
+ach(8306,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,r=2,u=2,g={
+title(230,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,r=2,u=2})}})}}),
+h(-45,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2,g={
+q(32892,{isBreadcrumb=1,nextQuests={32806},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2}),
 q(32808,{coords={
-[390]={{83.2,29.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={61962},r=2,sourceQuests={32807},u=2}),
+[390]={{83.2,29.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={61962},r=2,sourceQuests={32807},u=2}),
 q(32809,{coords={
-[1]={{54.4,9.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71027},r=2,sourceQuests={32808},u=2}),
+[1]={{54.4,9.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71027},r=2,sourceQuests={32808},u=2}),
 q(32810,{coords={
-[1]={{54.4,9.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71027},r=2,sourceQuests={32809},u=2}),
+[1]={{54.4,9.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71027},r=2,sourceQuests={32809},u=2}),
 q(32871,{coords={
-[1]={{51.8,39.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71320},r=2,sourceQuests={32810},u=2}),
+[1]={{51.8,39.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71320},r=2,sourceQuests={32810},u=2}),
 q(32811,{coords={
-[1]={{49.7,40.1}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={70978},r=2,sourceQuests={32871},u=2,g={
+[1]={{49.7,40.1}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={70978},r=2,sourceQuests={32871},u=2,g={
 crit(23534,{achID=8306,id=2,r=2,u=2})}}),
 q(32895,{coords={
-[390]={{85.8,59.6}}},isBreadcrumb=1,isWeekly=1,nextQuests={32872},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71336},r=2,sourceQuests={32811},u=2}),
+[390]={{85.8,59.6}}},isBreadcrumb=1,isWeekly=1,nextQuests={32872},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71336},r=2,sourceQuests={32811},u=2}),
 q(32872,{coords={
-[1]={{49.8,40}}},isWeekly=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71333},r=2,sourceQuests={32811,32895},u=2,g={
-i(97849,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+[1]={{49.8,40}}},isWeekly=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71333},r=2,sourceQuests={32811,32895},u=2,g={
+i(97849,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
 crit(23337,{achID=8306,id=4,r=2,u=2})}}),
 q(32812,{coords={
-[390]={{83.2,29.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={61962},r=1,sourceQuests={32807},u=2}),
+[390]={{83.2,29.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={61962},r=1,sourceQuests={32807},u=2}),
 q(32867,{coords={
-[1]={{49.8,40}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71333},r=1,sourceQuests={32812},u=2}),
+[1]={{49.8,40}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71333},r=1,sourceQuests={32812},u=2}),
 q(32819,{coords={
-[1]={{49.7,40.1}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={70978},r=1,sourceQuests={32867},u=2}),
+[1]={{49.7,40.1}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={70978},r=1,sourceQuests={32867},u=2}),
 q(32813,{coords={
-[1]={{49.7,40.1}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={70978},r=1,sourceQuests={32819},u=2}),
+[1]={{49.7,40.1}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={70978},r=1,sourceQuests={32819},u=2}),
 q(32814,{coords={
-[1]={{49.7,40.1}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={70978},r=1,sourceQuests={32813},u=2,g={
+[1]={{49.7,40.1}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={70978},r=1,sourceQuests={32813},u=2,g={
 crit(23537,{achID=8307,id=2,r=1,u=2})}}),
 q(32896,{coords={
-[390]={{62.2,23.8}}},isBreadcrumb=1,isWeekly=1,nextQuests={32862},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71483},r=1,sourceQuests={32814},u=2}),
+[390]={{62.2,23.8}}},isBreadcrumb=1,isWeekly=1,nextQuests={32862},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71483},r=1,sourceQuests={32814},u=2}),
 q(32862,{coords={
-[1]={{49.8,40}}},isWeekly=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71333},r=1,sourceQuests={32814,32896},u=2,g={
-i(97849,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+[1]={{49.8,40}}},isWeekly=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,qgs={71333},r=1,sourceQuests={32814,32896},u=2,g={
+i(97849,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
 crit(23338,{achID=8307,id=4,r=1,u=2})}})}}),
-h(-47,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2,g={
-ah(97829,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,type="i",u=2,g={
-s(278947,97725,{b=1,c={6},cost={{"i",97829,1},{"i",97849,1}},f=7,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278952,97734,{b=1,c={6},cost={{"i",97829,1},{"i",97849,1}},f=7,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278884,97660,{b=1,c={11},cost={{"i",97829,1},{"i",97849,1}},f=5,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278963,97745,{b=1,c={11},cost={{"i",97829,1},{"i",97849,1}},f=5,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278883,97659,{b=1,c={3},cost={{"i",97829,1},{"i",97849,1}},f=6,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278882,97658,{b=1,c={8},cost={{"i",97829,1},{"i",97849,1}},f=4,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278916,97692,{b=1,c={10},cost={{"i",97829,1},{"i",97849,1}},f=5,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278968,97750,{b=1,c={10},cost={{"i",97829,1},{"i",97849,1}},f=5,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278975,97757,{b=1,c={10},cost={{"i",97829,1},{"i",97849,1}},f=5,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278880,97656,{b=1,c={2},cost={{"i",97829,1},{"i",97849,1}},f=7,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278994,97776,{b=1,c={2},cost={{"i",97829,1},{"i",97849,1}},f=7,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(279003,97785,{b=1,c={2},cost={{"i",97829,1},{"i",97849,1}},f=7,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278881,97657,{b=1,c={5},cost={{"i",97829,1},{"i",97849,1}},f=4,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278879,97655,{b=1,c={4},cost={{"i",97829,1},{"i",97849,1}},f=5,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278849,97625,{b=1,c={7},cost={{"i",97829,1},{"i",97849,1}},f=6,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278992,97774,{b=1,c={7},cost={{"i",97829,1},{"i",97849,1}},f=6,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278877,97653,{b=1,c={9},cost={{"i",97829,1},{"i",97849,1}},f=4,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278878,97654,{b=1,c={1},cost={{"i",97829,1},{"i",97849,1}},f=7,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278982,97764,{b=1,c={1},cost={{"i",97829,1},{"i",97849,1}},f=7,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}}),
-ah(97831,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,type="i",u=2,g={
-s(278949,97727,{b=1,c={6},cost={{"i",97831,1},{"i",97849,1}},f=7,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278954,97736,{b=1,c={6},cost={{"i",97831,1},{"i",97849,1}},f=7,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278960,97742,{b=1,c={11},cost={{"i",97831,1},{"i",97849,1}},f=5,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278903,97679,{b=1,c={11},cost={{"i",97831,1},{"i",97849,1}},f=5,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278902,97678,{b=1,c={3},cost={{"i",97831,1},{"i",97849,1}},f=6,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278901,97677,{b=1,c={8},cost={{"i",97831,1},{"i",97849,1}},f=4,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278913,97689,{b=1,c={10},cost={{"i",97831,1},{"i",97849,1}},f=5,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278970,97752,{b=1,c={10},cost={{"i",97831,1},{"i",97849,1}},f=5,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278977,97759,{b=1,c={10},cost={{"i",97831,1},{"i",97849,1}},f=5,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278900,97676,{b=1,c={2},cost={{"i",97831,1},{"i",97849,1}},f=7,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278999,97781,{b=1,c={2},cost={{"i",97831,1},{"i",97849,1}},f=7,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(279005,97787,{b=1,c={2},cost={{"i",97831,1},{"i",97849,1}},f=7,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278898,97674,{b=1,c={5},cost={{"i",97831,1},{"i",97849,1}},f=4,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278899,97675,{b=1,c={4},cost={{"i",97831,1},{"i",97849,1}},f=5,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278854,97630,{b=1,c={7},cost={{"i",97831,1},{"i",97849,1}},f=6,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278987,97769,{b=1,c={7},cost={{"i",97831,1},{"i",97849,1}},f=6,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278897,97673,{b=1,c={9},cost={{"i",97831,1},{"i",97849,1}},f=4,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278896,97672,{b=1,c={1},cost={{"i",97831,1},{"i",97849,1}},f=7,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278979,97761,{b=1,c={1},cost={{"i",97831,1},{"i",97849,1}},f=7,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}}),
-ah(97826,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,type="i",u=2,g={
-s(278944,97722,{b=1,c={6},cost={{"i",97826,1},{"i",97849,1}},f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278956,97738,{b=1,c={6},cost={{"i",97826,1},{"i",97849,1}},f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278964,97746,{b=1,c={11},cost={{"i",97826,1},{"i",97849,1}},f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278859,97635,{b=1,c={11},cost={{"i",97826,1},{"i",97849,1}},f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278860,97636,{b=1,c={3},cost={{"i",97826,1},{"i",97849,1}},f=6,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278895,97671,{b=1,c={8},cost={{"i",97826,1},{"i",97849,1}},f=4,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278912,97688,{b=1,c={10},cost={{"i",97826,1},{"i",97849,1}},f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278965,97747,{b=1,c={10},cost={{"i",97826,1},{"i",97849,1}},f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278972,97754,{b=1,c={10},cost={{"i",97826,1},{"i",97849,1}},f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278858,97634,{b=1,c={2},cost={{"i",97826,1},{"i",97849,1}},f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278995,97777,{b=1,c={2},cost={{"i",97826,1},{"i",97849,1}},f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(279000,97782,{b=1,c={2},cost={{"i",97826,1},{"i",97849,1}},f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278894,97670,{b=1,c={5},cost={{"i",97826,1},{"i",97849,1}},f=4,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278857,97633,{b=1,c={4},cost={{"i",97826,1},{"i",97849,1}},f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278852,97628,{b=1,c={7},cost={{"i",97826,1},{"i",97849,1}},f=6,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278989,97771,{b=1,c={7},cost={{"i",97826,1},{"i",97849,1}},f=6,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278893,97669,{b=1,c={9},cost={{"i",97826,1},{"i",97849,1}},f=4,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278856,97632,{b=1,c={1},cost={{"i",97826,1},{"i",97849,1}},f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278984,97766,{b=1,c={1},cost={{"i",97826,1},{"i",97849,1}},f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}}),
-ah(97828,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,type="i",u=2,g={
-s(278946,97724,{b=1,c={6},cost={{"i",97828,1},{"i",97849,1}},f=7,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278951,97733,{b=1,c={6},cost={{"i",97828,1},{"i",97849,1}},f=7,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278962,97744,{b=1,c={11},cost={{"i",97828,1},{"i",97849,1}},f=5,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278876,97652,{b=1,c={11},cost={{"i",97828,1},{"i",97849,1}},f=5,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278875,97651,{b=1,c={3},cost={{"i",97828,1},{"i",97849,1}},f=6,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278873,97649,{b=1,c={8},cost={{"i",97828,1},{"i",97849,1}},f=4,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278917,97693,{b=1,c={10},cost={{"i",97828,1},{"i",97849,1}},f=5,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278967,97749,{b=1,c={10},cost={{"i",97828,1},{"i",97849,1}},f=5,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278974,97756,{b=1,c={10},cost={{"i",97828,1},{"i",97849,1}},f=5,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278874,97650,{b=1,c={2},cost={{"i",97828,1},{"i",97849,1}},f=7,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278993,97775,{b=1,c={2},cost={{"i",97828,1},{"i",97849,1}},f=7,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(279002,97784,{b=1,c={2},cost={{"i",97828,1},{"i",97849,1}},f=7,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278872,97648,{b=1,c={5},cost={{"i",97828,1},{"i",97849,1}},f=4,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278871,97647,{b=1,c={4},cost={{"i",97828,1},{"i",97849,1}},f=5,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278850,97626,{b=1,c={7},cost={{"i",97828,1},{"i",97849,1}},f=6,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278991,97773,{b=1,c={7},cost={{"i",97828,1},{"i",97849,1}},f=6,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278870,97646,{b=1,c={9},cost={{"i",97828,1},{"i",97849,1}},f=4,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278869,97645,{b=1,c={1},cost={{"i",97828,1},{"i",97849,1}},f=7,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278981,97763,{b=1,c={1},cost={{"i",97828,1},{"i",97849,1}},f=7,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}}),
-ah(97832,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,type="i",u=2,g={
-s(278950,97728,{b=1,c={6},cost={{"i",97832,1},{"i",97849,1}},f=7,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278955,97737,{b=1,c={6},cost={{"i",97832,1},{"i",97849,1}},f=7,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278958,97740,{b=1,c={11},cost={{"i",97832,1},{"i",97849,1}},f=5,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278911,97687,{b=1,c={11},cost={{"i",97832,1},{"i",97849,1}},f=5,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278909,97685,{b=1,c={3},cost={{"i",97832,1},{"i",97849,1}},f=6,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278910,97686,{b=1,c={8},cost={{"i",97832,1},{"i",97849,1}},f=4,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278915,97691,{b=1,c={10},cost={{"i",97832,1},{"i",97849,1}},f=5,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278971,97753,{b=1,c={10},cost={{"i",97832,1},{"i",97849,1}},f=5,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278978,97760,{b=1,c={10},cost={{"i",97832,1},{"i",97849,1}},f=5,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278997,97779,{b=1,c={2},cost={{"i",97832,1},{"i",97849,1}},f=7,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278908,97684,{b=1,c={2},cost={{"i",97832,1},{"i",97849,1}},f=7,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(279006,97788,{b=1,c={2},cost={{"i",97832,1},{"i",97849,1}},f=7,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278907,97683,{b=1,c={5},cost={{"i",97832,1},{"i",97849,1}},f=4,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278906,97682,{b=1,c={4},cost={{"i",97832,1},{"i",97849,1}},f=5,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278853,97629,{b=1,c={7},cost={{"i",97832,1},{"i",97849,1}},f=6,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278988,97770,{b=1,c={7},cost={{"i",97832,1},{"i",97849,1}},f=6,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278905,97681,{b=1,c={9},cost={{"i",97832,1},{"i",97849,1}},f=4,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278904,97680,{b=1,c={1},cost={{"i",97832,1},{"i",97849,1}},f=7,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278980,97762,{b=1,c={1},cost={{"i",97832,1},{"i",97849,1}},f=7,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}}),
-ah(97830,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,type="i",u=2,g={
-s(278948,97726,{b=1,c={6},cost={{"i",97830,1},{"i",97849,1}},f=7,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278953,97735,{b=1,c={6},cost={{"i",97830,1},{"i",97849,1}},f=7,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278959,97741,{b=1,c={11},cost={{"i",97830,1},{"i",97849,1}},f=5,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278892,97668,{b=1,c={11},cost={{"i",97830,1},{"i",97849,1}},f=5,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278891,97667,{b=1,c={3},cost={{"i",97830,1},{"i",97849,1}},f=6,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278890,97666,{b=1,c={8},cost={{"i",97830,1},{"i",97849,1}},f=4,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278914,97690,{b=1,c={10},cost={{"i",97830,1},{"i",97849,1}},f=5,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278969,97751,{b=1,c={10},cost={{"i",97830,1},{"i",97849,1}},f=5,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278976,97758,{b=1,c={10},cost={{"i",97830,1},{"i",97849,1}},f=5,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278889,97665,{b=1,c={2},cost={{"i",97830,1},{"i",97849,1}},f=7,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278998,97780,{b=1,c={2},cost={{"i",97830,1},{"i",97849,1}},f=7,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(279004,97786,{b=1,c={2},cost={{"i",97830,1},{"i",97849,1}},f=7,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278888,97664,{b=1,c={5},cost={{"i",97830,1},{"i",97849,1}},f=4,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278887,97663,{b=1,c={4},cost={{"i",97830,1},{"i",97849,1}},f=5,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278855,97631,{b=1,c={7},cost={{"i",97830,1},{"i",97849,1}},f=6,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278986,97768,{b=1,c={7},cost={{"i",97830,1},{"i",97849,1}},f=6,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278886,97662,{b=1,c={9},cost={{"i",97830,1},{"i",97849,1}},f=4,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278885,97661,{b=1,c={1},cost={{"i",97830,1},{"i",97849,1}},f=7,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278983,97765,{b=1,c={1},cost={{"i",97830,1},{"i",97849,1}},f=7,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}}),
-ah(97827,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,type="i",u=2,g={
-s(278945,97723,{b=1,c={6},cost={{"i",97827,1},{"i",97849,1}},f=7,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278957,97739,{b=1,c={6},cost={{"i",97827,1},{"i",97849,1}},f=7,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278961,97743,{b=1,c={11},cost={{"i",97827,1},{"i",97849,1}},f=5,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278868,97644,{b=1,c={11},cost={{"i",97827,1},{"i",97849,1}},f=5,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278867,97643,{b=1,c={3},cost={{"i",97827,1},{"i",97849,1}},f=6,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278866,97642,{b=1,c={8},cost={{"i",97827,1},{"i",97849,1}},f=4,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278919,97696,{b=1,c={10},cost={{"i",97827,1},{"i",97849,1}},f=5,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278966,97748,{b=1,c={10},cost={{"i",97827,1},{"i",97849,1}},f=5,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278973,97755,{b=1,c={10},cost={{"i",97827,1},{"i",97849,1}},f=5,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278864,97640,{b=1,c={2},cost={{"i",97827,1},{"i",97849,1}},f=7,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278996,97778,{b=1,c={2},cost={{"i",97827,1},{"i",97849,1}},f=7,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(279001,97783,{b=1,c={2},cost={{"i",97827,1},{"i",97849,1}},f=7,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278865,97641,{b=1,c={5},cost={{"i",97827,1},{"i",97849,1}},f=4,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278863,97639,{b=1,c={4},cost={{"i",97827,1},{"i",97849,1}},f=5,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278851,97627,{b=1,c={7},cost={{"i",97827,1},{"i",97849,1}},f=6,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278990,97772,{b=1,c={7},cost={{"i",97827,1},{"i",97849,1}},f=6,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278862,97638,{b=1,c={9},cost={{"i",97827,1},{"i",97849,1}},f=4,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278861,97637,{b=1,c={1},cost={{"i",97827,1},{"i",97849,1}},f=7,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-s(278985,97767,{b=1,c={1},cost={{"i",97827,1},{"i",97849,1}},f=7,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}})}}),
-h(-58,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2,g={
-n(71226,{description="Rebellion Quartermaster during Barrens Battlefield.",OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2,g={
-s(279071,97901,{b=1,f=2,loc=47,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2}),
-toy(97919,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2}),
-toy(97942,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2}),
-toy(98552,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
-toy(97921,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2}),
-p(1237,{b=1,itemID=97821,npcID=71159,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=3,spellID=141789,u=2}),
-i(97829,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(97831,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(97826,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(97828,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(97832,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(97830,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(97827,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(97990,{b=1,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2}),
-i(98561,{b=1,f=55,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2}),
-i(98563,{b=1,f=55,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}})}}),
-h(-63,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2,g={
-i(97829,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(97831,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(97826,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(97828,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(97832,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(97830,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(97827,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=53 t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}})}}),
-h(-655,{awp=50500,lvl=90,u=5002,g={
+h(-47,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2,g={
+ah(97829,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,type="i",u=2,g={
+s(278947,97725,{b=1,c={6},cost={{"i",97829,1},{"i",97849,1}},f=7,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278952,97734,{b=1,c={6},cost={{"i",97829,1},{"i",97849,1}},f=7,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278884,97660,{b=1,c={11},cost={{"i",97829,1},{"i",97849,1}},f=5,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278963,97745,{b=1,c={11},cost={{"i",97829,1},{"i",97849,1}},f=5,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278883,97659,{b=1,c={3},cost={{"i",97829,1},{"i",97849,1}},f=6,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278882,97658,{b=1,c={8},cost={{"i",97829,1},{"i",97849,1}},f=4,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278916,97692,{b=1,c={10},cost={{"i",97829,1},{"i",97849,1}},f=5,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278968,97750,{b=1,c={10},cost={{"i",97829,1},{"i",97849,1}},f=5,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278975,97757,{b=1,c={10},cost={{"i",97829,1},{"i",97849,1}},f=5,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278880,97656,{b=1,c={2},cost={{"i",97829,1},{"i",97849,1}},f=7,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278994,97776,{b=1,c={2},cost={{"i",97829,1},{"i",97849,1}},f=7,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(279003,97785,{b=1,c={2},cost={{"i",97829,1},{"i",97849,1}},f=7,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278881,97657,{b=1,c={5},cost={{"i",97829,1},{"i",97849,1}},f=4,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278879,97655,{b=1,c={4},cost={{"i",97829,1},{"i",97849,1}},f=5,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278849,97625,{b=1,c={7},cost={{"i",97829,1},{"i",97849,1}},f=6,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278992,97774,{b=1,c={7},cost={{"i",97829,1},{"i",97849,1}},f=6,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278877,97653,{b=1,c={9},cost={{"i",97829,1},{"i",97849,1}},f=4,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278878,97654,{b=1,c={1},cost={{"i",97829,1},{"i",97849,1}},f=7,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278982,97764,{b=1,c={1},cost={{"i",97829,1},{"i",97849,1}},f=7,loc=40,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}}),
+ah(97831,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,type="i",u=2,g={
+s(278949,97727,{b=1,c={6},cost={{"i",97831,1},{"i",97849,1}},f=7,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278954,97736,{b=1,c={6},cost={{"i",97831,1},{"i",97849,1}},f=7,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278960,97742,{b=1,c={11},cost={{"i",97831,1},{"i",97849,1}},f=5,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278903,97679,{b=1,c={11},cost={{"i",97831,1},{"i",97849,1}},f=5,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278902,97678,{b=1,c={3},cost={{"i",97831,1},{"i",97849,1}},f=6,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278901,97677,{b=1,c={8},cost={{"i",97831,1},{"i",97849,1}},f=4,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278913,97689,{b=1,c={10},cost={{"i",97831,1},{"i",97849,1}},f=5,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278970,97752,{b=1,c={10},cost={{"i",97831,1},{"i",97849,1}},f=5,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278977,97759,{b=1,c={10},cost={{"i",97831,1},{"i",97849,1}},f=5,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278900,97676,{b=1,c={2},cost={{"i",97831,1},{"i",97849,1}},f=7,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278999,97781,{b=1,c={2},cost={{"i",97831,1},{"i",97849,1}},f=7,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(279005,97787,{b=1,c={2},cost={{"i",97831,1},{"i",97849,1}},f=7,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278898,97674,{b=1,c={5},cost={{"i",97831,1},{"i",97849,1}},f=4,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278899,97675,{b=1,c={4},cost={{"i",97831,1},{"i",97849,1}},f=5,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278854,97630,{b=1,c={7},cost={{"i",97831,1},{"i",97849,1}},f=6,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278987,97769,{b=1,c={7},cost={{"i",97831,1},{"i",97849,1}},f=6,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278897,97673,{b=1,c={9},cost={{"i",97831,1},{"i",97849,1}},f=4,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278896,97672,{b=1,c={1},cost={{"i",97831,1},{"i",97849,1}},f=7,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278979,97761,{b=1,c={1},cost={{"i",97831,1},{"i",97849,1}},f=7,loc=41,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}}),
+ah(97826,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,type="i",u=2,g={
+s(278944,97722,{b=1,c={6},cost={{"i",97826,1},{"i",97849,1}},f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278956,97738,{b=1,c={6},cost={{"i",97826,1},{"i",97849,1}},f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278964,97746,{b=1,c={11},cost={{"i",97826,1},{"i",97849,1}},f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278859,97635,{b=1,c={11},cost={{"i",97826,1},{"i",97849,1}},f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278860,97636,{b=1,c={3},cost={{"i",97826,1},{"i",97849,1}},f=6,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278895,97671,{b=1,c={8},cost={{"i",97826,1},{"i",97849,1}},f=4,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278912,97688,{b=1,c={10},cost={{"i",97826,1},{"i",97849,1}},f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278965,97747,{b=1,c={10},cost={{"i",97826,1},{"i",97849,1}},f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278972,97754,{b=1,c={10},cost={{"i",97826,1},{"i",97849,1}},f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278858,97634,{b=1,c={2},cost={{"i",97826,1},{"i",97849,1}},f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278995,97777,{b=1,c={2},cost={{"i",97826,1},{"i",97849,1}},f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(279000,97782,{b=1,c={2},cost={{"i",97826,1},{"i",97849,1}},f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278894,97670,{b=1,c={5},cost={{"i",97826,1},{"i",97849,1}},f=4,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278857,97633,{b=1,c={4},cost={{"i",97826,1},{"i",97849,1}},f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278852,97628,{b=1,c={7},cost={{"i",97826,1},{"i",97849,1}},f=6,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278989,97771,{b=1,c={7},cost={{"i",97826,1},{"i",97849,1}},f=6,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278893,97669,{b=1,c={9},cost={{"i",97826,1},{"i",97849,1}},f=4,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278856,97632,{b=1,c={1},cost={{"i",97826,1},{"i",97849,1}},f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278984,97766,{b=1,c={1},cost={{"i",97826,1},{"i",97849,1}},f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}}),
+ah(97828,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,type="i",u=2,g={
+s(278946,97724,{b=1,c={6},cost={{"i",97828,1},{"i",97849,1}},f=7,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278951,97733,{b=1,c={6},cost={{"i",97828,1},{"i",97849,1}},f=7,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278962,97744,{b=1,c={11},cost={{"i",97828,1},{"i",97849,1}},f=5,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278876,97652,{b=1,c={11},cost={{"i",97828,1},{"i",97849,1}},f=5,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278875,97651,{b=1,c={3},cost={{"i",97828,1},{"i",97849,1}},f=6,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278873,97649,{b=1,c={8},cost={{"i",97828,1},{"i",97849,1}},f=4,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278917,97693,{b=1,c={10},cost={{"i",97828,1},{"i",97849,1}},f=5,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278967,97749,{b=1,c={10},cost={{"i",97828,1},{"i",97849,1}},f=5,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278974,97756,{b=1,c={10},cost={{"i",97828,1},{"i",97849,1}},f=5,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278874,97650,{b=1,c={2},cost={{"i",97828,1},{"i",97849,1}},f=7,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278993,97775,{b=1,c={2},cost={{"i",97828,1},{"i",97849,1}},f=7,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(279002,97784,{b=1,c={2},cost={{"i",97828,1},{"i",97849,1}},f=7,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278872,97648,{b=1,c={5},cost={{"i",97828,1},{"i",97849,1}},f=4,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278871,97647,{b=1,c={4},cost={{"i",97828,1},{"i",97849,1}},f=5,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278850,97626,{b=1,c={7},cost={{"i",97828,1},{"i",97849,1}},f=6,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278991,97773,{b=1,c={7},cost={{"i",97828,1},{"i",97849,1}},f=6,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278870,97646,{b=1,c={9},cost={{"i",97828,1},{"i",97849,1}},f=4,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278869,97645,{b=1,c={1},cost={{"i",97828,1},{"i",97849,1}},f=7,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278981,97763,{b=1,c={1},cost={{"i",97828,1},{"i",97849,1}},f=7,loc=44,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}}),
+ah(97832,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,type="i",u=2,g={
+s(278950,97728,{b=1,c={6},cost={{"i",97832,1},{"i",97849,1}},f=7,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278955,97737,{b=1,c={6},cost={{"i",97832,1},{"i",97849,1}},f=7,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278958,97740,{b=1,c={11},cost={{"i",97832,1},{"i",97849,1}},f=5,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278911,97687,{b=1,c={11},cost={{"i",97832,1},{"i",97849,1}},f=5,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278909,97685,{b=1,c={3},cost={{"i",97832,1},{"i",97849,1}},f=6,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278910,97686,{b=1,c={8},cost={{"i",97832,1},{"i",97849,1}},f=4,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278915,97691,{b=1,c={10},cost={{"i",97832,1},{"i",97849,1}},f=5,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278971,97753,{b=1,c={10},cost={{"i",97832,1},{"i",97849,1}},f=5,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278978,97760,{b=1,c={10},cost={{"i",97832,1},{"i",97849,1}},f=5,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278997,97779,{b=1,c={2},cost={{"i",97832,1},{"i",97849,1}},f=7,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278908,97684,{b=1,c={2},cost={{"i",97832,1},{"i",97849,1}},f=7,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(279006,97788,{b=1,c={2},cost={{"i",97832,1},{"i",97849,1}},f=7,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278907,97683,{b=1,c={5},cost={{"i",97832,1},{"i",97849,1}},f=4,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278906,97682,{b=1,c={4},cost={{"i",97832,1},{"i",97849,1}},f=5,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278853,97629,{b=1,c={7},cost={{"i",97832,1},{"i",97849,1}},f=6,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278988,97770,{b=1,c={7},cost={{"i",97832,1},{"i",97849,1}},f=6,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278905,97681,{b=1,c={9},cost={{"i",97832,1},{"i",97849,1}},f=4,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278904,97680,{b=1,c={1},cost={{"i",97832,1},{"i",97849,1}},f=7,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278980,97762,{b=1,c={1},cost={{"i",97832,1},{"i",97849,1}},f=7,loc=45,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}}),
+ah(97830,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,type="i",u=2,g={
+s(278948,97726,{b=1,c={6},cost={{"i",97830,1},{"i",97849,1}},f=7,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278953,97735,{b=1,c={6},cost={{"i",97830,1},{"i",97849,1}},f=7,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278959,97741,{b=1,c={11},cost={{"i",97830,1},{"i",97849,1}},f=5,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278892,97668,{b=1,c={11},cost={{"i",97830,1},{"i",97849,1}},f=5,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278891,97667,{b=1,c={3},cost={{"i",97830,1},{"i",97849,1}},f=6,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278890,97666,{b=1,c={8},cost={{"i",97830,1},{"i",97849,1}},f=4,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278914,97690,{b=1,c={10},cost={{"i",97830,1},{"i",97849,1}},f=5,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278969,97751,{b=1,c={10},cost={{"i",97830,1},{"i",97849,1}},f=5,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278976,97758,{b=1,c={10},cost={{"i",97830,1},{"i",97849,1}},f=5,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278889,97665,{b=1,c={2},cost={{"i",97830,1},{"i",97849,1}},f=7,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278998,97780,{b=1,c={2},cost={{"i",97830,1},{"i",97849,1}},f=7,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(279004,97786,{b=1,c={2},cost={{"i",97830,1},{"i",97849,1}},f=7,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278888,97664,{b=1,c={5},cost={{"i",97830,1},{"i",97849,1}},f=4,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278887,97663,{b=1,c={4},cost={{"i",97830,1},{"i",97849,1}},f=5,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278855,97631,{b=1,c={7},cost={{"i",97830,1},{"i",97849,1}},f=6,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278986,97768,{b=1,c={7},cost={{"i",97830,1},{"i",97849,1}},f=6,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278886,97662,{b=1,c={9},cost={{"i",97830,1},{"i",97849,1}},f=4,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278885,97661,{b=1,c={1},cost={{"i",97830,1},{"i",97849,1}},f=7,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278983,97765,{b=1,c={1},cost={{"i",97830,1},{"i",97849,1}},f=7,loc=46,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}}),
+ah(97827,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,type="i",u=2,g={
+s(278945,97723,{b=1,c={6},cost={{"i",97827,1},{"i",97849,1}},f=7,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278957,97739,{b=1,c={6},cost={{"i",97827,1},{"i",97849,1}},f=7,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278961,97743,{b=1,c={11},cost={{"i",97827,1},{"i",97849,1}},f=5,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278868,97644,{b=1,c={11},cost={{"i",97827,1},{"i",97849,1}},f=5,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278867,97643,{b=1,c={3},cost={{"i",97827,1},{"i",97849,1}},f=6,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278866,97642,{b=1,c={8},cost={{"i",97827,1},{"i",97849,1}},f=4,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278919,97696,{b=1,c={10},cost={{"i",97827,1},{"i",97849,1}},f=5,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278966,97748,{b=1,c={10},cost={{"i",97827,1},{"i",97849,1}},f=5,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278973,97755,{b=1,c={10},cost={{"i",97827,1},{"i",97849,1}},f=5,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278864,97640,{b=1,c={2},cost={{"i",97827,1},{"i",97849,1}},f=7,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278996,97778,{b=1,c={2},cost={{"i",97827,1},{"i",97849,1}},f=7,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(279001,97783,{b=1,c={2},cost={{"i",97827,1},{"i",97849,1}},f=7,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278865,97641,{b=1,c={5},cost={{"i",97827,1},{"i",97849,1}},f=4,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278863,97639,{b=1,c={4},cost={{"i",97827,1},{"i",97849,1}},f=5,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278851,97627,{b=1,c={7},cost={{"i",97827,1},{"i",97849,1}},f=6,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278990,97772,{b=1,c={7},cost={{"i",97827,1},{"i",97849,1}},f=6,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278862,97638,{b=1,c={9},cost={{"i",97827,1},{"i",97849,1}},f=4,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278861,97637,{b=1,c={1},cost={{"i",97827,1},{"i",97849,1}},f=7,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+s(278985,97767,{b=1,c={1},cost={{"i",97827,1},{"i",97849,1}},f=7,loc=47,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}})}}),
+h(-58,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2,g={
+n(71226,{description="Rebellion Quartermaster during Barrens Battlefield.",OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2,g={
+s(279071,97901,{b=1,f=2,loc=47,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2}),
+toy(97919,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2}),
+toy(97942,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2}),
+toy(98552,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+toy(97921,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2}),
+p(1237,{b=1,itemID=97821,npcID=71159,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=3,spellID=141789,u=2}),
+i(97829,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(97831,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(97826,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(97828,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(97832,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(97830,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(97827,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(97990,{b=1,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2}),
+i(98561,{b=1,f=55,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2}),
+i(98563,{b=1,f=55,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}})}}),
+h(-63,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,u=2,g={
+i(97829,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(97831,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(97826,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(97828,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(97832,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(97830,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(97827,{lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will be removed when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2})}})}}),
+h(-655,{awp=50500,lvl=90,phase=5002,g={
 h(-12,{
 ach(60901)}),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_1272162)(
 h(-19,{crs={56439,56877,56884,59080,59150,59479,60040,61398,62205},description="The following can drop from the final boss of any Celestial dungeon.",maps={429,430,431,432,435,436,437,438,439,440,441,442,443,444,445,446,453,454,455,457,458,459,476,477,478,479},g={
-i(95880,{b=1,c={2,5,9},lvl=90,q=4,u=5201}),
-i(95881,{b=1,c={1,3,7,10},lvl=90,q=4,u=5201}),
-i(95879,{b=1,c={4,6,8,11},lvl=90,q=4,u=5201}),
-i(95956,{b=1,c={2,5,9},lvl=90,q=4,u=5201}),
-i(95957,{b=1,c={1,3,7,10},lvl=90,q=4,u=5201}),
-i(95955,{b=1,c={4,6,8,11},lvl=90,q=4,u=5201}),
-i(95823,{b=1,c={2,5,9},lvl=90,q=4,u=5201}),
-i(95824,{b=1,c={1,3,7,10},lvl=90,q=4,u=5201}),
-i(95822,{b=1,c={4,6,8,11},lvl=90,q=4,u=5201}),
-i(95856,{b=1,c={2,5,9},lvl=90,q=4,u=5201}),
-i(95857,{b=1,c={1,3,7,10},lvl=90,q=4,u=5201}),
-i(95855,{b=1,c={4,6,8,11},lvl=90,q=4,u=5201}),
-i(95888,{b=1,c={2,5,9},lvl=90,q=4,u=5201}),
-i(95889,{b=1,c={1,3,7,10},lvl=90,q=4,u=5201}),
-i(95887,{b=1,c={4,6,8,11},lvl=90,q=4,u=5201})}})),
+i(95880,{b=1,c={2,5,9},lvl=90,phase=5201,q=4}),
+i(95881,{b=1,c={1,3,7,10},lvl=90,phase=5201,q=4}),
+i(95879,{b=1,c={4,6,8,11},lvl=90,phase=5201,q=4}),
+i(95956,{b=1,c={2,5,9},lvl=90,phase=5201,q=4}),
+i(95957,{b=1,c={1,3,7,10},lvl=90,phase=5201,q=4}),
+i(95955,{b=1,c={4,6,8,11},lvl=90,phase=5201,q=4}),
+i(95823,{b=1,c={2,5,9},lvl=90,phase=5201,q=4}),
+i(95824,{b=1,c={1,3,7,10},lvl=90,phase=5201,q=4}),
+i(95822,{b=1,c={4,6,8,11},lvl=90,phase=5201,q=4}),
+i(95856,{b=1,c={2,5,9},lvl=90,phase=5201,q=4}),
+i(95857,{b=1,c={1,3,7,10},lvl=90,phase=5201,q=4}),
+i(95855,{b=1,c={4,6,8,11},lvl=90,phase=5201,q=4}),
+i(95888,{b=1,c={2,5,9},lvl=90,phase=5201,q=4}),
+i(95889,{b=1,c={1,3,7,10},lvl=90,phase=5201,q=4}),
+i(95887,{b=1,c={4,6,8,11},lvl=90,phase=5201,q=4})}})),
 h(-45,{
 q(91702,{isDaily=1,qgs={64028},r=2,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91706,{isDaily=1,qgs={64028},r=2,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91704,{isDaily=1,qgs={64028},r=2,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91710,{isDaily=1,qgs={64028},r=2,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91718,{isDaily=1,qgs={64028},r=2,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91714,{isDaily=1,qgs={64028},r=2,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91708,{isDaily=1,qgs={64028},r=2,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91712,{isDaily=1,qgs={64028},r=2,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91716,{isDaily=1,qgs={64028},r=2,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91701,{isDaily=1,qgs={63994},r=1,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91705,{isDaily=1,qgs={63994},r=1,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91703,{isDaily=1,qgs={63994},r=1,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91709,{isDaily=1,qgs={63994},r=1,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91717,{isDaily=1,qgs={63994},r=1,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91713,{isDaily=1,qgs={63994},r=1,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91707,{isDaily=1,qgs={63994},r=1,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91711,{isDaily=1,qgs={63994},r=1,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}}),
 q(91715,{isDaily=1,qgs={63994},r=1,g={
-cu(3414,{u=5201}),
+cu(3414,{phase=5201}),
 cu(3350)}})}),
 h(-47,{(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_1272162)(
-cu(3414,{crs={3977,56439,56448,56541,56589,56636,56637,56717,56719,56732,56747,56843,56877,56884,56906,58632,58633,58664,58722,59080,59150,59153,59184,59223,59303,59479,59789,60040,61243,61398,61442,61444,61445,61485,61567,61634,62205},description="Two tokens drop per boss in Celestial and the final boss of each dungeon will drop an extra three tokens if players have defeated all of the other bosses in the dungeon.",maps={429,430,431,432,435,436,437,438,439,440,441,442,443,444,445,446,453,454,455,457,458,459,476,477,478,479},u=5201})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_1272162)(
+cu(3414,{crs={3977,56439,56448,56541,56589,56636,56637,56717,56719,56732,56747,56843,56877,56884,56906,58632,58633,58664,58722,59080,59150,59153,59184,59223,59303,59479,59789,60040,61243,61398,61442,61444,61445,61485,61567,61634,62205},description="Two tokens drop per boss in Celestial and the final boss of each dungeon will drop an extra three tokens if players have defeated all of the other bosses in the dungeon.",maps={429,430,431,432,435,436,437,438,439,440,441,442,443,444,445,446,453,454,455,457,458,459,476,477,478,479},phase=5201})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_1272162)(
 i(87208,{b=1,crs={56439,56877,56884,59080,59150,59479,60040,61398,62205},description="This can drop from any last boss of a Celestial dungeon.",maps={429,430,431,432,435,436,437,438,439,440,441,442,443,444,445,446,453,454,455,457,458,459,476,477,478,479},q=5})),(_.OnInitDB.ShouldExcludeFromTooltipForBuffs_1272162)(
 i(87209,{b=1,crs={56439,56877,56884,59080,59150,59479,60040,61398,62205},description="This can drop from any last boss of a Celestial dungeon.",maps={429,430,431,432,435,436,437,438,439,440,441,442,443,444,445,446,453,454,455,457,458,459,476,477,478,479},q=5}))}),
 h(-58,{
@@ -3350,7 +3350,7 @@ _.ResolveQuestData({aqd=
 n(74020,{coords={
 [394]={{41,42.5}}}}),hqd=
 n(73674,{coords={
-[392]={{42.9,74.7}}}}),u=5401,g={
+[392]={{42.9,74.7}}}}),phase=5401,g={
 cl(1,{
 s(279578,99046,{b=1,c={1},cost={{"i",99673,1}},f=7,loc=40,lvl=90,q=4}),
 s(279568,99036,{b=1,c={1},cost={{"i",99670,1}},f=7,loc=41,lvl=90,q=4}),
@@ -3493,7 +3493,7 @@ i(99675,{b=1,c={2,5,9},cost={{"i",105861,1}},lvl=90,q=4}),
 i(99676,{b=1,c={1,3,7,10},cost={{"i",105860,1}},lvl=90,q=4}),
 i(99674,{b=1,c={4,6,8,11},cost={{"i",105862,1}},lvl=90,q=4})}}),
 n(70346,{coords={
-[388]={{38,64.6}}},u=5201,g={
+[388]={{38,64.6}}},phase=5201,g={
 cl(1,{
 s(277715,95986,{b=1,c={1},cost={{"i",95881,1}},f=7,loc=40,lvl=90,q=4}),
 s(277719,95990,{b=1,c={1},cost={{"i",95957,1}},f=7,loc=41,lvl=90,q=4}),
@@ -3621,7 +3621,7 @@ s(277596,95850,{b=1,c={11},cost={{"i",95822,1}},f=5,loc=42,lvl=90,q=4}),
 s(277597,95851,{b=1,c={11},cost={{"i",95855,1}},f=5,loc=44,lvl=90,q=4}),
 s(277599,95853,{b=1,c={11},cost={{"i",95887,1}},f=5,loc=46,lvl=90,q=4})})}}),
 n(64606,{coords={
-[388]={{37.8,64.6}}},u=5005,g={
+[388]={{37.8,64.6}}},phase=5005,g={
 cl(1,{
 s(271811,86673,{b=1,c={1},cost={{"i",89275,1}},f=7,loc=40,lvl=90,q=4}),
 s(271807,86669,{b=1,c={1},cost={{"i",89278,1}},f=7,loc=41,lvl=90,q=4}),
@@ -3755,146 +3755,146 @@ n(248108,_.ResolveQuestData({aqd=
 [392]={{42.5,76.6}}},maps={391}},g={
 i(247796,{b=1,cost={{"c",3350,10}},q=4,g={
 cu(395)}}),
-i(89274,{b=1,c={2,5,9},cost={{"c",3350,60}},lvl=90,q=4,u=5007}),
-i(89275,{b=1,c={1,3,7,10},cost={{"c",3350,60}},lvl=90,q=4,u=5007}),
-i(89273,{b=1,c={4,6,8,11},cost={{"c",3350,60}},lvl=90,q=4,u=5007}),
-i(89277,{b=1,c={2,5,9},cost={{"c",3350,50}},lvl=90,q=4,u=5007}),
-i(89278,{b=1,c={1,3,7,10},cost={{"c",3350,50}},lvl=90,q=4,u=5007}),
-i(89276,{b=1,c={4,6,8,11},cost={{"c",3350,50}},lvl=90,q=4,u=5007}),
-i(89265,{b=1,c={2,5,9},cost={{"c",3350,55}},lvl=90,q=4,u=5005}),
-i(89266,{b=1,c={1,3,7,10},cost={{"c",3350,55}},lvl=90,q=4,u=5005}),
-i(89264,{b=1,c={4,6,8,11},cost={{"c",3350,55}},lvl=90,q=4,u=5005}),
-i(89271,{b=1,c={2,5,9},cost={{"c",3350,50}},lvl=90,q=4,u=5005}),
-i(89272,{b=1,c={1,3,7,10},cost={{"c",3350,50}},lvl=90,q=4,u=5005}),
-i(89270,{b=1,c={4,6,8,11},cost={{"c",3350,50}},lvl=90,q=4,u=5005}),
-i(89268,{b=1,c={2,5,9},cost={{"c",3350,55}},lvl=90,q=4,u=5005}),
-i(89269,{b=1,c={1,3,7,10},cost={{"c",3350,55}},lvl=90,q=4,u=5005}),
-i(89267,{b=1,c={4,6,8,11},cost={{"c",3350,55}},lvl=90,q=4,u=5005}),
-s(272009,86906,{b=1,cost={{"c",3350,30}},f=25,lvl=90,q=4,u=5007}),
-s(271991,86886,{b=1,cost={{"c",3350,30}},f=25,lvl=90,q=4,u=5007}),
-s(272011,86909,{b=1,cost={{"c",3350,30}},f=20,lvl=90,q=4,u=5007}),
-s(272012,86910,{b=1,cost={{"c",3350,30}},f=20,lvl=90,q=4,u=5007}),
-s(271997,86893,{b=1,cost={{"c",3350,50}},f=28,lvl=90,q=4,u=5007}),
-s(271987,86879,{b=1,cost={{"c",3350,50}},f=28,lvl=90,q=4,u=5007}),
-s(272008,86905,{b=1,cost={{"c",3350,50}},f=22,lvl=90,q=4,u=5007}),
-s(271994,86889,{b=1,cost={{"c",3350,50}},f=31,lvl=90,q=4,u=5007}),
-i(86872,{b=1,cost={{"c",3350,30}},f=51,lvl=90,q=4,u=5007}),
-i(86871,{b=1,cost={{"c",3350,30}},f=51,lvl=90,q=4,u=5007}),
-s(271982,86874,{b=1,cost={{"c",3350,30}},f=3,lvl=90,q=4,u=5007}),
-s(271989,86883,{b=1,cost={{"c",3350,30}},f=3,lvl=90,q=4,u=5007}),
-s(271984,86876,{b=1,cost={{"c",3350,50}},f=7,loc=40,lvl=90,q=4,u=5007}),
-s(271995,86891,{b=1,cost={{"c",3350,50}},f=7,loc=42,lvl=90,q=4,u=5007}),
-s(271980,86868,{b=1,cost={{"c",3350,30}},f=7,loc=43,lvl=90,q=4,u=5007}),
-s(273945,89981,{b=1,cost={{"c",3350,30}},f=7,loc=44,lvl=90,q=4,u=5007}),
-s(272005,86902,{b=1,cost={{"c",3350,50}},f=7,loc=45,lvl=90,q=4,u=5007}),
-s(272007,86904,{b=1,cost={{"c",3350,50}},f=7,loc=45,lvl=90,q=4,u=5007}),
-s(272006,86903,{b=1,cost={{"c",3350,50}},f=7,loc=45,lvl=90,q=4,u=5007}),
-s(271968,86854,{b=1,cost={{"c",3350,45}},f=7,loc=46,lvl=90,q=4,u=5007}),
-s(273930,89963,{b=1,cost={{"c",3350,45}},f=7,loc=46,lvl=90,q=4,u=5007}),
-s(271981,86870,{b=1,cost={{"c",3350,50}},f=7,loc=47,lvl=90,q=4,u=5007}),
-s(271992,86887,{b=1,cost={{"c",3350,50}},f=7,loc=47,lvl=90,q=4,u=5007}),
-s(273943,89979,{b=1,cost={{"c",3350,30}},f=6,loc=41,lvl=90,q=4,u=5007}),
-s(271988,86882,{b=1,cost={{"c",3350,50}},f=6,loc=42,lvl=90,q=4,u=5007}),
-s(272003,86900,{b=1,cost={{"c",3350,50}},f=6,loc=45,lvl=90,q=4,u=5007}),
-s(272004,86901,{b=1,cost={{"c",3350,50}},f=6,loc=45,lvl=90,q=4,u=5007}),
-s(273950,89986,{b=1,cost={{"c",3350,50}},f=6,loc=45,lvl=90,q=4,u=5007}),
-s(271985,86877,{b=1,cost={{"c",3350,50}},f=6,loc=47,lvl=90,q=4,u=5007}),
-s(273949,89985,{b=1,cost={{"c",3350,50}},f=5,loc=42,lvl=90,q=4,u=5007}),
-s(273944,89980,{b=1,cost={{"c",3350,30}},f=5,loc=44,lvl=90,q=4,u=5007}),
-s(272002,86899,{b=1,cost={{"c",3350,50}},f=5,loc=45,lvl=90,q=4,u=5007}),
-s(272001,86898,{b=1,cost={{"c",3350,50}},f=5,loc=45,lvl=90,q=4,u=5007}),
-s(273947,89983,{b=1,cost={{"c",3350,50}},f=5,loc=46,lvl=90,q=4,u=5007}),
-s(273942,89978,{b=1,cost={{"c",3350,50}},f=5,loc=46,lvl=90,q=4,u=5007}),
-s(271986,86878,{b=1,cost={{"c",3350,50}},f=5,loc=47,lvl=90,q=4,u=5007}),
-s(273946,89982,{b=1,cost={{"c",3350,30}},f=4,loc=41,lvl=90,q=4,u=5007}),
-s(273948,89984,{b=1,cost={{"c",3350,50}},f=4,loc=42,lvl=90,q=4,u=5007}),
-s(271996,86892,{b=1,cost={{"c",3350,50}},f=4,loc=42,lvl=90,q=4,u=5007}),
-s(271983,86875,{b=1,cost={{"c",3350,30}},f=4,loc=43,lvl=90,q=4,u=5007}),
-s(271990,86884,{b=1,cost={{"c",3350,50}},f=4,loc=45,lvl=90,q=4,u=5007}),
-s(271998,86895,{b=1,cost={{"c",3350,50}},f=4,loc=45,lvl=90,q=4,u=5007}),
-s(271999,86896,{b=1,cost={{"c",3350,50}},f=4,loc=45,lvl=90,q=4,u=5007}),
-s(272000,86897,{b=1,cost={{"c",3350,50}},f=4,loc=45,lvl=90,q=4,u=5007}),
-s(272010,86908,{b=1,cost={{"c",3350,50}},f=4,loc=46,lvl=90,q=4,u=5007}),
-s(271993,86888,{b=1,cost={{"c",3350,50}},f=4,loc=47,lvl=90,q=4,u=5007}),
-i(86880,{b=1,cost={{"c",3350,30}},f=52,lvl=90,q=4,u=5007}),
-i(86869,{b=1,cost={{"c",3350,30}},f=52,lvl=90,q=4,u=5007}),
-i(86873,{b=1,cost={{"c",3350,30}},f=52,lvl=90,q=4,u=5007}),
-i(86894,{b=1,cost={{"c",3350,50}},f=53,lvl=90,q=4,u=5007}),
-i(86907,{b=1,cost={{"c",3350,50}},f=53,lvl=90,q=4,u=5007}),
-i(86885,{b=1,cost={{"c",3350,50}},f=53,lvl=90,q=4,u=5007}),
-i(86881,{b=1,cost={{"c",3350,50}},f=53,lvl=90,q=4,u=5007}),
-i(86890,{b=1,cost={{"c",3350,50}},f=53,lvl=90,q=4,u=5007}),
-s(271976,86864,{b=1,cost={{"c",3350,30}},f=34,lvl=90,q=4,u=5005}),
-s(271977,86865,{b=1,cost={{"c",3350,30}},f=23,lvl=90,q=4,u=5005}),
-s(271975,86863,{b=1,cost={{"c",3350,30}},f=25,lvl=90,q=4,u=5005}),
-s(271974,86862,{b=1,cost={{"c",3350,30}},f=20,lvl=90,q=4,u=5005}),
-s(271946,86829,{b=1,cost={{"c",3350,15}},f=1,lvl=90,q=4,u=5005}),
-i(86824,{b=1,cost={{"c",3350,30}},f=51,lvl=90,q=4,u=5005}),
-i(86856,{b=1,cost={{"c",3350,30}},f=51,lvl=90,q=4,u=5005}),
-i(86835,{b=1,cost={{"c",3350,30}},f=51,lvl=90,q=4,u=5005}),
-i(89952,{b=1,cost={{"c",3350,30}},f=51,lvl=90,q=4,u=5005}),
-s(271967,86853,{b=1,cost={{"c",3350,30}},f=3,lvl=90,q=4,u=5005}),
-s(271944,86827,{b=1,cost={{"c",3350,30}},f=3,lvl=90,q=4,u=5005}),
-s(271933,86812,{b=1,cost={{"c",3350,30}},f=3,lvl=90,q=4,u=5005}),
-s(271947,86831,{b=1,cost={{"c",3350,30}},f=3,lvl=90,q=4,u=5005}),
-s(271955,86840,{b=1,cost={{"c",3350,30}},f=3,lvl=90,q=4,u=5005}),
-s(271948,86832,{b=1,cost={{"c",3350,45}},f=7,loc=40,lvl=90,q=4,u=5005}),
-s(273923,89956,{b=1,cost={{"c",3350,30}},f=7,loc=41,lvl=90,q=4,u=5005}),
-s(271972,86860,{b=1,cost={{"c",3350,30}},f=7,loc=41,lvl=90,q=4,u=5005}),
-s(271935,86816,{b=1,cost={{"c",3350,45}},f=7,loc=42,lvl=90,q=4,u=5005}),
-s(273925,89958,{b=1,cost={{"c",3350,45}},f=7,loc=42,lvl=90,q=4,u=5005}),
-s(271961,86846,{cost={{"c",3350,30}},f=7,loc=43,lvl=90,q=4,u=5005}),
-s(271964,86849,{cost={{"c",3350,30}},f=7,loc=43,lvl=90,q=4,u=5005}),
-s(271963,86848,{cost={{"c",3350,30}},f=7,loc=43,lvl=90,q=4,u=5005}),
-s(271952,86837,{b=1,cost={{"c",3350,30}},f=7,loc=44,lvl=90,q=4,u=5005}),
-s(271941,86823,{b=1,cost={{"c",3350,30}},f=7,loc=44,lvl=90,q=4,u=5005}),
-s(271940,86822,{b=1,cost={{"c",3350,45}},f=7,loc=45,lvl=90,q=4,u=5005}),
-s(273921,89954,{b=1,cost={{"c",3350,45}},f=7,loc=45,lvl=90,q=4,u=5005}),
-s(271966,86852,{b=1,cost={{"c",3350,45}},f=7,loc=47,lvl=90,q=4,u=5005}),
-s(271978,86866,{b=1,cost={{"c",3350,45}},f=6,loc=40,lvl=90,q=4,u=5005}),
-s(273929,89962,{b=1,cost={{"c",3350,45}},f=6,loc=40,lvl=90,q=4,u=5005}),
-s(271969,86855,{b=1,cost={{"c",3350,30}},f=6,loc=41,lvl=90,q=4,u=5005}),
-s(271937,86818,{b=1,cost={{"c",3350,45}},f=6,loc=42,lvl=90,q=4,u=5005}),
-s(273927,89960,{b=1,cost={{"c",3350,45}},f=6,loc=42,lvl=90,q=4,u=5005}),
-s(272556,87823,{b=1,cost={{"c",3350,45}},f=6,loc=42,lvl=90,q=4,u=5005}),
-s(271943,86826,{b=1,cost={{"c",3350,30}},f=6,loc=43,lvl=90,q=4,u=5005}),
-s(271962,86847,{cost={{"c",3350,30}},f=6,loc=43,lvl=90,q=4,u=5005}),
-s(271957,86842,{cost={{"c",3350,30}},f=6,loc=43,lvl=90,q=4,u=5005}),
-s(271949,86833,{b=1,cost={{"c",3350,30}},f=6,loc=44,lvl=90,q=4,u=5005}),
-s(274402,90739,{b=1,cost={{"c",3350,30}},f=6,loc=44,lvl=90,q=4,u=5005}),
-s(273922,89955,{b=1,cost={{"c",3350,45}},f=6,loc=46,lvl=90,q=4,u=5005}),
-s(271973,86861,{b=1,cost={{"c",3350,45}},f=6,loc=47,lvl=90,q=4,u=5005}),
-s(273924,89957,{b=1,cost={{"c",3350,45}},f=5,loc=40,lvl=90,q=4,u=5005}),
-s(273928,89961,{b=1,cost={{"c",3350,30}},f=5,loc=41,lvl=90,q=4,u=5005}),
-s(271953,86838,{b=1,cost={{"c",3350,45}},f=5,loc=42,lvl=90,q=4,u=5005}),
-s(271939,86821,{b=1,cost={{"c",3350,30}},f=5,loc=43,lvl=90,q=4,u=5005}),
-s(271960,86845,{cost={{"c",3350,30}},f=5,loc=43,lvl=90,q=4,u=5005}),
-s(271958,86843,{cost={{"c",3350,30}},f=5,loc=43,lvl=90,q=4,u=5005}),
-s(271950,86834,{b=1,cost={{"c",3350,30}},f=5,loc=44,lvl=90,q=4,u=5005}),
-s(272014,86912,{b=1,cost={{"c",3350,30}},f=5,loc=44,lvl=90,q=4,u=5005}),
-s(271936,86817,{b=1,cost={{"c",3350,30}},f=5,loc=44,lvl=90,q=4,u=5005}),
-s(271932,86811,{b=1,cost={{"c",3350,45}},f=5,loc=47,lvl=90,q=4,u=5005}),
-s(271971,86859,{b=1,cost={{"c",3350,45}},f=5,loc=47,lvl=90,q=4,u=5005}),
-s(271954,86839,{b=1,cost={{"c",3350,45}},f=4,loc=40,lvl=90,q=4,u=5005}),
-s(273926,89959,{b=1,cost={{"c",3350,30}},f=4,loc=41,lvl=90,q=4,u=5005}),
-s(272013,86911,{b=1,cost={{"c",3350,45}},f=4,loc=42,lvl=90,q=4,u=5005}),
-s(271934,86815,{b=1,cost={{"c",3350,30}},f=4,loc=43,lvl=90,q=4,u=5005}),
-s(271965,86850,{cost={{"c",3350,30}},f=4,loc=43,lvl=90,q=4,u=5005}),
-s(271959,86844,{cost={{"c",3350,30}},f=4,loc=43,lvl=90,q=4,u=5005}),
-s(271956,86841,{cost={{"c",3350,30}},f=4,loc=43,lvl=90,q=4,u=5005}),
-s(271945,86828,{b=1,cost={{"c",3350,30}},f=4,loc=43,lvl=90,q=4,u=5005}),
-s(271938,86819,{b=1,cost={{"c",3350,30}},f=4,loc=44,lvl=90,q=4,u=5005}),
-s(271970,86857,{b=1,cost={{"c",3350,50}},f=4,loc=45,lvl=90,q=4,u=5005}),
-s(271979,86867,{b=1,cost={{"c",3350,45}},f=4,loc=46,lvl=90,q=4,u=5005}),
-s(271942,86825,{b=1,cost={{"c",3350,45}},f=4,loc=47,lvl=90,q=4,u=5005}),
-s(271951,86836,{b=1,cost={{"c",3350,45}},f=4,loc=47,lvl=90,q=4,u=5005}),
-s(273920,89953,{b=1,cost={{"c",3350,45}},f=4,loc=47,lvl=90,q=4,u=5005}),
-i(86814,{b=1,cost={{"c",3350,30}},f=52,lvl=90,q=4,u=5005}),
-i(86851,{b=1,cost={{"c",3350,30}},f=52,lvl=90,q=4,u=5005}),
-i(86820,{b=1,cost={{"c",3350,30}},f=52,lvl=90,q=4,u=5005}),
-i(86830,{b=1,cost={{"c",3350,30}},f=52,lvl=90,q=4,u=5005}),
-i(86858,{b=1,cost={{"c",3350,30}},f=52,lvl=90,q=4,u=5005}),
-i(86813,{b=1,cost={{"c",3350,30}},f=52,lvl=90,q=4,u=5005}),
+i(89274,{b=1,c={2,5,9},cost={{"c",3350,60}},lvl=90,phase=5007,q=4}),
+i(89275,{b=1,c={1,3,7,10},cost={{"c",3350,60}},lvl=90,phase=5007,q=4}),
+i(89273,{b=1,c={4,6,8,11},cost={{"c",3350,60}},lvl=90,phase=5007,q=4}),
+i(89277,{b=1,c={2,5,9},cost={{"c",3350,50}},lvl=90,phase=5007,q=4}),
+i(89278,{b=1,c={1,3,7,10},cost={{"c",3350,50}},lvl=90,phase=5007,q=4}),
+i(89276,{b=1,c={4,6,8,11},cost={{"c",3350,50}},lvl=90,phase=5007,q=4}),
+i(89265,{b=1,c={2,5,9},cost={{"c",3350,55}},lvl=90,phase=5005,q=4}),
+i(89266,{b=1,c={1,3,7,10},cost={{"c",3350,55}},lvl=90,phase=5005,q=4}),
+i(89264,{b=1,c={4,6,8,11},cost={{"c",3350,55}},lvl=90,phase=5005,q=4}),
+i(89271,{b=1,c={2,5,9},cost={{"c",3350,50}},lvl=90,phase=5005,q=4}),
+i(89272,{b=1,c={1,3,7,10},cost={{"c",3350,50}},lvl=90,phase=5005,q=4}),
+i(89270,{b=1,c={4,6,8,11},cost={{"c",3350,50}},lvl=90,phase=5005,q=4}),
+i(89268,{b=1,c={2,5,9},cost={{"c",3350,55}},lvl=90,phase=5005,q=4}),
+i(89269,{b=1,c={1,3,7,10},cost={{"c",3350,55}},lvl=90,phase=5005,q=4}),
+i(89267,{b=1,c={4,6,8,11},cost={{"c",3350,55}},lvl=90,phase=5005,q=4}),
+s(272009,86906,{b=1,cost={{"c",3350,30}},f=25,lvl=90,phase=5007,q=4}),
+s(271991,86886,{b=1,cost={{"c",3350,30}},f=25,lvl=90,phase=5007,q=4}),
+s(272011,86909,{b=1,cost={{"c",3350,30}},f=20,lvl=90,phase=5007,q=4}),
+s(272012,86910,{b=1,cost={{"c",3350,30}},f=20,lvl=90,phase=5007,q=4}),
+s(271997,86893,{b=1,cost={{"c",3350,50}},f=28,lvl=90,phase=5007,q=4}),
+s(271987,86879,{b=1,cost={{"c",3350,50}},f=28,lvl=90,phase=5007,q=4}),
+s(272008,86905,{b=1,cost={{"c",3350,50}},f=22,lvl=90,phase=5007,q=4}),
+s(271994,86889,{b=1,cost={{"c",3350,50}},f=31,lvl=90,phase=5007,q=4}),
+i(86872,{b=1,cost={{"c",3350,30}},f=51,lvl=90,phase=5007,q=4}),
+i(86871,{b=1,cost={{"c",3350,30}},f=51,lvl=90,phase=5007,q=4}),
+s(271982,86874,{b=1,cost={{"c",3350,30}},f=3,lvl=90,phase=5007,q=4}),
+s(271989,86883,{b=1,cost={{"c",3350,30}},f=3,lvl=90,phase=5007,q=4}),
+s(271984,86876,{b=1,cost={{"c",3350,50}},f=7,loc=40,lvl=90,phase=5007,q=4}),
+s(271995,86891,{b=1,cost={{"c",3350,50}},f=7,loc=42,lvl=90,phase=5007,q=4}),
+s(271980,86868,{b=1,cost={{"c",3350,30}},f=7,loc=43,lvl=90,phase=5007,q=4}),
+s(273945,89981,{b=1,cost={{"c",3350,30}},f=7,loc=44,lvl=90,phase=5007,q=4}),
+s(272005,86902,{b=1,cost={{"c",3350,50}},f=7,loc=45,lvl=90,phase=5007,q=4}),
+s(272007,86904,{b=1,cost={{"c",3350,50}},f=7,loc=45,lvl=90,phase=5007,q=4}),
+s(272006,86903,{b=1,cost={{"c",3350,50}},f=7,loc=45,lvl=90,phase=5007,q=4}),
+s(271968,86854,{b=1,cost={{"c",3350,45}},f=7,loc=46,lvl=90,phase=5007,q=4}),
+s(273930,89963,{b=1,cost={{"c",3350,45}},f=7,loc=46,lvl=90,phase=5007,q=4}),
+s(271981,86870,{b=1,cost={{"c",3350,50}},f=7,loc=47,lvl=90,phase=5007,q=4}),
+s(271992,86887,{b=1,cost={{"c",3350,50}},f=7,loc=47,lvl=90,phase=5007,q=4}),
+s(273943,89979,{b=1,cost={{"c",3350,30}},f=6,loc=41,lvl=90,phase=5007,q=4}),
+s(271988,86882,{b=1,cost={{"c",3350,50}},f=6,loc=42,lvl=90,phase=5007,q=4}),
+s(272003,86900,{b=1,cost={{"c",3350,50}},f=6,loc=45,lvl=90,phase=5007,q=4}),
+s(272004,86901,{b=1,cost={{"c",3350,50}},f=6,loc=45,lvl=90,phase=5007,q=4}),
+s(273950,89986,{b=1,cost={{"c",3350,50}},f=6,loc=45,lvl=90,phase=5007,q=4}),
+s(271985,86877,{b=1,cost={{"c",3350,50}},f=6,loc=47,lvl=90,phase=5007,q=4}),
+s(273949,89985,{b=1,cost={{"c",3350,50}},f=5,loc=42,lvl=90,phase=5007,q=4}),
+s(273944,89980,{b=1,cost={{"c",3350,30}},f=5,loc=44,lvl=90,phase=5007,q=4}),
+s(272002,86899,{b=1,cost={{"c",3350,50}},f=5,loc=45,lvl=90,phase=5007,q=4}),
+s(272001,86898,{b=1,cost={{"c",3350,50}},f=5,loc=45,lvl=90,phase=5007,q=4}),
+s(273947,89983,{b=1,cost={{"c",3350,50}},f=5,loc=46,lvl=90,phase=5007,q=4}),
+s(273942,89978,{b=1,cost={{"c",3350,50}},f=5,loc=46,lvl=90,phase=5007,q=4}),
+s(271986,86878,{b=1,cost={{"c",3350,50}},f=5,loc=47,lvl=90,phase=5007,q=4}),
+s(273946,89982,{b=1,cost={{"c",3350,30}},f=4,loc=41,lvl=90,phase=5007,q=4}),
+s(273948,89984,{b=1,cost={{"c",3350,50}},f=4,loc=42,lvl=90,phase=5007,q=4}),
+s(271996,86892,{b=1,cost={{"c",3350,50}},f=4,loc=42,lvl=90,phase=5007,q=4}),
+s(271983,86875,{b=1,cost={{"c",3350,30}},f=4,loc=43,lvl=90,phase=5007,q=4}),
+s(271990,86884,{b=1,cost={{"c",3350,50}},f=4,loc=45,lvl=90,phase=5007,q=4}),
+s(271998,86895,{b=1,cost={{"c",3350,50}},f=4,loc=45,lvl=90,phase=5007,q=4}),
+s(271999,86896,{b=1,cost={{"c",3350,50}},f=4,loc=45,lvl=90,phase=5007,q=4}),
+s(272000,86897,{b=1,cost={{"c",3350,50}},f=4,loc=45,lvl=90,phase=5007,q=4}),
+s(272010,86908,{b=1,cost={{"c",3350,50}},f=4,loc=46,lvl=90,phase=5007,q=4}),
+s(271993,86888,{b=1,cost={{"c",3350,50}},f=4,loc=47,lvl=90,phase=5007,q=4}),
+i(86880,{b=1,cost={{"c",3350,30}},f=52,lvl=90,phase=5007,q=4}),
+i(86869,{b=1,cost={{"c",3350,30}},f=52,lvl=90,phase=5007,q=4}),
+i(86873,{b=1,cost={{"c",3350,30}},f=52,lvl=90,phase=5007,q=4}),
+i(86894,{b=1,cost={{"c",3350,50}},f=53,lvl=90,phase=5007,q=4}),
+i(86907,{b=1,cost={{"c",3350,50}},f=53,lvl=90,phase=5007,q=4}),
+i(86885,{b=1,cost={{"c",3350,50}},f=53,lvl=90,phase=5007,q=4}),
+i(86881,{b=1,cost={{"c",3350,50}},f=53,lvl=90,phase=5007,q=4}),
+i(86890,{b=1,cost={{"c",3350,50}},f=53,lvl=90,phase=5007,q=4}),
+s(271976,86864,{b=1,cost={{"c",3350,30}},f=34,lvl=90,phase=5005,q=4}),
+s(271977,86865,{b=1,cost={{"c",3350,30}},f=23,lvl=90,phase=5005,q=4}),
+s(271975,86863,{b=1,cost={{"c",3350,30}},f=25,lvl=90,phase=5005,q=4}),
+s(271974,86862,{b=1,cost={{"c",3350,30}},f=20,lvl=90,phase=5005,q=4}),
+s(271946,86829,{b=1,cost={{"c",3350,15}},f=1,lvl=90,phase=5005,q=4}),
+i(86824,{b=1,cost={{"c",3350,30}},f=51,lvl=90,phase=5005,q=4}),
+i(86856,{b=1,cost={{"c",3350,30}},f=51,lvl=90,phase=5005,q=4}),
+i(86835,{b=1,cost={{"c",3350,30}},f=51,lvl=90,phase=5005,q=4}),
+i(89952,{b=1,cost={{"c",3350,30}},f=51,lvl=90,phase=5005,q=4}),
+s(271967,86853,{b=1,cost={{"c",3350,30}},f=3,lvl=90,phase=5005,q=4}),
+s(271944,86827,{b=1,cost={{"c",3350,30}},f=3,lvl=90,phase=5005,q=4}),
+s(271933,86812,{b=1,cost={{"c",3350,30}},f=3,lvl=90,phase=5005,q=4}),
+s(271947,86831,{b=1,cost={{"c",3350,30}},f=3,lvl=90,phase=5005,q=4}),
+s(271955,86840,{b=1,cost={{"c",3350,30}},f=3,lvl=90,phase=5005,q=4}),
+s(271948,86832,{b=1,cost={{"c",3350,45}},f=7,loc=40,lvl=90,phase=5005,q=4}),
+s(273923,89956,{b=1,cost={{"c",3350,30}},f=7,loc=41,lvl=90,phase=5005,q=4}),
+s(271972,86860,{b=1,cost={{"c",3350,30}},f=7,loc=41,lvl=90,phase=5005,q=4}),
+s(271935,86816,{b=1,cost={{"c",3350,45}},f=7,loc=42,lvl=90,phase=5005,q=4}),
+s(273925,89958,{b=1,cost={{"c",3350,45}},f=7,loc=42,lvl=90,phase=5005,q=4}),
+s(271961,86846,{cost={{"c",3350,30}},f=7,loc=43,lvl=90,phase=5005,q=4}),
+s(271964,86849,{cost={{"c",3350,30}},f=7,loc=43,lvl=90,phase=5005,q=4}),
+s(271963,86848,{cost={{"c",3350,30}},f=7,loc=43,lvl=90,phase=5005,q=4}),
+s(271952,86837,{b=1,cost={{"c",3350,30}},f=7,loc=44,lvl=90,phase=5005,q=4}),
+s(271941,86823,{b=1,cost={{"c",3350,30}},f=7,loc=44,lvl=90,phase=5005,q=4}),
+s(271940,86822,{b=1,cost={{"c",3350,45}},f=7,loc=45,lvl=90,phase=5005,q=4}),
+s(273921,89954,{b=1,cost={{"c",3350,45}},f=7,loc=45,lvl=90,phase=5005,q=4}),
+s(271966,86852,{b=1,cost={{"c",3350,45}},f=7,loc=47,lvl=90,phase=5005,q=4}),
+s(271978,86866,{b=1,cost={{"c",3350,45}},f=6,loc=40,lvl=90,phase=5005,q=4}),
+s(273929,89962,{b=1,cost={{"c",3350,45}},f=6,loc=40,lvl=90,phase=5005,q=4}),
+s(271969,86855,{b=1,cost={{"c",3350,30}},f=6,loc=41,lvl=90,phase=5005,q=4}),
+s(271937,86818,{b=1,cost={{"c",3350,45}},f=6,loc=42,lvl=90,phase=5005,q=4}),
+s(273927,89960,{b=1,cost={{"c",3350,45}},f=6,loc=42,lvl=90,phase=5005,q=4}),
+s(272556,87823,{b=1,cost={{"c",3350,45}},f=6,loc=42,lvl=90,phase=5005,q=4}),
+s(271943,86826,{b=1,cost={{"c",3350,30}},f=6,loc=43,lvl=90,phase=5005,q=4}),
+s(271962,86847,{cost={{"c",3350,30}},f=6,loc=43,lvl=90,phase=5005,q=4}),
+s(271957,86842,{cost={{"c",3350,30}},f=6,loc=43,lvl=90,phase=5005,q=4}),
+s(271949,86833,{b=1,cost={{"c",3350,30}},f=6,loc=44,lvl=90,phase=5005,q=4}),
+s(274402,90739,{b=1,cost={{"c",3350,30}},f=6,loc=44,lvl=90,phase=5005,q=4}),
+s(273922,89955,{b=1,cost={{"c",3350,45}},f=6,loc=46,lvl=90,phase=5005,q=4}),
+s(271973,86861,{b=1,cost={{"c",3350,45}},f=6,loc=47,lvl=90,phase=5005,q=4}),
+s(273924,89957,{b=1,cost={{"c",3350,45}},f=5,loc=40,lvl=90,phase=5005,q=4}),
+s(273928,89961,{b=1,cost={{"c",3350,30}},f=5,loc=41,lvl=90,phase=5005,q=4}),
+s(271953,86838,{b=1,cost={{"c",3350,45}},f=5,loc=42,lvl=90,phase=5005,q=4}),
+s(271939,86821,{b=1,cost={{"c",3350,30}},f=5,loc=43,lvl=90,phase=5005,q=4}),
+s(271960,86845,{cost={{"c",3350,30}},f=5,loc=43,lvl=90,phase=5005,q=4}),
+s(271958,86843,{cost={{"c",3350,30}},f=5,loc=43,lvl=90,phase=5005,q=4}),
+s(271950,86834,{b=1,cost={{"c",3350,30}},f=5,loc=44,lvl=90,phase=5005,q=4}),
+s(272014,86912,{b=1,cost={{"c",3350,30}},f=5,loc=44,lvl=90,phase=5005,q=4}),
+s(271936,86817,{b=1,cost={{"c",3350,30}},f=5,loc=44,lvl=90,phase=5005,q=4}),
+s(271932,86811,{b=1,cost={{"c",3350,45}},f=5,loc=47,lvl=90,phase=5005,q=4}),
+s(271971,86859,{b=1,cost={{"c",3350,45}},f=5,loc=47,lvl=90,phase=5005,q=4}),
+s(271954,86839,{b=1,cost={{"c",3350,45}},f=4,loc=40,lvl=90,phase=5005,q=4}),
+s(273926,89959,{b=1,cost={{"c",3350,30}},f=4,loc=41,lvl=90,phase=5005,q=4}),
+s(272013,86911,{b=1,cost={{"c",3350,45}},f=4,loc=42,lvl=90,phase=5005,q=4}),
+s(271934,86815,{b=1,cost={{"c",3350,30}},f=4,loc=43,lvl=90,phase=5005,q=4}),
+s(271965,86850,{cost={{"c",3350,30}},f=4,loc=43,lvl=90,phase=5005,q=4}),
+s(271959,86844,{cost={{"c",3350,30}},f=4,loc=43,lvl=90,phase=5005,q=4}),
+s(271956,86841,{cost={{"c",3350,30}},f=4,loc=43,lvl=90,phase=5005,q=4}),
+s(271945,86828,{b=1,cost={{"c",3350,30}},f=4,loc=43,lvl=90,phase=5005,q=4}),
+s(271938,86819,{b=1,cost={{"c",3350,30}},f=4,loc=44,lvl=90,phase=5005,q=4}),
+s(271970,86857,{b=1,cost={{"c",3350,50}},f=4,loc=45,lvl=90,phase=5005,q=4}),
+s(271979,86867,{b=1,cost={{"c",3350,45}},f=4,loc=46,lvl=90,phase=5005,q=4}),
+s(271942,86825,{b=1,cost={{"c",3350,45}},f=4,loc=47,lvl=90,phase=5005,q=4}),
+s(271951,86836,{b=1,cost={{"c",3350,45}},f=4,loc=47,lvl=90,phase=5005,q=4}),
+s(273920,89953,{b=1,cost={{"c",3350,45}},f=4,loc=47,lvl=90,phase=5005,q=4}),
+i(86814,{b=1,cost={{"c",3350,30}},f=52,lvl=90,phase=5005,q=4}),
+i(86851,{b=1,cost={{"c",3350,30}},f=52,lvl=90,phase=5005,q=4}),
+i(86820,{b=1,cost={{"c",3350,30}},f=52,lvl=90,phase=5005,q=4}),
+i(86830,{b=1,cost={{"c",3350,30}},f=52,lvl=90,phase=5005,q=4}),
+i(86858,{b=1,cost={{"c",3350,30}},f=52,lvl=90,phase=5005,q=4}),
+i(86813,{b=1,cost={{"c",3350,30}},f=52,lvl=90,phase=5005,q=4}),
 s(271878,86741,{b=1,cost={{"c",3350,25}},f=20,lvl=90,q=4}),
 s(271916,86789,{b=1,cost={{"c",3350,25}},f=21,lvl=90,q=4}),
 s(271897,86762,{b=1,cost={{"c",3350,25}},f=34,lvl=90,q=4}),
@@ -4007,7 +4007,7 @@ n(258121,_.ResolveQuestData({aqd=
 {coords={
 [394]={{42.6,50.2}}},maps={393}},awp=50503,hqd=
 {coords={
-[392]={{42.6,84.4}}},maps={391}},u=5201,g={
+[392]={{42.6,84.4}}},maps={391}},phase=5201,g={
 cu(3350,{cost={{"c",3414,1}}}),
 i(247796,{b=1,cost={{"c",3350,5}},q=4,g={
 cu(395)}}),
@@ -4309,7 +4309,7 @@ n(267317,_.ResolveQuestData({aqd=
 {coords={
 [394]={{49.4,75.2}}},maps={393}},awp=50504,hqd=
 {coords={
-[392]={{43.8,42.4}}},maps={391}},u=5401,g={
+[392]={{43.8,42.4}}},maps={391}},phase=5401,g={
 cu(3414,{cost={{"c",3416,1}}}),
 i(247796,{b=1,cost={{"c",3416,2}},q=4,g={
 cu(395)}}),
@@ -4641,7 +4641,7 @@ i(87208,{b=1,cost={{"c",3416,15}},q=5}),
 i(87209,{b=1,cost={{"c",3416,15}},q=5})}}))})}}),
 h(-657,_.ResolveQuestData({aqd=
 {icon=464076},awp=50100,hqd=
-{icon=464078},maps={418},u=51,g={
+{icon=464078},maps={418},phase=51,g={
 h(-12,{
 ach(8206,{r=1}),
 ach(7929,{r=1}),
@@ -5161,91 +5161,91 @@ mnt(135418,{b=1,cost=20000000,itemID=93169,lvl=80,minReputation={1375,42000},q=4
 h(-417,{isRaid=1,maps={433},rwp=60002,g={
 q(31488,{c={1,2,3,5,6,7,8,9,10,11},coords={
 [391]={{59.6,75.8}},
-[393]={{36.6,76.6}}},qgs={64047,64144},u=50}),
+[393]={{36.6,76.6}}},phase=50,qgs={64047,64144}}),
 q(31489,{c={4},coords={
 [391]={{59.6,75.8}},
-[393]={{36.6,76.6}}},qgs={64047,64144},u=50}),
+[393]={{36.6,76.6}}},phase=50,qgs={64047,64144}}),
 q(31454,{coords={
-[433]={{54.6,72.6}}},qgs={64616},sourceQuests={31488,31489},sqreq=1,u=50}),
+[433]={{54.6,72.6}}},phase=50,qgs={64616},sourceQuests={31488,31489},sqreq=1}),
 q(31468,{coords={
-[433]={{54.6,72.6}}},minReputation={1359,9000},qgs={64616},sourceQuests={31454},u=50}),
+[433]={{54.6,72.6}}},minReputation={1359,9000},phase=50,qgs={64616},sourceQuests={31454}}),
 q(31473,{coords={
-[433]={{54.6,72.6}}},maps={456,471,472,473,474,475},qgs={64616},sourceQuests={31454},u=50,g={
+[433]={{54.6,72.6}}},maps={456,471,472,473,474,475},phase=50,qgs={64616},sourceQuests={31454},g={
 qo(1,{providers={{"i",87208}}}),
 qo(2,{providers={{"i",87209}}})}}),
 q(31481,{coords={
-[433]={{54.6,72.6}}},maps={456},qgs={64616},sourceQuests={31468,31473},u=50,g={
+[433]={{54.6,72.6}}},maps={456},phase=50,qgs={64616},sourceQuests={31468,31473},g={
 qo(1,{providers={{"i",87210}}})}}),
 q(91786,{coords={
-[433]={{54.6,72.6}}},maps={429},qgs={64616},sourceQuests={31468,31473},u=50,g={
+[433]={{54.6,72.6}}},maps={429},phase=50,qgs={64616},sourceQuests={31468,31473},g={
 qo(1,{providers={{"i",248204}}})}}),
 q(31482,{coords={
-[433]={{54.6,72.6}}},qgs={64616},sourceQuests={31481},u=50,g={
+[433]={{54.6,72.6}}},phase=50,qgs={64616},sourceQuests={31481},g={
 ach(7533),
 i(89873,{b=1,q=5,sourceAchievements={7533}}),
 i(89882,{b=1,q=5,sourceAchievements={7533}}),
 i(89881,{b=1,q=5,sourceAchievements={7533}})}}),
 q(31483,{coords={
-[433]={{54.6,72.6}}},isBreadcrumb=1,nextQuests={32246,32249},qgs={64616},sourceQuests={31482},u=50}),
+[433]={{54.6,72.6}}},isBreadcrumb=1,nextQuests={32246,32249},phase=50,qgs={64616},sourceQuests={31482}}),
 q(32373,{awp=50100,coords={
-[433]={{54.6,72.6}}},qgs={64616},r=2,sourceQuests={31482,32109},u=51}),
+[433]={{54.6,72.6}}},phase=51,qgs={64616},r=2,sourceQuests={31482,32109}}),
 q(32427,{awp=50100,coords={
-[433]={{54.6,72.6}}},qgs={64616},r=1,sourceQuests={31482,32108},u=51}),
+[433]={{54.6,72.6}}},phase=51,qgs={64616},r=1,sourceQuests={31482,32108}}),
 q(32374,{awp=50100,coords={
-[433]={{54.6,72.6}}},qgs={64616},r=2,sourceQuests={32373},u=51}),
+[433]={{54.6,72.6}}},phase=51,qgs={64616},r=2,sourceQuests={32373}}),
 q(32429,{awp=50100,coords={
-[433]={{54.6,72.6}}},qgs={64616},r=1,sourceQuests={32427},u=51}),
+[433]={{54.6,72.6}}},phase=51,qgs={64616},r=1,sourceQuests={32427}}),
 q(32474,{awp=50100,coords={
-[433]={{54.6,72.6}}},cost={{"c",396,1600}},qgs={64616},r=2,sourceQuests={32373},u=51,g={
+[433]={{54.6,72.6}}},cost={{"c",396,1600}},phase=51,qgs={64616},r=2,sourceQuests={32373},g={
 ach(8030,{r=2})}}),
 q(32476,{awp=50100,coords={
-[433]={{54.6,72.6}}},cost={{"c",396,1600}},qgs={64616},r=1,sourceQuests={32427},u=51,g={
+[433]={{54.6,72.6}}},cost={{"c",396,1600}},phase=51,qgs={64616},r=1,sourceQuests={32427},g={
 ach(8031,{r=1})}}),
 q(32388,{awp=50100,coords={
-[433]={{54.6,72.6}}},qgs={64616},r=2,sourceQuests={32374,32474},u=51}),
+[433]={{54.6,72.6}}},phase=51,qgs={64616},r=2,sourceQuests={32374,32474}}),
 q(32430,{awp=50100,coords={
-[433]={{54.6,72.6}}},qgs={64616},r=1,sourceQuests={32429,32476},u=51}),
+[433]={{54.6,72.6}}},phase=51,qgs={64616},r=1,sourceQuests={32429,32476}}),
 q(32389,{awp=50100,coords={
-[433]={{54.6,72.6}}},pvp=1,qgs={64616},r=2,sourceQuests={32374,32474},u=51}),
+[433]={{54.6,72.6}}},phase=51,pvp=1,qgs={64616},r=2,sourceQuests={32374,32474}}),
 q(32431,{awp=50100,coords={
-[433]={{54.6,72.6}}},pvp=1,qgs={64616},r=1,sourceQuests={32429,32476},u=51}),
+[433]={{54.6,72.6}}},phase=51,pvp=1,qgs={64616},r=1,sourceQuests={32429,32476}}),
 q(32390,{awp=50100,coords={
-[433]={{54.6,72.6}}},qgs={64616},r=2,sourceQuests={32388,32389},u=51,g={
+[433]={{54.6,72.6}}},phase=51,qgs={64616},r=2,sourceQuests={32388,32389},g={
 ach(7534),
 i(93403,{b=1,q=5,sourceAchievements={7534,8008}})}}),
 q(32432,{awp=50100,coords={
-[433]={{54.6,72.6}}},qgs={64616},r=1,sourceQuests={32430,32431},u=51,g={
+[433]={{54.6,72.6}}},phase=51,qgs={64616},r=1,sourceQuests={32430,32431},g={
 ach(8008),
 i(93403,{b=1,q=5,sourceAchievements={7534,8008}})}}),
 q(32457,{awp=50100,coords={
-[433]={{54.6,72.6}}},isBreadcrumb=1,qgs={64616},sourceQuests={32390,32432},u=51}),
+[433]={{54.6,72.6}}},isBreadcrumb=1,phase=51,qgs={64616},sourceQuests={32390,32432}}),
 q(32590,{awp=50200,coords={
-[433]={{54.6,72.6}}},qgs={64616},sourceQuests={32390,32432},u=52}),
+[433]={{54.6,72.6}}},phase=52,qgs={64616},sourceQuests={32390,32432}}),
 q(32592,{awp=50200,coords={
-[433]={{54.6,72.6}}},minReputation={1359,42000},qgs={69782},sourceQuests={32590},u=52}),
+[433]={{54.6,72.6}}},minReputation={1359,42000},phase=52,qgs={69782},sourceQuests={32590}}),
 q(32591,{awp=50200,coords={
-[433]={{54.6,72.6}}},cost={{"i",72095,40}},qgs={69782},sourceQuests={32590},u=52}),
+[433]={{54.6,72.6}}},cost={{"i",72095,40}},phase=52,qgs={69782},sourceQuests={32590}}),
 q(32593,{awp=50200,coords={
-[433]={{54.6,72.6}}},qgs={69782},sourceQuests={32591,32592},u=52}),
+[433]={{54.6,72.6}}},phase=52,qgs={69782},sourceQuests={32591,32592}}),
 q(32594,{awp=50200,coords={
-[504]={{60,28.6}}},qgs={70100},sourceQuests={32593},u=52}),
+[504]={{60,28.6}}},phase=52,qgs={70100},sourceQuests={32593}}),
 q(32595,{awp=50200,coords={
-[433]={{54.6,72.6}}},qgs={69782},sourceQuests={32594},u=52,g={
+[433]={{54.6,72.6}}},phase=52,qgs={69782},sourceQuests={32594},g={
 i(95346,{b=1,q=5,sourceQuests={32595}}),
 i(95345,{b=1,q=5,sourceQuests={32595}}),
 i(95344,{b=1,q=5,sourceQuests={32595}}),
 i(95347,{b=1,q=5,sourceQuests={32595}})}}),
 q(32596,{awp=50200,coords={
-[433]={{75.2,76.4}}},maps={508,509,510,511,512,513,514,515},qgs={70476},sourceQuests={32595},u=52}),
+[433]={{75.2,76.4}}},maps={508,509,510,511,512,513,514,515},phase=52,qgs={70476},sourceQuests={32595}}),
 q(32597,{awp=50200,coords={
-[433]={{54.6,72.6}}},maps={508,509,510,511,512,513,514,515},qgs={69782},sourceQuests={32595},u=52,g={
+[433]={{54.6,72.6}}},maps={508,509,510,511,512,513,514,515},phase=52,qgs={69782},sourceQuests={32595},g={
 ach(7535)}}),
 q(32598,{awp=50200,coords={
-[433]={{54.6,72.6}}},isBreadcrumb=1,qgs={69782},sourceQuests={32596,32597},u=52}),
+[433]={{54.6,72.6}}},isBreadcrumb=1,phase=52,qgs={69782},sourceQuests={32596,32597}}),
 q(32805,{awp=50300,coords={
-[433]={{54.6,72.6}}},qgs={69782},sourceQuests={32596,32597},u=53}),
+[433]={{54.6,72.6}}},phase=53,qgs={69782},sourceQuests={32596,32597}}),
 q(32861,{awp=50300,coords={
-[433]={{73.2,79.6}}},qgs={71424},sourceQuests={32805},u=53,g={
+[433]={{73.2,79.6}}},phase=53,qgs={71424},sourceQuests={32805},g={
 ach(7536),
 s(279147,98149,{b=1,f=3,lvl=90,q=4,sourceAchievements={7536}}),
 s(279148,98150,{b=1,f=3,lvl=90,q=4,sourceAchievements={7536}}),
@@ -5254,25 +5254,25 @@ s(279144,98146,{b=1,f=3,lvl=90,q=4,sourceAchievements={7536}}),
 s(279145,98147,{b=1,f=3,lvl=90,q=4,sourceAchievements={7536}}),
 s(279146,98148,{b=1,f=3,lvl=90,q=4,sourceAchievements={7536}})}}),
 q(32870,{awp=50300,coords={
-[433]={{73.2,79.6}}},isBreadcrumb=1,nextQuests={33088},qgs={71426},sourceQuests={32805},u=53}),
+[433]={{73.2,79.6}}},isBreadcrumb=1,nextQuests={33088},phase=53,qgs={71426},sourceQuests={32805}}),
 q(33088,{awp=50400,coords={
-[433]={{54.6,72.6}}},qgs={69782},sourceQuests={32870},u=54}),
+[433]={{54.6,72.6}}},phase=54,qgs={69782},sourceQuests={32870}}),
 q(33098,{awp=50400,coords={
-[554]={{34.6,53.8}}},cost={{"c",777,5000}},qgs={72695},sourceQuests={33088},u=54}),
+[554]={{34.6,53.8}}},cost={{"c",777,5000}},phase=54,qgs={72695},sourceQuests={33088}}),
 q(33100,{awp=50400,coords={
-[554]={{34.6,53.8}}},qgs={72695},sourceQuests={33088},u=54}),
+[554]={{34.6,53.8}}},phase=54,qgs={72695},sourceQuests={33088}}),
 q(33104,{awp=50400,coords={
-[554]={{34.6,53.8}}},qgs={72695},sourceQuests={33098,33100},u=54,g={
+[554]={{34.6,53.8}}},phase=54,qgs={72695},sourceQuests={33098,33100},g={
 i(102457,{b=1,f=55,q=1,sourceAchievements={8325}})}}),
 q(33105,{awp=50400,coords={
-[390]={{83.2,29.6}}},maps={557,558,559,560,561,562,563,564,565,566,567,568,569,570},qgs={72723},sourceQuests={33104},u=54,g={
+[390]={{83.2,29.6}}},maps={557,558,559,560,561,562,563,564,565,566,567,568,569,570},phase=54,qgs={72723},sourceQuests={33104},g={
 ach(8325)}}),
-s(281858,102248,{awp=50400,b=1,cost={{"i",102457,1},{"i",98148,1}},f=3,lvl=90,q=5,u=54}),
-s(281859,102249,{awp=50400,b=1,cost={{"i",102457,1},{"i",98147,1}},f=3,lvl=90,q=5,u=54}),
-s(281857,102247,{awp=50400,b=1,cost={{"i",102457,1},{"i",98149,1}},f=3,lvl=90,q=5,u=54}),
-s(281855,102245,{awp=50400,b=1,cost={{"i",102457,1},{"i",98335,1}},f=3,lvl=90,q=5,u=54}),
-s(281860,102250,{awp=50400,b=1,cost={{"i",102457,1},{"i",98146,1}},f=3,lvl=90,q=5,u=54}),
-s(281856,102246,{awp=50400,b=1,cost={{"i",102457,1},{"i",98150,1}},f=3,lvl=90,q=5,u=54})}}),
+s(281858,102248,{awp=50400,b=1,cost={{"i",102457,1},{"i",98148,1}},f=3,lvl=90,phase=54,q=5}),
+s(281859,102249,{awp=50400,b=1,cost={{"i",102457,1},{"i",98147,1}},f=3,lvl=90,phase=54,q=5}),
+s(281857,102247,{awp=50400,b=1,cost={{"i",102457,1},{"i",98149,1}},f=3,lvl=90,phase=54,q=5}),
+s(281855,102245,{awp=50400,b=1,cost={{"i",102457,1},{"i",98335,1}},f=3,lvl=90,phase=54,q=5}),
+s(281860,102250,{awp=50400,b=1,cost={{"i",102457,1},{"i",98146,1}},f=3,lvl=90,phase=54,q=5}),
+s(281856,102246,{awp=50400,b=1,cost={{"i",102457,1},{"i",98150,1}},f=3,lvl=90,phase=54,q=5})}}),
 ah(1271,{description="Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount. More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",icon=646324,lvl=90,maps={371},type="fa",g={
 h(-12,{
 ach(6550)}),
@@ -5447,7 +5447,7 @@ q(31706,{coords={
 qo(1,{coords={
 [374]={{56.8,72.7}}},providers={{"n",65622},{"n",65653}}})}}),
 q(33250,{awp=50400,coords={
-[371]={{57.6,44.8}}},cost={{"i",104286,1}},OnUpdate=_.OnUpdateDB.OnUpdateRRQCR1000,qgs={58564},repeatable=1,u=54}),
+[371]={{57.6,44.8}}},cost={{"i",104286,1}},OnUpdate=_.OnUpdateDB.OnUpdateRRQCR1000,phase=54,qgs={58564},repeatable=1}),
 q(30135,{coords={
 [371]={{65.3,31.6}}},qgs={58225},sourceQuests={30134},g={
 qo(1,{coords={
@@ -5646,7 +5646,7 @@ s(273684,89574,{b=1,c={10},f=34,lvl=70,q=2}),
 s(273685,89575,{b=1,c={10},f=34,lvl=80,q=2})}}),
 n(64978,{coords={
 [379]={{45.2,43.2}}}})})}}),
-h(-419,{maps={480},u=54,g={
+h(-419,{maps={480},phase=54,g={
 h(-12,{
 ach(8507,{awp=50400,rwp=60002,g={
 title(215)}}),
@@ -5670,7 +5670,7 @@ ach(8497,{awp=50400,rwp=60002}),
 ach(8492,{awp=50400,rwp=60002}),
 ach(8487,{awp=50400,rwp=60002}),
 ach(8697,{awp=50400,rwp=60002})})}}),
-h(-420,{lvl=90,u=50,g={
+h(-420,{lvl=90,g={
 h(-12,{
 ach(7385,{
 toy(87528,{b=1,lvl=90,q=3})}),
@@ -5684,7 +5684,7 @@ h(-12,{
 ach(7252,{providers={{"n",58739}}}),
 ach(7257,{providers={{"n",58739}},g={
 crit(20686,{achID=7385,id=7})}}),
-ach(8310,{awp=50300,providers={{"n",58739}},u=53}),
+ach(8310,{awp=50300,phase=53,providers={{"n",58739}}}),
 ach(7261,{providers={{"s",114876}},g={
 crit(20688,{achID=7385,id=9})}}),
 ach(7258,{providers={{"s",127411}},g={
@@ -5725,11 +5725,11 @@ s(274266,90462,{b=1,f=28,q=3}),
 s(274265,90461,{b=1,f=23,q=3}),
 s(274264,90460,{b=1,f=33,q=3}),
 s(274263,90459,{b=1,f=20,q=3})}})})}),
-m(451,{awp=50100,u=50,g={
+m(451,{awp=50100,g={
 h(-12,{awp=50004,g={
 ach(8016,{providers={{"n",67879}}}),
 ach(8017,{providers={{"n",67879}}})}})}}),
-m(524,{awp=50300,u=53,g={
+m(524,{awp=50300,phase=53,g={
 h(-12,{awp=50004,g={
 ach(8314,{providers={{"n",67426}},r=2}),
 ach(8315,{providers={{"n",71327}},r=1}),
@@ -5763,7 +5763,7 @@ h(-45,{
 q(31611,{coords={
 [379]={{72.6,93}},
 [433]={{51,43.73}}},description="If you don't see questgiver in The Veiled Stair, look in the Binan Village to the north.",lvl=90,qgs={63367}})})}),
-m(523,{awp=50300,u=53,g={
+m(523,{awp=50300,phase=53,g={
 h(-12,{awp=50004,g={
 ach(8316),
 ach(8329,{providers={{"s",127327}}}),
@@ -5774,17 +5774,17 @@ h(-12,{
 ach(7522,{providers={{"n",61707}}}),
 ach(7276,{providers={{"n",61707}}}),
 ach(8368,{awp=50300,providers={{"s",143316}}}),
-ach(8311,{awp=50300,providers={{"n",61707}},u=53}),
+ach(8311,{awp=50300,phase=53,providers={{"n",61707}}}),
 ach(7275),
 crit(21503,{achID=6874,r=2}),
 crit(21503,{achID=7509,r=1})})}}),
-m(488,{awp=50100,maps={489},u=51,g={
+m(488,{awp=50100,maps={489},phase=51,g={
 h(-12,{awp=50004,g={
 ach(8009),
 ach(7987,{providers={{"n",67264}}}),
 ach(7986,{providers={{"n",67266}}}),
 ach(7984,{providers={{"n",67263}}})}})}}),
-m(498,{awp=50100,maps={486},u=51,petBattleLvl=23,g={
+m(498,{awp=50100,maps={486},phase=51,petBattleLvl=23,g={
 h(-12,{awp=50004,g={
 ach(8013,{r=1}),
 ach(8010,{r=2}),
@@ -5806,7 +5806,7 @@ crit(22523,{achID=8015,id=4,providers={{"s",132960}},r=1}),
 crit(22524,{achID=8015,id=5,providers={{"s",132952}},r=1}),
 crit(22526,{achID=8015,id=6,providers={{"s",132958}},r=1}),
 crit(22527,{achID=8015,id=7,providers={{"s",132959}},r=1})}})}})}}),
-m(520,{awp=50300,maps={521},u=53,g={
+m(520,{awp=50300,maps={521},phase=53,g={
 h(-12,{awp=50004,g={
 ach(8319,{providers={{"s",143408}}}),
 ach(8317,{providers={{"n",71123}}}),
@@ -5823,7 +5823,7 @@ crit(21500,{achID=7509,r=1})}),
 h(-45,{
 q(31613,{coords={
 [371]={{47.4,37}}},lvl=90,qgs={62321}})})}),
-m(522,{awp=50300,u=53,g={
+m(522,{awp=50300,phase=53,g={
 h(-12,{awp=50004,g={
 ach(8327,{providers={{"n",71030}}}),
 ach(8295,{providers={{"n",71030}}}),
@@ -5864,7 +5864,7 @@ h(-56,{
 o(212278,{
 crit(20585,{achID=7248,id=7})})})}),
 h(-47,{
-ah(89613,{description="Rewarded for completing a random scenario.",OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=50 t.rwp=50100 end	end,providers={{"i",89613}},rwp=50100,type="i",u=2,g={
+ah(89613,{description="Rewarded for completing a random scenario.",OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50100 end	end,phase=50,providers={{"i",89613}},rwp=50100,type="i",u=2,g={
 h(-89,{
 s(273634,89503,{b=1,f=3,lvl=90,q=3}),
 s(273632,89501,{b=1,f=3,lvl=90,q=3}),
@@ -5948,7 +5948,7 @@ s(273579,89448,{b=1,f=7,loc=46,lvl=90,q=3}),
 s(273580,89449,{b=1,f=7,loc=41,lvl=90,q=3}),
 s(273581,89450,{b=1,f=7,loc=47,lvl=90,q=3}),
 s(273582,89451,{b=1,f=7,loc=43,lvl=90,q=3})})}}),
-ah(92813,{awp=50100,OnUpdate=function(t)if settings:GetUnobtainableFilter(53)then	t.u=2 t.rwp=nil else	t.u=51 t.rwp=50300 end	end,providers={{"i",92813}},rwp=50300,type="i",u=2,g={
+ah(92813,{awp=50100,OnUpdate=function(t)if settings:GetUnobtainableFilter(53)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50300 end	end,phase=51,providers={{"i",92813}},rwp=50300,type="i",u=2,g={
 h(-89,{awp=50004,g={
 s(275676,92881,{b=1,f=3,lvl=90,q=3}),
 s(273634,89503,{b=1,f=3,lvl=90,q=3}),
@@ -6203,7 +6203,7 @@ s(275784,93126,{b=1,f=28,lvl=90,q=3}),
 s(275787,93129,{b=1,f=28,lvl=90,q=3}),
 s(275794,93136,{b=1,f=25,lvl=90,q=3}),
 s(275791,93133,{b=1,f=27,lvl=90,q=3})}})}}),
-ah(98133,{awp=50300,description="Rewarded for completing |cFFFFD700The King and the Council|r and |cFFFFD700The Warchief and the Darkness|r quests.",providers={{"i",98133}},type="i",u=53,g={
+ah(98133,{awp=50300,description="Rewarded for completing |cFFFFD700The King and the Council|r and |cFFFFD700The Warchief and the Darkness|r quests.",phase=53,providers={{"i",98133}},type="i",g={
 h(-45,{awp=50004,g={
 i(97979,{awp=50300,b=1,lvl=90,q=1,rwp=70003}),
 i(97982,{awp=50300,b=1,lvl=90,q=1,rwp=70003})}}),
@@ -6461,7 +6461,7 @@ s(275784,93126,{b=1,f=28,lvl=90,q=3}),
 s(275787,93129,{b=1,f=28,lvl=90,q=3}),
 s(275794,93136,{b=1,f=25,lvl=90,q=3}),
 s(275791,93133,{b=1,f=27,lvl=90,q=3})}})}}),
-ah(98546,{awp=50300,description="Rewarded for completing |cFFFFD700Heroic Deeds|r quest.",providers={{"i",98546}},type="i",u=53,g={
+ah(98546,{awp=50300,description="Rewarded for completing |cFFFFD700Heroic Deeds|r quest.",phase=53,providers={{"i",98546}},type="i",g={
 h(-89,{awp=50004,g={
 s(279215,98237,{b=1,f=3,lvl=90,q=4}),
 s(279206,98226,{b=1,f=3,lvl=90,q=4}),
@@ -6593,10 +6593,10 @@ s(279258,98316,{b=1,f=25,lvl=90,q=4}),
 s(279241,98268,{b=1,f=27,lvl=90,q=4}),
 s(279262,98320,{b=1,f=27,lvl=90,q=4})}})}})}),
 h(-49,{
-i(89613,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=50 t.rwp=50100 end	end,q=3,rwp=50100,u=2}),
-i(92813,{awp=50100,b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(53)then	t.u=2 t.rwp=nil else	t.u=51 t.rwp=50300 end	end,q=3,rwp=50300,u=2}),
-i(98133,{awp=50300,b=1,q=3,rwp=90001,u=53}),
-i(98134,{awp=50300,b=1,q=4,rwp=90001,sym={{"select","itemID",98546},{"groupfill"}},u=53})}),
+i(89613,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50100 end	end,phase=50,q=3,rwp=50100,u=2}),
+i(92813,{awp=50100,b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(53)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50300 end	end,phase=51,q=3,rwp=50300,u=2}),
+i(98133,{awp=50300,b=1,phase=53,q=3,rwp=90001}),
+i(98134,{awp=50300,b=1,phase=53,q=4,rwp=90001,sym={{"select","itemID",98546},{"groupfill"}}})}),
 flt(110,{
 title(224,{collectible=false}),
 title(226,{collectible=false})})}}),
@@ -6700,8 +6700,8 @@ heir(93225,{b=2,f=55,factionID=1302,minReputation={1302,21000},q=7}),
 s(273085,88535,{b=1,cost=12750000,f=2,minReputation={1302,21000},q=3}),
 s(273536,89401,{b=1,f=9,minReputation={1302,42000},q=3}),
 mnt(118089,{b=1,cost=9500000,itemID=81354,lvl=90,minReputation={1302,42000},q=4}),
-r(110410,{learnedAt=500,rank=8,requireSkill=356,rwp=80001,u=51}),
-r(7738,{requireSkill=356,u=51}),
+r(110410,{learnedAt=500,phase=51,rank=8,requireSkill=356,rwp=80001}),
+r(7738,{phase=51,requireSkill=356}),
 toy(86596,{b=1,minReputation={1358,6},q=3}),
 s(273193,88710,{b=1,f=2,loc=40,minReputation={1358,6},q=4})}})})}}),
 ah(1341,{description="Each day, the August Celestials require your aid at one of their temples. Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",icon=645203,lvl=90,type="fa",g={
@@ -6954,7 +6954,7 @@ ach(7323,{coords={
 [390]={{24.4,28}}},description="You need to be on or near someone on the quest That's Not a Rock! in order to activate the mogu statues so that they'll engage you and use their special ability.",providers={{"n",63447},{"n",65170}}}),
 ach(7320,{coords={
 [390]={{19.6,74.2}}},providers={{"n",58992}}}),
-ach(7315,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,rwp=50400,u=2}),
+ach(7315,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,rwp=50400,u=2}),
 ach(7317,{
 crit(20527,{achID=7317,id=11,providers={{"n",63509}}})}),
 ach(7324),
@@ -6969,243 +6969,243 @@ crit(22174,{achID=7297}),
 crit(109535,{achID=7297,id=7})}})}),
 h(-45,{
 q(31755,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30312},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58468},rwp=50400,u=2,g={
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30312},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58468},rwp=50400,u=2,g={
 qo(1,{coords={
-[390]={{49.4,21.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63934},{"n",63935},{"n",65804},{"n",65817},{"n",65818}},u=2})}}),
+[390]={{49.4,21.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63934},{"n",63935},{"n",65804},{"n",65817},{"n",65818}},u=2})}}),
 q(31754,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30320,"questID",31756,"questID",31758},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58471},rwp=50400,u=2,g={
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30320,"questID",31756,"questID",31758},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58471},rwp=50400,u=2,g={
 qo(1,{coords={
-[390]={{51.6,25}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",89123},{"n",65762}},u=2})}}),
+[390]={{51.6,25}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",89123},{"n",65762}},u=2})}}),
 q(31762,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",31760},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,u=2,g={
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",31760},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,u=2,g={
 qo(1,{coords={
-[390]={{47,29.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",65824}},u=2})}}),
+[390]={{47,29.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",65824}},u=2})}}),
 q(30320,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",31754,"questID",31756,"questID",31758},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58468},rwp=50400,u=2,g={
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",31754,"questID",31756,"questID",31758},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58468},rwp=50400,u=2,g={
 qo(1,{coords={
-[390]={{41.1,22.6}}},crs={59219},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",89297},{"n",59231}},u=2})}}),
+[390]={{41.1,22.6}}},crs={59219},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",89297},{"n",59231}},u=2})}}),
 q(30312,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",31755},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58468},rwp=50400,u=2,g={
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",31755},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58468},rwp=50400,u=2,g={
 qo(1,{coords={
-[390]={{53.2,28}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",84242},{"n",59183}},u=2})}}),
+[390]={{53.2,28}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",84242},{"n",59183}},u=2})}}),
 q(31756,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30320,"questID",31754,"questID",31758},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58471},rwp=50400,u=2,g={
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30320,"questID",31754,"questID",31758},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58471},rwp=50400,u=2,g={
 qo(1,{coords={
-[390]={{51,22.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"o",214895}},u=2}),
+[390]={{51,22.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"o",214895}},u=2}),
 qo(2,{coords={
-[390]={{47.8,19}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"o",214899}},u=2}),
+[390]={{47.8,19}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"o",214899}},u=2}),
 qo(3,{coords={
-[390]={{43.1,27.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"o",214900}},u=2}),
+[390]={{43.1,27.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"o",214900}},u=2}),
 qo(4,{coords={
-[390]={{36.8,18.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"o",214901}},u=2})}}),
+[390]={{36.8,18.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"o",214901}},u=2})}}),
 q(31758,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30320,"questID",31754,"questID",31756},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58471},rwp=50400,u=2,g={
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30320,"questID",31754,"questID",31756},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58471},rwp=50400,u=2,g={
 qo(1,{coords={
-[390]={{43,22.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",65868},{"o",213289}},u=2})}}),
+[390]={{43,22.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",65868},{"o",213289}},u=2})}}),
 q(30309,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30308,"questID",30310,"questID",31757},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,u=2,g={
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30308,"questID",30310,"questID",31757},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,u=2,g={
 qo(1,{coords={
-[390]={{45.4,23.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",59156}},u=2})}}),
+[390]={{45.4,23.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",59156}},u=2})}}),
 q(31760,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",31762},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,u=2,g={
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",31762},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,u=2,g={
 qo(1,{coords={
-[390]={{44,16}}},crs={65978},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",65962}},u=2})}}),
+[390]={{44,16}}},crs={65978},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",65962}},u=2})}}),
 q(30308,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30309,"questID",30310,"questID",31757},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,u=2,g={
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30309,"questID",30310,"questID",31757},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,u=2,g={
 qo(1,{coords={
-[390]={{46,23.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",59157}},u=2})}}),
+[390]={{46,23.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",59157}},u=2})}}),
 q(30307,{coords={
-[390]={{56.6,43.6}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,u=2,g={
+[390]={{56.6,43.6}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,u=2,g={
 qo(1,{coords={
-[390]={{46.4,23.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58412},{"n",58460},{"n",65810}},u=2})}}),
+[390]={{46.4,23.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58412},{"n",58460},{"n",65810}},u=2})}}),
 q(30310,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30308,"questID",30309,"questID",31757},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,u=2,g={
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30308,"questID",30309,"questID",31757},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,u=2,g={
 qo(1,{coords={
-[390]={{44,23.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",59158}},u=2})}}),
+[390]={{44,23.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",59158}},u=2})}}),
 q(31757,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30308,"questID",30309,"questID",30310},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,u=2,g={
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30308,"questID",30309,"questID",30310},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58465},rwp=50400,u=2,g={
 qo(1,{coords={
-[390]={{46.2,27}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",65935}},u=2})}}),
+[390]={{46.2,27}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",65935}},u=2})}}),
 q(31243,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",31246},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,sourceQuests={30307,30308,30309,30310,30312,30320,31754,31755,31756,31757,31758,31760,31762},u=2}),
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",31246},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,sourceQuests={30307,30308,30309,30310,30312,30320,31754,31755,31756,31757,31758,31760,31762},u=2}),
 q(31246,{coords={
-[390]={{42.4,46}}},isDaily=1,lc={1,"questID",31243},maxReputation={1269,42000},minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,u=2}),
+[390]={{42.4,46}}},isDaily=1,lc={1,"questID",31243},maxReputation={1269,42000},minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,u=2}),
 q(30286,{coords={
-[390]={{35.2,75.2}}},isDaily=1,lc={1,"questID",30285},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59337},rwp=50400,sourceQuests={31243,31246},u=2,g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63949}},u=2})}}),
+[390]={{35.2,75.2}}},isDaily=1,lc={1,"questID",30285},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59337},rwp=50400,sourceQuests={31243,31246},u=2,g={
+qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63949}},u=2})}}),
 q(30297,{coords={
-[390]={{35.2,75}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58911},rwp=50400,u=2,g={
+[390]={{35.2,75}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58911},rwp=50400,u=2,g={
 qo(1,{coords={
-[390]={{28.7,43.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63695},{"n",245163}},u=2}),
-i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
+[390]={{28.7,43.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63695},{"n",245163}},u=2}),
+i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
 q(30289,{coords={
-[390]={{35.2,75}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58911},rwp=50400,sourceQuests={31243,31246},u=2}),
+[390]={{35.2,75}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58911},rwp=50400,sourceQuests={31243,31246},u=2}),
 q(30296,{coords={
-[390]={{35.2,75}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58911},rwp=50400,u=2,g={
+[390]={{35.2,75}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58911},rwp=50400,u=2,g={
 qo(1,{coords={
-[395]={{53.1,59.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",62881},{"n",245153}},u=2}),
-i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
+[395]={{53.1,59.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",62881},{"n",245153}},u=2}),
+i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
 q(30287,{coords={
-[390]={{35.2,75}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58911},rwp=50400,sourceQuests={31243,31246},u=2}),
+[390]={{35.2,75}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58911},rwp=50400,sourceQuests={31243,31246},u=2}),
 q(31293,{coords={
-[390]={{35.2,75}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58911},rwp=50400,sourceQuests={31243,31246},u=2}),
-q(30288,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59336},rwp=50400,sourceQuests={31243,31246},u=2}),
+[390]={{35.2,75}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58911},rwp=50400,sourceQuests={31243,31246},u=2}),
+q(30288,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59336},rwp=50400,sourceQuests={31243,31246},u=2}),
 q(30290,{coords={
-[390]={{35.2,75}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58911},rwp=50400,sourceQuests={31243,31246},u=2}),
+[390]={{35.2,75}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58911},rwp=50400,sourceQuests={31243,31246},u=2}),
 q(30285,{coords={
-[390]={{35.2,75.2}}},isDaily=1,lc={1,"questID",30286},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59337},rwp=50400,sourceQuests={31243,31246},u=2,g={
+[390]={{35.2,75.2}}},isDaily=1,lc={1,"questID",30286},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59337},rwp=50400,sourceQuests={31243,31246},u=2,g={
 qo(1,{coords={
-[390]={{37,72.6}}},crs={64201},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",86099}},u=2})}}),
+[390]={{37,72.6}}},crs={64201},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",86099}},u=2})}}),
 q(31242,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",31245,"questID",31249},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,sourceQuests={30307,30308,30309,30310,30312,30320,31754,31755,31756,31757,31758,31760,31762},u=2}),
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",31245,"questID",31249},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,sourceQuests={30307,30308,30309,30310,30312,30320,31754,31755,31756,31757,31758,31760,31762},u=2}),
 q(31245,{coords={
-[390]={{42.4,46}}},isDaily=1,lc={1,"questID",31242,"questID",31249},maxReputation={1269,42000},minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,u=2}),
+[390]={{42.4,46}}},isDaily=1,lc={1,"questID",31242,"questID",31249},maxReputation={1269,42000},minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,u=2}),
 q(31249,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",31242,"questID",31245},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,u=2}),
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",31242,"questID",31245},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,u=2}),
 q(30236,{coords={
-[390]={{33.8,72.2}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
+[390]={{33.8,72.2}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
 qo(1,{coords={
-[390]={{35,89.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58778},{"n",244975}},u=2}),
-i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
+[390]={{35,89.9}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58778},{"n",244975}},u=2}),
+i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
 q(30195,{coords={
-[390]={{33.8,69.8}}},isDaily=1,lc={1,"questID",30190},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58820},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
+[390]={{33.8,69.8}}},isDaily=1,lc={1,"questID",30190},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58820},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
 qo(1,{coords={
-[390]={{33.1,58.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",244172},{"o",210537},{"o",210538},{"o",210539}},u=2})}}),
+[390]={{33.1,58.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",244172},{"o",210537},{"o",210538},{"o",210539}},u=2})}}),
 q(30263,{coords={
-[390]={{33.9,72.2}}},isDaily=1,lc={1,"questID",30232,"questID",30237,"questID",30238},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
+[390]={{33.9,72.2}}},isDaily=1,lc={1,"questID",30232,"questID",30237,"questID",30238},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
 qo(1,{coords={
-[390]={{29.8,53}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",65131},{"n",65132}},u=2})}}),
+[390]={{29.8,53}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",65131},{"n",65132}},u=2})}}),
 q(30194,{coords={
-[390]={{33.9,72.2}}},isDaily=1,lc={1,"questID",30191,"questID",30192},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
+[390]={{33.9,72.2}}},isDaily=1,lc={1,"questID",30191,"questID",30192},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
 qo(1,{coords={
-[390]={{24.2,77.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58456}},u=2})}}),
+[390]={{24.2,77.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58456}},u=2})}}),
 q(30239,{coords={
-[390]={{33.9,72.2}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={30237},u=2,g={
+[390]={{33.9,72.2}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={30237},u=2,g={
 qo(1,{coords={
-[390]={{47.4,65.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58817},{"n",246479}},u=2}),
-i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
+[390]={{47.4,65.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58817},{"n",246479}},u=2}),
+i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
 q(30196,{coords={
-[390]={{33.8,70.2}}},isDaily=1,lc={1,"questID",30193,"questID",30231},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58818},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
+[390]={{33.8,70.2}}},isDaily=1,lc={1,"questID",30193,"questID",30231},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58818},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
 qo(1,{coords={
-[390]={{48,69.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",85681},{"o",213350},{"o",213352},{"o",213353}},u=2})}}),
+[390]={{48,69.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",85681},{"o",213350},{"o",213352},{"o",213353}},u=2})}}),
 q(30193,{coords={
-[390]={{33.8,70.2}}},isDaily=1,lc={1,"questID",30196,"questID",30231},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58818},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
+[390]={{33.8,70.2}}},isDaily=1,lc={1,"questID",30196,"questID",30231},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58818},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
 qo(1,{coords={
-[390]={{29.4,55}}},crs={58454},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",79244}},u=2})}}),
+[390]={{29.4,55}}},crs={58454},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",79244}},u=2})}}),
 q(30192,{coords={
-[390]={{35.2,74}}},isDaily=1,lc={1,"questID",30191,"questID",30194},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58819},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
+[390]={{35.2,74}}},isDaily=1,lc={1,"questID",30191,"questID",30194},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58819},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
 qo(1,{coords={
-[390]={{35.5,74.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",85782},{"o",213369}},u=2})}}),
+[390]={{35.5,74.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",85782},{"o",213369}},u=2})}}),
 q(30231,{coords={
-[390]={{33.8,70.2}}},isDaily=1,lc={1,"questID",30193,"questID",30196},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58818},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
+[390]={{33.8,70.2}}},isDaily=1,lc={1,"questID",30193,"questID",30196},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58818},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
 qo(1,{coords={
-[390]={{37.7,64.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",79250},{"i",79344},{"n",58767}},u=2})}}),
+[390]={{37.7,64.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",79250},{"i",79344},{"n",58767}},u=2})}}),
 q(30235,{coords={
-[390]={{33.9,72.2}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
+[390]={{33.9,72.2}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
 qo(1,{coords={
-[390]={{30.63,79.24}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",87807},{"n",58771},{"n",244995}},u=2}),
-i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
+[390]={{30.63,79.24}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",87807},{"n",58771},{"n",244995}},u=2}),
+i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
 q(30238,{coords={
-[390]={{33.9,72.2}}},isDaily=1,lc={1,"questID",30232,"questID",30237,"questID",30263},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
+[390]={{33.9,72.2}}},isDaily=1,lc={1,"questID",30232,"questID",30237,"questID",30263},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
 qo(1,{coords={
-[390]={{45.3,70.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"o",210419}},u=2})}}),
+[390]={{45.3,70.3}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"o",210419}},u=2})}}),
 q(30232,{coords={
-[390]={{33.9,72.2}}},isDaily=1,lc={1,"questID",30237,"questID",30238,"questID",30263},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
+[390]={{33.9,72.2}}},isDaily=1,lc={1,"questID",30237,"questID",30238,"questID",30263},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
 qo(1,{coords={
-[390]={{27.4,59.8}}},crs={58457},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",84121}},u=2})}}),
+[390]={{27.4,59.8}}},crs={58457},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",84121}},u=2})}}),
 q(30190,{coords={
-[390]={{35.2,74}}},isDaily=1,lc={1,"questID",30195},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58819},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
+[390]={{35.2,74}}},isDaily=1,lc={1,"questID",30195},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58819},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
 qo(1,{coords={
-[390]={{37,75.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58673}},u=2})}}),
+[390]={{37,75.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58673}},u=2})}}),
 q(30191,{coords={
-[390]={{35.2,74}}},isDaily=1,lc={1,"questID",30192,"questID",30194},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58819},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
+[390]={{35.2,74}}},isDaily=1,lc={1,"questID",30192,"questID",30194},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58819},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
 qo(1,{coords={
-[390]={{37.7,80.8}}},crs={58673},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",85778},{"o",213365}},u=2})}}),
+[390]={{37.7,80.8}}},crs={58673},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",85778},{"o",213365}},u=2})}}),
 q(30237,{coords={
-[390]={{33.9,72.2}}},isDaily=1,lc={1,"questID",30232,"questID",30238,"questID",30263},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
+[390]={{33.9,72.2}}},isDaily=1,lc={1,"questID",30232,"questID",30238,"questID",30263},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={31242,31245,31249},u=2,g={
 qo(1,{coords={
-[390]={{48,69.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58671}},u=2})}}),
+[390]={{48,69.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58671}},u=2})}}),
 q(31131,{coords={
-[390]={{56.6,43.6}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,sourceQuests={30307,30308,30309,30310,30312,30320,31754,31755,31756,31757,31758,31760,31762},u=2}),
+[390]={{56.6,43.6}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,sourceQuests={30307,30308,30309,30310,30312,30320,31754,31755,31756,31757,31758,31760,31762},u=2}),
 q(30284,{coords={
-[390]={{42.4,46}}},isDaily=1,lc={1,"questID",30342},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,sourceQuests={31131},u=2,g={
+[390]={{42.4,46}}},isDaily=1,lc={1,"questID",30342},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,sourceQuests={31131},u=2,g={
 qo(1,{coords={
-[390]={{41.2,48}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",59404}},u=2})}}),
+[390]={{41.2,48}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",59404}},u=2})}}),
 q(30338,{coords={
-[390]={{42.4,46}}},isDaily=1,lc={1,"questID",30265,"questID",30291},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,sourceQuests={31131},u=2,g={
+[390]={{42.4,46}}},isDaily=1,lc={1,"questID",30265,"questID",30291},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,sourceQuests={31131},u=2,g={
 qo(1,{coords={
-[390]={{40.5,47}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",84655},{"o",212762},{"o",212763},{"o",212764},{"o",212765},{"o",212766}},u=2})}}),
+[390]={{40.5,47}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",84655},{"o",212762},{"o",212763},{"o",212764},{"o",212765},{"o",212766}},u=2})}}),
 q(30342,{coords={
-[390]={{42.4,46}}},isDaily=1,lc={1,"questID",30284},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,sourceQuests={31131},u=2,g={
+[390]={{42.4,46}}},isDaily=1,lc={1,"questID",30284},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,sourceQuests={31131},u=2,g={
 qo(1,{coords={
-[390]={{39,50.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58455}},u=2})}}),
+[390]={{39,50.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58455}},u=2})}}),
 q(30339,{coords={
-[390]={{42.2,45.8}}},isDaily=1,lc={1,"questID",30340},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59341},rwp=50400,sourceQuests={31131},u=2,g={
+[390]={{42.2,45.8}}},isDaily=1,lc={1,"questID",30340},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59341},rwp=50400,sourceQuests={31131},u=2,g={
 qo(1,{coords={
-[390]={{40.5,42}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",84240},{"o",212742}},u=2})}}),
+[390]={{40.5,42}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",84240},{"o",212742}},u=2})}}),
 q(30265,{coords={
-[390]={{42.4,46}}},isDaily=1,lc={1,"questID",30291,"questID",30338},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,sourceQuests={31131},u=2,g={
+[390]={{42.4,46}}},isDaily=1,lc={1,"questID",30291,"questID",30338},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,sourceQuests={31131},u=2,g={
 qo(1,{coords={
-[390]={{42.5,47.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",84646},{"o",212759},{"o",212760},{"o",212761}},u=2})}}),
+[390]={{42.5,47.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",84646},{"o",212759},{"o",212760},{"o",212761}},u=2})}}),
 q(30340,{coords={
-[390]={{42.2,45.8}}},isDaily=1,lc={1,"questID",30339},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59341},rwp=50400,sourceQuests={31131},u=2,g={
+[390]={{42.2,45.8}}},isDaily=1,lc={1,"questID",30339},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59341},rwp=50400,sourceQuests={31131},u=2,g={
 qo(1,{coords={
-[390]={{42.5,52.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",84241},{"o",212744}},u=2})}}),
+[390]={{42.5,52.5}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",84241},{"o",212744}},u=2})}}),
 q(30291,{coords={
-[390]={{42.4,46}}},isDaily=1,lc={1,"questID",30265,"questID",30338},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,sourceQuests={31131},u=2,g={
+[390]={{42.4,46}}},isDaily=1,lc={1,"questID",30265,"questID",30338},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,sourceQuests={31131},u=2,g={
 qo(1,{coords={
-[390]={{42.5,46}}},crs={62984},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",84656}},u=2})}}),
+[390]={{42.5,46}}},crs={62984},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",84656}},u=2})}}),
 q(30314,{coords={
-[390]={{43.6,46.2}}},isDaily=1,lc={1,"questID",30313,"questID",30341},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59342},rwp=50400,sourceQuests={31131},u=2,g={
+[390]={{43.6,46.2}}},isDaily=1,lc={1,"questID",30313,"questID",30341},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59342},rwp=50400,sourceQuests={31131},u=2,g={
 qo(1,{coords={
-[390]={{44.6,51.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",59378},{"n",63044}},u=2})}}),
+[390]={{44.6,51.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",59378},{"n",63044}},u=2})}}),
 q(30313,{coords={
-[390]={{43.6,46.2}}},isDaily=1,lc={1,"questID",30314,"questID",30341},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59342},rwp=50400,sourceQuests={31131},u=2,g={
+[390]={{43.6,46.2}}},isDaily=1,lc={1,"questID",30314,"questID",30341},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59342},rwp=50400,sourceQuests={31131},u=2,g={
 qo(1,{coords={
-[390]={{40.4,55.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58672}},u=2})}}),
+[390]={{40.4,55.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58672}},u=2})}}),
 q(30341,{coords={
-[390]={{43.6,46.2}}},isDaily=1,lc={1,"questID",30313,"questID",30314},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59342},rwp=50400,sourceQuests={31131},u=2,g={
+[390]={{43.6,46.2}}},isDaily=1,lc={1,"questID",30313,"questID",30314},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59342},rwp=50400,sourceQuests={31131},u=2,g={
 qo(1,{coords={
-[390]={{44.4,43.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",89366},{"n",59379}},u=2})}}),
+[390]={{44.4,43.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",89366},{"n",59379}},u=2})}}),
 q(30385,{coords={
-[390]={{33.9,72.2}}},isDaily=1,lc={1,"questID",31247,"questID",31250,"questID",31297},maxReputation={1269,42000},minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={30190,30191,30192,30193,30194,30195,30196,30231,30232,30237,30238,30263},u=2}),
+[390]={{33.9,72.2}}},isDaily=1,lc={1,"questID",31247,"questID",31250,"questID",31297},maxReputation={1269,42000},minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={30190,30191,30192,30193,30194,30195,30196,30231,30232,30237,30238,30263},u=2}),
 q(31247,{coords={
-[390]={{42.4,46}}},isDaily=1,lc={1,"questID",30385,"questID",31250,"questID",31297},maxReputation={1269,42000},minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,sourceQuests={30265,30284,30291,30313,30314,30338,30339,30340,30341,30342},u=2}),
+[390]={{42.4,46}}},isDaily=1,lc={1,"questID",30385,"questID",31250,"questID",31297},maxReputation={1269,42000},minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,sourceQuests={30265,30284,30291,30313,30314,30338,30339,30340,30341,30342},u=2}),
 q(31250,{coords={
-[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30385,"questID",31247,"questID",31297},maxReputation={1269,42000},minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,sourceQuests={30307,30308,30309,30310,30312,30320,31754,31755,31756,31757,31758,31760,31762},u=2}),
-q(31297,{isDaily=1,lc={1,"questID",30385,"questID",31247,"questID",31250},maxReputation={1269,42000},minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59337},rwp=50400,u=2}),
+[390]={{56.6,43.6}}},isDaily=1,lc={1,"questID",30385,"questID",31247,"questID",31297},maxReputation={1269,42000},minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,sourceQuests={30307,30308,30309,30310,30312,30320,31754,31755,31756,31757,31758,31760,31762},u=2}),
+q(31297,{isDaily=1,lc={1,"questID",30385,"questID",31247,"questID",31250},maxReputation={1269,42000},minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59337},rwp=50400,u=2}),
 q(30244,{coords={
-[390]={{21.3,71.4}}},isDaily=1,lc={1,"questID",30246,"questID",30261,"questID",30444},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58920},rwp=50400,sourceQuests={30240,30242,30306},u=2,g={
+[390]={{21.3,71.4}}},isDaily=1,lc={1,"questID",30246,"questID",30261,"questID",30444},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58920},rwp=50400,sourceQuests={30240,30242,30306},u=2,g={
 qo(1,{coords={
-[390]={{11.2,59.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63974},{"n",63976}},u=2})}}),
+[390]={{11.2,59.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63974},{"n",63976}},u=2})}}),
 q(30266,{coords={
 [390]={{21.4,71.2}}},isDaily=1,lc={1,"questID",30243,"questID",30245},maxReputation={1269,42000},qgs={59340},sourceQuests={30240,30242,30306},g={
 qo(1,{coords={
 [390]={{5.4,44.1},{5.4,72.1}}},providers={{"n",63973},{"n",64336}}})}}),
 q(30264,{coords={
-[390]={{21.4,71.5}}},isDaily=1,maps={388,422},maxReputation={1269,42000},minReputation={1269,21000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58919},rwp=50400,sourceQuests={30240,30242,30306},u=2,g={
+[390]={{21.4,71.5}}},isDaily=1,maps={388,422},maxReputation={1269,42000},minReputation={1269,21000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58919},rwp=50400,sourceQuests={30240,30242,30306},u=2,g={
 qo(1,{coords={
-[390]={{15.4,66.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",65336}},u=2}),
+[390]={{15.4,66.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",65336}},u=2}),
 qo(2,{coords={
 [388]={{81,91.6}},
-[422]={{67.4,14.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63972}},u=2}),
+[422]={{67.4,14.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63972}},u=2}),
 qo(3,{coords={
-[422]={{65.8,12.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",64274}},u=2}),
+[422]={{65.8,12.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",64274}},u=2}),
 qo(4,{coords={
-[422]={{68.6,18.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",64275}},u=2})}}),
+[422]={{68.6,18.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",64275}},u=2})}}),
 q(30245,{coords={
-[390]={{21.3,71.4}}},isDaily=1,lc={1,"questID",30243,"questID",30266},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58920},rwp=50400,sourceQuests={30240,30242,30306},u=2,g={
+[390]={{21.3,71.4}}},isDaily=1,lc={1,"questID",30243,"questID",30266},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58920},rwp=50400,sourceQuests={30240,30242,30306},u=2,g={
 qo(1,{coords={
-[390]={{8.8,37.8},{11,43.2},{13,38.6},{16,32.2},{17,47}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58930}},u=2})}}),
+[390]={{8.8,37.8},{11,43.2},{13,38.6},{16,32.2},{17,47}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58930}},u=2})}}),
 q(30243,{coords={
 [390]={{21.3,71.4}}},isDaily=1,lc={1,"questID",30245,"questID",30266},maps={388,422},maxReputation={1269,42000},qgs={58920},sourceQuests={30240,30242,30306},g={
 qo(1,{coords={
 [388]={{81,91.6}},
 [422]={{67.4,14.4}}},providers={{"n",63972}}})}}),
 q(30444,{coords={
-[390]={{21.4,71.5}}},isDaily=1,lc={1,"questID",30244,"questID",30246,"questID",30261},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58919},rwp=50400,sourceQuests={30240,30242,30306},u=2,g={
+[390]={{21.4,71.5}}},isDaily=1,lc={1,"questID",30244,"questID",30246,"questID",30261},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58919},rwp=50400,sourceQuests={30240,30242,30306},u=2,g={
 qo(1,{coords={
-[390]={{14,35.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58927},{"n",58928}},u=2})}}),
+[390]={{14,35.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58927},{"n",58928}},u=2})}}),
 q(30261,{coords={
 [390]={{18.1,63.5}}},isDaily=1,lc={1,"questID",30244,"questID",30246,"questID",30444},maxReputation={1269,42000},qgs={58704},sourceQuests={30240,30242,30306},g={
 qo(1,{coords={
@@ -7221,146 +7221,146 @@ q(30306,{coords={
 qo(1,{coords={
 [390]={{19,72.4}}},providers={{"n",58992}}})}}),
 q(30248,{coords={
-[390]={{21.3,71.4}}},isDaily=1,lc={1,"questID",30249,"questID",30251},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58920},rwp=50400,sourceQuests={30245},u=2,g={
+[390]={{21.3,71.4}}},isDaily=1,lc={1,"questID",30249,"questID",30251},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58920},rwp=50400,sourceQuests={30245},u=2,g={
 qo(1,{coords={
-[390]={{15.36,25.1},{17,48.7}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58949},{"n",246386}},u=2}),
-i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
+[390]={{15.36,25.1},{17,48.7}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",58949},{"n",246386}},u=2}),
+i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
 q(30246,{coords={
-[390]={{21.4,71.6}}},isDaily=1,lc={1,"questID",30244,"questID",30261,"questID",30444},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58919},rwp=50400,sourceQuests={30240,30242,30306},u=2,g={
+[390]={{21.4,71.6}}},isDaily=1,lc={1,"questID",30244,"questID",30261,"questID",30444},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58919},rwp=50400,sourceQuests={30240,30242,30306},u=2,g={
 qo(1,{coords={
-[390]={{11.2,59.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63974},{"n",63976}},u=2})}}),
+[390]={{11.2,59.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63974},{"n",63976}},u=2})}}),
 q(30249,{coords={
-[390]={{21.3,71.4}}},isDaily=1,lc={1,"questID",30248,"questID",30251},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58920},rwp=50400,sourceQuests={30244},u=2,g={
+[390]={{21.3,71.4}}},isDaily=1,lc={1,"questID",30248,"questID",30251},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58920},rwp=50400,sourceQuests={30244},u=2,g={
 qo(1,{coords={
-[390]={{6.2,58.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63978},{"n",246383}},u=2}),
-i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
+[390]={{6.2,58.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63978},{"n",246383}},u=2}),
+i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
 q(30251,{coords={
-[390]={{21.4,71.6}}},isDaily=1,lc={1,"questID",30248,"questID",30249},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58919},rwp=50400,sourceQuests={30246},u=2,g={
+[390]={{21.4,71.6}}},isDaily=1,lc={1,"questID",30248,"questID",30249},maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58919},rwp=50400,sourceQuests={30246},u=2,g={
 qo(1,{coords={
-[390]={{7.92,33.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63977},{"n",246384}},u=2}),
-i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
-q(30283,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58469},rwp=50400,u=2}),
-q(30281,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58470},rwp=50400,u=2}),
-q(30482,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58470},rwp=50400,sourceQuests={30281},u=2,g={
-i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
+[390]={{7.92,33.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",63977},{"n",246384}},u=2}),
+i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
+q(30283,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58469},rwp=50400,u=2}),
+q(30281,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58470},rwp=50400,u=2}),
+q(30482,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58470},rwp=50400,sourceQuests={30281},u=2,g={
+i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
 q(31136,{coords={
-[390]={{56.6,43.6}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,u=2,g={
-i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
-q(30226,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58503},rwp=50400,u=2}),
-q(30282,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58503},rwp=50400,u=2}),
-q(30481,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59333},rwp=50400,u=2}),
+[390]={{56.6,43.6}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,u=2,g={
+i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
+q(30226,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58503},rwp=50400,u=2}),
+q(30282,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58503},rwp=50400,u=2}),
+q(30481,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59333},rwp=50400,u=2}),
 q(30233,{coords={
-[390]={{42.4,46}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,u=2,g={
-i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
+[390]={{42.4,46}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,u=2,g={
+i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
 q(31244,{coords={
-[390]={{42.4,46}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,u=2}),
+[390]={{42.4,46}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,u=2}),
 q(31240,{coords={
-[390]={{42.4,46}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,u=2}),
+[390]={{42.4,46}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,u=2}),
 q(30304,{coords={
-[390]={{34,38.2}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58504},rwp=50400,u=2}),
-q(30305,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59333},rwp=50400,u=2}),
-q(30200,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58503},rwp=50400,u=2}),
+[390]={{34,38.2}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58504},rwp=50400,u=2}),
+q(30305,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59333},rwp=50400,u=2}),
+q(30200,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58503},rwp=50400,u=2}),
 q(30293,{coords={
-[390]={{56.6,43.6}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58471},rwp=50400,u=2}),
-q(31295,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,u=2}),
-q(30299,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59334},rwp=50400,u=2}),
-q(30301,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59332},rwp=50400,u=2}),
-q(30298,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59332},rwp=50400,u=2}),
+[390]={{56.6,43.6}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58471},rwp=50400,u=2}),
+q(31295,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,u=2}),
+q(30299,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59334},rwp=50400,u=2}),
+q(30301,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59332},rwp=50400,u=2}),
+q(30298,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59332},rwp=50400,u=2}),
 q(30292,{coords={
-[390]={{56.6,43.6}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58471},rwp=50400,u=2}),
+[390]={{56.6,43.6}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58471},rwp=50400,u=2}),
 q(30205,{coords={
-[390]={{33.6,40.6}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={63266},rwp=50400,u=2}),
+[390]={{33.6,40.6}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={63266},rwp=50400,u=2}),
 q(30206,{coords={
-[390]={{33.6,40.6}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={63266},rwp=50400,u=2}),
+[390]={{33.6,40.6}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={63266},rwp=50400,u=2}),
 q(30204,{coords={
-[390]={{34,38.2}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58504},rwp=50400,u=2}),
-q(30225,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58503},rwp=50400,u=2,g={
-i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
+[390]={{34,38.2}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58504},rwp=50400,u=2}),
+q(30225,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58503},rwp=50400,u=2,g={
+i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
 q(30277,{coords={
 [395]={{34,38.2}}},isDaily=1,maxReputation={1269,42000},minReputation={1269,21000},qgs={58503},g={
 qo(2,{coords={
 [395]={{49.7,30}}},providers={{"i",87790},{"o",214394}}}),
 crit(20975,{achID=7324,id=1})}}),
-q(30302,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59332},rwp=50400,u=2,g={
-i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
-q(30300,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59334},rwp=50400,u=2}),
+q(30302,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59332},rwp=50400,u=2,g={
+i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
+q(30300,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59334},rwp=50400,u=2}),
 q(31248,{coords={
-[390]={{56.6,43.6}}},isDaily=1,maxReputation={1269,42000},minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,u=2}),
-q(31294,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={30235,30236,30239},u=2}),
-q(31296,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59337},rwp=50400,u=2}),
+[390]={{56.6,43.6}}},isDaily=1,maxReputation={1269,42000},minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,u=2}),
+q(31294,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59338},rwp=50400,sourceQuests={30235,30236,30239},u=2}),
+q(31296,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59337},rwp=50400,u=2}),
 q(30280,{coords={
 [395]={{34,38.2}}},isDaily=1,maxReputation={1269,42000},qgs={58503},g={
 crit(20979,{achID=7324,id=2})}}),
-q(30228,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58503},rwp=50400,u=2}),
+q(30228,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58503},rwp=50400,u=2}),
 q(30234,{coords={
-[390]={{42.4,46}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,u=2,g={
-i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
-q(30227,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58503},rwp=50400,u=2,g={
-i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
+[390]={{42.4,46}}},isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59343},rwp=50400,u=2,g={
+i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
+q(30227,{isDaily=1,maxReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58503},rwp=50400,u=2,g={
+i(90625,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=1,u=2})}}),
 q(32011,{coords={
-[390]={{84.6,63.6}}},isBreadcrumb=1,minReputation={1269,21000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={64032},r=2,rwp=50400,u=2}),
+[390]={{84.6,63.6}}},isBreadcrumb=1,minReputation={1269,21000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={64032},r=2,rwp=50400,u=2}),
 q(32010,{coords={
-[390]={{62.7,23.3}}},isBreadcrumb=1,lvl=90,minReputation={1269,21000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={64001},r=1,rwp=50400,u=2}),
+[390]={{62.7,23.3}}},isBreadcrumb=1,lvl=90,minReputation={1269,21000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={64001},r=1,rwp=50400,u=2}),
 q(30642,{coords={
-[390]={{57.25,43}}},lvl=90,minReputation={1269,21000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59905},rwp=50400,sourceQuests={30641},u=2,g={
+[390]={{57.25,43}}},lvl=90,minReputation={1269,21000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59905},rwp=50400,sourceQuests={30641},u=2,g={
 qo(1,{coords={
-[390]={{44.79,76.34}}},description="Kill the constructs, the orb in the middle will give you a damage boost and the green orbs will heal you.",OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",60403}},u=2}),
+[390]={{44.79,76.34}}},description="Kill the constructs, the orb in the middle will give you a damage boost and the green orbs will heal you.",OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",60403}},u=2}),
 qo(2,{coords={
-[390]={{45.3,76.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",80807},{"o",211396}},u=2}),
-s(274348,90601,{b=1,f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
-s(274354,90607,{b=1,f=4,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
-s(274345,90598,{b=1,f=6,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
-s(274349,90602,{b=1,f=6,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
-s(274344,90597,{b=1,f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
-s(274350,90603,{b=1,f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
-s(274347,90600,{b=1,f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
-s(274356,90609,{b=1,f=4,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
-s(274346,90599,{b=1,f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+[390]={{45.3,76.2}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",80807},{"o",211396}},u=2}),
+s(274348,90601,{b=1,f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+s(274354,90607,{b=1,f=4,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+s(274345,90598,{b=1,f=6,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+s(274349,90602,{b=1,f=6,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+s(274344,90597,{b=1,f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+s(274350,90603,{b=1,f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+s(274347,90600,{b=1,f=7,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+s(274356,90609,{b=1,f=4,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+s(274346,90599,{b=1,f=5,loc=42,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
 crit(20515,{achID=7315,id=4,u=2})}}),
 q(30641,{coords={
-[390]={{57.25,43}}},lvl=90,minReputation={1269,21000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59905},rwp=50400,sourceQuests={30640},u=2,g={
+[390]={{57.25,43}}},lvl=90,minReputation={1269,21000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59905},rwp=50400,sourceQuests={30640},u=2,g={
 qo(1,{coords={
-[395]={{58.37,44.45}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",64889}},u=2}),
+[395]={{58.37,44.45}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",64889}},u=2}),
 qo(2,{coords={
-[396]={{51.1,81.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",80222},{"o",211393}},u=2})}}),
+[396]={{51.1,81.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",80222},{"o",211393}},u=2})}}),
 q(30640,{coords={
-[390]={{57.25,43}}},lvl=90,minReputation={1269,21000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59905},rwp=50400,sourceQuests={30639},u=2,g={
+[390]={{57.25,43}}},lvl=90,minReputation={1269,21000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59905},rwp=50400,sourceQuests={30639},u=2,g={
 qo(1,{coords={
-[390]={{21.4,20.1}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",80808},{"o",211395}},u=2})}}),
+[390]={{21.4,20.1}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"i",80808},{"o",211395}},u=2})}}),
 q(30646,{coords={
-[390]={{74.2,41.8}}},lvl=90,minReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59906},rwp=50400,sourceQuests={30645},u=2,g={
-i(90596,{b=1,f=51,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(90593,{b=1,f=51,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(90594,{b=1,f=51,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(90592,{b=1,f=51,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
-i(90595,{b=1,f=51,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+[390]={{74.2,41.8}}},lvl=90,minReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59906},rwp=50400,sourceQuests={30645},u=2,g={
+i(90596,{b=1,f=51,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(90593,{b=1,f=51,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(90594,{b=1,f=51,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(90592,{b=1,f=51,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
+i(90595,{b=1,f=51,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=4,u=2}),
 crit(20516,{achID=7315,id=5,u=2})}}),
 q(30645,{coords={
-[390]={{56.44,43.26}}},lvl=90,minReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58468},rwp=50400,sourceQuests={30644},u=2}),
+[390]={{56.44,43.26}}},lvl=90,minReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58468},rwp=50400,sourceQuests={30644},u=2}),
 q(30643,{coords={
-[390]={{56.6,43.6}}},lvl=90,minReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,sourceQuests={30642},u=2}),
+[390]={{56.6,43.6}}},lvl=90,minReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,sourceQuests={30642},u=2}),
 q(31384,{coords={
 [390]={{84.2,62.4}}},isBreadcrumb=1,lvl=90,qgs={64031},r=2}),
 q(31385,{coords={
 [390]={{63,22.2}}},isBreadcrumb=1,lvl=90,qgs={64007},r=1}),
 q(30639,{coords={
-[390]={{56.6,43.6}}},lvl=90,minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,sourceQuests={30635,30636,30637,30654},u=2,g={
+[390]={{56.6,43.6}}},lvl=90,minReputation={1269,9000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={58408},rwp=50400,sourceQuests={30635,30636,30637,30654},u=2,g={
 qo(1,{coords={
-[395]={{42,53.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",64647}},u=2}),
+[395]={{42,53.4}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",64647}},u=2}),
 qo(2,{coords={
-[395]={{48,28.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",64663}},u=2}),
-i(90615,{b=1,f=52,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
-i(90614,{b=1,f=52,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
-i(90618,{b=1,f=52,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
-i(90617,{b=1,f=52,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
-i(90616,{b=1,f=52,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+[395]={{48,28.8}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,providers={{"n",64663}},u=2}),
+i(90615,{b=1,f=52,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+i(90614,{b=1,f=52,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+i(90618,{b=1,f=52,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+i(90617,{b=1,f=52,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
+i(90616,{b=1,f=52,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,q=3,u=2}),
 crit(20514,{achID=7315,id=3,u=2})}}),
 q(31387,{coords={
 [390]={{84.4,61.6}}},isBreadcrumb=1,lvl=90,minReputation={1269,21000},qgs={64030},r=2,rwp=50100,u=2}),
 q(31389,{coords={
 [390]={{63,21.2}}},isBreadcrumb=1,lvl=90,minReputation={1269,21000},qgs={64002},r=1,rwp=50100,u=2}),
 q(30644,{coords={
-[390]={{44.79,76.34}}},lvl=90,minReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=50 t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59905},rwp=50400,sourceQuests={30643},u=2})}),
+[390]={{44.79,76.34}}},lvl=90,minReputation={1269,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 else	t.u=nil t.description="This will become unavailable when the Siege of Orgrimmar phase begins."	end	end,qgs={59905},rwp=50400,sourceQuests={30643},u=2})}),
 h(-46,{description="These aren't really rares, they're elite quest mobs that are only available on certain days when their respective quest chain is active.",g={
 n(58778,{coords={
 [390]={{35,89.9}}},crs={244975},g={
@@ -7472,22 +7472,22 @@ mnt(127174,{b=1,cost=5000000,itemID=87781,lvl=90,minReputation={1269,42000},q=4}
 mnt(127176,{b=1,cost=25000000,itemID=87782,lvl=90,minReputation={1269,42000},q=4}),
 mnt(127177,{b=1,cost=15000000,itemID=87783,lvl=90,minReputation={1269,42000},q=4})}})}),
 h(-63,{
-i(103624,{awp=50400,b=1,crs={58474,58768,58769,58771,58778,58817,58949,62880,62881,63101,63240,63509,63691,63695,63977,63978},description="Contains a number of Pandarian crafting reagents, herbs, and ore.",q=3,u=54})})}}),
+i(103624,{awp=50400,b=1,crs={58474,58768,58769,58771,58778,58817,58949,62880,62881,63101,63240,63509,63691,63695,63977,63978},description="Contains a number of Pandarian crafting reagents, herbs, and ore.",phase=54,q=3})})}}),
 ah(1345,{description="The Lorewalkers are a pandaren faction bent on exploring the world, finding stories, artifacts, and relics to fill out their libraries.",icon=645218,lvl=85,maps={390},type="fa",g={
 h(-12,{
 ach(6856),
 ach(6716),
 ach(6846),
-ach(8051,{awp=50200,maps={504},u=52}),
+ach(8051,{awp=50200,maps={504},phase=52}),
 ach(6857,{maps={422}}),
 ach(6850),
 ach(7230),
-ach(8050,{awp=50200,maps={504},u=52}),
+ach(8050,{awp=50200,maps={504},phase=52}),
 ach(6754),
 ach(6548),
 ach(6855),
 ach(6847),
-ach(8049,{awp=50200,maps={504},u=52}),
+ach(8049,{awp=50200,maps={504},phase=52}),
 ach(6858)}),
 h(-31,{
 faction(1345,{icon=645218,g={
@@ -7497,15 +7497,15 @@ h(-39,{description="The following will be mailed to you upon completion of respe
 i(83076,{b=1,q=1,r=2,sourceAchievements={6716}}),
 i(83769,{b=1,q=1,r=1,sourceAchievements={6716}}),
 i(83771,{b=1,q=1,sourceAchievements={6846}}),
-i(94199,{awp=50200,b=1,maps={504},q=1,sourceAchievements={8051},u=52}),
+i(94199,{awp=50200,b=1,maps={504},phase=52,q=1,sourceAchievements={8051}}),
 i(83773,{b=1,maps={422},q=1,sourceAchievements={6857}}),
 i(83770,{b=1,q=1,sourceAchievements={6850}}),
-i(94198,{awp=50200,b=1,maps={504},q=1,sourceAchievements={8050},u=52}),
+i(94198,{awp=50200,b=1,maps={504},phase=52,q=1,sourceAchievements={8050}}),
 i(83780,{b=1,q=1,sourceAchievements={6856}}),
 i(83772,{b=1,q=1,sourceAchievements={6754}}),
 i(83779,{b=1,q=1,sourceAchievements={6855}}),
 i(83777,{b=1,q=1,sourceAchievements={6847}}),
-i(94197,{awp=50200,b=1,maps={504},q=1,sourceAchievements={8049},u=52}),
+i(94197,{awp=50200,b=1,maps={504},phase=52,q=1,sourceAchievements={8049}}),
 i(83774,{b=1,q=1,sourceAchievements={6858}})}}),
 h(-45,{
 q(31055,{coords={
@@ -7513,7 +7513,7 @@ q(31055,{coords={
 q(31094,{coords={
 [390]={{83.2,29.6}}},lvl=90,providers={{"n",61962}},qss={83771}}),
 q(32602,{awp=50200,coords={
-[390]={{83.2,29.6}}},lvl=90,providers={{"n",61962}},qss={94199},u=52}),
+[390]={{83.2,29.6}}},lvl=90,phase=52,providers={{"n",61962}},qss={94199}}),
 q(31097,{coords={
 [390]={{83.2,29.6}}},lvl=90,providers={{"n",61962}},qss={83773}}),
 q(31093,{coords={
@@ -7523,31 +7523,31 @@ q(31288,{coords={
 q(31289,{coords={
 [390]={{83.6,31}}},isDaily=1,lvl=90,qgs={63984}}),
 q(32601,{awp=50200,coords={
-[390]={{83.2,29.6}}},lvl=90,providers={{"n",61962}},qss={94198},u=52}),
+[390]={{83.2,29.6}}},lvl=90,phase=52,providers={{"n",61962}},qss={94198}}),
 q(31103,{coords={
 [390]={{83.2,29.6}}},lvl=90,providers={{"n",61962}},qss={83780}}),
 q(31095,{coords={
 [390]={{83.2,29.6}}},lvl=90,providers={{"n",61962}},qss={83772}}),
 q(32806,{awp=50300,coords={
-[390]={{83.2,29.6}}},maps={523},qgs={61962,63577},sourceQuests={32892},u=53,g={
+[390]={{83.2,29.6}}},maps={523},phase=53,qgs={61962,63577},sourceQuests={32892},g={
 i(98133,{awp=50004,b=1,q=3})}}),
 q(31367,{awp=100207,coords={
 [390]={{85.6,60.2}}},isBreadcrumb=1,nextQuests={31015},qgs={64508},r=2,rwp=50100,u=2}),
 q(31368,{awp=100207,coords={
 [390]={{62.4,21.6}}},isBreadcrumb=1,nextQuests={31015},qgs={64531},r=1,rwp=50100,u=2}),
 q(32815,{awp=50300,coords={
-[390]={{83.1,29.7}}},qgs={61962},sourceQuests={32807},u=53}),
+[390]={{83.1,29.7}}},phase=53,qgs={61962},sourceQuests={32807}}),
 q(31102,{coords={
 [390]={{83.2,29.6}}},lvl=90,providers={{"n",61962}},qss={83779}}),
 q(31100,{coords={
 [390]={{83.2,29.6}}},lvl=90,providers={{"n",61962}},qss={83777}}),
 q(32807,{awp=50300,coords={
-[390]={{83.2,29.6}}},maps={520,521},qgs={61962},sourceQuests={32806},u=53,g={
+[390]={{83.2,29.6}}},maps={520,521},phase=53,qgs={61962},sourceQuests={32806},g={
 i(98133,{awp=50004,b=1,q=3}),
 crit(23535,{achID=8306,id=1,r=2,rwp=50400,u=2}),
 crit(23535,{achID=8307,id=1,r=1,rwp=50400,u=2})}}),
 q(32600,{awp=50200,coords={
-[390]={{83.2,29.6}}},lvl=90,providers={{"n",61962}},qss={94197},u=52}),
+[390]={{83.2,29.6}}},lvl=90,phase=52,providers={{"n",61962}},qss={94197}}),
 q(31291,{coords={
 [390]={{83.6,31}}},isDaily=1,qgs={63983}}),
 q(31096,{coords={
@@ -7640,8 +7640,8 @@ i(74250,{q=2}),
 i(74249,{q=1})}}),
 i(85219,{b=1,crs={66152,66161},description="This seed is acquired by harvesting crops at Sunsong Ranch, albeit very rarely.",f=55,q=3,g={
 p(650,{itemID=85220,npcID=63365,q=3,spellID=123778})}}),
-i(97988,{awp=50300,b=1,description="Can only be harvested along with normal crops or Portal Shard crops.",lvl=90,q=1,rwp=70003,u=53}),
-n(67482,{cost={{"i",91806,1}},crs={67446},u=51,g={
+i(97988,{awp=50300,b=1,description="Can only be harvested along with normal crops or Portal Shard crops.",lvl=90,phase=53,q=1,rwp=70003}),
+n(67482,{cost={{"i",91806,1}},crs={67446},phase=51,g={
 i(91865,{b=1,f=55,q=1,r=2}),
 i(91866,{b=1,f=55,q=1,r=2}),
 i(91864,{b=1,f=55,q=1,r=2}),
@@ -7699,7 +7699,7 @@ q(30534,{coords={
 [376]={{52.1,49}}},description="Also requires reputation level of \"Best Friends\" with whomever you want assisting you on the farm.",minReputation={1272,42000},providers={{"o",215705}},sourceQuests={30529},g={
 qo(1,{providers={{"n",57298},{"n",57402},{"n",58647},{"n",58705},{"n",58706},{"n",58707},{"n",58708},{"n",58709},{"n",58710},{"n",58761}}})}}),
 q(32189,{awp=50100,coords={
-[376]={{52.8,52}}},description="Only available on days that Barnaby Fletcher is visiting the Market.",qgs={58718},u=51}),
+[376]={{52.8,52}}},description="Only available on days that Barnaby Fletcher is visiting the Market.",phase=51,qgs={58718}}),
 q(31341,{coords={
 [376]={{53,52}}},qgs={58709},sourceQuests={31340},g={
 qo(1,{coords={
@@ -7887,7 +7887,7 @@ q(31314,{coords={
 [376]={{41.7,30.1},{52.8,51.8}}},qgs={58705},sourceQuests={31313},g={
 i(86428,{b=1,description="Contains a number of Pandarian rare quality Gems.",q=3})}}),
 q(32198,{awp=50100,coords={
-[376]={{53.2,51.4}}},description="Available only on days where Barnaby Fletcher is in Halfhill.",qgs={67565},sourceQuests={32189},u=51,g={
+[376]={{53.2,51.4}}},description="Available only on days where Barnaby Fletcher is in Halfhill.",phase=51,qgs={67565},sourceQuests={32189},g={
 i(91806,{awp=50004,b=1,f=55,q=1})}}),
 q(31938,{coords={
 [376]={{53.2,51.8}}},qss={89814},sourceQuests={30529}}),
@@ -8097,71 +8097,71 @@ qo(2,{coords={
 qo(3,{coords={
 [376]={{40,20.6},{44.8,23.2},{47.6,19.8}}},crs={59513,59514,59515},providers={{"i",80139}}})}}),
 q(32642,{awp=50200,coords={
-[376]={{52.3,48.7}}},isDaily=1,providers={{"o",218750}},r=1,sourceQuests={32682},u=52,g={
+[376]={{52.3,48.7}}},isDaily=1,phase=52,providers={{"o",218750}},r=1,sourceQuests={32682},g={
 qo(1,{awp=50004,coords={
 [376]={{52,48.6}}},cost={{"i",80593,8}},providers={{"n",59990}}})}}),
 q(32643,{awp=50200,coords={
-[376]={{51.7,48.7}}},isDaily=1,maxReputation={1375,42000},providers={{"o",218750},{"o",218765}},r=1,sourceQuests={32642},u=52,g={
+[376]={{51.7,48.7}}},isDaily=1,maxReputation={1375,42000},phase=52,providers={{"o",218750},{"o",218765}},r=1,sourceQuests={32642},g={
 qo(1,{awp=50004,coords={
 [376]={{52,48.6}}},providers={{"n",63223},{"n",63228},{"n",63229}}}),
 qo(2,{awp=50004,cost={{"i",74844,40}}})}}),
 q(32944,{awp=50200,coords={
-[376]={{52.3,48.7}}},isDaily=1,providers={{"o",218750}},r=2,sourceQuests={32682},u=52,g={
+[376]={{52.3,48.7}}},isDaily=1,phase=52,providers={{"o",218750}},r=2,sourceQuests={32682},g={
 qo(1,{awp=50004,coords={
 [376]={{52,48.6}}},cost={{"i",80590,8}},providers={{"n",59990}}})}}),
 q(32945,{awp=50200,coords={
-[376]={{51.7,48.7}}},isDaily=1,maxReputation={1387,42000},providers={{"o",218750},{"o",218765}},r=2,sourceQuests={32944},u=52,g={
+[376]={{51.7,48.7}}},isDaily=1,maxReputation={1387,42000},phase=52,providers={{"o",218750},{"o",218765}},r=2,sourceQuests={32944},g={
 qo(1,{awp=50004,coords={
 [376]={{52,48.6}}},providers={{"n",63154},{"n",63156},{"n",63158}}}),
 qo(2,{awp=50004,cost={{"i",74841,40}}})}}),
 q(32647,{awp=50200,coords={
-[376]={{52.3,48.7}}},isDaily=1,providers={{"o",218750}},sourceQuests={32682},u=52,g={
+[376]={{52.3,48.7}}},isDaily=1,phase=52,providers={{"o",218750}},sourceQuests={32682},g={
 qo(1,{awp=50004,coords={
 [376]={{52,48.6}}},cost={{"i",80595,8}},providers={{"n",59990}}})}}),
 q(32648,{awp=50200,coords={
-[376]={{51.7,48.7}}},isDaily=1,maxReputation={1269,42000},providers={{"o",218750},{"o",218765}},sourceQuests={32647},u=52,g={
+[376]={{51.7,48.7}}},isDaily=1,maxReputation={1269,42000},phase=52,providers={{"o",218750},{"o",218765}},sourceQuests={32647},g={
 qo(1,{awp=50004,coords={
 [376]={{52,48.6}}},providers={{"n",63260},{"n",63264},{"n",63265}}}),
 qo(2,{awp=50004,cost={{"i",74850,40}}})}}),
 q(32645,{awp=50200,coords={
-[376]={{52.3,48.7}}},isDaily=1,providers={{"o",218750}},r=2,sourceQuests={32682},u=52,g={
+[376]={{52.3,48.7}}},isDaily=1,phase=52,providers={{"o",218750}},r=2,sourceQuests={32682},g={
 qo(1,{awp=50004,coords={
 [376]={{52,48.6}}},cost={{"i",89326,8}},providers={{"n",59990}}})}}),
 q(32646,{awp=50200,coords={
-[376]={{51.7,48.7}}},isDaily=1,maxReputation={1376,42000},providers={{"o",218750},{"o",218765}},r=2,sourceQuests={32645},u=52,g={
+[376]={{51.7,48.7}}},isDaily=1,maxReputation={1376,42000},phase=52,providers={{"o",218750},{"o",218765}},r=2,sourceQuests={32645},g={
 qo(1,{awp=50004,coords={
 [376]={{52,48.6}}},providers={{"n",66080},{"n",66084},{"n",66085}}}),
 qo(2,{awp=50004,cost={{"i",74846,40}}})}}),
 q(32649,{awp=50200,coords={
-[376]={{52.3,48.7}}},isDaily=1,providers={{"o",218750}},sourceQuests={32682},u=52,g={
+[376]={{52.3,48.7}}},isDaily=1,phase=52,providers={{"o",218750}},sourceQuests={32682},g={
 qo(1,{awp=50004,coords={
 [376]={{52,48.6}}},cost={{"i",79102,8}},providers={{"n",59990}}})}}),
 q(32650,{awp=50200,coords={
-[376]={{51.7,48.7}}},isDaily=1,maxReputation={1270,42000},providers={{"o",218750},{"o",218765}},sourceQuests={32649},u=52,g={
+[376]={{51.7,48.7}}},isDaily=1,maxReputation={1270,42000},phase=52,providers={{"o",218750},{"o",218765}},sourceQuests={32649},g={
 qo(1,{awp=50004,providers={{"n",58567},{"n",60113},{"n",63157}}}),
 qo(2,{awp=50004,cost={{"i",74840,40}}})}}),
 q(32942,{awp=50200,coords={
-[376]={{52.3,48.7}}},isDaily=1,providers={{"o",218750}},r=1,sourceQuests={32682},u=52,g={
+[376]={{52.3,48.7}}},isDaily=1,phase=52,providers={{"o",218750}},r=1,sourceQuests={32682},g={
 qo(1,{awp=50004,coords={
 [376]={{52,48.6}}},cost={{"i",80591,8}},providers={{"n",59990}}})}}),
 q(32943,{awp=50200,coords={
-[376]={{51.7,48.7}}},isDaily=1,maxReputation={1388,42000},providers={{"o",218750},{"o",218765}},r=1,sourceQuests={32942},u=52,g={
+[376]={{51.7,48.7}}},isDaily=1,maxReputation={1388,42000},phase=52,providers={{"o",218750},{"o",218765}},r=1,sourceQuests={32942},g={
 qo(1,{awp=50004,providers={{"n",63160},{"n",63164},{"n",63165}}}),
 qo(2,{awp=50004,cost={{"i",74843,40}}})}}),
 q(32653,{awp=50200,coords={
-[376]={{52.3,48.7}}},isDaily=1,providers={{"o",218750}},sourceQuests={32682},u=52,g={
+[376]={{52.3,48.7}}},isDaily=1,phase=52,providers={{"o",218750}},sourceQuests={32682},g={
 qo(1,{awp=50004,coords={
 [376]={{52,48.6}}},cost={{"i",89329,8}},providers={{"n",59990}}})}}),
 q(32657,{awp=50200,coords={
-[376]={{51.7,48.7}}},isDaily=1,maxReputation={1341,42000},providers={{"o",218750},{"o",218765}},sourceQuests={32653},u=52,g={
+[376]={{51.7,48.7}}},isDaily=1,maxReputation={1341,42000},phase=52,providers={{"o",218750},{"o",218765}},sourceQuests={32653},g={
 qo(1,{awp=50004,providers={{"n",66123},{"n",66128},{"n",66129}}}),
 qo(2,{awp=50004,cost={{"i",74848,40}}})}}),
 q(32658,{awp=50200,coords={
-[376]={{52.3,48.7}}},isDaily=1,providers={{"o",218750}},sourceQuests={32682},u=52,g={
+[376]={{52.3,48.7}}},isDaily=1,phase=52,providers={{"o",218750}},sourceQuests={32682},g={
 qo(1,{awp=50004,coords={
 [376]={{52,48.6}}},cost={{"i",80592,8}},providers={{"n",59990}}})}}),
 q(32659,{awp=50200,coords={
-[376]={{51.7,48.7}}},isDaily=1,maxReputation={1337,42000},providers={{"o",218750},{"o",218765}},sourceQuests={32658},u=52,g={
+[376]={{51.7,48.7}}},isDaily=1,maxReputation={1337,42000},phase=52,providers={{"o",218750},{"o",218765}},sourceQuests={32658},g={
 qo(1,{awp=50004,providers={{"n",63180},{"n",63184},{"n",63185}}}),
 qo(2,{awp=50004,cost={{"i",74842,40}}})}}),
 q(30400,{coords={
@@ -8288,7 +8288,7 @@ o(211331,{coords={
 i(80513,{b=1,description="You don't need to keep this in your bags.",q=1})}})}),
 h(-58,{
 n(67565,{awp=50100,coords={
-[376]={{53.2,51.6}}},sourceQuests={32198},u=51,g={
+[376]={{53.2,51.6}}},phase=51,sourceQuests={32198},g={
 i(91806,{awp=50004,b=1,f=55,q=1})}}),
 n(58706,{coords={
 [376]={{53.2,51.6}}},g={
@@ -8346,7 +8346,7 @@ i(95457,{b=1,f=55,minReputation={1272,42000},q=1}),
 i(95447,{b=1,f=55,minReputation={1272,42000},q=1}),
 i(95445,{b=1,f=55,minReputation={1272,42000},q=1}),
 i(95454,{b=1,f=55,minReputation={1272,42000},q=1})}})})}}),
-cl(9,{awp=50200,description="The Warlock Green Fire is a special visual effect for Destruction Warlocks. To unlock it you will have to complete a series of warlock-exclusive quests related to the Council of the Black Harvest.\n\nTo start the quest you must first find a Sealed Tome of the Lost Legion from rares on the Isle of Thunder.",u=52,g={
+cl(9,{awp=50200,description="The Warlock Green Fire is a special visual effect for Destruction Warlocks. To unlock it you will have to complete a series of warlock-exclusive quests related to the Council of the Black Harvest.\n\nTo start the quest you must first find a Sealed Tome of the Lost Legion from rares on the Isle of Thunder.",phase=52,g={
 h(-45,{c={9},lvl=35,g={
 i(92426,{c={9},crs={50358,69664,69996,69997,69998,69999,70000,70001,70002,70003},lvl=90,maps={504},q=4}),
 i(92441,{b=1,c={9},cost={{"i",5512,1},{"i",92426,1}},lvl=90,maps={504},q=4}),
@@ -8376,7 +8376,7 @@ h(-652,{awp=50200,coords={
 [371]={{52.56,18.85}},
 [379]={{75.11,67.47}},
 [388]={{36.58,85.67}},
-[422]={{47.42,61.54}}},lvl=85,maps={418},u=52,g={
+[422]={{47.42,61.54}}},lvl=85,maps={418},phase=52,g={
 h(-12,{
 ach(8078)}),
 h(-19,{crs={69768,69769,69841,69842},g={

@@ -251,34 +251,34 @@ s(127257,15333,{f=3,lvl=17,q=2})}),
 flt(102,{
 toy(1973,{lvl=54,q=3})}),
 cat(106,{
-i(19236,{q=3,u=13}),
-i(19275,{q=3,u=13}),
-i(19284,{q=3,u=13}),
-i(19265,{q=3,u=13}),
-i(19233,{q=3,u=13}),
-i(19272,{q=3,u=13}),
-i(19281,{q=3,u=13}),
-i(19262,{q=3,u=13}),
-i(19232,{q=3,u=13}),
-i(19271,{q=3,u=13}),
-i(19280,{q=3,u=13}),
-i(19261,{q=3,u=13}),
-i(19235,{q=3,u=13}),
-i(19274,{q=3,u=13}),
-i(19283,{q=3,u=13}),
-i(19264,{q=3,u=13}),
-i(19234,{q=3,u=13}),
-i(19273,{q=3,u=13}),
-i(19282,{q=3,u=13}),
-i(19263,{q=3,u=13}),
-i(19231,{q=3,u=13}),
-i(19270,{q=3,u=13}),
-i(19279,{q=3,u=13}),
-i(19260,{q=3,u=13}),
-i(19230,{q=3,u=13}),
-i(19269,{q=3,u=13}),
-i(19278,{q=3,u=13}),
-i(19259,{q=3,u=13})}),
+i(19236,{phase=13,q=3}),
+i(19275,{phase=13,q=3}),
+i(19284,{phase=13,q=3}),
+i(19265,{phase=13,q=3}),
+i(19233,{phase=13,q=3}),
+i(19272,{phase=13,q=3}),
+i(19281,{phase=13,q=3}),
+i(19262,{phase=13,q=3}),
+i(19232,{phase=13,q=3}),
+i(19271,{phase=13,q=3}),
+i(19280,{phase=13,q=3}),
+i(19261,{phase=13,q=3}),
+i(19235,{phase=13,q=3}),
+i(19274,{phase=13,q=3}),
+i(19283,{phase=13,q=3}),
+i(19264,{phase=13,q=3}),
+i(19234,{phase=13,q=3}),
+i(19273,{phase=13,q=3}),
+i(19282,{phase=13,q=3}),
+i(19263,{phase=13,q=3}),
+i(19231,{phase=13,q=3}),
+i(19270,{phase=13,q=3}),
+i(19279,{phase=13,q=3}),
+i(19260,{phase=13,q=3}),
+i(19230,{phase=13,q=3}),
+i(19269,{phase=13,q=3}),
+i(19278,{phase=13,q=3}),
+i(19259,{phase=13,q=3})}),
 flt(57,{
 s(117538,1819,{collectible=false,f=21,lvl=17,q=0})}),
 flt(50,{
@@ -3238,7 +3238,7 @@ r(3297,{itemID=3608,learnedAt=145,q=2,requireSkill=164}),
 r(9966,{crs={10162,11583},itemID=7991,learnedAt=235,q=3,requireSkill=164}),
 r(9939,{itemID=7976,learnedAt=215,q=3,requireSkill=164}),
 r(9964,{itemID=7989,learnedAt=235,q=2,requireSkill=164}),
-r(27830,{crs={10162,11583},itemID=22390,learnedAt=300,q=4,requireSkill=164,u=15}),
+r(27830,{crs={10162,11583},itemID=22390,learnedAt=300,phase=15,q=4,requireSkill=164}),
 r(3513,{itemID=3874,learnedAt=185,q=2,requireSkill=164}),
 r(16645,{crs={10162,11583},itemID=12685,learnedAt=260,q=2,requireSkill=164}),
 r(16656,{itemID=12697,learnedAt=290,q=2,requireSkill=164}),
@@ -3248,7 +3248,7 @@ r(16654,{itemID=12695,learnedAt=285,q=2,requireSkill=164}),
 r(16725,{itemID=12713,learnedAt=300,q=2,requireSkill=164}),
 r(2667,{itemID=2881,learnedAt=80,q=2,requireSkill=164}),
 r(10009,{crs={10162,11583},itemID=8028,learnedAt=245,q=3,requireSkill=164}),
-r(27832,{crs={10162,11583},itemID=22389,learnedAt=300,q=4,requireSkill=164,u=15}),
+r(27832,{crs={10162,11583},itemID=22389,learnedAt=300,phase=15,q=4,requireSkill=164}),
 r(15973,{itemID=12261,learnedAt=190,q=2,requireSkill=164}),
 r(3500,{itemID=3869,learnedAt=200,q=2,requireSkill=164}),
 r(2673,{itemID=5578,learnedAt=130,q=2,requireSkill=164}),
@@ -3264,7 +3264,7 @@ r(16644,{itemID=12684,learnedAt=255,q=2,requireSkill=164}),
 r(16653,{itemID=12694,learnedAt=280,q=2,requireSkill=164}),
 r(16662,{itemID=12704,learnedAt=300,q=2,requireSkill=164}),
 r(16651,{crs={10162,11583},itemID=12692,learnedAt=275,q=2,requireSkill=164}),
-r(27829,{crs={10162,11583},itemID=22388,learnedAt=300,q=4,requireSkill=164,u=15}),
+r(27829,{crs={10162,11583},itemID=22388,learnedAt=300,phase=15,q=4,requireSkill=164}),
 r(16724,{crs={10162,11583},itemID=12711,learnedAt=300,q=3,requireSkill=164}),
 r(9997,{b=1,itemID=8029,learnedAt=225,q=2,requireSkill=164}),
 r(16650,{itemID=12691,learnedAt=270,q=2,requireSkill=164})}),
@@ -3315,7 +3315,7 @@ r(12615,{itemID=10605,learnedAt=225,q=3,requireSkill=202,rwp=20003,u=2}),
 r(19792,{itemID=16043,learnedAt=260,q=2,requireSkill=202,rwp=20003,u=2})}),
 prof(129,{
 r(7935,{itemID=6454,learnedAt=130,q=2,requireSkill=129,rwp=80001})}),
-prof(755,{awp=20005,u=17,g={
+prof(755,{awp=20005,phase=17,g={
 r(25622,{b=1,itemID=20976,learnedAt=190,q=2,requireSkill=755}),
 r(26909,{itemID=21953,learnedAt=285,q=2,requireSkill=755}),
 r(26896,{itemID=21947,learnedAt=250,q=2,requireSkill=755}),
@@ -3422,13 +3422,13 @@ r(21849,{c={11},collectible=false,itemID=17682,lvl=50,rank=1}),
 r(21850,{c={11},collectible=false,itemID=17683,lvl=60,rank=2})}),
 cl(8,{
 r(23028,{c={8},collectible=false,itemID=18600,lvl=56,rank=1}),
-r(28609,{c={8},collectible=false,itemID=22890,lvl=60,rank=5,u=16})}),
+r(28609,{c={8},collectible=false,itemID=22890,lvl=60,phase=16,rank=5})}),
 cl(5,{
 r(21562,{c={5},collectible=false,itemID=17413,lvl=48,rank=1}),
 r(21564,{c={5},collectible=false,itemID=17414,lvl=60,rank=2}),
-r(27683,{c={5},collectible=false,itemID=22393,lvl=60,rank=1,u=15})}),
+r(27683,{c={5},collectible=false,itemID=22393,lvl=60,phase=15,rank=1})}),
 cl(9,{
-r(28610,{c={9},collectible=false,itemID=22891,lvl=60,rank=4,u=16})})}),
+r(28610,{c={9},collectible=false,itemID=22891,lvl=60,phase=16,rank=4})})}),
 flt(56,{
 i(35562,{awp=20400,coords={
 [77]={{39,45.2},{43.5,63},{46.1,83},{54.1,86.7}}},crs={8956,8958},description="Drops from bears in highlevel vanilla zones like Angerclaw bears in Felwood.",q=1}),
@@ -3639,7 +3639,7 @@ i(12205,{coords={
 [70]={{34.1,22.5},{55.2,54.8}}},crs={4376,4378,4379,4415},description="Drops from spiders in higher intermediate to highlevel vanilla zones like spiders in Dustwallow Marsh.",q=1}),
 i(8153,{description="Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source.",q=2}),
 i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={47,56,63,221,225},q=1})})}}),
-x(2,{awp=20003,u=17,g={
+x(2,{awp=20003,phase=17,g={
 flt(3,{
 s(135398,25043,{f=3,lvl=70,q=2}),
 s(135396,25041,{f=3,lvl=68,q=2}),
@@ -4612,7 +4612,7 @@ i(30810,{coords={
 i(22153,{c={8},f=200,lvl=70}),
 i(31501,{c={8},f=200,lvl=70}),
 i(29550,{c={8},f=200,lvl=70})}),
-cat(106,{u=19,g={
+cat(106,{phase=19,g={
 i(31882,{q=3}),
 i(31901,{q=3}),
 i(31910,{q=3}),
@@ -4855,7 +4855,7 @@ r(31434,{itemID=24296,learnedAt=350,q=3,requireSkill=197}),
 r(31442,{itemID=24302,learnedAt=365,q=4,requireSkill=197}),
 r(31449,{itemID=24306,learnedAt=365,q=4,requireSkill=197}),
 r(31441,{itemID=24301,learnedAt=350,q=3,requireSkill=197})})})}}),
-x(3,{awp=30003,u=30,g={
+x(3,{awp=30003,phase=30,g={
 flt(3,{awp=30002,g={
 s(170817,36411,{f=3,lvl=75,q=2}),
 s(170816,36410,{f=3,lvl=74,q=2}),
@@ -5949,7 +5949,7 @@ i(43010,{coords={
 [114]={{82.2,31.3}},
 [115]={{51.3,23.9},{57.3,12.3}},
 [120]={{27.6,46.7},{47.1,54.9},{55.9,64.2}}},crs={25454,26293,26358,26359,26467,29390,30148,30291,30422},q=1})}})}}),
-x(4,{awp=40003,u=40,g={
+x(4,{awp=40003,phase=40,g={
 flt(3,{
 s(203775,55315,{f=3,lvl=84,q=2}),
 s(210981,66991,{f=3,lvl=84,q=3}),
@@ -6694,7 +6694,7 @@ i(52325,{coords={
 i(52329,{providers={{"i",67495},{"i",67539},{"i",69817},{"o",202747},{"o",202748},{"o",202749},{"o",202750},{"o",202751},{"o",202752}},q=1}),
 i(52326,{coords={
 [241]={{33,63.8},{68.1,48.8}}},crs={44011,46329},description="Protip: Do not forget Potion of Treasure Finding when farming the mobs.",providers={{"i",67495},{"i",67539},{"o",207724}},q=1})})}}),
-x(5,{awp=50004,u=50,g={
+x(5,{awp=50004,phase=50,g={
 h(-51,{
 s(268897,82139,{f=4,loc=45,lvl=86,q=2}),
 s(268898,82140,{f=4,loc=40,lvl=86,q=2}),
@@ -7242,18 +7242,18 @@ s(272441,87475,{f=27,lvl=83,q=3}),
 s(272444,87478,{f=27,lvl=81,q=3})})}),
 flt(200,{
 prof(164,{
-i(100865,{awp=50400,b=1,f=50,q=3,requireSkill=164,u=54,g={
+i(100865,{awp=50400,b=1,f=50,phase=54,q=3,requireSkill=164,g={
 r(146921,{learnedAt=605,requireSkill=164}),
 r(143255,{learnedAt=605,requireSkill=164})}})}),
 prof(202,{
-i(94847,{awp=50300,b=1,f=50,q=3,requireSkill=202,rwp=50400,u=2}),
-i(100910,{awp=50400,b=1,f=50,q=3,requireSkill=202,u=54,g={
+i(94847,{awp=50300,b=1,f=50,phase=53,q=3,requireSkill=202,rwp=50400,u=2}),
+i(100910,{awp=50400,b=1,f=50,phase=54,q=3,requireSkill=202,g={
 r(139197,{learnedAt=600,requireSkill=202}),
 r(139176,{learnedAt=600,requireSkill=202}),
 r(139196,{learnedAt=600,requireSkill=202}),
 r(143714,{learnedAt=600,requireSkill=202}),
 r(139192,{learnedAt=600,requireSkill=202})}}),
-q(32630,{awp=50300,qss={94847},rwp=50400,u=2})}),
+q(32630,{awp=50300,phase=53,qss={94847},rwp=50400,u=2})}),
 prof(773,{
 r(146638,{awp=50400,b=1,itemID=102534,learnedAt=600,q=2,requireSkill=773}),
 r(148275,{awp=50400,b=1,itemID=104228,learnedAt=500,q=2,requireSkill=773}),
@@ -7292,19 +7292,19 @@ r(107763,{b=1,itemID=83859,learnedAt=575,q=3,requireSkill=755}),
 r(107764,{b=1,itemID=83862,learnedAt=575,q=3,requireSkill=755}),
 r(107765,{b=1,itemID=83872,learnedAt=575,q=3,requireSkill=755}),
 r(107766,{b=1,itemID=83901,learnedAt=575,q=3,requireSkill=755}),
-r(140060,{awp=50200,b=1,itemID=95471,learnedAt=500,q=3,requireSkill=755,u=52}),
+r(140060,{awp=50200,b=1,itemID=95471,learnedAt=500,phase=52,q=3,requireSkill=755}),
 r(107767,{b=1,itemID=83925,learnedAt=575,q=3,requireSkill=755}),
 r(107768,{b=1,itemID=83926,learnedAt=575,q=3,requireSkill=755}),
-r(140050,{awp=50200,b=1,itemID=95470,learnedAt=500,q=3,requireSkill=755,u=52})}),
+r(140050,{awp=50200,b=1,itemID=95470,learnedAt=500,phase=52,q=3,requireSkill=755})}),
 prof(165,{
-r(146613,{awp=50400,b=1,description="Requires maxed Pandaria leatherworking skill to drop.",itemID=102513,learnedAt=600,q=2,requireSkill=165,u=54}),
-i(100864,{awp=50400,b=1,description="Requires maxed Pandaria leatherworking skill to drop.",f=50,q=3,requireSkill=165,u=54,g={
+r(146613,{awp=50400,b=1,description="Requires maxed Pandaria leatherworking skill to drop.",itemID=102513,learnedAt=600,phase=54,q=2,requireSkill=165}),
+i(100864,{awp=50400,b=1,description="Requires maxed Pandaria leatherworking skill to drop.",f=50,phase=54,q=3,requireSkill=165,g={
 r(146923,{learnedAt=605,requireSkill=165}),
 r(142976,{learnedAt=605,requireSkill=165})}}),
 r(140040,{awp=50200,b=1,itemID=95467,learnedAt=500,q=2,requireSkill=165}),
 r(140041,{awp=50200,b=1,itemID=95468,learnedAt=500,q=2,requireSkill=165})}),
 prof(197,{
-i(100863,{awp=50400,b=1,f=50,q=3,requireSkill=197,u=54,g={
+i(100863,{awp=50400,b=1,f=50,phase=54,q=3,requireSkill=197,g={
 r(146925,{learnedAt=600,requireSkill=197}),
 r(143011,{learnedAt=600,requireSkill=197})}})})}),
 flt(50,{

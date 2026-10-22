@@ -3963,6 +3963,13 @@ local phases = {
 		buildVersion = 11307,
 		state = 2,
 	},
+	[1604] = {
+		name = "Season of Mastery",
+		description = "|cFFAAFFAAThis was only available during Season of Mastery.|r",
+		lore = "|cFFFFAAAAIf Season of Mastery is active on your server, simply turn this on.|r",
+		minimumBuildVersion = 11301,
+		state = 2,
+	},
 } L.PHASES = phases
 -- Achievement Data Module
 local achievements = {
@@ -26320,6 +26327,7 @@ for key,value in pairs({
 	[1601] = "Invasión de la Plaga",
 	[1602] = "Silitista",
 	[1603] = "Era Clásica",
+	[1604] = "Temporada de maestría",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -26343,6 +26351,7 @@ for key,value in pairs({
 	[1601] = "|cFFAAFFAAEsto solo estaba disponible durante la Invasión de la Plaga.|r",
 	[1602] = "|cFFAAFFAAEsto solo estuvo disponible durante el evento JcJ de mundo El silitista debe fluir.|r",
 	[1603] = "|cFFAAFFAAEsto solo estuvo disponible después del inicio de la Era Clásica.|r",
+	[1604] = "|cFFAAFFAAEsto solo estuvo disponible durante la Temporada de maestría.|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -26361,6 +26370,7 @@ for key,value in pairs({
 	[1601] = "|cFFFFAAAASi la invasión de la Plaga ha finalizado en tu servidor, simplemente desactiva esta opción.|r",
 	[1602] = "|cFFFFAAAASi el evento JcJ de mundo está disponible, simplemente actívelo.|r",
 	[1603] = "|cFFFFAAAASi la Era Clásica ha comenzado, simplemente active esto.|r",
+	[1604] = "|cFFFFAAAASi la Temporada de Maestría está activa en tu servidor, simplemente actíva esto.|r",
 })
 do phases[key].lore = value; end
 for key,value in pairs({
@@ -30957,6 +30967,7 @@ for key,value in pairs({
 	[1601] = "天灾入侵",
 	[1602] = "水晶尘",
 	[1603] = "经典时代",
+	[1604] = "赛季服",
 })
 do phases[key].name = value; end
 for key,value in pairs({
@@ -30980,6 +30991,7 @@ for key,value in pairs({
 	[1601] = "|cFFAAFFAA这仅在天灾入侵期间可用。|r",
 	[1602] = "|cFFAAFFAA这仅在“水晶尘必须流动”世界 PVP 活动期间可用。|r",
 	[1603] = "|cFFAAFFAA这仅在经典时代开始后才可用。|r",
+	[1604] = "|cFFAAFFAA这仅在赛季服期间可用。|r",
 })
 do phases[key].description = value; end
 for key,value in pairs({
@@ -30998,6 +31010,7 @@ for key,value in pairs({
 	[1601] = "|cFFFFAAAA如果您的服务器上的天灾入侵已经结束，只需关闭此功能即可。|r",
 	[1602] = "|cFFFFAAAA如果世界 PVP 活动可用，只需将其开启即可。|r",
 	[1603] = "|cFFFFAAAA如果经典时代已经开始，只需打开这个开关即可。|r",
+	[1604] = "|cFFFFAAAA如果您的服务器已启用赛季，只需开启此选项即可。|r",
 })
 do phases[key].lore = value; end
 for key,value in pairs({
@@ -33667,6 +33680,7 @@ for key,value in pairs({
 	[4] = "PvP 精良/鬥士",
 	[5] = "不可學",
 	[7] = "貿易站",
+	[1604] = "大師賽季",
 })
 do phases[key].name = value; end
 for key,value in pairs({
