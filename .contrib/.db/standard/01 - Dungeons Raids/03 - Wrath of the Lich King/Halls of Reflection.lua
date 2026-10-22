@@ -2,6 +2,23 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local FALRIC = 601;
+local MARWYN = 602;
+local LICH_KING = 603;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[FALRIC] = { 38112 },	-- Falric
+	[MARWYN] = { 38113 },	-- Marwyn
+	[LICH_KING] = { 36954 },	-- The Lich King
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty
+
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ ["timeline"] = { ADDED_3_3_0 } }, {
 	inst(276, {	-- Halls of Reflection
 		["mapID"] = HALLS_OF_REFLECTION,
@@ -10,25 +27,37 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4518, {	-- The Halls of Reflection
+					-- #if AFTER 7.3.5
 					crit(13320, {	-- Falric
-						["_encounter"] = { 601, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { FALRIC, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(13321, {	-- Marwyn
-						["_encounter"] = { 602, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { MARWYN, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(13323, {	-- Survive the encounter with the Lich King
-						["_encounter"] = { 603, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { LICH_KING, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
+					-- #else
+					crit(13320, {	-- Falric
+						["_encounter"] = { FALRIC, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(13321, {	-- Marwyn
+						["_encounter"] = { MARWYN, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(13323, {	-- Survive the encounter with the Lich King
+						["_encounter"] = { LICH_KING, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					-- #endif
 				}),
 				ach(4521, {	-- Heroic: The Halls of Reflection
 					crit(13177, {	-- Falric
-						["_encounter"] = { 601, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { FALRIC, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(13179, {	-- Marwyn
-						["_encounter"] = { 602, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { MARWYN, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(13181, {	-- Survive the encounter with the Lich King
-						["_encounter"] = { 603, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { LICH_KING, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -60,224 +89,165 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
+			-- #if AFTER 7.3.5
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					a(i(50379)),	-- Battered Hilt [A]
+					h(i(50380)),	-- Battered Hilt [H]
+					i(49852),	-- Coffin Nail
+					i(50318),	-- Ghostly Wristwraps
+					i(49854),	-- Mantle of Tattered Feathers
+					i(49855),	-- Plated Grips of Korth'azz
+					i(50315),	-- Seven-Fingered Claws
+					i(49853),	-- Titanium Links of Lore
+					i(50319),	-- Unsharpened Ice Razor
+				}),
+				BossOnly(FALRIC, {
+					i(50292),	-- Bracer of Worn Molars
+					i(50294),	-- Chestpiece of High Treason
+					i(49832),	-- Eerie Runeblade Polisher
+					i(49830),	-- Fallen Sentry's Hood
+					i(50290),	-- Falric's Wrist-Chopper
+					i(49827),	-- Ghoulslicer
+					i(49828),	-- Marwyn's Macabre Fingertips
+					i(49831),	-- Muddied Boots of Brill
+					i(50291),	-- Soulsplinter
+					i(50293),	-- Spaulders of Black Betrayal
+					i(50295),	-- Spiked Toestompers
+					i(49829),	-- Valonforth's Tarnished Pauldrons
+				}),
+				BossOnly(MARWYN, {
+					i(49838),	-- Carpal Tunnelers
+					i(50300),	-- Choking Hauberk
+					i(50260),	-- Ephemeral Snowflake
+					i(49834),	-- Frayed Abomination Stitching Shoulders
+					i(50297),	-- Frostsworn Bone Chestpiece
+					i(49836),	-- Frostsworn Bone Leggings
+					i(49837),	-- Mitts of Burning Hail
+					i(50296),	-- Orca-Hunter's Harpoon
+					i(50298),	-- Sightless Crown of Ulmaas
+					i(49835),	-- Splintered Door of the Citadel
+					i(49833),	-- Splintered Icecrown Parapet
+					i(50299),	-- Suspiciously Soft Gloves
+				}),
+				BossOnly(LICH_KING, {
+					i(50303),	-- Black Icicle
+					i(49841),	-- Blackened Geist Ribs
+					i(50308),	-- Blighted Leather Footpads
+					i(49845),	-- Bone Golem Scapula
+					i(50312),	-- Chestguard of Broken Branches
+					i(49846),	-- Chilled Heart of the Glacier
+					i(49844),	-- Crypt Fiend Slayer
+					i(49843),	-- Crystalline Citadel Gauntlets
+					i(50310),	-- Fossilized Ammonite Choker
+					i(49851),	-- Greathelm of the Silver Hand
+					i(49848),	-- Grim Lasher Shoulderguards
+					i(50305),	-- Grinning Skull Boots
+					i(49840),	-- Hate-Forged Cleaver
+					i(50304),	-- Hoarfrost Gauntlets
+					i(49847),	-- Legguards of Untimely Demise
+					i(50302),	-- Liar's Tongue
+					i(49839),	-- Mourning Malice
+					i(50313),	-- Oath of Empress Zoe
+					i(50311),	-- Second Helm of the Executioner
+					i(50309),	-- Shriveled Heart
+					i(50314),	-- Strip of Remorse
+					i(49842),	-- Tapestry of the Frozen Throne
+					i(49849),	-- Tattered Glacial-Woven Hood
+					i(50306),	-- The Lady's Promise
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+				BossOnly(FALRIC),
+				BossOnly(MARWYN),
+				BossOnly(LICH_KING, {
+					ach(5114, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: The Halls of Reflection Guild Run
+					ach(4526),	-- We're Not Retreating; We're Advancing in a Different Direction.
+				}),
+			}),
+			-- #else
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 				n(ZONE_DROPS, {
 					i(49852),	-- Coffin Nail
 					i(49854),	-- Mantle of Tattered Feathers
 					i(49855),	-- Plated Grips of Korth'azz
 					i(49853),	-- Titanium Links of Lore
 				}),
-				e(601, {	-- Falric
-					["creatureID"] = 38112,	-- Falric
-					["groups"] = {
-						-- #if AFTER 7.3.5
-						i(50290),	-- Falric's Wrist-Chopper (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49827),	-- Ghoulslicer
-						-- #if AFTER 7.3.5
-						i(50291),	-- Soulsplinter (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49830),	-- Fallen Sentry's Hood
-						-- #if AFTER 7.3.5
-						i(50293),	-- Spaulders of Black Betrayal (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49829),	-- Valonforth's Tarnished Pauldrons
-						i(49832),	-- Eerie Runeblade Polisher
-						-- #if AFTER 7.3.5
-						i(50294),	-- Chestpiece of High Treason (7.3.5 - Used to be only Heroic Mode)
-						i(50292),	-- Bracer of Worn Molars (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49828),	-- Marwyn's Macabre Fingertips
-						i(49831),	-- Muddied Boots of Brill
-						-- #if AFTER 7.3.5
-						i(50295),	-- Spiked Toestompers (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(FALRIC, {
+					i(49832),	-- Eerie Runeblade Polisher
+					i(49830),	-- Fallen Sentry's Hood
+					i(49827),	-- Ghoulslicer
+					i(49828),	-- Marwyn's Macabre Fingertips
+					i(49831),	-- Muddied Boots of Brill
+					i(49829),	-- Valonforth's Tarnished Pauldrons
 				}),
-				e(602, {	-- Marwyn
-					["creatureID"] = 38113,	-- Marwyn
-					["groups"] = {
-						-- #if AFTER 7.3.5
-						i(50296),	-- Orca-Hunter's Harpoon (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49833),	-- Splintered Icecrown Parapet
-						i(49835),	-- Splintered Door of the Citadel
-						-- #if AFTER 7.3.5
-						i(50298),	-- Sightless Crown of Ulmaas (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49834),	-- Frayed Abomination Stitching Shoulders
-						-- #if AFTER 7.3.5
-						i(50300),	-- Choking Hauberk (7.3.5 - Used to be only Heroic Mode)
-						i(50297),	-- Frostsworn Bone Chestpiece (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49838),	-- Carpal Tunnelers
-						i(49837),	-- Mitts of Burning Hail
-						-- #if AFTER 7.3.5
-						i(50299),	-- Suspiciously Soft Gloves (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49836),	-- Frostsworn Bone Leggings
-						-- #if AFTER 7.3.5
-						i(50260),	-- Ephemeral Snowflake (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(MARWYN, {
+					i(49838),	-- Carpal Tunnelers
+					i(49834),	-- Frayed Abomination Stitching Shoulders
+					i(49836),	-- Frostsworn Bone Leggings
+					i(49837),	-- Mitts of Burning Hail
+					i(49835),	-- Splintered Door of the Citadel
+					i(49833),	-- Splintered Icecrown Parapet
 				}),
-				e(603, {	-- Escape from Arthas
-					["creatureID"] = 36954,	-- The Lich King
-					["groups"] = {
-						i(49839),	-- Mourning Malice
-						-- #if AFTER 7.3.5
-						i(50303),	-- Black Icicle (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49845),	-- Bone Golem Scapula
-						i(49846),	-- Chilled Heart of the Glacier
-						i(49840),	-- Hate-Forged Cleaver
-						-- #if AFTER 7.3.5
-						i(50302),	-- Liar's Tongue (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49844),	-- Crypt Fiend Slayer
-						-- #if AFTER 7.3.5
-						i(50309),	-- Shriveled Heart (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49851),	-- Greathelm of the Silver Hand
-						-- #if AFTER 7.3.5
-						i(50311),	-- Second Helm of the Executioner (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49849),	-- Tattered Glacial-Woven Hood
-						-- #if AFTER 7.3.5
-						i(50310),	-- Fossilized Ammonite Choker (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49848),	-- Grim Lasher Shoulderguards
-						i(49842),	-- Tapestry of the Frozen Throne
-						i(49841),	-- Blackened Geist Ribs
-						-- #if AFTER 7.3.5
-						i(50312),	-- Chestguard of Broken Branches (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49843),	-- Crystalline Citadel Gauntlets
-						-- #if AFTER 7.3.5
-						i(50304),	-- Hoarfrost Gauntlets (7.3.5 - Used to be only Heroic Mode)
-						i(50314),	-- Strip of Remorse (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49847),	-- Legguards of Untimely Demise
-						-- #if AFTER 7.3.5
-						i(50308),	-- Blighted Leather Footpads (7.3.5 - Used to be only Heroic Mode)
-						i(50305),	-- Grinning Skull Boots (7.3.5 - Used to be only Heroic Mode)
-						i(50313),	-- Oath of Empress Zoe (7.3.5 - Used to be only Heroic Mode)
-						i(50306),	-- The Lady's Promise (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(LICH_KING, {
+					i(49841),	-- Blackened Geist Ribs
+					i(49845),	-- Bone Golem Scapula
+					i(49846),	-- Chilled Heart of the Glacier
+					i(49844),	-- Crypt Fiend Slayer
+					i(49843),	-- Crystalline Citadel Gauntlets
+					i(49851),	-- Greathelm of the Silver Hand
+					i(49848),	-- Grim Lasher Shoulderguards
+					i(49840),	-- Hate-Forged Cleaver
+					i(49847),	-- Legguards of Untimely Demise
+					i(49839),	-- Mourning Malice
+					i(49842),	-- Tapestry of the Frozen Throne
+					i(49849),	-- Tattered Glacial-Woven Hood
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["lvl"] = lvlsquish(80, 80, 30),
-				["groups"] = {
-					n(ZONE_DROPS, {
-						a(i(50379)),	-- Battered Hilt [A]
-						h(i(50380)),	-- Battered Hilt [H]
-						i(50318),	-- Ghostly Wristwraps
-						i(50315),	-- Seven-Fingered Claws
-						i(50319),	-- Unsharpened Ice Razor
-					}),
-					e(601, {	-- Falric
-						["creatureID"] = 38112,	-- Falric
-						["groups"] = {
-							i(50290),	-- Falric's Wrist-Chopper
-							-- #if AFTER 7.3.5
-							i(49827),	-- Ghoulslicer (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50291),	-- Soulsplinter
-							-- #if AFTER 7.3.5
-							i(49830),	-- Fallen Sentry's Hood (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50293),	-- Spaulders of Black Betrayal
-							-- #if AFTER 7.3.5
-							i(49829),	-- Valonforth's Tarnished Pauldrons (7.3.5 - Used to be only Normal Mode)
-							i(49832),	-- Eerie Runeblade Polisher (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50294),	-- Chestpiece of High Treason
-							i(50292),	-- Bracer of Worn Molars
-							-- #if AFTER 7.3.5
-							i(49828),	-- Marwyn's Macabre Fingertips (7.3.5 - Used to be only Normal Mode)
-							i(49831),	-- Muddied Boots of Brill (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50295),	-- Spiked Toestompers
-						},
-					}),
-					e(602, {	-- Marwyn
-						["creatureID"] = 38113,	-- Marwyn
-						["groups"] = {
-							i(50296),	-- Orca-Hunter's Harpoon
-							-- #if AFTER 7.3.5
-							i(49833),	-- Splintered Icecrown Parapet (7.3.5 - Used to be only Normal Mode)
-							i(49835),	-- Splintered Door of the Citadel (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50298),	-- Sightless Crown of Ulmaas
-							-- #if AFTER 7.3.5
-							i(49834),	-- Frayed Abomination Stitching Shoulders (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50300),	-- Choking Hauberk
-							i(50297),	-- Frostsworn Bone Chestpiece
-							-- #if AFTER 7.3.5
-							i(49838),	-- Carpal Tunnelers (7.3.5 - Used to be only Normal Mode)
-							i(49837),	-- Mitts of Burning Hail (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50299),	-- Suspiciously Soft Gloves
-							-- #if AFTER 7.3.5
-							i(49836),	-- Frostsworn Bone Leggings (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50260),	-- Ephemeral Snowflake
-						},
-					}),
-					e(603, {	-- Escape from Arthas
-						["creatureID"] = 36954,	-- The Lich King
-						["groups"] = {
-							ach(5114, {	-- Heroic: The Halls of Reflection Guild Run
-								["timeline"] = { ADDED_4_0_3 },
-							}),
-							ach(4526),	-- We're Not Retreating; We're Advancing in a Different Direction.
-							-- #if AFTER 7.3.5
-							i(49839),	-- Mourning Malice (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50303),	-- Black Icicle
-							-- #if AFTER 7.3.5
-							i(49845),	-- Bone Golem Scapula (7.3.5 - Used to be only Normal Mode)
-							i(49846),	-- Chilled Heart of the Glacier (7.3.5 - Used to be only Normal Mode)
-							i(49840),	-- Hate-Forged Cleaver (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50302),	-- Liar's Tongue
-							-- #if AFTER 7.3.5
-							i(49844),	-- Crypt Fiend Slayer (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50309),	-- Shriveled Heart
-							-- #if AFTER 7.3.5
-							i(49851),	-- Greathelm of the Silver Hand (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50311),	-- Second Helm of the Executioner
-							-- #if AFTER 7.3.5
-							i(49849),	-- Tattered Glacial-Woven Hood (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50310),	-- Fossilized Ammonite Choker
-							-- #if AFTER 7.3.5
-							i(49848),	-- Grim Lasher Shoulderguards (7.3.5 - Used to be only Normal Mode)
-							i(49842),	-- Tapestry of the Frozen Throne (7.3.5 - Used to be only Normal Mode)
-							i(49841),	-- Blackened Geist Ribs (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50312),	-- Chestguard of Broken Branches
-							-- #if AFTER 7.3.5
-							i(49843),	-- Crystalline Citadel Gauntlets (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50304),	-- Hoarfrost Gauntlets
-							i(50314),	-- Strip of Remorse
-							-- #if AFTER 7.3.5
-							i(49847),	-- Legguards of Untimely Demise (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50308),	-- Blighted Leather Footpads
-							i(50305),	-- Grinning Skull Boots
-							i(50313),	-- Oath of Empress Zoe
-							i(50306),	-- The Lady's Promise
-						},
-					}),
-				},
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+				n(ZONE_DROPS, {
+					a(i(50379)),	-- Battered Hilt [A]
+					h(i(50380)),	-- Battered Hilt [H]
+					i(50318),	-- Ghostly Wristwraps
+					i(50315),	-- Seven-Fingered Claws
+					i(50319),	-- Unsharpened Ice Razor
+				}),
+				BossOnly(FALRIC, {
+					i(50292),	-- Bracer of Worn Molars
+					i(50294),	-- Chestpiece of High Treason
+					i(50290),	-- Falric's Wrist-Chopper
+					i(50291),	-- Soulsplinter
+					i(50293),	-- Spaulders of Black Betrayal
+					i(50295),	-- Spiked Toestompers
+				}),
+				BossOnly(MARWYN, {
+					i(50300),	-- Choking Hauberk
+					i(50260),	-- Ephemeral Snowflake
+					i(50297),	-- Frostsworn Bone Chestpiece
+					i(50296),	-- Orca-Hunter's Harpoon
+					i(50298),	-- Sightless Crown of Ulmaas
+					i(50299),	-- Suspiciously Soft Gloves
+				}),
+				BossOnly(LICH_KING, {
+					ach(5114, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: The Halls of Reflection Guild Run
+					ach(4526),	-- We're Not Retreating; We're Advancing in a Different Direction.
+					i(50303),	-- Black Icicle
+					i(50308),	-- Blighted Leather Footpads
+					i(50312),	-- Chestguard of Broken Branches
+					i(50310),	-- Fossilized Ammonite Choker
+					i(50305),	-- Grinning Skull Boots
+					i(50304),	-- Hoarfrost Gauntlets
+					i(50302),	-- Liar's Tongue
+					i(50313),	-- Oath of Empress Zoe
+					i(50311),	-- Second Helm of the Executioner
+					i(50309),	-- Shriveled Heart
+					i(50314),	-- Strip of Remorse
+					i(50306),	-- The Lady's Promise
+				}),
 			}),
+			-- #endif
 		},
 	}),
 }))));
