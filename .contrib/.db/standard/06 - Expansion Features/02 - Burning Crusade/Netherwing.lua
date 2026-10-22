@@ -301,8 +301,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					sourceQuest = 11014,	-- Enter the Taskmaster
 					qg = 23140,	-- Taskmaster Varkule Dragonbreath
 					maxReputation = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
-					cost = { { "i", 32427, 30 } },	-- Netherwing Crystals
 					isDaily = true,
+					groups = {
+						objective(1, {	-- 0/30 Netherwing Crystals
+							cost = { { "i", 32427, 30 } },	-- Netherwing Crystals
+						}),
+					},
 				}),
 				q(11111, {	-- Onyxien the Onyx Netherwing Drake
 					sourceQuest = 11107,	-- Bow to the Highlord
@@ -439,7 +443,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					sourceQuest = 11019,	-- Your Friend on the Inside
 					qg = 23141,	-- Yarzill the Merc
 					coord = { 65.9, 86.4, SHADOWMOON_VALLEY },
-					cost = { { "i", 32506, 1 } },	-- Netherwing Egg
+					groups = {
+						objective(1, {	-- 0/1 Netherwing Egg
+							cost = { { "i", 32506, 1 } },	-- Netherwing Egg
+						}),
+					},
 				}),
 				q(11075, {	-- The Netherwing Mines
 					sourceQuest = 11053,	-- Rise, Overseer!
