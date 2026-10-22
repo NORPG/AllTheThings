@@ -3992,33 +3992,33 @@ i(43652,{coords={
 [125]={{63.8,64.3}}},description="Can be caught outside Violet Hold on both WotLK and Legion Dalaran.",lvl=70,q=1}),
 i(45904,{maps_disp={123},q=1}),
 o(192051,{description="Can be found on the seaside.",maps={114},g={
-crit(5278,{achID=1517,id=2})}}),
+crit(5278,{achID=1517,id=2,phase=30})}}),
 o(192053,{coords={
 [114]={{31.1,67.6},{33.5,66.6}},
 [115]={{50.1,69.7}},
 [117]={{82.9,90.3}}},description="Have shared spawn with Moonglow Cuttlefish Schools. Borean Tundra have most schools.",g={
-crit(5279,{achID=1517,id=3})}}),
+crit(5279,{achID=1517,id=3,phase=30})}}),
 o(192048,{coords={
 [115]={{40.1,67.7},{89.9,38.5},{91,28.6},{92,69},{92.8,58.2},{92.9,48.2}}},g={
-crit(5280,{achID=1517,id=4})}}),
+crit(5280,{achID=1517,id=4,phase=30})}}),
 o(192049,{description="Can be found in inland waters.",maps={117},g={
-crit(5281,{achID=1517,id=5})}}),
+crit(5281,{achID=1517,id=5,phase=30})}}),
 o(192050,{description="Can be found in inland waters.",maps={116},g={
-crit(5282,{achID=1517,id=6})}}),
+crit(5282,{achID=1517,id=6,phase=30})}}),
 o(192059,{maps={127},g={
-crit(5283,{achID=1517,id=7})}}),
+crit(5283,{achID=1517,id=7,phase=30})}}),
 o(192052,{description="Schools can be found on the seaside.",maps={114,115,116,117},g={
-crit(5284,{achID=1517,id=8})}}),
+crit(5284,{achID=1517,id=8,phase=30})}}),
 o(192054,{coords={
 [114]={{31.1,67.6},{33.5,66.6}},
 [115]={{50.1,69.7}},
 [117]={{82.9,90.3}}},description="Have shared spawn with Deep Sea Monsterbelly Schools. Borean Tundra have most schools.",g={
-crit(5285,{achID=1517,id=9})}}),
+crit(5285,{achID=1517,id=9,phase=30})}}),
 o(192046,{coords={
 [114]={{51.6,45}}},g={
-crit(5286,{achID=1517,id=10})}}),
+crit(5286,{achID=1517,id=10,phase=30})}}),
 o(192057,{maps={119},g={
-crit(5287,{achID=1517,id=11})}}),
+crit(5287,{achID=1517,id=11,phase=30})}}),
 o(194479,{maps={114}}),
 flt(200,{
 r(43308,{b=1,description="Can be fished from schools.",itemID=34109,learnedAt=100,q=1,requireSkill=356})})}}),
@@ -5957,8 +5957,8 @@ i(54442,{f=55,q=1,requireSkill=197})}),
 flt(56,{
 i(53643,{q=1}),
 i(54440,{b=1,q=3})})}})}}),
-x(5,{awp=50004,phase=50,g={
-prof(171,{
+x(5,{awp=50004,g={
+prof(171,{phase=50,g={
 h(-26,{
 r(114774,{learnedAt=575,requireSkill=171}),
 r(114761,{learnedAt=550,requireSkill=171}),
@@ -6030,8 +6030,8 @@ i(72095,{q=2}),
 i(76140,{q=3}),
 i(76139,{q=3})}),
 flt(53,{
-i(75274,{awp=50200,b=1,f=53,lvl=85,q=3,requireSkill=171})})}),
-prof(794,{
+i(75274,{awp=50200,b=1,f=53,lvl=85,q=3,requireSkill=171})})}}),
+prof(794,{phase=50,g={
 i(95373,{awp=50200,q=2}),
 i(79869,{q=2}),
 i(79868,{q=2}),
@@ -6100,8 +6100,8 @@ s(273736,89685,{b=2,cost={{"c",676,180}},f=29,lvl=85,q=3}),
 i(79905,{b=1,cost={{"c",676,50}},q=1}),
 i(79898,{b=1,cost={{"c",676,50}},q=1}),
 s(273735,89684,{b=2,cost={{"c",676,180}},f=1,lvl=85,q=3}),
-i(79899,{b=1,cost={{"c",676,50}},q=1})}})}),
-prof(164,{
+i(79899,{b=1,cost={{"c",676,50}},q=1})}})}}),
+prof(164,{phase=50,g={
 h(-26,{
 ah(143255,{awp=50400,cost={{"i",72095,1}},phase=54,type="s",g={
 r(142959,{learnedAt=605,providers={{"s",143255}},requireSkill=164}),
@@ -6370,8 +6370,8 @@ s(269479,82962,{f=8,lvl=85,q=2}),
 s(276723,94586,{awp=50200,f=24,lvl=90,phase=52,q=4}),
 s(276712,94575,{awp=50200,f=21,lvl=90,phase=52,q=3}),
 s(276719,94582,{awp=50200,f=24,lvl=90,phase=52,q=3}),
-s(276716,94579,{awp=50200,f=21,lvl=90,phase=52,q=4})})}),
-prof(185,{
+s(276716,94579,{awp=50200,f=21,lvl=90,phase=52,q=4})})}}),
+prof(185,{phase=50,g={
 i(86432,{f=55,lvl=87,q=1}),
 i(87246,{f=55,lvl=90,q=1}),
 i(87226,{f=55,lvl=90,q=1}),
@@ -6438,8 +6438,8 @@ i(74647,{f=55,lvl=87,q=1}),
 i(85501,{f=55,lvl=85,q=1}),
 i(86070,{f=55,lvl=87,q=1}),
 i(74654,{f=55,lvl=85,q=1}),
-i(81401,{f=55,lvl=85,q=1})}),
-prof(333,{
+i(81401,{f=55,lvl=85,q=1})}}),
+prof(333,{phase=50,g={
 ah(13262,{type="s",g={
 i(80433,{description="Can be obtained by disenchanting epics from Mogu'shan Vaults, Heart of Fear, or Terrace of the Eternal Spring",q=3}),
 i(74247,{q=3}),
@@ -6480,8 +6480,8 @@ i(74725,{q=3}),
 i(74724,{q=3}),
 i(74728,{q=3}),
 i(74723,{q=3}),
-i(254314,{awp=50501,phase=52,q=3})})}),
-prof(202,{
+i(254314,{awp=50501,phase=52,q=3})})}}),
+prof(202,{phase=50,g={
 prof(20219,{description="These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",g={
 flt(100,{
 mnt(126508,{itemID=87251,lvl=20,q=3})})}}),
@@ -6544,11 +6544,11 @@ s(267354,77527,{f=31,lvl=85,q=3}),
 s(267355,77528,{f=31,lvl=90,q=3})}),
 h(-245,{
 i(77529,{lvl=85,q=3}),
-i(77531,{lvl=85,q=3})})}),
-prof(129,{
+i(77531,{lvl=85,q=3})})}}),
+prof(129,{phase=50,g={
 i(72986,{f=55,lvl=85,q=1,requireSkill=129}),
-i(72985,{f=55,lvl=85,q=1,requireSkill=129})}),
-prof(356,{
+i(72985,{f=55,lvl=85,q=1,requireSkill=129})}}),
+prof(356,{phase=50,g={
 i(74859,{q=1}),
 i(86542,{b=1,q=2,requireSkill=356}),
 i(74857,{q=1}),
@@ -6567,8 +6567,8 @@ p(1208,{awp=50200,description="Can be fished from:\n\n|cFFFfffff— Schools:|r E
 p(1206,{awp=50200,description="Can be fished from:\n\n|cFFFfffff— Schools:|r Spinefish\n\n|cFFFfffff— Fish of the Day:|r Kun-Lai Summit\n\n|cFFFfffff— Sha-Touched water:|r Dread Wastes, Kun-Lai Summit & Townlong Steppes\n",itemID=94932,maps_disp={379,388,422},npcID=70257,phase=52,q=1,spellID=139361}),
 p(1209,{awp=50200,description="Can be fished from:\n\n|cFFFfffff— Schools:|r Giant Mantis Shrimp, Reef Octopus, & Tiger Gourami\n\n|cFFFfffff— Fish of the Day:|r Dread Wastes, Jade Forest, & Kun-Lai Summit\n\n|cFFFfffff— Inland open water:|r Kun-Lai Summit & The Veiled Stair\n\nIt can also be caught in most coastal open water.\n",itemID=94935,maps_disp={371,379,388,418,422,433,504,507,554},npcID=70260,phase=52,q=1,spellID=139365}),
 flt(200,{
-r(43308,{b=1,description="Can be fished from schools.",itemID=34109,learnedAt=100,q=1,requireSkill=356})})}),
-prof(182,{
+r(43308,{b=1,description="Can be fished from schools.",itemID=34109,learnedAt=100,q=1,requireSkill=356})})}}),
+prof(182,{phase=50,g={
 ah(2366,{type="s",g={
 i(89639,{q=1}),
 i(97624,{awp=50300,q=1}),
@@ -6582,8 +6582,8 @@ i(72235,{q=1}),
 i(97621,{awp=50300,q=1}),
 i(79010,{q=1}),
 i(97622,{awp=50300,q=1}),
-i(97619,{awp=50300,q=1})}})}),
-prof(773,{
+i(97619,{awp=50300,q=1})}})}}),
+prof(773,{phase=50,g={
 flt(111,{
 i(104109,{awp=50400,c={5},f=111,lvl=25,q=1,rwp=70003}),
 i(80588,{c={1},f=111,lvl=25,q=1}),
@@ -6646,8 +6646,8 @@ s(267457,79342,{f=28,lvl=85,q=3}),
 s(267455,79340,{b=1,cost={{"i",79339,1}},f=28,lvl=90,q=4}),
 s(267456,79341,{b=1,cost={{"i",79339,1}},f=28,lvl=90,q=4}),
 s(267458,79343,{b=1,cost={{"i",79342,1}},f=28,lvl=90,q=4}),
-s(267454,79339,{f=28,lvl=85,q=3})})}),
-prof(755,{
+s(267454,79339,{f=28,lvl=85,q=3})})}}),
+prof(755,{phase=50,g={
 ah(31252,{type="s",g={
 i(76137,{q=2}),
 i(76141,{q=3}),
@@ -7007,8 +7007,8 @@ i(83805,{f=51,lvl=90,q=3}),
 i(83806,{f=51,lvl=90,q=3}),
 i(83804,{f=51,lvl=90,q=3})}),
 flt(56,{
-i(76132,{awp=50200,q=3})})}),
-prof(165,{
+i(76132,{awp=50200,q=3})})}}),
+prof(165,{phase=50,g={
 h(-26,{
 ah(142976,{awp=50400,cost={{"i",72163,2}},phase=54,type="s",g={
 r(143146,{learnedAt=605,providers={{"s",142976}},requireSkill=165}),
@@ -7439,8 +7439,8 @@ i(95536,{awp=50200,f=113,phase=52,q=3}),
 i(85559,{lvl=85,q=1}),
 i(85569,{lvl=85,q=2}),
 i(83764,{lvl=85,q=3}),
-i(85570,{lvl=85,q=2})})}),
-prof(186,{
+i(85570,{lvl=85,q=2})})}}),
+prof(186,{phase=50,g={
 ah(2575,{type="s",g={
 i(72094,{q=2}),
 i(97512,{awp=50300,q=1}),
@@ -7450,8 +7450,8 @@ i(97546,{awp=50300,q=1}),
 i(72103,{q=2})}}),
 ah(2656,{type="s",g={
 i(72096,{q=1}),
-i(72095,{q=2})}})}),
-prof(197,{
+i(72095,{q=2})}})}}),
+prof(197,{phase=50,g={
 h(-26,{
 ah(143011,{awp=50400,cost={{"i",82441,10}},phase=54,type="s",g={
 r(142964,{learnedAt=600,providers={{"s",143011}},requireSkill=197}),
@@ -7669,11 +7669,11 @@ p(1039,{itemID=90900,npcID=67230,q=3,spellID=132574}),
 p(1040,{itemID=90902,npcID=67233,q=2,spellID=132580})}})}),
 flt(56,{
 i(82441,{q=1}),
-i(82447,{b=1,q=3})})}),
-h(-45,{
+i(82447,{b=1,q=3})})}}),
+h(-45,{phase=50,g={
 q(31752,{isDaily=1,qgs={43929},g={
 i(86623,{b=1,q=2,sym={{"select","itemID",87250,87251,41508,44413,15996,11826,4401,11825,21277}},g={
 i(97985,{awp=50300,b=1,lvl=90,phase=53,q=1,rwp=70003}),
 p(1320,{b=1,itemID=103670,npcID=73011,q=3,spellID=147124}),
-i(90561)}})}})})}})}})
+i(90561)}})}})}})}})}})
 end)

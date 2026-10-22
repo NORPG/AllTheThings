@@ -90,6 +90,11 @@ _.OnUpdateDB=
 	IsOnQuestVisibleOverride13720 = function(t)if not C_QuestLog.IsOnQuest(13720)then t.visible=false return true end end,
 	IsOnQuestVisibleOverride13721 = function(t)if not C_QuestLog.IsOnQuest(13721)then t.visible=false return true end end,
 	IsOnQuestVisibleOverride13722 = function(t)if not C_QuestLog.IsOnQuest(13722)then t.visible=false return true end end,
+	RemovedWithPhase31_30100 = function(t)if _.Settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,
+	RemovedWithPhase32_30200 = function(t)if _.Settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end,
+	RemovedWithPhase33_30300 = function(t)if _.Settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,
+	RemovedWithPhase40_30100 = function(t)if _.Settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,
+	RemovedWithPhase51_100001 = function(t)if _.Settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=100001 end	end,
 	SILVER_COVENTANT_DAILY = function(t)if not t.ach then	local f=_.SearchForField("achievementID",3676)if f and #f>0 then	for _,o in pairs(f)do	if o.key=="achievementID" then	t.ach=o return end	end	end	end	end,
 	SUNREAVERS_DAILY = function(t)if not t.ach then	local f=_.SearchForField("achievementID",3677)if f and #f>0 then	for _,o in pairs(f)do	if o.key=="achievementID" then	t.ach=o return end	end	end	end	end
 }

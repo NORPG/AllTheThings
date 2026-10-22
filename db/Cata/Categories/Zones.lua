@@ -50167,7 +50167,7 @@ ach(1782,{r=2,requireSkill=185,g={
 crit(6624,{achID=1563,id=1,phase=30,r=2})}}),
 ach(1783,{r=1,requireSkill=185,g={
 crit(6625,{achID=1784,id=1,phase=30,r=1,rwp=50004})}}),
-ach(2019,{OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,rwp=40001,u=2}),
+ach(2019,{OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,rwp=40001,u=2}),
 ach(2095,{requireSkill=356,g={
 crit(7464,{achID=2095,id=1,providers={{"i",43686}}}),
 crit(7465,{achID=2095,id=1,providers={{"i",43678}}}),
@@ -50208,7 +50208,7 @@ crit(7257,{achID=1957,id=1,providers={{"i",43630}}}),
 crit(7252,{achID=1957,id=1,providers={{"i",43634}}}),
 crit(7250,{achID=1957,id=1,providers={{"i",43635}}}),
 crit(7488,{achID=2096,id=1})}}),
-ach(2018,{OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,rwp=40001,u=2}),
+ach(2018,{OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,rwp=40001,u=2}),
 crit(18294,{achID=6030,awp=40300,e=1,id=1,providers={{"i",74142}},r=2}),
 crit(18294,{achID=6031,awp=40300,e=1,id=1,providers={{"i",74142}},r=1})}),
 h(-31,{
@@ -51180,56 +51180,56 @@ q(24583,{coords={
 [125]={{57.3,66.7}}},isWeekly=1,maps={162},phase=33,qgs={20735},g={
 qo(1,{providers={{"n",16028}}})}}),
 q(13254,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={157,158,159},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={20735},rwp=40001,u=2,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={157,158,159},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={20735},rwp=40001,u=2,g={
 qo(1,{providers={{"i",43726}},u=2}),
-crit(7309,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7309,{achID=2019,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(13256,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={168},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={20735},rwp=40001,u=2,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={168},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={20735},rwp=40001,u=2,g={
 qo(1,{providers={{"i",43823}},u=2}),
-crit(7311,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7311,{achID=2019,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(13250,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={153,154},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={20735},rwp=40001,u=2,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={153,154},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={20735},rwp=40001,u=2,g={
 qo(1,{providers={{"i",43693}},u=2}),
-crit(7305,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7305,{achID=2019,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(13255,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={132},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={20735},rwp=40001,u=2,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={132},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={20735},rwp=40001,u=2,g={
 qo(1,{providers={{"i",43821}},u=2}),
-crit(7310,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7310,{achID=2019,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(13245,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={133,134,135},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={20735},rwp=40001,u=2,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={133,134,135},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={20735},rwp=40001,u=2,g={
 qo(1,{providers={{"i",43662}},u=2}),
-crit(7300,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7300,{achID=2019,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(13246,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={129},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={20735},rwp=40001,u=2,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={129},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={20735},rwp=40001,u=2,g={
 qo(1,{providers={{"i",43665}},u=2}),
-crit(7301,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7301,{achID=2019,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(13248,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={136,137},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={20735},rwp=40001,u=2,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={136,137},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={20735},rwp=40001,u=2,g={
 qo(1,{providers={{"i",43669}},u=2}),
-crit(7303,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7303,{achID=2019,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(13247,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={142,143,144,145,146},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={20735},rwp=40001,u=2,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={142,143,144,145,146},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={20735},rwp=40001,u=2,g={
 qo(1,{providers={{"i",43668}},u=2}),
-crit(7302,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7302,{achID=2019,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(13253,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={138,139},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={20735},rwp=40001,u=2,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={138,139},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={20735},rwp=40001,u=2,g={
 qo(1,{providers={{"i",43724}},u=2}),
-crit(7308,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7308,{achID=2019,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(13251,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={130,131},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={20735},rwp=40001,u=2,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={130,131},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={20735},rwp=40001,u=2,g={
 qo(1,{providers={{"i",43697}},u=2}),
-crit(7306,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7306,{achID=2019,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(13252,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={140},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={20735},rwp=40001,u=2,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={140},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={20735},rwp=40001,u=2,g={
 qo(1,{providers={{"i",43699}},u=2}),
-crit(7307,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7307,{achID=2019,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(14199,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={171},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,phase=32,qgs={20735},rwp=40001,u=2,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={171},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,phase=32,qgs={20735},rwp=40001,u=2,g={
 qo(1,{providers={{"i",48418}},u=2})}}),
 q(13249,{coords={
-[125]={{57.6,66.8}}},isDaily=1,maps={160,161},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={20735},rwp=40001,u=2,g={
+[125]={{57.6,66.8}}},isDaily=1,maps={160,161},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={20735},rwp=40001,u=2,g={
 qo(1,{providers={{"i",43670}},u=2}),
-crit(7304,{achID=2019,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7304,{achID=2019,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(78752,{awp=30300,coords={
 [125]={{57.6,66.8}}},isDaily=1,maps={129,130,131,132,133,134,135,136,137,138,139,140,142,143,144,145,146,153,154,157,158,159,160,161,168,171,183,184,185},maxReputation={1090,42000},phase=33,qgs={20735},rwp=40001,u=2,g={
 qo(1,{providers={{"i",211206}},u=2})}}),
@@ -51295,41 +51295,41 @@ q(12791,{coords={
 q(12796,{coords={
 [121]={{40.6,66.9}}},isBreadcrumb=1,nextQuests={12790},qgs={29169}}),
 q(13240,{coords={
-[125]={{63.8,55}}},isDaily=1,lvl=78,maps={142,143,144,145,146},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={31439},rwp=40001,u=2,g={
+[125]={{63.8,55}}},isDaily=1,lvl=78,maps={142,143,144,145,146},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={31439},rwp=40001,u=2,g={
 qo(1,{providers={{"n",27641}},u=2}),
 i(44711,{b=1,factionID=1106,q=2,repeatable=1}),
 i(44713,{b=1,factionID=1098,q=2,repeatable=1}),
 i(43950,{b=1,factionID=1090,q=2,repeatable=1}),
 i(49702,{b=1,factionID=1119,q=2,repeatable=1}),
 i(44710,{b=1,factionID=1091,q=2,repeatable=1}),
-crit(7296,{achID=2018,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7296,{achID=2018,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(13243,{coords={
-[125]={{63.8,55}}},isDaily=1,lvl=78,maps={130,131},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={31439},rwp=40001,u=2,g={
+[125]={{63.8,55}}},isDaily=1,lvl=78,maps={130,131},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={31439},rwp=40001,u=2,g={
 qo(1,{providers={{"n",27744}},u=2}),
 i(44711,{b=1,factionID=1106,q=2,repeatable=1}),
 i(44713,{b=1,factionID=1098,q=2,repeatable=1}),
 i(43950,{b=1,factionID=1090,q=2,repeatable=1}),
 i(49702,{b=1,factionID=1119,q=2,repeatable=1}),
 i(44710,{b=1,factionID=1091,q=2,repeatable=1}),
-crit(7298,{achID=2018,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7298,{achID=2018,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(13244,{coords={
-[125]={{63.8,55}}},isDaily=1,lvl=78,maps={138,139},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={31439},rwp=40001,u=2,g={
+[125]={{63.8,55}}},isDaily=1,lvl=78,maps={138,139},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={31439},rwp=40001,u=2,g={
 qo(1,{providers={{"n",28838}},u=2}),
 i(44711,{b=1,factionID=1106,q=2,repeatable=1}),
 i(44713,{b=1,factionID=1098,q=2,repeatable=1}),
 i(43950,{b=1,factionID=1090,q=2,repeatable=1}),
 i(49702,{b=1,factionID=1119,q=2,repeatable=1}),
 i(44710,{b=1,factionID=1091,q=2,repeatable=1}),
-crit(7299,{achID=2018,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7299,{achID=2018,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(13241,{coords={
-[125]={{63.8,55}}},isDaily=1,lvl=78,maps={136,137},maxReputation={1090,42000},OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,qgs={31439},rwp=40001,u=2,g={
+[125]={{63.8,55}}},isDaily=1,lvl=78,maps={136,137},maxReputation={1090,42000},OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,qgs={31439},rwp=40001,u=2,g={
 qo(1,{providers={{"n",26696}},u=2}),
 i(44711,{b=1,factionID=1106,q=2,repeatable=1}),
 i(44713,{b=1,factionID=1098,q=2,repeatable=1}),
 i(43950,{b=1,factionID=1090,q=2,repeatable=1}),
 i(49702,{b=1,factionID=1119,q=2,repeatable=1}),
 i(44710,{b=1,factionID=1091,q=2,repeatable=1}),
-crit(7297,{achID=2018,awp=30002,id=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(33)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30300 end	end,u=2})}}),
+crit(7297,{achID=2018,awp=30002,id=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase33_30300,u=2})}}),
 q(14103,{coords={
 [125]={{40.7,35.4}}},cost={{"i",46849,10}},phase=32,qgs={28701},repeatable=1,requireSkill=755,g={
 cu(61,{requireSkill=755})}}),

@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,cat,crit,cs,cu,d,faction,flt,h,heir,i,inst,mnt,n,o,p,prof,q,qo,r,s,settings,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,cat,crit,cs,cu,d,faction,flt,h,heir,i,inst,mnt,n,o,p,prof,q,qo,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Holidays=
 h(-36,{difficultyID=19,SortPriority=30,SortType="EventStart",g={
 h(-12,{awp=30002,g={
@@ -92,8 +92,8 @@ s(284394,107217,{b=1,e=7,f=20,lvl=90,q=4,u=1}),
 s(284395,107218,{e=7,f=23,lvl=90,q=4,u=1}),
 s(213435,71331,{b=1,e=7,f=20,lvl=85,phase=42,q=4,u=1}),
 s(213436,71332,{e=7,f=23,lvl=85,phase=42,q=4,u=1}),
-s(229950,232030,{awp=40001,b=1,e=7,f=20,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(42)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40300 end	end,phase=40,q=4,rwp=50004,u=2}),
-s(229951,232031,{awp=40001,e=7,f=23,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(42)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40300 end	end,phase=40,q=4,rwp=50004,u=2}),
+s(229950,232030,{awp=40001,b=1,e=7,f=20,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase42_40300,phase=40,q=4,rwp=50004,u=2}),
+s(229951,232031,{awp=40001,e=7,f=23,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase42_40300,phase=40,q=4,rwp=50004,u=2}),
 s(177952,49120,{b=1,e=7,f=20,lvl=80,q=4,rwp=40001,u=2}),
 s(177690,48663,{e=7,f=23,lvl=80,q=4,rwp=40001,u=2}),
 toy(37863,{awp=20202,b=1,e=7,q=3})}}),
@@ -109,12 +109,12 @@ i(71334,{awp=40300,b=1,e=7,f=53,lvl=85,phase=42,q=4,rwp=50004,u=2}),
 i(71335,{awp=40300,b=1,e=7,f=53,lvl=85,phase=42,q=4,rwp=50004,u=2}),
 i(71337,{awp=40300,b=1,e=7,f=53,lvl=85,phase=42,q=4,rwp=50004,u=2}),
 i(71336,{awp=40300,b=1,e=7,f=53,lvl=85,phase=42,q=4,rwp=50004,u=2}),
-i(232017,{awp=40001,b=1,e=7,f=53,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(42)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40300 end	end,phase=40,q=4,rwp=50004,u=2}),
-i(232015,{awp=40001,b=1,e=7,f=53,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(42)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40300 end	end,phase=40,q=4,rwp=50004,u=2}),
-i(232016,{awp=40001,b=1,e=7,f=53,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(42)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40300 end	end,phase=40,q=4,rwp=50004,u=2}),
-i(232012,{awp=40001,b=1,e=7,f=53,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(42)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40300 end	end,phase=40,q=4,rwp=50004,u=2}),
-i(232013,{awp=40001,b=1,e=7,f=53,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(42)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40300 end	end,phase=40,q=4,rwp=50004,u=2}),
-i(232014,{awp=40001,b=1,e=7,f=53,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(42)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40300 end	end,phase=40,q=4,rwp=50004,u=2}),
+i(232017,{awp=40001,b=1,e=7,f=53,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase42_40300,phase=40,q=4,rwp=50004,u=2}),
+i(232015,{awp=40001,b=1,e=7,f=53,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase42_40300,phase=40,q=4,rwp=50004,u=2}),
+i(232016,{awp=40001,b=1,e=7,f=53,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase42_40300,phase=40,q=4,rwp=50004,u=2}),
+i(232012,{awp=40001,b=1,e=7,f=53,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase42_40300,phase=40,q=4,rwp=50004,u=2}),
+i(232013,{awp=40001,b=1,e=7,f=53,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase42_40300,phase=40,q=4,rwp=50004,u=2}),
+i(232014,{awp=40001,b=1,e=7,f=53,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase42_40300,phase=40,q=4,rwp=50004,u=2}),
 i(49078,{awp=30002,b=1,e=7,f=53,lvl=80,q=4,rwp=40001,u=2}),
 i(49116,{awp=30002,b=1,e=7,f=53,lvl=80,q=4,rwp=40001,u=2}),
 i(49080,{awp=30002,b=1,e=7,f=53,lvl=80,q=4,rwp=40001,u=2}),
@@ -3480,16 +3480,16 @@ i(51805,{awp=30002,b=1,e=9,f=51,lvl=80,q=4,rwp=40001,u=2}),
 i(51806,{awp=30002,b=1,e=9,f=51,lvl=80,q=4,rwp=40001,u=2}),
 i(51807,{awp=30002,b=1,e=9,f=51,lvl=80,q=4,rwp=40001,u=2}),
 i(51804,{awp=30002,b=1,e=9,f=51,lvl=80,q=4,rwp=40001,u=2})}}),
-x(3,{
+x(3,{awp=30003,g={
 inst(277,{maps={140},savedInstanceID=599,g={
 d(2,{
 n(27975,{
-s(175404,44731,{awp=30003,b=1,e=9,f=1,modID=2,q=2})})})}}),
+s(175404,44731,{b=1,e=9,f=1,modID=2,q=2})})})}}),
 inst(285,{maps={133,134,135},savedInstanceID=574,g={
 d(1,{
 n(23953,{
-s(132605,22206,{b=1,e=9,f=1,modID=1,q=2})})})}})}),
-x(4,{
+s(132605,22206,{b=1,e=9,f=1,modID=1,q=2})})})}})}}),
+x(4,{awp=40003,g={
 inst(66,{maps={283,284},savedInstanceID=645,g={
 d(1,{
 n(39679,{
@@ -3530,7 +3530,7 @@ n(42333,{
 s(132605,22206,{b=1,e=9,f=1,modID=1,q=2})})}),
 d(2,{
 n(42333,{
-s(132605,22206,{b=1,e=9,f=1,modID=2,q=2})})})}})})}}),
+s(132605,22206,{b=1,e=9,f=1,modID=2,q=2})})})}})}})}}),
 h(-45,{e=9,g={
 q(9029,{coords={
 [1416]={{89.3,75.1}}},e=9,isYearly=1,providers={{"o",181073}},rwp=30300,sourceQuests={8984,9028},u=2,g={

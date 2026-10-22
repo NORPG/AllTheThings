@@ -48823,14 +48823,14 @@ crit(40938,{achID=12568,awp=80001,id=1,pvp=1,r=1})}}),
 q(52784,{lvl=10,pvp=1,r=2,rwp=100002,u=2,g={
 title(375,{pvp=1,r=2,u=2}),
 crit(40937,{achID=12567,awp=80001,id=1,pvp=1,r=2})}})}})}}),
-x(9,{pvp=1,g={
-h(-12,{awp=90002,pvp=1,g={
+x(9,{awp=90002,pvp=1,g={
+h(-12,{pvp=1,g={
 ach(14516,{pvp=1}),
 ach(14515,{pvp=1})}}),
-h(-487,{awp=90002,pvp=1,g={
+h(-487,{pvp=1,g={
 i(184810,{b=1,pvp=1})}})}}),
-x(10,{pvp=1,g={
-h(-12,{awp=100002,pvp=1,g={
+x(10,{awp=100002,pvp=1,g={
+h(-12,{pvp=1,g={
 ach(16599,{pvp=1,g={
 crit(55958,{achID=16599,id=4,providers={{"n",197409}},pvp=1}),
 crit(55965,{achID=16601,id=7,pvp=1})}}),
@@ -48859,19 +48859,19 @@ crit(55990,{achID=16611,id=1,maps={2022},providers={{"s",271400}},pvp=1}),
 crit(55991,{achID=16611,id=2,maps={2023},providers={{"s",271400}},pvp=1}),
 crit(55992,{achID=16611,id=3,maps={2024},providers={{"s",271400}},pvp=1}),
 crit(55993,{achID=16611,id=4,maps={2025},providers={{"s",271400}},pvp=1})}})}}),
-h(-45,{awp=100002,pvp=1,g={
+h(-45,{pvp=1,g={
 q(71143,{description="If you die while on the quest, and are resurrected you will continue gaining credit.",lvl=10,pvp=1,r=2,g={
 title(375,{pvp=1}),
 crit(58302,{achID=12567,id=2,pvp=1,r=2})}}),
 q(71144,{description="If you die while on the quest, and are resurrected you will continue gaining credit.",lvl=10,pvp=1,r=1,g={
 title(376,{pvp=1}),
 crit(58303,{achID=12568,id=2,pvp=1,r=1})}})}}),
-h(-47,{awp=100002,pvp=1,g={
+h(-47,{pvp=1,g={
 cu(2123,{pvp=1,rwp=110000,u=2}),
 i(201756,{b=1,pvp=1}),
 i(202184,{b=1,lvl=60,pvp=1})}})}}),
-x(11,{pvp=1,g={
-h(-12,{awp=110002,pvp=1,g={
+x(11,{awp=110002,pvp=1,g={
+h(-12,{pvp=1,g={
 ach(40088,{pvp=1,g={
 p(4581,{b=1,itemID=223802,npcID=223859,pvp=1,spellID=449807}),
 crit(67001,{achID=40097,id=2,pvp=1})}}),
@@ -48898,7 +48898,7 @@ crit(68586,{achID=40465,id=4,providers={{"s",393121}},pvp=1})}}),
 ach(40466,{maps={2214,2215,2248,2255,2346},providers={{"s",271400}},pvp=1}),
 ach(40467,{maps={2214,2215,2248,2255,2346},providers={{"s",271400}},pvp=1}),
 ach(40468,{maps={2214,2215,2248,2255,2346},providers={{"s",271400}},pvp=1})}}),
-h(-56,{awp=110002,pvp=1,g={
+h(-56,{pvp=1,g={
 o(433369,{pvp=1,sym={{"select","itemID",224556},{"pop"}},g={
 cu(1792,{pvp=1})}}),
 o(433370,{pvp=1,sym={{"select","itemID",224556},{"pop"}},g={
@@ -48910,10 +48910,10 @@ o(441108,{coords={
 [2248]={{62.3,20.3}}},crs={233446},description="Spawns ONCE per rotation in the matching zone determined by the zone where the Shadowlands PvP World Quest is active. The spawn can occur at any moment while that quest is up.\nArdenweald -> Isle of Dorn\nMaldraxxus -> Hallowfall\nRevendreth -> Azj-Kahet\nBastion -> The Ringing Deeps.\nThe box can be looted by many players of both factions within a few minutes after being opened. There's really no reason to fight about it. :)",pvp=1,g={
 cu(2123,{pvp=1,skipFill=1}),
 cu(1792,{pvp=1,skipFill=1})}})}}),
-h(-47,{awp=110002,pvp=1,g={
+h(-47,{pvp=1,g={
 cu(2123,{pvp=1,rwp=120001,u=2})}})}}),
-x(12,{pvp=1,g={
-h(-12,{awp=120001,pvp=1,g={
+x(12,{awp=120001,pvp=1,g={
+h(-12,{pvp=1,g={
 ach(61234,{pvp=1,g={
 crit(108895,{achID=61234,id=1,providers={{"s",393121}},pvp=1}),
 crit(108896,{achID=61234,id=2,providers={{"s",393121}},pvp=1}),
@@ -48932,7 +48932,7 @@ ach(61464,{pvp=1}),
 ach(61465,{pvp=1}),
 ach(61226,{pvp=1,g={
 crit(109641,{achID=61446,id=1,pvp=1})}})}}),
-h(-673,{awp=120001,pvp=1,g={
+h(-673,{pvp=1,g={
 h(-12,{pvp=1,g={
 ach(61227,{pvp=1}),
 ach(61228,{pvp=1}),
@@ -48948,11 +48948,11 @@ ach(61265,{pvp=1}),
 ach(61266,{pvp=1,g={
 crit(109643,{achID=61446,id=3,pvp=1})}}),
 i(257535,{b=1,f=55,lvl=90,pvp=1,rwp=120100,spellID=1261765})}})}})}}),
-h(-56,{awp=120001,pvp=1,g={
+h(-56,{pvp=1,g={
 o(433369,{pvp=1,sym={{"select","itemID",224556},{"pop"}},g={
 cu(1792,{pvp=1})}}),
 o(433370,{pvp=1,sym={{"select","itemID",224556},{"pop"}},g={
 cu(1792,{pvp=1})}})}}),
-h(-47,{awp=120001,pvp=1,g={
+h(-47,{pvp=1,g={
 cu(2123,{pvp=1,rwp=130000})}})}})}})}})
 end)

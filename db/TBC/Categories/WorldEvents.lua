@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,h,i,mnt,n,q,qo,r,s,settings,title,x=_.CreateAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateExpansion;
+local ach,h,i,mnt,n,q,qo,r,s,title,x=_.CreateAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateExpansion;
 categories.WorldEvents=
 h(-734,{SortPriority=75,g={
 h(-103,{awp=20003,g={
@@ -526,10 +526,10 @@ q(8286,{coords={
 [1451]={{49.5,36.4}}},description="This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",lvl=60,qgs={15180}})}),
 h(-47,{
 i(20402,{b=1,cost={{"i",20403,1}},description="A friendly player can use their Proxy of Nozdormu to grant an undeputized player Agency to collect fragments. Oh joy. Enjoy the suffering.",q=2})})}}),
-h(-484,{maps={1419,1423,1428,1446,1447,1452,1955},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,phase=2108,rwp=30003,g={
-h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,g={
-ach(2116,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,providers={{"i",22999}},rwp=30002})}}),
-h(-45,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,g={
+h(-484,{maps={1419,1423,1428,1446,1447,1452,1955},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,phase=2108,rwp=30003,g={
+h(-12,{OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,g={
+ach(2116,{OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,providers={{"i",22999}},rwp=30002})}}),
+h(-45,{OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,g={
 q(9094,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
@@ -553,52 +553,52 @@ q(9318,{coords={
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
 [1457]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23123,{b=1,f=55,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2})}}),
+i(23123,{b=1,f=55,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2})}}),
 q(9334,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23123,{b=1,f=55,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2})}}),
+i(23123,{b=1,f=55,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2})}}),
 q(9317,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
 [1457]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23122,{b=1,f=55,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2})}}),
+i(23122,{b=1,f=55,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2})}}),
 q(9335,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(23122,{b=1,f=55,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2})}}),
-q(9292,{description="If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1453},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qgs={16431},qis={22949},r=2,g={
-i(23123,{b=1,f=55,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2}),
-i(23122,{b=1,f=55,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2})}}),
-q(9304,{lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qis={22948},qss={22975}}),
-q(9301,{lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qis={22930},qss={22970}}),
-q(9310,{description="If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1420,1458},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qgs={16531},qis={22950},r=1,g={
-i(23123,{b=1,f=55,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2}),
-i(23122,{b=1,f=55,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2})}}),
+i(23122,{b=1,f=55,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2})}}),
+q(9292,{description="If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1453},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qgs={16431},qis={22949},r=2,g={
+i(23123,{b=1,f=55,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2}),
+i(23122,{b=1,f=55,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2})}}),
+q(9304,{lvl=45,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qis={22948},qss={22975}}),
+q(9301,{lvl=45,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qis={22930},qss={22970}}),
+q(9310,{description="If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1420,1458},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qgs={16531},qis={22950},r=1,g={
+i(23123,{b=1,f=55,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2}),
+i(23122,{b=1,f=55,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2})}}),
 q(9262,{coords={
-[1457]={{77.7,42.7}}},isYearly=1,maps={1438},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qgs={16495},r=2,g={
-qo(1,{crs={16422,16423,16437,16438},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,providers={{"i",22892}}})}}),
+[1457]={{77.7,42.7}}},isYearly=1,maps={1438},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qgs={16495},r=2,g={
+qo(1,{crs={16422,16423,16437,16438},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,providers={{"i",22892}}})}}),
 q(9261,{coords={
-[1426]={{53.2,35}}},isYearly=1,maps={1455},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qgs={16484},r=2,g={
-qo(1,{crs={16422,16423,16437,16438},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,providers={{"i",22892}}})}}),
+[1426]={{53.2,35}}},isYearly=1,maps={1455},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qgs={16484},r=2,g={
+qo(1,{crs={16422,16423,16437,16438},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,providers={{"i",22892}}})}}),
 q(9263,{coords={
-[1454]={{51.7,83.3}}},isYearly=1,maps={1411},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qgs={16493},r=1,g={
-qo(1,{crs={16422,16423,16437,16438},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,providers={{"i",22892}}})}}),
+[1454]={{51.7,83.3}}},isYearly=1,maps={1411},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qgs={16493},r=1,g={
+qo(1,{crs={16422,16423,16437,16438},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,providers={{"i",22892}}})}}),
 q(9260,{coords={
-[1453]={{63.8,75.5}}},isYearly=1,maps={1429},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qgs={16478},r=2,g={
-qo(1,{crs={16422,16423,16437,16438},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,providers={{"i",22892}}})}}),
+[1453]={{63.8,75.5}}},isYearly=1,maps={1429},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qgs={16478},r=2,g={
+qo(1,{crs={16422,16423,16437,16438},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,providers={{"i",22892}}})}}),
 q(9265,{coords={
-[1458]={{66.2,21.4}}},isYearly=1,maps={1420},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qgs={16494},r=1,g={
-qo(1,{crs={16422,16423,16437,16438},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,providers={{"i",22892}}})}}),
+[1458]={{66.2,21.4}}},isYearly=1,maps={1420},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qgs={16494},r=1,g={
+qo(1,{crs={16422,16423,16437,16438},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,providers={{"i",22892}}})}}),
 q(9264,{coords={
-[1456]={{33.1,59.9}}},isYearly=1,maps={1412},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qgs={16490},r=1,g={
-qo(1,{crs={16422,16423,16437,16438},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,providers={{"i",22892}}})}}),
-q(9295,{lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qis={22932},qss={22977}}),
+[1456]={{33.1,59.9}}},isYearly=1,maps={1412},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qgs={16490},r=1,g={
+qo(1,{crs={16422,16423,16437,16438},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,providers={{"i",22892}}})}}),
+q(9295,{lvl=45,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qis={22932},qss={22977}}),
 q(9154,{coords={
 [1426]={{53.1,35}},
 [1453]={{55,62},{64.1,75}},
@@ -606,108 +606,108 @@ q(9154,{coords={
 [1455]={{35.3,68.7}},
 [1456]={{32.9,60.1},{43.5,53.2}},
 [1457]={{64.5,44.2},{77.3,42.8}},
-[1458]={{49.5,32.1},{65.9,21.4}}},isYearly=1,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qgs={16241,16255},qis={22595}}),
+[1458]={{49.5,32.1},{65.9,21.4}}},isYearly=1,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qgs={16241,16255},qis={22595}}),
 q(9321,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
 [1457]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(13446,{f=55,lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1})}}),
+i(13446,{f=55,lvl=45,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1})}}),
 q(9336,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(13446,{f=55,lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1})}}),
+i(13446,{f=55,lvl=45,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1})}}),
 q(9337,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
 [1457]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(13444,{f=55,lvl=49,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1})}}),
+i(13444,{f=55,lvl=49,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1})}}),
 q(9320,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-i(13444,{f=55,lvl=49,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1})}}),
-q(9302,{lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qis={22944},qss={22973}}),
-q(9299,{lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qis={22945},qss={22972}}),
-q(9300,{lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qis={22946},qss={22974}}),
+i(13444,{f=55,lvl=49,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1})}}),
+q(9302,{lvl=45,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qis={22944},qss={22973}}),
+q(9299,{lvl=45,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qis={22945},qss={22972}}),
+q(9300,{lvl=45,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qis={22946},qss={22974}}),
 q(9085,{coords={
-[1423]={{81.1,60.6}}},isYearly=1,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qgs={16361},g={
-qo(1,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,providers={{"n",16143}}}),
-i(23123,{b=1,f=55,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2}),
-i(23122,{b=1,f=55,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2})}}),
+[1423]={{81.1,60.6}}},isYearly=1,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qgs={16361},g={
+qo(1,{OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,providers={{"n",16143}}}),
+i(23123,{b=1,f=55,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2}),
+i(23122,{b=1,f=55,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2})}}),
 q(9341,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
 [1457]={{64.3,44.5}}},cost={{"i",22484,10}},lvl=50,phase=1601,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-s(133398,22999,{b=1,f=9,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1})}}),
+s(133398,22999,{b=1,f=9,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1})}}),
 q(9343,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,10}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
-s(133398,22999,{b=1,f=9,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1})}}),
+s(133398,22999,{b=1,f=9,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1})}}),
 q(9247,{coords={
-[1423]={{81.1,60.5}}},crs={16281},description="You should receive this in the mail at level 60.",isYearly=1,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qss={22723},g={
-i(23123,{b=1,f=55,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2}),
-i(23122,{b=1,f=55,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2})}}),
+[1423]={{81.1,60.5}}},crs={16281},description="You should receive this in the mail at level 60.",isYearly=1,lvl=60,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qss={22723},g={
+i(23123,{b=1,f=55,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2}),
+i(23122,{b=1,f=55,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2})}}),
 q(9153,{coords={
-[1423]={{81.1,60.6}}},cost={{"i",22484,10}},isYearly=1,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,qgs={16361},g={
-i(23123,{b=1,f=55,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2}),
-i(23122,{b=1,f=55,lvl=50,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2})}})}}),
-n(14684,{description="Located in Stratholme.\n\nCan be found wandering in a circle around the fountain in the courtyard.",maps={317},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,g={
-s(133523,23124,{b=1,f=28,lvl=55,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3}),
-i(23125,{b=1,f=51,lvl=55,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3}),
-s(133525,23126,{b=1,f=4,loc=45,lvl=55,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3})}}),
-n(14686,{description="Located in Razorfen Downs.\n\nCan be found inside one of the prison cells, before the skeleton pile. Looks like a human female until you talk to her upon she transforms into a Banshee.",maps={300},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,g={
-s(133576,23177,{b=1,f=27,lvl=36,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3}),
-s(133577,23178,{b=1,f=3,lvl=36,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3})}}),
-n(14695,{description="Located in Scholomance.\n\nCan be found in the room just before the plagued hatchlings.",maps={476},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,g={
-s(133555,23156,{b=1,f=1,lvl=57,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3}),
-s(133531,23132,{b=1,f=25,lvl=57,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3}),
-s(133538,23139,{b=1,f=8,lvl=57,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3})}}),
-n(14690,{description="Located in Dire Maul West.\n\nCan be found in the corridor above and behind Tendris Warpwood, the same one Magister Kalendris is in.",maps={234},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,g={
-s(133526,23127,{b=1,f=3,lvl=58,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3}),
-s(133528,23129,{b=1,f=4,loc=43,lvl=57,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3}),
-s(133527,23128,{b=1,f=4,loc=44,lvl=57,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3})}}),
-n(14693,{description="Located in Scarlet Monastery Graveyard.\n\nHe patrols the graveyard after killing the last boss.",maps={435},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,g={
-s(133567,23168,{b=1,f=20,lvl=30,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3}),
-i(23169,{b=1,f=51,lvl=30,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3}),
-s(133569,23170,{b=1,f=6,loc=44,lvl=30,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3})}}),
-n(14682,{description="Located in Shadowfang Keep.\n\nCan be found in the room up the ramp to the right of the entrance to the Butcher's room in the courtyard.",maps={310},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,g={
-s(133570,23171,{b=1,f=22,lvl=20,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3}),
-s(133572,23173,{b=1,f=4,loc=46,lvl=20,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=3})}}),
-n(16143,{cost={{"i",22484,8}},description="To summon this mob, speak to the cultist and give them 8 runes. This will automatically tag that mob for your group.",OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,g={
-i(22484,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2}),
+[1423]={{81.1,60.6}}},cost={{"i",22484,10}},isYearly=1,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,qgs={16361},g={
+i(23123,{b=1,f=55,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2}),
+i(23122,{b=1,f=55,lvl=50,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2})}})}}),
+n(14684,{description="Located in Stratholme.\n\nCan be found wandering in a circle around the fountain in the courtyard.",maps={317},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,g={
+s(133523,23124,{b=1,f=28,lvl=55,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3}),
+i(23125,{b=1,f=51,lvl=55,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3}),
+s(133525,23126,{b=1,f=4,loc=45,lvl=55,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3})}}),
+n(14686,{description="Located in Razorfen Downs.\n\nCan be found inside one of the prison cells, before the skeleton pile. Looks like a human female until you talk to her upon she transforms into a Banshee.",maps={300},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,g={
+s(133576,23177,{b=1,f=27,lvl=36,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3}),
+s(133577,23178,{b=1,f=3,lvl=36,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3})}}),
+n(14695,{description="Located in Scholomance.\n\nCan be found in the room just before the plagued hatchlings.",maps={476},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,g={
+s(133555,23156,{b=1,f=1,lvl=57,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3}),
+s(133531,23132,{b=1,f=25,lvl=57,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3}),
+s(133538,23139,{b=1,f=8,lvl=57,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3})}}),
+n(14690,{description="Located in Dire Maul West.\n\nCan be found in the corridor above and behind Tendris Warpwood, the same one Magister Kalendris is in.",maps={234},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,g={
+s(133526,23127,{b=1,f=3,lvl=58,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3}),
+s(133528,23129,{b=1,f=4,loc=43,lvl=57,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3}),
+s(133527,23128,{b=1,f=4,loc=44,lvl=57,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3})}}),
+n(14693,{description="Located in Scarlet Monastery Graveyard.\n\nHe patrols the graveyard after killing the last boss.",maps={435},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,g={
+s(133567,23168,{b=1,f=20,lvl=30,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3}),
+i(23169,{b=1,f=51,lvl=30,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3}),
+s(133569,23170,{b=1,f=6,loc=44,lvl=30,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3})}}),
+n(14682,{description="Located in Shadowfang Keep.\n\nCan be found in the room up the ramp to the right of the entrance to the Butcher's room in the courtyard.",maps={310},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,g={
+s(133570,23171,{b=1,f=22,lvl=20,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3}),
+s(133572,23173,{b=1,f=4,loc=46,lvl=20,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=3})}}),
+n(16143,{cost={{"i",22484,8}},description="To summon this mob, speak to the cultist and give them 8 runes. This will automatically tag that mob for your group.",OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,g={
+i(22484,{b=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2}),
 s(133486,23087,{b=1,f=7,loc=42,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
 s(133487,23088,{b=1,f=6,loc=42,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
 s(133484,23085,{b=1,f=4,loc=42,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
 s(133488,23089,{b=1,f=5,loc=42,lvl=58,phase=1601,q=3,rwp=20001,u=2})}}),
-h(-63,{crs={16141,16298,16299,16383},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,g={
-i(22484,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=2}),
-i(22970,{b=1,lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1}),
-i(22972,{b=1,lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1}),
-i(22973,{b=1,lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1}),
-i(22974,{b=1,lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1}),
-i(22975,{b=1,lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1}),
-i(22977,{b=1,lvl=45,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1})}}),
-h(-46,{crs={14697,16379,16380},OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,g={
+h(-63,{crs={16141,16298,16299,16383},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,g={
+i(22484,{b=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=2}),
+i(22970,{b=1,lvl=45,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1}),
+i(22972,{b=1,lvl=45,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1}),
+i(22973,{b=1,lvl=45,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1}),
+i(22974,{b=1,lvl=45,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1}),
+i(22975,{b=1,lvl=45,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1}),
+i(22977,{b=1,lvl=45,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1})}}),
+h(-46,{crs={14697,16379,16380},OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,g={
 s(133490,23091,{f=4,loc=43,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
 s(133492,23093,{f=5,loc=43,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
 s(133491,23092,{f=6,loc=43,lvl=58,phase=1601,q=3,rwp=20001,u=2}),
 s(133489,23090,{f=7,loc=43,lvl=58,phase=1601,q=3,rwp=20001,u=2})}}),
-h(-47,{description="The reports are mailed to you about 48 hours after you turn in the random drop letter quests and there is one unique flavor message per letter. I'm not sure if speaking to the npcs mentioned in the responses leads to more flavor text, but someone should probably look into that.",OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,g={
-i(23196,{b=1,crs={16434,16436},description="1 Stamina for every 2 levels for 1 Hour.\n\nAvailable after 150 Battles won.",f=55,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1}),
-i(23194,{b=1,crs={16384,16395},description="1 Stamina for every 6 levels for 1 Hour.\n\nAvailable after 50 Battles won.",f=55,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1}),
-i(23195,{b=1,crs={16433,16435},description="1 Stamina for every 3 levels for 1 Hour.\n\nAvailable after 100 Battles won.",f=55,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1}),
-i(23008,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1}),
-i(23010,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1}),
-i(23011,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1}),
-i(23012,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1}),
-i(23013,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1}),
-i(23016,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30001 end	end,q=1})}})}})}})
+h(-47,{description="The reports are mailed to you about 48 hours after you turn in the random drop letter quests and there is one unique flavor message per letter. I'm not sure if speaking to the npcs mentioned in the responses leads to more flavor text, but someone should probably look into that.",OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,g={
+i(23196,{b=1,crs={16434,16436},description="1 Stamina for every 2 levels for 1 Hour.\n\nAvailable after 150 Battles won.",f=55,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1}),
+i(23194,{b=1,crs={16384,16395},description="1 Stamina for every 6 levels for 1 Hour.\n\nAvailable after 50 Battles won.",f=55,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1}),
+i(23195,{b=1,crs={16433,16435},description="1 Stamina for every 3 levels for 1 Hour.\n\nAvailable after 100 Battles won.",f=55,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1}),
+i(23008,{b=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1}),
+i(23010,{b=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1}),
+i(23011,{b=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1}),
+i(23012,{b=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1}),
+i(23013,{b=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1}),
+i(23016,{b=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase30_30001,q=1})}})}})}})
 end)

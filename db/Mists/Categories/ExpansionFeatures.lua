@@ -89,7 +89,8 @@ mnt(41516,{b=1,itemID=32860,lvl=70,q=4})}}),
 q(11018,{cost={{"i",32464,40}},isDaily=1,maxReputation={1015,42000},qgs={23140},requireSkill=186,sourceQuests={11014}}),
 q(11017,{cost={{"i",32468,40}},isDaily=1,maxReputation={1015,42000},qgs={23140},requireSkill=182,sourceQuests={11014}}),
 q(11016,{cost={{"i",32470,35}},isDaily=1,maxReputation={1015,42000},qgs={23140},requireSkill=393,sourceQuests={11014}}),
-q(11015,{cost={{"i",32427,30}},isDaily=1,maxReputation={1015,42000},qgs={23140},sourceQuests={11014}}),
+q(11015,{isDaily=1,maxReputation={1015,42000},qgs={23140},sourceQuests={11014},g={
+qo(1,{cost={{"i",32427,30}}})}}),
 q(11111,{coords={
 [111]={{67.6,18.4}}},minReputation={1015,42000},qgs={23463},sourceQuests={11107},g={
 mnt(41513,{b=1,itemID=32857,lvl=70,q=4})}}),
@@ -130,7 +131,8 @@ q(11097,{coords={
 [104]={{56.6,58.6}}},isDaily=1,maxReputation={1015,42000},minReputation={934,0},qgs={23434},sourceQuests={11095}}),
 q(11081,{description="The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines. You must be at least Friendly with Netherwing to loot them.",minReputation={1015,3000},qss={32726}}),
 q(11049,{coords={
-[104]={{65.9,86.4}}},cost={{"i",32506,1}},qgs={23141},sourceQuests={11019}}),
+[104]={{65.9,86.4}}},qgs={23141},sourceQuests={11019},g={
+qo(1,{cost={{"i",32506,1}}})}}),
 q(11075,{coords={
 [104]={{66,86.4}}},minReputation={1015,3000},qgs={23140},sourceQuests={11053}}),
 q(11035,{coords={
@@ -5864,7 +5866,7 @@ h(-56,{
 o(212278,{
 crit(20585,{achID=7248,id=7})})})}),
 h(-47,{
-ah(89613,{description="Rewarded for completing a random scenario.",OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50100 end	end,phase=50,providers={{"i",89613}},rwp=50100,type="i",u=2,g={
+ah(89613,{description="Rewarded for completing a random scenario.",OnUpdate=_.OnUpdateDB.RemovedWithPhase51_50100,phase=50,providers={{"i",89613}},rwp=50100,type="i",u=2,g={
 h(-89,{
 s(273634,89503,{b=1,f=3,lvl=90,q=3}),
 s(273632,89501,{b=1,f=3,lvl=90,q=3}),
@@ -5948,7 +5950,7 @@ s(273579,89448,{b=1,f=7,loc=46,lvl=90,q=3}),
 s(273580,89449,{b=1,f=7,loc=41,lvl=90,q=3}),
 s(273581,89450,{b=1,f=7,loc=47,lvl=90,q=3}),
 s(273582,89451,{b=1,f=7,loc=43,lvl=90,q=3})})}}),
-ah(92813,{awp=50100,OnUpdate=function(t)if settings:GetUnobtainableFilter(53)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50300 end	end,phase=51,providers={{"i",92813}},rwp=50300,type="i",u=2,g={
+ah(92813,{awp=50100,OnUpdate=_.OnUpdateDB.RemovedWithPhase53_50300,phase=51,providers={{"i",92813}},rwp=50300,type="i",u=2,g={
 h(-89,{awp=50004,g={
 s(275676,92881,{b=1,f=3,lvl=90,q=3}),
 s(273634,89503,{b=1,f=3,lvl=90,q=3}),
@@ -6593,8 +6595,8 @@ s(279258,98316,{b=1,f=25,lvl=90,q=4}),
 s(279241,98268,{b=1,f=27,lvl=90,q=4}),
 s(279262,98320,{b=1,f=27,lvl=90,q=4})}})}})}),
 h(-49,{
-i(89613,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50100 end	end,phase=50,q=3,rwp=50100,u=2}),
-i(92813,{awp=50100,b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(53)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50300 end	end,phase=51,q=3,rwp=50300,u=2}),
+i(89613,{b=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_50100,phase=50,q=3,rwp=50100,u=2}),
+i(92813,{awp=50100,b=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase53_50300,phase=51,q=3,rwp=50300,u=2}),
 i(98133,{awp=50300,b=1,phase=53,q=3,rwp=90001}),
 i(98134,{awp=50300,b=1,phase=53,q=4,rwp=90001,sym={{"select","itemID",98546},{"groupfill"}}})}),
 flt(110,{

@@ -855,15 +855,15 @@ q(7634,{awp=10001,c={3},coords={
 [1448]={{47,24.48}}},cost={{"i",18704,1}},lvl=60,maps={1452},qgs={14526},rwp=40003,sourceQuests={7633},g={
 i(18714,{b=1,c={3},f=113,lvl=60,q=4})}}),
 q(7496,{awp=10001,coords={
-[1453]={{67.2,85.1}}},lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,qgs={1748},r=2,rwp=100000,sourceQuests={7495},g={
-i(18403,{b=1,f=52,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4}),
-i(18404,{b=1,f=51,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4}),
-i(18406,{b=1,f=53,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4})}}),
+[1453]={{67.2,85.1}}},lvl=60,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,qgs={1748},r=2,rwp=100000,sourceQuests={7495},g={
+i(18403,{b=1,f=52,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=4}),
+i(18404,{b=1,f=51,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=4}),
+i(18406,{b=1,f=53,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=4})}}),
 q(7491,{awp=10001,coords={
-[1454]={{32,37.8}}},lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,qgs={4949},r=1,rwp=100000,sourceQuests={7490},g={
-i(18403,{b=1,f=52,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4}),
-i(18404,{b=1,f=51,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4}),
-i(18406,{b=1,f=53,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4})}}),
+[1454]={{32,37.8}}},lvl=60,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,qgs={4949},r=1,rwp=100000,sourceQuests={7490},g={
+i(18403,{b=1,f=52,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=4}),
+i(18404,{b=1,f=51,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=4}),
+i(18406,{b=1,f=53,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=4})}}),
 q(7507,{c={1,2},description="You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",lvl=60,maps={234},qss={18401},rwp=30300,u=2,g={
 i(18513,{b=1,q=4,u=2})}}),
 q(7636,{awp=10001,c={3},coords={
@@ -893,8 +893,8 @@ q(7493,{coords={
 [1454]={{52.2,75.8}}},learnedAt=300,lvl=60,qgs={14392},r=1,requireSkill=165,sourceQuests={7491,24429},g={
 r(19093,{awp=30202,learnedAt=300,requireSkill=165}),
 r(19093,{awp=10001,itemID=15769,learnedAt=300,q=3,requireSkill=165,rwp=100000})}}),
-q(7495,{awp=10001,lvl=60,maps={1453},OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,qss={18423},r=2,rwp=100000}),
-q(7490,{awp=10001,lvl=60,maps={1454},OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,qss={18422},r=1,rwp=100000})}),
+q(7495,{awp=10001,lvl=60,maps={1453},OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,qss={18423},r=2,rwp=100000}),
+q(7490,{awp=10001,lvl=60,maps={1454},OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,qss={18422},r=1,rwp=100000})}),
 prof(393,{
 i(15410,{q=3})}),
 d(3,{lvl=80,phase=32,g={
@@ -989,15 +989,15 @@ s(178047,49491,{b=1,f=3,lvl=80,q=4}),
 i(49489,{b=1,f=52,lvl=80,q=4}),
 i(49464,{b=1,f=53,lvl=80,q=4}),
 i(49488,{b=1,f=53,lvl=80,q=4})}})}}),
-d(9,{OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,sourceQuests={6502,6602},g={
+d(9,{OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,sourceQuests={6502,6602},g={
 n(10184,{
-ach(684,{awp=10001,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,rwp=100000}),
-i(18423,{awp=10001,b=1,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,r=2,rwp=100000}),
-i(18422,{awp=10001,b=1,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,r=1,rwp=100000}),
-i(17966,{awp=10001,b=1,f=113,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=2,rwp=100000}),
-s(128742,17068,{awp=10001,b=1,f=21,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,rwp=100000}),
-s(128749,17075,{awp=10001,b=1,f=25,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,rwp=100000}),
-s(128741,17067,{awp=10001,b=1,f=1,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,rwp=100000}),
+ach(684,{awp=10001,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,rwp=100000}),
+i(18423,{awp=10001,b=1,lvl=60,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=4,r=2,rwp=100000}),
+i(18422,{awp=10001,b=1,lvl=60,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=4,r=1,rwp=100000}),
+i(17966,{awp=10001,b=1,f=113,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=2,rwp=100000}),
+s(128742,17068,{awp=10001,b=1,f=21,lvl=60,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=4,rwp=100000}),
+s(128749,17075,{awp=10001,b=1,f=25,lvl=60,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=4,rwp=100000}),
+s(128741,17067,{awp=10001,b=1,f=1,lvl=60,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=4,rwp=100000}),
 s(128583,16908,{b=1,c={4},f=5,loc=40,lvl=60,q=4}),
 s(128614,16939,{b=1,c={3},f=6,loc=40,lvl=60,q=4}),
 s(128596,16921,{b=1,c={5},f=4,loc=40,lvl=60,q=4}),
@@ -1007,11 +1007,11 @@ s(128630,16955,{b=1,c={2},f=7,loc=40,lvl=60,q=4}),
 s(128604,16929,{b=1,c={9},f=4,loc=40,lvl=60,q=4}),
 s(128589,16914,{b=1,c={8},f=4,loc=40,lvl=60,q=4}),
 s(128575,16900,{b=1,c={11},f=5,loc=40,lvl=60,q=4}),
-i(18205,{awp=10001,b=1,f=51,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,rwp=100000}),
-s(128752,17078,{awp=10001,b=1,f=3,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,rwp=100000}),
-i(18813,{awp=10001,b=1,f=52,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,rwp=100000}),
-i(17064,{awp=10001,b=1,f=53,lvl=60,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,q=4,rwp=100000}),
-i(21108,{awp=10900,b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(51)then	t.u=2 t.rwp=nil else	t.u=nil t.description="Blizzard decided not to remove this yet, but we'll see if it lasts!" t.rwp=100001 end	end,phase=15,q=4,rwp=40003})})}})}}),
+i(18205,{awp=10001,b=1,f=51,lvl=60,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=4,rwp=100000}),
+s(128752,17078,{awp=10001,b=1,f=3,lvl=60,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=4,rwp=100000}),
+i(18813,{awp=10001,b=1,f=52,lvl=60,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=4,rwp=100000}),
+i(17064,{awp=10001,b=1,f=53,lvl=60,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,q=4,rwp=100000}),
+i(21108,{awp=10900,b=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase51_100001,phase=15,q=4,rwp=40003})})}})}}),
 inst(742,{awp=10600,coords={
 [33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,maps={288,289,290},phase=13,providers={{"o",179879}},savedInstanceID=469,sourceQuests={7761},g={
 h(-45,{
@@ -9438,9 +9438,9 @@ title(97)}),
 ach(2136,{sym={{"meta_achievement",1919,2150,2036,2037,1296,1297,1860,1862,2038,2056,2151,2039,2057,1816,1865,2041,2153,1864,2040,2058,1866,2154,2155,1867,1834,2042,1817,1872,2043,1873,2156,2157,1871,1868,2044,2045,2046}},g={
 mnt(59961,{b=1,itemID=44160,lvl=70,q=4})}}),
 ach(2137,{maps={141,155,162},sym={{"meta_achievement",2187,1858,1856,1996,1997,2178,622,1874,2047,2051,2146,2176,2148,2184}},g={
-mnt(60021,{b=1,itemID=44175,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,q=4,rwp=30100,u=2})}}),
+mnt(60021,{b=1,itemID=44175,lvl=70,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_30100,q=4,rwp=30100,u=2})}}),
 ach(2138,{maps={141,155,162},sym={{"meta_achievement",1859,1857,2186,2139,2140,2179,2177,623,1875,2048,2149,2054,2147,2185}},g={
-mnt(59976,{b=1,itemID=44164,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(40)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,q=4,rwp=30100,u=2})}}),
+mnt(59976,{b=1,itemID=44164,lvl=70,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_30100,q=4,rwp=30100,u=2})}}),
 ach(1289,{sym={{"meta_achievement",492,491,500,493,495,497,496,490,498,494,489,499}}}),
 ach(1288,{sym={{"meta_achievement",481,480,479,482,484,486,485,478,487,483,477,488}}})}}),
 inst(753,{awp=30002,coords={
@@ -10468,8 +10468,8 @@ ach(576,{sym={{"meta_achievement",562,566,568,564,572,574}}}),
 ach(2187,{rwp=40003,g={
 title(109)}})}),
 h(-45,{
-q(13372,{lvl=78,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,qss={44569},g={
-i(44582,{b=1,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,q=4,rwp=40200})}})}),
+q(13372,{lvl=78,OnUpdate=_.OnUpdateDB.RemovedWithPhase31_30100,qss={44569},g={
+i(44582,{b=1,OnUpdate=_.OnUpdateDB.RemovedWithPhase31_30100,q=4,rwp=40200})}})}),
 h(-78,{
 e(1601,{lore="Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",npcID=15956,g={
 crit(5100,{achID=562}),
@@ -10525,7 +10525,7 @@ e(1614,{lore="Once a noble blue dragon within the mountains of Northrend, Sapphi
 ach(572),
 ach(2146),
 crit(7158,{achID=578,OnUpdate=_.OnUpdateDB.DEDICATED_10M}),
-i(44569,{b=1,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,q=4})}}),
+i(44569,{b=1,lvl=80,OnUpdate=_.OnUpdateDB.RemovedWithPhase31_30100,q=4})}}),
 e(1615,{lore="He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",npcID=15990,g={
 ach(574),
 ach(2184,{crs={16428}}),
@@ -11004,7 +11004,7 @@ inst(756,{awp=30002,coords={
 d(3,{
 h(-45,{
 q(13384,{coords={
-[115]={{59.7,54.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,qgs={27990},sourceQuests={13372},g={
+[115]={{59.7,54.6}}},OnUpdate=_.OnUpdateDB.RemovedWithPhase31_30100,qgs={27990},sourceQuests={13372},g={
 qo(1,{providers={{"i",44650}}}),
 i(44658,{b=1,f=51,q=4}),
 i(44660,{b=1,f=51,q=4}),
@@ -11199,7 +11199,7 @@ s(175882,45694,{b=1,f=4,loc=45,lvl=80,q=4}),
 i(45675,{b=1,f=52,lvl=80,q=4}),
 crit(9974,{achID=2886})}}),
 e(1650,{npcID=32871,g={
-ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
+ach(17341,{OnUpdate=_.OnUpdateDB.RemovedWithPhase32_30200}),
 ach(3004,{rwp=40003}),
 ach(3036,{
 title(129)}),
@@ -11388,7 +11388,7 @@ s(176313,46346,{b=1,f=6,loc=47,lvl=80,q=4}),
 i(46010,{b=1,f=52,lvl=80,q=4}),
 crit(9948,{achID=2892})}}),
 e(1649,{npcID=33288,g={
-ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
+ach(17340,{OnUpdate=_.OnUpdateDB.RemovedWithPhase32_30200}),
 ach(3159,{
 i(46312,{b=1,f=53,lvl=80,q=4})}),
 ach(3158,{
@@ -11599,7 +11599,7 @@ i(45254,{b=1,lvl=80,q=4,rwp=50004}),
 i(45255,{b=1,f=54,lvl=80,q=4,rwp=50004}),
 crit(9957,{achID=2887})}}),
 e(1650,{npcID=32871,g={
-ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
+ach(17341,{OnUpdate=_.OnUpdateDB.RemovedWithPhase32_30200}),
 ach(3005,{rwp=40003}),
 ach(3037,{
 title(130)}),
@@ -11811,7 +11811,7 @@ i(45509,{b=1,f=54,lvl=80,q=4,rwp=50004}),
 i(45145,{b=1,f=54,lvl=80,q=4,rwp=50004}),
 crit(9964,{achID=2893})}}),
 e(1649,{npcID=33288,g={
-ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
+ach(17340,{OnUpdate=_.OnUpdateDB.RemovedWithPhase32_30200}),
 ach(3164,{
 ach(4626,{providers={{"i",45693}}}),
 mnt(63796,{b=1,itemID=45693,lvl=70,q=4})}),

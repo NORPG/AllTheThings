@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,cl,crit,cs,cu,d,e,faction,flt,gach,gcat,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,settings,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateGuildAchievementCriteria,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,cl,crit,cs,cu,d,e,faction,flt,gach,gcat,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateGuildAchievementCriteria,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Instances=
 h(-75,{SortPriority=1,g={
 x(1,{awp=10100,g={
@@ -11774,7 +11774,7 @@ ach(576,{sym={{"meta_achievement",562,566,568,564,572,574}}}),
 ach(2187,{rwp=40003,u=2,g={
 title(109,{u=2})}})}),
 h(-45,{
-q(13372,{lvl=78,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,qss={44569}})}),
+q(13372,{lvl=78,OnUpdate=_.OnUpdateDB.RemovedWithPhase31_30100,qss={44569}})}),
 h(-78,{
 e(1601,{lore="Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",npcID=15956,g={
 crit(5100,{achID=562}),
@@ -11837,7 +11837,7 @@ ach(572),
 ach(2146,{
 crit(7570,{achID=2137,id=9})}),
 crit(7158,{achID=578,OnUpdate=_.OnUpdateDB.DEDICATED_10M}),
-i(44569,{b=1,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,q=4})}}),
+i(44569,{b=1,lvl=80,OnUpdate=_.OnUpdateDB.RemovedWithPhase31_30100,q=4})}}),
 e(1615,{lore="He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",npcID=15990,g={
 ach(574),
 ach(2184,{crs={16428},g={
@@ -12332,7 +12332,7 @@ inst(756,{awp=30002,coords={
 d(3,{
 h(-45,{
 q(13384,{coords={
-[115]={{59.7,54.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,qgs={27990},sourceQuests={13372},g={
+[115]={{59.7,54.6}}},OnUpdate=_.OnUpdateDB.RemovedWithPhase31_30100,qgs={27990},sourceQuests={13372},g={
 qo(1,{providers={{"i",44650}}}),
 i(44658,{b=1,f=51,q=4}),
 i(44660,{b=1,f=51,q=4}),
@@ -12537,7 +12537,7 @@ s(175882,45694,{b=1,f=4,loc=45,lvl=80,q=4}),
 i(45675,{b=1,f=52,lvl=80,q=4}),
 crit(9974,{achID=2886})}}),
 e(1650,{npcID=32871,g={
-ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
+ach(17341,{OnUpdate=_.OnUpdateDB.RemovedWithPhase32_30200}),
 ach(3004,{rwp=40003,u=2}),
 ach(3036,{
 title(129)}),
@@ -12727,7 +12727,7 @@ s(176313,46346,{b=1,f=6,loc=47,lvl=80,q=4}),
 i(46010,{b=1,f=52,lvl=80,q=4}),
 crit(9948,{achID=2892})}}),
 e(1649,{npcID=33288,g={
-ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
+ach(17340,{OnUpdate=_.OnUpdateDB.RemovedWithPhase32_30200}),
 ach(3159,{
 i(46312,{b=1,f=53,lvl=80,q=4})}),
 gach(5019,{awp=40003}),
@@ -12939,7 +12939,7 @@ i(45254,{b=1,c={2,6},lvl=80,q=4,rwp=50004}),
 i(45255,{b=1,c={2,7,11},lvl=80,q=4,rwp=50004}),
 crit(9957,{achID=2887})}}),
 e(1650,{npcID=32871,g={
-ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
+ach(17341,{OnUpdate=_.OnUpdateDB.RemovedWithPhase32_30200}),
 ach(3005,{rwp=40003,u=2}),
 ach(3037,{
 title(130)}),
@@ -13152,7 +13152,7 @@ i(45509,{b=1,c={7,11},lvl=80,q=4,rwp=50004}),
 i(45145,{b=1,c={2,6},lvl=80,q=4,rwp=50004}),
 crit(9964,{achID=2893})}}),
 e(1649,{npcID=33288,g={
-ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
+ach(17340,{OnUpdate=_.OnUpdateDB.RemovedWithPhase32_30200}),
 ach(3164,{
 ach(4626,{providers={{"i",45693}}}),
 mnt(63796,{b=1,itemID=45693,lvl=70,q=4})}),
@@ -18607,19 +18607,19 @@ i(67130,{f=51,lvl=85,q=4})}}),
 n(50063,{coords={
 [249]={{38,60.6}}},isRaid=1,g={
 s(212429,69877,{awp=40100,f=5,loc=45,lvl=85,phase=4001,q=4}),
-s(211113,67240,{f=5,loc=45,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
+s(211113,67240,{f=5,loc=45,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase4001_40100,q=3,rwp=40100,u=2})}}),
 n(50056,{coords={
 [198]={{37.6,73.4},{40.4,81.8}}},isRaid=1,g={
 s(212419,69842,{awp=40100,f=7,loc=45,lvl=85,phase=4001,q=4}),
-s(211108,67235,{f=7,loc=45,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
+s(211108,67235,{f=7,loc=45,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase4001_40100,q=3,rwp=40100,u=2})}}),
 n(50089,{coords={
 [241]={{51,7.6},{52.2,10.6},{56.6,11},{57.2,7.8},{59.8,6.8}}},isRaid=1,g={
 s(212421,69844,{awp=40100,f=20,lvl=85,phase=4001,q=4}),
-s(211118,67246,{f=20,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
+s(211118,67246,{f=20,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase4001_40100,q=3,rwp=40100,u=2})}}),
 n(50009,{coords={
 [204]={{63.4,32.6},{65.8,20.4},{71.8,18.4},{75.6,36.6},{77,25.4}}},isRaid=1,g={
 s(212420,69843,{awp=40100,f=29,lvl=85,phase=4001,q=4}),
-s(211036,67153,{f=29,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
+s(211036,67153,{f=29,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase4001_40100,q=3,rwp=40100,u=2})}}),
 n(50005,{coords={
 [204]={{39.4,71.9},{40.4,73.8},{41,76.6},{41.8,73.4},{42.2,76}},
 [205]={{38.5,67},{46.2,48.6},{57.2,80.8},{66.4,44.2}}},isRaid=1,maps={203},g={
@@ -18627,7 +18627,7 @@ mnt(98718,{itemID=67151,lvl=78,q=4})}}),
 n(50061,{coords={
 [207]={{40.6,52.4},{45.4,39},{45.4,63.8},{56.6,42.6},{57.2,59}}},isRaid=1,g={
 s(212428,69876,{awp=40100,f=6,loc=44,lvl=85,phase=4001,q=4}),
-s(211112,67239,{f=6,loc=44,lvl=84,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40100 end	end,q=3,rwp=40100,u=2})}})}}),
+s(211112,67239,{f=6,loc=44,lvl=84,OnUpdate=_.OnUpdateDB.RemovedWithPhase4001_40100,q=3,rwp=40100,u=2})}})}}),
 inst(75,{coords={
 [2340]={{46.1,47.9}}},isLockoutShared=1,isRaid=1,lvl=85,mapID=282,savedInstanceID=757,g={
 h(-12,{

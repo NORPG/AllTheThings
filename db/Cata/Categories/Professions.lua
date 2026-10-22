@@ -1,11 +1,10 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,cat,crit,flt,h,i,p,prof,q,qo,r,s,settings,sp,title,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateSpell,_.CreateTitle,_.CreateExpansion;
+local ach,ah,cat,crit,flt,h,i,p,prof,q,qo,r,s,sp,title,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateExpansion;
 categories.Professions=
 h(-44,{SortPriority=25,g={
 prof(794,{awp=40003,g={
-x(7,{requireSkill=794}),
 x(4,{requireSkill=794,g={
 h(-12,{requireSkill=794,g={
 ach(4857,{requireSkill=794}),
@@ -73,10 +72,7 @@ crit(15054,{achID=5191,id=1,providers={{"i",63407}},requireSkill=794}),
 crit(15055,{achID=5191,id=1,providers={{"i",64356}},requireSkill=794}),
 crit(15056,{achID=5191,id=1,providers={{"i",64379}},requireSkill=794}),
 crit(15057,{achID=5191,id=1,providers={{"i",64381}},requireSkill=794}),
-crit(15099,{achID=5191,id=1,providers={{"i",64648}},requireSkill=794})}})}})}}),
-x(5,{requireSkill=794}),
-x(6,{requireSkill=794}),
-x(8,{requireSkill=794})}}),
+crit(15099,{achID=5191,id=1,providers={{"i",64648}},requireSkill=794})}})}})}})}}),
 h(-12,{
 x(1,{awp=10100,g={
 ach(732),
@@ -395,12 +391,12 @@ r(3972,{itemID=4417,learnedAt=200,q=2,requireSkill=202,u=2}),
 r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=202,u=2})}})}})}}),
 x(4,{awp=40003,requireSkill=202})}),
 prof(129,{rwp=80001,g={
-x(1,{requireSkill=129,g={
+x(1,{awp=10100,requireSkill=129,g={
 ach(131,{requireSkill=129}),
 ach(132,{requireSkill=129}),
 ach(133,{requireSkill=129})}}),
-x(2,{awp=20005,phase=17,requireSkill=129,g={
-ach(134,{requireSkill=129})}}),
+x(2,{awp=20003,phase=17,requireSkill=129,g={
+ach(134,{awp=20005,requireSkill=129})}}),
 x(3,{awp=30003,phase=30,requireSkill=129,g={
 ach(135,{requireSkill=129,g={
 crit(846,{achID=730,id=1})}}),
@@ -409,10 +405,7 @@ ach(141,{providers={{"i",34722},{"i",53049},{"i",53051}},requireSkill=129})}}),
 x(4,{awp=40003,requireSkill=129,g={
 ach(4918,{requireSkill=129,g={
 crit(63617,{achID=4915,id=1})}}),
-ach(5480,{providers={{"i",53051}},requireSkill=129})}}),
-x(5,{requireSkill=129}),
-x(6,{requireSkill=129}),
-x(7,{requireSkill=129})}}),
+ach(5480,{providers={{"i",53051}},requireSkill=129})}})}}),
 prof(356,{
 h(-12,{requireSkill=356,g={
 ach(1516,{awp=30003,phase=30,requireSkill=356,g={
@@ -528,12 +521,12 @@ x(2,{awp=20003,phase=17,requireSkill=356,g={
 ach(129,{requireSkill=356}),
 ach(1225,{awp=30002,maps={1946,1951,1952},requireSkill=356,g={
 crit(5672,{achID=1516,awp=30003,id=1,phase=30})}})}}),
-x(3,{awp=30003,phase=30,requireSkill=356,g={
-ach(130,{requireSkill=356,g={
+x(3,{awp=30003,requireSkill=356,g={
+ach(130,{phase=30,requireSkill=356,g={
 crit(845,{achID=730,id=1,requireSkill=356,rwp=80001}),
-crit(845,{achID=1516,id=1,phase=30,requireSkill=356})}}),
-ach(1517,{maps={114,115,116,117,119,127},requireSkill=356,g={
-crit(5690,{achID=1516,id=1,phase=30})}})}}),
+crit(845,{achID=1516,id=1,requireSkill=356})}}),
+ach(1517,{maps={114,115,116,117,119,127},phase=30,requireSkill=356,g={
+crit(5690,{achID=1516,id=1})}})}}),
 x(4,{awp=40003,requireSkill=356,g={
 h(-12,{requireSkill=356,g={
 ach(4917,{requireSkill=356,g={
@@ -1121,8 +1114,8 @@ r(57170,{awp=30002,learnedAt=385,requireSkill=773}),
 r(57014,{awp=30002,learnedAt=385,requireSkill=773}),
 r(57021,{awp=30002,learnedAt=385,requireSkill=773}),
 r(95825,{awp=40003,learnedAt=385,requireSkill=773})}})}}),
-x(3,{requireSkill=773,g={
-flt(200,{requireSkill=773,g={
+x(3,{awp=30003,requireSkill=773,g={
+flt(200,{awp=30002,requireSkill=773,g={
 r(51005,{requireSkill=773}),
 cat(106,{requireSkill=773,g={
 r(59487,{learnedAt=175,requireSkill=773}),
@@ -1223,8 +1216,8 @@ r(61117,{learnedAt=400,requireSkill=773}),
 r(61118,{learnedAt=400,requireSkill=773}),
 r(61119,{learnedAt=400,requireSkill=773}),
 r(61120,{learnedAt=400,requireSkill=773})}})}})}}),
-x(4,{phase=40,requireSkill=773,g={
-flt(200,{awp=40003,requireSkill=773,g={
+x(4,{awp=40003,phase=40,requireSkill=773,g={
+flt(200,{requireSkill=773,g={
 r(86008,{collectible=false,learnedAt=425,requireSkill=773}),
 cat(105,{requireSkill=773,g={
 r(92027,{learnedAt=475,requireSkill=773,rwp=70003})}}),
@@ -1269,11 +1262,7 @@ r(86653,{learnedAt=515,requireSkill=773}),
 r(86652,{learnedAt=515,requireSkill=773}),
 r(99547,{learnedAt=510,requireSkill=773,rwp=50004}),
 r(99548,{learnedAt=510,requireSkill=773,rwp=50004}),
-r(99549,{learnedAt=510,requireSkill=773,rwp=50004})}})}})}}),
-x(8,{requireSkill=773}),
-x(10,{requireSkill=773}),
-x(11,{requireSkill=773}),
-x(12,{requireSkill=773})}}),
+r(99549,{learnedAt=510,requireSkill=773,rwp=50004})}})}})}})}}),
 prof(755,{phase=17,g={
 x(4,{awp=40003,phase=40,requireSkill=755,g={
 h(-45,{requireSkill=755,g={
@@ -1500,9 +1489,9 @@ r(73506,{learnedAt=525,requireSkill=755}),
 r(73504,{learnedAt=525,requireSkill=755}),
 r(73505,{learnedAt=525,requireSkill=755}),
 r(73497,{learnedAt=460,requireSkill=755}),
-r(99543,{learnedAt=520,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40200 end	end,requireSkill=755,rwp=50004}),
-r(99544,{learnedAt=520,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40200 end	end,requireSkill=755,rwp=50004}),
-r(99542,{learnedAt=520,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40200 end	end,requireSkill=755,rwp=50004})}}),
+r(99543,{learnedAt=520,OnUpdate=_.OnUpdateDB.RemovedWithPhase41_40200,requireSkill=755,rwp=50004}),
+r(99544,{learnedAt=520,OnUpdate=_.OnUpdateDB.RemovedWithPhase41_40200,requireSkill=755,rwp=50004}),
+r(99542,{learnedAt=520,OnUpdate=_.OnUpdateDB.RemovedWithPhase41_40200,requireSkill=755,rwp=50004})}}),
 cat(842,{requireSkill=755,g={
 r(73498,{learnedAt=525,requireSkill=755}),
 r(1216328,{awp=40200,learnedAt=515,phase=41,requireSkill=755}),
@@ -1514,9 +1503,9 @@ r(73495,{learnedAt=450,requireSkill=755}),
 r(73494,{learnedAt=425,requireSkill=755}),
 r(98921,{learnedAt=525,requireSkill=755}),
 r(73502,{learnedAt=525,requireSkill=755}),
-r(99540,{learnedAt=510,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40200 end	end,requireSkill=755,rwp=50004}),
-r(99541,{learnedAt=510,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40200 end	end,requireSkill=755,rwp=50004}),
-r(99539,{learnedAt=510,OnUpdate=function(t)if settings:GetUnobtainableFilter(41)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40200 end	end,requireSkill=755,rwp=50004})}}),
+r(99540,{learnedAt=510,OnUpdate=_.OnUpdateDB.RemovedWithPhase41_40200,requireSkill=755,rwp=50004}),
+r(99541,{learnedAt=510,OnUpdate=_.OnUpdateDB.RemovedWithPhase41_40200,requireSkill=755,rwp=50004}),
+r(99539,{learnedAt=510,OnUpdate=_.OnUpdateDB.RemovedWithPhase41_40200,requireSkill=755,rwp=50004})}}),
 cat(843,{requireSkill=755,g={
 r(73627,{learnedAt=460,requireSkill=755}),
 r(73625,{learnedAt=450,requireSkill=755}),

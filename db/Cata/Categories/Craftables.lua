@@ -3900,33 +3900,33 @@ i(43652,{coords={
 [125]={{63.8,64.3}}},description="Can be caught outside Violet Hold on both WotLK and Legion Dalaran.",lvl=70,q=1}),
 i(45904,{maps_disp={123},q=1}),
 o(192051,{description="Can be found on the seaside.",maps={114},g={
-crit(5278,{achID=1517,id=1})}}),
+crit(5278,{achID=1517,id=1,phase=30})}}),
 o(192053,{coords={
 [114]={{31.1,67.6},{33.5,66.6}},
 [115]={{50.1,69.7}},
 [117]={{82.9,90.3}}},description="Have shared spawn with Moonglow Cuttlefish Schools. Borean Tundra have most schools.",g={
-crit(5279,{achID=1517,id=1})}}),
+crit(5279,{achID=1517,id=1,phase=30})}}),
 o(192048,{coords={
 [115]={{40.1,67.7},{89.9,38.5},{91,28.6},{92,69},{92.8,58.2},{92.9,48.2}}},g={
-crit(5280,{achID=1517,id=1})}}),
+crit(5280,{achID=1517,id=1,phase=30})}}),
 o(192049,{description="Can be found in inland waters.",maps={117},g={
-crit(5281,{achID=1517,id=1})}}),
+crit(5281,{achID=1517,id=1,phase=30})}}),
 o(192050,{description="Can be found in inland waters.",maps={116},g={
-crit(5282,{achID=1517,id=1})}}),
+crit(5282,{achID=1517,id=1,phase=30})}}),
 o(192059,{maps={127},g={
-crit(5283,{achID=1517,id=1})}}),
+crit(5283,{achID=1517,id=1,phase=30})}}),
 o(192052,{description="Schools can be found on the seaside.",maps={114,115,116,117},g={
-crit(5284,{achID=1517,id=1})}}),
+crit(5284,{achID=1517,id=1,phase=30})}}),
 o(192054,{coords={
 [114]={{31.1,67.6},{33.5,66.6}},
 [115]={{50.1,69.7}},
 [117]={{82.9,90.3}}},description="Have shared spawn with Deep Sea Monsterbelly Schools. Borean Tundra have most schools.",g={
-crit(5285,{achID=1517,id=1})}}),
+crit(5285,{achID=1517,id=1,phase=30})}}),
 o(192046,{coords={
 [114]={{51.6,45}}},g={
-crit(5286,{achID=1517,id=1})}}),
+crit(5286,{achID=1517,id=1,phase=30})}}),
 o(192057,{maps={119},g={
-crit(5287,{achID=1517,id=1})}}),
+crit(5287,{achID=1517,id=1,phase=30})}}),
 o(194479,{maps={114}}),
 flt(200,{
 r(43308,{b=1,description="Can be fished from schools.",itemID=34109,learnedAt=100,q=1,requireSkill=356})})}}),

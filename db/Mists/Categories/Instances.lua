@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,cl,crit,cs,cu,d,e,faction,flt,gach,gcat,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,settings,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateGuildAchievementCriteria,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,cl,crit,cs,cu,d,e,faction,flt,gach,gcat,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateGuildAchievement,_.CreateGuildAchievementCriteria,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Instances=
 h(-75,{SortPriority=1,g={
 x(1,{awp=10100,g={
@@ -12245,7 +12245,7 @@ ach(576,{sym={{"meta_achievement",562,566,568,564,572,574}}}),
 ach(2187,{rwp=40003,u=2,g={
 title(109,{u=2})}})}),
 h(-45,{
-q(13372,{lvl=78,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,qss={44569}})}),
+q(13372,{lvl=78,OnUpdate=_.OnUpdateDB.RemovedWithPhase31_30100,qss={44569}})}),
 h(-78,{
 e(1601,{lore="Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",npcID=15956,g={
 crit(5100,{achID=562}),
@@ -12308,7 +12308,7 @@ ach(572),
 ach(2146,{
 crit(7570,{achID=2137,id=9})}),
 crit(7158,{achID=578,OnUpdate=_.OnUpdateDB.DEDICATED_10M}),
-i(44569,{b=1,lvl=80,OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,q=4})}}),
+i(44569,{b=1,lvl=80,OnUpdate=_.OnUpdateDB.RemovedWithPhase31_30100,q=4})}}),
 e(1615,{lore="He serves the Lich King without question, a necromancer of great prowess in life, turned to a master of necromancy after his death. It is said he is the most loyal of the Lich King's subjects.",npcID=15990,g={
 ach(574),
 ach(2184,{crs={16428},description="Pull 1 abomination from each section and then AOE them all when they get to you. Very easy achievement.",g={
@@ -12809,7 +12809,7 @@ inst(756,{awp=30002,coords={
 d(3,{
 h(-45,{
 q(13384,{coords={
-[115]={{59.7,54.6}}},OnUpdate=function(t)if settings:GetUnobtainableFilter(31)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30100 end	end,qgs={27990},sourceQuests={13372},g={
+[115]={{59.7,54.6}}},OnUpdate=_.OnUpdateDB.RemovedWithPhase31_30100,qgs={27990},sourceQuests={13372},g={
 qo(1,{providers={{"i",44650}}}),
 i(44658,{b=1,f=51,modID=1,q=4}),
 i(44660,{b=1,f=51,modID=1,q=4}),
@@ -13014,7 +13014,7 @@ s(175882,45694,{b=1,f=4,loc=45,lvl=80,modID=1,q=4}),
 i(45675,{b=1,f=52,lvl=80,modID=1,q=4}),
 crit(9974,{achID=2886})}}),
 e(1650,{npcID=32871,g={
-ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
+ach(17341,{OnUpdate=_.OnUpdateDB.RemovedWithPhase32_30200}),
 ach(3004,{rwp=40003,u=2}),
 ach(3036,{
 title(129)}),
@@ -13204,7 +13204,7 @@ s(176313,46346,{b=1,f=6,loc=47,lvl=80,modID=1,q=4}),
 i(46010,{b=1,f=52,lvl=80,modID=1,q=4}),
 crit(9948,{achID=2892})}}),
 e(1649,{npcID=33288,g={
-ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
+ach(17340,{OnUpdate=_.OnUpdateDB.RemovedWithPhase32_30200}),
 ach(3159,{
 i(46312,{b=1,f=53,lvl=80,modID=1,q=4})}),
 gach(5019,{awp=40003}),
@@ -13416,7 +13416,7 @@ i(45254,{b=1,modID=1,rwp=50004,u=2}),
 i(45255,{b=1,modID=1,rwp=50004,u=2}),
 crit(9957,{achID=2887})}}),
 e(1650,{npcID=32871,g={
-ach(17341,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
+ach(17341,{OnUpdate=_.OnUpdateDB.RemovedWithPhase32_30200}),
 ach(3005,{rwp=40003,u=2}),
 ach(3037,{
 title(130)}),
@@ -13629,7 +13629,7 @@ i(45509,{b=1,modID=1,rwp=50004,u=2}),
 i(45145,{b=1,modID=1,rwp=50004,u=2}),
 crit(9964,{achID=2893})}}),
 e(1649,{npcID=33288,g={
-ach(17340,{OnUpdate=function(t)if settings:GetUnobtainableFilter(32)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=30200 end	end}),
+ach(17340,{OnUpdate=_.OnUpdateDB.RemovedWithPhase32_30200}),
 ach(3164,{
 ach(4626,{providers={{"i",45693}}}),
 mnt(63796,{b=1,itemID=45693,lvl=70,q=4})}),
@@ -19084,19 +19084,19 @@ i(67130,{f=51,lvl=85,q=4})}}),
 n(50063,{coords={
 [249]={{38,60.6}}},isRaid=1,g={
 s(212429,69877,{awp=40100,f=5,loc=45,lvl=85,phase=4001,q=4}),
-s(211113,67240,{f=5,loc=45,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
+s(211113,67240,{f=5,loc=45,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase4001_40100,q=3,rwp=40100,u=2})}}),
 n(50056,{coords={
 [198]={{37.6,73.4},{40.4,81.8}}},isRaid=1,g={
 s(212419,69842,{awp=40100,f=7,loc=45,lvl=85,phase=4001,q=4}),
-s(211108,67235,{f=7,loc=45,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
+s(211108,67235,{f=7,loc=45,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase4001_40100,q=3,rwp=40100,u=2})}}),
 n(50089,{coords={
 [241]={{51,7.6},{52.2,10.6},{56.6,11},{57.2,7.8},{59.8,6.8}}},isRaid=1,g={
 s(212421,69844,{awp=40100,f=20,lvl=85,phase=4001,q=4}),
-s(211118,67246,{f=20,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
+s(211118,67246,{f=20,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase4001_40100,q=3,rwp=40100,u=2})}}),
 n(50009,{coords={
 [204]={{63.4,32.6},{65.8,20.4},{71.8,18.4},{75.6,36.6},{77,25.4}}},isRaid=1,g={
 s(212420,69843,{awp=40100,f=29,lvl=85,phase=4001,q=4}),
-s(211036,67153,{f=29,lvl=85,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40100 end	end,q=3,rwp=40100,u=2})}}),
+s(211036,67153,{f=29,lvl=85,OnUpdate=_.OnUpdateDB.RemovedWithPhase4001_40100,q=3,rwp=40100,u=2})}}),
 n(50005,{coords={
 [204]={{39.4,71.9},{40.4,73.8},{41,76.6},{41.8,73.4},{42.2,76}},
 [205]={{38.5,67},{46.2,48.6},{57.2,80.8},{66.4,44.2}}},isRaid=1,maps={203},g={
@@ -19104,7 +19104,7 @@ mnt(98718,{itemID=67151,lvl=78,q=4})}}),
 n(50061,{coords={
 [207]={{40.6,52.4},{45.4,39},{45.4,63.8},{56.6,42.6},{57.2,59}}},isRaid=1,g={
 s(212428,69876,{awp=40100,f=6,loc=44,lvl=85,phase=4001,q=4}),
-s(211112,67239,{f=6,loc=44,lvl=84,OnUpdate=function(t)if settings:GetUnobtainableFilter(4001)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=40100 end	end,q=3,rwp=40100,u=2})}})}}),
+s(211112,67239,{f=6,loc=44,lvl=84,OnUpdate=_.OnUpdateDB.RemovedWithPhase4001_40100,q=3,rwp=40100,u=2})}})}}),
 inst(75,{coords={
 [244]={{46.1,47.9}}},isLockoutShared=1,isRaid=1,lvl=85,mapID=282,savedInstanceID=757,g={
 h(-12,{
@@ -23166,7 +23166,7 @@ mnt(127170,{b=1,itemID=87777,lvl=90,q=4})}}),
 e(677,{crs={60399,60400},g={
 ach(6455,{
 crit(19949,{achID=6932,id=6})}),
-ach(6954,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50200 end	end,rwp=50200,u=2})}})}}),
+ach(6954,{OnUpdate=_.OnUpdateDB.RemovedWithPhase52_50200,rwp=50200,u=2})}})}}),
 d(1,{difficulties={3,4},g={
 e(679,{crs={59915,60043,60047,60051},g={
 i(85922,{b=1,f=51,lvl=90,q=4}),
@@ -23346,9 +23346,9 @@ e(677,{crs={60399,60400},g={
 ach(6724,{
 title(204),
 crit(19966,{achID=6932,id=21})}),
-ach(7485,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50200 end	end,rwp=50200,u=2}),
+ach(7485,{OnUpdate=_.OnUpdateDB.RemovedWithPhase52_50200,rwp=50200,u=2}),
 gach(6675),
-gach(6680,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50200 end	end,rwp=50200,u=2}),
+gach(6680,{OnUpdate=_.OnUpdateDB.RemovedWithPhase52_50200,rwp=50200,u=2}),
 s(273909,89941,{b=1,f=7,loc=42,lvl=90,q=4}),
 s(272154,87070,{b=1,f=5,loc=40,lvl=90,q=4}),
 s(273908,89940,{b=1,f=6,loc=40,lvl=90,q=4}),
@@ -23601,7 +23601,7 @@ e(743,{npcID=62837,g={
 ach(6922,{
 crit(21105,{achID=6922,providers={{"n",63591}}}),
 crit(19956,{achID=6932,id=11})}),
-ach(8246,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50200 end	end,rwp=50200,u=2})}})}}),
+ach(8246,{OnUpdate=_.OnUpdateDB.RemovedWithPhase52_50200,rwp=50200,u=2})}})}}),
 d(1,{difficulties={3,4},g={
 e(745,{npcID=62980,g={
 s(271579,86203,{b=1,f=7,loc=46,lvl=90,q=4}),
@@ -23760,8 +23760,8 @@ s(272079,86986,{b=1,f=7,loc=41,lvl=90,q=4}),
 s(272077,86984,{b=1,f=5,loc=47,lvl=90,q=4}),
 s(272076,86983,{b=1,f=20,lvl=90,q=4})}}),
 e(743,{npcID=62837,g={
-ach(7486,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50200 end	end,rwp=50200,u=2}),
-gach(6679,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50200 end	end,rwp=50200,u=2}),
+ach(7486,{OnUpdate=_.OnUpdateDB.RemovedWithPhase52_50200,rwp=50200,u=2}),
+gach(6679,{OnUpdate=_.OnUpdateDB.RemovedWithPhase52_50200,rwp=50200,u=2}),
 ach(6730,{
 crit(19972,{achID=6932,id=27})}),
 gach(6677),
@@ -23944,7 +23944,7 @@ crit(19957,{achID=6932,id=13})}})}}),
 e(709,{npcID=60999,g={
 ach(6825,{
 crit(19960,{achID=6932,id=15})}),
-ach(8248,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50200 end	end,rwp=50200,u=2}),
+ach(8248,{OnUpdate=_.OnUpdateDB.RemovedWithPhase52_50200,rwp=50200,u=2}),
 crit(19913,{achID=6926,id=6})}})}}),
 d(1,{difficulties={3,4},g={
 e(683,{crs={60583,60585,60586},g={
@@ -24120,9 +24120,9 @@ s(272247,87181,{b=1,f=5,loc=45,lvl=90,q=4})}}),
 e(709,{npcID=60999,g={
 ach(6734,{
 title(198)}),
-ach(7487,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50200 end	end,rwp=50200,u=2}),
+ach(7487,{OnUpdate=_.OnUpdateDB.RemovedWithPhase52_50200,rwp=50200,u=2}),
 gach(6676),
-gach(6678,{OnUpdate=function(t)if settings:GetUnobtainableFilter(52)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50200 end	end,rwp=50200,u=2}),
+gach(6678,{OnUpdate=_.OnUpdateDB.RemovedWithPhase52_50200,rwp=50200,u=2}),
 i(89259,{b=1,c={2,5,9},lvl=90,q=4}),
 i(89260,{b=1,c={1,3,7,10},lvl=90,q=4}),
 i(89258,{b=1,c={4,6,8,11},lvl=90,q=4}),
@@ -24579,7 +24579,7 @@ e(829,{crs={68904,68905},g={
 ach(8086,{
 crit(22977,{achID=8124,id=21})})}}),
 e(832,{npcID=68397,g={
-ach(8249,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50400 end	end,rwp=50400,u=2}),
+ach(8249,{OnUpdate=_.OnUpdateDB.RemovedWithPhase54_50400,rwp=50400,u=2}),
 ach(8090,{
 crit(22797,{achID=8090}),
 crit(22996,{achID=8090}),
@@ -25531,7 +25531,7 @@ s(278487,96911,{b=1,f=28,lvl=90,q=4}),
 s(278490,96914,{b=1,f=7,loc=47,lvl=90,q=4}),
 s(278484,96907,{b=1,f=34,lvl=90,q=4})})}}),
 e(832,{npcID=68397,g={
-ach(8238,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50400 end	end,rwp=50400,u=2}),
+ach(8238,{OnUpdate=_.OnUpdateDB.RemovedWithPhase54_50400,rwp=50400,u=2}),
 ach(8067,{
 title(222)}),
 gach(8139),
@@ -25577,11 +25577,11 @@ s(278499,96926,{b=1,f=8,lvl=90,q=4}),
 i(96930,{b=1,f=53,lvl=90,q=4}),
 s(278498,96925,{b=1,f=22,lvl=90,q=4})})}}),
 e(831,{npcID=69473,g={
-ach(8260,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50400 end	end,rwp=50400,u=2}),
+ach(8260,{OnUpdate=_.OnUpdateDB.RemovedWithPhase54_50400,rwp=50400,u=2}),
 ach(8068),
 gach(8258),
 ach(8089,{rwp=60002}),
-gach(8257,{OnUpdate=function(t)if settings:GetUnobtainableFilter(54)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=50400 end	end,rwp=50400,u=2}),
+gach(8257,{OnUpdate=_.OnUpdateDB.RemovedWithPhase54_50400,rwp=50400,u=2}),
 s(277078,95025,{b=1,f=7,loc=46,lvl=90,q=4}),
 s(277071,95013,{b=1,f=3,lvl=90,q=4}),
 s(277059,95001,{b=1,f=7,loc=45,lvl=90,q=4}),
@@ -26789,12 +26789,12 @@ s(284230,105627,{b=1,f=20,lvl=90,q=4}),
 i(105632,{b=1,f=53,lvl=90,q=4})})}})}}),
 d(124,{difficulties={3,5},rwp=60002,g={
 e(869,{npcID=71865,g={
-ach(8398,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=60002 end	end,g={
-mnt(148396,{b=1,itemID=104246,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=60002 end	end,q=4})}})}})}}),
+ach(8398,{OnUpdate=_.OnUpdateDB.RemovedWithPhase60_60002,g={
+mnt(148396,{b=1,itemID=104246,lvl=90,OnUpdate=_.OnUpdateDB.RemovedWithPhase60_60002,q=4})}})}})}}),
 d(125,{difficulties={4,6},rwp=60002,g={
 e(869,{npcID=71865,g={
-ach(8399,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=60002 end	end,g={
-mnt(148396,{b=1,itemID=104246,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=60002 end	end,q=4})}})}})}}),
+ach(8399,{OnUpdate=_.OnUpdateDB.RemovedWithPhase60_60002,g={
+mnt(148396,{b=1,itemID=104246,lvl=90,OnUpdate=_.OnUpdateDB.RemovedWithPhase60_60002,q=4})}})}})}}),
 d(1,{difficulties={3,4},rwp=60002,g={
 h(-63,{
 s(283045,103846,{b=1,f=3,lvl=90,q=4}),
@@ -27369,12 +27369,12 @@ s(284042,105393,{b=1,f=7,loc=41,lvl=90,q=4}),
 s(284044,105395,{b=1,f=22,lvl=90,q=4})})}})}}),
 d(5,{rwp=60002,g={
 e(869,{npcID=71865,g={
-ach(8400,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=60002 end	end}),
-gach(8512,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=60002 end	end})}})}}),
+ach(8400,{OnUpdate=_.OnUpdateDB.RemovedWithPhase60_60002}),
+gach(8512,{OnUpdate=_.OnUpdateDB.RemovedWithPhase60_60002})}})}}),
 d(6,{rwp=60002,g={
 e(869,{npcID=71865,g={
-ach(8401,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=60002 end	end}),
-gach(8513,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=nil t.rwp=60002 end	end})}})}})}}),
+ach(8401,{OnUpdate=_.OnUpdateDB.RemovedWithPhase60_60002}),
+gach(8513,{OnUpdate=_.OnUpdateDB.RemovedWithPhase60_60002})}})}})}}),
 inst(303,{coords={
 [390]={{15.8,74.8}}},maps={437,438},savedInstanceID=962,g={
 h(-45,{
