@@ -1248,7 +1248,7 @@ applyclassicphase = function(phase, t)
 		end
 		return t;
 	end
-	return data;
+	return t;
 end
 --- Selects the Classic or non-Classic value for the active build.
 ---@param classicValue any Value returned for Classic builds.
