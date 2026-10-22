@@ -45288,7 +45288,8 @@ s(306220,270829,{cost={{"c",1602,875}},f=21,pvp=1}),
 s(306236,270845,{cost={{"c",1602,1750}},f=28,pvp=1}),
 s(306237,270846,{cost={{"c",1602,1750}},f=28,pvp=1}),
 s(306223,270832,{cost={{"c",1602,875}},f=25,pvp=1}),
-s(306243,270852,{c={3},cost={{"c",1602,1750}},f=26,pvp=1})}})}})}}),
+s(306243,270852,{c={3},cost={{"c",1602,1750}},f=26,pvp=1})}}),
+i(271991,{awp=120105,f=55,pvp=1,spellID=1289856})}})}}),
 h(-295,{pvp=1,rwp=120200,g={
 n(255844,{coords={
 [2393]={{34,80.7}}},pvp=1,g={
@@ -47518,7 +47519,7 @@ ach(8350,{pvp=1,rwp=80300,u=2,g={
 crit(23432,{achID=8360,id=4,pvp=1,u=2})}}),
 ach(8351,{pvp=1,rwp=80300,u=2,g={
 crit(23433,{achID=8360,id=5,pvp=1,u=2})}}),
-ach(8354,{description="Post-rework, this is only obtainable in the Deepwind Dunk brawl.",pvp=1,g={
+ach(8354,{description="Post-rework, this is only obtainable in the Deepwind Dunk brawl.",maps={935},pvp=1,g={
 crit(23434,{achID=8360,id=6,pvp=1,rwp=80300,u=2})}}),
 ach(8355,{pvp=1,rwp=80300,u=2,g={
 crit(23522,{achID=8360,id=7,pvp=1,u=2})}}),

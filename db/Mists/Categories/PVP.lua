@@ -9359,7 +9359,7 @@ ach(8350,{pvp=1,rwp=80300,g={
 crit(23432,{achID=8360,id=4,pvp=1})}}),
 ach(8351,{pvp=1,rwp=80300,g={
 crit(23433,{achID=8360,id=5,pvp=1})}}),
-ach(8354,{pvp=1,g={
+ach(8354,{maps={935},pvp=1,g={
 crit(23434,{achID=8360,id=6,pvp=1,rwp=80300})}}),
 ach(8355,{pvp=1,rwp=80300,g={
 crit(23522,{achID=8360,id=7,pvp=1})}})}})}}),

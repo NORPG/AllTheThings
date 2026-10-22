@@ -46948,7 +46948,7 @@ ach(8350,{pvp=1,rwp=80300,u=2,g={
 crit(23432,{achID=8360,id=4,pvp=1,u=2})}}),
 ach(8351,{pvp=1,rwp=80300,u=2,g={
 crit(23433,{achID=8360,id=5,pvp=1,u=2})}}),
-ach(8354,{description="Post-rework, this is only obtainable in the Deepwind Dunk brawl.",pvp=1,g={
+ach(8354,{description="Post-rework, this is only obtainable in the Deepwind Dunk brawl.",maps={935},pvp=1,g={
 crit(23434,{achID=8360,id=6,pvp=1,rwp=80300,u=2})}}),
 ach(8355,{pvp=1,rwp=80300,u=2,g={
 crit(23522,{achID=8360,id=7,pvp=1,u=2})}}),
