@@ -525,8 +525,6 @@ local MERCHANT_GROUPS = {
 	}),
 };
 
-local HUGE_SNOWBALL = i(35557);	-- Huge Snowball
-
 root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE_FESTIVAL_HEADER, {
 	n(25740, {	-- Ahune
 		["description"] =
@@ -790,7 +788,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				i(35494),	-- Shroud of Winter's Chill [Level 70]
 				i(35495),	-- The Frost Lord's War Cloak [Level 70]
 			})),
-			{ HUGE_SNOWBALL }, {}),
+			{
+				i(35557),	-- Huge Snowball
+			}, {}),
 	}),
 	-- #if AFTER WRATH
 	n(ACHIEVEMENTS, {
@@ -3726,6 +3726,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		})),
 	}),
 });
-
--- Remove the holiday flag.
-HUGE_SNOWBALL.u = nil;

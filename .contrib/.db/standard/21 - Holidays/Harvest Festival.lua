@@ -29,10 +29,6 @@ HARVEST_FESTIVAL_HEADER = createHeader({
 	},
 });
 
-local BLUE_FIREWORK = i(9312);	-- Blue Firework
-local GREEN_FIREWORK = i(9313);	-- Green Firework
-local RED_FIREWORK = i(9318);	-- Red Firework
-
 root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEADER, {
 	n(MAILBOX, {
 		i(19697, {		-- Bounty of the Harvest
@@ -112,16 +108,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(HARVEST_FESTIVAL_HEAD
 		},
 		["timeline"] = { ADDED_1_12_1 },
 		["groups"] = {
-			BLUE_FIREWORK,
-			GREEN_FIREWORK,
-			RED_FIREWORK,
+			i(9312),	-- Blue Firework
+			i(9313),	-- Green Firework
+			i(9318),	-- Red Firework
 			i(9314),	-- Red Streaks Firework
 			i(9315),	-- Yellow Rose Firework
 		},
 	}),
 })));
-
--- Unmark as holiday.
-BLUE_FIREWORK.u = nil;
-GREEN_FIREWORK.u = nil;
-RED_FIREWORK.u = nil;

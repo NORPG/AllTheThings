@@ -2,21 +2,6 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-local REDEMPTION = recipe(7328);	-- Redemption
-local SUMMON_VOIDWALKER = recipe(697);	-- Summon Voidwalker
-local ANDRA_ZYANDREL_GROUPS, QUELIS_GROUPS = {}, {};
-local LYNA_GROUPS = {
-	i(22565, {	-- Formula: Large Prismatic Shard (RECIPE!)
-		["isLimited"] = true,
-	}),
-	i(22562, {	-- Formula: Superior Mana Oil (RECIPE!)
-		["isLimited"] = true,
-	}),
-	i(22563, {	-- Formula: Superior Wizard Oil (RECIPE!)
-		["isLimited"] = true,
-	}),
-};
-
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 	m(SILVERMOON_CITY, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
 		["lore"] = "Silvermoon City is the capital city of the blood elves. It is located in Eversong Woods, next to the tainted Dead Scar.",
@@ -302,7 +287,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 80.4, 59.2, SILVERMOON_CITY },
 						}),
 						-- #if BEFORE CATA
-						REDEMPTION,
+						recipe(7328),	-- Redemption
 						-- #endif
 					},
 				}),
@@ -436,7 +421,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 26.0, 15.0, GHOSTLANDS },
 						}),
 						-- #if BEFORE CATA
-						SUMMON_VOIDWALKER,
+						recipe(697),	-- Summon Voidwalker
 						-- #endif
 					},
 				}),
@@ -698,7 +683,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 						},
 					},
-					["groups"] = appendGroups(LYNA_GROUPS, {}),
+					["groups"] = {
+						i(22565, {	-- Formula: Large Prismatic Shard (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(22562, {	-- Formula: Superior Mana Oil (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(22563, {	-- Formula: Superior Wizard Oil (RECIPE!)
+							["isLimited"] = true,
+						}),
+					},
 				}),
 				n(16620, {	-- Mathaleron
 					["coord"] = { 86.0, 39.6, SILVERMOON_CITY },
@@ -745,7 +740,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16677, {	-- Quelis <Cooking Supplies>
 					["coord"] = { 69.6, 71.2, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(QUELIS_GROUPS, {}),
+					["groups"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
 				}),
 				n(16678, {	-- Rahein <Blade Vendor>
 					["coord"] = { 52.6, 64.6, SILVERMOON_CITY },
@@ -930,24 +928,3 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	})),
 })));
-
--- Remove the phase requirement from Redemption.
-REDEMPTION.u = nil;
-SUMMON_VOIDWALKER.u = nil;
-
--- Add in items that aren't supposed to be marked with a phase release.
-for i,o in ipairs({
-	i(16059),	-- Common Brown Shirt
-	i(3428),	-- Common Gray Shirt
-	i(16060),	-- Common White Shirt
-}) do table.insert(ANDRA_ZYANDREL_GROUPS, o); end
-for i,o in ipairs({
-	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-}) do table.insert(QUELIS_GROUPS, o); end
-for i,o in ipairs({
-	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-	i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-}) do table.insert(LYNA_GROUPS, o); end

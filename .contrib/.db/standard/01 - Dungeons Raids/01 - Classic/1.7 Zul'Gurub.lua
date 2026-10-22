@@ -2,12 +2,6 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-local TOME_OF_POLYMORPH_TURTLE = i(22739);
-local RAZZASHI_HATCHLING = i(48126, {	-- Razzashi Hatchling
-	["timeline"] = { ADDED_3_2_0 },
-	["cr"] = 14821,	-- Razzashi Raptor
-});
-
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR, {
 	inst(76, bubbleDownSelf({ ["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 } }, {	-- Zul'Gurub
 		["lore"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
@@ -787,7 +781,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				i(19703),	-- Witherbark Coin
 				i(19698),	-- Zulian Coin
 				-- #if BEFORE CATA
-				RAZZASHI_HATCHLING,
+				i(48126, {	-- Razzashi Hatchling
+					["timeline"] = { ADDED_3_2_0 },
+					["cr"] = 14821,	-- Razzashi Raptor
+				}),
 				-- #endif
 			}),
 			n(COMMON_BOSS_DROPS, {
@@ -1284,7 +1281,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					i(19946),	-- Tigule's Harpoon
 					i(19945),	-- Foror's Eyepatch
 					i(19947),	-- Nat Pagle's Broken Reel
-					TOME_OF_POLYMORPH_TURTLE,
+					i(22739),	-- Tome of Polymorph: Turtle
 				},
 			}),
 			n(14515, {	-- High Priestess Arlokk
@@ -2484,7 +2481,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						i(231272),	-- Tigule's Harpoon
 						i(19945),	-- Foror's Eyepatch
 						i(231271),	-- Nat Pagle's Broken Reel
-						TOME_OF_POLYMORPH_TURTLE,
+						i(22739),	-- Tome of Polymorph: Turtle
 					},
 				}),
 				n(14515, {	-- High Priestess Arlokk
@@ -2576,4 +2573,3 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 
 -- The tome was added to Cataclysm Fishing Pools after being removed from ZG.
 TOME_OF_POLYMORPH_TURTLE.timeline = nil;
-RAZZASHI_HATCHLING.u = nil;

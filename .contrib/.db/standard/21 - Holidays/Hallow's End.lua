@@ -224,16 +224,6 @@ for i,o in ipairs(WANDS_WITH_COST) do
 	table.insert(WANDS_IDS, w.itemID);
 	table.insert(WANDS_WITHOUT_COST, w);
 end
-local SPECTRAL_GROG = i(104316, {	-- Spectral Grog
-	["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
-	["crs"] = {
-		96637,	-- Boneship Reveler
-		96538,	-- Brackish Cultivator
-		96535,	-- Captain Bonerender
-		96545,	-- Growing Squashling
-		96536,	-- Salty Dreg
-	},
-});
 
 -- CRIEVE NOTE: Use this function for candy buckets. :)
 local CANDY_BUCKET_OBJECT_DATA = {
@@ -4714,13 +4704,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		i(20400),	-- Pumpkin Bag
 		-- #if AFTER 6.0.1
-		SPECTRAL_GROG,
+		i(104316, {	-- Spectral Grog
+			["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
+			["crs"] = {
+				96637,	-- Boneship Reveler
+				96538,	-- Brackish Cultivator
+				96535,	-- Captain Bonerender
+				96545,	-- Growing Squashling
+				96536,	-- Salty Dreg
+			},
+		}),
 		-- #endif
 	}),
 })));
-
--- Remove the holiday flag.
-SPECTRAL_GROG.u = nil;
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
 	applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {

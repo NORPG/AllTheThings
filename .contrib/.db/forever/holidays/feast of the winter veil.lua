@@ -9,12 +9,6 @@ local HOLIDAY_VENDOR_GROUPS_GREEN = {
 local HOLIDAY_VENDOR_GROUPS_RED = {
 	-- Nothing yet
 };
-local HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK = {	-- Smokywood Pastures Gift Pack
-	i(2996),	-- Bolt of Linen Cloth
-	i(2840),	-- Copper Bar
-	i(2318),	-- Light Leather
-	i(785),	-- Mageroyal
-};
 
 root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 	readable = "Feast of Winter Veil",
@@ -453,7 +447,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				isYearly = true,
 				lvl = 10,
 				groups = {
-					i(17727, HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK),	-- Smokywood Pastures Gift Pack
+					i(17727, {	-- Smokywood Pastures Gift Pack
+						i(2996),	-- Bolt of Linen Cloth
+						i(2840),	-- Copper Bar
+						i(2318),	-- Light Leather
+						i(785),	-- Mageroyal
+					}),
 					i(17685, {	-- Smokywood Pastures Sampler
 						i(17404),	-- Blended Bean Brew
 						i(17344),	-- Candy Cane
@@ -595,6 +594,3 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 		}),
 	},
 })));
-
--- Remove the holiday flag.
-for i, o in ipairs(HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK) do o.u = nil; end

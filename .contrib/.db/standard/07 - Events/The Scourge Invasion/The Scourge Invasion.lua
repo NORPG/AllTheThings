@@ -24,9 +24,6 @@ local THE_SCOURGE_INVASION = createHeader({
 	},
 });
 
--- Note: This is up here to prevent the unobtainable flag from getting put on the Major Healing and Mana Potions (for now)
-local MAJOR_HEALING_POTION = i(13446);	-- Major Healing Potion
-local MAJOR_MANA_POTION = i(13444);	-- Major Mana Potion
 local REMOVED_WITH_NAXX_RELEASE = REMOVED_2_0_1;
 local ADDED_WITH_WRATH_PREPATCH = ADDED_3_0_2;
 local REMOVED_WITH_NAXX_RELEASE_OR_SOD = REMOVED_WITH_NAXX_RELEASE;
@@ -596,7 +593,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["repeatable"] = true,
 				["lvl"] = 50,
 				["groups"] = {
-					MAJOR_HEALING_POTION,	-- Major Healing Potion
+					i(13446),	-- Major Healing Potion
 				},
 			}),
 			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Major Mana Potion
@@ -629,7 +626,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["repeatable"] = true,
 				["lvl"] = 50,
 				["groups"] = {
-					MAJOR_MANA_POTION,	-- Major Mana Potion
+					i(13444),	-- Major Mana Potion
 				},
 			}),
 			q(9302, {	-- Missive from the Front
@@ -1154,11 +1151,3 @@ applyclassicphase(TBC_PHASE_FIVE_SCOURGE_INVASION, invasion);
 applyclassicphase(PHASE_SIX_SCOURGE_INVASION, invasion);
 -- #endif
 root(ROOTS.WorldEvents, invasion);
-
--- Wipe out the unobtainable states.
-MAJOR_HEALING_POTION.OnUpdate = nil;
-MAJOR_HEALING_POTION.timeline = nil;
-MAJOR_HEALING_POTION.u = nil;
-MAJOR_MANA_POTION.OnUpdate = nil;
-MAJOR_MANA_POTION.timeline = nil;
-MAJOR_MANA_POTION.u = nil;

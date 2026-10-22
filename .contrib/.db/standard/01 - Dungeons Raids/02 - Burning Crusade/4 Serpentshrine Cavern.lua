@@ -2,8 +2,6 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-local COILFANG_ARMAMENTS = i(24368);	-- Coilfang Armaments
-
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, bubbleDown({ ["timeline"] = { ADDED_2_0_3 } }, {
 	inst(748, {	-- Serpentshrine Cavern
 		["lore"] = "Whoever controls the water controls Outland.\n\nThese are the words of Lord Illidan Stormrage to his most trusted lieutenant, Lady Vashj. Shortly after the Third War, when Illidan requested the aid of the naga, a group of naga led by Lady Vashj answered his call. Ever since, Vashj has displayed a fierce dedication to Illidan.\n\nNow the naga witch carefully monitors Coilfang's operations from her seat of power within Serpentshrine Cavern. Far more at home here among the waters of the reservoir than locked within the cold stone walls of Black Temple, Vashj maintains a close eye on her minions and personally oversees the draining of Zangarmarsh.\n\nWhether her loyalties belong to Illidan alone, however, remains to be seen.",
@@ -33,7 +31,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				}),
 			}),
 			n(ZONE_DROPS, {
-				COILFANG_ARMAMENTS,
+				i(24368),	-- Coilfang Armaments
 				i(30280),	-- Pattern: Belt of Blasting (RECIPE!)
 				i(30302),	-- Pattern: Belt of Deep Shadow (RECIPE!)
 				i(30301),	-- Pattern: Belt of Natural Power (RECIPE!)
@@ -244,7 +242,3 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 		},
 	}),
 }))));
-
--- Remove the Phase from Coilfang Armaments
-COILFANG_ARMAMENTS.u = nil;
-applyclassicphase(TBC_PHASE_ONE, COILFANG_ARMAMENTS);

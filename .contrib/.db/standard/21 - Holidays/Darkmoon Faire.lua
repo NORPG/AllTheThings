@@ -153,14 +153,6 @@ local WHACK_A_GNOLL_HEADER = createHeader({
 	},
 });
 
--- Note: This is up here to prevent the unobtainable flag from getting put on the following items:
-local HEAVY_LEATHER_BALL = i(18662);
-local DENSE_SHORTBOW = i(11305);
-local DARING_DIRK = i(12248);
-local BIG_STICK = i(12251);
-local SLYVAN_SHORTBOW = i(11308);
-local STURDY_RECURVE = i(11306);
-local FINE_SHORTBOW = i(11303);
 local TIER_ONE_MAX_REPUTATION = { 909, NEUTRAL + 500 };	-- Darkmoon Faire, must be less than 500 over Neutral
 local TIER_TWO_MAX_REPUTATION = { 909, NEUTRAL + 1050 };	-- Darkmoon Faire, must be less than 1050 over Neutral
 local TIER_THREE_MAX_REPUTATION = { 909, NEUTRAL + 1700 };	-- Darkmoon Faire, must be less than 1700 over Neutral
@@ -3794,7 +3786,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				-- #endif
 				["groups"] = {
-					HEAVY_LEATHER_BALL,
+					i(18662),	-- Heavy Leather Ball
 					i(11026),	-- Tree Frog (PET!)
 					i(11027, {	-- Wood Frog (PET!)
 						["isLimited"] = true,
@@ -3939,8 +3931,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { ADDED_4_3_0 },
 					})),
 					-- #else
-					BIG_STICK,
-					DARING_DIRK,
+					i(12251),	-- Big Stick
+					i(12248),	-- Daring Dirk
 					-- #endif
 					i(19303, {	-- Darkmoon Necklace
 						["timeline"] = { REMOVED_4_3_0 },
@@ -3962,10 +3954,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						["timeline"] = { ADDED_4_3_0 },
 					})),
 					-- #else
-					DENSE_SHORTBOW,
-					FINE_SHORTBOW,
-					STURDY_RECURVE,
-					SLYVAN_SHORTBOW,
+					i(11305),	-- Dense Shortbow
+					i(11303),	-- Fine Shortbow
+					i(11306),	-- Sturdy Recurve
+					i(11308),	-- Sylvan Shortbow
 					-- #endif
 				},
 			}),
@@ -4546,15 +4538,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		}),
 	},
 })));
-
--- Wipe out the unobtainable states.
-HEAVY_LEATHER_BALL.u = nil;
-DENSE_SHORTBOW.u = nil;
-DARING_DIRK.u = nil;
-BIG_STICK.u = nil;
-SLYVAN_SHORTBOW.u = nil;
-STURDY_RECURVE.u = nil;
-FINE_SHORTBOW.u = nil;
 
 root(ROOTS.HiddenQuestTriggers,{
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_2 } }, {

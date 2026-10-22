@@ -4,9 +4,6 @@
 -- CRIEVE NOTE: Don't touch this file without asking.
 -- Burden of Truth: Classic & TBC.
 
-local SENSE_UNDEAD = recipe(5502);	-- Sense Undead
-local ENCHANTING_VENDOR_GROUPS = {};
-
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 	m(EVERSONG_WOODS, {
 		["lore"] = "Eversong Woods is the starter zone for the Blood Elf race. It is a golden forest with typical high elf buildings. In the center of the map is a blighted strip known as the Dead Scar, a remnant from Arthas' battle against the High Elves. Quests involve learning about the blood elves' rich history, decadent lifestyle, and their struggles to keep the Dead Scar from growing.",
@@ -1643,7 +1640,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 20, 1),
 					-- #if BEFORE CATA
-					["groups"] = { SENSE_UNDEAD },
+					["groups"] = {
+						recipe(5502),	-- Sense Undead
+					},
 					-- #endif
 				}),
 				q(9035, {	-- Roadside Ambush
@@ -2126,7 +2125,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(18951, {	-- Erilia <Enchanting Vendor>
 					["coord"] = { 56.2, 54.6, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
-					["groups"] = ENCHANTING_VENDOR_GROUPS,
+					["groups"] = VANILLA_ENCHANTING_COMMON_RECIPES,
 				}),
 				n(16860, {	-- Jilanne
 					["coord"] = { 44.8, 71.6, EVERSONG_WOODS },
@@ -2292,9 +2291,3 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	}),
 })));
-
--- Remove the phase requirement from Sense Undead.
-SENSE_UNDEAD.u = nil;
-
--- Push the Enchanting Supplies goods on to his loot table. (this bypasses the phase)
-for i,o in ipairs(VANILLA_ENCHANTING_COMMON_RECIPES, {}) do table.insert(ENCHANTING_VENDOR_GROUPS, o); end

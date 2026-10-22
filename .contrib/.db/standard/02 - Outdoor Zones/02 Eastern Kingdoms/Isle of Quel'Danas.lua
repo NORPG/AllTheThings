@@ -2520,9 +2520,3 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 		},
 	})),
 })));
-
--- Remove the phase identifiers from the PvP Gear.
-for i,o in ipairs(KARYNNA_GROUPS) do o.u = nil; end
-for i,o in ipairs(KAYRI_GROUPS) do o.u = nil; end
-for i,o in ipairs(OLUS_GROUPS) do o.u = nil; end
-for i,o in ipairs(SORYN_GROUPS) do o.u = nil; end

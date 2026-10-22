@@ -3,14 +3,6 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-local ESKHANDERS_LEFT_CLAW = i(18202);	-- Eskhandar's Left Claw [Note: For whatever reason, Blizzard moved this weapon to Magmadar after the boss was removed.]
-local MATURE_BLUE_DRAGON_SINEW = i(18704, {	-- Mature Blue Dragon Sinew
-	["classes"] = { HUNTER },
-});
-local THE_EYE_OF_SHADOW = i(18665, {	-- The Eye of Shadow
-	["classes"] = { PRIEST },
-});
-
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
@@ -24,9 +16,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["isRaid"] = true,
 				["lvl"] = 60,
 				["groups"] = {
-					MATURE_BLUE_DRAGON_SINEW,
+					i(18704, {	-- Mature Blue Dragon Sinew
+						["classes"] = { HUNTER },
+					}),
 					i(19130),	-- Cold Snap
-					ESKHANDERS_LEFT_CLAW,
+					i(18202),	-- Eskhandar's Left Claw
 					i(17070),	-- Fang of the Mystics
 					i(18542),	-- Typhoon
 					i(19132),	-- Crystal Adorned Crown
@@ -150,7 +144,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["crs"] = { 18338 },	-- Highlord Kruul
 				["lvl"] = 60,
 				["groups"] = {
-					THE_EYE_OF_SHADOW,
+					i(18665, {	-- The Eye of Shadow
+						["classes"] = { PRIEST },
+					}),
 					i(17113),	-- Amberseal Keeper
 					i(17112),	-- Empyrean Demolisher
 					i(18546),	-- Infernal Headcage
@@ -166,15 +162,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		},
 	}),
 }));
-
-ESKHANDERS_LEFT_CLAW.u = nil;
-ESKHANDERS_LEFT_CLAW.timeline = nil;
-THE_EYE_OF_SHADOW.u = nil;
-MATURE_BLUE_DRAGON_SINEW.u = nil;
--- #if BEFORE CATA
-THE_EYE_OF_SHADOW.timeline = nil;
-MATURE_BLUE_DRAGON_SINEW.timeline = nil;
--- #endif
 -- #endif
 
 -- #IF ANYCLASSIC

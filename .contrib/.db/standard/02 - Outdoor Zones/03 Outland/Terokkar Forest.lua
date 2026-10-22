@@ -2,10 +2,6 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-local UNHOLY_ENCHANT = i(16248, {	-- Formula: Enchant Weapon - Unholy (RECIPE!)
-	["cr"] = 16810,	-- Bonechewer Backbreaker
-});
-
 ExportDB.OnTooltipDB.ForSkyguard = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -1964,7 +1960,9 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR, i(34255, {	-- Razorthorn Flayer Gland
 						["cr"] = 24920,	-- Razorthorn Flayer
 					})),
-					UNHOLY_ENCHANT,
+					i(16248, {	-- Formula: Enchant Weapon - Unholy (RECIPE!)
+						["cr"] = 16810,	-- Bonechewer Backbreaker
+					}),
 					i(32388, {	-- Shadow Dust
 						["timeline"] = { ADDED_2_1_0 },
 						["crs"] = {
@@ -1993,6 +1991,3 @@ root(ROOTS.Zones, {
 		})),
 	})),
 });
-
--- Remove the phase flag.
-UNHOLY_ENCHANT.u = nil;

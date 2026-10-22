@@ -2,20 +2,6 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-local GORNII_GROUPS, PHEA_GROUPS = {}, {};
-local EGOMIS_GROUPS = {
-	i(22565, {	-- Formula: Large Prismatic Shard (RECIPE!)
-		["isLimited"] = true,
-	}),
-	i(22562, {	-- Formula: Superior Mana Oil (RECIPE!)
-		["isLimited"] = true,
-	}),
-	i(22563, {	-- Formula: Superior Wizard Oil (RECIPE!)
-		["isLimited"] = true,
-	}),
-};
-
-local REDEMPTION = recipe(7328);	-- Redemption
 root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 	m(THE_EXODAR, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
 		["lore"] = "The Exodar is the capital city of the Draenei. It is located in the westernmost part of Azuremyst Isle. The Exodar's faction leader is Prophet Velen, who is located near the battlemasters in the Vault of Lights.",
@@ -275,7 +261,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["cr"] = 17542,	-- Young Furbolg Shaman
 						}),
 						-- #if BEFORE CATA
-						REDEMPTION,
+						recipe(7328),	-- Redemption
 						-- #endif
 					},
 				}),
@@ -420,7 +406,17 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 						},
 					},
-					["groups"] = appendGroups(EGOMIS_GROUPS, {}),
+					["groups"] = {
+						i(22565, {	-- Formula: Large Prismatic Shard (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(22562, {	-- Formula: Superior Mana Oil (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(22563, {	-- Formula: Superior Wizard Oil (RECIPE!)
+							["isLimited"] = true,
+						}),
+					},
 				}),
 				n(16657, {	-- Feera <Engineering Supplies>
 					["coord"] = { 53.6, 90.8, THE_EXODAR },
@@ -633,7 +629,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				n(16718, {	-- Phea <Cooking Supplies>
 					["coord"] = { 54.4, 26.3, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(PHEA_GROUPS, {}),
+					["groups"] = {
+						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+					},
 				}),
 				n(21019, {	-- Sixx <Moth Keeper>
 					["coord"] = { 30.1, 33.8, THE_EXODAR },
@@ -744,23 +743,3 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		},
 	})),
 })));
-
--- Remove the phase requirement from Redemption.
-REDEMPTION.u = nil;
-
--- Add in items that aren't supposed to be marked with a phase release.
-for i,o in ipairs({
-	i(16059),	-- Common Brown Shirt
-	i(3428),	-- Common Gray Shirt
-	i(16060),	-- Common White Shirt
-}) do table.insert(GORNII_GROUPS, o); end
-for i,o in ipairs({
-	i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-	i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-}) do table.insert(PHEA_GROUPS, o); end
-for i,o in ipairs({
-	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-	i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-}) do table.insert(EGOMIS_GROUPS, o); end

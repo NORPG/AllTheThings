@@ -21,14 +21,6 @@ FEAST_OF_WINTER_VEIL_HEADER = createHeader({
 	},
 });
 
-local HUGE_SNOWBALL = i(35557);	-- Huge Snowball
-local FROZEN_ARMS_OF_A_HERO = i(128314, {	-- Frozen Arms of a Hero
-	["timeline"] = { ADDED_6_2_0 },
-});
-local MEDALLION_OF_THE_LEGION = i(128315, {	-- Medallion of the Legion
-	["timeline"] = { ADDED_6_2_0 },
-});
-
 -- BB King Criteria UID shenanigans
 local TYRANDE_WHISPERWIND_CRITERIA_UID = 12666;
 local PROPHET_VELEN_CRITERIA_UID = 12667;
@@ -58,34 +50,6 @@ local HOLIDAY_VENDOR_GROUPS_RED = {
 	i(34319, {	-- Pattern: Red Winter Clothes (RECIPE!)
 		["timeline"] = { ADDED_2_3_0 },
 	}),
-};
-local HOLIDAY_NON_COLLECTIBLE_GROUPS = {
-	i(21215),	-- Graccu's Mince Meat Fruitcake
-	-- #if AFTER 3.0.2.8962
-	i(44481),	-- Grindgear Toy Gorilla
-	-- #endif
-	-- #if AFTER 3.1.0.9658
-	i(44601),	-- Heavy Copper Racer
-	-- #endif
-	-- #if AFTER 3.0.2.8962
-	i(34498),	-- Paper Zeppelin Kit (3.0.2.8962)
-	i(44482),	-- Trusty Copper Racer (3.0.2.8970)
-	-- #endif
-	-- #if AFTER 3.1.0.9658
-	i(44599),	-- Zippy Copper Racer
-	-- #endif
-};
-local HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK = {	-- Smokywood Pastures Gift Pack
-	-- #if BEFORE 6.2.2.20395
-	i(2996),	-- Bolt of Linen Cloth
-	i(2840),	-- Copper Bar
-	i(2318),	-- Light Leather
-	i(785),	-- Mageroyal
-	-- #else
-	i(128647, {	-- Fizzy Apple Cider
-		["timeline"] = { ADDED_6_2_2 },
-	}),
-	-- #endif
 };
 local STOLEN_PRESENT_GROUPS = {
 	-- Battle Pets/Companions
@@ -2281,7 +2245,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["isYearly"] = true,
 			["lvl"] = 10,
 			["groups"] = {
-				i(17727, HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK),	-- Smokywood Pastures Gift Pack
+				i(17727, {	-- Smokywood Pastures Gift Pack
+					-- #if BEFORE 6.2.2.20395
+					i(2996),	-- Bolt of Linen Cloth
+					i(2840),	-- Copper Bar
+					i(2318),	-- Light Leather
+					i(785),	-- Mageroyal
+					-- #else
+					i(128647, {	-- Fizzy Apple Cider
+						["timeline"] = { ADDED_6_2_2 },
+					}),
+					-- #endif
+				}),
 				i(17685, {	-- Smokywood Pastures Sampler
 					i(17404),	-- Blended Bean Brew
 					i(17344, {	-- Candy Cane
@@ -2492,7 +2467,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 						-- #endif
 					},
 					-- #if BEFORE TWW
-					["groups"] = HOLIDAY_NON_COLLECTIBLE_GROUPS,
+					["groups"] = {
+						i(21215),	-- Graccu's Mince Meat Fruitcake
+						-- #if AFTER 3.0.2.8962
+						i(44481),	-- Grindgear Toy Gorilla
+						-- #endif
+						-- #if AFTER 3.1.0.9658
+						i(44601),	-- Heavy Copper Racer
+						-- #endif
+						-- #if AFTER 3.0.2.8962
+						i(34498),	-- Paper Zeppelin Kit (3.0.2.8962)
+						i(44482),	-- Trusty Copper Racer (3.0.2.8970)
+						-- #endif
+						-- #if AFTER 3.1.0.9658
+						i(44599),	-- Zippy Copper Racer
+						-- #endif
+					},
 					-- #endif
 				}),
 				i(93626, {	-- Stolen Present
@@ -2756,8 +2746,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 							["timeline"] = { ADDED_6_2_0 },
 						}),
 						-- #endif
-						FROZEN_ARMS_OF_A_HERO,
-						MEDALLION_OF_THE_LEGION,
+						i(128314, {	-- Frozen Arms of a Hero
+							["timeline"] = { ADDED_6_2_0 },
+						}),
+						i(128315, {	-- Medallion of the Legion
+							["timeline"] = { ADDED_6_2_0 },
+						}),
 						i(128671, {	-- Minion of Grumpus (MOUNT!)
 							["timeline"] = { ADDED_6_2_2 },
 						}),
@@ -2894,7 +2888,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(128770, {	-- Grumpling (PET!)
 					["timeline"] = { ADDED_6_2_2 },
 				}),
-				HUGE_SNOWBALL,
+				i(35557),	-- Huge Snowball
 				i(128632, {	-- Savage Snowball
 					["timeline"] = { ADDED_6_2_2 },
 				}),
@@ -2928,14 +2922,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		})),
 	})),
 });
-
--- Remove the holiday flag.
--- #if BEFORE 6.2.2.20395
-for i,o in ipairs(HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK) do o.u = nil; end
--- #endif
-for i=2,#HOLIDAY_NON_COLLECTIBLE_GROUPS,1 do
-	HOLIDAY_NON_COLLECTIBLE_GROUPS[i].u = nil;
-end
-MEDALLION_OF_THE_LEGION.u = nil;
-FROZEN_ARMS_OF_A_HERO.u = nil;
-HUGE_SNOWBALL.u = nil;
