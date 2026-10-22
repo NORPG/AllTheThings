@@ -245,7 +245,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADD
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(EASTERN_KINGDOMS, {
 		m(ARATHI_HIGHLANDS, {
 			n(WORLD_BOSSES, {
@@ -327,4 +327,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeli
 		}),
 	}),
 	}),
-})));
+}));

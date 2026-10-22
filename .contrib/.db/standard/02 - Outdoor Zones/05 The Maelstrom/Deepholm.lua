@@ -2085,7 +2085,7 @@ root(ROOTS.Zones, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ timeline = { ADDED_4_0_3_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, {
 	m(THE_MAELSTROM, {
 		m(DEEPHOLM, {
 			n(QUESTS, {
@@ -2096,4 +2096,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ timel
 			}),
 		}),
 	}),
-})));
+}));

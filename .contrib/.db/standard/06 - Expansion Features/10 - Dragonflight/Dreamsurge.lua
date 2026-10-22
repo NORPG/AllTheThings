@@ -18,7 +18,7 @@ DREAMSURGE_CHRYSALIS = 208153;
 DREAMSURGE_CHRYSALIS = 210254;
 -- #endif
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	n(DREAMSURGE, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 		n(QUESTS, {
 			q(77423, {	-- Surging Dreams
@@ -373,7 +373,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { 
 			}),
 		}),
 	})),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 	n(DREAMSURGE, {

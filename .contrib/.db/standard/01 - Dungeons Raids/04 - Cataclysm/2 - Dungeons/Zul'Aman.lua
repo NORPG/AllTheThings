@@ -320,11 +320,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(77, {
 		_drop = { "isRaid" },	-- prevent merging isRaid from BC version
 		groups = {
 			q(35443),	-- Zul'Aman Reward Quest - Heroic completion
 		},
 	}),
-})));
+}));

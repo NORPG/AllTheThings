@@ -842,7 +842,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_DRAGONSCALE_EXPEDITION, {
 		n(QUESTS, {
 			q(72401),	-- Triggered immediately after reaching renown 13
@@ -855,4 +855,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 			q(64764),	-- triggers after turn in questID 72708 (Dragon Isles Supplies) (spellID 396726)
 		}),
 	}),
-})));
+}));

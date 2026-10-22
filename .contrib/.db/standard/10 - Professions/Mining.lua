@@ -19,7 +19,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 			ach(18841),	-- Doing Your Share (automated)
 		}),
 	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18839),	-- Broken Isles Mining Techniques (automated)
 		})),
@@ -438,8 +438,8 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 				coord = { 55.0, 84.0, HIGHMOUNTAIN },
 			}),
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18840, {	-- Fourth War Mining Techniques
 				crit(61525, {	-- Monelite Deposit
@@ -897,8 +897,8 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 				}),
 			},
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18820, {	-- Geologist's Ledger: Dragon Isles
 				-- Meta Achievement
@@ -1301,8 +1301,8 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 				provider = { "i", 201301 },	-- Iridescent Ore
 			}),
 		})),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.TWW.MINING, 1 }}
 		},{
@@ -1462,8 +1462,8 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 				provider = { "i", 224584 },	-- Erosion Polished Slate
 			}),
 		})),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42791, {	-- Mining at Midnight
 				i(264172),	-- Midnight Miner's Shop Sign (DECOR!)
@@ -1595,5 +1595,5 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 				provider = { "i", 237506 },	-- Septarian Nodule
 			}),
 		})),
-	})),
+	}),
 })));

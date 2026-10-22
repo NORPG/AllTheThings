@@ -161,12 +161,12 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 			-- #endif
 		})),
 	}),
-	expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
+	expansion(EXPANSION.MOP, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18852),	-- Weaponsmithing, Reborn (automated)
 		})),
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.LEGION, {
 		q(38499, {	-- Strange New Ores
 			provider = { "n", 92183 },	-- Alard Schmied
 			coord = { 44.6, 28.6, LEGION_DALARAN },
@@ -704,7 +704,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				i(151871),	-- Crate of Felslate (QI!)
 			},
 		})),
-	})),
+	}),
 	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18771, {	-- Khaz'gorian Smithing Hammer
@@ -1205,7 +1205,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 			}),
 		})),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING, 1 }}
 		},{
@@ -1363,8 +1363,8 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				provider = { "i", 225233 },	-- Dense Bladestone
 			}),
 		})),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42792, {	-- Blacksmithing at Midnight
 				i(263998),	-- Midnight Blacksmith's Shop Sign (DECOR!)
@@ -1540,10 +1540,10 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				provider = { "i", 259190 },	-- Thalassian Whestone
 			}),
 		})),
-	})),
+	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(PROFESSIONS, {
 		prof(BLACKSMITHING, {
 			-- q(38543),	-- FLAG: Demonsteel Armguards Crafted
@@ -1557,4 +1557,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			q(47096),	-- Broken Shore - Choice: Blacksmithing
 		}),
 	}),
-})));
+}));

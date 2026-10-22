@@ -164,7 +164,7 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ requireSkill = FIRST_AI
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(PROFESSIONS, {
 		prof(FIRST_AID, {
 			-- First Aid (these used to be actual quests... when Legion Classic rolls around someone will have to make them real quests...)
@@ -186,4 +186,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			q(42340, { name = "DEPRECATED: Singed Plea", }),	-- DEPRECATED: Singed Plea
 		}),
 	}),
-})));
+}));

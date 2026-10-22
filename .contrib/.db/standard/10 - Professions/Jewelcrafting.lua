@@ -65,7 +65,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 		ach(18893),	-- Plentiful Prospects
 		ach(18727),	-- Rave Leader
 	})),
-	expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_4_0_3_LAUNCH } }, {
+	expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ONE, {
 		n(QUESTS, {
 			q(28778, {	-- Broken Boar Figurine
 				provider = { "i", 65895 },	-- Figurine - King of Boars
@@ -113,7 +113,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 				},
 			}),
 		}),
-	}))),
+	})),
 	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 		q(40523, {	-- Facet-nating Friends
 			provider = { "n", 93526 },	-- Tiffany Cartier
@@ -1092,7 +1092,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 			}),
 		})),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING, 1 }}
 		},{
@@ -1241,8 +1241,8 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 				provider = { "i", 225225 },	-- Deepstone Fragment
 			}),
 		})),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42789, {	-- Jewelcrafting at Midnight
 				i(264005),	-- Midnight Jewelcrafter's Shop Sign (DECOR!)
@@ -1417,11 +1417,11 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 				provider = { "i", 259198 },	-- Void-Touched Eversong Diamond Fragments
 			}),
 		})),
-	})),
+	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, {
 		n(PROFESSIONS, {
 			prof(JEWELCRAFTING, {
 				q(40557),	-- FLAG: Clive Cozen Leave - Triggers after completing Hidden Intentions (40539)
@@ -1430,14 +1430,14 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
 			}),
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(PROFESSIONS, {
 			prof(JEWELCRAFTING, {
 				q(55631),	-- Jewelcrafting Diode shrine. harvesting gems from them triggered this quest. Nazmir location
 			}),
 		}),
-	})),
+	}),
 });
 
 -- Bloodied Crafted Gear was added with Cataclysm and then removed from the game after Firelands was released.

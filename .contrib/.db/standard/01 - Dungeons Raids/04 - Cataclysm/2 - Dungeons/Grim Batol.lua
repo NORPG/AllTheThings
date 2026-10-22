@@ -280,9 +280,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(71, {
 		q(35404),	-- Grim Batol Reward Quest
 		q(35405),	-- Grim Batol Reward Quest
 	}),
-})));
+}));

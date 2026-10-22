@@ -3023,7 +3023,7 @@ root(ROOTS.Zones, {
 	})),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WRATH, bubbleDownSelf({ timeline = { ADDED_3_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WRATH, {
 	m(NORTHREND, {
 		m(HOWLING_FJORD, {
 			n(QUESTS, {
@@ -3031,4 +3031,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WRATH, bubbleDownSelf({ time
 			}),
 		}),
 	}),
-})));
+}));

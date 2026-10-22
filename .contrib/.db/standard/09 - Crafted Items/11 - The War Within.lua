@@ -2767,7 +2767,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { AD
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	n(PROFESSIONS, {
 		prof(ALCHEMY, {
 			q(82473),	-- Transmutation 15/30
@@ -2884,4 +2884,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ timeli
 			q(85685, {timeline={ADDED_11_2_0}}),	-- Fractured Spark of Starlight
 		}),
 	}),
-})));
+}));

@@ -500,7 +500,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_MARUUK_CENTAUR, {
 		n(QUESTS, {
 			q(72778),	-- triggered with 'Call of the Plains' (questID 71229) (spellID 397059)
@@ -508,4 +508,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 			q(73919),	-- triggered during 'License to Hunt' (questID 70501)
 		}),
 	}),
-})));
+}));

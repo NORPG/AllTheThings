@@ -102,7 +102,7 @@ local WOD_CRAFTED_ITEM_DF_REMARKABLE = function(id, upgradeItem)
 	});
 end
 
-root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE, {
 	i(180055, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I
 	i(180057, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II
 	i(180058, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III
@@ -1063,4 +1063,4 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(122540, {timeline = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Hexweave Essence
 		}),
 	}),
-}))));
+})));

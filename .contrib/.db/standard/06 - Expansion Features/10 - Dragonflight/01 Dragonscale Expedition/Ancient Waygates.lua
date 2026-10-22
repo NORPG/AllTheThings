@@ -382,7 +382,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_DRAGONSCALE_EXPEDITION, {
 		n(ANCIENT_WAYGATES, {
 			q(71183),	-- triggered together with 'Continued Waygate Exploration' (questID 70702) (spellID 390634)
@@ -396,4 +396,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 			q(73864),	-- triggered when accepting 'Dormant Discovery' (questID 66595)
 		}),
 	}),
-})));
+}));

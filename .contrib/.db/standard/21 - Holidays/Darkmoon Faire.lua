@@ -4546,7 +4546,7 @@ root(ROOTS.HiddenQuestTriggers,{
 			q(30561),	-- [DNT] Fun for the Little Ones TRACKER - triggers after completing Fun For the Little Ones (questID 29507)
 		}),
 	})),
-	expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
+	expansion(EXPANSION.MOP, {
 		n(QUESTS, {
 			q(30557),	-- [DNT] A Captured Banner TRACKER - triggers after completing A Captured Banner (questID 29456)
 			q(30553),	-- [DNT] A Curious Crystal TRACKER - triggers after completing A Curious Crystal (questID 29443)
@@ -4570,7 +4570,7 @@ root(ROOTS.HiddenQuestTriggers,{
 			q(30560),	-- [DNT] Tools of Divination TRACKER - triggers after completing Tools of Divination (questID 29464)
 			q(30546),	-- [DNT] Writing the Future TRACKER - triggers after completing Writing the Future (questID 29515)
 		}),
-	})),
+	}),
 	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_3_0 } }, {
 		q(45038),	-- Hexsweeper lvl 1
 		q(45039),	-- Hexsweeper lvl 2

@@ -270,7 +270,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 			},
 		}),
 	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, {
 		q(39325, {	-- Get Your Mix On
 			provider = { "n", 92458 },	-- Deucus Valdera
 			coord = { 41.6, 32.8, LEGION_DALARAN },
@@ -554,7 +554,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 				i(151703),	-- Recipe: Tears of the Naaru [Rank 1] (RECIPE!)
 			},
 		})),
-	})),
+	}),
 	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18770, {	-- Silas' Sphere of Transmutation
@@ -1073,7 +1073,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 			}),
 		})),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, {
 		n(ACHIEVEMENTS, {
 			ach(19704),	-- Overflowing Algari Flasks (automated)
 			ach(19716),	-- Plentiful Algari Potions (automated)
@@ -1204,8 +1204,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 				provider = { "i", 225235 },	-- Deepstone Crucible
 			}),
 		})),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42788, {	-- Alchemy at Midnight
 				i(263997),	-- Midnight Alchemist's Shop Sign (DECOR!)
@@ -1358,7 +1358,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 				provider = { "i", 259188 } ,	-- Lightbloomed Spore Sample
 			}),
 		})),
-	})),
+	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, prof(ALCHEMY, {

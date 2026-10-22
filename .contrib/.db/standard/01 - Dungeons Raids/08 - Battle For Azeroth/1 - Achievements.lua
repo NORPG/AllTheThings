@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	n(ACHIEVEMENTS, {
 		ach(12807, {	-- Battle for Azeroth Dungeon Hero
 			sym = {{"meta_achievement",
@@ -85,4 +85,4 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8
 		ach(11183),	-- Keystone Initiate
 		-- #ENDIF
 	}),
-})));
+}));

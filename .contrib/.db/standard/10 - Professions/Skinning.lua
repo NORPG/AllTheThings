@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING }, {
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18834, {	-- Broken Isles Skinning Techniques
 				crit(61485, {	-- Felhide
@@ -312,8 +312,8 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING 
 				}),
 			},
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18835, {	-- Fourth War Skinning Techniques
 				crit(61493, {	-- Cragscale
@@ -514,7 +514,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING 
 				},
 			}),
 		}),
-	})),
+	}),
 	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2 }, requireSkill = SKINNING }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18831, sharedData({	-- Elusive Beasts of the Dragon Isles (15)
@@ -802,7 +802,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING 
 			}),
 		})),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 }, requireSkill = SKINNING }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ requireSkill = SKINNING }, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.TWW.SKINNING, 1 }}
 		},{
@@ -951,7 +951,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING 
 			}),
 		})),
 	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42790, {	-- Skinning at Midnight
 				i(264173),	-- Midnight Skinner's Shop Sign (DECOR!)
@@ -1091,5 +1091,5 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING 
 				provider = { "i", 238626 },	-- Mana-Infused Bone
 			}),
 		})),
-	})),
+	}),
 })));

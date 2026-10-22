@@ -1307,7 +1307,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_VALDRAKKEN_ACCORD, {
 		n(QUESTS, {
 			q(72403),	-- triggered when reaching renown 12 with Valdrakken Accord
@@ -1328,4 +1328,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 			q(77820, {timeline = {ADDED_10_2_0}}),	-- After questID 77344 Receiving Title 516?
 		}),
 	}),
-})));
+}));

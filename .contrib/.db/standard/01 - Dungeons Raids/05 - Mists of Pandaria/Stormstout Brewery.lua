@@ -480,18 +480,18 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ timeline = ADDED_5_0
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
+	expansion(EXPANSION.MOP, {
 		inst(302, {
 			q(31621),	-- Stormstout Brewery Challenge Mode - Bronze Addition (Nth)
 			q(31620),	-- Stormstout Brewery Challenge Mode - Consolation (Nth)
 			q(31623),	-- Stormstout Brewery Challenge Mode - Gold Addition (Nth)
 			q(31622),	-- Stormstout Brewery Challenge Mode - Silver Addition (Nth)
 		}),
-	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
+	}),
+	expansion(EXPANSION.WOD, {
 		inst(302, {
 			q(35323),	-- Stormstout Brewery Reward Quest
 			q(35324),	-- Stormstout Brewery Reward Quest
 		}),
-	})),
+	}),
 });

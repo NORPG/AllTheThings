@@ -349,11 +349,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(70, {
 		q(35415),	-- Halls of Origination Reward Quest
 		q(35424),	-- Halls of Origination Reward Quest
 		q(35420),	-- Halls of Origination Bonus Rewards
 		q(35426),	-- Halls of Origination Bonus Rewards
 	}),
-})));
+}));

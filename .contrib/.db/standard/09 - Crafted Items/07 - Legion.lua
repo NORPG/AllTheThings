@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHASE_ONE, {
 	i(180055, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I
 	i(180057, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II
 	i(180058, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III
@@ -939,4 +939,4 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(127037),	-- Runic Catgut
 		}),
 	}),
-}))));
+})));

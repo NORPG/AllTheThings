@@ -87,7 +87,7 @@ InstanceHelper.Boss, InstanceHelper.BossWorldQuest
 
 InstanceHelper.Coords = EncounterCoords
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 	n(WORLD_BOSSES, {
 		isRaid = true,
 		groups = bubbleDownFiltered({
@@ -145,7 +145,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADD
 			}),
 		}),
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_1_0_SEASONSTART } }, {
 	n(WORLD_BOSSES, {

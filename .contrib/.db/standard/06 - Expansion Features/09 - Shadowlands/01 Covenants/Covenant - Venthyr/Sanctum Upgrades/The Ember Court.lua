@@ -2391,7 +2391,7 @@ for _,g in ipairs({ALEXANDROS_GROUP, VASHJ_GROUP, CHOOFA_GROUP, KASSIR_GROUP, DO
 	end
 end
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	n(VENTHYR, bubbleDown({ customCollect = "SL_COV_VEN" }, {
 		n(SANCTUM_UPGRADES, {
 			n(EMBER_COURT, {
@@ -2631,4 +2631,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timelin
 			}),
 		}),
 	})),
-})));
+}));

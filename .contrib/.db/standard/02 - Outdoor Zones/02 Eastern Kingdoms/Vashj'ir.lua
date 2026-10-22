@@ -3171,7 +3171,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ timeline = { ADDED_4_0_3_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, {
 	m(EASTERN_KINGDOMS, {
 		m(VASHJIR, {
 			n(QUESTS, {
@@ -3179,4 +3179,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ timel
 			}),
 		}),
 	}),
-})));
+}));

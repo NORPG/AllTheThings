@@ -722,7 +722,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_ISKAARA_TUSKARR, {
 		n(QUESTS, {
 			q(72781),	-- Triggered with 'Tuskarr Fishing Gear' (questID 71230) (spellID 397063)
@@ -732,4 +732,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 			q(72782),	-- Triggered with 'A Lost Tribe' (questID 68863) (spellID 397064)
 		}),
 	}),
-})));
+}));

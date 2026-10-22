@@ -293,9 +293,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(67, {
 		q(35911),	-- Stonecore Reward Quest - Normal completion
 		q(35913),	-- Stonecore (Heroic) Reward Quest - Heroic completion
 	}),
-})));
+}));

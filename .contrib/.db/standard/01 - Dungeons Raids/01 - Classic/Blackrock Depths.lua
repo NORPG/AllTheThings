@@ -3660,7 +3660,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
+	expansion(EXPANSION.WOD, {
 		inst(228, {
 			q(35899),	-- Blackrock Depths (Detention Block) Reward Quest - Normal completion
 			q(35901),	-- Blackrock Depths (Detention Bonus) Reward Quest
@@ -3668,7 +3668,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(35903),	-- Blackrock Depths (Detention Bonus) Reward Quest
 			q(35904),	-- Blackrock Depths (Everything) Reward Quest
 		}),
-	})),
+	}),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {
 		inst(228, {
 			q(82739),	-- ???

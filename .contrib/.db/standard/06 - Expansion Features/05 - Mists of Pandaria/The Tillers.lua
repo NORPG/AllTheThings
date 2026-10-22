@@ -2671,7 +2671,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, {
 	header(HEADERS.Faction, FACTION_THE_TILLERS, {
 		header(HEADERS.Faction, FACTION_CHEE_CHEE, {
 			q(31344),	-- Tracking Event: Chee Chee Exalted
@@ -2733,4 +2733,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ timeli
 			q(30573),	-- Tracking Event: Started Third Expansion — triggers after turning in "???" (questID ???)	-- TODO
 		}),
 	}),
-})));
+}));

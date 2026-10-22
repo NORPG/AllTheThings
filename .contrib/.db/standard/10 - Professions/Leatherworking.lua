@@ -155,7 +155,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 			ach(18894),	-- Free Stylin' (automated)
 		})),
 	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+	expansion(EXPANSION.WOD, {
 		n(QUESTS, {
 			q(36176, {	-- A Call for Huntsman
 				description = "This item can drop from any Draenor mob.",
@@ -191,7 +191,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 				races = HORDE_ONLY,
 			}),
 		}),
-	})),
+	}),
 	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
 		n(QUESTS, {
 			q(39958, {	-- Skin Deep
@@ -1357,7 +1357,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 			}),
 		})),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING, 1 }}
 		},{
@@ -1509,8 +1509,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 				provider = { "i", 225222 },	-- Studded Leather Band
 			}),
 		})),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42786, {	-- Leatherworking at Midnight
 				i(264006),	-- Midnight Leatherworker's Shop Sign (DECOR!)
@@ -1682,7 +1682,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 				provider = { "i", 259201 },	-- Thalassian Mana Oil
 			}),
 		})),
-	})),
+	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
