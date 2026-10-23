@@ -2620,7 +2620,7 @@ end");
             /// <returns></returns>
             public static List<object> ConvertToList(IDictionary<string, object> item, string field, object value)
             {
-                if (value == null) return null;
+                if (value is null) return null;
 
                 List<object> list = CompressToList(value);
                 if (list != null)
@@ -2670,12 +2670,8 @@ end");
                     return list;
                 }
 
-                Trace.Write(field);
-                Trace.Write(": ");
-                Trace.WriteLine(ToJSON(value));
-
                 // no hope
-                throw new InvalidDataException("Failed parsing value '" + value?.ToString() + "' for field '" + field + "' merging into: " + ToJSON(item));
+                throw new InvalidDataException("Failed parsing value '" + ToJSON(value) + "' for field '" + field + "' merging into: " + ToJSON(item));
             }
 
             /// <summary>

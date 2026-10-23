@@ -4516,7 +4516,7 @@ namespace ATT
                 if (sourcedQuestItem != null)
                 {
                     parentQis.Add(itemID);
-                    LogDebug($"INFO: Converted 'objective-item' {itemID} into 'qis' of parent due to Quest Item filter", data);
+                    LogDebugWarn($"INFO: Converted Sourced 'objective-item' {itemID} into 'qis' of parent due to Quest Item filter", data);
                 }
                 else
                 {
