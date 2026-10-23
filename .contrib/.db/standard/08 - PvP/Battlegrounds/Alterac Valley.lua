@@ -521,7 +521,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
 					races = ALLIANCE_ONLY,
 				}),
-				q(8272, bubbleDown({ timeline = { ADDED_1_11_1, REMOVED_WITH_ANNIVERSARY_15, ADDED_11_0_5 }}, {	-- Hero of the Frostwolf
+				q(8272, {	-- Hero of the Frostwolf
 					sourceQuest = 7142,	-- The Battle for Alterac (Horde)
 					qg = 13817,	-- Voggah Deathgrip
 					coords = {
@@ -531,6 +531,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 63.6, 60.4, ALTERAC_MOUNTAINS },
 						-- #endif
 					},
+					timeline = { ADDED_1_11_1, REMOVED_WITH_ANNIVERSARY_15, ADDED_11_0_5 },
 					races = HORDE_ONLY,
 					groups = {
 						i(19107),	-- Bloodseeker
@@ -538,8 +539,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						i(19106),	-- Ice Barbed Spear
 						i(19108),	-- Wand of Biting Cold
 					},
-				})),
-				q(8271, bubbleDown({ timeline = { ADDED_1_11_1, REMOVED_WITH_ANNIVERSARY_15, ADDED_11_0_5 }}, {	-- Hero of the Stormpike
+				}),
+				q(8271, {	-- Hero of the Stormpike
 					sourceQuest = 7141,	-- The Battle of Alterac (Alliance)
 					qg = 13816,	-- Prospector Stonehewer
 					coords = {
@@ -549,6 +550,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 41.0, 79.6, ALTERAC_MOUNTAINS },
 						-- #endif
 					},
+					timeline = { ADDED_1_11_1, REMOVED_WITH_ANNIVERSARY_15, ADDED_11_0_5 },
 					races = ALLIANCE_ONLY,
 					groups = {
 						i(19106),	-- Ice Barbed Spear
@@ -556,7 +558,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						i(19108),	-- Wand of Biting Cold
 						i(20648),	-- Cold Forged Hammer
 					},
-				})),
+				}),
 				q(7164, {	-- Honored Amongst the Clan
 					sourceQuest = 7163,	-- Rise and Be Recognized (Horde)
 					qg = 13840,	-- Warmaster Laggrond

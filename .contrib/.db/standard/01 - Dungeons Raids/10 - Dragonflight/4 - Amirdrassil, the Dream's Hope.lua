@@ -1633,10 +1633,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				n(QUESTS, {
-					q(78876, bubbleDownSelf({timeline = { ADDED_10_2_0, REMOVED_TWW_LAUNCH } }, {	-- A Glowing Memento
+					q(78876, {	-- A Glowing Memento
 						qs = 211375,	-- Everglowing Ember (QS!)
+						timeline = { ADDED_10_2_0, REMOVED_TWW_LAUNCH },
 						groups = { i(210537) },	-- Renewed Proto-Drake: Embodiment of Shadowflame (MM!)
-					})),
+					}),
 				}),
 				BossOnly(GNARLROOT),
 				BossOnly(IGIRA),

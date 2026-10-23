@@ -3358,12 +3358,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					timeline = { REMOVED_4_0_3 },
 					races = HORDE_ONLY,
 				}),
-				q(40518, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {	-- The Battle for Broken Shore
+				q(40518, {	-- The Battle for Broken Shore
 					description = "Legion expansion introduction quest.|r",
 					sourceQuest = 44281,	-- To Be Prepared
 					-- altQuest = 44543,	-- Scenario Skip (H)
 					qg = 113547,	-- Stone Guard Mukar
 					coord = { 55.6, 11.0, DUROTAR },
+					timeline = { ADDED_7_0_3 },
 					races = HORDE_ONLY,
 					lvl = lvlsquish(98, 98, 10),
 					groups = {
@@ -3378,7 +3379,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(136591),	-- Waraxe of the Horde Vanguard
 						i(139292),	-- Splitter of the Horde Vanguard
 					},
-				})),
+				}),
 				q(25232, {	-- The Burning Blade
 					qg = 3142,	-- Orgnil Soulscar
 					coord = { 52.2, 43.1, DUROTAR },
@@ -3464,10 +3465,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					isBreadcrumb = true,
 					lvl = 98,
 				})),
-				q(39801, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {	-- The Splintered Fleet
+				q(39801, {	-- The Splintered Fleet
 					sourceQuest = 39698,	-- Making the Rounds
 					qg = 96686,	-- Lady Sylvanas Windrunner <Banshee Queen>
 					coord = { 61.5, 8.7, DUROTAR },
+					timeline = { ADDED_7_0_3 },
 					races = HORDE_ONLY,
 					lvl = 98,
 					groups = {
@@ -3483,7 +3485,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(139948),	-- Dread-Rider Shoulders
 						i(139956),	-- Dread-Rider Cuffs
 					},
-				})),
+				}),
 				q(25169, {	-- The War of Northwatch Aggression
 					sourceQuest = 25167,	-- Breaking the Chain
 					qg = 3140,	-- Lar Prowltusk
@@ -3563,16 +3565,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(6062),	-- Heavy Cord Bracers
 					},
 				}),
-				q(44281, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {	-- To Be Prepared
+				q(44281, {	-- To Be Prepared
 					sourceQuest = 43926,	-- The Legion Returns
 					qg = 4311,	-- Holgar Stormaxe
 					coord = { 46.0, 13.7, DUROTAR },
+					timeline = { ADDED_7_0_3 },
 					races = HORDE_ONLY,
 					lvl = lvlsquish(98, 98, 10),
 					groups = {
 						i(141294),	-- Mark of Orgrimmar
 					},
-				})),
+				}),
 				q(6081, {	-- Training the Beast
 					sourceQuest = 6082,	-- Taming the Beast (3/3)
 					qg = 3171,	-- Thotar <Hunter Trainer>

@@ -338,15 +338,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					},
 				}),
 				------ Chapter 6 ------
-				q(70899, bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {	-- Fifth Challenge of Tyr: Ingenuity
+				q(70899, {	-- Fifth Challenge of Tyr: Ingenuity
 					sourceQuests = { 70881 },	-- Fourth Challenge of Tyr: Resourcefulness
 					provider = { "n", 196475 },	-- Maiden of Inspiration
 					coord = { 83.9, 53.2, VALDRAKKEN },
+					timeline = { ADDED_10_0_5 },
 					groups = {
 						i(199197),	-- Bottled Essence
 						i(200120),	-- Irideus' Power Core
 					},
-				})),
+				}),
 				q(70900, {	-- Innovating the Engine
 					sourceQuests = { 70899 },	-- Fifth Challenge of Tyr: Ingenuity
 					provider = { "n", 196475 },	-- Maiden of Inspiration

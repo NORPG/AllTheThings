@@ -885,12 +885,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						coord = { 27.3, 51.5, LEGION_DALARAN },
 						timeline = { ADDED_7_2_0 },
 					}),
-					q(46043, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Champion: Aethas Sunreaver
+					q(46043, {	-- Champion: Aethas Sunreaver
 						sourceQuest = 46290,	-- Return of the Archmage
 						provider = { "n", 117497 },	-- Aethas Sunreaver
 						coord = { 72.2, 63.0, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
+						timeline = { ADDED_7_2_0 },
 						groups = { follower(994) },	-- Aethas Sunreaver
-					})),
+					}),
 					q(45844, {	-- Avocation of Antonidas
 						sourceQuest = 46043,	-- Champion: Aethas Sunreaver
 						provider = { "n", 117770 },	-- Invoker Threadgold
@@ -928,7 +929,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 							}),
 						},
 					}),
-					q(45354, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Dispersion of the Discs
+					q(45354, {	-- Dispersion of the Discs
 						sourceQuests = {
 							45846,	-- Chilled to the Core
 							45845,	-- Burning Within
@@ -936,9 +937,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						},
 						provider = { "n", 108247 },	-- Archmage Kalec
 						coord = { 56.3, 38.0, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
+						timeline = { ADDED_7_2_0 },
 						maps = { 881 },	-- The Eye of Eternity (Scenario Map)
 						groups = { mount(229376) },	-- Archmage's Prismatic Disc (MOUNT!)
-					})),
+					}),
 					-- Side Quest Ari and Arcane Destroyer
 					q(42954, {	-- A Small Favor
 						sourceQuest = 42222,	-- Empyrean Society Report
@@ -1001,18 +1003,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						coord = { 81.5, 60.3, HALL_OF_THE_GUARDIAN },
 						timeline = { ADDED_7_2_0 },
 					}),
-					q(46723, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Down the Rabbit Hole
+					q(46723, {	-- Down the Rabbit Hole
 						sourceQuest = 46722,	-- Nothing Up My Sleeve
 						provider = { "n", 103092 },	-- The Great Akazamzarak
 						coord = { 81.5, 60.3, HALL_OF_THE_GUARDIAN },
+						timeline = { ADDED_7_2_0 },
 						groups = { i(147838) },	-- Akazamzarak's Spare Hat (TOY!)
-					})),
-					q(46724, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Champion: The Great Akazamzarak
+					}),
+					q(46724, {	-- Champion: The Great Akazamzarak
 						sourceQuest = 46723,	-- Down the Rabbit Hole
 						provider = { "n", 103092 },	-- The Great Akazamzarak
 						coord = { 81.5, 60.3, HALL_OF_THE_GUARDIAN },
+						timeline = { ADDED_7_2_0 },
 						groups = { follower(995) },	-- The Great Akazamzarak
-					})),
+					}),
 					-- Misc
 					q(43749, {	-- Hitting the Books
 						provider = { "n", 110624 },	-- Edirah

@@ -5115,13 +5115,14 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 						r(209660),	-- Mass Mill Foxflower (RECIPE!)
 					},
 				}),
-				q(43929, bubbleDownSelf({ timeline = { ADDED_7_1_0 } }, {	-- Vantus Mastery
+				q(43929, {	-- Vantus Mastery
 					description = "Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",
 					provider = { "n", 90417 },	-- Archmage Khadgar
+					timeline = { ADDED_7_1_0 },
 					groups = {
 						i(137783),	-- Vantus Rune Technique: Gul'dan [Rank 3] (RECIPE!)
 					},
-				})),
+				}),
 			}),
 		}))),
 		expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
@@ -5172,29 +5173,31 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 					timeline = { ADDED_8_1_5 },
 					races = HORDE_ONLY,
 				}),
-				q(49873, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- Sacrificial Writes
+				q(49873, {	-- Sacrificial Writes
 					sourceQuests = {
 						49694,	-- Turn to Drust [A]
 						49944,	-- Turn to Drust [H]
 					},
 					provider = { "o", 279647 },	-- Tome of Sacrifice
 					coord = { 20.6, 44.0, DRUSTVAR },
+					timeline = { ADDED_8_1_5 },
 					groups = {
 						r(259665),	-- Blood Contract: Sacrifice
 						i(168046),	-- Fresh Heart (QI!)
 						i(156549),	-- Writ of Sacrifice (QI!)
 					},
-				})),
-				q(49874, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- By the Book
+				}),
+				q(49874, {	-- By the Book
 					sourceQuests = { 49873 },	-- Sacrificial Writes
 					provider = { "n", 131657 },	-- Bloodshed Compendium
 					coord = { 20.7, 44.0, DRUSTVAR },
+					timeline = { ADDED_8_1_5 },
 					maps = { 1407 },	-- Prison of Ink (Scenario Map)
 					groups = {
 						r(292012),	-- Blood Contract: Bloodshed
 						i(156509),	-- Sanguine Ink (QI!)
 					},
-				})),
+				}),
 				q(49876, {	-- Lines in the Sand [A]
 					sourceQuests = { 49874 },	-- By the Book
 					provider = { "n", 131386 },	-- Kronah
@@ -5222,25 +5225,27 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 						i(156512),	-- Tome of Oblivion (QI!)
 					},
 				}),
-				q(49879, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- Brush With Death
+				q(49879, {	-- Brush With Death
 					sourceQuests = { 49877 },	-- Temple of Sethraliss: Booking on a Favor
 					provider = { "o", 279645 },	-- Tome of Oblivion
 					coord = { 27.6, 52.3, VOLDUN },
+					timeline = { ADDED_8_1_5 },
 					groups = {
 						r(292322),	-- Blood Contract: Oblivion
 					},
-				})),
-				q(49878, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- Penning In Protection
+				}),
+				q(49878, {	-- Penning In Protection
 					sourceQuests = { 49877 },	-- Temple of Sethraliss: Booking on a Favor
 					provider = { "o", 279646 },	-- Bloodguard Chronicles
 					coord = { 27.6, 52.2, VOLDUN },
+					timeline = { ADDED_8_1_5 },
 					groups = {
 						r(292320),	-- Blood Contract: Bloodguard
 						i(156598),	-- Pile of Fine Bone Dust (QI!)
 						i(156600),	-- Vial of Ossein Ink (QI!)
 						i(156601),	-- Zem'lan Pirate Bone (QI!)
 					},
-				})),
+				}),
 				q(49881, {	-- The Final Verse
 					sourceQuests = {
 						49878,	-- Penning In Protection
@@ -5250,14 +5255,15 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 					coord = { 27.6, 52.3, VOLDUN },
 					timeline = { ADDED_8_1_5 },
 				}),
-				q(49882, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- A Test of Quills
+				q(49882, {	-- A Test of Quills
 					sourceQuests = { 49881 },	-- The Final Verse
 					provider = { "n", 131397 },	-- Miju
 					coord = { 32.6, 86.0, ZULDAZAR },
+					timeline = { ADDED_8_1_5 },
 					groups = {
 						r(256301),	-- Sanguine Feather Quill of Lana'thel (RECIPE!)
 					},
-				})),
+				}),
 			}),
 			n(SPECIAL, {
 				i(172450, {	-- Technique: Glyph of Lavish Servings (RECIPE!)

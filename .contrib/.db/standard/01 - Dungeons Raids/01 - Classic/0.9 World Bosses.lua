@@ -8,8 +8,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		isRaid = true,
 		lvl = 60,
 		groups = {
-			applyclassicphase(PHASE_TWO, bubbleDown({ timeline = { ADDED_1_3_0, REMOVED_4_0_3 } }, n(6109, {	-- Azuregos
+			applyclassicphase(PHASE_TWO, n(6109, {	-- Azuregos
 				coord = { 53.3, 80.4, AZSHARA },
+				timeline = { ADDED_1_3_0, REMOVED_4_0_3 },
 				-- #if ANYCLASSIC
 				modelScale = 6.0,
 				-- #endif
@@ -30,14 +31,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(18545),	-- Leggings of Arcane Supremacy
 					i(19131),	-- Snowblind Shoes
 				},
-			}))),
-			applyclassicphase(PHASE_FOUR, bubbleDown({ timeline = { ADDED_1_8_0, REMOVED_4_0_3 } }, n(DRAGONS_OF_NIGHTMARE, {
+			})),
+			applyclassicphase(PHASE_FOUR, n(DRAGONS_OF_NIGHTMARE, {
 				coords = {
 					{ 51.2, 10.9, FERALAS },
 					{ 63.3, 27.8, THE_HINTERLANDS },
 					{ 45.4, 39.6, DUSKWOOD },
 					{ 94.2, 35.7, ASHENVALE },
 				},
+				timeline = { ADDED_1_8_0, REMOVED_4_0_3 },
 				isRaid = true,
 				lvl = 60,
 				groups = {
@@ -136,9 +138,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 				},
-			}))),
-			applyclassicphase(PHASE_TWO, bubbleDown({ timeline = {  ADDED_1_3_0, REMOVED_2_0_1 } }, n(12397, {	-- Lord Kazzak / Highlord Kruul
+			})),
+			applyclassicphase(PHASE_TWO, n(12397, {	-- Lord Kazzak / Highlord Kruul
 				coord = { 36.6, 75.8, BLASTED_LANDS },
+				timeline = {  ADDED_1_3_0, REMOVED_2_0_1 },
 				modelScale = 6.0,
 				isRaid = true,
 				crs = { 18338 },	-- Highlord Kruul
@@ -158,7 +161,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(19133),	-- Fel-Infused Leggings
 					i(18543),	-- Ring of Entropy
 				},
-			}))),
+			})),
 		},
 	}),
 }));

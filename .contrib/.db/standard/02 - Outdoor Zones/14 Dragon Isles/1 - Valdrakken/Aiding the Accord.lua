@@ -48,33 +48,42 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				q(78446, {	-- Aiding the Accord: Superbloom
 					timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 				}),
-				q(80388, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Last Hurrah: Emerald Dream
-					TempForceMisc(i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
-						r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
-						r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
-						r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
-					})),
-					i(217111),	-- Cache of Awakened Dreams
-					i(211515),	-- Splintered Spark of Awakening
-				})),
-				q(80386, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Last Hurrah: Zaralek Caverns and Time Rifts
-					TempForceMisc(i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
-						r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
-						r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
-						r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
-					})),
-					i(217110),	-- Cache of Awakened Embers
-					i(211515),	-- Splintered Spark of Awakening
-				})),
-				q(80385, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Last Hurrah: Dragon Isles
-					TempForceMisc(i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
-						r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
-						r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
-						r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
-					})),
-					i(217109),	-- Cache of Awakened Storms
-					i(211515),	-- Splintered Spark of Awakening
-				})),
+				q(80388, {	-- Last Hurrah: Emerald Dream
+					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					groups = {
+						TempForceMisc(i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
+							r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
+							r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
+							r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+						})),
+						i(217111),	-- Cache of Awakened Dreams
+						i(211515),	-- Splintered Spark of Awakening
+					},
+				}),
+				q(80386, {	-- Last Hurrah: Zaralek Caverns and Time Rifts
+					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					groups = {
+						TempForceMisc(i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
+							r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
+							r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
+							r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+						})),
+						i(217110),	-- Cache of Awakened Embers
+						i(211515),	-- Splintered Spark of Awakening
+					},
+				}),
+				q(80385, {	-- Last Hurrah: Dragon Isles
+					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					groups = {
+						TempForceMisc(i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
+							r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
+							r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
+							r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+						})),
+						i(217109),	-- Cache of Awakened Storms
+						i(211515),	-- Splintered Spark of Awakening
+					},
+				}),
 			})),
 			n(REWARDS, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_6_SEASON_FOUR } }, {
 				i(200073, {	-- Valdrakken Treasures

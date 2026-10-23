@@ -771,20 +771,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						timeline = { ADDED_7_2_0 },
 						races = HORDE_ONLY,
 					}),
-					q(44758, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- What's the Cache? (A)
+					q(44758, {	-- What's the Cache? (A)
 						sourceQuest = 45833,	-- The Pirate's Bay
 						provider = { "n", 119821 },	-- Tess Graymane
 						coord = { 57.7, 63.5, AZSUNA },
+						timeline = { ADDED_7_2_0 },
 						races = ALLIANCE_ONLY,
 						groups = { i(142116) },	-- Fel-Infused Gunpowder Cache (QI!)
-					})),
-					q(46323, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- What's the Cache? (H)
+					}),
+					q(46323, {	-- What's the Cache? (H)
 						sourceQuest = 46322,	-- The Pirate's Bay
 						provider = { "n", 119822 },	-- Lilian Voss
 						coord = { 57.7, 63.5, AZSUNA },
+						timeline = { ADDED_7_2_0 },
 						races = HORDE_ONLY,
 						groups = { i(142116) },	-- Fel-Infused Gunpowder Cache (QI!)
-					})),
+					}),
 					q(45835, {	-- False Orders (A)
 						sourceQuest = 45833,	-- The Pirate's Bay
 						provider = { "n", 119821 },	-- Tess Graymane
@@ -808,7 +810,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						coord = { 57.7, 63.6, AZSUNA },
 						timeline = { ADDED_7_2_0 },
 					}),
-					q(45848, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Fit For a Pirate
+					q(45848, {	-- Fit For a Pirate
 						sourceQuests = {
 							45835,	-- False Orders (A)
 							46324,	-- False Orders (H)
@@ -818,8 +820,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						},
 						provider = { "n", 118126 },	-- Crackers
 						coord = { 57.7, 63.5, AZSUNA },
+						timeline = { ADDED_7_2_0 },
 						groups = { i(143679) },	-- Crackers (PET!)
-					})),
+					}),
 					q(45836, {	-- Jorach's Calling (A)
 						sourceQuest = 45848,	-- Fit For a Pirate
 						provider = { "n", 119821 },	-- Princess Tess Greymane
@@ -885,20 +888,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						timeline = { ADDED_7_2_0 },
 						races = HORDE_ONLY,
 					}),
-					q(46058, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Champion: Lilian Voss
+					q(46058, {	-- Champion: Lilian Voss
 						sourceQuest = 46827,	-- Meld Into the Shadows
 						provider = { "n", 98099 },	-- Lilian Voss
 						coord = { 42.2, 77.0, THE_HALL_OF_SHADOWS },
+						timeline = { ADDED_7_2_0 },
 						races = HORDE_ONLY,
 						groups = { follower(988) },	-- Princess Tess Greymane / Lilian Voss
-					})),
-					q(46059, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Champion: Tess Greymane
+					}),
+					q(46059, {	-- Champion: Tess Greymane
 						sourceQuest = 46260,	-- Meld Into the Shadows
 						provider = { "n", 94138 },	-- Princess Tess Greymane
 						coord = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
+						timeline = { ADDED_7_2_0 },
 						races = ALLIANCE_ONLY,
 						groups = { follower(988) },	-- Princess Tess Greymane / Lilian Voss
-					})),
+					}),
 					q(46103, {	-- Dread Infiltrators
 						sourceQuests = {
 							46058,	-- Champion: Lilian Voss
@@ -908,20 +913,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						coord = { 45.0, 64.0, BROKEN_SHORE },
 						timeline = { ADDED_7_2_0 },
 					}),
-					q(46089, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Hiding in Plain Sight (A)
+					q(46089, {	-- Hiding in Plain Sight (A)
 						sourceQuest = 46103,	-- Dread Infiltrators
 						provider = { "n", 98099 },	-- Lilian Voss
 						coord = { 20.0, 21.4, THE_HALL_OF_SHADOWS },
+						timeline = { ADDED_7_2_0 },
 						races = ALLIANCE_ONLY,
 						groups = { mount(231434) },	-- Shadowblade's Murderous Omen (MOUNT!)
-					})),
-					q(46178, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Hiding in Plain Sight (H)
+					}),
+					q(46178, {	-- Hiding in Plain Sight (H)
 						sourceQuest = 46103,	-- Dread Infiltrators
 						provider = { "n", 98099 },	-- Lilian Voss
 						coord = { 20.0, 21.4, THE_HALL_OF_SHADOWS },
+						timeline = { ADDED_7_2_0 },
 						races = HORDE_ONLY,
 						groups = { mount(231434) },	-- Shadowblade's Murderous Omen (MOUNT!)
-					})),
+					}),
 					-- Side Quest
 					q(47591, {	-- Wanna Buy a Lamp?
 						-- TODO: Determine actual sourceQuests 3 Retail-Errors reports with these not being completed
@@ -953,24 +960,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						coord = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
 						timeline = { ADDED_7_2_5 },
 					}),
-					q(47605, bubbleDownSelf({ timeline = { ADDED_7_2_5 } }, {	-- Coins of Air
+					q(47605, {	-- Coins of Air
 						sourceQuest = 47604,	-- In the Land of Magic
 						provider = { "n", 123087 },	-- Al'Abas
 						coord = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
+						timeline = { ADDED_7_2_5 },
 						groups = { i(151131) },	-- Lamp of Al'Abas
-					})),
-					q(47606, bubbleDownSelf({ timeline = { ADDED_7_2_5 } }, {	-- Loyalty Is Its Own Reward
+					}),
+					q(47606, {	-- Loyalty Is Its Own Reward
 						sourceQuest = 47605,	-- Coins of Air
 						provider = { "n", 123087 },	-- Al'Abas
 						coord = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
+						timeline = { ADDED_7_2_5 },
 						groups = { i(151143) },	-- Shining Lamp of Al'Abas
-					})),
-					q(47607, bubbleDownSelf({ timeline = { ADDED_7_2_5 } }, {	-- High Fash-Djinn
+					}),
+					q(47607, {	-- High Fash-Djinn
 						sourceQuest = 47606,	-- Loyalty Is Its Own Reward
 						provider = { "n", 123087 },	-- Al'Abas
 						coord = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
+						timeline = { ADDED_7_2_5 },
 						groups = { i(151144) },	-- Gleaming Lamp of Al'Abas
-					})),
+					}),
 					q(47594, {	-- I'll Take Those, Thanks!
 						sourceQuest = 47605,	-- Coins of Air
 						provider = { "n", 103792 },	-- Griftah

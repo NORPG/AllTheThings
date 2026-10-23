@@ -93,7 +93,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(49487),	-- Purified Onyxia Blood Talisman
 					},
 				})),
-				q(7635, bubbleDown({ timeline = REMOVED_WITH_CATA }, {	-- A Proper String
+				q(7635, {	-- A Proper String
 					sourceQuest = 7633,	-- An Introduction
 					qg = 14525,	-- Stoma the Ancient
 					coord = { 47.0, 24.48, FELWOOD },
@@ -103,6 +103,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE WRATH
 					cost = { { "i", 18705, 1 } },	-- Mature Black Dragon Sinew
 					-- #endif
+					timeline = REMOVED_WITH_CATA,
 					classes = { HUNTER },
 					lvl = lvlsquish(60, 60, 30),
 					groups = {
@@ -128,17 +129,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 						i(18724),	-- Enchanted Black Dragon Sinew
 					},
-				})),
-				q(7634, bubbleDown({ timeline = REMOVED_WITH_CATA }, {	-- Ancient Sinew Wrapped Lamina
+				}),
+				q(7634, {	-- Ancient Sinew Wrapped Lamina
 					sourceQuest = 7633,	-- An Introduction
 					qg = 14526,	-- Hastat the Ancient
 					coord = { 47.0, 24.48, FELWOOD },
+					timeline = REMOVED_WITH_CATA,
 					maps = { WINTERSPRING },
 					cost = { { "i", 18704, 1 } },	-- Mature Blue Dragon Sinew
 					classes = { HUNTER },
 					lvl = lvlsquish(60, 60, 30),
 					groups = { i(18714) },	-- Ancient Sinew Wrapped Lamina
-				})),
+				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84560, {	-- Celebrating Good Times
 					sourceQuest = 7495,	-- Victory for the Alliance
@@ -309,12 +311,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				-- #endif
-				q(7636, bubbleDown({ timeline = REMOVED_WITH_CATA }, {	-- Stave of the Ancients
+				q(7636, {	-- Stave of the Ancients
 					description = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					sourceQuest = 7633,	-- An Introduction
 					qg = 14524,	-- Vartrus the Ancient
 					qi = 18708,	-- Petrified Bark
 					coord = { 47.0, 24.48, FELWOOD },
+					timeline = REMOVED_WITH_CATA,
 					maps = { UNGORO_CRATER, BURNING_STEPPES, SILITHUS, WINTERSPRING },
 					classes = { HUNTER },
 					lvl = lvlsquish(60, 60, 30),
@@ -377,7 +380,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							classes = { HUNTER },
 						}),
 					},
-				})),
+				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84556, {	-- The Forging of Quel'Serrar
 					sourceQuest = 84555,	-- Nostro's Compendium

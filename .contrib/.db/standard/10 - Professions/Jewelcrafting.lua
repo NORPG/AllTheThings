@@ -671,34 +671,36 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 				races = HORDE_ONLY,
 				modelScale = 2,
 			}),
-			q(49584, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- The Missing Chapter [A]
+			q(49584, {	-- The Missing Chapter [A]
 				sourceQuests = {
 					55586,	-- Polished Up [A]
 					55590,	-- Setting Things Right [A]
 				},
 				provider = { "n", 130368 },	-- Samuel D. Colton III
 				coord = { 75.2, 9.9, BORALUS },
+				timeline = { ADDED_8_1_5 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					r(256703),	-- Jewelhammer's Focus
 					i(155668),	-- The Missing Chapter (QI!)
 					i(155669),	-- Transcribed Final Chapter (QI!)
 				},
-			})),
-			q(49599, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- The Missing Chapter [H]
+			}),
+			q(49599, {	-- The Missing Chapter [H]
 				sourceQuests = {
 					55594,	-- Polished Up [H]
 					55596,	-- Setting Things Right [H]
 				},
 				provider = { "n", 122695 },	-- Seshuli
 				coord = { 47.1, 37.9, DAZARALOR },
+				timeline = { ADDED_8_1_5 },
 				races = HORDE_ONLY,
 				groups = {
 					r(256703),	-- Jewelhammer's Focus
 					i(155668),	-- The Missing Chapter (QI!)
 					i(155669),	-- Transcribed Final Chapter (QI!)
 				},
-			})),
+			}),
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {

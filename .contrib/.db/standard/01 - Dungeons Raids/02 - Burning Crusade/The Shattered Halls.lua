@@ -154,10 +154,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 					},
 				}),
-				q(10764, bubbleDown({ timeline = { REMOVED_4_0_3 } }, {	-- Hotter than Hell [Alliance]
+				q(10764, {	-- Hotter than Hell [Alliance]
 					sourceQuest = 10763,	-- Dumphry's Request
 					qg = 21209,	-- Dumphry <Master Blacksmithing Trainer>
 					coord = { 51.1, 60.3, HELLFIRE_PENINSULA },
+					timeline = { REMOVED_4_0_3 },
 					races = ALLIANCE_ONLY,
 					lvl = lvlsquish(68, 68, 10),
 					groups = {
@@ -167,11 +168,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 						i(28395),	-- Shattered Halls Key
 					},
-				})),
-				q(10758, bubbleDown({ timeline = { REMOVED_4_0_3 } }, {	-- Hotter than Hell [Horde]
+				}),
+				q(10758, {	-- Hotter than Hell [Horde]
 					sourceQuest = 10757,	-- Rohok's Request
 					qg = 16583,	-- Rohok
 					coord = { 53.1, 38.2, HELLFIRE_PENINSULA },
+					timeline = { REMOVED_4_0_3 },
 					races = HORDE_ONLY,
 					lvl = lvlsquish(68, 68, 10),
 					groups = {
@@ -181,7 +183,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 						i(28395),	-- Shattered Halls Key
 					},
-				})),
+				}),
 				q(29649, {	-- How to Save a Life
 					qg = 54933,	-- Advance Scout Chadwick
 					timeline = { ADDED_4_3_0 },

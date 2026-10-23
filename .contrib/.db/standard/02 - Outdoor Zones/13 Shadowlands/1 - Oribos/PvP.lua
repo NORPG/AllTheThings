@@ -39,14 +39,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 						-- #endif
 					},
 				}),
-				q(64304, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {	-- New Opportunities Await
+				q(64304, {	-- New Opportunities Await
 					provider = { "n", 168011 },	-- Zo'sorg
 					coord = { 34.7, 57.3, ORIBOS },
+					timeline = { ADDED_9_1_0 },
 					isWeekly = true,
 					groups = {
 						i(186980),	-- Unchained Gladiator's Shackles of Malediction
 					},
-				})),
+				}),
 				q(62287, {	-- Observing Arenas
 					provider = { "n", 174922 },	-- Strategist Zo'rak
 					coord = { 34.3, 55.8, ORIBOS },

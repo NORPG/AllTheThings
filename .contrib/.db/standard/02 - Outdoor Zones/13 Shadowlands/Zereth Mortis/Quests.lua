@@ -1104,17 +1104,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
 			}),
 		}),
 		n(QUESTS, sharedData({ repeatable = true }, {
-			q(65324, bubbleDownSelf({ timeline = { ADDED_9_2_0, REMOVED_9_2_0} }, {	-- Patterns Within Patterns
+			q(65324, {	-- Patterns Within Patterns
 				sourceQuests = { 65305 },	-- The Way Forwards
 				provider = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				coord = { 35.0, 64.8, ZERETH_MORTIS },
+				timeline = { ADDED_9_2_0, REMOVED_9_2_0},
 				repeatable = true,
 				groups = {
 					i(190610, {	-- Tribute of the Enlightened Elders
 						i(189462),	-- Schematic: Bronze Helicid (RECIPE!)
 					}),
 				},
-			})),
+			}),
 		})),
 		n(QUESTS, sharedData({ isDaily = true }, {
 			-- Confirmed
@@ -1318,10 +1319,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
 			}),
 		})),
 		n(QUESTS, sharedData({ isWeekly = true }, {
-			q(66042, bubbleDownSelf({ timeline = { ADDED_9_2_0} }, {	-- Patterns Within Patterns
+			q(66042, {	-- Patterns Within Patterns
 				sourceQuests = { 65305 },	-- The Way Forwards
 				provider = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				coord = { 35.0, 64.8, ZERETH_MORTIS },
+				timeline = { ADDED_9_2_0},
 				groups = {
 					i(191139, {	-- Tribute of the Enlightened Elders
 						sym = {
@@ -1337,7 +1339,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
 						},
 					}),
 				},
-			})),
+			}),
 		})),
 	}),
 })));

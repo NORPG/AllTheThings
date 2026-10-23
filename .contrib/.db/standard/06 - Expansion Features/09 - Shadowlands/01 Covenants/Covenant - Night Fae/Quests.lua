@@ -222,14 +222,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 				timeline = { ADDED_9_1_5 },
 				repeatable = true,
 			}),
-			q(72113, bubbleDownSelf({ timeline = { ADDED_10_0_0 } }, {	-- Shapes Beyond the Veil
+			q(72113, {	-- Shapes Beyond the Veil
 				-- sourceQuests = {  },	-- Unknown
 				provider = { "n", 174209 },	-- Lady Muunn
 				coord = { 38.2, 24.4, THE_TRUNK },
+				timeline = { ADDED_10_0_0 },
 				groups = {
 					i(200960),	-- Seed of Renewed Souls (TOY!)
 				},
-			})),
+			}),
 			q(62536, {	-- The Lost of Teldrassil
 				sourceQuests = { 59242 },	-- Their New Home
 				provider = { "n", 160262 },	-- Ysera

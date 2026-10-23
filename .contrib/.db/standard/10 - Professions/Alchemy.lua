@@ -523,9 +523,10 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 			coord = { 45.0, 29.6, LEGION_DALARAN},
 		}),
 		------ 7.3.0 ------
-		q(48016, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Ascending Alchemy
+		q(48016, {	-- Ascending Alchemy
 			provider = { "n", 125346 },	-- Alchemist Funen
 			coord = { 56.2, 66.8, KROKUUN },
+			timeline = { ADDED_7_3_0 },
 			cost = {
 				{ "i", 151565, 75 },	-- 75x Astral Glory
 				{ "i", 151568, 5 },	-- 5x Primal Sargerite
@@ -536,24 +537,26 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 				i(164379),	-- Bound Infernal Alchemist Stone (QI!)
 				i(151706),	-- Recipe: Astral Alchemist Stone [Rank 1] (RECIPE!)
 			},
-		})),
-		q(48002, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Limited Supplies
+		}),
+		q(48002, {	-- Limited Supplies
 			sourceQuest = 46816,	-- Rendezvous
 			provider = { "n", 125346 },	-- Alchemist Funen
 			coord = { 56.2, 66.8, KROKUUN },
+			timeline = { ADDED_7_3_0 },
 			groups = {
 				i(151657),	-- Recipe: Lightblood Elixir [Rank 1] (RECIPE!)
 				i(151845),	-- Used Vial (QI!)
 			},
-		})),
-		q(48013, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Tracking the Trackers
+		}),
+		q(48013, {	-- Tracking the Trackers
 			sourceQuest = 46816,	-- Rendezvous
 			provider = { "n", 125346 },	-- Alchemist Funen
 			coord = { 56.2, 66.8, KROKUUN },
+			timeline = { ADDED_7_3_0 },
 			groups = {
 				i(151703),	-- Recipe: Tears of the Naaru [Rank 1] (RECIPE!)
 			},
-		})),
+		}),
 	}),
 	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
@@ -575,10 +578,11 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 				races = HORDE_ONLY,
 			}),
 			------ Tools of Trade Questline ------
-			q(50121, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- Casting the First Stone [A]
+			q(50121, {	-- Casting the First Stone [A]
 				description = "This quest chain requires 150 in Kul Tiran Alchemy.",
 				provider = { "n", 132228 },	-- Elric Whalgrene
 				coord = { 74.2, 6.5, BORALUS },
+				timeline = { ADDED_8_1_5 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					r(288182, {u=TRAINING}),	-- Potion of Durability
@@ -590,11 +594,12 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 					i(166373),	-- Storm Silver Shards (QI!)
 					i(166374),	-- Test Vial (QI!)
 				},
-			})),
-			q(50112, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- Casting the First Stone [H]
+			}),
+			q(50112, {	-- Casting the First Stone [H]
 				description = "This quest chain requires 150 in Zandalari Alchemy.",
 				provider = { "n", 122703 },	-- Clever Kumali
 				coord = { 42.2, 38.0, DAZARALOR },
+				timeline = { ADDED_8_1_5 },
 				races = HORDE_ONLY,
 				groups = {
 					r(288182, {u=TRAINING}),	-- Potion of Durability
@@ -606,7 +611,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 					i(166373),	-- Storm Silver Shards (QI!)
 					i(166374),	-- Test Vial (QI!)
 				},
-			})),
+			}),
 			q(50122, {	-- Ocular Extracts [A]
 				sourceQuests = { 50121 },	-- Casting the First Stone [A]
 				provider = { "n", 132228 },	-- Elric Whalgrene
@@ -723,24 +728,26 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 				timeline = { ADDED_8_1_5 },
 				races = HORDE_ONLY,
 			}),
-			q(50129, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- A Recipe for Success [A]
+			q(50129, {	-- A Recipe for Success [A]
 				sourceQuests = { 50128 },	-- Chemically Compounded [A]
 				provider = { "o", 280755 },	-- Quintin's Satchel
 				coord = { 62.9, 28.9, DRUSTVAR },
+				timeline = { ADDED_8_1_5 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					r(260403),	-- Silus' Sphere of Transmutation (RECIPE!)
 				},
-			})),
-			q(50120, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- A Recipe for Success [H]
+			}),
+			q(50120, {	-- A Recipe for Success [H]
 				sourceQuests = { 50119 },	-- Chemically Compounded [H]
 				provider = { "o", 280957 },	-- Zukashi's Satchel
 				coord = { 62.9, 28.9, NAZMIR },
+				timeline = { ADDED_8_1_5 },
 				races = HORDE_ONLY,
 				groups = {
 					r(260403),	-- Silus' Sphere of Transmutation (RECIPE!)
 				},
-			})),
+			}),
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {

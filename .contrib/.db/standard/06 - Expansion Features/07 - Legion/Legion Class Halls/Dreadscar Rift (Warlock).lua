@@ -777,13 +777,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						coord = { 78.1, 39.7, BROKEN_SHORE },
 						timeline = { ADDED_7_2_0 },
 					}),
-					q(46047, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Champion: Kanrethad Ebonlocke
+					q(46047, {	-- Champion: Kanrethad Ebonlocke
 						sourceQuests = { 46020 },	-- Crystal Containment
 						provider = { "n", 118927 },	-- Kanrethad Ebonlocke
 						coord = { 55.8, 34.4, DREADSCAR_RIFT },
+						timeline = { ADDED_7_2_0 },
 						groups = { follower(997) },	-- Kanrethad Ebonlocke
-					})),
-					q(46316, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Champion: Kanrethad Ebonlocke (If completed Green Fire)
+					}),
+					q(46316, {	-- Champion: Kanrethad Ebonlocke (If completed Green Fire)
 						description = "This quest is only available if you completed the Green Fire Questline.",
 						sourceQuests = {
 							46020,	-- Crystal Containment
@@ -791,8 +792,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						},
 						provider = { "n", 118927 },	-- Kanrethad Ebonlocke
 						coord = { 55.8, 34.4, DREADSCAR_RIFT },
+						timeline = { ADDED_7_2_0 },
 						groups = { follower(997) },	-- Kanrethad Ebonlocke
-					})),
+					}),
 					q(46237, {	-- Bloodbringer's Missive
 						sourceQuests = {
 							46047,	-- Champion: Kanrethad Ebonlocke
@@ -854,12 +856,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						maps = { BROKEN_SHORE },
 						groups = { i(144445) },	-- Xorothian Calling Stone (QI!)
 					}),
-					q(46243, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- The Wrathsteed of Xoroth
+					q(46243, {	-- The Wrathsteed of Xoroth
 						sourceQuests = { 46242 },	-- The Dreadlord's Calling
 						provider = { "n", 119166 },	-- Mor'zul Bloodbringer
 						coord = { 35.6, 38.4, DREADSCAR_RIFT },
+						timeline = { ADDED_7_2_0 },
 						groups = { mount(232412) },	-- Netherlord's Chaotic Wrathsteed (MOUNT!)
-					})),
+					}),
 					-- Misc
 					q(43887, {	-- Hitting the Books
 						provider = { "n", 111740 },	-- Mile Raitheborne <Head Archivist>

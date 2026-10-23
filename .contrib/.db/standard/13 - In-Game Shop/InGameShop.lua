@@ -231,14 +231,15 @@ root(ROOTS.InGameShop, bubbleDown({ u = REAL_MONEY }, {
 			timeline = { ADDED_11_2_7 },
 			groups = {
 				ach(19030),	-- Squally
-				q(82809, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {	-- Gryphons of a Feather
+				q(82809, {	-- Gryphons of a Feather
 					provider = { "n", 209681 },	-- Squally
+					timeline = { ADDED_11_2_7 },
 					groups = {
 						i(224259),	-- Flash (PET!)
 						i(224261),	-- Gale (PET!)
 						i(224260),	-- Thundo (PET!)
 					},
-				})),
+				}),
 			},
 		}),
 		i(272956, {	-- Sunflicker Driftmoth (PET!)
@@ -593,9 +594,10 @@ root(ROOTS.InGameShop, bubbleDown({ u = REAL_MONEY }, {
 					coord = { 75.2, 55.0, THE_WAKING_SHORES },
 					groups = { iensemble(209417) },	-- Ensemble: Thundering Stormrider's Attire (COSMETIC!)
 				}),
-				q(81993, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {	-- The Stormrider's Bond [Dragon Isle Version]
+				q(81993, {	-- The Stormrider's Bond [Dragon Isle Version]
 					provider = { "n", 222277 },	-- Kurdran Wildhammer
 					coord = { 38.3, 94.9, VALDRAKKEN },
+					timeline = { ADDED_11_2_7 },
 					groups = {
 						i(220737),	-- Storm Spirit (QI!)
 						--
@@ -627,24 +629,27 @@ root(ROOTS.InGameShop, bubbleDown({ u = REAL_MONEY }, {
 						i(220723),	-- Shining Stormrider's Pants (COSMETIC!)
 						i(220726),	-- Shining Stormrider's Wristguards (COSMETIC!)
 					},
-				})),
-				q(84908, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {	-- Stormrider's Honors [Khaz Algar Version]
+				}),
+				q(84908, {	-- Stormrider's Honors [Khaz Algar Version]
+					timeline = { ADDED_11_2_7 },
 					lockCriteria = { 1, "questID", 83024 },	-- The Stormrider's Bond [Khaz Algar Version]
 					DisablePartySync = true,
 					-- Pops on login directs you to quest 83024
-				})),
-				q(83024, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {	-- The Stormrider's Bond [Khaz Algar Version]
+				}),
+				q(83024, {	-- The Stormrider's Bond [Khaz Algar Version]
 					provider = { "n", 225347 },	-- Stormrider Bruelda
 					coord = { 35.3, 38.2, DORNOGAL },
+					timeline = { ADDED_11_2_7 },
 					sym = {{"select","questID",81993},{"pop"}},	-- The Stormrider's Bond [Dragon Isle Version]
-				})),
-				q(81994, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {	-- A Sacred Connection [Dragon Isles Version]
+				}),
+				q(81994, {	-- A Sacred Connection [Dragon Isles Version]
 					sourceQuests = {
 						81993,	-- The Stormrider's Bond [Dragon Isle Version]
 						83024,	-- The Stormrider's Bond [Khaz Algar Version]
 					},
 					provider = { "n", 222277 },	-- Kurdran Wildhammer
 					coord = { 38.3, 94.9, VALDRAKKEN },
+					timeline = { ADDED_11_2_7 },
 					groups = {
 						i(220708),	-- Frenzied Stormrider's Breastplate (COSMETIC!)
 						i(220706),	-- Frenzied Stormrider's Buckle (COSMETIC!)
@@ -662,12 +667,13 @@ root(ROOTS.InGameShop, bubbleDown({ u = REAL_MONEY }, {
 						i(220730),	-- Sparking Stormrider's Grips (COSMETIC!)
 						i(220727),	-- Sparking Stormrider's Helmet (COSMETIC!)
 					},
-				})),
-				q(83025, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {	-- A Sacred Connection [Khaz Algar Version]
+				}),
+				q(83025, {	-- A Sacred Connection [Khaz Algar Version]
 					provider = { "n", 225347 },	-- Stormrider Bruelda
 					coord = { 35.3, 38.2, DORNOGAL },
+					timeline = { ADDED_11_2_7 },
 					sym = {{"select","questID",81994},{"pop"}},	-- A Sacred Connection [Dragon Isle Version]
-				})),
+				}),
 			},
 		}),
 		------ Vestments of the Heavens Sets ------

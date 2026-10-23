@@ -548,10 +548,11 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(9447, bubbleDown({ timeline = { REMOVED_4_0_3 } }, {	-- Administering the Salve
+					q(9447, {	-- Administering the Salve
 						sourceQuest = 9442,	-- A Debilitating Sickness
 						qg = 17123,	-- Earthcaller Ryga
 						coord = { 32.1, 28.4, HELLFIRE_PENINSULA },
+						timeline = { REMOVED_4_0_3 },
 						races = HORDE_ONLY,
 						lvl = lvlsquish(60, 60, 10),
 						groups = {
@@ -569,7 +570,7 @@ root(ROOTS.Zones, {
 							}),
 							-- #endif
 						},
-					})),
+					}),
 					q(9383, {	-- An Ambitious Plan
 						qg = 17006,	-- Elsaana
 						coord = { 23.2, 36.6, HELLFIRE_PENINSULA },

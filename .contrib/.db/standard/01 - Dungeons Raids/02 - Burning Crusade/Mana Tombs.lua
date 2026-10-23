@@ -97,12 +97,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 					},
 				}),
-				q(10218, bubbleDown({ timeline = { REMOVED_4_3_0 } }, {	-- Someone Else's Hard Work Pays Off [Rewards also removed... :(]
+				q(10218, {	-- Someone Else's Hard Work Pays Off [Rewards also removed... :(]
 					sourceQuest = 10216,	-- Safety Is Job One
 					providers = {
 						{ "n",  19671 },	-- Cryo-Engineer Sha'heen
 						{ "o", 183877 },	-- Ethereal Transporter Control Panel
 					},
+					timeline = { REMOVED_4_3_0 },
 					maps = { TEROKKAR_FOREST },
 					lvl = lvlsquish(64, 64, 15),
 					groups = {
@@ -111,7 +112,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(29326),	-- Consortium Mantle of Phasing
 						i(29325),	-- Flesh Beast's Metal Greaves
 					},
-				})),
+				}),
 				q(10977, {	-- Stasis Chambers of the Mana-Tombs
 					sourceQuest = 10976,	-- The Mark of the Nexus-King
 					qg = 22919,	-- Image of Commander Ameer
@@ -137,9 +138,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(32092),	-- The Eye of Haramad
 					},
 				}),
-				q(10165, bubbleDown({ timeline = { REMOVED_4_3_0 } }, {	-- Undercutting the Competition [Rewards also removed... :(]
+				q(10165, {	-- Undercutting the Competition [Rewards also removed... :(]
 					qg = 19674,	-- Nexus-Prince Haramad
 					coord = { 39.4, 58.5, TEROKKAR_FOREST },
+					timeline = { REMOVED_4_3_0 },
 					lvl = lvlsquish(64, 64, 15),
 					groups = {
 						objective(1, {	-- 0/1 Shaffar's Wrappings
@@ -150,7 +152,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(29343),	-- Haramad's Leggings of the Third Coin
 						i(29344),	-- Haramad's Linked Chain Pantaloons
 					},
-				})),
+				}),
 				q(29575, {	-- Undercutting the Competition
 					qg = 54692,	-- Artificer Morphalius
 					timeline = { ADDED_4_3_0 },

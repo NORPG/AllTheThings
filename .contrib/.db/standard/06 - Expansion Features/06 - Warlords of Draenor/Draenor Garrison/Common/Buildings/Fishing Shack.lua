@@ -143,17 +143,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							repeatable = true,
 							groups = { i(NATS_LUCKY_COIN) },
 						}),
-						q(39283, bubbleDownSelf({ timeline = { ADDED_6_2_0 } }, {	-- Felmouth Frenzy Lunker
+						q(39283, {	-- Felmouth Frenzy Lunker
 							qg = 85984,	-- Nat Pagle
 							coords = {
 								{ 38.8, 73.0, FROSTWALL },
 								{ 53.8, 15.2, LUNARFALL },
 							},
+							timeline = { ADDED_6_2_0 },
 							cost = { { "i", 127994, 1 } },	-- Felmouth Frenzy Lunker
 							requireSkill = FISHING,
 							repeatable = true,
 							groups = { i(NATS_LUCKY_COIN) },
-						})),
+						}),
 						q(36608, {	-- Finding Nat Pagle
 							sourceQuests = { 36612, 36870 },	-- Luring Nat (both faction versions)
 							qgs = {
@@ -242,17 +243,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							qg = 79971,	-- Rak'jin
 							races = HORDE_ONLY,
 						}),
-						q(38406, bubbleDownSelf({ timeline = { ADDED_6_1_0 } }, {	-- Sea Scorpion Lunker
+						q(38406, {	-- Sea Scorpion Lunker
 							qg = 85984,	-- Nat Pagle
 							coords = {
 								{ 38.8, 73.0, FROSTWALL },
 								{ 53.8, 15.2, LUNARFALL },
 							},
+							timeline = { ADDED_6_1_0 },
 							cost = { { "i", 122696, 1 } },	-- Sea Scorpion Lunker
 							requireSkill = FISHING,
 							repeatable = true,
 							groups = { i(NATS_LUCKY_COIN) },
-						})),
+						}),
 					}),
 					n(RARES, {
 						i(116158, {	-- Lunarfall Carp

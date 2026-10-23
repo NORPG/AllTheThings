@@ -822,20 +822,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						coord = { 69.8, 34.7, BROKEN_SHORE },
 						timeline = { ADDED_7_2_0 },
 					}),
-					q(45876, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Champion: Lord Darius Crowley
+					q(45876, {	-- Champion: Lord Darius Crowley
 						sourceQuest = 46267,	-- Return of the Battlelord
 						provider = { "n", 117480 },	-- Lord Darius Crowley
 						coord = { 59.9, 83.8, SKYHOLD },
+						timeline = { ADDED_7_2_0 },
 						races = ALLIANCE_ONLY,
 						groups = { follower(989) },	-- Lord Darius Crowley / Eitrigg
-					})),
-					q(45873, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Champion: Eitrigg
+					}),
+					q(45873, {	-- Champion: Eitrigg
 						sourceQuest = 46267,	-- Return of the Battlelord
 						provider = { "n", 117479 },	-- Eitrigg
 						coord = { 59.9, 83.8, SKYHOLD },
+						timeline = { ADDED_7_2_0 },
 						races = HORDE_ONLY,
 						groups = { follower(989) },	-- Lord Darius Crowley / Eitrigg
-					})),
+					}),
 					q(46208, {	-- A Godly Invitation
 						sourceQuests = {
 							47137,	-- Champions of Legionfall
@@ -845,13 +847,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						coord = { 43.6, 63.1, BROKEN_SHORE },
 						timeline = { ADDED_7_2_0 },
 					}),
-					q(46207, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- The Trial of Rage
+					q(46207, {	-- The Trial of Rage
 						sourceQuest = 46208,	-- A Godly Invitation
 						provider = { "n", 96469 },	-- Odyn
 						coord = { 58.3, 84.6, SKYHOLD },
+						timeline = { ADDED_7_2_0 },
 						maps = { 829 },	-- Halls of Valor (Scenario Map)
 						groups = { mount(229388) },	-- Battlelord's Bloodthirsty War Wyrm (MOUNT!)
-					})),
+					}),
 					-- The End
 					q(43888, {	-- Hitting the Books
 						provider = { "n", 111741 },	-- Fjornson Stonecarver

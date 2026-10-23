@@ -739,12 +739,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						timeline = { ADDED_7_2_0 },
 						groups = { i(146401) },	-- Curative Brew (QI!)
 					}),
-					q(45790, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Champion: Almai
+					q(45790, {	-- Champion: Almai
 						sourceQuests = { 45771 },	-- A Time for Everything
 						provider = { "n", 117504 },	-- Brewer Almai
 						coord = { 51.6, 48.5, THE_WANDERING_ISLE },
+						timeline = { ADDED_7_2_0 },
 						groups = { follower(998) },	-- Brewer Almai
-					})),
+					}),
 					q(46353, {	-- Master Who?
 						sourceQuest = 45790,	-- Champion: Almai
 						provider = { "n", 118214 },	-- Yiska
@@ -815,12 +816,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 							}),
 						},
 					}),
-					q(46350, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- The Trial of Ban-Lu
+					q(46350, {	-- The Trial of Ban-Lu
 						sourceQuests = { 46349 },	-- Lilies for Ryuli
 						provider = { "n", 120726 },	-- Waterspeaker Ryuli
 						coord = { 73.9, 88.9, KUN_LAI_SUMMIT },
+						timeline = { ADDED_7_2_0 },
 						groups = { mount(229385) },	-- Ban-Lu, Grandmaster's Companion (MOUNT!)
-					})),
+					}),
 					-- Misc
 					q(43881, {	-- Hitting the Books
 						provider = { "n", 106942 },	-- Lorewalker Cho <Head Archivist>

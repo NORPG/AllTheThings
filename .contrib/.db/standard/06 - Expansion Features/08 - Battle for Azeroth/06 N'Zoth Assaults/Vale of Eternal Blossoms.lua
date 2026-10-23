@@ -647,7 +647,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ timeline = {
 					i(174958),	-- Cache of the Fallen Mogu
 				},
 			}),
-			q(57728, bubbleDownSelf({ timeline = { ADDED_8_3_0 } }, {	-- Assault: The Endless Swarm
+			q(57728, {	-- Assault: The Endless Swarm
+				timeline = { ADDED_8_3_0 },
 				isWorldQuest = true,
 				isWeekly = true,
 				groups = {
@@ -904,7 +905,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ timeline = {
 					}),
 					i(174959),	-- Cache of the Mantid Swarm
 				},
-			})),
+			}),
 			n(EMISSARY_QUESTS, {
 				q(58096, bubbleDownSelf({ minReputation = { FACTION_RAJANI, EXALTED } }, {	-- Supplies from the Rajani
 					repeatable = true,

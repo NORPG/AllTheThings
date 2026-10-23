@@ -7,9 +7,10 @@ root(ROOTS.Zones, {
 	m(NORTHREND, {
 		m(1602, {	-- Icecrown (DK starting zone)
 			n(QUESTS, {
-				q(58877, bubbleDown({ timeline = { ADDED_8_3_0 } }, {	-- Death's Power Grows
+				q(58877, {	-- Death's Power Grows
 					qg = 163016,	-- The Lich King
 					coord = { 49.5, 90.7, 1602 },
+					timeline = { ADDED_8_3_0 },
 					classes = { DEATHKNIGHT },
 					groups = {
 						i(174485),	-- Burning Greatsword of the Ebon Blade
@@ -21,7 +22,7 @@ root(ROOTS.Zones, {
 						i(174487),	-- Unholy Greatsword of the Ebon Blade
 						i(174661),	-- Unholy Saber of the Ebon Blade
 					},
-				})),
+				}),
 				q(58902, {	-- Defender of Azeroth (A)
 					sourceQuest = 58877,	-- Death's Power Grows
 					qg = 163016,	-- The Lich King

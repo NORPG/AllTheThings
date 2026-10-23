@@ -223,7 +223,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(63435, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {	-- Temple Throwdown
+					q(63435, {	-- Temple Throwdown
 						qg = 176655,	-- Anthea <Carefree Pet Tamer>
 						coord = { 70.4, 51.4, KUN_LAI_SUMMIT },
 						timeline = { ADDED_9_1_0 },
@@ -234,7 +234,7 @@ root(ROOTS.Zones, {
 								i(184867),	-- Squibbles (PET!)
 							}),
 						},
-					})),
+					}),
 					n(68465, {	-- Thundering Pandaren Spirit <Grand Master Pet Tamer>
 						coord = { 64.8, 93.6, KUN_LAI_SUMMIT },
 						timeline = { ADDED_5_1_0 },

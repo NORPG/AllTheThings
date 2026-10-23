@@ -1370,12 +1370,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 			},
 		}),
-		q(60238, bubbleDownSelf({ timeline = { ADDED_9_0_1, REMOVED_9_0_2 } }, {	-- A Gently Shaken Gift (2020)
+		q(60238, {	-- A Gently Shaken Gift (2020)
 			description = "Gift from 2020.",
 			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 178529 },	-- Gently Shaken Gift
 			},
+			timeline = { ADDED_9_0_1, REMOVED_9_0_2 },
 			maps = { IRONFORGE, ORGRIMMAR },
 			_drop = { "g" },
 			groups = {
@@ -1384,13 +1385,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					timeline = { ADDED_6_2_2 },
 				}),
 			},
-		})),
-		q(64581, bubbleDownSelf({ timeline = { ADDED_9_1_5, REMOVED_9_1_5 } }, {	-- A Gently Shaken Gift (2021)
+		}),
+		q(64581, {	-- A Gently Shaken Gift (2021)
 			description = "Gift from 2021.",
 			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 187520 },	-- Gently Shaken Gift
 			},
+			timeline = { ADDED_9_1_5, REMOVED_9_1_5 },
 			maps = { IRONFORGE, ORGRIMMAR },
 			_drop = { "g" },
 			groups = {
@@ -1399,37 +1401,40 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					timeline = { ADDED_6_2_2 },
 				}),
 			},
-		})),
-		q(66508, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH } }, {	-- A Gently Shaken Gift (2022)
+		}),
+		q(66508, {	-- A Gently Shaken Gift (2022)
 			description = "Gift from 2022.",
 			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 192093 },	-- Gently Shaken Gift
 			},
+			timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH },
 			maps = { IRONFORGE, ORGRIMMAR },
 			_drop = { "g" },
 			groups = {
 				i(191925),	-- Falling Star Flinger (TOY!)
 			},
-		})),
-		q(78504, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_0 } }, {	-- A Gently Shaken Gift (2023)
+		}),
+		q(78504, {	-- A Gently Shaken Gift (2023)
 			description = "Gift from 2023.",
 			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 210657 },	-- Gently Shaken Gift
 			},
+			timeline = { ADDED_10_2_0, REMOVED_10_2_0 },
 			maps = { IRONFORGE, ORGRIMMAR },
 			_drop = { "g" },
 			groups = {
 				i(210656),	-- Winter Veil Socks (TOY!)
 			},
-		})),
-		q(80684, bubbleDownSelf({ timeline = { ADDED_11_0_7, REMOVED_11_0_7 } }, {	-- A Gently Shaken Gift (2024)
+		}),
+		q(80684, {	-- A Gently Shaken Gift (2024)
 			description = "Gift from 2024.",
 			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
 				{ "i", 218309 },	-- Gently Shaken Gift
 			},
+			timeline = { ADDED_11_0_7, REMOVED_11_0_7 },
 			maps = { IRONFORGE, ORGRIMMAR },
 			_drop = { "g" },
 			groups = {
@@ -1441,8 +1446,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					i(219289),	-- Puntable Tiny Snowman (CI!)
 				}),
 			},
-		})),
-		q(91041, bubbleDownSelf({ timeline = { ADDED_11_0_7, "removed 11.2.7.64978" } }, {	-- A Gently Shaken Gift (2025)
+		}),
+		q(91041, {	-- A Gently Shaken Gift (2025)
 			description = "Gift from 2025.",
 			providers = {
 				{ "o", 180746 },	-- Gently Shaken Gift
@@ -1452,9 +1457,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 33.4, 65.6, IRONFORGE },
 				{ 49.5, 78.7, ORGRIMMAR },
 			},
+			timeline = { ADDED_11_0_7, "removed 11.2.7.64978" },
 			_drop = { "g" },
 			groups = { i(245580) },	-- Rolling Snowball (TOY!)
-		})),
+		}),
 		q(8769, {	-- A Ticking Present
 			providers = {
 				{ "o", 180748 },	-- Ticking Present
@@ -1765,64 +1771,69 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 			},
 		}),
-		q(60239, bubbleDownSelf({ timeline = { ADDED_9_0_1, REMOVED_9_0_2 } }, {	-- A Winter Veil Gift (2020)
+		q(60239, {	-- A Winter Veil Gift (2020)
 			description = "Gift from 2020.",
 			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 178528 },	-- Winter Veil Gift
 			},
+			timeline = { ADDED_9_0_1, REMOVED_9_0_2 },
 			maps = { IRONFORGE, ORGRIMMAR },
 			lvl = 10,
 			_drop = { "g" },
 			groups = {
 				i(178533),	-- Jingles (PET!)
 			},
-		})),
-		q(64639, bubbleDownSelf({ timeline = { ADDED_9_1_5, REMOVED_9_1_5 } }, {	-- A Winter Veil Gift (2021)
+		}),
+		q(64639, {	-- A Winter Veil Gift (2021)
 			description = "Gift from 2021.",
 			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 187561 },	-- Winter Veil Gift
 			},
+			timeline = { ADDED_9_1_5, REMOVED_9_1_5 },
 			maps = { IRONFORGE, ORGRIMMAR },
 			lvl = 10,
 			_drop = { "g" },
 			groups = {
 				i(187560),	-- Rockin' Rollin' Racer Pack (CI!)
 			},
-		})),
-		q(66507, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH } }, {	-- A Winter Veil Gift (2022)
+		}),
+		q(66507, {	-- A Winter Veil Gift (2022)
 			description = "Gift from 2022.",
 			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 192094 },	-- Winter Veil Gift
 			},
+			timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH },
 			maps = { IRONFORGE, ORGRIMMAR },
 			lvl = 10,
 			_drop = { "g" },
 			groups = {
 				i(191937),	-- Falling Star Catcher (TOY!)
 			},
-		})),
-		q(78131, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_0 } }, {	-- A Winter Veil Gift (2023)
+		}),
+		q(78131, {	-- A Winter Veil Gift (2023)
 			description = "Gift from 2023.",
 			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 209871 },	-- Winter Veil Gift
 			},
+			timeline = { ADDED_10_2_0, REMOVED_10_2_0 },
 			maps = { IRONFORGE, ORGRIMMAR },
 			lvl = 10,
 			_drop = { "g" },
 			groups = {
 				i(208825),	-- Junior Timekeeper's Racing Belt (TOY!)
 			},
-		})),
-		q(80685, bubbleDownSelf({ timeline = { ADDED_11_0_7, REMOVED_11_0_7 } }, {	-- A Winter Veil Gift (2024)
+		}),
+		q(80685, {	-- A Winter Veil Gift (2024)
 			description = "Gift from 2024.",
 			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
 				{ "i", 218311 },	-- Winter Veil Gift
 			},
+			timeline = { ADDED_11_0_7, REMOVED_11_0_7 },
 			maps = { IRONFORGE, ORGRIMMAR },
 			lvl = 10,
 			_drop = { "g" },
@@ -1830,8 +1841,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(218310),	-- Box of Puntables (TOY!)
 				i(232653),	-- Portentous Present (PET!)
 			},
-		})),
-		q(91042, bubbleDownSelf({ timeline = { ADDED_11_2_7, "removed 11.2.7.64978" } }, {	-- A Winter Veil Gift (2025)
+		}),
+		q(91042, {	-- A Winter Veil Gift (2025)
 			description = "Gift from 2025.",
 			providers = {
 				{ "o", 187236 },	-- Winter Veil Gift
@@ -1841,13 +1852,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 33.5, 66.5, IRONFORGE },
 				{ 49.8, 77.9, ORGRIMMAR },
 			},
+			timeline = { ADDED_11_2_7, "removed 11.2.7.64978" },
 			lvl = 10,
 			_drop = { "g" },
 			groups = {
 				i(243304),	-- Jubilant Snowman Costume (TOY!)
 				i(245544),	-- Tiny Snow Buddy (PET!)
 			},
-		})),
+		}),
 		q(7022, {	-- Greatfather Winter is Here! (Alliance)
 			qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 			coords = {

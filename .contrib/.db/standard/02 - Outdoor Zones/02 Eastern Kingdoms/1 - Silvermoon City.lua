@@ -181,10 +181,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					lvl = lvlsquish(15, 15, 1),
 				}),
 				-- #if ANYCLASSIC
-				q(63866, bubbleDown({ timeline = { REMOVED_4_0_3 } }, {	-- Claiming the Light
+				q(63866, {	-- Claiming the Light
 					sourceQuest = 64319,	-- A Study in Power
 					qg = 17718,	-- Magister Astalor Bloodsworn
 					coord = { 89.3, 35.2, SILVERMOON_CITY },
+					timeline = { REMOVED_4_0_3 },
 					classes = { PALADIN },
 					races = { BLOODELF },
 					groups = {
@@ -197,12 +198,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							cr = 17544,	-- M'uru
 						}),
 					},
-				})),
+				}),
 				-- #else
-				q(9684, bubbleDown({ timeline = { REMOVED_4_0_3 } }, {	-- Claiming the Light
+				q(9684, {	-- Claiming the Light
 					sourceQuest = 9681,	-- A Study in Power
 					qg = 17718,	-- Magister Astalor Bloodsworn
 					coord = { 89.3, 35.2, SILVERMOON_CITY },
+					timeline = { REMOVED_4_0_3 },
 					classes = { PALADIN },
 					races = { BLOODELF },
 					lvl = lvlsquish(12, 12, 1),
@@ -216,7 +218,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							cr = 17544,	-- M'uru
 						}),
 					},
-				})),
+				}),
 				-- #endif
 				q(9621, {	-- Envoy to the Horde [Blood Elf Only]
 					sourceQuest = 9328,	-- Hero of the Sin'dorei

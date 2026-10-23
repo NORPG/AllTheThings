@@ -309,11 +309,11 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 			repeatable = true,
 			lvl = 55,
 		}),
-		q(5384,	-- Kirtonos the Herald
-		bubbleDownSelf({timeline = { REMOVED_4_0_3 }},{
+		q(5384, {	-- Kirtonos the Herald
 			qg = 11216,	-- Eva Sarkhoff
 			sourceQuest = 5515,	-- Krastinov's Bag of Horrors
 			coord = { 70.2, 73.7, WESTERN_PLAGUELANDS },
+			timeline = { REMOVED_4_0_3 },
 			lvl = 55,
 			groups = {
 				objective(1, {	-- 0/1 Kirtonos the Herald slain
@@ -323,7 +323,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 				i(15805),	-- Penelope's Rose
 				ig(13544),	-- Spectral Essence
 			},
-		})),
+		}),
 		q(27147, {	-- Kirtonos the Herald [CATA]
 			qg = 45107,	-- Eva Sarkhoff
 			timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
@@ -346,8 +346,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 				}),
 			},
 		}),
-		q(7647,	-- Judgment and Redemption
-		bubbleDownSelf({timeline = { REMOVED_4_0_3 }}, {
+		q(7647, {	-- Judgment and Redemption
 			qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 			qi = 18804,	-- Lord Grayson's Satchel
 			sourceQuest = 7646,	-- The Divination Scryer
@@ -358,6 +357,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 				{ 37.6, 32.6, STORMWIND_CITY },
 				-- #endif
 			},
+			timeline = { REMOVED_4_0_3 },
 			classes = { PALADIN },
 			races = ALLIANCE_ONLY,
 			lvl = 60,
@@ -379,7 +379,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 					lvl = 60,
 				}),
 			},
-		})),
+		}),
 		q(5522, {	-- Leonid Barthalomew
 			sourceQuest = 4735,	-- Egg Collection
 			qg = 10267,	-- Tinkee Steamboil

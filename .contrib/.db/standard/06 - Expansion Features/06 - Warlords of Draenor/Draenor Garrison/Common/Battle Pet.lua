@@ -38,7 +38,7 @@ root(ROOTS.ExpansionFeatures,
 							isWeekly = true,
 							_drop = { "g" },	-- Drop Flawless Battle-Training Stone
 						}),
-						q(38299,  bubbleDownSelf({ timeline = { ADDED_6_1_0 } }, {	-- Critters of Draenor
+						q(38299,  {	-- Critters of Draenor
 							qgs = {
 								90675,	-- Erris the Collector
 								91014,	-- Erris the Collector
@@ -47,6 +47,7 @@ root(ROOTS.ExpansionFeatures,
 								91017,	-- Erris the Collector
 							},
 							coord = { 28.8, 40.3, LUNARFALL },
+							timeline = { ADDED_6_1_0 },
 							races = ALLIANCE_ONLY,
 							isDaily = true,
 							_drop = { "g" },	-- Drop Flawless Battle-Training Stone
@@ -57,8 +58,8 @@ root(ROOTS.ExpansionFeatures,
 									i(122533),	-- Young Talbuk (PET!)
 								}),
 							},
-						})),
-						q(38300, bubbleDownSelf({ timeline = { ADDED_6_1_0 } }, {	-- Critters of Draenor
+						}),
+						q(38300, {	-- Critters of Draenor
 							qgs = {
 								91026,	-- Kura Thunderhoof (Spores, Dusty and Salad)
 								91361,	-- Kura Thunderhoof (Moon, Mouthy and Carl)
@@ -67,6 +68,7 @@ root(ROOTS.ExpansionFeatures,
 								91364,	-- Kura Thunderhoof (Nicodemus, Brisby and Jenner)
 							},
 							coord = { 33.3, 42.9, FROSTWALL },	-- level 3
+							timeline = { ADDED_6_1_0 },
 							races = HORDE_ONLY,
 							isDaily = true,
 							_drop = { "g" },	-- Drop Flawless Battle-Training Stone
@@ -77,7 +79,7 @@ root(ROOTS.ExpansionFeatures,
 									i(122533),	-- Young Talbuk (PET!)
 								}),
 							},
-						})),
+						}),
 						q(37644, {	-- Mastering the Menagerie (A)
 							qg = 85418,	-- Lio the Lioness
 							coords = {

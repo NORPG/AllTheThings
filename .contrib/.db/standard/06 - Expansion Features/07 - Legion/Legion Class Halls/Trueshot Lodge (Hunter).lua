@@ -827,29 +827,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						coord = { 50.9, 30.7, BROKEN_SHORE },
 						timeline = { ADDED_7_2_0 },
 					}),
-					q(46048, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Champion: Nighthuntress Syrenne
+					q(46048, {	-- Champion: Nighthuntress Syrenne
 						sourceQuests = { 46235 },	-- Secured Surroundings
 						provider = { "n", 117246 },	-- Nighthuntress Syrenne
 						coord = { 44.8, 61.1, BROKEN_SHORE },
+						timeline = { ADDED_7_2_0 },
 						groups = {
 							follower(996),	-- Nighthuntress Syrenne
 						},
-					})),
+					}),
 					q(46336, {	-- A Golden Ticket
 						sourceQuests = { 46048 },	-- Champion: Nighthuntress Syrenne
 						provider = { "n", 117810 },	-- Nimi Brightcastle
 						coord = { 43.8, 63.2, BROKEN_SHORE },
 						timeline = { ADDED_7_2_0 },
 					}),
-					q(46337, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Night of the Wilds
+					q(46337, {	-- Night of the Wilds
 						sourceQuests = { 46336 },	-- A Golden Ticket
 						provider = { "n", 119943 },	-- Golden Letter
 						coord = { 42.9, 45.7, TRUESHOT_LODGE },
+						timeline = { ADDED_7_2_0 },
 						maps = { 877 },	-- Fields of the Eternal Hunt (Scenario Map)
 						groups = {
 							mount(229386),	-- Huntmaster's Loyal Wolfhawk (MOUNT!)
 						},
-					})),
+					}),
 					-- Misc
 					q(45392, {	-- Dark Memento
 						provider = { "n", 105099 },	-- Dark Ranger Velonara

@@ -413,10 +413,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDE
 				ach(12112),	-- Antorus, the Burning Throne Guild Run
 			}),
 			n(QUESTS, {
-				q(48954, bubbleDownSelf({ timeline = { ADDED_7_3_0, REMOVED_8_0_1, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END } }, {	-- Blood of a Titan
+				q(48954, {	-- Blood of a Titan
 					provider = { "i", 152900 },	-- Blood of the Unmaker
+					timeline = { ADDED_7_3_0, REMOVED_8_0_1, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
 					groups = { i(152901) },	-- Violet Spellwing (MOUNT!)
-				})),
+				}),
 				q(49077, {	-- Moments of Reflection
 					qg = 129429,	-- Alor'idal Crystal
 					qi = 153555,	-- Alor'idal Crystal (QI!)

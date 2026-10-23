@@ -54,9 +54,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					timeline = { ADDED_4_3_0 },
 					lvl = lvlsquish(67, 67, 20),
 				}),
-				q(9763, bubbleDown({ timeline = { REMOVED_4_3_0 } }, {	-- The Warlord's Hideout
+				q(9763, {	-- The Warlord's Hideout
 					qg = 17884,	-- Watcher Jhang
 					coord = { 52.3, 36.0, ZANGARMARSH },
+					timeline = { REMOVED_4_3_0 },
 					lvl = lvlsquish(67, 67, 20),
 					groups = {
 						objective(1, {	-- Warlord Kalithresh slain
@@ -67,7 +68,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(28183),	-- Hydromancer's Headwrap
 						i(28180),	-- Myrmidon's Headdress
 					},
-				})),
+				}),
 				q(10667, {	-- Underworld Loam
 					sourceQuests = {
 						10665,	-- Fresh From the Mechanar

@@ -657,50 +657,54 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 				timeline = { ADDED_7_2_0 },
 				repeatable = true,
 			}),
-			q(46688, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Leather of the Ancients
+			q(46688, {	-- Leather of the Ancients
 				sourceQuests = { 46684 },	-- The Legend of the Elderhide
 				provider = { "n", 120221 },	-- Eliezer Hammerbeard
 				coord = { 41.2, 59.4, BROKEN_SHORE },
+				timeline = { ADDED_7_2_0 },
 				repeatable = true,
 				groups = {
 					i(146693),	-- Ancient Dreadleather (QI!)
 					i(146692),	-- Ancient Dreadleather Armor (QI!)
 				},
-			})),
-			q(46687, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- The Wisp and the Nightmare
+			}),
+			q(46687, {	-- The Wisp and the Nightmare
 				sourceQuests = { 46684 },	-- The Legend of the Elderhide
 				provider = { "n", 120221 },	-- Eliezer Hammerbeard
 				coord = { 41.2, 59.4, BROKEN_SHORE },
+				timeline = { ADDED_7_2_0 },
 				maps = { 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, },	-- The Emerald Nightmare
 				repeatable = true,
 				groups = {
 					i(146691),	-- Immaculate Spellsash (QI!)
 					i(146690);	-- Xavius' Torn Spellsash (QI!)
 				},
-			})),
-			q(46686, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- The Wisp and the Sea
+			}),
+			q(46686, {	-- The Wisp and the Sea
 				sourceQuests = { 46684 },	-- The Legend of the Elderhide
 				provider = { "n", 120221 },	-- Eliezer Hammerbeard
 				coord = { 41.2, 59.4, BROKEN_SHORE },
+				timeline = { ADDED_7_2_0 },
 				maps = { 713 },	-- Eye of Azshara
 				repeatable = true,
 				groups = {
 					i(146689),	-- Oiled Handmaiden's Gloves (QI!)
 					i(146688),	-- Waterlogged Handmaiden's Gloves (QI!)
 				},
-			})),
-			q(46685, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- The Wisp and the Shadow
+			}),
+			q(46685, {	-- The Wisp and the Shadow
 				sourceQuests = { 46684 },	-- The Legend of the Elderhide
 				provider = { "n", 120221 },	-- Eliezer Hammerbeard
 				coord = { 41.2, 59.4, BROKEN_SHORE },
+				timeline = { ADDED_7_2_0 },
 				maps = { 733 },	-- Darkheart Thicket
 				repeatable = true,
 				groups = {
 					i(146686),	-- Colorless Shroud of Xavius (QI!)
 					i(146687),	-- Dyed Shroud of Xavius (QI!)
 				},
-			})),
-			q(46689, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Wisp-Touched Elderhide
+			}),
+			q(46689, {	-- Wisp-Touched Elderhide
 				sourceQuests = {
 					46688,	-- Leather of the Ancients
 					46687,	-- The Wisp and the Nightmare
@@ -709,13 +713,14 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 				},
 				provider = { "n", 120221 },	-- Eliezer Hammerbeard
 				coord = { 41.1, 59.3, BROKEN_SHORE },
+				timeline = { ADDED_7_2_0 },
 				repeatable = true,
 				groups = {
 					i(147438),	-- Bag of Wisp-Touched Elderhide (QI!)
 					i(146977),	-- Legendary Tanner's Kit (QI!)
 					i(146712),	-- Wisp-Touched Elderhide
 				},
-			})),
+			}),
 			-- Vigilance Perch Questline
 			q(46690, {	-- The Legend of the Wardenscale
 				sourceQuests = { 46804 },	-- Fashion History and a Philosophy of Style
@@ -728,50 +733,54 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 					i(147075),	-- Spirit Net (QI!)
 				},
 			}),
-			q(46694, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Mail of the Ancients
+			q(46694, {	-- Mail of the Ancients
 				sourceQuests = { 46690 },	-- The Legend of the Wardenscale
 				provider = { "n", 120221 },	-- Eliezer Hammerbeard
 				coord = { 41.2, 59.4, BROKEN_SHORE },
+				timeline = { ADDED_7_2_0 },
 				repeatable = true,
 				groups = {
 					i(146701),	-- Ancient Gravenscale (QI!)
 					i(146700),	-- Ancient Gravenscale Armor (QI!)
 				},
-			})),
-			q(46692, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- The Owl and the Dreadlord
+			}),
+			q(46692, {	-- The Owl and the Dreadlord
 				sourceQuests = { 46690 },	-- The Legend of the Wardenscale
 				provider = { "n", 120221 },	-- Eliezer Hammerbeard
 				coord = { 41.2, 59.4, BROKEN_SHORE },
+				timeline = { ADDED_7_2_0 },
 				maps = { 845, 846, 847, 848, 849 },	-- Cathedral of Eternal Night
 				repeatable = true,
 				groups = {
 					i(146697),	-- Refinished Legplates of Mephistroth (QI!)
 					i(146696),	-- Rusted Legplates of Mephistroth (QI!)
 				},
-			})),
-			q(46693, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- The Owl and the Observer
+			}),
+			q(46693, {	-- The Owl and the Observer
 				sourceQuests = { 46690 },	-- The Legend of the Wardenscale
 				provider = { "n", 120221 },	-- Eliezer Hammerbeard
 				coord = { 41.2, 59.4, BROKEN_SHORE },
+				timeline = { ADDED_7_2_0 },
 				maps = { 815, 816, 817, 818, 819, 820, 821, 822, 809, 810, 811, 812, 813, 814 },	-- Return to Karazhan
 				repeatable = true,
 				groups = {
 					i(146699),	-- Gleaming Bracers of the First War (QI!)
 					i(146698),	-- Torn Bracers of the First War (QI!)
 				},
-			})),
-			q(46691, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- The Owl and the Traitor
+			}),
+			q(46691, {	-- The Owl and the Traitor
 				sourceQuests = { 46690 },	-- The Legend of the Wardenscale
 				provider = { "n", 120221 },	-- Eliezer Hammerbeard
 				coord = { 41.2, 59.4, BROKEN_SHORE },
+				timeline = { ADDED_7_2_0 },
 				maps = { 710, 711, 712, },	-- Vault of the Wardens
 				repeatable = true,
 				groups = {
 					i(146694),	-- Chipped Felsong Mantle (QI!)
 					i(146695),	-- Immaculate Felsong Mantle (QI!)
 				},
-			})),
-			q(46695, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Prime Wardenscale
+			}),
+			q(46695, {	-- Prime Wardenscale
 				sourceQuests = {
 					46694,	-- Mail of the Ancients
 					46692,	-- The Owl and the Dreadlord
@@ -780,18 +789,20 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 				},
 				provider = { "n", 120221 },	-- Eliezer Hammerbeard
 				coord = { 41.1, 59.3, BROKEN_SHORE },
+				timeline = { ADDED_7_2_0 },
 				repeatable = true,
 				groups = {
 					i(147439),	-- Box of Completed Prime Wardenscale (QI!)
 					i(147209),	-- Legendary Wardenscale Supplies (QI!)
 					i(146713),	-- Prime Wardenscale
 				},
-			})),
+			}),
 			-- 7.3.0
-			q(48078, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Counterbalancing
+			q(48078, {	-- Counterbalancing
 				sourceQuests = { 47743 },	-- The Child of Light and Shadow
 				provider = { "n", 125349 },	-- Enstraa
 				coord = { 39.6, 73.6, THE_VINDICAAR_KROKUUN_UPPER },
+				timeline = { ADDED_7_3_0 },
 				cost = {
 					{ "i", 151566, 12 },	-- 12x Fiendish Leather
 					{ "i", 151567, 12 },	-- 12x Lightweave Cloth
@@ -802,7 +813,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 					i(151743),	-- Pattern: Fiendish Spaulders [Rank 1] (RECIPE!)
 					i(151879),	-- Purified Fiendish Leather (QI!)
 				},
-			})),
+			}),
 		}),
 	})),
 	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
@@ -949,7 +960,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 				races = HORDE_ONLY,
 				groups = { i(165231) },	-- Unwaning Bones (QI!)
 			}),
-			q(55234, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- Make Some Noise [A]
+			q(55234, {	-- Make Some Noise [A]
 				sourceQuests = {
 					55230,	-- Telonis' Prized Leather
 					55232,	-- Mevris' Menace
@@ -957,6 +968,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 				},
 				provider = { "n", 151173 },	-- Daniss Ghostdancer
 				coord = { 69.6, 29.8, BORALUS },
+				timeline = { ADDED_8_1_5 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(167560),	-- Cleaned Brilliant Scales (QI!)
@@ -965,8 +977,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 					i(167561),	-- Drum of Primal Might (QI!)
 					i(167559),	-- Supple Hides (QI!)
 				},
-			})),
-			q(55222, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- Make Some Noise [H]
+			}),
+			q(55222, {	-- Make Some Noise [H]
 				sourceQuests = {
 					55218,	-- Sheza's Prized Leather
 					55220,	-- Bass Fishing
@@ -974,6 +986,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 				},
 				provider = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				coord = { 53.4, 92.5, DAZARALOR },
+				timeline = { ADDED_8_1_5 },
 				races = HORDE_ONLY,
 				groups = {
 					i(167560),	-- Cleaned Brilliant Scales (QI!)
@@ -982,25 +995,27 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 					i(167561),	-- Drum of Primal Might (QI!)
 					i(167559),	-- Supple Hides (QI!)
 				},
-			})),
-			q(55235, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- Instruments of Destruction [A]
+			}),
+			q(55235, {	-- Instruments of Destruction [A]
 				sourceQuests = { 55234 },	-- Make Some Noise [A]
 				provider = { "n", 151173 },	-- Daniss Ghostdancer
 				coord = { 69.6, 29.8, BORALUS },
+				timeline = { ADDED_8_1_5 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					r(293076),	-- Mallet of Thunderous Skins (RECIPE!)
 				},
-			})),
-			q(55223, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- Instruments of Destruction [H]
+			}),
+			q(55223, {	-- Instruments of Destruction [H]
 				sourceQuests = { 55222 },	-- Make Some Noise [H]
 				provider = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				coord = { 53.4, 92.5, DAZARALOR },
+				timeline = { ADDED_8_1_5 },
 				races = HORDE_ONLY,
 				groups = {
 					r(293076),	-- Mallet of Thunderous Skins (RECIPE!)
 				},
-			})),
+			}),
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {

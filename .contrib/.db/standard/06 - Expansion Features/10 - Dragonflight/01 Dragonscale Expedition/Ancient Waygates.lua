@@ -365,18 +365,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { 
 						i(200596),	-- Letter from Thaelin Darkanvil
 					},
 				}),
-				q(75154, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {	-- Waygate: Morqut Islet
+				q(75154, {	-- Waygate: Morqut Islet
 					sourceQuests = {
 						75444,	-- Waygate Exploration: The Forbidden Reach
 					},
 					provider = { "n", 189066 },	-- Thaelin Darkanvil
 					coord = { 47.2, 90.3, THE_WAKING_SHORES },
 					-- minReputation = { FACTION_DRAGONSCALE_EXPEDITION, 23 },	-- Dragonscale Expedition Renown 23
+					timeline = { ADDED_10_0_7 },
 					DisablePartySync = true,
 					groups = {
 						i(204438),	-- Enchanted Arcana Vessel
 					},
-				})),
+				}),
 			}),
 		})),
 	}),

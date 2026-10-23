@@ -596,58 +596,63 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 			},
 		}),
 		------ Rethu's Incessant Courage Questline ------
-		q(46696, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- The Legend of the Four Hammers
+		q(46696, {	-- The Legend of the Four Hammers
 			sourceQuests = { 46804 },	-- Fashion History and a Philosophy of Style
 			provider = { "n", 120221 },	-- Eliezer Hammerbeard
 			coord = { 41.2, 59.4, BROKEN_SHORE },
+			timeline = { ADDED_7_2_0 },
 			repeatable = true,
 			groups = {
 				i(147197),	-- Legends of the Four Hammers (QI!)
 			},
-		})),
-		q(46700, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Armor of the Ancients
+		}),
+		q(46700, {	-- Armor of the Ancients
 			sourceQuests = { 46696 },	-- The Legend of the Four Hammers
 			provider = { "n", 120221 },	-- Eliezer Hammerbeard
 			coord = { 41.2, 59.4, BROKEN_SHORE },
+			timeline = { ADDED_7_2_0 },
 			repeatable = true,
 			groups = {
 				i(146709),	-- Ancient Demonsteel (QI!)
 				i(146708),	-- Ancient Demonsteel Armor (QI!)
 			},
-		})),
-		q(46698, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- The Dragonhunter
+		}),
+		q(46698, {	-- The Dragonhunter
 			sourceQuests = { 46696 },	-- The Legend of the Four Hammers
 			provider = { "n", 120221 },	-- Eliezer Hammerbeard
 			coord = { 41.2, 59.4, BROKEN_SHORE },
+			timeline = { ADDED_7_2_0 },
 			maps = { 731 },	-- Neltharion's Lair
 			repeatable = true,
 			groups = {
 				i(146704),	-- Red-Hot Draconic Slag (QI!)
 			},
-		})),
-		q(46697, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- The Godfighter
+		}),
+		q(46697, {	-- The Godfighter
 			sourceQuests = { 46696 },	-- The Legend of the Four Hammers
 			provider = { "n", 120221 },	-- Eliezer Hammerbeard
 			coord = { 41.2, 59.4, BROKEN_SHORE },
+			timeline = { ADDED_7_2_0 },
 			maps = { 703, 704, 705 },	-- Halls of Valor
 			repeatable = true,
 			groups = {
 				i(146703),	-- Godfighter Hammer (QI!)
 				i(146702),	-- White Lightningsteel (QI!)
 			},
-		})),
-		q(46699, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- The Hellslayer
+		}),
+		q(46699, {	-- The Hellslayer
 			sourceQuests = { 46696 },	-- The Legend of the Four Hammers
 			provider = { "n", 120221 },	-- Eliezer Hammerbeard
 			coord = { 41.2, 59.4, BROKEN_SHORE },
+			timeline = { ADDED_7_2_0 },
 			maps = { 806, 807, 808 },	-- Trial of Valor
 			repeatable = true,
 			groups = {
 				i(146707),	-- Hellslayer Hammer (QI!)
 				i(146706),	-- Frostveined Shale (QI!)
 			},
-		})),
-		q(46701, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Hammer of Forgotten Heroes
+		}),
+		q(46701, {	-- Hammer of Forgotten Heroes
 			sourceQuests = {
 				46700,	-- Armor of the Ancients
 				46698,	-- The Dragonhunter
@@ -656,18 +661,20 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 			},
 			provider = { "n", 120221 },	-- Eliezer Hammerbeard
 			coord = { 41.1, 59.3, BROKEN_SHORE },
+			timeline = { ADDED_7_2_0 },
 			repeatable = true,
 			groups = {
 				i(147443),	-- Carrying Case For Hammer of Forgotten Heroes (QI!)
 				i(147207),	-- Legendary Blacksmithing Supplies (QI!)
 				i(146714),	-- Hammer of Forgotten Heroes
 			},
-		})),
+		}),
 		------ 7.3.0 ------
-		q(48055, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Empyrial Strength
+		q(48055, {	-- Empyrial Strength
 			sourceQuests = { 47743 },	-- The Child of Light and Shadow
 			provider = { "n", 125341 },	-- Khamir
 			coord = { 40.6, 65.6, THE_VINDICAAR_KROKUUN_LOWER },
+			timeline = { ADDED_7_3_0 },
 			cost = {
 				{ "i", 151564, 42 },	-- 42x Empyrium
 				{ "i", 151568, 2 },	-- 2x Primal Sargerite
@@ -683,27 +690,29 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				i(151924),	-- Empyrial Chest Plate (QI!)
 				i(151923),	-- Empyrial Rivet (QI!)
 			},
-		})),
-		q(48053, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Weigh Anchor [A]
+		}),
+		q(48053, {	-- Weigh Anchor [A]
 			sourceQuests = { 38499 },	-- Strange New Ores
 			provider = { "n", 92183 },	-- Alard Schmied
 			coord = { 44.6, 28.6, LEGION_DALARAN },
+			timeline = { ADDED_7_3_0 },
 			races = ALLIANCE_ONLY,
 			groups = {
 				r(247700),	-- Felslate Anchor (RECIPE!)
 				i(151871),	-- Crate of Felslate (QI!)
 			},
-		})),
-		q(48054, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Weigh Anchor [H]
+		}),
+		q(48054, {	-- Weigh Anchor [H]
 			sourceQuests = { 38499 },	-- Strange New Ores
 			provider = { "n", 106655 },	-- Arcanomancer Vridiel
 			coord = { 45.0, 29.6, LEGION_DALARAN },
+			timeline = { ADDED_7_3_0 },
 			races = HORDE_ONLY,
 			groups = {
 				r(247700),	-- Felslate Anchor (RECIPE!)
 				i(151871),	-- Crate of Felslate (QI!)
 			},
-		})),
+		}),
 	}),
 	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
@@ -818,24 +827,26 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 					i(167021),	-- Khaz'gorian Anvil (QI!)
 				},
 			}),
-			q(50275, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- Anvil's Away [A]
+			q(50275, {	-- Anvil's Away [A]
 				sourceQuests = { 50288 },	-- Therazane's Choice
 				provider = { "n", 133796 },	-- Therazane
 				coord = { 27.5, 50.8, DEEPHOLM },
+				timeline = { ADDED_8_1_5 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					r(253145),	-- Khaz'gorian Smithing Hammer (RECIPE!)
 				},
-			})),
-			q(50279, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- Anvil's Away [H]
+			}),
+			q(50279, {	-- Anvil's Away [H]
 				sourceQuests = { 50288 },	-- Therazane's Choice
 				provider = { "n", 133796 },	-- Therazane
 				coord = { 27.5, 50.8, DEEPHOLM },
+				timeline = { ADDED_8_1_5 },
 				races = HORDE_ONLY,
 				groups = {
 					r(253145),	-- Khaz'gorian Smithing Hammer (RECIPE!)
 				},
-			})),
+			}),
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {

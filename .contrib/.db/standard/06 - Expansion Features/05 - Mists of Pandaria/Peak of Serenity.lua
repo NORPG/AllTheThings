@@ -110,15 +110,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 						i(89567),	-- Brown Belt of Precarious Balance
 					},
 				}),
-				q(31833, bubbleDownSelf({	-- Continue Your Training: Master Woo
-					timeline = { ADDED_5_0_4, REMOVED_7_3_5 },
-				},{
+				q(31833, {
 					qg = 66260,	-- Master Hight <Grand Master>
 					sourceQuests = {
 						31834,	-- Begin Your Training: Master Cheng
 						31855,	-- The Peak of Serenity - Continue Your Training
 					},
 					coord = { 48.6, 42.8, KUN_LAI_SUMMIT },
+					timeline = { ADDED_5_0_4, REMOVED_7_3_5 },
 					lvl = lvlsquish(30, 30, 10),
 					groups = {
 						objective(1, {	-- Master Woo's Training Completed
@@ -129,7 +128,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 						i(89556),	-- Formidable Yellow Belt
 						i(89558),	-- Serene Yellow Belt
 					},
-				})),
+				}),
 				q(31836, {	-- Continue Your Training: Master Yoon
 					sourceQuests = {
 						31835,	-- Continue Your Training: Master Kistane

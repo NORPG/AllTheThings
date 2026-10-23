@@ -229,19 +229,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			n(QUESTS, {
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_FOUR, q(84545, bubbleDown({ timeline = { ADDED_1_15_3 } }, {	-- A Hero's Reward
+				applyclassicphase(SOD_PHASE_FOUR, q(84545, {	-- A Hero's Reward
 					sourceQuest = 6824,	-- Hands of the Enemy
 					providers = {
 						{ "n",  13278 },	-- Duke Hydraxis
 						{ "o", 179551 },	-- Hydraxis' Coffer
 					},
 					coord = { 79.2, 73.6, AZSHARA },
+					timeline = { ADDED_1_15_3 },
 					lvl = 55,
 					groups = {
 						i(227455),	-- Ocean's Breeze
 						i(227454),	-- Tidal Loop
 					},
-				}))),
+				})),
 				-- #endif
 				q(7486, bubbleDown({	-- A Hero's Reward
 					timeline = {
@@ -264,20 +265,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(18398),	-- Tidal Loop
 					},
 				})),
-				q(6823, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Agent of Hydraxis
+				q(6823, {	-- Agent of Hydraxis
 					sourceQuest = 6822,	-- The Molten Core
 					qg = 13278,	-- Duke Hydraxis
 					coord = { 79.2, 73.6, AZSHARA },
 					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
+					timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
 					lvl = 55,
-				})),
-				q(7633, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- An Introduction
+				}),
+				q(7633, {	-- An Introduction
 					sourceQuest = 7632,	-- The Ancient Leaf
 					qg = 14524,	-- Vartrus the Ancient
 					coord = { 47.0, 24.48, FELWOOD },
+					timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
 					classes = { HUNTER },
 					lvl = 60,
-				})),
+				}),
 				q(7487, {	-- Attunement to the Core [Old]
 					description = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
 					qg = 14387,	-- Lothos Riftwaker
@@ -315,13 +318,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				q(6821, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Eye of the Emberseer
+				q(6821, {	-- Eye of the Emberseer
 					sourceQuests = {
 						6804,	-- Poisoned Water
 						6805,	-- Stormers and Rumblers
 					},
 					qg = 13278,	-- Duke Hydraxis
 					coord = { 79.2, 73.6, AZSHARA },
+					timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
 					maps = {
 						BLACKROCK_SPIRE,
 						LBRS_TAZZALOR,
@@ -337,11 +341,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							provider = { "i", 17322 },	-- Eye of the Emberseer
 						}),
 					},
-				})),
-				q(6824, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Hands of the Enemy
+				}),
+				q(6824, {	-- Hands of the Enemy
 					sourceQuest = 6823,	-- Agent of Hydraxis
 					qg = 13278,	-- Duke Hydraxis
 					coord = { 79.2, 73.6, AZSHARA },
+					timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
 					lvl = 55,
 					groups = {
 						objective(1, {	-- 0/1 Hand of Shazzrah
@@ -358,10 +363,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						ach(2496),	-- The Fifth Element
 					},
-				})),
-				q(6804, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Poisoned Water
+				}),
+				q(6804, {	-- Poisoned Water
 					qg = 13278,	-- Duke Hydraxis
 					coord = { 79.2, 73.6, AZSHARA },
+					timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
 					maps = { EASTERN_PLAGUELANDS },
 					lvl = 55,
 					groups = {
@@ -376,10 +382,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 					},
-				})),
-				q(6805, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- Stormers and Rumblers
+				}),
+				q(6805, {	-- Stormers and Rumblers
 					qg = 13278,	-- Duke Hydraxis
 					coord = { 79.2, 73.6, AZSHARA },
+					timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
 					maps = { SILITHUS },
 					lvl = 55,
 					groups = {
@@ -390,19 +397,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							provider = { "n", 11746 },	-- Desert Rumbler
 						}),
 					},
-				})),
-				q(7632, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- The Ancient Leaf
+				}),
+				q(7632, {	-- The Ancient Leaf
 					description = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
 					qg = 14524,	-- Vartrus the Ancient
 					coord = { 47.0, 24.48, FELWOOD },
+					timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
 					cost = { { "i", 18703, 1 } },	-- Ancient Petrified Leaf
 					classes = { HUNTER },
 					lvl = 60,
-				})),
-				q(6822, bubbleDown({ timeline = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- The Molten Core
+				}),
+				q(6822, {	-- The Molten Core
 					sourceQuest = 6821,	-- Eye of the Emberseer
 					qg = 13278,	-- Duke Hydraxis
 					coord = { 79.2, 73.6, AZSHARA },
+					timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
 					lvl = 55,
 					groups = {
 						objective(1, {	-- 0/1 Molten Giant slain
@@ -418,7 +427,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							provider = { "n", 12101 },	-- Lava Surger
 						}),
 					},
-				})),
+				}),
 			}),
 			n(REWARDS, {
 				i(17333, {	-- Aqual Quintessence

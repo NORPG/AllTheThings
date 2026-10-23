@@ -436,22 +436,24 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 				},
 			}),
 			------ 7.1.5 ------
-			q(46119, bubbleDownSelf({ timeline = { ADDED_7_1_5 } }, {	-- Boon of the Builder
+			q(46119, {	-- Boon of the Builder
 				sourceQuests = { 40882 },	-- Court of Stars: Revamping the Recoil
 				provider = { "n", 93539 },	-- Hobart Grapplehammer
 				coord = { 38.6, 25.0, LEGION_DALARAN },
+				timeline = { ADDED_7_1_5 },
 				groups = {
 					i(144328),	-- Boon of the Builder
 				},
-			})),
-			q(46128, bubbleDownSelf({ timeline = { ADDED_7_1_5 } }, {	-- Time for a Recharge
+			}),
+			q(46128, {	-- Time for a Recharge
 				sourceQuests = { 40864 },	-- Modular Modifications
 				provider = { "n", 93539 },	-- Hobart Grapplehammer
 				coord = { 38.6, 25.0, LEGION_DALARAN },
+				timeline = { ADDED_7_1_5 },
 				groups = {
 					r(235775),	-- Rechargeable Reaves Battery
 				},
-			})),
+			}),
 			------ 7.3.0 ------
 			q(48069, {	-- The Wrench Calls
 				sourceQuests = { 46941 },	-- The Path Forward
@@ -459,24 +461,26 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 				timeline = { ADDED_7_3_0 },
 				maps = { THE_VINDICAAR_EREDATH_LOWER },
 			}),
-			q(48056, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- A Harsh Mistress
+			q(48056, {	-- A Harsh Mistress
 				sourceQuests = { 48069 },	-- The Wrench Calls
 				provider = { "n", 93539 },	-- Hobart Grapplehammer
 				coord = { 38.6, 25.0, LEGION_DALARAN },
+				timeline = { ADDED_7_3_0 },
 				groups = {
 					r(247717),	-- Gravitational Reduction Slippers (RECIPE!)
 					i(151927),	-- Prototype Gravitational Reduction Slippers (QI!)
 				},
-			})),
-			q(48065, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Extraterrestrial Exploration
+			}),
+			q(48065, {	-- Extraterrestrial Exploration
 				sourceQuests = { 48069 },	-- The Wrench Calls
 				provider = { "n", 93520 },	-- Didi the Wrench
 				coord = { 38.8, 25.6, LEGION_DALARAN },
+				timeline = { ADDED_7_3_0 },
 				groups = {
 					r(247744),	-- Wormhole Generator: Argus (RECIPE!)
 					i(151926),	-- Ionized Geographical Recorder (QI!)
 				},
-			})),
+			}),
 		}),
 	}),
 	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
@@ -602,10 +606,11 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 					i(164773),	-- Gryzix's Decoder (QI!)
 				},
 			}),
-			q(53949, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- The Ub3r-Spanner [A]
+			q(53949, {	-- The Ub3r-Spanner [A]
 				sourceQuests = { 53948 },	-- Vengeful Venture [A]
 				provider = { "n", 136059 },	-- Layla Evenkeel
 				coord = { 77.4, 14.2, BORALUS },
+				timeline = { ADDED_8_1_5 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					r(282975),	-- The Ub3r-Spanner (RECIPE!)
@@ -613,11 +618,12 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 					r(283403),	-- Ub3r-Module: Ub3r-Improved Target Dummy (RECIPE!)
 					r(283401),	-- Ub3r-Module: Ub3r S3ntry Mk. X8.0 (RECIPE!)
 				},
-			})),
-			q(53937, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- The Ub3r-Spanner [H]
+			}),
+			q(53937, {	-- The Ub3r-Spanner [H]
 				sourceQuests = { 53833 },	-- Vengeful Venture [H]
 				provider = { "n", 131840 },	-- Shuga Blastcaps
 				coord = { 45.1, 40.6, DAZARALOR },
+				timeline = { ADDED_8_1_5 },
 				races = HORDE_ONLY,
 				groups = {
 					r(282975),	-- The Ub3r-Spanner (RECIPE!)
@@ -625,7 +631,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 					r(283403),	-- Ub3r-Module: Ub3r-Improved Target Dummy (RECIPE!)
 					r(283401),	-- Ub3r-Module: Ub3r S3ntry Mk. X8.0 (RECIPE!)
 				},
-			})),
+			}),
 		}),
 	})),
 	expansion(EXPANSION.SL, {

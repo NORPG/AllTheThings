@@ -763,9 +763,10 @@ root(ROOTS.Zones, {
 						qg = 18166,	-- Archmage Khadgar
 						coord = { 54.7, 44.3, SHATTRATH_CITY },
 					}),
-					q(44863, bubbleDownSelf({ timeline = { CREATED_7_0_3, ADDED_7_1_5 } }, {	-- Clearing the Air
+					q(44863, {	-- Clearing the Air
 						qg = 115546,	-- Lunelli
 						coord = { 64.1, 71.5, SHATTRATH_CITY },
+						timeline = { CREATED_7_0_3, ADDED_7_1_5 },
 						requireSkill = BLACKSMITHING,
 						groups = {
 							i(142279),	-- Plans: Windforged Rapier (RECIPE!)
@@ -775,7 +776,7 @@ root(ROOTS.Zones, {
 							i(142271),	-- Cardinal Storm Core (QI!)
 							i(142270),	-- Cardinal Wind Core (QI!)
 						},
-					})),
+					}),
 					applyclassicphase(TBC_PHASE_FIVE, q(11481, {	-- Crisis at the Sunwell
 						sourceQuest = 10551,	-- Allegiance to the Aldor
 						qg = 18537,	-- Adyen the Lightwarden

@@ -423,30 +423,32 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 					i(164985),	-- Durable Spider Silk (QI!)
 				},
 			}),
-			q(54000, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- The Beat Goes On
+			q(54000, {	-- The Beat Goes On
 				sourceQuests = { 53999 },	-- Exhumed
 				provider = { "n", 146093 },	-- Sef Iwen
 				coord = { 63.0, 59.4, DRUSTVAR },
+				timeline = { ADDED_8_1_5 },
 				groups = {
 					r(284415, {u=TRAINING}),	-- Enchant Runic Power Core
 					i(165023),	-- Runic Power Core (QI!)
 					i(165022),	-- Smooth River Stone (QI!)
 				},
-			})),
+			}),
 			q(54001, {	-- We're Going In
 				sourceQuests = { 54000 },	-- The Beat Goes On
 				provider = { "n", 146094 },	-- Sef Iwen
 				coord = { 58.9, 62.9, DRUSTVAR },
 				timeline = { ADDED_8_1_5 },
 			}),
-			q(54002, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {	-- Putting it All Togethereeee
+			q(54002, {	-- Putting it All Togethereeee
 				sourceQuests = { 54001 },	-- We're Going In
 				provider = { "n", 152255 },	-- Sef Iwen
 				coord = { 57.8, 80.8, DRUSTVAR },
+				timeline = { ADDED_8_1_5 },
 				groups = {
 					r(287494),	-- Iwen's Enchanting Rod
 				},
-			})),
+			}),
 		}),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {

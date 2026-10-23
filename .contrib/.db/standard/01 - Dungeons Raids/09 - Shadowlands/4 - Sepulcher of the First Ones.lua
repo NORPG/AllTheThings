@@ -964,14 +964,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				n(QUESTS, {
-					q(65717, bubbleDownSelf({	-- Final Shape
-						timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
-					},{
+					q(65717, {
 						provider = { "i", 190773 },	-- Carcinized Protoform
+						timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 						groups = {
 							i(190771),	-- Carcinized Zerethsteed (MOUNT!)
 						},
-					})),
+					}),
 				}),
 				BossOnly(VIGILANT_GUARDIAN),
 				BossOnly(SKOLEX_THE_INSATIABLE_RAVENER),

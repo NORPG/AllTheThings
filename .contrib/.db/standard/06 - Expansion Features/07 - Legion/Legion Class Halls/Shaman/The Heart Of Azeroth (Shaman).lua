@@ -765,14 +765,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						coord = { 30.4, 51.8, THE_HEART_OF_AZEROTH },
 						timeline = { ADDED_7_2_0 },
 					}),
-					q(46057, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Champion: Magatha Grimtotem
+					q(46057, {	-- Champion: Magatha Grimtotem
 						sourceQuests = { 46258 },	-- The Calm After the Storm
 						provider = { "n", 120245 },	-- Magatha Grimtotem <Elder Crone>
 						coord = { 34.2, 30.6, THE_HEART_OF_AZEROTH },
+						timeline = { ADDED_7_2_0 },
 						groups = {
 							follower(992),	-- Magatha Grimtotem
 						},
-					})),
+					}),
 					q(46791, {	-- Carried On the Wind
 						sourceQuests = {
 							47137,	-- Champions of Legionfall
@@ -784,15 +785,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						coord = { 44.6, 61.6, BROKEN_SHORE },
 						timeline = { ADDED_7_2_0 },
 					}),
-					q(46792, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Gathering of the Storms
+					q(46792, {	-- Gathering of the Storms
 						sourceQuests = { 46791 },	-- Carried On the Wind
 						provider = { "n", 106521 },	-- Consular Celestos
 						coord = { 28.4, 45.0, THE_HEART_OF_AZEROTH },
+						timeline = { ADDED_7_2_0 },
 						maps = { 857 },	-- Throne of the Four Winds (Scenario Map)
 						groups = {
 							mount(231442),	-- Farseer's Raging Tempest (MOUNT!)
 						},
-					})),
+					}),
 					-- Misc
 					q(43886, {	-- Speaking to the Wind
 						provider = { "n", 111739 },	-- Gorma Windspeaker

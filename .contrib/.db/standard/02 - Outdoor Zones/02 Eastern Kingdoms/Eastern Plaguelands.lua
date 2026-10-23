@@ -1244,14 +1244,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					}),
 					n(QUESTS, {
-						q(76268, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {	-- Corruptor's Scourgestones
+						q(76268, {	-- Corruptor's Scourgestones
 							qg = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 							coord = { 75.8, 53.8, EASTERN_PLAGUELANDS },
+							timeline = { ADDED_10_1_5 },
 							cost = { { "i", 206375, 1 } },	-- 1x Corruptor's Scourgestone
 							repeatable = true,
 							groups = { i(12844) },	-- Argent Dawn Valor Token
-						})),
-						q(76270, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {	-- Invader's Scourgestones
+						}),
+						q(76270, {	-- Invader's Scourgestones
 							qg = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 							coords = {
 								-- #if AFTER WRATH
@@ -1260,11 +1261,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 81.4, 59.8, EASTERN_PLAGUELANDS },
 								-- #endif
 							},
+							timeline = { ADDED_10_1_5 },
 							cost = { { "i", 206374, 10 } },	-- 10x Corruptor's Scourgestone
 							repeatable = true,
 							groups = { i(12844) },	-- Argent Dawn Valor Token
-						})),
-						q(77243, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {	-- Many Corruptor's Scourgestones
+						}),
+						q(77243, {	-- Many Corruptor's Scourgestones
 							qg = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 							coords = {
 								-- #if AFTER WRATH
@@ -1273,11 +1275,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 81.4, 59.8, EASTERN_PLAGUELANDS },
 								-- #endif
 							},
+							timeline = { ADDED_10_1_5 },
 							cost = { { "i", 206375, 5 } },	-- 5x Corruptor's Scourgestone
 							repeatable = true,
 							groups = { i(12844) },	-- Argent Dawn Valor Token
-						})),
-						q(77242, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {	-- Many Invader's Scourgestones
+						}),
+						q(77242, {	-- Many Invader's Scourgestones
 							qg = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 							coords = {
 								-- #if AFTER WRATH
@@ -1286,10 +1289,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 81.4, 59.8, EASTERN_PLAGUELANDS },
 								-- #endif
 							},
+							timeline = { ADDED_10_1_5 },
 							cost = { { "i", 206374, 50 } },	-- 50x Invader's Scourgestone
 							repeatable = true,
 							groups = { i(12844) },	-- Argent Dawn Valor Token
-						})),
+						}),
 					}),
 					n(VENDORS, {
 						n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>
