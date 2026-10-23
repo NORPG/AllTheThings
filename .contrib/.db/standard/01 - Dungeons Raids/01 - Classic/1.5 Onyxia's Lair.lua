@@ -236,19 +236,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					groups = { i(228695) },	-- A Dull and Flat Elven Blade
 				})),
 				-- #endif
-				q(7507, bubbleDown({ timeline = { REMOVED_3_3_0 } }, {	-- Nostro's Compendium
+				q(7507, {	-- Nostro's Compendium
 					description = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
 					provider = { "i", 18401 },	-- Nostro's Compendium of Dragon Slaying
-					-- #if SEASON_OF_DISCOVERY
-					timeline = { REMOVED_1_15_3 },
-					-- #endif
+					timeline = {
+						-- #if SEASON_OF_DISCOVERY
+						REMOVED_1_15_3,
+						-- #else
+						REMOVED_3_3_0,
+						-- #endif
+					},
 					maps = { DIRE_MAUL },
 					classes = { WARRIOR, PALADIN },
 					lvl = lvlsquish(60, 60, 30),
 					groups = { i(18513) },	-- A Dull and Flat Elven Blade
-				})),
+				}),
 				-- #if SEASON_OF_DISCOVERY
-				q(84546, bubbleDown({ timeline = REMOVED_WITH_CATA }, {	-- Stave of the Ancients
+				q(84546, {	-- Stave of the Ancients
 					description = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					sourceQuest = 7633,	-- An Introduction
 					qg = 14524,	-- Vartrus the Ancient
@@ -309,7 +313,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							classes = { HUNTER },
 						}),
 					},
-				})),
+				}),
 				-- #endif
 				q(7636, {	-- Stave of the Ancients
 					description = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
@@ -392,17 +396,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					lvl = lvlsquish(60, 60, 30),
 				})),
 				-- #endif
-				q(7508, bubbleDown({ timeline = { REMOVED_3_3_0 } }, {	-- The Forging of Quel'Serrar
+				q(7508, {	-- The Forging of Quel'Serrar
 					sourceQuest = 7507,	-- Nostro's Compendium
 					qs = 18513,	-- A Dull and Flat Elven Blade
-					-- #if SEASON_OF_DISCOVERY
-					timeline = { REMOVED_1_15_3 },
-					-- #endif
+					timeline = {
+						-- #if SEASON_OF_DISCOVERY
+						REMOVED_1_15_3,
+						-- #else
+						REMOVED_3_3_0,
+						-- #endif
+					},
 					maps = { DIRE_MAUL },
 					cr = 14368,	-- Lorekeeper Lydros
 					classes = { WARRIOR, PALADIN },
 					lvl = lvlsquish(60, 60, 30),
-				})),
+				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84557, {	-- The Forging of Quel'Serrar
 					sourceQuest = 84556,	-- The Forging of Quel'Serrar
@@ -432,12 +440,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				-- #endif
-				q(7509, bubbleDown({ timeline = { REMOVED_3_3_0 } }, {	-- The Forging of Quel'Serrar
+				q(7509, {	-- The Forging of Quel'Serrar
 					sourceQuest = 7508,	-- The Forging of Quel'Serrar
 					qg = 14368,	-- Lorekeeper Lydros
-					-- #if SEASON_OF_DISCOVERY
-					timeline = { REMOVED_1_15_3 },
-					-- #endif
+					timeline = {
+						-- #if SEASON_OF_DISCOVERY
+						REMOVED_1_15_3,
+						-- #else
+						REMOVED_3_3_0,
+						-- #endif
+					},
 					maps = { DIRE_MAUL },
 					classes = { WARRIOR, PALADIN },
 					lvl = lvlsquish(60, 60, 30),
@@ -462,7 +474,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 						i(18348),	-- Quel'Serrar
 					},
-				})),
+				}),
 				q(7497, {	-- The Journey Has Just Begun (A)
 					sourceQuests = {
 						7496,	-- Celebrating Good Times
