@@ -148,14 +148,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(231781),	-- Soul of Thunder
 				i(231779),	-- Wrath of Wray
 			}),
-			n(14435, bubbleDownSelf({ timeline = { REMOVED_1_15_4 } }, {	-- Prince Thunderaan <The Wind Seeker>
+			n(14435, {	-- Prince Thunderaan <The Wind Seeker>
 				sourceQuest = 7786,	-- Thunderaan the Windseeker
 				description = "This is a 40-man raid boss.",
 				-- #if ANYCLASSIC
 				modelScale = 20,
 				-- #endif
+				timeline = { REMOVED_1_15_4 },
 				groups = { i(19018) },	-- Dormant Wind Kissed Blade
-			})),
+			}),
 		},
 	})),
 }));

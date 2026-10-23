@@ -200,7 +200,8 @@ local CELESTIAL_TOKENS = {
 };
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, {
-	n(CELESTIAL_DUNGEON_DIFFICULTY, bubbleDownSelf({ timeline = { ADDED_5_5_0 } }, {
+	n(CELESTIAL_DUNGEON_DIFFICULTY, {
+		timeline = { ADDED_5_5_0 },
 		lvl = 90,
 		groups = {
 			n(ACHIEVEMENTS, {
@@ -1341,8 +1342,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						})),
 					}),
 				}),
-				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, n(258121,	-- Sendala the Timeless <August Stone Shard Exchange>
-					bubbleDownSelf({ timeline = { ADDED_5_5_3 } }, {
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, n(258121, {	-- Sendala the Timeless <August Stone Shard Exchange>
 					aqd = {
 						coord = { 42.6, 50.2, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
 						maps = { SHRINE_OF_SEVEN_STARS },
@@ -1351,6 +1351,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						coord = { 42.6, 84.4, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 						maps = { SHRINE_OF_TWO_MOONS },
 					},
+					timeline = { ADDED_5_5_3 },
 					groups = appendGroups(
 					{	-- Tier Tokens
 						shards(60, i(CELESTIAL_TOKENS.SEASON2.CONQUEROR.HELM)),
@@ -1721,9 +1722,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 							currency(395),	-- Justice Points
 						})),
 					}),
-				}))),
-				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, n(267317,	-- Celestial Harbinger <August Stone Cluster Exchange>
-					bubbleDownSelf({ timeline = { ADDED_5_5_4 } }, {
+				})),
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS, n(267317, {	-- Celestial Harbinger <August Stone Cluster Exchange>
 					aqd = {
 						coord = { 49.4, 75.2, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
 						maps = { SHRINE_OF_SEVEN_STARS, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
@@ -1732,6 +1732,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						coord = { 43.8, 42.4, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 						maps = { SHRINE_OF_TWO_MOONS, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					},
+					timeline = { ADDED_5_5_4 },
 					groups = appendGroups(
 					{	-- Tier Tokens
 						clusters(60, i(CELESTIAL_TOKENS.SEASON3.CONQUEROR.HELM)),
@@ -2134,9 +2135,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 							currency(395),	-- Justice Points
 						})),
 					}),
-				}))),
+				})),
 			}),
 		},
-	})),
+	}),
 })));
 -- #endif

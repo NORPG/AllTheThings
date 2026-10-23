@@ -154,12 +154,13 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 			n(VENDORS, {
 				timeline = { ADDED_10_0_5 },
 				groups = {
-					n(198831, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {	-- Bivogosa <Head Chef>
+					n(198831, {	-- Bivogosa <Head Chef>
 						coord = { 61.5, 53.3, THE_PRIMALIST_FUTURE },
+						timeline = { ADDED_10_0_2_LAUNCH },
 						groups = {
 							i(201047),	-- Arcanostabilized Provisions
 						},
-					})),
+					}),
 					n(199425, {	-- Brendormi <Field Primal Researcher>
 						coord = { 61.2, 46.8, THE_PRIMALIST_FUTURE },
 						groups = {
@@ -215,12 +216,13 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 							}),
 						},
 					}),
-					n(198827, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {	-- Sous Chef Durang
+					n(198827, {	-- Sous Chef Durang
 						coord = { 61.2, 52.8, THE_PRIMALIST_FUTURE },
+						timeline = { ADDED_10_0_2_LAUNCH },
 						groups = {
 							i(201813),	-- Spoiled Firewine
 						},
-					})),
+					}),
 					n(199541, {	-- Tarndormu <Temporal Squadron Commander>
 						description = "This Vendor is only visible during the Storm's Fury event.",
 						coord = { 60.8, 46.6, THE_PRIMALIST_FUTURE },

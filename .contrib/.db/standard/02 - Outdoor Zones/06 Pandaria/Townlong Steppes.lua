@@ -1375,16 +1375,17 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 					i(87222),	-- Big Bag of Linens
 				},
 			}),
-			n(66467, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {	-- G'nathus
+			n(66467, {	-- G'nathus
 				coords = {
 					{ 17.8, 11.6, TOWNLONG_STEPPES },
 					{ 20.4, 7.40, TOWNLONG_STEPPES },
 					{ 36.4, 7.80, TOWNLONG_STEPPES },
 				},
+				timeline = { ADDED_5_2_0 },
 				groups = {
 					i(94595),	-- Spawn of G'nathus (PET!)
 				},
-			})),
+			}),
 			n(66900, {	-- Huggalon the Heart Watcher
 				coord = { 65.6, 23.8, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
 				description = "Located in the catacombs.",

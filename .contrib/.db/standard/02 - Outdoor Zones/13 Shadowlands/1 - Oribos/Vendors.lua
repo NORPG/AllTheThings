@@ -191,8 +191,9 @@ maproot(SHADOWLANDS, ORIBOS, {
 					i(180136),	-- The Brokers Angle'r
 				},
 			}),
-			n(176197, bubbleDownSelf({ timeline = { ADDED_9_1_5 } }, {	-- Griftah <Amazing Amulets>
+			n(176197, {	-- Griftah <Amazing Amulets>
 				coord = { 51.0, 43.4, ORIBOS },
+				timeline = { ADDED_9_1_5 },
 				groups = {
 					i(188226),	-- Boots o' Maw Walkin
 					i(188224),	-- Darling Maldraxxi Doll
@@ -205,7 +206,7 @@ maproot(SHADOWLANDS, ORIBOS, {
 					i(188220),	-- Torghast Ash Globe
 					i(188225),	-- Worneblade
 				},
-			})),
+			}),
 			n(156769, {	-- Keeper Ta'hult <Pet Vendor>
 				coord = { 64.9, 67.3, ORIBOS },
 				groups = sharedData({ timeline = { ADDED_9_1_0 } }, {

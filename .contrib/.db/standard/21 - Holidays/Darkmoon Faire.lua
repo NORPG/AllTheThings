@@ -3011,7 +3011,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		-- #endif
 		-- #if AFTER 5.0.1.15799
 		n(RARES, {
-			n(58336, bubbleDownSelf({ timeline = { ADDED_5_0_4 }, }, {	-- Darkmoon Rabbit
+			n(58336, {	-- Darkmoon Rabbit
 				coord = { 75.69, 78.17, DARKMOON_ISLAND },
 				timeline = { ADDED_5_0_4 },
 				-- #if BEFORE 6.0.1
@@ -3021,14 +3021,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					ach(6332),	-- That Rabbit's Dynamite!
 					i(80008),	-- Darkmoon Rabbit (PET!)
 				},
-			})),
-			n(122899, bubbleDownSelf({ timeline = { ADDED_7_2_5 }, }, {	-- Death Metal Knight
+			}),
+			n(122899, {	-- Death Metal Knight
 				questID = 47767,
 				description = "Death Metal Knight can be killed every hour on the half-hour, but he will only drop his rare loot once per month per character.",
 				coords = {
 					{ 65.54, 68.29, DARKMOON_ISLAND },	-- Cave Entrance [Allows it to be shown on meta DMF map]
 					{ 41.43, 42.19, 408 },	-- Fight becomes active
 				},
+				timeline = { ADDED_7_2_5 },
 				isWeekly = true,
 				groups = {
 					ach(11918),	-- Hey, You're a Rockstar!
@@ -3058,9 +3059,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(151251),	-- Steel-Reinforced Cage Helm
 					i(151397),	-- Sweaty Wristbands
 				},
-			})),
-			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, n(71992, bubbleDownSelf({ timeline = { ADDED_5_4_0 }, }, {	-- Moonfang <Darkmoon Den Mother>
+			}),
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, n(71992, {	-- Moonfang <Darkmoon Den Mother>
 				coord = { 39.65, 44.07, DARKMOON_ISLAND },
+				timeline = { ADDED_5_4_0 },
 				groups = {
 					i(101570),	-- Moon Moon (PET!)
 					i(101571),	-- Moonfang Shroud (TOY!)
@@ -3068,9 +3070,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(105891),	-- Moonfang's Pelt
 					i(101675),	-- Shimmering Moonstone
 				},
-			}))),
-			n(204964, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {	-- Twinkle <Madam Shadow's Minion>
+			})),
+			n(204964, {	-- Twinkle <Madam Shadow's Minion>
 				questID = 77158,
+				timeline = { ADDED_10_1_5 },
 				isDaily = true,	-- maybe weekly/monthly?
 				sourceQuest = 76430,	-- Beginning Impositions
 				description = "Question Madam Shadow until you get punished.\n 1) Cast Corruption.\n 2) Cast Curse of Exhaustion\n 3) Cast Agony\n 4) Oh yeah, don't forget to RUN!\n\nNote: The QuestID on this NPC will become unobtainable after learning the Grimoire (if obtained elsewhere), though Party Sync can allow fighting the NPC again regardless.",
@@ -3081,7 +3084,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				groups = {
 					i(207294),	-- Grimoire of the Felfrost Imp (CI!)
 				},
-			})),
+			}),
 		}),
 		-- #endif
 		n(REWARDS, {
@@ -3223,9 +3226,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 		}),
 		n(VENDORS, {
-			n(55072, bubbleDownSelf({ timeline = { ADDED_4_3_0 }, }, {	-- Barum <Replica Armor Prizes>
+			n(55072, {	-- Barum <Replica Armor Prizes>
 				coord = { 47.5, 66.3, DARKMOON_ISLAND },
 				description = "This vendor sells additional ensembles which are only visible to those who completed the original T0.5 questline. If you do not see them, you don't meet the requirements, and they can no longer be unlocked as the questline was removed from the game.",
+				timeline = { ADDED_4_3_0 },
 				groups = {
 					clWithoutLock(WARRIOR, {	-- Battlegear of Valor
 						darkmoonprizeticket(55, i(78319)),	-- Replica Belt of Valor
@@ -3354,9 +3358,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						timeline = { ADDED_8_2_5, REMOVED_8_2_5 },
 					})),
 				},
-			})),
-			n(57983, bubbleDownSelf({ timeline = { ADDED_4_3_0 }, }, {	-- Baruma <Replica Armor Prizes>
+			}),
+			n(57983, {	-- Baruma <Replica Armor Prizes>
 				coord = { 47.6, 66.0, DARKMOON_ISLAND },
+				timeline = { ADDED_4_3_0 },
 				groups = {
 					clWithoutLock(WARRIOR, {	-- Battlegear of Heroism
 						darkmoonprizeticket(55, i(78333)),	-- Replica Belt of Heroism
@@ -3449,7 +3454,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78214)),	-- Replica Virtuous Skirt
 					}),
 				},
-			})),
+			}),
 			n(55278, {	-- Boomie Sparks <Fireworks>
 				coord = { 48.2, 71.9, DARKMOON_ISLAND },
 				timeline = { ADDED_4_3_0 },
@@ -4038,10 +4043,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 				},
 			}),
-			n(108785, bubbleDownSelf({ timeline = { ADDED_7_0_3 }, }, {	-- Scarlet Quartermaster
+			n(108785, {	-- Scarlet Quartermaster
 				description = "You must be wearing Tabard of the Scarlet Crusade in order to purchase items from the Scarlet Quartermaster. A tabard that has been transmogged will NOT work.",
 				provider = { "i", 23192 },	-- Tabard of the Scarlet Crusade
 				coord = { 58.2, 80.6, DARKMOON_ISLAND },
+				timeline = { ADDED_7_0_3 },
 				groups = {
 					i(138429, {	-- Cropped Tabard of the Scarlet Crusade
 						cost = 250000000,	-- 25,000g
@@ -4053,7 +4059,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						cost = 100000000,	-- 10,000g
 					}),	-- No questid attached to this ensemble
 				},
-			})),
+			}),
 			n(14845, {	-- Stamp Thunderhorn <Food Vendor>
 				-- #if AFTER 4.3.0
 				coord = { 52.8, 67.9, DARKMOON_ISLAND },

@@ -92,19 +92,18 @@ maproot(BROKEN_ISLES, AZSUNA, {
 			coord = { 58.9, 76.6, AZSUNA },
 			isDaily = IGNORED_VALUE,
 		}),
-		n(107266, bubbleDownSelf({	-- Commander Soraax
+		n(107266, {
+			questID = 44673,
+			coord = { 27.8, 51.0, AZSUNA },
 			timeline = {
 				ADDED_8_0_1,
 				REMOVED_8_3_0,	-- as of 8.3, no sign of him or his world quest for a very long time
 				ADDED_9_2_0,	-- confirmed on 2022-04-02
 			},
-		},{
-			questID = 44673,
-			coord = { 27.8, 51.0, AZSUNA },
 			groups = {
 				i(141871),	-- Soraax's Gauntlets of Command
 			},
-		})),
+		}),
 		n(90057, {	-- Daggerbeak
 			questID = 37869,
 			coord = { 51.1, 31.6, AZSUNA },

@@ -173,17 +173,18 @@ maproot(ZANDALAR, ZULDAZAR, {
 					}),
 				},
 			}),
-			n(149147, bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {	-- N'chala the Egg Thief
+			n(149147, {	-- N'chala the Egg Thief
 				description = "N'chala pats between the coordinates.",
 				questID = 54770,	-- needs confirmation, but this was the last questID printed after I killed it
 				coords = {
 					{ 69.2, 35.2, ZULDAZAR },
 					{ 69.4, 38.6, ZULDAZAR },
 				},
+				timeline = { ADDED_8_1_0 },
 				groups = {
 					i(166345),	-- Dasher (PET!)
 				},
-			})),
+			}),
 			n(136413, {	-- Syrawon the Dominus
 				questID = 51080,
 				isYearly = true,	-- Resets randomly, might be yearly.	-- Gold October 2022

@@ -25,13 +25,14 @@ maproot(SHADOWLANDS, BASTION, {
 					i(180797),	-- Memorial Offering Key
 				},
 			}),
-			n(181682, bubbleDownSelf({ timeline = { ADDED_9_1_5 } }, {	-- Lost Soul (Otter)
+			n(181682, {	-- Lost Soul (Otter)
 				description = "Use /hug on the Lost Soul. It has roughly a 60 minute respawn.",
 				coord = { 49.85, 46.85, BASTION },
+				timeline = { ADDED_9_1_5 },
 				groups = {
 					i(187818),	-- Otter Soul
 				},
-			})),
+			}),
 			i(180285, {	-- Steward's Golden Key
 				coords = {
 					{ 53.5, 85.5, BASTION },	-- Alexandros

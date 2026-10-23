@@ -73,42 +73,42 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 			n(RARES, sharedData({
 				isDaily = true,
 			},{
-				n(201553,	-- Grand Artificer Zeerak
-				bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+				n(201553, {	-- Grand Artificer Zeerak
 					coord = { 47.5, 23.6, THE_AZURE_SPAN },
 					questID = 74545,
+					timeline = { ADDED_10_0_5 },
 					groups = {
 						bo(74457, true),
 						i(203664),	-- Wild Magic Insulating Bands
 					},
-				})),
-				n(201561,	-- Motivator Krathos
-				bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+				}),
+				n(201561, {	-- Motivator Krathos
 					coord = { 43.9, 30.9, THE_AZURE_SPAN },
 					questID = 74544,
+					timeline = { ADDED_10_0_5 },
 					groups = {
 						bo(74456, true),
 						i(203675),	-- Legplates of the Brutal Motivator
 					},
-				})),
-				n(201555,	-- Srivantor
-				bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+				}),
+				n(201555, {	-- Srivantor
 					coord = { 47.0, 22.0, THE_AZURE_SPAN },
 					questID = 74543,
+					timeline = { ADDED_10_0_5 },
 					groups = {
 						bo(74458, true),
 						i(203663),	-- Cinch of the Sundered Flame
 					},
-				})),
-				n(201554,	-- Unstable Arcanogolem
-				bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+				}),
+				n(201554, {	-- Unstable Arcanogolem
 					coord = { 47.0, 25.3, THE_AZURE_SPAN },
 					questID = 74536,
+					timeline = { ADDED_10_0_5 },
 					groups = {
 						bo(74455, true),
 						i(203662),	-- Arcanogolem Crystalblade
 					},
-				})),
+				}),
 			})),
 			n(VENDORS, {
 				n(194832, {	-- Meiz <Quartermaster>

@@ -1782,8 +1782,9 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(210537, bubbleDownSelf({ timeline = { REMOVED_2_0_1 } }, {	-- Undying Laborer
+			applyclassicphase(SOD_PHASE_ONE, n(210537, {	-- Undying Laborer
 				coord = { 31.8, 43.5, WESTFALL },
+				timeline = { REMOVED_2_0_1 },
 				groups = {
 					i(208849, {	-- Libram of Blessings
 						classes = { PALADIN },
@@ -1798,7 +1799,7 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 						},
 					}),
 				},
-			}))),
+			})),
 			-- #endif
 			n(462, {	-- Vultros
 				coords = {

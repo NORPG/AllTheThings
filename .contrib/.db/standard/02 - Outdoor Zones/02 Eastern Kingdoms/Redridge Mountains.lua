@@ -1677,14 +1677,15 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 				},
 			})),
 			-- #endif
-			n(147222, bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {	-- Gnollfeaster
+			n(147222, {	-- Gnollfeaster
 				coord = { 24.4, 70.9, REDRIDGE_MOUNTAINS },
 				questID = 54214,
+				timeline = { ADDED_8_1_0 },
 				isDaily = true,
 				groups = {
 					i(165722),	-- Redridge Tarantula (PET!)
 				},
-			})),
+			}),
 			n(584, {	-- Kazon
 				coords = {
 					-- #if AFTER CATA

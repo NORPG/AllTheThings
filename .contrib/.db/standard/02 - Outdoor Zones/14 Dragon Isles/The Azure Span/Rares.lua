@@ -55,7 +55,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 				questID = 72836,
 				isDaily = IGNORED_VALUE,
 			}),
-			n(193157, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_5, ADDED_11_0_7 } }, {	-- Dragonhunter Gorund
+			n(193157, {	-- Dragonhunter Gorund
 				coords = {
 					-- #if AFTER 11.0.7
 					{ 24.5, 47.3, THE_AZURE_SPAN },
@@ -64,10 +64,11 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 					-- #endif
 				},
 				questID = 73873,
+				timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_5, ADDED_11_0_7 },
 				groups = {
 					i(200302),	-- Magmaforged Scimitar
 				},
-			})),
+			}),
 			n(193691, {	-- Fisherman Tinnak <Angered Ghost>
 				minReputation = { FACTION_ISKAARA_TUSKARR, 7 },
 				description = "Collect the Broken Fishing Pole, Torn Fishing Net and Old Harpoon around to summon him.\n\nRewards you with 950 Reputation if you are summoner or 60 Reputation with a normal tag.",
@@ -96,15 +97,15 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 				coord = { 14.1, 37.5, THE_AZURE_SPAN },
 				questID = 73996,
 			}),
-			n(201557,	-- Graniteclaw
-			bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+			n(201557, {	-- Graniteclaw
 				coord = { 57.9, 68.5, THE_AZURE_SPAN },
 				questID = 74532,
+				timeline = { ADDED_10_0_5 },
 				groups = {
 					bo(74459, true),
 					i(203658),	-- Graniteclaw's Vest
 				},
-			})),
+			}),
 			-- n(193251),	-- Gruffy // under DF/Timed Based Rare
 			-- n(193269),	-- Grumbletrunk // under DF/Timed Based Rare
 			n(197356, {	-- High Shaman Rotknuckle
@@ -118,15 +119,15 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 					i(200157),	-- Pathmaker
 				},
 			}),
-			n(201558,	-- Malgain Rockknell
-			bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+			n(201558, {	-- Malgain Rockknell
 				coord = { 56.0, 67.6, THE_AZURE_SPAN },
 				questID = 74531,
+				timeline = { ADDED_10_0_5 },
 				groups = {
 					bo(74461, true),
 					i(203660),	-- Rockknell's Groundpounders
 				},
-			})),
+			}),
 			n(198004, {	-- Mange the Outcast
 				coord = { 40.4, 48.4, THE_AZURE_SPAN },
 				questID = 73884,
@@ -155,15 +156,15 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 				questID = 72846,
 				isDaily = IGNORED_VALUE,
 			}),
-			n(201559,	-- Shiobhan Waterborn
-			bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+			n(201559, {	-- Shiobhan Waterborn
 				coord = { 60.0, 68.0, THE_AZURE_SPAN },
 				questID = 74533,
+				timeline = { ADDED_10_0_5 },
 				groups = {
 					bo(74462, true),
 					i(203661),	-- Watercaller's Mantle
 				},
-			})),
+			}),
 			-- n(193149),	-- Skag the Thrower // under DF/Timed Based Rare
 			n(197344, {	-- Snarglebone
 				coord = { 11.1, 32.2, THE_AZURE_SPAN },
@@ -219,15 +220,15 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 					i(201728),	-- Vakril's Strongbox
 				},
 			}),
-			n(201556,	-- Waterpots
-			bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+			n(201556, {	-- Waterpots
 				coord = { 57.2, 64.6, THE_AZURE_SPAN },
 				questID = 74535,
+				timeline = { ADDED_10_0_5 },
 				groups = {
 					bo(74460, true),
 					i(203659),	-- Waterpot's Halfpot Deflector
 				},
-			})),
+			}),
 			n(193632, {	-- Wilrive
 				coord = { 59.4, 55.2, THE_AZURE_SPAN },
 				questID = 73900,

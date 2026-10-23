@@ -2219,12 +2219,13 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					groups = TIER_FIVE_GROUPS,
 				}),
-				n(23699, bubbleDownSelf({ timeline = { ADDED_2_2_0 } }, {	-- Kevin Browning <Coffee Aficionado>
+				n(23699, {	-- Kevin Browning <Coffee Aficionado>
 					coord = { 70.6, 51.8, SHATTRATH_CITY },
+					timeline = { ADDED_2_2_0 },
 					groups = {
 						i(33042),	-- Black Coffee
 					},
-				})),
+				}),
 				n(33637, {	-- Kirembri Silvermane <Jewelcrafting Trainer>
 					coord = { 58.6, 75.2, SHATTRATH_CITY },
 					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.

@@ -4664,18 +4664,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			timeline = { ADDED_4_2_2 },
 			races = ALLIANCE_ONLY,
 		}),
-		n(164966, bubbleDownSelf({timeline = { ADDED_9_1_0 }},{	-- Temel <The Party Herald> (with a hat)
+		n(164966, {	-- Temel <The Party Herald> (with a hat)
 			coords = {
 				{ 28.0, 43.0, REVENDRETH },	-- with hat, outside Sinfall
 				{ 58.8, 80.0, SINFALL_REACHES },	-- without hat
 			},
 			crs = { 172531 },	-- Temel <The Party Herald> (with no hat - combining these because they sell the same stuff)
+			timeline = { ADDED_9_1_0 },
 			groups = {
 				i(187133, {	-- Bewitching Little Hat
 					cost = { { "c", 1820, 25 } },	-- 25x Infused Ruby
 				}),
 			},
-		})),
+		}),
 		n(252232, {	-- Tricky Treat Trader <Candy Crew>
 			description = "The exhange rate of candy to Tricky Treats changes daily and varies between neighborhoods.",
 			coords = {

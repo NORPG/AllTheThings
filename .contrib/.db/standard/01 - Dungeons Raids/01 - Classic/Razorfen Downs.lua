@@ -353,8 +353,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(202249),	-- Recipe: Goldthorn Tea (RECIPE!)
 				},
 			}),
-			n(8696, bubbleDownSelf({ timeline = { REMOVED_6_0_2 } }, {	-- Henry Stern
+			n(8696, {	-- Henry Stern
 				description = "The only source of acquiring Goldthorn Tea.",
+				timeline = { REMOVED_6_0_2 },
 				groups = {
 					recipe(13028, {	-- Goldthorn Tea
 						-- #if AFTER 6.0.2
@@ -362,7 +363,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 				},
-			})),
+			}),
 			n(75813, {	-- Sah'rhee
 				description =
 					-- #if AFTER 8.3.0

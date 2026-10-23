@@ -57,8 +57,9 @@ maproot(KUL_TIRAS, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 				races = ALLIANCE_ONLY,
 				groups = COMMON_BFA_PVP_RECIPES_S4,
 			}),
-			n(148922, bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {	-- Captain Klarisa
+			n(148922, {	-- Captain Klarisa
 				coord = { 66.0, 32.2, BORALUS },
+				timeline = { ADDED_8_1_0 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(166491, {	-- Albino Duskwatcher (PET!)
@@ -134,7 +135,7 @@ maproot(KUL_TIRAS, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 						cost = { { "c", 1710, 100 } },	-- 100x Seaferer's Dubloon
 					}),
 				},
-			})),
+			}),
 			n(161091, {	-- Captain Nightrunner
 				coord = { 66.2, 32.1, BORALUS },
 				races = ALLIANCE_ONLY,
@@ -611,8 +612,9 @@ maproot(KUL_TIRAS, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 					},
 				}),
 			}),
-			n(148927, bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {	-- Provisioner Stoutforge
+			n(148927, {	-- Provisioner Stoutforge
 				coord = { 66.8, 25.7, BORALUS },
+				timeline = { ADDED_8_1_0 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(166465, {	-- Azureshell Krolusk (MOUNT!)
@@ -658,7 +660,7 @@ maproot(KUL_TIRAS, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 						cost = { { "c", 1717, 50 } },	-- 50x Legion Service Medal
 					}),
 				},
-			})),
+			}),
 			n(130368, {	-- Samuel D. Colton III <Jewelcrafting Trainer>
 				coord = { 75.0, 10.0, BORALUS },
 				races = ALLIANCE_ONLY,

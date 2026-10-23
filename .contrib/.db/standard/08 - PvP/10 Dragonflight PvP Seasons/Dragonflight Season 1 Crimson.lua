@@ -153,8 +153,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 					})),
 				}),
 			}),
-			n(213989, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Warkeeper Gresh
+			n(213989, {	-- Warkeeper Gresh
 				coord = { 43.1, 42.4, VALDRAKKEN },
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					-- #if BEFORE TWW
 					bloody(500, iensemble(211148)),	-- Arsenal: Drakebreaker's Axe
@@ -175,7 +176,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 					bloody(3000, iensemble(211100)),	-- Ensemble: Drakebreaker's Plate Armor
 					-- #endif
 				},
-			})),
+			}),
 		}),
 		n(PVP_ASPIRANT, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_11_0_5 } }, {
 			n(199601, {	-- Seltherex

@@ -310,10 +310,11 @@ root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.WOD, {
 		n(GARRISONS, sharedData({maps = { LUNARFALL, FROSTWALL } },	{
 			n(VENDORS, {
-				n(90894, bubbleDownSelf({timeline = { ADDED_6_1_0 } }, {	-- Alexi Hackercam <Ore Trader>
+				n(90894, {	-- Alexi Hackercam <Ore Trader>
+					timeline = { ADDED_6_1_0 },
 					races = ALLIANCE_ONLY,
 					groups = ORE_TRADER,
-				})),
+				}),
 				n(80159, {	-- Arsenio Zerep <Cook>
 					races = ALLIANCE_ONLY,
 					groups = COOK_TRADER,
@@ -324,10 +325,11 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					i(119212),	-- Winning Hand (TOY!)
 				}),
-				n(91034, bubbleDownSelf({timeline = { ADDED_6_1_0 } }, {	-- Calvo Klyne <Fur Trader>
+				n(91034, {	-- Calvo Klyne <Fur Trader>
+					timeline = { ADDED_6_1_0 },
 					races = HORDE_ONLY,
 					groups = FUR_TRADER,
-				})),
+				}),
 				n(88633, {	-- Deluwin Whisperfield <Contracts>
 					description = "Sells contracts for followers not chosen during zone quests.",
 					races = ALLIANCE_ONLY,
@@ -381,14 +383,16 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					},
 				}),
-				n(91025, bubbleDownSelf({timeline = { ADDED_6_1_0 } }, {	-- Dorothy "Two" <Fur Trader>
+				n(91025, {	-- Dorothy "Two" <Fur Trader>
+					timeline = { ADDED_6_1_0 },
 					races = ALLIANCE_ONLY,
 					groups = FUR_TRADER,
-				})),
-				n(91020, bubbleDownSelf({timeline = { ADDED_6_1_0 } }, {	-- Enchantress Ismae <Dust Trader>
+				}),
+				n(91020, {	-- Enchantress Ismae <Dust Trader>
+					timeline = { ADDED_6_1_0 },
 					races = ALLIANCE_ONLY,
 					groups = DUST_TRADER,
-				})),
+				}),
 				n(80285, {	-- Guh <Bladespire Trader>
 					description = "Must speak to him in |cFFFFD700Frostfire Ridge|r to invite him to your garrison.",
 					groups = {
@@ -397,10 +401,11 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					},
 				}),
-				n(91024, bubbleDownSelf({timeline = { ADDED_6_1_0 } }, {	-- Jake the Fox <Leather Trader>
+				n(91024, {	-- Jake the Fox <Leather Trader>
+					timeline = { ADDED_6_1_0 },
 					races = ALLIANCE_ONLY,
 					groups = LEATHER_TRADER,
-				})),
+				}),
 				n(76928, {	-- Kraank <Food & Drink>
 					races = HORDE_ONLY,
 					groups = COOK_TRADER,
@@ -458,14 +463,16 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					},
 				}),
-				n(91031, bubbleDownSelf({timeline = { ADDED_6_1_0 } }, {	-- Nicholas Mitrik <Herb Trader>
+				n(91031, {	-- Nicholas Mitrik <Herb Trader>
+					timeline = { ADDED_6_1_0 },
 					races = HORDE_ONLY,
 					groups = HERB_TRADER,
-				})),
-				n(91029, bubbleDownSelf({timeline = { ADDED_6_1_0 } }, {	-- Rath'thul Moonvale <Dust Trader>
+				}),
+				n(91029, {	-- Rath'thul Moonvale <Dust Trader>
+					timeline = { ADDED_6_1_0 },
 					races = HORDE_ONLY,
 					groups = DUST_TRADER,
-				})),
+				}),
 				n(79619, {	-- Rezlak <Blueprints Vendor>
 					races = HORDE_ONLY,
 					groups = {
@@ -578,10 +585,11 @@ root(ROOTS.ExpansionFeatures,
 						i(116186,{sourceAchievement=9129}),	-- War Mill, Level 3
 					},
 				}),
-				n(91404, bubbleDownSelf({timeline = { ADDED_6_1_0 } }, {	-- Samantha Scarlet <Herb Trader>
+				n(91404, {	-- Samantha Scarlet <Herb Trader>
+					timeline = { ADDED_6_1_0 },
 					races = ALLIANCE_ONLY,
 					groups = HERB_TRADER,
-				})),
+				}),
 				n(78564, {	-- Sergeant Crowler <Garrison Quartermaster> LVL3
 					cr = 88223,	-- LVL1 and LVL2 Quartermaster
 					races = ALLIANCE_ONLY,
@@ -975,14 +983,16 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					},
 				}),
-				n(91030, bubbleDownSelf({timeline = { ADDED_6_1_0 } }, {	-- Trixxy Volt <Ore Trader>
+				n(91030, {	-- Trixxy Volt <Ore Trader>
+					timeline = { ADDED_6_1_0 },
 					races = HORDE_ONLY,
 					groups = ORE_TRADER,
-				})),
-				n(91033, bubbleDownSelf({timeline = { ADDED_6_1_0 } }, {	-- Zeezu <Leather Trader>
+				}),
+				n(91033, {	-- Zeezu <Leather Trader>
+					timeline = { ADDED_6_1_0 },
 					races = HORDE_ONLY,
 					groups = LEATHER_TRADER,
-				})),
+				}),
 			}),
 		})),
 	})

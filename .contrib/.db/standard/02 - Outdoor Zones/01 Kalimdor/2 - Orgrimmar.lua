@@ -450,11 +450,12 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				}),
 			}),
 			prof(COOKING, {
-				n(3399, bubbleDownSelf({ timeline = { ADDED_1_11_1 }, }, {	-- Zamja <Cooking Trainer>
+				n(3399, {	-- Zamja <Cooking Trainer>
 					coord = { 32.2, 69.6, ORGRIMMAR },
+					timeline = { ADDED_1_11_1 },
 					races = HORDE_ONLY,
 					groups = CLASSIC_CATA_COOKING,
-				})),
+				}),
 			}),
 			prof(ENCHANTING, {
 				n(3345, {	-- Godan <Enchanting Trainer>
@@ -471,21 +472,24 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				}),
 			}),
 			prof(FIRST_AID, {
-				n(3373, bubbleDownSelf({ timeline = { REMOVED_4_0_3 } }, {	-- Arnok <First Aid Trainer>
+				n(3373, {	-- Arnok <First Aid Trainer>
 					coord = { 34.0, 84.4, ORGRIMMAR },
+					timeline = { REMOVED_4_0_3 },
 					races = HORDE_ONLY,
 					groups = CLASSIC_FIRST_AID,
-				})),
-				n(45540, bubbleDownSelf({ timeline = { ADDED_4_0_3, REMOVED_7_3_5 } }, {	-- Krenk Choplimb <Bandage Trainer>
+				}),
+				n(45540, {	-- Krenk Choplimb <Bandage Trainer>
 					coord = { 37.6, 87.2, ORGRIMMAR },
+					timeline = { ADDED_4_0_3, REMOVED_7_3_5 },
 					races = HORDE_ONLY,
 					groups = CLASSIC_CATA_FIRST_AID
-				})),
-				n(133109, bubbleDownSelf({ timeline = { ADDED_7_3_5 } }, {	-- Mender Jessara <Bandage Trainer>
+				}),
+				n(133109, {	-- Mender Jessara <Bandage Trainer>
 					coord = { 38.2, 86.6, ORGRIMMAR },
+					timeline = { ADDED_7_3_5 },
 					races = HORDE_ONLY,
 					groups = CLASSIC_CATA_FIRST_AID,
-				})),
+				}),
 			}),
 			prof(FISHING, {
 				n(3332, {	-- Lumak <Fishing Trainer>
@@ -2682,8 +2686,9 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					i(3421),	-- Simple Wildflowers
 				},
 			}),
-			n(179897, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {	-- Ca'nees
+			n(179897, {	-- Ca'nees
 				coord = { 40.0, 61.0, ORGRIMMAR },
+				timeline = { ADDED_9_1_0 },
 				races = HORDE_ONLY,
 				groups = {
 					i(187009),	-- Dazzling Spectacles
@@ -2692,7 +2697,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					i(186090),	-- Simple Glasses
 					i(187010),	-- Tasteful Eyeglasses
 				},
-			})),
+			}),
 			n(50477, {	-- Champion Uru'zin <Darkspear Quartermaster>
 				coord = { 49.9, 58.1, ORGRIMMAR },
 				timeline = { ADDED_4_0_3 },
@@ -4475,9 +4480,10 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					-- #endif
 				},
 			}),
-			n(169166, bubbleDownSelf({ timeline = { ADDED_9_0_1 } }, {	-- Provisioner Jin'hake
+			n(169166, {	-- Provisioner Jin'hake
 				description = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
 				coord = { 72.6, 44.6, ORGRIMMAR },
+				timeline = { ADDED_9_0_1 },
 				races = HORDE_ONLY,
 				groups = {
 					i(175161),	-- Expeditionary Axe
@@ -4488,7 +4494,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					i(175163),	-- Expeditionary Quarterstaff
 					i(175164),	-- Expeditionary Staff
 				},
-			})),
+			}),
 			n(46359, {	-- Punra <Blacksmithing Supplies>
 				coord = { 45.0, 77.6, ORGRIMMAR },
 				timeline = { ADDED_4_0_1 },
@@ -5162,7 +5168,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					i(285),	-- Scalemail Vest
 				},
 			}),
-			n(66022, bubbleDownSelf({ timeline = { ADDED_5_0_4 }, }, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
+			n(66022, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
 				coord = { 69.8, 41.0, ORGRIMMAR },
 				-- Available to Huojin Pandaren without faction requirements.
 				minReputation = { FACTION_HUOJIN_PANDAREN, EXALTED },	-- Huojin Pandaren, Exalted.
@@ -5172,6 +5178,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					end
 					return t;
 				end]],
+				timeline = { ADDED_5_0_4 },
 				races = HORDE_ONLY,
 				groups = {
 					i(91008, {	-- Black Dragon Turtle (MOUNT!) (PANDA)
@@ -5247,7 +5254,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 						races = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
 				},
-			})),
+			}),
 			n(3314, {	-- Urtharo <Weapon Merchant>
 				coords = {
 					-- #if AFTER CATA

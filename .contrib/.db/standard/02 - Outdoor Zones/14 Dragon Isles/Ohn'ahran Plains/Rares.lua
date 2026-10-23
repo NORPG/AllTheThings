@@ -25,15 +25,15 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 					bo(73869, true),
 				},
 			}),
-			n(201535,	-- Bloodbeak the Ravenous
-			bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+			n(201535, {	-- Bloodbeak the Ravenous
 				coord = { 37.3, 38.5, OHNAHRAN_PLAINS },
 				questID = 74552,
+				timeline = { ADDED_10_0_5 },
 				groups = {
 					bo(74467, true),
 					i(203673),	-- Bloodbeak's Ravenor
 				},
-			})),
+			}),
 			n(195186, {	-- Cinta the Forgotten
 				description = "Only spawns if the Aylaag Camp is stationed west.",
 				coord = { 31.3, 76.0, OHNAHRAN_PLAINS },
@@ -65,15 +65,15 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 				},
 			}),
 			-- n(193170),	-- Fulgurb // under DF/Timed Based Rare
-			n(201537,	-- Groffnar
-			bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+			n(201537, {	-- Groffnar
 				coord = { 35.0, 41.1, OHNAHRAN_PLAINS },
 				questID = 74549,
+				timeline = { ADDED_10_0_5 },
 				groups = {
 					bo(74463, true),
 					i(203671),	-- Pack Leader's Pelt
 				},
-			})),
+			}),
 			n(187781, {	-- Hamett <Rockfang Matriarch>
 				description = "Only available if the Aylaag Camp is stationed north.\nChance to spawn upon killing Sutaan.",
 				coord = { 85.4, 15.8, OHNAHRAN_PLAINS },
@@ -84,15 +84,15 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 				coord = { 80.5, 42.2, OHNAHRAN_PLAINS },
 				questID = 73966,
 			}),
-			n(201538,	-- Huntmaster Yrgena
-			bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+			n(201538, {	-- Huntmaster Yrgena
 				coord = { 33.5, 38.7, OHNAHRAN_PLAINS },
 				questID = 74548,
+				timeline = { ADDED_10_0_5 },
 				groups = {
 					bo(74466, true),
 					i(203672),	-- Master Huntmaster's Wristguards
 				},
-			})),
+			}),
 			n(188124, {	-- Irontree
 				description = "Only spawns if the Aylaag Camp is stationed north.\nCave Entrance: 79.2, 36.6.",
 				coords = {
@@ -109,15 +109,15 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 				coord = { 87.4, 61.4, OHNAHRAN_PLAINS },
 				questID = 73882,
 			}),
-			n(201540,	-- Lurgan
-			bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+			n(201540, {	-- Lurgan
 				coord = { 33.7, 34.8, OHNAHRAN_PLAINS },
 				questID = 74546,
+				timeline = { ADDED_10_0_5 },
 				groups = {
 					bo(74464, true),
 					i(203674),	-- Brutal Tramplers
 				},
-			})),
+			}),
 			n(195409, {	-- Makhra the Ashtouched <Corrupted Child of Ohn'ahra>
 				description = "Only spawns if the Aylaag Camp is stationed west.",
 				coord = { 32.7, 38.1, OHNAHRAN_PLAINS },
@@ -242,16 +242,16 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 				},
 			}),
 			-- n(193123),	-- Steamgill // under DF/Timed Based Rare
-			n(201539,	-- Stormcaller Narkena
-			bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+			n(201539, {	-- Stormcaller Narkena
 				coord = { 32.5, 42.3, OHNAHRAN_PLAINS },
 				questID = 74547,
+				timeline = { ADDED_10_0_5 },
 				groups = {
 					bo(74465, true),
 					i(203676),	-- Stormcaller's Grounding Shoes
 					i(197367),	-- Renewed Proto-Drake: Gray Hair (MM!)
 				},
-			})),
+			}),
 			n(191842, {	-- Sulfurion
 				description = "Only spawns if the Aylaag Camp is stationed at the south east.",
 				coord = { 78.3, 83.0, OHNAHRAN_PLAINS },
@@ -310,15 +310,15 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 				coord = { 84.2, 47.8, OHNAHRAN_PLAINS },
 				questID = 73979,
 			}),
-			n(192045,	-- Windseeker Avash
-			bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+			n(192045, {	-- Windseeker Avash
 				coord = { 58.6, 68.2, OHNAHRAN_PLAINS },
 				questID = 74088,
+				timeline = { ADDED_10_0_5 },
 				groups = {
 					bo(74440, true),
 					i(200141),	-- Wind Generating Band
 				},
-			})),
+			}),
 			n(193209, {	-- Zenet Avis <The Hard Wind>
 				coord = { 31.5, 64.0, OHNAHRAN_PLAINS },
 				questID = 73901,

@@ -340,8 +340,9 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 						})),
 					},
 				}),
-				n(213989, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Warkeeper Gresh
+				n(213989, {	-- Warkeeper Gresh
 					coord = { 43.1, 42.4, VALDRAKKEN },
+					timeline = { ADDED_10_2_0 },
 					groups = {
 						bloody(1500, i(202021)),	-- Breaker's Flag of Victory (TOY!)
 						bloody(100, i(206144, {		-- Curious Primordial Fungus
@@ -377,7 +378,7 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 							timeline = { ADDED_10_2_0, REMOVED_11_0_0 },
 						})),
 					},
-				})),
+				}),
 			}),
 		})),
 	},

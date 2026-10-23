@@ -29,13 +29,14 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 					{ "i", 183113, 1 },	-- 1x Flexing Phalanges
 				},
 			}),
-			n(182105, bubbleDownSelf({ timeline = { ADDED_9_1_5 } }, {	-- Mysterious Trashpile
+			n(182105, {	-- Mysterious Trashpile
 				description = "Use /bow on the Mysterious Trashpile. (Cave Entrance is 44.59, 65.48).",
 				coord = { 44.84, 67.89, MALDRAXXUS },
+				timeline = { ADDED_9_1_5 },
 				groups = {
 					i(187878),	-- Saurid Soul (SS!)
 				},
-			})),
+			}),
 		}),
 	},
 });

@@ -100,7 +100,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 					i(186223),	-- Coif of the Molten Terror
 				},
 			}),
-			n(180246, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {	-- Carriage Crusher
+			n(180246, {	-- Carriage Crusher
 				description = "The Assault Supply Carriage starts in Korthia, moves to the northeastern bridge out of the Beastwarrens, and then finishes its supply run to the current covenant assault.\n\nWhen the carriage makes it to the bridge, the Carriage Crusher spawns. You can hop into the carriage to heal it and yourself.",
 				crs = {
 					180182,	-- Assault Supply Carriage
@@ -108,12 +108,13 @@ maproot(SHADOWLANDS, THE_MAW, {
 				},
 				coord = { 45.5, 54.8, THE_MAW },
 				questID = 64258,	-- and 64439, both of which also triggered on my first Traitor Balthier kill.
+				timeline = { ADDED_9_1_0 },
 				maps = { KORTHIA },	-- show in Korthia as well since it spawns there
 				groups = {
 					i(187370),	-- Carriage Crusher's Padded Slippers
 					i(187399),	-- Maw Construct's Shoulderguards
 				},
-			})),
+			}),
 			n(171317, {	-- Conjured Death
 				description = "Spawns outside the Tremaculum when the Venthyr assault is active and inside the Tremaculum at all other times.",
 				coords = {
@@ -173,16 +174,17 @@ maproot(SHADOWLANDS, THE_MAW, {
 					bo(61140),	-- Dath Rezara bonus objective
 				},
 			}),
-			n(179779, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {	-- Deomen the Vortex
+			n(179779, {	-- Deomen the Vortex
 				description = "If the cage is locked, enter the building to the left of the rare at |cFFFFFFFF63.3, 43.6|r. There is a lever on the wall on either side of the room at the bottom of the stairs, inside the alcoves.",
 				crs = { 179791 },	-- Deomen the Vortex (while in cage)
 				coord = { 61.3, 41.3, THE_MAW },
 				questID = 64251,
+				timeline = { ADDED_9_1_0 },
 				groups = {
 					i(187367),	-- Deomen's Vortex Blade
 					i(187385),	-- Vortex Piercing Headgear
 				},
-			})),
+			}),
 			n(170711, {	-- Dolos
 				description = "Will not spawn during Necrolord assault.",
 				coord = { 28.6, 60.6, THE_MAW },
@@ -464,17 +466,18 @@ maproot(SHADOWLANDS, THE_MAW, {
 					}),
 				},
 			}),
-			n(179805, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {	-- Traitor Balthier
+			n(179805, {	-- Traitor Balthier
 				coords = {
 					{ 67.5, 48.3, THE_MAW },
 					{ 68.8, 45.5, THE_MAW },
 				},
 				questID = 64439,	-- and 64258, both of which also triggered on my first completion of the Assault Supply Carriage event.
+				timeline = { ADDED_9_1_0 },
 				groups = {
 					i(187374),	-- Balthier's Waistcord
 					i(187364),	-- Maldraxxi Traitor's Blade
 				},
-			})),
+			}),
 			n(173086, {	-- Valis the Cruel
 				description = "Click the runes in the correct order.",
 				coord = { 40.8, 59.8, THE_MAW },
@@ -500,9 +503,10 @@ maproot(SHADOWLANDS, THE_MAW, {
 					i(186228),	-- Helm of the Skittish Hero
 				},
 			}),
-			n(177444, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {	-- Ylva <Mate of Guarm>
+			n(177444, {	-- Ylva <Mate of Guarm>
 				questID = 64152,	-- also 62683 after a refresh, not sure which one is 'first time' or if both trigger every time. didn't get to do the achievement so it's unrelated to that
 				coord = { 66.7, 42.4, THE_MAW },
+				timeline = { ADDED_9_1_0 },
 				groups = {
 					ach(14943, {	-- Guarmageddon
 						description = "Kill all of Ylva and Guarm's children, and then kill the rare. You must be within range of the baby guarm when they die to get the debuff.",
@@ -530,7 +534,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 						},
 					}),
 				},
-			})),
+			}),
 			i(182329, {	-- Domination's Calling
 				description = "This is NOT consumed upon use.",
 				cost = {

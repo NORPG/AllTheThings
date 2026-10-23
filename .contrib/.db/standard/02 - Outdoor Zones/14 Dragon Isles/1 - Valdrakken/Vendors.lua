@@ -198,8 +198,9 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 					}),
 				},
 			}),
-			n(216231, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Iszinormi <Dream Distribtuion>
+			n(216231, {	-- Iszinormi <Dream Distribtuion>
 				coord = { 73.7, 47.4, VALDRAKKEN },
+				timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				groups = sharedData({
 					cost = { { "i", ANTIQUE_BRONZE, 2 } },
 				}, {
@@ -243,9 +244,10 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 					i(207798),	-- Verdant Matrix Beacon
 					i(207789),	-- Volcoross's Barbed Fang
 				}),
-			})),
-			n(216226, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Iszinormi <Scale Associate>
+			}),
+			n(216226, {	-- Iszinormi <Scale Associate>
 				coord = { 73.7, 47.1, VALDRAKKEN },
+				timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				groups = sharedData({
 					cost = { { "i", ANTIQUE_BRONZE, 2 } },
 				}, {
@@ -289,9 +291,10 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 					i(202613),	-- Zaqali Chaos Grapnel
 					i(202555),	-- Zskarn's Autopsy Scalpel
 				}),
-			})),
-			n(216224, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Iszy <Vault Vendor>
+			}),
+			n(216224, {	-- Iszy <Vault Vendor>
 				coord = { 73.8, 46.7, VALDRAKKEN },
+				timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				groups = sharedData({
 					cost = { { "i", ANTIQUE_BRONZE, 2 } },
 				}, {
@@ -331,7 +334,7 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 					i(195529),	-- Stormlash's Last Resort
 					i(194301),	-- Whispering Incarnate Icon
 				}),
-			})),
+			}),
 			n(192814, {	-- Kritha <Barkeep>
 				coord = { 47.2, 41.6, VALDRAKKEN },
 				groups = {
@@ -369,8 +372,9 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 			-------------
 			---- LFR ----
 			-------------
-			n(216236, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mirioszin <Infinite Importer>
+			n(216236, {	-- Mirioszin <Infinite Importer>
 				coord = { 73.8, 45.6, VALDRAKKEN },
+				timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				groups = sharedData({
 					cost = { { "i", ANTIQUE_BRONZE, 1 } },
 					sharedDescription = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
@@ -434,12 +438,13 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 					i(217468),	-- Vault Raider's Crystal Staff
 					i(217428),	-- Vault Raider's Crystal Thumper
 				}),
-			})),
+			}),
 			-------------
 			---- NORMAL ----
 			-------------
-			n(216236, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mirioszin <Infinite Importer>
+			n(216236, {	-- Mirioszin <Infinite Importer>
 				coord = { 73.8, 45.6, VALDRAKKEN },
+				timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				groups = sharedData({
 					cost = { { "i", ANTIQUE_BRONZE, 1 } },
 					sharedDescription = "Shared Transmog with |cFFFFFFFFNormal|r.",
@@ -502,12 +507,13 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 					i(217465),	-- Vault Raider's Earthen Staff
 					i(217425),	-- Vault Raider's Earthen Thumper
 				}),
-			})),
+			}),
 			-------------
 			---- HEROIC ----
 			-------------
-			n(216236, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mirioszin <Infinite Importer>
+			n(216236, {	-- Mirioszin <Infinite Importer>
 				coord = { 73.8, 45.6, VALDRAKKEN },
+				timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				groups = sharedData({
 					cost = { { "i", ANTIQUE_BRONZE, 1 } },
 					sharedDescription = "Shared Transmog with |cFFA330C9Heroic|r.",
@@ -570,12 +576,13 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 					i(217466),	-- Vault Raider's Frozen Staff
 					i(217426),	-- Vault Raider's Frozen Thumper
 				}),
-			})),
+			}),
 			-------------
 			---- MYTHIC ----
 			-------------
-			n(216236, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mirioszin <Infinite Importer>
+			n(216236, {	-- Mirioszin <Infinite Importer>
 				coord = { 73.8, 45.6, VALDRAKKEN },
+				timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				groups = sharedData({
 					cost = { { "i", ANTIQUE_BRONZE, 1 } },
 					sharedDescription = "Shared Transmog with |cFFED7014Mythic|r.",
@@ -638,9 +645,10 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 					i(217467),	-- Vault Raider's Storming Staff
 					i(217427),	-- Vault Raider's Storming Thumper
 				}),
-			})),
-			n(216236, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mirioszin <Infinite Importer>
+			}),
+			n(216236, {	-- Mirioszin <Infinite Importer>
 				coord = { 73.8, 45.6, VALDRAKKEN },
+				timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				groups = sharedData({
 					cost = { { "i", ANTIQUE_BRONZE, 1 } },
 				}, {
@@ -650,7 +658,7 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 					i(217493),	-- Vault Raider's Primal Greatstaff
 					i(217660),	-- Dream Raider's Replica Dreambinder
 				}),
-			})),
+			}),
 			n(189644, {	-- Ms. Xiulan <Madam Goya's Assistant>
 				coord = { 19.0, 50.2, VALDRAKKEN },
 				groups = bubbleDown({ timeline = { ADDED_10_2_0, REMOVED_11_0_2 } }, {	-- Think it was technically 1 week after 11.0.2 released but who cares
@@ -786,8 +794,9 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 				coord = { 22.6, 30.8, VALDRAKKEN },
 				groups = { i(200099) },	-- M.R.E.
 			}),
-			n(216449, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Vaskarn
+			n(216449, {	-- Vaskarn
 				coord = { 45.5, 55.9, VALDRAKKEN },
+				timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				groups = {
 					-- Trade Up
 					i(211950, {	-- Lively Clutch of Wyrm's Awakened Crests
@@ -828,7 +837,7 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 						},
 					}),
 				},
-			})),
+			}),
 			n(196975, {	-- Zinfandormu <Sommelier>
 				coord = { 30.8, 60.8, VALDRAKKEN },
 				groups = {

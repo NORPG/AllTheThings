@@ -917,9 +917,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 			n(VENDORS, {
-				n(188112,  bubbleDownSelf({timeline = { ADDED_9_2_5 }}, {	-- Motion Sick Peon <Junior Accessibility Advocate>
-					i(191734),	-- Motion Sick Peon's Magical Elixir
-				})),
+				n(188112,  {	-- Motion Sick Peon <Junior Accessibility Advocate>
+					timeline = { ADDED_9_2_5 },
+					groups = {
+						i(191734),	-- Motion Sick Peon's Magical Elixir
+					},
+				}),
 			}),
 			-- Misc descriptions
 			n(53879, {	-- Spine of Deathwing

@@ -148,7 +148,7 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 					}),
 				},
 			}),
-			n(155069, bubbleDownSelf({ timeline = { ADDED_8_2_5 } }, {	-- Honeyback Harvester
+			n(155069, {	-- Honeyback Harvester
 				coords = {
 					{ 25.6, 73.2, STORMSONG_VALLEY },
 					{ 33.4, 32.8, STORMSONG_VALLEY },
@@ -161,6 +161,7 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 					{ 72.3, 52.2, STORMSONG_VALLEY },
 				},
 				description = "This Rare starts the Honeyback Harvester Event.\n\nYou can participate in Honeyback Harvester events as many times a day as you want, but you can only loot the final jelly once per hour (loot eligibility resets on the hour, not based upon your last kill). If you can see the vignette star for the Harvester or a treasure icon surrounded by a spiky star, you are eligible for hourly loot.\n\nThe quests that drop from rares are weekly, but the rares may drop jelly even during the cooldown period and even if you have already completed the specific rare's weekly quest.",
+				timeline = { ADDED_8_2_5 },
 				groups = {
 					n(EVENT_COMPLETION, {
 						i(172491),	-- Papi (PET!)
@@ -169,9 +170,10 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 						i(170175),	-- Technique: Glyph of Dire Bees (RECIPE!)
 					}),
 				},
-			})),
-			n(154154, bubbleDownSelf({ timeline = { ADDED_8_2_5 } }, {	-- Honey Smasher
+			}),
+			n(154154, {	-- Honey Smasher
 				questID = 57674,
+				timeline = { ADDED_8_2_5 },
 				isDaily = true,
 				coords = {
 					{ 59.6, 18.4, STORMSONG_VALLEY },
@@ -192,7 +194,7 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 					i(169110),	-- Jelly Magnet
 					i(172405),	-- Tome of Hex: Living Honey (CI!)
 				},
-			})),
+			}),
 			n(141043, {	-- Jakala the Cruel
 				description = "Due to phasing issues, in order to see this rare you need to enter Brennadam from the southern bridge at 57.6, 66.5. This will trigger a cutscene and place you in the phase with the rare.",
 				-- doc marrtens and jakala both complete one another's quests. it's unclear which quest specifically belongs to which rare.

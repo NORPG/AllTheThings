@@ -89,15 +89,15 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 				},
 			}),
 			-- n(193246),	-- Matriarch Remalla // under DF/Timed Based Rare
-			n(201549,	-- Morlash
-			bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+			n(201549, {	-- Morlash
 				coord = { 62.1, 60.1, THALDRASZUS },
 				questID = 74561,
+				timeline = { ADDED_10_0_5 },
 				groups = {
 					bo(74450, true),
 					i(203666),	-- Vinelashed Bracers
 				},
-			})),
+			}),
 			n(193688, {	-- Phenran
 				coord = { 60.0, 61.0, THALDRASZUS },
 				questID = 74020,
@@ -105,24 +105,24 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 					i(200146),	-- Phenran's Discordant Smasher
 				},
 			}),
-			n(201550,	-- Overloading Defense Matrix
-			bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+			n(201550, {	-- Overloading Defense Matrix
 				coord = { 59.6, 61.8, THALDRASZUS },
 				questID = 74565,
+				timeline = { ADDED_10_0_5 },
 				groups = {
 					bo(74449, true),
 					i(203677),	-- Watcher's 'Neck' Ring
 				},
-			})),
-			n(201552,	-- Overseer Stonetongue
-			bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+			}),
+			n(201552, {	-- Overseer Stonetongue
 				coord = { 59.0, 56.0, THALDRASZUS },
 				questID = 74566,
+				timeline = { ADDED_10_0_5 },
 				groups = {
 					bo(74448, true),
 					i(203665),	-- Stonetongues Hood
 				},
-			})),
+			}),
 			n(193130, {	-- Pleasant Alpha
 				coord = { 37.7, 78.7, THALDRASZUS },
 				questID = 73889,

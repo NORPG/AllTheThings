@@ -1703,8 +1703,9 @@ maproot(EASTERN_KINGDOMS, SILVERPINE_FOREST, {
 				timeline = { ADDED_4_0_3 },
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(212809, bubbleDownSelf({ timeline = { REMOVED_2_0_1 } }, {	-- Wailing Spirit
+			applyclassicphase(SOD_PHASE_ONE, n(212809, {	-- Wailing Spirit
 				coord = { 60.2, 74.4, SILVERPINE_FOREST },
+				timeline = { REMOVED_2_0_1 },
 				groups = {
 					i(205905, {	-- Memory of a Devout Champion
 						classes = { PRIEST },
@@ -1713,7 +1714,7 @@ maproot(EASTERN_KINGDOMS, SILVERPINE_FOREST, {
 						},
 					}),
 				},
-			}))),
+			})),
 			-- #endif
 		}),
 		-- #if SEASON_OF_DISCOVERY

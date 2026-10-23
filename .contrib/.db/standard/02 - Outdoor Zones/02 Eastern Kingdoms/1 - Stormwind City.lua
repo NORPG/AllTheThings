@@ -425,7 +425,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				}),
 			}),
 			prof(COOKING, {
-				n(5482, bubbleDownSelf({ timeline = { ADDED_1_11_1 }, }, {	-- Stephen Ryback <Cooking Trainer>
+				n(5482, {	-- Stephen Ryback <Cooking Trainer>
 					coords = {
 						-- #if AFTER LEGION
 						{ 76.8, 53.6, STORMWIND_CITY },
@@ -435,9 +435,10 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 						{ 75.6, 37.0, STORMWIND_CITY },
 						-- #endif
 					},
+					timeline = { ADDED_1_11_1 },
 					races = ALLIANCE_ONLY,
 					groups = CLASSIC_CATA_COOKING,
-				})),
+				}),
 			}),
 			prof(ENCHANTING, {
 				n(1317, {	-- Lucan Cordell <Enchanting Trainer>
@@ -468,12 +469,13 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				}),
 			}),
 			prof(FIRST_AID, {
-				n(56796, bubbleDownSelf({ timeline = { ADDED_4_3_0 } }, {	-- Angela Leifeld <Bandage Trainer>
+				n(56796, {	-- Angela Leifeld <Bandage Trainer>
 					coord = { 52.2, 45.4, STORMWIND_CITY },
+					timeline = { ADDED_4_3_0 },
 					races = ALLIANCE_ONLY,
 					groups = CLASSIC_CATA_FIRST_AID,
-				})),
-				n(2327, bubbleDownSelf({ timeline = { REMOVED_4_3_0 } }, {	-- Shaina Fuller <First Aid Trainer>
+				}),
+				n(2327, {	-- Shaina Fuller <First Aid Trainer>
 					coords = {
 						-- #if AFTER WRATH
 						{ 52.8, 44.8, STORMWIND_CITY },
@@ -481,9 +483,10 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 						{ 42.8, 26.6, STORMWIND_CITY },
 						-- #endif
 					},
+					timeline = { REMOVED_4_3_0 },
 					races = ALLIANCE_ONLY,
 					groups = CLASSIC_CATA_FIRST_AID,
-				})),
+				}),
 			}),
 			prof(FISHING, {
 				n(5493, {	-- Arnold Leland <Fishing Trainer>
@@ -5511,8 +5514,9 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					i(2665),	-- Stormwind Seasoning Herbs
 				},
 			}),
-			n(179896, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {	-- Finn
+			n(179896, {	-- Finn
 				coord = { 61.6, 65.8, STORMWIND_CITY },
+				timeline = { ADDED_9_1_0 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(187009),	-- Dazzling Spectacles
@@ -5521,7 +5525,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					i(186090),	-- Simple Glasses
 					i(187010),	-- Tasteful Eyeglasses
 				},
-			})),
+			}),
 			n(1298, {	-- Frederick Stover <Bow & Arrow Merchant>
 				coords = {
 					-- #if AFTER WRATH
@@ -6858,18 +6862,19 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			}),
 			n(87501, bubbleDownSelf({	-- Paulie
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_6_0_2 },
 			},{
 				coord = { 73.0, 59.5, STORMWIND_CITY },
+				timeline = { ADDED_6_0_2 },
 				groups = {
 					i(116789, {	-- Champion's Treadblade (MOUNT!)
 						cost = 1000000000,	-- 100,000g
 					}),
 				},
 			})),
-			n(167429, bubbleDownSelf({ timeline = { ADDED_9_0_1 } }, {	-- Quartermaster Richter
+			n(167429, {	-- Quartermaster Richter
 				description = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
 				coord = { 79.5, 69.0, STORMWIND_CITY },
+				timeline = { ADDED_9_0_1 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(175173),	-- Expeditionary Cudgel
@@ -6880,7 +6885,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					i(175170),	-- Expeditionary Short Sword
 					i(175167),	-- Expeditionary Staff
 				},
-			})),
+			}),
 			n(53991, {	-- Quincy Cutler <Owner and Proprietor>
 				timeline = { ADDED_4_2_0 },
 				coord = { 64.0, 46.2, STORMWIND_CITY },

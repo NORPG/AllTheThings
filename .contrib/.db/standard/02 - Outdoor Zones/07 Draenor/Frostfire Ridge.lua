@@ -1538,13 +1538,12 @@ maproot(DRAENOR, FROSTFIRE_RIDGE, {
 				coord = { 13.1, 50.4, FROSTFIRE_RIDGE },
 				groups = { i(116794) },	-- Garn Nighthowl (MOUNT!)
 			}),
-			n(87622, bubbleDownSelf({	-- Ogom the Mangler
+			n(87622, {	-- Ogom the Mangler
+				questID = 37402,
 				timeline = { ADDED_6_0_3, REMOVED_8_0_1 },
 				-- #if AFTER 8.0.1
 				isBounty = true,
 				-- #endif
-			}, {
-				questID = 37402,
 				isDaily = true,
 				coords = {	-- **Coords unconfirmed, relied on wowhead**
 					{ 84.4, 48.0, FROSTFIRE_RIDGE },
@@ -1563,7 +1562,7 @@ maproot(DRAENOR, FROSTFIRE_RIDGE, {
 					cn = "绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。",
 				}),
 				groups = { i(119366) },	-- Ogom's Manacles
-			})),
+			}),
 			n(78606, {	-- Pale Fishmonger
 				questID = 34470,
 				coord = { 28.2, 66.6, FROSTFIRE_RIDGE },

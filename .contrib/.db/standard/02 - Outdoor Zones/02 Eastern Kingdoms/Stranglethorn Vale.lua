@@ -3016,9 +3016,10 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, n(227853, bubbleDownSelf({ timeline = { ADDED_1_15_3 } }, {	-- Pix Xizzix <Undermine Trader>
+			applyclassicphase(SOD_PHASE_FOUR, n(227853, {	-- Pix Xizzix <Undermine Trader>
 				sourceQuest = 83934,	-- Show Me The Money!
 				coord = { 28.4, 75.8, STRANGLETHORN_VALE },
+				timeline = { ADDED_1_15_3 },
 				groups = {
 					cl(DRUID, {
 						real(50, i(226708)),	-- Wildheart Cowl
@@ -3181,7 +3182,7 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 					real(15, i(17010)),	-- Fiery Core
 					real(15, i(17011)),	-- Lava Core
 				},
-			}))),
+			})),
 			-- #endif
 			n(2849, {	-- Qixdi Goodstitch <Cloth Armor & Accessories>
 				coords = {
