@@ -10,13 +10,11 @@
 -- the normalized name-realm identifier and the complete name without the realm.
 -- Cases cover full names, delimiters, spacing, invalid inputs, and Forever names.
 --
--- The Refresh library's actual OneTimeFix runner receives saved records as an event argument.
--- A fresh library load simulates each login while reusing the account's saved marker.
--- Forever, Classic, and Retail fixtures verify first-login cleanup and preservation
--- of rebuilt caches on the next login. The actual SavedVariables callback uses a
--- fixed clock so identity, collection progress, and play time can be checked.
--- The complete window OnLoad runs after OneTimeFix; a broadcast stub verifies all
--- saved identifiers are current before AutoSync, including renames and realm changes.
+-- Forever, Classic, and Retail fixtures run the actual SavedVariables callback with
+-- a fixed clock to verify initialization preserves cached identifiers, collection
+-- progress, and play time across logins. The complete window OnLoad then rebuilds
+-- stale identifiers; a broadcast stub verifies all saved identifiers are current
+-- before AutoSync, including renames and realm changes.
 -- The player-names fixture runs actual login storage for an alt without loading its
 -- account window; the main window must then rebuild that alt's stale identifier.
 -- Native messaging registration is stubbed; collection data must survive loading.
@@ -49,33 +47,20 @@
 --- Loaded production chunk binding a client flavor and optional current-realm context.
 ---@alias ATTIdentifierTestNormalizerFactory fun(app: ATTIdentifierTestApp, currentCharacter: ATTIdentifierTestCurrentCharacter?): ATTIdentifierTestNormalizer
 
---- Learned-spell flags whose contents and table identity must survive cache invalidation.
+--- Learned-spell flags whose contents and table identity must survive initialization.
 ---@alias ATTIdentifierTestSpellFlags table<integer, boolean>
 
 --- Saved characters supplied to the extracted initialization callback.
 ---@alias ATTIdentifierTestCharacterData table<string, ATTNameTestCharacter>
 
---- Saved account-wide state shared by fresh login sessions in the OneTimeFix tests.
---- OneTimeFixes records completed fix names so rebuilt identifiers survive the next login.
+--- Saved account-wide state passed to the actual initialization callback.
 ---@class ATTIdentifierTestAccountWideData
----@field OneTimeFixes? table<string, integer> Applied fix names mapped to the saved completion marker 1.
+---@field OneTimeFixes? table<string, integer> Completion markers retained from unrelated one-time fixes.
 
---- Actual one-time runner receiving the current character and persistent account state.
----@alias ATTIdentifierTestOneTimeHandler fun(currentCharacter: ATTNameTestCharacter, accountWideData: ATTIdentifierTestAccountWideData, characterData: ATTIdentifierTestCharacterData)
-
---- Addon services supplied when loading the real Refresh library's fix declarations.
---- Exposes the client build and captures the runner without dispatching other events.
----@class ATTIdentifierTestRefreshApp
----@field IsRetail boolean Whether Retail-only fix declarations should be registered.
----@field GameBuildVersion integer Client build used by the Retail fix gate.
----@field AddEventHandler fun(eventName: string, callback: function) Captures the SavedVariables runner; other events are not dispatched.
-
---- Client label, Retail flag, and build for one identifier-migration test scenario.
---- Exercises the actual fix registrations on Forever, Classic, and Retail builds.
+--- Client label and build for one account identifier lifecycle scenario.
 ---@class ATTIdentifierTestFlavor
 ---@field label string Client name included in assertion failures.
----@field isRetail boolean Whether the fixture represents Retail.
----@field build integer Client build passed to the Refresh library.
+---@field build integer Client build used by the native player-name fixture.
 
 --- Actual initialization callback binding saved records and updating play-time metadata.
 ---@alias ATTIdentifierTestSavedVariablesHandler fun(currentCharacter: ATTNameTestCharacter, accountWideData: ATTIdentifierTestAccountWideData, characterData: ATTIdentifierTestCharacterData)
@@ -195,7 +180,7 @@ check("Forever non-ASCII display fullname", {"玩家 星辰-銀月 伺服器"}, 
 assert(forever("First Last", "Moon Guard") == forever("First Last-Moon Guard"), "Native fullname lookup must match saved metadata");
 tests = tests + 1;
 
--- Capture actual Account Management startup behavior alongside the one-time migration.
+-- Capture actual Account Management startup behavior without loading the full addon.
 local initSource = assert(source:match('(app.AddEventHandler%("OnSavedVariablesAvailable".-\nend%))'), "Cannot locate account SavedVariables initialization");
 local initProgram = [[
 ---@type ATTIdentifierTestSavedVariablesHandler?
@@ -213,31 +198,6 @@ local RequestTimePlayed = function() error("Unexpected play-time request"); end;
 --- Captured production startup callback invoked with the saved fixture records.
 ---@type ATTIdentifierTestSavedVariablesHandler
 local initialize = assert((loadstring or load)(initProgram, "@actual-account-saved-variables"))();
-local refreshFile = assert(io.open(root .. "/lib/Refresh.lua", "rb"));
-local refreshSource = refreshFile:read("*a"):gsub("\r\n", "\n");
-refreshFile:close();
-local fixSource = assert(refreshSource:match("^(.-)%-%- for the first auto%-refresh"), "Cannot locate OneTimeFix registration and runner");
---- Loads fresh production fix declarations and captures their SavedVariables runner for one login.
----@param isRetail boolean Whether Retail-only fix declarations should be included.
----@param build integer Client build used by the Refresh library's Retail gate.
----@return ATTIdentifierTestOneTimeHandler handler Actual OneTimeFix runner for this session.
-local function loadOneTimeFixes(isRetail, build)
-	---@type ATTIdentifierTestOneTimeHandler?
-	local handler;
-	---@type ATTIdentifierTestRefreshApp
-	local app = {
-		IsRetail = isRetail,
-		GameBuildVersion = build,
-		--- Captures the final SavedVariables callback without dispatching unrelated events.
-		---@param eventName string Event registered by the production Refresh library.
-		---@param callback function Production event callback.
-		AddEventHandler = function(eventName, callback)
-			if eventName == "OnSavedVariablesAvailable" then handler = callback; end
-		end,
-	};
-	assert(loadstring(fixSource, "@actual-one-time-fixes"))("AllTheThings", app);
-	return assert(handler, "OneTimeFix runner was not registered");
-end
 
 -- Load the complete production window callback; only messaging registration and broadcast are mocked.
 local windowSource = assert(source:match('(OnLoad = function%(self, settings%).-)\n\tOnSave ='), "Cannot locate account window OnLoad");
@@ -287,9 +247,9 @@ local initializePlayer = assert(loadfile(root .. "/tests/player-names.lua"))("fi
 
 ---@type ATTIdentifierTestFlavor[]
 local flavors = {
-	{label="Forever", isRetail=false, build=16001},
-	{label="Classic", isRetail=false, build=30400},
-	{label="Retail", isRetail=true, build=120000},
+	{label="Forever", build=16001},
+	{label="Classic", build=30400},
+	{label="Retail", build=120000},
 };
 for _,flavor in ipairs(flavors) do
 	---@type ATTIdentifierTestSpellFlags
@@ -302,25 +262,21 @@ for _,flavor in ipairs(flavors) do
 	local characterData = { current=repaired, other=other };
 	---@type ATTIdentifierTestAccountWideData
 	local accountWideData = {};
-	loadOneTimeFixes(flavor.isRetail, flavor.build)(repaired, accountWideData, characterData);
 	initialize(repaired, accountWideData, characterData);
-	assert(repaired.Identifier == nil and other.Identifier == nil, flavor.label .. ": first login must clear all saved identifier caches");
-	assert(accountWideData.OneTimeFixes and accountWideData.OneTimeFixes.ResetSavedCharacterIdentifiers == 1, flavor.label .. ": cleanup must save an account-wide completion marker");
-	assert(repaired.name == "First Last" and repaired.realm == "Realm With Spaces", "Cache invalidation must preserve full name and realm");
-	assert(repaired.Spells == progress and repaired.Spells[123] and other.Spells[456], "Cache invalidation must preserve collection data");
-	assert(repaired.totalTimePlayed == 12 and repaired.lastTimePlayedRecorded == 1000, "Cache invalidation must preserve existing play-time data");
+	assert(repaired.Identifier == "First-Last" and other.Identifier == "Alice-OtherRealm", flavor.label .. ": initialization must preserve saved identifier caches");
+	assert(repaired.name == "First Last" and repaired.realm == "Realm With Spaces", "Initialization must preserve full name and realm");
+	assert(repaired.Spells == progress and repaired.Spells[123] and other.Spells[456], "Initialization must preserve collection data");
+	assert(repaired.totalTimePlayed == 12 and repaired.lastTimePlayedRecorded == 1000, "Initialization must preserve existing play-time data");
 	local window, calls = loadAccountWindow(repaired, characterData, "First Last-RealmWithSpaces");
 	---@type ATTIdentifierTestWindowSettings
 	local settings = { AutoSync = true, EnableBattleNet = false };
 	window:OnLoad(settings);
 	assert(repaired.Identifier == calls.expected and calls.broadcast == 1, "Window loading must rebuild the current cache before AutoSync");
 	assert(other.Identifier == "Alice-OtherRealm", "Window loading must rebuild all saved character identifiers");
-	-- Recreate the library for the next login; only SavedVariables survive between sessions.
-	loadOneTimeFixes(flavor.isRetail, flavor.build)(repaired, accountWideData, characterData);
+	-- Reuse saved records on the next login.
 	initialize(repaired, accountWideData, characterData);
 	window:OnLoad(settings);
 	assert(repaired.Identifier == "First Last-RealmWithSpaces" and other.Identifier == "Alice-OtherRealm", flavor.label .. ": second login must retain correct identifier values");
-	assert(accountWideData.OneTimeFixes.ResetSavedCharacterIdentifiers == 1, flavor.label .. ": second login must preserve the completion marker");
 	-- Native login storage changes the identity; the owning module refreshes its derived cache.
 	repaired.name = "First Renamed";
 	calls.expected = "First Renamed-RealmWithSpaces";
@@ -337,8 +293,7 @@ for _,flavor in ipairs(flavors) do
 	});
 	other = altApp.CurrentCharacter;
 	characterData.other = other;
-	loadOneTimeFixes(flavor.isRetail, flavor.build)(other, accountWideData, characterData);
-	assert(other.Identifier == "Alice-OtherRealm", "The completed OneTimeFix must not clear a delayed alt's stale cache again");
+	assert(other.Identifier == "Alice-OtherRealm", "Native login must leave the alt's cached identifier for Account Management to refresh");
 	local altProgress = other.Spells;
 	calls.other, calls.otherExpected = other, "Alice Shadow-UpdatedRealm";
 	window:OnLoad(settings);
@@ -346,7 +301,7 @@ for _,flavor in ipairs(flavors) do
 	assert(repaired.Identifier == calls.expected, "Rebuilding all records must preserve the current character's correct identifier");
 	assert(repaired.Spells == progress and repaired.Spells[123] and other.Spells == altProgress and other.Spells[10], "Window loading must preserve collection progress");
 	assert(repaired.totalTimePlayed == 12 and repaired.lastTimePlayedRecorded == 1000, "Window loading must preserve existing play-time data");
-	tests = tests + 16;
+	tests = tests + 14;
 end
 
 local explicitIdentifier = normalize("First Last", "Moon Guard");
