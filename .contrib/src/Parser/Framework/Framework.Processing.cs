@@ -4972,7 +4972,10 @@ namespace ATT
 
         private static void Consolidate_ConvertManualRecipe(Data data)
         {
-            if (data.TryGetValue("spellID", out long spellID) && data.TryGetValue("f", out long f) && f == (long)Objects.Filters.Recipe)
+            if (!data.TryGetValue("type", out var _)
+                && data.TryGetValue("spellID", out long spellID)
+                && data.TryGetValue("f", out long f)
+                && f == (long)Objects.Filters.Recipe)
             {
                 data.Remove("spellID");
                 data["recipeID"] = spellID;
