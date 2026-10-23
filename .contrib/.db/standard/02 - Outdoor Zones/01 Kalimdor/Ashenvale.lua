@@ -4033,7 +4033,7 @@ maproot(KALIMDOR, ASHENVALE, {
 					{ 77.4, 75.4, ASHENVALE },
 					-- #endif
 				},
-				timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
+				timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC], REMOVED_4_0_3, ADDED_10_1_7 },
 				crs = {
 					-- #if AFTER 10.1.7
 					3928,	-- Rotting Slime
@@ -4046,7 +4046,7 @@ maproot(KALIMDOR, ASHENVALE, {
 				timeline = { ADDED_4_3_0 },
 			}),
 			i(11151, {	-- Formula: Enchant Gloves - Herbalism (RECIPE!)
-				timeline = { REMOVED_4_3_0, DELETED_7_0_3 },	-- Replaced by BOP Version
+				timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC], REMOVED_4_3_0, DELETED_7_0_3 },	-- Replaced by BOP Version
 				crs = {
 					3834,	-- Crazed Ancient
 					3919,	-- Withered Ancient
