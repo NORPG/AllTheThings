@@ -17,14 +17,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						sym = {
 							-- MID Season 1 dungeons (Normal+ difficulty)
 							{"select", "instanceID"
-								,1030	-- Temple of Sethraliss
-								,1041	-- Kings' Rest
-								,1202	-- Ruby Life Pools
-								,1322	-- Altar of Fangs
-								,1304	-- Murder Row
-								,1311	-- Den of Nalorakk
-								,1313	-- Voidscar Arena
-								,1309	-- The Blinding Vale
+								,1201	-- Algeth'ar Academy
+								,1300	-- Magister's Terrace
+								,1315	-- Maisara Caverns
+								,1316	-- Nexus-Point Xenas
+								,1299	-- Windrunner Spire
 							},
 							{"pop"},
 							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
@@ -66,11 +63,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 						sym = {
 							-- MID Season 2 dungeons (Normal+ difficulty)
 							{"select", "instanceID"
-								,1201	-- Algeth'ar Academy
-								,1300	-- Magister's Terrace
-								,1315	-- Maisara Caverns
-								,1316	-- Nexus-Point Xenas
-								,1299	-- Windrunner Spire
+								,1030	-- Temple of Sethraliss
+								,1041	-- Kings' Rest
+								,1202	-- Ruby Life Pools
+								,1322	-- Altar of Fangs
+								,1304	-- Murder Row
+								,1311	-- Den of Nalorakk
+								,1313	-- Voidscar Arena
+								,1309	-- The Blinding Vale
 							},
 							{"pop"},
 							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},

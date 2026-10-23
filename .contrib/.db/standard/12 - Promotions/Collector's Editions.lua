@@ -1405,26 +1405,22 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 		description = "These rewards are available to anyone who purchased World of Warcraft: Forever Collector's Edition or digital equivalents.",
 		groups = {
 			n(HEROIC_EDITION, {
-				--- SHARED ---
 				i(280519),	-- Cerulean Prideclaw (MOUNT!)
 				iensemble(271755),	-- Ensemble: Shen'dorei Skyseer's Garb (COSMETIC!)
-				i(280541),	-- Shen'dorei Windwell (TOY!)
-				i(280623),	-- Veteran Adventurer's Rucksack (COSMETIC!)
-				--- RETAIL ---
 				i(268722),	-- Handmade Shen'dorei Pillow (DECOR!)
 				i(268339),	-- Shen'dorei Standard (DECOR!)
+				i(280541),	-- Shen'dorei Windwell (TOY!)
+				i(280623),	-- Veteran Adventurer's Rucksack (COSMETIC!)
 				i(268338),	-- Windshaper's Chimes (DECOR!)
 				i(268337),	-- Windwell (DECOR!)
 				i(268340),	-- Zephras Drapery (DECOR!)
 			}),
 			n(EPIC_EDITION, {
-				--- SHARED ---
 				iensemble(279182),	-- Ensemble: Veteran Adventurer's Outdoor Wear (COSMETIC!)
 				i(280599),	-- Veteran Adventurer's Loyal Companion (MOUNT!)
 				-- NOTE: Lordaeron Forever (270272) and Shen'dorei Tabard (280545) exist in retail data but are only granted in WoW: Forever.
 			}),
 			n(WARCRAFT_FOREVER_COLLECTION, bubbleDownSelf({ timeline = { "removed 12.1.7.99999" }, }, {	--TODO: available through January 11, 2027
-				--- RETAIL ---
 				i(280554),	-- Boardcraft Forsaken Figurine (DECOR!)
 				i(280556),	-- Boardcraft Human Figurine (DECOR!)
 			})),

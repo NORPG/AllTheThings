@@ -6,7 +6,6 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 		description = "These rewards are available to anyone who purchased a World of Warcraft: Forever Skyborne Heroic Pack, Skyborne Epic Pack or Warcraft Forever Collection.",
 		groups = {
 			n(HEROIC_EDITION, {	-- Skyborne Heroic Pack
-				-- TODO: Skyborne Race + Zephras Isle Starting Experience
 				i(280544),	-- Cerulean Prideclaw (MOUNT!)
 				iensemble(271755),	-- Ensemble: Shen'dorei Skyseer's Garb (COSMETIC!)
 				i(280740),	-- Shen'dorei Windwell (TOY!)

@@ -3802,7 +3802,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(95825, {	-- Blighted Core Caramels
 			sourceQuest = 93400,	-- Sugar Run (Duskwood)
-			qg = 251989,	-- Nomi
+			qg = 254694,	-- Nomi
 			coord = { 67.2, 76.7, DUSKWOOD },
 			isDaily = true,
 			timeline = { ADDED_12_1_5 },
@@ -3817,7 +3817,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(93401, {	-- Howling Honey Drops
 			sourceQuest = 93400,	-- Sugar Run (Duskwood)
-			qg = 251989,	-- Nomi
+			qg = 254694,	-- Nomi
 			coord = { 67.2, 76.7, DUSKWOOD },
 			isDaily = true,
 			timeline = { ADDED_12_1_5 },
@@ -3832,7 +3832,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(95822, {	-- Twisted Vine Licorice
 			sourceQuest = 93400,	-- Sugar Run (Duskwood)
-			qg = 251989,	-- Nomi
+			qg = 254694,	-- Nomi
 			coord = { 67.2, 76.7, DUSKWOOD },
 			isDaily = true,
 			timeline = { ADDED_12_1_5 },
