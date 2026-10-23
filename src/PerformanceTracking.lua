@@ -1,4 +1,3 @@
-
 local appName, app = ...;
 
 -- Contains debugging logic for wrapping functionality with a performance monitor

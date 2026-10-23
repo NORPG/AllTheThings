@@ -1,4 +1,3 @@
-
 -- Symlink Module
 local _, app = ...;
 

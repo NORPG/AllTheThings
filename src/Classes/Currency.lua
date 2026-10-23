@@ -1,4 +1,3 @@
-
 -- Currency Class
 local _, app = ...
 

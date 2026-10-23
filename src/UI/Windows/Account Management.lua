@@ -301,14 +301,14 @@ local function SplitString(separator, text)
 	return res;
 end
 local function TrimString(str)
-    return str and str:gsub("^%s*(.-)%s*$", "%1");
+	return str and str:gsub("^%s*(.-)%s*$", "%1");
 end
 local function CamelCaseName(str)
-    if not str or str == "" then return str; end
-    str = TrimString(str):lower();
-    return str:gsub("(%a)([%w]*)", function(first, rest)
-        return first:upper() .. rest;
-    end);
+	if not str or str == "" then return str; end
+	str = TrimString(str):lower();
+	return str:gsub("(%a)([%w]*)", function(first, rest)
+		return first:upper() .. rest;
+	end);
 end
 --- Saved character record containing identity, a derived Identifier, and account-sync metadata.
 --- Read and updated by Summary serialization and linked-character lookups.
@@ -761,7 +761,7 @@ local ser, dser = {}, {}
 do
 local bit = bit32 or bit  -- WoW compatibility
 local function idiv(a, b)
-    return math.floor(a / b)
+	return math.floor(a / b)
 end
 
 local ROW_BITS  = 128
@@ -772,459 +772,458 @@ local rowEnd = "/"
 
 local b64index = {}
 for i = 1, #b64chars do
-    b64index[b64chars:sub(i,i)] = i - 1
+	b64index[b64chars:sub(i,i)] = i - 1
 end
 local function b64encode(bytes)
-    local t = {}
-    local n = #bytes
-    local i = 1
+	local t = {}
+	local n = #bytes
+	local i = 1
 
-    while i <= n do
-        local b1 = bytes[i];     i = i + 1
-        local b2 = bytes[i];     i = i + 1
-        local b3 = bytes[i];     i = i + 1
+	while i <= n do
+		local b1 = bytes[i];     i = i + 1
+		local b2 = bytes[i];     i = i + 1
+		local b3 = bytes[i];     i = i + 1
 
-        -- Compute 6-bit groups
-        local n1 = bit.rshift(b1, 2)
-        local n2 = bit.bor(bit.lshift(bit.band(b1, 3), 4), bit.rshift(b2 or 0, 4))
-        local n3 = bit.bor(bit.lshift(bit.band(b2 or 0, 15), 2), bit.rshift(b3 or 0, 6))
-        local n4 = bit.band(b3 or 0, 63)
+		-- Compute 6-bit groups
+		local n1 = bit.rshift(b1, 2)
+		local n2 = bit.bor(bit.lshift(bit.band(b1, 3), 4), bit.rshift(b2 or 0, 4))
+		local n3 = bit.bor(bit.lshift(bit.band(b2 or 0, 15), 2), bit.rshift(b3 or 0, 6))
+		local n4 = bit.band(b3 or 0, 63)
 
-        -- Always emit 4 chars, but replace with '=' when needed
-        t[#t+1] = b64chars:sub(n1+1, n1+1)
-        t[#t+1] = b64chars:sub(n2+1, n2+1)
+		-- Always emit 4 chars, but replace with '=' when needed
+		t[#t+1] = b64chars:sub(n1+1, n1+1)
+		t[#t+1] = b64chars:sub(n2+1, n2+1)
 
-        if b2 == nil then
-            -- Only 1 byte input → 2 chars + '=='
-            t[#t+1] = "="
-            t[#t+1] = "="
-        elseif b3 == nil then
-            -- Only 2 bytes input → 3 chars + '='
-            t[#t+1] = b64chars:sub(n3+1, n3+1)
-            t[#t+1] = "="
-        else
-            -- Full 3 bytes → 4 chars
-            t[#t+1] = b64chars:sub(n3+1, n3+1)
-            t[#t+1] = b64chars:sub(n4+1, n4+1)
-        end
-    end
+		if b2 == nil then
+			-- Only 1 byte input → 2 chars + '=='
+			t[#t+1] = "="
+			t[#t+1] = "="
+		elseif b3 == nil then
+			-- Only 2 bytes input → 3 chars + '='
+			t[#t+1] = b64chars:sub(n3+1, n3+1)
+			t[#t+1] = "="
+		else
+			-- Full 3 bytes → 4 chars
+			t[#t+1] = b64chars:sub(n3+1, n3+1)
+			t[#t+1] = b64chars:sub(n4+1, n4+1)
+		end
+	end
 
-    return table.concat(t)
+	return table.concat(t)
 end
 local function b64decode(str)
-    local bytes = {}
-    local n = #str
-    local i = 1
+	local bytes = {}
+	local n = #str
+	local i = 1
 
-    while i <= n do
-        local c1 = b64index[str:sub(i,i)]; i = i + 1
-        local c2 = b64index[str:sub(i,i)]; i = i + 1
+	while i <= n do
+		local c1 = b64index[str:sub(i,i)]; i = i + 1
+		local c2 = b64index[str:sub(i,i)]; i = i + 1
 
-        local c3char = str:sub(i,i)
-        local c4char = str:sub(i+1,i+1)
+		local c3char = str:sub(i,i)
+		local c4char = str:sub(i+1,i+1)
 
-        local c3 = b64index[c3char]
-        local c4 = b64index[c4char]
+		local c3 = b64index[c3char]
+		local c4 = b64index[c4char]
 
-        i = i + 2
+		i = i + 2
 
-        -- byte 1 (always present)
-        local b1 = bit.bor(bit.lshift(c1, 2), bit.rshift(c2, 4))
-        bytes[#bytes+1] = bit.band(b1, 0xFF)
+		-- byte 1 (always present)
+		local b1 = bit.bor(bit.lshift(c1, 2), bit.rshift(c2, 4))
+		bytes[#bytes+1] = bit.band(b1, 0xFF)
 
-        -- byte 2 (only if c3 is not padding)
-        if c3char ~= "=" then
-            local b2 = bit.bor(bit.lshift(bit.band(c2, 15), 4), bit.rshift(c3, 2))
-            bytes[#bytes+1] = bit.band(b2, 0xFF)
-        else
-            -- c3 is padding → stop decoding this quartet
-            break
-        end
+		-- byte 2 (only if c3 is not padding)
+		if c3char ~= "=" then
+			local b2 = bit.bor(bit.lshift(bit.band(c2, 15), 4), bit.rshift(c3, 2))
+			bytes[#bytes+1] = bit.band(b2, 0xFF)
+		else
+			-- c3 is padding → stop decoding this quartet
+			break
+		end
 
-        -- byte 3 (only if c4 is not padding)
-        if c4char ~= "=" then
-            local b3 = bit.bor(bit.lshift(bit.band(c3, 3), 6), c4)
-            bytes[#bytes+1] = bit.band(b3, 0xFF)
-        else
-            -- c4 is padding → stop decoding this quartet
-            break
-        end
-    end
+		-- byte 3 (only if c4 is not padding)
+		if c4char ~= "=" then
+			local b3 = bit.bor(bit.lshift(bit.band(c3, 3), 6), c4)
+			bytes[#bytes+1] = bit.band(b3, 0xFF)
+		else
+			-- c4 is padding → stop decoding this quartet
+			break
+		end
+	end
 
-    return bytes
+	return bytes
 end
 
 local function rleEncodeBytes(bytes)
-    local out = {}
-    local n = #bytes
-    local i = 1
+	local out = {}
+	local n = #bytes
+	local i = 1
 
-    while i <= n do
-        local b = bytes[i]
+	while i <= n do
+		local b = bytes[i]
 
-        if b == 0 then
-            -- compress zero run
-            local run = 1
-            while i + run <= n and bytes[i + run] == 0 and run < 255 do
-                run = run + 1
-            end
-            out[#out+1] = 0      -- marker: zero-run
-            out[#out+1] = run    -- run length
-            i = i + run
-        else
-            -- emit raw byte
-            out[#out+1] = b
-            i = i + 1
-        end
-    end
+		if b == 0 then
+			-- compress zero run
+			local run = 1
+			while i + run <= n and bytes[i + run] == 0 and run < 255 do
+				run = run + 1
+			end
+			out[#out+1] = 0      -- marker: zero-run
+			out[#out+1] = run    -- run length
+			i = i + run
+		else
+			-- emit raw byte
+			out[#out+1] = b
+			i = i + 1
+		end
+	end
 
-    return out
+	return out
 end
 
 local function rleDecodeBytes(bytes)
-    local out = {}
-    local n = #bytes
-    local i = 1
+	local out = {}
+	local n = #bytes
+	local i = 1
 
-    while i <= n do
-        local b = bytes[i]
+	while i <= n do
+		local b = bytes[i]
 
-        if b == 0 then
-            -- zero-run marker
-            local run = bytes[i+1]
-            for _ = 1, run do
-                out[#out+1] = 0
-            end
-            i = i + 2
-        else
-            out[#out+1] = b
-            i = i + 1
-        end
-    end
+		if b == 0 then
+			-- zero-run marker
+			local run = bytes[i+1]
+			for _ = 1, run do
+				out[#out+1] = 0
+			end
+			i = i + 2
+		else
+			out[#out+1] = b
+			i = i + 1
+		end
+	end
 
-    return out
+	return out
 end
 
 local function serializeSet(tbl)
-    local rows = {}
+	local rows = {}
 
-    for value in pairs(tbl) do
+	for value in pairs(tbl) do
 		value = tonumber(value) or 0
-        if value >= 1 and value <= 9999999 then
-            local row = idiv(value - 1, ROW_BITS)
-            local offset = (value - 1) % ROW_BITS
+		if value >= 1 and value <= 9999999 then
+			local row = idiv(value - 1, ROW_BITS)
+			local offset = (value - 1) % ROW_BITS
 
-            local byteIndex = idiv(offset, 8) + 1
-            local bitMask = bit.lshift(1, offset % 8)
+			local byteIndex = idiv(offset, 8) + 1
+			local bitMask = bit.lshift(1, offset % 8)
 
-            local rowData = rows[row]
-            if not rowData then
-                rowData = {}
-                for i = 1, ROW_BYTES do rowData[i] = 0 end
-                rows[row] = rowData
-            end
+			local rowData = rows[row]
+			if not rowData then
+				rowData = {}
+				for i = 1, ROW_BYTES do rowData[i] = 0 end
+				rows[row] = rowData
+			end
 
-            rowData[byteIndex] = bit.bor(rowData[byteIndex], bitMask)
-        end
-    end
+			rowData[byteIndex] = bit.bor(rowData[byteIndex], bitMask)
+		end
+	end
 
-    local parts = {}
+	local parts = {}
 
-    for rowIndex, rowData in pairs(rows) do
-        -- RLE compress the byte array BEFORE Base64
-        local rle = rleEncodeBytes(rowData)
-        local encoded = b64encode(rle)
+	for rowIndex, rowData in pairs(rows) do
+		-- RLE compress the byte array BEFORE Base64
+		local rle = rleEncodeBytes(rowData)
+		local encoded = b64encode(rle)
 
-        parts[#parts+1] = rowIndex .. rowIdSep .. encoded
-    end
+		parts[#parts+1] = rowIndex .. rowIdSep .. encoded
+	end
 
-    return table.concat(parts, rowEnd)
+	return table.concat(parts, rowEnd)
 end
 ser.bitarray = serializeSet
 
 local function deserializeSet(str, result)
-    result = result or {}
-    local rowmatch = "([^"..rowEnd.."]+)"
-    local b64match = "^(%d+)"..rowIdSep.."(.+)$"
+	result = result or {}
+	local rowmatch = "([^"..rowEnd.."]+)"
+	local b64match = "^(%d+)"..rowIdSep.."(.+)$"
 
-    for chunk in string.gmatch(str, rowmatch) do
-        local rowIndex, b64 = chunk:match(b64match)
-        rowIndex = tonumber(rowIndex)
+	for chunk in string.gmatch(str, rowmatch) do
+		local rowIndex, b64 = chunk:match(b64match)
+		rowIndex = tonumber(rowIndex)
 
-        local rle = b64decode(b64)
-        local bytes = rleDecodeBytes(rle)
+		local rle = b64decode(b64)
+		local bytes = rleDecodeBytes(rle)
 
-        for byteIndex = 1, #bytes do
-            local byte = bytes[byteIndex]
-            if byte ~= 0 then
-                for bitpos = 0, 7 do
-                    local mask = bit.lshift(1, bitpos)
-                    if bit.band(byte, mask) ~= 0 then
-                        local offset = (byteIndex - 1) * 8 + bitpos
-                        local value = rowIndex * ROW_BITS + offset + 1
-                        result[value] = 1
-                    end
-                end
-            end
-        end
-    end
+		for byteIndex = 1, #bytes do
+			local byte = bytes[byteIndex]
+			if byte ~= 0 then
+				for bitpos = 0, 7 do
+					local mask = bit.lshift(1, bitpos)
+					if bit.band(byte, mask) ~= 0 then
+						local offset = (byteIndex - 1) * 8 + bitpos
+						local value = rowIndex * ROW_BITS + offset + 1
+						result[value] = 1
+					end
+				end
+			end
+		end
+	end
 
-    return result
+	return result
 end
 dser.bitarray = deserializeSet
 
 -- Trie-based nested serialization
 local function trieInsert(root, value)
-    local s = tostring(value)
-    local node = root
+	local s = tostring(value)
+	local node = root
 
-    for i = 1, #s do
-        local digit = s:sub(i,i)
-        node[digit] = node[digit] or {}
-        node = node[digit]
-    end
+	for i = 1, #s do
+		local digit = s:sub(i,i)
+		node[digit] = node[digit] or {}
+		node = node[digit]
+	end
 
-    node.leaf = true
+	node.leaf = true
 end
 
 local function compressLeafChildren(children)
-    -- children are strings like "4", "5", "6"
-    table.sort(children)
+	-- children are strings like "4", "5", "6"
+	table.sort(children)
 
-    local out = {}
-    local i = 1
+	local out = {}
+	local i = 1
 
-    while i <= #children do
-        local start = tonumber(children[i])
-        local finish = start
-        local j = i + 1
+	while i <= #children do
+		local start = tonumber(children[i])
+		local finish = start
+		local j = i + 1
 
-        while j <= #children do
-            local nextVal = tonumber(children[j])
-            if nextVal == finish + 1 then
-                finish = nextVal
-                j = j + 1
-            else
-                break
-            end
-        end
+		while j <= #children do
+			local nextVal = tonumber(children[j])
+			if nextVal == finish + 1 then
+				finish = nextVal
+				j = j + 1
+			else
+				break
+			end
+		end
 
-        if finish > start then
-            out[#out+1] = start .. "-" .. finish
-        else
-            out[#out+1] = tostring(start)
-        end
+		if finish > start then
+			out[#out+1] = start .. "-" .. finish
+		else
+			out[#out+1] = tostring(start)
+		end
 
-        i = j
-    end
+		i = j
+	end
 
-    return out
+	return out
 end
 
 local function serializeNode(node)
-    local leafChildren = {}
-    local branchChildren = {}
+	local leafChildren = {}
+	local branchChildren = {}
 
-    for digit, child in pairs(node) do
-        if digit ~= "leaf" then
-            local sub = serializeNode(child)
-            if sub == "" then
-                -- leaf child
-                leafChildren[#leafChildren+1] = digit
-            else
-                -- branch child
-                branchChildren[#branchChildren+1] = digit .. sub
-            end
-        end
-    end
+	for digit, child in pairs(node) do
+		if digit ~= "leaf" then
+			local sub = serializeNode(child)
+			if sub == "" then
+				-- leaf child
+				leafChildren[#leafChildren+1] = digit
+			else
+				-- branch child
+				branchChildren[#branchChildren+1] = digit .. sub
+			end
+		end
+	end
 
-    table.sort(branchChildren)
+	table.sort(branchChildren)
 
-    -- Only compress if ALL children are leaf nodes
-    local children
-    if #branchChildren == 0 and #leafChildren > 0 then
-        children = compressLeafChildren(leafChildren)
-    else
-        -- mix of leaf + branch → no compression
-        for _, d in ipairs(leafChildren) do
-            branchChildren[#branchChildren+1] = d
-        end
-        table.sort(branchChildren)
-        children = branchChildren
-    end
+	-- Only compress if ALL children are leaf nodes
+	local children
+	if #branchChildren == 0 and #leafChildren > 0 then
+		children = compressLeafChildren(leafChildren)
+	else
+		-- mix of leaf + branch → no compression
+		for _, d in ipairs(leafChildren) do
+			branchChildren[#branchChildren+1] = d
+		end
+		table.sort(branchChildren)
+		children = branchChildren
+	end
 
-    local childStr = table.concat(children, ",")
+	local childStr = table.concat(children, ",")
 
-    if node.leaf then
-        if #children == 0 then
-            return ""
-        else
-            return ".(" .. childStr .. ")"
-        end
-    else
-        if #children == 0 then
-            return "()"
-        else
-            return "(" .. childStr .. ")"
-        end
-    end
+	if node.leaf then
+		if #children == 0 then
+			return ""
+		else
+			return ".(" .. childStr .. ")"
+		end
+	else
+		if #children == 0 then
+			return "()"
+		else
+			return "(" .. childStr .. ")"
+		end
+	end
 end
 
 local function serializeTrieSet(tbl)
-    local root = {}
+	local root = {}
 
-    for value in pairs(tbl) do
-        trieInsert(root, value)
-    end
+	for value in pairs(tbl) do
+		trieInsert(root, value)
+	end
 
-    local parts = {}
-    for digit, child in pairs(root) do
-        parts[#parts+1] = digit .. serializeNode(child)
-    end
+	local parts = {}
+	for digit, child in pairs(root) do
+		parts[#parts+1] = digit .. serializeNode(child)
+	end
 
-    table.sort(parts)
-    return table.concat(parts, ",")
+	table.sort(parts)
+	return table.concat(parts, ",")
 end
 ser.trie = serializeTrieSet
 
 local function parseChildToken(str, i)
-    -- token can be:
-    --   digit
-    --   digit-digit
-    --   digit(...)
-    --   digit.(...)
-    --
-    -- First read the digit
-    local digit = str:sub(i,i)
-    i = i + 1
+	-- token can be:
+	--   digit
+	--   digit-digit
+	--   digit(...)
+	--   digit.(...)
+	--
+	-- First read the digit
+	local digit = str:sub(i,i)
+	i = i + 1
 
-    -- Check for range: digit-digit
-    if str:sub(i,i) == "-" then
-        i = i + 1
-        local endDigit = str:sub(i,i)
-        i = i + 1
-        return { range = { tonumber(digit), tonumber(endDigit) } }, i
-    end
+	-- Check for range: digit-digit
+	if str:sub(i,i) == "-" then
+		i = i + 1
+		local endDigit = str:sub(i,i)
+		i = i + 1
+		return { range = { tonumber(digit), tonumber(endDigit) } }, i
+	end
 
-    -- Check for leaf marker
-    local leaf = false
-    if str:sub(i,i) == "." then
-        leaf = true
-        i = i + 1
-    end
+	-- Check for leaf marker
+	local leaf = false
+	if str:sub(i,i) == "." then
+		leaf = true
+		i = i + 1
+	end
 
-    -- Check for children
-    if str:sub(i,i) == "(" then
-        i = i + 1
-        local children = {}
+	-- Check for children
+	if str:sub(i,i) == "(" then
+		i = i + 1
+		local children = {}
 
-        while true do
-            local c = str:sub(i,i)
+		while true do
+			local c = str:sub(i,i)
 
-            if c >= "0" and c <= "9" then
-                local child
-                child, i = parseChildToken(str, i)
-                children[#children+1] = child
+			if c >= "0" and c <= "9" then
+				local child
+				child, i = parseChildToken(str, i)
+				children[#children+1] = child
 
-            elseif c == ")" then
-                i = i + 1
-                break
+			elseif c == ")" then
+				i = i + 1
+				break
 
-            elseif c == "," then
-                i = i + 1
+			elseif c == "," then
+				i = i + 1
 
-            else
-                error("Unexpected char: " .. c)
-            end
-        end
+			else
+				error("Unexpected char: " .. c)
+			end
+		end
 
-        return { digit = digit, leaf = leaf, children = children }, i
-    end
+		return { digit = digit, leaf = leaf, children = children }, i
+	end
 
-    -- Simple leaf
-    return { digit = digit, leaf = true, children = {} }, i
+	-- Simple leaf
+	return { digit = digit, leaf = true, children = {} }, i
 end
 
 local function parseNode(str, i)
-    return parseChildToken(str, i)
+	return parseChildToken(str, i)
 end
 
 local function parseForest(str)
-    local i = 1
-    local nodes = {}
+	local i = 1
+	local nodes = {}
 
-    while i <= #str do
-        local node
-        node, i = parseNode(str, i)
-        nodes[#nodes+1] = node
+	while i <= #str do
+		local node
+		node, i = parseNode(str, i)
+		nodes[#nodes+1] = node
 
-        if str:sub(i,i) == "," then
-            i = i + 1
-        else
-            break
-        end
-    end
+		if str:sub(i,i) == "," then
+			i = i + 1
+		else
+			break
+		end
+	end
 
-    return nodes
+	return nodes
 end
 
 local function expandTrie(node, prefix, out)
-    if node.range then
-        for d = node.range[1], node.range[2] do
-            out[tonumber(prefix .. d)] = 1
-        end
-        return
-    end
+	if node.range then
+		for d = node.range[1], node.range[2] do
+			out[tonumber(prefix .. d)] = 1
+		end
+		return
+	end
 
-    local newPrefix = prefix .. node.digit
+	local newPrefix = prefix .. node.digit
 
-    if node.leaf then
-        out[tonumber(newPrefix)] = 1
-    end
+	if node.leaf then
+		out[tonumber(newPrefix)] = 1
+	end
 
-    for _, child in ipairs(node.children) do
-        expandTrie(child, newPrefix, out)
-    end
+	for _, child in ipairs(node.children) do
+		expandTrie(child, newPrefix, out)
+	end
 end
 
 local function deserializeTrieSet(str)
-    local forest = parseForest(str)
-    local result = {}
+	local forest = parseForest(str)
+	local result = {}
 
-    for _, node in ipairs(forest) do
-        expandTrie(node, "", result)
-    end
+	for _, node in ipairs(forest) do
+		expandTrie(node, "", result)
+	end
 
-    return result
+	return result
 end
 dser.trie = deserializeTrieSet
 
 local function serializeKV(tbl)
-    local parts = {}
+	local parts = {}
 
-    for k, v in pairs(tbl) do
-        parts[#parts+1] = tostring(k) .. rowIdSep .. tostring(v)
-    end
+	for k, v in pairs(tbl) do
+		parts[#parts+1] = tostring(k) .. rowIdSep .. tostring(v)
+	end
 
-    table.sort(parts) -- optional but makes output deterministic
-    return table.concat(parts, rowEnd)
+	table.sort(parts) -- optional but makes output deterministic
+	return table.concat(parts, rowEnd)
 end
 ser.numnumtbl = serializeKV
 
 local function deserializeKV(str)
-    local tbl = {}
+	local tbl = {}
 
-    for pair in string.gmatch(str, "([^"..rowEnd.."]+)") do
-        local k, v = pair:match("([^:]+)"..rowIdSep.."([^:]+)")
-        if k and v then
-            tbl[tonumber(k)] = tonumber(v)
-        end
-    end
+	for pair in string.gmatch(str, "([^"..rowEnd.."]+)") do
+		local k, v = pair:match("([^:]+)"..rowIdSep.."([^:]+)")
+		if k and v then
+			tbl[tonumber(k)] = tonumber(v)
+		end
+	end
 
-    return tbl
+	return tbl
 end
 dser.numnumtbl = deserializeKV
-
 
 
 -- Debugging
@@ -1826,7 +1825,7 @@ local BlacklistedTooltipFields = {
 };
 local eligibleFields = { "Buildings","GarrisonBuildings","Factions","FlightPaths","Exploration","Spells" };
 local function SortByCharacterLevel(a,b)
-  return (a.lvl or 0) > (b.lvl or 0);
+	return (a.lvl or 0) > (b.lvl or 0);
 end
 
 local function GetCharacterRaceText(character)

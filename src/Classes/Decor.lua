@@ -1,4 +1,3 @@
-
 -- App locals
 local _, app = ...
 
@@ -24,7 +23,7 @@ local C_HousingCatalog_GetCatalogEntryInfo,C_HouseEditor_IsHouseEditorActive,C_T
 -- /dump C_HousingCatalog.GetCatalogEntryInfoByRecordID(1, 383, true)
 
 local pairs
- 	= pairs
+	= pairs
 
 local IsAccountCached = app.IsAccountCached
 app.AddEventHandler("OnStartup", function()
@@ -171,4 +170,3 @@ do
 		app.AddRandomSearchCategory("Decor", "decorID", app.L.DECOR, app.L.DECOR_DESC, app.asset("Category_Housing"));
 	end);
 end
-

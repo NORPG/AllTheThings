@@ -30,7 +30,7 @@ local CollectionCacheFunctions = {
 			achID = tonumber(id) or id
 			if achID > maxid then maxid = achID; end
 		end
-		 -- go beyond ATT max known just in case we haven't sourced the highest achievementID
+		-- go beyond ATT max known just in case we haven't sourced the highest achievementID
 		return maxid + 100
 	end,
 	RealAchievementIDs = function()

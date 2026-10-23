@@ -77,7 +77,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 									specializations[spellID] = specialization;
 								end
 							end
-							
+
 							local expansions = setmetatable({}, {
 								__index = function(t, expansionID)
 									local expansion = app.CreateExpansion(expansionID);

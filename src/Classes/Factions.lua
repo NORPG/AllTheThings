@@ -1,4 +1,3 @@
-
 -- Faction Lib
 -- Defines handling, APIs, and creation of 'Faction' Type objects
 -- TODO: revise for performance improvements/structure... this is basically copy-paste from Retail ATT

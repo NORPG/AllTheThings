@@ -1,5 +1,3 @@
-
-
 -- Analyzers Module
 local _, app = ...;
 

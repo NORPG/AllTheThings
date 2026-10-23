@@ -1,4 +1,3 @@
-
 -- Color Module
 local _, app = ...;
 local L = app.L;
@@ -37,9 +36,9 @@ local function RGBToHex(r, g, b)
 		BindComponent(b));
 end
 local function RGBToHSV(r, g, b)
-  CS:SetColorRGB(r, g, b);
-  local h,s,v = CS:GetColorHSV()
-  return {h=h,s=s,v=v}
+	CS:SetColorRGB(r, g, b);
+	local h,s,v = CS:GetColorHSV()
+	return {h=h,s=s,v=v}
 end
 local function Colorize(str, hex)
 	return "|c"..hex..str.."|r";

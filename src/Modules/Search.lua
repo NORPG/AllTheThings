@@ -1,4 +1,3 @@
-
 -- Search Module
 local _, app = ...;
 

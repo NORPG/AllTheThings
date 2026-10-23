@@ -1,4 +1,3 @@
-
 local app = select(2, ...);
 
 -- Guild Achievement Lib

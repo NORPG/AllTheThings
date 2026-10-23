@@ -1,4 +1,3 @@
-
 local _, app = ...;
 
 --- @type function,function,function,function,function,function

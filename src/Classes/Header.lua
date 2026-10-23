@@ -1,4 +1,3 @@
-
 local _, app = ...
 
 -- Globals

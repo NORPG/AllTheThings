@@ -18,46 +18,46 @@ local __TomTomWaypointCache = setmetatable({}, app.MetaTable.AutoTableOfTablesOf
 local __TomTomWaypointCount, __PlottedGroup;
 -- Determine the best (closest) waypoint compared to player location
 local function PlotBestWaypoint()
-    local pmap, px, py = app.GetPlayerPosition()
+	local pmap, px, py = app.GetPlayerPosition()
 
-    local bestMap, bestX, bestY
-    local bestDist = 999999
+	local bestMap, bestX, bestY
+	local bestDist = 999999
 
 	-- app.PrintDebug("check best coord for player loc",pmap,px,py)
-    for mapID, c in pairs(__TomTomWaypointCache) do
-        for x, d in pairs(c) do
-            for y, datas in pairs(d) do
-                local dist
-                if mapID == pmap then
-                    -- Same map → direct Euclidean distance
-                    dist = (px - x/10)^2 + (py - y/10)^2
+	for mapID, c in pairs(__TomTomWaypointCache) do
+		for x, d in pairs(c) do
+			for y, datas in pairs(d) do
+				local dist
+				if mapID == pmap then
+					-- Same map → direct Euclidean distance
+					dist = (px - x/10)^2 + (py - y/10)^2
 					-- app.PrintDebug("on map dist",dist,"for",px,x/10,py,y/10)
-                else
-                    -- Different map → treat as "far but valid"
-                    dist = 999999 - 1
+				else
+					-- Different map → treat as "far but valid"
+					dist = 999999 - 1
 					-- app.PrintDebug("other map dist",dist)
-                end
+				end
 
-                if dist < bestDist then
-                    bestDist = dist
-                    bestMap = mapID
-                    bestX = x/10
-                    bestY = y/10
+				if dist < bestDist then
+					bestDist = dist
+					bestMap = mapID
+					bestX = x/10
+					bestY = y/10
 					-- app.PrintDebug("new best coord @ dist",bestDist,bestMap,bestX,bestY)
-                end
-            end
-        end
-    end
+				end
+			end
+		end
+	end
 
-    if bestMap then
-        C_SuperTrack.SetSuperTrackedUserWaypoint(false)
-        C_Map.ClearUserWaypoint()
-        local mapPoint = UiMapPoint.CreateFromCoordinates(bestMap, bestX / 100, bestY / 100)
+	if bestMap then
+		C_SuperTrack.SetSuperTrackedUserWaypoint(false)
+		C_Map.ClearUserWaypoint()
+		local mapPoint = UiMapPoint.CreateFromCoordinates(bestMap, bestX / 100, bestY / 100)
 		-- app.PrintDebug("plotting waypoint in map",bestMap)
 		-- app.PrintTable(mapPoint)
-        C_Map.SetUserWaypoint(mapPoint)
-        C_SuperTrack.SetSuperTrackedUserWaypoint(true)
-    end
+		C_Map.SetUserWaypoint(mapPoint)
+		C_SuperTrack.SetSuperTrackedUserWaypoint(true)
+	end
 end
 local function PlotCachedCoords()
 	if TomTom then

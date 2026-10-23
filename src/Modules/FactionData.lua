@@ -1,4 +1,3 @@
-
 -- Faction Data Module
 local _, app = ...;
 
@@ -100,4 +99,3 @@ api.AddQuestsTooltipWithReputation = function(tooltipInfo, text, quests, repPerT
 	end
 	return repPerTurnIn;
 end
-

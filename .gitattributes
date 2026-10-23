@@ -9,6 +9,9 @@
 .contrib/db-sync/*.cmd text eol=crlf
 # lua script
 *.lua       text eol=crlf
+/AllTheThings.lua text eol=lf
+/lib/**/*.lua  text eol=lf
+/src/**/*.lua  text eol=lf
 # project config / tool config
 *.config    text eol=crlf
 # WOW addon filelist

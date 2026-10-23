@@ -1,4 +1,3 @@
-
 local app = select(2, ...);
 
 -- Use the Mounts & Battle Pets Lib for Classic/TBC

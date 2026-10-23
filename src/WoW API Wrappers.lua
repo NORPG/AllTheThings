@@ -215,7 +215,7 @@ C_Spell and C_Spell.GetSpellCooldown and
 	function(spellIdentifier) local t = C_Spell.GetSpellCooldown(spellIdentifier)
 	return t and t.startTime or 0 end,
 	GetSpellCooldown);
-	
+
 AssignAPIWrapper("GetSpellName",
 	C_Spell and C_Spell.GetSpellName,
 	GetSpellInfo);
@@ -236,8 +236,8 @@ AssignAPIWrapper("GetSpellTabInfo", C_SpellBook and C_SpellBook.GetSpellBookSkil
 -- Aura APIs
 local C_UnitAuras = C_UnitAuras;
 AssignAPIWrapper("GetPlayerAuraBySpellID",
-    C_UnitAuras and C_UnitAuras.GetPlayerAuraBySpellID,
-    GetPlayerAuraBySpellID,
+	C_UnitAuras and C_UnitAuras.GetPlayerAuraBySpellID,
+	GetPlayerAuraBySpellID,
 	app.EmptyFunction);
 
 ---@diagnostic enable: deprecated

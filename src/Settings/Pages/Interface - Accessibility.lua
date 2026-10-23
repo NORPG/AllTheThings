@@ -151,7 +151,6 @@ local buttonMountColor = child:CreateButton(
 buttonMountColor:SetPoint("TOPLEFT", textMount, "BOTTOMLEFT", 0, -5)
 
 
-
 local headerWindowColors = child:CreateHeaderLabel(L.WINDOW_COLORS)
 headerWindowColors:SetPoint("LEFT", headerColors, 0, 0)
 headerWindowColors:SetPoint("TOP", buttonMountColor, "BOTTOM", 0, -20)

@@ -1016,7 +1016,6 @@ end, {
 })
 
 
-
 -- Instance Class
 local instanceFields = {
 	name = function(t)

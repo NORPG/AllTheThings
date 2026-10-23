@@ -25,8 +25,6 @@ app.SetSkipLevel = function(level)
 end
 
 
-
-
 local pairs,rawget,math_floor,unpack
 	= pairs,rawget,math.floor,unpack
 

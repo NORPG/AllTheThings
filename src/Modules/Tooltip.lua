@@ -1,4 +1,3 @@
-
 -- Tooltip Module
 local _, app = ...;
 local L = app.L;
@@ -118,7 +117,7 @@ else
 	GetBestObjectIDForName = function(name)
 		-- Account for Blizzard Shenanigans
 		if issecretvalue(name) then return; end
-		
+
 		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
 		-- then correlate those search results by closest distance to the player's current position
 		--print("GetBestObjectIDForName:", "'" .. (name or RETRIEVING_DATA) .. "'");

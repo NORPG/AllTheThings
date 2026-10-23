@@ -1,4 +1,3 @@
-
 -- App locals
 local _, app = ...;
 

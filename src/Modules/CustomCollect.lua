@@ -1,4 +1,3 @@
-
 -- CustomCollect Module
 local _, app = ...
 

@@ -1,4 +1,3 @@
-
 -- Character Unlock Class
 local _, app = ...
 

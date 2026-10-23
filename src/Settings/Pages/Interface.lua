@@ -508,10 +508,6 @@ checkboxAllowWrapping:SetATTTooltip(L.WITH_WRAPPING_CHECKBOX_TOOLTIP)
 checkboxAllowWrapping:AlignBelow(checkboxUnsorted)
 
 
-
-
-
-
 local headerCharacterInformation = child:CreateTextLabel("|cffFFFFFF"..L.CHARACTER_INFORMATION_LABEL)
 headerCharacterInformation:SetWidth(170)
 headerCharacterInformation:SetWordWrap(false)

@@ -1,4 +1,3 @@
-
 -- Sort lib
 local _, app = ...;
 
@@ -531,7 +530,7 @@ local function SortGroup(group, sortType)
 	-- app.PrintDebug("SortGroup", group.parent and group.parent.text, group.text, sortType);
 	if group.g then
 		-- either sort visible groups or by conditional
-        if group.visible then
+		if group.visible then
 			-- app.PrintDebug("sorting",group.hash,"by",sortType)
 			local status,err = app.Sort(group.g, app.SortDefaults[sortType]);
 			if status then

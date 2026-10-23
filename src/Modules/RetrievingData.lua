@@ -1,5 +1,3 @@
-
-
 -- Retrieving Data Module
 local _, app = ...;
 

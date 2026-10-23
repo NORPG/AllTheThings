@@ -3345,9 +3345,9 @@ local function AssignCategoryForResult(self, categories, result)
 	local category = categories[categoryType];
 	if not category then
 		if categoryType == "raid" then
-            category = app.CreateRawText(GROUP_FINDER, {
-                icon = app.asset("Category_D&R"),
-            });
+			category = app.CreateRawText(GROUP_FINDER, {
+				icon = app.asset("Category_D&R"),
+			});
 		elseif type(categoryType) == "number" then
 			category = app.CreateCustomHeader(categoryType);
 		else
