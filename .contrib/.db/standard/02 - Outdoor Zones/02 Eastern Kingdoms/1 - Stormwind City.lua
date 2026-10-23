@@ -1453,9 +1453,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
 							timeline = { ADDED_6_1_0 },
 							groups = {
-								i(122674, {	-- S.E.L.F.I.E. Camera MkII
-									timeline = { ADDED_6_1_0 },
-								}),
+								i(122674),	-- S.E.L.F.I.E. Camera MkII
 							},
 						}),
 					},

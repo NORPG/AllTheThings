@@ -1887,9 +1887,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(5335, {	-- A Sack of Coins
-							i(4957, {	-- Old Moneybag
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(4957),	-- Old Moneybag
 						}),
 					},
 				}),

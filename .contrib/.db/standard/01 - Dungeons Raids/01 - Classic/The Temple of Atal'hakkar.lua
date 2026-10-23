@@ -556,17 +556,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						lvl = 46,
 						groups = {
 							i(10773, {	-- Hakkari Urn
-								groups = {
-									i(10781, {	-- Hakkari Breastplate
-										timeline = { REMOVED_4_0_3 },
-									}),
-									i(10782, {	-- Hakkari Shroud
-										timeline = { REMOVED_4_0_3 },
-									}),
-									i(10780, {	-- Mark of Hakkar
-										timeline = { REMOVED_4_0_3 },
-									}),
-								},
+								i(10781),	-- Hakkari Breastplate
+								i(10782),	-- Hakkari Shroud
+								i(10780),	-- Mark of Hakkar
 							}),
 						},
 					}),

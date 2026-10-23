@@ -994,9 +994,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						}},
 						groups = {
 							DARKMOON_PRIZE_TICKET,
-							i(116064, {	-- Syd the Squid (PET!)
-								timeline = { ADDED_6_0_2 },
-							}),
+							i(116064),	-- Syd the Squid (PET!)
 						},
 					}),
 				},
@@ -1614,9 +1612,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						}},
 						groups = {
 							DARKMOON_PRIZE_TICKET,
-							i(91040, {	-- Darkmoon Eye (PET!)
-								timeline = { ADDED_5_1_0 },
-							}),
+							i(91040),	-- Darkmoon Eye (PET!)
 						},
 					}),
 				},
@@ -2948,9 +2944,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					ach(9894, {	-- Triumphant Turtle Tossing
 						timeline = { ADDED_6_1_0 },
 						groups = {
-							i(122123, {	-- Darkmoon Ring-Flinger (TOY!)
-								timeline = { ADDED_6_1_0 },
-							}),
+							i(122123),	-- Darkmoon Ring-Flinger (TOY!)
 						},
 					}),
 					-- #if AFTER 5.2.0
@@ -2983,9 +2977,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					ach(9885, {	-- Ace Tonk Commander
 						timeline = { ADDED_6_1_0 },
 						groups = {
-							i(122122, {	-- Darkmoon Tonk Controller (TOY!)
-								timeline = { ADDED_6_1_0 },
-							}),
+							i(122122),	-- Darkmoon Tonk Controller (TOY!)
 						},
 					}),
 					-- #if AFTER 5.2.0

@@ -739,12 +739,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					lvl = 40,
 					groups = {
 						i(8703,	{	-- Signet of Expertise
-							groups = {
-								i(8708, {	-- Hammer of Expertise
-									timeline = { REMOVED_4_0_3 },
-									collectible = false,
-								}),
-							},
+							i(8708, {	-- Hammer of Expertise
+								collectible = false,
+							}),
 						}),
 					},
 				}),

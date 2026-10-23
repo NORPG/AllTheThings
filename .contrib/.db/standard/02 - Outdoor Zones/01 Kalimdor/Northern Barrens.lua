@@ -139,14 +139,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- CRIEVE NOTE: Not sure if there's a source achievement or quest required to do first.
 							groups = {
 								i(142447, {	-- Torn Sack of Pet Supplies
-									groups = {
-										i(142448, {	-- Albino Buzzard (PET!)
-											timeline = { ADDED_7_1_0 },
-										}),
-										i(89587, {	-- Porcupette (PET!)
-											timeline = { ADDED_7_1_0 },
-										}),
-									},
+									i(142448),	-- Albino Buzzard (PET!)
+									i(89587),	-- Porcupette (PET!)
 								}),
 							},
 						}),
@@ -2226,9 +2220,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(5335, {	-- A Sack of Coins
-							i(4957, {	-- Old Moneybag
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(4957),	-- Old Moneybag
 						}),
 					},
 				}),

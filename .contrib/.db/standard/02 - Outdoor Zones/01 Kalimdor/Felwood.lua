@@ -348,9 +348,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							provider = { "i", 11522 },	-- Silver Totem of Aquementas
 						}),
 						i(11617, {	-- Eridan's Supplies
-							i(11169, {	-- Book of Aquor
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(11169),	-- Book of Aquor
 						}),
 						i(11522, {	-- Silver Totem of Aquementas
 							providers = { "i", 11169 },	-- Book of Aquor

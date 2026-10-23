@@ -819,14 +819,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(57540, {	-- Coldridge Mountaineer's Pouch
-									groups = {
-										i(57542, {	-- Coldridge Mountaineer's Pouch
-											timeline = { ADDED_4_0_3 },
-										}),
-										i(57541, {	-- Ragged Wolf Hide Cloak
-											timeline = { ADDED_4_0_3 },
-										}),
-									},
+									i(57542),	-- Coldridge Mountaineer's Pouch
+									i(57541),	-- Ragged Wolf Hide Cloak
 								}),
 							},
 						}),
@@ -1539,11 +1533,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									-- CRIEVE NOTE: Not sure if there's a source achievement or quest required to do first.
 									groups = {
 										i(151638, {	-- Leprous Sack of Pet Supplies
-											groups = {
-												i(151645, {	-- Dibbler (PET!)
-													timeline = { ADDED_7_3_0 },
-												}),
-											},
+											i(151645),	-- Dibbler (PET!)
 										}),
 									},
 								}),

@@ -815,9 +815,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(9658),	-- Boots of the Maharishi
 						i(9660),	-- Stargazer Cloak
 						o(144064, {	-- Gordunni Dirt Mound
-							i(15794, {	-- Ripped Ogre Loincloth
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(15794),	-- Ripped Ogre Loincloth
 						}),
 					},
 				}),

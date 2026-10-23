@@ -247,17 +247,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					lvl = 60,
 					groups = {
 						i(20603, {	-- Bag of Spoils
-							groups = {
-								i(20694, {	-- Glowing Black Orb
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(20693, {	-- Weighted Cloak
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(20692, {	-- Multicolored Band
-									timeline = { REMOVED_4_0_3 },
-								}),
-							},
+							i(20694),	-- Glowing Black Orb
+							i(20693),	-- Weighted Cloak
+							i(20692),	-- Multicolored Band
 						}),
 					},
 				}),
@@ -271,17 +263,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					lvl = 60,
 					groups = {
 						i(20603, {	-- Bag of Spoils
-							groups = {
-								i(20694, {	-- Glowing Black Orb
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(20693, {	-- Weighted Cloak
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(20692, {	-- Multicolored Band
-									timeline = { REMOVED_4_0_3 },
-								}),
-							},
+							i(20694),	-- Glowing Black Orb
+							i(20693),	-- Weighted Cloak
+							i(20692),	-- Multicolored Band
 						}),
 					},
 				}),
@@ -296,17 +280,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					lvl = 54,
 					groups = {
 						i(20602, {	-- Chest of Spoils
-							groups = {
-								i(20721, {	-- Band of the Cultist
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(20722, {	-- Crystal Slugthrower
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(20720, {	-- Dark Whisper Blade
-									timeline = { REMOVED_4_0_3 },
-								}),
-							},
+							i(20721),	-- Band of the Cultist
+							i(20722),	-- Crystal Slugthrower
+							i(20720),	-- Dark Whisper Blade
 						}),
 					},
 				})),
@@ -321,20 +297,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					lvl = 54,
 					groups = {
 						i(20601, {	-- Sack of Spoils
-							groups = {
-								i(20695, {	-- Abyssal War Beads
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(20696, {	-- Crystal Spiked Maul
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(20697, {	-- Crystalline Threaded Cape
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(20698, {	-- Elemental Attuned Blade
-									timeline = { REMOVED_4_0_3 },
-								}),
-							},
+							i(20695),	-- Abyssal War Beads
+							i(20696),	-- Crystal Spiked Maul
+							i(20697),	-- Crystalline Threaded Cape
+							i(20698),	-- Elemental Attuned Blade
 						}),
 					},
 				}),
@@ -1302,17 +1268,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					lvl = 54,
 					groups = {
 						i(20602, {	-- Chest of Spoils
-							groups = {
-								i(20721, {	-- Band of the Cultist
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(20722, {	-- Crystal Slugthrower
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(20720, {	-- Dark Whisper Blade
-									timeline = { REMOVED_4_0_3 },
-								}),
-							},
+							i(20721),	-- Band of the Cultist
+							i(20722),	-- Crystal Slugthrower
+							i(20720),	-- Dark Whisper Blade
 						}),
 					},
 				})),
@@ -1459,20 +1417,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					lvl = 54,
 					groups = {
 						i(20601, {	-- Sack of Spoils
-							groups = {
-								i(20695, {	-- Abyssal War Beads
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(20696, {	-- Crystal Spiked Maul
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(20697, {	-- Crystalline Threaded Cape
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(20698, {	-- Elemental Attuned Blade
-									timeline = { REMOVED_4_0_3 },
-								}),
-							},
+							i(20695),	-- Abyssal War Beads
+							i(20696),	-- Crystal Spiked Maul
+							i(20697),	-- Crystalline Threaded Cape
+							i(20698),	-- Elemental Attuned Blade
 						}),
 					},
 				}),

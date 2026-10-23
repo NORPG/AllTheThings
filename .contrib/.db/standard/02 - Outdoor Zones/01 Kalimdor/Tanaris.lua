@@ -1477,15 +1477,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(9265, {	-- Cuergo's Hidden Treasure
-							groups = {
-								i(9360, {	-- Cuergo's Gold
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(9361, {	-- Cuergo's Gold with Worm
-									timeline = { REMOVED_4_0_3 },
-								}),
-								i(9359),	-- Wirt's Third Leg (Patch 9.1.5: Renamed to 'Southsea Lamp')
-							},
+							i(9360),	-- Cuergo's Gold
+							i(9361),	-- Cuergo's Gold with Worm
+							i(9359),	-- Wirt's Third Leg (Patch 9.1.5: Renamed to 'Southsea Lamp')
 						}),
 					},
 				}),
@@ -2883,18 +2877,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(8647, {	-- Egg Crate
 							timeline = { DELETED_4_0_3 },
 							groups = {
-								i(8646, {	-- Bad Egg
-									timeline = { DELETED_4_0_3 },
-								}),
-								i(8643, {	-- Extraordinary Egg
-									timeline = { DELETED_4_0_3 },
-								}),
-								i(8644, {	-- Fine Egg
-									timeline = { DELETED_4_0_3 },
-								}),
-								i(8645, {	-- Ordinary Egg
-									timeline = { DELETED_4_0_3 },
-								}),
+								i(8646),	-- Bad Egg
+								i(8643),	-- Extraordinary Egg
+								i(8644),	-- Fine Egg
+								i(8645),	-- Ordinary Egg
 							},
 						}),
 					},
@@ -2911,18 +2897,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(8647, {	-- Egg Crate
 							timeline = { DELETED_4_0_3 },
 							groups = {
-								i(8646, {	-- Bad Egg
-									timeline = { DELETED_4_0_3 },
-								}),
-								i(8643, {	-- Extraordinary Egg
-									timeline = { DELETED_4_0_3 },
-								}),
-								i(8644, {	-- Fine Egg
-									timeline = { DELETED_4_0_3 },
-								}),
-								i(8645, {	-- Ordinary Egg
-									timeline = { DELETED_4_0_3 },
-								}),
+								i(8646),	-- Bad Egg
+								i(8643),	-- Extraordinary Egg
+								i(8644),	-- Fine Egg
+								i(8645),	-- Ordinary Egg
 							},
 						}),
 					},

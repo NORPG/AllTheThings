@@ -161,15 +161,12 @@ root(ROOTS.Promotions, bubbleDown({ u = REAL_MONEY }, {
 				},
 				groups = {
 					i(273162, {	-- Unexpected Gift
-						groups = {
-							i(273150, {	-- Voidfeather Dragonhawk
-								timeline = { ADDED_2_5_5, REMOVED_2_5_5_PHASE_2 },
-								description = "Earned by completing the introductory questline for Midnight in retail servers",
-									}),
-								},
-							}),
-						}
+						i(273150, {	-- Voidfeather Dragonhawk
+							description = "Earned by completing the introductory questline for Midnight in retail servers",
+						}),
 					}),
+				}
+			}),
 		-- #endif
 		},
 	}),
