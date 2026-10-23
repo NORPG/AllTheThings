@@ -288,6 +288,7 @@ end
 
 root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 	maps = { DUN_MOROGH, DUROTAR },
+	timeline = { ADDED_2_2_2 },
 	groups = {
 		n(ACHIEVEMENTS, {
 			ach(18579, { timeline = { ADDED_10_1_7 } }),	-- A Round on the House (automated)
