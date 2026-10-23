@@ -335,7 +335,7 @@ namespace ATT
             fields = Framework.Config["HierarchicalMaximumFields"];
             foreach (string field in fields ?? Array.Empty<string>())
             {
-                _heirarchicalFieldAdjustments.Add(new FieldAdjustment() { Field = field, Adjustment = MinimumField });
+                _heirarchicalFieldAdjustments.Add(new FieldAdjustment() { Field = field, Adjustment = MaximumField });
             }
             fields = Framework.Config["HierarchicalForceConsolidationFields"];
             foreach (string field in fields ?? Array.Empty<string>())
