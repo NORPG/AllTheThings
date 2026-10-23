@@ -5127,7 +5127,7 @@ ach(1166,{awp=30002,providers={{"i",18228}},g={
 crit(3403,{achID=1167,id=1}),
 crit(3403,{achID=1168,id=1,r=1,rwp=40300,u=2})}}),
 ach(226,{awp=30002}),
-crit(6626,{achID=1785,awp=30002,id=1,maps={1459,1537},providers={{"i",34753}},requireSkill=185})}),
+crit(6626,{achID=1785,awp=30003,id=1,maps={1459,1537},providers={{"i",34753}},requireSkill=185})}),
 h(-31,{
 faction(729,{icon=133287,OnTooltip=_.OnTooltipDB.ForAlteracValley,r=1}),
 faction(730,{icon=133433,OnTooltip=_.OnTooltipDB.ForAlteracValley,r=2})}),
@@ -5474,7 +5474,7 @@ ach(711,{minReputation={509,42000},phase=12,pvp=1,r=2,g={
 crit(1899,{achID=907,awp=30002,id=1,r=2})}}),
 ach(710,{minReputation={510,42000},phase=12,pvp=1,r=1,g={
 crit(646,{achID=714,awp=30002,id=1,r=1})}}),
-crit(6627,{achID=1785,awp=30002,id=1,maps={1461},providers={{"i",34753}},requireSkill=185})}),
+crit(6627,{achID=1785,awp=30003,id=1,maps={1461},providers={{"i",34753}},requireSkill=185})}),
 h(-31,{
 faction(510,{icon=237568,OnTooltip=_.OnTooltipDB.ForArathiBasin,r=1}),
 faction(509,{icon=132351,OnTooltip=_.OnTooltipDB.ForArathiBasin,r=2})}),
@@ -5871,7 +5871,7 @@ crit(444,{achID=587})}}),
 ach(1258,{awp=30002}),
 ach(783,{awp=30002,g={
 crit(3447,{achID=1171,id=1})}}),
-crit(6630,{achID=1785,awp=30002,id=1,maps={397,1956},providers={{"i",34753}},requireSkill=185})}),
+crit(6630,{achID=1785,awp=30003,id=1,maps={397,1956},providers={{"i",34753}},requireSkill=185})}),
 h(-47,{
 i(29024,{b=1,q=2,rwp=30303,u=2})})}}),
 m(169,{awp=30200,icon=236396,phase=32,g={
@@ -5990,7 +5990,7 @@ crit(7656,{achID=2195,id=1,r=1,rwp=40300,u=2})}}),
 ach(1761,{providers={{"s",60937}},g={
 crit(7657,{achID=2194,id=1}),
 crit(7657,{achID=2195,id=1,r=1,rwp=40300,u=2})}}),
-crit(6629,{achID=1785,id=1,providers={{"i",34753}}})})}}),
+crit(6629,{achID=1785,awp=30003,id=1,providers={{"i",34753}}})})}}),
 m(2340,{awp=40003,description="Tol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.",icon=236396,maps={244},g={
 h(-12,{
 ach(5489,{r=2}),
@@ -6222,7 +6222,7 @@ ach(713,{maps={1440},minReputation={890,42000},phase=12,pvp=1,r=2,g={
 crit(1901,{achID=907,awp=30002,id=1,r=2})}}),
 ach(712,{maps={1440},minReputation={889,42000},phase=12,pvp=1,r=1,g={
 crit(648,{achID=714,awp=30002,id=1,r=1})}}),
-crit(6628,{achID=1785,awp=30002,id=1,maps={1339,1460},providers={{"i",34753}},requireSkill=185})}),
+crit(6628,{achID=1785,awp=30003,id=1,maps={1339,1460},providers={{"i",34753}},requireSkill=185})}),
 h(-31,{
 faction(890,{icon=132279,maps={1440},OnTooltip=_.OnTooltipDB.ForWarsongGulch,r=2}),
 faction(889,{icon=132366,maps={1440},OnTooltip=_.OnTooltipDB.ForWarsongGulch,r=1})}),

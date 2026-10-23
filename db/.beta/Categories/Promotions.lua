@@ -268,7 +268,7 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=10,rwp=50407,u=2}),
 p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
-crit(34637,{achID=6848,awp=80300,id=3,u=2})}})}}),
+crit(34637,{achID=6848,awp=80300,id=3,u=3})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),
@@ -322,21 +322,21 @@ i(248091,{b=1,f=101,spellID=308067,u=2}),
 toy(172179,{b=1,u=2}),
 ill(6162,{b=1,itemID=172177,questID=57596,u=2})}})}}),
 x(10,{awp=100002,u=3,g={
-h(-522,{awp=90205,description="These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",rwp=100107,u=2,g={
-ach(17314,{providers={{"s",359843}},u=2}),
+h(-522,{description="These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",u=3,g={
+ach(17314,{awp=90205,providers={{"s",359843}},rwp=100107,u=2}),
 ach(17305,{awp=100005,rwp=100200,u=2}),
-mnt(359843,{b=1,itemID=248089,lvl=10,u=2}),
+mnt(359843,{awp=90205,b=1,itemID=248089,lvl=10,rwp=100107,u=2}),
 p(3177,{description="This is a pre-order bonus only available before the launch of Dragonflight.",itemID=258432,npcID=181575,rwp=100002,spellID=359855,u=2}),
-p(3175,{npcID=181535,u=2})}}),
-h(-523,{awp=90205,description="These rewards were made available to anyone who purchased Dragonflight Epic Edition.",rwp=100107,u=2,g={
-toy(193588,{b=1,u=2}),
-en(255827,{spellID=1259474,tmogSetID=2293,u=2,g={
+p(3175,{awp=90205,npcID=181535,rwp=100107,u=2})}}),
+h(-523,{description="These rewards were made available to anyone who purchased Dragonflight Epic Edition.",u=3,g={
+toy(193588,{awp=90205,b=1,rwp=100107,u=2}),
+en(255827,{awp=90205,rwp=100107,spellID=1259474,tmogSetID=2293,u=2,g={
 s(165611,188257,{f=3}),
 s(165612,188258,{f=3}),
 s(165613,188259,{f=3}),
 s(165610,188256,{f=3}),
 s(165614,188260,{f=3})}}),
-s(180744,193610,{f=2,loc=40,u=2})}})}}),
+s(180744,193610,{awp=90205,f=2,loc=40,rwp=100107,u=2})}})}}),
 x(11,{awp=110002,u=3,g={
 h(-522,{awp=100107,description="These rewards were made available to anyone who purchased The War Within Heroic Edition.",rwp=110200,u=2,g={
 ach(19027,{providers={{"s",417888}},u=2}),
@@ -607,19 +607,19 @@ i(206039,{b=1,e=422,u=2,g={
 s(187749,206004,{e=422,f=3,u=2}),
 s(187752,206020,{e=422,f=2,loc=40,u=2})}}),
 i(206003,{b=1,e=422,f=113,lvl=10,u=2}),
-i(142548,{awp=100100,b=1,e=422,rwp=100100,spellID=231424,u=2}),
-i(206274,{awp=100100,b=1,e=422,rwp=100100,spellID=412909,u=2}),
-i(142547,{awp=100100,b=1,e=422,rwp=100100,spellID=231423,u=2}),
+i(142548,{b=1,e=422,spellID=231424,u=2}),
+i(206274,{b=1,e=422,spellID=412909,u=2}),
+i(142547,{b=1,e=422,spellID=231423,u=2}),
 s(83944,143327,{b=1,e=422,f=29,u=2}),
 toy(206008,{b=1,e=422,u=2}),
-i(142549,{awp=100100,b=1,e=422,rwp=100100,spellID=231502,u=2}),
-i(142546,{awp=100100,b=1,e=422,rwp=100100,spellID=231422,u=2}),
-i(142545,{awp=100100,b=1,e=422,rwp=100100,spellID=231415,u=2}),
-i(142551,{awp=100100,b=1,e=422,rwp=100100,spellID=231503,u=2}),
+i(142549,{b=1,e=422,spellID=231502,u=2}),
+i(142546,{b=1,e=422,spellID=231422,u=2}),
+i(142545,{b=1,e=422,spellID=231415,u=2}),
+i(142551,{b=1,e=422,spellID=231503,u=2}),
 s(187751,206007,{e=422,f=3,u=2}),
 toy(142542,{b=1,e=422,u=2}),
 toy(143543,{b=1,e=422,u=2}),
-mnt(107203,{awp=100100,b=1,e=422,itemID=76755,lvl=10,rwp=100100,u=2}),
+mnt(107203,{b=1,e=422,itemID=76755,lvl=10,u=2}),
 s(187932,206275,{e=422,f=1,u=2}),
 s(187933,206276,{e=422,f=24,u=2}),
 s(187750,206005,{e=422,f=23,u=2}),

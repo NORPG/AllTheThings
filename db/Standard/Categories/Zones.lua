@@ -25821,7 +25821,7 @@ n(1323,{coords={
 [84]={{77,61.2}}},r=2,sym={{"select","itemID",2419,2420,2421,2422,3891,2418,2417,2424,2426,2427,2428,3894,2425,2423,2451,2448,2446,17189,17190,8094,8088,8089,8090,8091,8092,8093,2148,2149,2150,2151,2152,2153,17192}}}),
 n(87501,{awp=60002,coords={
 [84]={{73,59.5}}},r=2,g={
-mnt(171846,{b=1,cost=1000000000,itemID=116789,lvl=10,r=2})}}),
+mnt(171846,{b=1,cost=1000000000,itemID=116789,lvl=10})}}),
 n(167429,{awp=90001,coords={
 [84]={{79.5,69}}},description="Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",r=2,g={
 s(108839,175173,{b=1,customCollect={"NPE"},f=23,r=2}),
@@ -30710,22 +30710,22 @@ q(13189,{c={6},coords={
 q(13188,{c={6},coords={
 [23]={{83.4,49.4}}},lvl=8,qgs={31084},qis={43440},r=2,sourceQuests={13166}})}}),
 prof(960,{awp=30002,c={6},g={
-r(53428,{c={6},requireSkill=960}),
-r(53341,{c={6},requireSkill=960,rwp=60002,u=2}),
-r(326911,{awp=90001,c={6},requireSkill=960,rwp=110000,u=2}),
-r(53331,{c={6},requireSkill=960,rwp=70003,u=2}),
-r(53343,{c={6},learnedAt=500,requireSkill=960}),
-r(326805,{awp=90001,c={6},learnedAt=500,requireSkill=960}),
-r(54447,{c={6},requireSkill=960,rwp=70003,u=2}),
-r(53342,{c={6},requireSkill=960,rwp=70003,u=2}),
-r(326855,{awp=90001,c={6},learnedAt=500,requireSkill=960}),
-r(54446,{c={6},requireSkill=960,rwp=60002,u=2}),
-r(53323,{c={6},requireSkill=960,rwp=60002,u=2}),
-r(327082,{awp=90001,c={6},learnedAt=500,requireSkill=960}),
-r(53344,{c={6},learnedAt=500,requireSkill=960}),
-r(70164,{awp=30300,c={6},requireSkill=960,rwp=60002,u=2}),
-r(62158,{awp=30008,c={6},learnedAt=500,requireSkill=960}),
-r(326977,{awp=90001,c={6},learnedAt=500,requireSkill=960})}}),
+r(53428,{requireSkill=960}),
+r(53341,{requireSkill=960,rwp=60002,u=2}),
+r(326911,{awp=90001,requireSkill=960,rwp=110000,u=2}),
+r(53331,{requireSkill=960,rwp=70003,u=2}),
+r(53343,{learnedAt=500,requireSkill=960}),
+r(326805,{awp=90001,learnedAt=500,requireSkill=960}),
+r(54447,{requireSkill=960,rwp=70003,u=2}),
+r(53342,{requireSkill=960,rwp=70003,u=2}),
+r(326855,{awp=90001,learnedAt=500,requireSkill=960}),
+r(54446,{requireSkill=960,rwp=60002,u=2}),
+r(53323,{requireSkill=960,rwp=60002,u=2}),
+r(327082,{awp=90001,learnedAt=500,requireSkill=960}),
+r(53344,{learnedAt=500,requireSkill=960}),
+r(70164,{awp=30300,requireSkill=960,rwp=60002,u=2}),
+r(62158,{awp=30008,learnedAt=500,requireSkill=960}),
+r(326977,{awp=90001,learnedAt=500,requireSkill=960})}}),
 h(-58,{
 n(29587,{c={6},coords={
 [23]={{84,49.8}}},g={
@@ -79937,7 +79937,7 @@ n(81001,{coords={
 mnt(171851,{itemID=116794,lvl=10})}}),
 n(87622,{coords={
 [525]={{84.4,48},{86.6,48.6}}},description=_.L.HEADER_NAMES[-709],isBounty=1,isDaily=1,questID=37402,rwp=80001,u=2,g={
-s(67041,119366,{b=1,f=5,isBounty=1,loc=43,lvl=35,u=2})}}),
+s(67041,119366,{b=1,f=5,loc=43,lvl=35,u=2})}}),
 n(78606,{coords={
 [525]={{28.2,66.6}}},questID=34470}),
 n(76918,{coords={
@@ -104291,9 +104291,9 @@ s(94117,158024,{b=1,f=7,loc=44}),
 s(94122,158029,{b=1,f=7,loc=45}),
 s(94120,158027,{b=1,f=7,loc=46}),
 s(94116,158023,{b=1,f=7,loc=47})})}}),
-m(1462,{icon=2902390,lore="A mystery awaits that is of particular interest to the gnomes and goblins. A previously closed vault in Kul Tiras has opened and within it a radio transmitter sends a signal for help and points to a new land to explore, Mechagon. This is an ancient lost city of the gnomes. The beginning of the adventure is within the Junker Wastes where heroes will be beset by death robots, but there are potential allies nearby. Hunted by robots themselves, the mechagnomes introduce you to a whole new society and take you to where higher cast gnomes live who have dedicated themselves to their king and have embraced robotics. King Mechangon has a vision to return anyone of flesh into more pure robotic parts and it's up to you to put a stop to him.",maps={1522},petBattleLvl=25,lvl=10,g={
-m(1573,{awp=80200,icon=986486,isRaid=1,lore="A mystery awaits that is of particular interest to the gnomes and goblins. A previously closed vault in Kul Tiras has opened and within it a radio transmitter sends a signal for help and points to a new land to explore, Mechagon. This is an ancient lost city of the gnomes. The beginning of the adventure is within the Junker Wastes where heroes will be beset by death robots, but there are potential allies nearby. Hunted by robots themselves, the mechagnomes introduce you to a whole new society and take you to where higher cast gnomes live who have dedicated themselves to their king and have embraced robotics. King Mechangon has a vision to return anyone of flesh into more pure robotic parts and it's up to you to put a stop to him.",maps={1574},races={37}}),
-h(-12,{awp=80200,g={
+m(1462,{awp=80200,icon=2902390,lore="A mystery awaits that is of particular interest to the gnomes and goblins. A previously closed vault in Kul Tiras has opened and within it a radio transmitter sends a signal for help and points to a new land to explore, Mechagon. This is an ancient lost city of the gnomes. The beginning of the adventure is within the Junker Wastes where heroes will be beset by death robots, but there are potential allies nearby. Hunted by robots themselves, the mechagnomes introduce you to a whole new society and take you to where higher cast gnomes live who have dedicated themselves to their king and have embraced robotics. King Mechangon has a vision to return anyone of flesh into more pure robotic parts and it's up to you to put a stop to him.",maps={1522},petBattleLvl=25,lvl=10,g={
+m(1573,{icon=986486,isRaid=1,lore="A mystery awaits that is of particular interest to the gnomes and goblins. A previously closed vault in Kul Tiras has opened and within it a radio transmitter sends a signal for help and points to a new land to explore, Mechagon. This is an ancient lost city of the gnomes. The beginning of the adventure is within the Junker Wastes where heroes will be beset by death robots, but there are potential allies nearby. Hunted by robots themselves, the mechagnomes introduce you to a whole new society and take you to where higher cast gnomes live who have dedicated themselves to their king and have embraced robotics. King Mechangon has a vision to return anyone of flesh into more pure robotic parts and it's up to you to put a stop to him.",maps={1574},races={37}}),
+h(-12,{
 ach(13790,{description="Each criteria can be earned by creating weapons with Rocket-Chief Fuselage during the |cFFffd200Toys for Destruction|r daily.",g={
 crit(46003,{achID=13790,id=1,questID=55260}),
 crit(45999,{achID=13790,id=2,questID=55414}),
@@ -104389,8 +104389,8 @@ crit(45629,{achID=13696,id=2,providers={{"i",167071},{"n",155523}}})}}),
 ach(13489,{requireSkill=356,g={
 toy(167698,{b=1,lvl=10,requireSkill=356,sourceAchievements={13489}})}}),
 ach(13570,{pvp=1}),
-crit(45749,{achID=13623,maps={1462},pvp=1})}}),
-flt(101,{awp=80200,pb=1,g={
+crit(45749,{achID=13623,maps={1462},pvp=1})}),
+flt(101,{pb=1,g={
 h(-45,{pb=1,g={
 q(56442,{coords={
 [1462]={{39.5,40.2}}},crs={154928},lvl=10,pb=1,qss={169621},g={
@@ -104445,7 +104445,7 @@ p(2671,{npcID=154787,pb=1,g={
 crit(45589,{achID=13693,id=11,pb=1})}}),
 p(2666,{description="Rare pet. Shares spawns with |cFFFFD700Fleeting Frog|r.",npcID=154777,pb=1,g={
 crit(45587,{achID=13693,id=9,pb=1})}})}}),
-h(-28,{awp=80200,g={
+h(-28,{
 q(55348,{minReputation={2391,42000},repeatable=1,g={
 i(170061,{b=1,minReputation={2391,42000},g={
 i(168935,{b=1,c={2,5,7,10,11,13},f=55,lvl=50,minReputation={2391,42000},model=2974000,modelScale=3,spellID=299528,u=2}),
@@ -104454,8 +104454,8 @@ i(168861,{b=1,f=55,lvl=50,minReputation={2391,42000},model=2958033,modelScale=4,
 i(168906,{b=1,minReputation={2391,42000},spellID=292440}),
 i(169171,{b=1,minReputation={2391,42000},spellID=292440}),
 i(168494,{b=1,minReputation={2391,42000},spellID=292440}),
-r(297107,{b=1,itemID=168368,lvl=10,minReputation={2391,42000},requireSkill=185,skillID=2541})}})}})}}),
-h(-30,{awp=80200,g={
+r(297107,{b=1,itemID=168368,lvl=10,minReputation={2391,42000},requireSkill=185,skillID=2541})}})}})}),
+h(-30,{
 exp(10437),
 exp(10470),
 exp(10567),
@@ -104477,16 +104477,16 @@ exp(10428,{
 crit(46045,{achID=13776,id=7})}),
 exp(10468),
 exp(10467,{
-crit(46047,{achID=13776,id=6})})}}),
+crit(46047,{achID=13776,id=6})})}),
 h(-31,{
 faction(2391,{
 crit(45265,{achID=13250,id=2})})}),
-h(-32,{awp=80200,g={
+h(-32,{
 fp(2442,{coords={
 [1462]={{77.8,40.9}}},r=2}),
 fp(2441,{coords={
-[1462]={{73.5,25.8}}},r=1})}}),
-prof(2720,{awp=80200,coords={
+[1462]={{73.5,25.8}}},r=1})}),
+prof(2720,{coords={
 [1462]={{71.4,32.3}}},crs={150359},g={
 h(-23,{requireSkill=2720,g={
 i(167064,{b=1,requireSkill=2720}),
@@ -104624,7 +104624,7 @@ q(55534,{coords={
 crit(45493,{achID=13686,id=1})}}),
 q(55535,{coords={
 [1462]={{71.4,32.6}}},lvl=10,qss={168047},requireSkill=2720})}})}}),
-h(-44,{awp=80200,g={
+h(-44,{
 prof(356,{
 h(-45,{
 q(55311,{isDaily=1,lvl=10,qss={167661},g={
@@ -104666,7 +104666,7 @@ i(167660,{b=1,coords={
 i(167659,{b=1,coords={
 [1462]={{83,74}}},description="Can be caught in the far southeast - 83.74",requireSkill=356}),
 i(167658,{b=1,coords={
-[1462]={{25,77}}},description="Can be caught in the far southwest - 25.77",requireSkill=356})})})}}),
+[1462]={{25,77}}},description="Can be caught in the far southwest - 25.77",requireSkill=356})})})}),
 h(-45,{
 h(-47,{
 i(246697,{awp=110207,b=1,description="Randomly can replace the one of the rewards of between 3-4 of the island's daily quests, with some exceptions.\nUse /attwq to quickly check all daily quests visible on the map.",f=55,g={
@@ -104677,21 +104677,21 @@ de(2432,{itemID=246600,spellID=1243036})}})}),
 q(56493,{coords={
 [1462]={{72.2,37.2}}},isDaily=1,lvl=10,qgs={155188},g={
 i(169682,{b=1,crs={155201,155202,155259,155263}}),
-crit(45648,{achID=13556,awp=80200,id=31})}}),
+crit(45648,{achID=13556,id=31})}}),
 q(55688,{description="This quest is only available if you pick up the clue from the |cFFFfffffDirt Pile|r while on |cFFefc400Clues Abound|r.",isDaily=1,lvl=10,g={
 i(168243),
-crit(45251,{achID=13556,awp=80200,id=5})}}),
+crit(45251,{achID=13556,id=5})}}),
 q(56373,{coords={
 [1462]={{37,47.1}}},isDaily=1,lvl=10,qgs={151462},g={
 i(169391,{requireSkill=356})}}),
 q(55672,{description="This quest is only available if you pick up the clue from the |cFFffffffWaterlogged Scroll Case|r while on |cFFefc400Clues Abound|r.",isDaily=1,lvl=10,qgs={152633},g={
 i(168224),
-crit(45250,{achID=13556,awp=80200,id=4})}}),
+crit(45250,{achID=13556,id=4})}}),
 q(55697,{coords={
 [1462]={{71.4,38.7}}},lvl=10,qgs={150573},sourceQuests={55373},g={
 i(168281),
 i(168299),
-crit(46008,{achID=13791,awp=80200,id=5})}}),
+crit(46008,{achID=13791,id=5})}}),
 q(56557,{coords={
 [1462]={{70,31.1}}},isDaily=1,lvl=10,qgs={155355},r=1}),
 q(56559,{coords={
@@ -104699,43 +104699,43 @@ q(56559,{coords={
 q(55905,{coords={
 [1462]={{70.9,37.6}}},isDaily=1,lvl=10,qgs={153373},g={
 i(168430,{spellID=297860}),
-crit(45263,{achID=13556,awp=80200,id=14})}}),
+crit(45263,{achID=13556,id=14})}}),
 q(56142,{coords={
 [1462]={{71.8,35.8}}},description="Only available in the alternate timeline. Speak to |cFFFFD700Chromie|r when she is in town.",isDaily=1,lvl=10,qgs={154214},g={
 i(169213),
 i(169214),
 i(169212),
-crit(45371,{achID=13556,awp=80200,id=19})}}),
+crit(45371,{achID=13556,id=19})}}),
 q(55463,{coords={
 [1462]={{72.1,37.2}}},isDaily=1,lvl=10,qgs={151936},g={
 i(168582,{b=4,spellID=298429}),
-crit(45246,{achID=13556,awp=80200,id=1})}}),
+crit(45246,{achID=13556,id=1})}}),
 q(55813,{coords={
 [1462]={{62.1,76.8}}},isDaily=1,lvl=10,qgs={154568},g={
 i(169279,{spellID=300618}),
-crit(45264,{achID=13556,awp=80200,id=15})}}),
+crit(45264,{achID=13556,id=15})}}),
 q(55210,{coords={
 [1462]={{70.8,39.1}}},lvl=10,qgs={150630},g={
 i(167233),
 i(166971,{b=1})}}),
 q(56355,{coords={
 [1462]={{69.7,33}}},isDaily=1,lvl=10,qgs={151006},sourceQuests={54090},g={
-crit(45406,{achID=13556,awp=80200,id=22})}}),
+crit(45406,{achID=13556,id=22})}}),
 q(56365,{coords={
 [1462]={{73.6,35.6}}},isDaily=1,lvl=10,qgs={153982},g={
 i(169867),
-crit(45409,{achID=13556,awp=80200,id=23})}}),
+crit(45409,{achID=13556,id=23})}}),
 q(56082,{coords={
 [1462]={{77.8,40}}},isDaily=1,lvl=10,qgs={154101},r=2}),
 q(56334,{coords={
 [1462]={{59.9,69.6}}},isDaily=1,lvl=10,qgs={154655}}),
 q(55765,{coords={
 [1462]={{75.8,34.4}}},isDaily=1,lvl=10,qgs={152932},g={
-crit(45255,{achID=13556,awp=80200,id=9})}}),
+crit(45255,{achID=13556,id=9})}}),
 q(55055,{coords={
 [1462]={{37,47.1}}},lvl=10,qgs={151462},requireSkill=356,sourceQuests={55339},g={
 i(167649,{b=1,requireSkill=356}),
-crit(44314,{achID=13479,awp=80200,id=3})}}),
+crit(44314,{achID=13479,id=3})}}),
 q(56573,{coords={
 [1462]={{70.8,38.4}}},isDaily=1,lvl=10,qgs={150631},g={
 i(169807),
@@ -104752,20 +104752,20 @@ i(168223),
 i(168235),
 i(168256,{b=1,crs={152653},description="You need to be on either |cFFFFD700A Growing Mytery|r, |cFFFFD700Time for Heroics|r, |cFFFFD700Deck 'Em|r or |cFFFFD700A Historical Mess|r to get this item."}),
 i(169864,{b=1,crs={150698},description="You need to be on either |cFFFFD700A Growing Mytery|r, |cFFFFD700Time for Heroics|r, |cFFFFD700Deck 'Em|r or |cFFFFD700A Historical Mess|r to get this item."}),
-crit(45249,{achID=13556,awp=80200,id=3})}}),
+crit(45249,{achID=13556,id=3})}}),
 q(56405,{coords={
 [1462]={{73.4,33.3}}},isDaily=1,lvl=10,qgs={154967},g={
 i(169471,{b=1,g={
 i(167845,{b=1,spellID=292440}),
 i(167844,{b=1,spellID=292440}),
 i(169470,{b=1})}}),
-crit(45694,{achID=13556,awp=80200,id=32})}}),
+crit(45694,{achID=13556,id=32})}}),
 q(55153,{coords={
 [1462]={{73.1,33.3}}},lvl=10,qgs={150555},sourceQuests={55707}}),
 q(56049,{coords={
 [1462]={{75.2,69.8}}},isDaily=1,lvl=10,qgs={153538},sourceQuests={55717},g={
 i(168754),
-crit(45258,{achID=13556,awp=80200,id=8})}}),
+crit(45258,{achID=13556,id=8})}}),
 q(55994,{coords={
 [1462]={{58.9,31.7}}},isDaily=1,lvl=10,qgs={153750},g={
 i(168608)}}),
@@ -104808,21 +104808,21 @@ n(152969,{sym={{"select","itemID",151451}}}),
 i(169591,{b=1,description="Dropped by trogg mobs once '|cffffffffDiscs of Norgannon|r' has been completed the same day."}),
 i(169593,{b=1,description="Dropped by mobs in Junkwatt Depot once '|cffffffffDiscs of Norgannon|r' has been completed the same day.\n\nThis appears to have a lower droprate than the other three discs."}),
 i(169474,{lvl=45}),
-crit(45644,{achID=13556,awp=80200,id=26})}}),
+crit(45644,{achID=13556,id=26})}}),
 q(56328,{coords={
 [1462]={{59,31.6}}},lvl=10,qgs={153750},sourceQuests={55729},g={
 i(168608)}}),
 q(55734,{coords={
 [1462]={{55.7,60.2}}},lvl=10,qgs={153670},sourceQuests={55995},g={
-crit(45710,{achID=13553,awp=80200,id=13,r=2}),
-crit(45710,{achID=13700,awp=80200,id=15,r=1})}}),
+crit(45710,{achID=13553,id=13,r=2}),
+crit(45710,{achID=13700,id=15,r=1})}}),
 q(55622,{coords={
 [1462]={{71.5,38.7}}},lvl=10,qgs={150573},sourceQuests={55753},g={
 mnt(299159,{b=1,itemID=168827,lvl=10}),
-crit(46015,{achID=13791,awp=80200,id=12})}}),
+crit(46015,{achID=13791,id=12})}}),
 q(56175,{coords={
 [1462]={{71.5,38.7}}},lvl=10,qgs={150573},sourceQuests={54083},g={
-crit(46012,{achID=13791,awp=80200,id=9})}}),
+crit(46012,{achID=13791,id=9})}}),
 q(55213,{coords={
 [1462]={{70.7,38.4}}},isDaily=1,lvl=10,qgs={150631}}),
 q(56116,{coords={
@@ -104830,7 +104830,7 @@ q(56116,{coords={
 q(56168,{coords={
 [1462]={{71.5,38.7}}},lvl=10,qgs={150573},sourceQuests={54922},g={
 i(169153),
-crit(46010,{achID=13791,awp=80200,id=7})}}),
+crit(46010,{achID=13791,id=7})}}),
 q(55707,{coords={
 [1462]={{69.7,32.3}}},lvl=10,qgs={152747},sourceQuests={55708},g={
 i(168252),
@@ -104844,14 +104844,14 @@ i(167669,{requireSkill=356})}}),
 q(54083,{coords={
 [1462]={{71.5,38.7}}},lvl=10,qgs={150573},sourceQuests={56168},g={
 i(167076,{spellID=292061}),
-crit(46011,{achID=13791,awp=80200,id=8})}}),
+crit(46011,{achID=13791,id=8})}}),
 q(56380,{coords={
 [1462]={{42.8,29.3}}},isDaily=1,lvl=10,qgs={154906}}),
 q(56301,{coords={
 [1462]={{21.5,81.9}}},isDaily=1,lvl=10,qgs={154485},g={
 i(169221,{spellID=300464}),
 i(169222),
-crit(45369,{achID=13556,awp=80200,id=17})}}),
+crit(45369,{achID=13556,id=17})}}),
 q(55103,{coords={
 [1462]={{71.2,32.3}}},lvl=10,minReputation={2391,21000},qgs={152295},g={
 i(169251),
@@ -104884,15 +104884,15 @@ i(169239),
 i(169225)}}),
 q(55101,{coords={
 [1462]={{71.2,32.3}}},lvl=10,qgs={152295},sourceQuests={55736},g={
-crit(46287,{achID=13479,awp=80200,id=1})}}),
+crit(46287,{achID=13479,id=1})}}),
 q(55373,{coords={
 [1462]={{71.4,38.7}}},lvl=10,qgs={150573},sourceQuests={54929},g={
 i(167745),
-crit(46007,{achID=13791,awp=80200,id=4})}}),
+crit(46007,{achID=13791,id=4})}}),
 q(55753,{coords={
 [1462]={{71.5,38.7}}},lvl=10,qgs={150573},sourceQuests={55696},g={
 i(168305),
-crit(46014,{achID=13791,awp=80200,id=11})}}),
+crit(46014,{achID=13791,id=11})}}),
 q(56305,{coords={
 [1462]={{37,47.1}}},lvl=10,qgs={151462},requireSkill=356,sourceQuests={55055}}),
 q(54082,{coords={
@@ -104921,11 +104921,11 @@ q(56523,{coords={
 [1462]={{72.7,38}}},isDaily=1,lvl=10,qgs={155254},g={
 p(2714,{b=1,description="When the quest |cFFFFD700My Chickens are Not for Eating!|r is active, there are Dismantled OOX-35s in the zone that can be repaired for 25 spare parts, rewarding the pet.",itemID=169381,npcID=154853,spellID=301052}),
 i(169695),
-crit(45609,{achID=13556,awp=80200,id=24})}}),
+crit(45609,{achID=13556,id=24})}}),
 q(55731,{coords={
 [1462]={{59.1,55.1}}},lvl=10,qgs={152820},sourceQuests={55729},g={
-crit(45708,{achID=13553,awp=80200,id=11,r=2}),
-crit(45708,{achID=13700,awp=80200,id=13,r=1})}}),
+crit(45708,{achID=13553,id=11,r=2}),
+crit(45708,{achID=13700,id=13,r=1})}}),
 q(56756,{coords={
 [1462]={{72,34.2}}},description="Once you are exalted with Rustbolt Resistance, this quest is awarded after completing the Toys Like Us daily.",lvl=10,minReputation={2391,42000},qgs={149815},g={
 i(169882),
@@ -104934,22 +104934,22 @@ q(56532,{coords={
 [1462]={{80.8,18.8}}},isDaily=1,lvl=10,qgs={153701}}),
 q(56558,{coords={
 [1462]={{70.1,30.7}}},isDaily=1,lvl=10,qgs={155357},r=2,g={
-crit(45621,{achID=13556,awp=80200,id=25})}}),
+crit(45621,{achID=13556,id=25})}}),
 q(56552,{coords={
 [1462]={{70,31}}},isDaily=1,lvl=10,qgs={155355},r=1,g={
-crit(45620,{achID=13556,awp=80200,id=25})}}),
+crit(45620,{achID=13556,id=25})}}),
 q(55575,{coords={
 [1462]={{73.7,34.3}}},isDaily=1,lvl=10,qgs={152499},g={
 i(168184),
 i(168183,{spellID=296137}),
 i(168204,{b=1,description="Small Metal Boxes can be collected when using the Rare Metal Collector.",g={
 i(170148,{b=1})}}),
-crit(45248,{achID=13556,awp=80200,id=2})}}),
+crit(45248,{achID=13556,id=2})}}),
 q(55609,{coords={
 [1462]={{74,36.8}}},lvl=10,qgs={149816},sourceQuests={55736},g={
 i(169610,{b=1,spellID=303112}),
-crit(45713,{achID=13553,awp=80200,id=16,r=2}),
-crit(45713,{achID=13700,awp=80200,id=18,r=1})}}),
+crit(45713,{achID=13553,id=16,r=2}),
+crit(45713,{achID=13700,id=18,r=1})}}),
 q(55815,{coords={
 [1462]={{73.6,34.3}}},isDaily=1,lvl=10,qgs={152575},g={
 i(168222,{b=1,f=55,spellID=299127})}}),
@@ -104966,7 +104966,7 @@ q(56746,{coords={
 [1462]={{73.6,34.3}}},description="Quest is offered once you have completed |cFFFFD700Other Interests|r dailies three times.",isDaily=1,lvl=10,qgs={152575},g={
 i(169176,{b=1,spellID=292440})}}),
 q(56469,{isDaily=1,lvl=10,qss={169864},g={
-crit(45633,{achID=13556,awp=80200,id=10})}}),
+crit(45633,{achID=13556,id=10})}}),
 q(56184,{coords={
 [1462]={{71.7,38.8}}},isDaily=1,lvl=10,qgs={154335},g={
 o(327569,{coords={
@@ -104978,16 +104978,16 @@ i(169165)}}),
 o(327570,{coords={
 [1462]={{24,83.5}}},g={
 i(169166)}}),
-crit(45368,{achID=13556,awp=80200,id=16})}}),
+crit(45368,{achID=13556,id=16})}}),
 q(55528,{coords={
 [1462]={{69.7,33}}},isDaily=1,lvl=10,qgs={151006},sourceQuests={54090},g={
-crit(45405,{achID=13556,awp=80200,id=21})}}),
+crit(45405,{achID=13556,id=21})}}),
 q(55645,{coords={
 [1462]={{77.7,40.4}}},lvl=10,qgs={152484},r=2,sourceQuests={54992},g={
-crit(45705,{achID=13553,awp=80200,id=8,r=2})}}),
+crit(45705,{achID=13553,id=8,r=2})}}),
 q(55652,{coords={
 [1462]={{76.1,15.3}}},lvl=10,qgs={152783},r=1,sourceQuests={55651},g={
-crit(46311,{achID=13700,awp=80200,id=9,r=1})}}),
+crit(46311,{achID=13700,id=9,r=1})}}),
 q(57327,{coords={
 [1462]={{73.96,36.93}}},isDaily=1,lvl=10,qgs={150282},r=2,g={
 i(171248)}}),
@@ -104998,7 +104998,7 @@ q(54929,{coords={
 [1462]={{71.4,38.7}}},lvl=10,qgs={150573},sourceQuests={54086},g={
 i(167175),
 i(167176,{spellID=292445}),
-crit(46006,{achID=13791,awp=80200,id=3})}}),
+crit(46006,{achID=13791,id=3})}}),
 q(56326,{coords={
 [1462]={{62.1,76.8}}},isDaily=1,lvl=10,qgs={154568}}),
 q(56621,{coords={
@@ -105014,8 +105014,8 @@ q(55849,{coords={
 [1462]={{70,62}}},modelScale=4.2,qgs={150448},repeatable=1}),
 q(55730,{coords={
 [1462]={{59.1,55.1}}},lvl=10,qgs={152820},sourceQuests={55729},g={
-crit(45707,{achID=13553,awp=80200,id=10,r=2}),
-crit(45707,{achID=13700,awp=80200,id=12,r=1})}}),
+crit(45707,{achID=13553,id=10,r=2}),
+crit(45707,{achID=13700,id=12,r=1})}}),
 q(56117,{lvl=10}),
 o(326027,{coords={
 [1462]={{53.4,61.2},{54.4,56.4},{55.9,62.4},{58.7,59.3}}},modelScale=3,g={
@@ -105026,10 +105026,10 @@ i(168122,{spellID=293024}),
 i(166970,{b=1})}}),
 q(55885,{coords={
 [1462]={{82.9,23.3}}},isDaily=1,lvl=10,qgs={153324},g={
-crit(45256,{achID=13556,awp=80200,id=11})}}),
+crit(45256,{achID=13556,id=11})}}),
 q(54086,{coords={
 [1462]={{71.4,38.7}}},lvl=10,qgs={150573},sourceQuests={55608},g={
-crit(46005,{achID=13791,awp=80200,id=2})}}),
+crit(46005,{achID=13791,id=2})}}),
 q(56747,{coords={
 [1462]={{77.7,40.3}}},isDaily=1,lvl=10,qgs={149813},r=2}),
 q(56749,{coords={
@@ -105086,36 +105086,36 @@ q(56131,{description="One-time completion per character.",lvl=50,sourceQuests={5
 i(168832,{b=1})}}),
 q(55096,{coords={
 [1462]={{55.6,60.1}}},lvl=10,qgs={153670},sourceQuests={55730,55731,55734},g={
-crit(45711,{achID=13553,awp=80200,id=14,r=2}),
-crit(45711,{achID=13700,awp=80200,id=16,r=1})}}),
+crit(45711,{achID=13553,id=14,r=2}),
+crit(45711,{achID=13700,id=16,r=1})}}),
 q(55608,{coords={
 [1462]={{71.4,38.7}}},lvl=10,qgs={150573},sourceQuests={55736},g={
 i(168115),
 i(168113),
 i(168114),
-crit(46004,{achID=13791,awp=80200,id=1})}}),
+crit(46004,{achID=13791,id=1})}}),
 q(56740,{coords={
 [1462]={{71.2,32.3}}},description="Quest is available if you have 250 Spare Parts in your bag",lvl=10,qgs={152295},sourceQuests={55101},g={
-crit(45323,{achID=13479,awp=80200,id=37})}}),
+crit(45323,{achID=13479,id=37})}}),
 q(55718,{isDaily=1,lvl=10,qss={168256},g={
-crit(45253,{achID=13556,awp=80200,id=7})}}),
+crit(45253,{achID=13556,id=7})}}),
 q(56501,{coords={
 [1462]={{42.6,41.4},{47.6,36.8}}},crs={155202,155259},description="Only available during Unprofitable Ventures.",isDaily=1,lvl=10,qss={169682},g={
 i(169681,{spellID=302021}),
-crit(45646,{achID=13556,awp=80200,id=29})}}),
+crit(45646,{achID=13556,id=29})}}),
 q(55696,{coords={
 [1462]={{71.5,38.7}}},lvl=10,qgs={150573},sourceQuests={56175},g={
 i(168270,{spellID=296787}),
-crit(46013,{achID=13791,awp=80200,id=10})}}),
+crit(46013,{achID=13791,id=10})}}),
 q(56306,{coords={
 [1462]={{24.2,75.3}}},isDaily=1,lvl=10,qgs={154511},g={
 o(327620,{coords={
 [1462]={{14.4,83.9},{14.6,84.1},{16.1,85},{17,73.4},{17.7,78.4},{18.9,71.9},{19.4,80.4},{20.1,77.8},{20.6,72.4},{20.6,82.4},{21.4,76.3},{22.7,70.1},{23.1,80.4},{24,67.7},{25,76.9},{25.2,84.7},{25.5,85}}},g={
 i(169241)}}),
-crit(45370,{achID=13556,awp=80200,id=18})}}),
+crit(45370,{achID=13556,id=18})}}),
 q(56053,{coords={
 [1462]={{72.7,33.9}}},isDaily=1,lvl=10,qgs={153982},sourceQuests={56142},g={
-crit(45259,{achID=13556,awp=80200,id=13})}}),
+crit(45259,{achID=13556,id=13})}}),
 q(55695,{coords={
 [1462]={{63.2,43}}},isDaily=1,lvl=10,qgs={152321},g={
 o(325976,{coords={
@@ -105125,29 +105125,29 @@ o(325976,{type="AsSubGenericObject"}),
 o(325980,{type="AsSubGenericObject"})}})}}),
 q(54922,{coords={
 [1462]={{71.5,38.7}}},lvl=10,qgs={150573},sourceQuests={55697},g={
-crit(46009,{achID=13791,awp=80200,id=6})}}),
+crit(46009,{achID=13791,id=6})}}),
 q(55816,{coords={
 [1462]={{70.2,30.9}}},isDaily=1,lvl=10,qgs={153993},g={
 i(168813,{spellID=299140}),
-crit(45257,{achID=13556,awp=80200,id=12})}}),
+crit(45257,{achID=13556,id=12})}}),
 q(56319,{coords={
 [1462]={{70.7,38.4}}},lvl=10,minReputation={2391,9000},qgs={150631}}),
 q(55729,{coords={
 [1462]={{71.1,38.2}}},lvl=10,qgs={152851},sourceQuests={55645,55685},g={
-crit(45706,{achID=13553,awp=80200,id=9,r=2}),
-crit(45706,{achID=13700,awp=80200,id=11,r=1})}}),
+crit(45706,{achID=13553,id=9,r=2}),
+crit(45706,{achID=13700,id=11,r=1})}}),
 q(56181,{coords={
 [1462]={{71.2,32.5}}},lvl=10,minReputation={2391,9000},qgs={152295},g={
 r(300122,{requireSkill=2720,u=5}),
-crit(45308,{achID=13479,awp=80200,id=21})}}),
+crit(45308,{achID=13479,id=21})}}),
 q(55339,{coords={
 [1462]={{37,47.1}}},lvl=10,qgs={151462},requireSkill=356,sourceQuests={55298},g={
 i(167562,{b=1,requireSkill=356})}}),
 q(55717,{description="This quest is only available if you pick up the clue from the |cFFffffffHearthstone Card|r while on |cFFefc400Clues Abound|r.",isDaily=1,lvl=10,qgs={152633},g={
-crit(45252,{achID=13556,awp=80200,id=6})}}),
+crit(45252,{achID=13556,id=6})}}),
 q(54090,{coords={
 [1462]={{69.7,33.1}}},isDaily=1,lvl=10,qgs={151006},g={
-crit(45403,{achID=13556,awp=80200,id=20})}}),
+crit(45403,{achID=13556,id=20})}}),
 q(56572,{coords={
 [1462]={{70.2,32.9}}},isDaily=1,lvl=10,qgs={155450},g={
 i(169816,{b=4,spellID=302476}),
@@ -105157,14 +105157,14 @@ i(169841,{b=1,f=55,spellID=303056}),
 i(169794,{b=1,f=55,spellID=303052}),
 i(169844,{b=1,f=55,spellID=303054}),
 i(169797,{b=1,f=55,spellID=303144})}}),
-crit(45643,{achID=13556,awp=80200,id=27})}}),
+crit(45643,{achID=13556,id=27})}}),
 q(55708,{coords={
 [1462]={{69.7,32.3}}},lvl=10,qgs={152747},sourceQuests={55736},g={
 i(168250),
 i(167555,{b=1,f=53,lvl=50})}}),
 q(56471,{coords={
 [1462]={{72.1,37.1}}},isDaily=1,lvl=10,qgs={155187},g={
-crit(45647,{achID=13556,awp=80200,id=30})}}),
+crit(45647,{achID=13556,id=30})}}),
 q(56083,{coords={
 [1462]={{73.7,26}}},isDaily=1,lvl=10,qgs={150563},r=1,sourceQuests={55736}}),
 q(56335,{coords={
@@ -105174,22 +105174,22 @@ q(56434,{coords={
 q(56508,{coords={
 [1462]={{40.8,38.8},{43,41.1}}},isDaily=1,lvl=10,providers={{"o",329715}},g={
 i(169686),
-crit(45645,{achID=13556,awp=80200,id=28})}}),
+crit(45645,{achID=13556,id=28})}}),
 q(55995,{coords={
 [1462]={{56.7,59.7}}},lvl=10,qgs={150956},sourceQuests={55729},g={
 i(166846,{b=1}),
 i(166970,{b=1}),
-crit(45709,{achID=13553,awp=80200,id=12,r=2}),
-crit(45709,{achID=13700,awp=80200,id=14,r=1})}}),
+crit(45709,{achID=13553,id=12,r=2}),
+crit(45709,{achID=13700,id=14,r=1})}}),
 q(55685,{coords={
 [1462]={{73.6,25.9}}},lvl=10,qgs={152845},r=1,sourceQuests={55652},g={
-crit(46312,{achID=13700,awp=80200,id=10,r=1})}}),
+crit(46312,{achID=13700,id=10,r=1})}}),
 q(55736,{coords={
 [1462]={{71.2,35.8}}},lvl=10,qgs={151947},sourceQuests={55096},g={
 i(166846,{b=1}),
 i(166970,{b=1}),
-crit(45712,{achID=13553,awp=80200,id=15,r=2}),
-crit(45712,{achID=13700,awp=80200,id=17,r=1})}}),
+crit(45712,{achID=13553,id=15,r=2}),
+crit(45712,{achID=13700,id=17,r=1})}}),
 q(56320,{coords={
 [1462]={{70.8,39.1}}},lvl=10,qgs={150630},sourceQuests={55210}}),
 q(56324,{coords={
@@ -105198,100 +105198,100 @@ q(55979,{coords={
 [1462]={{69.7,32.3}}},cost={{"i",164740,1}},description="You do not lose your Ub3r-Spanner while completing this quest, you simply need to have it in your inventory.",DisablePartySync=1,lvl=10,minReputation={2391,9000},qgs={152747},requireSkill=202,g={
 i(168532,{b=4,requireSkill=202})}}),
 q(55030,{lvl=10,qss={167042},g={
-crit(44313,{achID=13479,awp=80200,id=2})}}),
+crit(44313,{achID=13479,id=2})}}),
 q(55056,{lvl=10,qss={167787},g={
-crit(44315,{achID=13479,awp=80200,id=4})}}),
+crit(44315,{achID=13479,id=4})}}),
 q(55057,{lvl=10,qss={167836},g={
-crit(44316,{achID=13479,awp=80200,id=5})}}),
+crit(44316,{achID=13479,id=5})}}),
 q(55058,{lvl=10,qss={167843},g={
-crit(44317,{achID=13479,awp=80200,id=6})}}),
+crit(44317,{achID=13479,id=6})}}),
 q(55059,{lvl=10,qss={167844},g={
-crit(44318,{achID=13479,awp=80200,id=7})}}),
+crit(44318,{achID=13479,id=7})}}),
 q(55060,{lvl=10,qss={167845},g={
-crit(44319,{achID=13479,awp=80200,id=8})}}),
+crit(44319,{achID=13479,id=8})}}),
 q(55061,{lvl=10,qss={167846},g={
-crit(44320,{achID=13479,awp=80200,id=9})}}),
+crit(44320,{achID=13479,id=9})}}),
 q(55062,{lvl=10,qss={167847},g={
-crit(44321,{achID=13479,awp=80200,id=10})}}),
+crit(44321,{achID=13479,id=10})}}),
 q(55063,{lvl=10,qss={167871},g={
-crit(44322,{achID=13479,awp=80200,id=11})}}),
+crit(44322,{achID=13479,id=11})}}),
 q(55064,{lvl=10,qss={168062},g={
-crit(44323,{achID=13479,awp=80200,id=12})}}),
+crit(44323,{achID=13479,id=12})}}),
 q(55065,{lvl=10,qss={168063},g={
-crit(44324,{achID=13479,awp=80200,id=13})}}),
+crit(44324,{achID=13479,id=13})}}),
 q(55066,{lvl=10,qss={168219},g={
-crit(44325,{achID=13479,awp=80200,id=14})}}),
+crit(44325,{achID=13479,id=14})}}),
 q(55068,{lvl=10,qss={168248},g={
-crit(44327,{achID=13479,awp=80200,id=15})}}),
+crit(44327,{achID=13479,id=15})}}),
 q(55069,{lvl=10,qss={168490},g={
-crit(44328,{achID=13479,awp=80200,id=16})}}),
+crit(44328,{achID=13479,id=16})}}),
 q(55071,{lvl=10,qss={168492},g={
-crit(44330,{achID=13479,awp=80200,id=17})}}),
+crit(44330,{achID=13479,id=17})}}),
 q(55072,{lvl=10,qss={168493},g={
-crit(44331,{achID=13479,awp=80200,id=18})}}),
+crit(44331,{achID=13479,id=18})}}),
 q(55073,{lvl=10,qss={168494},g={
-crit(44332,{achID=13479,awp=80200,id=19})}}),
+crit(44332,{achID=13479,id=19})}}),
 q(55074,{lvl=10,qss={168495},g={
-crit(44333,{achID=13479,awp=80200,id=20})}}),
+crit(44333,{achID=13479,id=20})}}),
 q(56145,{lvl=10,qss={169112},g={
-crit(45324,{achID=13479,awp=80200,id=23})}}),
+crit(45324,{achID=13479,id=23})}}),
 q(56165,{lvl=10,qss={169134},g={
-crit(45325,{achID=13479,awp=80200,id=24})}}),
+crit(45325,{achID=13479,id=24})}}),
 q(56086,{lvl=10,qss={168906},g={
-crit(45327,{achID=13479,awp=80200,id=25})}}),
+crit(45327,{achID=13479,id=25})}}),
 q(55075,{lvl=10,qss={169167},g={
-crit(44334,{achID=13479,awp=80200,id=27})}}),
+crit(44334,{achID=13479,id=27})}}),
 q(55076,{lvl=10,qss={169168},g={
-crit(44335,{achID=13479,awp=80200,id=28})}}),
+crit(44335,{achID=13479,id=28})}}),
 q(55077,{lvl=10,qss={169169},g={
-crit(44336,{achID=13479,awp=80200,id=29})}}),
+crit(44336,{achID=13479,id=29})}}),
 q(55078,{lvl=10,qss={169170},g={
-crit(44337,{achID=13479,awp=80200,id=30})}}),
+crit(44337,{achID=13479,id=30})}}),
 q(55079,{lvl=10,qss={169171},g={
-crit(44338,{achID=13479,awp=80200,id=31})}}),
+crit(44338,{achID=13479,id=31})}}),
 q(55081,{lvl=10,qss={169173},g={
-crit(44340,{achID=13479,awp=80200,id=32})}}),
+crit(44340,{achID=13479,id=32})}}),
 q(55083,{lvl=10,qss={169175},g={
-crit(44342,{achID=13479,awp=80200,id=34})}}),
+crit(44342,{achID=13479,id=34})}}),
 q(55084,{lvl=10,qss={169176},g={
-crit(44343,{achID=13479,awp=80200,id=35})}}),
+crit(44343,{achID=13479,id=35})}}),
 q(55067,{lvl=10,qss={168220},g={
-crit(44326,{achID=13479,awp=80200,id=36})}}),
+crit(44326,{achID=13479,id=36})}}),
 q(56087,{lvl=10,qss={168908},g={
-crit(45326,{achID=13479,awp=80200,id=22})}}),
+crit(45326,{achID=13479,id=22})}}),
 q(55082,{lvl=10,qss={169174},g={
-crit(44341,{achID=13479,awp=80200,id=33})}}),
+crit(44341,{achID=13479,id=33})}}),
 q(55070,{lvl=10,qss={168491},g={
-crit(44329,{achID=13479,awp=80200,id=26})}}),
+crit(44329,{achID=13479,id=26})}}),
 q(55080,{lvl=10,qss={169172}}),
 q(56908,{lvl=10,qss={170147}}),
 q(56907,{lvl=10,qss={170146}}),
 q(56909,{lvl=10,qss={170148}}),
 q(55456,{lvl=10,qss={167795},g={
-crit(44859,{achID=13513,awp=80200,id=4})}}),
+crit(44859,{achID=13513,id=4})}}),
 q(55455,{lvl=10,qss={167796},g={
-crit(44858,{achID=13513,awp=80200,id=3})}}),
+crit(44858,{achID=13513,id=3})}}),
 q(55452,{lvl=10,qss={167792},g={
-crit(44857,{achID=13513,awp=80200,id=2})}}),
+crit(44857,{achID=13513,id=2})}}),
 q(55457,{lvl=10,qss={167793},g={
-crit(44862,{achID=13513,awp=80200,id=7})}}),
+crit(44862,{achID=13513,id=7})}}),
 q(55454,{lvl=10,qss={167794},g={
-crit(44860,{achID=13513,awp=80200,id=5})}}),
+crit(44860,{achID=13513,id=5})}}),
 q(55517,{lvl=10,qss={168001},g={
-crit(44856,{achID=13513,awp=80200,id=1})}}),
+crit(44856,{achID=13513,id=1})}}),
 q(55451,{lvl=10,qss={167790},g={
-crit(44861,{achID=13513,awp=80200,id=6})}}),
+crit(44861,{achID=13513,id=6})}}),
 q(56516,{lvl=10,qss={169689},g={
-crit(45495,{achID=13686,awp=80200,id=3})}}),
+crit(45495,{achID=13686,id=3})}}),
 q(56517,{lvl=10,qss={169690},g={
-crit(45496,{achID=13686,awp=80200,id=4})}}),
+crit(45496,{achID=13686,id=4})}}),
 q(56515,{lvl=10,qss={169688},g={
-crit(45494,{achID=13686,awp=80200,id=2})}}),
+crit(45494,{achID=13686,id=2})}}),
 q(56518,{lvl=10,qss={169691},g={
-crit(45497,{achID=13686,awp=80200,id=5})}}),
+crit(45497,{achID=13686,id=5})}}),
 q(56519,{lvl=10,qss={169692},g={
-crit(45498,{achID=13686,awp=80200,id=6})}})}),
-h(-46,{awp=80200,g={
+crit(45498,{achID=13686,id=6})}})}),
+h(-46,{
 h(-19,{
 i(168908,{b=1,description="This blueprint will drop from the first rare you kill once you've reached Neutral with the Rustbolt Resistance.",spellID=292440}),
 i(168327,{b=1})}),
@@ -105483,15 +105483,15 @@ crit(45118,{achID=13470,id=2})}}),
 n(151940,{coords={
 [1462]={{57.3,20.7}}},isDaily=1,questID=55538,g={
 i(168749,{b=1,lvl=50}),
-crit(45132,{achID=13470,id=15})}})}}),
-h(-47,{awp=80200,g={
+crit(45132,{achID=13470,id=15})}})}),
+h(-47,{
 ah(169848,{providers={{"i",169848}},type="i",g={
 i(169843,{b=1,f=55,spellID=303060}),
 i(169842,{b=1,f=55,spellID=303035}),
 i(169840,{b=1,f=55,spellID=303053}),
 i(169795,{b=1,f=55,spellID=303058}),
-i(169849,{b=1,f=55,spellID=303059})}})}}),
-h(-56,{awp=80200,g={
+i(169849,{b=1,f=55,spellID=303059})}})}),
+h(-56,{
 o(330183,{coords={
 [1462]={{13.23,85.85},{17.7,78.4},{18.3,76.2},{21,80},{23.33,56.88},{24.1,84.6},{24.9,69.2},{25.3,78.2},{25.67,76.05},{30.77,59.67}}},g={
 i(169872,{b=1,crs={150937,153217,153218,153219,154482,154491},description="Key drops from Seaspit and Seaspray mobs in the area, chest has a chance to spawn around the nearby islands.",spellID=401840,g={
@@ -105536,8 +105536,8 @@ o(330634,{coords={
 cq(56911,{b=1,itemID=170151,spellID=303990})}}),
 o(327548,{coords={
 [1462]={{60.9,41.5}}},g={
-i(168219,{b=1,spellID=292440})}})}}),
-h(-58,{awp=80200,g={
+i(168219,{b=1,spellID=292440})}})}),
+h(-58,{
 n(152321,{coords={
 [1462]={{63.3,42.9}}},g={
 i(167787,{b=1,cost=5000000,spellID=292440}),
@@ -105588,8 +105588,8 @@ de(2341,{awp=110207,cost={{"i",168832,2},{"g",1600000}},itemID=246501,minReputat
 r(297106,{b=1,cost=19000000,itemID=168369,lvl=10,minReputation={2391,42000},requireSkill=185,skillID=2541}),
 s(104599,168619,{b=1,f=9,lvl=45,minReputation={2391,42000}}),
 mnt(299170,{b=1,cost=5242880000,itemID=168829,lvl=10,minReputation={2391,42000}}),
-r(298930,{b=1,cost=19000000,itemID=168660,lvl=10,minReputation={2391,42000},requireSkill=202,skillID=2499})}})}}),
-h(-62,{awp=80200,g={
+r(298930,{b=1,cost=19000000,itemID=168660,lvl=10,minReputation={2391,42000},requireSkill=202,skillID=2499})}})}),
+h(-62,{
 q(56396,{isWorldQuest=1,lvl=50,pb=1}),
 q(56397,{isWorldQuest=1,lvl=50,pb=1}),
 q(56393,{isWorldQuest=1,lvl=50,pb=1}),
@@ -105603,8 +105603,8 @@ i(168832,{b=1})}}),
 q(56394,{isWorldQuest=1,lvl=50,pb=1}),
 q(56399,{isWorldQuest=1,lvl=50,pb=1}),
 q(56400,{isWorldQuest=1,lvl=50,pb=1}),
-q(56398,{isWorldQuest=1,lvl=50,pb=1})}}),
-h(-63,{awp=80200,g={
+q(56398,{isWorldQuest=1,lvl=50,pb=1})}),
+h(-63,{
 i(168491,{b=1,crs={153991},description="Drops from normal mobs during the |cFFFFD700The Other Place|r quest.",spellID=292440}),
 i(166971,{b=1}),
 i(166970,{b=1}),
@@ -105616,7 +105616,7 @@ i(169873,{b=1,spellID=300415}),
 i(169218,{b=1,spellID=300415}),
 i(168632,{b=1,lvl=50}),
 i(166846,{b=1}),
-i(168216,{spellID=307281})}})}}),
+i(168216,{spellID=307281})})}}),
 m(942,{icon=2065627,lore="Stormsong Valley is lush and green. It is ruled by House Stormsong, and the people of the region are devoted to the sea with a fanatical, religious fervor.This includes the religious sect known as the Tidesages. It was the current Lord Stormsong's grandfather who led the Tidesages to the valley. Stormsong Valley contributes the largest amount of ships–and of the highest quality–to Kul Tiras, and the Tidesages bless each ship methodically. All of its people are devoted to this singular endeavor, but recent troubles have led to a stoppage of construction. The Alliance will need to get to the bottom of this to secure their new navy.",maps={1179,1182,1183},petBattleLvl=25,lvl=30,g={
 h(-12,{
 ach(12940,{
@@ -127067,21 +127067,21 @@ p(3118,{coords={
 [1543]={{51.8,85},{61.4,75.6}}},npcID=179182,pb=1}),
 p(3124,{coords={
 [1543]={{45.6,65},{46.8,57.6}}},npcID=179227,pb=1})}}),
-h(-156,{awp=90100,g={
+h(-156,{
 h(-12,{
-ach(15032),
-ach(15035,{
+ach(15032,{awp=90100}),
+ach(15035,{awp=90100,g={
 crit(52272,{achID=15064,id=2}),
 crit(52272,{achID=15654,awp=90205,id=8,rwp=100002,u=2}),
-crit(52272,{achID=20501,awp=100206,id=8})}),
-ach(15036),
-ach(15033),
-ach(15000,{
-crit(52027,{achID=15035,id=1})}),
-ach(15034)}),
+crit(52272,{achID=20501,awp=100206,id=8})}}),
+ach(15036,{awp=90100}),
+ach(15033,{awp=90100}),
+ach(15000,{awp=90100,g={
+crit(52027,{achID=15035,id=1})}}),
+ach(15034,{awp=90100})}),
 h(-47,{
-s(146643,187410,{description="Can be rewarded from any Maw Assault.",f=3,lvl=60})}),
-q(63824,{coords={
+s(146643,187410,{awp=90100,description="Can be rewarded from any Maw Assault.",f=3,lvl=60})}),
+q(63824,{awp=90100,coords={
 [1543]={{42.8,44.8}}},isWeekly=1,qgs={177900},sourceQuests={63902},g={
 i(185720,{spellID=350532}),
 i(185993,{b=1,f=55,sym={{"select","itemID",187410}},g={
@@ -127145,7 +127145,7 @@ o(368950,{coords={
 o(368951,{coords={
 [1543]={{34.1,35.7},{45.4,47.7}}},isWeekly=1,questID=64058})}),
 crit(51723,{achID=15000,id=4})}}),
-q(63543,{coords={
+q(63543,{awp=90100,coords={
 [1543]={{33.8,54.8}}},isWeekly=1,qgs={177072},sourceQuests={63902},g={
 i(185720,{spellID=350532}),
 i(185992,{b=1,f=55,sym={{"select","itemID",187410}},g={
@@ -127242,7 +127242,7 @@ o(368214,{coords={
 o(368946,{coords={
 [1543]={{30.6,58.4},{34.2,64.6},{36.7,68}}},isWeekly=1,questID=64044})}),
 crit(51720,{achID=15000,id=1})}}),
-q(63823,{coords={
+q(63823,{awp=90100,coords={
 [1543]={{22.4,43.3}}},isWeekly=1,qgs={178828},sourceQuests={63902},g={
 i(185991,{b=1,f=55,sym={{"select","itemID",187410}},g={
 mnt(352441,{b=1,itemID=186000}),
@@ -127338,9 +127338,9 @@ o(368952,{coords={
 o(368953,{coords={
 [1543]={{19,50.2},{22.6,48.6}}},isWeekly=1,questID=64060})}),
 crit(51722,{achID=15000,id=3})}}),
-q(64554,{altQuests={63822},coords={
+q(64554,{altQuests={63822},awp=90100,coords={
 [1543]={{29.9,17.1}}},isWeekly=1,qgs={178006},sourceQuests={63902}}),
-q(63822,{altQuests={64554},coords={
+q(63822,{altQuests={64554},awp=90100,coords={
 [1543]={{29.9,17.1}}},isWeekly=1,qgs={178006},sourceQuests={63902},g={
 i(185990,{b=1,f=55,sym={{"select","itemID",187410}},g={
 mnt(332904,{b=1,itemID=185996})}}),
@@ -127408,12 +127408,12 @@ o(368948,{coords={
 [1543]={{25.2,12.5},{27.9,19.4}}},isWeekly=1,questID=64055}),
 o(368949,{coords={
 [1543]={{26.1,19.6},{29.7,11.6}}},isWeekly=1,questID=64056})}),
-crit(51721,{achID=15000,id=2})}})}}),
-h(-28,{awp=90100,g={
-q(64267,{minReputation={2432,1},repeatable=1,g={
+crit(51721,{achID=15000,id=2})}})}),
+h(-28,{
+q(64267,{awp=90100,minReputation={2432,1},repeatable=1,g={
 i(187029,{lvl=60,g={
 mnt(354352,{b=1,itemID=186657}),
-p(3133,{b=1,itemID=186552,npcID=179242,spellID=353661})}})}})}}),
+p(3133,{b=1,itemID=186552,npcID=179242,spellID=353661})}})}})}),
 h(-30,{
 exp(13223,{
 crit(49510,{achID=14663,id=10})}),
@@ -127462,9 +127462,9 @@ exp(13589),
 exp(13634)}),
 h(-31,{
 faction(2432)}),
-h(-32,{awp=90100,g={
-fp(2700,{coords={
-[1543]={{47.2,43.6}}},crs={178823},sourceQuests={63855}})}}),
+h(-32,{
+fp(2700,{awp=90100,coords={
+[1543]={{47.2,43.6}}},crs={178823},sourceQuests={63855}})}),
 h(-45,{
 ah(14334,{type="a",g={
 q(60545,{coords={
@@ -128233,8 +128233,8 @@ crit(51464,{achID=14895,id=11,providers={{"i",180952}}})}}),
 i(184870,{awp=90005,b=1,cost={{"c",1767,1500}},description="Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters with maxed Ven'ari reputation.",f=55,lvl=60,minReputation={2432,6},spellID=348633}),
 i(184361,{b=1,cost={{"c",1767,7200}},f=55,minReputation={2432,6},rwp=90100,spellID=345487,u=2}),
 i(184359,{b=1,cost={{"c",1767,1900}},f=55,minReputation={2432,6},rwp=90100,spellID=345482,u=2})})}),
-h(-62,{awp=90100,g={
-q(64273,{isWeekly=1,isWorldQuest=1,sourceQuests={63622}})}}),
+h(-62,{
+q(64273,{awp=90100,isWeekly=1,isWorldQuest=1,sourceQuests={63622}})}),
 h(-63,{
 i(180802,{b=1}),
 i(180801,{b=1}),
@@ -146288,8 +146288,8 @@ s(181391,197938,{b=1,f=29,lvl=60}),
 s(181386,197931,{b=1,f=21,lvl=60}),
 s(179987,192025,{b=1,f=24,lvl=60}),
 s(181381,197924,{b=1,f=25,lvl=60})})})}}),
-m(2274,{awp=110000,icon=5901550,lore="Khaz Algar, a long-forgotten subterranean continent off the western shores of Pandaria, is home to the earthen capital city of Dornogal. This city will now serve as the new meeting ground for the Alliance and Horde.",lvl=70,g={
-m(2339,{awp=110002,icon=5901551,isRaid=1,lore="The Capital City of the earthen dwarves of Khaz Algar, located in the center of the Isle of Dorn. It was named in honor of the titanic watchers Dornic and Galan and has been isolated within Khaz Algar for a long while, which resulted in the city's earthen developing their own manners and customs.",g={
+m(2274,{awp=110002,icon=5901550,lore="Khaz Algar, a long-forgotten subterranean continent off the western shores of Pandaria, is home to the earthen capital city of Dornogal. This city will now serve as the new meeting ground for the Alliance and Horde.",lvl=70,g={
+m(2339,{icon=5901551,isRaid=1,lore="The Capital City of the earthen dwarves of Khaz Algar, located in the center of the Isle of Dorn. It was named in honor of the titanic watchers Dornic and Galan and has been isolated within Khaz Algar for a long while, which resulted in the city's earthen developing their own manners and customs.",g={
 h(-12,{
 ach(40606,{coords={
 [2339]={{50,62}}},description="Stand at the coordinates and let the machine crush you.",providers={{"s",446139}},g={
@@ -147866,7 +147866,7 @@ q(83347,{coords={
 i(226194,{b=1,lvl=80,rwp=110100,u=2}),
 i(234731,{awp=110100,b=1,lvl=80,rwp=110200,u=2}),
 i(247820,{awp=110200,b=1,lvl=80})}})})})}}),
-m(2255,{awp=110002,icon=5770809,lore="Azj-Kahet, the high capital of nerubian society, is home to the last kingdom of living nerubians. Unlike Azjol-Nerub, which was consumed by the Scourge, Azj-Kahet represents nerubian society as it once was—deadly survivors of mythic wars that have played out repeatedly over millennia.",maps={2213,2216,2256},petBattleLvl=25,lvl=78,g={
+m(2255,{icon=5770809,lore="Azj-Kahet, the high capital of nerubian society, is home to the last kingdom of living nerubians. Unlike Azjol-Nerub, which was consumed by the Scourge, Azj-Kahet represents nerubian society as it once was—deadly survivors of mythic wars that have played out repeatedly over millennia.",maps={2213,2216,2256},petBattleLvl=25,lvl=78,g={
 h(-12,{
 ach(40840,{
 crit(71290,{achID=41189,awp=110007,id=1})}),
@@ -149594,7 +149594,7 @@ i(217385,{coords={
 i(226164,{b=1,coords={
 [2213]={{61.1,76.4}}},crs={216199}}),
 cu(3056)})}}),
-m(2215,{awp=110002,icon=5770810,lore="Hallowfall, situated below the Ringing Deeps and above Azj-Kahet, is an enormous cavern bordered by an endless underground sea. Light, warmth, and growth for vegetation are provided by Beledar, a massive crystal sun embedded in the cavern ceiling, creating a bright and lush environment reminiscent of the surface world.",maps={2300},petBattleLvl=25,lvl=75,g={
+m(2215,{icon=5770810,lore="Hallowfall, situated below the Ringing Deeps and above Azj-Kahet, is an enormous cavern bordered by an endless underground sea. Light, warmth, and growth for vegetation are provided by Beledar, a massive crystal sun embedded in the cavern ceiling, creating a bright and lush environment reminiscent of the surface world.",maps={2300},petBattleLvl=25,lvl=75,g={
 h(-12,{
 ach(40851,{
 crit(71233,{achID=41188,awp=110007,id=1})}),
@@ -152058,7 +152058,7 @@ i(225560,{b=1,coords={
 [2215]={{35.6,55.2}}},crs={213406},spellID=455256}),
 i(225554,{b=1,coords={
 [2215]={{54,26.4}}},crs={215653},spellID=455256})})}}),
-m(2248,{awp=110002,icon=5770811,lore="Located on the surface of Khaz Algar, the Isle of Dorn is a lush and verdant paradise with sweeping vistas, cascading waterfalls, and majestic mountains. It is also the ancestral home to the titan-forged Earthen—a race made of living stone imbued with the essence of Azeroth's worldsoul.",petBattleLvl=25,lvl=70,g={
+m(2248,{icon=5770811,lore="Located on the surface of Khaz Algar, the Isle of Dorn is a lush and verdant paradise with sweeping vistas, cascading waterfalls, and majestic mountains. It is also the ancestral home to the titan-forged Earthen—a race made of living stone imbued with the essence of Azeroth's worldsoul.",petBattleLvl=25,lvl=70,g={
 h(-12,{
 ach(40435,{
 crit(71220,{achID=41186,awp=110007,id=1})}),
@@ -156757,7 +156757,7 @@ i(234816,{b=1,description="Contains around 550 Currency."})}),
 h(-64,{
 cu(3090),
 i(233495,{description="Requires having obtained the Trashmaster title from the equipable cloak or from having it unlocked permanently from q:56250/q:56249 I am the Trashmaster. You don't need to actually use the title. Talk to Gazix Fusegrease in the main camp.",f=55,providers={{"i",168970},{"n",229928}},questID=86382,spellID=474108})})}}),
-m(2214,{awp=110002,icon=5770812,lore="This gigantic cavern serves as the home of the Machine Speakers, Earthen who maintain the gigantic Titan machines of old.",maps={2385},petBattleLvl=25,lvl=73,g={
+m(2214,{icon=5770812,lore="This gigantic cavern serves as the home of the Machine Speakers, Earthen who maintain the gigantic Titan machines of old.",maps={2385},petBattleLvl=25,lvl=73,g={
 h(-12,{
 ach(40837,{
 crit(71226,{achID=41187,awp=110007,id=1})}),
@@ -160562,19 +160562,19 @@ ach(40231,{
 crit(109695,{achID=61451,awp=110207,id=6})}),
 ach(42299,{awp=110207})}),
 h(-45,{
-q(81930,{coords={
+q(81930,{awp=110000,coords={
 [84]={{62.6,72.6}}},lvl=70,qgs={221967},qis={227669},r=2}),
-q(78713,{coords={
+q(78713,{awp=110000,coords={
 [85]={{49.7,77.4}}},lvl=70,qgs={221949},qis={227669},r=1}),
-q(78714,{coords={
+q(78714,{awp=110000,coords={
 [81]={{41.9,45}}},lvl=70,maps={2321},qgs={213620},sourceQuests={78713,81930},sqreq=1}),
-q(78715,{coords={
+q(78715,{awp=110000,coords={
 [2321]={{50.1,64.4}}},lvl=70,qgs={213624},sourceQuests={78714}}),
-q(78716,{coords={
+q(78716,{awp=110000,coords={
 [2321]={{49.5,58.6}}},lvl=70,qgs={213625},sourceQuests={78715}}),
-q(80500,{coords={
+q(80500,{awp=110000,coords={
 [629]={{40.5,57.7}}},lvl=70,qgs={214651},sourceQuests={78716}}),
-ah(20597,{type="a",g={
+ah(20597,{awp=110000,type="a",g={
 ah(20597.01,{type="crit",g={
 q(79197,{coords={
 [2255]={{55.6,44.2}}},lvl=78,qgs={219252},sourceQuests={84022},g={
@@ -160621,7 +160621,7 @@ hqt(85682,{coords={
 [2339]={{31.7,59.3}}},providers={{"n",233267}},sourceQuests={83315}}),
 q(79344,{coords={
 [2339]={{31.8,59.3}}},lvl=80,qgs={214917},sourceQuests={83315},g={
-crit(66989,{achID=20597,id=1})}})}}),
+crit(66989,{achID=20597,awp=110002,id=1})}})}}),
 ah(20597.02,{type="crit",g={
 q(79107,{coords={
 [2339]={{31.5,59.7}}},lvl=80,qgs={223944},sourceQuests={79344}}),
@@ -160678,7 +160678,7 @@ s(219926,223468,{b=1,f=7,loc=43,lvl=80}),
 s(219907,223446,{b=1,f=5,loc=43,lvl=80}),
 s(219917,223457,{b=1,f=6,loc=43,lvl=80}),
 s(219892,223428,{b=1,f=4,loc=43,lvl=80}),
-crit(66990,{achID=20597,id=2})}}),
+crit(66990,{achID=20597,awp=110002,id=2})}}),
 hqt(82541,{coords={
 [2339]={{31.8,61}}},description="Dialogue becomes available after completing 'Titanic Failsafe' (79157).",providers={{"n",214916}},sourceQuests={79157}})}}),
 ah(20597.03,{type="crit",g={
@@ -160708,7 +160708,7 @@ s(219898,223437,{b=1,f=4,loc=44,lvl=80}),
 s(219924,223466,{b=1,f=7,loc=41,lvl=80}),
 s(219906,223445,{b=1,f=5,loc=45,lvl=80}),
 s(219915,223455,{b=1,f=6,loc=41,lvl=80}),
-crit(66991,{achID=20597,id=3})}})}}),
+crit(66991,{achID=20597,awp=110002,id=3})}})}}),
 ah(20597.04,{type="crit",g={
 q(79022,{coords={
 [2339]={{31.5,59.7}}},lvl=80,qgs={223944},sourceQuests={79244}}),
@@ -160745,7 +160745,7 @@ s(219901,223440,{b=1,f=4,loc=41,lvl=80}),
 s(219911,223451,{b=1,f=6,loc=47,lvl=80})}}),
 q(79030,{coords={
 [2214]={{51.9,77.6}}},lvl=80,qgs={220928},sourceQuests={79029},g={
-crit(66992,{achID=20597,id=4})}})}}),
+crit(66992,{achID=20597,awp=110002,id=4})}})}}),
 ah(20597.05,{type="crit",g={
 q(78941,{coords={
 [2339]={{31.7,59.6}}},lvl=80,qgs={223944},sourceQuests={79030}}),
@@ -160765,7 +160765,7 @@ q(78948,{coords={
 s(219927,223472,{b=1,f=3,lvl=80})}}),
 q(83503,{coords={
 [2215]={{35.9,35.4}}},lvl=80,qgs={220688},sourceQuests={78948},g={
-crit(66993,{achID=20597,id=5}),
+crit(66993,{achID=20597,awp=110002,id=5}),
 crit(66993,{achID=40307,awp=110002,id=1})}}),
 hqt(84139,{coords={
 [2339]={{25.4,66.2}}},description="Dialogue becomes available after completing 'Return to Dornogal' (83503).",providers={{"n",225897}},sourceQuests={83503}}),
@@ -160971,7 +160971,7 @@ h(-62,{
 i(229899,{b=1,lvl=80,rwp=110100,spellID=453185,u=2}),
 i(236096,{awp=110100,b=1,lvl=80,rwp=110200,spellID=1219467,u=2}),
 i(245653,{awp=110200,b=1,lvl=80,spellID=1239571}),
-cu(3028,{awp=110002,rwp=120001,u=2}),
+cu(3028,{rwp=120001,u=2}),
 h(-52,{sr=1,g={
 i(191140,{spellID=370007,sr=1}),
 i(227450,{b=1,sr=1})}})}),
@@ -161058,7 +161058,7 @@ s(220553,224709,{b=1,f=28,lvl=70}),
 s(220547,224703,{b=1,f=25,lvl=70}),
 s(220550,224706,{b=1,f=24,lvl=70})}),
 i(229354,{b=1,f=55,lvl=68,sym={{"select","itemID",228361},{"pop"}}}),
-i(224784,{awp=110002,b=1,f=55,lvl=80,rwp=110100,sym={{"select","itemID",228361},{"pop"}},u=2}),
+i(224784,{b=1,f=55,lvl=80,rwp=110100,sym={{"select","itemID",228361},{"pop"}},u=2}),
 i(239118,{awp=110100,b=1,f=55,lvl=80,rwp=110200,sym={{"select","itemID",228361},{"pop"}},u=2}),
 i(244865,{awp=110200,b=1,f=55,lvl=80,sym={{"select","mapID",2371},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"finalize"},{"select","mapID",2371},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101}}}),
 i(228361,{b=1,f=55,lvl=80,rwp=110100,sym={{"select","mapID",2274},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"finalize"},{"select","mapID",2274},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101}},u=2}),
@@ -170125,7 +170125,7 @@ crit(111949,{achID=62188,id=4})}}),
 n(245106,{coords={
 [641]={{46.6,35.6}}},g={
 crit(111950,{achID=62188,id=5})}})}}),
-h(-45,{awp=120001,g={
+h(-45,{
 q(94993,{coords={
 [2393]={{45.7,67.7}}},description="Pops up on Alts the first time you enter Sanctum of Light and leads you to the Scouting Map so you can chose where to start your Campaign.",lc={1,"lvl",80},lvl=80}),
 ah(41805,{type="a",g={
@@ -170205,7 +170205,7 @@ i(238515)}}),
 o(525493,{coords={
 [2372]={{64.4,36},{64.4,40.7},{65.3,39.5},{65.6,34},{65.6,41.6},{65.7,37.9},{65.8,40.9},{66.1,35.4},{66.8,42.6},{68,46.2},{68.7,40.3},{69.3,45.4},{70,40.9},{70.9,43}}},g={
 i(238516)}}),
-crit(103890,{achID=41805,id=1})}})}}),
+crit(103890,{achID=41805,awp=120001,id=1})}})}}),
 ah(41805.02,{type="crit",g={
 q(86822,{coords={
 [2372]={{68.6,32}}},lvl=83,qgs={240747},sourceQuests={89338}}),
@@ -170250,7 +170250,7 @@ q(86833,{coords={
 q(86903,{coords={
 [2393]={{40.6,66.1}}},lvl=83,maps={2541},qgs={253125},qis={248131,254838},sourceQuests={86833},g={
 toy(253629,{b=1}),
-crit(103891,{achID=41805,id=2})}})}})}}),
+crit(103891,{achID=41805,awp=120001,id=2})}})}})}}),
 q(95008,{coords={
 [2393]={{55.7,70}}},lvl=80,qgs={259153}}),
 q(91854,{coords={
@@ -170274,7 +170274,7 @@ o(566101,{coords={
 i(248720)}})}}),
 q(91827,{coords={
 [2395]={{61.9,68.3}}},lvl=80,qgs={248874},sourceQuests={91826},g={
-crit(107341,{achID=60891,id=1})}})}}),
+crit(107341,{achID=60891,awp=120001,id=1})}})}}),
 ah(60891.02,{type="crit",g={
 q(91828,{coords={
 [2393]={{52.5,78.3}}},lvl=90,qgs={242381},sourceQuests={86522,91827}}),
@@ -170289,12 +170289,12 @@ q(91831,{coords={
 [2437]={{40.4,71.7}}},lvl=90,qgs={248982,250295},sourceQuests={91828}}),
 q(91918,{coords={
 [2437]={{40.4,71.7}}},lvl=90,qgs={250295},sourceQuests={91829,91830,91831},g={
-crit(107342,{achID=60891,id=2})}})}})}}),
+crit(107342,{achID=60891,awp=120001,id=2})}})}})}}),
 ah(42117,{type="a",g={
 ah(42117.01,{type="crit",g={
 q(90777,{coords={
 [2393]={{45.4,70.3}}},lvl=90,qgs={235787},sourceQuests={86522},g={
-crit(111077,{achID=61734,id=2})}}),
+crit(111077,{achID=61734,awp=120001,id=2})}}),
 q(88696,{coords={
 [2424]={{53.1,58.7}}},lvl=90,qgs={247414},sourceQuests={90777}}),
 q(88697,{coords={
@@ -170472,8 +170472,8 @@ hqt(92802,{coords={
 hqt(92810,{coords={
 [2424]={{53.2,47.4}}},description="Dialogue becomes available after the cutscene during 'From Darkness, Light' (90867).",qgs={253144},sourceQuests={90862}}),
 hqt(92757,{coords={
-[2424]={{51.2,44.5}}},description="Dialogue becomes available after the cutscene during 'From Darkness, Light' (90867).",qgs={244578},sourceQuests={90862}})}})}})}}),
-h(-246,{awp=120001,sharedDescription="Rewarded from most repeatable treasures.",g={
+[2424]={{51.2,44.5}}},description="Dialogue becomes available after the cutscene during 'From Darkness, Light' (90867).",qgs={244578},sourceQuests={90862}})}})}})}),
+h(-246,{sharedDescription="Rewarded from most repeatable treasures.",g={
 i(259189,{b=1,requireSkill=171,spellID=1264572}),
 i(259188,{b=1,requireSkill=171,spellID=1264572}),
 i(259191,{b=1,requireSkill=164,spellID=1264601}),

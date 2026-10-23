@@ -8374,34 +8374,34 @@ sp(101508,{c={9},lvl=35}),
 mnt(148972,{c={9},lvl=35}),
 mnt(148970,{c={9},lvl=35})}}),
 q(32340,{c={9},lvl=35,maps={490,491,492,493,494,495,496,497},sourceQuests={32325}})}})}}),
-h(-652,{awp=50200,coords={
+h(-652,{coords={
 [371]={{52.56,18.85}},
 [379]={{75.11,67.47}},
 [388]={{36.58,85.67}},
 [422]={{47.42,61.54}}},lvl=85,maps={418},phase=52,g={
 h(-12,{
-ach(8078)}),
+ach(8078,{awp=50200})}),
 h(-19,{crs={69768,69769,69841,69842},g={
-i(94158,{b=1,description="Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",q=3,sym={{"select","itemID",87218},{"groupfill"}}}),
-i(94159,{b=1,description="Can contain all sorts of herbs, ore, and cloth.",q=2}),
-i(94225,{b=1,f=55,factionID=1341,q=3,repeatable=1}),
-i(94227,{b=1,f=55,factionID=1269,q=3,repeatable=1}),
-i(94226,{b=1,f=55,factionID=1337,q=3,repeatable=1}),
-i(94223,{b=1,f=55,factionID=1270,q=3,repeatable=1})}}),
-n(69768,{coords={
+i(94158,{awp=50200,b=1,description="Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",q=3,sym={{"select","itemID",87218},{"groupfill"}}}),
+i(94159,{awp=50200,b=1,description="Can contain all sorts of herbs, ore, and cloth.",q=2}),
+i(94225,{awp=50200,b=1,f=55,factionID=1341,q=3,repeatable=1}),
+i(94227,{awp=50200,b=1,f=55,factionID=1269,q=3,repeatable=1}),
+i(94226,{awp=50200,b=1,f=55,factionID=1337,q=3,repeatable=1}),
+i(94223,{awp=50200,b=1,f=55,factionID=1270,q=3,repeatable=1})}}),
+n(69768,{awp=50200,coords={
 [371]={{43.2,17.2},{52.4,37},{53,19.6}},
 [379]={{64.6,64},{67.2,81.8},{74.6,67.8}},
 [388]={{36.8,85.2},{48.4,86},{49.4,73.2}},
 [418]={{36.2,60.2},{38.6,66.6},{57.8,29.2}},
 [422]={{38,48.6},{47,60.4},{57.6,66}}},description="Can be found patroling the roads along the posted coordinates.",g={
 crit(22733,{achID=8078})}}),
-n(69841,{
+n(69841,{awp=50200,g={
 mnt(138424,{b=1,itemID=94230,lvl=40,q=4}),
-crit(22941,{achID=8078})}),
-n(69842,{
+crit(22941,{achID=8078})}}),
+n(69842,{awp=50200,g={
 mnt(138426,{b=1,itemID=94231,lvl=40,q=4}),
-crit(22942,{achID=8078})}),
-n(69769,{coords={
+crit(22942,{achID=8078})}}),
+n(69769,{awp=50200,coords={
 [418]={{38.8,67.6}}},g={
 mnt(138425,{b=1,itemID=94229,lvl=40,q=4}),
 crit(22732,{achID=8078})}})}})}})}})

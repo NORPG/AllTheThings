@@ -13,11 +13,11 @@ hqt(934,{description="This quest gets marked as completed when you complete the 
 m(1414,{maps={1464},g={
 m(1413,{
 hqt(55296)})}}),
-m(1415,{awp=11101,maps={1463},g={
+m(1415,{maps={1463},g={
 m(1434,{
 hqt(7908,{awp=11201}),
-hqt(618),
-hqt(614),
+hqt(618,{awp=11101}),
+hqt(614,{awp=11101}),
 hqt(615,{awp=11201}),
 hqt(620,{awp=11201})})}}),
 hqt(6842),

@@ -10143,12 +10143,12 @@ i(32905,{f=55,lvl=55,q=1}),
 r(26783,{b=1,crs={19168},itemID=21906,learnedAt=360,q=2,requireSkill=197}),
 r(28571,{b=1,crs={19168,19221},itemID=22920,learnedAt=360,q=2,requireSkill=171})}),
 o(184465,{awp=50004,isBounty=1,modelScale=1.6,sharedDescription="Blizzard broke the cache of the legion with Cataclysm Classic by removing the keys and not adding the automatic unlock from killing the mini bosses.",g={
-s(138598,28252,{b=1,f=4,isBounty=1,loc=42,lvl=70,q=3,u=2}),
-s(138597,28251,{b=1,f=5,isBounty=1,loc=47,lvl=70,q=3,u=2}),
-s(138595,28249,{b=1,f=3,isBounty=1,lvl=70,q=3,u=2}),
-s(138596,28250,{b=1,f=4,isBounty=1,loc=41,lvl=70,q=3,u=2}),
-i(28248,{b=1,c={2,7,11},isBounty=1,lvl=70,q=3}),
-i(72663,{awp=40300,isBounty=1,q=1})}}),
+s(138598,28252,{b=1,f=4,loc=42,lvl=70,q=3,u=2}),
+s(138597,28251,{b=1,f=5,loc=47,lvl=70,q=3,u=2}),
+s(138595,28249,{b=1,f=3,lvl=70,q=3,u=2}),
+s(138596,28250,{b=1,f=4,loc=41,lvl=70,q=3,u=2}),
+i(28248,{b=1,c={2,7,11},lvl=70,q=3}),
+i(72663,{awp=40300,q=1})}}),
 d(1,{
 e(563,{npcID=19219,g={
 s(138603,28257,{b=1,f=23,lvl=70,q=3}),

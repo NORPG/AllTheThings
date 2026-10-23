@@ -26202,9 +26202,9 @@ crit(23783,{achID=8454,id=14})})}})}}),
 d(2,{difficulties={5,6},rwp=60002,g={
 e(869,{npcID=71865,g={
 ach(8679,{r=2,g={
-title(211,{r=2})}}),
+title(211)}}),
 ach(8680,{r=1,g={
-title(212,{r=1})}}),
+title(212)}}),
 gach(8511),
 ach(8482,{
 title(214)}),
