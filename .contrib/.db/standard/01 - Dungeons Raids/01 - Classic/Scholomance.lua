@@ -58,9 +58,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 			races = HORDE_ONLY,
 			lvl = 55,
 			groups = {
-				i(20134, {	-- Skyfury Helm
-					timeline = { ADDED_1_7_0, REMOVED_4_0_3 },
-				}),
+				i(20134),	-- Skyfury Helm
 			},
 		})),
 		q(7666,	{ -- Again Into the Great Ossuary [A]
@@ -209,9 +207,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 					},
 					description = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
 				}),
-				i(65923, {	-- Barov Servant Caller
-					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
-				}),
+				i(65923),	-- Barov Servant Caller
 			},
 		}),
 		q(5531, {	-- Betina Bigglezink
@@ -244,12 +240,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 					provider = { "i", 12368 },	-- Dawn's Gambit
 					description = "This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",
 				}),
-				i(15854, {	-- Dancing Sliver
-					timeline = { REMOVED_4_0_3 },
-				}),
-				i(15853, {	-- Windreaper
-					timeline = { REMOVED_4_0_3 },
-				}),
+				i(15854),	-- Dancing Sliver
+				i(15853),	-- Windreaper
 			},
 		}),
 		q(5382, {	-- Doctor Theolen Krastinov, the Butcher
@@ -509,18 +501,10 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 				objective(1, {	-- 0/1 Darkmaster Gandling slain
 					provider = { "n", 1853 },	-- Darkmaster Gandling
 				}),
-				i(65974, {	-- Discipline Rod
-					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
-				}),
-				i(65925, {	-- Lucien's Boots
-					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
-				}),
-				i(65950, {	-- Shackles of Punishment
-					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
-				}),
-				i(65995, {	-- Signet of the Darkmaster
-					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
-				}),
+				i(65974),	-- Discipline Rod
+				i(65925),	-- Lucien's Boots
+				i(65950),	-- Shackles of Punishment
+				i(65995),	-- Signet of the Darkmaster
 			},
 		}),
 		{	-- Skeletal Fragments
@@ -572,9 +556,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 					provider = { "i", 18880 },	-- Darkreaver's Head
 					cr = 14516,	-- Death Knight Darkreaver
 				}),
-				i(18807, {	-- Helm of Latent Power
-					timeline = { REMOVED_1_7_0 },
-				}),
+				i(18807),	-- Helm of Latent Power
 			},
 		}),
 		applyclassicphase(PHASE_FOUR, q(8258, {	-- The Darkreaver Menace (Post 1.7, Phase 4)
@@ -593,9 +575,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 					provider = { "i", 18880 },	-- Darkreaver's Head
 					cr = 14516,	-- Death Knight Darkreaver
 				}),
-				i(20134, {	-- Skyfury Helm
-					timeline = { ADDED_1_7_0, REMOVED_4_0_3 },
-				}),
+				i(20134),	-- Skyfury Helm
 			},
 		})),
 		q(5462, {	-- The Dying, Ras Frostwhisper
@@ -661,9 +641,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 					coord = { 83.0, 71.6, TIRISFAL_GLADES },
 					cr = 11022,	-- Alexi Barov <House of Barov>
 				}),
-				i(14023, {	-- Barov Peasant Caller
-					timeline = { REMOVED_4_0_3 },
-				}),
+				i(14023),	-- Barov Peasant Caller
 			},
 		}),
 		q(5342, {	-- The Last Barov [Horde]
@@ -680,9 +658,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 					coord = { 43.4, 83.6, WESTERN_PLAGUELANDS },
 					cr = 11023,	-- Weldon Barov <House of Barov>
 				}),
-				i(14022, {	-- Barov Peasant Caller
-					timeline = { REMOVED_4_0_3 },
-				}),
+				i(14022),	-- Barov Peasant Caller
 			},
 		}),
 		q(5466, {	-- The Lich, Ras Frostwhisper
@@ -696,18 +672,10 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 				objective(1, {	-- 0/1 Human Head of Ras Frostwhisper
 					provider = { "i", 13626 },	-- Human Head of Ras Frostwhisper
 				}),
-				i(14002, {	-- Darrowshire Strongguard
-					timeline = { REMOVED_4_0_3 },
-				}),
-				i(13984, {	-- Darrowspike
-					timeline = { REMOVED_4_0_3 },
-				}),
-				i(13982, {	-- Warblade of Caer Darrow
-					timeline = { REMOVED_4_0_3 },
-				}),
-				i(13986, {	-- Crown of Caer Darrow
-					timeline = { REMOVED_4_0_3 },
-				}),
+				i(14002),	-- Darrowshire Strongguard
+				i(13984),	-- Darrowspike
+				i(13982),	-- Warblade of Caer Darrow
+				i(13986),	-- Crown of Caer Darrow
 			},
 		}),
 		q(27142, {	-- The Lich, Ras Frostwhisper [CATA]

@@ -1058,9 +1058,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
 					races = ALLIANCE_ONLY,
 					groups = {
-						i(17410, {	-- Zinfizzlex's Portable Shredder Unit
-							timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
-						}),
+						i(17410),	-- Zinfizzlex's Portable Shredder Unit
 					},
 				}),
 				q(6861, {	-- Zinfizzlex's Portable Shredder Unit (H)
@@ -1068,9 +1066,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
 					races = HORDE_ONLY,
 					groups = {
-						i(17384, {	-- Zinfizzlex's Portable Shredder Unit
-							timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
-						}),
+						i(17384),	-- Zinfizzlex's Portable Shredder Unit
 					},
 				}),
 			}),

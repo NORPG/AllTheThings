@@ -944,9 +944,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 209058 },	-- Windswept Balloon
 							},
 						}),
-						i(72045, {	-- Horde Balloon (PET!)
-							timeline = { ADDED_4_2_0 },
-						}),
+						i(72045),	-- Horde Balloon (PET!)
 					},
 				}),
 				q(4300, {	-- Bone-Bladed Weapons
@@ -968,15 +966,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								6508,	-- Venomhide Ravasaur
 							},
 						}),
-						i(11862, {	-- White Bone Band
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(11863, {	-- White Bone Shredder
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(11864, {	-- White Bone Spear
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(11862),	-- White Bone Band
+						i(11863),	-- White Bone Shredder
+						i(11864),	-- White Bone Spear
 					},
 				}),
 				q(2757, {	-- Booty Bay or Bust!
@@ -1037,15 +1029,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					races = HORDE_ONLY,
 					lvl = 50,
 					groups = {
-						i(11870, {	-- Oblivion Orb
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(11871, {	-- Snarkshaw Spaulders
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(11872, {	-- Eschewal Greaves
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(11870),	-- Oblivion Orb
+						i(11871),	-- Snarkshaw Spaulders
+						i(11872),	-- Eschewal Greaves
 					},
 				}),
 				q(60887, {	-- Cataclysm: Onward to Adventure in Kalimdor
@@ -1899,9 +1885,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					timeline = { ADDED_9_2_5, REMOVED_10_0_5 },
 					races = HORDE_ONLY,
 					groups = {
-						i(191408, {	-- Explosive Pie
-							timeline = { ADDED_9_2_5, REMOVED_10_0_5 },
-						}),
+						i(191408),	-- Explosive Pie
 					},
 				}),
 				q(49977, {	-- Summons to Orgrimmar
@@ -1939,9 +1923,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if BEFORE 4.0.3
 						recipe(713),	-- Summon Incubus
 						-- #endif
-						i(22243, {	-- Small Soul Pouch
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(22243),	-- Small Soul Pouch
 					},
 				}),
 				-- #endif
@@ -1962,9 +1944,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if BEFORE 4.0.3
 						recipe(712),	-- Summon Succubus
 						-- #endif
-						i(22243, {	-- Small Soul Pouch
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(22243),	-- Small Soul Pouch
 					},
 				}),
 				q(1504, {	-- The Binding (Voidwalker) [Orgrimmar]
@@ -2046,9 +2026,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					races = HORDE_ONLY,
 					lvl = 40,
 					groups = {
-						recipe(9957, {	-- Orcish War Leggings
-							timeline = { REMOVED_4_0_3 },
-						}),
+						recipe(9957),	-- Orcish War Leggings
 					},
 				}),
 				q(1963, {	-- The Shattered Hand (1/2)
@@ -2086,9 +2064,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							coord = { 54.2, 68.2, ORGRIMMAR },
 							cr = 6466,	-- Gamon
 						}),
-						i(7298, {	-- Blade of Cunning
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(7298),	-- Blade of Cunning
 					},
 				}),
 				q(2460, {	-- The Shattered Salute
@@ -2174,21 +2150,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					timeline = { ADDED_4_0_3 },
 					races = HORDE_ONLY,
 					groups = {
-						i(63916, {	-- Belt of Mystical Betrayal
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(63914, {	-- Mindsliced Chestguard
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(63913, {	-- Twilight-Heart Shoulderplates
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(63912, {	-- Twilight Mirrorshield
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(63915, {	-- Vision-Tainted Treads
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(63916),	-- Belt of Mystical Betrayal
+						i(63914),	-- Mindsliced Chestguard
+						i(63913),	-- Twilight-Heart Shoulderplates
+						i(63912),	-- Twilight Mirrorshield
+						i(63915),	-- Vision-Tainted Treads
 						-- #if BEFORE 9.1.0
 						i(63917, {	-- Truthbreaker Shield [Not listed, but awards on completing quest] [9.1: was NOT received when completed. 2021-09-25]
 							timeline = { ADDED_4_0_3, REMOVED_9_1_0 },

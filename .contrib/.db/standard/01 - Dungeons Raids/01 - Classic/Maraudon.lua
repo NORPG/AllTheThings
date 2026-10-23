@@ -229,9 +229,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						-- #endif
-						i(17774, {	-- Mark of the Chosen
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(17774),	-- Mark of the Chosen
 					},
 				}),
 				q(7046, {	-- The Scepter of Celebras
@@ -242,7 +240,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					groups = {
 						i(17191, {	-- Scepter of Celebras
 							description = "This item is used to open the portal to the Inner Falls just after Celebras the Cursed in Maraudon.",
-							timeline = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -255,18 +252,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/15 Theradric Crystal Carving
 							provider = { "i", 17684 },	-- Theradric Crystal Carving
 						}),
-						i(17776, {	-- Sprightring Helm
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(17779, {	-- Hulkstone Pauldrons
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(17775, {	-- Acumen Robes
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(17777, {	-- Relentless Chain
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(17776),	-- Sprightring Helm
+						i(17779),	-- Hulkstone Pauldrons
+						i(17775),	-- Acumen Robes
+						i(17777),	-- Relentless Chain
 					},
 				}),
 				{	-- Vyletongue Corruption

@@ -59,9 +59,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 				groups = {
 					i(138411),	-- Razor-Sharp Shark Tooth (QI!)
 					--
-					i(138414, {	-- Emergency Pirate Outfit
-						timeline = { ADDED_7_0_3 },
-					}),
+					i(138414),	-- Emergency Pirate Outfit
 				},
 			}),
 		}),

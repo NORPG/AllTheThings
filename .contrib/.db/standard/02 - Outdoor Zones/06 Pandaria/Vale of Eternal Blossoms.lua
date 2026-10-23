@@ -272,9 +272,7 @@ root(ROOTS.Zones, {
 								provider = { "n", 68566 },	-- Skitterer Xi'a
 								coord = { 36.2, 37.2, KRASARANG_WILDS },
 							}),
-							i(94025, {	-- Red Panda (PET!)
-								timeline = { ADDED_5_2_0 },
-							}),
+							i(94025),	-- Red Panda (PET!)
 						},
 					}),
 					q(32604, {	-- Beasts of Fable Book I

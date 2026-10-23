@@ -139,7 +139,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- CRIEVE NOTE: Not sure if there's a source achievement or quest required to do first.
 							groups = {
 								i(142447, {	-- Torn Sack of Pet Supplies
-									timeline = { ADDED_7_1_0 },
 									groups = {
 										i(142448, {	-- Albino Buzzard (PET!)
 											timeline = { ADDED_7_1_0 },
@@ -344,12 +343,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/5 Ammo Dumps Destroyed
 							provider = { "o", 195203 },	-- Theramore Ammunition Stockpile
 						}),
-						i(59558, {	-- Gouging Staff
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59559, {	-- Bellipotent Gloves
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(59558),	-- Gouging Staff
+						i(59559),	-- Bellipotent Gloves
 					},
 				}),
 				q(13970, {	-- Animal Services
@@ -383,9 +378,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2456),	-- Minor Rejuvenation Potion
 						i(2459),	-- Swiftness Potion
 						-- #endif
-						i(5340, {	-- Cauldron Stirrer
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(5340),	-- Cauldron Stirrer
 					},
 				}),
 				q(1838, {	-- Brutal Armor
@@ -430,9 +423,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					races = HORDE_ONLY,
 					lvl = 20,
 					groups = {
-						i(7133, {	-- Brutal Hauberk
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(7133),	-- Brutal Hauberk
 					},
 				}),
 				q(13963, {	-- By Hook Or By Crook
@@ -500,9 +491,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: This isn't collectible in Classic.
 					groups = {
-						i(6653, {	-- Torch of the Dormant Flame
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6653),	-- Torch of the Dormant Flame
 					},
 					-- #endif
 				}),
@@ -528,9 +517,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							provider = { "i", 6652 },	-- Reagent Pouch
 							cr = 3199,	-- Burning Blade Cultist
 						}),
-						i(6636, {	-- Fire Sapta
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6636),	-- Fire Sapta
 					},
 				}),
 				q(1526, {	-- Call of Fire (4/5)
@@ -571,7 +558,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #if NOT ANYCLASSIC
 						i(6654, {	-- Torch of the Eternal Flame
-							timeline = { REMOVED_4_0_3 },
 							collectible = true,	-- retroactively granted from old completed quest state
 						}),
 						-- #endif
@@ -693,9 +679,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					races = HORDE_ONLY,
 					lvl = 20,
 					groups = {
-						i(6637, {	-- Water Sapta
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6637),	-- Water Sapta
 					},
 				}),
 				q(63, {		-- Call of Water (7/9)
@@ -753,9 +737,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					repeatable = true,
 					lvl = 20,
 					groups = {
-						i(6637, {	-- Water Sapta
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6637),	-- Water Sapta
 					},
 				}),
 				q(855, {	-- Centaur Bracers
@@ -863,9 +845,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								3239,	-- Thunderhead
 							},
 						}),
-						i(4952, {	-- Stormstout
-							timeline = { REMOVED_4_0_1 },
-						}),
+						i(4952),	-- Stormstout
 					},
 				}),
 				q(822, {	-- Chen's Empty Keg (3/3)
@@ -895,9 +875,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								3474,	-- Lakota'mani
 							},
 						}),
-						i(4953, {	-- Trogg Brew / Trogg Ale [CATA+]
-							timeline = { REMOVED_4_0_1 },
-						}),
+						i(4953),	-- Trogg Brew / Trogg Ale [CATA+]
 					},
 				}),
 				q(4961, {	-- Cleansing of the Orb of Orahil
@@ -1117,15 +1095,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					timeline = { ADDED_4_0_3 },
 					races = HORDE_ONLY,
 					groups = {
-						i(59536, {	-- Bloodeye Belt
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59537, {	-- Kranal's Vest
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59538, {	-- Caravan Escort's Gloves
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(59536),	-- Bloodeye Belt
+						i(59537),	-- Kranal's Vest
+						i(59538),	-- Caravan Escort's Gloves
 						i(131324, {	-- Kranal's Chestplate
 							timeline = { ADDED_7_0_3 },
 						}),
@@ -1144,9 +1116,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							provider = { "i", 15826 },	-- Curative Animal Salve
 							cr = 12296,	-- Sickly Gazelle
 						}),
-						i(15866, {	-- Veildust Medicine Bag
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(15866),	-- Veildust Medicine Bag
 					},
 				}),
 				q(14073, {	-- Deathgate's Reinforcements
@@ -1188,9 +1158,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 3524 },	-- The Demon Seed
 							},
 						}),
-						i(69219, {	-- Sacrificial Blade
-							timeline = { ADDED_4_1_0 },
-						}),
+						i(69219),	-- Sacrificial Blade
 					},
 				}),
 				q(26878, {	-- Disciples of Naralex
@@ -1266,12 +1234,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5059 },	-- Digging Claw
 							},
 						}),
-						i(6503, {	-- Harlequin Robes
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(6502, {	-- Violet Scale Armor
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6503),	-- Harlequin Robes
+						i(6502),	-- Violet Scale Armor
 					},
 				}),
 				q(13615, {	-- Empty Quivers
@@ -1350,18 +1314,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							coord = { 55.0, 26.6, THE_BARRENS },
 						}),
-						i(7326, {	-- Thun'grim's Axe
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(7327, {	-- Thun'grim's Dagger
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(7328, {	-- Thun'grim's Mace
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(7329, {	-- Thun'grim's Sword
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(7326),	-- Thun'grim's Axe
+						i(7327),	-- Thun'grim's Dagger
+						i(7328),	-- Thun'grim's Mace
+						i(7329),	-- Thun'grim's Sword
 					},
 				}),
 				q(1799, {	-- Fragments of the Orb of Orahil
@@ -1392,12 +1348,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					races = HORDE_ONLY,
 					lvl = 13,
 					groups = {
-						i(5311, {	-- Buckled Boots
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(5312, {	-- Riveted Gauntlets
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(5311),	-- Buckled Boots
+						i(5312),	-- Riveted Gauntlets
 					},
 				}),
 				q(848, {	-- Fungal Spores
@@ -1452,15 +1404,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 195206 },	-- Curious Pirate Landmark
 							},
 						}),
-						i(59560, {	-- Bling Cane
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59561, {	-- Vest of Fortune
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59562, {	-- Dividend Leggings
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(59560),	-- Bling Cane
+						i(59561),	-- Vest of Fortune
+						i(59562),	-- Dividend Leggings
 						i(131329, {	-- Hauberk of Fortune
 							timeline = { ADDED_7_0_3 },
 						}),
@@ -1566,12 +1512,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Captain Elendilad slain
 							provider = { "n", 33302 },	-- Captain Elendilad
 						}),
-						i(56644, {	-- Gorat's Bequest
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(56645, {	-- Kadrak's Breastplate
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(56644),	-- Gorat's Bequest
+						i(56645),	-- Kadrak's Breastplate
 						i(131295, {	-- Gorat's Spaulders of Satisfaction
 							timeline = { ADDED_7_0_3 },
 						}),
@@ -1740,12 +1682,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							coord = { 29.8, 17.6, STONETALON_MOUNTAINS },
 						}),
-						i(10653, {	-- Trailblazer Boots
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(10654, {	-- Jutebraid Gloves
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(10653),	-- Trailblazer Boots
+						i(10654),	-- Jutebraid Gloves
 					},
 				}),
 				q(903, {	-- Hunting the Huntress [CATA+] / Prowlers of the Barrens
@@ -1838,12 +1776,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					timeline = { ADDED_4_0_3 },
 					races = HORDE_ONLY,
 					groups = {
-						i(59545, {	-- Fuzzy Gloves
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59546, {	-- Ointment-Coated Bracers
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(59545),	-- Fuzzy Gloves
+						i(59546),	-- Ointment-Coated Bracers
 						i(131328, {	-- Ointment-Coated Handwraps
 							timeline = { ADDED_7_0_3 },
 						}),
@@ -2001,15 +1935,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							cr = 3476,	-- Isha Awak
 						}),
-						i(5356, {	-- Branding Rod
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(5357, {	-- Ward of the Vale
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(5355, {	-- Beastmaster's Girdle
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(5356),	-- Branding Rod
+						i(5357),	-- Ward of the Vale
+						i(5355),	-- Beastmaster's Girdle
 					},
 				}),
 				q(865, {	-- It's Gotta be the Horn [CATA+] / Raptor Horns
@@ -2352,18 +2280,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					timeline = { ADDED_4_1_0 },
 					races = HORDE_ONLY,
 					groups = {
-						i(69221, {	-- Mor'shan Caravaneer's Leggings
-							timeline = { ADDED_4_1_0 },
-						}),
-						i(69216, {	-- Wild Rider's Gloves
-							timeline = { ADDED_4_1_0 },
-						}),
+						i(69221),	-- Mor'shan Caravaneer's Leggings
+						i(69216),	-- Wild Rider's Gloves
 						i(131710, {	-- Wild Rider's Mail Gauntlets
 							timeline = { ADDED_7_0_3 },
 						}),
-						i(69222, {	-- Kadrak's Axe
-							timeline = { ADDED_4_1_0 },
-						}),
+						i(69222),	-- Kadrak's Axe
 					},
 				}),
 				q(29109, {	-- Mor'shan Caravan Pick-Up
@@ -2413,12 +2335,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(59556, {	-- Shield of Inner Glow
 							timeline = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
-						i(10820, {	-- Jackseed Belt
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(10821, {	-- Sower's Cloak
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(10820),	-- Jackseed Belt
+						i(10821),	-- Sower's Cloak
 					},
 				}),
 				q(14063, {	-- Mutiny, Mon!
@@ -2431,18 +2349,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Maiden's Dagger Captured
 							provider = { "n", 34782 },	-- Alicia Cuthbert
 						}),
-						i(59573, {	-- Bachelor's Dagger
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59574, {	-- Conspirator's Slippers
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59575, {	-- Uninsured Bracers
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59576, {	-- Mutineer's Cloak
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(59573),	-- Bachelor's Dagger
+						i(59574),	-- Conspirator's Slippers
+						i(59575),	-- Uninsured Bracers
+						i(59576),	-- Mutineer's Cloak
 						i(131330, {	-- Uninsured Armguards
 							timeline = { ADDED_7_0_3 },
 						}),
@@ -2457,12 +2367,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					classes = { MAGE },
 					lvl = 26,
 					groups = {
-						i(7512, {	-- Nether-lace Robe
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(9515, {	-- Nether-lace Tunic
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(7512),	-- Nether-lace Robe
+						i(9515),	-- Nether-lace Tunic
 					},
 				}),
 				q(1510, {	-- News of Dogran (2/2)
@@ -2618,12 +2524,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					timeline = { ADDED_4_0_3 },
 					races = HORDE_ONLY,
 					groups = {
-						i(59547, {	-- Out-of-Date Manual
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59548, {	-- Scrap Metal Shield
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(59547),	-- Out-of-Date Manual
+						i(59548),	-- Scrap Metal Shield
 					},
 				}),
 				q(6541, {	-- Report to Kadrak (The Barrens)
@@ -2659,15 +2561,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							provider = { "i", 45001 },	-- Medicated Salve
 							cr = 33266,	-- Wounded Mor'shan Defender
 						}),
-						i(56633, {	-- Leggings of the Traveling Medic
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(56634, {	-- Halfmoon Gloves
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(56635, {	-- First Responder's Pauldrons
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(56633),	-- Leggings of the Traveling Medic
+						i(56634),	-- Halfmoon Gloves
+						i(56635),	-- First Responder's Pauldrons
 						i(131294, {	-- Battlefield Medic Handguards
 							timeline = { ADDED_7_0_3 },
 						}),
@@ -2849,12 +2745,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					timeline = { REMOVED_4_0_3 },
 					lvl = 10,
 					groups = {
-						i(5324, {	-- Engineer's Hammer
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(5325, {	-- Welding Shield
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(5324),	-- Engineer's Hammer
+						i(5325),	-- Welding Shield
 					},
 				}),
 				q(3924, {	-- Samophlange Manual
@@ -2872,12 +2764,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 11148, 5 },	-- Samophlange Manual Page
 							},
 						}),
-						i(11854, {	-- Samophlange Screwdriver
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(11855, {	-- Tork Wrench
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(11854),	-- Samophlange Screwdriver
+						i(11855),	-- Tork Wrench
 						-- #if BEFORE 4.0.3
 						i(11147, {	-- Samophlange Manual Cover
 							coord = { 60.0, 4.0, THE_BARRENS },
@@ -3044,12 +2932,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Sludge Beast slain
 							provider = { "n", 52165 },	-- Sludge Beast
 						}),
-						i(69220, {	-- Nozzlepot's Vest
-							timeline = { ADDED_4_1_0 },
-						}),
-						i(69218, {	-- Sludge Fen Cloak
-							timeline = { ADDED_4_1_0 },
-						}),
+						i(69220),	-- Nozzlepot's Vest
+						i(69218),	-- Sludge Fen Cloak
 						i(131708, {	-- Sludge Encrusted Vest
 							timeline = { ADDED_7_0_3 },
 						}),
@@ -3149,12 +3033,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							coord = { 63.6, 49.2, THE_BARRENS },
 						}),
-						i(5337, {	-- Wayfaring Gloves
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(5320, {	-- Padded Lamellar Boots
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(5337),	-- Wayfaring Gloves
+						i(5320),	-- Padded Lamellar Boots
 					},
 				}),
 				q(3281, {	-- Stolen Silver
@@ -3172,12 +3052,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							coord = { 58.0, 53.9, THE_BARRENS },
 						}),
-						i(11853, {	-- Rambling Boots
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(2694, {	-- Settler's Leggings
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(11853),	-- Rambling Boots
+						i(2694),	-- Settler's Leggings
 					},
 				}),
 				q(4487, {	-- Summon Felsteed (1/2) (Ironforge)
@@ -3338,9 +3214,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if BEFORE 4.0.3
 						recipe(691),	-- Summon Felhunter
 						-- #endif
-						i(22244, {	-- Box of Souls
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(22244),	-- Box of Souls
 					},
 				}),
 				q(4964, {	-- The Completed Orb of Dar'Orahil
@@ -3355,12 +3229,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					lockCriteria = { 1, "questID", 4975 },	-- The Completed Orb of Noh'Orahil (mutually exclusive)
 					lvl = 35,
 					groups = {
-						i(15108, {	-- Orb of Dar'Orahil
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(15106, {	-- Staff of Dar'Orahil
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(15108),	-- Orb of Dar'Orahil
+						i(15106),	-- Staff of Dar'Orahil
 					},
 				}),
 				q(4975, {	-- The Completed Orb of Noh'Orahil
@@ -3375,12 +3245,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					lockCriteria = { 1, "questID", 4964 },	-- The Completed Orb of Dar'Orahil (mutually exclusive)
 					lvl = 35,
 					groups = {
-						i(15107, {	-- Orb of Noh'Orahil
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(15105, {	-- Staff of Noh'Orahil
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(15107),	-- Orb of Noh'Orahil
+						i(15105),	-- Staff of Noh'Orahil
 					},
 				}),
 				q(4786, {	-- The Completed Robe
@@ -3391,9 +3257,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					classes = { WARLOCK },
 					lvl = 31,
 					groups = {
-						i(6900, {	-- Enchanted Gold Bloodrobe
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6900),	-- Enchanted Gold Bloodrobe
 					},
 				}),
 				q(863, {	-- The Escape
@@ -3559,12 +3423,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					timeline = { ADDED_4_0_3 },
 					races = HORDE_ONLY,
 					groups = {
-						i(59531, {	-- Far Watch Musket
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59532, {	-- Imported Bracers
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(59531),	-- Far Watch Musket
+						i(59532),	-- Imported Bracers
 					},
 				}),
 				q(13991, {	-- The Purloined Payroll
@@ -3605,12 +3465,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Rocket Ride Taken
 							provider = { "n", 52203 },	-- Silver Bullet X-831
 						}),
-						i(69217, {	-- Test Pilot Britches
-							timeline = { ADDED_4_1_0 },
-						}),
-						i(69223, {	-- Emergency Hatchet
-							timeline = { ADDED_4_1_0 },
-						}),
+						i(69217),	-- Test Pilot Britches
+						i(69223),	-- Emergency Hatchet
 						i(131709, {	-- Passenger Pantaloons
 							timeline = { ADDED_7_0_3 },
 						}),
@@ -3676,12 +3532,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 195224 },	-- Stolen Silver Lockbox
 							},
 						}),
-						i(59554, {	-- Silver-Edged Blade
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59555, {	-- Silver-Trim Leggings
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(59554),	-- Silver-Edged Blade
+						i(59555),	-- Silver-Trim Leggings
 						i(131331, {	-- Silver-Trim Greaves
 							timeline = { ADDED_7_0_3 },
 						}),
@@ -3697,15 +3549,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Tortusk slain
 							provider = { "n", 34544 },	-- Tortusk
 						}),
-						i(59533, {	-- Wand of Separation
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59534, {	-- Boar Hunter's Shoes
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59535, {	-- Togrik's Legguards
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(59533),	-- Wand of Separation
+						i(59534),	-- Boar Hunter's Shoes
+						i(59535),	-- Togrik's Legguards
 						i(131325, {	-- Boar Hunter's Treads
 							timeline = { ADDED_7_0_3 },
 						}),
@@ -3764,12 +3610,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 195004 },	-- Wolf Chains
 							},
 						}),
-						i(59529, {	-- Flame Retardant Sheet
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59530, {	-- Wolf Tender's Boots
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(59529),	-- Flame Retardant Sheet
+						i(59530),	-- Wolf Tender's Boots
 						i(131310, {	-- Wolf Tender's Footwraps
 							timeline = { ADDED_7_0_3 },
 						}),
@@ -3805,9 +3647,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					timeline = { ADDED_4_0_3 },
 					races = HORDE_ONLY,
 					groups = {
-						i(60644, {	-- Gorka's Band
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(60644),	-- Gorka's Band
 					},
 				}),
 				q(869, {	-- To Track a Thief [CATA+] / Raptor Thieves
@@ -3925,9 +3765,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								3252,	-- Silithid Swarmer
 							},
 						}),
-						i(7120, {	-- Ruga's Bulwark
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(7120),	-- Ruga's Bulwark
 					},
 				}),
 				q(959, {	-- Trouble at the Docks
@@ -4077,15 +3915,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 195239 },	-- Woaded Waptor Twap
 							},
 						}),
-						i(59563, {	-- Waptor Thwapper
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59564, {	-- Waptor Skin Boots
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(59565, {	-- Waptor Scale Bweastpwate
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(59563),	-- Waptor Thwapper
+						i(59564),	-- Waptor Skin Boots
+						i(59565),	-- Waptor Scale Bweastpwate
 						i(131332, {	-- Waptor Tweads
 							timeline = { ADDED_7_0_3 },
 						}),
@@ -4121,9 +3953,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					repeatable = true,
 					lvl = 20,
 					groups = {
-						i(6637, {	-- Water Sapta
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6637),	-- Water Sapta
 					},
 				}),
 				q(29026, {	-- Wenikee Boltbucket

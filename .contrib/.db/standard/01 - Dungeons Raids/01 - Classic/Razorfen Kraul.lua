@@ -29,15 +29,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Razorflank's Heart
 							provider = { "i", 5793 },	-- Razorflank's Heart
 						}),
-						i(6725, {	-- Marbled Buckler
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(4197, {	-- Berylline Pads
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(6742, {	-- Stonefist Girdle
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6725),	-- Marbled Buckler
+						i(4197),	-- Berylline Pads
+						i(6742),	-- Stonefist Girdle
 					},
 				}),
 				q(26906, {	-- Agamaggan
@@ -54,21 +48,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Razorflank's Heart
 							provider = { "i", 5793 },	-- Razorflank's Heart
 						}),
-						i(65968, {	-- Agamaggan-Blessed Greaves
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(66007, {	-- Agamaggan's Silent Tear
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(65991, {	-- Boots of the Noble Path
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(65944, {	-- Charlga's Breastplate
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(65918, {	-- Agamaggan's Gift
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(65968),	-- Agamaggan-Blessed Greaves
+						i(66007),	-- Agamaggan's Silent Tear
+						i(65991),	-- Boots of the Noble Path
+						i(65944),	-- Charlga's Breastplate
+						i(65918),	-- Agamaggan's Gift
 						i(131617, {	-- Razorflank's Chainmail
 							timeline = { ADDED_7_0_3 },
 						}),
@@ -184,12 +168,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							provider = { "i", 5825 },	-- Treshala's Pendant
 							description = "Drops from any creature in the Dungeon.",
 						}),
-						i(6751, {	-- Mourning Shawl
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(6752, {	-- Lancer Boots
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6751),	-- Mourning Shawl
+						i(6752),	-- Lancer Boots
 					},
 				}),
 				q(26907, {	-- Take Them Down!
@@ -234,15 +214,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Razorflank's Medallion
 							provider = { "i", 5792 },	-- Razorflank's Medallion
 						}),
-						i(6725, {	-- Marbled Buckler
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(4197, {	-- Berylline Pads
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(6742, {	-- Stonefist Girdle
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6725),	-- Marbled Buckler
+						i(4197),	-- Berylline Pads
+						i(6742),	-- Stonefist Girdle
 						-- #if AFTER TBC
 						i(29200, {	-- Falfindel's Blaster
 							timeline = { ADDED_2_0_1, REMOVED_4_0_3 },

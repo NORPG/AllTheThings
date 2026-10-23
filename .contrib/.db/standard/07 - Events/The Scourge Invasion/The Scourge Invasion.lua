@@ -211,9 +211,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				maps = { KARAZHAN },
 				lvl = 70,
 				groups = {
-					i(40354, {	-- Monster Slayer's Kit
-						timeline = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
+					i(40354),	-- Monster Slayer's Kit
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY

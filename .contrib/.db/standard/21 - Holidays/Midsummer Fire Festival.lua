@@ -571,9 +571,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 							timeline = { ADDED_10_2_7 },
 							isDaily = true,
 							groups = {
-								i(224163, {	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (MM!)
-									timeline = { ADDED_10_2_7 },
-								}),
+								i(224163),	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (MM!)
 								i(244356, {	-- Crown of the Frost Lord (COSMETIC!)
 									timeline = { ADDED_11_1_7 },
 								}),
@@ -597,9 +595,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 							isDaily = true,
 							description = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
 							groups = {
-								i(275464, {	-- Sun Festival's Painted Roc (MOUNT!)
-									timeline = { ADDED_12_0_7 },
-								}),
+								i(275464),	-- Sun Festival's Painted Roc (MOUNT!)
 							},
 						}),
 						hqt(97116, {	-- Has rolled for Ahune Special Loot (2026) (Daily Accountwide)
@@ -2130,9 +2126,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					coord = { 30.6, 43.2, WINTERSPRING },
 				}),
 				-- #endif
-				i(23379, {	-- Cinder Bracers
-					timeline = { ADDED_1_11_0, REMOVED_2_4_0 },
-				}),
+				i(23379),	-- Cinder Bracers
 				-- #if BEFORE TBC
 				i(BURNING_BLOSSOM),
 				-- #endif

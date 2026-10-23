@@ -291,9 +291,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					races = ALLIANCE_ONLY,
 					lvl = 25,
 					groups = {
-						i(4535, {	-- Ironforge Memorial Ring
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(4535),	-- Ironforge Memorial Ring
 					},
 				}),
 				q(5641, {	-- A Lack of Fear
@@ -483,7 +481,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							sourceQuest = 3450,	-- An Easy Pickup
 							qg = 8517,	-- Xiggs Fuselighter
 							coord = { 71.0, 94.2, IRONFORGE },
-							timeline = { REMOVED_4_0_3 },
 							races = ALLIANCE_ONLY,
 							lvl = 45,
 							groups = {
@@ -499,7 +496,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							sourceQuest = 3451,	-- Signal for Pickup (1/2)
 							qg = 8517,	-- Xiggs Fuselighter
 							coord = { 71.0, 94.2, IRONFORGE },
-							timeline = { REMOVED_4_0_3 },
 							races = ALLIANCE_ONLY,
 							repeatable = true,
 							lvl = 45,
@@ -744,18 +740,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					races = ALLIANCE_ONLY,
 					lvl = 10,
 					groups = {
-						i(6978, {	-- Umbral Axe
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(6984, {	-- Umbral Sword
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(6982, {	-- Umbral Mace
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(6981, {	-- Umbral Dagger
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6978),	-- Umbral Axe
+						i(6984),	-- Umbral Sword
+						i(6982),	-- Umbral Mace
+						i(6981),	-- Umbral Dagger
 					},
 				}),
 				q(6388, {	-- Gryth Thurden
@@ -920,9 +908,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					races = ALLIANCE_ONLY,
 					lvl = 20,
 					groups = {
-						i(6974, {	-- Fire hardened Gauntlets
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6974),	-- Fire hardened Gauntlets
 					},
 				}),
 				applyclassicphase(CATA_PHASE_ONE, q(29347, {	-- Live Bait
@@ -964,12 +950,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							coord = { 27.7, 36.4, DUN_MOROGH },
 						}),
-						i(7507, {	-- Arcane Orb
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(9514, {	-- Arcane Staff
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(7507),	-- Arcane Orb
+						i(9514),	-- Arcane Staff
 					},
 				}),
 				q(3647, {	-- Membership Card Renewal [A]
@@ -1055,9 +1037,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					races = ALLIANCE_ONLY,
 					lvl = 30,
 					groups = {
-						i(46978, {	-- Totem of the Earthen Ring
-							timeline = { ADDED_3_3_0, REMOVED_4_0_3 },
-						}),
+						i(46978),	-- Totem of the Earthen Ring
 					},
 				}),
 				q(6392, {	-- Return to Brock / Return to Gremlock [CATA+]
@@ -1093,12 +1073,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					races = ALLIANCE_ONLY,
 					lvl = 45,
 					groups = {
-						i(10707, {	-- Steelsmith Greaves
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(10708, {	-- Skullspell Orb
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(10707),	-- Steelsmith Greaves
+						i(10708),	-- Skullspell Orb
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -1150,15 +1126,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							coord = { 36.6, 43.2, IRONFORGE },
 						}),
-						i(57583, {	-- The Slaghammer
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(57584, {	-- Battleaxe of the Sober Dwarf
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(57585, {	-- Ambassador's Duplicitous Dagger
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(57583),	-- The Slaghammer
+						i(57584),	-- Battleaxe of the Sober Dwarf
+						i(57585),	-- Ambassador's Duplicitous Dagger
 						i(133692, {	-- Ambassador's Deceitful Dagger
 							timeline = { ADDED_7_0_3 },
 						}),
@@ -1403,7 +1373,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(1789, {	-- The Symbol of Life
 							qg = 6179,	-- Tiza Battleforge
 							coord = { 27.4, 12.0, IRONFORGE },
-							timeline = { REMOVED_4_0_3 },
 							repeatable = true,
 							groups = {
 								objective(1, {	-- 0/1 Symbol of Life

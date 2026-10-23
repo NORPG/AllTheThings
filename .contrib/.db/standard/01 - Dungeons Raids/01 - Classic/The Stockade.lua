@@ -61,12 +61,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Hand of Dextren Ward
 							provider = { "i", 3628 },	-- Hand of Dextren Ward
 						}),
-						i(2906, {	-- Darkshire Mail Leggings
-							timeline = { REMOVED_4_0_1 },
-						}),
-						i(2033, {	-- Ambassador's Boots
-							timeline = { REMOVED_4_0_1 },
-						}),
+						i(2906),	-- Darkshire Mail Leggings
+						i(2033),	-- Ambassador's Boots
 					},
 				}),
 				q(50335, {	-- Grant Me Revenge
@@ -145,12 +141,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Head of Deepfury
 							provider = { "i", 3640 },	-- Head of Deepfury
 						}),
-						i(1264, {	-- Headbasher
-							timeline = { REMOVED_4_0_1 },
-						}),
-						i(3562, {	-- Belt of Vindication
-							timeline = { REMOVED_4_0_1 },
-						}),
+						i(1264),	-- Headbasher
+						i(3562),	-- Belt of Vindication
 					},
 				}),
 				q(27739, {	-- The Gnoll King
@@ -211,12 +203,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Head of Targorr
 							provider = { "i", 3630 },	-- Head of Targorr
 						}),
-						i(1317, {	-- Hardened Root Staff
-							timeline = { REMOVED_4_0_1 },
-						}),
-						i(3400, {	-- Lucine Longsword
-							timeline = { REMOVED_4_0_1 },
-						}),
+						i(1317),	-- Hardened Root Staff
+						i(3400),	-- Lucine Longsword
 					},
 				}),
 			}),

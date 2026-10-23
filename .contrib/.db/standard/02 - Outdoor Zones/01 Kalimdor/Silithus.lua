@@ -213,9 +213,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					cost = { { "i", 20515, 1 } },	-- Abyssal Scepter
 					lvl = 58,
 					groups = {
-						i(22725, {	-- Band of Cenarius
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(22725),	-- Band of Cenarius
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8287, {	-- A Terrible Purpose
@@ -249,7 +247,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					lvl = 60,
 					groups = {
 						i(20603, {	-- Bag of Spoils
-							timeline = { REMOVED_4_0_3 },
 							groups = {
 								i(20694, {	-- Glowing Black Orb
 									timeline = { REMOVED_4_0_3 },
@@ -274,7 +271,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					lvl = 60,
 					groups = {
 						i(20603, {	-- Bag of Spoils
-							timeline = { REMOVED_4_0_3 },
 							groups = {
 								i(20694, {	-- Glowing Black Orb
 									timeline = { REMOVED_4_0_3 },
@@ -300,7 +296,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					lvl = 54,
 					groups = {
 						i(20602, {	-- Chest of Spoils
-							timeline = { REMOVED_4_0_3 },
 							groups = {
 								i(20721, {	-- Band of the Cultist
 									timeline = { REMOVED_4_0_3 },
@@ -326,7 +321,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					lvl = 54,
 					groups = {
 						i(20601, {	-- Sack of Spoils
-							timeline = { REMOVED_4_0_3 },
 							groups = {
 								i(20695, {	-- Abyssal War Beads
 									timeline = { REMOVED_4_0_3 },
@@ -365,12 +359,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					classes = { WARRIOR },
 					lvl = 58,
 					groups = {
-						i(20699, {	-- Cenarion Reservist's Legplates
-							timeline = { REMOVED_4_1_0 },
-						}),
-						i(20710, {	-- Crystal Encrusted Greaves
-							timeline = { REMOVED_4_1_0 },
-						}),
+						i(20699),	-- Cenarion Reservist's Legplates
+						i(20710),	-- Crystal Encrusted Greaves
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8381, {	-- Armaments of War [MAGE / WARLOCK]
@@ -381,12 +371,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					classes = { MAGE, WARLOCK },
 					lvl = 58,
 					groups = {
-						i(20705, {	-- Cenarion Reservist's Pants
-							timeline = { REMOVED_4_1_0 },
-						}),
-						i(20716, {	-- Sandworm Skin Gloves
-							timeline = { REMOVED_4_1_0 },
-						}),
+						i(20705),	-- Cenarion Reservist's Pants
+						i(20716),	-- Sandworm Skin Gloves
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8379, {	-- Armaments of War [PRIEST]
@@ -397,12 +383,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					classes = { PRIEST },
 					lvl = 58,
 					groups = {
-						i(20707, {	-- Cenarion Reservist's Pants
-							timeline = { REMOVED_4_1_0 },
-						}),
-						i(20717, {	-- Desert Bloom Gloves
-							timeline = { REMOVED_4_1_0 },
-						}),
+						i(20707),	-- Cenarion Reservist's Pants
+						i(20717),	-- Desert Bloom Gloves
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8378, {	-- Armaments of War [ROGUE]
@@ -413,12 +395,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					classes = { ROGUE },
 					lvl = 58,
 					groups = {
-						i(20703, {	-- Cenarion Reservist's Leggings
-							timeline = { REMOVED_4_1_0 },
-						}),
-						i(20715, {	-- Dunestalker's Boots
-							timeline = { REMOVED_4_1_0 },
-						}),
+						i(20703),	-- Cenarion Reservist's Leggings
+						i(20715),	-- Dunestalker's Boots
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8382, {	-- Armaments of War [DRUID]
@@ -429,12 +407,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					classes = { DRUID },
 					lvl = 58,
 					groups = {
-						i(20704, {	-- Cenarion Reservist's Leggings
-							timeline = { REMOVED_4_1_0 },
-						}),
-						i(20714, {	-- Sandstorm Boots
-							timeline = { REMOVED_4_1_0 },
-						}),
+						i(20704),	-- Cenarion Reservist's Leggings
+						i(20714),	-- Sandstorm Boots
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8377, {	-- Armaments of War [HUNTER]
@@ -445,12 +419,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					classes = { HUNTER },
 					lvl = 58,
 					groups = {
-						i(20702, {	-- Cenarion Reservist's Legguards
-							timeline = { REMOVED_4_1_0 },
-						}),
-						i(20713, {	-- Desertstalkers's Gauntlets
-							timeline = { REMOVED_4_1_0 },
-						}),
+						i(20702),	-- Cenarion Reservist's Legguards
+						i(20713),	-- Desertstalkers's Gauntlets
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8376, {	-- Armaments of War [PALADIN]
@@ -461,12 +431,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					classes = { PALADIN },
 					lvl = 58,
 					groups = {
-						i(20700, {	-- Cenarion Reservist's Legplates
-							timeline = { REMOVED_4_1_0 },
-						}),
-						i(20711, {	-- Crystal Lined Greaves
-							timeline = { REMOVED_4_1_0 },
-						}),
+						i(20700),	-- Cenarion Reservist's Legplates
+						i(20711),	-- Crystal Lined Greaves
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8380, {	-- Armaments of War [SHAMAN]
@@ -477,12 +443,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					classes = { SHAMAN },
 					lvl = 58,
 					groups = {
-						i(20701, {	-- Cenarion Reservist's Legguards
-							timeline = { REMOVED_4_1_0 },
-						}),
-						i(20712, {	-- Wastewalker's Gauntlets
-							timeline = { REMOVED_4_1_0 },
-						}),
+						i(20701),	-- Cenarion Reservist's Legguards
+						i(20712),	-- Wastewalker's Gauntlets
 					},
 				})),
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8780, {	-- Armor Kits for the Field (A)
@@ -739,15 +701,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					repeatable = true,
 					lvl = 54,
 					groups = {
-						i(21188, {	-- Fist of Cenarius
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(21190, {	-- Wrath of Cenarius
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(21180, {	-- Earthstrike
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(21188),	-- Fist of Cenarius
+						i(21190),	-- Wrath of Cenarius
+						i(21180),	-- Earthstrike
 					},
 				})),
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8537, {	-- Crimson Templar
@@ -893,9 +849,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					lvl = 54,
 					groups = {
-						i(20422, {	-- Twilight Cultist Medallion of Station
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(20422),	-- Twilight Cultist Medallion of Station
 					},
 				}),
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8536, {	-- Earthen Templar
@@ -967,7 +921,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(8508, {	-- Field Duty Papers (A)
 							qg = 15440,	-- Captain Blackanvil <Ironforge Brigade Captain>
 							coord = { 33.2, 52.1, SILITHUS },
-							timeline = { REMOVED_4_0_3 },
 							races = ALLIANCE_ONLY,
 							repeatable = true,
 							groups = {
@@ -981,9 +934,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						}),
-						i(20808, {	-- Combat Assignment
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(20808),	-- Combat Assignment
 						LOGISTICS_ASSIGNMENT_A,
 						TACTICAL_ASSIGNMENT,
 					},
@@ -1014,9 +965,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						})),
-						i(20808, {	-- Combat Assignment
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(20808),	-- Combat Assignment
 						LOGISTICS_ASSIGNMENT_H,
 						TACTICAL_ASSIGNMENT,
 					},
@@ -1243,9 +1192,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					lvl = 54,
 					groups = {
-						i(20451, {	-- Twilight Cultist Ring of Lordship
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(20451),	-- Twilight Cultist Ring of Lordship
 					},
 				})),
 				q(8333, {	-- Medallion of Station
@@ -1260,9 +1207,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					repeatable = true,
 					lvl = 54,
 					groups = {
-						i(20422, {	-- Twilight Cultist Medallion of Station
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(20422),	-- Twilight Cultist Medallion of Station
 					},
 				}),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8278, {	-- Noggle's Last Hope
@@ -1357,7 +1302,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					lvl = 54,
 					groups = {
 						i(20602, {	-- Chest of Spoils
-							timeline = { REMOVED_4_0_3 },
 							groups = {
 								i(20721, {	-- Band of the Cultist
 									timeline = { REMOVED_4_0_3 },
@@ -1515,7 +1459,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					lvl = 54,
 					groups = {
 						i(20601, {	-- Sack of Spoils
-							timeline = { REMOVED_4_0_3 },
 							groups = {
 								i(20695, {	-- Abyssal War Beads
 									timeline = { REMOVED_4_0_3 },
@@ -1548,18 +1491,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					repeatable = true,
 					lvl = 54,
 					groups = {
-						i(21184, {	-- Deeprock Bracers
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(21185, {	-- Earthcalm Orb
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(21186, {	-- Rockfury Bracers
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(21189, {	-- Might of Cenarius
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(21184),	-- Deeprock Bracers
+						i(21185),	-- Earthcalm Orb
+						i(21186),	-- Rockfury Bracers
+						i(21189),	-- Might of Cenarius
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8281, {	-- Stepping Up Security
@@ -1808,9 +1743,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(4, {	-- 0/1 The Duke of Shards slain
 							provider = { "n", 15208 },	-- The Duke of Shards <Abyssal Council>
 						}),
-						i(21508, {	-- Mark of Cenarius
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(21508),	-- Mark of Cenarius
 					},
 				})),
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8778, {	-- The Ironforge Brigade Needs Explosives!
@@ -1880,24 +1813,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(2, {	-- 0/1 Kurinnaxx's Venom Sac
 							provider = { "i", 22217 },	-- Kurinnaxx's Venom Sac
 						}),
-						i(22378, {	-- Ravenholdt Slicer
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(22379, {	-- Shivsprocket's Shiv
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(22377, {	-- The Thunderwood Poker
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(22348, {	-- Doomulus Prime
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(22347, {	-- Fahrad's Reloading Repeater
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(22380, {	-- Simone's Cultivating Hammer
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(22378),	-- Ravenholdt Slicer
+						i(22379),	-- Shivsprocket's Shiv
+						i(22377),	-- The Thunderwood Poker
+						i(22348),	-- Doomulus Prime
+						i(22347),	-- Fahrad's Reloading Repeater
+						i(22380),	-- Simone's Cultivating Hammer
 					},
 				})),
 				-- #endif
@@ -1983,9 +1904,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					repeatable = true,
 					lvl = 60,
 					groups = {
-						i(21515, {	-- Mark of Remulos
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(21515),	-- Mark of Remulos
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8323, {	-- True Believers
@@ -2060,9 +1979,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					repeatable = true,
 					lvl = 54,
 					groups = {
-						i(20451, {	-- Twilight Cultist Ring of Lordship
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(20451),	-- Twilight Cultist Ring of Lordship
 					},
 				})),
 				q(6844, {	-- Umber, Archivist
@@ -2134,15 +2051,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					repeatable = true,
 					lvl = 54,
 					groups = {
-						i(21181, {	-- Grace of Earth
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(21182, {	-- Band of Earthen Might
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(21183, {	-- Earthpower Vest
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(21181),	-- Grace of Earth
+						i(21182),	-- Band of Earthen Might
+						i(21183),	-- Earthpower Vest
 					},
 				})),
 				applyclassicphase(PHASE_FIVE, q(8548, {	-- Volunteer's Battlegear
@@ -2159,15 +2070,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					repeatable = true,
 					lvl = 54,
 					groups = {
-						i(21178, {	-- Gloves of Earthen Power
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(21179, {	-- Band of Earthen Wrath
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(21187, {	-- Earthweave Cloak
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(21178),	-- Gloves of Earthen Power
+						i(21179),	-- Band of Earthen Wrath
+						i(21187),	-- Earthweave Cloak
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8321, {	-- Vyral the Vile

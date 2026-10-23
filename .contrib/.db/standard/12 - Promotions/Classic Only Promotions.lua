@@ -161,7 +161,6 @@ root(ROOTS.Promotions, bubbleDown({ u = REAL_MONEY }, {
 				},
 				groups = {
 					i(273162, {	-- Unexpected Gift
-						timeline = { ADDED_2_5_5, REMOVED_2_5_5_PHASE_2 },
 						groups = {
 							i(273150, {	-- Voidfeather Dragonhawk
 								timeline = { ADDED_2_5_5, REMOVED_2_5_5_PHASE_2 },

@@ -348,7 +348,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					isYearly = true,
 					groups = {
 						title(358, {	-- <Name>, Adventuring Instructor
-							timeline = { ADDED_7_2_5 },
 							collectible = false,
 						}),
 					},
@@ -439,12 +438,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							provider = { "i", 63469 },	-- Breath of Cenarius
 							cr = 9024,	-- Pyromancer Loregrain
 						}),
-						i(65638, {	-- Headdress of the Green Circle
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(65617, {	-- Headdress of the Verdant Circle
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(65638),	-- Headdress of the Green Circle
+						i(65617),	-- Headdress of the Verdant Circle
 					},
 				}),
 				q(1015, {	-- The New Frontier [Stormwind City]
@@ -647,12 +642,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					timeline = { REMOVED_4_0_3 },
 					lvl = 54,
 					groups = {
-						i(18400, {	-- Ring of Living Stone
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(18402, {	-- Glowing Crystal Ring
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(18400),	-- Ring of Living Stone
+						i(18402),	-- Glowing Crystal Ring
 					},
 				}),
 				q(1185, {	-- Under the Chitin Was...

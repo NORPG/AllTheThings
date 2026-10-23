@@ -3243,7 +3243,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						-- #endif
 					},
 					races = ALLIANCE_ONLY,
-					timeline = { ADDED_1_8_0 },
 					repeatable = true,
 					groups = {
 						objective(1, {	-- 0/1 Stormwind Nougat
@@ -3256,7 +3255,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					qg = 6826,	-- Talvash del Kissel
 					coord = { 36.0, 4.0, IRONFORGE },
 					races = ALLIANCE_ONLY,
-					timeline = { ADDED_1_8_0 },
 					repeatable = true,
 					groups = {
 						objective(2, {	-- 0/1 Gnomeregan Gumdrop
@@ -3269,7 +3267,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					qg = 5111,	-- Innkeeper Firebrew <Innkeeper>
 					coord = { 18.6, 51.4, IRONFORGE },
 					races = ALLIANCE_ONLY,
-					timeline = { ADDED_1_8_0 },
 					repeatable = true,
 					groups = {
 						objective(3, {	-- 0/1 Ironforge Mint
@@ -3288,7 +3285,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						-- #endif
 					},
 					races = ALLIANCE_ONLY,
-					timeline = { ADDED_1_8_0 },
 					repeatable = true,
 					groups = {
 						objective(4, {	-- 0/1 Darnassus Marzipan
@@ -3333,7 +3329,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						-- #endif
 					},
 					races = HORDE_ONLY,
-					timeline = { ADDED_1_8_0 },
 					repeatable = true,
 					groups = {
 						objective(1, {	-- 0/1 Orgrimmar Nougat
@@ -3354,7 +3349,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						-- #endif
 					},
 					races = HORDE_ONLY,
-					timeline = { ADDED_1_8_0 },
 					repeatable = true,
 					groups = {
 						objective(2, {	-- 0/1 Darkspear Gumdrop
@@ -3367,7 +3361,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					qg = 6741,	-- Innkeeper Norman <Innkeeper>
 					coord = { 67.8, 38.6, UNDERCITY },
 					races = HORDE_ONLY,
-					timeline = { ADDED_1_8_0 },
 					repeatable = true,
 					groups = {
 						objective(3, {	-- 0/1 Undercity Mint
@@ -3380,7 +3373,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					qg = 6746,	-- Innkeeper Pala <Innkeeper>
 					coord = { 45.8, 64.4, THUNDER_BLUFF },
 					races = HORDE_ONLY,
-					timeline = { ADDED_1_8_0 },
 					repeatable = true,
 					groups = {
 						objective(4, {	-- 0/1 Thunder Bluff Marzipan
@@ -3950,9 +3942,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			races = ALLIANCE_ONLY,
 			lvl = lvlsquish(10, 10, 1),
 			groups = {
-				i(71076, {	-- Creepy Crate (PET!)
-					timeline = { ADDED_4_2_2 },
-				}),
+				i(71076),	-- Creepy Crate (PET!)
 			},
 		}),
 		q(29429, {	-- The Creepy Crate (Horde)
@@ -3963,9 +3953,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			races = HORDE_ONLY,
 			lvl = lvlsquish(10, 10, 1),
 			groups = {
-				i(71076, {	-- Creepy Crate (PET!)
-					timeline = { ADDED_4_2_2 },
-				}),
+				i(71076),	-- Creepy Crate (PET!)
 			},
 		}),
 		q(11135, {	-- The Headless Horseman (Alliance)

@@ -56,15 +56,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							coord = { 48.6, 95.6, THE_BARRENS },
 							cr = 12865,	-- Ambassador Malcin
 						}),
-						i(17039, {	-- Skullbreaker
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(17042, {	-- Nail Spitter
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(17043, {	-- Zealot's Robe
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(17039),	-- Skullbreaker
+						i(17042),	-- Nail Spitter
+						i(17043),	-- Zealot's Robe
 					},
 				}),
 				q(14353, {	-- An Unholy Alliance (2/2) (After Wrathgate)
@@ -121,12 +115,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Skull of the Coldbringer
 							provider = { "i", 10420 },	-- Skull of the Coldbringer
 						}),
-						i(10823, {	-- Vanquisher's Sword
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(10824, {	-- Amberglow Talisman
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(10823),	-- Vanquisher's Sword
+						i(10824),	-- Amberglow Talisman
 					},
 				}),
 				q(3636, {	-- Bring the Light
@@ -139,12 +129,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Amnennar the Coldbringer slain
 							provider = { "n", 7358 },	-- Amnennar the Coldbringer
 						}),
-						i(10823, {	-- Vanquisher's Sword
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(10824, {	-- Amberglow Talisman
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(10823),	-- Vanquisher's Sword
+						i(10824),	-- Amberglow Talisman
 					},
 				}),
 				q(27029, {	-- Cure the Scourge

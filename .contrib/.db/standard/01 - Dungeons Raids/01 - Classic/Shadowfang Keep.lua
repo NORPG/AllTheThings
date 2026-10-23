@@ -496,9 +496,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Head of Arugal
 							provider = { "i", 5442 },	-- Head of Arugal
 						}),
-						i(6414, {	-- Seal of Sylvanas
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6414),	-- Seal of Sylvanas
 					},
 				}),
 				q(27396, {	-- Blade of the Shattered Hand
@@ -615,9 +613,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					races = HORDE_ONLY,
 					lvl = 18,
 					groups = {
-						i(3324, {	-- Ghostly Mantle
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(3324),	-- Ghostly Mantle
 					},
 				}),
 				-- #if BEFORE SL
@@ -1529,12 +1525,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 							description = "Can be found on a bookshelf in the circular room with Fenrus.",
 						}),
-						i(4534, {	-- Steel-Clasped Bracers
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(6335, {	-- Grizzled Boots
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(4534),	-- Steel-Clasped Bracers
+						i(6335),	-- Grizzled Boots
 					},
 				}),
 				-- #if BEFORE SL
@@ -1707,12 +1699,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							provider = { "i", 6915 },	-- Large Soran'ruk Fragment
 							cr = 3855,	-- Shadowfang Darksoul
 						}),
-						i(6898, {	-- Orb of Soran'ruk
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(15109, {	-- Staff of Soran'ruk
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6898),	-- Orb of Soran'ruk
+						i(15109),	-- Staff of Soran'ruk
 					},
 				}),
 				-- #if AFTER SL

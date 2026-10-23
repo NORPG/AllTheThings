@@ -754,7 +754,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				groups = {
 					i(19298, {	-- Minor Darkmoon Prize
 						description = "Contains a level 15-25 (usually uncommon quality) item.",
-						timeline = { REMOVED_4_3_0 },
 					}),
 				},
 			}),
@@ -799,7 +798,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				groups = {
 					i(19297, {	-- Lesser Darkmoon Prize
 						description = "Contains a level 25-40 (usually uncommon quality) item.",
-						timeline = { REMOVED_4_3_0 },
 					}),
 				},
 			}),
@@ -822,7 +820,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				groups = {
 					i(19296, {	-- Greater Darkmoon Prize
 						description = "Contains a level 40-55 (usually uncommon quality) item.",
-						timeline = { REMOVED_4_3_0 },
 					}),
 				},
 			}),
@@ -907,9 +904,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				cost = { { "i", 19182, 1200 } },	-- Tattered Darkmoon Faire Prize Ticket
 				repeatable = true,
 				groups = {
-					i(19491, {	-- Amulet of the Darkmoon
-						timeline = { REMOVED_4_3_0 },
-					}),
+					i(19491),	-- Amulet of the Darkmoon
 				},
 			}),
 			q(7940, {	-- 1200 Tickets - Orb of the Darkmoon
@@ -929,9 +924,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				cost = { { "i", 19182, 1200 } },	-- Tattered Darkmoon Faire Prize Ticket
 				repeatable = true,
 				groups = {
-					i(19426, {	-- Orb of the Darkmoon
-						timeline = { REMOVED_4_3_0 },
-					}),
+					i(19426),	-- Orb of the Darkmoon
 				},
 			}),
 			q(29456, {	-- A Captured Banner
@@ -999,7 +992,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 							44820,	-- Red Ribbon Pet Leash
 							37460,	-- Rope Pet Leash
 						}},
-						timeline = { ADDED_6_0_2 },
 						groups = {
 							DARKMOON_PRIZE_TICKET,
 							i(116064, {	-- Syd the Squid (PET!)
@@ -1620,7 +1612,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 							44820,	-- Red Ribbon Pet Leash
 							37460,	-- Rope Pet Leash
 						}},
-						timeline = { ADDED_5_1_0 },
 						groups = {
 							DARKMOON_PRIZE_TICKET,
 							i(91040, {	-- Darkmoon Eye (PET!)
@@ -1854,15 +1845,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				timeline = { ADDED_3_0_2 },
 				repeatable = true,
 				groups = {
-					i(44217, {	-- Darkmoon Dirk
-						timeline = { ADDED_3_0_2 },
-					}),
-					i(44218, {	-- Darkmoon Executioner
-						timeline = { ADDED_3_0_2 },
-					}),
-					i(44219, {	-- Darkmoon Magestaff
-						timeline = { ADDED_3_0_2 },
-					}),
+					i(44217),	-- Darkmoon Dirk
+					i(44218),	-- Darkmoon Executioner
+					i(44219),	-- Darkmoon Magestaff
 				},
 			})),
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, q(33354, {	-- Den Mother's Demise
@@ -2111,12 +2096,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				timeline = { ADDED_3_0_2 },
 				repeatable = true,
 				groups = {
-					i(44215, {	-- Darkmoon Necklace
-						timeline = { ADDED_3_0_2 },
-					}),
-					i(44213, {	-- Darkmoon Pendant
-						timeline = { ADDED_3_0_2 },
-					}),
+					i(44215),	-- Darkmoon Necklace
+					i(44213),	-- Darkmoon Pendant
 				},
 			})),
 			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, pvp(q(29761, {	-- Master Pit Fighter
@@ -2127,12 +2108,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				cost = { { "i", 74034, 12 } },	-- Pit Fighter
 				repeatable = true,
 				groups = {
-					ach(6024, {	-- Darkmoon Dominator
-						timeline = { ADDED_4_3_0 },
-					}),
-					i(74035, {	-- Master Pit Fighter
-						timeline = { ADDED_4_3_0 },
-					}),
+					ach(6024),	-- Darkmoon Dominator
+					i(74035),	-- Master Pit Fighter
 				},
 			}))),
 			q(7897, {	-- Mechanical Repair Kits [Tier 4]
@@ -2275,9 +2252,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				coord = { 47.3, 78.9, DARKMOON_ISLAND },
 				timeline = { ADDED_4_3_0 },
 				groups = {
-					ach(6023, {	-- Darkmoon Duelist
-						timeline = { ADDED_4_3_0 },
-					}),
+					ach(6023),	-- Darkmoon Duelist
 				},
 			}))),
 			q(29512, {	-- Putting the Carnies Back Together Again
@@ -2372,9 +2347,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				timeline = { ADDED_6_0_2 },
 				cr = 85531,	-- Erinys
 				groups = {
-					i(116067, {	-- Ring of Broken Promises (TOY!)
-						timeline = { ADDED_6_0_2 },
-					}),
+					i(116067),	-- Ring of Broken Promises (TOY!)
 				},
 			}),
 			q(7893, {	-- Rituals of Strength [Tier 5]
@@ -2408,18 +2381,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				timeline = { ADDED_3_0_2 },
 				repeatable = true,
 				groups = {
-					i(39507, {	-- Darkmoon Breastplate
-						timeline = { ADDED_3_0_2 },
-					}),
+					i(39507),	-- Darkmoon Breastplate
 					i(131276, {	-- Darkmoon Chainmail
 						timeline = { ADDED_7_0_3 },
 					}),
-					i(38318, {	-- Darkmoon Robe
-						timeline = { ADDED_3_0_2 },
-					}),
-					i(39509, {	-- Darkmoon Vest
-						timeline = { ADDED_3_0_2 },
-					}),
+					i(38318),	-- Darkmoon Robe
+					i(39509),	-- Darkmoon Vest
 				},
 			})),
 			q(38934, {	-- Sila's Secret Stash
@@ -2432,7 +2399,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				groups = {
 					i(127148, {	-- Sila's Secret Stash
 						description = "This item contains 100 Darkmoon Faire Tickets.",
-						timeline = { ADDED_6_2_0 },
 						groups = {
 							DARKMOON_PRIZE_TICKET,
 						},
@@ -2555,15 +2521,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				timeline = { ADDED_3_0_2 },
 				repeatable = true,
 				groups = {
-					i(39897, {	-- Azure Shoulderguards
-						timeline = { ADDED_3_0_2 },
-					}),
-					i(39895, {	-- Cloaked Shoulderpads
-						timeline = { ADDED_3_0_2 },
-					}),
-					i(39894, {	-- Darkcloth Shoulders
-						timeline = { ADDED_3_0_2 },
-					}),
+					i(39897),	-- Azure Shoulderguards
+					i(39895),	-- Cloaked Shoulderpads
+					i(39894),	-- Darkcloth Shoulders
 					i(131277, {	-- Veiled Pauldrons
 						timeline = { ADDED_7_0_3 },
 					}),
@@ -2935,9 +2895,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				repeatable = true,
 				lvl = 10,
 				groups = {
-					i(19425, {	-- Mysterious Lockbox
-						timeline = { REMOVED_4_3_0 },
-					}),
+					i(19425),	-- Mysterious Lockbox
 				},
 			}),
 			q(7937, {	-- Your Fortune Awaits You... [Elwynn Forest]
@@ -2950,9 +2908,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				repeatable = true,
 				lvl = 10,
 				groups = {
-					i(19425, {	-- Mysterious Lockbox
-						timeline = { REMOVED_4_3_0 },
-					}),
+					i(19425),	-- Mysterious Lockbox
 				},
 			}),
 			q(7945, {	-- Your Fortune Awaits You... [Mulgore]
@@ -2965,9 +2921,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				repeatable = true,
 				lvl = 10,
 				groups = {
-					i(19425, {	-- Mysterious Lockbox
-						timeline = { REMOVED_4_3_0 },
-					}),
+					i(19425),	-- Mysterious Lockbox
 				},
 			}),
 			q(7944, {	-- Your Fortune Awaits You... [Wailing Caverns]
@@ -2980,9 +2934,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				repeatable = true,
 				lvl = 10,
 				groups = {
-					i(19425, {	-- Mysterious Lockbox
-						timeline = { REMOVED_4_3_0 },
-					}),
+					i(19425),	-- Mysterious Lockbox
 				},
 			}),
 		}),

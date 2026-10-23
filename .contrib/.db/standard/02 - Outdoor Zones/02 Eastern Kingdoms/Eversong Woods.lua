@@ -1204,9 +1204,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					races = { BLOODELF },
 					lvl = lvlsquish(10, 10, 1),
 					groups = {
-						i(24136, {	-- Farstrider's Bow
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(24136),	-- Farstrider's Bow
 						-- #if BEFORE CATA
 						recipe(6991),	-- Feed Pet
 						recipe(982),	-- Revive Pet
@@ -1244,9 +1242,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/6 Eversong Ranger Blessed
 							provider = { "n", 15938 },	-- Eversong Ranger
 						}),
-						i(23924, {	-- Robes of Silvermoon
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(23924),	-- Robes of Silvermoon
 					},
 				}),
 				q(8350, {	-- Completing the Delivery

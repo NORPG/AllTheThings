@@ -1227,9 +1227,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					races = ALLIANCE_ONLY,
 					isYearly = true,
 					groups = {
-						i(56836, {	-- Overflowing Purple Brewfest Stein
-							timeline = { ADDED_4_0_1 },
-						}),
+						i(56836),	-- Overflowing Purple Brewfest Stein
 					},
 				}),
 				q(29396, {	-- A New Supplier of Souvenirs (H)
@@ -1250,9 +1248,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					races = HORDE_ONLY,
 					isYearly = true,
 					groups = {
-						i(56836, {	-- Overflowing Purple Brewfest Stein
-							timeline = { ADDED_4_0_1 },
-						}),
+						i(56836),	-- Overflowing Purple Brewfest Stein
 					},
 				}),
 				q(13932, {	-- Another Year, Another Souvenir (A)
@@ -1272,9 +1268,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					provider = { "i", 33955 },	-- Brewfest Stein Voucher
 					races = ALLIANCE_ONLY,
 					groups = {
-						i(37892, {	-- Green Brewfest Stein
-							timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
-						}),
+						i(37892),	-- Green Brewfest Stein
 					},
 				}),
 				q(13931, {	-- Another Year, Another Souvenir (H)
@@ -1297,9 +1291,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					isYearly = true,
 					-- #endif
 					groups = {
-						i(37892, {	-- Green Brewfest Stein
-							timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
-						}),
+						i(37892),	-- Green Brewfest Stein
 					},
 				}),
 				q(77208, {	-- Barreling Down
@@ -1488,15 +1480,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					races = ALLIANCE_ONLY,
 					isYearly = true,
 					groups = {
-						i(33030, {	-- Barleybrew Clear
-							timeline = { ADDED_2_2_2 },
-						}),
-						i(33034, {	-- Gordok Grog
-							timeline = { ADDED_2_2_2 },
-						}),
-						i(33031, {	-- Thunder 45
-							timeline = { ADDED_2_2_2 },
-						}),
+						i(33030),	-- Barleybrew Clear
+						i(33034),	-- Gordok Grog
+						i(33031),	-- Thunder 45
 					},
 				}),
 				q(11446, {	-- Brewfest! (H)
@@ -1545,15 +1531,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					races = HORDE_ONLY,
 					isYearly = true,
 					groups = {
-						i(33034, {	-- Gordok Grog
-							timeline = { ADDED_2_2_2 },
-						}),
-						i(34020, {	-- Jungle River Water
-							timeline = { ADDED_2_2_2 },
-						}),
-						i(34017, {	-- Small Step Brew
-							timeline = { ADDED_2_2_2 },
-						}),
+						i(33034),	-- Gordok Grog
+						i(34020),	-- Jungle River Water
+						i(34017),	-- Small Step Brew
 					},
 				}),
 				q(56764, {	-- Brewfest Chowdown (A)
@@ -1967,9 +1947,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					provider = { "i", 33955 },	-- Brewfest Stein Voucher
 					races = ALLIANCE_ONLY,
 					groups = {
-						i(32912, {	-- Yellow Brewfest Stein
-							timeline = { ADDED_2_2_2, REMOVED_2_4_3 },
-						}),
+						i(32912),	-- Yellow Brewfest Stein
 					},
 				}),
 				q(11413, {	-- Did Someone Say "Souvenir?" (H)
@@ -1988,9 +1966,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					provider = { "i", 33955 },	-- Brewfest Stein Voucher
 					races = HORDE_ONLY,
 					groups = {
-						i(32912, {	-- Yellow Brewfest Stein
-							timeline = { ADDED_2_2_2, REMOVED_2_4_3 },
-						}),
+						i(32912),	-- Yellow Brewfest Stein
 					},
 				}),
 				q(12491, {	-- Direbrew's Dire Brew (A)
@@ -2243,9 +2219,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					provider = { "i", 33955 },	-- Brewfest Stein Voucher
 					races = ALLIANCE_ONLY,
 					groups = {
-						i(33016, {	-- Blue Brewfest Stein
-							timeline = { ADDED_2_4_3, REMOVED_3_2_0 },
-						}),
+						i(33016),	-- Blue Brewfest Stein
 					},
 				}),
 				q(12194, {	-- Say, There Wouldn't Happen to be a Souvenir This Year, Would There? (H)
@@ -2256,9 +2230,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					provider = { "i", 33955 },	-- Brewfest Stein Voucher
 					races = HORDE_ONLY,
 					groups = {
-						i(33016, {	-- Blue Brewfest Stein
-							timeline = { ADDED_2_4_3, REMOVED_3_2_0 },
-						}),
+						i(33016),	-- Blue Brewfest Stein
 					},
 				}),
 				q(11454, {	-- Seek the Saboteurs
@@ -2279,9 +2251,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					races = ALLIANCE_ONLY,
 					lvl = lvlsquish(48, 48, 48),
 					groups = {
-						i(34140, {	-- Dark Iron Tankard
-							timeline = { ADDED_2_2_2, REMOVED_2_4_3 },
-						}),
+						i(34140),	-- Dark Iron Tankard
 					},
 				}),
 				q(11487, {	-- The Best of Brews (H)
@@ -2292,9 +2262,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					races = HORDE_ONLY,
 					lvl = lvlsquish(48, 48, 48),
 					groups = {
-						i(34140, {	-- Dark Iron Tankard
-							timeline = { ADDED_2_2_2, REMOVED_2_4_3 },
-						}),
+						i(34140),	-- Dark Iron Tankard
 					},
 				}),
 				q(11122, {	-- There and Back Again (A)
@@ -2405,15 +2373,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					races = ALLIANCE_ONLY,
 					isYearly = true,
 					groups = {
-						i(33030, {	-- Barleybrew Clear
-							timeline = { ADDED_2_2_2 },
-						}),
-						i(33034, {	-- Gordok Grog
-							timeline = { ADDED_2_2_2 },
-						}),
-						i(33031, {	-- Thunder 45
-							timeline = { ADDED_2_2_2 },
-						}),
+						i(33030),	-- Barleybrew Clear
+						i(33034),	-- Gordok Grog
+						i(33031),	-- Thunder 45
 					},
 				}),
 				q(11447, {	-- Welcome to Brewfest! (H)
@@ -2439,15 +2401,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					races = HORDE_ONLY,
 					isYearly = true,
 					groups = {
-						i(33034, {	-- Gordok Grog
-							timeline = { ADDED_2_2_2 },
-						}),
-						i(34020, {	-- Jungle River Water
-							timeline = { ADDED_2_2_2 },
-						}),
-						i(34017, {	-- Small Step Brew
-							timeline = { ADDED_2_2_2 },
-						}),
+						i(33034),	-- Gordok Grog
+						i(34020),	-- Jungle River Water
+						i(34017),	-- Small Step Brew
 					},
 				}),
 			},

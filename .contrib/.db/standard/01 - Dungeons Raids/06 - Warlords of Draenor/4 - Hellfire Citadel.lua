@@ -937,9 +937,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6
 						timeline = { REMOVED_7_0_3 },
 						lvl = 100,
 						groups = {
-							i(128422, {	-- Grove Warden (MOUNT!)
-								timeline = { REMOVED_7_0_3 },
-							}),
+							i(128422),	-- Grove Warden (MOUNT!)
 						},
 					}),
 					q(40904, {	-- Shadow of the Defiler
