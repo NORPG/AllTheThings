@@ -442,9 +442,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
 				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
 				groups = {
-					challengemaster(ach(8439, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Siege of Niuzao Temple
-						title(247),	-- Siegebreaker <Name>
-					}))),
+					challengemaster(ach(8439, {	-- Challenge Master: Siege of Niuzao Temple
+						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+						groups = {
+							title(247),	-- Siegebreaker <Name>
+						},
+					})),
 					ach(6898),	-- Siege of Niuzao Temple Challenger
 					ach(6917),	-- Siege of Niuzao Temple: Bronze
 					ach(6918),	-- Siege of Niuzao Temple: Silver

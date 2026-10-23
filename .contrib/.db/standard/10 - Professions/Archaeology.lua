@@ -517,32 +517,35 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 						provider = { "i", 89614 },	-- Anatomical Dummy (TOY!)
 					}),
 				}),
-				ach(8219, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {	-- History of the Mantid
-					crit(22947, {	-- Pristine Banner of the Mantid Empire
-						_quests = { 32686 },
-					}),
-					crit(22948, {	-- Pristine Ancient Sap Feeder
-						_quests = { 32687 },
-					}),
-					crit(22949, {	-- Pristine Praying Mantid
-						_quests = { 32688 },
-					}),
-					crit(22950, {	-- Pristine Sound Beacon
-						_quests = { 32689 },
-					}),
-					crit(22951, {	-- Pristine Remains of a Paragon
-						_quests = { 32690 },
-					}),
-					crit(22952, {	-- Pristine Mantid Lamp
-						_quests = { 32691 },
-					}),
-					crit(22953, {	-- Pristine Pollen Collector
-						_quests = { 32692 },
-					}),
-					crit(22954, {	-- Pristine Kypari Sap Container
-						_quests = { 32693 },
-					}),
-				})),
+				ach(8219, {	-- History of the Mantid
+					timeline = { ADDED_5_2_0 },
+					groups = {
+						crit(22947, {	-- Pristine Banner of the Mantid Empire
+							_quests = { 32686 },
+						}),
+						crit(22948, {	-- Pristine Ancient Sap Feeder
+							_quests = { 32687 },
+						}),
+						crit(22949, {	-- Pristine Praying Mantid
+							_quests = { 32688 },
+						}),
+						crit(22950, {	-- Pristine Sound Beacon
+							_quests = { 32689 },
+						}),
+						crit(22951, {	-- Pristine Remains of a Paragon
+							_quests = { 32690 },
+						}),
+						crit(22952, {	-- Pristine Mantid Lamp
+							_quests = { 32691 },
+						}),
+						crit(22953, {	-- Pristine Pollen Collector
+							_quests = { 32692 },
+						}),
+						crit(22954, {	-- Pristine Kypari Sap Container
+							_quests = { 32693 },
+						}),
+					},
+				}),
 				ach(7336, {	-- Stone Servants
 					crit(20647, {	-- Terracotta Arm
 						provider = { "i", 79910 },	-- Terracotta Arm

@@ -86,68 +86,71 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ requireSkill = FISHING },
 			timeline = { ADDED_3_0_2 },
 			_noautomation = true,
 		}),
-		ach(1257, bubbleDownSelf({ timeline = { ADDED_3_0_2 }, }, {	-- The Scavenger
-			crit(3873, {	-- Bloodsail Wreckage
-				provider = { "o", 180901 },	-- Bloodsail Wreckage
-				maps = {
-					-- #if AFTER CATA
-					THE_CAPE_OF_STRANGLETHORN,
-					NORTHERN_STRANGLETHORN,
-					-- #else
-					STRANGLETHORN_VALE,
-					-- #endif
-				},
-			}),
-			crit(3876, {	-- Floating Wreckage
-				provider = { "o", 180751 },	-- Floating Wreckage
-				maps = {
-					-- #if AFTER CATA
-					BLASTED_LANDS,
-					EASTERN_PLAGUELANDS,
-					SWAMP_OF_SORROWS,
-					TANARIS,
-					THOUSAND_NEEDLES,
-					-- #else
-					AZSHARA,
-					FERALAS,
-					TANARIS,
-					-- #endif
-				},
-			}),
-			crit(3874, {	-- Schooner Wreckage
-				provider = { "o", 180662 },	-- Schooner Wreckage
-				maps = {
-					-- #if AFTER CATA
-					ARATHI_HIGHLANDS,
-					ASHENVALE,
-					-- #endif
-					HILLSBRAD_FOOTHILLS,
-					STONETALON_MOUNTAINS,
-					WETLANDS,
-				},
-			}),
-			crit(3872, {	-- Steam Pump Flotsam
-				provider = { "o", 182952 },	-- Steam Pump Flotsam
-				maps = { ZANGARMARSH },
-			}),
-			crit(3875, {	-- Waterlogged Wreckage
-				provider = { "o", 180685 },	-- Waterlogged Wreckage
-				maps = {
-					-- #if AFTER CATA
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					FERALAS,
-					WESTERN_PLAGUELANDS,
-					-- #else
-					ALTERAC_MOUNTAINS,
-					ARATHI_HIGHLANDS,
-					DESOLACE,
-					DUSTWALLOW_MARSH,
-					STRANGLETHORN_VALE,
-					-- #endif
-				},
-			}),
-		})),
+		ach(1257, {	-- The Scavenger
+			timeline = { ADDED_3_0_2 },
+			groups = {
+				crit(3873, {	-- Bloodsail Wreckage
+					provider = { "o", 180901 },	-- Bloodsail Wreckage
+					maps = {
+						-- #if AFTER CATA
+						THE_CAPE_OF_STRANGLETHORN,
+						NORTHERN_STRANGLETHORN,
+						-- #else
+						STRANGLETHORN_VALE,
+						-- #endif
+					},
+				}),
+				crit(3876, {	-- Floating Wreckage
+					provider = { "o", 180751 },	-- Floating Wreckage
+					maps = {
+						-- #if AFTER CATA
+						BLASTED_LANDS,
+						EASTERN_PLAGUELANDS,
+						SWAMP_OF_SORROWS,
+						TANARIS,
+						THOUSAND_NEEDLES,
+						-- #else
+						AZSHARA,
+						FERALAS,
+						TANARIS,
+						-- #endif
+					},
+				}),
+				crit(3874, {	-- Schooner Wreckage
+					provider = { "o", 180662 },	-- Schooner Wreckage
+					maps = {
+						-- #if AFTER CATA
+						ARATHI_HIGHLANDS,
+						ASHENVALE,
+						-- #endif
+						HILLSBRAD_FOOTHILLS,
+						STONETALON_MOUNTAINS,
+						WETLANDS,
+					},
+				}),
+				crit(3872, {	-- Steam Pump Flotsam
+					provider = { "o", 182952 },	-- Steam Pump Flotsam
+					maps = { ZANGARMARSH },
+				}),
+				crit(3875, {	-- Waterlogged Wreckage
+					provider = { "o", 180685 },	-- Waterlogged Wreckage
+					maps = {
+						-- #if AFTER CATA
+						DESOLACE,
+						DUSTWALLOW_MARSH,
+						FERALAS,
+						WESTERN_PLAGUELANDS,
+						-- #else
+						ALTERAC_MOUNTAINS,
+						ARATHI_HIGHLANDS,
+						DESOLACE,
+						DUSTWALLOW_MARSH,
+						STRANGLETHORN_VALE,
+						-- #endif
+					},
+				}),
+			},
+		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(3218, {	-- Turtles All the Way Down
 			provider = { "i", 46109 },	-- Sea Turtle
 			timeline = { ADDED_3_0_3 },
@@ -359,8 +362,9 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ requireSkill = FISHING },
 					}),
 				},
 			}),
-			ach(11725, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Fisherfriend of the Isles
+			ach(11725, {	-- Fisherfriend of the Isles
 				description = "The Fishing Masters are on a daily rotation, so only one is up at a time. The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
+				timeline = { ADDED_7_3_0 },
 				groups = {
 					i(152583),	-- Underlight Emerald (CI!)
 					crit(36343, {	-- Ilyssia of the Waters
@@ -382,7 +386,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ requireSkill = FISHING },
 						_npcs = { 120456 },
 					}),
 				},
-			})),
+			}),
 			ach(10598),	-- Fishing 'Round the Isles (automated)
 			ach(10597),	-- Legion Aquaculture
 		}),
@@ -606,9 +610,10 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ requireSkill = FISHING },
 			ach(12755, {	-- Scent of the Sea
 				cost = {{"i", 160711, 100}},	-- 100x Aromatic Fish Oil
 			}),
-			ach(13502, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {	-- Secret Fish and Where to Find Them
+			ach(13502, {	-- Secret Fish and Where to Find Them
 				description = "First, acquire the Secret Fish Goggles from Danielle Anglers in Mechagon.\n\nWhen you use the goggles, you gain a 1-hour buff that allows you to see Secret Fish, which appear in bubbles around your character. When you see one, approach it and click on it, and you'll get a fish. That fish will be a BfA, or zone-relevant common fish, or one of the requirements for this achievement (assuming you fulfill the requirements for each fish).",
 				provider = { "i", 167698 },	-- Secret Fish Goggles
+				timeline = { ADDED_8_2_0 },
 				groups = {
 					i(168016),	-- Hyper-Compressed Ocean (TOY!)
 					crit(44803, {	-- Ancient Mana Fin
@@ -735,7 +740,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ requireSkill = FISHING },
 						description = "Found in Mount Hyjal, in the lake under Nordrassil.",
 					}),
 				},
-			})),
+			}),
 		}),
 		container(168016, {	-- Hyper-Compressed Ocean (TOY!)
 			crs = { 152121 },	-- Hyper-Compressed Ocean NPC
@@ -763,12 +768,13 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ requireSkill = FISHING },
 	expansion(EXPANSION.DF, {
 		n(ACHIEVEMENTS, {
 			ach(16632),	-- Dragon Isles Fisherman
-			ach(17207, bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {	-- Discombobberlated
+			ach(17207, {	-- Discombobberlated
 				provider = { "i", 136377 },	-- Oversized Bobber
+				timeline = { ADDED_10_0_5 },
 				groups = {
 					i(202207),	-- Reusable Oversized Bobber (TOY!)
 				},
-			})),
+			}),
 		}),
 		n(QUESTS, {
 			q(72252, {	-- Dragon Isles Fishing [A]
@@ -876,11 +882,12 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ requireSkill = FISHING },
 				timeline = { ADDED_12_0_1_LAUNCH },
 				groups = { i(264002) },	-- Midnight Fisher's Shop Sign (DECOR!)
 			}),
-			ach(63510, bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {	-- The Briny Best
+			ach(63510, {	-- The Briny Best
+				timeline = { ADDED_12_1_0 },
 				groups = {
 					title(779),	-- Briny <Name>
 				},
-			})),
+			}),
 		}),
 		filter(RECIPES, {
 			i(244791),	-- Recipe: Amani Angler's Ward

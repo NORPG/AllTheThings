@@ -361,44 +361,47 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				},
 				timeline = { ADDED_3_0_2 },
 			}),
-			ach(1183, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- Brew of the Year
-				crit(3526, {	-- Aromatic Honey Brew
-					provider = { "i", 37490 },	-- Aromatic Honey Brew
-				}),
-				crit(3525, {	-- Autmunal Acorn Ale
-					provider = { "i", 37497 },	-- Autmunal Acorn Ale
-				}),
-				crit(3524, {	-- Bartlett's Bitter Brew
-					provider = { "i", 37498 },	-- Bartlett's Bitter Brew
-				}),
-				crit(3523, {	-- Binary Brew
-					provider = { "i", 37496 },	-- Binary Brew
-				}),
-				crit(3522, {	-- Blackrock Lager
-					provider = { "i", 37493 },	-- Blackrock Lager
-				}),
-				crit(3521, {	-- Draenic Pale Ale
-					provider = { "i", 37495 },	-- Draenic Pale Ale
-				}),
-				crit(3520, {	-- Izzard's Ever Flavor
-					provider = { "i", 37489 },	-- Izzard's Ever Flavor
-				}),
-				crit(3519, {	-- Lord of Frost's Private Label
-					provider = { "i", 37499 },	-- Lord of Frost's Private Label
-				}),
-				crit(3518, {	-- Metok's Bubble Bock
-					provider = { "i", 37491 },	-- Metok's Bubble Bock
-				}),
-				crit(3517, {	-- Springtime Stout
-					provider = { "i", 37492 },	-- Springtime Stout
-				}),
-				crit(3516, {	-- Stranglethorn Brew
-					provider = { "i", 37494 },	-- Stranglethorn Brew
-				}),
-				crit(3515, {	-- Wild Winter Pilsner
-					provider = { "i", 37488 },	-- Wild Winter Pilsner
-				}),
-			})),
+			ach(1183, {	-- Brew of the Year
+				timeline = { ADDED_3_0_2 },
+				groups = {
+					crit(3526, {	-- Aromatic Honey Brew
+						provider = { "i", 37490 },	-- Aromatic Honey Brew
+					}),
+					crit(3525, {	-- Autmunal Acorn Ale
+						provider = { "i", 37497 },	-- Autmunal Acorn Ale
+					}),
+					crit(3524, {	-- Bartlett's Bitter Brew
+						provider = { "i", 37498 },	-- Bartlett's Bitter Brew
+					}),
+					crit(3523, {	-- Binary Brew
+						provider = { "i", 37496 },	-- Binary Brew
+					}),
+					crit(3522, {	-- Blackrock Lager
+						provider = { "i", 37493 },	-- Blackrock Lager
+					}),
+					crit(3521, {	-- Draenic Pale Ale
+						provider = { "i", 37495 },	-- Draenic Pale Ale
+					}),
+					crit(3520, {	-- Izzard's Ever Flavor
+						provider = { "i", 37489 },	-- Izzard's Ever Flavor
+					}),
+					crit(3519, {	-- Lord of Frost's Private Label
+						provider = { "i", 37499 },	-- Lord of Frost's Private Label
+					}),
+					crit(3518, {	-- Metok's Bubble Bock
+						provider = { "i", 37491 },	-- Metok's Bubble Bock
+					}),
+					crit(3517, {	-- Springtime Stout
+						provider = { "i", 37492 },	-- Springtime Stout
+					}),
+					crit(3516, {	-- Stranglethorn Brew
+						provider = { "i", 37494 },	-- Stranglethorn Brew
+					}),
+					crit(3515, {	-- Wild Winter Pilsner
+						provider = { "i", 37488 },	-- Wild Winter Pilsner
+					}),
+				},
+			}),
 			ach(293, {	-- Disturbing the Peace
 				providers = {
 					{ "i", 33968 },	-- Blue Brewfest Hat
@@ -438,7 +441,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				},
 				timeline = { ADDED_2_2_2 },
 			}),
-			ach(1184, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- Strange Brew (A)
+			ach(1184, {	-- Strange Brew (A)
+				timeline = { ADDED_3_0_2 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					crit(8885, {	-- Barleybrew Clear
@@ -469,8 +473,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						provider = { "i", 33033 },	-- Thunderbrew Stout
 					}),
 				},
-			})),
-			ach(1203, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- Strange Brew (H)
+			}),
+			ach(1203, {	-- Strange Brew (H)
+				timeline = { ADDED_3_0_2 },
 				races = HORDE_ONLY,
 				groups = {
 					crit(8889, {	-- Brewdoo Magic
@@ -501,60 +506,63 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						provider = { "i", 34022 },	-- Stout Shrunken Head
 					}),
 				},
-			})),
-			ach(1185, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- The Brewfest Diet
-				-- #if ANYCLASSIC
-				crit(3542, {	-- Dried Sausage
-					provider = { "i", 34063 }	-- Dried Sausage
-				}),
-				crit(3543, {	-- Pickled Sausage
-					provider = { "i", 33024 }	-- Pickled Sausage
-				}),
-				-- #else
-				crit(18619, {	-- Dried Sausage
-					provider = { "i", 34063 }	-- Dried Sausage
-				}),
-				crit(18622, {	-- Pickled Sausage
-					provider = { "i", 33024 }	-- Pickled Sausage
-				}),
-				-- #endif
-				crit(3544, {	-- Savory Sausage
-					provider = { "i", 33023 }	-- Savory Sausage
-				}),
-				-- #if ANYCLASSIC
-				crit(3545, {	-- Spiced Onion Cheese
-					provider = { "i", 34065 }	-- Spiced Onion Cheese
-				}),
-				crit(3546, {	-- Spicy Smoked Sausage
-					provider = { "i", 33025 }	-- Spicy Smoked Sausage
-				}),
-				crit(3547, {	-- Succulent Sausage
-					provider = { "i", 34064 }	-- Succulent Sausage
-				}),
-				-- #else
-				crit(18621, {	-- Spiced Onion Cheese
-					provider = { "i", 34065 }	-- Spiced Onion Cheese
-				}),
-				crit(18623, {	-- Spicy Smoked Sausage
-					provider = { "i", 33025 }	-- Spicy Smoked Sausage
-				}),
-				crit(18620, {	-- Succulent Sausage
-					provider = { "i", 34064 }	-- Succulent Sausage
-				}),
-				-- #endif
-				crit(7987, {	-- The Essential Brewfest Pretzel
-					provider = { "i", 33043 }	-- The Essential Brewfest Pretzel
-				}),
-				-- #if ANYCLASSIC
-				crit(3549, {	-- The Golden Link
-					provider = { "i", 33026 }	-- The Golden Link
-				}),
-				-- #else
-				crit(18624, {	-- The Golden Link
-					provider = { "i", 33026 }	-- The Golden Link
-				}),
-				-- #endif
-			})),
+			}),
+			ach(1185, {	-- The Brewfest Diet
+				timeline = { ADDED_3_0_2 },
+				groups = {
+					-- #if ANYCLASSIC
+					crit(3542, {	-- Dried Sausage
+						provider = { "i", 34063 }	-- Dried Sausage
+					}),
+					crit(3543, {	-- Pickled Sausage
+						provider = { "i", 33024 }	-- Pickled Sausage
+					}),
+					-- #else
+					crit(18619, {	-- Dried Sausage
+						provider = { "i", 34063 }	-- Dried Sausage
+					}),
+					crit(18622, {	-- Pickled Sausage
+						provider = { "i", 33024 }	-- Pickled Sausage
+					}),
+					-- #endif
+					crit(3544, {	-- Savory Sausage
+						provider = { "i", 33023 }	-- Savory Sausage
+					}),
+					-- #if ANYCLASSIC
+					crit(3545, {	-- Spiced Onion Cheese
+						provider = { "i", 34065 }	-- Spiced Onion Cheese
+					}),
+					crit(3546, {	-- Spicy Smoked Sausage
+						provider = { "i", 33025 }	-- Spicy Smoked Sausage
+					}),
+					crit(3547, {	-- Succulent Sausage
+						provider = { "i", 34064 }	-- Succulent Sausage
+					}),
+					-- #else
+					crit(18621, {	-- Spiced Onion Cheese
+						provider = { "i", 34065 }	-- Spiced Onion Cheese
+					}),
+					crit(18623, {	-- Spicy Smoked Sausage
+						provider = { "i", 33025 }	-- Spicy Smoked Sausage
+					}),
+					crit(18620, {	-- Succulent Sausage
+						provider = { "i", 34064 }	-- Succulent Sausage
+					}),
+					-- #endif
+					crit(7987, {	-- The Essential Brewfest Pretzel
+						provider = { "i", 33043 }	-- The Essential Brewfest Pretzel
+					}),
+					-- #if ANYCLASSIC
+					crit(3549, {	-- The Golden Link
+						provider = { "i", 33026 }	-- The Golden Link
+					}),
+					-- #else
+					crit(18624, {	-- The Golden Link
+						provider = { "i", 33026 }	-- The Golden Link
+					}),
+					-- #endif
+				},
+			}),
 			ach(1292, {	-- Yellow Brewfest Stein [Removed]
 				provider = { "i", 32912 },	-- Yellow Brewfest Stein
 				timeline = { ADDED_2_2_2, REMOVED_2_4_3 },

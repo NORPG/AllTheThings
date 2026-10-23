@@ -932,13 +932,14 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 			}),
 		}),
 		n(TREASURES, {
-			o(401299, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Broken Barter Boulder
+			o(401299, {	-- Broken Barter Boulder
 				coord = { 54.4, 32.5, ZARALEK_CAVERN },
 				questID = 75654,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(205219),	-- Broken Barter Boulder
 				},
-			})),
+			}),
 			o(380591, {	-- Closely Guarded Shiny
 				questID = 70292,
 				coord = { 50.4, 45.1, THE_WAKING_SHORES },
@@ -946,13 +947,14 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 					i(198687),	-- Closely Guarded Shiny
 				},
 			}),
-			o(410484, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Coalesced Dreamstone
+			o(410484, {	-- Coalesced Dreamstone
 				coord = { 58.9, 53.8, EMERALD_DREAM },
 				questID = 78285,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210202),	-- Coalesced Dreamstone
 				},
-			})),
+			}),
 			o(380569, {	-- Crystalline Overgrowth
 				questID = 70277,
 				coord = { 45.01, 61.3, THE_AZURE_SPAN },
@@ -975,13 +977,14 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 					i(198660),	-- Fragmented Key
 				},
 			}),
-			o(401292, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Gently Jostled Jewels
+			o(401292, {	-- Gently Jostled Jewels
 				coord = { 34.5, 45.5, ZARALEK_CAVERN },
 				questID = 75653,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(205216),	-- Gently Jostled Jewels
 				},
-			})),
+			}),
 			o(380556, {	-- Harmonic Chest
 				description = "Click the key next to the chest, then click the three crystals in the same lake. Return to the chest to collect the treasure.",
 				questID = 70271,
@@ -1019,27 +1022,30 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 					i(198656),	-- Painter's Pretty Jewel
 				},
 			}),
-			o(410475, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Petrified Hope
+			o(410475, {	-- Petrified Hope
 				coord = { 33.2, 46.5, EMERALD_DREAM },
 				questID = 78282,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210200),	-- Petrified Hope
 				},
-			})),
-			o(401241, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Snubbed Snail Shells
+			}),
+			o(401241, {	-- Snubbed Snail Shells
 				coord = { 40.4, 80.7, ZARALEK_CAVERN },
 				questID = 75652,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(205214),	-- Snubbed Snail Shells
 				},
-			})),
-			o(410479, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Unpolished Blemish
+			}),
+			o(410479, {	-- Unpolished Blemish
 				coord = { 43.4, 33.3, EMERALD_DREAM },
 				questID = 78283,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210201),	-- Handful of Tiny Pebbles
 				},
-			})),
+			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			isWeekly = true,

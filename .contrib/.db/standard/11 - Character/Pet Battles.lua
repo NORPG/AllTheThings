@@ -22,8 +22,9 @@ local PET_BATTLE_DUNGEONS = createHeader({
 root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 	n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_5_0_4 } }, {
 		pvp(n(PVP, {
-			ach(12290, bubbleDownSelf({ timeline = { ADDED_7_3_5 } }, {	-- Family Brawler
+			ach(12290, {	-- Family Brawler
 				-- Meta Achievement should symlink the contained Achievements from Source
+				timeline = { ADDED_7_3_5 },
 				sym = {{"meta_achievement",
 					12280,	-- Aquatic Brawler
 					12281,	-- Beast Brawler
@@ -37,7 +38,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 					12285,	-- Undead Brawler
 				}},
 				groups = { i(156666) },	-- Master Trainer's Tabard
-			})),
+			}),
 			ach(12280, { timeline = { ADDED_7_3_5 } }),	-- Aquatic Brawler
 			ach(12281, { timeline = { ADDED_7_3_5 } }),	-- Beast Brawler
 			ach(12284, { timeline = { ADDED_7_3_5 } }),	-- Critter Brawler
@@ -50,12 +51,18 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 			ach(12285, { timeline = { ADDED_7_3_5 } }),	-- Undead Brawler
 			ach(8297, { timeline = { ADDED_5_3_0 } }),	-- Merciless Pet Brawler (10)
 			ach(8298, { timeline = { ADDED_5_3_0 } }),-- Vengeful Pet Brawler (50)
-			ach(8300, bubbleDownSelf({ timeline = { ADDED_5_3_0 } }, {	-- Brutal Pet Brawler (250)
-				i(94191),	-- Stunted Direhorn (PET!)
-			})),
-			ach(8301, bubbleDownSelf({ timeline = { ADDED_5_3_0 } }, {	-- Deadly Pet Brawler (1000)
-				title(227),	-- Trainer <Name>
-			})),
+			ach(8300, {	-- Brutal Pet Brawler (250)
+				timeline = { ADDED_5_3_0 },
+				groups = {
+					i(94191),	-- Stunted Direhorn (PET!)
+				},
+			}),
+			ach(8301, {	-- Deadly Pet Brawler (1000)
+				timeline = { ADDED_5_3_0 },
+				groups = {
+					title(227),	-- Trainer <Name>
+				},
+			}),
 			ach(6595),	-- Pet Brawler (10)
 			ach(6596),	-- Experienced Pet Brawler (50)
 			ach(6597),	-- Master Pet Brawler (250)
@@ -103,37 +110,40 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 				6616,	-- Pandaria Tamer
 			}},
 		}),
-		ach(8397, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {	-- Crazy for Cats (need to add locations to comments for future use - wowhead did not link)
-			-- title_gendered(252, 240),	-- the Crazy Cat Man / the Crazy Cat Lady
-			title_female(240),	-- <Name> the Crazy Cat Lady
-			title_male(252),	-- <Name> the Crazy Cat Man
-			crit(23577),	-- Black Tabby Cat
-			crit(23578),	-- Bombay Cat
-			crit(29725),	-- Brightpaw
-			crit(23579),	-- Calico Cat
-			crit(23580),	-- Cat
-			crit(23581),	-- Cheetah Cub
-			crit(23596),	-- Cinder Kitten
-			crit(23582),	-- Cornish Rex Cat
-			crit(23583),	-- Darkmoon Cub
-			crit(23584),	-- Feline Familiar
-			crit(23585),	-- Fluxfire Feline
-			crit(23740),	-- Guardian Cub
-			crit(23586),	-- Mr. Bigglesworth
-			crit(23597),	-- Nightsaber Cub
-			crit(23587),	-- Orange Tabby Cat
-			crit(23588),	-- Panther Cub
-			crit(23589),	-- Sand Kitten
-			crit(23590),	-- Sapphire Cub
-			crit(23591),	-- Siamese Cat
-			crit(23592),	-- Silver Tabby Cat
-			crit(23593),	-- Snow Cub
-			un(REMOVED_FROM_GAME,crit(23599)),	-- Spectral Cub
-			crit(23598),	-- Spectral Tiger Cub
-			crit(23594),	-- White Kitten
-			crit(23595),	-- Winterspring Cub
-			crit(23600),	-- Xu-Fu, Cub of Xuen
-		})),
+		ach(8397, {	-- Crazy for Cats (need to add locations to comments for future use - wowhead did not link)
+			timeline = { ADDED_5_4_0 },
+			groups = {
+				-- title_gendered(252, 240),	-- the Crazy Cat Man / the Crazy Cat Lady
+				title_female(240),	-- <Name> the Crazy Cat Lady
+				title_male(252),	-- <Name> the Crazy Cat Man
+				crit(23577),	-- Black Tabby Cat
+				crit(23578),	-- Bombay Cat
+				crit(29725),	-- Brightpaw
+				crit(23579),	-- Calico Cat
+				crit(23580),	-- Cat
+				crit(23581),	-- Cheetah Cub
+				crit(23596),	-- Cinder Kitten
+				crit(23582),	-- Cornish Rex Cat
+				crit(23583),	-- Darkmoon Cub
+				crit(23584),	-- Feline Familiar
+				crit(23585),	-- Fluxfire Feline
+				crit(23740),	-- Guardian Cub
+				crit(23586),	-- Mr. Bigglesworth
+				crit(23597),	-- Nightsaber Cub
+				crit(23587),	-- Orange Tabby Cat
+				crit(23588),	-- Panther Cub
+				crit(23589),	-- Sand Kitten
+				crit(23590),	-- Sapphire Cub
+				crit(23591),	-- Siamese Cat
+				crit(23592),	-- Silver Tabby Cat
+				crit(23593),	-- Snow Cub
+				un(REMOVED_FROM_GAME,crit(23599)),	-- Spectral Cub
+				crit(23598),	-- Spectral Tiger Cub
+				crit(23594),	-- White Kitten
+				crit(23595),	-- Winterspring Cub
+				crit(23600),	-- Xu-Fu, Cub of Xuen
+			},
+		}),
 		ach(8080, { timeline = { ADDED_5_2_0 } }),	-- Fabled Pandaren Tamer
 		ach(6608, {	-- Family Reunion
 			crit(19750),	-- Humanoid
@@ -147,9 +157,12 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 			crit(19758),	-- Aquatic
 			crit(19759),	-- Mechanical
 		}),
-		ach(7908, bubbleDownSelf({ timeline = { ADDED_5_1_0 } }, {	-- I Choose You
-			i(92744),	-- Heavy Sack of Gold
-		})),
+		ach(7908, {	-- I Choose You
+			timeline = { ADDED_5_1_0 },
+			groups = {
+				i(92744),	-- Heavy Sack of Gold
+			},
+		}),
 		ach(6594),	-- Cat Fight! (10)
 		ach(6593),	-- Experienced Pet Battler (50)
 		ach(6462),	-- Master Pet Battler (250)
@@ -201,55 +214,94 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 		achpart(6558, 6560),	-- Local Pet Mauler (10)
 		achpart(6559, 6560),	-- Traveling Pet Mauler (30)
 		ach(6560),	-- World Pet Mauler (60) (automated)
-		ach(16731,	bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {	-- Court is Now in Session
-			crit(56693),	-- Lord Basilton
-			crit(56700),	-- Lady Feathersworth
-			crit(56706),	-- Mister Toots
-			crit(56707),	-- Mister Muskoxeles
-			crit(60889),	-- Princess Vorquistrasza
-			title(480),	-- <Name>, Knight of Feathersworth
-		})),
+		ach(16731,	{	-- Court is Now in Session
+			timeline = { ADDED_11_0_5 },
+			groups = {
+				crit(56693),	-- Lord Basilton
+				crit(56700),	-- Lady Feathersworth
+				crit(56706),	-- Mister Toots
+				crit(56707),	-- Mister Muskoxeles
+				crit(60889),	-- Princess Vorquistrasza
+				title(480),	-- <Name>, Knight of Feathersworth
+			},
+		}),
 		ach(6554),	-- He's Mine! (10)
 		ach(6555),	-- Building a Team (25)
 		ach(6556),	-- Going to Need More Traps (50)
 		ach(6557),	-- Master Pet Hunter (100)
 		ach(7436),	-- Zen Pet Hunter (200)
-		ach(15644,	bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {	-- Good Things Come in Small Packages (1800)
-			i(191946),	-- Mister Muskoxeles (PET!)
-		})),
-		ach(15643,  bubbleDownSelf({ timeline = { ADDED_10_0_0 } }, {	-- What Can I Say? They Love Me. (1600)
-			i(191932),	-- Violet Violence (PET!)
-		})),
-		ach(15642,  bubbleDownSelf({ timeline = { ADDED_10_0_0 } }, {	-- Proven Pet Parent (1400)
-			i(191936),	-- Secretive Frogduck (PET!)
-		})),
-		ach(15641,  bubbleDownSelf({ timeline = { ADDED_10_0_0 } }, {	-- Many More Mini Minions (1200)
-			i(191941),	-- Crystalline Mini-Monster (PET!)
-		})),
-		ach(12958, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {	-- Master of Minions (1000)
-			i(163218),	-- Hearthy (PET!)
-		})),
-		ach(12992, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {	-- Pet Emporium (800)
-			i(163220),	-- Rooter (PET!)
-		})),
-		ach(9643, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {	-- So. Many. Pets. (600)
-			i(118577),	-- Stormwing (PET!)
-		})),
-		ach(7501, bubbleDownSelf({ timeline = { ADDED_5_0_4} }, {	-- That's a Lot of Pet Food (400)
-			i(89736),	-- Venus (PET!)
-		})),
-		ach(7500, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {	-- Going to Need More Leashes(250)
-			i(85578),	-- Feral Vermling (PET!)
-		})),
-		ach(5875, bubbleDownSelf({ timeline = { ADDED_4_2_0 } }, {	-- Littlest Pet Shop (150)
-			i(54810),	-- Celestial Dragon (PET!)
-		})),
-		ach(5877, bubbleDownSelf({ timeline = { ADDED_4_2_0 } }, {	-- Menagerie (125)
-			i(71387),	-- Brilliant Kaliri (PET!)
-		})),
-		ach(5876, bubbleDownSelf({ timeline = { ADDED_4_2_0 } }, {	-- Petting Zoo (100)
-			i(71140),	-- Nuts (PET!)
-		})),
+		ach(15644,	{	-- Good Things Come in Small Packages (1800)
+			timeline = { ADDED_11_0_5 },
+			groups = {
+				i(191946),	-- Mister Muskoxeles (PET!)
+			},
+		}),
+		ach(15643,  {	-- What Can I Say? They Love Me. (1600)
+			timeline = { ADDED_10_0_0 },
+			groups = {
+				i(191932),	-- Violet Violence (PET!)
+			},
+		}),
+		ach(15642,  {	-- Proven Pet Parent (1400)
+			timeline = { ADDED_10_0_0 },
+			groups = {
+				i(191936),	-- Secretive Frogduck (PET!)
+			},
+		}),
+		ach(15641,  {	-- Many More Mini Minions (1200)
+			timeline = { ADDED_10_0_0 },
+			groups = {
+				i(191941),	-- Crystalline Mini-Monster (PET!)
+			},
+		}),
+		ach(12958, {	-- Master of Minions (1000)
+			timeline = { ADDED_8_0_1 },
+			groups = {
+				i(163218),	-- Hearthy (PET!)
+			},
+		}),
+		ach(12992, {	-- Pet Emporium (800)
+			timeline = { ADDED_8_0_1 },
+			groups = {
+				i(163220),	-- Rooter (PET!)
+			},
+		}),
+		ach(9643, {	-- So. Many. Pets. (600)
+			timeline = { ADDED_6_0_2 },
+			groups = {
+				i(118577),	-- Stormwing (PET!)
+			},
+		}),
+		ach(7501, {	-- That's a Lot of Pet Food (400)
+			timeline = { ADDED_5_0_4},
+			groups = {
+				i(89736),	-- Venus (PET!)
+			},
+		}),
+		ach(7500, {	-- Going to Need More Leashes(250)
+			timeline = { ADDED_5_0_4 },
+			groups = {
+				i(85578),	-- Feral Vermling (PET!)
+			},
+		}),
+		ach(5875, {	-- Littlest Pet Shop (150)
+			timeline = { ADDED_4_2_0 },
+			groups = {
+				i(54810),	-- Celestial Dragon (PET!)
+			},
+		}),
+		ach(5877, {	-- Menagerie (125)
+			timeline = { ADDED_4_2_0 },
+			groups = {
+				i(71387),	-- Brilliant Kaliri (PET!)
+			},
+		}),
+		ach(5876, {	-- Petting Zoo (100)
+			timeline = { ADDED_4_2_0 },
+			groups = {
+				i(71140),	-- Nuts (PET!)
+			},
+		}),
 
 	})),
 	n(ACHIEVEMENTS, {

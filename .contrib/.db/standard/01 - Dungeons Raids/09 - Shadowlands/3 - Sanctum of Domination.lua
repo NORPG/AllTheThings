@@ -387,105 +387,111 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				}),
 				ach(15110),	-- Dominating the Catwalk
 				-- Fated
-				ach(15667,	-- Fate of Domination
-				bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {
-					crit(53547, {	-- The Tarragrue
-						_encounter = { TARRAGRUE, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53548, {	-- The Eye of the Jailer
-						_encounter = { EYE, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53549, {	-- The Nine
-						_encounter = { NINE, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53550, {	-- Remnant of Ner'zhul
-						_encounter = { NERZHUL, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53551, {	-- Soulrender Dormazain
-						_encounter = { DORMAZAIN, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53552, {	-- Painsmith Raznal
-						_encounter = { PAINSMITH, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53553, {	-- Guardian of the First Ones
-						_encounter = { GUARDIAN, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53554, {	-- Fatescribe Roh-Kalo
-						_encounter = { FATESCRIBE, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53555, {	-- Kel'Thuzad
-						_encounter = { KELTHUZAD, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53556, {	-- Sylvanas Windrunner
-						_encounter = { SYLVANAS, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-				})),
-				ach(15668,	-- Heroic: Fate of Domination
-				bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {
-					crit(53558, {	-- The Tarragrue
-						_encounter = { TARRAGRUE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53559, {	-- The Eye of the Jailer
-						_encounter = { EYE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53560, {	-- The Nine
-						_encounter = { NINE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53612, {	-- Soulrender Dormazain
-						_encounter = { DORMAZAIN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53562, {	-- Remnant of Ner'zhul
-						_encounter = { NERZHUL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53563, {	-- Painsmith Raznal
-						_encounter = { PAINSMITH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53564, {	-- Guardian of the First Ones
-						_encounter = { GUARDIAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53565, {	-- Fatescribe Roh-Kalo
-						_encounter = { FATESCRIBE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53566, {	-- Kel'Thuzad
-						_encounter = { KELTHUZAD, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53567, {	-- Sylvanas Windrunner
-						_encounter = { SYLVANAS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-				})),
-				ach(15669,	-- Mythic: Fate of Domination
-				bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {
-					crit(53570, {	-- The Tarragrue
-						_encounter = { TARRAGRUE, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53571, {	-- The Eye of the Jailer
-						_encounter = { EYE, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53572, {	-- The Nine
-						_encounter = { NINE, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53561, {	-- Soulrender Dormazain
-						_encounter = { DORMAZAIN, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53573, {	-- Remnant of Ner'zhul
-						_encounter = { NERZHUL, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53574, {	-- Painsmith Raznal
-						_encounter = { PAINSMITH, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53575, {	-- Guardian of the First Ones
-						_encounter = { GUARDIAN, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53576, {	-- Fatescribe Roh-Kalo
-						_encounter = { FATESCRIBE, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53577, {	-- Kel'Thuzad
-						_encounter = { KELTHUZAD, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53578, {	-- Sylvanas Windrunner
-						_encounter = { SYLVANAS, DIFFICULTY.RAID.MYTHIC },
-					}),
-				})),
+				ach(15667, {	-- Fate of Domination
+					timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+					groups = {
+						crit(53547, {	-- The Tarragrue
+							_encounter = { TARRAGRUE, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53548, {	-- The Eye of the Jailer
+							_encounter = { EYE, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53549, {	-- The Nine
+							_encounter = { NINE, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53550, {	-- Remnant of Ner'zhul
+							_encounter = { NERZHUL, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53551, {	-- Soulrender Dormazain
+							_encounter = { DORMAZAIN, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53552, {	-- Painsmith Raznal
+							_encounter = { PAINSMITH, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53553, {	-- Guardian of the First Ones
+							_encounter = { GUARDIAN, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53554, {	-- Fatescribe Roh-Kalo
+							_encounter = { FATESCRIBE, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53555, {	-- Kel'Thuzad
+							_encounter = { KELTHUZAD, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53556, {	-- Sylvanas Windrunner
+							_encounter = { SYLVANAS, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+					},
+				}),
+				ach(15668, {	-- Heroic: Fate of Domination
+					timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+					groups = {
+						crit(53558, {	-- The Tarragrue
+							_encounter = { TARRAGRUE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53559, {	-- The Eye of the Jailer
+							_encounter = { EYE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53560, {	-- The Nine
+							_encounter = { NINE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53612, {	-- Soulrender Dormazain
+							_encounter = { DORMAZAIN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53562, {	-- Remnant of Ner'zhul
+							_encounter = { NERZHUL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53563, {	-- Painsmith Raznal
+							_encounter = { PAINSMITH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53564, {	-- Guardian of the First Ones
+							_encounter = { GUARDIAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53565, {	-- Fatescribe Roh-Kalo
+							_encounter = { FATESCRIBE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53566, {	-- Kel'Thuzad
+							_encounter = { KELTHUZAD, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53567, {	-- Sylvanas Windrunner
+							_encounter = { SYLVANAS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+					},
+				}),
+				ach(15669, {	-- Mythic: Fate of Domination
+					timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+					groups = {
+						crit(53570, {	-- The Tarragrue
+							_encounter = { TARRAGRUE, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53571, {	-- The Eye of the Jailer
+							_encounter = { EYE, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53572, {	-- The Nine
+							_encounter = { NINE, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53561, {	-- Soulrender Dormazain
+							_encounter = { DORMAZAIN, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53573, {	-- Remnant of Ner'zhul
+							_encounter = { NERZHUL, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53574, {	-- Painsmith Raznal
+							_encounter = { PAINSMITH, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53575, {	-- Guardian of the First Ones
+							_encounter = { GUARDIAN, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53576, {	-- Fatescribe Roh-Kalo
+							_encounter = { FATESCRIBE, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53577, {	-- Kel'Thuzad
+							_encounter = { KELTHUZAD, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53578, {	-- Sylvanas Windrunner
+							_encounter = { SYLVANAS, DIFFICULTY.RAID.MYTHIC },
+						}),
+					},
+				}),
 					-- Guild Achievements
 				ach(15182),	-- Sanctum of Domination Guild Run
 				ach(15183),	-- Heroic: Sanctum of Domination Guild Run
@@ -817,18 +823,20 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					ach(15121, {	-- Mythic: Sylvanas Windrunner
 						title(447),	-- Breaker of Chains
 					}),
-					ach(15197, bubbleDownSelf({timeline = { ADDED_9_1_0, REMOVED_9_2_0 } }, {	-- Hall of Fame: Sylvanas (Alliance)
+					ach(15197, {	-- Hall of Fame: Sylvanas (Alliance)
+						timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
 						races = ALLIANCE_ONLY,
 						groups = {
 							title(448),	-- <Name>, Famed Bane of the Banshee Queen
 						},
-					})),
-					ach(15196, bubbleDownSelf({timeline = { ADDED_9_1_0, REMOVED_9_2_0 } }, {	-- Hall of Fame: Sylvanas (Horde)
+					}),
+					ach(15196, {	-- Hall of Fame: Sylvanas (Horde)
+						timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
 						races = HORDE_ONLY,
 						groups = {
 							title(448),	-- <Name>, Famed Bane of the Banshee Queen
 						},
-					})),
+					}),
 					ach(15135, {timeline = { ADDED_9_1_0, REMOVED_9_2_0 }}),	-- Cutting Edge: Sylvanas Windrunner
 					ig(186642),	-- Vengeance (MOUNT!)
 					i(187593),	-- Ethereal Fletching (Upgrade Legendary)

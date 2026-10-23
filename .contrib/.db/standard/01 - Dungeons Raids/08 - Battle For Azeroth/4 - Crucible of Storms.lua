@@ -130,14 +130,16 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					ach(13419, {	-- Cutting Edge: Uu'nat, Harbinger of the Void
 						timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
 					}),
-					ach(13423, bubbleDownSelf({timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (A)
+					ach(13423, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (A)
+						timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
 						races = ALLIANCE_ONLY,
 						groups = { title(400) },	-- <Name>, Famed Slayer of the Harbinger
-					})),
-					ach(13424, bubbleDownSelf({timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (H)
+					}),
+					ach(13424, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (H)
+						timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
 						races = HORDE_ONLY,
 						groups = { title(400) },	-- <Name>, Famed Slayer of the Harbinger
-					})),
+					}),
 				}),
 			}),
 		},

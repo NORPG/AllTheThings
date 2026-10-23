@@ -1288,9 +1288,12 @@ root(ROOTS.InGameShop, bubbleDown({ u = REAL_MONEY }, {
 			timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH },	-- removed from the store again on Jan 2 2023
 		}),
 		i(112326,	-- Warforged Nightmare (MOUNT!)
-			bubbleDownSelf({ timeline = { ADDED_6_0_2, REMOVED_10_1_7 } }, {	-- Removed Oct 31, 2023
-				i(112324),	-- Nightmarish Hitching Post (TOY!)
-		})),
+			{	-- Removed Oct 31, 2023
+				timeline = { ADDED_6_0_2, REMOVED_10_1_7 },
+				groups = {
+					i(112324),	-- Nightmarish Hitching Post (TOY!)
+				},
+		}),
 		i(69846, {	-- Winged Guardian (MOUNT!)
 			timeline = { ADDED_4_1_0, REMOVED_10_0_2_LAUNCH },	-- Removed Jan 2 2023
 		}),

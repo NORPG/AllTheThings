@@ -3909,8 +3909,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			n(14847, {	-- Professor Thaddeus Paleo <Darkmoon Cards>
 				coord = { 51.9, 60.9, DARKMOON_ISLAND },
 				groups = {
-					i(113135, bubbleDownSelf({ timeline = { ADDED_6_0_2 }, }, {	-- Iron Joker
+					i(113135, {	-- Iron Joker
 						description = "You can trade in a joker for any one of the cards you are missing to Thaddeus Paleo at the Darkmoon Faire.",
+						timeline = { ADDED_6_0_2 },
 						groups = {
 							i(112278),	-- Ace of Iron
 							i(112277),	-- Two of Iron
@@ -3921,9 +3922,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 							i(112272),	-- Seven of Iron
 							i(112271),	-- Eight of Iron
 						},
-					})),
-					i(113142, bubbleDownSelf({ timeline = { ADDED_6_0_2 }, }, {	-- Moon Joker
+					}),
+					i(113142, {	-- Moon Joker
 						description = "You can trade in a joker for any one of the cards you are missing to Thaddeus Paleo at the Darkmoon Faire.",
+						timeline = { ADDED_6_0_2 },
 						groups = {
 							i(112302),	-- Ace of the Moon
 							i(112301),	-- Two of the Moon
@@ -3934,7 +3936,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 							i(112296),	-- Seven of the Moon
 							i(112295),	-- Eight of the Moon
 						},
-					})),
+					}),
 					darkmoonprizeticket(50, i(137790, {	-- Technique: Darkmoon Card of the Legion [Rank 2] (RECIPE!)
 						timeline = { ADDED_7_0_3 },
 					})),
@@ -3947,8 +3949,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					darkmoonprizeticket(35, i(137746, {	-- Technique: Propehcy Tarot [Rank 3] (RECIPE!)
 						timeline = { ADDED_7_0_3 },
 					})),
-					i(113139, bubbleDownSelf({ timeline = { ADDED_6_0_2 }, }, {	-- Visions Joker
+					i(113139, {	-- Visions Joker
 						description = "You can trade in a joker for any one of the cards you are missing to Thaddeus Paleo at the Darkmoon Faire.",
+						timeline = { ADDED_6_0_2 },
 						groups = {
 							i(112286),	-- Ace of Visions
 							i(112285),	-- Two of Visions
@@ -3959,9 +3962,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 							i(112280),	-- Seven of Visions
 							i(112279),	-- Eight of Visions
 						},
-					})),
-					i(113140, bubbleDownSelf({ timeline = { ADDED_6_0_2 }, }, {	-- War Joker
+					}),
+					i(113140, {	-- War Joker
 						description = "You can trade in a joker for any one of the cards you are missing to Thaddeus Paleo at the Darkmoon Faire.",
+						timeline = { ADDED_6_0_2 },
 						groups = {
 							i(112294),	-- Ace of War
 							i(112293),	-- Two of War
@@ -3972,7 +3976,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 							i(112288),	-- Seven of War
 							i(112287),	-- Eight of War
 						},
-					})),
+					}),
 				},
 			}),
 			-- #endif

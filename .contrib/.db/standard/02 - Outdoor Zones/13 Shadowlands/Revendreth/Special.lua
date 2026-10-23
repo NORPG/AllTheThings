@@ -102,12 +102,13 @@ maproot(SHADOWLANDS, REVENDRETH, {
 					}),
 				},
 			})),
-			o(370469, bubbleDownSelf({ timeline = { ADDED_9_1_5 } }, {	-- Spectral Feed
+			o(370469, {	-- Spectral Feed
 				coord = { 63.75, 61.69, REVENDRETH },
+				timeline = { ADDED_9_1_5 },
 				groups = {
 					i(187811),	-- Spectral Feed
 				},
-			})),
+			}),
 		}),
 	},
 });

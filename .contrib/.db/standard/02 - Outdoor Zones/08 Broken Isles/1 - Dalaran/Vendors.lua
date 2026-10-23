@@ -654,19 +654,22 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 			coord = { 38.4, 24.7, LEGION_DALARAN },
 			groups = {
 				i(136630),	-- "Twirling Bottom" Repeater
-				i(144328, bubbleDownSelf({ timeline = { ADDED_7_1_5 } }, {	-- Boon of the Builder
-					i(144330, {	-- Sprocket Container
-						i(136630),	-- "Twirling Bottom" Repeater
-						i(136632),	-- Chaos Blaster
-						i(132509),	-- Deployable Bullet Dispenser
-						i(136629),	-- Felgibber Shotgun
-						i(144337),	-- Schematic: Chain Skullblasters (RECIPE!)
-						i(144338),	-- Schematic: Heavy Skullblasters (RECIPE!)
-						i(144336),	-- Schematic: Rugged Skullblasters (RECIPE!)
-						i(144335),	-- Schematic: Tailored Skullblasters (RECIPE!)
-						i(136631),	-- Surface-to-Infernal Rocket Launcher
-					}),
-				})),
+				i(144328, {	-- Boon of the Builder
+					timeline = { ADDED_7_1_5 },
+					groups = {
+						i(144330, {	-- Sprocket Container
+							i(136630),	-- "Twirling Bottom" Repeater
+							i(136632),	-- Chaos Blaster
+							i(132509),	-- Deployable Bullet Dispenser
+							i(136629),	-- Felgibber Shotgun
+							i(144337),	-- Schematic: Chain Skullblasters (RECIPE!)
+							i(144338),	-- Schematic: Heavy Skullblasters (RECIPE!)
+							i(144336),	-- Schematic: Rugged Skullblasters (RECIPE!)
+							i(144335),	-- Schematic: Tailored Skullblasters (RECIPE!)
+							i(136631),	-- Surface-to-Infernal Rocket Launcher
+						}),
+					},
+				}),
 				i(136632),	-- Chaos Blaster
 				i(139555, {	-- Designs of the Grand Architect
 					cost = 80000000,	-- 8,000g

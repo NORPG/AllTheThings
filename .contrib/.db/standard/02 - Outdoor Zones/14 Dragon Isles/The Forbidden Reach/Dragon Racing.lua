@@ -465,8 +465,9 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 					}),
 				}),
 			})),
-			ach(19478, bubbleDownSelf({ timeline = { ADDED_10_2_6 } }, {	-- Now THIS is Dragon Racing!
+			ach(19478, {	-- Now THIS is Dragon Racing!
 				-- Meta Achievement
+				timeline = { ADDED_10_2_6 },
 				sym = {{"meta_achievement",
 					16577,	-- Azure Span Glyph Hunter
 					15939,	-- Dragon Racing Completionist: Bronze
@@ -483,15 +484,17 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 				groups = {
 					i(207776),	-- Grotto Netherwing Drake: Black Scales (MM!)
 				},
-			})),
+			}),
 			n(WORLD_QUESTS, {
-				i(204359,	-- Reach Racer's Purse
-				bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
-					i(197002),	-- Cliffside Wylderdrake: Flared Cheek (MM!)
-					i(197124),	-- Highland Drake: Swept Horns (MM!)
-					i(202274),	-- Renewed Proto-Drake: Plated Brow (MM!)
-					i(197594),	-- Windborne Velocidrake: Small Ears (MM!)
-				})),
+				i(204359, {	-- Reach Racer's Purse
+					timeline = { ADDED_10_0_7 },
+					groups = {
+						i(197002),	-- Cliffside Wylderdrake: Flared Cheek (MM!)
+						i(197124),	-- Highland Drake: Swept Horns (MM!)
+						i(202274),	-- Renewed Proto-Drake: Plated Brow (MM!)
+						i(197594),	-- Windborne Velocidrake: Small Ears (MM!)
+					},
+				}),
 			}),
 			n(WORLD_QUESTS, sharedData({
 				sourceQuests = {

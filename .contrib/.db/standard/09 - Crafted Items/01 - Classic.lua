@@ -4708,7 +4708,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 			})),
 			filter(MISC, {
-				i(11020, bubbleDownSelf({ timeline = { REMOVED_4_0_3 } }, {	-- Evergreen Pouch
+				i(11020, {	-- Evergreen Pouch
+					timeline = { REMOVED_4_0_3 },
 					cost = {
 						{ "i", 11018, 2 },	-- Un'Goro Soil
 						{ "i", 11022, 1 },	-- Packet of Tharlendris Seeds
@@ -4718,7 +4719,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 							i(11040),	-- Morrowgrain
 						}),
 					},
-				})),
+				}),
 			}),
 			-- #if AFTER MOP
 			n(COMMON_VENDOR_ITEMS, {

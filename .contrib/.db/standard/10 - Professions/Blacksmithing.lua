@@ -1051,14 +1051,14 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 			}),
 		}),
 		n(TREASURES, {
-			o(411179,	-- Amirdrassil Defender's Shield
-			bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+			o(411179, {	-- Amirdrassil Defender's Shield
 				coord = { 49.8, 63.0, EMERALD_DREAM },
 				questID = 78417,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210464),	-- Amirdrassil Defender's Shield
 				},
-			})),
+			}),
 			o(376657, {	-- Ancient Monument
 				description = "Kill NPCs and loot the sword. If you receive no loot, check your mail!",
 				crs = { 188648 },	-- Enchanted Bulwark
@@ -1075,14 +1075,14 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 					i(201004),	-- Ancient Spear Shards
 				},
 			}),
-			o(402632,	-- Brimstone Rescue Ring
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			o(402632, {	-- Brimstone Rescue Ring
 				coord = { 48.3, 22.0, ZARALEK_CAVERN },
 				questID = 76079,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(205987),	-- Brimstone Rescue Ring
 				},
-			})),
+			}),
 			o(380619, {	-- Curious Ingots
 				coord = { 65.6, 25.7, THE_WAKING_SHORES },
 				questID = 70312,
@@ -1097,14 +1097,14 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 					i(201006),	-- Draconic Flux
 				},
 			}),
-			o(411180,	-- Deathstalker Chassis
-			bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+			o(411180, {	-- Deathstalker Chassis
 				coord = { 36.34, 46.79, EMERALD_DREAM },
 				questID = 78418,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210465),	-- Deathstalker Chassis
 				},
-			})),
+			}),
 			o(380709, {	-- Falconer Gauntlet Drawings
 				coord = { 50.9, 66.5, OHNAHRAN_PLAINS },
 				questID = 70353,
@@ -1112,14 +1112,14 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 					i(201009),	-- Falconer Gauntlet Drawings
 				},
 			}),
-			o(411181,	-- Flamesworn Render
-			bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+			o(411181, {	-- Flamesworn Render
 				coord = { 37.27, 22.94, EMERALD_DREAM },
 				questID = 78419,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210466),	-- Flamesworn Render
 				},
-			})),
+			}),
 			o(380516, {	-- Glimmer of Wisdom
 				description = "Craft a Primal Molten Alloy or a Frostfire Alloy next to the Dim Forge. A sparkle will appear in the deposit box, which you can click to grab the treasure.",
 				sourceQuests = { 70232 },	-- This triggers when crafting the Alloy, which makes the treasure appear.
@@ -1151,22 +1151,22 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 					i(201011),	-- Spelltouched Tongs
 				},
 			}),
-			o(402627,	-- Well-Worn Kiln
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			o(402627, {	-- Well-Worn Kiln
 				coord = { 57.2, 54.6, ZARALEK_CAVERN },
 				questID = 76078,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(205986),	-- Well-Worn Kiln
 				},
-			})),
-			o(402634,	-- Zaqali Elder Spear
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			}),
+			o(402634, {	-- Zaqali Elder Spear
 				coord = { 27.5, 42.9, ZARALEK_CAVERN },
 				questID = 76080,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(205988),	-- Zaqali Elder Spear
 				},
-			})),
+			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			isWeekly = true,

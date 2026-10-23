@@ -2668,14 +2668,15 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(TREASURES, {
-				o(240622, bubbleDownSelf({ timeline = { ADDED_6_1_0 } }, {	-- Warden's Scroll Case
+				o(240622, {	-- Warden's Scroll Case
 					description = "Loot the Warden's Scroll Case inside the Warden's Cage (underground).",
 					coord = { 57.3, 47.1, SHADOWMOON_VALLEY },
 					modelScale = .5,
+					timeline = { ADDED_6_1_0 },
 					groups = {
 						i(122228),	-- Music Roll: The Black Temple
 					},
-				})),
+				}),
 			}),
 		},
 	}),

@@ -441,22 +441,27 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						title(404),	-- the Eternal
 					}),
 					ach(13740),	-- Mythic: Queen Azshara Guild Run
-					ach(13787, bubbleDownSelf({timeline = { ADDED_8_2_0, REMOVED_8_3_0 } }, {	-- Hall of Fame: Queen Azshara (A)
+					ach(13787, {	-- Hall of Fame: Queen Azshara (A)
+						timeline = { ADDED_8_2_0, REMOVED_8_3_0 },
 						races = ALLIANCE_ONLY,
 						groups = { title(409) },	-- <Name>, Famed Slayer of Azshara
-					})),
-					ach(13788, bubbleDownSelf({timeline = { ADDED_8_2_0, REMOVED_8_3_0 } }, {	-- Hall of Fame: Queen Azshara (H)
+					}),
+					ach(13788, {	-- Hall of Fame: Queen Azshara (H)
+						timeline = { ADDED_8_2_0, REMOVED_8_3_0 },
 						races = HORDE_ONLY,
 						groups = { title(409) },	-- <Name>, Famed Slayer of Azshara
-					})),
-					i(168538, bubbleDownSelf({timeline = { ADDED_8_2_0, REMOVED_9_0_1 } }, {	-- Dazzling Azerite Formation (Rank 4)
+					}),
+					i(168538, {	-- Dazzling Azerite Formation (Rank 4)
+						timeline = { ADDED_8_2_0, REMOVED_9_0_1 },
 						classes = TANKS,
-					})),
-					i(168857, bubbleDownSelf({timeline = { ADDED_8_2_0, REMOVED_9_0_1 } }, {	-- Sparkling Elemental Heart (Rank 4)
-					})),
-					i(168944, bubbleDownSelf({timeline = { ADDED_8_2_0, REMOVED_9_0_1 } }, {	-- Web of Unbridled Vitality (Rank 4)
+					}),
+					i(168857, {	-- Sparkling Elemental Heart (Rank 4)
+					timeline = { ADDED_8_2_0, REMOVED_9_0_1 },
+					}),
+					i(168944, {	-- Web of Unbridled Vitality (Rank 4)
+						timeline = { ADDED_8_2_0, REMOVED_9_0_1 },
 						classes = HEALERS,
-					})),
+					}),
 				}),
 			}),
 		},

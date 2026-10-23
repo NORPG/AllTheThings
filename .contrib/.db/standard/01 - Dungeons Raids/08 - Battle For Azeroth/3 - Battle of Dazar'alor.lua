@@ -1142,18 +1142,20 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						ach(13323, {	-- Cutting Edge: Lady Jaina Proudmoore
 							timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
 						}),
-						ach(13326, bubbleDownSelf({timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Alliance)
+						ach(13326, {	-- Hall of Fame: Lady Jaina Proudmoore (Alliance)
+							timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
 							races = ALLIANCE_ONLY,
 							groups = {
 								title(384),	-- <Name>, Famed Conqueror of Dazar'alor
 							},
-						})),
-						ach(13327, bubbleDownSelf({timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Horde)
+						}),
+						ach(13327, {	-- Hall of Fame: Lady Jaina Proudmoore (Horde)
+							timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
 							races = HORDE_ONLY,
 							groups = {
 								title(385),	-- <Name>, Famed Defender of Dazar'alor
 							},
-						})),
+						}),
 						i(166705),	-- Glacial Tidestorm (MOUNT!)
 						i(165604),	-- Daelin Proudmoore's Saber
 						i(165583),	-- Fogbreaker, Light of the Sea

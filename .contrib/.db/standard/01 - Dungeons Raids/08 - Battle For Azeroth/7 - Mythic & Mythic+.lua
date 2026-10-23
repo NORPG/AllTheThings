@@ -79,20 +79,21 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 			}),
 		})),
 		n(ACHIEVEMENTS, {
-			ach(13075, bubbleDownSelf({		-- Battle for Azeroth Keymaster
+			ach(13075, {
 				timeline = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_1 },
-			}, {
-				crit(41513),	-- Freehold
-				crit(41508),	-- Waycrest Manor
-				crit(41507),	-- Shrine of the Storm
-				crit(41511),	-- Atal'Dazar
-				crit(41509),	-- The Underrot
-				crit(41506),	-- Temple of Sethraliss
-				crit(41514),	-- Tol Dagor
-				crit(41515),	-- The MOTHERLODE!!
-				crit(41510),	-- Siege of Boralus
-				crit(41512),	-- Kings' Rest
-			})),
+				groups = {
+					crit(41513),	-- Freehold
+					crit(41508),	-- Waycrest Manor
+					crit(41507),	-- Shrine of the Storm
+					crit(41511),	-- Atal'Dazar
+					crit(41509),	-- The Underrot
+					crit(41506),	-- Temple of Sethraliss
+					crit(41514),	-- Tol Dagor
+					crit(41515),	-- The MOTHERLODE!!
+					crit(41510),	-- Siege of Boralus
+					crit(41512),	-- Kings' Rest
+				},
+			}),
 			header(HEADERS.Achievement, SEASON_INFESTED, bubbleDownSelf({
 				timeline = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 },
 			},{

@@ -696,22 +696,22 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 					i(198694),	-- Enriched Earthen Shard
 				},
 			}),
-			o(410582,	-- Essence of Dreams
-			bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+			o(410582, {	-- Essence of Dreams
 				coord = { 66.3, 74.2, EMERALD_DREAM },
 				questID = 78310,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210234),	-- Essence of Dreams
 				},
-			})),
-			o(410575,	-- Everburning Core
-			bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+			}),
+			o(410575, {	-- Everburning Core
 				coord = { 46.1, 20.5, EMERALD_DREAM },
 				questID = 78309,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210231),	-- Everburning Core
 				},
-			})),
+			}),
 			o(380589, {	-- Faintly Enchanted Remains
 				questID = 70290,
 				coord = { 45.1, 61.2, THE_AZURE_SPAN },
@@ -741,14 +741,14 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 					i(198800),	-- Fractured Titanic Sphere
 				},
 			}),
-			o(398793,	-- Lava-Drenched Shadow Crystal
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			o(398793, {	-- Lava-Drenched Shadow Crystal
 				coord = { 48.0, 17.0, ZARALEK_CAVERN },
 				questID = 75508,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(204990),	-- Lava-Drenched Shadow Crystal
 				},
-			})),
+			}),
 			o(380580, {	-- Lava-Infused Seed
 				questID = 70283,
 				coord = { 68.0, 26.8, THE_WAKING_SHORES },
@@ -756,30 +756,30 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 					i(198675),	-- Lava-Infused Seed
 				},
 			}),
-			o(410574,	-- Pure Dream Water
-			bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+			o(410574, {	-- Pure Dream Water
 				coord = { 38.3, 30.1, EMERALD_DREAM },
 				questID = 78308,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210228),	-- Pure Dream Water
 				},
-			})),
-			o(398796,	-- Resonating Arcane Crystal
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			}),
+			o(398796, {	-- Resonating Arcane Crystal
 				coord = { 36.7, 69.3, ZARALEK_CAVERN },
 				questID = 75510,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(205001),	-- Resonating Arcane Crystal
 				},
-			})),
-			o(398794,	-- Shimmering Aqueous Orb
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			}),
+			o(398794, {	-- Shimmering Aqueous Orb
 				coord = { 62.4, 53.8, ZARALEK_CAVERN },
 				questID = 75509,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(204999),	-- Shimmering Aqueous Orb
 				},
-			})),
+			}),
 			o(380592, {	-- Stormbound Horn
 				questID = 70291,
 				coord = { 61.4, 67.6, OHNAHRAN_PLAINS },

@@ -5493,13 +5493,14 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 				}),
 			}),
 			n(TREASURES, {
-				o(402892, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Ancient Research
+				o(402892, {	-- Ancient Research
 					coord = { 54.6, 20.2, ZARALEK_CAVERN },
 					questID = 76121,
+					timeline = { ADDED_10_1_0 },
 					groups = {
 						i(206035),	-- Ancient Research
 					},
-				})),
+				}),
 				o(380570, {	-- Curious Glyph
 					description = "Interact with the glyph, cross the bridge and kill the neutral NPC at the end, then return to collect the treasure.",
 					questID = 70248,
@@ -5539,20 +5540,22 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 						i(198686),	-- Frosted Parchment
 					},
 				}),
-				o(411169, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Grove Keeper's Pillar
+				o(411169, {	-- Grove Keeper's Pillar
 					coord = { 63.4, 71.5, EMERALD_DREAM },
 					questID = 78412,
+					timeline = { ADDED_10_2_0 },
 					groups = {
 						i(210459),	-- Grove Keeper's Pillar
 					},
-				})),
-				o(402890, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Hissing Rune Draft
+				}),
+				o(402890, {	-- Hissing Rune Draft
 					coord = { 53.0, 74.3, ZARALEK_CAVERN },
 					questID = 76120,
+					timeline = { ADDED_10_1_0 },
 					groups = {
 						i(206034),	-- Hissing Rune Draft
 					},
-				})),
+				}),
 				o(380578, {	-- How to Train Your Whelpling
 					description = "Collect the Pulsing Earth Rune first! Otherwise this treasure might erroneously contain the rune, and you will not be able to collect the proper treasure.",
 					questID = 70281,
@@ -5561,20 +5564,22 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 						i(198669),	-- How to Train Your Whelpling
 					},
 				}),
-				o(402888, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Intricate Zaqali Runes
+				o(402888, {	-- Intricate Zaqali Runes
 					coord = { 36.7, 46.3, ZARALEK_CAVERN },
 					questID = 76117,
+					timeline = { ADDED_10_1_0 },
 					groups = {
 						i(206031),	-- Intricate Zaqali Runes
 					},
-				})),
-				o(411170, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Primalist Shadowbinding Rune
+				}),
+				o(411170, {	-- Primalist Shadowbinding Rune
 					coord = { 36.0, 46.6, EMERALD_DREAM },
 					questID = 78413,
+					timeline = { ADDED_10_2_0 },
 					groups = {
 						i(210460),	-- Primalist Shadowbinding Rune
 					},
-				})),
+				}),
 				o(380610, {	-- Pulsing Earth Rune
 					questID = 70306,
 					coord = { 67.9, 58.0, THE_WAKING_SHORES },
@@ -5589,13 +5594,14 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 						i(198703),	-- Sign Language Reference Sheet
 					},
 				}),
-				o(411168, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Winnie's Notes on Flora and Fauna
+				o(411168, {	-- Winnie's Notes on Flora and Fauna
 					coord = { 55.6, 27.5, EMERALD_DREAM },
 					questID = 78411,
+					timeline = { ADDED_10_2_0 },
 					groups = {
 						i(210458),	-- Winnie's Notes on Flora and Fauna
 					},
-				})),
+				}),
 			}),
 			n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 				isWeekly = true,

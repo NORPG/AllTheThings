@@ -306,535 +306,539 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, {
 				}),
 			}),
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART, ADDED_12_0_1_LAUNCH } }, {
-			n(219222, {	-- Lalandi <Conquest Quartermaster>
-				coord = { 55.1, 76.2, DORNOGAL },
-				ItemAppearanceModifierID = 159,
-				groups = sharedData({
-					cost = { { "i", MOH, 12 } },
-					timeline = { ADDED_12_0_1_LAUNCH },
-				}, {
-					iensemble(232865, {	-- Arsenal: Forged Gladiator's Weapons
-						cost = { { "i", MOH, 80 } },
-					}),
-					iensemble(232668, {	-- Ensemble: Forged Gladiator's Death Knight Armor
-						classes = { DEATHKNIGHT },
-					}),
-					iensemble(232669, {	-- Ensemble: Forged Gladiator's Demon Hunter Armor
-						classes = { DEMONHUNTER },
-					}),
-					iensemble(232670, {	-- Ensemble: Forged Gladiator's Druid Armor
-						classes = { DRUID },
-					}),
-					iensemble(232671, {	-- Ensemble: Forged Gladiator's Evoker Armor
-						classes = { EVOKER },
-					}),
-					iensemble(232672, {	-- Ensemble: Forged Gladiator's Hunter Armor
-						classes = { HUNTER },
-					}),
-					iensemble(232673, {	-- Ensemble: Forged Gladiator's Mage Armor
-						classes = { MAGE },
-					}),
-					iensemble(232674, {	-- Ensemble: Forged Gladiator's Monk Armor
-						classes = { MONK },
-					}),
-					iensemble(232675, {	-- Ensemble: Forged Gladiator's Paladin Armor
-						classes = { PALADIN },
-					}),
-					iensemble(232676, {	-- Ensemble: Forged Gladiator's Priest Armor
-						classes = { PRIEST },
-					}),
-					iensemble(232677, {	-- Ensemble: Forged Gladiator's Rogue Armor
-						classes = { ROGUE },
-					}),
-					iensemble(232678, {	-- Ensemble: Forged Gladiator's Shaman Armor
-						classes = { SHAMAN },
-					}),
-					iensemble(232679, {	-- Ensemble: Forged Gladiator's Warlock Armor
-						classes = { WARLOCK },
-					}),
-					iensemble(232680, {	-- Ensemble: Forged Gladiator's Warrior Armor
-						classes = { WARRIOR },
+		n(PVP_GLADIATOR, {
+			timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART, ADDED_12_0_1_LAUNCH },
+			groups = {
+				n(219222, {	-- Lalandi <Conquest Quartermaster>
+					coord = { 55.1, 76.2, DORNOGAL },
+					ItemAppearanceModifierID = 159,
+					groups = sharedData({
+						cost = { { "i", MOH, 12 } },
+						timeline = { ADDED_12_0_1_LAUNCH },
+					}, {
+						iensemble(232865, {	-- Arsenal: Forged Gladiator's Weapons
+							cost = { { "i", MOH, 80 } },
+						}),
+						iensemble(232668, {	-- Ensemble: Forged Gladiator's Death Knight Armor
+							classes = { DEATHKNIGHT },
+						}),
+						iensemble(232669, {	-- Ensemble: Forged Gladiator's Demon Hunter Armor
+							classes = { DEMONHUNTER },
+						}),
+						iensemble(232670, {	-- Ensemble: Forged Gladiator's Druid Armor
+							classes = { DRUID },
+						}),
+						iensemble(232671, {	-- Ensemble: Forged Gladiator's Evoker Armor
+							classes = { EVOKER },
+						}),
+						iensemble(232672, {	-- Ensemble: Forged Gladiator's Hunter Armor
+							classes = { HUNTER },
+						}),
+						iensemble(232673, {	-- Ensemble: Forged Gladiator's Mage Armor
+							classes = { MAGE },
+						}),
+						iensemble(232674, {	-- Ensemble: Forged Gladiator's Monk Armor
+							classes = { MONK },
+						}),
+						iensemble(232675, {	-- Ensemble: Forged Gladiator's Paladin Armor
+							classes = { PALADIN },
+						}),
+						iensemble(232676, {	-- Ensemble: Forged Gladiator's Priest Armor
+							classes = { PRIEST },
+						}),
+						iensemble(232677, {	-- Ensemble: Forged Gladiator's Rogue Armor
+							classes = { ROGUE },
+						}),
+						iensemble(232678, {	-- Ensemble: Forged Gladiator's Shaman Armor
+							classes = { SHAMAN },
+						}),
+						iensemble(232679, {	-- Ensemble: Forged Gladiator's Warlock Armor
+							classes = { WARLOCK },
+						}),
+						iensemble(232680, {	-- Ensemble: Forged Gladiator's Warrior Armor
+							classes = { WARRIOR },
+						}),
 					}),
 				}),
-			}),
-			n(219222, {	-- Lalandi <Conquest Quartermaster>
-				coord = { 55.1, 76.2, DORNOGAL },
-				ItemAppearanceModifierID = 159,
-				groups = bubbleDownFiltered({
+				n(219222, {	-- Lalandi <Conquest Quartermaster>
+					coord = { 55.1, 76.2, DORNOGAL },
+					ItemAppearanceModifierID = 159,
+					groups = bubbleDownFiltered({
+						timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+					},FILTERFUNC_itemID,{
+						n(CLASSES, {
+							cl(DEATHKNIGHT, {
+								conquest(1, i(218650)),	-- Forged Gladiator's Chestguard
+								conquest(1, i(218651)),	-- Forged Gladiator's Chestplate
+								conquest(1, i(218666)),	-- Forged Gladiator's Cloak
+								conquest(1, i(218667)),	-- Forged Gladiator's Drape
+								conquest(1, i(218654)),	-- Forged Gladiator's Plate Gauntlets
+								conquest(1, i(218662)),	-- Forged Gladiator's Plate Girdle
+								conquest(1, i(218663)),	-- Forged Gladiator's Plate Greatbelt
+								conquest(1, i(218655)),	-- Forged Gladiator's Plate Handguards
+								conquest(1, i(218656)),	-- Forged Gladiator's Plate Helm
+								conquest(1, i(218657)),	-- Forged Gladiator's Plate Helmet
+								conquest(1, i(218658)),	-- Forged Gladiator's Plate Legguards
+								conquest(1, i(218661)),	-- Forged Gladiator's Plate Pauldrons
+								conquest(1, i(218660)),	-- Forged Gladiator's Plate Shoulders
+								conquest(1, i(218653)),	-- Forged Gladiator's Plate Stompers
+								conquest(1, i(218665)),	-- Forged Gladiator's Plate Vambraces
+								conquest(1, i(218652)),	-- Forged Gladiator's Plate Warboots
+								conquest(1, i(218659)),	-- Forged Gladiator's Plate Wargreaves
+								conquest(1, i(218664)),	-- Forged Gladiator's Plate Wristguards
+								conquest(1, i(218668)),	-- Forged Gladiator's Shawl
+							}),
+							cl(DEMONHUNTER, {
+								conquest(1, i(218552)),	-- Forged Gladiator's Cloak
+								conquest(1, i(218553)),	-- Forged Gladiator's Drape
+								conquest(1, i(218548)),	-- Forged Gladiator's Leather Belt
+								conquest(1, i(218538)),	-- Forged Gladiator's Leather Boots
+								conquest(1, i(218544)),	-- Forged Gladiator's Leather Breeches
+								conquest(1, i(218540)),	-- Forged Gladiator's Leather Gloves
+								conquest(1, i(218541)),	-- Forged Gladiator's Leather Grips
+								conquest(1, i(218542)),	-- Forged Gladiator's Leather Helm
+								conquest(1, i(218537)),	-- Forged Gladiator's Leather Jerkin
+								conquest(1, i(218545)),	-- Forged Gladiator's Leather Legwraps
+								conquest(1, i(218543)),	-- Forged Gladiator's Leather Mask
+								conquest(1, i(218547)),	-- Forged Gladiator's Leather Shoulderpads
+								conquest(1, i(218546)),	-- Forged Gladiator's Leather Spaulders
+								conquest(1, i(218549)),	-- Forged Gladiator's Leather Strap
+								conquest(1, i(218539)),	-- Forged Gladiator's Leather Treads
+								conquest(1, i(218536)),	-- Forged Gladiator's Leather Vest
+								conquest(1, i(218551)),	-- Forged Gladiator's Leather Wristguards
+								conquest(1, i(218550)),	-- Forged Gladiator's Leather Wristwraps
+								conquest(1, i(218554)),	-- Forged Gladiator's Shawl
+							}),
+							cl(DRUID, {
+								conquest(525, i(218533)),	-- Forged Gladiator's Cloak
+								conquest(525, i(218534)),	-- Forged Gladiator's Drape
+								conquest(700, i(218529)),	-- Forged Gladiator's Leather Belt
+								conquest(700, i(218519)),	-- Forged Gladiator's Leather Boots
+								conquest(875, i(218525)),	-- Forged Gladiator's Leather Breeches
+								conquest(700, i(218521)),	-- Forged Gladiator's Leather Gloves
+								conquest(700, i(218522)),	-- Forged Gladiator's Leather Grips
+								conquest(875, i(218523)),	-- Forged Gladiator's Leather Helm
+								conquest(875, i(218526)),	-- Forged Gladiator's Leather Legwraps
+								conquest(875, i(218524)),	-- Forged Gladiator's Leather Mask
+								conquest(700, i(218528)),	-- Forged Gladiator's Leather Shoulderpads
+								conquest(700, i(218527)),	-- Forged Gladiator's Leather Spaulders
+								conquest(700, i(218530)),	-- Forged Gladiator's Leather Strap
+								conquest(700, i(218520)),	-- Forged Gladiator's Leather Treads
+								conquest(875, i(218517)),	-- Forged Gladiator's Leather Vest
+								conquest(875, i(218518)),	-- Forged Gladiator's Leather Vestments
+								conquest(525, i(218532)),	-- Forged Gladiator's Leather Wristguards
+								conquest(525, i(218531)),	-- Forged Gladiator's Leather Wristwraps
+								conquest(525, i(218535)),	-- Forged Gladiator's Shawl
+							}),
+							cl(EVOKER, {
+								conquest(875, i(218593)),	-- Forged Gladiator's Armored Scales
+								conquest(700, i(218605)),	-- Forged Gladiator's Chain Belt
+								conquest(700, i(218596)),	-- Forged Gladiator's Chain Boots
+								conquest(525, i(218608)),	-- Forged Gladiator's Chain Bracers
+								conquest(875, i(218602)),	-- Forged Gladiator's Chain Breeches
+								conquest(875, i(218600)),	-- Forged Gladiator's Chain Faceguard
+								conquest(700, i(218597)),	-- Forged Gladiator's Chain Gauntlets
+								conquest(700, i(218606)),	-- Forged Gladiator's Chain Girdle
+								conquest(700, i(218598)),	-- Forged Gladiator's Chain Handguards
+								conquest(875, i(218599)),	-- Forged Gladiator's Chain Helm
+								conquest(875, i(218601)),	-- Forged Gladiator's Chain Leggings
+								conquest(700, i(218603)),	-- Forged Gladiator's Chain Monnion
+								conquest(700, i(218595)),	-- Forged Gladiator's Chain Sabatons
+								conquest(700, i(218604)),	-- Forged Gladiator's Chain Shoulderguard
+								conquest(525, i(218607)),	-- Forged Gladiator's Chain Wristguards
+								conquest(525, i(218609)),	-- Forged Gladiator's Cloak
+								conquest(525, i(218610)),	-- Forged Gladiator's Drape
+								conquest(875, i(218594)),	-- Forged Gladiator's Scaleguard
+								conquest(525, i(218611)),	-- Forged Gladiator's Shawl
+							}),
+							cl(HUNTER, {
+								conquest(700, i(218624)),	-- Forged Gladiator's Chain Belt
+								conquest(700, i(218615)),	-- Forged Gladiator's Chain Boots
+								conquest(525, i(218627)),	-- Forged Gladiator's Chain Bracers
+								conquest(875, i(218621)),	-- Forged Gladiator's Chain Breeches
+								conquest(875, i(218619)),	-- Forged Gladiator's Chain Faceguard
+								conquest(700, i(218616)),	-- Forged Gladiator's Chain Gauntlets
+								conquest(700, i(218625)),	-- Forged Gladiator's Chain Girdle
+								conquest(700, i(218617)),	-- Forged Gladiator's Chain Handguards
+								conquest(875, i(218618)),	-- Forged Gladiator's Chain Helm
+								conquest(875, i(218620)),	-- Forged Gladiator's Chain Leggings
+								conquest(700, i(218622)),	-- Forged Gladiator's Chain Monnion
+								conquest(700, i(218614)),	-- Forged Gladiator's Chain Sabatons
+								conquest(700, i(218623)),	-- Forged Gladiator's Chain Shoulderguard
+								conquest(875, i(218613)),	-- Forged Gladiator's Chain Tunic
+								conquest(875, i(218612)),	-- Forged Gladiator's Chain Vest
+								conquest(525, i(218626)),	-- Forged Gladiator's Chain Wristguards
+								conquest(525, i(218628)),	-- Forged Gladiator's Cloak
+								conquest(525, i(218629)),	-- Forged Gladiator's Drape
+								conquest(525, i(218630)),	-- Forged Gladiator's Shawl
+							}),
+							cl(MAGE, {
+								conquest(1, i(218476)),	-- Forged Gladiator's Cloak
+								conquest(1, i(218477)),	-- Forged Gladiator's Drape
+								conquest(1, i(218478)),	-- Forged Gladiator's Shawl
+								conquest(1, i(218471)),	-- Forged Gladiator's Silk Amice
+								conquest(1, i(218475)),	-- Forged Gladiator's Silk Armbands
+								conquest(1, i(218473)),	-- Forged Gladiator's Silk Belt
+								conquest(1, i(218461)),	-- Forged Gladiator's Silk Blouse
+								conquest(1, i(218467)),	-- Forged Gladiator's Silk Cap
+								conquest(1, i(218472)),	-- Forged Gladiator's Silk Cord
+								conquest(1, i(218464)),	-- Forged Gladiator's Silk Gloves
+								conquest(1, i(218465)),	-- Forged Gladiator's Silk Handwraps
+								conquest(1, i(218466)),	-- Forged Gladiator's Silk Hat
+								conquest(1, i(218468)),	-- Forged Gladiator's Silk Leggings
+								conquest(1, i(218470)),	-- Forged Gladiator's Silk Mantle
+								conquest(1, i(218462)),	-- Forged Gladiator's Silk Slippers
+								conquest(1, i(218463)),	-- Forged Gladiator's Silk Treads
+								conquest(1, i(218469)),	-- Forged Gladiator's Silk Trousers
+								conquest(1, i(218460)),	-- Forged Gladiator's Silk Tunic
+								conquest(1, i(218474)),	-- Forged Gladiator's Silk Wristwraps
+							}),
+							cl(MONK, {
+								conquest(1, i(218571)),	-- Forged Gladiator's Cloak
+								conquest(1, i(218572)),	-- Forged Gladiator's Drape
+								conquest(1, i(218567)),	-- Forged Gladiator's Leather Belt
+								conquest(1, i(218557)),	-- Forged Gladiator's Leather Boots
+								conquest(1, i(218563)),	-- Forged Gladiator's Leather Breeches
+								conquest(1, i(218559)),	-- Forged Gladiator's Leather Gloves
+								conquest(1, i(218560)),	-- Forged Gladiator's Leather Grips
+								conquest(1, i(218561)),	-- Forged Gladiator's Leather Helm
+								conquest(1, i(218556)),	-- Forged Gladiator's Leather Jerkin
+								conquest(1, i(218564)),	-- Forged Gladiator's Leather Legwraps
+								conquest(1, i(218562)),	-- Forged Gladiator's Leather Mask
+								conquest(1, i(218566)),	-- Forged Gladiator's Leather Shoulderpads
+								conquest(1, i(218565)),	-- Forged Gladiator's Leather Spaulders
+								conquest(1, i(218568)),	-- Forged Gladiator's Leather Strap
+								conquest(1, i(218558)),	-- Forged Gladiator's Leather Treads
+								conquest(1, i(218555)),	-- Forged Gladiator's Leather Vest
+								conquest(1, i(218570)),	-- Forged Gladiator's Leather Wristguards
+								conquest(1, i(218569)),	-- Forged Gladiator's Leather Wristwraps
+								conquest(1, i(218573)),	-- Forged Gladiator's Leather Shawl
+							}),
+							cl(PALADIN, {
+								conquest(875, i(218669)),	-- Forged Gladiator's Chestguard
+								conquest(875, i(218670)),	-- Forged Gladiator's Chestplate
+								conquest(525, i(218685)),	-- Forged Gladiator's Cloak
+								conquest(525, i(218686)),	-- Forged Gladiator's Drape
+								conquest(700, i(218673)),	-- Forged Gladiator's Plate Gauntlets
+								conquest(700, i(218681)),	-- Forged Gladiator's Plate Girdle
+								conquest(700, i(218682)),	-- Forged Gladiator's Plate Greatbelt
+								conquest(700, i(218674)),	-- Forged Gladiator's Plate Handguards
+								conquest(875, i(218675)),	-- Forged Gladiator's Plate Helm
+								conquest(875, i(218676)),	-- Forged Gladiator's Plate Helmet
+								conquest(875, i(218677)),	-- Forged Gladiator's Plate Legguards
+								conquest(700, i(218680)),	-- Forged Gladiator's Plate Pauldrons
+								conquest(700, i(218679)),	-- Forged Gladiator's Plate Shoulders
+								conquest(700, i(218672)),	-- Forged Gladiator's Plate Stompers
+								conquest(875, i(218678)),	-- Forged Gladiator's Plate Tasses
+								conquest(525, i(218684)),	-- Forged Gladiator's Plate Vambraces
+								conquest(700, i(218671)),	-- Forged Gladiator's Plate Warboots
+								conquest(525, i(218683)),	-- Forged Gladiator's Plate Wristguards
+								conquest(525, i(218687)),	-- Forged Gladiator's Shawl
+							}),
+							cl(PRIEST, {
+								conquest(1, i(218495)),	-- Forged Gladiator's Cloak
+								conquest(1, i(218496)),	-- Forged Gladiator's Drape
+								conquest(1, i(218497)),	-- Forged Gladiator's Shawl
+								conquest(1, i(218490)),	-- Forged Gladiator's Silk Amice
+								conquest(1, i(218494)),	-- Forged Gladiator's Silk Armbands
+								conquest(1, i(218492)),	-- Forged Gladiator's Silk Belt
+								conquest(1, i(218491)),	-- Forged Gladiator's Silk Cord
+								conquest(1, i(218483)),	-- Forged Gladiator's Silk Gloves
+								conquest(1, i(218486)),	-- Forged Gladiator's Silk Guise
+								conquest(1, i(218484)),	-- Forged Gladiator's Silk Handwraps
+								conquest(1, i(218485)),	-- Forged Gladiator's Silk Hood
+								conquest(1, i(218487)),	-- Forged Gladiator's Silk Leggings
+								conquest(1, i(218489)),	-- Forged Gladiator's Silk Mantle
+								conquest(1, i(218479)),	-- Forged Gladiator's Silk Robes
+								conquest(1, i(218481)),	-- Forged Gladiator's Silk Slippers
+								conquest(1, i(218482)),	-- Forged Gladiator's Silk Treads
+								conquest(1, i(218488)),	-- Forged Gladiator's Silk Trousers
+								conquest(1, i(218480)),	-- Forged Gladiator's Silk Vestments
+								conquest(1, i(218493)),	-- Forged Gladiator's Silk Wristwraps
+							}),
+							cl(ROGUE, {
+								conquest(1, i(218590)),	-- Forged Gladiator's Cloak
+								conquest(1, i(218591)),	-- Forged Gladiator's Drape
+								conquest(1, i(218586)),	-- Forged Gladiator's Leather Belt
+								conquest(1, i(218576)),	-- Forged Gladiator's Leather Boots
+								conquest(1, i(218582)),	-- Forged Gladiator's Leather Breeches
+								conquest(1, i(218578)),	-- Forged Gladiator's Leather Gloves
+								conquest(1, i(218579)),	-- Forged Gladiator's Leather Grips
+								conquest(1, i(218580)),	-- Forged Gladiator's Leather Helm
+								conquest(1, i(218575)),	-- Forged Gladiator's Leather Jerkin
+								conquest(1, i(218583)),	-- Forged Gladiator's Leather Legwraps
+								conquest(1, i(218581)),	-- Forged Gladiator's Leather Mask
+								conquest(1, i(218585)),	-- Forged Gladiator's Leather Shoulderpads
+								conquest(1, i(218584)),	-- Forged Gladiator's Leather Spaulders
+								conquest(1, i(218587)),	-- Forged Gladiator's Leather Strap
+								conquest(1, i(218577)),	-- Forged Gladiator's Leather Treads
+								conquest(1, i(218574)),	-- Forged Gladiator's Leather Vest
+								conquest(1, i(218589)),	-- Forged Gladiator's Leather Wristguards
+								conquest(1, i(218588)),	-- Forged Gladiator's Leather Wristwraps
+								conquest(1, i(218592)),	-- Forged Gladiator's Shawl
+							}),
+							cl(SHAMAN, {
+								conquest(1, i(218643)),	-- Forged Gladiator's Chain Belt
+								conquest(1, i(218634)),	-- Forged Gladiator's Chain Boots
+								conquest(1, i(218646)),	-- Forged Gladiator's Chain Bracers
+								conquest(1, i(218640)),	-- Forged Gladiator's Chain Breeches
+								conquest(1, i(218638)),	-- Forged Gladiator's Chain Faceguard
+								conquest(1, i(218635)),	-- Forged Gladiator's Chain Gauntlets
+								conquest(1, i(218644)),	-- Forged Gladiator's Chain Girdle
+								conquest(1, i(218636)),	-- Forged Gladiator's Chain Handguards
+								conquest(1, i(218637)),	-- Forged Gladiator's Chain Helm
+								conquest(1, i(218639)),	-- Forged Gladiator's Chain Leggings
+								conquest(1, i(218641)),	-- Forged Gladiator's Chain Monnion
+								conquest(1, i(218633)),	-- Forged Gladiator's Chain Sabatons
+								conquest(1, i(218642)),	-- Forged Gladiator's Chain Shoulderguard
+								conquest(1, i(218632)),	-- Forged Gladiator's Chain Tunic
+								conquest(1, i(218631)),	-- Forged Gladiator's Chain Vest
+								conquest(1, i(218645)),	-- Forged Gladiator's Chain Wristguards
+								conquest(1, i(218647)),	-- Forged Gladiator's Cloak
+								conquest(1, i(218648)),	-- Forged Gladiator's Drape
+								conquest(1, i(218649)),	-- Forged Gladiator's Shawl
+							}),
+							cl(WARLOCK, {
+								conquest(1, i(218514)),	-- Forged Gladiator's Cloak
+								conquest(1, i(218515)),	-- Forged Gladiator's Drape
+								conquest(1, i(218516)),	-- Forged Gladiator's Shawl
+								conquest(1, i(218509)),	-- Forged Gladiator's Silk Amice
+								conquest(1, i(218513)),	-- Forged Gladiator's Silk Armbands
+								conquest(1, i(218511)),	-- Forged Gladiator's Silk Belt
+								conquest(1, i(218510)),	-- Forged Gladiator's Silk Cord
+								conquest(1, i(218502)),	-- Forged Gladiator's Silk Gloves
+								conquest(1, i(218505)),	-- Forged Gladiator's Silk Guise
+								conquest(1, i(218503)),	-- Forged Gladiator's Silk Handwraps
+								conquest(1, i(218504)),	-- Forged Gladiator's Silk Hood
+								conquest(1, i(218506)),	-- Forged Gladiator's Silk Leggings
+								conquest(1, i(218508)),	-- Forged Gladiator's Silk Mantle
+								conquest(1, i(218498)),	-- Forged Gladiator's Silk Raiment
+								conquest(1, i(218500)),	-- Forged Gladiator's Silk Slippers
+								conquest(1, i(218501)),	-- Forged Gladiator's Silk Treads
+								conquest(1, i(218507)),	-- Forged Gladiator's Silk Trousers
+								conquest(1, i(218499)),	-- Forged Gladiator's Silk Vestments
+								conquest(1, i(218512)),	-- Forged Gladiator's Silk Wristwraps
+							}),
+							cl(WARRIOR, {
+								conquest(1, i(218688)),	-- Forged Gladiator's Chestguard
+								conquest(1, i(218689)),	-- Forged Gladiator's Chestplate
+								conquest(1, i(218704)),	-- Forged Gladiator's Cloak
+								conquest(1, i(218705)),	-- Forged Gladiator's Drape
+								conquest(1, i(218692)),	-- Forged Gladiator's Plate Gauntlets
+								conquest(1, i(218700)),	-- Forged Gladiator's Plate Girdle
+								conquest(1, i(218701)),	-- Forged Gladiator's Plate Greatbelt
+								conquest(1, i(218693)),	-- Forged Gladiator's Plate Handguards
+								conquest(1, i(218694)),	-- Forged Gladiator's Plate Helm
+								conquest(1, i(218695)),	-- Forged Gladiator's Plate Helmet
+								conquest(1, i(218696)),	-- Forged Gladiator's Plate Legguards
+								conquest(1, i(218699)),	-- Forged Gladiator's Plate Pauldrons
+								conquest(1, i(218698)),	-- Forged Gladiator's Plate Shoulders
+								conquest(1, i(218691)),	-- Forged Gladiator's Plate Stompers
+								conquest(1, i(218703)),	-- Forged Gladiator's Plate Vambraces
+								conquest(1, i(218690)),	-- Forged Gladiator's Plate Warboots
+								conquest(1, i(218697)),	-- Forged Gladiator's Plate Wargreaves
+								conquest(1, i(218702)),	-- Forged Gladiator's Plate Wristguards
+								conquest(1, i(218706)),	-- Forged Gladiator's Shawl
+							}),
+						}),
+						filter(FINGER_F, {
+							conquest(525, i(218708)),	-- Forged Gladiator's Band
+							conquest(525, i(218707)),	-- Forged Gladiator's Ring
+							conquest(525, i(218709)),	-- Forged Gladiator's Signet
+						}),
+						filter(NECK_F, {
+							conquest(525, i(218712)),	-- Forged Gladiator's Amulet
+							conquest(525, i(218710)),	-- Forged Gladiator's Necklace
+							conquest(525, i(218711)),	-- Forged Gladiator's Pendant
+						}),
+						filter(TRINKET_F, {
+							conquest(700, i(218713)),	-- Forged Gladiator's Badge of Ferocity
+							conquest(700, i(218715)),	-- Forged Gladiator's Emblem
+							conquest(700, i(218714)),	-- Forged Gladiator's Insignia of Alacrity
+							conquest(525, i(218716)),	-- Forged Gladiator's Medallion
+							conquest(525, i(218717)),	-- Forged Gladiator's Sigil of Adaptation
+						}),
+						n(WEAPONS, {
+							conquest(875, i(218727)),	-- Forged Gladiator's Axe
+							conquest(1750, i(218737)),	-- Forged Gladiator's Battlestaff
+							conquest(1750, i(218723)),	-- Forged Gladiator's Bow
+							conquest(525, i(218732)),	-- Forged Gladiator's Bulwark
+							conquest(875, i(218729)),	-- Forged Gladiator's Claws
+							conquest(1750, i(218730)),	-- Forged Gladiator's Crossbow
+							conquest(875, i(218719)),	-- Forged Gladiator's Dagger
+							conquest(525, i(218725)),	-- Forged Gladiator's Focus
+							conquest(1750, i(218733)),	-- Forged Gladiator's Greataxe
+							conquest(1750, i(218731)),	-- Forged Gladiator's Greatstaff
+							conquest(1225, i(218728)),	-- Forged Gladiator's Pincer
+							conquest(1750, i(218734)),	-- Forged Gladiator's Pulverizer
+							conquest(1225, i(218724)),	-- Forged Gladiator's Scepter
+							conquest(525, i(218726)),	-- Forged Gladiator's Shield
+							conquest(900, i(218736)),	-- Forged Gladiator's Skewer
+							conquest(1750, i(218721)),	-- Forged Gladiator's Spear
+							conquest(875, i(218718)),	-- Forged Gladiator's Splitter
+							conquest(1750, i(218722)),	-- Forged Gladiator's Staff
+							conquest(900, i(218735)),	-- Forged Gladiator's Sword
+							conquest(875, i(218720)),	-- Forged Gladiator's Warglaive
+						}),
+						i(220378, {	-- Forged Equipment Chest
+							timeline = { ADDED_11_0_5, REMOVED_11_1_0_SEASONSTART },
+						}),
+					}),
+				}),
+				o(456208, {	-- The Catalyst
+					coord = { 50.0, 54.2, DORNOGAL },
+					modelScale = 4,
+					catalystID = 8,	-- ItemBonus.Value_0 TWW:S1
 					timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
-				},FILTERFUNC_itemID,{
-					n(CLASSES, {
+					groups = bubbleDown({ modID = 14 }, {
 						cl(DEATHKNIGHT, {
-							conquest(1, i(218650)),	-- Forged Gladiator's Chestguard
-							conquest(1, i(218651)),	-- Forged Gladiator's Chestplate
-							conquest(1, i(218666)),	-- Forged Gladiator's Cloak
-							conquest(1, i(218667)),	-- Forged Gladiator's Drape
-							conquest(1, i(218654)),	-- Forged Gladiator's Plate Gauntlets
-							conquest(1, i(218662)),	-- Forged Gladiator's Plate Girdle
-							conquest(1, i(218663)),	-- Forged Gladiator's Plate Greatbelt
-							conquest(1, i(218655)),	-- Forged Gladiator's Plate Handguards
-							conquest(1, i(218656)),	-- Forged Gladiator's Plate Helm
-							conquest(1, i(218657)),	-- Forged Gladiator's Plate Helmet
-							conquest(1, i(218658)),	-- Forged Gladiator's Plate Legguards
-							conquest(1, i(218661)),	-- Forged Gladiator's Plate Pauldrons
-							conquest(1, i(218660)),	-- Forged Gladiator's Plate Shoulders
-							conquest(1, i(218653)),	-- Forged Gladiator's Plate Stompers
-							conquest(1, i(218665)),	-- Forged Gladiator's Plate Vambraces
-							conquest(1, i(218652)),	-- Forged Gladiator's Plate Warboots
-							conquest(1, i(218659)),	-- Forged Gladiator's Plate Wargreaves
-							conquest(1, i(218664)),	-- Forged Gladiator's Plate Wristguards
-							conquest(1, i(218668)),	-- Forged Gladiator's Shawl
+							i(211997),	-- Exhumed Centurion's Drape
+							i(211998),	-- Exhumed Centurion's Manacles
+							i(211999),	-- Exhumed Centurion's Baltea
+							i(212000),	-- Exhumed Centurion's Spikes
+							i(212001),	-- Exhumed Centurion's Chausses
+							i(212002),	-- Exhumed Centurion's Galea
+							i(212003),	-- Exhumed Centurion's Gauntlets
+							i(212004),	-- Exhumed Centurion's Sollerets
+							i(212005),	-- Exhumed Centurion's Breastplate
 						}),
 						cl(DEMONHUNTER, {
-							conquest(1, i(218552)),	-- Forged Gladiator's Cloak
-							conquest(1, i(218553)),	-- Forged Gladiator's Drape
-							conquest(1, i(218548)),	-- Forged Gladiator's Leather Belt
-							conquest(1, i(218538)),	-- Forged Gladiator's Leather Boots
-							conquest(1, i(218544)),	-- Forged Gladiator's Leather Breeches
-							conquest(1, i(218540)),	-- Forged Gladiator's Leather Gloves
-							conquest(1, i(218541)),	-- Forged Gladiator's Leather Grips
-							conquest(1, i(218542)),	-- Forged Gladiator's Leather Helm
-							conquest(1, i(218537)),	-- Forged Gladiator's Leather Jerkin
-							conquest(1, i(218545)),	-- Forged Gladiator's Leather Legwraps
-							conquest(1, i(218543)),	-- Forged Gladiator's Leather Mask
-							conquest(1, i(218547)),	-- Forged Gladiator's Leather Shoulderpads
-							conquest(1, i(218546)),	-- Forged Gladiator's Leather Spaulders
-							conquest(1, i(218549)),	-- Forged Gladiator's Leather Strap
-							conquest(1, i(218539)),	-- Forged Gladiator's Leather Treads
-							conquest(1, i(218536)),	-- Forged Gladiator's Leather Vest
-							conquest(1, i(218551)),	-- Forged Gladiator's Leather Wristguards
-							conquest(1, i(218550)),	-- Forged Gladiator's Leather Wristwraps
-							conquest(1, i(218554)),	-- Forged Gladiator's Shawl
+							i(212060),	-- Drape of the Hypogeal Nemesis
+							i(212061),	-- Armguards of the Hypogeal Nemesis
+							i(212062),	-- Waistguard of the Hypogeal Nemesis
+							i(212063),	-- War-Mantle of the Hypogeal Nemesis
+							i(212064),	-- Pantaloons of the Hypogeal Nemesis
+							i(212065),	-- Impalers of the Hypogeal Nemesis
+							i(212066),	-- Claws of the Hypogeal Nemesis
+							i(212067),	-- Talons of the Hypogeal Nemesis
+							i(212068),	-- Chestguard of the Hypogeal Nemesis
 						}),
 						cl(DRUID, {
-							conquest(525, i(218533)),	-- Forged Gladiator's Cloak
-							conquest(525, i(218534)),	-- Forged Gladiator's Drape
-							conquest(700, i(218529)),	-- Forged Gladiator's Leather Belt
-							conquest(700, i(218519)),	-- Forged Gladiator's Leather Boots
-							conquest(875, i(218525)),	-- Forged Gladiator's Leather Breeches
-							conquest(700, i(218521)),	-- Forged Gladiator's Leather Gloves
-							conquest(700, i(218522)),	-- Forged Gladiator's Leather Grips
-							conquest(875, i(218523)),	-- Forged Gladiator's Leather Helm
-							conquest(875, i(218526)),	-- Forged Gladiator's Leather Legwraps
-							conquest(875, i(218524)),	-- Forged Gladiator's Leather Mask
-							conquest(700, i(218528)),	-- Forged Gladiator's Leather Shoulderpads
-							conquest(700, i(218527)),	-- Forged Gladiator's Leather Spaulders
-							conquest(700, i(218530)),	-- Forged Gladiator's Leather Strap
-							conquest(700, i(218520)),	-- Forged Gladiator's Leather Treads
-							conquest(875, i(218517)),	-- Forged Gladiator's Leather Vest
-							conquest(875, i(218518)),	-- Forged Gladiator's Leather Vestments
-							conquest(525, i(218532)),	-- Forged Gladiator's Leather Wristguards
-							conquest(525, i(218531)),	-- Forged Gladiator's Leather Wristwraps
-							conquest(525, i(218535)),	-- Forged Gladiator's Shawl
+							i(212051),	-- Cloak of the Greatlynx
+							i(212052),	-- Great Links of the Greatlynx
+							i(212053),	-- Faulds of the Greatlynx
+							i(212054),	-- Maw of the Greatlynx
+							i(212055),	-- Leggings of the Greatlynx
+							i(212056),	-- Mask of the Greatlynx
+							i(212057),	-- Eviscerators of the Greatlynx
+							i(212058),	-- Treads of the Greatlynx
+							i(212059),	-- Hide of the Greatlynx
 						}),
 						cl(EVOKER, {
-							conquest(875, i(218593)),	-- Forged Gladiator's Armored Scales
-							conquest(700, i(218605)),	-- Forged Gladiator's Chain Belt
-							conquest(700, i(218596)),	-- Forged Gladiator's Chain Boots
-							conquest(525, i(218608)),	-- Forged Gladiator's Chain Bracers
-							conquest(875, i(218602)),	-- Forged Gladiator's Chain Breeches
-							conquest(875, i(218600)),	-- Forged Gladiator's Chain Faceguard
-							conquest(700, i(218597)),	-- Forged Gladiator's Chain Gauntlets
-							conquest(700, i(218606)),	-- Forged Gladiator's Chain Girdle
-							conquest(700, i(218598)),	-- Forged Gladiator's Chain Handguards
-							conquest(875, i(218599)),	-- Forged Gladiator's Chain Helm
-							conquest(875, i(218601)),	-- Forged Gladiator's Chain Leggings
-							conquest(700, i(218603)),	-- Forged Gladiator's Chain Monnion
-							conquest(700, i(218595)),	-- Forged Gladiator's Chain Sabatons
-							conquest(700, i(218604)),	-- Forged Gladiator's Chain Shoulderguard
-							conquest(525, i(218607)),	-- Forged Gladiator's Chain Wristguards
-							conquest(525, i(218609)),	-- Forged Gladiator's Cloak
-							conquest(525, i(218610)),	-- Forged Gladiator's Drape
-							conquest(875, i(218594)),	-- Forged Gladiator's Scaleguard
-							conquest(525, i(218611)),	-- Forged Gladiator's Shawl
+							i(212024),	-- Cape of the Destroyer
+							i(212025),	-- Wristblades of the Destroyer
+							i(212026),	-- Core of the Destroyer
+							i(212027),	-- Fumaroles of the Destroyer
+							i(212028),	-- Legguards of the Destroyer
+							i(212029),	-- Horns of the Destroyer
+							i(212030),	-- Rippers of the Destroyer
+							i(212031),	-- Talons of the Destroyer
+							i(212032),	-- Scales of the Destroyer
 						}),
 						cl(HUNTER, {
-							conquest(700, i(218624)),	-- Forged Gladiator's Chain Belt
-							conquest(700, i(218615)),	-- Forged Gladiator's Chain Boots
-							conquest(525, i(218627)),	-- Forged Gladiator's Chain Bracers
-							conquest(875, i(218621)),	-- Forged Gladiator's Chain Breeches
-							conquest(875, i(218619)),	-- Forged Gladiator's Chain Faceguard
-							conquest(700, i(218616)),	-- Forged Gladiator's Chain Gauntlets
-							conquest(700, i(218625)),	-- Forged Gladiator's Chain Girdle
-							conquest(700, i(218617)),	-- Forged Gladiator's Chain Handguards
-							conquest(875, i(218618)),	-- Forged Gladiator's Chain Helm
-							conquest(875, i(218620)),	-- Forged Gladiator's Chain Leggings
-							conquest(700, i(218622)),	-- Forged Gladiator's Chain Monnion
-							conquest(700, i(218614)),	-- Forged Gladiator's Chain Sabatons
-							conquest(700, i(218623)),	-- Forged Gladiator's Chain Shoulderguard
-							conquest(875, i(218613)),	-- Forged Gladiator's Chain Tunic
-							conquest(875, i(218612)),	-- Forged Gladiator's Chain Vest
-							conquest(525, i(218626)),	-- Forged Gladiator's Chain Wristguards
-							conquest(525, i(218628)),	-- Forged Gladiator's Cloak
-							conquest(525, i(218629)),	-- Forged Gladiator's Drape
-							conquest(525, i(218630)),	-- Forged Gladiator's Shawl
+							i(212015),	-- Lightless Scavenger's Hide
+							i(212016),	-- Lightless Scavenger's Wristguards
+							i(212017),	-- Lightless Scavenger's Bonegirdle
+							i(212018),	-- Lightless Scavenger's Taxidermy
+							i(212019),	-- Lightless Scavenger's Stalkings
+							i(212020),	-- Lightless Scavenger's Skull
+							i(212021),	-- Lightless Scavenger's Mitts
+							i(212022),	-- Lightless Scavenger's Footpads
+							i(212023),	-- Lightless Scavenger's Tunic
 						}),
 						cl(MAGE, {
-							conquest(1, i(218476)),	-- Forged Gladiator's Cloak
-							conquest(1, i(218477)),	-- Forged Gladiator's Drape
-							conquest(1, i(218478)),	-- Forged Gladiator's Shawl
-							conquest(1, i(218471)),	-- Forged Gladiator's Silk Amice
-							conquest(1, i(218475)),	-- Forged Gladiator's Silk Armbands
-							conquest(1, i(218473)),	-- Forged Gladiator's Silk Belt
-							conquest(1, i(218461)),	-- Forged Gladiator's Silk Blouse
-							conquest(1, i(218467)),	-- Forged Gladiator's Silk Cap
-							conquest(1, i(218472)),	-- Forged Gladiator's Silk Cord
-							conquest(1, i(218464)),	-- Forged Gladiator's Silk Gloves
-							conquest(1, i(218465)),	-- Forged Gladiator's Silk Handwraps
-							conquest(1, i(218466)),	-- Forged Gladiator's Silk Hat
-							conquest(1, i(218468)),	-- Forged Gladiator's Silk Leggings
-							conquest(1, i(218470)),	-- Forged Gladiator's Silk Mantle
-							conquest(1, i(218462)),	-- Forged Gladiator's Silk Slippers
-							conquest(1, i(218463)),	-- Forged Gladiator's Silk Treads
-							conquest(1, i(218469)),	-- Forged Gladiator's Silk Trousers
-							conquest(1, i(218460)),	-- Forged Gladiator's Silk Tunic
-							conquest(1, i(218474)),	-- Forged Gladiator's Silk Wristwraps
+							i(212087),	-- Ward of Violet Rebirth
+							i(212088),	-- Bracelets of Violet Rebirth
+							i(212089),	-- Sigil of Violet Rebirth
+							i(212090),	-- Beacons of Violet Rebirth
+							i(212091),	-- Coattails of Violet Rebirth
+							i(212092),	-- Hood of Violet Rebirth
+							i(212093),	-- Jeweled Gauntlets of Violet Rebirth
+							i(212094),	-- Slippers of Violet Rebirth
+							i(212095),	-- Runecoat of Violet Rebirth
 						}),
 						cl(MONK, {
-							conquest(1, i(218571)),	-- Forged Gladiator's Cloak
-							conquest(1, i(218572)),	-- Forged Gladiator's Drape
-							conquest(1, i(218567)),	-- Forged Gladiator's Leather Belt
-							conquest(1, i(218557)),	-- Forged Gladiator's Leather Boots
-							conquest(1, i(218563)),	-- Forged Gladiator's Leather Breeches
-							conquest(1, i(218559)),	-- Forged Gladiator's Leather Gloves
-							conquest(1, i(218560)),	-- Forged Gladiator's Leather Grips
-							conquest(1, i(218561)),	-- Forged Gladiator's Leather Helm
-							conquest(1, i(218556)),	-- Forged Gladiator's Leather Jerkin
-							conquest(1, i(218564)),	-- Forged Gladiator's Leather Legwraps
-							conquest(1, i(218562)),	-- Forged Gladiator's Leather Mask
-							conquest(1, i(218566)),	-- Forged Gladiator's Leather Shoulderpads
-							conquest(1, i(218565)),	-- Forged Gladiator's Leather Spaulders
-							conquest(1, i(218568)),	-- Forged Gladiator's Leather Strap
-							conquest(1, i(218558)),	-- Forged Gladiator's Leather Treads
-							conquest(1, i(218555)),	-- Forged Gladiator's Leather Vest
-							conquest(1, i(218570)),	-- Forged Gladiator's Leather Wristguards
-							conquest(1, i(218569)),	-- Forged Gladiator's Leather Wristwraps
-							conquest(1, i(218573)),	-- Forged Gladiator's Leather Shawl
+							i(212042),	-- Gatecrasher's Mantle
+							i(212043),	-- Gatecrasher's Armguards
+							i(212044),	-- Gatecrasher's Cord
+							i(212045),	-- Gatecrasher's Enduring Effigy
+							i(212046),	-- Gatecrasher's Kilt
+							i(212047),	-- Gatecrasher's Horns
+							i(212048),	-- Gatecrasher's Protectors
+							i(212049),	-- Gatecrasher's Tabi
+							i(212050),	-- Gatecrasher's Gi
 						}),
 						cl(PALADIN, {
-							conquest(875, i(218669)),	-- Forged Gladiator's Chestguard
-							conquest(875, i(218670)),	-- Forged Gladiator's Chestplate
-							conquest(525, i(218685)),	-- Forged Gladiator's Cloak
-							conquest(525, i(218686)),	-- Forged Gladiator's Drape
-							conquest(700, i(218673)),	-- Forged Gladiator's Plate Gauntlets
-							conquest(700, i(218681)),	-- Forged Gladiator's Plate Girdle
-							conquest(700, i(218682)),	-- Forged Gladiator's Plate Greatbelt
-							conquest(700, i(218674)),	-- Forged Gladiator's Plate Handguards
-							conquest(875, i(218675)),	-- Forged Gladiator's Plate Helm
-							conquest(875, i(218676)),	-- Forged Gladiator's Plate Helmet
-							conquest(875, i(218677)),	-- Forged Gladiator's Plate Legguards
-							conquest(700, i(218680)),	-- Forged Gladiator's Plate Pauldrons
-							conquest(700, i(218679)),	-- Forged Gladiator's Plate Shoulders
-							conquest(700, i(218672)),	-- Forged Gladiator's Plate Stompers
-							conquest(875, i(218678)),	-- Forged Gladiator's Plate Tasses
-							conquest(525, i(218684)),	-- Forged Gladiator's Plate Vambraces
-							conquest(700, i(218671)),	-- Forged Gladiator's Plate Warboots
-							conquest(525, i(218683)),	-- Forged Gladiator's Plate Wristguards
-							conquest(525, i(218687)),	-- Forged Gladiator's Shawl
+							i(211988),	-- Entombed Seraph's Greatcloak
+							i(211989),	-- Entombed Seraph's Shackles
+							i(211990),	-- Entombed Seraph's Waistguard
+							i(211991),	-- Entombed Seraph's Plumes
+							i(211992),	-- Entombed Seraph's Greaves
+							i(211993),	-- Entombed Seraph's Casque
+							i(211994),	-- Entombed Seraph's Castigation
+							i(211995),	-- Entombed Seraph's Sabatons
+							i(211996),	-- Entombed Seraph's Breastplate
 						}),
 						cl(PRIEST, {
-							conquest(1, i(218495)),	-- Forged Gladiator's Cloak
-							conquest(1, i(218496)),	-- Forged Gladiator's Drape
-							conquest(1, i(218497)),	-- Forged Gladiator's Shawl
-							conquest(1, i(218490)),	-- Forged Gladiator's Silk Amice
-							conquest(1, i(218494)),	-- Forged Gladiator's Silk Armbands
-							conquest(1, i(218492)),	-- Forged Gladiator's Silk Belt
-							conquest(1, i(218491)),	-- Forged Gladiator's Silk Cord
-							conquest(1, i(218483)),	-- Forged Gladiator's Silk Gloves
-							conquest(1, i(218486)),	-- Forged Gladiator's Silk Guise
-							conquest(1, i(218484)),	-- Forged Gladiator's Silk Handwraps
-							conquest(1, i(218485)),	-- Forged Gladiator's Silk Hood
-							conquest(1, i(218487)),	-- Forged Gladiator's Silk Leggings
-							conquest(1, i(218489)),	-- Forged Gladiator's Silk Mantle
-							conquest(1, i(218479)),	-- Forged Gladiator's Silk Robes
-							conquest(1, i(218481)),	-- Forged Gladiator's Silk Slippers
-							conquest(1, i(218482)),	-- Forged Gladiator's Silk Treads
-							conquest(1, i(218488)),	-- Forged Gladiator's Silk Trousers
-							conquest(1, i(218480)),	-- Forged Gladiator's Silk Vestments
-							conquest(1, i(218493)),	-- Forged Gladiator's Silk Wristwraps
+							i(212078),	-- Living Luster's Glow
+							i(212079),	-- Living Luster's Crystbands
+							i(212080),	-- Living Luster's Lightbelt
+							i(212081),	-- Living Luster's Dominion
+							i(212082),	-- Living Luster's Trousers
+							i(212083),	-- Living Luster's Semblance
+							i(212084),	-- Living Luster's Touch
+							i(212085),	-- Living Luster's Boots
+							i(212086),	-- Living Luster's Raiment
 						}),
 						cl(ROGUE, {
-							conquest(1, i(218590)),	-- Forged Gladiator's Cloak
-							conquest(1, i(218591)),	-- Forged Gladiator's Drape
-							conquest(1, i(218586)),	-- Forged Gladiator's Leather Belt
-							conquest(1, i(218576)),	-- Forged Gladiator's Leather Boots
-							conquest(1, i(218582)),	-- Forged Gladiator's Leather Breeches
-							conquest(1, i(218578)),	-- Forged Gladiator's Leather Gloves
-							conquest(1, i(218579)),	-- Forged Gladiator's Leather Grips
-							conquest(1, i(218580)),	-- Forged Gladiator's Leather Helm
-							conquest(1, i(218575)),	-- Forged Gladiator's Leather Jerkin
-							conquest(1, i(218583)),	-- Forged Gladiator's Leather Legwraps
-							conquest(1, i(218581)),	-- Forged Gladiator's Leather Mask
-							conquest(1, i(218585)),	-- Forged Gladiator's Leather Shoulderpads
-							conquest(1, i(218584)),	-- Forged Gladiator's Leather Spaulders
-							conquest(1, i(218587)),	-- Forged Gladiator's Leather Strap
-							conquest(1, i(218577)),	-- Forged Gladiator's Leather Treads
-							conquest(1, i(218574)),	-- Forged Gladiator's Leather Vest
-							conquest(1, i(218589)),	-- Forged Gladiator's Leather Wristguards
-							conquest(1, i(218588)),	-- Forged Gladiator's Leather Wristwraps
-							conquest(1, i(218592)),	-- Forged Gladiator's Shawl
+							i(212033),	-- K'areshi Phantom's Breeze
+							i(212034),	-- K'areshi Phantom's Cuffs
+							i(212035),	-- K'areshi Phantom's Belt
+							i(212036),	-- K'areshi Phantom's Shoulderpads
+							i(212037),	-- K'areshi Phantom's Leggings
+							i(212038),	-- K'areshi Phantom's Emptiness
+							i(212039),	-- K'areshi Phantom's Grips
+							i(212040),	-- K'areshi Phantom's Netherwalkers
+							i(212041),	-- K'areshi Phantom's Nexus Wraps
 						}),
 						cl(SHAMAN, {
-							conquest(1, i(218643)),	-- Forged Gladiator's Chain Belt
-							conquest(1, i(218634)),	-- Forged Gladiator's Chain Boots
-							conquest(1, i(218646)),	-- Forged Gladiator's Chain Bracers
-							conquest(1, i(218640)),	-- Forged Gladiator's Chain Breeches
-							conquest(1, i(218638)),	-- Forged Gladiator's Chain Faceguard
-							conquest(1, i(218635)),	-- Forged Gladiator's Chain Gauntlets
-							conquest(1, i(218644)),	-- Forged Gladiator's Chain Girdle
-							conquest(1, i(218636)),	-- Forged Gladiator's Chain Handguards
-							conquest(1, i(218637)),	-- Forged Gladiator's Chain Helm
-							conquest(1, i(218639)),	-- Forged Gladiator's Chain Leggings
-							conquest(1, i(218641)),	-- Forged Gladiator's Chain Monnion
-							conquest(1, i(218633)),	-- Forged Gladiator's Chain Sabatons
-							conquest(1, i(218642)),	-- Forged Gladiator's Chain Shoulderguard
-							conquest(1, i(218632)),	-- Forged Gladiator's Chain Tunic
-							conquest(1, i(218631)),	-- Forged Gladiator's Chain Vest
-							conquest(1, i(218645)),	-- Forged Gladiator's Chain Wristguards
-							conquest(1, i(218647)),	-- Forged Gladiator's Cloak
-							conquest(1, i(218648)),	-- Forged Gladiator's Drape
-							conquest(1, i(218649)),	-- Forged Gladiator's Shawl
+							i(212006),	-- Mist of the Forgotten Reservoir
+							i(212007),	-- Embrace of the Forgotten Reservoir
+							i(212008),	-- Wrappings of the Forgotten Reservoir
+							i(212009),	-- Concourse of the Forgotten Reservoir
+							i(212010),	-- Sarong of the Forgotten Reservoir
+							i(212011),	-- Noetic of the Forgotten Reservoir
+							i(212012),	-- Covenant of the Forgotten Reservoir
+							i(212013),	-- Shoes of the Forgotten Reservoir
+							i(212014),	-- Vestments of the Forgotten Reservoir
 						}),
 						cl(WARLOCK, {
-							conquest(1, i(218514)),	-- Forged Gladiator's Cloak
-							conquest(1, i(218515)),	-- Forged Gladiator's Drape
-							conquest(1, i(218516)),	-- Forged Gladiator's Shawl
-							conquest(1, i(218509)),	-- Forged Gladiator's Silk Amice
-							conquest(1, i(218513)),	-- Forged Gladiator's Silk Armbands
-							conquest(1, i(218511)),	-- Forged Gladiator's Silk Belt
-							conquest(1, i(218510)),	-- Forged Gladiator's Silk Cord
-							conquest(1, i(218502)),	-- Forged Gladiator's Silk Gloves
-							conquest(1, i(218505)),	-- Forged Gladiator's Silk Guise
-							conquest(1, i(218503)),	-- Forged Gladiator's Silk Handwraps
-							conquest(1, i(218504)),	-- Forged Gladiator's Silk Hood
-							conquest(1, i(218506)),	-- Forged Gladiator's Silk Leggings
-							conquest(1, i(218508)),	-- Forged Gladiator's Silk Mantle
-							conquest(1, i(218498)),	-- Forged Gladiator's Silk Raiment
-							conquest(1, i(218500)),	-- Forged Gladiator's Silk Slippers
-							conquest(1, i(218501)),	-- Forged Gladiator's Silk Treads
-							conquest(1, i(218507)),	-- Forged Gladiator's Silk Trousers
-							conquest(1, i(218499)),	-- Forged Gladiator's Silk Vestments
-							conquest(1, i(218512)),	-- Forged Gladiator's Silk Wristwraps
+							i(212069),	-- Hexflame Coven's Shawl
+							i(212070),	-- Hexflame Coven's Wristlace
+							i(212071),	-- Hexflame Coven's Dormant Eye
+							i(212072),	-- Hexflame Coven's Altar
+							i(212073),	-- Hexflame Coven's Leggings
+							i(212074),	-- Hexflame Coven's All-Seeing Eye
+							i(212075),	-- Hexflame Coven's Sleeves
+							i(212076),	-- Hexflame Coven's Treads
+							i(212077),	-- Hexflame Coven's Ritual Harness
 						}),
 						cl(WARRIOR, {
-							conquest(1, i(218688)),	-- Forged Gladiator's Chestguard
-							conquest(1, i(218689)),	-- Forged Gladiator's Chestplate
-							conquest(1, i(218704)),	-- Forged Gladiator's Cloak
-							conquest(1, i(218705)),	-- Forged Gladiator's Drape
-							conquest(1, i(218692)),	-- Forged Gladiator's Plate Gauntlets
-							conquest(1, i(218700)),	-- Forged Gladiator's Plate Girdle
-							conquest(1, i(218701)),	-- Forged Gladiator's Plate Greatbelt
-							conquest(1, i(218693)),	-- Forged Gladiator's Plate Handguards
-							conquest(1, i(218694)),	-- Forged Gladiator's Plate Helm
-							conquest(1, i(218695)),	-- Forged Gladiator's Plate Helmet
-							conquest(1, i(218696)),	-- Forged Gladiator's Plate Legguards
-							conquest(1, i(218699)),	-- Forged Gladiator's Plate Pauldrons
-							conquest(1, i(218698)),	-- Forged Gladiator's Plate Shoulders
-							conquest(1, i(218691)),	-- Forged Gladiator's Plate Stompers
-							conquest(1, i(218703)),	-- Forged Gladiator's Plate Vambraces
-							conquest(1, i(218690)),	-- Forged Gladiator's Plate Warboots
-							conquest(1, i(218697)),	-- Forged Gladiator's Plate Wargreaves
-							conquest(1, i(218702)),	-- Forged Gladiator's Plate Wristguards
-							conquest(1, i(218706)),	-- Forged Gladiator's Shawl
+							i(211979),	-- Warsculptor's Cloak
+							i(211980),	-- Warsculptor's Armguards
+							i(211981),	-- Warsculptor's Buckle
+							i(211982),	-- Warsculptor's Horned Spaulders
+							i(211983),	-- Warsculptor's Cuisses
+							i(211984),	-- Warsculptor's Barbute
+							i(211985),	-- Warsculptor's Crushers
+							i(211986),	-- Warsculptor's Carved Boots
+							i(211987),	-- Warsculptor's Furred Plastron
 						}),
-					}),
-					filter(FINGER_F, {
-						conquest(525, i(218708)),	-- Forged Gladiator's Band
-						conquest(525, i(218707)),	-- Forged Gladiator's Ring
-						conquest(525, i(218709)),	-- Forged Gladiator's Signet
-					}),
-					filter(NECK_F, {
-						conquest(525, i(218712)),	-- Forged Gladiator's Amulet
-						conquest(525, i(218710)),	-- Forged Gladiator's Necklace
-						conquest(525, i(218711)),	-- Forged Gladiator's Pendant
-					}),
-					filter(TRINKET_F, {
-						conquest(700, i(218713)),	-- Forged Gladiator's Badge of Ferocity
-						conquest(700, i(218715)),	-- Forged Gladiator's Emblem
-						conquest(700, i(218714)),	-- Forged Gladiator's Insignia of Alacrity
-						conquest(525, i(218716)),	-- Forged Gladiator's Medallion
-						conquest(525, i(218717)),	-- Forged Gladiator's Sigil of Adaptation
-					}),
-					n(WEAPONS, {
-						conquest(875, i(218727)),	-- Forged Gladiator's Axe
-						conquest(1750, i(218737)),	-- Forged Gladiator's Battlestaff
-						conquest(1750, i(218723)),	-- Forged Gladiator's Bow
-						conquest(525, i(218732)),	-- Forged Gladiator's Bulwark
-						conquest(875, i(218729)),	-- Forged Gladiator's Claws
-						conquest(1750, i(218730)),	-- Forged Gladiator's Crossbow
-						conquest(875, i(218719)),	-- Forged Gladiator's Dagger
-						conquest(525, i(218725)),	-- Forged Gladiator's Focus
-						conquest(1750, i(218733)),	-- Forged Gladiator's Greataxe
-						conquest(1750, i(218731)),	-- Forged Gladiator's Greatstaff
-						conquest(1225, i(218728)),	-- Forged Gladiator's Pincer
-						conquest(1750, i(218734)),	-- Forged Gladiator's Pulverizer
-						conquest(1225, i(218724)),	-- Forged Gladiator's Scepter
-						conquest(525, i(218726)),	-- Forged Gladiator's Shield
-						conquest(900, i(218736)),	-- Forged Gladiator's Skewer
-						conquest(1750, i(218721)),	-- Forged Gladiator's Spear
-						conquest(875, i(218718)),	-- Forged Gladiator's Splitter
-						conquest(1750, i(218722)),	-- Forged Gladiator's Staff
-						conquest(900, i(218735)),	-- Forged Gladiator's Sword
-						conquest(875, i(218720)),	-- Forged Gladiator's Warglaive
-					}),
-					i(220378, {	-- Forged Equipment Chest
-						timeline = { ADDED_11_0_5, REMOVED_11_1_0_SEASONSTART },
+						-- Elite catalyst gear is not obtainable this season
 					}),
 				}),
-			}),
-			o(456208, bubbleDownSelf({ timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {	-- The Catalyst
-				coord = { 50.0, 54.2, DORNOGAL },
-				modelScale = 4,
-				catalystID = 8,	-- ItemBonus.Value_0 TWW:S1
-				groups = bubbleDown({ modID = 14 }, {
-					cl(DEATHKNIGHT, {
-						i(211997),	-- Exhumed Centurion's Drape
-						i(211998),	-- Exhumed Centurion's Manacles
-						i(211999),	-- Exhumed Centurion's Baltea
-						i(212000),	-- Exhumed Centurion's Spikes
-						i(212001),	-- Exhumed Centurion's Chausses
-						i(212002),	-- Exhumed Centurion's Galea
-						i(212003),	-- Exhumed Centurion's Gauntlets
-						i(212004),	-- Exhumed Centurion's Sollerets
-						i(212005),	-- Exhumed Centurion's Breastplate
-					}),
-					cl(DEMONHUNTER, {
-						i(212060),	-- Drape of the Hypogeal Nemesis
-						i(212061),	-- Armguards of the Hypogeal Nemesis
-						i(212062),	-- Waistguard of the Hypogeal Nemesis
-						i(212063),	-- War-Mantle of the Hypogeal Nemesis
-						i(212064),	-- Pantaloons of the Hypogeal Nemesis
-						i(212065),	-- Impalers of the Hypogeal Nemesis
-						i(212066),	-- Claws of the Hypogeal Nemesis
-						i(212067),	-- Talons of the Hypogeal Nemesis
-						i(212068),	-- Chestguard of the Hypogeal Nemesis
-					}),
-					cl(DRUID, {
-						i(212051),	-- Cloak of the Greatlynx
-						i(212052),	-- Great Links of the Greatlynx
-						i(212053),	-- Faulds of the Greatlynx
-						i(212054),	-- Maw of the Greatlynx
-						i(212055),	-- Leggings of the Greatlynx
-						i(212056),	-- Mask of the Greatlynx
-						i(212057),	-- Eviscerators of the Greatlynx
-						i(212058),	-- Treads of the Greatlynx
-						i(212059),	-- Hide of the Greatlynx
-					}),
-					cl(EVOKER, {
-						i(212024),	-- Cape of the Destroyer
-						i(212025),	-- Wristblades of the Destroyer
-						i(212026),	-- Core of the Destroyer
-						i(212027),	-- Fumaroles of the Destroyer
-						i(212028),	-- Legguards of the Destroyer
-						i(212029),	-- Horns of the Destroyer
-						i(212030),	-- Rippers of the Destroyer
-						i(212031),	-- Talons of the Destroyer
-						i(212032),	-- Scales of the Destroyer
-					}),
-					cl(HUNTER, {
-						i(212015),	-- Lightless Scavenger's Hide
-						i(212016),	-- Lightless Scavenger's Wristguards
-						i(212017),	-- Lightless Scavenger's Bonegirdle
-						i(212018),	-- Lightless Scavenger's Taxidermy
-						i(212019),	-- Lightless Scavenger's Stalkings
-						i(212020),	-- Lightless Scavenger's Skull
-						i(212021),	-- Lightless Scavenger's Mitts
-						i(212022),	-- Lightless Scavenger's Footpads
-						i(212023),	-- Lightless Scavenger's Tunic
-					}),
-					cl(MAGE, {
-						i(212087),	-- Ward of Violet Rebirth
-						i(212088),	-- Bracelets of Violet Rebirth
-						i(212089),	-- Sigil of Violet Rebirth
-						i(212090),	-- Beacons of Violet Rebirth
-						i(212091),	-- Coattails of Violet Rebirth
-						i(212092),	-- Hood of Violet Rebirth
-						i(212093),	-- Jeweled Gauntlets of Violet Rebirth
-						i(212094),	-- Slippers of Violet Rebirth
-						i(212095),	-- Runecoat of Violet Rebirth
-					}),
-					cl(MONK, {
-						i(212042),	-- Gatecrasher's Mantle
-						i(212043),	-- Gatecrasher's Armguards
-						i(212044),	-- Gatecrasher's Cord
-						i(212045),	-- Gatecrasher's Enduring Effigy
-						i(212046),	-- Gatecrasher's Kilt
-						i(212047),	-- Gatecrasher's Horns
-						i(212048),	-- Gatecrasher's Protectors
-						i(212049),	-- Gatecrasher's Tabi
-						i(212050),	-- Gatecrasher's Gi
-					}),
-					cl(PALADIN, {
-						i(211988),	-- Entombed Seraph's Greatcloak
-						i(211989),	-- Entombed Seraph's Shackles
-						i(211990),	-- Entombed Seraph's Waistguard
-						i(211991),	-- Entombed Seraph's Plumes
-						i(211992),	-- Entombed Seraph's Greaves
-						i(211993),	-- Entombed Seraph's Casque
-						i(211994),	-- Entombed Seraph's Castigation
-						i(211995),	-- Entombed Seraph's Sabatons
-						i(211996),	-- Entombed Seraph's Breastplate
-					}),
-					cl(PRIEST, {
-						i(212078),	-- Living Luster's Glow
-						i(212079),	-- Living Luster's Crystbands
-						i(212080),	-- Living Luster's Lightbelt
-						i(212081),	-- Living Luster's Dominion
-						i(212082),	-- Living Luster's Trousers
-						i(212083),	-- Living Luster's Semblance
-						i(212084),	-- Living Luster's Touch
-						i(212085),	-- Living Luster's Boots
-						i(212086),	-- Living Luster's Raiment
-					}),
-					cl(ROGUE, {
-						i(212033),	-- K'areshi Phantom's Breeze
-						i(212034),	-- K'areshi Phantom's Cuffs
-						i(212035),	-- K'areshi Phantom's Belt
-						i(212036),	-- K'areshi Phantom's Shoulderpads
-						i(212037),	-- K'areshi Phantom's Leggings
-						i(212038),	-- K'areshi Phantom's Emptiness
-						i(212039),	-- K'areshi Phantom's Grips
-						i(212040),	-- K'areshi Phantom's Netherwalkers
-						i(212041),	-- K'areshi Phantom's Nexus Wraps
-					}),
-					cl(SHAMAN, {
-						i(212006),	-- Mist of the Forgotten Reservoir
-						i(212007),	-- Embrace of the Forgotten Reservoir
-						i(212008),	-- Wrappings of the Forgotten Reservoir
-						i(212009),	-- Concourse of the Forgotten Reservoir
-						i(212010),	-- Sarong of the Forgotten Reservoir
-						i(212011),	-- Noetic of the Forgotten Reservoir
-						i(212012),	-- Covenant of the Forgotten Reservoir
-						i(212013),	-- Shoes of the Forgotten Reservoir
-						i(212014),	-- Vestments of the Forgotten Reservoir
-					}),
-					cl(WARLOCK, {
-						i(212069),	-- Hexflame Coven's Shawl
-						i(212070),	-- Hexflame Coven's Wristlace
-						i(212071),	-- Hexflame Coven's Dormant Eye
-						i(212072),	-- Hexflame Coven's Altar
-						i(212073),	-- Hexflame Coven's Leggings
-						i(212074),	-- Hexflame Coven's All-Seeing Eye
-						i(212075),	-- Hexflame Coven's Sleeves
-						i(212076),	-- Hexflame Coven's Treads
-						i(212077),	-- Hexflame Coven's Ritual Harness
-					}),
-					cl(WARRIOR, {
-						i(211979),	-- Warsculptor's Cloak
-						i(211980),	-- Warsculptor's Armguards
-						i(211981),	-- Warsculptor's Buckle
-						i(211982),	-- Warsculptor's Horned Spaulders
-						i(211983),	-- Warsculptor's Cuisses
-						i(211984),	-- Warsculptor's Barbute
-						i(211985),	-- Warsculptor's Crushers
-						i(211986),	-- Warsculptor's Carved Boots
-						i(211987),	-- Warsculptor's Furred Plastron
-					}),
-					-- Elite catalyst gear is not obtainable this season
-				}),
-			})),
-		})),
+			},
+		}),
 		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_11_0_2, REMOVED_11_1_0, ADDED_12_0_1_LAUNCH }, bonusID = 7532 }, {
 			n(CLASSES, bubbleDownSelf({ timeline = { ADDED_11_0_2, REMOVED_11_1_0 } }, {
 				cl(DEATHKNIGHT, {

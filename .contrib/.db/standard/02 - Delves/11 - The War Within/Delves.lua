@@ -274,22 +274,29 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 			})),
 		}),
 		-- TWW Season 3 Boss
-		m(DELVE_ETHEREAL_KYVEZA, bubbleDownSelf({ timeline = { ADDED_11_2_0 } }, {
+		m(DELVE_ETHEREAL_KYVEZA, {
 			icon = [[~_.asset("Delves_Shadow")]],
 			coord = { 38.5, 51.1, KARESH_TAZAVESH },
+			timeline = { ADDED_11_2_0 },
 			maps = { DELVE_ETHEREAL_KYVEZA },
 			groups = {
-				n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH } }, {
-					ach(42190, bubbleDownSelf({ timeline = { REMOVED_12_0_0 } }, {	-- Let Me Solo Her: Nexus-Princess Ky'veza
-						i(238182),	-- Delver's Mana-Skimmer Schematic: Hyperdrive (MM!)
-					})),
-					ach(42193, {	-- My Stab-Happy Nemesis
-						i(245529),	-- Hal'hadar's Phasebound Visor (COSMETIC!)
-					}),
-					ach(42194, {	-- Pruning the Princess
-						title(639),	-- Contract Killer <Name>
-					}),
-				})),
+				n(ACHIEVEMENTS, {
+					timeline = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
+					groups = {
+						ach(42190, {	-- Let Me Solo Her: Nexus-Princess Ky'veza
+							timeline = { REMOVED_12_0_0 },
+							groups = {
+								i(238182),	-- Delver's Mana-Skimmer Schematic: Hyperdrive (MM!)
+							},
+						}),
+						ach(42193, {	-- My Stab-Happy Nemesis
+							i(245529),	-- Hal'hadar's Phasebound Visor (COSMETIC!)
+						}),
+						ach(42194, {	-- Pruning the Princess
+							title(639),	-- Contract Killer <Name>
+						}),
+					},
+				}),
 				n(EXPLORATION, {
 					map_exploration(16539,{coord={53.4,82.9,DELVE_ETHEREAL_KYVEZA}}),	-- Voidrazor Sanctuary
 				}),
@@ -302,7 +309,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 					},
 				}),
 			},
-		})),
+		}),
 	})),
 	n(ACHIEVEMENTS, {
 		ach(41115, {	-- Algari Delver

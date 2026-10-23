@@ -48,8 +48,9 @@ local HORRIFIC_ORGRIMMAR = 1469;
 local HORRIFIC_STORMWIND = 1470;
 local SPARK_OF_UNWAVERING_STRENGTH = 174287;
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8_3_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(HORRIFIC_VISIONS, {
+		timeline = { ADDED_8_3_0 },
 		maps = {
 			REPAIRED_CHAMBER_OF_HEART,
 		},
@@ -60,14 +61,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ timeline = {
 				ach(14171),	-- Momento Mori
 				ach(14170),	-- Thanks For The Mementos
 				ach(14162),	-- Horrific Masquerade
-				ach(14140, bubbleDownSelf({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 } }, {	-- Mad World
+				ach(14140, {	-- Mad World
 					-- Meta Achievement
+					timeline = { ADDED_8_3_0, REMOVED_9_0_1 },
 					sym = {{"meta_achievement",
 						14141,	-- Solo Nightmares - Stormwind
 						14142,	-- Solo Nightmares - Orgrimmar
 					}},
 					groups = { title(419) },	-- <Name>, the Faceless One
-				})),
+				}),
 				ach(14143, {	-- Reeking of Visions
 					sym = {{"meta_achievement",
 						14065,	-- The Even More Horrific Vision of Orgrimmar
@@ -355,7 +357,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ timeline = {
 			}),
 		},
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_3_0 } }, {
 	n(HORRIFIC_VISIONS, {

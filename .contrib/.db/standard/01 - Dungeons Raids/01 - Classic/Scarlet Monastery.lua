@@ -1221,9 +1221,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
 				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
 				groups = {
-					challengemaster(ach(8437, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scarlet Monastery
-						title(244),	-- Scarlet Commander <Name>
-					}))),
+					challengemaster(ach(8437, {	-- Challenge Master: Scarlet Monastery
+						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+						groups = {
+							title(244),	-- Scarlet Commander <Name>
+						},
+					})),
 					ach(6896),	-- Scarlet Monastery Challenger
 					ach(6911),	-- Scarlet Monastery: Bronze
 					ach(6912),	-- Scarlet Monastery: Silver

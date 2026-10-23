@@ -687,9 +687,10 @@ maproot(BROKEN_ISLES, {
 							ach(12416),	-- The Total Package
 						},
 					}),
-					ach(12431, bubbleDownSelf({ timeline = { ADDED_7_3_5 } }, {	-- Post Haste
+					ach(12431, {	-- Post Haste
 						sourceQuests = { 50247 },	-- The Mail Must Flow
 						description = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
+						timeline = { ADDED_7_3_5 },
 						groups = {
 							i(156721),	-- Mailemental (PET!)
 							i(156836, {	-- Bulging Package
@@ -697,14 +698,15 @@ maproot(BROKEN_ISLES, {
 								i(135479),	-- Lost Mail
 							}),
 						},
-					})),
-					ach(12439, bubbleDownSelf({ timeline = { ADDED_7_3_5 } }, {	-- Priority Mail
+					}),
+					ach(12439, {	-- Priority Mail
 						sourceQuests = { 50247 },	-- The Mail Must Flow
 						description = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
+						timeline = { ADDED_7_3_5 },
 						groups = {
 							title(372),	-- Postmaster <Name>
 						},
-					})),
+					}),
 				},
 			}),
 		},

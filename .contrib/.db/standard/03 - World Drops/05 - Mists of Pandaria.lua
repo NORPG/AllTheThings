@@ -580,19 +580,25 @@ root(ROOTS.WorldDrops, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP,
 	}),
 	filter(RECIPES, {
 		prof(BLACKSMITHING, {
-			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100865, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {	-- Plans: Balanced Trillium Ingot and Its Uses (RECIPE!)
-				r(146921),	-- Accelerated Balanced Trillium Ingot (RECIPE!)
-				r(143255),	-- Balanced Trillium Ingot (RECIPE!)
-			})))),
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100865, {	-- Plans: Balanced Trillium Ingot and Its Uses (RECIPE!)
+				timeline = { ADDED_5_4_0 },
+				groups = {
+					r(146921),	-- Accelerated Balanced Trillium Ingot (RECIPE!)
+					r(143255),	-- Balanced Trillium Ingot (RECIPE!)
+				},
+			}))),
 		}),
 		prof(ENGINEERING, {
-			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100910, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {	-- Schematic: Chief Engineer Jard's Journal
-				r(139197),	-- Advanced Refrigeration Unit
-				r(139176),	-- Jard's Peculiar Energy Source
-				r(139196),	-- Pierre
-				r(143714),	-- Rascal-Bot
-				r(139192),	-- Sky Golem
-			})))),
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100910, {	-- Schematic: Chief Engineer Jard's Journal
+				timeline = { ADDED_5_4_0 },
+				groups = {
+					r(139197),	-- Advanced Refrigeration Unit
+					r(139176),	-- Jard's Peculiar Energy Source
+					r(139196),	-- Pierre
+					r(143714),	-- Rascal-Bot
+					r(139192),	-- Sky Golem
+				},
+			}))),
 			applyclassicphase(MOP_PHASE_ESCALATION, TempForceMisc(i(94847, {	-- Schematic: Chief Engineer Jard's Journal
 				timeline = { CREATED_5_2_0, ADDED_5_3_0, REMOVED_5_4_0 },
 				_drop = { "g" },
@@ -693,13 +699,14 @@ root(ROOTS.WorldDrops, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP,
 				description = "Requires maxed Pandaria leatherworking skill to drop.",
 				timeline = { ADDED_5_4_0 },
 			})),
-			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100864, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {	-- Pattern: Hardened Magnificent Hide and Its Uses (RECIPE!)
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100864, {	-- Pattern: Hardened Magnificent Hide and Its Uses (RECIPE!)
 				description = "Requires maxed Pandaria leatherworking skill to drop.",
+				timeline = { ADDED_5_4_0 },
 				groups = {
 					r(146923),	-- Accelerated Hardened Magnificent Hide (RECIPE!)
 					r(142976),	-- Hardened Magnificent Hide (RECIPE!)
 				},
-			})))),
+			}))),
 			i(95467, {	-- Pattern: Magnificence of Leather (RECIPE!)
 				timeline = { ADDED_5_2_0 },
 			}),
@@ -708,10 +715,13 @@ root(ROOTS.WorldDrops, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP,
 			}),
 		}),
 		prof(TAILORING, {
-			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100863, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {	-- Pattern: Celestial Cloth and Its Uses
-				r(146925),	-- Accelerated Celestial Cloth (RECIPE!)
-				r(143011),	-- Celestial Cloth (RECIPE!)
-			})))),
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100863, {	-- Pattern: Celestial Cloth and Its Uses
+				timeline = { ADDED_5_4_0 },
+				groups = {
+					r(146925),	-- Accelerated Celestial Cloth (RECIPE!)
+					r(143011),	-- Celestial Cloth (RECIPE!)
+				},
+			}))),
 		}),
 	}),
 	filter(MISC, {

@@ -627,7 +627,8 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ requireSkill = COOKING },
 	expansion(EXPANSION.DF, {
 		n(ACHIEVEMENTS, {
 			ach(16631),	-- Dragon Isles Cook
-			ach(17736, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- The Gift of Cheese
+			ach(17736, {	-- The Gift of Cheese
+				timeline = { ADDED_10_1_0 },
 				cost = {{ "i", 204848, 50 }},	-- 50x Charitable Cheddar
 				groups = {
 					i(204894, {	-- Roland (PET!)
@@ -638,7 +639,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ requireSkill = COOKING },
 						},
 					}),
 				},
-			})),
+			}),
 		}),
 		n(QUESTS, {
 			q(72251, {	-- Dragon Isles Cooking

@@ -258,26 +258,30 @@ maproot(SHADOWLANDS, ORIBOS, {
 				coord = { 63.8, 36.0, ORIBOS },
 				timeline = { ADDED_9_0_5 },
 				groups = {
-					i(187254, bubbleDownSelf({ timeline = { ADDED_9_1_0, REMOVED_9_2_0 } }, {	-- Arrangement of Anima
+					i(187254, {	-- Arrangement of Anima
+						timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
 						cost = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						groups = { currency(ANIMA) },
-					})),
-					i(191302, bubbleDownSelf({ timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Bottled Night Sky
+					}),
+					i(191302, {	-- Bottled Night Sky
+						timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 						cost = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						groups = { i(188957) },	-- Genesis Mote
-					})),
-					i(187503, bubbleDownSelf({ timeline = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Bundle of Archived Research
+					}),
+					i(187503, {	-- Bundle of Archived Research
+						timeline = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
 						cost = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						groups = { currency(1931) },	-- Cataloged Research
-					})),
+					}),
 					i(191300, {	-- Certified Vouchsafe
 						cost = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						timeline = { ADDED_9_2_0 },
 					}),
-					i(191030, bubbleDownSelf({ timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Cosmic Flux Parcel
+					i(191030, {	-- Cosmic Flux Parcel
+						timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 						cost = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						groups = { currency(2009) },	-- Cosmic Flux
-					})),
+					}),
 					i(191297, {	-- Ephemera-Infused Mesh
 						cost = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 6 } },
 						timeline = { ADDED_9_2_0, REMOVED_9_2_5 },
@@ -286,10 +290,11 @@ maproot(SHADOWLANDS, ORIBOS, {
 						cost = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },
 						timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 					}),
-					i(187817, bubbleDownSelf({ timeline = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Korthite Crystal Geode
+					i(187817, {	-- Korthite Crystal Geode
+						timeline = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
 						cost = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },
 						groups = { i(186017) },	-- Korthite Crystal
-					})),
+					}),
 					i(187817, {	-- Korthite Crystal Geode
 						timeline = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
 						cost = { { "c", VALOR, 1500 } },
@@ -303,34 +308,40 @@ maproot(SHADOWLANDS, ORIBOS, {
 						cost = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },
 						timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 					}),
-					i(185832, bubbleDownSelf({ timeline = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH } }, {	-- Shipment of Elethium Ore
+					i(185832, {	-- Shipment of Elethium Ore
+						timeline = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH },
 						cost = { { "c", VALOR, 750 } },
 						groups = { i(171833) },	-- Elethium Ore
-					})),
-					i(185765, bubbleDownSelf({ timeline = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH } }, {	-- Shipment of Heavy Callous Hide
+					}),
+					i(185765, {	-- Shipment of Heavy Callous Hide
+						timeline = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH },
 						cost = { { "c", VALOR, 750 } },
 						groups = { i(172097) },	-- Heavy Callous Hide
-					})),
-					i(185833, bubbleDownSelf({ timeline = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH } }, {	-- Shipment of Lightless Silk
+					}),
+					i(185833, {	-- Shipment of Lightless Silk
+						timeline = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH },
 						cost = { { "c", VALOR, 750 } },
 						groups = { i(173204) },	-- Lightless Silk
-					})),
+					}),
 					i(187221, {	-- Soul Ash Cache
 						timeline = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
 						cost = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						groups = { currency(1828) },	-- Soul Ash
 					}),
-					i(187222, bubbleDownSelf({ timeline = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Stygic Singularity
+					i(187222, {	-- Stygic Singularity
+						timeline = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
 						cost = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						groups = { currency(1767) },	-- Stygia
-					})),
-					i(191301, bubbleDownSelf({ timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Treatise on Patterns in the Purpose
+					}),
+					i(191301, {	-- Treatise on Patterns in the Purpose
+						timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 						cost = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
 						groups = { currency(1979) },	-- Cyphers of the First Ones
-					})),
-					i(191299, bubbleDownSelf({ timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Tribute of the Enlightened
+					}),
+					i(191299, {	-- Tribute of the Enlightened
+						timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 						cost = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
-					})),
+					}),
 				},
 			}),
 			n(176065, {	-- Liawyn <Wild Hunt Quartermaster>
@@ -379,15 +390,17 @@ maproot(SHADOWLANDS, ORIBOS, {
 					}),
 				},
 			}),
-			n(181681, bubbleDownSelf({ timeline = { ADDED_9_0_5 } }, {	-- Tu'kol <Anima Exchange Specialist>
+			n(181681, {	-- Tu'kol <Anima Exchange Specialist>
 				coord = { 63.8, 36.0, ORIBOS },
+				timeline = { ADDED_9_0_5 },
 				groups = {
-					i(187817, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {	-- Korthite Crystal Geode
+					i(187817, {	-- Korthite Crystal Geode
+						timeline = { ADDED_9_1_0 },
 						cost = { { "c", ANIMA, 15000 } },
 						groups = {
 							i(186017),	-- Korthite Crystal
 						},
-					})),
+					}),
 					i(187707, {	-- Progentior Essentia
 						cost = { { "c", ANIMA, 25000 } },
 						timeline = { ADDED_9_2_0 },
@@ -411,7 +424,7 @@ maproot(SHADOWLANDS, ORIBOS, {
 						},
 					}),
 				},
-			})),
+			}),
 		}),
 	},
 });

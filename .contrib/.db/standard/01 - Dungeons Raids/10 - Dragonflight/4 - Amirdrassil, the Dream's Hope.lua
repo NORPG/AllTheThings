@@ -742,93 +742,102 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					},
 				}),
 				-- Awakened
-				ach(19570, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Awakened Flames
-					crit(64986, {	-- Gnarlroot
-						_encounter = { GNARLROOT, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64987, {	-- Igira the Cruel
-						_encounter = { IGIRA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64988, {	-- Volcoross
-						_encounter = { VOLCOROSS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64989, {	-- Council of Dreams
-						_encounter = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64990, {	-- Larodar, Keeper of the Flame
-						_encounter = { LARODAR, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64991, {	-- Nymue, Weaver of the Cycle
-						_encounter = { NYMUE, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64992, {	-- Smolderon
-						_encounter = { SMOLDERON, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64993, {	-- Tindral Sageswift, Seer of the Flame
-						_encounter = { TINDRAL, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64994, {	-- Fyrakk the Blazing
-						_encounter = { FYRAKK, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-				})),
-				ach(19571, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Heroic: Awakened Flames
-					crit(64995, {	-- Gnarlroot
-						_encounter = { GNARLROOT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64996, {	-- Igira the Cruel
-						_encounter = { IGIRA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64997, {	-- Volcoross
-						_encounter = { VOLCOROSS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64998, {	-- Council of Dreams
-						_encounter = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64999, {	-- Larodar, Keeper of the Flame
-						_encounter = { LARODAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(65000, {	-- Nymue, Weaver of the Cycle
-						_encounter = { NYMUE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(65001, {	-- Smolderon
-						_encounter = { SMOLDERON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(65002, {	-- Tindral Sageswift, Seer of the Flame
-						_encounter = { TINDRAL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(65003, {	-- Fyrakk the Blazing
-						_encounter = { FYRAKK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-				})),
-				ach(19572, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mythic: Awakened Flames
-					crit(65004, {	-- Gnarlroot
-						_encounter = { GNARLROOT, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(65005, {	-- Igira the Cruel
-						_encounter = { IGIRA, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(65006, {	-- Volcoross
-						_encounter = { VOLCOROSS, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(65007, {	-- Council of Dreams
-						_encounter = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(65008, {	-- Larodar, Keeper of the Flame
-						_encounter = { LARODAR, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(65009, {	-- Nymue, Weaver of the Cycle
-						_encounter = { NYMUE, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(65010, {	-- Smolderon
-						_encounter = { SMOLDERON, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(65011, {	-- Tindral Sageswift, Seer of the Flame
-						_encounter = { TINDRAL, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(65012, {	-- Fyrakk the Blazing
-						_encounter = { FYRAKK, DIFFICULTY.RAID.MYTHIC },
-					}),
-				})),
+				ach(19570, {	-- Awakened Flames
+					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					groups = {
+						crit(64986, {	-- Gnarlroot
+							_encounter = { GNARLROOT, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64987, {	-- Igira the Cruel
+							_encounter = { IGIRA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64988, {	-- Volcoross
+							_encounter = { VOLCOROSS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64989, {	-- Council of Dreams
+							_encounter = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64990, {	-- Larodar, Keeper of the Flame
+							_encounter = { LARODAR, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64991, {	-- Nymue, Weaver of the Cycle
+							_encounter = { NYMUE, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64992, {	-- Smolderon
+							_encounter = { SMOLDERON, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64993, {	-- Tindral Sageswift, Seer of the Flame
+							_encounter = { TINDRAL, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64994, {	-- Fyrakk the Blazing
+							_encounter = { FYRAKK, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+					},
+				}),
+				ach(19571, {	-- Heroic: Awakened Flames
+					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					groups = {
+						crit(64995, {	-- Gnarlroot
+							_encounter = { GNARLROOT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64996, {	-- Igira the Cruel
+							_encounter = { IGIRA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64997, {	-- Volcoross
+							_encounter = { VOLCOROSS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64998, {	-- Council of Dreams
+							_encounter = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64999, {	-- Larodar, Keeper of the Flame
+							_encounter = { LARODAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(65000, {	-- Nymue, Weaver of the Cycle
+							_encounter = { NYMUE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(65001, {	-- Smolderon
+							_encounter = { SMOLDERON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(65002, {	-- Tindral Sageswift, Seer of the Flame
+							_encounter = { TINDRAL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(65003, {	-- Fyrakk the Blazing
+							_encounter = { FYRAKK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+					},
+				}),
+				ach(19572, {	-- Mythic: Awakened Flames
+					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					groups = {
+						crit(65004, {	-- Gnarlroot
+							_encounter = { GNARLROOT, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(65005, {	-- Igira the Cruel
+							_encounter = { IGIRA, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(65006, {	-- Volcoross
+							_encounter = { VOLCOROSS, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(65007, {	-- Council of Dreams
+							_encounter = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(65008, {	-- Larodar, Keeper of the Flame
+							_encounter = { LARODAR, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(65009, {	-- Nymue, Weaver of the Cycle
+							_encounter = { NYMUE, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(65010, {	-- Smolderon
+							_encounter = { SMOLDERON, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(65011, {	-- Tindral Sageswift, Seer of the Flame
+							_encounter = { TINDRAL, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(65012, {	-- Fyrakk the Blazing
+							_encounter = { FYRAKK, DIFFICULTY.RAID.MYTHIC },
+						}),
+					},
+				}),
 				ach(19442),	-- Fire Catwalk With Me
 				-- Guild Achievements
 				ach(19387),	-- Amirdrassil, the Dream's Hope Guild Run
@@ -1737,9 +1746,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						title(530),	-- <Name> the Blazing
 					}),
 					ach(19351, {timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }}),	-- Cutting Edge: Fyrakk the Blazing
-					ach(19392, bubbleDownSelf({timeline = { ADDED_10_2_0, REMOVED_10_2_5 } }, {	-- Hall of Fame: Fyrakk the Blazing
-						title(528),	-- <Name>, Famed Slayer of Fyrakk
-					})),
+					ach(19392, {	-- Hall of Fame: Fyrakk the Blazing
+						timeline = { ADDED_10_2_0, REMOVED_10_2_5 },
+						groups = {
+							title(528),	-- <Name>, Famed Slayer of Fyrakk
+						},
+					}),
 					ach(19389),	-- Mythic: Fyrakk the Blazing Guild Run
 					i(210061, {	-- Anu'relos, Flame's Guidance (MOUNT!)
 						i(210754),	-- Feather of the Blazing Somnowl (CI!)

@@ -325,124 +325,130 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			timeline = { ADDED_6_2_2 },
 			groups = { i(282287, { timeline = { ADDED_12_1_5 } }) },	-- Scarecrow Pepe (DECOR!)
 		}),
-		ach(284, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- A Mask For All Occasions
-			crit(2260, {	-- Blood Elf Female Mask
-				provider = { "i", 34000 },	-- Blood Elf Female Mask
-			}),
-			crit(2270, {	-- Blood Elf Male Mask
-				provider = { "i", 34002 },	-- Blood Elf Male Mask
-			}),
-			crit(2261, {	-- Draenei Female Mask
-				provider = { "i", 34001 },	-- Draenei Female Mask
-			}),
-			crit(2271, {	-- Draenei Male Mask
-				provider = { "i", 34003 },	-- Draenei Male Mask
-			}),
-			crit(2262, {	-- Dwarf Female Mask
-				provider = { "i", 20562 },	-- Dwarf Female Mask
-			}),
-			crit(2272, {	-- Dwarf Male Mask
-				provider = { "i", 20561 },	-- Dwarf Male Mask
-			}),
-			crit(2263, {	-- Gnome Female Mask
-				provider = { "i", 20392 },	-- Gnome Female Mask
-			}),
-			crit(2273, {	-- Gnome Male Mask
-				provider = { "i", 20391 },	-- Gnome Male Mask
-			}),
-			crit(17590, {	-- Goblin Female Mask
-				provider = { "i", 49212 },	-- Goblin Female Mask
-				timeline = { ADDED_4_2_2 },
-			}),
-			crit(17591, {	-- Goblin Male Mask
-				provider = { "i", 49210 },	-- Goblin Male Mask
-				timeline = { ADDED_4_2_2 },
-			}),
-			crit(2264, {	-- Human Female Mask
-				provider = { "i", 20565 },	-- Human Female Mask
-			}),
-			crit(2274, {	-- Human Male Mask
-				provider = { "i", 20566 },	-- Human Male Mask
-			}),
-			crit(2265, {	-- Night Elf Female Mask
-				provider = { "i", 20563 },	-- Night Elf Female Mask
-			}),
-			crit(2275, {	-- Night Elf Male Mask
-				provider = { "i", 20564 },	-- Night Elf Male Mask
-			}),
-			crit(2266, {	-- Orc Female Mask
-				provider = { "i", 20569 },	-- Orc Female Mask
-			}),
-			crit(2276, {	-- Orc Male Mask
-				provider = { "i", 20570 },	-- Orc Male Mask
-			}),
-			crit(2267, {	-- Tauren Female Mask
-				provider = { "i", 20571 },	-- Tauren Female Mask
-			}),
-			crit(2277, {	-- Tauren Male Mask
-				provider = { "i", 20572 },	-- Tauren Male Mask
-			}),
-			crit(2268, {	-- Troll Female Mask
-				provider = { "i", 20567 },	-- Troll Female Mask
-			}),
-			crit(2278, {	-- Troll Male Mask
-				provider = { "i", 20568 },	-- Troll Male Mask
-			}),
-			crit(2269, {	-- Undead Female Mask
-				provider = { "i", 20574 },	-- Undead Female Mask
-			}),
-			crit(2279, {	-- Undead Male Mask
-				provider = { "i", 20573 },	-- Undead Male Mask
-			}),
-			crit(17592, {	-- Worgen Female Mask
-				provider = { "i", 49215 },	-- Worgen Female Mask
-				timeline = { ADDED_4_2_2 },
-			}),
-			crit(17593, {	-- Worgen Male Mask
-				provider = { "i", 49216 },	-- Worgen Male Mask
-				timeline = { ADDED_4_2_2 },
-			}),
-		})),
-		ach(291, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- Check Your Head
-			crit(5774, {	-- Blood Elf
-				provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
-			}),
-			crit(5775, {	-- Draenei
-				provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
-			}),
-			crit(5776, {	-- Dwarf
-				provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
-			}),
-			crit(5772, {	-- Gnome
-				provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
-			}),
-			crit(17855, {	-- Goblin
-				timeline = { ADDED_4_2_2 },
-				provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
-			}),
-			crit(5777, {	-- Human
-				provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
-			}),
-			crit(5778, {	-- Night Elf
-				provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
-			}),
-			crit(5779, {	-- Orc
-				provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
-			}),
-			crit(5780, {	-- Tauren
-				provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
-			}),
-			crit(5781, {	-- Troll
-				provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
-			}),
-			crit(5782, {	-- Undead
-				provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
-			}),
-			crit(17854, {	-- Worgen
-				timeline = { ADDED_4_2_2 },
-				provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
-			}),
-		})),
+		ach(284, {	-- A Mask For All Occasions
+			timeline = { ADDED_3_0_2 },
+			groups = {
+				crit(2260, {	-- Blood Elf Female Mask
+					provider = { "i", 34000 },	-- Blood Elf Female Mask
+				}),
+				crit(2270, {	-- Blood Elf Male Mask
+					provider = { "i", 34002 },	-- Blood Elf Male Mask
+				}),
+				crit(2261, {	-- Draenei Female Mask
+					provider = { "i", 34001 },	-- Draenei Female Mask
+				}),
+				crit(2271, {	-- Draenei Male Mask
+					provider = { "i", 34003 },	-- Draenei Male Mask
+				}),
+				crit(2262, {	-- Dwarf Female Mask
+					provider = { "i", 20562 },	-- Dwarf Female Mask
+				}),
+				crit(2272, {	-- Dwarf Male Mask
+					provider = { "i", 20561 },	-- Dwarf Male Mask
+				}),
+				crit(2263, {	-- Gnome Female Mask
+					provider = { "i", 20392 },	-- Gnome Female Mask
+				}),
+				crit(2273, {	-- Gnome Male Mask
+					provider = { "i", 20391 },	-- Gnome Male Mask
+				}),
+				crit(17590, {	-- Goblin Female Mask
+					provider = { "i", 49212 },	-- Goblin Female Mask
+					timeline = { ADDED_4_2_2 },
+				}),
+				crit(17591, {	-- Goblin Male Mask
+					provider = { "i", 49210 },	-- Goblin Male Mask
+					timeline = { ADDED_4_2_2 },
+				}),
+				crit(2264, {	-- Human Female Mask
+					provider = { "i", 20565 },	-- Human Female Mask
+				}),
+				crit(2274, {	-- Human Male Mask
+					provider = { "i", 20566 },	-- Human Male Mask
+				}),
+				crit(2265, {	-- Night Elf Female Mask
+					provider = { "i", 20563 },	-- Night Elf Female Mask
+				}),
+				crit(2275, {	-- Night Elf Male Mask
+					provider = { "i", 20564 },	-- Night Elf Male Mask
+				}),
+				crit(2266, {	-- Orc Female Mask
+					provider = { "i", 20569 },	-- Orc Female Mask
+				}),
+				crit(2276, {	-- Orc Male Mask
+					provider = { "i", 20570 },	-- Orc Male Mask
+				}),
+				crit(2267, {	-- Tauren Female Mask
+					provider = { "i", 20571 },	-- Tauren Female Mask
+				}),
+				crit(2277, {	-- Tauren Male Mask
+					provider = { "i", 20572 },	-- Tauren Male Mask
+				}),
+				crit(2268, {	-- Troll Female Mask
+					provider = { "i", 20567 },	-- Troll Female Mask
+				}),
+				crit(2278, {	-- Troll Male Mask
+					provider = { "i", 20568 },	-- Troll Male Mask
+				}),
+				crit(2269, {	-- Undead Female Mask
+					provider = { "i", 20574 },	-- Undead Female Mask
+				}),
+				crit(2279, {	-- Undead Male Mask
+					provider = { "i", 20573 },	-- Undead Male Mask
+				}),
+				crit(17592, {	-- Worgen Female Mask
+					provider = { "i", 49215 },	-- Worgen Female Mask
+					timeline = { ADDED_4_2_2 },
+				}),
+				crit(17593, {	-- Worgen Male Mask
+					provider = { "i", 49216 },	-- Worgen Male Mask
+					timeline = { ADDED_4_2_2 },
+				}),
+			},
+		}),
+		ach(291, {	-- Check Your Head
+			timeline = { ADDED_3_0_2 },
+			groups = {
+				crit(5774, {	-- Blood Elf
+					provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5775, {	-- Draenei
+					provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5776, {	-- Dwarf
+					provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5772, {	-- Gnome
+					provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
+				}),
+				crit(17855, {	-- Goblin
+					timeline = { ADDED_4_2_2 },
+					provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5777, {	-- Human
+					provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5778, {	-- Night Elf
+					provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5779, {	-- Orc
+					provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5780, {	-- Tauren
+					provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5781, {	-- Troll
+					provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
+				}),
+				crit(5782, {	-- Undead
+					provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
+				}),
+				crit(17854, {	-- Worgen
+					timeline = { ADDED_4_2_2 },
+					provider = { "i", 34068 }	-- Weighted Jack-o'-Lantern
+				}),
+			},
+		}),
 		ach(18959, { timeline = { ADDED_10_1_7 } }),	-- Don't Lose Your Head, Man
 		ach(64162, {	-- Drustvar Choc-O-Drop Designer
 			maps = { FOUNDERS_POINT, RAZORWIND_SHORES },
@@ -470,7 +476,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			cost = { { "i", TRICKY_TREAT, 3 } },
 			timeline = { ADDED_3_0_2 },
 		}),
-		ach(1040, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- Rotten Hallow (A)
+		ach(1040, {	-- Rotten Hallow (A)
+			timeline = { ADDED_3_0_2 },
 			races = ALLIANCE_ONLY,
 			groups = {
 				-- #if AFTER 4.0.1
@@ -495,8 +502,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				-- #endif
 			},
-		})),
-		ach(1041, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- Rotten Hallow (H)
+		}),
+		ach(1041, {	-- Rotten Hallow (H)
+			timeline = { ADDED_3_0_2 },
 			races = HORDE_ONLY,
 			groups = {
 				-- #if AFTER 4.0.1
@@ -521,7 +529,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				-- #endif
 			},
-		})),
+		}),
 		ach(292, {	-- Sinister Calling
 			-- #if BEFORE WRATH
 			providers = {
@@ -549,10 +557,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		ach(979, {	-- The Mask Task
 			timeline = { ADDED_3_0_2 },
 		}),
-		ach(283, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- The Masquerade
+		ach(283, {	-- The Masquerade
 			-- #if AFTER TWW
 			description = "You can only get transformed by party members of your faction.",
 			-- #endif
+			timeline = { ADDED_3_0_2 },
 			groups = {
 				crit(3209, {	-- Transformed by Hallowed Wand - Bat
 					provider = { "i", 20410 },	-- Hallowed Wand - Bat
@@ -576,7 +585,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					provider = { "i", 20414 },	-- Hallowed Wand - Wisp
 				}),
 			},
-		})),
+		}),
 		ach(289, {	-- The Savior of Hallow's End
 			maps = { ELWYNN_FOREST, AZUREMYST_ISLE, TIRISFAL_GLADES, EVERSONG_WOODS, DUN_MOROGH, DUROTAR },
 			timeline = { ADDED_3_0_2 },

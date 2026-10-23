@@ -201,15 +201,16 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		-- #endif
 		rank = 30,
 	}),
-	ach(1021, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- Twenty-Five Tabards
+	ach(1021, {	-- Twenty-Five Tabards
 		-- #if BEFORE LEGION
 		_noautomation = true,
 		-- #endif
 		rank = 25,
+		timeline = { ADDED_3_0_2 },
 		groups = {
 			i(40643),	-- Tabard of the Achiever
 		},
-	})),
+	}),
 	-- #if BEFORE 4.0.1
 	ach(4784, {	-- Emblematic [A]
 		timeline = { ADDED_3_3_3, REMOVED_4_0_1 },
@@ -345,33 +346,36 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		timeline = { ADDED_5_0_4 },
 		_noautomation = true,
 	})),
-	applyclassicphase(MOP_PHASE_ONE, ach(6742, bubbleDownSelf({timeline = {ADDED_5_0_4}}, {	-- 60 Exalted Reputations
+	applyclassicphase(MOP_PHASE_ONE, ach(6742, {	-- 60 Exalted Reputations
 		_noautomation = true,
+		timeline = {ADDED_5_0_4},
 		groups = {
 			title(197),	-- <Name> the Beloved
 		},
-	}))),
+	})),
 	applyclassicphase(LEGION_PHASE_ONE, ach(11177, {	-- 70 Exalted Reputations
 		timeline = { ADDED_7_0_3_LAUNCH },
 		_noautomation = true,
 	})),
-	applyclassicphase(BFA_PHASE_ONE, ach(12864, bubbleDownSelf({timeline = {ADDED_8_0_1_LAUNCH}}, {	-- 80 Exalted Reputations
+	applyclassicphase(BFA_PHASE_ONE, ach(12864, {	-- 80 Exalted Reputations
 		_noautomation = true,
+		timeline = {ADDED_8_0_1_LAUNCH},
 		groups = {
 			title(380),	-- <Name> the Admired
 		},
-	}))),
+	})),
 	applyclassicphase(BFA_PHASE_ONE, ach(12865, {	-- 90 Exalted Reputations
 		timeline = { ADDED_8_0_1_LAUNCH },
 		_noautomation = true,
 	})),
-	applyclassicphase(BFA_PHASE_ONE, ach(12866, bubbleDownSelf({timeline = {ADDED_8_0_1_LAUNCH}}, {	-- 100 Exalted Reputations
+	applyclassicphase(BFA_PHASE_ONE, ach(12866, {	-- 100 Exalted Reputations
 		_noautomation = true,
+		timeline = {ADDED_8_0_1_LAUNCH},
 		groups = {
 			i(163982),	-- Pureheart Courser (MOUNT!)
 			title(379),	-- Esteemed <Name>
 		},
-	}))),
+	})),
 	ach(18471, {	-- 110 Exalted Reputations
 		timeline = { ADDED_10_1_5 },
 		_noautomation = true,
@@ -841,93 +845,147 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		timeline = { ADDED_2_0_3, REMOVED_9_0_1 },
 		rank = 4,
 	})),
-	n(ARMOR, bubbleDownSelf({ timeline = { ADDED_7_0_3 }, }, {
-		ach(11761, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, }, {	-- Azeroth's Next Top Model
-			title(356),	-- Stylist
-		})),
-		ach(10694, {	-- Fabulous
-			sym = {{"meta_achievement",
-				10687,	-- Fashionista: Back
-				10682,	-- Fashionista: Chest
-				10685,	-- Fashionista: Feet
-				10693,	-- Fashionista: Hand
-				10681,	-- Fashionista: Head
-				10684,	-- Fashionista: Legs
-				10691,	-- Fashionista: Shirt
-				10692,	-- Fashionista: Shoulder
-				10690,	-- Fashionista: Tabard
-				10686,	-- Fashionista: Waist
-				10689,	-- Fashionista: Weapon & Off-Hand
-				10688,	-- Fashionista: Wrist
-			}},
-			groups = {
-				title(334),	-- the Fabulous
-			},
-		}),
-		ach(10687),	-- Fashionista: Back
-		ach(10682),	-- Fashionista: Chest
-		ach(10685),	-- Fashionista: Feet
-		ach(10693),	-- Fashionista: Hand
-		ach(10681),	-- Fashionista: Head
-		ach(10684),	-- Fashionista: Legs
-		ach(10691),	-- Fashionista: Shirt
-		ach(10692),	-- Fashionista: Shoulder
-		ach(10690),	-- Fashionista: Tabard
-		ach(10686),	-- Fashionista: Waist
-		ach(10689),	-- Fashionista: Weapon & Off-Hand
-		ach(10688),	-- Fashionista: Wrist
-	})),
+	n(ARMOR, {
+		timeline = { ADDED_7_0_3 },
+		groups = {
+			ach(11761, {	-- Azeroth's Next Top Model
+				timeline = { ADDED_7_2_0 },
+				groups = {
+					title(356),	-- Stylist
+				},
+			}),
+			ach(10694, {	-- Fabulous
+				sym = {{"meta_achievement",
+					10687,	-- Fashionista: Back
+					10682,	-- Fashionista: Chest
+					10685,	-- Fashionista: Feet
+					10693,	-- Fashionista: Hand
+					10681,	-- Fashionista: Head
+					10684,	-- Fashionista: Legs
+					10691,	-- Fashionista: Shirt
+					10692,	-- Fashionista: Shoulder
+					10690,	-- Fashionista: Tabard
+					10686,	-- Fashionista: Waist
+					10689,	-- Fashionista: Weapon & Off-Hand
+					10688,	-- Fashionista: Wrist
+				}},
+				groups = {
+					title(334),	-- the Fabulous
+				},
+			}),
+			ach(10687),	-- Fashionista: Back
+			ach(10682),	-- Fashionista: Chest
+			ach(10685),	-- Fashionista: Feet
+			ach(10693),	-- Fashionista: Hand
+			ach(10681),	-- Fashionista: Head
+			ach(10684),	-- Fashionista: Legs
+			ach(10691),	-- Fashionista: Shirt
+			ach(10692),	-- Fashionista: Shoulder
+			ach(10690),	-- Fashionista: Tabard
+			ach(10686),	-- Fashionista: Waist
+			ach(10689),	-- Fashionista: Weapon & Off-Hand
+			ach(10688),	-- Fashionista: Wrist
+		},
+	}),
 	filter(MOUNTS, {
-		a(ach(62103, bubbleDownSelf({ timeline = { ADDED_12_0_0 } }, {	-- Insurmountable Collection (A, 600 mounts)
-			i(265656),	-- Anu'shalla, Shadow's Guidance (MOUNT!)
-		}))),
-		h(ach(62096, bubbleDownSelf({ timeline = { ADDED_12_0_0 } }, {	-- Insurmountable Collection (H, 600 mounts)
-			i(265656),	-- Anu'shalla, Shadow's Guidance (MOUNT!)
-		}))),
-		a(ach(15834, bubbleDownSelf({ timeline = { ADDED_10_0_0 } }, {	-- A Horde of Hoofbeats (A, 500 mounts)
-			i(198654),	-- Otterworldly Ottuk Carrier (MOUNT!)
-		}))),
-		h(ach(15833, bubbleDownSelf({ timeline = { ADDED_10_0_0 } }, {	-- A Horde of Hoofbeats (H, 500 mounts)
-			i(198654),	-- Otterworldly Ottuk Carrier (MOUNT!)
-		}))),
-		a(ach(12933, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {	-- A Horde of Hoofbeats (A, 400 mounts)
-			i(163981),	-- Frenzied Feltalon (MOUNT!)
-		}))),
-		h(ach(12934, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {	-- A Horde of Hoofbeats (H, 400 mounts)
-			i(163981),	-- Frenzied Feltalon (MOUNT!)
-		}))),
-		a(ach(12932, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {	-- No Stable Big Enough (A, 350 mounts)
-			i(137614),	-- Frostshard Infernal (MOUNT!)
-		}))),
-		h(ach(12931, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {	-- No Stable Big Enough (H, 350 mounts)
-			i(137614),	-- Frostshard Infernal (MOUNT!)
-		}))),
-		a(ach(10356, bubbleDownSelf({ timeline = { ADDED_6_2_2 } }, {	-- Lord of the Reins (A, 300 mounts)
-			i(87776),	-- Heavenly Azure Cloud Serpent (MOUNT!)
-			title(331),	-- <Name>, Lord of the Reins
-		}))),
-		h(ach(10355, bubbleDownSelf({ timeline = { ADDED_6_2_2 } }, {	-- Lord of the Reins (H, 300 mounts)
-			i(87776),	-- Heavenly Azure Cloud Serpent (MOUNT!)
-			title(331),	-- <Name>, Lord of the Reins
-		}))),
-		a(ach(9598,  bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {	-- Mountacular (A, 250 mounts)
-			i(69226),	-- Felfire Hawk (MOUNT!)
-		}))),
-		h(ach(9599,  bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {	-- Mountacular (H, 250 mounts)
-			i(69226),	-- Felfire Hawk (MOUNT!)
-		}))),
-		a(ach(8304,  bubbleDownSelf({ timeline = { ADDED_5_3_0 } }, {	-- Mount Parade (A, 200 mounts)
-			i(98259),	-- Armored Blue Dragonhawk (MOUNT!)
-		}))),
-		h(ach(8302,  bubbleDownSelf({ timeline = { ADDED_5_3_0 } }, {	-- Mount Parade (H, 200 mounts)
-			i(98104),	-- Armored Red Dragonhawk (MOUNT!)
-		}))),
-		a(ach(7860,  bubbleDownSelf({ timeline = { ADDED_5_1_0 } }, {	-- We're Going to Need More Saddles (A, 150 mounts)
-			i(91802),	-- Jade Pandaren Kite String (MOUNT!)
-		}))),
-		h(ach(7862,  bubbleDownSelf({ timeline = { ADDED_5_1_0 } }, {	-- We're Going to Need More Saddles (H, 150 mounts)
-			i(91802),	-- Jade Pandaren Kite String (MOUNT!)
-		}))),
+		a(ach(62103, {	-- Insurmountable Collection (A, 600 mounts)
+			timeline = { ADDED_12_0_0 },
+			groups = {
+				i(265656),	-- Anu'shalla, Shadow's Guidance (MOUNT!)
+			},
+		})),
+		h(ach(62096, {	-- Insurmountable Collection (H, 600 mounts)
+			timeline = { ADDED_12_0_0 },
+			groups = {
+				i(265656),	-- Anu'shalla, Shadow's Guidance (MOUNT!)
+			},
+		})),
+		a(ach(15834, {	-- A Horde of Hoofbeats (A, 500 mounts)
+			timeline = { ADDED_10_0_0 },
+			groups = {
+				i(198654),	-- Otterworldly Ottuk Carrier (MOUNT!)
+			},
+		})),
+		h(ach(15833, {	-- A Horde of Hoofbeats (H, 500 mounts)
+			timeline = { ADDED_10_0_0 },
+			groups = {
+				i(198654),	-- Otterworldly Ottuk Carrier (MOUNT!)
+			},
+		})),
+		a(ach(12933, {	-- A Horde of Hoofbeats (A, 400 mounts)
+			timeline = { ADDED_8_0_1 },
+			groups = {
+				i(163981),	-- Frenzied Feltalon (MOUNT!)
+			},
+		})),
+		h(ach(12934, {	-- A Horde of Hoofbeats (H, 400 mounts)
+			timeline = { ADDED_8_0_1 },
+			groups = {
+				i(163981),	-- Frenzied Feltalon (MOUNT!)
+			},
+		})),
+		a(ach(12932, {	-- No Stable Big Enough (A, 350 mounts)
+			timeline = { ADDED_8_0_1 },
+			groups = {
+				i(137614),	-- Frostshard Infernal (MOUNT!)
+			},
+		})),
+		h(ach(12931, {	-- No Stable Big Enough (H, 350 mounts)
+			timeline = { ADDED_8_0_1 },
+			groups = {
+				i(137614),	-- Frostshard Infernal (MOUNT!)
+			},
+		})),
+		a(ach(10356, {	-- Lord of the Reins (A, 300 mounts)
+			timeline = { ADDED_6_2_2 },
+			groups = {
+				i(87776),	-- Heavenly Azure Cloud Serpent (MOUNT!)
+				title(331),	-- <Name>, Lord of the Reins
+			},
+		})),
+		h(ach(10355, {	-- Lord of the Reins (H, 300 mounts)
+			timeline = { ADDED_6_2_2 },
+			groups = {
+				i(87776),	-- Heavenly Azure Cloud Serpent (MOUNT!)
+				title(331),	-- <Name>, Lord of the Reins
+			},
+		})),
+		a(ach(9598,  {	-- Mountacular (A, 250 mounts)
+			timeline = { ADDED_6_0_2 },
+			groups = {
+				i(69226),	-- Felfire Hawk (MOUNT!)
+			},
+		})),
+		h(ach(9599,  {	-- Mountacular (H, 250 mounts)
+			timeline = { ADDED_6_0_2 },
+			groups = {
+				i(69226),	-- Felfire Hawk (MOUNT!)
+			},
+		})),
+		a(ach(8304,  {	-- Mount Parade (A, 200 mounts)
+			timeline = { ADDED_5_3_0 },
+			groups = {
+				i(98259),	-- Armored Blue Dragonhawk (MOUNT!)
+			},
+		})),
+		h(ach(8302,  {	-- Mount Parade (H, 200 mounts)
+			timeline = { ADDED_5_3_0 },
+			groups = {
+				i(98104),	-- Armored Red Dragonhawk (MOUNT!)
+			},
+		})),
+		a(ach(7860,  {	-- We're Going to Need More Saddles (A, 150 mounts)
+			timeline = { ADDED_5_1_0 },
+			groups = {
+				i(91802),	-- Jade Pandaren Kite String (MOUNT!)
+			},
+		})),
+		h(ach(7862,  {	-- We're Going to Need More Saddles (H, 150 mounts)
+			timeline = { ADDED_5_1_0 },
+			groups = {
+				i(91802),	-- Jade Pandaren Kite String (MOUNT!)
+			},
+		})),
 		applyclassicphase(WRATH_PHASE_ONE, ach(2536, {	-- Mountain o' Mounts [A] (100 mounts)
 			timeline = { ADDED_3_0_2 },
 			races = ALLIANCE_ONLY,
@@ -958,27 +1016,45 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			timeline = { ADDED_3_0_2 },
 			-- #endif
 		}),
-		ach(9713, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {	-- Awake the Drakes (automated)
-			i(118676),	-- Emerald Drake (MOUNT!)
-		})),
+		ach(9713, {	-- Awake the Drakes (automated)
+			timeline = { ADDED_6_0_2 },
+			groups = {
+				i(118676),	-- Emerald Drake (MOUNT!)
+			},
+		}),
 	}),
 	-- #if AFTER 6.0.2
 	filter(TOYS, {
-		ach(15781, bubbleDownSelf({ timeline = { ADDED_10_0_0 } }, {	-- The Joy of Toy (500)
-			i(197986),	-- Murglasses (TOY!)
-		})),
-		ach(12996, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {	-- Toybox Tycoon (400)
-			i(163244),	-- Brutus (PET!)
-		})),
-		ach(11176, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {	-- Remember to Share (300)
-			i(140500),	-- Mechanized Lumber Extractor (MOUNT!)
-		})),
-		ach(10354, bubbleDownSelf({ timeline = { ADDED_6_2_2 } }, {	-- Crashin' Thrashin' Commander(200)
-			title(53),	-- Crashin' Thrashin'
-		})),
-		ach(9673, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {	-- The Toymaster (150)
-			i(119215),	-- Robo-Gnomebulator (TOY!)
-		})),
+		ach(15781, {	-- The Joy of Toy (500)
+			timeline = { ADDED_10_0_0 },
+			groups = {
+				i(197986),	-- Murglasses (TOY!)
+			},
+		}),
+		ach(12996, {	-- Toybox Tycoon (400)
+			timeline = { ADDED_8_0_1 },
+			groups = {
+				i(163244),	-- Brutus (PET!)
+			},
+		}),
+		ach(11176, {	-- Remember to Share (300)
+			timeline = { ADDED_7_0_3 },
+			groups = {
+				i(140500),	-- Mechanized Lumber Extractor (MOUNT!)
+			},
+		}),
+		ach(10354, {	-- Crashin' Thrashin' Commander(200)
+			timeline = { ADDED_6_2_2 },
+			groups = {
+				title(53),	-- Crashin' Thrashin'
+			},
+		}),
+		ach(9673, {	-- The Toymaster (150)
+			timeline = { ADDED_6_0_2 },
+			groups = {
+				i(119215),	-- Robo-Gnomebulator (TOY!)
+			},
+		}),
 		ach(9672, {timeline = { ADDED_6_0_2 }}),	-- Tons of Toys (100)
 		ach(9671, {timeline = { ADDED_6_0_2 }}),	-- Having a Ball (50)
 		ach(9670, {timeline = { ADDED_6_0_2 }}),	-- Toying Around (25)

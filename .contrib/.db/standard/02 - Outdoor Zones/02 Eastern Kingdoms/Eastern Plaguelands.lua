@@ -1027,13 +1027,14 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 				header(HEADERS.Item, 12846, {	-- Argent Dawn Commission
 					description = "1. Enter Old Scholomance and go to the room with Rattlegore (beneath The Great Ossuary). On the southwestern pile of bones can you find and loot the tiny object 'Cracked Argent Dawn Commission'.\n\n2. Obtain 1x Righteous Orb and 4x Truesilver Bars, and use the 'Cracked Argent Dawn Commission' to repair it. Equip your new 'Argent Dawn Commission'.\n\n3. Kill Darkmaster Gandling in Old Scholomance and loot the quest item 'Darkmaster's Scourgestone'.\n\n4. Accept the quest, and turn it in to the Argent Crusade representative in Light's Hope Chapel or Chillwind Camp/The Bulwark.\n\n5. You now have unlocked the ability to obtain Invader's Scourgestones on an account-wide basis, but it might require an Argent Dawm Commission to be equipped unless Scholomance/Stratholme/Nazzramas automatically gives you the eligibility as a buff. Your alts can get theirs by interacting with Duke Nicholas Zverenhoff in Light's Hope Chapel if eligibility is not automatically provided as buffs in the given instances.",
 					groups = {
-						o(403567, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {		-- Cracked Argent Dawn Commission
+						o(403567, {		-- Cracked Argent Dawn Commission
 							description = "Can be found at the top of the southwest bone pile in Rattlegore's room. From the Great Ossuary, you can drop down from the southwest hole leading to Rattlegore's room and look down, it's a small object on the pile.\n\nThis is not visible if your character already has an Argent Dawn Commission or a Rune/Seal of the Dawn!",
+							timeline = { ADDED_10_1_5 },
 							maps = { 306 },
 							groups = {
 								i(206372),	-- Cracked Argent Dawn Commission
 							},
-						})),
+						}),
 						i(12846, {	-- Argent Dawn Commission
 							cost = {
 								{ "i", 206372, 1 },	-- 1x Cracked Argent Dawn Commission
@@ -1296,7 +1297,8 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 				}),
 				n(VENDORS, {
 					n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>
-						i(206584, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {	-- Archived Crafting Techniques
+						i(206584, {	-- Archived Crafting Techniques
+							timeline = { ADDED_10_1_5 },
 							cost = { { "i", 12844, 6 } },	-- Argent Dawn Valor Token
 							groups = {
 								i(207569),	-- Ancient Formula: Magebane Nexus (RECIPE!)
@@ -1319,7 +1321,7 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 								i(206528),	-- Ancient Technique: Shifting Sliver (RECIPE!)
 								i(207575),	-- Ancient Technique: Wanderer's Guide (RECIPE!)
 							},
-						})),
+						}),
 					}),
 				}),
 				-- Nax portal: 35.7, 23.1

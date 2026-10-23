@@ -2567,26 +2567,29 @@ maproot(KALIMDOR, SILITHUS, {
 		n(REWARDS, {
 			description = "These are rewarded from multiple quests in the zone. Refer to the individual item tooltips for more information.",
 			groups = {
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(20808, bubbleDownSelf({ timeline = { REMOVED_4_0_3 } }, {	-- Combat Assignment
-					i(22648, {	-- Hive'Ashi Dossier
-						i(21749),	-- Combat Task Briefing I
-						i(21750),	-- Combat Task Briefing II
-						i(20942),	-- Combat Task Briefing III
-						i(20941),	-- Combat Task Briefing XII
-					}),
-					i(22649, {	-- Hive'Regal Dossier
-						i(21253),	-- Combat Task Briefing IX
-						i(21252),	-- Combat Task Briefing VIII
-						i(21255),	-- Combat Task Briefing X
-						i(21256),	-- Combat Task Briefing XI
-					}),
-					i(22650, {	-- Hive'Zora Dossier
-						i(21248),	-- Combat Task Briefing IV
-						i(21249),	-- Combat Task Briefing V
-						i(21250),	-- Combat Task Briefing VI
-						i(21251),	-- Combat Task Briefing VII
-					}),
-				}))),
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(20808, {	-- Combat Assignment
+					timeline = { REMOVED_4_0_3 },
+					groups = {
+						i(22648, {	-- Hive'Ashi Dossier
+							i(21749),	-- Combat Task Briefing I
+							i(21750),	-- Combat Task Briefing II
+							i(20942),	-- Combat Task Briefing III
+							i(20941),	-- Combat Task Briefing XII
+						}),
+						i(22649, {	-- Hive'Regal Dossier
+							i(21253),	-- Combat Task Briefing IX
+							i(21252),	-- Combat Task Briefing VIII
+							i(21255),	-- Combat Task Briefing X
+							i(21256),	-- Combat Task Briefing XI
+						}),
+						i(22650, {	-- Hive'Zora Dossier
+							i(21248),	-- Combat Task Briefing IV
+							i(21249),	-- Combat Task Briefing V
+							i(21250),	-- Combat Task Briefing VI
+							i(21251),	-- Combat Task Briefing VII
+						}),
+					},
+				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20419, {	-- Crest of Beckoning: Earth
 					-- #if AFTER CATA
 					description = "This item became useless after the release of Cataclysm because the rest of the items can't be obtained.",
@@ -2783,7 +2786,8 @@ maproot(KALIMDOR, SILITHUS, {
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(20805, bubbleDownSelf({ timeline = { REMOVED_4_0_3 } }, {	-- Followup Logistics Assignment (A)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(20805, {	-- Followup Logistics Assignment (A)
+					timeline = { REMOVED_4_0_3 },
 					races = ALLIANCE_ONLY,
 					groups = {
 						i(20807),	-- Logistics Task Briefing I (A)
@@ -2793,8 +2797,9 @@ maproot(KALIMDOR, SILITHUS, {
 						i(21265),	-- Logistics Task Briefing IX (A)
 						i(21514),	-- Logistics Task Briefing XI
 					},
-				}))),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21386, bubbleDownSelf({ timeline = { REMOVED_4_0_3 } }, {	-- Followup Logistics Assignment (H)
+				})),
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21386, {	-- Followup Logistics Assignment (H)
+					timeline = { REMOVED_4_0_3 },
 					races = HORDE_ONLY,
 					groups = {
 						i(21378),	-- Logistics Task Briefing I (H)
@@ -2804,16 +2809,20 @@ maproot(KALIMDOR, SILITHUS, {
 						i(21381),	-- Logistics Task Briefing IX (H)
 						i(21514),	-- Logistics Task Briefing XI
 					},
-				}))),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21133, bubbleDownSelf({ timeline = { REMOVED_4_0_3 } }, {	-- Followup Tactical Assignment
-					i(21245),	-- Tactical Task Briefing I
-					i(20945),	-- Tactical Task Briefing II
-					i(20947),	-- Tactical Task Briefing IV
-					i(20948),	-- Tactical Task Briefing V
-					i(21167),	-- Tactical Task Briefing VIII
-					i(20943),	-- Tactical Task Briefing X
-				}))),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21132, bubbleDownSelf({ timeline = { REMOVED_4_0_3 } }, {	-- Logistics Assignment (A)
+				})),
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21133, {	-- Followup Tactical Assignment
+					timeline = { REMOVED_4_0_3 },
+					groups = {
+						i(21245),	-- Tactical Task Briefing I
+						i(20945),	-- Tactical Task Briefing II
+						i(20947),	-- Tactical Task Briefing IV
+						i(20948),	-- Tactical Task Briefing V
+						i(21167),	-- Tactical Task Briefing VIII
+						i(20943),	-- Tactical Task Briefing X
+					},
+				})),
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21132, {	-- Logistics Assignment (A)
+					timeline = { REMOVED_4_0_3 },
 					races = ALLIANCE_ONLY,
 					groups = {
 						i(21257),	-- Logistics Task Briefing IV (A)
@@ -2822,8 +2831,9 @@ maproot(KALIMDOR, SILITHUS, {
 						i(21263),	-- Logistics Task Briefing VII (A)
 						i(20806),	-- Logistics Task Briefing X (A)
 					},
-				}))),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21266, bubbleDownSelf({ timeline = { REMOVED_4_0_3 } }, {	-- Logistics Assignment (H)
+				})),
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21266, {	-- Logistics Assignment (H)
+					timeline = { REMOVED_4_0_3 },
 					races = HORDE_ONLY,
 					groups = {
 						i(21258),	-- Logistics Task Briefing IV (H)
@@ -2832,14 +2842,17 @@ maproot(KALIMDOR, SILITHUS, {
 						i(21264),	-- Logistics Task Briefing VII (H)
 						i(21385),	-- Logistics Task Briefing X (H)
 					},
-				}))),
-				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(20809, bubbleDownSelf({ timeline = { REMOVED_4_0_3 } }, {	-- Tactical Assignment
-					i(21245),	-- Tactical Task Briefing I
-					i(21751),	-- Tactical Task Briefing III
-					i(20944),	-- Tactical Task Briefing IX
-					i(21165),	-- Tactical Task Briefing VI
-					i(21166),	-- Tactical Task Briefing VII
-				}))),
+				})),
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(20809, {	-- Tactical Assignment
+					timeline = { REMOVED_4_0_3 },
+					groups = {
+						i(21245),	-- Tactical Task Briefing I
+						i(21751),	-- Tactical Task Briefing III
+						i(20944),	-- Tactical Task Briefing IX
+						i(21165),	-- Tactical Task Briefing VI
+						i(21166),	-- Tactical Task Briefing VII
+					},
+				})),
 			},
 		}),
 		-- #if SEASON_OF_DISCOVERY

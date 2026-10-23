@@ -4,8 +4,9 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	n(ACHIEVEMENTS, {
-		ach(19458, bubbleDownSelf({ timeline = { ADDED_10_2_6 } }, {	-- A World Awoken
+		ach(19458, {	-- A World Awoken
 			-- Meta Achievement
+			timeline = { ADDED_10_2_6 },
 			sym = {{"meta_achievement",
 				18160,	-- Aberrus, the Shadowed Crucible
 				19486,	-- Across the Isles
@@ -28,9 +29,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					timeline = { ADDED_11_2_7 },
 				}),
 			},
-		})),
-		ach(19486, bubbleDownSelf({ timeline = { ADDED_10_2_6 } }, {	-- Across the Isles
+		}),
+		ach(19486, {	-- Across the Isles
 			-- Meta Achievement
+			timeline = { ADDED_10_2_6 },
 			sym = {{"meta_achievement",
 				19482,	-- Army of the Fed
 				19481,	-- Centaur of Attention
@@ -45,7 +47,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 			groups = {
 				i(192751),	-- Stormtouched Bruffalon (MOUNT!)
 			},
-		})),
+		}),
 		ach(17119, {	-- Deep Cuts From the Vault
 			-- Meta Achievement
 			sym = {{"meta_achievement",
@@ -376,8 +378,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				}),
 			},
 		}),
-		ach(18027, bubbleDownSelf({ timeline = { ADDED_10_1_0, REMOVED_11_0_0 } }, {	-- Dragonflight Season 2 Master
+		ach(18027, {	-- Dragonflight Season 2 Master
 			-- Meta Achievement
+			timeline = { ADDED_10_1_0, REMOVED_11_0_0 },
 			sym = {{"meta_achievement",
 				18161,	-- Heroic: Aberrus, the Shadowed Crucible
 				17844,	-- Dragonflight Keystone Master: Season Two
@@ -386,9 +389,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 			groups = {
 				i(204843),	-- Draconic Mark of Mastery
 			},
-		})),
-		ach(18380, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Dragonflight Season 2 Hero
+		}),
+		ach(18380, {	-- Dragonflight Season 2 Hero
 			-- Meta Achievement
+			timeline = { ADDED_10_1_0 },
 			sym = {{"meta_achievement",
 				18159,	-- Mythic: Scalecommander Sarkareth
 				17845,	-- Dragonflight Keystone Hero: Season Two
@@ -716,9 +720,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					})),--]]
 				}),
 			},
-		})),
-		ach(19396, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_11_0_0 } }, {	-- Dragonflight Season 3 Master
+		}),
+		ach(19396, {	-- Dragonflight Season 3 Master
 			-- Meta Achievement
+			timeline = { ADDED_10_2_0, REMOVED_11_0_0 },
 			sym = {{"meta_achievement",
 				19333,	-- Heroic: Amirdrassil, the Dream's Hope
 				19011,	-- Dragonflight Keystone Master: Season Three
@@ -727,9 +732,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 			groups = {
 				i(210944),	-- Emerald Mark of Mastery
 			},
-		})),
-		ach(19420, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Dragonflight Season 3 Hero
+		}),
+		ach(19420, {	-- Dragonflight Season 3 Hero
 			-- Meta Achievement
+			timeline = { ADDED_10_2_0 },
 			sym = {{"meta_achievement",
 				19343,	-- Mythic: Fyrakk the Blazing
 				19012,	-- Dragonflight Keystone Hero: Season Three
@@ -1045,9 +1051,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					})),--]]
 				}),
 			},
-		})),
-		ach(20481, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Dragonflight Season 4 Master
+		}),
+		ach(20481, {	-- Dragonflight Season 4 Master
 			-- Meta Achievement
+			timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 			sym = {{"meta_achievement",
 				19499,	-- Challenger II: Dragonflight Season 4
 				19782,	-- Dragonflight Keystone Master: Season Four
@@ -1058,7 +1065,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 			groups = {
 				i(217410),	-- Awakened Mark of Mastery
 			},
-		})),
+		}),
 		ach(19326, {	-- Dreaming of Drakes
 			timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 		}),
@@ -1088,8 +1095,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				_quests = { 67084 },	-- The Silver Purpose
 			}),
 		}),
-		ach(18804, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Neltharion's Legacy
+		ach(18804, {	-- Neltharion's Legacy
 			-- Meta Achievement
+			timeline = { ADDED_10_1_7 },
 			sym = {{"meta_achievement",
 				17773,	-- A Blue Dawn
 				18160,	-- Aberrus, the Shadowed Crucible
@@ -1156,7 +1164,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),--]]
 				}),
 			},
-		})),
+		}),
 		ach(19466, {	-- Oh My God, They Were Clutchmates
 			timeline = { ADDED_10_2_6 },
 			-- Meta Achievement

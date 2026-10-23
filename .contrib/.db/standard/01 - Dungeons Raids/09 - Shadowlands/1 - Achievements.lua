@@ -4,8 +4,9 @@
 
 root(ROOTS.Instances, expansion(EXPANSION.SL, {
 	n(ACHIEVEMENTS, {
-		ach(15684, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Fates of the Shadowlands Raids
+		ach(15684, {	-- Fates of the Shadowlands Raids
 			-- Meta Achievement
+			timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 			sym = {{"meta_achievement",
 				15663,	-- Fate of Nathria
 				15667,	-- Fate of Domination
@@ -14,8 +15,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 			groups = {
 				i(190170),	-- Jigglesworth Sr. (MOUNT!)
 			},
-		})),
-		ach(15685, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Heroic: Fates of the Shadowlands Raids
+		}),
+		ach(15685, {	-- Heroic: Fates of the Shadowlands Raids
+			timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 			sym = {{"meta_achievement",
 				15664,	-- Heroic: Fate of Nathria
 				15668,	-- Heroic: Fate of Domination
@@ -24,8 +26,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 			groups = {
 				title(464),	-- <Name>, Hero of Fate
 			},
-		})),
-		ach(15687, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Mythic: Fates of the Shadowlands Raids
+		}),
+		ach(15687, {	-- Mythic: Fates of the Shadowlands Raids
+			timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 			sym = {{"meta_achievement",
 				15665,	-- Mythic: Fate of Nathria
 				15669,	-- Mythic: Fate of Domination
@@ -36,7 +39,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				spell(373191),	-- Path of the Tormented Soul
 				spell(373192),	-- Path of the First Ones
 			},
-		})),
+		}),
 		ach(14418, {	-- Shadowlands Dungeon Hero
 			-- Meta Achievement
 			sym = {{"meta_achievement",

@@ -219,17 +219,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ timeline = 
 					description = "This boss can be found in Coldheart Interstitia.",
 				}),
 			}),
-			ach(15075, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {	-- Infiltrators
-				crit(52170, {	-- Karthazel
-					cr = 179136,	-- Karthazel
-				}),
-				crit(52171, {	-- Sath'zuul
-					cr = 179135,	-- Sath'zuul
-				}),
-				crit(52172, {	-- Vil'thras
-					cr = 179133,	-- Vil'thras
-				}),
-			})),
+			ach(15075, {	-- Infiltrators
+				timeline = { ADDED_9_1_0 },
+				groups = {
+					crit(52170, {	-- Karthazel
+						cr = 179136,	-- Karthazel
+					}),
+					crit(52171, {	-- Sath'zuul
+						cr = 179135,	-- Sath'zuul
+					}),
+					crit(52172, {	-- Vil'thras
+						cr = 179133,	-- Vil'thras
+					}),
+				},
+			}),
 			ach(14755, {timeline = { ADDED_9_1_0 }}),	-- Legendary Accord
 			ach(15080, {timeline = { ADDED_9_1_0 }}),	-- So Blessed
 			ach(15079, {	-- Many, Many Things

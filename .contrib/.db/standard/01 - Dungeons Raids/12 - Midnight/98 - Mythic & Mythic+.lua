@@ -26,9 +26,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				ach(61258, {	-- Midnight Keystone Legend: Season One
 					i(262621),	-- Convalescent Carrion (MOUNT!)
 				}),
-				ach(63097, bubbleDownSelf({ timeline = { ADDED_12_0_5, REMOVED_12_1_0 } }, {	-- Midnight Keystone Myth: Season One
-					title(773),	-- <Name> the Umbral Contender
-				})),
+				ach(63097, {	-- Midnight Keystone Myth: Season One
+					timeline = { ADDED_12_0_5, REMOVED_12_1_0 },
+					groups = {
+						title(773),	-- <Name> the Umbral Contender
+					},
+				}),
 				ach(63104,{	-- Umbral Champion: Midnight Season 1
 					timeline = { ADDED_12_1_0, REMOVED_12_1_0 },
 					groups = { i(277192) },	-- Umbral Ashes (MOUNT!)
@@ -168,154 +171,158 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				}),
 			},
 		}),
-		header(HEADERS.Achievement, SEASON_VENOMOUS_PVE, bubbleDownSelf({
+		header(HEADERS.Achievement, SEASON_VENOMOUS_PVE, {
 			timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
-		}, {
-			ach(62441, {	-- Keystone Hero: Altar of Fangs
-				spell(1286812),	-- Path of Venomous Evolution
-			}),
-			ach(62439, {	-- Keystone Hero: Den of Nalorakk
-				spell(1286807),	-- Path of Worthy Aspirant
-			}),
-			ach(62444, {	-- Keystone Hero: Kings' Rest
-				spell(1286831),	-- Path of the Slumbering Conqueror
-			}),
-			ach(62440, {	-- Keystone Hero: Murder Row
-				spell(1286809),	-- Path of Devious Smuggler
-			}),
-			ach(62442, {	-- Keystone Hero: Ruby Life Pools (Midnight Season 2)
-				spell(393256),	-- Path of the Clutch Defender
-			}),
-			ach(62443, {	-- Keystone Hero: Temple of Sethraliss
-				spell(1286828),	-- Path of Sacret Temple
-			}),
-			ach(62437, {	-- Keystone Hero: The Blinding Vale
-				spell(1286801),	-- Path of Blooming Verdure
-			}),
-			ach(62438, {	-- Keystone Hero: Voidscar Arena
-				spell(1286804),	-- Path of Brutal Combatant
-			}),
-			ach(63621, {	-- Keystone Victor: Altar of Fangs
-				title(781, {	-- <Name>, Voice of the Fangs
-					collectible = false,	-- Only for 1 week
+			groups = {
+				ach(62441, {	-- Keystone Hero: Altar of Fangs
+					spell(1286812),	-- Path of Venomous Evolution
 				}),
-			}),
-			ach(63622, {	-- Keystone Victor: Den of Nalorakk
-				title(782, {	-- <Name>, Nalorakk's Favored
-					collectible = false,	-- Only for 1 week
+				ach(62439, {	-- Keystone Hero: Den of Nalorakk
+					spell(1286807),	-- Path of Worthy Aspirant
 				}),
-			}),
-			ach(63626, {	-- Keystone Victor: Kings' Rest
-				title(786, {	-- <Name>, the Uncrowned Conqueror
-					collectible = false,	-- Only for 1 week
+				ach(62444, {	-- Keystone Hero: Kings' Rest
+					spell(1286831),	-- Path of the Slumbering Conqueror
 				}),
-			}),
-			ach(63623, {	-- Keystone Victor: Murder Row
-				title(783, {	-- Street Sovereign <Name>
-					collectible = false,	-- Only for 1 week
+				ach(62440, {	-- Keystone Hero: Murder Row
+					spell(1286809),	-- Path of Devious Smuggler
 				}),
-			}),
-			ach(63627, {	-- Keystone Victor: Ruby Life Pools (Midnight Season 2)
-				title(787, {	-- <Name>, Flame of Life
-					collectible = false,	-- Only for 1 week
+				ach(62442, {	-- Keystone Hero: Ruby Life Pools (Midnight Season 2)
+					spell(393256),	-- Path of the Clutch Defender
 				}),
-			}),
-			ach(63628, {	-- Keystone Victor: Temple of Sethraliss
-				title(788, {	-- <Name>, Wrath of Sethraliss
-					collectible = false,	-- Only for 1 week
+				ach(62443, {	-- Keystone Hero: Temple of Sethraliss
+					spell(1286828),	-- Path of Sacret Temple
 				}),
-			}),
-			ach(63624, {	-- Keystone Victor: The Blinding Vale
-				title(784, {	-- <Name>, Eyes of the Vale
-					collectible = false,	-- Only for 1 week
+				ach(62437, {	-- Keystone Hero: The Blinding Vale
+					spell(1286801),	-- Path of Blooming Verdure
 				}),
-			}),
-			ach(63625, {	-- Keystone Victor: Voidscar Arena
-				title(785, {	-- Voidscar Champion <Name>
-					collectible = false,	-- Only for 1 week
+				ach(62438, {	-- Keystone Hero: Voidscar Arena
+					spell(1286804),	-- Path of Brutal Combatant
 				}),
-			}),
-			ach(62445),	-- Midnight Keystone Explorer: Season 2
-			ach(62446, {	-- Midnight Keystone Conqueror: Season 2
-				title(663),	-- <Name> the Venomous
-			}),
-			ach(62447, {	-- Midnight Keystone Master: Season 2
-				i(276881),	-- Breath of Blight (MOUNT!)
-			}),
-			ach(62448),	-- Midnight Keystone Hero: Season 2
-			ach(62449, {	-- Midnight Keystone Legend: Season 2
-				i(276882),	-- Breath of Ruin (MOUNT!)
-			}),
-			ach(63690, bubbleDownSelf({ timeline = { ADDED_12_1_5, REMOVED_12_2_0 } }, {	-- Midnight Keystone Myth: Season 2
-				title(795),	-- <Name> the Venomous Contender
-			})),
-			ach(62436, {	-- Venomous Hero: Midnight Season 2
-				title(662),	-- <Name> the Venomous Hero
-			}),
-			-- Check the comment on previous season
-			ach(62417, {	-- Midnight Season 2: Resilient Keystone 12
-				_noautomation = true,
-			}),
-			ach(62418, {	-- Midnight Season 2: Resilient Keystone 13
-				_noautomation = true,
-			}),
-			ach(62419, {	-- Midnight Season 2: Resilient Keystone 14
-				_noautomation = true,
-			}),
-			ach(62420, {	-- Midnight Season 2: Resilient Keystone 15
-				_noautomation = true,
-			}),
-			ach(62421, {	-- Midnight Season 2: Resilient Keystone 16
-				_noautomation = true,
-			}),
-			ach(62422, {	-- Midnight Season 2: Resilient Keystone 17
-				_noautomation = true,
-			}),
-			ach(62423, {	-- Midnight Season 2: Resilient Keystone 18
-				_noautomation = true,
-			}),
-			ach(62424, {	-- Midnight Season 2: Resilient Keystone 19
-				_noautomation = true,
-			}),
-			ach(62425, {	-- Midnight Season 2: Resilient Keystone 20
-				_noautomation = true,
-			}),
-			ach(62426, {	-- Midnight Season 2: Resilient Keystone 21
-				_noautomation = true,
-			}),
-			ach(62427, {	-- Midnight Season 2: Resilient Keystone 22
-				_noautomation = true,
-			}),
-			ach(62428, {	-- Midnight Season 2: Resilient Keystone 23
-				_noautomation = true,
-			}),
-			ach(62429, {	-- Midnight Season 2: Resilient Keystone 24
-				_noautomation = true,
-			}),
-			ach(62430, {	-- Midnight Season 2: Resilient Keystone 25
-				_noautomation = true,
-			}),
-			ach(62431, {	-- Midnight Season 2: Resilient Keystone 26
-				_noautomation = true,
-				collectible = false,
-			}),
-			ach(62432, {	-- Midnight Season 2: Resilient Keystone 27
-				_noautomation = true,
-				collectible = false,
-			}),
-			ach(62433, {	-- Midnight Season 2: Resilient Keystone 28
-				_noautomation = true,
-				collectible = false,
-			}),
-			ach(62434, {	-- Midnight Season 2: Resilient Keystone 29
-				_noautomation = true,
-				collectible = false,
-			}),
-			ach(62435, {	-- Midnight Season 2: Resilient Keystone 30
-				_noautomation = true,
-				collectible = false,
-			}),
-		})),
+				ach(63621, {	-- Keystone Victor: Altar of Fangs
+					title(781, {	-- <Name>, Voice of the Fangs
+						collectible = false,	-- Only for 1 week
+					}),
+				}),
+				ach(63622, {	-- Keystone Victor: Den of Nalorakk
+					title(782, {	-- <Name>, Nalorakk's Favored
+						collectible = false,	-- Only for 1 week
+					}),
+				}),
+				ach(63626, {	-- Keystone Victor: Kings' Rest
+					title(786, {	-- <Name>, the Uncrowned Conqueror
+						collectible = false,	-- Only for 1 week
+					}),
+				}),
+				ach(63623, {	-- Keystone Victor: Murder Row
+					title(783, {	-- Street Sovereign <Name>
+						collectible = false,	-- Only for 1 week
+					}),
+				}),
+				ach(63627, {	-- Keystone Victor: Ruby Life Pools (Midnight Season 2)
+					title(787, {	-- <Name>, Flame of Life
+						collectible = false,	-- Only for 1 week
+					}),
+				}),
+				ach(63628, {	-- Keystone Victor: Temple of Sethraliss
+					title(788, {	-- <Name>, Wrath of Sethraliss
+						collectible = false,	-- Only for 1 week
+					}),
+				}),
+				ach(63624, {	-- Keystone Victor: The Blinding Vale
+					title(784, {	-- <Name>, Eyes of the Vale
+						collectible = false,	-- Only for 1 week
+					}),
+				}),
+				ach(63625, {	-- Keystone Victor: Voidscar Arena
+					title(785, {	-- Voidscar Champion <Name>
+						collectible = false,	-- Only for 1 week
+					}),
+				}),
+				ach(62445),	-- Midnight Keystone Explorer: Season 2
+				ach(62446, {	-- Midnight Keystone Conqueror: Season 2
+					title(663),	-- <Name> the Venomous
+				}),
+				ach(62447, {	-- Midnight Keystone Master: Season 2
+					i(276881),	-- Breath of Blight (MOUNT!)
+				}),
+				ach(62448),	-- Midnight Keystone Hero: Season 2
+				ach(62449, {	-- Midnight Keystone Legend: Season 2
+					i(276882),	-- Breath of Ruin (MOUNT!)
+				}),
+				ach(63690, {	-- Midnight Keystone Myth: Season 2
+					timeline = { ADDED_12_1_5, REMOVED_12_2_0 },
+					groups = {
+						title(795),	-- <Name> the Venomous Contender
+					},
+				}),
+				ach(62436, {	-- Venomous Hero: Midnight Season 2
+					title(662),	-- <Name> the Venomous Hero
+				}),
+				-- Check the comment on previous season
+				ach(62417, {	-- Midnight Season 2: Resilient Keystone 12
+					_noautomation = true,
+				}),
+				ach(62418, {	-- Midnight Season 2: Resilient Keystone 13
+					_noautomation = true,
+				}),
+				ach(62419, {	-- Midnight Season 2: Resilient Keystone 14
+					_noautomation = true,
+				}),
+				ach(62420, {	-- Midnight Season 2: Resilient Keystone 15
+					_noautomation = true,
+				}),
+				ach(62421, {	-- Midnight Season 2: Resilient Keystone 16
+					_noautomation = true,
+				}),
+				ach(62422, {	-- Midnight Season 2: Resilient Keystone 17
+					_noautomation = true,
+				}),
+				ach(62423, {	-- Midnight Season 2: Resilient Keystone 18
+					_noautomation = true,
+				}),
+				ach(62424, {	-- Midnight Season 2: Resilient Keystone 19
+					_noautomation = true,
+				}),
+				ach(62425, {	-- Midnight Season 2: Resilient Keystone 20
+					_noautomation = true,
+				}),
+				ach(62426, {	-- Midnight Season 2: Resilient Keystone 21
+					_noautomation = true,
+				}),
+				ach(62427, {	-- Midnight Season 2: Resilient Keystone 22
+					_noautomation = true,
+				}),
+				ach(62428, {	-- Midnight Season 2: Resilient Keystone 23
+					_noautomation = true,
+				}),
+				ach(62429, {	-- Midnight Season 2: Resilient Keystone 24
+					_noautomation = true,
+				}),
+				ach(62430, {	-- Midnight Season 2: Resilient Keystone 25
+					_noautomation = true,
+				}),
+				ach(62431, {	-- Midnight Season 2: Resilient Keystone 26
+					_noautomation = true,
+					collectible = false,
+				}),
+				ach(62432, {	-- Midnight Season 2: Resilient Keystone 27
+					_noautomation = true,
+					collectible = false,
+				}),
+				ach(62433, {	-- Midnight Season 2: Resilient Keystone 28
+					_noautomation = true,
+					collectible = false,
+				}),
+				ach(62434, {	-- Midnight Season 2: Resilient Keystone 29
+					_noautomation = true,
+					collectible = false,
+				}),
+				ach(62435, {	-- Midnight Season 2: Resilient Keystone 30
+					_noautomation = true,
+					collectible = false,
+				}),
+			},
+		}),
 		n(QUESTS, {
 			q(96936, {	-- Accolades for the Umbral Contender
 				sourceAchievement = 63097,	-- Midnight Keystone Myth: Season One

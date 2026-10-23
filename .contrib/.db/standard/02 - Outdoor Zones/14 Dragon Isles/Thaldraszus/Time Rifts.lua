@@ -29,7 +29,8 @@ local THE_WARLANDS = 2207;
 maproot(DRAGON_ISLES, THALDRASZUS, {
 	timeline = { ADDED_10_0_2_LAUNCH },
 	groups = {
-		n(TIME_RIFTS, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
+		n(TIME_RIFTS, {
+			timeline = { ADDED_10_1_5 },
 			maps = {
 				2199,	-- Tyrhold Reservoir (Scenario Map)
 			},
@@ -58,8 +59,9 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 							_npcs = { 205309 },	-- Fractured Causality / Overload Mechagon
 						}),
 					}),
-					ach(19485, bubbleDownSelf({ timeline = { ADDED_10_2_6 } }, {	-- Closing Time
+					ach(19485, {	-- Closing Time
 						-- Meta Achievement
+						timeline = { ADDED_10_2_6 },
 						sym = {{"meta_achievement",
 							18637,	-- Chronograde Connoisseur
 							18639,	-- Collapsed Reality
@@ -75,7 +77,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 						groups = {
 							i(192765),	-- Bestowed Sandskimmer (MOUNT!)
 						},
-					})),
+					}),
 					ach(18639),	-- Collapsed Reality
 					ach(18636),	-- Just Following Chronological Orders
 					ach(18640, {	-- Lock and Load
@@ -1061,7 +1063,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 					}),
 				})),
 			},
-		})),
+		}),
 	},
 });
 

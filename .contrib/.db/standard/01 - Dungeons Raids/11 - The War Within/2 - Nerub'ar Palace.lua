@@ -690,9 +690,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						title(556),	-- Queenslayer <Name>
 					}),
 					ach(40254, {timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART }}),	-- Cutting Edge: Queen Ansurek
-					ach(40259, bubbleDownSelf({timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {	-- Hall of Fame: Queen Ansurek
-						title(561),	-- <Name>, Famed Slayer of Ansurek
-					})),
+					ach(40259, {	-- Hall of Fame: Queen Ansurek
+						timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+						groups = {
+							title(561),	-- <Name>, Famed Slayer of Ansurek
+						},
+					}),
 					ach(40258),	-- Mythic: Queen Ansurek Guild Run
 					i(224151),	-- Ascendant Skyrazor (MOUNT!)
 					i(225634, {	-- Web-Wrapped Curio

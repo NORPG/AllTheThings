@@ -14,10 +14,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 		timeline = { ADDED_12_1_5 },
 		groups = {
 			n(ACHIEVEMENTS, {
-				ach(64039, bubbleDownSelf({ timeline = { "removed 12.1.5.99999" } }, {	-- Fabled Let Me Solo Him: Kindo'jan
-				-- TODO: Timeline out correctly, 1 Week after 12.1.5 Launch
-					title(801),	-- <Name>, Fabled Vanquisher of Kindo'jan
-				})),
+				ach(64039, {	-- Fabled Let Me Solo Him: Kindo'jan
+				timeline = { "removed 12.1.5.99999" },
+				groups = {
+					-- TODO: Timeline out correctly, 1 Week after 12.1.5 Launch
+						title(801),	-- <Name>, Fabled Vanquisher of Kindo'jan
+				},
+				}),
 				ach(63720, {	-- Happy Hexmask Collector
 					description = "Each run randomly selects three out of five special rooms as spawn points for Hexmasks and one for the special 'Locked Room'. The final room will be empty.",
 					providers = {
@@ -37,9 +40,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					title(797),	-- Treasure Hound <Name>
 				}),
 				ach(63724),	-- Knock Knock
-				ach(63715, bubbleDownSelf({ timeline = { "removed 12.1.5.99999" } }, {	-- Let Me Solo Him: Kindo'jan
-					i(283363),	-- Loa-Blessed Wayfarer (MOUNT!)
-				})),
+				ach(63715, {	-- Let Me Solo Him: Kindo'jan
+					timeline = { "removed 12.1.5.99999" },
+					groups = {
+						i(283363),	-- Loa-Blessed Wayfarer (MOUNT!)
+					},
+				}),
 				ach(63718, {	-- Lock and Key
 					description = "Each run randomly selects one out of five special rooms to be a 'Locked Room' and three of them as spawn points for Hexmasks. The final room will be empty.",
 					coords = {
@@ -68,9 +74,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					title(796),	-- Loa-Blessed <Name>
 				}),
 				ach(63721),	-- The Labyrinth of Kindo'jan
-				ach(64118, bubbleDownSelf({ timeline = { REMOVED_12_1_7 } }, {	-- The Labyrinth of Kindo'jan: One-Champion Army
-					title(802),	-- Lone Raider <Name>
-				})),
+				ach(64118, {	-- The Labyrinth of Kindo'jan: One-Champion Army
+					timeline = { REMOVED_12_1_7 },
+					groups = {
+						title(802),	-- Lone Raider <Name>
+					},
+				}),
 				ach(63727),	-- Treasures Upon Treasures (10 Oddities)
 				ach(63728),	-- A Few More Can't Hurt (50 Oddities)
 				ach(63722, {	-- Who's Labyrinth?

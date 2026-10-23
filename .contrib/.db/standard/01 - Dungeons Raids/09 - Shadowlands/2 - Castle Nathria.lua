@@ -378,102 +378,111 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				}),
 				ach(14614),	-- Castle Vain
 				-- Fated
-				ach(15663, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Fate of Nathria
-					crit(53514, {	-- Shriekwing
-						_encounter = { 2393, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53515, {	-- Huntsman Altimor
-						_encounter = { 2429, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53516, {	-- Sun King's Salvation
-						_encounter = { 2422, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53517, {	-- Artificer Xy'mox
-						_encounter = { 2418, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53518, {	-- Hungering Destroyer
-						_encounter = { 2428, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53519, {	-- Lady Inerva Darkvein
-						_encounter = { 2420, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53520, {	-- The Council of Blood
-						_encounter = { 2426, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53521, {	-- Sludgefist
-						_encounter = { 2394, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53522, {	-- Stone Legion Generals
-						_encounter = { 2425, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53523, {	-- Sire Denathrius
-						_encounter = { 2424, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-				})),
-				ach(15664, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Heroic: Fate of Nathria
-					crit(53524, {	-- Shriekwing
-						_encounter = { 2393, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53525, {	-- Huntsman Altimor
-						_encounter = { 2429, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53526, {	-- Sun King's Salvation
-						_encounter = { 2422, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53527, {	-- Artificer Xy'mox
-						_encounter = { 2418, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53528, {	-- Hungering Destroyer
-						_encounter = { 2428, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53529, {	-- Lady Inerva Darkvein
-						_encounter = { 2420, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53530, {	-- The Council of Blood
-						_encounter = { 2426, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53531, {	-- Sludgefist
-						_encounter = { 2394, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53532, {	-- Stone Legion Generals
-						_encounter = { 2425, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53533, {	-- Sire Denathrius
-						_encounter = { 2424, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-				})),
-				ach(15665, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Mythic: Fate of Nathria
-					crit(53534, {	-- Shriekwing
-						_encounter = { 2393, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53535, {	-- Huntsman Altimor
-						_encounter = { 2429, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53536, {	-- Sun King's Salvation
-						_encounter = { 2422, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53537, {	-- Artificer Xy'mox
-						_encounter = { 2418, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53538, {	-- Hungering Destroyer
-						_encounter = { 2428, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53539, {	-- Lady Inerva Darkvein
-						_encounter = { 2420, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53540, {	-- The Council of Blood
-						_encounter = { 2426, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53541, {	-- Sludgefist
-						_encounter = { 2394, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53542, {	-- Stone Legion Generals
-						_encounter = { 2425, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53543, {	-- Sire Denathrius
-						_encounter = { 2424, DIFFICULTY.RAID.MYTHIC },
-					}),
-				})),
+				ach(15663, {	-- Fate of Nathria
+					timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+					groups = {
+						crit(53514, {	-- Shriekwing
+							_encounter = { 2393, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53515, {	-- Huntsman Altimor
+							_encounter = { 2429, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53516, {	-- Sun King's Salvation
+							_encounter = { 2422, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53517, {	-- Artificer Xy'mox
+							_encounter = { 2418, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53518, {	-- Hungering Destroyer
+							_encounter = { 2428, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53519, {	-- Lady Inerva Darkvein
+							_encounter = { 2420, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53520, {	-- The Council of Blood
+							_encounter = { 2426, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53521, {	-- Sludgefist
+							_encounter = { 2394, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53522, {	-- Stone Legion Generals
+							_encounter = { 2425, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53523, {	-- Sire Denathrius
+							_encounter = { 2424, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+					},
+				}),
+				ach(15664, {	-- Heroic: Fate of Nathria
+					timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+					groups = {
+						crit(53524, {	-- Shriekwing
+							_encounter = { 2393, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53525, {	-- Huntsman Altimor
+							_encounter = { 2429, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53526, {	-- Sun King's Salvation
+							_encounter = { 2422, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53527, {	-- Artificer Xy'mox
+							_encounter = { 2418, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53528, {	-- Hungering Destroyer
+							_encounter = { 2428, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53529, {	-- Lady Inerva Darkvein
+							_encounter = { 2420, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53530, {	-- The Council of Blood
+							_encounter = { 2426, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53531, {	-- Sludgefist
+							_encounter = { 2394, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53532, {	-- Stone Legion Generals
+							_encounter = { 2425, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53533, {	-- Sire Denathrius
+							_encounter = { 2424, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+					},
+				}),
+				ach(15665, {	-- Mythic: Fate of Nathria
+					timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+					groups = {
+						crit(53534, {	-- Shriekwing
+							_encounter = { 2393, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53535, {	-- Huntsman Altimor
+							_encounter = { 2429, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53536, {	-- Sun King's Salvation
+							_encounter = { 2422, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53537, {	-- Artificer Xy'mox
+							_encounter = { 2418, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53538, {	-- Hungering Destroyer
+							_encounter = { 2428, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53539, {	-- Lady Inerva Darkvein
+							_encounter = { 2420, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53540, {	-- The Council of Blood
+							_encounter = { 2426, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53541, {	-- Sludgefist
+							_encounter = { 2394, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53542, {	-- Stone Legion Generals
+							_encounter = { 2425, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53543, {	-- Sire Denathrius
+							_encounter = { 2424, DIFFICULTY.RAID.MYTHIC },
+						}),
+					},
+				}),
 				-- Guild Achievements
 				ach(14459),	-- Castle Nathria Guild Run
 				ach(14720),	-- Heroic: Castle Nathria Guild Run
@@ -1001,18 +1010,20 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				}),
 				Boss(SIRE, {
 					ach(14461, {timeline = { ADDED_9_0_2, REMOVED_9_1_0 }}),	-- Cutting Edge: Sire Denathrius
-					ach(14649, bubbleDownSelf({timeline = { ADDED_9_0_2, REMOVED_9_1_0 } }, {	-- Hall of Fame: Sire Denathrius (Alliance)
+					ach(14649, {	-- Hall of Fame: Sire Denathrius (Alliance)
+						timeline = { ADDED_9_0_2, REMOVED_9_1_0 },
 						races = ALLIANCE_ONLY,
 						groups = {
 							title(440),	-- <Name>, Famed Slayer of Denathrius
 						},
-					})),
-					ach(14650, bubbleDownSelf({timeline = { ADDED_9_0_2, REMOVED_9_1_0 } }, {	-- Hall of Fame: Sire Denathrius (Horde)
+					}),
+					ach(14650, {	-- Hall of Fame: Sire Denathrius (Horde)
+						timeline = { ADDED_9_0_2, REMOVED_9_1_0 },
 						races = HORDE_ONLY,
 						groups = {
 							title(440),	-- <Name>, Famed Slayer of Denathrius
 						},
-					})),
+					}),
 					ach(14365, {	-- Mythic: Sire Denathrius
 						title(432),	-- Sinbreaker <Name>
 					}),

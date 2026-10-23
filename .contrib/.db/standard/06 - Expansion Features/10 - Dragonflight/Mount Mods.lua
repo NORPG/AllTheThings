@@ -657,22 +657,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				}),
 			}),
 		})),
-		i(208200,	-- Dragon Isles Drakes: Gilded Armor (MM!)
-		bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
-			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor (MM!)
-			i(197095),	-- Highland Drake: Gold and White Armor (MM!)
-			i(197349),	-- Renewed Proto-Drake: Gold and White Armor (MM!)
-			i(197582),	-- Windborne Velocidrake: White and Pink Armor (MM!)
-			i(203298),	-- Winding Slitherdrake: White and Gold Armor (MM!)
-		})),
-		i(208550,	-- Dragon Isles Drakes: White Scales (MM!)
-			bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
-			i(197014),	-- Cliffside Wylderdrake: White Scales (MM!)
-			i(197146),	-- Highland Drake: White Scales (MM!)
-			i(197393),	-- Renewed Proto-Drake: White Scales (MM!)
-			i(197616),	-- Windborne Velocidrake: White Scales (MM!)
-			i(203354),	-- Winding Slitherdrake: White Scales (MM!)
-		})),
+		i(208200, {	-- Dragon Isles Drakes: Gilded Armor (MM!)
+			timeline = { ADDED_10_1_7 },
+			groups = {
+				i(196967),	-- Cliffside Wylderdrake: Gold and White Armor (MM!)
+				i(197095),	-- Highland Drake: Gold and White Armor (MM!)
+				i(197349),	-- Renewed Proto-Drake: Gold and White Armor (MM!)
+				i(197582),	-- Windborne Velocidrake: White and Pink Armor (MM!)
+				i(203298),	-- Winding Slitherdrake: White and Gold Armor (MM!)
+			},
+		}),
+		i(208550, {	-- Dragon Isles Drakes: White Scales (MM!)
+			timeline = { ADDED_10_2_0 },
+			groups = {
+				i(197014),	-- Cliffside Wylderdrake: White Scales (MM!)
+				i(197146),	-- Highland Drake: White Scales (MM!)
+				i(197393),	-- Renewed Proto-Drake: White Scales (MM!)
+				i(197616),	-- Windborne Velocidrake: White Scales (MM!)
+				i(203354),	-- Winding Slitherdrake: White Scales (MM!)
+			},
+		}),
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 			i(196961),	-- Cliffside Wylderdrake: Armor (MM!)
 			i(196986),	-- Cliffside Wylderdrake: Black Hair (MM!)

@@ -70,8 +70,9 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51963),			-- Vigorous Stompers			— 01/16/22
 			},
 		}),
-		i(51999, bubbleDownSelf({ timeline = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 15-25
+		i(51999, {	-- Satchel of Helpful Goods 15-25
 			description = "Rewarded for completing a random dungeon in the level 15-25 range.",
+			timeline = { ADDED_3_3_0, REMOVED_7_3_5 },
 			groups = {
 				i(51994),	-- Tumultuous Cloak [INT]
 				i(143580, {	-- Earthbound Girdle
@@ -84,9 +85,10 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				}),
 				i(51964),	-- Vigorous Belt
 			},
-		})),
-		i(52000, bubbleDownSelf({ timeline = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 26-35
+		}),
+		i(52000, {	-- Satchel of Helpful Goods 26-35
 			description = "Rewarded for completing a random dungeon in the level 26-35 range.",
+			timeline = { ADDED_3_3_0, REMOVED_7_3_5 },
 			groups = {
 				i(51996),	-- Tumultuous Necklace
 				i(143581, {	-- Earthbound Grips
@@ -98,9 +100,10 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51973),	-- Enumerated Handwraps
 				i(51965),	-- Vigorous Handguards
 			},
-		})),
-		i(67248, bubbleDownSelf({ timeline = { ADDED_4_0_1, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 35-39 [CATA+]
+		}),
+		i(67248, {	-- Satchel of Helpful Goods 35-39 [CATA+]
 			description = "This is only rewarded for completing Maraudon - Earth Song Falls (level 36-39 range).",
+			timeline = { ADDED_4_0_1, REMOVED_7_3_5 },
 			groups = {
 				i(51976),	-- Earthbound Shoulderguards
 				i(51974),	-- Enumerated Shoulderpads
@@ -132,7 +135,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				}),
 				i(51992),	-- Tumultuous Ring
 			},
-		})),
+		}),
 		i(52001, bubbleDownSelf({ timeline = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 40-45 [36-45 in wrath]
 			description =
 				-- #if AFTER CATA
@@ -148,8 +151,9 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51992),	-- Tumultuous Ring
 			},
 		})),
-		i(52002, bubbleDownSelf({ timeline = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 46-55
+		i(52002, {	-- Satchel of Helpful Goods 46-55
 			description = "Rewarded for completing a random dungeon in the level 46-55 range.",
+			timeline = { ADDED_3_3_0, REMOVED_7_3_5 },
 			groups = {
 				i(51982),	-- Earthbound Boots
 				i(51981),	-- Earthbound Wristguards
@@ -160,9 +164,10 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51962),	-- Vigorous Bracers
 				i(51963),	-- Vigorous Stompers
 			},
-		})),
-		i(52003, bubbleDownSelf({ timeline = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 56-60
+		}),
+		i(52003, {	-- Satchel of Helpful Goods 56-60
 			description = "Rewarded for completing a random dungeon in the level 56-60 range.",
+			timeline = { ADDED_3_3_0, REMOVED_7_3_5 },
 			groups = {
 				i(51993),	-- Turbulent Cloak
 				i(51977),	-- Earthbound Girdle
@@ -170,7 +175,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51985),	-- Stalwart Belt
 				i(51959),	-- Vigorous Belt
 			},
-		})),
+		}),
 	}),
 	expansion(EXPANSION.TBC, {
 		i(156682, {	-- Otherworldy Satchel of Helpful Goods
@@ -225,8 +230,9 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				}),
 			},
 		}),
-		i(52004, bubbleDownSelf({ timeline = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 60-64
+		i(52004, {	-- Satchel of Helpful Goods 60-64
 			description = "Rewarded for completing a random dungeon in the level 60-64 range.",
+			timeline = { ADDED_3_3_0, REMOVED_7_3_5 },
 			groups = {
 				i(51995),	-- Turbulent Necklace
 				i(51979),	-- Earthbound Grips
@@ -234,9 +240,10 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51987),	-- Stalwart Grips
 				i(51960),	-- Vigorous Gloves
 			},
-		})),
-		i(52005, bubbleDownSelf({ timeline = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 65-70
+		}),
+		i(52005, {	-- Satchel of Helpful Goods 65-70
 			description = "Rewarded for completing a random dungeon in the level 65-70 range.",
+			timeline = { ADDED_3_3_0, REMOVED_7_3_5 },
 			groups = {
 				i(51991),	-- Turbulent Signet
 				i(51975),	-- Earthbound Shoulders
@@ -244,7 +251,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51983),	-- Stalwart Shoulderguards
 				i(51961),	-- Vigorous Shoulderguards
 			},
-		})),
+		}),
 	}),
 	-- #if AFTER 6.0.1.18500
 	expansion(EXPANSION.WRATH, {
@@ -281,8 +288,9 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(112360),	-- Winterfrost Leather Leggings			— confirmed by user on discord on April 22, 2020
 			},
 		}),
-		i(114634, bubbleDownSelf({ timeline = { ADDED_6_0_2, REMOVED_7_3_5 } }, {	-- Icy Satchel of Helpful Goods 70-74
+		i(114634, {	-- Icy Satchel of Helpful Goods 70-74
 			description = "Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 70-74 range.",
+			timeline = { ADDED_6_0_2, REMOVED_7_3_5 },
 			groups = {
 				i(112361),	-- Ice-Encrusted Plate Belt
 				i(112362),	-- Ice-Encrusted Plate Girdle
@@ -306,9 +314,10 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(112360),	-- Winterfrost Leather Leggings
 				i(112359),	-- Winterfrost Leather Waders
 			},
-		})),
-		i(114641, bubbleDownSelf({ timeline = { ADDED_6_0_2, REMOVED_7_3_5 } }, {	-- Icy Satchel of Helpful Goods 75-80
+		}),
+		i(114641, {	-- Icy Satchel of Helpful Goods 75-80
 			description = "Rewarded for completing a random 'Wrath of the Lich King' dungeon in the level 75-80 range.",
+			timeline = { ADDED_6_0_2, REMOVED_7_3_5 },
 			groups = {
 				i(113687),	-- Dark Rune Lavalliere
 				i(113686),	-- Nerubian Prince's Pendant
@@ -324,7 +333,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113690),	-- Winterfrost Leather Gloves
 				i(113689),	-- Winterfrost Leather Knuckledusters
 			},
-		})),
+		}),
 	}),
 	expansion(EXPANSION.CATA, {
 		i(156689, {	-- Scorched Satchel of Helpful Goods (30 - 50)
@@ -515,8 +524,9 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113756),	-- Loop of Inner Clarity*	— 01/14/22
 			},
 		})),
-		i(114662, bubbleDownSelf({ timeline = { ADDED_6_0_2, REMOVED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
+		i(114662, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
 			description = "Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 85-89 range.",	-- Saying 89, because at level 90 you can no longer queue for this.
+			timeline = { ADDED_6_0_2, REMOVED_7_3_5 },
 			groups = {
 				i(113788),	-- Blossoming Belt
 				i(113764),	-- Blossoming Cap
@@ -541,9 +551,10 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113728),	-- Kyparite Helm
 				i(113783),	-- Kyparite Stompers
 			},
-		})),
-		i(114669, bubbleDownSelf({ timeline = { ADDED_6_0_2, REMOVED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods 88-90
+		}),
+		i(114669, {	-- Tranquil Satchel of Helpful Goods 88-90
 			description = "Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 88-89 range.",	-- Again, saying 89 because at level 90 you can no longer queue for this.
+			timeline = { ADDED_6_0_2, REMOVED_7_3_5 },
 			groups = {
 				i(113757),	-- Band of Directed Fury
 				i(113766),	-- Blossoming Gloves
@@ -566,7 +577,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113749),	-- Kyparite Pauldrons
 				i(113750),	-- Kyparite Shoulderguards
 			},
-		})),
+		}),
 		i(69903, {	-- Satchel of Exotic Mysteries
 			timeline = { ADDED_4_1_0, REMOVED_6_1_0 },
 			sym = { appendAllGroups({}, MOP_SYM_PETS, {
@@ -599,7 +610,8 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 			},
 		}),
-		i(122607, bubbleDownSelf({ timeline = { ADDED_6_1_0, REMOVED_6_2_0 } }, {	-- Savage Satchel of Cooperation
+		i(122607, {	-- Savage Satchel of Cooperation
+			timeline = { ADDED_6_1_0, REMOVED_6_2_0 },
 			groups = {
 				i(122633, {	-- Shared Turbulent Armament
 					i(115319),	-- Turbulent Axe
@@ -682,8 +694,9 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 					i(114488),	-- Turbulent Vial of Toxin
 				}),
 			},
-		})),
-		i(128803, bubbleDownSelf({ timeline = { ADDED_6_2_0, REMOVED_7_0_3 } }, {	-- Savage Satchel of Cooperation
+		}),
+		i(128803, {	-- Savage Satchel of Cooperation
+			timeline = { ADDED_6_2_0, REMOVED_7_0_3 },
 			groups = {
 				i(127799, {	-- Baleful Pendant
 					i(124612),	-- Discordant Amulet
@@ -806,7 +819,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 					i(124574),	-- Felbane Greaves
 				}),
 			},
-		})),
+		}),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- Listed under TW

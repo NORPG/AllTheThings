@@ -139,16 +139,14 @@ end
 local preWrathEldersHeader
 -- #if BEFORE WRATH
 preWrathEldersHeader = function(headerID, achievementID, timeline, t)
-	return n(headerID,
-	{
+	return n(headerID, {
 		timeline = type(timeline) == "table" and timeline or { timeline },
 		groups = bubbleDown(YEARLY_REPUTATION, t),
 	});
 end
 -- #else
 preWrathEldersHeader = function(headerID, achievementID, timeline, t)
-	return header(HEADERS.Achievement, achievementID,
-	{
+	return header(HEADERS.Achievement, achievementID, {
 		timeline = type(timeline) == "table" and timeline or { timeline },
 		groups = bubbleDown(YEARLY_REPUTATION, t),
 	});
@@ -186,32 +184,35 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		ach(41130, {	-- Elders of Khaz Algar (automated!)
 			timeline = { ADDED_11_0_7 },
 		}),
-		ach(17321, bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {	-- Elders of the Dragon Isles
-			crit(57843, {
-				_quests = { 73848 },	-- Iskaara Elder Shomkol
-			}),
-			crit(57840, {
-				_quests = { 73716 },	-- Aylaag Elder
-			}),
-			crit(57841, {
-				_quests = { 73172 },	-- Shikaar Elder
-			}),
-			crit(57842, {
-				_quests = { 73717 },	-- Ohn'ir Elder
-			}),
-			crit(57839, {
-				_quests = { 73858 },	-- Iskaara Elder Nemaglek
-			}),
-			crit(57844, {
-				_quests = { 73860 },	-- Elder Dekidig
-			}),
-			crit(57845, {
-				_quests = { 73859 },	-- Iskaara Elder Sik'ek
-			}),
-			crit(57846, {
-				_quests = { 73861 },	-- Elder Stormdrifter
-			}),
-		})),
+		ach(17321, {	-- Elders of the Dragon Isles
+			timeline = { ADDED_10_0_5 },
+			groups = {
+				crit(57843, {
+					_quests = { 73848 },	-- Iskaara Elder Shomkol
+				}),
+				crit(57840, {
+					_quests = { 73716 },	-- Aylaag Elder
+				}),
+				crit(57841, {
+					_quests = { 73172 },	-- Shikaar Elder
+				}),
+				crit(57842, {
+					_quests = { 73717 },	-- Ohn'ir Elder
+				}),
+				crit(57839, {
+					_quests = { 73858 },	-- Iskaara Elder Nemaglek
+				}),
+				crit(57844, {
+					_quests = { 73860 },	-- Elder Dekidig
+				}),
+				crit(57845, {
+					_quests = { 73859 },	-- Iskaara Elder Sik'ek
+				}),
+				crit(57846, {
+					_quests = { 73861 },	-- Elder Stormdrifter
+				}),
+			},
+		}),
 		ach(6006, {	-- Elders of Cataclysm
 			sym = {{ "achievement_criteria" }},
 			timeline = { ADDED_4_2_0 },

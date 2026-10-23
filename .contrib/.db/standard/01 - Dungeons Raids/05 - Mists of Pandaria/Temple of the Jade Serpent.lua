@@ -424,9 +424,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
 				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
 				groups = {
-					challengemaster(ach(8430, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Temple of the Jade Serpent
-						title(249),	-- Jade Protector <Name>
-					}))),
+					challengemaster(ach(8430, {	-- Challenge Master: Temple of the Jade Serpent
+						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+						groups = {
+							title(249),	-- Jade Protector <Name>
+						},
+					})),
 					ach(6884),	-- Temple of the Jade Serpent Challenger
 					ach(6885),	-- Temple of the Jade Serpent: Bronze
 					ach(6886),	-- Temple of the Jade Serpent: Silver

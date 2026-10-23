@@ -419,9 +419,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
 				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
 				groups = {
-					challengemaster(ach(8433, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Mogu'shan Palace
-						title(242),	-- Mogu-Slayer <Name>
-					}))),
+					challengemaster(ach(8433, {	-- Challenge Master: Mogu'shan Palace
+						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+						groups = {
+							title(242),	-- Mogu-Slayer <Name>
+						},
+					})),
 					ach(6892),	-- Mogu'shan Palace Challenger
 					ach(6899),	-- Mogu'shan Palace: Bronze
 					ach(6900),	-- Mogu'shan Palace: Silver

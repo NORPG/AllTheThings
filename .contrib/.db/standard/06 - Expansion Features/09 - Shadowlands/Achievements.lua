@@ -4,10 +4,9 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 	n(ACHIEVEMENTS, {	-- Achievements (Achievements that don't really fit into a specific Location which are specific to SL)
-		ach(15654, bubbleDownSelf({	-- Back from the Beyond (Legacy)
-			timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
-		}, {
+		ach(15654, {
 			-- Meta Achievement
+			timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 			sym = {{"meta_achievement",
 				14715,	-- Castle Nathria
 				14961,	-- Chains of Domination
@@ -32,11 +31,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 			groups = {
 				title(463),	-- Veilstrider <Name>
 			},
-		})),
-		ach(20501, bubbleDownSelf({	-- Back from the Beyond
-			timeline = { ADDED_10_2_6 },
-		}, {
+		}),
+		ach(20501, {
 			-- Meta Achievement
+			timeline = { ADDED_10_2_6 },
 			sym = {{"meta_achievement",
 				14715,	-- Castle Nathria
 				14961,	-- Chains of Domination
@@ -61,7 +59,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 				}),
 				i(217612),	-- Zovaal's Shadebeast Collar (MOUNT!)
 			},
-		})),
+		}),
 		ach(14763, {	-- Crypt Couture
 			i(183693),	-- Plague Doctor's Mask (CI!)
 			crit(49929, {	-- Ashen Ink

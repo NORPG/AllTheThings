@@ -4,8 +4,9 @@
 
 root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	n(ACHIEVEMENTS, {
-		ach(19574, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Awakening the Dragonflight Raids
+		ach(19574, {	-- Awakening the Dragonflight Raids
 			-- Meta Achievement
+			timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 			sym = {{"meta_achievement",
 				19570,	-- Awakened Flames
 				19567,	-- Awakened Shadows
@@ -14,9 +15,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			groups = {
 				i(217340),	-- Voyaging Wilderling (MOUNT!)
 			},
-		})),
-		ach(19575, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Heroic: Awakening the Dragonflight Raids
+		}),
+		ach(19575, {	-- Heroic: Awakening the Dragonflight Raids
 			-- Meta Achievement
+			timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 			sym = {{"meta_achievement",
 				19571,	-- Heroic: Awakened Flames
 				19568,	-- Heroic: Awakened Shadows
@@ -25,9 +27,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			groups = {
 				title(557),	-- <Name>, Awakened Hero
 			},
-		})),
-		ach(19576, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mythic: Awakening the Dragonflight Raids
+		}),
+		ach(19576, {	-- Mythic: Awakening the Dragonflight Raids
 			-- Meta Achievement
+			timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 			sym = {{"meta_achievement",
 				19572,	-- Mythic: Awakened Flames
 				19569,	-- Mythic: Awakened Shadows
@@ -38,7 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				spell(432257),	-- Path of the Bitter Legacy
 				spell(432258),	-- Path of the Scorching Dream
 			},
-		})),
+		}),
 		ach(16294, {	-- Dragonflight Dungeon Hero
 			-- Meta Achievement
 			sym = {{"meta_achievement",

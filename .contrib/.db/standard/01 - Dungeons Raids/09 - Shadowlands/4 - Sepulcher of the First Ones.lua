@@ -513,111 +513,120 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				}),
 				ach(15409),	-- First Wonders
 				-- Fated
-				ach(15681, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Fate of the Sepulcher
-					crit(53579, {	-- Vigilant Guardian
-						_encounter = { VIGILANT_GUARDIAN, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53580, {	-- Skolex, the Insatiable Ravener
-						_encounter = { SKOLEX_THE_INSATIABLE_RAVENER, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53581, {	-- Artificer Xy'mox
-						_encounter = { ARTIFICER_XYMOX, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53582, {	-- Dausegne, the Fallen Oracle
-						_encounter = { DAUSEGNE_THE_FALLEN_ORACLE, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53583, {	-- Prototype Pantheon
-						_encounter = { PROTOTYPE_PANTHEON, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53584, {	-- Lihuvim, Principal Architect
-						_encounter = { LIHUVIM_PRINCIPAL_ARCHITECT, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53585, {	-- Halondrus the Reclaimer
-						_encounter = { HALONDRUS_THE_RECLAIMER, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53586, {	-- Anduin Wrynn
-						_encounter = { ANDUIN_WRYNN, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53587, {	-- Lords of Dread
-						_encounter = { LORDS_OF_DREAD, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53588, {	-- Rygelon
-						_encounter = { RYGELON, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-					crit(53589, {	-- The Jailer
-						_encounter = { THE_JAILER, DIFFICULTY.RAID.MULTI.ALL },
-					}),
-				})),
-				ach(15682, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Heroic: Fate of the Sepulcher
-					crit(53590, {	-- Vigilant Guardian
-						_encounter = { VIGILANT_GUARDIAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53591, {	-- Skolex, the Insatiable Ravener
-						_encounter = { SKOLEX_THE_INSATIABLE_RAVENER, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53592, {	-- Artificer Xy'mox
-						_encounter = { ARTIFICER_XYMOX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53593, {	-- Dausegne, the Fallen Oracle
-						_encounter = { DAUSEGNE_THE_FALLEN_ORACLE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53594, {	-- Prototype Pantheon
-						_encounter = { PROTOTYPE_PANTHEON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53595, {	-- Lihuvim, Principal Architect
-						_encounter = { LIHUVIM_PRINCIPAL_ARCHITECT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53596, {	-- Halondrus the Reclaimer
-						_encounter = { HALONDRUS_THE_RECLAIMER, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53597, {	-- Anduin Wrynn
-						_encounter = { ANDUIN_WRYNN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53598, {	-- Lords of Dread
-						_encounter = { LORDS_OF_DREAD, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53599, {	-- Rygelon
-						_encounter = { RYGELON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(53600, {	-- The Jailer
-						_encounter = { THE_JAILER, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-				})),
-				ach(15683, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Mythic: Fate of the Sepulcher
-					crit(153601, {	-- Vigilant Guardian
-						_encounter = { VIGILANT_GUARDIAN, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(253602, {	-- Skolex, the Insatiable Ravener
-						_encounter = { SKOLEX_THE_INSATIABLE_RAVENER, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(353603, {	-- Artificer Xy'mox
-						_encounter = { ARTIFICER_XYMOX, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(453604, {	-- Dausegne, the Fallen Oracle
-						_encounter = { DAUSEGNE_THE_FALLEN_ORACLE, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(553605, {	-- Prototype Pantheon
-						_encounter = { PROTOTYPE_PANTHEON, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(653606, {	-- Lihuvim, Principal Architect
-						_encounter = { LIHUVIM_PRINCIPAL_ARCHITECT, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(753607, {	-- Halondrus the Reclaimer
-						_encounter = { HALONDRUS_THE_RECLAIMER, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(853608, {	-- Anduin Wrynn
-						_encounter = { ANDUIN_WRYNN, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(953609, {	-- Lords of Dread
-						_encounter = { LORDS_OF_DREAD, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53610, {	-- Rygelon
-						_encounter = { RYGELON, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(53611, {	-- The Jailer
-						_encounter = { THE_JAILER, DIFFICULTY.RAID.MYTHIC },
-					}),
-				})),
+				ach(15681, {	-- Fate of the Sepulcher
+					timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+					groups = {
+						crit(53579, {	-- Vigilant Guardian
+							_encounter = { VIGILANT_GUARDIAN, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53580, {	-- Skolex, the Insatiable Ravener
+							_encounter = { SKOLEX_THE_INSATIABLE_RAVENER, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53581, {	-- Artificer Xy'mox
+							_encounter = { ARTIFICER_XYMOX, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53582, {	-- Dausegne, the Fallen Oracle
+							_encounter = { DAUSEGNE_THE_FALLEN_ORACLE, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53583, {	-- Prototype Pantheon
+							_encounter = { PROTOTYPE_PANTHEON, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53584, {	-- Lihuvim, Principal Architect
+							_encounter = { LIHUVIM_PRINCIPAL_ARCHITECT, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53585, {	-- Halondrus the Reclaimer
+							_encounter = { HALONDRUS_THE_RECLAIMER, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53586, {	-- Anduin Wrynn
+							_encounter = { ANDUIN_WRYNN, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53587, {	-- Lords of Dread
+							_encounter = { LORDS_OF_DREAD, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53588, {	-- Rygelon
+							_encounter = { RYGELON, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+						crit(53589, {	-- The Jailer
+							_encounter = { THE_JAILER, DIFFICULTY.RAID.MULTI.ALL },
+						}),
+					},
+				}),
+				ach(15682, {	-- Heroic: Fate of the Sepulcher
+					timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+					groups = {
+						crit(53590, {	-- Vigilant Guardian
+							_encounter = { VIGILANT_GUARDIAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53591, {	-- Skolex, the Insatiable Ravener
+							_encounter = { SKOLEX_THE_INSATIABLE_RAVENER, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53592, {	-- Artificer Xy'mox
+							_encounter = { ARTIFICER_XYMOX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53593, {	-- Dausegne, the Fallen Oracle
+							_encounter = { DAUSEGNE_THE_FALLEN_ORACLE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53594, {	-- Prototype Pantheon
+							_encounter = { PROTOTYPE_PANTHEON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53595, {	-- Lihuvim, Principal Architect
+							_encounter = { LIHUVIM_PRINCIPAL_ARCHITECT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53596, {	-- Halondrus the Reclaimer
+							_encounter = { HALONDRUS_THE_RECLAIMER, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53597, {	-- Anduin Wrynn
+							_encounter = { ANDUIN_WRYNN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53598, {	-- Lords of Dread
+							_encounter = { LORDS_OF_DREAD, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53599, {	-- Rygelon
+							_encounter = { RYGELON, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(53600, {	-- The Jailer
+							_encounter = { THE_JAILER, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+					},
+				}),
+				ach(15683, {	-- Mythic: Fate of the Sepulcher
+					timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+					groups = {
+						crit(153601, {	-- Vigilant Guardian
+							_encounter = { VIGILANT_GUARDIAN, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(253602, {	-- Skolex, the Insatiable Ravener
+							_encounter = { SKOLEX_THE_INSATIABLE_RAVENER, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(353603, {	-- Artificer Xy'mox
+							_encounter = { ARTIFICER_XYMOX, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(453604, {	-- Dausegne, the Fallen Oracle
+							_encounter = { DAUSEGNE_THE_FALLEN_ORACLE, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(553605, {	-- Prototype Pantheon
+							_encounter = { PROTOTYPE_PANTHEON, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(653606, {	-- Lihuvim, Principal Architect
+							_encounter = { LIHUVIM_PRINCIPAL_ARCHITECT, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(753607, {	-- Halondrus the Reclaimer
+							_encounter = { HALONDRUS_THE_RECLAIMER, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(853608, {	-- Anduin Wrynn
+							_encounter = { ANDUIN_WRYNN, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(953609, {	-- Lords of Dread
+							_encounter = { LORDS_OF_DREAD, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53610, {	-- Rygelon
+							_encounter = { RYGELON, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(53611, {	-- The Jailer
+							_encounter = { THE_JAILER, DIFFICULTY.RAID.MYTHIC },
+						}),
+					},
+				}),
 				-- Guild Achievements
 				ach(15472),	-- Sepulcher of the First Ones Guild Run
 				ach(15473),	-- Heroic Sepulcher of the First Ones Guild Run

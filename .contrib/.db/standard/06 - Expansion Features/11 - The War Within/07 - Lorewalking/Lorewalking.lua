@@ -21,8 +21,9 @@ local LOREWALKING = createHeader({
 });
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
-	n(LOREWALKING, bubbleDownSelf({ timeline = { ADDED_11_1_7 } }, {
+	n(LOREWALKING, {
 		cr = 230246,	-- Lorewalker Cho	// As of 12.0.7, this ID belongs to Li Li Stormstout
+		timeline = { ADDED_11_1_7 },
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(42188, {	-- Lorewalking: Blade's Bane
@@ -35,23 +36,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						timeline = { ADDED_11_2_7 },
 					}),
 				}),
-				ach(63712, bubbleDownSelf({ timeline = { ADDED_12_1_7 } }, {	-- Lorewalking: Jaina
+				ach(63712, {	-- Lorewalking: Jaina
+					timeline = { ADDED_12_1_7 },
 					groups = { i(283453) },	-- Tome of the Sea (DECOR!)
-				})),
-				ach(61467, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {	-- Lorewalking: The Elves of Quel'thalas
+				}),
+				ach(61467, {	-- Lorewalking: The Elves of Quel'thalas
+					timeline = { ADDED_11_2_7 },
 					groups = { i(245332) },	-- Tome of Silvermoon Intrigue (DECOR!)
-				})),
+				}),
 				ach(42189, {	-- Lorewalking: The Lich King
 					i(257351, {	-- Tale of the Penultimate Lich King (DECOR!)
 						timeline = { ADDED_11_2_7 },
 					}),
 				}),
-				ach(61442, bubbleDownSelf({ timeline = { ADDED_12_0_7 } }, {	-- Lorewalking: The Loa
+				ach(61442, {	-- Lorewalking: The Loa
+					timeline = { ADDED_12_0_7 },
 					groups = { i(271971) },	-- Tome of Kings (DECOR!)
-				})),
-				ach(63691, bubbleDownSelf({ timeline = { ADDED_12_1_7 } }, {	-- Lorewalking: Thrall
+				}),
+				ach(63691, {	-- Lorewalking: Thrall
+					timeline = { ADDED_12_1_7 },
 					groups = { i(281626) },	-- Tale of the First Warchief (DECOR!)
-				})),
+				}),
 			}),
 			n(REWARDS, {
 				i(242386,{	-- Lorewalker's Crate of Memorabilia
@@ -412,7 +417,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				})),
 			}),
 		},
-	})),
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_1_7 } }, {

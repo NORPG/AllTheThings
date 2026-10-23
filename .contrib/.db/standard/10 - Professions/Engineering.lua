@@ -170,14 +170,20 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 		}),
 	}),
 	expansion(EXPANSION.CATA, {
-		ach(18908, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Bio-Optic Killshades (automated)
-			iensemble(209063),	-- Ensemble: Chromatically Calibrated Bio-Optic Killshades
-		})),
+		ach(18908, {	-- Chromatic Calibration: Bio-Optic Killshades (automated)
+			timeline = { ADDED_10_1_7 },
+			groups = {
+				iensemble(209063),	-- Ensemble: Chromatically Calibrated Bio-Optic Killshades
+			},
+		}),
 	}),
 	expansion(EXPANSION.MOP, {
-		ach(18905, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Retinal Armor (automated)
-			iensemble(209064),	-- Ensemble: Chromatically Calibrated Retinal Armor
-		})),
+		ach(18905, {	-- Chromatic Calibration: Retinal Armor (automated)
+			timeline = { ADDED_10_1_7 },
+			groups = {
+				iensemble(209064),	-- Ensemble: Chromatically Calibrated Retinal Armor
+			},
+		}),
 	}),
 	expansion(EXPANSION.WOD, {
 		ach(18895, {	-- You Had it Coming
@@ -185,9 +191,12 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 		}),
 	}),
 	expansion(EXPANSION.LEGION, {
-		ach(18906, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Cranial Cannons (automated)
-			iensemble(209066),	-- Ensemble: Chromatically Calibrated Cranial Cannons
-		})),
+		ach(18906, {	-- Chromatic Calibration: Cranial Cannons (automated)
+			timeline = { ADDED_10_1_7 },
+			groups = {
+				iensemble(209066),	-- Ensemble: Chromatically Calibrated Cranial Cannons
+			},
+		}),
 		n(QUESTS, {
 			q(40545, {	-- Aww Scrap!
 				provider = { "n", 93539 },	-- Hobart Grapplehammer
@@ -635,9 +644,12 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 		}),
 	}),
 	expansion(EXPANSION.SL, {
-		ach(18907, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Ectoplasmic Specs (automated)
-			iensemble(209067),	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
-		})),
+		ach(18907, {	-- Chromatic Calibration: Ectoplasmic Specs (automated)
+			timeline = { ADDED_10_1_7 },
+			groups = {
+				iensemble(209067),	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
+			},
+		}),
 	}),
 	expansion(EXPANSION.DF, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
@@ -902,15 +914,15 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 			}),
 		}),
 		n(TREASURES, {
-			o(398133,	-- Bolts and Brass/Handful of Khaz'gorite Bolts
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			o(398133, {	-- Bolts and Brass/Handful of Khaz'gorite Bolts
 				coord = { 57.7, 73.9, ZARALEK_CAVERN },
 				questID = 75430,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(204850),	-- Handful of Khaz'gorite Bolts
 					i(204851),	-- Oblong Brass Sculpture
 				},
-			})),
+			}),
 			o(380571, {	-- Boomthyr Rocket
 				description = "Interact with the Note next to the rocket, then gather the items in the surrounding area. You may need to leave and return to the area after gathering all objects for the treasure to be clickable after that.",
 				questID = 70270,
@@ -923,23 +935,23 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 					i(198817),	-- Durable Crystal
 				},
 			}),
-			o(392587,	-- Busted Wyrmhole Generator
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			o(392587, {	-- Busted Wyrmhole Generator
 				coord = { 37.8, 58.8, ZARALEK_CAVERN },
 				questID = 75186,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(204475),	-- Busted Wyrmhole Generator
 					i(205954),	-- Three-Dimensional Compass (CI!)
 				},
-			})),
-			o(392582,	-- Defective Survival Pack
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			}),
+			o(392582, {	-- Defective Survival Pack
 				coord = { 50.5, 47.9, ZARALEK_CAVERN },
 				questID = 75184,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(204471),	-- Defective Survival Pack
 				},
-			})),
+			}),
 			o(380560, {	-- Disabled Tesla Coil
 				description = "Click on the three exposed items to make the treasure appear.",
 				questID = 70275,
@@ -948,73 +960,73 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 					i(198789),	-- Intact Coil Capacitor
 				},
 			}),
-			o(398135,	-- Discarded Dracothyst Drill
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			o(398135, {	-- Discarded Dracothyst Drill
 				coord = { 49.4, 79.0, ZARALEK_CAVERN },
 				questID = 75431,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(204853),	-- Discarded Dracothyst Drill
 				},
-			})),
-			o(410456,	-- Experimental Dreamcatcher
-			bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+			}),
+			o(410456, {	-- Experimental Dreamcatcher
 				coord = { 39.5, 52.2, EMERALD_DREAM },
 				questID = 78278,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210193),	-- Experimental Dreamcatcher
 				},
-			})),
-			o(392581,	-- Haphazardly Discarded Bomb
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			}),
+			o(392581, {	-- Haphazardly Discarded Bomb
 				coord = { 48.2, 27.9, ZARALEK_CAVERN },
 				questID = 75183,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(204470),	-- Haphazardly Discarded Bomb
 				},
-			})),
-			o(392593,	-- Inconspicuous Data Miner
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			}),
+			o(392593, {	-- Inconspicuous Data Miner
 				coord = { 49.9, 59.3, ZARALEK_CAVERN },
 				questID = 75188,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(204480),	-- Inconspicuous Data Miner
 				},
-			})),
-			o(410458,	-- Insomniotron
-			bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+			}),
+			o(410458, {	-- Insomniotron
 				description = "In cavern.",
 				coord = { 49.0, 70.9, 2254 },
 				questID = 78279,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210194),	-- Insomniotron
 				},
-			})),
-			o(392580,	-- Misplaced Aberrus Outflow Blueprints
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			}),
+			o(392580, {	-- Misplaced Aberrus Outflow Blueprints
 				coord = { 48.5, 48.6, ZARALEK_CAVERN },
 				questID = 75180,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(204469),	-- Misplaced Aberrus Outflow Blueprints
 				},
-			})),
-			o(398138,	-- Molten Scoutbot/Overclocked Determination Core
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			}),
+			o(398138, {	-- Molten Scoutbot/Overclocked Determination Core
 				coord = { 48.1, 16.6, ZARALEK_CAVERN },
 				questID = 75433,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(204855),	-- Overclocked Determination Core
 				},
-			})),
-			o(410469,	-- Unhatched Battery
-			bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+			}),
+			o(410469, {	-- Unhatched Battery
 				coord = { 62.6, 36.2, EMERALD_DREAM },
 				questID = 78281,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210197, {	-- Unhatched Battery
 						i(210198),	-- Depleted Battery
 					}),
 				},
-			})),
+			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			isWeekly = true,

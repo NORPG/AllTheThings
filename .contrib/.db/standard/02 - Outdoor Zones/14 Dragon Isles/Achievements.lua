@@ -41,32 +41,35 @@ maproot(DRAGON_ISLES, {
 					_quests = { 71180 },
 				}),
 			})),
-			petbattle(ach(17406, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {	-- Battle on the Dragon Isles II
-				crit(58212, {	-- Adinakon
-					_quests = { 74841 },
-				}),
-				crit(58213, {	-- Lyver
-					_quests = { 74838 },
-				}),
-				crit(58214, {	-- Enok the Stinky
-					_quests = { 74835 },
-				}),
-				crit(58215, {	-- Right Twice a Day
-					_quests = { 74794 },
-				}),
-				crit(58216, {	-- Sharp as Flint
-					_quests = { 74840 },
-				}),
-				crit(58217, {	-- Paws of Thunder
-					_quests = { 74837 },
-				}),
-				crit(58218, {	-- A New Vocation
-					_quests = { 74836 },
-				}),
-				crit(58219, {	-- They're Full of Stars!
-					_quests = { 74792 },
-				}),
-			}))),
+			petbattle(ach(17406, {	-- Battle on the Dragon Isles II
+				timeline = { ADDED_10_0_7 },
+				groups = {
+					crit(58212, {	-- Adinakon
+						_quests = { 74841 },
+					}),
+					crit(58213, {	-- Lyver
+						_quests = { 74838 },
+					}),
+					crit(58214, {	-- Enok the Stinky
+						_quests = { 74835 },
+					}),
+					crit(58215, {	-- Right Twice a Day
+						_quests = { 74794 },
+					}),
+					crit(58216, {	-- Sharp as Flint
+						_quests = { 74840 },
+					}),
+					crit(58217, {	-- Paws of Thunder
+						_quests = { 74837 },
+					}),
+					crit(58218, {	-- A New Vocation
+						_quests = { 74836 },
+					}),
+					crit(58219, {	-- They're Full of Stars!
+						_quests = { 74792 },
+					}),
+				},
+			})),
 			ach(16761, {	-- Dragon Isles Explorer
 				-- Meta Achievement
 				sym = {{"meta_achievement",
@@ -224,8 +227,9 @@ maproot(DRAGON_ISLES, {
 					title(478),	-- Isles Racer <Name>
 				},
 			}),
-			ach(18790, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Dragonriding Challenge: Dragon Isles: Bronze
+			ach(18790, {	-- Dragonriding Challenge: Dragon Isles: Bronze
 				-- Meta Achievement
+				timeline = { ADDED_10_1_7 },
 				sym = {{"meta_achievement",
 					18757,	-- Azure Span Challenge: Bronze
 					18779,	-- Forbidden Reach Challenge: Bronze
@@ -237,9 +241,10 @@ maproot(DRAGON_ISLES, {
 				groups = {
 					i(208433),	-- Bronze Racer's Pennant (TOY!)
 				},
-			})),
-			ach(18791, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Dragonriding Challenge: Dragon Isles: Silver
+			}),
+			ach(18791, {	-- Dragonriding Challenge: Dragon Isles: Silver
 				-- Meta Achievement
+				timeline = { ADDED_10_1_7 },
 				sym = {{"meta_achievement",
 					18758,	-- Azure Span Challenge: Silver
 					18780,	-- Forbidden Reach Challenge: Silver
@@ -248,9 +253,10 @@ maproot(DRAGON_ISLES, {
 					18749,	-- Waking Shores Challenge: Silver
 					18787,	-- Zaralek Cavern Challenge: Silver
 				}},
-			})),
-			ach(18792, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Dragonriding Challenge: Dragon Isles: Gold
+			}),
+			ach(18792, {	-- Dragonriding Challenge: Dragon Isles: Gold
 				-- Meta Achievement
+				timeline = { ADDED_10_1_7 },
 				sym = {{"meta_achievement",
 					18759,	-- Azure Span Challenge: Gold
 					18781,	-- Forbidden Reach Challenge: Gold
@@ -262,7 +268,7 @@ maproot(DRAGON_ISLES, {
 				groups = {
 					title(523),	-- Isles Ace <Name>
 				}
-			})),
+			}),
 			header(HEADERS.Achievement, 16512, {	-- Family Battler of the Dragon Isles
 				petbattle(ach(16512, {	-- Family Battler of the Dragon Isles
 					-- Meta Achievement
@@ -692,12 +698,13 @@ maproot(DRAGON_ISLES, {
 					16398,	-- Sojourner of Thaldraszus
 				}},
 			}),
-			ach(18559, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {	-- Many Boxes, Many Rockses
+			ach(18559, {	-- Many Boxes, Many Rockses
+				timeline = { ADDED_10_1_5 },
 				cost = { { "i", 199216, 50 } },	-- 50x A Box of Rocks
 				groups = {
 					i(207099),	-- Tiny Box of Tiny Rocks (TOY!)
 				},
-			})),
+			}),
 			ach(17330, {	-- Reverse Racer: Bronze
 				-- Meta Achievement
 				sym = {{"meta_achievement",
@@ -718,8 +725,9 @@ maproot(DRAGON_ISLES, {
 				}},
 				timeline = { ADDED_10_0_5 },
 			}),
-			ach(17332, bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {	-- Reverse Racer: Gold
+			ach(17332, {	-- Reverse Racer: Gold
 				-- Meta Achievement
+				timeline = { ADDED_10_0_5 },
 				sym = {{"meta_achievement",
 					17203,	-- Azure Span Reverse: Gold
 					17200,	-- Ohn'ahran Plains Reverse: Gold
@@ -729,7 +737,7 @@ maproot(DRAGON_ISLES, {
 				groups = {
 					title(490),	-- Reverse Racer <Name>
 				}
-			})),
+			}),
 			ach(16298, {	-- Treasure Hunter of the Dragon Isles
 				-- Meta Achievement
 				sym = {{"meta_achievement",

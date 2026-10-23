@@ -4,8 +4,9 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 	n(ACHIEVEMENTS, {
-		ach(61451, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {	-- Worldsoul-Searching
+		ach(61451, {	-- Worldsoul-Searching
 			-- Meta Achievement
+			timeline = { ADDED_11_2_7 },
 			sym = {{"meta_achievement",
 				40244,	-- Nerub-ar Palace
 				41222,	-- Liberation of Undermine
@@ -22,353 +23,356 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				i(257353),	-- Drained Dark Heart of Galakrond (DECOR!)
 				i(258188),	-- Geargrinder Mk. 11 (MOUNT!)
 			},
-		})),
-		ach(41665, bubbleDownSelf({ timeline = { ADDED_11_1_0 } }, {	-- Dressed to the Mines (automated)
-			iensemble(236852, {	-- Gallagio Highroller's Boomstone (CI!)
-				--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
-					cl(DEATHKNIGHT, {
-						i(229251),	-- Cauldron Champion's Screamplate
-						i(229253),	-- Cauldron Champion's Crown
-					}),
-					cl(DEMONHUNTER, {
-						i(229314),	-- Fel-Dealer's Recycled Reavers
-						i(229315),	-- Fel-Dealer's Fur Kilt
-						i(229316),	-- Fel-Dealer's Visor
-						i(229319),	-- Fel-Dealer's Soul Engine
-					}),
-					cl(DRUID, {
-						i(229305),	-- Jaws of Reclaiming Blight
-						i(229307),	-- Branches of Reclaiming Blight
-					}),
-					cl(EVOKER, {
-						i(229278),	-- Opulent Treasurescale's Gleaming Mantle
-						i(229280),	-- Opulent Treasurescale's Crowned Jewel
-					}),
-					cl(HUNTER, {
-						i(229269),	-- Tireless Collector's Hunted Heads
-						i(229271),	-- Tireless Collector's Chained Cowl
-					}),
-					cl(MAGE, {
-						i(229341),	-- Aspectral Emissary's Arcane Vents
-						i(229343),	-- Aspectral Emissary's Crystalline Cowl
-					}),
-					cl(MONK, {
-						i(229296),	-- Ageless Serpent's Shoulderpads
-						i(229298),	-- Ageless Serpent's Mane
-					}),
-					cl(PALADIN, {
-						i(229242),	-- Aureate Sentry's Roaring Will
-						i(229244),	-- Aureate Sentry's Pledge
-					}),
-					cl(PRIEST, {
-						i(229332),	-- Confessor's Unshakable Radiance
-						i(229334),	-- Confessor's Unshakable Halo
-					}),
-					cl(ROGUE, {
-						i(229287),	-- Spectral Gambler's Bladed Mantle
-					}),
-					cl(SHAMAN, {
-						i(229259),	-- Gale Sovereign's Ritual Belt
-						i(229260),	-- Gale Sovereign's Zephyrs
-						i(229262),	-- Gale Sovereign's Charged Hood
-					}),
-					cl(WARLOCK, {
-						i(229323),	-- Spliced Fiendtrader's Loyal Servants
-						i(229325),	-- Spliced Fiendtrader's Transcendence
-					}),
-					cl(WARRIOR, {
-						i(229232),	-- Enforcer's Backalley Girdle
-						i(229233),	-- Enforcer's Backalley Shoulderplates
-						i(229235),	-- Enforcer's Backalley Faceshield
-					}),
-				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
-					cl(DEATHKNIGHT, {
-						i(229251),	-- Cauldron Champion's Screamplate
-						i(229253),	-- Cauldron Champion's Crown
-					}),
-					cl(DEMONHUNTER, {
-						i(229314),	-- Fel-Dealer's Recycled Reavers
-						i(229315),	-- Fel-Dealer's Fur Kilt
-						i(229316),	-- Fel-Dealer's Visor
-						i(229319),	-- Fel-Dealer's Soul Engine
-					}),
-					cl(DRUID, {
-						i(229305),	-- Jaws of Reclaiming Blight
-						i(229307),	-- Branches of Reclaiming Blight
-					}),
-					cl(EVOKER, {
-						i(229278),	-- Opulent Treasurescale's Gleaming Mantle
-						i(229280),	-- Opulent Treasurescale's Crowned Jewel
-					}),
-					cl(HUNTER, {
-						i(229269),	-- Tireless Collector's Hunted Heads
-						i(229271),	-- Tireless Collector's Chained Cowl
-					}),
-					cl(MAGE, {
-						i(229341),	-- Aspectral Emissary's Arcane Vents
-						i(229343),	-- Aspectral Emissary's Crystalline Cowl
-					}),
-					cl(MONK, {
-						i(229296),	-- Ageless Serpent's Shoulderpads
-						i(229298),	-- Ageless Serpent's Mane
-					}),
-					cl(PALADIN, {
-						i(229242),	-- Aureate Sentry's Roaring Will
-						i(229244),	-- Aureate Sentry's Pledge
-					}),
-					cl(PRIEST, {
-						i(229332),	-- Confessor's Unshakable Radiance
-						i(229334),	-- Confessor's Unshakable Halo
-					}),
-					cl(ROGUE, {
-						i(229287),	-- Spectral Gambler's Bladed Mantle
-					}),
-					cl(SHAMAN, {
-						i(229259),	-- Gale Sovereign's Ritual Belt
-						i(229260),	-- Gale Sovereign's Zephyrs
-						i(229262),	-- Gale Sovereign's Charged Hood
-					}),
-					cl(WARLOCK, {
-						i(229323),	-- Spliced Fiendtrader's Loyal Servants
-						i(229325),	-- Spliced Fiendtrader's Transcendence
-					}),
-					cl(WARRIOR, {
-						i(229232),	-- Enforcer's Backalley Girdle
-						i(229233),	-- Enforcer's Backalley Shoulderplates
-						i(229235),	-- Enforcer's Backalley Faceshield
-					}),
-				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
-					cl(DEATHKNIGHT, {
-						i(229251),	-- Cauldron Champion's Screamplate
-						i(229253),	-- Cauldron Champion's Crown
-					}),
-					cl(DEMONHUNTER, {
-						i(229314),	-- Fel-Dealer's Recycled Reavers
-						i(229315),	-- Fel-Dealer's Fur Kilt
-						i(229316),	-- Fel-Dealer's Visor
-						i(229319),	-- Fel-Dealer's Soul Engine
-					}),
-					cl(DRUID, {
-						i(229305),	-- Jaws of Reclaiming Blight
-						i(229307),	-- Branches of Reclaiming Blight
-					}),
-					cl(EVOKER, {
-						i(229278),	-- Opulent Treasurescale's Gleaming Mantle
-						i(229280),	-- Opulent Treasurescale's Crowned Jewel
-					}),
-					cl(HUNTER, {
-						i(229269),	-- Tireless Collector's Hunted Heads
-						i(229271),	-- Tireless Collector's Chained Cowl
-					}),
-					cl(MAGE, {
-						i(229341),	-- Aspectral Emissary's Arcane Vents
-						i(229343),	-- Aspectral Emissary's Crystalline Cowl
-					}),
-					cl(MONK, {
-						i(229296),	-- Ageless Serpent's Shoulderpads
-						i(229298),	-- Ageless Serpent's Mane
-					}),
-					cl(PALADIN, {
-						i(229242),	-- Aureate Sentry's Roaring Will
-						i(229244),	-- Aureate Sentry's Pledge
-					}),
-					cl(PRIEST, {
-						i(229332),	-- Confessor's Unshakable Radiance
-						i(229334),	-- Confessor's Unshakable Halo
-					}),
-					cl(ROGUE, {
-						i(229287),	-- Spectral Gambler's Bladed Mantle
-					}),
-					cl(SHAMAN, {
-						i(229259),	-- Gale Sovereign's Ritual Belt
-						i(229260),	-- Gale Sovereign's Zephyrs
-						i(229262),	-- Gale Sovereign's Charged Hood
-					}),
-					cl(WARLOCK, {
-						i(229323),	-- Spliced Fiendtrader's Loyal Servants
-						i(229325),	-- Spliced Fiendtrader's Transcendence
-					}),
-					cl(WARRIOR, {
-						i(229232),	-- Enforcer's Backalley Girdle
-						i(229233),	-- Enforcer's Backalley Shoulderplates
-						i(229235),	-- Enforcer's Backalley Faceshield
-					}),
-				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
-					cl(DEATHKNIGHT, {
-						i(229251),	-- Cauldron Champion's Screamplate
-						i(229253),	-- Cauldron Champion's Crown
-					}),
-					cl(DEMONHUNTER, {
-						i(229314),	-- Fel-Dealer's Recycled Reavers
-						i(229315),	-- Fel-Dealer's Fur Kilt
-						i(229316),	-- Fel-Dealer's Visor
-						i(229319),	-- Fel-Dealer's Soul Engine
-					}),
-					cl(DRUID, {
-						i(229305),	-- Jaws of Reclaiming Blight
-						i(229307),	-- Branches of Reclaiming Blight
-					}),
-					cl(EVOKER, {
-						i(229278),	-- Opulent Treasurescale's Gleaming Mantle
-						i(229280),	-- Opulent Treasurescale's Crowned Jewel
-					}),
-					cl(HUNTER, {
-						i(229269),	-- Tireless Collector's Hunted Heads
-						i(229271),	-- Tireless Collector's Chained Cowl
-					}),
-					cl(MAGE, {
-						i(229341),	-- Aspectral Emissary's Arcane Vents
-						i(229343),	-- Aspectral Emissary's Crystalline Cowl
-					}),
-					cl(MONK, {
-						i(229296),	-- Ageless Serpent's Shoulderpads
-						i(229298),	-- Ageless Serpent's Mane
-					}),
-					cl(PALADIN, {
-						i(229242),	-- Aureate Sentry's Roaring Will
-						i(229244),	-- Aureate Sentry's Pledge
-					}),
-					cl(PRIEST, {
-						i(229332),	-- Confessor's Unshakable Radiance
-						i(229334),	-- Confessor's Unshakable Halo
-					}),
-					cl(ROGUE, {
-						i(229287),	-- Spectral Gambler's Bladed Mantle
-					}),
-					cl(SHAMAN, {
-						i(229259),	-- Gale Sovereign's Ritual Belt
-						i(229260),	-- Gale Sovereign's Zephyrs
-						i(229262),	-- Gale Sovereign's Charged Hood
-					}),
-					cl(WARLOCK, {
-						i(229323),	-- Spliced Fiendtrader's Loyal Servants
-						i(229325),	-- Spliced Fiendtrader's Transcendence
-					}),
-					cl(WARRIOR, {
-						i(229232),	-- Enforcer's Backalley Girdle
-						i(229233),	-- Enforcer's Backalley Shoulderplates
-						i(229235),	-- Enforcer's Backalley Faceshield
-					}),
-				})),
-				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
-					cl(DEATHKNIGHT, {
-						i(229251),	-- Cauldron Champion's Screamplate
-						i(229253),	-- Cauldron Champion's Crown
-					}),
-					cl(DEMONHUNTER, {
-						i(229314),	-- Fel-Dealer's Recycled Reavers
-						i(229315),	-- Fel-Dealer's Fur Kilt
-						i(229316),	-- Fel-Dealer's Visor
-						i(229319),	-- Fel-Dealer's Soul Engine
-					}),
-					cl(DRUID, {
-						i(229305),	-- Jaws of Reclaiming Blight
-						i(229307),	-- Branches of Reclaiming Blight
-					}),
-					cl(EVOKER, {
-						i(229278),	-- Opulent Treasurescale's Gleaming Mantle
-						i(229280),	-- Opulent Treasurescale's Crowned Jewel
-					}),
-					cl(HUNTER, {
-						i(229269),	-- Tireless Collector's Hunted Heads
-						i(229271),	-- Tireless Collector's Chained Cowl
-					}),
-					cl(MAGE, {
-						i(229341),	-- Aspectral Emissary's Arcane Vents
-						i(229343),	-- Aspectral Emissary's Crystalline Cowl
-					}),
-					cl(MONK, {
-						i(229296),	-- Ageless Serpent's Shoulderpads
-						i(229298),	-- Ageless Serpent's Mane
-					}),
-					cl(PALADIN, {
-						i(229242),	-- Aureate Sentry's Roaring Will
-						i(229244),	-- Aureate Sentry's Pledge
-					}),
-					cl(PRIEST, {
-						i(229332),	-- Confessor's Unshakable Radiance
-						i(229334),	-- Confessor's Unshakable Halo
-					}),
-					cl(ROGUE, {
-						i(229287),	-- Spectral Gambler's Bladed Mantle
-					}),
-					cl(SHAMAN, {
-						i(229259),	-- Gale Sovereign's Ritual Belt
-						i(229260),	-- Gale Sovereign's Zephyrs
-						i(229262),	-- Gale Sovereign's Charged Hood
-					}),
-					cl(WARLOCK, {
-						i(229323),	-- Spliced Fiendtrader's Loyal Servants
-						i(229325),	-- Spliced Fiendtrader's Transcendence
-					}),
-					cl(WARRIOR, {
-						i(229232),	-- Enforcer's Backalley Girdle
-						i(229233),	-- Enforcer's Backalley Shoulderplates
-						i(229235),	-- Enforcer's Backalley Faceshield
-					}),
-				})),
-				n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
-					cl(DEATHKNIGHT, {
-						i(229251),	-- Cauldron Champion's Screamplate
-						i(229253),	-- Cauldron Champion's Crown
-					}),
-					cl(DEMONHUNTER, {
-						i(229314),	-- Fel-Dealer's Recycled Reavers
-						i(229315),	-- Fel-Dealer's Fur Kilt
-						i(229316),	-- Fel-Dealer's Visor
-						i(229319),	-- Fel-Dealer's Soul Engine
-					}),
-					cl(DRUID, {
-						i(229305),	-- Jaws of Reclaiming Blight
-						i(229307),	-- Branches of Reclaiming Blight
-					}),
-					cl(EVOKER, {
-						i(229278),	-- Opulent Treasurescale's Gleaming Mantle
-						i(229280),	-- Opulent Treasurescale's Crowned Jewel
-					}),
-					cl(HUNTER, {
-						i(229269),	-- Tireless Collector's Hunted Heads
-						i(229271),	-- Tireless Collector's Chained Cowl
-					}),
-					cl(MAGE, {
-						i(229341),	-- Aspectral Emissary's Arcane Vents
-						i(229343),	-- Aspectral Emissary's Crystalline Cowl
-					}),
-					cl(MONK, {
-						i(229296),	-- Ageless Serpent's Shoulderpads
-						i(229298),	-- Ageless Serpent's Mane
-					}),
-					cl(PALADIN, {
-						i(229242),	-- Aureate Sentry's Roaring Will
-						i(229244),	-- Aureate Sentry's Pledge
-					}),
-					cl(PRIEST, {
-						i(229332),	-- Confessor's Unshakable Radiance
-						i(229334),	-- Confessor's Unshakable Halo
-					}),
-					cl(ROGUE, {
-						i(229287),	-- Spectral Gambler's Bladed Mantle
-					}),
-					cl(SHAMAN, {
-						i(229259),	-- Gale Sovereign's Ritual Belt
-						i(229260),	-- Gale Sovereign's Zephyrs
-						i(229262),	-- Gale Sovereign's Charged Hood
-					}),
-					cl(WARLOCK, {
-						i(229323),	-- Spliced Fiendtrader's Loyal Servants
-						i(229325),	-- Spliced Fiendtrader's Transcendence
-					}),
-					cl(WARRIOR, {
-						i(229232),	-- Enforcer's Backalley Girdle
-						i(229233),	-- Enforcer's Backalley Shoulderplates
-						i(229235),	-- Enforcer's Backalley Faceshield
-					}),
-				})),--]]
-			}),
-		})),
+		}),
+		ach(41665, {	-- Dressed to the Mines (automated)
+			timeline = { ADDED_11_1_0 },
+			groups = {
+				iensemble(236852, {	-- Gallagio Highroller's Boomstone (CI!)
+					--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
+						cl(DEATHKNIGHT, {
+							i(229251),	-- Cauldron Champion's Screamplate
+							i(229253),	-- Cauldron Champion's Crown
+						}),
+						cl(DEMONHUNTER, {
+							i(229314),	-- Fel-Dealer's Recycled Reavers
+							i(229315),	-- Fel-Dealer's Fur Kilt
+							i(229316),	-- Fel-Dealer's Visor
+							i(229319),	-- Fel-Dealer's Soul Engine
+						}),
+						cl(DRUID, {
+							i(229305),	-- Jaws of Reclaiming Blight
+							i(229307),	-- Branches of Reclaiming Blight
+						}),
+						cl(EVOKER, {
+							i(229278),	-- Opulent Treasurescale's Gleaming Mantle
+							i(229280),	-- Opulent Treasurescale's Crowned Jewel
+						}),
+						cl(HUNTER, {
+							i(229269),	-- Tireless Collector's Hunted Heads
+							i(229271),	-- Tireless Collector's Chained Cowl
+						}),
+						cl(MAGE, {
+							i(229341),	-- Aspectral Emissary's Arcane Vents
+							i(229343),	-- Aspectral Emissary's Crystalline Cowl
+						}),
+						cl(MONK, {
+							i(229296),	-- Ageless Serpent's Shoulderpads
+							i(229298),	-- Ageless Serpent's Mane
+						}),
+						cl(PALADIN, {
+							i(229242),	-- Aureate Sentry's Roaring Will
+							i(229244),	-- Aureate Sentry's Pledge
+						}),
+						cl(PRIEST, {
+							i(229332),	-- Confessor's Unshakable Radiance
+							i(229334),	-- Confessor's Unshakable Halo
+						}),
+						cl(ROGUE, {
+							i(229287),	-- Spectral Gambler's Bladed Mantle
+						}),
+						cl(SHAMAN, {
+							i(229259),	-- Gale Sovereign's Ritual Belt
+							i(229260),	-- Gale Sovereign's Zephyrs
+							i(229262),	-- Gale Sovereign's Charged Hood
+						}),
+						cl(WARLOCK, {
+							i(229323),	-- Spliced Fiendtrader's Loyal Servants
+							i(229325),	-- Spliced Fiendtrader's Transcendence
+						}),
+						cl(WARRIOR, {
+							i(229232),	-- Enforcer's Backalley Girdle
+							i(229233),	-- Enforcer's Backalley Shoulderplates
+							i(229235),	-- Enforcer's Backalley Faceshield
+						}),
+					})),
+					d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
+						cl(DEATHKNIGHT, {
+							i(229251),	-- Cauldron Champion's Screamplate
+							i(229253),	-- Cauldron Champion's Crown
+						}),
+						cl(DEMONHUNTER, {
+							i(229314),	-- Fel-Dealer's Recycled Reavers
+							i(229315),	-- Fel-Dealer's Fur Kilt
+							i(229316),	-- Fel-Dealer's Visor
+							i(229319),	-- Fel-Dealer's Soul Engine
+						}),
+						cl(DRUID, {
+							i(229305),	-- Jaws of Reclaiming Blight
+							i(229307),	-- Branches of Reclaiming Blight
+						}),
+						cl(EVOKER, {
+							i(229278),	-- Opulent Treasurescale's Gleaming Mantle
+							i(229280),	-- Opulent Treasurescale's Crowned Jewel
+						}),
+						cl(HUNTER, {
+							i(229269),	-- Tireless Collector's Hunted Heads
+							i(229271),	-- Tireless Collector's Chained Cowl
+						}),
+						cl(MAGE, {
+							i(229341),	-- Aspectral Emissary's Arcane Vents
+							i(229343),	-- Aspectral Emissary's Crystalline Cowl
+						}),
+						cl(MONK, {
+							i(229296),	-- Ageless Serpent's Shoulderpads
+							i(229298),	-- Ageless Serpent's Mane
+						}),
+						cl(PALADIN, {
+							i(229242),	-- Aureate Sentry's Roaring Will
+							i(229244),	-- Aureate Sentry's Pledge
+						}),
+						cl(PRIEST, {
+							i(229332),	-- Confessor's Unshakable Radiance
+							i(229334),	-- Confessor's Unshakable Halo
+						}),
+						cl(ROGUE, {
+							i(229287),	-- Spectral Gambler's Bladed Mantle
+						}),
+						cl(SHAMAN, {
+							i(229259),	-- Gale Sovereign's Ritual Belt
+							i(229260),	-- Gale Sovereign's Zephyrs
+							i(229262),	-- Gale Sovereign's Charged Hood
+						}),
+						cl(WARLOCK, {
+							i(229323),	-- Spliced Fiendtrader's Loyal Servants
+							i(229325),	-- Spliced Fiendtrader's Transcendence
+						}),
+						cl(WARRIOR, {
+							i(229232),	-- Enforcer's Backalley Girdle
+							i(229233),	-- Enforcer's Backalley Shoulderplates
+							i(229235),	-- Enforcer's Backalley Faceshield
+						}),
+					})),
+					d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
+						cl(DEATHKNIGHT, {
+							i(229251),	-- Cauldron Champion's Screamplate
+							i(229253),	-- Cauldron Champion's Crown
+						}),
+						cl(DEMONHUNTER, {
+							i(229314),	-- Fel-Dealer's Recycled Reavers
+							i(229315),	-- Fel-Dealer's Fur Kilt
+							i(229316),	-- Fel-Dealer's Visor
+							i(229319),	-- Fel-Dealer's Soul Engine
+						}),
+						cl(DRUID, {
+							i(229305),	-- Jaws of Reclaiming Blight
+							i(229307),	-- Branches of Reclaiming Blight
+						}),
+						cl(EVOKER, {
+							i(229278),	-- Opulent Treasurescale's Gleaming Mantle
+							i(229280),	-- Opulent Treasurescale's Crowned Jewel
+						}),
+						cl(HUNTER, {
+							i(229269),	-- Tireless Collector's Hunted Heads
+							i(229271),	-- Tireless Collector's Chained Cowl
+						}),
+						cl(MAGE, {
+							i(229341),	-- Aspectral Emissary's Arcane Vents
+							i(229343),	-- Aspectral Emissary's Crystalline Cowl
+						}),
+						cl(MONK, {
+							i(229296),	-- Ageless Serpent's Shoulderpads
+							i(229298),	-- Ageless Serpent's Mane
+						}),
+						cl(PALADIN, {
+							i(229242),	-- Aureate Sentry's Roaring Will
+							i(229244),	-- Aureate Sentry's Pledge
+						}),
+						cl(PRIEST, {
+							i(229332),	-- Confessor's Unshakable Radiance
+							i(229334),	-- Confessor's Unshakable Halo
+						}),
+						cl(ROGUE, {
+							i(229287),	-- Spectral Gambler's Bladed Mantle
+						}),
+						cl(SHAMAN, {
+							i(229259),	-- Gale Sovereign's Ritual Belt
+							i(229260),	-- Gale Sovereign's Zephyrs
+							i(229262),	-- Gale Sovereign's Charged Hood
+						}),
+						cl(WARLOCK, {
+							i(229323),	-- Spliced Fiendtrader's Loyal Servants
+							i(229325),	-- Spliced Fiendtrader's Transcendence
+						}),
+						cl(WARRIOR, {
+							i(229232),	-- Enforcer's Backalley Girdle
+							i(229233),	-- Enforcer's Backalley Shoulderplates
+							i(229235),	-- Enforcer's Backalley Faceshield
+						}),
+					})),
+					d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
+						cl(DEATHKNIGHT, {
+							i(229251),	-- Cauldron Champion's Screamplate
+							i(229253),	-- Cauldron Champion's Crown
+						}),
+						cl(DEMONHUNTER, {
+							i(229314),	-- Fel-Dealer's Recycled Reavers
+							i(229315),	-- Fel-Dealer's Fur Kilt
+							i(229316),	-- Fel-Dealer's Visor
+							i(229319),	-- Fel-Dealer's Soul Engine
+						}),
+						cl(DRUID, {
+							i(229305),	-- Jaws of Reclaiming Blight
+							i(229307),	-- Branches of Reclaiming Blight
+						}),
+						cl(EVOKER, {
+							i(229278),	-- Opulent Treasurescale's Gleaming Mantle
+							i(229280),	-- Opulent Treasurescale's Crowned Jewel
+						}),
+						cl(HUNTER, {
+							i(229269),	-- Tireless Collector's Hunted Heads
+							i(229271),	-- Tireless Collector's Chained Cowl
+						}),
+						cl(MAGE, {
+							i(229341),	-- Aspectral Emissary's Arcane Vents
+							i(229343),	-- Aspectral Emissary's Crystalline Cowl
+						}),
+						cl(MONK, {
+							i(229296),	-- Ageless Serpent's Shoulderpads
+							i(229298),	-- Ageless Serpent's Mane
+						}),
+						cl(PALADIN, {
+							i(229242),	-- Aureate Sentry's Roaring Will
+							i(229244),	-- Aureate Sentry's Pledge
+						}),
+						cl(PRIEST, {
+							i(229332),	-- Confessor's Unshakable Radiance
+							i(229334),	-- Confessor's Unshakable Halo
+						}),
+						cl(ROGUE, {
+							i(229287),	-- Spectral Gambler's Bladed Mantle
+						}),
+						cl(SHAMAN, {
+							i(229259),	-- Gale Sovereign's Ritual Belt
+							i(229260),	-- Gale Sovereign's Zephyrs
+							i(229262),	-- Gale Sovereign's Charged Hood
+						}),
+						cl(WARLOCK, {
+							i(229323),	-- Spliced Fiendtrader's Loyal Servants
+							i(229325),	-- Spliced Fiendtrader's Transcendence
+						}),
+						cl(WARRIOR, {
+							i(229232),	-- Enforcer's Backalley Girdle
+							i(229233),	-- Enforcer's Backalley Shoulderplates
+							i(229235),	-- Enforcer's Backalley Faceshield
+						}),
+					})),
+					n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
+						cl(DEATHKNIGHT, {
+							i(229251),	-- Cauldron Champion's Screamplate
+							i(229253),	-- Cauldron Champion's Crown
+						}),
+						cl(DEMONHUNTER, {
+							i(229314),	-- Fel-Dealer's Recycled Reavers
+							i(229315),	-- Fel-Dealer's Fur Kilt
+							i(229316),	-- Fel-Dealer's Visor
+							i(229319),	-- Fel-Dealer's Soul Engine
+						}),
+						cl(DRUID, {
+							i(229305),	-- Jaws of Reclaiming Blight
+							i(229307),	-- Branches of Reclaiming Blight
+						}),
+						cl(EVOKER, {
+							i(229278),	-- Opulent Treasurescale's Gleaming Mantle
+							i(229280),	-- Opulent Treasurescale's Crowned Jewel
+						}),
+						cl(HUNTER, {
+							i(229269),	-- Tireless Collector's Hunted Heads
+							i(229271),	-- Tireless Collector's Chained Cowl
+						}),
+						cl(MAGE, {
+							i(229341),	-- Aspectral Emissary's Arcane Vents
+							i(229343),	-- Aspectral Emissary's Crystalline Cowl
+						}),
+						cl(MONK, {
+							i(229296),	-- Ageless Serpent's Shoulderpads
+							i(229298),	-- Ageless Serpent's Mane
+						}),
+						cl(PALADIN, {
+							i(229242),	-- Aureate Sentry's Roaring Will
+							i(229244),	-- Aureate Sentry's Pledge
+						}),
+						cl(PRIEST, {
+							i(229332),	-- Confessor's Unshakable Radiance
+							i(229334),	-- Confessor's Unshakable Halo
+						}),
+						cl(ROGUE, {
+							i(229287),	-- Spectral Gambler's Bladed Mantle
+						}),
+						cl(SHAMAN, {
+							i(229259),	-- Gale Sovereign's Ritual Belt
+							i(229260),	-- Gale Sovereign's Zephyrs
+							i(229262),	-- Gale Sovereign's Charged Hood
+						}),
+						cl(WARLOCK, {
+							i(229323),	-- Spliced Fiendtrader's Loyal Servants
+							i(229325),	-- Spliced Fiendtrader's Transcendence
+						}),
+						cl(WARRIOR, {
+							i(229232),	-- Enforcer's Backalley Girdle
+							i(229233),	-- Enforcer's Backalley Shoulderplates
+							i(229235),	-- Enforcer's Backalley Faceshield
+						}),
+					})),
+					n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
+						cl(DEATHKNIGHT, {
+							i(229251),	-- Cauldron Champion's Screamplate
+							i(229253),	-- Cauldron Champion's Crown
+						}),
+						cl(DEMONHUNTER, {
+							i(229314),	-- Fel-Dealer's Recycled Reavers
+							i(229315),	-- Fel-Dealer's Fur Kilt
+							i(229316),	-- Fel-Dealer's Visor
+							i(229319),	-- Fel-Dealer's Soul Engine
+						}),
+						cl(DRUID, {
+							i(229305),	-- Jaws of Reclaiming Blight
+							i(229307),	-- Branches of Reclaiming Blight
+						}),
+						cl(EVOKER, {
+							i(229278),	-- Opulent Treasurescale's Gleaming Mantle
+							i(229280),	-- Opulent Treasurescale's Crowned Jewel
+						}),
+						cl(HUNTER, {
+							i(229269),	-- Tireless Collector's Hunted Heads
+							i(229271),	-- Tireless Collector's Chained Cowl
+						}),
+						cl(MAGE, {
+							i(229341),	-- Aspectral Emissary's Arcane Vents
+							i(229343),	-- Aspectral Emissary's Crystalline Cowl
+						}),
+						cl(MONK, {
+							i(229296),	-- Ageless Serpent's Shoulderpads
+							i(229298),	-- Ageless Serpent's Mane
+						}),
+						cl(PALADIN, {
+							i(229242),	-- Aureate Sentry's Roaring Will
+							i(229244),	-- Aureate Sentry's Pledge
+						}),
+						cl(PRIEST, {
+							i(229332),	-- Confessor's Unshakable Radiance
+							i(229334),	-- Confessor's Unshakable Halo
+						}),
+						cl(ROGUE, {
+							i(229287),	-- Spectral Gambler's Bladed Mantle
+						}),
+						cl(SHAMAN, {
+							i(229259),	-- Gale Sovereign's Ritual Belt
+							i(229260),	-- Gale Sovereign's Zephyrs
+							i(229262),	-- Gale Sovereign's Charged Hood
+						}),
+						cl(WARLOCK, {
+							i(229323),	-- Spliced Fiendtrader's Loyal Servants
+							i(229325),	-- Spliced Fiendtrader's Transcendence
+						}),
+						cl(WARRIOR, {
+							i(229232),	-- Enforcer's Backalley Girdle
+							i(229233),	-- Enforcer's Backalley Shoulderplates
+							i(229235),	-- Enforcer's Backalley Faceshield
+						}),
+					})),--]]
+				}),
+			},
+		}),
 		ach(40107, {	-- Harbinger of the Weatherd
 			-- INFO: The 4 harbinger achievements (which are feats of strength) were added at the start of 11.0.2 but didn't fire and showed a TODO in the name. They were corrected before 11.0.5. They could be timelined to the exact build if preferred but this is good enough.
 			timeline = { ADDED_11_0_2, REMOVED_11_1_0 },
@@ -448,364 +452,367 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 			crit(103332),	-- Defeated Dimensius on Heroic or Mythic difficulty
 			i(240175),	-- Crystallized Ethereal Voidsplinter
 		})),
-		ach(42325, bubbleDownSelf({ timeline = { ADDED_11_2_0 }, }, {	-- Void Wear Prohibited (automated)
-			iensemble(246737, {	-- K'areshi Voidstone (CI!)
-				--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
-					cl(DEATHKNIGHT, {
-						i(237626),	-- Hollow Senintel's Perches
-						i(237628),	-- Hollow Sentinel's Stonemask
-					}),
-					cl(DEMONHUNTER, {
-						i(237689),	-- Charhound's Vicious Hornguards
-						i(237691),	-- Charhound's Vicious Scalp
-					}),
-					cl(DRUID, {
-						i(237679),	-- Dreamsash of the Mother Eagle
-						i(237680),	-- Ritual Pauldrons of the Mother Eagle
-						i(237682),	-- Skymane of the Mother Eagle
-						i(237685),	-- Vest of the Mother Eagle
-					}),
-					cl(EVOKER, {
-						i(237653),	-- Spellweaver's Immaculate Pauldrons
-						i(237655),	-- Spellweaver's Immaculate Focus
-					}),
-					cl(HUNTER, {
-						i(237644),	-- Midnight Herald's Shadowguards
-						i(237646),	-- Midnight Herald's Cowl
-					}),
-					cl(MAGE, {
-						i(237715),	-- Augur's Ephemeral Quillsash
-						i(237716),	-- Augur's Ephemeral Orbs of Power
-						i(237718),	-- Augur's Ephemeral Wide-Brim
-					}),
-					cl(MONK, {
-						i(237670),	-- Thunderbund of Fallen Storms
-						i(237671),	-- Glyphs of Fallen Storms
-						i(237673),	-- Half-Mask of Fallen Storms
-						i(237674),	-- Grasp of Fallen Storms
-						i(237675),	-- Footpads of Fallen Storms
-						i(237676),	-- Gi of Fallen Storms
-					}),
-					cl(PALADIN, {
-						i(237617),	-- Chargers of the Lucent Battalion
-						i(237619),	-- Lightmane of the Lucent Battalion
-					}),
-					cl(PRIEST, {
-						i(237707),	-- Dying Star's Pyrelights
-						i(237709),	-- Dying Star's Veil
-					}),
-					cl(ROGUE, {
-						i(237662),	-- Smokemantle of the Sudden Eclipse
-					}),
-					cl(SHAMAN, {
-						i(237635),	-- Fangs of Channeled Fury
-					}),
-					cl(WARLOCK, {
-						i(237698),	-- Inquisitor's Gaze of Madness
-						i(237700),	-- Inquisitor's Portal to Madness
-					}),
-					cl(WARRIOR, {
-						i(237608),	-- Living Weapon's Ramparts
-						i(237610),	-- Living Weapon's Faceshield
-					}),
-				})),
-				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
-					cl(DEATHKNIGHT, {
-						i(237626),	-- Hollow Senintel's Perches
-						i(237628),	-- Hollow Sentinel's Stonemask
-					}),
-					cl(DEMONHUNTER, {
-						i(237689),	-- Charhound's Vicious Hornguards
-						i(237691),	-- Charhound's Vicious Scalp
-					}),
-					cl(DRUID, {
-						i(237679),	-- Dreamsash of the Mother Eagle
-						i(237680),	-- Ritual Pauldrons of the Mother Eagle
-						i(237682),	-- Skymane of the Mother Eagle
-						i(237685),	-- Vest of the Mother Eagle
-					}),
-					cl(EVOKER, {
-						i(237653),	-- Spellweaver's Immaculate Pauldrons
-						i(237655),	-- Spellweaver's Immaculate Focus
-					}),
-					cl(HUNTER, {
-						i(237644),	-- Midnight Herald's Shadowguards
-						i(237646),	-- Midnight Herald's Cowl
-					}),
-					cl(MAGE, {
-						i(237715),	-- Augur's Ephemeral Quillsash
-						i(237716),	-- Augur's Ephemeral Orbs of Power
-						i(237718),	-- Augur's Ephemeral Wide-Brim
-					}),
-					cl(MONK, {
-						i(237670),	-- Thunderbund of Fallen Storms
-						i(237671),	-- Glyphs of Fallen Storms
-						i(237673),	-- Half-Mask of Fallen Storms
-						i(237674),	-- Grasp of Fallen Storms
-						i(237675),	-- Footpads of Fallen Storms
-						i(237676),	-- Gi of Fallen Storms
-					}),
-					cl(PALADIN, {
-						i(237617),	-- Chargers of the Lucent Battalion
-						i(237619),	-- Lightmane of the Lucent Battalion
-					}),
-					cl(PRIEST, {
-						i(237707),	-- Dying Star's Pyrelights
-						i(237709),	-- Dying Star's Veil
-					}),
-					cl(ROGUE, {
-						i(237662),	-- Smokemantle of the Sudden Eclipse
-					}),
-					cl(SHAMAN, {
-						i(237635),	-- Fangs of Channeled Fury
-					}),
-					cl(WARLOCK, {
-						i(237698),	-- Inquisitor's Gaze of Madness
-						i(237700),	-- Inquisitor's Portal to Madness
-					}),
-					cl(WARRIOR, {
-						i(237608),	-- Living Weapon's Ramparts
-						i(237610),	-- Living Weapon's Faceshield
-					}),
-				})),
-				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
-					cl(DEATHKNIGHT, {
-						i(237626),	-- Hollow Senintel's Perches
-						i(237628),	-- Hollow Sentinel's Stonemask
-					}),
-					cl(DEMONHUNTER, {
-						i(237689),	-- Charhound's Vicious Hornguards
-						i(237691),	-- Charhound's Vicious Scalp
-					}),
-					cl(DRUID, {
-						i(237679),	-- Dreamsash of the Mother Eagle
-						i(237680),	-- Ritual Pauldrons of the Mother Eagle
-						i(237682),	-- Skymane of the Mother Eagle
-						i(237685),	-- Vest of the Mother Eagle
-					}),
-					cl(EVOKER, {
-						i(237653),	-- Spellweaver's Immaculate Pauldrons
-						i(237655),	-- Spellweaver's Immaculate Focus
-					}),
-					cl(HUNTER, {
-						i(237644),	-- Midnight Herald's Shadowguards
-						i(237646),	-- Midnight Herald's Cowl
-					}),
-					cl(MAGE, {
-						i(237715),	-- Augur's Ephemeral Quillsash
-						i(237716),	-- Augur's Ephemeral Orbs of Power
-						i(237718),	-- Augur's Ephemeral Wide-Brim
-					}),
-					cl(MONK, {
-						i(237670),	-- Thunderbund of Fallen Storms
-						i(237671),	-- Glyphs of Fallen Storms
-						i(237673),	-- Half-Mask of Fallen Storms
-						i(237674),	-- Grasp of Fallen Storms
-						i(237675),	-- Footpads of Fallen Storms
-						i(237676),	-- Gi of Fallen Storms
-					}),
-					cl(PALADIN, {
-						i(237617),	-- Chargers of the Lucent Battalion
-						i(237619),	-- Lightmane of the Lucent Battalion
-					}),
-					cl(PRIEST, {
-						i(237707),	-- Dying Star's Pyrelights
-						i(237709),	-- Dying Star's Veil
-					}),
-					cl(ROGUE, {
-						i(237662),	-- Smokemantle of the Sudden Eclipse
-					}),
-					cl(SHAMAN, {
-						i(237635),	-- Fangs of Channeled Fury
-					}),
-					cl(WARLOCK, {
-						i(237698),	-- Inquisitor's Gaze of Madness
-						i(237700),	-- Inquisitor's Portal to Madness
-					}),
-					cl(WARRIOR, {
-						i(237608),	-- Living Weapon's Ramparts
-						i(237610),	-- Living Weapon's Faceshield
-					}),
-				})),
-				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
-					cl(DEATHKNIGHT, {
-						i(237626),	-- Hollow Senintel's Perches
-						i(237628),	-- Hollow Sentinel's Stonemask
-					}),
-					cl(DEMONHUNTER, {
-						i(237689),	-- Charhound's Vicious Hornguards
-						i(237691),	-- Charhound's Vicious Scalp
-					}),
-					cl(DRUID, {
-						i(237679),	-- Dreamsash of the Mother Eagle
-						i(237680),	-- Ritual Pauldrons of the Mother Eagle
-						i(237682),	-- Skymane of the Mother Eagle
-						i(237685),	-- Vest of the Mother Eagle
-					}),
-					cl(EVOKER, {
-						i(237653),	-- Spellweaver's Immaculate Pauldrons
-						i(237655),	-- Spellweaver's Immaculate Focus
-					}),
-					cl(HUNTER, {
-						i(237644),	-- Midnight Herald's Shadowguards
-						i(237646),	-- Midnight Herald's Cowl
-					}),
-					cl(MAGE, {
-						i(237715),	-- Augur's Ephemeral Quillsash
-						i(237716),	-- Augur's Ephemeral Orbs of Power
-						i(237718),	-- Augur's Ephemeral Wide-Brim
-					}),
-					cl(MONK, {
-						i(237670),	-- Thunderbund of Fallen Storms
-						i(237671),	-- Glyphs of Fallen Storms
-						i(237673),	-- Half-Mask of Fallen Storms
-						i(237674),	-- Grasp of Fallen Storms
-						i(237675),	-- Footpads of Fallen Storms
-						i(237676),	-- Gi of Fallen Storms
-					}),
-					cl(PALADIN, {
-						i(237617),	-- Chargers of the Lucent Battalion
-						i(237619),	-- Lightmane of the Lucent Battalion
-					}),
-					cl(PRIEST, {
-						i(237707),	-- Dying Star's Pyrelights
-						i(237709),	-- Dying Star's Veil
-					}),
-					cl(ROGUE, {
-						i(237662),	-- Smokemantle of the Sudden Eclipse
-					}),
-					cl(SHAMAN, {
-						i(237635),	-- Fangs of Channeled Fury
-					}),
-					cl(WARLOCK, {
-						i(237698),	-- Inquisitor's Gaze of Madness
-						i(237700),	-- Inquisitor's Portal to Madness
-					}),
-					cl(WARRIOR, {
-						i(237608),	-- Living Weapon's Ramparts
-						i(237610),	-- Living Weapon's Faceshield
-					}),
-				})),
-				n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
-					cl(DEATHKNIGHT, {
-						i(237626),	-- Hollow Senintel's Perches
-						i(237628),	-- Hollow Sentinel's Stonemask
-					}),
-					cl(DEMONHUNTER, {
-						i(237689),	-- Charhound's Vicious Hornguards
-						i(237691),	-- Charhound's Vicious Scalp
-					}),
-					cl(DRUID, {
-						i(237679),	-- Dreamsash of the Mother Eagle
-						i(237680),	-- Ritual Pauldrons of the Mother Eagle
-						i(237682),	-- Skymane of the Mother Eagle
-						i(237685),	-- Vest of the Mother Eagle
-					}),
-					cl(EVOKER, {
-						i(237653),	-- Spellweaver's Immaculate Pauldrons
-						i(237655),	-- Spellweaver's Immaculate Focus
-					}),
-					cl(HUNTER, {
-						i(237644),	-- Midnight Herald's Shadowguards
-						i(237646),	-- Midnight Herald's Cowl
-					}),
-					cl(MAGE, {
-						i(237715),	-- Augur's Ephemeral Quillsash
-						i(237716),	-- Augur's Ephemeral Orbs of Power
-						i(237718),	-- Augur's Ephemeral Wide-Brim
-					}),
-					cl(MONK, {
-						i(237670),	-- Thunderbund of Fallen Storms
-						i(237671),	-- Glyphs of Fallen Storms
-						i(237673),	-- Half-Mask of Fallen Storms
-						i(237674),	-- Grasp of Fallen Storms
-						i(237675),	-- Footpads of Fallen Storms
-						i(237676),	-- Gi of Fallen Storms
-					}),
-					cl(PALADIN, {
-						i(237617),	-- Chargers of the Lucent Battalion
-						i(237619),	-- Lightmane of the Lucent Battalion
-					}),
-					cl(PRIEST, {
-						i(237707),	-- Dying Star's Pyrelights
-						i(237709),	-- Dying Star's Veil
-					}),
-					cl(ROGUE, {
-						i(237662),	-- Smokemantle of the Sudden Eclipse
-					}),
-					cl(SHAMAN, {
-						i(237635),	-- Fangs of Channeled Fury
-					}),
-					cl(WARLOCK, {
-						i(237698),	-- Inquisitor's Gaze of Madness
-						i(237700),	-- Inquisitor's Portal to Madness
-					}),
-					cl(WARRIOR, {
-						i(237608),	-- Living Weapon's Ramparts
-						i(237610),	-- Living Weapon's Faceshield
-					}),
-				})),
-				n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
-					cl(DEATHKNIGHT, {
-						i(237626),	-- Hollow Senintel's Perches
-						i(237628),	-- Hollow Sentinel's Stonemask
-					}),
-					cl(DEMONHUNTER, {
-						i(237689),	-- Charhound's Vicious Hornguards
-						i(237691),	-- Charhound's Vicious Scalp
-					}),
-					cl(DRUID, {
-						i(237679),	-- Dreamsash of the Mother Eagle
-						i(237680),	-- Ritual Pauldrons of the Mother Eagle
-						i(237682),	-- Skymane of the Mother Eagle
-						i(237685),	-- Vest of the Mother Eagle
-					}),
-					cl(EVOKER, {
-						i(237653),	-- Spellweaver's Immaculate Pauldrons
-						i(237655),	-- Spellweaver's Immaculate Focus
-					}),
-					cl(HUNTER, {
-						i(237644),	-- Midnight Herald's Shadowguards
-						i(237646),	-- Midnight Herald's Cowl
-					}),
-					cl(MAGE, {
-						i(237715),	-- Augur's Ephemeral Quillsash
-						i(237716),	-- Augur's Ephemeral Orbs of Power
-						i(237718),	-- Augur's Ephemeral Wide-Brim
-					}),
-					cl(MONK, {
-						i(237670),	-- Thunderbund of Fallen Storms
-						i(237671),	-- Glyphs of Fallen Storms
-						i(237673),	-- Half-Mask of Fallen Storms
-						i(237674),	-- Grasp of Fallen Storms
-						i(237675),	-- Footpads of Fallen Storms
-						i(237676),	-- Gi of Fallen Storms
-					}),
-					cl(PALADIN, {
-						i(237617),	-- Chargers of the Lucent Battalion
-						i(237619),	-- Lightmane of the Lucent Battalion
-					}),
-					cl(PRIEST, {
-						i(237707),	-- Dying Star's Pyrelights
-						i(237709),	-- Dying Star's Veil
-					}),
-					cl(ROGUE, {
-						i(237662),	-- Smokemantle of the Sudden Eclipse
-					}),
-					cl(SHAMAN, {
-						i(237635),	-- Fangs of Channeled Fury
-					}),
-					cl(WARLOCK, {
-						i(237698),	-- Inquisitor's Gaze of Madness
-						i(237700),	-- Inquisitor's Portal to Madness
-					}),
-					cl(WARRIOR, {
-						i(237608),	-- Living Weapon's Ramparts
-						i(237610),	-- Living Weapon's Faceshield
-					}),
-				})),--]]
-			}),
-		})),
+		ach(42325, {	-- Void Wear Prohibited (automated)
+			timeline = { ADDED_11_2_0 },
+			groups = {
+				iensemble(246737, {	-- K'areshi Voidstone (CI!)
+					--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
+						cl(DEATHKNIGHT, {
+							i(237626),	-- Hollow Senintel's Perches
+							i(237628),	-- Hollow Sentinel's Stonemask
+						}),
+						cl(DEMONHUNTER, {
+							i(237689),	-- Charhound's Vicious Hornguards
+							i(237691),	-- Charhound's Vicious Scalp
+						}),
+						cl(DRUID, {
+							i(237679),	-- Dreamsash of the Mother Eagle
+							i(237680),	-- Ritual Pauldrons of the Mother Eagle
+							i(237682),	-- Skymane of the Mother Eagle
+							i(237685),	-- Vest of the Mother Eagle
+						}),
+						cl(EVOKER, {
+							i(237653),	-- Spellweaver's Immaculate Pauldrons
+							i(237655),	-- Spellweaver's Immaculate Focus
+						}),
+						cl(HUNTER, {
+							i(237644),	-- Midnight Herald's Shadowguards
+							i(237646),	-- Midnight Herald's Cowl
+						}),
+						cl(MAGE, {
+							i(237715),	-- Augur's Ephemeral Quillsash
+							i(237716),	-- Augur's Ephemeral Orbs of Power
+							i(237718),	-- Augur's Ephemeral Wide-Brim
+						}),
+						cl(MONK, {
+							i(237670),	-- Thunderbund of Fallen Storms
+							i(237671),	-- Glyphs of Fallen Storms
+							i(237673),	-- Half-Mask of Fallen Storms
+							i(237674),	-- Grasp of Fallen Storms
+							i(237675),	-- Footpads of Fallen Storms
+							i(237676),	-- Gi of Fallen Storms
+						}),
+						cl(PALADIN, {
+							i(237617),	-- Chargers of the Lucent Battalion
+							i(237619),	-- Lightmane of the Lucent Battalion
+						}),
+						cl(PRIEST, {
+							i(237707),	-- Dying Star's Pyrelights
+							i(237709),	-- Dying Star's Veil
+						}),
+						cl(ROGUE, {
+							i(237662),	-- Smokemantle of the Sudden Eclipse
+						}),
+						cl(SHAMAN, {
+							i(237635),	-- Fangs of Channeled Fury
+						}),
+						cl(WARLOCK, {
+							i(237698),	-- Inquisitor's Gaze of Madness
+							i(237700),	-- Inquisitor's Portal to Madness
+						}),
+						cl(WARRIOR, {
+							i(237608),	-- Living Weapon's Ramparts
+							i(237610),	-- Living Weapon's Faceshield
+						}),
+					})),
+					d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
+						cl(DEATHKNIGHT, {
+							i(237626),	-- Hollow Senintel's Perches
+							i(237628),	-- Hollow Sentinel's Stonemask
+						}),
+						cl(DEMONHUNTER, {
+							i(237689),	-- Charhound's Vicious Hornguards
+							i(237691),	-- Charhound's Vicious Scalp
+						}),
+						cl(DRUID, {
+							i(237679),	-- Dreamsash of the Mother Eagle
+							i(237680),	-- Ritual Pauldrons of the Mother Eagle
+							i(237682),	-- Skymane of the Mother Eagle
+							i(237685),	-- Vest of the Mother Eagle
+						}),
+						cl(EVOKER, {
+							i(237653),	-- Spellweaver's Immaculate Pauldrons
+							i(237655),	-- Spellweaver's Immaculate Focus
+						}),
+						cl(HUNTER, {
+							i(237644),	-- Midnight Herald's Shadowguards
+							i(237646),	-- Midnight Herald's Cowl
+						}),
+						cl(MAGE, {
+							i(237715),	-- Augur's Ephemeral Quillsash
+							i(237716),	-- Augur's Ephemeral Orbs of Power
+							i(237718),	-- Augur's Ephemeral Wide-Brim
+						}),
+						cl(MONK, {
+							i(237670),	-- Thunderbund of Fallen Storms
+							i(237671),	-- Glyphs of Fallen Storms
+							i(237673),	-- Half-Mask of Fallen Storms
+							i(237674),	-- Grasp of Fallen Storms
+							i(237675),	-- Footpads of Fallen Storms
+							i(237676),	-- Gi of Fallen Storms
+						}),
+						cl(PALADIN, {
+							i(237617),	-- Chargers of the Lucent Battalion
+							i(237619),	-- Lightmane of the Lucent Battalion
+						}),
+						cl(PRIEST, {
+							i(237707),	-- Dying Star's Pyrelights
+							i(237709),	-- Dying Star's Veil
+						}),
+						cl(ROGUE, {
+							i(237662),	-- Smokemantle of the Sudden Eclipse
+						}),
+						cl(SHAMAN, {
+							i(237635),	-- Fangs of Channeled Fury
+						}),
+						cl(WARLOCK, {
+							i(237698),	-- Inquisitor's Gaze of Madness
+							i(237700),	-- Inquisitor's Portal to Madness
+						}),
+						cl(WARRIOR, {
+							i(237608),	-- Living Weapon's Ramparts
+							i(237610),	-- Living Weapon's Faceshield
+						}),
+					})),
+					d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
+						cl(DEATHKNIGHT, {
+							i(237626),	-- Hollow Senintel's Perches
+							i(237628),	-- Hollow Sentinel's Stonemask
+						}),
+						cl(DEMONHUNTER, {
+							i(237689),	-- Charhound's Vicious Hornguards
+							i(237691),	-- Charhound's Vicious Scalp
+						}),
+						cl(DRUID, {
+							i(237679),	-- Dreamsash of the Mother Eagle
+							i(237680),	-- Ritual Pauldrons of the Mother Eagle
+							i(237682),	-- Skymane of the Mother Eagle
+							i(237685),	-- Vest of the Mother Eagle
+						}),
+						cl(EVOKER, {
+							i(237653),	-- Spellweaver's Immaculate Pauldrons
+							i(237655),	-- Spellweaver's Immaculate Focus
+						}),
+						cl(HUNTER, {
+							i(237644),	-- Midnight Herald's Shadowguards
+							i(237646),	-- Midnight Herald's Cowl
+						}),
+						cl(MAGE, {
+							i(237715),	-- Augur's Ephemeral Quillsash
+							i(237716),	-- Augur's Ephemeral Orbs of Power
+							i(237718),	-- Augur's Ephemeral Wide-Brim
+						}),
+						cl(MONK, {
+							i(237670),	-- Thunderbund of Fallen Storms
+							i(237671),	-- Glyphs of Fallen Storms
+							i(237673),	-- Half-Mask of Fallen Storms
+							i(237674),	-- Grasp of Fallen Storms
+							i(237675),	-- Footpads of Fallen Storms
+							i(237676),	-- Gi of Fallen Storms
+						}),
+						cl(PALADIN, {
+							i(237617),	-- Chargers of the Lucent Battalion
+							i(237619),	-- Lightmane of the Lucent Battalion
+						}),
+						cl(PRIEST, {
+							i(237707),	-- Dying Star's Pyrelights
+							i(237709),	-- Dying Star's Veil
+						}),
+						cl(ROGUE, {
+							i(237662),	-- Smokemantle of the Sudden Eclipse
+						}),
+						cl(SHAMAN, {
+							i(237635),	-- Fangs of Channeled Fury
+						}),
+						cl(WARLOCK, {
+							i(237698),	-- Inquisitor's Gaze of Madness
+							i(237700),	-- Inquisitor's Portal to Madness
+						}),
+						cl(WARRIOR, {
+							i(237608),	-- Living Weapon's Ramparts
+							i(237610),	-- Living Weapon's Faceshield
+						}),
+					})),
+					d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
+						cl(DEATHKNIGHT, {
+							i(237626),	-- Hollow Senintel's Perches
+							i(237628),	-- Hollow Sentinel's Stonemask
+						}),
+						cl(DEMONHUNTER, {
+							i(237689),	-- Charhound's Vicious Hornguards
+							i(237691),	-- Charhound's Vicious Scalp
+						}),
+						cl(DRUID, {
+							i(237679),	-- Dreamsash of the Mother Eagle
+							i(237680),	-- Ritual Pauldrons of the Mother Eagle
+							i(237682),	-- Skymane of the Mother Eagle
+							i(237685),	-- Vest of the Mother Eagle
+						}),
+						cl(EVOKER, {
+							i(237653),	-- Spellweaver's Immaculate Pauldrons
+							i(237655),	-- Spellweaver's Immaculate Focus
+						}),
+						cl(HUNTER, {
+							i(237644),	-- Midnight Herald's Shadowguards
+							i(237646),	-- Midnight Herald's Cowl
+						}),
+						cl(MAGE, {
+							i(237715),	-- Augur's Ephemeral Quillsash
+							i(237716),	-- Augur's Ephemeral Orbs of Power
+							i(237718),	-- Augur's Ephemeral Wide-Brim
+						}),
+						cl(MONK, {
+							i(237670),	-- Thunderbund of Fallen Storms
+							i(237671),	-- Glyphs of Fallen Storms
+							i(237673),	-- Half-Mask of Fallen Storms
+							i(237674),	-- Grasp of Fallen Storms
+							i(237675),	-- Footpads of Fallen Storms
+							i(237676),	-- Gi of Fallen Storms
+						}),
+						cl(PALADIN, {
+							i(237617),	-- Chargers of the Lucent Battalion
+							i(237619),	-- Lightmane of the Lucent Battalion
+						}),
+						cl(PRIEST, {
+							i(237707),	-- Dying Star's Pyrelights
+							i(237709),	-- Dying Star's Veil
+						}),
+						cl(ROGUE, {
+							i(237662),	-- Smokemantle of the Sudden Eclipse
+						}),
+						cl(SHAMAN, {
+							i(237635),	-- Fangs of Channeled Fury
+						}),
+						cl(WARLOCK, {
+							i(237698),	-- Inquisitor's Gaze of Madness
+							i(237700),	-- Inquisitor's Portal to Madness
+						}),
+						cl(WARRIOR, {
+							i(237608),	-- Living Weapon's Ramparts
+							i(237610),	-- Living Weapon's Faceshield
+						}),
+					})),
+					n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
+						cl(DEATHKNIGHT, {
+							i(237626),	-- Hollow Senintel's Perches
+							i(237628),	-- Hollow Sentinel's Stonemask
+						}),
+						cl(DEMONHUNTER, {
+							i(237689),	-- Charhound's Vicious Hornguards
+							i(237691),	-- Charhound's Vicious Scalp
+						}),
+						cl(DRUID, {
+							i(237679),	-- Dreamsash of the Mother Eagle
+							i(237680),	-- Ritual Pauldrons of the Mother Eagle
+							i(237682),	-- Skymane of the Mother Eagle
+							i(237685),	-- Vest of the Mother Eagle
+						}),
+						cl(EVOKER, {
+							i(237653),	-- Spellweaver's Immaculate Pauldrons
+							i(237655),	-- Spellweaver's Immaculate Focus
+						}),
+						cl(HUNTER, {
+							i(237644),	-- Midnight Herald's Shadowguards
+							i(237646),	-- Midnight Herald's Cowl
+						}),
+						cl(MAGE, {
+							i(237715),	-- Augur's Ephemeral Quillsash
+							i(237716),	-- Augur's Ephemeral Orbs of Power
+							i(237718),	-- Augur's Ephemeral Wide-Brim
+						}),
+						cl(MONK, {
+							i(237670),	-- Thunderbund of Fallen Storms
+							i(237671),	-- Glyphs of Fallen Storms
+							i(237673),	-- Half-Mask of Fallen Storms
+							i(237674),	-- Grasp of Fallen Storms
+							i(237675),	-- Footpads of Fallen Storms
+							i(237676),	-- Gi of Fallen Storms
+						}),
+						cl(PALADIN, {
+							i(237617),	-- Chargers of the Lucent Battalion
+							i(237619),	-- Lightmane of the Lucent Battalion
+						}),
+						cl(PRIEST, {
+							i(237707),	-- Dying Star's Pyrelights
+							i(237709),	-- Dying Star's Veil
+						}),
+						cl(ROGUE, {
+							i(237662),	-- Smokemantle of the Sudden Eclipse
+						}),
+						cl(SHAMAN, {
+							i(237635),	-- Fangs of Channeled Fury
+						}),
+						cl(WARLOCK, {
+							i(237698),	-- Inquisitor's Gaze of Madness
+							i(237700),	-- Inquisitor's Portal to Madness
+						}),
+						cl(WARRIOR, {
+							i(237608),	-- Living Weapon's Ramparts
+							i(237610),	-- Living Weapon's Faceshield
+						}),
+					})),
+					n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
+						cl(DEATHKNIGHT, {
+							i(237626),	-- Hollow Senintel's Perches
+							i(237628),	-- Hollow Sentinel's Stonemask
+						}),
+						cl(DEMONHUNTER, {
+							i(237689),	-- Charhound's Vicious Hornguards
+							i(237691),	-- Charhound's Vicious Scalp
+						}),
+						cl(DRUID, {
+							i(237679),	-- Dreamsash of the Mother Eagle
+							i(237680),	-- Ritual Pauldrons of the Mother Eagle
+							i(237682),	-- Skymane of the Mother Eagle
+							i(237685),	-- Vest of the Mother Eagle
+						}),
+						cl(EVOKER, {
+							i(237653),	-- Spellweaver's Immaculate Pauldrons
+							i(237655),	-- Spellweaver's Immaculate Focus
+						}),
+						cl(HUNTER, {
+							i(237644),	-- Midnight Herald's Shadowguards
+							i(237646),	-- Midnight Herald's Cowl
+						}),
+						cl(MAGE, {
+							i(237715),	-- Augur's Ephemeral Quillsash
+							i(237716),	-- Augur's Ephemeral Orbs of Power
+							i(237718),	-- Augur's Ephemeral Wide-Brim
+						}),
+						cl(MONK, {
+							i(237670),	-- Thunderbund of Fallen Storms
+							i(237671),	-- Glyphs of Fallen Storms
+							i(237673),	-- Half-Mask of Fallen Storms
+							i(237674),	-- Grasp of Fallen Storms
+							i(237675),	-- Footpads of Fallen Storms
+							i(237676),	-- Gi of Fallen Storms
+						}),
+						cl(PALADIN, {
+							i(237617),	-- Chargers of the Lucent Battalion
+							i(237619),	-- Lightmane of the Lucent Battalion
+						}),
+						cl(PRIEST, {
+							i(237707),	-- Dying Star's Pyrelights
+							i(237709),	-- Dying Star's Veil
+						}),
+						cl(ROGUE, {
+							i(237662),	-- Smokemantle of the Sudden Eclipse
+						}),
+						cl(SHAMAN, {
+							i(237635),	-- Fangs of Channeled Fury
+						}),
+						cl(WARLOCK, {
+							i(237698),	-- Inquisitor's Gaze of Madness
+							i(237700),	-- Inquisitor's Portal to Madness
+						}),
+						cl(WARRIOR, {
+							i(237608),	-- Living Weapon's Ramparts
+							i(237610),	-- Living Weapon's Faceshield
+						}),
+					})),--]]
+				}),
+			},
+		}),
 		ach(40723, {	-- Web-Wrapped in the Finest Silks (automated)
 			iensemble(226224, {	-- Luminous Nerubian Catalyst Stone (CI!)
 				--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
@@ -1158,10 +1165,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				})),--]]
 			}),
 		}),
-		ach(41201, bubbleDownSelf({	-- You Xal Not Pass
-			timeline = { ADDED_11_0_7 },
-		},{
+		ach(41201, {
 			-- Meta Achievement
+			timeline = { ADDED_11_0_7 },
 			sym = {{"meta_achievement",
 				41189,	-- Azj the World Turns
 				41188,	-- Crystal Chronicled
@@ -1172,6 +1178,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 			groups = {
 				i(223313),	-- Shadow of Doubt (MOUNT!)
 			},
-		})),
+		}),
 	}),
 }));

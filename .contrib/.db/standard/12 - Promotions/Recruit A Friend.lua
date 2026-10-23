@@ -88,11 +88,12 @@ root(ROOTS.Promotions, {
 			description = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
 			timeline = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
-		i(173298, bubbleDownSelf({ timeline = { ADDED_8_2_5, REMOVED_10_0_7 } }, {	-- Explorer's Certification
+		i(173298, {	-- Explorer's Certification
 			description = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
 			b = 1,	-- b for binding, to overcome Hide BoE items filter
+			timeline = { ADDED_8_2_5, REMOVED_10_0_7 },
 			groups = { title(410) },	-- Renowned Explorer <Name>
-		})),
+		}),
 		i(171333, {	-- Renowned Explorer's Rucksack
 			description = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",
 			b = 1,	-- b for binding, to overcome Hide BoE items filter

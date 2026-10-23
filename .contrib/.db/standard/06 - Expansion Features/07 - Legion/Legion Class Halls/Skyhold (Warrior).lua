@@ -881,8 +881,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							coord = { 59.7, 13.4, SKYHOLD },
 							timeline = { ADDED_7_2_0 },
 						}),
-						i(144436, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Lost Legend of Odyn
+						i(144436, {	-- Lost Legend of Odyn
 							description = "This item can drop off of any Vrykul in the Broken Isles as a Warrior (any spec).",
+							timeline = { ADDED_7_2_0 },
 							groups = {
 								n(GREAT_ODYN_AND_THE_FIRELORD, { questID = 46223, }),
 								n(THE_WANDERER_AND_THE_SERPENT, { questID = 46224, }),
@@ -891,10 +892,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 								n(FIRST_OF_THE_VALKYR, { questID = 46227, }),
 								n(THE_SEALING_OF_THE_HALLS_OF_VALOR, { questID = 46228, }),
 							},
-						})),
-						i(144437, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {	-- Lost Legend of the Valarjar
+						}),
+						i(144437, {	-- Lost Legend of the Valarjar
 							description = "This item can drop off of any Vrykul in the Broken Isles as a Warrior (any spec).",
 							cr = 115732,	-- Jorvild the Trusted (highest drop chance)
+							timeline = { ADDED_7_2_0 },
 							groups = {
 								n(HIS_NAME_IS_DRAGONBLOOD, { questID = 46229, }),
 								n(THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER, { questID = 46230, }),
@@ -903,7 +905,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 								n(THE_LESSONS_OF_THE_BLACKFIST, { questID = 46233, }),
 								n(VOLUNDS_FOLLY, { questID = 46234, }),
 							},
-						})),
+						}),
 					}),
 					n(SPECIAL, {
 						gt(410, {	-- Bladestorm

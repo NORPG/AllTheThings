@@ -194,92 +194,95 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		ach(1792, {	-- Aw, Isn't It Cute?
 			timeline = { ADDED_3_0_2 },
 		}),
-		ach(1788, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- Bad Example
-			crit(6656, {	-- Dalaran Brownie
-				provider = { "i", 42431 },	-- Dalaran Brownie
-				maps = {
-					NORTHREND_DALARAN,
-					-- #if AFTER LEGION
-					LEGION_DALARAN,
+		ach(1788, {	-- Bad Example
+			timeline = { ADDED_3_0_2 },
+			groups = {
+				crit(6656, {	-- Dalaran Brownie
+					provider = { "i", 42431 },	-- Dalaran Brownie
+					maps = {
+						NORTHREND_DALARAN,
+						-- #if AFTER LEGION
+						LEGION_DALARAN,
+						-- #endif
+					},
+				}),
+				crit(6657, {	-- Dalaran Doughnut
+					provider = { "i", 42430 },	-- Dalaran Doughnut
+					maps = {
+						NORTHREND_DALARAN,
+						-- #if AFTER LEGION
+						LEGION_DALARAN,
+						-- #endif
+					},
+				}),
+				crit(6654, {	-- Delicious Chocolate Cake
+					provider = { "i", 33924 },	-- Delicious Chocolate Cake
+					maps = {
+						NORTHREND_DALARAN,
+						-- #if AFTER LEGION
+						LEGION_DALARAN,
+						-- #endif
+					},
+				}),
+				crit(6655, {	-- Lovely Cake Slice
+					provider = { "i", 42438 },	-- Lovely Cake
+					-- #if AFTER MOP
+					cr = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
+					coord = { 46.88, 34.02, SHRINE_OF_SEVEN_STARS },	-- Pink Peony [Shrine of Seven Stars]
 					-- #endif
-				},
-			}),
-			crit(6657, {	-- Dalaran Doughnut
-				provider = { "i", 42430 },	-- Dalaran Doughnut
-				maps = {
-					NORTHREND_DALARAN,
-					-- #if AFTER LEGION
-					LEGION_DALARAN,
+					maps = {
+						NORTHREND_DALARAN,
+						-- #if AFTER LEGION
+						LEGION_DALARAN,
+						-- #endif
+					},
+				}),
+				crit(6653, {	-- Red Velvet Cupcake
+					provider = { "i", 42429 },	-- Red Velvet Cupcake
+					-- #if AFTER MOP
+					cr = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
+					coord = { 46.88, 34.02, SHRINE_OF_SEVEN_STARS },	-- Pink Peony [Shrine of Seven Stars]
 					-- #endif
-				},
-			}),
-			crit(6654, {	-- Delicious Chocolate Cake
-				provider = { "i", 33924 },	-- Delicious Chocolate Cake
-				maps = {
-					NORTHREND_DALARAN,
-					-- #if AFTER LEGION
-					LEGION_DALARAN,
-					-- #endif
-				},
-			}),
-			crit(6655, {	-- Lovely Cake Slice
-				provider = { "i", 42438 },	-- Lovely Cake
-				-- #if AFTER MOP
-				cr = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
-				coord = { 46.88, 34.02, SHRINE_OF_SEVEN_STARS },	-- Pink Peony [Shrine of Seven Stars]
-				-- #endif
-				maps = {
-					NORTHREND_DALARAN,
-					-- #if AFTER LEGION
-					LEGION_DALARAN,
-					-- #endif
-				},
-			}),
-			crit(6653, {	-- Red Velvet Cupcake
-				provider = { "i", 42429 },	-- Red Velvet Cupcake
-				-- #if AFTER MOP
-				cr = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
-				coord = { 46.88, 34.02, SHRINE_OF_SEVEN_STARS },	-- Pink Peony [Shrine of Seven Stars]
-				-- #endif
-				maps = {
-					NORTHREND_DALARAN,
-					-- #if AFTER LEGION
-					LEGION_DALARAN,
-					-- #endif
-				},
-			}),
-			crit(6652, {	-- Tasty Cupcake
-				provider = { "i", 43490 },	-- Tasty Cupcake
-			}),
-			crit(6651, {	-- Tigule's Strawberry Ice Cream
-				provider = { "i", 7228 },	-- Tigule's Strawberry Ice Cream
-				crs = {	-- TODO: Remove, add vendors to zones
-					-- Katrina Shimmerstar & Rachelle Gothena are listed on WoWHead, but only appear during Hallow's End.
-					14480,	-- Alowicious Czervik
-					-- #if AFTER 4.0.3.13277
-					47383,	-- Brivelthwerp
-					-- #endif
-					18914,	-- Caregiver Isel
-					14481,	-- Emmithue Smails
-					-- #if AFTER 4.0.3.13277
-					49893,	-- Lisa McKeever
-					-- #endif
-					18913,	-- Matron Tikkit
-					24934,	-- Snack-O-Matic IV
-				},
-				coords = {
-					{ 53.32, 79.27, ORGRIMMAR },	-- Alowicious Czervik
-					{ 69.87, 85.18, THOUSAND_NEEDLES },	-- Brivelthwerp
-					{ 54.22, 76.11, NAGRAND },	-- Caregiver Isel
-					{ 56.73, 34.51, NAGRAND },	-- Matron Tikkit
-					{ 53.66, 53.01, ORGRIMMAR },	-- Snack-O-Matic IV
-				},
-				maps = {
-					STORMWIND_CITY,
-					86,	-- Orgrimmar
-				},
-			}),
-		})),
+					maps = {
+						NORTHREND_DALARAN,
+						-- #if AFTER LEGION
+						LEGION_DALARAN,
+						-- #endif
+					},
+				}),
+				crit(6652, {	-- Tasty Cupcake
+					provider = { "i", 43490 },	-- Tasty Cupcake
+				}),
+				crit(6651, {	-- Tigule's Strawberry Ice Cream
+					provider = { "i", 7228 },	-- Tigule's Strawberry Ice Cream
+					crs = {	-- TODO: Remove, add vendors to zones
+						-- Katrina Shimmerstar & Rachelle Gothena are listed on WoWHead, but only appear during Hallow's End.
+						14480,	-- Alowicious Czervik
+						-- #if AFTER 4.0.3.13277
+						47383,	-- Brivelthwerp
+						-- #endif
+						18914,	-- Caregiver Isel
+						14481,	-- Emmithue Smails
+						-- #if AFTER 4.0.3.13277
+						49893,	-- Lisa McKeever
+						-- #endif
+						18913,	-- Matron Tikkit
+						24934,	-- Snack-O-Matic IV
+					},
+					coords = {
+						{ 53.32, 79.27, ORGRIMMAR },	-- Alowicious Czervik
+						{ 69.87, 85.18, THOUSAND_NEEDLES },	-- Brivelthwerp
+						{ 54.22, 76.11, NAGRAND },	-- Caregiver Isel
+						{ 56.73, 34.51, NAGRAND },	-- Matron Tikkit
+						{ 53.66, 53.01, ORGRIMMAR },	-- Snack-O-Matic IV
+					},
+					maps = {
+						STORMWIND_CITY,
+						86,	-- Orgrimmar
+					},
+				}),
+			},
+		}),
 		ach(1789, {	-- Daily Chores
 			timeline = { ADDED_3_0_2 },
 		}),
@@ -293,35 +296,39 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		ach(1791, {	-- Home Alone
 			timeline = { ADDED_3_0_2 },
 		}),
-		pvp(ach(1786, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- School of Hard Knocks
-			crit(6643, {	-- Assault a flag in Arathi Basin
-				maps = {
-					ARATHI_BASIN,
-					837,	-- Arathi Basin
-					844,	-- Arathi Basin
-					1383,	-- Arathi Basin
-					1366,	-- Arathi Basin
-				},
-			}),
-			crit(6642, {	-- Assault a tower in Alterac Valley
-				maps = {
-					ALTERAC_VALLEY,
-				},
-			}),
-			crit(6641, {	-- Capture the flag in Eye of the Storm
-				maps = {
-					EYE_OF_THE_STORM,
-				},
-			}),
-			crit(6644, {	-- Return a fallen flag in Warsong Gulch
-				maps = {
-					WARSONG_GULCH,
-					859,	-- Warsong Gulch
-					1339,	-- Warsong Gulch
-				},
-			}),
-		}))),
-		ach(275, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- Veteran Nanny
+		pvp(ach(1786, {	-- School of Hard Knocks
+			timeline = { ADDED_3_0_2 },
+			groups = {
+				crit(6643, {	-- Assault a flag in Arathi Basin
+					maps = {
+						ARATHI_BASIN,
+						837,	-- Arathi Basin
+						844,	-- Arathi Basin
+						1383,	-- Arathi Basin
+						1366,	-- Arathi Basin
+					},
+				}),
+				crit(6642, {	-- Assault a tower in Alterac Valley
+					maps = {
+						ALTERAC_VALLEY,
+					},
+				}),
+				crit(6641, {	-- Capture the flag in Eye of the Storm
+					maps = {
+						EYE_OF_THE_STORM,
+					},
+				}),
+				crit(6644, {	-- Return a fallen flag in Warsong Gulch
+					maps = {
+						WARSONG_GULCH,
+						859,	-- Warsong Gulch
+						1339,	-- Warsong Gulch
+					},
+				}),
+			},
+		})),
+		ach(275, {	-- Veteran Nanny
+			timeline = { ADDED_3_0_2 },
 			maps = { SHATTRATH_CITY },
 			groups = {
 				-- #if NOT ANYCLASSIC
@@ -346,7 +353,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				}),
 				-- #endif
 			},
-		})),
+		}),
 	}),
 	-- #endif
 	n(QUESTS, {

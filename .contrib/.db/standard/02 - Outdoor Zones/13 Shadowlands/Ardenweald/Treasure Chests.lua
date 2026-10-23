@@ -171,10 +171,11 @@ maproot(SHADOWLANDS, ARDENWEALD, {
 			o(358572, {	-- Extra Gooey Gorm Gunk
 				i(183718);	-- Extra Gooey Gorm Gunk
 			}),
-			o(373460, bubbleDownSelf({ timeline = { ADDED_9_1_5 } }, {	-- Fae Net
+			o(373460, {	-- Fae Net
 				coord = { 38.3, 36.8, ARDENWEALD },
+				timeline = { ADDED_9_1_5 },
 				groups = { i(187943) },	-- Fae Net
-			})),
+			}),
 			o(355021, {	-- Fae Ornament
 				description = "On the tree platform.",
 				coord = { 51.5, 61.6, ARDENWEALD },

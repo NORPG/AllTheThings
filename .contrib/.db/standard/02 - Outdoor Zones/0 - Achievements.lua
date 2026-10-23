@@ -116,8 +116,9 @@ root(ROOTS.Zones, {
 				title(98),	-- Ambassador <Name>
 			}),
 		})),
-		petbattle(ach(9069, bubbleDownSelf({ timeline = { ADDED_6_0_2 }, }, {	-- An Awfully Big Adventure
+		petbattle(ach(9069, {	-- An Awfully Big Adventure
 			provider = { "i", 113216 },	-- Elekk Plushie
+			timeline = { ADDED_6_0_2 },
 			groups = {
 				i(120121),	-- Trunks (PET!)
 				crit(25118, {	-- Aki the Chosen (Pandaria - Vale of Eternal Blossoms)
@@ -255,7 +256,7 @@ root(ROOTS.Zones, {
 					_npcs = { 71924 },	-- Wrathion <The Black Prince>
 				}),
 			},
-		}))),
+		})),
 		applyclassicphase(BFA_PHASE_ONE, ach(12988, {	-- Battle for Azeroth Explorer
 			-- Meta Achievement
 			sym = {{"meta_achievement",
@@ -1144,53 +1145,56 @@ root(ROOTS.Zones, {
 				}),
 			})),
 		})),
-		ach(9924, bubbleDownSelf({ timeline = { ADDED_6_1_0 }, }, {	-- Field Photographer
-			title(307),	-- Field Photographer <Name>
-			crit(27865),	-- Onyxia's Lair
-			crit(27863),	-- The Frozen Throne
-			crit(27866),	-- The Dark Portal
-			crit(27867),	-- Dalaran
-			crit(27868),	-- Janeiro's Point
-			crit(27870),	-- Vale of Eternal Blossoms
-			crit(27871),	-- Temple of Karabor
-			crit(27873),	-- Deeprun Tram
-			crit(27875),	-- Hearthglen
-			crit(27874),	-- Thandol Span
-			crit(27876),	-- Karazhan
-			crit(27877),	-- Battle, Ring, Gurubashi Arena
-			crit(27878),	-- The Deadmines
-			crit(27879),	-- Naxxramas
-			crit(27880),	-- Wyrmrest Temple
-			crit(27952),	-- Shattrath City (Outland)
-			crit(27953),	-- Nordrassil
-			crit(27954),	-- Light's Hope Chapel
-			crit(27955),	-- Deathwing's Fall
-			crit(27956),	-- Darkshire
-			crit(27957),	-- The Shaper's Terrace
-			crit(27958),	-- Wintergrasp Fortress
-			crit(27959),	-- Vashj'ir
-			crit(27960),	-- Valley of Kings
-			crit(27961),	-- Westfall Lighthouse
-			crit(27962),	-- Throne of the Elements
-			crit(27963),	-- The Twin Colossals
-			crit(27964),	-- Mount Neverest
-			crit(27965),	-- Moonglade
-			crit(27966),	-- The Stormspire
-			crit(27967),	-- Caverns of Time
-			crit(27968),	-- Blackrock Mountain
-			crit(27969),	-- The Scarab Dais
-			crit(27970),	-- Ravenholdt Manor
-			crit(27971),	-- Echo Isles
-			crit(27972),	-- Uther's Tomb
-			crit(27973),	-- Daggercap Bay
-			crit(27974),	-- Throne of Kil'jaeden
-			crit(27975),	-- Sunsong Ranch
-			crit(27976),	-- Turtle Beach
-			crit(27977),	-- Auchindoun (Draenor)
-			crit(27978),	-- Halls of Origination
-			crit(27869, { races = HORDE_ONLY }),	-- Orgrimmar
-			crit(27864, { races = ALLIANCE_ONLY }),	-- Stormwind City
-		})),
+		ach(9924, {	-- Field Photographer
+			timeline = { ADDED_6_1_0 },
+			groups = {
+				title(307),	-- Field Photographer <Name>
+				crit(27865),	-- Onyxia's Lair
+				crit(27863),	-- The Frozen Throne
+				crit(27866),	-- The Dark Portal
+				crit(27867),	-- Dalaran
+				crit(27868),	-- Janeiro's Point
+				crit(27870),	-- Vale of Eternal Blossoms
+				crit(27871),	-- Temple of Karabor
+				crit(27873),	-- Deeprun Tram
+				crit(27875),	-- Hearthglen
+				crit(27874),	-- Thandol Span
+				crit(27876),	-- Karazhan
+				crit(27877),	-- Battle, Ring, Gurubashi Arena
+				crit(27878),	-- The Deadmines
+				crit(27879),	-- Naxxramas
+				crit(27880),	-- Wyrmrest Temple
+				crit(27952),	-- Shattrath City (Outland)
+				crit(27953),	-- Nordrassil
+				crit(27954),	-- Light's Hope Chapel
+				crit(27955),	-- Deathwing's Fall
+				crit(27956),	-- Darkshire
+				crit(27957),	-- The Shaper's Terrace
+				crit(27958),	-- Wintergrasp Fortress
+				crit(27959),	-- Vashj'ir
+				crit(27960),	-- Valley of Kings
+				crit(27961),	-- Westfall Lighthouse
+				crit(27962),	-- Throne of the Elements
+				crit(27963),	-- The Twin Colossals
+				crit(27964),	-- Mount Neverest
+				crit(27965),	-- Moonglade
+				crit(27966),	-- The Stormspire
+				crit(27967),	-- Caverns of Time
+				crit(27968),	-- Blackrock Mountain
+				crit(27969),	-- The Scarab Dais
+				crit(27970),	-- Ravenholdt Manor
+				crit(27971),	-- Echo Isles
+				crit(27972),	-- Uther's Tomb
+				crit(27973),	-- Daggercap Bay
+				crit(27974),	-- Throne of Kil'jaeden
+				crit(27975),	-- Sunsong Ranch
+				crit(27976),	-- Turtle Beach
+				crit(27977),	-- Auchindoun (Draenor)
+				crit(27978),	-- Halls of Origination
+				crit(27869, { races = HORDE_ONLY }),	-- Orgrimmar
+				crit(27864, { races = ALLIANCE_ONLY }),	-- Stormwind City
+			},
+		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(941, {	-- Hemet Nesingwary: The Collected Quests
 			maps = {
 				NAGRAND,
@@ -1248,39 +1252,43 @@ root(ROOTS.Zones, {
 			races = HORDE_ONLY,
 		})),
 		-- #endif
-		ach(13512, bubbleDownSelf({ timeline = { ADDED_8_1_5 }, }, {	-- Master Calligrapher
-			crit(44853, {	-- Master of Calligraphy - Circle
-				_quests = {
-					55340,	-- Calligraphy [A]
-				},
-			}),
-			crit(44854, {	-- Master of Calligraphy - Square
-				_quests = {
-					55264,	-- Calligraphy [A]
-				},
-			}),
-			crit(44855, {	-- Master of Calligraphy - Triangle
-				_quests = {
-					55341,	-- Calligraphy [A]
-				},
-			}),
-			crit(44853, {	-- Master of Calligraphy - Circle
-				_quests = {
-					55342,	-- Calligraphy [H]
-				},
-			}),
-			crit(44854, {	-- Master of Calligraphy - Square
-				_quests = {
-					55343,	-- Calligraphy [H]
-				},
-			}),
-			crit(44855, {	-- Master of Calligraphy - Triangle
-				_quests = {
-					55344,	-- Calligraphy [H]
-				},
-			}),
-		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(1576, bubbleDownSelf({ timeline = { ADDED_3_0_2 }, }, {	-- Of Blood and Anguish
+		ach(13512, {	-- Master Calligrapher
+			timeline = { ADDED_8_1_5 },
+			groups = {
+				crit(44853, {	-- Master of Calligraphy - Circle
+					_quests = {
+						55340,	-- Calligraphy [A]
+					},
+				}),
+				crit(44854, {	-- Master of Calligraphy - Square
+					_quests = {
+						55264,	-- Calligraphy [A]
+					},
+				}),
+				crit(44855, {	-- Master of Calligraphy - Triangle
+					_quests = {
+						55341,	-- Calligraphy [A]
+					},
+				}),
+				crit(44853, {	-- Master of Calligraphy - Circle
+					_quests = {
+						55342,	-- Calligraphy [H]
+					},
+				}),
+				crit(44854, {	-- Master of Calligraphy - Square
+					_quests = {
+						55343,	-- Calligraphy [H]
+					},
+				}),
+				crit(44855, {	-- Master of Calligraphy - Triangle
+					_quests = {
+						55344,	-- Calligraphy [H]
+					},
+				}),
+			},
+		}),
+		applyclassicphase(WRATH_PHASE_ONE, ach(1576, {	-- Of Blood and Anguish
+			timeline = { ADDED_3_0_2 },
 			maps = { NAGRAND, ZULDRAK },
 			groups = {
 				crit(5799, {	-- The Champion of Anguish
@@ -1290,7 +1298,7 @@ root(ROOTS.Zones, {
 					_quests = { 9977 },	-- The Ring of Blood: The Final Challenge
 				}),
 			},
-		}))),
+		})),
 		header(HEADERS.Achievement, 61094, bubbleDownSelf({ timeline = { ADDED_12_0_0 }, }, {	-- Old World Family Battler
 			petbattle(ach(61094, {	-- Old World Family Battler
 				-- Meta Achievement
@@ -1301,30 +1309,34 @@ root(ROOTS.Zones, {
 				groups = { i(251491) },	-- Magical Pet Clicker (TOY!)
 			})),
 		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(2556, bubbleDownSelf({ timeline = { ADDED_3_0_2 }, }, {	-- Pest Control
-			crit(9364),	-- Larva (Naxxramas, Ghostlands)
-			crit(9366),	-- Water Snake (Orgrimmar, Northern Stranglethorn, Durotar, Twilight Highlands)
-			crit(9372),	-- Spider (Eastern Plaguelands, Gilneas, Winterspring, The Hinterlands, Zul'Aman, Drak'Tharon Keep, Ahn'kahet: The Old Kingdom, Icecrown Citadel, Teldrassil, Utgarde Pinnacle, Dustwallow Marsh, Sethekk Halls, The Culling of Stratholme, Pit of Saron, Elwynn Forest and Sunken Temple)
-			crit(9818),	-- Squirrel (Tol Barad, Dalaran, Darkshore, Darnassus)
-			crit(9373),	-- Underbelly Rat (Dalaran - NR?)
-			crit(9360),	-- Devouring Maggot (Howling Fjord)
-			crit(9367),	-- Mouse (Dustwallow Marsh, Wetlands)
-			crit(9374),	-- Zul'Drak Rat (Zul'Dra)
-			crit(9369),	-- Roach (Ashenvale, Gilneas City, The Cape of Stranglethorn, Desolace, Dire Maul, Ahn'kahet: The Old Kingdom, Icecrown Citadel, Thousand Needles, Kezan, Northern Stranglethorn, Stonetalon Mountains, Undercity, Azjol-Nerub, Duskwood, Howling Fjord, Mana-Tombs, Maraudon and Redridge Mountains)
-			crit(9371),	-- Snake (Wailing Caverns, Tol Barad, Sunken Temple, Maraudon, Feralas, Northern Stranglethorn, Howling Fjord, Dustwallow Marsh, Gilneas, Gundrak, Zangarmarsh, Nagrand, Sethekk Halls and The Steamvault)
-			crit(9359),	-- Crystal Spider (Winterspring, The Nexus)
-			crit(9358),	-- Adder (Durotar, Southern Barrens, Northern Stranglethorn, Sethekk Halls, Hellfire Peninsula, The Slave Pens, The Underbog, Blasted Lands, Mana-Tombs, Northern Barrens)
-			crit(9365),	-- Maggot (The Hinterlands, Undercity, Ashenvale, Naxxramas, Hillsbrad Foothills, Howling Fjord, Ghostlands)
-			crit(9370),	-- Scorpion (Eastern Plaguelands, Twilight Highlands, Thousand Needles)
-			crit(9362),	-- Fjord Rat (Howling Fjord)
-			crit(9361),	-- Fire Beetle (Mount Hyjal, Searing Gorge, Blackrock Mountain, Blasted Lands, Un'Goro Crater)
-			crit(9363),	-- Gold Beetle (Halls of Stone, Badlands, Tanaris, Halls of Lightning)
-			crit(9368),	-- Rat (Ashenvale, Dire Maul, The Lost Isles, Gilneas, Loch Modan, The Deadmines, Stormwind City, Arathi Highlands, Darkshore, Nagrand, Terokkar Forest, Scholomance, Tirisfal Glades, Howling Fjord, The Cape of Stranglethorn, The Culling of Stratholme, Azshara, Desolace, Gilneas City, Maraudon, Sunken Temple and The Hinterlands)
-		}))),
-		ach(5518, bubbleDownSelf({timeline = { ADDED_4_0_3_LAUNCH } }, {	-- Stood in the Fire
+		applyclassicphase(WRATH_PHASE_ONE, ach(2556, {	-- Pest Control
+			timeline = { ADDED_3_0_2 },
+			groups = {
+				crit(9364),	-- Larva (Naxxramas, Ghostlands)
+				crit(9366),	-- Water Snake (Orgrimmar, Northern Stranglethorn, Durotar, Twilight Highlands)
+				crit(9372),	-- Spider (Eastern Plaguelands, Gilneas, Winterspring, The Hinterlands, Zul'Aman, Drak'Tharon Keep, Ahn'kahet: The Old Kingdom, Icecrown Citadel, Teldrassil, Utgarde Pinnacle, Dustwallow Marsh, Sethekk Halls, The Culling of Stratholme, Pit of Saron, Elwynn Forest and Sunken Temple)
+				crit(9818),	-- Squirrel (Tol Barad, Dalaran, Darkshore, Darnassus)
+				crit(9373),	-- Underbelly Rat (Dalaran - NR?)
+				crit(9360),	-- Devouring Maggot (Howling Fjord)
+				crit(9367),	-- Mouse (Dustwallow Marsh, Wetlands)
+				crit(9374),	-- Zul'Drak Rat (Zul'Dra)
+				crit(9369),	-- Roach (Ashenvale, Gilneas City, The Cape of Stranglethorn, Desolace, Dire Maul, Ahn'kahet: The Old Kingdom, Icecrown Citadel, Thousand Needles, Kezan, Northern Stranglethorn, Stonetalon Mountains, Undercity, Azjol-Nerub, Duskwood, Howling Fjord, Mana-Tombs, Maraudon and Redridge Mountains)
+				crit(9371),	-- Snake (Wailing Caverns, Tol Barad, Sunken Temple, Maraudon, Feralas, Northern Stranglethorn, Howling Fjord, Dustwallow Marsh, Gilneas, Gundrak, Zangarmarsh, Nagrand, Sethekk Halls and The Steamvault)
+				crit(9359),	-- Crystal Spider (Winterspring, The Nexus)
+				crit(9358),	-- Adder (Durotar, Southern Barrens, Northern Stranglethorn, Sethekk Halls, Hellfire Peninsula, The Slave Pens, The Underbog, Blasted Lands, Mana-Tombs, Northern Barrens)
+				crit(9365),	-- Maggot (The Hinterlands, Undercity, Ashenvale, Naxxramas, Hillsbrad Foothills, Howling Fjord, Ghostlands)
+				crit(9370),	-- Scorpion (Eastern Plaguelands, Twilight Highlands, Thousand Needles)
+				crit(9362),	-- Fjord Rat (Howling Fjord)
+				crit(9361),	-- Fire Beetle (Mount Hyjal, Searing Gorge, Blackrock Mountain, Blasted Lands, Un'Goro Crater)
+				crit(9363),	-- Gold Beetle (Halls of Stone, Badlands, Tanaris, Halls of Lightning)
+				crit(9368),	-- Rat (Ashenvale, Dire Maul, The Lost Isles, Gilneas, Loch Modan, The Deadmines, Stormwind City, Arathi Highlands, Darkshore, Nagrand, Terokkar Forest, Scholomance, Tirisfal Glades, Howling Fjord, The Cape of Stranglethorn, The Culling of Stratholme, Azshara, Desolace, Gilneas City, Maraudon, Sunken Temple and The Hinterlands)
+			},
+		})),
+		ach(5518, {	-- Stood in the Fire
 			-- #IF AFTER MOP
 			description = "Achievement can be completed in Dragon Soul.",
 			-- #ENDIF
+			timeline = { ADDED_4_0_3_LAUNCH },
 			maps = {
 				-- #IF BEFORE MOP
 				MOUNT_HYJAL,
@@ -1342,49 +1354,52 @@ root(ROOTS.Zones, {
 				414,
 				-- #ENDIF
 			},
-		})),
-		ach(4827, bubbleDownSelf({timeline = { ADDED_4_0_3_LAUNCH } }, {	-- Surveying the Damage
-			-- TODO coord here instead of individual zone files
-			crit(14068, {	-- The Battlescar in Southern Barrens
-				-- coord = { X, Y, MAP },
-			}),
-			crit(14060, {	-- The Sundering in Stranglethorn
-				-- coord = { X, Y, MAP },
-			}),
-			crit(1020, {	-- The Scar of the Worldbreaker in Badlands
-				-- coord = { X, Y, MAP },
-			}),
-			crit(1314, {	-- The Ruins of Auberdine in Darkshore
-				-- coord = { X, Y, MAP },
-			}),
-			crit(1407, {	-- The Valley of the Watchers in Tanaris
-				-- coord = { X, Y, MAP },
-			}),
-			crit(14096, {	-- Thunder Peak in Ashenvale
-				-- coord = { X, Y, MAP },
-			}),
-			crit(14087, {	-- Southfury Watershed in Durotar
-				-- coord = { X, Y, MAP },
-			}),
-			crit(1373, {	-- Cenarion Wildlands in Desolace
-				-- coord = { X, Y, MAP },
-			}),
-			crit(1347, {	-- The Shimmering Deep in Thousand Needles
-				-- coord = { X, Y, MAP },
-			}),
-			crit(14046, {	-- The Greymane Wall in Silverpine
-				-- coord = { X, Y, MAP },
-			}),
-			crit(14156, {	-- The Raging Chasm in Westfall
-				-- coord = { X, Y, MAP },
-			}),
-			crit(1174, {	-- The Stonewrought Dam in Loch Modan
-				-- coord = { X, Y, MAP },
-			}),
-			crit(15114, {	-- Ruins of Southshore in Hillsbrad Foothills
-				-- coord = { X, Y, MAP },
-			}),
-		})),
+		}),
+		ach(4827, {	-- Surveying the Damage
+			timeline = { ADDED_4_0_3_LAUNCH },
+			groups = {
+				-- TODO coord here instead of individual zone files
+				crit(14068, {	-- The Battlescar in Southern Barrens
+					-- coord = { X, Y, MAP },
+				}),
+				crit(14060, {	-- The Sundering in Stranglethorn
+					-- coord = { X, Y, MAP },
+				}),
+				crit(1020, {	-- The Scar of the Worldbreaker in Badlands
+					-- coord = { X, Y, MAP },
+				}),
+				crit(1314, {	-- The Ruins of Auberdine in Darkshore
+					-- coord = { X, Y, MAP },
+				}),
+				crit(1407, {	-- The Valley of the Watchers in Tanaris
+					-- coord = { X, Y, MAP },
+				}),
+				crit(14096, {	-- Thunder Peak in Ashenvale
+					-- coord = { X, Y, MAP },
+				}),
+				crit(14087, {	-- Southfury Watershed in Durotar
+					-- coord = { X, Y, MAP },
+				}),
+				crit(1373, {	-- Cenarion Wildlands in Desolace
+					-- coord = { X, Y, MAP },
+				}),
+				crit(1347, {	-- The Shimmering Deep in Thousand Needles
+					-- coord = { X, Y, MAP },
+				}),
+				crit(14046, {	-- The Greymane Wall in Silverpine
+					-- coord = { X, Y, MAP },
+				}),
+				crit(14156, {	-- The Raging Chasm in Westfall
+					-- coord = { X, Y, MAP },
+				}),
+				crit(1174, {	-- The Stonewrought Dam in Loch Modan
+					-- coord = { X, Y, MAP },
+				}),
+				crit(15114, {	-- Ruins of Southshore in Hillsbrad Foothills
+					-- coord = { X, Y, MAP },
+				}),
+			},
+		}),
 
 		petbattle(ach(6607, {	-- Taming Azeroth
 			sym = {{"meta_achievement",
@@ -1417,8 +1432,9 @@ root(ROOTS.Zones, {
 				i(92738),	-- Safari Hat (TOY!)
 			},
 		})),
-		petbattle(ach(13695, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {	-- Team Aquashock
+		petbattle(ach(13695, {	-- Team Aquashock
 			-- Meta Achievement
+			timeline = { ADDED_8_2_0 },
 			sym = {{"meta_achievement",
 				13694,	-- Nazjatari Safari
 				13693,	-- Mecha-Safari
@@ -1428,7 +1444,7 @@ root(ROOTS.Zones, {
 			groups = {
 				i(169349),	-- Kelpfin (PET!)
 			},
-		}))),
+		})),
 		ach(1182, {	-- The Bread Winner
 			timeline = { ADDED_3_0_2 },
 		}),
@@ -1452,7 +1468,8 @@ root(ROOTS.Zones, {
 				title(48),	-- <Name> the Diplomat
 			}),
 		})),
-		ach(4958, bubbleDownSelf({ timeline = { ADDED_4_0_3 }, }, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
+		ach(4958, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
+			timeline = { ADDED_4_0_3 },
 			maps = { NAGRAND, ZULDRAK, TWILIGHT_HIGHLANDS },
 			groups = {
 				crit(5798, {	-- Ring of Blood in Nagrand
@@ -1465,7 +1482,7 @@ root(ROOTS.Zones, {
 					_quests = { 27868 },	-- The Crucible of Carnage: The Twilight Terror!
 				}),
 			},
-		})),
+		}),
 		ach(5794, {	-- Time Flies When You're Having Fun
 			timeline = { ADDED_4_2_0 },
 		}),
@@ -1534,9 +1551,10 @@ root(ROOTS.Zones, {
 				i(43300),	-- Loremaster's Colors
 			},
 		}),
-		ach(1206, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- To All The Squirrels I've Loved Before
+		ach(1206, {	-- To All The Squirrels I've Loved Before
 			description = "|cFFE50D12The Pets in this Achievement cannot be tracked correctly by ATT due to Blizzard. Once all the Pets received /love, the Achievement will be tracked correctly once again.|r",
 			-- TODO: really would prefer an actual coords for each criteria instead of maps
+			timeline = { ADDED_3_0_2 },
 			groups = {
 				crit(3741, {	-- Borean Frog (Borean Tundra)
 					crs = { 25677 },	-- Borean Frog
@@ -1811,140 +1829,147 @@ root(ROOTS.Zones, {
 					timeline = { ADDED_7_3_5 },	-- maybe earlier idk
 				}),
 			},
+		}),
+		ach(5548, {	-- To All the Squirrels Who Cared for Me
+			timeline = { ADDED_4_0_3_LAUNCH },
+			groups = {
+				-- TODO map/coord here instead of individual zone files - Not all spawn locations added
+				crit(ifclassic(16222, 16214), {	-- Alpine Chipmunk (Winterspring, Mount Hyjal, Stonetalon Mountains)
+					provider = { "n", 49779 },	-- Alpine Chipmunk
+					coord = { 50.0, 17.0, MOUNT_HYJAL },
+				}),
+				crit(16215, {	-- Baradin Fox Kit (Tol Barad)
+					provider = { "n", 48630 },	-- Baradin Fox Kit
+					coord = { 44.0, 26.0, TOL_BARAD },
+				}),
+				crit(ifclassic(16224, 16216), {	-- Grotto Vole (Mount Hyjal)
+					provider = { "n", 50419 },	-- Grotto Vole
+					coord = { 54.0, 17.0, MOUNT_HYJAL },
+				}),
+				crit(ifclassic(16223, 16217), {	-- Highlands Turkey (Twilight Highlands)
+					provider = { "n", 48706 },	-- Highlands Turkey
+					coord = { 29.0, 53.0, TWILIGHT_HIGHLANDS },
+				}),
+				crit(ifclassic(62981, 16219), {	-- Mac Frog (Uldum)
+					provider = { "n", 50491 },	-- Mac Frog
+					coord = { 55.0, 34.0, ULDUM },
+				}),
+				crit(ifclassic(62980, 16218), {	-- Oasis Moth (Uldum, Lost City of the Tol'vir)
+					provider = { "n", 50496 },	-- Oasis Moth
+					coord = { 53.0, 34.0, ULDUM },
+				}),
+				crit(ifclassic(62982, 16220), {	-- Rattlesnake (Twilight Highlands, Tanaris)
+					provider = { "n", 48686 },	-- Rattlesnake
+					coord = { 57.0, 15.0, TWILIGHT_HIGHLANDS },
+				}),
+				crit(ifclassic(62983, 16221), {	-- Rock Viper (Mount Hyjal, Desolace, Silithus)
+					provider = { "n", 50481 },	-- Rock Viper
+					coord = { 38.0, 51.0, MOUNT_HYJAL },
+				}),
+				crit(ifclassic(62984, 16222), {	-- Rockchewer Whelk (Shimmering Expanse)
+					provider = { "n", 48848 },	-- Rockchewer Whelk
+					coord = { 54.0, 41.0, VASHJIR_SHIMMERING_EXPANSE },
+				}),
+				crit(ifclassic(62985, 16223), {	-- Sassy Cat (Tol Barad)
+					provider = { "n", 47682 },	-- Sassy Cat
+					coord = { 72.0, 38.0, TOL_BARAD_PENINSULA },
+				}),
+				crit(ifclassic(62986, 16224), {	-- Sea Cucumber (Shimmering Expanse, Abyssal Depths)
+					provider = { "n", 48802 },	-- Sea Cucumber
+					coord = { 54.0, 41.0, VASHJIR_SHIMMERING_EXPANSE },
+				}),
+				crit(ifclassic(62987, 16225), {	-- Wharf Rat (Tol Barad Peninsula, The Cape of Stranglethorn
+					provider = { "n", 47667 },	-- Wharf Rat
+					coord = { 27.0, 40.0, TOL_BARAD_PENINSULA },
+				}),
+				crit(ifclassic(62988, 16226), {	-- Yellow-Bellied Marmot (Twilight Highlands)
+					provider = { "n", 48683 },	-- Yellow-Bellied Marmot
+					coord = { 56.0, 13.0, TWILIGHT_HIGHLANDS },
+				}),
+			},
+		}),
+		ach(1244, {	-- Well Read
+
+timeline = { ADDED_3_0_2 },
+		}),
+		petbattle(ach(41092, {	-- Undermine Safari (also includes Zandalar locations)
+			timeline = { ADDED_11_1_0 },
+			groups = {
+				crit(70951, {	-- Wily Rat
+					crs = { 231477 },	-- Wily Rat
+					-- coords = {
+
+					-- },
+				}),
+				crit(70952, {	-- Underroach
+					crs = { 231481 },	-- Underroach
+					-- coords = {
+
+					-- },
+				}),
+				crit(70953, {	-- Bombshell Crab
+					crs = { 231550 },	-- Bombshell Crab
+					-- coords = {
+
+					-- },
+				}),
+				crit(70954, {	-- Venture Crab
+					crs = { 231567 },	-- Venture Crab
+					-- coords = {
+
+					-- },
+				}),
+				crit(70955, {	-- Cave Crab
+					crs = { 231570 },	-- Cave Crab
+					-- coords = {
+
+					-- },
+				}),
+				crit(70956, {	-- Kaja Crab
+					crs = { 231572 },	-- Kaja Crab
+					-- coords = {
+
+					-- },
+				}),
+				crit(70957, {	-- Varmint Mark II
+					crs = { 231577 },	-- Varmint Mark II
+					-- coords = {
+
+					-- },
+				}),
+				crit(70958, {	-- Lime Roboclucker
+					crs = { 231579 },	-- Lime Roboclucker
+					-- coords = {
+
+					-- },
+				}),
+				crit(70959, {	-- Tropical Frog
+					crs = { 231616 },	-- Tropical Frog
+					-- coords = {
+
+					-- },
+				}),
+				crit(70960, {	-- Spring-Loaded Ribbitron
+					crs = { 231684 },	-- Spring-Loaded Ribbitron
+					-- coords = {
+
+					-- },
+				}),
+				crit(70961, {	-- Hemospore
+					crs = { 222592 },	-- Hemospore
+					-- coords = {
+
+					-- },
+				}),
+				crit(70962, {	-- Frenzied Bloodtick
+					crs = { 222420 },	-- Frenzied Bloodtick
+					-- coords = {
+
+					-- },
+				}),
+				i(205013),	-- Lettuce (PET!)
+			},
 		})),
-		ach(5548, bubbleDownSelf({timeline = { ADDED_4_0_3_LAUNCH } }, {	-- To All the Squirrels Who Cared for Me
-			-- TODO map/coord here instead of individual zone files - Not all spawn locations added
-			crit(ifclassic(16222, 16214), {	-- Alpine Chipmunk (Winterspring, Mount Hyjal, Stonetalon Mountains)
-				provider = { "n", 49779 },	-- Alpine Chipmunk
-				coord = { 50.0, 17.0, MOUNT_HYJAL },
-			}),
-			crit(16215, {	-- Baradin Fox Kit (Tol Barad)
-				provider = { "n", 48630 },	-- Baradin Fox Kit
-				coord = { 44.0, 26.0, TOL_BARAD },
-			}),
-			crit(ifclassic(16224, 16216), {	-- Grotto Vole (Mount Hyjal)
-				provider = { "n", 50419 },	-- Grotto Vole
-				coord = { 54.0, 17.0, MOUNT_HYJAL },
-			}),
-			crit(ifclassic(16223, 16217), {	-- Highlands Turkey (Twilight Highlands)
-				provider = { "n", 48706 },	-- Highlands Turkey
-				coord = { 29.0, 53.0, TWILIGHT_HIGHLANDS },
-			}),
-			crit(ifclassic(62981, 16219), {	-- Mac Frog (Uldum)
-				provider = { "n", 50491 },	-- Mac Frog
-				coord = { 55.0, 34.0, ULDUM },
-			}),
-			crit(ifclassic(62980, 16218), {	-- Oasis Moth (Uldum, Lost City of the Tol'vir)
-				provider = { "n", 50496 },	-- Oasis Moth
-				coord = { 53.0, 34.0, ULDUM },
-			}),
-			crit(ifclassic(62982, 16220), {	-- Rattlesnake (Twilight Highlands, Tanaris)
-				provider = { "n", 48686 },	-- Rattlesnake
-				coord = { 57.0, 15.0, TWILIGHT_HIGHLANDS },
-			}),
-			crit(ifclassic(62983, 16221), {	-- Rock Viper (Mount Hyjal, Desolace, Silithus)
-				provider = { "n", 50481 },	-- Rock Viper
-				coord = { 38.0, 51.0, MOUNT_HYJAL },
-			}),
-			crit(ifclassic(62984, 16222), {	-- Rockchewer Whelk (Shimmering Expanse)
-				provider = { "n", 48848 },	-- Rockchewer Whelk
-				coord = { 54.0, 41.0, VASHJIR_SHIMMERING_EXPANSE },
-			}),
-			crit(ifclassic(62985, 16223), {	-- Sassy Cat (Tol Barad)
-				provider = { "n", 47682 },	-- Sassy Cat
-				coord = { 72.0, 38.0, TOL_BARAD_PENINSULA },
-			}),
-			crit(ifclassic(62986, 16224), {	-- Sea Cucumber (Shimmering Expanse, Abyssal Depths)
-				provider = { "n", 48802 },	-- Sea Cucumber
-				coord = { 54.0, 41.0, VASHJIR_SHIMMERING_EXPANSE },
-			}),
-			crit(ifclassic(62987, 16225), {	-- Wharf Rat (Tol Barad Peninsula, The Cape of Stranglethorn
-				provider = { "n", 47667 },	-- Wharf Rat
-				coord = { 27.0, 40.0, TOL_BARAD_PENINSULA },
-			}),
-			crit(ifclassic(62988, 16226), {	-- Yellow-Bellied Marmot (Twilight Highlands)
-				provider = { "n", 48683 },	-- Yellow-Bellied Marmot
-				coord = { 56.0, 13.0, TWILIGHT_HIGHLANDS },
-			}),
-		})),
-		ach(1244, bubbleDownSelf({timeline = { ADDED_3_0_2 } }, {	-- Well Read
-
-		})),
-		petbattle(ach(41092, bubbleDownSelf({timeline = { ADDED_11_1_0 } }, {	-- Undermine Safari (also includes Zandalar locations)
-			crit(70951, {	-- Wily Rat
-				crs = { 231477 },	-- Wily Rat
-				-- coords = {
-
-				-- },
-			}),
-			crit(70952, {	-- Underroach
-				crs = { 231481 },	-- Underroach
-				-- coords = {
-
-				-- },
-			}),
-			crit(70953, {	-- Bombshell Crab
-				crs = { 231550 },	-- Bombshell Crab
-				-- coords = {
-
-				-- },
-			}),
-			crit(70954, {	-- Venture Crab
-				crs = { 231567 },	-- Venture Crab
-				-- coords = {
-
-				-- },
-			}),
-			crit(70955, {	-- Cave Crab
-				crs = { 231570 },	-- Cave Crab
-				-- coords = {
-
-				-- },
-			}),
-			crit(70956, {	-- Kaja Crab
-				crs = { 231572 },	-- Kaja Crab
-				-- coords = {
-
-				-- },
-			}),
-			crit(70957, {	-- Varmint Mark II
-				crs = { 231577 },	-- Varmint Mark II
-				-- coords = {
-
-				-- },
-			}),
-			crit(70958, {	-- Lime Roboclucker
-				crs = { 231579 },	-- Lime Roboclucker
-				-- coords = {
-
-				-- },
-			}),
-			crit(70959, {	-- Tropical Frog
-				crs = { 231616 },	-- Tropical Frog
-				-- coords = {
-
-				-- },
-			}),
-			crit(70960, {	-- Spring-Loaded Ribbitron
-				crs = { 231684 },	-- Spring-Loaded Ribbitron
-				-- coords = {
-
-				-- },
-			}),
-			crit(70961, {	-- Hemospore
-				crs = { 222592 },	-- Hemospore
-				-- coords = {
-
-				-- },
-			}),
-			crit(70962, {	-- Frenzied Bloodtick
-				crs = { 222420 },	-- Frenzied Bloodtick
-				-- coords = {
-
-				-- },
-			}),
-			i(205013),	-- Lettuce (PET!)
-		}))),
 		applyclassicphase(WRATH_PHASE_ONE, ach(46, {	-- Universal Explorer [7.0.3] / World Explorer
 			-- Meta Achievement
 			sym = {{"meta_achievement",

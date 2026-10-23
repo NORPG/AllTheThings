@@ -4,10 +4,9 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(ACHIEVEMENTS, {	-- Achievements (Achievements that don't really fit into a specific Location which are specific to BFA)
-		ach(40953, bubbleDownSelf({	-- A Farewell to Arms
-			timeline = { ADDED_11_0_7 },
-		},{
+		ach(40953, {
 			-- Meta Achievement
+			timeline = { ADDED_11_0_7 },
 			sym = {{"meta_achievement",
 				12947,	-- Azerothian Diplomat
 				12807,	-- Battle for Azeroth Dungeon Hero
@@ -33,7 +32,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				i(247667, {timeline = { ADDED_11_2_7 }}),	-- MOTHER's Titanic Brazier (DECOR!)
 				i(247668, {timeline = { ADDED_11_2_7 }}),	-- N'Zoth's Captured Eye (DECOR!)
 			},
-		})),
+		}),
 		ach(13036),	-- A Loa of a Tale (automated)
 		pvp(ach(12573, {	-- Band of Brothers
 			crit(41008),	-- Honorable Kill
@@ -284,10 +283,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				}),
 			},
 		}),
-		ach(40956, bubbleDownSelf({	-- I'm On Island Time
-			timeline = { ADDED_11_0_7 },
-		},{
+		ach(40956, {
 			-- Meta Achievement
+			timeline = { ADDED_11_0_7 },
 			sym = {{"meta_achievement",
 				12988,	-- Battle for Azeroth Explorer
 				41203,	-- Bwon Voyage
@@ -303,7 +301,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			groups = {
 				mount(303767),	-- Honeyback Hivemother (MOUNT!)
 			},
-		})),
+		}),
 		pvp(header(HEADERS.Quest, 53075, {	-- Dueler's Guild
 			maps = {
 				BORALUS,

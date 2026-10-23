@@ -331,8 +331,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			timeline = { ADDED_3_0_2 },
 			maps = { NORTHREND_DALARAN },
 		}),
-		ach(4436, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- BB King (A)
+		ach(4436, {	-- BB King (A)
 			provider = { "i", 46725 },	-- Red Rider Air Rifle
+			timeline = { ADDED_3_0_2 },
 			maps = {
 				ORGRIMMAR,
 				SILVERMOON_CITY,
@@ -395,9 +396,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 				-- #endif
 			},
-		})),
-		ach(4437, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- BB King (H)
+		}),
+		ach(4437, {	-- BB King (H)
 			provider = { "i", 46725 },	-- Red Rider Air Rifle
+			timeline = { ADDED_3_0_2 },
 			maps = {
 				THE_EXODAR,
 				DARNASSUS,
@@ -447,7 +449,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 				-- #endif
 			},
-		})),
+		}),
 		ach(1295, {	-- Crashin' & Thrashin'
 			providers = {
 				{ "i", 37710 },	-- Crashin' Thrashin' Racer Controller
@@ -469,8 +471,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		ach(1689, {	-- He Knows If You've Been Naughty
 			timeline = { ADDED_3_0_2 },
 		}),
-		ach(1686, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- Holiday Bromance (A)
+		ach(1686, {	-- Holiday Bromance (A)
 			provider = { "i", 21519 },	-- Mistletoe
+			timeline = { ADDED_3_0_2 },
 			maps = {
 				-- #if AFTER CATA
 				NORTHERN_STRANGLETHORN,
@@ -575,9 +578,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 				-- #endif
 			},
-		})),
-		ach(1685, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- Holiday Bromance (H)
+		}),
+		ach(1685, {	-- Holiday Bromance (H)
 			provider = { "i", 21519 },	-- Mistletoe
+			timeline = { ADDED_3_0_2 },
 			maps = { UNDERCITY, BOREAN_TUNDRA, ICECROWN },
 			races = HORDE_ONLY,
 			groups = {
@@ -595,7 +599,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					coord = { 69.4, 42.4, ICECROWN },
 				}),
 			},
-		})),
+		}),
 		ach(10353, {	-- Iron Armada
 			timeline = { ADDED_6_2_2 },
 			groups = {
@@ -695,7 +699,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			provider = { "i", 104318 },	-- Crashin' Thrashin' Flyer Controller
 			timeline = { ADDED_5_4_0 },
 		}),
-		ach(1688, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {	-- The Winter Veil Gourmet
+		ach(1688, {	-- The Winter Veil Gourmet
+			timeline = { ADDED_3_0_2 },
 			requireSkill = COOKING,
 			groups = {
 				crit(6247, {	-- Gingerbread Cookie
@@ -714,7 +719,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					-- #endif
 				}),
 			},
-		})),
+		}),
 		pvp(ach(252, {	-- With a Little Helper from My Friends
 			provider = { "o", 180796 },	-- PX-238 Winter Wondervolt
 			timeline = { ADDED_3_0_2 },

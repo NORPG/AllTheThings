@@ -272,9 +272,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
 				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
 				groups = {
-					challengemaster(ach(8436, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scarlet Halls
-						title(243),	-- Flameweaver <Name>
-					}))),
+					challengemaster(ach(8436, {	-- Challenge Master: Scarlet Halls
+						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+						groups = {
+							title(243),	-- Flameweaver <Name>
+						},
+					})),
 					ach(6895),	-- Scarlet Halls Challenger
 					ach(6908),	-- Scarlet Halls: Bronze
 					ach(6909),	-- Scarlet Halls: Silver

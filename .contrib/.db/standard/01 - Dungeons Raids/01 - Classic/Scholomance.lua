@@ -10,27 +10,33 @@ local ignoreTimeline = function(item)	-- Items applied with this were never actu
 end
 
 local SCHOLOMANCE_LEGACY_DATA = {
-	n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_3_0_2, REMOVED_5_0_4, ADDED_10_1_5 } }, {
-		ach(18368, {	-- Memory of Scholomance
-			sourceQuest = 76249,	-- Memory of Scholomance
-			maps = { EASTERN_PLAGUELANDS, STRATHOLME, WESTERN_PLAGUELANDS },
-			timeline = { ADDED_10_1_5 },
-		}),
-		ach(18558, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {	-- Leaders of Scholomance
-			crit(549, {	-- Darkmaster Gandling
-				_npcs = { 1853 },
+	n(ACHIEVEMENTS, {
+		timeline = { ADDED_3_0_2, REMOVED_5_0_4, ADDED_10_1_5 },
+		groups = {
+			ach(18368, {	-- Memory of Scholomance
+				sourceQuest = 76249,	-- Memory of Scholomance
+				maps = { EASTERN_PLAGUELANDS, STRATHOLME, WESTERN_PLAGUELANDS },
+				timeline = { ADDED_10_1_5 },
 			}),
-			crit(60409, {	-- Kirtonos the Herald
-				_npcs = { 10506 },
+			ach(18558, {	-- Leaders of Scholomance
+				timeline = { ADDED_10_1_5 },
+				groups = {
+					crit(549, {	-- Darkmaster Gandling
+						_npcs = { 1853 },
+					}),
+					crit(60409, {	-- Kirtonos the Herald
+						_npcs = { 10506 },
+					}),
+				},
 			}),
-		})),
-		-- #if BEFORE 5.0.4
-		ach(645),	-- Scholomance (automated)
-		-- #endif
-		ach(5054, {	-- Scholomance Guild Run
-			timeline = { ADDED_4_0_3 },
-		}),
-	})),
+			-- #if BEFORE 5.0.4
+			ach(645),	-- Scholomance (automated)
+			-- #endif
+			ach(5054, {	-- Scholomance Guild Run
+				timeline = { ADDED_4_0_3 },
+			}),
+		},
+	}),
 	n(QUESTS, {
 		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
 		groups = {
@@ -695,18 +701,20 @@ local SCHOLOMANCE_LEGACY_DATA = {
 	n(TREASURES, {
 		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
 		groups = {
-			o(403567, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {		-- Cracked Argent Dawn Commission
+			o(403567, {		-- Cracked Argent Dawn Commission
 				description = "Can be found at the top of the southwest bone pile in Rattlegore's room. From the Great Ossuary, you can drop down from the southwest hole leading to Rattlegore's room and look down, it's a small object on the pile.\n\nThis is not visible if your character already has an Argent Dawn Commission or a Rune/Seal of the Dawn!",
+				timeline = { ADDED_10_1_5 },
 				groups = {
 					i(206372),	-- Cracked Argent Dawn Commission
 				},
-			})),
-			o(405388, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {		-- Familiar Journal
+			}),
+			o(405388, {		-- Familiar Journal
 				description = "The Familiar Journal itself can be found in the Viewing Room of Old Scholomance, on the second bookshelf from the left wall, near the mini-boss Marduk Blackpool. All you have to do is pick up the book, and the toy is yours! It's as simple as that.",
+				timeline = { ADDED_10_1_5 },
 				groups = {
 					i(208096),	-- Familiar Journal (TOY!)
 				},
-			})),
+			}),
 			i(12736, {	-- Frostwhisper's Embalming Fluid
 				description = "Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",
 				provider = { "o", 175965 },	-- Frostwhisper's Embalming Fluid
@@ -2502,9 +2510,12 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
 	timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
 	groups = {
-		challengemaster(ach(8438, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scholomance
-			title(245),	-- Darkmaster <Name>
-		}))),
+		challengemaster(ach(8438, {	-- Challenge Master: Scholomance
+			timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+			groups = {
+				title(245),	-- Darkmaster <Name>
+			},
+		})),
 		ach(6897),	-- Scholomance Challenger
 		ach(6914),	-- Scholomance: Bronze
 		ach(6915),	-- Scholomance: Silver

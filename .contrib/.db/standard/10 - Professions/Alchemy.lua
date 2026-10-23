@@ -971,14 +971,14 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 					i(198663),	-- Frostforged Potion
 				},
 			}),
-			o(410426,	-- Half-Filled Dreamless Sleep Potion
-			bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+			o(410426, {	-- Half-Filled Dreamless Sleep Potion
 				coord = { 54.0, 32.6, EMERALD_DREAM },
 				questID = 78264,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210184),	-- Half-Filled Dreamless Sleep Potion
 				},
-			})),
+			}),
 			o(380586, {	-- Mysterious Cauldrons
 				description = "Grab and drop a Discarded Toy in each of these, then you can collect the treasure.",
 				coord = { 55.2, 30.5, THALDRASZUS },
@@ -988,30 +988,30 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 					i(203471, {timeline = {ADDED_10_0_5}}),	-- Tasty Candy
 				},
 			}),
-			o(401236,	-- Malnourished Specimen/Nutrient Diluted Protofluid
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			o(401236, {	-- Malnourished Specimen/Nutrient Diluted Protofluid
 				coord = { 52.6, 18.3, ZARALEK_CAVERN },
 				questID = 75646,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(205211),	-- Nutrient Diluted Protofluid
 				},
-			})),
-			o(401238,	-- Marrow-Ripened Slime
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			}),
+			o(401238, {	-- Marrow-Ripened Slime
 				coord = { 62.1, 41.1, ZARALEK_CAVERN },
 				questID = 75649,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(205212),	-- Marrow-Ripened Slime
 				},
-			})),
-			o(410442,	-- Root of the Problem
-			bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+			}),
+			o(410442, {	-- Root of the Problem
 				coord = { 36.2, 46.6, EMERALD_DREAM },
 				questID = 78275,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210190),	-- Blazeroot
 				},
-			})),
+			}),
 			o(380616, {	-- Small Basket of Firewater Powder
 				coord = { 67.0, 13.2, THE_AZURE_SPAN },
 				questID = 70309,
@@ -1019,23 +1019,23 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 					i(198712),	-- Firewater Powder Sample
 				},
 			}),
-			o(401240,	-- Suspicious Mold
-			bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			o(401240, {	-- Suspicious Mold
 				coord = { 40.4, 59.2, ZARALEK_CAVERN },
 				questID = 75651,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(205213),	-- Suspicious Mold
 				},
-			})),
-			o(410434,	-- Splash Potion of Narcolepsy
-			bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+			}),
+			o(410434, {	-- Splash Potion of Narcolepsy
 				description = "In cavern.",
 				coord = { 51.6, 48.5, 2254 },
 				questID = 78269,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210185),	-- Splash Potion of Narcolepsy
 				},
-			})),
+			}),
 			o(380590, {	-- Well-Insulated Mug
 				coord = { 25.1, 73.3, THE_WAKING_SHORES },
 				questID = 70289,

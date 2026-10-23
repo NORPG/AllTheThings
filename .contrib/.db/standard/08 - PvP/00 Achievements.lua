@@ -241,12 +241,15 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 	}),
 	-- #endif
-	pvp(ach(14519, bubbleDownSelf({timeline = { ADDED_9_0_2_LAUNCH } },{	-- Covenant Combat
-		crit(49222),	-- Venthyr
-		crit(49223),	-- Night Fae
-		crit(49224),	-- Necrolord
-		crit(49225),	-- Kyrian
-	}))),
+	pvp(ach(14519, {	-- Covenant Combat
+		timeline = { ADDED_9_0_2_LAUNCH },
+		groups = {
+			crit(49222),	-- Venthyr
+			crit(49223),	-- Night Fae
+			crit(49224),	-- Necrolord
+			crit(49225),	-- Kyrian
+		},
+	})),
 	ach(11167, {	-- Crest of Carnage (Alliance)
 		races = ALLIANCE_ONLY,
 		timeline = { ADDED_7_0_3, REMOVED_8_0_1 },

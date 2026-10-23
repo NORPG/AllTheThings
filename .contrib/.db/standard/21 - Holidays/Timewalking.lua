@@ -90,30 +90,36 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 	difficultyID = DIFFICULTY.DUNGEON.TIMEWALKING;
 	groups = {
 		n(ACHIEVEMENTS, {
-			ach(19079, bubbleDownSelf({ timeline = { ADDED_10_1_7, REMOVED_10_2_0 } },{	-- Master of the Turbulent Timeways (automated!)
+			ach(19079, {	-- Master of the Turbulent Timeways (automated!)
 				description = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				timeline = { ADDED_10_1_7, REMOVED_10_2_0 },
 				groups = { i(205208) },	-- Sandy Shalewing (MOUNT!)
-			})),
-			ach(41056, bubbleDownSelf({ timeline = { ADDED_11_0_7, REMOVED_11_1_0 } }, {	-- Master of the Turbulent Timeways II (automated!)
+			}),
+			ach(41056, {	-- Master of the Turbulent Timeways II (automated!)
 				description = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				timeline = { ADDED_11_0_7, REMOVED_11_1_0 },
 				groups = { i(232624) },	-- Timely Buzzbee (MOUNT!)
-			})),
-			ach(41779, bubbleDownSelf({ timeline = { ADDED_11_1_7, REMOVED_11_2_0 } }, {	-- Master of the Turbulent Timeways III (automated!)
+			}),
+			ach(41779, {	-- Master of the Turbulent Timeways III (automated!)
 				description = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				timeline = { ADDED_11_1_7, REMOVED_11_2_0 },
 				groups = { i(238739) },	-- Chrono Corsair (MOUNT!)
-			})),
-			ach(61394, bubbleDownSelf({ timeline = { ADDED_11_2_7, REMOVED_12_0_1_LAUNCH } }, {	-- Master of the Turbulent Timeways IV (automated!)
+			}),
+			ach(61394, {	-- Master of the Turbulent Timeways IV (automated!)
 				description = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				timeline = { ADDED_11_2_7, REMOVED_12_0_1_LAUNCH },
 				groups = { i(254694) },	-- Ta'readon's Mount Voucher
-			})),
-			ach(61463, bubbleDownSelf({ timeline = { ADDED_12_0_7, REMOVED_12_1_0 } }, {	-- Master of the Turbulent Timeways V (automated!)
+			}),
+			ach(61463, {	-- Master of the Turbulent Timeways V (automated!)
 				description = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				timeline = { ADDED_12_0_7, REMOVED_12_1_0 },
 				groups = { i(258884) },	-- Spawn of Vyranoth (MOUNT!)
-			})),
-			ach(64207, bubbleDownSelf({ timeline = { ADDED_12_1_7, REMOVED_12_2_0 } }, {	-- Master of the Turbulent Timeways VI (automated!)
+			}),
+			ach(64207, {	-- Master of the Turbulent Timeways VI (automated!)
 				description = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				timeline = { ADDED_12_1_7, REMOVED_12_2_0 },
 				groups = { i(287513) },	-- Markeet of the Infinite (MOUNT!)
-			})),
+			}),
 		}),
 		n(COMMON_BOSS_DROPS, {
 			currency(TIMEWARPED_BADGE),

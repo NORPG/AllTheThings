@@ -51,12 +51,15 @@ battleground(519, {	-- Deepwind Gorge
 			ach(14187, {	-- Cruisin' for a Brewsin'
 				timeline = { ADDED_8_3_0 },
 			}),
-			ach(8358, bubbleDownSelf({timeline = { ADDED_5_3_0, REMOVED_8_3_0 }}, {	-- Deepwind Gorge All-Star
-				crit(23425),	-- Assault 1 mine
-				crit(23426),	-- Defend 1 mine
-				crit(23427),	-- Capture 1 mine cart
-				crit(23428),	-- Return 1 mine cart
-			})),
+			ach(8358, {	-- Deepwind Gorge All-Star
+				timeline = { ADDED_5_3_0, REMOVED_8_3_0 },
+				groups = {
+					crit(23425),	-- Assault 1 mine
+					crit(23426),	-- Defend 1 mine
+					crit(23427),	-- Capture 1 mine cart
+					crit(23428),	-- Return 1 mine cart
+				},
+			}),
 			ach(8333),	-- Deepwind Gorge Perfection
 			ach(8332),	-- Deepwind Gorge Veteran
 			ach(8331),	-- Deepwind Gorge Victory

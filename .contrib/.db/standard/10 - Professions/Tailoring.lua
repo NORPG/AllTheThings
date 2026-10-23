@@ -135,13 +135,16 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 				provider = { "i", 53051 },	-- Dense Embersilk Bandage
 			}),
 			-- #endif
-			ach(18815, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Speed Dreamin'
-				crit(61333),	-- Dream of Skywall
-				crit(61334),	-- Dream of Deepholm
-				crit(61335),	-- Dream of Hyjal
-				crit(61336),	-- Dream of Ragnaros
-				crit(61337),	-- Dream of Azshara
-			})),
+			ach(18815, {	-- Speed Dreamin'
+				timeline = { ADDED_10_1_7 },
+				groups = {
+					crit(61333),	-- Dream of Skywall
+					crit(61334),	-- Dream of Deepholm
+					crit(61335),	-- Dream of Hyjal
+					crit(61336),	-- Dream of Ragnaros
+					crit(61337),	-- Dream of Azshara
+				},
+			}),
 		}),
 	}),
 	expansion(EXPANSION.WOD, {
@@ -1059,13 +1062,14 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 			}),
 		}),
 		n(TREASURES, {
-			o(402868, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Abandoned Reserve Chute
+			o(402868, {	-- Abandoned Reserve Chute
 				coord = { 47.2, 48.6, ZARALEK_CAVERN },
 				questID = 76102,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(206019),	-- Abandoned Reserve Chute
 				},
-			})),
+			}),
 			o(380763, {	-- Ancient Dragonweave Loom
 				description = "Interact with the loom and complete the minigame to be awarded this treasure.",
 				questID = 70372,
@@ -1088,20 +1092,22 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 					i(198680),	-- Decaying Brackenhide Blanket
 				},
 			}),
-			o(411171, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Exceedingly Soft Wildercloth
+			o(411171, {	-- Exceedingly Soft Wildercloth
 				coord = { 53.2, 27.9, EMERALD_DREAM },
 				questID = 78414,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210461),	-- Exceedingly Soft Wildercloth
 				},
-			})),
-			o(402887, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Exquisitely Embroidered Banner
+			}),
+			o(402887, {	-- Exquisitely Embroidered Banner
 				coord = { 44.5, 15.7, ZARALEK_CAVERN },
 				questID = 76116,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(206030),	-- Exquisitely Embroidered Banner
 				},
-			})),
+			}),
 			o(380549, {	-- Intriguing Bolt of Blue Cloth
 				questID = 70267,
 				coord = { 40.7, 54.9, THE_AZURE_SPAN },
@@ -1130,13 +1136,14 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 					i(198699),	-- Mysterious Banner
 				},
 			}),
-			o(411176, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Plush Pillow
+			o(411176, {	-- Plush Pillow
 				coord = { 49.8, 61.4, EMERALD_DREAM },
 				questID = 78415,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210462),	-- Plush Pillow
 				},
-			})),
+			}),
 			o(380599, {	-- Catnip Frond
 				coords = {
 					{ 65.2, 52.2, OHNAHRAN_PLAINS },
@@ -1154,20 +1161,22 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 				cost = { { "i", 198688, 5 }, },	-- 5x Catnip Leaf
 				groups = { i(201020) },	-- Silky Surprise
 			}),
-			o(411177, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Snuggle Buddy
+			o(411177, {	-- Snuggle Buddy
 				coord = { 40.7, 86.1, EMERALD_DREAM },
 				questID = 78416,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210463),	-- Snuggle Buddy
 				},
-			})),
-			o(402878, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Used Medical Wrap Kit
+			}),
+			o(402878, {	-- Used Medical Wrap Kit
 				coord = { 59.1, 73.1, ZARALEK_CAVERN },
 				questID = 76110,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(206025),	-- Used Medical Wrap Kit
 				},
-			})),
+			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			isWeekly = true,

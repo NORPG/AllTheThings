@@ -24,28 +24,34 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 		ach(18900),	-- Budget Bard (automated)
 	})),
 	expansion(EXPANSION.CLASSIC, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
-			ach(17498, {	-- Renowned Leatherworking Specialist
-				altQuests = {
-					5141,	-- Dragonscale Leatherworking [A]
-					5145,	-- Dragonscale Leatherworking [H]
-					5144,	-- Elemental Leatherworking [A]
-					5146,	-- Elemental Leatherworking [H]
-					5143,	-- Tribal Leatherworking [A]
-					5148,	-- Tribal Leatherworking [H]
-				},
-				sourceQuestNumRequired = 1,
-				timeline = { ADDED_10_0_7, REMOVED_10_0_7 },
-			}),
-			ach(18899, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- You Saw Nothing
-				crit(61658, {	-- Gordok Ogre Suit shamelessly crafted
-					provider = { "i", 18258 },	-- Gordok Ogre Suit
+		n(ACHIEVEMENTS, {
+			timeline = { ADDED_10_0_7 },
+			groups = {
+				ach(17498, {	-- Renowned Leatherworking Specialist
+					altQuests = {
+						5141,	-- Dragonscale Leatherworking [A]
+						5145,	-- Dragonscale Leatherworking [H]
+						5144,	-- Elemental Leatherworking [A]
+						5146,	-- Elemental Leatherworking [H]
+						5143,	-- Tribal Leatherworking [A]
+						5148,	-- Tribal Leatherworking [H]
+					},
+					sourceQuestNumRequired = 1,
+					timeline = { ADDED_10_0_7, REMOVED_10_0_7 },
 				}),
-				crit(61659, {	-- Gordok Ogre Suit donned
-					provider = { "i", 18258 },	-- Gordok Ogre Suit
+				ach(18899, {	-- You Saw Nothing
+					timeline = { ADDED_10_1_7 },
+					groups = {
+						crit(61658, {	-- Gordok Ogre Suit shamelessly crafted
+							provider = { "i", 18258 },	-- Gordok Ogre Suit
+						}),
+						crit(61659, {	-- Gordok Ogre Suit donned
+							provider = { "i", 18258 },	-- Gordok Ogre Suit
+						}),
+					},
 				}),
-			})),
-		})),
+			},
+		}),
 		n(QUESTS, sharedDataSelf({
 			timeline = { REMOVED_4_0_3 },
 			lvl = 40,
@@ -1246,34 +1252,38 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 					i(198658),	-- Decay-Infused Tanning Oil
 				},
 			}),
-			o(410550, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Dreamtalon Claw
+			o(410550, {	-- Dreamtalon Claw
 				coord = { 34.0, 29.7, EMERALD_DREAM },
 				questID = 78305,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210215),	-- Dreamtalon Claw
 				},
-			})),
-			o(398783, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Flame-Infused Scale Oil
+			}),
+			o(398783, {	-- Flame-Infused Scale Oil
 				coord = { 41.2, 48.7, ZARALEK_CAVERN },
 				questID = 75495,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(204986),	-- Flame-Infused Scale Oil
 				},
-			})),
-			o(398785, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Lava-Forged Leatherworker's "Knife"
+			}),
+			o(398785, {	-- Lava-Forged Leatherworker's "Knife"
 				coord = { 45.2, 21.0, ZARALEK_CAVERN },
 				questID = 75496,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(204987),	-- Lava-Forged Leatherworker's "Knife"
 				},
-			})),
-			o(410534, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Molted Faerie Dragon Scales
+			}),
+			o(410534, {	-- Molted Faerie Dragon Scales
 				coord = { 37.4, 71.0, EMERALD_DREAM },
 				questID = 78299,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210211),	-- Molted Faerie Dragon Scales
 				},
-			})),
+			}),
 			o(380615, {	-- Poacher's Pack
 				questID = 70308,
 				coord = { 39.4, 86.3, THE_WAKING_SHORES },
@@ -1288,20 +1298,22 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 					i(198667),	-- Spare Djaradin Tools
 				},
 			}),
-			o(398791, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Sulfur-Soaked Skins
+			o(398791, {	-- Sulfur-Soaked Skins
 				coord = { 49.5, 54.8, ZARALEK_CAVERN },
 				questID = 75502,
+				timeline = { ADDED_10_1_0 },
 				groups = {
 					i(204988),	-- Sulfur-Soaked Skins
 				},
-			})),
-			o(410529, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Tuft of Dreamsaber Fur
+			}),
+			o(410529, {	-- Tuft of Dreamsaber Fur
 				coord = { 41.7, 66.4, EMERALD_DREAM },
 				questID = 78298,
+				timeline = { ADDED_10_2_0 },
 				groups = {
 					i(210208),	-- Tuft of Dreamsaber Fur
 				},
-			})),
+			}),
 			o(380554, {	-- Well-Danced Drum
 				description = "Fix the drum by interacting with it, wait for the little Tuskarr to finish dancing, then you can loot the treasure.",
 				questID = 70269,

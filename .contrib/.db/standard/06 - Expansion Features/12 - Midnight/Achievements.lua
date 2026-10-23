@@ -406,9 +406,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 				groups = { i(274707) },	-- Crystallized Venomblight Manaflux
 			}),
-			ach(63473, bubbleDownSelf({ timeline = { ADDED_12_1_0 }, }, {	-- Sssensational!
-				iensemble(279997),	-- Insidious Venomstone (CI!)
-			})),
+			ach(63473, {	-- Sssensational!
+				timeline = { ADDED_12_1_0 },
+				groups = {
+					iensemble(279997),	-- Insidious Venomstone (CI!)
+				},
+			}),
 		},
 	}),
 }));

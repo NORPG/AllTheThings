@@ -235,11 +235,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(3157),	-- Three Lights in the Darkness (10 player)
 						revampAch(2945),	-- But I'm On Your Side (10 player)
 						revampAch(2947),	-- Can't Do That While Stunned (10 player)
-						ach(2903, bubbleDownSelf({	-- Champion of Ulduar
+						ach(2903, {
 							timeline = { ADDED_3_1_0, REMOVED_4_0_1 },
-						},{
-							title(127),	-- <Name>, Champion of Ulduar
-						})),
+							groups = {
+								title(127),	-- <Name>, Champion of Ulduar
+							},
+						}),
 						revampAch(2961),	-- Cheese the Freeze (10 player)
 						revampAch(2980),	-- Con-speed-atory (10 player)
 						revampAch(3006),	-- Crazy Cat Lady (10 player)
@@ -337,11 +338,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}},
 							groups = { i(45802) },	-- Rusted Proto-Drake (MOUNT!)
 						}),
-						ach(2903, bubbleDownSelf({	-- Champion of Ulduar
+						ach(2903, {
 							timeline = { ADDED_3_1_0, REMOVED_4_0_1 },
-						},{
-							title(127),	-- <Name>, Champion of Ulduar
-						})),
+							groups = {
+								title(127),	-- <Name>, Champion of Ulduar
+							},
+						}),
 						ach(2894, {	-- The Secrets of Ulduar (10 player)
 							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
@@ -1025,11 +1027,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2948),	-- Can't Do That While Stunned (25 player)
 						revampAch(2962),	-- Cheese the Freeze (25 player)
 						revampAch(2981),	-- Con-speed-atory (25 player)
-						ach(2904, bubbleDownSelf({	-- Conqueror of Ulduar
+						ach(2904, {
 							timeline = { ADDED_3_1_0, REMOVED_4_0_1 },
-						},{
-							title(126),	-- <Name>, Conqueror of Ulduar
-						})),
+							groups = {
+								title(126),	-- <Name>, Conqueror of Ulduar
+							},
+						}),
 						revampAch(3007),	-- Crazy Cat Lady (25 player)
 						revampAch(2984),	-- Deforestation (25 player)
 						revampAch(2954),	-- Disarmed (25 player)
@@ -1140,11 +1143,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}},
 							groups = { i(45801) },	-- Ironbound Proto-Drake (MOUNT!)
 						}),
-						ach(2904, bubbleDownSelf({	-- Conqueror of Ulduar
+						ach(2904, {
 							timeline = { ADDED_3_1_0, REMOVED_4_0_1 },
-						},{
-							title(126),	-- <Name>, Conqueror of Ulduar
-						})),
+							groups = {
+								title(126),	-- <Name>, Conqueror of Ulduar
+							},
+						}),
 						ach(2895, {	-- The Secrets of Ulduar (25 player)
 							timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement

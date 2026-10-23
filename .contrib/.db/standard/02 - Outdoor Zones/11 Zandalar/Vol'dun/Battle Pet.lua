@@ -15,8 +15,9 @@ maproot(ZANDALAR, VOLDUN, {
 				pet(2399, {	-- Hermit Crab (PET!)
 					description = "Best found around the coastline of Vol'dun. Can also be found in Tiragarde, best spot is East-ish of Bridgeport.",
 				}),
-				o(311903, bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {	-- Loose Parts (A)
+				o(311903, {	-- Loose Parts (A)
 					icon = 1405815,
+					timeline = { ADDED_8_1_0 },
 					races = ALLIANCE_ONLY,
 					coord = { 41.69, 42.54, VOLDUN },	-- Location chest spawns
 					groups = {
@@ -39,9 +40,10 @@ maproot(ZANDALAR, VOLDUN, {
 							},
 						}),
 					},
-				})),
-				o(311902, bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {	-- Loose Parts (H)
+				}),
+				o(311902, {	-- Loose Parts (H)
 					icon = 1405815,
+					timeline = { ADDED_8_1_0 },
 					races = HORDE_ONLY,
 					coord = { 41.69, 42.54, VOLDUN },	-- Location chest spawns
 					groups = {
@@ -65,7 +67,7 @@ maproot(ZANDALAR, VOLDUN, {
 							-- Note!! The description we want to use will be on the parts because we don't want it written on the item!  See below.
 						}),
 					},
-				})),
+				}),
 			},
 		}),
 	},
