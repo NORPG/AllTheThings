@@ -9,6 +9,7 @@ maproot(KALIMDOR, {
 	-- #if ANYCLASSIC
 	maps = { 1464 },
 	-- #endif
+	timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC] },
 	groups = {
 		n(ACHIEVEMENTS, {
 			ach(43),	-- Kalimdor Explorer [7.0.3] / Explore Kalimdor (automated)

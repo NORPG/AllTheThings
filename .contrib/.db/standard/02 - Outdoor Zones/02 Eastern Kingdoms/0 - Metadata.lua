@@ -9,6 +9,7 @@ maproot(EASTERN_KINGDOMS, {
 	-- #if ANYCLASSIC
 	maps = { 1463 },
 	-- #endif
+	timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC] },
 	groups = {
 		n(ACHIEVEMENTS, {
 			ach(42),	-- Eastern Kingdoms Explorer [7.0.3] / Explore Eastern Kingdoms (automated)
