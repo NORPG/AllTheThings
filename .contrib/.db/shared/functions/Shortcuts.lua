@@ -2043,10 +2043,25 @@ expansion = function(id, patch, t)						-- Create an EXPANSION Object
 			t.timeline = { "added " .. math.floor(id) ..".".. patchstring }
 		else
 			local deftimeline = EXPANSION_DEFAULT_TIMELINES[id]
-			t.timeline = { deftimeline } or { "added " .. math.floor(id) .. ".0" }
+			t._defaulttimeline = { deftimeline } or { "added " .. math.floor(id) .. ".0" }
 		end
 	end
 	return t;
+end
+--- Create an EXPANSION Object with a specified Timeline (for use as a Header)
+---@param id ExpansionID Expansion ID.
+---@param patch number Patch component encoded into the expansion ID in the three-argument form.
+---@param t ATTObject|ATTObjectArray Object fields or child objects for the expansion or patch header.
+---@return ATTObject
+---@overload fun(id: ExpansionID, t?: ATTObject|ATTObjectArray): ATTObject
+expansionHeader = function(id, timeline, t)
+	t = expansion(id, t)
+	if not timeline or not isarray(timeline) then
+		print("WARN: Use of 'expansionHeader' without a valid 'timeline': "..tostring(timeline))
+		return t
+	end
+	t.timeline = timeline
+	return t
 end
 --- Create an EXPLORATION Object.
 ---@param id ExplorationID Exploration area ID.
@@ -2417,7 +2432,7 @@ molemachine = function(questID, explorationID, t)		-- Create a MOLE MACHINE Ques
 			t.icon = 1786409;
 		end
 		if not t.timeline then
-			t.timeline = { ADDED_8_0_1 };
+			t._defaulttimeline = { ADDED_8_0_1 };
 		end
 		if not t.races then
 			t.races = { DARKIRON };

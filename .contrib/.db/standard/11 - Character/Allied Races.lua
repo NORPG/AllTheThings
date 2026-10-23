@@ -62,6 +62,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			"To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
 			-- #endif
 			races = ALLIANCE_ONLY,
+			timeline = { ADDED_8_0_1_LAUNCH },
 			groups = {
 	            header(HEADERS.NPC, 143925, {	-- Dark Iron Mole Machine
 					icon = 1786409,
@@ -132,7 +133,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 								coord = { 44.66, 72.87, HIGHMOUNTAIN },
 							}),
 						}),
-						expansion(EXPANSION.BFA, sharedDataSelf({ timeline = { ADDED_11_0_5 } }, {
+						expansionHeader(EXPANSION.BFA, { ADDED_11_0_5 }, {
 							molemachine(80102, 9623, {	-- Tidebreak Summit
 								coord = { 64.21, 29.44, STORMSONG_VALLEY },
 							}),
@@ -148,8 +149,8 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 								name = "Zalamar Invasion",
 								coord = { 34.34, 45.15, NAZMIR },
 							}),
-						})),
-						expansion(EXPANSION.SL, sharedDataSelf({ timeline = { ADDED_11_0_5 } }, {
+						}),
+						expansionHeader(EXPANSION.SL, { ADDED_11_0_5 }, {
 							molemachine(80104, 11438, {	-- Scorched Crypt
 								coord = { 19.94, 38.81, REVENDRETH },
 							}),
@@ -162,8 +163,8 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 							molemachine(80103, 13406, {	-- Valley of a Thousand Legs
 								coord = { 53.49, 59.79, MALDRAXXUS },
 							}),
-						})),
-						expansion(EXPANSION.DF, sharedDataSelf({ timeline = { ADDED_11_0_5 } }, {
+						}),
+						expansionHeader(EXPANSION.DF, { ADDED_11_0_5 }, {
 							molemachine(80107, 14012, {	-- The Slagmire
 								coord = { 32.36, 54.90, THE_WAKING_SHORES },
 							}),
@@ -173,7 +174,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 							molemachine(80109, 14655, {	-- Obsidian Rest
 								coord = { 52.73, 27.67, ZARALEK_CAVERN },
 							}),
-						})),
+						}),
 					},
 				}),
 				q(51813, {	-- Blackrock Depths
