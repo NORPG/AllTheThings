@@ -2,6 +2,25 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local KRYSTALLUS = 604;
+local MAIDEN_OF_GRIEF = 605;
+local TRIBUNAL_OF_AGES = 606;
+local SJONNIR = 607;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[KRYSTALLUS] = { 27977 },	-- Krystallus
+	[MAIDEN_OF_GRIEF] = { 27975 },	-- Maiden of Grief
+	[TRIBUNAL_OF_AGES] = { 28234 },	-- Tribunal of Ages
+	[SJONNIR] = { 27978 },	-- Sjonnir The Ironshaper
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty, CommonBossDrops =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
+
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(277, {	-- Halls of Stone
 		mapID = HALLS_OF_STONE,
@@ -11,82 +30,97 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(485, {	-- Halls of Stone
+					-- #if AFTER 7.3.5
 					crit(5452, {	-- Maiden of Grief
-						_encounter = { 605, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { MAIDEN_OF_GRIEF, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(6935, {	-- Tribunal of Ages
-						_encounter = { 606, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { TRIBUNAL_OF_AGES, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(5453, {	-- Krystallus
-						_encounter = { 604, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { KRYSTALLUS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+					}),
+					crit(5454, {	-- Sjonnir the Ironshaper
+						_encounter = { SJONNIR, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+					}),
+					-- #else
+					crit(5452, {	-- Maiden of Grief
+						_encounter = { MAIDEN_OF_GRIEF, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(6935, {	-- Tribunal of Ages
+						_encounter = { TRIBUNAL_OF_AGES, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(5453, {	-- Krystallus
+						_encounter = { KRYSTALLUS, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5628, {	-- Sjonnir the Ironshaper
-						_encounter = { 607, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { SJONNIR, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #else
 					crit(5454, {	-- Sjonnir the Ironshaper
-						_encounter = { 607, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { SJONNIR, DIFFICULTY.DUNGEON.NORMAL },
 					}),
+					-- #endif
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17297, {	-- Defense Protocol Alpha: Halls of Stone
 					crit(57752, {	-- Maiden of Grief
-						_encounter = { 605, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { MAIDEN_OF_GRIEF, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57749, {	-- Krystallus
-						_encounter = { 604, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { KRYSTALLUS, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57751, {	-- Tribunal of Ages
-						_encounter = { 606, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { TRIBUNAL_OF_AGES, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57748, {	-- Sjonnir the Ironshaper
-						_encounter = { 607, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { SJONNIR, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18597, {	-- Defense Protocol Beta: Halls of Stone
 					crit(60600, {	-- Maiden of Grief
-						_encounter = { 605, DEFENSE_PROTOCOL_BETA },
+						_encounter = { MAIDEN_OF_GRIEF, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60598, {	-- Krystallus
-						_encounter = { 604, DEFENSE_PROTOCOL_BETA },
+						_encounter = { KRYSTALLUS, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60599, {	-- Tribunal of Ages
-						_encounter = { 606, DEFENSE_PROTOCOL_BETA },
+						_encounter = { TRIBUNAL_OF_AGES, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60597, {	-- Sjonnir the Ironshaper
-						_encounter = { 607, DEFENSE_PROTOCOL_BETA },
+						_encounter = { SJONNIR, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19434, {	-- Defense Protocol Gamma: Halls of Stone
 					crit(63347, {	-- Maiden of Grief
-						_encounter = { 605, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { MAIDEN_OF_GRIEF, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63345, {	-- Krystallus
-						_encounter = { 604, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { KRYSTALLUS, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63346, {	-- Tribunal of Ages
-						_encounter = { 606, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { TRIBUNAL_OF_AGES, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63344, {	-- Sjonnir the Ironshaper
-						_encounter = { 607, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { SJONNIR, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
 				ach(496, {	-- Heroic: Halls of Stone
 					crit(6856, {	-- Maiden of Grief
-						_encounter = { 605, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { MAIDEN_OF_GRIEF, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5615, {	-- Sjonnir the Ironshaper
-						_encounter = { 607, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { SJONNIR, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6936, {	-- Tribunal of Ages
-						_encounter = { 606, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { TRIBUNAL_OF_AGES, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6857, {	-- Krystallus
-						_encounter = { 604, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { KRYSTALLUS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -115,231 +149,183 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					lvl = lvlsquish(75, 75, 20),
 				}),
 			}),
-			n(ZONE_DROPS, {
-				i(42780),	-- Relics of Ulduar
+			-- #if AFTER 7.3.5
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(37673),	-- Dark Runic Mantle
+					i(35683),	-- Palladium Ring
+					i(37672),	-- Patina-Coated Breastplate
+					i(37671),	-- Refined Ore Gloves
+					i(42780),	-- Relics of Ulduar
+					i(35682),	-- Rune Giant Bindings
+					i(35681),	-- Unrelenting Blade
+				}),
+				BossOnly(KRYSTALLUS, {
+					i(35670),	-- Brann's Lost Mining Helmet
+					i(35672),	-- Hollow Geode Helm
+					i(35673),	-- Leggings of Burning Gleam
+					i(37649, { timeline = { CREATED_3_0_2, ADDED_7_3_5 } }),	-- Quarry Chisel
+					i(37650),	-- Shardling Legguards
+					i(37652),	-- Spaulders of Krystallus
+					i(37651),	-- The Prospector's Prize
+				}),
+				BossOnly(MAIDEN_OF_GRIEF, {
+					i(38613),	-- Chain of Fiery Orbs
+					i(38614),	-- Embrace of Sorrow
+					i(38618),	-- Hammer of Grief
+					i(38615),	-- Lightning-Charged Gloves
+					i(38616),	-- Maiden's Girdle
+					i(38611),	-- Ringlet of Repose
+					i(38617),	-- Woeful Band
+				}),
+				BossOnly(TRIBUNAL_OF_AGES, {
+					i(35676),	-- Constellation Leggings
+					i(35677),	-- Cosmos Vestments
+					i(35675),	-- Linked Armor of the Sphere
+					i(37655),	-- Mantle of the Tribunal
+					i(157564, { timeline = { ADDED_7_3_5 } }),	-- Marbled Bracers
+					i(37656),	-- Raging Construct Bands
+					i(37654),	-- Sabaton of the Ages
+					i(37653),	-- Sword of Justice
+				}),
+				BossOnly(SJONNIR, {
+					i(35680),	-- Amulet of Wills
+					i(37668),	-- Bands of the Stoneforge
+					i(37666),	-- Boots of the Whirling Mist
+					i(37660),	-- Forge Ember
+					i(35678),	-- Ironshaper's Legplates
+					i(37669),	-- Leggings of the Stone Halls
+					i(37670),	-- Sjonnir's Girdle
+					i(37657),	-- Spark of Life
+					i(35679),	-- Static Cowl
+					i(37658),	-- Sun-Emblazoned Chestplate
+					i(37667),	-- The Fleshshaper
+				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
+				CommonBossDrops({
+					currency(101, { timeline = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
+				}),
+				BossOnly(KRYSTALLUS),
+				BossOnly(MAIDEN_OF_GRIEF, {
+					ach(1866),	-- Good Grief
+				}),
+				BossOnly(TRIBUNAL_OF_AGES, {
+					ach(2154),	-- Brann Spankin' New
+				}),
+				BossOnly(SJONNIR, {
+					i(43699, { timeline = { REMOVED_4_0_1 } }),	-- The Curse of Flesh Disc (QI!)
+					--
+					ach(2155),	-- Abuse the Ooze
+					ach(5102, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Halls of Stone Guild Run
+					i(41792, { timeline = { ADDED_3_0_3, REMOVED_4_0_3 } }),	-- Design: Deft Monarch Topaz (RECIPE!)
+				}),
+			}),
+			-- #else
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(42780),	-- Relics of Ulduar
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 				n(ZONE_DROPS, {
 					i(35683),	-- Palladium Ring
 					i(35682),	-- Rune Giant Bindings
 					i(35681),	-- Unrelenting Blade
 				}),
-				e(604, {	-- Krystallus
-					creatureID = 27977,	-- Krystallus
-					groups = {
-						i(37649, {	-- Quarry Chisel
-							timeline = { CREATED_3_0_2, ADDED_7_3_5 },
-						}),
-						i(35670),	-- Brann's Lost Mining Helmet
-						i(35672),	-- Hollow Geode Helm
-						-- #if AFTER 7.3.5
-						i(37652),	-- Spaulders of Krystallus (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35673),	-- Leggings of Burning Gleam
-						-- #if AFTER 7.3.5
-						i(37650),	-- Shardling Legguards (7.3.5 - Used to be only Heroic Mode)
-						i(37651),	-- The Prospector's Prize (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(KRYSTALLUS, {
+					i(35670),	-- Brann's Lost Mining Helmet
+					i(35672),	-- Hollow Geode Helm
+					i(35673),	-- Leggings of Burning Gleam
+					i(37649, { timeline = { CREATED_3_0_2, ADDED_7_3_5 } }),	-- Quarry Chisel
 				}),
-				e(605, {	-- Maiden of Grief
-					creatureID = 27975,	-- Maiden of Grief
-					groups = {
-						-- #if AFTER 7.3.5
-						i(38618),	-- Hammer of Grief (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(38613),	-- Chain of Fiery Orbs
-						i(38614),	-- Embrace of Sorrow
-						-- #if AFTER 7.3.5
-						i(38615),	-- Lightning-Charged Gloves (7.3.5 - Used to be only Heroic Mode)
-						i(38616),	-- Maiden's Girdle (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(38611),	-- Ringlet of Repose
-						-- #if AFTER 7.3.5
-						i(38617),	-- Woeful Band (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(MAIDEN_OF_GRIEF, {
+					i(38613),	-- Chain of Fiery Orbs
+					i(38614),	-- Embrace of Sorrow
+					i(38611),	-- Ringlet of Repose
 				}),
-				e(606, {	-- Tribunal of Ages
-					creatureID = 28234,	-- Tribunal of Ages
-					groups = {
-						-- #if AFTER 7.3.5
-						i(37653),	-- Sword of Justice (7.3.5 - Used to be only Heroic Mode)
-						i(37655),	-- Mantle of the Tribunal (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35677),	-- Cosmos Vestments
-						i(35675),	-- Linked Armor of the Sphere
-						i(157564, {	-- Marbled Bracers
-							timeline = { ADDED_7_3_5 },
-						}),
-						-- #if AFTER 7.3.5
-						i(37656),	-- Raging Construct Bands (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35676),	-- Constellation Leggings
-						-- #if AFTER 7.3.5
-						i(37654),	-- Sabaton of the Ages (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(TRIBUNAL_OF_AGES, {
+					i(35676),	-- Constellation Leggings
+					i(35677),	-- Cosmos Vestments
+					i(35675),	-- Linked Armor of the Sphere
 				}),
-				e(607, {	-- Sjonnir The Ironshaper
-					creatureID = 27978,	-- Sjonnir The Ironshaper
-					groups = {
-						-- #if AFTER 7.3.5
-						i(37667),	-- The Fleshshaper (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35679),	-- Static Cowl
-						i(35680),	-- Amulet of Wills
-						-- #if AFTER 7.3.5
-						i(37658),	-- Sun-Emblazoned Chestplate (7.3.5 - Used to be only Heroic Mode)
-						i(37668),	-- Bands of the Stoneforge (7.3.5 - Used to be only Heroic Mode)
-						i(37670),	-- Sjonnir's Girdle (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35678),	-- Ironshaper's Legplates
-						-- #if AFTER 7.3.5
-						i(37669),	-- Leggings of the Stone Halls (7.3.5 - Used to be only Heroic Mode)
-						i(37666),	-- Boots of the Whirling Mist (7.3.5 - Used to be only Heroic Mode)
-						i(37660),	-- Forge Ember (7.3.5 - Used to be only Heroic Mode)
-						i(37657),	-- Spark of Life (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(SJONNIR, {
+					i(35680),	-- Amulet of Wills
+					i(35678),	-- Ironshaper's Legplates
+					i(35679),	-- Static Cowl
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				lvl = lvlsquish(80, 80, 30),
-				groups = {
-					n(ZONE_DROPS, {
-						i(37673),	-- Dark Runic Mantle
-						i(37672),	-- Patina-Coated Breastplate
-						i(37671),	-- Refined Ore Gloves
-					}),
-					-- #if BEFORE CATA
-					n(COMMON_BOSS_DROPS, {
-						currency(101, {	-- Emblem of Heroism
-							timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
-						}),
-					}),
-					-- #endif
-					e(604, {	-- Krystallus
-						creatureID = 27977,	-- Krystallus
-						groups = {
-							-- #if AFTER 7.3.5
-							i(37649),	-- Quarry Chisel (7.3.5 - Used to be only Normal Mode)
-							i(35670),	-- Brann's Lost Mining Helmet (7.3.5 - Used to be only Normal Mode)
-							i(35672),	-- Hollow Geode Helm (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37652),	-- Spaulders of Krystallus
-							-- #if AFTER 7.3.5
-							i(35673),	-- Leggings of Burning Gleam (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37650),	-- Shardling Legguards
-							i(37651),	-- The Prospector's Prize
-						},
-					}),
-					e(605, {	-- Maiden of Grief
-						creatureID = 27975,	-- Maiden of Grief
-						groups = {
-							ach(1866),	-- Good Grief
-							i(38618),	-- Hammer of Grief
-							-- #if AFTER 7.3.5
-							i(38613),	-- Chain of Fiery Orbs (7.3.5 - Used to be only Normal Mode)
-							i(38614),	-- Embrace of Sorrow (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(38615),	-- Lightning-Charged Gloves
-							i(38616),	-- Maiden's Girdle
-							-- #if AFTER 7.3.5
-							i(38611),	-- Ringlet of Repose (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(38617),	-- Woeful Band
-						},
-					}),
-					e(606, {	-- Tribunal of Ages
-						creatureID = 28234,	-- Tribunal of Ages
-						groups = {
-							ach(2154),	-- Brann Spankin' New
-							i(37653),	-- Sword of Justice
-							i(37655),	-- Mantle of the Tribunal
-							-- #if AFTER 7.3.5
-							i(35677),	-- Cosmos Vestments (7.3.5 - Used to be only Normal Mode)
-							i(35675),	-- Linked Armor of the Sphere (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(157564, {	-- Marbled Bracers
-								timeline = { ADDED_7_3_5 },
-							}),
-							i(37656),	-- Raging Construct Bands
-							-- #if AFTER 7.3.5
-							i(35676),	-- Constellation Leggings (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37654),	-- Sabaton of the Ages
-						},
-					}),
-					e(607, {	-- Sjonnir The Ironshaper
-						creatureID = 27978,	-- Sjonnir The Ironshaper
-						groups = {
-							ach(2155),	-- Abuse the Ooze
-							ach(5102, {	-- Heroic: Halls of Stone Guild Run
-								timeline = { ADDED_4_0_3 },
-							}),
-							i(41792, {	-- Design: Deft Monarch Topaz (RECIPE!)
-								timeline = { ADDED_3_0_3, REMOVED_4_0_3 },
-							}),
-							i(37667),	-- The Fleshshaper
-							-- #if AFTER 7.3.5
-							i(35679),	-- Static Cowl (7.3.5 - Used to be only Normal Mode)
-							i(35680),	-- Amulet of Wills (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37658),	-- Sun-Emblazoned Chestplate
-							i(37668),	-- Bands of the Stoneforge
-							i(37670),	-- Sjonnir's Girdle
-							-- #if AFTER 7.3.5
-							i(35678),	-- Ironshaper's Legplates (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37669),	-- Leggings of the Stone Halls
-							i(37666),	-- Boots of the Whirling Mist
-							i(37660),	-- Forge Ember
-							i(37657),	-- Spark of Life
-							-- #if BEFORE 4.0.1
-							i(43699),	-- The Curse of Flesh Disc
-							-- #endif
-						},
-					}),
-				},
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
+				n(ZONE_DROPS, {
+					i(37673),	-- Dark Runic Mantle
+					i(37672),	-- Patina-Coated Breastplate
+					i(37671),	-- Refined Ore Gloves
+				}),
+				CommonBossDrops({
+					currency(101, { timeline = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
+				}),
+				BossOnly(KRYSTALLUS, {
+					i(37650),	-- Shardling Legguards
+					i(37652),	-- Spaulders of Krystallus
+					i(37651),	-- The Prospector's Prize
+				}),
+				BossOnly(MAIDEN_OF_GRIEF, {
+					ach(1866),	-- Good Grief
+					i(38618),	-- Hammer of Grief
+					i(38615),	-- Lightning-Charged Gloves
+					i(38616),	-- Maiden's Girdle
+					i(38617),	-- Woeful Band
+				}),
+				BossOnly(TRIBUNAL_OF_AGES, {
+					ach(2154),	-- Brann Spankin' New
+					i(37655),	-- Mantle of the Tribunal
+					i(37656),	-- Raging Construct Bands
+					i(37654),	-- Sabaton of the Ages
+					i(37653),	-- Sword of Justice
+				}),
+				BossOnly(SJONNIR, {
+					i(43699, { timeline = { REMOVED_4_0_1 } }),	-- The Curse of Flesh Disc (QI!)
+					--
+					ach(2155),	-- Abuse the Ooze
+					ach(5102, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Halls of Stone Guild Run
+					i(37668),	-- Bands of the Stoneforge
+					i(37666),	-- Boots of the Whirling Mist
+					i(41792, { timeline = { ADDED_3_0_3, REMOVED_4_0_3 } }),	-- Design: Deft Monarch Topaz (RECIPE!)
+					i(37660),	-- Forge Ember
+					i(37669),	-- Leggings of the Stone Halls
+					i(37670),	-- Sjonnir's Girdle
+					i(37657),	-- Spark of Life
+					i(37658),	-- Sun-Emblazoned Chestplate
+					i(37667),	-- The Fleshshaper
+				}),
 			}),
+			-- #endif
 			-- #if ANYCLASSIC
 			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
 				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394441, 413078, 424205),
 				lvl = lvlsquish(80, 80, 30),
 				groups = {
-					e(604, {	-- Krystallus
-						creatureID = 27977,	-- Krystallus
-						groups = {
-							i(39195),	-- Bracers of Lost Sentiments
-							i(39199),	-- Watchful Eye
-							i(39198),	-- Frostblight Pauldrons
-						},
+					BossOnly(KRYSTALLUS, {
+						i(39195),	-- Bracers of Lost Sentiments
+						i(39198),	-- Frostblight Pauldrons
+						i(39199),	-- Watchful Eye
 					}),
-					e(605, {	-- Maiden of Grief
-						creatureID = 27975,	-- Maiden of Grief
-						groups = {
-							i(39215),	-- Boots of the Follower
-							i(39216),	-- Sash of Mortal Desire
-							i(39196),	-- Boots of the Worshiper
-						},
+					BossOnly(MAIDEN_OF_GRIEF, {
+						i(39215),	-- Boots of the Follower
+						i(39196),	-- Boots of the Worshiper
+						i(39216),	-- Sash of Mortal Desire
 					}),
-					e(606, {	-- Tribunal of Ages
-						creatureID = 28234,	-- Tribunal of Ages
-						groups = {
-							i(39197),	-- Gauntlets of the Master
-							i(39200),	-- Grieving Spellblade
-							i(39193),	-- Band of Neglected Pleas
-						},
+					BossOnly(TRIBUNAL_OF_AGES, {
+						i(39193),	-- Band of Neglected Pleas
+						i(39197),	-- Gauntlets of the Master
+						i(39200),	-- Grieving Spellblade
 					}),
-					e(607, {	-- Sjonnir The Ironshaper
-						creatureID = 27978,	-- Sjonnir The Ironshaper
-						groups = {
-							i(43993),	-- Greatring of Collision
-							i(40489),	-- Greatstaff of the Nexus
-							i(44659),	-- Pendant of the Dragonsworn
-						},
+					BossOnly(SJONNIR, {
+						i(43993),	-- Greatring of Collision
+						i(40489),	-- Greatstaff of the Nexus
+						i(44659),	-- Pendant of the Dragonsworn
 					}),
 				},
 			})),
@@ -347,34 +333,22 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(413078, 424205),
 				lvl = lvlsquish(80, 80, 30),
 				groups = {
-					e(604, {	-- Krystallus
-						creatureID = 27977,	-- Krystallus
-						groups = {
-							i(45927),	-- Handwraps of Resonance
-							i(45892),	-- Legacy of Thunder
-						},
+					BossOnly(KRYSTALLUS, {
+						i(45927),	-- Handwraps of Resonance
+						i(45892),	-- Legacy of Thunder
 					}),
-					e(605, {	-- Maiden of Grief
-						creatureID = 27975,	-- Maiden of Grief
-						groups = {
-							i(45895),	-- Belt of the Blood Pit
-							i(45302),	-- Treads of the Invader
-						},
+					BossOnly(MAIDEN_OF_GRIEF, {
+						i(45895),	-- Belt of the Blood Pit
+						i(45302),	-- Treads of the Invader
 					}),
-					e(606, {	-- Tribunal of Ages
-						creatureID = 28234,	-- Tribunal of Ages
-						groups = {
-							i(46340),	-- Adamant Handguards
-							i(45894),	-- Leggings of Unstable Discharge
-						},
+					BossOnly(TRIBUNAL_OF_AGES, {
+						i(46340),	-- Adamant Handguards
+						i(45894),	-- Leggings of Unstable Discharge
 					}),
-					e(607, {	-- Sjonnir The Ironshaper
-						creatureID = 27978,	-- Sjonnir The Ironshaper
-						groups = {
-							i(46345),	-- Bracers of Righteous Reformation
-							i(46351),	-- Bloodcrush Cudgel
-							i(46346),	-- Boots of Unsettled Prey
-						},
+					BossOnly(SJONNIR, {
+						i(46351),	-- Bloodcrush Cudgel
+						i(46346),	-- Boots of Unsettled Prey
+						i(46345),	-- Bracers of Righteous Reformation
 					}),
 				},
 			})),
@@ -382,36 +356,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424205),
 				lvl = lvlsquish(80, 80, 30),
 				groups = {
-					e(604, {	-- Krystallus
-						creatureID = 27977,	-- Krystallus
-						groups = {
-
-						},
-					}),
-					e(605, {	-- Maiden of Grief
-						creatureID = 27975,	-- Maiden of Grief
-						groups = {
-
-						},
-					}),
-					e(606, {	-- Tribunal of Ages
-						creatureID = 28234,	-- Tribunal of Ages
-						groups = {
-
-						},
-					}),
-					e(607, {	-- Sjonnir The Ironshaper
-						creatureID = 27978,	-- Sjonnir The Ironshaper
-						groups = {
-
-						},
-					}),
+					BossOnly(KRYSTALLUS),
+					BossOnly(MAIDEN_OF_GRIEF),
+					BossOnly(TRIBUNAL_OF_AGES),
+					BossOnly(SJONNIR),
 				},
 			})),
 			-- #endif
 		},
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(277, {
