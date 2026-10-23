@@ -4734,8 +4734,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_1_5 } }, {
-	applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
+	applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, sharedData({ timeline = { ADDED_10_1_5 } }, {
 		q(77221),	-- Obtain The Scarlet Key (ID 208485)
 		q(78474),	-- Killing Headless Horseman (needs more details)
 		q(78478),	-- Killing Headless Horseman (needs more details)
@@ -4744,5 +4744,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ timeline = 
 		q(97219, { timeline = { ADDED_12_1_5 }, isDaily = true }),	-- Candy Crafting
 		q(98421, { timeline = { ADDED_12_1_5 }, isDaily = true }),	-- Candy Crafting
 		q(98422, { timeline = { ADDED_12_1_5 }, isDaily = true }),	-- Candy Crafting
-	})),
-})));
+	}))),
+}));

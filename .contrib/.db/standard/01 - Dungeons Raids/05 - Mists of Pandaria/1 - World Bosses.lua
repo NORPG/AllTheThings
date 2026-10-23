@@ -1459,23 +1459,29 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, {
 				q(32922),	-- Short-Supply Reward - Oondasta bonus roll
 			}),
 		})),
-		m(ISLE_OF_THUNDER, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {
-			n(WORLD_BOSSES, {
-				q(32919),	-- Short-Supply Reward - Nalak bonus roll
-				q(33109),	-- Short-Supply Reward - Nalak secondary killID
-			}),
-		})),
+		m(ISLE_OF_THUNDER, {
+			timeline = { ADDED_5_2_0 },
+			groups = {
+				n(WORLD_BOSSES, {
+					q(32919),	-- Short-Supply Reward - Nalak bonus roll
+					q(33109),	-- Short-Supply Reward - Nalak secondary killID
+				}),
+			},
+		}),
 		m(KUN_LAI_SUMMIT, {
 			n(WORLD_BOSSES, {
 				q(32924),	-- Short-Supply Reward - Sha of Anger bonus roll
 			}),
 		}),
-		m(TIMELESS_ISLE, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {
-			n(WORLD_BOSSES, {
-				q(33226),	-- Short-Supply Reward - Celestials bonus roll
-				q(33225),	-- Short-Supply Reward - Ordos bonus roll
-			}),
-		})),
+		m(TIMELESS_ISLE, {
+			timeline = { ADDED_5_4_0 },
+			groups = {
+				n(WORLD_BOSSES, {
+					q(33226),	-- Short-Supply Reward - Celestials bonus roll
+					q(33225),	-- Short-Supply Reward - Ordos bonus roll
+				}),
+			},
+		}),
 		m(VALLEY_OF_THE_FOUR_WINDS, {
 			n(WORLD_BOSSES, {
 				q(32923),	-- Short-Supply Reward - Galleon bonus roll

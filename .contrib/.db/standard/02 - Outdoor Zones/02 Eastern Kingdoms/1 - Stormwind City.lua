@@ -7338,7 +7338,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 });
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+	expansion(EXPANSION.LEGION, {
 		m(EASTERN_KINGDOMS, {
 			m(STORMWIND_CITY, {
 				n(QUESTS, {
@@ -7347,8 +7347,8 @@ root(ROOTS.HiddenQuestTriggers, {
 				}),
 			}),
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		m(EASTERN_KINGDOMS, {
 			m(STORMWIND_CITY, {
 				n(QUESTS, {
@@ -7357,5 +7357,5 @@ root(ROOTS.HiddenQuestTriggers, {
 				}),
 			}),
 		}),
-	})),
+	}),
 });

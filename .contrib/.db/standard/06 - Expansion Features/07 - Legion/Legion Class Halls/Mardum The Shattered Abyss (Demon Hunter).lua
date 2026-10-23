@@ -1158,7 +1158,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
 		cl(DEMONHUNTER, bubbleDownSelf({ classes = { DEMONHUNTER } }, {
 			q(43467),	-- Boarding the Fel Hammer - triggers when entering Mardum for the first time
@@ -1182,4 +1182,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			q(49238),	-- Triggers immediately after completing the "Things Gaardoun Needs" mission
 		})),
 	}),
-})));
+}));

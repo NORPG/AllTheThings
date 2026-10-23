@@ -154,10 +154,10 @@ maproot(DRAGON_ISLES, AMIRDRASSIL, {
 });
 
 -- #if AFTER 10.2.6
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_5, REMOVED_10_2_6 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(AMIRDRASSIL, {
-			n(TREASURES, {
+			n(TREASURES, sharedData({ timeline = { ADDED_10_2_5, REMOVED_10_2_6 } }, {
 				-- Old questIDs of treasures
 				q(79494),	-- Kaldorei Backpack
 				q(79472),	-- Kaldorei Bag
@@ -170,8 +170,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 				q(79499),	-- Kaldorei Shield
 				q(79490),	-- Kaldorei Spear
 				q(79500),	-- Kaldorei Spyglass
-			}),
+			})),
 		}),
 	}),
-})));
+}));
 -- #endif

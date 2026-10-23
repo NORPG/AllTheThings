@@ -1266,11 +1266,11 @@ root(ROOTS.HiddenQuestTriggers, {
 			})),
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {
+	expansion(EXPANSION.TWW, {
 		n(NEW_CHARACTER, {
-			n(QUESTS, {
+			n(QUESTS, sharedData({ timeline = { ADDED_11_0_5 } }, {
 				q(85023),	-- When accepting 'Forward, to Adventure!' (questID 84424)
-			}),
+			})),
 		}),
-	})),
+	}),
 });

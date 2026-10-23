@@ -338,10 +338,10 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(THE_AZURE_SPAN, {
-			header(HEADERS.Faction, FACTION_WINTERPELT_FURBOLG, {
+			header(HEADERS.Faction, FACTION_WINTERPELT_FURBOLG, sharedData({ timeline = { ADDED_10_0_7 } }, {
 				q(73048),	-- Tell Little Toz 'Make sure to marry Fuzzy Feet immediately' during 'Ancestral Advice' (questID 72941)
 				q(73049),	-- Tell Little Toz 'Make sure to marry Bring Fur immediately' during 'Ancestral Advice' (questID 72941)
 				q(73050),	-- Tell Little Toz 'Make sure to murder Fuzzy Feet immediately' during 'Ancestral Advice' (questID 72941)
@@ -351,7 +351,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 				q(73186),	-- Tell Kranac Sagesnow 'The Winterpelt must obtain a new home' during 'Our Path Ahead' (questID 72945)
 				q(73187),	-- Tell Kranac Sagesnow 'The Winterpelt must obtain allies' during 'Our Path Ahead' (questID 72945)
 				q(73547),	-- Let Saza say goodbye to you after summoning the Ancients. Try not to cry like a little girl.
-			}),
+			})),
 		}),
 	}),
-})));
+}));

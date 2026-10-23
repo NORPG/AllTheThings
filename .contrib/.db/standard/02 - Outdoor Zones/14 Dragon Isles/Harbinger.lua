@@ -106,9 +106,9 @@ maproot(DRAGON_ISLES, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
-		header(HEADERS.Quest, 79009, {	-- The Harbinger
+		header(HEADERS.Quest, 79009, sharedData({ timeline = { ADDED_10_2_7 } }, {	-- The Harbinger
 			q(80199),	-- Bow of the Ranger Captain
 			q(80450),	-- Arsenal: Voidtouched Weaponry
 			q(80198),	-- Triggered with completion of Quest 79016
@@ -120,6 +120,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 				provider = { "n", 126773 },	-- Locus-Walker
 				coord = { 29.7, 27.1, TELOGRUS_RIFT },
 			}),
-		}),
+		})),
 	}),
-})));
+}));

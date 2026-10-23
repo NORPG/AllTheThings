@@ -1561,11 +1561,11 @@ root(ROOTS.HiddenQuestTriggers, {
 			}),
 		}),
 	}),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {
+	expansion(EXPANSION.BFA, {
 		n(PROFESSIONS, {
-			prof(TAILORING, {
+			prof(TAILORING, sharedData({ timeline = { ADDED_8_1_5 } }, {
 				q(55239),	-- During quest objective of Seam Stress (55214)
-			}),
+			})),
 		}),
-	})),
+	}),
 });

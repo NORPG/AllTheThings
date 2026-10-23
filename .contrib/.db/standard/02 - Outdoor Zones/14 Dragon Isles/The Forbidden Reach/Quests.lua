@@ -434,16 +434,16 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(THE_FORBIDDEN_REACH, {
-			n(QUESTS, {
+			n(QUESTS, sharedData({ timeline = { ADDED_10_0_7 } }, {
 				q(74767),	-- Valdrakken Accord Envoy Tasks Unlock (spellID 402876)
 				q(74766),	-- Maruuk Centaur Envoy Tasks Unlock (spellID 402875)
 				q(74765),	-- Iskaara Tuskarr Envoy Tasks Unlock (spellID 402874)
 				q(74764),	-- Dragonscale Expedition Envoy Tasks Unlock (spellID 402873)
 				q(75240),	-- Unlocking Researcher Imareth as a vendor (spellID 406060)
-			}),
+			})),
 		}),
 	}),
-})));
+}));

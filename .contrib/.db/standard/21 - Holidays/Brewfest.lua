@@ -3868,26 +3868,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+	expansion(EXPANSION.DF, {
 		applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			-- This is replaced with 91894 since 11.2.0
 			-- #IF AFTER 11.2.0
-			q(77775, {name="Has rolled for Coren Special Loot (Daily Accountwide)(DF Version)", isDaily=true}),
+			q(77775, {name="Has rolled for Coren Special Loot (Daily Accountwide)(DF Version)", isDaily=true, timeline = { ADDED_10_1_7 }}),
 			-- #endif
 		})),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_2_0 } }, {
-		applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
+	}),
+	expansion(EXPANSION.TWW, {
+		applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, sharedData({ timeline = { ADDED_11_2_0 } }, {
 			q(90118),	-- Triggers when you kill Keggor the Fermented during Brewfest Banquet, 1st kill of the day
 			q(91959),	-- (Sometimes) Triggers along with 90118 when you kill Keggor the Fermented during Brewfest Banquet, 1st kill of the day
 			q(91960),	-- Triggers when you kill Keggor the Fermented during Brewfest Banquet, 2nd kill of the day
-		})),
-	})),
-	expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {
-		applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
+		}))),
+	}),
+	expansion(EXPANSION.MID, {
+		applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, sharedData({ timeline = { ADDED_12_1_0 } }, {
 			q(94053),	-- Killed Coren Direbrew (Not Accountwide)
 			q(94054, {isDaily=true}),	-- Killed Coren Direbrew (Accountwide) (without Brewfest Bomber)
-		})),
-	})),
+		}))),
+	}),
 });
 -- #endif

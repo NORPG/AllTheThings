@@ -171,7 +171,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ requireSkill = COOKING },
 			timeline = { ADDED_3_0_2 },
 		})),
 	}),
-	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
+	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, {
 		ach(125),	-- Grand Master Cook / Northrend Cook [8.0.1+]
 		ach(1781, {	-- Critter Gitter
 			cost = {{"i", 43004, 10}},	-- 10x Critter Bites
@@ -191,7 +191,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ requireSkill = COOKING },
 		achpart(1777, 1779),	-- The Northrend Gourmet (15)
 		achpart(1778, 1779),	-- The Northrend Gourmet (30)
 		ach(1779),	-- The Northrend Gourmet (45)
-	}))),
+	})),
 	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
 		ach(4916),	-- Illustrious Grand Master Cook / Cataclysmic Cook [8.0.1+]
 		ach(5845, {	-- A Bunch of Lunch (A)

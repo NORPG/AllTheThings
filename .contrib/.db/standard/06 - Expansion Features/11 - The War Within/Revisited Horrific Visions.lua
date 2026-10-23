@@ -1020,8 +1020,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_1_5 } }, {
-	n(HORRIFIC_VISIONS_REVISITED, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
+	n(HORRIFIC_VISIONS_REVISITED, sharedData({ timeline = { ADDED_11_1_5 } }, {
 		-- Chest unlocks are shared between Orgrimmar and Stormwind, beside main one?
 		q(87430),	-- The Drag / Dwarven District
 		q(87431),	-- Valley of Spirits / Trade District
@@ -1066,5 +1066,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ timeli
 		q(88913),	-- Popped in Orgrimmar
 		q(88914),	-- Popped in Stormwind
 		q(88915),	-- First 8 Mask Vision of Stormwind?
-	}),
-})));
+	})),
+}));

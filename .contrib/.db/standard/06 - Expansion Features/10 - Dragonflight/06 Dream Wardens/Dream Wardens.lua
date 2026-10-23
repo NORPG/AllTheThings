@@ -509,7 +509,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		header(HEADERS.Faction, FACTION_DREAM_WARDENS, {
 			n(DREAM_INFUSION, {
@@ -531,7 +531,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 				-- q(78882),	-- summon Elmer (i: 210690) (spellID 426540)
 				-- q(78883),	-- summon Snoots (i: 210689) (spellID 426539)
 			}),
-			n(QUESTS, {
+			n(QUESTS, sharedData({ timeline = { ADDED_10_2_0 } }, {
 				q(78286),	-- Pop after turn in questID 78444 (first time)
 				q(78625),	-- Pop after turn in questID 78444 (first time)
 				--
@@ -540,7 +540,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 				q(76574),	-- Pop right after renown 8 was reached (Blooming Proficiency II) (spellIDs 427685 & 425375)
 				q(76575),	-- Pop right after renown 12 was reached (Blooming Proficiency III) (spellIDs 427685 & 425375)
 				q(78710),	-- Pop right after renown 12 was reached (Blooming Expertise) (?)
-			}),
+			})),
 		}),
 	}),
-})));
+}));

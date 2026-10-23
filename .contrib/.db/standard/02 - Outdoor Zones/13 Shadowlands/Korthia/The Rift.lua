@@ -113,12 +113,12 @@ maproot(SHADOWLANDS, KORTHIA, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
-			header(HEADERS.Spell, 354778, {	-- The Rift
+			header(HEADERS.Spell, 354778, sharedData({ timeline = { ADDED_9_1_0 } }, {	-- The Rift
 				q(64704),	-- triggered when looting 48-research item Half-Completed Runeforge Pattern from Observer Yorik
-			}),
+			})),
 		}),
 	}),
-})));
+}));

@@ -5672,7 +5672,7 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ timeline = { ADDED_4_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, {
 	m(EASTERN_KINGDOMS, {
 		m(EASTERN_PLAGUELANDS, {
 			q(27552),	-- Triggers on changing buffs at Fiona's Caravan
@@ -5681,4 +5681,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ timel
 			q(27563),	-- [FLAG] Beezil's Flag
 		}),
 	}),
-})));
+}));

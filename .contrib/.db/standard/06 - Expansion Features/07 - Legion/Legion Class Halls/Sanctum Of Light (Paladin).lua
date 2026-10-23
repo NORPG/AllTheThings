@@ -1070,7 +1070,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
 		cl(PALADIN, bubbleDownSelf({ classes = { PALADIN } }, {
 			q(43578),	-- Looted Paladin Daily Mount
@@ -1093,4 +1093,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			q(38229),	-- Triggered after recruiting Lord Maxwell Tyrosus for paladin order hall
 		})),
 	}),
-})));
+}));

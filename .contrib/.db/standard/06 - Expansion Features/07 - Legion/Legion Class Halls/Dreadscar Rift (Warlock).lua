@@ -1055,7 +1055,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
 		cl(WARLOCK, bubbleDownSelf({ classes = { WARLOCK } }, {
 			q(41154),	-- Attacking Revil Kost During Artifact Quest
@@ -1080,4 +1080,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			q(44442),	-- Tracking Quest: New Blood 5 - completed the "One Who's Worthy" mission
 		})),
 	}),
-})));
+}));

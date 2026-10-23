@@ -22,7 +22,7 @@ ABUNDANCE = createHeader({
 
 local UNALLOYED_ABUNDANCE = 3377;
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	n(ABUNDANCE, {
 		maps = {
 			2580,	-- Loaknit Den
@@ -276,7 +276,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ timeline
 			}),
 		},
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(ABUNDANCE, {

@@ -2,8 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3 } }, {
-	n(CHALLENGE_MODE, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, {
+	n(CHALLENGE_MODE, sharedData({ timeline = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3 } }, {
 		ach(8895, {	-- Challenge Warlord
 			-- Meta Achievement
 			sym = {{"meta_achievement",
@@ -153,5 +153,5 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6
 			title_male(296),	-- <Name>, Lord of Blackrock
 			title_female(297),	-- <Name>, Lady of Blackrock
 		})),
-	}),
-})));
+	})),
+}));

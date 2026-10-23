@@ -959,10 +959,10 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(ZARALEK_CAVERN, {
-			n(QUESTS, {
+			n(QUESTS, sharedData({ timeline = { ADDED_10_1_0 } }, {
 				-- Various
 				q(76118),	-- Accept Untranslated Obsidian Tome from Wrathion (spellID 411772)
 				q(76363),	-- Break out of the crystal prison in the Deepflayer Nest during 'It Was Not Enough' (questID 72873) (spellID 411853)
@@ -1002,7 +1002,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 
 				-- Brullo the Strong Pet?
 				q(75556),	-- Triggered after looting Brul i(205114) from the chest after beating Brullo the Strong
-			}),
+			})),
 		}),
 	}),
-})));
+}));

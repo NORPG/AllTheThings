@@ -2083,10 +2083,10 @@ maproot(DRAENOR, TANAAN_JUNGLE, {
 });
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_2_0 } }, {
+	expansion(EXPANSION.WOD, {
 		m(DRAENOR, {
 			m(TANAAN_JUNGLE, {
-				n(QUESTS, {
+				n(QUESTS, sharedData({ timeline = { ADDED_6_2_0 } }, {
 					q(38836),	-- Aktar's Post - Aktar's Post visited
 					q(39306),	-- Call to Arms - chosen during "Bring the Reinforcements"
 					-- q(39183),	-- FLAG - Immaculate Critical Strike Taladite - learning Immaculate Critical Strike Taladite at an Apexis Gemcutter
@@ -2121,11 +2121,11 @@ root(ROOTS.HiddenQuestTriggers, {
 					q(38236),	-- Tracking Event: Note Found - triggers during quest "Get a Clue" (questID 38213), clue #1
 					q(38231),	-- Tracking Event: Shrine Found - triggers during quest "Get a Clue" (questID 38213), clue #2
 					-- q(39564),	-- Vignette: Murktide Alpha - learning Saberstalker's Teachings: Trailblazer (automated)
-				}),
+				})),
 			}),
 		}),
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+	}),
+	expansion(EXPANSION.LEGION, {
 		m(DRAENOR, {
 			m(TANAAN_JUNGLE, {
 				n(QUESTS, {
@@ -2133,5 +2133,5 @@ root(ROOTS.HiddenQuestTriggers, {
 				}),
 			}),
 		}),
-	})),
+	}),
 });

@@ -1966,11 +1966,11 @@ root(ROOTS.ExpansionFeatures,
 	})
 );
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	n(WAR_EFFORT, {
-		n(WARFRONT_BATTLE_FOR_DARKSHORE, {
+		n(WARFRONT_BATTLE_FOR_DARKSHORE, sharedData({ timeline = { ADDED_8_1_0 } }, {
 			q(53801),	-- The Battle for Darkshore (Heroic, Horde)
 			q(53800),	-- Battle for Darkshore — triggered after defeating Sira Moonwarden in Darkshore warfront
-		}),
+		})),
 	}),
-})));
+}));

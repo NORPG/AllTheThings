@@ -311,10 +311,10 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 		}),
 	},
 });
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(EMERALD_DREAM, {
-			n(EMERALD_BOUNTY, {
+			n(EMERALD_BOUNTY, sharedData({ timeline = { ADDED_10_2_0 } }, {
 				-- I hate it >_<
 				-- ...78975 is currently pop when looting cache in addition to loot hqt
 				q(78975),	-- any plant cache that was looted after blooming (purple seed), daily/weekly?
@@ -523,7 +523,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 				q(77217),	-- bloom spot (80/100)
 				q(77218),	-- bloom spot (100/100) (spellID 418259)
 				q(77210),	-- loot cache
-			}),
+			})),
 		}),
 	}),
-})));
+}));

@@ -174,10 +174,10 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(EMERALD_DREAM, {
-			header(HEADERS.Quest, 78203, {	-- Superbloom
+			header(HEADERS.Quest, 78203, sharedData({ timeline = { ADDED_10_2_0 } }, {	-- Superbloom
 				q(78203),	-- Superbloom
 				--
 				q(78553),	-- pop if you loot any seed from Veriann Timbercrush (daily/weekly?)
@@ -211,7 +211,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 				-- q(78496),	-- Star Shower (spellID 417790)
 				-- q(78497),	-- The Superb Loom (spellID 425196)
 				-- q(78493),	-- Wake Up! (spellID 415174)
-			}),
+			})),
 		}),
 	}),
-})));
+}));

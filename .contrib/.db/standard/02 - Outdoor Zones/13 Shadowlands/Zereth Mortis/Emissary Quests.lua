@@ -36,13 +36,13 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
 		m(ZERETH_MORTIS, {
-			n(EMISSARY_QUESTS, {
+			n(EMISSARY_QUESTS, sharedData({ timeline = { ADDED_9_2_0 } }, {
 				q(64869),	-- "Paragon of Automa" ( Probably something left by blizzard when removed the Automa Rep and Cache /Braghe)
 				q(64870),	-- Paragon of Enlightened Brokers
-			}),
+			})),
 		}),
 	}),
-})));
+}));

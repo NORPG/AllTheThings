@@ -456,7 +456,7 @@ maproot(ZANDALAR, ZULDAZAR, {
 	},
 });
 
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
+-- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 -- 	m(ZANDALAR, {
 -- 		m(ZULDAZAR, {
 -- 			n(WORLD_QUESTS, {
@@ -465,4 +465,4 @@ maproot(ZANDALAR, ZULDAZAR, {
 -- 			}),
 -- 		}),
 -- 	}),
--- })));
+-- }));

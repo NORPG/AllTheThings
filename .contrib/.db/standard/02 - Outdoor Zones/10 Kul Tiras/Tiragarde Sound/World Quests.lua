@@ -496,7 +496,7 @@ maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(KUL_TIRAS, {
 		m(TIRAGARDE_SOUND, {
 			n(WORLD_QUESTS, {
@@ -505,4 +505,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeli
 			}),
 		}),
 	}),
-})));
+}));

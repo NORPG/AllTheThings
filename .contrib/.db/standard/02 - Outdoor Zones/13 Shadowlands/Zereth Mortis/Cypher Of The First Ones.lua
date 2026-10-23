@@ -686,10 +686,10 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
 		m(ZERETH_MORTIS, {
-			header(HEADERS.Achievement, 15402, {	-- Cypher of the First Ones
+			header(HEADERS.Achievement, 15402, sharedData({ timeline = { ADDED_9_2_0 } }, {	-- Cypher of the First Ones
 				q(65027),	-- eligible for Firim's Spare Forge-tap
 				q(65028),	-- eligible for Unstable Containment Trap
 				-- q(65017, {repeatable=true}),	-- Looting 187891,	-- Empyrean Essence
@@ -714,7 +714,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timelin
 				q(66067),	-- Pepe
 				q(66068),	-- Princess Hat
 				q(66069),	-- No Costume
-			}),
+			})),
 		}),
 	}),
-})));
+}));

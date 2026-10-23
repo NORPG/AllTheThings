@@ -1345,9 +1345,9 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
-		m(ZERETH_MORTIS, {
+		m(ZERETH_MORTIS, sharedData({ timeline = { ADDED_9_2_0 } }, {
 			-- Misc
 			q(65531),	-- Starts pocopoc fashion (spellID 366694 & 366695 & 366696 & 366697 & 366698 & 366699 & 366700 & 366718 & 366735 & 366883)
 			q(65724),	-- Daily Bufonid Quest Trigger
@@ -1425,6 +1425,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timelin
 				52.4, 61.6 (184939)
 				53.6, 43.8 (184945)
 			--]]
-		}),
+		})),
 	}),
-})));
+}));

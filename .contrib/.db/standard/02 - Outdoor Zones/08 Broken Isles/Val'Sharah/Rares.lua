@@ -158,7 +158,7 @@ maproot(BROKEN_ISLES, VALSHARAH, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
 			n(RARES, {
@@ -167,4 +167,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			}),
 		}),
 	}),
-})));
+}));

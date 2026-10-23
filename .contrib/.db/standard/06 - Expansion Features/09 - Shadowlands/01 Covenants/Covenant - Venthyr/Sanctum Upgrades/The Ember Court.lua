@@ -137,7 +137,7 @@ local SILVERTIP_DREDWING = i(181316, {	-- Silvertip Dredwing (MOUNT!)
 	cost = { { "c", ANIMA, 5000 } },
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_0_2 }, customCollect = "SL_COV_VEN" }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(SANCTUM_UPGRADES, {
 			icon = 3641397,

@@ -362,9 +362,9 @@ root(ROOTS.ExpansionFeatures,
 	})
 );
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	n(GARRISONS, {
-		n(BUILDINGS, {	-- Buildings
+		n(BUILDINGS, sharedData({ timeline = { ADDED_6_2_0 } }, {	-- Buildings
 			garrisonBuilding(207, {	-- Shipyard
 				q(39413),	-- Tracking Quest - Garrison/Shipyard Mission Table
 				q(39415),	-- Tracking Quest - Garrison/Shipyard Mission Table
@@ -381,6 +381,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeli
 				q(39749),	-- Tracking Quest - related to (rare?) mission table in the Garrison
 				q(39412),	-- Tracking Quest - something having to do with Naval Missions most likely (triggered with 39414)
 			}),
-		}),
+		})),
 	}),
-})));
+}));

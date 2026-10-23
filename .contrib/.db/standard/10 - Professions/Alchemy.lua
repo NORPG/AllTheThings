@@ -249,19 +249,21 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 			},
 		}),
 	}),
-	expansion(EXPANSION.WRATH, bubbleDownSelf({ timeline = { ADDED_3_2_0 } }, {
+	expansion(EXPANSION.WRATH, {
 		applyclassicphase(WRATH_PHASE_THREE, q(14151, {	-- Cardinal Ruby
 			qg = 28703,	-- Linzy Blackbolt <Alchemy Trainer>
 			coord = { 42.4, 32.0, NORTHREND_DALARAN },
+			timeline = { ADDED_3_2_0 },
 			repeatable = true,
 			groups = {
 				r(66659),	-- Transmute: Cardinal Ruby (RECIPE!)
 			},
 		})),
-	})),
-	expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_0_4, REMOVED_5_2_0 } }, {
+	}),
+	expansion(EXPANSION.MOP, {
 		q(30597, {	-- Strange Spherical Stone
 			provider = { "i", 80240 },	-- Strange Spherical Stone
+			timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
 			maps = { PANDARIA },
 			cost = {{ "i", 72238, 3 }},	-- 3x Golden Lotus
 			groups = {
@@ -269,7 +271,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 				i(75274),	-- Zen Alchemist Stone
 			},
 		}),
-	})),
+	}),
 	expansion(EXPANSION.LEGION, {
 		q(39325, {	-- Get Your Mix On
 			provider = { "n", 92458 },	-- Deucus Valdera
@@ -1369,7 +1371,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 })));
 
 root(ROOTS.HiddenQuestTriggers, prof(ALCHEMY, {
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+	expansion(EXPANSION.LEGION, {
 		q(42083),	-- on turn-in of (42081)
-	}))
+	})
 }));

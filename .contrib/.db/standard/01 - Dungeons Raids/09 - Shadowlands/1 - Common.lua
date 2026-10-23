@@ -2,26 +2,26 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.SL, {
 	n(COMMON_BOSS_DROPS, {
-		d(DIFFICULTY.RAID.HEROIC, {
+		d(DIFFICULTY.RAID.HEROIC, sharedData({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {
 			i(191910, {	-- Confounding Antique Cypher
 				description = "Drops from Fated Heroic Shadowlands Raid bosses.",
 			}),
 			i(191911, {	-- Cosmic Creation Impetus
 				cost = { { "i", 191910, 20 } },	-- 20x Confounding Antique Cypher
 			}),
-		}),
-		d(DIFFICULTY.RAID.MYTHIC, {
+		})),
+		d(DIFFICULTY.RAID.MYTHIC, sharedData({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {
 			i(191926, {	-- Confounding Ancient Cypher
 				description = "Drops from Fated Mythic Shadowlands Raid bosses.",
 			}),
 			i(191927, {	-- Sacred Creation Impetus
 				cost = { { "i", 191926, 20 } },	-- 20x Confounding Ancient Cypher
 			}),
-		}),
+		})),
 	}),
-	n(QUESTS, {
+	n(QUESTS, sharedData({ timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {
 		q(66648, {	-- Crossing Fate
 			description = "Auto-accepted by entering any 'Fated' Shadowlands Raid.",
 			maps = {
@@ -154,5 +154,5 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_
 			},
 			isWorldQuest = true,
 		}),
-	}),
-})));
+	})),
+}));

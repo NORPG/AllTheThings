@@ -285,14 +285,17 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 				q(52267),	-- Azurethos, The Winged Typhoon Bonus Roll
 			}),
 		}),
-	m(NAZJATAR, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {
-		n(WORLD_BOSSES, {
-			q(56058),	-- Ulmath, the Soulbinder Kill ID
-			q(56900),	-- Ulmath, the Soulbinder Bonus Roll
-			q(56055),	-- Wekemara Kill ID
-			q(56899),	-- Wekemara Bonus Roll
-		}),
-	})),
+	m(NAZJATAR, {
+		timeline = { ADDED_8_2_0 },
+		groups = {
+			n(WORLD_BOSSES, {
+				q(56058),	-- Ulmath, the Soulbinder Kill ID
+				q(56900),	-- Ulmath, the Soulbinder Bonus Roll
+				q(56055),	-- Wekemara Kill ID
+				q(56899),	-- Wekemara Bonus Roll
+			}),
+		},
+	}),
 	m(NZOTH_ASSAULT_ULDUM, bubbleDownSelf({ timeline = { ADDED_8_3_0 } }, {
 		n(WORLD_BOSSES, {
 			q(58510),	-- Vuk'laz the Earthbreaker first kill??

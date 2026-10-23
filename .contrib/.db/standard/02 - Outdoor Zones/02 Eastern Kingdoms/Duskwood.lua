@@ -2678,7 +2678,7 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 });
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.CATA, bubbleDownSelf({ timeline = { ADDED_4_0_3 } }, {
+	expansion(EXPANSION.CATA, {
 		m(EASTERN_KINGDOMS, {
 			m(DUSKWOOD, {
 				n(QUESTS, {
@@ -2686,9 +2686,9 @@ root(ROOTS.HiddenQuestTriggers, {
 				}),
 			}),
 		}),
-	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+	}),
+	expansion(EXPANSION.LEGION, {
 		q(40937),	-- Tracking: Revil Defeated
 		q(41153),	-- Revil Defeated
-	})),
+	}),
 });

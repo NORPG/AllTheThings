@@ -1448,7 +1448,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
 		cl(DRUID, bubbleDownSelf({ classes = { DRUID } }, {
 			q(42513),	-- Ashamane's Fall - landing and approaching RPing NPCs at the start of "The Shrine of Ashamane" (questID 42428)
@@ -1468,4 +1468,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			q(43357),	-- Tracking Quest: Graham Silverclaw - completed the "Gathering the Dreamweavers: Graham Silverclaw" mission
 		})),
 	}),
-})));
+}));

@@ -1290,7 +1290,7 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
 			n(FACTIONS, {
@@ -1310,4 +1310,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			}),
 		}),
 	}),
-})));
+}));

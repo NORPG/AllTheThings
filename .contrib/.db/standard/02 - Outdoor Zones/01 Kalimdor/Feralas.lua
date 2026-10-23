@@ -3241,10 +3241,10 @@ maproot(KALIMDOR, FERALAS, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(KALIMDOR, {
 		m(FERALAS, {
 			q(42078),	-- Ysondre's Seal - if you are druid and done the "Sealing the Dream" (questID 25398) you can reopen the Feralas portal
 		}),
 	}),
-})));
+}));

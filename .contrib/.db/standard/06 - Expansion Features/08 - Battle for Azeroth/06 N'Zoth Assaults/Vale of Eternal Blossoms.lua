@@ -1105,10 +1105,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(NZOTH_ASSAULT_ULDUM, {	-- Uldum (under assault)
 		n(NZOTH_ASSAULTS, {
-			n(TREASURES, {
+			n(TREASURES, sharedData({ timeline = { ADDED_8_3_0 } }, {
 				q(57201),	-- Vale of Eternal Blossoms - Black Empire Cache
 				q(57200),	-- Vale of Eternal Blossoms - Black Empire Cache
 				q(57203),	-- Vale of Eternal Blossoms - Black Empire Cache
@@ -1128,15 +1128,15 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeli
 				q(58227),	-- Vale of Eternal Blossoms - Ambered Cache
 				q(58228),	-- Vale of Eternal Blossoms - Ambered Cache
 				q(58770),	-- Vale of Eternal Blossoms - Ambered Coffer
-			}),
-			n(QUESTS, {
+			})),
+			n(QUESTS, sharedData({ timeline = { ADDED_8_3_0 } }, {
 				q(59141),	-- Vale of Eternal Blossoms - triggered after turning in the Black Empire assault. Probably a loot lock trigger?
-			}),
-			q(59024),	-- Triggers when talking to Zidormi in the lvl 120 rebuilt Vale to go to the past sha-destroyed version
-			q(56134),	-- Vale of Eternal Blossoms - activated a celestial buff 1st time (chi-ji?)
-			q(56135),	-- Vale of Eternal Blossoms - activated a celestial buff 2nd time (niuzao?)
-			q(56132),	-- Vale of Eternal Blossoms - activated a celetial buff 3rd time (yu'lon?)
-			q(56133),	-- Vale of Eternal Blossoms - activated a celestial buff 4th time (xuen?)
+			})),
+			q(59024, { timeline = { ADDED_8_3_0 } }),	-- Triggers when talking to Zidormi in the lvl 120 rebuilt Vale to go to the past sha-destroyed version
+			q(56134, { timeline = { ADDED_8_3_0 } }),	-- Vale of Eternal Blossoms - activated a celestial buff 1st time (chi-ji?)
+			q(56135, { timeline = { ADDED_8_3_0 } }),	-- Vale of Eternal Blossoms - activated a celestial buff 2nd time (niuzao?)
+			q(56132, { timeline = { ADDED_8_3_0 } }),	-- Vale of Eternal Blossoms - activated a celetial buff 3rd time (yu'lon?)
+			q(56133, { timeline = { ADDED_8_3_0 } }),	-- Vale of Eternal Blossoms - activated a celestial buff 4th time (xuen?)
 		}),
 	}),
-})));
+}));

@@ -418,10 +418,10 @@ maproot(SHADOWLANDS, KORTHIA, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
-			n(TREASURES, {
+			n(TREASURES, sharedData({ timeline = { ADDED_9_1_0 } }, {
 				q(64316),	-- 1st loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
 				q(64317),	-- 2nd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
 				q(64318),	-- 3rd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
@@ -438,7 +438,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timelin
 				q(64790, name(HEADERS.Object, 369292)),	-- Relic Cache repeatable quest (59.8, 36.0; 61.4, 38.1)
 				q(64791, name(HEADERS.Object, 369292)),	-- Relic Cache repeatable quest
 				q(64792, name(HEADERS.Object, 369292)),	-- Relic Cache repeatable quest
-			}),
+			})),
 		}),
 	}),
-})));
+}));

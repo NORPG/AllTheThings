@@ -3,10 +3,7 @@
 ---------------------------------------------------
 
 maproot(KUL_TIRAS, MECHAGON, {
-	timeline = { ADDED_8_0_1 },
-	groups = {
-		n(FACTIONS, {
-			faction(FACTION_RUSTBOLT_RESISTANCE),	-- Rustbolt Resistance
-		}),
-	},
+	n(FACTIONS, {
+		faction(FACTION_RUSTBOLT_RESISTANCE),	-- Rustbolt Resistance
+	}),
 });

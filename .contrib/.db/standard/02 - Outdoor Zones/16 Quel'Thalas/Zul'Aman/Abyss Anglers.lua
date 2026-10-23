@@ -203,9 +203,9 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.ZULAMAN, {
 });
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_5 } }, {
-		n(ABYSS_ANGLERS, {
+	expansion(EXPANSION.MID, {
+		n(ABYSS_ANGLERS, sharedData({ timeline = { ADDED_12_0_5 } }, {
 			q(89044, { isRepeatable = true }),	-- Constantly triggers. Usually flags as completed when you dive, unflags when you surface
-		}),
-	})),
+		})),
+	}),
 });

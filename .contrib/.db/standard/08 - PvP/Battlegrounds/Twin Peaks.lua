@@ -87,9 +87,9 @@ battleground(206, {	-- Twin Peaks
 });
 
 -- #if ANYCLASSIC
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ timeline = { ADDED_4_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, {
 	m(206, {
 		q(82808),	-- Obtained by an ATT user upon completing the Fire, Walk with Me achievement
 	}),
-})));
+}));
 -- #endif

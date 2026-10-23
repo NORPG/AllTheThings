@@ -1254,10 +1254,10 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(THE_FORBIDDEN_REACH, {
-			n(ZSKERA_VAULTS, {
+			n(ZSKERA_VAULTS, sharedData({ timeline = { ADDED_10_0_7 } }, {
 				-- Accepted??
 				q(72510),
 				q(72675),
@@ -1349,7 +1349,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 				q(75001),	-- During 'A Difficult Legacy' (questID 74996)
 				q(75002),	-- During 'A Difficult Legacy' (questID 74996)
 				q(75003),	-- During 'A Difficult Legacy' (questID 74996)
-			}),
+			})),
 		}),
 	}),
-})));
+}));

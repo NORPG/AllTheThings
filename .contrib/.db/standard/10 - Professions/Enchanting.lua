@@ -1319,7 +1319,7 @@ profession(ENCHANTING, {
 			r(159671),	-- Mark of Warsong
 		}),
 	})),
-	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, {
 		r(195096, {	-- Enchanting (Legion Master)
 			timeline={ ADDED_7_0_3, REMOVED_8_0_1 },
 			collectible = false,
@@ -1426,6 +1426,6 @@ profession(ENCHANTING, {
 			r(191075),	-- Enchanted Torch
 			r(191078),	-- Leylight Brazier
 		}),
-	}))),
+	})),
 });
 -- #endif

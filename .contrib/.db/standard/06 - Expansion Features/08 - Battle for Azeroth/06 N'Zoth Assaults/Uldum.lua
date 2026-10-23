@@ -1664,10 +1664,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ timeline = {
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(NZOTH_ASSAULT_ULDUM, {	-- Uldum (under assault)
 		n(NZOTH_ASSAULTS, {
-			n(TREASURES, {
+			n(TREASURES, sharedData({ timeline = { ADDED_8_3_0 } }, {
 				q(55689),	-- Uldum - Amathet cache
 				q(55690),	-- Uldum - Amathet cache
 				q(55691),	-- Uldum - Amathet cache
@@ -1684,14 +1684,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDown({ timeline =
 				q(57628),	-- Uldum - Black Empire Coffer
 				q(58138),	-- Uldum - Infested Cache
 				q(58142),	-- Uldum - Infested Cache
-			}),
-			n(QUESTS, {
+			})),
+			n(QUESTS, sharedData({ timeline = { ADDED_8_3_0 } }, {
 				q(59060),	-- choosing "Bitey McStabface' as the name for your Aqir Hatchling
 				q(59062),	-- choosing "Spike" as the name for your Aqir Hatchling
 				q(59059),	-- choosing "Yu'gaz" as the name for your Aqir Hatchling
 				q(59061),	-- hatching Shadowbarb drone after the first phase
 				q(59073),	-- Triggers when turning in "Match the Hatch" for the Shadowbarb Drone. Probably a daily trigger ID so players can't do the entire chain in one day
-			}),
+			})),
 		}),
 	}),
-})));
+}));

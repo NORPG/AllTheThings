@@ -956,7 +956,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
 		cl(MONK, bubbleDownSelf({ classes = { MONK } }, {
 			q(40127),	-- Da-Nel's Quest - Da-Nel sends you from Dalaran to Peak of Serenity
@@ -978,4 +978,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			q(43069),	-- Tracking Quest: Vrykul Scouting 5 - completed the "Tracking the Tideskorn: Storm Drakes" mission
 		})),
 	}),
-})));
+}));

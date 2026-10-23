@@ -3,6 +3,6 @@
 ---------------------------------------------------
 maproot(BROKEN_ISLES, ARGUS, {
 	prof(FISHING, {
-		i(152912, { timeline = { ADDED_7_3_0 } }),	-- Pond Nettle (MOUNT!)
+		i(152912),	-- Pond Nettle (MOUNT!)
 	}),
 });

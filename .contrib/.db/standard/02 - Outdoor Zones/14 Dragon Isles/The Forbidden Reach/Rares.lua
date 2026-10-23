@@ -303,10 +303,10 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(THE_FORBIDDEN_REACH, {
-			n(RARES, {
+			n(RARES, sharedData({ timeline = { ADDED_10_0_7 } }, {
 				q(74926),	-- Tectonus secondary kill questID
 				q(74927),	-- Manathema secondary kill questID
 				q(74928),	-- Snarfang secondary kill questID
@@ -320,7 +320,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 				q(74936),	-- Amephyst secondary kill questID
 				q(74937),	-- Sir Pinchalot secondary kill questID
 				q(74938),	-- Luttrok secondary kill questID
-			}),
+			})),
 		}),
 	}),
-})));
+}));

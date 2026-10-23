@@ -2,9 +2,9 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_13_0_0 } }, {
+root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, {
 	n(RATED, {
-		n(ACHIEVEMENTS, {
+		n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_13_0_0 } }, {
 			-- RBG
 			ach(61200, {	-- Battleground Blitz Medic: Midnight
 				-- While the Filter is correct, the ACM/Cosmetic is hidden for any specs, even healers until you learn it.
@@ -21,6 +21,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED
 					i(255968),	-- Nightfall Legend's Pennant (Cosmetic!)
 				},
 			}),
-		}),
+		})),
 	}),
-}))));
+})));

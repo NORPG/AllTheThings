@@ -33,7 +33,7 @@ local ZANDALARI_INCURSIONS = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = { ADDED_5_2_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, n(ZANDALARI_INCURSIONS, {
 		coords = {
 			{ 47.42, 61.54, DREAD_WASTES },
@@ -44,7 +44,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = {
 		maps = { KRASARANG_WILDS },
 		lvl = lvlsquish(85, 85, 10),
 		groups = {
-			n(ACHIEVEMENTS, {
+			n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_5_2_0 } }, {
 				ach(8078, {	-- Zul'Again
 					crit(22733, {	-- Zandalari Scouts Slain slain (10)
 						_npcs = { 69768 },	-- Zandalari Warscout
@@ -59,7 +59,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = {
 						_npcs = { 69769 },
 					}),
 				}),
-			}),
+			})),
 			n(COMMON_BOSS_DROPS, {
 				crs = {
 					69768,	-- Zandalari Warscout
@@ -70,15 +70,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = {
 				groups = {
 					i(94158, {	-- Big Bag of Zandalari Supplies
 						description = "Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",
+						timeline = { ADDED_5_2_0 },
 						sym = {{"select","itemID",87218},{"groupfill"}},	-- Big Bag of Arms
 					}),
 					i(94159, {	-- Small Bag of Zandalari Supplies
 						description = "Can contain all sorts of herbs, ore, and cloth.",
+						timeline = { ADDED_5_2_0 },
 					}),
-					i(94225),	-- Stolen Celestial Insignia
-					i(94227),	-- Stolen Golden Lotus Insignia
-					i(94226),	-- Stolen Klaxxi Insignia
-					i(94223),	-- Stolen Shado-Pan Insignia
+					i(94225, { timeline = { ADDED_5_2_0 } }),	-- Stolen Celestial Insignia
+					i(94227, { timeline = { ADDED_5_2_0 } }),	-- Stolen Golden Lotus Insignia
+					i(94226, { timeline = { ADDED_5_2_0 } }),	-- Stolen Klaxxi Insignia
+					i(94223, { timeline = { ADDED_5_2_0 } }),	-- Stolen Shado-Pan Insignia
 				},
 			}),
 			n(69768, {	-- Zandalari Warscout
@@ -100,19 +102,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = {
 					{ 48.4, 86.0, TOWNLONG_STEPPES },
 				},
 				description = "Can be found patroling the roads along the posted coordinates.",
+				timeline = { ADDED_5_2_0 },
 			}),
 			n(69841, {	-- Zandalari Warbringer (Amber)
-				i(94230),	-- Amber Primordial Direhorn (MOUNT!)
+				timeline = { ADDED_5_2_0 },
+				groups = {
+					i(94230),	-- Amber Primordial Direhorn (MOUNT!)
+				},
 			}),
 			n(69842, {	-- Zandalari Warbringer (Jade)
-				i(94231),	-- Jade Primordial Direhorn (MOUNT!)
+				timeline = { ADDED_5_2_0 },
+				groups = {
+					i(94231),	-- Jade Primordial Direhorn (MOUNT!)
+				},
 			}),
 			n(69769, {	-- Zandalari Warbringer (Slate)
 				coord = { 38.8, 67.6, KRASARANG_WILDS },
+				timeline = { ADDED_5_2_0 },
 				groups = {
 					i(94229),	-- Slate Primordial Direhorn (MOUNT!)
 				},
 			}),
 		},
 	})),
-})));
+}));

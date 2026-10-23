@@ -366,7 +366,7 @@ maproot(BROKEN_ISLES, HIGHMOUNTAIN, {
 	})),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			n(WORLD_QUESTS, {
@@ -380,4 +380,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			}),
 		}),
 	}),
-})));
+}));

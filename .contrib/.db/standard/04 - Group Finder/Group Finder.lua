@@ -828,17 +828,18 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			timeline = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 }
 		}),
 	}),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_1 } }, {
+	expansion(EXPANSION.BFA, {
 		q(51370, {	-- Short-Supply Reward
+			timeline = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_1 },
 			repeatable = true,
 			groups = {
 				i(160054),	-- War-Torn Satchel of Cooperation
 			},
 		}),
-	})),
-	expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_0 } }, {
-		i(184522),	-- Veiled Satchel of Cooperation
-	})),
+	}),
+	expansion(EXPANSION.SL, {
+		i(184522, { timeline = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_0 } }),	-- Veiled Satchel of Cooperation
+	}),
 	expansion(EXPANSION.DF, {
 		i(201326, {	-- Draconic Satchel of Cooperation
 			i(201325),	-- Draconic Augment Rune
@@ -862,12 +863,12 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.WRATH, bubbleDownSelf({ timeline = { ADDED_3_3_0 } }, {
-		n(GROUP_FINDER, {
+	expansion(EXPANSION.WRATH, {
+		n(GROUP_FINDER, sharedData({ timeline = { ADDED_3_3_0 } }, {
 			q(24887),	-- LFGDungeons - Burning Crusade - Normal Random - 1st
 			q(24895),	-- LFGDungeons - Burning Crusade - Normal Random - Nth
-		}),
-	})),
+		})),
+	}),
 	expansion(EXPANSION.MOP, {
 		n(GROUP_FINDER, {
 			q(31614),	-- LFGDungeons - Mists - Heroic Random - 1st

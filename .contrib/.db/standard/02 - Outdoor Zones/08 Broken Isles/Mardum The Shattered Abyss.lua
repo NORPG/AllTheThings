@@ -543,7 +543,7 @@ maproot(BROKEN_ISLES, 672, {	-- Mardum, the Shattered Abyss
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
 		m(672, {	-- Mardum, the Shattered Abyss
 			n(QUESTS, {
@@ -563,4 +563,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			}),
 		}),
 	}),
-})));
+}));

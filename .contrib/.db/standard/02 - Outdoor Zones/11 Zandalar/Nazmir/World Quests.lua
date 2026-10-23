@@ -462,7 +462,7 @@ maproot(ZANDALAR, NAZMIR, {
 	},
 });
 
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
+-- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 -- 	m(ZANDALAR, {
 -- 		m(NAZMIR, {
 -- 			n(WORLD_QUESTS, {
@@ -470,4 +470,4 @@ maproot(ZANDALAR, NAZMIR, {
 -- 			}),
 -- 		}),
 -- 	}),
--- })));
+-- }));

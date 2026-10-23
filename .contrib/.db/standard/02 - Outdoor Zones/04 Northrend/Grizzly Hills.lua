@@ -2207,7 +2207,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WRATH, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WRATH, {
 	m(NORTHREND, {
 		m(GRIZZLY_HILLS, {
 			n(QUESTS, {
@@ -2215,4 +2215,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WRATH, bubbleDownSelf({ time
 			}),
 		}),
 	}),
-})));
+}));

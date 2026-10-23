@@ -977,43 +977,43 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 			},
 		}),
 	}),
-	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }, {
+	expansion(EXPANSION.DF, {
 		n(HEROIC_EDITION, {
 			description = "These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",
 			groups = {
-				ach(17314),	-- Heroic Edition: Tangled Dreamweaver
+				ach(17314, { timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }),	-- Heroic Edition: Tangled Dreamweaver
 				ach(17305, {	-- Trading Post: Dragonflight
 					timeline = { ADDED_10_0_5, REMOVED_10_2_0 },
 				}),
 				-- #if AFTER 11.2.5
-				i(248089),	-- Tangled Dreamweaver (MOUNT!)
+				i(248089, { timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }),	-- Tangled Dreamweaver (MOUNT!)
 				-- #else
-				mount(359843),	-- Tangled Dreamweaver (MOUNT!)
+				mount(359843, { timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }),	-- Tangled Dreamweaver (MOUNT!)
 				-- #endif
 				pet(3177, {	-- Drakks (PET!)
 					description = "This is a pre-order bonus only available before the launch of Dragonflight.",
 					timeline = { REMOVED_10_0_2 },
 				}),
-				pet(3175),	-- Murkastrasza (PET!)
+				pet(3175, { timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }),	-- Murkastrasza (PET!)
 			},
 		}),
 		n(EPIC_EDITION, {
 			description = "These rewards were made available to anyone who purchased Dragonflight Epic Edition.",
 			groups = {
-				i(193588),	-- Timewalker's Hearthstone (TOY!)
+				i(193588, { timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }),	-- Timewalker's Hearthstone (TOY!)
 				-- #if AFTER 11.2.5
-				iensemble(255827),	-- Collection: Wings of Awakening (COSMETIC!)
+				iensemble(255827, { timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }),	-- Collection: Wings of Awakening (COSMETIC!)
 				-- #else
-				i(188257),	-- Azure Wings of Awakening (COSMETIC!)
-				i(188258),	-- Bronze Wings of Awakening (COSMETIC!)
-				i(188259),	-- Emerald Wings of Awakening (COSMETIC!)
-				i(188256),	-- Obsidian Wings of Awakening (COSMETIC!)
-				i(188260),	-- Ruby Wings of Awakening (COSMETIC!)
+				i(188257, { timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }),	-- Azure Wings of Awakening (COSMETIC!)
+				i(188258, { timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }),	-- Bronze Wings of Awakening (COSMETIC!)
+				i(188259, { timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }),	-- Emerald Wings of Awakening (COSMETIC!)
+				i(188256, { timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }),	-- Obsidian Wings of Awakening (COSMETIC!)
+				i(188260, { timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }),	-- Ruby Wings of Awakening (COSMETIC!)
 				-- #endif
-				i(193610),	-- Diadem of the Spell-Keeper (COSMETIC!)
+				i(193610, { timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }),	-- Diadem of the Spell-Keeper (COSMETIC!)
 			},
 		}),
-	})),
+	}),
 	expansion(EXPANSION.TWW, {
 		n(HEROIC_EDITION, {
 			description = "These rewards were made available to anyone who purchased The War Within Heroic Edition.",
@@ -1430,27 +1430,27 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 
 root(ROOTS.HiddenQuestTriggers, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, {
 	-- #if ANYCLASSIC
-	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ timeline = { ADDED_1_15_5, REMOVED_3_0_2 } }, {
-			q(91889),	-- A Special Thanks (Innkeepers)
-	}));
-	expansion(EXPANSION.TBC, bubbleDownSelf({ timeline = { ADDED_2_5_1, REMOVED_3_0_2 } }, {
-			q(63770),	-- A Special Thanks (Innkeepers)
-	}));
-	expansion(EXPANSION.TBC, bubbleDownSelf({ timeline = { ADDED_2_5_1, REMOVED_3_0_2 } }, {
-		n(TBC_CLASSIC_DELUXE_EDITION, {
+	expansion(EXPANSION.CLASSIC, {
+			q(91889, { timeline = { ADDED_1_15_5, REMOVED_3_0_2 } }),	-- A Special Thanks (Innkeepers)
+	});
+	expansion(EXPANSION.TBC, {
+			q(63770, { timeline = { ADDED_2_5_1, REMOVED_3_0_2 } }),	-- A Special Thanks (Innkeepers)
+	});
+	expansion(EXPANSION.TBC, {
+		n(TBC_CLASSIC_DELUXE_EDITION, sharedData({ timeline = { ADDED_2_5_1, REMOVED_3_0_2 } }, {
 			q(63448),	-- A Deluxe Delivery (Innkeepers)
-		}),
-	}));
+		})),
+	});
 	-- #endif
 	-- #if CLASSIC_ANNIVERSARY
-	expansion(EXPANSION.TBC, bubbleDownSelf({ timeline = { ADDED_2_5_5, REMOVED_3_0_2 } }, {
-		n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, {
+	expansion(EXPANSION.TBC, {
+		n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, sharedData({ timeline = { ADDED_2_5_5, REMOVED_3_0_2 } }, {
 			q(93823),	-- A Deluxe Delivery (Innkeepers)
-		}),
-	}));
+		})),
+	});
 	-- #endif
-	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_0 } }, {
-		n(HEROIC_EDITION, {
+	expansion(EXPANSION.TWW, {
+		n(HEROIC_EDITION, sharedData({ timeline = { ADDED_11_0_0 } }, {
 			q(81991),	-- 3 Ensembles tints tied to single HQT
 						-- Ensemble: Champion Stormrider's Attire
 						-- Ensemble: Deep Stormrider's Attire
@@ -1462,6 +1462,6 @@ root(ROOTS.HiddenQuestTriggers, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_
 			q(81995),	-- During Gryphons of a Feather (82809)
 			q(84824),	-- triggered when accepting "The Stormrider's Bond" (81993) [Dragon Isle Version]
 			q(84825),	-- triggered when accepting "The Stormrider's Bond" (83024) [Khaz Algar Version]
-		}),
-	}));
+		})),
+	});
 })));

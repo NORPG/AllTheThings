@@ -2,10 +2,11 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.WOD, bubbleDown({timeline = { ADDED_6_2_0, REMOVED_7_3_5}}, {
+	expansion(EXPANSION.WOD, {
 		header(HEADERS.Achievement, 9060, {
 			-- Note: [As of August 16, 2018 Level 100 Boost became Level 100 Class Trial]
 			description = "These were obtained by boosting a character to Level 100 for each class and specialization.",
+			timeline = { ADDED_6_2_0, REMOVED_7_3_5 },
 			lvl = 100,
 			groups = {
 				cl(DEATHKNIGHT, {
@@ -451,5 +452,5 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				}),
 			},
 		}),
-	})),
+	}),
 }));

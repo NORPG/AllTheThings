@@ -2428,7 +2428,7 @@ root(ROOTS.ExpansionFeatures,
 	})
 );
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(ARTIFACTS, {
 		cl(DEATHKNIGHT, bubbleDownSelf({ classes = { DEATHKNIGHT } }, {
 			q(40722),	-- Blood Chosen - Blood Artifact chosen first
@@ -2619,7 +2619,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 		q(47234),	-- Unlocked the order hall storyline artifact appearance from "A Hero's Weapon" for mage
 		q(46790),	-- Unlocked the order hall storyline artifact appearance from "A Hero's Weapon" for rogue
 	}),
-})));
+}));
 -- Fill certain Artifacts into the Arch Achievement which is needed to earn them
 -- TODO: note about what is necessary to unlock the Artifacts once achievement is gained
 root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAEOLOGY }, {

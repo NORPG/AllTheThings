@@ -359,9 +359,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	n(HORRIFIC_VISIONS, {
-		m(HORRIFIC_ORGRIMMAR, {
+		m(HORRIFIC_ORGRIMMAR, sharedData({ timeline = { ADDED_8_3_0 } }, {
 			q(58581),	-- first horrific vision cleared as horde
 			q(57039),	-- Valley of Spirits cleansed (Orgrimmar)
 			q(58896),	-- Valley of Spirits cleansed (Orgrimmar) - probably controls activation of the quick-navigation back to the start?
@@ -384,8 +384,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeli
 			q(58966),	-- triggered after completing all of zek'han's area but before killing the boss. Also triggers in Stormwind in valeria's wing
 			q(58963),	-- triggered while fighting Thrall after two corrupted areas/triggered before boss in The Drag
 			q(58973),	-- triggered after fighting Rexxar
-		}),
-		m(HORRIFIC_STORMWIND, {
+		})),
+		m(HORRIFIC_STORMWIND, sharedData({ timeline = { ADDED_8_3_0 } }, {
 			q(58968),	-- 3rd wing clear
 			q(58965),	-- triggered when going to Dwarven District (during the fight with 3 gnomes)
 			q(57153),	-- Dwarven District cleansed (Stormwind)
@@ -403,8 +403,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeli
 			-- TODO:  Need to determine the alliance zones for the 4 area chests. They appear to be shared with horde except for the main boss chest
 			q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
 			q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)
-		}),
-		q(58971),	-- killing Mail Muncher
+		})),
+		q(58971, { timeline = { ADDED_8_3_0 } }),	-- killing Mail Muncher
 		--[[
 		q(57845)	-- probably triggers after clearing two corrupted areas + boss
 		58840	-- looted the chest in front of zekhan. Torn Page of Compednium, Vol.II and Sparks of Unwavering Strength dropped
@@ -412,4 +412,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeli
 		Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not
 		]]--
 	}),
-})));
+}));

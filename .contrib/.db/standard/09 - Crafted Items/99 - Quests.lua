@@ -95,8 +95,8 @@ root(ROOTS.Craftables, {
 			}),
 		}),
 	}),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {
-		n(QUESTS, {
+	expansion(EXPANSION.BFA, {
+		n(QUESTS, sharedData({ timeline = { ADDED_8_2_0 } }, {
 			q(56042, {	-- Blingtron 7000
 				qg = 153897,	-- Blingtron 7000
 				isDaily = true,
@@ -116,6 +116,6 @@ root(ROOTS.Craftables, {
 					}),
 				},
 			}),
-		}),
-	})),
+		})),
+	}),
 });

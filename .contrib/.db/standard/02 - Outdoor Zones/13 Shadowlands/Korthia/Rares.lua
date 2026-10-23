@@ -243,14 +243,14 @@ maproot(SHADOWLANDS, KORTHIA, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
-			n(RARES, {
+			n(RARES, sharedData({ timeline = { ADDED_9_1_0 } }, {
 				q(64572),	-- i think this is a daily lockout for receiving a Soultwining Crescent from a rare (also triggers on treasures)
 				q(64699, name(HEADERS.Item, 187327)),	-- popped when looting 48-research item Encrypted Korthian Journal from Fleshwing
 				q(64703),	-- popped when looting 48-research item Half-Completed Runeforge Pattern from Xyraxz
-			}),
+			})),
 		}),
 	}),
-})));
+}));

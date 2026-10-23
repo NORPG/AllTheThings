@@ -83,7 +83,7 @@ maproot(KUL_TIRAS, BORALUS, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(KUL_TIRAS, {
 		m(BORALUS, {
 			n(138704, {
@@ -91,4 +91,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeli
 			}),
 		}),
 	}),
-})));
+}));

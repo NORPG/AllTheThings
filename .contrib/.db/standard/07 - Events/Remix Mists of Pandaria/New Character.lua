@@ -116,8 +116,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ t
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
-	applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
+	applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, sharedData({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 		q(80504),	-- triggers a bit after character was created for wow remix (druid, ne) (spellID - 441562 / [DNT] Flag Quest) / Same for Braghe / Same for Myrhial
 		q(79439),	-- Triggers after 79438 (Goodbyes Are Hard When You Live Forever) and mop intro cinematic (spellID - 433399 / [DNT] Tutorial Complete)
 		q(80318),	-- Triggers after 31732 (Unleash Hell) (A) / 31765 Paint it Red! (H)
@@ -140,5 +140,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 		q(81658,{isDaily=true,}),	-- after turn in questID 80427 (Aid the Golden Lotus)
 		q(81660,{isDaily=true,}),	-- after turn in questID 80426 (Aid the Shado-Pan)
 		q(81663,{isDaily=true,}),	-- after turn in questID 80439 / 80438 (Aid the Alliance / Aid the Horde)
-	})),
-})));
+	}))),
+}));

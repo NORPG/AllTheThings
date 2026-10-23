@@ -1153,7 +1153,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
 		cl(MAGE, bubbleDownSelf({ classes = { MAGE } }, {
 			q(46768, { timeline = { ADDED_7_2_0 } }),	-- Akazamzarak 1 Week Cooldown - triggered after completing "Champion: Aethas Sunreaver"
@@ -1174,4 +1174,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			q(42727),	-- Transition to Forge Quests - triggered after completing The Mage Hunter as first artifact weapon
 		})),
 	}),
-})));
+}));

@@ -1322,7 +1322,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
 		cl(ROGUE, bubbleDownSelf({ classes = { ROGUE } }, {
 			q(44871, { timeline = { ADDED_7_1_0 } }),	-- 7.1 World - 850 - Special - Moroes 1
@@ -1348,4 +1348,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			q(45447),	-- Turned In Marin's Coin - give a Noggenfogger coin to Marin Noggenfogger
 		})),
 	}),
-})));
+}));

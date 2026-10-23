@@ -14,11 +14,11 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 		r(102163, {timeline = {ADDED_5_0_4, REMOVED_6_0_2}, rank = 8 }),	-- Toughness [Rank 8]
 	}),
 	-- #endif
-	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
-		n(ACHIEVEMENTS, {
+	expansion(EXPANSION.CLASSIC, {
+		n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_10_1_7 } }, {
 			ach(18841),	-- Doing Your Share (automated)
-		}),
-	})),
+		})),
+	}),
 	expansion(EXPANSION.LEGION, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18839),	-- Broken Isles Mining Techniques (automated)

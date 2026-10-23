@@ -263,12 +263,12 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_5} }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(THALDRASZUS, {
-			m(THE_PRIMALIST_FUTURE, {
+			m(THE_PRIMALIST_FUTURE, sharedData({ timeline = { ADDED_10_0_5} }, {
 				q(73162),	-- Killing Nimbulatus/Seismodor
-			}),
+			})),
 		}),
 	}),
-})));
+}));

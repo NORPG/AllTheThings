@@ -4259,7 +4259,7 @@ maproot(KALIMDOR, DUROTAR, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(KALIMDOR, {
 		m(DUROTAR, {
 			n(QUESTS, {
@@ -4269,4 +4269,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			}),
 		}),
 	}),
-})));
+}));

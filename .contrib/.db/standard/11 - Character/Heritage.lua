@@ -1860,19 +1860,19 @@ root(ROOTS.Character, n(HERITAGE, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
+	expansion(EXPANSION.BFA, {
 		n(HERITAGE, {
-			n(QUESTS, {
+			n(QUESTS, sharedData({ timeline = { ADDED_8_2_0 } }, {
 				q(54868),	-- During Heritage for Taurens in the End
 				q(54867),	-- Triggered when doing "When Spirits Whisper"
 				q(54866),	-- Completes with 54759 "When Spirits Whisper"
-			}),
-			q(54869),	-- Starting Heritage for Taurens.
+			})),
+			q(54869, { timeline = { ADDED_8_2_0 } }),	-- Starting Heritage for Taurens.
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(HERITAGE, {
-			n(QUESTS, {
+			n(QUESTS, sharedData({ timeline = { ADDED_10_0_7 } }, {
 				q(74894),	-- Triggers after the scene ends after 'Go with Honor, Friend' (questID 72452) (spellID 403652)
 				q(73705),	-- Triggers right after accepting 'The Kosh'harg' (questID 72464) (spellID 399758)
 				q(74541),	-- Triggers when you find a 'Mysterious Orc' during 'The Kosh'harg' (questID 72464) (spellID 401231)
@@ -1885,21 +1885,21 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(72469),	-- Choosing Gorgonna (Warsong clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398662)
 				q(72473),	-- Choosing Gorfax Angerfang (Dragonmaw clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398670)
 				q(72471),	-- Choosing Thega Graveblade (Shattered Hand clan) during 'The Blessing of the Clan' (questID 72467) (spellID 398674)
-			}),
+			})),
 
 			-- New Heritage questline start HQTs
-			q(75246),	-- Human Heritage (spellID 406118)
-			q(75247),	-- Orc Heritage (spellID 406119)
-			q(75248),	-- Goblin Heritage (spellID 406121)
-			q(75249),	-- Worgen Heritage (spellID 406122)
-			q(75250),	-- Tauren Heritage (spellID 406123)
-			q(75251),	-- Gnome Heritage (spellID 406126)
-			q(75252),	-- Blood Elf Heritage (spellID 406127)
-			q(75253),	-- Dwarf Heritage (spellID 406128)
+			q(75246, { timeline = { ADDED_10_0_7 } }),	-- Human Heritage (spellID 406118)
+			q(75247, { timeline = { ADDED_10_0_7 } }),	-- Orc Heritage (spellID 406119)
+			q(75248, { timeline = { ADDED_10_0_7 } }),	-- Goblin Heritage (spellID 406121)
+			q(75249, { timeline = { ADDED_10_0_7 } }),	-- Worgen Heritage (spellID 406122)
+			q(75250, { timeline = { ADDED_10_0_7 } }),	-- Tauren Heritage (spellID 406123)
+			q(75251, { timeline = { ADDED_10_0_7 } }),	-- Gnome Heritage (spellID 406126)
+			q(75252, { timeline = { ADDED_10_0_7 } }),	-- Blood Elf Heritage (spellID 406127)
+			q(75253, { timeline = { ADDED_10_0_7 } }),	-- Dwarf Heritage (spellID 406128)
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_1_7 } }, {
-		n(HERITAGE, {
+	}),
+	expansion(EXPANSION.DF, {
+		n(HERITAGE, sharedData({ timeline = { ADDED_10_1_7 } }, {
 			q(76556),	-- Triggers after handing in quest 'Ancient Curses' (questID 75891) (spellID 415206)
 			q(78022),	-- Triggers after talking to Maiev Stormsong during quest 'Stepping into the Shadows' (questID 76203) (spellID 422467)
 			-- q(78021),	-- Ensemble: Forsaken Champion's Additional Attire (itemID ?) (spellID 419716)
@@ -1911,26 +1911,26 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- New Heritage questline start HQTs
 			q(76457),	-- Undead Heritage (spellID 414546)
 			q(76458),	-- Night Elf Heritage (spellID 414550)
-		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_2_7 } }, {
-		n(HERITAGE, {
+		})),
+	}),
+	expansion(EXPANSION.DF, {
+		n(HERITAGE, sharedData({ timeline = { ADDED_10_2_7 } }, {
 			-- New Heritage questline start HQTs
 			q(78548),	-- Draenei Heritage (spellID 426497)
 			q(78549),	-- Troll Heritage (spellID 426505)
-		}),
-	})),
+		})),
+	}),
 	expansion(EXPANSION.TWW, {
 		n(HERITAGE, {
 			q(82788),	-- Arsenal: Earthen Weaponry
 			q(82789),	-- Popped on turn in of Stranger in a Strange Land [A] (81887)
 		}),
 	}),
-	expansion(EXPANSION.TWW, bubbleDown({ timeline = { ADDED_11_2_7 } }, {
-		n(HERITAGE, {
+	expansion(EXPANSION.TWW, {
+		n(HERITAGE, sharedData({ timeline = { ADDED_11_2_7 } }, {
 			q(85049, {races={PANDAREN_HORDE}}),	-- Pandaren Horde trigger for 'Invitation to the Spirit Festival' (84444)
 			q(85050, {races={PANDAREN_ALLIANCE}}),	-- Pandaren Alliance trigger for 'Invitation to the Spirit Festival' (84442)
 			q(93888),	-- New HQT after complete Blood elf heritage quest 'The Fall of the Sunwell' (54096)
-		}),
-	})),
+		})),
+	}),
 });

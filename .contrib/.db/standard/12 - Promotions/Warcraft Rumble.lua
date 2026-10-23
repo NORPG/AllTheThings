@@ -341,8 +341,8 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, {
 	},
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
-	n(WARCRAFT_RUMBLE, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
+	n(WARCRAFT_RUMBLE, sharedData({ timeline = { ADDED_10_1_7 } }, {
 		-- TODO: these are real quests, probably in different cities/locations?
 		q(75712),	-- Warcraft Rumble Minis: New Look!
 		q(75713),	-- Warcraft Rumble Minis: New Look!
@@ -370,5 +370,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 		q(73375),	-- Stonehoof Tauren
 		q(73378),	-- Undead Ghoul
 		q(73384),	-- Whelp Egg
-	}),
-})));
+	})),
+}));

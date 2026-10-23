@@ -166,12 +166,12 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(EMERALD_DREAM, {
-			n(SPECIAL, {
+			n(SPECIAL, sharedData({ timeline = { ADDED_10_2_0 } }, {
 				q(78660),	-- server side script for deer that bring warglaive (spellID 427482) (I miss npcID .-.)
-			}),
+			})),
 		}),
 	}),
-})));
+}));

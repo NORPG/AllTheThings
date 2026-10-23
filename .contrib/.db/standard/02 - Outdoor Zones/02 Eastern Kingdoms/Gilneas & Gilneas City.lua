@@ -1298,7 +1298,7 @@ maproot(EASTERN_KINGDOMS, GILNEAS, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ timeline = { ADDED_4_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, {
 	m(EASTERN_KINGDOMS, {
 		m(GILNEAS, {
 			n(QUESTS, {
@@ -1306,4 +1306,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ timel
 			}),
 		}),
 	}),
-})));
+}));

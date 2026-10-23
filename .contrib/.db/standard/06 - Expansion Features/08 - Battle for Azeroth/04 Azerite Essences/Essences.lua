@@ -401,8 +401,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {
-	n(AZERITE_ESSENCES, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
+	n(AZERITE_ESSENCES, sharedData({ timeline = { ADDED_8_2_0 } }, {
 		q(56951),	-- triggered when making r2 of the Eternal Palace HoA essence
 		q(56944),	-- triggered when making r2 of the Eternal Palace HoA essence
 		q(57033),	-- R1 Anima of Life and Death
@@ -413,5 +413,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeli
 		q(57036),	-- R2 Magnifying Lens of the Focusing Iris
 		q(62689),	-- R2 Magnifying Lens of the Focusing
 		q(57034),	-- R2 Replicating Seed of Abundance
-	}),
-})));
+	})),
+}));

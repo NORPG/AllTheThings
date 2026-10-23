@@ -543,9 +543,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_5 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_AZEROTHIAN_ARCHIVES, {
-		n(ACHIEVEMENTS, {
+		n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_10_2_5 } }, {
 			-- "Just One More Thing" trackers
 			q(79601),	-- Lost Atheneum first completion
 			q(79600),	-- Lost Atheneum second completion
@@ -565,8 +565,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 			q(79613),	-- Winglord's Perch first completion
 			q(79612),	-- Winglord's Perch second completion
 			-- q(79611),	-- Winglord's Perch third completion
-		}),
-		n(QUESTS, {
+		})),
+		n(QUESTS, sharedData({ timeline = { ADDED_10_2_5 } }, {
 			q(79992),	-- After completing 'Finally, An Archivist' (questID 79223) (spellID 436735) (WQ unlock - Riverbed, Concord Observatory, and Lost Anethenum Sites)
 			q(79996),	-- After completing 'The Hidden Hand' (questID 77415) (spellID 436777) (WQ unlock - Dragonskull Island, Forbidden Reach Site)
 			q(79995),	-- After completing 'A Taste of the Past' (questID 77154) (spellID 436768) (WQ unlock - Winglord's Perch, Forbidden Reach Site)
@@ -601,6 +601,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 			-- TODO: figure out what 2nd qids are for and what this 2 spells is doing (rotation, may be?)
 			-- 434945 (434203 & 434944 (this spellID didn't have any attached qid to it atm))
 			-- odd 434203 (434196 (missing in wowhead db?) & 434198 & 434197 & 434199 & 434200 & 434201 & 434202 (this spellID didn't have any attached qid to it atm))
-		}),
+		})),
 	}),
-})));
+}));

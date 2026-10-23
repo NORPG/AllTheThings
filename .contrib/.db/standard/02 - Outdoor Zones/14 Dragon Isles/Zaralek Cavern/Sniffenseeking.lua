@@ -344,10 +344,10 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(ZARALEK_CAVERN, {
-			n(SNIFFENSEEKING, {
+			n(SNIFFENSEEKING, sharedData({ timeline = { ADDED_10_1_0 } }, {
 				q(75241),	-- Flag Niffen Cave Account Tracking (spellID 407744)
 				q(75747),	-- Completing a Sniffenseeking quest
 				q(75748),	-- Completing a Sniffenseeking quest
@@ -405,7 +405,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 
 				q(75893),	-- Started Flapping and Screaming (76027) /Unflagged after map was completed
 				q(76011),	-- Completed Flapping and Screaming (76027)
-			}),
+			})),
 		}),
 	}),
-})));
+}));

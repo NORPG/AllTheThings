@@ -530,7 +530,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING 
 			}),
 		}),
 	}),
-	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2 }, requireSkill = SKINNING }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ requireSkill = SKINNING }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18831, sharedData({	-- Elusive Beasts of the Dragon Isles (15)
 				cost = {{"i",193906,1}},	-- Elusive Creature Bait

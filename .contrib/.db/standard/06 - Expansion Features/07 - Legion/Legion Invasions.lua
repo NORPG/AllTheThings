@@ -202,10 +202,10 @@ root(ROOTS.ExpansionFeatures,
 	})
 );
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
-			n(LEGION_INVASIONS, {
+			n(LEGION_INVASIONS, sharedData({ timeline = { ADDED_7_2_0 } }, {
 				q(46964),	-- Assault Treasure - Azsuna
 				q(46966),	-- Assault Treasure - Azsuna
 				q(46967),	-- Assault Treasure - Azsuna
@@ -219,10 +219,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 				q(46795),	-- Ship - Azsuna - triggered after completing the criteria for "A Conduit No More" (questID 46205) and riding to Farondale
 				q(47062),	-- Tracking Quest - triggered when killing Dread Vizier Gra'tork in Azsuna invasion scenario
 				q(47064),	-- Tracking Quest - Azsuna - tracking quest that triggered after completing the Azsuna assault. Might really be related to Broken Shore progress tracking
-			}),
+			})),
 		}),
 		m(HIGHMOUNTAIN, {
-			n(LEGION_INVASIONS, {
+			n(LEGION_INVASIONS, sharedData({ timeline = { ADDED_7_2_0 } }, {
 				q(46985),	-- Assault Treasure - Highmountain
 				q(46986),	-- Assault Treasure - Highmountain
 				q(46987),	-- Assault Treasure - Highmountain
@@ -235,10 +235,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 				q(46994),	-- Assault Treasure - Highmountain
 				q(46808),	-- Ship - Highmountain - triggered after killing the NPC for "Holding Our Ground" (questID 45572)
 				q(47065),	-- Tracking Quest - Highmountain Invasion / Fel Commander Erixtol Kill
-			}),
+			})),
 		}),
 		m(STORMHEIM, {
-			n(LEGION_INVASIONS, {
+			n(LEGION_INVASIONS, sharedData({ timeline = { ADDED_7_2_0 } }, {
 				q(46975),	-- Assault Treasure - Stormheim
 				q(46976),	-- Assault Treasure - Stormheim
 				q(46977),	-- Assault Treasure - Stormheim
@@ -249,10 +249,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 				q(46982),	-- Assault Treasure - Stormheim
 				q(46983),	-- Assault Treasure - Stormheim
 				q(46984),	-- Assault Treasure - Stormheim
-			}),
+			})),
 		}),
 		m(VALSHARAH, {
-			n(LEGION_INVASIONS, {
+			n(LEGION_INVASIONS, sharedData({ timeline = { ADDED_7_2_0 } }, {
 				q(46954),	-- Assault Treasure - Val'sharah
 				q(46956),	-- Assault Treasure - Val'sharah
 				q(46958),	-- Assault Treasure - Val'sharah
@@ -264,10 +264,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 				q(46830),	-- Battlefield - Val'sharah
 				q(46801),	-- Ship - Val'sharah - triggered when turning in "Holding the Ramparts" (questID 44789) during Azsuna assault
 				q(46819),	-- Wrecked Cart - Val'sharah
-			}),
+			})),
 		}),
 	}),
-	n(LEGION_INVASIONS, {
+	n(LEGION_INVASIONS, sharedData({ timeline = { ADDED_7_2_0 } }, {
 		q(47185),	-- Invasion Boss Weekly Bonus
-	}),
-})));
+	})),
+}));

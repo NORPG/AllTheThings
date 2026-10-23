@@ -1256,10 +1256,10 @@ maproot(SHADOWLANDS, REVENDRETH, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_1 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
 		m(REVENDRETH, {
-			n(QUESTS, {
+			n(QUESTS, sharedData({ timeline = { ADDED_9_0_1 } }, {
 				q(60845),	-- When looting [Bottle of Redelav Wine] (173718)
 				q(60846),	-- When looting [Dredger's Toolkit] (173715)
 				q(60849),	-- When looting [Ledger of Souls] (173712)
@@ -1284,7 +1284,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timelin
 				q(62661),	-- Triggered during first completion of #58080 [Favor: Glittering Primrose Necklace]
 				q(62669),	-- Triggered during first completion of #58070 [Favor: Soul Hunter Blade]
 				q(62641),	-- killing or looting Sabina during "Setting Sabina Free"
-			}),
+			})),
 		}),
 	}),
-})));
+}));

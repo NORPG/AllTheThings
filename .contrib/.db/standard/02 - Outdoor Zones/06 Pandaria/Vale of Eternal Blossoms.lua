@@ -1648,9 +1648,9 @@ maproot(PANDARIA, VALE_OF_ETERNAL_BLOSSOMS, {
 });
 
 -- #if ANYCLASSIC
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_5_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, {
 	m(VALE_OF_ETERNAL_BLOSSOMS, {
 		q(92522, { timeline = { ADDED_5_5_0, REMOVED_5_5_2 } }),	-- Weekly turn-in for Elder Charms of Good Fortune (Alliance, idk if it's different for Horde)
 	}),
-})));
+}));
 -- #endif

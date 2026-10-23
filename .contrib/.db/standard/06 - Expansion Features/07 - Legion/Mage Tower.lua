@@ -419,8 +419,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	})),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_1_5 } }, {
-	n(MAGE_TOWER, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
+	n(MAGE_TOWER, sharedData({ timeline = { ADDED_9_1_5 } }, {
 		q(64923),	-- unlocking Gravewarden Armaments set
 		q(64924),	-- unlocking Demonbane Armor set
 		q(64925),	-- unlocking Stormheart Raiment set
@@ -434,5 +434,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timelin
 		q(64933),	-- unlocking Diabolic Raiment set
 		q(64934),	-- unlocking Titanic Onslaught Armor set
 		q(64922),	-- unlocking what I assume is the Fel Bear druid form, popped at the same time as 64925
-	}),
-})));
+	})),
+}));

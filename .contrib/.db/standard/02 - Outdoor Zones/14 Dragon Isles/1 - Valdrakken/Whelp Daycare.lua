@@ -624,10 +624,10 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(VALDRAKKEN, {
-			n(WHELP_DAYCARE, {
+			n(WHELP_DAYCARE, sharedData({ timeline = { ADDED_10_1_5 } }, {
 				q(77173),	-- I think this is for activating Whelp Care? Or Daily?
 				q(76204),	-- After completing Warmth and Comfort [72455], end of day 1 obsidian?
 				q(76252),	-- Obsidian Whelp dailies unlock
@@ -635,7 +635,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 				q(76254),	-- Bronze Whelp dailies unlock
 				q(76255),	-- Azure Whelp dailies unlock
 				q(76256),	-- Emerald Whelp dailies unlock
-			}),
+			})),
 		}),
 	}),
-})));
+}));

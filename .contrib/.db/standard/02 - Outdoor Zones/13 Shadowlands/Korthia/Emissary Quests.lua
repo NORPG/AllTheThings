@@ -31,15 +31,15 @@ maproot(SHADOWLANDS, KORTHIA, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
-			n(EMISSARY_QUESTS, {
+			n(EMISSARY_QUESTS, sharedData({ timeline = { ADDED_9_1_0 } }, {
 				q(64286),	-- Paragon of Death's Advance
 				q(64287),	-- Paragon of The Archivists' Codex
 				q(64670),	-- triggered when turning in Supplies of the Archivists' Codex
 				q(64669),	-- triggered when turning in Supplies from Death's Advance
-			}),
+			})),
 		}),
 	}),
-})));
+}));

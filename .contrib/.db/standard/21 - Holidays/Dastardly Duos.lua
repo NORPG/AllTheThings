@@ -279,8 +279,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ timeline = {
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_1_5 } }, {
-		n(DASTARDLY_DUOS, {
+	expansion(EXPANSION.TWW, {
+		n(DASTARDLY_DUOS, sharedData({ timeline = { ADDED_11_1_5 } }, {
 			-- In order to clear a bit messup and to sort out more clearly on live
 			-- Week 1:
 			q(87510),	-- Week 1 Completion
@@ -301,6 +301,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(87532),	--
 			-- Week 6:
 			q(87515),	-- Week 6 Completion
-		}),
-	})),
+		})),
+	}),
 });

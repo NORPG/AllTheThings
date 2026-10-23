@@ -1177,10 +1177,10 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 		}),
 	},
 });
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(EMERALD_DREAM, {
-			n(QUESTS, {
+			n(QUESTS, sharedData({ timeline = { ADDED_10_2_0 } }, {
 				-- pop during main story
 				q(77413),	-- Shandris's Scouting Report (itemID 208181) (spellID 418275)
 				q(77572),	-- 'Make player eligible for superbloom' (spellID 425375)
@@ -1221,7 +1221,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 				q(77767),	-- after turn in qID 77711 (And a Pinch of Magic), when Professor Ash come to flower (spellIDs 421103 & 420717)
 				q(77759),	-- after turn in qID 77711 (And a Pinch of Magic), when animation start pop around flower (spellID 420720)
 				--
-			}),
+			})),
 		}),
 	}),
-})));
+}));

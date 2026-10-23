@@ -964,7 +964,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
 		cl(SHAMAN, bubbleDownSelf({ classes = { SHAMAN } }, {
 			q(44653),	-- Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 1
@@ -982,4 +982,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			q(44068),	-- Tell Morgl he can have the Doomhammer
 		})),
 	}),
-})));
+}));

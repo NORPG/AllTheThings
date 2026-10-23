@@ -352,7 +352,6 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 	expansion(EXPANSION.DF, {
-		timeline = { ADDED_10_0_2 },
 		groups = {
 			n(HIDDEN_QUESTS, {
 				hqt(72285, {	-- Stay awhile and listen: Scalecommander Azurathel

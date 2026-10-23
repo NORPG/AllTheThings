@@ -1015,7 +1015,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
 		cl(WARRIOR, bubbleDownSelf({ classes = { WARRIOR } }, {
 			q(39174),	-- Guiding Light Tutorialized - triggers when you get your first artifact weapon and go back to Skyhold
@@ -1033,4 +1033,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 			q(44635),	-- Tracking Quest: Preparing for War 3 - completed the "Enslaved by Sea Giants" mission
 		})),
 	}),
-})));
+}));

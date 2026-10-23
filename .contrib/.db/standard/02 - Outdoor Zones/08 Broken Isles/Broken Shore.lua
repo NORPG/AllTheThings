@@ -2011,13 +2011,13 @@ maproot(BROKEN_ISLES, BROKEN_SHORE, {
 });
 
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
 		m(BROKEN_SHORE, {
-			n(EMISSARY_QUESTS, {
+			n(EMISSARY_QUESTS, sharedData({ timeline = { ADDED_7_2_0 } }, {
 				q(46802),	-- Paragon of the Legionfall Armies
-			}),
-			n(QUESTS, {
+			})),
+			n(QUESTS, sharedData({ timeline = { ADDED_7_2_0 } }, {
 				q(47038),	-- 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 1 - Tracking
 				q(47044),	-- 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 2 - Tracking
 				q(47053),	-- 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 3 - Tracking
@@ -2034,7 +2034,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ tim
 				q(46665),	-- Tracking Quest - triggers with "Spiders, Huh?"
 				q(46751),	-- Tracking Quest - triggers when turning in "A Found Memento" (#46268)
 				q(47092),	-- Working on Crafted Legendary
-			}),
+			})),
 		}),
 	}),
-})));
+}));

@@ -1067,10 +1067,10 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 	},
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_5} }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(THALDRASZUS, {
-			n(TIME_RIFTS, {
+			n(TIME_RIFTS, sharedData({ timeline = { ADDED_10_1_5} }, {
 				-- Alternates between these two questIDs when completing tasks
 				-- Sequence experienced on live: 85 > 83 > 84 > 86
 				q(76983,{ repeatable = true }),
@@ -1195,7 +1195,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timelin
 				q(76707, name(HEADERS.Item, 207047)),	-- Account-Wide trigger when item 207047 looted
 				q(76706, name(HEADERS.Item, 207048)),	-- Account-Wide trigger when item 207048 looted
 				q(76705, name(HEADERS.Item, 207049)),	-- Account-Wide trigger when item 207049 looted
-			}),
+			})),
 		}),
 	}),
-})));
+}));

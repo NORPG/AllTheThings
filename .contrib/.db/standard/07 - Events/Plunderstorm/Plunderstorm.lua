@@ -529,8 +529,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, applyclassicphase(WRATH_
 -- #endif
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
-		n(PLUNDERSTORM, {
+	expansion(EXPANSION.DF, {
+		n(PLUNDERSTORM, sharedData({ timeline = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
 			q(80110),	-- First WQ of the Day
 			q(80262),	-- Renown 6 - Shabby Swabbie outfit unlocked in Plunderstorm
 			q(81657),	-- Renown 16 - Marveouls Multi-Shot unlocked in Plunderstorm
@@ -559,11 +559,11 @@ root(ROOTS.HiddenQuestTriggers, {
 			-- q(79464),	-- [DNT] Renown Reward 002
 			-- q(79465),	-- [DNT] Renown Reward 003
 			-- q(79466),	-- [DNT] Renown Reward 004
-		}),
-	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_7, REMOVED_11_1_0 } }, {
+		})),
+	}),
+	expansion(EXPANSION.TWW, {
 		n(PLUNDERSTORM, {
-			n(PLUNDERSTORE, {
+			n(PLUNDERSTORE, sharedData({ timeline = { ADDED_11_0_7, REMOVED_11_1_0 } }, {
 				q(86212),	-- Purchased Swabbie's Shovel
 				q(86213),	-- Purchased Swabbie's Oar
 				q(86218),	-- Purchased Plunderlord's Stormridden Neck-Severer
@@ -584,8 +584,8 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(86252),	-- Purchased Plunderlord's Stormridden Cinch
 				q(86256),	-- Purchased Plunderlord's Stormridden Trousers
 				q(86260),	-- Purchased Plunderlord's Stormridden Trousers
-			}),
-			q(89346),	-- Opening Storm-Singed Plunder
+			})),
+			q(89346, { timeline = { ADDED_11_0_7, REMOVED_11_1_0 } }),	-- Opening Storm-Singed Plunder
 		}),
-	})),
+	}),
 });

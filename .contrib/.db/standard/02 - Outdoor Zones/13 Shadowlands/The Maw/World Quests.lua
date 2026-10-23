@@ -3,14 +3,11 @@
 ---------------------------------------------------
 
 maproot(SHADOWLANDS, THE_MAW, {
-	timeline = { ADDED_9_1_0 },
-	groups = {
-		n(WORLD_QUESTS, {
-			q(64273, {	-- Containing the Helsworn
-				sourceQuests = { 63622 },	-- Victory in Our Name
-				isWorldQuest = true,
-				isWeekly = true,
-			}),
+	n(WORLD_QUESTS, sharedData({ timeline = { ADDED_9_1_0 } }, {
+		q(64273, {	-- Containing the Helsworn
+			sourceQuests = { 63622 },	-- Victory in Our Name
+			isWorldQuest = true,
+			isWeekly = true,
 		}),
-	},
+	})),
 });

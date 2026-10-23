@@ -4416,7 +4416,7 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 		-- #endif
 		-- Crieve NOTE: Inscription came out with Wrath and the other sections had like no content and a bunch of overlap.
 		-- So I merged them into Wrath for clarity.
-		applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
+		applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, {
 			n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 				ach(18725, {	-- Best Stellar
 					i(208421),	-- Compendium of the New Moon (TOY!)
@@ -4586,8 +4586,8 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 					r(61120),	-- Master's Inscription of the Storm
 				}),
 			}),
-		}))),
-		applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, bubbleDownSelf({ timeline = { ADDED_4_0_3 } }, {
+		})),
+		applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
 			filter(RECIPES, {
 				r(86008, {	-- Inscription (Cata)
 					collectible = false,	-- the profession itself is not a recipe
@@ -4696,7 +4696,7 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 				}),
 				-- #endif
 			}),
-		}))),
+		})),
 		applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, {
 			filter(RECIPES, {
 				cat(779, {	-- Inks
