@@ -959,10 +959,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
 			n(FACTIONS, {
-				n(EMISSARY_QUESTS, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
-					q(46794),	-- Paragon of the Court
-					q(46800),	-- Paragon of the Wardens
-				})),
+				n(EMISSARY_QUESTS, {
+					q(46794, { timeline = { ADDED_7_2_0 } }),	-- Paragon of the Court
+					q(46800, { timeline = { ADDED_7_2_0 } }),	-- Paragon of the Wardens
+				}),
 			}),
 			n(QUESTS, {
 				q(37526),	-- Farondis Murder Flag - triggers between turning in "The Tidestone: Shattered" (questID 37469) and starting "Save Yourself" (questID 37530)

@@ -144,15 +144,18 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(UNDERMINE, bubbleDownSelf({ timeline = { ADDED_11_1_0 } }, {
-			n(SHIPPING_AND_HANDLING, {
-				n(EVENT_COMPLETION, {
-					q(86299, { name = "Looted Breakneck Cabbie's Coat" }),	-- Looted Breakneck Cabbie's Coat
-					q(86300, { name = "Looted Violet Goblin Shredder" }),	-- Looted Violet Goblin Shredder
-					q(86302, { name = "Looted Mutt" }),	-- Looted Mutt
-					q(86303, { name = "Looted Personal-Use Sapper" }),	-- Looted Personal-Use Sapper
+		m(UNDERMINE, {
+			timeline = { ADDED_11_1_0 },
+			groups = {
+				n(SHIPPING_AND_HANDLING, {
+					n(EVENT_COMPLETION, {
+						q(86299, { name = "Looted Breakneck Cabbie's Coat" }),	-- Looted Breakneck Cabbie's Coat
+						q(86300, { name = "Looted Violet Goblin Shredder" }),	-- Looted Violet Goblin Shredder
+						q(86302, { name = "Looted Mutt" }),	-- Looted Mutt
+						q(86303, { name = "Looted Personal-Use Sapper" }),	-- Looted Personal-Use Sapper
+					}),
 				}),
-			}),
-		})),
+			},
+		}),
 	}),
 }));

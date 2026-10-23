@@ -94,11 +94,14 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		m(MAP.MIDNIGHT.THE_COILED_ISLE, {
-			n(CURSE_SURGES, bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {
-				n(RARES, {
-					q(97333),	-- Can be triggered from any of the Cursed Surge bosses
+			timeline = { ADDED_12_1_0 },
+			groups = {
+				n(CURSE_SURGES, {
+					n(RARES, {
+						q(97333),	-- Can be triggered from any of the Cursed Surge bosses
+					}),
 				}),
-			})),
+			},
 		}),
 	}),
 }));

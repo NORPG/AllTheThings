@@ -432,7 +432,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			n(QUESTS, {
 				q(95669, { isDaily = true }),	-- [DNT] Bonus Exp, Triggers Randomly. First Rare kill of the day, completing WQ objectives, etc.
 			}),
-			n(RARES, bubbleDownSelf({
+			n(RARES, sharedData({
 				timeline = { ADDED_12_0_0, REMOVED_12_0_0 },	-- Rare questIDs were removed third day of the pre-patch to make them always drop the gear
 			}, {
 				q(91473),	-- Archbishop Benedictus

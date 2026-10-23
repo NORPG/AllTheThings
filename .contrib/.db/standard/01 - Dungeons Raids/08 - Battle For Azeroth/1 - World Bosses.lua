@@ -296,19 +296,25 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 			}),
 		},
 	}),
-	m(NZOTH_ASSAULT_ULDUM, bubbleDownSelf({ timeline = { ADDED_8_3_0 } }, {
-		n(WORLD_BOSSES, {
-			q(58510),	-- Vuk'laz the Earthbreaker first kill??
-			q(58514),	-- Vuk'laz the Earthbreaker bonus roll
-		}),
-	}));
-	m(NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS, bubbleDownSelf({ timeline = { ADDED_8_3_0 } }, {
-		n(WORLD_BOSSES, {
-			q(58508),	-- Grand Empress Shek'zara first kill??
-			q(58512),	-- Grand Empress Shek'zara bonus roll
-			-- q(58770),	-- Grand Empress Shek'zara bonus roll
-		}),
-	}));
+	m(NZOTH_ASSAULT_ULDUM, {
+		timeline = { ADDED_8_3_0 },
+		groups = {
+			n(WORLD_BOSSES, {
+				q(58510),	-- Vuk'laz the Earthbreaker first kill??
+				q(58514),	-- Vuk'laz the Earthbreaker bonus roll
+			}),
+		},
+	});
+	m(NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS, {
+		timeline = { ADDED_8_3_0 },
+		groups = {
+			n(WORLD_BOSSES, {
+				q(58508),	-- Grand Empress Shek'zara first kill??
+				q(58512),	-- Grand Empress Shek'zara bonus roll
+				-- q(58770),	-- Grand Empress Shek'zara bonus roll
+			}),
+		},
+	});
 	m(ZANDALAR, {
 		m(NAZMIR, {
 			n(WORLD_BOSSES, {

@@ -1293,7 +1293,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(AZJ_KAHET, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+		m(AZJ_KAHET, {
 			header(HEADERS.Faction, FACTION_THE_SEVERED_THREADS, {
 				n(SEVERED_THREADS_PACT, {
 					-- General --
@@ -1490,6 +1490,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 					q(83821),
 				}),
 			}),
-		})),
+		}),
 	}),
 }));

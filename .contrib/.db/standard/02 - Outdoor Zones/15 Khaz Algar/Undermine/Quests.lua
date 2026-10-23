@@ -1650,22 +1650,25 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(UNDERMINE, bubbleDownSelf({ timeline = { ADDED_11_1_0 } }, {
-			n(QUESTS, {
-				-- During main story
-				q(85463),	-- [DNT] The Cartels of Undermine Renown Unlock (spellID 1213980)
-				-- Special Assignment Unlock trackers
-				q(85489, {repeatable=true}),	-- Special Assignment: Capstone 1 - Unlock (for Special Assignment: Boom! Headshot! (questID 85487))
-				q(85490, {repeatable=true}),	-- Special Assignment: Capstone 2 - Unlock (for Special Assignment: Security Detail (questID 85488))
-				-- ??
-				q(85813),	-- Pipe Valve @ 39.1, 59.1 (spellID 471248 - [DNT] Flag Tracking Quest - Flame Gasket Closed)
-				q(86608),	-- pop after wq 85466 (Hob or Cold) - some kind of counter/tracker for something?
-				-- When you pick up one of 4 cartel faction for a week
-				q(84951),	-- Bilgewater Cartel Weekly Contract
-				q(84954),	-- Blackwater Cartel Weekly Contract
-				q(84952),	-- Steamwheedle Cartel Weekly Contract
-				q(84953),	-- Venture Co. Weekly Contract
-			}),
-		})),
+		m(UNDERMINE, {
+			timeline = { ADDED_11_1_0 },
+			groups = {
+				n(QUESTS, {
+					-- During main story
+					q(85463),	-- [DNT] The Cartels of Undermine Renown Unlock (spellID 1213980)
+					-- Special Assignment Unlock trackers
+					q(85489, {repeatable=true}),	-- Special Assignment: Capstone 1 - Unlock (for Special Assignment: Boom! Headshot! (questID 85487))
+					q(85490, {repeatable=true}),	-- Special Assignment: Capstone 2 - Unlock (for Special Assignment: Security Detail (questID 85488))
+					-- ??
+					q(85813),	-- Pipe Valve @ 39.1, 59.1 (spellID 471248 - [DNT] Flag Tracking Quest - Flame Gasket Closed)
+					q(86608),	-- pop after wq 85466 (Hob or Cold) - some kind of counter/tracker for something?
+					-- When you pick up one of 4 cartel faction for a week
+					q(84951),	-- Bilgewater Cartel Weekly Contract
+					q(84954),	-- Blackwater Cartel Weekly Contract
+					q(84952),	-- Steamwheedle Cartel Weekly Contract
+					q(84953),	-- Venture Co. Weekly Contract
+				}),
+			},
+		}),
 	}),
 }));

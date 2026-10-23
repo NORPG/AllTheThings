@@ -1294,9 +1294,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
 		m(STORMHEIM, {
 			n(FACTIONS, {
-				n(EMISSARY_QUESTS, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
-					q(46798),	-- Paragon of the Valarjar
-				})),
+				n(EMISSARY_QUESTS, {
+					q(46798, { timeline = { ADDED_7_2_0 } }),	-- Paragon of the Valarjar
+				}),
 			}),
 			n(QUESTS, {
 				q(39607),	-- God-King Scene (Vault) - triggers when turning in "Ahead of the Game" (questID 39590)

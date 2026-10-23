@@ -361,8 +361,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 				q(44906),	-- Tracking Quest - Withered J'im bonus roll
 			}),
 		}),
-		m(BROKEN_SHORE, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
-			n(WORLD_BOSSES, {
+		m(BROKEN_SHORE, {
+			n(WORLD_BOSSES, sharedData({ timeline = { ADDED_7_2_0 } }, {
 				q(47084),	-- Tracking Quest - Apocron killID
 				q(47087),	-- Tracking Quest - Apocron bonus roll
 				q(47085),	-- Tracking Quest - Brutallus killID
@@ -371,8 +371,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 				q(47089),	-- Tracking Quest - Malificus bonus roll
 				q(47090),	-- Tracking Quest - Si'vash killID
 				q(47091),	-- Tracking Quest - Si'vash bonus roll
-			}),
-		})),
+			})),
+		}),
 		m(HIGHMOUNTAIN, {
 			n(WORLD_BOSSES, {
 				q(44503),	-- Tracking Quest - Drugon the Frostblood killID

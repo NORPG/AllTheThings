@@ -4402,7 +4402,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	n(DELVES, applyDataSelf({ timeline = { ADDED_11_0_2 } }, {
+	n(DELVES, {
 		n(BOUNTIFUL, sharedData({
 			isDaily = true,
 		},{	-- Bountiful Delve runs
@@ -4450,46 +4450,52 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(84818),	-- Zekvir pop in The Spiral Weave (2nd time in week, Tier 8)
 			q(84819),	-- Zekvir pop in Skittering Breach (2nd time in week, Tier 8), also in Nightfall Sanctum (unsure, Tier 3)
 		}),
-		n(DELVES_TWW_S2, applyDataSelf({ timeline = { ADDED_11_1_0_SEASONSTART } }, {
-			-- Delver's Journey Rewards
-			q(85204),	-- Delver's Dirigible Schematic: Flamethrower (spellID 467083)
-			q(85203),	-- Delver's Dirigible Schematic: Pipes (spellID 467082)
-			q(85202),	-- Delver's Dirigible Schematic: Harpoon (spellID 467081)
-			q(85201),	-- Delver's Dirigible Schematic: Baloon (spellID 467080)
-			q(85207),	-- Purchaseable Restored Coffer Keys (spellID 467093)
-			q(85200),	-- Delver's Dirigible Schematic: Green Paint (spellID 467076)
-			q(85210),	-- Delve-O-Bot 7001 (spellID 467097)
-			q(85206),	-- Warbound Equipment Set (spellID 467089)
-			q(85205),	-- Discounted Restored Coffer Key (spellID 467087)
-			-- q(86371, { timeline = { ADDED_11_1_7 } }),	-- Delver's Bounty weekly lockout (source doesn't matter) [linked to Item]
-			q(86438),	-- Opened first Nemesis Strongbox (first purple on account)
-			-- Underpin Invasion
-			q(87287, { isWeekly = true} ),	-- after opening Jettisoned Pile of Goblin-Bucks (objectID 507768), Second per week, Delve Tier doesn't matter
-			-- Overcharged Delves
-			-- Belt unlocks
-			q(90945, { timeline= { ADDED_11_1_7 } }),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
-			q(90946, { timeline= { ADDED_11_1_7 } }),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
-			q(90952, { timeline= { ADDED_11_1_7 } }),	-- Energy Shield ability (spellID 1238258); after learning Titan Force Shield (spellID 1225004) in delve console
-		})),
-		n(DELVES_TWW_S3, applyDataSelf({ timeline = { ADDED_11_2_0_SEASONSTART } }, {
-			-- Delver's Journey Rewards
-			q(88823),	-- Delver's Mana-Skimmer Schematic: Canister (spellID 1224293)
-			q(88825),	-- Delver's Mana-Skimmer Schematic: Emitter (spellID 1224295)
-			q(88824),	-- Delver's Mana-Skimmer Schematic: Energy Thrusters (spellID 1224294)
-			q(88826),	-- Purchaseable Restored Coffer Key (spellID 1224304)
-			q(88811),	-- Delver's Mana-Skimmer Schematic: Quad Glider (spellID 1224298)
-			q(88827),	-- Delver's Mana-Skimmer Schematic: Void Paint (spellID 1224319)
-			-- q(0),	-- Veteran's Warbound Battlegear Drop (spellID 1224320) // TODO: fix questiD since Blizzard are dumb
-			-- q(0),	-- The Delver Within (spellID 1238213) // TODO: fix questID since Blizzard are dumb
-			-- q(),	-- Delver's Mana-Bound Ethergate toy missing?
-			-- Invasion / Map
+		n(DELVES_TWW_S2, {
+			timeline = { ADDED_11_1_0_SEASONSTART },
+			groups = {
+				-- Delver's Journey Rewards
+				q(85204),	-- Delver's Dirigible Schematic: Flamethrower (spellID 467083)
+				q(85203),	-- Delver's Dirigible Schematic: Pipes (spellID 467082)
+				q(85202),	-- Delver's Dirigible Schematic: Harpoon (spellID 467081)
+				q(85201),	-- Delver's Dirigible Schematic: Baloon (spellID 467080)
+				q(85207),	-- Purchaseable Restored Coffer Keys (spellID 467093)
+				q(85200),	-- Delver's Dirigible Schematic: Green Paint (spellID 467076)
+				q(85210),	-- Delve-O-Bot 7001 (spellID 467097)
+				q(85206),	-- Warbound Equipment Set (spellID 467089)
+				q(85205),	-- Discounted Restored Coffer Key (spellID 467087)
+				-- q(86371, { timeline = { ADDED_11_1_7 } }),	-- Delver's Bounty weekly lockout (source doesn't matter) [linked to Item]
+				q(86438),	-- Opened first Nemesis Strongbox (first purple on account)
+				-- Underpin Invasion
+				q(87287, { isWeekly = true} ),	-- after opening Jettisoned Pile of Goblin-Bucks (objectID 507768), Second per week, Delve Tier doesn't matter
+				-- Overcharged Delves
+				-- Belt unlocks
+				q(90945, { timeline= { ADDED_11_1_7 } }),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
+				q(90946, { timeline= { ADDED_11_1_7 } }),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
+				q(90952, { timeline= { ADDED_11_1_7 } }),	-- Energy Shield ability (spellID 1238258); after learning Titan Force Shield (spellID 1225004) in delve console
+			},
+		}),
+		n(DELVES_TWW_S3, {
+			timeline = { ADDED_11_2_0_SEASONSTART },
+			groups = {
+				-- Delver's Journey Rewards
+				q(88823),	-- Delver's Mana-Skimmer Schematic: Canister (spellID 1224293)
+				q(88825),	-- Delver's Mana-Skimmer Schematic: Emitter (spellID 1224295)
+				q(88824),	-- Delver's Mana-Skimmer Schematic: Energy Thrusters (spellID 1224294)
+				q(88826),	-- Purchaseable Restored Coffer Key (spellID 1224304)
+				q(88811),	-- Delver's Mana-Skimmer Schematic: Quad Glider (spellID 1224298)
+				q(88827),	-- Delver's Mana-Skimmer Schematic: Void Paint (spellID 1224319)
+				-- q(0),	-- Veteran's Warbound Battlegear Drop (spellID 1224320) // TODO: fix questiD since Blizzard are dumb
+				-- q(0),	-- The Delver Within (spellID 1238213) // TODO: fix questID since Blizzard are dumb
+				-- q(),	-- Delver's Mana-Bound Ethergate toy missing?
+				-- Invasion / Map
 
-			-- First delve of day
+				-- First delve of day
 
-			-- Items (probably automation will do a thing, just in case)
-			-- q(89040),	-- Purchaseable Rare Delve Key - 1 (spellID 1225596) (itemID 238526)
-			-- q(89041),	-- Purchaseable Rare Delve Key - 2 (spellID 1225597) (itemID 238527)
-		})),
+				-- Items (probably automation will do a thing, just in case)
+				-- q(89040),	-- Purchaseable Rare Delve Key - 1 (spellID 1225596) (itemID 238526)
+				-- q(89041),	-- Purchaseable Rare Delve Key - 2 (spellID 1225597) (itemID 238527)
+			},
+		}),
 		q(85651),	-- Triggers with 'Delver's Call: The Sinkhole' (questID 83767)
 		q(85719, {name="Daily Account-Wide Delve Companion Bonus XP"}),	-- Bonus experience for companion on first delve completion of day
 
@@ -4533,5 +4539,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			timeline={ADDED_11_1_0_SEASONSTART},
 			isWeekly = true,
 		}),
-	})),
+	}),
 }));

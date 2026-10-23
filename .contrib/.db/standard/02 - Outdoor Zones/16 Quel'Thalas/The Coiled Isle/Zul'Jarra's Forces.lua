@@ -373,10 +373,13 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
-		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {
-			n(QUESTS, {
-				q(96363),	-- Hidden Tracking for Renown 10 Mount Questline
-			}),
-		})),
+		m(MAP.MIDNIGHT.THE_COILED_ISLE, {
+			timeline = { ADDED_12_1_0 },
+			groups = {
+				n(QUESTS, {
+					q(96363),	-- Hidden Tracking for Renown 10 Mount Questline
+				}),
+			},
+		}),
 	}),
 }));

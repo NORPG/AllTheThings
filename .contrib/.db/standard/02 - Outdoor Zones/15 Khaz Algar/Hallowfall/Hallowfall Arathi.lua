@@ -1525,7 +1525,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(HALLOWFALL, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+		m(HALLOWFALL, {
 			header(HEADERS.Faction, FACTION_HALLOWFALL_ARATHI, {
 				header(HEADERS.Quest, 76586, {	-- Spreading The Light
 					-- Hidden stuff in area, that require different light buffs
@@ -1594,6 +1594,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 					q(83343),	-- after turn in 80562 (Blossoming Delight), unlock ability to buy Darkstem Stew from vendor
 				}),
 			}),
-		})),
+		}),
 	}),
 }));

@@ -140,9 +140,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 			q(37672),	-- Short-Supply Reward - Rukhmar bonus roll
 		}),
 	}),
-	m(TANAAN_JUNGLE, bubbleDownSelf({ timeline = { ADDED_6_2_0 } }, {
-		n(WORLD_BOSSES, {
-			q(33069),	-- REUSEME - Supreme Lord Kazzak bonus roll
-		}),
-	})),
+	m(TANAAN_JUNGLE, {
+		timeline = { ADDED_6_2_0 },
+		groups = {
+			n(WORLD_BOSSES, {
+				q(33069),	-- REUSEME - Supreme Lord Kazzak bonus roll
+			}),
+		},
+	}),
 }));

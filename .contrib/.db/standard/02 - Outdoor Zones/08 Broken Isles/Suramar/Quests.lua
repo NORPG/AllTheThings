@@ -2364,9 +2364,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
 		m(SURAMAR, {
 			n(FACTIONS, {
-				n(EMISSARY_QUESTS, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
-					q(46799),	-- Paragon of the Nightfallen
-				})),
+				n(EMISSARY_QUESTS, {
+					q(46799, { timeline = { ADDED_7_2_0 } }),	-- Paragon of the Nightfallen
+				}),
 			}),
 			n(QUESTS, {
 				q(40975),	-- Arluin Bribe Tracking - give Arluin 800 ancient mana during "If Words Don't Work..." (questID 42840)

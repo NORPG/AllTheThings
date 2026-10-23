@@ -448,7 +448,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.DF, timelineSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(EXPANSION.DF, {
 		n(PVP, {
 			q(72376, {	-- looting first War Crate of the day
 				name = "Warmode Crate Looted",
@@ -472,8 +472,8 @@ root(ROOTS.HiddenQuestTriggers, {
 				isDaily = true,
 			}),
 		}),
-	})),
-	expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11_0_2 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		n(PVP, {
 			q(80415, {	-- after looting War Supply chest, first time per day
 				name = "First War Supply Chest of the Day!",
@@ -494,5 +494,5 @@ root(ROOTS.HiddenQuestTriggers, {
 				name = "Unbound Spoils Looted.",
 			}),
 		}),
-	})),
+	}),
 });

@@ -83,12 +83,15 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(UNDERMINE, bubbleDownSelf({ timeline = { ADDED_11_1_0 } }, {
-			header(HEADERS.Faction, FACTION_CARTELS_OF_UNDERMINE, {
-				n(CHETT, {
-					q(87296, name(HEADERS.Item, 235053, { isWeekly = true })),	-- Free C.H.E.T.T. List acquired (spellID 1219077)
+		m(UNDERMINE, {
+			timeline = { ADDED_11_1_0 },
+			groups = {
+				header(HEADERS.Faction, FACTION_CARTELS_OF_UNDERMINE, {
+					n(CHETT, {
+						q(87296, name(HEADERS.Item, 235053, { isWeekly = true })),	-- Free C.H.E.T.T. List acquired (spellID 1219077)
+					}),
 				}),
-			}),
-		})),
+			},
+		}),
 	}),
 }));

@@ -246,17 +246,20 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		timeline = { ADDED_12_0_1_SEASONSTART },
 		isWeekly = true,
 	},{
-		-- LFR
-		q(94560, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
-		q(94564, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
-		-- Normal
-		q(94561, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
-		q(94565, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
-		-- Heroic
-		q(94563, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
-		q(94567, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
-		-- Mythic
-		q(94562, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
-		q(94566, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
+		timeline = { ADDED_12_0_1_SEASONSTART },
+		groups = {
+			-- LFR
+			q(94560, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
+			q(94564, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
+			-- Normal
+			q(94561, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
+			q(94565, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
+			-- Heroic
+			q(94563, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
+			q(94567, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
+			-- Mythic
+			q(94562, name(HEADERS.NPC, 250802)),	-- Voidbreaker Throggar
+			q(94566, name(HEADERS.NPC, 250803)),	-- Gladius Morinas
+		},
 	})),
 }));

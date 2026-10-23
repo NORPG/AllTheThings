@@ -8605,22 +8605,22 @@ end);
 ]]--
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.DF, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
+	expansion(EXPANSION.DF, {
 		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
-			q(78204),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways I (spellID 423861)
+			q(78204, { timeline = { ADDED_10_1_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways I (spellID 423861)
 		})),
-	})),
-	expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11_0_7 } }, {
+	}),
+	expansion(EXPANSION.TWW, {
 		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
-			q(85877),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways II (spellID 471544)
+			q(85877, { timeline = { ADDED_11_0_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways II (spellID 471544)
 			q(86295, { timeline = { ADDED_11_1_5 } }),	-- Disturbance Detected: Black Temple
 			q(89211, { timeline = { ADDED_11_1_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways III (spellID 1229050)
 			q(92856, { timeline = { ADDED_11_2_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways IV (spellID 1258528)
 		})),
-	})),
-	expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDED_12_0_7 } }, {
+	}),
+	expansion(EXPANSION.MID, {
 		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
-			q(93509),	-- Gain Mastery of Timeways for 4 weeks during Turbulent Timeways V (spellID 1269518)
+			q(93509, { timeline = { ADDED_12_0_7 } }),	-- Gain Mastery of Timeways for 4 weeks during Turbulent Timeways V (spellID 1269518)
 		})),
-	})),
+	}),
 });

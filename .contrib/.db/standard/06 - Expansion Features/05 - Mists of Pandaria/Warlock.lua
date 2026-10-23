@@ -137,11 +137,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
 	cl(WARLOCK, bubbleDown({ classes = { WARLOCK } }, {
 		n(QUESTS, {
-			q(32725),	-- Warlock Green Fire Questline - Reached Kanrethad
-			q(32666),	-- Warlock Green Fire Questline - Reached Kanrethad
+			q(32725, { timeline = { ADDED_5_2_0 } }),	-- Warlock Green Fire Questline - Reached Kanrethad
+			q(32666, { timeline = { ADDED_5_2_0 } }),	-- Warlock Green Fire Questline - Reached Kanrethad
 		}),
 	})),
-}))));
+})));

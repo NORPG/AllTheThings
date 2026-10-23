@@ -520,7 +520,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(THE_RINGING_DEEPS, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+		m(THE_RINGING_DEEPS, {
 			header(HEADERS.Faction, FACTION_THE_ASSEMBLY_OF_THE_DEEPS, {
 				n(AWAKENING_THE_MACHINE, {
 					q(84631, {	-- Wave 5
@@ -546,6 +546,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 					q(84543),	-- "Disturbed Dirt" in Golgrin's Reach, Isle of Dorn. The mob "Waxen Bones" spawned. Quest trigger when clicking the dirt, not when killing the mob. // Discord   // I'm clicked on Earthen Console, spawned Wandering Scuttleshell that drop Odd Glob of Wax // Discord // Another Dirt pile but hallowfall this time..
 				}),
 			}),
-		})),
+		}),
 	}),
 }));

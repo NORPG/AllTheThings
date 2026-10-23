@@ -270,7 +270,7 @@ maproot(KHAZ_ALGAR, DORNOGAL, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(DORNOGAL, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+		m(DORNOGAL, {
 			n(QUESTS, {
 				-- q(79326),	-- after turn in questID 82153 (Embassies and Envoys), [DNT] Push RP Event (spellID 362105)
 				-- ^ seems like currently fire as 79328 instead with name 'Embassies and Envoys', could be horde counter part?
@@ -309,6 +309,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 					repeatable = true,
 				}),
 			}),
-		})),
+		}),
 	}),
 }));

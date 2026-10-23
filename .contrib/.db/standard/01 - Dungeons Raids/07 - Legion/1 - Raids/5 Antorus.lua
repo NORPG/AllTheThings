@@ -728,7 +728,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		inst(946, {
 			timeline = { ADDED_10_1_5 },
 			groups = {
-				q(77246, {timeline={ADDED_10_1_5}}),	-- after <Channel the power of your weapon into the gateway.> for Grimoire of the Xorothian Felhunter (itemID 208050)
+				q(77246),	-- after <Channel the power of your weapon into the gateway.> for Grimoire of the Xorothian Felhunter (itemID 208050)
 			},
 		}),
 	}),

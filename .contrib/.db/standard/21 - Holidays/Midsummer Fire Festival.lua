@@ -3701,22 +3701,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TBC, {
 		applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE_FESTIVAL_HEADER, {
-			n(QUESTS, bubbleDownSelf({ timeline = { ADDED_2_4_0 } }, {
-				q(11976),	-- Cross completes on completion of Shards of Ahune
-			})),
+			n(QUESTS, {
+				q(11976, { timeline = { ADDED_2_4_0 } }),	-- Cross completes on completion of Shards of Ahune
+			}),
 		})),
 	}),
 	expansion(EXPANSION.CATA, {
 		applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE_FESTIVAL_HEADER, {
-			n(QUESTS, bubbleDownSelf({ timeline = { ADDED_4_0_3 } }, {
+			n(QUESTS, {
 				q(28761),	-- obsolete "Honor the Flame" quest according to Wowhead, triggered together with "Honor the Flame" 11834 in Winterspring
-			})),
+			}),
 		})),
 	}),
 	expansion(EXPANSION.MID, {
 		applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE_FESTIVAL_HEADER, {
-			n(QUESTS, bubbleDownSelf({ timeline = { ADDED_12_0_7 } }, {
-			})),
+			n(QUESTS, {
+			}),
 		})),
 	}),
 });

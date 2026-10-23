@@ -881,9 +881,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	m(BROKEN_ISLES, {
 		m(VALSHARAH, {
 			n(FACTIONS, {
-				n(EMISSARY_QUESTS, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
-					q(46797),	-- Paragon of the Dreamweavers
-				})),
+				n(EMISSARY_QUESTS, {
+					q(46797, { timeline = { ADDED_7_2_0 } }),	-- Paragon of the Dreamweavers
+				}),
 			}),
 			n(QUESTS, {
 				q(38666),	-- entering the burning house during 38644	(The Farmsteads)

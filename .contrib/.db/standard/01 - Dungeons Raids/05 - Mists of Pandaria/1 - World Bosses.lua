@@ -1454,11 +1454,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 }));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, {
 	m(PANDARIA, {
-		m(ISLE_OF_GIANTS, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {
-			n(WORLD_BOSSES, {
-				q(32922),	-- Short-Supply Reward - Oondasta bonus roll
-			}),
-		})),
+		m(ISLE_OF_GIANTS, {
+			timeline = { ADDED_5_2_0 },
+			groups = {
+				n(WORLD_BOSSES, {
+					q(32922),	-- Short-Supply Reward - Oondasta bonus roll
+				}),
+			},
+		}),
 		m(ISLE_OF_THUNDER, {
 			timeline = { ADDED_5_2_0 },
 			groups = {

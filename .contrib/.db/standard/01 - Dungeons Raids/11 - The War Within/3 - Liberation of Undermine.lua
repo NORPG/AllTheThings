@@ -933,62 +933,65 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	inst(1296, bubbleDown({	-- Liberation of Undermine
 		isWeekly = true,
 	},{
-		-- LFR
-		q(88835, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-		q(88838, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
-		q(88842, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
-		q(88846, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-		q(88867, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-		q(88829, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-		q(88859, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-		q(88850, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-		q(88854, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-		-- Normal
-		q(88833, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-		q(88840),	-- King Flamespite/Professor Boomspark Trash
-		q(88844),	-- King Flamespite/Professor Boomspark Trash
-		q(88848, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-		q(88869, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-		q(88830, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-		q(88861, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-		q(88852, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-		q(88856, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-		-- Heroic
-		q(88836, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-		q(88837, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
-		q(88841, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
-		q(88845, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-		q(88866, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-		q(88831, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-		q(88858, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-		q(88849, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-		q(88853, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-		-- Mythic
-		q(88834, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-		q(88839),	-- King Flamespite/Professor Boomspark Trash
-		q(88843),	-- King Flamespite/Professor Boomspark Trash
-		q(88847, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-		q(88868, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-		q(88832, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-		q(88860, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-		q(88851, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-		q(88855, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-		-- All
-		q(89478, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash first per week any difficulty
-		q(89479, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash first per week any difficulty
-		q(89484, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash first per week any difficulty
-		q(89477, name(HEADERS.NPC, 229283)),	-- Scraps Trash first per week any difficulty
-		q(89482, name(HEADERS.NPC, 234640)),	-- Globikus Trash first per week any difficulty
-		q(89480, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash first per week any difficulty
-		q(89481, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash first per week any difficulty
+		timeline = { ADDED_11_1_0_SEASONSTART },
+		groups = {
+			-- LFR
+			q(88835, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
+			q(88838, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
+			q(88842, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
+			q(88846, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+			q(88867, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+			q(88829, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+			q(88859, name(HEADERS.NPC, 234640)),	-- Globikus Trash
+			q(88850, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+			q(88854, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
+			-- Normal
+			q(88833, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
+			q(88840),	-- King Flamespite/Professor Boomspark Trash
+			q(88844),	-- King Flamespite/Professor Boomspark Trash
+			q(88848, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+			q(88869, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+			q(88830, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+			q(88861, name(HEADERS.NPC, 234640)),	-- Globikus Trash
+			q(88852, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+			q(88856, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
+			-- Heroic
+			q(88836, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
+			q(88837, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
+			q(88841, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
+			q(88845, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+			q(88866, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+			q(88831, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+			q(88858, name(HEADERS.NPC, 234640)),	-- Globikus Trash
+			q(88849, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+			q(88853, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
+			-- Mythic
+			q(88834, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
+			q(88839),	-- King Flamespite/Professor Boomspark Trash
+			q(88843),	-- King Flamespite/Professor Boomspark Trash
+			q(88847, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+			q(88868, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+			q(88832, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+			q(88860, name(HEADERS.NPC, 234640)),	-- Globikus Trash
+			q(88851, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+			q(88855, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
+			-- All
+			q(89478, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash first per week any difficulty
+			q(89479, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash first per week any difficulty
+			q(89484, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash first per week any difficulty
+			q(89477, name(HEADERS.NPC, 229283)),	-- Scraps Trash first per week any difficulty
+			q(89482, name(HEADERS.NPC, 234640)),	-- Globikus Trash first per week any difficulty
+			q(89480, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash first per week any difficulty
+			q(89481, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash first per week any difficulty
 
-		q(89452),	-- Vexie Fullthrottle
-		q(89453),	-- Cauldron of Carnage
-		q(89454),	-- Rik Reverb
-		q(89455),	-- Stix Bunkjunker
-		q(89456),	-- Sprocketmonger Lockenstock
-		q(89457),	-- One-Armed Bandit
-		q(89458),	-- Mug'Zee
-		q(89459),	-- Chrome King Gallywix
+			q(89452),	-- Vexie Fullthrottle
+			q(89453),	-- Cauldron of Carnage
+			q(89454),	-- Rik Reverb
+			q(89455),	-- Stix Bunkjunker
+			q(89456),	-- Sprocketmonger Lockenstock
+			q(89457),	-- One-Armed Bandit
+			q(89458),	-- Mug'Zee
+			q(89459),	-- Chrome King Gallywix
+		},
 	})),
 }));

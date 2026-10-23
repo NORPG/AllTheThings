@@ -321,26 +321,29 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, n(DIABLO_EVENTS, bubbleDownSelf({ timeline = { ADDED_10_1_0} }, {
-	n(GREEDY_EMISSARY_EVENT, {
-		q(76216),	-- 'Bonus loot' if Tyrael's Charger unlearned / first goblin kill per day for account
-		-- #if AFTER 11.0
-		q(76215,{isDaily=true}),	-- Old daily treasure goblin tracker
-		-- #endif
-		--
-		q(91091, {timeline={ADDED_11_1_7}}),	-- Blood-Wrapped Treasure Bag was looted (itemID 246242)
-		q(91092, {timeline={ADDED_11_1_7}}),	-- Treasure Nabbin' Bag was looted (itemID 206007)
-		-- Hellcaller Chest triggers following HQTs after being opened. First ten account-wide per week contain 6x Hellstone Shard guaranteed, afterwards 1 shard guaranteed or a chance of 5.
-		q(91079, {timeline={ADDED_11_1_7}}),	-- 1st
-		q(91080, {timeline={ADDED_11_1_7}}),	-- 2nd
-		q(91081, {timeline={ADDED_11_1_7}}),	-- 3rd
-		q(91082, {timeline={ADDED_11_1_7}}),	-- 4th
-		q(91083, {timeline={ADDED_11_1_7}}),	-- 5th
-		q(91166, {timeline={ADDED_11_1_7}}),	-- 6th
-		q(91167, {timeline={ADDED_11_1_7}}),	-- 7th
-		q(91168, {timeline={ADDED_11_1_7}}),	-- 8th
-		q(91169, {timeline={ADDED_11_1_7}}),	-- 9th
-		q(91170, {timeline={ADDED_11_1_7}}),	-- 10th
-	}),
-})));
+root(ROOTS.HiddenQuestTriggers, n(DIABLO_EVENTS, {
+	timeline = { ADDED_10_1_0},
+	groups = {
+		n(GREEDY_EMISSARY_EVENT, {
+			q(76216),	-- 'Bonus loot' if Tyrael's Charger unlearned / first goblin kill per day for account
+			-- #if AFTER 11.0
+			q(76215,{isDaily=true}),	-- Old daily treasure goblin tracker
+			-- #endif
+			--
+			q(91091, {timeline={ADDED_11_1_7}}),	-- Blood-Wrapped Treasure Bag was looted (itemID 246242)
+			q(91092, {timeline={ADDED_11_1_7}}),	-- Treasure Nabbin' Bag was looted (itemID 206007)
+			-- Hellcaller Chest triggers following HQTs after being opened. First ten account-wide per week contain 6x Hellstone Shard guaranteed, afterwards 1 shard guaranteed or a chance of 5.
+			q(91079, {timeline={ADDED_11_1_7}}),	-- 1st
+			q(91080, {timeline={ADDED_11_1_7}}),	-- 2nd
+			q(91081, {timeline={ADDED_11_1_7}}),	-- 3rd
+			q(91082, {timeline={ADDED_11_1_7}}),	-- 4th
+			q(91083, {timeline={ADDED_11_1_7}}),	-- 5th
+			q(91166, {timeline={ADDED_11_1_7}}),	-- 6th
+			q(91167, {timeline={ADDED_11_1_7}}),	-- 7th
+			q(91168, {timeline={ADDED_11_1_7}}),	-- 8th
+			q(91169, {timeline={ADDED_11_1_7}}),	-- 9th
+			q(91170, {timeline={ADDED_11_1_7}}),	-- 10th
+		}),
+	},
+}));
 -- #endif

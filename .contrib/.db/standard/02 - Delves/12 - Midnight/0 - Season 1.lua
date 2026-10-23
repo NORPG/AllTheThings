@@ -398,17 +398,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	n(DELVES, {
-		timeline = { ADDED_12_0_1_SEASONSTART },
-		groups = {
-			n(DELVES_MID_S1, {
-				-- Seasonal Delver's Journey Rewards
-				--automated stuff
-				--q(93882),	-- Restored Coffer Key (itemID 263188)
-				--q(93883),	-- Restored Coffer Key (itemID 263191)
+		n(DELVES_MID_S1, {
+			-- Seasonal Delver's Journey Rewards
+			--automated stuff
+			--q(93882),	-- Restored Coffer Key (itemID 263188)
+			--q(93883),	-- Restored Coffer Key (itemID 263191)
 
-				--q(93686),	-- triggered after a delve
-				q(92888, name(HEADERS.NPC, 252892, {isWeekly=true})),	-- Nullaeus ? and ??
-			}),
-		},
+			--q(93686),	-- triggered after a delve
+			q(92888, name(HEADERS.NPC, 252892, {timeline = { ADDED_12_0_1_SEASONSTART }, isWeekly=true})),	-- Nullaeus ? and ??
+		}),
 	}),
 }))

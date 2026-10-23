@@ -351,14 +351,17 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(UNDERMINE, bubbleDownSelf({ timeline = { ADDED_11_1_0 } }, {
-			n(RARES, {	-- Orphaned Cartel Rare HQTs, used to trigger on each kill, no longer trigger at all?
-				q(85010),	-- Related to killing Darkfuse Precipitant
-				q(86298),	-- Related to killing M.A.G.N.O.
-				q(86307),	-- Related to killing Giovante
-				q(85777),	-- Related to killing Voltstrike
-				q(85778),	-- Related to killing Scrapchewer
-			}),
-		})),
+		m(UNDERMINE, {
+			timeline = { ADDED_11_1_0 },
+			groups = {
+				n(RARES, {	-- Orphaned Cartel Rare HQTs, used to trigger on each kill, no longer trigger at all?
+					q(85010),	-- Related to killing Darkfuse Precipitant
+					q(86298),	-- Related to killing M.A.G.N.O.
+					q(86307),	-- Related to killing Giovante
+					q(85777),	-- Related to killing Voltstrike
+					q(85778),	-- Related to killing Scrapchewer
+				}),
+			},
+		}),
 	}),
 }));

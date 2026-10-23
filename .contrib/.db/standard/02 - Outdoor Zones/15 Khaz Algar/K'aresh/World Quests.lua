@@ -189,19 +189,22 @@ maproot(KHAZ_ALGAR, KARESH, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(KARESH, bubbleDownSelf({ timeline = { ADDED_11_2_0 } }, {
-			n(WORLD_QUESTS, {
-				q(91075),	-- Triggered after completing 'Ecological Succession' (first time)
-				q(91179, name(HEADERS.Item, 244865,{isWeekly=true})),	-- Pinnacle Cache #1 of the week
-				q(91180, name(HEADERS.Item, 244865,{isWeekly=true})),	-- Pinnacle Cache #2 of the week
-				q(91193),	-- Special Assignment: Capstone 1 - Unlock
-				q(91203),	-- Special Assignment: Capstone 2 - Unlock
-				-- Restored Coffer Key (Pop from any weekly activity, orders (of activity) doesn't matter)
-				q(91175, name(HEADERS.Currency,3028,{isWeekly=true})),	-- 1st
-				q(91176, name(HEADERS.Currency,3028,{isWeekly=true})),	-- 2nd
-				q(91177, name(HEADERS.Currency,3028,{isWeekly=true})),	-- 3rd
-				q(91178, name(HEADERS.Currency,3028,{isWeekly=true})),	-- 4th
-			}),
-		})),
+		m(KARESH, {
+			timeline = { ADDED_11_2_0 },
+			groups = {
+				n(WORLD_QUESTS, {
+					q(91075),	-- Triggered after completing 'Ecological Succession' (first time)
+					q(91179, name(HEADERS.Item, 244865,{isWeekly=true})),	-- Pinnacle Cache #1 of the week
+					q(91180, name(HEADERS.Item, 244865,{isWeekly=true})),	-- Pinnacle Cache #2 of the week
+					q(91193),	-- Special Assignment: Capstone 1 - Unlock
+					q(91203),	-- Special Assignment: Capstone 2 - Unlock
+					-- Restored Coffer Key (Pop from any weekly activity, orders (of activity) doesn't matter)
+					q(91175, name(HEADERS.Currency,3028,{isWeekly=true})),	-- 1st
+					q(91176, name(HEADERS.Currency,3028,{isWeekly=true})),	-- 2nd
+					q(91177, name(HEADERS.Currency,3028,{isWeekly=true})),	-- 3rd
+					q(91178, name(HEADERS.Currency,3028,{isWeekly=true})),	-- 4th
+				}),
+			},
+		}),
 	}),
 }));

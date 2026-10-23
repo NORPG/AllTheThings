@@ -1011,17 +1011,14 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	n(EXPANSION_PRELAUNCH, {
-		timeline = { ADDED_9_0_1 },
-		groups = {
-			n(QUESTS, {
-				q(60490),	-- Triggers after completing "Advancing the Effort" and unlocking Icecrown dailies. Also triggered when starting the new phase at Ironwall Rampart. Maybe it's the zone story daily progression tracker?
-				q(60541),	--
-				q(60511),	-- Icecrown story - Advancing the effort (phase 2?). triggered after completing "Only Shadows Remain"
-				q(62808),	-- triggered when logging into a previously-120 character
-			}),
-			n(WORLD_QUESTS, {
-				q(62480),	-- triggered along with the Nathanos Blightcaller world quest (for killing Nathanos)
-			}),
-		},
+		n(QUESTS, sharedData({ timeline = { ADDED_9_0_1 } }, {
+			q(60490),	-- Triggers after completing "Advancing the Effort" and unlocking Icecrown dailies. Also triggered when starting the new phase at Ironwall Rampart. Maybe it's the zone story daily progression tracker?
+			q(60541),	--
+			q(60511),	-- Icecrown story - Advancing the effort (phase 2?). triggered after completing "Only Shadows Remain"
+			q(62808),	-- triggered when logging into a previously-120 character
+		})),
+		n(WORLD_QUESTS, {
+			q(62480, { timeline = { ADDED_9_0_1 } }),	-- triggered along with the Nathanos Blightcaller world quest (for killing Nathanos)
+		}),
 	}),
 }))

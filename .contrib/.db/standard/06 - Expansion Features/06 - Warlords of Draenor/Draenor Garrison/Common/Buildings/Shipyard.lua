@@ -364,23 +364,26 @@ root(ROOTS.ExpansionFeatures,
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	n(GARRISONS, {
-		n(BUILDINGS, sharedData({ timeline = { ADDED_6_2_0 } }, {	-- Buildings
+		n(BUILDINGS, {	-- Buildings
 			garrisonBuilding(207, {	-- Shipyard
-				q(39413),	-- Tracking Quest - Garrison/Shipyard Mission Table
-				q(39415),	-- Tracking Quest - Garrison/Shipyard Mission Table
-				q(39710),	-- Tracking Quest - Garrison/Shipyard Mission Table
-				q(39711),	-- Tracking Quest - Garrison/Shipyard Mission Table
-				q(39406),	-- Tracking Quest - related to weekly naval mission in the shipyard
-				q(39407),	-- Tracking Quest - related to weekly naval mission in the shipyard
-				q(39411),	-- Tracking Quest - related to weekly naval mission in the shipyard
-				-- q(39723),	-- Tracking Quest - related to rare naval missions in the shipyard
-				-- q(39724),	-- Tracking Quest - related to rare naval missions in the shipyard
-				-- q(39725),	-- Tracking Quest - related to rare naval missions in the shipyard
-				-- q(39750),	-- Tracking Quest - related to rare naval missions in the shipyard
-				q(39748),	-- Tracking Quest - related to (rare?) mission table in the Garrison
-				q(39749),	-- Tracking Quest - related to (rare?) mission table in the Garrison
-				q(39412),	-- Tracking Quest - something having to do with Naval Missions most likely (triggered with 39414)
+				timeline = { ADDED_6_2_0 },
+				groups = {
+					q(39413),	-- Tracking Quest - Garrison/Shipyard Mission Table
+					q(39415),	-- Tracking Quest - Garrison/Shipyard Mission Table
+					q(39710),	-- Tracking Quest - Garrison/Shipyard Mission Table
+					q(39711),	-- Tracking Quest - Garrison/Shipyard Mission Table
+					q(39406),	-- Tracking Quest - related to weekly naval mission in the shipyard
+					q(39407),	-- Tracking Quest - related to weekly naval mission in the shipyard
+					q(39411),	-- Tracking Quest - related to weekly naval mission in the shipyard
+					-- q(39723),	-- Tracking Quest - related to rare naval missions in the shipyard
+					-- q(39724),	-- Tracking Quest - related to rare naval missions in the shipyard
+					-- q(39725),	-- Tracking Quest - related to rare naval missions in the shipyard
+					-- q(39750),	-- Tracking Quest - related to rare naval missions in the shipyard
+					q(39748),	-- Tracking Quest - related to (rare?) mission table in the Garrison
+					q(39749),	-- Tracking Quest - related to (rare?) mission table in the Garrison
+					q(39412),	-- Tracking Quest - something having to do with Naval Missions most likely (triggered with 39414)
+				},
 			}),
-		})),
+		}),
 	}),
 }));

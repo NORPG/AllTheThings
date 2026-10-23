@@ -177,9 +177,9 @@ maproot(KHAZ_ALGAR, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		n(WORLD_QUESTS, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+		n(WORLD_QUESTS, {
 			q(83280, name(HEADERS.Item,228361,{isWeekly=true,})),	-- Granted additional reward from weekly caches #1
 			q(83281, name(HEADERS.Item,228361,{isWeekly=true,})),	-- Granted additional reward from weekly caches #2
-		})),
+		}),
 	}),
 }));

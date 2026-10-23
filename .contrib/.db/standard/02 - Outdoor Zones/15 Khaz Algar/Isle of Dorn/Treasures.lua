@@ -313,7 +313,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(ISLE_OF_DORN, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+		m(ISLE_OF_DORN, {
 			n(TREASURES, {
 				q(82227),	-- Extra HQT: Magical Treasure Chest
 				q(82253),	-- Extra HQT: Mushroom Cap
@@ -322,6 +322,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(79585),	-- Dalaran Sewer Turtle: Needs more time
 				q(82160),	-- Gathered all the Pearlescent Shellcrab.
 			}),
-		})),
+		}),
 	}),
 }));

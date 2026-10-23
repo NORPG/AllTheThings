@@ -2413,15 +2413,18 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_1_0, REMOVED_9_0_2_LAUNCH } }, applyclassicphase(MOP_PHASE_LANDFALL, {
+	expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LANDFALL, {
 		n(BRAWLERS_GUILD, {
-			n(QUESTS, {
-				q(32112),	-- FLAG - Been to Fight Club - completing first fight
-				q(32113),	-- FLAG - Been to Fight Club Today
-				q(32444),	-- FLAG - Earned Brawler Title (Weekly)
-			}),
+			timeline = { ADDED_5_1_0, REMOVED_9_0_2_LAUNCH },
+			groups = {
+				n(QUESTS, {
+					q(32112),	-- FLAG - Been to Fight Club - completing first fight
+					q(32113),	-- FLAG - Been to Fight Club Today
+					q(32444),	-- FLAG - Earned Brawler Title (Weekly)
+				}),
+			},
 		}),
-	})));
+	}));
 	expansion(EXPANSION.TWW, {
 		n(BRAWLERS_GUILD, {
 			n(QUESTS, sharedData({ timeline = { ADDED_11_2_7 } }, {

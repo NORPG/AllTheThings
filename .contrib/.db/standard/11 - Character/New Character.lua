@@ -1253,19 +1253,19 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	i(6948),	-- Hearthstone
 }));
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
+	expansion(EXPANSION.DF, {
 		n(NEW_CHARACTER, {
 			cl(EVOKER, {
-				q(74891),	-- Triggers on the first use of 'Soar' spell after 10.0.7 to get the 'Aerial Halt' (spellID 403092)
+				q(74891, { timeline = { ADDED_10_0_7 } }),	-- Triggers on the first use of 'Soar' spell after 10.0.7 to get the 'Aerial Halt' (spellID 403092)
 			}),
-			cl(WARLOCK, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
+			cl(WARLOCK, {
 				n(QUESTS, {
-					q(76444),	-- After completion of 'When Revenge Burns Green' (questID 75544)
-					q(77285),	-- After completion of 'When Revenge Burns Green' (questID 75544)
+					q(76444, { timeline = { ADDED_10_1_5 } }),	-- After completion of 'When Revenge Burns Green' (questID 75544)
+					q(77285, { timeline = { ADDED_10_1_5 } }),	-- After completion of 'When Revenge Burns Green' (questID 75544)
 				}),
-			})),
+			}),
 		}),
-	})),
+	}),
 	expansion(EXPANSION.TWW, {
 		n(NEW_CHARACTER, {
 			n(QUESTS, sharedData({ timeline = { ADDED_11_0_5 } }, {

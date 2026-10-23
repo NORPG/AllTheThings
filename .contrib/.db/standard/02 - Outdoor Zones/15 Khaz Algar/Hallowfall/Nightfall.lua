@@ -696,78 +696,81 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(HALLOWFALL, {
-			n(NIGHTFALL, bubbleDownSelf({ timeline = { ADDED_11_1_5 } }, {
-				q(90105, {isDaily=true}),	-- Bonus reputation per day for 1st event when you filled progress bar
-				-- after opening Arathi Champion's Spoils (237760) per slot as was for Siren Islands?
-				-- seems like one per Arathi XX set and one per Nightfall XX set?
-				q(88686),	-- 2H weapon (agi/str weapon) / Arathi Crusader's Halberd (itemID 237792)
-				-- q(??),	-- 2H weapon (agi/str weapon) / Nightfall Darkcaster's Halberd (itemID ??)
-				q(88685),	-- 1H weapon (caster/off spec) / Arathi Abbot's Kris (itemID 237803)
-				q(88895),	-- 1H weapon (caster/off spec) / Nightfall Darkcaster's Kris (itemID 237787)
-				q(88684),	-- OH weapon (caster/off spec) / Arathi Abbot's Implement (itemID 237801)
-				q(88896),	-- OH weapon (caster/off spec) / Nightfall Darkcaster's Implement (itemID 237785) (it was looted from boss during nightfall event)
-				q(88687, {	-- Arathi Crusader Set Cape Unlock
-					-- name = "Unlocked Cape Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
-				}),
-				q(88692, {	-- Arathi Crusader Set Chest Unlock
-					name = "Unlocked Chest Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
-				}),
-				q(88689, {	-- Arathi Crusader Set Belt Unlock
-					name = "Unlocked Belt Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
-				}),
-				q(88691, {	-- Arathi Crusader Set Feet Unlock
-					name = "Unlocked Feet Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
-				}),
-				q(88690, {	-- Arathi Crusader Set Hands Unlock
-					name = "Unlocked Hands Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
-				}),
-				q(88695, {	-- Arathi Crusader Set Head Unlock
-					name = "Unlocked Head Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
-				}),
-				q(88693, {	-- Arathi Crusader Set Legs Unlock
-					name = "Unlocked Legs Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
-				}),
-				q(88694, {	-- Arathi Crusader Set Shoulder Unlock
-					name = "Unlocked Shoulder Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
-				}),
-				q(88688, {	-- Arathi Crusader Set Wrists Unlock
-					name = "Unlocked Wrist Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
-				}),
-				-- q(??),	-- Cape / Nightfall Curseblade Cape (itemID 237444)
-				q(88888),	-- Chest / Nightfall Curseblade's Vest
-				-- q(??),	-- Feet / Nightfall Curseblade's Waders (itemID 237446)
-				q(88890),	-- Hands / Nightfall Curseblade's Grips (itemID 237447) (it was looted from Dissenter Fervormyt?)
-				-- q(??),	-- Legs / Nightfall Curseblade's Breeches (itemID 237448)
-				q(88683),	-- Neck / Clergyman's Anointed Pendant (itemID 237432)
-				q(88682),	-- Ring / Divine Loop of the Crusader (itemID 237431)
-				-- q(??),	-- Shoulder / Nightfall Curseblade's Shoulderpads (itemID 237449)
-				q(88681),	-- Trinket 1 / Shining Arathor Insignia (itemID 225947)
-				q(88680),	-- Trinket 2 / Hallowed Tome of the Cleric (itemID 237494)
-				-- q(??),	-- Wrists / Nightfall Curseblade's Bindings (itemID 237451)
-				-- after turn in weekly?
-				q(88898),	-- after turn in Radiant Incursion: Rak-Zakaz (88945)
-				q(88893),	-- after turn in Radiant Incursion: Sureki's End (88916)
-				q(88891),	-- after turn in Radiant Incursion: Toxins and Pheromones (88711)
-				q(88894),	-- after turn in Sureki Incursion: Hold the Wall (87475)
-				q(88889),	-- after turn in Sureki Incursion: Southern Swarm (87477)
-				q(88885),	-- after turn in Sureki Incursion: The Eastern Assault (87480)
-				-- ^ could be NYI on live cause now it seems like counter for achievementID 41998 (Turning the Venom Tide)
-				-- there new one now or it somehow reset (but flag still return as complete for above?)
-				q(88900),	-- Baleful Excerpt on Prophetic Death
-				q(88886),	--
-				q(88892),	--
-				q(88897),	--
-				q(88899),	--
-				q(88887),	--
-				q(91161),	-- Daily Rep Flame Radiance for killing Deepcrawler Tx'kesh (Ajz Kahet)
-				q(91162),	-- Daily Rep Flame Radiance for killing Kaheti Silk Hauler (Ajz Kahet)
-				q(91163),	-- Daily Rep Flame Radiance for killing Skrimisher Sa'zryk (Ajz Kahet)
-				q(91164),	-- Daily Rep Flame Radiance for killing Umbraclaw Matta (Ajz Kahet)
-				q(91165),	-- Daily Rep Flame Radiance for killing Webspeaker Grik Ik (Ajz Kahet)
-				q(81608),	-- Enter Azj'Kahet post-patch? [DNT] Vizier - Level 4 Unlock / 443686 [DNT] Dummy - Pact Backup / 1231879
-				--
-				q(92488, {timeline={ADDED_11_2_0}}),	-- Additional 600 crystals lockout per week per account, after opening The Flame Burns Eternal weekly satchel
-			})),
+			n(NIGHTFALL, {
+				timeline = { ADDED_11_1_5 },
+				groups = {
+					q(90105, {isDaily=true}),	-- Bonus reputation per day for 1st event when you filled progress bar
+					-- after opening Arathi Champion's Spoils (237760) per slot as was for Siren Islands?
+					-- seems like one per Arathi XX set and one per Nightfall XX set?
+					q(88686),	-- 2H weapon (agi/str weapon) / Arathi Crusader's Halberd (itemID 237792)
+					-- q(??),	-- 2H weapon (agi/str weapon) / Nightfall Darkcaster's Halberd (itemID ??)
+					q(88685),	-- 1H weapon (caster/off spec) / Arathi Abbot's Kris (itemID 237803)
+					q(88895),	-- 1H weapon (caster/off spec) / Nightfall Darkcaster's Kris (itemID 237787)
+					q(88684),	-- OH weapon (caster/off spec) / Arathi Abbot's Implement (itemID 237801)
+					q(88896),	-- OH weapon (caster/off spec) / Nightfall Darkcaster's Implement (itemID 237785) (it was looted from boss during nightfall event)
+					q(88687, {	-- Arathi Crusader Set Cape Unlock
+						-- name = "Unlocked Cape Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					}),
+					q(88692, {	-- Arathi Crusader Set Chest Unlock
+						name = "Unlocked Chest Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					}),
+					q(88689, {	-- Arathi Crusader Set Belt Unlock
+						name = "Unlocked Belt Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					}),
+					q(88691, {	-- Arathi Crusader Set Feet Unlock
+						name = "Unlocked Feet Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					}),
+					q(88690, {	-- Arathi Crusader Set Hands Unlock
+						name = "Unlocked Hands Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					}),
+					q(88695, {	-- Arathi Crusader Set Head Unlock
+						name = "Unlocked Head Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					}),
+					q(88693, {	-- Arathi Crusader Set Legs Unlock
+						name = "Unlocked Legs Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					}),
+					q(88694, {	-- Arathi Crusader Set Shoulder Unlock
+						name = "Unlocked Shoulder Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					}),
+					q(88688, {	-- Arathi Crusader Set Wrists Unlock
+						name = "Unlocked Wrist Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+					}),
+					-- q(??),	-- Cape / Nightfall Curseblade Cape (itemID 237444)
+					q(88888),	-- Chest / Nightfall Curseblade's Vest
+					-- q(??),	-- Feet / Nightfall Curseblade's Waders (itemID 237446)
+					q(88890),	-- Hands / Nightfall Curseblade's Grips (itemID 237447) (it was looted from Dissenter Fervormyt?)
+					-- q(??),	-- Legs / Nightfall Curseblade's Breeches (itemID 237448)
+					q(88683),	-- Neck / Clergyman's Anointed Pendant (itemID 237432)
+					q(88682),	-- Ring / Divine Loop of the Crusader (itemID 237431)
+					-- q(??),	-- Shoulder / Nightfall Curseblade's Shoulderpads (itemID 237449)
+					q(88681),	-- Trinket 1 / Shining Arathor Insignia (itemID 225947)
+					q(88680),	-- Trinket 2 / Hallowed Tome of the Cleric (itemID 237494)
+					-- q(??),	-- Wrists / Nightfall Curseblade's Bindings (itemID 237451)
+					-- after turn in weekly?
+					q(88898),	-- after turn in Radiant Incursion: Rak-Zakaz (88945)
+					q(88893),	-- after turn in Radiant Incursion: Sureki's End (88916)
+					q(88891),	-- after turn in Radiant Incursion: Toxins and Pheromones (88711)
+					q(88894),	-- after turn in Sureki Incursion: Hold the Wall (87475)
+					q(88889),	-- after turn in Sureki Incursion: Southern Swarm (87477)
+					q(88885),	-- after turn in Sureki Incursion: The Eastern Assault (87480)
+					-- ^ could be NYI on live cause now it seems like counter for achievementID 41998 (Turning the Venom Tide)
+					-- there new one now or it somehow reset (but flag still return as complete for above?)
+					q(88900),	-- Baleful Excerpt on Prophetic Death
+					q(88886),	--
+					q(88892),	--
+					q(88897),	--
+					q(88899),	--
+					q(88887),	--
+					q(91161),	-- Daily Rep Flame Radiance for killing Deepcrawler Tx'kesh (Ajz Kahet)
+					q(91162),	-- Daily Rep Flame Radiance for killing Kaheti Silk Hauler (Ajz Kahet)
+					q(91163),	-- Daily Rep Flame Radiance for killing Skrimisher Sa'zryk (Ajz Kahet)
+					q(91164),	-- Daily Rep Flame Radiance for killing Umbraclaw Matta (Ajz Kahet)
+					q(91165),	-- Daily Rep Flame Radiance for killing Webspeaker Grik Ik (Ajz Kahet)
+					q(81608),	-- Enter Azj'Kahet post-patch? [DNT] Vizier - Level 4 Unlock / 443686 [DNT] Dummy - Pact Backup / 1231879
+					--
+					q(92488, {timeline={ADDED_11_2_0}}),	-- Additional 600 crystals lockout per week per account, after opening The Flame Burns Eternal weekly satchel
+				},
+			}),
 		}),
 	}),
 }));

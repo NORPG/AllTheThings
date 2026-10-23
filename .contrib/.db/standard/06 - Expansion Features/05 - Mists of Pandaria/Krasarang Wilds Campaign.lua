@@ -1375,25 +1375,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LANDFALL, {
 	m(KRASARANG_WILDS, {
 		faction(FACTION_DOMINANCE_OFFENSIVE, {
-			n(QUESTS, {
-				q(32306),	-- Lumber Collection Tracking - triggered during Work Order: Lumber
-				q(32361),	-- triggered after turning in #32352, "A Gathering Storm," part of the Dominance Offensive campaign
-				q(32364),	-- triggered after turning in #32448, "Ties with the Past," part of the Dominance Offensive campaign
-				q(32437),	-- Tracking Event: Saw Sarannha 1 - triggered at the end of "The Divine Bell," part of the Dominance Offensive campaign
-				q(32438),	-- Tracking Event: Saw Sarannha 2 - triggered at the end of "The Divine Bell," part of the Dominance Offensive campaign
-			}),
+			timeline = { ADDED_5_1_0 },
+			groups = {
+				n(QUESTS, {
+					q(32306),	-- Lumber Collection Tracking - triggered during Work Order: Lumber
+					q(32361),	-- triggered after turning in #32352, "A Gathering Storm," part of the Dominance Offensive campaign
+					q(32364),	-- triggered after turning in #32448, "Ties with the Past," part of the Dominance Offensive campaign
+					q(32437),	-- Tracking Event: Saw Sarannha 1 - triggered at the end of "The Divine Bell," part of the Dominance Offensive campaign
+					q(32438),	-- Tracking Event: Saw Sarannha 2 - triggered at the end of "The Divine Bell," part of the Dominance Offensive campaign
+				}),
+			},
 		}),
 		faction(FACTION_OPERATION_SHIELDWALL, {
-			n(QUESTS, {
-				q(32357),	-- Tracking Event: Event Complete - triggers after watching the RP after turning in "Heart of the Alliance" (questID 32316)
-				q(32356),	-- Tracking Event: Ambassadors Summoned - triggers "Heart of the Alliance" completion
-				q(32395),	-- Tracking Event: Saw Avartu - triggered while on "The Divine Bell," part of the Operation: Shieldwall campaign (at the end of the quest before killing Avartu)
-				q(32339),	-- Rebuilding the Mallet (Tracker) - triggered after turning in The Head and The Harmonic Ointment (The Handle was turned in earlier, but presumably requires all 3), part of the Operation: Shieldwall campaign
-				q(32365),	-- Tracking Event: Epilogue Complete - triggered after turning in "The Silence" and watching the RP, part of the Operation: Shieldwall campaign. didn't go off until I left the area and turned in another quest (which is a daily that doesn't normally have any additional tracking quests attached, so i know it was from the final campaign quest)
-			}),
+			timeline = { ADDED_5_1_0 },
+			groups = {
+				n(QUESTS, {
+					q(32357),	-- Tracking Event: Event Complete - triggers after watching the RP after turning in "Heart of the Alliance" (questID 32316)
+					q(32356),	-- Tracking Event: Ambassadors Summoned - triggers "Heart of the Alliance" completion
+					q(32395),	-- Tracking Event: Saw Avartu - triggered while on "The Divine Bell," part of the Operation: Shieldwall campaign (at the end of the quest before killing Avartu)
+					q(32339),	-- Rebuilding the Mallet (Tracker) - triggered after turning in The Head and The Harmonic Ointment (The Handle was turned in earlier, but presumably requires all 3), part of the Operation: Shieldwall campaign
+					q(32365),	-- Tracking Event: Epilogue Complete - triggered after turning in "The Silence" and watching the RP, part of the Operation: Shieldwall campaign. didn't go off until I left the area and turned in another quest (which is a daily that doesn't normally have any additional tracking quests attached, so i know it was from the final campaign quest)
+				}),
+			},
 		}),
 	}),
-}))));
+})));

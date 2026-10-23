@@ -436,46 +436,49 @@ maproot(KHAZ_ALGAR, SIREN_ISLE, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
-		m(SIREN_ISLE, bubbleDownSelf({ timeline = { ADDED_11_0_7 } }, {
-			n(QUESTS, {
-				-- A Choir of Citrines achievement tracking quests
-				-- q(85674),	-- Storm Sewer's Citrine
-				-- q(85673),	-- Old Salt's Bardic Citrine
-				-- q(85672),	-- Mariner's Hallowed Citrine
-				-- q(85707),	-- Legendary Skipper's Citrine
-				-- q(85708),	-- Seabed Leviathan's Citrine
-				-- q(85709),	-- Roaring War-Queen's Citrine
-				-- q(85676),	-- Stormbringer's Runed Citrine
-				-- q(85677),	-- Fathomdweller's Runed Citrine
-				-- q(85675),	-- Windsinger's Runed Citrine
-				-- q(85669),	-- Thunderlord's Crackling Citrine
-				-- q(85670),	-- Undersea Overseer's Citrine
-				-- q(85671),	-- Squall Sailor's Citrine
-				--
-				q(85070),	-- when Special Assignment npc unlocked for storm phase (pop talking head)
-				-- Snapdragon timer after quest
-				q(86566),	-- [DNT] Snapdragon Progress Update (spellID 1214684)
-				--
-				-- It went live:
-				-- it seems like questID fire per item drop for slot now
-				--
-				q(84839, name(HEADERS.Global, "INVTYPE_HEAD")),	-- leather / plate Head slot
-				q(84840, name(HEADERS.Global, "INVTYPE_SHOULDER")),	-- leather / mail / plate Shoulder slot
-				q(84841, name(HEADERS.Global, "INVTYPE_LEGS")),	-- leather / mail / plate Legs slot
-				q(84842, name(HEADERS.Global, "INVTYPE_CHEST")),	-- leather / mail Chest slot
-				q(84843, name(HEADERS.Global, "INVTYPE_FEET")),	-- leather / mail Waist slot
-				q(84844, name(HEADERS.Global, "INVTYPE_HAND")),	-- leather / mail Waist slot
-				q(84845, name(HEADERS.Global, "INVTYPE_WAIST")),	-- leather / mail Waist slot
-				q(84846, name(HEADERS.Global, "INVTYPE_WRIST")),	-- leather / mail Wrist slot
-				q(84847, name(HEADERS.Global, "INVTYPE_CLOAK")),	-- Back slot
-				q(84871, name(HEADERS.Global, "INVTYPE_WEAPONMAINHAND")),	-- MH weapon for current spec (2h?)
-				q(84872, name(HEADERS.Global, "INVTYPE_WEAPONOFFHAND")),	-- OH weapon (1h) or off-spec weapon
-				q(84873, name(HEADERS.Global, "INVTYPE_HOLDABLE")),	-- OH weapon (Caster)
-				q(84874, name(HEADERS.Global, "INVTYPE_NECK")),	-- Neck slot
-				q(84875, name(HEADERS.Global, "INVTYPE_FINGER")),	-- Ring slot
-				q(85956, name(HEADERS.Global, "INVTYPE_TRINKET")),	-- Trinket (agi/str) slot
-				q(85957, name(HEADERS.Global, "INVTYPE_TRINKET")),	-- Trinket (agi/int/str) slot
-			}),
-		})),
+		m(SIREN_ISLE, {
+			timeline = { ADDED_11_0_7 },
+			groups = {
+				n(QUESTS, {
+					-- A Choir of Citrines achievement tracking quests
+					-- q(85674),	-- Storm Sewer's Citrine
+					-- q(85673),	-- Old Salt's Bardic Citrine
+					-- q(85672),	-- Mariner's Hallowed Citrine
+					-- q(85707),	-- Legendary Skipper's Citrine
+					-- q(85708),	-- Seabed Leviathan's Citrine
+					-- q(85709),	-- Roaring War-Queen's Citrine
+					-- q(85676),	-- Stormbringer's Runed Citrine
+					-- q(85677),	-- Fathomdweller's Runed Citrine
+					-- q(85675),	-- Windsinger's Runed Citrine
+					-- q(85669),	-- Thunderlord's Crackling Citrine
+					-- q(85670),	-- Undersea Overseer's Citrine
+					-- q(85671),	-- Squall Sailor's Citrine
+					--
+					q(85070),	-- when Special Assignment npc unlocked for storm phase (pop talking head)
+					-- Snapdragon timer after quest
+					q(86566),	-- [DNT] Snapdragon Progress Update (spellID 1214684)
+					--
+					-- It went live:
+					-- it seems like questID fire per item drop for slot now
+					--
+					q(84839, name(HEADERS.Global, "INVTYPE_HEAD")),	-- leather / plate Head slot
+					q(84840, name(HEADERS.Global, "INVTYPE_SHOULDER")),	-- leather / mail / plate Shoulder slot
+					q(84841, name(HEADERS.Global, "INVTYPE_LEGS")),	-- leather / mail / plate Legs slot
+					q(84842, name(HEADERS.Global, "INVTYPE_CHEST")),	-- leather / mail Chest slot
+					q(84843, name(HEADERS.Global, "INVTYPE_FEET")),	-- leather / mail Waist slot
+					q(84844, name(HEADERS.Global, "INVTYPE_HAND")),	-- leather / mail Waist slot
+					q(84845, name(HEADERS.Global, "INVTYPE_WAIST")),	-- leather / mail Waist slot
+					q(84846, name(HEADERS.Global, "INVTYPE_WRIST")),	-- leather / mail Wrist slot
+					q(84847, name(HEADERS.Global, "INVTYPE_CLOAK")),	-- Back slot
+					q(84871, name(HEADERS.Global, "INVTYPE_WEAPONMAINHAND")),	-- MH weapon for current spec (2h?)
+					q(84872, name(HEADERS.Global, "INVTYPE_WEAPONOFFHAND")),	-- OH weapon (1h) or off-spec weapon
+					q(84873, name(HEADERS.Global, "INVTYPE_HOLDABLE")),	-- OH weapon (Caster)
+					q(84874, name(HEADERS.Global, "INVTYPE_NECK")),	-- Neck slot
+					q(84875, name(HEADERS.Global, "INVTYPE_FINGER")),	-- Ring slot
+					q(85956, name(HEADERS.Global, "INVTYPE_TRINKET")),	-- Trinket (agi/str) slot
+					q(85957, name(HEADERS.Global, "INVTYPE_TRINKET")),	-- Trinket (agi/int/str) slot
+				}),
+			},
+		}),
 	}),
 }));
