@@ -268,7 +268,7 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=10,rwp=50407,u=2}),
 p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
-crit(34637,{achID=6848,awp=80300,id=3,u=3})}})}}),
+crit(34637,{achID=6848,awp=80300,id=3,u=2})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),
@@ -307,16 +307,16 @@ ach(14283,{providers={{"s",307932}},u=2}),
 mnt(307932,{u=2}),
 h(-45,{u=2,g={
 q(57686,{description="You need to purchase Shadowlands Heroic Edition to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",lvl=50,qgs={158635},u=3,g={
-i(172954,{rwp=90205,u=2}),
-s(106490,172078,{f=3,rwp=90205,u=2}),
-s(106491,172079,{f=2,loc=43,rwp=90205,u=2}),
-s(106492,172080,{f=2,loc=44,rwp=90205,u=2}),
-s(106487,172075,{f=2,loc=40,rwp=90205,u=2}),
-s(106494,172082,{f=2,loc=46,rwp=90205,u=2}),
-s(106489,172077,{f=2,loc=42,rwp=90205,u=2}),
-s(106488,172076,{f=2,loc=41,rwp=90205,u=2}),
-s(106495,172083,{f=2,loc=47,rwp=90205,u=2}),
-s(106493,172081,{f=2,loc=45,rwp=90205,u=2})}})}})}}),
+i(172954,{u=3}),
+s(106490,172078,{f=3,u=3}),
+s(106491,172079,{f=2,loc=43,u=3}),
+s(106492,172080,{f=2,loc=44,u=3}),
+s(106487,172075,{f=2,loc=40,u=3}),
+s(106494,172082,{f=2,loc=46,u=3}),
+s(106489,172077,{f=2,loc=42,u=3}),
+s(106488,172076,{f=2,loc=41,u=3}),
+s(106495,172083,{f=2,loc=47,u=3}),
+s(106493,172081,{f=2,loc=45,u=3})}})}})}}),
 h(-523,{awp=80307,description="These rewards were made available to anyone who purchased Shadowlands Epic Edition.",rwp=90205,u=2,g={
 i(248091,{b=1,f=101,spellID=308067,u=2}),
 toy(172179,{b=1,u=2}),
@@ -1503,9 +1503,9 @@ ach(17358,{sourceQuests={73392}}),
 ach(17359,{sourceQuests={73393}})}),
 h(-39,{
 i(202183,{rwp=100200,u=2,g={
-i(204731,{b=2}),
-i(205189,{b=2,r=2}),
-i(205190,{b=2,r=1})}})}),
+i(204731,{b=2,u=2}),
+i(205189,{b=2,r=2,u=2}),
+i(205190,{b=2,r=1,u=2})}})}),
 h(-45,{
 q(73183,{qss={204731},rwp=100200,u=2}),
 q(75625,{qss={205189},r=2,rwp=100200,u=2}),

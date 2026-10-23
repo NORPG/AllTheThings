@@ -322,18 +322,18 @@ q(10906,{altQuests={10905,10907},awp=20005,coords={
 [100]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,learnedAt=325,lvl=68,nextQuests={10902},qgs={16588,18802},requireSkill=171,rwp=40300,u=2}),
 q(10902,{altQuests={10897,10899},awp=20005,coords={
 [111]={{45.8,20.4}}},cost={{"i",22831,5},{"i",28104,5},{"i",22834,5},{"i",31753,10}},description="Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",learnedAt=325,lvl=68,maps={273},qgs={19052},requireSkill=171,rwp=40300,sourceQuests={10906},u=2,g={
-r(28677,{requireSkill=28677})}}),
+r(28677,{requireSkill=28677,u=2})}}),
 q(10905,{altQuests={10906,10907},awp=20005,coords={
 [100]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,learnedAt=325,lvl=68,nextQuests={10897},qgs={16588,18802},requireSkill=171,rwp=40300,u=2}),
 q(10897,{altQuests={10899,10902},awp=20005,coords={
 [102]={{44.1,36.6}}},cost={{"i",22836,5},{"i",22832,5},{"i",22829,5}},description="Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",learnedAt=325,lvl=68,maps={266},qgs={17909},requireSkill=171,rwp=40300,sourceQuests={10905},u=2,g={
-qo(1,{crs={17975},providers={{"i",31744}},requireSkill=171}),
-r(28675,{requireSkill=28675})}}),
+qo(1,{crs={17975},providers={{"i",31744}},requireSkill=171,u=2}),
+r(28675,{requireSkill=28675,u=2})}}),
 q(10907,{altQuests={10905,10906},awp=20005,coords={
 [100]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,learnedAt=325,lvl=68,nextQuests={10899},qgs={16588,18802},requireSkill=171,rwp=40300,u=2}),
 q(10899,{altQuests={10897,10902},awp=20005,coords={
 [109]={{44.1,36.6}}},cost={{"i",23571,4}},description="Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",learnedAt=325,lvl=68,qgs={22427},requireSkill=171,rwp=40300,sourceQuests={10907},u=2,g={
-r(28672,{requireSkill=28672})}})}}),
+r(28672,{requireSkill=28672,u=2})}})}}),
 x(3,{awp=30003,requireSkill=171,g={
 q(14151,{awp=30200,coords={
 [125]={{42.4,32}}},phase=32,qgs={28703},repeatable=1,requireSkill=171,g={
@@ -764,17 +764,14 @@ r(3972,{itemID=4417,learnedAt=200,q=2,requireSkill=202,u=2}),
 r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=202,u=2})}})}})}}),
 x(4,{awp=40003,requireSkill=202}),
 x(5,{awp=50004,requireSkill=202})}),
-prof(129,{rwp=80001,g={
-x(1,{awp=10100,requireSkill=129,g={
+prof(129,{awp=10001,rwp=80001,g={
+x(1,{requireSkill=129,g={
 ach(131,{requireSkill=129}),
 ach(132,{requireSkill=129}),
 ach(133,{requireSkill=129})}}),
-x(2,{awp=20003,phase=17,requireSkill=129,g={
-ach(134,{awp=20005,requireSkill=129})}}),
-x(3,{awp=30003,phase=30,requireSkill=129,g={
-ach(135,{requireSkill=129}),
-ach(137,{providers={{"i",34722}},requireSkill=129}),
-ach(141,{providers={{"i",34722},{"i",53049},{"i",53051},{"i",72985},{"i",72986}},requireSkill=129})}}),
+x(2,{awp=20005,phase=17,requireSkill=129,g={
+ach(134,{requireSkill=129})}}),
+x(3,{awp=30003,phase=30,requireSkill=129}),
 x(4,{awp=40003,requireSkill=129,g={
 ach(4918,{requireSkill=129}),
 ach(5480,{providers={{"i",53051}},requireSkill=129})}}),
@@ -905,12 +902,12 @@ h(-12,{requireSkill=356,g={
 ach(4917,{requireSkill=356}),
 ach(5851,{awp=40200,requireSkill=356})}}),
 ah(67414,{awp=40001,description="Fishing Daily Quest Reward",providers={{"i",67414},{"i",112623}},requireSkill=356,type="i",g={
-p(211,{awp=40003,b=1,itemID=44983,npcID=33226,q=3,requireSkill=356,spellID=62561}),
-s(143883,33820,{awp=40003,b=1,f=4,loc=40,q=3,requireSkill=356}),
-s(176031,45991,{awp=40003,b=1,f=57,learnedAt=300,q=3,requireSkill=356}),
-s(176032,45992,{awp=40003,b=1,f=57,learnedAt=300,q=3,requireSkill=356}),
-i(67410,{awp=40003,requireSkill=356}),
-i(67388,{awp=40003,f=51,requireSkill=356})}})}}),
+p(211,{b=1,itemID=44983,npcID=33226,q=3,requireSkill=356,spellID=62561}),
+s(143883,33820,{b=1,f=4,loc=40,q=3,requireSkill=356}),
+s(176031,45991,{b=1,f=57,learnedAt=300,q=3,requireSkill=356}),
+s(176032,45992,{b=1,f=57,learnedAt=300,q=3,requireSkill=356}),
+i(67410,{requireSkill=356}),
+i(67388,{f=51,requireSkill=356})}})}}),
 x(5,{awp=50004,requireSkill=356,g={
 h(-12,{requireSkill=356,g={
 ach(6839,{requireSkill=356}),

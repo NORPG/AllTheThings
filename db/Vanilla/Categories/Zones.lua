@@ -1125,10 +1125,10 @@ s(156778,2369,{f=4,loc=44,lvl=5,q=1}),
 s(156776,2366,{f=4,loc=46,lvl=5,q=1}),
 s(156775,2364,{f=4,loc=42,lvl=5,q=1})}}),
 n(12796,{description="Found within the Hall of Legends.",pvp=1,r=1,g={
-mnt(22718,{b=1,itemID=18247,lvl=40,pvp=1,q=4,r=1,rwp=20001}),
-mnt(22721,{b=1,itemID=18246,lvl=40,pvp=1,q=4,races={2,5,8},rwp=20001}),
-mnt(22724,{b=1,itemID=18245,lvl=40,pvp=1,q=4,r=1,rwp=20001}),
-mnt(22722,{b=1,itemID=18248,lvl=40,pvp=1,q=4,races={2,5,8},rwp=20001})}}),
+mnt(22718,{b=1,itemID=18247,lvl=40,q=4,r=1,rwp=20001}),
+mnt(22721,{b=1,itemID=18246,lvl=40,q=4,races={2,5,8},rwp=20001}),
+mnt(22724,{b=1,itemID=18245,lvl=40,q=4,r=1,rwp=20001}),
+mnt(22722,{b=1,itemID=18248,lvl=40,q=4,races={2,5,8},rwp=20001})}}),
 n(3334,{coords={
 [1454]={{44,58.4}}},r=1}),
 n(12799,{coords={
@@ -9810,10 +9810,10 @@ s(156138,844,{f=5,loc=44,lvl=12,q=1}),
 s(156140,846,{f=5,loc=42,lvl=12,q=1}),
 s(156139,845,{f=5,loc=46,lvl=12,q=1})}}),
 n(12783,{description="Found within the Champion's Hall.",pvp=1,r=2,g={
-mnt(22719,{b=1,itemID=18243,lvl=40,pvp=1,q=4,races={3,7},rwp=20001}),
-mnt(22720,{b=1,itemID=18244,lvl=40,pvp=1,q=4,r=2,rwp=20001}),
-mnt(22717,{b=1,itemID=18241,lvl=40,pvp=1,q=4,r=2,rwp=20001}),
-mnt(22723,{b=1,itemID=18242,lvl=40,pvp=1,q=4,r=2,rwp=20001})}}),
+mnt(22719,{b=1,itemID=18243,lvl=40,q=4,races={3,7},rwp=20001}),
+mnt(22720,{b=1,itemID=18244,lvl=40,q=4,r=2,rwp=20001}),
+mnt(22717,{b=1,itemID=18241,lvl=40,q=4,r=2,rwp=20001}),
+mnt(22723,{b=1,itemID=18242,lvl=40,q=4,r=2,rwp=20001})}}),
 n(8666,{awp=11101,coords={
 [1453]={{64,38}}},r=2,g={
 p(46,{isLimited=1,itemID=8489,petTypeID=8,q=1,spellID=10679})}}),
@@ -9851,10 +9851,10 @@ n(1313,{coords={
 [1453]={{46.6,78.8}}},r=2,g={
 r(11476,{isLimited=1,itemID=9301,learnedAt=250,q=2,requireSkill=171})}}),
 n(12781,{description="Found within the Champion's Hall.",pvp=1,r=2,g={
-i(18606,{b=1,f=55,pvp=1,q=1}),
-i(18839,{b=1,f=55,lvl=35,pvp=1,q=1}),
-i(18841,{b=1,f=55,lvl=41,pvp=1,q=1}),
-s(162121,15198,{b=1,f=9,pvp=1,q=1})}}),
+i(18606,{b=1,f=55,q=1}),
+i(18839,{b=1,f=55,lvl=35,q=1}),
+i(18841,{b=1,f=55,lvl=41,q=1}),
+s(162121,15198,{b=1,f=9,q=1})}}),
 n(12805,{awp=10400,coords={
 [1453]={{73.8,53.4}}},r=2,rwp=30002,g={
 i(18664,{q=1,rwp=20001}),
@@ -14741,8 +14741,8 @@ q(603,{coords={
 [1416]={{18.8,78.5}}},lvl=32,qgs={2543},r=2,rwp=40003,sourceQuests={602}}),
 q(7838,{coords={
 [1434]={{29.6,47.4}}},cost={{"i",18706,12}},pvp=1,qgs={14508},repeatable=1,sourceQuests={7810},g={
-ach(396,{providers={{"i",19024}},pvp=1}),
-i(19024,{b=1,f=53,lore="Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",pvp=1,q=3})}}),
+ach(396,{providers={{"i",19024}}}),
+i(19024,{b=1,f=53,lore="Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",q=3})}}),
 q(7810,{coords={
 [1434]={{30.5,47.8}}},pvp=1,qss={18706}}),
 q(4621,{coords={
@@ -15183,12 +15183,12 @@ n(14492,{coords={
 h(-56,{
 o(179697,{coords={
 [1434]={{30.5,47.8}}},description="Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",pvp=1,g={
-ach(389,{pvp=1}),
-i(18706,{b=1,f=53,lore="Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",lvl=35,pvp=1,q=2}),
-s(163646,18711,{f=6,loc=43,lvl=45,pvp=1,q=3}),
-s(163645,18710,{f=5,loc=43,lvl=45,pvp=1,q=3}),
-s(163647,18712,{f=7,loc=43,lvl=45,pvp=1,q=3}),
-s(163644,18709,{f=4,loc=43,lvl=45,pvp=1,q=3})}}),
+ach(389),
+i(18706,{b=1,f=53,lore="Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",lvl=35,q=2}),
+s(163646,18711,{f=6,loc=43,lvl=45,q=3}),
+s(163645,18710,{f=5,loc=43,lvl=45,q=3}),
+s(163647,18712,{f=7,loc=43,lvl=45,q=3}),
+s(163644,18709,{f=4,loc=43,lvl=45,q=3})}}),
 o(2744,{coords={
 [1434]={{25.8,28}}},g={
 i(4611,{q=1}),

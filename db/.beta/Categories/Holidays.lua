@@ -934,10 +934,10 @@ crit(28382,{achID=1791,e=13,id=2,providers={{"i",110560}}}),
 crit(45642,{achID=1791,e=13,id=3,providers={{"i",140192}}}),
 crit(6674,{achID=1793,e=13,id=1})}}),
 ach(1786,{e=13,pvp=1,g={
-crit(6643,{achID=1786,e=13,maps={93,837,844,1366,1383},pvp=1}),
-crit(6642,{achID=1786,e=13,maps={91},pvp=1}),
-crit(6641,{achID=1786,e=13,maps={112},pvp=1}),
-crit(6644,{achID=1786,e=13,maps={92,859,1339},pvp=1})}}),
+crit(6643,{achID=1786,e=13,maps={93,837,844,1366,1383}}),
+crit(6642,{achID=1786,e=13,maps={91}}),
+crit(6641,{achID=1786,e=13,maps={112}}),
+crit(6644,{achID=1786,e=13,maps={92,859,1339}})}}),
 ach(275,{e=13,maps={111}})}}),
 h(-45,{e=13,g={
 q(10952,{awp=20100,e=13,isYearly=1,lvl=10,maps={100,111},providers={{"n",22818}},qss={31881},r=2,sourceQuests={10943},g={
@@ -1727,8 +1727,8 @@ i(44215,{e=1,f=51,lvl=13}),
 i(44213,{e=1,f=51,lvl=13})}}),
 q(29761,{awp=40300,coords={
 [407]={{47.3,78.9}}},cost={{"i",74034,12}},e=1,pvp=1,qgs={55402},repeatable=1,sourceQuests={29760},g={
-ach(6024,{e=1,pvp=1}),
-i(74035,{b=1,e=1,f=53,lvl=32,pvp=1,spellID=109996})}}),
+ach(6024,{e=1}),
+i(74035,{b=1,e=1,f=53,lvl=32,spellID=109996})}}),
 q(7897,{coords={
 [407]={{49.6,60.8}}},e=1,qgs={14841},repeatable=1,rwp=40300,u=2,g={
 i(19182,{b=1,e=1,f=55,u=2})}}),
@@ -1749,7 +1749,7 @@ q(7942,{coords={
 i(19182,{b=1,e=1,f=55,u=2})}}),
 q(29760,{awp=40300,coords={
 [407]={{47.3,78.9}}},e=1,providers={{"n",55402}},pvp=1,qss={74034},g={
-ach(6023,{e=1,pvp=1})}}),
+ach(6023,{e=1})}}),
 q(29512,{awp=40300,coords={
 [407]={{55,71.6}}},e=1,isMonthly=1,maxReputation={909,42000},qgs={14833},requireSkill=129,rwp=80001,u=2}),
 q(29509,{awp=40300,coords={
@@ -1921,9 +1921,9 @@ i(93724,{awp=50200,b=1,e=1,f=55}),
 crit(18237,{achID=6020,e=1,id=5})}})}}),
 h(-303,{e=1,pvp=1,g={
 o(209620,{coords={
-[407]={{44.6,78.9}}},description="Protip: Disable autoloot before looting this chest, and do not empty it. Everyone can loot their trinket this way.",e=1,pvp=1,g={
-i(74034,{awp=40300,b=1,e=1,f=53,lvl=32,pvp=1,spellID=109995}),
-heir(126949,{awp=60200,description="You need to have completed the Master Pit Fighter quest to loot this from the chest.",e=1,pvp=1,sourceQuests={29761},spellID=186325})}})}}),
+[407]={{44.6,78.9}}},description="Protip: Disable autoloot before looting this chest, and do not empty it. Everyone can loot their trinket this way.",e=1,g={
+i(74034,{awp=40300,b=1,e=1,f=53,lvl=32,spellID=109995}),
+heir(126949,{awp=60200,description="You need to have completed the Master Pit Fighter quest to loot this from the chest.",e=1,sourceQuests={29761},spellID=186325})}})}}),
 h(-46,{e=1,g={
 n(58336,{awp=50004,coords={
 [407]={{75.69,78.17}}},e=1,g={
@@ -8031,7 +8031,7 @@ s(8773,22281,{e=9,f=2,loc=42,rwp=70205,u=2}),
 s(8774,22282,{e=9,f=2,loc=42,rwp=70205,u=2}),
 s(8769,22277,{e=9,f=2,loc=42,rwp=70205,u=2})}}),
 i(50160,{b=1,cost={{"i",49927,20}},e=9,g={
-ach(1694,{e=9,providers={{"i",151770}},u=2}),
+ach(1694,{e=9,providers={{"i",151770}}}),
 s(89635,151770,{awp=70205,e=9,f=2,loc=42}),
 s(89633,151768,{awp=70205,e=9,f=2,loc=42}),
 s(89632,151767,{awp=70205,e=9,f=2,loc=42}),
@@ -8054,10 +8054,10 @@ i(49861,{cost={{"i",49927,1}},e=9,f=55,spellID=70243}),
 i(49856,{cost={{"i",49927,1}},e=9,f=55,spellID=70233}),
 i(49860,{cost={{"i",49927,1}},e=9,f=55,spellID=70244}),
 i(49909,{cost={{"i",49927,10}},e=9,g={
-i(22236,{e=9,f=55,spellID=71074,u=2}),
-i(22237,{e=9,f=55,spellID=71073,u=2}),
-i(22239,{e=9,f=55,spellID=71068,u=2}),
-i(22238,{e=9,f=55,spellID=71071,u=2})}}),
+i(22236,{e=9,f=55,spellID=71074}),
+i(22237,{e=9,f=55,spellID=71073}),
+i(22239,{e=9,f=55,spellID=71068}),
+i(22238,{e=9,f=55,spellID=71071})}}),
 i(21813,{b=1,cost={{"i",49927,2}},e=9,spellID=26678,u=2,g={
 i(21816,{e=9,f=106,spellID=70577,u=2}),
 i(21817,{e=9,f=106,spellID=70580,u=2}),

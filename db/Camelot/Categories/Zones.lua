@@ -1323,10 +1323,10 @@ s(156778,2369,{f=4,loc=44,lvl=5}),
 s(156776,2366,{f=4,loc=46,lvl=5}),
 s(156775,2364,{f=4,loc=42,lvl=5})}}),
 n(12796,{description="Found within the Hall of Legends.",pvp=1,r=1,g={
-mnt(22718,{b=1,itemID=18247,lvl=40,pvp=1}),
-mnt(22721,{b=1,itemID=18246,lvl=40,pvp=1}),
-mnt(22724,{b=1,itemID=18245,lvl=40,pvp=1}),
-mnt(22722,{b=1,itemID=18248,lvl=40,pvp=1,requireSkill=554})}}),
+mnt(22718,{b=1,itemID=18247,lvl=40}),
+mnt(22721,{b=1,itemID=18246,lvl=40}),
+mnt(22724,{b=1,itemID=18245,lvl=40}),
+mnt(22722,{b=1,itemID=18248,lvl=40,requireSkill=554})}}),
 n(3334,{coords={
 [1454]={{44,58.4}}},r=1}),
 n(12799,{coords={
@@ -11662,10 +11662,10 @@ s(156138,844,{f=5,loc=44,lvl=12}),
 s(156140,846,{f=5,loc=42,lvl=12}),
 s(156139,845,{f=5,loc=46,lvl=12})}}),
 n(12783,{description="Found within the Champion's Hall.",pvp=1,r=2,g={
-mnt(22719,{b=1,itemID=18243,lvl=40,pvp=1,requireSkill=553}),
-mnt(22720,{b=1,itemID=18244,lvl=40,pvp=1}),
-mnt(22717,{b=1,itemID=18241,lvl=40,pvp=1}),
-mnt(22723,{b=1,itemID=18242,lvl=40,pvp=1})}}),
+mnt(22719,{b=1,itemID=18243,lvl=40,requireSkill=553}),
+mnt(22720,{b=1,itemID=18244,lvl=40}),
+mnt(22717,{b=1,itemID=18241,lvl=40}),
+mnt(22723,{b=1,itemID=18242,lvl=40})}}),
 n(8666,{coords={
 [1453]={{64,38}}},r=2,g={
 p(46,{isLimited=1,itemID=8489,npcID=7386,spellID=10679})}}),
@@ -11703,16 +11703,16 @@ n(1313,{coords={
 [1453]={{55.6,85.6}}},r=2,g={
 r(11476,{isLimited=1,itemID=9301,learnedAt=265,requireSkill=171,skillID=2937})}}),
 n(12781,{description="Found within the Champion's Hall.",pvp=1,r=2,g={
-i(18606,{b=1,f=55,pvp=1,spellID=23034}),
-i(18839,{b=1,f=55,lvl=35,pvp=1,spellID=4042}),
-i(18841,{b=1,f=55,lvl=41,pvp=1,spellID=17530}),
-s(162121,15198,{b=1,f=9,pvp=1}),
-s(308202,272694,{b=1,f=9,pvp=1}),
+i(18606,{b=1,f=55,spellID=23034}),
+i(18839,{b=1,f=55,lvl=35,spellID=4042}),
+i(18841,{b=1,f=55,lvl=41,spellID=17530}),
+s(162121,15198,{b=1,f=9}),
+s(308202,272694,{b=1,f=9}),
 i(274445,{b=1,cost={{"c",1792,3500}},f=53,pvp=1,spellID=438273}),
 s(308207,272699,{b=1,cost={{"c",1792,3000},{"i",20559,10}},f=3,lvl=55,pvp=1}),
 s(308206,272698,{b=1,cost={{"c",1792,3000},{"i",20559,10}},f=3,lvl=55,pvp=1}),
 i(274969,{b=1,cost={{"c",1792,5000},{"i",274895,10}},f=51,lvl=55,pvp=1}),
-s(308203,272695,{b=1,f=9,pvp=1})}}),
+s(308203,272695,{b=1,f=9})}}),
 n(12805,{coords={
 [1453]={{76.8,65.8}}},r=2,g={
 i(18664),
@@ -17902,7 +17902,7 @@ q(603,{coords={
 [1416]={{18.8,78.5}}},lvl=32,qgs={2543},r=2,sourceQuests={602}}),
 q(7838,{coords={
 [1434]={{29.6,47.4}}},cost={{"i",18706,12}},pvp=1,qgs={14508},repeatable=1,sourceQuests={7810},g={
-i(19024,{b=1,f=53,lvl=50,pvp=1,spellID=23506})}}),
+i(19024,{b=1,f=53,lvl=50,spellID=23506})}}),
 q(7810,{coords={
 [1434]={{30.5,47.8}}},pvp=1,qss={18706}}),
 q(97328,{awp=16001,coords={
@@ -18390,12 +18390,12 @@ n(14492,{coords={
 h(-56,{
 o(179697,{coords={
 [1434]={{30.5,47.8}}},description="Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",pvp=1,g={
-i(18706,{b=1,f=53,lvl=35,pvp=1,spellID=1317285}),
-s(163646,18711,{f=6,loc=43,lvl=45,pvp=1}),
-s(163645,18710,{f=5,loc=43,lvl=45,pvp=1}),
-s(163647,18712,{f=7,loc=43,lvl=45,pvp=1}),
-s(163644,18709,{f=4,loc=43,lvl=45,pvp=1}),
-i(277534,{awp=16001,b=1,pvp=1,spellID=425798})}}),
+i(18706,{b=1,f=53,lvl=35,spellID=1317285}),
+s(163646,18711,{f=6,loc=43,lvl=45}),
+s(163645,18710,{f=5,loc=43,lvl=45}),
+s(163647,18712,{f=7,loc=43,lvl=45}),
+s(163644,18709,{f=4,loc=43,lvl=45}),
+i(277534,{awp=16001,b=1,spellID=425798})}}),
 o(2744,{coords={
 [1434]={{25.8,28}}},g={
 i(4611),

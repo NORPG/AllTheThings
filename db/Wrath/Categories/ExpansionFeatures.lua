@@ -354,7 +354,7 @@ p(216,{b=1,itemID=45022,petTypeID=1,q=3,r=1,spellID=62746}),
 cu(241)}}),
 q(13681,{awp=30100,coords={
 [118]={{74,24.6}}},isDaily=1,maps={120},OnUpdate=function(t)t.u=settings:GetUnobtainableFilter(32)and 2 or nil end,qgs={33435},rwp=40001,sourceQuests={13820},g={
-qo(1,{awp=30200,providers={{"i",45278},{"i",45281},{"o",194461},{"o",194463}}})}}),
+qo(1,{providers={{"i",45278},{"i",45281},{"o",194461},{"o",194463}}})}}),
 q(14074,{coords={
 [118]={{76.2,19.6}}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,phase=32,qgs={34880},r=2,sourceAchievements={3676},g={
 qo(1,{crs={34838,34839,34965},providers={{"i",46859},{"o",195274}}}),
@@ -626,7 +626,7 @@ cu(241)}}),
 q(14095,{crs={34925},description="Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,phase=32,qss={46955},sourceAchievements={2771,2817}}),
 q(13627,{awp=30100,coords={
 [118]={{74.2,24.6}}},isDaily=1,maps={127},OnUpdate=function(t)t.u=settings:GetUnobtainableFilter(32)and 2 or nil end,qgs={33434},rwp=40001,sourceQuests={13820},g={
-qo(1,{awp=30200,providers={{"i",45045},{"i",45046},{"n",33308}}})}}),
+qo(1,{providers={{"i",45045},{"i",45046},{"n",33308}}})}}),
 q(13625,{coords={
 [118]={{76.5,19.5}}},isDaily=1,qgs={33647,33843},qis={46069},r=2,sourceQuests={13828,13835,13837},g={
 qo(1,{providers={{"n",33229}}}),

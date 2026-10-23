@@ -384,7 +384,7 @@ p(216,{b=1,itemID=45022,npcID=33239,petTypeID=1,q=3,r=1,spellID=62746}),
 cu(241)}}),
 q(13681,{awp=30100,coords={
 [118]={{74,24.6}}},isDaily=1,maps={120},qgs={33435},rwp=40001,sourceQuests={13820},u=2,g={
-qo(1,{awp=30200,providers={{"i",45278},{"i",45281},{"o",194461},{"o",194463}}})}}),
+qo(1,{providers={{"i",45278},{"i",45281},{"o",194461},{"o",194463}},u=2})}}),
 q(14074,{coords={
 [118]={{76.2,19.6}}},isDaily=1,minReputation={1094,42000},OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.SILVER_COVENTANT_DAILY,phase=32,qgs={34880},r=2,sourceAchievements={3676},g={
 qo(1,{crs={34838,34839,34965},providers={{"i",46859},{"o",195274}}}),
@@ -656,7 +656,7 @@ cu(241)}}),
 q(14095,{crs={34925},description="Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",isDaily=1,OnClick=_.OnClickDB.PopoutLinkedAchievement,OnTooltip=_.OnTooltipDB.WithRequiredAchievement,OnUpdate=_.OnUpdateDB.CRUSADER_DAILY,phase=32,qss={46955},sourceAchievements={2771,2817}}),
 q(13627,{awp=30100,coords={
 [118]={{74.2,24.6}}},isDaily=1,maps={127},qgs={33434},rwp=40001,sourceQuests={13820},u=2,g={
-qo(1,{awp=30200,providers={{"i",45045},{"i",45046},{"n",33308}}})}}),
+qo(1,{providers={{"i",45045},{"i",45046},{"n",33308}},u=2})}}),
 q(13625,{coords={
 [118]={{76.5,19.5}}},isDaily=1,qgs={33647,33843},qis={46069},r=2,sourceQuests={13828,13835,13837},g={
 qo(1,{providers={{"n",33229}}}),
@@ -1961,7 +1961,7 @@ qo(1,{coords={
 [338]={{65.7,45.7}}},providers={{"i",69214},{"o",208423},{"o",208431}}})}}),
 q(29122,{awp=40100,coords={
 [198]={{27.1,61.9}}},isDaily=1,qgs={52671},sourceQuests={29101},g={
-qo(1,{awp=40200,coords={
+qo(1,{coords={
 [198]={{24.4,55.6}}},providers={{"n",52383}}})}}),
 q(29255,{coords={
 [338]={{50.6,87.3}}},isDaily=1,qgs={52489},sourceQuests={29254},g={
@@ -2065,7 +2065,7 @@ q(29289,{coords={
 qo(1,{providers={{"n",53249}}})}}),
 q(29162,{awp=40100,coords={
 [198]={{27.1,62}}},isDaily=1,qgs={52671},sourceQuests={29161},g={
-qo(1,{awp=40200,providers={{"i",69232},{"n",52749}}})}}),
+qo(1,{providers={{"i",69232},{"n",52749}}})}}),
 q(29272,{coords={
 [338]={{51.8,31}}},description="Anren Shadowseeker is found inside The Molten Flow, which requires you to pick 'Into the Fire' as the second stage of assault on the Molten Front.",qgs={53233},sourceQuests={29181},g={
 qo(1,{providers={{"n",53234}}}),
@@ -2815,13 +2815,13 @@ cu(391),
 crit(16718,{achID=5719,id=1,r=1})}}),
 q(27987,{awp=40001,coords={
 [245]={{72.95,60.95}}},isDaily=1,maxReputation={1177,42000},qgs={48254},r=2,g={
-qo(1,{awp=40003,providers={{"i",62818},{"o",206586}}}),
-cu(391,{awp=40003}),
+qo(1,{providers={{"i",62818},{"o",206586}}}),
+cu(391),
 crit(16693,{achID=5718,awp=40003,id=1,r=2})}}),
 q(28698,{awp=40001,coords={
 [245]={{55.8,78.45}}},isDaily=1,maxReputation={1178,42000},qgs={48361},r=1,g={
-qo(1,{awp=40003,providers={{"i",62818},{"o",206586}}}),
-cu(391,{awp=40003}),
+qo(1,{providers={{"i",62818},{"o",206586}}}),
+cu(391),
 crit(16727,{achID=5719,awp=40003,id=1,r=1})}}),
 q(27970,{coords={
 [245]={{73.75,57.6}}},isDaily=1,maxReputation={1177,42000},qgs={48255},r=2,g={
@@ -2835,8 +2835,8 @@ cu(391),
 crit(16716,{achID=5719,id=1,r=1})}}),
 q(28059,{awp=40001,coords={
 [245]={{73.4,59.2}}},isDaily=1,maxReputation={1177,42000},qgs={47240},r=2,g={
-qo(1,{awp=40003,providers={{"n",47447}}}),
-cu(391,{awp=40003}),
+qo(1,{providers={{"n",47447}}}),
+cu(391),
 crit(16686,{achID=5718,awp=40003,id=1,r=2})}}),
 q(28682,{coords={
 [245]={{53.55,80.6}}},isDaily=1,maxReputation={1178,42000},qgs={48358},r=1,g={
@@ -2880,8 +2880,8 @@ cu(391),
 crit(16687,{achID=5718,id=1,r=2})}}),
 q(28685,{awp=40001,coords={
 [245]={{53.55,80.6}}},isDaily=1,maxReputation={1178,42000},qgs={48358},r=1,g={
-qo(1,{awp=40003,crs={47130},providers={{"i",62921},{"o",206664}}}),
-cu(391,{awp=40003}),
+qo(1,{crs={47130},providers={{"i",62921},{"o",206664}}}),
+cu(391),
 crit(16721,{achID=5719,awp=40003,id=1,r=1})}}),
 q(27992,{coords={
 [245]={{74.8,59.6}}},isDaily=1,maxReputation={1177,42000},qgs={48250},r=2,g={
@@ -2895,13 +2895,13 @@ cu(391),
 crit(16733,{achID=5719,id=1,r=1})}}),
 q(28130,{awp=40001,coords={
 [245]={{73.4,59.2}}},isDaily=1,maxReputation={1177,42000},qgs={47240},r=2,g={
-qo(1,{awp=40003,providers={{"n",47627},{"n",47642},{"n",47657},{"n",47659}}}),
-cu(391,{awp=40003}),
+qo(1,{providers={{"n",47627},{"n",47642},{"n",47657},{"n",47659}}}),
+cu(391),
 crit(16695,{achID=5718,awp=40003,id=1,r=2})}}),
 q(28686,{awp=40001,coords={
 [245]={{53.55,80.6}}},isDaily=1,maxReputation={1178,42000},qgs={48358},r=1,g={
-qo(1,{awp=40003,providers={{"n",47627},{"n",47642},{"n",47657},{"n",47659}}}),
-cu(391,{awp=40003}),
+qo(1,{providers={{"n",47627},{"n",47642},{"n",47657},{"n",47659}}}),
+cu(391),
 crit(16729,{achID=5719,awp=40003,id=1,r=1})}}),
 q(27971,{coords={
 [245]={{73.75,57.6}}},isDaily=1,maxReputation={1177,42000},qgs={48255},r=2,g={
@@ -2915,8 +2915,8 @@ cu(391),
 crit(16717,{achID=5719,id=1,r=1})}}),
 q(27966,{awp=40001,coords={
 [245]={{74.8,59.6}}},isDaily=1,maxReputation={1177,42000},qgs={48250},r=2,g={
-qo(1,{awp=40003,crs={46569,46582,46586,46597},providers={{"i",62808}}}),
-cu(391,{awp=40003}),
+qo(1,{crs={46569,46582,46586,46597},providers={{"i",62808}}}),
+cu(391),
 crit(16690,{achID=5718,awp=40003,id=1,r=2})}}),
 q(28690,{coords={
 [245]={{54.9,79.3}}},isDaily=1,maxReputation={1178,42000},qgs={48363},r=1,g={
@@ -2960,13 +2960,13 @@ cu(391),
 crit(16689,{achID=5718,id=1,r=2})}}),
 q(28689,{awp=40001,coords={
 [245]={{54.9,79.3}}},isDaily=1,maxReputation={1178,42000},qgs={48363},r=1,g={
-qo(1,{awp=40003,providers={{"o",206570}}}),
-cu(391,{awp=40003}),
+qo(1,{providers={{"o",206570}}}),
+cu(391),
 crit(16723,{achID=5719,awp=40003,id=1,r=1})}}),
 q(27944,{awp=40001,coords={
 [245]={{73.75,57.6}}},isDaily=1,maxReputation={1177,42000},qgs={48255},r=2,g={
-qo(1,{awp=40003,providers={{"n",46508}}}),
-cu(391,{awp=40003}),
+qo(1,{providers={{"n",46508}}}),
+cu(391),
 crit(16697,{achID=5718,awp=40003,id=1,r=2})}}),
 q(28683,{coords={
 [245]={{55.2,81.3}}},isDaily=1,maxReputation={1178,42000},qgs={48360},r=1,g={
@@ -2980,8 +2980,8 @@ cu(391),
 crit(16702,{achID=5718,id=1,r=2})}}),
 q(28695,{awp=40001,coords={
 [245]={{55.8,78.45}}},isDaily=1,maxReputation={1178,42000},qgs={48361},r=1,g={
-qo(1,{awp=40003,providers={{"n",46648}}}),
-cu(391,{awp=40003}),
+qo(1,{providers={{"n",46648}}}),
+cu(391),
 crit(16736,{achID=5719,awp=40003,id=1,r=1})}}),
 q(28065,{coords={
 [245]={{73.4,59.2}}},isDaily=1,maxReputation={1177,42000},qgs={47240},r=2,g={
